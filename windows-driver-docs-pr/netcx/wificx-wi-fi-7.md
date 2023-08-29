@@ -1,12 +1,12 @@
 ---
 title: WiFiCx Wi-Fi 7 feature requirements
-description: This article describes the driver changes required to support Wi-Fi 7 features in WiFiCx
+description: Driver changes required to support Wi-Fi 7 functionalities in WiFiCx, including Multi-Link Operation (MLO). 
 ms.date: 08/23/2023
 ---
 
 # WiFiCx Wi-Fi 7 feature requirements
 
-WiFiCx supports Wi-Fi 7 features, including enhanced capabilities for Multi-Link Operation (MLO) connections, Simultaneous Authentication of Equals (SAE) authentication with 384-bit PMK, and Opportunistic Wireless Encryption (OWE) with GCMP-256 cipher. 
+WiFiCx supports Wi-Fi 7 functionalities, providing faster connectivity speeds, lower latency, and improved security. WiiFiCx enables Multi-Link Operation (MLO) with roaming differentiation to leverage multiple simultaneous channels to the Wi-Fi access point (AP), and enhanced capabilities for WPA3-SAE authentication and Opportunistic Wireless Encryption (OWE) with GCMP-256 cipher. 
 
 This article outlines the driver changes required to support these features.
 
