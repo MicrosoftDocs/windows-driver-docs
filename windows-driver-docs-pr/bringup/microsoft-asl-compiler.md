@@ -76,6 +76,8 @@ where AMLFile is the name of the compiled AML file that contains the table you w
 
 ## Additional resources
 
+- [ACPICA documentation](https://www.intel.com/content/www/us/en/developer/topic-technology/open/acpica/overview.html)
+
 - [ACPI specification](https://uefi.org/specifications/)
 
 - [ACPI debugging](../debugger/acpi-debugging.md)

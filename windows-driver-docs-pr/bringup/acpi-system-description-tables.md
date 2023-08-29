@@ -75,6 +75,8 @@ The CSRT describes resource groups of CSRs, where each resource group identifies
 
 To support maintenance of HAL extensions, and to manage the system resources used by these extensions, each resource group described in the CSRT must also be represented as a device within the platform's ACPI namespace. For more information, see the following "Differentiated System Description Table (DSDT)" section. The device identifiers used in the resource group header must match the identifiers used in the device's namespace node. For more information, see the **Device Identification in ACPI** section in the [Device management namespace objects](device-management-namespace-objects.md) article. The existence of these resource group namespace devices allows the HAL extension to be serviced by the Windows Update Service.
 
+For more information, see the [Core System Resources Table (CSRT) specification](https://cdrdv2.intel.com/v1/dl/getContent/772760).
+
 ## Debug Port Table 2 (DBG2)
 
 Microsoft requires a debug port on all systems. To describe the debug port(s) built into a platform, Microsoft defines the Debug Port Table 2 (DBG2) for ACPI. This table specifies one or more independent port(s) for debugging purposes. The presence of the DBG2 table indicates that the platform includes at least one debug port. This table includes information about the identity and configuration of the debug port(s). The table is located in system memory with other ACPI tables, and must be referenced in the ACPI RSDT table.
