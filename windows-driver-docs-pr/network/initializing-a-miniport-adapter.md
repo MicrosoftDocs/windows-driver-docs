@@ -1,12 +1,6 @@
 ---
 title: Initializing a Miniport Adapter
-description: Initializing a Miniport Adapter
-keywords:
-- miniport adapters WDK networking , initializing
-- adatpers WDK networking , initializing
-- initializing miniport adapters
-- Initializing state WDK networking
-- MiniportInitializeEx
+description: When a networking device becomes available, the system loads the required NDIS miniport driver.
 ms.date: 04/20/2017
 ---
 
@@ -57,6 +51,8 @@ Typically, [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-m
 After [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) returns successfully, the adapter is in the Paused state. NDIS can call the [**MiniportRestart**](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_restart) function to transition the adapter to the Running state. For more information, see [Starting a Miniport Adapter](starting-an-adapter.md).
 
 If [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) returns NDIS\_STATUS\_SUCCESS, the driver should release all the resources for the adapter in the [*MiniportHaltEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_halt) function. For more information, see [Halting a Miniport Adapter](halting-a-miniport-adapter.md).
+
+The driver must call **NdisMSetMiniportAttributes** and set the **GeneralAttributes** in the **NDIS_MINIPORT_ADAPTER_ATTRIBUTES** structure if it returns NDIS_STATUS_SUCCESS. Otherwise, NDIS versions 6.0 and later will fail the miniport initialization and return an error. In NDIS versions previous to 6.0, failing to complete these tasks will result in a crash.
 
 If [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) failed, *MiniportInitializeEx* must release all resources that it allocated before it returns and the adapter returns to the Halted state.
 
