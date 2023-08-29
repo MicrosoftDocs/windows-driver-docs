@@ -52,7 +52,7 @@ After [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-minipo
 
 If [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) returns NDIS\_STATUS\_SUCCESS, the driver should release all the resources for the adapter in the [*MiniportHaltEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_halt) function. For more information, see [Halting a Miniport Adapter](halting-a-miniport-adapter.md).
 
-The driver must call **NdisMSetMiniportAttributes** and set the **GeneralAttributes** in the **NDIS_MINIPORT_ADAPTER_ATTRIBUTES** structure if it returns NDIS_STATUS_SUCCESS. Otherwise, NDIS versions 6.0 and later will fail the miniport initialization and return an error. In NDIS versions previous to 6.0, failing to complete these tasks will result in a crash.
+The driver must call **NdisMSetMiniportAttributes** and set the **GeneralAttributes** in the **NDIS_MINIPORT_ADAPTER_ATTRIBUTES** structure if it returns NDIS_STATUS_SUCCESS.
 
 If [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) failed, *MiniportInitializeEx* must release all resources that it allocated before it returns and the adapter returns to the Halted state.
 
