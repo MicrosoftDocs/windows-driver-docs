@@ -104,8 +104,8 @@ The following types and TLVs have been renamed for the [OID_WDI_SET_SAE_AUTH_PAR
 
 - Renamed **WDI_SAE_REQUEST_TYPE_COMMIT_REQUEST** to **WDI_SAE_REQUEST_TYPE_COMMIT_PARAMS** in the [**WDI_SAE_REQUEST_TYPE**](/windows-hardware/drivers/ddi/dot11wificxtypes/ne-dot11wificxtypes-wdi_sae_request_type) enum.
 - Renamed **WDI_SAE_REQUEST_TYPE_CONFIRM_REQUEST** to **WDI_SAE_REQUEST_TYPE_CONFIRM_PARAMS** in the [**WDI_SAE_REQUEST_TYPE**](/windows-hardware/drivers/ddi/dot11wificxtypes/ne-dot11wificxtypes-wdi_sae_request_type) enum.
-- Renamed WDI_TLV_SAE_COMMIT_REQUEST to [WDI_TLV_SAE_COMMIT_PARAMS](wdi-tlv-sae-commit-params.md).
-- Renamed WDI_TLV_SAE_CONFIRM_REQUEST to [WDI_TLV_SAE_CONFIRM_PARAMS](wdi-tlv-sae-confirm-params.md).
+- Renamed WDI_TLV_SAE_COMMIT_REQUEST to [WDI_TLV_SAE_COMMIT_PARAMS](wdi-tlv-sae-commit-params.md). This TLV is used to send both commit-request and commit-response frames.
+- Renamed WDI_TLV_SAE_CONFIRM_REQUEST to [WDI_TLV_SAE_CONFIRM_PARAMS](wdi-tlv-sae-confirm-params.md). This TLV is used to send both confirm-request and confirm-response frames.
 
 ### Indicating an SAE authentication frame
 

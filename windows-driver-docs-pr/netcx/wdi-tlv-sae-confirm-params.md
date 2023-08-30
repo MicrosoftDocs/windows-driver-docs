@@ -9,7 +9,7 @@ ms.date: 07/19/2023
 
 [!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
-**WDI_TLV_SAE_CONFIRM_PARAMS** is a TLV that contains parameters for a Simultaneous Authentication of Equals (SAE) confirm request or confirm response.
+**WDI_TLV_SAE_CONFIRM_PARAMS** is a TLV that contains parameters for a Simultaneous Authentication of Equals (SAE) Confirm request or Confirm response.
 
 This TLV is used in the command parameters for [OID_WDI_SET_SAE_AUTH_PARAMS](oid-wdi-set-sae-auth-params.md).
 
