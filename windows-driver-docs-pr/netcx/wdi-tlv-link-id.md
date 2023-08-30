@@ -1,7 +1,7 @@
 ---
 title: WDI_TLV_LINK_ID (dot11wificxtypes.hpp)
 ms.topic: reference
-description: WDI_TLV_LINK_ID is a WiFiCx TLV that contains an AP's link ID .
+description: WDI_TLV_LINK_ID is a WiFiCx TLV that contains the AP's link ID that is used when setting or querying the link-specific keys on a multi-link connection.
 ms.date: 07/21/2023
 ---
 
@@ -9,7 +9,7 @@ ms.date: 07/21/2023
 
 [!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
-WDI_TLV_LINK_ID is a WiFiCx TLV that contains an AP's link ID that is used when setting or querying the link-specific keys on a multi-link connection.
+WDI_TLV_LINK_ID is a WiFiCx TLV that contains the AP's link ID that is used when setting or querying the link-specific keys on a multi-link connection.
 
 ## TLV Type
 
