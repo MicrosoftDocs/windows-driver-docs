@@ -52,7 +52,7 @@ KmdfService =  Echo, Echo_service_wdfsect
 KmdfLibraryVersion = $KMDFVERSION$
 ```
 
-## UMDF Directives for DDInstall.WDF sections
+## [UMDF Directives for DDInstall.WDF sections]
 
 Each WDF-specific directive in the WDF-specific *DDInstall* section is described below.
 
@@ -221,7 +221,15 @@ If **UmdfFsContextUsePolicy** is set to **CannotUseFsContexts**, the framework d
 
 The default value is **CanUseFsContext**.
 
-## Directives for wdf-service-install section
+## UmdfLibraryVersion
+
+**UmdfLibraryVersion** = <*version*>  
+
+Informs the co-installer about the version number of the framework that the UMDF driver will use. The format of the *version* string is <*major*>.<*minor*>.<*service*>. When drivers on the device stack use more than one version of the framework, the INF file copies multiple co-installers--one for each framework version--to the same location on the hard disk drive. However, the INF file adds only the highest version co-installer to the **CoInstallers32** registry value. For more information about copying co-installers, see [Using the UMDF Co-installer](using-the-umdf-co-installer.md).
+
+The co-installer verifies the version string and uses it to locate the version-specific co-installer for the UMDF driver. The co-installer then extracts the framework from the version-specific co-installer.
+
+## [UMDF Directives for wdf-service-install section]
 
 The following code example shows the required directives in a *UMDF-service-install* section.
 
@@ -232,16 +240,6 @@ ServiceBinary = %13%\echo.dll
 ```
 
 Each directive in the *UMDF-service-install* section is described in the following list:
-
-## UmdfLibraryVersion
-
-**UmdfLibraryVersion** = <*version*>  
-
-Informs the co-installer about the version number of the framework that the UMDF driver will use. The format of the *version* string is <*major*>.<*minor*>.<*service*>. When drivers on the device stack use more than one version of the framework, the INF file copies multiple co-installers--one for each framework version--to the same location on the hard disk drive. However, the INF file adds only the highest version co-installer to the **CoInstallers32** registry value. For more information about copying co-installers, see [Using the UMDF Co-installer](using-the-umdf-co-installer.md).
-
-The co-installer verifies the version string and uses it to locate the version-specific co-installer for the UMDF driver. The co-installer then extracts the framework from the version-specific co-installer.
-
-## UMDF Directives for wdf-service-install section
 
 ## ServiceBinary
 
@@ -275,11 +273,15 @@ The following code example shows the required directives in a KMDF-service-insta
 KmdfLibraryVersion = $KMDFVERSION$
 ```
 
-## KMDF Directives for DDInstall.WDF sections
+## [KMDF Directives for DDInstall.WDF sections]
 
 ## KmdfService
 
-## KMDF Directives for wdf-service-install section
+`**KmdfService** = <*serviceName*>, <*sectionName*>
+
+Associates a KMDF driver with a *KMDF-service-install* section that contains information that is required to install the KMDF driver. The *serviceName* parameter specifies the KMDF driver, and is limited to a maximum of 31 characters in length. The *sectionName* parameter references the *KMDF-service-install* section. A valid INF file typically requires at least one **KmdfService** directive. However, if a KMDF driver is part of the operating system, a **KmdfService** directive for the KMDF driver is not required. Therefore, a valid INF file might not have any **KmdfService** directives, although most INF files have one **KmdfService** directive for each KMDF driver.
+
+## [KMDF Directives for wdf-service-install section]
 
 ## KmdfLibraryVersion
 
