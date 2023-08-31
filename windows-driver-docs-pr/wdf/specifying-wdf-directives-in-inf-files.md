@@ -52,17 +52,17 @@ KmdfService =  Echo, Echo_service_wdfsect
 KmdfLibraryVersion = $KMDFVERSION$
 ```
 
-## Directives for DDInstall.WDF sections
+## UMDF Directives for DDInstall.WDF sections
 
 Each WDF-specific directive in the WDF-specific *DDInstall* section is described below.
 
-### UmdfService
+## UmdfService
 
 `**UmdfService** = <*serviceName*>, <*sectionName*>
 
 Associates a UMDF driver with a *UMDF-service-install* section that contains information that is required to install the UMDF driver. The *serviceName* parameter specifies the UMDF driver, and is limited to a maximum of 31 characters in length. The *sectionName* parameter references the *UMDF-service-install* section. A valid INF file typically requires at least one **UmdfService** directive. However, if a UMDF driver is part of the operating system, a **UmdfService** directive for the UMDF driver is not required. Therefore, a valid INF file might not have any **UmdfService** directives, although most INF files have one **UmdfService** directive for each UMDF driver.
 
-### UmdfHostProcessSharing
+## UmdfHostProcessSharing
 
 *This directive is supported in UMDF versions 1.11 and later.*
 
@@ -74,7 +74,7 @@ Determines whether a device stack is placed into a shared process pool (**Proces
 For more information about device pooling, see [Using Device Pooling in UMDF Drivers](using-device-pooling-in-umdf-drivers.md).
 
 
-### UmdfDirectHardwareAccess
+## UmdfDirectHardwareAccess
 
 *This directive is supported in UMDF versions 1.11 and later.*
 
@@ -103,7 +103,7 @@ If **UmdfDirectHardwareAccess** is set to **RejectDirectHardwareAccess**, the fr
 For information about how a UMDF driver accesses hardware resources, see [Finding and Mapping Hardware Resources](finding-and-mapping-hardware-resources.md).
 
 
-### UmdfHostPriority
+## UmdfHostPriority
 
 *This directive is supported in UMDF versions 2.15 and later.*
 
@@ -111,7 +111,7 @@ For information about how a UMDF driver accesses hardware resources, see [Findin
 
 A UMDF HID client driver can set **UmdfHostPriority** to **PriorityHigh** to increase its thread priority. This directive should only be used for touch or input drivers that are sensitive to user response time. When a driver specifies **PriorityHigh**, the system puts it in a separate device pool along with other drivers of similar priority. Because the additional device pool uses more memory, you should use this setting with caution. For more information about device pooling, see [Using Device Pooling in UMDF Drivers](using-device-pooling-in-umdf-drivers.md).
 
-### UmdfRegisterAccessMode
+## UmdfRegisterAccessMode
 
 *This directive is supported in UMDF versions 1.11 and later.*
 
@@ -124,7 +124,7 @@ If **UmdfRegisterAccessMode** is set to **RegisterAccessUsingSystemCall**, the f
 If **UmdfRegisterAccessMode** is set to **RegisterAccessUsingUserModeMapping**, the framework maps the registers into user-mode address space so that a system call is not needed to access registers. The default value is **RegisterAccessUsingSystemCall**.
 
 
-###  UmdfServiceOrder
+##  UmdfServiceOrder
 
 **UmdfServiceOrder** = <*serviceName1*> \[, <*serviceName2*> ...\]  
 
@@ -132,7 +132,7 @@ Lists the order that the co-installer installs the UMDF drivers on the device st
 
 To ensure that a UMDF co-installer installs the device, only one **UmdfServiceOrder** directive must be present in any given WDF-specific *DDInstall* section. That is, the **UmdfServiceOrder** directive cannot be imported by using the **Include** and **Needs** directives.
 
-### UmdfImpersonationLevel
+## UmdfImpersonationLevel
 
 **UmdfImpersonationLevel** = <*level*>  
 
@@ -148,7 +148,7 @@ Informs the framework about the maximum impersonation level that the UMDF driver
 
 These values correspond to the values that are specified in the [**SECURITY\_IMPERSONATION\_LEVEL**](/windows-hardware/drivers/ddi/wudfddi/ne-wudfddi-_security_impersonation_level) enumeration.
 
-### UmdfMethodNeitherAction
+## UmdfMethodNeitherAction
 
 **UmdfMethodNeitherAction** = <**Copy** | **Reject**>  
 
@@ -156,7 +156,7 @@ Indicates whether the framework will accept (**Copy**) or reject (**Reject**) a 
 
 For more information about supporting the METHOD\_NEITHER buffer access method in UMDF-based drivers, see [Using Neither Buffered I/O nor Direct I/O in UMDF Drivers](./accessing-data-buffers-in-umdf-1-x-drivers.md#using-neither-buffered-i-o-nor-direct-i-o-in-umdf-drivers).
 
-### UmdfDispatcher
+## UmdfDispatcher
 
 **UmdfDispatcher** = <**FileHandle** | **WinUsb** | **NativeUSB**>  
 
@@ -175,7 +175,7 @@ The following code example shows the **UmdfDispatcher** directive in a WDF-speci
 UmdfDispatcher=NativeUSB
 ```
 
-### UmdfKernelModeClientPolicy
+## UmdfKernelModeClientPolicy
 
 *This directive is supported in UMDF versions 1.9 and later.*
 
@@ -190,7 +190,7 @@ If **UmdfKernelModeClientPolicy** is set to **AllowKernelModeClients**, the fram
 If **UmdfKernelModeClientPolicy** is set to **RejectKernelModeClients**, the framework does not allow kernel-mode drivers to load above a user-mode driver, and it does not deliver I/O requests from any kernel-mode drivers to the user-mode driver. If a driver's INF file does not contain this directive, the default value is **RejectKernelModeClients**. For more information, see [Supporting Kernel-mode Clients](./supporting-kernel-mode-clients-in-umdf-1-x-drivers.md).
 
 
-### UmdfFileObjectPolicy
+## UmdfFileObjectPolicy
 
 *This directive is supported in UMDF versions 1.11 and later.*
 
@@ -205,7 +205,7 @@ If **UmdfFileObjectPolicy** is set to **AllowNullAndUnknownFileObjects**, the fr
 The default value is **RejectNullAndUnknownFileObjects**.
 
 
-### UmdfFsContextUsePolicy
+## UmdfFsContextUsePolicy
 
 *This directive is supported in UMDF versions 1.11 and later.*
 
@@ -233,7 +233,7 @@ ServiceBinary = %13%\echo.dll
 
 Each directive in the *UMDF-service-install* section is described in the following list:
 
-### UmdfLibraryVersion
+## UmdfLibraryVersion
 
 **UmdfLibraryVersion** = <*version*>  
 
@@ -241,7 +241,9 @@ Informs the co-installer about the version number of the framework that the UMDF
 
 The co-installer verifies the version string and uses it to locate the version-specific co-installer for the UMDF driver. The co-installer then extracts the framework from the version-specific co-installer.
 
-### ServiceBinary
+## UMDF Directives for wdf-service-install section
+
+## ServiceBinary
 
 **ServiceBinary** = <*binarypath*>  
 
@@ -249,7 +251,7 @@ Informs UMDF about where to place the UMDF driver binary on the hard disk drive.
 
 UMDF drivers should be copied to, and run from, the `Windows\System32\Drivers\UMDF` directory.
 
-### DriverCLSID
+## DriverCLSID
 
 **Note**  This directive is only supported in 1.x versions of UMDF.
 
@@ -257,7 +259,7 @@ UMDF drivers should be copied to, and run from, the `Windows\System32\Drivers\UM
 
 Informs UMDF about the class identifier (CLSID) of the UMDF driver. When UMDF loads the UMDF driver, the UMDF host uses the UMDF driver's CLSID to create an instance of the UMDF driver's [IDriverEntry](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-idriverentry) interface.
 
-### UmdfExtensions
+## UmdfExtensions
 
 **UmdfExtensions** = <*cxServiceName*>  
 
@@ -273,4 +275,16 @@ The following code example shows the required directives in a KMDF-service-insta
 KmdfLibraryVersion = $KMDFVERSION$
 ```
 
+## KMDF Directives for DDInstall.WDF sections
+
+## KmdfService
+
+## KMDF Directives for wdf-service-install section
+
+## KmdfLibraryVersion
+
+```inf
+KmdfLibraryVersion = <version>
+```
+ 
 The format of the version string is <major>.<minor>. Normally you should specify $KMDFVERSION$ and then the WDK build process will replace it with the correct version number.
