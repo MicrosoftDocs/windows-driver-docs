@@ -25,6 +25,7 @@ To get a new code signing certificate:
 
 1. Go to the page of one the following certificate authorities and follow their directions for purchase:
 
+    * [Certera EV code signing certificate](https://certera.com/code-signing/certera-ev-code-signing)
     * [Certum EV code signing certificate](https://shop.certum.eu/data-safety/code-signing-certificates/certum-ev-code-sigining.html)
     * [DigiCert EV code signing certificate](https://www.digicert.com/order/order-1.php)
     * [Entrust EV code signing certificate](https://www.entrustdatacard.com/products/digital-signing-certificates/code-signing-certificates)
