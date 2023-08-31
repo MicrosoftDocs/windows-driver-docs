@@ -289,4 +289,4 @@ Associates a KMDF driver with a *KMDF-service-install* section that contains inf
 KmdfLibraryVersion = <version>
 ```
  
-The format of the version string is <major>.<minor>. Normally you should specify $KMDFVERSION$ and then the WDK build process will replace it with the correct version number.
+The format of the version string is `major.minor`. Normally you should specify `$KMDFVERSION$` and then the WDK build process will replace it with the correct version number.
