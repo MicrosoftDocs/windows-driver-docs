@@ -1,7 +1,7 @@
 ---
 title: IOMMU-based GPU isolation
 description: IOMMU-based GPU isolation allows Dxgkrnl to restrict access to system memory from the GPU by making use of IOMMU hardware.
-ms.date: 03/20/2023
+ms.date: 08/31/2023
 ---
 
 # IOMMU-based GPU isolation
@@ -72,7 +72,23 @@ The domain will be attached to the device the first time a secure virtual machin
 
 ## Exclusive access
 
-Some chip sets don't support atomically swapping the logical address domain when there are pending PCI transactions on the bus. To accommodate this limitation, *Dxgkrnl* has two DDIs for exclusive hardware access. These DDIs form a begin/end pairing, where *Dxgkrnl* requests that the hardware is silent over the bus. *Dxgkrnl* ensures that any pending work scheduled on the hardware completes, and then enter this exclusive access region. During this time, *Dxgkrnl* assigns the domain to the device. *Dxgkrnl* doesn't make any requests of the driver or hardware between these calls. Both DDIs are documented in the following section.
+IOMMU domain attach and detach is extremely fast, but is nonetheless not currently atomic. This means that a transaction issued over PCIe isn't guaranteed to be translated correctly while swapping to an IOMMU domain with different mappings.
+
+To handle this situation, starting in Windows 10 version 1803 (WDDM 2.4), a KMD must implement the following DDI pair for *Dxgkrnl* to call:
+
+* [**DxgkDdiBeginExclusiveAccess**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_beginexclusiveaccess) is called to notify KMD that an IOMMU domain switch is about to occur.
+* [**DxgkDdiEndExclusiveAccess**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_endexclusiveaccess) is called after the IOMMU domain switch is complete.
+
+These DDIs form a begin/end pairing, where *Dxgkrnl* requests that the hardware is silent over the bus. The driver must ensure that its hardware is silent whenever the device is switched to a new IOMMU domain. That is, the driver must ensure that it doesn't read or write to system memory from the device between these two calls.
+
+Between these two calls, *Dxgkrnl* makes the following guarantees:
+
+* The scheduler is suspended. All active workloads are flushed, and no new workloads are sent to or scheduled on the hardware.
+* No other DDI calls are made.
+
+As part of these calls, the driver may choose to disable and suppress interrupts (including Vsync interrupts) for the duration of the exclusive access, even without explicit notification from the OS.
+
+ *Dxgkrnl* ensures that any pending work scheduled on the hardware completes, and then enters this exclusive access region. During this time, *Dxgkrnl* assigns the domain to the device. *Dxgkrnl* doesn't make any requests of the driver or hardware between these calls.
 
 ## DDI Changes
 
@@ -82,6 +98,9 @@ The following DDI changes were made to support IOMMU-based GPU isolation:
 * The [**DXGKQAITYPE_FRAMEBUFFERSAVESIZE**](/windows-hardware/drivers/ddi/d3dkmddi/ne-d3dkmddi-_dxgk_queryadapterinfotype) enum value and [**DXGK_FRAMEBUFFERSAVEAREA**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_framebuffersavearea) structure were added
 * The [**DXGKQAITYPE_HARDWARERESERVEDRANGES**](/windows-hardware/drivers/ddi/d3dkmddi/ne-d3dkmddi-_dxgk_queryadapterinfotype) enum value and [**DXGK_HARDWARERESERVEDRANGE**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_hardwarereservedranges) structure were added
 * The [**DXGK_MEMORY_CACHING_TYPE**](/windows-hardware/drivers/ddi/d3dkmddi/ne-d3dkmddi-_dxgk_memory_caching_type) was added
+* A kernel-mode driver must implement the following added DDIs:
+  * [**DxgkDdiBeginExclusiveAccess**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_beginexclusiveaccess)
+  * [**DxgkDdiEndExclusiveAccess**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_endexclusiveaccess)
 * The following [*Dxgkrnl* callbacks](/windows-hardware/drivers/ddi/dispmprt/ns-dispmprt-_dxgkrnl_interface) and callback parameter structures were added. Callback functions must be called at IRQL <= APC_LEVEL. Starting in WDDM 3.2, drivers that call any of these functions are validated against this requirement and bugcheck if the IRQL is DISPATCH_LEVEL or higher.
 
   | Callback | Associated callback structure |
