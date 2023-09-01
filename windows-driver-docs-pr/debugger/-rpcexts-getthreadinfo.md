@@ -55,7 +55,7 @@ Displays some brief Help text for this extension in the Command Prompt window.
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For more information about debugging Microsoft Remote Procedure Call (RPC), see [RPC Debugging](rpc-debugging.md).
 

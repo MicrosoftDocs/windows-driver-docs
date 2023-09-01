@@ -30,30 +30,15 @@ Any outstanding debug event will be continued and marked as handled. This is the
 <span id="________n______"></span><span id="________N______"></span> **/n**   
 Any outstanding debug event will be continued without being marked as handled.
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
 For live user-mode debugging, this command is only supported in Windows XP and later versions of Windows.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Modes</strong></p></td>
-<td align="left"><p>user mode, kernel mode</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Targets</strong></p></td>
-<td align="left"><p>live, crash dump</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Platforms</strong></p></td>
-<td align="left"><p>all</p></td>
-</tr>
-</tbody>
-</table>
+|  Item  | Description          |
+|--------|----------------------|
+|Modes   |User mode, kernel mode|
+|Targets |Live, crash dump      |
+|Platforms|All                  |
 
  
 

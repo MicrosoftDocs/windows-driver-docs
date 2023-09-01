@@ -48,7 +48,7 @@ Specifies the processor whose information will be displayed. If you omit this pa
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For more information about how to debug multiprocessor computers, see [Multiprocessor Syntax](multiprocessor-syntax.md).
 

@@ -24,7 +24,7 @@ The **!ks.pciaudio** extension displays a list of FDOs currently attached to Por
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
 
-<span id="_______Options______"></span><span id="_______options______"></span><span id="_______OPTIONS______"></span> *Options*   
+*Options*
 Optional. Specifies the kind of information to be displayed. *Options* can be any combination of the following bits.
 
 <span id="Bit_0__0x1_"></span><span id="bit_0__0x1_"></span><span id="BIT_0__0X1_"></span>Bit 0 (0x1)  
@@ -60,7 +60,7 @@ Optional, and applicable only if Bit 3 is set in *Options*. Levels are the same 
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For more information, see [Kernel Streaming Debugging](kernel-streaming-debugging.md).
 

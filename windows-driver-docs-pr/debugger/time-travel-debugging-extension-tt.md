@@ -49,7 +49,7 @@ Provide a time position in any of the following formats to travel to that point 
 
 ttdext.dll
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 This extension only works with time travel traces. For more information about time travel, see [Time Travel Debugging - Overview](time-travel-debugging-overview.md).
 

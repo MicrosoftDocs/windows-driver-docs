@@ -39,28 +39,13 @@ Causes the display to include the resource requirements list (IO\_RESOURCE\_LIST
 <span id="Bit_3__0x8_"></span><span id="bit_3__0x8_"></span><span id="BIT_3__0X8_"></span>Bit 3 (0x8)  
 Causes the display to include the translated CM\_RESOURCE\_LIST.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+### DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Kdextx86.dll</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Kdexts.dll</p></td>
-</tr>
-</tbody>
-</table>
+Kdexts.dll
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 See [Plug and Play Debugging](plug-and-play-debugging.md) for applications of this extension command. For information about these list structures, see the Windows Driver Kit (WDK) documentation.
 

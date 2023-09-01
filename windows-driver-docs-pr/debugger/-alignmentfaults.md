@@ -27,7 +27,7 @@ The **!alignmentfaults** extension displays all current type alignment faults by
 <p>Kdexts.dll</p>
 
  
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For information about alignment faults, see the Microsoft Windows SDK documentation.
 

@@ -35,7 +35,7 @@ Specifies the address where the debugger starts execution. If you do not use *St
 <span id="_______Count______"></span><span id="_______count______"></span><span id="_______COUNT______"></span> *Count*   
 Specifies the number of branches to allow. Every time that a branch is encountered, the instruction address and the instruction are displayed. If you omit *Count*, the default number is 1.
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
 <table>
 <colgroup>
@@ -62,7 +62,7 @@ Specifies the number of branches to allow. Every time that a branch is encounter
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For more information about related commands, see [Controlling the Target](controlling-the-target.md).
 

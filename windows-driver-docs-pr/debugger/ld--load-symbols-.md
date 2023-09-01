@@ -30,28 +30,13 @@ Specifies the name of the module whose symbols are to be loaded. *ModuleName* ca
 <span id="________f_______FileName______"></span><span id="________f_______filename______"></span><span id="________F_______FILENAME______"></span> **/f** *FileName*   
 Changes the name selected for the match. By default the module name is matched, but when **/f** is used the file name is matched instead of the module name. *FileName* can contain a variety of wildcard characters and specifiers. For more information on the syntax of wildcard characters and specifiers, see [String Wildcard Syntax](string-wildcard-syntax.md).
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Modes</strong></p></td>
-<td align="left"><p>User mode, kernel mode</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Targets</strong></p></td>
-<td align="left"><p>Live, crash dump</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Platforms</strong></p></td>
-<td align="left"><p>All</p></td>
-</tr>
-</tbody>
-</table>
+|  Item  | Description          |
+|--------|----------------------|
+|Modes   |User mode, kernel mode|
+|Targets |Live, crash dump      |
+|Platforms|All                  |
 
  
 
@@ -61,7 +46,7 @@ The debugger's default behavior is to use *lazy symbol loading* (also known as [
 
 The **ld** command, on the other hand, forces all symbols for the specified module to be loaded.
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For more information about deferred (lazy) symbol loading, see [Deferred Symbol Loading](deferred-symbol-loading.md). For more information about other symbol options, see [Setting Symbol Options](symbol-options.md).
 

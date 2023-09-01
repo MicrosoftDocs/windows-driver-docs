@@ -24,7 +24,7 @@ The **.dvalloc** command causes Windows to allocate additional memory to the tar
 ## <span id="ddk_meta_allocate_memory_dbg"></span><span id="DDK_META_ALLOCATE_MEMORY_DBG"></span>Parameters
 
 
-<span id="_______Options______"></span><span id="_______options______"></span><span id="_______OPTIONS______"></span> *Options*   
+*Options*
 Can be any number of the following options:
 
 <span id="_b_BaseAddress"></span><span id="_b_baseaddress"></span><span id="_B_BASEADDRESS"></span>**/b** **** *BaseAddress*  
@@ -36,29 +36,13 @@ Reserves the memory in the virtual address space but does not actually allocate 
 <span id="_______Size______"></span><span id="_______size______"></span><span id="_______SIZE______"></span> *Size*   
 Specifies the amount of memory to be allocated, in bytes. The amount of memory available to the program will equal *Size*. The amount of memory actually used may be slightly larger, since it is always a whole number of pages.
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Modes</strong></p></td>
-<td align="left"><p>user mode only</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Targets</strong></p></td>
-<td align="left"><p>live debugging only</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Platforms</strong></p></td>
-<td align="left"><p>all</p></td>
-</tr>
-</tbody>
-</table>
-
+|  Item  | Description          |
+|--------|----------------------|
+|Modes | user mode only |
+|Targets | live debugging only |
+|Platforms | all  |
  
 
 ## Remarks

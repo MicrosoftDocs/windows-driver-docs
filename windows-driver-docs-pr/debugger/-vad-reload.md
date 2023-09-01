@@ -30,7 +30,7 @@ The **!vad\_reload** extension reloads the user-mode modules for a specified pro
 <span id="_______Process______"></span><span id="_______process______"></span><span id="_______PROCESS______"></span> *Process*   
 Specifies the hexadecimal address of the process for which the modules will be loaded.
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For information about VADs, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon. 
 

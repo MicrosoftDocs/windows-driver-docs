@@ -24,7 +24,7 @@ The **.ecxr** command displays the context record that is associated with the cu
 ## <span id="ddk_meta_display_exception_context_record_dbg"></span><span id="DDK_META_DISPLAY_EXCEPTION_CONTEXT_RECORD_DBG"></span>
 
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
 <table>
 <colgroup>
@@ -49,7 +49,7 @@ The **.ecxr** command displays the context record that is associated with the cu
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For more information about the register context and other context settings, see [Changing Contexts](changing-contexts.md).
 

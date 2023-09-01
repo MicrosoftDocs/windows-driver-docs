@@ -37,7 +37,7 @@ This output shows five threads. Thread 1660 is the current thread indicated by *
 
 ttdext.dll
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 This extension only works with time travel traces. For more information about time travel, see [Time Travel Debugging - Overview](time-travel-debugging-overview.md).
 

@@ -27,7 +27,7 @@ The **.wake** command causes sleep mode to end. This command is used only when y
 <span id="_______PID______"></span><span id="_______pid______"></span> *PID*   
 The process ID of the user-mode debugger.
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
 <table>
 <colgroup>
@@ -52,7 +52,7 @@ The process ID of the user-mode debugger.
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For more details, see [Controlling the User-Mode Debugger from the Kernel Debugger](controlling-the-user-mode-debugger-from-the-kernel-debugger.md). For information about how to find the process ID of the debugger, see [Finding the Process ID](finding-the-process-id.md).
 

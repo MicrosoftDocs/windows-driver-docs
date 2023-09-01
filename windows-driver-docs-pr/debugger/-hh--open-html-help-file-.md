@@ -27,34 +27,19 @@ The **.hh** command opens the Debugging Tools for Windows documentation.
 <span id="_______Text______"></span><span id="_______text______"></span><span id="_______TEXT______"></span> *Text*   
 Specifies the text to find in the index of the Help documentation.
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Modes</strong></p></td>
-<td align="left"><p>User mode, kernel mode</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Targets</strong></p></td>
-<td align="left"><p>Live, crash dump</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Platforms</strong></p></td>
-<td align="left"><p>All</p></td>
-</tr>
-</tbody>
-</table>
+|  Item  | Description          |
+|--------|----------------------|
+|Modes   |User mode, kernel mode|
+|Targets |Live, crash dump      |
+|Platforms|All                  |
 
  
 
 You cannot use this command when you are performing [remote debugging through Remote.exe](remote-debugging-through-remote-exe.md).
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For more information about the Help documentation, see [Using the Help File](using-the-help-documentation.md).
 

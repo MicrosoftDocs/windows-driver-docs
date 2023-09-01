@@ -43,7 +43,7 @@ Kernel-Mode Syntax
 <span id="_______Process______"></span><span id="_______process______"></span><span id="_______PROCESS______"></span> *Process*   
 Specifies the address of the process to be terminated. If *Process* is omitted or zero, the default process for the current system state will be terminated.
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
 In kernel mode, this command is supported on Microsoft Windows Server 2003 and later versions of Windows.
 

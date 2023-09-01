@@ -27,30 +27,15 @@ The **.wtitle** command sets the title in the main WinDbg window or in the NTSD,
 <span id="_______Title______"></span><span id="_______title______"></span><span id="_______TITLE______"></span> *Title*   
 The title to use for the window.
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
 This command cannot be used in script files.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Modes</strong></p></td>
-<td align="left"><p>user mode, kernel mode</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Targets</strong></p></td>
-<td align="left"><p>live, crash dump</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Platforms</strong></p></td>
-<td align="left"><p>all</p></td>
-</tr>
-</tbody>
-</table>
+|  Item  | Description          |
+|--------|----------------------|
+|Modes   |User mode, kernel mode|
+|Targets |Live, crash dump      |
+|Platforms|All                  |
 
  
 

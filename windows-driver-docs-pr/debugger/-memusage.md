@@ -41,7 +41,7 @@ Displays only detailed information about the modified no-write pages in the PFN 
 <span id="0x8"></span><span id="0X8"></span>0x8  
 Displays only general summary information about memory use.
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
 **Modes**: kernel mode only
 
@@ -52,7 +52,7 @@ Displays only general summary information about memory use.
 
 Kdexts.dll
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 Physical memory statistics are collected from the Memory Manager's page frame number (PFN) database table.
 

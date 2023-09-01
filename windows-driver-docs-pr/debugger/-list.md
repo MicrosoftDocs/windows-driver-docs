@@ -41,7 +41,7 @@ Specifies the commands to execute. This can be any combination of debugger comma
 <span id="_______-a__Arguments_"></span><span id="_______-a__arguments_"></span><span id="_______-A__ARGUMENTS_"></span> **-a "**<em>Arguments</em>**"**  
 Specifies the arguments to pass to the *Commands* parameter. This must be enclosed in quotation marks. *Arguments* can be any valid argument string that would normally be allowed to follow this command, except that *Arguments* cannot contain quotation marks. If the pseudo-register **$extret** is included in *Commands*, the **-a "**<em>Arguments</em>**"** parameter can be omitted.
 
-<span id="_______Options______"></span><span id="_______options______"></span><span id="_______OPTIONS______"></span> *Options*   
+*Options*
 Can be any number of the following options:
 
 <span id="-e"></span><span id="-E"></span>**-e**  

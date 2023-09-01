@@ -33,28 +33,13 @@ Specifies the address of the function.
 <span id="_______Value______"></span><span id="_______value______"></span><span id="_______VALUE______"></span> *Value*   
 Specifies the return value to display. If you include *Value*, **.fnret** casts *Value* to the return type of the specified function and displays it in the format of the return type. If you omit *Value*, the debugger obtains the return value of the function from the return value registers.
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Modes</strong></p></td>
-<td align="left"><p>User mode, kernel mode</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Targets</strong></p></td>
-<td align="left"><p>Live, crash dump</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Platforms</strong></p></td>
-<td align="left"><p>All</p></td>
-</tr>
-</tbody>
-</table>
+|  Item  | Description          |
+|--------|----------------------|
+|Modes   |User mode, kernel mode|
+|Targets |Live, crash dump      |
+|Platforms|All                  |
 
  
 

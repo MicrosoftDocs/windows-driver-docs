@@ -51,7 +51,7 @@ The **!fwver** extension displays the Itanium firmware version.
 
 This extension command can only be used with an Itanium target computer.
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For more information, consult an Intel architecture manual.
 

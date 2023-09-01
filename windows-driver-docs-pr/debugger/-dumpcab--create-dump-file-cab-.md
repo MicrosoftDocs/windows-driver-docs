@@ -30,7 +30,7 @@ Causes all currently loaded symbols to be included in the CAB file. For minidump
 <span id="_______CabName______"></span><span id="_______cabname______"></span><span id="_______CABNAME______"></span> *CabName*   
 The CAB file name, including extension. *CabName* can include an absolute or relative path; relative paths are relative to the directory in which the debugger was started. It is recommended that you choose the extension .cab.
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
 <table>
 <colgroup>
@@ -55,7 +55,7 @@ The CAB file name, including extension. *CabName* can include an absolute or rel
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For more details on crash dumps, see [Crash Dump Files](crash-dump-files.md).
 

@@ -48,7 +48,7 @@ Specifies the environment variable whose value is displayed. *Variable* is not c
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For more information about environment variables, see [Environment Variables](environment-variables.md) and the Microsoft Windows SDK documentation.
 

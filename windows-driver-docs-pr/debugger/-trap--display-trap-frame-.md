@@ -27,7 +27,7 @@ The **.trap** command displays the trap frame register state and also sets the r
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Hexadecimal address of the trap frame on the target system. Omitting the address does not display any trap frame information, but it does reset the register context.
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
 <table>
 <colgroup>
@@ -52,7 +52,7 @@ Hexadecimal address of the trap frame on the target system. Omitting the address
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For more information about the register context and other context settings, see [Changing Contexts](changing-contexts.md).
 

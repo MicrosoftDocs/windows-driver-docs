@@ -34,7 +34,7 @@ Optional. Default value is 0x0. Set *Flags* to 0x1 to sort the output by shared 
 
 Kdexts.dll
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For information about file system drivers, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 

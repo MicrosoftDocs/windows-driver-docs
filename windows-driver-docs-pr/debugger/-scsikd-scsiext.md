@@ -48,7 +48,7 @@ Specifies the device object or device extension of a SCSI port extension.
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For more information, see [SCSI Miniport Debugging](scsi-miniport-debugging.md).
 

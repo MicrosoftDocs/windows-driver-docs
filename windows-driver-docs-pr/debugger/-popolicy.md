@@ -48,7 +48,7 @@ Specifies the address of the power policy structure to display. If this is omitt
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 To view the system's power capabilities, use the [**!pocaps**](-pocaps.md) extension command. For information about power capabilities and power policy, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
 

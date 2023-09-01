@@ -42,7 +42,7 @@ The **!minipkd.help** extension displays help text for the Minipkd.dll extension
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For more information, see [SCSI Miniport Debugging](scsi-miniport-debugging.md).
 

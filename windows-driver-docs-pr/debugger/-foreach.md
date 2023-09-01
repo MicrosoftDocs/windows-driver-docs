@@ -28,7 +28,7 @@ The **.foreach** token parses the output of one or more debugger commands and us
 ## <span id="ddk_token_foreach_dbg"></span><span id="DDK_TOKEN_FOREACH_DBG"></span>Syntax Elements
 
 
-<span id="_______Options______"></span><span id="_______options______"></span><span id="_______OPTIONS______"></span> *Options*   
+*Options*
 Can be any combination of the following options:
 
 <span id="_pS_InitialSkipNumber"></span><span id="_ps_initialskipnumber"></span><span id="_PS_INITIALSKIPNUMBER"></span>**/pS** *InitialSkipNumber*  
@@ -56,7 +56,7 @@ Specifies one or more commands which will be executed for each token. Whenever t
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For information about other control flow tokens and their use in debugger command programs, see [Using Debugger Command Programs](using-debugger-command-programs.md).
 

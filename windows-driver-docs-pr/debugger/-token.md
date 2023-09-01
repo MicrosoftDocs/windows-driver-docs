@@ -52,7 +52,7 @@ Exts.dll
 
 The **!token** command is available in kernel-mode and live user-mode debugging. It cannot be used on user-mode dump files.
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For information about the kernel-mode TOKEN structure, see *Microsoft Windows Internals* by Mark Russinovich and David Solomon. For information about the user-mode TOKEN structure, see the Microsoft Windows SDK documentation.
 

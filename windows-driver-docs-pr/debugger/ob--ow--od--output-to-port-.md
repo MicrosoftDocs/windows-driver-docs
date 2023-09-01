@@ -32,7 +32,7 @@ Specifies the address of the port.
 <span id="_______Value______"></span><span id="_______value______"></span><span id="_______VALUE______"></span> *Value*   
 Specifies the hexadecimal value to write to the port.
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
 <table>
 <colgroup>

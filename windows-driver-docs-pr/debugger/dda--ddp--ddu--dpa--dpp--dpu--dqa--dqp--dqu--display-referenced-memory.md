@@ -32,7 +32,7 @@ dpu [Options] [Range]
 ## <span id="ddk_cmd_display_referenced_memory_dbg"></span><span id="DDK_CMD_DISPLAY_REFERENCED_MEMORY_DBG"></span>Parameters
 
 
-<span id="_______Options______"></span><span id="_______options______"></span><span id="_______OPTIONS______"></span> *Options*   
+*Options*
 Specifies one or more display options. Any of the following options can be included, except that no more than one **/p**\* option can be indicated:
 
 <span id="_cWidth"></span><span id="_cwidth"></span><span id="_CWIDTH"></span>**/c**_Width_  
@@ -53,7 +53,7 @@ Specifies the number of columns to use in the display. If this is omitted, the d
 <span id="_______Range______"></span><span id="_______range______"></span><span id="_______RANGE______"></span> *Range*   
 Specifies the memory area to display. For more syntax details, see [Address and Address Range Syntax](address-and-address-range-syntax.md). If you omit *Range*, the command will display memory starting at the ending location of the last display command. If *Range* is omitted and no previous display command has been used, the display begins at the current instruction pointer. If a simple address is given, the default range length is 128 bytes.
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
 **Modes**: user mode, kernel mode
 
@@ -63,7 +63,7 @@ Specifies the memory area to display. For more syntax details, see [Address and 
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For an overview of memory manipulation and a description of other memory-related commands, see [Reading and Writing Memory](reading-and-writing-memory.md).
 

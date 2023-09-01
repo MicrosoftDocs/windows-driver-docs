@@ -144,7 +144,7 @@ Displays registry-allocated paged pool. If **s** is specified, the list of regis
 
 Kdexts.dll
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For information about the registry and its components, see *Microsoft Windows Internals* by Mark Russinovich and David Solomon. 
 

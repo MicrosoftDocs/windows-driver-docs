@@ -35,7 +35,7 @@ Causes the sound contained in the specified file to be played when WinDbg enters
 <span id="________d"></span><span id="________D"></span> **/d**  
 Disables the playing of sounds.
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
 This command is available only in WinDbg and cannot be used in script files.
 

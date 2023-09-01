@@ -52,7 +52,7 @@ Displays help for this extension in the Debugger Command window.
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For information about page tables and page directories, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon. 
 

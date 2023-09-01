@@ -24,7 +24,7 @@ The **.block** token performs no action; it is used solely to introduce a block 
 ## <span id="ddk_token_block_dbg"></span><span id="DDK_TOKEN_BLOCK_DBG"></span>
 
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For information about using a new block to evaluate an alias, see [Using Aliases](using-aliases.md) and [**as, aS (Set Alias)**](as--as--set-alias-.md).
 

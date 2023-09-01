@@ -14,35 +14,23 @@ api_type:
 
 # !ioctldecode
 
-
 The **!ioctldecode** extension displays the *Device Type*, *Required Access*, *Function Code* and *Transfer Type* as specified by the given IOCTL code. For more information about IOCTL control codes, see [Defining I/O Control Codes](../kernel/defining-i-o-control-codes.md).
 
 ```dbgcmd
 !ioctldecode IoctlCode 
 ```
 
-## <span id="ddk__ioresdes_dbg"></span><span id="DDK__IORESDES_DBG"></span>Parameters
+## Parameters
 
+*IoctlCode*
 
-<span id="_______IoctlCode______"></span><span id="_______ioctlcode______"></span><span id="_______IOCTLCODE______"></span> *IoctlCode*   
 Specifies the hexadecimal IOCTL Code. The [**!irp**](-irp.md) command displays the IOCTL code in its output.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+### DLL
 
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Kdexts.dll</p></td>
-</tr>
-</tbody>
-</table>
+Kdexts.dll
 
- 
-
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 To see information on the IOCTL, we first locate an IRP of interest. You can use the [**!irpfind**](-irpfind.md) command to locate an irp of interest.
 
@@ -112,6 +100,3 @@ Note that only a subset of publicly defined IOCTLs are able to be identified by 
 For more information about IOCTLs see [Introduction to I/O Control Codes](../kernel/introduction-to-i-o-control-codes.md).
 
 For more general information about IRPs and IOCTLs, refer to *Windows Internals* by Mark E. Russinovich, David A. Solomon and Alex Ionescu.
-
- 
-

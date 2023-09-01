@@ -32,7 +32,7 @@ Suspends the refresh of WinDbg debugging information windows.
 <span id="_______1______"></span> **1**   
 Enables the refresh of WinDbg debugging information windows.
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
 This command is available only in WinDbg and cannot be used in script files.
 
@@ -59,7 +59,7 @@ This command is available only in WinDbg and cannot be used in script files.
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 ## Remarks
 

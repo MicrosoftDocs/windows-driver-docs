@@ -98,7 +98,7 @@ Specifies the data to be matched in the search.
 
 Kdexts.dll
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 See [Plug and Play Debugging](plug-and-play-debugging.md) for applications of this extension command. For information about IRPs, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 

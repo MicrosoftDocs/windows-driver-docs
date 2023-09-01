@@ -33,7 +33,7 @@ Specifies the address of the heap block. If this is omitted, the global heap is 
 
 Kdexts.dll
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For information about related commands and their uses, see [The AMLI Debugger](the-amli-debugger.md).
 

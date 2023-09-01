@@ -2,7 +2,7 @@
 title: acl (WinDbg)
 description: The acl extension formats and displays the contents of an access control list (ACL).
 keywords: ["acl Windows Debugging"]
-ms.date: 09/17/2018
+ms.date: 08/30/2023
 topic_type:
 - apiref
 ms.topic: reference
@@ -14,31 +14,31 @@ api_type:
 
 # !acl
 
-
 The **!acl** extension formats and displays the contents of an access control list (ACL).
 
 Syntax
 
 ```dbgcmd
-    !acl Address [Flags] 
+!acl Address [Flags] 
 ```
 
-## <span id="ddk__acl_dbg"></span><span id="DDK__ACL_DBG"></span>Parameters
+## Parameters
 
+*Address*
 
-<span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the hexadecimal address of the ACL.
 
-<span id="_______Flags______"></span><span id="_______flags______"></span><span id="_______FLAGS______"></span> *Flags*   
+*Flags*
+
 Displays the friendly name of the ACL, if the value of *Flags* is 1. This friendly name includes the security identifier (SID) type and the domain and user name for the SID.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+### DLL
 
 Exts.dll
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
-For more information about access control lists, see [**!sid**](-sid.md), [**!sd**](-sd.md), and [Determining the ACL of an Object](determining-the-acl-of-an-object.md). Also, see the Microsoft Windows SDK documentation, the Windows Driver Kit (WDK) documentation, and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
+For more information about access control lists, see [**!sid**](-sid.md), [**!sd**](-sd.md), and [Determining the ACL of an Object](determining-the-acl-of-an-object.md). Also, see *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
 ## Remarks
 
@@ -64,12 +64,3 @@ ACL is: ->Ace[1]: ->AceSize: 0x14
 ACL is: ->Ace[1]: ->Mask : 0x10000000
 ACL is: ->Ace[1]: ->SID: S-1-5-18 (Well Known Group: NT AUTHORITY\SYSTEM)
 ```
-
- 
-
- 
-
-
-
-
-

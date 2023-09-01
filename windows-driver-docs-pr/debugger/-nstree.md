@@ -33,7 +33,7 @@ Specifies the address of the namespace object. This object and the entire namesp
 
 Kdexts.dll
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For more information, see [ACPI Debugging](acpi-debugging.md).
 

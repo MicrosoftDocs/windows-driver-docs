@@ -24,7 +24,7 @@ The **!amli set** extension sets or displays the AMLI Debugger options.
 ## <span id="ddk__amli_set_dbg"></span><span id="DDK__AMLI_SET_DBG"></span>Parameters
 
 
-<span id="_______Options______"></span><span id="_______options______"></span><span id="_______OPTIONS______"></span> *Options*   
+*Options*
 Specifies one or more options to be set. Separate multiple options with spaces. Possible values include:
 
 <span id="spewon"></span><span id="SPEWON"></span>**spewon**  
@@ -85,7 +85,7 @@ Disables mutex event logging.
 
 Kdexts.dll
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For information about related commands and their uses, see [The AMLI Debugger](the-amli-debugger.md).
 

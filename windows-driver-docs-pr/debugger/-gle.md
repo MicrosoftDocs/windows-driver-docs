@@ -50,7 +50,7 @@ Ntsdexts.dll</td>
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For more information about the [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) routine, see the Micorosft Windows SDK documentation.
 

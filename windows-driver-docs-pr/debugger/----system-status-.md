@@ -14,7 +14,6 @@ api_type:
 
 # || (System Status)
 
-
 The double vertical bar (**||**) command prints status for the specified system or for all systems that you are currently debugging.
 
 Do not confuse this command with the [**| (Process Status)**](---process-status-.md) command.
@@ -23,36 +22,19 @@ Do not confuse this command with the [**| (Process Status)**](---process-status-
 || System 
 ```
 
-## <span id="ddk_cmd_system_status_dbg"></span><span id="DDK_CMD_SYSTEM_STATUS_DBG"></span>Parameters
+## Parameters
 
+*System*
 
-<span id="_______System______"></span><span id="_______system______"></span><span id="_______SYSTEM______"></span> *System*   
 Specifies the system to display. If you omit this parameter, all systems that you are debugging are displayed. For more information about the syntax, see [System Syntax](system-syntax.md).
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Modes</strong></p></td>
-<td align="left"><p>Multiple target debugging</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Targets</strong></p></td>
-<td align="left"><p>Live, crash dump</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Platforms</strong></p></td>
-<td align="left"><p>All</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Item      | Description               |
+|-----------|---------------------------|
+| Modes     | Multiple target debugging |
+| Targets   | Live, crash dump          |
+| Platforms | All                       |
 
 ## Remarks
 
@@ -89,12 +71,3 @@ The following command displays system number 2.
 ```dbgcmd
 3:2:005> ||2
 ```
-
- 
-
- 
-
-
-
-
-

@@ -54,7 +54,7 @@ This extension works only in kernel mode, even though it resides in Ext.dll.
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For more general information about threads, see [Threads and Processes](controlling-threads-and-processes.md). For more information about manipulating or obtaining information about threads, see [Controlling Processes and Threads](controlling-processes-and-threads.md).
 

@@ -25,7 +25,7 @@ The **!dpa** extension displays pool allocation information.
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
 
-<span id="_______Options______"></span><span id="_______options______"></span><span id="_______OPTIONS______"></span> *Options*   
+*Options*
 Must be exactly one of the following options:
 
 <span id="-c"></span><span id="-C"></span>**-c**  

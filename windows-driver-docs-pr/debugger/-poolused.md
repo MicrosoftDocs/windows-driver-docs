@@ -2,7 +2,7 @@
 title: poolused (WinDbg)
 description: The poolused extension displays memory use summaries, based on the tag used for each pool allocation.
 keywords: ["poolused Windows Debugging"]
-ms.date: 05/23/2017
+ms.date: 08/29/2023
 topic_type:
 - apiref
 ms.topic: reference
@@ -14,66 +14,51 @@ api_type:
 
 # !poolused
 
-
 The **!poolused** extension displays memory use summaries, based on the tag used for each pool allocation.
 
 ```dbgcmd
 !poolused [Flags [TagString]] 
 ```
 
-## <span id="ddk__poolused_dbg"></span><span id="DDK__POOLUSED_DBG"></span>Parameters
+## Parameters
 
+*Flags* 
 
-<span id="_______Flags______"></span><span id="_______flags______"></span><span id="_______FLAGS______"></span> *Flags*   
 Specifies the amount of output to be displayed and the method of sorting the output. This can be any combination of the following bit values, except that bits 1 (0x2) and 2 (0x4) cannot be used together. The default is 0x0, which produces summary information, sorted by pool tag.
 
-<span id="Bit_0__0x1_"></span><span id="bit_0__0x1_"></span><span id="BIT_0__0X1_"></span>Bit 0 (0x1)  
+Bit 0 (0x1)  
+
 Displays more detailed (verbose) information.
 
-<span id="Bit_1__0x2_"></span><span id="bit_1__0x2_"></span><span id="BIT_1__0X2_"></span>Bit 1 (0x2)  
+Bit 1 (0x2)  
+
 Sorts the display by the amount of nonpaged memory use.
 
-<span id="Bit_2__0x4_"></span><span id="bit_2__0x4_"></span><span id="BIT_2__0X4_"></span>Bit 2 (0x4)  
+Bit 2 (0x4)  
+
 Sorts the display by the amount of paged memory use.
 
-<span id="Bit_3__0x8_"></span><span id="bit_3__0x8_"></span><span id="BIT_3__0X8_"></span>Bit 3 (0x8)  
-(Windows Server 2003 and later) Displays the session pool instead of the standard pool.
+Bit 3 (0x8)  
 
-**Note**  You can use the [**!session**](-session.md) command to switch between sessions.
+Displays the session pool instead of the standard pool. You can use the [**!session**](-session.md) command to switch between sessions.
 
- 
 
-<span id="_______TagString______"></span><span id="_______tagstring______"></span><span id="_______TAGSTRING______"></span> *TagString*   
+*TagString*
+
 Specifies the pool tag. *TagString* is a case-sensitive ASCII string. The asterisk (\*) can be used to represent any number of characters; the question mark (?) can be used to represent exactly one character. Unless an asterisk is used, *TagString* must be exactly four characters in length.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+### DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Kdextx86.dll</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Kdexts.dll</p></td>
-</tr>
-</tbody>
-</table>
+Kdexts.dll
 
- 
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
-For information about memory pools and pool tags, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
+For information about memory pools and pool tags, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
 
 ## Remarks
 
-The **!poolused** extension gathers data from the pool tagging feature of Windows. Pool tagging is permanently enabled on Windows Server 2003 and later versions of Windows. On Windows XP and earlier versions of Windows, you must enable pool tagging by using [Gflags](gflags.md).
+The **!poolused** extension gathers data from the pool tagging feature of Windows. Pool tagging is permanently enabled on Windows Server 2003 and later versions of Windows.
 
 If you stop executing the extension before it completes, the debugger displays partial results.
 
@@ -128,12 +113,3 @@ Here is a partial example of the output from this extension:
  vPrt        0        0        18    68160UNKNOWN pooltag 'vPrt', please update pooltag.txt
  TOTAL     3570214 209120008     38769 13066104
 ```
-
- 
-
- 
-
-
-
-
-

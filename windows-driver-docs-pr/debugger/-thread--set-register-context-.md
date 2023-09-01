@@ -41,7 +41,7 @@ If the **/p** option is included and *Thread* is zero or omitted, this translati
 <span id="_______Thread______"></span><span id="_______thread______"></span><span id="_______THREAD______"></span> *Thread*   
 The address of the thread. If this is omitted or zero, the thread context is reset to the current thread.
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
 <table>
 <colgroup>
@@ -66,7 +66,7 @@ The address of the thread. If this is omitted or zero, the thread context is res
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For more information about the register context and other context settings, see [Changing Contexts](changing-contexts.md).
 

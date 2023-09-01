@@ -64,7 +64,7 @@ Displays help for this extension in the Debugger Command window.
 
 This extension command can only be used with an Itanium target computer.
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For more information about how to display the interrupt dispatch tables on an x64 or x86 target computer, see [**!idt**](-idt.md).
 

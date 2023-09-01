@@ -51,7 +51,7 @@ Causes a stack trace to be displayed for each processor.
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For more information about debugging multiprocessor computers, see [Multiprocessor Syntax](multiprocessor-syntax.md).
 

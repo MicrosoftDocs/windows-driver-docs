@@ -34,7 +34,7 @@ Specifies the path and file name of a file to be used for standard output. If **
 <span id="_______ErrFile______"></span><span id="_______errfile______"></span><span id="_______ERRFILE______"></span> *ErrFile*   
 Specifies the path and file name of a file to be used for error output. If -e ErrFile is omitted, error output is sent to the same place as standard output. If you do not want this output displayed or saved in a file, you can specify a single hyphen (-) instead of *ErrFile*, with no space before the hyphen.
 
-<span id="_______Options______"></span><span id="_______options______"></span><span id="_______OPTIONS______"></span> *Options*   
+*Options*
 Can be any number of the following options:
 
 <span id="-ci__Commands_"></span><span id="-ci__commands_"></span><span id="-CI__COMMANDS_"></span>**-ci "**<em>Commands</em>**"**  
@@ -46,32 +46,17 @@ Causes any process being spawned to be completely detached from the debugger. Th
 <span id="_______ShellCommand______"></span><span id="_______shellcommand______"></span><span id="_______SHELLCOMMAND______"></span> *ShellCommand*   
 Specifies the application command line or Microsoft MS-DOS command to be executed.
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Modes</strong></p></td>
-<td align="left"><p>user mode, kernel mode</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Targets</strong></p></td>
-<td align="left"><p>live, crash dump</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Platforms</strong></p></td>
-<td align="left"><p>all</p></td>
-</tr>
-</tbody>
-</table>
+|  Item  | Description          |
+|--------|----------------------|
+|Modes   |User mode, kernel mode|
+|Targets |Live, crash dump      |
+|Platforms|All                  |
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For other ways of accessing the command shell, see [Using Shell Commands](using-shell-commands.md).
 

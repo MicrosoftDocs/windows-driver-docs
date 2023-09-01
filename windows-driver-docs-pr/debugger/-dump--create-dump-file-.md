@@ -2,7 +2,7 @@
 title: .dump (Create Dump File)
 description: The .dump command creates a user-mode or kernel-mode crash dump file.
 keywords: ["Create Dump File (.dump) command", "dump file, Create Dump File (.dump) command", ".dump (Create Dump File) Windows Debugging"]
-ms.date: 07/17/2020
+ms.date: 08/29/2023
 topic_type:
 - apiref
 ms.topic: reference
@@ -52,7 +52,7 @@ Append unique identifier to dump name.
 You can add the following *FullOptions* to change the contents of the dump file; the option is case-sensitive.
 
 |FullOption|Effect|
-|--- |--- |
+|--------- |----- |
 |**y**| Adds AVX register information to the dump file.|
 
 **/m\[**<em>MiniOptions</em>**\]**  
@@ -61,13 +61,13 @@ Creates a *small memory dump* (in kernel mode) or a *minidump* (in user mode) Fo
 In user mode, **/m** can be followed with additional *MiniOptions* specifying extra data that is to be included in the dump. If no *MiniOptions* are included, the dump will include module, thread, and stack information, but no additional data. You can add any of the following *MiniOptions* to change the contents of the dump file; they are case-sensitive.
 
 |MiniOption|Effect|
-|--- |--- |
+|--------- |----- |
 |a|Creates a minidump with all optional additions. The /ma option is equivalent to /mfFhut -- it adds full memory data, handle data, unloaded module information, basic memory information, and thread time information to the minidump. Any failure to read inaccessable memory results in termination of the minidump generation.|
 |A|The /mA option is equivalent to /ma except that it ignores any failure to read inaccessable memory and continues generating the minidump.|
 |f|Adds full memory data to the minidump. All accessible committed pages owned by the target application will be included.|
 |F|Adds all basic memory information to the minidump. This adds a stream to the minidump that contains all basic memory information, not just information about valid memory. This allows the debugger to reconstruct the complete virtual memory layout of the process when the minidump is being debugged.|
 |h|Adds data about the handles associated with the target application to the minidump.|
-|u|Adds unloaded module information to the minidump. This is available only in Windows Server 2003 and later versions of Windows.|
+|u|Adds unloaded module information to the minidump. |
 |t|Adds additional thread information to the minidump. This includes thread times, which can be displayed by using the !runaway extension or the .ttime (Display Thread Times) command when debugging the minidump.|
 |i|Adds secondary memory to the minidump. Secondary memory is any memory referenced by a pointer on the stack or backing store, plus a small region surrounding this address.|
 |p|Adds process environment block (PEB) and thread environment block (TEB) data to the minidump. This can be useful if you need access to Windows system information regarding the application's processes and threads.|

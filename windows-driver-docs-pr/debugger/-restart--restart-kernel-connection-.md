@@ -26,7 +26,7 @@ Do not confuse this command with the [**.restart (Restart Target Application)**]
 ## <span id="ddk_meta_restart_kernel_connection_dbg"></span><span id="DDK_META_RESTART_KERNEL_CONNECTION_DBG"></span>
 
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
 You can use the **.restart** command only in KD.
 
@@ -53,7 +53,7 @@ You can use the **.restart** command only in KD.
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For more information about reestablishing contact with the target, see [Synchronizing with the Target Computer](synchronizing-with-the-target-computer.md).
 

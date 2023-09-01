@@ -36,7 +36,7 @@ Specifies the address of the context block whose stack is desired. If *Address* 
 
 The !stacks extension displays information about the kernel stacks.
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For information about related commands and their uses, see [The AMLI Debugger](the-amli-debugger.md).
 

@@ -45,7 +45,7 @@ Clears any existing call on the current thread.
 <span id="________C______"></span><span id="________c______"></span> **/C**   
 Clears any existing call on the current thread, and resets the context of the current thread to the context stored by the outstanding call.
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
 <table>
 <colgroup>

@@ -33,7 +33,7 @@ Specifies the processor to be displayed. If this is omitted, all processors are 
 
 Kdexts.dll
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For more information about debugging multiprocessor computers, see [Multiprocessor Syntax](multiprocessor-syntax.md).
 

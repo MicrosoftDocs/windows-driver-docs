@@ -36,7 +36,7 @@ This extension is exported by Wmitrace.dll.
 
 This extension is available in Windows 7 and later versions of Windows.
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For a conceptual overview of event tracing, see the Microsoft Windows SDK. For information about tracing tools, see the Windows Driver Kit (WDK).
 

@@ -79,7 +79,7 @@ Specifies the size of the location, in bytes, to monitor for access. On an x86-b
 
 On an x64-based processor, this parameter can be 1, 2, 4, or 8. However, if *Access* equals **e**, *Size* must be 1.
 
-<span id="_______Options______"></span><span id="_______options______"></span><span id="_______OPTIONS______"></span> *Options*   
+*Options*
 Specifies breakpoint options. You can use any number of the following options, except as indicated:
 
 <span id="_1"></span>**/1**  
@@ -110,32 +110,17 @@ You must enclose this command string in quotation marks, and you should separate
 
 This parameter is optional.
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Modes</strong></p></td>
-<td align="left"><p>User mode, kernel mode</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Targets</strong></p></td>
-<td align="left"><p>Live debugging only</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Platforms</strong></p></td>
-<td align="left"><p>All</p></td>
-</tr>
-</tbody>
-</table>
+|  Item       | Description               |
+|-----------|------------------------|
+| Modes     | user mode, kernel mode |
+| Targets   | live debugging only    |
+| Platforms | all                    |
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For more information on processor breakpoints, see [Processor Breakpoints (ba Breakpoints)](processor-breakpoints---ba-breakpoints-.md). For more information about and examples of using breakpoints, other breakpoint commands and methods of controlling breakpoints, and information about how to set breakpoints in user space from a kernel debugger, see [Using Breakpoints](using-breakpoints.md). For more information about conditional breakpoints, see [Setting a Conditional Breakpoint](setting-a-conditional-breakpoint.md).
 

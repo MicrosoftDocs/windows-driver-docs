@@ -27,7 +27,7 @@ The **.fiximports** command validates and corrects all static import links for a
 <span id="_______Module______"></span><span id="_______module______"></span><span id="_______MODULE______"></span> *Module*   
 Specifies the target module whose imports the debugger corrects. *Module* can contain a variety of wildcard characters and specifiers. For more information about the syntax, see [String Wildcard Syntax](string-wildcard-syntax.md). If you want to include spaces in *Module*, you must enclose the parameter in quotation marks.
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
 <table>
 <colgroup>

@@ -66,7 +66,7 @@ Causes the display to include verbose information.
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For information about WDM audio architecture and audio drivers, see the Windows Driver Kit (WDK) documentation.
 

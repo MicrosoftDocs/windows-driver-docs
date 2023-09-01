@@ -59,7 +59,7 @@ Ntsdexts.dll</td>
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 You can also set these flags by using the Global Flags utility (Gflags.exe).
 

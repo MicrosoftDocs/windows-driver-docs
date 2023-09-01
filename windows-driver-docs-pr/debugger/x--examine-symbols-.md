@@ -25,7 +25,7 @@ x [Options] *
 ## <span id="ddk_cmd_examine_symbols_dbg"></span><span id="DDK_CMD_EXAMINE_SYMBOLS_DBG"></span>Parameters
 
 
-<span id="_______Options______"></span><span id="_______options______"></span><span id="_______OPTIONS______"></span> *Options*   
+*Options*
 Specifies symbol searching options. You can use one or more of the following options:
 
 <span id="_0"></span>**/0**  
@@ -87,28 +87,13 @@ Specifies a pattern that the symbol must contain. *Symbol* can contain a variety
 
 Because this pattern is matched to a symbol, the match is not case sensitive, and a single leading underscore (\_) represents any quantity of leading underscores. You can add spaces within *Symbol*, so that you can specify symbol names that contain spaces (such as "operator new" or "Template&lt;A, B&gt;") without using wildcard characters.
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Modes</p></td>
-<td align="left"><p>User mode, kernel mode</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Targets</p></td>
-<td align="left"><p>Live, crash dump</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Platforms</p></td>
-<td align="left"><p>All</p></td>
-</tr>
-</tbody>
-</table>
+|  Item  | Description          |
+|--------|----------------------|
+|Modes|User mode, kernel mode|
+|Targets|Live, crash dump|
+|Platforms|All|
 
  
 

@@ -50,7 +50,7 @@ Ntsdexts.dll</td>
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 To view memory protection information for all memory ranges owned by the target process, use [**!vadump**](-vadump.md). For information about memory protection, see *Microsoft Windows Internals* by Mark Russinovich and David Solomon. 
 

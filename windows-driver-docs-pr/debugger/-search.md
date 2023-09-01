@@ -52,7 +52,7 @@ Displays help for this extension in the Debugger Command window.
 
 Kdexts.dll
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For more ways to display and search physical memory, see [Reading and Writing Memory](reading-and-writing-memory.md).
 

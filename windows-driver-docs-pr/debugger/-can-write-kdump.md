@@ -27,7 +27,7 @@ The **!can\_write\_kdump** extension verifies that there is enough disk space on
 <span id="_______-dn______"></span><span id="_______-DN______"></span> **-dn**   
 Specifies that the file system on the target computer is an NTFS file system. If this parameter is omitted, then the amount of disk free space cannot be determined, and a warning will be shown. However, the amount of space required will still be displayed.
 
-<span id="_______Options______"></span><span id="_______options______"></span><span id="_______OPTIONS______"></span> *Options*   
+*Options*
 The following options are valid:
 
 <span id="-t"></span><span id="-T"></span>**-t**  

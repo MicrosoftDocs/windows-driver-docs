@@ -43,7 +43,7 @@ Specifies the virtual address whose page is desired.
 
 Kdexts.dll
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For other methods of achieving these results, see [Converting Virtual Addresses to Physical Addresses](converting-virtual-addresses-to-physical-addresses.md). Also see [**!ptov**](-ptov.md). For information about page tables and page directories, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
 

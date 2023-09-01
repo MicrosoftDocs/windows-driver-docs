@@ -2,7 +2,7 @@
 title: isainfo (WinDbg)
 description: The isainfo extension displays information about PNPISA cards or devices present in the system..
 keywords: ["I/O Bus", "CARD_INFORMATION", "isainfo Windows Debugging"]
-ms.date: 05/23/2017
+ms.date: 08/29/2023
 topic_type:
 - apiref
 ms.topic: reference
@@ -14,39 +14,21 @@ api_type:
 
 # !isainfo
 
-
 The **!isainfo** extension displays information about PNPISA cards or devices present in the system..
 
 ```dbgcmd
 !isainfo [Card]
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
+*Card*
 
-<span id="_______Card______"></span><span id="_______card______"></span><span id="_______CARD______"></span> *Card*   
 Specifies a PNPISA Card. If *Card* is 0 or omitted, all the devices and cards on the PNPISA (that is, the PC I/O) Bus are displayed.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+### DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Kdextx86.dll</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Kdexts.dll</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+Kdexts.dll
 
 ## Remarks
 
@@ -61,12 +43,3 @@ Flags (0x80000000)  DF_BUS
   Flags (0x40000818)  DF_ENUMERATED, DF_ACTIVATED, 
                       DF_REQ_TRIMMED, DF_READ_DATA_PORT
 ```
-
- 
-
- 
-
-
-
-
-

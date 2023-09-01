@@ -31,28 +31,13 @@ Displays output using [Debugger Markup Language](debugger-markup-language-comman
 ## <span id="ddk_meta_meta_command_help_dbg"></span><span id="DDK_META_META_COMMAND_HELP_DBG"></span>
 
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Modes</p></td>
-<td align="left"><p>User mode, kernel mode</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Targets</p></td>
-<td align="left"><p>Live, crash dump</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Platforms</p></td>
-<td align="left"><p>All</p></td>
-</tr>
-</tbody>
-</table>
+|  Item  | Description          |
+|--------|----------------------|
+|Modes|User mode, kernel mode|
+|Targets|Live, crash dump|
+|Platforms|All|
 
  
 

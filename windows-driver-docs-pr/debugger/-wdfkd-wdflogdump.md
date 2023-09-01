@@ -44,7 +44,7 @@ UMDF
 
     If a single process can be determined it will automatically be chosen.
 
-<span id="_______Options______"></span><span id="_______options______"></span><span id="_______OPTIONS______"></span> *Options*   
+*Options*
 KMDF:
 
 **-d** Displays only the driver logs.

@@ -32,7 +32,7 @@ This extension is available in Windows Vista Service Pack 1 (SP1) and later vers
 
 This extension is useful only when debugging a minidump file or a full dump file.
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For a conceptual overview of event tracing, see the Microsoft Windows SDK. For information about tracing tools, see the Windows Driver Kit (WDK).
 

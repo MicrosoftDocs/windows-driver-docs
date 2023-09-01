@@ -41,7 +41,7 @@ Reloads user-mode symbols after the process context has been set, if you use the
 <span id="_______Process______"></span><span id="_______process______"></span><span id="_______PROCESS______"></span> *Process*   
 Specifies the address of the process that you want. (More precisely, this parameter specifies the address of the EPROCESS block for this process). The process context is set to this process. If you omit *Process* or specify zero, the process context is reset to the default process for the current system state. (If you used the **/i** option to set process context, you must use the **/i** option to reset the process context.)
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
 <table>
 <colgroup>
@@ -66,7 +66,7 @@ Specifies the address of the process that you want. (More precisely, this parame
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For more information about the process context and other context settings, see [Changing Contexts](changing-contexts.md).
 

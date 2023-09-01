@@ -63,7 +63,7 @@ Ntsdexts.dll</td>
 
 The **!runaway** extension can only be used during live debugging or when debugging crash dump files created by [**.dump /mt**](-dump--create-dump-file-.md) or **.dump /ma**.
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For information about threads in user mode, see [Controlling Processes and Threads](controlling-processes-and-threads.md). For more information about analyzing processes and threads, see *Microsoft Windows Internals* by Mark Russinovich and David Solomon. 
 

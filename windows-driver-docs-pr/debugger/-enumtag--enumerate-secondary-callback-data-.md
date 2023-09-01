@@ -24,7 +24,7 @@ The **.enumtag** command displays secondary bug check callback data and all data
 ## <span id="ddk_meta_enumerate_secondary_callback_data_dbg"></span><span id="DDK_META_ENUMERATE_SECONDARY_CALLBACK_DATA_DBG"></span>
 
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
 <table>
 <colgroup>
@@ -49,7 +49,7 @@ The **.enumtag** command displays secondary bug check callback data and all data
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For more information and for other ways of displaying this data, see [Reading Bug Check Callback Data](reading-bug-check-callback-data.md).
 

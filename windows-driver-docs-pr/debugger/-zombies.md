@@ -57,7 +57,7 @@ Specifies the hexadecimal address at which to begin the search. This is useful i
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 To see a list of all processes and threads, use the [**!process**](-process.md) extension.
 

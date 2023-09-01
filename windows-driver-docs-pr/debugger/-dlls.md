@@ -25,7 +25,7 @@ The **!dlls** extension displays the table entries of all loaded modules or all 
 ## <span id="ddk__dlls_dbg"></span><span id="DDK__DLLS_DBG"></span>Parameters
 
 
-<span id="_______Options______"></span><span id="_______options______"></span><span id="_______OPTIONS______"></span> *Options*   
+*Options*
 Specifies the level of output. This parameter can be any combination of the following values:
 
 <span id="-f"></span><span id="-F"></span>**-f**  
