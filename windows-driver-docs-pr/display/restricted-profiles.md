@@ -30,4 +30,4 @@ These restricted profiles are defined in anticipation of combinations of feature
 * [MPEG2_D](mpeg2-d.md)
 * [WMV8_A, WMV8_B, WMV9_A, WMV9_B, and WMV9_C](wmv8-a--wmv8-b--wmv9-a--wmv9-b--and-wmv9-c.md)
 
-For information about the restricted profiles of the MPEG-4 AVC (H.264) and VC-1 video codec standards, download [DirectX Video Acceleration Specification for H.264/AVC Decoding](/download/details.aspx?id=11323) and [DirectX Video Acceleration Specification for Windows Media Video v8, v9 and vA Decoding (Including SMPTE 421M "VC-1")](/download/details.aspx?id=49188).
+For information about the restricted profiles of the MPEG-4 AVC (H.264) and VC-1 video codec standards, see *DirectX Video Acceleration Specification for H.264/AVC Decoding* and *DirectX Video Acceleration Specification for Windows Media Video v8, v9 and vA Decoding (Including SMPTE 421M "VC-1")*.
