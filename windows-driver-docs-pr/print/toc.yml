@@ -1,5 +1,9 @@
 - name: "Printer driver design guide"
   href: index.md
+- name: End of servicing plan for third-party printer drivers on Windows
+  href: end-of-servicing-plan-for-third-party-printer-drivers-on-windows.md
+- name: Legacy v3 and v4 third-party printer driver design guide
+  href: legacy-v3-and-v4-third-party-printer-drivers.md
 - name: "V4 Printer Drivers"
 # Auto-expanded node
   items: 
