@@ -41,7 +41,7 @@ Asset Metadata Resource
 
 1. If you have not done so already, complete all the [prerequisites](dashboard-api.md) for the Microsoft Hardware APIs.
 
-2. [Obtain an Azure AD access token](dashboard-api.md). You must pass this access token to the methods in the Microsoft Store submission API. After you obtain an access token, you have 60 minutes to use it before it expires. After the token expires, you can obtain a new one.
+2. [Obtain an Azure Entra Identity access token](dashboard-api.md). You must pass this access token to the methods in the Microsoft Store submission API. After you obtain an access token, you have 60 minutes to use it before it expires. After the token expires, you can obtain a new one.
 
 3. Create a new submission by executing the following method in the Microsoft Hardware API. The request body should contain your package stream as "application/octet-stream". This will creates a new in-progress preprod submission with HDC. Ensure that the package is signed in the same way you would for [attestation](code-signing-attestation.md) submissions before uploading.
 

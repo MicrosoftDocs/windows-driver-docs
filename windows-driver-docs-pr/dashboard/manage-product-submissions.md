@@ -27,7 +27,7 @@ Methods for managing product submissions
 
 1. If you have not done so already, complete all the [prerequisites](dashboard-api.md) for the Microsoft Hardware APIs.
 
-1. [Obtain an Azure AD access token](dashboard-api.md#obtain-an-azure-ad-access-token). You must pass this access token to the methods in the Microsoft Store submission API. After you obtain an access token, you have 60 minutes to use it before it expires. After the token expires, you can obtain a new one.
+1. [Obtain an Azure Entra Identity access token](dashboard-api.md#obtain-an-azure-ad-access-token). You must pass this access token to the methods in the Microsoft Store submission API. After you obtain an access token, you have 60 minutes to use it before it expires. After the token expires, you can obtain a new one.
 
 1. [Create a new product](create-a-new-product.md)  by executing the following method in the Microsoft Hardware API. This creates a new in-progress product and allows you to submit packages for this product.
 
