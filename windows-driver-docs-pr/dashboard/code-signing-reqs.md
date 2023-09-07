@@ -35,7 +35,7 @@ The following rules apply:
 * While Microsoft strongly recommends that you sign individual submissions with an EV certificate, you can alternatively sign submissions with an Authenticode signing certificate that is also registered to your Partner Center account.
 * All certificates must be SHA2 and signed with the `/fd sha256` SignTool command line switch.
 
-If you already have an approved EV certificate from a certificate authorities, you can use it to establish a Partner Center account. If you don't have an EV certificate, chose [one the certificate authorities](#where-to-get-code-signing-certificates) and follow their directions for purchase.
+If you already have an approved EV certificate from a certificate authority, you can use it to establish a Partner Center account. If you don't have an EV certificate, chose [one the certificate authorities](#where-to-get-code-signing-certificates) and follow their directions for purchase.
 
 Once the certificate authority has verified your contact information and your certificate purchase is approved, follow their directions to retrieve the certificate.
 
@@ -114,3 +114,4 @@ The table below summarizes the driver signing requirements for Windows:
 \*Configuration dependent – With Windows 10 Enterprise edition, organizations can use Windows Defender Application Control (WDAC) to define custom signing requirements. For more information about WDAC, see [Planning and getting started on the Windows Defender Application Control deployment process](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide).
 
 (1) Driver signing is required for manufacturers building retail products (i.e. for a non-development purpose) with IoT Core. For a list of approved Certificate Authorities (CAs), see [Cross-Certificates for Kernel Mode Code Signing](../install/cross-certificates-for-kernel-mode-code-signing.md). If UEFI Secure Boot is enabled, then drivers must be signed.
+
