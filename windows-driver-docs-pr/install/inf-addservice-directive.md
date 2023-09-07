@@ -10,7 +10,7 @@ api_name:
 - INF AddService Directive
 api_type:
 - NA
-ms.date: 06/19/2023
+ms.date: 09/07/2023
 ---
 
 # INF AddService directive
@@ -123,7 +123,7 @@ ServiceType=type-code
 StartType=start-code
 ErrorControl=error-control-level
 ServiceBinary=path-to-service
-[StartName=driver-object-name]
+[StartName=service-start-name]
 [AddReg=add-registry-section[, add-registry-section] ...]
 [DelReg=del-registry-section[, del-registry-section] ...]
 [BitReg=bit-registry-section[,bit-registry-section] ...]
@@ -215,8 +215,8 @@ Specifies the path of the binary for the service, expressed as *%dirid%\\filenam
 
 The *dirid* number is either a custom directory identifier or one of the system-defined directory identifiers described in [Using Dirids](using-dirids.md). The given *filename* specifies a file already transferred (see the [**INF CopyFiles Directive**](inf-copyfiles-directive.md)) from the source distribution media to that directory on the target computer.
 
-**StartName**=*driver-object-name*  
-This optional entry specifies the name of the driver object that represents this device/driver. If *type-code* specifies **1** (SERVICE_KERNEL_DRIVER) or **2** (SERVICE_FILE_SYSTEM_DRIVER), this name is the driver object name that the I/O manager uses to load the driver.
+**StartName**=*service-start-name*
+This optional entry specifies a start name that should be associated with the service. If *type-code* specifies **1** (SERVICE_KERNEL_DRIVER) or **2** (SERVICE_FILE_SYSTEM_DRIVER), this name is the driver object name that the I/O manager uses to load the driver. If *type-code* contains the bit **0x00000010** (SERVICE_WIN32_OWN_PROCESS) or **0x00000020** (SERVICE_WIN32_SHARE_PROCESS), this name can be one of the valid values for the *lpServiceStartName* parameter of the [CreateService](/windows/win32/api/winsvc/nf-winsvc-createservicew) API.
 
 **AddReg**=*add-registry-section*[**,**_add-registry-section_]...  
 References one or more INF-writer-defined *add-registry-sections* in which any registry information pertinent to the newly installed services is set up. For more information, see [**INF AddReg Directive**](inf-addreg-directive.md).
