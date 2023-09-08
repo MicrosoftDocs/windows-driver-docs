@@ -33,7 +33,7 @@ With these advancements in the Windows print platform, we are announcing the end
 
 **Q: Will vendor-supplied drivers be signed by WHCP (Windows Hardware Compatibility Program)?**
 
-**A:** Printer manufacturers can continue to submit printer drivers through the [**Partner Center**](https://partner.microsoft.com/dashboard/home) hardware tool for driver validation and signing. However, in 2026 new printer drivers will no longer be published to Windows Update. Manufacturers and independent software vendors will need to provide customers with an alternative means to download and install those printer drivers.
+**A:** Printer manufacturers can continue to submit printer drivers through the [**Partner Center**](https://partner.microsoft.com/dashboard/home) hardware tool for driver validation and signing. However, in 2025 new printer drivers will no longer be published to Windows Update. Manufacturers and independent software vendors will need to provide customers with an alternative means to download and install those printer drivers.
 
 **Q: Will Windows prevent installation of new printer drivers?**
 
