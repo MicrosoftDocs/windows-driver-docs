@@ -25,7 +25,7 @@ With these advancements in the Windows print platform, we are announcing the end
 | **September 2023** | **Announce legacy third-party printer driver for Windows end of servicing plan.** |
 | **2025** | **No new printer drivers will be published to Windows Update.**<br><br>Existing printer drivers on Windows Update can still be updated. |
 | **2026** | **Printer driver ranking order modified to always prefer Windows IPP inbox class driver.** |
-| **2027** | **Except for security-related fixes, third-party printer driver updates will no longer be allowed**.<br><br>Existing third-party printer drivers can be installed from Windows Update or users can install printer drivers using printer manufacturers' installer programs. |
+| **2027** | **Except for security-related fixes, third-party printer driver updates will no longer be allowed**.<br><br>Existing third-party printer drivers can be installed from Windows Update or users can install printer drivers by using a print device manufacturer-provided installation program. |
 
 **\* Dates are subject to change.**
 
