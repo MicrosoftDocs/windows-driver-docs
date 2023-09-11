@@ -39,7 +39,7 @@ The CommandString commands are executed only if the breakpoint is reached while 
 
 Any command that resumes program execution after a breakpoint (such as **g** or **t**) ends the execution of the command list.
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
 <table>
 <colgroup>
@@ -64,7 +64,7 @@ Any command that resumes program execution after a breakpoint (such as **g** or 
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For more information about and examples of how to use breakpoints, other breakpoint commands and methods of controlling breakpoints, and how to set breakpoints in user space from a kernel debugger, see [Using Breakpoints](using-breakpoints.md). For more information about conditional breakpoints, see [Setting a Conditional Breakpoint](setting-a-conditional-breakpoint.md).
 

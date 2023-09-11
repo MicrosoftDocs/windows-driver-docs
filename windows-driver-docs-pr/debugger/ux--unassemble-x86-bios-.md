@@ -25,7 +25,7 @@ The **ux** command displays the instruction set of the x86-based BIOS code.
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the memory offset within the x86-based BIOS code. If you omit this parameter or specify zero, the default offset is the beginning of the BIOS.
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
 <table>
 <colgroup>
@@ -50,7 +50,7 @@ Specifies the memory offset within the x86-based BIOS code. If you omit this par
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For more information about how to debug BIOS code, see [Debugging BIOS Code](debugging-bios-code.md).
 

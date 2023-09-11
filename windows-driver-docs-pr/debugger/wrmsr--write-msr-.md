@@ -28,7 +28,7 @@ Specifies the address of the MSR.
 <span id="_______Value______"></span><span id="_______value______"></span><span id="_______VALUE______"></span> *Value*   
 Specifies the 64-bit hexadecimal value to write to the MSR.
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
 <table>
 <colgroup>

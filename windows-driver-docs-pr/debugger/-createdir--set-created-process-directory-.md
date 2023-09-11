@@ -33,29 +33,13 @@ Prevents processes created by the debugger from inheriting handles from the debu
 <span id="_______Path______"></span><span id="_______path______"></span><span id="_______PATH______"></span> *Path*   
 Specifies the starting directory for all child processes created by any target process. If *Path* contains spaces, it must be enclosed in quotation marks.
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Modes</strong></p></td>
-<td align="left"><p>user mode only</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Targets</strong></p></td>
-<td align="left"><p>live debugging only</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Platforms</strong></p></td>
-<td align="left"><p>all</p></td>
-</tr>
-</tbody>
-</table>
-
+|  Item  | Description          |
+|--------|----------------------|
+|Modes | user mode only |
+|Targets | live debugging only |
+|Platforms | all  |
  
 
 ## Remarks

@@ -24,7 +24,7 @@ The **.bugcheck** command displays the data from a bug check on the target compu
 ## <span id="ddk_meta_display_bug_check_data_dbg"></span><span id="DDK_META_DISPLAY_BUG_CHECK_DATA_DBG"></span>
 
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
 <table>
 <colgroup>
@@ -49,7 +49,7 @@ The **.bugcheck** command displays the data from a bug check on the target compu
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For more information about bug checks, see [Bug Checks (Blue Screens)](bug-checks--blue-screens-.md). For a description of individual bug checks, see the [Bug Check Code Reference](bug-check-code-reference2.md) section.
 

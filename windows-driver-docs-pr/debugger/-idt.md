@@ -56,7 +56,7 @@ Displays help for this extension in the Debugger Command window.
 
 This extension command can only be used with an x64-based or x86-based target computer.
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For information about ISRs and IDTs, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 

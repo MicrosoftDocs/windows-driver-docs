@@ -2,7 +2,7 @@
 title: ~ (Thread Status)
 description: The tilde (~) command displays status for the specified thread or for all threads in the current process.
 keywords: ["~ (Thread Status) Windows Debugging"]
-ms.date: 09/17/2018
+ms.date: 08/30/2023
 topic_type:
 - apiref
 ms.topic: reference
@@ -14,44 +14,27 @@ api_type:
 
 # ~ (Thread Status)
 
-
 The tilde (**~**) command displays status for the specified thread or for all threads in the current process.
 
 ```dbgcmd
 ~ Thread
 ```
 
-## <span id="ddk_cmd_thread_status_dbg"></span><span id="DDK_CMD_THREAD_STATUS_DBG"></span>Parameters
+## Parameters
 
+*Thread*
 
-<span id="_______Thread______"></span><span id="_______thread______"></span><span id="_______THREAD______"></span> *Thread*   
 Specifies the thread to display. If you omit this parameter, all threads are displayed. For more information about the syntax, see [Thread Syntax](thread-syntax.md).
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Modes</strong></p></td>
-<td align="left"><p>User mode only</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Targets</strong></p></td>
-<td align="left"><p>Live, crash dump</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Platforms</strong></p></td>
-<td align="left"><p>All</p></td>
-</tr>
-</tbody>
-</table>
- 
+|  Item  | Description          |
+|--------|----------------------|
+|Modes|User mode only|
+|Targets|Live, crash dump|
+|Platforms|All|
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For more information and other methods of displaying or controlling processes and threads, see [Controlling Processes and Threads](controlling-processes-and-threads.md).
 
@@ -96,17 +79,8 @@ The previous command displays the following output.
 ```dbgcmd
 0:001> ~
    0 id: 4dc.470 Suspend: 0 Teb 7ffde000 Unfrozen
-. 1 id: 4dc.534 Suspend: 0 Teb 7ffdd000 Unfrozen
+ . 1 id: 4dc.534 Suspend: 0 Teb 7ffdd000 Unfrozen
 #  2 id: 4dc.5a8 Suspend: 0 Teb 7ffdc000 Unfrozen
 ```
 
 On the first line of this output, 0 is the decimal thread number, 4DC is the hexadecimal process ID, 470 is the hexadecimal thread ID, 0x7FFDE000 is the address of the TEB, and **Unfrozen** is the thread status. The period (.) before thread 1 means this thread is the current thread. The number sign (\#) before thread 2 means this thread was the one that originally caused the exception or it was active when the debugger attached to the process.
-
- 
-
- 
-
-
-
-
-

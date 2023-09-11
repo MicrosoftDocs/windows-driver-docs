@@ -32,7 +32,7 @@ Turns off the display of the processor number.
 <span id="_______1______"></span> **1**   
 Turns on the display of the processor number.
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
 <table>
 <colgroup>
@@ -57,7 +57,7 @@ Turns on the display of the processor number.
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For more information about how to debug multiprocessor computers, see [Multiprocessor Syntax](multiprocessor-syntax.md).
 

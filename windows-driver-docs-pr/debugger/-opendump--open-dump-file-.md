@@ -34,7 +34,7 @@ Specifies the name of a dump file to debug. This dump file must be contained in 
 <span id="_______CabFile______"></span><span id="_______cabfile______"></span><span id="_______CABFILE______"></span> *CabFile*   
 Specifies the name of an archive file to open. *CabFile*should include the file name extension (typically .cab) and can include an absolute or relative path. Relative paths are relative to the directory that you started the debugger in. If you use the **/c** switch to specify a dump file in an archive but you omit *CabFile*, the debugger reuses the archive file that you most recently opened.
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
 <table>
 <colgroup>

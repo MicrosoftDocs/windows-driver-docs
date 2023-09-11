@@ -56,7 +56,7 @@ Displays some Help text for this extension in the [Debugger Command window](debu
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For more information about how to display and change local variables and a description of other memory-related commands, see [Reading and Writing Memory](reading-and-writing-memory.md).
 

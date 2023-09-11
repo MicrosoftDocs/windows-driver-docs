@@ -117,7 +117,7 @@ Specifies an exclusion range. *Start* is the beginning address of the exclusion 
 
 exts.dll
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For information about how to download and install Application Verifier and its documentation, see [Application Verifier](../devtest/application-verifier.md).
 

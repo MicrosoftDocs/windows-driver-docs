@@ -44,7 +44,7 @@ Lists with detailed information the device objects owned by the driver (requires
 Kdexts.dll
 
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 See [Plug and Play Debugging](plug-and-play-debugging.md) for examples and applications of this extension command. For information about driver objects, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 

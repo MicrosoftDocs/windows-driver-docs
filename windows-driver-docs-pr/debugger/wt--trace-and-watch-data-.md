@@ -90,7 +90,7 @@ Specifies the address where the debugger begins execution. If you do not use *St
 <span id="_______EndAddress______"></span><span id="_______endaddress______"></span><span id="_______ENDADDRESS______"></span> *EndAddress*   
 Specifies the address where tracing ends. If you do not use *EndAddress*, a single instruction or function call is executed.
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
 <table>
 <colgroup>
@@ -117,7 +117,7 @@ Specifies the address where tracing ends. If you do not use *EndAddress*, a sing
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For more information about issuing the **wt** command and an overview of related commands, see [Controlling the Target](controlling-the-target.md).
 

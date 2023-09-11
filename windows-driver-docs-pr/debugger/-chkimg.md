@@ -24,7 +24,7 @@ The **!chkimg** extension detects corruption in the images of executable files b
 ## <span id="ddk__chkimg_dbg"></span><span id="DDK__CHKIMG_DBG"></span>Parameters
 
 
-<span id="_______Options______"></span><span id="_______options______"></span><span id="_______OPTIONS______"></span> *Options*   
+*Options*
 Any combination of the following options:
 
 <span id="-p_SearchPath_"></span><span id="-p_searchpath_"></span><span id="-P_SEARCHPATH_"></span>**-p** **** *SearchPath*   

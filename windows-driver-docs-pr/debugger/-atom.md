@@ -32,7 +32,7 @@ Specifies the hexadecimal virtual address of the atom to display. If you omit th
 <p>Exts.dll</p>
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For more information about atoms and atom tables, see the Microsoft Windows SDK documentation.
 

@@ -22,53 +22,42 @@ l-Option
 l{+|-}
 ```
 
-## <span id="ddk_cmd_set_source_options_dbg"></span><span id="DDK_CMD_SET_SOURCE_OPTIONS_DBG"></span>Parameters
+## Parameters
 
-<span id="_________or_-"></span><span id="_________OR_-"></span> **+** or **-**  
+**+** or **-**  
 Specifies whether a given option is to be turned on (plus sign \[+\])or turned off (minus sign \[-\]).
 
-<span id="_______Option______"></span><span id="_______option______"></span><span id="_______OPTION______"></span> *Option*
+*Option*
+
 One of the following options. The options must be in lowercase letters.
 
-<span id="l"></span><span id="L"></span>**l**  
+**l**
+
 Displays source line numbers at the command prompt. You can disable source line display through l-ls or .prompt\_allow -src. To make the source line numbers visible, you must enable source line display through both mechanisms.
 
-<span id="o"></span><span id="O"></span>**o**  
+**o**
+
 Hides all messages (other than the source line and line number) when you are stepping through code. (The **s** option must also be active for the **o** option to have any effect.)
 
-<span id="s"></span><span id="S"></span>**s**  
+**s**  
 Displays source lines and source line numbers at the command prompt.
 
-<span id="t"></span><span id="T"></span>**t**  
+**t**  
+
 Starts [source mode](debugging-in-source-mode.md). If this mode is not set, the debugger is in [assembly mode](debugging-in-assembly-mode.md).
 
-<span id="_"></span>**\***  
+**\***  
 Turns on or turns off all options.
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+## Environment
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Modes</strong></p></td>
-<td align="left"><p>User mode, kernel mode</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Targets</strong></p></td>
-<td align="left"><p>Live, crash dump</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Platforms</strong></p></td>
-<td align="left"><p>All</p></td>
-</tr>
-</tbody>
-</table>
+|  Item  | Description          |
+|--------|----------------------|
+|Modes   |User mode, kernel mode|
+|Targets |Live, crash dump      |
+|Platforms|All                  |
 
- ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+## Additional Information
 
 For more information about source debugging and related commands, see [Debugging in Source Mode](debugging-in-source-mode.md). For more information about assembly debugging and related commands, see [Debugging in Assembly Mode](debugging-in-assembly-mode.md).
 

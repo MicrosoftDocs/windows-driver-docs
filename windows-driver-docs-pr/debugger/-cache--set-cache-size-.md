@@ -66,7 +66,7 @@ Deletes all entries of ranges with errors from the cache, as well as all user-mo
 <span id="flush_Address"></span><span id="flush_address"></span><span id="FLUSH_ADDRESS"></span>**flush** *Address*  
 Deletes a 4096-byte block of the cache, beginning at *Address*.
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
 <table>
 <colgroup>

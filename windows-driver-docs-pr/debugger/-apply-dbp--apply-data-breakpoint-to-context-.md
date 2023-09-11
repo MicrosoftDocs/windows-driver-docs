@@ -27,7 +27,7 @@ The **.apply\_dbp** command applies the current process' existing data breakpoin
 <span id="________m_______Context______"></span><span id="________m_______context______"></span><span id="________M_______CONTEXT______"></span> **/m** *Context*   
 Specifies the address of a register context (CONTEXT structure) in memory to which to apply the current process' data breakpoints.
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
 <table>
 <colgroup>
@@ -52,7 +52,7 @@ Specifies the address of a register context (CONTEXT structure) in memory to whi
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For more information about breakpoints controlled by the processor, see [Processor Breakpoints (ba Breakpoints)](processor-breakpoints---ba-breakpoints-.md). For more information about the register context (thread context), see [Register Context](changing-contexts.md#register-context).
 

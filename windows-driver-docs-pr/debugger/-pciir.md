@@ -49,7 +49,7 @@ The **!pciir** extension displays the contents of the hardware routing of periph
 
 This extension command can only be used with an x86-based target computer that does not have the Advanced Configuration and Power Interface (ACPI) enabled.
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For similar information on any ACPI-enabled computer, use the [**!acpiirqarb**](-acpiirqarb.md) extension.
 

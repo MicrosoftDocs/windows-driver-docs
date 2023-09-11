@@ -48,7 +48,7 @@ Specifies the address of the C++ exception record to display.
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For more information about exceptions, see [Controlling Exceptions and Events](controlling-exceptions-and-events.md), the Windows Driver Kit (WDK) documentation, the Windows SDK documentation, and *Microsoft Windows Internals* by Mark Russinovich and David Solomon. Use the [**.exr**](-exr--display-exception-record-.md) command to display other exception records.
 

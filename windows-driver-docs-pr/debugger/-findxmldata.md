@@ -68,7 +68,7 @@ Displays system version information.
 
 The **!findxmldata** extension works only on a kernel-mode Small Memory Dump file that is stored in a CAB file.
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For more information about how to put dump files into CAB files, see [**.dumpcab (Create Dump File CAB)**](-dumpcab--create-dump-file-cab-.md). For information more about how to debug a kernel-mode dump file, including dump files that are stored inside CAB files, see [Analyzing a Kernel-Mode Dump File](analyzing-a-kernel-mode-dump-file.md).
 

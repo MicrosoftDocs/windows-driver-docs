@@ -51,7 +51,7 @@ Determines the number of tokens to display.
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 You can use the [**!dumpfa**](-dumpfa.md) extension to debug the [**!analyze**](-analyze.md) extension.
 

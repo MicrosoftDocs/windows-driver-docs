@@ -14,7 +14,6 @@ api_type:
 
 # $<, $><, $$<, $$><, $$ >a< (Run Script File)
 
-
 The **$&lt;**, **$&gt;&lt;**, **$$&lt;**, **$$&gt;&lt;**, and **$$&gt;a&lt;** commands read the contents of the specified script file and use its contents as debugger command input.
 
 ```dbgcmd
@@ -25,39 +24,22 @@ The **$&lt;**, **$&gt;&lt;**, **$$&lt;**, **$$&gt;&lt;**, and **$$&gt;a&lt;** co
     $$>a<Filename [arg1 arg2 arg3 ...] 
 ```
 
-## <span id="ddk_cmd_run_script_file_dbg"></span><span id="DDK_CMD_RUN_SCRIPT_FILE_DBG"></span>Parameters
+## Parameters
 
-
-<span id="_______Filename______"></span><span id="_______filename______"></span><span id="_______FILENAME______"></span> *Filename*   
+*Filename*
 Specifies a file that contains valid debugger command text. The file name must follow Microsoft Windows file name conventions. The file name may contain spaces.
 
-<span id="_______argn______"></span><span id="_______ARGN______"></span> *argn*   
+*argn*
+
 Specifies any number of string arguments for the debugger to pass to the script. The debugger will replace any string of the form ${$arg*n*} in the script file with the corresponding *argn* before executing the script. Arguments may not contain quotation marks or semicolons. Multiple arguments must be separated by spaces; if an argument contains a space it must be enclosed in quotation marks. All arguments are optional.
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Modes</p></td>
-<td align="left"><p>User mode, kernel mode</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Targets</p></td>
-<td align="left"><p>Live, crash dump</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Platforms</p></td>
-<td align="left"><p>All</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|  Item  | Description          |
+|--------|----------------------|
+|Modes|User mode, kernel mode|
+|Targets|Live, crash dump|
+|Platforms|All|
 
 ## Remarks
 
@@ -131,8 +113,6 @@ The following table summarizes how you can use these tokens.
 </tbody>
 </table>
 
- 
-
 The **$&lt;**, **$&gt;&lt;**, **$$&lt;**, and **$$&gt;&lt;** commands echo the commands contained in the script file and display the output of these commands. The **$$&gt;a&lt;** command does not echo the commands found in the script file, but merely displays their output.
 
 Script files can be nested. If the debugger encounters one of these tokens in a script file, execution moves to the new script file and returns to the previous location when the new script file has been completed. Scripts can also be called recursively.
@@ -180,7 +160,3 @@ ecx=0021f4ac
 ```
 
 In the preceding example, the file name is enclosed in quotation marks because it contains a space, and arguments that contain spaces are enclosed in quotation marks as well. Although a fifth argument seems to be expected by the script, the semicolon terminates the **$$&gt;a&lt;** command after the fourth argument.
-
- 
-
-

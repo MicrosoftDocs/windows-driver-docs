@@ -25,7 +25,7 @@ The **!dh** extension displays the headers for the specified image.
 ## <span id="ddk__dh_dbg"></span><span id="DDK__DH_DBG"></span>Parameters
 
 
-<span id="_______Options______"></span><span id="_______options______"></span><span id="_______OPTIONS______"></span> *Options*   
+*Options*
 Any one of the following options:
 
 <span id="-f"></span><span id="-F"></span>**-f**  

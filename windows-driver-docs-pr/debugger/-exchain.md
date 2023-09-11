@@ -24,7 +24,7 @@ The **!exchain** extension displays the current exception handler chain.
 ## <span id="ddk__exchain_dbg"></span><span id="DDK__EXCHAIN_DBG"></span>Parameters
 
 
-<span id="_______Options______"></span><span id="_______options______"></span><span id="_______OPTIONS______"></span> *Options*   
+*Options*
 One of the following values:
 
 <span id="_c"></span><span id="_C"></span>**/c**  

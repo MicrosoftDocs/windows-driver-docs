@@ -29,7 +29,7 @@ For more information about the registry keys used, see [Enabling Postmortem Debu
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the address of the JIT\_DEBUG\_INFO structure. The address to the structure is passed to the **.jdinfo** command using the %p parameter that is specified in the AeDebug registry entry.
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
 <table>
 <colgroup>

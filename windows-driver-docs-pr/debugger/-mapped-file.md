@@ -50,7 +50,7 @@ Specifies the address of the file mapping. If *Address* is not in a mapping, the
 
 The **!mapped\_file** extension can only be used during live, nonremote debugging.
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For more information about file mapping, see [MapViewOfFile](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffile) in the Windows SDK.
 

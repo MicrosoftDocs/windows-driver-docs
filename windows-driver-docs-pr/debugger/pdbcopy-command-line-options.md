@@ -53,7 +53,7 @@ Causes PDBCopy to remove all public and private symbols from the new symbol file
 <span id="-F__TextFile"></span><span id="-f__textfile"></span><span id="-F__TEXTFILE"></span>**-F:@**<em>TextFile</em>  
 Causes PDBCopy to remove all public and private symbols from the new symbol file, except for the public symbols listed in the specified text file. *TextFile* specifies the file name and path (absolute or relative) of this file. This file can list the names of any number of symbols, one on each line, including any symbol name decorations (for example, initial underscores), but not including module names. This option requires the -p option.
 
-<span id="_______Options______"></span><span id="_______options______"></span><span id="_______OPTIONS______"></span> *Options*   
+*Options*
 Any combination of the following options. These options are case-sensitive.
 
 <span id="-s"></span><span id="-S"></span>**-s**  
@@ -73,7 +73,7 @@ Displays help text for the PDBCopy command line.
 
 
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For more information about the PDBCopy tool, see [Using PDBCopy](using-pdbcopy.md).
 

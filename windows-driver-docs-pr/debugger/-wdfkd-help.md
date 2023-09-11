@@ -25,7 +25,7 @@ The **!wdfkd.help** extension displays help information about all Wdfkd.dll exte
 
 Wdfkd.dll
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 The **!wdfkd.help** extension is equivalent to the [**!wdfkd.wdfhelp**](-wdfkd-wdfhelp.md) extension.
 

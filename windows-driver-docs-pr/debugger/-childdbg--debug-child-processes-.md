@@ -32,7 +32,7 @@ Prevents the debugger from debugging child processes.
 <span id="_______1______"></span> **1**   
 Causes the debugger to debug child processes.
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
 This command is only supported in Windows XP and later versions of Windows.
 

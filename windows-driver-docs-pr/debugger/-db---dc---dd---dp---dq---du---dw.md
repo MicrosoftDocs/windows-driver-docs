@@ -85,7 +85,7 @@ Specifies the number of chunks of memory to display. The size of a chunk is dete
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 To write to physical memory, use the [**!e\\***](-eb---ed.md) extensions. For an overview of memory manipulation and a description of other memory-related commands, see [Reading and Writing Memory](reading-and-writing-memory.md).
 

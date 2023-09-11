@@ -1,7 +1,7 @@
 ---
 title: Bluetooth Proximity Profile
 description: The Proximity Profile defines two roles intended to allow devices to detect their proximity.
-ms.date: 10/06/2022
+ms.date: 09/11/2023
 ---
 
 # Bluetooth Proximity Profile
@@ -51,7 +51,7 @@ The *Short Id* service IDs assigned for a Proximity profile service are:
 | Immediate Alert | 0x1802 |
 | Tx Power | 0x1804 |
 
-The Bluetooth SIG maintains the most up to date [list of services](https://go.microsoft.com/fwlink/p/?linkid=320723).
+The Bluetooth SIG maintains the most up to date list of services in the [assigned numbers document](https://www.bluetooth.com/specifications/assigned-numbers/).
 
 After a developer has determined which service s/he wants to use, s/he can call [**GattDeviceService.FromIdAsync**](/uwp/api/Windows.Devices.Bluetooth.GenericAttributeProfile.GattDeviceService#Windows_Devices_Bluetooth_GenericAttributeProfile_GattDeviceService_FromIdAsync_System_String_) to obtain an instance of the service.
 

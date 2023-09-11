@@ -2,7 +2,7 @@
 title: (Process Status)
 description: The pipe ( ) command displays status for the specified process, or for all processes that you are currently debugging.Do not confuse this command with the (System Status) command.
 keywords: ["(Process Status) Windows Debugging"]
-ms.date: 09/17/2018
+ms.date: 08/30/2023
 topic_type:
 - apiref
 ms.topic: reference
@@ -14,47 +14,29 @@ api_type:
 
 # | (Process Status)
 
-
 The pipe (**|**) command displays status for the specified process, or for all processes that you are currently debugging.
 
 Do not confuse this command with the [**|| (System Status)**](----system-status-.md) command.
 
 ```dbgcmd
-    | Process
+| Process
 ```
 
-## <span id="ddk_cmd_process_status_dbg"></span><span id="DDK_CMD_PROCESS_STATUS_DBG"></span>Parameters
+## Parameters
 
+*Process*
 
-<span id="_______Process______"></span><span id="_______process______"></span><span id="_______PROCESS______"></span> *Process*   
 Specifies the process to display. If you omit this parameter, all processes that you are debugging are displayed. For more information about the syntax, see [Process Syntax](process-syntax.md).
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Modes</strong></p></td>
-<td align="left"><p>User mode only</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Targets</strong></p></td>
-<td align="left"><p>Live, crash dump</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Platforms</strong></p></td>
-<td align="left"><p>All</p></td>
-</tr>
-</tbody>
-</table>
+|  Item  | Description          |
+|--------|----------------------|
+|Modes|User mode only|
+|Targets|Live, crash dump|
+|Platforms|All|
 
- 
-
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For more information and other methods of displaying or controlling processes and threads, see [Controlling Processes and Threads](controlling-processes-and-threads.md).
 
@@ -102,16 +84,7 @@ The previous command displays the following output.
 0:002> |
 #  0 id: 224   name: myprog.exe 
    1 id: 228   name: onechild.exe 
-. 2 id: 22c   name: anotherchild.exe 
+ . 2 id: 22c   name: anotherchild.exe 
 ```
 
 On the first line of this output, 0 is the decimal process number, 224 is the hexadecimal process ID, and *Myprog.exe* is the application name of the process. The period (.) before process 2 means that this process is the current process. The number sign (\#) before process 0 means that this process was the one that originally caused the exception or that the debugger attached to.
-
- 
-
- 
-
-
-
-
-

@@ -30,7 +30,7 @@ Specifies the hexadecimal selector value of the first selector to be displayed.
 <span id="_______LastSelector______"></span><span id="_______lastselector______"></span><span id="_______LASTSELECTOR______"></span> *LastSelector*   
 Specifies the hexadecimal selector value of the last selector to be displayed. If this is omitted, only one selector will be displayed.
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
 <table>
 <colgroup>

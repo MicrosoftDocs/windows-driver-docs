@@ -115,7 +115,7 @@ Sets the dump type to be collected in the event of a system crash and reloads th
 <span id="_______-_______"></span> **-?**   
 Displays command-line help for KDbgCtrl.
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For a description of all the KDbgCtrl settings, see [Using KDbgCtrl](using-kdbgctrl.md).
 

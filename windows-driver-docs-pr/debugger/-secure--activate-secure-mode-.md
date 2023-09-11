@@ -25,7 +25,7 @@ The **.secure** command activates or displays the status of Secure Mode.
 ## <span id="ddk_meta_activate_secure_mode_dbg"></span><span id="DDK_META_ACTIVATE_SECURE_MODE_DBG"></span>
 
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
 Secure Mode can only be enabled while the debugger is dormant. Secure Mode applies only to kernel-mode sessions because, by definition, Secure Mode prevents user-mode debugging operations.
 
@@ -52,7 +52,7 @@ Secure Mode can only be enabled while the debugger is dormant. Secure Mode appli
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For details, see [Secure Mode](secure-mode.md).
 

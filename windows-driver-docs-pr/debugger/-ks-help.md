@@ -42,7 +42,7 @@ The **!ks.help** extension displays a help text showing all AVStream-specific Ks
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For more information, see [Kernel Streaming Debugging](kernel-streaming-debugging.md).
 

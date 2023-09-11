@@ -32,7 +32,7 @@ Prevents execution commands from being used.
 <span id="_______1______"></span> **1**   
 Allows execution commands to be used.
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
 <table>
 <colgroup>
@@ -57,7 +57,7 @@ Allows execution commands to be used.
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For a complete list of execution commands, see [Controlling the Target](controlling-the-target.md).
 

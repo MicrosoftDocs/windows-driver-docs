@@ -31,28 +31,13 @@ Specifies the address where the debugger should start to search for symbols. The
 <span id="_D"></span><span id="_d"></span>**/D**  
 Specifies that the output is displayed using [Debugger Markup Language (DML)](debugger-markup-language-commands.md). The DML output includes a link that you can use to explore the module that contains the nearest symbol. It also includes a link that you can use to set a breakpoint.
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Modes</p></td>
-<td align="left"><p>User mode, kernel mode</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Targets</p></td>
-<td align="left"><p>Live, crash dump</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Platforms</p></td>
-<td align="left"><p>All</p></td>
-</tr>
-</tbody>
-</table>
+|  Item  | Description          |
+|--------|----------------------|
+|Modes|User mode, kernel mode|
+|Targets|Live, crash dump|
+|Platforms|All|
 
  
 

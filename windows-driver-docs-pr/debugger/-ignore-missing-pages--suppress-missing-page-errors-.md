@@ -32,7 +32,7 @@ Displays all missing page errors while debugging a Kernel Memory Dump. This is t
 <span id="_______1"></span> **1**  
 Suppresses the display of missing page errors while debugging a Kernel Memory Dump.
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
 <table>
 <colgroup>
@@ -57,7 +57,7 @@ Suppresses the display of missing page errors while debugging a Kernel Memory Du
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For more information about how to debug these dump files, see [Kernel Memory Dump](kernel-memory-dump.md).
 

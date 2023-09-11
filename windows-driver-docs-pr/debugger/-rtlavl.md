@@ -58,7 +58,7 @@ Displays some brief Help text for this extension in the Debugger Command window.
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 Use the [**!gentable**](-gentable.md) extension to display AVL tables.
 

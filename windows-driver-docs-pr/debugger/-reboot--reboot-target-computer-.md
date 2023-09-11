@@ -24,7 +24,7 @@ The **.reboot** command restarts the target computer.
 ## <span id="ddk_meta_reboot_target_computer_dbg"></span><span id="DDK_META_REBOOT_TARGET_COMPUTER_DBG"></span>
 
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
 <table>
 <colgroup>
@@ -49,7 +49,7 @@ The **.reboot** command restarts the target computer.
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For more information about related commands and an explanation of how the restart process affects the debugger, see [Crashing and Rebooting the Target Computer](crashing-and-rebooting-the-target-computer.md).
 

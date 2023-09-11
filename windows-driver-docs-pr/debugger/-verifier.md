@@ -106,7 +106,7 @@ Displays some brief Help text for this extension in the Debugger Command window.
 
 Kdexts.dll
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For information about [Driver Verifier](../devtest/driver-verifier.md), see the Windows Driver Kit (WDK) documentation.
 

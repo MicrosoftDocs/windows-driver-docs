@@ -347,7 +347,7 @@ Displays minimal Help text for this extension in the [Debugger Command window](d
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For more information about how to display and search memory, see [Reading and Writing Memory](reading-and-writing-memory.md). For additional extensions that display memory properties, see [**!vm**](-vm.md) (kernel mode) and [**!vprot**](-vprot.md) (user mode).
 

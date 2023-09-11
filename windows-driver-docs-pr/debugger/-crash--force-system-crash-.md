@@ -24,7 +24,7 @@ The **.crash** command causes the target computer to issue a bug check.
 ## <span id="ddk_meta_force_system_crash_dbg"></span><span id="DDK_META_FORCE_SYSTEM_CRASH_DBG"></span>
 
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
 <table>
 <colgroup>
@@ -49,7 +49,7 @@ The **.crash** command causes the target computer to issue a bug check.
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For an overview of related commands and a description of the options available after a system crash, see [Crashing and Rebooting the Target Computer](crashing-and-rebooting-the-target-computer.md).
 

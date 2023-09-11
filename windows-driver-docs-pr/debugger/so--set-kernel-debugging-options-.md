@@ -24,7 +24,7 @@ so [Options]
 ## <span id="ddk_cmd_set_kernel_debugging_options_dbg"></span><span id="DDK_CMD_SET_KERNEL_DEBUGGING_OPTIONS_DBG"></span>Parameters
 
 
-<span id="_______Options______"></span><span id="_______options______"></span><span id="_______OPTIONS______"></span> *Options*   
+*Options*
 One or more of the following options:
 
 <span id="NOEXTWARNING"></span><span id="noextwarning"></span>**NOEXTWARNING**  
@@ -35,7 +35,7 @@ Does not check the version of debugger extension DLLs.
 
 If you omit *Options*, the current options are displayed.
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
 <table>
 <colgroup>

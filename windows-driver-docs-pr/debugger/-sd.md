@@ -36,7 +36,7 @@ If this is set to 1, the friendly name is displayed. This includes the security 
 
 Exts.dll
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For an application and an example of this command, see [Determining the ACL of an Object](determining-the-acl-of-an-object.md). For information about security descriptors, see the Microsoft Windows SDK documentation, the Windows Driver Kit (WDK) documentation, and *Microsoft Windows Internals* by Mark Russinovich and David Solomon. Also see [**!sid**](-sid.md) and [**!acl**](-acl.md).
 

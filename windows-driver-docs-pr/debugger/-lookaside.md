@@ -35,7 +35,7 @@ If *Address* is omitted (or 0) and the **-all** option is not specified, a set o
 
 If *Address* is omitted (or 0) and the **-all** option is specified, all look-aside lists are displayed.
 
-<span id="_______Options______"></span><span id="_______options______"></span><span id="_______OPTIONS______"></span> *Options*   
+*Options*
 Controls what operation will be taken. The following possible *Options* are supported. The default is zero:
 
 <span id="0"></span>0  
@@ -50,7 +50,7 @@ Modifies the depth of the specified look-aside list. This option can only be use
 <span id="_______Depth______"></span><span id="_______depth______"></span><span id="_______DEPTH______"></span> *Depth*   
 Specifies the new maximum depth of the specified look-aside list. This parameter is permitted only if *Address* is nonzero and *Options* is equal to 2.
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For information about look-aside lists, see the [Using Lookaside Lists](../kernel/using-lookaside-lists.md) and *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
 

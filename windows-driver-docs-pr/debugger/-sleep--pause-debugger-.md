@@ -27,7 +27,7 @@ The **.sleep** command causes the user-mode debugger to pause and the target com
 <span id="_______milliseconds______"></span><span id="_______MILLISECONDS______"></span> *milliseconds*   
 Specifies the length of the pause, in milliseconds.
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
 <table>
 <colgroup>
@@ -52,7 +52,7 @@ Specifies the length of the pause, in milliseconds.
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For details and information about how to wake up a debugger in sleep mode, see [Controlling the User-Mode Debugger from the Kernel Debugger](controlling-the-user-mode-debugger-from-the-kernel-debugger.md).
 

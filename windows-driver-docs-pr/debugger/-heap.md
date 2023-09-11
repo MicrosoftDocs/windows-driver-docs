@@ -412,7 +412,7 @@ Exts.dll</td>
 </tbody>
 </table>
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For information about heaps, see the following resources:
 

@@ -124,7 +124,7 @@ Displays a brief help text for this extension in the Debugger Command window.
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For information about thread pooling, see the Microsoft Windows SDK documentation.
 

@@ -182,7 +182,7 @@ Displays some Help text for this extension in the [Debugger Command window](debu
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For more information about how to define and use aliases as shortcuts for entering character strings (including use of the ${ } token), see [Using Aliases](using-aliases.md).
 
