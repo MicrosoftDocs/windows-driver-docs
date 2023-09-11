@@ -25,7 +25,7 @@ ms.date: 09/07/2023
 An INF file that installs a WDF driver must contain two WDF-specific sections:
 
  - [DDInstall.wdf] section for each [DDInstall] section
- - [wdf-service-install] section, with name specified in a KmdfService or UmdfService directive in [DDInstall.wdf]
+ - [wdf-service-install] section, with section name specified in a KmdfService or UmdfService directive in [DDInstall.wdf]
 
 These sections contain WDF-specific directives. UMDF-specific directives begin with the UMDF prefix, and KMDF-specific directives begin with the KMDF prefix.
 
@@ -45,7 +45,7 @@ The following code example shows KMDF-specific directives:
 
 ```inf
 [ECHO_Device.NT.Wdf]
-KmdfService =  Echo, Echo_service_wdfsect
+KmdfService = Echo, Echo_service_wdfsect
 
 [Echo_service_wdfsect]
 KmdfLibraryVersion = $KMDFVERSION$
@@ -269,20 +269,13 @@ Required for drivers that communicate with class extension drivers provided by M
 Service names for the class extension drivers could be located as a subkey under the following registry key:
 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\WUDF\Services**
 
-The following code example shows the required directives in a KMDF-service-install section.
-
-```inf
-[Echo_service_wdfsect]
-KmdfLibraryVersion = $KMDFVERSION$
-```
-
 ## [KMDF Directives for DDInstall.WDF sections]
 
 The following is a code example. Each KMDF-specific directive in the DDInstall.WDF section is described below.
 
 ```inf
 [ECHO_Device.NT.Wdf]
-KmdfService =  Echo, Echo_service_wdfsect
+KmdfService = Echo, Echo_service_wdfsect
 ```
 
 ## KmdfService
