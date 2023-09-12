@@ -65,7 +65,7 @@ UmdfServiceOrder = Echo
 
 `**UmdfService** = <*serviceName*>, <*sectionName*>
 
-Associates a UMDF driver with a *UMDF-service-install* section that contains information that is required to install the UMDF driver. The *serviceName* parameter specifies the UMDF driver, and is limited to a maximum of 31 characters in length. The *sectionName* parameter references the *UMDF-service-install* section. A valid INF file typically requires at least one **UmdfService** directive. However, if a UMDF driver is part of the operating system, a **UmdfService** directive for the UMDF driver is not required. Therefore, a valid INF file might not have any **UmdfService** directives, although most INF files have one **UmdfService** directive for each UMDF driver.
+Associates a UMDF driver with a [wdf-service-install] section that contains information that is required to install the UMDF driver. The *serviceName* parameter specifies the UMDF driver, and is limited to a maximum of 31 characters in length. The *sectionName* parameter references the [wdf-service-install] section. A valid INF file typically requires at least one **UmdfService** directive. However, if a UMDF driver is part of the operating system, a **UmdfService** directive for the UMDF driver is not required. Therefore, a valid INF file might not have any **UmdfService** directives, although most INF files have one **UmdfService** directive for each UMDF driver.
 
 ## UmdfHostProcessSharing
 
@@ -228,7 +228,7 @@ The default value is **CanUseFsContext**.
 
 ## [UMDF Directives for wdf-service-install section]
 
-The following is a code example. Each UMDF-specific directive in the wdf-service-install section is described below. The section name is specified in a UmdfService directive in the DDInstall.wdf section.
+The following is a code example. Each UMDF-specific directive in the [wdf-service-install] section is described below. The section name is specified in a UmdfService directive in the [DDInstall.wdf] section.
 
 ```inf
 [Echo_service_wdfsect]
@@ -282,11 +282,11 @@ KmdfService = Echo, Echo_service_wdfsect
 
 `**KmdfService** = <*serviceName*>, <*sectionName*>
 
-Associates a KMDF driver with a *KMDF-service-install* section that contains information that is required to install the KMDF driver. The *serviceName* parameter specifies the KMDF driver, and is limited to a maximum of 31 characters in length. The *sectionName* parameter references the *KMDF-service-install* section. A valid INF file typically requires at least one **KmdfService** directive. However, if a KMDF driver is part of the operating system, a **KmdfService** directive for the KMDF driver is not required. Therefore, a valid INF file might not have any **KmdfService** directives, although most INF files have one **KmdfService** directive for each KMDF driver.
+Associates a KMDF driver with a [wdf-service-install] section that contains information that is required to install the KMDF driver. The *serviceName* parameter specifies the KMDF driver, and is limited to a maximum of 31 characters in length. The *sectionName* parameter references the [wdf-service-install] section. A valid INF file typically requires at least one **KmdfService** directive. However, if a KMDF driver is part of the operating system, a **KmdfService** directive for the KMDF driver is not required. Therefore, a valid INF file might not have any **KmdfService** directives, although most INF files have one **KmdfService** directive for each KMDF driver.
 
 ## [KMDF Directives for wdf-service-install section]
 
-The following is a code example. Each KMDF-specific directive in the wdf-service-install section is described below.  The section name comes from KmdfService directive in DDInstall.wdf section.
+The following is a code example. Each KMDF-specific directive in the [wdf-service-install] section is described below.  The section name comes from KmdfService directive in DDInstall.wdf section.
 
 ```inf
 [Echo_service_wdfsect]
