@@ -8,7 +8,7 @@ ms.date: 08/28/2023
 # Deploying Audio Processing Objects
 
 The Windows audio engine supports third-party user-mode plugins for processing audio.
-These are called "[audio processing objects](../audio/windows-audio-processing-objects)." The correct .inf class to use for drivers that install audio processing objects is different depending on the version of Windows.
+These are called "[audio processing objects](/windows-hardware/drivers/audio/windows-audio-processing-objects)." The correct .inf class to use for drivers that install audio processing objects is different depending on the version of Windows.
 
 ## Deploying to Windows 11 and later
 
