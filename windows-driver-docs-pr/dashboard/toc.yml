@@ -76,12 +76,14 @@
     items:
     - name: "Overview of other policies"
       href: other-policies.md
-    - name: "Extension INF Targeting Rules"
-      href: extension-inf-targeting-rules.md
-    - name: "Establish HWID or CHID targeting relationship"
-      href: establish-relationship-for-chid-targeting.md
+    - name: "Deploying Audio Processing Objects"
+      href: deploying-audio-processing-objects.md
     - name: "Driver Release Cadence"
       href: driver-release-cadence.md
+    - name: "Establish HWID or CHID targeting relationship"
+      href: establish-relationship-for-chid-targeting.md
+    - name: "Extension INF Targeting Rules"
+      href: extension-inf-targeting-rules.md
   - name: "Microsoft driver measures"
     href: overview-of-microsoft-driver-measure-dictionary.md
   - name: "Driver measure attributes"
