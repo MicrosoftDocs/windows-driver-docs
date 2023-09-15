@@ -47,7 +47,7 @@ Append unique identifier to dump name.
 **/f\[**<em>FullOptions</em>**\]**  
 (Kernel mode:) Creates a [complete memory dump](complete-memory-dump.md).
 
-(User mode:) Creates a *full user-mode dump*. For more information, see [Varieties of User-Mode Dump Files](user-mode-dump-files.md#varieties). Despite their names, the largest minidump file actually contains more information than a full user-mode dump. For example, **.dump /mf** or **.dump /ma** creates a larger and more complete file than **.dump /f**. In user mode, **.dump** **/m\[**<em>MiniOptions</em>**\]** is always preferable to **.dump /f**.
+(User mode:) Not supported. Previously this option would create a *full user-mode dump*, which is a legacy format with less information than the newer minidump format. For more information, see [Varieties of User-Mode Dump Files](user-mode-dump-files.md#varieties).
 
 You can add the following *FullOptions* to change the contents of the dump file; the option is case-sensitive.
 
