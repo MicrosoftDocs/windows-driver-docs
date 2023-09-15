@@ -76,8 +76,8 @@
     href: account-provisioning.md
   - name: "COSA/APN database"
     items: 
-    - name: "Introduction to COSA/APN database"
-      href: cosa-apn-database.md
+    - name: "Introduction to COSA database"
+      href: cosa-database.md
     - name: "APN schema definition"
       href: apn-schema-definition.md
     - name: "APN elements"

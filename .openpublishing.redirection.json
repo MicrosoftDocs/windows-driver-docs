@@ -3258,6 +3258,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "windows-driver-docs-pr/mobilebroadband/cosa-apn-database.md",
+            "redirect_URL": "/windows-hardware/drivers/mobilebroadband/cosa-database",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/mobilebroadband/get-started-with-a-hotspot-authentication-app.md",
             "redirect_URL": "/windows-hardware/drivers/mobilebroadband/review-the-hotspot-authentication-sample",
             "redirect_document_id": false
