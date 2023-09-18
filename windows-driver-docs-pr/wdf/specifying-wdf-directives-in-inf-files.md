@@ -280,7 +280,7 @@ KmdfService = Echo, Echo_service_wdfsect
 
 ## KmdfService
 
-`**KmdfService** = <*serviceName*>, <*sectionName*>
+**KmdfService** = <*serviceName*>, <*sectionName*>
 
 Associates a KMDF driver with a [wdf-service-install] section that contains information that is required to install the KMDF driver. The *serviceName* parameter specifies the KMDF driver, and is limited to a maximum of 31 characters in length. The *sectionName* parameter references the [wdf-service-install] section. A valid INF file typically requires at least one **KmdfService** directive. However, if a KMDF driver is part of the operating system, a **KmdfService** directive for the KMDF driver is not required. Therefore, a valid INF file might not have any **KmdfService** directives, although most INF files have one **KmdfService** directive for each KMDF driver.
 
