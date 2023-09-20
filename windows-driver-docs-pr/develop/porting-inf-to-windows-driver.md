@@ -1,7 +1,7 @@
 ---
 title: Porting an INF to follow driver package isolation
 description: This article provides tips on how to port an INF from old syntax to conform to driver package isolation
-ms.date: 09/19/2023
+ms.date: 09/20/2023
 ---
 
 # Porting an INF to follow driver package isolation
@@ -243,10 +243,14 @@ See [Device filter driver ordering](device-filter-driver-ordering.md) for more d
 If your INF uses an [AddReg directive](../install/inf-addreg-directive.md) to register a Media Category Name value, then the INF isn't compliant with driver package isolation. For example, your INF may have:
 
 ```inf
+[ExampleDDInstall]
+AddReg=MediaCategoryRegistration
+
+[MediaCategoryRegistration]
 HKLM,SYSTEM\CurrentControlSet\Control\MediaCategories\%ExampleGuid%,Name,,%ExampleName%
 ```
 
-Instead of using an AddReg to register a Media Category name under the global registry location, they should be registered in device relative state. For example:
+Instead of using an AddReg to register a Media Category name under the global registry location, they should be registered in device relative state using an HKR AddReg from the [DDInstall section](../install/inf-ddinstall-section.md). For example:
 
 ```inf
 [ExampleDDInstall]
@@ -256,4 +260,4 @@ AddReg=MediaCategoryRegistration
 HKR,MediaCategories\%ExampleGuid%,Name,,%ExampleName%
 ```
 
-Using device relative state to register Media Category names is supported on Windows 10 1809 and later versions of Windows. See [Friendly Names for Audio Endpoint Devices](../audio/friendly-names-for-audio-endpoint-devices.md) for more information.
+Using device relative state to register Media Category names is supported on Windows 10, version 1809 and later versions of Windows. See [Friendly Names for Audio Endpoint Devices](../audio/friendly-names-for-audio-endpoint-devices.md) for more information.
