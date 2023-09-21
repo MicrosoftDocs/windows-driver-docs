@@ -1,48 +1,14 @@
 ---
-title: Mobile operator configuration portal: COSA database submission
+title: Mobile operator configuration portal
 description: This article introduces the mobile operator configuration portal to create a COSA database submission.
 author: mhopking-msft
 ms.author: mhopkins
-ms.date: 09/20/2023
+ms.date: 09/21/2023
 ---
 
 # Mobile operator configuration portal
 
 This article introduces the mobile operator configuration portal to create a COSA database submission.
-
-<!-- 2. Introductory paragraph ----------------------------------------------------------
-
-Required: Lead with a light intro that describes what the article covers. Answer the fundamental “why would I want to know this?” question. Keep it short.
-
-Many services add artwork or videos below the Introduction.
-
--->
-
-[Introductory paragraph]
-TODO: Add your introductory paragraph
-
-<!---Avoid notes, tips, and important boxes. Readers tend to skip over them. Better to put that info
-directly into the article text.
-
---->
-
-<!-- 3. H2s (Article body)------------------------------------------------------------ 
-
-Required: The article body should discuss the features that answer the "Why should I care?" question with a bit more depth.
-
-Give each H2 a heading that sets expectations for the content that follows. 
-Follow the H2 headings with a sentence about how the section contributes to the whole.
-Add images, code blocks, or other graphical elements after the information it illustrates.
-
-* Call out any basic requirements and dependencies.
-* Call out limitations or overhead.
-* Don't catalog every feature. Some might only need to be mentioned as available, without any discussion.
-* Give each H2 a heading that sets expectations for the content that follows.
-* Follow the H2 headings with a sentence about how the section contributes to the whole.
-* Images, code blocks, or other graphical elements come after the text block it illustrates.
-Don't number H2s.
-
--->
 
 ## Setting up your account
 
@@ -77,22 +43,13 @@ For example, the mobile operator has a new MCC, MNC pair that they want to add t
 1. Open the correct profile you want to modify, if you have more than 1 profile, ensure you are modifying the right profile.
     - (Optional) Check your profile APN values
         1. Open Connections -> Cellular -> Connection
-        1. Make sure it's the right APN
-
-        > [!NOTE] 
-        > You can have multiple connections if you have mnore than one APN value for this COSA profile.
+        1. Make sure it's the right APN. You can have multiple connections if you have more than one APN value for this COSA profile.
 
     - (Optional) Check that your MCC, MNC pair does not exist in the currect target list
         1. Open **Targets**
-        1. Check each target to ensure there's no duplicate of what you want to create.
+        1. Check each target to ensure there's no duplicate of what you want to create. If you see more than one target, check each of them one by one.
 
-        > [!NOTE] 
-        > If you see more than one target, ensure you check each of them one by one.
-
-1. Select **+** to add a new target to your profile, and go to the new target added to your list. This is usually the last one in the **Targets** list.
-
-    > [!NOTE]
-    > If you do not see any new targets, make sure you have clicked on the drop down beside the **Targets**.
+1. Select **+** to add a new target to your profile, and go to the new target added to your list. This is usually the last one in the **Targets** list. If you do not see any new targets, make sure you have clicked on the drop down beside the **Targets**.
 
 1. Select **Save draft**, add a note, then select **Save**.
  
@@ -127,18 +84,14 @@ For example, the mobile operator has a new MCC, MNC pair that they want to add t
  
     Here is the list of possible settings:
 
-    - AccountExperienceURL - Specifies the Web URL for the mobile operator's MBB user account experience.
+    - **AccountExperienceURL** - The Web URL for the mobile operator's MBB user account experience. If both AppID and AccountExperienceURL are specified, AppID gets higher precedence and UX will not display the AccountExperienceURL.
 
-        > [!NOTE]
-        > If both AppID and AccountExperienceURL are specified, App gets higher precedence and UX will not display the AccountExperienceURL.
+    - **AppID** - The package family name (PFN) and application ID of a mobile operator's UWP companion app.
+    
+    - **BrandingName** - The name for the mobile operator to be displayed on the UX. If no information is provided, UX will display the HomeProviderName
 
-    - AppID - Specifies the Package Family Name (PFN) and application ID of a mobile operator's UWP companion app
-    - Branding Name - Specifies the Name for the mobile operator to be displayed on the UX. 
-
-        > [!NOTE]
-        > If no information is provided, UX will display the HomeProviderName
-
-    - UseBrandingNameOnRoaming - specifies when the BrandingName will be used
+    - **UseBrandingNameOnRoaming** - When the **BrandingName** will be used.
+    
         - Use only when connected to Home network
         - Use when connected to Home network and Domestic roaming
         - Use when connected to Home network, Domestic roaming and International roaming
@@ -167,7 +120,7 @@ For example, the mobile operator has a new MCC, MNC pair that they want to add t
 
 1. Select **Save draft**, add a note, then select **Save**.
 
-## Add new APN
+## Add a new APN
 
 1. Open the correct profile you want to modify. If you have more than one profile, make sure you are modifying the correct profile.
 
@@ -176,10 +129,7 @@ For example, the mobile operator has a new MCC, MNC pair that they want to add t
 
 1. Select **+** beside **Cellular** and look for the new **Connection** added to your list. This is usually the last one in the **Targets** list.
 
-    - Add the APN values.
-
-        > [!NOTE]
-        > If you do not see any new **Connection**, make sure you have clicked on the drop down beside the **Cellular**.
+    - Add the APN values. If you do not see a new **Connection**, make sure you have clicked on the drop down beside the **Cellular**.
 
     Common APN settings:
 
@@ -196,8 +146,7 @@ For example, the mobile operator has a new MCC, MNC pair that they want to add t
         | IMS | Used for IMS traffic. (LTE attach) |
         | eSIM provisioning | Used for eSIM traffic. |
  
-        > [!NOTE]
-        > You can choose to put more than one purpose in a comma delimited list.
+        You can put more than one purpose in a comma delimited list.
 
    - **Roaming** – The roaming conditions under which the connection should be activated. 
 
@@ -236,11 +185,9 @@ For example, the mobile operator has a new MCC, MNC pair that they want to add t
 1. Look for the Connection you want to modify, then modify any of the values there.
 1. Select **Save draft**, add a note, then select **Save**.
 
-## Testing: creating a test package
+## Creating a test package
 
-### Before downloading a test package
-
-Test packages are generated from the server; hence it is necessary to save all changes before you download a test package. If the settings were not saved as draft, your test package will not have your latest settings.
+Test packages are generated from the server. You must save all changes before you download a test package. If the settings were not saved as draft, your test package will not have your latest settings.
 
 1. Choose the right Windows version.
 
@@ -253,7 +200,7 @@ Test packages are generated from the server; hence it is necessary to save all c
 1. Follow the steps in [Test your submission for desktop COSA](testing-your-desktop-cosa-apn-database-submission.md#test-your-submission-for-desktop-cosa) to test your COSA package file.
 
     > [!NOTE]
-    > You need to open admin command prompt, if you are running in S-mode, you will need to switch out of S-mode first.
+    > Open an administrator command prompt. If you are running in S-mode, you will need to switch out of S-mode first.
 
 ## Related content
 
