@@ -143,7 +143,7 @@ Once the driver package INF file and firmware payload binary are ready, the enti
 
 The steps to self-sign the driver package for test purposes are enumerated below. Please note that these steps are for test purposes only. In production, firmware update driver packages must be submitted to the Partner Center for signing. For the steps to sign a firmware driver package for production see [Certifying and signing the update package](certifying-and-signing-the-update-package.md).
 
-1. Install the latest Windows SDK and Windows Driver Kit. This will install the makecert, pvk2pfx inf2cat and signtool tools under `%systemdir%\\Program Files (x86)\\Windows Kits\\<*version*>\\bin\\x86`.
+1. Install the latest Windows SDK and Windows Driver Kit. This will install the makecert, pvk2pfx inf2cat and signtool tools under `%systemdir%\Program Files (x86)\Windows Kits\<*version*>\bin\x86`.
 
 1. Run the following command to create a test certificate.
 
@@ -210,7 +210,7 @@ If the firmware resource update was successfully installed on a firmware resourc
 
 ## Validating the status of the firmware update
 
-When a firmware driver package is successfully installed, PnP will request a system reboot to apply the updates. Post reboot, the status of the update can be validated. The status of the update is maintained under the following registry key: `HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\FirmwareResources\\{RESOURCE_GUID}`.
+When a firmware driver package is successfully installed, PnP will request a system reboot to apply the updates. Post reboot, the status of the update can be validated. The status of the update is maintained under the following registry key: `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FirmwareResources\{RESOURCE_GUID}`.
 
 RESOURCE_GUID is the GUID of the resource (from ESRT) that was updated.
 
