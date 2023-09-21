@@ -17,7 +17,7 @@ You define a new GUID for an item the driver exports to other system components,
 
     Choose a name that represents the purpose of the GUID. For example, the operating system uses such names as GUID\_BUS\_TYPE\_PCI and PARPORT\_WMI\_ALLOCATE\_FREE\_COUNTS\_GUID.
 
-2.  Generate a value for the GUID using Uuidgen.exe or Guidgen.exe. When you install the Microsoft Windows SDK, Uuidgen.exe is automatically installed. Guidgen.exe is available from the [Microsoft Exchange Server GUID Generator](https://go.microsoft.com/fwlink/p/?linkid=121586) download page.
+2.  Generate a value for the GUID using Uuidgen.exe or Guidgen.exe. When you install the Microsoft Windows SDK, Uuidgen.exe is automatically installed.
 
     These utilities generate a unique, formatted string that represents a 128-bit value. The "-s" switch on Uuidgen.exe outputs the GUID formatted as a C structure.
 
