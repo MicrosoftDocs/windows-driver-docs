@@ -111,7 +111,7 @@
       items: 
       - name: "Planning your desktop COSA/APN database submission"
         href: planning-your-desktop-cosa-apn-database-submission.md
-      - name: Mobile operator configuration portal overview"
+      - name: "Mobile operator configuration portal overview"
         href: mobile-operator-configuration-portal-overview.md
       - name: "Desktop COSA/APN database settings"
         href: desktop-cosa-apn-database-settings.md
