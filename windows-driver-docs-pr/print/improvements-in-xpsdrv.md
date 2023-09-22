@@ -1,7 +1,7 @@
 ---
 title: Improvements in XPSDrv
 description: This article provides information about updates that have been made to the XPSDrv rendering architecture.
-ms.date: 01/25/2023
+ms.date: 09/21/2023
 ---
 
 # Improvements in XPSDrv
@@ -12,7 +12,7 @@ This article provides information about updates that have been made to the XPSDr
 
 ## XPS format
 
-The XPS Print API and/or the print filter pipeline will convert seamlessly between [Microsoft XML Paper Specification 1.0](/previous-versions/windows/hardware/design/dn614032(v=vs.85)) (MS XPS), and [OpenXPS](https://www.ecma-international.org/publications/standards/Ecma-388.htm) (ECMA-388). Unless otherwise specified, v4 print drivers default to consuming MS XPS. Using the manifest directive XpsFormat, drivers may choose to support one or both of the available XPS formats. For more information about OpenXPS support, see [OpenXPS Support in Windows](./driver-support-for-openxps.md).
+The XPS Print API and/or the print filter pipeline will convert seamlessly between [Microsoft XML Paper Specification 1.0](/previous-versions/windows/hardware/design/dn614032(v=vs.85)) (MS XPS), and [OpenXPS](https://www.ecma-international.org/publications-and-standards/standards/ecma-388/) (ECMA-388). Unless otherwise specified, v4 print drivers default to consuming MS XPS. Using the manifest directive XpsFormat, drivers may choose to support one or both of the available XPS formats. For more information about OpenXPS support, see [OpenXPS Support in Windows](./driver-support-for-openxps.md).
 
 ## XPS Rasterization Service improvements
 
@@ -40,7 +40,7 @@ The [**IPrintCoreHelperUni2**](/windows-hardware/drivers/ddi/prcomoem/nn-prcomoe
 
 [Native Pixel Formats Overview](/windows/desktop/wic/-wic-codec-native-pixel-formats)  
 
-[OpenXPS](https://www.ecma-international.org/publications/standards/Ecma-388.htm)  
+[OpenXPS](https://www.ecma-international.org/publications-and-standards/standards/ecma-388/)  
 
 [OpenXPS Support in Windows](./driver-support-for-openxps.md)  
 

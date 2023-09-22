@@ -7,7 +7,7 @@ ms.date: 04/20/2017
 
 # Windows Compatible Products List
 
-The [Windows Compatible Products List](https://aka.ms/AA5bmch) is a comprehensive list of certified devices and systems. The Windows Compatible Products list has the following features and restrictions:
+The [Windows Compatible Products List](https://partner.microsoft.com/dashboard/hardware/search/cpl) is a comprehensive list of certified devices and systems. The Windows Compatible Products list has the following features and restrictions:
 
 * You can find devices and systems by filtering the list or by running a search for a specific product name.
 * You can search across all certified devices and systems for the entire catalog.
