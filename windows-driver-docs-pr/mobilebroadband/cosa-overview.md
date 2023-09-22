@@ -6,7 +6,7 @@ ms.date: 04/20/2017
 
 # COSA overview
 
-COSA, or Country and Operator Settings Asset, is the new format that Mobile Operators (MOs) use in Windows 10, version 1703 and later to provision Windows devices for mobile broadband. The existing APN database (apndatabase.xml) from Windows 8, Windows 8.1, and versions of Windows 10 before 1703 has been converted to COSA, which is ingestible by the new provisioning framework. Note that these previous versions of Windows will continue to use the older APN database for provisioning desktop devices.
+COSA, or Country and Operator Settings Asset, is the data format that mobile operators (MOs) use in Windows 10, version 1703 and later to provision Windows devices for mobile broadband. The existing Access Point Name (APN) database (apndatabase.xml) from Windows 8, Windows 8.1, and versions of Windows 10 before 1703 has been converted to COSA, which is ingestible by the new provisioning framework. These previous versions of Windows continue to use the older APN database for provisioning desktop devices.
 
 For more information about the older APN database, see [APN database overview](apn-database-overview.md).
 

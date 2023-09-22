@@ -24,15 +24,13 @@ This article introduces the mobile operator configuration portal to create a COS
 
 COSA is made up of:
 
-- 1 or more targets
-- 1 SIM setting
-- 1 or more connections / APN settings
+- One or more targets
+- One SIM setting
+- One or more connections or Access Point Name (APN) settings
 
-Each COSA entry is also called a COSA profile.
-For a given COSA profile, you can specify multiple targets (different MCC, MNC pair; different IMSI or ICCID range); and a list of APNs to try to connect to (5G APNs, Internet APN, IMS APN, etc…)
+Each COSA entry is also called a COSA profile. For a given COSA profile, you can specify multiple targets (different MCC, MNC pair; different IMSI or ICCID range); and a list of APNs to try to connect to (5G APNs, Internet APN, IMS APN, and so on).
 
-However, for logo and branding, you can only specify one per COSA entry.
-If the desire is to create different logo and branding, you need to provide a different target for each COSA profile.
+However, for logo and branding, you can only specify one per COSA entry. If the desire is to create different logo and branding, you need to provide a different target for each COSA profile.
 
 COSA profile order:
 
