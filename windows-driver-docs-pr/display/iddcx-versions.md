@@ -1,7 +1,7 @@
 ---
 title: IddCx versions
 description: Provides version
-ms.date: 08/21/2023
+ms.date: 09/20/2023
 keywords:
 - IddCx versions, WDK
 - IddCx versions, Windows versions
