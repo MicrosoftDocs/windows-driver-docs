@@ -1,12 +1,12 @@
 ---
 title: Authoring an update driver package
 description: This topic provides information about authoring an update driver package and provides example INF file settings and configurations.
-ms.date: 05/05/2023
+ms.date: 09/21/2023
 ---
 
 # Authoring an update driver package
 
-It is required that the update payload for each firmware resource described in the ESRT be bundled and distributed in its own driver package so as to allow it to maintain its own versioning scheme without being tied to other firmware resource updates that may not be updated at the same cadence.
+It is required that the update payload for each firmware resource described in the [ESRT](./esrt-table-definition.md) be bundled and distributed in its own [driver package](../install/driver-packages.md) so as to allow it to maintain its own versioning scheme without being tied to other firmware resource updates that may not be updated at the same cadence.
 
 The following example provides a sample driver package INF file definition for a firmware resource update that targets the {SYSTEM_FIRMWARE} resource from the ESRT example in Table 2, updating it from version 1 to version 2. For reference purposes, let's assume that the GUID assigned for the SYSTEM_FIRMWARE resource is 6bd4efb9-23cc-4b4a-ac37-016517413e9a.
 
@@ -21,9 +21,13 @@ CatalogFile = catalog.cat
 PnpLockdown = 1
 
 [Manufacturer]
-%MfgName% = Firmware,NTarm64
+%MfgName% = Firmware,NTarm64.10.0...17134
+; Prior to Windows 10, version 1803, the above should instead be:
+; %MfgName% = Firmware,NTarm64
 
-[Firmware.NTarm64]
+[Firmware.NTarm64.10.0...17134]
+; Prior to Windows 10, version 1803, the above should instead be:
+; [Firmware.NTarm64]
 %FirmwareDesc% = Firmware_Install,UEFI\RES_{6bd4efb9-23cc-4b4a-ac37-016517413e9a}
 
 [Firmware_Install.NT]
@@ -39,7 +43,7 @@ AddReg = Firmware_AddReg
 HKR,,FirmwareId,,{6bd4efb9-23cc-4b4a-ac37-016517413e9a}
 HKR,,FirmwareVersion,%REG_DWORD%,0x00000002
 HKR,,FirmwareFilename,,%13%\firmware.bin
-; Prior to Windows 10 1803, the above should instead be:
+; Prior to Windows 10, version 1803, the above should instead be:
 ; HKR,,FirmwareFilename,,{6bd4efb9-23cc-4b4a-ac37-016517413e9a}\firmware.bin
 
 [SourceDisksNames]
@@ -50,8 +54,8 @@ firmware.bin = 1
 
 [DestinationDirs]
 DefaultDestDir = 13
-; Prior to Windows 10 1803, the above should be:
-; DefaultDestDir = %DIRID_WINDOWS%,Firmware\{6bd4efb9-23cc-4b4a-ac37-016517413e9a}
+; Prior to Windows 10, version 1803, the above should be:
+; DefaultDestDir = 10,Firmware\{6bd4efb9-23cc-4b4a-ac37-016517413e9a}
 
 [Strings]
 ; localizable
@@ -61,7 +65,6 @@ FirmwareDesc = "Fabrikam System Firmware 2.0"
 DiskName     = "Firmware Update"
 
 ; non-localizable
-DIRID_WINDOWS = 10
 REG_DWORD     = 0x00010001
 ```
 
@@ -69,31 +72,31 @@ Change the following sections to customize for your setup.
 
 ```inf
 [Version]
-DriverVer --> The date on which this driver package was authored; the Driver version of this driver package. Driver version in this driver package must be greater than the current driver version
+DriverVer --> The date on which this driver package was authored and the driver version of this driver package. Driver version in this driver package must be greater than the current driver version
 CatalogFile --> Name of the catalog file
 
 firmware.bin --> Change all instances of firmware.bin with the name of the firmware image name
 
 [Manufacturer]
-%MfgName% = Firmware,NTarm64
-[Firmware.NTarm64] --> Change the architecture.
+%MfgName% = Firmware,NTarm64.10.0...17134
+[Firmware.NTarm64.10.0...17134] --> Change the architecture.
 For x86, it should be NTx86
 For AMD64, it should be NTamd64
 
-[Firmware.NTarm64]
+[Firmware.NTarm64.10.0...17134]
 %FirmwareDesc% = Firmware_Install,UEFI\RES_{6bd4efb9-23cc-4b4a-ac37-016517413e9a} --> The GUID of the firmware resource
 
 [Firmware_AddReg]
 HKR,,FirmwareId,,{6bd4efb9-23cc-4b4a-ac37-016517413e9a} --> The GUID of the firmware resource
 HKR,,FirmwareVersion,%REG_DWORD%,0x00000002 --> Version of the firmware for the update
 HKR,,FirmwareFilename,,%13%\firmware.bin --> firmware.bin should be replaced with the firmware image name
-; Prior to Windows 10 1803, the above should instead be:
+; Prior to Windows 10, version 1803, the above should instead be:
 HKR,,FirmwareFilename,,{6bd4efb9-23cc-4b4a-ac37-016517413e9a}\firmware.bin --> The subdirectory named after the GUID of the firmware resource and the firmware image name
 
 [DestinationDirs]
 DefaultDestDir = 13 --> The full destination path as a 'run from Driver Store' binary
-; Prior to Windows 10 1803, the above should be:
-; DefaultDestDir = %DIRID_WINDOWS%,Firmware\{6bd4efb9-23cc-4b4a-ac37-016517413e9a} --> The full destination path for the firmware image file based under a subdirectory named after the GUID of the firmware resource within the %SystemRoot%\Firmware directory
+; Prior to Windows 10, version 1803, the above should be:
+; DefaultDestDir = 10,Firmware\{6bd4efb9-23cc-4b4a-ac37-016517413e9a} --> The full destination path for the firmware image file based under a subdirectory named after the GUID of the firmware resource within the %SystemRoot%\Firmware directory
 
 [Strings]
 ; localizable
@@ -111,8 +114,8 @@ The following table describes the various driver package INF sections and fields
 | PnpLockdown | 1 | Enables the PnP driver file lockdown mechanism in order to protect installed driver files from being modified externally by unrelated applications. For firmware resource updates, this setting should always be enabled to ensure that firmware resource image files cannot be tampered with outside of the control of the PnP system |
 | **[Manufacturer]** |  | Lists all distinct driver manufacturers/vendors that define firmware resource updates. Each manufacturer line specifies an [\<Models\>] section and identifies its supported target platform. |
 | %MfgName% | Fabrikam Inc.<br><br>(localized in [Strings] section) | Identifies the manufacturer/vendor of the firmware resource update. This may be the same as the Provider field. |
-|  | Firmware,<br><br>NTarm64 | Identifies the [\<Models\>] section that defines the firmware resource devices supported by this driver package, including their target driver platforms. In this example, the drivers are only targeted for the Arm64-based NT platform and the [\<Models\>] section is [Firmware.NTarm64]. |
-| **[Firmware.NTarm64]** |  | [\<Models\>] section for the Arm64-based NT platform that lists all firmware resource devices for which updates are defined. Each hardware model line specifies a [\<DDInstall\>] section and its associated hardware ID match. |
+|  | Firmware,<br><br>NTarm64.10.0...17134 | Identifies the [\<Models\>] section that defines the firmware resource devices supported by this driver package, including their target driver platforms. In this example, the drivers are only targeted for the Arm64-based NT platform for Windows 10 builds 17134 and later and the [\<Models\>] section is [Firmware.NTarm64.10.0...17134]. |
+| **[Firmware.NTarm64.10.0...17134]** |  | [\<Models\>] section for the Arm64-based NT platform for Windows 10 builds 17134 and later that lists all firmware resource devices for which updates are defined. Each hardware model line specifies a [\<DDInstall\>] section and its associated hardware ID match. |
 | %FirmwareDesc% | Fabrikam System Firmware 2.0<br><br>(localized in [Strings] section) | Describes the firmware resource update. This is the primary description string used to present the associated firmware resource device instance in Device Manager and other device related UI. For this reason, the description may include the firmware vendor and version. |
 |  | Firmware_Install,<br><br>UEFI\RES_{RESOURCE_GUID} | Identifies the [\<DDInstall\] section containing the installation steps for the firmware resource update that targets the device instance identified by the UEFI\RES_{RESOURCE_GUID} hardware ID. Where RESOURCE_GUID is the GUID of the firmware resource that is being updated. |
 | **[Firmware_Install.NT]**<br><br>CopyFiles = Firmware_CopyFiles<br><br>**[Firmware_CopyFiles]**<br><br>... |  | [\<DDInstall\>] section that contains the installation steps for the firmware resource update. For firmware resource updates, this only defines the firmware resource image file to copy into place for a firmware resource update. In this example, the [\<DDInstall\>] section is [Firmware_Install.NT]. |
@@ -120,19 +123,19 @@ The following table describes the various driver package INF sections and fields
 | **[Firmware_Install.NT.Hw]**<br><br>AddReg = Firmware_AddReg<br><br>**[Firmware_AddReg]**<br><br>... |  | [\<DDInstall\>.Hw] section that contains the hardware-specific installation steps for the firmware resource update. For firmware resource updates, this defines the firmware resource update configuration information in the form of registry values that are set under the device hardware key of the target device instance. |
 | FirmwareId | {RESOURCE_GUID} | The firmware GUID of the firmware resource update. Note that this is the same firmware resource GUID that is embedded in the UEFI\RES_{RESOURCE_GUID} hardware ID, however it must be specified here as a standalone value since the PnP system treats all hardware IDs as opaque strings that are strictly used for device/driver matching purposes. |
 | FirmwareVersion | 0x00000002 | The firmware version of the firmware resource update, specified as a REG_DWORD value. |
-| FirmwareFilename | %13%\\*firmware.bin* | or Windows 10 1803 and later, this should be a 'run from Driver Store' file and supply the full path to the binary such as in the example.  For prior to Windows 10 1803, this should be the relative path and firmware filename of the firmware resource update's Update Capsule image filename under the %SystemRoot%\Firmware directory such that {RESOURCE_GUID} represents a subdirectory used to organize all firmware image files targeted for specific firmware resource. For example, {RESOURCE_GUID}\\*firmware.bin*. |
+| FirmwareFilename | %13%\\*firmware.bin* | On Windows 10, version 1803 and later, this should be a ['run from Driver Store'](../develop/run-from-driver-store.md) file and supply the full path to the binary such as in the example.  For prior to Windows 10, version 1803, this should be the relative path and firmware filename of the firmware resource update's Update Capsule image filename under the %SystemRoot%\Firmware directory such that {RESOURCE_GUID} represents a subdirectory used to organize all firmware image files targeted for specific firmware resource. For example, {RESOURCE_GUID}\\*firmware.bin*. |
 | **[SourceDisksNames]** |  | Lists all distinct driver package source disk locations where associated driver files, such as firmware update resource image files, are contained. |
 | 1 | %DiskName% = Firmware Update<br><br>(localized in [Strings] section) | Specifies an arbitrarily numbered driver package source disk ID and its description name. No optional driver package relative subdirectory is specified so any driver files associated to this disk ID, like the firmware resource update image file, are expected to live directly beside the INF file. |
 | **[SourceDisksFiles]** |  | Lists all driver files referenced by the driver package and links them to a disk ID from the [SourceDisksNames] section. |
 | *firmware.bin* | 1 | Establishes the *firmware.bin* firmware resource update image file as being part of the driver package by linking it with the primary disk ID. No optional file-specific subdirectory is specified so this driver file is expected to live relative to its disk ID's subdirectory, which in this case is right beside the INF file. |
 | **[DestinationDirs]** |  | Lists the target destination directories of all driver files referenced by the driver package. |
-| DefaultDestDir | 13 | Specifies the default destination directory of all driver files copied by this driver package.  On Windows 10 1803 and later, this should be DIRID 13 to make the files 'run from Driver Store'.  Prior to Windows 10 1803, this should be %DIRID_WINDOWS%,Firmware\\{RESOURCE_GUID} to specify that the destination of all files is under %SystemRoot%\Firmware, where DIRID_WINDOWS (10) represents the base %SystemRoot% directory and {RESOURCE_GUID} represents a subdirectory named after the firmware resource GUID. |
+| DefaultDestDir | 13 | Specifies the default destination directory of all driver files copied by this driver package.  On Windows 10, version 1803 and later, this should be DIRID 13 to make the files ['run from Driver Store'](../develop/run-from-driver-store.md).  Prior to Windows 10, version 1803, this should be 10,Firmware\\{RESOURCE_GUID} to specify that the destination of all files is under %SystemRoot%\Firmware, where [10 (DIRID_WINDOWS)](../install/using-dirids.md) represents the base %SystemRoot% directory and {RESOURCE_GUID} represents a subdirectory named after the firmware resource GUID. |
 | **[Strings]** |  | Defines key/value mappings for all indirect string tokens (%token%) in the driver package INF file. Use of string tokens enables a driver package INF file to be easily localized by introducing locale-specific [Strings.\<LanguageID\>] sections. It can also be useful to use string token substitution for defining constant numeric values, such as REG_DWORD. |
 | Provider | "Contoso Ltd." | An example of a string token key/value mapping. |
 
 It is important to use a unique name for each firmware resource update image file version in order to avoid any potential collisions with other firmware image files, both your own and those from other firmware vendors. For example, *firmware.bin* from the above should be assigned the following name to satisfy both vendor name and version constraints: *Fabrikam-System-Firmware-2.0.bin*.
 
-In order to ensure that variants of a given firmware resource update image, potentially used for OEM/IHV customization purposes, do not collide when deployed into the same Windows system image, it is recommended that each distinct firmware resource update image is either a ['run from Driver Store'](../develop/run-from-driver-store.md) file (Windows 10 1803 and later) or maintained under a subdirectory within the %SystemRoot%\\Firmware directory. This subdirectory should be named after the target firmware resource GUID. For example, the following firmware resource update image paths satisfy the deployment constraints: %SystemRoot%\\Firmware\\{6bd4efb9-23cc-4b4a-ac37-016517413e9a}\\Fabrikam-System-Firmware-2.0.bin.
+In order to ensure that variants of a given firmware resource update image, potentially used for OEM/IHV customization purposes, do not collide when deployed into the same Windows system image, it is recommended that each distinct firmware resource update image is either a ['run from Driver Store'](../develop/run-from-driver-store.md) file (Windows 10, version 1803 and later) or maintained under a subdirectory within the %SystemRoot%\\Firmware directory. This subdirectory should be named after the target firmware resource GUID. For example, the following firmware resource update image paths satisfy the deployment constraints: `%SystemRoot%\\Firmware\\{6bd4efb9-23cc-4b4a-ac37-016517413e9a}\\Fabrikam-System-Firmware-2.0.bin`.
 
 ## Test signing the firmware driver package
 
@@ -140,7 +143,7 @@ Once the driver package INF file and firmware payload binary are ready, the enti
 
 The steps to self-sign the driver package for test purposes are enumerated below. Please note that these steps are for test purposes only. In production, firmware update driver packages must be submitted to the Partner Center for signing. For the steps to sign a firmware driver package for production see [Certifying and signing the update package](certifying-and-signing-the-update-package.md).
 
-1. Install the latest Windows SDK and Windows Driver Kit. This will install the makecert, pvk2pfx inf2cat and signtool tools under %systemdir%\\Program Files (x86)\\Windows Kits\\<*version*>\\bin\\x86.
+1. Install the latest Windows SDK and Windows Driver Kit. This will install the makecert, pvk2pfx inf2cat and signtool tools under `%systemdir%\Program Files (x86)\Windows Kits\<*version*>\bin\x86`.
 
 1. Run the following command to create a test certificate.
 
@@ -207,7 +210,7 @@ If the firmware resource update was successfully installed on a firmware resourc
 
 ## Validating the status of the firmware update
 
-When a firmware driver package is successfully installed, PnP will request a system reboot to apply the updates. Post reboot, the status of the update can be validated. The status of the update is maintained under the following registry key: HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\FirmwareResources\\{RESOURCE_GUID}.
+When a firmware driver package is successfully installed, PnP will request a system reboot to apply the updates. Post reboot, the status of the update can be validated. The status of the update is maintained under the following registry key: `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FirmwareResources\{RESOURCE_GUID}`.
 
 RESOURCE_GUID is the GUID of the resource (from ESRT) that was updated.
 
