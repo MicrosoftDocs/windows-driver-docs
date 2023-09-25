@@ -84,7 +84,7 @@ Consider running [Device Fundamentals tests](../devtest/run-devfund-tests-via-th
 
 ### KMDF drivers
 
-When KMDF drivers use WDF APIs to access the registry, such as [WdfRegistryCreateKey](/windows-hardware/drivers/ddi/wdfregistry/nf-wdfregistry-wdfregistrycreatekey), [WdfRegistryOpenKey](/windows-hardware/drivers/ddi/wdfregistry/nf-wdfregistry-wdfregistryopenkey), or [WdfRegistryQueryValue](/windows-hardware/drivers/ddi/wdfregistry/nf-wdfregistry-wdfregistryqueryvalue), the registry access happens via wdf01000.sys instead of the KMDF driver binary directly.  In order to view those violations caused by your KMDF driver binary, please enable driver isolation checks on wdf01000.sys in addition to your KMDF driver binary.  Note that when you do this, you will see violations from all KMDF drivers on the system that are using WDF for their registry accesses.
+When KMDF drivers use WDF APIs to access the registry, such as [WdfRegistryCreateKey](/windows-hardware/drivers/ddi/wdfregistry/nf-wdfregistry-wdfregistrycreatekey), [WdfRegistryOpenKey](/windows-hardware/drivers/ddi/wdfregistry/nf-wdfregistry-wdfregistryopenkey), or [WdfRegistryQueryValue](/windows-hardware/drivers/ddi/wdfregistry/nf-wdfregistry-wdfregistryqueryvalue), the registry access happens via wdf01000.sys instead of the KMDF driver binary directly.  In order to view violations caused by your KMDF driver binary, please enable driver isolation checks on wdf01000.sys in addition to your KMDF driver binary.  Note that when you do this, you will see violations from all KMDF drivers on the system that are using WDF for their registry accesses.
 
 ## ApiValidator
 
