@@ -50,7 +50,7 @@ To install on Windows 10, 8.1, 8, and 7, your driver package can have a single S
 
 Starting in Windows 10, you also need to submit any new Windows 10 kernel mode driver for digital signing on the [Windows Hardware Developer Center Dashboard portal](https://partner.microsoft.com/dashboard).  Both kernel and user mode driver submissions must have a valid [Extended Validation (“EV”) Code Signing Certificate](../dashboard/index.yml).
 
-** Note **  SHA1 deprecation does not apply to drivers.  For info about the end of SHA1 support in Windows, see [Windows Enforcement of Authenticode Code Signing and Timestamping](https://social.technet.microsoft.com/wiki/contents/articles/32288.windows-enforcement-of-authenticode-code-signing-and-timestamping.aspx).
+** Note **  SHA1 deprecation does not apply to drivers.
 
 ## <span id="Signing_a_package_compared_to_signing_an_individual_driver_file"></span><span id="signing_a_package_compared_to_signing_an_individual_driver_file"></span><span id="SIGNING_A_PACKAGE_COMPARED_TO_SIGNING_AN_INDIVIDUAL_DRIVER_FILE"></span>Signing a package compared to signing an individual driver file
 

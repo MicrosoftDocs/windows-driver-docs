@@ -17,7 +17,7 @@ The Intel Sharks Cove board supports driver development for devices that use a v
 
 The instructions given here require that you are running Windows 10, Windows 8.1, or Windows 7. These instructions do not work if you are running Windows 8.
 
-If you are running Windows 7, you need to install [PowerShell 4.0](https://social.technet.microsoft.com/wiki/contents/articles/21016.how-to-install-windows-powershell-4-0/rss.aspx) and the [Download and install the Windows ADK](/windows-hardware/get-started/adk-install). Then on the **Start** menu, go to **All Programs &gt; Windows Kits &gt; Windows ADK &gt; Deployment and Imaging Tools Environment**. Open this Command Prompt window as Administrator. Use this Command Prompt window when you enter the commands given in these instructions.
+If you are running Windows 7, you need to install PowerShell 4.0 and the [Download and install the Windows ADK](/windows-hardware/get-started/adk-install). Then on the **Start** menu, go to **All Programs &gt; Windows Kits &gt; Windows ADK &gt; Deployment and Imaging Tools Environment**. Open this Command Prompt window as Administrator. Use this Command Prompt window when you enter the commands given in these instructions.
 
 ## Step 1: Get the board and related hardware
 
