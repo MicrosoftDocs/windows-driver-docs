@@ -324,7 +324,7 @@ Now that you've installed your KmdfHelloWorld driver on the target computer, you
     - [x KmdfHelloWorld!\*](../debugger/x--examine-symbols-.md)
 
 1. To let the target computer run again, choose **Go** from the **Debug** menu or press "g," then press "enter."
-1. To stop the debugging session, choose **Detach Debuggee** from the **Debug** menu.
+1. To stop the debugging session, choose **Detach Debugger** from the **Debug** menu.
 
     > [!IMPORTANT]
     > Make sure you use the "go" command to let the target computer run again before exiting the debugger, or the target computer will remain unresponsive to your mouse and keyboard input because it is still talking to the debugger.

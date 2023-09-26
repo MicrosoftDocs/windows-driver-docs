@@ -1,12 +1,12 @@
 ---
-title: Validating Universal Windows drivers
-description: You can use the ApiValidator.exe tool to verify that the APIs that your driver calls are valid for a Universal Windows driver.
-ms.date: 04/28/2020
+title: Validating Windows Drivers
+description: Various tools to use to validate that your driver package is compliant with the Windows Drivers rules.
+ms.date: 09/21/2023
 ---
 
 # Validating Windows Drivers
 
-Use the InfVerif, Driver Verifier Driver Isolation Checks, and ApiValidator tools to test your Windows Driver for compliance with the requirements described in [Getting Started with Windows Drivers](getting-started-with-windows-drivers.md).
+Use the InfVerif, Driver Verifier Driver Isolation Checks, and ApiValidator tools to test your [driver package](../install/driver-packages.md) for compliance with the Windows Drivers requirements described in [Getting Started with Windows Drivers](getting-started-with-windows-drivers.md).
 
 ## InfVerif
 
@@ -36,7 +36,7 @@ For sample code showing how to use OS decorations, see [Combining Platform Exten
 
 ## Driver Verifier Driver Isolation Checks
 
-To qualify as a Windows Driver, a driver must meet [Driver Package Isolation](driver-isolation.md) requirements. Starting in Windows 10 Preview Build 19568, [Driver Verifier](../devtest/driver-verifier.md) (DV) monitors registry reads and writes that are not allowed for isolated driver packages.
+To qualify as a Windows Driver, a driver package must meet [Driver Package Isolation](driver-isolation.md) requirements. Starting in Windows 11, [Driver Verifier](../devtest/driver-verifier.md) (DV) can monitor kernel binaries for registry reads and writes that are not allowed for isolated driver packages.
 
 You can either view violations as they happen in a kernel debugger, or you can configure DV to halt the system and generates a memory dump with details when a violation occurs. You might start driver development with the first method, then switch to the second as your driver nears completion.
 
@@ -56,7 +56,7 @@ verifier /rc 33 36 /driver myDriver1.sys myDriver2.sys
 
 To configure DV to bugcheck when a violation occurs, use the following syntax:
 
-```
+```command
 verifier /onecheck /rc 33 36 /driver myDriver1.sys
 ```
 
@@ -70,13 +70,21 @@ Here are a few examples of error messages:
 
 Example: **ZwCreateKey** provides full absolute path:
 
-`DRIVER_ISOLATION_VIOLATION: <driver name>: Registry operations should not use absolute paths. Detected creation of unisolated registry key \Registry\Machine\SYSTEM`
+```
+DRIVER_ISOLATION_VIOLATION: <driver name>: Registry operations should not use absolute paths. Detected creation of unisolated registry key \Registry\Machine\SYSTEM
+```
 
 Example: **ZwCreateKey** provides path relative to a handle that is not from an approved API:
 
-`DRIVER_ISOLATION_VIOLATION: <driver name>: Registry operations should only use key handles returned from WDF or WDM APIs. Detected creation of unisolated registry key \REGISTRY\MACHINE\SYSTEM\SomeKeyThatShouldNotExist`
+```
+DRIVER_ISOLATION_VIOLATION: <driver name>: Registry operations should only use key handles returned from WDF or WDM APIs. Detected creation of unisolated registry key \REGISTRY\MACHINE\SYSTEM\SomeKeyThatShouldNotExist
+```
 
-Consider enabling [Device Fundamentals tests](../devtest/run-devfund-tests-via-the-command-line.md) with DV driver isolation checks to help catch driver isolation violations early.
+Consider running [Device Fundamentals tests](../devtest/run-devfund-tests-via-the-command-line.md) with DV driver isolation checks enabled on your driver to help catch driver isolation violations early.
+
+### KMDF drivers
+
+When KMDF drivers use WDF APIs to access the registry, such as [WdfRegistryCreateKey](/windows-hardware/drivers/ddi/wdfregistry/nf-wdfregistry-wdfregistrycreatekey), [WdfRegistryOpenKey](/windows-hardware/drivers/ddi/wdfregistry/nf-wdfregistry-wdfregistryopenkey), or [WdfRegistryQueryValue](/windows-hardware/drivers/ddi/wdfregistry/nf-wdfregistry-wdfregistryqueryvalue), the registry access happens via wdf01000.sys instead of the KMDF driver binary directly.  In order to view violations caused by your KMDF driver binary, please enable driver isolation checks on wdf01000.sys in addition to your KMDF driver binary.  Note that when you do this, you will see violations from all KMDF drivers on the system that are using WDF for their registry accesses.
 
 ## ApiValidator
 
@@ -139,11 +147,15 @@ You can also run Apivalidator.exe from the command prompt. In your WDK installat
 
 Use the following syntax:
 
-`Apivalidator.exe -DriverPackagePath: <driver folder path> -SupportedApiXmlFiles: (path to XML files containing supported APIs for Windows drivers)`
+```command
+Apivalidator.exe -DriverPackagePath: <driver folder path> -SupportedApiXmlFiles: (path to XML files containing supported APIs for Windows drivers)
+```
 
 For example, to verify the APIs called by the Activity sample in the WDK, first build the sample in Visual Studio. Then open a command prompt and navigate to the directory containing the tool, for example `C:\Program Files (x86\Windows Kits\10\bin\x64`. Enter the following command:
 
-`apivalidator.exe -DriverPackagePath:"C:\Program Files (x86)\Windows Kits\10\src\usb\umdf2\_fx2\Debug" -SupportedApiXmlFiles:"c:\Program Files (x86)\Windows Kits\10\build\universalDDIs\x64\UniversalDDIs.xml"`
+```command
+apivalidator.exe -DriverPackagePath:"C:\Program Files (x86)\Windows Kits\10\src\usb\umdf2\_fx2\Debug" -SupportedApiXmlFiles:"c:\Program Files (x86)\Windows Kits\10\build\universalDDIs\x64\UniversalDDIs.xml"
+```
 
 The command produces the following output:
 
@@ -162,7 +174,6 @@ ApiValidator.exe Driver located at C:\Program Files (x86)\Windows Kits\10\src\us
 ```
 
 ### Troubleshooting ApiValidator
-
 
 If ApiValidator.exe outputs an incorrect format error such as the following:
 
@@ -186,6 +197,3 @@ Use this workaround:
 * Arm64 binaries can be tested on x64 machines but not on an x86 machine.
 * ApiValidator can run on x86 to test x86 binaries and Arm binaries.
 * ApiValidator can run on x64 to test x86, x64, Arm, and Arm64 binaries.
-
-
-
