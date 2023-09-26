@@ -144,8 +144,6 @@
         href: microphone-array-geometry-property.md
       - name: "Microphone Array Geometry Descriptor Format"
         href: microphone-array-geometry-descriptor-format.md
-      - name: "Modified INF for MSVAD Micarray"
-        href: modified-inf-for-msvad-micarray.md
     - name: "Hardware Events"
       href: hardware-events.md
   - name: "Audio Data Formats and Data Ranges"
