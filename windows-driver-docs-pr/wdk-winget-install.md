@@ -168,7 +168,7 @@ Using PowerShell:
 
 By [using a WinGet Configuration file](/windows/package-manager/configuration/#use-a-winget-configuration-file-to-configure-your-machine), you can set up a new machine for driver development with minimal manual intervention.
 
-A [configuration file](https://raw.githubusercontent.com/microsoft/Windows-driver-samples/main/configuration.dsc.yaml) for installing the Windows 11, version 22H2 WDK and its dependencies is provided for your convenience. This configuration will set up the following components:
+A [configuration file](https://aka.ms/wdk_winget_config_22621) for installing the Windows 11, version 22H2 WDK and its dependencies is provided for your convenience. This configuration will set up the following components:
 
 * Visual Studio 2022 Community.
 * Visual Studio required workflows and components for driver development.
@@ -186,7 +186,7 @@ Although using a configuration description file works better for provisioning a 
 powershell
 
 # Download configuration file to install WDK with VS 2022 Community
-Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/microsoft/Windows-driver-samples/main/configuration.dsc.yaml' -OutFile configuration.dsc.yaml
+Invoke-WebRequest -Uri 'https://aka.ms/wdk_winget_config_22621' -OutFile configuration.dsc.yaml
 
 # Install VS, SDK, WDK and WDK VS extension using the configuration file
 winget configure -f configuration.dsc.yaml
@@ -198,7 +198,7 @@ Make sure that you have WinGet version 1.6 or higher installed on the machine yo
 
 ### Step 2: Download the WDK Configuration file
 
-The configuration description file can be downloaded from [here](https://raw.githubusercontent.com/microsoft/Windows-driver-samples/main/configuration.dsc.yaml). Save this file as `configuration.dsc.yml` and take note of its location.
+The configuration description file can be downloaded from [here](https://aka.ms/wdk_winget_config_22621). Save this file as `configuration.dsc.yml` and take note of its location.
 
 > [!TIP]
 > The provided configuration file will install the Community edition of Visual Studio 2022. If you need a different edition, you can edit `Microsoft.VisualStudio.2022.Community` and `Microsoft.VisualStudio.Product.Community` product IDs with different IDs for the edition you would like to install (for Professional: `Microsoft.VisualStudio.2022.Professional` and `Microsoft.VisualStudio.Product.Professional`; for Enterprise: `Microsoft.VisualStudio.2022.Enterprise` and `Microsoft.VisualStudio.Product.Enterprise`).
