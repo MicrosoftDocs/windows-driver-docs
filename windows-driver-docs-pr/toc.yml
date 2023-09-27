@@ -15,7 +15,7 @@
   - name: "Download the Windows Driver Kit (WDK)"
     href: download-the-wdk.md
   - name: "Install the WDK using WinGet"
-    href: wdk-winget-install.md
+    href: install-the-wdk-using-winget.md
   - name: "Installing preview versions of the WDK"
     href: installing-preview-versions-wdk.md
   - name: "Other WDK downloads"
