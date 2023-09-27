@@ -25,7 +25,7 @@ Set system-wide debugging features for all processes running on the computer. Th
 Set debugging features for this session. These settings are effective immediately, but are lost when Windows shuts down. The settings affect all processes started after this command completes.
 
 <span id="Image_file_settings"></span><span id="image_file_settings"></span><span id="IMAGE_FILE_SETTINGS"></span>Image file settings  
-Set debugging features for a particular program. These settings are stored in a GlobalFlag registry entry for each program (**HKEY\_LOCAL\_MACHINE\\ SOFTWARE\\ Microsoft\\ Windows NT\\ CurrentVersion\\ Image File Execution Options\\ *ImageFileName*\\ GlobalFlag**). They take effect when you restart the program and remain effective until you change them.
+Set debugging features for a particular program. These settings are stored in a GlobalFlag registry entry for each program (**HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\*ImageFileName*\\GlobalFlag**). They take effect when you restart the program and remain effective until you change them.
 
 <span id="Debugger"></span><span id="debugger"></span><span id="DEBUGGER"></span>Debugger  
 Specify that a particular program always runs in a debugger. This setting is stored in the registry. It is effective immediately and remains effective until you change it. (This feature is available only in the **Global Flags** dialog box.)
