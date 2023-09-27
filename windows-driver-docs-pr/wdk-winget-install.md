@@ -64,15 +64,15 @@ You can use WinGet to install Visual Studio 2022 with all the workloads and comp
 Depending on the edition you would like to install, you will need to provide `winget` with a different set of installer parameters along with the path to the .vsconfig file you have just created to customize your installation.
 
 **Visual Studio Community 2022**:
-```
+```cmd
 winget install --source winget --exact --id Microsoft.VisualStudio.2022.Community --override "--passive --config <vsconfig-folder>\wdk.vsconfig"
 ```
 **Visual Studio Professional 2022**:
-```
+```cmd
 winget install --source winget --exact --id Microsoft.VisualStudio.2022.Professional --override "--passive --config <vsconfig-folder>\wdk.vsconfig""
 ```
 **Visual Studio Enterprise 2022**:
-```
+```cmd
 winget install --source winget --exact --id Microsoft.VisualStudio.2022.Enterprise --override "--passive --config <vsconfig-folder>\wdk.vsconfig"
 ```
 
@@ -83,11 +83,11 @@ You can check Visual Studio documentation on [How to use WinGet to install or mo
 You can install both the Windows SDK and WDK from WinGet by running the following commands:
 
 **Windows SDK**:
-```
+```cmd
 winget install --source winget --exact --id Microsoft.WindowsSDK.10.0.22621
 ```
 **Windows WDK**:
-```
+```cmd
 winget install --source winget --exact --id Microsoft.WindowsWDK.10.0.22621
 ```
 
@@ -96,7 +96,7 @@ winget install --source winget --exact --id Microsoft.WindowsWDK.10.0.22621
 After installing the WDK from command line, you will need to install the Windows Driver Kit Visual Studio extension separately to be able to build and test drivers. By default, the extension is located under `%ProgramFiles(x86)%\Windows Kits\10\Vsix\VS2022\10.0.22621.0\WDK.vsix`.
 
 Using Command Prompt:
-```
+```cmd
 for /f "usebackq tokens=*" %i in (`"%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vswhere.exe" -nologo -latest -products * -property enginePath`) do (
   "%i\VSIXInstaller.exe" "%ProgramFiles(x86)%\Windows Kits\10\Vsix\VS2022\10.0.22621.0\WDK.vsix"
 )
@@ -117,11 +117,11 @@ You can install multiple kits for different Windows versions from WinGet.
 You can search for other available kit versions using the `winget search` command.
 
 **Windows SDK**:
-```
+```cmd
 winget search --source winget --id Microsoft.WindowsSDK
 ```
 **Windows WDK**:
-```
+```cmd
 winget search --source winget --id Microsoft.WindowsWDK
 ```
 
@@ -137,11 +137,11 @@ Windows Driver Kit - Windows 10.0.22621.382 Microsoft.WindowsWDK.10.0.22621 10.1
 You can then install your required combination of kits for a specific `<kit-version>` using `winget install`:
 
 **Windows SDK**:
-```
+```cmd
 winget install --source winget --exact --id Microsoft.WindowsSDK.10.0.<kit-version>
 ```
 **Windows WDK**:
-```
+```cmd
 winget install --source winget --exact --id Microsoft.WindowsWDK.10.0.<kit-version>
 ```
 
@@ -153,7 +153,7 @@ Unless you have the WDK Visual Studio extension from a newer WDK installed alrea
 Locate first the folder for the `<vs-version>` that you will be using (`VS2022` for versions 22621 and newer, `VS2019` for versions 18362 thru 22000). If that folder contains multiple versioned folders, locate the folder inside with the latest version number. Take note of this location as `<wdk-vsix-folder>` if you want to install the extension from command line.
 
 Using Command Prompt:
-```
+```cmd
 for /f "usebackq tokens=*" %i in (`"%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vswhere.exe" -nologo -latest -products * -property enginePath`) do (
   "%i\VSIXInstaller.exe" "<wdk-vsix-folder>\WDK.vsix"
 )
@@ -207,7 +207,7 @@ The configuration description file can be downloaded from [here](https://aka.ms/
 
 On a command line under the directory where the WDK configuration file was saved, run the following command to configure your machine using that file:
 
-```
+```cmd
 winget configure -f configuration.dsc.yaml
 ```
 
