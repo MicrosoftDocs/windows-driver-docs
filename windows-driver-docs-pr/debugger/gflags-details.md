@@ -17,7 +17,7 @@ GFlags enables and disables system features by editing the Windows registry and 
 
 - GFlags image file registry settings appear in the registry immediately, but do not take effect until you restart the process.
 
-- The debugger and launch features in the GFlags dialog box are program specific. You can only set them on one image file at a time.
+- The debugger and launch features in the GFlags dialog box are program-specific. You can only set them on one image file at a time.
 
 ### Flag Details
 
@@ -50,9 +50,9 @@ GFlags settings that are saved between sessions are stored in the registry. You 
 |Type of setting|Registry location|
 |----|----|
 |Systemwide settings ("Registry")|HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\\**GlobalFlag**|
-|Program-specific settings ("Image file") for all users of the computer.|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\\*ImageFileName*\\**GlobalFlag**|
-|Silent exit settings for a specific program ("Silent Process Exit") for all users of the computer.|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SilentProcessExit\\***ImageFileName***|
-|Page heap options for an image file for all users of the computer|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\\*ImageFileName*\\**PageHeapFlags**
+|Program-specific settings ("Image file") for all users of the computer.|HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\\*ImageFileName*\\**GlobalFlag**|
+|Silent exit settings for a specific program ("Silent Process Exit") for all users of the computer.|HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SilentProcessExit\\***ImageFileName***|
+|Page heap options for an image file for all users of the computer|HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\\*ImageFileName*\\**PageHeapFlags**
 |User mode stack trace database size (**tracedb**)|HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\\*ImageFileName*\\**StackTraceDatabaseSizeInMb**|
 |Create user mode stack trace database (ust, 0x1000) for an image file|Windows adds the image file name to the value of the USTEnabled registry entry (HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\\**USTEnabled**).
 |Load image using large pages if possible|HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\\*ImageFileName*\\**UseLargePages**.
