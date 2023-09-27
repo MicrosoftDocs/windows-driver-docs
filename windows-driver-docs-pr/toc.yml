@@ -10,10 +10,12 @@
     href: driver-changes-for-windows-10-version-2004.md
   - name: "What's new in driver development for Windows 10, version 1903"
     href: driver-changes-for-windows-10-version-1903.md
-- name: "Downloads"
+- name: "Installation and Downloads"
   items: 
   - name: "Download the Windows Driver Kit (WDK)"
     href: download-the-wdk.md
+  - name: "Install the WDK using WinGet"
+    href: wdk-winget-install.md
   - name: "Installing preview versions of the WDK"
     href: installing-preview-versions-wdk.md
   - name: "Other WDK downloads"
