@@ -76,7 +76,7 @@ winget install --source winget --exact --id Microsoft.VisualStudio.2022.Professi
 winget install --source winget --exact --id Microsoft.VisualStudio.2022.Enterprise --override "--passive --config <vsconfig-folder>\wdk.vsconfig"
 ```
 
-You can check Visual Studio documentation on [How to use WinGet to install or modify Visual Studio](/visualstudio/install/use-command-line-parameters-to-install-visual-studio?view=vs-2022#use-winget-to-install-or-modify-visual-studio) for more details.
+You can check Visual Studio documentation on [How to use WinGet to install or modify Visual Studio](/visualstudio/install/use-command-line-parameters-to-install-visual-studio#use-winget-to-install-or-modify-visual-studio) for more details.
 
 ### Step 2: Install Windows 11, version 22H2 SDK and WDK
 
@@ -213,7 +213,7 @@ winget configure -f configuration.dsc.yaml
 
 ### Step 3B: Use Dev Home to install WDK Configuration file
 
-Alternatively, if you have [Dev Home](/windows/dev-home/) installed, you can use it to [configure your machine](https://learn.microsoft.com/en-us/windows/dev-home/setup). Select "Machine configuration" from the sidebar, then "Set up development environment" > "Configuration file" on the main screen to open the WDK configuration file that you have downloaded. After confirming that you would like to use that file to configure your machine, installation will proceed and, after it completes, you should have an environment ready for driver development.
+Alternatively, if you have [Dev Home](/windows/dev-home/) installed, you can use it to [configure your machine](/windows/dev-home/setup). Select "Machine configuration" from the sidebar, then "Set up development environment" > "Configuration file" on the main screen to open the WDK configuration file that you have downloaded. After confirming that you would like to use that file to configure your machine, installation will proceed and, after it completes, you should have an environment ready for driver development.
 
 ## See also
 
