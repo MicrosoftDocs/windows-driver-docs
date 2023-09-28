@@ -1,7 +1,7 @@
 ---
 title: Windows Kernel-Mode Object Manager
 description: Windows Kernel-Mode Object Manager
-ms.date: 10/17/2018
+ms.date: 09/26/2023
 ---
 
 # Windows Kernel-Mode Object Manager
@@ -49,7 +49,7 @@ The object manager manages the objects in Windows by performing the following ma
 
 For more information about objects in Windows, see [Managing Kernel Objects](managing-kernel-objects.md).
 
-Routines that provide a direct interface to the object manager are usually prefixed with the letters "**Ob**"; for example, **ObGetObjectSecurity**. For a list of object manager routines, see [Object Manager Routines](/previous-versions/windows/hardware/drivers/ff557759(v=vs.85)).
+Routines that provide a direct interface to the object manager are usually prefixed with the letters "**Ob**"; for example, **ObGetObjectSecurity**. To find object manager routines, use the Filter by title option in the table of contents for both the [wdm.h header](/windows-hardware/drivers/ddi/wdm) and [ntifs.h header](/windows-hardware/drivers/ddi/ntifs). Specifically, type `Ob` in the filter field and then scroll down to the Ob* routines.
 
 Note that Windows uses objects as an abstraction for resources. However, Windows is not object-oriented in the classical C++ meaning of the term. Windows is *object-based*. For more information on what object-based means for Windows, see [Object-Based](object-based.md).
 
