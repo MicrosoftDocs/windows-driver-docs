@@ -1,7 +1,7 @@
 ---
 title: Bluetooth Low Energy (LE) Audio
 description: This article provides an overview of Bluetooth LE Audio introduced in Windows 11 version 22H2 (KB5026446).
-ms.date: 07/27/2023
+ms.date: 09/29/2023
 ---
 
 # Bluetooth Low Energy (LE) Audio
@@ -90,11 +90,11 @@ A sideband architecture uses a vendor specific audio interface to allow the audi
 
 The following diagram shows a sideband Bluetooth LE Audio architecture with an LC3 codec in the Bluetooth controller.
 
-:::image type="content" source="images/bluetooth-le-audio-architecture-with-lc3-codec-in-bluetooth-controller.png" alt-text="Diagram of sideband Bluetooth LE Audio architecture with LC3 codec in the Bluetooth controller.":::
+:::image type="content" source="images/bluetooth-le-audio-architecture-with-lc3-codec-in-bluetooth-controller.png" alt-text="Diagram of sideband Bluetooth LE Audio architecture with LC3 codec located in the Bluetooth controller.":::
 
 The following diagram shows a sideband Bluetooth LE Audio architecture with an LC3 codec in the audio driver stack.
 
-:::image type="content" source="images/bluetooth-le-audio-architecture-with-lc3-codec-in-audio-driver-stack.png" alt-text="Diagram of sideband Bluetooth LE Audio architecture with LC3 codec in the audio driver stack.":::
+:::image type="content" source="images/bluetooth-le-audio-architecture-with-lc3-codec-in-audio-driver-stack.png" alt-text="Diagram of sideband Bluetooth LE Audio architecture with LC3 codec located in the audio driver stack.":::
 
 #### Sideband Bluetooth LE Audio architecture with audio offload
 
@@ -102,11 +102,11 @@ A sideband architecture with audio offload includes an audio DSP hardware compon
 
 The following diagram shows a sideband Bluetooth LE Audio with audio offload architecture with an LC3 codec in the Bluetooth controller.
 
-:::image type="content" source="images/bluetooth-le-audio-with-audio-offload-architecture-with-lc3-codec-in-bluetooth-controller.png" alt-text="Diagram of sideband Bluetooth LE Audio with audio offload architecture with LC3 codec in the Bluetooth controller.":::
+:::image type="content" source="images/bluetooth-le-audio-with-audio-offload-architecture-with-lc3-codec-in-bluetooth-controller.png" alt-text="Diagram of sideband Bluetooth LE Audio with audio offload architecture, featuring LC3 codec in the Bluetooth controller.":::
 
 The following diagram shows a sideband Bluetooth LE Audio with audio offload architecture with an LC3 codec in the audio DSP.
 
-:::image type="content" source="images/bluetooth-le-audio-with-audio-offload-architecture-with-lc3-codec-in-audio-dsp.png" alt-text="Diagram of sideband Bluetooth LE Audio with audio offload architecture with LC3 codec in the audio DSP.":::
+:::image type="content" source="images/bluetooth-le-audio-with-audio-offload-architecture-with-lc3-codec-in-audio-dsp.png" alt-text="Diagram of sideband Bluetooth LE Audio with audio offload architecture, featuring LC3 codec in the audio DSP.":::
 
 #### Vendor specific inband Bluetooth LE Audio architecture
 
@@ -114,7 +114,7 @@ The VSAP inband architecture enables a custom pipeline to send and receive Bluet
 
 The following diagram shows a vendor specific inband Bluetooth LE Audio architecture.
 
-:::image type="content" source="images/bluetooth-le-audio-vendor-specific-inband-architecture.png" alt-text="Diagram of a vendor specific inband Bluetooth LE Audio architecture.":::
+:::image type="content" source="images/bluetooth-le-audio-vendor-specific-inband-architecture.png" alt-text="Diagram of vendor-specific inband Bluetooth LE Audio architecture.":::
 
 ## Detailed design
 
@@ -207,7 +207,7 @@ Signal processing mode: **Default**
 
 The following audio configuration is defined in table 4.1 of the [Bluetooth BAP specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0-1/)
 
-:::image type="content" source="images/bap-configuration-1.png" alt-text="Diagram of basic audio profile configuration 1.":::
+:::image type="content" source="images/bap-configuration-1.png" alt-text="Diagram illustrating basic audio profile configuration 1.":::
 
 The PC is connected to a single audio device that supports mono streams. The single device may be a standalone device or a single connected member of a coordinated set.
 
@@ -221,7 +221,7 @@ The PC is connected to a single audio device that supports mono streams. The sin
 
 The following audio configuration is defined in table 4.1 of the [Bluetooth BAP specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0-1/)
 
-:::image type="content" source="images/bap-configuration-4.png" alt-text="Diagram of basic audio profile configuration 4.":::
+:::image type="content" source="images/bap-configuration-4.png" alt-text="Diagram illustrating basic audio profile configuration 4.":::
 
 The PC is connected to a single audio device that supports stereo streams. The audio device is capable of processing two audio channels on a single CIS.
 
@@ -234,7 +234,7 @@ The PC is connected to a single audio device that supports stereo streams. The a
 
 The following audio configuration is defined in table 4.1 of the [Bluetooth BAP specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0-1/)
 
-:::image type="content" source="images/bap-configuration-6-i.png" alt-text="Diagram of basic audio profile configuration 6 I.":::
+:::image type="content" source="images/bap-configuration-6-i.png" alt-text="Diagram illustrating basic audio profile configuration 6 I.":::
 
 The PC is connected to a single audio device that supports stereo streams. The audio device is only capable of processing one audio channel on each of the two CISs
 
@@ -248,7 +248,7 @@ The PC is connected to a single audio device that supports stereo streams. The a
 
 The following audio configuration is defined in table 4.1 of the [Bluetooth BAP specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0-1/)
 
-:::image type="content" source="images/bap-configuration-6-ii.png" alt-text="Diagram of basic audio profile configuration 6 II.":::
+:::image type="content" source="images/bap-configuration-6-ii.png" alt-text="Diagram illustrating basic audio profile configuration 6 II.":::
 
 The PC is connected to a coordinated set of audio devices. The set is capable of processing two channels of audio with each member processing a single channel.
 
@@ -266,7 +266,7 @@ Bidirectional configurations are used when the Bluetooth LE Audio profile detect
 
 The following audio configuration is defined in table 4.1 of the [Bluetooth BAP specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0-1/)
 
-:::image type="content" source="images/bap-configuration-3.png" alt-text="Diagram of basic audio profile configuration 3.":::
+:::image type="content" source="images/bap-configuration-3.png" alt-text="Diagram illustrating basic audio profile configuration 3.":::
 
 The PC is connected to a single audio device with a bidirectional mono stream established on a single CIS.
 
@@ -279,7 +279,7 @@ The PC is connected to a single audio device with a bidirectional mono stream es
 
 The following audio configuration is defined in table 4.1 of the [Bluetooth BAP specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0-1/)
 
-:::image type="content" source="images/bap-configuration-8-i.png" alt-text="Diagram of basic audio profile configuration 8 I.":::
+:::image type="content" source="images/bap-configuration-8-i.png" alt-text="Diagram illustrating basic audio profile configuration 8 I.":::
 
 The PC is connected to a single audio device that supports stereo render streams and mono capture streams. The device is capable of processing one channel of audio on a single CIS for a given direction.
 
@@ -292,7 +292,7 @@ The PC is connected to a single audio device that supports stereo render streams
 
 The following audio configuration is defined in table 4.1 of the [Bluetooth BAP specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0-1/)
 
-:::image type="content" source="images/bap-configuration-8-ii.png" alt-text="Diagram of basic audio profile configuration 8 II.":::
+:::image type="content" source="images/bap-configuration-8-ii.png" alt-text="Diagram illustrating basic audio profile configuration 8 II.":::
 
 The PC is connected to a coordinated set of audio devices. Each set member is receiving one channel of render audio. A single set member has an established capture stream. The set member with the capture stream is the first set member that connects to the PC that also supports capture streams.
 
@@ -307,7 +307,7 @@ The PC is connected to a coordinated set of audio devices. Each set member is re
 
 The following audio configuration is defined in table 4.1 of the [Bluetooth BAP specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0-1/)
 
-:::image type="content" source="images/bap-configuration-2.png" alt-text="Diagram of basic audio profile configuration 2.":::
+:::image type="content" source="images/bap-configuration-2.png" alt-text="Diagram illustrating basic audio profile configuration 2.":::
 
 The PC is connected to a single audio device that supports mono capture streams.
 
@@ -319,7 +319,7 @@ The PC is connected to a single audio device that supports mono capture streams.
 
 The following audio configuration is defined in table 4.1 of the [Bluetooth BAP specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0-1/)
 
-:::image type="content" source="images/bap-configuration-9-i.png" alt-text="Diagram of basic audio profile configuration 9 I.":::
+:::image type="content" source="images/bap-configuration-9-i.png" alt-text="Diagram illustrating basic audio profile configuration 9 I.":::
 
 The PC is connected to a single audio device that supports sending stereo audio data. The device is capable of encoding one channel of audio on a single CIS.
 
@@ -333,7 +333,7 @@ The PC is connected to a single audio device that supports mono capture streams.
 
 The following audio configuration is defined in table 4.1 of the [Bluetooth BAP specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0-1/)
 
-:::image type="content" source="images/bap-configuration-9-ii.png" alt-text="Diagram of basic audio profile configuration 9 II.":::
+:::image type="content" source="images/bap-configuration-9-ii.png" alt-text="Diagram showing basic audio profile configuration 9(ii) with PC connected to a single audio device.":::
 
 The PC is connected to a set of audio devices. Each set member sends one channel of audio to the PC.
 
@@ -437,7 +437,7 @@ DEFINE_GUID(GUID_BLUETOOTH_LEAUDIO_SUPPORT_INTERFACE,
 
 When the IHV ACX Streaming driver loads and determines that it supports Bluetooth LE Audio streaming, it shall show support for the technology by creating an **ACXFACTORYCIRCUIT** object and registering for Bluetooth template bindings with ACX using the IDs defined in [Audio Endpoint Template Binding IDs](#audio-endpoint-template-binding-ids).
 
-:::image type="content" source="images/btle-audio-driver-init-seq.png" alt-text="Diagram of the Bluetooth LE Audio driver initialization sequence.":::
+:::image type="content" source="images/btle-audio-driver-init-seq.png" alt-text="Flowchart illustrating the Bluetooth LE Audio driver initialization sequence.":::
 
 #### Endpoint creation
 
@@ -457,7 +457,7 @@ When the IHV ACX Streaming driver loads and determines that it supports Bluetoot
    1. Sets the updated format list on the bridge pin if an audio-engine is created for offload streaming.
 1. After the formats are updated, ACX enables both interfaces, and an audio endpoint is created.
 
-:::image type="content" source="images/btle-audio-endpoint-creation.png" alt-text="Diagram of the Bluetooth LE Audio endpoint creation.":::
+:::image type="content" source="images/btle-audio-endpoint-creation.png" alt-text="Flowchart depicting the Bluetooth LE Audio endpoint creation process.":::
 
 #### Stream creation
 
@@ -475,7 +475,7 @@ When the IHV ACX Streaming driver loads and determines that it supports Bluetoot
 1. If the IHV ACX streaming driver needs to update its data path ID or data path configuration based on the object bag values set by the profile, then it may invoke the KSPROPERTY set operations to update the value stored by the profile circuit.
     1. Creates an **ACXSTREAM** with callbacks set for stream state transitions.
 
-:::image type="content" source="images/btle-audio-stream-creation.png" alt-text="Diagram of the Bluetooth LE Audio stream creation.":::
+:::image type="content" source="images/btle-audio-stream-creation.png" alt-text="Flowchart showing the Bluetooth LE Audio stream creation process.":::
 
 #### Stream state transitions
 
@@ -494,11 +494,11 @@ When its **[EvtAcxStreamPrepareHardware](/windows-hardware/drivers/ddi/acxstream
    1. Configuring a CIG with the HCI_LE_Set_CIG_Parameters command.
    1. Sending the ASCS config QoS operation to synchronize settings with the remote device.
 
-:::image type="content" source="images/btle-audio-stream-preparation-profile-circuit.png" alt-text="Diagram of the Bluetooth LE Audio stream preparation of a profile circuit.":::
+:::image type="content" source="images/btle-audio-stream-preparation-profile-circuit.png" alt-text="Flowchart illustrating the Bluetooth LE Audio stream preparation for a profile circuit.":::
 
 When its **EvtAcxStreamPrepareHardware** callback is invoked, the IHV ACX streaming driver allocates the necessary streaming resources and initializes the audio pipeline to be in the acquired state.
 
-:::image type="content" source="images/btle-audio-stream-preparation-streaming-circuit.png" alt-text="Diagram of the Bluetooth LE Audio stream preparation of a streaming circuit":::
+:::image type="content" source="images/btle-audio-stream-preparation-streaming-circuit.png" alt-text="Flowchart depicting the Bluetooth LE Audio stream preparation for a streaming circuit.":::
 
 #### Start stream
 
@@ -514,11 +514,11 @@ When its **[EvtAcxStreamRun](/windows-hardware/drivers/ddi/acxstreams/nc-acxstre
       1. If the IHV ACX streaming driver sets the *BluetoothLEAudio_CodecCapabilities* property, the value of the Codec_ID field in HCI_LE_Setup_ISO_Data_Path shall be set to transparent (0x3) as defined in the Bluetooth Assigned Numbers. Otherwise, the value shall be the same as the Codec ID used in the config codec operation in the stream creation procedure.
 1. If the audio stream is a unicast capture stream, the Bluetooth LE Audio profile performs the BAP receiver start ready operation.
 
-:::image type="content" source="images/btle-audio-stream-start-profile-circuit.png" alt-text="Diagram of the Bluetooth LE Audio stream starting of a profile circuit.":::
+:::image type="content" source="images/btle-audio-stream-start-profile-circuit.png" alt-text="Flowchart showing the Bluetooth LE Audio stream starting process for a profile circuit.":::
 
 When its **EvtAcxStreamRun** callback is invoked, the IHV ACX streaming driver starts processing incoming audio data from either the Windows audio system (render) or the Bluetooth controller (capture).
 
-:::image type="content" source="images/btle-audio-stream-start-streaming-circuit.png" alt-text="Diagram of the Bluetooth LE Audio stream starting of a streaming circuit.":::
+:::image type="content" source="images/btle-audio-stream-start-streaming-circuit.png" alt-text="Flowchart illustrating the Bluetooth LE Audio stream starting process for a streaming circuit.":::
 
 #### Pause stream
 
@@ -528,11 +528,11 @@ When its **[EvtAcxStreamPause](/windows-hardware/drivers/ddi/acxstreams/nc-acxst
 1. Removes the ISO data path using the HCI_LE_Remove_ISO_Data_Path command.
 1. Performs the ASCS receiver stop ready procedure if the audio stream is a unicast capture stream.
 
-:::image type="content" source="images/btle-audio-stream-pause-profile-circuit.png" alt-text="Diagram of the Bluetooth LE Audio stream pausing of a profile circuit.":::
+:::image type="content" source="images/btle-audio-stream-pause-profile-circuit.png" alt-text="Flowchart depicting the Bluetooth LE Audio stream pausing process for a profile circuit.":::
 
 When its **EvtAcxStreamPause** callback is invoked, the IHV ACX streaming driver pauses its audio processing pipeline.
 
-:::image type="content" source="images/btle-audio-stream-pause-streaming-circuit.png" alt-text="Diagram of the Bluetooth LE Audio stream pausing of a streaming circuit.":::
+:::image type="content" source="images/btle-audio-stream-pause-streaming-circuit.png" alt-text="Flowchart showing the Bluetooth LE Audio stream pausing process for a streaming circuit.":::
 
 #### Release stream
 
@@ -542,11 +542,11 @@ When its **[EvtAcxStreamReleaseHardware](/windows-hardware/drivers/ddi/acxstream
 1. Disconnecting the CIS if it isn't used by another active stream.
 1. Removing the CIG if all CISes are disconnected.
 
-:::image type="content" source="images/btle-audio-stream-release-profile-circuit.png" alt-text="Diagram of the Bluetooth LE Audio stream releasing of a profile circuit.":::
+:::image type="content" source="images/btle-audio-stream-release-profile-circuit.png" alt-text="Flowchart illustrating the Bluetooth LE Audio stream releasing process for a profile circuit.":::
 
 When its **EvtAcxStreamReleaseHardware** callback is invoked, the IHV ACX streaming driver releases its audio pipeline resources.
 
-:::image type="content" source="images/btle-audio-stream-release-streaming-circuit.png" alt-text="Diagram of the Bluetooth LE Audio stream releasing of a streaming circuit.":::
+:::image type="content" source="images/btle-audio-stream-release-streaming-circuit.png" alt-text="Flowchart depicting the Bluetooth LE Audio stream releasing process for a streaming circuit.":::
 
 #### Endpoint disconnection
 
@@ -561,7 +561,7 @@ A Bluetooth LE Audio endpoint is removed from the system when either the profile
 1. To complete endpoint removal, ACX invalidates the IHV ACX streaming driver's circuit, which results in the WDF invoking the circuit's cleanup callback.
 1. When its cleanup callback is invoked, the IHV ACX streaming driver releases its circuit.
 
-:::image type="content" source="images/btle-audio-endpoint-removal.png" alt-text="Diagram of the Bluetooth LE Audio endpoint removal.":::
+:::image type="content" source="images/btle-audio-endpoint-removal.png" alt-text="Flowchart showing the Bluetooth LE Audio endpoint removal process.":::
 
 ### Volume and mute
 

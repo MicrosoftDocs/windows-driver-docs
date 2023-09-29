@@ -1,7 +1,7 @@
 ---
 title: Microsoft Bluetooth Test Platform Traduci board support
 description: Bluetooth Test Platform (BTP) Traduci board support.
-ms.date: 05/05/2022
+ms.date: 09/29/2023
 ---
 
 # Traduci board support
@@ -17,7 +17,7 @@ It is important to note that BTP tests do not have a tight dependency on the Tra
 
 The Traduci board is produced by [MCCI](https://mcci.com/usb/dev-tools/model-2411/)
 
-:::image type="content" source="images/Traduci_Overhead.jpg" alt-text="Photo of a Traduci board.":::
+:::image type="content" source="images/Traduci_Overhead.jpg" alt-text="Overhead view of a Traduci board.":::
 
 - 4 12-pin ports to support 4 devices simultaneously
 - Able to route data to and from multiple devices simultaneously
@@ -28,6 +28,6 @@ The Traduci board is produced by [MCCI](https://mcci.com/usb/dev-tools/model-241
 
 These diagrams show how the Traduci-based BTP tests are executed
 
-:::image type="content" source="images/btp-hwOverview.png" alt-text="Diagram of the hardware test.":::
+:::image type="content" source="images/btp-hwOverview.png" alt-text="Flowchart that shows the execution of Traduci-based BTP hardware tests.":::
 
-:::image type="content" source="images/btp-swOverview.png" alt-text="Diagram of the software test.":::
+:::image type="content" source="images/btp-swOverview.png" alt-text="Flowchart that shows the execution of Traduci-based BTP software tests.":::

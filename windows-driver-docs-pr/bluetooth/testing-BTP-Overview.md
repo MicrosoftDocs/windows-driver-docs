@@ -10,4 +10,4 @@ The Bluetooth Test Platform (BTP) provides automated testing of Bluetooth hardwa
 
 This diagram shows how BTP tests are execute using Traduci-based devices.
 
-:::image type="content" source="images/btp-hwOverview.png" alt-text="Diagram that shows the hardware view of BTP tests execution using Traduci-based devices.":::
+:::image type="content" source="images/btp-hwOverview.png" alt-text="Diagram showing the hardware view of BTP test execution using Traduci-based devices.":::

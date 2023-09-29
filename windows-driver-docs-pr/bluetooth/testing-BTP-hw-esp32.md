@@ -1,7 +1,7 @@
 ---
 title: Microsoft Bluetooth Test Platform - Model 2433 ESP32
 description: Bluetooth Test Platform (BTP) supported hardware (ESP32).
-ms.date: 08/30/2021
+ms.date: 09/29/2023
 ---
 
 # Model 2433 ESP32
@@ -15,7 +15,7 @@ The Model 2433 ESP32 allows the ESP32 to be utilized as a Traduci sled device. M
 | --- | --- | --- |
 | ESP32 Wi-Fi | esp32wifi | RunWiFiCoexScenarioTests.bat esp32wifi rn52 |
 
-:::image type="content" source="images/ESP32.png" alt-text="Photo of the Model 2433 ESP32.":::
+:::image type="content" source="images/ESP32.png" alt-text="Photo of the Model 2433 ESP32 microcontroller board.":::
 
 ## Suported Tests
 
@@ -23,7 +23,7 @@ The Model 2433 ESP32 allows the ESP32 to be utilized as a Traduci sled device. M
 
 ### ESP32 Device on BTP-compatible sled
 
-:::image type="content" source="images/Traduci_and_ESP32.jpg" alt-text="Photo of the Model 2433 ESP32 device on a sled.":::
+:::image type="content" source="images/Traduci_and_ESP32.jpg" alt-text="Photo of the Model 2433 ESP32 device mounted on a BTP-compatible sled.":::
 
 ## Hardware
 
@@ -58,16 +58,16 @@ This is required for first time setup of an ESP32 radio for use with the BTP Wi-
 
 1. Connect the Hardware.
 Using a USB Serial to UART board (like the one shown below) & jumper wires
-    :::image type="content" source="images/ESP32_and_UART.png" alt-text="ESP32 with USB to UART board.":::
+    :::image type="content" source="images/ESP32_and_UART.png" alt-text="ESP32 connected to a USB to UART board for firmware update.":::
 
     1. Connect the GND of the Serial board to the GND of the ESP32
     1. Connect the RX of the Serial board to the TX of the ESP32
     1. Connect the TX of the Serial board to the RX of the ESP32
     1. Connect the ESP32 device to Port JD on the Traduci for power delivery.
     1. Move SW1 to the ON position to switch the ESP32 into boot mode.
-        :::image type="content" source="images/ESP32Boot.png" alt-text="ESP32 enable boot mode.":::
+        :::image type="content" source="images/ESP32Boot.png" alt-text="Switching the ESP32 into boot mode by moving SW1 to the ON position.":::
     1. Power on the ESP32 via the Traduci using TraduciCMD.exe: `TraduciCmd.exe -power 4 3`
-        :::image type="content" source="images/Traduci_and_ESP32.jpg" alt-text="ESP32 powered on by Traduci.":::
+        :::image type="content" source="images/Traduci_and_ESP32.jpg" alt-text="ESP32 device powered on by Traduci using TraduciCMD.exe command.":::
     1. Run `arduino-cli board list` to identify the existing COM ports prior to connecting the USB Serial to UART board.
     1. Connect the USB Serial to UART board to the PC you installed the Arduino CLI to.
     1. Run `arduino-cli board list` to identify the new COM port associated with the UART to USB Serial board. It will be the COM port listed that was not present in the previously queried board list.

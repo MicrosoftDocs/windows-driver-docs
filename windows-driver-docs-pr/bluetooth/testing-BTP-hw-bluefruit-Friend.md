@@ -1,7 +1,7 @@
 ---
 title: Microsoft Bluetooth Test Platform - Bluefruit Friend
 description: Bluetooth Test Platform (BTP) supported hardware (Bluefruit Friend).
-ms.date: 06/09/2021
+ms.date: 09/29/2023
 ---
 
 # Bluefruit LE UART Friend (nRF51822)
@@ -14,7 +14,7 @@ The nRF51 is a Low Energy (LE) radio from Nordic Semiconductor capable of behavi
 | --- | --- | --- |
 | Bluefruit Friend | bluefruit | RunPairingTests.bat bluefruit |
 
-:::image type="content" source="images/Bluefruit.png" alt-text="Photo of the Bluefruit Friend device.":::
+:::image type="content" source="images/Bluefruit.png" alt-text="Photo of the Bluefruit LE UART Friend device.":::
 
 ## Supported tests
 

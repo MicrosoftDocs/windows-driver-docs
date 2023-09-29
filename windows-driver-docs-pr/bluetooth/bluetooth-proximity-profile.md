@@ -1,7 +1,7 @@
 ---
 title: Bluetooth Proximity Profile
 description: The Proximity Profile defines two roles intended to allow devices to detect their proximity.
-ms.date: 09/11/2023
+ms.date: 09/29/2023
 ---
 
 # Bluetooth Proximity Profile
@@ -13,7 +13,7 @@ The two roles are called:
 - The Proximity Reporter
 - The Proximity Monitor
 
-:::image type="content" source="images/bthleproximityroles.png" alt-text="Diagram showing the role relationship between the Proximity Reporter and Proximity Monitor roles.":::
+:::image type="content" source="images/bthleproximityroles.png" alt-text="Diagram illustrating the relationship between the Proximity Reporter and Proximity Monitor roles in Bluetooth Proximity Profile.":::
 
 ## Proximity Reporter
 

@@ -5,7 +5,7 @@ keywords:
 - Bluetooth WDK , driver stack
 - driver stacks WDK Bluetooth
 - stacks WDK Bluetooth
-ms.date: 10/10/2022
+ms.date: 09/29/2023
 ---
 
 # Bluetooth driver stack
@@ -14,7 +14,7 @@ The Bluetooth driver stack comprises the core portion of the support provided by
 
 The following image shows the modules within the Bluetooth driver stack, along with possible custom user-mode and kernel-mode drivers not included in Windows Vista and later. These custom drivers are known as profile drivers.
 
-:::image type="content" source="images/bluetooth-architecture.png" alt-text="Diagram showing the bluetooth driver stack.":::
+:::image type="content" source="images/bluetooth-architecture.png" alt-text="Diagram showing the Bluetooth driver stack architecture.":::
 
 - **User-mode**
   - **User-mode application**- A user-mode application that accesses the Bluetooth driver stack through published APIs. For more information, see [About Bluetooth](/windows/win32/bluetooth/about-bluetooth) in the Windows SDK documentation.

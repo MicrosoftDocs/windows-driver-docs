@@ -1,7 +1,7 @@
 ---
 title: Serial bus driver layer
 description: The serial bus driver is loaded based on a PDO created by ACPI, and can query and access the system resources, such as GPIO and I2C controllers to perform signaling control.
-ms.date: 10/06/2022
+ms.date: 09/29/2023
 ---
 
 # Serial bus driver layer
@@ -156,7 +156,7 @@ In order to reduce power up time, the callback functions (e.g. the EnterD0 and w
 
 The following is a simplified flowchart to illustrate a typical sequence and logic for idle and wake support. This logic spans many drivers and threads, and there are exceptions as well as corner cases that are not expressed (e.g. an application on the host side can also wake the stack from idle state).
 
-:::image type="content" source="images/bthdevicepwrstatetransitionsflowchart.png" alt-text="Flowchart showing Bluetooth device power state transitions.":::
+:::image type="content" source="images/bthdevicepwrstatetransitionsflowchart.png" alt-text="Flowchart illustrating Bluetooth device power state transitions for idle and wake support.":::
 
 ## Bus driver's own power management
 
