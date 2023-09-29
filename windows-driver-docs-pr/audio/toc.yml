@@ -404,24 +404,12 @@
     items: 
     - name: "Hardware-Offloaded Audio Processing"
       href: hardware-offloaded-audio-processing.md
-    - name: "Architectural Overview"
-      href: architectural-overview.md
-    - name: "Driver Implementation for Offloaded Audio"
-# Auto-expanded node
-      items: 
-      - name: "Driver Implementation for Offloaded Audio"
-        href: driver-implementation-for-offloaded-audio.md
-      - name: "Implementation Overview"
-        href: implementation-overview.md
-      - name: "Driver Implementation Details"
-# Auto-expanded node
-        items: 
-        - name: "Driver Implementation Details"
-          href: driver-implementation-details.md
-        - name: "Helper Interfaces for Offloaded Audio Processing"
-          href: helper-interfaces-for-offloaded-audio-processing.md
-        - name: "Glitch Reporting for Offloaded Audio"
-          href: glitch-reporting-for-offloaded-audio.md
+    - name: "Hardware Offloaded Audio Driver Implementation"
+      href: driver-implementation-details.md
+    - name: "Portcls Helper Interfaces for Offloaded Audio Processing"
+      href: helper-interfaces-for-offloaded-audio-processing.md
+    - name: "Glitch Reporting for Offloaded Audio"
+      href: glitch-reporting-for-offloaded-audio.md
     - name: "PortCls Power Management Updates for SoC"
 # Auto-expanded node
       items: 

@@ -9791,6 +9791,21 @@
             "source_path": "windows-driver-docs-pr/audio/modified-inf-for-msvad-micarray.md",
             "redirect_URL": "//windows-hardware/audio/microphone-array-geometry-property",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/audio/driver-implementation-for-offloaded-audio.md",
+            "redirect_URL": "//windows-hardware/audio/hardware-offloaded-audio-processing",
+            "redirect_document_id": false
+        },        
+        {
+            "source_path": "windows-driver-docs-pr/audio/architectural-overview.md",
+            "redirect_URL": "//windows-hardware/audio/hardware-offloaded-audio-processing",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/audio/implementation-overview.md",
+            "redirect_URL": "//windows-hardware/audio/hardware-offloaded-audio-processing",
+            "redirect_document_id": false
         }
-     ]
+    ]
 }

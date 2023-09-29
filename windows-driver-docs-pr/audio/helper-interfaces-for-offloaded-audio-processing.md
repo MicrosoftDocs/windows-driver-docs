@@ -1,16 +1,17 @@
 ---
-title: Helper Interfaces for Offloaded Audio Processing
+title: Portcls Helper Interfaces for Offloaded Audio Processing
 description: This topic presents the PortCls helper interfaces, to simplify the drivers that support offloaded-audio processing.
-ms.date: 05/31/2023
+ms.date: 09/26/2023
+ms.localizationpriority: medium
 ---
 
-# Helper Interfaces for Offloaded Audio Processing
+# Portcls Helper Interfaces for Offloaded Audio Processing
 
 This topic presents the helper interfaces that Microsoft has added to its audio port-class driver (PortCls), to simplify the implementation of drivers that support offloaded-audio processing.
 
 When you develop your WaveRT miniport driver that will work with an audio adapter that is capable of processing hardware-offloaded audio streams, your miniport driver works with PortCls to stream and/or process audio data.
 
-PortCls has been updated to handle all the offload-related kernel streaming (KS) properties, and that is what makes it simple to develop a WaveRT miniport driver to expose support for processing hardware-offloaded audio streams. As a result of the updates, PortCls only calls the underlying miniport driver for hardware and/or driver-specific operations via two newly defined interfaces:
+PortCls can handle all the offload-related kernel streaming (KS) properties, and that is what makes it simple to develop a WaveRT miniport driver to expose support for processing hardware-offloaded audio streams. As a result of the updates, PortCls only calls the underlying miniport driver for hardware and/or driver-specific operations via two newly defined interfaces:
 
 - [**IMiniportAudioEngineNode**](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportaudioenginenode)
 
@@ -70,4 +71,4 @@ class CMiniportWaveRTStream :
 };
 ```
 
-The *Portcls.h* header file defines these interfaces. And for more information about how to develop a driver that can handle hardware-offloaded audio streams, see [Driver Implementation Details](driver-implementation-details.md).
+The *Portcls.h* header file defines these interfaces. And for more information about how to develop a driver that can handle hardware-offloaded audio streams, see [Hardware Offloaded Audio Driver Implementation](driver-implementation-details.md).
