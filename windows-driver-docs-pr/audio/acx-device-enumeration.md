@@ -1,14 +1,11 @@
 ---
 title: ACX device enumeration
 description: This topic provides a summary of the ACX device enumeration, startup and shutdown, and device rebalance.
-ms.date: 04/14/2023
+ms.date: 09/29/2023
 ms.localizationpriority: medium
 ---
 
 # ACX device enumeration
-
->[!IMPORTANT]
-> Some information relates to a prerelease product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 This topic discusses ACX  device enumeration, startup and shutdown, and device rebalance. For a general overview of ACX, see [ACX audio class extensions overview](acx-audio-class-extensions-overview.md). For information about ACX power management and PnP, see [ACX power management](acx-power-management.md).
 

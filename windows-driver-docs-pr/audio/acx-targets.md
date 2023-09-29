@@ -1,14 +1,11 @@
 ---
 title: ACX targets and driver synchronization
 description: This topic provides a high level summary of the ACX targets and driver synchronization.
-ms.date: 04/19/2023
+ms.date: 09/29/2023
 ms.localizationpriority: medium
 ---
 
 # ACX targets and driver synchronization
-
->[!IMPORTANT]
-> Some information relates to a prerelease product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 This topic provides a summary of the Audio Class eXtensions (ACX) targets and driver synchronization.
 

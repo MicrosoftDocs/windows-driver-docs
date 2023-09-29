@@ -1,14 +1,11 @@
 ---
 title: ACX reference documentation
 description: This topic provides a high level overview of the ACX reference documentation.
-ms.date: 04/19/2023
+ms.date: 09/29/2023
 ms.localizationpriority: medium
 ---
 
 # ACX reference documentation
-
->[!IMPORTANT]
-> Some information relates to a prerelease product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 This topic describes the header level reference documentation for the ACX audio class extensions.
 

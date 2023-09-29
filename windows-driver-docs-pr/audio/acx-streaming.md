@@ -1,14 +1,11 @@
 ---
 title: ACX streaming
 description: This topic provides a summary of the ACX streaming and the associated buffering, which is critical to a glitch free audio experience.
-ms.date: 05/26/2023
+ms.date: 09/29/2023
 ms.localizationpriority: medium
 ---
 
 # ACX streaming
-
->[!IMPORTANT]
-> Some information relates to a prerelease product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 This topic discusses ACX streaming and the associated buffering, which is critical to a glitch free audio experience. It describes the the mechanisms used by the driver to communicate about the stream state and manage the buffer for the stream. For a list of common ACX audio terms and an introduction to ACX, see [ACX audio class extensions overview](acx-audio-class-extensions-overview.md).
 
