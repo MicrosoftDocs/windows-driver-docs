@@ -30,7 +30,7 @@ Using the supplied USB A-to-B cable, plug the Traduci into a USB port on the sys
 
 The Traduci has four 12-pin ports (labeled JA, JB, JC, JD) used for test peripherals.
 
-:::image type="content" source="images/Traduci_12PinPortSide.jpg" alt-text="Top view of Traduci circuit board with four 12-pin ports labeled JA, JB, JC, and JD.":::
+:::image type="content" source="images/Traduci_12PinPortSide.jpg" alt-text="Photo of a Traduci circuit board with four 12-pin ports labeled JA, JB, JC, and JD.":::
 
 To plug a peripheral device into a port on the Traduci, orient the Traduci so that LEDs and buttons are face up. Next orient the device sled such that the printed label on the device containing the MAC address and any switches are face up. Keeping this orientation, plug the peripheral device in the appropriate 12-pin port.
 

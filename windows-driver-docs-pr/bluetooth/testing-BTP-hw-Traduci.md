@@ -26,8 +26,8 @@ The Traduci board is produced by [MCCI](https://mcci.com/usb/dev-tools/model-241
 - Unlabeled pins can easily be statically assigned to HIGH or LOW depending on the needs of the device plugged into the port
 - The Traduci does not currently support hardware handshaking using CTS and RTS
 
-These diagrams show how the Traduci-based BTP tests are executed
+These diagrams show how the Traduci-based BTP tests are executed:
 
-:::image type="content" source="images/btp-hwOverview.png" alt-text="Flowchart that shows the execution of Traduci-based BTP hardware tests.":::
+:::image type="content" source="images/btp-hwOverview.png" alt-text="Diagram that shows the execution of Traduci-based BTP hardware tests.":::
 
-:::image type="content" source="images/btp-swOverview.png" alt-text="Flowchart that shows the execution of Traduci-based BTP software tests.":::
+:::image type="content" source="images/btp-swOverview.png" alt-text="Diagram that shows the execution of Traduci-based BTP software tests.":::

@@ -31,7 +31,7 @@ The ESP32 can be purchased via [MCCI](https://store.mcci.com/products/esp32-sled
 
 The ESP32 can also be purchased via [Digilent](https://digilent.com/shop/pmod-esp32-wireless-communication-module/).
 
-USB Serial to UART breakout board equivalent to [Sparkfun FT232RL](https://www.sparkfun.com/products/12731) needed for first time Firmware Update.
+USB serial to UART breakout board equivalent to [Sparkfun FT232RL](https://www.sparkfun.com/products/12731) needed for first time Firmware Update.
 
 ## Getting Started
 
@@ -40,7 +40,7 @@ If the ESP32 has already been updated, skip to [Updating ESP32 Firmware via Trad
 > [!NOTE]
 > The ESP32 device can **only** be plugged into the Traduci board 12-pin port labeled 'JD'.
 
-## Updating ESP32 Firmware manually
+## Updating ESP32 firmware manually
 
 This is required for first time setup of an ESP32 radio for use with the BTP Wi-Fi Coexistence tests. After first time setup, firmware updates to the device sled can be done via [Traduci.cmd](testing-BTP-hw-esp32.md#updating-esp32-firmware-via-traducicmd).  
 
@@ -56,21 +56,21 @@ This is required for first time setup of an ESP32 radio for use with the BTP Wi-
         arduino-cli core install esp32:esp32 --additional-urls https://dl.espressif.com/dl/package_esp32_index.json
         ```
 
-1. Connect the Hardware.
-Using a USB Serial to UART board (like the one shown below) & jumper wires
-    :::image type="content" source="images/ESP32_and_UART.png" alt-text="ESP32 connected to a USB to UART board for firmware update.":::
+1. Connect the hardware using a USB serial to UART board (like the one shown below) & jumper wires
 
-    1. Connect the GND of the Serial board to the GND of the ESP32
-    1. Connect the RX of the Serial board to the TX of the ESP32
-    1. Connect the TX of the Serial board to the RX of the ESP32
+    :::image type="content" source="images/ESP32_and_UART.png" alt-text="Photo showing where to connect a USB to UART board to the ESP32 for firmware update.":::
+
+    1. Connect the GND of the serial board to the GND of the ESP32
+    1. Connect the RX of the serial board to the TX of the ESP32
+    1. Connect the TX of the serial board to the RX of the ESP32
     1. Connect the ESP32 device to Port JD on the Traduci for power delivery.
     1. Move SW1 to the ON position to switch the ESP32 into boot mode.
         :::image type="content" source="images/ESP32Boot.png" alt-text="Switching the ESP32 into boot mode by moving SW1 to the ON position.":::
     1. Power on the ESP32 via the Traduci using TraduciCMD.exe: `TraduciCmd.exe -power 4 3`
         :::image type="content" source="images/Traduci_and_ESP32.jpg" alt-text="ESP32 device powered on by Traduci using TraduciCMD.exe command.":::
-    1. Run `arduino-cli board list` to identify the existing COM ports prior to connecting the USB Serial to UART board.
-    1. Connect the USB Serial to UART board to the PC you installed the Arduino CLI to.
-    1. Run `arduino-cli board list` to identify the new COM port associated with the UART to USB Serial board. It will be the COM port listed that was not present in the previously queried board list.
+    1. Run `arduino-cli board list` to identify the existing COM ports prior to connecting the USB serial to UART board.
+    1. Connect the USB serial to UART board to the PC you installed the Arduino CLI to.
+    1. Run `arduino-cli board list` to identify the new COM port associated with the UART to USB serial board. It will be the COM port listed that was not present in the previously queried board list.
 
 1. Upload the firmware to the ESP32 by running the following from a cmd prompt, and replacing the X in COMX to the COM port number identified in the previous step:
 
@@ -92,7 +92,7 @@ TraduciCmd.exe -updateesp32firmware
 
 Wait for "ESP32 firmware is up to date" to show on the terminal and indicate the process is done.
 
-This flashing process does not require the use of a UART to USB Serial board. This will not work if the ESP32 has not previously been provisioned with BTP compatible firmware via the [manual instructions](testing-BTP-hw-esp32.md#updating-esp32-firmware-manually)
+This flashing process does not require the use of a UART to USB serial board. This will not work if the ESP32 has not previously been provisioned with BTP compatible firmware via the [manual instructions](testing-BTP-hw-esp32.md#updating-esp32-firmware-manually)
 
 ## Features
 
@@ -101,4 +101,4 @@ This flashing process does not require the use of a UART to USB Serial board. Th
 - Custom firmware to enable updates delivered through the Traduci
 - 12-pin Pmod connector with SPI and UART interfaces
 - Supports creation of Wi-Fi soft access points
-- Supports http web server capabilities
+- Supports HTTP web server capabilities
