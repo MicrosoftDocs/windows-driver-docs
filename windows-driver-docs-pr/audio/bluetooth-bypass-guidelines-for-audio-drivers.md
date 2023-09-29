@@ -1,7 +1,7 @@
 ---
 title: Bluetooth HFP bypass guidelines for audio drivers
 description: Learn how to reroute audio data past the Bluetooth hands-free profile (HFP) host controller interface (HCI) for processing in system-on-a-chip (SoC) solutions.
-ms.date: 07/27/2023
+ms.date: 09/26/2023
 ---
 
 # Bluetooth HFP bypass guidelines for audio drivers
