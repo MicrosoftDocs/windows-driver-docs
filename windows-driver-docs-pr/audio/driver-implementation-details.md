@@ -1,21 +1,36 @@
 ---
-title: Driver Implementation Details
+title: Hardware offloaded audio driver implementation
 description: This topic presents the implementation details for an audio driver that is developed for an audio adapter that is capable of processing hardware-offloaded audio streams.
-ms.date: 09/30/2022
+ms.date: 09/28/2023
 ---
 
-# Driver Implementation Details
+# Hardware offloaded audio driver implementation
 
+When you implement a driver for offloaded audio, you develop a driver that is able to process offloaded audio streams, and to expose that ability to the Windows audio system.
 
 This topic presents the implementation details for an audio driver that is developed for an audio adapter that is capable of processing hardware-offloaded audio streams.
 
-In other words, this topic explains what Microsoft has done (starting with Windows 8) to support a driver that works with an audio adapter that is capable of processing hardware-offloaded audio. In the following sections, this topic also shows you what the driver must be capable of to support such an adapter.
+These additional topics in this section discuss the issues that you should be aware of when you develop an audio driver for an audio adapter that implements a hardware audio engine to handle offloaded audio streams.
 
-## <span id="A__new_Type_GUID_for_node_descriptors"></span><span id="a__new_type_guid_for_node_descriptors"></span><span id="A__NEW_TYPE_GUID_FOR_NODE_DESCRIPTORS"></span>*Type* GUID for node descriptors
+[Portcls Helper Interfaces for Offloaded Audio Processing](helper-interfaces-for-offloaded-audio-processing.md)
+
+[Glitch Reporting for Offloaded Audio](glitch-reporting-for-offloaded-audio.md)
+
+## Hardware offload - KS filter topology
+
+Windows supports the use of an audio adapter that can use an on-board hardware audio engine to process audio streams. When you develop such an audio adapter, the associated audio driver must expose this fact to the user mode audio system in a specific manner, so that the audio system can discover, use and properly expose the features of this adapter and its driver.
+
+![diagram that shows a dsp equipped system that implements effects in hardware.](images/audio-apo-dsp-equipped-system-with-hardware-effects-3.png)
+
+## The KSNODETYPE\_AUDIO\_ENGINE GUID for node descriptors
 
 If an audio adapter is capable of processing offloaded audio streams, the adapter’s audio driver exposes this capability by using a node in the KS-filter for the adapter.
 
-Each node in the path of the audio stream has a node descriptor, so for this node the driver must set the *Type* GUID to [**KSNODETYPE\_AUDIO\_ENGINE**](./ksnodetype-audio-engine.md). Here’s an example of how the driver could configure the node descriptor for this new node:
+If an audio adapter is capable of processing offloaded audio streams, the adapter’s audio driver exposes this capability by using a specific node in the KS-filter for the adapter.
+
+Each node in the path of the audio stream has a node descriptor, for hardware off load, the driver must set the *Type* GUID to [**KSNODETYPE\_AUDIO\_ENGINE**](./ksnodetype-audio-engine.md).
+
+Here’s an example of how the driver could configure the node descriptor for this node:
 
 ```cpp
 typedef struct _KSNODE_DESCRIPTOR {
@@ -27,7 +42,7 @@ typedef struct _KSNODE_DESCRIPTOR {
 
 If the Name GUID is set to **KSNODETYPE\_AUDIO\_ENGINE**, then you must create a default name string for this node. You then add that string to *ks.inf*, so that during installation of the driver, the string can be used to populate the *MediaCategories* registry key.
 
-The definition of the GUID for the new node type, **KSNODETYPE\_AUDIO\_ENGINE**, is as follows:
+The definition of the GUID for the node type, **KSNODETYPE\_AUDIO\_ENGINE**, is as follows:
 
 ```cpp
 Code style
@@ -54,11 +69,11 @@ PCNODE_DESCRIPTOR MiniportNodes[] =
 };
 ```
 
-## <span id="A_new_KS_property_set_for_audio_engines"></span><span id="a_new_ks_property_set_for_audio_engines"></span><span id="A_NEW_KS_PROPERTY_SET_FOR_AUDIO_ENGINES"></span>KS property set for audio engines
+## The KSPROPSETID\_AudioEngine KS property set for audio engines
 
-Starting with Windows 8, the [KSPROPSETID\_AudioEngine](./kspropsetid-audioengine.md) property set has been introduced to support hardware audio engines and hardware-offloaded audio processing. So the driver for an adapter that can process offloaded audio streams must support the properties in this new property set.
+The [KSPROPSETID\_AudioEngine](./kspropsetid-audioengine.md) property set is used to support hardware audio engines and hardware-offloaded audio processing. So the driver for an adapter that can process offloaded audio streams must support the properties in this new property set.
 
-The new property set, **KSPROPSETID\_AudioEngine**, is defined as follows:
+The property set, **KSPROPSETID\_AudioEngine**, is defined as follows:
 
 ```cpp
 #define STATIC_KSPROPSETID_AudioEngine\
@@ -67,9 +82,9 @@ DEFINE_GUIDSTRUCT("3A2F82DC-886F-4BAA-9EB4-082B9025C536", KSPROPSETID_AudioEngin
 #define KSPROPSETID_AudioEngine DEFINE_GUIDNAMED(KSPROPSETID_AudioEngine)
 ```
 
-The names of the properties in this new property set are defined in the [**KSPROPERTY\_AUDIOENGINE**](./ksproperty-audioengine.md) enum, and the driver must support these names.
+The names of the properties in this property set are defined in the [**KSPROPERTY\_AUDIOENGINE**](./ksproperty-audioengine.md) enum, and the driver must support these names.
 
-Here are the new properties in the **KSPROPSETID\_AudioEngine** property set:
+Here are the properties in the **KSPROPSETID\_AudioEngine** property set:
 
 [**KSPROPERTY\_AUDIOENGINE\_BUFFER\_SIZE\_RANGE**](./ksproperty-audioengine-buffer-size-limits.md)
 
@@ -89,8 +104,7 @@ Here are the new properties in the **KSPROPSETID\_AudioEngine** property set:
 
 [**KSPROPERTY\_AUDIOENGINE\_VOLUMELEVEL**](./ksproperty-audioengine-volumelevel.md)
 
-## <span id="Updates_to_the_KSPROPSETID__Audio_property_set"></span><span id="updates_to_the_kspropsetid__audio_property_set"></span><span id="UPDATES_TO_THE_KSPROPSETID__AUDIO_PROPERTY_SET"></span>Updates to the KSPROPSETID\_ Audio property set
-
+## Required properties in the KSPROPSETID\_ Audio property set
 
 In addition to supporting the properties in the **KSPROPSETID\_AudioEngine** property set, the driver must also support the following existing properties in the [KSPROPSETID\_Audio](./kspropsetid-audio.md) property set:
 
@@ -102,22 +116,25 @@ In addition to supporting the properties in the **KSPROPSETID\_AudioEngine** pro
 
 And to complete the implementation of driver support for hardware-offloaded audio processing, properties are available to the **KSPROPSETID\_ Audio** property set.
 
-Here are the **KSPROPSETID\_ Audio** properties:
-
 [**KSPROPERTY\_AUDIO\_LINEAR\_BUFFER\_POSITION**](./ksproperty-audio-linear-buffer-position.md)
 
 [**KSPROPERTY\_AUDIO\_PRESENTATION\_POSITION**](./ksproperty-audio-presentation-position.md)
 
 [**KSPROPERTY\_AUDIO\_WAVERT\_CURRENT\_WRITE\_POSITION**](./ksproperty-audio-wavert-current-write-position.md)
 
-## <span id="Port-class_driver_updates_and_glitch_reporting"></span><span id="port-class_driver_updates_and_glitch_reporting"></span><span id="PORT-CLASS_DRIVER_UPDATES_AND_GLITCH_REPORTING"></span>Port-class driver updates and glitch reporting
+## Port-class driver updates and glitch reporting
 
+In addition to the support described in the preceding sections for hardware-offloaded audio processing, the Windows port-class driver provides "helper interfaces" to make it simple to develop a driver that can work with offloaded audio streams. And when such a driver detects glitches, there is a mechanism in place to allow the driver to report the glitch errors. The following topics provide more details about the helper interfaces and glitch reporting:
 
+[Portcls Helper Interfaces for Offloaded Audio Processing](helper-interfaces-for-offloaded-audio-processing.md)
 In addition to the support described in the preceding sections for hardware-offloaded audio processing, the Windows port-class driver has also includes  "helper interfaces" to make it simple to develop a driver that can work with offloaded audio streams. And when such a driver detects glitches, there is a mechanism in place to allow the driver to report the glitch errors. The following topics provide more details about the helper interfaces and glitch reporting:
 
-[Helper Interfaces for Offloaded Audio Processing](helper-interfaces-for-offloaded-audio-processing.md)
+- [Helper Interfaces for Offloaded Audio Processing](helper-interfaces-for-offloaded-audio-processing.md)
 
-[Glitch Reporting for Offloaded Audio](glitch-reporting-for-offloaded-audio.md)
+- [Glitch Reporting for Offloaded Audio](glitch-reporting-for-offloaded-audio.md)
 
- 
+## Related topics
 
+[Hardware Offloaded Audio Driver Implementation](driver-implementation-details.md)
+
+[Windows Audio Processing Objects](windows-audio-processing-objects.md)
