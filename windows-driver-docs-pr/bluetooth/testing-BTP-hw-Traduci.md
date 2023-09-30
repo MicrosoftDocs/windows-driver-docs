@@ -10,8 +10,9 @@ ms.date: 09/29/2023
 
 The Traduci makes use of specialized hardware to make Bluetooth testing easier. The Traduci board enables software on a host device (like a PC) to communicate with external devices over a sideband.
 
-For example, an LE pairing test requires a peripheral device to be powered on, have certain IO capabilities, and be advertising as connectable/discoverable before it can be paired to. The peripheral device has well defined commands that can make this happen, so the BTP software on the host sends these commands over USB to the Traduci which in turn routes it to the appropriate device. After successful completion of the commands, the BTP software would then proceed with the test by requesting that the host pair to the peripheral device which is now ready to accept the pairing.
-In the above scenario the Traduci makes several things simpler: It is able to provide and cut-off power with the correct voltage to the devices, it can route different commands to different devices, and it will mediate this communication through the correct protocols and baud rate.
+For example, an LE pairing test requires a peripheral device to be powered on, have certain IO capabilities, and be advertising as connectable/discoverable before it can be paired to. The peripheral device has well defined commands that can make this happen, so the BTP software on the host sends these commands over USB to the Traduci, which in turn routes it to the appropriate device. After successful completion of the commands, the BTP software would then proceed with the test by requesting that the host pair to the peripheral device, which is now ready to accept the pairing.
+
+In the preceding scenario, the Traduci makes several things simpler: It is able to provide and cut-off power with the correct voltage to the devices, it can route different commands to different devices, and it will mediate this communication through the correct protocols and baud rate.
 
 It is important to note that BTP tests do not have a tight dependency on the Traduci. If other external hardware is needed for a test, the BTP is designed to allow easy extensibility to support that scenario.
 
