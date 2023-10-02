@@ -69,7 +69,7 @@ Return value:
 
 | Element | Object type | Description |
 |--|--|--|
-| UsePpmReportedUcsiVersion | Integer (32-bit) | 0x00000000 (Default): UCSI OPM always follows UCSI specification 1.2 even if the `VERSION` structure as defined in *UCSI specification Table 3-1 Data Structures* has the value 2.0 or greater.<br><br>Any other value: UCSI OPM follows the UCSI specification based on the value in the `VERSION` structure as defined in *UCSI specification Table 3-1 Data Structures*. |
+| UsePpmReportedUcsiVersion | Integer (32-bit) | 0x00000000 (Default): If the `VERSION` structure, as defined in *UCSI specification Table 3-1 Data Structures*, has the value 2.0 or greater, UCSI OPM still follows UCSI specification 1.2. Otherwise, UCSI OPM follows the UCSI specification as per the value in the `VERSION` structure. |
 
 > [!NOTE]
 >  For UCM-UCSI ACPI devices, this is a new function in an existing _DSM method. Other functions of this _DSM method should have been implemented per the [Intel BIOS implementation of UCSI](https://www.intel.com/content/www/us/en/products/docs/io/universal-serial-bus/bios-implementation-of-ucsi.html) document. Function 0, which returns a bitmask of all the supported functions, should be updated accordingly, as well.
