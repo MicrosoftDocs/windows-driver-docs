@@ -1,14 +1,11 @@
 ---
 title: ACX version information
 description: This topic provides a summary of the ACX and KMDF version information 
-ms.date: 04/19/2023
+ms.date: 09/29/2023
 ms.localizationpriority: medium
 ---
 
 # ACX version overview
-
->[!IMPORTANT]
-> Some information relates to a prerelease product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 This topic discusses ACX and KMDF version information. For a general overview of ACX, see [ACX audio class extensions overview](acx-audio-class-extensions-overview.md).
 
