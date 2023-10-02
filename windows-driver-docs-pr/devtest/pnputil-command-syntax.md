@@ -85,7 +85,7 @@ Flags available starting in Windows 11, version 22H2:
 
 ### /disable-device
 
-Disables devices on the system. Command available starting in Windows 10 version 2004.
+Disables devices on the system. Command available starting in Windows 10, version 2004.
 
 ```syntax
 PNPUTIL /disable-device [<instance ID> | /deviceid <device ID>]
@@ -98,11 +98,11 @@ Flags:
 
 - `/reboot` - reboot system if needed to complete the operation
 
-Flags available starting in Windows 11 version 21H2:
+Flags available starting in Windows 11, version 21H2:
 
 - `/deviceid <device ID>` - disable all devices with matching device ID
 
-Flags available starting in Windows 11 version 22H2:
+Flags available starting in Windows 11, version 22H2:
 
 - `/class <name | GUID>` - filter by device class name or GUID
 - `/bus <name | GUID>` - filter by bus enumerator name or bus type GUID
@@ -110,7 +110,7 @@ Flags available starting in Windows 11 version 22H2:
 
 ### /enable-device
 
-Enables devices on the system. Command available starting in Windows 10 version 2004.
+Enables devices on the system. Command available starting in Windows 10, version 2004.
 
 ```syntax
 PNPUTIL /enable-device [<instance ID> | /deviceid <device ID>]
@@ -122,18 +122,18 @@ Flags:
 
 - `/reboot` - reboot system if needed to complete the operation
 
-Flags available starting in Windows 11 version 21H2:
+Flags available starting in Windows 11, version 21H2:
 
 - `/deviceid <device ID>` - enable all devices with matching device ID
 
-Flags available starting in Windows 11 version 22H2:
+Flags available starting in Windows 11, version 22H2:
 
 - `/class <name | GUID>` - filter by device class name or GUID
 - `/bus <name | GUID>` - filter by bus enumerator name or bus type GUID
 
 ### /restart-device
 
-Restarts devices on the system. Command available starting in Windows 10 version 2004.
+Restarts devices on the system. Command available starting in Windows 10, version 2004.
 
 ```syntax
 PNPUTIL /restart-device [<instance ID> | /deviceid <device ID>]
@@ -145,18 +145,18 @@ Flags:
 
 - `/reboot` - reboot system if needed to complete the operation
 
-Flags available starting in Windows 11 version 21H2:
+Flags available starting in Windows 11, version 21H2:
 
 - `/deviceid <device ID>` - restart all devices with matching device ID
 
-Flags available starting in Windows 11 version 22H2:
+Flags available starting in Windows 11, version 22H2:
 
 - `/class <name | GUID>` - filter by device class name or GUID
 - `/bus <name | GUID>` - filter by bus enumerator name or bus type GUID.
 
 ### /remove-device
 
-Attempts to remove a device from the system. Command available starting in Windows 10 version 2004.
+Attempts to remove a device from the system. Command available starting in Windows 10, version 2004.
 
 ```syntax
 PNPUTIL /remove-device [<instance ID> | /deviceid <device ID>]
@@ -169,11 +169,11 @@ Flags:
 - `/subtree` - remove entire device subtree, including any child devices
 - `/reboot` - reboot system if needed to complete the operation
 
-Flags available starting in Windows 11 version 21H2:
+Flags available starting in Windows 11, version 21H2:
 
 - `/deviceid <device ID>` - remove all devices with matching device ID
 
-Flags available starting in Windows 11 version 22H2:
+Flags available starting in Windows 11, version 22H2:
 
 - `/class <name | GUID>` - filter by device class name or GUID
 - `/bus <name | GUID>` - filter by bus enumerator name or bus type GUID
@@ -181,7 +181,7 @@ Flags available starting in Windows 11 version 22H2:
 
 ### /scan-devices
 
-Scans the system for any device hardware changes. Command available starting in Windows 10 version 2004.
+Scans the system for any device hardware changes. Command available starting in Windows 10, version 2004.
 
 ```syntax
 /scan-devices [/instanceid <instance ID>] [/async]
@@ -194,7 +194,7 @@ Flags:
 
 ### /enum-devices
 
-Enumerate all devices on the system. Command available starting in Windows 10 version 1903.
+Enumerate all devices on the system. Command available starting in Windows 10, version 1903.
 
 ```syntax
 PNPUTIL /enum-devices [/connected | /disconnected]
@@ -215,7 +215,7 @@ Flags:
 - `/relations` - display parent and child device relations
 - `/drivers` - display matching and installed drivers
 
-Flags available starting in Windows 11 version 21H2:
+Flags available starting in Windows 11, version 21H2:
 
 - `/bus [<name | GUID>]` - display bus enumerator name and bus type GUID or filter by bus enumerator name or bus type GUID
 - `/deviceids` - display hardware and compatible IDs
@@ -224,14 +224,14 @@ Flags available starting in Windows 11 version 21H2:
 - `/interfaces` - display device interfaces
 - `/properties` - display all device properties
 
-Flags available starting in Windows 11 version 22H2:
+Flags available starting in Windows 11, version 22H2:
 
 - `/deviceid <device ID>` - filter by device hardware and compatible ID
 - `/resources` - display device resources
 
 ### /enum-interfaces
 
-Enumerates all device interfaces on the system. Command available starting in Windows 10 version 1903.
+Enumerates all device interfaces on the system. Command available starting in Windows 10, version 1903.
 
 ```syntax
 PNPUTIL /enum-interfaces [/enabled | /disabled] [/class <GUID>] [/properties]
