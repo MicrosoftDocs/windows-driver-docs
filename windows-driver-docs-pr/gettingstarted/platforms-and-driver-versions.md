@@ -1,7 +1,7 @@
 ---
 title: Writing drivers for different versions of Windows
 description: Writing drivers for different versions of Windows
-ms.date: 04/12/2022
+ms.date: 09/29/2023
 ---
 
 # Writing drivers for different versions of Windows
@@ -83,6 +83,9 @@ BOOLEAN RtlIsNtDdiVersionAvailable(IN ULONG Version)
 ```
 
 In this prototype, *Version* is a value that indicates the required version of the Windows DDI. This value must be one of the DDI version constants, defined in sdkddkver.h, such as NTDDI_WIN8 or NTDDI_WIN7.
+
+> [!CAUTION]
+> **RtlIsNtDdiVersionAvailable** can only be used to determine if a particular major and minor version of Windows is available, such as those represented by NTDDI_WIN8 or NTDDI_WIN10. It cannot be used to determine if sub-versions of Windows within a particular major and minor version are available, such as NTDDI_WIN10_19H1.
 
 [**RtlIsNtDdiVersionAvailable**](/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlisntddiversionavailable) returns TRUE when the caller is running on a version of Windows that is the same as, or later than, the one that is specified by *Version*.
 

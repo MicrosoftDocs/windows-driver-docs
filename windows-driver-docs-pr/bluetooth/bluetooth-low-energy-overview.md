@@ -1,7 +1,7 @@
 ---
 title: Bluetooth Low Energy (LE) overview
 description: This article provides an overview of Bluetooth Low Energy (LE) in Windows.
-ms.date: 03/02/2023
+ms.date: 09/29/2023
 ---
 
 # Bluetooth Low Energy (LE) overview
@@ -12,11 +12,11 @@ Each profile defines the use of one or more services to create a use case or sce
 
 The following diagram illustrates the way objects are structured inside a typical GATT service.
 
-:::image type="content" source="images/bthleservicedeclaration.png" alt-text="Diagram of Bluetooth LE GATT service declarations.":::
+:::image type="content" source="images/bthleservicedeclaration.png" alt-text="Diagram showing the structure of objects inside a typical Bluetooth LE GATT service.":::
 
 When a Bluetooth LE device is paired with a Windows machine, the device becomes part of the system. Windows provides device objects to represent both the device and the primary services reported by the device.
 
-:::image type="content" source="images/bthlewin8supt.png" alt-text="Diagram of the device object structure of the Windows Bluetooth LE implementation.":::
+:::image type="content" source="images/bthlewin8supt.png" alt-text="Diagram illustrating the device object structure in Windows Bluetooth LE implementation.":::
 
 Each device and its primary services are represented as device objects in Windows and these device objects can be queried and managed using the [device installation functions](../install/using-device-installation-functions.md) such as **[SetupDiEnumDeviceInfo](/windows/win32/api/setupapi/nf-setupapi-setupdienumdeviceinfo)**, and **[SetupDiGetDeviceProperty](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)**.
 

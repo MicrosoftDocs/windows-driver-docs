@@ -1,12 +1,15 @@
 ---
 title: File share (SMB) symbol server
 description: Learn how to run an SMB symbol server by creating a file share and assigning permissions to access the file share.
-ms.date: 12/08/2022
+ms.date: 09/29/2023
 ---
 
 # File share (SMB) symbol server
 
 To run an SMB symbol server, create a file share and assign permissions to give users or groups access to the file share.
+
+> [!NOTE]
+> In the current versions of Windows, a specific version of SMB may need to be configured or enabled. For more information, see [How to detect, enable and disable SMBv1, SMBv2, and SMBv3 in Windows](/windows-server/storage/file-server/troubleshoot/detect-enable-and-disable-smbv1-v2-v3).
 
 ## Create an SMB file share symbol store
 
