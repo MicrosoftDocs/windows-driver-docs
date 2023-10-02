@@ -1,7 +1,7 @@
 ---
 title: Microsoft Bluetooth Test Platform - Bluefruit Feather
 description: Bluetooth Test Platform (BTP) supported hardware (Bluefruit Feather).
-ms.date: 06/09/2021
+ms.date: 09/29/2023
 ---
 
 # Bluefruit Feather (nRF52840)
@@ -14,7 +14,7 @@ The nRF52840 is a Low Energy (LE) radio from Nordic Semiconductor capable of beh
 | --- | --- | --- |
 | Bluefruit Feather | bluefruit52 | RunPairingTests.bat bluefruit52 |
 
-:::image type="content" source="images/BluefruitFeather.png" alt-text="Photo of the Bluefruit Feather device.":::
+:::image type="content" source="images/BluefruitFeather.png" alt-text="Photo of the Bluefruit Feather nRF52840 device.":::
 
 ## Supported tests
 

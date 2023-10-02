@@ -1,7 +1,7 @@
 ---
 title: Microsoft-defined Bluetooth HCI commands and events
 description: The Bluetooth Host-Controller Interface (HCI) specifies all interactions between a host and a Bluetooth radio controller.
-ms.date: 04/17/2023
+ms.date: 09/29/2023
 ---
 
 # Microsoft-defined Bluetooth HCI extensions
@@ -137,7 +137,7 @@ The controller shall refuse the command if another HCI_VS_MSFT_Monitor_Rssi comm
 
 This state diagram shows the transition states on the controller when monitoring RSSI for a connection.
 
-:::image type="content" source="images/HCI_VS_MSFT_Monitor_Rssi_State_Diagram.png" alt-text="State diagram of HCI_VS_MSFT_Monitor_Rssi":::
+:::image type="content" source="images/HCI_VS_MSFT_Monitor_Rssi_State_Diagram.png" alt-text="State diagram showing transition states on the controller when monitoring RSSI for a connection.":::
 
 The controller shall generate an [HCI_VS_MSFT_Rssi_Event][ref_HCI_VS_MSFT_Rssi_Event] when the received RSSI is greater than or equal to the specified *RSSI_threshold_high*. After this event has been generated, the controller shall not generate a new [HCI_VS_MSFT_Rssi_Event][ref_HCI_VS_MSFT_Rssi_Event] to specify that the *RSSI_threshold_high* has been exceeded until it generates an [HCI_VS_MSFT_Rssi_Event][ref_HCI_VS_MSFT_Rssi_Event] that specifies the RSSI has fallen below *RSSI_threshold_low*.
 
@@ -281,7 +281,7 @@ If the controller doesn't support RSSI monitoring for LE Advertisements, it shal
 
 This state diagram shows the transition states on the controller when monitoring RSSI for an advertisement.
 
-:::image type="content" source="images/HCI_VS_MSFT_LE_Monitor_Advertisement_State_Diagram.svg" alt-text="State diagram for HCI_VS_MSFT_LE_Monitor_Advertisement.":::
+:::image type="content" source="images/HCI_VS_MSFT_LE_Monitor_Advertisement_State_Diagram.svg" alt-text="State diagram showing transition states for HCI_VS_MSFT_LE_Monitor_Advertisement.":::
 
 The controller shall begin monitoring an advertisement only when the received RSSI is greater than or equal to *RSSI_threshold_high* for a particular device and the *Monitor_options* match (see below).  The controller shall generate an [HCI_VS_MSFT_LE_Monitor_Device_Event][ref_HCI_VS_MSFT_LE_Monitor_Device_Event] with *Monitor_state* set to 1 and *Monitor_handle* set to the handle for this *Condition*, to notify the host that the controller is monitoring this particular device for *Condition*. Additionally, the Controller shall propagate the first advertisement report of a monitored advertisement to the Host only when the *Advertisement_report_filter_options* match (see below).
 
@@ -360,7 +360,7 @@ The *Condition_type* parameter specifies whether the *Condition* parameter speci
 
 If the *Condition_type* parameter specifies a pattern, the *Condition* contains two sections that contain the number of patterns present within the *Condition*, and the pattern data.
 
-:::image type="content" source="images/HCI_VS_MSFT_LE_Monitor_Advertisement_Conditions.png" alt-text="Pattern condition data layout":::
+:::image type="content" source="images/HCI_VS_MSFT_LE_Monitor_Advertisement_Conditions.png" alt-text="Diagram illustrating the pattern condition data layout for HCI_VS_MSFT_LE_Monitor_Advertisement.":::
 
 *Number of Patterns* specifies the number of patterns that need to be matched.
 
@@ -997,7 +997,7 @@ This example illustrates RSSI advertisement monitoring. The RSSI values for rece
 | *RSSI_threshold_low_time_interval* | 3 seconds |
 | *RSSI_sampling_period* | 2 seconds |
 
-:::image type="content" source="images/HCI_Example_Advertisement_Monitoring.png" alt-text="Advertisement monitoring graph":::
+:::image type="content" source="images/HCI_Example_Advertisement_Monitoring.png" alt-text="Graph showing advertisement monitoring with RSSI values over time.":::
 
 The advertisement RSSI is greater than *RSSI_threshold_high* at time 3. The periodic timer for sampling starts at time 3. Every 2 seconds, the periodic timer expires and the average RSSI value of the received advertisement is propagated to the stack.
 
@@ -1053,7 +1053,7 @@ This flowchart provides an example controller implementation of advertisement fi
 
 A controller can implement this logic differently, as long as the host is notified of the advertisement or [HCI_VS_MSFT_LE_Monitor_Device_Event][ref_HCI_VS_MSFT_LE_Monitor_Device_Event] as specified by the flowchart.
 
-:::image type="content" source="images/HCI_Filtering_Flowchart.png" alt-text="Microsoft HCI extension filtering flowchart":::
+:::image type="content" source="images/HCI_Filtering_Flowchart.png" alt-text="Flowchart that shows Microsoft HCI extension filtering process.":::
 
 ### Sequence diagram: Propagate scan response associated with advertisement
 
@@ -1063,4 +1063,4 @@ This sequence diagram shows a propagate scan response that is associated with an
 This diagram only shows the expected sequence of events between controller and host, and doesn't show events between the controller and a particular device.
 Assume that there's an advertisement *A* that satisfies an advertisement filter, and an advertisement *B* that doesn't satisfy the advertisement filter.
 
-:::image type="content" source="images/HCI_Propagate_Scan_Sequence.png" alt-text="HCI propagate scan sequence diagram":::
+:::image type="content" source="images/HCI_Propagate_Scan_Sequence.png" alt-text="Sequence diagram that shows HCI propagate scan response associated with advertisement.":::

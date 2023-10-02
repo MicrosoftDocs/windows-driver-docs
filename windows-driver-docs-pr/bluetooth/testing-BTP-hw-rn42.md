@@ -1,7 +1,7 @@
 ---
 title: Microsoft Bluetooth Test Platform - RN42
 description: Bluetooth Test Platform (BTP) supported hardware (RN42).
-ms.date: 06/09/2021
+ms.date: 09/29/2023
 ---
 
 # RN42 (PMOD BT2)
@@ -14,7 +14,7 @@ The RN42 is a Basic Rate (BR) radio from Roving Networks capable of behaving as 
 | --- | --- | --- |
 | RN42 | rn42 | RunPairingTests.bat rn42 |
 
-:::image type="content" source="images/RN42.png" alt-text="Photo of the RN42 device.":::
+:::image type="content" source="images/RN42.png" alt-text="Close-up view of the RN42 Bluetooth device.":::
 
 ## Supported tests
 
@@ -30,7 +30,7 @@ The Model 2431 RN42 Radio Sled for BTP can be purchased via [MCCI](https://store
 
 ### Bluetooth Test Platform Traduci Board and Diligent sled
 
-:::image type="content" source="images/Traduci_and_DigilentRN42.jpg" alt-text="Photo of the RN42 device on a Digilent sled.":::
+:::image type="content" source="images/Traduci_and_DigilentRN42.jpg" alt-text="RN42 Bluetooth device mounted on a Digilent sled.":::
 
 > [!NOTE]
 > The RN42 device can **only** be plugged into a Bluetooth Test Platform Traduci board port labeled 'JB'.
