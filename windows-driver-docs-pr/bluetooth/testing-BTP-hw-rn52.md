@@ -1,7 +1,7 @@
 ---
 title: Microsoft Bluetooth Test Platform - RN52 - Audio-capable peripheral radios
 description: Bluetooth Test Platform (BTP) supported hardware (RN52).
-ms.date: 06/09/2021
+ms.date: 09/29/2023
 ---
 
 # RN52 device
@@ -14,7 +14,7 @@ The RN52 is a Bluetooth Basic Rate (BR) radio from Roving Networks capable of be
 | --- | --- | --- |
 | RN52 | rn52 | RunPairingTests.bat rn52 |
 
-:::image type="content" source="images/RN52.png" alt-text="Photo of the RN52 Device.":::
+:::image type="content" source="images/RN52.png" alt-text="Close-up photo of the RN52 Bluetooth audio device.":::
 
 ## Supported tests
 
@@ -29,7 +29,7 @@ The PMOD + Audio header RN52 device can be purchased via [MCCI](https://store.mc
 
 ### RN52 Device on BTP-compatible sled
 
-:::image type="content" source="images/Traduci_and_RN52.jpg" alt-text="Photo of the RN52 device on a sled.":::
+:::image type="content" source="images/Traduci_and_RN52.jpg" alt-text="RN52 device mounted on a BTP-compatible sled.":::
 
 > [!NOTE]
 > The RN52 device can **only** be plugged into the Traduci board 12-pin port labeled 'JA'.
