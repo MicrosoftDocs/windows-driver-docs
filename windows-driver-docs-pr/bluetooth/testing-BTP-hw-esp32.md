@@ -1,15 +1,15 @@
 ---
 title: Microsoft Bluetooth Test Platform - Model 2433 ESP32
 description: Bluetooth Test Platform (BTP) supported hardware (ESP32).
-ms.date: 09/29/2023
+ms.date: 10/02/2023
 ---
 
-# Model 2433 ESP32
+# Microsoft Bluetooth Test Platform - Model 2433 ESP32
 
 ## Overview
 
-The ESP32 is a microcontroller with integrated Wi-Fi and dual-mode Bluetooth designed for use in IoT devices. The Model 2433 ESP32 is a custom ESP32 board with a 12-pin adapter fit for the Traduci that exercises Wi-Fi connections for BTP. More information can be found via the ESP32 page from [**Espressif**](https://www.espressif.com/en/products/socs/esp32).
-The Model 2433 ESP32 allows the ESP32 to be utilized as a Traduci sled device. More information can be found via the Model 2433 ESP32 page from [**MCCI**](https://store.mcci.com/products/esp32-sled) or [**Digilent**](https://digilent.com/shop/pmod-esp32-wireless-communication-module).
+The ESP32 is a microcontroller with integrated Wi-Fi and dual-mode Bluetooth designed for use in IoT devices. The Model 2433 ESP32 is a custom ESP32 board with a 12-pin adapter fit for the Traduci that exercises Wi-Fi connections for BTP. More information can be found via the ESP32 page from **[Espressif](https://www.espressif.com/en/products/socs/esp32).** 
+The Model 2433 ESP32 allows the ESP32 to be utilized as a Traduci sled device. More information can be found via the Model 2433 ESP32 page from **[MCCI](https://store.mcci.com/products/esp32-sled)** or **[Digilent](https://digilent.com/shop/pmod-esp32-wireless-communication-module).** 
 
 | Device Name | Parameter | Usage Example |
 | --- | --- | --- |
@@ -17,7 +17,7 @@ The Model 2433 ESP32 allows the ESP32 to be utilized as a Traduci sled device. M
 
 :::image type="content" source="images/ESP32.png" alt-text="Photo of the Model 2433 ESP32 microcontroller board.":::
 
-## Suported Tests
+## Supported Tests
 
 - [Wi-Fi coexistence tests](testing-BTP-tests-wifi.md) (as a Wi-Fi Access Point device)
 
@@ -42,12 +42,12 @@ If the ESP32 has already been updated, skip to [Updating ESP32 Firmware via Trad
 
 ## Updating ESP32 firmware manually
 
-This is required for first time setup of an ESP32 radio for use with the BTP Wi-Fi Coexistence tests. After first time setup, firmware updates to the device sled can be done via [Traduci.cmd](testing-BTP-hw-esp32.md#updating-esp32-firmware-via-traducicmd).  
+Updating ESP32 firmware manually is required for first time setup of an ESP32 radio for use with the BTP Wi-Fi Coexistence tests. After first time setup, firmware updates to the device sled can be done via [Traduci.cmd](testing-BTP-hw-esp32.md#updating-esp32-firmware-via-traducicmd).  
 
-1.  Acquire and setup the Arduino command line interface.
+1.  Acquire and set up the Arduino command line interface.
     1. Download the latest version of the [arduino-cli](https://arduino.github.io/arduino-cli/latest/installation/#download).
     1. If not done already, add the arduino-cli to your [PATH variable](/windows-server/administration/windows-commands/path).
-    1. To aquire the ESP32 board packages, run the following from a cmd prompt:
+    1. To acquire the ESP32 board packages, run these commands from a cmd prompt:
 
         ```console
         arduino-cli config init
@@ -56,7 +56,7 @@ This is required for first time setup of an ESP32 radio for use with the BTP Wi-
         arduino-cli core install esp32:esp32 --additional-urls https://dl.espressif.com/dl/package_esp32_index.json
         ```
 
-1. Connect the hardware using a USB serial to UART board (like the one shown below) & jumper wires
+1. Connect the hardware using a USB serial to UART board and jumper wires
 
     :::image type="content" source="images/ESP32_and_UART.png" alt-text="Photo showing where to connect a USB to UART board to the ESP32 for firmware update.":::
 
@@ -70,9 +70,9 @@ This is required for first time setup of an ESP32 radio for use with the BTP Wi-
         :::image type="content" source="images/Traduci_and_ESP32.jpg" alt-text="ESP32 device powered on by Traduci using TraduciCMD.exe command.":::
     1. Run `arduino-cli board list` to identify the existing COM ports prior to connecting the USB serial to UART board.
     1. Connect the USB serial to UART board to the PC you installed the Arduino CLI to.
-    1. Run `arduino-cli board list` to identify the new COM port associated with the UART to USB serial board. It will be the COM port listed that was not present in the previously queried board list.
+    1. Run `arduino-cli board list` to identify the new COM port associated with the UART to USB serial board. It's the COM port listed that wasn't present in the previously queried board list.
 
-1. Upload the firmware to the ESP32 by running the following from a cmd prompt, and replacing the X in COMX to the COM port number identified in the previous step:
+1. Upload the firmware to the ESP32 by running the following commands from a cmd prompt. Replace the 'X' in "COMX" to the COM port number identified in the previous step.
 
     ```console
     arduino-cli upload -p COMX --fqbn esp32:esp32:esp32 --input-file C:\BTP\<version>\DeviceFirmware\WiFi-ESP32.ino.bin
@@ -92,12 +92,12 @@ TraduciCmd.exe -updateesp32firmware
 
 Wait for "ESP32 firmware is up to date" to show on the terminal and indicate the process is done.
 
-This flashing process does not require the use of a UART to USB serial board. This will not work if the ESP32 has not previously been provisioned with BTP compatible firmware via the [manual instructions](testing-BTP-hw-esp32.md#updating-esp32-firmware-manually)
+The flashing process doesn't require the use of a UART to USB serial board. The process fails if the ESP32 hasn't previously been provisioned with BTP compatible firmware via the [manual instructions](testing-BTP-hw-esp32.md#updating-esp32-firmware-manually)
 
 ## Features
 
 - Wi-Fi, Bluetooth LE, and Bluetooth communication available
-- 20.5 dBm output power at the antenna
+- 20.5-dBm output power at the antenna
 - Custom firmware to enable updates delivered through the Traduci
 - 12-pin Pmod connector with SPI and UART interfaces
 - Supports creation of Wi-Fi soft access points
