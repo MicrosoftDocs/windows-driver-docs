@@ -2,7 +2,7 @@
 title: Bug Check 0x1 APC_INDEX_MISMATCH
 description: Learn about bug check 0x00000001, which indicates a mismatch in the APC state index.
 keywords: ["Bug check 0x1 APC_INDEX_MISMATCH", "APC_INDEX_MISMATCH"]
-ms.date: 12/15/2022
+ms.date: 10/02/2023
 topic_type:
 - apiref
 ms.topic: reference
@@ -17,7 +17,7 @@ api_type:
 The APC_INDEX_MISMATCH bug check has a value of 0x00000001. The bug check indicates a mismatch in the asynchronous procedure calls (APC) state index.
 
 > [!IMPORTANT]
-> This article is for programmers. If you're a Microsoft customer and your computer displays a blue screen error code, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> This article is for programmers. If you're a Microsoft customer and your computer displays a blue screen error code, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 ## APC_INDEX_MISMATCH parameters
 
