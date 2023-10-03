@@ -1,7 +1,7 @@
 ---
 title: Hardware-Offloaded Audio Processing
 description: Hardware-offloaded audio processing allows the main audio processing tasks to be performed outside the computer's main CPU.
-ms.date: 09/28/2023
+ms.date: 10/02/2023
 ---
 
 # Hardware-Offloaded Audio Processing
@@ -14,13 +14,13 @@ When you implement a driver for offloaded audio, you develop a driver that is ab
 
 The following topics in this section discuss driver development, the application impact and other issues that you should be aware of when you develop an audio driver for an audio adapter that implements a hardware audio engine to handle offloaded audio streams.
 
-[Hardware Offloaded Audio Driver Implementation](driver-implementation-details.md).
+[Hardware Offloaded Audio Driver Implementation](driver-implementation-details.md)
 
 [Helper Interfaces for Offloaded Audio Processing](helper-interfaces-for-offloaded-audio-processing.md)
 
 [Glitch Reporting for Offloaded Audio](glitch-reporting-for-offloaded-audio.md)
 
-For information on offloaded APOs, see [Hardware Offloaded APO Effects](implementing-hardware-offloaded-apo-effects.md).
+For information on offloaded APOs, see [Hardware Offloaded APO Effects](implementing-hardware-offloaded-apo-effects.md)
 
 ## Hardware-Offloaded Audio Processing Architectural Overview
 
@@ -66,7 +66,6 @@ As shown in the preceding figure, a KS-filter topology represents the data paths
 
 - A number of Offloaded-audio pins. Although the figure shows only one pin of this type, an IHV is free to implement any number (n) of pins.
 
-For more information about the pins in this type of KS-filter topology, see [Architectural Overview](architectural-overview.md).
 The actual service in the user mode audio system that "leads" to the discovery of the audio adapter and its driver, is the AudioEndpointBuilder. The AudioEndpointBuilder service monitors the **KSCATEGORY\_AUDIO** class for device interface arrivals and removals. When an audio device driver registers a new instance of the **KSCATEGORY\_AUDIO** device interface class, a device interface arrival notification is fired off. The AudioEndpointBuilder service detects the device interface arrival notification and uses an algorithm to examine the topology of the audio devices in the system so that it can take appropriate action.
 
 When you develop your audio driver to support an adapter that is capable of processing offloaded-audio, your driver must use the [**KSNODETYPE\_AUDIO\_ENGINE**](./ksnodetype-audio-engine.md) audio endpoint to expose the capabilities of the hardware audio engine. For more information about the audio endpoint discovery process, see [Audio Endpoint Builder Algorithm](audio-endpoint-builder-algorithm.md).
