@@ -288,13 +288,13 @@
       items: 
       - name: "Threading and Synchronization Model of Display Miniport Driver"
         href: threading-and-synchronization-model-of-display-miniport-driver.md
-      - name: "Threading and Synchronization Third Level"
+      - name: "Threading and Synchronization Level Three"
         href: threading-and-synchronization-third-level.md
-      - name: "Threading and Synchronization Second Level"
+      - name: "Threading and Synchronization Level Two"
         href: threading-and-synchronization-second-level.md
-      - name: "Threading and Synchronization First Level"
+      - name: "Threading and Synchronization Level One"
         href: threading-and-synchronization-first-level.md
-      - name: "Threading and Synchronization Zero Level"
+      - name: "Threading and Synchronization Level Zero"
         href: threading-and-synchronization-zero-level.md
       - name: "Thread Synchronization and TDR"
         href: thread-synchronization-and-tdr.md
