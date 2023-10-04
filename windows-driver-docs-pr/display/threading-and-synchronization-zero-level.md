@@ -2,8 +2,8 @@
 title: Threading and Synchronization Level Zero
 description: Threading and Synchronization Level Zero
 keywords:
-* threading WDK display , zero level
-* synchronization WDK display , zero level
+- threading WDK display , zero level
+- synchronization WDK display , zero level
 ms.date: 10/03/2023
 ---
 

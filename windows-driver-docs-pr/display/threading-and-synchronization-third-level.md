@@ -2,8 +2,8 @@
 title: Threading and Synchronization Level Three
 description: Threading and Synchronization Level Three
 keywords:
-* threading WDK display , Level Three
-* synchronization WDK display , Level Three
+- threading WDK display , Level Three
+- synchronization WDK display , Level Three
 ms.date: 10/03/2023
 ---
 
