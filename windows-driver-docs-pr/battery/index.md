@@ -1,17 +1,21 @@
 ---
-title: Battery Devices Design Guide
-description: Battery Devices Design Guide
+title: Battery devices design guide
+description: Learn about battery device drivers, including writing battery miniclass drivers and UPS minidrivers.
 ms.assetid: d8eecfcb-6c06-40d1-8c78-b8c88eb890f2
-ms.date: 04/20/2017
+ms.date: 10/04/2023
 ms.topic: article
 ---
 
-# Battery Devices Design Guide
+# Battery devices design guide
 
-A battery typically has a pair of drivers: the generic battery class driver that Microsoft provides, and a miniclass driver written specifically for that individual type of battery.
+A battery typically has a pair of drivers: the generic battery class driver provided by Microsoft, and a miniclass driver written specifically for that individual type of battery. The class driver defines the overall functionality of the batteries in the system and interacts with the power manager.
 
-The class driver defines the overall functionality of the batteries in the system and interacts with the power manager.
+This design guide focuses on:
 
-This design guide focuses on [Writing Battery Miniclass Drivers](writing-battery-miniclass-drivers.md).
+## Writing battery miniclass drivers
 
-In addition this section includes information on [Writing UPS Minidrivers](writing-ups-minidrivers.md) that were used with older versions of Windows.
+Learn how to write battery miniclass drivers by referring to the [Writing Battery Miniclass Drivers](writing-battery-miniclass-drivers.md) guide.
+
+## Writing UPS minidrivers
+
+Find information on writing UPS minidrivers, which were used with older versions of Windows, in the [Writing UPS Minidrivers](writing-ups-minidrivers.md) guide.
