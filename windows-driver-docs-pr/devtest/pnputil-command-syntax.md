@@ -10,7 +10,7 @@ api_name:
 - PnPUtil
 api_type:
 - NA
-ms.date: 11/14/2022
+ms.date: 10/03/2023
 ---
 
 # PnPUtil Command Syntax
@@ -44,6 +44,10 @@ Flags available starting in Windows 10, version 1607:
 - `/subdirs` - traverse sub directories for driver packages
 - `/install` - install/update drivers on any matching devices
 - `/reboot` - reboot system if needed to complete the operation
+
+> [!NOTE]
+> If the driver is not the highest ranked driver on the system, PnPUtil will not force it onto the device.
+> To check matching drivers and their rank, run the following from an elevated command prompt: `pnputil /enum-devices /instanceid <devgen device instance ID ROOT\DEVGEN{...}> /drivers`.
 
 ### /delete-driver
 
