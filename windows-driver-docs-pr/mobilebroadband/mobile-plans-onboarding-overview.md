@@ -3,7 +3,7 @@ title: Mobile Plans onboarding
 description: An overview of the steps required to onboard to Mobile Plans
 keywords:
 - Windows Mobile Plans mobile operator onboarding
-ms.date: 07/31/2019
+ms.date: 10/06/2023
 ms.topic: article
 ---
 
@@ -24,7 +24,7 @@ Mobile Plans onboarding is a project composed of four phases:
 
 A typical project schedule is divided into the following phases, with milestones defining the exit/entrance criteria for each phase. The actual length of the devlopment phase will depend on multiple factors including the scope of the project.
 
-![Mobile Plans project schedule.](images/mobile_plans_project_schedule.png)
+:::image type="content" source="images/mobile_plans_project_schedule.png" alt-text="Gantt chart showing the phases and milestones of a typical Mobile Plans project schedule.":::
 
 ## Project plan
 

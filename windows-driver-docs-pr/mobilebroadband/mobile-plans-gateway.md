@@ -3,7 +3,7 @@ title: Mobile Plans gateway page
 description: Mobile Plans gateway page
 keywords:
 - Windows Mobile Plans mobile operators
-ms.date: 07/31/2019
+ms.date: 10/06/2023
 ms.topic: article
 ---
 
@@ -23,7 +23,7 @@ The Gateway page can be customized by the mobile operator by specifying the cont
 
 The enhanced Gateway page is specified using a template with predefined elements. The highlighted elements are definable by the mobile operator.
 
-![Enhanced gateway page template.](images/enhanced_gateway_page_template.png)
+:::image type="content" source="images/enhanced_gateway_page_template.png" alt-text="Screenshot of enhanced gateway page template with customizable elements.":::
 
 ### Enhanced Gateway page templates
 
@@ -66,11 +66,11 @@ The following table describes each JSON element in the previous example.
 |   | buttonFontColor | Color for the text on the "Continue" button. This field is a hexadecimal string in the format of `0xRRGGBBAA`. If undefined, white is used as the default. | 0xFFFFFFFF |
 |   | buttonText | The localized text for the "Continue" button. | Get started |
 |   | hyperlinkFontColor | Color of the hyperlinks. This field is a hexadecimal string in the format of `0xRRGGBBAA`. If undefined, the user-selected system highlight color is used as the default. | 0x00B0F0FF |
-|   | images | Images to use for the template. Different sizes are supported. If multiple sizes are included, the Mobile Plans app uses the optimum size for the screen resolution. Maximum image size is 1200 x 600 pixels, file format *png*.| https://picsum.photos/id/1/740/480 |
+|   | images | Images to use for the template. Different sizes are supported. If multiple sizes are included, the Mobile Plans app uses the optimum size for the screen resolution. Maximum image size is 1200 x 600 pixels, file format *png*.| <https://picsum.photos/id/1/740/480> |
 
 ### Sample enhanced Gateway page
 
-![Mobile operator gateway page.](images/mobile_operator_gateway_page.png)
+:::image type="content" source="images/mobile_operator_gateway_page.png" alt-text="Screenshot of a sample mobile operator gateway page with branding and links.":::
 
 ### Using multiple Gateway page templates
 
@@ -83,7 +83,7 @@ Since the request includes identifiers for the profile and device, the mobile op
 
 The Get Offers request returns the template ID to be shown to the user.
 
-![Mobile Plans Get Offers Callflow.](images/mobile_plans_get_offers_callflow.png)
+:::image type="content" source="images/mobile_plans_get_offers_callflow.png" alt-text="Diagram that shows the Mobile Plans Get Offers Callflow process.":::
 
 ### GetOffers API specification
 
@@ -96,6 +96,7 @@ GET https://{offerUri}sims/{simmri}/offers?limit=1&imei=1234
 - *{offerUri}* is the OfferUri value onboarded as part of the mobile operator's service configuration.
 
 The endpoint has two query parameters:
+
 - *limit*, which is required and specifies the number of offers to return.
 - *imei*, which is optional and specifies the client’s IMEI.
 
@@ -125,4 +126,4 @@ The standard Gateway page is shown to the end when there is no enhanced Gateway 
 
 The standard Gateway page uses a basic template which cannot be customized by the mobile operator.
 
-![Standard gateway page.](images/standard_gateway_page.png)
+:::image type="content" source="images/standard_gateway_page.png" alt-text="Screenshot of a standard gateway page with basic template and no customization.":::
