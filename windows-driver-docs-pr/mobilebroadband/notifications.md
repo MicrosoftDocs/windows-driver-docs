@@ -1,7 +1,7 @@
 ---
 title: Notifications
 description: Notifications
-ms.date: 04/20/2017
+ms.date: 10/06/2023
 ---
 
 # Notifications
@@ -11,7 +11,7 @@ You can keep your users informed through service notifications such as plan acti
 
 Your mobile broadband app should communicate time-critical events to the user through toast notifications whether the user is in another app, on the **Start** screen, or on the desktop.
 
-![toast notification.](images/mb-fig3-toast.png)
+:::image type="content" source="images/mb-fig3-toast.png" alt-text="Screenshot of a toast notification on a Windows device.":::
 
 Your app can receive background events to process SMS or USSD notifications. For info about background notifications that are associated with mobile broadband apps, see these API pages under the [Windows.ApplicationModel.Background](/uwp/api/windows.applicationmodel.background) namespace:
 

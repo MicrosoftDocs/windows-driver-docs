@@ -1,7 +1,7 @@
 ---
 title: Delivering experiences for MVNOs
 description: Delivering experiences for MVNOs
-ms.date: 04/20/2017
+ms.date: 10/05/2023
 ---
 
 # Delivering experiences for MVNOs
@@ -14,9 +14,9 @@ To successfully match service metadata, Windows reads information from the SIM c
 
 Use the link from the following list that is appropriate for your network:
 
--   [Matching on GSM networks](#matching-on-gsm-networks)
+- [Matching on GSM networks](#matching-on-gsm-networks)
 
--   [Matching on CDMA networks](#matching-on-cdma-networks)
+- [Matching on CDMA networks](#matching-on-cdma-networks)
 
 For info about the hardware that is required to properly match service metadata to an MNO and MVNO, see [Mobile operator hardware overview](mobile-operator-hardware-overview.md).
 
@@ -25,7 +25,6 @@ For info on service metadata, see [Service metadata](service-metadata.md).
 For info on the service metadata package schema, see [Service metadata package schema reference](mobilebroadbandinfo-xml-schema.md).
 
 ## Matching on GSM networks
-
 
 For a GSM network (3GPP), Windows reads the Integrated Circuit Card Identifier (ICCID) and the International Mobile Subscriber Identity (IMSI) number from the SIM card. These numbers must be set and retrievable from the device. If a SIM is PIN-locked and the IMSI information is hidden, Windows does not take action until the SIM PIN is unlocked. Windows also reads the Home Provider Name from the SIM or mobile broadband device.
 
@@ -48,19 +47,17 @@ If neither the ICCID nor the IMSI matches the request from the client machine, n
 **Note**  
 IMSI ranges must have a granularity of 100. The start range value must end in 00, and the end range value must end in 99.
 
- 
-
 *Figure 1 Segmenting IMSI ranges (within an MNO's MCC+MNC)* shows an example of client device that request service metadata from WMIS and how each matching request from the client is matched to an experience.
 
-![segmenting imsi ranges.](images/hck-winb-fig1-segmenting-imsi-ranges-matchingservicemetadata.jpg)
+:::image type="content" source="images/hck-winb-fig1-segmenting-imsi-ranges-matchingservicemetadata.jpg" alt-text="Diagram showing segmenting IMSI ranges for matching service metadata.":::
 
 **Figure 1 Segmenting IMSI ranges (in an MNO's MCC+MNC)**
 
--   Computer \#1’s matching request does not match any ICCID values and lands inside the IMSI range that is defined by the MNO. The MNO service metadata is downloaded to that computer.
+- Computer \#1’s matching request does not match any ICCID values and lands inside the IMSI range that is defined by the MNO. The MNO service metadata is downloaded to that computer.
 
--   Computer \#2’s matching request does not match any ICCID values or any IMSI values. No experience is downloaded.
+- Computer \#2’s matching request does not match any ICCID values or any IMSI values. No experience is downloaded.
 
--   Computer \#3’s matching request does not match any ICCID values and lands inside the IMSI range for MVNO A. The MVNO service metadata is downloaded to that computer.
+- Computer \#3’s matching request does not match any ICCID values and lands inside the IMSI range for MVNO A. The MVNO service metadata is downloaded to that computer.
 
 **Option 2: Segmenting ICCID ranges**
 
@@ -73,19 +70,17 @@ If neither the ICCID nor the IMSI matches the request coming from the client mac
 **Note**  
 IMSI ranges must have a granularity of 100. The start range value must end in 00, and the end range value must end in 99.
 
- 
-
 *Figure 2 Segmenting ICCID ranges (within an MNO's ICCID issuer identification number)* shows an example of client computers that request service metadata from WMIS and how each matching request from the client is matched to an experience.
 
-![segmenting iccid ranges.](images/hck-winb-fig2-segmenting-iccid-ranges-matchingservicemetadata.jpg)
+:::image type="content" source="images/hck-winb-fig2-segmenting-iccid-ranges-matchingservicemetadata.jpg" alt-text="Diagram illustrating segmenting ICCID ranges for matching service metadata.":::
 
 **Figure 2 Segmenting ICCID ranges (in an MNO's ICCID issuer identification number)**
 
--   Computer \#1’s matching request in includes in the ICCID range that is defined by the MNO. The MNO service metadata is downloaded to that computer.
+- Computer \#1’s matching request in includes in the ICCID range that is defined by the MNO. The MNO service metadata is downloaded to that computer.
 
--   Computer \#2’s matching request does not match any ICCID values or any IMSI values. No experience is downloaded.
+- Computer \#2’s matching request does not match any ICCID values or any IMSI values. No experience is downloaded.
 
--   Computer \#3’s matching request lands inside the ICCID range that is defined for MVNO A. The MVNO service metadata is downloaded to that computer.
+- Computer \#3’s matching request lands inside the ICCID range that is defined for MVNO A. The MVNO service metadata is downloaded to that computer.
 
 **Option 3: Describing MVNOs with ICCID ranges and MNO together with an IMSI range**
 
@@ -96,21 +91,19 @@ This option requires the MNO or MVNO to ensure that the ICCID ranges are kept up
 **Note**  
 IMSI ranges must have a granularity of 100. The start range value must end in 00, and the end range value must end in 99.
 
- 
-
 *Figure 3 Using ICCID to define MVNOs and an all-encompassing IMSI range for the MNO* shows an example of client computers that request service metadata from WMIS and how each matching request from the client is matched to an experience.
 
-![using iccid to define mvnos.](images/hck-winb-fig3-using-iccid-to-define-mvnos-matchingservicemetadata.jpg)
+:::image type="content" source="images/hck-winb-fig3-using-iccid-to-define-mvnos-matchingservicemetadata.jpg" alt-text="Diagram demonstrating using ICCID to define MVNOs and an all-encompassing IMSI range for the MNO.":::
 
 *Figure 3 Using ICCID to define MVNOs and an all-encompassing IMSI range for the MNO*
 
--   Computer \#1’s matching request does not match any ICCID values and lands inside the IMSI range that is defined by the MNO. The MNO service metadata is downloaded on that computer.
+- Computer \#1’s matching request does not match any ICCID values and lands inside the IMSI range that is defined by the MNO. The MNO service metadata is downloaded on that computer.
 
--   Computer \#2’s matching request in included in the ICCID range for MVNO B. MVNO B’s service metadata is downloaded to that computer.
+- Computer \#2’s matching request in included in the ICCID range for MVNO B. MVNO B’s service metadata is downloaded to that computer.
 
--   Computer \#3’s matching request is included in the ICCID range for MVNO A. MVNO A’s service metadata is downloaded to that computer.
+- Computer \#3’s matching request is included in the ICCID range for MVNO A. MVNO A’s service metadata is downloaded to that computer.
 
--   Computer \#4’s matching request does not match any ICCID values and lands inside the IMSI range that is defined by the MNO. The MNO service metadata is downloaded on that computer.
+- Computer \#4’s matching request does not match any ICCID values and lands inside the IMSI range that is defined by the MNO. The MNO service metadata is downloaded on that computer.
 
 **Option 4: Segmenting ICCID and IMSI ranges**
 
@@ -119,25 +112,23 @@ You can use a mixture of ICCID ranges and IMSI ranges to describe the MNO and MV
 **Note**  
 ICCID ranges get first priority for matching.
 
- 
-
 This is the most complex matching model. To ensure proper matching, the MNO and MVNO must frequently update their service metadata packages.
 
 *Figure 4 Segmenting ICCID and IMSI ranges* shows an example of client device that request service metadata from WMIS, and how each matching request from the client is matched to an experience.
 
-![segmenting ccid and imsi ranges.](images/hck-winb-fig4-segmenting-ccid-and-imsi-ranges-matchingservicemetadata.jpg)
+:::image type="content" source="images/hck-winb-fig4-segmenting-ccid-and-imsi-ranges-matchingservicemetadata.jpg" alt-text="Diagram depicting segmenting ICCID and IMSI ranges for matching service metadata.":::
 
 *Figure 4 Segmenting ICCID and IMSI ranges*
 
--   Computer \#1’s matching request does not match any ICCID values, but is included in the IMSI range that is defined by the MNO. The MNO service metadata is downloaded to that computer.
+- Computer \#1’s matching request does not match any ICCID values, but is included in the IMSI range that is defined by the MNO. The MNO service metadata is downloaded to that computer.
 
--   Computer \#2’s matching request is included in the ICCID range for MVNO B. MVNO B’s service metadata is downloaded to that computer.
+- Computer \#2’s matching request is included in the ICCID range for MVNO B. MVNO B’s service metadata is downloaded to that computer.
 
--   Computer \#3’s matching request is included in the ICCID range for MVNO A. MVNO A’s service metadata is downloaded to that computer.
+- Computer \#3’s matching request is included in the ICCID range for MVNO A. MVNO A’s service metadata is downloaded to that computer.
 
--   Computer \#4’s matching request does not match any ICCID values, but is included in the IMSI range that is defined by the MNO. The MNO service metadata is downloaded to that computer.
+- Computer \#4’s matching request does not match any ICCID values, but is included in the IMSI range that is defined by the MNO. The MNO service metadata is downloaded to that computer.
 
--   Computer \#5’s matching request does not match any ICCID values, but is included in the IMSI range that is defined by MVNO C. MVNO C’s service metadata is downloaded to that computer.
+- Computer \#5’s matching request does not match any ICCID values, but is included in the IMSI range that is defined by MVNO C. MVNO C’s service metadata is downloaded to that computer.
 
 **Option 5: Using Home Provider Name for GSM networks to identify the MNO and MVNO**
 
@@ -154,21 +145,19 @@ If the Home Provider Name does not match the request coming from the client mach
 **Note**  
 Home Provider Names must be globally unique to ensure that a user gets the correct experience. Service metadata will only allow a single service metadata package that uses a given Home Provider Name.
 
- 
-
 *Figure 5 Provider Name-based matching for GSM networks* shows an example of devices that request service metadata from the Windows Metadata and Internet Services (WMIS) service, and how each matching request from the device is matched to an experience.
 
-![using home provider name for gsm networks.](images/hck-winb-fig5-using-home-provider-name-for-gsm-networks-to-identify-the-mno-and-mvno.jpg)
+:::image type="content" source="images/hck-winb-fig5-using-home-provider-name-for-gsm-networks-to-identify-the-mno-and-mvno.jpg" alt-text="Diagram displaying using Home Provider Name for GSM networks to identify MNO and MVNO.":::
 
 *Figure 5 Provider Name-based matching for GSM networks*
 
--   Computer \#1’s matching request matches the Home Provider Name for the MNO. The MNO service metadata is downloaded.
+- Computer \#1’s matching request matches the Home Provider Name for the MNO. The MNO service metadata is downloaded.
 
--   Computer \#2’s matching request does not match any Provider Name values. No experience is downloaded.
+- Computer \#2’s matching request does not match any Provider Name values. No experience is downloaded.
 
--   Computer \#3’s matching request matches the Home Provider Name for MVNO A. MVNO A’s service metadata is downloaded.
+- Computer \#3’s matching request matches the Home Provider Name for MVNO A. MVNO A’s service metadata is downloaded.
 
--   Computer \#4’s matching request matches the Home Provider Name for MVNO B. MVNO B’s service metadata is downloaded.
+- Computer \#4’s matching request matches the Home Provider Name for MVNO B. MVNO B’s service metadata is downloaded.
 
 **Option 6: Describing MVNOs with Home Provider Name and MNO together with an IMSI range**
 
@@ -178,17 +167,17 @@ This option requires the MNO or MVNO to ensure that the Home Provider Name repor
 
 *Figure 6 Using Home Provider Name to define MVNOs and an all-encompassing IMSI range for the MNO* shows an example of client computers that request service metadata from WMIS and how each matching request from the client is matched to an experience.
 
-![using home provider name to define mvnos.](images/hck-winb-fig6-using-home-provider-name-to-define-mvnos-and-an-all-encompassing-imsi-range-for-the-mno.jpg)
+:::image type="content" source="images/hck-winb-fig6-using-home-provider-name-to-define-mvnos-and-an-all-encompassing-imsi-range-for-the-mno.jpg" alt-text="Diagram presenting using Home Provider Name to define MVNOs and an all-encompassing IMSI range for the MNO.":::
 
 *Figure 6 Using Home Provider Name to define MVNOs and an all-encompassing IMSI range for the MNO*
 
--   Computer \#1’s matching request matches the Home Provider Name for MVNO A. The MVNO A service metadata is downloaded on that computer.
+- Computer \#1’s matching request matches the Home Provider Name for MVNO A. The MVNO A service metadata is downloaded on that computer.
 
--   Computer \#2’s matching request does not match any Home Provider Name values and lands inside the IMSI range that is defined by the MNO. The MNO service metadata is downloaded on that computer.
+- Computer \#2’s matching request does not match any Home Provider Name values and lands inside the IMSI range that is defined by the MNO. The MNO service metadata is downloaded on that computer.
 
--   Computer \#3’s matching request matches the Home Provider Name for MVNO B. MVNO B’s service metadata is downloaded to that computer.
+- Computer \#3’s matching request matches the Home Provider Name for MVNO B. MVNO B’s service metadata is downloaded to that computer.
 
--   Computer \#4’s matching request does not match any Home Provider Name values and lands inside the IMSI range that is defined by the MNO. The MNO service metadata is downloaded on that computer.
+- Computer \#4’s matching request does not match any Home Provider Name values and lands inside the IMSI range that is defined by the MNO. The MNO service metadata is downloaded on that computer.
 
 **Option 7: Alternative matching method**
 
@@ -204,9 +193,9 @@ If the user does not already have a plan, the app opens when user tries to conne
 
 When the app is running, it performs one of the following actions:
 
--   Prompts the user to identify the network for which they have a plan from a displayed list of MVNOs and the MNO network.
+- Prompts the user to identify the network for which they have a plan from a displayed list of MVNOs and the MNO network.
 
--   Uses web services to send information about the user’s SIM back to the MNO backend so that the operator can use custom logic to determine the correct network branding for the user.
+- Uses web services to send information about the user’s SIM back to the MNO backend so that the operator can use custom logic to determine the correct network branding for the user.
 
 **Customizing the Windows Connection Manager branding**
 
@@ -225,49 +214,44 @@ Because service metadata is not versioned, the app cannot query the local copy o
 
 A delay can occur between the time that the service metadata is uploaded through the Windows Dev Center hardware dashboard, and the time that computers receive the updated metadata.
 
- 
-
 **Branding in the mobile broadband app**
 
 The previous steps that are described in this topic lets you rebrand the Windows Connection Manager icon and network name for the MNO/MVNO’s network. However, there are limited ways in which the app itself can be rebranded.
 
 You can rebrand the following items in the app:
 
--   The app content itself (that is, everything inside the app can be changed for a particular operator). This is code over which the app has complete control. You might want to change help content, navigation options, page layouts, colors, and branding inside the app, based on the MNO/MVNO.
+- The app content itself (that is, everything inside the app can be changed for a particular operator). This is code over which the app has complete control. You might want to change help content, navigation options, page layouts, colors, and branding inside the app, based on the MNO/MVNO.
 
--   The app tile can be dynamically updated to show specific images and layouts that are specific to the operator. For information about how to dynamically update tile content, see [Quickstart: Sending a tile update](/previous-versions/windows/apps/hh465439(v=win.10)).
+- The app tile can be dynamically updated to show specific images and layouts that are specific to the operator. For information about how to dynamically update tile content, see [Quickstart: Sending a tile update](/previous-versions/windows/apps/hh465439(v=win.10)).
 
 You cannot rebrand the following items in the app:
 
--   Name of the app. You can try to hide the name by changing the tile template, but you cannot change either the name itself or the icon that represents that app, as it is defined in the app manifest.
+- Name of the app. You can try to hide the name by changing the tile template, but you cannot change either the name itself or the icon that represents that app, as it is defined in the app manifest.
 
--   App name, information, and the icon in the settings charm.
+- App name, information, and the icon in the settings charm.
 
--   Description of the app.
+- Description of the app.
 
 ### <span id="SIM_reprogramming"></span><span id="sim_reprogramming"></span><span id="SIM_REPROGRAMMING"></span>SIM reprogramming
 
 If you want to dynamically reprogram SIMs to change the IMSI or the ICCID, you should be aware of the following ways in which Windows 8, Windows 8.1, and Windows 10 interpret the reprogramming:
 
--   Reprogramming requires invalidation of the device’s caching of IMSI and ICCID. There are several ways this can be done, depending on the operator network and device.
+- Reprogramming requires invalidation of the device’s caching of IMSI and ICCID. There are several ways this can be done, depending on the operator network and device.
 
--   After the SIM is reprogrammed, the device re-reads the SIM information. It can use the hot SIM swap insertion sequence to let Windows know that it should re-query the new IMSI and ICCID values.
+- After the SIM is reprogrammed, the device re-reads the SIM information. It can use the hot SIM swap insertion sequence to let Windows know that it should re-query the new IMSI and ICCID values.
 
--   The ICCID must be changed or Windows will not treat the SIM as a new SIM.
+- The ICCID must be changed or Windows will not treat the SIM as a new SIM.
 
--   If only the IMSI is changed, Windows does not treat the SIM as a new SIM and your service metadata is not downloaded. The mobile broadband app is not downloaded if a different app has already been downloaded for this SIM.
+- If only the IMSI is changed, Windows does not treat the SIM as a new SIM and your service metadata is not downloaded. The mobile broadband app is not downloaded if a different app has already been downloaded for this SIM.
 
 To get new service metadata (which results in new branding), and to get a new mobile broadband app to download the ICCID and the IMSI, you must change both the service data and the mobile broadband app by using the operator’s reprogramming method.
 
 ## Matching on CDMA networks
 
-
 For a CDMA network (3GPP2), Windows reads the SID and the Provider Name values that are reported by the device to a corresponding service metadata package in WMIS. If no matches are found, no service metadata package is downloaded. Windows checks approximately every eight days to see if new metadata exists for the device. If service metadata exists for a SID and a separate service metadata package exists for a Provider Name, and both values match the SID and Provider Name values that the device is reporting, matching preference is given to SID. In this case, the Provider Name package is not matched.
 
 **Important**  
 The Provider Name value is case sensitive and must be an exact match to the Provider Name that the device reports to Windows. If you want to match by using the Provider Name, you must make sure that you have specified all spelling and capitalization variations of the Provider Name that CDMA devices report to Windows in the service metadata package that you submit through the Windows Dev Center hardware dashboard.
-
- 
 
 ### <span id="Managing_MVNOs"></span><span id="managing_mvnos"></span><span id="MANAGING_MVNOS"></span>Managing MVNOs
 
@@ -281,17 +265,17 @@ Separate service metadata is created for the MNO and for each of the MVNOs that 
 
 *Figure 7 SID-based matching for CDMA networks* shows an example of computers that request service metadata from WMIS service, and how each matching request from the client gets matched to an experience.
 
-![sid-based matching.](images/hck-winb-fig5-sid-based-matching-matchingservicemetadata.jpg)
+:::image type="content" source="images/hck-winb-fig5-sid-based-matching-matchingservicemetadata.jpg" alt-text="Diagram of SID-based matching for CDMA networks in service metadata.":::
 
 *Figure 7 SID-based matching for CDMA networks*
 
--   Computer \#1’s matching request matches the SID for the MNO. The MNO service metadata is downloaded.
+- Computer \#1’s matching request matches the SID for the MNO. The MNO service metadata is downloaded.
 
--   PC \#2’s matching request does not match any SID values or any Provider Name values. No experience is downloaded.
+- PC \#2’s matching request does not match any SID values or any Provider Name values. No experience is downloaded.
 
--   PC \#3’s matching request matches a SID value that is defined by another MNO or MVNO.
+- PC \#3’s matching request matches a SID value that is defined by another MNO or MVNO.
 
--   PC \#4’s matching request matches the SID for MVNO B. MVNO B’s service metadata downloaded.
+- PC \#4’s matching request matches the SID for MVNO B. MVNO B’s service metadata downloaded.
 
 **Option 2: MNO and MVNOs get their own provider name values**
 
@@ -303,24 +287,23 @@ For this option to work, the MNO must make sure that no service metadata is subm
 
 *Figure 8 Provider Name-based matching for CDMA networks* shows an example of devices that request service metadata from the Windows Metadata and Internet Services (WMIS) service, and how each matching request from the device is matched to an experience.
 
-![provider name based matching.](images/hck-winb-fig6-provider-name-based-matching-matchingservicemetadata.jpg)
+:::image type="content" source="images/hck-winb-fig6-provider-name-based-matching-matchingservicemetadata.jpg" alt-text="Diagram of Provider Name-based matching for CDMA networks in service metadata.":::
 
 *Figure 8 Provider Name-based matching for CDMA networks*
 
--   PC \#1’s matching request does not match on the SID, but does match the Provider Name for the MNO. The MNO service metadata is downloaded.
+- PC \#1’s matching request does not match on the SID, but does match the Provider Name for the MNO. The MNO service metadata is downloaded.
 
--   PC \#2’s matching request does not match any SID values or any Provider Name values. No experience is downloaded.
+- PC \#2’s matching request does not match any SID values or any Provider Name values. No experience is downloaded.
 
--   PC \#3’s matching request matches a SID value that is defined by another MNO or MVNO.
+- PC \#3’s matching request matches a SID value that is defined by another MNO or MVNO.
 
--   PC \#4’s matching request does not match on the SID, but does match the Provider Name for MVNO B. The MVNO B’s service metadata is downloaded.
+- PC \#4’s matching request does not match on the SID, but does match the Provider Name for MVNO B. The MVNO B’s service metadata is downloaded.
 
 **Option 3: Alternative matching method**
 
 If the first two options described here are not acceptable, CDMA operators can use the alternative matching method described in **Option 7: Alternative matching method** of the Matching on GSM networks section.
 
 ## <span id="radios"></span><span id="RADIOS"></span>Radios and metadata
-
 
 You can expect the following matching behaviors, depending on the type of radio.
 
@@ -348,14 +331,10 @@ If the device is active with the CDMA provider, it should report that it is in C
 
 ## <span id="metadatamtc"></span><span id="METADATAMTC"></span>Metadata Maintenance Implications
 
-
 It is important to keep the following metadata package content up-to-date:
 
--   How the packages are described.
+- How the packages are described.
 
--   The IMSI and/or ICCID or CDMA provider name or SID values against which the packages match.
+- The IMSI and/or ICCID or CDMA provider name or SID values against which the packages match.
 
 For more information about mobile broadband metadata see [Using metadata to configure mobile broadband experiences](using-metadata-to-configure-mobile-broadband-experiences.md).
-
- 
-

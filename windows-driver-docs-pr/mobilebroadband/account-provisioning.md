@@ -1,7 +1,7 @@
 ---
 title: Account provisioning
 description: Account provisioning
-ms.date: 04/20/2017
+ms.date: 10/05/2023
 ---
 
 # Account provisioning
@@ -10,7 +10,7 @@ Provisioning refers to configuring a Windows computer with the information that 
 
 The following diagram illustrates the contents and hierarchy of the provisioning XML file.
 
-![provisioning xml file hierarchy.](images/mb-provisioningmetadata.jpg)
+:::image type="content" source="images/mb-provisioningmetadata.jpg" alt-text="Diagram that shows the hierarchy of a provisioning XML file for mobile broadband.":::
 
 For more info about the provisioning schema, see [CarrierControlSchema schema](/uwp/schemas/mobilebroadbandschema/carriercontrolschema/schema-root).
 
