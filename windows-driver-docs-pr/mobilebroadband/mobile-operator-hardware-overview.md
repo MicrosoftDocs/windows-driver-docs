@@ -6,64 +6,61 @@ ms.date: 10/06/2023
 
 # Mobile operator hardware overview
 
-
 You should use this topic to get a high-level understanding of the Windows 8, Windows 8.1, and Windows 10 mobile broadband hardware requirements and recommendations. We recommend the following to provide your customers with a simplified connection experience, as well as reducing your maintenance and support costs.
 
--   Embedded mobile broadband modules that provide USB interfaces must meet the Windows 8, Windows 8.1, or Windows 10 hardware certification requirements and be managed by using the mobile broadband class driver. Your hardware requirements documentation for IHVs should require that mobile broadband devices pass the Windows 8, Windows 8.1, or Windows 10 device certification.
+- Embedded mobile broadband modules that provide USB interfaces must meet the Windows 8, Windows 8.1, or Windows 10 hardware certification requirements and be managed by using the mobile broadband class driver. Your hardware requirements documentation for IHVs should require that mobile broadband devices pass the Windows 8, Windows 8.1, or Windows 10 device certification.
 
--   External USB mobile broadband dongles must support identity morphing. Your hardware requirements documentation for IHVs should require that external mobile broadband devices pass both the Windows 8 device certification, Windows 8.1, or Windows 10 device certification and pass the Windows 7 logo certification.
+- External USB mobile broadband dongles must support identity morphing. Your hardware requirements documentation for IHVs should require that external mobile broadband devices pass both the Windows 8 device certification, Windows 8.1, or Windows 10 device certification and pass the Windows 7 logo certification.
 
-    -   On a Windows 10 computer, the dongle appears as a Windows 10 certified mobile broadband device and is managed by using the mobile broadband class driver.
+  - On a Windows 10 computer, the dongle appears as a Windows 10 certified mobile broadband device and is managed by using the mobile broadband class driver.
 
-    -   On a Windows 8.1 computer, the dongle appears as a Windows 8.1 certified mobile broadband device and is managed by using the mobile broadband class driver.
+  - On a Windows 8.1 computer, the dongle appears as a Windows 8.1 certified mobile broadband device and is managed by using the mobile broadband class driver.
 
-    -   On a Windows 8 computer, the dongle appears as a Windows 8 certified mobile broadband device and is managed by using the mobile broadband class driver.
+  - On a Windows 8 computer, the dongle appears as a Windows 8 certified mobile broadband device and is managed by using the mobile broadband class driver.
 
-    -   On a Windows 7 computer, the dongle appears as a mass storage device, allowing the user to install specific device drivers.
+  - On a Windows 7 computer, the dongle appears as a mass storage device, allowing the user to install specific device drivers.
 
--   If you require EAP-SIM, USSD, or multiple PDP connections, the IHV must enable it and it must comply with the Windows 8, Windows 8.1, or Windows 10 hardware certification requirements.
+- If you require EAP-SIM, USSD, or multiple PDP connections, the IHV must enable it and it must comply with the Windows 8, Windows 8.1, or Windows 10 hardware certification requirements.
 
--   Any additional functionality required by you or the IHV must be implemented using the device services extension and enabled in Windows 8, Windows 8.1, or Windows 10 by using the mobile broadband class driver and the Device Services APIs. You should include any additional functionality as part of your hardware requirement documentation.
+- Any additional functionality required by you or the IHV must be implemented using the device services extension and enabled in Windows 8, Windows 8.1, or Windows 10 by using the mobile broadband class driver and the Device Services APIs. You should include any additional functionality as part of your hardware requirement documentation.
 
 ## <span id="Key_scenarios"></span><span id="key_scenarios"></span><span id="KEY_SCENARIOS"></span>Key scenarios
-
 
 ### <span id="Purchase_an_external_device"></span><span id="purchase_an_external_device"></span><span id="PURCHASE_AN_EXTERNAL_DEVICE"></span>Purchase an external device
 
 An external device is likely to be inserted immediately before the user wants to begin using it.
 
-1.  As soon as the device is inserted, it is recognized and managed by the mobile broadband class driver.
+1. As soon as the device is inserted, it is recognized and managed by the mobile broadband class driver.
 
-2.  The Mobile Broadband Service reads the IMSI and generates a set of hashes.
+2. The Mobile Broadband Service reads the IMSI and generates a set of hashes.
 
-3.  When the user clicks **Connect**, these hashes are used to match connection settings within the [COSA/APN database submission](planning-your-desktop-cosa-apn-database-submission.md).
+3. When the user clicks **Connect**, these hashes are used to match connection settings within the [COSA/APN database submission](planning-your-desktop-cosa-apn-database-submission.md).
 
-    -   If the connection is successful and Internet connectivity is available, nothing further happens. The user has already purchased service.
+    - If the connection is successful and Internet connectivity is available, nothing further happens. The user has already purchased service.
 
-    -   If the connection is successful, but Internet connectivity is not available, the web browser opens to the URL specified in the APN database or your UWP mobile broadband app.
+    - If the connection is successful, but Internet connectivity is not available, the web browser opens to the URL specified in the APN database or your UWP mobile broadband app.
 
-    -   If the connection fails, the user is notified of the error.
+    - If the connection fails, the user is notified of the error.
 
-4.  Your web site or your mobile broadband app helps the user purchase service.
+4. Your web site or your mobile broadband app helps the user purchase service.
 
-5.  After purchase, the device is provisioned by using the provisioning API from a provisioning file. The provisioning file is passed to the provisioning agent by the web site or the mobile broadband app. The provisioning file configures Windows with basic information about the plan that the user has purchased. Depending on the network structure, one of the following occurs:
+5. After purchase, the device is provisioned by using the provisioning API from a provisioning file. The provisioning file is passed to the provisioning agent by the web site or the mobile broadband app. The provisioning file configures Windows with basic information about the plan that the user has purchased. Depending on the network structure, one of the following occurs:
 
-    -   The user is granted Internet access on the current connection.
+    - The user is granted Internet access on the current connection.
 
-    -   The provisioning file includes instructions to disconnect and reconnect to the same network or a different network, which will provide Internet access.
+    - The provisioning file includes instructions to disconnect and reconnect to the same network or a different network, which will provide Internet access.
 
 ### <span id="Connect_an_external_device_with_an_active_SIM"></span><span id="connect_an_external_device_with_an_active_sim"></span><span id="CONNECT_AN_EXTERNAL_DEVICE_WITH_AN_ACTIVE_SIM"></span>Connect an external device with an active SIM
 
 When an active device is attached that already had an active SIM, the workflow is similar to when you purchase an external device, except that the attempted connection will lead to the Internet. You don’t need to direct the user to your website or mobile broadband app to purchase service.
 
-1.  As soon as the device is inserted, it is recognized and managed by the mobile broadband class driver.
+1. As soon as the device is inserted, it is recognized and managed by the mobile broadband class driver.
 
-2.  The Mobile Broadband Service reads the IMSI and generates a set of hashes.
+2. The Mobile Broadband Service reads the IMSI and generates a set of hashes.
 
-3.  When the user clicks **Connect**, these hashes are used to match connection settings within the [COSA/APN database submission](planning-your-desktop-cosa-apn-database-submission.md). For a device with an active SIM, the connection is successful and Internet connectivity is available.
+3. When the user clicks **Connect**, these hashes are used to match connection settings within the [COSA/APN database submission](planning-your-desktop-cosa-apn-database-submission.md). For a device with an active SIM, the connection is successful and Internet connectivity is available.
 
 ## <span id="Components"></span><span id="components"></span><span id="COMPONENTS"></span>Components
-
 
 ### <span id="Windows_8__Windows_8.1__or_Windows_10_certified_mobile_broadband_devices"></span><span id="windows_8__windows_8.1__or_windows_10_certified_mobile_broadband_devices"></span><span id="WINDOWS_8__WINDOWS_8.1__OR_WINDOWS_10_CERTIFIED_MOBILE_BROADBAND_DEVICES"></span>Windows 8, Windows 8.1, or Windows 10 certified mobile broadband devices
 
@@ -77,8 +74,6 @@ The mobile broadband class driver reduces the burden on device manufacturers to 
 
 **Note**  
 While USSD, EAP-SIM, and multiple PDP contexts are supported by the mobile broadband class driver, they are optional components of the Windows 8, Windows 8.1, or Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) hardware certification requirements. Multiple PDP contexts are required for Windows 10 Mobile for hardware certification, however.
-
- 
 
 Additional device functionality can be implemented using custom device service extensions, which will be exposed directly to the mobile broadband app through the WinRT Device Services API.
 
@@ -99,19 +94,17 @@ Each device service has a corresponding GUID. All control messages and non-IP pa
 **Note**  
 The COM-based Device Services API is accessible to any desktop application or service. The WinRT projected Device Services API is available only to a privileged UWP device app that is authorized by a mobile broadband operator. Developers should carefully consider privacy and security when communicating information this way.
 
- 
-
 The Windows wireless platform supports APIs for the following functionality that is available to apps:
 
--   Enumerate device services
+- Enumerate device services
 
--   Open and close device services
+- Open and close device services
 
--   Send control commands to a specific device service
+- Send control commands to a specific device service
 
--   Send or receive data to or from a specific device service
+- Send or receive data to or from a specific device service
 
--   Register for unsolicited device events from a specific device
+- Register for unsolicited device events from a specific device
 
 For more information, see [**IMbnDeviceService interface**](/windows/win32/api/mbnapi/nn-mbnapi-imbndeviceservice).
 
@@ -121,20 +114,18 @@ Windows 8, Windows 8.1, and Windows 10 support mobile broadband devices desig
 
 A summary of mobile broadband device support inWindows 8, Windows RT, Windows 8.1, and Windows RT 8.1 is provided here:
 
--   Windows 10 certified devices – These devices pass the mobile broadband experience tests supporting the Windows 10 Hardware Certification Kit. For these devices, Windows 10 provides the mobile broadband class driver and advanced power management.
+- Windows 10 certified devices – These devices pass the mobile broadband experience tests supporting the Windows 10 Hardware Certification Kit. For these devices, Windows 10 provides the mobile broadband class driver and advanced power management.
 
--   Windows 8 or Windows 8.1 certified devices – These devices pass the mobile broadband experience tests supporting the Windows 8 or Windows 8.1 Hardware Certification Kit. For these devices, Windows 8 and Windows 8.1 provide the mobile broadband class driver and advanced power management.
+- Windows 8 or Windows 8.1 certified devices – These devices pass the mobile broadband experience tests supporting the Windows 8 or Windows 8.1 Hardware Certification Kit. For these devices, Windows 8 and Windows 8.1 provide the mobile broadband class driver and advanced power management.
 
--   Windows 7 logo’d devices – These devices use third-party IHV drivers based on Windows 7 NDIS 6.20 driver model. Windows 8 and Windows 8.1 provide mobile broadband experience in backward compatibility mode for these devices and they are limited to Windows 7 functionality.
+- Windows 7 logo’d devices – These devices use third-party IHV drivers based on Windows 7 NDIS 6.20 driver model. Windows 8 and Windows 8.1 provide mobile broadband experience in backward compatibility mode for these devices and they are limited to Windows 7 functionality.
 
--   Windows 8 and Windows 8.1 will continue to support the legacy devices based on modem or Ethernet interfaces along with a custom connection manager as in earlier versions of Windows. Windows 8 and Windows 8.1 will not be able to provide mobile broadband experiences as they are not compliant with the mobile broadband stack. Because the legacy devices are not recognized by the mobile broadband stack, connectivity over such devices may result in excessive data consumption as they are not managed by Windows Connection Manager.
+- Windows 8 and Windows 8.1 will continue to support the legacy devices based on modem or Ethernet interfaces along with a custom connection manager as in earlier versions of Windows. Windows 8 and Windows 8.1 will not be able to provide mobile broadband experiences as they are not compliant with the mobile broadband stack. Because the legacy devices are not recognized by the mobile broadband stack, connectivity over such devices may result in excessive data consumption as they are not managed by Windows Connection Manager.
 
--   Windows RT and Windows RT 8.1 certified devices – These devices pass mobile broadband experience tests supported by the Windows RT or Windows RT 8.1 Windows Hardware Certification Kit. For these devices, Windows RT and Windows RT 8.1 provide the mobile broadband class driver and advanced power management.
+- Windows RT and Windows RT 8.1 certified devices – These devices pass mobile broadband experience tests supported by the Windows RT or Windows RT 8.1 Windows Hardware Certification Kit. For these devices, Windows RT and Windows RT 8.1 provide the mobile broadband class driver and advanced power management.
 
     **Note**  
     Windows RT and Windows RT 8.1 systems do not support mobile broadband devices designed for Windows 7 and earlier versions.
-
-     
 
 To ensure that Windows 8 and Windows 8.1 certified devices are useful on older platforms, Windows provides an identity morphing solution that enables the device to exhibit behavior that is appropriate for the operating system to which it is connected.
 
@@ -158,21 +149,21 @@ Windows separates OMA-DM support for mobile Network operator configuration from 
 
 Here are some options to consider when supporting an operator-specific OMA-DM:
 
--   If the OMA-DM client is in the network adapter’s firmware:
+- If the OMA-DM client is in the network adapter’s firmware:
 
-    -   Typically, mobile broadband device manufacturers may bundle operator-specific OMA-DM client in their network adapter’s firmware.
+  - Typically, mobile broadband device manufacturers may bundle operator-specific OMA-DM client in their network adapter’s firmware.
 
-    -   The mobile broadband device manufacturer may be able to provide 3rd party OMA-DM client solutions for integrating in their network adapter firmware if a natively supported solution does not exist.
+  - The mobile broadband device manufacturer may be able to provide 3rd party OMA-DM client solutions for integrating in their network adapter firmware if a natively supported solution does not exist.
 
-    -   Mobile broadband apps should continue to use [provisioning metadata](/uwp/api/Windows.Networking.NetworkOperators.ProvisioningAgent) when configuring operating system specific parameters.
+  - Mobile broadband apps should continue to use [provisioning metadata](/uwp/api/Windows.Networking.NetworkOperators.ProvisioningAgent) when configuring operating system specific parameters.
 
--   OMA-DM client in the mobile broadband app:
+- OMA-DM client in the mobile broadband app:
 
-    -   If the modules do not support an OMA-DM client in the network adapter’s firmware, you may want to implement OMA-DM client in your mobile broadband app.
+  - If the modules do not support an OMA-DM client in the network adapter’s firmware, you may want to implement OMA-DM client in your mobile broadband app.
 
-    -   This solution requires operator-specific or device manufacturer-specific custom device service support for configuring device specific parameters by the mobile broadband app.
+  - This solution requires operator-specific or device manufacturer-specific custom device service support for configuring device specific parameters by the mobile broadband app.
 
-    -   Mobile broadband app that include an OMA-DM client should use [**provisioning metadata**](/uwp/api/Windows.Networking.NetworkOperators.ProvisioningAgent) when configuring operating system specific parameters.
+  - Mobile broadband app that include an OMA-DM client should use [**provisioning metadata**](/uwp/api/Windows.Networking.NetworkOperators.ProvisioningAgent) when configuring operating system specific parameters.
 
 ### <span id="APN_Management"></span><span id="apn_management"></span><span id="APN_MANAGEMENT"></span>APN Management
 
@@ -180,14 +171,12 @@ Default APN management is done by using the local APN database. You may desire t
 
 Your device must implement the following:
 
--   When pre-provisioned by operator or provisioned through OTA **prior to** a successful connection by using the SIM on that system, the device should provide Internet PDP context as a first provisioned context with the ContextType set to **Internet** when queried by Windows as defined in MBIM section 10.5.13.5. This ensures that the connection logic uses this APN information when attempting a connection.
+- When pre-provisioned by operator or provisioned through OTA **prior to** a successful connection by using the SIM on that system, the device should provide Internet PDP context as a first provisioned context with the ContextType set to **Internet** when queried by Windows as defined in MBIM section 10.5.13.5. This ensures that the connection logic uses this APN information when attempting a connection.
 
--   If the SIM has been used to establish a successful connection to the network using an alternative APN on that system, setting the ContextType to Internet will not work. The only way to force the Window to establish a connection using the new APN is to delete the specific profile created. The profile can be deleted by running the following command from an elevated command prompt: **netsh mbn delete profile interface="Mobile Broadband Connection" name="myProfileName"**
+- If the SIM has been used to establish a successful connection to the network using an alternative APN on that system, setting the ContextType to Internet will not work. The only way to force the Window to establish a connection using the new APN is to delete the specific profile created. The profile can be deleted by running the following command from an elevated command prompt: **netsh mbn delete profile interface="Mobile Broadband Connection" name="myProfileName"**
 
 **Note**  
 Since this is an optional Windows feature for devices to support, there is no HCK test or automated test case to validate this scenario on the system. It is our expectation that the operator certification will handle the validation to confirm that the device conforms to the operator requirements.
-
- 
 
 For more info about the APN database, see [APN database overview](apn-database-overview.md).
 
@@ -199,6 +188,3 @@ The device must report [**WWAN\_READY\_INFO**](/windows-hardware/drivers/ddi/wwa
 
 **Note**  
 There is no HCK test case to validate that this feature implemented on the device or system works with Windows. We look towards the OEM and the operator to use specific filters within MBOT to ensure that the final product can be tested.
-
- 
-
