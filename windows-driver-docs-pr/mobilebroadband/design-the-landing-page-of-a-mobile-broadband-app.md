@@ -1,36 +1,34 @@
 ---
 title: Design the landing page of a mobile broadband app
 description: Design the landing page of a mobile broadband app
-ms.date: 04/20/2017
+ms.date: 10/05/2023
 ---
 
 # Design the landing page of a mobile broadband app
 
-
 The landing page is the first page that the user sees when they start the mobile broadband app, except for certain cases that are described in [Integrate a mobile broadband app with other Windows components](integrate-a-mobile-broadband-app-with-other-windows-components.md#launchpts).
 
-![landing page postpaid.](images/mb-fig1-landing-page-postpaid.png)
+:::image type="content" source="images/mb-fig1-landing-page-postpaid.png" alt-text="Screenshot of a postpaid mobile broadband app landing page.":::
 
 The landing page should follow UWP app guidelines for app layout. To encourage simplicity and ease of navigation, we recommend that you fit all contents of the landing page into a single page. The landing page is the central hub of your app. Although it is not a primary navigation method or management page, it showcases your app and its major functionality.
 
 The following sections describe some of the content that you can include in the landing page:
 
--   [Usage – show an overview or link](#usageov)
+- [Usage – show an overview or link](#usageov)
 
--   [Operator messages – show an overview or link](#opmsg)
+- [Operator messages – show an overview or link](#opmsg)
 
--   [Links to other key pages](#keylinks)
+- [Links to other key pages](#keylinks)
 
--   [App navigation](#appnav)
+- [App navigation](#appnav)
 
--   [Operator branding](#opbrand)
+- [Operator branding](#opbrand)
 
--   [Quick summary](#sum)
+- [Quick summary](#sum)
 
--   [Additional resources](#res)
+- [Additional resources](#res)
 
 ## <span id="usageov"></span><span id="USAGEOV"></span>Usage – show an overview or link
-
 
 ### <span id="Postpaid_plans"></span><span id="postpaid_plans"></span><span id="POSTPAID_PLANS"></span>Postpaid plans
 
@@ -40,74 +38,64 @@ Because it is important user to be able to see information about their data usag
 
 Data usage display is simplified for prepaid plans. A user should also be offered an option to recharge or refill their plan. You can provide a link to a page that offers payment options. See [Design billing pages in a mobile broadband app](design-billing-pages-in-a-mobile-broadband-app.md) for more info. The following shows a typical overview page for a prepaid plan:
 
-![landing page prepaid.](images/mb-fig2-landing-page-prepaid.png)
+:::image type="content" source="images/mb-fig2-landing-page-prepaid.png" alt-text="Screenshot of a prepaid mobile broadband app landing page.":::
 
 ## <span id="opmsg"></span><span id="OPMSG"></span>Operator messages – show an overview or link
-
 
 A list of operator text messages can be highlighted on the landing page. Because a number of operator messages are high priority, users prefer having easy access to these. For more information about functionality that should be included for text messages, see [Design messages in a mobile broadband app](design-messages-in-a-mobile-broadband-app.md).
 
 ## <span id="keylinks"></span><span id="KEYLINKS"></span>Links to other key pages
 
-
 You can provide links to other key pages on the landing page. For example, you could include a tile for **Help and Support** and a tile for **Services**.
 
 ## <span id="appnav"></span><span id="APPNAV"></span>App navigation
 
-
 When describing the landing page, it is important to consider navigation within the app. Your app will have multiple pages that have various purposes. Windows 10 offers the following tools that can be used for navigation:
 
--   **Back button** The Back button can be used to return to the previous page in the app. For more information about the Back button styling, see [Quickstart: styling controls](/previous-versions/windows/apps/hh465498(v=win.10)).
+- **Back button** The Back button can be used to return to the previous page in the app. For more information about the Back button styling, see [Quickstart: styling controls](/previous-versions/windows/apps/hh465498(v=win.10)).
 
--   **Drop-down affordance with header text** The header text can be used as a drop-down affordance for navigation between multiple pages in an app. In the previous figures, clicking **Account Overview** would result in a drop-down list of pages in the app that can be navigated to, as shown in the following figure:
+- **Drop-down affordance with header text** The header text can be used as a drop-down affordance for navigation between multiple pages in an app. In the previous figures, clicking **Account Overview** would result in a drop-down list of pages in the app that can be navigated to, as shown in the following figure:
 
-    ![navigating between apps.](images/mb-fig3-nav-between-apps.png)
+    :::image type="content" source="images/mb-fig3-nav-between-apps.png" alt-text="Screenshot of a drop-down menu for navigating between app pages.":::
 
     For more information about designing app navigation, see [Quickstart: Using single-page navigation](/previous-versions/windows/apps/hh452768(v=win.10)) and [**select element | select object**](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select).
 
 ## <span id="opbrand"></span><span id="OPBRAND"></span>Operator branding
 
-
 You can customize your mobile broadband app to suit your individual branding style. By using numerous customizations, you can make your app unique and easily recognizable. For more info on how you can brand your app, see [Design branding in a mobile broadband app](design-branding-in-a-mobile-broadband-app.md).
 
 ## <span id="sum"></span><span id="SUM"></span>Quick summary
 
-
 ### <span id="Appropriate_design_for_the_landing_page"></span><span id="appropriate_design_for_the_landing_page"></span><span id="APPROPRIATE_DESIGN_FOR_THE_LANDING_PAGE"></span>Appropriate design for the landing page
 
--   Show information at a glance that users will primarily look for in your app.
+- Show information at a glance that users will primarily look for in your app.
 
--   Use a simple layout to improve readability.
+- Use a simple layout to improve readability.
 
--   Follow UWP app guidelines.
+- Follow UWP app guidelines.
 
--   Disable the **Back** button if this is the first time that the user is visiting the app.
+- Disable the **Back** button if this is the first time that the user is visiting the app.
 
 ### <span id="Inappropriate_design_for_the_landing_page"></span><span id="inappropriate_design_for_the_landing_page"></span><span id="INAPPROPRIATE_DESIGN_FOR_THE_LANDING_PAGE"></span>Inappropriate design for the landing page
 
--   Don’t have scrolling on the landing page. Try to restrict all content to a single page.
+- Don’t have scrolling on the landing page. Try to restrict all content to a single page.
 
--   Don’t have management functionality on the landing page.
+- Don’t have management functionality on the landing page.
 
 ## <span id="res"></span><span id="RES"></span>Additional resources
 
+- [Index of UX guidelines for UWP apps](https://developer.microsoft.com/windows/apps/design)
 
--   [Index of UX guidelines for UWP apps](https://developer.microsoft.com/windows/apps/design)
+- [Adding controls and content](/previous-versions/windows/apps/hh465393(v=win.10))
 
--   [Adding controls and content](/previous-versions/windows/apps/hh465393(v=win.10))
+- [Make great UWP apps](/windows/uwp/get-started/create-uwp-apps)
 
--   [Make great UWP apps](/windows/uwp/get-started/create-uwp-apps)
+- [Laying out your UI](/previous-versions/windows/apps/hh465304(v=win.10))
 
--   [Laying out your UI](/previous-versions/windows/apps/hh465304(v=win.10))
+- [Integrate a mobile broadband app with other Windows components](integrate-a-mobile-broadband-app-with-other-windows-components.md#splash)
 
--   [Integrate a mobile broadband app with other Windows components](integrate-a-mobile-broadband-app-with-other-windows-components.md#splash)
-
--   [Integrate a mobile broadband app with other Windows components](integrate-a-mobile-broadband-app-with-other-windows-components.md#tileandtoast)
+- [Integrate a mobile broadband app with other Windows components](integrate-a-mobile-broadband-app-with-other-windows-components.md#tileandtoast)
 
 ## <span id="related_topics"></span>Related topics
 
-
 [Designing the user experience of a mobile broadband app](designing-the-user-experience-of-a-mobile-broadband-app.md)
-
- 
-

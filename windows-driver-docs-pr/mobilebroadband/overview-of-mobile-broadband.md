@@ -288,7 +288,7 @@ Devices such as DVRs, gateway routers, mobile hotspots, and phones can (while co
 
 The components that support the key scenarios for mobile broadband in Windows 8, Windows 8.1, and Windows 10 are discussed in this section. They are divided between those that are part of the Windows operating system and those that are part of the service metadata or mobile broadband app.
 
-![components for providing an operator experience.](images/mb-overviewtechnicalcomponents.jpg)
+:::image type="content" source="images/mb-overviewtechnicalcomponents.jpg" alt-text="Diagram that shows components for providing a mobile operator experience.":::
 
 ### Windows components
 

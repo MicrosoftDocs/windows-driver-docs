@@ -1,11 +1,10 @@
 ---
 title: Integrate a mobile broadband app with other Windows components
 description: Integrate a mobile broadband app with other Windows components
-ms.date: 04/20/2017
+ms.date: 10/06/2023
 ---
 
 # Integrate a mobile broadband app with other Windows components
-
 
 You can use Windows 10 user interface (UI) surfaces to enhance the overall experience of your mobile broadband app.
 
@@ -13,112 +12,106 @@ For additional user experience design guidelines for layout, navigation, command
 
 This topic contains the following sections:
 
--   [App settings](#app-settings)
+- [App settings](#app-settings)
 
--   [Error user experience](#errorux)
+- [Error user experience](#errorux)
 
--   [App views](#appviews)
+- [App views](#appviews)
 
--   [Launch points](#launchpts)
+- [Launch points](#launchpts)
 
--   [Tile and toast notifications](#tileandtoast)
+- [Tile and toast notifications](#tileandtoast)
 
--   [Splash screen](#splash)
+- [Splash screen](#splash)
 
--   [Quick summary](#qusum)
+- [Quick summary](#qusum)
 
--   [Additional resources](#resources)
+- [Additional resources](#resources)
 
 ## App settings
 
-
 You can use [App settings](/windows/uwp/app-settings/guidelines-for-app-settings) to include settings for your apps configuration. Some examples of these are as follows:
 
--   Sign in and sign out
+- Sign in and sign out
 
--   View and edit the user profile
+- View and edit the user profile
 
--   Change billing address
+- Change billing address
 
--   View and edit payment options
+- View and edit payment options
 
--   View and set marketing preferences
+- View and set marketing preferences
 
 ## <span id="errorux"></span><span id="ERRORUX"></span>Error user experience
-
 
 ### <span id="General"></span><span id="general"></span><span id="GENERAL"></span>General
 
 Your mobile broadband app can have a number of error cases that should be dealt with gracefully. Some common examples are as follows:
 
--   **Device is missing or unplugged** Appears when a device such as a SIM or a dongle is missing or unplugged.
+- **Device is missing or unplugged** Appears when a device such as a SIM or a dongle is missing or unplugged.
 
--   **Locked device** Appears when a connected device is locked to the user.
+- **Locked device** Appears when a connected device is locked to the user.
 
--   **Internet connectivity lost** Appears when no network connection is detected.
+- **Internet connectivity lost** Appears when no network connection is detected.
 
--   **Multiple devices are plugged in** Appears when a built-in adaptor and an external dongle are plugged in. A notification bar error is recommended for such cases.
+- **Multiple devices are plugged in** Appears when a built-in adaptor and an external dongle are plugged in. A notification bar error is recommended for such cases.
 
--   **Form field validation errors** Appears when a user enters incorrect information into a form. Validation errors should be shown inline so that the user knows the field with which the error is associated.
+- **Form field validation errors** Appears when a user enters incorrect information into a form. Validation errors should be shown inline so that the user knows the field with which the error is associated.
 
 For guidance on how to present errors, see [Laying out your UI](/previous-versions/windows/apps/hh465304(v=win.10)). In the example below, a notification bar is displayed at the top of the page.
 
-![notification bar shows errors.](images/mb-fig1-notificationbarerrors.png)
+:::image type="content" source="images/mb-fig1-notificationbarerrors.png" alt-text="Screenshot of a notification bar displaying errors.":::
 
 ### <span id="Errors_in_data_usage"></span><span id="errors_in_data_usage"></span><span id="ERRORS_IN_DATA_USAGE"></span>Errors in data usage
 
 The following error cases should be shown on the overview page in the following ways:
 
--   **When the user is near plan expiration**: Use a bar on the top of the screen to indicate that the user’s plan is close to expiration.
+- **When the user is near plan expiration**: Use a bar on the top of the screen to indicate that the user’s plan is close to expiration.
 
--   **When usage is over the data cap** The data bars should be full and there should also be an inline message that describes the issue and tells the user what to do about it. Alternatively, the over data cap usage message can be in a notification bar on the top of the page.
+- **When usage is over the data cap** The data bars should be full and there should also be an inline message that describes the issue and tells the user what to do about it. Alternatively, the over data cap usage message can be in a notification bar on the top of the page.
 
--   **When the plan is expired**: Use a bar on the top of the summary box to describe the issue and actions that the user can take. In this case, data usage, billing cycle, and roaming information is not displayed.
+- **When the plan is expired**: Use a bar on the top of the summary box to describe the issue and actions that the user can take. In this case, data usage, billing cycle, and roaming information is not displayed.
 
--   **International roaming**: Indicate roaming at the bottom of the summary section.
+- **International roaming**: Indicate roaming at the bottom of the summary section.
 
 ## <span id="appviews"></span><span id="APPVIEWS"></span>App views
 
-
 Your app should be adaptive and be able to fit a number of layouts, including:
 
--   Landscape
+- Landscape
 
--   Portrait
+- Portrait
 
--   Side by side with another app
+- Side by side with another app
 
--   Filled
+- Filled
 
--   Keyboard up
+- Keyboard up
 
     **Note**  
     When the touch keyboard is up, make sure that elements such as form fields scroll appropriately.
 
-     
-
 The following examples show how some pages look when side by side with another app.
 
-![landing page side by side with another app.](images/mb-fig2-snappedview-landingpage.png)
+:::image type="content" source="images/mb-fig2-snappedview-landingpage.png" alt-text="Screenshot of a mobile broadband app's landing page displayed side by side with another app.":::
 
-![services page side by side with another app.](images/mb-fig3-snappedview-servicespage.png)
+:::image type="content" source="images/mb-fig3-snappedview-servicespage.png" alt-text="Screenshot of a mobile broadband app's services page displayed side by side with another app.":::
 
 Make sure that your app is accessible through app views, including high-contrast mode and screen reader readiness. For more information about how to make your app accessible, see [Accessibility in UWP apps using JavaScript](/previous-versions/windows/apps/hh452681(v=win.10)).
 
 ## <span id="launchpts"></span><span id="LAUNCHPTS"></span>Launch points
 
-
 Your mobile broadband app is available to users in the **All Apps** view, in Windows Connection Manager, or through a toast notification.
 
-![entry points to start app.](images/mb-fig4-entrypoints.png)
+:::image type="content" source="images/mb-fig4-entrypoints.png" alt-text="Diagram showing various entry points to launch a mobile broadband app.":::
 
 ### <span id="Launch_from_Windows_Connection_Manager"></span><span id="launch_from_windows_connection_manager"></span><span id="LAUNCH_FROM_WINDOWS_CONNECTION_MANAGER"></span>Launch from Windows Connection Manager
 
-![start app by using windows connection manager.](images/mb-fig5-startfromwcm.png)
+:::image type="content" source="images/mb-fig5-startfromwcm.png" alt-text="Screenshot of starting a mobile broadband app using Windows Connection Manager.":::
 
 You can connect to the mobile broadband app by using Windows Connection Manager. Your app should open to the landing page with account and data usage information. After you are connected, Windows Connection Manager shows the current account and data usage.
 
-![windows connection manager account information.](images/mb-fig6-wcmaccountinfo.png)
+:::image type="content" source="images/mb-fig6-wcmaccountinfo.png" alt-text="Screenshot of Windows Connection Manager displaying account and data usage information.":::
 
 **Automatic launch from connection manager during a captive portal purchase flow**
 
@@ -134,11 +127,11 @@ If your app was suspended or already running, it should show the last page used.
 
 In the **Start** menu, tiles are the primary representation of an app. Users launch their apps through those tiles, which can display new, relevant, and tailored content through notifications. This makes the **Start** menu feel vibrant, and allows the user to see what's new at a glance. An app can also communicate time-critical events to the user through toast notifications, whether the user is in another app, on the **Start** screen, or on the Desktop. The methodology to design and deliver toast closely parallels that of tiles, thereby lowering the learning curve.
 
-![start screen tile.](images/mb-fig7-startscreentile.png)
+:::image type="content" source="images/mb-fig7-startscreentile.png" alt-text="Screenshot of a mobile broadband app's tile on the Windows Start screen.":::
 
 A toast notification can contain text and images but do not support secondary actions such as buttons. Think of toast as similar to a Windows balloon notification from the taskbar's notification area. Like balloon notifications, a toast appears in the lower-right corner of the screen. When a user taps or clicks on the toast, the associated app is launched in a view that is related to the notification. This is the only mechanism by which one app can interrupt a user in another app. Toasts can be activated, dismissed, or ignored by the user. The user can disable all toasts for an app.
 
-![toast notification.](images/mb-fig8-toastonpage.png)
+:::image type="content" source="images/mb-fig8-toastonpage.png" alt-text="Screenshot of a toast notification for a mobile broadband app.":::
 
 A toast notification should be used only for information of high interest to the user and typically involves some form of user opt-in. It is a good choice for incoming email alerts, IM chat requests, and breaking news. However, it is very important that when you consider using a toast notification, you realize that, due to its transient nature, the user might never see it. When using toast notifications for data usage overage or roaming alerts, consider showing the information on your tile and within your app views in case the end user misses the toast notification.
 
@@ -146,34 +139,30 @@ A toast notification should be used only for information of high interest to the
 
 You can use splash screen to promote branding. For more info about the splash screen, see [Adding a splash screen](/previous-versions/windows/apps/hh465332(v=win.10)).
 
-![splash screen.](images/mb-fig4-splash-screen.png)
+:::image type="content" source="images/mb-fig4-splash-screen.png" alt-text="Screenshot of a mobile broadband app's splash screen promoting branding.":::
 
 ### <span id="qusum"></span><span id="QUSUM"></span>Quick summary
 
 Appropriate design for operator notifications:
 
--   Use both toast and tile notifications to alert users of important and high-interest messages that relate to the subscriber’s account and service plan.
+- Use both toast and tile notifications to alert users of important and high-interest messages that relate to the subscriber’s account and service plan.
 
--   Customize toast and tile background colors and logo based on your brand guidelines.
+- Customize toast and tile background colors and logo based on your brand guidelines.
 
--   Include important SMS or USSD operator notifications and alerts that relate to the subscriber’s account and service plan directly on the landing page.
+- Include important SMS or USSD operator notifications and alerts that relate to the subscriber’s account and service plan directly on the landing page.
 
 Inappropriate design for operator notifications:
 
--   Don’t show toast notifications for information that is not real time (such as promotional advertisements).
+- Don’t show toast notifications for information that is not real time (such as promotional advertisements).
 
--   Don’t show user-to-user chat messages and promotions and advertisements mixed together with operator notifications and alerts, because end users can miss important operator notifications.
+- Don’t show user-to-user chat messages and promotions and advertisements mixed together with operator notifications and alerts, because end users can miss important operator notifications.
 
 ### <span id="resources"></span><span id="RESOURCES"></span>Additional resources
 
--   [Working with tiles, badges, and toast notifications](/previous-versions/windows/apps/hh868259(v=win.10))
+- [Working with tiles, badges, and toast notifications](/previous-versions/windows/apps/hh868259(v=win.10))
 
--   [Guidelines and checklist for toast notifications](/windows/uwp/controls-and-patterns/tiles-badges-notifications)
+- [Guidelines and checklist for toast notifications](/windows/uwp/controls-and-patterns/tiles-badges-notifications)
 
 ## <span id="related_topics"></span>Related topics
 
-
 [Designing the user experience of a mobile broadband app](designing-the-user-experience-of-a-mobile-broadband-app.md)
-
- 
-
