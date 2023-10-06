@@ -9,11 +9,11 @@ ms.date: 07/31/2021
 Follow these steps to diagnose the logs related to mobile broadband using Wireshark:
 
 
-1. Download the ETW (Event Tracing for Windows) reader. Only Wireshark 3.5 packages the ETW reader, however Wireshark 3.5 hasn’t been officially released yet. You can download it from the [Index of /download/automated/win64](https://www.wireshark.org/download/automated/win64/).
+1. Download the ETW (Event Tracing for Windows) reader. Wireshark packages the ETW reader starting from version 3.5.
 
  
 
-2. After you start the Wireshark 3.5 installer, one of the steps is **Choose Components**.
+2. After you start the Wireshark installer, one of the steps is **Choose Components**.
  
    :::image type="content" source="images/wireshark-mbb-install0.png" alt-text="Screenshot of Wireshark installer's Choose Components window.":::
 
