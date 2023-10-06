@@ -1,27 +1,27 @@
 ---
-title: Battery Class Driver Functionality
-description: Battery Class Driver Functionality
-keywords:
-- battery class drivers WDK , functionality
-ms.date: 04/20/2017
+title: Battery class driver functionality
+description: Discover the functionality of the kernel-mode battery class driver and the tasks it performs for miniclass drivers.
+ms.date: 10/04/2023
 ---
 
-# Battery Class Driver Functionality
+# Battery class driver functionality
 
-The kernel-mode battery class driver, battc.sys, provides device-independent battery support and exports support routines for use by all device-specific battery miniclass drivers.
+The kernel-mode battery class driver, battc.sys, provides device-independent battery support and exports support routines for all device-specific battery miniclass drivers.
 
-The battery class driver takes care of the following tasks for miniclass drivers:
+## Tasks performed by the battery class driver
 
-- Performing a large part of miniclass driver initialization, including allocating system resources and space for the miniclass driver's class data
+The battery class driver handles the following tasks for miniclass drivers:
 
-- Handling device control IRPs ([**IRP\_MJ\_DEVICE\_CONTROL**](../kernel/irp-mj-device-control.md)) that specify battery class IOCTLs. (See the Microsoft Windows SDK for information about these IOCTLs.)
+- Completing a significant portion of miniclass driver initialization, including allocating system resources and space for the miniclass driver's class data
+
+- Processing device control IRPs ([**IRP_MJ_DEVICE_CONTROL**](../kernel/irp-mj-device-control.md)) that specify battery class IOCTLs (refer to the Microsoft Windows SDK for information about these IOCTLs)
 
 - Serializing requests to the battery device
 
-- Administering DC power policy for the operating system
+- Managing DC power policy for the operating system
 
-- Freeing system resources if the miniclass driver is unloaded
+- Releasing system resources when the miniclass driver is unloaded
 
-- Handling certain standard battery WMI classes
+- Handling specific standard battery WMI classes
 
-See [Battery Miniclass Driver Routines](/windows-hardware/drivers/ddi/_battery/) for descriptions of the routines that the battery class driver exports to battery miniclass drivers.
+For descriptions of the routines that the battery class driver exports to battery miniclass drivers, see [Battery miniclass driver routines](/windows-hardware/drivers/ddi/_battery/).
