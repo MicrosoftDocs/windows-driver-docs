@@ -228,6 +228,6 @@ The following COSA settings are required:
 - DataMarketplaceRoamingUIEnabled
 - SIM ICCID range (ICCID Range – Start and ICCID Range – End)
 
-For more info about all supported fields, see the Desktop COSA-only settings on [Desktop COSA/APN database settings](desktop-cosa-apn-database-settings.md).
+For more info about all supported fields, see the Desktop COSA-only settings on [Desktop COSA database settings](desktop-cosa-database-settings.md).
 
 Download the [COSA/APN update spreadsheet](https://go.microsoft.com/fwlink/p/?linkid=851213).

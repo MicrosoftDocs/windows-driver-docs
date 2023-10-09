@@ -3263,6 +3263,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "windows-driver-docs-pr/mobilebroadband/desktop-cosa-apn-database-settings.md",
+            "redirect_URL": "/windows-hardware/drivers/mobilebroadband/desktop-cosa-database-settings",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/mobilebroadband/get-started-with-a-hotspot-authentication-app.md",
             "redirect_URL": "/windows-hardware/drivers/mobilebroadband/review-the-hotspot-authentication-sample",
             "redirect_document_id": false
@@ -3315,6 +3320,11 @@
         {
             "source_path": "windows-driver-docs-pr/mobilebroadband/planning-your-apn-database-submission.md",
             "redirect_URL": "/windows-hardware/drivers/mobilebroadband/planning-your-desktop-cosa-apn-database-submission",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/mobilebroadband/planning-your-desktop-cosa-apn-database-submission.md",
+            "redirect_URL": "/windows-hardware/drivers/mobilebroadband/planning-your-desktop-cosa-database-submission",
             "redirect_document_id": false
         },
         {

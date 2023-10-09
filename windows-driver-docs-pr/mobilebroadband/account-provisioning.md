@@ -1,12 +1,12 @@
 ---
 title: Account provisioning
 description: Account provisioning
-ms.date: 10/05/2023
+ms.date: 10/09/2023
 ---
 
 # Account provisioning
 
-Provisioning refers to configuring a Windows computer with the information that is required to connect to an operator network. Provisioning is usually performed after a mobile broadband subscription purchase. Windows accepts an XML-based provisioning file from the operator. The Provisioning API applies a provisioning XML file from the operator, either by using a mobile broadband app or through a purchase web site.
+Provisioning refers to configuring a Windows computer with the information that is required to connect to an operator network. Provisioning is usually performed after a mobile broadband subscription purchase. Windows accepts an XML-based provisioning file from the operator. The [Provisioning API](/windows-hardware/drivers/mobilebroadband/provisioning-api) applies a provisioning XML file from the operator, either by using a mobile broadband app or through a purchase web site.
 
 The following diagram illustrates the contents and hierarchy of the provisioning XML file.
 
@@ -22,7 +22,7 @@ There are several ways you can update the provisioning metadata on a computer.
 
 After the mobile broadband app is installed on the computer, it can retrieve or generate an updated provisioning file based on any trigger that you implement in the app.
 
-Mobile broadband apps can apply provisioning files by using the [**Windows.Networking.NetworkOperator.ProvisioningAgent**](/uwp/api/Windows.Networking.NetworkOperators.ProvisioningAgent) APIs. If the app is associated with a Network Account ID, it can use [**CreateFromNetworkAccountId**](/uwp/api/Windows.Networking.NetworkOperators.ProvisioningAgent#Windows_Networking_NetworkOperators_ProvisioningAgent_CreateFromNetworkAccountId_System_String_) to provide unsigned metadata. If the app is not associated with a Network Account ID, it must use the default constructor for **ProvisioningAgent** and sign the XML.
+Mobile broadband apps can apply provisioning files by using the **[Windows.Networking.NetworkOperator.ProvisioningAgent](/uwp/api/Windows.Networking.NetworkOperators.ProvisioningAgent)** APIs. If the app is associated with a network account ID, it can use **[CreateFromNetworkAccountId](/uwp/api/Windows.Networking.NetworkOperators.ProvisioningAgent#Windows_Networking_NetworkOperators_ProvisioningAgent_CreateFromNetworkAccountId_System_String_)** to provide unsigned metadata. If the app is not associated with a network account ID, it must use the default constructor for **ProvisioningAgent** and sign the XML.
 
 A mobile broadband app can use the following triggers to update the provisioning metadata:
 
@@ -40,9 +40,9 @@ A mobile broadband app can use the following triggers to update the provisioning
 
 ### Web-based provisioning
 
-A web site can supply provisioning data by using the [**window.external.msProvisionNetworks**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/dn529170(v=vs.85)) API. Provisioning files that are supplied to this API must be signed by using an X.509 certificate and XML-DSig.
+A web site can supply provisioning data by using the **[window.external.msProvisionNetworks](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/dn529170(v=vs.85))** API. Provisioning files that are supplied to this API must be signed by using an X.509 certificate and XML-DSig.
 
-Certificates can be pre-supplied to the computer by using the APN database, service metadata, or a previous account provisioning metadata file. If the certificate is already trusted, there is no user interaction. If the certificate is not previously known to the computer, it must be an EV certificate, and the user is prompted for consent before the certificate is accepted.
+Certificates can be pre-supplied to the computer by using the COSA database, service metadata, or a previous account provisioning metadata file. If the certificate is already trusted, there is no user interaction. If the certificate is not previously known to the computer, it must be an EV certificate, and the user is prompted for consent before the certificate is accepted.
 
 ### Automatic provisioning refresh
 
@@ -74,13 +74,13 @@ For more info about these sections, see [CarrierControlSchema schema](/uwp/schem
 
 The global section is required in every provisioning file. Required elements in this section are as follows:
 
-- [**CarrierId**](/uwp/schemas/mobilebroadbandschema/carriercontrolschema/element-carrierid) A GUID that uniquely identifies the organization that authored the file. If you are building a mobile broadband app, you must use the GUID that you specified in the [Service Number](../dashboard/index.yml) field of **ServiceInfo.xml** in the service metadata package. For info about the service metadata package schema, see [Service metadata package schema reference](mobilebroadbandinfo-xml-schema.md).
+- **[CarrierId](/uwp/schemas/mobilebroadbandschema/carriercontrolschema/element-carrierid)** A GUID that uniquely identifies the organization that authored the file. If you are building a mobile broadband app, you must use the GUID that you specified in the [Service Number](../dashboard/index.yml) field of **ServiceInfo.xml** in the service metadata package. For info about the service metadata package schema, see [Service metadata package schema reference](mobilebroadbandinfo-xml-schema.md).
 
   > [!NOTE]
   > This is the same service number that you provided in the **Create a mobile broadband experience wizard** on the Windows Dev Center Dashboard – Hardware.
   > If you are not creating a mobile broadband app, you can generate a GUID for your organization’s use. In either case, you should always use the same GUID on all provisioning files that your organization issues.
 
-- [**SubscriberId**](/uwp/schemas/mobilebroadbandschema/carriercontrolschema/element-subscriberid) A string that uniquely identifies the customer in your organization. If you are a mobile operator, this should be the IMSI or ICCID ranges for GSM operators or the provider ID or provider name for CDMA operators. If you are not a mobile operator, you can choose any sufficiently unique string.
+- **[SubscriberId](/uwp/schemas/mobilebroadbandschema/carriercontrolschema/element-subscriberid)** A string that uniquely identifies the customer in your organization. If you are a mobile operator, this should be the IMSI or ICCID ranges for GSM operators or the provider ID or provider name for CDMA operators. If you are not a mobile operator, you can choose any sufficiently unique string.
 
 ### Activation
 
@@ -96,13 +96,13 @@ Device activation occurs after the activation process is complete on the back en
 
 Mobile broadband information contains several elements:
 
-[**MBNProfiles**](/uwp/schemas/mobilebroadbandschema/carriercontrolschema/element-mbnprofiles)
+**[MBNProfiles](/uwp/schemas/mobilebroadbandschema/carriercontrolschema/element-mbnprofiles)**
 
 Defines subscriber information on the mobile operator network. There are two different profiles that can be used:
 
-- [**PurchaseProfile**](/uwp/schemas/mobilebroadbandschema/carriercontrolschema/element-purchaseprofile): Information that is needed to connect to the operator’s network to purchase a new subscription.
+- **[PurchaseProfile](/uwp/schemas/mobilebroadbandschema/carriercontrolschema/element-purchaseprofile)**: Information that is needed to connect to the operator’s network to purchase a new subscription.
 
-- [**DefaultProfile**](/uwp/schemas/mobilebroadbandschema/carriercontrolschema/element-defaultprofile) Every mobile broadband subscription can have one default profile that is used to connect to the home network operator. Windows Connection Manager uses this profile for auto-connecting to the network.
+- **[DefaultProfile](/uwp/schemas/mobilebroadbandschema/carriercontrolschema/element-defaultprofile)** Every mobile broadband subscription can have one default profile that is used to connect to the home network operator. Windows Connection Manager uses this profile for auto-connecting to the network.
 
     ```xml
     <MBNProfiles>
@@ -121,20 +121,20 @@ Defines subscriber information on the mobile operator network. There are two dif
       </MBNProfiles>
     ```
 
-[**Branding**](/uwp/schemas/mobilebroadbandschema/wwan/element-branding)
+**[Branding](/uwp/schemas/mobilebroadbandschema/wwan/element-branding)**
 
 > [!IMPORTANT]
 > Starting in Windows 10, version 1709, branding fields provisioned by the ProvisioningAgent API have been replaced by branding fields in the COSA database. **Logo** has been replaced by **Branding Icon** in COSA, and **Name** has been replaced by **Branding Name** in COSA.
 >
 > **Logo** and **Name** will no longer be considered when provisioning in Windows 10, version 1709 and later. The ProvisioningAgent API will not throw an error if they are used, but you should change **Branding Icon** and **Branding Name** in COSA instead.  
 >
-> For more information about **Branding Icon** and **Branding Name**, see [Desktop COSA/APN database settings (Desktop COSA only settings)](desktop-cosa-apn-database-settings.md#desktop-cosa-only-settings).
+> For more information about **Branding Icon** and **Branding Name**, see [Desktop COSA database settings](desktop-cosa-database-settings.md).
 
 Branding lets you specify how Windows displays your mobile broadband networks. This information overrides any service metadata, if present. If no information is provided, the contents of the service metadata package are used. The branding elements are as follows:
 
-- [**Logo**](/uwp/schemas/mobilebroadbandschema/wwan/element-logo) A Base64-encoded .PNG or.BMP file that is embedded in the XML. This logo is applied to your mobile broadband profiles for display in the Network List.
+- **[Logo](/uwp/schemas/mobilebroadbandschema/wwan/element-logo)** A Base64-encoded .PNG or.BMP file that is embedded in the XML. This logo is applied to your mobile broadband profiles for display in the Network List.
 
-- [**Name**](/uwp/schemas/mobilebroadbandschema/wwan/element-name) Sets the carrier’s display name for the mobile broadband profiles.
+- **[Name](/uwp/schemas/mobilebroadbandschema/wwan/element-name)** Sets the carrier’s display name for the mobile broadband profiles.
 
 #### SMS Parsing
 
@@ -364,7 +364,7 @@ This information is used to directly affect the behavior of Windows, and is prov
 
 The elements that generally change with low frequency over a customer’s subscription period, including:
 
-- [**PlanType**](/uwp/schemas/mobilebroadbandschema/wwan/element-plantype) The type of billing relationship the customer has with the operator:
+- **[PlanType](/uwp/schemas/mobilebroadbandschema/wwan/element-plantype)** The type of billing relationship the customer has with the operator:
 
   - **Unrestricted** Usage does not incur additional cost.
 
@@ -372,39 +372,39 @@ The elements that generally change with low frequency over a customer’s subscr
 
   - **Variable** The user pays based on usage.
 
-- [**SecurityUpdatesExempt**](/uwp/schemas/mobilebroadbandschema/plans/element-securityupdatesexempt) A Boolean value that specifies whether security updates count toward the customer’s usage.
+- **[SecurityUpdatesExempt](/uwp/schemas/mobilebroadbandschema/plans/element-securityupdatesexempt)** A Boolean value that specifies whether security updates count toward the customer’s usage.
 
-- [**DataLimitInMegabytes**](/uwp/schemas/mobilebroadbandschema/plans/element-datalimitinmegabytes) The user’s allotted usage, if [**PlanType**](/uwp/schemas/mobilebroadbandschema/wwan/element-plantype) is **Fixed**.
+- **[DataLimitInMegabytes](/uwp/schemas/mobilebroadbandschema/plans/element-datalimitinmegabytes)** The user’s allotted usage, if **[PlanType](/uwp/schemas/mobilebroadbandschema/wwan/element-plantype)** is **Fixed**.
 
-- [**BillingCycle**](/uwp/schemas/mobilebroadbandschema/plans/element-billingcycle) Defines the plan's starting date and time, its duration, and what happens at the end of the billing cycle.
+- **[BillingCycle](/uwp/schemas/mobilebroadbandschema/plans/element-billingcycle)** Defines the plan's starting date and time, its duration, and what happens at the end of the billing cycle.
 
-- [**BandwidthInKbps**](/uwp/schemas/mobilebroadbandschema/dusm/element-bandwidthinkbps) The user’s connection speed as allowed by the network; this can reflect the norm for their plan, or reflect a lower rate that is currently imposed by the carrier due to congestion or excessive use (maximum of 2 Gbps).
+- **[BandwidthInKbps](/uwp/schemas/mobilebroadbandschema/dusm/element-bandwidthinkbps)** The user’s connection speed as allowed by the network; this can reflect the norm for their plan, or reflect a lower rate that is currently imposed by the carrier due to congestion or excessive use (maximum of 2 Gbps).
 
-- [**MaxTransferSizeInMegabytes**](/uwp/schemas/mobilebroadbandschema/plans/element-maxtransfersizeinmegabytes) An integer that expresses the size of an individual download that a compliant application should permit over a metered connection, without explicit user approval of the connection being used.
+- **[MaxTransferSizeInMegabytes](/uwp/schemas/mobilebroadbandschema/plans/element-maxtransfersizeinmegabytes)** An integer that expresses the size of an individual download that a compliant application should permit over a metered connection, without explicit user approval of the connection being used.
 
-- [**UserSMSEnabled**](/uwp/schemas/mobilebroadbandschema/plans/element-usersmsenabled) Indicates whether the plan includes user-to-user SMS support. If true, Windows will keep the device attached to the network in Connected Standby even when the mobile broadband interface is not being used. If false, Windows can power down the mobile broadband interface to conserve power, thereby resulting in the device not being addressable by the network when the computer is idle.
+- **[UserSMSEnabled](/uwp/schemas/mobilebroadbandschema/plans/element-usersmsenabled)** Indicates whether the plan includes user-to-user SMS support. If true, Windows will keep the device attached to the network in Connected Standby even when the mobile broadband interface is not being used. If false, Windows can power down the mobile broadband interface to conserve power, thereby resulting in the device not being addressable by the network when the computer is idle.
 
 ### Usage
 
 The following elements can change with higher frequency:
 
-- [**UsageInMegabytes**](/uwp/schemas/mobilebroadbandschema/dusm/element-usageinmegabytes) The user’s most recent data usage.
+- **[UsageInMegabytes](/uwp/schemas/mobilebroadbandschema/dusm/element-usageinmegabytes)** The user’s most recent data usage.
 
-- [**OverDataLimit**](/uwp/schemas/mobilebroadbandschema/wwan/element-overdatalimit) A Boolean value that indicates whether the user has passed the allotted usage, if [**PlanType**](/uwp/schemas/mobilebroadbandschema/wwan/element-plantype) is **Fixed**.
+- **[OverDataLimit](/uwp/schemas/mobilebroadbandschema/wwan/element-overdatalimit)** A Boolean value that indicates whether the user has passed the allotted usage, if **[PlanType](/uwp/schemas/mobilebroadbandschema/wwan/element-plantype)** is **Fixed**.
 
-- [**Congested**](/uwp/schemas/mobilebroadbandschema/wwan/element-congested) A Boolean value that indicates whether a lower connection speed than usual is being imposed due to excessive usage. The Congested flag indicates that the network is currently experiencing (or expects to experience) heavy load, and lower-priority transfers should be deferred until another time, if possible. You can use this flag to indicate concepts such as peak hours, or to respond to an overloaded hotspot.
+- **[Congested](/uwp/schemas/mobilebroadbandschema/wwan/element-congested)** A Boolean value that indicates whether a lower connection speed than usual is being imposed due to excessive usage. The Congested flag indicates that the network is currently experiencing (or expects to experience) heavy load, and lower-priority transfers should be deferred until another time, if possible. You can use this flag to indicate concepts such as peak hours, or to respond to an overloaded hotspot.
 
 ### Refresh
 
 You can push updated settings to the computer as required because of network changes or for technical support. Windows attempts periodic refreshes by using information that is provided by you or by the provisioning API. A refresh can be triggered by SMS notifications from the operator. To enable Refresh, you must provide the following information in the provisioning XML:
 
-- [**TrustedCertificates**](/uwp/schemas/mobilebroadbandschema/carriercontrolschema/element-trustedcertificates) A list of certificate thumbprints that have trusted signatures on future provisioning files.
+- **[TrustedCertificates](/uwp/schemas/mobilebroadbandschema/carriercontrolschema/element-trustedcertificates)** A list of certificate thumbprints that have trusted signatures on future provisioning files.
 
-- [**DelayInDays**](/uwp/schemas/mobilebroadbandschema/carriercontrolschema/element-delayindays) The (integer) number of days before which a refresh is not attempted.
+- **[DelayInDays](/uwp/schemas/mobilebroadbandschema/carriercontrolschema/element-delayindays)** The (integer) number of days before which a refresh is not attempted.
 
-- [**RefreshURL**](/uwp/schemas/mobilebroadbandschema/carriercontrolschema/element-refreshurl) The HTTPS URL to get the latest copy of the user’s provisioning file.
+- **[RefreshURL](/uwp/schemas/mobilebroadbandschema/carriercontrolschema/element-refreshurl)** The HTTPS URL to get the latest copy of the user’s provisioning file.
 
-- [**UserName**](/uwp/schemas/mobilebroadbandschema/carriercontrolschema/element-username) & [**Password**](/uwp/schemas/mobilebroadbandschema/carriercontrolschema/element-password) Optional credentials that are to be presented by using HTTP-Auth when retrieving the re-provisioning file. This information must be encrypted when stored.
+- **[UserName](/uwp/schemas/mobilebroadbandschema/carriercontrolschema/element-username)** and **[Password](/uwp/schemas/mobilebroadbandschema/carriercontrolschema/element-password)** Optional credentials that are to be presented by using HTTP-Auth when retrieving the re-provisioning file. This information must be encrypted when stored.
 
 Alternatively, the mobile broadband app can provide a new provisioning file at any time, based on communication between the app and the operator’s backend.
 
@@ -426,12 +426,12 @@ Provisioning requirements:
 |SIM present?|Source of provisioning|Signature requirement|User confirmation requirement|
 |----|----|----|----|
 |Yes, MB provider|Mobile broadband app|None|None|
-|Yes, MB provider|Operator web site|Certificate must:</br>- Chain back to trusted root CA.</br>- Be associated with mobile broadband hardware in APN database or experience metadata.|None|
+|Yes, MB provider|Operator web site|Certificate must:</br>- Chain back to trusted root CA.</br>- Be associated with mobile broadband hardware in COSA database or experience metadata.|None|
 |No, Wi-Fi provider|Mobile broadband appor web site|Certificate must:</br>- Chain back to trusted root CA.</br>- Be marked for Extended Validation.|User is prompted to confirm the first time the certificate is used; no confirmation is required thereafter.|
 
 ### Permitted combinations
 
-Although [**Global**](/uwp/schemas/mobilebroadbandschema/carriercontrolschema/element-global) is the only first-level node that is required by the schema, certain combinations of other nodes are typical. This section discusses these typical combinations:
+Although **[Global](/uwp/schemas/mobilebroadbandschema/carriercontrolschema/element-global)** is the only first-level node that is required by the schema, certain combinations of other nodes are typical. This section discusses these typical combinations:
 
 - **Profiles (WLANProfiles, MBNProfiles) + Plans including Description and Usage** Creates or updates the full set of profiles, and applies plan information and current usage to each. An error is returned if a profile references a Plan that is not specified in the same provisioning file, and a warning is returned if no profile in the provisioning file references a specified Plan.
 
@@ -471,9 +471,9 @@ You can apply a provisioning XML file to a device by using a mobile broadband ap
 
 To provision from a mobile broadband app:
 
-1. Instantiate a [**ProvisioningAgent**](/uwp/api/Windows.Networking.NetworkOperators.ProvisioningAgent) instance (by using [**Windows.Networking.NetworkOperators.ProvisioningAgent.CreateFromNetworkAccountId**](/uwp/api/Windows.Networking.NetworkOperators.ProvisioningAgent#Windows_Networking_NetworkOperators_ProvisioningAgent_CreateFromNetworkAccountId_System_String_)).
+1. Instantiate a **[ProvisioningAgent](/uwp/api/Windows.Networking.NetworkOperators.ProvisioningAgent)** instance (by using **[Windows.Networking.NetworkOperators.ProvisioningAgent.CreateFromNetworkAccountId](/uwp/api/Windows.Networking.NetworkOperators.ProvisioningAgent#Windows_Networking_NetworkOperators_ProvisioningAgent_CreateFromNetworkAccountId_System_String_)**).
 
-2. Call [**ProvisionFromXmlDocumentAsync**](/uwp/api/Windows.Networking.NetworkOperators.ProvisioningAgent#Windows_Networking_NetworkOperators_ProvisioningAgent_ProvisionFromXmlDocumentAsync_System_String_), passing in the unsigned provisioning XML document.
+2. Call **[ProvisionFromXmlDocumentAsync](/uwp/api/Windows.Networking.NetworkOperators.ProvisioningAgent#Windows_Networking_NetworkOperators_ProvisioningAgent_ProvisionFromXmlDocumentAsync_System_String_)**, passing in the unsigned provisioning XML document.
 
 The asynchronous operation complete and the results of the provisioning operation are returned.
 
@@ -481,9 +481,9 @@ To provision from a UWP app other than the mobile broadband app:
 
 1. Generate a signed Account Provisioning XML document.
 
-2. Instantiate a [**ProvisioningAgent**](/uwp/api/Windows.Networking.NetworkOperators.ProvisioningAgent) instance (by using the default constructor).
+2. Instantiate a **[ProvisioningAgent](/uwp/api/Windows.Networking.NetworkOperators.ProvisioningAgent)** instance (by using the default constructor).
 
-3. Call [**ProvisionFromXmlDocumentAsync**](/uwp/api/Windows.Networking.NetworkOperators.ProvisioningAgent#Windows_Networking_NetworkOperators_ProvisioningAgent_ProvisionFromXmlDocumentAsync_System_String_), passing in the signed XML document.
+3. Call **[ProvisionFromXmlDocumentAsync](/uwp/api/Windows.Networking.NetworkOperators.ProvisioningAgent#Windows_Networking_NetworkOperators_ProvisioningAgent_ProvisionFromXmlDocumentAsync_System_String_)**, passing in the signed XML document.
 
 The asynchronous operation completes and the results of the provisioning operation are returned.
 
@@ -491,7 +491,7 @@ From a web site:
 
 1. Generate a signed Account Provisioning XML document.
 
-2. Call [**window.external.msProvisionNetworks**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/dn529170(v=vs.85)), passing in the signed XML document.
+2. Call **[window.external.msProvisionNetworks](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/dn529170(v=vs.85))**, passing in the signed XML document.
 
 The operation completes and the results of the provisioning operation are returned.
 
@@ -640,7 +640,7 @@ You should directly define credentials when possible. Redirecting to another app
 
 ### Sending activation to the mobile broadband device
 
-An arbitrary binary large object (BLOB) that is contained inside the [**CarrierSpecificData**](/uwp/schemas/mobilebroadbandschema/wwan/element-carrierspecificdata) element can be Base64-encoded and sent to the device by using the ProvisioningAgent. You can do this by using the **Activation&lt;ServiceActivatation&gt;** directive in the provisioning XML:
+An arbitrary binary large object (BLOB) that is contained inside the **[CarrierSpecificData](/uwp/schemas/mobilebroadbandschema/wwan/element-carrierspecificdata)** element can be Base64-encoded and sent to the device by using the ProvisioningAgent. You can do this by using the **Activation&lt;ServiceActivatation&gt;** directive in the provisioning XML:
 
 ``` syntax
 <?xml version="1.0"?>
@@ -657,7 +657,7 @@ An arbitrary binary large object (BLOB) that is contained inside the [**CarrierS
 </CarrierProvisioning>
 ```
 
-This method is equivalent to invoking the [**IMbnVendorSpecificOperation::SetVendorSpecific**](/windows/win32/api/mbnapi/nf-mbnapi-imbnvendorspecificoperation-setvendorspecific) method of the Mobile Broadband API, and passing a SAFEARRAY together with the BLOB contents.
+This method is equivalent to invoking the **[IMbnVendorSpecificOperation::SetVendorSpecific](/windows/win32/api/mbnapi/nf-mbnapi-imbnvendorspecificoperation-setvendorspecific)** method of the Mobile Broadband API, and passing a SAFEARRAY together with the BLOB contents.
 
 ### Force the mobile broadband device to reconnect to the network after provisioning completes
 
@@ -696,7 +696,7 @@ Optionally, you can specify these directives by using retry counts/intervals and
 
 ### Updating data usage statistics for a connection profile
 
-You can only update usage for profiles that were provisioned by using the [**ProvisioningAgent**](/uwp/api/Windows.Networking.NetworkOperators.ProvisioningAgent) by applying a new account provisioning file that has updated plan information. You can provide a provisioning file that contains only usage information, or only plan information. Depending on how much of the system configuration you want to change, the new provisioning file can include the following:
+You can only update usage for profiles that were provisioned by using the **[ProvisioningAgent](/uwp/api/Windows.Networking.NetworkOperators.ProvisioningAgent)** by applying a new account provisioning file that has updated plan information. You can provide a provisioning file that contains only usage information, or only plan information. Depending on how much of the system configuration you want to change, the new provisioning file can include the following:
 
 - Profiles, plan descriptions, and usage
 
@@ -728,7 +728,7 @@ If provisioning fails, you will receive an exception when you try to perform the
 
 ### Partial provisioning failures
 
-Portions of the provisioning operation might not succeed because of a variety of reasons. For example, you might have a reference to Wi-Fi hardware that is not present at the time of provisioning. The provisioning agent does a best effort attempt to provision everything in the file. When something fails, it is noted in the provisioning results that are asynchronously returned by using [**ProvisionFromXmlDocumentAsync**](/uwp/api/Windows.Networking.NetworkOperators.ProvisioningAgent#Windows_Networking_NetworkOperators_ProvisioningAgent_ProvisionFromXmlDocumentAsync_System_String_).
+Portions of the provisioning operation might not succeed because of a variety of reasons. For example, you might have a reference to Wi-Fi hardware that is not present at the time of provisioning. The provisioning agent does a best effort attempt to provision everything in the file. When something fails, it is noted in the provisioning results that are asynchronously returned by using **[ProvisionFromXmlDocumentAsync](/uwp/api/Windows.Networking.NetworkOperators.ProvisioningAgent#Windows_Networking_NetworkOperators_ProvisioningAgent_ProvisionFromXmlDocumentAsync_System_String_)**.
 
 The results are returned as XML and can be parsed to discover the failure. Elements provide structure to show what failed, and **ErrorCode** attributes indicate the reason for the failure as a standard HRESULT.
 

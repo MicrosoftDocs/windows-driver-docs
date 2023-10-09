@@ -10,7 +10,7 @@ COSA, or Country and Operator Settings Asset, is the data format that mobile ope
 
 For more information about the older APN database, see [APN database overview](apn-database-overview.md).
 
-To see a list of available settings MOs can configure in desktop COSA, see [Desktop COSA/APN database settings](desktop-cosa-apn-database-settings.md).
+To see a list of available settings MOs can configure in desktop COSA, see [Desktop COSA database settings](desktop-cosa-database-settings.md).
 
 ## FAQ
 

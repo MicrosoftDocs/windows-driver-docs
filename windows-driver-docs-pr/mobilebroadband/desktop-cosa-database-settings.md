@@ -1,42 +1,24 @@
 ---
-title: Desktop COSA/APN database settings
-description: Desktop COSA/APN database settings
-ms.date: 01/28/2019
+title: Desktop COSA database settings
+description: Desktop COSA database settings
+ms.date: 10/09/2023
 ---
 
-# Desktop COSA/APN database settings
+# Desktop COSA database settings
 
-This topic describes the settings available in desktop COSA and the APN database (apndatabase.xml).
+This topic describes the settings available in the desktop COSA database.
 
-For more info about the Desktop COSA/APN database submission process, see [Planning your desktop COSA/APN database submission](planning-your-desktop-cosa-apn-database-submission.md).
+For more info about the Desktop COSA database submission process, see [Planning your desktop COSA database submission](planning-your-desktop-cosa-apn-database-submission.md).
 
 For more info about COSA, see [COSA overview](cosa-overview.md).
 
-For more info about the APN database, see [APN database overview](apn-database-overview.md).
+## Desktop COSA settings
 
-## APN database-only settings
+The following settings apply to desktop COSA. These entries will be used if you are targeting Windows 10, version 1703 and later.
 
-The following settings in the spreadsheet apply to the APN database only. These entries will be used if you are targeting Windows 8, Windows 8.1, or versions of Windows 10 before Windows 10, version 1703.
-
-| Setting name | Description | Optional or required | Notes |
-| --- | --- | --- | --- |
-| CDMA ProviderID | A 5-digit number that should match the CDMA provider ID (also called SID) reported by your device. | Optional | |
-| CDMA ProviderName | A string of no more than 36 characters that should match the CDMA provider name reported by your device. This setting is case sensitive. | Optional | |
-| CertIssuerName | The Cert Issuer Name of your signing certificate used for operator XML provisioning. | Optional | If specified, you must also specify the Cert Subject Name and Carrier GUID. |
-| CertSubjectName | The Cert Subject Name of your signing certificate used for operator XML provisioning. | Optional | If specified, you must also specify the Cert Issuer Name and Carrier GUID. |
-| Carrier GUID | The self-assigned GUID that is used in future operator XML provisioning packages. | Optional | If specified, you must also specify the Cert Subject Name and Cert Issuer Name. |
-| GSM ProviderName | A string of no more than 36 characters that should match the GSM provider name reported by your device. This setting is case sensitive. | Optional | This setting is only supported on Windows 8.1 and versions of Windows 10 before Windows 10, version 1703. |
-| Purchase | A yes or no value describing if the APN is provisioning or purchase. | Required | Possible values: <ul><li>**Y** – if the APN is provisioning or purchase</li><li>**N** – if the APN is not provisioning or purchase</li></ul> <p>If **Purchase Flag** setting is **Y**, the **Connect Flag** setting must be **N**.</p> |
-| Connect | A yes or no value describing if the APN is provisioning or purchase. | Required | Possible values: <ul><li>**Y** – if the APN is provisioning or purchase</li><li>**N** – if the APN is not provisioning or purchase</li></ul> <p>If **Connect Flag** setting is **Y**, the **Purchase Flag** setting must be **N**.</p> |
-
-## APN database and desktop COSA settings
-
-The following entries apply to both APN database and desktop COSA. For COSA, the minimum supported version of Windows required is indicated in the last column.
-
-
-| Setting name | Description | Optional or required | Notes | Minimum supported Windows version for COSA |
+| Setting name | Description | Optional or required | Notes | Minimum supported Windows version |
 | --- | --- | --- | --- | --- |
-| UpdateType | Describes whether the APN Database entry is new or modified. | Required | Possible values: <ul><li>**Add** – A new entry</li><li>**Change** – Update an existing entry</li><li>**Keep** – Do not change the entry</li><li>**Delete** – Delete the entry</li></ul> | Windows 10, version 1703 |
+| UpdateType | Describes whether the COSA database entry is new or modified. | Required | Possible values: <ul><li>**Add** – A new entry</li><li>**Change** – Update an existing entry</li><li>**Keep** – Do not change the entry</li><li>**Delete** – Delete the entry</li></ul> | Windows 10, version 1703 |
 | Country/Region | The country or region for the APN entry. | Required | This entry might change to match how Windows refers to a particular country or region. |  Windows 10, version 1703 |
 | Operator | The name of the operator. You do not need to include the country or region in this field. | Required | Ensure you use the same spelling and capitalization each time you submit an update for your APN entries. | Windows 10, version 1703 |
 | MCC | A 3-digit MCC value used for GSM IMSI submissions. | Optional for ICCID ranges. |  | Windows 10, version 1703 |
@@ -47,24 +29,17 @@ The following entries apply to both APN database and desktop COSA. For COSA, the
 | ICCID Range - End  |  A 19- or 20-digit number that starts with 89 (the ICCID issuer identifier number). | Optional | The number should end in 99.  | Windows 10, version 1703 |
 | AccountExperienceURL |  Used by Windows Connection Manager if the user does not have an active plan and tries to connect to your network.  | Optional | Helps improve the plan acquisition experience. <p>If **both** AppID and AccountExperienceURL are specified, AppID receives higher precedence and the UX will **not** display the AccountExperienceURL.</p> | Windows 10, version 1703 |
 | FriendlyName | A name for this APN entry that is understandable and meaningful to subscribers. | Optional | Appears in the Windows Connection Manager in cases where Windows cannot automatically connect to the network. | Windows 10, version 1703 |
-| AccessString | For GSM networks, this is an APN such as data.contoso.com. For CDMA networks, this is an access string that includes a special dial code such as #777 or an Network Access Identifier such as example@contoso.com. | Required |  | Windows 10, version 1703 |
+| AccessString | For GSM networks, this is an APN such as data.contoso.com. For CDMA networks, this is an access string that includes a special dial code such as #777 or an Network Access Identifier such as <example@contoso.com>. | Required |  | Windows 10, version 1703 |
 | UserName | The user name used to connect to your APN. This setting is case sensitive.  | Optional |  | Windows 10, version 1703 |
 | Password |  The password used to connect to your APN. This setting is case sensitive.  | Optional |  | Windows 10, version 1703 |
 | AuthProtocol | Specifies the authentication protocol to be used for activating a Packet Data Protocol (PDP) context. | Optional | Possible values: <ul><li>**NONE** – No authentication protocol is required</li><li>**PAP** – PAP authentication is required.</li><li>**CHAP** – CHAP authentication is required.</li><li>**MsCHAPV2** –MSCHAPv2 is authentication is required.</li></ul> <p>This setting is only supported on Windows 8.1 and versions of Windows 10 before Windows 10, version 1703.</p> | Windows 10, version 1703 |
 | Compression | Specifies if compression will be used at the data link for header and data transfer.  | Optional | Possible values: <ul><li>**ENABLE** – Compression is enabled</li><li>**DISABLE** – Compression is not enabled</li></ul> <p>This setting is only supported on Windows 8.1 and versions of Windows 10 before Windows 10, version 1703.</p> | Windows 10, version 1703 |
-| AutoConnectOrder | Windows tries connections to the APNs provided by the operator and marked as “auto-connect” in APN database or COSA until it successfully connects to the mobile network. If all auto-connect attempts fail, Windows will show a prompt allowing the user to pick an APN or enter a custom APN. | Optional | If you have more than one access string for an operator, this setting must start with 1. This is needed for Windows to try several APN entries that share either an IMSI range, ICCID range, CDMA provider ID, or CDMA provider name when the user tries to connect. | Windows 10, version 1809 |
-
-## Desktop COSA-only settings
-
-The following settings apply to desktop COSA only. These entries will be used if you are targeting Windows 10, version 1703 and later.
-
-| Setting name | Description | Optional or required | Notes | Minimum supported Windows version |
-| --- | --- | --- | --- | --- |
+| AutoConnectOrder | Windows tries connections to the APNs provided by the operator and marked as "auto-connect" in the COSA database until it successfully connects to the mobile network. If all auto-connect attempts fail, Windows will show a prompt allowing the user to pick an APN or enter a custom APN. | Optional | If you have more than one access string for an operator, this setting must start with 1. This is needed for Windows to try several APN entries that share either an IMSI range, ICCID range, CDMA provider ID, or CDMA provider name when the user tries to connect. | Windows 10, version 1809 |
 | SupportDataMarketplace | A true/false string describing whether a profile entry supports Mobile Plans. | Optional | <p>Before enabling this setting, please ensure that your Mobile Operator is part of the Mobile Plans program.</p><p>If left blank, defaults to "false."</p> | Windows 10, version 1703 |
 | SPN | An identifier string for the Service Provider Name (SPN) | Optional | Helps to identify the MO/MVNO's network. If left blank, defaults to empty string and does nothing. | Windows 10, version 1703 |
 | AlwaysOn | Describes whether the connection is always on or not. | Required | If left blank, defaults to "true." | Windows 10, version 1703 |
 | PurposeGroups | A string specifying the purposes of the connection by a comma-separated list of GUIDs representing purpose values. | Required | The following purpose values are available: <ul><li>**Internet**</li><li>**MMS**</li><li>**IMS**</li><li>**SUPL**</li><li>**Purchase**</li><li>**Administrative**</li><li>**Application**</li><li>**eSIM provisioning**</li></ul> <p> If left blank, defaults to "Internet."</p> | Windows 10, version 1703 |
-| | | Optional | The following optional purpose group value is available: <ul><li>**LTE attach** </li></ul> Specifying an LTE attach APN through COSA is typically unnecessary because the attach info is usually managed directly by the underlying modem's hardware. However, in the case where the modem's hardware does not have an LTE attach APN value and the network is incapable of assigning one to the UE, the MO can optionally provide LTE attach information so that the UE can LTE attach without the user manually entering a value. | Windows 10, version 1903 |
+| PurposeGroups | A string specifying the purposes of the connection by a comma-separated list of GUIDs representing purpose values. | Optional | The following optional purpose groups value is available: <ul><li>**LTE attach** </li></ul> Specifying an LTE attach APN through COSA is typically unnecessary because the attach info is usually managed directly by the underlying modem's hardware. However, in the case where the modem's hardware does not have an LTE attach APN value and the network is incapable of assigning one to the UE, the MO can optionally provide LTE attach information so that the UE can LTE attach without the user manually entering a value. | Windows 10, version 1903 |
 | IPType | A string specifying the network protocol of the connection. | Optional | Possible values: <ul><li>IPv4</li><li>IPv6</li><li>IPv4v6</li></ul> <p>If left blank, defaults to "IPv4."</p> | Windows 10, version 1703 |
 | BrandingName | The mobile broadband device typically provides the operator name, which Windows shows in the Windows Connection Manager. You can override this name by specifying a custom name in metadata. | Optional | If left blank, defaults to empty string and does nothing. | Windows 10, version 1709 |
 | BrandingIcon | A custom logo that appears in the Windows Connection Manager next to your network entry. | Optional | Icons must have transparent backgrounds and smooth edges. It's recommended to test the icon with both light and dark themes. They must also meet the following format and size requirements: <ul><li>256 x 256: 32-bit + Alpha</li><li>48 x 48: 32-bit + Alpha</li><li>48 x 48: 8-bit 256 color</li><li>48 x 48: 4-bit 16 color</li><li>32 x 32: 32-bit + Alpha</li><li>32 x 32: 8-bit 256 color</li><li>32 x 32: 4-bit 16 color</li><li>24 x 24: 32-bit + Alpha</li><li>24 x 24: 8-bit 256 color</li><li>24 x 24: 4-bit 16 color</li><li>16 x 16: 32-bit + Alpha</li><li>16 x 16: 8-bit 256 color</li><li>16 x 16: 4-bit 16 color</li></ul> | Windows 10, version 1709 |

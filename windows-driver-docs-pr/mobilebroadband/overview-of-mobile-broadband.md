@@ -407,7 +407,7 @@ The Windows APN database is present on all Windows 8, Windows 8.1, and Windows
 
 This information is intended to get customers online within seconds of connecting a mobile broadband device. It should enable them to purchase service immediately by using a Web browser or get online immediately if they have already purchased service.
 
-For information on submitting updates to the Windows APN database, see [COSA/APN database submission](planning-your-desktop-cosa-apn-database-submission.md).
+For information on submitting updates to the Windows APN database, see [COSA database submission](planning-your-desktop-cosa-database-submission.md).
 
 ### Service metadata
 

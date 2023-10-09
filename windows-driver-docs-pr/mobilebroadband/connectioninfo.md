@@ -120,7 +120,7 @@ There are no child elements.
 <tbody>
 <tr class="odd">
 <td><p><a href="connectioninfolist.md" data-raw-source="[ConnectionInfoList](connectioninfolist.md)">ConnectionInfoList</a></p></td>
-<td><p>Specifies the details for an operator in the APN database.</p></td>
+<td><p>Specifies the details for an operator in the COSA database.</p></td>
 </tr>
 </tbody>
 </table>

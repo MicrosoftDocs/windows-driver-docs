@@ -31,7 +31,7 @@ The APN update spreadsheet is used to gather the required information so Microso
 
 Use the following link to download the latest APN update spreadsheet: <https://go.microsoft.com/fwlink/p/?linkid=851213>
 
-For more info about the settings in the APN update spreadsheet, see [Desktop COSA/APN database settings](desktop-cosa-apn-database-settings.md).
+For more info about the settings in the APN update spreadsheet, see [Desktop COSA database settings](desktop-cosa-database-settings.md).
 
 ## Considerations when completing the spreadsheet
 

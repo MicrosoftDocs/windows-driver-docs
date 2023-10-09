@@ -64,7 +64,7 @@ There are no attributes.
 <tbody>
 <tr class="odd">
 <td><p><a href="operator.md" data-raw-source="[Operator](operator.md)">Operator</a></p></td>
-<td><p>Specifies the details for an operator in the APN database.</p></td>
+<td><p>Specifies the details for an operator in the COSA database.</p></td>
 </tr>
 </tbody>
 </table>
