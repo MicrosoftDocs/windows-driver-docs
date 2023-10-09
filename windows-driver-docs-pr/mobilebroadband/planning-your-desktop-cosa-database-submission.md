@@ -1,15 +1,15 @@
 ---
-title: Planning your desktop COSA/APN database submission
-description: Planning your desktop COSA/APN database submission
+title: Planning your desktop COSA database submission
+description: Planning your desktop COSA database submission
 ms.date: 10/06/2023
 ---
 
-# Planning your desktop COSA/APN database submission
+# Planning your desktop COSA database submission
 
 > [!IMPORTANT]
 > Starting in Windows 10, version 1703, the APN database is replaced by a new format called COSA. Windows 8, Windows 8.1, and versions of Windows 10 before version 1703 will continue to use the APN database while Windows 10, version 1703 and later use COSA. For more information about COSA, see [COSA overview](cosa-overview.md).
 
-Use the sections in this topic when you are planning to add a new APN to the baseline COSA/APN database that ships with Windows desktop devices, or update an existing one.
+Use the sections in this topic when you are planning to add a new APN to the baseline COSA database that ships with Windows desktop devices, or update an existing one.
 
 ## The APN update process
 
@@ -23,7 +23,7 @@ To connect to a mobile broadband network, the user is typically required to prov
 
 COSA and the APN connectivity database are updated by using Windows Update. The figure below shows the overall submission process.
 
-:::image type="content" source="images/COSA_and_APN_database_submission_process_diagram.png" alt-text="Flowchart that shows the COSA/APN database submission process.":::
+:::image type="content" source="images/COSA_and_APN_database_submission_process_diagram.png" alt-text="Flowchart that shows the COSA database submission process.":::
 
 ## Complete the APN/COSA update spreadsheet
 
@@ -58,9 +58,9 @@ Note the following only when submitting an APN update using apndatabase.xml, for
 
 ### APN database and COSA considerations
 
-Note the following for both COSA and APN database.
+Note the following for the COSA database.
 
-- Changes provided by the OEM will take precedence over the default COSA/APN database included in Windows.
+- Changes provided by the OEM will take precedence over the default COSA database included in Windows.
 
 - The **Country/Region** and the **Operator** entries in the spreadsheet are used to determine whether this is an update to an existing APN or a request for a new APN. If the **Country/Region** and the **Operator** fields match content that already exists in the APN database, the entries will be deleted and replaced with the entries that you list in your spreadsheet.
 

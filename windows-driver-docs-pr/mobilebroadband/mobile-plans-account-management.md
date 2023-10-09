@@ -19,7 +19,7 @@ The *View my account* link could be configured to:
 - Launch a web browser and open a defined web page.
 - Launch the Mobile Plans app and open the mobile operator web portal.
 
- Once you have decided on one of these options, please request a COSA database update to implement the right behavior. For more info, please see [Planning your desktop COSA/APN database submission](planning-your-desktop-cosa-apn-database-submission.md).
+ Once you have decided on one of these options, please request a COSA database update to implement the right behavior. For more info, please see [Planning your desktop COSA database submission](planning-your-desktop-cosa-database-submission.md).
 
 The following settings apply for the above options:
 

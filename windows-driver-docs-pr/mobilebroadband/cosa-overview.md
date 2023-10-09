@@ -6,9 +6,7 @@ ms.date: 04/20/2017
 
 # COSA overview
 
-COSA, or Country and Operator Settings Asset, is the data format that mobile operators (MOs) use in Windows 10, version 1703 and later to provision Windows devices for mobile broadband. The existing Access Point Name (APN) database (apndatabase.xml) from Windows 8, Windows 8.1, and versions of Windows 10 before 1703 has been converted to COSA, which is ingestible by the new provisioning framework. These previous versions of Windows continue to use the older APN database for provisioning desktop devices.
-
-For more information about the older APN database, see [APN database overview](apn-database-overview.md).
+COSA, or Country and Operator Settings Asset, is the data format that mobile operators (MOs) use in Windows 10, version 1703 and later to provision Windows devices for mobile broadband.
 
 To see a list of available settings MOs can configure in desktop COSA, see [Desktop COSA database settings](desktop-cosa-database-settings.md).
 
@@ -24,15 +22,15 @@ To see a list of available settings MOs can configure in desktop COSA, see [Desk
 
 ### <a href="" id="settings"></a> What are the settings that MOs can specify in COSA?
 
-The settings are largely the same as what MOs configured in apndatabase.xml, with a few exceptions and new additions. For details, see the tables in [Planning your desktop COSA/APN database submission](planning-your-desktop-cosa-apn-database-submission.md).
+The settings are largely the same as what MOs configured in apndatabase.xml, with a few exceptions and new additions. For details, see the tables in [Planning your desktop COSA database submission](planning-your-desktop-cosa-database-submission.md).
 
 ### <a href="" id="events"></a> What events trigger the application of new MO settings?
 
-Three events trigger the Windows provisioning engine to look for a change in settings: 
+These events trigger the Windows provisioning engine to look for a change in settings:
 
-1.	The insertion or removal of a physical SIM (change in ICCID)
-2.	Reconfiguration of an eSIM (change in ICCID)
-3.	When the device boots
+1. The insertion or removal of a physical SIM (change in ICCID)
+1. Reconfiguration of an eSIM (change in ICCID)
+1. When the device boots
 
 ### <a href="" id="SIMinfo"></a> What SIM information from modems does COSA use?
 
