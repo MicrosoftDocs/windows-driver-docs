@@ -20,7 +20,7 @@ Hardware Digital Rights Management (HWDRM) is a feature that enables secure play
 |**Measurement criteria**|Aggregation of session instances|
 |**Minimum population**|500 sessions|
 |**Passing criteria**|Driver session failure rate less than or equal to 2.0|
-|**Measure ID**|v1. 19170127 (Legacy), v2. 44233379|
+|**Measure ID**|44233379|
 
 ## Calculation
 
