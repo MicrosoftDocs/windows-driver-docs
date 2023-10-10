@@ -55,7 +55,7 @@ Use the following guidelines to help you enable these key scenarios.
 
 ### <span id="enablesimp"></span><span id="ENABLESIMP"></span>Enable a simple connect experience
 
-You must provide a minimal amount of data to include in the Windows 8, Windows 8.1, or Windows 10 APN database. For more info about the Windows APN database, see [APN database overview](apn-database-overview.md).
+You must provide a minimal amount of data to include in the COSA database. For more info about the Windows COSA database, see [Introduction to the COSA database](cosa-database.md).
 
 You must provide the following information to include in the APN database:
 

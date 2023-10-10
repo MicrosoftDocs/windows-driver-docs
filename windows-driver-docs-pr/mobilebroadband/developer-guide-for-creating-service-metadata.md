@@ -679,6 +679,6 @@ Use the following links to learn more about mobile broadband in Windows 8.1 and 
 
 - [Overview of mobile broadband](overview-of-mobile-broadband.md)
 
-- [APN database overview](apn-database-overview.md)
+- [Introduction to the COSA database](cosa-database.md)
 
 - [Service metadata](service-metadata.md)
