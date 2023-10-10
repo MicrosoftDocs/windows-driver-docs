@@ -178,8 +178,6 @@ Your device must implement the following:
 **Note**  
 Since this is an optional Windows feature for devices to support, there is no HCK test or automated test case to validate this scenario on the system. It is our expectation that the operator certification will handle the validation to confirm that the device conforms to the operator requirements.
 
-For more info about the APN database, see [APN database overview](apn-database-overview.md).
-
 ### <span id="Network_personalization"></span><span id="network_personalization"></span><span id="NETWORK_PERSONALIZATION"></span>Network personalization
 
 Certain operators require that mobile broadband-enabled systems be locked to its network or have requirements to unlock a locked device to allow for service portability. To enable this scenario, we require the OEM’s and device vendors use MBIM\_PIN\_TYPE guidance in the MBIM Specification for Subsidy Lock.

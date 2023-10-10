@@ -58,7 +58,7 @@ When describing the landing page, it is important to consider navigation within 
 
     :::image type="content" source="images/mb-fig3-nav-between-apps.png" alt-text="Screenshot of a drop-down menu for navigating between app pages.":::
 
-    For more information about designing app navigation, see [Quickstart: Using single-page navigation](/previous-versions/windows/apps/hh452768(v=win.10)) and [**select element | select object**](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select).
+    For more information about designing app navigation, see [Quickstart: Using single-page navigation](/previous-versions/windows/apps/hh452768(v=win.10)) and [**select element | select object**](https://developer.mozilla.org/docs/Web/HTML/Element/select).
 
 ## <span id="opbrand"></span><span id="OPBRAND"></span>Operator branding
 
