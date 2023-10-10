@@ -3359,7 +3359,12 @@
         },
         {
             "source_path": "windows-driver-docs-pr/mobilebroadband/testing-your-cosa-apn-database-submission.md",
-            "redirect_URL": "/windows-hardware/drivers/mobilebroadband/testing-your-desktop-cosa-apn-database-submission",
+            "redirect_URL": "/windows-hardware/drivers/mobilebroadband/testing-your-desktop-cosa-database-submission",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/mobilebroadband/testing-your-desktop-cosa-apn-database-submission.md",
+            "redirect_URL": "/windows-hardware/drivers/mobilebroadband/testing-your-desktop-cosa-database-submission",
             "redirect_document_id": false
         },
         {

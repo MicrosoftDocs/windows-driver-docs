@@ -1,7 +1,7 @@
 ---
 title: Submitting the desktop COSA database update
 description: Submitting the desktop COSA database update
-ms.date: 04/20/2017
+ms.date: 10/10/2023
 ---
 
 # Submitting the desktop COSA database update

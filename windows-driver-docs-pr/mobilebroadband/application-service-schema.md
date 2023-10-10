@@ -1,7 +1,7 @@
 ---
 title: Application
 description: Application
-ms.date: 04/20/2017
+ms.date: 10/10/2023
 ---
 
 # Application
@@ -12,7 +12,6 @@ The Application element specifies the name of the application software that crea
 
 ## Usage
 
-
 ``` syntax
 <Application>
   text
@@ -21,21 +20,17 @@ The Application element specifies the name of the application software that crea
 
 ## Attributes
 
-
 There are no attributes.
 
 ## Text value
-
 
 A string that contains between 1 and 256 characters inclusive.
 
 ## Child elements
 
-
 There are no child elements.
 
 ## Parent elements
-
 
 <table>
 <colgroup>
@@ -56,10 +51,7 @@ There are no child elements.
 </tbody>
 </table>
 
- 
-
 ## XSD
-
 
 ``` syntax
 <xs:element name="Application" type="tns:ApplicationType" />
@@ -74,14 +66,4 @@ There are no child elements.
 
 ## Remarks
 
-
 The Application element is not used by the Windows 7 operating system. It is reserved for use by OEMs and developers.
-
- 
-
- 
-
-
-
-
-

@@ -1,7 +1,7 @@
 ---
 title: Planning your desktop COSA database submission
 description: Planning your desktop COSA database submission
-ms.date: 10/06/2023
+ms.date: 10/10/2023
 ---
 
 # Planning your desktop COSA database submission

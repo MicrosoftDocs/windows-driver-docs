@@ -1,7 +1,7 @@
 ---
 title: Application (SoftwareInfo)
 description: Application (SoftwareInfo)
-ms.date: 04/20/2017
+ms.date: 10/10/2023
 ---
 
 # Application (SoftwareInfo)
@@ -12,7 +12,6 @@ The Application element specifies the associated device notification handler.
 
 ## Usage
 
-
 ``` syntax
 <Application Id=”tns:ApplicationIdType”>
   Child element
@@ -20,7 +19,6 @@ The Application element specifies the associated device notification handler.
 ```
 
 ## Attributes
-
 
 <table>
 <colgroup>
@@ -47,10 +45,7 @@ The Application element specifies the associated device notification handler.
 </tbody>
 </table>
 
- 
-
 ## Child elements
-
 
 <table>
 <colgroup>
@@ -71,10 +66,7 @@ The Application element specifies the associated device notification handler.
 </tbody>
 </table>
 
- 
-
 ## Parent elements
-
 
 <table>
 <colgroup>
@@ -95,10 +87,7 @@ The Application element specifies the associated device notification handler.
 </tbody>
 </table>
 
- 
-
 ## XSD
-
 
 ``` syntax
 <xs:element name="Application" type="tns:ApplicationType"/>
@@ -114,14 +103,4 @@ The Application element specifies the associated device notification handler.
 
 ## Remarks
 
-
 The Application element is optional.
-
- 
-
- 
-
-
-
-
-

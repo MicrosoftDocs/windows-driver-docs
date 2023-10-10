@@ -1,7 +1,7 @@
 ---
 title: Application (WindowsInfo)
 description: Application (WindowsInfo)
-ms.date: 04/20/2017
+ms.date: 10/10/2023
 ---
 
 # Application (WindowsInfo)

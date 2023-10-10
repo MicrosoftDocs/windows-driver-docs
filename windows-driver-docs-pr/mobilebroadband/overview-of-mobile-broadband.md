@@ -1,7 +1,7 @@
 ---
 title: Overview of mobile broadband
 description: Overview of mobile broadband
-ms.date: 04/20/2017
+ms.date: 10/10/2023
 ---
 
 # Overview of mobile broadband

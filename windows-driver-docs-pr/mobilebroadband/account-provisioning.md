@@ -1,7 +1,7 @@
 ---
 title: Account provisioning
 description: Account provisioning
-ms.date: 10/09/2023
+ms.date: 10/10/2023
 ---
 
 # Account provisioning
