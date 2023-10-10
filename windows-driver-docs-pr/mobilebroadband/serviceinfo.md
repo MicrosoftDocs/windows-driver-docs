@@ -10,7 +10,7 @@ ms.date: 04/20/2017
 
 The ServiceInfo element is the parent element of the [ServiceInfo XML schema](serviceinfo-xml-schema.md).
 
-## <span id="Usage"></span><span id="usage"></span><span id="USAGE"></span>Usage
+## Usage
 
 
 ``` syntax
@@ -19,12 +19,12 @@ The ServiceInfo element is the parent element of the [ServiceInfo XML schema](se
 </ServiceInfo>
 ```
 
-## <span id="Attributes"></span><span id="attributes"></span><span id="ATTRIBUTES"></span>Attributes
+## Attributes
 
 
 There are no attributes.
 
-## <span id="Child_elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Child elements
+## Child elements
 
 
 <table>
@@ -82,12 +82,12 @@ There are no attributes.
 
 
 
-## <span id="Parent_elements"></span><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Parent elements
+## Parent elements
 
 
 There are no parent elements.
 
-## <span id="XSD"></span><span id="xsd"></span>XSD
+## XSD
 
 
 ``` syntax
@@ -108,7 +108,7 @@ There are no parent elements.
 </xs:complexType>
 ```
 
-## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
+## Remarks
 
 
 The ServiceInfo element must contain one instance of the [ServiceCategoryList](servicecategorylist.md), [ServiceNumber](servicenumber.md), [ServiceProvider](serviceprovider.md), and [ServiceSpecificExtension](servicespecificextension.md) elements.

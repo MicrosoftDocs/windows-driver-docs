@@ -10,7 +10,7 @@ ms.date: 04/20/2017
 
 The LaunchApplicationOnDeviceConnect element specifies an app that should appear as the recommended AutoPlay action when a user plugs in the device.
 
-## <span id="Usage"></span><span id="usage"></span><span id="USAGE"></span>Usage
+## Usage
 
 
 ``` syntax
@@ -19,12 +19,12 @@ The LaunchApplicationOnDeviceConnect element specifies an app that should appear
 </LaunchApplicationOnDeviceConnect>
 ```
 
-## <span id="Attributes"></span><span id="attributes"></span><span id="ATTRIBUTES"></span>Attributes
+## Attributes
 
 
 There are no attributes.
 
-## <span id="Child_elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Child elements
+## Child elements
 
 
 <table>
@@ -52,7 +52,7 @@ There are no attributes.
 
  
 
-## <span id="Parent_elements"></span><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Parent elements
+## Parent elements
 
 
 <table>
@@ -76,7 +76,7 @@ There are no attributes.
 
  
 
-## <span id="XSD"></span><span id="xsd"></span>XSD
+## XSD
 
 
 ``` syntax
@@ -91,7 +91,7 @@ There are no attributes.
   </xs:complexType>
 ```
 
-## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
+## Remarks
 
 
 You must specify either a UWP device app or a desktop app. Use [AutoplayHandler](autoplayhandler.md) if you will specify a UWP device app, and use [DesktopAutoplayHandler](desktopautoplayhandler.md) if you specify a desktop application.

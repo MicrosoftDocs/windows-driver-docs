@@ -15,7 +15,7 @@ In Windows 8 MBIDGenerator.exe was included in the WDK.
 
  
 
-## <span id="Input"></span><span id="input"></span><span id="INPUT"></span>Input
+## Input
 
 
 MBIDGenerator.exe accepts the following parameters:
@@ -29,7 +29,7 @@ The *Test* parameter provides non-hashed output and should not be used for gener
 
  
 
-## <span id="Output"></span><span id="output"></span><span id="OUTPUT"></span>Output
+## Output
 
 
 The output from the MBIDGenerator.exe is through a standard command-line output display. Optionally, you can specify a path and file name for the output file. Errors are always reported back to the command prompt.

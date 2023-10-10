@@ -9,7 +9,7 @@ ms.date: 04/20/2017
 
 The ConnectionInfoList element specifies a list of connections for the specified operator.
 
-## <span id="Usage"></span><span id="usage"></span><span id="USAGE"></span>Usage
+## Usage
 
 
 ``` syntax
@@ -18,12 +18,12 @@ The ConnectionInfoList element specifies a list of connections for the specified
 </ConnectionInfoList>
 ```
 
-## <span id="Attributes"></span><span id="attributes"></span><span id="ATTRIBUTES"></span>Attributes
+## Attributes
 
 
 There are no attributes.
 
-## <span id="Child_elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Child elements
+## Child elements
 
 
 <table>
@@ -47,7 +47,7 @@ There are no attributes.
 
  
 
-## <span id="Parent_elements"></span><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Parent elements
+## Parent elements
 
 
 <table>
@@ -71,7 +71,7 @@ There are no attributes.
 
  
 
-## <span id="XSD"></span><span id="xsd"></span>XSD
+## XSD
 
 
 ``` syntax
@@ -86,7 +86,7 @@ There are no attributes.
 </xs:element>
 ```
 
-## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
+## Remarks
 
 
 The ConnectionInfoList element is required.

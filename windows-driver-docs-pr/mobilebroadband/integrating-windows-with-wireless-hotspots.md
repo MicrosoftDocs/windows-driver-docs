@@ -17,7 +17,7 @@ The topics in this section address the interaction between a Wi-Fi hotspot opera
 
 -   [Hotspot authentication methods](integrating-windows-with-wireless-hotspots.md)
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [Mobile operator scenarios](mobile-plans-scenarios.md)

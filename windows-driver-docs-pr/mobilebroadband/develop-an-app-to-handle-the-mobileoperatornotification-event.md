@@ -23,7 +23,7 @@ This topic explains how to develop a mobile broadband app that handles the [Mobi
 
 -   [Sample backgroundtask.js file](#samp)
 
-## <span id="bp"></span><span id="BP"></span>Best practices
+## Best practices
 
 
 For background event handling, you should use the following best practices:
@@ -36,7 +36,7 @@ For background event handling, you should use the following best practices:
 
 -   Consider showing a toast notification and updating tile in response to a background event. Your mobile broadband app can process the background event payload.
 
-## <span id="stepone"></span><span id="STEPONE"></span>Step 1: Background task contract declaration
+## Step 1: Background task contract declaration
 
 
 For Windows to recognize the background task experiences that are supplied by a mobile broadband app, the app must declare that it is providing an extension to system functionality.
@@ -65,7 +65,7 @@ If this is done correctly, you should have an extension element similar to the f
 </Extension>
 ```
 
-## <span id="steptwo"></span><span id="STEPTWO"></span>Step 2: Background task handler
+## Step 2: Background task handler
 
 
 If your app provides a mobile operator notifications declaration, it must supply a handler for the background task activation. The handler will get the mobile operator network account ID and event data from [**Windows.Networking.NetworkOperators.NetworkOperatorNotificationEventDetails**](/uwp/api/Windows.Networking.NetworkOperators.NetworkOperatorNotificationEventDetails).
@@ -196,7 +196,7 @@ close();
     }
 ```
 
-### <span id="Show_tile_and_toast_notifications"></span><span id="show_tile_and_toast_notifications"></span><span id="SHOW_TILE_AND_TOAST_NOTIFICATIONS"></span>Show tile and toast notifications
+### Show tile and toast notifications
 
 We recommend that you show both toast and tile notifications in your mobile broadband app because a user can miss a toast notification due to its transient nature. For toast notification and tile update experience design guidelines, see [Designing the user experience of a mobile broadband app](designing-the-user-experience-of-a-mobile-broadband-app.md).
 
@@ -234,7 +234,7 @@ function showToast(title, body) {
     }
 ```
 
-### <span id="Get_SMS_text_message"></span><span id="get_sms_text_message"></span><span id="GET_SMS_TEXT_MESSAGE"></span>Get SMS text message
+### Get SMS text message
 
 If the background task was triggered by an incoming SMS message, the background task details will carry the SMS object in its payload.
 
@@ -264,7 +264,7 @@ If the background task was triggered by an incoming SMS message, the background 
         }
 ```
 
-### <span id="Use_local_storage"></span><span id="use_local_storage"></span><span id="USE_LOCAL_STORAGE"></span>Use local storage
+### Use local storage
 
 The background task can use local storage to save the message that you get from the background event, so that the app can use that information later.
 
@@ -298,7 +298,7 @@ var settings = Windows.Storage.ApplicationData.current.localSettings;
     var operatorMessage = settings.values[keyMessage];
 ```
 
-## <span id="stepthree"></span><span id="STEPTHREE"></span>Step 3: Handle the Activation event
+## Step 3: Handle the Activation event
 
 
 If the toast sets a parameter, it will be passed to app through **detail.arguments**.
@@ -326,7 +326,7 @@ function activated(eventArgs)
 }
 ```
 
-## <span id="stepfour"></span><span id="STEPFOUR"></span>Step 4: Handle background task completion handlers
+## Step 4: Handle background task completion handlers
 
 
 The foreground app can also register a completion handler to be notified when the background task completes. The completion status or any exception that occurs in the **Run** method of the background task is passed to the completion handler in the foreground app. If the app was suspended when the task completed, it receives the completion notification next time that the app is resumed. If the app was in the **Terminated** state, it does not receive the completion notification. If the background task needs to preserve the information that it ran successfully, it must persist the information by using State Manager or another means, such as a file that the app can read when it returns to the **Running** state.
@@ -413,18 +413,18 @@ function CompleteHandler(task) {
 }
 ```
 
-## <span id="ts"></span><span id="TS"></span>Troubleshooting
+## Troubleshooting
 
 
 Use these sections to help troubleshoot issues that may come up.
 
-### <span id="Trigger_metadata_parsing_to_register_background_tasks"></span><span id="trigger_metadata_parsing_to_register_background_tasks"></span><span id="TRIGGER_METADATA_PARSING_TO_REGISTER_BACKGROUND_TASKS"></span>Trigger metadata parsing to register background tasks
+### Trigger metadata parsing to register background tasks
 
 For users, when the mobile broadband device is connected, Windows 8, Windows 8.1, and Windows 10 automatically installs the mobile broadband app and associated service metadata and registers background tasks that are defined in the service metadata. However, in Windows 8.1, the app is not automatically pinned to the Start screen.
 
 Developers can manually trigger Windows 8, Windows 8.1, and Windows 10 to parse service metadata and register background tasks by pressing the **F5** key (or right-click and select **Refresh**) in the **Devices and Printers** window on the desktop. Background task registration through service metadata parsing succeeds only when the app is deployed.
 
-### <span id="Verify_that_background_tasks_are_correctly_registered_"></span><span id="verify_that_background_tasks_are_correctly_registered_"></span><span id="VERIFY_THAT_BACKGROUND_TASKS_ARE_CORRECTLY_REGISTERED_"></span>Verify that background tasks are correctly registered
+### Verify that background tasks are correctly registered
 
 Developers can verify that the Device Setup Manager (DSM) has properly parsed the service metadata by viewing the event logs under **Application and Services Logs\\Microsoft\\Windows\\DeviceSetupManager**.
 
@@ -436,7 +436,7 @@ Developers can verify that the Device Setup Manager (DSM) has properly parsed th
 
 Events of interest include Event ID 220 that indicates that DSM has successfully registered the background task for the [MobileOperatorNotification](mobile-operator-notification-event-technical-details.md) event, and Event ID 7900, which indicates any errors that are found in the metadata package.
 
-### <span id="Verify_that_provisioning_metadata_is_successfully_applied"></span><span id="verify_that_provisioning_metadata_is_successfully_applied"></span><span id="VERIFY_THAT_PROVISIONING_METADATA_IS_SUCCESSFULLY_APPLIED"></span>Verify that provisioning metadata is successfully applied
+### Verify that provisioning metadata is successfully applied
 
 When applying provisioning metadata, verify that [**ProvisionFromXmlDocumentResults.AllElementsProvisioned**](/uwp/api/Windows.Networking.NetworkOperators.ProvisionFromXmlDocumentResults#Windows_Networking_NetworkOperators_ProvisionFromXmlDocumentResults_AllElementsProvisioned) is true. If not, check the ProvisionResultsXml for more details about the error. Common mobile broadband errors include the following:
 
@@ -444,7 +444,7 @@ When applying provisioning metadata, verify that [**ProvisionFromXmlDocumentResu
 
 -   A mismatch between the CarrierId in the provisioning file and the service number in the experience metadata.
 
-### <span id="Verify_that_background_tasks_are_being_run_by_the_System_Event_Broker"></span><span id="verify_that_background_tasks_are_being_run_by_the_system_event_broker"></span><span id="VERIFY_THAT_BACKGROUND_TASKS_ARE_BEING_RUN_BY_THE_SYSTEM_EVENT_BROKER"></span>Verify that background tasks are being run by the System Event Broker
+### Verify that background tasks are being run by the System Event Broker
 
 You can verify that Windows is generating the [MobileOperatorNotification](mobile-operator-notification-event-technical-details.md) event and that the app’s background task is being run by the event broker by checking the Event Viewer. Logging for these events is off by default and can be enabled by performing the following steps:
 
@@ -460,19 +460,19 @@ After you enable the logs, a successful execution of the background task results
 
 If the background task is not being run, first verify that the names of your background tasks that are specified in the service metadata match the names in the AppXManifest.xml file of your package. Verify that after deploying the app, parsing the service metadata is triggered and inserts the mobile broadband device.
 
-### <span id="Verify_that_Windows_receives_SMS_and_USSD_notifications"></span><span id="verify_that_windows_receives_sms_and_ussd_notifications"></span><span id="VERIFY_THAT_WINDOWS_RECEIVES_SMS_AND_USSD_NOTIFICATIONS"></span>Verify that Windows receives SMS and USSD notifications
+### Verify that Windows receives SMS and USSD notifications
 
 You can verify that Windows is receiving SMS and USSD notifications by checking for SmsRouter events in Event Viewer.
 
 In Event Viewer, under **Application and Services Logs\\Microsoft\\Windows \\Mobile-Broadband-Experience-SmsRouter\\Microsoft-Windows-SMSRouter**, are entries such as “The SMSRouter received a SMS Operator Notification message” and “The SMSRouter received a Text message”. Under **Application and Services Logs\\Microsoft\\Windows \\Mobile-Broadband-Experience-SmsApi\\SMSApi** are entries such as “App: Microsoft.SDKSamples.SmsSendReceive sent SMS text message on mobile broadband device: {11111111-1111-1111-1111-111111111111}”.
 
-### <span id="Received_SMS_messages_are_not_detected_as_operator_notifications"></span><span id="received_sms_messages_are_not_detected_as_operator_notifications"></span><span id="RECEIVED_SMS_MESSAGES_ARE_NOT_DETECTED_AS_OPERATOR_NOTIFICATIONS"></span>Received SMS messages are not detected as operator notifications
+### Received SMS messages are not detected as operator notifications
 
 If received SMS are not detected as operator notifications, verify the custom filtering rules for administrative SMS notifications in the account provisioning metadata. For more info about provisioning metadata, see [Account provisioning](account-provisioning.md).
 
 In particular, if account provisioning metadata specifies the sender phone number, verify that the number formatting specified matches that in the received message by using the SMS APIs. To verify that this is matching correctly, temporarily change the Pattern to **\[^\]\\*** to match all messages from this sender.
 
-## <span id="samp"></span><span id="SAMP"></span>Sample backgroundtask.js file
+## Sample backgroundtask.js file
 
 
 ``` syntax
@@ -600,7 +600,7 @@ In particular, if account provisioning metadata specifies the sender phone numbe
 })();
 ```
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [Enabling mobile operator notifications and system events](enabling-mobile-operator-notifications-and-system-events.md)

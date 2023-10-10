@@ -78,7 +78,7 @@ taskAway.addEventListener("progress", new ProgressHandler(taskAway).onProgress);
 taskAway.addEventListener("completed", new CompleteHandler(taskAway).onCompleted);
 ```
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [Developing SMS apps](developing-sms-apps.md)

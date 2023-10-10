@@ -10,7 +10,7 @@ ms.date: 04/20/2017
 
 The Application element specifies the name of the application software that created the device metadata package.
 
-## <span id="Usage"></span><span id="usage"></span><span id="USAGE"></span>Usage
+## Usage
 
 
 ``` syntax
@@ -19,22 +19,22 @@ The Application element specifies the name of the application software that crea
 </Application>
 ```
 
-## <span id="Attributes"></span><span id="attributes"></span><span id="ATTRIBUTES"></span>Attributes
+## Attributes
 
 
 There are no attributes.
 
-## <span id="Text_value"></span><span id="text_value"></span><span id="TEXT_VALUE"></span>Text value
+## Text value
 
 
 A string that contains between 1 and 256 characters inclusive.
 
-## <span id="Child_elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Child elements
+## Child elements
 
 
 There are no child elements.
 
-## <span id="Parent_elements"></span><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Parent elements
+## Parent elements
 
 
 <table>
@@ -58,7 +58,7 @@ There are no child elements.
 
  
 
-## <span id="XSD"></span><span id="xsd"></span>XSD
+## XSD
 
 
 ``` syntax
@@ -72,7 +72,7 @@ There are no child elements.
 </xs:simpleType>
 ```
 
-## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
+## Remarks
 
 
 The Application element is not used by the Windows 7 operating system. It is reserved for use by OEMs and developers.

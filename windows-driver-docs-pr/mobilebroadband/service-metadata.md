@@ -55,12 +55,12 @@ The following summary describes some of the most interesting fields that are con
 - **MB Purchase Profile**  
   Purchase profile that is used for establishing limited connectivity for purchasing a subscription.
 
-  If you are a GSM operator who has only one Purchase APN for all subscribers, you can use the service metadata to provision that to the computer. If you have multiple Purchase APNs, you should use account provisioning metadata to set the appropriate purchase APN. Or, you can do nothing and use the entries that are stored in the APN database to provide APN connectivity information.
+  If you are a GSM operator who has only one Purchase APN for all subscribers, you can use the service metadata to provision that to the computer. If you have multiple Purchase APNs, you should use account provisioning metadata to set the appropriate purchase APN. Or, you can do nothing and use the entries that are stored in the COSA database to provide APN connectivity information.
 
 - **MB Internet profile**  
   Every mobile broadband subscription can have one default profile that is used to connect to the home network operator. The Windows Connection Manager uses this profile for auto-connecting to the network.
 
-  If you are a GSM operator who has only one Internet APN for all subscribers, you can use the service metadata to provision the computer. If you have multiple Internet APNs, you should use account provisioning metadata to set the appropriate internet APN. Or, you can do nothing and use the entries that are stored in the APN database to provide APN connectivity information.
+  If you are a GSM operator who has only one Internet APN for all subscribers, you can use the service metadata to provision the computer. If you have multiple Internet APNs, you should use account provisioning metadata to set the appropriate internet APN. Or, you can do nothing and use the entries that are stored in the COSA database to provide APN connectivity information.
 
 - **Certificate data**  
   Certificate information used for provisioning. This includes Certificate Issuer Name and Subject Name. This information is used to ensure that account provisioning operations that are initiated by a website are issued by a trusted operator.
@@ -76,7 +76,7 @@ The following summary describes some of the most interesting fields that are con
 - **List of privileged apps with access to mobile broadband restricted interfaces**  
   Mobile Broadband APIs and interfaces (including Account Provisioning and SMS) are restricted and available to mobile broadband apps only. A list of privileged apps that have access to these privileged APIs can be specified in the service metadata package in the [PrivilegedApplications](privilegedapplications.md) element. Privileged apps can be debugging or test apps; they are not required to be distributed through the Microsoft Store.
 
-## <span id="Service_Metadata_Package_Structure"></span><span id="service_metadata_package_structure"></span><span id="SERVICE_METADATA_PACKAGE_STRUCTURE"></span>Service Metadata Package Structure
+## Service Metadata Package Structure
 
 The components of a service metadata package are stored in a compressed cabinet file and must have a file extension of **.devicemetadata-ms**. Service metadata packages use this file extension because they use the same underlying platform as device metadata packages. Before you create the **.devicemetadata-ms** file, you must first create a globally unique identifier (GUID) for the metadata package. Then, you must use the following naming convention when you create the .devicemetadata-ms file: **&lt;GUID&gt;.devicemetadata-ms**.
 

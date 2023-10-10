@@ -58,7 +58,7 @@ The following properties are available for the current network device for the ac
 account.currentDeviceInformation.mobileEquipmentId
 ```
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [Common tasks for mobile broadband Windows Runtime APIs](./create-a-mobilebroadbandaccount-object.md)

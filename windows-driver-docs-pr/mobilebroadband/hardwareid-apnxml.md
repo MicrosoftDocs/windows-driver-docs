@@ -9,7 +9,7 @@ ms.date: 04/20/2017
 
 The HardwareId element specifies the HWID for the specified operator.
 
-## <span id="Usage"></span><span id="usage"></span><span id="USAGE"></span>Usage
+## Usage
 
 
 ``` syntax
@@ -18,22 +18,22 @@ The HardwareId element specifies the HWID for the specified operator.
 </HardwareId>
 ```
 
-## <span id="Attributes"></span><span id="attributes"></span><span id="ATTRIBUTES"></span>Attributes
+## Attributes
 
 
 There are no attributes.
 
-## <span id="Text_value"></span><span id="text_value"></span><span id="TEXT_VALUE"></span>Text value
+## Text value
 
 
 A string that represents an encoded hardware ID. Generating the proper hardware ID values involves a complex algorithm. We recommend that you use mbidgenerator.exe to generate your hardware IDs.
 
-## <span id="Child_elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Child elements
+## Child elements
 
 
 There are no child elements.
 
-## <span id="Parent_elements"></span><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Parent elements
+## Parent elements
 
 
 <table>
@@ -57,7 +57,7 @@ There are no child elements.
 
  
 
-## <span id="XSD"></span><span id="xsd"></span>XSD
+## XSD
 
 
 ``` syntax
@@ -70,7 +70,7 @@ There are no child elements.
 </xs:element>
 ```
 
-## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
+## Remarks
 
 
 The HardwareId element must represent one of the following:

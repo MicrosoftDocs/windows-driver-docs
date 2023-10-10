@@ -92,11 +92,11 @@ An external mobile broadband device, such as a hardware dongle, can be inserted 
 
 1. As soon as the mobile broadband hardware is detected, the Windows Mobile Broadband service reads the IMSI, the ICCID, the provider ID, or the provider name and generates a set of HWIDs that represent the each value read from the device. The Windows Mobile Broadband service listens for mobile broadband-related events.
 
-2. When the user clicks **Connect**, the HWID values are used to locate the connection settings in the Windows APN database as follows:
+2. When the user clicks **Connect**, the HWID values are used to locate the connection settings in the Windows COSA database as follows:
 
     - If the initial connection is successful and Internet connectivity is available, nothing further happens. The user has previously purchased service and has an active account.
 
-    - If the initial connection is successful but Internet connectivity is not available, the user is taken to the URL specified in the APN database for this HWID range.
+    - If the initial connection is successful but Internet connectivity is not available, the user is taken to the URL specified in the COSA database for this HWID range.
 
     - If the initial connection fails, Windows Connection Manager notifies the user about the error. Your website should assist the user in purchasing a plan.
 
@@ -120,11 +120,11 @@ When a device with an active mobile broadband plan is attached to a PC, the expe
 
 1. When the mobile broadband hardware is detected, the Mobile Broadband service reads the IMSI, the ICCID, the provider ID, or the provider name and generates HWIDs.
 
-2. When the user clicks **Connect**, the HWID values are used to locate appropriate connection settings within the Windows APN database. For an active device, the connection is successful and Internet connectivity is available.
+2. When the user clicks **Connect**, the HWID values are used to locate appropriate connection settings within the Windows COSA database. For an active device, the connection is successful and Internet connectivity is available.
 
 3. At this point, the user is online. Now that an Internet connection is available, Windows will detect the mobile broadband hardware and download and install the service metadata and the mobile broadband app.
 
-Windows 8.1 and Windows 10 can connect to an operator network during Windows Setup if a mobile broadband device with an active plan is attached to the PC. The mobile broadband network appears in the Networks list during Windows Setup along with Wi-Fi networks. Similar to the process for connecting an active device, a HWID is generated based on the detected mobile broadband hardware and is used to locate appropriate connections settings within the Windows APN database.
+Windows 8.1 and Windows 10 can connect to an operator network during Windows Setup if a mobile broadband device with an active plan is attached to the PC. The mobile broadband network appears in the Networks list during Windows Setup along with Wi-Fi networks. Similar to the process for connecting an active device, a HWID is generated based on the detected mobile broadband hardware and is used to locate appropriate connections settings within the Windows COSA database.
 
 ### Operator Notifications and System Events
 
@@ -282,7 +282,7 @@ Windows 8.1 and Windows 10 support multiple PDP contexts to be active at the s
 
 You can use PnP-X to expose non-mobile broadband devices as a UWP device app.
 
-Devices such as DVRs, gateway routers, mobile hotspots, and phones can (while connected to the same Wi-Fi or LAN network as the Windows 8, Windows 8.1, or Windows 10 PC) use PnP-X to make Windows 8, Windows 8.1, and Windows 10 aware of their presence. Device metadata is downloaded for those devices based on their device properties and a UWP device app developed by you is automatically downloaded. You can reference this app for these devices so that a single mobile broadband app can manage mobile broadband as well as these additional devices.
+Devices such as DVRs, gateway routers, mobile hotspots, and phones can (while connected to the same Wi-Fi or LAN network as the Windows PC) use PnP-X to make Windows 8, Windows 8.1, and Windows 10 aware of their presence. Device metadata is downloaded for those devices based on their device properties and a UWP device app developed by you is automatically downloaded. You can reference this app for these devices so that a single mobile broadband app can manage mobile broadband as well as these additional devices.
 
 ## How it works
 
@@ -318,7 +318,7 @@ The Provisioning Agent provides an interface for you to configure Windows with y
 
 You can provide the XML file in one of the following ways:
 
-- A signed XML file provided by a website to the [**window.external.msProvisionNetworks**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/dn529170(v=vs.85)) function on a Windows 8, Windows 8.1, or Windows 10 computer running at least Internet Explorer 10 (or another supporting browser).
+- A signed XML file provided by a website to the [**window.external.msProvisionNetworks**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/dn529170(v=vs.85)) function on a Windows computer running at least Internet Explorer 10 (or another supporting browser).
 
 - An XML file (either signed or unsigned) provided by an app to the [**Windows.Networking.NetworkOperators.ProvisioningAgent.ProvisionFromXmlDocumentAsync**](/uwp/api/windows.networking.networkoperators.provisioningagent.provisionfromxmldocumentasync?view=winrt-19041&preserve-view=true#Windows_Networking_NetworkOperators_ProvisioningAgent_ProvisionFromXmlDocumentAsync_System_String_) function.
 
@@ -401,13 +401,13 @@ Metadata about operators is provided in three different ways for Windows 8 and 
 
 For more information about the operator metadata, see [Using metadata to configure mobile broadband experiences](using-metadata-to-configure-mobile-broadband-experiences.md).
 
-### Windows APN database
+### Windows COSA database
 
-The Windows APN database is present on all Windows 8, Windows 8.1, and Windows 10 PCs. The database is periodically updated by using Windows Update to help ensure accuracy of the connectivity information. Updates to the database are doing through servicing requests by you. The APN database provides information to Windows about how to connect to the network if it encounters a Mobile Broadband device, including the APNs to which it should attempt a connection and the URL to which the user should be directed if no Internet connectivity is available.
+The Windows COSA database is present on all Windows PCs. The database is periodically updated by using Windows Update to help ensure accuracy of the connectivity information. Updates to the database are done through servicing requests by you. The COSA database provides information to Windows about how to connect to the network if it encounters a Mobile Broadband device, including the APNs to which it should attempt a connection and the URL to which the user should be directed if no Internet connectivity is available.
 
 This information is intended to get customers online within seconds of connecting a mobile broadband device. It should enable them to purchase service immediately by using a Web browser or get online immediately if they have already purchased service.
 
-For information on submitting updates to the Windows APN database, see [COSA database submission](planning-your-desktop-cosa-database-submission.md).
+For information on submitting updates to the Windows COSA database, see [COSA database submission](planning-your-desktop-cosa-database-submission.md).
 
 ### Service metadata
 
@@ -415,7 +415,7 @@ Service metadata is delivered to any user after they connects a mobile broadband
 
 This information enables customers to have a richer experience by allowing you to add branding elements for Windows Connection Manager, referencing a mobile broadband app that is automatically acquired from the Microsoft Store, and having the most current mobile broadband settings for getting online for purchase or Internet connectivity. Windows will periodically check that it has the latest service metadata package from WMIS.
 
-The service metadata package is delivered to customers only when a mobile broadband device from the specified operator is detected on the PC. Information in this package overrides the content of the APN database, whenever it’s present. For more information on the service metadata package schema reference, see [Service metadata package schema reference](mobilebroadbandinfo-xml-schema.md).
+The service metadata package is delivered to customers only when a mobile broadband device from the specified operator is detected on the PC. Information in this package overrides the content of the COSA database, whenever it’s present. For more information on the service metadata package schema reference, see [Service metadata package schema reference](mobilebroadbandinfo-xml-schema.md).
 
 For instructions on how to create a service metadata package, see [Developer guide for creating service metadata](developer-guide-for-creating-service-metadata.md).
 
@@ -423,4 +423,4 @@ For instructions on how to create a service metadata package, see [Developer gui
 
 Provisioning metadata is delivered to the PC by either the operator’s website or the mobile broadband app after the subscriber has purchased service. Provisioning metadata is packaged as an XML file and is processed by the Provisioning Agent to modify the network settings of the PC.
 
-Provisioning metadata can be specified for each subscriber’s individual requirements. The provisioning metadata may also be updated with much higher frequency by using the mobile broadband app. Information in the provisioning metadata overrides the contents of the APN database and the service metadata. This is because it tends to be the most specific and tailored information about the subscriber.
+Provisioning metadata can be specified for each subscriber’s individual requirements. The provisioning metadata may also be updated with much higher frequency by using the mobile broadband app. Information in the provisioning metadata overrides the contents of the COSA database and the service metadata. This is because it tends to be the most specific and tailored information about the subscriber.

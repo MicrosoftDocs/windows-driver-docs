@@ -1,10 +1,10 @@
 ---
-title: Testing your desktop COSA/APN database submission
-description: Testing your desktop COSA/APN database submission
+title: Testing your desktop COSA database submission
+description: Testing your desktop COSA database submission
 ms.date: 04/20/2017
 ---
 
-# Testing your desktop COSA/APN database submission
+# Testing your desktop COSA database submission
 
 Before submitting an APN update request to Microsoft, it is important for the MNO or MVNO to validate the APN entries that they are about to submit. Microsoft does not have access to your network, so it is your responsibility to ensure the values that are being submitted are valid and work correctly.
 
@@ -16,7 +16,7 @@ The first step in testing and submitting your APN update is to work with your TA
 
 If you do not have a TAM:
 -   Contact Microsoft Customer Services and Support by calling (800) MICROSOFT (642-7676).
--   Inform the customer service representative that a COSA/APN database update is needed.
+-   Inform the customer service representative that a COSA database update is needed.
 -   Provide the spreadsheet to the support engineer.
 -   If asked, specify Windows 8 or Windows 10 as the product, as appropriate.
 

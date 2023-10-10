@@ -10,7 +10,7 @@ ms.date: 04/20/2017
 
 The Relationships element specifies data that is used to track a device metadata package within the device metadata cache.
 
-## <span id="Usage"></span><span id="usage"></span><span id="USAGE"></span>Usage
+## Usage
 
 
 ``` syntax
@@ -20,17 +20,17 @@ The Relationships element specifies data that is used to track a device metadata
 </Relationships>
 ```
 
-## <span id="Attributes"></span><span id="attributes"></span><span id="ATTRIBUTES"></span>Attributes
+## Attributes
 
 
 There are no attributes.
 
-## <span id="Text_value"></span><span id="text_value"></span><span id="TEXT_VALUE"></span>Text value
+## Text value
 
 
 If the Relationships element is specified, it must specify the [ExperienceID](experienceid.md) element or the [LanguageNeutralIdentifier](languageneutralidentifier.md) element, or both.
 
-## <span id="Child_elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Child elements
+## Child elements
 
 
 <table>
@@ -58,7 +58,7 @@ If the Relationships element is specified, it must specify the [ExperienceID](ex
 
  
 
-## <span id="Parent_elements"></span><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Parent elements
+## Parent elements
 
 
 <table>
@@ -82,7 +82,7 @@ If the Relationships element is specified, it must specify the [ExperienceID](ex
 
  
 
-## <span id="XSD"></span><span id="xsd"></span>XSD
+## XSD
 
 
 ``` syntax
@@ -97,7 +97,7 @@ If the Relationships element is specified, it must specify the [ExperienceID](ex
 </xs:complexType>
 ```
 
-## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
+## Remarks
 
 
 The child elements of the Relationships element ([ExperienceID](experienceid.md) and [LanguageNeutralIdentifier](languageneutralidentifier.md)) provide separate search keys that the operating system uses to query device metadata packages that are installed within the device metadata cache.

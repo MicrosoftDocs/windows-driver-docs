@@ -6,9 +6,6 @@ ms.date: 10/06/2023
 
 # Planning your desktop COSA database submission
 
-> [!IMPORTANT]
-> Starting in Windows 10, version 1703, the APN database is replaced by a new format called COSA. Windows 8, Windows 8.1, and versions of Windows 10 before version 1703 will continue to use the APN database while Windows 10, version 1703 and later use COSA. For more information about COSA, see [COSA overview](cosa-overview.md).
-
 Use the sections in this topic when you are planning to add a new APN to the baseline COSA database that ships with Windows desktop devices, or update an existing one.
 
 ## The APN update process
@@ -27,7 +24,7 @@ COSA and the APN connectivity database are updated by using Windows Update. The 
 
 ## Complete the APN/COSA update spreadsheet
 
-The APN update spreadsheet is used to gather the required information so Microsoft can update the COSA or the APN database appropriately. This spreadsheet is included in your submission request to Microsoft. MOs should send all information to target all devices to Microsoft when submitting an APN update, if applicable.
+The APN update spreadsheet is used to gather the required information so Microsoft can update the COSA database appropriately. This spreadsheet is included in your submission request to Microsoft. MOs should send all information to target all devices to Microsoft when submitting an APN update, if applicable.
 
 Use the following link to download the latest APN update spreadsheet: <https://go.microsoft.com/fwlink/p/?linkid=851213>
 
@@ -119,4 +116,4 @@ Note the following for the COSA database.
 
   - For CDMA networks, a Network Access Identifier (NAI) is used to connect to the Internet.
 
-Once your spreadsheet is complete, you can test the APNs you’ve entered. For the next steps in testing your APN update, see [Testing your desktop COSA/APN database submission](testing-your-desktop-cosa-apn-database-submission.md).
+Once your spreadsheet is complete, you can test the APNs you’ve entered. For the next steps in testing your APN update, see [Testing your desktop COSA database submission](testing-your-desktop-cosa-apn-database-submission.md).

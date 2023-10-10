@@ -11,7 +11,7 @@ By using the SIM PIN API, your mobile broadband app can support operations that 
 
 For more information about the SIM PIN API, see [Mobile Broadband API Interfaces](/windows/desktop/mbn/mobile-broadband-networks-api-interfaces).
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [List of mobile broadband Windows Runtime APIs](list-of-mobile-broadband-windows-runtime-apis.md)

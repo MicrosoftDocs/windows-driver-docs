@@ -15,7 +15,7 @@ The ModelIDList and [ModelID](modelid.md) elements are not supported for service
 
  
 
-## <span id="Usage"></span><span id="usage"></span><span id="USAGE"></span>Usage
+## Usage
 
 
 ``` syntax
@@ -24,12 +24,12 @@ The ModelIDList and [ModelID](modelid.md) elements are not supported for service
 </ModelIDList>
 ```
 
-## <span id="Attributes"></span><span id="attributes"></span><span id="ATTRIBUTES"></span>Attributes
+## Attributes
 
 
 There are no attributes.
 
-## <span id="Child_elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Child elements
+## Child elements
 
 
 <table>
@@ -53,7 +53,7 @@ There are no attributes.
 
  
 
-## <span id="Parent_elements"></span><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Parent elements
+## Parent elements
 
 
 <table>
@@ -81,7 +81,7 @@ There are no attributes.
 
  
 
-## <span id="XSD"></span><span id="xsd"></span>XSD
+## XSD
 
 
 ``` syntax
@@ -94,7 +94,7 @@ There are no attributes.
 </xs:complexType>
 ```
 
-## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
+## Remarks
 
 
 The ModelIDList element is required only if the [HardwareIDList](hardwareidlist.md) element is not specified in the [MetadataKey](metadatakey.md) element. If it is specified, the ModelIDList element must contain one or more [ModelID](modelid.md) elements. If your device metadata package supports multiple device models or model IDs, you can specify a ModelID element for each device model.

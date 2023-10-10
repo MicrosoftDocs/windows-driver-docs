@@ -15,17 +15,17 @@ You can leverage service metadata to create a deeply integrated experience with 
 **Note**  
 Even though the mobile broadband app is automatically installed, the user must pin it to the Start Screen manually.
 
-## <span id="Getting_started"></span><span id="getting_started"></span><span id="GETTING_STARTED"></span>Getting started
+## Getting started
 
 To create a successful service metadata package, you must complete the steps included in this section.
 
-### <span id="Register_your_company_with_the_Windows_Dev_Center_hardware_dashboard"></span><span id="register_your_company_with_the_windows_dev_center_hardware_dashboard"></span><span id="REGISTER_YOUR_COMPANY_WITH_THE_WINDOWS_DEV_CENTER_HARDWARE_DASHBOARD"></span>Register your company with the Windows Dev Center hardware dashboard
+### Register your company with the Windows Dev Center hardware dashboard
 
 - Your company has an active account on the Windows Dev Center hardware dashboard. If your company does not have an account on the Windows Dev Center hardware dashboard, you can create a new account and add your user account to you company. For more info, see [Administration](../dashboard/get-started-dashboard-submissions.md) in the Windows Dev Center hardware dashboard help.
 
 - Your company has a VeriSign code signing certificate to sign the packages.
 
-### <span id="Service_Metadata_wizard_access_and_service_identifiers_registration"></span><span id="service_metadata_wizard_access_and_service_identifiers_registration"></span><span id="SERVICE_METADATA_WIZARD_ACCESS_AND_SERVICE_IDENTIFIERS_REGISTRATION"></span>Service Metadata wizard access and service identifiers registration
+### Service Metadata wizard access and service identifiers registration
 
 MNOs and MVNOs must complete the following steps before you can create a service metadata package:
 
@@ -53,7 +53,7 @@ Include the following service identifiers as applicable:
 
 You should receive an acknowledgement emails with 24 hours that your request was received. However, it could take up to 5 business days to process the request. If we have conflicts, we’ll send you an email asking for additional information.
 
-### <span id="Mobile_broadband_app"></span><span id="mobile_broadband_app"></span><span id="MOBILE_BROADBAND_APP"></span>Mobile broadband app
+### Mobile broadband app
 
 Before you create your service metadata package, ensure that your mobile broadband app has been developed and associated with the Microsoft Store. This app should provide key experiences, such as plan purchase, data usage, help and support, as well as highlighting value-added services from the operator. For more info about creating the mobile broadband app, see the following links:
 
@@ -66,7 +66,7 @@ Before you create your service metadata package, ensure that your mobile broadba
 **Note**  
 The mobile broadband app doesn’t have to be published to the Microsoft Store until the service metadata has been tested and is ready to be published externally. We recommend that the app is published to the Microsoft Store only after the service metadata package passes preview mode testing.
 
-## <span id="Creating_service_metadata_packages"></span><span id="creating_service_metadata_packages"></span><span id="CREATING_SERVICE_METADATA_PACKAGES"></span>Creating service metadata packages
+## Creating service metadata packages
 
 Creating a service metadata package starts with the Service Metadata wizard that is available on the Windows Dev Center hardware dashboard. For more info on the Service Metadata wizard, see [Step 2- Create the service metadata package](#2-create-the-service-metadata-package). You can use the Service Metadata wizard to create a new or edit an existing service metadata package. As you go through the wizard and fill out the values, the wizard will validate and notify you of any errors or warnings. This validation includes checking for missing or incorrect fields, service identifier ownership, mobile broadband app existence in the Microsoft Store, and so on.
 
@@ -173,7 +173,7 @@ Service metadata is created by using the Service Metadata Wizard in the Windows 
 
     :::image type="content" source="images/mbae-sxs81-serviceinfostep.png" alt-text="Screenshot of the Service Info step in the Service Metadata Wizard.":::
 
-4. On the **Hardware info** page, select the information that should be used to identify your experience. Once a check box is selected, you can add the appropriate network ranges. The ID generated should exist in the Windows APN database so the right subscriber is identified. For more information about the APN database, see [COSA database submission](planning-your-desktop-cosa-database-submission.md).
+4. On the **Hardware info** page, select the information that should be used to identify your experience. Once a check box is selected, you can add the appropriate network ranges. The ID generated should exist in the Windows COSA database so the right subscriber is identified. For more information about the COSA database, see [COSA database submission](planning-your-desktop-cosa-database-submission.md).
 
     - If you are a GSM Provider that uses the International Mobile Subscriber Identity (IMSI), select the **IMSI** check box under the **GSM** heading. In the **Provider ID** box, enter the GSM service provider ID. Under the **IMSI/ICCID Ranges** heading, enter the range, and then click **Add**.
 
@@ -223,7 +223,7 @@ A store manifest file must be included with a UWP device app. Use the following 
 
 To test the service metadata package, you must have the mobile broadband device and the service metadata package files. The instructions to configure your test system and install the service metadata package depend on the mode of the package.
 
-### <span id="Test_a_service_metadata_package_in_developer_mode"></span><span id="test_a_service_metadata_package_in_developer_mode"></span><span id="TEST_A_SERVICE_METADATA_PACKAGE_IN_DEVELOPER_MODE"></span>Test a service metadata package in developer mode
+### Test a service metadata package in developer mode
 
 You must manually download the package and install it in the right location for the scenarios to work correctly. Your developer mode package will need to be accessed from two different entry points depending on whether you authored a new package or an existing package.
 
@@ -239,7 +239,7 @@ After you’ve download the service metadata package, you must enable test signi
 
 After test signing is enabled, copy the \*.devicemetadata-ms file from the service metadata package to the following location: **%ProgramData%\\Microsoft\\Windows\\DeviceMetadataStore\\**<em>culture</em>, where *culture* is the current culture code for your computer.
 
-### <span id="Test_a_service_metadata_package_in_preview_mode"></span><span id="test_a_service_metadata_package_in_preview_mode"></span><span id="TEST_A_SERVICE_METADATA_PACKAGE_IN_PREVIEW_MODE"></span>Test a service metadata package in preview mode
+### Test a service metadata package in preview mode
 
 If the service metadata package is in preview mode, you must create the PreviewKey registry entry on your test computer. For more info about configuring the PreviewKey registry entry, see [Creating a Preview Package](../dashboard/index.yml).
 
@@ -248,7 +248,7 @@ You do not have to enable test signing to test a service metadata package that i
 
 After the PreviewKey registry entry is created, plug in your mobile broadband device and ensure that it shows in the Networks list. If it does not, see the [Troubleshooting](#troubleshooting) section for more info.
 
-### <span id="Clear_the_existing_service_metadata"></span><span id="clear_the_existing_service_metadata"></span><span id="CLEAR_THE_EXISTING_SERVICE_METADATA"></span>Clear the existing service metadata
+### Clear the existing service metadata
 
 When service metadata is installed on a PC, the values contained in the metadata are stored in many different places, including the registry, metadata cache, metadata store, WWAN profiles and dev node. This can make it challenging to repeat multiple tests with the same, or different, metadata packages. To ensure that the service metadata is installed correctly, you should clear any existing service metadata. You can clear existing service metadata by setting up your test computer to run a PowerShell script that removes all traces. First, you must set up the environment on your test computer:
 
@@ -524,7 +524,7 @@ Open the networks list and look for your mobile broadband network. If the networ
 
 - Check the WWAN Logs
 
-### <span id="forcemdref"></span><span id="FORCEMDREF"></span>Force a metadata refresh
+### Force a metadata refresh
 
 Some parts of the metadata and mobile broadband app systems rely on network access, which can fail and leave the computer in an inconsistent state. If this happens, you can encounter a situation where service metadata is not installed or the mobile broadband app is not installed. The system periodically tries to remedy the situation, but to conserve power, retries are fairly infrequent (just a few times a day). Instead of waiting for the next retry, you can manually force a refresh to happen immediately. To do this, perform the following steps:
 
@@ -537,7 +537,7 @@ Some parts of the metadata and mobile broadband app systems rely on network acce
 **Important**  
 If a service metadata package has already been successfully parsed, the system will treat this refresh as a metadata update. In this case, your metadata package must have a different GUID in its filename and an updated timestamp in the [LastModifiedDate](lastmodifieddate.md) element of **PackageInfo.xml**.
 
-### <span id="checkmdcache"></span><span id="CHECKMDCACHE"></span>Check the metadata cache
+### Check the metadata cache
 
 If a metadata refresh did not fix the problem, make sure that the service metadata package is valid and that it has the correct Hardware IDs. To do this, perform the following steps:
 
@@ -555,7 +555,7 @@ If a metadata refresh did not fix the problem, make sure that the service metada
 
 If you’re sure that the package is not corrupted and that you first plugged in the mobile broadband device after you copied the service metadata package, check the IMSI ranges. It’s very easy to type in too many or too few 0s or 9s. If the problem persists after confirming or correcting these items, you must look at the registry.
 
-### <span id="checkreg"></span><span id="CHECKREG"></span>Check the registry
+### Check the registry
 
 **Warning**  
 You should not edit registry data that does not belong to your application unless it is absolutely necessary. If there is an error in the registry, your system might not function properly. Do not, under any circumstances, delete the **MobileBroadbandAccounts** registry key. Windows will not re-create it and you will break the feature.
@@ -580,7 +580,7 @@ Perform the following steps to check the registry:
 
     :::image type="content" source="images/fig1-registryentries-for-unparsedmobilebroadbandaccount.png" alt-text="Screenshot of registry entries for an unparsed mobile broadband account.":::
 
-### <span id="checkwwanlogs"></span><span id="CHECKWWANLOGS"></span>Check the WWAN Logs
+### Check the WWAN Logs
 
 If there are no **Accounts** or **NetworkInterfaceBindings** registry keys under **HKLM\\SOFTWARE\\Microsoft\\WwanSvc\\MobileBroadbandAccounts**, or if there are entries that are not fully populated, you must look at the WWAN logs. The following steps will reset the computer to a known state:
 
@@ -673,7 +673,7 @@ If any part of the process failed, that failure is logged. For example, if the d
 
 Because it is normal for the parser task to run more than one time, you might see more than one set of `[Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]` log entries. In this case, the sets of entries are typically the same - if they are not the same, it can indicate an intermittent problem.
 
-## <span id="Additional_resources"></span><span id="additional_resources"></span><span id="ADDITIONAL_RESOURCES"></span>Additional resources
+## Additional resources
 
 Use the following links to learn more about mobile broadband in Windows 8.1 and Windows 10:
 

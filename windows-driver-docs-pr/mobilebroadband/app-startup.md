@@ -13,7 +13,7 @@ If multiple operators’ subscriber identity modules (SIMs) are attached to the 
 
 For example, the app can read the IMSI and IMEI information from the mobile broadband device. This information can be used as part of the authentication scheme, in addition or in place of a logon screen that sends user-name and password information to the back-end. Windows provides an API to securely store user-name and password information that the app can subsequently use for authentication after the first logon attempt. All user-name and password information must be exchanged with the operator back-end over Secure HTTP (HTTPS).
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [Mobile broadband app scenarios](./account-management.md)

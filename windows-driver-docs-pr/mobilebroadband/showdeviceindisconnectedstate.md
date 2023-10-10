@@ -10,7 +10,7 @@ ms.date: 04/20/2017
 
 The ShowDeviceInDisconnectedState element should be set to **false** because it does not apply to service metadata packages in Windows 8, Windows 8.1, and Windows 10.
 
-## <span id="Usage"></span><span id="usage"></span><span id="USAGE"></span>Usage
+## Usage
 
 
 ``` syntax
@@ -19,22 +19,22 @@ The ShowDeviceInDisconnectedState element should be set to **false** because it 
 </ShowDeviceInDisconnectedState>
 ```
 
-## <span id="Attributes"></span><span id="attributes"></span><span id="ATTRIBUTES"></span>Attributes
+## Attributes
 
 
 There are no attributes.
 
-## <span id="Text_value"></span><span id="text_value"></span><span id="TEXT_VALUE"></span>Text value
+## Text value
 
 
 Should be set to **false** because it does not apply to service metadata packages in Windows 8, Windows 8.1, and Windows 10.
 
-## <span id="Child_elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Child elements
+## Child elements
 
 
 There are no child elements.
 
-## <span id="Parent_elements"></span><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Parent elements
+## Parent elements
 
 
 <table>
@@ -58,14 +58,14 @@ There are no child elements.
 
  
 
-## <span id="XSD"></span><span id="xsd"></span>XSD
+## XSD
 
 
 ``` syntax
 <xs:element name="ShowDeviceInDisconnectedState" type="xs:boolean" default="false" />
 ```
 
-## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
+## Remarks
 
 
 The ShowDeviceInDisconnectedState element is required.

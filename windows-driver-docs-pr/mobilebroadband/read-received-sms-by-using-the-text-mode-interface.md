@@ -90,7 +90,7 @@ SMS client apps can use the decoded segmentation information that is provided by
 
  
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [Developing SMS apps](developing-sms-apps.md)

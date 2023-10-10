@@ -11,7 +11,7 @@ Internet Sharing, commonly referred to as tethering, has been added in Windows 
 
 Windows 8.1 and Windows 10 extend the Internet sharing capability further by enabling customers to turn on and connect to PCs that have Internet Sharing configured, known as a tethering access point, just as if it was a standard Wi-Fi network.
 
-## <span id="Turn_on_Internet_Sharing"></span><span id="turn_on_internet_sharing"></span><span id="TURN_ON_INTERNET_SHARING"></span>Turn on Internet Sharing
+## Turn on Internet Sharing
 
 
 Internet Sharing can be turned on by using the Settings charm on the mobile broadband-capable device. Once Internet Sharing is turned on, any device that can connect to a Wi-Fi network can connect to it.
@@ -57,7 +57,7 @@ When Internet Sharing is turned on, the following things happen:
 
 -   Enterprise administrators can disable Internet Sharing by using Group Policy.
 
-## <span id="Connect_to_a_tethered_network"></span><span id="connect_to_a_tethered_network"></span><span id="CONNECT_TO_A_TETHERED_NETWORK"></span>Connect to a tethered network
+## Connect to a tethered network
 
 
 You can connect to a tethered network using a Wi-Fi device in the same way you connect to any other Wi-Fi network. However, if a user connects to a tethered network with the same Microsoft account credentials on both devices running Windows 8.1 or Windows 10, the following things happen:
@@ -71,7 +71,7 @@ Users can also connect to a tethering access point if they have paired their dev
 
  
 
-## <span id="Configure_Internet_Sharing"></span><span id="configure_internet_sharing"></span><span id="CONFIGURE_INTERNET_SHARING"></span>Configure Internet Sharing
+## Configure Internet Sharing
 
 
 Some mobile network operators (MNOs) or mobile virtual network operators (MVNOs) do not support Internet Sharing on their network, or they require an entitlement check prior to setting up Internet Sharing. Windows provides the necessary controls to ensure that Windows devices comply with network policies. 
@@ -94,7 +94,7 @@ You can also configure the maximum number of concurrent connected client devices
 
 To help ensure that your users don’t accidentally run over their data, you can show data usage statistics to your customers for shared and non-shared traffic in your mobile broadband app by using the [**GetNetworkUsageAsync**](/uwp/api/Windows.Networking.Connectivity.ConnectionProfile#Windows_Networking_Connectivity_ConnectionProfile_GetNetworkUsageAsync_Windows_Foundation_DateTime_Windows_Foundation_DateTime_Windows_Networking_Connectivity_DataUsageGranularity_Windows_Networking_Connectivity_NetworkUsageStates_) method of the [**ConnectionProfile**](/uwp/api/Windows.Networking.Connectivity.ConnectionProfile) class.
 
-## <span id="Create_a_custom_Internet_Sharing_app"></span><span id="create_a_custom_internet_sharing_app"></span><span id="CREATE_A_CUSTOM_INTERNET_SHARING_APP"></span>Create a custom Internet Sharing app
+## Create a custom Internet Sharing app
 
 
 For most operators, the Windows user interface will provide the best experience for Internet Sharing. However, in order to create a consistent experience across all their devices and hardware, you may choose to include your own Internet Sharing user experience in your mobile broadband app or other app that has been given privileged access to the mobile broadband device. Windows provides several new APIs in the [**Windows.Networking.NetworkOperators namespace**](/uwp/api/Windows.Networking.NetworkOperators) to enable your app to do the following:

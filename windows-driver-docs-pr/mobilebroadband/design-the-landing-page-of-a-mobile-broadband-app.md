@@ -28,27 +28,27 @@ The following sections describe some of the content that you can include in the 
 
 - [Additional resources](#res)
 
-## <span id="usageov"></span><span id="USAGEOV"></span>Usage – show an overview or link
+## Usage – show an overview or link
 
-### <span id="Postpaid_plans"></span><span id="postpaid_plans"></span><span id="POSTPAID_PLANS"></span>Postpaid plans
+### Postpaid plans
 
 Because it is important user to be able to see information about their data usage, usage should be highlighted on the landing page if possible. Although an overview is encouraged, you can alternatively provide a link to a separate page in the app that contains more details. Some suggestions for additional details can be found in the data usage section. See [Design account balance and usage info in a mobile broadband app](design-account-balance-and-usage-info-in-a-mobile-broadband-app.md) for more info.
 
-### <span id="Prepaid_plans"></span><span id="prepaid_plans"></span><span id="PREPAID_PLANS"></span>Prepaid plans
+### Prepaid plans
 
 Data usage display is simplified for prepaid plans. A user should also be offered an option to recharge or refill their plan. You can provide a link to a page that offers payment options. See [Design billing pages in a mobile broadband app](design-billing-pages-in-a-mobile-broadband-app.md) for more info. The following shows a typical overview page for a prepaid plan:
 
 :::image type="content" source="images/mb-fig2-landing-page-prepaid.png" alt-text="Screenshot of a prepaid mobile broadband app landing page.":::
 
-## <span id="opmsg"></span><span id="OPMSG"></span>Operator messages – show an overview or link
+## Operator messages – show an overview or link
 
 A list of operator text messages can be highlighted on the landing page. Because a number of operator messages are high priority, users prefer having easy access to these. For more information about functionality that should be included for text messages, see [Design messages in a mobile broadband app](design-messages-in-a-mobile-broadband-app.md).
 
-## <span id="keylinks"></span><span id="KEYLINKS"></span>Links to other key pages
+## Links to other key pages
 
 You can provide links to other key pages on the landing page. For example, you could include a tile for **Help and Support** and a tile for **Services**.
 
-## <span id="appnav"></span><span id="APPNAV"></span>App navigation
+## App navigation
 
 When describing the landing page, it is important to consider navigation within the app. Your app will have multiple pages that have various purposes. Windows 10 offers the following tools that can be used for navigation:
 
@@ -60,13 +60,13 @@ When describing the landing page, it is important to consider navigation within 
 
     For more information about designing app navigation, see [Quickstart: Using single-page navigation](/previous-versions/windows/apps/hh452768(v=win.10)) and [**select element | select object**](https://developer.mozilla.org/docs/Web/HTML/Element/select).
 
-## <span id="opbrand"></span><span id="OPBRAND"></span>Operator branding
+## Operator branding
 
 You can customize your mobile broadband app to suit your individual branding style. By using numerous customizations, you can make your app unique and easily recognizable. For more info on how you can brand your app, see [Design branding in a mobile broadband app](design-branding-in-a-mobile-broadband-app.md).
 
-## <span id="sum"></span><span id="SUM"></span>Quick summary
+## Quick summary
 
-### <span id="Appropriate_design_for_the_landing_page"></span><span id="appropriate_design_for_the_landing_page"></span><span id="APPROPRIATE_DESIGN_FOR_THE_LANDING_PAGE"></span>Appropriate design for the landing page
+### Appropriate design for the landing page
 
 - Show information at a glance that users will primarily look for in your app.
 
@@ -76,13 +76,13 @@ You can customize your mobile broadband app to suit your individual branding sty
 
 - Disable the **Back** button if this is the first time that the user is visiting the app.
 
-### <span id="Inappropriate_design_for_the_landing_page"></span><span id="inappropriate_design_for_the_landing_page"></span><span id="INAPPROPRIATE_DESIGN_FOR_THE_LANDING_PAGE"></span>Inappropriate design for the landing page
+### Inappropriate design for the landing page
 
 - Don’t have scrolling on the landing page. Try to restrict all content to a single page.
 
 - Don’t have management functionality on the landing page.
 
-## <span id="res"></span><span id="RES"></span>Additional resources
+## Additional resources
 
 - [Index of UX guidelines for UWP apps](https://developer.microsoft.com/windows/apps/design)
 
@@ -96,6 +96,6 @@ You can customize your mobile broadband app to suit your individual branding sty
 
 - [Integrate a mobile broadband app with other Windows components](integrate-a-mobile-broadband-app-with-other-windows-components.md#tileandtoast)
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 [Designing the user experience of a mobile broadband app](designing-the-user-experience-of-a-mobile-broadband-app.md)

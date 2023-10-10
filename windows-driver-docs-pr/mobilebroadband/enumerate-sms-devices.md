@@ -1,20 +1,17 @@
 ---
 title: Enumerate SMS devices
 description: Enumerate SMS devices
-ms.date: 04/20/2017
+ms.date: 10/10/2023
 ---
 
 # Enumerate SMS devices
 
-
 The Mobile Broadband SMS platform provides the ability to get the first SMS-capable mobile broadband device, or to get a list of all SMS-capable mobile broadband devices. The following sample code shows instantiating an SMS object with the default SMS device and with a specific device.
 
-**Note**  
-In apps that use C# or C++ in Windows 8, Windows 8.1, or Windows 10, the first use of the [**SmsDevice**](/uwp/api/Windows.Devices.Sms.SmsDevice) object to call [**GetDefaultAsync**](/uwp/api/Windows.Devices.Sms.SmsDevice#Windows_Devices_Sms_SmsDevice_GetDefaultAsync) or [**FromIdAsync**](/uwp/api/Windows.Devices.Sms.SmsDevice#Windows_Devices_Sms_SmsDevice_FromIdAsync_System_String_) should be on the STA thread. Calls from an MTA thread can result in undefined behavior.
+> [!NOTE]
+> In apps that use C# or C++, the first use of the [**SmsDevice**](/uwp/api/Windows.Devices.Sms.SmsDevice) object to call [**GetDefaultAsync**](/uwp/api/Windows.Devices.Sms.SmsDevice#Windows_Devices_Sms_SmsDevice_GetDefaultAsync) or [**FromIdAsync**](/uwp/api/Windows.Devices.Sms.SmsDevice#Windows_Devices_Sms_SmsDevice_FromIdAsync_System_String_) should be on the STA thread. Calls from an MTA thread can result in undefined behavior.
 
- 
-
-**JavaScript code example to use the default SMS device**
+## JavaScript code example to use the default SMS device
 
 ``` syntax
 var smsDevice = new Windows.Devices.Sms.SmsDevice.getDefault();
@@ -30,7 +27,7 @@ catch (err)
 }
 ```
 
-**JavaScript code example to enumerate all SMS devices**
+## JavaScript code example to enumerate all SMS devices
 
 ``` syntax
 Windows.Devices.Enumeration.DeviceInformation.findAllAsync(Windows.Devices.Sms.SmsDevice.getDeviceSelector()).then(function (smsdevices) 
@@ -48,12 +45,11 @@ Windows.Devices.Enumeration.DeviceInformation.findAllAsync(Windows.Devices.Sms.S
 }
 ```
 
-## <span id="detecterr"></span><span id="DETECTERR"></span>Detect SMS device access errors
-
+## Detect SMS device access errors
 
 You can detect if enumerating the SMS device failed because the app does not have access to SMS. This can happen if the user explicitly denies access to the app or if the device metadata has not granted access to the app.
 
-**JavaScript code example to detect SMS device access errors**
+### JavaScript code example to detect SMS device access errors
 
 ``` syntax
 Windows.Devices.Enumeration.DeviceInformation.findAllAsync(Windows.Devices.Sms.SmsDevice.getDeviceSelector()).then(function (smsdevices)
@@ -96,10 +92,6 @@ function hex(nmb)
 }
 ```
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
-
-[Developing SMS apps](developing-sms-apps.md)
-
- 
-
+- [Developing SMS apps](developing-sms-apps.md)

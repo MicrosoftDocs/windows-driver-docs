@@ -10,7 +10,7 @@ ms.date: 04/20/2017
 
 The Locale element specifies the locale of the service metadata package. A service metadata package can specify single or multiple locales. To use multiple locales, you must set the [MultipleLocale](multiplelocale.md) element to **true**.
 
-## <span id="Usage"></span><span id="usage"></span><span id="USAGE"></span>Usage
+## Usage
 
 
 ``` syntax
@@ -20,7 +20,7 @@ The Locale element specifies the locale of the service metadata package. A servi
 </Locale>
 ```
 
-## <span id="Attributes"></span><span id="attributes"></span><span id="ATTRIBUTES"></span>Attributes
+## Attributes
 
 
 <table>
@@ -50,12 +50,12 @@ The Locale element specifies the locale of the service metadata package. A servi
 
  
 
-## <span id="Child_elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Child elements
+## Child elements
 
 
 There are no child elements.
 
-## <span id="Parent_elements"></span><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Parent elements
+## Parent elements
 
 
 <table>
@@ -83,7 +83,7 @@ There are no child elements.
 
  
 
-## <span id="XSD"></span><span id="xsd"></span>XSD
+## XSD
 
 
 ``` syntax
@@ -98,7 +98,7 @@ There are no child elements.
 </xs:complexType>
 ```
 
-## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
+## Remarks
 
 
 -   The Locale element can be *&lt;Language&gt;*-*&lt;Region&gt;* (such as EN-US) or *&lt;Language&gt;* (such as EN). If the *&lt;Language&gt;* is set, the package applies to all *&lt;Language&gt;* locales. For example, EN applies to EN-US and EN-BR.

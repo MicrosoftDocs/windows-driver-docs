@@ -35,23 +35,23 @@ The sections in this topic include:
 
 - [Developing your SMS app](#developsmsapp)
 
-## <span id="SupportedDevices"></span><span id="supporteddevices"></span><span id="SUPPORTEDDEVICES"></span>Mobile broadband SMS supported devices
+## Mobile broadband SMS supported devices
 
 Here’s an overview diagram on how the SMS works with a mobile broadband connection:
 
 :::image type="content" source="images/fig1-mb-sms-platformoverview.jpg" alt-text="Diagram that shows an overview of the SMS platform with a mobile broadband connection.":::
 
-### <span id="basreq"></span><span id="BASREQ"></span>Basic requirements
+### Basic requirements
 
-- The computer must be running Windows 8, Windows 8.1, or Windows 10, a mobile broadband device, and active service from a mobile network operator.
+- The computer must be running Windows, a mobile broadband device, and active service from a mobile network operator.
 
-- The device should be hardware certified for Windows 8, Windows 8.1, or Windows 10 with the SMS send/receive capabilities set.
+- The device should be hardware certified for Windows with the SMS send/receive capabilities set.
 
 - Both internal and external devices are supported.
 
 - Global System for Mobile Communications (GSM)- and Code division multiple access (CDMA)-based devices are both supported.
 
-### <span id="Additional_guidance_for_a_better_user_experience"></span><span id="additional_guidance_for_a_better_user_experience"></span><span id="ADDITIONAL_GUIDANCE_FOR_A_BETTER_USER_EXPERIENCE"></span>Additional guidance for a better user experience
+### Additional guidance for a better user experience
 
 - An SMS message can be sent or received by an app when the device is in a network coverage area for the supported operator. Devices must be registered to the network service provider, but do not need to be connected to data services to send or receive messages.
 
@@ -59,9 +59,9 @@ Here’s an overview diagram on how the SMS works with a mobile broadband connec
 
 - Devices cannot send or receive SMS data if the device is PIN locked.
 
-## <span id="SMSAccess"></span><span id="smsaccess"></span><span id="SMSACCESS"></span>Access to mobile broadband SMS
+## Access to mobile broadband SMS
 
-### <span id="store"></span><span id="STORE"></span>UWP app access to SMS
+### UWP app access to SMS
 
 Access to mobile broadband SMS functionality is available in the following ways:
 
@@ -81,16 +81,16 @@ For mobile network operators and mobile broadband adapters IHVs, Windows 8, Win
 
 Mobile broadband apps and IHV apps have simultaneous access SMS for a single mobile broadband device. If both a mobile broadband app and an IHV or OEM UWP app are installed and both show a notifications user interface when a new SMS is received, the users see two notification UIs. The user can turn off notifications or uninstall one of the apps.
 
-### <span id="user"></span><span id="USER"></span>User consent to SMS access
+### User consent to SMS access
 
 Mobile broadband apps must obtain user consent to use SMS because sending messages from the user's device can cause the user to be charged for sending or receiving messages by their cellular service provider.
 
-Users running Windows 8, Windows 8.1, or Windows 10 can control access to SMS capability at an app level by using the Settings charm.
+Users running Windows can control access to SMS capability at an app level by using the Settings charm.
 
 **Note**  
 Together with user consent, the app must also have access granted by the device by adding the app name in the device or service metadata.
 
-## <span id="Filtering"></span><span id="filtering"></span><span id="FILTERING"></span>SMS notifications filtering
+## SMS notifications filtering
 
 The Mobile Broadband SMS platform filters newly received SMS data into two types: administrative SMS notifications from a mobile network operator (MNO), and general SMS messages. Administrative SMS notifications that are received from an MNO are only accessible to a mobile broadband app, and are hidden from general SMS client apps.
 
@@ -98,7 +98,7 @@ MNOs specify custom filtering rules for administrative SMS notifications in the 
 
 For more information about notification filtering, see [Enabling mobile operator notifications and system events](enabling-mobile-operator-notifications-and-system-events.md).
 
-## <span id="DevelopSMSApp"></span><span id="developsmsapp"></span><span id="DEVELOPSMSAPP"></span>Developing your SMS app
+## Developing your SMS app
 
 You can write JavaScript, C#, or C++ apps that use the [**Windows.Devices.Sms**](/uwp/api/Windows.Devices.Sms) API to send, read, and delete messages.
 

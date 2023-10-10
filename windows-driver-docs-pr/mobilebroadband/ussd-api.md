@@ -11,7 +11,7 @@ The Windows USSD API is an abstraction of the underlying Unstructured Supplement
 
 For more info about the USSD API, see [**Windows.Networking.NetworkOperators namespace**](/uwp/api/Windows.Networking.NetworkOperators).
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [List of mobile broadband Windows Runtime APIs](list-of-mobile-broadband-windows-runtime-apis.md)

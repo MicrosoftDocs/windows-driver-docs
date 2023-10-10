@@ -10,7 +10,7 @@ ms.date: 04/20/2017
 
 The MultipleLocale element specifies if the service metadata package supports multiple locales or not.
 
-## <span id="Usage"></span><span id="usage"></span><span id="USAGE"></span>Usage
+## Usage
 
 
 ``` syntax
@@ -19,22 +19,22 @@ The MultipleLocale element specifies if the service metadata package supports mu
 </MultipleLocale>
 ```
 
-## <span id="Attributes"></span><span id="attributes"></span><span id="ATTRIBUTES"></span>Attributes
+## Attributes
 
 
 There are no attributes.
 
-## <span id="Text_value"></span><span id="text_value"></span><span id="TEXT_VALUE"></span>Text value
+## Text value
 
 
 A boolean value that is true if the service metadata package supports multiple locales.
 
-## <span id="Child_elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Child elements
+## Child elements
 
 
 There are no child elements.
 
-## <span id="Parent_elements"></span><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Parent elements
+## Parent elements
 
 
 <table>
@@ -62,14 +62,14 @@ There are no child elements.
 
  
 
-## <span id="XSD"></span><span id="xsd"></span>XSD
+## XSD
 
 
 ``` syntax
 <xs:element name="MultipleLocale" type ="xs:boolean" />
 ```
 
-## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
+## Remarks
 
 
 -   To support multiple locales in the service metadata package , Set the MultipleLocale element to **true**. This element is not supported on Windows 7. If this element is not specified, the default value is true.

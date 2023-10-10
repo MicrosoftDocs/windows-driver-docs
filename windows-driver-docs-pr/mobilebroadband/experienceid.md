@@ -12,7 +12,7 @@ The ExperienceID element specifies a GUID representing the device experience. Th
 
 In Windows 8, Windows 8.1, and Windows 10 it is also used to link the device metadata to a device app that can be automatically acquired when the device is first connected. A device app specifies one or more ExperienceID elements in a StoreManifest.XML file in the app submission package. Each of these ExperienceID GUIDs corresponds to the ExperienceID element of a device metadata package. After the StoreManifest.xml file has been submitted, the device app can then be distributed to one or more device models, if the ExperienceID in a device’s metadata is also specified in the device apps StoreManifest file.
 
-## <span id="Usage"></span><span id="usage"></span><span id="USAGE"></span>Usage
+## Usage
 
 
 ``` syntax
@@ -21,22 +21,22 @@ In Windows 8, Windows 8.1, and Windows 10 it is also used to link the device 
 </ExperienceID>
 ```
 
-## <span id="Attributes"></span><span id="attributes"></span><span id="ATTRIBUTES"></span>Attributes
+## Attributes
 
 
 There are no attributes.
 
-## <span id="Text_value"></span><span id="text_value"></span><span id="TEXT_VALUE"></span>Text value
+## Text value
 
 
 A value formatted as a [GUIDType](guidtype-packageinfo.md) XML simple type.
 
-## <span id="Child_elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Child elements
+## Child elements
 
 
 There are no child elements.
 
-## <span id="Parent_elements"></span><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Parent elements
+## Parent elements
 
 
 <table>
@@ -60,14 +60,14 @@ There are no child elements.
 
  
 
-## <span id="XSD"></span><span id="xsd"></span>XSD
+## XSD
 
 
 ``` syntax
 <xs:element name="ExperienceID" type="tns:GUIDType" minOccurs="0" />
 ```
 
-## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
+## Remarks
 
 
 In Windows 8.1 and Windows 10, the ExperienceID is created by the Service Metadata Wizard on the Windows Dev Center Dashboard.

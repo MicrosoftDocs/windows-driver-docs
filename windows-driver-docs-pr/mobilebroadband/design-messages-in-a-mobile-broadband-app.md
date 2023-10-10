@@ -22,7 +22,7 @@ The following table shows some example operator messages and alerts.
 | Plan expiration | Your plan expired on July 1, 2013. Renew your plan by going to the Plans page. |
 | Account update | Great news! Effective immediately, Contoso is increasing the amount of data included in your DataPro Tethering plan from 2 GB to 4 GB. The monthly charge for your plan will not change and no action is required by you. Thank you for being a great customer. |
 
-## <span id="Quick_summary"></span><span id="quick_summary"></span><span id="QUICK_SUMMARY"></span>Quick summary
+## Quick summary
 
 Appropriate design for showing operator messages:
 
@@ -34,7 +34,7 @@ Inappropriate design for showing operator messages:
 
 - Don’t show user-to-user chat text messages and promotions and advertisements mixed together with operator notifications and alerts.
 
-## <span id="Additional_resources"></span><span id="additional_resources"></span><span id="ADDITIONAL_RESOURCES"></span>Additional resources
+## Additional resources
 
 - Use [**ListView**](/previous-versions/windows/apps/br211837(v=win.10)) to display messages. For more info, see [Adding List View, Semantic Zoom, and other data controls](/previous-versions/windows/apps/hh465409(v=win.10)).
 
@@ -42,6 +42,6 @@ Inappropriate design for showing operator messages:
 
 - [Integrate a mobile broadband app with other Windows components](integrate-a-mobile-broadband-app-with-other-windows-components.md#tileandtoast)
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 [Designing the user experience of a mobile broadband app](designing-the-user-experience-of-a-mobile-broadband-app.md)

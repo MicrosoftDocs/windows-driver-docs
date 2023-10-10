@@ -220,10 +220,10 @@ The following table shows some sample cost attribute values (last four bytes of 
 
  
 
-## <span id="Add_network_cost_support_to_your_device"></span><span id="add_network_cost_support_to_your_device"></span><span id="ADD_NETWORK_COST_SUPPORT_TO_YOUR_DEVICE"></span>Add network cost support to your device
+## Add network cost support to your device
 
 
-1.  Add the IE to your device’s WLAN beacon and probe response, which is fixed to the **Portable Hotspot Default** value shown in the table with the sample cost attribute values. Verify that a Windows 8, Windows 8.1, or Windows 10 computer that connects to this network automatically selects the **Reduce network usage** option for this network.
+1.  Add the IE to your device’s WLAN beacon and probe response, which is fixed to the **Portable Hotspot Default** value shown in the table with the sample cost attribute values. Verify that a Windows computer that connects to this network automatically selects the **Reduce network usage** option for this network.
 
 2.  When roaming, replace the default value with the **Portable Hotspot / Roaming** value that is listed in the table with the sample cost attribute values.
 
@@ -237,7 +237,7 @@ The following table shows some sample cost attribute values (last four bytes of 
 
 4.  Optionally, if your device can use Wi-Fi as a second-hop network, check for this IE on the network to which you connect and relay its value (or its absence) to your own SSID. If none is present, use the **Default WLAN** value that is listed in the table with the sample cost attribute values.
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [Communication channels](communication-channels.md)

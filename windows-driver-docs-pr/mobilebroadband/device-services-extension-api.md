@@ -20,6 +20,6 @@ The Windows wireless platform supports APIs for the following app functions:
 - Send data to (or receive data from) a specific device service
 - Register for “unsolicited” device events from a specific device service
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 [List of mobile broadband Windows Runtime APIs](list-of-mobile-broadband-windows-runtime-apis.md)

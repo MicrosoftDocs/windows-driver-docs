@@ -7,9 +7,9 @@ ms.date: 04/20/2017
 # Operator
 
 
-The Operator element specifies the details of an operator that is included in the APN database.
+The Operator element specifies the details of an operator that is included in the COSA database.
 
-## <span id="Usage"></span><span id="usage"></span><span id="USAGE"></span>Usage
+## Usage
 
 
 ``` syntax
@@ -18,7 +18,7 @@ The Operator element specifies the details of an operator that is included in th
 </Operator>
 ```
 
-## <span id="Attributes"></span><span id="attributes"></span><span id="ATTRIBUTES"></span>Attributes
+## Attributes
 
 
 <table>
@@ -61,7 +61,7 @@ The Operator element specifies the details of an operator that is included in th
 
  
 
-## <span id="Child_elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Child elements
+## Child elements
 
 
 <table>
@@ -93,7 +93,7 @@ The Operator element specifies the details of an operator that is included in th
 
  
 
-## <span id="Parent_elements"></span><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Parent elements
+## Parent elements
 
 
 <table>
@@ -117,7 +117,7 @@ The Operator element specifies the details of an operator that is included in th
 
  
 
-## <span id="XSD"></span><span id="xsd"></span>XSD
+## XSD
 
 
 ``` syntax
@@ -135,7 +135,7 @@ The Operator element specifies the details of an operator that is included in th
 </xs:element>
 ```
 
-## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
+## Remarks
 
 
 The Operator element is required.

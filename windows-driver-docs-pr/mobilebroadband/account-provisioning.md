@@ -463,7 +463,7 @@ Here are some common scenarios that you may need as you create provisioning meta
 
 ### Find the account provisioning schema
 
-XSD schemas are available under **%SYSTEMROOT%\\schemas\\provisioning** on any computer that is running Windows 8, Windows 8.1, or Windows 10.
+XSD schemas are available under **%SYSTEMROOT%\\schemas\\provisioning**.
 
 ### Apply provisioning XML to the device
 
@@ -762,7 +762,7 @@ You can import the **ProvisioningTestHelper** module from the Windows 8, Window
 Import-Module "<path_to_sdk>\bin\<arch>\ProvisioningTestHelper.psd1"
 ```
 
-Where &lt;*path\_to\_sdk\\bin\\&lt;arch&gt;*&gt; is the install location of the Windows 8, Windows 8.1, or Windows 10 SDK that corresponds to the architecture of the computer.
+Where &lt;*path\_to\_sdk\\bin\\&lt;arch&gt;*&gt; is the install location of the Windows SDK that corresponds to the architecture of the computer.
 
 After you import this module, the following four PowerShell cmdlets are available:
 

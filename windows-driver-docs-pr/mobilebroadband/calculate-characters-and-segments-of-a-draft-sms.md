@@ -26,7 +26,7 @@ id('remainingCharsCount').innerText = messageLength.charactersPerSegment - messa
 id('messageSegmentsCount').innerText = messageLength.segmentCount;
 ```
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [Send SMS by using the text-mode interface](calculate-characters-and-segments-of-a-draft-sms.md)

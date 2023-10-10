@@ -10,14 +10,14 @@ ms.date: 04/20/2017
 
 The PackageIdentity element specifies a UWP device app that should appear as the recommended AutoPlay action when a user plugs in a device.
 
-## <span id="Usage"></span><span id="usage"></span><span id="USAGE"></span>Usage
+## Usage
 
 
 ``` syntax
 <PackageIdentity Name=”tns:PackageNameType” Publisher=”tns:PublisherType” />
 ```
 
-## <span id="Attributes"></span><span id="attributes"></span><span id="ATTRIBUTES"></span>Attributes
+## Attributes
 
 
 <table>
@@ -53,12 +53,12 @@ The PackageIdentity element specifies a UWP device app that should appear as the
 
  
 
-## <span id="Child_elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Child elements
+## Child elements
 
 
 There are no child elements.
 
-## <span id="Parent_elements"></span><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Parent elements
+## Parent elements
 
 
 <table>
@@ -82,7 +82,7 @@ There are no child elements.
 
  
 
-## <span id="XSD"></span><span id="xsd"></span>XSD
+## XSD
 
 
 ``` syntax
@@ -107,7 +107,7 @@ There are no child elements.
   </xs:simpleType>
 ```
 
-## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
+## Remarks
 
 
 Copy the Name and Publisher attributes from the application manifest's &lt;Identity&gt; element after the app has been associated with the Microsoft Store, because the process of associating your app will update the app manifest.

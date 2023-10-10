@@ -30,7 +30,7 @@ var myNetworkAccountId = "{95499FEF-1579-4547-A0BE-FF271ADBBE76}";
 var myNetworkAccountObject = Windows.Networking.NetworkOperators.MobileBroadbandAccount.createFromNetworkAccountId(myNetworkAccountId);
 ```
 
-## <span id="emptylist"></span><span id="EMPTYLIST"></span>MobileBroadbandAccount.AvailableNetworkAccountIds returns an empty list
+## MobileBroadbandAccount.AvailableNetworkAccountIds returns an empty list
 
 
 If your app is not trusted, the property returns an empty collection instead of throwing an exception because users can have accounts from more than one network operator on their computer. The [**AvailableNetworkAccountIds**](/uwp/api/Windows.Networking.NetworkOperators.MobileBroadbandAccount#Windows_Networking_NetworkOperators_MobileBroadbandAccount_AvailableNetworkAccountIds) property returns only those account IDs that the app’s metadata package is allowed to see. Because the **AvailableNetworkAccountIds** property checks that each account ID has a device associated with it at the time it is retrieved, this property can return an empty collection even if [**CreateFromNetworkAccountId**](/uwp/api/Windows.Networking.NetworkOperators.MobileBroadbandAccount#Windows_Networking_NetworkOperators_MobileBroadbandAccount_CreateFromNetworkAccountId_System_String_) does not throw an Access Denied exception.

@@ -1,7 +1,7 @@
 ---
 title: AllowStandardUserPinUnlock
 description: AllowStandardUserPinUnlock
-ms.date: 04/20/2017
+ms.date: 10/10/2023
 ---
 
 # AllowStandardUserPinUnlock
@@ -13,8 +13,7 @@ ms.date: 04/20/2017
 
 The AllowStandardUserPinUnlock element specifies if standard users are allowed to perform PIN unlock operations.
 
-## <span id="Usage"></span><span id="usage"></span><span id="USAGE"></span>Usage
-
+## Usage
 
 ```syntax
 <AllowStandardUserPinUnlock>
@@ -22,23 +21,19 @@ The AllowStandardUserPinUnlock element specifies if standard users are allowed t
 </ AllowStandardUserPinUnlock >
 ```
 
-## <span id="Attributes"></span><span id="attributes"></span><span id="ATTRIBUTES"></span>Attributes
-
+## Attributes
 
 There are no attributes.
 
-## <span id="Text_value"></span><span id="text_value"></span><span id="TEXT_VALUE"></span>Text value
-
+## Text value
 
 A Boolean value where **true** allows standard users to perform PIN unlock operations and **false** does not.
 
-## <span id="Child_elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Child elements
-
+## Child elements
 
 There are no child elements.
 
-## <span id="Parent_elements"></span><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Parent elements
-
+## Parent elements
 
 <table>
 <colgroup>
@@ -59,25 +54,12 @@ There are no child elements.
 </tbody>
 </table>
 
- 
-
-## <span id="XSD"></span><span id="xsd"></span>XSD
-
+## XSD
 
 ``` syntax
 <xs:element name="AllowStandardUserPinUnlock" type="xs:boolean" minOccurs="0" />
 ```
 
-## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
-
+## Remarks
 
 The AllowStandardUserPinUnlock element is optional.
-
- 
-
- 
-
-
-
-
-

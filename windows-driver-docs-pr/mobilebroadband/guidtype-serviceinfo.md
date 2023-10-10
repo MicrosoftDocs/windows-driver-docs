@@ -18,7 +18,7 @@ The GUIDType XML simple type specifies a GUID.
 </xs:simpleType>
 ```
 
-## <span id="Patterns"></span><span id="patterns"></span><span id="PATTERNS"></span>Patterns
+## Patterns
 
 
 The GUIDType simple type is a **xs:string** that is restricted by the following pattern:

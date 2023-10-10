@@ -33,7 +33,7 @@ A subset of the mobile broadband API includes the PIN Management API. To unlock 
 
 10. Listen for **Unlock** or **Unblock** results by using [**IMbnPinEvents**](/windows/win32/api/mbnapi/nn-mbnapi-imbnpinevents) registration to know whether the operation was successful.
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [Common tasks for mobile broadband Windows Runtime APIs](./create-a-mobilebroadbandaccount-object.md)

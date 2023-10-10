@@ -11,7 +11,7 @@ The [Hotspot Authentication Sample](/samples/microsoft/windows-universal-samples
 
 For an example of how to use unsigned provisioning metadata together with privilege APIs, see the [Mobile Broadband Provisioning sample](/samples/microsoft/windows-universal-samples/mobilebroadband/).
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [Integrating Windows with wireless hotspots](integrating-windows-with-wireless-hotspots.md)

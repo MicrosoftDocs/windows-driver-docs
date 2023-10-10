@@ -13,7 +13,7 @@ ms.date: 04/20/2017
 
 The ServiceIconFile element specifies the name of the service icon file in the service metadata package. The service icon file is used to display the logo of the mobile network operator (MNO) or mobile virtual network operator (MVNO) in Windows Connection Manager.
 
-## <span id="Usage"></span><span id="usage"></span><span id="USAGE"></span>Usage
+## Usage
 
 
 ``` syntax
@@ -22,22 +22,22 @@ The ServiceIconFile element specifies the name of the service icon file in the s
 </ServiceProvider>
 ```
 
-## <span id="Attributes"></span><span id="attributes"></span><span id="ATTRIBUTES"></span>Attributes
+## Attributes
 
 
 There are no attributes.
 
-## <span id="Text_value"></span><span id="text_value"></span><span id="TEXT_VALUE"></span>Text value
+## Text value
 
 
 The name of an icon file with an .ICO extension.
 
-## <span id="Child_elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Child elements
+## Child elements
 
 
 There are no child elements.
 
-## <span id="Parent_elements"></span><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Parent elements
+## Parent elements
 
 
 <table>
@@ -61,7 +61,7 @@ There are no child elements.
 
  
 
-## <span id="XSD"></span><span id="xsd"></span>XSD
+## XSD
 
 
 ``` syntax
@@ -74,7 +74,7 @@ There are no child elements.
 </xs:simpleType>
 ```
 
-## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
+## Remarks
 
 
 The required icon file sizes are as follows:

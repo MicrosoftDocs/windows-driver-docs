@@ -30,7 +30,7 @@ The following table describes common credential types and EAP method combination
 
   - [**From a website**](/windows/win32/nativewifi/prov-wifi-profile-via-website)
   - [**From an app**](./account-provisioning.md#wi-fi-information)
-  - [**From COSA, for Mobile Operator SIM based authentication**](./cosa-apn-database.md)
+  - [**From COSA, for Mobile Operator SIM based authentication**](./cosa-database.md)
   - **From** [**MDM**](/windows/client-management/mdm/wifi-csp) **,** [**Group Policy**](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh994701(v=ws.11)) **,**  **or using** [**provisioning packages**](/windows/configuration/provisioning-packages/provisioning-packages)**.**
   - **Using Online Sign-up (OSU)**
 

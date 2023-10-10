@@ -19,7 +19,7 @@ Use the following best practices regarding connectivity to the mobile broadband 
 
 -   Use connectivity through Internet-connected interfaces whenever they are available. You can observe availability by using the [**NetworkInformation**](/uwp/api/Windows.Networking.Connectivity.NetworkInformation) API.
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [Best practices for using Mobile Broadband Windows Runtime API](best-practices-for-handling-account-arrival-and-removal-events.md)

@@ -22,7 +22,7 @@ We recommend that you show the following information in the Help and Support sec
 
 - Hardware and software diagnostics information
 
-## <span id="Quick_summary"></span><span id="quick_summary"></span><span id="QUICK_SUMMARY"></span>Quick summary
+## Quick summary
 
 Appropriate design for help and support page:
 
@@ -34,12 +34,12 @@ Inappropriate design for help and support page:
 
 - All help and support content should appear inside the app, and the user shouldn’t have to switch between apps.
 
-## <span id="Additional_resources"></span><span id="additional_resources"></span><span id="ADDITIONAL_RESOURCES"></span>Additional resources
+## Additional resources
 
 - For more information about how to use built-in controls, see [Adding controls and content](/previous-versions/windows/apps/hh465393(v=win.10)).
 
 - [Mobile broadband WinRT API overview](list-of-mobile-broadband-windows-runtime-apis.md)
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 [Designing the user experience of a mobile broadband app](designing-the-user-experience-of-a-mobile-broadband-app.md)

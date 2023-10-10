@@ -13,7 +13,7 @@ ms.date: 04/20/2017
 
 The ServiceProvider element specifies the name of the service provider. It is shown in Windows Connection Manager to display the home provider network name. If the user is on a roaming network the roaming network name is displayed instead.
 
-## <span id="Usage"></span><span id="usage"></span><span id="USAGE"></span>Usage
+## Usage
 
 
 ``` syntax
@@ -22,22 +22,22 @@ The ServiceProvider element specifies the name of the service provider. It is sh
 </ServiceProvider>
 ```
 
-## <span id="Attributes"></span><span id="attributes"></span><span id="ATTRIBUTES"></span>Attributes
+## Attributes
 
 
 There are no attributes.
 
-## <span id="Text_value"></span><span id="text_value"></span><span id="TEXT_VALUE"></span>Text value
+## Text value
 
 
 A string of up to 20 printable characters.
 
-## <span id="Child_elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Child elements
+## Child elements
 
 
 There are no child elements.
 
-## <span id="Parent_elements"></span><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Parent elements
+## Parent elements
 
 
 <table>
@@ -61,7 +61,7 @@ There are no child elements.
 
  
 
-## <span id="XSD"></span><span id="xsd"></span>XSD
+## XSD
 
 
 ``` syntax
@@ -75,7 +75,7 @@ There are no child elements.
 </xs:simpleType>
 ```
 
-## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
+## Remarks
 
 
 The ServiceProvider element is not shown in Windows Connection Manager when the user is roaming.

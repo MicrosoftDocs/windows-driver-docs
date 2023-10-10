@@ -10,7 +10,7 @@ ms.date: 04/20/2017
 
 The LanguageNeutralIdentifier element specifies a GUID, which identifies the service metadata package independent of its locale. The LanguageNeutralIdentifier element lets the same GUID be used to identify one or more localized versions of a service metadata package for the same service.
 
-## <span id="Usage"></span><span id="usage"></span><span id="USAGE"></span>Usage
+## Usage
 
 
 ``` syntax
@@ -19,17 +19,17 @@ The LanguageNeutralIdentifier element specifies a GUID, which identifies the ser
 </LanguageNeutralIdentifier>
 ```
 
-## <span id="Attributes"></span><span id="attributes"></span><span id="ATTRIBUTES"></span>Attributes
+## Attributes
 
 
 There are no attributes.
 
-## <span id="Child_elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Child elements
+## Child elements
 
 
 There are no child elements.
 
-## <span id="Parent_elements"></span><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Parent elements
+## Parent elements
 
 
 <table>
@@ -53,14 +53,14 @@ There are no child elements.
 
  
 
-## <span id="XSD"></span><span id="xsd"></span>XSD
+## XSD
 
 
 ``` syntax
 <xs:element name="LanguageNeutralIdentifier" type="tns:GUIDType" minOccurs="0" />
 ```
 
-## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
+## Remarks
 
 
 The LanguageNeutralIdentifier element allows the same GUID to be used in one or more localized versions of a device metadata package for the same device.

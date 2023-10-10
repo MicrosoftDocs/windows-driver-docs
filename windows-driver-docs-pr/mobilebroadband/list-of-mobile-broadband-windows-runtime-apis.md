@@ -60,7 +60,7 @@ The following sections are available in this topic:
 
 -   [Network Account IDs](#netid)
 
-## <span id="mbacctapi"></span><span id="MBACCTAPI"></span>Mobile Broadband Account API
+## Mobile Broadband Account API
 
 
 Because it has methods that can be used to get personally identifiable information about the customer and change the network settings on mobile broadband devices, the Mobile Broadband Account API is a privileged API. This means that most UWP apps cannot call its methods without getting an “access denied” error. To be able to call this API, a UWP app must meet the following criteria:
@@ -80,7 +80,7 @@ Applications that are not UWP apps (for example, Microsoft Win32 services or des
 
  
 
-## <span id="netid"></span><span id="NETID"></span>Network Account IDs
+## Network Account IDs
 
 
 A network account ID is a unique identifier for a mobile broadband account. It provides a unified ID that can be used without needing to know whether the ID comes from a GSM, CDMA, or WiMAX network. Windows generates network account IDs whenever it encounters a hardware-provided network subscription identifier that it has not encountered before. The following list identifies the network account ID for each supported network type:
@@ -103,7 +103,7 @@ Apps that are not UWP apps (for example, Win32 services or desktop apps) have ac
 
  
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [Mobile broadband WinRT API overview](list-of-mobile-broadband-windows-runtime-apis.md)

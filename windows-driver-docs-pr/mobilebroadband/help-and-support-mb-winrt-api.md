@@ -14,6 +14,6 @@ You can simplify the user experience by showing help for the user’s device onl
 
 :::image type="content" source="images/mb-fig1-helpsupportpage.png" alt-text="Screenshot of a help and support page in a mobile app.":::
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 [Mobile broadband app scenarios](./account-management.md)

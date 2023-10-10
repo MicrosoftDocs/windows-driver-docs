@@ -9,7 +9,7 @@ ms.date: 04/20/2017
 
 The HardwareIdList element specifies a list of hardware IDs for the operator.
 
-## <span id="Usage"></span><span id="usage"></span><span id="USAGE"></span>Usage
+## Usage
 
 
 ``` syntax
@@ -18,12 +18,12 @@ The HardwareIdList element specifies a list of hardware IDs for the operator.
 </Operator>
 ```
 
-## <span id="Attributes"></span><span id="attributes"></span><span id="ATTRIBUTES"></span>Attributes
+## Attributes
 
 
 There are no attributes.
 
-## <span id="Child_elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Child elements
+## Child elements
 
 
 <table>
@@ -47,7 +47,7 @@ There are no attributes.
 
  
 
-## <span id="Parent_elements"></span><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Parent elements
+## Parent elements
 
 
 <table>
@@ -64,14 +64,14 @@ There are no attributes.
 <tbody>
 <tr class="odd">
 <td><p><a href="operator.md" data-raw-source="[Operator](operator.md)">Operator</a></p></td>
-<td><p>Specifies the details for an operator in the APN database.</p></td>
+<td><p>Specifies the details for an operator in the COSA database.</p></td>
 </tr>
 </tbody>
 </table>
 
  
 
-## <span id="XSD"></span><span id="xsd"></span>XSD
+## XSD
 
 
 ``` syntax
@@ -84,7 +84,7 @@ There are no attributes.
 </xs:element>
 ```
 
-## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
+## Remarks
 
 
 The HardwareIdList element is required.

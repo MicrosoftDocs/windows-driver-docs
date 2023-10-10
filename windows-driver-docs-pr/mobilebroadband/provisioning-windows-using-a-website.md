@@ -1,12 +1,12 @@
 ---
 title: Provisioning Windows using a website
 description: Provisioning Windows using a website
-ms.date: 10/09/2023
+ms.date: 10/10/2023
 ---
 
 # Provisioning Windows using a website
 
-This topic describes how to use a web site to let customers purchase and set up a mobile broadband plan on a computer that is running Windows 8, Windows 8.1, or Windows 10.
+This topic describes how to use a web site to let customers purchase and set up a mobile broadband plan on a computer that is running Windows.
 
 For more info about mobile broadband in Windows 8, Windows 8.1, and Windows 10, see [Overview of mobile broadband](overview-of-mobile-broadband.md).
 
@@ -22,7 +22,7 @@ The following scenarios require a mobile broadband web site:
 
 ### First use of a USB modem
 
-A user starts with a Windows 8, Windows 8.1, or Windows 10-certified mobile broadband USB modem that does not have an active associated data plan. The user connects the USB modem to a Windows 8, Windows 8.1, or Windows 10 computer for the first time, and the mobile broadband class driver is automatically installed for the device. The user opens Windows Connection Manager and chooses to connect to the mobile broadband network.
+A user starts with a Windows-certified mobile broadband USB modem that does not have an active associated data plan. The user connects the USB modem to a Windows computer for the first time, and the mobile broadband class driver is automatically installed for the device. The user opens Windows Connection Manager and chooses to connect to the mobile broadband network.
 
 As part of the connection process, Windows determines that the mobile broadband network does not provide Internet access because no active data plan is associated with the device. Normally, Windows opens the mobile broadband app so that the app can provide an option to purchase a data plan or otherwise enable Internet access. However, because the USB modem was just installed, the mobile broadband app is not yet installed on the computer.
 
@@ -30,7 +30,7 @@ In this case, Windows opens a web site provided by you. This web site provides t
 
 ### First use of a SIM with an embedded modem
 
-A user starts with a SIM that does not have an active associated data plan. The user inserts the SIM into a Windows 8, Windows 8.1, or Windows 10 computer that has an embedded mobile broadband modem. The user opens Windows Connection Manager and chooses to connect to the mobile broadband network.
+A user starts with a SIM that does not have an active associated data plan. The user inserts the SIM into a Windows computer that has an embedded mobile broadband modem. The user opens Windows Connection Manager and chooses to connect to the mobile broadband network.
 
 As part of the connection process, Windows determines that the mobile broadband network does not provide Internet access because no active data plan is associated with the SIM. Normally, Windows opens the mobile broadband app so that the app can provide an option to purchase a data plan or otherwise enable Internet access. However, because the SIM was just inserted, the mobile broadband app is not yet installed on the computer.
 
@@ -38,7 +38,7 @@ In this case, Windows opens a web site provided by you. This web site provides t
 
 ### Plan renewal when the app has been uninstalled
 
-A user has been regularly using mobile broadband on a Windows 8, Windows 8.1, or Windows 10 computer. At some point, the user uninstalled the mobile broadband app and the data plan expired because of an expiration date or data usage. The user opens Windows Connection Manager and chooses to connect to the mobile broadband network.
+A user has been regularly using mobile broadband on a Windows computer. At some point, the user uninstalled the mobile broadband app and the data plan expired because of an expiration date or data usage. The user opens Windows Connection Manager and chooses to connect to the mobile broadband network.
 
 As part of the connection process, Windows determines that the mobile broadband network does not provide Internet access because an active data plan is no longer associated with the device.
 
@@ -52,7 +52,7 @@ Use the following guidelines to help you enable these key scenarios.
 
 You must provide a minimal amount of data to include in the COSA database. For more info about the Windows COSA database, see [Introduction to the COSA database](cosa-database.md).
 
-You must provide the following information to include in the APN database:
+You must provide the following information to include in the COSA database:
 
 - For Windows to connect to a mobile broadband network without requiring the user to input an APN or access string, you must provide the APNs and/or access strings.
 
@@ -76,15 +76,15 @@ A user who does not have an active data plan must be able to access the mobile b
 
 ### Device information
 
-When Windows uses the mobile operator’s URL (AccountExperienceURL attribute in the [Operator](operator.md) element) from the APN Database, Windows provides the device information that is required to complete activation to the mobile broadband web site. This device information is passed to the web site as parameters of the HTTPS request.
+When Windows uses the mobile operator’s URL (AccountExperienceURL attribute in the [Operator](operator.md) element) from the COSA database, Windows provides the device information that is required to complete activation to the mobile broadband web site. This device information is passed to the web site as parameters of the HTTPS request.
 
-The format of the URL is **<https://Operator> URL\[?propN=valN\[&propN=valN\]\*\]**, where:
+The format of the URL is `<https://Operator> URL[?propN=valN[&propN=valN]*]`, where:
 
-- **Operator URL** URL provided by you and stored in the APN Database
+- **Operator URL**: The URL provided by you and stored in the COSA database
 
-- **propN** A property name.
+- **propN**: A property name.
 
-- **valN** The corresponding value to the propery name.
+- **valN**: The corresponding value to the propery name.
 
 The following table lists the properties that can be included. If a property value is not provided by the mobile broadband device, that property is not included.
 

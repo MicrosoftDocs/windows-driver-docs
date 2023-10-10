@@ -10,14 +10,14 @@ ms.date: 04/20/2017
 
 The DeviceNotificationHandler element specifies a device notification handler. A device notification handler allows you to run code in response to events, such as mobile network operator administrative SMS or USSD notifications, even if the Microsoft Store app is not running. For more information about implementing a notification handler, see the [Mobile Operator Notifications](./enabling-mobile-operator-notifications-and-system-events.md) white paper.
 
-## <span id="Usage"></span><span id="usage"></span><span id="USAGE"></span>Usage
+## Usage
 
 
 ``` syntax
 <DeviceNotificationHandler EventID=”xs:string” EventAsset=”xs:string”/>
 ```
 
-## <span id="Attributes"></span><span id="attributes"></span><span id="ATTRIBUTES"></span>Attributes
+## Attributes
 
 
 <table>
@@ -53,12 +53,12 @@ The DeviceNotificationHandler element specifies a device notification handler. A
 
  
 
-## <span id="Child_elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Child elements
+## Child elements
 
 
 There are no child elements.
 
-## <span id="Parent_elements"></span><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Parent elements
+## Parent elements
 
 
 <table>
@@ -82,7 +82,7 @@ There are no child elements.
 
  
 
-## <span id="XSD"></span><span id="xsd"></span>XSD
+## XSD
 
 
 ``` syntax
@@ -94,7 +94,7 @@ There are no child elements.
 </xs:complexType>
 ```
 
-## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
+## Remarks
 
 
 -   When you specify the DeviceNotificationHandler in the [Application](application-softwareinfo-schema.md) element, the system calls the event handler and invokes the event when the device changes to the state.

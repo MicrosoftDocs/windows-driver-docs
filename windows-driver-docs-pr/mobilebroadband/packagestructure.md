@@ -10,7 +10,7 @@ ms.date: 04/20/2017
 
 The PackageStructure element specifies the XML schemas that are referenced by the service metadata package. Each XML schema is specified through the [Metadata](metadata-service-schema.md) element.
 
-## <span id="Usage"></span><span id="usage"></span><span id="USAGE"></span>Usage
+## Usage
 
 
 ``` syntax
@@ -20,17 +20,17 @@ The PackageStructure element specifies the XML schemas that are referenced by th
 </PackageStructure>
 ```
 
-## <span id="Attributes"></span><span id="attributes"></span><span id="ATTRIBUTES"></span>Attributes
+## Attributes
 
 
 There are no attributes.
 
-## <span id="Text_value"></span><span id="text_value"></span><span id="TEXT_VALUE"></span>Text value
+## Text value
 
 
 Four or more [Metadata](metadata-service-schema.md) elements are required.
 
-## <span id="Child_elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Child elements
+## Child elements
 
 
 <table>
@@ -54,7 +54,7 @@ Four or more [Metadata](metadata-service-schema.md) elements are required.
 
  
 
-## <span id="Parent_elements"></span><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Parent elements
+## Parent elements
 
 
 <table>
@@ -78,7 +78,7 @@ Four or more [Metadata](metadata-service-schema.md) elements are required.
 
  
 
-## <span id="XSD"></span><span id="xsd"></span>XSD
+## XSD
 
 
 ``` syntax
@@ -92,7 +92,7 @@ Four or more [Metadata](metadata-service-schema.md) elements are required.
 </xs:complexType>
 ```
 
-## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
+## Remarks
 
 
 A minimum of four instances of the [Metadata](metadata-service-schema.md) element must be specified within the PackageStructure element. Each instance must specify one of the required XML schemas that are used to create a service metadata package:
