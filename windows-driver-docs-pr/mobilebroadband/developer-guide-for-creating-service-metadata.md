@@ -1,7 +1,7 @@
 ---
 title: Developer guide for creating service metadata
 description: Developer guide for creating service metadata
-ms.date: 10/06/2023
+ms.date: 10/10/2023
 ---
 
 # Developer guide for creating service metadata
@@ -12,8 +12,8 @@ This guide walks you through the process of creating a service metadata package 
 
 You can leverage service metadata to create a deeply integrated experience with Windows. Service metadata packages allow you to include branding information, such as icons and your operator name, configure settings and permissions for accessing SIM hardware and personal hotspots, and provision mobile broadband apps to work with your mobile broadband device.
 
-**Note**  
-Even though the mobile broadband app is automatically installed, the user must pin it to the Start Screen manually.
+> [!NOTE]
+> Even though the mobile broadband app is automatically installed, the user must pin it to the Start Screen manually.
 
 ## Getting started
 
@@ -63,8 +63,8 @@ Before you create your service metadata package, ensure that your mobile broadba
 
 - [UWP mobile broadband apps](uwp-mobile-broadband-apps.md)
 
-**Note**  
-The mobile broadband app doesn’t have to be published to the Microsoft Store until the service metadata has been tested and is ready to be published externally. We recommend that the app is published to the Microsoft Store only after the service metadata package passes preview mode testing.
+> [!NOTE]
+> The mobile broadband app doesn’t have to be published to the Microsoft Store until the service metadata has been tested and is ready to be published externally. We recommend that the app is published to the Microsoft Store only after the service metadata package passes preview mode testing.
 
 ## Creating service metadata packages
 
@@ -243,8 +243,8 @@ After test signing is enabled, copy the \*.devicemetadata-ms file from the servi
 
 If the service metadata package is in preview mode, you must create the PreviewKey registry entry on your test computer. For more info about configuring the PreviewKey registry entry, see [Creating a Preview Package](../dashboard/index.yml).
 
-**Note**  
-You do not have to enable test signing to test a service metadata package that is in preview mode.
+> [!NOTE]
+> You do not have to enable test signing to test a service metadata package that is in preview mode.
 
 After the PreviewKey registry entry is created, plug in your mobile broadband device and ensure that it shows in the Networks list. If it does not, see the [Troubleshooting](#troubleshooting) section for more info.
 
@@ -252,8 +252,8 @@ After the PreviewKey registry entry is created, plug in your mobile broadband de
 
 When service metadata is installed on a PC, the values contained in the metadata are stored in many different places, including the registry, metadata cache, metadata store, WWAN profiles and dev node. This can make it challenging to repeat multiple tests with the same, or different, metadata packages. To ensure that the service metadata is installed correctly, you should clear any existing service metadata. You can clear existing service metadata by setting up your test computer to run a PowerShell script that removes all traces. First, you must set up the environment on your test computer:
 
-**Note**  
-This will not work on a Windows RT device. Use the steps in the procedure named “To clear service metadata on a device running Windows RT”.
+> [!NOTE]
+> This will not work on a Windows RT device. Use the steps in the procedure named “To clear service metadata on a device running Windows RT”.
 
 **To set up the environment for clearing service metadata**
 
@@ -265,8 +265,8 @@ This will not work on a Windows RT device. Use the steps in the procedure named 
 
 4. Save the following script as MetadataRemovalScript.ps1 in the same folder as Devcon.exe and PsExec.exe.
 
-    **Note**  
-    In the **Save as type** box, make sure to select **All files (\*.\*)** before saving the file.
+    > [!NOTE]
+    > In the **Save as type** box, make sure to select **All files (\*.\*)** before saving the file.
 
 ```PowerShell
 # DEVICE SHOULD BE CONNECTED TO MACHINE
@@ -623,8 +623,8 @@ By contrast, on a device where the SIM is removed, the entries typically look li
 [0]02CC.03E4::‎2012‎-‎01‎-‎04 09:29:50.309 [Microsoft-Windows-WWAN-SVC-EVENTS]Account Management: Account updater finished for network interface {7a0a0dce-0a51-471a-8c16-6e767cd0b861}. 
 ```
 
-**Note**  
-In the latter example, there are no entries for **Data store create/update started** or **Data store create/update finished**. Because information stored in the SIM is critical to the account management process, a device that does not have a SIM will not have the necessary associated metadata.
+> [!NOTE]
+> In the latter example, there are no entries for **Data store create/update started** or **Data store create/update finished**. Because information stored in the SIM is critical to the account management process, a device that does not have a SIM will not have the necessary associated metadata.
 
 If the hardware was successfully processed, but your logo or name do not display in the networks list, there might be a problem with the metadata package. This can be investigated by using the parser task entries in the log. To find these entries, search for **Parser-Task**. Log entries for a successful parse typically look like the following:
 
@@ -678,7 +678,5 @@ Because it is normal for the parser task to run more than one time, you might se
 Use the following links to learn more about mobile broadband in Windows 8.1 and Windows 10:
 
 - [Overview of mobile broadband](overview-of-mobile-broadband.md)
-
 - [Introduction to the COSA database](cosa-database.md)
-
 - [Service metadata](service-metadata.md)

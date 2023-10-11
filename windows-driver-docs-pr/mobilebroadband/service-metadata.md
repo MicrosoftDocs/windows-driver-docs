@@ -1,7 +1,7 @@
 ---
 title: Service metadata overview
 description: Service metadata overview
-ms.date: 10/06/2023
+ms.date: 10/10/2023
 ---
 
 # Service metadata overview
@@ -80,8 +80,8 @@ The following summary describes some of the most interesting fields that are con
 
 The components of a service metadata package are stored in a compressed cabinet file and must have a file extension of **.devicemetadata-ms**. Service metadata packages use this file extension because they use the same underlying platform as device metadata packages. Before you create the **.devicemetadata-ms** file, you must first create a globally unique identifier (GUID) for the metadata package. Then, you must use the following naming convention when you create the .devicemetadata-ms file: **&lt;GUID&gt;.devicemetadata-ms**.
 
-**Note**  
-Although the usual file extension of a cabinet file is **.cab**, the file extension for a service metadata package file must be **.devicemetadata-ms**. This is intended to underscore the fact that end-users must not decompress or modify these packages.
+> [!NOTE]
+> Although the usual file extension of a cabinet file is **.cab**, the file extension for a service metadata package file must be **.devicemetadata-ms**. This is intended to underscore the fact that end-users must not decompress or modify these packages.
 
 There are two types of service metadata packages: a single locale service metadata package and a multiple locale service metadata package.
 

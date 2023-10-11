@@ -1,15 +1,15 @@
 ---
 title: Design purchase flows in a mobile broadband app
 description: Design purchase flows in a mobile broadband app
-ms.date: 10/05/2023
+ms.date: 10/10/2023
 ---
 
 # Design purchase flows in a mobile broadband app
 
 Your mobile broadband app can include a purchase flow for users to use to purchase plans. For first-time purchases, support your purchase flow over the web. Here are some standard recommendations for the purchase flow.
 
-**Note**  
-Do not use an iframe to host these flows in your app.
+> [!NOTE]
+> Do not use an iframe to host these flows in your app.
 
 1. Show users a data breakdown for users to estimate the data that they will require. This can help the user select the best plan to purchase.
 

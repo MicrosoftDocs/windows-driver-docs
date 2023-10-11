@@ -1,18 +1,15 @@
 ---
 title: Calculate characters and segments of a draft SMS
 description: Calculate characters and segments of a draft SMS
-ms.date: 04/20/2017
+ms.date: 10/10/2023
 ---
 
 # Calculate characters and segments of a draft SMS
 
-
 The Mobile Broadband SMS platform provides a function to estimate the number of characters remaining and number of segments used (in a multi-part messages) during the composition of an SMS message.
 
-**Note**  
-The number of characters in each segment is not constant, and it varies based on the text string in the message body and the network type. On GSM networks, a single SMS message supports up to 160 7-bit characters or 70 16-bit characters. A message that spans multiple segments supports 142 7-bit characters in each segment due to additional header information.
-
- 
+> [!NOTE]
+> The number of characters in each segment is not constant, and it varies based on the text string in the message body and the network type. On GSM networks, a single SMS message supports up to 160 7-bit characters or 70 16-bit characters. A message that spans multiple segments supports 142 7-bit characters in each segment due to additional header information.
 
 Providing an accurate estimate on the number of segments that are used while composing an SMS message promotes user confidence, because users are typically charged per SMS message that is sent.
 
@@ -28,15 +25,4 @@ id('messageSegmentsCount').innerText = messageLength.segmentCount;
 
 ## Related topics
 
-
 [Send SMS by using the text-mode interface](calculate-characters-and-segments-of-a-draft-sms.md)
-
- 
-
- 
-
-
-
-
-
-

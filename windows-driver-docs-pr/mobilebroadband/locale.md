@@ -1,7 +1,7 @@
 ---
 title: Locale
 description: Locale
-ms.date: 04/20/2017
+ms.date: 10/10/2023
 ---
 
 # Locale
@@ -12,7 +12,6 @@ The Locale element specifies the locale of the service metadata package. A servi
 
 ## Usage
 
-
 ``` syntax
 <Locale
   default = "xs:boolean">
@@ -21,7 +20,6 @@ The Locale element specifies the locale of the service metadata package. A servi
 ```
 
 ## Attributes
-
 
 <table>
 <colgroup>
@@ -48,15 +46,11 @@ The Locale element specifies the locale of the service metadata package. A servi
 </tbody>
 </table>
 
- 
-
 ## Child elements
-
 
 There are no child elements.
 
 ## Parent elements
-
 
 <table>
 <colgroup>
@@ -81,10 +75,7 @@ There are no child elements.
 </tbody>
 </table>
 
- 
-
 ## XSD
-
 
 ``` syntax
 <xs:element name="Locale" type="tns:LocaleType" />
@@ -100,31 +91,19 @@ There are no child elements.
 
 ## Remarks
 
+- The Locale element can be *&lt;Language&gt;*-*&lt;Region&gt;* (such as EN-US) or *&lt;Language&gt;* (such as EN). If the *&lt;Language&gt;* is set, the package applies to all *&lt;Language&gt;* locales. For example, EN applies to EN-US and EN-BR.
 
--   The Locale element can be *&lt;Language&gt;*-*&lt;Region&gt;* (such as EN-US) or *&lt;Language&gt;* (such as EN). If the *&lt;Language&gt;* is set, the package applies to all *&lt;Language&gt;* locales. For example, EN applies to EN-US and EN-BR.
+- To specify the metadata package as the default for the current locale of the computer, set the **default** attribute to **true** (1).
 
--   To specify the metadata package as the default for the current locale of the computer, set the **default** attribute to **true** (1).
+    > [!NOTE]
+    > Only one metadata package for a service should set the **default** attribute to **true** (1). Otherwise, the operating system randomly selects a metadata package for the service.
 
-    **Note**  
-    Only one metadata package for a service should set the **default** attribute to **true** (1). Otherwise, the operating system randomly selects a metadata package for the service.
+- When the operating system selects a service metadata package to display, it uses the Locale element in the following way:
 
-     
+    1. The operating system retrieves the system preferred language and region. This is typically configured during Windows Setup.
 
--   When the operating system selects a service metadata package to display, it uses the Locale element in the following way:
+    2. If the Locale element of a service metadata package matches the system preferred language and region, the operating system selects the package for the service and uses the icon and **ServiceProvider** value (from ServiceInfo.xml) that matches that language and region.
 
-    1.  The operating system retrieves the system preferred language and region. This is typically configured during Windows Setup.
-
-    2.  If the Locale element of a service metadata package matches the system preferred language and region, the operating system selects the package for the service and uses the icon and **ServiceProvider** value (from ServiceInfo.xml) that matches that language and region.
-
-    3.  If the services metadata package does not have a Locale element that matches the system preferred language, the operating system will apply the language neutral icon and **ServiceProvider** value (from ServiceInfo.xml) that is stored in the root of the service metadata package.
+    3. If the services metadata package does not have a Locale element that matches the system preferred language, the operating system will apply the language neutral icon and **ServiceProvider** value (from ServiceInfo.xml) that is stored in the root of the service metadata package.
 
 The Locale element is required.
-
- 
-
- 
-
-
-
-
-

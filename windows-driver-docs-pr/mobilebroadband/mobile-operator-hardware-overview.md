@@ -1,7 +1,7 @@
 ---
 title: Mobile operator hardware overview
 description: Mobile operator hardware overview
-ms.date: 10/06/2023
+ms.date: 10/10/2023
 ---
 
 # Mobile operator hardware overview
@@ -72,8 +72,8 @@ For the end user, the most simplified connection experience is delivered with a 
 
 The mobile broadband class driver reduces the burden on device manufacturers to deliver a custom driver for their specific mobile broadband device. The mobile broadband class driver manages any USB MBIM-compliant mobile broadband interface that meets the Windows device certification. When a certified device is connected, no additional drivers are required and Windows can immediately use the device to connect to your network. The mobile broadband class driver conforms to the Windows mobile broadband driver model and provides full functionality to the Windows Mobile Broadband Service. It supports GSM networks, including HSPA+ and LTE; CDMA networks; and dual-mode networks offering 3G CDMA and 4G LTE. It also supports operator messages such as SMS and USSD, and EAP-SIM-based authentication.
 
-**Note**  
-While USSD, EAP-SIM, and multiple PDP contexts are supported by the mobile broadband class driver, they are optional components of the Windows for desktop editions (Home, Pro, Enterprise, and Education) hardware certification requirements. Multiple PDP contexts are required for Windows 10 Mobile for hardware certification, however.
+> [!NOTE]
+> While USSD, EAP-SIM, and multiple PDP contexts are supported by the mobile broadband class driver, they are optional components of the Windows for desktop editions (Home, Pro, Enterprise, and Education) hardware certification requirements. Multiple PDP contexts are required for Windows 10 Mobile for hardware certification, however.
 
 Additional device functionality can be implemented using custom device service extensions, which will be exposed directly to the mobile broadband app through the WinRT Device Services API.
 
@@ -91,8 +91,8 @@ The Device Service Extension API provides a direct way for the mobile broadband 
 
 Each device service has a corresponding GUID. All control messages and non-IP packets exchanged between the mobile broadband class driver and the device will carry the GUID to identify the service associated with the request. Command identifiers (CIDs) and status indication codes are defined under a service’s GUID namespace. For example, Phonebook and STK could both share the same CID code, but will be distinguished by the device service GUID exchanged in the request.
 
-**Note**  
-The COM-based Device Services API is accessible to any desktop application or service. The WinRT projected Device Services API is available only to a privileged UWP device app that is authorized by a mobile broadband operator. Developers should carefully consider privacy and security when communicating information this way.
+> [!NOTE]
+> The COM-based Device Services API is accessible to any desktop application or service. The WinRT projected Device Services API is available only to a privileged UWP device app that is authorized by a mobile broadband operator. Developers should carefully consider privacy and security when communicating information this way.
 
 The Windows wireless platform supports APIs for the following functionality that is available to apps:
 
@@ -124,8 +124,8 @@ A summary of mobile broadband device support inWindows 8, Windows RT, Windows�
 
 - Windows RT and Windows RT 8.1 certified devices – These devices pass mobile broadband experience tests supported by the Windows RT or Windows RT 8.1 Windows Hardware Certification Kit. For these devices, Windows RT and Windows RT 8.1 provide the mobile broadband class driver and advanced power management.
 
-    **Note**  
-    Windows RT and Windows RT 8.1 systems do not support mobile broadband devices designed for Windows 7 and earlier versions.
+    > [!NOTE]
+    > Windows RT and Windows RT 8.1 systems do not support mobile broadband devices designed for Windows 7 and earlier versions.
 
 To ensure that Windows 8 and Windows 8.1 certified devices are useful on older platforms, Windows provides an identity morphing solution that enables the device to exhibit behavior that is appropriate for the operating system to which it is connected.
 
@@ -175,8 +175,8 @@ Your device must implement the following:
 
 - If the SIM has been used to establish a successful connection to the network using an alternative APN on that system, setting the ContextType to Internet will not work. The only way to force the Window to establish a connection using the new APN is to delete the specific profile created. The profile can be deleted by running the following command from an elevated command prompt: **netsh mbn delete profile interface="Mobile Broadband Connection" name="myProfileName"**
 
-**Note**  
-Since this is an optional Windows feature for devices to support, there is no HCK test or automated test case to validate this scenario on the system. It is our expectation that the operator certification will handle the validation to confirm that the device conforms to the operator requirements.
+> [!NOTE]
+> Since this is an optional Windows feature for devices to support, there is no HCK test or automated test case to validate this scenario on the system. It is our expectation that the operator certification will handle the validation to confirm that the device conforms to the operator requirements.
 
 ### Network personalization
 
@@ -184,5 +184,5 @@ Certain operators require that mobile broadband-enabled systems be locked to its
 
 The device must report [**WWAN\_READY\_INFO**](/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_ready_info):: [**ReadyState**](/windows-hardware/drivers/ddi/wwan/ne-wwan-_wwan_ready_state)=**WwanReadyStateInitialized** in this locked state and should not report **WwanReadyStateDeviceLocked**.
 
-**Note**  
-There is no HCK test case to validate that this feature implemented on the device or system works with Windows. We look towards the OEM and the operator to use specific filters within MBOT to ensure that the final product can be tested.
+> [!NOTE]
+> There is no HCK test case to validate that this feature implemented on the device or system works with Windows. We look towards the OEM and the operator to use specific filters within MBOT to ensure that the final product can be tested.

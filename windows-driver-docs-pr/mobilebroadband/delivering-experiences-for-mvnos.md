@@ -1,7 +1,7 @@
 ---
 title: Delivering experiences for MVNOs
 description: Delivering experiences for MVNOs
-ms.date: 10/05/2023
+ms.date: 10/10/2023
 ---
 
 # Delivering experiences for MVNOs
@@ -44,8 +44,8 @@ This method requires that the MNO ensures that the IMSI ranges are kept up-to-da
 
 If neither the ICCID nor the IMSI matches the request from the client machine, no match is made.
 
-**Note**  
-IMSI ranges must have a granularity of 100. The start range value must end in 00, and the end range value must end in 99.
+> [!NOTE]
+> IMSI ranges must have a granularity of 100. The start range value must end in 00, and the end range value must end in 99.
 
 *Figure 1 Segmenting IMSI ranges (within an MNO's MCC+MNC)* shows an example of client device that request service metadata from WMIS and how each matching request from the client is matched to an experience.
 
@@ -67,8 +67,8 @@ This method requires that the MNO ensures that the ranges are kept up-to-date an
 
 If neither the ICCID nor the IMSI matches the request coming from the client machine, then no match is made.
 
-**Note**  
-IMSI ranges must have a granularity of 100. The start range value must end in 00, and the end range value must end in 99.
+> [!NOTE]
+> IMSI ranges must have a granularity of 100. The start range value must end in 00, and the end range value must end in 99.
 
 *Figure 2 Segmenting ICCID ranges (within an MNO's ICCID issuer identification number)* shows an example of client computers that request service metadata from WMIS and how each matching request from the client is matched to an experience.
 
@@ -88,8 +88,8 @@ An MNO’s entire IMSI-based range can be assigned (that is, everything under th
 
 This option requires the MNO or MVNO to ensure that the ICCID ranges are kept up-to-date and that the MVNOs are assigned future ranges in predictable blocks of ICCID numbers. If large blocks of ICCIDs are assigned to SIMs during SIM manufacturing, this can be a desirable matching strategy for the MNO and their MVNOs. This means that the MNO has less maintenance because their package spans all the IMSI-based ranges. In this scenario, it is very important to ensure that the MVNO keeps their ICCID ranges up to date; otherwise, customers of the MVNO can be matched to the MNO experience.
 
-**Note**  
-IMSI ranges must have a granularity of 100. The start range value must end in 00, and the end range value must end in 99.
+> [!NOTE]
+> IMSI ranges must have a granularity of 100. The start range value must end in 00, and the end range value must end in 99.
 
 *Figure 3 Using ICCID to define MVNOs and an all-encompassing IMSI range for the MNO* shows an example of client computers that request service metadata from WMIS and how each matching request from the client is matched to an experience.
 
@@ -109,8 +109,8 @@ IMSI ranges must have a granularity of 100. The start range value must end in 00
 
 You can use a mixture of ICCID ranges and IMSI ranges to describe the MNO and MVNO networks.
 
-**Note**  
-ICCID ranges get first priority for matching.
+> [!NOTE]
+> ICCID ranges get first priority for matching.
 
 This is the most complex matching model. To ensure proper matching, the MNO and MVNO must frequently update their service metadata packages.
 
@@ -142,8 +142,8 @@ This option is recommended only in the case where IMSI and ICCID cannot be used.
 
 If the Home Provider Name does not match the request coming from the client machine, no match is made.
 
-**Note**  
-Home Provider Names must be globally unique to ensure that a user gets the correct experience. Service metadata will only allow a single service metadata package that uses a given Home Provider Name.
+> [!NOTE]
+> Home Provider Names must be globally unique to ensure that a user gets the correct experience. Service metadata will only allow a single service metadata package that uses a given Home Provider Name.
 
 *Figure 5 Provider Name-based matching for GSM networks* shows an example of devices that request service metadata from the Windows Metadata and Internet Services (WMIS) service, and how each matching request from the device is matched to an experience.
 
@@ -209,8 +209,8 @@ Future service metadata updates (for example, any changes that are submitted to 
 
 If you must update the service metadata package, make sure that the mobile broadband app can initiate another account provisioning metadata operation that is based on the backend logic that the operator provides. In this way, you can specify when the service metadata is updated on the backend, and have the app periodically check the backend and apply account provisioning metadata information as required.
 
-**Note**  
-Because service metadata is not versioned, the app cannot query the local copy of metadata to determine if it has been updated or applied over the customizations that were made by using account provisioning metadata. There is no way for an app to wake up and react to service metadata updates that are applied to the computer.
+> [!NOTE]
+> Because service metadata is not versioned, the app cannot query the local copy of metadata to determine if it has been updated or applied over the customizations that were made by using account provisioning metadata. There is no way for an app to wake up and react to service metadata updates that are applied to the computer.
 
 A delay can occur between the time that the service metadata is uploaded through the Windows Dev Center hardware dashboard, and the time that computers receive the updated metadata.
 

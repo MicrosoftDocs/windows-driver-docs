@@ -54,18 +54,18 @@ In this case, an embedded device, mobile broadband app, and service metadata is 
 
 1. The mobile broadband service reads the International Mobile Subscriber Identity (IMSI), the Integrated Circuit Card ID (ICCID) for GSM networks, the provider ID (SID) for CDMA networks, or the provider name for CDMA networks and generates a set of Hardware IDs (HWIDs).
 
-    **Note**  
-    This step is only necessary if the OEM has not inserted the SIM and preloaded the mobile broadband app and service metadata.
+    > [!NOTE]
+    > This step is only necessary if the OEM has not inserted the SIM and preloaded the mobile broadband app and service metadata.
 
 2. When the PC is connected to the Internet, the HWIDs are sent to Windows Metadata and Internet Services (WMIS). WMIS identifies the operator and returns the appropriate service metadata package.
 
-    **Note**  
-    This step is only necessary if the OEM has not inserted the SIM and preloaded the mobile broadband app and service metadata.
+    > [!NOTE]
+    > This step is only necessary if the OEM has not inserted the SIM and preloaded the mobile broadband app and service metadata.
 
 3. Windows uses the service metadata to identify and retrieve the mobile broadband app from the Microsoft Store. The app is installed automatically. In Windows 8.1 and Windows 10, the app is not pinned to the Start screen.
 
-    **Note**  
-    This step is only necessary if the OEM has not inserted the SIM and preloaded the mobile broadband app and service metadata.
+    > [!NOTE]
+    > This step is only necessary if the OEM has not inserted the SIM and preloaded the mobile broadband app and service metadata.
 
 4. Your operator logo and name appear in the Networks list in Windows Connection Manager. The user can connect to your network.
 
@@ -154,11 +154,11 @@ Some examples of what the operator could include in the mobile broadband app for
 
 - Retrieving and applying updated provisioning metadata
 
-**Note**  
-Windows 8, Windows 8.1, and Windows 10 do not include an SMS app with the operating system so a mobile broadband app or a third-party SMS app to which the operator gives privileged access is needed in order to display SMS messages to the user.
+> [!NOTE]
+> Windows doesn't include an SMS app with the operating system so a mobile broadband app or a third-party SMS app to which the operator gives privileged access is needed in order to display SMS messages to the user.
 
- **Note**  
-Building a mobile broadband app with SMS support is necessary to show notification UI to the end user when text messages are received, which may be required to conform to regulatory requirements or best practices in certain markets.
+ > [!NOTE]
+> Building a mobile broadband app with SMS support is necessary to show notification UI to the end user when text messages are received, which may be required to conform to regulatory requirements or best practices in certain markets.
 
  SMS functionality is available to mobile broadband apps, UWP apps that are given privileged access to mobile network operators, UWP apps that are given privileged access by the PC OEM (if the mobile broadband device is embedded in the PC), or the mobile broadband device IHV (if the mobile broadband device is removable). Mobile network operators and the PC OEM (or the mobile broadband device IHV) specify privileged apps through service metadata. For more information about service metadata, see [Using metadata to configure mobile broadband experiences](using-metadata-to-configure-mobile-broadband-experiences.md).
 
@@ -392,8 +392,8 @@ The Microsoft Store is the primary way that UWP apps are delivered to Windows 8
 
 For more information about UWP device apps, see [UWP device apps](../devapps/index.md).
 
-**Note**  
-Although enterprises can side load UWP apps under certain conditions, these will not be covered in this document.
+> [!NOTE]
+> Although enterprises can side load UWP apps under certain conditions, these will not be covered in this document.
 
 ### Operator metadata
 

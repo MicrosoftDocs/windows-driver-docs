@@ -1,15 +1,15 @@
 ---
 title: Introduction to developing SMS apps
 description: Introduction to developing SMS apps
-ms.date: 10/06/2023
+ms.date: 10/10/2023
 ---
 
 # Introduction to developing SMS apps
 
 Windows 8, Windows 8.1, and Windows 10 provide a Short Message Service (SMS) text messaging platform for mobile network operators, mobile broadband adapter IHVs, OEMs, and their partnered software vendor’s app with SMS access into a UWP app.
 
-**Note**  
-A mobile broadband app requires SMS support to show notifications to the end user when text messages are received. SMS might also be required to conform to regulatory requirements or best practices in certain markets.
+> [!NOTE]
+> A mobile broadband app requires SMS support to show notifications to the end user when text messages are received. SMS might also be required to conform to regulatory requirements or best practices in certain markets.
 
 The Mobile Broadband SMS platform provides the following functionality:
 
@@ -87,8 +87,8 @@ Mobile broadband apps must obtain user consent to use SMS because sending messag
 
 Users running Windows can control access to SMS capability at an app level by using the Settings charm.
 
-**Note**  
-Together with user consent, the app must also have access granted by the device by adding the app name in the device or service metadata.
+> [!NOTE]
+> Together with user consent, the app must also have access granted by the device by adding the app name in the device or service metadata.
 
 ## SMS notifications filtering
 
@@ -102,8 +102,8 @@ For more information about notification filtering, see [Enabling mobile operator
 
 You can write JavaScript, C#, or C++ apps that use the [**Windows.Devices.Sms**](/uwp/api/Windows.Devices.Sms) API to send, read, and delete messages.
 
-**Note**  
-The Windows 7 Mobile Broadband SMS API provided only a low-level modem interface for SMS. Windows 8, Windows 8.1, and Windows 10 provide an alternate text-mode interface that is suitable for general app development.
+> [!NOTE]
+> The Windows 7 Mobile Broadband SMS API provided only a low-level modem interface for SMS. Windows 8, Windows 8.1, and Windows 10 provide an alternate text-mode interface that is suitable for general app development.
 
 - [SMS device storage limits](sms-device-storage-limits.md)
 

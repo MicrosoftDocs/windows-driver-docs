@@ -1,7 +1,7 @@
 ---
 title: Integrate a mobile broadband app with other Windows components
 description: Integrate a mobile broadband app with other Windows components
-ms.date: 10/06/2023
+ms.date: 10/10/2023
 ---
 
 # Integrate a mobile broadband app with other Windows components
@@ -13,33 +13,22 @@ For additional user experience design guidelines for layout, navigation, command
 This topic contains the following sections:
 
 - [App settings](#app-settings)
-
-- [Error user experience](#errorux)
-
-- [App views](#appviews)
-
-- [Launch points](#launchpts)
-
-- [Tile and toast notifications](#tileandtoast)
-
-- [Splash screen](#splash)
-
-- [Quick summary](#qusum)
-
-- [Additional resources](#resources)
+- [Error user experience](#error-user-experience)
+- [App views](#app-views)
+- [Launch points](#launch-points)
+- [Tile and toast notifications](#tile-and-toast-notifications)
+- [Splash screen](#splash-screen)
+- [Quick summary](#quick-summary)
+- [Additional resources](#additional-resources)
 
 ## App settings
 
 You can use [App settings](/windows/uwp/app-settings/guidelines-for-app-settings) to include settings for your apps configuration. Some examples of these are as follows:
 
 - Sign in and sign out
-
 - View and edit the user profile
-
 - Change billing address
-
 - View and edit payment options
-
 - View and set marketing preferences
 
 ## Error user experience
@@ -49,13 +38,9 @@ You can use [App settings](/windows/uwp/app-settings/guidelines-for-app-settings
 Your mobile broadband app can have a number of error cases that should be dealt with gracefully. Some common examples are as follows:
 
 - **Device is missing or unplugged** Appears when a device such as a SIM or a dongle is missing or unplugged.
-
 - **Locked device** Appears when a connected device is locked to the user.
-
 - **Internet connectivity lost** Appears when no network connection is detected.
-
 - **Multiple devices are plugged in** Appears when a built-in adaptor and an external dongle are plugged in. A notification bar error is recommended for such cases.
-
 - **Form field validation errors** Appears when a user enters incorrect information into a form. Validation errors should be shown inline so that the user knows the field with which the error is associated.
 
 For guidance on how to present errors, see [Laying out your UI](/previous-versions/windows/apps/hh465304(v=win.10)). In the example below, a notification bar is displayed at the top of the page.
@@ -88,8 +73,8 @@ Your app should be adaptive and be able to fit a number of layouts, including:
 
 - Keyboard up
 
-    **Note**  
-    When the touch keyboard is up, make sure that elements such as form fields scroll appropriately.
+    > [!NOTE]
+    > When the touch keyboard is up, make sure that elements such as form fields scroll appropriately.
 
 The following examples show how some pages look when side by side with another app.
 
@@ -113,7 +98,7 @@ You can connect to the mobile broadband app by using Windows Connection Manager.
 
 :::image type="content" source="images/mb-fig6-wcmaccountinfo.png" alt-text="Screenshot of Windows Connection Manager displaying account and data usage information.":::
 
-**Automatic launch from connection manager during a captive portal purchase flow**
+#### Automatic launch from connection manager during a captive portal purchase flow
 
 When the user is connected to a captive portal network where web traffic is redirected, Windows provides you the option to automatically launch their app if it’s installed. The app should open to the Plans page that provides information on how to purchase Internet access.
 

@@ -1,7 +1,7 @@
 ---
 title: Using mbidgenerator.exe to generate hardware IDs
 description: Using mbidgenerator.exe to generate hardware IDs
-ms.date: 04/20/2017
+ms.date: 10/10/2023
 ---
 
 # Using mbidgenerator.exe to generate hardware IDs
@@ -10,13 +10,10 @@ ms.date: 04/20/2017
 
 To generate hardware ID values for your service metadata package, you can use the MBIDGenerator.exe command-line tool, which is part of the SDK in Windows 8.1 and Windows 10.
 
-**Note**  
-In Windows 8 MBIDGenerator.exe was included in the WDK.
-
- 
+> [!NOTE]
+> In Windows 8, MBIDGenerator.exe was included in the WDK.
 
 ## Input
-
 
 MBIDGenerator.exe accepts the following parameters:
 
@@ -24,13 +21,10 @@ MBIDGenerator.exe accepts the following parameters:
 MBIDGenerator.exe [/Test] <input file> [<output file>]
 ```
 
-**Note**  
-The *Test* parameter provides non-hashed output and should not be used for generating hardware IDs for submission to the Windows Dev Center Dashboard.
-
- 
+> [!NOTE]
+> The *Test* parameter provides non-hashed output and should not be used for generating hardware IDs for submission to the Windows Dev Center Dashboard.
 
 ## Output
-
 
 The output from the MBIDGenerator.exe is through a standard command-line output display. Optionally, you can specify a path and file name for the output file. Errors are always reported back to the command prompt.
 
@@ -45,12 +39,3 @@ The output values appear in the following way:
 ```
 
 You can take the output from MBIDGenerator.exe and insert it into the [PackageInfo XML schema](packageinfo-xml-schema.md) of your service metadata package.
-
- 
-
- 
-
-
-
-
-

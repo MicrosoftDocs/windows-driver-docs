@@ -124,8 +124,8 @@ To modify the local APN connectivity database:
 
    3. Ensure that the device doesn’t have a provisioned context by running the following command: **netsh mb show provisionedcontext interface=&lt;Interface name&gt;**
 
-      **Note**
-      If the device provides a provisioned context, Windows will use the APN from that provisioned context instead of the local APN database and you will not able to test your APNs. If the device has a provisioned context, you need to acquire another device that doesn’t provide a provisioned context.
+      > [!NOTE]
+      > If the device provides a provisioned context, Windows will use the APN from that provisioned context instead of the local APN database and you will not able to test your APNs. If the device has a provisioned context, you need to acquire another device that doesn’t provide a provisioned context.
 
    4. Open Windows Connection Manager. It will show the Wi-Fi and mobile broadband networks that are within range.
 
@@ -133,8 +133,8 @@ To modify the local APN connectivity database:
 
    6. If you have multiple APNs that match the SIM properties, Windows Connection Manager will try each of the matching APNs until a successful connection takes place. If none of the APNs connect, Windows Connection Manager will either show an error or show a custom APN entry screen, allowing the user to enter a custom APN.
 
-      **Note**
-      The auto-connect order that you specify in the APN database is used to determine the order in which APNs are tried.
+      > [!NOTE]
+      > The auto-connect order that you specify in the APN database is used to determine the order in which APNs are tried.
 
    7. If you have only one APN in the APN database, Windows will automatically connect to the operator network.
 

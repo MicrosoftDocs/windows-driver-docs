@@ -1,7 +1,7 @@
 ---
 title: Design branding in a mobile broadband app
 description: Design branding in a mobile broadband app
-ms.date: 10/05/2023
+ms.date: 10/10/2023
 ---
 
 # Design branding in a mobile broadband app
@@ -66,12 +66,10 @@ Inappropriate design for operator branding:
 
 ## Additional resources
 
-- [Integrate a mobile broadband app with other Windows components](integrate-a-mobile-broadband-app-with-other-windows-components.md#splash)
-
+- [Integrate a mobile broadband app with other Windows components](integrate-a-mobile-broadband-app-with-other-windows-components.md#splash-screen)
 - [Integrate a mobile broadband app with other Windows components](integrate-a-mobile-broadband-app-with-other-windows-components.md#app-settings)
-
-- [Integrate a mobile broadband app with other Windows components](integrate-a-mobile-broadband-app-with-other-windows-components.md#tileandtoast)
+- [Integrate a mobile broadband app with other Windows components](integrate-a-mobile-broadband-app-with-other-windows-components.md#tile-and-toast-notifications)
 
 ## Related topics
 
-[Designing the user experience of a mobile broadband app](designing-the-user-experience-of-a-mobile-broadband-app.md)
+- [Designing the user experience of a mobile broadband app](designing-the-user-experience-of-a-mobile-broadband-app.md)

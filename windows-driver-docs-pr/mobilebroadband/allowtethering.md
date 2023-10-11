@@ -10,8 +10,8 @@ ms.date: 10/10/2023
 
 The AllowTethering element specifies whether the user is always allowed, never allowed, or allowed after an entitlement check to use Internet sharing.
 
-**Note**  
-If this element is configured to allow after an entitlement check, you must specify a [DeviceNotificationHandler](devicenotificationhandler.md) in your app that will handle the entitlement check.
+> [!NOTE]
+> If this element is configured to allow after an entitlement check, you must specify a [DeviceNotificationHandler](devicenotificationhandler.md) in your app that will handle the entitlement check.
 
 ## Usage
 

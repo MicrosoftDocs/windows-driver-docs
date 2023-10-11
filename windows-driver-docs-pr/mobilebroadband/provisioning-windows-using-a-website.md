@@ -139,5 +139,5 @@ The same account provisioning metadata that can be applied to a computer by usin
 
 For more info about account provisioning metadata, see [Account provisioning](account-provisioning.md).
 
-**Note**  
-Account provisioning metadata must be signed with an extended validation (EV) certificate when provided by the web site.
+> [!NOTE]
+> Account provisioning metadata must be signed with an extended validation (EV) certificate when provided by the web site.

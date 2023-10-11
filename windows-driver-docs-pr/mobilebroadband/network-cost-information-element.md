@@ -1,18 +1,15 @@
 ---
 title: Network cost information element
 description: Network cost information element
-ms.date: 05/31/2021
+ms.date: 10/10/2023
 ---
 
 # Network cost information element
 
-
 To communicate the cost of the Wi-Fi network to clients, Microsoft has defined a vendor extension to the 802.11 protocol. This extension is the Network Cost IE.
 
-**Note**  
-The 802.11 protocol allows vendor-defined information elements (IEs), and requires clients that do not understand a particular IE to ignore it and continue processing the remaining IEs. This minimizes the compatibility risk of adding a new IE to products that interact with existing clients of other operating system types.
-
- 
+> [!NOTE]
+> The 802.11 protocol allows vendor-defined information elements (IEs), and requires clients that do not understand a particular IE to ignore it and continue processing the remaining IEs. This minimizes the compatibility risk of adding a new IE to products that interact with existing clients of other operating system types.
 
 The following table shows the Network Cost IE format:
 
@@ -128,8 +125,6 @@ The following table shows the possible <b>Cost Level</b> bits (exactly one is re
 </tbody>
 </table>
 
- 
-
 The following tables shows the possible <b>Cost flag</b> bits. Those values MAY be or'ed
 
 <table>
@@ -218,38 +213,24 @@ The following table shows some sample cost attribute values (last four bytes of 
 </tbody>
 </table>
 
- 
-
 ## Add network cost support to your device
 
+1. Add the IE to your device’s WLAN beacon and probe response, which is fixed to the **Portable Hotspot Default** value shown in the table with the sample cost attribute values. Verify that a Windows computer that connects to this network automatically selects the **Reduce network usage** option for this network.
 
-1.  Add the IE to your device’s WLAN beacon and probe response, which is fixed to the **Portable Hotspot Default** value shown in the table with the sample cost attribute values. Verify that a Windows computer that connects to this network automatically selects the **Reduce network usage** option for this network.
+2. When roaming, replace the default value with the **Portable Hotspot / Roaming** value that is listed in the table with the sample cost attribute values.
 
-2.  When roaming, replace the default value with the **Portable Hotspot / Roaming** value that is listed in the table with the sample cost attribute values.
+3. Optionally, work with your partner carriers to determine cases where other values may be appropriate, such as the following:
 
-3.  Optionally, work with your partner carriers to determine cases where other values may be appropriate, such as the following:
+    - Unrestricted while on certain bearers (LTE, HSPA+, etc.),
 
-    -   Unrestricted while on certain bearers (LTE, HSPA+, etc.),
+    - Defined channel to detect over-limit states.
 
-    -   Defined channel to detect over-limit states.
+    - Operator-defined behavior when past data limit.
 
-    -   Operator-defined behavior when past data limit.
-
-4.  Optionally, if your device can use Wi-Fi as a second-hop network, check for this IE on the network to which you connect and relay its value (or its absence) to your own SSID. If none is present, use the **Default WLAN** value that is listed in the table with the sample cost attribute values.
+4. Optionally, if your device can use Wi-Fi as a second-hop network, check for this IE on the network to which you connect and relay its value (or its absence) to your own SSID. If none is present, use the **Default WLAN** value that is listed in the table with the sample cost attribute values.
 
 ## Related topics
-
 
 [Communication channels](communication-channels.md)
 
 [[MS-NCT] Network Cost Transfer protocol documentation](/openspecs/windows_protocols/ms-nct/7c4adf77-f13b-43aa-8491-637ef4543d96)
-
- 
-
- 
-
-
-
-
-
-

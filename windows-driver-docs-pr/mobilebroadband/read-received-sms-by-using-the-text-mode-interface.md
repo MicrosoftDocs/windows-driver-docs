@@ -1,11 +1,10 @@
 ---
 title: Read received SMS by using the text-mode interface
 description: Read received SMS by using the text-mode interface
-ms.date: 04/20/2017
+ms.date: 10/10/2023
 ---
 
 # Read received SMS by using the text-mode interface
-
 
 You can choose between using the text-mode read interface, which is suitable for simple plain text SMS messages, or the PDU-mode mode read interface, which is suitable for advanced control of decoding SMS messages.
 
@@ -50,8 +49,6 @@ The following table lists the character encodings supported by the text-mode API
 </tbody>
 </table>
 
- 
-
 **JavaScript code example for reading received SMS messages using the text-mode interface**
 
 ``` syntax
@@ -85,22 +82,9 @@ catch (err)
 }
 ```
 
-**Note**  
-SMS client apps can use the decoded segmentation information that is provided by Windows to concatenate multiple segments of a long message and reconstruct the full message. For more info about segmented SMS messages, see [Windows automatically segments long messages](windows-automatically-segments-long-messages.md).
-
- 
+> [!NOTE]
+> SMS client apps can use the decoded segmentation information that is provided by Windows to concatenate multiple segments of a long message and reconstruct the full message. For more info about segmented SMS messages, see [Windows automatically segments long messages](windows-automatically-segments-long-messages.md).
 
 ## Related topics
 
-
 [Developing SMS apps](developing-sms-apps.md)
-
- 
-
- 
-
-
-
-
-
-
