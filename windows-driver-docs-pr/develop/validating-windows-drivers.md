@@ -25,7 +25,7 @@ Each run of InfVerif tests a single ruleset, for example `/w` (Windows driver co
 
 ```inf
 infverif /k <INF file>
-infverif /w NTAMD64.10.0.0.<build number where w is a requirement> <INF file>
+infverif /w /wbuild NTAMD64.10.0.0.<build number where w is a requirement> <INF file>
 ```
 
 If there are no errors, the INF meets the [Driver Package Isolation](driver-isolation.md) requirement of Windows Drivers.
