@@ -44,6 +44,14 @@ The following table describes common credential types and EAP method combination
 
 Except for Online Sign-up, which follows the standard PPS-MO format, all other provisioning methods rely on the [WLANProfile XML](/windows/win32/nativewifi/wireless-profile-samples) format. The Passpoint specific details are specified in the [Hotspot2](/windows/win32/nativewifi/wlan-profileschema-hotspot2-wlanprofile-element) element.
 
+## Venue information
+
+Starting with Windows 11 2023 Update, Windows supports the Passpoint venue information feature, which allows network operators to provide an HTTPS web URL that links to more information about the venue. When this is provided by the network, Windows will display a "Venue information" link next to the connected Wi-Fi network in Quick Settings. For automatic connections, Windows will trigger a notification that directly links to the URL.
+
+## Roaming consortium membership
+
+Starting with Windows 11 2023 Update, Windows will include the roaming consortium selection element in the association request frames, if the matching profile included a roaming consortium organization identifier (RCOI).
+
 ## Older releases
 
 Windows 8 and Windows 8.1 don't support the discovery or online sign-up portions of Passpoint, but they do support WPA2-Enterprise and all EAP methods that are required by the Passpoint specification. Therefore, Windows 8 and Windows 8.1 can connect to a Passpoint network when the user already has credentials. Because Windows 8 and Windows 8.1 don't support 802.11u discovery, operators must provision Windows 8 or Windows 8.1 with wireless profiles that contain the applicable SSIDs for their networks.
