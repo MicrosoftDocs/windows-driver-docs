@@ -27,13 +27,10 @@ The Mobile Broadband SMS platform provides the following functionality:
 
 The sections in this topic include:
 
-- [Mobile broadband SMS supported devices](#supporteddevices)
-
-- [Access to mobile broadband SMS](#smsaccess)
-
-- [SMS notifications filtering](#filtering)
-
-- [Developing your SMS app](#developsmsapp)
+- [Mobile broadband SMS supported devices](#mobile-broadband-sms-supported-devices)
+- [Access to mobile broadband SMS](#access-to-mobile-broadband-sms)
+- [SMS notifications filtering](#sms-notifications-filtering)
+- [Developing your SMS app](#developing-your-sms-app)
 
 ## Mobile broadband SMS supported devices
 

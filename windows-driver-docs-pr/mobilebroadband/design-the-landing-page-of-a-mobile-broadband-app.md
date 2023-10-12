@@ -6,7 +6,7 @@ ms.date: 10/05/2023
 
 # Design the landing page of a mobile broadband app
 
-The landing page is the first page that the user sees when they start the mobile broadband app, except for certain cases that are described in [Integrate a mobile broadband app with other Windows components](integrate-a-mobile-broadband-app-with-other-windows-components.md#launchpts).
+The landing page is the first page that the user sees when they start the mobile broadband app, except for certain cases that are described in [Integrate a mobile broadband app with other Windows components](integrate-a-mobile-broadband-app-with-other-windows-components.md#launch-points).
 
 :::image type="content" source="images/mb-fig1-landing-page-postpaid.png" alt-text="Screenshot of a postpaid mobile broadband app landing page.":::
 
@@ -14,19 +14,13 @@ The landing page should follow UWP app guidelines for app layout. To encourage s
 
 The following sections describe some of the content that you can include in the landing page:
 
-- [Usage – show an overview or link](#usageov)
-
-- [Operator messages – show an overview or link](#opmsg)
-
-- [Links to other key pages](#keylinks)
-
-- [App navigation](#appnav)
-
-- [Operator branding](#opbrand)
-
-- [Quick summary](#sum)
-
-- [Additional resources](#res)
+- [Usage – show an overview or link](#usage--show-an-overview-or-link)
+- [Operator messages – show an overview or link](#operator-messages--show-an-overview-or-link)
+- [Links to other key pages](#links-to-other-key-pages)
+- [App navigation](#app-navigation)
+- [Operator branding](#operator-branding)
+- [Quick summary](#quick-summary)
+- [Additional resources](#additional-resources)
 
 ## Usage – show an overview or link
 
@@ -92,9 +86,9 @@ You can customize your mobile broadband app to suit your individual branding sty
 
 - [Laying out your UI](/previous-versions/windows/apps/hh465304(v=win.10))
 
-- [Integrate a mobile broadband app with other Windows components](integrate-a-mobile-broadband-app-with-other-windows-components.md#splash)
+- [Integrate a mobile broadband app with other Windows components](integrate-a-mobile-broadband-app-with-other-windows-components.md#splash-screen)
 
-- [Integrate a mobile broadband app with other Windows components](integrate-a-mobile-broadband-app-with-other-windows-components.md#tileandtoast)
+- [Integrate a mobile broadband app with other Windows components](integrate-a-mobile-broadband-app-with-other-windows-components.md#tile-and-toast-notifications)
 
 ## Related topics
 

@@ -51,12 +51,6 @@ The following table lists the APIs for authoring a mobile broadband app.
 </tbody>
 </table>
 
-The following sections are available in this topic:
-
-- [Mobile Broadband Account API](#mbacctapi)
-
-- [Network Account IDs](#netid)
-
 ## Mobile Broadband Account API
 
 Because it has methods that can be used to get personally identifiable information about the customer and change the network settings on mobile broadband devices, the Mobile Broadband Account API is a privileged API. This means that most UWP apps cannot call its methods without getting an “access denied” error. To be able to call this API, a UWP app must meet the following criteria:

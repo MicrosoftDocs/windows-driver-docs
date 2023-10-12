@@ -1,7 +1,7 @@
 ---
 title: Provisioning Windows using a website
 description: Provisioning Windows using a website
-ms.date: 10/10/2023
+ms.date: 10/11/2023
 ---
 
 # Provisioning Windows using a website
@@ -76,7 +76,7 @@ A user who does not have an active data plan must be able to access the mobile b
 
 ### Device information
 
-When Windows uses the mobile operator’s URL (AccountExperienceURL attribute in the [Operator](operator.md) element) from the COSA database, Windows provides the device information that is required to complete activation to the mobile broadband web site. This device information is passed to the web site as parameters of the HTTPS request.
+When Windows uses the mobile operator’s URL (*AccountExperienceURL* attribute in the **Operator** element) from the COSA database, Windows provides the device information that is required to complete activation to the mobile broadband web site. This device information is passed to the web site as parameters of the HTTPS request.
 
 The format of the URL is `<https://Operator> URL[?propN=valN[&propN=valN]*]`, where:
 
@@ -88,51 +88,19 @@ The format of the URL is `<https://Operator> URL[?propN=valN[&propN=valN]*]`, wh
 
 The following table lists the properties that can be included. If a property value is not provided by the mobile broadband device, that property is not included.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Property name</th>
-<th>Property value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>SubId</p></td>
-<td><p>Subscriber ID</p>
-<ul>
-<li><p>For GSM devices: IMSI (up to 15 digits)</p></li>
-<li><p>For CDMA devices: MIN or MIN(IRM) (10 digits)</p></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><p>DevId</p></td>
-<td><p>Device ID</p>
-<ul>
-<li><p>For GSM devices: IMEI (up to 15 digits)</p></li>
-<li><p>For CDMA devices: ESN (11 digits) or MEID (17 digits)</p></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><p>IccId</p></td>
-<td><p>SIM ICCID (19-20 digits)</p></td>
-</tr>
-</tbody>
-</table>
+| Property name | Property value |
+|--|--|
+| SubId | Subscriber ID<br><ul><li>For GSM devices: IMSI (up to 15 digits)</li><li>For CDMA devices: MIN or MIN(IRM) (10 digits)</li></ul> |
+| DevId | Device ID<br><ul><li>For GSM devices: IMEI (up to 15 digits)</li><li>For CDMA devices: ESN (11 digits) or MEID (17 digits)</li></ul> |
+| IccId | SIM ICCID (19-20 digits) |
 
 ### Configure the computer
 
 After a user has purchased a data plan or otherwise activated the mobile broadband device by using a web site, it might be useful to make the following configuration changes to the computer:
 
 - Define mobile broadband connection profiles
-
 - Provide account data
-
 - Define Wi-Fi hotspot connection profiles
-
 - Instruct the computer to reconnect the mobile broadband device
 
 The same account provisioning metadata that can be applied to a computer by using a mobile broadband app can also be applied by a mobile broadband website. In the web page’s JavaScript, check for the availability of the [**window.external.msProvisionNetworks**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/dn529170(v=vs.85)) method. If it is present, the browser can transfer account provisioning metadata to Windows.

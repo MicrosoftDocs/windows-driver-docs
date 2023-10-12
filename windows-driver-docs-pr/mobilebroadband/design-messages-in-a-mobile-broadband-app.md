@@ -40,7 +40,7 @@ Inappropriate design for showing operator messages:
 
 - Use the app bar control to view and delete messages. For more info, see [Guidelines for app bars](/windows/uwp/controls-and-patterns/app-bars).
 
-- [Integrate a mobile broadband app with other Windows components](integrate-a-mobile-broadband-app-with-other-windows-components.md#tileandtoast)
+- [Integrate a mobile broadband app with other Windows components](integrate-a-mobile-broadband-app-with-other-windows-components.md#tile-and-toast-notifications)
 
 ## Related topics
 

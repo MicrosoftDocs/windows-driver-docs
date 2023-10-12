@@ -10,11 +10,9 @@ This topic provides information about how to design UWP mobile broadband apps fo
 
 The following sections are available in this topic:
 
-- [Key scenarios](#keyui)
-
-- [App organization](#apporg)
-
-- [Additional resources](#resources)
+- [Key scenarios](#key-scenarios)
+- [App organization](#app-organization)
+- [Additional resources](#additional-resources)
 
 ## Key scenarios
 

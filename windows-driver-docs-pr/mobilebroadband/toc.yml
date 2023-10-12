@@ -74,51 +74,24 @@
     href: using-metadata-to-configure-mobile-broadband-experiences.md
   - name: "Account provisioning"
     href: account-provisioning.md
-  - name: "COSA/APN database"
+  - name: "COSA database"
     items: 
     - name: "Introduction to the COSA database"
       href: cosa-database.md
-    - name: "APN schema definition"
-      href: apn-schema-definition.md
-    - name: "APN elements"
-      items: 
-      - name: "APN elements overview"
-        href: apn-elements.md
-        items:
-        - name: "OperatorList"
-          href: operatorlist.md
-        - name: "Operator"
-          href: operator.md
-        - name: "HardwareIdList (APN element)"
-          href: hardwareidlist-apnxml.md
-        - name: "HardwareId (APN element)"
-          href: hardwareid-apnxml.md
-        - name: "ConnectionInfoList"
-          href: connectioninfolist.md
-        - name: "ConnectionInfo"
-          href: connectioninfo.md
-        - name: "TrustedCertificateList"
-          href: trustedcertificatelist.md
-        - name: "TrustedCertificate (APN element)"
-          href: trustedcertificate-apnxml.md
-      - name: "APN example"
-        href: apn-example.md
     - name: "COSA overview"
       href: cosa-overview.md
-    - name: "APN database overview"
-      href: apn-database-overview.md
-    - name: "COSA/APN database submission"
+    - name: "COSA database submission"
       items: 
-      - name: "Planning your desktop COSA/APN database submission"
-        href: planning-your-desktop-cosa-apn-database-submission.md
+      - name: "Planning your desktop COSA database submission"
+        href: planning-your-desktop-cosa-database-submission.md
       - name: "Mobile operator configuration portal overview"
         href: mobile-operator-configuration-portal-overview.md
-      - name: "Desktop COSA/APN database settings"
-        href: desktop-cosa-apn-database-settings.md
-      - name: "Testing your desktop COSA/APN database submission"
-        href: testing-your-desktop-cosa-apn-database-submission.md
-      - name: "Submitting the desktop COSA/APN database update"
-        href: submitting-the-desktop-cosa-apn-database-update.md
+      - name: "Desktop COSA database settings"
+        href: desktop-cosa-database-settings.md
+      - name: "Testing your desktop COSA database submission"
+        href: testing-your-desktop-cosa-database-submission.md
+      - name: "Submitting the desktop COSA database update"
+        href: submitting-the-desktop-cosa-database-update.md
   - name: "Service metadata"
     items: 
     - name: "Service metadata overview"

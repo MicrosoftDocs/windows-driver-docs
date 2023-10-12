@@ -6,38 +6,26 @@ ms.date: 04/20/2017
 
 # Develop an app to handle the MobileOperatorNotification event
 
-
 This topic explains how to develop a mobile broadband app that handles the [MobileOperatorNotification](mobile-operator-notification-event-technical-details.md) event.
 
--   [Best practices](#bp)
-
--   [Step 1: Background task contract declaration](#stepone)
-
--   [Step 2: Background task handler](#steptwo)
-
--   [Step 3: Handle the Activation event](#stepthree)
-
--   [Step 4: Handle background task completion handlers](#stepfour)
-
--   [Troubleshooting](#ts)
-
--   [Sample backgroundtask.js file](#samp)
+- [Best practices](#best-practices)
+- [Step 1: Background task contract declaration](#step-1-background-task-contract-declaration)
+- [Step 2: Background task handler](#step-2-background-task-handler)
+- [Step 3: Handle the Activation event](#step-3-handle-the-activation-event)
+- [Step 4: Handle background task completion handlers](#step-4-handle-background-task-completion-handlers)
+- [Troubleshooting](#troubleshooting)
+- [Sample backgroundtask.js file](#sample-backgroundtaskjs-file)
 
 ## Best practices
 
-
 For background event handling, you should use the following best practices:
 
--   Do not register for background events on which you can’t take action. Processing these events will needlessly consume the app quota.
-
--   Do not perform large amounts of processing on receipt of a background event.
-
--   Consider deferring processing to the next time the app is launched.
-
--   Consider showing a toast notification and updating tile in response to a background event. Your mobile broadband app can process the background event payload.
+- Do not register for background events on which you can’t take action. Processing these events will needlessly consume the app quota.
+- Do not perform large amounts of processing on receipt of a background event.
+- Consider deferring processing to the next time the app is launched.
+- Consider showing a toast notification and updating tile in response to a background event. Your mobile broadband app can process the background event payload.
 
 ## Step 1: Background task contract declaration
-
 
 For Windows to recognize the background task experiences that are supplied by a mobile broadband app, the app must declare that it is providing an extension to system functionality.
 
@@ -45,15 +33,15 @@ To make the declaration in the package.appxmanifest file for your Visual Studio 
 
 **To declare a background task contract**
 
-1.  In **Solution Explorer**, double-click the package.appxmanifest file for your project.
+1. In **Solution Explorer**, double-click the package.appxmanifest file for your project.
 
-2.  On the **Declarations** tab, from **Available Declarations**, select **Background Tasks** and then click **Add**.
+2. On the **Declarations** tab, from **Available Declarations**, select **Background Tasks** and then click **Add**.
 
-3.  Under the **Properties** heading, enter the following app info:
+3. Under the **Properties** heading, enter the following app info:
 
-    -   In the **Start page** box under **App settings**, for a mobile broadband app that uses JavaScript and HTML, enter the file name that handles the background task in the app (for example, **backgroundtask.js**).
+    - In the **Start page** box under **App settings**, for a mobile broadband app that uses JavaScript and HTML, enter the file name that handles the background task in the app (for example, **backgroundtask.js**).
 
-    -   Under the **Supported task types** heading, click the **System event** check box.
+    - Under the **Supported task types** heading, click the **System event** check box.
 
 If this is done correctly, you should have an extension element similar to the following in the package.appxmanifest file.
 
@@ -66,7 +54,6 @@ If this is done correctly, you should have an extension element similar to the f
 ```
 
 ## Step 2: Background task handler
-
 
 If your app provides a mobile operator notifications declaration, it must supply a handler for the background task activation. The handler will get the mobile operator network account ID and event data from [**Windows.Networking.NetworkOperators.NetworkOperatorNotificationEventDetails**](/uwp/api/Windows.Networking.NetworkOperators.NetworkOperatorNotificationEventDetails).
 
@@ -202,9 +189,9 @@ We recommend that you show both toast and tile notifications in your mobile broa
 
 **To enable toast notifications**
 
-1.  In **Solution Explorer**, double-click the package.appxmanifest file for your project.
+1. In **Solution Explorer**, double-click the package.appxmanifest file for your project.
 
-2.  On the **Application UI** tab, under the **Notifications** heading, set **Toast capable** to **Yes**.
+2. On the **Application UI** tab, under the **Notifications** heading, set **Toast capable** to **Yes**.
 
 If this is done correctly, you should have an extension element similar to the following in the package.appxmanifest file.
 
@@ -300,7 +287,6 @@ var settings = Windows.Storage.ApplicationData.current.localSettings;
 
 ## Step 3: Handle the Activation event
 
-
 If the toast sets a parameter, it will be passed to app through **detail.arguments**.
 
 In JavaScript or C#, you handle the [**WinJS.Application.onactivated**](/previous-versions/windows/apps/br212679(v=win.10)) event, and then examine the event arguments that are passed to the event handler. Activation from toast passes the event argument of type [**Windows.UI.WebUI.WebUILaunchActivatedEventArgs**](/uwp/api/Windows.UI.WebUI.WebUILaunchActivatedEventArgs). If the event argument’s **detail.kind** property is [**Windows.ApplicationModel.Activation.ctivationKind**](/uwp/api/Windows.ApplicationModel.Activation.ActivationKind).**launch**, the app provides either the Start experience or the Notification experience, depending on whether the event argument’s **detail.argument** property is set to **null**.
@@ -328,13 +314,10 @@ function activated(eventArgs)
 
 ## Step 4: Handle background task completion handlers
 
-
 The foreground app can also register a completion handler to be notified when the background task completes. The completion status or any exception that occurs in the **Run** method of the background task is passed to the completion handler in the foreground app. If the app was suspended when the task completed, it receives the completion notification next time that the app is resumed. If the app was in the **Terminated** state, it does not receive the completion notification. If the background task needs to preserve the information that it ran successfully, it must persist the information by using State Manager or another means, such as a file that the app can read when it returns to the **Running** state.
 
 **Important**  
 Although the mobile operator background event is registered automatically by the system to the app, the app still needs to run at least one time to register to the background completion or progress handlers.
-
- 
 
 **C#**
 
@@ -415,7 +398,6 @@ function CompleteHandler(task) {
 
 ## Troubleshooting
 
-
 Use these sections to help troubleshoot issues that may come up.
 
 ### Trigger metadata parsing to register background tasks
@@ -428,11 +410,11 @@ Developers can manually trigger Windows 8, Windows 8.1, and Windows 10 to par
 
 Developers can verify that the Device Setup Manager (DSM) has properly parsed the service metadata by viewing the event logs under **Application and Services Logs\\Microsoft\\Windows\\DeviceSetupManager**.
 
-1.  Open Event Viewer.
+1. Open Event Viewer.
 
-2.  On the **Menu** tab, select **View**, and then click **Show Analytic and Debug Logs**.
+2. On the **Menu** tab, select **View**, and then click **Show Analytic and Debug Logs**.
 
-3.  Browse to **Applications and Services Logs\\Microsoft\\Windows\\DeviceSetupManager**.
+3. Browse to **Applications and Services Logs\\Microsoft\\Windows\\DeviceSetupManager**.
 
 Events of interest include Event ID 220 that indicates that DSM has successfully registered the background task for the [MobileOperatorNotification](mobile-operator-notification-event-technical-details.md) event, and Event ID 7900, which indicates any errors that are found in the metadata package.
 
@@ -440,21 +422,21 @@ Events of interest include Event ID 220 that indicates that DSM has successfully
 
 When applying provisioning metadata, verify that [**ProvisionFromXmlDocumentResults.AllElementsProvisioned**](/uwp/api/Windows.Networking.NetworkOperators.ProvisionFromXmlDocumentResults#Windows_Networking_NetworkOperators_ProvisionFromXmlDocumentResults_AllElementsProvisioned) is true. If not, check the ProvisionResultsXml for more details about the error. Common mobile broadband errors include the following:
 
--   A mismatch between the SIM in the PC and the provisioning file (profile fails with ERROR\_NOT\_FOUND).
+- A mismatch between the SIM in the PC and the provisioning file (profile fails with ERROR\_NOT\_FOUND).
 
--   A mismatch between the CarrierId in the provisioning file and the service number in the experience metadata.
+- A mismatch between the CarrierId in the provisioning file and the service number in the experience metadata.
 
 ### Verify that background tasks are being run by the System Event Broker
 
 You can verify that Windows is generating the [MobileOperatorNotification](mobile-operator-notification-event-technical-details.md) event and that the app’s background task is being run by the event broker by checking the Event Viewer. Logging for these events is off by default and can be enabled by performing the following steps:
 
-1.  Open Event Viewer.
+1. Open Event Viewer.
 
-2.  On the **Menu** tab, select **View**, and then click **Show Analytic and Debug Logs**.
+2. On the **Menu** tab, select **View**, and then click **Show Analytic and Debug Logs**.
 
-3.  Browse to **Applications and Services Logs\\Microsoft\\Windows\\BackgroundTaskInfrastructure**.
+3. Browse to **Applications and Services Logs\\Microsoft\\Windows\\BackgroundTaskInfrastructure**.
 
-4.  Right-click **Diagnostic log** and select **Enable Log**.
+4. Right-click **Diagnostic log** and select **Enable Log**.
 
 After you enable the logs, a successful execution of the background task results in an event of **Event ID = 1** that has the following description: “An instance of a background task with entry point &lt;background\_task\_namespace\_name&gt;.&lt;background\_task\_class\_name&gt; and name MobileOperatorNotificationHandler has been created in session 1 and given an ID of {11111111-1111-1111-1111-111111111111}.”
 
@@ -473,7 +455,6 @@ If received SMS are not detected as operator notifications, verify the custom fi
 In particular, if account provisioning metadata specifies the sender phone number, verify that the number formatting specified matches that in the received message by using the SMS APIs. To verify that this is matching correctly, temporarily change the Pattern to **\[^\]\\*** to match all messages from this sender.
 
 ## Sample backgroundtask.js file
-
 
 ``` syntax
 //
@@ -602,10 +583,6 @@ In particular, if account provisioning metadata specifies the sender phone numbe
 
 ## Related topics
 
-
 [Enabling mobile operator notifications and system events](enabling-mobile-operator-notifications-and-system-events.md)
 
 [Creating and configuring Internet Sharing experiences](creating-and-configuring-internet-sharing-experiences.md)
-
- 
-

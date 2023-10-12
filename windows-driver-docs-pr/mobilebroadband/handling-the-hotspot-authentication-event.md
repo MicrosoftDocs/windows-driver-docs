@@ -13,32 +13,17 @@ When the event occurs, the receiving app must immediately call the [**Windows.Ne
 Properties on the object allow your app to retrieve the following items:
 
 - The SSID of the wireless network.
-
 - Details about the network adapter that is connected to the hotspot.
-
 - The URL that contains the WISPr message.
-
 - The XML payload of the WISPr message.
-
 - The authentication URL to which credentials are supplied.
 
 Other APIs exist to retrieve the following items:
 
 - The BSSID of the wireless network (see [**Windows.Networking.Connectivity namespace**](/uwp/api/Windows.Networking.Connectivity)).
-
 - DHCP parameters of the network (see [Win32 and COM for UWP apps](/uwp/win32-and-com/win32-and-com-for-uwp-apps)).
 
 By using this information and any other information that your app needs to obtain from the local system or the network, credentials can be generated. The object also contains methods that permit the app to continue or complete the hotspot authentication.
-
-The following sections are available in this topic:
-
-- [Issue credentials](#issuecred)
-
-- [Abort authentication](#abortauth)
-
-- [Use alternate authentication methods](#altauth)
-
-- [Interact with the user](#userint)
 
 ## Issue credentials
 
@@ -47,11 +32,8 @@ In the simplest case, the app generates credentials based on information it has 
 After performing any actions necessary to generate or obtain credentials, the app calls the [**IssueCredentials**](/uwp/api/Windows.Networking.NetworkOperators.HotspotAuthenticationContext#Windows_Networking_NetworkOperators_HotspotAuthenticationContext_IssueCredentials_System_String_System_String_System_String_System_Boolean_) method on the [**HotspotAuthenticationContext**](/uwp/api/Windows.Networking.NetworkOperators.HotspotAuthenticationContext) object. This method permits the app to supply the following:
 
 - The WISPr *UserName* parameter
-
 - The WISPr *Password* parameter
-
 - Arbitrary non-standard parameters to include in the WISPr response
-
 - Behavior on failure
 
 If the server rejects the credentials supplied by the app, Windows disconnects from the network and does not retry a connection in the current user session. The final flag allows the application to indicate that if the credentials are unsuccessful, Windows should never automatically retry a connection by using this profile.

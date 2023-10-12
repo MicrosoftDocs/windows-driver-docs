@@ -1,7 +1,7 @@
 ---
 title: Testing your desktop COSA database submission
 description: Testing your desktop COSA database submission
-ms.date: 10/10/2023
+ms.date: 10/11/2023
 ---
 
 # Testing your desktop COSA database submission
@@ -80,7 +80,7 @@ There are two ways that you can ensure that the APN entries work before submitti
 A simple way to test that an APN can connect to your network is to edit the current profile and insert the APN to test into the profile. To perform this test, follow these steps:
 
 > [!NOTE]
-> This test does not simulate the full experience, which is described in the [Modify the local APN database](#modifydatabase) section.
+> This test does not simulate the full experience, which is described in the [Modify the local COSA database](#modify-the-local-cosa-database) section.
 
 1. Insert a SIM into the PC that works with the APN value you want to test.
 
@@ -92,7 +92,7 @@ A simple way to test that an APN can connect to your network is to edit the curr
 
 5. Save your changes, and then try to connect to the mobile broadband network.
 
-### Modify the local APN database
+### Modify the local COSA database
 
 Before you submit an APN update, you should editing the local APN database or creating a new one for testing. By doing this, you closely simulate the full experience because the APN selection logic that Windows Connection Manager uses is fully tested.
 
@@ -100,11 +100,11 @@ To modify the local APN connectivity database:
 
 1. **Copy any existing values from the local APN database file** -- View the existing entries in the local APN database on your PC and copy these entries into a new XML file. If you don’t have any APN entries in the local copy of the APN database, skip this step and start with a blank XML file.
 
-2. **Modify values in the XML file according to the published APN schema** – Ensure that your APN entries follow the [APN database schema reference](apn-schema-definition.md).
+2. **Modify values in the XML file according to the published APN schema** – Ensure that your APN entries follow the APN database schema reference.
 
-3. **Generate your hardware IDs** – Hardware IDs specify one or more hardware identification strings that match the SIM characteristics to an APN entry in the database. Each string is specified by a [HardwareId](hardwareid-apnxml.md) element. We recommend that you use mbidgenerator.exe to generate your hardware IDs. For more information, see [Using mbidgenerator.exe to generate hardware IDs](using-mbidgeneratorexe-to-generate-hardware-ids.md).
+3. **Generate your hardware IDs** – Hardware IDs specify one or more hardware identification strings that match the SIM characteristics to an APN entry in the database. Each string is specified by a HardwareId element. We recommend that you use mbidgenerator.exe to generate your hardware IDs. For more information, see [Using mbidgenerator.exe to generate hardware IDs](using-mbidgeneratorexe-to-generate-hardware-ids.md).
 
-4. **Validate that the file you generated conforms to the published APN database schema** -- Always perform a schema check to ensure that the file you have generated conforms to the [APN database schema reference](apn-schema-definition.md).
+4. **Validate that the file you generated conforms to the published COSA database settings** -- Always perform a schema check to ensure that the file you have generated conforms to the [Desktop COSA database settings](desktop-cosa-database-settings.md).
 
 5. **Overwrite the APN connectivity database on the PC with your new database**
 
