@@ -46,7 +46,7 @@ Except for Online Sign-up, which follows the standard PPS-MO format, all other p
 
 ## Venue information
 
-Starting with Windows 11, version 23H2, Windows supports the Passpoint venue information feature, which allows network operators to provide an HTTPS web URL that links to more information about the venue. When the network provides this URL, Windows displays a "Venue information" link next to the connected Wi-Fi network in Quick Settings. For automatic connections, Windows triggers a notification that directly links to the URL.
+Starting with Windows 11, version 23H2, Windows supports the Passpoint venue information feature, which allows network operators to provide an HTTPS web URL that links to more information about the venue. When the network provides this URL, Windows displays a "Venue information" link next to the connected Wi-Fi network in Quick Settings. For automatic connections, Windows displays a notification that directly links to the URL.
 
 ## Roaming consortium membership
 
