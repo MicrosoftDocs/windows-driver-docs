@@ -8,7 +8,7 @@ ms.date: 10/10/2023
 
 Use the sections in this topic when you are planning to add a new APN to the baseline COSA database that ships with Windows desktop devices, or update an existing one.
 
-## The APN update process
+## The COSA update process
 
 To connect to a mobile broadband network, the user is typically required to provide the following information:
 
