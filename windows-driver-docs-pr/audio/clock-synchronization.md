@@ -18,10 +18,6 @@ ms.date: 04/20/2017
 
 # Clock Synchronization
 
-
-## <span id="clock_synchronization"></span><span id="CLOCK_SYNCHRONIZATION"></span>
-
-
 A critical task for the wave sink to do is to resolve time drift between the reference-clock and sample-clock crystals. It does this with the software equivalent of a phase-locked loop.
 
 The wave sink keeps track of what sample number in the buffer it can write to next. So even though it knows that it is on, for example, sample 20, the wave sink still needs to check the master clock to get a reference time. It has a thread that wakes up approximately every 20 milliseconds and asks the master clock for the current time. The master clock might report back that the current time (in milliseconds) is 420, for example.
@@ -36,19 +32,12 @@ For example, if the master clock is currently at time 420 and the application ha
 
 Suppose an event is marked to play at time 520 in reference time. The synthesizer does its work by rendering notes down into samples and performing all its calculations in sample time. Therefore, it needs to know what a reference time of 520 converts to in sample time. In user mode, the wave sink provides two functions that the synth uses:
 
-[**IDirectMusicSynthSink::SampleToRefTime**](/windows/win32/api/dmusics/nf-dmusics-idirectmusicsynthsink-sampletoreftime)
-
-[**IDirectMusicSynthSink::RefTimeToSample**](/windows/win32/api/dmusics/nf-dmusics-idirectmusicsynthsink-reftimetosample)
+**IDirectMusicSynthSink::SampleToRefTime** and IDirectMusicSynthSink::RefTimeToSample**
 
 To do the conversion in this case, the synth calls **IDirectMusicSynthSink::RefTimeToSample** on the wave sink.
 
-The wave sink then gives back a sample time (for example, 600). The note in question gets rendered at sample time 600. Then, when the synth [**IDirectMusicSynth::Render**](/windows/win32/api/dmusics/nf-dmusics-idirectmusicsynth-render) method gets called by the wave sink to render the next portion of the stream (for example, from sample time 600 to 800), the note is rendered into the buffer at sample time 600.
+The wave sink then gives back a sample time (for example, 600). The note in question gets rendered at sample time 600. Then, when the synth **IDirectMusicSynth::Render** method gets called by the wave sink to render the next portion of the stream (for example, from sample time 600 to 800), the note is rendered into the buffer at sample time 600.
 
 **Note**   The sample time is kept as a 64-bit number to avoid rollover. (A DWORD value rolls over in 27 hours.)
 
- 
-
 To summarize, the synth does all its internal math in sample time and the wave sink does the conversion to sample time from reference time and vice versa. The wave sink also manages synchronization with the master clock and provides latency information. Hiding this functionality in the wave sink makes writing the synth easier.
-
- 
-

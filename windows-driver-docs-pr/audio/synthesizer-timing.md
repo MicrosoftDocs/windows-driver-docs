@@ -19,17 +19,13 @@ ms.date: 04/20/2017
 
 # Synthesizer Timing
 
-
-## <span id="synthesizer_timing"></span><span id="SYNTHESIZER_TIMING"></span>
-
-
 The synthesizer works with two different systems of time:
 
--   Reference time
+- Reference time
 
--   Sample time
+- Sample time
 
-Reference time is the absolute time (in master-clock units) at which a sequence of messages is to be played. In user-mode implementations, it is passed to the [**IDirectMusicSynth::PlayBuffer**](/windows/win32/api/dmusics/nf-dmusics-idirectmusicsynth-playbuffer) method when MIDI messages are fed to the synthesizer. The synthesizer, wave sink, and the rest of DirectMusic should all work under the same master clock, which is attached to the synthesizer by your implementation of the [**IDirectMusicSynth::SetMasterClock**](/windows/win32/api/dmusics/nf-dmusics-idirectmusicsynth-setmasterclock) method and to the wave sink by [**IDirectMusicSynthSink::SetMasterClock**](/windows/win32/api/dmusics/nf-dmusics-idirectmusicsynthsink-setmasterclock).
+Reference time is the absolute time (in master-clock units) at which a sequence of messages is to be played. In user-mode implementations, it is passed to the **IDirectMusicSynth::PlayBuffer** method when MIDI messages are fed to the synthesizer. The synthesizer, wave sink, and the rest of DirectMusic should all work under the same master clock, which is attached to the synthesizer by your implementation of the **IDirectMusicSynth::SetMasterClock** method and to the wave sink by **IDirectMusicSynthSink::SetMasterClock**.
 
 Sample time is used to measure offsets into the synthesizer's output buffer. This buffer is filled with wave samples, so sample time is relative to the sampling rate. For example, at a sampling rate of 22.1 kHz, each second of time is equivalent to 22,100 samples or 44,200 bytes (in the case of a 16-bit mono format).
 
@@ -40,6 +36,3 @@ This section also includes:
 [Synthesizer Latency](synthesizer-latency.md)
 
 [Time-Stamped Events](time-stamped-events.md)
-
- 
-
