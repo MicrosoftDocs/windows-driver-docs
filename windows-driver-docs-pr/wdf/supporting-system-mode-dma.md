@@ -19,7 +19,7 @@ For information about KMDF and bus-master DMA, see [Handling I/O Requests in a K
 
 The following figure shows the event callback functions that your driver uses to support system-mode DMA:
 
-:::image type="content" source="images/sys-mode-dma-in-kmdf.png" alt-text="Flowchart that shows event callback functions for system-mode DMA implementation in KMDF drivers.":::
+:::image type="content" source="images/sys-mode-dma-in-kmdf.png" alt-text="Flowchart showing event callback functions for system-mode DMA implementation in KMDF drivers.":::
 
 ## Creating a System-Mode DMA Enabler
 
