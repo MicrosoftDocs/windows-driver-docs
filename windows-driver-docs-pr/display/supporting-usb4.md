@@ -1,5 +1,6 @@
 ---
 title: Supporting DisplayPort monitors over USB4 in KMD
+description: Supporting DisplayPort monitors over USB4 in KMD
 keywords:
 - display drivers, usb4
 - display miniport driver, usb4
