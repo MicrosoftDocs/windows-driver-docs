@@ -51,6 +51,8 @@
       href: iommu-dma-remapping.md
     - name: "Signaling a CPU event from KMD"
       href: signaling-cpu-event-from-kmd.md
+    - name: "Supporting DisplayPort monitors over USB4 in KMD"
+      href: supporting-usb4.md
   - name: "WDDM 2.4 features"
     items:
     - name: "IOMMU-based GPU isolation"
