@@ -23,7 +23,7 @@ With these advancements in the Windows print platform, we are announcing the end
 | Timeline * | Plan |
 |--|--|
 | **September 2023** | **Announce legacy third-party printer driver for Windows end of servicing plan.** |
-| **2025** | **No new printer drivers will be published to Windows Update.**<br><br>Existing printer drivers on Windows Update can still be updated. |
+| **2025** | **No new printer drivers will be published to Windows Update.**<br><br>Existing printer drivers on Windows Update can still be updated, but approved on a case-by-case basis. |
 | **2026** | **Printer driver ranking order modified to always prefer Windows IPP inbox class driver.** |
 | **2027** | **Except for security-related fixes, third-party printer driver updates will no longer be allowed**.<br><br>Existing third-party printer drivers can be installed from Windows Update or users can install printer drivers by using an installation package provided by the print device manufacturer. |
 
@@ -33,7 +33,7 @@ With these advancements in the Windows print platform, we are announcing the end
 
 **Q: Will vendor-supplied drivers be signed by WHCP (Windows Hardware Compatibility Program)?**
 
-**A:** Printer manufacturers can continue to submit printer drivers through the [**Partner Center**](https://partner.microsoft.com/dashboard/home) hardware tool for driver validation and signing. However, in 2025 new printer drivers will no longer be published to Windows Update. Manufacturers and independent software vendors will need to provide customers with an alternative means to download and install those printer drivers.
+**A:** Printer manufacturers can continue to submit printer drivers through the [**Partner Center**](https://partner.microsoft.com/dashboard/home) hardware tool for driver validation and signing. However, in 2025 new printer drivers will be approved on a case-by-case basis for Windows Update or WHQL signing. Manufacturers and independent software vendors will need to provide customers with an alternative means to download and install those printer drivers.
 
 **Q: Will Windows prevent installation of new printer drivers?**
 

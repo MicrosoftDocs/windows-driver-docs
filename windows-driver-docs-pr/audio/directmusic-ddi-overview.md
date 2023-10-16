@@ -15,21 +15,17 @@ ms.date: 04/20/2017
 
 # DirectMusic DDI Overview
 
-
-## <span id="directmusic_ddi_overview"></span><span id="DIRECTMUSIC_DDI_OVERVIEW"></span>
-
-
 The design principles that are needed to implement user-mode synths generally apply to kernel-mode synths as well. For this reason, this guide begins with a discussion of user-mode implementations and progresses to specific kernel-mode topics.
 
 Typically, the best design strategy is to first write a software implementation of the DirectMusic *device driver interface (DDI)* that runs in user mode. This approach is beneficial even if the final product is a kernel-mode implementation that uses hardware components. After the user-mode version is completed, the software can be converted to kernel mode and connections established with the hardware, one feature at a time. For more information, see [User Mode Versus Kernel Mode](user-mode-versus-kernel-mode.md).
 
 DirectMusic uses the following user-mode interfaces to control user-mode synthesizers and communicate with kernel-streaming drivers:
 
-[IDirectMusicSynth](/windows/win32/api/dmusics/nn-dmusics-idirectmusicsynth)
+- IDirectMusicSynth
 
 This is the user-mode interface for implementing custom software synths.
 
-[IDirectMusicSynthSink](/windows/win32/api/dmusics/nn-dmusics-idirectmusicsynthsink)
+- IDirectMusicSynthSink
 
 This is the user-mode interface for implementing custom wave sinks in Microsoft DirectX 6.1 and DirectX 7. In DirectX 8 and later, DirectMusic always uses its private wave sink with a user-mode synth, and no public interface is supported for user-mode wave sinks.
 
@@ -54,6 +50,3 @@ Custom DMus miniport drivers use the following kernel-mode interfaces:
 [IPortDMus](/windows-hardware/drivers/ddi/dmusicks/nn-dmusicks-iportdmus)
 
 DMus miniport drivers implement the **IMiniportDMus**, **ISynthSinkDMus**, and **IMXF** interfaces. The DMus port driver implements the **IAllocatorMXF**, **IMasterClock**, and **IPortDMus** interfaces and exposes them to miniport drivers.
-
- 
-
