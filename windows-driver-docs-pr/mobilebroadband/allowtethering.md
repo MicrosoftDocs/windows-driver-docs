@@ -35,24 +35,9 @@ There are no child elements.
 
 ## Parent elements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="networkconfiguration.md" data-raw-source="[NetworkConfiguration](networkconfiguration.md)">NetworkConfiguration</a></p></td>
-<td><p>Specifies the purchase and Internet mobile broadband profiles to be used or whether standard user can perform PIN unlock operations.</p></td>
-</tr>
-</tbody>
-</table>
+| Element | Description |
+|---|---|
+| [NetworkConfiguration](networkconfiguration.md) | Specifies the purchase and Internet mobile broadband profiles to be used or whether standard user can perform PIN unlock operations. |
 
 ## XSD
 

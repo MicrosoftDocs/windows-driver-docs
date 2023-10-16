@@ -1,7 +1,7 @@
 ---
 title: Application
 description: Application
-ms.date: 10/10/2023
+ms.date: 10/13/2023
 ---
 
 # Application
@@ -32,24 +32,9 @@ There are no child elements.
 
 ## Parent elements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="metadatabuilderinformation.md" data-raw-source="[MetadataBuilderInformation](metadatabuilderinformation.md)">MetadataBuilderInformation</a></p></td>
-<td><p>The <a href="metadatabuilderinformation.md" data-raw-source="[MetadataBuilderInformation](metadatabuilderinformation.md)">MetadataBuilderInformation</a> element specifies the application that created the service metadata package.</p></td>
-</tr>
-</tbody>
-</table>
+| Element | Description |
+|---|---|
+| [MetadataBuilderInformation](metadatabuilderinformation.md) | The [MetadataBuilderInformation](metadatabuilderinformation.md) element specifies the application that created the service metadata package. |
 
 ## XSD
 
