@@ -13,30 +13,28 @@ Use the sections in this topic when you are planning to add a new APN to the bas
 To connect to a mobile broadband network, the user is typically required to provide the following information:
 
 - On GSM networks, an Access Point Name (APN) such as "data.contoso.com" is required.
-
 - On CDMA networks, an access string that includes a special dial code such as "\#777" or a Network Access Identifier such as <somebody@contoso.com> is required.
-
 - A username and password for the network connection.
 
-COSA and the APN connectivity database are updated by using Windows Update. The figure below shows the overall submission process.
+The COSA connectivity database is updated by using Windows Update. The figure below shows the overall submission process.
 
 :::image type="content" source="images/COSA_and_APN_database_submission_process_diagram.png" alt-text="Flowchart that shows the COSA database submission process.":::
 
-## Complete the APN/COSA update spreadsheet
+## Use the mobile operator portal to make COSA upates
 
-The APN update spreadsheet is used to gather the required information so Microsoft can update the COSA database appropriately. This spreadsheet is included in your submission request to Microsoft. MOs should send all information to target all devices to Microsoft when submitting an APN update, if applicable.
+- Navigate to the [Microsoft Mobile Operator Portal](https://aka.ms/moconfig).
+- Create your account
+- Create a new draft submission
 
-Use the following link to download the latest APN update spreadsheet: <https://go.microsoft.com/fwlink/p/?linkid=851213>
+For more info about the settings stored in the COSA database, see [Desktop COSA database settings](desktop-cosa-database-settings.md).
 
-For more info about the settings in the APN update spreadsheet, see [Desktop COSA database settings](desktop-cosa-database-settings.md).
+## Considerations when updating COSA
 
-## Considerations when completing the spreadsheet
-
-### APN database considerations
+### COSA database considerations
 
 Note the following only when submitting an APN update using apndatabase.xml, for Windows 8, Windows 8.1, or versions of Windows 10 before Windows 10, version 1703.
 
-- The operator identification data is stored in the APN database as encoded Hardware IDs.
+- The operator identification data is stored in the COSA database as encoded Hardware IDs.
   - For GSM networks, you can have a separate database entry for each unique combination of MCC/MNC pair. If you are a Mobile Virtual Network Operator (MVNO) and do not have a unique MCC/MNC pair, you can specify one or more ranges of IMSIs or SIM ICC IDs currently leased from a Mobile Network Operator (MNO).
   - For CDMA networks, you can have a new database entry for each Provider ID (also called a SID) or Provider Name.
   - Certificate information for account provisioning metadata includes **Cert Issuer Name** and **Cert Subject Name** and is used to verify that account provisioning provided by a purchase website comes from the an authorized web service. If the certificate information stored here matches what the purchase website presents, Windows will allow that website to push network-specific configuration information to the PC.
