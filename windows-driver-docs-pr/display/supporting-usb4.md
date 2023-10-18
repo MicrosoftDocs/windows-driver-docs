@@ -1,6 +1,6 @@
 ---
-title: Supporting DisplayPort monitors over USB4 in KMD
-description: Supporting DisplayPort monitors over USB4 in KMD
+title: WDDM support for DisplayPort monitors over USB4
+description: WDDM support for DisplayPort monitors over USB4
 keywords:
 - display drivers, usb4
 - display miniport driver, usb4
@@ -9,15 +9,15 @@ keywords:
 ms.date: 10/13/2023
 ---
 
-# Supporting DisplayPort monitors over USB4 in KMD
+# WDDM support for DisplayPort monitors over USB4
 
-This article describes how a kernel-mode graphics driver (KMD) can support DisplayPort monitors connected over USB4 starting in Windows 11 (WDDM 3.0).
+This article describes how a WDDM driver can support DisplayPort monitors connected over USB4 starting in Windows 11 (WDDM 3.0).
 
 ## Requirements
 
-The Windows graphics stack needs to know that a KMD supports USB4 at start time. At start time, the system can verify whether a driver supports all the necessary requirements and fail driver start if it doesn't offer such support rather than find out at hot plug detect time.
+The Windows graphics stack needs to know that a WDDM driver supports USB4 at start time. At start time, the system can verify whether a driver supports all the necessary requirements and fail driver start if it doesn't offer such support rather than find out at hot plug detect time.
 
-The KMD must meet the following requirements:
+The kernel-mode display driver (KMD) must meet the following requirements:
 
 1. It must be a WDDM 3.0 or above driver.
 2. It exposes an added adapter cap to indicate USB4 support.
