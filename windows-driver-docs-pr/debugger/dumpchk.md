@@ -11,7 +11,7 @@ ms.date: 03/07/2023
 
 ## Where to get DumpChk
 
-DumpChk.exe is included in [Debugging Tools for Windows](index.md).
+**DumpChk.exe** is included in [Debugging Tools for Windows](index.md).
 
 ## DumpChk command-line options
 
@@ -47,7 +47,7 @@ Could not open dump file [C:\mydir\dumpfile2.dmp], HRESULT 0x80004002
 **** DebugClient cannot open DumpFile - error 80004002   
 ```
 
- The `DebugClient cannot open DumpFile` error message at the end shows that the dump file couldn't be opened. If the dump file wasn't corrupt, this display would end with the words `Finished dump check`.
+The `DebugClient cannot open DumpFile` error message at the end shows that the dump file couldn't be opened. If the dump file wasn't corrupt, this display would end with the words `Finished dump check`.
 
 Other errors might be listed, some of which are benign. For example, the following error message doesn't represent a problem:
 
@@ -55,7 +55,7 @@ Other errors might be listed, some of which are benign. For example, the followi
 error 3 InitTypeRead( nt!_PEB at 7ffd5000) 
 ```
 
-The following example shows DumpChk run on a healthy user-mode minidump. The display begins with an overall summary of the dump file and then gives detailed information about what data is contained in the dump file:
+The following example shows **DumpChk** run on a healthy user-mode minidump. The display begins with an overall summary of the dump file and then gives detailed information about what data is contained in the dump file:
 
 ```console
 C:\Debuggers> dumpchk C:\mydir\dumpfile1.dmp 
@@ -121,7 +121,7 @@ Stream 11: type UnusedStream (0), size 00000000, RVA 00000000
 
 
 Windows Vista Version 6000 MP (2 procs) Free x86 compatible
-Product: WinNT, suite: SingleUserTS
+Product: WinNt, suite: SingleUserTS
 kernel32.dll version: 6.0.6000.16386 (vista_rtm.061101-2205)
 Debug session time: Tue Jun 17 02:28:23.000 2008 (GMT-7)
 System Uptime: 0 days 15:43:52.861
@@ -188,7 +188,7 @@ PEB at 7ffd9000
 Finished dump check
 ```
 
-The output begins by identifying the characteristics of the dump file. In this case, a user-mode minidump with full memory information, including application data but not operating-system data. The symbol path that's being used by DumpChk follows, and then a summary of the dump file contents.
+The output begins by identifying the characteristics of the dump file. In this case, a **user-mode** minidump with full memory information, including application data but not operating-system data. The symbol path that's being used by **DumpChk** follows, and then a summary of the dump file contents.
 
 Because this display ends with the words `Finished dump check`, the dump file is probably not corrupt and can be opened by a debugger. However, more subtle forms of corruption might still be present in the file.
 
