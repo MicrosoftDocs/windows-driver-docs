@@ -33,7 +33,7 @@ MNOs and MVNOs must complete the following steps before you can create a service
 
 - Register your service identifiers
 
-To complete the steps above, you must send an email to <sysdev@microsoft.com> with the following info:
+To complete the steps above, you must go to [Partner Center dashboard technical support](/windows-hardware/drivers/dashboard/hardware-submission-support) and supply the following info:
 
 - The organization name used when you registered for the Windows Dev Center hardware dashboard.
 
