@@ -1,7 +1,7 @@
 ---
 title: How to write your first USB client driver (UMDF)
 description: Use the USB User Mode Driver template provided with Microsoft Visual Studio to write a UMDF client driver.
-ms.date: 10/19/2023
+ms.date: 10/20/2023
 ---
 
 # How to write your first USB client driver (UMDF)
@@ -189,7 +189,6 @@ tracelog -stop MyTrace
 
 1. In the **Solution Explorer** window, right-click the project name (**MyUSBDriver_UMDF_**), and choose **Properties**.
 1. In the left pane, navigate to **Configuration Properties > Driver Install > Deployment**.
-1. Check Enable deployment, and check Import into driver store.
 1. For **Target Device Name**, specify the name of the target computer.
 1. Select **Install/Reinstall and Verify**.
 1. Select **Ok**.
