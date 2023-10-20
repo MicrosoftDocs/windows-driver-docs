@@ -187,7 +187,7 @@ tracelog -stop MyTrace
 
 ### Step 6: Deploy the driver on the target computer
 
-1. In the **Solution Explorer** window, right-click the *\<project name>*, and choose **Properties**.
+1. In the **Solution Explorer** window, right-click the project name (**MyUSBDriver_UMDF_**), and choose **Properties**.
 1. In the left pane, navigate to **Configuration Properties > Driver Install > Deployment**.
 1. Check Enable deployment, and check Import into driver store.
 1. For **Target Device Name**, specify the name of the target computer.
