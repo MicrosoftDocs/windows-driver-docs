@@ -1,7 +1,7 @@
 ---
 title: How to write your first USB client driver (UMDF)
 description: Use the USB User Mode Driver template provided with Microsoft Visual Studio to write a UMDF client driver.
-ms.date: 10/17/2023
+ms.date: 10/19/2023
 ---
 
 # How to write your first USB client driver (UMDF)
@@ -51,11 +51,13 @@ If you're new to USB driver development, use the [OSR USB FX2 learning kit](http
 
 ## Instructions
 
-### Step 1: Generate the UMDF driver code by using the Visual Studio 2022 USB driver template
+Follow these steps to create a USB UMDF V2 driver by using the Visual Studio 2022 driver template.
 
-For instructions about generating UMDF driver code, see [Writing a UMDF driver based on a template](../gettingstarted/writing-a-umdf-driver-based-on-a-template.md).
+### Step 1: Generate the driver code
 
-### For USB-specific code, select the following options in Visual Studio 2019
+For details about writing UMDF driver code, see [Writing a UMDF driver based on a template](../gettingstarted/writing-a-umdf-driver-based-on-a-template.md).
+
+### For USB-specific code, select the following options in Visual Studio 2022
 
 1. In the **New Project** dialog box, in the search box at the top, type **USB.**
 1. In the middle pane, select **User Mode Driver, USB (UMDF V2)**.
@@ -78,47 +80,23 @@ This article assumes that the name of the project is "MyUSBDriver_UMDF_". It con
 | Trace.h | Defines the device interface GUID. It also declares tracing functions and macros. |
 | *\<Project name>*.inf | INF file that is required to install the client driver on the target computer. |
 
-### Step 2: Modify the INF file to add information about your device
+### Step 2: Add information about your device
 
-Before you build the driver, you must modify the template INF file with information about your device, specifically the hardware ID string.
+Before you build the driver, you must add information about your device, specifically the hardware ID. To provide the hardware ID:
 
-### To provide the hardware ID string
+1. In the **Solution Explorer** window, right-click **MyUSBDriver_UMDF_**, and choose **Properties**.
+1. In the **MyUSBDriver_UMDF_ Property Pages** window, go to **Configuration Properties > Driver Install > Deployment**, as shown here.
+    :::image type="content" source="images/umdf-driver-property-pages.png" alt-text="Screenshot of the Visual Studio 2022 property pages window.":::
+1. Check **Remove previous driver versions before deployment**.
+1. For **Target Device Name**, select the name of the computer that you configured for testing and debugging.
+1. Select **Hardware ID Driver Update**, and enter the hardware ID for your driver. In this exercise, the hardware ID is *Root\MyUSBDriver_UMDF_*. Select **OK**.
 
-1. Attach your USB device to your host computer and let Windows enumerate the device.
-1. Open **Device Manager** and open properties for your device.
-1. On the **Details** tab, select **Hardware Ids** under **Property.**
+> [!NOTE]
+> In this exercise, the hardware ID does not identify a real piece of hardware. It identifies an imaginary device that will be given a place in the device tree as a child of the root node. For real hardware, do not select **Hardware ID Driver Update**. Instead, select **Install and Verify**. You can see the hardware ID in your driver's information (INF) file. In the **Solution Explorer** window, go to **MyUSBDriver_UMDF_ > Driver Files**, and double-click MyUSBDriver_UMDF_.inf. The hardware ID is under [Standard.NT$ARCH$].
 
-    The hardware ID for the device is displayed in the list box. Right-click and copy the hardware ID string.
+All UMDF-based USB client drivers require two Microsoft-provided drivers, the reflector and WinUSB.
 
-1. In **Solution Explorer**, expand **Driver Files**, and open the INF.
-1. Replace the following your hardware ID string.
-
-    ```inf
-    [Standard.NT$ARCH$]
-    %DeviceName%=MyDevice_Install, USB\VID_vvvv&PID_pppp
-    ```
-
-Notice the **AddReg** entries in the driver's information (INF) file.
-
-```inf
-[CoInstallers_AddReg]
-HKR,,CoInstallers32,0x00010008,"WudfCoinstaller.dll"
-HKR,,CoInstallers32,0x00010008,"WudfUpdate_01011.dll"
-HKR,,CoInstallers32,0x00010008,"WdfCoInstaller01011.dll,WdfCoInstaller"
-HKR,,CoInstallers32,0x00010008,"WinUsbCoinstaller2.dll"
-```
-
-- WudfCoinstaller.dll (configuration co-installer)
-- WUDFUpdate_*\<version>*.dll (redistributable co-installer)
-- Wdfcoinstaller *\<version>*.dll (co-installers for KMDF)
-- Winusbcoinstaller2.dll ((co-installers for Winusb.sys)
-- MyUSBDriver_UMDF_.dll (client driver module)
-
-If your INF AddReg directive references the UMDF redistributable co-installer (WUDFUpdate_*\<version>*.dll), you must not make a reference to the configuration co-installer (WUDFCoInstaller.dll). Referencing both co-installers in the INF leads to installation errors.
-
-All UMDF-based USB client drivers require two Microsoft-provided drivers: the reflector and WinUSB.
-
-- Reflector—If your driver gets loaded successfully, the reflector is loaded as the top-most driver in the kernel-mode stack. The reflector must be the top driver in the kernel mode stack. To meet this requirement, the template's INF file specifies the reflector as a service and WinUSB as a lower-filter driver in the INF:
+- **Reflector**: If your driver gets loaded successfully, the reflector is loaded as the top-most driver in the kernel-mode stack. The reflector must be the top driver in the kernel mode stack. To meet this requirement, the template's INF file specifies the reflector as a service and WinUSB as a lower-filter driver in the INF:
 
     ```inf
     [MyDevice_Install.NT.Services]
@@ -126,17 +104,17 @@ All UMDF-based USB client drivers require two Microsoft-provided drivers: the re
     AddService=WinUsb,0x000001f8,WinUsb_ServiceInstall  ; this service is installed because its a filter.
     ```
 
-- WinUSB—The installation package must contain coinstallers for Winusb.sys because for the client driver, WinUSB is the gateway to the kernel-mode USB driver stack. Another component that gets loaded is a user-mode DLL, named WinUsb.dll, in the client driver's host process (Wudfhost.exe). Winusb.dll exposes [WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md) that simplify the communication process between the client driver and WinUSB.
+- **WinUSB**: The installation package must contain coinstallers for Winusb.sys because for the client driver, WinUSB is the gateway to the kernel-mode USB driver stack. Another component that gets loaded is a user-mode DLL, named WinUsb.dll, in the client driver's host process (Wudfhost.exe). Winusb.dll exposes [WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md) that simplify the communication process between the client driver and WinUSB.
 
 ### Step 3: Build the USB client driver code
 
 To build your driver:
 
-1. Open the driver project or solution in Visual Studio 2019.
+1. Open the driver project or solution in Visual Studio 2022.
 1. Right-click the solution in the **Solution Explorer** and select **Configuration Manager**.
-1. From the **Configuration Manager**, select your **Active Solution Configuration** (for example, **Debug** or **Release**) and your **Active Solution Platform** (for example, **Win32**) that correspond to the type of build you're interested in.
+1. From the **Configuration Manager**, select your **Active Solution Configuration** (for example, **Debug** or **Release**) and your **Active Solution Platform** (for example, **x64**) that correspond to the type of build you're interested in.
 1. Verify that your device interface GUID is accurate throughout the project.
-    - The device interface GUID is defined in Trace.h and is referenced from `MyUSBDriverUMDFCreateDevice` in Device.c. When you create your project with the name "MyUSBDriver_UMDF_", Visual Studio 2019 defines the device interface GUID with the name `GUID_DEVINTERFACE_MyUSBDriver_UMDF_` but calls `WdfDeviceCreateDeviceInterface` with the incorrect parameter "GUID_DEVINTERFACE_MyUSBDriverUMDF". Replace the incorrect parameter with the name defined in Trace.h to ensure that the driver builds properly.
+    - The device interface GUID is defined in Trace.h and is referenced from `MyUSBDriverUMDFCreateDevice` in Device.c. When you create your project with the name "MyUSBDriver_UMDF_", Visual Studio 2022 defines the device interface GUID with the name `GUID_DEVINTERFACE_MyUSBDriver_UMDF_` but calls `WdfDeviceCreateDeviceInterface` with the incorrect parameter `&GUID_DEVINTERFACE_MyUSBDriverUMDF`. Replace the incorrect parameter with the name defined in Trace.h to ensure that the driver builds properly.
 1. From the **Build** menu, select **Build Solution**.
 
 For more information, see [Building a Driver](../develop/building-a-driver.md).
@@ -153,7 +131,7 @@ The template code contains several trace messages (TraceEvents) that can help yo
 
 1. Create trace message format (TMF) files by extracting trace message formatting instructions from the PDB symbol file.
 
-   You can use Tracepdb.exe to create TMF files. The tool is located in the *&lt;install folder&gt;*Windows Kits\\10\\bin\\*&lt;architecture&gt;* folder of the WDK. The following command creates TMF files for the driver project.
+   You can use Tracepdb.exe to create TMF files. The tool is located in the *\<install folder>*Windows Kits\\10\\bin\\*\<architecture>* folder of the WDK. The following command creates TMF files for the driver project.
 
    ```console
    tracepdb -f <PDBFiles> -p <TMFDirectory>
@@ -168,7 +146,7 @@ The template code contains several trace messages (TraceEvents) that can help yo
    ```console
    .load Wmitrace
    .chain
-   !wmitrace.searchpath +***&lt;TMF file location&gt;
+   !wmitrace.searchpath + <TMF file location>
    ```
 
 These commands:
@@ -185,7 +163,7 @@ Trace Format search path is: 'C:\Program Files (x86)\Microsoft Visual Studio 14.
 
 ### To configure your target computer for WPP tracing
 
-1. Make sure you have the Tracelog tool on your target computer. The tool is located in the *&lt;install_folder&gt;*Windows Kits\\10\\Tools\\*&lt;arch&gt;* folder of the WDK. For more information, see **[Tracelog Command Syntax](../devtest/tracelog-command-syntax.md)**.
+1. Make sure you have the Tracelog tool on your target computer. The tool is located in the *\<install_folder>*Windows Kits\\10\\Tools\\*\<arch>* folder of the WDK. For more information, see **[Tracelog Command Syntax](../devtest/tracelog-command-syntax.md)**.
 1. Open a **Command Window** and run as administrator.
 1. Type the following command:
 
@@ -195,7 +173,7 @@ Trace Format search path is: 'C:\Program Files (x86)\Microsoft Visual Studio 14.
 
 The command starts a trace session named MyTrace.
 
-The **guid** argument specifies the GUID of the trace provider, which is the client driver. You can get the GUID from Trace.h in the Visual Studio 2019 project. As another option, you can type the following command and specify the GUID in a .guid file. The file contains the GUID in hyphen format:
+The **guid** argument specifies the GUID of the trace provider, which is the client driver. You can get the GUID from Trace.h in the Visual Studio 2022 project. As another option, you can type the following command and specify the GUID in a .guid file. The file contains the GUID in hyphen format:
 
 ```console
 tracelog -start MyTrace -guid c:\\drivers\\Provider.guid -flag 0xFFFF -level 7-rt -kd
@@ -210,7 +188,7 @@ tracelog -stop MyTrace
 ### Step 6: Deploy the driver on the target computer
 
 1. In the **Solution Explorer** window, right-click the *\<project name>*, and choose **Properties**.
-1. In the left pane, navigate to **Configuration Properties &gt; Driver Install &gt; Deployment**.
+1. In the left pane, navigate to **Configuration Properties > Driver Install > Deployment**.
 1. Check Enable deployment, and check Import into driver store.
 1. For **Target Device Name**, specify the name of the target computer.
 1. Select **Install/Reinstall and Verify**.
