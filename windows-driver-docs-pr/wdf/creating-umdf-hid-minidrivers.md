@@ -50,7 +50,10 @@ Both *MsHidUmdf.sys* and *MsHidKmdf.sys* call the HID class driver's [**HidRegis
 
 **UMDF architecture**: KMDF architecture
 
-**:::image type="content" source="images/UMDF-basedHIDMinidrivers.png" alt-text="Diagram showing the location of hidumdf.sys in the UMDF-based HID minidriver stack.":::
+:::image type="content" source="images/UMDF-basedHIDMinidrivers.png" alt-text="Diagram showing the location of hidumdf.sys in the driver stack.":::
+
+:::image type="content" source="images/Framework-basedHIDMinidrivers.png" alt-text="Diagram showing the location of mshidkmdf.sys in driver stack.":::
+
 
 
  
