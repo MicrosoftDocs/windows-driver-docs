@@ -20,7 +20,7 @@ Open the settings list for your driver and right-click the **TrackPower** settin
 
  
 
-![setting track power references in wdfverifier.](images/wdfverifier--track-power-references-on.png)
+:::image type="content" source="images/wdfverifier--track-power-references-on.png" alt-text="Screenshot of setting track power references in WdfVerifier.":::
 
 ## Editing the Registry
 

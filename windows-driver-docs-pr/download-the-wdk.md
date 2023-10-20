@@ -28,7 +28,7 @@ Starting with the Windows 11, version 22H2 release of the WDK and EWDK, the kits
 * Building and testing drivers for Windows 10, Windows Server 2016 and later client and server versions
 * Side by side (SxS) support with previous WDK/EWDK
 
-Multiple WDKs and EWDKs can be installed concurrently on the same computer and even be part of same build system. You can run the Windows 11, version 22H2 WDK on Windows 7 and later.
+Multiple WDKs and EWDKs can be installed concurrently on the same computer and even be part of the same build system. You can run the Windows 11, version 22H2 WDK on Windows 7 and later.
 
 To target Windows 8.1, Windows 8, and Windows 7, install an older WDK and an older version of Visual Studio either on the same machine or on a separate machine. For links to older kits, see [Other WDK downloads](./other-wdk-downloads.md).
 
@@ -48,13 +48,13 @@ The following editions of Visual Studio 2022 support driver development for this
 * [Download Visual Studio Professional 2022](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=17)
 * [Download Visual Studio Enterprise 2022](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=17)
 
-When you install Visual Studio 2022, select the **Desktop development with C++** workload. Don't worry about the SDK at this point; you'll install this in step 2 below.
+When you install Visual Studio 2022, select the **Desktop development with C++** workload. Don't worry about the SDK at this point; you install this in step 2 below.
 
-WDK has Spectre mitigation enabled by default but requires Spectre mitigated libraries to be installed with Visual Studio for each architecture you are developing for. Additionally, developing drivers for Arm/Arm64/Arm64EC require the build tools for these architectures to also be installed with Visual Studio. To locate these items, you will need to know the latest version of MSVC installed on your system.
+WDK has Spectre mitigation enabled by default but requires Spectre mitigated libraries to be installed with Visual Studio for each architecture you're developing for. Additionally, developing drivers for Arm/Arm64/Arm64EC require the build tools for these architectures to also be installed with Visual Studio. To locate these items, you need to know the latest version of MSVC installed on your system.
 
 To find the latest version of MSVC installed on your system, in **Visual Studio Installer** go to **workload page**, on the right pane under **installation details**, expand **Desktop development with C++** and locate the **MSVC v143 - VS 2022 C++ x64/x86 build tools (Latest)**.
 
-With this information (Latest), go to **Individual components** and search for **Latest**. This will return the tool sets for all architectures, including Spectre mitigated libs. Select the driver architecture you are developing for. 
+With this information (Latest), go to **Individual components** and search for **Latest**. This returns the tool sets for all architectures, including Spectre mitigated libs. Select the driver architecture you're developing for. 
 
 For example, searching for Latest returns the following:
 
@@ -102,7 +102,7 @@ The EWDK also requires the .NET Framework version 4.7.2. For more information ab
 
 Once you have downloaded the ISO, use these steps to set up your build environment:
 
-1. Mount the EWDK ISO from a drive volume. Network share paths are not currently supported.
+1. Mount the EWDK ISO from a drive volume. Network share paths aren't currently supported.
 2. Run `LaunchBuildEnv.cmd`.
 3. In the environment created in step 2, type **SetupVSEnv**, and then press **Enter**.
 4. Launch devenv.exe from the same environment, using the full file path. For example: `"C:\Program Files\Microsoft Visual Studio\2022\%Community|Professional|Enterprise%\Common7\IDE\devenv.exe"`
@@ -130,3 +130,4 @@ To download the driver samples, do one of the following:
 ## See also
 
 * [Windows 11 hardware requirements](/windows/whats-new/windows-11-requirements)
+* [Install the WDK using WinGet](./install-the-wdk-using-winget.md)
