@@ -1,7 +1,7 @@
 ---
 title: IddCx versions
 description: Provides version
-ms.date: 08/09/2022
+ms.date: 09/20/2023
 keywords:
 - IddCx versions, WDK
 - IddCx versions, Windows versions
@@ -17,6 +17,7 @@ This page also lists the IddCx version (and **IddCxGetVersion** value) shipped w
 
 | IddCx version | IddCxGetVersion returned | Changes from previous public version |
 | ------------- | ------------------------ | ------------------------------------ |
+| [1.10](iddcx1.10-updates.md) | 0x1A00 | Add HDR10 and SDR Wide Color Gamut (WCG) support |
 | [1.9](iddcx1.9-updates.md) | 0x1900 | Add [**IddCxSetRealtimeGPUPriority**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxsetrealtimegpupriority); disallow UMDF process pooling |
 | [1.8](iddcx1.8-updates.md) | 0x1800 | Add [**IDDCX_ADAPTER_FLAGS_PREFER_PRECISE_PRESENT_REGIONS**](/windows-hardware/drivers/ddi/iddcx/ne-iddcx-iddcx_adapter_flags) |
 | [1.7](iddcx1.7-updates.md) | 0x1700 | Add [**IddCxMonitorQueryHardwareCursor2**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxmonitorqueryhardwarecursor2) and deprecate [**IDDCX_ADAPTER_FLAGS_CAN_USE_MOVE_REGIONS**](/windows-hardware/drivers/ddi/iddcx/ne-iddcx-iddcx_adapter_flags) |
@@ -32,6 +33,7 @@ This page also lists the IddCx version (and **IddCxGetVersion** value) shipped w
 
 | Build number | Release codename | Release name         | IddCx version | IddCxGetVersion returned |
 | ------------ | ---------------- | -------------------- | ------------- | ------------------------ |
+| TBD          | SV3              | Windows 11 22H2 Sept Update | 1.10          | 0x1A00 |
 | 22621        | SV2              | Windows 11 22H2      | 1.9           | 0x1900 |
 | 22000        | SV1              | Windows 11 21H2      | 1.8           | 0x1800 |
 
