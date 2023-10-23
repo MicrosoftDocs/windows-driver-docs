@@ -22,21 +22,21 @@ There are many more command-line options. For a full listing, see [SymChk Comman
 
 ### Obtaining symchk
 
-Symchk, like other debugging tools, ship as part of the debugger. For more information, see [Debugging Tools for Windows](debugger-download-tools.md).
+Symchk, like other debugging tools, ships as part of the debugger. For more information, see [Debugging Tools for Windows](debugger-download-tools.md).
 
-Once the debugging tools are installed, symchk is available in this directory for 64 bit Windows.
+Once the debugging tools are installed, symchk is available in this directory for 64-bit Windows.
 
-C:\\Program Files (x86)\\Windows Kits\\10\\Debuggers\\x64
+**C:\\Program Files (x86)\\Windows Kits\\10\\Debuggers\\x64**
 
 ### Example Usage
 
 The symbol path specified can include any number of local directories, UNC directories, or symbol servers. Local directories and UNC directories are not searched recursively. Only the specified directory and a subdirectory based on the executable's extension are searched. For example, the query
 
 ```console
-symchk thisdriver.sys /s g:\symbols 
+symchk thisdriver.sys /s G:\symbols 
 ```
 
-will search g:\\mysymbols and g:\\mysymbols\\sys.
+will search G:\\mysymbols and G:\\mysymbols\\sys.
 
 
 You can specify a symbol server by using either of the following syntaxes as part of your symbol path:
@@ -60,7 +60,7 @@ SymChk always searches the downstream store before querying the symbol server. T
 To determine whether a symbol file is private or public, use the **/v** parameter so that SymChk displays verbose output. Suppose MyApp.exe and MyApp.pdb are in the folder c:\\sym. Enter this command.
 
 ```console
-symchk /v c:\sym\MyApp.exe /s c:\sym**
+symchk /v C:\sym\MyApp.exe /s C:\sym**
 ```
 
 If MyApp.pdb contains private symbols, the output of SymChk looks like this.
@@ -90,7 +90,7 @@ SYMCHK: PASSED + IGNORED files = 1
 To limit your search so that it finds only public symbol files, use the **s** option with the **/s** parameter (**/ss**). The following command finds a match if MyApp.pdb contains only public symbols. It does not find a match if MyApp.pdb contains private symbols.
 
 ```console
-symchk /v c:\sym\MyApp.exe /ss c:\sym
+symchk /v C:\sym\MyApp.exe /s C:\sym
 ```
 
 For more information, see [Public and Private Symbols](public-and-private-symbols.md).
@@ -100,7 +100,7 @@ For more information, see [Public and Private Symbols](public-and-private-symbol
 Here are some examples. The following command searches for symbols for the program Myapp.exe:
 
 ```console
-e:\debuggers> symchk f:\myapp.exe /s f:\symbols\applications 
+E:\debuggers> symchk F:\myapp.exe /s F:\symbols\applications 
 
 SYMCHK: Myapp.exe           FAILED  - Myapp.pdb is missing
 
@@ -111,7 +111,7 @@ SYMCHK: PASSED + IGNORED files = 0
 You can try again with a different symbol path:
 
 ```console
-e:\debuggers> symchk f:\myapp.exe /s f:\symbols\newdirectory 
+E:\debuggers> symchk F:\myapp.exe /s F:\symbols\newdirectory 
 
 SYMCHK: FAILED files = 0
 SYMCHK: PASSED + IGNORED files = 1
@@ -124,7 +124,7 @@ A program file is ignored if it contains no executable code. Many resource files
 If you prefer to see the file names of all program files, you can use the **/v** option to generate verbose output:
 
 ```console
-e:\debuggers> symchk /v f:\myapp.exe /s f:\symbols\newdirectory 
+E:\debuggers> symchk /v F:\myapp.exe /s F:\symbols\newdirectory 
 
 SYMCHK: MyApp.exe           PASSED
 
@@ -135,7 +135,7 @@ SYMCHK: PASSED + IGNORED files = 1
 The following command searches for a huge number of Windows symbols in a symbol server. There are a great variety of possible error messages:
 
 ```console
-e:\debuggers> symchk /r c:\windows\system32 /s srv*\\manysymbols\windows 
+E:\debuggers> symchk /r C:\windows\system32 /s srv*\\manysymbols\windows 
 
 SYMCHK: msisam11.dll         FAILED  - MSISAM11.pdb is missing
 SYMCHK: msuni11.dll          FAILED  - msuni11link.pdb is missing
