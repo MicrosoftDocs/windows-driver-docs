@@ -1,55 +1,61 @@
 ---
-title: Mobile operator configuration portal
-description: This article introduces the mobile operator configuration portal to create a COSA database submission.
-author: mhopking-msft
-ms.author: mhopkins
-ms.date: 09/21/2023
+title: Submitting a desktop COSA database update
+description: Submit APN entries to Microsoft by following the steps in this topic and using the Mobile Operator Portal.
+ms.date: 10/24/2023
 ---
 
-# Mobile operator configuration portal
+# Submitting a desktop COSA database update
 
-This article introduces the mobile operator configuration portal to create a COSA database submission.
+>[!IMPORTANT]
+> The following steps to submit an APN update apply to both desktop COSA, which is used for Windows 10, version 1703 and later, and apndatabase.xml, which is used for Windows 8, Windows 8.1, and versions of Windows 10 before 1703. Microsoft will convert apndatabase.xml submissions to COSA if you are targeting Windows 10, version 1703 or later.
 
-## Setting up your account
+Now that you’ve tested the APN entries, it’s now time to submit them to Microsoft by following the steps in this topic.
 
-1. Go to the [mobile operator portal](https://aka.ms/moconfig).
-1. Select **Sign up now**.
-1. Enter your email in the first field and select **Send verification code**.
-1. Check your email, enter the verification code and select **Verify**.
-1. Enter a temporary password and select **Create** to send your request official to the mobile operator portal team.
-1. Send email to your Microsoft representative to get your account approved for portal access.
-1. After getting confirmation from your Microsoft representative, go thru and select **Sign Up** again, verify your email, then put a new password and select **Create**. This time around, this will be your permanent password for logging in.
+## The COSA database
 
-## Introduction to COSA
+COSA is made up of the following:
 
-COSA is made up of:
+- 1 or more targets
+- 1 SIM setting
+- 1 or more connections or APN settings
 
-- One or more targets
-- One SIM setting
-- One or more connections or Access Point Name (APN) settings
+Each COSA entry is also called a COSA profile.
 
-Each COSA entry is also called a COSA profile. For a given COSA profile, you can specify multiple targets (different MCC, MNC pair; different IMSI or ICCID range); and a list of APNs to try to connect to (5G APNs, Internet APN, IMS APN, and so on).
+For a given COSA profile, you can specify multiple targets (different MCC, MNC pair; different IMSI or ICCID range), and a list of APNs to try to connect to (5G APNs, Internet APN, IMS APN, an so on).
 
-However, for logo and branding, you can only specify one per COSA entry. If the desire is to create different logo and branding, you need to provide a different target for each COSA profile.
+For logo and branding, you can only specify one per COSA entry. If you need to create different logo and branding, provide a different target for each COSA profile.
 
 ## Adding a new target
 
 For example, the mobile operator has a new MCC, MNC pair that they want to add to the COSA profile.
 
-1. Open the correct profile you want to modify, if you have more than 1 profile, ensure you are modifying the right profile.
+1. Open the correct profile you want to modify, if you have more than one profile, ensure you are modifying the right profile.
+
+    :::image type="content" source="images/mobile-operator-portal-select-profile.png" alt-text="Screenshot of the Mobile Operator Portal select profile screen.":::
+
     - (Optional) Check your profile APN values
         1. Open **Connections > Cellular > Connection**
         1. Make sure it's the right APN. You can have multiple connections if you have more than one APN value for this COSA profile.
 
-    - (Optional) Check that your MCC, MNC pair does not exist in the currect target list
+        :::image type="content" source="images/mobile-operator-portal-check-apn-values.png" alt-text="Screenshot of the Mobile Operator Portal connection screen.":::
+
+    - (Optional) Check that your MCC, MNC pair does not exist in the current target list
         1. Open **Targets**
         1. Check each target to ensure there's no duplicate of what you want to create. If you see more than one target, check each of them one by one.
 
+        :::image type="content" source="images/mobile-operator-portal-target.png" alt-text="Screenshot of the Mobile Operator Portal targets screen.":::
+
 1. Select **+** to add a new target to your profile, and go to the new target added to your list. This is usually the last one in the **Targets** list. If you do not see any new targets, make sure you have clicked on the drop down beside the **Targets**.
+
+    :::image type="content" source="images/mobile-operator-portal-add-new-target.png" alt-text="Screenshot of the Mobile Operator Portal add new target form.":::
 
 1. Select **Save draft**, add a note, then select **Save**.
 
-## Modify and existing target or targets
+    :::image type="content" source="images/mobile-operator-portal-save-draft.png" alt-text="Screenshot of the Mobile Operator Portal save draft dialog box.":::
+
+## Modify an existing target
+
+This section demonstrates how to change an MCC, MNC value pair, add or change SPN, PNN, GID1, ICCID, or IMSI range.
 
 1. Open the correct profile you want to modify. If you have more than one profile, make sure you are modifying the correct profile.
 
@@ -71,7 +77,7 @@ For example, the mobile operator has a new MCC, MNC pair that they want to add t
     - (Optional) Check your profiles' APN values.
     - (Optional) Check that your MCC, MNC pair does not exist in the current target list.
 
-1. Navigate to **Cellular** -> **PerSimSettings** -> **SettingsForSim**, then either:
+1. Navigate to **Cellular > PerSimSettings > SettingsForSim**, then either:
 
     - Add or remove mobile operator logo
     - Define **AccountExperienceURL** or add a **AppID** to automatically install applications
@@ -181,22 +187,15 @@ For example, the mobile operator has a new MCC, MNC pair that they want to add t
 1. Look for the Connection you want to modify, then modify any of the values there.
 1. Select **Save draft**, add a note, then select **Save**.
 
-## Creating a test package
+## Update APN, other connection settings
 
-Test packages are generated from the server. You must save all changes before you download a test package. If the settings were not saved as draft, your test package will not have your latest settings.
+1. Open the correct profile you want to modify. If you have more than one profile, make sure you are modifying the correct profile.
 
-1. Choose the right Windows version.
+    - (Optional) Check your profiles' APN values.
+    - (Optional) Check that your MCC, MNC pair does not exist in the current target list.
 
-    - Run **winver** on the PC you want to test to check your Windows version.
-
-1. Choose the right test package to download. 
-
-    - In my case, since I have 21H1, I would choose Latest Version
-
-1. Follow the steps in [Test your submission for desktop COSA](testing-your-desktop-cosa-database-submission.md#test-your-submission-for-desktop-cosa) to test your COSA package file.
-
-    > [!NOTE]
-    > Open an administrator command prompt. If you are running in S-mode, you will need to switch out of S-mode first.
+1. Look for the connection you want to modify, then modify any of the values there.
+1. Select **Save draft**, add a note, then select **Save**.
 
 ## Related content
 
@@ -206,4 +205,3 @@ Test packages are generated from the server. You must save all changes before yo
 - [Mobile Operator Portal](https://aka.ms/moconfig)
 - [Planning your desktop COSA database submission](planning-your-desktop-cosa-database-submission.md)
 - [Testing your desktop COSA database submission](testing-your-desktop-cosa-database-submission.md)
-- [Submitting a desktop COSA database update](submitting-a-desktop-cosa-database-update.md)

@@ -8,20 +8,6 @@ ms.date: 10/18/2023
 
 This topic contains information on adding a new APN to the baseline COSA database that ships with Windows desktop devices, or to update an existing APN.
 
-## The COSA database
-
-COSA is made up of the following:
-
-- 1 or more targets
-- 1 SIM setting
-- 1 or more connections or APN settings
-
-Each COSA entry is also called a COSA profile.
-
-For a given COSA profile, you can specify multiple targets (different MCC, MNC pair; different IMSI or ICCID range), and a list of APNs to try to connect to (5G APNs, Internet APN, IMS APN, an so on).
-
-For logo and branding, you can only specify one per COSA entry. If you need to create different logo and branding, provide a different target for each COSA profile.
-
 ## The COSA update process
 
 To connect to a mobile broadband network, the user is typically required to provide the following information:
@@ -111,9 +97,11 @@ If it does not exist in the appropriate connectivity database, a new entry is ad
 
 Once your spreadsheet is complete, you can test the APNs you’ve entered. For the next steps in testing your APN update, see [Testing your desktop COSA database submission](testing-your-desktop-cosa-apn-database-submission.md).
 
-## Related topics
+## Related content
 
-- [Submitting the desktop COSA database update](submitting-the-desktop-cosa-database-update.md)
-- [Testing your desktop COSA database submission](testing-your-desktop-cosa-apn-database-submission.md)
+- [COSA overview](cosa-overview.md)
+- [COSA database](cosa-database.md)
 - [Desktop COSA database settings](desktop-cosa-database-settings.md)
 - [Mobile Operator Portal](https://aka.ms/moconfig)
+- [Testing your desktop COSA database submission](testing-your-desktop-cosa-database-submission.md)
+- [Submitting a desktop COSA database update](submitting-a-desktop-cosa-database-update.md)

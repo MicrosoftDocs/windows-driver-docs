@@ -3344,17 +3344,17 @@
         },
         {
             "source_path": "windows-driver-docs-pr/mobilebroadband/submitting-the-apn-database-update.md",
-            "redirect_URL": "/windows-hardware/drivers/mobilebroadband/submitting-the-desktop-cosa-database-update",
+            "redirect_URL": "/windows-hardware/drivers/mobilebroadband/submitting-a-desktop-cosa-database-update",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/mobilebroadband/submitting-the-cosa-apn-database-update.md",
-            "redirect_URL": "/windows-hardware/drivers/mobilebroadband/submitting-the-desktop-cosa-database-update",
+            "redirect_URL": "/windows-hardware/drivers/mobilebroadband/submitting-a-desktop-cosa-database-update",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/mobilebroadband/submitting-the-desktop-cosa-apn-database-update.md",
-            "redirect_URL": "/windows-hardware/drivers/mobilebroadband/submitting-the-desktop-cosa-database-update",
+            "redirect_URL": "/windows-hardware/drivers/mobilebroadband/submitting-a-desktop-cosa-database-update",
             "redirect_document_id": false
         },
         {
