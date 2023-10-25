@@ -88,91 +88,91 @@ You can use the commands in the following forms.
 <td align="left"><p>Execution stops, and the debugger breaks into the target.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong><a href="-restart--restart-target-application-.md" data-raw-source="[.restart (Restart Target Application)](-restart--restart-target-application-.md)">.restart (Restart Target Application)</a></strong></p></td>
+<td align="left"><p><strong><a href="../debuggercmds/-restart--restart-target-application-.md" data-raw-source="[.restart (Restart Target Application)](../debuggercmds/-restart--restart-target-application-.md)">.restart (Restart Target Application)</a></strong></p></td>
 <td align="left"><img src="images/tbrestart.png" alt="Screen shot of the Restart button" /></td>
 <td align="left"><p>Debug | Restart</p></td>
 <td align="left"><p>CTRL + SHIFT + F5</p></td>
 <td align="left"><p>(User mode only) Restarts the target application.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong><a href="g--go-.md" data-raw-source="[g (Go)](g--go-.md)">g (Go)</a></strong></p></td>
+<td align="left"><p><strong><a href="../debuggercmds/g--go-.md" data-raw-source="[g (Go)](../debuggercmds/g--go-.md)">g (Go)</a></strong></p></td>
 <td align="left"><img src="images/tbgo.png" alt="Screen shot of the Go button" /></td>
 <td align="left"><p>Debug | Go</p></td>
 <td align="left"><p>F5</p></td>
 <td align="left"><p>Target executes freely.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong><a href="gc--go-from-conditional-breakpoint-.md" data-raw-source="[gc (Go from Conditional Breakpoint)](gc--go-from-conditional-breakpoint-.md)">gc (Go from Conditional Breakpoint)</a></strong></p></td>
+<td align="left"><p><strong><a href="../debuggercmds/gc--go-from-conditional-breakpoint-.md" data-raw-source="[gc (Go from Conditional Breakpoint)](../debuggercmds/gc--go-from-conditional-breakpoint-.md)">gc (Go from Conditional Breakpoint)</a></strong></p></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>Resumes execution after a <a href="setting-a-conditional-breakpoint.md" data-raw-source="[conditional breakpoint](setting-a-conditional-breakpoint.md)">conditional breakpoint</a>.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong><a href="gh--go-with-exception-handled-.md" data-raw-source="[gh (Go with Exception Handled)](gh--go-with-exception-handled-.md)">gh (Go with Exception Handled)</a></strong></p></td>
+<td align="left"><p><strong><a href="../debuggercmds/gh--go-with-exception-handled-.md" data-raw-source="[gh (Go with Exception Handled)](../debuggercmds/gh--go-with-exception-handled-.md)">gh (Go with Exception Handled)</a></strong></p></td>
 <td align="left"></td>
 <td align="left"><p>Debug | Go Handled Exception</p></td>
 <td align="left"></td>
 <td align="left"><p>Same as <strong>g (Go)</strong>, except that the current exception is treated as handled.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong><a href="gn--gn--go-with-exception-not-handled-.md" data-raw-source="[gn (Go with Exception Not Handled)](gn--gn--go-with-exception-not-handled-.md)">gn (Go with Exception Not Handled)</a></strong></p></td>
+<td align="left"><p><strong><a href="../debuggercmds/gn--gn--go-with-exception-not-handled-.md" data-raw-source="[gn (Go with Exception Not Handled)](../debuggercmds/gn--gn--go-with-exception-not-handled-.md)">gn (Go with Exception Not Handled)</a></strong></p></td>
 <td align="left"></td>
 <td align="left"><p>Debug | Go Unhandled Exception</p></td>
 <td align="left"></td>
 <td align="left"><p>Same as <strong>g (Go)</strong>, except that the current exception is treated as unhandled.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong><a href="gu--go-up-.md" data-raw-source="[gu (Go Up)](gu--go-up-.md)">gu (Go Up)</a></strong></p></td>
+<td align="left"><p><strong><a href="../debuggercmds/gu--go-up-.md" data-raw-source="[gu (Go Up)](../debuggercmds/gu--go-up-.md)">gu (Go Up)</a></strong></p></td>
 <td align="left"><img src="images/tbout.png" alt="Screen shot of the Step Out button" /></td>
 <td align="left"><p>Debug | Step Out</p></td>
 <td align="left"><p>SHIFT + F11</p></td>
 <td align="left"><p>Target executes until the current function is complete.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong><a href="p--step-.md" data-raw-source="[p (Step)](p--step-.md)">p (Step)</a></strong></p></td>
+<td align="left"><p><strong><a href="../debuggercmds/p--step-.md" data-raw-source="[p (Step)](../debuggercmds/p--step-.md)">p (Step)</a></strong></p></td>
 <td align="left"><img src="images/tbover.png" alt="Screen shot of the Step Over button" /></td>
 <td align="left"><p>Debug | Step Over</p></td>
 <td align="left"><p>F10</p></td>
 <td align="left"><p>Target executes one instruction. If this instruction is a function call, that function is executed as a single step.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong><a href="pa--step-to-address-.md" data-raw-source="[pa (Step to Address)](pa--step-to-address-.md)">pa (Step to Address)</a></strong></p></td>
+<td align="left"><p><strong><a href="../debuggercmds/pa--step-to-address-.md" data-raw-source="[pa (Step to Address)](../debuggercmds/pa--step-to-address-.md)">pa (Step to Address)</a></strong></p></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>Target executes until it reaches the specified address. All steps in this function are displayed (but steps in called functions are not).</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong><a href="pc--step-to-next-call-.md" data-raw-source="[pc (Step to Next Call)](pc--step-to-next-call-.md)">pc (Step to Next Call)</a></strong></p></td>
+<td align="left"><p><strong><a href="../debuggercmds/pc--step-to-next-call-.md" data-raw-source="[pc (Step to Next Call)](../debuggercmds/pc--step-to-next-call-.md)">pc (Step to Next Call)</a></strong></p></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>Target executes until the next <strong>call</strong> instruction. If the current instruction is a <strong>call</strong> instruction, this call is executed completely and execution continues until the next <strong>call</strong>.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong><a href="pct--step-to-next-call-or-return-.md" data-raw-source="[pct (Step to Next Call or Return)](pct--step-to-next-call-or-return-.md)">pct (Step to Next Call or Return)</a></strong></p></td>
+<td align="left"><p><strong><a href="../debuggercmds/pct--step-to-next-call-or-return-.md" data-raw-source="[pct (Step to Next Call or Return)](../debuggercmds/pct--step-to-next-call-or-return-.md)">pct (Step to Next Call or Return)</a></strong></p></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>Target executes until it reaches a <strong>call</strong> instruction or a <strong>return</strong> instruction.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong><a href="ph--step-to-next-branching-instruction-.md" data-raw-source="[ph (Step to Next Branching Instruction)](ph--step-to-next-branching-instruction-.md)">ph (Step to Next Branching Instruction)</a></strong></p></td>
+<td align="left"><p><strong><a href="../debuggercmds/ph--step-to-next-branching-instruction-.md" data-raw-source="[ph (Step to Next Branching Instruction)](../debuggercmds/ph--step-to-next-branching-instruction-.md)">ph (Step to Next Branching Instruction)</a></strong></p></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>Target executes until it reaches any kind of branching instruction, including conditional or unconditional branches, calls, returns, and system calls.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong><a href="pt--step-to-next-return-.md" data-raw-source="[pt (Step to Next Return)](pt--step-to-next-return-.md)">pt (Step to Next Return)</a></strong></p></td>
+<td align="left"><p><strong><a href="../debuggercmds/pt--step-to-next-return-.md" data-raw-source="[pt (Step to Next Return)](../debuggercmds/pt--step-to-next-return-.md)">pt (Step to Next Return)</a></strong></p></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>Target executes until it reaches a <strong>return</strong> instruction.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong><a href="t--trace-.md" data-raw-source="[t (Trace)](t--trace-.md)">t (Trace)</a></strong></p></td>
+<td align="left"><p><strong><a href="../debuggercmds/t--trace-.md" data-raw-source="[t (Trace)](../debuggercmds/t--trace-.md)">t (Trace)</a></strong></p></td>
 <td align="left"><img src="images/tbinto.png" alt="Screen shot of the Step Into button" /></td>
 <td align="left"><p>Debug | Step Into</p></td>
 <td align="left"><p>F11</p>
@@ -180,49 +180,49 @@ You can use the commands in the following forms.
 <td align="left"><p>Target executes one instruction. If this instruction is a function call, debugger traces into that call.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong><a href="ta--trace-to-address-.md" data-raw-source="[ta (Trace to Address)](ta--trace-to-address-.md)">ta (Trace to Address)</a></strong></p></td>
+<td align="left"><p><strong><a href="../debuggercmds/ta--trace-to-address-.md" data-raw-source="[ta (Trace to Address)](../debuggercmds/ta--trace-to-address-.md)">ta (Trace to Address)</a></strong></p></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>Target executes until it reaches the specified address. All steps in this function and called functions are displayed.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong><a href="tb--trace-to-next-branch-.md" data-raw-source="[tb (Trace to Next Branch)](tb--trace-to-next-branch-.md)">tb (Trace to Next Branch)</a></strong></p></td>
+<td align="left"><p><strong><a href="../debuggercmds/tb--trace-to-next-branch-.md" data-raw-source="[tb (Trace to Next Branch)](../debuggercmds/tb--trace-to-next-branch-.md)">tb (Trace to Next Branch)</a></strong></p></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>(All modes, except kernel mode, only on x86-based systems) Target executes until it reaches the next branch instruction.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong><a href="tc--trace-to-next-call-.md" data-raw-source="[tc (Trace to Next Call)](tc--trace-to-next-call-.md)">tc (Trace to Next Call)</a></strong></p></td>
+<td align="left"><p><strong><a href="../debuggercmds/tc--trace-to-next-call-.md" data-raw-source="[tc (Trace to Next Call)](../debuggercmds/tc--trace-to-next-call-.md)">tc (Trace to Next Call)</a></strong></p></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>Target executes until the next <strong>call</strong> instruction. If the current instruction is a <strong>call</strong> instruction, the instruction is traced into until a new <strong>call</strong> is reached.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong><a href="tct--trace-to-next-call-or-return-.md" data-raw-source="[tct (Trace to Next Call or Return)](tct--trace-to-next-call-or-return-.md)">tct (Trace to Next Call or Return)</a></strong></p></td>
+<td align="left"><p><strong><a href="../debuggercmds/tct--trace-to-next-call-or-return-.md" data-raw-source="[tct (Trace to Next Call or Return)](../debuggercmds/tct--trace-to-next-call-or-return-.md)">tct (Trace to Next Call or Return)</a></strong></p></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>Target executes until it reaches a <strong>call</strong> instruction or <strong>return</strong> instruction. If the current instruction is a <strong>call</strong> instruction or <strong>return</strong> instruction, the instruction is traced into until a new <strong>call</strong> or <strong>return</strong> is reached.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong><a href="th--trace-to-next-branching-instruction-.md" data-raw-source="[th (Trace to Next Branching Instruction)](th--trace-to-next-branching-instruction-.md)">th (Trace to Next Branching Instruction)</a></strong></p></td>
+<td align="left"><p><strong><a href="../debuggercmds/th--trace-to-next-branching-instruction-.md" data-raw-source="[th (Trace to Next Branching Instruction)](../debuggercmds/th--trace-to-next-branching-instruction-.md)">th (Trace to Next Branching Instruction)</a></strong></p></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>Target executes until it reaches any kind of branching instruction, including conditional or unconditional branches, calls, returns, and system calls. If the current instruction is a branching instruction, the instruction is traced into until a new branching instruction is reached.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong><a href="tt--trace-to-next-return-.md" data-raw-source="[tt (Trace to Next Return)](tt--trace-to-next-return-.md)">tt (Trace to Next Return)</a></strong></p></td>
+<td align="left"><p><strong><a href="../debuggercmds/tt--trace-to-next-return-.md" data-raw-source="[tt (Trace to Next Return)](../debuggercmds/tt--trace-to-next-return-.md)">tt (Trace to Next Return)</a></strong></p></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>Target executes until it reaches a <strong>return</strong> instruction. If the current instruction is a <strong>return</strong> instruction, the instruction is traced into until a new <strong>return</strong> is reached.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong><a href="wt--trace-and-watch-data-.md" data-raw-source="[wt (Trace and Watch Data)](wt--trace-and-watch-data-.md)">wt (Trace and Watch Data)</a></strong></p></td>
+<td align="left"><p><strong><a href="../debuggercmds/wt--trace-and-watch-data-.md" data-raw-source="[wt (Trace and Watch Data)](../debuggercmds/wt--trace-and-watch-data-.md)">wt (Trace and Watch Data)</a></strong></p></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"></td>

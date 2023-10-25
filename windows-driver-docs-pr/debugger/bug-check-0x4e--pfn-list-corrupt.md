@@ -97,10 +97,10 @@ The PFN\_LIST\_CORRUPT bug check has a value of 0x0000004E. This indicates that 
 
 This error is typically caused by a driver passing a bad memory descriptor list. For example, the driver might have called **MmUnlockPages** twice with the same list.
 
-If a kernel debugger is available, examine the stack trace: the [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause, then enter one of the [**k (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) commands to view the call stack.
+If a kernel debugger is available, examine the stack trace: the [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause, then enter one of the [**k (Display Stack Backtrace)**](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) commands to view the call stack.
 
 ## See Also
 
-[!analyze](-analyze.md)
+[!analyze](../debuggercmds/-analyze.md)
 
 [Bug Check Code Reference](bug-check-code-reference2.md)

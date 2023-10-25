@@ -318,10 +318,10 @@ Now that you've installed your KmdfHelloWorld driver on the target computer, you
 
 1. At this point, you can experiment with the debugger by entering commands at the **kd&gt;** prompt. For example, you could try these commands:
 
-    - [lm](../debugger/lm--list-loaded-modules-.md)
-    - [.sympath](../debugger/-sympath--set-symbol-path-.md)
-    - [.reload](../debugger/-reload--reload-module-.md)
-    - [x KmdfHelloWorld!\*](../debugger/x--examine-symbols-.md)
+    - [lm](../debuggercmds/lm--list-loaded-modules-.md)
+    - [.sympath](../debuggercmds/-sympath--set-symbol-path-.md)
+    - [.reload](../debuggercmds/-reload--reload-module-.md)
+    - [x KmdfHelloWorld!\*](../debuggercmds/x--examine-symbols-.md)
 
 1. To let the target computer run again, choose **Go** from the **Debug** menu or press "g," then press "enter."
 1. To stop the debugging session, choose **Detach Debugger** from the **Debug** menu.

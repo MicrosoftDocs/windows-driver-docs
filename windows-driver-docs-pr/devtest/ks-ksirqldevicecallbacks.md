@@ -21,7 +21,7 @@ The KsIrqlDeviceCallbacks rule specifies that a kernel-streaming (KS) miniport d
 
 When Driver Verifier detects a violation of this rule, it triggers [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md), with an *arg1* value of 0x00081006. The *arg3* (RuleState) and *arg4* (SubState) of the bug check provide pointers to additional information about the rule violation.
 
-Use the [**!ruleinfo**](../debugger/-ruleinfo.md) debugger extension to find out what the IRQL values were at function entry and exit.
+Use the [**!ruleinfo**](../debuggercmds/-ruleinfo.md) debugger extension to find out what the IRQL values were at function entry and exit.
 
 Use the command:
 
@@ -29,7 +29,7 @@ Use the command:
 
 In the rule state data, the *OldIrql* is the IRQL when the callback is entered. The *NewIrql* is the IRQL when the callback function is exited.
 
-Don't use [**!irql**](../debugger/-irql.md) to determine the current IRQL because Driver Verifier might have raised IRQL before the bug check. Instead, use **!verifier 0x008** to view the IRQL logs.
+Don't use [**!irql**](../debuggercmds/-irql.md) to determine the current IRQL because Driver Verifier might have raised IRQL before the bug check. Instead, use **!verifier 0x008** to view the IRQL logs.
 
 **Driver model: KS**
 

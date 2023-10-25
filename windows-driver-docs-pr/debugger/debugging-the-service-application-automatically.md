@@ -35,7 +35,7 @@ Then use the following procedure:
 
 5.  When the debugger starts, the service pauses at the initial process breakpoint, the exception, or the **DebugBreak** command. This enables you to examine the current state of the service application, set breakpoints, and make any other desired configuration choices.
 
-6.  Use [**g (Go)**](g--go-.md) or another execution command to resume the execution of the service application.
+6.  Use [**g (Go)**](../debuggercmds/g--go-.md) or another execution command to resume the execution of the service application.
 
 ## <span id="related_topics"></span>See also
 

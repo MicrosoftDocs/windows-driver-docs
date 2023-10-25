@@ -18,7 +18,7 @@ Each of these bug checks indicates that a paging error has occurred. There are t
 
 -   Controller errors
 
-To determine the precise cause of the failure, begin by using the [**!scsikd.classext**](-scsikd-classext.md) extension, which displays information about recently failed requests, including the SRB status, SCSI status, and sense data of the request.
+To determine the precise cause of the failure, begin by using the [**!scsikd.classext**](../debuggercmds/-scsikd-classext.md) extension, which displays information about recently failed requests, including the SRB status, SCSI status, and sense data of the request.
 
 ```dbgcmd
 kd> !scsikd.classext 816e96b0

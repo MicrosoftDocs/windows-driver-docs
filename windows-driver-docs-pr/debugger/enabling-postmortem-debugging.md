@@ -21,7 +21,7 @@ Based on configuration values and which debuggers are active, Windows handles us
 
 1.  If a user-mode debugger is currently attached to the faulting process, all errors will cause the target to break into this debugger.
 
-    As long as the user-mode debugger is attached, no other error-handling methods will be used -- even if the [**gn (Go With Exception Not Handled)**](gn--gn--go-with-exception-not-handled-.md) command is used.
+    As long as the user-mode debugger is attached, no other error-handling methods will be used -- even if the [**gn (Go With Exception Not Handled)**](../debuggercmds/gn--gn--go-with-exception-not-handled-.md) command is used.
 
 2.  If no user-mode debugger is attached and the executing code has its own exception handling routines (for example, **try - except**), this exception handling routine will attempt to deal with the error.
 
@@ -29,7 +29,7 @@ Based on configuration values and which debuggers are active, Windows handles us
 
     Kernel debugging connections must be opened during Windows' boot process. If you wish to prevent a user-mode interrupt from breaking into the kernel debugger, you can use the KDbgCtrl utility with the **-du** parameter. For details on how to configure kernel-debugging connections and how to use KDbgCtrl, see [Getting Set Up for Debugging](getting-set-up-for-debugging.md).
 
-    In the kernel debugger, you can use [**gh (Go With Exception Handled)**](gh--go-with-exception-handled-.md) to disregard the error and continue running the target. You can use [**gn (Go With Exception Not Handled)**](gn--gn--go-with-exception-not-handled-.md) to bypass the kernel debugger and go on to step 4.
+    In the kernel debugger, you can use [**gh (Go With Exception Handled)**](../debuggercmds/gh--go-with-exception-handled-.md) to disregard the error and continue running the target. You can use [**gn (Go With Exception Not Handled)**](../debuggercmds/gn--gn--go-with-exception-not-handled-.md) to bypass the kernel debugger and go on to step 4.
 
 4.  If the conditions in steps 1, 2, and 3 do not apply, Windows will activate a debugging tool configured in the AeDebug registry values. Any program can be selected in advance as the tool to use in this situation. The chosen program is referred to as the *postmortem debugger*.
 
@@ -157,7 +157,7 @@ The -p and -e parameters pass the Process ID and Event, as discussed previously.
 The **-g** passes the g (Go) command to WinDbg and continues execution from the current instruction.
 
 **Note**  
-There is a significant issue passing the g (Go) command. The issue with this approach, is that exceptions do not always repeat, typically, because of a transient condition that no longer exists when the code is restarted. For more information about this issue, see [**.jdinfo (Use JIT\_DEBUG\_INFO)**](-jdinfo--use-jit-debug-info-.md).
+There is a significant issue passing the g (Go) command. The issue with this approach, is that exceptions do not always repeat, typically, because of a transient condition that no longer exists when the code is restarted. For more information about this issue, see [**.jdinfo (Use JIT\_DEBUG\_INFO)**](../debuggercmds/-jdinfo--use-jit-debug-info-.md).
 
 To avoid this issue, use .jdinfo or .dump /j. This approach allows the debugger to be in the context of the code failure of interest. For more information, see [Just In Time (JIT) Debugging](#jit) later in this topic.
 
@@ -217,7 +217,7 @@ If Visual Studio is updated or re-installed, this entry will be re-written, over
 
 The Windows Sysinternals ProcDump utility can also be used for postmortem dump capture. For more information about using and downloading ProcDump, see [ProcDump](/sysinternals/downloads/procdump).
 
-Like the [**.dump**](-dump--create-dump-file-.md) WinDbg command, ProcDump is able to be capture a dump of the crash non-interactively. The capture may occur in any Windows system session.
+Like the [**.dump**](../debuggercmds/-dump--create-dump-file-.md) WinDbg command, ProcDump is able to be capture a dump of the crash non-interactively. The capture may occur in any Windows system session.
 
 ProcDump exits when the dump file capture completes, WER then reports the failure and the faulting process is terminated.
 
@@ -268,7 +268,7 @@ For additional information on ProcDump, see [ProcDump](/sysinternals/downloads/p
 
 **Setting Context to the Faulting Application**
 
-As discussed previously, it is very desirable to set the context to the exception that caused the crash using the JIT\_DEBUG\_INFO parameter. For more information about this, see [**.jdinfo (Use JIT\_DEBUG\_INFO)**](-jdinfo--use-jit-debug-info-.md).
+As discussed previously, it is very desirable to set the context to the exception that caused the crash using the JIT\_DEBUG\_INFO parameter. For more information about this, see [**.jdinfo (Use JIT\_DEBUG\_INFO)**](../debuggercmds/-jdinfo--use-jit-debug-info-.md).
 
 **Debugging Tools for Windows**
 
@@ -279,7 +279,7 @@ Debugger = "<Path>\windbg.exe -p %ld -e %ld -c ".jdinfo 0x%p"
 Auto = 1
 ```
 
-The %p parameter is the address of a JIT\_DEBUG\_INFO structure in the target process’s address space. The %p parameter is pre-appended with 0x so that it is interpreted as a hex value. For more information, see [**.jdinfo (Use JIT\_DEBUG\_INFO)**](-jdinfo--use-jit-debug-info-.md).
+The %p parameter is the address of a JIT\_DEBUG\_INFO structure in the target process’s address space. The %p parameter is pre-appended with 0x so that it is interpreted as a hex value. For more information, see [**.jdinfo (Use JIT\_DEBUG\_INFO)**](../debuggercmds/-jdinfo--use-jit-debug-info-.md).
 
 To debug a mix of 32 and 64 bit apps, configure both the 32 and 64 bit registry keys (described above), setting the proper path to the location of the 64-bit and 32-bit WinDbg.exe.
 
@@ -291,9 +291,9 @@ To capture a dump file whenever a failure occurs that includes the JIT\_DEBUG\_I
 <Path>\windbg.exe -p %ld -e %ld -c ".dump /j %p /u <DumpPath>\AeDebug.dmp; qd"
 ```
 
-Use the /u option to generate a unique filename to allow multiple dump files to be automatically created. For more information about the options see, [**.dump (Create Dump File)**](-dump--create-dump-file-.md).
+Use the /u option to generate a unique filename to allow multiple dump files to be automatically created. For more information about the options see, [**.dump (Create Dump File)**](../debuggercmds/-dump--create-dump-file-.md).
 
-The created dump will have the JITDEBUG\_INFO data stored as the default exception context. Instead of using .jdinfo to view the exception information and set the context, use .exr -1 to display the exception record and .ecxr to set the context. For more information see [**.exr (Display Exception Record)**](-exr--display-exception-record-.md) and [**.ecxr (Display Exception Context Record)**](-ecxr--display-exception-context-record-.md).
+The created dump will have the JITDEBUG\_INFO data stored as the default exception context. Instead of using .jdinfo to view the exception information and set the context, use .exr -1 to display the exception record and .ecxr to set the context. For more information see [**.exr (Display Exception Record)**](../debuggercmds/-exr--display-exception-record-.md) and [**.ecxr (Display Exception Context Record)**](../debuggercmds/-ecxr--display-exception-context-record-.md).
 
 **Windows Error Reporting - q / qd**
 

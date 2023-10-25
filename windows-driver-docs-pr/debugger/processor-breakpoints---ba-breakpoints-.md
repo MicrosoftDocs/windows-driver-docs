@@ -30,7 +30,7 @@ Similarly, if an **e** (execute) breakpoint is set on the address 0x00401003, an
 
 The processor distinguishes between breakpoints set by a user-mode debugger and breakpoints set by a kernel-mode debugger. A user-mode processor breakpoint does not affect any kernel-mode processes. A kernel-mode processor breakpoint might or might not affect a user-mode process, depending on whether the user-mode code is using the debug register state and whether there is a user-mode debugger that is attached.
 
-To apply the current process' existing data breakpoints to a different register context, use the [**.apply\_dbp (Apply Data Breakpoint to Context)**](-apply-dbp--apply-data-breakpoint-to-context-.md) command.
+To apply the current process' existing data breakpoints to a different register context, use the [**.apply\_dbp (Apply Data Breakpoint to Context)**](../debuggercmds/-apply-dbp--apply-data-breakpoint-to-context-.md) command.
 
 On a multiprocessor computer, each processor breakpoint applies to all processors. For example, if the current processor is 3 and you use the command `ba e1 MyAddress` to put a breakpoint at **MyAddress**, any processor -- not only processor 3 -- that executes at that address triggers the breakpoint. This holds for software breakpoints as well.
 
@@ -42,13 +42,13 @@ Software breakpoints, unlike processor breakpoints, are controlled by the debugg
 
 The **i** (i/o) option is available only during kernel-mode debugging.
 
-Not all data sizes can be used with all processor breakpoint types. The permitted sizes depend on the processor of the target computer. For details, see [**ba (Break on Access)**](ba--break-on-access-.md).
+Not all data sizes can be used with all processor breakpoint types. The permitted sizes depend on the processor of the target computer. For details, see [**ba (Break on Access)**](../debuggercmds/ba--break-on-access-.md).
 
 ## Limitations of Software Breakpoints and Processor Breakpoints
 
-It is possible to specify a data address rather than a program address when using the [**bp**](bp--bu--bm--set-breakpoint-.md) or bm /a commands. However, even if a data location is specified, these commands create software breakpoints, not processor breakpoints. When the debugger places a software breakpoint at some location, it temporarily replaces the contents of that memory location with a break instruction. This does not corrupt the executable image, because the debugger remembers the original contents of this location, and when the target process attempts to execute this code the debugger can respond appropriately. But when a software breakpoint is set in a data location, the resulting overwrite can lead to data corruption. Therefore, setting a software breakpoint on a data location is safe only if you are certain that this location will be used only as executable code.
+It is possible to specify a data address rather than a program address when using the [**bp**](../debuggercmds/bp--bu--bm--set-breakpoint-.md) or bm /a commands. However, even if a data location is specified, these commands create software breakpoints, not processor breakpoints. When the debugger places a software breakpoint at some location, it temporarily replaces the contents of that memory location with a break instruction. This does not corrupt the executable image, because the debugger remembers the original contents of this location, and when the target process attempts to execute this code the debugger can respond appropriately. But when a software breakpoint is set in a data location, the resulting overwrite can lead to data corruption. Therefore, setting a software breakpoint on a data location is safe only if you are certain that this location will be used only as executable code.
 
-The **bp**, **bu**, and **bm** commands set software breakpoints by replacing the processor instruction with a break instruction. Therefore these cannot be used in read-only code or any other code that cannot be overwritten. To set a breakpoint in such code, you must use [**ba (Break on Access)**](ba--break-on-access-.md) with the **e** (execute) option.
+The **bp**, **bu**, and **bm** commands set software breakpoints by replacing the processor instruction with a break instruction. Therefore these cannot be used in read-only code or any other code that cannot be overwritten. To set a breakpoint in such code, you must use [**ba (Break on Access)**](../debuggercmds/ba--break-on-access-.md) with the **e** (execute) option.
 
 You cannot create multiple processor breakpoints at the same address that differ only in the command that is automatically executed when the breakpoint is triggered. However, you can create multiple breakpoints at the same address that differ in their other restrictions (for example, you can create multiple breakpoints at the same address by using the **ba** command with different values of the **/p**, **/t**, **/c**, and **/C** options).
 
@@ -58,7 +58,7 @@ The number of processor breakpoints that are supported depends on the target pro
 
 ## Controlling Software Breakpoints and Processor Breakpoints
 
-Software breakpoints can be created with the [**bp (Set Breakpoint)**](bp--bu--bm--set-breakpoint-.md), **bm (Set Symbol Breakpoint)**, and **bu (Set Unresolved Breakpoint)** commands. Processor breakpoints can be created with the [**ba (Break on Access)**](ba--break-on-access-.md) command. Commands that disable, enable, and modify breakpoints apply to all kinds of breakpoints. Commands that display a list of breakpoints include all breakpoints, and indicate the type of each. For a listing of these commands, see [Methods of Controlling Breakpoints](methods-of-controlling-breakpoints.md).
+Software breakpoints can be created with the [**bp (Set Breakpoint)**](../debuggercmds/bp--bu--bm--set-breakpoint-.md), **bm (Set Symbol Breakpoint)**, and **bu (Set Unresolved Breakpoint)** commands. Processor breakpoints can be created with the [**ba (Break on Access)**](../debuggercmds/ba--break-on-access-.md) command. Commands that disable, enable, and modify breakpoints apply to all kinds of breakpoints. Commands that display a list of breakpoints include all breakpoints, and indicate the type of each. For a listing of these commands, see [Methods of Controlling Breakpoints](methods-of-controlling-breakpoints.md).
 
 The WinDbg **Breakpoints** dialog box displays all breakpoints, indicating processor breakpoints with the notation "e", "r", "w", or "i' followed by the size of the block. This dialog box can be used to modify any breakpoint. The **Command** text box on this dialog box can be used to create any type of breakpoint.If a processor breakpoint is desired, begin the input with "ba". When you set a breakpoint by using the mouse in the WinDbg [Disassembly window](disassembly-window.md) or [Source window](source-window.md), the debugger creates an unresolved software breakpoint.
 

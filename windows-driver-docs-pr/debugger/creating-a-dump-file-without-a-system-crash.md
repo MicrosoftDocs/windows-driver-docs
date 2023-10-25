@@ -17,7 +17,7 @@ This dump file can be either a Complete Memory Dump or a Small Memory Dump. The 
 
 Whereas dump files caused by a system crash are written to the computer that has crashed, this dump file will be written to the host computer.
 
-For details, see the [**.dump (Create Dump File)**](-dump--create-dump-file-.md) command.
+For details, see the [**.dump (Create Dump File)**](../debuggercmds/-dump--create-dump-file-.md) command.
 
  
 

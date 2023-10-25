@@ -198,7 +198,7 @@ dbh [1000000]: srclines myprogram.cpp 767
 line 767 e:\mydirectory\src\myprogram.cpp
 ```
 
-Note that the output of **srclines** is similar to that of the [**ln (List Nearest Symbols)**](ln--list-nearest-symbols-.md) debugger command.
+Note that the output of **srclines** is similar to that of the [**ln (List Nearest Symbols)**](../debuggercmds/ln--list-nearest-symbols-.md) debugger command.
 
 ### <span id="displaying_a_data_type"></span><span id="DISPLAYING_A_DATA_TYPE"></span>Displaying a Data Type
 

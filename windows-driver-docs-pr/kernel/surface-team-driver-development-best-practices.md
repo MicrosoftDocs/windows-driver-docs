@@ -154,7 +154,7 @@ Values](./using-ntstatus-values.md).
 2. Not running DevFund test on the driver or the device class the driver is part of with advanced verifier settings enabled. See [How to run the DevFund Tests via the command-line](../devtest/run-devfund-tests-via-the-command-line.md).
 3. Not verifying that the driver is HVCI compliant. See [Implement HVCI compatibile code](../driversecurity/implement-hvci-compatible-code.md).
 4. Not running AppVerifier on WUDFhost.exe during development and testing of user mode drivers. See [Application Verifier](../devtest/application-verifier.md).
-5. Not checking usage of memory using the [\!wdfpoolusage](../debugger/-wdfkd-wdfpoolusage.md)
+5. Not checking usage of memory using the [\!wdfpoolusage](../debuggercmds/-wdfkd-wdfpoolusage.md)
  debugger extension at runtime to make sure WDF objects are not abandoned. Memory, requests and workitems are common victims of these issues.
-6. Not using the [\!wdfkd](../debugger/kernel-mode-driver-framework-extensions--wdfkd-dll-.md)
+6. Not using the [\!wdfkd](../debuggercmds/kernel-mode-driver-framework-extensions--wdfkd-dll-.md)
  debugger extension to inspect the object tree to make sure objects are parented correctly and checking the attributes of major objects such WDFDRIVER, WDFDEVICE, IO.

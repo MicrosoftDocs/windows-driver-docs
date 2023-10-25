@@ -19,7 +19,7 @@ Breakpoints support many kinds of address syntax, including virtual addresses, f
 0:000> bp `source.c:31`
 ```
 
-For more information about this syntax, see [Numerical Expression Syntax](numerical-expression-syntax.md), [Source Line Syntax](source-line-syntax.md), and the individual command topics.
+For more information about this syntax, see [Numerical Expression Syntax](../debuggercmds/numerical-expression-syntax.md), [Source Line Syntax](../debuggercmds/source-line-syntax.md), and the individual command topics.
 
 ## Breakpoints on methods
 
@@ -38,7 +38,7 @@ If you want to put a breakpoint on the *MyMethod* method in the *MyClass* class,
     0:000> bp @@( MyClass::MyMethod ) 
     ```
 
-If you want to use a more complex breakpoint command, you should use MASM expression syntax. For more information about expression syntax, see [Evaluating Expressions](evaluating-expressions.md).
+If you want to use a more complex breakpoint command, you should use MASM expression syntax. For more information about expression syntax, see [Evaluating Expressions](../debuggercmds/evaluating-expressions.md).
 
 ## Breakpoints using complicated MASM expressions
 
@@ -74,7 +74,7 @@ b?[@$t0]
 
 ## Breakpoint pseudo-registers
 
-If you want to refer to a breakpoint address in an expression, you can use a [pseudo-register](pseudo-register-syntax.md) with the **$bp**_Number_ syntax, where *Number* is the breakpoint ID. For more information about this syntax, see Pseudo-Register Syntax.
+If you want to refer to a breakpoint address in an expression, you can use a [pseudo-register](../debuggercmds/pseudo-register-syntax.md) with the **$bp**_Number_ syntax, where *Number* is the breakpoint ID. For more information about this syntax, see Pseudo-Register Syntax.
 
 ## Ambiguous breakpoint resolution
 
@@ -86,6 +86,6 @@ In version 10.0.25310.1001 and later of the debugger engine, ambiguous breakpoin
 
 [Breakpoint Syntax](breakpoint-syntax.md)
 
-[bp, bu, bm (Set Breakpoint)](bp--bu--bm--set-breakpoint-.md)
+[bp, bu, bm (Set Breakpoint)](../debuggercmds/bp--bu--bm--set-breakpoint-.md)
 
 [Unresolved Breakpoints (bu Breakpoints)](unresolved-breakpoints---bu-breakpoints-.md)

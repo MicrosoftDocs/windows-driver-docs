@@ -320,29 +320,29 @@ This means that under many connection sequences, the break will not function as 
 
 Commands such as the following that access memory directly will work.
 
-[k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md)
+[k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md)
 
-[r (Registers)](r--registers-.md)
+[r (Registers)](../debuggercmds/r--registers-.md)
 
-[d, da, db, dc, dd, dD, df, dp, dq, du, dw (Display Memory)](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md)
+[d, da, db, dc, dd, dD, df, dp, dq, du, dw (Display Memory)](../debuggercmds/d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md)
 
-[u (Unassemble)](u--unassemble-.md)
+[u (Unassemble)](../debuggercmds/u--unassemble-.md)
 
 And you can step through code.
 
-[p (Step)](p--step-.md)
+[p (Step)](../debuggercmds/p--step-.md)
 
 There are also commands that can be used to attempt to locate code that you wish to debug.
 
-[s (Search Memory)](s--search-memory-.md)
+[s (Search Memory)](../debuggercmds/s--search-memory-.md)
 
-[.imgscan (Find Image Headers)](-imgscan--find-image-headers-.md)
+[.imgscan (Find Image Headers)](../debuggercmds/-imgscan--find-image-headers-.md)
 
 Imgscan can be helpful with EDXI debugging, as unlike traditional KDNET based kernel debugging, setting breakpoints based on symbols may not be available. Locating a desired target image, can facilitate using its location to set a memory access breakpoint.
 
 ### .exdicmd (EXDI Command)
 
-The .exdicmd sends an EXDI command to the target system using the active EXDI debugging connection. For more information, see [.exdicmd (EXDI Command)](-exdicmd--exdi-command-.md).
+The .exdicmd sends an EXDI command to the target system using the active EXDI debugging connection. For more information, see [.exdicmd (EXDI Command)](../debuggercmds/-exdicmd--exdi-command-.md).
 
 ## EXDI XML Configuration files
 
@@ -362,7 +362,7 @@ Refer to the troubleshooting information in [Configuring the EXDI Debugger Trans
 
 [Configuring the EXDI Debugger Transport](configuring-the-exdi-debugger-transport.md)
 
-[.exdicmd (EXDI Command)](-exdicmd--exdi-command-.md)
+[.exdicmd (EXDI Command)](../debuggercmds/-exdicmd--exdi-command-.md)
 
 [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md)
 

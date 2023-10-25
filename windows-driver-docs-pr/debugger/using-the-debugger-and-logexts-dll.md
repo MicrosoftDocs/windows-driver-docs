@@ -11,7 +11,7 @@ ms.date: 05/23/2017
 ## <span id="ddk_using_the_debugger_and_logexts_dll_dtoolq"></span><span id="DDK_USING_THE_DEBUGGER_AND_LOGEXTS_DLL_DTOOLQ"></span>
 
 
-One way to activate Logger is to start CDB or WinDbg and attach to a user-mode target application as usual. Then, use the [**!logexts.logi**](-logexts-logi.md) or [**!logexts.loge**](-logexts-loge.md) extension command.
+One way to activate Logger is to start CDB or WinDbg and attach to a user-mode target application as usual. Then, use the [**!logexts.logi**](../debuggercmds/-logexts-logi.md) or [**!logexts.loge**](../debuggercmds/-logexts-loge.md) extension command.
 
 This will insert code at the current breakpoint that will jump off to a routine that loads and initializes Logexts.dll in the target application process. This is referred to as "injecting Logger into the target application."
 
@@ -25,33 +25,33 @@ For information about attaching the debugger to the target application, see [Deb
 
 For the full syntax of each extension, see its reference page.
 
-<span id="_LOGEXTS.LOGI"></span>[**!logexts.logi**](-logexts-logi.md)  
+<span id="_LOGEXTS.LOGI"></span>[**!logexts.logi**](../debuggercmds/-logexts-logi.md)  
 Injects Logger into the target application. This initializes logging, but does not enable it.
 
-<span id="_LOGEXTS.LOGE"></span>[**!logexts.loge**](-logexts-loge.md)  
-Enables logging. If [**!logexts.logi**](-logexts-logi.md) has not been used, this extension will initialize and then enable logging.
+<span id="_LOGEXTS.LOGE"></span>[**!logexts.loge**](../debuggercmds/-logexts-loge.md)  
+Enables logging. If [**!logexts.logi**](../debuggercmds/-logexts-logi.md) has not been used, this extension will initialize and then enable logging.
 
-<span id="_LOGEXTS.LOGD"></span>[**!logexts.logd**](-logexts-logd.md)  
+<span id="_LOGEXTS.LOGD"></span>[**!logexts.logd**](../debuggercmds/-logexts-logd.md)  
 Disables logging. This will cause all API hooks to be removed in an effort to allow the program to run freely. COM hooks are not removed because they cannot be re-enabled at will.
 
-<span id="_LOGEXTS.LOGO"></span>[**!logexts.logo**](-logexts-logo.md)  
+<span id="_LOGEXTS.LOGO"></span>[**!logexts.logo**](../debuggercmds/-logexts-logo.md)  
 Displays or modifies output options. Three types of output are possible: messages sent directly to the debugger, a text file, or an .lgv file. The .lgv file contains much more information than the other two; it can be read with [LogViewer](logviewer.md).
 
 If you disable the text file output, a .txt file of size zero will still be created. This may overwrite a previously-saved text file in the same location.
 
-<span id="_LOGEXTS.LOGC"></span>[**!logexts.logc**](-logexts-logc.md)  
+<span id="_LOGEXTS.LOGC"></span>[**!logexts.logc**](../debuggercmds/-logexts-logc.md)  
 Displays available API categories, controls which categories will be logged and which will not, and displays the APIs that are contained in any category.
 
 If a category is disabled, the hooks for all APIs in that category will be removed so that there is no longer any performance overhead. COM hooks are not removed because they cannot be re-enabled at will.
 
 Enabling only certain categories can be useful when you are only interested in a particular type of interaction that the program is having with Windows -- for example, file operations. This reduces the log file size and also reduces the effect that Logger has on the execution speed of the process.
 
-<span id="_LOGEXTS.LOGB"></span>[**!logexts.logb**](-logexts-logb.md)  
+<span id="_LOGEXTS.LOGB"></span>[**!logexts.logb**](../debuggercmds/-logexts-logb.md)  
 Displays or flushes the current output buffer. As a performance consideration, log output is flushed to disk only when the output buffer is full. By default, the buffer is 2144 bytes.
 
 Since the buffer memory is managed by the target application, the automatic writing of the buffer to the log files on the disk will not occur if there is an access violation or some other non-recoverable error in the target application. In such cases, you should use this command to manually flush the buffer to the disk, or else the most recently-logged APIs may not appear in the log files.
 
-<span id="_LOGEXTS.LOGM"></span>[**!logexts.logm**](-logexts-logm.md)  
+<span id="_LOGEXTS.LOGM"></span>[**!logexts.logm**](../debuggercmds/-logexts-logm.md)  
 Displays or creates a module inclusion/exclusion list. It is often desirable to only log those API calls that are made from a certain module or set of modules. To facilitate that, Logger allows you to specify a module inclusion list or, alternatively, a module exclusion list. For instance, you would use an inclusion list if you only wanted to log calls from one or two modules. If you wanted to log calls made from all modules except a short list of modules, you would use an exclusion list. The modules Logexts.dll and Kernel32.dll are always excluded, since Logger is not permitted to log itself.
 
  

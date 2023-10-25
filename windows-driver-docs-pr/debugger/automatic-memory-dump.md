@@ -28,7 +28,7 @@ The Automatic Memory Dump file is written to %SystemRoot%\\Memory.dmp by default
 
 The Automatic Memory Dump is available in Windows 8 and later.
 
-**Note**  To suppress missing page error messages when debugging an Automatic Memory Dump, use the [**.ignore\_missing\_pages**](-ignore-missing-pages--suppress-missing-page-errors-.md) command.
+**Note**  To suppress missing page error messages when debugging an Automatic Memory Dump, use the [**.ignore\_missing\_pages**](../debuggercmds/-ignore-missing-pages--suppress-missing-page-errors-.md) command.
 
  
 

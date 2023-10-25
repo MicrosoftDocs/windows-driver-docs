@@ -19,11 +19,11 @@ It is important to have symbols on the faulting machine before starting the debu
 
 3.  Start CDB or WinDbg on the symbol-less machine.
 
-4.  If you don't know which application failed on the symbol-less machine, issue an [**| (Process Status)**](---process-status-.md) command. If that doesn't give you a name, break into KD on the symbol-less machine and do a [**!process 0 0**](-process.md), looking for the process ID given by the CDB command.
+4.  If you don't know which application failed on the symbol-less machine, issue an [**| (Process Status)**](../debuggercmds/---process-status-.md) command. If that doesn't give you a name, break into KD on the symbol-less machine and do a [**!process 0 0**](../debuggercmds/-process.md), looking for the process ID given by the CDB command.
 
-5.  When you have the two debuggers set up -- one with symbols which hasn't hit the error, and one which has hit the error but is without symbols -- issue a [**k (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command on the symbol-less machine.
+5.  When you have the two debuggers set up -- one with symbols which hasn't hit the error, and one which has hit the error but is without symbols -- issue a [**k (Display Stack Backtrace)**](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command on the symbol-less machine.
 
-6.  On the machine with symbols, issue a [**u (Unassemble)**](u--unassemble-.md) command for each address given on the symbol-less stack. This will give you the stack trace for the error on the symbol-less machine.
+6.  On the machine with symbols, issue a [**u (Unassemble)**](../debuggercmds/u--unassemble-.md) command for each address given on the symbol-less stack. This will give you the stack trace for the error on the symbol-less machine.
 
 7.  By looking at a stack trace you can see the module and function names involved in the call.
 

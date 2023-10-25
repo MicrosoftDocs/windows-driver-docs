@@ -7,17 +7,17 @@ ms.date: 11/28/2017
 # Writing an Analysis Extension Plugin to Extend !analyze
 
 
-You can extend the capabilities of the [**!analyze**](-analyze.md) debugger command by writing an analysis extension plugin. By providing an analysis extension plugin, you can participate in the analysis of a bug check or an exception in a way that is specific to your own component or application.
+You can extend the capabilities of the [**!analyze**](../debuggercmds/-analyze.md) debugger command by writing an analysis extension plugin. By providing an analysis extension plugin, you can participate in the analysis of a bug check or an exception in a way that is specific to your own component or application.
 
-When you write an analysis extension plugin, you also write a metadata file that describes the situations for which you want your plugin to be called. When [**!analyze**](-analyze.md) runs, it locates, loads, and runs the appropriate analysis extension plugins.
+When you write an analysis extension plugin, you also write a metadata file that describes the situations for which you want your plugin to be called. When [**!analyze**](../debuggercmds/-analyze.md) runs, it locates, loads, and runs the appropriate analysis extension plugins.
 
-To write an analysis extension plugin and make it available to [**!analyze**](-analyze.md), follow these steps.
+To write an analysis extension plugin and make it available to [**!analyze**](../debuggercmds/-analyze.md), follow these steps.
 
 -   Create a DLL that exports an [**\_EFN\_Analyze**](/windows-hardware/drivers/ddi/extsfns/nc-extsfns-ext_analysis_plugin) function.
 -   Create a metadata file that has the same name as your DLL and an extension of .alz. For example, if your DLL is named MyAnalyzer.dll, your metadata file must be named MyAnalyzer.alz. For information about how to create a metadata file, see [Metadata Files for Analysis Extensions](metadata-files-for-analysis-extensions.md). Place the metadata file in the same directory as your DLL.
--   In the debugger, use the [**.extpath**](-extpath--set-extension-path-.md) command to add your directory to the extension file path. For example, if your DLL and metadata file are in the folder named c:\\MyAnalyzer, enter the command **.extpath+ c:\\MyAnalyzer**.
+-   In the debugger, use the [**.extpath**](../debuggercmds/-extpath--set-extension-path-.md) command to add your directory to the extension file path. For example, if your DLL and metadata file are in the folder named c:\\MyAnalyzer, enter the command **.extpath+ c:\\MyAnalyzer**.
 
-When the [**!analyze**](-analyze.md) command runs in the debugger, the analysis engine looks in the extension file path for metadata files that have the .alz extension. The analysis engine reads the metadata files to determine which analysis extension plugins should be loaded. For example, suppose the analysis engine is running in response to Bug Check 0xA IRQL\_NOT\_LESS\_OR\_EQUAL, and it reads a metadata file named MyAnalyzer.alz that contains the following entries.
+When the [**!analyze**](../debuggercmds/-analyze.md) command runs in the debugger, the analysis engine looks in the extension file path for metadata files that have the .alz extension. The analysis engine reads the metadata files to determine which analysis extension plugins should be loaded. For example, suppose the analysis engine is running in response to Bug Check 0xA IRQL\_NOT\_LESS\_OR\_EQUAL, and it reads a metadata file named MyAnalyzer.alz that contains the following entries.
 
 ```text
 PluginId       MyPlugin
@@ -109,7 +109,7 @@ Here is a skeleton example that you can use as a starting point.
 
     **.crash**
 
-6.  The [**.crash**](-crash--force-system-crash-.md) command generates Bug Check 0xE2 MANUALLY\_INITIATED\_CRASH on the target computer, which causes a break in to the debugger on the host computer. The bug check analysis engine (running in the debugger on the host computer) reads MyAnalyzer.alz and sees that MyAnalyzer.dll is able to participate in analyzing bug check 0xE2. So the analysis engine loads MyAnalyzer.dll and calls its [**\_EFN\_Analyze**](/windows-hardware/drivers/ddi/extsfns/nc-extsfns-ext_analysis_plugin) function.
+6.  The [**.crash**](../debuggercmds/-crash--force-system-crash-.md) command generates Bug Check 0xE2 MANUALLY\_INITIATED\_CRASH on the target computer, which causes a break in to the debugger on the host computer. The bug check analysis engine (running in the debugger on the host computer) reads MyAnalyzer.alz and sees that MyAnalyzer.dll is able to participate in analyzing bug check 0xE2. So the analysis engine loads MyAnalyzer.dll and calls its [**\_EFN\_Analyze**](/windows-hardware/drivers/ddi/extsfns/nc-extsfns-ext_analysis_plugin) function.
 
     Verify that you see output similar to the following in the debugger.
 

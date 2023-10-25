@@ -37,7 +37,7 @@ To use a driver replacement map to replace driver files, do the following:
         D:\Debugging Tools for Windows> kd
         ```
 
-    -   Use the [**.kdfiles (Set Driver Replacement Map)**](-kdfiles--set-driver-replacement-map-.md) command after you start the kernel debugger.
+    -   Use the [**.kdfiles (Set Driver Replacement Map)**](../debuggercmds/-kdfiles--set-driver-replacement-map-.md) command after you start the kernel debugger.
 
         ```console
         D:\Debugging Tools for Windows> kd

@@ -65,7 +65,7 @@ The easiest way to write new debugger extensions is to study the sample extensio
 
 ## <span id="Analysis"></span><span id="analysis"></span><span id="ANALYSIS"></span>Writing Custom Analysis Debugger Extensions
 
-You can extend the capabilities of the [**!analyze**](-analyze.md) debugger command by writing an analysis extension plugin. By providing an analysis extension plugin, you can participate in the analysis of a bug check or an exception in a way that is specific to your own component or application. When you write an analysis extension plugin, you also write a metadata file that describes the situations for which you want your plugin to be called. When **!analyze** runs, it locates, loads, and runs the appropriate analysis extension plugins. For more information, see [Writing Custom Analysis Debugger Extensions](writing-custom-analysis-debugger-extensions.md)
+You can extend the capabilities of the [**!analyze**](../debuggercmds/-analyze.md) debugger command by writing an analysis extension plugin. By providing an analysis extension plugin, you can participate in the analysis of a bug check or an exception in a way that is specific to your own component or application. When you write an analysis extension plugin, you also write a metadata file that describes the situations for which you want your plugin to be called. When **!analyze** runs, it locates, loads, and runs the appropriate analysis extension plugins. For more information, see [Writing Custom Analysis Debugger Extensions](writing-custom-analysis-debugger-extensions.md)
 
 ## <span id="DML"></span><span id="dml"></span>Customizing Debugger Output Using DML
 

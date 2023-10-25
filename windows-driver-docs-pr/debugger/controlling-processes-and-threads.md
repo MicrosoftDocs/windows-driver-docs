@@ -23,9 +23,9 @@ In kernel-mode debugging, processes and threads are not controlled by the method
 
 To display process and thread information, you can use the following methods:
 
--   The [**| (Process Status)**](---process-status-.md) command
+-   The [**| (Process Status)**](../debuggercmds/---process-status-.md) command
 
--   The [**~ (Thread Status)**](---thread-status-.md) command
+-   The [**~ (Thread Status)**](../debuggercmds/---thread-status-.md) command
 
 -   (WinDbg only) The [Processes and Threads window](processes-and-threads-window.md)
 
@@ -33,9 +33,9 @@ To display process and thread information, you can use the following methods:
 
 To change the current process or thread, you can use the following methods:
 
--   The [**|s (Set Current Process)**](-s--set-current-process-.md) command
+-   The [**|s (Set Current Process)**](../debuggercmds/-s--set-current-process-.md) command
 
--   The [**~s (Set Current Thread)**](-s--set-current-thread-.md) command
+-   The [**~s (Set Current Thread)**](../debuggercmds/-s--set-current-thread-.md) command
 
 -   (WinDbg only) The [Processes and Threads window](processes-and-threads-window.md)
 
@@ -49,9 +49,9 @@ Typically, each thread has a suspend count of zero. When the debugger attaches t
 
 You can control the suspend count of any thread from the debugger by using the following methods:
 
--   The [**~n (Suspend Thread)**](-n--suspend-thread-.md) command increments the specified thread's suspend count by one.
+-   The [**~n (Suspend Thread)**](../debuggercmds/-n--suspend-thread-.md) command increments the specified thread's suspend count by one.
 
--   The [**~m (Resume Thread)**](-m--resume-thread-.md) command decrements the specified thread's suspend count by one.
+-   The [**~m (Resume Thread)**](../debuggercmds/-m--resume-thread-.md) command decrements the specified thread's suspend count by one.
 
 The most common use for these commands is to raise a specific thread's suspend count from one to two. When the debugger executes or detaches from the process, the thread then has a suspend count of one and remains suspended, even if other threads in the process are executing.
 
@@ -63,9 +63,9 @@ By default, all threads are unfrozen. When the debugger causes a process to exec
 
 To freeze and unfreeze individual threads, you can use the following methods:
 
--   The [**~f (Freeze Thread)**](-f--freeze-thread-.md) command freezes the specified thread.
+-   The [**~f (Freeze Thread)**](../debuggercmds/-f--freeze-thread-.md) command freezes the specified thread.
 
--   The [**~u (Unfreeze Thread)**](-u--unfreeze-thread-.md) command unfreezes the specified thread.
+-   The [**~u (Unfreeze Thread)**](../debuggercmds/-u--unfreeze-thread-.md) command unfreezes the specified thread.
 
 In any event, threads that belong to the target process never execute when the debugger has broken into the target. The suspend count of a thread affects the thread's behavior only when the debugger executes the process or detaches. The frozen status affects the thread's behavior only when the debugger executes the process.
 
@@ -73,7 +73,7 @@ In any event, threads that belong to the target process never execute when the d
 
 You can add thread specifiers or process specifiers before many other commands. For more information, see the individual command topics.
 
-You can add the [**~e (Thread-Specific Command)**](-e--thread-specific-command-.md) qualifier before many commands and extension commands. This qualifier causes the command to be executed with respect to the specified thread. This qualifier is especially useful if you want to apply a command to more than one thread. For example, the following command repeats the [**!gle**](-gle.md) extension command for every thread that is being debugged.
+You can add the [**~e (Thread-Specific Command)**](../debuggercmds/-e--thread-specific-command-.md) qualifier before many commands and extension commands. This qualifier causes the command to be executed with respect to the specified thread. This qualifier is especially useful if you want to apply a command to more than one thread. For example, the following command repeats the [**!gle**](../debuggercmds/-gle.md) extension command for every thread that is being debugged.
 
 ```dbgcmd
 ~*e !gle 

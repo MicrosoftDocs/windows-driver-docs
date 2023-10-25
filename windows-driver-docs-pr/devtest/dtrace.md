@@ -128,7 +128,7 @@ The Function Boundary Tracing (FBT) provider provides probes associated with the
 
 For each instruction set, there are a small number of functions that do not call other functions and are highly optimized by the compiler (so-called leaf functions) that cannot be instrumented by FBT. Probes for these functions are not present in DTrace.
 
-The command `dtrace -ln fbt:nt::` will list all the probes and their parameters available for the nt module. Use the debugger [lm (List Loaded Modules)](../debugger/lm--list-loaded-modules-.md) command to list all available modules.
+The command `dtrace -ln fbt:nt::` will list all the probes and their parameters available for the nt module. Use the debugger [lm (List Loaded Modules)](../debuggercmds/lm--list-loaded-modules-.md) command to list all available modules.
 
 ```dtrace
 C:\>dtrace -ln "fbt:nt::"
@@ -148,7 +148,7 @@ C:\>dtrace -ln "fbt:nt::"
 
 The DTrace PID provider allows you to trace the internal execution of user-mode processes such as a web browser or a database. You can also attach DTrace at the time of process launch so as to debug process start-up issues. As part of the PID definition, you specify the functions defined in the process and specific offsets (or all offset using wildcard *) within the function. PID provider requires the binary to be launched or running at the time of script execution.
 
-This example command displays information about a specific call in the PID associated with notepad.exe. Use the debugger [lm (List Loaded Modules)](../debugger/lm--list-loaded-modules-.md) command to list all available modules.
+This example command displays information about a specific call in the PID associated with notepad.exe. Use the debugger [lm (List Loaded Modules)](../debuggercmds/lm--list-loaded-modules-.md) command to list all available modules.
 
 ```dtrace
 C:\Windows\system32>dtrace -ln "pid$target:ntdll:RtlAllocateHeap:entry" -c notepad.exe

@@ -14,7 +14,7 @@ Some compilers, including Microsoft Visual Studio, put symbol files in the same 
 In most other situations, you need to set the symbol path to point to your symbol file locations.
 
  >[!TIP]
- > Use [.symfix](-symfix--set-symbol-store-path-.md) to set a default path to the public Microsoft public symbol server that works well in many situations.
+ > Use [.symfix](../debuggercmds/-symfix--set-symbol-store-path-.md) to set a default path to the public Microsoft public symbol server that works well in many situations.
 
 
 ## Symbol path syntax
@@ -33,7 +33,7 @@ The debugger then repeats this process for each directory in the symbol path. Fi
 
 Symbol files have date and time stamps. The debugger always looks for the symbols that match the time stamp on the binary files that it's debugging. You don't have to worry about the debugger using the wrong symbols that it finds first in this sequence. For more information about responses when symbols files aren't available, see [Matching symbol names](matching-symbol-names.md).
 
-One way to set the symbol path is by entering the [.sympath command](-sympath--set-symbol-path-.md). For other ways to set the symbol path, see [Control the symbol path](#control-the-symbol-path) later in this topic.
+One way to set the symbol path is by entering the [.sympath command](../debuggercmds/-sympath--set-symbol-path-.md). For other ways to set the symbol path, see [Control the symbol path](#control-the-symbol-path) later in this topic.
 
 ## Cache symbols locally
 
@@ -114,11 +114,11 @@ You can use the [AgeStore](agestore.md) tool to delete cached files that are old
 
 The debugger's default behavior is to use *lazy symbol loading*, also known as [*deferred symbol loading*](deferred-symbol-loading.md). This kind of loading means that symbols aren't loaded until they're required.
 
-When the symbol path is changed, for example by using the [.sympath command](-sympath--set-symbol-path-.md), all loaded modules with export symbols are lazily reloaded.
+When the symbol path is changed, for example by using the [.sympath command](../debuggercmds/-sympath--set-symbol-path-.md), all loaded modules with export symbols are lazily reloaded.
 
 Symbols of modules with full [PDB symbols](symbols-portable-pdb.md) are lazily reloaded if the new path no longer includes the original path that was used to load the PDB symbols. If the new path still includes the original path to the PDB symbol file, those symbols aren't lazily reloaded.
 
-You can turn off lazy symbol loading in CDB and KD by using the [-s command-line option](command-line-options.md). You can also force symbol loading by using the [ld load symbols](ld--load-symbols-.md) command or by using the [.reload module command](-reload--reload-module-.md) together with the `/f` option.
+You can turn off lazy symbol loading in CDB and KD by using the [-s command-line option](command-line-options.md). You can also force symbol loading by using the [ld load symbols](../debuggercmds/ld--load-symbols-.md) command or by using the [.reload module command](../debuggercmds/-reload--reload-module-.md) together with the `/f` option.
 
 ## Azure DevOps Services Artifacts
 
@@ -128,9 +128,9 @@ A symbol server is available with [Azure Artifacts in Azure DevOps Services](/az
 
 To control the symbol path, you can select one of the following methods:
 
-* Use the [.symfix set symbol store path command](-symfix--set-symbol-store-path-.md) to set a default path to the public Microsoft symbol server that works well in many situations. To set a local cache, just type `.symfix C:\MyCache`.
+* Use the [.symfix set symbol store path command](../debuggercmds/-symfix--set-symbol-store-path-.md) to set a default path to the public Microsoft symbol server that works well in many situations. To set a local cache, just type `.symfix C:\MyCache`.
 
-* Use the [.sympath command](-sympath--set-symbol-path-.md) to display, set, change, or append to the path. 
+* Use the [.sympath command](../debuggercmds/-sympath--set-symbol-path-.md) to display, set, change, or append to the path. 
 
 * Before you start the debugger, use the `_NT_SYMBOL_PATH` and `_NT_ALT_SYMBOL_PATH` [environment variables](environment-variables.md) to set the path. The symbol path is created by appending `_NT_SYMBOL_PATH` after `_NT_ALT_SYMBOL_PATH`. Typically, the path is set through the `_NT_SYMBOL_PATH`. However, you might want to use `_NT_ALT_SYMBOL_PATH` to override these settings in special cases, such as if you have private versions of shared symbol files. If you try to add an invalid directory through these environment variables, the debugger ignores this directory.
  
@@ -142,7 +142,7 @@ If you use the [-sins command-line option](command-line-options.md), the debugge
 
 ## Troubleshooting
 
-Use [**!sym noisy**](-sym.md) or the *-n* [**WinDbg Command-Line Option**](windbg-command-line-options.md) to display additional detail as symbols are loaded. For additional troubleshooting strategies, see [Verifying Symbols](verifying-symbols.md).
+Use [**!sym noisy**](../debuggercmds/-sym.md) or the *-n* [**WinDbg Command-Line Option**](windbg-command-line-options.md) to display additional detail as symbols are loaded. For additional troubleshooting strategies, see [Verifying Symbols](verifying-symbols.md).
 
 ## See also
 

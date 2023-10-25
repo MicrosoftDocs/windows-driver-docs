@@ -15,7 +15,7 @@ Here are examples that illustrate how to get started with AML debugging.
 
 ### <span id="investigating_a_frozen_computer"></span><span id="INVESTIGATING_A_FROZEN_COMPUTER"></span>Investigating a Frozen Computer
 
-If the target computer has frozen and you suspect it may be an ACPI problem, begin by using the [**!amli lc**](-amli-lc.md) extension to display all the active contexts:
+If the target computer has frozen and you suspect it may be an ACPI problem, begin by using the [**!amli lc**](../debuggercmds/-amli-lc.md) extension to display all the active contexts:
 
 ```dbgcmd
 kd> !amli lc
@@ -26,9 +26,9 @@ If no contexts are displayed, the error is probably not ACPI-related.
 
 If there are contexts shown, look for the one marked with an asterisk. This is the *current context* (the one that is being executed by the interpreter at the present moment).
 
-In this example, the target computer is running Windows on a 32-bit processor. Therefore all addresses are cast to 64 bits, producing a gratuitous FFFFFFFF in the high 32 bits. The abbreviation **pbOp** indicates the instruction pointer ("pointer to binary op codes"). The **Obj** field gives the full path and name of the method as it appears in the ACPI tables. For a description of the flags, see [**!amli lc**](-amli-lc.md).
+In this example, the target computer is running Windows on a 32-bit processor. Therefore all addresses are cast to 64 bits, producing a gratuitous FFFFFFFF in the high 32 bits. The abbreviation **pbOp** indicates the instruction pointer ("pointer to binary op codes"). The **Obj** field gives the full path and name of the method as it appears in the ACPI tables. For a description of the flags, see [**!amli lc**](../debuggercmds/-amli-lc.md).
 
-You can use the [**!amli u**](-amli-u.md) command to disassemble the \_CRS method as follows:
+You can use the [**!amli u**](../debuggercmds/-amli-u.md) command to disassemble the \_CRS method as follows:
 
 ```dbgcmd
 kd> !amli u \_SB.PCI0.ISA0.FDC0._CRS
@@ -42,7 +42,7 @@ ffffffff80e4a567 : Return(CRES)
 
 ### <span id="breaking_into_the_amli_debugger"></span><span id="BREAKING_INTO_THE_AMLI_DEBUGGER"></span>Breaking Into the AMLI Debugger
 
-The [**!amli debugger**](-amli-debugger.md) command causes the AML interpreter to break into the AMLI Debugger the next time any AML code is executed.
+The [**!amli debugger**](../debuggercmds/-amli-debugger.md) command causes the AML interpreter to break into the AMLI Debugger the next time any AML code is executed.
 
 After the AMLI Debugger prompt appears, you can use any of the AMLI Debugger commands. You can also use **!amli** extension commands without prefixing them with "!amli":
 
@@ -80,7 +80,7 @@ ffffffff80e4a567 : Return(CRES)
 
 In the following example, you will break into the AMLI Debugger before the method \_BST is executed.
 
-Even if you have located a \_BST object, you should verify that it is indeed a method. You can use the [**!amli dns**](-amli-dns.md) extension to do this.
+Even if you have located a \_BST object, you should verify that it is indeed a method. You can use the [**!amli dns**](../debuggercmds/-amli-dns.md) extension to do this.
 
 ```dbgcmd
 kd> !amli dns /s \_sb.pci0.isa.bat1._bst
@@ -89,13 +89,13 @@ ACPI Name Space: \_SB.PCI0.ISA.BAT1._BST (c29c2044)
 Method(_BST:Flags=0x0,CodeBuff=c29c20a5,Len=103)
 ```
 
-Now you can use the [**!amli bp**](-amli-bp.md) command to place the breakpoint:
+Now you can use the [**!amli bp**](../debuggercmds/-amli-bp.md) command to place the breakpoint:
 
 ```dbgcmd
 kd> !amli bp \_sb.pci0.isa.bat1._bst
 ```
 
-You may also want to place breakpoints within the method. You could use the [**!amli u**](-amli-u.md) command to disassemble \_BST and then place a breakpoint on one of its steps:
+You may also want to place breakpoints within the method. You could use the [**!amli u**](../debuggercmds/-amli-u.md) command to disassemble \_BST and then place a breakpoint on one of its steps:
 
 ```dbgcmd
 kd> !amli u _sb.pci0.isa.bat1._bst
@@ -118,14 +118,14 @@ Running \_WAK method
 Hit Breakpoint 0.
 ```
 
-Use the [**!amli ln**](-amli-ln.md) extension to see the nearest method to the current program counter. The following example is showing addresses in 32-bit form:
+Use the [**!amli ln**](../debuggercmds/-amli-ln.md) extension to see the nearest method to the current program counter. The following example is showing addresses in 32-bit form:
 
 ```dbgcmd
 kd> !amli ln
 c29accf5: \_WAK
 ```
 
-The [**!amli lc**](-amli-lc.md) extension displays all the active contexts:
+The [**!amli lc**](../debuggercmds/-amli-lc.md) extension displays all the active contexts:
 
 ```dbgcmd
 kd> !amli lc
@@ -135,7 +135,7 @@ kd> !amli lc
 
 This shows that the active contexts are associated with the methods \_Q09 and \_WAK. The current context is \_WAK.
 
-Now you can use the [**!amli r**](-amli-r.md) command to display more details about the current context. From this you can see useful thread and stack information, as well as arguments passed to \_WAK and the local data objects.
+Now you can use the [**!amli r**](../debuggercmds/-amli-r.md) command to display more details about the current context. From this you can see useful thread and stack information, as well as arguments passed to \_WAK and the local data objects.
 
 ```dbgcmd
 kd> !amli r
@@ -161,7 +161,7 @@ c18b4040: RetObj=Unknown()
 
 ### <span id="tracing__stepping__and_running_aml_code"></span><span id="TRACING__STEPPING__AND_RUNNING_AML_CODE"></span>Tracing, Stepping, and Running AML Code
 
-If you want to trace through the code, you can turn on full tracing information by using the [**!amli set**](-amli-set.md) extension as follows:
+If you want to trace through the code, you can turn on full tracing information by using the [**!amli set**](../debuggercmds/-amli-set.md) extension as follows:
 
 ```dbgcmd
 kd> !amli set spewon verboseon traceon

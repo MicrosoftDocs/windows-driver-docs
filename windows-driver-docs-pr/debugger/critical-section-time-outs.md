@@ -36,7 +36,7 @@ ChildEBP RetAddr  Args to Child
 0569fff4 00000000 00000000 00000024 00000024 csrsrv!_CsrApiRequestThread+0x4ff 
 ```
 
-Now use the [**!ntsdexts.locks**](-locks---ntsdexts-locks-.md) extension to find the critical section:
+Now use the [**!ntsdexts.locks**](../debuggercmds/-locks---ntsdexts-locks-.md) extension to find the critical section:
 
 ```dbgcmd
 0:024> !locks 
@@ -149,6 +149,6 @@ For a code sample and example debugging session of an orphaned critical section,
 
 [Critical Section Time Outs](critical-section-time-outs.md) (user mode)
 
-[**!ntsdexts.locks**](-locks---ntsdexts-locks-.md) 
+[**!ntsdexts.locks**](../debuggercmds/-locks---ntsdexts-locks-.md) 
 
-[!cs ](-cs.md)
+[!cs ](../debuggercmds/-cs.md)

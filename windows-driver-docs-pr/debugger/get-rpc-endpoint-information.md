@@ -62,7 +62,7 @@ Searching for endpoint info ...
 
 For details on the optional parameters, see [**DbgRpc Command-Line Options**](dbgrpc-command-line-options.md).
 
-For a similar example using the RPC debugger extensions, see [**!rpcexts.getendpointinfo**](-rpcexts-getendpointinfo.md).
+For a similar example using the RPC debugger extensions, see [**!rpcexts.getendpointinfo**](../debuggercmds/-rpcexts-getendpointinfo.md).
 
  
 

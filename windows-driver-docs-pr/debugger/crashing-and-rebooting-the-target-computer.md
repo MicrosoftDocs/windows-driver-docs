@@ -11,9 +11,9 @@ ms.date: 05/23/2017
 ## <span id="ddk_crashing_and_rebooting_the_target_computer_dbg"></span><span id="DDK_CRASHING_AND_REBOOTING_THE_TARGET_COMPUTER_DBG"></span>
 
 
-When you perform kernel debugging, you can cause the target computer to stop responding (that is, *crash* or *bug check*) by issuing the [**.crash (Force System Crash)**](-crash--force-system-crash-.md) command. This command immediately causes the target computer to stop responding. The debugger writes a kernel-mode dump file if you have enabled crash dumps. (For more information about these files, see [Creating a Kernel-Mode Dump File](creating-a-kernel-mode-dump-file.md).)
+When you perform kernel debugging, you can cause the target computer to stop responding (that is, *crash* or *bug check*) by issuing the [**.crash (Force System Crash)**](../debuggercmds/-crash--force-system-crash-.md) command. This command immediately causes the target computer to stop responding. The debugger writes a kernel-mode dump file if you have enabled crash dumps. (For more information about these files, see [Creating a Kernel-Mode Dump File](creating-a-kernel-mode-dump-file.md).)
 
-To restart the target computer, use the [**.reboot (Reboot Target Computer)**](-reboot--reboot-target-computer-.md) command.
+To restart the target computer, use the [**.reboot (Reboot Target Computer)**](../debuggercmds/-reboot--reboot-target-computer-.md) command.
 
 If you want the target computer to create a crash dump file and then restart, you should issue the **.crash** command, followed by the **.reboot** command. If you want only to restart, the **.crash** command is not required.
 

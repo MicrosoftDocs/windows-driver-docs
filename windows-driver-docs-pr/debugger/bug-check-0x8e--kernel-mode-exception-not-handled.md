@@ -69,7 +69,7 @@ For a complete list of exception codes, see the Ntstatus.h file that is located 
 
 ## Resolution
 
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 If you are not equipped to debug this problem, you should use some basic troubleshooting techniques:
 
 - Make sure you have enough disk space.

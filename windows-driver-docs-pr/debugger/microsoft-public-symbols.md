@@ -24,7 +24,7 @@ set _NT_SYMBOL_PATH=srv*DownstreamStore*https://msdl.microsoft.com/download/symb
 
 *DownstreamStore* must specify a directory on your local computer or network that will be used to cache symbols. This downstream store holds symbols that the debugger has accessed. Most symbols that have never been accessed remain on the symbol store at Microsoft. This storage process keeps your downstream store relatively small and allows the symbol server to work quickly, only downloading each file once.
 
-To avoid typing this long symbol path, use the [.symfix (Set symbol store path)](-symfix--set-symbol-store-path-.md) command. The following command appends the public symbol store to your existing symbol path:
+To avoid typing this long symbol path, use the [.symfix (Set symbol store path)](../debuggercmds/-symfix--set-symbol-store-path-.md) command. The following command appends the public symbol store to your existing symbol path:
 
 ```dbgcmd
 .symfix+ C:\MySymbols
@@ -32,7 +32,7 @@ To avoid typing this long symbol path, use the [.symfix (Set symbol store path)]
 
 If local symbol cache location is omitted, the sym subdirectory of the debugger installation directory is used.
 
-Use the [.sympath (Set symbol store path)](-symfix--set-symbol-store-path-.md) command to display the full symbol path. The following example shows how to use symfix to create a local symbol cache and use the Microsoft http symbol server.
+Use the [.sympath (Set symbol store path)](../debuggercmds/-symfix--set-symbol-store-path-.md) command to display the full symbol path. The following example shows how to use symfix to create a local symbol cache and use the Microsoft http symbol server.
 
 ```dbgcmd
 0: kd> .symfix c:\MyCache

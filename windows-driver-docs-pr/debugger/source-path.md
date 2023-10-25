@@ -39,17 +39,17 @@ To control the source path and local source path, you can do one of the followin
 
 -   When you start the debugger, use the **-srcpath**[command-line option](command-line-options.md) to set the source path.
 
--   Use the [**.srcpath (Set Source Path)**](-srcpath---lsrcpath--set-source-path-.md) command to display, set, change, or append to the source path. If you are using a source server, [**.srcfix (Use Source Server)**](-srcfix---lsrcfix--use-source-server-.md) is slightly easier.
+-   Use the [**.srcpath (Set Source Path)**](../debuggercmds/-srcpath---lsrcpath--set-source-path-.md) command to display, set, change, or append to the source path. If you are using a source server, [**.srcfix (Use Source Server)**](../debuggercmds/-srcfix---lsrcfix--use-source-server-.md) is slightly easier.
 
--   (WinDbg only) Use the [**.lsrcpath (Set Local Source Path)**](-srcpath---lsrcpath--set-source-path-.md) command to display, set, change, or append to the local source path. If you are using a source server, [**.lsrcfix (Use Local Source Server)**](-srcfix---lsrcfix--use-source-server-.md) is slightly easier. You can also use the WinDbg Command-Line with the parameter -lscrpath. For more information, see [**WinDbg Command-Line Options**](windbg-command-line-options.md).
+-   (WinDbg only) Use the [**.lsrcpath (Set Local Source Path)**](../debuggercmds/-srcpath---lsrcpath--set-source-path-.md) command to display, set, change, or append to the local source path. If you are using a source server, [**.lsrcfix (Use Local Source Server)**](../debuggercmds/-srcfix---lsrcfix--use-source-server-.md) is slightly easier. You can also use the WinDbg Command-Line with the parameter -lscrpath. For more information, see [**WinDbg Command-Line Options**](windbg-command-line-options.md).
 
 -   (WinDbg only) Use the **[File | Source File Path** command or press CTRL+P to display, set, change, or append to the source path or the local source path.
 
 You can also directly open or close a source file by doing one of the following:
 
--   Use the [**lsf (Load or Unload Source File)**](lsf--lsf---load-or-unload-source-file-.md) command to open or close a source file.
+-   Use the [**lsf (Load or Unload Source File)**](../debuggercmds/lsf--lsf---load-or-unload-source-file-.md) command to open or close a source file.
 
--   (WinDbg only) Use the [**.open (Open Source File)**](-open--open-source-file-.md) command to open a source file.
+-   (WinDbg only) Use the [**.open (Open Source File)**](../debuggercmds/-open--open-source-file-.md) command to open a source file.
 
 -   (WinDbg only) Use the **file | open source file** command or press ctrl+o to open a source file. you can also use the **open source file (ctrl+o)** button (![screen shot of the open source file button.](images/tbopen.png)) on the toolbar.
 

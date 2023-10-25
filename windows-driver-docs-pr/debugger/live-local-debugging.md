@@ -46,7 +46,7 @@ Consider the last of these.
 
 ### <span id="examining_a_hung_thread_in_lkd"></span><span id="EXAMINING_A_HUNG_THREAD_IN_LKD"></span>Examining a Hung Thread in LKD
 
-First, use the [**!process 0 0**](-process.md) extension to identify the process containing the hung thread. Then, issue **!process** again for more information about that thread:
+First, use the [**!process 0 0**](../debuggercmds/-process.md) extension to identify the process containing the hung thread. Then, issue **!process** again for more information about that thread:
 
 ```dbgcmd
 lkd> !process 816a550 7
@@ -59,7 +59,7 @@ lkd> !process 816a550 7
         Priority 10 BasePriority 8 PriorityDecrement 0
 ```
 
-The threads are not displayed, but the stack addresses are. Using the [**dds**](dds--dps--dqs--display-words-and-symbols-.md) (or **ddq**) command on the current address on the stack yields a starting point for further investigation, because it specifies which process is calling.
+The threads are not displayed, but the stack addresses are. Using the [**dds**](../debuggercmds/dds--dps--dqs--display-words-and-symbols-.md) (or **ddq**) command on the current address on the stack yields a starting point for further investigation, because it specifies which process is calling.
 
 ```dbgcmd
 lkd> dds f50bea74

@@ -52,7 +52,7 @@ Specifically, the Miscellaneous Checks option looks for the following improper d
 
     In Windows 7, Driver Verifier detects tries to reference kernel handle values that are incorrect. These driver defects are reported as a [**Bug Check 0x93: INVALID\_KERNEL\_HANDLE**](../debugger/bug-check-0x93--invalid-kernel-handle.md) if the Driver Verifier Miscellaneous Checks option is enabled. Usually this kind of incorrect handle reference means that the driver has closed that handle already but is trying to continue using it. This kind of defect can result in unpredictable problems for the system because the handle value that is being referenced might have been reused already by another unrelated driver.
 
-    If a kernel driver has recently closed a kernel handle and later references the closed handle, Driver Verifier forces the bug check as described previously. In this case the output of the [**!htrace**](../debugger/-htrace.md) debugger extension provides the stack trace for the code path that closed this handle. Use the address of the System process as a parameter for **!htrace**. To find the address of the System process, use the **!process 4 0** command.
+    If a kernel driver has recently closed a kernel handle and later references the closed handle, Driver Verifier forces the bug check as described previously. In this case the output of the [**!htrace**](../debuggercmds/-htrace.md) debugger extension provides the stack trace for the code path that closed this handle. Use the address of the System process as a parameter for **!htrace**. To find the address of the System process, use the **!process 4 0** command.
 
     Starting in Windows 7, Driver Verifier adds a check to [**ObReferenceObjectByHandle**](/windows-hardware/drivers/ddi/wdm/nf-wdm-obreferenceobjectbyhandle). It is now prohibited to pass a user-space handle with KernelMode access. If such a combination is detected, Driver Verifier issues [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md), with a parameter 1 value of 0xF6.
 
@@ -145,7 +145,7 @@ Entry     State           NonPagedPool   PagedPool   Module
                4 -  Pool allocation size.
 ```
 
-To investigate the pool allocation, use the [**!pool**](../debugger/-pool.md) debugger extension with the starting address of the pool allocation, 9655D468. (The *2* flag displays header information only for the pool that contains the specified address. Header information for other pools is suppressed.)
+To investigate the pool allocation, use the [**!pool**](../debuggercmds/-pool.md) debugger extension with the starting address of the pool allocation, 9655D468. (The *2* flag displays header information only for the pool that contains the specified address. Header information for other pools is suppressed.)
 
 ```console
 1: kd> !pool 9655d468  2
@@ -153,7 +153,7 @@ Pool page 9655d468 region is Paged pool
 *9655d468 size:   b0 previous size:    8  (Allocated) *Bug_
 ```
 
-To find information about the ERESOURCE, use the [**!locks (!kdext\*.locks)**](../debugger/-locks---kdext--locks-.md) debugger extension with the address of the structure.
+To find information about the ERESOURCE, use the [**!locks (!kdext\*.locks)**](../debuggercmds/-locks---kdext--locks-.md) debugger extension with the address of the structure.
 
 ```console
 1: kd> !locks 0x9655D4A8     <<<<<- ERESOURCE @0x9655D4A8 lives inside the pool block being freed

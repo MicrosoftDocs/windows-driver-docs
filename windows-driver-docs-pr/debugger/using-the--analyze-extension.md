@@ -7,9 +7,9 @@ ms.date: 11/14/2022
 
 # Using the !analyze Extension
 
-The first step in debugging a crashed target computer or application is to use the [**!analyze**](-analyze.md) extension command. This extension performs a large amount of automated analysis. The results of this analysis are displayed in the Debugger Command window.
+The first step in debugging a crashed target computer or application is to use the [**!analyze**](../debuggercmds/-analyze.md) extension command. This extension performs a large amount of automated analysis. The results of this analysis are displayed in the Debugger Command window.
 
-You should use the **-v** option for a fully verbose display of data. For details on other options, see the [**!analyze**](-analyze.md) reference page.
+You should use the **-v** option for a fully verbose display of data. For details on other options, see the [**!analyze**](../debuggercmds/-analyze.md) reference page.
 
 ## A User-Mode !analyze -v Example
 
@@ -47,7 +47,7 @@ NumberParameters: 3
    Parameter[2]: ffffffff
 ```
 
-The EXCEPTION\_RECORD field shows the exception record for this crash. This information can also be viewed by using the [**.exr (Display Exception Record)**](-exr--display-exception-record-.md) command.
+The EXCEPTION\_RECORD field shows the exception record for this crash. This information can also be viewed by using the [**.exr (Display Exception Record)**](../debuggercmds/-exr--display-exception-record-.md) command.
 
 ```dbgcmd
 BUGCHECK_STR:  80000003
@@ -71,7 +71,7 @@ The PROCESS\_NAME field specifies the name of the process that raised the except
 LAST_CONTROL_TRANSFER:  from 01050963 to 77f97704
 ```
 
-The LAST\_CONTROL\_TRANSFER field shows the last call on the stack. In this case, the code at address 0x01050963 called a function at 0x77F97704. You can use these addresses with the [**ln (List Nearest Symbols)**](ln--list-nearest-symbols-.md) command to determine what modules and functions these addresses reside in.
+The LAST\_CONTROL\_TRANSFER field shows the last call on the stack. In this case, the code at address 0x01050963 called a function at 0x77F97704. You can use these addresses with the [**ln (List Nearest Symbols)**](../debuggercmds/ln--list-nearest-symbols-.md) command to determine what modules and functions these addresses reside in.
 
 ```dbgcmd
 STACK_TEXT:  
@@ -107,7 +107,7 @@ IMAGE_NAME:  MyApp.exe
 DEBUG_FLR_IMAGE_TIMESTAMP:  383490a9
 ```
 
-When [**!analyze**](-analyze.md) determines the instruction that has probably caused the error, it displays it in the FOLLOWUP\_IP field. The SYMBOL\_NAME, MODULE\_NAME, IMAGE\_NAME, and DEBUG\_FLR\_IMAGE\_TIMESTAMP fields show the symbol, module, image name, and image timestamp corresponding to this instruction.
+When [**!analyze**](../debuggercmds/-analyze.md) determines the instruction that has probably caused the error, it displays it in the FOLLOWUP\_IP field. The SYMBOL\_NAME, MODULE\_NAME, IMAGE\_NAME, and DEBUG\_FLR\_IMAGE\_TIMESTAMP fields show the symbol, module, image name, and image timestamp corresponding to this instruction.
 
 ```dbgcmd
 STACK_COMMAND:  .ecxr ; kb
@@ -134,7 +134,7 @@ There are a variety of other fields that may appear:
 
 -   If the processor misfires, you may see the SINGLE\_BIT\_ERROR, TWO\_BIT\_ERROR, or POSSIBLE\_INVALID\_CONTROL\_TRANSFER fields.
 
--   If memory corruption seems to have occurred, the CHKIMG\_EXTENSION field will specify the [**!chkimg**](-chkimg.md) extension command that should be used to investigate.
+-   If memory corruption seems to have occurred, the CHKIMG\_EXTENSION field will specify the [**!chkimg**](../debuggercmds/-chkimg.md) extension command that should be used to investigate.
 
 ### A Kernel-Mode !analyze -v Example
 
@@ -211,13 +211,13 @@ f832035c 894204           mov     [edx+0x4],eax     ds:0023:00000004=????????
 Resetting default context
 ```
 
-The TRAP\_FRAME field shows the trap frame for this crash. This information can also be viewed by using the [**.trap (Display Trap Frame)**](-trap--display-trap-frame-.md) command.
+The TRAP\_FRAME field shows the trap frame for this crash. This information can also be viewed by using the [**.trap (Display Trap Frame)**](../debuggercmds/-trap--display-trap-frame-.md) command.
 
 ```dbgcmd
 LAST_CONTROL_TRANSFER:  from f83206e0 to f832035c
 ```
 
-The LAST\_CONTROL\_TRANSFER field shows the last call on the stack. In this case, the code at address 0xF83206E0 called a function at 0xF832035C. You can use the [**ln (List Nearest Symbols)**](ln--list-nearest-symbols-.md) command to determine what module and function these addresses reside in.
+The LAST\_CONTROL\_TRANSFER field shows the last call on the stack. In this case, the code at address 0xF83206E0 called a function at 0xF832035C. You can use the [**ln (List Nearest Symbols)**](../debuggercmds/ln--list-nearest-symbols-.md) command to determine what module and function these addresses reside in.
 
 ```dbgcmd
 STACK_TEXT:  
@@ -272,7 +272,7 @@ There are a variety of other fields that may appear:
 
 -   If the processor misfires, you may see the SINGLE\_BIT\_ERROR, TWO\_BIT\_ERROR, or POSSIBLE\_INVALID\_CONTROL\_TRANSFER fields.
 
--   If memory corruption seems to have occurred, the CHKIMG\_EXTENSION field will specify the [**!chkimg**](-chkimg.md) extension command that should be used to investigate.
+-   If memory corruption seems to have occurred, the CHKIMG\_EXTENSION field will specify the [**!chkimg**](../debuggercmds/-chkimg.md) extension command that should be used to investigate.
 
 -   If a bug check occurred within the code of a device driver, its name may be displayed in the BUGCHECKING\_DRIVER field.
 
@@ -280,7 +280,7 @@ There are a variety of other fields that may appear:
 
 In both user mode and kernel mode, the Followup field in the display will show information about the owner of the current stack frame, if this can be determined. This information is determined in the following manner:
 
-1.  When the [**!analyze**](-analyze.md) extension is used, the debugger begins with the top frame in the stack and determines whether it is responsible for the error. If it isn't, the next frame is analyzed. This process continues until a frame that might be at fault is found.
+1.  When the [**!analyze**](../debuggercmds/-analyze.md) extension is used, the debugger begins with the top frame in the stack and determines whether it is responsible for the error. If it isn't, the next frame is analyzed. This process continues until a frame that might be at fault is found.
 
 2.  The debugger attempts to determine the owner of the module and function in this frame. If the owner can be determined, this frame is considered to be at fault.
 
@@ -296,11 +296,11 @@ For details on the syntax of the triage.ini file, see [Specifying Module and Fun
 
 ## Additional !analyze Techniques
 
-If no crash or exception has occurred, [**!analyze**](-analyze.md) will display a very short text giving the current status of the target. In certain situations you may want to force the analysis to take place as if a crash had occurred. Use **!analyze -f** to accomplish this task.
+If no crash or exception has occurred, [**!analyze**](../debuggercmds/-analyze.md) will display a very short text giving the current status of the target. In certain situations you may want to force the analysis to take place as if a crash had occurred. Use **!analyze -f** to accomplish this task.
 
 In user mode, if an exception has occurred but you believe the underlying problem is a hung thread, set the current thread to the thread you are investigating, and then use **!analyze -hang**. This extension will perform a thread stack analysis to determine if any threads are blocking other threads.
 
-In kernel mode, if a bug check has occurred but you believe the underlying problem is a hung thread, use **!analyze -hang**. This extension will investigate locks held by the system and scan the DPC queue chain, and will display any indications of hung threads. If you believe the problem is a kernel-mode resource deadlock, use the [**!deadlock**](-deadlock.md) extension along with the **Deadlock Detection** option of Driver Verifier.
+In kernel mode, if a bug check has occurred but you believe the underlying problem is a hung thread, use **!analyze -hang**. This extension will investigate locks held by the system and scan the DPC queue chain, and will display any indications of hung threads. If you believe the problem is a kernel-mode resource deadlock, use the [**!deadlock**](../debuggercmds/-deadlock.md) extension along with the **Deadlock Detection** option of Driver Verifier.
 
 You can also automatically ignore known issues. To do this, you must first create an XML file containing a formatted list of known issues. Use the **!analyze -c -load** *KnownIssuesFile* extension to load this file. Then when an exception or break occurs, use the **!analyze -c** extension. If the exception matches one of the known issues, the target will resume execution. If the target does not resume executing, then you can use **!analyze -v** to determine the cause of the problem.
 
@@ -308,7 +308,7 @@ You can also automatically ignore known issues. To do this, you must first creat
 
 See these topics for additional information.
 
-[!analyze](-analyze.md)
+[!analyze](../debuggercmds/-analyze.md)
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
 

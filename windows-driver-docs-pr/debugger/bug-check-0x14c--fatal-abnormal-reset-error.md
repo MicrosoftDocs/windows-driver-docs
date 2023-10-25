@@ -30,7 +30,7 @@ None
 
 The system encountered an unexpected error and restarted. Issues that may cause this error include: hardware watchdog timer in application or auxiliary processors indicating a system hang, user-initiated key sequence because of a hang, a brownout, or failures in the default bugcheck path. The cache may not be flushed and the resulting full memory dump may not contain the current thread context.
 
-Secondary data of tag {E1D08891-D5A3-45F9-B811-AD711DFB2607} contains additional “Blackbox” data. Use [**.enumtag (Enumerate Secondary Callback Data)**](-enumtag--enumerate-secondary-callback-data-.md) to view the data.
+Secondary data of tag {E1D08891-D5A3-45F9-B811-AD711DFB2607} contains additional “Blackbox” data. Use [**.enumtag (Enumerate Secondary Callback Data)**](../debuggercmds/-enumtag--enumerate-secondary-callback-data-.md) to view the data.
 
  
 

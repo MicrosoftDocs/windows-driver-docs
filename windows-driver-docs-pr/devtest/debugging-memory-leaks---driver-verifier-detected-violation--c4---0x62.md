@@ -22,7 +22,7 @@ When you have a kernel debugger connected to a test computer running [Driver Ver
 
 ### Use !analyze to display information about the bug check
 
-As with any bug check that occurs, once you have control of the debugger, the best first step is to run the [**!analyze -v**](../debugger/-analyze.md) command.
+As with any bug check that occurs, once you have control of the debugger, the best first step is to run the [**!analyze -v**](../debuggercmds/-analyze.md) command.
 
 ```
 kd> !analyze -v
@@ -73,7 +73,7 @@ Specify [Pool Tracking](pool-tracking.md) (**verifier /flags 0x8**). The Pool Tr
 
 ### Use the !verifier 3 extension command to find out about the pool allocations
 
-For this particular bug check, the information provided in parameter 4 (Arg4) is the most important. Arg4 shows number of allocations that weren’t freed. The output of the [**!analyze**](../debugger/-analyze.md) command also shows the [**!verifier**](../debugger/-verifier.md) debugger extension command that you can use to display what those allocations were. The full output of **!verifier 3 MyDriver.sys** command is shown in the following example:
+For this particular bug check, the information provided in parameter 4 (Arg4) is the most important. Arg4 shows number of allocations that weren’t freed. The output of the [**!analyze**](../debuggercmds/-analyze.md) command also shows the [**!verifier**](../debuggercmds/-verifier.md) debugger extension command that you can use to display what those allocations were. The full output of **!verifier 3 MyDriver.sys** command is shown in the following example:
 
 ```
 kd> !verifier 3 Mydriver.sys

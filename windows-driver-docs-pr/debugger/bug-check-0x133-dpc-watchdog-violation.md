@@ -42,13 +42,13 @@ For more information see the following topics:
 
 [Analyzing a Kernel-Mode Dump File with WinDbg](analyzing-a-kernel-mode-dump-file-with-windbg.md)
 
-[Using the !analyze Extension](using-the--analyze-extension.md) and [!analyze](-analyze.md)
+[Using the !analyze Extension](using-the--analyze-extension.md) and [!analyze](../debuggercmds/-analyze.md)
 
 For more information on Windows DPC, see [Windows Internals 7th Edition Part 1](/sysinternals/resources/windows-internals) by  Pavel Yosifovich, Mark E. Russinovich, David A. Solomon and Alex Ionescu.
 
 ### Example 1
 
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
 **Parameter 1 = 0**
 
@@ -80,11 +80,11 @@ IMAGE_NAME:  BthA2DP.sys
 
 Use the following debugger commands to gather more information for failures with a parameter of 0:
 
-[**k (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) to look at what code was running when the stop code occurred.
+[**k (Display Stack Backtrace)**](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) to look at what code was running when the stop code occurred.
 
 You may want to use the u, ub, uu (Unassemble) command to look deeper into the specifics of a the code that was running.
 
-The [**!pcr**](-pcr.md) extension displays the current status of the Processor Control Region (PCR) on a specific processor. In the output will be the address of the Prcb
+The [**!pcr**](../debuggercmds/-pcr.md) extension displays the current status of the Processor Control Region (PCR) on a specific processor. In the output will be the address of the Prcb
 
 ```dbgcmd
 0: kd> !pcr
@@ -113,7 +113,7 @@ KPCR for Processor 0 at fffff8035f5a4000:
 	         IdleThread: fffff80364926a00
 ```
 
-You can use the [**dt (Display Type)**](dt--display-type-.md) command to display additional information about the DPCs and the DPC Watchdog. For the address use the Prcb listed in the !pcr output:
+You can use the [**dt (Display Type)**](../debuggercmds/dt--display-type-.md) command to display additional information about the DPCs and the DPC Watchdog. For the address use the Prcb listed in the !pcr output:
 
 ```dbgcmd
 dt nt!_KPRCB fffff80309974180 Dpc* 
@@ -134,7 +134,7 @@ dt nt!_KPRCB fffff80309974180 Dpc*
 
 For parameter of 1, the code may not stop in the offending area of code. In this case one approach is to use the event tracing to attempt to track down which driver is exceeding it's normal execution duration.
 
-Use the [**!analyze**](-analyze.md) debug extension to display information about the bug check.
+Use the [**!analyze**](../debuggercmds/-analyze.md) debug extension to display information about the bug check.
 
 ```dbgcmd
 0: kd> !analyze -v
@@ -168,7 +168,7 @@ Cast the address of the nt!DPC_WATCHDOG_GLOBAL_TRIAGE_BLOCK to display informati
    +0x00c DpcWatchdogProfileLength : 0x8200
 ```
 
-Use the [!dpcs](-dpcs.md) command to display the queued DPCs.
+Use the [!dpcs](../debuggercmds/-dpcs.md) command to display the queued DPCs.
 
 ```dbgcmd
 3: kd> !dpcs

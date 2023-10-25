@@ -15,11 +15,11 @@ In some cases, the stack trace function will fail in the debugger. This can be c
 
 The basic concept is fairly simple: dump out the stack pointer, find out where the modules are loaded, find possible function addresses, and verify by checking to see if each possible stack entry makes a call to the next.
 
-Before going through an example, it is important to note that the [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command has an additional feature on Intel systems. By doing a kb=\[ebp\] \[eip\] \[esp\], the debugger will display the stack trace for the frame with the given values for base pointer, instruction pointer, and stack pointer, respectively.
+Before going through an example, it is important to note that the [**kb (Display Stack Backtrace)**](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command has an additional feature on Intel systems. By doing a kb=\[ebp\] \[eip\] \[esp\], the debugger will display the stack trace for the frame with the given values for base pointer, instruction pointer, and stack pointer, respectively.
 
 For the example, a failure that actually gives a stack trace is used so the results can be checked at the end.
 
-The first step is to find out what modules are loaded where. This is accomplished with the [**x (Examine Symbols)**](x--examine-symbols-.md) command (some symbols are edited out for reasons of length):
+The first step is to find out what modules are loaded where. This is accomplished with the [**x (Examine Symbols)**](../debuggercmds/x--examine-symbols-.md) command (some symbols are edited out for reasons of length):
 
 ```dbgcmd
 kd> x *! 
@@ -87,9 +87,9 @@ fe4cca5c  c00000d6 00000000 004ccb28 fe4ccbc4
 fe4cca6c  fe680ba4 fe682050 00000000 fe4ccbd4 
 ```
 
-To determine which values are likely function addresses and which are parameters or saved registers, the first thing to consider is what the different types of information look like on the stack. Most integers are going to be smaller value, which means they will be mostly zeros when displayed as DWORDs (like 0x00000270). Most pointers to local addresses will be near the stack pointer (like fe4cca78). Status codes usually begin with a c (c00000d6). Unicode and ASCII strings can be identified by the fact that each character will be in the range of 20-7f. (In KD, the [**dc (Display Memory)**](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) command will show the characters on the right.) Most importantly, the function addresses will be in the range listed by **x \*!**.
+To determine which values are likely function addresses and which are parameters or saved registers, the first thing to consider is what the different types of information look like on the stack. Most integers are going to be smaller value, which means they will be mostly zeros when displayed as DWORDs (like 0x00000270). Most pointers to local addresses will be near the stack pointer (like fe4cca78). Status codes usually begin with a c (c00000d6). Unicode and ASCII strings can be identified by the fact that each character will be in the range of 20-7f. (In KD, the [**dc (Display Memory)**](../debuggercmds/d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) command will show the characters on the right.) Most importantly, the function addresses will be in the range listed by **x \*!**.
 
-Notice that all modules listed are in the ranges of 77f70000 to 8040c000 and fe4c0000 to fe6f0920. Based on these ranges, the possible function addresses in the preceding list are: 80136039, 801036fe (listed twice, so more likely a parameter), fe682ae4, fe68f57a, fe682a78, fe6a1198, 8011c901, 80127797, 80110008, fe6a1430, fe6a10ae, fe6b2c04, fe685968, fe680ba4, and fe682050. Investigate these locations by using an [**ln (List Nearest Symbols)**](ln--list-nearest-symbols-.md) command for each address:
+Notice that all modules listed are in the ranges of 77f70000 to 8040c000 and fe4c0000 to fe6f0920. Based on these ranges, the possible function addresses in the preceding list are: 80136039, 801036fe (listed twice, so more likely a parameter), fe682ae4, fe68f57a, fe682a78, fe6a1198, 8011c901, 80127797, 80110008, fe6a1430, fe6a10ae, fe6b2c04, fe685968, fe680ba4, and fe682050. Investigate these locations by using an [**ln (List Nearest Symbols)**](../debuggercmds/ln--list-nearest-symbols-.md) command for each address:
 
 ```dbgcmd
 kd> ln 80136039 

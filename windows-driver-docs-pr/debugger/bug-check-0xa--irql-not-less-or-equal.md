@@ -23,10 +23,10 @@ The IRQL_NOT_LESS_OR_EQUAL bug check has a value of 0x0000000A. This bug check i
 
 | Parameter | Description|
 |-----------|------------|
-| 1 | The virtual memory address that couldn't be accessed. <br><br> Use [!pool](-pool.md) on this address to see whether it's a paged pool. Other commands that might be useful in gathering information about the failure are [!pte](-pte.md), [!address](-address.md), and [ln (List Nearest Symbols)](ln--list-nearest-symbols-.md). |
+| 1 | The virtual memory address that couldn't be accessed. <br><br> Use [!pool](../debuggercmds/-pool.md) on this address to see whether it's a paged pool. Other commands that might be useful in gathering information about the failure are [!pte](../debuggercmds/-pte.md), [!address](../debuggercmds/-address.md), and [ln (List Nearest Symbols)](../debuggercmds/ln--list-nearest-symbols-.md). |
 | 2 | IRQL at time of the fault. <br><br> **Values**: <br> 2 - The IRQL was DISPATCH_LEVEL at the time of the fault. |
 | 3 | Bit field that describes the operation that caused the fault. Note that bit 3 is only available on chipsets that support this level of reporting. <br><br> **Bit 0 values**: <br> 0 - Read operation <br> 1 - Write operation <br><br> **Bit 3 values**: <br> 0 - Not an execute operation <br> 1 - Execute operation <br><br> **Bit 0 and Bit 3 combined values**: <br> 0x0 - Fault trying to READ from the address in parameter 1 <br> 0x1 - Fault trying to WRITE to the address in parameter 1 <br> 0x8 - Fault trying to EXECUTE code from the address in parameter 1 <br><br> This value is caused by: <br> <ul><li>Calling a function that can't be called at DISPATCH_LEVEL while at DISPATCH_LEVEL.</li> <li>Forgetting to release a spinlock.</li> <li>Marking code as pageable when it must be non-pageable. For example, if the code acquires a spinlock, or is called in a deferred procedure call.</li> |
-| 4 | The instruction pointer at the time of the fault. <br><br> Use the [ln (List Nearest Symbols)](ln--list-nearest-symbols-.md) command on this address to see the name of the function. |
+| 4 | The instruction pointer at the time of the fault. <br><br> Use the [ln (List Nearest Symbols)](../debuggercmds/ln--list-nearest-symbols-.md) command on this address to see the name of the function. |
 
 ## Cause
 
@@ -38,15 +38,15 @@ General guidelines that you can use to categorize the type of coding error that 
 
 - If parameter 1 is less than 0x1000, the issue is likely a NULL pointer dereference.
 
-- If [!pool](-pool.md) reports that parameter 1 is paged pool (or other types of pageable memory), then the IRQL is too high to access this data. Run at a lower IRQL, or allocate the data in the nonpaged pool.
+- If [!pool](../debuggercmds/-pool.md) reports that parameter 1 is paged pool (or other types of pageable memory), then the IRQL is too high to access this data. Run at a lower IRQL, or allocate the data in the nonpaged pool.
 
 - If parameter 3 indicates that the bug check was an attempt to execute pageable code, then the IRQL is too high to call this function. Run at a lower IRQL, or don't mark the code as pageable.
 
-- It may be a bad pointer caused by use-after-free or bit-flipping. Investigate the validity of parameter 1 with [!pte](-pte.md), [!address](-address.md), and [ln (list nearest symbols)](ln--list-nearest-symbols-.md).
+- It may be a bad pointer caused by use-after-free or bit-flipping. Investigate the validity of parameter 1 with [!pte](../debuggercmds/-pte.md), [!address](../debuggercmds/-address.md), and [ln (list nearest symbols)](../debuggercmds/ln--list-nearest-symbols-.md).
 
 ## Resolution
 
-If a kernel debugger is available, obtain a stack trace. Start by running the [!analyze](-analyze.md) debugger extension to display information about the bug check. The **!analyze** extension can be helpful in determining the root cause. Next, enter one of the [k* (display stack backtrace)](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md)  commands to view the call stack.
+If a kernel debugger is available, obtain a stack trace. Start by running the [!analyze](../debuggercmds/-analyze.md) debugger extension to display information about the bug check. The **!analyze** extension can be helpful in determining the root cause. Next, enter one of the [k* (display stack backtrace)](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md)  commands to view the call stack.
 
 ### Gather information
 

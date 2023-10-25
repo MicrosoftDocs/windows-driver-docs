@@ -19,7 +19,7 @@ When debugging a SCSI miniport driver, there are three routines in which it is u
 
 -   **miniport!HwStartIo**
 
-The routine **scsiport!scsiportnotification** is called right after a request is sent to the miniport. Thus, if you set a breakpoint in **scsiport!scsiportnotification** and then run a stack backtrace using [**kb 3**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md), you can determine whether the miniport is receiving and completing requests. If the first parameter is zero, the request has been completed. If the first parameter is nonzero, the third parameter is the address of the SCSI request block (SRB) that is not being completed, and you can use the [**!minipkd.srb**](-minipkd-srb.md) extension to further analyze the situation.
+The routine **scsiport!scsiportnotification** is called right after a request is sent to the miniport. Thus, if you set a breakpoint in **scsiport!scsiportnotification** and then run a stack backtrace using [**kb 3**](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md), you can determine whether the miniport is receiving and completing requests. If the first parameter is zero, the request has been completed. If the first parameter is nonzero, the third parameter is the address of the SCSI request block (SRB) that is not being completed, and you can use the [**!minipkd.srb**](../debuggercmds/-minipkd-srb.md) extension to further analyze the situation.
 
 Placing a breakpoint in either **scsiport!spstartiosynchronized** or **miniport!HwStartIo** will cause a break just prior to sending a request to the miniport.
 

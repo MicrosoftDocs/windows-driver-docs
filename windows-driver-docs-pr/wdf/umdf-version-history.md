@@ -112,13 +112,13 @@ In addition to the shared functionality described in [Getting Started with UMDF]
 
 * Several debugger extension commands in Wdfkd.dll can now be used for UMDF 2.0 drivers as well. The extension library also contains the following new extension commands designed specifically for debugging UMDF 2.0 drivers:
 
-  * [**!wdfkd.wdfumdevstack**](../debugger/-wdfkd-wdfumdevstack.md)
-  * [**!wdfkd.wdfumdevstacks**](../debugger/-wdfkd-wdfumdevstacks.md)
-  * [**!wdfkd.wdfumdownirp**](../debugger/-wdfkd-wdfumdownirp.md)
-  * [**!wdfkd.wdfumfile**](../debugger/-wdfkd-wdfumfile.md)
-  * [**!wdfkd.wdfumirp**](../debugger/-wdfkd-wdfumirp.md)
-  * [**!wdfkd.wdfumirps**](../debugger/-wdfkd-wdfumirps.md)
-  * [**!wdfkd.wdfdeviceinterrupts**](../debugger/-wdfkd-wdfdeviceinterrupts.md)
+  * [**!wdfkd.wdfumdevstack**](../debuggercmds/-wdfkd-wdfumdevstack.md)
+  * [**!wdfkd.wdfumdevstacks**](../debuggercmds/-wdfkd-wdfumdevstacks.md)
+  * [**!wdfkd.wdfumdownirp**](../debuggercmds/-wdfkd-wdfumdownirp.md)
+  * [**!wdfkd.wdfumfile**](../debuggercmds/-wdfkd-wdfumfile.md)
+  * [**!wdfkd.wdfumirp**](../debuggercmds/-wdfkd-wdfumirp.md)
+  * [**!wdfkd.wdfumirps**](../debuggercmds/-wdfkd-wdfumirps.md)
+  * [**!wdfkd.wdfdeviceinterrupts**](../debuggercmds/-wdfkd-wdfdeviceinterrupts.md)
 
     For a list of extension commands and framework applicability, see [Debugger Extensions](debugger-extensions-for-kmdf-drivers.md).
 

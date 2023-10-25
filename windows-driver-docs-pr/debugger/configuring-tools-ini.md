@@ -35,7 +35,7 @@ For **TRUE** or **FALSE** values, "FALSE" is the only false value. Anything else
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>$u0:</strong> <em>value</em> ... <strong>$u9:</strong> <em>value</em></p></td>
-<td align="left"><p>Assign values to fixed-name aliases. You can specify numeric values <em>n</em> or <em>0xn</em> or any other string. See <a href="using-aliases.md" data-raw-source="[Using Aliases](using-aliases.md)">Using Aliases</a> for details. No command-line equivalent.</p></td>
+<td align="left"><p>Assign values to fixed-name aliases. You can specify numeric values <em>n</em> or <em>0xn</em> or any other string. See <a href="../debuggercmds/using-aliases.md" data-raw-source="[Using Aliases](../debuggercmds/using-aliases.md)">Using Aliases</a> for details. No command-line equivalent.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>DebugChildren:</strong> <em>flag</em></p></td>
@@ -47,7 +47,7 @@ For **TRUE** or **FALSE** values, "FALSE" is the only false value. Anything else
 </tr>
 <tr class="even">
 <td align="left"><p><strong>IniFile:</strong> <em>file</em></p></td>
-<td align="left"><p>Specifies the name of the script file that CDB or KD takes commands from at startup. The default is the ntsd.ini file in the current directory. Command-line equivalent is <strong>-cf</strong>. For details, see <a href="using-script-files.md" data-raw-source="[Using Script Files](using-script-files.md)">Using Script Files</a>.</p></td>
+<td align="left"><p>Specifies the name of the script file that CDB or KD takes commands from at startup. The default is the ntsd.ini file in the current directory. Command-line equivalent is <strong>-cf</strong>. For details, see <a href="../debuggercmds/using-script-files.md" data-raw-source="[Using Script Files](../debuggercmds/using-script-files.md)">Using Script Files</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>LazyLoad:</strong> <em>flag</em></p></td>
@@ -57,7 +57,7 @@ For **TRUE** or **FALSE** values, "FALSE" is the only false value. Anything else
 <tr class="even">
 <td align="left"><p><strong>SetDll:</strong> <em>filename</em></p></td>
 <td align="left"><p>Set extension DLL. The .dll filename extension should be omitted. Default is userexts.dll. Command-line equivalent is <strong>-a</strong>.</p>
-<p>For details, and other methods of setting this default, see <a href="loading-debugger-extension-dlls.md" data-raw-source="[Loading Debugger Extension DLLs](loading-debugger-extension-dlls.md)">Loading Debugger Extension DLLs</a>.</p></td>
+<p>For details, and other methods of setting this default, see <a href="../debuggercmds/loading-debugger-extension-dlls.md" data-raw-source="[Loading Debugger Extension DLLs](../debuggercmds/loading-debugger-extension-dlls.md)">Loading Debugger Extension DLLs</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>StopFirst:</strong> <em>flag</em></p></td>
@@ -90,11 +90,11 @@ For **TRUE** or **FALSE** values, "FALSE" is the only false value. Anything else
 </tr>
 <tr class="even">
 <td align="left"><p><strong>srcopt:</strong> <em>options</em></p></td>
-<td align="left"><p>Sets the source line options that control source display and program stepping options. For more information see <strong><a href="l---l---set-source-options-.md" data-raw-source="[l+, l- (Set Source Options)](l---l---set-source-options-.md)">l+, l- (Set Source Options)</a></strong>.</p></td>
+<td align="left"><p>Sets the source line options that control source display and program stepping options. For more information see <strong><a href="../debuggercmds/l---l---set-source-options-.md" data-raw-source="[l+, l- (Set Source Options)](../debuggercmds/l---l---set-source-options-.md)">l+, l- (Set Source Options)</a></strong>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>srcpath:</strong> <em>directory</em></p></td>
-<td align="left"><p>Sets the source file search path. For more information see <strong><a href="-srcpath---lsrcpath--set-source-path-.md" data-raw-source="[.srcpath, .lsrcpath (Set Source Path)](-srcpath---lsrcpath--set-source-path-.md)">.srcpath, .lsrcpath (Set Source Path)</a></strong>.</p></td>
+<td align="left"><p>Sets the source file search path. For more information see <strong><a href="../debuggercmds/-srcpath---lsrcpath--set-source-path-.md" data-raw-source="[.srcpath, .lsrcpath (Set Source Path)](../debuggercmds/-srcpath---lsrcpath--set-source-path-.md)">.srcpath, .lsrcpath (Set Source Path)</a></strong>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>enable_unicode:</strong> <em>flag</em></p></td>

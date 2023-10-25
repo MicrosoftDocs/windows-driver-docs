@@ -38,6 +38,8 @@
   href: driversecurity/index.md
 - name: "Windows Debugging Tools"
   href: debugger/index.md
+- name: "Debugger commands"
+  href: debuggercmds/index.md  
 - name: "Windows Store Device Apps"
   href: devapps/index.md
 - name: "Driver Technologies"

@@ -49,9 +49,9 @@ The following table lists the environment variables that are used only in kernel
 <td align="left"><p>KDQUIET =<em>Anything</em></p></td>
 <td align="left"><p>If KDQUIET is defined, the debugger will run in <em>quiet mode</em>. Quiet mode involves three distinct effects:</p>
 <p>1. The debugger does not display messages each time an extension DLL is loaded or unloaded.</p>
-<p>2. The <strong><a href="r--registers-.md" data-raw-source="[r (Registers)](r--registers-.md)">r (Registers)</a></strong> command no longer requires an equal sign in its syntax.</p>
+<p>2. The <strong><a href="../debuggercmds/r--registers-.md" data-raw-source="[r (Registers)](../debuggercmds/r--registers-.md)">r (Registers)</a></strong> command no longer requires an equal sign in its syntax.</p>
 <p>3. The debugger will not display a warning message when breaking into the target computer.</p>
-<p>Quiet mode can also be controlled by using the <strong><a href="sq--set-quiet-mode-.md" data-raw-source="[sq (Set Quiet Mode)](sq--set-quiet-mode-.md)">sq (Set Quiet Mode)</a></strong> command.</p></td>
+<p>Quiet mode can also be controlled by using the <strong><a href="../debuggercmds/sq--set-quiet-mode-.md" data-raw-source="[sq (Set Quiet Mode)](../debuggercmds/sq--set-quiet-mode-.md)">sq (Set Quiet Mode)</a></strong> command.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p></p>
@@ -65,7 +65,7 @@ _NT_DEBUG_CACHE_SIZE
 <p>NOEXTWARNING tells the debugger not to output a warning when it cannot find an extension command.</p>
 <p>NOVERSIONCHECK tells the debugger not to check the version of debugger extensions.</p>
 <p></p>
-<p>These options can be modified or displayed by using the <strong><a href="so--set-kernel-debugging-options-.md" data-raw-source="[so (Set Kernel Options)](so--set-kernel-debugging-options-.md)">so (Set Kernel Options)</a></strong> command.</p></td>
+<p>These options can be modified or displayed by using the <strong><a href="../debuggercmds/so--set-kernel-debugging-options-.md" data-raw-source="[so (Set Kernel Options)](../debuggercmds/so--set-kernel-debugging-options-.md)">so (Set Kernel Options)</a></strong> command.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>_NT_KD_FILES = <em>MapFile</em></p></td>

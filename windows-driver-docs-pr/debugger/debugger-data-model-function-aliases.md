@@ -11,7 +11,7 @@ Function aliases are a unique short name by which a user of the debugger can acc
 
 This topic assumes the reader is familiar with the debugger object model and JavaScript. For information about using debugger objects with JavaScript, see [Native Debugger Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md).
 
-Some of the examples shown here use the dx command, for more information about working with the dx command, see [dx (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md). In addition the LINQ is used which is described in [Using LINQ With the debugger objects](./using-linq-with-the-debugger-objects.md).
+Some of the examples shown here use the dx command, for more information about working with the dx command, see [dx (Display Debugger Object Model Expression)](../debuggercmds/dx--display-visualizer-variables-.md). In addition the LINQ is used which is described in [Using LINQ With the debugger objects](./using-linq-with-the-debugger-objects.md).
 
 ## Using function alias as extension commands
 
@@ -220,7 +220,7 @@ In this example the top 5 process with the largest thread count are displayed.
 
 ## See also
 
-[dx (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md)
+[dx (Display Debugger Object Model Expression)](../debuggercmds/dx--display-visualizer-variables-.md)
 
 [Using LINQ With the debugger objects](using-linq-with-the-debugger-objects.md)
 

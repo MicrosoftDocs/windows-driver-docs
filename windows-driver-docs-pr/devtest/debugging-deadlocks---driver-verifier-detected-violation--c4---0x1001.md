@@ -28,7 +28,7 @@ When the Deadlock Detection option is active (Deadlock Detection is part of the 
 (B)reak, (I)gnore, (W)arn only, (R)emove assert?
 ```
 
-To debug this violation on a computer running Windows 8.1, choose **B** (Break), and enter the suggested debugger command ([**!deadlock**](../debugger/-deadlock.md)):
+To debug this violation on a computer running Windows 8.1, choose **B** (Break), and enter the suggested debugger command ([**!deadlock**](../debuggercmds/-deadlock.md)):
 
 ```
 kd> !deadlock
@@ -48,7 +48,7 @@ Lock A =   97dd800c (MyTestDriver!AlphaLock+0x00000000) - Type 'Spinlock'.
 Lock B =   97dd8008 (MyTestDriver!BravoLock+0x00000000) - Type 'Spinlock'.
 ```
 
-The [**!deadlock**](../debugger/-deadlock.md) **3** command can also be used to show more information, including the stack at the time of last acquire:
+The [**!deadlock**](../debuggercmds/-deadlock.md) **3** command can also be used to show more information, including the stack at the time of last acquire:
 
 ```
 kd> !deadlock 3
@@ -106,7 +106,7 @@ Lock A =     97dd800c (MyTestDriver!AlphaLock+0x00000000) - Type 'Spinlock'.
     Stack:   << Current stack trace - use kb to display it >>
 ```
 
-The debugger suggests using the [**kb (Display Stack Backtrace)**](../debugger/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command to display the current stack trace.
+The debugger suggests using the [**kb (Display Stack Backtrace)**](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command to display the current stack trace.
 
 ```
 kd> kb
@@ -228,4 +228,4 @@ For more information about spin locks and other synchronization techniques, see 
 
 [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md)
 
-[**!deadlock**](../debugger/-deadlock.md)
+[**!deadlock**](../debuggercmds/-deadlock.md)

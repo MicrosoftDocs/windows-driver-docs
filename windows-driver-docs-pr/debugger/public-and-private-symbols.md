@@ -84,7 +84,7 @@ You can use WinDbg, KD, or CDB to view symbols. When one of these debuggers has 
 
 When accessing private symbols, private symbol data is always used because these symbols are not included in the public symbol table. These symbols are never decorated.
 
-The [.symopt (Set Symbol Options)](-symopt--set-symbol-options-.md) command can be used to control the [symbol options](symbol-options.md) that determine how public and private symbols are used by the debugger. For example this command turns on symbols debugging information.
+The [.symopt (Set Symbol Options)](../debuggercmds/-symopt--set-symbol-options-.md) command can be used to control the [symbol options](symbol-options.md) that determine how public and private symbols are used by the debugger. For example this command turns on symbols debugging information.
 
 ```dbgcmd
  .symopt+ 0x80000000
@@ -102,7 +102,7 @@ The following options change how public and private symbols are used in the debu
 
 -   When the SYMOPT\_PUBLICS\_ONLY, SYMOPT\_NO\_PUBLICS, and SYMOPT\_AUTO\_PUBLICS options are all off, both private symbol data and the public symbol table are searched each time a symbol is needed. However, when matches are found in both places, the match in the private symbol data is used. Therefore, the behavior in this instance is the same as when SYMOPT\_AUTO\_PUBLICS is on, except that using SYMOPT\_AUTO\_PUBLICS may cause symbol searches to happen slightly faster.
 
-Here is an example in which the command [**x (Examine Symbols)**](x--examine-symbols-.md) is used three times. The first time, the default symbol options are used, and so the information is taken from the private symbol data. Note that this includes information about the address, size, and data type of the array **typingString**. Next, the command .symopt+ 4000 is used, causing the debugger to ignore the private symbol data. When the **x** command is then run again, the public symbol table is used; this time there is no size and data type information for **typingString**. Finally, the command .symopt- 2 is used, which causes the debugger to include decorations. When the **x** command is run this final time, the decorated version of the function name, **\_typingString**, is shown.
+Here is an example in which the command [**x (Examine Symbols)**](../debuggercmds/x--examine-symbols-.md) is used three times. The first time, the default symbol options are used, and so the information is taken from the private symbol data. Note that this includes information about the address, size, and data type of the array **typingString**. Next, the command .symopt+ 4000 is used, causing the debugger to ignore the private symbol data. When the **x** command is then run again, the public symbol table is used; this time there is no size and data type information for **typingString**. Finally, the command .symopt- 2 is used, which causes the debugger to include decorations. When the **x** command is run this final time, the decorated version of the function name, **\_typingString**, is shown.
 
 ```dbgcmd
 0:000> x /t /d *!*typingstring* 

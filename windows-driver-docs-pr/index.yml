@@ -59,6 +59,9 @@ conceptualContent:
         - text: Debug Windows drivers
           url: ./debugger/debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md
           itemType: tutorial
+        - text: Debugger commands
+          url: ./debuggercmds/index.md
+          itemType: tutorial          
     - title: API reference
       links:
         - text: Windows driver API reference

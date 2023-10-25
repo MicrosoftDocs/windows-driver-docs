@@ -64,7 +64,7 @@ A bug in the storage Miniport driver kept a SRB request from completing. See the
 ## Resolution
 -----
 
-The [!analyze](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause. 
+The [!analyze](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause. 
 
 The driver name returned in parameter 2 should point to the offending driver.
 

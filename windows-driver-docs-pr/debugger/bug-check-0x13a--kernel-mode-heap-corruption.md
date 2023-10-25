@@ -72,9 +72,9 @@ The KERNEL_MODE_HEAP_CORRUPTION bug check has a value of 0x0000013A. This bug ch
 
 ## Resolution
 
-The [!analyze](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [!analyze](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
-The [!heap](-heap.md) extension displays heap usage information, controls breakpoints in the heap manager, detects leaked heap blocks, searches for heap blocks, or displays page heap information.
+The [!heap](../debuggercmds/-heap.md) extension displays heap usage information, controls breakpoints in the heap manager, detects leaked heap blocks, searches for heap blocks, or displays page heap information.
 
 For general information on troubleshooting blue screen bug checks, see [Blue screen data](blue-screen-data.md).
 

@@ -51,7 +51,7 @@ mod*!functionC=Person7
 
 ### <span id="triage_ini_and__owner"></span><span id="TRIAGE_INI_AND__OWNER"></span> Triage.ini and !owner
 
-When you pass a module or function name to the [**!owner**](-owner.md) extension, the debugger displays the word "Followup" followed by the name of the module or function's owner.
+When you pass a module or function name to the [**!owner**](../debuggercmds/-owner.md) extension, the debugger displays the word "Followup" followed by the name of the module or function's owner.
 
 The following example uses the previous sample triage.ini file.
 
@@ -64,7 +64,7 @@ According to the file, "Person3" owns **module2!functionB**, and "Person4" owns 
 
 ### <span id="triage_ini_and__analyze"></span><span id="TRIAGE_INI_AND__ANALYZE"></span> Triage.ini and !analyze
 
-When you use the [**!analyze**](-analyze.md) extension, the debugger looks at the top faulting frame in the stack and tries to determine the owner of the module and function in this frame. If the debugger can determine the owner, the owner information is displayed.
+When you use the [**!analyze**](../debuggercmds/-analyze.md) extension, the debugger looks at the top faulting frame in the stack and tries to determine the owner of the module and function in this frame. If the debugger can determine the owner, the owner information is displayed.
 
 If the debugger cannot determine the owner, the debugger passes to the next stack frame, and so on, until the debugger determines the owner or the stack is completely examined.
 

@@ -45,7 +45,7 @@ Specifies the downstream store. This is a local directory or network share that 
 
 You can specify more than one downstream store, separated by asterisks. Multiple downstream stores are explained in **Cascading Downstream Stores** further down on this page.
 
-If you include two asterisks in a row where a downstream store would normally be specified, then the default downstream store is used. This store will be located in the sym subdirectory of the home directory. The home directory defaults to the debugger installation directory; this can be changed by using the [**!homedir**](-homedir.md) extension or by setting the DBGHELP\_HOMEDIR environment variable.
+If you include two asterisks in a row where a downstream store would normally be specified, then the default downstream store is used. This store will be located in the sym subdirectory of the home directory. The home directory defaults to the debugger installation directory; this can be changed by using the [**!homedir**](../debuggercmds/-homedir.md) extension or by setting the DBGHELP\_HOMEDIR environment variable.
 
 If *DownstreamStore* specifies a directory that does not exist, SymStore will attempt to create it.
 
@@ -171,7 +171,7 @@ srv*C:\Symbols*\\Machine1\Symbols*https://SymProxyName/Symbols;srv*C:\WebSymbols
 
 Another way to create a local cache of symbols is by using the <code>cache\*<em>localsymbolcache</em></code> string in your symbol path. This is not part of the symbol server element, but a separate element in your symbol path. The debugger will use the specified directory *localsymbolcache* to store any symbols loaded from any element that appears in your symbol path to the right of this string. This allows you to use a local cache for symbols downloaded from any location, not just those downloaded by a symbol server.
 
-For example, the following symbol path will not cache symbols taken from *\\\\someshare*. It will use c:\\mysymbols to cache symbols taken from *\\\\anothershare*, because the element beginning with *\\\\anothershare* appears to the right of the **cache\*c:\\mysymbols** element. It will also use c:\\mysymbols to cache symbols taken from the Microsoft public symbol store, because of the usual syntax used by the symbol server (**srv** with two or more asterisks). Moreover, if you subsequently use the [**.sympath+**](-sympath--set-symbol-path-.md) command to add additional locations to this path, these new elements will also be cached, since they will be appended to the right side of the path.
+For example, the following symbol path will not cache symbols taken from *\\\\someshare*. It will use c:\\mysymbols to cache symbols taken from *\\\\anothershare*, because the element beginning with *\\\\anothershare* appears to the right of the **cache\*c:\\mysymbols** element. It will also use c:\\mysymbols to cache symbols taken from the Microsoft public symbol store, because of the usual syntax used by the symbol server (**srv** with two or more asterisks). Moreover, if you subsequently use the [**.sympath+**](../debuggercmds/-sympath--set-symbol-path-.md) command to add additional locations to this path, these new elements will also be cached, since they will be appended to the right side of the path.
 
 ```console
 _NT_SYMBOL_PATH=\\someshare\that\cachestar\ignores;srv*c:\mysymbols*https://msdl.microsoft.com/download/symbols;cache*c:\mysymbols;\\anothershare\that\gets\cached

@@ -67,7 +67,7 @@ To open this Help documentation, do one of the following:
 
 -   At a command prompt, browse to the folder that contains Debugger.chm and run **hh debugger.chm**.
 
--   In any Windows debugger, use the [**.hh (Open HTML Help File)**](-hh--open-html-help-file-.md) command.
+-   In any Windows debugger, use the [**.hh (Open HTML Help File)**](../debuggercmds/-hh--open-html-help-file-.md) command.
 
 -   In WinDbg, click **Contents** on the **Help** menu. This command open the Help documentation and opens the **Contents** tab.
 

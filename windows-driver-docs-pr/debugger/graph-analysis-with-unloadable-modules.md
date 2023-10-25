@@ -12,9 +12,9 @@ This section describes a scenario that may affect you if you are working with un
 
 After loading, the extension module initializes at the first command usage. At initialization, the extension module checks whether every module is loaded and has correct symbols. If any individual module is unloaded or has incorrect symbols loaded, the extension disables the library extension which handles identification, dumping, etc. for that module. In this case, you need to manually re-enable the disabled module.
 
-The above situation may occur if you load the extension at boot time. Specifically, you may encounter this scenario if you load Ks.dll and then issue a [**.reboot**](-reboot--reboot-target-computer-.md) command. Or, it could happen if you break into the debugger during boot and load Ks.dll at that point.
+The above situation may occur if you load the extension at boot time. Specifically, you may encounter this scenario if you load Ks.dll and then issue a [**.reboot**](../debuggercmds/-reboot--reboot-target-computer-.md) command. Or, it could happen if you break into the debugger during boot and load Ks.dll at that point.
 
-In the following example, we are capturing two streams (sndrec32) from a Telex USB microphone. Breaking on **splitter!FilterProcess** and running [**!ks.graph**](-ks-graph.md) on splitter's filter yields:
+In the following example, we are capturing two streams (sndrec32) from a Telex USB microphone. Breaking on **splitter!FilterProcess** and running [**!ks.graph**](../debuggercmds/-ks-graph.md) on splitter's filter yields:
 
 ```dbgcmd
 kd> !graph ffa0c6d4 7
@@ -31,7 +31,7 @@ Graph With Starting Point ffa0c6d4:
         Pin ffa8b008 (File ffb26d68, <- "usbaudio" ffb1caf0) Irps(q/p) = 1, 7
 ```
 
-In this example, KMixer has been loaded and connected to splitter, but Kmixer does not appear in the graph. There are IRPs queued to splitter's output pin, yet the **!ks.graph** command is unable to backtrace and discover KMixer. Issue a [**!ks.libexts details**](-ks-libexts.md) command to investigate further:
+In this example, KMixer has been loaded and connected to splitter, but Kmixer does not appear in the graph. There are IRPs queued to splitter's output pin, yet the **!ks.graph** command is unable to backtrace and discover KMixer. Issue a [**!ks.libexts details**](../debuggercmds/-ks-libexts.md) command to investigate further:
 
 ```dbgcmd
 kd> !libexts details
@@ -59,7 +59,7 @@ LibExt "kmixer!" :
 
 According to the above output, the KMixer section of the extension is currently disabled (Status : INACTIVE). Since the extension module was first used in a context in which KMixer was not loaded, Ks.dll has disabled the KMixer section of the extension to prevent time-consuming references to an unloaded module.
 
-To enable KMixer explicitly, you can use [**!ks.libexts**](-ks-libexts.md) with the **enable** parameter, as follows:
+To enable KMixer explicitly, you can use [**!ks.libexts**](../debuggercmds/-ks-libexts.md) with the **enable** parameter, as follows:
 
 ```dbgcmd
 kd> !libexts enable kmixer

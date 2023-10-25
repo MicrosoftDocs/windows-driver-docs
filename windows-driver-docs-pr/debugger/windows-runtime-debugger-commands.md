@@ -10,9 +10,9 @@ ms.date: 05/23/2017
 
 You can use the following debugger extensions to debug code that uses data types defined by the Windows Runtime.
 
--   [**!hstring**](-hstring.md)
--   [**!hstring2**](-hstring2.md)
--   [**!winrterr**](-winrterr.md)
+-   [**!hstring**](../debuggercmds/-hstring.md)
+-   [**!hstring2**](../debuggercmds/-hstring2.md)
+-   [**!winrterr**](../debuggercmds/-winrterr.md)
 
  
 

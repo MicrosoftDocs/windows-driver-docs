@@ -61,16 +61,16 @@ CTRL+ALT+W
 
 ## Remarks
 
-This has the same effect as the [**version (Show Debugger Version)**](version--show-debugger-version-.md) command, except that the latter command displays the Windows operating system version as well.
+This has the same effect as the [**version (Show Debugger Version)**](../debuggercmds/version--show-debugger-version-.md) command, except that the latter command displays the Windows operating system version as well.
 
 In WinDbg, this can also be accomplished by selecting **View | Show Version**.
 
 ## <span id="see_also"></span>See also
 
 
-[**version (Show Debugger Version)**](version--show-debugger-version-.md)
+[**version (Show Debugger Version)**](../debuggercmds/version--show-debugger-version-.md)
 
-[**vertarget (Show Target Computer Version)**](vertarget--show-target-computer-version-.md)
+[**vertarget (Show Target Computer Version)**](../debuggercmds/vertarget--show-target-computer-version-.md)
 
  
 
