@@ -5,8 +5,7 @@ keywords:
 - Windows Driver Kit
 - previous versions
 - WDK
-ms.date: 06/21/2023
-ms.custom: 19H1
+ms.date: 10/24/2023
 ---
 
 # Other WDK downloads
@@ -35,16 +34,13 @@ To target Windows 8.1, Windows 8, and Windows 7, install an older WDK (Windows 1
 
 Certain device-specific stacks (for example graphics) continue to have x86/ARM32 user-mode components to support x86/ARM32 apps.
 
-Additionaly with the Windows 11, version 22H2 release of the WDK and EWDK, WDF redistributable co-installers are no longer supported. To learn how to work around this change, see [WDK Known Issues](./wdk-known-issues.md).
-
-
-
+Additionally, starting with Windows 11, version 22H2 release of the WDK and EWDK, WDF redistributable co-installers are no longer supported. To learn how to work around this change, see [WDK Known Issues](./wdk-known-issues.md).
 
 You can run the Windows 11, version 21H2 WDK (including the WDK for Windows Server 2022) on Windows 7 and later, to develop drivers for the following operating systems:
 
 |Client OS|Server OS|
 |-|-|
-|Windows 11, version 21H2 | Windows Server 2022|
+|Windows 11, version 21H2|Windows Server 2022|
 |Windows 10|Windows Server 2019, Windows Server 2016|
 |Windows 8.1|Windows Server 2012 R2|
 Windows 8|Windows Server 2012|

@@ -6,7 +6,7 @@ keywords:
 - WDK
 - Download
 - drivers
-ms.date: 07/17/2023
+ms.date: 10/24/2023
 ---
 
 # Download the Windows Driver Kit (WDK)
@@ -21,20 +21,11 @@ The WDK is used to develop, test, and deploy drivers for Windows.
 
 [Join the Windows Insider Program](https://insider.windows.com/) to get [WDK Insider Preview builds](https://aka.ms/wipwdk). For installation instructions for the Windows Insider Preview builds, see [Installing preview versions of the Windows Driver Kit (WDK)](./installing-preview-versions-wdk.md).
 
-Starting with the Windows 11, version 22H2 release of the WDK and EWDK, the kits support:
-
-* Visual Studio 2022 exclusively
-* Building and testing kernel-mode drivers for x64 and Arm64
-* Building and testing drivers for Windows 10, Windows Server 2016 and later client and server versions
-* Side by side (SxS) support with previous WDK/EWDK
-
-Multiple WDKs and EWDKs can be installed concurrently on the same computer and even be part of the same build system. You can run the Windows 11, version  23H2 WDK on Windows 7 and later.
+Multiple WDKs and EWDKs can be installed concurrently on the same computer and even be part of the same build system. You can run the Windows 11, version 23H2 WDK on Windows 7 and later.
 
 To target Windows 8.1, Windows 8, and Windows 7, install an older WDK and an older version of Visual Studio either on the same machine or on a separate machine. For links to older kits, see [Other WDK downloads](./other-wdk-downloads.md).
 
 Certain device-specific stacks (for example graphics) continue to have x86/ARM32 user-mode components to support x86/ARM32 apps.
-
-Starting with Windows 11, version 22H2 WDK release, WDF redistributable co-installers are no longer supported. To learn how to work around this change, see [WDK Known Issues](./wdk-known-issues.md).
 
 ## Download and install the Windows 11, version 23H2 WDK
 
