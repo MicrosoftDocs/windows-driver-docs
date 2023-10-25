@@ -5,8 +5,7 @@ keywords:
 - Windows Driver Kit
 - previous versions
 - WDK
-ms.date: 06/21/2023
-ms.custom: 19H1
+ms.date: 10/24/2023
 ---
 
 # Other WDK downloads
@@ -22,11 +21,26 @@ Visual Studio that is appropriate for your targeted platform.
 
 ## Runtime requirements
 
-You can run the Windows 10 WDK versions (including the WDK for Windows Server 2022) on Windows 7 and later, to develop drivers for the following operating systems:
+Starting with the Windows 11, version 22H2 release of the WDK and EWDK, the kits support:
+
+* Visual Studio 2022 exclusively
+* Building and testing kernel-mode drivers for x64 and Arm64
+* Building and testing drivers for Windows 10, Windows Server 2016 and later client and server versions
+* Side by side (SxS) support with previous WDK/EWDK
+
+Multiple WDKs and EWDKs can be installed concurrently on the same computer and even be part of the same build system. You can run the Windows 11, version 22H2 WDK on Windows 7 and later.
+
+To target Windows 8.1, Windows 8, and Windows 7, install an older WDK (Windows 11, version 21H2 and previous) and an older version of Visual Studio either on the same machine or on a separate machine. For links to older kits, see the table below.
+
+Certain device-specific stacks (for example graphics) continue to have x86/ARM32 user-mode components to support x86/ARM32 apps.
+
+Additionally, starting with Windows 11, version 22H2 release of the WDK and EWDK, WDF redistributable co-installers are no longer supported. To learn how to work around this change, see [WDK Known Issues](./wdk-known-issues.md).
+
+You can run the Windows 11, version 21H2 WDK (including the WDK for Windows Server 2022) on Windows 7 and later, to develop drivers for the following operating systems:
 
 |Client OS|Server OS|
 |-|-|
-|Windows 11, version 21H2| Windows Server 2022|
+|Windows 11, version 21H2|Windows Server 2022|
 |Windows 10|Windows Server 2019, Windows Server 2016|
 |Windows 8.1|Windows Server 2012 R2|
 Windows 8|Windows Server 2012|
@@ -34,25 +48,24 @@ Windows 7|Windows Server 2008 R2 SP1|
 
 ## Step 1: Install Visual Studio
 
-The WDK requires Visual Studio. For more information about system requirements for Visual Studio, see [Visual Studio 2019 System Requirements](/visualstudio/releases/2019/system-requirements).
+The WDK requires Visual Studio. For more information about system requirements for Visual Studio, see [Visual Studio 2022 System Requirements](/visualstudio/releases/2022/system-requirements).
 
-> [!NOTE]
-> Visual Studio 2022 is not supported by the Windows 11, version 21H2 WDK. To use Visual Studio 2022 to develop and test drivers, download the Windows 11, version 22H2 WDK. For details, see [Download the Windows Driver Kit (WDK)](./download-the-wdk.md).
 
 The following table indicates which Visual Studio version is required for the different releases of the WDK.
 
 | Targeted versions of Windows      | Edition(s) of Visual Studio            |
 |--------------------------|----------------------------------------|
+|Windows 11, version 22H2| [Visual Studio Community 2022](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=17) <br/> [Visual Studio Professional 2022](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=17) <br/> [Visual Studio Enterprise 2022](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=17)
 |Windows 11, version 21H2<br/>Windows Server 2022 <br/>Windows 10, version 2004 <br/>Windows 10, version 1903|[Visual Studio Community 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=16) <br/>[Visual Studio Professional 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=16) <br/>[Visual Studio Enterprise 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=16)|
 | Windows 10, version 1809 <br/>Windows 10, version 1803 <br/>Windows 10, version 1709 | [Visual Studio Community 2017](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15) <br/>[Visual Studio Professional 2017](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15) <br/>[Visual Studio Enterprise 2017](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15) |
 | Windows 10, version 1703 <br/>Windows 10, version 1607 | [Visual Studio Express 2015 for Desktop](https://go.microsoft.com/fwlink/?linkid=875331) <br/>[Visual Studio Community 2015](https://go.microsoft.com/fwlink/p/?LinkId=534599) <br/>[Visual Studio Professional 2015](https://go.microsoft.com/fwlink/p/?LinkId=619628) <br/>[Visual Studio Enterprise 2015](https://go.microsoft.com/fwlink/p/?LinkId=619629) |
 | Windows 8.1 Update <br/>Windows 8.1 | [Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=875331) |
 | Windows 8                | [Visual Studio Professional 2012](https://go.microsoft.com/fwlink/p/?LinkID=255976) <br/>[Visual Studio Ultimate 2012](https://go.microsoft.com/fwlink/p/?LinkID=255982) |
 
-### Configure Visual Studio for Windows 11, version 21H2 and Windows 10, versions 1709, 1803, 1809, 1903, 2004, and Windows Server 2022
+### Configure Visual Studio for Windows 11, version 22H2, version 21H2 and Windows 10, versions 1709, 1803, 1809, 1903, 2004, and Windows Server 2022
 
 When you install Visual Studio, select the **Desktop development with
-C++** workload. The Windows 10 Software Development Kit (SDK) is
+C++** workload. The Windows 11 Software Development Kit (SDK) is
 automatically included and is displayed in the right-hand **Summary**
 pane.
 
@@ -86,7 +99,8 @@ develop, build, package, deploy, test, and debug drivers.
 
 | Targeted versions of Windows      | WDK and related downloads                       |
 |--------------------------|-------------------------------------------------|
-|Windows 11, version 22H2  | [Download the Windows Driver Kit (WDK)](./download-the-wdk.md)|
+|Windows 11, Version 23H2| [Download the Windows Driver Kit (WDK)](./download-the-wdk.md)|
+|Windows 11, version 22H2  | [WDK for Windows 11, version 22H2 ](https://go.microsoft.com/fwlink/?linkid=2196230)|
 |Windows 11, version 21H2  | [Windows 11, version 21H2 WDK](https://go.microsoft.com/fwlink/?linkid=2166289)|
 | Windows Server 2022      | [WDK for Windows Server 2022](https://go.microsoft.com/fwlink/?linkid=2164149)|
 | Windows 10, version 22H2<br>Windows 10, version 21H2<br>Windows 10, version 21H1<br>Windows 10, version 20H2<br>Windows 10, version 2004 | [WDK for Windows 10, version 2004](https://go.microsoft.com/fwlink/?linkid=2128854)|
@@ -118,13 +132,14 @@ Visual Studio Build Tools, the SDK, and the WDK. This environment
 doesn't include all the features available in Visual Studio, such as
 the integrated development environment (IDE).
 
-Using the EWDK requires .NET Framework 4.6.1. For more information about which systems run this version of the framework, see [.NET Framework system requirements](/dotnet/framework/get-started/system-requirements). For links to download the .NET Framework, see [Install the .NET Framework for developers](/dotnet/framework/install/guide-for-developers).
+Using the EWDK requires .NET Framework 4.7.2. For more information about which systems run this version of the framework, see [.NET Framework system requirements](/dotnet/framework/get-started/system-requirements). For links to download the .NET Framework, see [.NET Framework system requirements](/dotnet/framework/get-started/system-requirements).
 
 For more information about the EWDK, see
 [Using the Enterprise WDK](./develop/using-the-enterprise-wdk.md).
 
 | Versions of Windows               | EWDK                              |
 |-----------------------------------|-----------------------------------|
+| Windows 11, version 22H2 | [Windows 11, version 22H2 (updated May 2023) EWDK](/legal/windows/hardware/enterprise-wdk-license-2022)
 | Windows 11, version 21H2          | [Windows 11, version 21H2 EWDK](/legal/windows/hardware/enterprise-wdk-license-2019-New) |
 | Windows Server 2022               | [EWDK for Windows Windows Server 2022](/legal/windows/hardware/enterprise-wdk-license-2019) |
 | Windows 10, version 2004          | [EWDK for Windows 10, version 2004](/legal/windows/hardware/enterprise-wdk-license-2019) |

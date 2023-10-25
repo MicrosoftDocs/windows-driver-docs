@@ -6,7 +6,7 @@ keywords:
 - WDK
 - Download
 - drivers
-ms.date: 07/17/2023
+ms.date: 10/24/2023
 ---
 
 # Download the Windows Driver Kit (WDK)
@@ -21,22 +21,13 @@ The WDK is used to develop, test, and deploy drivers for Windows.
 
 [Join the Windows Insider Program](https://insider.windows.com/) to get [WDK Insider Preview builds](https://aka.ms/wipwdk). For installation instructions for the Windows Insider Preview builds, see [Installing preview versions of the Windows Driver Kit (WDK)](./installing-preview-versions-wdk.md).
 
-Starting with the Windows 11, version 22H2 release of the WDK and EWDK, the kits support:
-
-* Visual Studio 2022 exclusively
-* Building and testing kernel-mode drivers for x64 and Arm64
-* Building and testing drivers for Windows 10, Windows Server 2016 and later client and server versions
-* Side by side (SxS) support with previous WDK/EWDK
-
-Multiple WDKs and EWDKs can be installed concurrently on the same computer and even be part of the same build system. You can run the Windows 11, version 22H2 WDK on Windows 7 and later.
+Multiple WDKs and EWDKs can be installed concurrently on the same computer and even be part of the same build system. You can run the Windows 11, version 23H2 WDK on Windows 7 and later.
 
 To target Windows 8.1, Windows 8, and Windows 7, install an older WDK and an older version of Visual Studio either on the same machine or on a separate machine. For links to older kits, see [Other WDK downloads](./other-wdk-downloads.md).
 
 Certain device-specific stacks (for example graphics) continue to have x86/ARM32 user-mode components to support x86/ARM32 apps.
 
-Starting with this release, WDF redistributable co-installers are no longer supported. To learn how to work around this change, see [WDK Known Issues](./wdk-known-issues.md).
-
-## Download and install the Windows 11, version 22H2 WDK
+## Download and install the Windows 11, version 23H2 WDK
 
 ### ![download icon.](images/download-install.png) Step 1: Install Visual Studio 2022
 
@@ -69,22 +60,22 @@ MSVC v143 - VS 2022 C++ x64/x86 build tools (Latest)
 MSVC v143 - VS 2022 C++ x64/x86 Spectre-mitigated libs (Latest)
 ```
 
-### ![download icon.](images/download-install.png) Step 2: Install Windows 11, version 22H2 SDK
+### ![download icon.](images/download-install.png) Step 2: Install Windows 11, version 23H2 SDK
 
 After you've successfully installed Visual Studio, your next step is to download the Windows Software Development Kit (SDK).
 
-* [Download Windows 11, version 22H2 SDK](https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/)
+* [Download Windows 11, version 23H2 SDK](https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/)
 
 The provided links for the SDK and the WDK have matching build numbers, which is always required for the kits to work together. If you decide to install your own SDK/WDK pair, perhaps for a different Windows version, ensure that the build numbers match.
 
-### ![download icon.](images/download-install.png) Step 3: Install Windows 11, version 22H2 WDK
+### ![download icon.](images/download-install.png) Step 3: Install Windows 11, version 23H2 WDK
 
-* [Download WDK for Windows 11, version 22H2 ](https://go.microsoft.com/fwlink/?linkid=2196230)
+* [Download WDK for Windows 11, version 23H2 ](https://go.microsoft.com/fwlink/?linkid=2249371)
 
 The WDK Visual Studio extension is included in the default WDK installation.
 
 > [!TIP]
-> If you can't find driver project templates in Visual Studio, the WDK Visual Studio extension didn't install properly. To resolve this, run the WDK.vsix file from this location: C:\Program Files (x86)\Windows Kits\10\Vsix\VS2022\10.0.22621.382\WDK.vsix.
+> If you can't find driver project templates in Visual Studio, the WDK Visual Studio extension didn't install properly. To resolve this, run the WDK.vsix file from this location: C:\Program Files (x86)\Windows Kits\10\Vsix\VS2022\10.0.22621.2428\WDK.vsix.
 
 ## Enterprise WDK (EWDK)
 
@@ -96,9 +87,9 @@ The latest public version of the EWDK contains Visual Studio 2022 Build Tools 17
 
 The EWDK also requires the .NET Framework version 4.7.2. For more information about other requirements for the .NET Framework, see [.NET Framework system requirements](/dotnet/framework/get-started/system-requirements).
 
-### ![download icon.](images/download-install.png) Windows 11, version 22H2 (updated May 2023) EWDK with Visual Studio Build Tools
+### ![download icon.](images/download-install.png) Windows 11, version 23H2 EWDK with Visual Studio Build Tools
 
-* [Download the Windows 11, version 22H2 (updated May 2023) EWDK](/legal/windows/hardware/enterprise-wdk-license-2022)
+* [Download the Windows 11, version 23H2 EWDK](/legal/windows/hardware/enterprise-wdk-license-2022)
 
 Once you have downloaded the ISO, use these steps to set up your build environment:
 
