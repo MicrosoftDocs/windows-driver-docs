@@ -90,8 +90,8 @@
         href: desktop-cosa-database-settings.md
       - name: "Testing your desktop COSA database submission"
         href: testing-your-desktop-cosa-database-submission.md
-      - name: "Submitting the desktop COSA database update"
-        href: submitting-the-desktop-cosa-database-update.md
+      - name: "Submitting a desktop COSA database update"
+        href: submitting-a-desktop-cosa-database-update.md
   - name: "Service metadata"
     items: 
     - name: "Service metadata overview"
