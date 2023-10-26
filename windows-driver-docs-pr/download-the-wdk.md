@@ -68,7 +68,7 @@ The provided links for the SDK and the WDK have matching build numbers, which is
 
 ## ![download icon.](images/download-install.png) Step 3: Install WDK
 
-* [Download WDK for Windows 11, version 22H2 (updated Oct 2023)](https://go.microsoft.com/fwlink/?linkid=2249371)
+* [Download WDK for Windows 11, version 22H2 (10.0.22621.2428, updated Oct 2023)](https://go.microsoft.com/fwlink/?linkid=2249371)
 
 The WDK Visual Studio extension is included in the default WDK installation.
 
