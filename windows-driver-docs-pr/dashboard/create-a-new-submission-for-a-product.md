@@ -28,7 +28,7 @@ The productId in the method is the product for which the submission is intended.
 
 | Header | Type | Description |
 |:--|:--|:--|
-| Authorization | String | Required. The Azure Entra Identity access token in the form **Bearer** \<token\>. |
+| Authorization | String | Required. The Microsoft Entra Identity access token in the form **Bearer** \<token\>. |
 | Accept | String | Optional. Specifies the type of content. Allowed value is “application/json” |
 
 
