@@ -10,7 +10,7 @@ ms.date: 11/04/2022
 
 This article describes how to write a small [Universal Windows driver](/windows-hardware/drivers) using Kernel-Mode Driver Framework (KMDF) and then deploy and install your driver on a separate computer. 
 
-To get started, be sure you have [Microsoft Visual Studio](../download-the-wdk.md#download-and-install-the-wdk-for-windows-11-version-22h2-updated-oct-2023), the [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-sdk), and the [Windows Driver Kit (WDK)](../download-the-wdk.md) installed.
+Before you proceed, you'll need to follow the installation steps listed in [Download the Windows Driver Kit (WDK)](../download-the-wdk.md).
 
 [Debugging Tools for Windows](../debugger/index.md) is included when you install the WDK.
 

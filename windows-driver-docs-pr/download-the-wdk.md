@@ -27,9 +27,7 @@ To target Windows 8.1, Windows 8, and Windows 7, install an older WDK and an old
 
 Certain device-specific stacks (for example graphics) continue to have x86/ARM32 user-mode components to support x86/ARM32 apps.
 
-## Download and install the WDK for Windows 11, version 22H2 (updated Oct 2023)
-
-### ![download icon.](images/download-install.png) Step 1: Install Visual Studio 2022
+## ![download icon.](images/download-install.png) Step 1: Install Visual Studio 2022
 
 The WDK requires Visual Studio. For more information about system requirements for Visual Studio, see [Visual Studio 2022 System Requirements](/visualstudio/releases/2022/system-requirements).
 
@@ -60,7 +58,7 @@ MSVC v143 - VS 2022 C++ x64/x86 build tools (Latest)
 MSVC v143 - VS 2022 C++ x64/x86 Spectre-mitigated libs (Latest)
 ```
 
-### ![download icon.](images/download-install.png) Step 2: Install Windows Software Development Kit (SDK) for Windows 11, version 22H2 (updated Oct 2023)
+## ![download icon.](images/download-install.png) Step 2: Install SDK
 
 After you've successfully installed Visual Studio, your next step is to download the Windows Software Development Kit (SDK).
 
@@ -68,7 +66,7 @@ After you've successfully installed Visual Studio, your next step is to download
 
 The provided links for the SDK and the WDK have matching build numbers, which is always required for the kits to work together. If you decide to install your own SDK/WDK pair, perhaps for a different Windows version, ensure that the build numbers match.
 
-### ![download icon.](images/download-install.png) Step 3: Install WDK for Windows 11, version 22H2 (updated Oct 2023)
+## ![download icon.](images/download-install.png) Step 3: Install WDK
 
 * [Download WDK for Windows 11, version 22H2 (updated Oct 2023)](https://go.microsoft.com/fwlink/?linkid=2249371)
 
