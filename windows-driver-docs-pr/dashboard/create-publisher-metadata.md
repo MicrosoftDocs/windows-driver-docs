@@ -25,7 +25,7 @@ This method has the following syntax. See the following sections for usage examp
 
 | Header | Type | Description |
 |:--|:--|:--|
-| Authorization | String | Required. The Azure Entra Identity access token in the form **Bearer** \<token\>. |
+| Authorization | String | Required. The Microsoft Entra Identity access token in the form **Bearer** \<token\>. |
 | accept | String | Optional. Specifies the type of content. Allowed value is “application/json” |
 
 ### Request parameters
