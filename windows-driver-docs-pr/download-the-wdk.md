@@ -75,7 +75,7 @@ The WDK Visual Studio extension is included in the default WDK installation.
 > [!TIP]
 > If you can't find driver project templates in Visual Studio, the WDK Visual Studio extension didn't install properly. To resolve this, run the WDK.vsix file from this location: C:\Program Files (x86)\Windows Kits\10\Vsix\VS2022\10.0.22621.2428\WDK.vsix.
 
-## Enterprise WDK (EWDK)
+## ![download icon.](images/download-install.png) Enterprise WDK (EWDK)
 
 As an alternative to downloading Visual Studio, the SDK, and the WDK, you can download the EWDK, which is a standalone, self-contained command-line environment for building drivers. It includes Visual Studio Build Tools, the SDK, and the WDK.
 
@@ -85,9 +85,7 @@ The latest public version of the EWDK contains Visual Studio 2022 Build Tools 17
 
 The EWDK also requires the .NET Framework version 4.7.2. For more information about other requirements for the .NET Framework, see [.NET Framework system requirements](/dotnet/framework/get-started/system-requirements).
 
-### ![download icon.](images/download-install.png) EWDK for Windows 11, version 22H2 (updated Oct 2023) with Visual Studio Build Tools
-
-* [Download the EWDK for Windows 11, version 22H2 (updated Oct 2023)](/legal/windows/hardware/enterprise-wdk-license-2022)
+* [Download the EWDK for Windows 11, version 22H2 (updated Oct 2023) with Visual Studio Build Tools](/legal/windows/hardware/enterprise-wdk-license-2022)
 
 Once you have downloaded the ISO, use these steps to set up your build environment:
 
