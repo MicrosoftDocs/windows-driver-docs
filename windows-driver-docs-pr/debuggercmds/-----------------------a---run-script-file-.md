@@ -2,7 +2,7 @@
 title: $ , $ , $$ , $$ , $$ a (Run Script File)
 description: The $ , $ , $$ , $$ , and $$ a commands read the contents of the specified script file and use its contents as debugger command input.
 keywords: ["$ (Run Script File) command", "$$ (Run Script File) command", "$$ (Run Script File) command", "Run Script File ($ ) command", "Run Script File ($ ) command", "Run Script File ($$ ) command", "Run Script File ($$ ) comm", "$ , $ , $$ , $$ , $$ a (Run Script File) Windows Debugging"]
-ms.date: 09/17/2018
+ms.date: 09/18/2018
 topic_type:
 - apiref
 ms.topic: reference

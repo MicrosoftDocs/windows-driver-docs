@@ -9714,7 +9714,7 @@
         },
         {
             "source_path": "windows-driver-docs-pr/debugger/debugging-using-windbg-preview.md",
-            "redirect_URL": "//windows-hardware/drivers/debugger/windbg-overview",
+            "redirect_URL": "//windows-hardware/drivers/debugger/debugger-download-tools",
             "redirect_document_id": false
         },
         {
