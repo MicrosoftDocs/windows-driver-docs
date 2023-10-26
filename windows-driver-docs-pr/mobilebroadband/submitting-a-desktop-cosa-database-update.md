@@ -187,16 +187,6 @@ This section demonstrates how to change an MCC, MNC value pair, add or change SP
 1. Look for the Connection you want to modify, then modify any of the values there.
 1. Select **Save draft**, add a note, then select **Save**.
 
-## Update APN, other connection settings
-
-1. Open the correct profile you want to modify. If you have more than one profile, make sure you are modifying the correct profile.
-
-    - (Optional) Check your profiles' APN values.
-    - (Optional) Check that your MCC, MNC pair does not exist in the current target list.
-
-1. Look for the connection you want to modify, then modify any of the values there.
-1. Select **Save draft**, add a note, then select **Save**.
-
 ## Related content
 
 - [COSA overview](cosa-overview.md)
