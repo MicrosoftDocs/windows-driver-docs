@@ -64,7 +64,7 @@ MSVC v143 - VS 2022 C++ x64/x86 Spectre-mitigated libs (Latest)
 
 After you've successfully installed Visual Studio, your next step is to download the Windows Software Development Kit (SDK).
 
-* [Download the SDK for Windows 11, version 22H2 (update Oct 2023)](https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/)
+* [Download the SDK for Windows 11, version 22H2 (updated Oct 2023)](https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/)
 
 The provided links for the SDK and the WDK have matching build numbers, which is always required for the kits to work together. If you decide to install your own SDK/WDK pair, perhaps for a different Windows version, ensure that the build numbers match.
 
@@ -87,7 +87,7 @@ The latest public version of the EWDK contains Visual Studio 2022 Build Tools 17
 
 The EWDK also requires the .NET Framework version 4.7.2. For more information about other requirements for the .NET Framework, see [.NET Framework system requirements](/dotnet/framework/get-started/system-requirements).
 
-### ![download icon.](images/download-install.png) EWDK for Windows 11, version 22H2 (update Oct 2023) with Visual Studio Build Tools
+### ![download icon.](images/download-install.png) EWDK for Windows 11, version 22H2 (updated Oct 2023) with Visual Studio Build Tools
 
 * [Download the EWDK for Windows 11, version 22H2 (updated Oct 2023)](/legal/windows/hardware/enterprise-wdk-license-2022)
 
