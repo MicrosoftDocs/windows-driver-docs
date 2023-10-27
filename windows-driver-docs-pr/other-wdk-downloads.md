@@ -97,22 +97,22 @@ develop, build, package, deploy, test, and debug drivers.
 > will by default install the WDK extensions for Visual Studio. These
 > extensions are required for integration of the WDK with Visual Studio.
 
-| Targeted versions of Windows      | WDK and related downloads                       |
+| Released with      | WDK and related downloads                       |
 |--------------------------|-------------------------------------------------|
 |Windows 11, Version 23H2 | [WDK 10.0.22621.2428 (released 10/24/2023)](./download-the-wdk.md)|
 |Windows 11, version 22H2  | [WDK for Windows 11, version 22H2 (10.0.22621.382, released 5/24/2022)](https://go.microsoft.com/fwlink/?linkid=2196230)|
 |Windows 11, version 21H2  | [WDK for Windows 11, version 21H2](https://go.microsoft.com/fwlink/?linkid=2166289)|
 | Windows Server 2022      | [WDK for Windows Server 2022](https://go.microsoft.com/fwlink/?linkid=2164149)|
-| Windows 10, version 22H2<br>Windows 10, version 21H2<br>Windows 10, version 21H1<br>Windows 10, version 20H2<br>Windows 10, version 2004 | [WDK for Windows 10, version 2004](https://go.microsoft.com/fwlink/?linkid=2128854)|
-| Windows 10, version 1909<br>Windows 10, version 1903 | [WDK for Windows 10, version 1903](https://go.microsoft.com/fwlink/?linkid=2085767) |
+| Windows 10, version 2004 | [WDK for Windows 10, version 2004](https://go.microsoft.com/fwlink/?linkid=2128854)|
+| Windows 10, version 1903 | [WDK for Windows 10, version 1903](https://go.microsoft.com/fwlink/?linkid=2085767) |
 | Windows 10, version 1809<br>Windows Server 2019 | [WDK for Windows 10, version 1809](https://go.microsoft.com/fwlink/?linkid=2026156) |
 | Windows 10, version 1803 | [WDK for Windows 10, version 1803](https://go.microsoft.com/fwlink/?linkid=873060) |
 | Windows 10, version 1709 | [WDK for Windows 10, version 1709](https://go.microsoft.com/fwlink/p/?linkid=859232) |
 | Windows 10, version 1703 | [WDK for Windows 10, version 1703](https://go.microsoft.com/fwlink/p/?LinkID=845980) |
-| Windows 10, version 1607<br>Windows 10, version 1511<br>Windows 10, version 1507<br>Windows Server 2016 | [WDK for Windows 10, version 1607](https://go.microsoft.com/fwlink/p/?LinkId=526733)                |
+| Windows 10, version 1607<br>Windows Server 2016 | [WDK for Windows 10, version 1607](https://go.microsoft.com/fwlink/p/?LinkId=526733)                |
 | Windows 8.1 Update       | WDK 8.1 Update (English only) - permanently unavailable<br/>WDK 8.1 Update Test Pack (English only) - permanently unavailable <br/>[WDK 8.1 Samples](https://go.microsoft.com/fwlink/p/?LinkId=618052)  <br/><br/>**Note:** You can use any WDK from Windows 10, version 1607 through Windows 11, version 21H2 to build drivers for Windows 8.1.|
-| Windows 7 | [WDK 7.1.0](https://www.microsoft.com/download/confirmation.aspx?id=11800)|
 | Windows 8                | [WDK 8](https://go.microsoft.com/fwlink/p/?LinkID=324284) (English only) <br/>[WDK 8 redistributable components](https://go.microsoft.com/fwlink/p/?LinkID=253170) (English only) <br/>[WDK 8 Samples](https://go.microsoft.com/fwlink/p/?LinkId=616509) |
+| Windows 7 | [WDK 7.1.0](https://www.microsoft.com/download/confirmation.aspx?id=11800)|
 
 >[!NOTE]
 >Please review [Hardware development kits for Windows 10, Version 2004 (10.19041.1)](https://social.msdn.microsoft.com/Forums/en-US/96c770a9-19a3-42d0-8d0e-bd200285d980/hardware-development-kits-for-windows-10-version-2004?forum=wdk), which addresses a bug with ExAllocatePoolZero.
