@@ -62,13 +62,13 @@ MSVC v143 - VS 2022 C++ x64/x86 Spectre-mitigated libs (Latest)
 
 After you've successfully installed Visual Studio, your next step is to download the Windows Software Development Kit (SDK).
 
-* [Download the SDK for Windows 11, version 22H2 (updated Oct 2023)](https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/)
+* [Download Windows SDK 10.0.22621.2428 (released 10/24/2023)](https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/)
 
 The provided links for the SDK and the WDK have matching build numbers, which is always required for the kits to work together. If you decide to install your own SDK/WDK pair, perhaps for a different Windows version, ensure that the build numbers match.
 
 ## ![download icon.](images/download-install.png) Step 3: Install WDK
 
-* [Download WDK for Windows 11, version 22H2 (10.0.22621.2428, updated Oct 2023)](https://go.microsoft.com/fwlink/?linkid=2249371)
+* [Download WDK 10.0.22621.2428 (released 10/24/2023)](https://go.microsoft.com/fwlink/?linkid=2249371)
 
 The WDK Visual Studio extension is included in the default WDK installation.
 
