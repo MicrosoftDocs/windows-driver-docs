@@ -16,7 +16,7 @@ The WDK is used to develop, test, and deploy drivers for Windows.
 * [Learn what's new in driver development](./what-s-new-in-driver-development.md)
 * [Review known issues](./wdk-known-issues.md)
 
-You can run the WDK 10.0.22621.2428 (released 10/24/2023) on Windows 7 and later to target Windows 10, Windows Server 2016 and later client and server versions.
+You can run the WDK 10.0.22621.2428 (released October 24, 2023) on Windows 7 and later to target Windows 10, Windows Server 2016 and later client and server versions.
 
 To target Windows 8.1, Windows 8, and Windows 7, install an older WDK and an older version of Visual Studio either on the same machine or on a separate machine. For links to older kits, see [Other WDK downloads](./other-wdk-downloads.md).
 
@@ -60,13 +60,13 @@ MSVC v143 - VS 2022 C++ x64/x86 Spectre-mitigated libs (Latest)
 
 After you've successfully installed Visual Studio, your next step is to download the Windows Software Development Kit (SDK).
 
-* [Download Windows SDK 10.0.22621.2428 (released 10/24/2023)](https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/)
+* [Download Windows SDK 10.0.22621.2428 (released October 24, 2023)](https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/)
 
 The provided links for the SDK and the WDK have matching build numbers, which is always required for the kits to work together. If you decide to install your own SDK/WDK pair, perhaps for a different Windows version, ensure that the build numbers match.
 
 ## ![download icon.](images/download-install.png) Step 3: Install WDK
 
-* [Download WDK 10.0.22621.2428 (released 10/24/2023)](https://go.microsoft.com/fwlink/?linkid=2249371)
+* [Download WDK 10.0.22621.2428 (released October 24, 2023)](https://go.microsoft.com/fwlink/?linkid=2249371)
 
 The WDK Visual Studio extension is included in the default WDK installation.
 
@@ -83,7 +83,7 @@ The latest public version of the EWDK contains Visual Studio 2022 Build Tools 17
 
 The EWDK also requires the .NET Framework version 4.7.2. For more information about other requirements for the .NET Framework, see [.NET Framework system requirements](/dotnet/framework/get-started/system-requirements).
 
-* [Download EWDK 10.0.22621.2428 (released 10/24/2023) with Visual Studio Build Tools](/legal/windows/hardware/enterprise-wdk-license-2022)
+* [Download EWDK 10.0.22621.2428 (released October 24, 2023) with Visual Studio Build Tools](/legal/windows/hardware/enterprise-wdk-license-2022)
 
 Once you have downloaded the ISO, use these steps to set up your build environment:
 
