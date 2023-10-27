@@ -11,21 +11,16 @@ ms.date: 10/24/2023
 
 # Download the Windows Driver Kit (WDK)
 
-> [!NOTE]
-> Make sure to use Visual Studio 17.4.1 or newer.  Specifically, driver debugging within Visual Studio does not work from Visual Studio 17.2.0 up until 17.4.1. For more info, see [WDK Known Issues](./wdk-known-issues.md).
-
 The WDK is used to develop, test, and deploy drivers for Windows.
 
 * [Learn what's new in driver development](./what-s-new-in-driver-development.md)
 * [Review known issues](./wdk-known-issues.md)
 
-[Join the Windows Insider Program](https://insider.windows.com/) to get [WDK Insider Preview builds](https://aka.ms/wipwdk). For installation instructions for the Windows Insider Preview builds, see [Installing preview versions of the Windows Driver Kit (WDK)](./installing-preview-versions-wdk.md).
-
-Multiple WDKs and EWDKs can be installed concurrently on the same computer and even be part of the same build system. You can run the WDK for Windows 11, version 22H2 (updated Oct 2023) on Windows 7 and later.
+You can run the WDK 10.0.22621.2428 (released 10/24/2023) on Windows 7 and later to target Windows 10, Windows Server 2016 and later client and server versions.
 
 To target Windows 8.1, Windows 8, and Windows 7, install an older WDK and an older version of Visual Studio either on the same machine or on a separate machine. For links to older kits, see [Other WDK downloads](./other-wdk-downloads.md).
 
-Certain device-specific stacks (for example graphics) continue to have x86/ARM32 user-mode components to support x86/ARM32 apps.
+[Join the Windows Insider Program](https://insider.windows.com/) to get [WDK Insider Preview builds](https://aka.ms/wipwdk). For installation instructions for the Windows Insider Preview builds, see [Installing preview versions of the Windows Driver Kit (WDK)](./installing-preview-versions-wdk.md).
 
 ## ![download icon.](images/download-install.png) Step 1: Install Visual Studio 2022
 
@@ -38,6 +33,9 @@ The following editions of Visual Studio 2022 support driver development for this
 * [Download Visual Studio Enterprise 2022](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=17)
 
 When you install Visual Studio 2022, select the **Desktop development with C++** workload. Don't worry about the SDK at this point; you install this in step 2 below.
+
+> [!NOTE]
+> Make sure to use Visual Studio 17.4.1 or newer.  Specifically, driver debugging within Visual Studio does not work from Visual Studio 17.2.0 up until 17.4.1. For more info, see [WDK Known Issues](./wdk-known-issues.md).
 
 WDK has Spectre mitigation enabled by default but requires Spectre mitigated libraries to be installed with Visual Studio for each architecture you're developing for. Additionally, developing drivers for Arm/Arm64/Arm64EC require the build tools for these architectures to also be installed with Visual Studio. To locate these items, you need to know the latest version of MSVC installed on your system.
 
