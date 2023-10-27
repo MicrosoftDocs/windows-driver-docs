@@ -22,4 +22,4 @@ To get started with WinDbg, see [Getting Started with Windows Debugging](../debu
 
 ## Debugger commands
 
-To learn more about the debugger commands, see [Using Debugger Commands](/windows-hardware/drivers/debugger/using-debugger-commands).
+To learn more about the debugger commands, see [Using Debugger Commands](using-debugger-extension-commands.md).
