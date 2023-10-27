@@ -15,7 +15,7 @@ Video miniport and display driver initialization occur after the NT executive an
 
 The basic display driver initialization procedure, in which the desktop is created, is shown in the following figure.
 
-![diagram illustrating display driver initialization.](images/202-01.png)
+:::image type="content" source="images/202-01.png" alt-text="Diagram that shows the display driver initialization process.":::
 
 1. When GDI is called to create the first device context (*DC*) for the video hardware, GDI calls the display driver function [**DrvEnableDriver**](/windows/win32/api/winddi/nf-winddi-drvenabledriver). Upon return, **DrvEnableDriver** provides GDI with a [**DRVENABLEDATA**](/windows/win32/api/winddi/ns-winddi-drvenabledata) structure that holds both the driver's graphics DDI version number and the entry points of all callable graphics DDI functions that are implemented by the driver (other than **DrvEnableDriver**).
 
@@ -29,7 +29,7 @@ The basic display driver initialization procedure, in which the desktop is creat
 
    The following figure illustrates logical versus physical devices.
 
-   ![diagram illustrating logical versus physical devices.](images/202-03.png)
+   :::image type="content" source="images/202-03.png" alt-text="Diagram that shows the difference between logical and physical devices.":::
 
 4. When installation of the physical device is complete, GDI calls [**DrvCompletePDEV**](/windows/win32/api/winddi/nf-winddi-drvcompletepdev). This function provides the driver with a GDI-generated physical device handle to use when requesting GDI functions for the device.
 

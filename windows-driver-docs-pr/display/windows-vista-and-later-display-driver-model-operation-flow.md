@@ -15,7 +15,7 @@ ms.date: 03/20/2023
 
 The following diagram shows the flow of WDDM operations that occur from when a rendering device is created to when the content is presented to the display. The information that follows the diagram describes the ordered sequence of the operation flow in more detail.
 
-![diagram illustrating the wddm operation flow.](images/lddmflow.png)
+:::image type="content" source="images/lddmflow.png" alt-text="Diagram that shows the WDDM operation flow from creating a rendering device to presenting content on the display.":::
 
 * **Creating a Rendering Device**
 
