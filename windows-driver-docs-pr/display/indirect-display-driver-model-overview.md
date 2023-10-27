@@ -33,7 +33,7 @@ The IDD runs in [Session 0](../wdf/session-zero-guidelines-for-umdf-drivers.md) 
 
 The following diagram provides an architectural overview.
 
-![indirect display driver within UMDF architecture.](images/idd_umdf_arch.png)
+:::image type="content" source="images/idd_umdf_arch.png" alt-text="Diagram that shows the indirect display driver within the UMDF architecture.":::
 
 ## User-mode model
 

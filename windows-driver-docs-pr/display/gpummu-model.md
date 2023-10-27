@@ -6,7 +6,6 @@ ms.date: 04/20/2017
 
 # GpuMmu model
 
-
 In the *GpuMmu* model, the graphics processing unit (GPU) has its own memory management unit (MMU) which translates per-process GPU virtual addresses to physical addresses.
 
 Each process has separate CPU and GPU virtual address spaces that use distinct page tables. The video memory manager manages the GPU virtual address space of all processes and is in charge of allocating, growing, updating, ensuring residency and freeing page tables. The hardware format of the page tables, used by the GPU MMU, is unknown to the video memory manager and is abstracted through device driver interfaces (DDIs). The abstraction supports a multilevel level translation, including a fixed size page table and a resizable root page table.
@@ -25,7 +24,4 @@ Access to an invalid range of GPU virtual addresses results in an access violati
 
 The *GpuMmu* model is illustrated below:
 
-![gpummu model.](images/gpummu-model.1.png)
-
- 
-
+:::image type="content" source="images/gpummu-model.1.png" alt-text="Diagram that shows the GpuMmu model with its components and interactions.":::

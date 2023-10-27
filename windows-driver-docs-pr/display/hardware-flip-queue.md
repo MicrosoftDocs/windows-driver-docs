@@ -23,7 +23,7 @@ In gaming scenarios prior to WDDM 3.0, after the GPU finishes rendering the scen
 
 The following diagram illustrates the case of presenting three frames, each staying on the screen for one VSync interval.
 
-![diagram showing three frames that each stay on the screen for one v sync interval](images/software-flip-queue-diagram.png)
+:::image type="content" source="images/software-flip-queue-diagram.png" alt-text="Diagram illustrating three frames staying on the screen for one VSync interval each.":::
 
 The fill pattern in the diagram shows the times when *Dxgkrnl* software flip queue processing and application threads have to wake up and do CPU work. On each VSync, the display controller has to issue a CPU notification to the OS for the completed flip, and the OS has to submit the next flip request. The application also has to wake up on each VSync and query present statistics to eventually learn when the last frame in the batch of three is displayed.
 
@@ -31,7 +31,7 @@ Hardware flip queue DDIs that can submit multiple future frames to the display c
 
 The following diagram illustrates the proposed architecture.
 
-![!diagram showing basic hardware flip queue mechanism](images/HwFlipQueue.png)
+:::image type="content" source="images/HwFlipQueue.png" alt-text="Diagram demonstrating the basic hardware flip queue mechanism.":::
 
 With the hardware flip queue approach, both the application and *Dxgkrnl* CPU components are fully idle for two VSync intervals between times *v2* and *v4*, enabling the CPU to enter a low power state. The CPU is only notified when the frame *N+2* that the application requested a wait for is completed.
 
@@ -39,15 +39,15 @@ With the hardware flip queue approach, both the application and *Dxgkrnl* CPU co
 
 In gaming scenarios before WDDM 3.0, after the GPU finishes rendering the scene to the swap chain back buffer, there's a roundtrip to the CPU in order to submit the request to present the frame contents to the screen. The following diagram shows this scenario.
 
-![diagram showing frame completion that requires a cpu roundtrip](images/GamingSwFlipQueue.png)
+:::image type="content" source="images/GamingSwFlipQueue.png" alt-text="Diagram depicting frame completion requiring a CPU roundtrip.":::
 
 The cost of this roundtrip can cause frames to miss their target if the render is finished too close to the VSync, as shown in the following diagram.
 
-![diagram showing a missed frame due to required CPU roundtrip](images/GamingSwFlipQueueMissedFrame.png)
+:::image type="content" source="images/GamingSwFlipQueueMissedFrame.png" alt-text="Diagram illustrating a missed frame due to the required CPU roundtrip.":::
 
 Some display controllers natively support wait conditions that allow the display to submit the flip request once the GPU is done rendering the frame without the CPU roundtrip. Because the hardware flip queue can submit the just completed frame *N* to the display without a CPU roundtrip, it may avoid missed frames as shown in the following diagram.
 
-![diagram showing frame completion that does not require a cpu roundtrip](images/GamingHwFlipQueue.png)
+:::image type="content" source="images/GamingHwFlipQueue.png" alt-text="Diagram displaying frame completion without the need for a CPU roundtrip.":::
 
 The remainder of this article discusses the basic hardware flip queue feature.
 
@@ -238,7 +238,7 @@ The following changes were made to the [**DXGKARGCB_NOTIFY_INTERRUPT_DATA**](/wi
 
 Using the [Basic hardware flip queue](#basic-hardware-flip-queue) example diagram again:
 
-![!diagram showing basic hardware flip queue mechanism](images/HwFlipQueue.png)
+:::image type="content" source="images/HwFlipQueue.png" alt-text="Diagram demonstrating the basic hardware flip queue mechanism.":::
 
 Assume [**FirstFreeFlipQueueLogEntryIndex**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgk_multiplane_overlay_vsync_info3) was set to 40 at the time flip *N* was submitted and then *N*, *N+1*, *N+2* presents were completed.
 

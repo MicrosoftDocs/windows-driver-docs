@@ -8,10 +8,6 @@ ms.date: 04/20/2017
 
 # Rectangular Memory Allocation
 
-
-## <span id="ddk_rectangular_memory_allocation_gg"></span><span id="DDK_RECTANGULAR_MEMORY_ALLOCATION_GG"></span>
-
-
 Display memory is considered *rectangular* whenever the pitch is fixed to a particular size for all the surfaces within a given heap.
 
 With rectangular display memory, the layout is two-dimensional, with a finite width and height. This width is not always the same as the width of the screen. Because display memory must account for different display resolutions and design considerations, the actual horizontal width might span a much larger region than what is currently displayed on the monitor. As described in Memory Heap Allocation, the pitch value is based on the number of bytes to add to a column of display memory in order to reach the same column of display memory on the following scan line.
@@ -24,7 +20,7 @@ A rectangular heap can be as large as a contiguous region of available memory, b
 
 The following diagram illustrates rectangular memory allocation.
 
-![diagram illustrating rectangular memory allocation.](images/ddfig5.png)
+:::image type="content" source="images/ddfig5.png" alt-text="Diagram illustrating rectangular memory allocation with primary surface, heap, and leftover memory.":::
 
 In the preceding figure, the starting point (indicated by the **fpStart** member of the [**VIDEOMEMORY**](/windows/win32/api/ddrawint/ns-ddrawint-videomemory) structure) of the rectangular heap is calculated by adding the width of the primary surface to the starting address of the primary surface. The width and height are also calculated to give the dimensions of the rectangular heap. If any memory remains below the Windows caches, a heap could be created there.
 
@@ -40,7 +36,7 @@ static VIDEOMEMORY vidMem [] = {
 };
 ```
 
-The only difference between the code for rectangular memory and its linear counterpart is the VIDMEM\_ISRECTANGULAR flag, which indicates that this is rectangular memory
+The only difference between the code for rectangular memory and its linear counterpart is the VIDMEM_ISRECTANGULAR flag, which indicates that this is rectangular memory
 
 The following pseudocode shows how rectangular memory heaps are set up:
 
@@ -68,6 +64,3 @@ The following pseudocode shows how rectangular memory heaps are set up:
 ```
 
 The memory heap starting point is set to the starting address of the primary surface plus the width of the primary surface. The width is determined by the pitch minus the width of the primary surface. The height is set to the height of the primary surface. The surface capabilities are set to zero to indicate that there are no imposed surface use restrictions (therefore, the surface can be used for sprites or any other type of surface).
-
- 
-
