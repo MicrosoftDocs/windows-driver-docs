@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_CO_GET_TIME_CAPS
+ms.topic: reference
 description: This topic describes the OID_GEN_CO_GET_TIME_CAPS object identifier (OID).
 keywords:
 - OID_GEN_CO_GET_TIME_CAPS

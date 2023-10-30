@@ -4,7 +4,7 @@ description: Overview of NDIS Processing of Plug and Play Events
 keywords:
 - Plug and Play WDK NDIS miniport , IRP processing for NIC
 - IRP processing for NIC WDK NDIS
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # Overview of NDIS Processing of Plug and Play Events

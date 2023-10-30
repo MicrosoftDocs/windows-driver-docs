@@ -1,15 +1,14 @@
 ---
 title: Meet UWP device apps
 description: This topic provides an overview of the features and capabilities that make a UWP device app uniquely different from a regular UWP app.
-ms.date: 08/12/2021
+ms.date: 03/17/2023
 ---
 
 # Meet UWP device apps
 
 Device manufacturers can create a UWP device app that serves as a companion to their device. Device apps are able to use the full range of functionality of a peripheral or internal device and can perform privileged operations, such as firmware updates. This topic provides an overview of the features and capabilities that make a UWP device app uniquely different from a regular UWP app.
 
-> [!NOTE]
-> Each of these features is optional. A single device app doesn't need to use all of them. All of these features require device metadata.
+Each of these features is optional. A single device app doesn't need to use all of them. All of these features require device metadata.
 
 For more info about what a UWP device app is and how to create one, see [Building UWP device apps](the-workflow.md).
 
@@ -21,8 +20,7 @@ When specified as a privileged app in device metadata, UWP device apps can perfo
 
 To create a background task for device servicing (device updates), use the [DeviceServicingTrigger](/uwp/api/Windows.ApplicationModel.Background.DeviceServicingTrigger) trigger. A similar trigger, [DeviceUseTrigger](/uwp/api/Windows.ApplicationModel.Background.DeviceUseTrigger), which allows for reliable content synchronization, is available for all UWP apps . For more info, see [Device sync and update for UWP device apps](device-sync-and-update-for-uwp-device-apps.md).
 
-> [!NOTE]
-> Device background tasks constrain the amount of time the app can run in the background and are not intended to allow indefinite operation or infinite synchronization.
+Device background tasks constrain the amount of time the app can run in the background and are not intended to allow indefinite operation or infinite synchronization.
 
 ## AutoPlay
 

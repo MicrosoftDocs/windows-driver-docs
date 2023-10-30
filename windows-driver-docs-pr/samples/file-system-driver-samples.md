@@ -1,7 +1,7 @@
 ---
 title: File system driver samples
 description: The driver samples in this directory provide a starting point for writing a custom file system driver for your device.
-ms.date: 11/15/2019
+ms.date: 03/22/2023
 ---
 
 # File system driver samples

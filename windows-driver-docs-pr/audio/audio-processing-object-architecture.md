@@ -1,20 +1,20 @@
 ---
 title: Audio Processing Object Architecture
 description: Architecture for Audio Processing Object APOs used for software based digital signal processing for Windows audio streams.
-ms.date: 10/18/2019
+ms.date: 09/28/2023
 ---
 
 # Audio Processing Object Architecture
 
 Audio processing objects (APOs), provide customizable software based digital signal processing for Windows audio streams.
 
-## <span id="Audio_Processing_Objects_Overview"></span><span id="audio_processing_objects_overview"></span><span id="AUDIO_PROCESSING_OBJECTS_OVERVIEW"></span>Audio Processing Objects Overview
+## Audio Processing Objects Overview
 
 Windows allows OEMs and third-party audio hardware manufacturers to include custom digital signal processing effects as part of their audio driver's value-added features. These effects are packaged as user-mode system effect Audio Processing Objects (APOs).
 
 Audio processing objects (APOs), provide software based digital signal processing for Windows audio streams. An APO is a COM host object that contains an algorithm that is written to provide a specific Digital Signal Processing (DSP) effect. This capability is known informally as an "audio effect." Examples of APOs include graphic equalizers, reverb, tremolo, Acoustic Echo Cancellation (AEC) and Automatic Gain Control (AGC). APOs are COM-based, real-time, in-process objects.
 
-**Note**   The descriptions and terminology in this documentation refers mostly to output devices. However, the technology is symmetric and works essentially in reverse for input devices.
+**Note**   The descriptions and terminology in this documentation refers mostly to output devices, such as speakers. However, the technology is symmetric and works essentially in reverse for input devices.
 
 **Software APOs vs. Hardware DSP**
 
@@ -75,7 +75,7 @@ You can use the "Audio Effects Discovery Sample" to explore the available audio 
 
 Applications have the ability to call APIs to determine which audio effects are currently active on the system. For more information on the audio effects awareness APIs, see [AudioRenderEffectsManager class](/uwp/api/Windows.Media.Effects.AudioRenderEffectsManager).
 
-## <span id="Audio_Processing_Objects_Architecture"></span><span id="audio_processing_objects_architecture"></span><span id="AUDIO_PROCESSING_OBJECTS_ARCHITECTURE"></span>Audio Processing Objects Architecture
+## Audio Processing Objects Architecture
 
 **Placement of Audio Effects**
 
@@ -87,8 +87,8 @@ A stream effect APO has an instance of the effect for every stream. Stream effec
 
 Some versions of Windows, as an optimization, do not load SFX or MFX APOs in RAW mode.
 
--   Windows 8.1 does not load RAW SFX or RAW MFX
--   Windows 10 loads RAW MFX but not RAW SFX
+- Windows 8.1 does not load RAW SFX or RAW MFX
+- Windows 10 loads RAW MFX but not RAW SFX
 
 **Mode Effect (MFX)**
 
@@ -124,5 +124,8 @@ This diagram illustrates a DSP equipped system that implements effects in hardwa
 
 ![diagram that shows a dsp equipped system that implements effects in hardware.](images/audio-apo-dsp-equipped-system-with-hardware-effects-3.png)
 
-## <span id="related_topics"></span>Related topics
+## Related topics
+
 [Windows Audio Processing Objects](windows-audio-processing-objects.md)
+
+[Hardware Offloaded Audio Driver Implementation](driver-implementation-details.md)

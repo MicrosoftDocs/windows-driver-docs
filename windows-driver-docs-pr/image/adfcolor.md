@@ -4,15 +4,15 @@ description: The required ADFColor element contains the list of color processing
 keywords: ["ADFColor element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ADFColor
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 03/27/2023
 ---
 
 # ADFColor element
-
 
 The required **ADFColor** element contains the list of color processing capabilities that the front or back side of the automatic document feeder (ADF) supports.
 
@@ -30,44 +30,16 @@ There are no attributes.
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="colorentry.md" data-raw-source="[&lt;strong&gt;ColorEntry&lt;/strong&gt;](colorentry.md)"><strong>ColorEntry</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**ColorEntry**](colorentry.md) |
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="adfback.md" data-raw-source="[&lt;strong&gt;ADFBack&lt;/strong&gt;](adfback.md)"><strong>ADFBack</strong></a></p></td>
-</tr>
-<tr class="even">
-<td><p><a href="adffront.md" data-raw-source="[&lt;strong&gt;ADFFront&lt;/strong&gt;](adffront.md)"><strong>ADFFront</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**ADFBack**](adfback.md) |
+| [**ADFFront**](adffront.md) |
 
 ## Remarks
 
@@ -79,19 +51,8 @@ Another important aspect of the returned scan data is the photometric interpreta
 
 ## See also
 
-
 [**ADFBack**](adfback.md)
 
 [**ADFFront**](adffront.md)
 
 [**ColorEntry**](colorentry.md)
-
- 
-
- 
-
-
-
-
-
-

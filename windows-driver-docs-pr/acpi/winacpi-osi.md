@@ -1,7 +1,7 @@
 ---
 title: How to identify the Windows version in ACPI by using _OSI
 description: Provides information about the ACPI Source Language (ASL) Operating System Interface Level (_OSI) method used to identify the host operating system.
-ms.date: 05/13/2022
+ms.date: 03/17/2023
 ms.custom: contperf-fy22q4
 ---
 
@@ -53,7 +53,7 @@ This information applies to the following operating systems:
 
 - Windows XP
 
-## The _OSImMethod
+## The _OSI Method
 
 All recent versions of the Windows operating system support components of the [Advanced Configuration and Power Interface (ACPI) Specification](https://uefi.org/specifications). The ACPI specification defines an interpreted language, ACPI Source Language (ASL), to enable the operating system to execute firmware-provided control methods for power management and configuration. To improve the ability for ASL writers to identify the host operating system version, ASL provides the Operating System Interface Level (_OSI).
 

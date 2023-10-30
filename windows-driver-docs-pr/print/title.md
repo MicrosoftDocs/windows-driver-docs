@@ -4,6 +4,7 @@ description: The required title element provides text that is displayed in the t
 keywords: ["title element Print Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - title
 api_type:

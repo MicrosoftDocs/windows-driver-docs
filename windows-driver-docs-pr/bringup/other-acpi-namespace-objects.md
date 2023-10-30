@@ -1,7 +1,7 @@
 ---
 title: Other ACPI namespace objects
 description: For some specific classes of device, there are requirements for additional ACPI namespace objects to appear under those devices in the namespace.
-ms.date: 05/22/2020
+ms.date: 03/23/2023
 ---
 
 # Other ACPI namespace objects
@@ -12,8 +12,8 @@ For some specific classes of device, there are requirements for additional Advan
 
 Processors must be enumerated in the ACPI namespace. Processors are declared under \\\_SB using the "Device" statement, as with other devices on the platform. Processor devices must contain the following objects:
 
-- \_HID: ACPI0007
-- \_UID: A unique number that matches the processor's entry in the MADT.
+- _HID: ACPI0007
+- _UID: A unique number that matches the processor's entry in the MADT.
 
 ## Display-specific objects
 
@@ -21,21 +21,21 @@ For more information about display-specific objects, see Appendix B, "Video Exte
 
 ### Display-Specific Object Requirements
 
-| Method | Description                                        | Requirement                                                                      |
-|--------|----------------------------------------------------|----------------------------------------------------------------------------------|
-| \_DOS  | Enable/Disable output switching.                   | Required if system supports display switching or LCD brightness levels.          |
-| \_DOD  | Enumerate all devices attached to display adapter. | Required if integrated controller supports output switching.                     |
-| \_ROM  | Get ROM Data.                                      | Required if ROM image is stored in proprietary format.                           |
-| \_GPD  | Get POST Device.                                   | Required if \_VPO is implemented.                                                |
-| \_SPD  | Set POST Device.                                   | Required if \_VPO is implemented.                                                |
-| \_VPO  | Video POST Options.                                | Required if system supports changing post VGA device.                            |
-| \_ADR  | Return the unique ID for this device.              | Required.                                                                        |
-| \_BCL  | Query list of brightness control levels supported. | Required if embedded LCD supports brightness control.                            |
-| \_BCM  | Set the brightness level.                          | Required if \_BCL is implemented.                                                |
-| \_DDC  | Return the EDID for this device.                   | Required if embedded LCD does not support return of EDID via standard interface. |
-| \_DCS  | Return status of output device.                    | Required if the system supports display switching (via hotkey).                  |
-| \_DGS  | Query graphics state.                              | Required if the system supports display switching (via hotkey).                  |
-| \_DSS  | Device state set.                                  | Required if the system supports display switching (via hotkey).                  |
+| Method | Description | Requirement |
+|--|--|--|
+| _DOS | Enable/Disable output switching. | Required if system supports display switching or LCD brightness levels. |
+| _DOD | Enumerate all devices attached to display adapter. | Required if integrated controller supports output switching. |
+| _ROM | Get ROM Data. | Required if ROM image is stored in proprietary format. |
+| _GPD | Get POST Device. | Required if _VPO is implemented. |
+| _SPD | Set POST Device. | Required if _VPO is implemented. |
+| _VPO | Video POST Options. | Required if system supports changing post VGA device. |
+| _ADR | Return the unique ID for this device. | Required. |
+| _BCL | Query list of brightness control levels supported. | Required if embedded LCD supports brightness control. |
+| _BCM | Set the brightness level. | Required if _BCL is implemented. |
+| _DDC | Return the EDID for this device. | Required if embedded LCD does not support return of EDID via standard interface. |
+| _DCS | Return status of output device. | Required if the system supports display switching (via hotkey). |
+| _DGS | Query graphics state. | Required if the system supports display switching (via hotkey). |
+| _DSS | Device state set. | Required if the system supports display switching (via hotkey). |
 
 ## USB host controllers and devices
 
@@ -43,33 +43,33 @@ USB host controllers are used on SoC platforms for connecting internal and exter
 
 On SoC-based platforms, the USB host controller can be enumerated by ACPI. Windows uses the following ACPI namespace objects when enumerating and configuring compatible USB hardware:
 
-- A vendor-assigned ACPI-compliant Hardware ID (\_HID).
+- A vendor-assigned ACPI-compliant Hardware ID (_HID).
 
-- A Unique ID (\_UID) object, if there is more than one instance of the USB controller in the namespace (that is, two or more nodes that have identical device identification objects).
+- A Unique ID (_UID) object, if there is more than one instance of the USB controller in the namespace (that is, two or more nodes that have identical device identification objects).
 
-- A Compatible ID (\_CID) for the EHCI or XHCI Standard-compliant USB host controller (EHCI: PNP0D20), (XHCI: PNP0D10).
+- A Compatible ID (_CID) for the EHCI or XHCI Standard-compliant USB host controller (EHCI: PNP0D20), (XHCI: PNP0D10).
 
-- The Current Resource Settings (\_CRS) assigned to the USB controller. The controller's resources are described in the appropriate hardware interface specification (EHCI or XHCI).
+- The Current Resource Settings (_CRS) assigned to the USB controller. The controller's resources are described in the appropriate hardware interface specification (EHCI or XHCI).
 
-### USB Device-Specific Method (\_DSM)
+### USB Device-Specific Method (_DSM)
 
-Windows defines a Device-Specific Method (\_DSM) to support device-class-specific configuration of the USB subsystem. For more information, see [USB Device-Specific Method](usb-device-specific-method---dsm-.md).
+Windows defines a Device-Specific Method (_DSM) to support device-class-specific configuration of the USB subsystem. For more information, see [USB Device-Specific Method](usb-device-specific-method---dsm-.md).
 
-### USB integrated transaction translator (TT) support (\_HRV)
+### USB integrated transaction translator (TT) support (_HRV)
 
-Standard EHCI host controllers support only high-speed USB devices. On SoC platforms, Windows supports two common designs of EHCI-compliant host controllers which implement an integrated transaction translator for low-speed and full-speed USB devices. The Hardware Revision (\_HRV) object indicates the type of integrated TT support to the USB host controller driver.
+Standard EHCI host controllers support only high-speed USB devices. On SoC platforms, Windows supports two common designs of EHCI-compliant host controllers which implement an integrated transaction translator for low-speed and full-speed USB devices. The Hardware Revision (_HRV) object indicates the type of integrated TT support to the USB host controller driver.
 
-The \_HRV is set according to the following criteria:
+The _HRV is set according to the following criteria:
 
-- **NoIntegratedTT - \_HRV = 0**
+- **NoIntegratedTT - _HRV = 0**
 
-    Standard EHCI host controllers do not implement integrated transaction translators, and an \_HRV value of 0 is only valid for these controllers. It is not necessary to include the \_HRV object for these controllers.
+    Standard EHCI host controllers do not implement integrated transaction translators, and an _HRV value of 0 is only valid for these controllers. It is not necessary to include the \_HRV object for these controllers.
 
-- **IntegratedTTSpeedInPortSc - \_HRV = 1**
+- **IntegratedTTSpeedInPortSc - _HRV = 1**
 
     Enable integrated TT support. This flavor of interface includes the LowSpeed and HiSpeed bits in the PORTSC register itself. These bits are at bit offsets 26 and 27, respectively. When determining the speed, the EHCI driver will read the PORTSC, and extract the speed information from these bits.
 
-- **IntegratedTTSpeedInHostPc - \_HRV = 2**
+- **IntegratedTTSpeedInHostPc - _HRV = 2**
 
     Enable integrated TT support. This flavor of interface includes the LowSpeed and HiSpeed bits in a separate HOSTPC register. When the EHCI driver needs to determine the port speed, it will read the HOSTPC register corresponding to the port of interest and extract the speed information.
 
@@ -79,9 +79,9 @@ In addition to selective suspend, internal USB devices connected to XHCI control
 
 ### USB port-specific objects
 
-Windows needs to know the visibility and connect-ability of USB Ports on the system. This is required in order to provide accurate information to the user about ports and devices. Two objects, Physical Device Location (\_PLD) and USB Port Capabilities (\_UPC), are used for this purpose. For more information, see the following:
+Windows needs to know the visibility and connect-ability of USB Ports on the system. This is required in order to provide accurate information to the user about ports and devices. Two objects, Physical Device Location (_PLD) and USB Port Capabilities (\_UPC), are used for this purpose. For more information, see the following:
 
-- Sections 6.1.6, "Device Identification Objects", and 9.13.1, "USB 2.0 Host Controllers and \_UPC and \_PLD", in the [ACPI 5.0 specification](https://uefi.org/specifications).
+- Sections 6.1.6, "Device Identification Objects", and 9.13.1, "USB 2.0 Host Controllers and _UPC and \_PLD", in the [ACPI 5.0 specification](https://uefi.org/specifications).
 
 - [Using ACPI to Configure USB Ports on a Computer](../install/using-acpi-to-configure-usb-ports-on-a-computer.md).
 
@@ -91,13 +91,13 @@ SD host controllers are used on SoC platforms for access to storage as well as I
 
 On SoC platforms, the SD host controller can be enumerated by ACPI. Windows uses the following ACPI namespace objects when enumerating and configuring compatible SD hardware:
 
-- A vendor-assigned ACPI-compliant Hardware ID (\_HID).
+- A vendor-assigned ACPI-compliant Hardware ID (_HID).
 
-- A Unique ID (\_UID) object, if there is more than one instance of the SD controller in the namespace (that is, two or more nodes that have identical device identification objects).
+- A Unique ID (_UID) object, if there is more than one instance of the SD controller in the namespace (that is, two or more nodes that have identical device identification objects).
 
-- A Compatible ID (\_CID) for the SDA standard-compliant SD host controller (PNP0D40).
+- A Compatible ID (_CID) for the SDA standard-compliant SD host controller (PNP0D40).
 
-- The Current Resource Settings (\_CRS) assigned to the controller. The controller's resources are described as follows:
+- The Current Resource Settings (_CRS) assigned to the controller. The controller's resources are described as follows:
 
   - Hardware resources for all implemented slots are included. A slot is a connection point on the SDIO bus for a memory or I/O device. Each slot is associated with a standard set of registers and an interrupt in the SD host controller, which are used for communication with the connected device. SD host controllers may implement any number of slots, but on SoC platforms, there is typically only one.
 
@@ -119,7 +119,7 @@ The interrupts must be wake-capable (described as "SharedAndWake" or "ExclusiveA
 
 ### Embedded SD devices
 
-SD-connected devices are enumerated by the SD bus driver. SD devices that are integrated into the platform must also be listed in the ACPI namespace as children of the SD host controller. This requirement enables the operating system to associate the bus-enumerated device with the platform-specific attributes provided for the device by ACPI objects (for example, non-removability, device power states, GPIO or SPB resources consumed, and so on). To make this association, the device namespace requires the Address (\_ADR) object, which communicates the address of the device on the SDIO bus. The \_ADR object returns an integer.
+SD-connected devices are enumerated by the SD bus driver. SD devices that are integrated into the platform must also be listed in the ACPI namespace as children of the SD host controller. This requirement enables the operating system to associate the bus-enumerated device with the platform-specific attributes provided for the device by ACPI objects (for example, non-removability, device power states, GPIO or SPB resources consumed, and so on). To make this association, the device namespace requires the Address (_ADR) object, which communicates the address of the device on the SDIO bus. The \_ADR object returns an integer.
 
 For the SDIO bus, the value of this integer is defined as follows:
 
@@ -129,35 +129,35 @@ For the SDIO bus, the value of this integer is defined as follows:
 
 An embedded SD device namespace must also include:
 
-- A Remove method (\_RMV) object that returns 0 (to indicate that the device cannot be removed).
+- A Remove method (_RMV) object that returns 0 (to indicate that the device cannot be removed).
 
-- A \_CRS object for the sideband resources the device requires (such as GPIO pins or SPB connections), if any are required.
+- A _CRS object for the sideband resources the device requires (such as GPIO pins or SPB connections), if any are required.
 
 ## Imaging class devices (cameras)
 
-Camera devices may be enumerated by the graphics driver or by USB. In either case, Windows needs to know the physical location of the camera so that the appropriate UI can be shown. To do this, camera devices that are built into the chassis of the system and have mechanically fixed direction are included in the ACPI namespace and provide the Physical Device Location (\_PLD) object. This requires:
+Camera devices may be enumerated by the graphics driver or by USB. In either case, Windows needs to know the physical location of the camera so that the appropriate UI can be shown. To do this, camera devices that are built into the chassis of the system and have mechanically fixed direction are included in the ACPI namespace and provide the Physical Device Location (_PLD) object. This requires:
 
 - The camera device to appear as a child (nested device) of the enumerator device (either the GPU device or the USB device).
 
-- The camera device to provide the Address (\_ADR) object that contains the camera's address on the parent device's bus.
+- The camera device to provide the Address (_ADR) object that contains the camera's address on the parent device's bus.
 
-  - For USB, see **ACPI namespace hierarchy and \_ADR for embedded USB devices** in the next section below.
+  - For USB, see **ACPI namespace hierarchy and _ADR for embedded USB devices** in the next section below.
 
-  - For graphics, this is the identifier that is specified in the \_DOD method provided under the GPU device. For more information, see Appendix B, "Video Extensions", of the ACPI 5.0 specification.
+  - For graphics, this is the identifier that is specified in the _DOD method provided under the GPU device. For more information, see Appendix B, "Video Extensions", of the ACPI 5.0 specification.
 
-- The camera device to provide the \_PLD object.
+- The camera device to provide the _PLD object.
 
-- If there are any sideband resources required by the camera driver (such as GPIO interrupt or I/O connections, or an SPB connection), the \_CRS object is provided for these resources.
+- If there are any sideband resources required by the camera driver (such as GPIO interrupt or I/O connections, or an SPB connection), the _CRS object is provided for these resources.
 
-In the \_PLD object, the **Panel** field (bits 67-69), **Lid** field (bit 66) and **Dock** field (bit 65) are set to correct values for the surface on which the camera is mounted. All other fields are optional. For handheld mobile devices, including tablets, the front panel is the one holding the display screen, and its origin is in the lower-left corner when the display is viewed in the portrait orientation. Using this reference, "Front" indicates that the camera views the user (webcam), while "Back" indicates that the camera views away from the user (still or video camera). For more information, see, section 6.1.8, "\_PLD (Physical Location of Device)", in the [ACPI 5.0 specification](https://uefi.org/specifications).
+In the _PLD object, the **Panel** field (bits 67-69), **Lid** field (bit 66) and **Dock** field (bit 65) are set to correct values for the surface on which the camera is mounted. All other fields are optional. For handheld mobile devices, including tablets, the front panel is the one holding the display screen, and its origin is in the lower-left corner when the display is viewed in the portrait orientation. Using this reference, "Front" indicates that the camera views the user (webcam), while "Back" indicates that the camera views away from the user (still or video camera). For more information, see, section 6.1.8, "_PLD (Physical Location of Device)", in the [ACPI 5.0 specification](https://uefi.org/specifications).
 
-### ACPI namespace hierarchy and \_ADR for embedded USB devices
+### ACPI namespace hierarchy and _ADR for embedded USB devices
 
-When adding embedded USB devices to the ACPI namespace, the hierarchy of the device nodes must exactly match that of the devices that are enumerated by the Windows USB driver. This can be determined by examining Windows Device Manager in its "View by Connection" mode. The entire hierarchy, starting from the USB host controller and extending down to the embedded device, must be included. The "Address" property provided in Device Manager for each device is the address that the firmware must report in the device's \_ADR.
+When adding embedded USB devices to the ACPI namespace, the hierarchy of the device nodes must exactly match that of the devices that are enumerated by the Windows USB driver. This can be determined by examining Windows Device Manager in its "View by Connection" mode. The entire hierarchy, starting from the USB host controller and extending down to the embedded device, must be included. The "Address" property provided in Device Manager for each device is the address that the firmware must report in the device's _ADR.
 
 The [ACPI 5.0 specification](https://uefi.org/specifications) defines the addresses for USB devices as follows:
 
-**USB Root HUB**: Only child of the host controller. It must have an \_ADR of 0. No other children or values of \_ADR are allowed.
+**USB Root HUB**: Only child of the host controller. It must have an _ADR of 0. No other children or values of \_ADR are allowed.
 
 **USB Ports**: Port number (1-n)
 
@@ -246,17 +246,17 @@ Device (GPU0) {
 
 Windows includes a class driver for Human Interface Devices (HID). This driver enables generic support for a broad range of input devices (such as touch panels, keyboards, mice, and sensors). On SoC platforms, HID devices can be connected to the platform over I2C, and are enumerated by ACPI. For compatibility with the HID class support in Windows, the following namespace objects are used:
 
-- A vendor-specific \_HID
+- A vendor-specific _HID
 
-- A \_CID of PNP0C50
+- A _CID of PNP0C50
 
-- A \_CRS with:
+- A _CRS with:
 
   - An I2CSerialBusConnection resource for access to the device
 
   - A GpioInt resource for interrupt(s)
 
-- The HIDI2C \_DSM method for returning the HID Descriptor Register address in the device. For more information, see [HIDI2C Device-Specific Method (\_DSM)](hidi2c-device-specific-method---dsm-.md).
+- The HIDI2C _DSM method for returning the HID Descriptor Register address in the device. For more information, see [HIDI2C Device-Specific Method (_DSM)](hidi2c-device-specific-method---dsm-.md).
 
 ## Button devices
 
@@ -272,7 +272,7 @@ Clamshell designs, and other systems with built-in or connected keyboards, imple
 
 - Describes the power button's GPIO interrupt pin as a non-shared (Exclusive) GPIO interrupt resource.
 
-- Lists the power button's GPIO interrupt resource in the \_AEI object of the GPIO controller to which it is connected.
+- Lists the power button's GPIO interrupt resource in the _AEI object of the GPIO controller to which it is connected.
 
 - Provides the associated event method (Lxx/Exx/EVT) under the GPIO controller device. This event method notifies the Control Method Button driver in the operating system that the button event has occurred.
 
@@ -286,9 +286,9 @@ For touch-first (keyboard-less) platforms, such as slates, Windows provides a ge
 
 - Each interrupt pin is configured as a non-shared (Exclusive), edge-triggered (Edge) interrupt resource that interrupts on both edges (ActiveBoth).
 
-- The device namespace contains a vendor-defined \_HID as well as a \_CID of PNP0C40.
+- The device namespace contains a vendor-defined _HID as well as a \_CID of PNP0C40.
 
-- The GPIO interrupt resources in the \_CRS object are listed in the following order:
+- The GPIO interrupt resources in the _CRS object are listed in the following order:
 
     1. Interrupt corresponding to the "Power" button
 
@@ -312,7 +312,7 @@ For touch-first (keyboard-less) platforms, such as slates, Windows provides a ge
 
 For more information, see [Hardware buttons for Windows 8 tablet and convertible devices](/previous-versions/windows/hardware/design/dn613928(v=vs.85)).
 
-To support evolution of the Windows Button UI, Windows defines a Device-Specific Method (\_DSM) for the Windows Button Array device. For more information, see [Windows Button Array Device-Specific Method (\_DSM)](windows-button-array-device-specific-method---dsm-.md).
+To support evolution of the Windows Button UI, Windows defines a Device-Specific Method (_DSM) for the Windows Button Array device. For more information, see [Windows Button Array Device-Specific Method (_DSM)](windows-button-array-device-specific-method---dsm-.md).
 
 ## Dock and convertible PC sensing devices
 
@@ -324,7 +324,7 @@ Windows supports docks and convertibles (clamshell/tablet combos) by the use of 
 
 - The GPIO controller driver must use ActiveBoth emulation provided by the [GPIO framework extension](../gpio/gpioclx-i-o-and-interrupt-interfaces.md) (**GpioClx**).
 
-- If the asserted state ("Docked" or "Converted") is not asserted logic level low, the GPIO controller \_DSM method is required to override the GPIO driver stack's default behavior. For more information, see the **GPIO controller devices** section in the [General-purpose I/O (GPIO)](general-purpose-i-o--gpio-.md) topic.
+- If the asserted state ("Docked" or "Converted") is not asserted logic level low, the GPIO controller _DSM method is required to override the GPIO driver stack's default behavior. For more information, see the **GPIO controller devices** section in the [General-purpose I/O (GPIO)](general-purpose-i-o--gpio-.md) topic.
 
 For more information, see [Hardware buttons for Windows 8 tablet and convertible devices](/previous-versions/windows/hardware/design/dn613928(v=vs.85)).
 
@@ -332,11 +332,11 @@ For more information, see [Hardware buttons for Windows 8 tablet and convertible
 
 A dock-sensing device interrupts the system when a dock is attached or unattached from the system. This mode change information is used to update the user input and output experience, as required. The device's namespace requires:
 
-- A vendor-specific \_HID
+- A vendor-specific _HID
 
-- A \_CID of PNP0C70
+- A _CID of PNP0C70
 
-- A \_CRS with one ActiveBoth interrupt
+- A _CRS with one ActiveBoth interrupt
 
     Interrupt cannot be wake-capable.
 
@@ -344,10 +344,10 @@ A dock-sensing device interrupts the system when a dock is attached or unattache
 
 A convertible-PC-sensing device interrupts the system when a convertible PC switches from tablet to clamshell form factor. This mode change information is used to update the user input and output experience, as required. The device's namespace requires:
 
-- A vendor-specific \_HID
+- A vendor-specific _HID
 
-- A \_CID of PNP0C60
+- A _CID of PNP0C60
 
-- A \_CRS with one ActiveBoth interrupt
+- A _CRS with one ActiveBoth interrupt
 
     Interrupt cannot be wake-capable.

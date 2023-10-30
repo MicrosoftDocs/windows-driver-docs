@@ -5,6 +5,7 @@ keywords:
 - Tracepdb Commands Driver Development Tools
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Tracepdb Commands
 api_type:

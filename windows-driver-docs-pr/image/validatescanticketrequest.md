@@ -4,15 +4,15 @@ description: The required ValidateScanTicketRequest operation element enables a 
 keywords: ["ValidateScanTicketRequest element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ValidateScanTicketRequest
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 05/02/2023
 ---
 
 # ValidateScanTicketRequest element
-
 
 The required **ValidateScanTicketRequest** operation element enables a client to determine if the settings for future scan operations are valid.
 
@@ -30,25 +30,11 @@ There are no attributes.
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="scanticket.md" data-raw-source="[&lt;strong&gt;ScanTicket&lt;/strong&gt;](scanticket.md)"><strong>ScanTicket</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**ScanTicket**](scanticket.md) |
 
 ## Parent elements
-
 
 There are no parent elements.
 
@@ -64,18 +50,16 @@ This operation can return all of the [**common WSD Scan Service operation error 
 
 This operation might also return the following error code:
 
--   **ClientErrorConflictingRequiredParameters**
+- **ClientErrorConflictingRequiredParameters**
 
     There is a conflict between two or more DocumentParameters elements that each have the MustHonor attribute set to true. Using all of the settings that are supplied with MustHonor set true causes a conflict in the device. The Scan Service cannot resolve this conflict so the ScanTicket is deemed invalid.
 
-    | Fault property | Definition                                                                                                                                                     |
-    |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | \[Code\]       | soap:Sender                                                                                                                                                    |
-    | \[Subcode\]    | wscn:ClientErrorConflictingRequiredParameters                                                                                                                  |
-    | \[Reason\]     | Multiple elements in the DocumentParameters element have MustHonor set to true, but applying all settings set to true causes a conflict in the scanner device. |
-    | \[Detail\]     | None                                                                                                                                                           |
-
-     
+    | Fault property | Definition |
+    |--|--|
+    | \[Code\] | soap:Sender |
+    | \[Subcode\] | wscn:ClientErrorConflictingRequiredParameters |
+    | \[Reason\] | Multiple elements in the DocumentParameters element have MustHonor set to true, but applying all settings set to true causes a conflict in the scanner device. |
+    | \[Detail\] | None |
 
 ## Examples
 

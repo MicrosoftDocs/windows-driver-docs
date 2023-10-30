@@ -1,5 +1,6 @@
 ---
 title: OID_TUNNEL_INTERFACE_SET_OID
+ms.topic: reference
 description: The OID_TUNNEL_INTERFACE_SET_OID object identifier (OID) is reserved for system use. Do not use it in your driver.
 keywords:
 - OID_TUNNEL_INTERFACE_SET_OID

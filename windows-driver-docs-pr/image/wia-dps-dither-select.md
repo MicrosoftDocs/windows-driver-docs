@@ -4,6 +4,7 @@ description: The WIA_DPS_DITHER_SELECT property is reserved by Microsoft for fut
 keywords: ["WIA_DPS_DITHER_SELECT Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPS_DITHER_SELECT
 api_location:

@@ -4,6 +4,7 @@ description: Learn about the D3DKMT\_SCATTERBLT structure, which is reserved for
 keywords: ["D3DKMT_SCATTERBLT structure Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - D3DKMT_SCATTERBLT
 api_location:

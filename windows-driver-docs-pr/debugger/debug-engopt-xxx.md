@@ -4,6 +4,7 @@ description: The DEBUG\_ENGOPT\_XXX constants are global options that affect the
 ms.date: 08/10/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DEBUG_ENGOPT_XXX
 api_location:
@@ -158,7 +159,7 @@ The following global options affect the behavior of the debugger engine.
 </dl>
 </td>
 <td align="left" width="60%">
-<p>Turn on quiet mode. For more information, see <a href="sq--set-quiet-mode-.md"><b>sq (Set Quiet Mode)</b></a>. </p>
+<p>Turn on quiet mode. For more information, see <a href="../debuggercmds/sq--set-quiet-mode-.md"><b>sq (Set Quiet Mode)</b></a>. </p>
 </td>
 </tr>
 <tr VALIGN="top">

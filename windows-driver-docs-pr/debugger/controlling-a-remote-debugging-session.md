@@ -23,9 +23,9 @@ Actions made through the WinDbg interface will also be executed by the debugging
 
 Whenever a new debugging client connects to the session, all other users will see a message that this client has connected. No message is displayed when a client disconnects.
 
-The [**.clients (List Debugging Clients)**](-clients--list-debugging-clients-.md) command will list all clients currently connected to the debugging session.
+The [**.clients (List Debugging Clients)**](../debuggercmds/-clients--list-debugging-clients-.md) command will list all clients currently connected to the debugging session.
 
-The [**.echo (Echo Comment)**](-echo--echo-comment-.md) command is useful for sending messages from one user to another.
+The [**.echo (Echo Comment)**](../debuggercmds/-echo--echo-comment-.md) command is useful for sending messages from one user to another.
 
 ### <span id="windbg_workspaces"></span><span id="WINDBG_WORKSPACES"></span>WinDbg Workspaces
 
@@ -41,15 +41,15 @@ This multiple-path system allows a debugging client to use source-related comman
 
 ### <span id="canceling_the_debugging_server"></span><span id="CANCELING_THE_DEBUGGING_SERVER"></span>Canceling the Debugging Server
 
-The [**.endsrv (End Debugging Server)**](-endsrv--end-debugging-server-.md) command can be used to terminate a debugging server. If the debugger has established multiple debugging servers, you can cancel some of them while leaving others running.
+The [**.endsrv (End Debugging Server)**](../debuggercmds/-endsrv--end-debugging-server-.md) command can be used to terminate a debugging server. If the debugger has established multiple debugging servers, you can cancel some of them while leaving others running.
 
 Terminating a server will prevent any future clients from attaching to it. It will not cut off any clients that are currently attached through the server.
 
 ### <span id="exiting_the_debugger_and_terminating_the_session"></span><span id="EXITING_THE_DEBUGGER_AND_TERMINATING_THE_SESSION"></span>Exiting the Debugger and Terminating the Session
 
-To exit from one debugging client without terminating the server, you must issue a command from that specific client. If this client is KD or CDB, use the [**CTRL+B**](ctrl-b--quit-local-debugger-.md) key to exit. If you are using a script to run KD or CDB, use [**.remote\_exit (Exit Debugging Client)**](-remote-exit--exit-debugging-client-.md). If this client is WinDbg, choose **Exit** from the **File** menu to exit.
+To exit from one debugging client without terminating the server, you must issue a command from that specific client. If this client is KD or CDB, use the [**CTRL+B**](ctrl-b--quit-local-debugger-.md) key to exit. If you are using a script to run KD or CDB, use [**.remote\_exit (Exit Debugging Client)**](../debuggercmds/-remote-exit--exit-debugging-client-.md). If this client is WinDbg, choose **Exit** from the **File** menu to exit.
 
-To terminate the entire session and exit the debugging server, use the [**q (Quit)**](q--qq--quit-.md) command. This command can be entered from any server or client, and it will terminate the entire session for all users.
+To terminate the entire session and exit the debugging server, use the [**q (Quit)**](../debuggercmds/q--qq--quit-.md) command. This command can be entered from any server or client, and it will terminate the entire session for all users.
 
  
 

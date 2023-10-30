@@ -1,7 +1,7 @@
 ---
 description: Support for property commands (WpdBasicHardwareDriverSample)
 title: Support for property commands (WpdBasicHardwareDriverSample)
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Supporting WPD property commands (WpdBasicHardwareDriverSample)

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x11C ATTEMPTED_WRITE_TO_CM_PROTECTED_STORAGE", "ATTEMPTED
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ATTEMPTED_WRITE_TO_CM_PROTECTED_STORAGE
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The ATTEMPTED\_WRITE\_TO\_CM\_PROTECTED\_STORAGE bug check has a value of 0x0000011C. This bug check indicates that an attempt was made to write to the read-only protected storage of the configuration manager.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## ATTEMPTED\_WRITE\_TO\_CM\_PROTECTED\_STORAGE Parameters

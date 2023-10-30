@@ -4,6 +4,7 @@ description: This required Name element identifies the section of the WSD Scan S
 keywords: ["Name for RequestedElements element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn Name
 api_type:

@@ -4,15 +4,15 @@ description: The optional JobInformation element describes the intended use of t
 keywords: ["JobInformation element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn JobInformation
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 04/28/2023
 ---
 
 # JobInformation element
-
 
 The optional **JobInformation** element describes the intended use of the job.
 
@@ -34,27 +34,13 @@ Required. Any valid character string.
 
 ## Child elements
 
-
 There are no child elements.
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="jobdescription.md" data-raw-source="[&lt;strong&gt;JobDescription&lt;/strong&gt;](jobdescription.md)"><strong>JobDescription</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**JobDescription**](jobdescription.md) |
 
 ## Remarks
 
@@ -62,15 +48,4 @@ The **JobInformation** value is useful when the client will reuse the scan ticke
 
 ## See also
 
-
 [**JobDescription**](jobdescription.md)
-
- 
-
- 
-
-
-
-
-
-

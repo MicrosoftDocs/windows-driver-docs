@@ -2,6 +2,7 @@
 title: MB interface terms
 description: Provides a list of mobile broadband terminology used in the MB interface
 ms.date: 04/20/2017
+ms.custom: UpdateFrequency3
 ---
 
 # MB Interface Terms

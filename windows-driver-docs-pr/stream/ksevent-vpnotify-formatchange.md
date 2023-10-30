@@ -4,6 +4,7 @@ description: The KSEVENT_VPNOTIFY_FORMATCHANGE event is used to propagate an eve
 keywords: ["KSEVENT_VPNOTIFY_FORMATCHANGE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSEVENT_VPNOTIFY_FORMATCHANGE
 api_type:

@@ -4,6 +4,7 @@ description: The KSEVENT_DEVICE_LOST event is triggered when a camera device is 
 keywords: ["KSEVENT_DEVICE_LOST Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSEVENT_DEVICE_LOST
 api_type:

@@ -5,6 +5,7 @@ keywords: ["Activating a Smart Client (Kernel Mode) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Activating a Smart Client (Kernel Mode)
 api_type:
@@ -56,7 +57,7 @@ ssl:proto=Protocol,{certuser=Cert|machuser=Cert},server=Server,port=Socket[,pass
 ssl:proto=Protocol,{certuser=Cert|machuser=Cert},clicon=Server,port=Socket[,password=Password] 
 ```
 
-Alternatively, you can use the **Browse** button to locate active KD connection servers. See [File | Connect to Remote Stub](file---connect-to-remote-stub.md) for details.
+Alternatively, you can use the **Browse** button to locate active KD connection servers. 
 
 ## <span id="ddk_activating_a_smart_client_kernel_mode__dbg"></span><span id="DDK_ACTIVATING_A_SMART_CLIENT_KERNEL_MODE__DBG"></span>
 

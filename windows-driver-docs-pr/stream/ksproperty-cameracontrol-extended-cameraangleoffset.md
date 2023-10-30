@@ -4,6 +4,7 @@ description: The camera angle offset property provides read-only information abo
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_CAMERAANGLEOFFSET Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_EXTENDED_CAMERAANGLEOFFSET
 api_location:

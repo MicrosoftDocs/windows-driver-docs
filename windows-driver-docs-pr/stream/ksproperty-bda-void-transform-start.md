@@ -4,6 +4,7 @@ description: Clients use KSPROPERTY_BDA_VOID_TRANSFORM_START to start operation 
 keywords: ["KSPROPERTY_BDA_VOID_TRANSFORM_START Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_BDA_VOID_TRANSFORM_START
 api_location:

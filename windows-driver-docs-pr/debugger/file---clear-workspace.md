@@ -23,7 +23,7 @@ Click **OK** to make these changes, or click **Cancel** to discard these changes
 
 ### <span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
-For more information about the different levels of workspaces and how to use them, see [Using Workspaces](using-workspaces.md).
+For more information about the different levels of workspaces and how to use them, see [Using Workspaces - WinDbg (Classic)](using-workspaces.md).
 
  
 

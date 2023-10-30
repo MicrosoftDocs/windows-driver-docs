@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xFC ATTEMPTED_EXECUTE_OF_NOEXECUTE_MEMORY", "ATTEMPTED_EX
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ATTEMPTED_EXECUTE_OF_NOEXECUTE_MEMORY
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The ATTEMPTED\_EXECUTE\_OF\_NOEXECUTE\_MEMORY bug check has a value of 0x000000FC. This indicates that an attempt was made to execute non-executable memory.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## ATTEMPTED\_EXECUTE\_OF\_NOEXECUTE\_MEMORY Parameters
@@ -58,7 +59,7 @@ The ATTEMPTED\_EXECUTE\_OF\_NOEXECUTE\_MEMORY bug check has a value of 0x000000F
 
 ## Resolution
 
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 When possible, the Unicode string of the driver name that attempted to execute non-executable memory is printed on the bug check screen and is also saved in **KiBugCheckDriver**. Otherwise, the driver in question can often be found by running a stack trace and then reviewing the current instruction pointer.
 
  

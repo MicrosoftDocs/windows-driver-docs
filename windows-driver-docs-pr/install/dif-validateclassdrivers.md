@@ -4,6 +4,7 @@ description: DIF_VALIDATECLASSDRIVERS
 keywords: ["DIF_VALIDATECLASSDRIVERS Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DIF_VALIDATECLASSDRIVERS
 api_type:

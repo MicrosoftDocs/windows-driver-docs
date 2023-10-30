@@ -1,7 +1,8 @@
 ---
 title: WDI_TLV_PHY_STATISTICS
+ms.topic: reference
 description: WDI_TLV_PHY_STATISTICS is a TLV that contains per-PHY statistics for OID_WDI_GET_STATISTICS.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - WDI_TLV_PHY_STATISTICS Network Drivers Starting with Windows Vista
 ---

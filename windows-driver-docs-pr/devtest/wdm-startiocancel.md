@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["StartIoCancel rule (wdm)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - StartIoCancel
 api_type:

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x19 BAD_POOL_HEADER", "BAD_POOL_HEADER"]
 ms.date: 12/07/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - BAD_POOL_HEADER
 api_type:
@@ -16,7 +17,7 @@ api_type:
 The BAD\_POOL\_HEADER bug check has a value of 0x00000019. This indicates that a pool header is corrupt.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 ## BAD\_POOL\_HEADER Parameters
 
@@ -139,7 +140,7 @@ This may or may not be due to the caller.
 
 The internal pool links must be walked using the kernel debugger to figure out a possible cause of the problem.
 
-Then you can use special pool for the suspect pool tags, or use Driver Verifier "Special Pool" option on the suspect driver. The [**!analyze**](-analyze.md) extension may be of help in pinpointing the suspect driver, but this is frequently not the case with pool corrupters.
+Then you can use special pool for the suspect pool tags, or use Driver Verifier "Special Pool" option on the suspect driver. The [**!analyze**](../debuggercmds/-analyze.md) extension may be of help in pinpointing the suspect driver, but this is frequently not the case with pool corrupters.
 
 Use the steps described in [**Blue Screen Data**](blue-screen-data.md) to gather the Stop Code Parameters. Use the stop code parameters to determine the specific type of code behavior you are working to track down.
 

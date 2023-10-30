@@ -1,11 +1,11 @@
 ---
 title: Time stamp helper
 description: The time stamp helper function is used by v2 sensor drivers, and it's used with the sensor device driver software interface (DDSI).
-ms.date: 07/20/2018
+ms.date: 03/02/2023
+ms.topic: reference
 ---
 
 # Time stamp helper
-
 
 The time stamp helper function is used by v2 sensor drivers, and it's used with the sensor device driver software interface (DDSI).
 
@@ -13,34 +13,20 @@ The time stamp helper function is used by v2 sensor drivers, and it's used with 
 
 Usage by sensor DDSI
 
--   Retrieves the time, in milliseconds.
+- Retrieves the time, in milliseconds.
 
 Comments
 
--   Used in calculating the duration of a process or measurement.
+- Used in calculating the duration of a process or measurement.
 
-### Requirements
+## Requirements
 
-**Minimum supported client**: Windows 8.1
-
-**Minimum supported server**: Windows Server 2012 R2
-
-**Header**: Sensorsutils.h
-
-
- 
+| &nbsp; | &nbsp; |
+|---|---|
+| **Minimum supported client** | Windows 8.1 |
+| **Minimum supported server** | Windows Server 2012 R2 |
+| **Header** | Sensorsutils.h |
 
 ## Related topics
 
-
-[Marshalling helper functions](marshalling-helper-functions.md)
-
- 
-
- 
-
-
-
-
-
-
+- [Marshalling helper functions](marshalling-helper-functions.md)

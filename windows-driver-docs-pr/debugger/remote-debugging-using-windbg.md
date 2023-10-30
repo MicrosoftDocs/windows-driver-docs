@@ -17,7 +17,7 @@ The following diagram illustrates a remote session where the debugging server, r
 
 There are several transport protocols you can use for a remote debugging connection: TCP, NPIPE, SPIPE, SSL, and COM Port. Suppose you have chosen to use TCP as the protocol and you have chosen to use WinDbg as both the debugging client and the debugging server. You can use the following procedure to establish a remote kernel-mode debugging session:
 
-1. On the host computer, open WinDbg and establish a kernel-mode debugging session with a target computer. (See [Live Kernel-Mode Debugging Using WinDbg](performing-kernel-mode-debugging-using-windbg.md).)
+1. On the host computer, open WinDbg and establish a kernel-mode debugging session with a target computer. (See [Live Kernel-Mode Debugging Using WinDbg (Classic)](performing-kernel-mode-debugging-using-windbg.md).)
 2. Break in by choosing **Break** from the **Debug** menu or by pressing CTRL-Break.
 3. In the [Debugger Command Window](debugger-command-window.md), enter the following command.
 
@@ -61,7 +61,7 @@ As an alternative to the procedure given in the preceding section, you can set u
 ## <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
 
-There are many ways to establish remote debugging other than the ones shown in this topic. For complete information about setting up a debugging server in the WinDbg [Debugger Command Window](debugger-command-window.md), see [**.server (Create Debugging Server)**](-server--create-debugging-server-.md). For complete information about launching WinDbg (and establishing remote debugging) at the command line, see [**WinDbg Command-Line Options**](windbg-command-line-options.md).
+There are many ways to establish remote debugging other than the ones shown in this topic. For complete information about setting up a debugging server in the WinDbg [Debugger Command Window](debugger-command-window.md), see [**.server (Create Debugging Server)**](../debuggercmds/-server--create-debugging-server-.md). For complete information about launching WinDbg (and establishing remote debugging) at the command line, see [**WinDbg Command-Line Options**](windbg-command-line-options.md).
 
  
 

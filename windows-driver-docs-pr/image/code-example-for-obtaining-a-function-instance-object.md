@@ -1,17 +1,16 @@
 ---
-title: Code Example for Obtaining a Function Instance Object
-description: Code Example for Obtaining a Function Instance Object
-ms.date: 04/20/2017
+title: Code example for obtaining a Function Instance object
+description: Code example for obtaining a Function Instance object
+ms.date: 03/28/2023
 ---
 
-# Code Example for Obtaining a Function Instance Object
-
+# Code example for obtaining a Function Instance object
 
 The following code example contains the declaration of a sample class (CWSDDevice) that contains two class members that are relevant to obtaining the current Function Instance object:
 
--   CWSDDevice::m\_pFunctionDiscovery
+- CWSDDevice::m_pFunctionDiscovery
 
--   CWSDDevice::m\_pFunctionInstance
+- CWSDDevice::m_pFunctionInstance
 
 The code example also shows methods to initialize these members and methods to read device properties from the current Function Instance property store. The **CWSDDevice::InitializeConnection** method illustrates the procedure that is described in [Obtaining a Function Instance Object](obtaining-a-function-instance-object.md) to obtain the current Function Instance object that represents the current web services scanner device instance.
 
@@ -357,11 +356,3 @@ CWSDDevice::~CWSDDevice()
     return;
 };
 ```
-
- 
-
- 
-
-
-
-

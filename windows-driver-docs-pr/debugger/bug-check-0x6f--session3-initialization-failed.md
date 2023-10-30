@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x6F SESSION3_INITIALIZATION_FAILED", "SESSION3_INITIALIZA
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SESSION3_INITIALIZATION_FAILED
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The SESSION3\_INITIALIZATION\_FAILED bug check has a value of 0x0000006F. This bug check indicates that the initialization of the Microsoft Windows operating system failed.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## SESSION3\_INITIALIZATION\_FAILED Parameters

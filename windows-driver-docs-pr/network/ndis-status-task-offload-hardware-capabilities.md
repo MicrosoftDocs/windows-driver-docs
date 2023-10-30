@@ -1,7 +1,8 @@
 ---
 title: NDIS_STATUS_TASK_OFFLOAD_HARDWARE_CAPABILITIES
+ms.topic: reference
 description: NDIS miniport drivers and MUX intermediate drivers use the NDIS_STATUS_TASK_OFFLOAD_HARDWARE_CAPABILITIES status indication to notify NDIS and overlying drivers that there has been change in the task offload hardware capabilities of the underlying NIC.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - NDIS_STATUS_TASK_OFFLOAD_HARDWARE_CAPABILITIES Network Drivers Starting with Windows Vista
 ---

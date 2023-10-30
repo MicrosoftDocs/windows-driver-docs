@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x173 COREMSGCALL_INTERNAL_ERROR", "COREMSGCALL_INTERNAL_E
 ms.date: 01/04/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - COREMSGCALL_INTERNAL_ERROR
 api_type:
@@ -17,7 +18,7 @@ The PFN\_SHARE\_COUNT bug check has a value of 0x00000173. This indicates that t
 
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
  

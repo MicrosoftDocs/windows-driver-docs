@@ -4,6 +4,7 @@ description: The KSPROPERTY_MEDIASEEKING_DURATION property retrieves the media d
 keywords: ["KSPROPERTY_MEDIASEEKING_DURATION Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_MEDIASEEKING_DURATION
 api_location:

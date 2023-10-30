@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_PHYSICAL_MEDIUM
+ms.topic: reference
 description: As a query, the OID_GEN_PHYSICAL_MEDIUM OID specifies the types of physical media that the NIC supports.
 ms.date: 08/08/2017
 keywords: 

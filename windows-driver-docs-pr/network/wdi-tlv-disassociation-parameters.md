@@ -1,7 +1,8 @@
 ---
 title: WDI_TLV_DISASSOCIATION_PARAMETERS
+ms.topic: reference
 description: WDI_TLV_DISASSOCIATION_PARAMETERS is an unused TLV.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - WDI_TLV_DISASSOCIATION_PARAMETERS Network Drivers Starting with Windows Vista
 ---

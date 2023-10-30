@@ -4,6 +4,7 @@ description: Clients use KSPROPERTY_BDA_ECM_MAP_STATUS to determine status on an
 keywords: ["KSPROPERTY_BDA_ECM_MAP_STATUS Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_BDA_ECM_MAP_STATUS
 api_location:

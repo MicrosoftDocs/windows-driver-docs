@@ -14,7 +14,7 @@ keywords:
 - translating pins WDK audio
 - pin factories WDK audio
 - PCPIN_DESCRIPTOR structure
-ms.date: 04/20/2017
+ms.date: 11/14/2022
 ---
 
 # Topology Pins
@@ -51,88 +51,32 @@ WDMAud converts the information from the miniport driver's pin descriptor into a
 
     Indicates the type of data stream that the mixer line transports. For example, the target type for a wave output (rendering) stream is MIXERLINE\_TARGETTYPE\_WAVEOUT, and the target type for a wave input (capture) stream is MIXERLINE\_TARGETTYPE\_WAVEIN.
 
-For more information about the MIXERLINE structure, see the Microsoft Windows SDK documentation.
+For more information, see the [MIXERLINE structure](/windows/win32/api/mmeapi/ns-mmeapi-mixerline) in the SDK documentation.
 
-The following two tables show how WDMAud translates input (KSPIN\_DATAFLOW\_IN) pins to source mixer lines. The first table shows how the input pin **KS pin category GUID**s map to the associated MIXERLINE target types.
+The following two tables show how WDMAud translates input (KSPIN\_DATAFLOW\_IN) pins source mixer lines. 
 
-PCPIN\_DESCRIPTOR values
-MIXERLINE values
-KS pin category GUID
-Bridge pin?
-Target type
-KSNODETYPE\_MICROPHONE
+The first table shows how the input pin KS pin category GUIDs (PCPIN\_DESCRIPTOR values) map to the associated MIXERLINE target types.
 
-KSNODETYPE\_DESKTOP\_MICROPHONE
 
---
+KS pin category GUID | Bridge pin? | MIXERLINE Target type
+|--------------------|-------------|----------------------|
+KSNODETYPE\_MICROPHONE |  - | MIXERLINE\_TARGETTYPE\_WAVEIN
+KSNODETYPE\_DESKTOP\_MICROPHONE | - | MIXERLINE\_TARGETTYPE\_WAVEIN|
+KSNODETYPE\_LEGACY\_AUDIO\_CONNECTOR | - | MIXERLINE\_TARGETTYPE\_WAVEOUT
+KSCATEGORY\_AUDIO | - |MIXERLINE\_TARGETTYPE\_WAVEOUT | 
+KSNODETYPE\_SPEAKER | - | MIXERLINE\_TARGETTYPE\_WAVEOUT|
+KSNODETYPE\_CD\_PLAYER | - | MIXERLINE\_TARGETTYPE\_UNDEFINED
+KSNODETYPE\_SYNTHESIZER | - | MIXERLINE\_TARGETTYPE\_MIDIOUT
+KSNODETYPE\_LINE\_CONNECTOR | - | MIXERLINE\_TARGETTYPE\_UNDEFINED
+KSNODETYPE\_TELEPHONE | - | MIXERLINE\_TARGETTYPE\_UNDEFINED
+KSNODETYPE\_PHONE\_LINE| - | MIXERLINE\_TARGETTYPE\_UNDEFINED
+KSNODETYPE\_DOWN\_LINE\_PHONE | - | MIXERLINE\_TARGETTYPE\_UNDEFINED
+KSNODETYPE\_ANALOG\_CONNECTOR | Yes | MIXERLINE\_TARGETTYPE\_WAVEIN
+KSNODETYPE\_ANALOG\_CONNECTOR | No  |MIXERLINE\_TARGETTYPE\_WAVEOUT
+KSNODETYPE\_SPDIF\_INTERFACE  | Yes | MIXERLINE\_TARGETTYPE\_WAVEIN
+KSNODETYPE\_SPDIF\_INTERFACE  | No | MIXERLINE\_TARGETTYPE\_WAVEOUT
 
-MIXERLINE\_TARGETTYPE\_WAVEIN
-
-KSNODETYPE\_LEGACY\_AUDIO\_CONNECTOR
-
-KSCATEGORY\_AUDIO
-
-KSNODETYPE\_SPEAKER
-
---
-
-MIXERLINE\_TARGETTYPE\_WAVEOUT
-
-KSNODETYPE\_CD\_PLAYER
-
---
-
-MIXERLINE\_TARGETTYPE\_UNDEFINED
-
-KSNODETYPE\_SYNTHESIZER
-
---
-
-MIXERLINE\_TARGETTYPE\_MIDIOUT
-
-KSNODETYPE\_LINE\_CONNECTOR
-
---
-
-MIXERLINE\_TARGETTYPE\_UNDEFINED
-
-KSNODETYPE\_TELEPHONE
-
-KSNODETYPE\_PHONE\_LINE
-
-KSNODETYPE\_DOWN\_LINE\_PHONE
-
---
-
-MIXERLINE\_TARGETTYPE\_UNDEFINED
-
-KSNODETYPE\_ANALOG\_CONNECTOR
-
-Yes
-
-MIXERLINE\_TARGETTYPE\_WAVEIN
-
-KSNODETYPE\_ANALOG\_CONNECTOR
-
-No
-
-MIXERLINE\_TARGETTYPE\_WAVEOUT
-
-KSNODETYPE\_SPDIF\_INTERFACE
-
-Yes
-
-MIXERLINE\_TARGETTYPE\_WAVEIN
-
-KSNODETYPE\_SPDIF\_INTERFACE
-
-No
-
-MIXERLINE\_TARGETTYPE\_WAVEOUT
-
- 
-
-The following table shows how the input pin **KS pin category GUID**s map to the associated MIXERLINE component types.
+The following table shows how the input pin KS pin category GUIDs map to the associated MIXERLINE component types.
 
 <table>
 <colgroup>
@@ -198,86 +142,34 @@ The following table shows how the input pin **KS pin category GUID**s map to the
 </tbody>
 </table>
 
- 
-
 In the preceding tables, the left column specifies the pin category GUID from the pin's PCPIN\_DESCRIPTOR structure, and the right columns specify the corresponding target type and component type for the MIXERLINE structure.
 
 The entries in the column labeled "Bridge Pin?" indicate whether the pin is a bridge pin. A "Yes" means that the pin communications type is KSPIN\_COMMUNICATION\_BRIDGE. A "No" means that the pin communications type is a KSPIN\_COMMUNICATION\_*Xxx* value other than KSPIN\_COMMUNICATION\_BRIDGE. If WDMAud ignores the pin communications type when translating the pin parameters to mixer-line parameters, the "Bridge Pin?" entry is a dash (-).
 
 For all pin categories that do not appear in the preceding tables, WDMAud translates the input pins to source mixer lines with target types of MIXERLINE\_TARGETTYPE\_UNDEFINED and component types of MIXERLINE\_COMPONENTTYPE\_SRC\_UNDEFINED.
 
-The following tables show how WDMAud translates output (KSPIN\_DATAFLOW\_OUT) pins to destination mixer lines. The column headings have the same meanings as in the preceding table. The first table shows how the output pin **KS pin category GUID**s map to the associated MIXERLINE target types.
+The following tables show how WDMAud translates output (KSPIN\_DATAFLOW\_OUT) pins to destination mixer lines. The column headings have the same meanings as in the preceding table. The first table shows how the output pin KS pin category GUIDs map to the associated MIXERLINE target types.
 
-PCPIN\_DESCRIPTOR values
-MIXERLINE values
-KS pin category GUID
-Bridge pin?
-Target type
-KSNODETYPE\_SPEAKER
 
-KSNODETYPE\_DESKTOP\_SPEAKER
+KS pin category GUID | Bridge pin? | MIXERLINE Target type
+|--------------------|-------------|----------------------|
+KSNODETYPE\_SPEAKER | - | MIXERLINE\_TARGETTYPE\_WAVEOUT
+KSNODETYPE\_DESKTOP\_SPEAKER | - | MIXERLINE\_TARGETTYPE\_WAVEOUT 
+KSNODETYPE\_ROOM\_SPEAKER | - | MIXERLINE\_TARGETTYPE\_WAVEOUT
+KSNODETYPE\_COMMUNICATION\_SPEAKER | - | MIXERLINE\_TARGETTYPE\_WAVEOUT
+KSCATEGORY\_AUDIO | - | MIXERLINE\_TARGETTYPE\_WAVEIN
+PINNAME\_CAPTURE | - | MIXERLINE\_TARGETTYPE\_WAVEIN
+KSNODETYPE\_HEADPHONES | - | MIXERLINE\_TARGETTYPE\_WAVEOUT 
+KSNODETYPE\_HEAD\_MOUNTED\_DISPLAY\_AUDIO | - | MIXERLINE\_TARGETTYPE\_WAVEOUT
+KSNODETYPE\_TELEPHONE | - | MIXERLINE\_TARGETTYPE\_UNDEFINED
+KSNODETYPE\_PHONE\_LINE | - | MIXERLINE\_TARGETTYPE\_UNDEFINED
+KSNODETYPE\_DOWN\_LINE\_PHONE | - | MIXERLINE\_TARGETTYPE\_UNDEFINED
+KSNODETYPE\_ANALOG\_CONNECTOR | Yes |MIXERLINE\_TARGETTYPE\_WAVEOUT
+KSNODETYPE\_ANALOG\_CONNECTOR | No | MIXERLINE\_TARGETTYPE\_WAVEIN
+KSNODETYPE\_SPDIF\_INTERFACE | Yes |MIXERLINE\_TARGETTYPE\_WAVEOUT
+KSNODETYPE\_SPDIF\_INTERFACE | No | MIXERLINE\_TARGETTYPE\_WAVEIN
 
-KSNODETYPE\_ROOM\_SPEAKER
-
-KSNODETYPE\_COMMUNICATION\_SPEAKER
-
---
-
-MIXERLINE\_TARGETTYPE\_WAVEOUT
-
-KSCATEGORY\_AUDIO
-
-PINNAME\_CAPTURE
-
---
-
-MIXERLINE\_TARGETTYPE\_WAVEIN
-
-KSNODETYPE\_HEADPHONES
-
-KSNODETYPE\_HEAD\_MOUNTED\_DISPLAY\_AUDIO
-
---
-
-MIXERLINE\_TARGETTYPE\_WAVEOUT
-
-KSNODETYPE\_TELEPHONE
-
-KSNODETYPE\_PHONE\_LINE
-
-KSNODETYPE\_DOWN\_LINE\_PHONE
-
---
-
-MIXERLINE\_TARGETTYPE\_UNDEFINED
-
-KSNODETYPE\_ANALOG\_CONNECTOR
-
-Yes
-
-MIXERLINE\_TARGETTYPE\_WAVEOUT
-
-KSNODETYPE\_ANALOG\_CONNECTOR
-
-No
-
-MIXERLINE\_TARGETTYPE\_WAVEIN
-
-KSNODETYPE\_SPDIF\_INTERFACE
-
-Yes
-
-MIXERLINE\_TARGETTYPE\_WAVEOUT
-
-KSNODETYPE\_SPDIF\_INTERFACE
-
-No
-
-MIXERLINE\_TARGETTYPE\_WAVEIN
-
- 
-
-The following table shows how the output pin **KS pin category GUID**s map to the associated MIXERLINE component types.
+The following table shows how the output pin KS pin category GUIDs map to the associated MIXERLINE component types.
 
 <table>
 <colgroup>
@@ -338,7 +230,6 @@ The following table shows how the output pin **KS pin category GUID**s map to th
 </table>
 
  
-
 For all pin categories that do not appear in the preceding tables, WDMAud translates the output pins to destination mixer lines with target types of MIXERLINE\_TARGETTYPE\_UNDEFINED and component types of MIXERLINE\_COMPONENTTYPE\_DST\_UNDEFINED.
 
 In the preceding tables, most of the KS pin category GUIDs have KSNODETYPE\_*Xxx* names. These names are defined in header files Ksmedia.h and Dmusprop.h. (Two departures from this naming convention are GUIDs KSCATEGORY\_AUDIO and PINNAME\_CAPTURE, which are also defined in Ksmedia.h.) As described in [Topology Nodes](topology-nodes.md), KSNODETYPE\_*Xxx* GUIDs can also be used to designate KS node types. Most KSNODETYPE\_*Xxx* GUIDs specify either pin categories or node types, but not both. The exception is [**KSNODETYPE\_SYNTHESIZER**](./ksnodetype-synthesizer.md), which can specify either a pin category or a node type, depending on the context in which is used. For a list of KSNODETYPE\_*Xxx* GUIDs representing pin categories, see [Pin Category Property](pin-category-property.md). For a list of KSNODETYPE\_*Xxx* GUIDs representing node types, see [Audio Topology Nodes](./audio-topology-nodes.md).

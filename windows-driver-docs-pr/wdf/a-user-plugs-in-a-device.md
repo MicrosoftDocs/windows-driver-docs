@@ -28,7 +28,7 @@ Next, the PnP manager determines which additional drivers (function drivers and 
 
 -   The framework calls each additional driver's [*EvtDriverDeviceAdd*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback function so that the driver can call [**WdfDeviceCreate**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreate) to create a framework device object that represents the device for the driver. Function drivers create a functional device object (FDO), and filter drivers create a filter device object (Filter DO).
 
--   The framework calls each function and filter driver's [*EvtDeviceFilterRemoveResourceRequirements*](/windows-hardware/drivers/ddi/wdffdo/nc-wdffdo-evt_wdf_device_filter_resource_requirements) callback function and then each driver's [*EvtDeviceFilterAddResourceRequirements*](/windows-hardware/drivers/ddi/wdffdo/nc-wdffdo-evt_wdf_device_filter_resource_requirements) callback function. Immediately before the device is started, the framework calls the [*EvtDeviceRemoveAddedResources*](/windows-hardware/drivers/ddi/wdffdo/nc-wdffdo-evt_wdf_device_remove_added_resources) callback function. These three callback functions allow the filter and function drivers to modify the list of hardware resources that the device requires, before the PnP manager assigns resources to the device. For more information, see [Hardware Resources for Framework-Based Drivers](hardware-resources-for-kmdf-drivers.md)
+-   The framework calls each function and filter driver's [*EvtDeviceFilterRemoveResourceRequirements*](/windows-hardware/drivers/ddi/wdffdo/nc-wdffdo-evt_wdf_device_filter_resource_requirements) callback function and then each driver's [*EvtDeviceFilterAddResourceRequirements*](/windows-hardware/drivers/ddi/wdffdo/nc-wdffdo-evt_wdf_device_filter_resource_requirements) callback function. Immediately before the device is started, the framework calls the [*EvtDeviceRemoveAddedResources*](/windows-hardware/drivers/ddi/wdffdo/nc-wdffdo-evt_wdf_device_remove_added_resources) callback function. These three callback functions allow the filter and function drivers to modify the list of hardware resources that the device requires, before the PnP manager assigns resources to the device. For more information, see [Hardware Resources for Framework-Based Drivers](./introduction-to-hardware-resources.md)
 
 -   The framework ensures that the device has reached its working (D0) power state.
 
@@ -42,6 +42,3 @@ Next, the PnP manager determines which additional drivers (function drivers and 
     7.  If the driver is using self-managed I/O, the framework calls the driver's [*EvtDeviceSelfManagedIoInit*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_self_managed_io_init) callback function.
 
 For more information about the power-up sequence for KMDF function or filter drivers, [Power-Up Sequence for a Function or Filter Driver](power-up-sequence-for-a-function-or-filter-driver.md).
-
- 
-

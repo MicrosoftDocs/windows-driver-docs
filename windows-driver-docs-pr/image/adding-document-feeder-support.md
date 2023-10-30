@@ -1,10 +1,10 @@
 ---
-title: Adding Document Feeder Support
-description: Adding Document Feeder Support
-ms.date: 04/20/2017
+title: Add Document Feeder Support
+description: Add Document Feeder Support
+ms.date: 03/27/2023
 ---
 
-# Adding Document Feeder Support
+# Add Document Feeder Support
 
 For information about adding automatic document feeder support to WIA item trees in Microsoft Windows Me and Windows XP see [WIA Scanner Item Tree Layout for Windows Me and Windows XP](wia-scanner-item-tree-layout-for-windows-me-and-windows-xp.md).
 

@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_NLO_DISCOVERY (dot11wificxintf.h)
+ms.topic: reference
 description: WiFiCx drivers use NDIS_STATUS_WDI_INDICATION_NLO_DISCOVERY to indicate NLO discovery.
 ms.date: 08/30/2021
 keywords:

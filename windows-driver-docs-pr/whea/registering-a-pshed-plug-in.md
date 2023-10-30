@@ -5,7 +5,7 @@ keywords:
 - platform-specific hardware error driver plug-ins WDK WHEA , registering
 - registering PSHED plug-ins WDK WHEA
 - PSHED plug-ins WDK WHEA , registering
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Registering a PSHED Plug-In

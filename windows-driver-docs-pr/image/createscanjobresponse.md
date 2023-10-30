@@ -4,15 +4,15 @@ description: The required CreateScanJobResponse element contains the WSD Scan Se
 keywords: ["CreateScanJobResponse element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn CreateScanJobResponse
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 04/21/2023
 ---
 
 # CreateScanJobResponse element
-
 
 The required **CreateScanJobResponse** element contains the WSD Scan Service's response to a client's scan request.
 
@@ -30,34 +30,14 @@ There are no attributes.
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="documentfinalparameters.md" data-raw-source="[&lt;strong&gt;DocumentFinalParameters&lt;/strong&gt;](documentfinalparameters.md)"><strong>DocumentFinalParameters</strong></a></p></td>
-</tr>
-<tr class="even">
-<td><p><a href="imageinformation.md" data-raw-source="[&lt;strong&gt;ImageInformation&lt;/strong&gt;](imageinformation.md)"><strong>ImageInformation</strong></a></p></td>
-</tr>
-<tr class="odd">
-<td><p><a href="jobid.md" data-raw-source="[&lt;strong&gt;JobId&lt;/strong&gt;](jobid.md)"><strong>JobId</strong></a></p></td>
-</tr>
-<tr class="even">
-<td><p><a href="jobtoken.md" data-raw-source="[&lt;strong&gt;JobToken&lt;/strong&gt;](jobtoken.md)"><strong>JobToken</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**DocumentFinalParameters**](documentfinalparameters.md) |
+| [**ImageInformation**](imageinformation.md) |
+| [**JobId**](jobid.md) |
+| [**JobToken**](jobtoken.md) |
 
 ## Parent elements
-
 
 There are no parent elements.
 
@@ -69,10 +49,13 @@ The WSD Scan Service sends a **CreateScanJobResponse** operation element to the 
 
 If the client has made a valid scan request, the WSD Scan Service must return the following information:
 
--   A unique [**JobId**](jobid.md) to identify the job. The scanner generates **JobId** in an implementation-defined manner within the defined ranges. The Scan Service must not reuse values that were recently assigned so that clients do not confuse jobs with older jobs.
--   A unique identifier in JobToken. JobToken is paired with JobId to uniquely represent the scan job. JobToken is passed to the Scan Service in the RetrieveImageRequest operation element to enable the scan device to verify that the scan requester actually created the scan job.
--   ImageInformation, which contains information about the resulting image data from a scan made with the ScanTicket that is currently being validated.
--   DocumentFinalParameters, which contains the actual DocumentParameters element that the Scan Service uses for this scan job.
+- A unique [**JobId**](jobid.md) to identify the job. The scanner generates **JobId** in an implementation-defined manner within the defined ranges. The Scan Service must not reuse values that were recently assigned so that clients do not confuse jobs with older jobs.
+
+- A unique identifier in JobToken. JobToken is paired with JobId to uniquely represent the scan job. JobToken is passed to the Scan Service in the RetrieveImageRequest operation element to enable the scan device to verify that the scan requester actually created the scan job.
+
+- ImageInformation, which contains information about the resulting image data from a scan made with the ScanTicket that is currently being validated.
+
+- DocumentFinalParameters, which contains the actual DocumentParameters element that the Scan Service uses for this scan job.
 
 The client must retrieve the actual image data from the Scan Service by sending one or more [**RetrieveImageRequest**](retrieveimagerequest.md) operation elements. The client has 60 seconds to send a **RetrieveImageRequest** operation element after the Scan Service has responded to the client's [**CreateScanJobRequest**](createscanjobrequest.md). If the Scan Service does not receive a **RetrieveImageRequest** within this time, it should abort the job with a [**JobStateReason**](jobstatereason.md) of **JobTimedOut**. If the job consists of multiple documents, this time-out applies between each successive **RetrieveImageRequest/Response** operation.
 
@@ -167,7 +150,6 @@ The following code example illustrates a WSD Scan Service response to a CreateSc
 
 ## See also
 
-
 [**CreateScanJobRequest**](createscanjobrequest.md)
 
 [**DocumentFinalParameters**](documentfinalparameters.md)
@@ -181,13 +163,3 @@ The following code example illustrates a WSD Scan Service response to a CreateSc
 [**JobToken**](jobtoken.md)
 
 [**RetrieveImageRequest**](retrieveimagerequest.md)
-
- 
-
- 
-
-
-
-
-
-

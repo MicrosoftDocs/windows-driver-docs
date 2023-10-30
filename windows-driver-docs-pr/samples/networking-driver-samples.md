@@ -1,7 +1,7 @@
 ---
 title: Networking driver samples
 description: The driver samples in this directory provide a starting point for writing a custom network driver for your device.
-ms.date: 12/02/2019
+ms.date: 03/22/2023
 ---
 
 # Networking driver samples
@@ -14,7 +14,7 @@ The driver samples in this directory provide a starting point for writing a cust
 | [Fakemodem](/samples/microsoft/windows-driver-samples/fakemodem-driver) | Demonstrates a simple controller-less modem driver. |
 | [Hyper-V Extensible Switch Extension Filter](/samples/microsoft/windows-driver-samples/hyper-v-extensible-switch-extension-filter-driver) | A base library used to implement a Hyper-V Extensible Switch extension filter driver. |
 | [NDIS 6.0 Filter](/samples/microsoft/windows-driver-samples/ndis-60-filter-driver) | The sample is a do-nothing pass-through NDIS 6 filter driver demonstrating the basic principles of an NDIS 6.0 Filter driver. |
-| [NDIS MUX Intermediate Driver and Notify Object](/samples/microsoft/windows-driver-samples/ndis-mux-intermediate-driver-and-notify-object) | An NDIS 6.0 driver that demonstrates the operation of an “N:1” MUX driver. The sample create multiple virtual network devices on top of a single lower adapter. |
+| [NDIS MUX Intermediate Driver and Notify Object](/samples/microsoft/windows-driver-samples/ndis-mux-intermediate-driver-and-notify-object) | An NDIS 6.0 driver that demonstrates the operation of an "N:1" MUX driver. The sample create multiple virtual network devices on top of a single lower adapter. |
 | [Connectionless NDIS 6.0 and 6.3 Protocol Driver](/samples/microsoft/windows-driver-samples/ndis-connection-less-protocol-wdm-driver-sample) | This driver supports sending and receiving raw Ethernet frames using ReadFile/WriteFile calls from user-mode. As an NDIS protocol driver, it illustrates how to establish and tear down bindings to Ethernet adapters. |
 | [Connectionless NDIS 6.0 Protocol Driver](/samples/microsoft/windows-driver-samples/connection-less-ndis-60-protocol-kmdf-sample-driver)| This driver supports sending and receiving raw Ethernet frames using ReadFile/WriteFile calls from user-mode. As an NDIS protocol driver, it illustrates how to establish and tear down bindings to Ethernet adapters. |
 | [NDIS Virtual Miniport Driver](/samples/microsoft/windows-driver-samples/ndis-virtual-miniport-driver) | Demonstrates the functionality of an NDIS miniport driver without requiring a physical network adapter. |

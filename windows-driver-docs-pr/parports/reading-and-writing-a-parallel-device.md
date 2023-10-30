@@ -6,7 +6,7 @@ keywords:
 - parallel devices WDK , writing
 - reading parallel devices
 - writing parallel devices
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Reading and Writing a Parallel Device

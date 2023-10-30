@@ -4,6 +4,7 @@ description: The sample DXVA\_ProcAmpControlDeviceClass::ProcAmpControlOpenStrea
 keywords: ["ProcAmpControlOpenStream method Display Devices", "ProcAmpControlOpenStream method Display Devices , DXVA_ProcAmpControlDeviceClass interface", "DXVA_ProcAmpControlDeviceClass interface Display Devices , ProcAmpControlOpenStream method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DXVA_ProcAmpControlDeviceClass.ProcAmpControlOpenStream
 api_type:

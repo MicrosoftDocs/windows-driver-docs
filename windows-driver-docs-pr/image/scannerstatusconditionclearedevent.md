@@ -4,15 +4,15 @@ description: The required ScannerStatusConditionClearedEvent element informs the
 keywords: ["ScannerStatusConditionClearedEvent element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ScannerStatusConditionClearedEvent
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 05/02/2023
 ---
 
 # ScannerStatusConditionClearedEvent element
-
 
 The required **ScannerStatusConditionClearedEvent** element informs the client that a previously reported [**DeviceCondition**](devicecondition.md) condition has been cleared at the scanner.
 
@@ -30,25 +30,11 @@ There are no attributes.
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="deviceconditioncleared.md" data-raw-source="[&lt;strong&gt;DeviceConditionCleared&lt;/strong&gt;](deviceconditioncleared.md)"><strong>DeviceConditionCleared</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**DeviceConditionCleared**](deviceconditioncleared.md) |
 
 ## Parent elements
-
 
 There are no parent elements.
 

@@ -1,7 +1,8 @@
 ---
 title: OID_WDI_GET_NEXT_ACTION_FRAME_DIALOG_TOKEN
+ms.topic: reference
 description: OID_WDI_GET_NEXT_ACTION_FRAME_DIALOG_TOKEN requests the DialogToken to be used in the next Action frame.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - OID_WDI_GET_NEXT_ACTION_FRAME_DIALOG_TOKEN Network Drivers Starting with Windows Vista
 ---

@@ -1,23 +1,25 @@
 ---
 title: Using Inflight Trace Recorder (IFR) in KMDF and UMDF 2 Drivers
-description: Starting in Windows 10, you can build your WDF driver so that it gets additional driver debugging information through the Windows software trace preprocessing.
-ms.date: 04/20/2017
+description: Starting in Windows 10, you can build your WDF driver so that it gets extra driver debugging information through the Windows software trace preprocessing.
+ms.date: 02/07/2023
 ---
 
 # Using Inflight Trace Recorder (IFR) in KMDF and UMDF 2 Drivers
 
 
-Starting in Windows 10, you can build your KMDF or UMDF driver so that it gets additional driver debugging information through the Windows software trace preprocessing. This feature, called the Inflight Trace Recorder (IFR), is available starting in KMDF version 1.15 and UMDF version 2.15.
+Starting in Windows 10, you can build your KMDF or UMDF driver so that it gets extra driver debugging information through the Windows software trace preprocessing. This feature, called the Inflight Trace Recorder (IFR), is available starting in KMDF version 1.15 and UMDF version 2.15.
 
 Inflight Trace Recorder is an extension of [WPP software tracing](../devtest/wpp-software-tracing.md). Unlike WPP tracing, the Inflight Trace Recorder continues to work without an attached trace consumer. The framework writes messages to a circular buffer, and your driver can also add its own messages. Each driver has its own log, so multiple devices associated with a driver share a single log.
 
-The logs are stored in non-pageable memory, so they are recoverable after a system crash. In addition, Inflight Trace Recorder logs are included in minidump files.
+If you turn on the IFR in your driver binary, the IFR is present and running during the lifetime of your driver. You don't need to start an explicit trace collection session.
+
+The logs are stored in non-pageable memory, so they're recoverable after a system crash. In addition, Inflight Trace Recorder logs are included in minidump files except when the responsible driver is undetermined or if the crash was a host timeout.
 
 **How to enable Inflight Trace Recorder and send messages from your driver**
 
-1.  In Microsoft Visual Studio, do the following:
+1.  In Microsoft Visual Studio, do the following steps:
 
-    -   Open the Property Pages for your driver project. Right-click the driver project in Solution Explorer and select **Properties**. In the Property Pages for the driver, click **Configuration Properties**, and then **Wpp Tracing**. On the **General** menu, set **Run WPP Tracing** to **Yes**.
+    -   Open the Property Pages for your driver project. Right-click the driver project in Solution Explorer and select **Properties**. In the Property Pages for the driver, select **Configuration Properties**, and then **Wpp Tracing**. On the **General** menu, set **Run WPP Tracing** to **Yes**.
 
     -   Navigate to **Properties-&gt;Wpp Tracing-&gt;Function and Macro Options** and choose **Enable WPP Recorder**.
 
@@ -73,7 +75,7 @@ The logs are stored in non-pageable memory, so they are recoverable after a syst
 
     The [**WPP\_CLEANUP**](/previous-versions/windows/hardware/drivers/ff556183(v=vs.85)) macro takes a parameter of type PDRIVER\_OBJECT, so if your driver's [**DriverEntry**](./driverentry-for-kmdf-drivers.md) fails, you can skip calling [**WdfDriverWdmGetDriverObject**](/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdriverwdmgetdriverobject) and instead call **WPP\_CLEANUP** with a pointer to the WDM driver object.
 
-    Starting in UMDF version 2.15, UMDF drivers use the kernel-mode signatures of these macros for initializing and cleaning up tracing. This means that the calls look identical for KMDF and UMDF.
+    Because UMDF drivers use the kernel-mode signatures of these macros for initializing and cleaning up tracing, the calls look identical for KMDF and UMDF.
 
 5.  Use the [**DoTraceMessage**](/previous-versions/windows/hardware/previsioning-framework/ff544918(v=vs.85)) macro, or a [customized version](../devtest/can-i-customize-dotracemessage-.md) of the macro, in your driver to create trace messages.
 
@@ -102,47 +104,49 @@ The logs are stored in non-pageable memory, so they are recoverable after a syst
 
     **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Services\\&lt;YourDriver&gt;\\Parameters\\Wdf**
 
-    This are values of type **REG\_DWORD** that contain the size of the log buffer allocated, in pages. Valid values are between 0x1 and 0x10.
+    This is a value of type **REG\_DWORD** that contains the size of the log buffer allocated, in pages. Valid values are between 0x1 and 0x10.
 
 **For a KMDF driver**
 
 1.  Load the RCDRKD commands by typing **.load rcdrkd.dll** in the debugger.
-2.  Use the [**!wdfkd.wdfldr**](../debugger/-wdfkd-wdfldr.md) extension to display information about the driver that are currently dynamically bound to Windows Driver Frameworks (WDF).
-3.  Use [**!rcdrkd.rcdrlogdump**](../debugger/-rcdrkd-rcdrlogdump.md) and [**!rcdrkd.rcdrcrashdump**](../debugger/-rcdrkd-rcdrcrashdump.md) to view messages that the driver provides.
-4.  Use [**!wdfkd.wdflogdump**](../debugger/-wdfkd-wdflogdump.md) or [**!wdfkd.wdfcrashdump**](../debugger/-wdfkd-wdfcrashdump.md) to see messages that the framework provides.
+2.  Use the [**!wdfkd.wdfldr**](../debuggercmds/-wdfkd-wdfldr.md) extension to display information about the driver that are currently dynamically bound to Windows Driver Frameworks (WDF).
+3.  Use [**!rcdrkd.rcdrlogdump**](../debuggercmds/-rcdrkd-rcdrlogdump.md) and [**!rcdrkd.rcdrcrashdump**](../debuggercmds/-rcdrkd-rcdrcrashdump.md) to view messages that the driver provides.
+4.  Use [**!wdfkd.wdflogdump**](../debuggercmds/-wdfkd-wdflogdump.md) or [**!wdfkd.wdfcrashdump**](../debuggercmds/-wdfkd-wdfcrashdump.md) to see messages that the framework provides.
 
 **Live debugging of a UMDF driver**
 
-1.  Use the [**!wdfkd.wdfldr**](../debugger/-wdfkd-wdfldr.md) extension to display information about the driver that are currently dynamically bound to WDF. Find your user-mode driver. Enter the associated host process.
+1.  Use the [**!wdfkd.wdfldr**](../debuggercmds/-wdfkd-wdfldr.md) extension to display information about the drivers that are currently dynamically bound to WDF. Find your user-mode driver. Enter the associated host process.
 2.  Type **!wdfkd.wdflogdump** *&lt;YourDriverName.dll&gt; &lt;Flag&gt;* , where *&lt;Flag&gt;* is:
 
     -   0x1 – Merged framework and driver logs
     -   0x2 – Driver logs
     -   0x3 – Framework logs
 
-    If there is no driver log for the specified driver, the extension displays only the framework log.
+    If there's no driver log for the specified driver, the extension displays only the framework log.
 
 **Viewing Inflight Trace Recorder logs after a UMDF driver crash**
 
 1. From WinDbg, select **File-&gt;Open Crash Dump**, and specify the minidump file you would like to debug.
-2. Type [**!wdfkd.wdfcrashdump *&lt;YourDriverName.dll&gt; &lt;process ID of driver host&gt; &lt;Option&gt;***](../debugger/-wdfkd-wdfcrashdump.md), where *&lt;Option&gt;* is:
+2. Type [**!wdfkd.wdfcrashdump *&lt;YourDriverName.dll&gt; &lt;process ID of driver host&gt; &lt;Option&gt;***](../debuggercmds/-wdfkd-wdfcrashdump.md), where *&lt;Option&gt;* is:
 
    -   0x1 – Merged framework and driver logs
    -   0x2 – Driver logs
    -   0x3 – Framework logs
 
-   If you don't specify a driver, [**!wdfcrashdump**](../debugger/-wdfkd-wdfcrashdump.md) displays information for all drivers. If you don't specify a host process, and there is only one, the extension uses the single host process. If you don't specify a host process and there is more than one, the extension lists the active host processes.
+   If you don't specify a driver, [**!wdfcrashdump**](../debuggercmds/-wdfkd-wdfcrashdump.md) displays information for all drivers. If you don't specify a host process, and there's only one, the extension uses the single host process. If you don't specify a host process and there's more than one, the extension lists the active host processes.
 
-   If the log information stored in the minidump does not match the entered name, the minidump does not contain the driver's logs.
+   If the log information stored in the minidump doesn't match the entered name, the minidump doesn't contain the driver's logs.
+
+If you don't have a debugger connected, you can still access the driver and framework logs.  To learn how, see [Video: Accessing driver IFR logs without a debugger](video--accessing-driver-ifr-logs-without-a-debugger.md).
 
 For more information about adding tracing messages to your driver, see [Adding WPP Macros to a Driver](../devtest/adding-wpp-macros-to-a-trace-provider.md).
 
-## Related topics
+## Related articles
 
 
 [How to Enable Debugging of a UMDF Driver](enabling-a-debugger.md)
 
-[RCDRKD Extensions](../debugger/rcdrkd-extensions.md)
+[RCDRKD Extensions](../debuggercmds/rcdrkd-extensions.md)
 
 [Using the Framework's Event Logger](using-the-framework-s-event-logger.md)
 

@@ -4,15 +4,15 @@ description: The required DeviceConditionCleared element contains information ab
 keywords: ["DeviceConditionCleared element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn DeviceConditionCleared
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 04/21/2023
 ---
 
 # DeviceConditionCleared element
-
 
 The required **DeviceConditionCleared** element contains information about a previously reported [**DeviceCondition**](devicecondition.md) condition that has been cleared.
 
@@ -30,51 +30,22 @@ There are no attributes.
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="conditioncleartime.md" data-raw-source="[&lt;strong&gt;ConditionClearTime&lt;/strong&gt;](conditioncleartime.md)"><strong>ConditionClearTime</strong></a></p></td>
-</tr>
-<tr class="even">
-<td><p><a href="conditionid.md" data-raw-source="[&lt;strong&gt;ConditionId&lt;/strong&gt;](conditionid.md)"><strong>ConditionId</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**ConditionClearTime**](conditioncleartime.md) |
+| [**ConditionId**](conditionid.md) |
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="scannerstatusconditionevent.md" data-raw-source="[&lt;strong&gt;ScannerStatusConditionEvent&lt;/strong&gt;](scannerstatusconditionevent.md)"><strong>ScannerStatusConditionEvent</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**ScannerStatusConditionEvent**](scannerstatusconditionevent.md) |
 
 ## Remarks
 
 The **DeviceConditionCleared** element contains the [**ConditionId**](conditionid.md) and [**ConditionClearTime**](conditioncleartime.md) elements, which specify the condition identifier and time at which the condition was cleared, respectively. The WSD Scan Service sends the **DeviceConditionCleared** element to a client in a [**ScannerStatusConditionClearedEvent**](scannerstatusconditionclearedevent.md) event element.
 
 ## See also
-
 
 [**ConditionClearTime**](conditioncleartime.md)
 
@@ -87,13 +58,3 @@ The **DeviceConditionCleared** element contains the [**ConditionId**](conditioni
 [**ScannerStatusConditionClearedEvent**](scannerstatusconditionclearedevent.md)
 
 [**ScannerStatusConditionEvent**](scannerstatusconditionevent.md)
-
- 
-
- 
-
-
-
-
-
-

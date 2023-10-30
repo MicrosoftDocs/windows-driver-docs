@@ -4,6 +4,7 @@ description: The KSPROPERTY\_TUNER\_STANDARD\_MODE property retrieves a BOOL val
 keywords: ["KSPROPERTY_TUNER_STANDARD_MODE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_TUNER_STANDARD_MODE
 api_location:

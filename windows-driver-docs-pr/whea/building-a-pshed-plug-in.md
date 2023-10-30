@@ -1,7 +1,7 @@
 ---
 title: Building a PSHED Plug-In
 description: Building a PSHED Plug-In
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Building a PSHED Plug-In

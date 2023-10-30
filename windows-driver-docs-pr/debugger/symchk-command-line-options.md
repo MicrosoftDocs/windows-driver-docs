@@ -5,6 +5,7 @@ keywords: ["SymChk Command-Line Options Windows Debugging"]
 ms.date: 03/13/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SymChk Command-Line Options
 api_type:
@@ -118,7 +119,7 @@ Force checking for public (split) symbols. Private symbols will be treated as no
 Expand all non-symbol server elements in the specified path in order to do a deep search of the path. NOTE: This option may produce matches that will not occur inside the debugger since it modifies the symbol path specified.
 
 
-<span id="_______Options______"></span><span id="_______options______"></span><span id="_______OPTIONS______"></span> *Options*   
+*Options*
 The available options are divided into several classes. Each class of options controls a different set of features.
 
 **Output options.** Any number of the following options can be specified. These options can be abbreviated by using **/o** only once -- for example, **/oi /oe** can be written as **/oie**.
@@ -300,7 +301,7 @@ The available options are divided into several classes. Each class of options co
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For more information about SymChk, see [Using SymChk](using-symchk.md).
 

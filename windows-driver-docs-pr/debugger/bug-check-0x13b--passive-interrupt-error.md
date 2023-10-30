@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x13B PASSIVE_INTERRUPT_ERROR", "PASSIVE_INTERRUPT_ERROR"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - PASSIVE_INTERRUPT_ERROR
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The PASSIVE\_INTERRUPT\_ERROR bug check has a value of 0x0000013B. This indicates that the kernel has detected issues with the passive-level interrupt.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## PASSIVE\_INTERRUPT\_ERROR Parameters

@@ -1,7 +1,8 @@
 ---
 title: WDI_TLV_RSN_KEY_INFO
+ms.topic: reference
 description: WDI_TLV_RSN_KEY_INFO is a TLV that contains Rsn Eapol key parameters.
-ms.date: 04/02/2018
+ms.date: 03/02/2023
 keywords:
  - WDI_TLV_RSN_KEY_INFO Network Drivers Starting with Windows Vista
 ---

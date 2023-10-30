@@ -4,11 +4,12 @@ description: The required ColorEntry element describes a single color-processing
 keywords: ["ColorEntry element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ColorEntry
 api_type:
 - Schema
-ms.date: 11/09/2020
+ms.date: 03/29/2023
 ---
 
 # ColorEntry element

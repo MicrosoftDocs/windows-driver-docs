@@ -4,6 +4,7 @@ description: The WIA_DPC_COPYRIGHT_INFO property contains the copyright notifica
 keywords: ["WIA_DPC_COPYRIGHT_INFO Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPC_COPYRIGHT_INFO
 api_location:

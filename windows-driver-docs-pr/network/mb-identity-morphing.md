@@ -2,6 +2,7 @@
 title: Introduction to MB identity morphing
 description: Introduction to Describes identity morphing for MB device drivers
 ms.date: 04/20/2017
+ms.custom: UpdateFrequency3
 ---
 
 # Introduction to MB Identity Morphing

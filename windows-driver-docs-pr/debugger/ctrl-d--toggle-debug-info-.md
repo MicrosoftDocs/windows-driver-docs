@@ -5,6 +5,7 @@ keywords: ["CTRL+D (Toggle Debug Info) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - CTRL+D (Toggle Debug Info)
 api_type:
@@ -31,7 +32,7 @@ CTRL+ALT+D
 ## <span id="ddk_meta_ctrl_d_dbg"></span><span id="DDK_META_CTRL_D_DBG"></span>
 
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
 <table>
 <colgroup>

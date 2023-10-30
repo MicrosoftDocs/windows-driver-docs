@@ -1,9 +1,10 @@
 ---
 title: NDIS_STATUS_WWAN_BASE_STATIONS_INFO
+ms.topic: reference
 description: NDIS_STATUS_WWAN_BASE_STATIONS_INFO
 keywords:
 - NDIS_STATUS_WWAN_BASE_STATIONS_INFO, base stations information query status notification, Mobile Broadband base stations information query status notification, MB base stations information query status notification
-ms.date: 08/21/2017
+ms.date: 03/02/2023
 ---
 
 # NDIS_STATUS_WWAN_BASE_STATIONS_INFO

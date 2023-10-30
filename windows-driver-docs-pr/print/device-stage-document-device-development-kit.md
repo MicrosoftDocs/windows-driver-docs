@@ -1,10 +1,12 @@
 ---
 title: Device Stage Document Device Development Kit
 description: Provides information about the Device Stage Document Device Development Kit.
-ms.date: 09/07/2022
+ms.date: 01/27/2023
 ---
 
 # Device Stage Document Device Development Kit
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The Device Stage Document Device Developer Kit contains the following information:
 

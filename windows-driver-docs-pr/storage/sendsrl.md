@@ -4,6 +4,7 @@ description: The SendSRL WMI method sends a scan remote loop (SRL) command throu
 keywords: ["SendSRL function Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SendSRL
 api_location:

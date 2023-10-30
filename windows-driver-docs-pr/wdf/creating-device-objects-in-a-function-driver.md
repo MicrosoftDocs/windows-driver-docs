@@ -30,7 +30,7 @@ Creating a framework device object in a function driver typically includes the f
 
 -   Registering function driver-specific callback functions.
 
-    Some function drivers call [**WdfFdoInitSetEventCallbacks**](/windows-hardware/drivers/ddi/wdffdo/nf-wdffdo-wdffdoinitseteventcallbacks), if they must participate in specifying the system hardware resources that a device requires. For more information about hardware resources, see [Hardware Resources for Framework-Based Drivers](hardware-resources-for-kmdf-drivers.md).
+    Some function drivers call [**WdfFdoInitSetEventCallbacks**](/windows-hardware/drivers/ddi/wdffdo/nf-wdffdo-wdffdoinitseteventcallbacks), if they must participate in specifying the system hardware resources that a device requires. For more information about hardware resources, see [Hardware Resources for Framework-Based Drivers](./introduction-to-hardware-resources.md).
 
 -   Registering file event callback functions.
 
@@ -68,6 +68,3 @@ Creating a framework device object in a function driver typically includes the f
 -   Creating the device object.
 
     The final step in creating a device object is to call [**WdfDeviceCreate**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreate).
-
- 
-

@@ -1,7 +1,7 @@
 ---
 description: Using the WpdInfo Tool
 title: Using the WpdInfo Tool
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Using the WpdInfo Tool

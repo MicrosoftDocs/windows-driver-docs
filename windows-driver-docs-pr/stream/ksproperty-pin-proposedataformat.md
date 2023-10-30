@@ -4,6 +4,7 @@ description: Clients use the KSPROPERTY_PIN_PROPOSEDATAFORMAT property to determ
 keywords: ["KSPROPERTY_PIN_PROPOSEDATAFORMAT Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_PIN_PROPOSEDATAFORMAT
 api_location:

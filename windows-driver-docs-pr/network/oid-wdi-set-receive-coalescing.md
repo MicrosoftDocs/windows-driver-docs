@@ -1,7 +1,8 @@
 ---
 title: OID_WDI_SET_RECEIVE_COALESCING
+ms.topic: reference
 description: OID_WDI_SET_RECEIVE_COALESCING is used by the host to add a packet filter for packet coalescing.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - OID_WDI_SET_RECEIVE_COALESCING Network Drivers Starting with Windows Vista
 ms.custom: 19H1

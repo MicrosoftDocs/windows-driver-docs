@@ -4,6 +4,7 @@ description: The KSPROPERTY_EXTDEVICE_POWER_STATE property sets or gets the powe
 keywords: ["KSPROPERTY_EXTDEVICE_POWER_STATE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_EXTDEVICE_POWER_STATE
 api_location:

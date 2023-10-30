@@ -3,7 +3,8 @@ title: ACPI_ENUM_CHILD_NEXT macro
 description: The ACPI_ENUM_CHILD_NEXT macro calculates a pointer to the next ACPI_ENUM_CHILD structure in an array of variable length ACPI_ENUM_CHILD structures.
 keywords: 
 - ACPI_ENUM_CHILD_NEXT macro ACPI Devices
-ms.date: 08/17/2021
+ms.date: 03/17/2023
+ms.topic: reference
 ---
 
 # ACPI_ENUM_CHILD_NEXT macro

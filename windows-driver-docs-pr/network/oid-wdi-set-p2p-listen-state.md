@@ -1,7 +1,8 @@
 ---
 title: OID_WDI_SET_P2P_LISTEN_STATE
+ms.topic: reference
 description: OID_WDI_SET_P2P_LISTEN_STATE sets the Wi-Fi Direct listen state on the port.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - OID_WDI_SET_P2P_LISTEN_STATE Network Drivers Starting with Windows Vista
 ms.custom: 19H1

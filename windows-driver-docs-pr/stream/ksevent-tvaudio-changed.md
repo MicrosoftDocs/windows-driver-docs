@@ -4,6 +4,7 @@ description: The KSEVENT_TVAUDIO_CHANGED event propagates an action, such as a n
 keywords: ["KSEVENT_TVAUDIO_CHANGED Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSEVENT_TVAUDIO_CHANGED
 api_type:

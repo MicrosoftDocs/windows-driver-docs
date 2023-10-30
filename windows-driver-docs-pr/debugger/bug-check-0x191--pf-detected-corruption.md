@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x191 PF_DETECTED_CORRUPTION", "PF_DETECTED_CORRUPTION"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - PF_DETECTED_CORRUPTION
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The PF\_DETECTED\_CORRUPTION bug check has a value of 0x00000191.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## PF\_DETECTED\_CORRUPTION Parameters

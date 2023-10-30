@@ -1,6 +1,6 @@
 ---
 title: FSCTL_MARK_VOLUME_DIRTY control code
-description: The FSCTL\_MARK\_VOLUME\_DIRTY control code marks a specified volume as dirty, which triggers Autochk.exe to run on the volume during the next system restart.
+description: The FSCTL_MARK_VOLUME_DIRTY control code marks a specified volume as dirty, which triggers Autochk.exe to run on the volume during the next system restart.
 keywords: ["FSCTL_MARK_VOLUME_DIRTY control code Installable File System Drivers"]
 topic_type:
 - apiref
@@ -10,110 +10,60 @@ api_location:
 - ntifs.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 03/13/2023
+ms.topic: reference
 ---
 
-# FSCTL\_MARK\_VOLUME\_DIRTY control code
+# FSCTL_MARK_VOLUME_DIRTY control code
 
-
-The **FSCTL\_MARK\_VOLUME\_DIRTY** control code marks a specified volume as dirty, which triggers Autochk.exe to run on the volume during the next system restart.
+The **FSCTL_MARK_VOLUME_DIRTY** control code marks a specified volume as dirty, which triggers Autochk.exe to run on the volume during the next system restart.
 
 To perform this operation, call [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) with the following parameters.
 
-**Parameters**
+## Parameters
 
-<a href="" id="instance"></a>*Instance*  
-[**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) only. An opaque instance pointer to the minifilter driver instance that is initiating the FSCTL request.
+- **Instance** [in]: [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) only. An opaque instance pointer to the minifilter driver instance that is initiating the FSCTL request.
 
-<a href="" id="fileobject"></a>*FileObject*  
-[**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) only. A file pointer object specifying the volume to be marked dirty. This parameter is required and cannot be **NULL**.
+- **FileObject** [in]: [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) only. A file pointer object specifying the volume to be marked dirty. This parameter is required and cannot be **NULL**.
 
-<a href="" id="filehandle"></a>*FileHandle*  
-[**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) only. A handle to the volume that is to be marked dirty. This parameter is required and cannot be **NULL**.
+- **FileHandle** [in]: [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) only. A handle to the volume that is to be marked dirty. This parameter is required and cannot be **NULL**.
 
-<a href="" id="fscontrolcode"></a>*FsControlCode*  
-Control code for the operation. Use **FSCTL\_MARK\_VOLUME\_DIRTY** for this operation.
+- **FsControlCode** [in]: Control code for the operation. Use **FSCTL_MARK_VOLUME_DIRTY** for this operation.
 
-<a href="" id="inputbuffer"></a>*InputBuffer*  
-Not used with this operation. Set to **NULL**.
+- **InputBuffer** [in]: Not used with this operation. Set to **NULL**.
 
-<a href="" id="inputbufferlength"></a>*InputBufferLength*  
-Not used with this operation. Set to 0.
+- **InputBufferLength** [in]: Not used with this operation. Set to 0.
 
-<a href="" id="outputbuffer"></a>*OutputBuffer*  
-Not used with this operation. Set to **NULL**.
+- **OutputBuffer** [out]: Not used with this operation. Set to **NULL**.
 
-<a href="" id="outputbufferlength"></a>*OutputBufferLength*  
-Not used with this operation. Set to 0.
+- **OutputBufferLength** [out]: Not used with this operation. Set to 0.
 
 ## Status block
 
-The [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) routine returns STATUS\_SUCCESS or an appropriate NTSTATUS value.
+The [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) routine returns STATUS_SUCCESS or an appropriate NTSTATUS value.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Term</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>STATUS_INVALID_PARAMETER</strong></p></td>
-<td align="left"><p>The <em>FileObject</em> or <em>FileHandle</em> does not represent a valid volume handle or another parameter is invalid.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p> <strong>STATUS_ACCESS_DENIED</strong></p></td>
-<td align="left"><p>The caller does not have SE_MANAGE_VOLUME access rights.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>STATUS_VOLUME_DISMOUNTED</strong></p></td>
-<td align="left"><p>The file system volume is dismounted.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>STATUS_TOO_LATE</strong></p></td>
-<td align="left"><p>The file system volume is shut down.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>STATUS_MEDIA_WRITE_PROTECTED</strong></p></td>
-<td align="left"><p>The file system volume is read-only.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Code | Meaning |
+| ---- | ------- |
+| STATUS_INVALID_PARAMETER | The **FileObject** or **FileHandle** does not represent a valid volume handle or another parameter is invalid. |
+| STATUS_ACCESS_DENIED | The caller does not have SE_MANAGE_VOLUME access rights. |
+| STATUS_VOLUME_DISMOUNTED | The file system volume is dismounted. |
+| STATUS_TOO_LATE | The file system volume is shut down. |
+| STATUS_MEDIA_WRITE_PROTECTED | The file system volume is read-only. |
 
 ## Remarks
 
-**ReFS:  **This code is not supported.
+This code is not supported by ReFS.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Header</p></td>
-<td align="left">Ntifs.h (include FltKernel.h or Ntifs.h)</td>
-</tr>
-</tbody>
-</table>
+<| Requirement type | Requirement |
+| ---------------- | ----------- |
+| Header | *Ntifs.h* (include *Ntifs.h* or *FltKernel.h*) |
 
 ## See also
 
-
 [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile)
 
-[**FSCTL\_IS\_VOLUME\_DIRTY**](fsctl-is-volume-dirty.md)
+[**FSCTL_IS_VOLUME_DIRTY**](fsctl-is-volume-dirty.md)
 
 [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85))
-
- 
-

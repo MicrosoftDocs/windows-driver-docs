@@ -6,10 +6,12 @@ keywords:
 - customizing printer drivers WDK , color management
 - color management WDK print
 - printer driver color management WDK
-ms.date: 03/21/2022
+ms.date: 01/26/2023
 ---
 
 # Color management for printers
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 This section describes operations that printer drivers must perform to support color management.
 

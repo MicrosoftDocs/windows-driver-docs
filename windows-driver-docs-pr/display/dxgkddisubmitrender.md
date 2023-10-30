@@ -4,6 +4,7 @@ description: The DxgkDdiSubmitRender function is reserved for system use. Do not
 keywords: ["DxgkDdiSubmitRender callback function Display Devices", "DXGKDDI_SUBMITRENDER"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DxgkDdiSubmitRender
 api_location:

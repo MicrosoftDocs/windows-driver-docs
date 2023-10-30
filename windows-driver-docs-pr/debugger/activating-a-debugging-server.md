@@ -5,6 +5,7 @@ keywords: ["Activating a Debugging Server Windows Debugging"]
 ms.date: 03/02/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Activating a Debugging Server
 api_type:
@@ -14,7 +15,7 @@ api_type:
 # Activating a Debugging Server
 
 
-There are two ways to activate the debugging server. It can be activated when the debugger is started by using the **-server** command-line option in a elevated Command Prompt window (Run as Administrator). It can also be activated after the debugger is running. Start the debugger with elevated privileges (Run as Administrator), and enter the [**.server**](-server--create-debugging-server-.md) command.
+There are two ways to activate the debugging server. It can be activated when the debugger is started by using the **-server** command-line option in a elevated Command Prompt window (Run as Administrator). It can also be activated after the debugger is running. Start the debugger with elevated privileges (Run as Administrator), and enter the [**.server**](../debuggercmds/-server--create-debugging-server-.md) command.
 
 **Note**  You can activate a debugging server without having elevated privileges, and debugging clients will be able to connect to the server. However, clients will not be able to discover a debugging server unless it was activated with elevated privileges. For information about how to discover debugging servers, see [Searching for Debugging Servers](searching-for-debugging-servers.md).
 
@@ -40,7 +41,7 @@ Debugger -server ssl:proto=Protocol,{certuser=Cert|machuser=Cert},port=Socket[,h
 Debugger -server ssl:proto=Protocol,{certuser=Cert|machuser=Cert},port=Socket,clicon=Client[,password=Password] [-noio] [Options]
 ```
 
-Another method of activating a debugging server is to use the [**.server (Create Debugging Server)**](-server--create-debugging-server-.md) command after the debugger has already been started.
+Another method of activating a debugging server is to use the [**.server (Create Debugging Server)**](../debuggercmds/-server--create-debugging-server-.md) command after the debugger has already been started.
 
 ```dbgcmd
 .server npipe:pipe=PipeName[,hidden][,password=Password][,IcfEnable] 
@@ -124,14 +125,14 @@ Causes the debugger to enable the necessary port connections for TCP or named pi
 <span id="Options_______"></span><span id="options_______"></span><span id="OPTIONS_______"></span>*Options*   
 Any additional command-line parameters can be placed here. See [Command-Line Options](command-line-options.md) for a full list.
 
-You can use the [**.server**](-server--create-debugging-server-.md) command to start multiple servers using different protocol options. This allows different kinds of debugging clients to join the session.
+You can use the [**.server**](../debuggercmds/-server--create-debugging-server-.md) command to start multiple servers using different protocol options. This allows different kinds of debugging clients to join the session.
 
 
 ## See Also
 
 [Controlling a Remote Debugging Session](controlling-a-remote-debugging-session.md)
 
-[.endsrv (End Debugging Server)](-endsrv--end-debugging-server-.md)
+[.endsrv (End Debugging Server)](../debuggercmds/-endsrv--end-debugging-server-.md)
  
 
 ------

@@ -14,7 +14,7 @@ keywords:
 ms.date: 04/20/2017
 ---
 
-# IRP\_MJ\_QUERY\_SECURITY and IRP\_MJ\_SET\_SECURITY
+# IRP_MJ_QUERY_SECURITY and IRP_MJ_SET_SECURITY
 
 
 Fortunately for a file system, the actual storage and retrieval of security descriptors is relatively opaque. This is due to the nature of security descriptors in a self-relative format that does not require any understanding of the descriptor by the file system. Thus, processing a query operation is normally a very simple exercise. Here is an example from a file system implementation:
@@ -60,9 +60,9 @@ NTSTATUS FsdCommonQuerySecurity( PIRP_CONTEXT IrpContext)
 
 Note that this routine relies on an external function to load the actual security descriptor from persistent storage (in this implementation, that routine only loads the security descriptor if it has not previously been loaded). Since the security descriptor is opaque to the file system, the security reference monitor must be used to copy the descriptor into the user's buffer. We note two points with respect to this code sample:
 
-1.  The conversion of the error code STATUS\_BUFFER\_TOO\_SMALL into the warning code STATUS\_BUFFER\_OVERFLOW is necessary in order to provide correct behavior for some Windows security tools.
+1.  The conversion of the error code STATUS_BUFFER_TOO_SMALL into the warning code STATUS_BUFFER_OVERFLOW is necessary in order to provide correct behavior for some Windows security tools.
 
-2.  Errors in handling the user buffer can, and will, arise because both query and set security operations are normally done using the user buffer directly. Note that this is controlled by the **Flags** member of the DEVICE\_OBJECT created by the file system. In a file system implementation based on this code, the calling function would need to use a \_\_try block to protect against an invalid user buffer.
+2.  Errors in handling the user buffer can, and will, arise because both query and set security operations are normally done using the user buffer directly. Note that this is controlled by the **Flags** member of the DEVICE_OBJECT created by the file system. In a file system implementation based on this code, the calling function would need to use a __try block to protect against an invalid user buffer.
 
 The specifics of how the file system loads a security descriptor from storage (the **FsdLoadSecurityDescriptor** function in this example) will depend entirely on the implementation of security descriptor storage in the file system.
 

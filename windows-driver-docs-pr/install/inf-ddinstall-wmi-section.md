@@ -5,6 +5,7 @@ keywords:
 - INF DDInstall.WMI Section Device and Driver Installation
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INF DDInstall.WMI Section
 api_type:

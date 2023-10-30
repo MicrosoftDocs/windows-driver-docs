@@ -4,6 +4,7 @@ description: The WIA_DPS_OPTICAL_XRES property contains the highest-supported ho
 keywords: ["WIA_DPS_OPTICAL_XRES Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPS_OPTICAL_XRES
 api_location:

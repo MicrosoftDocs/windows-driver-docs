@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x20 KERNEL_APC_PENDING_DURING_EXIT", "KERNEL_APC_PENDING_
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KERNEL_APC_PENDING_DURING_EXIT
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The KERNEL\_APC\_PENDING\_DURING\_EXIT bug check has a value of 0x00000020. This indicates that an asynchronous procedure call (APC) was still pending when a thread exited.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## KERNEL\_APC\_PENDING\_DURING\_EXIT Parameters
@@ -72,7 +73,7 @@ This current IRQL (Parameter 3) should be zero. If it is not, the driver's cance
 
 
 ## Resolution
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
  
 
  

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xBA SESSION_HAS_VALID_VIEWS_ON_EXIT", "SESSION_HAS_VALID_
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SESSION_HAS_VALID_VIEWS_ON_EXIT
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The SESSION\_HAS\_VALID\_VIEWS\_ON\_EXIT bug check has a value of 0x000000BA. This indicates that a session driver still had mapped views when the session unloaded.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## SESSION\_HAS\_VALID\_VIEWS\_ON\_EXIT Parameters

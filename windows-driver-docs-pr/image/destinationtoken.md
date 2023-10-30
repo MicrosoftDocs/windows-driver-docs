@@ -4,15 +4,15 @@ description: The required DestinationToken element contains a device-specific st
 keywords: ["DestinationToken element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn DestinationToken
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 04/21/2023
 ---
 
 # DestinationToken element
-
 
 The required **DestinationToken** element contains a device-specific string that the scanner assigns to the current client destination.
 
@@ -34,37 +34,20 @@ Required. Any valid character string.
 
 ## Child elements
 
-
 There are no child elements.
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="createscanjobrequest.md" data-raw-source="[&lt;strong&gt;CreateScanJobRequest&lt;/strong&gt;](createscanjobrequest.md)"><strong>CreateScanJobRequest</strong></a></p></td>
-</tr>
-<tr class="even">
-<td><p><a href="destinationresponse.md" data-raw-source="[&lt;strong&gt;DestinationResponse&lt;/strong&gt;](destinationresponse.md)"><strong>DestinationResponse</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**CreateScanJobRequest**](createscanjobrequest.md) |
+| [**DestinationResponse**](destinationresponse.md) |
 
 ## Remarks
 
 The client includes the **DestinationToken** token when it sends a [**CreateScanJobRequest**](createscanjobrequest.md) operation element after the [**ScanAvailableEvent**](scanavailableevent.md) event. The WSD Scan Service uses the specified string to check that the correct client is sending the scan request.
 
 ## See also
-
 
 [**CreateScanJobRequest**](createscanjobrequest.md)
 
@@ -73,13 +56,3 @@ The client includes the **DestinationToken** token when it sends a [**CreateScan
 [**ScanAvailableEvent**](scanavailableevent.md)
 
 [**ScanDestination**](scandestination.md)
-
- 
-
- 
-
-
-
-
-
-

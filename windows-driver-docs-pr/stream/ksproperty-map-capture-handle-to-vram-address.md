@@ -4,6 +4,7 @@ description: The KSPROPERTY_MAP_CAPTURE_HANDLE_TO_VRAM_ADDRESS property returns 
 keywords: ["KSPROPERTY_MAP_CAPTURE_HANDLE_TO_VRAM_ADDRESS Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_MAP_CAPTURE_HANDLE_TO_VRAM_ADDRESS
 api_location:

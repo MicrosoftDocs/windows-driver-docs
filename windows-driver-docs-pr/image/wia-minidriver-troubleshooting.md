@@ -1,16 +1,12 @@
 ---
-title: WIA Minidriver Troubleshooting
-description: WIA Minidriver Troubleshooting
-ms.date: 04/20/2017
+title: WIA minidriver troubleshooting
+description: WIA minidriver troubleshooting
+ms.date: 05/11/2023
 ---
 
-# WIA Minidriver Troubleshooting
+# WIA minidriver troubleshooting
 
-
-
-
-
-By default, the WIA service logs errors to a file named *wiadebug.log* in the **%**<em>windir</em>**%** directory. The information that the WIA service places in this file can be very helpful during driver development. The following example depicts a typical problem and shows how the information in the *wiadebug.log* file can be used to find a solution to the problem.
+By default, the WIA service logs errors to a file named *wiadebug.log* in the **%**_windir_**%** directory. The information that the WIA service places in this file can be very helpful during driver development. The following example depicts a typical problem and shows how the information in the *wiadebug.log* file can be used to find a solution to the problem.
 
 A developer writes an application to test a scanner driver that is under development. As one of the tests, the developer attempts to set the scanner's dots per inch (dpi) to 1200, but notices that this action produces an error. A look at the Wiadebug.log file shows the following:
 
@@ -45,39 +41,18 @@ Now that the problem is identified, it is up to the developer to determine wheth
 
 The logging level is controlled by an entry in the registry. For WIA, this key resides in:
 
-**HKLM\\System\\CurrentControlSet\\Control\\StillImage\\Debug\\**<em>MODULE\_NAME</em>**\\DebugFlags**
+**HKLM\\System\\CurrentControlSet\\Control\\StillImage\\Debug\\**_MODULE_NAME_**\\DebugFlags**
 
-In this example, MODULE\_NAME is the name of the appropriate binary module. For the WIA service, this is *wiaservc.dll*. The value in **DebugFlags** controls the logging level. Three of the settings are given in the following table:
+In this example, MODULE_NAME is the name of the appropriate binary module. For the WIA service, this is *wiaservc.dll*. The value in **DebugFlags** controls the logging level. Three of the settings are given in the following table:
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>0x00000001</p></td>
-<td><p>Display error messages.</p></td>
-</tr>
-<tr class="even">
-<td><p>0x00000002</p></td>
-<td><p>Display warning messages.</p></td>
-</tr>
-<tr class="odd">
-<td><p>0x00000004</p></td>
-<td><p>Display trace messages.</p></td>
-</tr>
-</tbody>
-</table>
+| Value | Meaning |
+|--|--|
+| 0x00000001 | Display error messages. |
+| 0x00000002 | Display warning messages. |
+| 0x00000004 | Display trace messages. |
 
 The value in **DebugFlags** is a flag value (that is, different settings may be combined with a bitwise OR operator). To turn on logging for errors, warnings, and traces all at one time, set **DebugFlags** to 0x0000007.
 
 In order for a change in value of **DebugFlags** to take effect, the WIA service (*stisvc*) must be stopped and then restarted. See [Starting and Stopping the Still Image Service](starting-and-stopping-the-still-image-service.md) for details.
 
-**Note**   Excessive logging can lead to a significant decrease in performance. You should increase the logging level only when attempting to solve a particular problem. After you have corrected the problem, set logging to its original level. The default logging level is one. Do not increase the logging level above three as this may cause a crash.
+Excessive logging can lead to a significant decrease in performance. You should increase the logging level only when attempting to solve a particular problem. After you have corrected the problem, set logging to its original level. The default logging level is one. Do not increase the logging level above three as this may cause a crash.

@@ -1,7 +1,8 @@
 ---
 title: NDIS_STATUS_ISOLATION_PARAMETERS_CHANGE
+ms.topic: reference
 description: A VM network adapter miniport driver generates an NDIS_STATUS_ISOLATION_PARAMETERS_CHANGE status indication whenever the routing domain configuration is updated on the network adapter's port.
-ms.date: 08/08/2017
+ms.date: 03/02/2023
 keywords: 
  -NDIS_STATUS_ISOLATION_PARAMETERS_CHANGE Network Drivers Starting with Windows Vista
 ---

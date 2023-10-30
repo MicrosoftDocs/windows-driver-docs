@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x19A WORKER_THREAD_RETURNED_WHILE_ATTACHED_TO_SILO", "WOR
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WORKER_THREAD_RETURNED_WHILE_ATTACHED_TO_SILO
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The WORKER\_THREAD\_RETURNED\_WHILE\_ATTACHED\_TO\_SILO bug check has a value of 0x0000019A. This indicates that a worker thread attached to a silo and did not detach before returning.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## WORKER\_THREAD\_RETURNED\_WHILE\_ATTACHED\_TO\_SILO Parameters
@@ -34,7 +35,7 @@ The WORKER\_THREAD\_RETURNED\_WHILE\_ATTACHED\_TO\_SILO bug check has a value of
 
 ## Cause
 
-To investigate use the [**ln (List Nearest Symbols)**](ln--list-nearest-symbols-.md)command on parameter 1 to help identify the mis-behaving driver.
+To investigate use the [**ln (List Nearest Symbols)**](../debuggercmds/ln--list-nearest-symbols-.md)command on parameter 1 to help identify the mis-behaving driver.
 
  
 

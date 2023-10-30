@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1D4 UCMUCSI_LIVEDUMP",  "UCMUCSI_LIVEDUMP"]
 ms.date: 02/07/2020
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - UCMUCSI_LIVEDUMP
 api_type:

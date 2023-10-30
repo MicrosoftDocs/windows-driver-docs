@@ -9,10 +9,12 @@ keywords:
 - ADTrueGray
 - color checking WDK Pscript
 - checking RGB colors
-ms.date: 09/08/2021
+ms.date: 01/30/2023
 ---
 
 # TrueGray feature
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The TrueGray feature checks RGB colors in text and vector graphics, but not in bitmaps. For colors that are gray (that is, colors whose red, green, and blue values are equal), the TrueGray feature translates the colors from the RGB color space to the color printer's gray color space before printing them. This feature is not available for monochrome printers.
 

@@ -1,8 +1,10 @@
 ---
 title: PKEY\_FX\_EndpointEffectClsid
 description: In Windows 8.1 and later, the PKEY\_FX\_EndpointEffectClsid property key identifies the end point effect (EFX) in place. The driver developer should specify the list of supported processing modes that their driver supports.
-ms.date: 11/28/2017
+ms.date: 03/06/2023
+ms.topic: reference
 ---
+
 
 # PKEY\_FX\_EndpointEffectClsid
 
@@ -27,7 +29,7 @@ FX_ENDPOINT_CLSID               = "{00000000-0000-0000-0000-000000000000}"
 HKR,"FX\\0",%PKEY_FX_EndpointEffectClsid%,,%FX_ENDPOINT_CLSID%
 ```
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [Media-Class INF Extensions](media-class-inf-extensions.md)

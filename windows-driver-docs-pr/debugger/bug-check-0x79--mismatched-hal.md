@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x79 MISMATCHED_HAL", "MISMATCHED_HAL"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - MISMATCHED_HAL
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The MISMATCHED\_HAL bug check has a value of 0x00000079. This bug check indicates that the Hardware Abstraction Layer (HAL) revision level or configuration does not match that of the kernel or the computer.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## MISMATCHED\_HAL Parameters

@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_DEVICE_CAPABILITY (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_P2P_DEVICE_CAPABILITY is a WiFiCx TLV that contains Wi-Fi Direct device capabilities.
 ms.date: 07/31/2021
 keywords:

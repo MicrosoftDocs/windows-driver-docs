@@ -1,7 +1,8 @@
 ---
 title: NDIS_STATUS_WWAN_MODEM_LOGGING_CONFIG
+ms.topic: reference
 description: Miniport drivers use the NDIS_STATUS_WWAN_MODEM_LOGGING_CONFIG notification to inform the mobile broadband (MB) service about the completion of a previous OID_WWAN_MODEM_LOGGING_CONFIG Query or Set request.
-ms.date: 04/11/2019
+ms.date: 03/02/2023
 keywords: 
  -NDIS_STATUS_WWAN_MODEM_LOGGING_CONFIG Network Drivers Starting with Windows Vista
 ms.custom: 19H1

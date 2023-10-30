@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x103 MUP_FILE_SYSTEM", "MUP_FILE_SYSTEM"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - MUP_FILE_SYSTEM
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The MUP\_FILE\_SYSTEM bug check has a value of 0x00000103. This bug check indicates that the multiple UNC provider (MUP) has encountered invalid or unexpected data. As a result, the MUP cannot channel a remote file system request to a network redirector, the Universal Naming Convention (UNC) provider.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## MUP\_FILE\_SYSTEM Parameters

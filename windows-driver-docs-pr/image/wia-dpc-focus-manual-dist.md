@@ -4,6 +4,7 @@ description: The WIA_DPC_FOCUS_MANUAL_DIST property is reserved by Microsoft for
 keywords: ["WIA_DPC_FOCUS_MANUAL_DIST Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPC_FOCUS_MANUAL_DIST
 api_location:

@@ -1,13 +1,19 @@
 ---
 title: Debugger Data Model - Text Wrtier Objects
 description: Writes text to files.
-ms.date: 12/13/2018
+ms.date: 03/10/2023
+ms.topic: reference
+
 ---
-# Text Writer Objects 
+
+# Text Writer Objects
+
 ## Summary
+
 Text writer objects write text of the given encoding to a file.
 
 ## Object Methods
+
 |Name|Signature|Description|
 |--- |--- |--- |
 |Write|Write(object)|Writes the string conversion of the given object to the file without a newline.|

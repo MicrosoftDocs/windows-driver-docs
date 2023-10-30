@@ -17,7 +17,7 @@ ms.date: 04/20/2017
 
 Drivers can group framework objects into collections that are represented by *framework collection objects*.
 
-For example, if a driver receives a framework request object that represents a large I/O request, the driver might have to break the large request into smaller requests that it can send to an [I/O target](using-i-o-targets.md). To break a large request into smaller ones, the driver must create a set of request objects that represent the smaller requests. To keep track of these driver-created request objects, the driver might create a collection object and add them to the collection.
+For example, if a driver receives a framework request object that represents a large I/O request, the driver might have to break the large request into smaller requests that it can send to an [I/O target](./introduction-to-i-o-targets.md). To break a large request into smaller ones, the driver must create a set of request objects that represent the smaller requests. To keep track of these driver-created request objects, the driver might create a collection object and add them to the collection.
 
 Typically, the objects in an object collection consist of a single type of framework object, but a driver can create a collection that consists of different types of objects.
 
@@ -73,6 +73,3 @@ for (i=0; i<ItemCount; i++) {
     }
 WdfWaitLockRelease(CollectionLockHandle);
 ```
-
- 
-

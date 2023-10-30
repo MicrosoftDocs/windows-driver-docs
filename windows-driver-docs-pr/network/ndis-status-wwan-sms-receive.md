@@ -1,7 +1,8 @@
 ---
 title: NDIS_STATUS_WWAN_SMS_RECEIVE
+ms.topic: reference
 description: Miniport drivers use the NDIS_STATUS_WWAN_SMS_RECEIVE notification to inform the MB Service about either the completion of a previous read request through a OID_WWAN_SMS_READ \ 160;query request, or the arrival of a new class-0 (flash/alert) message from the network provider as an event notification. Miniport drivers can also send unsolicited events with this notification.This notification uses the NDIS_WWAN_SMS_RECEIVE structure.
-ms.date: 08/08/2017
+ms.date: 03/02/2023
 keywords: 
  -NDIS_STATUS_WWAN_SMS_RECEIVE Network Drivers Starting with Windows Vista
 ---
@@ -23,7 +24,7 @@ If the request for read results in retrieval of large number of SMS records that
 
 The following diagram represents the usage of the multiple indication method for large number of SMS record retrieval:
 
-![diagram illustrating the usage of the multiple indication method for a large number of sms record retrieval.](images/wwansmsrecordretrieval.png)
+:::image type="content" source="images/wwansmsrecordretrieval.png" alt-text="Diagram illustrating the multiple indication method for retrieving a large number of SMS records.":::
 
 ## Requirements
 

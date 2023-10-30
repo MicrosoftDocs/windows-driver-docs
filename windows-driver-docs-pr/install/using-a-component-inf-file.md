@@ -1,25 +1,25 @@
 ---
 title: Using a Component INF File
 description: Describes how to use software components to include user-mode software that is specific to a device.
-ms.date: 10/17/2018
+ms.date: 05/08/2023
 ---
 
 # Using a Component INF File
 
 If you want to include user-mode software for use with a device on Windows 10, you have the following options to create a [DCH-compliant driver](../develop/getting-started-with-windows-drivers.md):
-    
+
 |Method|Scenario|
 |---|---|
 |[Hardware support apps (HSA)](../devapps/hardware-support-app--hsa--steps-for-driver-developers.md) | Device add-on software packaged as a UWP app that is delivered and serviced from the Microsoft Store.  Recommended approach. |
 |Software components|Device add-on software is an MSI or EXE binary, a Win32 service, or software installed using AddReg and CopyFiles.  Referenced binary only runs on desktop editions (Home, Pro, and Enterprise).  The referenced binary will not run on Windows 10S.|
 
-A software component is a separate, standalone driver package that can install one or more software modules.  The installed software enhances the value of the device, but is not necessary for basic device functionality and does not require an associated function driver service.  
+A software component is a separate, standalone driver package that can install one or more software modules.  The installed software enhances the value of the device, but is not necessary for basic device functionality and does not require an associated function driver service.
 
 This page provides guidelines for the use of software components.
 
 ## Getting started
 
-To create components, an [extension INF file](using-an-extension-inf-file.md) specifies the [INF AddComponent directive](inf-addcomponent-directive.md) one or more times in the [INF DDInstall.Components](inf-ddinstall-components-section.md) section.  For each software component referenced in an extension INF file, the system creates a virtual software-enumerated child device.  More than one driver package can reference the same software component. 
+To create components, an [extension INF file](using-an-extension-inf-file.md) specifies the [INF AddComponent directive](inf-addcomponent-directive.md) one or more times in the [INF DDInstall.Components](inf-ddinstall-components-section.md) section.  For each software component referenced in an extension INF file, the system creates a virtual software-enumerated child device.  More than one driver package can reference the same software component.
 
 Virtual device children can be updated independently just like any other device, as long as the parent device is started.  We recommend separating functionality into as many different groupings as makes sense from a servicing perspective, and then creating one software component for each grouping.
 
@@ -46,7 +46,7 @@ You can find an example of a component INF in the [Driver package installation t
 
 **Note**: In order for a software-enumerated component device to function, its parent must be started. If there is no driver available for the parent device, driver developers can create their own and optionally leverage the pass-through driver "umpass.sys". This driver is included in Windows and, effectively, does nothing other than start the device. In order to use umpass.sys, developers should use the Include/Needs INF directives in the [DDInstall section](inf-ddinstall-section.md) for each possible [DDInstall.\*] section to the corresponding [UmPass.\*] sections as shown below, regardless of whether the INF specifies any directives for that section or not:
 
-```cpp
+```inf
 [DDInstall]
 Include=umpass.inf
 Needs=UmPass
@@ -72,7 +72,7 @@ Needs=UmPass.Services
 
 To retrieve the device instance ID of a device that is associated with a software component, use the **SoftwareArguments** value in the [INF AddSoftware directive](inf-addsoftware-directive.md) section with the `<<DeviceInstanceID>>` runtime context variable.
 
-The executable can then retrieve the device instance ID of the software component from its incoming argument list.  
+The executable can then retrieve the device instance ID of the software component from its incoming argument list.
 
 Next, if the software component is targeting the Universal [target platform](../develop/target-platforms.md), use the following procedure:
 
@@ -92,7 +92,7 @@ The following example shows how you might use a software component to install a 
 
 ### Driver package INF file
 
-```cpp
+```inf
 [Version]
 Signature   = "$WINDOWS NT$"
 Class       = Extension
@@ -101,6 +101,7 @@ ExtensionId = {zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz} ; replace with your own GUI
 Provider    = %CONTOSO%
 DriverVer   = 06/21/2006,1.0.0.0
 CatalogFile = ContosoGrfx.cat
+PnpLockdown = 1
 
 [Manufacturer]
 %CONTOSO%=Contoso,NTx86
@@ -124,7 +125,7 @@ ContosoGrfx.DeviceDesc = "Contoso Graphics Card Extension"
 
 ### Software component INF file
 
-```cpp
+```inf
 [Version]
 Signature   = "$WINDOWS NT$"
 Class       = SoftwareComponent
@@ -132,6 +133,7 @@ ClassGuid   = {5c4c3332-344d-483c-8739-259e934c9cc8}
 Provider    = %CONTOSO%
 DriverVer   = 06/21/2006,1.0.0.0
 CatalogFile = ContosoCtrlPnl.cat
+PnpLockdown = 1
 
 [SourceDisksNames]
 1 = %Disk%,,,""
@@ -169,7 +171,7 @@ SoftwareVersion = 1.0.0.0
 [Strings]
 SPSVCINST_ASSOCSERVICE = 0x00000002
 CONTOSO = "Contoso"
-ContosoCtrlPnl.DeviceDesc = "Contoso Control Panel" 
+ContosoCtrlPnl.DeviceDesc = "Contoso Control Panel"
 ```
 
 The driver validation and submission process is the same for component INFs as for regular INFs. For more info, see [Windows HLK Getting Started](/windows-hardware/test/hlk/getstarted/windows-hlk-getting-started).

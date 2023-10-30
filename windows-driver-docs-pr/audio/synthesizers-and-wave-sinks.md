@@ -48,7 +48,4 @@ This same basic architecture also applies to kernel-mode implementations, with t
 
 When these steps are completed, the user-mode DirectMusic port should be open and activated for use. As soon as this much of the driver code is working, you can start implementing features. Use the source code for the user-mode Microsoft Software Synthesizer as a template and begin adding the new functionality.
 
-A user-mode software synthesizer can be implemented as an object with an [IDirectMusicSynth](/windows/win32/api/dmusics/nn-dmusics-idirectmusicsynth) interface. A user-mode wave sink can be implemented as an object with an [IDirectMusicSynthSink](/windows/win32/api/dmusics/nn-dmusics-idirectmusicsynthsink) interface. For more information, see [IDirectMusicSynth and IDirectMusicSynthSink](idirectmusicsynth-and-idirectmusicsynthsink.md).
-
- 
-
+A user-mode software synthesizer can be implemented as an object with an IDirectMusicSynth interface. A user-mode wave sink can be implemented as an object with an IDirectMusicSynthSink interface. For more information, see [IDirectMusicSynth and IDirectMusicSynthSink](idirectmusicsynth-and-idirectmusicsynthsink.md).

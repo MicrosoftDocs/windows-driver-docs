@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_WFD_ASSOCIATION_STATUS (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_WFD_ASSOCIATION_STATUS is a WiFiCx TLV that contains the status code to be set when an association request is denied.
 ms.date: 07/31/2021
 keywords:

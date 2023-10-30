@@ -1,12 +1,18 @@
 ---
 title: V4 Driver INF
 description: The v4 print driver setup model continues to use INF files, but also employs a new manifest file to capture the printer specific setup directives.
-ms.date: 08/27/2021
+ms.date: 05/08/2023
 ---
 
 # V4 Driver INF
 
+[!include[Print Support Apps](../includes/print-support-apps.md)]
+
 The v4 print driver setup model continues to use INF files, but also employs a new manifest file to capture the printer specific setup directives.
+
+> [!IMPORTANT]
+> Starting with the WDK for Windows 11, version 22H2, WDF redistributable co-installers are no longer supported.
+> To learn how to work around this change, see [WDF redistributable co-installers don't work](/windows-hardware/drivers/wdk-known-issues#wdf-redistributable-co-installers-dont-work) in the *WDK known issues* article.
 
 ## Sample INF
 
@@ -18,11 +24,12 @@ The following sample INF file assumes that a fictional company, Fabrikam, has ma
 [Version]
 Signature="$Windows NT$"
 Provider="Fabrikam"
-ClassGUID={4D36E979-E325-11CE-BFC1-08002BE10318}
 Class=Printer
+ClassGUID={4D36E979-E325-11CE-BFC1-08002BE10318}
 CatalogFile=prnfa999.CAT
 DriverVer=09/12/2010,6.2.8060.4
 ClassVer=4.0 ;This causes v4 setup to take place
+PnpLockdown=1
 
 [Manufacturer]
 "Fabrikam"=Fabrikam,NTamd64

@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["InvalidReqAccess rule (kmdf)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - InvalidReqAccess
 api_type:

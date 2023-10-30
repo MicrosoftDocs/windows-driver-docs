@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["IrqlIoPassive5 rule (wdm)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IrqlIoPassive5
 api_type:

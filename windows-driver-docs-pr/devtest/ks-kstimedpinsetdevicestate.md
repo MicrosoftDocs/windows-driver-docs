@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["KsTimedPinSetDeviceState rule ()"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KsTimedPinSetDeviceState
 api_type:

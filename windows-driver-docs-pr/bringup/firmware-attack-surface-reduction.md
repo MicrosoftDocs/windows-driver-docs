@@ -1,7 +1,7 @@
 ---
 title: Firmware Attack Surface Reduction (FASR)
 description: Provides information about how to achieve Secured-core PC compliance with Firmware Attack Surface Reduction (FASR).
-ms.date: 05/26/2022
+ms.date: 03/23/2023
 ---
 
 # Firmware Attack Surface Reduction (FASR)
@@ -28,7 +28,7 @@ FASR supports two boot paths:
 
     ![F A S R boot flow on certified boot path](images/fasr-5.png)
 
-2. **Custom boot path:** All platform firmware code can execute. Boot-critical information specific to a particular OEM/platform is converted into data on the custom boot path and used by the certified boot path to configure the system properly on that boot path. The following diagram shows the FASR boot flow on custom boot path.
+1. **Custom boot path:** All platform firmware code can execute. Boot-critical information specific to a particular OEM/platform is converted into data on the custom boot path and used by the certified boot path to configure the system properly on that boot path. The following diagram shows the FASR boot flow on custom boot path.
 
     ![F A S R boot flow on custom boot path](images/fasr-6.png)
 
@@ -211,8 +211,7 @@ The following table indicates the broad security pillars or goals of Secured-cor
 | Provide advanced identity verification and protection | Windows Hello |
 | Protect critical data in case of lost or stolen devices | BitLocker encryption |
 
-> [!NOTE]
-> If the system does not have advanced security capabilities to support D-RTM, the firmware protection requirements can be met using a combination of S-RTM and Standalone MM with MM Supervisor, both of which are offered by the FASR firmware.
+If the system does not have advanced security capabilities to support D-RTM, the firmware protection requirements can be met using a combination of S-RTM and Standalone MM with MM Supervisor, both of which are offered by the FASR firmware.
 
 ## Summary
 

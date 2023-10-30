@@ -4,6 +4,7 @@ description: DIF_SELECTDEVICE
 keywords: ["DIF_SELECTDEVICE Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DIF_SELECTDEVICE
 api_location:

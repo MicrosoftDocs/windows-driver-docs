@@ -5,6 +5,7 @@ keywords: ["Searching for Process Servers Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Searching for Process Servers
 api_type:
@@ -29,7 +30,7 @@ Debugger -QR \\Server
 
 *Debugger* can be either KD or CDB -- the display will be the same in either case. The two backslashes (**\\\\**) preceding *Server* are optional.
 
-In WinDbg, you can use the **Connect to Remote Stub Server** dialog box to browse a list of available process servers. See [File | Connect to Remote Stub](file---connect-to-remote-stub.md) for more details.
+In WinDbg, you can use the **Connect to Remote Stub Server** dialog box to browse a list of available process servers. 
 
 **Note**  For a process server to be discoverable, it must be activated with elevated privileges. For more information, see [Activating a Process Server](activating-a-process-server.md).
 

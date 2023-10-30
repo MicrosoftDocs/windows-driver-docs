@@ -10,7 +10,8 @@ api_location:
 - fltkernel.h
 api_type:
 - HeaderDef
-ms.date: 04/28/2022
+ms.date: 03/13/2023
+ms.topic: reference
 ---
 
 # FLT_PARAMETERS for IRP_MJ_LOCK_CONTROL union
@@ -19,7 +20,7 @@ The following union component is used when the **MajorFunction** field of the [*
 
 ## Syntax
 
-```ManagedCPlusPlus
+``` C
 typedef union _FLT_PARAMETERS {
   ...    ;
   struct {
@@ -36,26 +37,19 @@ typedef union _FLT_PARAMETERS {
 
 ## Members
 
-**LockControl**  
-Structure containing the following members.
+- **LockControl**: Structure containing the following members.
 
-**Length**  
-Pointer to a variable that specifies the length in bytes of the range to be locked.
+- **Length**: Pointer to a variable that specifies the length in bytes of the range to be locked.
 
-**Key**  
-Key value to be assigned to the byte-range lock.
+- **Key**: Key value to be assigned to the byte-range lock.
 
-**ByteOffset**  
-Starting byte offset within the file of the range to be locked.
+- **ByteOffset**: Starting byte offset within the file of the range to be locked.
 
-**ProcessId**  
-Opaque pointer to the process object for the process that requested the byte-range lock.
+- **ProcessId**: Opaque pointer to the process object for the process that requested the byte-range lock.
 
-**FailImmediately**  
-Boolean value specifying whether the lock request should fail if the lock cannot be granted immediately. This member is set to **FALSE** if the requesting thread can be put into a wait state until the request is granted or **TRUE** if it cannot.  
+- **FailImmediately**: Boolean value specifying whether the lock request should fail if the lock cannot be granted immediately. This member is set to **FALSE** if the requesting thread can be put into a wait state until the request is granted or **TRUE** if it cannot.  
 
-**ExclusiveLock**  
-Boolean value specifying whether an exclusive lock is requested. This member is set to **TRUE** if an exclusive lock is requested or **FALSE** if a shared lock is requested.
+- **ExclusiveLock**: Boolean value specifying whether an exclusive lock is requested. This member is set to **TRUE** if an exclusive lock is requested or **FALSE** if a shared lock is requested.
 
 ## Remarks
 
@@ -65,9 +59,9 @@ IRP_MJ_LOCK_CONTROL can be an IRP-based I/O operation or a fast I/O operation.
 
 ## Requirements
 
-| Requirement | Description |
-| ----------- | ----------- |
-| Header| *fltkernel.h* (include *fltkernel.h*) |
+| Requirement type | Requirement |
+| ---------------- | ----------- |
+| Header | *Fltkernel.h* (include *Fltkernel.h*) |
 
 ## See also
 
@@ -105,4 +99,4 @@ IRP_MJ_LOCK_CONTROL can be an IRP-based I/O operation or a fast I/O operation.
 
 [**PFLT_COMPLETE_LOCK_CALLBACK_DATA_ROUTINE**](/windows-hardware/drivers/ddi/fltkernel/nc-fltkernel-pflt_complete_lock_callback_data_routine)
 
-[**PUNLOCK_ROUTINE**](punlock-routine.md)
+[**PUNLOCK_ROUTINE**](/windows-hardware/drivers/ddi/ntifs/nc-ntifs-punlock_routine)

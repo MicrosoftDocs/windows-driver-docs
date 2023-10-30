@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1A5 USB_DRIPS_BLOCKER_SURPRISE_REMOVAL_LIVEDUMP", "USB_D
 ms.date: 01/10/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - USB_DRIPS_BLOCKER_SURPRISE_REMOVAL_LIVEDUMP
 api_type:

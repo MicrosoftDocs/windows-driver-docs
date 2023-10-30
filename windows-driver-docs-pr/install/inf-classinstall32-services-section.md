@@ -5,6 +5,7 @@ keywords:
 - INF ClassInstall32.Services Section Device and Driver Installation
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INF ClassInstall32.Services Section
 api_type:
@@ -14,8 +15,8 @@ ms.date: 06/08/2022
 
 # INF ClassInstall32.Services section
 
-> [!NOTE]
-> If you are building a universal or mobile driver package, this section is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
+> [!CAUTION]
+> If you are building a universal or Windows Driver package, this section is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md) and [Getting Started with Windows Drivers](../develop/getting-started-with-windows-drivers.md).
 
 A **ClassInstall32** section installs a new [device setup class](./overview-of-device-setup-classes.md) for devices in the new class.
 

@@ -4,6 +4,7 @@ description: The KSPROPERTY_CAMERACONTROL_ZOOM_RELATIVE property specifies the z
 keywords: ["KSPROPERTY_CAMERACONTROL_ZOOM_RELATIVE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_ZOOM_RELATIVE
 api_location:

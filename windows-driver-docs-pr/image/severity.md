@@ -4,6 +4,7 @@ description: The required Severity element specifies the severity level of the c
 keywords: ["Severity element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn Severity
 api_type:

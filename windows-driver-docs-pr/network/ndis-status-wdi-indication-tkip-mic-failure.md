@@ -1,7 +1,8 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_TKIP_MIC_FAILURE
+ms.topic: reference
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_TKIP_MIC_FAILURE to indicate when a received packet that was successfully decrypted by the TKIP cipher algorithm fails the message integrity code (MIC) verification.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - NDIS_STATUS_WDI_INDICATION_TKIP_MIC_FAILURE Network Drivers Starting with Windows Vista
 ---

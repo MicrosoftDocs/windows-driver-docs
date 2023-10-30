@@ -5,7 +5,7 @@ keywords:
 - vendor-supplied parallel drivers WDK , parallel port operation
 - system-supplied function drivers WDK parallel ports
 - function drivers WDK parallel ports
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Operating a Parallel Port

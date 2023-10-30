@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1F5 APPLICATION_HANG_KERNEL_LIVEDUMP", "APPLICATION_HANG
 ms.date: 10/28/2022
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - APPLICATION_HANG_KERNEL_LIVEDUMP
 api_type:
@@ -36,7 +37,7 @@ This live kernel triage dump may contain the kernel thread states of the hung pr
 
 ## Resolution
 
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
 
 ## See Also

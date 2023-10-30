@@ -5,17 +5,17 @@ keywords:
 - INF BitReg Directive Device and Driver Installation
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INF BitReg Directive
 api_type:
 - NA
-ms.date: 07/08/2022
+ms.date: 07/17/2023
 ---
 
 # INF BitReg directive
 
-> [!NOTE]
-> If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
+[!INCLUDE [Caution invalid INF directive](../includes/inf-directive-invalid-22h2.md)]
 
 A **BitReg** directive references one or more INF-writer-defined sections used to set or clear bits within an existing [REG_BINARY](/windows/desktop/SysInfo/registry-value-types)-type value entry in the registry. However, this directive is rarely used in device/driver INF files.
 

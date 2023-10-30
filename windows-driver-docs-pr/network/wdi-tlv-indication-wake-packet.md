@@ -1,7 +1,8 @@
 ---
 title: WDI_TLV_INDICATION_WAKE_PACKET
+ms.topic: reference
 description: WDI_TLV_INDICATION_WAKE_PACKET is a TLV that contains a wake packet for NDIS_STATUS_WDI_INDICATION_WAKE_REASON. When the wake reason is WDI_WAKE_REASON_CODE PACKET, the status must include the wake packet encapsulated in a WDI_TLV_INDICATION_WAKE_PACKET.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - WDI_TLV_INDICATION_WAKE_PACKET Network Drivers Starting with Windows Vista
 ---

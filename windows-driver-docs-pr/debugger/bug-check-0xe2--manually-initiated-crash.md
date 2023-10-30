@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xE2 MANUALLY_INITIATED_CRASH", "MANUALLY_INITIATED_CRASH"
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - MANUALLY_INITIATED_CRASH
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The MANUALLY\_INITIATED\_CRASH bug check has a value of 0x000000E2. This indicates that the user deliberately initiated a crash dump from either the kernel debugger or the keyboard.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 ## MANUALLY\_INITIATED\_CRASH Parameters
 

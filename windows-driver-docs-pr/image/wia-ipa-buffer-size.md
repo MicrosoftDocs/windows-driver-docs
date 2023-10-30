@@ -4,6 +4,7 @@ description: The WIA_IPA_BUFFER_SIZE property contains the size of the buffer, i
 keywords: ["WIA_IPA_BUFFER_SIZE Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPA_BUFFER_SIZE
 api_location:

@@ -4,6 +4,7 @@ description: The HS_PLUGIN_CHECK_FOR_UPDATES function checks for configuration u
 keywords: 
 - typedef DWORD (WINAPI HS_PLUGIN_CHECK_FOR_UPDATES) function Network Drivers Starting with Windows Vista
 ms.date: 07/31/2017
+ms.topic: reference
 ---
 
 # HS\_PLUGIN\_CHECK\_FOR\_UPDATES function

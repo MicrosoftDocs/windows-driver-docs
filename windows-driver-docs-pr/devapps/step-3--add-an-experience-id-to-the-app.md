@@ -1,7 +1,7 @@
 ---
 title: Step 3 Add an experience ID to the Microsoft Store device app
 description: This topic describes how to add the experience ID to your UWP device app.
-ms.date: 08/12/2021
+ms.date: 03/17/2023
 ---
 
 # Step 3: Add an experience ID to the Microsoft Store device app
@@ -10,13 +10,11 @@ ms.date: 08/12/2021
 
 This topic describes how to add the experience ID to your UWP device app. The *experience ID* is a GUID that uniquely identifies a device metadata package; it's required if your app is configured for automatic installation, as is the case with [UWP device apps for printers](uwp-device-apps-for-printers.md) and [cameras](uwp-device-apps-for-webcams.md).
 
-> [!TIP]
-> You can skip this step if your app is specified as a privileged app and it is not configured for automatic installation.
+You can skip this step if your app is specified as a privileged app and it is not configured for automatic installation.
 
 A UWP device app is a special kind of UWP app that device manufacturers create to serve as a companion to their internal or peripheral device. By using device metadata, device apps can run privileged operations and automatically install when a device is plugged in. For more info about UWP device apps, see [Meet UWP device apps](meet-uwp-device-apps.md).
 
-> [!NOTE]
-> This topic is part of a step-by-step series. See [Build a UWP device app step-by-step](build-a-uwp-device-app-step-by-step.md) for the introduction.
+This topic is part of a step-by-step series. See [Build a UWP device app step-by-step](build-a-uwp-device-app-step-by-step.md) for the introduction.
 
 ## Before you begin
 

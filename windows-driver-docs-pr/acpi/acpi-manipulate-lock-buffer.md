@@ -3,7 +3,8 @@ title: ACPI_MANIPULATE_LOCK_BUFFER structure
 description: The ACPI_MANIPULATE_LOCK_BUFFER macro is reserved for internal use only with an IOCTL_ACPI_ACQUIRE_GLOBAL_LOCK and IOCTL_ACPI_RELEASE_GLOBAL_LOCK.
 keywords: 
 - ACPI_MANIPULATE_LOCK_BUFFER structure ACPI Devices
-ms.date: 08/17/2021
+ms.date: 03/17/2023
+ms.topic: reference
 ---
 
 # ACPI_MANIPULATE_LOCK_BUFFER structure

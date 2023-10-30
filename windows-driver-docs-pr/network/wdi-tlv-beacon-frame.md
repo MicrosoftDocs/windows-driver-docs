@@ -1,7 +1,8 @@
 ---
 title: WDI_TLV_BEACON_FRAME
+ms.topic: reference
 description: WDI_TLV_BEACON_FRAME is a TLV that contains a beacon frame.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - WDI_TLV_BEACON_FRAME Network Drivers Starting with Windows Vista
 ---

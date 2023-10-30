@@ -10,10 +10,10 @@ ms.date: 05/23/2017
 
 When you debug Plug and Play drivers, you may find the following debugger extensions useful.
 
-[**!arbiter**](-arbiter.md)  
+[**!arbiter**](../debuggercmds/-arbiter.md)  
 Displays the current system resource arbiters. An arbiter is a piece of code that is exposed by the bus driver that arbitrates requests for resources, and attempts to solve the resource conflicts among the devices connected on that bus.
 
-[**!cmreslist**](-cmreslist.md)  
+[**!cmreslist**](../debuggercmds/-cmreslist.md)  
 Displays the CM\_RESOURCE\_LIST for the specified device object.
 
 You must know the address of the CM Resource List.
@@ -34,13 +34,13 @@ CmResourceList at 0xe12576e8  Version 0.0  Interface 0x1  Bus #0
 
 This shows that the device with this CM resource list is using I/O Range 3F8-3FF and IRQ 4.
 
-[**!dcs**](-dcs.md)  
-This extension is obsolete -- its functionality has been subsumed by [**!pci**](-pci.md). See the !pci 100 example later in this section.
+[**!dcs**](../debuggercmds/-dcs.md)  
+This extension is obsolete -- its functionality has been subsumed by [**!pci**](../debuggercmds/-pci.md). See the !pci 100 example later in this section.
 
-[**!devext**](-devext.md)  
+[**!devext**](../debuggercmds/-devext.md)  
 Displays bus-specific device extension information for a variety of devices.
 
-[**!devnode**](-devnode.md)  
+[**!devnode**](../debuggercmds/-devnode.md)  
 Displays information about a node in the device tree.
 
 Device node 0 (zero) is the root of the device tree.
@@ -70,7 +70,7 @@ DevNode 0xfffffa8003634af0 for PDO 0xfffffa8003658590
   DisableableDepends = 1 (including self)
 ```
 
-[**!devobj**](-devobj.md)  
+[**!devobj**](../debuggercmds/-devobj.md)  
 Displays detailed information about a DEVICE\_OBJECT.
 
 Here is an example:
@@ -86,10 +86,10 @@ DevExt ff0d4ba8 DevNode ff0d4a08
 Device queue is not busy.
 ```
 
-[**!drivers**](-drivers.md)  
-The [**!drivers**](-drivers.md) command is no longer supported. Use the [**lm t n**](lm--list-loaded-modules-.md) command instead.
+[**!drivers**](../debuggercmds/-drivers.md)  
+The [**!drivers**](../debuggercmds/-drivers.md) command is no longer supported. Use the [**lm t n**](../debuggercmds/lm--list-loaded-modules-.md) command instead.
 
-[**!drvobj**](-drvobj.md)  
+[**!drvobj**](../debuggercmds/-drvobj.md)  
 Displays detailed information about a DRIVER\_OBJECT.
 
 Lists all the device objects created by the specified driver.
@@ -107,24 +107,24 @@ Device Object list:
 ffba3040  ff0b4040  ff0b59e0  ff0b5040
 ```
 
-[**!ecb, !ecd, !ecw**](-ecb---ecd---ecw.md)  
+[**!ecb, !ecd, !ecw**](../debuggercmds/-ecb---ecd---ecw.md)  
 (x86 target computers only) Writes a sequence of values into the PCI configuration space.
 
-[**ib, iw, id**](-ib---id---iw.md)  
+[**ib, iw, id**](../debuggercmds/-ib---id---iw.md)  
 Reads data from an I/O port.
 
 These three commands are useful for determining whether a certain I/O range is claimed by a device other than the driver being debugged. A byte value of 0xFF at a port indicates that the port is not in use.
 
-[**!ioreslist**](-ioreslist.md)  
+[**!ioreslist**](../debuggercmds/-ioreslist.md)  
 Displays the specified IO\_RESOURCE\_REQUIREMENTS\_LIST.
 
-[**!irp**](-irp.md)  
+[**!irp**](../debuggercmds/-irp.md)  
 Displays information about an IRP.
 
-[**!irpfind**](-irpfind.md)  
+[**!irpfind**](../debuggercmds/-irpfind.md)  
 Displays information about all IRPs currently allocated in the target system, or information about those IRPs whose fields match the specified search criteria.
 
-[**!pci**](-pci.md)  
+[**!pci**](../debuggercmds/-pci.md)  
 (x86 target computers only) Displays the current status of the PCI buses and any devices attached to them. It can also display the PCI configuration space.
 
 The following example displays the devices on the primary bus:
@@ -201,13 +201,13 @@ c0: 00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000
 e0: 00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000
 ```
 
-[**!pcitree**](-pcitree.md)  
+[**!pcitree**](../debuggercmds/-pcitree.md)  
 Displays information about PCI device objects, including child PCI buses and CardBus buses, as well as the devices attached to them.
 
-[**!pnpevent**](-pnpevent.md)  
+[**!pnpevent**](../debuggercmds/-pnpevent.md)  
 Displays the PnP device event queue.
 
-[**!rellist**](-rellist.md)  
+[**!rellist**](../debuggercmds/-rellist.md)  
 Displays a PnP relation list and any related CM\_RESOURCE\_LIST and IO\_RESOURCE\_LIST structures.
 
  

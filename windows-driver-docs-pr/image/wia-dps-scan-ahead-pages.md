@@ -4,6 +4,7 @@ description: The WIA_DPS_SCAN_AHEAD_PAGES property contains a value that indicat
 keywords: ["WIA_DPS_SCAN_AHEAD_PAGES Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPS_SCAN_AHEAD_PAGES
 api_location:

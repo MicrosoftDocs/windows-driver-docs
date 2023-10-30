@@ -1,5 +1,6 @@
 ---
 title: OID_PNP_CAPABILITIES
+ms.topic: reference
 description: The OID_PNP_CAPABILITIES OID requests a miniport driver to return the wake-up capabilities of its network adapter or requests an intermediate driver to return the intermediate driver's wake-up capabilities.
 ms.date: 08/08/2017
 keywords: 
@@ -90,7 +91,7 @@ After the miniport driver completes initialization, both the protocol driver and
 
 If the miniport driver returns **NDIS\_STATUS\_SUCCESS** to a query of OID\_PNP\_CAPABILITIES, NDIS considers the miniport driver to be PM-aware. If the miniport driver returns **NDIS\_STATUS\_NOT\_SUPPORTED**, NDIS considers the miniport driver to be a legacy miniport driver that is not PM-aware.
 
-When calling [**NdisMSetAttributesEx**](/previous-versions/windows/hardware/network/ff553623(v=vs.85)), a miniport driver that does not support wake-up capabilities but that can save and restore its network adapter state across a power-state transition can set the **NDIS\_ATTRIBUTE\_NO\_HALT\_ON\_SUSPEND** flag. Setting this flag prevents NDIS from calling the driver's *MiniportHalt* function before the system transitions to a low-power (sleeping) state. However, if the miniport driver returns **NDIS\_STATUS\_NOT\_SUPPORTED** in response to a query OID\_PNP\_CAPABILITIES, NDIS ignores the **NDIS\_ATTRIBUTE\_NO\_HALT\_ON\_SUSPEND** flag and halts the network adapter if the system goes into a low-power state.
+When calling [**NdisMSetAttributesEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetattributesex), a miniport driver that does not support wake-up capabilities but that can save and restore its network adapter state across a power-state transition can set the **NDIS\_ATTRIBUTE\_NO\_HALT\_ON\_SUSPEND** flag. Setting this flag prevents NDIS from calling the driver's *MiniportHalt* function before the system transitions to a low-power (sleeping) state. However, if the miniport driver returns **NDIS\_STATUS\_NOT\_SUPPORTED** in response to a query OID\_PNP\_CAPABILITIES, NDIS ignores the **NDIS\_ATTRIBUTE\_NO\_HALT\_ON\_SUSPEND** flag and halts the network adapter if the system goes into a low-power state.
 
 A miniport driver's network adapter can support any combination of wake-up events, including no wake-up events. A miniport driver can still support power management even if its network adapter cannot not signal wake-up events. In this case, the only power management OIDs that the miniport driver supports in addition to OID\_PNP\_CAPABILITIES are [OID\_PNP\_QUERY\_POWER](oid-pnp-query-power.md) and [OID\_PNP\_SET\_POWER](oid-pnp-set-power.md).
 
@@ -132,7 +133,7 @@ If the underlying network adapter is not PM-aware, the intermediate driver shoul
 
 [**NDIS\_DEVICE\_POWER\_STATE**](/windows-hardware/drivers/ddi/ntddndis/ne-ntddndis-_ndis_device_power_state)
 
-[**NdisMSetAttributesEx**](/previous-versions/windows/hardware/network/ff553623(v=vs.85))
+[**NdisMSetAttributesEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetattributesex)
 
 [OID\_PM\_CURRENT\_CAPABILITIES](oid-pm-current-capabilities.md)
 

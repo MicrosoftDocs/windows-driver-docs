@@ -1,7 +1,8 @@
 ---
 title: WDI_TLV_OS_POWER_MANAGEMENT_FEATURES
+ms.topic: reference
 description: WDI_TLV_OS_POWER_MANAGEMENT_FEATURES is a TLV that contains flags for OS power management features.
-ms.date: 03/30/2018
+ms.date: 03/02/2023
 keywords:
  - WDI_TLV_OS_POWER_MANAGEMENT_FEATURES Network Drivers Starting with Windows Vista
 ---

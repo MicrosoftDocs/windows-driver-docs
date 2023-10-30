@@ -4,10 +4,12 @@ description: Provides information about print ticket interfaces and print driver
 keywords:
 - IPrintTicketProvider
 - IPrintOemPrintTicketProvider
-ms.date: 09/07/2022
+ms.date: 01/30/2023
 ---
 
 # Print ticket interfaces and print driver plug-ins
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 This section describes how the [**IPrintTicketProvider**](/windows-hardware/drivers/ddi/prdrvcom/nn-prdrvcom-iprintticketprovider) interface and the [**IPrintOemPrintTicketProvider**](/windows-hardware/drivers/ddi/prcomoem/nn-prcomoem-iprintoemprintticketprovider) interface work with the Unidrv and PScript5 print drivers and their plug-ins and the context of the application-level functions that call them.
 

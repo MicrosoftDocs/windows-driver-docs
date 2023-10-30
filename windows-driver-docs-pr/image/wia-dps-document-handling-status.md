@@ -4,6 +4,7 @@ description: The WIA_DPS_DOCUMENT_HANDLING_STATUS property contains the current 
 keywords: ["WIA_DPS_DOCUMENT_HANDLING_STATUS Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPS_DOCUMENT_HANDLING_STATUS
 api_location:

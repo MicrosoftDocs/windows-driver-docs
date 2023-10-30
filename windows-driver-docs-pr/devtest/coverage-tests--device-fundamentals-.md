@@ -36,7 +36,7 @@ The Device Fundamental Coverage tests monitor and report on the various I/O requ
 <p><strong>Test binary:</strong> DriverCoverageDisableSupport.dll</p>
 <p><strong>Test method:</strong> DisableCoverageDataCollection</p>
 <p><strong>Parameters:</strong></p>
-<p><em>DQ</em> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p></td>
+<p><em>DQ</em> - see <a href="/windows-hardware/drivers" data-raw-source="[How to select and configure the Device Fundamentals tests](../develop/how-to-select-and-configure-the-device-fundamental-tests.md)">Device Fundamentals Test Parameters</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><span id="Display_collected_IRP_coverage_data._"></span><span id="display_collected_irp_coverage_data._"></span><span id="DISPLAY_COLLECTED_IRP_COVERAGE_DATA._"></span>Display collected IRP coverage data.</p></td>
@@ -58,7 +58,7 @@ The Device Fundamental Coverage tests monitor and report on the various I/O requ
 <p><strong>Test binary:</strong> DriverCoverageEnableSupport.dll</p>
 <p><strong>Test method:</strong> EnableCoverageDataCollection</p>
 <p><strong>Parameters:</strong> None</p>
-<p><em>DQ</em> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p></td>
+<p><em>DQ</em> - see <a href="/windows-hardware/drivers" data-raw-source="[How to select and configure the Device Fundamentals tests](../develop/how-to-select-and-configure-the-device-fundamental-tests.md)">Device Fundamentals Test Parameters</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -74,11 +74,11 @@ The Device Fundamentals coverage tests are based upon the Driver Coverage Toolki
 
 [How to How to test a driver at runtime using Visual Studio](/windows-hardware/drivers)
 
-[How to select and configure the Device Fundamentals tests](/windows-hardware/drivers)
+[How to select and configure the Device Fundamentals tests](../develop/how-to-select-and-configure-the-device-fundamental-tests.md)
 
 [Device Fundamentals Tests](device-fundamentals-tests.md)
 
-[Device Fundamentals Test Parameters](/windows-hardware/drivers)
+[How to select and configure the Device Fundamentals tests](../develop/how-to-select-and-configure-the-device-fundamental-tests.md)
 
 [Provided WDTF Simple I/O plug-ins](../wdtf/provided-wdtf-simpleio-plug-ins.md)
 

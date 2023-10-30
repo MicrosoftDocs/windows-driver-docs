@@ -7,7 +7,7 @@ keywords:
 - hardware errors WDK WHEA , new information
 - errors WDK WHEA , new information about WHEA
 - source information WDK WHEA , new
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # New Information for Windows Hardware Error Architecture

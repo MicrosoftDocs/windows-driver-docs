@@ -4,6 +4,7 @@ description: The KSPROPERTY_DISPLAY_ADAPTER_GUID property returns the adapter GU
 keywords: ["KSPROPERTY_DISPLAY_ADAPTER_GUID Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_DISPLAY_ADAPTER_GUID
 api_location:

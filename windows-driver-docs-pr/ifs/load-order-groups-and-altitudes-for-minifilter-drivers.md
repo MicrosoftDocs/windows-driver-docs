@@ -26,7 +26,7 @@ The altitude is an infinite-precision string interpreted as a decimal number. A 
 
 Microsoft allocates "integer" altitude values based on filter requirements and load order group. Companies with a Microsoft-assigned integer altitude can [create their own altitudes](#create-an-altitude) within the same load order group.
 
-Altitude values for a filter driver are specified in the **Instance** definitions of the [**Strings** Section in the filter driver's INF file](creating-an-inf-file-for-a-minifilter-driver.md). Instance definitions can also be specified in calls to the [**InstanceSetupCallback**](/windows-hardware/drivers/ddi/fltkernel/nc-fltkernel-pflt_instance_setup_callback) routine in the [**FLT_REGISTRATION**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_registration) structure. Multiple instances and altitudes can be defined for a filter driver. These instance definitions apply across all volumes.
+Altitude values for a filter driver are specified in the **Instance** definitions of the [**Strings** Section in the filter driver's INF file](creating-an-inf-file-for-a-minifilter-driver.md). Instance definitions can also be specified in calls to the [**InstanceSetupCallback**](/windows-hardware/drivers/ddi/fltkernel/nc-fltkernel-pflt_instance_setup_callback) routine in the [**FLT_REGISTRATION**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_registration) structure. Multiple instances and altitudes can be defined for a filter driver. These instance definitions apply across all volumes. Note that multiple altitudes for the same driver is rarely allowed and there is always a better solution.
 
 ## Types of load order groups and their altitude ranges
 

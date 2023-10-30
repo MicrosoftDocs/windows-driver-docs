@@ -4,6 +4,7 @@ description: The KSPROPERTY\_INTERLEAVEDAUDIO_FORMATINFORMATION property provide
 keywords: ["KSPROPERTY_INTERLEAVEDAUDIO_FORMATINFORMATION Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_INTERLEAVEDAUDIO_FORMATINFORMATION 
 api_location:

@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_INTERFACE_INFO
+ms.topic: reference
 description: As a query, use the OID_GEN_INTERFACE_INFO OID to obtain the current state and statistics information for a network interface.
 ms.date: 08/08/2017
 keywords: 

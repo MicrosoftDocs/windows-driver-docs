@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x109 CRITICAL_STRUCTURE_CORRUPTION", "CRITICAL_STRUCTURE_
 ms.date: 05/13/2020
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - CRITICAL_STRUCTURE_CORRUPTION
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The CRITICAL\_STRUCTURE\_CORRUPTION bug check has a value of 0x00000109. This indicates that the kernel has detected critical kernel code or data corruption.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## CRITICAL\_STRUCTURE\_CORRUPTION Parameters
@@ -257,15 +258,15 @@ There are generally three different causes for this bug check:
 
 1.  A driver has inadvertently, or deliberately, modified critical kernel code or data. Microsoft Windows Server 2003 with Service Pack 1 (SP1) and later versions of Windows for x64-based computers do not allow the kernel to be patched except through authorized Microsoft-originated hot patches.
 
-2.  A developer attempted to set a normal kernel breakpoint using a kernel debugger that was not attached when the system was started. Normal breakpoints ([**bp**](bp--bu--bm--set-breakpoint-.md)) can only be set if the debugger is attached at start time. Processor breakpoints ([**ba**](ba--break-on-access-.md)) can be set at any time.
+2.  A developer attempted to set a normal kernel breakpoint using a kernel debugger that was not attached when the system was started. Normal breakpoints ([**bp**](../debuggercmds/bp--bu--bm--set-breakpoint-.md)) can only be set if the debugger is attached at start time. Processor breakpoints ([**ba**](../debuggercmds/ba--break-on-access-.md)) can be set at any time.
 
 3.  A hardware corruption occurred. For example, the kernel code or data could have been stored in memory that failed.
 
 ## Resolution
 
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
-To start, examine the stack trace using the [**k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command. You can specify the processor number to examine the stacks on all processors.
+To start, examine the stack trace using the [**k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)**](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command. You can specify the processor number to examine the stacks on all processors.
 
 You can also set a breakpoint in the code leading up to this stop code and attempt to single step forward into the faulting code.
 

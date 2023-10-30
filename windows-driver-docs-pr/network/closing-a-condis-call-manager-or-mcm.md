@@ -7,7 +7,7 @@ keywords:
 - miniport call managers WDK networking , closing
 - closing call managers
 - closing miniport call managers
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # Closing a CoNDIS Call Manager or MCM

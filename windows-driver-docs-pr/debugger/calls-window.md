@@ -1,11 +1,11 @@
 ---
-title: Viewing the Call Stack in WinDbg
+title: Viewing the Call Stack in WinDbg (Classic)
 description: In WinDbg, you can view the call stack by entering commands or by using the Calls window.
 keywords: ["debugging information windows, Calls window", "Calls window", "call stack, Calls window"]
 ms.date: 05/13/2020
 ---
 
-# Viewing the Call Stack in WinDbg
+# Viewing the Call Stack in WinDbg (Classic)
 
 
 The call stack is the chain of function calls that have led to the current location of the program counter. The top function on the call stack is the current function, the next function is the function that called the current function, and so on. The call stack that is displayed is based on the current program counter, unless you change the register context. For more information about how to change the register context, see [Changing Contexts](changing-contexts.md).
@@ -15,12 +15,12 @@ In WinDbg, you can view the call stack by entering commands or by using the Call
 ## <span id="Debugger_Command_Window"></span><span id="debugger_command_window"></span><span id="DEBUGGER_COMMAND_WINDOW"></span>Debugger Command Window
 
 
-You can view the call stack by entering one of the [**k (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) commands in the Debugger Command window.
+You can view the call stack by entering one of the [**k (Display Stack Backtrace)**](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) commands in the Debugger Command window.
 
 ## <span id="Calls_Window"></span><span id="calls_window"></span><span id="CALLS_WINDOW"></span>Calls Window
 
 
-As an alternative to the [**k**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command, you can view the call stack in the Calls window. To open the Calls window, choose **Call Stack** from the **View** menu.
+As an alternative to the [**k**](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command, you can view the call stack in the Calls window. To open the Calls window, choose **Call Stack** from the **View** menu.
 
 The following screen shot shows an example of a Calls window.
 
@@ -51,7 +51,7 @@ The Calls window has a toolbar that contains several buttons and has a shortcut 
 
 -   **Always floating** causes the window to remain undocked even if it is dragged to a docking location.
 
--   **Move with frame** causes the window to move when the WinDbg frame is moved, even if the window is undocked. For more information about docked, tabbed, and floating windows, see [Positioning the Windows](positioning-the-windows.md).
+-   **Move with frame** causes the window to move when the WinDbg frame is moved, even if the window is undocked. 
 
 ### <span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 

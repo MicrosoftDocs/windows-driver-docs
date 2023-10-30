@@ -1,7 +1,8 @@
 ---
 title: EFI_USBFN_IO_PROTOCOL.StopController
 description: The StopController function disables the hardware device by resetting the run/stop bit and powers off the USB controller if necessary.
-ms.date: 08/23/2021
+ms.date: 03/23/2023
+ms.topic: reference
 ---
 
 # EFI_USBFN_IO_PROTOCOL.StopController

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x50 PAGE_FAULT_IN_NONPAGED_AREA", "PAGE_FAULT_IN_NONPAGED
 ms.date: 03/15/2022
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - PAGE_FAULT_IN_NONPAGED_AREA
 api_type:
@@ -16,7 +17,7 @@ api_type:
 The PAGE\_FAULT\_IN\_NONPAGED\_AREA bug check has a value of 0x00000050. This indicates that invalid system memory has been referenced. Typically the memory address is wrong or the memory address is pointing at freed memory.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 ## PAGE\_FAULT\_IN\_NONPAGED\_AREA Parameters
 
@@ -118,7 +119,7 @@ To determine the specific cause and to create a code fix, programming experience
 
 Typically, the referenced address is in freed memory or is simply invalid. This cannot be protected by a **try - except** handler -- it can only be protected by a probe or similar programming techniques. For information on buffer handling and probes in file system drivers, see [Buffer Handling](../ifs/buffer-handling.md). For information on best practices for driver development, and common mistakes made by driver developers, see [Surface Team Driver Development Best Practices](../kernel/surface-team-driver-development-best-practices.md).
 
-Use the [**!analyze**](-analyze.md) debug extension with the -v verbose option to display information about the bug check to work to determine the root cause.
+Use the [**!analyze**](../debuggercmds/-analyze.md) debug extension with the -v verbose option to display information about the bug check to work to determine the root cause.
 
 ```dbgcmd
 2: kd> !analyze -v
@@ -151,11 +152,11 @@ Use the .trap command provided in the !analyze output to set the context.
 TRAP_FRAME:  fffff98112e8b3d0 -- (.trap 0xfffff98112e8b3d0)
 ```
 
-Use debugger commands such as use [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) to investigate the faulting code.
+Use debugger commands such as use [**kb (Display Stack Backtrace)**](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) to investigate the faulting code.
 
 Use the `lm t n` to list modules that are loaded in the memory.
 
-Use the [d, da, db, dc, dd, dD, df, dp, dq, du, dw (Display Memory)](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) command to investigate the areas of memory referenced by parameter 1 and parameter 3.
+Use the [d, da, db, dc, dd, dD, df, dp, dq, du, dw (Display Memory)](../debuggercmds/d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) command to investigate the areas of memory referenced by parameter 1 and parameter 3.
 
 ```dbgcmd
 2: kd> db ffffffff00000090
@@ -170,7 +171,7 @@ ffffffff`00000100  ?? ?? ?? ?? ?? ?? ?? ??-?? ?? ?? ?? ?? ?? ?? ??  ????????????
 ```
 In this case doesn't look like there is data in this area of memory in parameter 1, which is the area of memory that was attempting to be read.
 
-Use the [!address](-address.md) command to look at parameter 3 which is the address of the instruction which referenced the bad memory.
+Use the [!address](../debuggercmds/-address.md) command to look at parameter 3 which is the address of the instruction which referenced the bad memory.
 
 ```dbgcmd
 2: kd> !address fffff80240d322f9
@@ -183,7 +184,7 @@ Module name:            ntoskrnl.exe
 Module path:            [\SystemRoot\system32\ntoskrnl.exe]
 ```
 
-Use [u, ub, uu (Unassemble)Dissasemble](u--unassemble-.md) with parameter 3, to examine the which referenced the bad memory. For more information on X64 processor and assembly language see [The x64 Processor](the-x64-processor.md). 
+Use [u, ub, uu (Unassemble)Dissasemble](../debuggercmds/u--unassemble-.md) with parameter 3, to examine the which referenced the bad memory. For more information on X64 processor and assembly language see [The x64 Processor](the-x64-processor.md). 
 
 ```dbgcmd
 2: kd> u fffff80240d322f9 
@@ -200,7 +201,7 @@ fffff802`40d3230c c3              ret
 
 Use `ub` to dissassemble backwards from the a given address.
 
-Use the [r (Registers)](r--registers-.md) command to examine what was being executed as the system bug checked. 
+Use the [r (Registers)](../debuggercmds/r--registers-.md) command to examine what was being executed as the system bug checked. 
 
 ```dbgcmd
 2: kd> r

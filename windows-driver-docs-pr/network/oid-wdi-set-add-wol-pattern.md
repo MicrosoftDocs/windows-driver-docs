@@ -1,7 +1,8 @@
 ---
 title: OID_WDI_SET_ADD_WOL_PATTERN
+ms.topic: reference
 description: OID_WDI_SET_ADD_WOL_PATTERN adds a wake-on-LAN (WOL) pattern to the firmware.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - OID_WDI_SET_ADD_WOL_PATTERN Network Drivers Starting with Windows Vista
 ms.custom: 19H1

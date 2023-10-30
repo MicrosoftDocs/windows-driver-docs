@@ -34,7 +34,7 @@ Tracelog (Tracelog.exe) is an event tracing controller that runs in a Command Pr
 <p>%WindowsSdkDir%\bin\x64\tracelog.exe</p>
 <p>%WindowsSdkDir%\bin\x86\tracelog.exe</p>
 <div class="alert">
-<strong>Note</strong>  The Visual Studio environment variable, %WindowsSdkDir%, represents the path to the Windows kits directory where the kits are installed, for example, C:\Program Files (x86)\Windows Kits\8.1.
+<strong>Note</strong>  The Visual Studio environment variable, %WindowsSdkDir%, represents the path to the Windows kits directory where the kits are installed, for example, C:\Program Files (x86)\Windows Kits\10.
 </div>
 </td>
 </tr>

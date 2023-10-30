@@ -2,6 +2,7 @@
 title: VMMQ send and receive processing
 description: VMMQ send and receive processing 
 ms.date: 02/28/2021
+ms:custom: UpdateFrequency3
 ---
 
 

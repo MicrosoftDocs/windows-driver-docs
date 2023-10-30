@@ -5,6 +5,7 @@ ms.date: 04/22/2019
 keywords: ["BCDEdit /bootdebug Driver Development Tools"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - BCDEdit /bootdebug
 api_type:

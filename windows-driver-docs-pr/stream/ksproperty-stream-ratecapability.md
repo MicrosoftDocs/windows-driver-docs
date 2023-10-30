@@ -4,6 +4,7 @@ description: The KSPROPERTY\_STREAM\_RATECAPABILITY property allows a graph mana
 keywords: ["KSPROPERTY_STREAM_RATECAPABILITY Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_STREAM_RATECAPABILITY
 api_location:

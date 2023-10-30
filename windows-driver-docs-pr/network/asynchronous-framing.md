@@ -16,7 +16,7 @@ ms.date: 04/20/2017
 
 The following diagram illustrates asynchronous framing with compression turned off.
 
-![diagram illustrating asynchronous framing with compression turned off.](images/ng10f1.png)
+:::image type="content" source="images/ng10f1.png" alt-text="Diagram that shows asynchronous framing with compression turned off.":::
 
  
 

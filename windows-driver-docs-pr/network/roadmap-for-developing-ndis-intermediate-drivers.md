@@ -1,7 +1,7 @@
 ---
 title: Roadmap for Developing NDIS Intermediate Drivers
 description: Roadmap for Developing NDIS Intermediate Drivers
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # Roadmap for Developing NDIS Intermediate Drivers
@@ -40,7 +40,7 @@ To create a Network Driver Interface Specification (NDIS) intermediate driver pa
 
     Intermediate drivers use a combination of protocol driver and miniport driver interfaces in addition to some intermediate driver specific interfaces. As an option, you can also read the miniport driver and protocol driver design guides.
 
-- Step 7: Review the [NDIS intermediate driver sample](https://go.microsoft.com/fwlink/p/?LinkId=617916) in the [Windows driver samples](https://go.microsoft.com/fwlink/p/?LinkId=616507) repository on GitHub.
+- Step 7: Review the [NDIS intermediate driver sample](https://github.com/microsoft/Windows-driver-samples/tree/95037b3f77f3a745f7682f991ac80e81f91f5362/network/ndis/mux) in the [Windows driver samples](https://github.com/Microsoft/Windows-driver-samples/tree/develop) repository on GitHub.
 
 - Step 8: Develop (or port), build, test, and debug your NDIS driver.
 
@@ -54,10 +54,10 @@ To create a Network Driver Interface Specification (NDIS) intermediate driver pa
 
 - Step 9: Create a driver package for your driver.
 
-    For more information about how to install drivers, see [Providing a Driver Package](/windows-hardware/drivers). For more information about how to install an NDIS driver, see [Components and Files Used for Network Component Installation](components-and-files-used-for-network-component-installation.md) and [Notify Objects for Network Components](notify-objects-for-network-components.md).
+    For more information about how to install drivers, see [Providing a Driver Package](../install/driver-packages.md). For more information about how to install an NDIS driver, see [Components and Files Used for Network Component Installation](components-and-files-used-for-network-component-installation.md) and [Notify Objects for Network Components](notify-objects-for-network-components.md).
 
 - Step 10: Sign and distribute your driver.
 
-    The final step is to sign (optional) and distribute the driver. If your driver meets the quality standards that are defined for the [Windows Hardware Lab Kit (HLK)](/windows-hardware/test/hlk/), you can distribute it through the Microsoft Windows Update program. For more information about how to distribute a driver, see [Distributing a Driver](/windows-hardware/drivers).
+    The final step is to sign (optional) and distribute the driver. If your driver meets the quality standards that are defined for the [Windows Hardware Lab Kit (HLK)](/windows-hardware/test/hlk/), you can distribute it through the Microsoft Windows Update program. For more information about how to distribute a driver, see [Get started with the hardware submission process](../dashboard/get-started-dashboard-submissions.md).
 
 These are the basic steps. Additional steps might be necessary based on the needs of your individual driver.

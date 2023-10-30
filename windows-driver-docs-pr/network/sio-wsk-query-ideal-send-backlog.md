@@ -2,6 +2,7 @@
 title: SIO_WSK_QUERY_IDEAL_SEND_BACKLOG
 description: SIO_WSK_QUERY_IDEAL_SEND_BACKLOG
 ms.date: 07/18/2017
+ms.topic: reference
 keywords:
  - SIO_WSK_QUERY_IDEAL_SEND_BACKLOG Network Drivers Starting with Windows Vista
 ---

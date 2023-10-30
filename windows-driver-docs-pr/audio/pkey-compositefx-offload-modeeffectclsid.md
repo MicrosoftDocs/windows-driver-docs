@@ -1,7 +1,8 @@
 ---
 title: PKEY\_CompositeFX\_Offload\_ModeEffectClsid
 description: In Windows 10, version 1803 and later, the PKEY\_CompositeFX\_Offload\_ModeEffectClsid key identifies the mode effect (MFX) supported by the driver that will be loaded during offload playback.
-ms.date: 11/15/2018
+ms.date: 03/06/2023
+ms.topic: reference
 ---
 
 # PKEY\_CompositeFX\_Offload\_ModeEffectClsid
@@ -32,7 +33,7 @@ HKR,FX\0,%PKEY_CompositeFX_Offload_ModeEffectClsid%,0x00010000,%SWAP_FX_MODE_CLS
 
 ```
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [Media-Class INF Extensions](media-class-inf-extensions.md)

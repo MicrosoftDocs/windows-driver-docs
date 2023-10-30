@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1DC DMA_COMMON_BUFFER_VECTOR_ERROR", "DMA_COMMON_BUFFER_
 ms.date: 01/30/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DMA_COMMON_BUFFER_VECTOR_ERROR
 api_type:
@@ -16,7 +17,7 @@ api_type:
 The DMA\_COMMON\_BUFFER\_VECTOR\_ERROR bug check has a value of 0x000001DC. It indicates that a driver has misused the DMA vectored common buffer APIs.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
  
 
@@ -52,7 +53,7 @@ x02 : Vector not empty.
 
 ## Cause
 
-A driver has misused the DMA vectored common buffer APIs. The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+A driver has misused the DMA vectored common buffer APIs. The [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
 ## See Also
 

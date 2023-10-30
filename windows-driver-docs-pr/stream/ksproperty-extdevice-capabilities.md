@@ -4,6 +4,7 @@ description: The KSPROPERTY_EXTDEVICE_CAPABILITIES property retrieves the capabi
 keywords: ["KSPROPERTY_EXTDEVICE_CAPABILITIES Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_EXTDEVICE_CAPABILITIES
 api_location:

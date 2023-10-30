@@ -1,5 +1,6 @@
 ---
 title: OID_QOS_OFFLOAD_SQ_STATS
+ms.topic: reference
 description: A driver issues OID_QOS_OFFLOAD_SQ_STATS to obtain a list of all Scheduler Queues (SQs) currently on a miniport adapter.
 ms.assetid:
 ms.date: 10/30/2020

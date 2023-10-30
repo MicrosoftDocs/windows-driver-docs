@@ -8,7 +8,7 @@ keywords:
 - child function hardware IDs WDK multifunction devices
 - system-supplied multifunction bus drivers WDK
 - mf.sys
-ms.date: 08/13/2021
+ms.date: 03/17/2023
 ---
 
 # Supporting PC Cards That Conform to the Multifunction Standard

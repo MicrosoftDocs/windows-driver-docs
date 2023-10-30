@@ -4,6 +4,7 @@ description: The client uses KSPROPERTY_PIN_NAME to retrieve the Registry name o
 keywords: ["KSPROPERTY_PIN_NAME Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_PIN_NAME
 api_location:

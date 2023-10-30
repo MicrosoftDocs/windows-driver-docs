@@ -40,7 +40,7 @@ PROCESS ffffe0007e6a7780
 ```
 The debugger command is using a binary mask and it provides text only output in non-standard ways. The text output is difficult to consume, format, or extend and the layout is specific to this command.
 
-Contrast this to  the debugger data model [dx (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md) command.
+Contrast this to  the debugger data model [dx (Display Debugger Object Model Expression)](../debuggercmds/dx--display-visualizer-variables-.md) command.
 
 ```console
 dx @$cursession.Processes.Where(p => p.Threads.Count() > 5)
@@ -53,7 +53,7 @@ Logically name spacing things and extending on specific objects allows for the d
 > Because the Data Model C++ Object interfaces can be very verbose to implement a full C++ helper library for the data model which uses a full C++ exception and template programming paradigm is recommended. For more information, see [Using the DbgModelClientEx Library](#dbgmodelclientex) later in this topic.
 >
 
-The data model is the way that the new [WinDbg Preview](debugging-using-windbg-preview.md) debugger, shows most things. Many elements in the new UI can be queried, extended, or scripted, because they are powered by the data model. For more information, see [WinDbg Preview - Data Model](windbg-data-model-preview.md).
+The data model is the way that [WinDbg](debugging-using-windbg-preview.md), shows most things. Many elements in the new UI can be queried, extended, or scripted, because they are powered by the data model. For more information, see [WinDbg - Data Model](../debuggercmds/windbg-data-model-preview.md).
 
 ![Data model explore window showing process and threads.](images/windbgx-data-model-process-threads.png)
 
@@ -81,10 +81,9 @@ This diagram shows how the IModelObject uses Key Stores to contain values that a
 
 ![Data model architectural view showing IModelObject as input and a tuples key store.](images/data-model-object-model.png)
 
-
 ### The Data Model: A Consumer View
 
-The next diagram shows a consumer view of the data model. In the example the [dx (Display Debugger Object Model Expression)](./dx--display-visualizer-variables-.md) command is being used to query information. 
+The next diagram shows a consumer view of the data model. In the example the [dx (Display Debugger Object Model Expression)](../debuggercmds/../debuggercmds/dx--display-visualizer-variables-.md) command is being used to query information.
 
 - The Dx command communicates through a serializer to the object enumeration interface. 
 - IDebugHost* objects are used to gather information from the debugger engine. 
@@ -315,7 +314,7 @@ https://github.com/Microsoft/WinDbg-Samples/tree/master/DataModelHelloWorld
 
 ---
 
-## <span id="related_topics"></span>Related topics
+## <span id="related_topics"></span>See also
 
 [Debugger Data Model C++ Interfaces](data-model-cpp-interfaces.md)
 

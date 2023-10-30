@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xF9 DRIVER_RETURNED_STATUS_REPARSE_FOR_VOLUME_OPEN", "DRI
 ms.date: 07/21/2020
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DRIVER_RETURNED_STATUS_REPARSE_FOR_VOLUME_OPEN
 api_type:
@@ -16,7 +17,7 @@ api_type:
 The DRIVER\_RETURNED\_STATUS\_REPARSE\_FOR\_VOLUME\_OPEN bug check has a value of 0x000000F9. This indicates that a driver returned STATUS\_REPARSE to an IRP\_MJ\_CREATE request with no trailing names.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## DRIVER\_RETURNED\_STATUS\_REPARSE\_FOR\_VOLUME\_OPEN Parameters
@@ -54,7 +55,7 @@ The DRIVER\_RETURNED\_STATUS\_REPARSE\_FOR\_VOLUME\_OPEN bug check has a value o
 
 ## Remarks
 
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
 STATUS\_REPARSE should be returned only for IRP\_MJ\_CREATE requests with trailing names, as that indicates the driver is supporting name spaces. 
 

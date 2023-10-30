@@ -4,6 +4,7 @@ description: The KSPROPERTY\_GM\_RATEMATCH property is not currently supported.
 keywords: ["KSPROPERTY_GM_RATEMATCH Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_GM_RATEMATCH
 api_type:

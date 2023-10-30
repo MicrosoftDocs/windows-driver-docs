@@ -1,7 +1,7 @@
 ---
 title: Setting and retrieving the geolocation properties
 description: When an application retrieves a particular property value, a corresponding property-retrieval method is called in the sample driver.
-ms.date: 08/25/2021
+ms.date: 03/21/2023
 ---
 
 # Setting and retrieving the geolocation properties

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xFA HTTP_DRIVER_CORRUPTED", "HTTP_DRIVER_CORRUPTED"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - HTTP_DRIVER_CORRUPTED
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The HTTP\_DRIVER\_CORRUPTED bug check has a value of 0x000000FA. This indicates that the HTTP kernel driver (Http.sys) has reached a corrupted state and cannot recover.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## HTTP\_DRIVER\_CORRUPTED Parameters

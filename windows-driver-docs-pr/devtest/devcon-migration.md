@@ -9,7 +9,7 @@ keywords:
 - Device Console WDK , commands
 - commands WDK DevCon
 ms.custom: contperf-fy22q3
-ms.date: 10/28/2022
+ms.date: 06/19/2023
 ---
 
 # Replacing Device Console (DevCon.exe)
@@ -24,6 +24,8 @@ PnPUtil is an inbox tool that allows the user to view information on and change 
 
 ## Table of Equivalencies
 
+PnPUtil command support varies by Windows version. For information on minimum version support for each command, see [PnPUtil Command Syntax](pnputil-command-syntax.md).
+
 | Devcon Command | Description | Alternative |
 |---|---|---|
 | classes | List all device setup classes. | pnputil /enum-classes |
@@ -34,6 +36,7 @@ PnPUtil is an inbox tool that allows the user to view information on and change 
 | find | Find devices. | pnputil /enum-devices /connected |
 | findall | Find devices, including those that are not currently attached. | pnputil /enum-devices |
 | hwids | List hardware IDs of devices. | pnputil /enum-devices /deviceids |
+| install | Create test device and install driver. | devgen /add /bus ROOT <br> pnputil /add-driver \<*INF name*\> /install |
 | listclass | List all devices in a setup class. | pnputil /enum-devices /class \<*name or GUID*\> |
 | reboot | Reboot the local computer. | shutdown /r /t 0 |
 | remove | Remove devices. | pnputil /remove-device |

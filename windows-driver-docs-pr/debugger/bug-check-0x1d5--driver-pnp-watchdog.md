@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1D5 DRIVER_PNP_WATCHDOG", "DRIVER_PNP_WATCHDOG"]
 ms.date: 01/11/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DRIVER_PNP_WATCHDOG
 api_type:
@@ -16,7 +17,7 @@ api_type:
 The DRIVER\_PNP\_WATCHDOG bug check has a value of 0x000001D5. This indicates that a driver has failed to complete a PnP operation within a specific time.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
  
 
@@ -32,7 +33,7 @@ The DRIVER\_PNP\_WATCHDOG bug check has a value of 0x000001D5. This indicates th
 
 ## Cause
 
-This indicates that a driver has failed to complete a PnP operation within a specific time. The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+This indicates that a driver has failed to complete a PnP operation within a specific time. The [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
 
 ## See Also

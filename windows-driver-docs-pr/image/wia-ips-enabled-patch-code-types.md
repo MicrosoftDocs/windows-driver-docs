@@ -1,58 +1,35 @@
 ---
-title: WIA\_IPS\_ENABLED\_PATCH\_CODE\_TYPES
-description: The WIA\_IPS\_ENABLED\_PATCH\_CODE\_TYPES property is used to select the enabled patch codes for which the Patch Code Reader will search in the current session.
+title: WIA_IPS_ENABLED_PATCH_CODE_TYPES
+description: The WIA_IPS_ENABLED_PATCH_CODE_TYPES property is used to select the enabled patch codes for which the Patch Code Reader will search in the current session.
 keywords: ["WIA_IPS_ENABLED_PATCH_CODE_TYPES Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_ENABLED_PATCH_CODE_TYPES
 api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 05/05/2023
 ---
 
-# WIA\_IPS\_ENABLED\_PATCH\_CODE\_TYPES
+# WIA_IPS_ENABLED_PATCH_CODE_TYPES
 
+The **WIA_IPS_ENABLED_PATCH_CODE_TYPES** property is used to select the enabled patch codes for which the Patch Code Reader will search in the current session. These patch codes can be some or all the values that the WIA minidriver reports for [**WIA_IPS_SUPPORTED_PATCH_CODE_TYPES**](wia-ips-supported-patch-code-types.md). The order of the values in the array specifies the priority order in which the respective patch codes are to be searched.
 
-The **WIA\_IPS\_ENABLED\_PATCH\_CODE\_TYPES** property is used to select the enabled patch codes for which the Patch Code Reader will search in the current session. These patch codes can be some or all the values that the WIA minidriver reports for [**WIA\_IPS\_SUPPORTED\_PATCH\_CODE\_TYPES**](wia-ips-supported-patch-code-types.md). The order of the values in the array specifies the priority order in which the respective patch codes are to be searched.
+Property Type: VT_I4 | VT_VECTOR
 
-
-
-
-Property Type: VT\_I4 | VT\_VECTOR
-
-Valid Values: WIA\_PROP\_NONE (single 'array'/vector value)
+Valid Values: WIA_PROP_NONE (single 'array'/vector value)
 
 Access Rights: Read/Write
 
 ## Remarks
 
-The valid values for the **WIA\_IPS\_ENABLED\_PATCH\_CODE\_TYPES** property are the same WIA\_PATCH\_CODE\_ values that are defined for the [**WIA\_IPS\_SUPPORTED\_PATCH\_CODE\_TYPES**](wia-ips-supported-patch-code-types.md) property.
+The valid values for the **WIA_IPS_ENABLED_PATCH_CODE_TYPES** property are the same WIA_PATCH_CODE_ values that are defined for the [**WIA_IPS_SUPPORTED_PATCH_CODE_TYPES**](wia-ips-supported-patch-code-types.md) property.
 
 This property is required for all Patch Code Reader items.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
-
- 
-
- 
-
-
-
-
-
+**Header:** wiadef.h (include Wiadef.h)

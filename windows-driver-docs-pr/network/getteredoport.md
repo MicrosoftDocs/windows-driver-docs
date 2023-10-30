@@ -5,6 +5,7 @@ keywords:
 - GetTeredoPort
 - netioapi/GetTeredoPort
 ms.date: 10/25/2022
+ms.topic: reference
 ---
 
 # GetTeredoPort function

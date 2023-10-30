@@ -1,7 +1,7 @@
 ---
 title: Secure Boot
 description: Secure Boot
-ms.date: 08/13/2021
+ms.date: 03/23/2023
 ---
 
 # Secure Boot

@@ -4,12 +4,14 @@ description: KSNODETYPE\_DMSYNTH\_CAPS
 keywords: ["KSNODETYPE_DMSYNTH_CAPS Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSNODETYPE_DMSYNTH_CAPS
 api_type:
 - NA
-ms.date: 11/28/2017
+ms.date: 03/06/2023
 ---
+
 
 # KSNODETYPE\_DMSYNTH\_CAPS
 

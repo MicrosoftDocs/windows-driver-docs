@@ -4,6 +4,7 @@ description: The KSPROPERTY\_VIDEOPROCAMP\_WHITEBALANCE property sets or gets a 
 keywords: ["KSPROPERTY_VIDEOPROCAMP_WHITEBALANCE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_VIDEOPROCAMP_WHITEBALANCE
 api_location:

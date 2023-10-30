@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x193 VIDEO_DXGKRNL_LIVEDUMP", "VIDEO_DXGKRNL_LIVEDUMP"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - VIDEO_DXGKRNL_LIVEDUMP
 api_type:
@@ -54,7 +55,7 @@ The VIDEO\_DXGKRNL\_LIVEDUMP live dump has a value of 0x00000193. This indicates
 </table>
 
 ## Resolution
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
  
 
  ## See Also

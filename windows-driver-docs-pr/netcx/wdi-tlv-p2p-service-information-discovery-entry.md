@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_SERVICE_INFORMATION_DISCOVERY_ENTRY (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_P2P_SERVICE_INFORMATION_DISCOVERY_ENTRY is a WiFiCx TLV that contains a Service Information Discovery Entry.
 ms.date: 06/30/2021
 keywords:

@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_PROTOCOL_OFFLOAD_ID (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_PROTOCOL_OFFLOAD_ID is a WiFiCx TLV that contains the protocol offload identifier.
 ms.date: 09/30/2021
 keywords:

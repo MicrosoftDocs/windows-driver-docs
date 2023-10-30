@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_SERVICE_TYPE (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_P2P_SERVICE_TYPE is a WiFiCx TLV that contains the Service Type of the service.
 ms.date: 08/30/2021
 keywords:

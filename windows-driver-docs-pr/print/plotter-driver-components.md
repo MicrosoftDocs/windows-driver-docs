@@ -4,14 +4,12 @@ description: Plotter Driver Components
 keywords:
 - Plotter Driver WDK print , components
 - MSPlot WDK print , components
-ms.date: 04/20/2017
+ms.date: 01/30/2023
 ---
 
 # Plotter Driver Components
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 MSPlot components consist of DLLs and binary data files, as illustrated in the following diagram.
 
@@ -42,11 +40,3 @@ Minidriver data read from .pcd files.
 
 <a href="" id="plotter-dll"></a>**plotter.dll**  
 [Plotter driver renderer](plotter-driver-renderer.md), which renders images and sends the image data stream to the spooler.
-
- 
-
- 
-
-
-
-

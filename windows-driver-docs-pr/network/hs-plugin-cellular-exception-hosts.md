@@ -5,6 +5,7 @@ keywords:
 - HS_PLUGIN_CELLULAR_EXCEPTION_HOSTS structure Network Drivers Starting with Windows Vista
 - PHS_PLUGIN_CELLULAR_EXCEPTION_HOSTS structure pointer Network Drivers Starting with Windows Vista
 ms.date: 07/31/2017
+ms.topic: reference
 ---
 
 # HS\_PLUGIN\_CELLULAR\_EXCEPTION\_HOSTS structure

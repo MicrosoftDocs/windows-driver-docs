@@ -5,6 +5,7 @@ keywords: ["CTRL+R (Re-synchronize) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - CTRL+R (Re-synchronize)
 api_type:
@@ -31,7 +32,7 @@ CTRL+ALT+R
 ## <span id="ddk_meta_ctrl_r_dbg"></span><span id="DDK_META_CTRL_R_DBG"></span>
 
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
 <table>
 <colgroup>
@@ -60,7 +61,7 @@ CTRL+ALT+R
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For other methods of re-establishing contact with the target, see [Synchronizing with the Target Computer](synchronizing-with-the-target-computer.md).
 

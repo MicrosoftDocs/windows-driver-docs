@@ -1,12 +1,12 @@
 ---
 title: Boot and UEFI
 description: Provides guidance about the boot process and UEFI implementation requirements for devices that run Windows 10.
-ms.date: 09/28/2021
+ms.date: 03/22/2023
 ---
 
 # Boot and UEFI
 
-> [!NOTE]
+> [!IMPORTANT]
 > Some information in this section may apply only to Windows 10 Mobile and certain processor architectures.
 
 A device running Windows 10 has several requirements for booting into the OS. After the device's firmware initializes all the hardware, the device needs to ensure that there is enough power to boot. Afterwards, the device needs to ensure that the device is booting into the appropriate OS depending on if the user wants to perform an update or a restore on the device, or if the user wants to boot the device into the main OS.

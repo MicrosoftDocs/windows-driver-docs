@@ -4,6 +4,7 @@ description: Clients use KSPROPERTY_BDA_CONTROLLING_PIN_ID to retrieve the contr
 keywords: ["KSPROPERTY_BDA_CONTROLLING_PIN_ID Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_BDA_CONTROLLING_PIN_ID
 api_location:

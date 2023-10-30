@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_CAN_SUSTAIN_AP (dot11wificxintf.h)
+ms.topic: reference
 description: WiFiCx drivers use NDIS_STATUS_WDI_INDICATION_CAN_SUSTAIN_AP to indicate that the port is ready to receive a OID_WDI_TASK_START_AP request, after previously indicating NDIS_STATUS_WDI_INDICATION_STOP_AP.
 ms.date: 08/30/2021
 keywords:

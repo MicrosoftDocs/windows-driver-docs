@@ -1,7 +1,8 @@
 ---
 title: NDIS_STATUS_WAN_CO_MTULINKPARAMS
+ms.topic: reference
 description: The NDIS_STATUS_WAN_CO_MTULINKPARAMS status indicates that the link speed and send window parameters have changed for a particular VC that is active on a CoNDIS miniport adapter.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - NDIS_STATUS_WAN_CO_MTULINKPARAMS Network Drivers Starting with Windows Vista
 ---

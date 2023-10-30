@@ -1,7 +1,7 @@
 ---
 title: Service metadata overview
 description: Service metadata overview
-ms.date: 07/05/2019
+ms.date: 10/06/2023
 ---
 
 # Service metadata overview
@@ -68,7 +68,7 @@ The following summary describes some of the most interesting fields that are con
 - **Custom operator name**  
   The mobile broadband device typically provides the operator name, which Windows shows in Windows Connection Manager. You can override this name by specifying a custom name in metadata. This name displays only if the user is on a home network and is not on a roaming network. A displayed roaming network name is based on information that is received from the device. This corresponds to the [ServiceProvider](serviceprovider.md) element in the service package metadata schema.  
   > [!IMPORTANT]
-  > In Windows 10, Version 1709 and later, this field has been replaced by branding through COSA. Fields in COSA for branding are described on [Planning your desktop COSA/APN database submission](planning-your-desktop-cosa-apn-database-submission.md). If you are targeting versions of Windows before Windows 10, Version 1709, you will still create a metadata package as described in this section. For more information about COSA, see [COSA overview](cosa-overview.md). 
+  > In Windows 10, Version 1709 and later, this field has been replaced by branding through COSA. Fields in COSA for branding are described on [Planning your desktop COSA/APN database submission](planning-your-desktop-cosa-apn-database-submission.md). If you are targeting versions of Windows before Windows 10, Version 1709, you will still create a metadata package as described in this section. For more information about COSA, see [COSA overview](cosa-overview.md).
 
 - **Device notification handler**  
   In general, an app must be run by the user at least one time before it can register work items with the System Event broker. However, mobile broadband apps might need to receive important events before the user can run the app. You can specify the [DeviceNotificationHandler](devicenotificationhandler.md) element in service metadata, which Windows will use to register some critical events. For more information about SMS notifications, see [Delivering experiences for MVNOs](delivering-experiences-for-mvnos.md).
@@ -77,7 +77,6 @@ The following summary describes some of the most interesting fields that are con
   Mobile Broadband APIs and interfaces (including Account Provisioning and SMS) are restricted and available to mobile broadband apps only. A list of privileged apps that have access to these privileged APIs can be specified in the service metadata package in the [PrivilegedApplications](privilegedapplications.md) element. Privileged apps can be debugging or test apps; they are not required to be distributed through the Microsoft Store.
 
 ## <span id="Service_Metadata_Package_Structure"></span><span id="service_metadata_package_structure"></span><span id="SERVICE_METADATA_PACKAGE_STRUCTURE"></span>Service Metadata Package Structure
-
 
 The components of a service metadata package are stored in a compressed cabinet file and must have a file extension of **.devicemetadata-ms**. Service metadata packages use this file extension because they use the same underlying platform as device metadata packages. Before you create the **.devicemetadata-ms** file, you must first create a globally unique identifier (GUID) for the metadata package. Then, you must use the following naming convention when you create the .devicemetadata-ms file: **&lt;GUID&gt;.devicemetadata-ms**.
 
@@ -92,7 +91,7 @@ The localizable resources in the service metadata package are the operator name 
 
 A single locale service metadata package must have the following file structure:
 
-![a single locale service metadata package structure.](images/mb-xmlref-singlelocalesmp.jpg)
+:::image type="content" source="images/mb-xmlref-singlelocalesmp.jpg" alt-text="Diagram showing the file structure of a single locale service metadata package.":::
 
 Some considerations for a single locale metadata package:
 
@@ -112,7 +111,7 @@ You can use a multiple local service metadata package if you want to show a loca
 
 A multiple locale service metadata package must have the following file structure:
 
-![a multi locale service metadata package structure.](images/mb-xmlref-multiplelocalesmp.jpg)
+:::image type="content" source="images/mb-xmlref-multiplelocalesmp.jpg" alt-text="Diagram illustrating the file structure of a multi-locale service metadata package.":::
 
 Some considerations for a multiple locale metadata package:
 

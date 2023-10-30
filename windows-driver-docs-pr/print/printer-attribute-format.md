@@ -4,14 +4,12 @@ description: Printer Attribute Format
 keywords:
 - printer attributes WDK Unidrv , formats
 - formats WDK printer attributes
-ms.date: 04/20/2017
+ms.date: 01/30/2023
 ---
 
 # Printer Attribute Format
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 To specify a printer attribute entry in a GPD file, use the following format:
 
@@ -21,16 +19,8 @@ where *AttributeName* is a predefined name belonging to one of the [attribute ty
 
 For example, the \*ModelName attribute is used for specifying a text string that describes your printer hardware. To assign a value to this attribute, you could place the following line in your GPD file:
 
-```cpp
+```GPD
 *ModelName: "Canon Bubble-Jet BJC-600"
 ```
 
 All attribute names are predefined and are recognized by Unidrv's GPD parser.
-
- 
-
- 
-
-
-
-

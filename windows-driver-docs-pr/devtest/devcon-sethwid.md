@@ -5,11 +5,12 @@ keywords:
 - DevCon SetHwID Driver Development Tools
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DevCon SetHwID
 api_type:
 - NA
-ms.date: 10/28/2022
+ms.date: 09/29/2023
 ---
 
 # DevCon SetHwID
@@ -71,13 +72,13 @@ Deletes the specified hardware IDs from the list of hardware IDs for the device.
 
 ## Comments
 
-A *root-enumerated* device is a device that appears in the ROOT registry subkey (HKEY\_LOCAL\_MACHINE\\System\\*ControlSet*\\Enum\\ROOT).
+A *root-enumerated* device is a device whose [enumerator](../install/devpkey-device-enumeratorname.md) is `ROOT`.
 
 You can specify multiple hardware IDs in each command. The **!** (delete) parameter applies only to the hardware ID that it prefixes. The other symbol parameters apply to all hardware IDs that follow until the next symbol parameter in the command.
 
 DevCon moves, rather than adds, a hardware ID if the specified hardware ID already exists in the list of hardware IDs for the device.
 
-The success message for a **DevCon SetHwIDs** command reports the number of devices (or device lists) in which it has modified hardware IDs, not the number of modified hardware IDs .
+The success message for a **DevCon SetHwIDs** command reports the number of devices (or device lists) in which it has modified hardware IDs, not the number of modified hardware IDs.
 
 ## Sample usage
 

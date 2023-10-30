@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x3D INTERRUPT_EXCEPTION_NOT_HANDLED", "INTERRUPT_EXCEPTIO
 ms.date: 10/18/2021
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INTERRUPT_EXCEPTION_NOT_HANDLED
 api_type:
@@ -16,7 +17,7 @@ api_type:
 The INTERRUPT\_EXCEPTION\_NOT\_HANDLED bug check has a value of 0x0000003D. This indicates that the exception handler for the kernel interrupt object interrupt management was not able to handle the generated exception.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 ## INTERRUPT\_EXCEPTION\_NOT\_HANDLED Parameters
 
@@ -29,6 +30,6 @@ The INTERRUPT\_EXCEPTION\_NOT\_HANDLED bug check has a value of 0x0000003D. This
 
 ## Resolution
  
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
  
 

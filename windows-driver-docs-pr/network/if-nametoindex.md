@@ -5,6 +5,7 @@ keywords:
 - if_nametoindex
 - netioapi/if_nametoindex
 ms.date: 10/18/2022
+ms.topic: reference
 ---
 
 # if\_nametoindex function

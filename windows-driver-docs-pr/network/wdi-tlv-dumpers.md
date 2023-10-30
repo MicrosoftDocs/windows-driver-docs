@@ -1,7 +1,7 @@
 ---
 title: WDI TLV dumpers
 description: The parser generator library has routines to decode TLV byte arrays into trace statements.
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # WDI TLV dumpers

@@ -4,7 +4,8 @@ description: Learn more about the MODM_PAUSE function.
 keywords:
 - mmddk/modMessage
 - modMessage
-ms.date: 10/27/2022
+ms.date: 03/06/2023
+ms.topic: reference
 ---
 
 # MODM\_PAUSE function

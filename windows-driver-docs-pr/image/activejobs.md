@@ -4,15 +4,15 @@ description: The required ActiveJobs element contains a list of all currently ac
 keywords: ["ActiveJobs element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ActiveJobs
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 03/27/2023
 ---
 
 # ActiveJobs element
-
 
 The required **ActiveJobs** element contains a list of all currently active scan jobs.
 
@@ -30,47 +30,17 @@ There are no attributes.
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="job.md" data-raw-source="[&lt;strong&gt;Job&lt;/strong&gt;](job.md)"><strong>Job</strong></a></p></td>
-</tr>
-<tr class="even">
-<td><p><a href="jobsummary.md" data-raw-source="[&lt;strong&gt;JobSummary&lt;/strong&gt;](jobsummary.md)"><strong>JobSummary</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**Job**](job.md) |
+| [**JobSummary**](jobsummary.md) |
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="getactivejobsresponse.md" data-raw-source="[&lt;strong&gt;GetActiveJobsResponse&lt;/strong&gt;](getactivejobsresponse.md)"><strong>GetActiveJobsResponse</strong></a></p></td>
-</tr>
-<tr class="even">
-<td><p><a href="jobtable.md" data-raw-source="[&lt;strong&gt;JobTable&lt;/strong&gt;](jobtable.md)"><strong>JobTable</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**GetActiveJobsResponse**](getactivejobsresponse.md) |
+| [**JobTable**](jobtable.md) |
 
 ## Remarks
 
@@ -79,7 +49,6 @@ The **ActiveJobs** element contains all jobs that have not yet completed process
 A client can ask for the list of active jobs through the [**GetActiveJobsRequest**](getactivejobsrequest.md) operation. The WSD Scan Service returns the list in a [**GetActiveJobsResponse**](getactivejobsresponse.md) operation element.
 
 ## See also
-
 
 [**GetActiveJobsRequest**](getactivejobsrequest.md)
 
@@ -90,13 +59,3 @@ A client can ask for the list of active jobs through the [**GetActiveJobsRequest
 [**JobSummary**](jobsummary.md)
 
 [**JobTable**](jobtable.md)
-
- 
-
- 
-
-
-
-
-
-

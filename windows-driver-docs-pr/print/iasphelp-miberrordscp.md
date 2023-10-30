@@ -1,23 +1,24 @@
 ---
-title: Iasphelp get\_MibErrorDscp method
+title: Iasphelp get_MibErrorDscp method
 description: The MibErrorDscp property enables an ASP Web page to convert a Simple Network Management Protocol (SNMP) management information base (MIB) error code into a text description of the error.
 MS-HAID:
-- 'webfnc\_3931fbc6-1960-4d40-a6e3-8816ee832c89.xml'
-- 'print.iasphelp\_miberrordscp'
+- 'webfnc_3931fbc6-1960-4d40-a6e3-8816ee832c89.xml'
+- 'print.iasphelp_miberrordscp'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 keywords: ["get_MibErrorDscp method Print Devices", "get_MibErrorDscp method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_MibErrorDscp method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Iasphelp.get_MibErrorDscp
 api_type:
 - COM
-ms.date: 04/20/2017
+ms.date: 06/26/2023
 ---
 
-# Iasphelp::get\_MibErrorDscp method
+# Iasphelp::get_MibErrorDscp method
 
 The **MibErrorDscp** property enables an ASP Web page to convert a Simple Network Management Protocol (SNMP) management information base (MIB) error code into a text description of the error.
 
@@ -42,32 +43,11 @@ Caller-supplied location to receive a pointer to a string containing a text desc
 
 Win32 error codes can also be returned.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Return code</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>S_OK</strong></td>
-<td><p>The operation succeeded.</p></td>
-</tr>
-<tr class="even">
-<td><strong>E_POINTER</strong></td>
-<td><p>Invalid <em>pVal</em> pointer.</p></td>
-</tr>
-<tr class="odd">
-<td><strong>E_OUTOFMEMORY</strong></td>
-<td><p>Out of memory.</p></td>
-</tr>
-</tbody>
-</table>
+| Return code | Description |
+|--|--|
+| **S_OK** | The operation succeeded. |
+| **E_POINTER** | Invalid *pVal* pointer. |
+| **E_OUTOFMEMORY** | Out of memory. |
 
 ## VBScript Example
 
@@ -82,15 +62,4 @@ MIBErrorString = objPrinter.MibErrorDscp(ErrorCodeMIB)
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Target platform</p></td>
-<td>Desktop</td>
-</tr>
-</tbody>
-</table>
+**Target platform:** Desktop

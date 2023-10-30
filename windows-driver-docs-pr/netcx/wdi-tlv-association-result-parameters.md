@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_ASSOCIATION_RESULT_PARAMETERS (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_ASSOCIATION_RESULT_PARAMETERS is a WiFiCx TLV that contains parameters for an association result.
 ms.date: 06/30/2021
 keywords:

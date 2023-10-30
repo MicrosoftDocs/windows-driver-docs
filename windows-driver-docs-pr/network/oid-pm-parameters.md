@@ -1,5 +1,6 @@
 ---
 title: OID_PM_PARAMETERS
+ms.topic: reference
 description: As a query, protocol drivers can use the OID_PM_PARAMETERS OID to query the power management hardware capabilities of a network adapter that are currently enabled.
 ms.date: 08/08/2017
 keywords: 

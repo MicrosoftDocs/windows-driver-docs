@@ -5,6 +5,7 @@ keywords:
 - INF DelProperty Directive Device and Driver Installation
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INF DelProperty Directive
 api_type:
@@ -14,8 +15,8 @@ ms.date: 07/08/2022
 
 # INF DelProperty directive
 
-> [!NOTE]
-> If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
+> [!CAUTION]
+> If you are building a universal or Windows Driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md) and [Getting Started with Windows Drivers](../develop/getting-started-with-windows-drivers.md).
 
 A **DelProperty** directive references one or more INF file sections that delete [device properties](device-properties.md) for a device instance, a [device setup class](./overview-of-device-setup-classes.md), a [device interface class](./overview-of-device-interface-classes.md), or a device interface.
 

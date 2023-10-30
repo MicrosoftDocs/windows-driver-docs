@@ -10,14 +10,12 @@ keywords:
 - Unidrv, user interface
 - PostScript Printer Driver WDK print , user interface plug-ins
 - UI plug-ins WDK print
-ms.date: 04/20/2017
+ms.date: 01/31/2023
 ---
 
 # User Interface Plug-Ins
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 This section contains the following topics that explain how to develop a user interface plug-in:
 
@@ -38,11 +36,3 @@ This section contains the following topics that explain how to develop a user in
 [Adding New Property Sheet Pages](adding-new-property-sheet-pages.md)
 
 [Customizing Other Printer Interface Operations](customizing-other-printer-interface-operations.md)
-
- 
-
- 
-
-
-
-

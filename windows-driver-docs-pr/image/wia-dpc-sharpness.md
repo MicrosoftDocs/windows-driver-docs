@@ -4,6 +4,7 @@ description: The WIA_DPC_SHARPNESS property indicates the perceived sharpness of
 keywords: ["WIA_DPC_SHARPNESS Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPC_SHARPNESS
 api_location:

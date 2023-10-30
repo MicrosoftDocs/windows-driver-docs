@@ -1,7 +1,7 @@
 ---
 title: Writing a location sensor driver for Windows 8.1
 description: The Sensor and Location Platform provides the Windows Location API to enable software developers to add location features to their applications.
-ms.date: 08/25/2021
+ms.date: 03/21/2023
 ---
 
 # Writing a location sensor driver for Windows 8.1

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xF1 SCSI_VERIFIER_DETECTED_VIOLATION", "SCSI_VERIFIER_DET
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SCSI_VERIFIER_DETECTED_VIOLATION
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The SCSI\_VERIFIER\_DETECTED\_VIOLATION bug check has a value of 0x000000F1. This is the bug check code for all Driver Verifier **SCSI Verification** violations.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## SCSI\_VERIFIER\_DETECTED\_VIOLATION Parameters

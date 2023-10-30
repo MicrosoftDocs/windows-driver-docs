@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xEC SESSION_HAS_VALID_SPECIAL_POOL_ON_EXIT", "SESSION_HAS
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SESSION_HAS_VALID_SPECIAL_POOL_ON_EXIT
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The SESSION\_HAS\_VALID\_SPECIAL\_POOL\_ON\_EXIT bug check has a value of 0x000000EC. This indicates that a session unload occurred while a session driver still held memory.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## SESSION\_HAS\_VALID\_SPECIAL\_POOL\_ON\_EXIT Parameters

@@ -1,7 +1,8 @@
 ---
 title: WDI_TLV_BSSID
+ms.topic: reference
 description: WDI_TLV_BSSID is a TLV that contains the BSSID of a BSS.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - WDI_TLV_BSSID Network Drivers Starting with Windows Vista
 ---

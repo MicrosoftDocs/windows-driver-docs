@@ -8,7 +8,7 @@ keywords:
 - functional device objects WDK ports
 - FDOs WDK ports
 - IEEE 1284 WDK
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Features of System-Supplied Parallel Drivers

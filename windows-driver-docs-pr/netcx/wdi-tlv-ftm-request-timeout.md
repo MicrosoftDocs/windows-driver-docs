@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_FTM_REQUEST_TIMEOUT (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_FTM_REQUEST_TIMEOUT is a WiFiCx TLV that contains the maximum time, in milliseconds, to complete a Fine Timing Measurement (FTM).
 ms.date: 07/31/2021
 keywords:

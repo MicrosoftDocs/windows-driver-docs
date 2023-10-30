@@ -7,10 +7,12 @@ keywords:
 - CPSUI WDK print, group parents
 - property sheet pages WDK print, group parents
 - grouping property sheet pages
-ms.date: 09/08/2022
+ms.date: 01/27/2023
 ---
 
 # Group parent
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 Property sheet pages can be grouped together by assigning them to a single *group parent*. You can create a group parent by calling CPSUI's [**ComPropSheet**](/windows-hardware/drivers/ddi/compstui/nc-compstui-pfncompropsheet) function with a [**CPSFUNC_INSERT_PSUIPAGE**](/previous-versions/ff546414(v=vs.85)) function code, and specifying PSUIPAGEINSERT_GROUP_PARENT as the **Type** member for an [**INSERTPSUIPAGE_INFO**](/windows-hardware/drivers/ddi/compstui/ns-compstui-_insertpsuipage_info) structure.
 

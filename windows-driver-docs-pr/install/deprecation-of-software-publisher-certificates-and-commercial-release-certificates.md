@@ -122,9 +122,7 @@ Drivers can still be signed with a 3rd party issued code signing certificate. Ho
 
 ### How do production signing options differ by Windows version?
 
-> [!WARNING]
-> Cross-signing is no longer accepted for driver signing. Using cross certificates to sign kernel-mode drivers is a violation of the Microsoft Trusted Root Program (TRP) policy.
-> Certificates in violation of Microsoft TRP policies will be revoked by the CA.
+[!include[Warning about deprecation of cross signing for driver signing](../includes/cross-signing-deprecation-warning.md)]
 
 If your driver runs on Windows 7, 8, or 8.1, your driver must be signed through the Windows Hardware Compatibility Program. To get started, see [Create a new hardware submission](../dashboard/hardware-submission-create.md).
 
@@ -133,7 +131,7 @@ For Windows 10, use either WHCP or [attestation signing](../dashboard/code-signi
 If you have challenges signing your driver with WHCP, please report the specifics using one of the following:
 
 * Use the Microsoft Collaborate portal, available through the [Microsoft Partner Center Dashboard](https://partner.microsoft.com/dashboard/collaborate), to create a feedback bug.
-* Go to [Windows hardware engineering support](https://developer.microsoft.com/windows/hardware/support), select the **Contact us** tab, and in the **Developer support topic** dropdown, select **HLK/HCK**. Then select **Submit an incident**.
+* Go to [Windows developer support](https://developer.microsoft.com/windows/support), select the **Contact us** tab, and in the **Technical support** box, next to **Driver Development and Testing/Certification**, select **Submit an incident**.
 
 ## Related information
 

@@ -4,6 +4,7 @@ description: Audio adapter drivers use the KSPROPERTY_PIN_PHYSICALCONNECTION pro
 keywords: ["KSPROPERTY_PIN_PHYSICALCONNECTION Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_PIN_PHYSICALCONNECTION
 api_location:

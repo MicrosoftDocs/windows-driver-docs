@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_CIPHER_KEY_WEP_KEY (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_CIPHER_KEY_WEP_KEY is a WiFiCx TLV that contains a WEP key.
 ms.date: 07/31/2021
 keywords:

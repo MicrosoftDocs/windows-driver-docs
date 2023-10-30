@@ -5,6 +5,7 @@ keywords: ["SymStore Command-Line Options Windows Debugging"]
 ms.date: 03/12/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SymStore Command-Line Options
 api_type:
@@ -104,7 +105,7 @@ Causes SymStore to create a compressed version of each file copied to the symbol
 <span id="_______________"></span> **/?**   
 Displays help text for the SymStore command.
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For more information about SymStore, see [Using Symbol Servers and Symbol Stores](symbol-stores-and-symbol-servers.md).
 

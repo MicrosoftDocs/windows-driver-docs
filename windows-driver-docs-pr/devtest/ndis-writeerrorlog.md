@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["WriteErrorLog rule (ndis)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WriteErrorLog
 api_type:

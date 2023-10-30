@@ -11,6 +11,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 03/30/2022
+ms.topic: reference
 ---
 
 # DEVPKEY_Device_Parent

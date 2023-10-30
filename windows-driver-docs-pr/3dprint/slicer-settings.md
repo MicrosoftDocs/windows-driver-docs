@@ -1,7 +1,7 @@
 ---
 title: Slicer settings
 description: The configuration file XML contains a number of settings that need to be adjusted for a specific 3D Printer device to control the print capabilities exposed to the 3D Print Dialog in Windows.
-ms.date: 08/17/2021
+ms.date: 03/17/2023
 ---
 
 # Slicer settings
@@ -549,7 +549,7 @@ The configuration file XML contains a number of settings that need to be adjuste
 ## Slicer settings (name)
 
 | Setting name | Description |
-|--|--|
+|---|---|
 | \$extrudertemperature\$, \$extruder2temperature\$ | The temperature of the first and respectively the second extruder, as specified by &lt;psk3dx:extrudertemperature&gt; in the Materials section in the XML. These variables are being deprecated and being replaced by \$MaterialSetup\$. |
 | \$platformtemperature\$ | The temperature of the heated bed as specified by the &lt;psk3dx:platformtemperature&gt; entry in the last material in the list. |
 | \$MaterialSetup*x*\$ | Where *x* is a single digit. The material setup section &lt;psk3dx:SetupCommands&gt; in materials. For example, \$MaterialSetup3\$ represents the 3rd material in the list, typically the 3rd extruder. |

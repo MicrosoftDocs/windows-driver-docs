@@ -17,7 +17,7 @@ Critical sections can be displayed in user mode by a variety of different method
 
 Critical sections can be displayed by the **!ntsdexts.locks** extension, the **!critsec** extension, the **!cs** extension, and the **dt (Display Type)** command.
 
-The [**!ntsdexts.locks**](-locks---ntsdexts-locks-.md) extension displays a list of critical sections associated with the current process. If the **-v** option is used, all critical sections are displayed. Here is an example:
+The [**!ntsdexts.locks**](../debuggercmds/-locks---ntsdexts-locks-.md) extension displays a list of critical sections associated with the current process. If the **-v** option is used, all critical sections are displayed. Here is an example:
 
 ```dbgcmd
 0:000> !locks
@@ -34,7 +34,7 @@ ContentionCount    0
 Scanned 37 critical sections
 ```
 
-If you know the address of the critical section you wish to display, you can use the [**!critsec**](-critsec.md) extension. This displays the same collection of information as **!ntsdexts.locks**. For example:
+If you know the address of the critical section you wish to display, you can use the [**!critsec**](../debuggercmds/-critsec.md) extension. This displays the same collection of information as **!ntsdexts.locks**. For example:
 
 ```dbgcmd
 0:000> !critsec 77fc49e0
@@ -48,7 +48,7 @@ ContentionCount    0
 *** Locked
 ```
 
-The [**!cs**](-cs.md) extension can display a critical section based on its address, search an address range for critical sections, and even display the stack trace associated with each critical section. Some of these features require full Windows symbols to work properly. If Application Verifier is active, **!cs -t** can be used to display the critical section tree. See the **!cs** reference page for details and examples.
+The [**!cs**](../debuggercmds/-cs.md) extension can display a critical section based on its address, search an address range for critical sections, and even display the stack trace associated with each critical section. Some of these features require full Windows symbols to work properly. If Application Verifier is active, **!cs -t** can be used to display the critical section tree. See the **!cs** reference page for details and examples.
 
 The information displayed by **!cs** is slightly different than that shown by **!ntsdexts.locks** and **!critsec**. For example:
 
@@ -65,7 +65,7 @@ LockSemaphore      = 0x0
 SpinCount          = 0x00000000
 ```
 
-The [**dt (Display Type)**](dt--display-type-.md) command can be used to display the literal contents of the RTL\_CRITICAL\_SECTION structure. For example:
+The [**dt (Display Type)**](../debuggercmds/dt--display-type-.md) command can be used to display the literal contents of the RTL\_CRITICAL\_SECTION structure. For example:
 
 ```dbgcmd
 0:000> dt RTL_CRITICAL_SECTION 77fc49e0

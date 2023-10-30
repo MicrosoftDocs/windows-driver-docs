@@ -15,7 +15,7 @@ In many cases, symbols can be used as parameters in debugger commands. This is s
 
 A symbol name consists of one or more characters, but always begins with a letter, underscore (**\_**), question mark (**?**), or dollar sign (**$**).
 
-A symbol name may be qualified by a module name. An exclamation mark (**!**) separates the module name from the symbol (for instance, **mymodule!main**). If no module name is used, the symbol can still be prefixed with an exclamation mark. Using an exclamation mark with no module name can be especially useful, even for local variables, to indicate to a debugger command that a parameter is a name and not a hexadecimal number. For example, the variable **fade** will be read by the [**dt (Display Type)**](dt--display-type-.md) command as an address, unless it is prefixed by an exclamation mark or the -n option is used. However, to specify that a symbol is local, precede it with a dollar sign ( $ ) and an exclamation point ( ! ), as in **$!lime**.
+A symbol name may be qualified by a module name. An exclamation mark (**!**) separates the module name from the symbol (for instance, **mymodule!main**). If no module name is used, the symbol can still be prefixed with an exclamation mark. Using an exclamation mark with no module name can be especially useful, even for local variables, to indicate to a debugger command that a parameter is a name and not a hexadecimal number. For example, the variable **fade** will be read by the [**dt (Display Type)**](../debuggercmds/dt--display-type-.md) command as an address, unless it is prefixed by an exclamation mark or the -n option is used. However, to specify that a symbol is local, precede it with a dollar sign ( $ ) and an exclamation point ( ! ), as in **$!lime**.
 
 Symbol names are completely case-insensitive. This means that the presence of a **myInt** and a **MyInt** in your program will not be correctly understood by the debuggers; any command that references one of these may access the other one, regardless of how the command is capitalized.
 
@@ -27,11 +27,11 @@ The debugger understands two different kinds of expressions: Microsoft Macro Ass
 
 -   In C++ expressions, each symbol is interpreted according to its type. Depending on what the symbol refers to, it may be interpreted as an integer, a data structure, a function pointer, or any other data type. A symbol that does not correspond to a C++ data type (such as an unmodified module name) will result in a syntax error.
 
-For an explanation of when and how to use each type of syntax, see [Evaluating Expressions](evaluating-expressions.md).
+For an explanation of when and how to use each type of syntax, see [Evaluating Expressions](../debuggercmds/evaluating-expressions.md).
 
 If you are using MASM expression syntax, any symbol that could be interpreted as a hexadecimal number or as a register (e.g., **BadFeed**, **ebX**) should always be prefixed by an exclamation point. This makes sure the debugger recognizes it as a symbol.
 
-The [**ss (Set Symbol Suffix)**](ss--set-symbol-suffix-.md) command can be used to set the symbol suffix. This instructs the debugger to automatically append "A" or "W" to any symbol name it cannot find otherwise.
+The [**ss (Set Symbol Suffix)**](../debuggercmds/ss--set-symbol-suffix-.md) command can be used to set the symbol suffix. This instructs the debugger to automatically append "A" or "W" to any symbol name it cannot find otherwise.
 
 Many Win32 routines exist in both ASCII and Unicode versions. These routines often have an "A" or "W" appended to the end of their names, respectively. Using a symbol suffix will aid the debugger when searching for these symbols.
 
@@ -39,9 +39,9 @@ Suffix matching is not active by default.
 
 ## Symbol Syntax in Text Expressions
 
-Symbols can be used in the text parameters of some commands -- for example, [**bm (Set Breakpoint)**](bp--bu--bm--set-breakpoint-.md) and [**x (Examine Symbols)**](x--examine-symbols-.md).
+Symbols can be used in the text parameters of some commands -- for example, [**bm (Set Breakpoint)**](../debuggercmds/bp--bu--bm--set-breakpoint-.md) and [**x (Examine Symbols)**](../debuggercmds/x--examine-symbols-.md).
 
-These text parameters support a variety of wildcards and specifiers. See [String Wildcard Syntax](string-wildcard-syntax.md) for details. In addition to the standard string wildcards, a text expression used to specify a symbol can be prefixed with a leading underscore. When matching this to a symbol, the debugger will treat this as any quantity of underscores, even zero.
+These text parameters support a variety of wildcards and specifiers. See [String Wildcard Syntax](../debuggercmds/string-wildcard-syntax.md) for details. In addition to the standard string wildcards, a text expression used to specify a symbol can be prefixed with a leading underscore. When matching this to a symbol, the debugger will treat this as any quantity of underscores, even zero.
 
 The symbol suffix is not used when matching symbols in text expressions.
 

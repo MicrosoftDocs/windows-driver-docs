@@ -1,4 +1,4 @@
-- name: "Design Guides"
+- name: "Display driver design guides"
   href: index.md
 - name: "Windows Display Driver Model (WDDM) design guide"
 # Auto-expanded node
@@ -7,6 +7,19 @@
     href: windows-vista-display-driver-model-design-guide.md
   - name: "Roadmap for the Windows Display Driver Model (WDDM)"
     href: roadmap-for-developing-drivers-for-the-windows-vista-display-driver-mo.md
+  - name: "Windows Display Driver Model (WDDM)"
+# Auto-expanded node
+    items: 
+    - name: "Introduction to WDDM"
+      href: introduction-to-the-windows-vista-and-later-display-driver-model.md
+    - name: "WDDM architecture"
+      href: windows-vista-and-later-display-driver-model-architecture.md
+    - name: "WDDM operation flow"
+      href: windows-vista-and-later-display-driver-model-operation-flow.md
+    - name: "Benefits of WDDM"
+      href: benefits-of-the-windows-vista-and-later-display-driver-model.md
+    - name: "Migrating to WDDM"
+      href: migrating-to-the-windows-vista-and-later-display-driver-model.md
   - name: "What's new for Windows display and graphics drivers"
 # Auto-expanded node
     items:
@@ -32,10 +45,14 @@
       href: video-encoding-d3d12.md
     - name: "Enhanced barriers"
       href: enhanced-barriers.md
+    - name: "Hardware flip queue"
+      href: hardware-flip-queue.md
     - name: "IOMMU DMA remapping"
       href: iommu-dma-remapping.md
     - name: "Signaling a CPU event from KMD"
       href: signaling-cpu-event-from-kmd.md
+    - name: "WDDM support for DisplayPort monitors over USB4"
+      href: supporting-usb4.md
   - name: "WDDM 2.4 features"
     items:
     - name: "IOMMU-based GPU isolation"
@@ -194,19 +211,6 @@
         href: wddm-driver-and-feature-caps.md
       - name: "WDDM 1.2 best practices"
         href: wddm-v1-2-best-practices.md
-  - name: "Introduction to the Windows Display Driver Model (WDDM)"
-# Auto-expanded node
-    items: 
-    - name: "Introduction to the Windows Display Driver Model (WDDM)"
-      href: introduction-to-the-windows-vista-and-later-display-driver-model.md
-    - name: "Windows Display Driver Model (WDDM) Architecture"
-      href: windows-vista-and-later-display-driver-model-architecture.md
-    - name: "Benefits of the Windows Display Driver Model (WDDM)"
-      href: benefits-of-the-windows-vista-and-later-display-driver-model.md
-    - name: "Migrating to the Windows Display Driver Model (WDDM)"
-      href: migrating-to-the-windows-vista-and-later-display-driver-model.md
-    - name: "Windows Display Driver Model (WDDM) Operation Flow"
-      href: windows-vista-and-later-display-driver-model-operation-flow.md
   - name: "Installation Requirements for Display Miniport and User-Mode Display Drivers"
 # Auto-expanded node
     items: 
@@ -286,13 +290,13 @@
       items: 
       - name: "Threading and Synchronization Model of Display Miniport Driver"
         href: threading-and-synchronization-model-of-display-miniport-driver.md
-      - name: "Threading and Synchronization Third Level"
+      - name: "Threading and Synchronization Level Three"
         href: threading-and-synchronization-third-level.md
-      - name: "Threading and Synchronization Second Level"
+      - name: "Threading and Synchronization Level Two"
         href: threading-and-synchronization-second-level.md
-      - name: "Threading and Synchronization First Level"
+      - name: "Threading and Synchronization Level One"
         href: threading-and-synchronization-first-level.md
-      - name: "Threading and Synchronization Zero Level"
+      - name: "Threading and Synchronization Level Zero"
         href: threading-and-synchronization-zero-level.md
       - name: "Thread Synchronization and TDR"
         href: thread-synchronization-and-tdr.md
@@ -710,6 +714,8 @@
       href: indirect-display-debugging.md
     - name: "IddCx versions"
       href: iddcx-versions.md
+    - name: "IddCx v1.10 updates"
+      href: iddcx1.10-updates.md
     - name: "IddCx v1.9 updates"
       href: iddcx1.9-updates.md
     - name: "IddCx v1.8 updates"
@@ -764,6 +770,14 @@
       href: user-mode-driver-logging.md
     - name: "Disabling Frame Pointer Omission (FPO) optimization"
       href: disabling-frame-pointer-omission--fpo--optimization.md
+  - name: "Microsoft Compute Driver Model"
+    items:
+    - name: "Microsoft Compute Driver Model overview"
+      href: mcdm.md
+    - name: "MCDM architecture"
+      href: mcdm-architecture.md
+    - name: "MCDM KM driver implementation guidelines" 
+      href: mcdm-implementation-guidelines.md
     - name: "GPUView"
 # Auto-expanded node
       items:

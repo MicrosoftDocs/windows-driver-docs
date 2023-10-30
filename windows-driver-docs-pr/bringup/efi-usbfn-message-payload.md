@@ -1,7 +1,8 @@
 ---
 title: EFI_USBFN_MESSAGE_PAYLOAD
 description: The EFI_USBFN_MESSAGE_PAYLOAD union contains additional payload (device request, transfer result, or bus speed information) for the current message.
-ms.date: 08/23/2021
+ms.date: 03/23/2023
+ms.topic: reference
 ---
 
 # EFI_USBFN_MESSAGE_PAYLOAD

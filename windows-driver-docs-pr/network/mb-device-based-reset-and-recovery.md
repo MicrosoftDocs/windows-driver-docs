@@ -4,6 +4,7 @@ description: MB Device-based Reset and Recovery
 keywords:
 - MB Device-based Reset and Recovery, Mobile Broadband Device-based Reset and Recovery, Mobile Broadband miniport driver Device-based Reset and Recovery
 ms.date: 03/01/2021
+ms.custom: UpdateFrequency3
 ---
 
 # MB Device-based Reset and Recovery
@@ -69,7 +70,7 @@ For UDE client drivers that enable an MBIM function, Windows 10, version 1809 in
 
 The following flow diagram illustrates the UDE device reset process.
 
-![Flow for reset recovery flow for UDECx client drivers.](images/mb-self-healing-udecx-reset.png "Call flow for reset recovery for UDECx client drivers.")
+:::image type="content" source="images/mb-self-healing-udecx-reset.png" alt-text="Diagram showing the reset recovery flow for UDECx client drivers.":::
 
 
 ## RnR triggers
@@ -164,19 +165,25 @@ After PLDR or PnP disable/enable, the device departs and then re-arrives. Initia
 
 ### Primary flows
 #### RnR for bad connectivity
-![RnR for bad connectivity.](images\RnR_bad_connectivity.png?raw=true "RNR_bad_connectivity")
+:::image type="content" source="images\RnR_bad_connectivity.png?raw=true" alt-text="Flowchart illustrating the RnR process for bad connectivity.":::
+
 #### PLDR for radio power set failure
-![PLDR for radio power set failure.](images\PLDR_radio_power_set_failure.png?raw=true "PLDR_radio_power_set_failure")
+:::image type="content" source="images\PLDR_radio_power_set_failure.png?raw=true" alt-text="Flowchart depicting the PLDR process for radio power set failure.":::
+
 #### PnP disable/enable for radio state set failure
-![PnP of radio state set failure.](images\PnP_radio_state_set_failure.png?raw=true "PnP_radio_state_set_failure")
+:::image type="content" source="images\PnP_radio_state_set_failure.png?raw=true" alt-text="Flowchart illustrating the PnP process for radio state set failure.":::
+
 #### PLDR for time-outs of consecutive OID requests 
-![PLDR of timeouts consecutive OID requests.](images\PLDR_timeouts_consecutive_OID_requests.png?raw=true "PLDR_timeouts_consecutive_OID_requests")
+:::image type="content" source="images\PLDR_timeouts_consecutive_OID_requests.png?raw=true" alt-text="Flowchart showing the PLDR process for timeouts of consecutive OID requests.":::
+
 #### PnP disable/enable for time-outs of consecutive OID requests 
-![PnP of timeouts consecutive OID requests.](images\PnP_timeouts_consecutive_OID_requests.png?raw=true "PnP_timeouts_consecutive_OID_requests")
+:::image type="content" source="images\PnP_timeouts_consecutive_OID_requests.png?raw=true" alt-text="Flowchart depicting the PnP process for timeouts of consecutive OID requests.":::
+
 #### PLDR for initialization failure
-![PLDR of initialization failure.](images\PLDR_initialization_failure.png?raw=true "PLDR_initialization_failure")
+:::image type="content" source="images\PLDR_initialization_failure.png?raw=true" alt-text="Flowchart illustrating the PLDR process for initialization failure.":::
+
 #### PnP disable/enable for initialization failure
-![PnP of initialization failure.](images\PnP_initialization_failure.png?raw=true "PnP_initialization_failure")
+:::image type="content" source="images\PnP_initialization_failure.png?raw=true" alt-text="Flowchart showing the PnP process for initialization failure.":::
 
 
 ## Requirements for MB Device-based Reset and Recovery

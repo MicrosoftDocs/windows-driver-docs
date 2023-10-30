@@ -7,7 +7,7 @@ keywords:
 - custom capabilities
 - UWP
 - Hardware
-ms.date: 08/11/2021
+ms.date: 03/17/2023
 ---
 
 # Hardware Support App (HSA): Steps for App Developers
@@ -30,7 +30,7 @@ Starting in Windows 10 version 1709, you can specify that a Universal Windows Pl
 
 A developer account on the Microsoft Store is required. Hardware partners will need a Microsoft Store account that is different from their Hardware partner account. You'll need the publisher name when you author the app manifest and the device metadata in later steps. You can also reserve a name for your app once you've created a store profile.
 
-To create a Microsoft Store account, go to the [UWP apps sign up page](https://developer.microsoft.com/store/register/). For more info, see [Opening a developer account](/windows/uwp/publish/opening-a-developer-account).
+To create a Microsoft Store account, go to [Get registered](https://developer.microsoft.com/microsoft-store/register/). For more info, see [Publish Windows apps and games](/windows/apps/publish/).
 
 ## Choosing a programming language for the app
 
@@ -100,8 +100,7 @@ Mark the SCCD as build content by right clicking on the SCCD file and changing *
 
 Finally, right-click the project, select **Store**, then **Create App Packages**.
 
-> [!NOTE]
-> There is no support for UWP apps with custom capabilities on mobile platforms.
+There is no support for UWP apps with custom capabilities on mobile platforms.
 
 ## Install the App
 

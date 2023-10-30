@@ -4,15 +4,15 @@ description: The required ScannerElementsChangeEvent element informs the client 
 keywords: ["ScannerElementsChangeEvent element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ScannerElementsChangeEvent
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 05/02/2023
 ---
 
 # ScannerElementsChangeEvent element
-
 
 The required **ScannerElementsChangeEvent** element informs the client that a change has occurred in the scanner.
 
@@ -30,25 +30,11 @@ There are no attributes.
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="elementchanges.md" data-raw-source="[&lt;strong&gt;ElementChanges&lt;/strong&gt;](elementchanges.md)"><strong>ElementChanges</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**ElementChanges**](elementchanges.md) |
 
 ## Parent elements
-
 
 There are no parent elements.
 
@@ -264,7 +250,6 @@ The following code example shows how the device reports updated scanner configur
 
 ## See also
 
-
 [**DefaultScanTicket**](defaultscanticket.md)
 
 [**ElementChanges**](elementchanges.md)
@@ -272,13 +257,3 @@ The following code example shows how the device reports updated scanner configur
 [**ScannerConfiguration**](scannerconfiguration.md)
 
 [**ScannerDescription**](scannerdescription.md)
-
- 
-
- 
-
-
-
-
-
-

@@ -2,6 +2,7 @@
 title: MB Multi-SIM Operations
 description: MB Multi-SIM Operations
 ms.date: 03/01/2021
+ms.custom: UpdateFrequency3
 ---
 
 # MB Multi-SIM operations
@@ -26,13 +27,13 @@ The executor is a logical representation of the hardware and may in fact be one 
 
 The following two images illustrate the logical view of a dual SIM modem. Each shows a possible combination of executor and UICC.
 
-![Logical view of a dual SIM modem.](images/multi-SIM_1_dualSimModem.png "Logical view of a dual SIM modem")
+:::image type="content" source="images/multi-SIM_1_dualSimModem.png" alt-text="Diagram illustrating the logical view of a dual SIM modem.":::
 
 The cellular stack inside an executor is considered mostly self-contained except in the case of a Dual Standby modem implementation where the executor conducting traffic (voice and/or data) may prevent the other from maintaining registration.
 
 The following diagram illustrates the logical view of a dual standby modem. Traffic on Executor 0, a phone call, causes Executor 1 to lose registration.
 
-![Logical view of a dual-standby modem.](images/multi-SIM_2_dualExecutors.png "Logical view of a dual-standby modem")
+:::image type="content" source="images/multi-SIM_2_dualExecutors.png" alt-text="Diagram depicting the logical view of a dual-standby modem.":::
 
 The Windows Desktop modem interface model in NDIS 6.7 does not accommodate such an architecture because it is based upon several implicit assumptions:
 
@@ -48,7 +49,7 @@ For more information about cellular architecture and the differences between Win
 
 The following figure shows an abstract model of a modem.
 
-![Relationship of Modem, Executors, and Slots.](images/multi-SIM_3_majorObjectsAndOperations.png "Relationship of Modem, Executors, and Slots")
+:::image type="content" source="images/multi-SIM_3_majorObjectsAndOperations.png" alt-text="Diagram showing the relationship between modem, executors, and slots.":::
 
 Each modem is identified by a globally unique identifier (GUID) and contains a set of one or more executors, each of which is capable of independent registration on a cellular network. Each executor has an associated executor index, an integer, beginning with 0 for the first executor. In addition, the modem exposes one or more slots that may contain UICC cards. It is assumed is that the number of slots is greater than or equal to the number of executors. Each slot has an associated index, also beginning with 0, and a current state related to the power state of the slot and availability state of a card in the slot (if any).
 
@@ -62,9 +63,9 @@ For non-Windows Mobile operating systems, a multi-executor modem appears as one 
 
 The following two diagrams show the difference in executor-specific commands and notifications (the first diagram), where commands and notifications go through and come from the same executor, and modem-specific commands and notifications (the second diagram), where commands may go through any executor and come from any executor.
 
-![Executor-specific commands and notifications.](images/multi-SIM_4_executorSpecificCommands.png "Executor-specific commands and notifications")
+:::image type="content" source="images/multi-SIM_4_executorSpecificCommands.png" alt-text="Diagram displaying executor-specific commands and notifications.":::
 
-![Modem-specific commands and notifications.](images/multi-SIM_4_modemSpecificCommands.png "Modem-specific commands and notifications")
+:::image type="content" source="images/multi-SIM_4_modemSpecificCommands.png" alt-text="Diagram illustrating modem-specific commands and notifications.":::
 
 All OID set or query requests issued to a miniport instance are executed against the modem and executor with which the miniport instance is associated. Likewise, all unsolicited notifications and unsolicited Device Service events sent from a miniport instance are applicable to the modem and the executor with which the miniport instance is associated. For example, an unsolicited NDIS_STATUS_WWAN_REGISTER_STATE or NDIS_STATUS_WWAN_PACKET_SERVICE notification from a miniport indicates the registration (or packet service state) of the associated modem and the executor only and is unrelated to the state of other modem(s) or other executor(s). 
 
@@ -148,7 +149,7 @@ When there are multiple modems and/or multiple executors in a device, non-execut
 
 The following diagram illustrates the information flow between the WWANSVC and MBIM functions in two different modems.
 
-![Modem structure with MBIM functions.](images/multi-SIM_10_MBIMspecification.png "Modem structure with MBIM functions")
+:::image type="content" source="images/multi-SIM_10_MBIMspecification.png" alt-text="Diagram of modem structure with MBIM functions.":::
 
 This section contains the detailed modem-wide and per-executor CID descriptions for the defined device services. The definitions reference back to existing public MBIM1.0 specification. An MBIM-compliant device implements and reports the following device service when queried by CID_MBIM_DEVICE_SERVICES. The existing well-known services are defined in section 10.1 of the USB NCM MBIM 1.0 specification. Microsoft extends this to define the following service.
 
@@ -437,7 +438,7 @@ Dual SIM single active (DSSA) is the only form of multi-SIM operation that is fu
 
 ### Architecture/Flow
  
-![DSSA flow diagram.](images/DSSA-flow.png)
+:::image type="content" source="images/DSSA-flow.png" alt-text="Diagram that shows DSSA flow.":::
 
 ### Slot Switch Behavior
 
@@ -450,7 +451,7 @@ If DSSA is supported on the device, there are some scenarios where slot switch i
 - If the SIM is removed from the physical slot and the physical slot is the currently selected slot, a toast is displayed asking the user if they want to switch to the embedded slot.
 - If the user selects "Yes" then the slot is switched.
 
-![SIM removal flow.](images/SIM_removal.png)
+:::image type="content" source="images/SIM_removal.png" alt-text="Flowchart illustrating SIM removal process.":::
 
 **SIM Insert**
 - If auto-switch is enabled via regkey:
@@ -469,7 +470,7 @@ Use this registry key to configure auto-switch. It does not exist by default.
   
   
 
-![SIM insertion flow.](images/SIM_insert.png)
+:::image type="content" source="images/SIM_insert.png" alt-text="Flowchart illustrating SIM insertion process.":::
 
 ## Hardware Lab Kit (HLK) Tests
 

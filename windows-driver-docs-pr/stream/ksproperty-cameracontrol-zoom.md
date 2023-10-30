@@ -4,6 +4,7 @@ description: User-mode clients use the KSPROPERTY_CAMERACONTROL_ZOOM property to
 keywords: ["KSPROPERTY_CAMERACONTROL_ZOOM Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_ZOOM
 api_location:

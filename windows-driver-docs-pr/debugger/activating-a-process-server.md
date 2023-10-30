@@ -5,6 +5,7 @@ keywords: ["Activating a Process Server Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Activating a Process Server
 api_type:
@@ -102,7 +103,7 @@ Suspends the Image File Execution Option (IFEO) value for the given image. *Exec
 Causes DbgSrv to create a new process. You can use this to create a process that you intend to debug. This is similar to spawning a new process from the debugger, except that this process will not be debugged when it is created. To debug this process, determine its PID and use the **-p** option when starting the smart client to debug this process.
 
 <span id="s"></span><span id="S"></span>**s**  
-Causes the newly-created process to be immediately suspended. If you are using this option, it is recommended that you use CDB as your smart client, and that you start the smart client with the **-pb** command-line option, in conjunction with **-p PID**. If you include the **-pb** option on the command line, the process will resume when the debugger attaches to it; otherwise you can resume the process with the [**~\*m**](-m--resume-thread-.md) command.
+Causes the newly-created process to be immediately suspended. If you are using this option, it is recommended that you use CDB as your smart client, and that you start the smart client with the **-pb** command-line option, in conjunction with **-p PID**. If you include the **-pb** option on the command line, the process will resume when the debugger attaches to it; otherwise you can resume the process with the [**~\*m**](../debuggercmds/-m--resume-thread-.md) command.
 
 <span id="AppCmdLine"></span><span id="appcmdline"></span><span id="APPCMDLINE"></span>*AppCmdLine*  
 Specifies the full command line of the process to be created. *AppCmdLine* can be either a Unicode or ASCII string, and can include any printable character. All text that appears after the **-c\[s\]** parameter will be taken to form the string *AppCmdLine*.

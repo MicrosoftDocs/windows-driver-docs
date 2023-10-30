@@ -1,37 +1,15 @@
-- name: "What's New for WDF Drivers"
+- name: "Windows Driver Frameworks"
   href: index.md
-- name: "Overview"
-# Auto-expanded node
-  items: 
-  - name: "Getting Started with UMDF"
-    href: getting-started-with-umdf-version-2.md
-  - name: "User-Mode Driver Framework Frequently Asked Questions"
-    href: user-mode-driver-framework-frequently-asked-questions.yml
-  - name: "Advantages of Writing UMDF Drivers"
-    href: advantages-of-writing-umdf-drivers.md
-  - name: "Overview of UMDF"
-    href: overview-of-the-umdf.md
-  - name: "UMDF Driver Host Process"
-    href: umdf-driver-host-process.md
-  - name: "Architecture of UMDF"
-    href: detailed-view-of-the-umdf-architecture.md
-  - name: "Comparing UMDF 2.0 Functionality to KMDF"
-    href: comparing-umdf-2-0-functionality-to-kmdf.md
-  - name: "How to convert a KMDF driver to a UMDF 2.0 driver (and vice-versa)"
-    href: how-to-generate-a-umdf-driver-from-a-kmdf-driver.md
-  - name: "Porting a Driver from UMDF 1 to UMDF 2"
-    href: porting-a-driver-from-umdf-1-to-umdf-2.md
-  - name: "Framework Library Versioning"
-    href: framework-library-versioning.md
-  - name: "KMDF Version History"
-    href: kmdf-version-history.md
-  - name: "UMDF Version History"
-    href: umdf-version-history.md
+- name: "KMDF Version History"
+  href: kmdf-version-history.md
+- name: "UMDF Version History"
+  href: umdf-version-history.md
 - name: "Concepts"
-# Auto-expanded node
   items: 
   - name: "Using WDF to Develop a Driver"
     href: using-the-framework-to-develop-a-driver.md
+  - name: "Framework Library Versioning"
+    href: framework-library-versioning.md
   - name: "WDF Architecture"
     href: kernel-mode-driver-framework-architecture.md
   - name: "Writing a Simple WDF Driver"
@@ -56,8 +34,326 @@
     href: creating-device-objects-in-a-filter-driver.md
   - name: "Creating Device Objects in a Bus Driver"
     href: creating-device-objects-in-a-bus-driver.md
-  - name: "Building, Installing, and Testing"
-    href: building--installing--and-testing-a-wdf-driver.md
+  - name: "Reporting Device Failures"
+    href: reporting-device-failures.md
+  - name: "Controlling Device Access in KMDF Drivers"
+    href: controlling-device-access-in-kmdf-drivers.md
+- name: "WDF Objects"
+  items: 
+  - name: "Introduction to Framework Objects"
+    href: introduction-to-framework-objects.md
+  - name: "Framework Object Methods"
+    href: framework-object-methods.md
+  - name: "Framework Object Events"
+    href: framework-object-events.md
+  - name: "Framework Object Properties"
+    href: framework-object-properties.md
+  - name: "Framework Object Life Cycle"
+    href: framework-object-life-cycle.md
+  - name: "Framework Object Context Space"
+    href: framework-object-context-space.md
+  - name: "Framework Object Custom Types"
+    href: framework-object-custom-types.md
+  - name: "Using General Framework Objects"
+    href: using-general-framework-objects.md
+  - name: "Framework Object Collections"
+    href: framework-object-collections.md
+  - name: "Summary of Framework Objects"
+    href: summary-of-framework-objects.md
+  - name: "WDF General Object Macros"
+    items: 
+    - name: "WDF_DECLARE_CONTEXT_TYPE"
+      href: wdf-declare-context-type.md
+    - name: "WDF_DECLARE_CONTEXT_TYPE_WITH_NAME"
+      href: wdf-declare-context-type-with-name.md
+    - name: "WDF_DECLARE_CUSTOM_TYPE"
+      href: wdf-declare-custom-type.md
+    - name: "WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE"
+      href: wdf-object-attributes-init-context-type.md
+    - name: "WDF_OBJECT_ATTRIBUTES_SET_CONTEXT_TYPE"
+      href: wdf-object-attributes-set-context-type.md
+    - name: "WDF_PTR_ADD_OFFSET"
+      href: wdf-ptr-add-offset.md
+    - name: "WDF_PTR_ADD_OFFSET_TYPE"
+      href: wdf-ptr-add-offset-type.md
+    - name: "WDF_PTR_GET_OFFSET"
+      href: wdf-ptr-get-offset.md
+    - name: "WdfObjectAddCustomType"
+      href: wdfobjectaddcustomtype.md
+    - name: "WdfObjectAddCustomTypeWithData"
+      href: wdfobjectaddcustomtypewithdata.md
+    - name: "WdfObjectDereference"
+      href: wdfobjectdereference.md
+    - name: "WdfObjectDereferenceWithTag"
+      href: wdfobjectdereferencewithtag.md
+    - name: "WdfObjectGetCustomTypeData"
+      href: wdfobjectgetcustomtypedata.md
+    - name: "WdfObjectGetTypedContext"
+      href: wdfobjectgettypedcontext.md
+    - name: "WdfObjectIsCustomType"
+      href: wdfobjectiscustomtype.md
+    - name: "WdfObjectReference"
+      href: wdfobjectreference.md
+    - name: "WdfObjectReferenceWithTag"
+      href: wdfobjectreferencewithtag.md
+  - name: "Framework Object Creation Errors"
+    href: framework-object-creation-errors.md
+- name: "PnP and Power Management"
+  items: 
+  - name: "Supporting PnP and Power Management in Your Driver"
+    href: supporting-pnp-and-power-management-in-your-driver.md
+  - name: "Supporting PnP and Power Management in Software-only Drivers"
+    href: supporting-pnp-and-power-management-in-software-only-drivers.md
+  - name: "Supporting PnP and Power Management in Function Drivers"
+    href: supporting-pnp-and-power-management-in-function-drivers.md
+  - name: "PnP and Power Management Scenarios"
+    href: pnp-and-power-management-scenarios.md
+  - name: "A User Plugs in a Device"
+    href: a-user-plugs-in-a-device.md
+  - name: "A User Unplugs a Device"
+    href: a-user-unplugs-a-device.md
+  - name: "A Device Enters a Low-Power State"
+    href: a-device-enters-a-low-power-state.md
+  - name: "A Device Returns to Its Working State"
+    href: a-device-returns-to-its-working-state.md
+  - name: "The PnP Manager Redistributes System Resources"
+    href: the-pnp-manager-redistributes-system-resources.md
+  - name: "PnP and Power Management Callback Sequences"
+    href: pnp-and-power-management-callback-sequences.md
+  - name: "Power-Up Sequence for a Function or Filter Driver"
+    href: power-up-sequence-for-a-function-or-filter-driver.md
+  - name: "Power-Up Sequence for a Bus Driver"
+    href: power-up-sequence-for-a-bus-driver.md
+  - name: "Power-Down and Removal Sequence for a Function or Filter Driver"
+    href: power-down-and-removal-sequence-for-a-function-or-filter-driver.md
+  - name: "Power-Down and Removal Sequence for a Bus Driver"
+    href: power-down-and-removal-sequence-for-a-bus-driver.md
+  - name: "Surprise-Removal Sequence"
+    href: surprise-removal-sequence.md
+  - name: "Power Management for I/O Queues"
+    href: power-management-for-i-o-queues.md
+  - name: "Using Self-Managed I/O"
+    href: using-self-managed-i-o.md
+  - name: "Handling Requests to Stop a Device"
+    href: handling-requests-to-stop-a-device.md
+- name: "Power Policy"
+  items: 
+  - name: "Power Policy Ownership"
+    href: power-policy-ownership.md
+  - name: "Supporting Idle Power-Down"
+    href: supporting-idle-power-down.md
+  - name: "Supporting System Wake-Up"
+    href: supporting-system-wake-up.md
+  - name: "User Control of Device Idle and Wake Behavior"
+    href: user-control-of-device-idle-and-wake-behavior.md
+  - name: "Supporting Functional Power States"
+    href: supporting-functional-power-states.md
+  - name: "Supporting Single-Component Devices with Single or Multiple Functional Power States"
+    href: supporting-multiple-functional-power-states-for-single-component-devices.md
+  - name: "Supporting Multiple-Component Devices with Single or Multiple Functional Power States"
+    href: supporting-multiple-functional-power-states-for-multiple-component-devices.md
+  - name: "Coordinating I/O Requests with Component Power State"
+    href: coordinating-i-o-requests-with-component-power-state.md
+  - name: "Reporting Device Powered On When System Returns to S0"
+    href: reporting-device-powered-on.md
+  - name: "Supporting Idle Power-Down on Multiple-Component Devices"
+    href: supporting-idle-power-down-on-multiple-component-devices.md
+- name: "Handling I/O Requests"
+  items: 
+  - name: "Framework File Objects"
+    href: framework-file-objects.md
+  - name: "Framework Queue Objects"
+    items: 
+    - name: "Creating I/O Queues"
+      href: creating-i-o-queues.md
+    - name: "Dispatching Methods for I/O Requests"
+      href: dispatching-methods-for-i-o-requests.md
+    - name: "Request Handlers"
+      href: request-handlers.md
+    - name: "Deleting I/O Queues"
+      href: deleting-i-o-queues.md
+    - name: "Managing I/O Queues"
+      href: managing-i-o-queues.md
+    - name: "Using Power-Managed I/O Queues"
+      href: using-power-managed-i-o-queues.md
+    - name: "I/O Queue States"
+      href: i-o-queue-states.md
+    - name: "Example Uses of I/O Queues"
+      href: example-uses-of-i-o-queues.md
+  - name: "Framework Request Objects"
+    items: 
+    - name: "Creating Framework Request Objects"
+      href: creating-framework-request-objects.md
+    - name: "Using Request Object Context"
+      href: using-request-object-context.md
+    - name: "Request Ownership"
+      href: request-ownership.md
+    - name: "Processing I/O Requests"
+      href: processing-i-o-requests.md
+    - name: "Receiving I/O Requests"
+      href: receiving-i-o-requests.md
+    - name: "Requeuing I/O Requests"
+      href: requeuing-i-o-requests.md
+    - name: "Completing I/O Requests"
+      href: completing-i-o-requests.md
+    - name: "Canceling I/O Requests"
+      href: canceling-i-o-requests.md
+    - name: "Synchronizing Cancel and Completion Code"
+      href: synchronizing-cancel-and-completion-code.md
+    - name: "Synchronizing Cancellation of Sent Requests"
+      href: synchronizing-cancellation-of-sent-requests.md
+    - name: "Forwarding I/O Requests"
+      href: forwarding-i-o-requests.md
+    - name: "Obtaining Information About an I/O Request"
+      href: obtaining-information-about-an-i-o-request.md
+    - name: "Accessing Data Buffers in WDF Drivers (KMDF or UMDF)"
+      href: accessing-data-buffers-in-wdf-drivers.md
+    - name: "Managing Buffer Access Methods in UMDF Drivers"
+      href: managing-buffer-access-methods-in-umdf-drivers.md
+    - name: "Reusing Framework Request Objects"
+      href: reusing-framework-request-objects.md
+  - name: "Handling Client Impersonation in UMDF Drivers"
+    href: handling-client-impersonation-in-umdf-drivers.md
+  - name: "Host Process Timeouts in UMDF"
+    href: how-umdf-enforces-time-outs.md
+  - name: "Supporting Kernel-Mode Clients in UMDF Drivers"
+    href: supporting-kernel-mode-clients-in-umdf-drivers.md
+  - name: "Using Activity Identifiers"
+    href: using-activity-identifiers.md
+  - name: "Creating WDF HID Minidrivers"
+    href: creating-umdf-hid-minidrivers.md
+- name: "Using I/O Targets"
+  items: 
+  - name: "Introduction to I/O Targets"
+    href: introduction-to-i-o-targets.md
+  - name: "General I/O Targets"
+    href: general-i-o-targets.md
+  - name: "Initializing a General I/O Target"
+    href: initializing-a-general-i-o-target.md
+  - name: "Sending I/O Requests to General I/O Targets"
+    href: sending-i-o-requests-to-general-i-o-targets.md
+  - name: "Sending I/O Requests Synchronously"
+    href: sending-i-o-requests-synchronously.md
+  - name: "Sending I/O Requests Asynchronously"
+    href: sending-i-o-requests-asynchronously.md
+  - name: "Controlling a General I/O Target's State"
+    href: controlling-a-general-i-o-target-s-state.md
+  - name: "Obtaining Information About a General I/O Target"
+    href: obtaining-information-about-a-general-i-o-target.md
+  - name: "USB I/O Targets"
+    href: usb-i-o-targets.md
+  - name: "Working with USB Devices"
+    href: working-with-usb-devices.md
+  - name: "Working with USB Interfaces"
+    href: working-with-usb-interfaces.md
+  - name: "Working with USB Pipes"
+    href: working-with-usb-pipes.md
+- name: "Synchronization Techniques"
+  items: 
+  - name: "Using Automatic Synchronization"
+    href: using-automatic-synchronization.md
+  - name: "Using Framework Locks"
+    href: using-framework-locks.md
+- name: "WDF Support Objects"
+  items: 
+  - name: "Using Memory Buffers"
+    href: using-memory-buffers.md
+  - name: "Memory Buffer Life Cycle"
+    href: memory-buffer-life-cycle.md
+  - name: "Using Timers"
+    href: using-timers.md
+  - name: "Using String Objects"
+    href: using-string-objects.md
+  - name: "Using Framework Work Items"
+    href: using-framework-work-items.md
+  - name: "Using Device Interfaces"
+    href: using-device-interfaces.md
+  - name: "Introduction to Registry Keys for Drivers"
+    href: introduction-to-registry-keys-for-drivers.md
+  - name: "Using Framework Registry-Key Objects"
+    href: using-framework-registry-key-objects.md
+  - name: "Accessing the Unified Device Property Model"
+    href: accessing-the-unified-device-property-model.md
+- name: "Accessing Hardware Resources"
+  items: 
+  - name: "Introduction to Hardware Resources"
+    href: introduction-to-hardware-resources.md
+  - name: "Framework Objects for Hardware Resources"
+    href: framework-objects-for-hardware-resources.md
+  - name: "Creating a Resource Requirements List"
+    href: creating-a-resource-requirements-list.md
+  - name: "Modifying a Resource Requirements List"
+    href: modifying-a-resource-requirements-list.md
+  - name: "Creating a Resource List for a Boot Configuration"
+    href: creating-a-resource-list-for-a-boot-configuration.md
+  - name: "Modifying a Resource List"
+    href: modifying-a-resource-list.md
+  - name: "Raw and Translated Resources"
+    href: raw-and-translated-resources.md
+  - name: "Finding and Mapping Hardware Resources"
+    href: finding-and-mapping-hardware-resources.md
+  - name: "Reading and Writing to Device Registers"
+    href: reading-and-writing-to-device-registers.md
+  - name: "Driver Access to Hardware"
+    href: driver-access-to-hardware.md
+- name: "Handling Hardware Interrupts"
+  items: 
+  - name: "Creating an Interrupt Object"
+    href: creating-an-interrupt-object.md
+  - name: "Enabling and Disabling Interrupts"
+    href: enabling-and-disabling-interrupts.md
+  - name: "Servicing an Interrupt"
+    href: servicing-an-interrupt.md
+  - name: "Synchronizing Interrupt Code"
+    href: synchronizing-interrupt-code.md
+  - name: "Supporting Passive-Level Interrupts"
+    href: supporting-passive-level-interrupts.md
+  - name: "Using an Interrupt to Wake a Device"
+    href: using-an-interrupt-to-wake-a-device.md
+  - name: "Handling Active-Both Interrupts"
+    href: handling-active-both-interrupts.md
+- name: "Handling DMA Operations in KMDF Drivers"
+  items: 
+  - name: "Introduction to DMA in Windows Driver Framework"
+    href: introduction-to-dma-in-windows-driver-framework.md
+  - name: "Framework DMA Objects"
+    href: framework-dma-objects.md
+  - name: "DMA Transactions and DMA Transfers"
+    href: dma-transactions-and-dma-transfers.md
+  - name: "Sample Drivers That Use Framework DMA"
+    href: sample-drivers-that-use-framework-dma.md
+  - name: "Handling I/O Requests in a KMDF Driver for a Bus-Master DMA Device"
+    href: handling-i-o-requests-in-a-kmdf-driver-for-a-bus-master-dma-device.md
+  - name: "Enabling DMA Transactions"
+    href: enabling-dma-transactions.md
+  - name: "Creating and Initializing a DMA Transaction"
+    href: creating-and-initializing-a-dma-transaction.md
+  - name: "Starting a DMA Transaction"
+    href: starting-a-dma-transaction.md
+  - name: "Programming DMA Hardware"
+    href: programming-dma-hardware.md
+  - name: "Completing a DMA Transfer"
+    href: completing-a-dma-transfer.md
+  - name: "Completing a DMA Transaction"
+    href: completing-a-dma-transaction.md
+  - name: "Reusing DMA Transaction Objects"
+    href: reusing-dma-transaction-objects.md
+  - name: "Supporting Power Management for DMA Devices"
+    href: supporting-power-management-for-dma-devices.md
+  - name: "Using Common Buffers"
+    href: using-common-buffers.md
+  - name: "Supporting System-Mode DMA"
+    href: supporting-system-mode-dma.md
+  - name: "Canceling DMA Transactions"
+    href: canceling-dma-transactions.md
+  - name: "Using Single Transfer DMA"
+    href: using-single-transfer-dma.md
+  - name: "Reserving DMA Resources"
+    href: reserving-dma-resources.md
+  - name: "Testing DMA in KMDF Drivers"
+    href: testing-dma-in-kmdf-drivers.md
+- name: "Building, Installing, and Testing"
+  items: 
   - name: "Building and Loading a WDF Driver"
     href: building-and-loading-a-kmdf-driver.md
   - name: "Building a WDF driver for multiple versions of Windows"
@@ -100,24 +396,7 @@
     href: how-umdf-handles-application-failures.md
   - name: "How UMDF Reports Errors"
     href: how-umdf-reports-errors.md
-  - name: "Reporting Device Failures"
-    href: reporting-device-failures.md
-  - name: "Creating WDF HID Minidrivers"
-    href: creating-umdf-hid-minidrivers.md
-  - name: "Framework File Objects"
-    href: framework-file-objects.md
-  - name: "Handling Client Impersonation in UMDF Drivers"
-    href: handling-client-impersonation-in-umdf-drivers.md
-  - name: "Host Process Timeouts in UMDF"
-    href: how-umdf-enforces-time-outs.md
-  - name: "Supporting Kernel-Mode Clients in UMDF Drivers"
-    href: supporting-kernel-mode-clients-in-umdf-drivers.md
-  - name: "Using Activity Identifiers"
-    href: using-activity-identifiers.md
-  - name: "Controlling Device Access in KMDF Drivers"
-    href: controlling-device-access-in-kmdf-drivers.md
-- name: "Debugging"
-# Auto-expanded node
+- name: "Debugging WDF Drivers"
   items: 
   - name: "Accessing UMDF Metadata in WER Reports"
     href: accessing-umdf-metadata-in-wer-reports.md
@@ -171,256 +450,7 @@
     href: debugging-kernel-mode-driver-framework-drivers.md
   - name: "Videos: Debugging UMDF Drivers"
     href: videos--debugging-umdf-drivers.md
-- name: "DMA"
-# Auto-expanded node
-  items: 
-  - name: "Introduction to DMA in Windows Driver Framework"
-    href: introduction-to-dma-in-windows-driver-framework.md
-  - name: "Framework DMA Objects"
-    href: framework-dma-objects.md
-  - name: "DMA Transactions and DMA Transfers"
-    href: dma-transactions-and-dma-transfers.md
-  - name: "Sample Drivers That Use Framework DMA"
-    href: sample-drivers-that-use-framework-dma.md
-  - name: "Handling I/O Requests in a KMDF Driver for a Bus-Master DMA Device"
-    href: handling-i-o-requests-in-a-kmdf-driver-for-a-bus-master-dma-device.md
-  - name: "Enabling DMA Transactions"
-    href: enabling-dma-transactions.md
-  - name: "Creating and Initializing a DMA Transaction"
-    href: creating-and-initializing-a-dma-transaction.md
-  - name: "Starting a DMA Transaction"
-    href: starting-a-dma-transaction.md
-  - name: "Programming DMA Hardware"
-    href: programming-dma-hardware.md
-  - name: "Completing a DMA Transfer"
-    href: completing-a-dma-transfer.md
-  - name: "Completing a DMA Transaction"
-    href: completing-a-dma-transaction.md
-  - name: "Reusing DMA Transaction Objects"
-    href: reusing-dma-transaction-objects.md
-  - name: "Supporting Power Management for DMA Devices"
-    href: supporting-power-management-for-dma-devices.md
-  - name: "Using Common Buffers"
-    href: using-common-buffers.md
-  - name: "Supporting System-Mode DMA"
-    href: supporting-system-mode-dma.md
-  - name: "Canceling DMA Transactions"
-    href: canceling-dma-transactions.md
-  - name: "Using Single Transfer DMA"
-    href: using-single-transfer-dma.md
-  - name: "Reserving DMA Resources"
-    href: reserving-dma-resources.md
-  - name: "Testing DMA in KMDF Drivers"
-    href: testing-dma-in-kmdf-drivers.md
-- name: "Accessing Hardware"
-# Auto-expanded node
-  items: 
-  - name: "Handling Hardware Resources"
-    href: hardware-resources-for-kmdf-drivers.md
-  - name: "Introduction to Hardware Resources"
-    href: introduction-to-hardware-resources.md
-  - name: "Framework Objects for Hardware Resources"
-    href: framework-objects-for-hardware-resources.md
-  - name: "Creating a Resource Requirements List"
-    href: creating-a-resource-requirements-list.md
-  - name: "Modifying a Resource Requirements List"
-    href: modifying-a-resource-requirements-list.md
-  - name: "Creating a Resource List for a Boot Configuration"
-    href: creating-a-resource-list-for-a-boot-configuration.md
-  - name: "Modifying a Resource List"
-    href: modifying-a-resource-list.md
-  - name: "Raw and Translated Resources"
-    href: raw-and-translated-resources.md
-  - name: "Finding and Mapping Hardware Resources"
-    href: finding-and-mapping-hardware-resources.md
-  - name: "Reading and Writing to Device Registers"
-    href: reading-and-writing-to-device-registers.md
-  - name: "Driver Access to Hardware"
-    href: driver-access-to-hardware.md
-- name: "Interrupts"
-# Auto-expanded node
-  items: 
-  - name: "Creating an Interrupt Object"
-    href: creating-an-interrupt-object.md
-  - name: "Enabling and Disabling Interrupts"
-    href: enabling-and-disabling-interrupts.md
-  - name: "Servicing an Interrupt"
-    href: servicing-an-interrupt.md
-  - name: "Synchronizing Interrupt Code"
-    href: synchronizing-interrupt-code.md
-  - name: "Supporting Passive-Level Interrupts"
-    href: supporting-passive-level-interrupts.md
-  - name: "Using an Interrupt to Wake a Device"
-    href: using-an-interrupt-to-wake-a-device.md
-  - name: "Handling Active-Both Interrupts"
-    href: handling-active-both-interrupts.md
-- name: "I/O Targets"
-# Auto-expanded node
-  items: 
-  - name: "Using I/O Targets"
-    href: using-i-o-targets.md
-  - name: "Introduction to I/O Targets"
-    href: introduction-to-i-o-targets.md
-  - name: "General I/O Targets"
-    href: general-i-o-targets.md
-  - name: "Initializing a General I/O Target"
-    href: initializing-a-general-i-o-target.md
-  - name: "Sending I/O Requests to General I/O Targets"
-    href: sending-i-o-requests-to-general-i-o-targets.md
-  - name: "Sending I/O Requests Synchronously"
-    href: sending-i-o-requests-synchronously.md
-  - name: "Sending I/O Requests Asynchronously"
-    href: sending-i-o-requests-asynchronously.md
-  - name: "Controlling a General I/O Target's State"
-    href: controlling-a-general-i-o-target-s-state.md
-  - name: "Obtaining Information About a General I/O Target"
-    href: obtaining-information-about-a-general-i-o-target.md
-  - name: "USB I/O Targets"
-    href: usb-i-o-targets.md
-  - name: "Working with USB Devices"
-    href: working-with-usb-devices.md
-  - name: "Working with USB Interfaces"
-    href: working-with-usb-interfaces.md
-  - name: "Working with USB Pipes"
-    href: working-with-usb-pipes.md
-- name: "Objects"
-# Auto-expanded node
-  items: 
-  - name: "Introduction to Framework Objects"
-    href: introduction-to-framework-objects.md
-  - name: "Framework Object Methods"
-    href: framework-object-methods.md
-  - name: "Framework Object Events"
-    href: framework-object-events.md
-  - name: "Framework Object Properties"
-    href: framework-object-properties.md
-  - name: "Framework Object Life Cycle"
-    href: framework-object-life-cycle.md
-  - name: "Framework Object Context Space"
-    href: framework-object-context-space.md
-  - name: "Framework Object Custom Types"
-    href: framework-object-custom-types.md
-  - name: "Using General Framework Objects"
-    href: using-general-framework-objects.md
-  - name: "Framework Object Collections"
-    href: framework-object-collections.md
-  - name: "Summary of Framework Objects"
-    href: summary-of-framework-objects.md
-  - name: "Using Memory Buffers"
-    href: using-memory-buffers.md
-  - name: "Memory Buffer Life Cycle"
-    href: memory-buffer-life-cycle.md
-  - name: "Using Timers"
-    href: using-timers.md
-  - name: "Using String Objects"
-    href: using-string-objects.md
-  - name: "Using Framework Work Items"
-    href: using-framework-work-items.md
-  - name: "Using Device Interfaces"
-    href: using-device-interfaces.md
-  - name: "WDF General Object Macros"
-# Auto-expanded node
-    items: 
-    - name: "WDF_DECLARE_CONTEXT_TYPE"
-      href: wdf-declare-context-type.md
-    - name: "WDF_DECLARE_CONTEXT_TYPE_WITH_NAME"
-      href: wdf-declare-context-type-with-name.md
-    - name: "WDF_DECLARE_CUSTOM_TYPE"
-      href: wdf-declare-custom-type.md
-    - name: "WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE"
-      href: wdf-object-attributes-init-context-type.md
-    - name: "WDF_OBJECT_ATTRIBUTES_SET_CONTEXT_TYPE"
-      href: wdf-object-attributes-set-context-type.md
-    - name: "WDF_PTR_ADD_OFFSET"
-      href: wdf-ptr-add-offset.md
-    - name: "WDF_PTR_ADD_OFFSET_TYPE"
-      href: wdf-ptr-add-offset-type.md
-    - name: "WDF_PTR_GET_OFFSET"
-      href: wdf-ptr-get-offset.md
-    - name: "WdfObjectAddCustomType"
-      href: wdfobjectaddcustomtype.md
-    - name: "WdfObjectAddCustomTypeWithData"
-      href: wdfobjectaddcustomtypewithdata.md
-    - name: "WdfObjectDereference"
-      href: wdfobjectdereference.md
-    - name: "WdfObjectDereferenceWithTag"
-      href: wdfobjectdereferencewithtag.md
-    - name: "WdfObjectGetCustomTypeData"
-      href: wdfobjectgetcustomtypedata.md
-    - name: "WdfObjectGetTypedContext"
-      href: wdfobjectgettypedcontext.md
-    - name: "WdfObjectIsCustomType"
-      href: wdfobjectiscustomtype.md
-    - name: "WdfObjectReference"
-      href: wdfobjectreference.md
-    - name: "WdfObjectReferenceWithTag"
-      href: wdfobjectreferencewithtag.md
-  - name: "Framework Object Creation Errors"
-    href: framework-object-creation-errors.md
-- name: "PnP and Power Management"
-# Auto-expanded node
-  items: 
-  - name: "Supporting PnP and Power Management in Your Driver"
-    href: supporting-pnp-and-power-management-in-your-driver.md
-  - name: "Supporting PnP and Power Management in Software-only Drivers"
-    href: supporting-pnp-and-power-management-in-software-only-drivers.md
-  - name: "Supporting PnP and Power Management in Function Drivers"
-    href: supporting-pnp-and-power-management-in-function-drivers.md
-  - name: "PnP and Power Management Scenarios"
-    href: pnp-and-power-management-scenarios.md
-  - name: "A User Plugs in a Device"
-    href: a-user-plugs-in-a-device.md
-  - name: "A User Unplugs a Device"
-    href: a-user-unplugs-a-device.md
-  - name: "A Device Enters a Low-Power State"
-    href: a-device-enters-a-low-power-state.md
-  - name: "A Device Returns to Its Working State"
-    href: a-device-returns-to-its-working-state.md
-  - name: "The PnP Manager Redistributes System Resources"
-    href: the-pnp-manager-redistributes-system-resources.md
-  - name: "PnP and Power Management Callback Sequences"
-    href: pnp-and-power-management-callback-sequences.md
-  - name: "Power-Up Sequence for a Function or Filter Driver"
-    href: power-up-sequence-for-a-function-or-filter-driver.md
-  - name: "Power-Up Sequence for a Bus Driver"
-    href: power-up-sequence-for-a-bus-driver.md
-  - name: "Power-Down and Removal Sequence for a Function or Filter Driver"
-    href: power-down-and-removal-sequence-for-a-function-or-filter-driver.md
-  - name: "Power-Down and Removal Sequence for a Bus Driver"
-    href: power-down-and-removal-sequence-for-a-bus-driver.md
-  - name: "Surprise-Removal Sequence"
-    href: surprise-removal-sequence.md
-  - name: "Power Management for I/O Queues"
-    href: power-management-for-i-o-queues.md
-  - name: "Using Self-Managed I/O"
-    href: using-self-managed-i-o.md
-  - name: "Handling Requests to Stop a Device"
-    href: handling-requests-to-stop-a-device.md
-- name: "Power Policy"
-# Auto-expanded node
-  items: 
-  - name: "Power Policy Ownership"
-    href: power-policy-ownership.md
-  - name: "Supporting Idle Power-Down"
-    href: supporting-idle-power-down.md
-  - name: "Supporting System Wake-Up"
-    href: supporting-system-wake-up.md
-  - name: "User Control of Device Idle and Wake Behavior"
-    href: user-control-of-device-idle-and-wake-behavior.md
-  - name: "Supporting Functional Power States"
-    href: supporting-functional-power-states.md
-  - name: "Supporting Single-Component Devices with Single or Multiple Functional Power States"
-    href: supporting-multiple-functional-power-states-for-single-component-devices.md
-  - name: "Supporting Multiple-Component Devices with Single or Multiple Functional Power States"
-    href: supporting-multiple-functional-power-states-for-multiple-component-devices.md
-  - name: "Coordinating I/O Requests with Component Power State"
-    href: coordinating-i-o-requests-with-component-power-state.md
-  - name: "Reporting Device Powered On When System Returns to S0"
-    href: reporting-device-powered-on.md
-  - name: "Supporting Idle Power-Down on Multiple-Component Devices"
-    href: supporting-idle-power-down-on-multiple-component-devices.md
-- name: "Porting"
-# Auto-expanded node
+- name: "Porting from WDM to WDF"
   items: 
   - name: "Porting a Driver from WDM to WDF"
     href: wdf-porting-guide.md
@@ -468,80 +498,7 @@
     href: wdm-equivalents-for-kmdf-buffer-pointers.md
   - name: "WDM IRPs and WDF Event Callback Functions"
     href: wdm-irps-and-kmdf-event-callback-functions.md
-- name: "Queues"
-# Auto-expanded node
-  items: 
-  - name: "Framework Queue Objects"
-    href: framework-queue-objects.md
-  - name: "Creating I/O Queues"
-    href: creating-i-o-queues.md
-  - name: "Dispatching Methods for I/O Requests"
-    href: dispatching-methods-for-i-o-requests.md
-  - name: "Request Handlers"
-    href: request-handlers.md
-  - name: "Deleting I/O Queues"
-    href: deleting-i-o-queues.md
-  - name: "Managing I/O Queues"
-    href: managing-i-o-queues.md
-  - name: "Using Power-Managed I/O Queues"
-    href: using-power-managed-i-o-queues.md
-  - name: "I/O Queue States"
-    href: i-o-queue-states.md
-  - name: "Example Uses of I/O Queues"
-    href: example-uses-of-i-o-queues.md
-- name: "Registry"
-# Auto-expanded node
-  items: 
-  - name: "Introduction to Registry Keys for Drivers"
-    href: introduction-to-registry-keys-for-drivers.md
-  - name: "Using Framework Registry-Key Objects"
-    href: using-framework-registry-key-objects.md
-  - name: "Accessing the Unified Device Property Model"
-    href: accessing-the-unified-device-property-model.md
-- name: "Requests"
-# Auto-expanded node
-  items: 
-  - name: "Framework Request Objects"
-    href: framework-request-objects.md
-  - name: "Creating Framework Request Objects"
-    href: creating-framework-request-objects.md
-  - name: "Using Request Object Context"
-    href: using-request-object-context.md
-  - name: "Request Ownership"
-    href: request-ownership.md
-  - name: "Processing I/O Requests"
-    href: processing-i-o-requests.md
-  - name: "Receiving I/O Requests"
-    href: receiving-i-o-requests.md
-  - name: "Requeuing I/O Requests"
-    href: requeuing-i-o-requests.md
-  - name: "Completing I/O Requests"
-    href: completing-i-o-requests.md
-  - name: "Canceling I/O Requests"
-    href: canceling-i-o-requests.md
-  - name: "Synchronizing Cancel and Completion Code"
-    href: synchronizing-cancel-and-completion-code.md
-  - name: "Synchronizing Cancellation of Sent Requests"
-    href: synchronizing-cancellation-of-sent-requests.md
-  - name: "Forwarding I/O Requests"
-    href: forwarding-i-o-requests.md
-  - name: "Obtaining Information About an I/O Request"
-    href: obtaining-information-about-an-i-o-request.md
-  - name: "Accessing Data Buffers in WDF Drivers (KMDF or UMDF)"
-    href: accessing-data-buffers-in-wdf-drivers.md
-  - name: "Managing Buffer Access Methods in UMDF Drivers"
-    href: managing-buffer-access-methods-in-umdf-drivers.md
-  - name: "Reusing Framework Request Objects"
-    href: reusing-framework-request-objects.md
-- name: "Synchronization"
-# Auto-expanded node
-  items: 
-  - name: "Using Automatic Synchronization"
-    href: using-automatic-synchronization.md
-  - name: "Using Framework Locks"
-    href: using-framework-locks.md
 - name: "KMDF specific"
-# Auto-expanded node
   items: 
   - name: "Using Kernel-Mode Driver Framework with Non-PnP Drivers"
     href: using-kernel-mode-driver-framework-with-non-pnp-drivers.md
@@ -595,8 +552,27 @@
     href: dispatching-irps-to-i-o-queues.md
   - name: "WDM Interface Restrictions"
     href: wdm-interface-restrictions.md
+- name: "UMDF specific"
+  items: 
+  - name: "Getting Started with UMDF"
+    href: getting-started-with-umdf-version-2.md
+  - name: "User-Mode Driver Framework Frequently Asked Questions"
+    href: user-mode-driver-framework-frequently-asked-questions.yml
+  - name: "Advantages of Writing UMDF Drivers"
+    href: advantages-of-writing-umdf-drivers.md
+  - name: "Overview of UMDF"
+    href: overview-of-the-umdf.md
+  - name: "UMDF Driver Host Process"
+    href: umdf-driver-host-process.md
+  - name: "Architecture of UMDF"
+    href: detailed-view-of-the-umdf-architecture.md
+  - name: "Comparing UMDF 2.0 Functionality to KMDF"
+    href: comparing-umdf-2-0-functionality-to-kmdf.md
+  - name: "How to convert a KMDF driver to a UMDF 2.0 driver (and vice-versa)"
+    href: how-to-generate-a-umdf-driver-from-a-kmdf-driver.md
+  - name: "Porting a Driver from UMDF 1 to UMDF 2"
+    href: porting-a-driver-from-umdf-1-to-umdf-2.md
 - name: "UMDF 1"
-# Auto-expanded node
   items: 
   - name: "UMDF 1.x Design Guide"
     href: user-mode-driver-framework-design-guide.md
@@ -770,3 +746,4 @@
     href: determining-why-a-umdf-driver-consumes-an-excessive-amount-of-memory.md
   - name: "Summary of Debugger Extensions in Wudfext.dll"
     href: using-umdf-debugger-extensions.md
+    

@@ -4,6 +4,7 @@ description: DCICreateOverlay
 keywords: ["DCICreateOverlay Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DCICreateOverlay
 api_type:

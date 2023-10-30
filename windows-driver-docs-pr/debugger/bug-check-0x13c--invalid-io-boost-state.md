@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x13C INVALID_IO_BOOST_STATE", "INVALID_IO_BOOST_STATE"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INVALID_IO_BOOST_STATE
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The INVALID\_IO\_BOOST\_STATE bug check has a value of 0x0000013C. This indicates that a thread exited with an invalid I/O boost state. This should be zero when a thread exits.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## INVALID\_IO\_BOOST\_STATE Parameters

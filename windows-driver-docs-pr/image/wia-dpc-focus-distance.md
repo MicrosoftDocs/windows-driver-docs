@@ -4,6 +4,7 @@ description: The WIA_DPC_FOCUS_DISTANCE property contains the distance, in milli
 keywords: ["WIA_DPC_FOCUS_DISTANCE Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPC_FOCUS_DISTANCE
 api_location:

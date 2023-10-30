@@ -26,10 +26,10 @@ If your host computer uses an x64-based processor and is running a 64-bit versio
 
 - If you are performing live kernel-mode debugging, you can use either the 32-bit debugging tools or the x64 debugging tools. (This situation applies to both x86-based and x64-based targets.)
 
-- If you are debugging live user-mode code that is running on the same computer as the debugger, use the 64-bit tools for debugging 64-bit code and 32-bit code running on WOW64. To set the debugger for 32-bit or 64-bit mode, use the [**.effmach**](-effmach--effective-machine-.md) command.
+- If you are debugging live user-mode code that is running on the same computer as the debugger, use the 64-bit tools for debugging 64-bit code and 32-bit code running on WOW64. To set the debugger for 32-bit or 64-bit mode, use the [**.effmach**](../debuggercmds/-effmach--effective-machine-.md) command.
 
 - If you are debugging live 32-bit user-mode code that is running on a separate target computer, use the 32-bit debugging tools.
 
-## <span id="related_topics"></span>Related topics
+## <span id="related_topics"></span>See also
 
 [Windows Debugging](index.md)

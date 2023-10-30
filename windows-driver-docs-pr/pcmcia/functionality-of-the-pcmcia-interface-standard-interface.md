@@ -1,7 +1,7 @@
 ---
 title: Functionality of the PCMCIA_INTERFACE_STANDARD Interface
 description: Functionality of the PCMCIA_INTERFACE_STANDARD Interface
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Functionality of the PCMCIA\_INTERFACE\_STANDARD Interface

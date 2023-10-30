@@ -7,10 +7,12 @@ keywords:
 - referencing locales
 - locale referencing WDK Unidrv
 - Unidrv WDK print
-ms.date: 09/08/2022
+ms.date: 01/30/2023
 ---
 
 # Referencing locales
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 ## Using GPD files
 
@@ -18,13 +20,13 @@ GPD files can reference a system's locale. Typically, locale identifiers are use
 
 To reference locale information, the GPD file must contain an \*Include statement that includes the file locale.gpd, which is included in the with the Windows Driver Kit (WDK), as follows:
 
-```cpp
+```GPD
 *Include: locale.gpd
 ```
 
 This GPD file defines a feature named "Locale", and defines options for many locales. (Refer to the file to see which locales are defined.) Following is an example usage of these locale options. The example bases the default paper size on the locale.
 
-```cpp
+```GPD
 *Feature: PaperSize
 {
 ...
@@ -54,7 +56,7 @@ At run time, Unidrv determines the system's default locale by calling [**GetSyst
 
 Here is another example, which selects a resource DLL based on the locale. The resource DLL can contain locale-specific resources, such as display strings.
 
-```cpp
+```GPD
 *switch: Locale
 {
     *case: English_United_States
@@ -81,6 +83,7 @@ The following algorithm retrieves the default system locale and then uses countr
 1. Use the [GetLocaleInfo](/previous-versions//ms776270(v=vs.85)) function to retrieve the default system locale. Use LOCALE_SYSTEM_DEFAULT for the first parameter, *Locale*, and LOCALE_ICOUNTRY for the second parameter, *LCType*.
 
 1. Use the default system locale obtained from **GetLocaleInfo** to determine metric or non-metric paper size.
+
     - Non-metric if default system locale is:
 
         - CTRY_UNITED_STATES, or

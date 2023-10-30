@@ -22,9 +22,9 @@ To determine which pool tag is associated with the leak, it is usually easiest t
 
 Alternatively, you can use the kernel debugger to look for tags associated with large pool allocations. To do so, follow this procedure:
 
-1.  Reload all modules by using the [**.reload (Reload Module)**](-reload--reload-module-.md) command.
+1.  Reload all modules by using the [**.reload (Reload Module)**](../debuggercmds/-reload--reload-module-.md) command.
 
-2.  Use the [**!poolused**](-poolused.md) extension. Include the flag "4" to sort the output by paged memory use:
+2.  Use the [**!poolused**](../debuggercmds/-poolused.md) extension. Include the flag "4" to sort the output by paged memory use:
     ```dbgcmd
     kd> !poolused 4 
     Sorting by Paged Pool Consumed
@@ -45,20 +45,20 @@ Alternatively, you can use the kernel debugger to look for tags associated with 
 
 After you have determined the pool tag associated with the leak, follow this procedure to locate the leak itself:
 
-1.  Use the [**ed (Enter Values)**](e--ea--eb--ed--ed--ef--ep--eq--eu--ew--eza--ezu--enter-values-.md) command to modify the value of the global system variable **PoolHitTag**. This global variable causes the debugger to break whenever a pool tag matching its value is used.
+1.  Use the [**ed (Enter Values)**](../debuggercmds/e--ea--eb--ed--ed--ef--ep--eq--eu--ew--eza--ezu--enter-values-.md) command to modify the value of the global system variable **PoolHitTag**. This global variable causes the debugger to break whenever a pool tag matching its value is used.
 
 2.  Set **PoolHitTag** equal to the tag that you suspect to be the source of the memory leak. The module name "nt" should be specified for faster symbol resolution. The tag value must be entered in little-endian format (that is, backward). Because pool tags are always four characters, this tag is actually A-b-c-space, not merely A-b-c. So use the following command:
     ```dbgcmd
     kd> ed nt!poolhittag ' cbA' 
     ```
 
-3.  To verify the current value of **PoolHitTag**, use the [**db (Display Memory)**](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) command:
+3.  To verify the current value of **PoolHitTag**, use the [**db (Display Memory)**](../debuggercmds/d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) command:
     ```dbgcmd
     kd> db nt!poolhittag L4 
     820f2ba4  41 62 63 20           Abc  
     ```
 
-4.  The debugger will break every time that pool is allocated or freed with the tag **Abc**. Each time the debugger breaks on one of these allocations or free operations, use the [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) debugger command to view the stack trace.
+4.  The debugger will break every time that pool is allocated or freed with the tag **Abc**. Each time the debugger breaks on one of these allocations or free operations, use the [**kb (Display Stack Backtrace)**](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) debugger command to view the stack trace.
 
 Using this procedure, you can determine which code resident in memory is overallocating pool with the tag **Abc**.
 
@@ -70,7 +70,7 @@ kd> ed nt!poolhittag 0
 
 If there are several different places where memory with this tag is being allocated and these are in an application or driver that you have written, you can alter your source code to use unique tags for each of these allocations.
 
-If you cannot recompile the program but you want to determine which one of several possible locations in the code is causing the leak, you can unassemble the code at each location and use the debugger to edit this code resident in memory so that each instance uses a distinct (and previously unused) pool tag. Then allow the system to run for several minutes or more. After some time has passed, break in again with the debugger and use the [**!poolfind**](-poolfind.md) extension to find all pool allocations associated with each of the new tags.
+If you cannot recompile the program but you want to determine which one of several possible locations in the code is causing the leak, you can unassemble the code at each location and use the debugger to edit this code resident in memory so that each instance uses a distinct (and previously unused) pool tag. Then allow the system to run for several minutes or more. After some time has passed, break in again with the debugger and use the [**!poolfind**](../debuggercmds/-poolfind.md) extension to find all pool allocations associated with each of the new tags.
 
  
 

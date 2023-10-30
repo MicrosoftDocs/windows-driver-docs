@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x12F VHD_BOOT_INITIALIZATION_FAILED", "VHD_BOOT_INITIALIZ
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - VHD_BOOT_INITIALIZATION_FAILED
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The VHD\_BOOT\_INITIALIZATION\_FAILED bug check has a value of 0x0000012F. This indicates that an initialization failure occurred while attempting to boot from a VHD.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## VHD\_BOOT\_INITIALIZATION\_FAILED Parameters

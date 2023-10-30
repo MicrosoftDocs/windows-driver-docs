@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["PcIrqlDDIs rule (audio)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - PcIrqlDDIs
 api_type:

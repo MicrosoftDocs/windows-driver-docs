@@ -4,6 +4,7 @@ description: The KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ROI\_CONFIGCAPS property I
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_ROI_CONFIGCAPS Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_EXTENDED_ROI_CONFIGCAPS
 api_location:

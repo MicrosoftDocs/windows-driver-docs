@@ -1,7 +1,7 @@
 ---
 title: HTTPS
 description: HTTPS
-ms.date: 05/07/2018
+ms.date: 03/23/2023
 ---
 
 # HTTPS

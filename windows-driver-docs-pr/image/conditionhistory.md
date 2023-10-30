@@ -4,15 +4,15 @@ description: The optional ConditionHistory element is a collection of ConditionH
 keywords: ["ConditionHistory element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ConditionHistory
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 03/29/2023
 ---
 
 # ConditionHistory element
-
 
 The optional **ConditionHistory** element is a collection of [**ConditionHistoryEntry**](conditionhistoryentry.md) elements that provide details about recent conditions and errors on the scanner.
 
@@ -30,45 +30,15 @@ There are no attributes.
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="conditionhistoryentry.md" data-raw-source="[&lt;strong&gt;ConditionHistoryEntry&lt;/strong&gt;](conditionhistoryentry.md)"><strong>ConditionHistoryEntry</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**ConditionHistoryEntry**](conditionhistoryentry.md) |
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="scannerstatus.md" data-raw-source="[&lt;strong&gt;ScannerStatus&lt;/strong&gt;](scannerstatus.md)"><strong>ScannerStatus</strong></a></p></td>
-<td><p></p>
-<p>ScannerStatus</p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**ScannerStatus**](scannerstatus.md) |
 
 ## Remarks
 
@@ -78,19 +48,8 @@ The conditions vary in severity from informational to critical.
 
 ## See also
 
-
 [**ConditionHistoryEntry**](conditionhistoryentry.md)
 
 [**GetScannerElementsRequest**](getscannerelementsrequest.md)
 
 [**ScannerStatus**](scannerstatus.md)
-
- 
-
- 
-
-
-
-
-
-

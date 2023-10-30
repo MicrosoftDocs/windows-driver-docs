@@ -7,11 +7,12 @@ MSHAttr:
 keywords: ["BidiType method Print Devices", "BidiType method Print Devices , IPrinterBidiSchemaElement interface", "IPrinterBidiSchemaElement interface Print Devices , BidiType method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IPrinterBidiSchemaElement.BidiType
 api_type:
 - COM
-ms.date: 04/20/2017
+ms.date: 06/26/2023
 ---
 
 # IPrinterBidiSchemaElement::BidiType method
@@ -37,22 +38,9 @@ This method returns an **HRESULT** value.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Target platform</p></td>
-<td>Desktop</td>
-</tr>
-<tr class="even">
-<td><p>Version</p></td>
-<td><p>Windows 8 and later</p></td>
-</tr>
-</tbody>
-</table>
+**Target platform:** Desktop
+
+**Version:** Windows 8 and later
 
 ## See also
 

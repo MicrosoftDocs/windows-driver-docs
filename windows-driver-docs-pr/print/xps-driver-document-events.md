@@ -6,10 +6,12 @@ keywords:
 - events WDK XPSDrv
 - notifications WDK XPSDrv
 - DrvDocumentEvent
-ms.date: 09/16/2022
+ms.date: 01/31/2023
 ---
 
 # XPS driver document events
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The Microsoft Windows Presentation Foundation (WPF) print support sends XPSDrv print drivers notification events during document spooling similarly to how GDI print support sends notifications to GDI print drivers. The WPF print support also uses the same **DrvDocumentEvent** DDI function that GDI print support uses, but new events have been defined to support XPS Document processing events. The GDI print support will continue to issue **DrvDocumentEvent** event handlers to GDI-based print drivers and XPSDrv print drivers for Microsoft Win32 application printing.
 

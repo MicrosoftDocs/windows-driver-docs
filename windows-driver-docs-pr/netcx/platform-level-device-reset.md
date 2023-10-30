@@ -31,7 +31,7 @@ Client drivers need to initialize and register the [**NET_DEVICE_RESET_CAPABILIT
 
 [**NET_DEVICE_RESET_CAPABILITIES**](/windows-hardware/drivers/ddi/netdevice/ns-netdevice-net_device_reset_capabilities) contains:
 
-* A unique GUID. The IHV specifies this GUID and uses it later to identify and retrieve the reset diagnostics from a memory dump. For example, the [.enumtag](../debugger/-enumtag--enumerate-secondary-callback-data-.md) command can be used to retrieve the diagnostics.
+* A unique GUID. The IHV specifies this GUID and uses it later to identify and retrieve the reset diagnostics from a memory dump. For example, the [.enumtag](../debuggercmds/-enumtag--enumerate-secondary-callback-data-.md) command can be used to retrieve the diagnostics.
 
 * An [*EVT_NET_DEVICE_COLLECT_RESET_DIAGNOSTICS*](/windows-hardware/drivers/ddi/netdevice/nc-netdevice-evt_net_device_collect_reset_diagnostics) event callback function. NetAdapterCx invokes this callback to collect diagnostics. If the client driver provides an *EVT_NET_DEVICE_COLLECT_RESET_DIAGNOSTICS* callback, NetAdapterCx invokes it on the client driver using a *dedicated* thread.
 
@@ -110,4 +110,4 @@ When the OS or the client driver triggers PLDR, the following sequence occurs:
 
 The following diagram illustrates the NetAdapterCx reset and recover sequence:
 
-![Illustration of the NetAdapterCx reset and recover sequence outlined above.](images/pldr_flowchart.png)
+:::image type="content" source="images/pldr_flowchart.png" alt-text="Flowchart illustrating the NetAdapterCx reset and recover sequence.":::

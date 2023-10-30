@@ -5,6 +5,7 @@ ms.date: 04/23/2019
 keywords: ["BCDEdit /dbgsettings Driver Development Tools"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - BCDEdit /dbgsettings
 api_type:

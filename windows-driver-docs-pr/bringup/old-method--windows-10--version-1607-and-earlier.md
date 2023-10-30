@@ -1,7 +1,7 @@
 ---
 title: Old method - Windows 10, version 1607 and earlier
 description: Provides information about the old method upgrade scenario (Windows 7 to Windows 10) - Windows 10, version 1607 and earlier.
-ms.date: 08/19/2021
+ms.date: 03/23/2023
 ---
 
 # Old method - Windows 10, version 1607 and earlier
@@ -14,8 +14,7 @@ This process may look something like this (more details below):
 
 1. Backup ALL data from the entire primary boot disk (that you plan on saving).
 
-    > [!NOTE]
-    > Creating an image or having OEM recovery media is recommended.
+    Creating an image or having OEM recovery media is recommended.
 
 1. Create a bootable x64 WinPE USB flash drive (UFD) or CD/DVD.
 
@@ -25,14 +24,13 @@ This process may look something like this (more details below):
 
 1. Use Diskpart.exe to wipe clean primary boot disk.
 
-    > [!NOTE]
-    > If more than one disk is present, verify that disk 0 is the primary boot device before cleaning the disk, as this process will wipe all data on the disk.
+    If more than one disk is present, verify that disk 0 is the primary boot device before cleaning the disk, as this process will wipe all data on the disk.
 
 1. There are several options at this point, and the IT Person may need to contact System OEM for specific instructions/configuration options.
 
-    1.  Insert clean installation media and run setup.exe. There is a possibility that the installation process will detect CSM and re-install in Legacy boot/BIOS mode.
+    1. Insert clean installation media and run setup.exe. There is a possibility that the installation process will detect CSM and re-install in Legacy boot/BIOS mode.
 
-    1.  From step 5, still within Diskpart.exe with primary boot disk selected, run "Convert GPT"
+    1. From step 5, still within Diskpart.exe with primary boot disk selected, run "Convert GPT"
 
       - Insert the installation media, reboot, and go through setup. If you encounter an error message with similar text to "cannot install to selected device" or "disk format not supported" then boot device is detecting CSM and attempting to boot to Legacy boot MBR method.
 
@@ -42,8 +40,7 @@ This process may look something like this (more details below):
 
 1. Once Windows 10 is installed and patched, test with disabling CSM, and work with the manufacturer to enable security options available on this system.
 
-    > [!NOTE]
-    > In some scenarios, firmware has UEFI-specific boot options. For example, select a) boot option or b) UEFI boot option.
+    In some scenarios, firmware has UEFI-specific boot options. For example, select (a) boot option or (b) UEFI boot option.
 
 ## Related resources
 

@@ -4,6 +4,7 @@ description: The GetFCPStatistics WMI method returns FCP traffic statistics for 
 keywords: ["GetFCPStatistics function Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - GetFCPStatistics
 api_location:

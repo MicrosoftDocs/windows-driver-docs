@@ -4,6 +4,7 @@ description: A KSEVENT_CLOCK_POSITION_MARK event occurs when a certain time on a
 keywords: ["KSEVENT_CLOCK_POSITION_MARK Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSEVENT_CLOCK_POSITION_MARK
 api_type:

@@ -4,7 +4,7 @@ description: WHEA Management Operations
 keywords:
 - WHEA WDK , management operations
 - Windows Hardware Error Architecture WDK , management operations
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # WHEA Management Operations

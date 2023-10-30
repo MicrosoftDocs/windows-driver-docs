@@ -4,6 +4,7 @@ description: This property gets or sets the thumbnail capability for the camera.
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_PHOTOTHUMBNAIL Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_EXTENDED_PHOTOTHUMBNAIL
 api_location:

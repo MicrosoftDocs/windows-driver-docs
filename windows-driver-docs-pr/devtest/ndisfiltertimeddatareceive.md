@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["NdisFilterTimedDataReceive rule (ndis)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - NdisFilterTimedDataReceive
 api_type:
@@ -16,7 +17,7 @@ api_type:
 
 The **NdisFilterTimedDataReceive** rule verifies that an NDIS filter driver completes a receive request by the [*FilterReceiveNetBufferLists*](/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_receive_net_buffer_lists) function before timing out.
 
-You can use a kernel debugger to help identify the cause of the problem. Check RULE\_STATE for PendingNbl, which points to the oldest pending [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list). Use the [**!ndiskd.nbl**](../debugger/-ndiskd-nbl.md) debugger extension. For information about using the debugger, see [Windows Debugging](../debugger/index.md).
+You can use a kernel debugger to help identify the cause of the problem. Check RULE\_STATE for PendingNbl, which points to the oldest pending [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list). Use the [**!ndiskd.nbl**](../debuggercmds/-ndiskd-nbl.md) debugger extension. For information about using the debugger, see [Windows Debugging](../debugger/index.md).
 
 **Driver model: NDIS**
 

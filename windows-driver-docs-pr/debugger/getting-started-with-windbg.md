@@ -1,81 +1,84 @@
 ---
-title: Getting Started with WinDbg (User-Mode)
-description: WinDbg is a kernel-mode and user-mode debugger that is included in Debugging Tools for Windows. Here we provide hands-on exercises that will help you get started using WinDbg as a user-mode debugger.
-ms.date: 04/01/2021
+title: Get started with WinDbg (user mode)
+description: Get started using WinDbg in Debugging Tools for Windows with hands-on, user-mode debugger exercises.
+ms.date: 03/08/2023
 ---
 
-# Getting Started with WinDbg (User-Mode)
+# Get started with WinDbg (user mode)
 
-WinDbg is a kernel-mode and user-mode debugger that is included in Debugging Tools for Windows. Here we provide hands-on exercises that will help you get started using WinDbg as a user-mode debugger.
+WinDbg is a kernel-mode and user-mode debugger that's included in Debugging Tools for Windows. The following hands-on exercises can help you get started using WinDbg as a user-mode debugger.
 
-For information about how to get Debugging Tools for Windows, see [Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)](index.md).
+For information about how to get Debugging Tools for Windows, see [Download and install the WinDbg Windows debugger](index.md).
 
-After you have installed the debugging tools, locate the installation directories for 64-bit (x64) and 32-bit (x86) versions of the tools. For example:
+After you install the debugging tools, find the installation directories for the 64-bit (x64) and 32-bit (x86) versions of the tools. For example:
 
 - C:\\Program Files (x86)\\Windows Kits\\10\\Debuggers\\x64
 - C:\\Program Files (x86)\\Windows Kits\\10\\Debuggers\\x86
 
-## Launch Notepad and attach WinDbg
+## Open Notepad and attach WinDbg
 
-1. Navigate to your installation directory, and open WinDbg.exe.
+1. Go to your installation directory, and open WinDbg.exe.
 
-2. On the **File** menu, choose **Open Executable**. In the Open Executable dialog box, navigate to the folder that contains notepad.exe (typically, C:\\Windows\\System32). For **File name**, enter notepad.exe. Select **Open**.
+2. On the **File** menu, select **Open Executable**. In the Open Executable dialog, go to the folder that contains notepad.exe. (The notepad.exe file usually is in C:\\Windows\\System32.) For **File name**, enter **notepad.exe**. Select **Open**.
 
-    ![screen shot of windbg after starting notepad.](images/windbggetstart01.png)
+    ![Screenshot that shows WinDbg when Notepad is open.](images/windbggetstart01.png)
 
-3. Near the bottom of the WinDbg window, in the command line, enter this command:
+3. In the command line near the bottom of the WinDbg window, enter this command:
 
-    [.sympath srv\*](-sympath--set-symbol-path-.md)
+    [.sympath srv\*](../debuggercmds/-sympath--set-symbol-path-.md)  
 
-    The output is similar to this:
+    The output is similar to this example:
 
     ```dbgcmd
     Symbol search path is: srv*
     Expanded Symbol search path is: cache*;SRV
     ```
 
-    The symbol search path tells WinDbg where to look for symbol (PDB) files. The debugger needs symbol files to obtain information about code modules (function names, variable names, and the like).
+    The symbol search path tells WinDbg where to look for symbol (PDB) files. The debugger needs symbol files to get information about code modules, like for function names and variable names.
 
-    Enter this command, which tells WinDbg to do its initial finding and loading of symbol files:
+    Then, enter this command:
 
-    [.reload](-reload--reload-module-.md)
+    [.reload](../debuggercmds/-reload--reload-module-.md)
 
-4. To see the symbols for the Notepad.exe module, enter this command:
+    The `.reload` command tells WinDbg to do its initial search to find and load symbol files.
 
-    [x notepad!*](x--examine-symbols-.md)
+4. To see the symbols for the notepad.exe module, enter this command:
 
-    **Note**  If you don't see any output, enter [**.reload**](-reload--reload-module-.md) again.
+    [x notepad!*](../debuggercmds/x--examine-symbols-.md)
 
-    To see symbols in the Notepad.exe module that contain main, use the [examine symbols](x--examine-symbols-.md) command like this to list modules that match the mask:
+    > [!NOTE]
+    > If no output appears, enter `.reload` again.
+
+    To see symbols in the notepad.exe module that contain `main`, use the [examine symbols](../debuggercmds/x--examine-symbols-.md) command to list modules that match the mask:
 
     `x notepad!wWin*`
 
-    The output is similar to this:
+    The output is similar to this example:
 
     ```dbgcmd
     00007ff6`6e76b0a0 notepad!wWinMain (wWinMain)
     00007ff6`6e783db0 notepad!wWinMainCRTStartup (wWinMainCRTStartup)
     ```
 
-5. To put a breakpoint at notepad!wWinMain, enter this command:
+5. To put a breakpoint at `notepad!wWinMain`, enter this command:
 
-    [bu notepad!wWinMain](bp--bu--bm--set-breakpoint-.md)
+    [bu notepad!wWinMain](../debuggercmds/bp--bu--bm--set-breakpoint-.md)
 
     To verify that your breakpoint was set, enter this command:
 
-    [bl](bl--breakpoint-list-.md)
+    [bl](../debuggercmds/bl--breakpoint-list-.md)
 
-    The output is similar to this:
+    The output is similar to this example:
 
     ```dbgcmd
     0 e Disable Clear  00007ff6`6e76b0a0     0001 (0001)  0:**** notepad!wWinMain
     ```
 
-6. To start Notepad running, enter this command:
+6. To start the Notepad process, enter this command:
 
-    [g](g--go-.md)
+    [g](../debuggercmds/g--go-.md)
 
-    Notepad runs until it comes to the **WinMain** function, and then breaks in to the debugger.
+    Notepad runs until it comes to the `WinMain` function, and then it breaks into the debugger.
 
     ```dbgcmd
     Breakpoint 0 hit
@@ -83,11 +86,11 @@ After you have installed the debugging tools, locate the installation directorie
     00007ff6`6e76b0a0 488bc4          mov     rax,rsp
     ```
 
-    To see a list of code modules that are loaded in the Notepad process, enter this command:
+    To see a list of code modules that are currently loaded in the Notepad process, enter this command:
 
-    [lm](lm--list-loaded-modules-.md)
+    [lm](../debuggercmds/lm--list-loaded-modules-.md)
 
-    The output is similar to this:
+    The output is similar to this example:
 
     ```dbgcmd
     0:000> lm
@@ -112,9 +115,9 @@ After you have installed the debugging tools, locate the installation directorie
 
     To see a stack trace, enter this command:
 
-    [k](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md)
+    [k](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md)
 
-    The output is similar to this:
+    The output is similar to this example:
 
     ```dbgcmd
     0:000> k
@@ -126,27 +129,27 @@ After you have installed the debugging tools, locate the installation directorie
 
 7. To start Notepad running again, enter this command:
 
-    [g](g--go-.md)
+    [g](../debuggercmds/g--go-.md)
 
-8. To break in to Notepad, choose **Break** from the **File** menu.
+8. To break into Notepad, on the **File** menu, select **Break**.
 
-9. To set and verify a breakpoint at **ZwWriteFile**, enter these commands:
+9. To set and verify a breakpoint at `ZwWriteFile`, enter these commands:
 
-    [bu ntdll!ZwWriteFile](bp--bu--bm--set-breakpoint-.md)
+    [bu ntdll!ZwWriteFile](../debuggercmds/bp--bu--bm--set-breakpoint-.md)
 
-    [bl](bl--breakpoint-list-.md)
+    [bl](../debuggercmds/bl--breakpoint-list-.md)
 
-10. Enter [g](g--go-.md) to start Notepad running again. In the Notepad window, enter some text and choose **Save** from the **File** menu. The running code breaks in when it comes to **ZwCreateFile**. Enter [k](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) to see the stack trace.
+10. To start Notepad running again, enter [g](../debuggercmds/g--go-.md). In the Notepad window, enter some text. On the **File** menu, select **Save**. The running code breaks in when it comes to `ZwCreateFile`. Enter the [k](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command to see the stack trace.
 
-    ![screen shot of stack trace in windbg.](images/windbggetstart02.png)
+    ![Screenshot that shows a stack trace in WinDbg.](images/windbggetstart02.png)
 
-    In the WinDbg window, just to the left of the command line, notice the processor and thread numbers. In this example the current processor number is 0, and the current thread number is 11. So we are looking at the stack trace for thread 11 (which happens to be running on processor 0).
+    In the WinDbg window, left of the command line, the processor and thread numbers are shown. In this example, the current processor number is 0, and the current thread number is 11 (`0:011>`). The window displays the stack trace for thread 11 running on processor 0.
 
 11. To see a list of all threads in the Notepad process, enter this command (the tilde):
 
-    [~](---thread-status-.md)
+    [~](../debuggercmds/---thread-status-.md)
 
-    The output is similar to this:
+    The output is similar to this example:
 
     ```dbgcmd
     0:011> ~
@@ -165,15 +168,15 @@ After you have installed the debugging tools, locate the installation directorie
        13  Id: 5500.4c34 Suspend: 1 Teb: 000000c8`262e2000 Unfrozen
     ```
 
-    In this example, there are 14 threads with indexes 0 through 13.
+    In this example, 14 threads have indexes 0 through 13.
 
 12. To look at the stack trace for thread 0, enter these commands:
 
-    [~0s](-s--set-current-thread-.md)
+    [~0s](../debuggercmds/-s--set-current-thread-.md)
 
-    [k](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md)
+    [k](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md)
 
-    The output is similar to this:
+    The output is similar to this example:
 
     ```dbgcmd
     0:011> ~0s
@@ -195,11 +198,11 @@ After you have installed the debugging tools, locate the installation directorie
 
 13. To quit debugging and detach from the Notepad process, enter this command:
 
-    [qd](qd--quit-and-detach-.md)
+    [qd](../debuggercmds/qd--quit-and-detach-.md)
 
-## Launch your own application and attach WinDbg
+## Open your own application and attach WinDbg
 
-Suppose you have written and built this small console application.
+For an example, assume that you've written and built this small console application:
 
 ```cpp
 ...
@@ -218,34 +221,37 @@ void main ()
 }
 ```
 
-For this exercise, we will assume that the built application (MyApp.exe) and the symbol file (MyApp.pdb) are in C:\\MyApp\\x64\\Debug. We will also assume that the application source code is in C:\\MyApp\\MyApp and that the target machine compiled MyApp.exe.
+For this exercise, assume that the built application (MyApp.exe) and the symbol file (MyApp.pdb) are in C:\\MyApp\\x64\\Debug. Also assume that the application source code is in C:\\MyApp\\MyApp and that the target machine compiled MyApp.exe.
 
 1. Open WinDbg.
 
-2. On the **File** menu, choose **Open Executable**. In the Open Executable dialog box, navigate to C:\\MyApp\\x64\\Debug. For **File name**, enter MyApp.exe. Select **Open**.
+2. On the **File** menu, select **Open Executable**. In the Open Executable dialog, go to C:\\MyApp\\x64\\Debug. For **File name**, enter **MyApp.exe**. Select **Open**.
+
 3. Enter these commands:
 
-    [.symfix](-symfix--set-symbol-store-path-.md)
+    [.symfix](../debuggercmds/-symfix--set-symbol-store-path-.md)
 
-    [.sympath](-sympath--set-symbol-path-.md)+ C:\\MyApp\\x64\\Debug
+    [.sympath](../debuggercmds/-sympath--set-symbol-path-.md)+ C:\\MyApp\\x64\\Debug
 
-    Now WinDbg knows where to find symbols and source code for your application. In this case, the source code location doesn't need to be set with [.srcpath](-srcpath---lsrcpath--set-source-path-.md) because the symbols have fully qualified paths to the source files.
+    The commands tell WinDbg where to find symbols and source code for your application. In this case, the source code location doesn't need to be set by using [.srcpath](../debuggercmds/-srcpath---lsrcpath--set-source-path-.md) because the symbols have fully qualified paths to the source files.
 
 4. Enter these commands:
 
-    [.reload](-reload--reload-module-.md)
+    [.reload](../debuggercmds/-reload--reload-module-.md)
 
-    [bu MyApp!main](bp--bu--bm--set-breakpoint-.md)
+    [bu MyApp!main](../debuggercmds/bp--bu--bm--set-breakpoint-.md)
 
-    [g](g--go-.md)
+    [g](../debuggercmds/g--go-.md)
 
-    Your application breaks in to the debugger when it comes to its **main** function.
+    Your application breaks into the debugger when it comes to its `main` function.
 
     WinDbg displays your source code and the Command window.
 
-    ![screen shot of source code in windbg.](images/windbggetstart03.png)
+    ![Screenshot that shows source code in WinDbg.](images/windbggetstart03.png)
 
-5. On the **Debug** menu, choose **Step Into** (or press **F11**). Continue stepping until you have stepped into **MyFunction**. When you step into the line `y = x / p2`, your application will crash and break in to the debugger. The output is similar to this:
+5. On the **Debug** menu, select **Step Into** (or select F11). Continue stepping until you step into `MyFunction`. When you step into the line `y = x / p2`, your application crashes and breaks into the debugger.
+
+    The output is similar to this example:
 
     ```dbgcmd
     (1450.1424): Integer divide-by-zero - code c0000094 (first chance)
@@ -257,9 +263,9 @@ For this exercise, we will assume that the built application (MyApp.exe) and the
 
 6. Enter this command:
 
-    [!analyze -v](-analyze.md)
+    [!analyze -v](../debuggercmds/-analyze.md)
 
-    WinDbg displays an analysis of the problem (division by 0 in this case).
+    WinDbg displays an analysis of the problem (in this case, division by 0).
 
     ```dbgcmd
     FAULTING_IP:
@@ -308,32 +314,32 @@ For this exercise, we will assume that the built application (MyApp.exe) and the
 
 ## Summary of commands
 
-- **Contents** command on the **Help** menu
-- [.sympath (Set Symbol Path)](-sympath--set-symbol-path-.md)
-- [.reload (Reload Module)](-reload--reload-module-.md)
-- [x (Examine Symbols)](x--examine-symbols-.md)
-- [g (Go)](g--go-.md)
-- **Break** command on the **Debug** menu
-- [lm (List Loaded Modules)](lm--list-loaded-modules-.md)
-- [k (Display Stack Backtrace)](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md)
-- [bu (Set Breakpoint)](bp--bu--bm--set-breakpoint-.md)
-- [bl (Breakpoint List)](bl--breakpoint-list-.md)
-- [~ (Thread Status)](---thread-status-.md)
-- [~s (Set Current Thread)](-s--set-current-thread-.md)
-- [.sympath+ (Set Symbol Path) append to existing symbol path](-sympath--set-symbol-path-.md)
-- [.srcpath (Set Source Path)](-srcpath---lsrcpath--set-source-path-.md)
-- **Step Into** command on the **Debug** menu (**F11**)
-- [!analyze -v](-analyze.md)
-- [qd (Quit and Detach)](qd--quit-and-detach-.md)
+- `Contents` command on the `Help` menu
+- [.sympath (Set Symbol Path)](../debuggercmds/-sympath--set-symbol-path-.md)
+- [.reload (Reload Module)](../debuggercmds/-reload--reload-module-.md)
+- [x (Examine Symbols)](../debuggercmds/x--examine-symbols-.md)
+- [g (Go)](../debuggercmds/g--go-.md)
+- `Break` command on the `Debug` menu
+- [lm (List Loaded Modules)](../debuggercmds/lm--list-loaded-modules-.md)
+- [k (Display Stack Backtrace)](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md)
+- [bu (Set Breakpoint)](../debuggercmds/bp--bu--bm--set-breakpoint-.md)
+- [bl (Breakpoint List)](../debuggercmds/bl--breakpoint-list-.md)
+- [~ (Thread Status)](../debuggercmds/---thread-status-.md)
+- [~s (Set Current Thread)](../debuggercmds/-s--set-current-thread-.md)
+- [.sympath+ (Set Symbol Path) append to existing symbol path](../debuggercmds/-sympath--set-symbol-path-.md)
+- [.srcpath (Set Source Path)](../debuggercmds/-srcpath---lsrcpath--set-source-path-.md)
+- `Step Into` command on the `Debug` menu (F11)
+- [!analyze -v](../debuggercmds/-analyze.md)
+- [qd (Quit and Detach)](../debuggercmds/qd--quit-and-detach-.md)
 
 ## See also
 
-[Getting Started with WinDbg (Kernel-Mode)](getting-started-with-windbg--kernel-mode-.md)
+[Get started with WinDbg (kernel mode)](getting-started-with-windbg--kernel-mode-.md)
 
-[Debugger Operation](debugger-operation-win8.md)
+[Debugger operation](debugger-operation-win8.md)
 
-[Debugging Techniques](debugging-techniques.md)
+[Debugging techniques](debugging-techniques.md)
 
-[Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)](./index.md)
+[Download and install the WinDbg Windows debugger](./index.md)
 
-[Debugging Using WinDbg Preview](debugging-using-windbg-preview.md)
+[WinDbg Features](debugging-using-windbg-preview.md)

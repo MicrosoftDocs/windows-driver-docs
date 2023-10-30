@@ -1,8 +1,10 @@
 ---
 title: Legacy Audio Device Messages
 description: Legacy Audio Device Messages
-ms.date: 11/28/2017
+ms.date: 03/06/2023
+ms.topic: reference
 ---
+
 
 # Legacy Audio Device Messages
 

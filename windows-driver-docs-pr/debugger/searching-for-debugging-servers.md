@@ -5,6 +5,7 @@ keywords: ["Searching for Debugging Servers Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Searching for Debugging Servers
 api_type:
@@ -29,13 +30,10 @@ Debugger -QR \\Server
 
 *Debugger* can be either KD or CDB -- the display will be the same in either case. The two backslashes (**\\\\**) preceding *Server* are optional.
 
-In WinDbg, you can use the **Connect to Remote Debugger Session** dialog box to browse a list of available servers. See [File | Connect to Remote Session](file---connect-to-remote-session.md) for details.
+In WinDbg, you can use the **Connect to Remote Debugger Session** dialog box to browse a list of available servers. 
 
-**Note**  For a debugging server to be discoverable, it must be activated with elevated privileges. For more information, see [Activating a Debugging Server](activating-a-debugging-server.md).
+For a debugging server to be discoverable, it must be activated with elevated privileges. For more information, see [Activating a Debugging Server](activating-a-debugging-server.md).
 
- 
-
-**Note**  
 If you are not logged on to the client computer with an account that has access to the server computer, you might need to provide a user name and password. On the client computer, in a Command Prompt window, enter the following command.
 
 **net use \\\\**<em>Server</em>**\\ipc$ /user:**<em>UserName</em>

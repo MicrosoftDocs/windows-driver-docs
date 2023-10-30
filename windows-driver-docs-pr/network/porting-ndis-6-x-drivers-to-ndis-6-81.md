@@ -1,7 +1,7 @@
 ---
 title: Porting NDIS 6.x drivers to NDIS 6.81
 description: NDIS 6.81 is substantially the same as NDIS 6.80. For detailed information about new features for NDIS 6.81, see Introduction to NDIS 6.81.
-ms.date: 05/14/2018
+ms.date: 03/02/2023
 ---
 
 # Porting NDIS 6.x drivers to NDIS 6.81

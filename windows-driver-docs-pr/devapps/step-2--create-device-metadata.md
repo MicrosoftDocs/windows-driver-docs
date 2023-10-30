@@ -1,7 +1,7 @@
 ---
 title: Step 2 Create device metadata for your UWP device app
 description: This topic describes how to use the Device Metadata Authoring Wizard to create new device metadata that associates your UWP device app with a device.
-ms.date: 08/12/2021
+ms.date: 03/17/2023
 ---
 
 # Step 2: Create device metadata for your UWP device app
@@ -12,8 +12,7 @@ This topic describes how to use the **Device Metadata Authoring Wizard** to crea
 
 A UWP device app is a special kind of UWP app that device manufacturers create to serve as a companion to their internal or peripheral device. By using device metadata, device apps can run privileged operations and automatically install when a device is plugged in. For more info about UWP device apps, see [Meet UWP device apps](meet-uwp-device-apps.md).
 
-> [!NOTE]
-> This topic is part of a step-by-step series. See [Build a UWP device app step-by-step](build-a-uwp-device-app-step-by-step.md) for the introduction.
+This topic is part of a step-by-step series. See [Build a UWP device app step-by-step](build-a-uwp-device-app-step-by-step.md) for the introduction.
 
 ## Before you begin
 
@@ -43,7 +42,7 @@ The **Device Metadata Authoring Wizard** is used to create new device metadata.
 
    - If you want to enable [automatic installation](auto-install-for-uwp-device-apps.md) for your device app, or extend the [camera](uwp-device-apps-for-webcams.md) or [printer](uwp-device-apps-for-printers.md) experience (which requires automatic installation), enter the Microsoft Store app info in the **UWP device app** box. Click on **Import UWP app manifest file** to automatically enter the **Package name**, **Publisher name**, and **UWP app ID**.
 
-     > [!Warning]
+     > [!WARNING]
      > It's important to consider that the automatic installation feature does not provide a notification to the user when the app is installed. Some users may find this experience confusing and frustrating, and give your app a bad rating.
 
    - If your app is registering for printer notifications, fill out the **Notification handlers** box. In **Event ID**, enter the name of the print event handler. In **Event Asset**, enter the name of the file where that code resides.

@@ -1,24 +1,24 @@
 ---
-title: Iasphelp get\_AspPage method
+title: Iasphelp get_AspPage method
 description: The AspPage property enables an ASP Web page to obtain the directory path to the initial ASP file used for describing printer-specific details.
 MS-HAID:
-- 'webfnc\_6b636ee3-bc4f-4fbd-8ad9-87d6abcf3b35.xml'
-- 'print.iasphelp\_asppage'
+- 'webfnc_6b636ee3-bc4f-4fbd-8ad9-87d6abcf3b35.xml'
+- 'print.iasphelp_asppage'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 keywords: ["get_AspPage method Print Devices", "get_AspPage method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_AspPage method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Iasphelp.get_AspPage
 api_type:
 - COM
-ms.date: 04/20/2017
+ms.date: 06/23/2023
 ---
 
-# Iasphelp::get\_AspPage method
-
+# Iasphelp::get_AspPage method
 
 The **AspPage** property enables an ASP Web page to obtain the directory path to the initial ASP file used for describing printer-specific details.
 
@@ -43,36 +43,12 @@ Caller-supplied pointer to a location to receive a size-prefixed Unicode string 
 
 This method can return one of these values.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Return code</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>S_OK</strong></td>
-<td><p>The operation succeeded.</p></td>
-</tr>
-<tr class="even">
-<td><strong>E_HANDLE</strong></td>
-<td><p>The <a href="iasphelp-open.md" data-raw-source="[&lt;strong&gt;Iasphelp::Open&lt;/strong&gt;](iasphelp-open.md)"><strong>Iasphelp::Open</strong></a> method has not been called.</p></td>
-</tr>
-<tr class="odd">
-<td><strong>E_NOTIMPL</strong></td>
-<td><p>An ASP file is not available.</p></td>
-</tr>
-<tr class="even">
-<td><strong>E_POINTER</strong></td>
-<td><p>Invalid <em>pVal</em> pointer.</p></td>
-</tr>
-</tbody>
-</table>
+| Return code | Description |
+|--|--|
+| **S_OK** | The operation succeeded. |
+| **E_HANDLE** | [**Iasphelp::Open**](iasphelp-open.md) method has not been called. |
+| **E_NOTIMPL** | An ASP file is not available. |
+| **E_POINTER** | Invalid *pVal* pointer. |
 
 ## VBScript Example
 
@@ -90,18 +66,7 @@ The [**Iasphelp::Open**](iasphelp-open.md) method must be called before the **Ia
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Target platform</p></td>
-<td>Desktop</td>
-</tr>
-</tbody>
-</table>
+**Target platform:** Desktop
 
 ## See also
 

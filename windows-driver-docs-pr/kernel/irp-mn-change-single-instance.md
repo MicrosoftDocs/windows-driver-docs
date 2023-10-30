@@ -2,6 +2,7 @@
 title: IRP_MN_CHANGE_SINGLE_INSTANCE
 description: Learn about the 'IRP_MN_CHANGE_SINGLE_INSTANCE'. All of the drivers that support WMI must handle this IRP.
 ms.date: 08/12/2017
+ms.topic: reference
 keywords:
  - IRP_MN_CHANGE_SINGLE_INSTANCE Kernel-Mode Driver Architecture
 ---

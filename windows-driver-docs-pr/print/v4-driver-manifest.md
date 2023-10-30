@@ -1,10 +1,12 @@
 ---
 title: V4 Driver Manifest
 description: The v4 print driver manifest contains printer-specific setup directives and is used in conjunction with an INF file.
-ms.date: 08/30/2021
+ms.date: 01/25/2023
 ---
 
 # V4 Driver Manifest
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The v4 print driver manifest is a text file that contains all the printer-specific setup directives. A v4 print driver manifest is used in conjunction with a v4 print driver INF file, as part of the set up for a printer-specific v4 print driver.
 

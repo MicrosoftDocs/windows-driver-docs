@@ -7,7 +7,7 @@ keywords:
 - filtering WDK IEEE 1394 bus
 - cycle time synchronization WDK IEEE 1394 bus
 - buffers WDK IEEE 1394 bus
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Isochronous Synchronization Options for IEEE 1394 Devices

@@ -4,6 +4,7 @@ description: The DXGK\_ALLOCATIONGROUPDESCRIPTOR structure is reserved for syste
 keywords: ["_DXGK_ALLOCATIONGROUPDESCRIPTOR structure Display Devices", "DXGK_ALLOCATIONGROUPDESCRIPTOR structure Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DXGK_ALLOCATIONGROUPDESCRIPTOR
 api_location:

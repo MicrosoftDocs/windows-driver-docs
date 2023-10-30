@@ -1,7 +1,7 @@
 ---
 description: Using scope access with property commands (WpdServiceSampleDriver)
 title: Using scope access with property commands (WpdServiceSampleDriver)
-ms.date: 07/27/2020
+ms.date: 03/03/2023
 ---
 
 # Using scope access with property commands (WpdServiceSampleDriver)

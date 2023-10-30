@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x187 VIDEO_DWMINIT_TIMEOUT_FALLBACK_BDD", "VIDEO_DWMINIT_
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - VIDEO_DWMINIT_TIMEOUT_FALLBACK_BDD
 api_type:
@@ -18,7 +19,7 @@ The VIDEO\_DWMINIT\_TIMEOUT\_FALLBACK\_BDD live dump has a value of 0x00000187. 
 (This code can never be used for a real bug check; it is used to identify live dumps.)
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## VIDEO\_DWMINIT\_TIMEOUT\_FALLBACK\_BDD Parameters

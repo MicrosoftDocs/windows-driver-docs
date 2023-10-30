@@ -9,6 +9,7 @@ api_name:
 api_type:
 - NA
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # SP_INSTALLWIZARD_DATA

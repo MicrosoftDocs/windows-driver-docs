@@ -1,7 +1,8 @@
 ---
 title: WDI_TLV_FTM_REQUEST_TIMEOUT
+ms.topic: reference
 description: WDI_TLV_FTM_REQUEST_TIMEOUT is a TLV that contains the maximum time, in milliseconds, to complete a Fine Timing Measurement (FTM).
-ms.date: 02/15/2019
+ms.date: 03/02/2023
 keywords:
  - WDI_TLV_FTM_REQUEST_TIMEOUT Network Drivers Starting with Windows Vista
 ms.custom: 19H1

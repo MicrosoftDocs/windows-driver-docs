@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1DA HAL_BLOCKED_PROCESSOR_INTERNAL_ERROR", "HAL_BLOCKED_
 ms.date: 02/20/2020
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - HAL_BLOCKED_PROCESSOR_INTERNAL_ERROR
 api_type:
@@ -14,7 +15,7 @@ api_type:
 # Bug Check 0x1DA: HAL\_BLOCKED\_PROCESSOR\_INTERNAL\_ERROR
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 The HAL\_BLOCKED\_PROCESSOR\_INTERNAL\_ERROR has a value of 0x000001DA. It indicates that an internal error was detected in the blocked processor library.
 

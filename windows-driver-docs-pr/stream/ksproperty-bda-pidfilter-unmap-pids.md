@@ -4,6 +4,7 @@ description: Clients use KSPROPERTY_BDA_PIDFILTER_UNMAP_PIDS to inform the PID f
 keywords: ["KSPROPERTY_BDA_PIDFILTER_UNMAP_PIDS Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_BDA_PIDFILTER_UNMAP_PIDS
 api_location:

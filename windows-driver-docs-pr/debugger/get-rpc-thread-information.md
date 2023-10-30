@@ -28,7 +28,7 @@ Searching for thread info ...
 
 For details on the optional parameters, see [**DbgRpc Command-Line Options**](dbgrpc-command-line-options.md).
 
-For a similar example using the RPC debugger extensions, see [**!rpcexts.getthreadinfo**](-rpcexts-getthreadinfo.md).
+For a similar example using the RPC debugger extensions, see [**!rpcexts.getthreadinfo**](../debuggercmds/-rpcexts-getthreadinfo.md).
 
  
 

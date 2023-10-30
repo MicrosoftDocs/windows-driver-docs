@@ -9,7 +9,7 @@ keywords:
 - proxy interface providers WDK networking
 - NDIS proxy interface providers WDK
 - NDIS network interfaces
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # Mapping of NDIS Network Interfaces to NDIS OIDs

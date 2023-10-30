@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["PcPoRequestPowerIrp rule (audio)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - PcPoRequestPowerIrp
 api_type:

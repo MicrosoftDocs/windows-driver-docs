@@ -5,11 +5,12 @@ keywords:
 - INF Version Section Device and Driver Installation
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INF Version Section
 api_type:
 - NA
-ms.date: 06/08/2022
+ms.date: 04/10/2023
 ---
 
 # INF Version section
@@ -55,7 +56,7 @@ Generally, Windows does not differentiate among these signature values. One of t
 
 Some class installers put additional requirements on how the signature value must be specified. Such requirements, if they exist, are discussed in device type-specific sections of this Windows Driver Kit (WDK).
 
-An INF must supply OS-specific installation information by appending system-defined extensions to its _DDInstall_ sections, whether the _signature-name_ is **$Windows NT$**or **$Chicago$**. (See [Creating INF Files for Multiple Platforms and Operating Systems](creating-inf-files-for-multiple-platforms-and-operating-systems.md) for a discussion of these extensions.)
+An INF must supply OS-specific installation information by appending system-defined extensions to its _DDInstall_ sections, whether the _signature-name_ is **$Windows NT$** or **$Chicago$**. (See [Creating INF Files for Multiple Platforms and Operating Systems](creating-inf-files-for-multiple-platforms-and-operating-systems.md) for a discussion of these extensions.)
 
 **Class=**_class-name_  
 For any standard type of device, this specifies the name of the [device setup class](./overview-of-device-setup-classes.md) for the type of device that is installed by using this INF file. This name is usually one of the system-defined class names, such as **Net** or **Display,** which are listed in _Devguid.h_. For more information, see [System-Supplied Device Setup Classes](./system-defined-device-setup-classes-reserved-for-system-use.md).
@@ -165,6 +166,7 @@ ClassGUID={4D36E97B-E325-11CE-BFC1-08002BE10318}
 Provider=%INF_Provider%
 CatalogFile=example.cat
 DriverVer=01/29/2010,1.2.3.4
+PnpLockdown=1
 
 [SourceDisksNames]
 ;

@@ -4,6 +4,7 @@ description: DIF_DESTROYPRIVATEDATA
 keywords: ["DIF_DESTROYPRIVATEDATA Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DIF_DESTROYPRIVATEDATA
 api_location:

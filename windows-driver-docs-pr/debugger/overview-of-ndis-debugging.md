@@ -7,13 +7,13 @@ ms.date: 05/14/2020
 
 # Overview of NDIS Debugging
 
-The two primary tools for debugging a network driver are debug tracing and the Network Driver Interface Specification (NDIS) extensions. For more information on debug tracing, see [Enabling NDIS Debug Tracing](enabling-ndis-debug-tracing.md). For more information on the NDIS debugging extensions, see [NDIS Extensions](ndis-extensions--ndiskd-dll-.md), which provides a complete list of the extension commands found in the extension module Ndiskd.dll.
+The two primary tools for debugging a network driver are debug tracing and the Network Driver Interface Specification (NDIS) extensions. For more information on debug tracing, see [Enabling NDIS Debug Tracing](enabling-ndis-debug-tracing.md). For more information on the NDIS debugging extensions, see [NDIS Extensions](../debuggercmds/ndis-extensions--ndiskd-dll-.md), which provides a complete list of the extension commands found in the extension module Ndiskd.dll.
 
-Use the [ndiskd.netreport](-ndiskd-netreport.md) command to generate a visual report showing the current adapters and protocols.
+Use the [ndiskd.netreport](../debuggercmds/-ndiskd-netreport.md) command to generate a visual report showing the current adapters and protocols.
 
 ![ndiskd.netreport color coded output showing two columns that illustrate multiple adapters.](images/ndis-report.png)
 
-Then the [ndiskd.netadapter](-ndiskd-netadapter.md) kernel debugger command is a good place to start to investigate the current set of the drivers.
+Then the [ndiskd.netadapter](../debuggercmds/-ndiskd-netadapter.md) kernel debugger command is a good place to start to investigate the current set of the drivers.
 
 ```dbgconsole
 1: kd> !ndiskd.netadapter
@@ -22,7 +22,7 @@ Then the [ndiskd.netadapter](-ndiskd-netadapter.md) kernel debugger command is a
     ffffdf801418d650   ffffdf80140c71a0    Microsoft Kernel Debug Network Adapter
 ```
 
-An additional tool for debugging a network driver is the collection of regular debugging extensions, which are useful for obtaining debugging information. For example, entering [!stacks 2 ndis!](-stacks.md) displays all threads in the stack beginning with **ndis!**. This information can be useful for debugging hangs and stalls. For general information about getting started with the WinDbg, see [Getting started with Windows Debugging](getting-started-with-windows-debugging.md).
+An additional tool for debugging a network driver is the collection of regular debugging extensions, which are useful for obtaining debugging information. For example, entering [!stacks 2 ndis!](../debuggercmds/-stacks.md) displays all threads in the stack beginning with **ndis!**. This information can be useful for debugging hangs and stalls. For general information about getting started with the WinDbg, see [Getting started with Windows Debugging](getting-started-with-windows-debugging.md).
 
 ## Driver Verifier
 
@@ -42,4 +42,4 @@ A common NDIS misbehavior related bug check is [Bug Check 0xD1: DRIVER_IRQL_NOT_
 
 Another common issue is [Bug Check 0x9F: DRIVER_POWER_STATE_FAILURE](bug-check-0x9f--driver-power-state-failure.md).
 
-First step with all bug checks is to locate a good dump file, load it in the Windows debugger and use the [!analyze](-analyze.md) command. For more information, see [Using the !analyze Extension](using-the--analyze-extension.md).
+First step with all bug checks is to locate a good dump file, load it in the Windows debugger and use the [!analyze](../debuggercmds/-analyze.md) command. For more information, see [Using the !analyze Extension](using-the--analyze-extension.md).

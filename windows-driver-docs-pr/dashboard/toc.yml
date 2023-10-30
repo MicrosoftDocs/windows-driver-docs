@@ -43,9 +43,9 @@
     href: publishing-restrictions.md
   - name: "Publish a driver to Windows Update"
     href: publish-a-driver-to-windows-update.md
-  - name: "Understanding Windows Update Automatic and Optional Rules for Driver Distribution"
+  - name: "Understanding Windows Update rules for driver distribution"
     href: understanding-windows-update-automatic-and-optional-rules-for-driver-distribution.md
-  - name: "Validating driver updates for Modern Standby systems "
+  - name: "Validating driver updates for Modern Standby systems"
     href: validating-driver-updates-for-modern-standby-systems.md
   - name: "Share a driver with a partner"
     href: sharing-drivers-with-your-partners.md
@@ -76,12 +76,14 @@
     items:
     - name: "Overview of other policies"
       href: other-policies.md
-    - name: "Extension INF Targeting Rules"
-      href: extension-inf-targeting-rules.md
-    - name: "Establish HWID or CHID targeting relationship"
-      href: establish-relationship-for-chid-targeting.md
+    - name: "Deploying Audio Processing Objects"
+      href: deploying-audio-processing-objects.md
     - name: "Driver Release Cadence"
       href: driver-release-cadence.md
+    - name: "Establish HWID or CHID targeting relationship"
+      href: establish-relationship-for-chid-targeting.md
+    - name: "Extension INF Targeting Rules"
+      href: extension-inf-targeting-rules.md
   - name: "Microsoft driver measures"
     href: overview-of-microsoft-driver-measure-dictionary.md
   - name: "Driver measure attributes"

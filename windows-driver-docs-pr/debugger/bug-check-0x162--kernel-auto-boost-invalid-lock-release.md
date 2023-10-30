@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x162 KERNEL_AUTO_BOOST_INVALID_LOCK_RELEASE", "KERNEL_AUT
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KERNEL_AUTO_BOOST_INVALID_LOCK_RELEASE
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The KERNEL\_AUTO\_BOOST\_INVALID\_LOCK\_RELEASE bug check has a value of 0x00000162. This indicates that a lock tracked by AutoBoost was released by a thread that did not own the lock.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## KERNEL\_AUTO\_BOOST\_INVALID\_LOCK\_RELEASE Parameters

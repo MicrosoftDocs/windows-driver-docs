@@ -8,13 +8,11 @@ ms.date: 04/27/2021
 
 # Source Code Extended Access
 
-The source path command ([.srcpath, .lsrcpath (Set Source Path)](-srcpath---lsrcpath--set-source-path-.md)) has been updated to include a new tag – *DebugInfoD*, starting with version 1.2104.13002.0 of the WinDbg, released in April 2021.
+Starting WinDbg version 1.2104, the source path command ([.srcpath, .lsrcpath (Set Source Path)](../debuggercmds/-srcpath---lsrcpath--set-source-path-.md)) supports file retrieval from [DebugInfoD servers](https://sourceware.org/elfutils/Debuginfod.html) through the `DebugInfoD*` tag.
 
-The *DebugInfoD* tag can contain a single or multiple URLs separated with *. The listed URLs will be searched in the specified order for the source file, and if found, that file will be downloaded from that location.
+The `DebugInfoD*` tag can point to one or more DebugInfoD servers with each server URL formatted as `https://domain.com` and separated by `*`. The servers will be searched in the same order as listed in the source path and the files will be retrieved from the first matching URL.
 
-The *DebugInfoD* tag can be combined with srv* to create URL search priority and the source file will be downloaded from the first available location.
-
-Where the url format is: `https://www.somename.com`.
+The `DebugInfoD*` tag can be combined with `srv*` to prioritize source retrieval from specific locations. 
 
 Some symbol files contain checksum information about the source code. In such cases, the local folders in the source path will be searched first for the file with same file name and matching checksum. If no checksum information is available, or no file with matching name and checksum has been found, then the search path will be traversed in the specified order as shown in the following examples.
 
@@ -41,11 +39,11 @@ For this second example, the search order will be:
 
 ## Supported source code formats
 
-The srv* allows native source link version 1 or version 2 files to be downloaded. It does not include *DebugInfoD* files.
+The `srv*` tag supports automatice file retrieval using Source Link 1.0 or Source Link 2.0, it does not support *DebugInfoD* URLs.
 
 ## Resources
 
-[.srcpath, .lsrcpath (Set Source Path)](-srcpath---lsrcpath--set-source-path-.md)
+[.srcpath, .lsrcpath (Set Source Path)](../debuggercmds/-srcpath---lsrcpath--set-source-path-.md)
 
 [Source Path](source-path.md)
 

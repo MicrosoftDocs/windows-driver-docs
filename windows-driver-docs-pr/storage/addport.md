@@ -4,6 +4,7 @@ description: The AddPort WMI method configures the WMI provider to inform the WM
 keywords: ["AddPort function Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - AddPort
 api_location:

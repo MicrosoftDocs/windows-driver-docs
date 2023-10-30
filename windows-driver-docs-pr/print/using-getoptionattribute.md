@@ -3,20 +3,18 @@ title: Using GetOptionAttribute
 description: Using GetOptionAttribute
 keywords:
 - GetOptionAttribute
-ms.date: 04/20/2017
+ms.date: 01/31/2023
 ---
 
 # Using GetOptionAttribute
 
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
+This function is supported only for PPD features. If a certain attribute is not available, **GetOptionAttribute** returns E_INVALIDARG.
 
+## Output Parameters for General Option Attributes
 
-
-This function is supported only for PPD features. If a certain attribute is not available, **GetOptionAttribute** returns E\_INVALIDARG.
-
-In the following table, the *pdwDataType* parameter takes values of the [**EATTRIBUTE\_DATATYPE**](/windows-hardware/drivers/ddi/printoem/ne-printoem-_eattribute_datatype) enumerated type.
-
-### Output Parameters for General Option Attributes
+In the following table, the *pdwDataType* parameter takes values of the [**EATTRIBUTE_DATATYPE**](/windows-hardware/drivers/ddi/printoem/ne-printoem-_eattribute_datatype) enumerated type.
 
 <table>
 <colgroup>
@@ -49,21 +47,19 @@ In the following table, the *pdwDataType* parameter takes values of the [**EATTR
 <td><p></em>pdwDataType: kADT_LONG</p>
 <p><em><em>pbData</em>: the relative order specified by the PPD's <em>OrderDependency or *NonUIOrderDependency keyword for this option. Notice that the first parameter of these keywords is a real number that is converted to a LONG and returned.</p>
 <p><em></em>pcbNeeded</em>: <strong>sizeof</strong>(LONG)</p>
-<p>This option attribute is available only for an option that has an <em>OrderDependency or *NonUIOrderDependency entry in the PPD, and the entry does not omit optionKeyword.</p></td>
+<p>This option attribute is available only for an option that has an <em>OrderDependency or*NonUIOrderDependency entry in the PPD, and the entry does not omit optionKeyword.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>OrderDependencySection</strong></p></td>
 <td><p><em></em>pdwDataType</em>: kADT_ASCII</p>
 <p><em>pbData</em>: null-terminated ASCII string containing one of following section names: "ExitServer" "Prolog" "DocumentSetup" "PageSetup" "JCLSetup" "AnySetup".</p>
 <p><em></em>pcbNeeded</em>: byte count of the ASCII string pointed to by <em>pbData</em> (including the null terminator)</p>
-<p>This option attribute is available only for an option that has an *OrderDependency or *NonUIOrderDependency entry in the PPD, and the entry does not omit optionKeyword.</p></td>
+<p>This option attribute is available only for an option that has an *OrderDependency or*NonUIOrderDependency entry in the PPD, and the entry does not omit optionKeyword.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
-
-### Output Parameters for Specific Option Attributes
+## Output Parameters for Specific Option Attributes
 
 In addition to the general option attributes described earlier, the option attributes listed in the following tables can have limitations on when they are available. Some attributes are available to all options of a specific PPD feature, while others are available only to specific options of their PPD feature. Any such limitations are listed for each option attribute.
 
@@ -183,8 +179,6 @@ This option attribute is available to any option of the "InstalledMemory" PPD fe
 
 This option attribute is available to any option of the "InstalledMemory" PPD feature.
 
- 
-
 ### Note on ParamCustomPageSize
 
 Here is some sample code that shows how to obtain the PPD file's original order, min, and max values of the "\*ParamCustomPageSize Width" entry. The CUSTOMPARAM\_WIDTH constant, which is defined in printoem.h, indicates the offset of the [**CUSTOMSIZEPARAM**](/windows-hardware/drivers/ddi/printoem/ns-printoem-_customsizeparam) structure that contains the information related to the Width entry. This structure is one of CUSTOMPARAM\_MAX CUSTOMSIZEPARAM structures that form an array of such structures. The printoem.h header defines a set of constants named CUSTOMPARAM\_XXX listing the offsets of the structures in this array (Width, Height, WidthOffset, HeightOffset, and Orientation).
@@ -201,6 +195,3 @@ order = pCSParam->dwOrder;
 min = pCSParam->lMinVal / 25400.0 * 72.0;
 max = pCSParam->lMaxVal / 25400.0 * 72.0;
 ```
-
- 
-

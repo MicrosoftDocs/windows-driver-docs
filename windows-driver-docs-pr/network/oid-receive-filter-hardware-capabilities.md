@@ -1,5 +1,6 @@
 ---
 title: OID_RECEIVE_FILTER_HARDWARE_CAPABILITIES
+ms.topic: reference
 description: Overlying drivers issue OID query requests of OID_RECEIVE_FILTER_HARDWARE_CAPABILITIES to obtain the receive filtering hardware capabilities of a network adapter.
 ms.date: 08/08/2017
 keywords: 

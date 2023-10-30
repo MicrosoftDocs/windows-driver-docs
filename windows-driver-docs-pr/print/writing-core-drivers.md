@@ -1,15 +1,16 @@
 ---
 title: Writing Core Drivers
 description: Writing Core Drivers
-ms.date: 04/20/2017
+ms.date: 01/31/2023
 ---
 
 # Writing Core Drivers
 
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 Print driver writers can use the core driver functionality that Windows Vista provides. To make a core driver, generate a GUID that other driver packages can use to refer to the set of files that makes up the core driver. For example, in Ntprint.inf, the Unidrv core driver file definition is shown in the following example:
 
-```cpp
+```inf
 [Microsoft.NTx86]
 "{D20EA372-DD35-4950-9ED8-A6335AFE79F0}" =  
   {D20EA372-DD35-4950-9ED8-A6335AFE79F0}, 
@@ -26,7 +27,7 @@ It is important to note that a core driver must retain compatibility with earlie
 
 The core driver is defined with a Model section, which includes a device description that is the core driver GUID. For example:
 
-```cpp
+```inf
 ; Model section
 [Company.NTx86]
 "{GUID1}" = {GUID1}, {GUID1}
@@ -50,11 +51,3 @@ AlwaysExcludeFromSelect = {GUID1}
 ```
 
 The core driver must include version information in the install section, by using the **DriverVer** keyword. The install section must also list all the files that the core driver requires. Use the new **AlwaysExcludeFromSelect** keyword to ensure that the core driver is not displayed to the user in the UI.
-
- 
-
- 
-
-
-
-

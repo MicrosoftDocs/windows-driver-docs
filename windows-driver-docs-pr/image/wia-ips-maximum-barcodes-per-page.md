@@ -1,29 +1,26 @@
 ---
-title: WIA\_IPS\_MAXIMUM\_BARCODES\_PER\_PAGE
-description: The WIA\_IPS\_MAXIMUM\_BARCODES\_PER\_PAGE property describes the maximum number of barcodes that the device can and should detect on one document page side when barcode detection is enabled.
+title: WIA_IPS_MAXIMUM_BARCODES_PER_PAGE
+description: The WIA_IPS_MAXIMUM_BARCODES_PER_PAGE property describes the maximum number of barcodes that the device can and should detect on one document page side when barcode detection is enabled.
 keywords: ["WIA_IPS_MAXIMUM_BARCODES_PER_PAGE Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_MAXIMUM_BARCODES_PER_PAGE
 api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 05/22/2018
+ms.date: 05/05/2023
 ---
 
-# WIA\_IPS\_MAXIMUM\_BARCODES\_PER\_PAGE
+# WIA_IPS_MAXIMUM_BARCODES_PER_PAGE
 
+The **WIA_IPS_MAXIMUM_BARCODES_PER_PAGE** property describes the maximum number of barcodes that the device can and should detect on one document page side when barcode detection is enabled.
 
-The **WIA\_IPS\_MAXIMUM\_BARCODES\_PER\_PAGE** property describes the maximum number of barcodes that the device can and should detect on one document page side when barcode detection is enabled.
+Property Type: VT_UI4
 
-
-
-
-Property Type: VT\_UI4
-
-Valid Values: WIA\_PROP\_RANGE
+Valid Values: WIA_PROP_RANGE
 
 Access Rights: Read/Write
 
@@ -35,24 +32,4 @@ This property is required for all Barcode Reader items, but it can be implemente
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
-
- 
-
- 
-
-
-
-
-
+**Header:** wiadef.h (include Wiadef.h)

@@ -5,6 +5,7 @@ keywords: ["AgeStore Command-Line Options Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - AgeStore Command-Line Options
 api_type:
@@ -46,7 +47,7 @@ Specifies the total size of the files that should remain after the deletion, in 
 <span id="_______-size______"></span><span id="_______-SIZE______"></span> **-size**   
 Causes AgeStore to list the total size of all files in the target directory or target tree. No files are deleted.
 
-<span id="_______Options______"></span><span id="_______options______"></span><span id="_______OPTIONS______"></span> *Options*   
+*Options*
 Any combination of the following options.
 
 <span id="-l"></span><span id="-L"></span>**-l**  
@@ -67,7 +68,7 @@ Suppresses the **(y/n)** prompt. If this option is not used, AgeStore prompts yo
 <span id="_______-_______"></span> **-?**   
 Displays help text for the AgeStore command line.
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For more information about the AgeStore tool, see [Using AgeStore](using-agestore.md).
 

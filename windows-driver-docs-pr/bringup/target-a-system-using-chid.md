@@ -1,7 +1,7 @@
 ---
 title: Target a system using CHID targeting
 description: Provides information about how to target a system using CHID targeting.
-ms.date: 05/15/2018
+ms.date: 03/23/2023
 ---
 
 # Target a system using CHID targeting

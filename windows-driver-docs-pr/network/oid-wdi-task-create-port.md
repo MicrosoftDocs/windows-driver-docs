@@ -1,7 +1,8 @@
 ---
 title: OID_WDI_TASK_CREATE_PORT
+ms.topic: reference
 description: OID_WDI_TASK_CREATE_PORT requests that a new 802.11 entity is created by the IHV component.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - OID_WDI_TASK_CREATE_PORT Network Drivers Starting with Windows Vista
 ms.custom: 19H1

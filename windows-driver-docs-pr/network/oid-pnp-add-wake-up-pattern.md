@@ -1,5 +1,6 @@
 ---
 title: OID_PNP_ADD_WAKE_UP_PATTERN
+ms.topic: reference
 description: OID_PNP_ADD_WAKE_UP_PATTERN
 ms.date: 08/08/2017
 keywords: 
@@ -20,15 +21,15 @@ The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardwa
 
 -   An [**NDIS\_PM\_PACKET\_PATTERN**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_packet_pattern) structure that provides information about the pattern and its mask.
 
--   A mask that indicates which bytes of an incoming packet should be compared with corresponding bytes in the pattern. The mask starts with the first byte of the packet. The mask immediately follows the [**NDIS\_PM\_PACKET\_PATTERN**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_packet_pattern) structure in the *InformationBuffer*. For more information about how this mask works, see the [Network Device Class Power Management Reference specification](https://go.microsoft.com/fwlink/p/?linkid=27255).
+-   A mask that indicates which bytes of an incoming packet should be compared with corresponding bytes in the pattern. The mask starts with the first byte of the packet. The mask immediately follows the [**NDIS\_PM\_PACKET\_PATTERN**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_packet_pattern) structure in the *InformationBuffer*. For more information about how this mask works, see the [Network Device Class Power Management Reference specification](https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/netpmspc.rtf).
 
--   A wake-up pattern, which begins **PatternOffset** bytes from the beginning of the *InformationBuffer*. For more information about wake-up patterns, see the [Network Device Class Power Management Reference specification](https://go.microsoft.com/fwlink/p/?linkid=27255).
+-   A wake-up pattern, which begins **PatternOffset** bytes from the beginning of the *InformationBuffer*. For more information about wake-up patterns, see the [Network Device Class Power Management Reference specification](https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/netpmspc.rtf).
 
 The number of wake-up patterns that the miniport driver can accept from a protocol might depend on the availability of resources, such as the host memory that the miniport driver has allocated for such patterns, or the available storage in the network adapter. If a miniport driver cannot add a wake-up pattern due to insufficient resources, the miniport driver returns **NDIS\_STATUS\_RESOURCES** in response to OID\_PNP\_ADD\_WAKE\_UP\_PATTERN.
 
 If a protocol driver tries to add a duplicate pattern, the miniport driver should return **NDIS\_STATUS\_INVALID\_DATA** in response to OID\_PNP\_ADD\_WAKE\_UP\_PATTERN.
 
-An intermediate driver in which the upper edge receives this OID request must always propagate the request to the underlying miniport driver by calling [**NdisRequest**](/previous-versions/windows/hardware/network/ff554681(v=vs.85)) or [**NdisCoRequest**](/previous-versions/windows/hardware/network/ff551877(v=vs.85)).
+An intermediate driver in which the upper edge receives this OID request must always propagate the request to the underlying miniport driver by calling [**NdisRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisrequest) or [**NdisCoRequest**](/previous-versions/windows/hardware/network/ff551877(v=vs.85)).
 
 ## Requirements
 

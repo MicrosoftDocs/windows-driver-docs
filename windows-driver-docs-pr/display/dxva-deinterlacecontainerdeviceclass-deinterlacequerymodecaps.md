@@ -4,6 +4,7 @@ description: The sample DXVA\_DeinterlaceContainerDeviceClass::DeinterlaceQueryM
 keywords: ["DeinterlaceQueryModeCaps method Display Devices", "DeinterlaceQueryModeCaps method Display Devices , DXVA_DeinterlaceContainerDeviceClass interface", "DXVA_DeinterlaceContainerDeviceClass interface Display Devices , DeinterlaceQueryModeCaps method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DXVA_DeinterlaceContainerDeviceClass.DeinterlaceQueryModeCaps
 api_location:

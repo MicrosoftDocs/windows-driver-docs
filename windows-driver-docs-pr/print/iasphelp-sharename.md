@@ -1,23 +1,24 @@
 ---
-title: Iasphelp get\_ShareName method
+title: Iasphelp get_ShareName method
 description: The ShareName property enables an ASP Web page to obtain the printer's shared name.
 MS-HAID:
-- 'webfnc\_68b8e99e-a40b-44ee-94c8-2a8bcc293fa3.xml'
-- 'print.iasphelp\_sharename'
+- 'webfnc_68b8e99e-a40b-44ee-94c8-2a8bcc293fa3.xml'
+- 'print.iasphelp_sharename'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 keywords: ["get_ShareName method Print Devices", "get_ShareName method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_ShareName method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Iasphelp.get_ShareName
 api_type:
 - COM
-ms.date: 04/20/2017
+ms.date: 06/26/2023
 ---
 
-# Iasphelp::get\_ShareName method
+# Iasphelp::get_ShareName method
 
 The **ShareName** property enables an ASP Web page to obtain the printer's shared name.
 
@@ -38,32 +39,11 @@ Caller-supplied pointer to a location to receive a pointer to a share name strin
 
 Win32 error codes can also be returned.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Return code</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>S_OK</strong></td>
-<td><p>The operation succeeded.</p></td>
-</tr>
-<tr class="even">
-<td><strong>E_HANDLE</strong></td>
-<td><p>The <a href="iasphelp-open.md" data-raw-source="[&lt;strong&gt;Iasphelp::Open&lt;/strong&gt;](iasphelp-open.md)"><strong>Iasphelp::Open</strong></a> method has not been called.</p></td>
-</tr>
-<tr class="odd">
-<td><strong>E_OUTOFMEMORY</strong></td>
-<td><p>Out of memory.</p></td>
-</tr>
-</tbody>
-</table>
+| Return code | Description |
+|--|--|
+| **S_OK** | The operation succeeded. |
+| **E_HANDLE** | The [**Iasphelp::Open**](iasphelp-open.md) method has not been called. |
+| **E_OUTOFMEMORY** | Out of memory. |
 
 ## VBScript Example
 
@@ -79,18 +59,7 @@ DrvrName = objPrinter.ShareName
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Target platform</p></td>
-<td>Desktop</td>
-</tr>
-</tbody>
-</table>
+**Target platform:** Desktop
 
 ## See also
 

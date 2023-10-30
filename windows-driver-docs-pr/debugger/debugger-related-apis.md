@@ -13,7 +13,7 @@ ms.date: 05/23/2017
 
 This reference section includes:
 
-[Symbol Server API](symbol-server-api.md)
+[Symbol and Image File APIs](symbol-server-api.md)
 
 [The dbgeng.h Header File](the-dbgeng-h-header-file.md)
 

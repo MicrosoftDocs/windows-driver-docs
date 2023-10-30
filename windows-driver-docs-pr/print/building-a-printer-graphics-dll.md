@@ -4,15 +4,16 @@ description: Provides information about how to build a printer graphics DLL.
 keywords:
 - printer graphics DLL WDK, building
 - graphics DLL WDK printer, building
-ms.date: 09/09/2022
+ms.date: 01/26/2023
 ---
 
 # Build a printer graphics DLL
 
+[!include[Print Support Apps](../includes/print-support-apps.md)]
+
 When building a printer graphics DLL, you must be aware of the following differences between DLLs intended for user-mode execution and those intended for kernel-mode execution.
 
-> [!NOTE]
-> In Windows Vista, printer graphics DLLs can only execute in user mode. For more information, see [Choosing user mode or kernel mode](choosing-user-mode-or-kernel-mode.md).
+In Windows Vista, printer graphics DLLs can only execute in user mode. For more information, see [Choosing user mode or kernel mode](choosing-user-mode-or-kernel-mode.md).
 
 ## Rules for Building a Printer Graphics DLL
 

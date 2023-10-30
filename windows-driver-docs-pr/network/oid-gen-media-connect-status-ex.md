@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_MEDIA_CONNECT_STATUS_EX
+ms.topic: reference
 description: As a query, the OID_GEN_MEDIA_CONNECT_STATUS_EX OID returns the connection state of an interface. Windows Vista and laterSupported. NDIS 6.0 and later miniport driversNot requested. For NDIS interface providers only.
 ms.date: 08/08/2017
 keywords: 

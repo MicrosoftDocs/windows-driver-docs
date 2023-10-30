@@ -4,14 +4,16 @@ description: The properties contained in the KSPROPSETID\_AudioEngine property s
 keywords: ["KSPROPERTY_AUDIOENGINE enumeration Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIOENGINE
 api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 03/06/2023
 ---
+
 
 # KSPROPERTY\_AUDIOENGINE enumeration
 
@@ -20,7 +22,7 @@ The properties contained in the [KSPROPSETID\_AudioEngine](kspropsetid-audioengi
 
 ## Syntax
 
-```ManagedCPlusPlus
+```cpp
 typedef enum  { 
   KSPROPERTY_AUDIOENGINE_LFXENABLE               = 0,
   KSPROPERTY_AUDIOENGINE_GFXENABLE               = 1,

@@ -4,7 +4,7 @@ description: Writing an INF file for a Smart Card Reader Driver
 keywords:
 - smart card drivers WDK , writing INF file
 - vendor-supplied drivers WDK smart card , INF file
-ms.date: 04/20/2022
+ms.date: 05/08/2023
 ---
 
 # Writing an INF file for a Smart Card Reader Driver
@@ -13,11 +13,12 @@ This section describes required sections for INF file for smart card reader driv
 
 Vendors that supply their own reader drivers should make each driver a member of the **SmartCardReader** setup class in the [**INF Version Section**](../install/inf-version-section.md) of the driver's INF file. Vendors must also add a section to properly configure the smartcard services. For example:
 
-```cpp
+```inf
 [Version]
-Signature="$Windows NT$"
+...
 Class=SmartCardReader
 ClassGuid={50DD5230-BA8A-11D1-BF5D-0000F805F530}
+...
 
 ; ============ Add reg for all readers ===============
 
@@ -28,11 +29,11 @@ HKLM, System\CurrentControlSet\Services\CertPropSvc,Start,0x00010001,2
 ```
 
 > [!NOTE]
-> Starting with Windows 11, the smartcard subsystem configures the smartcard services. Vendors are no longer required to add the `Reader.Install.AddReg` registry keys listed above.
+> Starting with Windows 7, the smartcard subsystem configures the smartcard services. Vendors are no longer required to add the `Reader.Install.AddReg` registry keys listed above.
 
 Vendors that supply their own UMDF reader driver need a registry setting to allow PnP filter drivers to sit on top of the UMDF reflector. Specifically, in the driver INF file, this entry is needed:
 
-```cpp
+```inf
 [Install.NT.Wdf]
 UmdfKernelModeClientPolicy=AllowKernelModeClients
 ```

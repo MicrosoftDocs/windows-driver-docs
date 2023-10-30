@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_BEACON_PROBE_RESPONSE (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_BEACON_PROBE_RESPONSE is a WiFiCx TLV that contains the latest beacon or probe response frame received by the port.
 ms.date: 06/30/2021
 keywords:

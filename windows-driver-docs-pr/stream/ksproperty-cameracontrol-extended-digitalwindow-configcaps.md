@@ -4,6 +4,7 @@ description: KSPROPERTY_CAMERACONTROL_EXTENDED_DIGITALWINDOW_CONFIGCAPS is a pro
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_DIGITALWINDOW_CONFIGCAPS Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_EXTENDED_DIGITALWINDOW_CONFIGCAPS
 api_location:
@@ -11,7 +12,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 06/24/2021
-ms.topic: article
 ---
 
 # KSPROPERTY_CAMERACONTROL_EXTENDED_DIGITALWINDOW_CONFIGCAPS

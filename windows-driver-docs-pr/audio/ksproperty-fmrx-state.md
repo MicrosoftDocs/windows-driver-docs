@@ -4,14 +4,16 @@ description: The KSPROPERTY\_FMRX\_STATE property specifies whether FM radio is 
 keywords: ["KSPROPERTY_FMRX_STATE Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_FMRX_STATE
 api_location:
 - ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 03/06/2023
 ---
+
 
 # KSPROPERTY\_FMRX\_STATE
 

@@ -4,6 +4,7 @@ description: The KSEVENT_CONNECTION_DATADISCONTINUITY event allows a client to r
 keywords: ["KSEVENT_CONNECTION_DATADISCONTINUITY Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSEVENT_CONNECTION_DATADISCONTINUITY
 api_type:

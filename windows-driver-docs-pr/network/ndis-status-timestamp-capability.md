@@ -1,7 +1,8 @@
 ---
 title: NDIS_STATUS_TIMESTAMP_CAPABILITY
+ms.topic: reference
 description: Miniport drivers use the NDIS_STATUS_TIMESTAMP_CAPABILITY status indication to report the NIC and miniport driver timestamping capabilities.
-ms.date: 01/31/2021
+ms.date: 03/02/2023
 keywords:
  - NDIS_STATUS_TIMESTAMP_CAPABILITY Network Drivers Starting with Windows Vista
 ---

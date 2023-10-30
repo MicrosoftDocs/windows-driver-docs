@@ -1,5 +1,6 @@
 ---
 title: OID_WWAN_NETWORK_BLACKLIST
+ms.topic: reference
 description: OID_WWAN_NETWORK_BLACKLIST gets or sets information about network blacklists for a mobile broadband (MBB) device.
 ms.date: 08/21/2018
 keywords: 

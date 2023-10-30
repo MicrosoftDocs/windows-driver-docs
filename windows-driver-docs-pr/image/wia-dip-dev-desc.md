@@ -4,6 +4,7 @@ description: The WIA_DIP_DEV_DESC property contains the device description strin
 keywords: ["WIA_DIP_DEV_DESC Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DIP_DEV_DESC
 api_location:

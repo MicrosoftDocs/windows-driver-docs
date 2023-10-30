@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_WWAN_MPDP_LIST
+ms.topic: reference
 description: The NDIS_STATUS_WWAN_MPDP_LIST notification is sent by a mobile broadband miniport driver to inform the MB service about the completion of a previous OID_WWAN_MPDP query request.
 keywords: ["NDIS_STATUS_WWAN_MPDP_LIST, Network Drivers Starting with Windows Vista"]
 topic_type:
@@ -10,7 +11,7 @@ api_location:
 - ndis.h
 api_type:
 - HeaderDef
-ms.date: 10/17/2018
+ms.date: 03/02/2023
 ---
 
 # NDIS_STATUS_WWAN_MPDP_LIST

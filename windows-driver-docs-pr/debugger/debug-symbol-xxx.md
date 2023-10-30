@@ -4,6 +4,7 @@ description: The DEBUG\_SYMBOL\_XXX constants are used for the symbol flags bit-
 ms.date: 12/07/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DEBUG_SYMBOL_EXPANDED
 - DEBUG_SYMBOL_READ_ONLY

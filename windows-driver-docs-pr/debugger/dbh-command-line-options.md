@@ -5,6 +5,7 @@ keywords: ["DBH Command-Line Options Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DBH Command-Line Options
 api_type:
@@ -40,7 +41,7 @@ Specifies the executable file whose symbols are to be loaded, including the file
 <span id="_______SymbolFileName______"></span><span id="_______symbolfilename______"></span><span id="_______SYMBOLFILENAME______"></span> *SymbolFileName*   
 Specifies the symbol file whose symbols are to be loaded, including the file name extension (.pdb or .dbg). You should include a relative or absolute directory path; if no path is included, the current working directory is assumed.
 
-<span id="_______Options______"></span><span id="_______options______"></span><span id="_______OPTIONS______"></span> *Options*   
+*Options*
 Any combination of the following options.
 
 <span id="-d"></span><span id="-D"></span>**-d**  
@@ -61,7 +62,7 @@ Displays help text for the DBH command line.
 <span id="_______-________"></span> **-??**   
 Displays help text for the DBH command line, and displays a list of all DBH commands.
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For more information about the DBH tool, see [Using DBH](using-dbh.md).
 

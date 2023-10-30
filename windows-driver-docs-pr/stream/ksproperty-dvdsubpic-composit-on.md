@@ -4,6 +4,7 @@ description: The KSPROPERTY_DVDSUBPIC_COMPOSIT_ON property enables or disables t
 keywords: ["KSPROPERTY_DVDSUBPIC_COMPOSIT_ON Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_DVDSUBPIC_COMPOSIT_ON
 api_location:

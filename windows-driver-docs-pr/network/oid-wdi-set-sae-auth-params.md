@@ -1,7 +1,8 @@
 ---
 title: OID_WDI_SET_SAE_AUTH_PARAMS
+ms.topic: reference
 description: OID_WDI_SET_SAE_AUTH_PARAMS is sent by WDI in response to an NDIS_STATUS_WDI_INDICATION_SAE_AUTH_PARAMS_NEEDED indication from the driver. It contains the parameters required to send the Simultaneous Authentication of Equals (SAE) Commit or Confirm request, or an error message indicating a failure to perform SAE with the BSSID.
-ms.date: 02/15/2019
+ms.date: 03/02/2023
 keywords:
  - OID_WDI_SET_SAE_AUTH_PARAMS Network Drivers Starting with Windows Vista
 ms.custom: 19H1

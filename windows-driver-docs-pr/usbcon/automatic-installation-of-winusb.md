@@ -1,14 +1,14 @@
 ---
-description: In this topic, you will learn about how a WinUSB device is recognized by Windows.
-title: WinUSB Device
-ms.date: 03/18/2022
+title: WinUSB device
+description: In this topic, you will learn about how a WinUSB device is recognized by Windows. The information in this article applies to you if you are an OEM or independent hardware vendor (IHV) developing a device for which you want to use Winusb.sys as the function driver and want to load the driver automatically without having to provide a custom INF.
+ms.date: 05/08/2023
 ---
 
-# WinUSB Device
+# WinUSB device
 
-In this topic, you will learn about how a WinUSB device is recognized by Windows.
+In this article, you will learn about how a WinUSB device is recognized by Windows.
 
-The information in this topic applies to you if you are an OEM or independent hardware vendor (IHV) developing a device for which you want to use Winusb.sys as the function driver and want to load the driver automatically without having to provide a custom INF.
+The information in this article applies to you if you are an OEM or independent hardware vendor (IHV) developing a device for which you want to use Winusb.sys as the function driver and want to load the driver automatically without having to provide a custom INF.
 
 ## What is a WinUSB device
 
@@ -26,9 +26,9 @@ In Windows 8, the in-box Winusb.inf file has been updated to enable Windows to 
 
 In Windows 8, the in-box Winusb.inf file has been updated. The INF includes an install section that references a compatible ID called "USB\\MS\_COMP\_WINUSB".
 
-```cpp
+```inf
 [Generic.Section.NTamd64]
-%USB\MS_COMP_WINUSB.DeviceDesc%=WINUSB,USB\MS_COMP_WINUSB 
+%USB\MS_COMP_WINUSB.DeviceDesc%=WINUSB,USB\MS_COMP_WINUSB
 ```
 
 The updated INF also includes a new setup class called "USBDevice".
@@ -41,24 +41,24 @@ Do not use the "USB" setup class for unclassified devices. That class is reserve
 
 In Windows 8, to use "USBDevice" device class, simply add this to your INF:
 
-```cpp
-  …
-  [Version] 
-  Class=USBDevice 
+```inf
+  [Version]
+  ...
+  Class=USBDevice
   ClassGuid={88BAE032-5A81-49f0-BC3D-A4FF138216D6}
-  …
+  ...
 ```
 
 In Device Manager you will see a new node **USB Universal Serial Bus devices** and your device appears under that node.
 
 In Windows 7, in addition to the preceding lines, you need to create these registry settings in the INF:
 
-```cpp
+```inf
   ;---------- Add Registry Section ----------
-  [USBDeviceClassReg] 
+  [USBDeviceClassReg]
   HKR,,,,"Universal Serial Bus devices"
   HKR,,NoInstallClass,,1
-  HKR,,SilentInstall,,1 
+  HKR,,SilentInstall,,1
   HKR,,IconPath,%REG_MULTI_SZ%,"%systemroot%\system32\setupapi.dll,-20"
 ```
 
@@ -70,9 +70,9 @@ During device enumeration, the USB driver stack reads the compatible ID from the
 
 This image is for a single interface MUTT device that is defined as a WinUSB device and as a result Winusb.sys gets loaded as the function driver for the device.
 
-![device manager showing a winusb device.](images/winusb-device.png)
+:::image type="content" source="images/winusb-device.png" alt-text="Screenshot of Windows Device Manager showing a WinUSB device.":::
 
-For versions of Windows earlier than Windows 8, the updated Winusb.inf is available through **Windows Update**. If your computer is configured to get driver update automatically, WinUSB driver will get installed without any user intervention by using the new INF package.
+For versions of Windows earlier than Windows 8, the updated Winusb.inf is available through Windows Update. If your computer is configured to get driver update automatically, WinUSB driver will get installed without any user intervention by using the new INF package.
 
 ## How to change the device description for a WinUSB device
 
@@ -96,9 +96,9 @@ For information about how to define an OS string descriptor, see "The OS String 
 
 ### Setting the compatible ID
 
-An extended compat ID OS feature descriptor that is required to match the in-box Winusb.inf and load the WinUSB driver module.
+An extended compatible ID OS feature descriptor that is required to match the in-box Winusb.inf and load the WinUSB driver module.
 
-The extended compat ID OS feature descriptor includes a header section followed by one or more function sections depending on whether the device is a composite or non-composite device. The header section specifies the length of the entire descriptor, number of function sections, and version number. For a non-composite device, the header is followed by one function section associated with the device's only interface. The **compatibleID** field of that section must specify "WINUSB" as the field value. For a composite device, there are multiple function sections. The **compatibleID** field of each function section must specify "WINUSB".
+The extended compatible ID OS feature descriptor includes a header section followed by one or more function sections depending on whether the device is a composite or non-composite device. The header section specifies the length of the entire descriptor, number of function sections, and version number. For a non-composite device, the header is followed by one function section associated with the device's only interface. The **compatibleID** field of that section must specify "WINUSB" as the field value. For a composite device, there are multiple function sections. The **compatibleID** field of each function section must specify "WINUSB".
 
 ### Registering a device interface GUID
 
@@ -106,24 +106,11 @@ An extended properties OS feature descriptor that is required to register its de
 
 In previous versions of Windows, device interface GUID registration is done through the custom INF. Starting in Windows 8, your device should report the interface GUID by using extended properties OS feature descriptor.
 
-The extended properties OS feature descriptor includes a header section that is followed by one or more custom property sections. The header section describes the entire extended properties descriptor, including its total length, the version number, and the number of custom property sections. To register the device interface GUID, add a custom property section that sets the **bPropertyName** field to "DeviceInterfaceGUID" and **wPropertyNameLength** to 40 bytes. Generate a unique device interface GUID by using a GUID generator and set the **bPropertyData** field to that GUID, such as "{8FE6D4D7-49DD-41E7-9486-49AFC6BFE475}". Note that the GUID is specified as a Unicode string and the length of the string is 78 bytes (including the null terminator).
+The extended properties OS feature descriptor includes a header section that is followed by one or more custom property sections. The header section describes the entire extended properties descriptor, including its total length, the version number, and the number of custom property sections. To register the device interface GUID, add a custom property section that sets the **bPropertyName** field to "DeviceInterfaceGUID" and **wPropertyNameLength** to 40 bytes. Generate a unique device interface GUID by using a GUID generator and set the **bPropertyData** field to that GUID, such as "{8FE6D4D7-49DD-41E7-9486-49AFC6BFE475}". The GUID is specified as a Unicode string and the length of the string is 78 bytes (including the null terminator).
 
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>bPropertyData</strong></td>
-<td>78 bytes</td>
-<td><p>7B 00 38 00 46 00 45 00 36 00 44 00 34 00 44 00 37 00 2D 00 34 00 39 00 00 44 00 2D 00 34 00 31 00 45 00 37 00 2D 00 39 00 34 00 38 00 36 00 2D 00 34 00 39 00 41 00 46 00 43 00 36 00 42 00 46 00 45 00 34 00 37 00 35 00 7D 00 00 00</p></td>
-<td>Property value is {8FE6D4D7-49DD-41E7-9486-49AFC6BFE475}.</td>
-</tr>
-</tbody>
-</table>
+| &nbsp; | &nbsp; | &nbsp; | &nbsp; |
+|---|---|---|---|
+| **bPropertyData** | 78 bytes | 7B 00 38 00 46 00 45 00 36 00 44 00 34 00 44 00 37 00 2D 00 34 00 39 00 00 44 00 2D 00 34 00 31 00 45 00 37 00 2D 00 39 00 34 00 38 00 36 00 2D 00 34 00 39 00 41 00 46 00 43 00 36 00 42 00 46 00 45 00 34 00 37 00 35 00 7D 00 00 00 | Property value is {8FE6D4D7-49DD-41E7-9486-49AFC6BFE475}. |
 
 During device enumeration, The USB driver stack then retrieves the **DeviceInterfaceGUID** value from the extended properties OS feature descriptor and registers the device in the device's hardware key. An application can retrieve the value by using **SetupDiXxx** APIs (See [**SetupDiOpenDevRegKey**](/windows/win32/api/setupapi/nf-setupapi-setupdiopendevregkey)). For more information, see [How to Access a USB Device by Using WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md).
 
@@ -131,12 +118,12 @@ During device enumeration, The USB driver stack then retrieves the **DeviceInter
 
 Before Windows 8, to configure power management features of WinUSB, you had to write registry entry values in the **HW.AddReg** section of your custom INF.
 
-In Windows 8, you can specify power settings in device. You can report values through the extended properties OS feature descriptor that enable or disable features in WinUSB for that device. There are two features that we can be configured: selective suspend and system wake. Selective suspend allows the device to enter low-power state when it is idle. System wake refers to the ability to a device to wake up a system when the system is in low-power state.
+In Windows 8 and later, you can specify power settings in device. You can report values through the extended properties OS feature descriptor that enable or disable features in WinUSB for that device. There are two features that we can be configured: selective suspend and system wake. Selective suspend allows the device to enter low-power state when it is idle. System wake refers to the ability to a device to wake up a system when the system is in low-power state.
 
 For information about power management features of WinUSB, see [WinUSB Power Management](winusb-power-management.md).
 
 | Property name | Description |
-|--|--|
+|---|---|
 | DeviceIdleEnabled | This value is set to 1 to indicate that the device can power down when idle (selective suspend). |
 | DefaultIdleState | This value is set to 1 to indicate that the device can be suspended when idle by default. |
 | DefaultIdleTimeout | This value is set to 5000 in milliseconds to indicate the amount of time in milliseconds to wait before determining that a device is idle. |
@@ -151,10 +138,10 @@ During enumeration, the USB driver stack reads the extended properties feature d
 
 This image shows sample settings for a WinUSB device.
 
-![registry settings for winusb device.](images/winusb-device-reg.png)
+:::image type="content" source="images/winusb-device-reg.png" alt-text="Screenshot of Windows Registry Editor showing settings for a WinUSB device.":::
 
 For additional examples, see the specifications on [Microsoft OS Descriptors](microsoft-defined-usb-descriptors.md).
 
 ## Related topics
 
-[Microsoft-Defined USB Descriptors](microsoft-defined-usb-descriptors.md)
+- [Microsoft-Defined USB Descriptors](microsoft-defined-usb-descriptors.md)

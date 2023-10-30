@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_DEFAULT_TX_KEY_ID_PARAMETERS (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_DEFAULT_TX_KEY_ID_PARAMETERS is a WiFiCx TLV that contains the default key ID for packet transmission on a port for OID_WDI_SET_DEFAULT_KEY_ID.
 ms.date: 07/31/2021
 keywords:

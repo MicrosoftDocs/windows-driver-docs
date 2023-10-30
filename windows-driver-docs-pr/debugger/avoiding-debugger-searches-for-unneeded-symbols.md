@@ -43,10 +43,10 @@ A number of options are available to control how the debugger loads and uses sym
 - To prevent the debugger from searching for symbols in unloaded modules, activate **SYMOPT\_NO\_UNQUALIFIED\_LOADS** by using the **-snul** command-line option or, if the debugger is already running, by using **.symopt+0x100**.
 - To explicitly load the modules you need for your debugging session, use debugger commands such as **.reload** or **ld**.
 
-## Related topics
+## See also
 
 [Download the WDK](../download-the-wdk.md)
 
-[Download Debugging Tools for Windows](debugger-download-tools.md)
+[Debugging Tools for Windows](debugger-download-tools.md)
 
 [Getting Started with Windows Debugging](getting-started-with-windows-debugging.md)

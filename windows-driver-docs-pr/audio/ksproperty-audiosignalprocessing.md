@@ -4,14 +4,16 @@ description: The KSPROPERTY\_AUDIOSIGNALPROCESSING enumeration defines a constan
 keywords: ["KSPROPERTY_AUDIOSIGNALPROCESSING enumeration Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIOSIGNALPROCESSING
 api_location:
 - ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 03/06/2023
 ---
+
 
 # KSPROPERTY\_AUDIOSIGNALPROCESSING enumeration
 
@@ -20,7 +22,7 @@ The KSPROPERTY\_AUDIOSIGNALPROCESSING enumeration defines a constant that is use
 
 ## Syntax
 
-```ManagedCPlusPlus
+```cpp
 typedef enum _KSPROPERTY_AUDIOSIGNALPROCESSING { 
   KSPROPERTY_AUDIOSIGNALPROCESSING_MODES
 } KSPROPERTY_AUDIOSIGNALPROCESSING;

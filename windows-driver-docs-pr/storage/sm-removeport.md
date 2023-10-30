@@ -4,6 +4,7 @@ description: The SM\_RemovePort WMI method configures the WMI provider so that i
 keywords: ["SM_RemovePort function Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SM_RemovePort
 api_location:

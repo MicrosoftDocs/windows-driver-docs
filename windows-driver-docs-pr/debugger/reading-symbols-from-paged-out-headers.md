@@ -19,9 +19,9 @@ The following procedure can be used to solve this problem.
 
 2. Append the root directory of this share to the symbol path. See [Symbol Path](symbol-path.md) for the ways to change the symbol path.
 
-3. Use the [**.reload (Reload Module)**](-reload--reload-module-.md) command.
+3. Use the [**.reload (Reload Module)**](../debuggercmds/-reload--reload-module-.md) command.
 
-4. Use the [**!sym noisy**](-sym.md) extension command to see more verbose output. If this is used, you will be able to see which symbols are loaded from the module images on the target computer, and which are loaded from the copy of the kernel modules.
+4. Use the [**!sym noisy**](../debuggercmds/-sym.md) extension command to see more verbose output. If this is used, you will be able to see which symbols are loaded from the module images on the target computer, and which are loaded from the copy of the kernel modules.
 
 This technique must be used with care, since the debugger has no way of verifying whether the file copies actually match the originals. So it is crucial that the version of Windows used on the network share matches the version used on the target computer.
 

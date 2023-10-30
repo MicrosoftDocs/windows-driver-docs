@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x75 CANNOT_WRITE_CONFIGURATION", "CANNOT_WRITE_CONFIGURAT
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - CANNOT_WRITE_CONFIGURATION
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The CANNOT\_WRITE\_CONFIGURATION bug check has a value of 0x00000075. This bug check indicates that the SYSTEM registry hive file cannot be converted to a mapped file.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## CANNOT\_WRITE\_CONFIGURATION Parameters

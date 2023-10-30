@@ -1,54 +1,27 @@
 ---
-title: Explicit Bin Extensions
-description: Explicit Bin Extensions
+title: Explicit bin extensions
+description: Explicit bin extensions
 keywords:
 - explicit bin extensions WDK printer
-ms.date: 04/20/2017
+ms.date: 06/21/2023
 ---
 
-# Explicit Bin Extensions
-
+# Explicit bin extensions
 
 You can further extend an implicit bin extension by using the special construct, **BinValue**. This object determines which MIB object inside a prtInputTable or prtOutputTable table contains the new data.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>name</strong></p></td>
-<td><p>The name of the bin.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>type</strong></p></td>
-<td><p>An enumerator in the <a href="/windows-hardware/drivers/ddi/winspool/ne-winspool-bidi_type" data-raw-source="[&lt;strong&gt;BIDI_TYPE&lt;/strong&gt;](/windows-hardware/drivers/ddi/winspool/ne-winspool-bidi_type)"><strong>BIDI_TYPE</strong></a> enumeration.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>drvPrinterEvent</strong></p></td>
-<td><p>(Optional) A Boolean value that indicates whether the port monitor sends notifications to the driver. A <strong>TRUE</strong> value indicates that the port monitor sends notifications to the driver; <strong>FALSE</strong> indicates that the port monitor does not send notifications to the driver.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>valueId</strong></p></td>
-<td><p>The MIB object in either printmib.prtInput.prtInputTable.prtInputEntry.<strong>valueId</strong> (input bin) or printmib.prtOutput.prtOutputTable.prtOutputEntry.<strong>valueId</strong> (output bin).</p></td>
-</tr>
-</tbody>
-</table>
+| Attribute | Description |
+|--|--|
+| **name** | The name of the bin. |
+| **type** | An enumerator in the [**BIDI_TYPE**](/windows-hardware/drivers/ddi/winspool/ne-winspool-bidi_type) enumeration. |
+| **drvPrinterEvent** | (Optional) A Boolean value that indicates whether the port monitor sends notifications to the driver. A **TRUE** value indicates that the port monitor sends notifications to the driver; **FALSE** indicates that the port monitor does not send notifications to the driver. |
+| **valueId** | The MIB object in either printmib.prtInput.prtInputTable.prtInputEntry.**valueId** (input bin) or printmib.prtOutput.prtOutputTable.prtOutputEntry.**valueId** (output bin). |
 
- 
-
-### Code Example
+## Code Example
 
 The following code example shows how a **BinValue** construct can be used to add a new property, **Security**. This has the effect of extending an implicit bin extension.
 
-```cpp
+```xml
 <Property name="Layout">
   <Property name="InputBins">
     <InputBin name="TopBin" mibName="TRAY 1">
@@ -66,7 +39,7 @@ The preceding example results in the following query:
 
 The following code example shows how a **BinValue** construct can be used to add a Status value. As in the preceding example, this has the effect of extending an implicit bin extension.
 
-```cpp
+```xml
 <Property name="Finishing">
   <Property name="OutputBins">
     <OutputBin name="TopBin" mibName="STANDARD BIN">
@@ -78,7 +51,6 @@ The following code example shows how a **BinValue** construct can be used to add
 
 The preceding example results in the following query:
 
-```cpp
+```output
 \Printer.Finishing.OutputBins.TopBin:Status
 ```
-

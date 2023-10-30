@@ -12,7 +12,7 @@ keywords:
 - bandwidth WDK IEEE 1394 bus
 - isochronous I/O WDK IEEE 1394 bus , about isochronous I/O
 - transferring data WDK IEEE 1394 bus
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Isochronous I/O for IEEE 1394 Devices

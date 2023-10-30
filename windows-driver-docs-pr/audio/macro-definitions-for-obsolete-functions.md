@@ -1,8 +1,10 @@
 ---
 title: Macro Definitions for Obsolete Functions
 description: Macro Definitions for Obsolete Functions
-ms.date: 11/28/2017
+ms.date: 03/06/2023
+ms.topic: reference
 ---
+
 
 # Macro Definitions for Obsolete Functions
 

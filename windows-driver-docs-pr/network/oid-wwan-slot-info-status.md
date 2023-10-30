@@ -1,5 +1,6 @@
 ---
 title: OID_WWAN_SLOT_INFO
+ms.topic: reference
 description: OID_WWAN_SLOT_INFO retrieves a high-level aggregated status of a specified UICC slot and the card within it (if any). It may also be used to deliver an unsolicited notification when the status of one of the slots changes.
 ms.date: 08/08/2017
 keywords: 
@@ -17,7 +18,7 @@ Query requests specify [**NDIS\_WWAN\_GET\_SLOT\_INFO**](/windows-hardware/drive
 
 The following diagram illustrates a query request.
 
-![slot status query.](images/multi-SIM_9_slotStatusQuery.png)
+:::image type="content" source="images/multi-SIM_9_slotStatusQuery.png" alt-text="Diagram that shows the process of a slot status query.":::
 
 Set requests are not applicable.
 

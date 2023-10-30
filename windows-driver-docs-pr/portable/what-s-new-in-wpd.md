@@ -1,7 +1,7 @@
 ---
 description: This topic summarizes the new features and improvements for Windows Portable Devices (WPD) in Windows 8.
 title: What's New in WPD
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # What's New in WPD

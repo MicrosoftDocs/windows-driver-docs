@@ -4,6 +4,7 @@ description: The KSPROPERTY_DVDCOPY_SET_COPY_STATE property sets the copy state 
 keywords: ["KSPROPERTY_DVDCOPY_SET_COPY_STATE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_DVDCOPY_SET_COPY_STATE
 api_location:

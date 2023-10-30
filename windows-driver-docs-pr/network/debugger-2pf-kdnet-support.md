@@ -5,7 +5,7 @@ keywords:
 - debugger, debugging
 - kdnet
 - 2PF
-ms.date: 04/12/2021
+ms.date: 08/23/2023
 ---
 
 # Debugger 2PF KDNET Support
@@ -44,7 +44,7 @@ Bus.dev.fun0.0).
 
 - The kdnet.exe user mode tool configures the 2PF feature using the Windows inbox driver by adding specific IOCTL codes to add/remove KDNET PF.
 
-![system diagram showing two network stacks one supporting 2pf using a combined pci card setup.](images/kdnet-2pf-system-diagram.png)
+:::image type="content" source="images/kdnet-2pf-system-diagram.png" alt-text="Diagram that shows two network stacks, one supporting 2PF using a combined PCI card setup.":::
 
 ## Multiple PFs feature design requirements
 
@@ -91,7 +91,7 @@ These OIDs and structures are populated in the ntddndis.h and kdnetpf.h files in
 
 `<WDK root directory>\ddk\inc\ndis`
 
-These files also are available in the Windows SDK, and can be found a:
+These files also are available in the Windows SDK, and can be found in this directory.
 
 `\Program Files (x86)\Windows Kits\10\Include\<Version for example 10.0.21301.0>\shared`
 
@@ -107,13 +107,13 @@ The Multiple PF feature is operated by using these four NDIS OIDs.
 
 - The list of PFs will be returned to the client via a NDIS Query operation.
 
-- The ***OID_KDNET_ENUMERATE_PFS*** OID is associated with the **NDIS_KDNET_ENUMERATE_PFS** structure.
+- The ***OID_KDNET_ENUMERATE_PFS*** OID is associated with the [NDIS_KDNET_ENUMERATE_PFS](/windows-hardware/drivers/ddi/kdnetpf/ns-kdnetpf-ndis_kdnet_enumerate_pfs) structure.
 
-- The ***OID_KDNET_ENUMERATE_PFS*** driver handler will return a buffer containing the PFs list with each PF element described by the type **NDIS_KDNET_PF_ENUM_ELEMENT**.
+- The ***OID_KDNET_ENUMERATE_PFS*** driver handler will return a buffer containing the PFs list with each PF element described by the type [NDIS_KDNET_PF_ENUM_ELEMENT](/windows-hardware/drivers/ddi/kdnetpf/ns-kdnetpf-ndis_kdnet_pf_enum_element).
 
    The PfNumber field contains the PF Function Number, (e.g. bus.dev.**fun**)
 
-    The PfState field contains the PF state possible values- each element type described by **NDIS_KDNET_PF_STATE** enum.
+    The PfState field contains the PF state possible values- each element type described by [NDIS_KDNET_PF_STATE](/windows-hardware/drivers/ddi/kdnetpf/ne-kdnetpf-ndis_kdnet_pf_state) enum.
 
     **NDIS_KDNET_PF_STATE::NdisKdNetPfStatePrimary** - This is a primary PF and it's usually used only by the miniport driver.
 
@@ -129,11 +129,11 @@ The Multiple PF feature is operated by using these four NDIS OIDs.
 
 - The newly added PF will be returned to the client via a NDIS Query operation.
 
-- The ***OID_KDNET_ADD_PF*** OID is associated with the **NDIS_KDNET_ADD_PF** structure.
+- The ***OID_KDNET_ADD_PF*** OID is associated with the [NDIS_KDNET_ADD_PF](/windows-hardware/drivers/ddi/kdnetpf/ns-kdnetpf-ndis_kdnet_add_pf) structure.
 
 - The ***OID_KDNET_ADD_PF*** driver handler will return an ULONG containing the *added* PF function number.
 
-- This OID request will have only one Output parameter: `AddedFunctionNumber`. The `AddedFunctionNumber` indicates the added Function number value at the miniport PCI location (the BDF miniport). The kdnet.exe utility will receive this value and setup dbgsettings::busparams to points to the added PF. 
+- This OID request will have only one Output parameter: `AddedFunctionNumber`. The `AddedFunctionNumber` indicates the added Function number value at the miniport PCI location (the BDF miniport). The kdnet.exe utility will receive this value and setup dbgsettings::busparams to points to the added PF.
 
 >[!NOTE]
 > The added PF can be used exclusively by KDNET, so Windows  NIC drivers are rigged to expressly \*NOT\* run on an added PF, so this also applies when KDNET is \*NOT\* enabled on the system and the PF has been added to the port.
@@ -142,12 +142,12 @@ The Multiple PF feature is operated by using these four NDIS OIDs.
 
 - Remove a PF from the <u>given port</u>. The port is represented by the BDF.
 
-- The ***OID_KDNET_REMOVE_PF*** OID is associated with the **NDIS_KDNET_REMOVE_PF** structure
+- The ***OID_KDNET_REMOVE_PF*** OID is associated with the [NDIS_KDNET_REMOVE_PF](/windows-hardware/drivers/ddi/kdnetpf/ns-kdnetpf-ndis_kdnet_remove_pf) structure.
 
 - The ***OID_KDNET_REMOVE_PF*** OID has an input BDF port and returns an ULONG containing the *removed* PF function number via a NDIS Method operation.
 
 - This function will succeed only on the PFs that has been added via using the ***OID_KDNET_ADD_PF*** OID.
- 
+
 - This OID request will have the input BDF port from where needs to be removed the BDF. This function has an Output parameter of `FunctionNumber`. The output `FunctionNumber` will contain the removed Function number value.
 
 #### 4. Query PCI PF information (OID: ***OID_KDNET_QUERY_PF_INFORMATION***, see definition below)
@@ -156,14 +156,14 @@ The Multiple PF feature is operated by using these four NDIS OIDs.
 
 - The requested PF information will be returned to the client via a NDIS Method operation.
 
-- The ***OID_KDNET_QUERY_PF_INFORMATION*** OID is associated with the **NDIS_KDNET_QUERY_PF_INFORMATION** structure.
+- The ***OID_KDNET_QUERY_PF_INFORMATION*** OID is associated with the [NDIS_KDNET_QUERY_PF_INFORMATION](/windows-hardware/drivers/ddi/kdnetpf/ns-kdnetpf-ndis_kdnet_query_pf_information) structure.
 
 - The ***OID_KDNET_QUERY_PF_INFORMATION*** OID has an input BDF port and returns a buffer containing the following data:
 
     - MAC Address: Network address of the assigned new KDNET PF if there is any.
 
     - Usage Tag: Describes the entity that owns the PF port. It contains a constant value described by
-**NDIS_KDNET_PF_USAGE_TAG** enum.
+[NDIS_KDNET_PF_USAGE_TAG](/windows-hardware/drivers/ddi/kdnetpf/ne-kdnetpf-ndis_kdnet_pf_usage_tag) enum.
 
     - Maximum Number of PFs: Contains an ULONG with the maximum number of PFs that can be added to the given BDF.
 
@@ -377,3 +377,5 @@ The Multiple PF feature is operated by using these four NDIS OIDs.
 [Setting Up 2PF Kernel-Mode Debugging using KDNET](../debugger/setting-up-kernel-mode-debugging-using-2pf.md)
 
 [Network OIDs](network-oids.md)
+
+[kdnetpf.h header](/windows-hardware/drivers/ddi/kdnetpf/)

@@ -1,7 +1,7 @@
 ---
 title: Step 6 Submit device metadata for your UWP device app
 description: This topic describes how to submit device metadata for your UWP device app to the Windows Dev Center hardware dashboard.
-ms.date: 08/12/2021
+ms.date: 03/17/2023
 ---
 
 # Step 6: Submit device metadata for your UWP device app
@@ -12,8 +12,7 @@ This topic describes how to submit device metadata for your UWP device app to th
 
 A UWP device app is a special kind of UWP app that device manufacturers create to serve as a companion to their internal or peripheral device. By using device metadata, device apps can run privileged operations and automatically install when a device is plugged in. For more info about UWP device apps, see [Meet UWP device apps](meet-uwp-device-apps.md).
 
-> [!NOTE]
-> This topic is part of a step-by-step series. See [Build a UWP device app step-by-step](build-a-uwp-device-app-step-by-step.md) for the introduction.
+This topic is part of a step-by-step series. See [Build a UWP device app step-by-step](build-a-uwp-device-app-step-by-step.md) for the introduction.
 
 ## Before you begin
 
@@ -53,8 +52,7 @@ You can use the **Bulk Package Wizard** to create a bulk submission package that
 
     - **Update experience** should be selected if the experience has been submitted before.
 
-    > [!NOTE]
-    > The device must be certified before submitting device metadata for your UWP device app.
+    The device must be certified before submitting device metadata for your UWP device app.
 
 6. On the **Prepare bulk package for submission** page, click **Launch Signature Wizard** to start the **Digital Signature Wizard**, which is used to digitally sign your bulk submission package.
 

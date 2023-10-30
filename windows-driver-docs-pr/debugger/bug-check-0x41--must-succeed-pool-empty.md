@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x41 MUST_SUCCEED_POOL_EMPTY", "MUST_SUCCEED_POOL_EMPTY"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - MUST_SUCCEED_POOL_EMPTY
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The MUST\_SUCCEED\_POOL\_EMPTY bug check has a value of 0x00000041. This indicates that a kernel-mode thread has requested too much must-succeed pool.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## MUST\_SUCCEED\_POOL\_EMPTY Parameters
@@ -66,9 +67,9 @@ If a must-succeed request cannot be filled, this bug check is issued.
 
 Replace or rewrite the driver which is making the request. A driver should not request must-succeed pool. Instead, it should ask for normal pool and gracefully handle the scenario where the pool is temporarily empty.
 
-The [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command will show the driver that caused the error.
+The [**kb (Display Stack Backtrace)**](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command will show the driver that caused the error.
 
-Additionally, it is possible that a second component has depleted the must-succeed pool. To determine if this is the case, first use the **kb** command. Then use [**!vm 1**](-vm.md) to display total pool usage, [**!poolused 2**](-poolused.md) to display per-tag nonpaged pool usage, and **!poolused 4** to display per-tag paged pool usage. The component associated with the tag using the most pool is probably the source of the problem.
+Additionally, it is possible that a second component has depleted the must-succeed pool. To determine if this is the case, first use the **kb** command. Then use [**!vm 1**](../debuggercmds/-vm.md) to display total pool usage, [**!poolused 2**](../debuggercmds/-poolused.md) to display per-tag nonpaged pool usage, and **!poolused 4** to display per-tag paged pool usage. The component associated with the tag using the most pool is probably the source of the problem.
 
  
 

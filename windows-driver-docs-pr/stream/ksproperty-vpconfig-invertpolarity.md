@@ -4,6 +4,7 @@ description: The KSPROPERTY\_VPCONFIG\_INVERTPOLARITY property toggles the globa
 keywords: ["KSPROPERTY_VPCONFIG_INVERTPOLARITY Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_VPCONFIG_INVERTPOLARITY
 api_location:

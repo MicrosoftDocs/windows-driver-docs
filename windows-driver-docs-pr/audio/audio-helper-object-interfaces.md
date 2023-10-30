@@ -1,8 +1,10 @@
 ---
 title: Audio Helper Object Interfaces
 description: Audio Helper Object Interfaces
-ms.date: 11/28/2017
+ms.date: 03/06/2023
+ms.topic: reference
 ---
+
 
 # Audio Helper Object Interfaces
 

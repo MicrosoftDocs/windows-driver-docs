@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x7D INSTALL_MORE_MEMORY", "INSTALL_MORE_MEMORY"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INSTALL_MORE_MEMORY
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The INSTALL\_MORE\_MEMORY bug check has a value of 0x0000007D. This bug check indicates that there is not enough memory to start up the Microsoft Windows operating system.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## INSTALL\_MORE\_MEMORY Parameters

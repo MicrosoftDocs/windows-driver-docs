@@ -4,6 +4,7 @@ description: MBIMEx 4.0 5G SA Phase 2 includes support for end-to-end URSP handl
 keywords:
 - MBIMEx 4.0 – 5G SA Phase 2 support
 ms.date: 05/23/2022
+ms.custom: UpdateFrequency3
 ---
 
 # MBIMEx 4.0 – 5G SA Phase 2 support
@@ -14,10 +15,10 @@ MBIM Extensions Release number 4.0 introduces support for 5G SA Phase 2 features
 
 MBIMEx 4.0 adds the following new CIDs:
 
-![Table listing the new MBIMEx 4.0 CIDs.](images/MBIMEx-4.0-new-CIDs.png)
+:::image type="content" source="images/MBIMEx-4.0-new-CIDs.png" alt-text="Table showing new CIDs added in MBIMEx 4.0.":::
 
 MBIMEx 4.0 modifies the following existing CIDs:
 
-![Table listing the modified MBIMEx 4.0 CIDs.](images/MBIMEx-4.0-modified-CIDs.png)
+:::image type="content" source="images/MBIMEx-4.0-modified-CIDs.png" alt-text="Table displaying modified CIDs in MBIMEx 4.0.":::
 
 By default, Windows 11, version 22H2 announces MBIMEx 3.0 as the highest supported MBIMEx version by the host. A special capability is available to change the default to MBIMEx 4.0 for IHVs and driver developers. Contact your TAM for support if a Microsoft engineering partner needs the capability for testing and development.

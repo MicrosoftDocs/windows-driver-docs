@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_SEND_REQUEST_ACTION_FRAME_COMPLETE (dot11wificxintf.h)
+ms.topic: reference
 description: WiFiCx drivers use NDIS_STATUS_WDI_INDICATION_SEND_REQUEST_ACTION_FRAME_COMPLETE to indicate the completion of OID_WDI_TASK_SEND_REQUEST_ACTION_FRAME.
 ms.date: 07/30/2021
 keywords:

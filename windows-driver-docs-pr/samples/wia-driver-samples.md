@@ -1,7 +1,7 @@
 ---
 title: WIA driver samples
 description: The samples in this directory provide a starting point for writing a custom WIA driver for your device.
-ms.date: 12/03/2019
+ms.date: 03/22/2023
 ---
 
 # Windows Image Acquisition (WIA) driver samples

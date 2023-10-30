@@ -36,14 +36,7 @@ Each bus driver constructs hardware IDs and compatible IDs in its own, bus-speci
 *  [Identifiers for IDE Devices](identifiers-for-ide-devices.md)
 *  [Identifiers for PCMCIA Devices](identifiers-for-pcmcia-devices.md)
 *  [Identifiers for ISAPNP Devices](identifiers-for-isapnp-devices.md)
+*  [Identifiers for Audio Devices](identifiers-for-hdaudio-devices.md)
 *  [Identifiers for 1394 Devices](identifiers-for-1394-devices.md)
 *  [Identifiers for Secure Digital (SD) Devices](identifiers-for-secure-digital--sd--devices.md)
 *  [Identifiers for USB Devices](identifiers-for-usb-devices.md)
-
-
- 
-
-
-
-
-

@@ -1,23 +1,24 @@
 ---
-title: Iasphelp get\_ErrorDscp method
+title: Iasphelp get_ErrorDscp method
 description: The ErrorDscp property enables an ASP Web page to convert an error code to a descriptive string.
 MS-HAID:
-- 'webfnc\_55f547fe-4cbe-4905-b268-afd7af400de4.xml'
-- 'print.iasphelp\_errordscp'
+- 'webfnc_55f547fe-4cbe-4905-b268-afd7af400de4.xml'
+- 'print.iasphelp_errordscp'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 keywords: ["get_ErrorDscp method Print Devices", "get_ErrorDscp method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_ErrorDscp method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Iasphelp.get_ErrorDscp
 api_type:
 - COM
-ms.date: 04/20/2017
+ms.date: 06/23/2023
 ---
 
-# Iasphelp::get\_ErrorDscp method
+# Iasphelp::get_ErrorDscp method
 
 The **ErrorDscp** property enables an ASP Web page to convert an error code to a descriptive string.
 
@@ -42,36 +43,12 @@ A caller-supplied pointer to a location that receives the descriptive string tha
 
 Win32 error codes can also be returned.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Return code</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>S_OK</strong></td>
-<td><p>The operation succeeded.</p></td>
-</tr>
-<tr class="even">
-<td><strong>E_HANDLE</strong></td>
-<td><p>The <strong>Iasphelp::Open</strong> method has not been called.</p></td>
-</tr>
-<tr class="odd">
-<td><strong>E_POINTER</strong></td>
-<td><p>Invalid <em>pVal</em> pointer.</p></td>
-</tr>
-<tr class="even">
-<td><strong>E_OUTOFMEMORY</strong></td>
-<td><p>Out of memory.</p></td>
-</tr>
-</tbody>
-</table>
+| Return code | Description |
+|--|--|
+| **S_OK** | The operation succeeded. |
+| **E_HANDLE** | The **Iasphelp::Open** method has not been called. |
+| **E_POINTER** | Invalid *pVal* pointer. |
+| **E_OUTOFMEMORY** | Out of memory. |
 
 ## VBScript Example
 
@@ -90,18 +67,7 @@ ErrorString = objPrinter.ErrorDscp(ErrorCode)
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Target platform</p></td>
-<td>Desktop</td>
-</tr>
-</tbody>
-</table>
+**Target platform:** Desktop
 
 ## See also
 

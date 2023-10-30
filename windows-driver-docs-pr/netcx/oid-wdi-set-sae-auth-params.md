@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_SET_SAE_AUTH_PARAMS (dot11wificxintf.h)
+ms.topic: reference
 description: The OID_WDI_SET_SAE_AUTH_PARAMS command contains parameters required to send the SAE Commit or Confirm request, or an error message.
 ms.date: 07/31/2021
 keywords:

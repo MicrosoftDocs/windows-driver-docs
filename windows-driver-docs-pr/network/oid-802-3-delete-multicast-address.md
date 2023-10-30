@@ -1,5 +1,6 @@
 ---
 title: OID_802_3_DELETE_MULTICAST_ADDRESS
+ms.topic: reference
 description: As a set request, NDIS and overlying protocol drivers use the OID_802_3_DELETE_MULTICAST_ADDRESS OID to delete a previously added multicast address from the multicast address list of a miniport adapter.
 ms.date: 08/08/2017
 keywords: 

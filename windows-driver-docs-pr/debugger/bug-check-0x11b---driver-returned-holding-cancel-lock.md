@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x11B DRIVER_RETURNED_HOLDING_CANCEL_LOCK", "DRIVER_RETURN
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DRIVER_RETURNED_HOLDING_CANCEL_LOCK
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The DRIVER\_RETURNED\_HOLDING\_CANCEL\_LOCK bug check has a value of 0x0000011B. This bug check indicates that a driver has returned from a *cancel* routine that holds the global cancel lock. This causes all later cancellation calls to fail, and results in either a deadlock or another bug check.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## DRIVER\_RETURNED\_HOLDING\_CANCEL\_LOCK Parameters

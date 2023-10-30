@@ -2,6 +2,7 @@
 title: IRP_MJ_DEVICE_CONTROL
 description: Every driver whose device objects belong to a particular device type (see Specifying Device Types) is required to support this request in a DispatchDeviceControl routine, if a set of system-defined I/O control codes (IOCTLs) exists for the type.
 ms.date: 08/12/2017
+ms.topic: reference
 keywords:
  - IRP_MJ_DEVICE_CONTROL Kernel-Mode Driver Architecture
 ---

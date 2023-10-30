@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1000007F UNEXPECTED_KERNEL_MODE_TRAP_M", "UNEXPECTED_KER
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - UNEXPECTED_KERNEL_MODE_TRAP_M
 api_type:
@@ -19,10 +20,10 @@ The UNEXPECTED\_KERNEL\_MODE\_TRAP\_M bug check has a value of 0x1000007F. This 
 Bug check 0x1000007F has the same meaning and parameters as [**bug check 0x7F**](bug-check-0x7f--unexpected-kernel-mode-trap.md) (UNEXPECTED\_KERNEL\_MODE\_TRAP).
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 ## Resolution
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
  
 

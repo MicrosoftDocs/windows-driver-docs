@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["ReqDelete rule (kmdf)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ReqDelete
 api_type:

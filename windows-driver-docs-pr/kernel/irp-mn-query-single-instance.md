@@ -2,6 +2,7 @@
 title: IRP_MN_QUERY_SINGLE_INSTANCE
 description: Learn about the 'IRP_MN_QUERY_SINGLE_INSTANCE' kernel-mode driver architecture. All drivers that support WMI must handle this IRP.
 ms.date: 08/12/2017
+ms.topic: reference
 keywords:
  - IRP_MN_QUERY_SINGLE_INSTANCE Kernel-Mode Driver Architecture
 ---

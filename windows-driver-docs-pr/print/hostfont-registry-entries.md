@@ -5,10 +5,12 @@ keywords:
 - PostScript Printer Driver WDK print , HostFontXxx registry entries
 - Pscript WDK print , HostFontXxx registry entries
 - HostFontXxx registry entries WDK Pscript
-ms.date: 09/14/2022
+ms.date: 01/27/2023
 ---
 
 # Hostfont registry entries
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 An OEM plug-in can notify the Pscript5 driver that the %hostfont%-ready PostScript interpreter has a set of fonts and CIDFonts that are available to use and are identical to those that the Pscript5 driver might download in the course of a print job. Notification of which fonts are to be handled this way is done by placing keys in the registry. The Pscript5 driver checks the registry for new information when its [**DrvEnablePDEV**](/windows/win32/api/winddi/nf-winddi-drvenablepdev) function is called. The plug-in can then ensure that the data is current before the PDEV is enabled.
 

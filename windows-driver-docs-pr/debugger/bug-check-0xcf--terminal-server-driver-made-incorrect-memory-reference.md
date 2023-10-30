@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xCF TERMINAL_SERVER_DRIVER_MADE_INCORRECT_MEMORY_REFERENC
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - TERMINAL_SERVER_DRIVER_MADE_INCORRECT_MEMORY_REFERENCE
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The TERMINAL\_SERVER\_DRIVER\_MADE\_INCORRECT\_MEMORY\_REFERENCE bug check has a value of 0x000000CF. This indicates that a driver has been incorrectly ported to the terminal server.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## TERMINAL\_SERVER\_DRIVER\_MADE\_INCORRECT\_MEMORY\_REFERENCE Parameters

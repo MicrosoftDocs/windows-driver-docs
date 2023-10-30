@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x18E KERNEL_PARTITION_REFERENCE_VIOLATION",  "KERNEL_PART
 ms.date: 05/23/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KERNEL_PARTITION_REFERENCE_VIOLATION
 api_type:
@@ -19,7 +20,7 @@ This error indicates that a partition was improperly dereferenced. This normally
 
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## KERNEL\_PARTITION\_REFERENCE\_VIOLATION Parameters

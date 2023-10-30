@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x11F INVALID_DRIVER_HANDLE", "INVALID_DRIVER_HANDLE"]
 ms.date: 01/30/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INVALID_DRIVER_HANDLE
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The INVALID\_DRIVER\_HANDLE bug check has a value of 0x0000011F. This indicates that someone has closed the initial handle for a driver between inserting the driver object and referencing the handle.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## INVALID\_DRIVER\_HANDLE Parameters

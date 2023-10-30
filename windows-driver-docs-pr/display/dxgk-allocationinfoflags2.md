@@ -4,6 +4,7 @@ description: The DXGK\_ALLOCATIONINFOFLAGS2 structure is reserved for system use
 keywords: ["_DXGK_ALLOCATIONINFOFLAGS2 structure Display Devices", "DXGK_ALLOCATIONINFOFLAGS2 structure Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DXGK_ALLOCATIONINFOFLAGS2
 api_location:

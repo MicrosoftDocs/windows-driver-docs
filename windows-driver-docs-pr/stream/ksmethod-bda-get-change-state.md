@@ -4,6 +4,7 @@ description: Clients use KSMETHOD_BDA_GET_CHANGE_STATE to determine the current 
 keywords: ["KSMETHOD_BDA_GET_CHANGE_STATE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSMETHOD_BDA_GET_CHANGE_STATE
 api_location:

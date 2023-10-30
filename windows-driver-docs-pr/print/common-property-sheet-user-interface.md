@@ -7,14 +7,12 @@ keywords:
 - Common Property Sheet User Interface WDK print
 - CPSUI WDK print
 - property sheet pages WDK print
-ms.date: 04/20/2017
+ms.date: 01/26/2023
 ---
 
 # Common Property Sheet User Interface
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 This section describes the Common Property Sheet User Interface (CPSUI). The following topics are provided:
 
@@ -27,11 +25,3 @@ This section describes the Common Property Sheet User Interface (CPSUI). The fol
 [Application-Supplied Callback Functions](application-supplied-callback-functions.md)
 
 [Creating Property Sheet Pages](creating-property-sheet-pages.md)
-
- 
-
- 
-
-
-
-

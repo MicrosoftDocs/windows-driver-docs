@@ -4,6 +4,7 @@ description: finishText XML Element
 keywords: ["finishText XML Element Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - finishText XML Element
 api_type:

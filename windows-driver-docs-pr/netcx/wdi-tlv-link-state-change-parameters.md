@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_LINK_STATE_CHANGE_PARAMETERS (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_LINK_STATE_CHANGE_PARAMETERS is a WiFiCx TLV that contains link state change parameters for NDIS_STATUS_WDI_INDICATION_LINK_STATE_CHANGE.
 ms.date: 08/30/2021
 keywords:

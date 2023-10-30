@@ -1,43 +1,26 @@
 ---
-title: Kernel-Mode Dump Files
-description: Kernel-Mode Dump Files
+title: Kernel-mode dump files
+description: Learn how to create and analyze kernel-mode memory dump files to resolve kernel-mode errors.
 keywords: ["dump file, kernel mode"]
-ms.date: 05/23/2017
+ms.date: 12/14/2022
 ---
 
-# Kernel-Mode Dump Files
+# Kernel-mode dump files
 
+When a kernel-mode error occurs, Microsoft Windows displays the blue screen with bug check data by default. However, you can choose from several alternative behaviors:
 
-## <span id="ddk_kernel_mode_dump_files_dbg"></span><span id="DDK_KERNEL_MODE_DUMP_FILES_DBG"></span>
+- A kernel debugger, such as WinDbg or KD, can be contacted.
 
+- A memory dump file can be written.
 
-When a kernel-mode error occurs, the default behavior of Microsoft Windows is to display the blue screen with bug check data.
+- The system can automatically reboot.
 
-However, there are several alternative behaviors that can be selected:
+- A memory dump file can be written, and the system can automatically reboot afterwards.
 
--   A kernel debugger (such as WinDbg or KD) can be contacted.
+**Create and analyze kernel-mode memory dump files.**
 
--   A memory dump file can be written.
+There are three different [varieties of kernel-mode dump files](varieties-of-kernel-mode-dump-files.md). However, no dump file can ever be as useful and versatile as a live kernel debugger attached to the system that has failed.
 
--   The system can automatically reboot.
+- [Create a kernel-mode dump file](creating-a-kernel-mode-dump-file.md).
 
--   A memory dump file can be written, and the system can automatically reboot afterwards.
-
-This section covers how to create and analyze a kernel-mode memory dump file. There are three different varieties of crash dump files. However, it should be remembered that no dump file can ever be as useful and versatile as a live kernel debugger attached to the system that has failed.
-
-This section includes:
-
-[Varieties of Kernel-Mode Dump Files](varieties-of-kernel-mode-dump-files.md)
-
-[Creating a Kernel-Mode Dump File](creating-a-kernel-mode-dump-file.md)
-
-[Analyzing a Kernel-Mode Dump File](analyzing-a-kernel-mode-dump-file.md)
-
- 
-
- 
-
-
-
-
-
+- [Analyze a kernel-mode dump file](analyzing-a-kernel-mode-dump-file.md).

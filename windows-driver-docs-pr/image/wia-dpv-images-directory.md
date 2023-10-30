@@ -4,6 +4,7 @@ description: The WIA_DPV_IMAGES_DIRECTORY property is reserved by Microsoft for 
 keywords: ["WIA_DPV_IMAGES_DIRECTORY Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPV_IMAGES_DIRECTORY
 api_location:

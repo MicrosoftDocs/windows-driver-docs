@@ -4,15 +4,15 @@ description: The optional Film element describes the capabilities of the film sc
 keywords: ["Film element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn Film
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 04/24/2023
 ---
 
 # Film element
-
 
 The optional **Film** element describes the capabilities of the film scanning option that is attached to the scanner.
 
@@ -30,59 +30,22 @@ There are no attributes.
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="filmcolor.md" data-raw-source="[&lt;strong&gt;FilmColor&lt;/strong&gt;](filmcolor.md)"><strong>FilmColor</strong></a></p></td>
-</tr>
-<tr class="even">
-<td><p><a href="filmmaximumsize.md" data-raw-source="[&lt;strong&gt;FilmMaximumSize&lt;/strong&gt;](filmmaximumsize.md)"><strong>FilmMaximumSize</strong></a></p></td>
-</tr>
-<tr class="odd">
-<td><p><a href="filmminimumsize.md" data-raw-source="[&lt;strong&gt;FilmMinimumSize&lt;/strong&gt;](filmminimumsize.md)"><strong>FilmMinimumSize</strong></a></p></td>
-</tr>
-<tr class="even">
-<td><p><a href="filmopticalresolution.md" data-raw-source="[&lt;strong&gt;FilmOpticalResolution&lt;/strong&gt;](filmopticalresolution.md)"><strong>FilmOpticalResolution</strong></a></p></td>
-</tr>
-<tr class="odd">
-<td><p><a href="filmresolutions.md" data-raw-source="[&lt;strong&gt;FilmResolutions&lt;/strong&gt;](filmresolutions.md)"><strong>FilmResolutions</strong></a></p></td>
-</tr>
-<tr class="even">
-<td><p><a href="filmscanmodessupported.md" data-raw-source="[&lt;strong&gt;FilmScanModesSupported&lt;/strong&gt;](filmscanmodessupported.md)"><strong>FilmScanModesSupported</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**FilmColor**](filmcolor.md) |
+| [**FilmMaximumSize**](filmmaximumsize.md) |
+| [**FilmMinimumSize**](filmminimumsize.md) |
+| [**FilmOpticalResolution**](filmopticalresolution.md) |
+| [**FilmResolutions**](filmresolutions.md) |
+| [**FilmScanModesSupported**](FilmScanModesSupported.md) |
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="scannerconfiguration.md" data-raw-source="[&lt;strong&gt;ScannerConfiguration&lt;/strong&gt;](scannerconfiguration.md)"><strong>ScannerConfiguration</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**ScannerConfiguration**](scannerconfiguration.md) |
 
 ## See also
-
 
 [**FilmColor**](filmcolor.md)
 
@@ -97,13 +60,3 @@ There are no attributes.
 [**FilmScanModesSupported**](filmscanmodessupported.md)
 
 [**ScannerConfiguration**](scannerconfiguration.md)
-
- 
-
- 
-
-
-
-
-
-

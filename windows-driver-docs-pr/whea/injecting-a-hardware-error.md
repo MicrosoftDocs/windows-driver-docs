@@ -5,7 +5,7 @@ keywords:
 - injecting hardware errors WDK WHEA
 - errors WDK WHEA , injecting, WHEA WDK , injecting
 - Windows Hardware Error Architecture WDK , injecting
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Injecting a Hardware Error

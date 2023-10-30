@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_PROVISION_SERVICE_ATTRIBUTES (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_P2P_PROVISION_SERVICE_ATTRIBUTES is a WiFiCx TLV that contains Wi-Fi Direct Provision Service attributes.
 ms.date: 07/31/2021
 keywords:

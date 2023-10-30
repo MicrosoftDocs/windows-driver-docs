@@ -1,42 +1,34 @@
 ---
-title: Adding Interrupt Event Support
-description: Adding Interrupt Event Support
-ms.date: 04/20/2017
+title: Add Interrupt Event Support
+description: Add Interrupt Event Support
+ms.date: 03/27/2023
 ---
 
-# Adding Interrupt Event Support
-
-
-
-
+# Add Interrupt Event Support
 
 To properly set up your WIA driver to report interrupt events, do the following:
 
-1.  Set **Capabilities=0x31** in the device's INF file. (See [INF Files for WIA Devices](inf-files-for-wia-devices.md) for details.)
+1. Set **Capabilities=0x31** in the device's INF file. (See [INF Files for WIA Devices](inf-files-for-wia-devices.md) for details.)
 
-2.  Report STI\_GENCAP\_NOTIFICATIONS and STI\_USD\_GENCAP\_NATIVE\_PUSHSUPPORT in the [**IStiUSD::GetCapabilities**](/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istiusd-getcapabilities) method.
+2. Report STI_GENCAP_NOTIFICATIONS and STI_USD_GENCAP_NATIVE_PUSHSUPPORT in the [**IStiUSD::GetCapabilities**](/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istiusd-getcapabilities) method.
 
-3.  Report all supported events in the [**IWiaMiniDrv::drvGetCapabilities**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvgetcapabilities) method.
+3. Report all supported events in the [**IWiaMiniDrv::drvGetCapabilities**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvgetcapabilities) method.
 
-4.  Cache and use the event handle passed in the [**IStiUSD::SetNotificationHandle**](/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istiusd-setnotificationhandle) method. This is the event handle that the device signals, or the WIA minidriver signals directly using **SetEvent** (described in the Microsoft Windows SDK documentation). It is in this method that you initiate the waiting state of the WIA device.
+4. Cache and use the event handle passed in the [**IStiUSD::SetNotificationHandle**](/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istiusd-setnotificationhandle) method. This is the event handle that the device signals, or the WIA minidriver signals directly using **SetEvent** (described in the Microsoft Windows SDK documentation). It is in this method that you initiate the waiting state of the WIA device.
 
-5.  Report the proper event information response in the [**IStiUSD::GetNotificationData**](/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istiusd-getnotificationdata) method.
+5. Report the proper event information response in the [**IStiUSD::GetNotificationData**](/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istiusd-getnotificationdata) method.
 
 The following two examples show configuring your device for interrupts with implementations of the **IWiaMiniDrv::drvGetCapabilities** and **IStiUSD::SetNotificationHandle** methods.
 
 **Note**   It is important to use overlapped I/O calls with all activities involving the kernel mode drivers. This allows for proper time-outs and cancellation of device requests.
 
- 
-
-### <a href="" id="explanation-of-the-iwiaminidrv-drvgetcapabilities-implementation"></a>Explanation of the IWiaMiniDrv::drvGetCapabilities Implementation
+## Explanation of the IWiaMiniDrv::drvGetCapabilities Implementation
 
 The WIA service calls the **IWiaMiniDrv::drvGetCapabilities** method to obtain the WIA device-supported events and commands. The WIA driver should first look at the incoming *lFlags* parameter to determine which request it should answer.
 
-The WIA driver should allocate memory (to be used by the WIA driver and freed by it) to contain an array of [**WIA\_DEV\_CAP\_DRV**](/windows-hardware/drivers/ddi/wiamindr_lh/ns-wiamindr_lh-_wia_dev_cap_drv) structures. In the call to the **IWiaMiniDrv::drvGetCapabilities**, pass a pointer to the memory location that holds the address of the WIA driver-allocated memory in the *ppCapabilities* parameter.
+The WIA driver should allocate memory (to be used by the WIA driver and freed by it) to contain an array of [**WIA_DEV_CAP_DRV**](/windows-hardware/drivers/ddi/wiamindr_lh/ns-wiamindr_lh-_wia_dev_cap_drv) structures. In the call to the **IWiaMiniDrv::drvGetCapabilities**, pass a pointer to the memory location that holds the address of the WIA driver-allocated memory in the *ppCapabilities* parameter.
 
 **Note**   The WIA service will not free this memory. It is important that the WIA driver manages the allocated memory.
-
- 
 
 The following example shows an implementation of the [**IWiaMiniDrv::drvGetCapabilities**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvgetcapabilities) method.
 
@@ -266,9 +258,9 @@ When the WIA minidriver or a WIA device has detected and signaled an event, the 
 
 The WIA service calls the **IStiUSD::GetNotificationData** method to get information about an event that has just been signaled. The **IStiUSD::GetNotificationData** method can be called as a result of one of two event operations.
 
-1.  **IStiUSD::GetStatus** reported that there was an event pending by setting the STI\_EVENTHANDLING\_PENDING flag in the [**STI\_DEVICE\_STATUS**](/windows-hardware/drivers/ddi/sti/ns-sti-_sti_device_status) structure.
+1. **IStiUSD::GetStatus** reported that there was an event pending by setting the STI_EVENTHANDLING_PENDING flag in the [**STI_DEVICE_STATUS**](/windows-hardware/drivers/ddi/sti/ns-sti-_sti_device_status) structure.
 
-2.  The *hEvent* handle passed in by **IStiUSD::SetNotificationHandle** was signaled by the hardware, or by calling **SetEvent** (described in the Microsoft Windows SDK documentation).
+2. The *hEvent* handle passed in by **IStiUSD::SetNotificationHandle** was signaled by the hardware, or by calling **SetEvent** (described in the Microsoft Windows SDK documentation).
 
 The WIA driver is responsible for filling out the [**STINOTIFY**](/windows-hardware/drivers/ddi/sti/ns-sti-_stinotify) structure
 
@@ -323,11 +315,9 @@ STDMETHODIMP CWIADevice::GetNotificationData( LPSTINOTIFY pBuffer )
 
 Interrupt events can be stopped at any time by passing **NULL** as the event handle. The minidriver should interpret this as a signal to stop any wait states on the hardware device.
 
-**Note**   The [**IWiaMiniDrv::drvNotifyPnpEvent**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvnotifypnpevent) method can receive power management events that affect the event waiting state.
+The [**IWiaMiniDrv::drvNotifyPnpEvent**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvnotifypnpevent) method can receive power management events that affect the event waiting state.
 
- 
-
-The WIA service calls the **IWiaMiniDrv::drvNotifyPnpEvent** method and sends a WIA\_EVENT\_POWER\_SUSPEND event when the system is about to be placed in a sleep state. If this call occurs, the device might already be out of its wait state. Sleep states automatically trigger kernel-mode drivers to exit any waiting state to allow the system to enter this powered-down state. When the system resumes from its sleep state, the WIA service sends the WIA\_EVENT\_POWER\_RESUME event. At this time the WIA minidriver must reestablish the interrupt event wait state. For more information about sleep states, see [System Power States](../kernel/system-power-states.md) and [Device Power States](../kernel/device-power-states.md).
+The WIA service calls the **IWiaMiniDrv::drvNotifyPnpEvent** method and sends a WIA_EVENT_POWER_SUSPEND event when the system is about to be placed in a sleep state. If this call occurs, the device might already be out of its wait state. Sleep states automatically trigger kernel-mode drivers to exit any waiting state to allow the system to enter this powered-down state. When the system resumes from its sleep state, the WIA service sends the WIA_EVENT_POWER_RESUME event. At this time the WIA minidriver must reestablish the interrupt event wait state. For more information about sleep states, see [System Power States](../kernel/system-power-states.md) and [Device Power States](../kernel/device-power-states.md).
 
 It is recommended that the WIA minidriver cache the event handle initially passed into the [**IStiUSD::SetNotificationHandle**](/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istiusd-setnotificationhandle) method so that it can be reused when the system wakes up from a sleep or hibernation.
 
@@ -337,10 +327,10 @@ The WIA service calls the **IWiaMiniDrv::drvNotifyPnpEvent** method when system 
 
 Some common events that must be processed are:
 
-<a href="" id="wia-event-power-suspend"></a>WIA\_EVENT\_POWER\_SUSPEND  
+**WIA_EVENT_POWER_SUSPEND**  
 The system is going into suspend/sleep mode.
 
-<a href="" id="wia-event-power-resume"></a>WIA\_EVENT\_POWER\_RESUME  
+**WIA_EVENT_POWER_RESUME**  
 The system is waking up from suspend/sleep mode.
 
 The WIA driver should restore any event interrupt wait states after returning from a suspend. This ensures that the events will still function when the system wakes up.
@@ -392,6 +382,3 @@ HRESULT _stdcall CWIADevice::drvNotifyPnpEvent(
   return hr;
 }
 ```
-
- 
-

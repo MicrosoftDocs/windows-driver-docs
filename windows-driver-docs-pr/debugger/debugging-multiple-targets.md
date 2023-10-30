@@ -23,9 +23,9 @@ The *current* or *active* system is the system that you are currently debugging.
 
 The first target is acquired in the usual manner.
 
-You can debug additional live user-mode applications by using the [**.attach (Attach to Process)**](-attach--attach-to-process-.md) or [**.create (Create Process)**](-create--create-process-.md) command, followed by the **g (Go)** command.
+You can debug additional live user-mode applications by using the [**.attach (Attach to Process)**](../debuggercmds/-attach--attach-to-process-.md) or [**.create (Create Process)**](../debuggercmds/-create--create-process-.md) command, followed by the **g (Go)** command.
 
-You can debug additional dump files by using the [**.opendump (Open Dump File)**](-opendump--open-dump-file-.md) command, followed by the **g (Go)** command. You can also open multiple dump files when the debugger is started. To open multiple dump files, include multiple **-z** switches in the command, each followed by a different file name.
+You can debug additional dump files by using the [**.opendump (Open Dump File)**](../debuggercmds/-opendump--open-dump-file-.md) command, followed by the **g (Go)** command. You can also open multiple dump files when the debugger is started. To open multiple dump files, include multiple **-z** switches in the command, each followed by a different file name.
 
 You can use the preceding commands even if the processes are on different systems. You must start a process server on each system and then use the -premote parameter with **.attach** or **.create** to identify the proper process server. If you use the **.attach** or **.create** command again without specifying the -premote parameter, the debugger attaches to, or creates, a process on the current system.
 
@@ -33,19 +33,19 @@ You can use the preceding commands even if the processes are on different system
 
 When debugging begins, the current system is the one that the debugger most recently attached to. If an exception occurs, the current system switches to the system that this exception occurred on.
 
-To close one target and continue to debug the other targets, use the [**.kill (Kill Process)**](-kill--kill-process-.md) command. You can use the [**.detach (Detach from Process)**](-detach--detach-from-process-.md) command or WinDbg's [Debug | Detach Debuggee](debug---detach-debuggee.md) menu command instead. These commands detach the debugger from the target but leave the target running.
+To close one target and continue to debug the other targets, use the [**.kill (Kill Process)**](../debuggercmds/-kill--kill-process-.md) command. You can use the [**.detach (Detach from Process)**](../debuggercmds/-detach--detach-from-process-.md) command or WinDbg's **Debug | Detach Debuggee** menu command instead. These commands detach the debugger from the target but leave the target running.
 
 To control the debugging of multiple systems, you can use the following methods:
 
--   The [**|| (System Status)**](----system-status-.md) command displays information about one or more systems
+-   The [**|| (System Status)**](../debuggercmds/----system-status-.md) command displays information about one or more systems
 
--   The [**||s (Set Current System)**](--s--set-current-system-.md) command enables you to select the current system
+-   The [**||s (Set Current System)**](../debuggercmds/--s--set-current-system-.md) command enables you to select the current system
 
 -   (WinDbg only) The [Processes and Threads window](processes-and-threads-window.md) enables you display or select systems, processes, and threads
 
 By using these commands to select the current system, and by using the standard commands to [select the current process and thread](controlling-processes-and-threads.md), you can determine the context of commands that display memory and registers.
 
-However, you cannot separate execution of these processes. The [**g (Go)**](g--go-.md) command always causes all targets to execute together.
+However, you cannot separate execution of these processes. The [**g (Go)**](../debuggercmds/g--go-.md) command always causes all targets to execute together.
 
 **Note**   There are complications, when you debug live targets and dump targets together, because commands behave differently for each type of debugging. For example, if you use the **g (Go)** command when the current system is a dump file, the debugger begins executing, but you cannot break back into the debugger, because the break command is not recognized as valid for dump file debugging.
 
@@ -58,9 +58,9 @@ To  work with three dump files at the same time, you can use the -z option to lo
 windbg -z c:\notepad.dmp -z c:\paint.dmp -z c:\calc.dmp
 ```
 
-For more infomation see [WinDbg Command-Line Options](windbg-command-line-options.md). You can also use the [.opendump](-opendump--open-dump-file-.md)  and the [**g (Go)**](g--go-.md) commands to load additional dump files in the debugger. 
+For more infomation see [WinDbg Command-Line Options](windbg-command-line-options.md). You can also use the [.opendump](../debuggercmds/-opendump--open-dump-file-.md)  and the [**g (Go)**](../debuggercmds/g--go-.md) commands to load additional dump files in the debugger. 
 
-Use the  [|| (System Status)](----system-status-.md) command to confirm that all three systems are present.
+Use the  [|| (System Status)](../debuggercmds/----system-status-.md) command to confirm that all three systems are present.
 
 ```dbgcmd
 ||0:0:007> ||
@@ -69,7 +69,7 @@ Use the  [|| (System Status)](----system-status-.md) command to confirm that all
    2 User mini dump: c:\calc.dmp
 ```
 
-Use the [**g (Go)**](g--go-.md) command to complete loading of the dump files. 
+Use the [**g (Go)**](../debuggercmds/g--go-.md) command to complete loading of the dump files. 
 ```dbgcmd
 ||0:0:007> g
 
@@ -92,7 +92,7 @@ ntdll!DbgBreakPoint:
 00007ff8`aada8d70 cc              int     3
 ```
 
-Then use the  [||s (Set Current System)](--s--set-current-system-.md) command to set the current system to system 1 and then display the current system.
+Then use the  [||s (Set Current System)](../debuggercmds/--s--set-current-system-.md) command to set the current system to system 1 and then display the current system.
 
 ```dbgcmd
 ||1:1:017> ||1s
@@ -102,7 +102,7 @@ Then use the  [||s (Set Current System)](--s--set-current-system-.md) command to
    2 User mini dump: c:\calc.dmp
 ```
 
-You can use the [.detach](-detach--detach-from-process-.md) command when you are done looking at the current dump file.
+You can use the [.detach](../debuggercmds/-detach--detach-from-process-.md) command when you are done looking at the current dump file.
 
 ```dbgcmd
 ||1:1:017> .detach
@@ -116,7 +116,7 @@ Detached
 
 ## Resources
 
-For addtional information on debugging see the following resources.
+For additional information on debugging see the following resources.
 
 **Books**
 

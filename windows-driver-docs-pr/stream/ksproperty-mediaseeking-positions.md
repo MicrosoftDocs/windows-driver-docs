@@ -4,6 +4,7 @@ description: The KSPROPERTY_MEDIASEEKING_POSITIONS property sets the media time 
 keywords: ["KSPROPERTY_MEDIASEEKING_POSITIONS Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_MEDIASEEKING_POSITIONS
 api_location:

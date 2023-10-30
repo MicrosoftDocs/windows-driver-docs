@@ -4,6 +4,7 @@ description: Learn about the D3DKMT\_OUTPUTDUPL\_METADATA structure, which is re
 keywords: ["D3DKMT_OUTPUTDUPL_METADATA structure Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - D3DKMT_OUTPUTDUPL_METADATA
 api_location:

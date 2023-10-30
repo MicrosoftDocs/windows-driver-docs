@@ -1,10 +1,10 @@
 ---
-title: Avoid Restarts during Device Installations and Driver Updates
+title: Avoid Restarts During Device Installations and Driver Updates
 description: Provides information about avoiding system restarts during device installations and driver updates.
 ms.date: 05/20/2022
 ---
 
-# Avoiding System Restarts during Device Installations and Driver Updates
+# Avoiding System Restarts During Device Installations and Driver Updates
 
 To avoid system restarts during device installations, use the following rules:
 

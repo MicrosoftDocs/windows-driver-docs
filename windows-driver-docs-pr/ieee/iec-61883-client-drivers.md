@@ -7,7 +7,7 @@ keywords:
 - IEEE 1394 WDK buses , IEC-61883 client drivers
 - 1394 WDK buses , IEC-61883 client drivers
 - protocols WDK buses
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # IEC-61883 Client Drivers

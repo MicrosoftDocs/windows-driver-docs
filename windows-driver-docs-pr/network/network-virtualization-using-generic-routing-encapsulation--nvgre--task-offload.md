@@ -1,7 +1,7 @@
 ---
 title: About Network Virtualization using Generic Routing Encapsulation (NVGRE)
 description: This section describes Network Virtualization using Generic Routing Encapsulation (NVGRE) Task Offload
-ms.date: 04/20/2017
+ms.date: 06/15/2023
 ---
 
 # About Network Virtualization using Generic Routing Encapsulation (NVGRE)
@@ -10,7 +10,7 @@ Hyper-V Network Virtualization supports Network Virtualization using Generic Rou
 
 The following figure shows a GRE-encapsulated packet. On the wire, NVGRE-encapsulated packets look like IP-over-Ethernet packets, except that the payload of the outer IP header is a GRE-encapsulated IP packet (including the Ethernet header).
 
-![comparison between original packet and packet with gre encapsulation. both contain mac (gre contains inner mac), ip header (gre contains inner ip header), tcp header, and tcp user data. in addition, packet with gre encapsulation contains outer mac, outer ip header, and gre.](images/nvgre.png)
+:::image type="content" source="images/nvgre.png" alt-text="Diagram comparing original packet and GRE-encapsulated packet. Both have MAC, IP header, TCP header, and TCP user data. GRE-encapsulated packet also has outer MAC, outer IP header, and GRE.":::
 
 NDIS 6.30 (available in Windows Server 2012 and later) introduces NVGRE Task Offload, which makes it possible to use NVGRE-formatted packets with:
 
@@ -19,9 +19,11 @@ NDIS 6.30 (available in Windows Server 2012 and later) introduces NVGRE Task Of
 - Transmit (Tx) checksum offload (IPv4, TCP, UDP)
 - Receive (Rx) checksum offload (IPv4, TCP, UDP)
 
-**Note**  It is possible for a protocol driver to offload "mixed mode" packets, which means packets in which the inner and outer IP header versions are different. For example, a packet could have outer IP header as IPv6 and the inner IP header as IPv4.
+NDIS 6.85 introduces support for NVGRE with UDP segmentation offload (USO).
 
-**Note**  It is also possible for a protocol driver to offload an NVGRE-formatted packet that has no inner TCP or UDP header. For example, an IP packet could have an inner payload that is an Internet Control Message Protocol (ICMP) packet.
+**Note**: It is possible for a protocol driver to offload "mixed mode" packets, which means packets in which the inner and outer IP header versions are different. For example, a packet could have outer IP header as IPv6 and the inner IP header as IPv4.
+
+**Note**: It is also possible for a protocol driver to offload an NVGRE-formatted packet that has no inner TCP or UDP header. For example, an IP packet could have an inner payload that is an Internet Control Message Protocol (ICMP) packet.
 
 For more information about NVGRE, see the following Internet Draft:
 
@@ -36,6 +38,7 @@ This section includes:
 
 - [Overview of Network Virtualization using Generic Routing Encapsulation (NVGRE) Task Offload](overview-of-network-virtualization-using-generic-routing-encapsulation--nvgre--task-offload.md)
 - [Supporting NVGRE in Large Send Offload (LSO)](supporting-nvgre-in-large-send-offload--lso-.md)
+- [Supporting NVGRE in UDP Segmentation Offload (USO)](nvgre-support-with-udp-segmentation-offload.md)
 - [Supporting NVGRE in Checksum Offload](supporting-nvgre-in-checksum-offload.md)
 - [Supporting NVGRE in RSS and VMQ Receive Task Offloads](supporting-nvgre-in-rss-and-vmq-receive-task-offloads.md)
 - [Locating the Transport Header for Encapsulated Packets in the Receive Path](locating-the-transport-header-for-encapsulaged-packets-in-the-receive-path.md)

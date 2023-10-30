@@ -1,7 +1,7 @@
 ---
 description: The Network Monitor tool (NetMon.exe) is a Windows-based application that you can use to view traces from WPD components.
 title: Using the Network Monitor Tool
-ms.date: 03/18/2022
+ms.date: 03/03/2023
 ---
 
 # Using the Network Monitor Tool
@@ -12,11 +12,11 @@ The Network Monitor tool (*NetMon.exe*) is an archived Windows-based application
 
 To install and configure the Network Monitor tool, complete the following steps.
 
-1. Download and install [*NetMon.exe*](https://go.microsoft.com/fwlink/p/?linkid=248501).
-2. Download and install [the Windows Driver Kit](https://go.microsoft.com/fwlink/p/?linkid=178709).
+1. Download and install [*NetMon.exe*](https://www.microsoft.com/download/details.aspx?id=4865).
+2. Download and install [the Windows Driver Kit](../download-the-wdk.md).
 3. Install the WPD parsers on your development machine by starting an instance of *Powershell.exe* with *Administrator* permissions and running the following sequence of commands.
    1. PowerShell -ExecutionPolicy RemoteSigned
-   2. cd “\\Program Files (x86)\\Windows Kits\\8.0\\Tools\\x86\\Network Monitor Parsers\\usb”
+   2. cd “C:\\Program Files (x86)\\Windows Kits\\10\\Tools\\10.0.22621.0\\x86\\Network Monitor Parsers\\usb”
    3. ..\\NplAutoProfile.ps1
    4. cd ..\\wpd
    5. ..\\NplAutoProfile.ps1
@@ -103,3 +103,4 @@ The Network Monitor tool provides several filtering capabilities.
 - Similarly, the following filter would retrieve the same method calls:
 
     WPDMTP.CorrespondingCommand.MTPOpcode == MTP\_OPCODE\_GETSERVICEPROPERTIES
+

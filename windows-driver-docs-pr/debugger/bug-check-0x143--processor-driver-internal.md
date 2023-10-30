@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x143 PROCESSOR_DRIVER_INTERNAL", "PROCESSOR_DRIVER_INTERN
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - PROCESSOR_DRIVER_INTERNAL
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The PROCESSOR\_DRIVER\_INTERNAL bug check has a value of 0x00000143. This indicates that the Processor Power Management (PPM) driver encountered a fatal error.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## PROCESSOR\_DRIVER\_INTERNAL Parameters

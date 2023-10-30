@@ -1,23 +1,24 @@
 ---
-title: Iasphelp get\_PageRate method
+title: Iasphelp get_PageRate method
 description: The PageRate property enables an ASP Web page to determine a printer's page rate.
 MS-HAID:
-- 'webfnc\_f356953e-ac15-4948-9a6e-b83d3aec8e7b.xml'
-- 'print.iasphelp\_pagerate'
+- 'webfnc_f356953e-ac15-4948-9a6e-b83d3aec8e7b.xml'
+- 'print.iasphelp_pagerate'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 keywords: ["get_PageRate method Print Devices", "get_PageRate method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_PageRate method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Iasphelp.get_PageRate
 api_type:
 - COM
-ms.date: 04/20/2017
+ms.date: 06/26/2023
 ---
 
-# Iasphelp::get\_PageRate method
+# Iasphelp::get_PageRate method
 
 The **PageRate** property enables an ASP Web page to determine a printer's page rate.
 
@@ -38,35 +39,13 @@ A caller-supplied location to receive a numeric value that represents the page r
 
 This property returns one of the values in the following table.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Return code</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>S_OK</strong></td>
-<td><p>The operation succeeded.</p></td>
-</tr>
-<tr class="even">
-<td><strong>E_HANDLE</strong></td>
-<td><p>The <a href="iasphelp-open.md" data-raw-source="[&lt;strong&gt;Iasphelp::Open&lt;/strong&gt;](iasphelp-open.md)"><strong>Iasphelp::Open</strong></a> method has not been called.</p></td>
-</tr>
-<tr class="odd">
-<td><strong>E_OUTOFMEMORY</strong></td>
-<td><p>Out of memory.</p></td>
-</tr>
-</tbody>
-</table>
+| Return code | Description |
+|--|--|
+| **S_OK** | The operation succeeded. |
+| **E_HANDLE** | The [**Iasphelp::Open**](iasphelp-open.md) method has not been called. |
+| **E_OUTOFMEMORY** | Out of memory. |
 
 ## VBScript Example
-
 
 To determine the units in which the page rate is measured, query the [**Iasphelp::PageRateUnit**](iasphelp-pagerateunit.md) property.
 
@@ -82,18 +61,7 @@ PtrPageRate = objPrinter.PageRate
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Target platform</p></td>
-<td>Desktop</td>
-</tr>
-</tbody>
-</table>
+**Target platform:** Desktop
 
 ## See also
 

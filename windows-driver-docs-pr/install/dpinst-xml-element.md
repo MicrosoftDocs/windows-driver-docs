@@ -4,6 +4,7 @@ description: dpinst XML Element
 keywords: ["dpinst XML Element Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - dpinst XML Element
 api_type:

@@ -1,10 +1,12 @@
 ---
 title: Use the XPS rasterization service
 description: Provides information about how to use the XPS rasterization service.
-ms.date: 09/09/2022
+ms.date: 01/31/2023
 ---
 
 # Use the XPS rasterization service
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The XPS rasterization service implements XPS rasterizer objects that convert fixed pages in XPS documents to bitmaps. This service simplifies the design of an XPSDrv filter that renders an XPS document as a series of bitmap images. The filter can tell an XPS rasterizer object to create a bitmap image of an axis-aligned, rectangular region in a fixed page.
 

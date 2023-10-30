@@ -4,10 +4,12 @@ description: Standard options are associated with standard features and are iden
 keywords:
 - printer options WDK Unidrv , standard
 - standard options WDK Unidrv
-ms.date: 08/02/2021
+ms.date: 01/30/2023
 ---
 
 # Standard options
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 Standard options are those that are associated with [standard features](standard-features.md). They are identified by predefined names that the GPD language recognizes. Resource identifiers for strings that represent these names are contained in stdnames.gpd, which is supplied with the Microsoft Windows Driver Kit (WDK).
 

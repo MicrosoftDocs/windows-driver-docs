@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1D7 EFS_FATAL_ERROR", "EFS_FATAL_ERROR"]
 ms.date: 01/22/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - EFS_FATAL_ERROR
 api_type:
@@ -17,7 +18,7 @@ The EFS\_FATAL\_ERROR bug check has a value of 0x000001D7. It indicates that an 
 
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
  
 
@@ -37,11 +38,11 @@ An EFS error condition has occurred such that cannot be handled without data los
 ## Resolution
 -----
 
-The [!analyze](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [!analyze](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
 Examine parameter 2 the NTSTATUS field to try and determine why NT_SUCCESS was not returned. This is the expected and only allowed value for file systems that call crypto pre-offloading.
 
-Use the debugger [!IRP](-irp.md) command to investigate parameter 3 for a possible conflicting IRP code or other issues.
+Use the debugger [!IRP](../debuggercmds/-irp.md) command to investigate parameter 3 for a possible conflicting IRP code or other issues.
 
 
 

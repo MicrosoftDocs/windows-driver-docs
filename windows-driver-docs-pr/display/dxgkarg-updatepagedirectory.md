@@ -4,6 +4,7 @@ description: The DXGKARG\_UPDATEPAGEDIRECTORY structure is reserved for system u
 keywords: ["_DXGKARG_UPDATEPAGEDIRECTORY structure Display Devices", "DXGKARG_UPDATEPAGEDIRECTORY structure Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DXGKARG_UPDATEPAGEDIRECTORY
 api_location:

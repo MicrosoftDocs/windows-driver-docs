@@ -3,7 +3,8 @@ title: ACPI_METHOD_ARGUMENT_LENGTH_FROM_ARGUMENT macro
 description: The ACPI_METHOD_ARGUMENT_LENGTH_FROM_ARGUMENT macro calculates the size, in bytes, of the data that is contained in the Data array of an ACPI_METHOD_ARGUMENT structure.
 keywords: 
 - ACPI_METHOD_ARGUMENT_LENGTH_FROM_ARGUMENT macro ACPI Devices
-ms.date: 08/17/2021
+ms.date: 03/17/2023
+ms.topic: reference
 ---
 
 # ACPI_METHOD_ARGUMENT_LENGTH_FROM_ARGUMENT macro

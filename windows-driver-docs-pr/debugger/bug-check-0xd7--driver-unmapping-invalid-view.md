@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xD7 DRIVER_UNMAPPING_INVALID_VIEW", "DRIVER_UNMAPPING_INV
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DRIVER_UNMAPPING_INVALID_VIEW
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The DRIVER\_UNMAPPING\_INVALID\_VIEW bug check has a value of 0x000000D7. This indicates a driver is trying to unmap an address that was not mapped.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## DRIVER\_UNMAPPING\_INVALID\_VIEW Parameters
@@ -59,7 +60,7 @@ The DRIVER\_UNMAPPING\_INVALID\_VIEW bug check has a value of 0x000000D7. This i
 
 ## Remarks
 
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause. Use the [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md)  command to get a stack trace: the driver that caused the error can be determined from the stack trace.
+The [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause. Use the [**kb (Display Stack Backtrace)**](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md)  command to get a stack trace: the driver that caused the error can be determined from the stack trace.
 
  
 

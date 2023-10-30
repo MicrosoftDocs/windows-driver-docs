@@ -1,13 +1,12 @@
 ---
 title: Partner app development
 description: Learn about Partner app development scenarios that require functionality such as access to system APIs.
-ms.date: 08/12/2021
-ms.topic: article
+ms.date: 03/17/2023
 ---
 
 # Partner app development
 
-Partners have the ability to create special use applications for things like the Windows 10 settings app. Some partner-specific app development scenarios require functionality, such as access to system APIs, that is not available to APIs with General capabilities. Instead these apps require Restricted or special use capabilities, allowing for functionality available for partner development in a controlled fashion.
+Partners have the ability to create special use applications for things like the Windows 10 settings app. Some partner-specific app development scenarios require functionality, such as access to system APIs, that isn't available to APIs with General capabilities. Instead these apps require Restricted or special use capabilities, allowing for functionality available for partner development in a controlled fashion.
 
 ## In this section
 

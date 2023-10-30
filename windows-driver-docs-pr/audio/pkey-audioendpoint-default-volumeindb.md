@@ -1,8 +1,10 @@
 ---
 title: PKEY\_AudioEndpoint\_Default\_VolumeInDb
 description: In Windows 10 Version 1605 and later, the PKEY\_AudioEndpoint\_Default\_VolumeInDb property key configures the default volume (in dB) for the software volume node.
-ms.date: 11/28/2017
+ms.date: 03/06/2023
+ms.topic: reference
 ---
+
 
 # PKEY\_AudioEndpoint\_Default\_VolumeInDb
 
@@ -41,7 +43,7 @@ HKR,EP\0,%PKEY_AudioEndpoint_Default_VolumeInDb%,0x00010001,0xA0000
 ;HKR,EP\0,%PKEY_AudioEndpoint_Default_VolumeInDb%,0x00010001,0xFFF60000
 ```
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [Media-Class INF Extensions](media-class-inf-extensions.md)

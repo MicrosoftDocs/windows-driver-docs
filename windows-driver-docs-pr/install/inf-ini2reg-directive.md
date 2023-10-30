@@ -5,17 +5,17 @@ keywords:
 - INF Ini2Reg Directive Device and Driver Installation
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INF Ini2Reg Directive
 api_type:
 - NA
-ms.date: 07/11/2022
+ms.date: 07/17/2023
 ---
 
 # INF Ini2Reg directive
 
-> [!NOTE]
-> If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
+[!INCLUDE [Caution invalid INF directive](../includes/inf-directive-invalid-22h2.md)]
 
 An **Ini2Reg** directive references one or more named sections in which lines or sections from a supplied INI file are moved into the registry. This creates or replaces one or more value entries under a specified key.
 

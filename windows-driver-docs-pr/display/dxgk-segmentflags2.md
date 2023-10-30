@@ -4,6 +4,7 @@ description: The DXGK\_SEGMENTFLAGS2 structure is reserved for system use. Do no
 keywords: ["DXGK_SEGMENTFLAGS2 structure Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DXGK_SEGMENTFLAGS2
 api_location:

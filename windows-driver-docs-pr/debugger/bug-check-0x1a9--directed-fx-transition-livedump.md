@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1A9 DIRECTED_FX_TRANSITION_LIVEDUMP ", "DIRECTED_FX_TRAN
 ms.date: 03/09/2022
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DIRECTED_FX_TRANSITION_LIVEDUMP 
 api_type:

@@ -20,13 +20,10 @@ At this point, you can perform the remaining steps incrementally and in any orde
 -   Add support for [DMA](porting-dma.md), if the device performs DMA.<sup>†</sup>
 -   [Port WMI code](porting-wmi-code.md).<sup>†</sup>
 -   Port code to [handle requests that the framework does not handle on behalf of KMDF drivers](requests-that-kmdf-does-not-support.md).<sup>†</sup>
--   [Revise the INF](building--installing--and-testing-a-wdf-driver.md) that installs the driver.
+-   [Revise the INF](./building-and-loading-a-kmdf-driver.md) that installs the driver.
 
 † This functionality is only available to Kernel-Mode Driver Framework (KMDF) drivers.
 
 Except as noted, the information in this section applies to all types of drivers (PDO, FDO, and filter DO). However, if you are porting a bus driver (PDO) to KMDF, you will also need to port the device enumeration code. For information about enumerating devices, see [Enumerating the Devices on a Bus](enumerating-the-devices-on-a-bus.md).
 
 For reference information describing the ways that the various WDF objects, methods, and event callback functions map to common WDM objects and functions, see [Summary of KMDF and WDM Equivalents](summary-of-kmdf-and-wdm-equivalents.md).
-
- 
-

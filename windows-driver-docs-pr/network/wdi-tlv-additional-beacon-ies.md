@@ -1,7 +1,8 @@
 ---
 title: WDI_TLV_ADDITIONAL_BEACON_IES
+ms.topic: reference
 description: WDI_TLV_ADDITIONAL_BEACON_IES is a TLV that contains additional beacon IEs.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - WDI_TLV_ADDITIONAL_BEACON_IES Network Drivers Starting with Windows Vista
 ---

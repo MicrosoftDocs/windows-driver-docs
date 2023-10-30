@@ -4,6 +4,7 @@ description: The WIA_IPS_BLANK_PAGES_SENSITIVITY property is used to change the 
 keywords: ["WIA_IPS_BLANK_PAGES_SENSITIVITY Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_BLANK_PAGES_SENSITIVITY
 api_location:

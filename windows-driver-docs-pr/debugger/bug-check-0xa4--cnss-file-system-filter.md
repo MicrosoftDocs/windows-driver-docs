@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xA4 CNSS_FILE_SYSTEM_FILTER", "CNSS_FILE_SYSTEM_FILTER"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - CNSS_FILE_SYSTEM_FILTER
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The CNSS\_FILE\_SYSTEM\_FILTER bug check has a value of 0x000000A4. This bug check indicates that a problem occurred in the CNSS file system filter.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## CNSS\_FILE\_SYSTEM\_FILTER Parameters

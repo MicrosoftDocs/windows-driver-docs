@@ -6,15 +6,11 @@ ms.date: 04/20/2017
 
 # UPS\\ServiceProviders Registry Entries
 
-
-## <span id="ddk_ups_serviceproviders_registry_entries_kg"></span><span id="DDK_UPS_SERVICEPROVIDERS_REGISTRY_ENTRIES_KG"></span>
-
-
 Under the **UPS**\\**ServiceProviders** registry key, a UPS vendor should create a vendor-specific subkey. Under this subkey, the vendor should create an entry for each UPS model. Vendors must create these registry entries while [installing UPS minidrivers](installing-ups-minidrivers.md).
 
 Each model-specific entry consists of a value name and a value. The value name should be the name of the UPS model. The value associated with this name is a string consisting of two parts:
 
--   The first part of the value string represents a hexadecimal bitmask identifying the model's capabilities. Bit values are defined in the following table.
+- The first part of the value string represents a hexadecimal bitmask identifying the model's capabilities. Bit values are defined in the following table.
 
     <table>
     <colgroup>
@@ -65,7 +61,7 @@ Each model-specific entry consists of a value name and a value. The value name s
 
      
 
--   The second part of the string is optional. It represents the path and name of the UPS minidriver. If this path and name is supplied, it must be preceded by a semicolon (;). If only the name is supplied, a default path of %SystemRoot%\\system32 is used.
+- The second part of the string is optional. It represents the path and name of the UPS minidriver. If this path and name is supplied, it must be preceded by a semicolon (;). If only the name is supplied, a default path of %SystemRoot%\\system32 is used.
 
 After a UPS minidriver has been installed, and after a system administrator has enabled the UPS using **Power Options**, the system's UPS service copies model-specific **UPS**\\**ServiceProviders** values to other, system-controlled registry locations.
 
@@ -77,9 +73,6 @@ UPS\ServiceProviders
         Back-UPS "0x7f"
         Smart-UPS "0x1;apcups.dll"
 ```
-
- 
-
  
 
 

@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_DEVICE_NAME (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_P2P_DEVICE_NAME is a WiFiCx TLV that contains a device name.
 ms.date: 07/31/2021
 keywords:

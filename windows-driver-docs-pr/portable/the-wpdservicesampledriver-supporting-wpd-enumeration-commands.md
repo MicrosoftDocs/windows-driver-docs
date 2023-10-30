@@ -1,7 +1,7 @@
 ---
 description: Support for enumeration commands (WpdServiceSampleDriver)
 title: Support for enumeration commands (WpdServiceSampleDriver)
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Support for enumeration commands (WpdServiceSampleDriver)

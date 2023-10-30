@@ -1,7 +1,7 @@
 ---
 title: Seamless crisis prevention and recovery
 description: If a firmware update fails, the results can be devastating.
-ms.date: 08/06/2018
+ms.date: 03/23/2023
 ---
 
 # Seamless crisis prevention and recovery
@@ -16,56 +16,13 @@ In order to provide a great experience for end-users, the following crisis preve
 
 When the system firmware is performing the actual update there are a series of pre-installation checks that must be performed. System firmware must perform this check to ensure there is enough power to complete the update. It is also recommended that the checks be made for each of the updates before the update is applied if there are multiple firmware updates. The list of items to check and validate are provided below. All of the checks must be performed where applicable. There is no specific order to the execution of the tests.
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="80%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Check type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Power</td>
-<td><ul>
-<li>System must have at least 25% battery charge.</li>
-<li>Tethered power (power via USB cable and/or AC power) is not required.</li>
-</ul>
-<div class="alert">
-<strong>Note</strong>  In a test/laboratory environment it is acceptable to have no battery present yet still allow firmware updates as long as tethered power is provided. However a differentiation must be made between a dead/not charging battery and no battery present.
-</div>
-<div>
-
-</div></td>
-</tr>
-<tr class="even">
-<td>Security</td>
-<td><ul>
-<li>Validate update capsule payload is properly signed.</li>
-<li>Validate that any PE-based EFI files in the payload are properly signed with a proper EFI cert.</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>Integrity</td>
-<td><p>Perform an integrity check on the firmware update payload.</p></td>
-</tr>
-<tr class="even">
-<td>Version</td>
-<td><p>Verify that the firmware being applied does not downgrade the current, installed firmware beyond the LowestSupportedFirmwareVersion value.</p></td>
-</tr>
-<tr class="odd">
-<td>Storage</td>
-<td><p>The following checks are performed as appropriate, depending upon the system's hardware</p>
-<ul>
-<li>There is sufficient room for backups of the current firmware which will be replaced</li>
-<li>There is sufficient room in the device to accommodate the new firmware</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+| Check type | Description |
+|--|--|
+| Power | System must have at least 25% battery charge.<br><br>Tethered power (power via USB cable and/or AC power) is not required.<br><br>In a test/laboratory environment it is acceptable to have no battery present yet still allow firmware updates as long as tethered power is provided. However a differentiation must be made between a dead/not charging battery and no battery present. |
+| Security | Validate update capsule payload is properly signed.<br><br>Validate that any PE-based EFI files in the payload are properly signed with a proper EFI cert |
+| Integrity | Perform an integrity check on the firmware update payload. |
+| Version | Verify that the firmware being applied does not downgrade the current, installed firmware beyond the LowestSupportedFirmwareVersion value. |
+| Storage | The following checks are performed as appropriate, depending upon the system's hardware<br><br>There is sufficient room for backups of the current firmware which will be replaced<br><br>There is sufficient room in the device to accommodate the new firmware. |
 
 Any failure must result in an appropriate Last Attempt Status error code. For more information, see the Last Attempt Status error code information in [ESRT table definition](esrt-table-definition.md) and [Firmware update status](firmware-update-status.md).
 
@@ -83,8 +40,7 @@ Any failure must result in an appropriate Last Attempt Status error code. For mo
 
 In order to prevent a system from reaching a non-bootable state, the firmware update mechanism must meet the following requirements in cases where firmware updates fail to install, or in cases where the system fails to boot successfully.
 
-> [!NOTE]
-> In the following sections, the term "committed" is used to describe firmware. Once firmware has been "committed", the firmware is treated as fully installed, and will not be automatically rolled back by the firmware due to boot failure, etc. "Uncommitted" firmware describes partially updated firmware and can potentially be rolled back to a previous version in cases where the firmware update cannot be completed or a failure is detected by the updating firmware (for example, invalid CRC check in the update). Whether firmware is committed is something that the firmware should track internally, and is not captured as part of the ESRT.
+In the following sections, the term "committed" is used to describe firmware. Once firmware has been "committed", the firmware is treated as fully installed, and will not be automatically rolled back by the firmware due to boot failure, etc. "Uncommitted" firmware describes partially updated firmware and can potentially be rolled back to a previous version in cases where the firmware update cannot be completed or a failure is detected by the updating firmware (for example, invalid CRC check in the update). Whether firmware is committed is something that the firmware should track internally, and is not captured as part of the ESRT.
 
 ### Firmware update unsuccessful
 

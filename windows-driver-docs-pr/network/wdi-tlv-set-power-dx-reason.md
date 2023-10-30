@@ -1,7 +1,8 @@
 ---
 title: WDI_TLV_SET_POWER_DX_REASON
+ms.topic: reference
 description: WDI_TLV_SET_POWER_DX_REASON is a TLV that contains the reason for a set power Dx.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - WDI_TLV_SET_POWER_DX_REASON Network Drivers Starting with Windows Vista
 ---

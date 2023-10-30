@@ -1,7 +1,7 @@
 ---
 title: Porting a Driver from UMDF 1 to UMDF 2
 description: This topic describes how to port a User-Mode Driver Framework (UMDF) 1 driver to UMDF 2.
-ms.date: 04/20/2017
+ms.date: 01/23/2023
 ---
 
 # Porting a Driver from UMDF 1 to UMDF 2
@@ -11,7 +11,7 @@ This topic describes how to port a User-Mode Driver Framework (UMDF) 1 driver to
 
 The Echo driver sample is an example of a driver that has been ported from UMDF 1 to UMDF 2.
 
--   [Echo Sample (UMDF Version 1)](https://go.microsoft.com/fwlink/p/?LinkId=617707)
+-   [Echo Sample (UMDF Version 1)](user-mode-driver-framework-design-guide.md)
 -   [Echo Sample (UMDF Version 2)](https://go.microsoft.com/fwlink/p/?LinkId=617708)
 
 ## Getting Started

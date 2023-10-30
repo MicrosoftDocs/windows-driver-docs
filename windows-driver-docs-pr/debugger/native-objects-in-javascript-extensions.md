@@ -30,9 +30,9 @@ var outputLines = ctl.ExecuteCommand("u");
 
 This topic describes how to work with common objects and provides reference information on their attributes and behaviors.
 
-For general information about working with JavaScript, see [JavaScript Debugger Scripting](javascript-debugger-scripting.md). For JavaScript examples that use the debugger objects, see [JavaScript Debugger Example Scripts](javascript-debugger-example-scripts.md). For information about working with the settings objects, see [**.settings (Set Debug Settings)**](-settings--set-debug-settings-.md).
+For general information about working with JavaScript, see [JavaScript Debugger Scripting](javascript-debugger-scripting.md). For JavaScript examples that use the debugger objects, see [JavaScript Debugger Example Scripts](javascript-debugger-example-scripts.md). For information about working with the settings objects, see [**.settings (Set Debug Settings)**](../debuggercmds/-settings--set-debug-settings-.md).
 
-To explore the objects available in a debugger session, use the [**dx (Display NatVis Expression)**](dx--display-visualizer-variables-.md) command. For example, you can display some of the top level debugger objects with this dx command.
+To explore the objects available in a debugger session, use the [**dx (Display NatVis Expression)**](../debuggercmds/dx--display-visualizer-variables-.md) command. For example, you can display some of the top level debugger objects with this dx command.
 
 ```dbgcmd
 0: kd> dx -r2 Debugger
@@ -448,7 +448,7 @@ Debugger.Sessions.First().Processes.First().Threads.Duplicate(2),d              
 
 
 
-## <span id="related_topics"></span>Related topics
+## <span id="related_topics"></span>See also
 
 [Native Debugger Objects in JavaScript Extensions - Debugger Object Details](native-objects-in-javascript-extensions-debugger-objects.md)
 

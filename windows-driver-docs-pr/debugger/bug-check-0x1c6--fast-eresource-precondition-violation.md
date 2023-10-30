@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1C6 FAST_ERESOURCE_PRECONDITION_VIOLATION", "FAST_ERESOU
 ms.date: 01/11/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - FAST_ERESOURCE_PRECONDITION_VIOLATION
 api_type:
@@ -16,7 +17,7 @@ api_type:
 The FAST\_ERESOURCE\_PRECONDITION\_VIOLATION bug check has a value of 0x000001C6. It indicates that a current thread is performing an invalid call to a fast resource routine.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
  
 
@@ -120,7 +121,7 @@ The FAST\_ERESOURCE\_PRECONDITION\_VIOLATION bug check has a value of 0x000001C6
 The current thread is performing an invalid call to a fast resource routine.
 
 ## Resolution
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
 ## See Also
 

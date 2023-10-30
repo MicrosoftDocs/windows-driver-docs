@@ -4,6 +4,7 @@ description: The WIA_DPS_MIN_HORIZONTAL_SHEET_FEED_SIZE property contains the ph
 keywords: ["WIA_DPS_MIN_HORIZONTAL_SHEET_FEED_SIZE Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPS_MIN_HORIZONTAL_SHEET_FEED_SIZE
 api_location:

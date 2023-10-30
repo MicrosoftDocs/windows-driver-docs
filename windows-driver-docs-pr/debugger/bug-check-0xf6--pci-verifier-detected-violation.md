@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xF6 PCI_VERIFIER_DETECTED_VIOLATION", "PCI_VERIFIER_DETEC
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - PCI_VERIFIER_DETECTED_VIOLATION
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The PCI\_VERIFIER\_DETECTED\_VIOLATION bug check has a value of 0x000000F6. This indicates that an error occurred in the BIOS or another device being verified by the PCI driver.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## PCI\_VERIFIER\_DETECTED\_VIOLATION Parameters

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1D3 WFP_INVALID_OPERATION",  "WFP_INVALID_OPERATION"]
 ms.date: 05/23/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WFP_INVALID_OPERATION 
 api_type:
@@ -14,7 +15,7 @@ api_type:
 # Bug Check 0x1D3: WFP_INVALID_OPERATION 
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 The WFP_INVALID_OPERATION bug check has a value of 0x000001D3. This indicates that a Windows Filtering Platform callout performed an invalid operation.
@@ -40,7 +41,7 @@ Parameter | Description
 
 
 ## Resolution
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be very helpful in determining the root cause.
+The [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be very helpful in determining the root cause.
 
  
 

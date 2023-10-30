@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x59 PINBALL_FILE_SYSTEM", "PINBALL_FILE_SYSTEM"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - PINBALL_FILE_SYSTEM
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The PINBALL\_FILE\_SYSTEM bug check has a value of 0x00000059. This indicates that a problem occurred in the Pinball file system.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## PINBALL\_FILE\_SYSTEM Parameters

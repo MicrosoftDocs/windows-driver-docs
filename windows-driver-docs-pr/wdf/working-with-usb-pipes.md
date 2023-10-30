@@ -59,7 +59,7 @@ Determines whether a USB endpoint is an input endpoint.
 <a href="" id="---------wdf-usb-pipe-direction-out--------"></a>[**WDF\_USB\_PIPE\_DIRECTION\_OUT**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdf_usb_pipe_direction_out)  
 Determines whether a USB endpoint is an output endpoint.
 
-For related information, see [How to enumerate USB pipes](../usbcon/index.md).
+For related information, see [How to enumerate USB pipes](../usbcon/how-to-get-usb-pipe-handles.md).
 
 ### <a href="" id="reading-from-a-pipe"></a> Reading from a Pipe
 

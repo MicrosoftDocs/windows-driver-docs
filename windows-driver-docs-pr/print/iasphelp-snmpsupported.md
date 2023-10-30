@@ -1,23 +1,24 @@
 ---
-title: Iasphelp get\_SNMPSupported method
+title: Iasphelp get_SNMPSupported method
 description: The SNMPSupported property enables an ASP Web page to determine if SNMP is being used with a printer.
 MS-HAID:
-- 'webfnc\_2128dc9d-a113-4061-a6c9-3ebe2a304dd5.xml'
-- 'print.iasphelp\_snmpsupported'
+- 'webfnc_2128dc9d-a113-4061-a6c9-3ebe2a304dd5.xml'
+- 'print.iasphelp_snmpsupported'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 keywords: ["get_SNMPSupported method Print Devices", "get_SNMPSupported method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_SNMPSupported method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Iasphelp.get_SNMPSupported
 api_type:
 - COM
-ms.date: 04/20/2017
+ms.date: 06/26/2023
 ---
 
-# Iasphelp::get\_SNMPSupported method
+# Iasphelp::get_SNMPSupported method
 
 The **SNMPSupported** property enables an ASP Web page to determine if SNMP is being used with a printer.
 
@@ -38,32 +39,11 @@ Caller-supplied pointer to a location to receive **TRUE** if SNMP is being used 
 
 Win32 error codes can also be returned.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Return code</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>S_OK</strong></td>
-<td><p>The operation succeeded.</p></td>
-</tr>
-<tr class="even">
-<td><strong>E_HANDLE</strong></td>
-<td><p>The <a href="iasphelp-open.md" data-raw-source="[&lt;strong&gt;Iasphelp::Open&lt;/strong&gt;](iasphelp-open.md)"><strong>Iasphelp::Open</strong></a> method has not been called.</p></td>
-</tr>
-<tr class="odd">
-<td><strong>E_OUTOFMEMORY</strong></td>
-<td><p>Out of memory.</p></td>
-</tr>
-</tbody>
-</table>
+| Return code | Description |
+|--|--|
+| **S_OK** | The operation succeeded. |
+| **E_HANDLE** | The [**Iasphelp::Open**](iasphelp-open.md) method has not been called. |
+| **E_OUTOFMEMORY** | Out of memory. |
 
 ## VBScript Example
 
@@ -79,18 +59,7 @@ UsingSNMP = objPrinter.SNMPSupported
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Target platform</p></td>
-<td>Desktop</td>
-</tr>
-</tbody>
-</table>
+**Target platform:** Desktop
 
 ## See also
 

@@ -4,6 +4,7 @@ description: DCIEnum
 keywords: ["DCIEnum Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DCIEnum
 api_type:

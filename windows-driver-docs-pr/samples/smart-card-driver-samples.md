@@ -1,7 +1,7 @@
 ---
 title: Smart card driver samples
 description: The driver sample in this directory provides a starting point for writing a custom smart card driver for your device.
-ms.date: 11/21/2019
+ms.date: 03/22/2023
 ---
 
 # Smart card driver samples

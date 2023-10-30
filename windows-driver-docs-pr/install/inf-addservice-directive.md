@@ -5,11 +5,12 @@ keywords:
 - INF AddService Directive Device and Driver Installation
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INF AddService Directive
 api_type:
 - NA
-ms.date: 06/23/2022
+ms.date: 09/07/2023
 ---
 
 # INF AddService directive
@@ -45,9 +46,9 @@ To indicate that a service is the function driver for a device, the service shou
 
 Every device driver INF should have exactly one associated service.  The INF does not require an associated service if it is an [Extension INF](using-an-extension-inf-file.md) or uses the Include/Needs directives to inherit the associated service from another INF.  For devices that do not require a function driver, the NULL driver can be specified as the associated service as follows:
 
-```inf
-AddService = ,2
-```
+  ```inf
+  AddService = ,2
+  ```
 
 **0x00000008** (SPSVCINST_NOCLOBBER_DISPLAYNAME)  
 Do not overwrite the given service's (optional) friendly name if this service already exists in the system.
@@ -88,6 +89,9 @@ Do not overwrite the delayed auto start value for the given service if this serv
 **0x00020000** (SPSVCINST_NOCLOBBER_FAILUREACTIONS) (Windows 11 version 22H2 and later versions of Windows)  
 Do not overwrite the failure actions for the given service if this service already exists in the system and has existing failure actions. See the FailureActions directive below for more information on failure actions.
 
+**0x00040000** (SPSVCINST_NOCLOBBER_BOOTFLAGS) (Windows 11 build 25381 and later versions of Windows)
+Do not overwrite the boot flags value for the given service if this service already exists in the system and has an existing value. See the **BootFlags** directive below for more information.
+
 *service-install-section*  
 References an INF-writer-defined section that contains information for installing the named service for this device (or devices). For more information, see the following **Remarks** section.
 
@@ -119,7 +123,7 @@ ServiceType=type-code
 StartType=start-code
 ErrorControl=error-control-level
 ServiceBinary=path-to-service
-[StartName=driver-object-name]
+[StartName=service-start-name]
 [AddReg=add-registry-section[, add-registry-section] ...]
 [DelReg=del-registry-section[, del-registry-section] ...]
 [BitReg=bit-registry-section[,bit-registry-section] ...]
@@ -131,6 +135,7 @@ ServiceBinary=path-to-service
 [DelayedAutoStart=value] (Windows 10 Version 2004 and later versions of Windows)
 [AddTrigger=service-trigger-install-section[, service-trigger-install-section, ...]] (Windows 10 Version 2004 and later versions of Windows)
 [FailureActions=service-failure-actions-install-section] (Windows 11 version 22H2 and later versions of Windows)
+[BootFlags=value] (Windows 11 build 25381 and later versions of Windows)
 ```
 
 Each *service-install-section* must have at least the **ServiceType**, **StartType**, **ErrorControl**, and **ServiceBinary** entries as shown here. However, the remaining entries are optional.
@@ -210,8 +215,8 @@ Specifies the path of the binary for the service, expressed as *%dirid%\\filenam
 
 The *dirid* number is either a custom directory identifier or one of the system-defined directory identifiers described in [Using Dirids](using-dirids.md). The given *filename* specifies a file already transferred (see the [**INF CopyFiles Directive**](inf-copyfiles-directive.md)) from the source distribution media to that directory on the target computer.
 
-**StartName**=*driver-object-name*  
-This optional entry specifies the name of the driver object that represents this device/driver. If *type-code* specifies **1** (SERVICE_KERNEL_DRIVER) or **2** (SERVICE_FILE_SYSTEM_DRIVER), this name is the driver object name that the I/O manager uses to load the driver.
+**StartName**=*service-start-name*
+This optional entry specifies a start name that should be associated with the service. If *type-code* specifies **1** (SERVICE_KERNEL_DRIVER) or **2** (SERVICE_FILE_SYSTEM_DRIVER), this name is the driver object name that the I/O manager uses to load the driver. If *type-code* contains the bit **0x00000010** (SERVICE_WIN32_OWN_PROCESS) or **0x00000020** (SERVICE_WIN32_SHARE_PROCESS), this name can be one of the valid values for the *lpServiceStartName* parameter of the [CreateService](/windows/win32/api/winsvc/nf-winsvc-createservicew) API.
 
 **AddReg**=*add-registry-section*[**,**_add-registry-section_]...  
 References one or more INF-writer-defined *add-registry-sections* in which any registry information pertinent to the newly installed services is set up. For more information, see [**INF AddReg Directive**](inf-addreg-directive.md).
@@ -231,7 +236,7 @@ In general, this entry is unnecessary for devices with WDM drivers or for exclus
 
 For more information about **LoadOrderGroup**, see [Specifying Driver Load Order](specifying-driver-load-order.md).
 
-**Dependencies**=*depend-on-item-name*[**,**_depend-on-item-name_]...  
+**Dependencies**=*depend-on-item-name*[**,**_depend-on-item-name_]...
 Each *depend-on-item-name* item in a dependencies list specifies the name of a service or load-order group on which the device/driver depends.
 
 If the *depend-on-item-name* specifies a service, the service that must be running before this driver is started. For example, the INF for the system-supplied Win32 TCP/IP print services depends on the support of the underlying (kernel-mode) TCP/IP transport stack. Consequently, the INF for the TCP/IP print services specifies this entry as **Dependencies=TCPIP**.
@@ -253,13 +258,15 @@ Each *privilege-name* in the list is the name of a privilege that the service re
 
 For more information on service required privileges, see [SERVICE_REQUIRED_PRIVILEGES_INFO (Windows)](/windows/win32/api/winsvc/ns-winsvc-service_required_privileges_infow).
 
-**ServiceSidType**=*value*  
+**ServiceSidType**=*value*
+
 > [!NOTE]
 > This value can only be used for *Win32 Services* and is only available with Windows 10 Version 2004 and above.
 
 This entry can use any valid value as described in [SERVICE_SID_INFO](/windows/win32/api/winsvc/ns-winsvc-service_sid_info).
 
-**DelayedAutoStart**=*value*  
+**DelayedAutoStart**=*value*
+
 > [!NOTE]
 > This value can only be used for *Win32 Services* and is only available with Windows 10 2004 and above.
 
@@ -285,6 +292,37 @@ SubType=trigger-subtype
 [DataItem=data-type,data]
 ...
 ```
+
+**BootFlags**=*value*
+
+> [!NOTE]
+> This value can only be used with kernel-mode driver services and is only available with Windows 11 build 25381 and above.
+
+Optionally specifies when the operating system should promote a driver's StartType value to 0x0 (SERVICE_BOOT_START). You can specify one or more (ORed) of the following numeric values, expressed as hexadecimal values.
+
+- 0x1 (CM_SERVICE_NETWORK_BOOT_LOAD)
+  Indicates the driver should be promoted if booting from the network.
+
+- 0x2 (CM_SERVICE_VIRTUAL_DISK_BOOT_LOAD)
+  Indicates the driver should be promoted if booting from a VHD.
+
+- 0x4 (CM_SERVICE_USB_DISK_BOOT_LOAD)  
+  Indicates the driver should be promoted to if booting from a USB disk.
+
+- 0x8 (CM_SERVICE_SD_DISK_BOOT_LOAD)  
+  Indicates the driver should be promoted if booting from SD storage.
+
+- 0x10 (CM_SERVICE_USB3_DISK_BOOT_LOAD)  
+  Indicates the driver should be promoted if booting from a disk on a USB 3.0 controller.
+
+- 0x20 (CM_SERVICE_MEASURED_BOOT_LOAD) 
+  Indicates the driver should be promoted if booting while measured boot is enabled.
+
+- 0x40 (CM_SERVICE_VERIFIER_BOOT_LOAD)  
+  Indicates the driver should be promoted if booting with verifier boot enabled.
+
+- 0x80 (CM_SERVICE_WINPE_BOOT_LOAD)  
+  Indicates the driver should be promoted if booting to WinPE.
 
 ### Service-Trigger-Install-Section Entries and Values
 
@@ -405,6 +443,9 @@ AddReg=add-registry-section
 HKR,,BootFlags,0x00010003,0x14 ; CM_SERVICE_USB3_DISK_BOOT_LOAD|CM_SERVICE_USB_DISK_BOOT_LOAD
 ```
 
+> [!NOTE]
+> This syntax should be used only in Windows versions and builds older than Windows 11 build 25381; for Windows 11 build 25381 and later, use the **BootFlags** directive.
+
 ### Registering for Event Logging
 
 An **AddService** directive can also reference an *event-log-install-section* elsewhere in the INF file. Each such section has the following form:
@@ -412,7 +453,7 @@ An **AddService** directive can also reference an *event-log-install-section* el
 ```inf
 [event-log-install-section]
  
-AddReg=add-registry-section[, add-registry-section]... 
+AddReg=add-registry-section[, add-registry-section]...
 [DelReg=del-registry-section[, del-registry-section]...] 
 [BitReg=bit-registry-section[,bit-registry-section]...]
  ...
@@ -484,20 +525,12 @@ ServiceBinary  = %13%\ExampleUpperFilter.sys
 
 ## See also
 
-[**AddReg**](inf-addreg-directive.md)
-
-[**BitReg**](inf-bitreg-directive.md)
-
-[**CopyFiles**](inf-copyfiles-directive.md)
-
-[***DDInstall*.HW**](inf-ddinstall-hw-section.md)
-
-[***DDInstall*.Services**](inf-ddinstall-services-section.md)
-
-[**DelReg**](inf-delreg-directive.md)
-
-[**DelService**](inf-delservice-directive.md)
-
-[**DestinationDirs**](inf-destinationdirs-section.md)
-
-[**Strings**](inf-strings-section.md)
+- [**AddReg**](inf-addreg-directive.md)
+- [**BitReg**](inf-bitreg-directive.md)
+- [**CopyFiles**](inf-copyfiles-directive.md)
+- [***DDInstall*.HW**](inf-ddinstall-hw-section.md)
+- [***DDInstall*.Services**](inf-ddinstall-services-section.md)
+- [**DelReg**](inf-delreg-directive.md)
+- [**DelService**](inf-delservice-directive.md)
+- [**DestinationDirs**](inf-destinationdirs-section.md)
+- [**Strings**](inf-strings-section.md)

@@ -3,10 +3,12 @@ title: Print capabilities architecture
 description: Provides information about print capabilities architecture.
 keywords:
 - Print Capabilities WDK, architecture
-ms.date: 09/07/2022
+ms.date: 01/30/2023
 ---
 
 # Print capabilities architecture
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The PrintCapabilities object is returned by the [**IPrintTicketProvider::GetPrintCapabilities**](/windows-hardware/drivers/ddi/prdrvcom/nf-prdrvcom-iprintticketprovider-getprintcapabilities) method of the print driver's implementation of the [**IPrintTicketProvider**](/windows-hardware/drivers/ddi/prdrvcom/nn-prdrvcom-iprintticketprovider) interface. XPSDrv print drivers must implement the IPrintTicketProvider interface in addition to the [**DrvDeviceCapabilities**](/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvdevicecapabilities) function.
 

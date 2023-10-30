@@ -1,18 +1,18 @@
 ---
-title: Job Management
+title: Job management
 description: A job management feature has been introduced in Windows 8.1 and later versions of Windows to provide a live view of the job queue.
-ms.date: 04/20/2017
+ms.date: 01/25/2023
 ---
 
-# Job Management
+# Job management
 
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 A job management feature has been introduced in Windows 8.1 and later versions of Windows to provide a live view of the job queue.
 
 This feature also allows a client to cancel a print job. A client can call the appropriate programming interface from within a UWP device app or from a printer extension.
 
 ## The new interfaces
-
 
 The following interfaces have been introduced in Windows 8.1 to implement the job management feature.
 
@@ -28,8 +28,7 @@ The following interfaces have been introduced in Windows 8.1 to implement the j
 
 ## Initiating a job management session
 
-
-To initiate a job management session you must first specify and request a range of jobs that you want to manage. This range of jobs is called a “view,” and you use the [**IPrinterQueue2::GetPrinterQueueView**](/windows-hardware/drivers/ddi/printerextension/nf-printerextension-iprinterqueue2-getprinterqueueview) method to specify it.
+To initiate a job management session you must first specify and request a range of jobs that you want to manage. This range of jobs is called a "view," and you use the [**IPrinterQueue2::GetPrinterQueueView**](/windows-hardware/drivers/ddi/printerextension/nf-printerextension-iprinterqueue2-getprinterqueueview) method to specify it.
 
 If you want to change the view to monitor a different set of jobs, you can use the [**IPrinterQueueView::SetViewRange**](/windows-hardware/drivers/ddi/printerextension/nf-printerextension-iprinterqueueview-setviewrange) method to do that.
 
@@ -87,8 +86,13 @@ UIDisplay is used a generic name for the mechanism that you develop for displayi
 And also, note that job enumeration starts when the first event handler is added and it is stopped when the last event handler is removed.
 
 ## Related topics
+
 [**IPrinterQueue2**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterqueue2)  
+
 [**IPrinterQueueView**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterqueueview)  
+
 [**IPrinterQueueViewEvent**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterqueueviewevent)  
+
 [**IPrintJob**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintjob)  
+
 [**IPrintJobCollection**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintjobcollection)

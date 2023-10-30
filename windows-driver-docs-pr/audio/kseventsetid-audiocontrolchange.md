@@ -2,8 +2,9 @@
 title: KSEVENTSETID\_AudioControlChange
 description: KSEVENTSETID\_AudioControlChange
 keywords: ["KSEVENTSETID_AudioControlChange"]
-ms.date: 11/28/2017
+ms.date: 03/06/2023
 ---
+
 
 # KSEVENTSETID\_AudioControlChange
 

@@ -4,15 +4,15 @@ description: The required ScannerStateReasons element is a list of ScannerStateR
 keywords: ["ScannerStateReasons element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ScannerStateReasons
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 05/02/2023
 ---
 
 # ScannerStateReasons element
-
 
 The required **ScannerStateReasons** element is a list of [**ScannerStateReason**](scannerstatereason.md) elements that describes all of the reasons why the scanner is in its current state.
 
@@ -34,44 +34,16 @@ None
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="scannerstatereason.md" data-raw-source="[&lt;strong&gt;ScannerStateReason&lt;/strong&gt;](scannerstatereason.md)"><strong>ScannerStateReason</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**ScannerStateReason**](scannerstatereason.md) |
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="scannerstatus.md" data-raw-source="[&lt;strong&gt;ScannerStatus&lt;/strong&gt;](scannerstatus.md)"><strong>ScannerStatus</strong></a></p></td>
-</tr>
-<tr class="even">
-<td><p><a href="statussummary.md" data-raw-source="[&lt;strong&gt;StatusSummary&lt;/strong&gt;](statussummary.md)"><strong>StatusSummary</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**ScannerStatus**](scannerstatus.md) |
+| [**StatusSummary**](statussummary.md) |
 
 ## Remarks
 
@@ -80,7 +52,6 @@ The **ScannerStateReasons** element is a list of **ScannerStateReason** elements
 The WSD Scan Service informs a client about changes to the scanner's status by sending a [**ScannerStatusSummaryEvent**](scannerstatussummaryevent.md) event. A client can directly query the scanner's state by calling the [**GetScannerElementsRequest**](getscannerelementsrequest.md) operation.
 
 ## See also
-
 
 [**GetScannerElementsRequest**](getscannerelementsrequest.md)
 
@@ -91,13 +62,3 @@ The WSD Scan Service informs a client about changes to the scanner's status by s
 [**ScannerStatusSummaryEvent**](scannerstatussummaryevent.md)
 
 [**StatusSummary**](statussummary.md)
-
- 
-
- 
-
-
-
-
-
-

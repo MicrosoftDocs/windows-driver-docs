@@ -5,6 +5,7 @@ ms.date: 04/03/2020
 keywords: ["IrqlIoRtlZwPassive rule (wdm)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IrqlIoRtlZwPassive
 api_type:

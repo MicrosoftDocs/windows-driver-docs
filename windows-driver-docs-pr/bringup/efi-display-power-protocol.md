@@ -1,7 +1,8 @@
 ---
 title: EFI_DISPLAY_POWER_PROTOCOL
 description: Provides information aboutEFI_DISPLAY_POWER_PROTOCOL.
-ms.date: 08/20/2021
+ms.date: 03/23/2023
+ms.topic: reference
 ---
 
 # EFI_DISPLAY_POWER_PROTOCOL

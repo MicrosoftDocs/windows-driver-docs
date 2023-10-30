@@ -14,7 +14,7 @@ keywords:
 - bus reset generation WDK IEEE 1394 bus
 - reset generation WDK IEEE 1394 bus
 - locking WDK IEEE 1394 bus
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Sending Asynchronous I/O Request Packets on the IEEE 1394 Bus

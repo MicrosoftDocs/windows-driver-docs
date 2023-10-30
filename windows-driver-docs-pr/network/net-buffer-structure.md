@@ -20,7 +20,7 @@ NDIS 6.0 and later [**NET\_BUFFER**](/windows-hardware/drivers/ddi/nbl/ns-nbl-ne
 
 The following figure shows the fields in a NET\_BUFFER structure.
 
-![diagram illustrating the fields in a net\-buffer structure.](images/netbuffer.png)
+:::image type="content" source="images/netbuffer.png" alt-text="Diagram showing the fields in a NET_BUFFER structure.":::
 
 The NET\_BUFFER structure includes a [**NET\_BUFFER\_HEADER**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_header) structure in the **NetBufferHeader** member. The NET\_BUFFER\_HEADER structure includes a [**NET\_BUFFER\_DATA**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_data) structure in the **NetBufferData** member. You should use NDIS macros to access NET\_BUFFER structure members. For a complete list of these macros, see the [**NET\_BUFFER**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer) structure reference page.
 
@@ -52,7 +52,7 @@ Specifies the offset, in bytes, to the beginning of the used data space in the M
 
 The following figure shows the relationship between the **CurrentMdl**, **CurrentMdlOffset**, **DataOffset**, and **DataLength** members and the data space.
 
-![diagram illustrating data space allocation.](images/netbufferdata-wmdl.png)
+:::image type="content" source="images/netbufferdata-wmdl.png" alt-text="Diagram depicting data space allocation in relation to CurrentMdl, CurrentMdlOffset, DataOffset, and DataLength.":::
 
 NDIS provides functions to manage the data space in the MDL chain. How drivers use the data space changes dynamically with the current driver. Sometimes there is data space that is currently unused by the current driver. Although the *unused data space* is currently unused, it can contain valid data. For example, on the receive path, the *unused data space* can contain header information that was used by a lower level driver.
 

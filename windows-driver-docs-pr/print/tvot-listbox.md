@@ -4,16 +4,19 @@ description: The TVOT_LISTBOX option type consists of a list box inside a group 
 keywords: ["TVOT_LISTBOX Print Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - TVOT_LISTBOX
 api_location:
 - compstui.h
 api_type:
 - HeaderDef
-ms.date: 09/08/2021
+ms.date: 01/30/2023
 ---
 
 # TVOT_LISTBOX
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The TVOT_LISTBOX option type consists of a list box inside a group box.
 

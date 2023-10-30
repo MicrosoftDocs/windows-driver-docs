@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xE8 INVALID_CANCEL_OF_FILE_OPEN", "INVALID_CANCEL_OF_FILE
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INVALID_CANCEL_OF_FILE_OPEN
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The INVALID\_CANCEL\_OF\_FILE\_OPEN bug check has a value of 0x000000E8. This indicates that an invalid file object was passed to **IoCancelFileOpen**.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## INVALID\_CANCEL\_OF\_FILE\_OPEN Parameters

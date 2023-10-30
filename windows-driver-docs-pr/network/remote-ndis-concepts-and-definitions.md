@@ -19,7 +19,7 @@ keywords:
 - Remote NDIS WDK networking , resetting communication channels
 - communication channels WDK networking
 - Remote NDIS WDK networking , message encapsulation
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # Remote NDIS Concepts and Definitions

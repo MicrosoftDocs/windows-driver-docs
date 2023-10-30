@@ -1,5 +1,6 @@
 ---
 title: OID_WWAN_DEVICE_SERVICE_SESSION
+ms.topic: reference
 description: OID_WWAN_DEVICE_SERVICE_SESSION directs a miniport driver to open or close a device service session.NDIS_STATUS_WWAN_DEVICE_SERVICE_SESSION status notification containing a NDIS_WWAN_SET_DEVICE_SERVICE_SESSION structure that describes the result of the operation.
 ms.date: 08/08/2017
 keywords: 

@@ -1,11 +1,11 @@
 ---
-title: Using the Command Browser Window in WinDbg
-description: Using the Command Browser Window in WinDbg
+title: Using the Command Browser Window in WinDbg (Classic) Classic
+description: Using the Command Browser Window in WinDbg (Classic) Classic
 keywords: ["debugging information windows, command browser window", "command browser window", "Debugger Command window, command browser window"]
 ms.date: 05/23/2017
 ---
 
-# Using the Command Browser Window in WinDbg
+# Using the Command Browser Window in WinDbg (Classic) Classic
 
 
 A Command Browser window displays and stores the text results of a debugger command. This window creates a command reference that enables you to view the results of a specific command without re-entering the command. A Command Browser window also provides navigation through the stored commands, so you can more quickly access commands than with the [Debugger Command window](debugger-command-window.md).
@@ -14,7 +14,7 @@ A Command Browser window displays and stores the text results of a debugger comm
 
 You can open multiple Command Browser windows at one time. To open a Command Browser window, choose **Command Browser** from the **View** menu. (You can also press CTRL+N or click the **Command Browser** button (![screen shot of the command browser button.](images/window-command-browser-icon.png)) on the toolbar. ALT+SHIFT+N closes the Command Browser window.)
 
-You can also open a Command Browser window by entering [**.browse (Display Command in Browser)**](-browse--display-command-in-browser-.md) in the regular Debugger Command window.
+You can also open a Command Browser window by entering [**.browse (Display Command in Browser)**](../debuggercmds/-browse--display-command-in-browser-.md) in the regular Debugger Command window.
 
 The following screen shot shows an example of a Command Browser window.
 
@@ -40,9 +40,9 @@ The Command Browser window has a shortcut menu with additional commands. To acce
 
 -   **Always floating** causes the window to remain undocked even if it is dragged to a docking location.
 
--   **Move with frame** causes the window to move when the WinDbg frame is moved, even if the window is undocked. For more information about docked, tabbed, and floating windows, see [Positioning the Windows](positioning-the-windows.md).
+-   **Move with frame** causes the window to move when the WinDbg frame is moved, even if the window is undocked. 
 
-Commands that you enter in a Command Browser window are executed by the debugger engine, not by the WinDbg user interface. This means that you cannot enter user interface commands like [**.cls**](-cls--clear-screen-.md) in a Command Browser window. If the user interface is a remote client, the server (not the client) executes the command.
+Commands that you enter in a Command Browser window are executed by the debugger engine, not by the WinDbg user interface. This means that you cannot enter user interface commands like [**.cls**](../debuggercmds/-cls--clear-screen-.md) in a Command Browser window. If the user interface is a remote client, the server (not the client) executes the command.
 
 A command that you enter in a Command Browser window executes synchronously, so it does not display output until it has completed.
 

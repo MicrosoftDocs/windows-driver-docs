@@ -4,6 +4,7 @@ description: The KSPROPERTY\_VIDEOPROCAMP\_SHARPNESS property controls a camera'
 keywords: ["KSPROPERTY_VIDEOPROCAMP_SHARPNESS Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_VIDEOPROCAMP_SHARPNESS
 api_location:

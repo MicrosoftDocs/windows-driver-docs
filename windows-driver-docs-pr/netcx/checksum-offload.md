@@ -9,13 +9,6 @@ ms.custom: Fe
 
 # Checksum offload
 
-> [!WARNING]
-> Some information in this topic relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
->
-> NetAdapterCx is preview only in Windows 10, version 2004.
->
-> Currently, NetAdapterCx client drivers cannot be certified.
-
 NetAdapterCx supports offloading TCP/IP checksum tasks at run time.
 
 Before the TCP/IP transport passes a [**NET_PACKET**](/windows-hardware/drivers/ddi/packet/ns-packet-_net_packet) structure to the client driver, it specifies the checksum information associated with the NET_PACKET in a [**NET_PACKET_CHECKSUM**](/windows-hardware/drivers/ddi/checksumtypes/ns-checksumtypes-_net_packet_checksum) packet extension.

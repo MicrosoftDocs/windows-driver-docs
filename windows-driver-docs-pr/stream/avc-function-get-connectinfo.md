@@ -4,6 +4,7 @@ description: The AVC_FUNCTION_GET_CONNECT_INFO function code obtains the AVCPREC
 keywords: ["AVC_FUNCTION_GET_CONNECTINFO Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - AVC_FUNCTION_GET_CONNECTINFO
 api_type:

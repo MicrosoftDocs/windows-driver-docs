@@ -1,5 +1,6 @@
 ---
 title: OID_WWAN_SYS_CAPS_INFO
+ms.topic: reference
 description: OID_WWAN_SYS_CAPS_INFO retrieves information about the modem. It can be sent on any of the NDIS instances exposed by the modem.
 ms.date: 08/08/2017
 keywords: 
@@ -15,7 +16,7 @@ Miniport drivers must process query requests asynchronously, initially returning
 
 The following diagram illustrates a query request.
 
-![system capability query.](images/multi-SIM_5_systemCapabilityQuery.png)
+:::image type="content" source="images/multi-SIM_5_systemCapabilityQuery.png" alt-text="Diagram that shows the process of a system capability query.":::
 
 Set requests are not applicable.
 

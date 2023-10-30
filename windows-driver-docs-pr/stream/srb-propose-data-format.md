@@ -4,6 +4,7 @@ description: SRB\_PROPOSE\_DATA\_FORMAT
 keywords: ["SRB_PROPOSE_DATA_FORMAT Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SRB_PROPOSE_DATA_FORMAT
 api_type:

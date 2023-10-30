@@ -1,9 +1,10 @@
 ---
-title: WIA\_IPS\_COLOR\_DROP\_RED
-description: The WIA\_IPS\_COLOR\_DROP\_RED property is used to configure the amount of color drop-out for the Red color channel (R in RGB), as a percentage in a range from 0 (no dropout) to 100 (full channel dropout).
+title: WIA_IPS_COLOR_DROP_RED
+description: The WIA_IPS_COLOR_DROP_RED property is used to configure the amount of color drop-out for the Red color channel.
 keywords: ["WIA_IPS_COLOR_DROP_RED Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_COLOR_DROP_RED
 api_location:
@@ -13,43 +14,20 @@ api_type:
 ms.date: 05/22/2018
 ---
 
-# WIA\_IPS\_COLOR\_DROP\_RED
+# WIA_IPS_COLOR_DROP_RED
 
+The **WIA_IPS_COLOR_DROP_RED** property is used to configure the amount of color drop-out for the Red color channel (R in RGB), as a percentage in a range from 0% (no dropout) to 100% (full channel dropout). The WIA minidriver creates and maintains this property.
 
-The **WIA\_IPS\_COLOR\_DROP\_RED** property is used to configure the amount of color drop-out for the Red color channel (R in RGB), as a percentage in a range from 0% (no dropout) to 100% (full channel dropout). The WIA minidriver creates and maintains this property.
+Property Type: VT_I4 | VT_VECTOR
 
-
-
-Property Type: VT\_I4 | VT\_VECTOR
-
-Valid Values: WIA\_PROP\_NONE
+Valid Values: WIA_PROP_NONE
 
 Access Rights: Read/Write
 
 ## Remarks
 
-When the [**WIA\_IPS\_COLOR\_DROP**](wia-ips-color-drop.md) property is supported, this property is valid for all programmable image data source items, including Flatbed (WIA\_CATEGORY\_FLATBED) and Feeder (WIA\_CATEGORY\_FEEDER) and is required. Valid values for this property are between 0 and 100, inclusive.
+When the [**WIA_IPS_COLOR_DROP**](wia-ips-color-drop.md) property is supported, this property is valid for all programmable image data source items, including Flatbed (WIA_CATEGORY_FLATBED) and Feeder (WIA_CATEGORY_FEEDER) and is required. Valid values for this property are between 0 and 100, inclusive.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
-
- 
-
- 
-
-
-
-
-
+**Header:** wiadef.h (include Wiadef.h)

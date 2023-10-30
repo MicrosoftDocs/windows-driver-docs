@@ -4,6 +4,7 @@ description: The AVC_FUNCTION_SET_CONNECT_INFO function code sets the AVCCONNECT
 keywords: ["AVC_FUNCTION_SET_CONNECTINFO Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - AVC_FUNCTION_SET_CONNECTINFO
 api_type:

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1A8 VIDEO_DXGKRNL_BLACK_SCREEN_LIVEDUMP", "VIDEO_DXGKRNL
 ms.date: 01/28/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - VIDEO_DXGKRNL_BLACK_SCREEN_LIVEDUMP
 api_type:

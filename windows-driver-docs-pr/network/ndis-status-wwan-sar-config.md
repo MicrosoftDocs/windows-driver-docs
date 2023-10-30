@@ -1,7 +1,8 @@
 ---
 title: NDIS_STATUS_WWAN_SAR_CONFIG
+ms.topic: reference
 description: Miniport drivers use the NDIS_STATUS_WWAN_SAR_CONFIG notification to inform the mobile broadband (MB) service about the completion of a previous OID_WWAN_SAR_CONFIG Query or Set request.
-ms.date: 08/17/2018
+ms.date: 03/02/2023
 keywords: 
  -NDIS_STATUS_WWAN_SAR_CONFIG Network Drivers Starting with Windows Vista
 ---

@@ -1,91 +1,42 @@
 ---
-title: WIA\_IPS\_OVER\_SCAN
-description: The WIA\_IPS\_OVER\_SCAN property is used to enable and configure over scanning (scanning beyond physical document boundaries). The WIA minidriver creates and maintains this property.
+title: WIA_IPS_OVER_SCAN
+description: The WIA_IPS_OVER_SCAN property is used to enable and configure over scanning (scanning beyond physical document boundaries). The WIA minidriver creates and maintains this property.
 keywords: ["WIA_IPS_OVER_SCAN Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_OVER_SCAN
 api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 05/22/2018
+ms.date: 05/11/2023
 ---
 
-# WIA\_IPS\_OVER\_SCAN
+# WIA_IPS_OVER_SCAN
 
+The **WIA_IPS_OVER_SCAN** property is used to enable and configure over scanning (scanning beyond physical document boundaries). The WIA minidriver creates and maintains this property.
 
-The **WIA\_IPS\_OVER\_SCAN** property is used to enable and configure over scanning (scanning beyond physical document boundaries). The WIA minidriver creates and maintains this property.
+Property Type: VT_I4
 
-
-
-
-Property Type: VT\_I4
-
-Valid Values: WIA\_PROP\_LIST
+Valid Values: WIA_PROP_LIST
 
 Access Rights: Read/Write
 
 ## Remarks
 
-The following table describes the valid values for the **WIA\_IPS\_OVER\_SCAN** property.
+The following table describes the valid values for the **WIA_IPS_OVER_SCAN** property.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Value</th>
-<th>Definition</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>WIA_OVER_SCAN_DISABLED</p></td>
-<td><p>Over scanning is disabled. This is the required default value if the property is supported.</p></td>
-</tr>
-<tr class="even">
-<td><p>WIA_ OVER_SCAN_TOP_BOTTOM</p></td>
-<td><p>Over scan at the top and bottom sides of the document.</p></td>
-</tr>
-<tr class="odd">
-<td><p>WIA_ OVER_SCAN_LEFT_RIGHT</p></td>
-<td><p>Over scan at the left and right sides of the document.</p></td>
-</tr>
-<tr class="even">
-<td><p>WIA_ OVER_SCAN_ ALL</p></td>
-<td><p>Over scan at all sides of the document.</p></td>
-</tr>
-</tbody>
-</table>
+| Value | Definition |
+|--|--|
+| WIA_OVER_SCAN_DISABLED | Over scanning is disabled. This is the required default value if the property is supported. |
+| WIA_OVER_SCAN_TOP_BOTTOM | Over scan at the top and bottom sides of the document. |
+| WIA_OVER_SCAN_LEFT_RIGHT | Over scan at the left and right sides of the document. |
+| WIA_OVER_SCAN_ALL | Over scan at all sides of the document. |
 
- 
-
-This property is valid for all programmable image data source items, including Flatbed (WIA\_CATEGORY\_FLATBED) and Feeder (WIA\_CATEGORY\_FEEDER) and is optional. When the property is supported, WIA\_OVER\_SCAN\_DISABLED is the required default value.
+This property is valid for all programmable image data source items, including Flatbed (WIA_CATEGORY_FLATBED) and Feeder (WIA_CATEGORY_FEEDER) and is optional. When the property is supported, WIA_OVER_SCAN_DISABLED is the required default value.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
-
- 
-
- 
-
-
-
-
-
+**Header:** wiadef.h (include Wiadef.h)

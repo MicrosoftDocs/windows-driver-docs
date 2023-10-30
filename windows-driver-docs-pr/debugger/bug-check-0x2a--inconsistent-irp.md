@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x2A INCONSISTENT_IRP", "INCONSISTENT_IRP"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INCONSISTENT_IRP
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The INCONSISTENT\_IRP bug check has a value of 0x0000002A. This indicates that an IRP was found to contain inconsistent information.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## INCONSISTENT\_IRP Parameters

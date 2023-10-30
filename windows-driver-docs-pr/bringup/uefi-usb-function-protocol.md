@@ -1,12 +1,12 @@
 ---
 title: UEFI USB function protocol
 description: The USB function protocol defines a generic and lightweight USB transport in the UEFI environment.
-ms.date: 08/20/2021
+ms.date: 03/23/2023
 ---
 
 # UEFI USB function protocol
 
-> [!NOTE]
+> [!IMPORTANT]
 > Some information in this section may apply only to Windows 10 Mobile and certain processor architectures.
 
 The USB function protocol defines a generic and lightweight USB transport in the UEFI environment. This protocol is used by flashing tools, USB mass storage mode, and other tools that require bidirectional communication between a device that is booted into the UEFI environment and a host computer.

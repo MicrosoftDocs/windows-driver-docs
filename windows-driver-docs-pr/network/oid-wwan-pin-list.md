@@ -1,5 +1,6 @@
 ---
 title: OID_WWAN_PIN_LIST
+ms.topic: reference
 description: OID_WWAN_PIN_LIST returns a list of all the different types of Personal Identification Numbers (PINs) that are supported by the MB device and additional details for each PIN type, such as the length of the PIN (minimum and maximum lengths), PIN format, PIN-entry mode (enabled/disabled/not-available). This OID also specifies the current mode of each PIN supported by the device. Set requests are not supported. Miniport drivers must process query requests asynchronously, initially returning NDIS_STATUS_INDICATION_REQUIRED to the original request, and later sending an NDIS_STATUS_WWAN_PIN_LIST status notification containing an NDIS_WWAN_PIN_LIST structure to return a list of PINs with corresponding descriptions when completing query requests.
 ms.date: 08/08/2017
 keywords: 

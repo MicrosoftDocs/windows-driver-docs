@@ -1,7 +1,8 @@
 ---
 title: NDIS_STATUS_RESET_END
+ms.topic: reference
 description: The NDIS_STATUS_RESET_END status indicates that a miniport adapter reset operation is complete.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - NDIS_STATUS_RESET_END Network Drivers Starting with Windows Vista
 ---

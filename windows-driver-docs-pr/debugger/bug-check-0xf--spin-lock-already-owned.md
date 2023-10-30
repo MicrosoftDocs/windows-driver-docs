@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xF SPIN_LOCK_ALREADY_OWNED", "SPIN_LOCK_ALREADY_OWNED"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SPIN_LOCK_ALREADY_OWNED
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The SPIN\_LOCK\_ALREADY\_OWNED bug check has a value of 0x0000000F. This indicates that a request for a spin lock has been initiated when the spin lock was already owned.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## SPIN\_LOCK\_ALREADY\_OWNED Parameters

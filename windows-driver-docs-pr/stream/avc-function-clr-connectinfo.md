@@ -4,6 +4,7 @@ description: The AVC_FUNCTION_CLR_CONNECT_INFO function code causes avc.sys to r
 keywords: ["AVC_FUNCTION_CLR_CONNECTINFO Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - AVC_FUNCTION_CLR_CONNECTINFO
 api_type:

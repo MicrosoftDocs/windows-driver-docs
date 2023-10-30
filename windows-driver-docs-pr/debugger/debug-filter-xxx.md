@@ -5,6 +5,7 @@ ms.date: 12/07/2017
 keywords: ["DEBUG_FILTER_XXX Windows Debugging"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DEBUG_FILTER_XXX
 api_location:

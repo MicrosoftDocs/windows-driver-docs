@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1D6 WORKER_THREAD_RETURNED_WITH_NON_DEFAULT_WORKLOAD_CLA
 ms.date: 01/11/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WORKER_THREAD_RETURNED_WITH_NON_DEFAULT_WORKLOAD_CLASS
 api_type:
@@ -16,7 +17,7 @@ api_type:
 The WORKER\_THREAD\_RETURNED\_WITH\_NON\_DEFAULT\_WORKLOAD\_CLASS bug check has a value of 0x000001D6. It indicates that a worker thread changed its workload class and did not revert it before returning.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
  
 

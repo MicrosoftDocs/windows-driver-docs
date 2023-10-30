@@ -25,7 +25,7 @@ For more information about the VF data path, see [SR-IOV VF Data Path](sr-iov-vf
 
 The following figure shows the various data paths that are supported over an SR-IOV network adapter.
 
-![stack diagram showing sr-iov adapter with a management parent partition and two child partitions containing guest operating systems.](images/sriovdatapaths.png)
+:::image type="content" source="images/sriovdatapaths.png" alt-text="Diagram showing SR-IOV adapter with a management parent partition and two child partitions containing guest operating systems.":::
 
 After the Hyper-V child partition is started and before the VF data path is established, network traffic flows over the synthetic data path. After the VF data path is established, network traffic can revert to the synthetic data path if the following conditions are true:
 

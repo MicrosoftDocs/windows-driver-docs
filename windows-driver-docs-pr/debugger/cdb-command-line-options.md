@@ -5,6 +5,7 @@ keywords: ["CDB Command-Line Options Windows Debugging"]
 ms.date: 08/01/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - CDB Command-Line Options
 api_type:
@@ -106,27 +107,27 @@ If the target application is a *console application*, this option causes it to l
 Debugs the Client Server Run-Time Subsystem (CSRSS). For details, see [Debugging CSRSS](debugging-csrss.md).
 
 <span id="_______-a_______Extension______"></span><span id="_______-a_______extension______"></span><span id="_______-A_______EXTENSION______"></span> **-a** *Extension*   
-Sets the default extension DLL. The default is *userexts*. There must be no space after the "a", and the .dll extension must not be included. For details, and other methods of setting this default, see [Loading Debugger Extension DLLs](loading-debugger-extension-dlls.md).
+Sets the default extension DLL. The default is *userexts*. There must be no space after the "a", and the .dll extension must not be included. For details, and other methods of setting this default, see [Loading Debugger Extension DLLs](../debuggercmds/loading-debugger-extension-dlls.md).
 
 <span id="_______-bonc______"></span><span id="_______-BONC______"></span> **-bonc**   
 If this option is specified, the debugger will break into the target as soon as the session begins. This is especially useful when connecting to a debugging server that might not be currently broken into the target.
 
 <span id="_______-c_________command______________"></span><span id="_______-C_________COMMAND______________"></span> **-c "** *command* **"**   
-Specifies the initial debugger command to run at start-up. This command must be surrounded with quotation marks. Multiple commands can be separated with semicolons. (If you have a long command list, it may be easier to put them in a script and then use the **-c** option with the [**$&lt;, $&gt;&lt;, $&gt;&lt;, $$&gt;&lt; (Run Script File)**](-----------------------a---run-script-file-.md) command.)
+Specifies the initial debugger command to run at start-up. This command must be surrounded with quotation marks. Multiple commands can be separated with semicolons. (If you have a long command list, it may be easier to put them in a script and then use the **-c** option with the [**$&lt;, $&gt;&lt;, $&gt;&lt;, $$&gt;&lt; (Run Script File)**](../debuggercmds/-----------------------a---run-script-file-.md) command.)
 
 If you are starting a debugging client, this command must be intended for the debugging server. Client-specific commands such as **.lsrcpath** are not allowed.
 
 <span id="_______-cf_________filename______________"></span><span id="_______-CF_________FILENAME______________"></span> **-cf "** *filename* **"**   
-Specifies the path and name of a script file. This script file is executed as soon as the debugger is started. If *filename* contains spaces it must be enclosed in quotation marks. If the path is omitted, the current directory is assumed. If the **-cf** option is not used, the file ntsd.ini in the current directory is used as the script file. If the file does not exist, no error occurs. For details, see [Using Script Files](using-script-files.md).
+Specifies the path and name of a script file. This script file is executed as soon as the debugger is started. If *filename* contains spaces it must be enclosed in quotation marks. If the path is omitted, the current directory is assumed. If the **-cf** option is not used, the file ntsd.ini in the current directory is used as the script file. If the file does not exist, no error occurs. For details, see [Using Script Files](../debuggercmds/using-script-files.md).
 
 <span id="_______-cfr_________filename______________"></span><span id="_______-CFR_________FILENAME______________"></span> **-cfr "** *filename* **"**   
-Specifies the path and name of a script file. This script file is executed as soon as the debugger is started, and any time the target is restarted. If *filename* contains spaces it must be enclosed in quotation marks. If the path is omitted, the current directory is assumed. If the file does not exist, no error occurs. For details, see [Using Script Files](using-script-files.md).
+Specifies the path and name of a script file. This script file is executed as soon as the debugger is started, and any time the target is restarted. If *filename* contains spaces it must be enclosed in quotation marks. If the path is omitted, the current directory is assumed. If the file does not exist, no error occurs. For details, see [Using Script Files](../debuggercmds/using-script-files.md).
 
 <span id="_______-cimp______"></span><span id="_______-CIMP______"></span> **-cimp**   
 Directs CDB/NTSD to start with a DbgSrv implicit command line instead of an explicit process to run. This option is the client side of dbgsrv -pc.
 
 <span id="_______-clines________lines______"></span><span id="_______-CLINES________LINES______"></span> **-clines** *lines*   
-Sets the approximate number of commands in the command history which can be accessed during remote debugging. For details, and for other ways to change this number, see [Using Debugger Commands](using-debugger-commands.md).
+Sets the approximate number of commands in the command history which can be accessed during remote debugging. For details, and for other ways to change this number, see [Using Debugger Commands](../debuggercmds/using-debugger-commands.md).
 
 <span id="_______-d______"></span><span id="_______-D______"></span> **-d**   
 Passes control of this debugger to the kernel debugger. If you are debugging CSRSS, this control redirection always is active, even if **-d** is not specified. (This option cannot be used during remote debugging -- use **-ddefer** instead.) See [Controlling the User-Mode Debugger from the Kernel Debugger](controlling-the-user-mode-debugger-from-the-kernel-debugger.md) for details. This option cannot be used in conjunction with either the **-ddefer** option or the **-noio** option.
@@ -142,7 +143,7 @@ Passes control of this debugger to the kernel debugger, unless a debugging clien
 Signals the debugger that the specified event has occurred. This option is only used when starting the debugger programmatically.
 
 <span id="_______-ee__masm_c___"></span><span id="_______-EE__MASM_C___"></span> **-ee** {**masm**|**c++**}  
-Sets the default expression evaluator. If **masm** is specified, MASM expression syntax will be used. If **c++** is specified, C++ expression syntax will be used. If the **-ee** option is omitted, MASM expression syntax is used as the default. See [Evaluating Expressions](evaluating-expressions.md) for details.
+Sets the default expression evaluator. If **masm** is specified, MASM expression syntax will be used. If **c++** is specified, C++ expression syntax will be used. If the **-ee** option is omitted, MASM expression syntax is used as the default. See [Evaluating Expressions](../debuggercmds/evaluating-expressions.md) for details.
 
 <span id="_______-failinc______"></span><span id="_______-FAILINC______"></span> **-failinc**   
 Causes the debugger to ignore any questionable symbols. When debugging a user-mode or kernel-mode minidump file, this option will also prevent the debugger from loading any modules whose images can't be mapped. For details and for other methods of controlling this, see [SYMOPT\_EXACT\_SYMBOLS](symbol-options.md#symopt-exact-symbols).
@@ -185,7 +186,7 @@ The **-iu** parameter must not be used with any other parameters. This command w
 Starts CDB/NTSD in quiet mode.
 
 <span id="_______-lines______"></span><span id="_______-LINES______"></span> **-lines**   
-Enables source line debugging. If this option is omitted, the [**.lines (Toggle Source Line Support)**](-lines--toggle-source-line-support-.md) command will have to be used before source debugging will be allowed. For other methods of controlling this, see [SYMOPT\_LOAD\_LINES](symbol-options.md#symopt-load-lines).
+Enables source line debugging. If this option is omitted, the [**.lines (Toggle Source Line Support)**](../debuggercmds/-lines--toggle-source-line-support-.md) command will have to be used before source debugging will be allowed. For other methods of controlling this, see [SYMOPT\_LOAD\_LINES](symbol-options.md#symopt-load-lines).
 
 <span id="_______-log_a_au_o_ou__LogFile"></span><span id="_______-log_a_au_o_ou__logfile"></span><span id="_______-LOG_A_AU_O_OU__LOGFILE"></span> **-log**{**a\|au\|o\|ou**} *LogFile*  
 Begins logging information to a log file. If the specified file already exists, it will be overwritten if **-logo** is used, or output will be appended to the file if -loga is used. The **-logau** and **-logou** options operate similar to **-loga** and **-logo** respectively, except that the log file is a Unicode file. For more details, see [Keeping a Log File in CDB](keeping-a-log-file-in-cdb.md).
@@ -208,7 +209,7 @@ Prevents the debugging server from being used for input or output. Input will on
 All output will be directed to the debugging client. If NTSD is used for the server, no console window will be created at all. For more details, see [**Activating a Debugging Server**](activating-a-debugging-server.md). This option cannot be used in conjunction with either the **-d** option or the **-ddefer** option.
 
 <span id="_______-noshell______"></span><span id="_______-NOSHELL______"></span> **-noshell**   
-Prohibits all **.shell** commands. This prohibition will last as long as the debugger is running, even if a new debugging session is begun. For details, and for other ways to disable **.shell** commands, see [Using Shell Commands](using-shell-commands.md).
+Prohibits all **.shell** commands. This prohibition will last as long as the debugger is running, even if a new debugging session is begun. For details, and for other ways to disable **.shell** commands, see [Using Shell Commands](../debuggercmds/using-shell-commands.md).
 
 <span id="_______-nosqm______"></span><span id="_______-NOSQM______"></span> **-nosqm**   
 Disables telemetry data collection and upload.
@@ -405,7 +406,7 @@ Specifies the symbol search path. Separate multiple paths with a semicolon (;). 
 Specifies the name of a crash dump file to debug. If the path and file name contain spaces, this must be surrounded by quotation marks. It is possible to open several dump files at once by including multiple **-z** options, each followed by a different *DumpFile* value. For details, see [Analyzing a User-Mode Dump File](analyzing-a-user-mode-dump-file.md).
 
 <span id="_______-zp_______PageFile______"></span><span id="_______-zp_______pagefile______"></span><span id="_______-ZP_______PAGEFILE______"></span> **-zp** *PageFile*   
-Specifies the name of a modified page file. This is useful if you are debugging a dump file and want to use the [**.pagein (Page In Memory)**](-pagein--page-in-memory-.md) command. You cannot use **-zp** with a standard Windows page file -- only specially-modified page files can be used.
+Specifies the name of a modified page file. This is useful if you are debugging a dump file and want to use the [**.pagein (Page In Memory)**](../debuggercmds/-pagein--page-in-memory-.md) command. You cannot use **-zp** with a standard Windows page file -- only specially-modified page files can be used.
 
 <span id="_______executable______"></span><span id="_______EXECUTABLE______"></span> *executable*   
 Specifies the command line of an executable process. This is used to launch a new process and debug it. This has to be the final item on the command line. All text after the executable name is passed to the executable as its argument string.

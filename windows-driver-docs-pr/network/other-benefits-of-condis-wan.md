@@ -3,7 +3,7 @@ title: Other Benefits of CoNDIS WAN
 description: Other Benefits of CoNDIS WAN
 keywords:
 - CoNDIS WAN drivers WDK networking , benefits
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # Other Benefits of CoNDIS WAN

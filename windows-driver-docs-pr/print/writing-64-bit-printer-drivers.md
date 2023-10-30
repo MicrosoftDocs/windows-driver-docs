@@ -4,10 +4,12 @@ description: Writing 64-Bit Printer Drivers
 keywords:
 - printer drivers WDK , 64-bit
 - 64-bit WDK printer
-ms.date: 08/25/2020
+ms.date: 01/31/2023
 ---
 
 # Writing 64-Bit Printer Drivers
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 If you are writing a 64-bit driver or writing a driver that can be compiled to run on both 32-bit and 64-bit systems, follow the 64-bit porting guidelines in [Porting Your Driver to 64-Bit Windows](../kernel/porting-your-driver-to-64-bit-windows.md). This topic describes some of the limitations and problems that you might encounter in writing a 64-bit printer driver.
 
@@ -27,14 +29,14 @@ In existing 32-bit driver code, be careful about conversions between pointer typ
 
 Instead, cast the pointer to type DWORD\_PTR or ULONG\_PTR. An unsigned integer of type DWORD\_PTR or ULONG\_PTR is always large enough to store the entire pointer, regardless of whether the code is compiled for a 32-bit or 64-bit computer.
 
-For example, the pDrvOptItems.UserData pointer field in the [**OEMCUIPPARAM**](/windows-hardware/drivers/ddi/printoem/ns-printoem-_oemcuipparam) structure is of type ULONG\_PTR. The following code example shows what not to do if you copy a 64-bit pointer value to this field.
+For example, the pDrvOptItems.UserData pointer field in the [**OEMCUIPPARAM**](/windows-hardware/drivers/ddi/printoem/ns-printoem-_oemcuipparam) structure is of type ULONG_PTR. The following code example shows what not to do if you copy a 64-bit pointer value to this field.
 
 ```cpp
 PUSERDATA pData;
 OEMCUIPPARAM->pDrvOptItems.UserData = (ULONG)pData;  // Wrong
 ```
 
-The preceding code example casts the *pData* pointer to type ULONG, which can truncate the pointer value if **sizeof**(*pData*) > **sizeof**(ULONG). The correct approach is to cast the pointer to ULONG\_PTR, as shown in the following code example.
+The preceding code example casts the *pData* pointer to type ULONG, which can truncate the pointer value if **sizeof**(*pData*) > **sizeof**(ULONG). The correct approach is to cast the pointer to ULONG_PTR, as shown in the following code example.
 
 ```cpp
 PUSERDATA pData;

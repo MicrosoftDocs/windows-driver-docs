@@ -1,5 +1,6 @@
 ---
 title: OID_QOS_OFFLOAD_CURRENT_CAPABILITIES
+ms.topic: reference
 description: A driver issues OID_QOS_OFFLOAD_HARDWARE_CAPABILITIES to obtain currently enabled vmQoS offload hardware capabilities of a miniport adapter.
 ms.assetid:
 ms.date: 10/30/2020

@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["KsDeviceMutex rule ()"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KsDeviceMutex
 api_type:

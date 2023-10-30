@@ -28,7 +28,7 @@ SAN service providers should cache and release RDMA buffers that are exposed for
 
 1.  When the switch calls the [**WSPDeregisterMemory**](/previous-versions/windows/hardware/network/ff566279(v=vs.85)) extension function to release a buffer, the SAN service provider should leave the buffer registered with the SAN NIC and locked down to a region of physical memory. The SAN service provider should also add the buffer to a cache of registered buffers, in case the buffer is used again in a subsequent RDMA operation, and secure possession of the buffer as described in the next list item.
 
-2.  A SAN service provider caches memory registrations based on virtual addresses. When the SAN service provider caches a buffer's registration, the SAN service provider's proxy driver must call the [**MmSecureVirtualMemory**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-mmsecurevirtualmemory) function to secure possession of that registered buffer so that the operating system notifies the switch if the buffer is released (for example, if an application calls the **VirtualFree** function to release a virtual address range back to the operating system).
+2.  A SAN service provider caches memory registrations based on virtual addresses. When the SAN service provider caches a buffer's registration, the SAN service provider's proxy driver must call the [**MmSecureVirtualMemory**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-mmsecurevirtualmemory) function to secure possession of that registered buffer so that the operating system notifies the switch if the buffer is released (for example, if an application calls the [**VirtualFree**](/windows/win32/api/memoryapi/nf-memoryapi-virtualfree) function to release a virtual address range back to the operating system).
 
 3.  When the switch subsequently calls **WSPRegisterMemory** to register a buffer, the SAN service provider should check its cache to determine if the buffer is already registered. If the SAN service provider finds the buffer in its cache, the SAN service provider should not perform any further registration action.
 
@@ -36,9 +36,8 @@ SAN service providers should cache and release RDMA buffers that are exposed for
 
 5.  Before the connection between a local SAN socket and a remote peer is closed, the SAN service provider should release any cached buffers.
 
-**Note**  The proxy driver must use the **try/except** mechanism around code that accesses a user-mode buffer that was secured through a call to **MmSecureVirtualMemory** to prevent operating system crashes. For more information about how a proxy driver secures and releases buffers, see [Securing and Releasing Ownership of Virtual Addresses](securing-and-releasing-ownership-of-virtual-addresses.md). For more information about **try/except**, see the Visual C++ documentation. For information about **VirtualFree**, see the Microsoft Windows SDK documentation.
+**Note**  The proxy driver must use the [**try/except**](/cpp/c-language/try-except-statement-c) mechanism around code that accesses a user-mode buffer that was secured through a call to **MmSecureVirtualMemory** to prevent operating system crashes. For more information about how a proxy driver secures and releases buffers, see [Securing and Releasing Ownership of Virtual Addresses](securing-and-releasing-ownership-of-virtual-addresses.md).
 
- 
 
 ### Caching RDMA Buffers Exposed for Remote Access
 

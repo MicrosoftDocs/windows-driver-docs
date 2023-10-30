@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1000007E SYSTEM_THREAD_EXCEPTION_NOT_HANDLED_M", "SYSTEM
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SYSTEM_THREAD_EXCEPTION_NOT_HANDLED_M
 api_type:
@@ -19,10 +20,10 @@ The SYSTEM\_THREAD\_EXCEPTION\_NOT\_HANDLED\_M bug check has a value of 0x100000
 Bug check 0x1000007E has the same meaning and parameters as [**bug check 0x7E**](bug-check-0x7e--system-thread-exception-not-handled.md) (SYSTEM\_THREAD\_EXCEPTION\_NOT\_HANDLED).
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 ## Resolution
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
  
 
  

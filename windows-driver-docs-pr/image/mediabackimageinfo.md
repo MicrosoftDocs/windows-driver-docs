@@ -4,15 +4,15 @@ description: The optional MediaBackImageInfo element contains the image informat
 keywords: ["MediaBackImageInfo element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn MediaBackImageInfo
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 05/01/2023
 ---
 
 # MediaBackImageInfo element
-
 
 The optional **MediaBackImageInfo** element contains the image information for the back side of an ADF duplex scan.
 
@@ -30,50 +30,19 @@ There are no attributes.
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="bytesperline.md" data-raw-source="[&lt;strong&gt;BytesPerLine&lt;/strong&gt;](bytesperline.md)"><strong>BytesPerLine</strong></a></p></td>
-</tr>
-<tr class="even">
-<td><p><a href="numberoflines.md" data-raw-source="[&lt;strong&gt;NumberOfLines&lt;/strong&gt;](numberoflines.md)"><strong>NumberOfLines</strong></a></p></td>
-</tr>
-<tr class="odd">
-<td><p><a href="pixelsperline.md" data-raw-source="[&lt;strong&gt;PixelsPerLine&lt;/strong&gt;](pixelsperline.md)"><strong>PixelsPerLine</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**BytesPerLine**](bytesperline.md) |
+| [**NumberOfLines**](numberoflines.md) |
+| [**PixelsPerLine**](pixelsperline.md) |
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="imageinformation.md" data-raw-source="[&lt;strong&gt;ImageInformation&lt;/strong&gt;](imageinformation.md)"><strong>ImageInformation</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**ImageInformation**](imageinformation.md) |
 
 ## See also
-
 
 [**BytesPerLine**](bytesperline.md)
 
@@ -84,13 +53,3 @@ There are no attributes.
 [**NumberOfLines**](numberoflines.md)
 
 [**PixelsPerLine**](pixelsperline.md)
-
- 
-
- 
-
-
-
-
-
-

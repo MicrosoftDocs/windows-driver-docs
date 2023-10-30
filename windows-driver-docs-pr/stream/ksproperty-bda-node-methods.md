@@ -4,6 +4,7 @@ description: Clients use KSPROPERTY_BDA_NODE_METHODS to retrieve a list of metho
 keywords: ["KSPROPERTY_BDA_NODE_METHODS Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_BDA_NODE_METHODS
 api_location:

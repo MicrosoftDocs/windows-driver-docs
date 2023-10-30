@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xAC HAL_MEMORY_ALLOCATION", "HAL_MEMORY_ALLOCATION"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - HAL_MEMORY_ALLOCATION
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The HAL\_MEMORY\_ALLOCATION bug check has a value of 0x000000AC. This bug check indicates that the hardware abstraction layer (HAL) could not obtain sufficient memory.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## HAL\_MEMORY\_ALLOCATION Parameters

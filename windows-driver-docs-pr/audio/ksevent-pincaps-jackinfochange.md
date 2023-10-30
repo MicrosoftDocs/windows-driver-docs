@@ -4,14 +4,16 @@ description: The KSEVENT\_PINCAPS\_JACKINFOCHANGE event indicates to the audio s
 keywords: ["KSEVENT_PINCAPS_JACKINFOCHANGE Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSEVENT_PINCAPS_JACKINFOCHANGE
 api_location:
 - Ks.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 03/06/2023
 ---
+
 
 # KSEVENT\_PINCAPS\_JACKINFOCHANGE
 

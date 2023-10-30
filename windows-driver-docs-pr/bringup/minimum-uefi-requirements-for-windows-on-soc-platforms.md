@@ -1,7 +1,7 @@
 ---
 title: Minimum UEFI requirements for Windows on SoC platforms
 description: Provides information about minimum UEFI requirements for Windows on SoC platforms.
-ms.date: 08/19/2021
+ms.date: 03/23/2023
 ---
 
 # Minimum UEFI requirements for Windows on SoC platforms
@@ -12,8 +12,7 @@ This set of requirements applies to any SoC-based computing system, with some li
 
 Windows supports firmware revisions based on the Unified Extensible Firmware Interface (UEFI) Version 2.3.1 or later.
 
-> [!NOTE]
-> Windows supports a subset of functionality defined in the UEFI 2.3.1 specification. The Windows implementation does not have an explicit check against higher revisions of the firmware. The operating system will support higher revisions of the firmware if they contain the necessary support described in this document.
+Windows supports a subset of functionality defined in the UEFI 2.3.1 specification. The Windows implementation does not have an explicit check against higher revisions of the firmware. The operating system will support higher revisions of the firmware if they contain the necessary support described in this document.
 
 ## In this section
 

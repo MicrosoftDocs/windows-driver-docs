@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_NETWORK_LIST_OFFLOAD_CONFIG (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_NETWORK_LIST_OFFLOAD_CONFIG is a WiFiCx TLV that contains Network List Offload (NLO) configuration.
 ms.date: 07/31/2021
 keywords:

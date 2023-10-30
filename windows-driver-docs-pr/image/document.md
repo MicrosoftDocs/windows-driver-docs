@@ -4,15 +4,15 @@ description: The required Document element contains the details about one of the
 keywords: ["Document element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn Document
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 04/21/2023
 ---
 
 # Document element
-
 
 The required **Document** element contains the details about one of the documents that are scanned during a scan job.
 
@@ -30,55 +30,18 @@ There are no attributes.
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="documentdescription.md" data-raw-source="[&lt;strong&gt;DocumentDescription&lt;/strong&gt;](documentdescription.md)"><strong>DocumentDescription</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**DocumentDescription**](documentdescription.md) |
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="documents.md" data-raw-source="[&lt;strong&gt;Documents&lt;/strong&gt;](documents.md)"><strong>Documents</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**Documents**](documents.md) |
 
 ## See also
-
 
 [**DocumentDescription**](documentdescription.md)
 
 [**Documents**](documents.md)
-
- 
-
- 
-
-
-
-
-
-

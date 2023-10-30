@@ -8,7 +8,7 @@ keywords:
 - Driver Verifier WDK , about Driver Verifier
 - illegal function calls WDK Driver Verifier
 - stress testing WDK Driver Verifier
-ms.date: 08/06/2021
+ms.date: 09/19/2023
 ---
 
 # Driver Verifier
@@ -20,24 +20,21 @@ Driver Verifier monitors Windows kernel-mode drivers and graphics drivers to det
 > <li>You should only run Driver Verifier on computers that you are using for testing and debugging.</li>
 > <li>You must be in the Administrators group on the computer to use Driver Verifier.</li> </ul>
 
-
 ## Where can I download Driver Verifier?
 
 You don't need to download Driver Verifier, because it is included with most versions of Windows in %WinDir%\system32\ as Verifier.exe. (Driver Verifier is not included with Windows 10 S, so we recommend testing driver behavior on Windows 10 instead.) Driver Verifier is not distributed separately as a download package.
 
 For information about changes in Driver Verifier for Windows 10 and previous versions of Windows, see <a href="driver-verifier--what-s-new.md" data-raw-source="[Driver Verifier: What's New](driver-verifier--what-s-new.md)">Driver Verifier: What's New</a>.
 
-
 ## When to use Driver Verifier
 
 Run Driver Verifier throughout development and testing of your driver. More specifically, use Driver Verifier for the following purposes:
 
--   To find problems early in the development cycle, when they are easier and less costly to correct.
+- To find problems early in the development cycle, when they are easier and less costly to correct.
 
--   For troubleshooting and debugging test failures and computer crashes.
+- For troubleshooting and debugging test failures and computer crashes.
 
--   To monitor behavior when you deploy a driver for testing using the WDK, Visual Studio, and the tests from the [Windows Hardware Lab Kit](/windows-hardware/test/hlk/) (Windows HLK) or [Windows Hardware Certification Kit](/previous-versions/windows/hardware/hck/jj124227(v=vs.85)) (for Windows 8.1). For more information about testing drivers, see [Testing a Driver](../develop/testing-a-driver.md).
-
+- To monitor behavior when you deploy a driver for testing using the WDK, Visual Studio, and the tests from the [Windows Hardware Lab Kit](/windows-hardware/test/hlk/) (Windows HLK) or [Windows Hardware Certification Kit](/previous-versions/windows/hardware/hck/jj124227(v=vs.85)) (for Windows 8.1). For more information about testing drivers, see [Testing a Driver](../develop/testing-a-driver.md).
 
 ## How to start Driver Verifier
 
@@ -85,29 +82,29 @@ You should only run Driver Verifier on test computers, or on computers that you 
    </tbody>
    </table>
 
-
 4. If you chose **Select driver names from a list**, select **Next**, and then select one or more specific drivers.
 
 5. Select **Finish**, and then restart the computer.
 
-
-
 >[!Note]
-> You can also run Driver Verifier in a Command Prompt window without starting Driver Verifier Manager. For example, to run Driver Verifier with the standard settings on a driver called *myDriver.sys*, you would use the following command:
-> ```console
-> verifier /standard /driver myDriver.sys
-> ```
->
-> For more information about command line options, see [**Driver Verifier Command Syntax**](verifier-command-line.md).
+> When using driver verifier with Windows versions 20150 to 25126, if you have selected *ntoskrnl* you may receive an invalid state error.  
+> To avoid this issue either unselect *ntoskrnl* or upgrade to a version of Windows after build 25126.
 
+### Run driver verifier at a command prompt
 
+You can also run Driver Verifier in a Command Prompt window without starting Driver Verifier Manager. For example, to run Driver Verifier with the standard settings on a driver called *myDriver.sys*, you would use the following command:
+
+```console
+verifier /standard /driver myDriver.sys
+```
+
+For more information about command line options, see [**Driver Verifier Command Syntax**](verifier-command-line.md).
 
 ## How to control Driver Verifier
 
 You can use either Driver Verifier Manager or a command line to control Driver Verifier. To start Driver Verifier Manager, see [How to start Driver Verifier](#how-to-start-driver-verifier), earlier in this topic.
 
 For each of the following actions, you can use Driver Verifier Manager or enter a command line.
-
 
 **To stop or reset Driver Verifier**
 
@@ -167,7 +164,7 @@ All violations detected by Driver Verifier result in bug checks. Common bug chec
 
 For more information, see [Handling a Bug Check When Driver Verifier is Enabled](../debugger/handling-a-bug-check-when-driver-verifier-is-enabled.md). For tips about debugging Bug Check 0xC4, see [Debugging Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION](debugging-bug-check-0xc4--driver-verifier-detected-violation.md).
 
-When you start a new debugging session, use the debugger extension command, [**!analyze**](../debugger/-analyze.md). In kernel mode, the **!analyze** command displays information about the most recent bug check. To display *additional* information, to help identify the faulting driver, add option **-v** to the command at the **kd>** prompt:
+When you start a new debugging session, use the debugger extension command, [**!analyze**](../debuggercmds/-analyze.md). In kernel mode, the **!analyze** command displays information about the most recent bug check. To display *additional* information, to help identify the faulting driver, add option **-v** to the command at the **kd>** prompt:
 
 ```dbgcmd
 kd> !analyze -v
@@ -175,25 +172,25 @@ kd> !analyze -v
 
 In addition to **!analyze**, you can enter the following debugger extensions at the **kd>** prompt to view information that is specific to Driver Verifier:
 
--   [**!verifier**](../debugger/-verifier.md) dumps captured Driver Verifier statistics. Use **!verifier -?** to display all of the available options.
+-   [**!verifier**](../debuggercmds/-verifier.md) dumps captured Driver Verifier statistics. Use **!verifier -?** to display all of the available options.
 
     ```dbgcmd
     kd> !verifier
     ```
 
--   [**!deadlock**](../debugger/-deadlock.md) displays information related to locks or objects tracked by Driver Verifier's deadlock detection feature. Use **!deadlock -?** to display all of the available options.
+-   [**!deadlock**](../debuggercmds/-deadlock.md) displays information related to locks or objects tracked by Driver Verifier's deadlock detection feature. Use **!deadlock -?** to display all of the available options.
 
     ```dbgcmd
     kd> !deadlock
     ```
 
--   [**!iovirp**](../debugger/-iovirp.md) \[*address*\] displays information related to an IRP tracked by I/O Verifier. For example:
+-   [**!iovirp**](../debuggercmds/-iovirp.md) \[*address*\] displays information related to an IRP tracked by I/O Verifier. For example:
 
     ```dbgcmd
     kd> !iovirp 947cef68
     ```
 
--   [**!ruleinfo**](../debugger/-ruleinfo.md) \[*RuleID*\] displays information related to the [DDI compliance checking](ddi-compliance-checking.md) rule that was violated. (*RuleID* is always the first argument to the bug check.) All rule IDs from DDI compliance checking are in the form 0x200*nn*. For example:
+-   [**!ruleinfo**](../debuggercmds/-ruleinfo.md) \[*RuleID*\] displays information related to the [DDI compliance checking](ddi-compliance-checking.md) rule that was violated. (*RuleID* is always the first argument to the bug check.) All rule IDs from DDI compliance checking are in the form 0x200*nn*. For example:
 
     ```dbgcmd
     kd> !ruleinfo 0x20005

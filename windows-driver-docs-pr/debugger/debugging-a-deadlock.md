@@ -19,15 +19,15 @@ Kernel-mode deadlocks arise when multiple threads (from the same process or from
 
 The procedure used to debug a deadlock depends on whether the deadlock occurs in user mode or in kernel mode.
 
-### <span id="debugging_a_user_mode_deadlock"></span><span id="DEBUGGING_A_USER_MODE_DEADLOCK"></span>Debugging a User-Mode Deadlock
+### Debugging a User-Mode Deadlock
 
 When a deadlock occurs in user mode, use the following procedure to debug it:
 
-1. Issue the [**!ntsdexts.locks**](-locks---ntsdexts-locks-.md) extension. In user mode, you can just type **!locks** at the debugger prompt; the **ntsdexts** prefix is assumed.
+1. Issue the [**!ntsdexts.locks**](../debuggercmds/-locks---ntsdexts-locks-.md) extension. In user mode, you can just type **!locks** at the debugger prompt; the **ntsdexts** prefix is assumed.
 
-2. This extension displays all the critical sections associated with the current process, along with the ID for the owning thread and the lock count for each critical section. If a critical section has a lock count of zero, it is not locked. Use the [**~ (Thread Status)**](---thread-status-.md) command to see information about the threads that own the other critical sections.
+2. This extension displays all the critical sections associated with the current process, along with the ID for the owning thread and the lock count for each critical section. If a critical section has a lock count of zero, it is not locked. Use the [**~ (Thread Status)**](../debuggercmds/---thread-status-.md) command to see information about the threads that own the other critical sections.
 
-3. Use the [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command for each of these threads to determine whether they are waiting on other critical sections.
+3. Use the [**kb (Display Stack Backtrace)**](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command for each of these threads to determine whether they are waiting on other critical sections.
 
 4. Using the output of these **kb** commands, you can find the deadlock: two threads that are each waiting on a lock held by the other thread. In rare cases, a deadlock could be caused by more than two threads holding locks in a circular pattern, but most deadlocks involve only two threads.
 
@@ -64,7 +64,7 @@ The first critical section displayed has no locks and, therefore, can be ignored
 
 The second critical section displayed has a lock count of 2 and is, therefore, a possible cause of a deadlock. The owning thread has a thread ID of 0xA3.
 
-You can find this thread by listing all threads with the [**~ (Thread Status)**](---thread-status-.md) command, and looking for the thread with this ID:
+You can find this thread by listing all threads with the [**~ (Thread Status)**](../debuggercmds/---thread-status-.md) command, and looking for the thread with this ID:
 
 ```dbgcmd
 0:006>  ~
@@ -81,7 +81,7 @@ You can find this thread by listing all threads with the [**~ (Thread Status)**]
 
 In this display, the first item is the debugger's internal thread number. The second item (the `Id` field) contains two hexadecimal numbers separated by a decimal point. The number before the decimal point is the process ID; the number after the decimal point is the thread ID. In this example, you see that thread ID 0xA3 corresponds to thread number 4.
 
-You then use the [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command to display the stack that corresponds to thread number 4:
+You then use the [**kb (Display Stack Backtrace)**](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command to display the stack that corresponds to thread number 4:
 
 ```dbgcmd
 0:006>  ~4 kb
@@ -131,17 +131,17 @@ This is the deadlock. Thread 4, which owns the second critical section, is waiti
 
 Having confirmed the nature of this deadlock, you can use the usual debugging techniques to analyze threads 4 and 6.
 
-### <span id="debugging_a_kernel_mode_deadlock"></span><span id="DEBUGGING_A_KERNEL_MODE_DEADLOCK"></span>Debugging a Kernel-Mode Deadlock
+### Debugging a Kernel-Mode Deadlock
 
 There are several debugger extensions that are useful for debugging deadlocks in kernel mode:
 
-- The [**!kdexts.locks**](-locks---kdext--locks-.md) extension displays information about all locks held on kernel resources and the threads holding these locks. (In kernel mode, you can just type **!locks** at the debugger prompt; the **kdexts** prefix is assumed.)
+- The [**!kdexts.locks**](../debuggercmds/-locks---kdext--locks-.md) extension displays information about all locks held on kernel resources and the threads holding these locks. (In kernel mode, you can just type **!locks** at the debugger prompt; the **kdexts** prefix is assumed.)
 
-- The [**!qlocks**](-qlocks.md) extension displays the state of all queued spin locks.
+- The [**!qlocks**](../debuggercmds/-qlocks.md) extension displays the state of all queued spin locks.
 
-- The [**!wdfkd.wdfspinlock**](-deadlock.md) extension displays information about a Kernel-Mode Driver Framework (KMDF) spin-lock object.
+- The [**!wdfkd.wdfspinlock**](../debuggercmds/-deadlock.md) extension displays information about a Kernel-Mode Driver Framework (KMDF) spin-lock object.
 
-- The [**!deadlock**](-deadlock.md) extension is used in conjunction with Driver Verifier to detect inconsistent use of locks in your code that have the potential to cause deadlocks.
+- The [**!deadlock**](../debuggercmds/-deadlock.md) extension is used in conjunction with Driver Verifier to detect inconsistent use of locks in your code that have the potential to cause deadlocks.
 
 When a deadlock occurs in kernel mode, use the **!kdexts.locks** extension to list all the locks currently acquired by threads.
 

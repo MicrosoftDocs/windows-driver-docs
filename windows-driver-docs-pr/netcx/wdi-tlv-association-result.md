@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_ASSOCIATION_RESULT (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_ASSOCIATION_RESULT is a WiFiCx TLV that contains the results of an association.
 ms.date: 04/06/2022
 keywords:

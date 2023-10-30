@@ -1,69 +1,54 @@
 ---
-title: Analyzing a Kernel-Mode Dump File with WinDbg
-description: Analyzing a Kernel-Mode Dump File with WinDbg
+title: Analyze a kernel-mode dump file by using WinDbg
+description: Learn how to analyze a kernel-mode dump file by using WinDbg. Analysis of a dump file is similar to analysis of a live debugging session.
 keywords: ["WinDbg, analyzing a kernel-mode dump file", "CAB file containing a dump file, analyzing kernel-mode dump file with WinDbg"]
-ms.date: 05/23/2017
+ms.date: 12/19/2022
 ---
 
-# Analyzing a Kernel-Mode Dump File with WinDbg
+# Analyze a kernel-mode dump file by using WinDbg
 
+You can analyze kernel-mode memory dump files by using WinDbg.
 
-## <span id="ddk_analyzing_a_kernel_mode_dump_file_with_windbg_dbg"></span><span id="DDK_ANALYZING_A_KERNEL_MODE_DUMP_FILE_WITH_WINDBG_DBG"></span>
+## Start WinDbg
 
+Dump files generally end with the extension *.dmp* or *.mdmp*. You can use network shares or Universal Naming Convention file names for the memory dump file. The processor or Windows version used to create a dump file doesn't need to match the platform on which KD runs.
 
-Kernel-mode memory dump files can be analyzed by WinDbg. The processor or Windows version that the dump file was created on does not need to match the platform on which KD is being run.
+To analyze a dump file, start WinDbg and include the **-z** command-line option:
 
-### <span id="starting_windbg"></span><span id="STARTING_WINDBG"></span>Starting WinDbg
+```console
+windbg -y <SymbolPath> -i <ImagePath> -z <DumpFileName>
+```
 
-To analyze a dump file, start WinDbg with the **-z** command-line option:
+The **-v** option, which is verbose mode, is also useful. For a full list of options, see [WinDbg command-line options](windbg-command-line-options.md).
 
-**windbg -y** *SymbolPath* **-i** *ImagePath* **-z** *DumpFileName*
+If WinDbg is already running in dormant mode, open a crash dump by selecting the **File | Open Crash Dump** menu command or pressing **Ctrl**+**D**. When the **Open Crash Dump** dialog box appears, enter the full path and name of the crash dump file in **File name**, or use the dialog box to select a path and file name. After you specify a file, select **Open**.
 
-The **-v** option (verbose mode) is also useful. For a full list of options, see [**WinDbg Command-Line Options**](windbg-command-line-options.md).
+Or open a dump file after the debugger is running by using the [.opendump (Open Dump File)](../debuggercmds/-opendump--open-dump-file-.md) command, followed by the [g (Go)](../debuggercmds/g--go-.md) command.
 
-If WinDbg is already running and is in dormant mode, you can open a crash dump by selecting the **File | Open Crash Dump** menu command or pressing the CTRL+D shortcut key. When the **Open Crash Dump** dialog box appears, enter the full path and name of the crash dump file in the **File name** text box, or use the dialog box to select the proper path and file name. When the proper file has been chosen, select **Open**.
+You can debug multiple dump files at the same time. Include multiple **-z** switches on the command line, each followed by a different file name, or run [.opendump](../debuggercmds/-opendump--open-dump-file-.md) to add other dump files as debugger targets. For more information about how to control a multiple-target session, see [Debugging Multiple Targets](debugging-multiple-targets.md).
 
-You can also open a dump file after the debugger is running by using the [**.opendump (Open Dump File)**](-opendump--open-dump-file-.md) command, followed with [**g (Go)**](g--go-.md).
+Dump files can be packed into a CAB file. If you specify the file name, including the *.cab* file name extension, after the **-z** option or as the argument to an [.opendump](../debuggercmds/-opendump--open-dump-file-.md) command, the debugger reads the dump files directly.
 
-It is possible to debug multiple dump files at the same time. This can be done by including multiple **-z** switches on the command line (each followed by a different file name), or by using [**.opendump**](-opendump--open-dump-file-.md) to add additional dump files as debugger targets. For information about how to control a multiple-target session, see [Debugging Multiple Targets](debugging-multiple-targets.md).
+If there are multiple dump files stored in a single CAB file, the debugger reads only one of them. The debugger doesn't read any other files from the CAB, even if there are symbol files or other files associated with the dump file.
 
-Dump files generally end with the extension .dmp or .mdmp. You can use network shares or Universal Naming Convention (UNC) file names for the memory dump file.
+## Analyze the dump file
 
-It is also common for dump files to be packed into a CAB file. If you specify the file name (including the .cab extension) after the **-z** option or as the argument to an [**.opendump**](-opendump--open-dump-file-.md) command, the debugger can read the dump files directly out of the CAB. However, if there are multiple dump files stored in a single CAB, the debugger will only be able to read one of them. The debugger will not read any additional files from the CAB, even if they were symbol files or other files associated with the dump file.
+To analyze a kernel memory dump or a small memory dump, you might need to set the executable image path to point to executable files in memory during the crash.
 
-### <span id="analyzing_the_dump_file"></span><span id="ANALYZING_THE_DUMP_FILE"></span>Analyzing the Dump File
+Analysis of a dump file is similar to analysis of a live debugging session. For details about commands available for debugging dump files in kernel mode, see the [Debugger commands](../debuggercmds/debugger-commands.md) reference section.
 
-If you are analyzing a Kernel Memory Dump or a Small Memory Dump, you may need to set the executable image path to point to any executable files that may have been loaded in memory at the time of the crash.
+In most cases, begin by using [!analyze](../debuggercmds/-analyze.md). This extension command performs automatic analysis of the dump file, which often provides useful information.
 
-Analysis of a dump file is similar to analysis of a live debugging session. See the [Debugger Commands](debugger-commands.md) reference section for details on which commands are available for debugging dump files in kernel mode.
-
-In most cases, you should begin by using [**!analyze**](-analyze.md). This extension command performs automatic analysis of the dump file and can often result in a lot of useful information.
-
-The [**.bugcheck (Display Bug Check Data)**](-bugcheck--display-bug-check-data-.md) shows the bug check code and its parameters. Look up this bug check in the [Bug Check Code Reference](bug-check-code-reference2.md) for information about the specific error.
+The [.bugcheck (Display bug check data)](../debuggercmds/-bugcheck--display-bug-check-data-.md) command shows the bug check code and its parameters. For information about a specific error, see the [Bug check code reference](bug-check-code-reference2.md).
 
 The following debugger extensions are especially useful for analyzing a kernel-mode crash dump:
 
-[**lm**](lm--list-loaded-modules-.md)
+- [lm](../debuggercmds/lm--list-loaded-modules-.md)
+- [!kdext\*.locks](../debuggercmds/-locks---kdext--locks-.md)
+- [!memusage](../debuggercmds/-memusage.md)
+- [!vm](../debuggercmds/-vm.md)
+- [!errlog](../debuggercmds/-errlog.md)
+- [!process 0 0](../debuggercmds/-process.md)
+- [!process 0 7](../debuggercmds/-process.md)
 
-[**!kdext\*.locks**](-locks---kdext--locks-.md)
-
-[**!memusage**](-memusage.md)
-
-[**!vm**](-vm.md)
-
-[**!errlog**](-errlog.md)
-
-[**!process 0 0**](-process.md)
-
-[**!process 0 7**](-process.md)
-
-For techniques that can be used to read specific kinds of information from a dump file, see [Extracting Information from a Dump File](extracting-information-from-a-dump-file.md).
-
- 
-
- 
-
-
-
-
-
+For techniques to read specific kinds of information from a dump file, see [Extracting information from a dump file](extracting-information-from-a-dump-file.md).

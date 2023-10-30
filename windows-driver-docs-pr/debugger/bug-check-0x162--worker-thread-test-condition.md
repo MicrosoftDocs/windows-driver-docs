@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x163 WORKER_THREAD_TEST_CONDITION", "WORKER_THREAD_TEST_C
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WORKER_THREAD_TEST_CONDITION
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The WORKER\_THREAD\_TEST\_CONDITION bug check has a value of 0x00000163. This indicates that a test for kernel worker threads raised a failure.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## WORKER\_THREAD\_TEST\_CONDITION Parameters

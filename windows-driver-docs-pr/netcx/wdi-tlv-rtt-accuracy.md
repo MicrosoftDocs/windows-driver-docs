@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_RTT_ACCURACY (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_RTT_ACCURACY is a WiFiCx TLV that contains the accuracy, or expected degree of closeness, of a RTT measurement to the true value for a FTM request.
 ms.date: 10/30/2021
 keywords:

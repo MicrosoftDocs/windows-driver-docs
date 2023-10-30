@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xD2 BUGCODE_ID_DRIVER", "BUGCODE_ID_DRIVER"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - BUGCODE_ID_DRIVER
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The BUGCODE\_ID\_DRIVER bug check has a value of 0x000000D2. This indicates that a problem occurred with an NDIS driver.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## BUGCODE\_ID\_DRIVER Parameters

@@ -36,7 +36,7 @@ You can activate the Stack Based Failure Injection feature for one or more drive
     6.  See [Deploying a Driver to a Test Computer](/windows-hardware/drivers) for more information. The test computer must restart to activate this option.
 -   **Using the Enable and Disable Driver Verifier test**
 
-    1.  You can also enable Driver Verifier by running a utility test. Follow the instructions described in [How to test a driver at runtime using Visual Studio](/windows-hardware/drivers). Under the **All Tests\\Driver Verifier** test category, select the **Enable Driver Verifier (possible reboot required)** and **Disable Driver Verifier (possible reboot required)** tests.
+    1.  You can also enable Driver Verifier by running a utility test. Follow the instructions described in [How to test a driver at runtime using Visual Studio](../develop/testing-a-driver-at-runtime.md). Under the **All Tests\\Driver Verifier** test category, select the **Enable Driver Verifier (possible reboot required)** and **Disable Driver Verifier (possible reboot required)** tests.
     2.  Select the Driver Verifier options by clicking on the name of the **Enable Driver Verifier (possible reboot required)** test in the **Driver Test Group** window.
     3.  Select (check) Stack Based Failure Injection.
     4.  After you add these tests to a test group you can save the test group. To enable the Stack Based Failure Injection, run the **Enable Driver Verifier (possible reboot required)** test on the computer you have configured for testing.

@@ -4,6 +4,7 @@ description: DIF_VALIDATEDRIVER
 keywords: ["DIF_VALIDATEDRIVER Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DIF_VALIDATEDRIVER
 api_type:

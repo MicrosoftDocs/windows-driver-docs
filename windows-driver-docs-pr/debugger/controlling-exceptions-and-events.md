@@ -23,7 +23,7 @@ If the debugger ignores the exception and lets the application continue running,
 
 When an exception or event breaks into the debugger, you can use the debugger to examine the code that is being executed and the memory that the application is using. By altering certain quantities or jumping to a different point in the application, you might be able to remove the cause of the exception.
 
-You can resume execution by issuing a [**gh (Go with Exception Handled)**](gh--go-with-exception-handled-.md) or [**gn (Go with Exception Not Handled)**](gn--gn--go-with-exception-not-handled-.md) command.
+You can resume execution by issuing a [**gh (Go with Exception Handled)**](../debuggercmds/gh--go-with-exception-handled-.md) or [**gn (Go with Exception Not Handled)**](../debuggercmds/gn--gn--go-with-exception-not-handled-.md) command.
 
 If you issue the **gn** command in the debugger's second opportunity to handle the exception, the application ends.
 
@@ -51,19 +51,19 @@ The debugger can also set the handling status for each exception and event. The 
 
 You can control the break status and handling status by doing one of the following:
 
--   Use the [**SXE**](sx--sxd--sxe--sxi--sxn--sxr--sx---set-exceptions-.md), **SXD**, **SXN**, or **SXI** command in the [Debugger Command window](debugger-command-window.md).
+-   Use the [**SXE**](../debuggercmds/sx--sxd--sxe--sxi--sxn--sxr--sx---set-exceptions-.md), **SXD**, **SXN**, or **SXI** command in the [Debugger Command window](debugger-command-window.md).
 
 -   (CDB and NTSD) Use the **-x**, **-xe**, **-xd**, **-xn**, or **-xi** option on the [**command line**](cdb-command-line-options.md).
 
 -   (CDB, NTSD, and KD) Use the **sxe** or **sxd** keyword in the [Tools.ini](configuring-tools-ini.md) file.
 
--   (WinDbg only) Select [Event Filters](debug---event-filters.md) on the **Debug** menu to open the **Event Filters** dialog box, and then choose the options that you want.
+-   (WinDbg only) Select **Event Filters** on the **Debug** menu to open the **Event Filters** dialog box, and then choose the options that you want.
 
 The **SX\\*** command, the **-x\\*** command-line option, and the **sx\\*** Tools.ini keyword typically set the break status of the specified event. You can add the **-h** option to cause the handling status to be set instead.
 
 There are four special event codes (**cc**, **hc**, **bpec**, and **ssec**) that always specify handling status instead of break status.
 
-You can display the most recent exception or event by using the [**.lastevent (Display Last Event)**](-lastevent--display-last-event-.md) command.
+You can display the most recent exception or event by using the [**.lastevent (Display Last Event)**](../debuggercmds/-lastevent--display-last-event-.md) command.
 
 ### <span id="controlling_break_status"></span><span id="CONTROLLING_BREAK_STATUS"></span>Controlling Break Status
 
@@ -125,13 +125,13 @@ or
 
 If an exception is not anticipated by an **SX**\* setting, the target application breaks into the debugger on the second chance. The default status for events is listed in the following "Event Definitions and Defaults" section of this topic.
 
-To set break status by using the WinDbg graphical interface, [Event Filters](debug---event-filters.md) on the **Debug** menu select the event that you want from the list in the **Event Filters** dialog box, and then select **Enabled**, **Disabled**, **Output**, or **Ignore**.
+To set break status by using the WinDbg graphical interface, **Event Filters** on the **Debug** menu select the event that you want from the list in the **Event Filters** dialog box, and then select **Enabled**, **Disabled**, **Output**, or **Ignore**.
 
 ### <span id="controlling_handling_status"></span><span id="CONTROLLING_HANDLING_STATUS"></span>Controlling Handling Status
 
-All events are considered unhandled, unless you use the [**gh (Go with Exception Handled)**](gh--go-with-exception-handled-.md) command.
+All events are considered unhandled, unless you use the [**gh (Go with Exception Handled)**](../debuggercmds/gh--go-with-exception-handled-.md) command.
 
-All exceptions are considered unhandled, unless you use the [**sx\\***](sx--sxd--sxe--sxi--sxn--sxr--sx---set-exceptions-.md) command together with the **-h** option.
+All exceptions are considered unhandled, unless you use the [**sx\\***](../debuggercmds/sx--sxd--sxe--sxi--sxn--sxr--sx---set-exceptions-.md) command together with the **-h** option.
 
 Additionally, **SX**\* options can configure the handling status for invalid handles, STATUS\_BREAKPOINT break instructions, and single-step exceptions. (This configuration is separate from their break configuration.) When you configure their break status, these events are named **ch**, **bpe**, and **sse**, respectively. When you configure their handling status, these events are named **hc**, **bpec**, and **ssec**, respectively. (For the full listing of events, see the following "Event Definitions and Defaults" section.)
 
@@ -168,13 +168,13 @@ When you use the **SX**\* command on **cc**, **hc**, **bpec**, and **ssec** even
 
  
 
-To set handling status by using the WinDbg graphical interface, select [Event Filters](debug---event-filters.md) on the **Debug** menu, select the event that you want from the list in the **Event Filters** dialog box, and then select **Handled** or **Not Handled**.
+To set handling status by using the WinDbg graphical interface, select **Event Filters** on the **Debug** menu, select the event that you want from the list in the **Event Filters** dialog box, and then select **Handled** or **Not Handled**.
 
 ### <span id="automatic_commands"></span><span id="AUTOMATIC_COMMANDS"></span>Automatic Commands
 
-The debugger also enables you to set commands that are automatically executed if the event or exception causes a break into the debugger. You can set a command string for the first-chance break and a command string for the second-chance break. You can set these strings with the [**SX\\***](sx--sxd--sxe--sxi--sxn--sxr--sx---set-exceptions-.md) command or the [Debug | Event Filters](debug---event-filters.md) command. Each command string can contain multiple commands that are separated with semicolons.
+The debugger also enables you to set commands that are automatically executed if the event or exception causes a break into the debugger. You can set a command string for the first-chance break and a command string for the second-chance break. You can set these strings with the [**SX\\***](../debuggercmds/sx--sxd--sxe--sxi--sxn--sxr--sx---set-exceptions-.md) command or the **Debug | Event Filters** command. Each command string can contain multiple commands that are separated with semicolons.
 
-These commands are executed regardless of the break status. That is, if the break status is "Ignore," the command is still executed. If the break status is "Second-chance break," the first-chance command is executed when the exception first occurs, before any other exception handlers are involved. The command string can end with an execution command such as [**g (Go)**](g--go-.md), [**gh (Go with Exception Handled)**](gh--go-with-exception-handled-.md), or [**gn (Go with Exception Not Handled)**](gn--gn--go-with-exception-not-handled-.md).
+These commands are executed regardless of the break status. That is, if the break status is "Ignore," the command is still executed. If the break status is "Second-chance break," the first-chance command is executed when the exception first occurs, before any other exception handlers are involved. The command string can end with an execution command such as [**g (Go)**](../debuggercmds/g--go-.md), [**gh (Go with Exception Handled)**](../debuggercmds/gh--go-with-exception-handled-.md), or [**gn (Go with Exception Not Handled)**](../debuggercmds/gn--gn--go-with-exception-not-handled-.md).
 
 ### <span id="event_definitions_and_defaults"></span><span id="EVENT_DEFINITIONS_AND_DEFAULTS"></span>Event Definitions and Defaults
 
@@ -297,7 +297,7 @@ The following exceptions' default handling status is always "Not Handled". Be ca
 
  
 
-**Note**   You can override the **asrt** break status for a specific address by using the [**ah (Assertion Handling)**](ah--assertion-handling-.md) command. The **ch** and **hc** event codes refer to the same exception. When you are controlling its break status, use **sx\* ch**. When you are controlling its handling status, use **sx\* hc**.
+**Note**   You can override the **asrt** break status for a specific address by using the [**ah (Assertion Handling)**](../debuggercmds/ah--assertion-handling-.md) command. The **ch** and **hc** event codes refer to the same exception. When you are controlling its break status, use **sx\* ch**. When you are controlling its handling status, use **sx\* hc**.
 
  
 
@@ -424,7 +424,7 @@ You can change the break status of the following events. Because these events ar
 <td align="left"><p><strong>cpr</strong>[<strong>:</strong><em>Process</em>]</p></td>
 <td align="left"><p>Process creation</p>
 <p>Setting the break status of this event applies only to user-mode debugging. This event does not occur in kernel mode.</p>
-<p>You can control this event only if you have activated debugging of child processes in CDB or WinDbg, either through the -o<strong><a href="cdb-command-line-options.md" data-raw-source="[command-line option](cdb-command-line-options.md)">command-line option</a></strong> or through the <strong><a href="-childdbg--debug-child-processes-.md" data-raw-source="[.childdbg (Debug Child Processes)](-childdbg--debug-child-processes-.md)">.childdbg (Debug Child Processes)</a></strong> command.</p>
+<p>You can control this event only if you have activated debugging of child processes in CDB or WinDbg, either through the -o<strong><a href="cdb-command-line-options.md" data-raw-source="[command-line option](cdb-command-line-options.md)">command-line option</a></strong> or through the <strong><a href="../debuggercmds/-childdbg--debug-child-processes-.md" data-raw-source="[.childdbg (Debug Child Processes)](../debuggercmds/-childdbg--debug-child-processes-.md)">.childdbg (Debug Child Processes)</a></strong> command.</p>
 <p>The process name can include an optional file name extension and an asterisk (<em>) or question mark (?) as wildcard characters. The debugger remembers only the most recent <strong>cpr</strong> setting. Separate settings for separate processes are not supported. Include a colon or a space between <strong>cpr</strong> and <em>Process</em>.</p>
 <p>If <em>Process</em> is omitted, the setting applies to any child process creation.</p></td>
 <td align="left"><p>Ignore</p></td>
@@ -433,7 +433,7 @@ You can change the break status of the following events. Because these events ar
 <td align="left"><p><strong>epr</strong>[<strong>:</strong><em>Process</em>]</p></td>
 <td align="left"><p>Process exit</p>
 <p>Setting the break status of this event applies only to user-mode debugging. This event does not occur in kernel mode.</p>
-<p>You can control this event only if you have activated debugging of child processes in CDB or WinDbg, either through the -o<strong><a href="cdb-command-line-options.md" data-raw-source="[command-line option](cdb-command-line-options.md)">command-line option</a></strong> or through the <strong><a href="-childdbg--debug-child-processes-.md" data-raw-source="[.childdbg (Debug Child Processes)](-childdbg--debug-child-processes-.md)">.childdbg (Debug Child Processes)</a></strong> command.</p>
+<p>You can control this event only if you have activated debugging of child processes in CDB or WinDbg, either through the -o<strong><a href="cdb-command-line-options.md" data-raw-source="[command-line option](cdb-command-line-options.md)">command-line option</a></strong> or through the <strong><a href="../debuggercmds/-childdbg--debug-child-processes-.md" data-raw-source="[.childdbg (Debug Child Processes)](../debuggercmds/-childdbg--debug-child-processes-.md)">.childdbg (Debug Child Processes)</a></strong> command.</p>
 <p>The process name can include an optional file name extension and an asterisk (</em>) or question mark (?) as wildcard characters. The debugger remembers only the most recent <strong>epr</strong> setting. Separate settings for separate processes are not supported. Include a colon or a space between <strong>epr</strong> and <em>Process</em>.</p>
 <p>If <em>Process</em> is omitted, the setting applies to any child process exit.</p></td>
 <td align="left"><p>Ignore</p></td>
@@ -451,7 +451,7 @@ You can change the break status of the following events. Because these events ar
 <tr class="even">
 <td align="left"><p><strong>ld</strong>[<strong>:</strong><em>Module</em>]</p></td>
 <td align="left"><p>Load module</p>
-<p>If you specify <em>Module</em>, the break occurs when the module with this name is loaded. <em>Module</em> can specify the name or the address of the module. If the name is used, <em>Module</em> might contain a variety of wildcard characters and specifiers. (For more information about the syntax, see <a href="string-wildcard-syntax.md" data-raw-source="[String Wildcard Syntax](string-wildcard-syntax.md)">String Wildcard Syntax</a>.)</p>
+<p>If you specify <em>Module</em>, the break occurs when the module with this name is loaded. <em>Module</em> can specify the name or the address of the module. If the name is used, <em>Module</em> might contain a variety of wildcard characters and specifiers. (For more information about the syntax, see <a href="../debuggercmds/string-wildcard-syntax.md" data-raw-source="[String Wildcard Syntax](../debuggercmds/string-wildcard-syntax.md)">String Wildcard Syntax</a>.)</p>
 <p>The debugger remembers only the most recent l<strong>d</strong> setting. Separate settings for separate modules are not supported. Include a colon or a space between <strong>ld</strong> and <em>Module</em>.</p>
 <p>If <em>Module</em> is omitted, the event is triggered when any module is loaded.</p></td>
 <td align="left"><p>Output</p></td>
@@ -468,7 +468,7 @@ You can change the break status of the following events. Because these events ar
 <tr class="even">
 <td align="left"><p><strong>out</strong>[<strong>:</strong><em>Output</em>]</p></td>
 <td align="left"><p>Target application output</p>
-<p>If you specify <em>Output</em>, the break occurs only when output that matches the specified pattern is received. <em>Output</em> can contain a variety of wildcard characters and specifiers. (For more information about the syntax, see <a href="string-wildcard-syntax.md" data-raw-source="[String Wildcard Syntax](string-wildcard-syntax.md)">String Wildcard Syntax</a>.) However, <em>Output</em> cannot contain a colon or spaces. The match is not case sensitive. Include a colon or space between <strong>out</strong> and <em>Output</em>.</p></td>
+<p>If you specify <em>Output</em>, the break occurs only when output that matches the specified pattern is received. <em>Output</em> can contain a variety of wildcard characters and specifiers. (For more information about the syntax, see <a href="../debuggercmds/string-wildcard-syntax.md" data-raw-source="[String Wildcard Syntax](../debuggercmds/string-wildcard-syntax.md)">String Wildcard Syntax</a>.) However, <em>Output</em> cannot contain a colon or spaces. The match is not case sensitive. Include a colon or space between <strong>out</strong> and <em>Output</em>.</p></td>
 <td align="left"><p>Ignore</p></td>
 </tr>
 <tr class="odd">

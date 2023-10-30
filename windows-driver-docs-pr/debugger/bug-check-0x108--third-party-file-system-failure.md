@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x108 THIRD_PARTY_FILE_SYSTEM_FAILURE", "THIRD_PARTY_FILE_
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - THIRD_PARTY_FILE_SYSTEM_FAILURE
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The THIRD\_PARTY\_FILE\_SYSTEM\_FAILURE bug check has a value of 0x00000108. This indicates that an unrecoverable problem has occurred in a third-party file system or file system filter.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## THIRD\_PARTY\_FILE\_SYSTEM\_FAILURE Parameters
@@ -65,7 +66,7 @@ Another possible cause is depletion of nonpaged pool memory. If the nonpaged poo
 
 ## Resolution
 
-**To debug this problem:** Use the [**.cxr (Display Context Record)**](-cxr--display-context-record-.md) command with Parameter 3, and then use [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md).
+**To debug this problem:** Use the [**.cxr (Display Context Record)**](../debuggercmds/-cxr--display-context-record-.md) command with Parameter 3, and then use [**kb (Display Stack Backtrace)**](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md).
 
 **To resolve a disk corruption problem:** Check Event Viewer for error messages from SCSI, IDE, or other disk controllers in the system that might help pinpoint the device or driver that is causing the error. Try disabling any virus scanners, backup programs, or disk defragmenter tools that continually monitor the system. You should also run hardware diagnostics supplied by the file system or the file system filter manufacturer.
 

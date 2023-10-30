@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x10C FSRTL_EXTRA_CREATE_PARAMETER_VIOLATION", "FSRTL_EXTR
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - FSRTL_EXTRA_CREATE_PARAMETER_VIOLATION
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The FSRTL\_EXTRA\_CREATE\_PARAMETER\_VIOLATION bug check has a value of 0x0000010C. This indicates that a violation was detected in the File system Run-time library (FsRtl) Extra Create Parameter (ECP) package.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## FSRTL\_EXTRA\_CREATE\_PARAMETER\_VIOLATION Parameters

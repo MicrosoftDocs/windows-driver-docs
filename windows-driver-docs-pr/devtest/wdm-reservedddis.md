@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["ReservedDDIs rule (wdm)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ReservedDDIs
 api_type:

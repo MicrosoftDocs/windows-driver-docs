@@ -6,7 +6,7 @@ keywords:
 - WHEA WDK , comparison with earlier Windows versions
 - hardware errors WDK WHEA , earlier Windows versions
 - errors WDK WHEA , earlier Windows versions
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Differences from Previous Versions of Microsoft Windows

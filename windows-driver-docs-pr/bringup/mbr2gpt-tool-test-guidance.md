@@ -1,7 +1,7 @@
 ---
 title: MBR2GPT tool test guidance
 description: Provides guidance on the MBR2GPT tool test.
-ms.date: 08/19/2021
+ms.date: 03/23/2023
 ---
 
 # MBR2GPT tool test guidance
@@ -34,8 +34,7 @@ For detailed usage information and troubleshooting guidance, see the [MBR2GPT](/
 
   - Verify that your line of business (LOB) applications are still functioning correctly
 
-> [!NOTE]
-> System firmware can vary by manufacturer and by device. Contact the device manufacturer for assistance if you have questions or concerns.
+System firmware can vary by manufacturer and by device. Contact the device manufacturer for assistance if you have questions or concerns.
 
 ## Test scenarios
 
@@ -99,8 +98,7 @@ Restore data and settings using USMT Load State.
 
 1. Boot to Windows 10, version 1703 in UEFI mode using a gen 2 VM.
 
-> [!NOTE]
-> For any of the scenarios above, you can convert an MBR disk with BitLocker-encrypted volumes as long as protection has been suspended. To resume BitLocker after conversion, you will need to delete the existing protectors and recreate them.
+For any of the scenarios above, you can convert an MBR disk with BitLocker-encrypted volumes as long as protection has been suspended. To resume BitLocker after conversion, you will need to delete the existing protectors and recreate them.
 
 ## Troubleshooting
 

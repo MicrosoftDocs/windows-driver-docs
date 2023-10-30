@@ -2,6 +2,7 @@
 title: MB identity morphing solution overview
 description: The solution maps the morphing device’s USB configuration to a set of USB functions.
 ms.date: 04/20/2017
+ms.custom: UpdateFrequency3
 ---
 
 # MB Identity Morphing Solution Overview
@@ -126,7 +127,7 @@ Not-Configured -&gt; Windows-7-Configuration
 
 Windows-7-Configuration -&gt; IHV–NCM-1.0-Configuration
 
-![configuration transition paths for windows 7 and windows 8.](images/mbim7.png)
+:::image type="content" source="images/mbim7.png" alt-text="Diagram showing configuration transition paths for Windows 7 and Windows 8.":::
 
 The configuration transition paths for Windows 7 and Windows 8
 
@@ -137,7 +138,7 @@ Note that any transition not shown previously is not supported.
 
 Consider a sample USB morphing device with the following functions in its configurations.
 
-![usb morphing device with 4 different configurations and their functions.](images/mbim8.png)
+:::image type="content" source="images/mbim8.png" alt-text="Diagram of a USB morphing device with 4 different configurations and their respective functions.":::
 
 USB device with multiple functions
 
@@ -147,7 +148,7 @@ Windows-8-Configuration
 
 When the morphing device is plugged into a computer running Windows 8, the Windows-8-Configuration would be selected, which exposes the MBIM function. The Windows 8 Mobile Broadband Class Driver (MBCD) will be loaded on the MBIM function. In the following example, Configuration 3 is the Windows-8-Configuration containing the MBIM function.
 
-![windows 8 and four configurations for a mobile broadband device. configuration three is highlighted.](images/mbim9.png)
+:::image type="content" source="images/mbim9.png" alt-text="Diagram of Windows 8 and four configurations for a mobile broadband device, with Configuration 3 highlighted.":::
 
 Driver stack and device configuration on Windows 8 after device is plugged in
 
@@ -155,7 +156,7 @@ IHV-NCM-2.0-Configuration
 
 In the Windows-8-Configuration, the morphing device also has a mass storage function that will allow the user to install the IHV driver package. After installation of the driver package from the mass storage function, the device will morph to expose the functions in the IHV-NCM-2.0-Configuration. This configuration has an additional IHV function such as GPS, diagnostics, and so on. Configuration 4 in the following diagram represents the IHV-NCM-2.0-Configuration.
 
-![windows 8 (post driver install) and four configurations for a mobile broadband device. configuration four is highlighted.](images/mbim10.png)
+:::image type="content" source="images/mbim10.png" alt-text="Diagram of Windows 8 (post driver install) and four configurations for a mobile broadband device, with Configuration 4 highlighted.":::
 
 Driver stack and device configuration on Windows 8 after user installs IHV driver package
 
@@ -167,7 +168,7 @@ When the morphing device is plugged into a computer running Windows 7 or an ear
 
 In the following example, Configuration 1 is the Windows-7-Configuration
 
-![windows 7 and four configurations for a mobile broadband device. configuration one is highlighted.](images/mbim11.png)
+:::image type="content" source="images/mbim11.png" alt-text="Diagram of Windows 7 and four configurations for a mobile broadband device, with Configuration 1 highlighted.":::
 
 Driver stack and device configuration on Windows 7 when the user has not installed the IHV driver package
 
@@ -175,7 +176,7 @@ IHV-NCM-1.0-Configuration
 
 In Windows 7, the user can install the driver package from the mass storage function. Along with installing the driver software, the IHV software will also morph the device from the Windows-7-Configuration to the IHV-NCM-1.0-Configuration.
 
-![windows 7 and four configurations for a mobile broadband device. configuration two is highlighted.](images/mbim12.png)
+:::image type="content" source="images/mbim12.png" alt-text="Diagram of Windows 7 and four configurations for a mobile broadband device, with Configuration 2 highlighted.":::
 
 Driver stack and device configuration in Windows 7 after user installs IHV driver package
 

@@ -1,7 +1,7 @@
 ---
 title: Installing the geolocation driver sample
 description: Because the geolocation driver sample simulates hardware, there is no Plug-n-Play functionality to automate the installation. Instead, must use a Windows utility, devcon.exe, to install the sample.
-ms.date: 08/25/2021
+ms.date: 03/21/2023
 ---
 
 # Installing the geolocation driver sample
@@ -21,12 +21,15 @@ The following steps outline the installation process.
 
 1. Locate the two co-installer DLL files (either checked or free) from the redist/wdf/*processor\_type* folder where you installed the WDK. Copy these files to the folder that you created in step 3. For example, if you installed the WDK on your drive C, you might copy WUDFUpdate\_01009.dll from C:\\WinDDK\\*build\#*\\redist\\wdf\\x86.
 
+    > [!IMPORTANT]
+    > Starting with the WDK for Windows 11, version 22H2, WDF redistributable co-installers are no longer supported.
+    > To learn how to work around this change, see [WDF redistributable co-installers don't work](/windows-hardware/drivers/wdk-known-issues#wdf-redistributable-co-installers-dont-work) in the *WDK known issues* article.
+
 1. Run Devcon.exe. You can find this program in the tools\\devcon folder where you installed the WDK. For example, for a sensor named WDKExample, run the following command:
 
     `devcon.exe install WDKExample.inf "Sensors\WDKExample"`
 
-    > [!NOTE]
-    > Do not use Devcon.exe to install released drivers. This recommendation is for testing only.
+    Do not use Devcon.exe to install released drivers. This recommendation is for testing only.
 
 ## Related topics
 

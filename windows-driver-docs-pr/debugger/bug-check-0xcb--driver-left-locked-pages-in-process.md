@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xCB DRIVER_LEFT_LOCKED_PAGES_IN_PROCESS", "DRIVER_LEFT_LO
 ms.date: 10/04/2022
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DRIVER_LEFT_LOCKED_PAGES_IN_PROCESS
 api_type:
@@ -16,7 +17,7 @@ api_type:
 The DRIVER\_LEFT\_LOCKED\_PAGES\_IN\_PROCESS bug check has a value of 0x000000CB. This indicates that a driver or the I/O manager failed to release locked pages after an I/O operation.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## DRIVER\_LEFT\_LOCKED\_PAGES\_IN\_PROCESS Parameters
@@ -35,7 +36,7 @@ For more information about memory descriptor list, see the following topics:
 
 For more information on locking memory, see [Locking Pageable Code or Data](../kernel/locking-pageable-code-or-data.md).
 
-To research the cause of this bug check, use the [!lockedpages](-lockedpages.md) debugger extension to display all of the locked MDLs for the current process.
+To research the cause of this bug check, use the [!lockedpages](../debuggercmds/-lockedpages.md) debugger extension to display all of the locked MDLs for the current process.
 
 ## Remarks
 

@@ -1,23 +1,24 @@
 ---
-title: Iasphelp get\_Community method
+title: Iasphelp get_Community method
 description: The Community property enables an ASP Web page to obtain a print server's Simple Network Management Protocol (SNMP) community name.
 MS-HAID:
-- 'webfnc\_1d85e932-6de7-468a-b1dd-8a5678c65615.xml'
-- 'print.iasphelp\_community'
+- 'webfnc_1d85e932-6de7-468a-b1dd-8a5678c65615.xml'
+- 'print.iasphelp_community'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 keywords: ["get_Community method Print Devices", "get_Community method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_Community method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Iasphelp.get_Community
 api_type:
 - COM
-ms.date: 04/20/2017
+ms.date: 06/23/2023
 ---
 
-# Iasphelp::get\_Community method
+# Iasphelp::get_Community method
 
 The **Community** property enables an ASP Web page to obtain a print server's Simple Network Management Protocol (SNMP) community name.
 
@@ -38,32 +39,11 @@ Caller-supplied pointer to a location to receive a pointer to a community name s
 
 Win32 error codes can also be returned.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Return code</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>S_OK</strong></td>
-<td><p>The operation succeeded.</p></td>
-</tr>
-<tr class="even">
-<td><strong>E_HANDLE</strong></td>
-<td><p>The <a href="iasphelp-open.md" data-raw-source="[&lt;strong&gt;Iasphelp::Open&lt;/strong&gt;](iasphelp-open.md)"><strong>Iasphelp::Open</strong></a> method has not been called.</p></td>
-</tr>
-<tr class="odd">
-<td><strong>E_OUTOFMEMORY</strong></td>
-<td><p>Out of memory.</p></td>
-</tr>
-</tbody>
-</table>
+| Return code | Description |
+|--|--|
+| **S_OK** | The operation succeeded. |
+| **E_HANDLE** | [**Iasphelp::Open**](iasphelp-open.md) method has not been called. |
+| **E_OUTOFMEMORY** | Out of memory. |
 
 ## VBScript Example
 
@@ -81,18 +61,7 @@ CommName = objPrinter.Community
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Target platform</p></td>
-<td>Desktop</td>
-</tr>
-</tbody>
-</table>
+**Target platform:** Desktop
 
 ## See also
 

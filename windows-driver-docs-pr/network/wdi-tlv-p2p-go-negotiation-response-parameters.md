@@ -1,7 +1,8 @@
 ---
 title: WDI_TLV_P2P_GO_NEGOTIATION_RESPONSE_PARAMETERS
+ms.topic: reference
 description: WDI_TLV_P2P_GO_NEGOTIATION_RESPONSE_PARAMETERS is a TLV that contains incoming GO Negotiation Response parameters.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - WDI_TLV_P2P_GO_NEGOTIATION_RESPONSE_PARAMETERS Network Drivers Starting with Windows Vista
 ---

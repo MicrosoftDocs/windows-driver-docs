@@ -13,7 +13,7 @@ ms.date: 04/20/2017
 
  
 
-The IHV Extensions DLL calls the [**Dot11ExtSendNotification**](/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11ext_send_notification) function to send notifications to any service or application that has registered for the notification. In order to receive the notification, the service or application must register with the Auto Configuration Manager (ACM) by calling the **WlanRegisterNotification** function. For more information about this function, refer to the Microsoft Windows SDK documentation.
+The IHV Extensions DLL calls the [**Dot11ExtSendNotification**](/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11ext_send_notification) function to send notifications to any service or application that has registered for the notification. In order to receive the notification, the service or application must register with the Auto Configuration Manager (ACM) by calling the [**WlanRegisterNotification**](/windows/win32/api/wlanapi/nf-wlanapi-wlanregisternotification) function.
 
 **Note**  The service or application must register for notifications with a source value of L2\_NOTIFICATION\_SOURCE\_WLAN\_IHV in order to receive notifications through calls to the [**Dot11ExtSendNotification**](/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11ext_send_notification) function.
 

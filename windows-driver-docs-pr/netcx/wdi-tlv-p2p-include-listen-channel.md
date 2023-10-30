@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_INCLUDE_LISTEN_CHANNEL (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_P2P_INCLUDE_LISTEN_CHANNEL is a WiFiCx TLV that specifies whether the probe request should include the Listen Channel attribute during discovery.
 ms.date: 06/30/2021
 keywords:

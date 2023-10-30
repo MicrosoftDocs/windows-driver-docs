@@ -6,21 +6,22 @@ keywords:
 - Version 3 XPS drivers WDK XPSDrv , PPD files
 - GPD files WDK XPSDrv
 - PPD files WDK XPSDrv
-ms.date: 04/20/2017
+ms.date: 01/26/2023
 ---
 
 # Configuration Modules Based on GPD or PPD Files
 
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 For Windows Vista, GPD and PPD files contain Print Schema mapping and new entries that are specific to XPSDrv print drivers. These changes apply to the GPD and PPD files that you can use to create GPD-only or PPD-only configuration modules and configuration modules for Unidrv or Pscript5 print driver plug-ins.
 
-### XPSDrv-Specific GPD and PPD Entries
+## XPSDrv-Specific GPD and PPD Entries
 
 To create a Version 3 print driver configuration module for an XPSDrv print driver by using a GPD or a PPD file, you must do one of the following:
 
--   Create or edit the GPD or PPD file. The file must include the configuration keywords that describe the features that the printer supports. Standard GPD or PPD keywords are automatically mapped to public Print Schema keywords, but nonstandard keywords are mapped to a private namespace, by default.
+- Create or edit the GPD or PPD file. The file must include the configuration keywords that describe the features that the printer supports. Standard GPD or PPD keywords are automatically mapped to public Print Schema keywords, but nonstandard keywords are mapped to a private namespace, by default.
 
--   Include the Msxpsinc.gpd file, if you are creating a GPD file, or the Msxpsinc.ppd file, if you are creating a PPD file. These files include the following keywords, which indicate that the resulting configuration file will be part of an XPSDrv print driver.
+- Include the Msxpsinc.gpd file, if you are creating a GPD file, or the Msxpsinc.ppd file, if you are creating a PPD file. These files include the following keywords, which indicate that the resulting configuration file will be part of an XPSDrv print driver.
 
     For Msxpsinc.gpd, it contains:
 
@@ -50,15 +51,15 @@ For Model-foo.ppd, include:
 *Include: "msxpinc.ppd"
 ```
 
-### Print Schema Mapping
+## Print Schema Mapping
 
 Print Schema mapping is a feature of the Unidrv and PScript5 configuration modules that translates GPD and PPD keywords to their equivalent public Print Schema keywords. By default, all standard GPD and PPD keywords are mapped to their equivalent public Print Schema keywords. Nonstandard keywords in a GPD or PPD file, however, are mapped to a private, device-specific namespace by default. You can improve this mapping by doing one or both of the following:
 
--   Specifying the private namespace for nonstandard keywords.
+- Specifying the private namespace for nonstandard keywords.
 
--   Associating nonstandard Feature and Option keywords in the GPD or PPD file with their equivalent keywords from the public Print Schema in the GPD or PPD file. This association enables the configuration module to generate the PrintTicket and PrintCapabilities data as public Print Schema features.
+- Associating nonstandard Feature and Option keywords in the GPD or PPD file with their equivalent keywords from the public Print Schema in the GPD or PPD file. This association enables the configuration module to generate the PrintTicket and PrintCapabilities data as public Print Schema features.
 
-### GPD File Example
+## GPD File Example
 
 The following code example shows a GPD file that illustrates the entries and keywords to create a Version 3 configuration module for an XPSDrv print driver.
 
@@ -96,11 +97,3 @@ The following code example shows a GPD file that illustrates the entries and key
   *PrintSchemaKeywordMap: "None"  }
 }
 ```
-
- 
-
- 
-
-
-
-

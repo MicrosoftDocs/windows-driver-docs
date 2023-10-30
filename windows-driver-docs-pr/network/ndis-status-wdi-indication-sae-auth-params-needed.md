@@ -1,7 +1,8 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_SAE_AUTH_PARAMS_NEEDED
+ms.topic: reference
 description: NDIS_STATUS_WDI_INDICATION_SAE_AUTH_PARAMS_NEEDED
-ms.date: 02/14/2019
+ms.date: 03/02/2023
 keywords:
  - NDIS_STATUS_WDI_INDICATION_SAE_AUTH_PARAMS_NEEDED Network Drivers Starting with Windows Vista
 ms.custom: 19H1

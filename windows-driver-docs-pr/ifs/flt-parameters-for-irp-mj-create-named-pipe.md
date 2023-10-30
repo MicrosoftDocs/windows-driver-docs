@@ -13,7 +13,8 @@ api_location:
 - fltkernel.h
 api_type:
 - HeaderDef
-ms.date: 11/05/2019
+ms.date: 03/13/2023
+ms.topic: reference
 ---
 
 # FLT_PARAMETERS for IRP_MJ_CREATE_NAMED_PIPE union
@@ -22,7 +23,7 @@ The following structure within the [FLT_PARAMETERS](/windows-hardware/drivers/dd
 
 ## Syntax
 
-```ManagedCPlusPlus
+``` C
 typedef union _FLT_PARAMETERS {
   ...    ;
   struct {
@@ -40,24 +41,19 @@ typedef union _FLT_PARAMETERS {
 
 The **CreatePipe** structure of FLT_PARAMETERS contains the following members.
 
-**SecurityContext**  
-Pointer to an [IO_SECURITY_CONTEXT](/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_io_security_context) structure that represents the security context of an IRP_MJ_CREATE_NAMED_PIPE request, where:
+- **SecurityContext**: Pointer to an [IO_SECURITY_CONTEXT](/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_io_security_context) structure that represents the security context of an IRP_MJ_CREATE_NAMED_PIPE request, where:
 
 - **SecurityContext->AccessState** is a pointer to an [ACCESS_STATE](/windows-hardware/drivers/ddi/wdm/ns-wdm-_access_state) structure that contains the object's subject context, granted access types, and remaining desired access types.
 
 - **SecurityContext->DesiredAccess** is an [ACCESS_MASK](../kernel/access-mask.md) structure that specifies access rights requested for the named pipe. For more information, see the *DesiredAccess* parameter of [**FltCreateNamedPipeFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltcreatenamedpipefile).
 
-**Options**  
-Bitmask of flags that specify the options to be applied when creating or opening the named pipe, as well as the action to be taken if the pipe already exists. The low 24 bits of this member correspond to the *CreateOptions* parameter for **FltCreateNamedPipeFile**. The high 8 bits correspond to the *CreateDisposition* parameter to **FltCreateNamedPipeFile**.
+- **Options**: Bitmask of flags that specify the options to be applied when creating or opening the named pipe, as well as the action to be taken if the pipe already exists. The low 24 bits of this member correspond to the *CreateOptions* parameter for **FltCreateNamedPipeFile**. The high 8 bits correspond to the *CreateDisposition* parameter to **FltCreateNamedPipeFile**.
 
-**Reserved**  
-Reserved; do not use.
+- **Reserved**: Reserved; do not use.
 
-**ShareAccess**  
-Bitmask of share access rights requested for the named pipe file. If this parameter is zero, exclusive access is being requested. For more information, see the *ShareAccess* parameter to [**FltCreateNamedPipeFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltcreatenamedpipefile).
+- **ShareAccess**: Bitmask of share access rights requested for the named pipe file. If this parameter is zero, exclusive access is being requested. For more information, see the *ShareAccess* parameter to [**FltCreateNamedPipeFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltcreatenamedpipefile).
 
-**Parameters**  
-Pointer to a [NAMED_PIPE_CREATE_PARAMETERS](/windows-hardware/drivers/ddi/wdm/ns-wdm-_named_pipe_create_parameters) structure containing information about the named pipe that is being created or opened.
+- **Parameters**: Pointer to a [NAMED_PIPE_CREATE_PARAMETERS](/windows-hardware/drivers/ddi/wdm/ns-wdm-_named_pipe_create_parameters) structure containing information about the named pipe that is being created or opened.
 
 ## Remarks
 
@@ -71,8 +67,9 @@ IRP_MJ_CREATE_NAMED_PIPE is an IRP-based operation.
 
 ## Requirements
 
-**Header**: Fltkernel.h (include Fltkernel.h)
-
+| Requirement type | Requirement |
+| ---------------- | ----------- |
+| Header | *Fltkernel.h* (include *Fltkernel.h*) |
 
 ## See also
 

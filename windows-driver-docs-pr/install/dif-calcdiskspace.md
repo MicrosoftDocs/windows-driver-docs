@@ -4,6 +4,7 @@ description: DIF_CALCDISKSPACE
 keywords: ["DIF_CALCDISKSPACE Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DIF_CALCDISKSPACE
 api_type:

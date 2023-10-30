@@ -1,7 +1,8 @@
 ---
 title: PKEY\_CompositeFX\_KeywordDetector\_EndpointEffectClsid
 description: In Windows 10 version 1803 and later, the PKEY\_CompositeFX\_KeywordDetector\_EndpointEffectClsid property key identifies the keyword detector end point effect (EFX) in place.
-ms.date: 11/15/2018
+ms.date: 03/06/2023
+ms.topic: reference
 ---
 
 # PKEY\_CompositeFX\_KeywordDetector\_EndpointEffectClsid
@@ -30,7 +31,7 @@ HKR,FX\0,%PKEY_CompositeFX_KeywordDetector_EndpointEffectClsid%,0x00010000,%SWAP
 
 ```
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [Media-Class INF Extensions](media-class-inf-extensions.md)

@@ -9,13 +9,6 @@ ms.custom: Fe
 
 # Receive Segment Coalescing (RSC) offload
 
-> [!WARNING]
-> Some information in this topic relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
->
-> NetAdapterCx is preview only in Windows 10, version 2004.
->
-> Currently, NetAdapterCx client drivers cannot be certified.
-
 When receiving data, most layers in the TCP/IP stack must look at each segment's header information separately. This creates a large amount of overhead when large amounts of data are being received.
 
 [Receive segment coalescing (RSC)](../network/overview-of-receive-segment-coalescing.md) reduces this overhead by coalescing a sequence of received segments and indicating them up the TCP/IP stack in one single coalesced segment. The upper layers in the TCP/IP stack only need to look at one header for the entire sequence.

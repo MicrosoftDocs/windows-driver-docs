@@ -1,7 +1,8 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_ROAM_COMPLETE
+ms.topic: reference
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_ROAM_COMPLETE to indicate the completion of OID_WDI_TASK_ROAM.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - NDIS_STATUS_WDI_INDICATION_ROAM_COMPLETE Network Drivers Starting with Windows Vista
 ---

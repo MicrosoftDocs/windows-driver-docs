@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1D0 ACPI_FIRMWARE_WATCHDOG_TIMEOUT",  "ACPI_FIRMWARE_WAT
 ms.date: 04/19/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ACPI_FIRMWARE_WATCHDOG_TIMEOUT 
 api_type:
@@ -15,7 +16,7 @@ api_type:
 
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 The ACPI_FIRMWARE_WATCHDOG_TIMEOUT bug check has a value of 0x000001D0. 

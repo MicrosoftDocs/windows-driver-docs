@@ -1,17 +1,18 @@
 ---
-title: Device Maintenance
+title: Device maintenance
 description: A device maintenance feature has been introduced in Windows 8.1 and later versions of Windows.
-ms.date: 04/20/2017
+ms.date: 01/25/2023
 ---
 
-# Device Maintenance
+# Device maintenance
 
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 A device maintenance feature has been introduced in Windows 8.1 and later versions of Windows.
 
 This feature uses bidirectional communication (Bidi) to allow you to send device maintenance commands from within a UWP device app or a printer extension to the print subsystem. For example, you could send commands to your print device to clean the ink nozzles.
 
-The port monitor works in conjunction with the vendor-provided Bidi extension files to translate these Bidi requests into device and protocol-specific commands, and then transmit them to the print device. A device maintenance task is performed by sending Bidi “Set” queries to the print device, and the Bidi response from the device indicates whether the operation succeeded or failed.
+The port monitor works in conjunction with the vendor-provided Bidi extension files to translate these Bidi requests into device and protocol-specific commands, and then transmit them to the print device. A device maintenance task is performed by sending Bidi "Set" queries to the print device, and the Bidi response from the device indicates whether the operation succeeded or failed.
 
 The new asynchronous interface that helps to implement this feature takes in XML data in the form of a string parameter, and a callback object.
 
@@ -19,8 +20,7 @@ Because the interface is asynchronous, the caller does not have to wait for a re
 
 ## The new interfaces
 
-
-The following interfaces have been introduced in Windows (code-named “Blue”) to implement the device maintenance feature.
+The following interfaces have been introduced in Windows (code-named "Blue") to implement the device maintenance feature.
 
 [**IPrinterBidiSetRequestCallback**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterbidisetrequestcallback)
 
@@ -29,7 +29,6 @@ The following interfaces have been introduced in Windows (code-named “Blue”)
 [**IPrinterQueue2**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterqueue2)
 
 ## Initiating a device maintenance Session
-
 
 To initiate a device maintenance session, you must first create your command string as XML data. Then you must create an instance of the callback object that will be invoked after the asynchronous Bidi operation is completed.
 
@@ -84,6 +83,9 @@ public class BidiSetResultCallback :
 Device maintenance is supported in UWP device apps after the app is invoked via any of the three entry points.
 
 ## Related topics
+
 [**IPrinterBidiSetRequestCallback**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterbidisetrequestcallback)  
+
 [**IPrinterExtensionAsyncOperation**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterextensionasyncoperation)  
+
 [**IPrinterQueue2**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterqueue2)

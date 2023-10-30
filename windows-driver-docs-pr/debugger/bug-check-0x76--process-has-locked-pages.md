@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x76 PROCESS_HAS_LOCKED_PAGES", "PROCESS_HAS_LOCKED_PAGES"
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - PROCESS_HAS_LOCKED_PAGES
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The PROCESS\_HAS\_LOCKED\_PAGES bug check has a value of 0x00000076. This bug check indicates that a driver failed to release locked pages after an I/O operation, or that it attempted to unlock pages that were already unlocked.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## PROCESS\_HAS\_LOCKED\_PAGES Parameters
@@ -66,11 +67,11 @@ The driver either failed to unlock pages that it locked (parameter 1 value is 0x
 
 ## Resolution
 
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
 **If the parameter 1 value is 0x0**
 
-First use the [**!search**](-search.md) extension on the current process pointer throughout all of physical memory. This extension might find at least one memory descriptor list (MDL) that points to the current process. Next, use **!search** on each MDL that you find to obtain the I/O request packet (IRP) that points to the current process. From this IRP, you can identify which driver is leaking the pages.
+First use the [**!search**](../debuggercmds/-search.md) extension on the current process pointer throughout all of physical memory. This extension might find at least one memory descriptor list (MDL) that points to the current process. Next, use **!search** on each MDL that you find to obtain the I/O request packet (IRP) that points to the current process. From this IRP, you can identify which driver is leaking the pages.
 
 Otherwise, you can detect which driver caused the error by editing the registry:
 

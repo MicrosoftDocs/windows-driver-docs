@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xFF RESERVE_QUEUE_OVERFLOW", "RESERVE_QUEUE_OVERFLOW"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - RESERVE_QUEUE_OVERFLOW
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The RESERVE\_QUEUE\_OVERFLOW bug check has a value of 0x000000FF. This indicates that an attempt was made to insert a new item into a reserve queue, causing the queue to overflow.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## RESERVE\_QUEUE\_OVERFLOW Parameters
@@ -55,7 +56,7 @@ The RESERVE\_QUEUE\_OVERFLOW bug check has a value of 0x000000FF. This indicates
 </table>
 
 ## Resolution 
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be very helpful in determining the root cause.
+The [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be very helpful in determining the root cause.
  
 
  

@@ -1,7 +1,8 @@
 ---
 title: WDI_TLV_CHANNEL_LIST
+ms.topic: reference
 description: WDI_TLV_CHANNEL_LIST is a TLV that contains one or more channel numbers.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - WDI_TLV_CHANNEL_LIST Network Drivers Starting with Windows Vista
 ---

@@ -1,7 +1,7 @@
 ---
 title: Looping Back NDIS Packets
 description: Looping Back NDIS Packets
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # Looping Back NDIS Packets
@@ -48,7 +48,7 @@ A protocol binding will not receive loopback packets if either of the following 
 
 The following figure shows the loopback algorithm logic flow.
 
-![flowchart illustrating the loopback algorithm logic flow.](images/loopback.png)
+:::image type="content" source="images/loopback.png" alt-text="Flowchart that shows the loopback algorithm logic flow.":::
 
  
 

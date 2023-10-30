@@ -15,11 +15,11 @@ When Secure Mode is active, all commands that could be used to affect the *host*
 
 The specific effects of Secure Mode are as follows:
 
--   The [**.attach (Attach to Process)**](-attach--attach-to-process-.md), [**.create (Create Process)**](-create--create-process-.md), [**.detach (Detach from Process)**](-detach--detach-from-process-.md), [**.abandon (Abandon Process)**](-abandon--abandon-process-.md), [**.kill (Kill Process)**](-kill--kill-process-.md), [**.tlist (List Process IDs)**](-tlist--list-process-ids-.md), [**.dump (Create Dump File)**](-dump--create-dump-file-.md), [**.opendump (Open Dump File)**](-opendump--open-dump-file-.md), [**.writemem (Write Memory to File)**](-writemem--write-memory-to-file-.md), [**.netuse (Control Network Connections)**](-netuse--control-network-connections-.md), and [**.quit\_lock (Prevent Accidental Quit)**](-quit-lock--prevent-accidental-quit-.md) commands are not available.
+-   The [**.attach (Attach to Process)**](../debuggercmds/-attach--attach-to-process-.md), [**.create (Create Process)**](../debuggercmds/-create--create-process-.md), [**.detach (Detach from Process)**](../debuggercmds/-detach--detach-from-process-.md), [**.abandon (Abandon Process)**](../debuggercmds/-abandon--abandon-process-.md), [**.kill (Kill Process)**](../debuggercmds/-kill--kill-process-.md), [**.tlist (List Process IDs)**](../debuggercmds/-tlist--list-process-ids-.md), [**.dump (Create Dump File)**](../debuggercmds/-dump--create-dump-file-.md), [**.opendump (Open Dump File)**](../debuggercmds/-opendump--open-dump-file-.md), [**.writemem (Write Memory to File)**](../debuggercmds/-writemem--write-memory-to-file-.md), [**.netuse (Control Network Connections)**](../debuggercmds/-netuse--control-network-connections-.md), and [**.quit\_lock (Prevent Accidental Quit)**](../debuggercmds/-quit-lock--prevent-accidental-quit-.md) commands are not available.
 
--   The [File | Attach to a Process](file---attach-to-a-process.md), [File | Open Executable](file---open-executable.md), [Debug | Detach Debuggee](debug---detach-debuggee.md), [Debug | Stop Debugging](debug---stop-debugging.md), [File | Open Crash Dump](file---open-crash-dump.md) WinDbg menu commands are not available.
+-   The **File | Attach to a Process**, **File | Open Executable**, **Debug | Detach Debuggee**, **Debug | Stop Debugging**, **File | Open Crash Dump** WinDbg menu commands are not available.
 
--   The [**.shell (Command Shell)**](-shell--command-shell-.md) command is not available.
+-   The [**.shell (Command Shell)**](../debuggercmds/-shell--command-shell-.md) command is not available.
 
 -   Extension DLLs must be loaded from a local disk; they cannot be loaded from UNC paths.
 

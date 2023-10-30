@@ -40,7 +40,7 @@ pDo->MajorFunction[IRP_MJ_CREATE] = SampleCreate;
 
 In some circumstances, you might need to suppress this warning. There are some drivers, for example, filter drivers, that might register dispatch routines inside a loop, after they have registered others directly.
 
-```ManagedCPlusPlus
+```cpp
 DriverObject->MajorFunction[IRP_MJ_CREATE]         = DispatchCreate;
 DriverObject->MajorFunction[IRP_MJ_READ]           = DispatchRead;
 for (Index = 0; Index <= IRP_MJ_MAXIMUM_FUNCTION; Index++)
@@ -51,7 +51,7 @@ for (Index = 0; Index <= IRP_MJ_MAXIMUM_FUNCTION; Index++)
 
 In this example, the **DispatchPassIrp** function is correctly declared with the following annotations:
 
-```ManagedCPlusPlus
+```cpp
 __drv_dispatchType(IRP_MJ_CREATE_NAMED_PIPE)
 __drv_dispatchType(IRP_MJ_QUERY_INFORMATION)
 // .... 

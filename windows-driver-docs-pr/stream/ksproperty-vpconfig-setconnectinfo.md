@@ -4,6 +4,7 @@ description: The KSPROPERTY\_VPCONFIG\_SETCONNECTINFO property sets the video po
 keywords: ["KSPROPERTY_VPCONFIG_SETCONNECTINFO Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_VPCONFIG_SETCONNECTINFO
 api_location:

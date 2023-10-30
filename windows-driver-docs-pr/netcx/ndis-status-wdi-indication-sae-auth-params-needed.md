@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_SAE_AUTH_PARAMS_NEEDED (dot11wificxintf.h)
+ms.topic: reference
 description: The WiFiCx adapter sends NDIS_STATUS_WDI_INDICATION_SAE_AUTH_PARAMS_NEEDED to request parameters for SAE authentication.
 ms.date: 07/31/2021
 keywords:

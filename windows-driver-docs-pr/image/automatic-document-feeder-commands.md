@@ -1,7 +1,7 @@
 ---
 title: Automatic Document Feeder Commands
 description: Automatic Document Feeder Commands
-ms.date: 11/09/2020
+ms.date: 03/27/2023
 ---
 
 # Automatic Document Feeder Commands

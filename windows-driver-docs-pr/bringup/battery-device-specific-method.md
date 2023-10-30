@@ -1,7 +1,7 @@
 ---
 title: Battery Device-Specific Method
 description: This topic describes _DSM control method and parameters for passive thermal battery management.
-ms.date: 08/18/2021
+ms.date: 03/22/2023
 ---
 
 # Battery Device-Specific Method
@@ -12,7 +12,7 @@ For more information, see the **Thermal zones** section in the [ACPI defined dev
 
 ## Function 1: Battery thermal limit
 
-The \_DSM control method parameters for the battery charging thermal limit function are as follows:
+The _DSM control method parameters for the battery charging thermal limit function are as follows:
 
 ### Arguments
 

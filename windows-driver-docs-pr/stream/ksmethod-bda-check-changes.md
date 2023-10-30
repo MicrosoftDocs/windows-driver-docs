@@ -4,6 +4,7 @@ description: Clients use KSMETHOD_BDA_CHECK_CHANGES to determine whether a list 
 keywords: ["KSMETHOD_BDA_CHECK_CHANGES Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSMETHOD_BDA_CHECK_CHANGES
 api_location:

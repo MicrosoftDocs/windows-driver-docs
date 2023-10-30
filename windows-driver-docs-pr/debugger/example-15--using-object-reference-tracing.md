@@ -17,7 +17,7 @@ You can use Gflags to enable, disable, and configure Object Reference Tracing. T
 
 -   **Start the process that creates the suspect object**. The trace includes only objects created by processes that are started after the trace begins. If the process starts during or soon after restarting, add the trace settings to the registry, and then restart the system.
 
--   **Use the** [**!obtrace**](-obtrace.md) **debugger extension** to view the trace. By default, the trace is maintained until the object is destroyed, but you can use the **/p** parameter to maintain the trace until tracing is disabled.
+-   **Use the** [**!obtrace**](../debuggercmds/-obtrace.md) **debugger extension** to view the trace. By default, the trace is maintained until the object is destroyed, but you can use the **/p** parameter to maintain the trace until tracing is disabled.
 
 -   **Use Gflags to disable Object Reference Tracing**.in the registry or as a kernel flag (run time) setting. If you delete the setting from the registry, you must restart the computer to end tracing. If you disable the run time version of the settings, the trace ends immediately, but the trace settings revert to those in the registry when you shut down or restart the computer.
 

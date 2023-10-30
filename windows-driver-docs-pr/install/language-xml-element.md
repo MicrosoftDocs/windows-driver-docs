@@ -4,6 +4,7 @@ description: language XML Element
 keywords: ["language XML Element Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - language XML Element
 api_type:

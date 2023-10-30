@@ -5,6 +5,7 @@ keywords: ["CTRL+C (Break) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - CTRL+C (Break)
 api_type:
@@ -39,7 +40,7 @@ F12
 ## <span id="ddk_meta_ctrl_c_dbg"></span><span id="DDK_META_CTRL_C_DBG"></span>
 
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
 <table>
 <colgroup>
@@ -68,7 +69,7 @@ F12
 
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For other methods of issuing this command and an overview of related commands, see [Controlling the Target](controlling-the-target.md).
 
@@ -108,7 +109,7 @@ create a value named **BreakOnSysRq**, and set it equal to DWORD 0x0. Then reboo
 
 If you are debugging KD with CDB, then CTRL+C will be intercepted by the host debugger (CDB). To break into the target debugger (KD), you should use [**CTRL+F**](ctrl-f--break-to-kd-.md) instead.
 
-**Note**   Note that in WinDbg, CTRL+C is a [shortcut key](keyboard-shortcuts.md) that is used to copy text from a window. To issue a break command in WinDbg, use [CTRL+BREAK](debug---break.md) or select Debug | Break from the menu.
+**Note**   Note that in WinDbg, CTRL+C is a [shortcut key](keyboard-shortcuts.md) that is used to copy text from a window. To issue a break command in WinDbg, use **CTRL+BREAK** or select Debug | Break from the menu.
 
  
 

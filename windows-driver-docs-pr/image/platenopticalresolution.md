@@ -4,15 +4,15 @@ description: The required PlatenOpticalResolution element specifies the maximum 
 keywords: ["PlatenOpticalResolution element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn PlatenOpticalResolution
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 05/01/2023
 ---
 
 # PlatenOpticalResolution element
-
 
 The required **PlatenOpticalResolution** element specifies the maximum optical resolution at which the platen can scan.
 
@@ -30,44 +30,16 @@ There are no attributes.
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="height.md" data-raw-source="[&lt;strong&gt;Height&lt;/strong&gt;](height.md)"><strong>Height</strong></a></p></td>
-</tr>
-<tr class="even">
-<td><p><a href="width.md" data-raw-source="[&lt;strong&gt;Width&lt;/strong&gt;](width.md)"><strong>Width</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**Height**](height.md) |
+| [**Width**](width.md) |
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="platen.md" data-raw-source="[&lt;strong&gt;Platen&lt;/strong&gt;](platen.md)"><strong>Platen</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**Platen**](platen.md) |
 
 ## Remarks
 
@@ -77,19 +49,8 @@ If the Height element is not specified, the WSD Scan Service should assume a squ
 
 ## See also
 
-
 [**Height**](height.md)
 
 [**Platen**](platen.md)
 
 [**Width**](width.md)
-
- 
-
- 
-
-
-
-
-
-

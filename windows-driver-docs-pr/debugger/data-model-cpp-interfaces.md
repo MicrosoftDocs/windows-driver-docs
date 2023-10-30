@@ -879,7 +879,7 @@ Identical | The two signatures or types are identical.
 
 ---
 
-## <span id="related_topics"></span>Related topics
+## <span id="related_topics"></span>See also
 
 This topic is part of a series which describes the interfaces accessible from C++, how to use them to build a C++ based debugger extension, and how to make use of other data model constructs (e.g.: JavaScript or NatVis) from a C++ data model extension.
 

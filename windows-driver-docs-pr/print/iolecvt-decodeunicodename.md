@@ -2,19 +2,20 @@
 title: IOleCvt DecodeUnicodeName method
 description: The DecodeUnicodeName property enables an ASP Web page to translate a Unicode string to its ANSI equivalent.
 MS-HAID:
-- 'webfnc\_50fe9203-d31e-4af4-a34f-b32dfd3dd7b1.xml'
-- 'print.iolecvt\_decodeunicodename'
+- 'webfnc_50fe9203-d31e-4af4-a34f-b32dfd3dd7b1.xml'
+- 'print.iolecvt_decodeunicodename'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 keywords: ["DecodeUnicodeName method Print Devices", "DecodeUnicodeName method Print Devices , IOleCvt interface", "IOleCvt interface Print Devices , DecodeUnicodeName method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IOleCvt.DecodeUnicodeName
 api_type:
 - COM
-ms.date: 04/20/2017
+ms.date: 06/26/2023
 ---
 
 # IOleCvt::DecodeUnicodeName method
@@ -40,28 +41,10 @@ Caller-supplied pointer to a location to receive the translated string.
 
 ## Return value
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Return code</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>S_OK</strong></td>
-<td><p>The operation succeeded.</p></td>
-</tr>
-<tr class="even">
-<td><strong>E_POINTER</strong></td>
-<td><p>At least one of the parameters does not point to a valid memory location.</p></td>
-</tr>
-</tbody>
-</table>
+| Return code | Description |
+|--|--|
+| **S_OK** | The operation succeeded. |
+| **E_POINTER** | At least one of the parameters does not point to a valid memory location. |
 
 ## VBScript Example
 
@@ -74,15 +57,4 @@ strPrinter = OleCvt.DecodeUnicodeName (strEncodedPrinter)
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Target platform</p></td>
-<td>Desktop</td>
-</tr>
-</tbody>
-</table>
+**Target platform:** Desktop

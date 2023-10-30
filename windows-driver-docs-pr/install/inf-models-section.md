@@ -5,11 +5,12 @@ keywords:
 - INF Models Section Device and Driver Installation
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INF Models Section
 api_type:
 - NA
-ms.date: 06/08/2022
+ms.date: 07/14/2023
 ---
 
 # INF Models section
@@ -73,17 +74,17 @@ This example shows a per-manufacturer _Models_ section with some representative 
 
 ```inf
 [Manufacturer]
-%StdMfg% = StdMfg         ; (Standard types)
-%MSMfg%  = MSMfg          ; Microsoft
+%StdMfg% = StdMfg,NTamd64         ; (Standard types)
+%MSMfg%  = MSMfg,NTamd64          ; Microsoft
 ; ... %otherMfg% omitted here
 
-[StdMfg]  ; per-Manufacturer Models section 
-  ; Std serial mouse
+[StdMfg.NTamd64]  ; per-Manufacturer Models section 
+; Std serial mouse
 %*pnp0f0c.DeviceDesc%= Ser_Inst,*PNP0F0C,SERENUM\PNP0F0C,SERIAL_MOUSE
-  ; Std InPort mouse
-%*pnp0f0d.DeviceDesc%= Inp_Inst,*PNP0F0D
 ; ... more StdMfg entries 
 ```
+
+For more examples of OS-specific INF Models sections, see the [Examples](./inf-manufacturer-section.md#examples) section of [INF Manufacturer section](./inf-manufacturer-section.md), and also [Combining platform extensions with operating system versions](./combining-platform-extensions-with-operating-system-versions.md).
 
 ## See also
 

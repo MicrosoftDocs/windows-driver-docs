@@ -6,6 +6,7 @@ keywords:
 - WDK smart card
 - card eject
 ms.date: 09/09/2022
+ms.topic: reference
 ---
 
 # RDF\_CARD\_EJECT callback function

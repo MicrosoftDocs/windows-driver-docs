@@ -4,15 +4,15 @@ description: The required ADFMinimumSize element specifies the smallest size ori
 keywords: ["ADFMinimumSize element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ADFMinimumSize
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 03/27/2023
 ---
 
 # ADFMinimumSize element
-
 
 The required **ADFMinimumSize** element specifies the smallest size original that an end user can scan on the front or back of the automatic document feeder (ADF).
 
@@ -30,47 +30,17 @@ There are no attributes.
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="height.md" data-raw-source="[&lt;strong&gt;Height&lt;/strong&gt;](height.md)"><strong>Height</strong></a></p></td>
-</tr>
-<tr class="even">
-<td><p><a href="width.md" data-raw-source="[&lt;strong&gt;Width&lt;/strong&gt;](width.md)"><strong>Width</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**Height**](height.md) |
+| [**Width**](width.md) |
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="adfback.md" data-raw-source="[&lt;strong&gt;ADFBack&lt;/strong&gt;](adfback.md)"><strong>ADFBack</strong></a></p></td>
-</tr>
-<tr class="even">
-<td><p><a href="adffront.md" data-raw-source="[&lt;strong&gt;ADFFront&lt;/strong&gt;](adffront.md)"><strong>ADFFront</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**ADFBack**](adfback.md) |
+| [**ADFFront**](adffront.md) |
 
 ## Remarks
 
@@ -82,7 +52,6 @@ All media dimensions are measured in one thousandths (1/1000) of an inch. The po
 
 ## See also
 
-
 [**ADFBack**](adfback.md)
 
 [**ADFFront**](adffront.md)
@@ -90,13 +59,3 @@ All media dimensions are measured in one thousandths (1/1000) of an inch. The po
 [**Height**](height.md)
 
 [**Width**](width.md)
-
- 
-
- 
-
-
-
-
-
-

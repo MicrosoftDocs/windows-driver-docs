@@ -4,6 +4,7 @@ description: The SM\_GetTargetMapping WMI method retrieves a mapping between the
 keywords: ["SM_GetTargetMapping function Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SM_GetTargetMapping
 api_location:

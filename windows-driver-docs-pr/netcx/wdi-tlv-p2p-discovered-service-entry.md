@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_DISCOVERED_SERVICE_ENTRY  (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_P2P_DISCOVERED_SERVICE_ENTRY is a WiFix TLV that contains a discovered service entry.
 ms.date: 06/17/2021
 keywords:

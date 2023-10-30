@@ -4,6 +4,7 @@ description: Clients use the KSPROPERTY_CONNECTION_DATAFORMAT property to set th
 keywords: ["KSPROPERTY_CONNECTION_DATAFORMAT Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CONNECTION_DATAFORMAT
 api_location:

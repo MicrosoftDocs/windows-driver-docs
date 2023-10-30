@@ -4,6 +4,7 @@ description: The WdfObjectDereference macro decrements the reference count for a
 keywords:
  - WdfObjectDereference macro
 ms.date: 08/23/2017
+ms.topic: reference
 ---
 
 # WdfObjectDereference macro

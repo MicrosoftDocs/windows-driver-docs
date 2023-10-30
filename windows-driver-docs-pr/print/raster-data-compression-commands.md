@@ -4,14 +4,12 @@ description: Raster Data Compression Commands
 keywords:
 - data compression raster printing commands WDK Unidrv
 - compression raster printing commands WDK Unidrv
-ms.date: 04/20/2017
+ms.date: 01/30/2023
 ---
 
 # Raster Data Compression Commands
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The following table lists the raster data compression commands. All commands are specified using the [command entry format](command-entry-format.md).
 
@@ -59,14 +57,4 @@ For more information about raster data compression commands, see [Compressing Ra
 </tbody>
 </table>
 
- 
-
 For examples, see the [sample GPD files](sample-gpd-files.md).
-
- 
-
- 
-
-
-
-

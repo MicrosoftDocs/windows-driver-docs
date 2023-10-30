@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xC5 DRIVER_CORRUPTED_EXPOOL", "DRIVER_CORRUPTED_EXPOOL"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DRIVER_CORRUPTED_EXPOOL
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The DRIVER\_CORRUPTED\_EXPOOL bug check has a value of 0x000000C5. This indicates that the system attempted to access invalid memory at a process IRQL that was too high.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## DRIVER\_CORRUPTED\_EXPOOL Parameters
@@ -65,7 +66,7 @@ In most cases, this bug check results if a driver corrupts a small allocation (l
 
 ## Resolution
 
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause. If you have recently installed any new software, check to see if it is properly installed. Check for updated drivers on the manufacturer's website.
+The [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause. If you have recently installed any new software, check to see if it is properly installed. Check for updated drivers on the manufacturer's website.
 
 To debug this error, use the special pool option of Driver Verifier. If this fails to reveal the driver that caused the error, use the Global Flags utility to enable the special pool by pool tag.
 

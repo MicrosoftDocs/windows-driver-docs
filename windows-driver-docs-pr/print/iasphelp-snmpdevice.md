@@ -1,23 +1,24 @@
 ---
-title: Iasphelp get\_SNMPDevice method
+title: Iasphelp get_SNMPDevice method
 description: The SNMPDevice property enables an ASP Web page to obtain a printer's SNMP device index (as defined by RFC 1759).
 MS-HAID:
-- 'webfnc\_e4a9d1b3-1168-45a7-98cb-9c19fdf83009.xml'
-- 'print.iasphelp\_snmpdevice'
+- 'webfnc_e4a9d1b3-1168-45a7-98cb-9c19fdf83009.xml'
+- 'print.iasphelp_snmpdevice'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 keywords: ["get_SNMPDevice method Print Devices", "get_SNMPDevice method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_SNMPDevice method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Iasphelp.get_SNMPDevice
 api_type:
 - COM
-ms.date: 04/20/2017
+ms.date: 06/26/2023
 ---
 
-# Iasphelp::get\_SNMPDevice method
+# Iasphelp::get_SNMPDevice method
 
 The **SNMPDevice** property enables an ASP Web page to obtain a printer's SNMP device index (as defined by RFC 1759).
 
@@ -38,32 +39,11 @@ Caller-supplied location to receive a numeric value representing the printer's S
 
 Win32 error codes can also be returned.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Return code</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>S_OK</strong></td>
-<td><p>The operation succeeded.</p></td>
-</tr>
-<tr class="even">
-<td><strong>E_HANDLE</strong></td>
-<td><p>The <a href="iasphelp-open.md" data-raw-source="[&lt;strong&gt;Iasphelp::Open&lt;/strong&gt;](iasphelp-open.md)"><strong>Iasphelp::Open</strong></a> method has not been called.</p></td>
-</tr>
-<tr class="odd">
-<td><strong>E_OUTOFMEMORY</strong></td>
-<td><p>Out of memory.</p></td>
-</tr>
-</tbody>
-</table>
+| Return code | Description |
+|--|--|
+| **S_OK** | The operation succeeded. |
+| **E_HANDLE** | The [**Iasphelp::Open**](iasphelp-open.md) method has not been called. |
+| **E_OUTOFMEMORY** | Out of memory. |
 
 ## VBScript Example
 
@@ -79,18 +59,7 @@ SNMPDeviceIndex = objPrinter.SNMPDevice
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Target platform</p></td>
-<td>Desktop</td>
-</tr>
-</tbody>
-</table>
+**Target platform:** Desktop
 
 ## See also
 

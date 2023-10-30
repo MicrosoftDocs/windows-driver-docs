@@ -1,7 +1,8 @@
 ---
 title: OID_WDI_SET_ASSOCIATION_PARAMETERS
+ms.topic: reference
 description: OID_WDI_SET_ASSOCIATION_PARAMETERS specifies parameters that the adapter can use during association to a set of BSSIDs.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - OID_WDI_SET_ASSOCIATION_PARAMETERS Network Drivers Starting with Windows Vista
 ms.custom: 19H1

@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_KEK_CONTENT (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_KEK_CONTENT is a WiFiCx TLV that contains an IEEE 802.11 key encryption key (KEK).
 ms.date: 09/30/2021
 keywords:

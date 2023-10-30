@@ -4,7 +4,7 @@ description: Synchronizing the Use of a Parallel Port
 keywords:
 - parallel ports WDK , synchronization
 - synchronization WDK parallel ports
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Synchronizing the Use of a Parallel Port

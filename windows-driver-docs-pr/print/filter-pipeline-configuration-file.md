@@ -8,19 +8,20 @@ keywords:
 - private keywords WDK XPSDrv
 - filter pipeline property bags WDK XPSDrv
 - property bags WDK filter pipeline
-ms.date: 04/20/2017
+ms.date: 01/27/2023
 ---
 
 # Filter Pipeline Configuration File
 
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The *filter pipeline configuration file* is an XML file that defines the following:
 
--   Order of the filters in the pipeline. This order is defined by the ordering of the XML elements in the filter pipeline configuration file.
+- Order of the filters in the pipeline. This order is defined by the ordering of the XML elements in the filter pipeline configuration file.
 
--   Filter interfaces. These interfaces are defined by XML attributes in the filter pipeline configuration file.
+- Filter interfaces. These interfaces are defined by XML attributes in the filter pipeline configuration file.
 
--   Input and output formats for each filter. These formats are defined by XML elements in the filter pipeline configuration file.
+- Input and output formats for each filter. These formats are defined by XML elements in the filter pipeline configuration file.
 
 The following code example shows a typical filter pipeline configuration file:
 
@@ -59,7 +60,7 @@ The following code example shows a typical filter pipeline configuration file:
 </Filters>
 ```
 
-### Private Keywords
+## Private Keywords
 
 An [XPSDrv configuration module](xpsdrv-configuration-module.md) can put *private keywords* in the PrintTicket entry when it handles an [XPS driver document event](xps-driver-document-events.md) during a [**DrvDocumentEvent**](/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvdocumentevent) function call. These PrintTicket entries are then read by the processing filters in the print filter pipeline while the filters are reading the PrintTicket.
 
@@ -109,9 +110,9 @@ The following example filter is an excerpt from the preceding example filter con
 
 The filter pipeline supports the following interleaving orders:
 
--   The **ResourcesFirst** interleaving order streams each dependent resource before the FixedPage that depends on the resource. This interleaving order is good for printer drivers and for direct-consumption printers because it provides the font and image resources that the printer requires to render the text and page content just before the rendering begins.
+- The **ResourcesFirst** interleaving order streams each dependent resource before the FixedPage that depends on the resource. This interleaving order is good for printer drivers and for direct-consumption printers because it provides the font and image resources that the printer requires to render the text and page content just before the rendering begins.
 
--   The **MarkupFirst** interleaving order streams the document text and markup and the information about how a resource will be used before it streams the actual resource. This interleaving order is best for archive file destinations and for applications that view the document online.
+- The **MarkupFirst** interleaving order streams the document text and markup and the information about how a resource will be used before it streams the actual resource. This interleaving order is best for archive file destinations and for applications that view the document online.
 
 ### Archive-Optimized XPS Output
 

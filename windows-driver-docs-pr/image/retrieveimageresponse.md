@@ -4,15 +4,15 @@ description: The required RetrieveImageResponse operation element returns the sc
 keywords: ["RetrieveImageResponse element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn RetrieveImageResponse
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 05/01/2023
 ---
 
 # RetrieveImageResponse element
-
 
 The required **RetrieveImageResponse** operation element returns the scan data to the client.
 
@@ -30,25 +30,11 @@ There are no attributes.
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="scandata.md" data-raw-source="[&lt;strong&gt;ScanData&lt;/strong&gt;](scandata.md)"><strong>ScanData</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**ScanData**](scandata.md) |
 
 ## Parent elements
-
 
 There are no parent elements.
 
@@ -60,8 +46,8 @@ The Scan Service returns the scan data as a binary attachment with the **Retriev
 
 The number of images that the Scan Service returns in the resultant file depends on the combination of the [**ImagesToTransfer**](imagestotransfer.md) element of the [**ScanTicket**](scanticket.md) and the image file [**Format**](format.md) element as follows:
 
--   If **Format** specifies a single image format, the returned file will always contain a single image.
--   If **Format** specifies a multi-page format, the returned file will contain as many images as the input source can scan up to the value of **ImagesToTransfer**.
+- If **Format** specifies a single image format, the returned file will always contain a single image.
+- If **Format** specifies a multi-page format, the returned file will contain as many images as the input source can scan up to the value of **ImagesToTransfer**.
 
 If [**Format**](format.md) specifies a single image format and the value of [**ImagesToTransfer**](imagestotransfer.md) is 0 or greater than 1, the client will send repeated [**RetrieveImageRequest**](retrieveimagerequest.md) operation elements until the Scan Service replies with a **ClientErrorNoImagesAvailable** fault or until the **ImagesToTransfer** value is met.
 

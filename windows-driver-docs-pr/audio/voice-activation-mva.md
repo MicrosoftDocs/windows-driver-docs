@@ -1,18 +1,18 @@
 ---
 title: Multiple Voice Assistant
 description: The Multiple Voice Assistant platform provides support for additional voice assistants beyond Cortana. 
-ms.date: 09/08/2020
+ms.date: 04/13/2023
 ---
 
 # Multiple Voice Assistant
 
-The Multiple Voice Assistant platform provides support for additional voice assistants beyond Cortana. This allows other assistants be available on Windows devices such as PCs and wearables like HoloLens. Multiple voice assistants can be active on the same device using a set of supported keyword patterns.
-
-For information about implementing Windows Cortana, see [Voice Activation](voice-activation.md).
+The Multiple Voice Assistant platform provides support for additional voice assistants in Windows. This allows other assistants be available on Windows devices such as PCs and wearables like HoloLens. Multiple voice assistants can be active on the same device using a set of supported keyword patterns.
 
 > [!NOTE]
 > Multiple Voice Assistant is supported starting with Windows 10 Version 1903.
 >
+
+For information about implementing Windows Cortana, see [Voice Activation](voice-activation.md).
 
 ## Voice Activation
 
@@ -23,11 +23,12 @@ Implementing voice activation is a significant project and is a task completed b
 Voice activation allows users to quickly engage the voice assistant experience outside of their active context (i.e., what is currently on screen) by using their voice. Users often want to be able to instantly access an experience without having to physically interact with or touch a device. For an Xbox user this may be from not wanting to find and connect a controller. For PC users, they might want rapid access to an experience without having to perform multiple mouse, touch and/or keyboard actions, as in the case of a computer in the kitchen.
 
 Voice activation is powered by a keyword spotter (KWS) which reacts if the key phrase is detected. Key phrases may include key words such as "Hey Contoso." *Keyword detection* describes the detection of the keyword by either hardware or software.
+
 Key phrases may be uttered by themselves ("Hey Contoso") as a staged command, or followed by a speech action composing a chained command ("Hey Contoso, where is my next meeting?")
 
 Microsoft provides an OS default keyword spotter (software keyword spotter) to provide voice assistant experience in cases where hardware keyword detection is unavailable. While this is currently available for Cortana, additional Microsoft configuration may be needed to onboard other voice assistants to do two-stage keyword detection. For more information contact `AskMVA@Microsoft.com`.  
 
-If KWS is to wake the device from a low powered state, the solution is known as Wake-on-Voice (WoV). For more information, see [Wake on Voice](#wake-on-voice).
+If KWS is to wake the device from a low powered state, the solution is known as Wake-on-Voice (WoV). For more information, see [Wake on Voice](#wake-on-voice) later in this article.
 
 ## Glossary of Terms
 
@@ -35,20 +36,20 @@ This glossary summarizes terms related to voice activation.
 
 |Term|Example/definition|
 |----|----|
-| Staged Command | Example: Hey Contoso <pause, wait for assistant UI> What's the weather? This is sometimes referred to as "two-shot command" or "keyword-only" |
-| Chained Command | Example: Hey Contoso what's the weather? This is sometimes referred to as a "one-shot command" |
-| Voice Activation | Example: "Hey Contoso" The scenario where keyword is detected in a predefined activation key phrase |
-| Wake-on-Voice (WoV) | Technology that enables voice activation from a screen off, lower power state, to a screen on full power state |
-|WoV from Modern Standby| Wake-on-Voice from a Modern Standby (S0ix) screen off state to a screen on full power (S0) state |
-| Modern Standby | Windows Low Power Idle infrastructure - successor to Connected Standby (CS) in Windows 10. The first state of modern standby is when the screen is off. The deepest sleep state is when in DRIPS/Resiliency. For more information, see [Modern Standby](/windows-hardware/design/device-experiences/modern-standby)|
-| KWS | Keyword spotter – the algorithm that provides the detection of "Hey Contoso" |
+| Staged Command | Example: Hey Contoso <pause, wait for assistant UI> What's the weather? This is sometimes referred to as "two-shot command" or "keyword-only". |
+| Chained Command | Example: Hey Contoso what's the weather? This is sometimes referred to as a "one-shot command". |
+| Voice Activation | Example: "Hey Contoso" The scenario where keyword is detected in a predefined activation key phrase. |
+| Wake-on-Voice (WoV) | Technology that enables voice activation from a screen off, lower power state, to a screen on full power state. |
+|WoV from Modern Standby| Wake-on-Voice from a Modern Standby (S0ix) screen off state to a screen on full power (S0) state. |
+| Modern Standby | Windows Low Power Idle infrastructure - successor to Connected Standby (CS) in Windows 10. The first state of modern standby is when the screen is off. The deepest sleep state is when in DRIPS/Resiliency. For more information, see [Modern Standby](/windows-hardware/design/device-experiences/modern-standby).|
+| KWS | Keyword spotter – the algorithm that provides the detection of "Hey Contoso". |
 | SW KWS | Software keyword spotter – an implementation of KWS that runs on the host (CPU). For "Hey Cortana", SW KWS is included as part of Windows. |
-| HW KWS | Hardware keyword spotter – an implementation of KWS that runs offloaded on hardware |
-| Burst buffer | A circular buffer used to store PCM data that can be bursted up in the event of a KWS detection, so that all audio that triggered a KWS detection is included |
-| Event detector OEM Adapter | A user mode component that acts as an intermediary between the Windows voice assistant stack and driver |
+| HW KWS | Hardware keyword spotter – an implementation of KWS that runs offloaded on hardware. |
+| Burst buffer | A circular buffer used to store PCM data that can be bursted up in the event of a KWS detection, so that all audio that triggered a KWS detection is included. |
+| Event detector OEM Adapter | A user mode component that acts as an intermediary between the Windows voice assistant stack and driver. |
 | Model | The acoustic model data file used by the KWS algorithm. The data file is static. Models are localized, one per locale.|
-| MVA | Multiple Voice Agent - new HWKWS DDI which supports multiple agents |
-| SVA | Single Voice Agent - previous HWKWS DDI which only supports a single agent (Cortana) |
+| MVA | Multiple Voice Agent - HWKWS DDI which supports multiple agents. |
+| SVA | Single Voice Agent - previous HWKWS DDI which only supports a single agent (Cortana). |
 
 ## Integrating a Hardware Keyword Spotter
 
@@ -105,13 +106,13 @@ The audio stack external interfaces for enabling Voice Activation serves as the 
 
 - [*Event detector Device Driver Interface (DDI)*](/windows-hardware/drivers/ddi/eventdetectoroemadapter/nn-eventdetectoroemadapter-ieventdetectoroemadapter). The Event detector Device Driver Interface is responsible for configuring and arming the HW Keyword Spotter (KWS).  It is also used by the driver to notify the system of a detection event.
 - [*IEvent Detector OEM Adapter DLL*](/windows-hardware/drivers/ddi/eventdetectoroemadapter/nn-eventdetectoroemadapter-ieventdetectoroemadapter). This DLL implements a COM interface to adapt the driver specific opaque data for use by the OS to assist with keyword detection.
-- *WaveRT streaming enhancements*. The enhancements enable the audio driver to burst stream the buffered audio data from the keyword detection.
+- [*WaveRT enhancements*](#wavert-enhancements). The enhancements enable the audio driver to burst stream the buffered audio data from the keyword detection.
 
 ### Audio Endpoint Properties
 
 Audio endpoint graph building occurs normally. The graph is prepared to handle faster than real time capture. Timestamps on captured buffers remain true. Specifically, the timestamps will correctly reflect data that was captured in the past and buffered, and is now bursting.
 
-### Theory of Operation
+### Theory of Bluetooth bypass audio streaming
 
 The driver exposes a KS filter for its capture device as usual. This filter supports several KS properties and a KS event to configure, enable and signal a detection event. The filter also includes an additional pin factory identified as a keyword spotter (KWS) pin. This pin is used to stream audio from the keyword spotter.
 
@@ -187,7 +188,7 @@ Implement the following methods.
 
 ## WAVERT Enhancements
 
-Miniport interfaces are defined to be implemented by WaveRT miniport drivers. These interfaces provide methods to either simplify the audio driver, improve OS audio pipeline performance and reliability, or support new scenarios. A new PnP device interface property is defined allowing the driver to provide a static expressions of its buffer size constraints to the OS.
+Miniport interfaces are defined to be implemented by WaveRT miniport drivers. These interfaces provide methods to either simplify the audio driver, improve OS audio pipeline performance and reliability, or support new scenarios. A PnP device interface property is defined allowing the driver to provide a static expressions of its buffer size constraints to the OS.
 
 ### Buffer Sizes
 
@@ -255,3 +256,119 @@ The audio stack is responsible for communicating the wake data (speaker ID, keyw
 ### Validation on Modern Standby Systems
 
 WoV from a system idle state can be validated on [Modern Standby](/windows-hardware/design/device-experiences/modern-standby) systems using the [Modern Standby Wake on Voice Basic Test on AC-power Source](/windows-hardware/test/hlk/testref/69df7cf2-6024-4eee-92ee-1506480614ee) and the [Modern Standby Wake on Voice Basic Test on DC-power Source](/windows-hardware/test/hlk/testref/614ffb93-eced-45ab-bf7b-e09291a97fd2) in the [HLK](/windows-hardware/test/hlk/). These tests check that the system has a hardware keyword spotter (HW-KWS), is able to enter the Deepest Runtime Idle Platform State (DRIPS) and is able to wake from Modern Standby on voice command with system resume latency of less than or equal to one second.
+
+## ACX and MVA
+
+Audio Class eXtension (ACX) defines a Windows Driver Framework (WDF) class extension for the audio domain. For more information about ACX, see [ACX audio class extensions overview](acx-audio-class-extensions-overview.md) and [Summary of ACX objects](acx-summary-of-objects.md). This section describes how to implement MVA using ACX.
+
+ACX uses the same KS infrastructure for the keyword spotter, adding a layer of abstraction to simplify driver implementation. With ACX the same OEM DLL is used as described above, and remains unchanged. Both ACX and Portcls require the [IEventDetectorOEMAdapter interface](/windows-hardware/drivers/ddi/eventdetectoroemadapter/nn-eventdetectoroemadapter-ieventdetectoroemadapter), and there's no difference in implementation between the two for the OEM adapter.
+
+The [AcxKeywordSpotterCreate function](/windows-hardware/drivers/ddi/acxelements/nf-acxelements-acxkeywordspottercreate) is used to create an ACX keyword spotter opaque object (ACXKEYWORDSPOTTER) that that will be associated with a circuit device object parent.
+
+The ACXKEYWORDSPOTTER object is used to replace all the KSPROPERTY_SOUNDDETECTOR calls, simplifying KWS implementation. It is used in the process of adding a KWS element and KWS pin to the ACX circuit. The associated callbacks take care of getting the patterns, arming, disarming and reset. It uses an initialized [ACX_KEYWORDSPOTTER_CONFIG structure](/windows-hardware/drivers/ddi/acxelements/ns-acxelements-acx_keywordspotter_config) that describes the configuration of the keyword spotter.
+
+The ACX_KEYWORDSPOTTER_CONFIG structure takes a [ACX_KEYWORDSPOTTER_CALLBACKS structure](/windows-hardware/drivers/ddi/acxelements/ns-acxelements-acx_keywordspotter_callbacks) that defines the following callbacks.
+
+EvtAcxKeywordSpotterRetrieveArm - The [ACX_KEYWORDSPOTTER_RETRIEVE_ARM](/windows-hardware/drivers/ddi/acxelements/nc-acxelements-evt_acx_keywordspotter_retrieve_arm) callback.
+
+EvtAcxKeywordSpotterAssignArm - The [ACX_KEYWORDSPOTTER_ASSIGN_ARM](/windows-hardware/drivers/ddi/acxelements/nc-acxelements-evt_acx_keywordspotter_assign_arm) callback.
+
+EvtAcxKeywordSpotterAssignPatterns - The [ACX_KEYWORDSPOTTER_ASSIGN_PATTERNS](/windows-hardware/drivers/ddi/acxelements/nc-acxelements-evt_acx_keywordspotter_assign_patterns) callback.
+
+EvtAcxKeywordSpotterAssignReset - The [ACX_KEYWORDSPOTTER_ASSIGN_RESET](/windows-hardware/drivers/ddi/acxelements/nc-acxelements-evt_acx_keywordspotter_assign_reset) callback.
+
+### ACX PNP Event
+
+The ACX PNP Event replaces KSNOTIFICATIONID_SoundDetector, simplifying the detection notification event. The [ACX_PNPEVENT_CONFIG_INIT function](/windows-hardware/drivers/ddi/acxevents/nf-acxevents-acx_pnpevent_config_init) initializes an [ACX_PNPEVENT_CONFIG structure](\windows-hardware/drivers/ddi/acxevents/ns-acxevents-acx_pnpevent_config). No inputs are used with this function.
+
+### ACX KWS Sample code
+
+The ACX KWS sample code shows the initialization of the callbacks, keyword elements and creation of the keyword spotter.
+
+```cpp
+{
+    NTSTATUS                        status;
+    WDF_OBJECT_ATTRIBUTES           attributes;
+    ACX_KEYWORDSPOTTER_CALLBACKS    keywordSpotterCallbacks;
+    ACX_KEYWORDSPOTTER_CONFIG       keywordSpotterCfg;
+    PCODEC_KEYWORDSPOTTER_CONTEXT   keywordSpotterCtx;
+    ACX_PNPEVENT_CONFIG             keywordEventCfg;
+    ACXPNPEVENT                     keywordEvent;
+
+    PAGED_CODE();
+
+    ACX_KEYWORDSPOTTER_CALLBACKS_INIT(&keywordSpotterCallbacks);
+    keywordSpotterCallbacks.EvtAcxKeywordSpotterRetrieveArm = CodecC_EvtAcxKeywordSpotterRetrieveArm;
+    keywordSpotterCallbacks.EvtAcxKeywordSpotterAssignArm = CodecC_EvtAcxKeywordSpotterAssignArm;
+    keywordSpotterCallbacks.EvtAcxKeywordSpotterAssignPatterns = CodecC_EvtAcxKeywordSpotterAssignPatterns;
+    keywordSpotterCallbacks.EvtAcxKeywordSpotterAssignReset = CodecC_EvtAcxKeywordSpotterAssignReset;
+    
+    ACX_KEYWORDSPOTTER_CONFIG_INIT(&keywordSpotterCfg);
+    keywordSpotterCfg.Pattern = &CONTOSO_KEYWORDCONFIGURATION_IDENTIFIER2;
+    keywordSpotterCfg.Callbacks = &keywordSpotterCallbacks;
+    
+    WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE(&attributes, CODEC_KEYWORDSPOTTER_CONTEXT);
+    attributes.ParentObject = Circuit;
+```
+
+Next the [AcxKeywordSpotterCreate function](/windows-hardware/drivers/ddi/acxelements/nf-acxelements-acxkeywordspottercreate) is used to create the ACX keyword spotter object and associate it with an existing circuit.
+
+```cpp
+    status = AcxKeywordSpotterCreate(Circuit, &attributes, &keywordSpotterCfg, Element);
+    if (!NT_SUCCESS(status))
+    {
+        ASSERT(FALSE);
+        goto exit;
+    }
+```
+
+Then the keyword spotter context is determined and used to create the KeywordDetector in NonPagedPoolNx memory.
+
+```cpp
+    
+    keywordSpotterCtx = GetCodecKeywordSpotterContext(*Element);
+    ASSERT(keywordSpotterCtx);
+    
+    keywordSpotterCtx->KeywordDetector = (PVOID) new(NonPagedPoolNx, DRIVER_TAG) CKeywordDetector();
+    if (keywordSpotterCtx->KeywordDetector == NULL)
+    {
+        status = STATUS_INSUFFICIENT_RESOURCES;
+        ASSERT(FALSE);
+        goto exit;
+    }
+```
+
+In this sample code, the CKeywordDetector class that is added to the context is provided only as an example implementation which simulates keyword spotting within the sample driver. The CKeywordDetector class is not part of the ACX framework or a required part of implementation of MVA on ACX, but may provide a good starting point for development of an actual keyword spotter.
+
+Lastly, the ACX PnP Event is configured and created.
+
+```cpp
+   
+    ACX_PNPEVENT_CONFIG_INIT(&keywordEventCfg);
+    
+    WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE(&attributes, CODEC_PNPEVENT_CONTEXT);
+    attributes.ParentObject = *Element;
+    status = AcxPnpEventCreate(Device, *Element, &attributes, &keywordEventCfg, &keywordEvent);
+    if (!NT_SUCCESS(status))
+    {
+        ASSERT(FALSE);
+        goto exit;
+    }
+
+    keywordSpotterCtx->Event = keywordEvent;
+
+    //
+    // Done. 
+    //
+    status = STATUS_SUCCESS;
+
+}
+```
+
+### Circuits with complex pin behavior including KWS
+
+For circuits with complex pin behavior such as  circuits with host engine and/or KWS, the driver should disable ACX to from doing stream-bridge handling and instead, create a stream-bridge without inmode. This approach will prevent ACX from automatically associating streams to stream-bridges.
+
+## See also
+
+[Voice Activation](voice-activation.md)

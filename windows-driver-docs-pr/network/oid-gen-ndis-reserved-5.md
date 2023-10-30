@@ -1,7 +1,8 @@
 ---
 title: OID_GEN_NDIS_RESERVED_5
+ms.topic: reference
 description: The OID_GEN_NDIS_RESERVED_5 OID is reserved for NDIS. NDIS drivers do not use this OID.
-ms.date: 08/08/2017
+ms.date: 03/02/2023
 keywords: 
  -OID_GEN_NDIS_RESERVED_5 Network Drivers Starting with Windows Vista
 ---

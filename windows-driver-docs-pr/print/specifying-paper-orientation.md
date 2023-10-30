@@ -10,14 +10,12 @@ keywords:
 - landscape mode WDK Unidrv
 - portrait mode WDK Unidrv
 - Unidrv WDK print
-ms.date: 04/20/2017
+ms.date: 01/30/2023
 ---
 
 # Specifying Paper Orientation
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 There are three [standard options](standard-options.md) associated with the Orientation [standard feature](standard-features.md): PORTRAIT, LANDSCAPE\_CC90, and LANDSCAPE\_CC270. Unless otherwise specified, the default orientation is PORTRAIT. The use of this option is straightforward, and is not discussed further in this topic. The balance of this topic is concerned with the two landscape options.
 
@@ -33,7 +31,7 @@ For a printer that supports landscape mode as well as portrait mode, you should 
 
 However, a printer that supports landscape mode (for which the LANDSCAPE\_CC90 option ordinarily would be used), can still operate with the LANDSCAPE\_CC270 option. Under this option, Unidrv is directed to treat the printer as if it supported only portrait mode (that is, with only a single coordinate system, with the origin at the upper left corner). Consequently, Unidrv must not be directed to issue a command to change coordinate systems. Unidrv presents the transformed text and graphics to the printer with coordinates relative to this upper-left-corner origin. Because Unidrv assumes this location of the origin, such a printer must not be issued a landscape mode command string, even when the user has selected the Landscape orientation on the printer's property page. In the following GPD file example, notice that the \*Option: LANDSCAPE\_CC270 section contains a command to place the printer into portrait mode (ORIENT\_PORTRAIT\_CMD), and not one to place it into landscape mode.
 
-```cpp
+```GPD
 *Feature: Orientation
 {
   *rcNameID: =ORIENTATION_DISPLAY
@@ -59,9 +57,4 @@ However, a printer that supports landscape mode (for which the LANDSCAPE\_CC90 o
 }
 ```
 
-**Note**   For Windows 7, the **MxdcGetPDEVAdjustment** function has new parameters for landscape rotation. For more information, see [**MxdcXDCGetPDEVAdjustment**](/windows-hardware/drivers/ddi/mxdc/nf-mxdc-mxdcgetpdevadjustment).
-
- 
-
- 
-
+For Windows 7, the **MxdcGetPDEVAdjustment** function has new parameters for landscape rotation. For more information, see [**MxdcXDCGetPDEVAdjustment**](/windows-hardware/drivers/ddi/mxdc/nf-mxdc-mxdcgetpdevadjustment).

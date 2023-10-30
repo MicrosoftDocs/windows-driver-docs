@@ -4,17 +4,18 @@ description: Package-Aware Print Drivers that Share Files
 keywords:
 - package-aware print drivers WDK
 - core drivers WDK printer
-ms.date: 04/20/2017
+ms.date: 07/18/2023
 ---
 
 # Package-Aware Print Drivers that Share Files
 
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 When more than one print driver package shares driver files, the shared files must be isolated into a core driver. For example, Unidrv is a collection of files that many print drivers use, so Unidrv is a core driver.
 
 Unidrv print drivers use the Needs and Include INF-file directives, as shown in the following section of an INF file for Windows XP:
 
-```cpp
+```inf
 [UniDrvInstall]
 CopyFiles=@OEMRES.DLL,@OEMABC.GPD
 DataFile=OEMABC.GPD
@@ -25,7 +26,7 @@ Needs=UNIDRV.OEM,TTFSUB.OEM
 
 In Windows Vista, package-aware drivers should use the new **CoreDriverSections** keyword when referring to Unidrv files, as shown in the following section of an INF file for Windows Vista:
 
-```cpp
+```inf
 [UniDrvInstall_Vista]
 CopyFiles=@OEMRES.DLL,@OEMABC.GPD
 DataFile=OEMABC.GPD
@@ -37,46 +38,17 @@ As of Windows Vista, do not include Ntprint.inf because Unidrv is packaged as a 
 
 Core print package files are listed in the following table.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Core File</th>
-<th>GUID</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>UNIDRV</p></td>
-<td><p>{D20EA372-DD35-4950-9ED8-A6335AFE79F0}</p></td>
-</tr>
-<tr class="even">
-<td><p>PSCRIPT</p></td>
-<td><p>{D20EA372-DD35-4950-9ED8-A6335AFE79F1}</p></td>
-</tr>
-<tr class="odd">
-<td><p>PCLXL</p></td>
-<td><p>{D20EA372-DD35-4950-9ED8-A6335AFE79F2}</p></td>
-</tr>
-<tr class="even">
-<td><p>PLOTTER</p></td>
-<td><p>{D20EA372-DD35-4950-9ED8-A6335AFE79F4}</p></td>
-</tr>
-<tr class="odd">
-<td><p>XPSDRV</p></td>
-<td><p>{D20EA372-DD35-4950-9ED8-A6335AFE79F5}</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Core File | GUID |
+|--|--|
+| UNIDRV | {D20EA372-DD35-4950-9ED8-A6335AFE79F0} |
+| PSCRIPT | {D20EA372-DD35-4950-9ED8-A6335AFE79F1} |
+| PCLXL | {D20EA372-DD35-4950-9ED8-A6335AFE79F2} |
+| PLOTTER | {D20EA372-DD35-4950-9ED8-A6335AFE79F4} |
+| XPSDRV | {D20EA372-DD35-4950-9ED8-A6335AFE79F5} |
 
 More than one core driver section can be referenced; for example:
 
-```cpp
+```inf
 CoreDriverSections="{GUID1}, SectionName1, SectionName2", "{GUID2}, SectionName3"
 ```
 
@@ -89,11 +61,3 @@ This section includes the following topics:
 [Using Core Drivers](using-core-drivers.md)
 
 [Core Driver Sample](core-driver-sample.md)
-
- 
-
- 
-
-
-
-

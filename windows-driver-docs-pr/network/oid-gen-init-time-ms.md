@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_INIT_TIME_MS
+ms.topic: reference
 description: As a query, the OID_GEN_INIT_TIME_MS OID returns the time in milliseconds that a driver required to initialize.
 ms.date: 08/08/2017
 keywords: 

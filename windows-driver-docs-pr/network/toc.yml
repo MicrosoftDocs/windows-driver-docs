@@ -1498,6 +1498,8 @@
         items: 
         - name: "Version Section in a Network INF File"
           href: version-section-in-a-network-inf-file.md
+        - name: "Manufacturer Section in a Network INF File"
+          href: manufacturer-section-in-a-network-inf-file.md          
         - name: "Models Section in a Network INF File"
           href: models-section-in-a-network-inf-file.md
         - name: "DDInstall Section in a Network INF File"
@@ -1852,6 +1854,8 @@
       href: overview-of-network-virtualization-using-generic-routing-encapsulation--nvgre--task-offload.md
     - name: "Supporting NVGRE in Large Send Offload (LSO)"
       href: supporting-nvgre-in-large-send-offload--lso-.md
+    - name: "Supporting NVGRE in UDP Segmentation Offload (USO)"
+      href: nvgre-support-with-udp-segmentation-offload.md
     - name: "Supporting NVGRE in Checksum Offload"
       href: supporting-nvgre-in-checksum-offload.md
     - name: "Supporting NVGRE in RSS and VMQ Receive Task Offloads"
@@ -2922,8 +2926,6 @@
         href: mb-tat-filters.md
       - name: "netsh mbn test installation"
         href: mb-netsh-mbn-test.md
-  - name: "WLAN Universal Windows driver model"
-    href: wifi-universal-driver-model.md
   - name: "WLAN network preference and roaming"
     items: 
     - name: "WLAN feature information"
@@ -5298,8 +5300,6 @@
       href: oid-gen-supported-guids.md
     - name: "OID_GEN_SUPPORTED_LIST"
       href: oid-gen-supported-list.md
-    - name: "OID_GEN_SUPPORTED_PACKET_FILTERS"
-      href: oid-gen-supported-packet-filters.md
     - name: "OID_GEN_TRANSMIT_BLOCK_SIZE"
       href: oid-gen-transmit-block-size.md
     - name: "OID_GEN_TRANSMIT_BUFFER_SPACE"

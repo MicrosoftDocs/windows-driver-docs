@@ -4,6 +4,7 @@ description: SRB\_PAGING\_OUT\_DRIVER
 keywords: ["SRB_PAGING_OUT_DRIVER Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SRB_PAGING_OUT_DRIVER
 api_type:

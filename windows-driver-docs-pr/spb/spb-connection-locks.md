@@ -33,13 +33,13 @@ The following list describes the series of I/O requests that a client might send
 
 The preceding list might be appropriate for a simple device that implements a single device function.
 
-However, a more complex device might implement several device functions. This device might contain a function-address register that the client loads at the start of a data transfer. For this device, an [IOCTL_SPB_EXECUTE_SEQUENCE](./spb-ioctls.md#ioctl_spb_execute_sequence) request can combine the loading of the function-address register and the data transfer that follows into a single atomic bus operation. For more information, see the description of the example I<sup>2</sup>C device in [Atomic Bus Operations](./atomic-bus-operations.md).
+However, a more complex device might implement several device functions. This device might contain a function-address register that the client loads at the start of a data transfer. For this device, an [IOCTL_SPB_EXECUTE_SEQUENCE](./spb-ioctls.md#ioctl_spb_execute_sequence-control-code) request can combine the loading of the function-address register and the data transfer that follows into a single atomic bus operation. For more information, see the description of the example I<sup>2</sup>C device in [Atomic Bus Operations](./atomic-bus-operations.md).
 
 ## Comparison with controller locks
 
 A client uses a connection lock to obtain exclusive access to a target device, but the connection lock does not prevent data transfers to or from other devices on the bus.
 
-To perform a series of data transfers as an atomic bus operation, clients typically use an [IOCTL_SPB_EXECUTE_SEQUENCE](./spb-ioctls.md#ioctl_spb_execute_sequence) request. A less common way to perform an atomic bus operation is to use a controller lock. A client sends [IOCTL_SPB_LOCK_CONTROLLER](./spb-ioctls.md#ioctl_spb_lock_controller-control-code) and [IOCTL_SPB_UNLOCK_CONTROLLER](./spb-ioctls.md#ioctl_spb_unlock_controller-control-code) requests to a acquire and release a controller lock.
+To perform a series of data transfers as an atomic bus operation, clients typically use an [IOCTL_SPB_EXECUTE_SEQUENCE](./spb-ioctls.md#ioctl_spb_execute_sequence-control-code) request. A less common way to perform an atomic bus operation is to use a controller lock. A client sends [IOCTL_SPB_LOCK_CONTROLLER](./spb-ioctls.md#ioctl_spb_lock_controller-control-code) and [IOCTL_SPB_UNLOCK_CONTROLLER](./spb-ioctls.md#ioctl_spb_unlock_controller-control-code) requests to a acquire and release a controller lock.
 
 Controller locks are distinct from connection locks. A controller lock enables a sequence of I/O transfers to and from a target device on the bus to be performed as a single, atomic bus operation. While the controller lock is in effect, transfers to or from other devices on the bus are deferred until the controller lock is released. For more information, see [Atomic Bus Operations](./atomic-bus-operations.md).
 

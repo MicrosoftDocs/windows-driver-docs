@@ -4,6 +4,7 @@ description: The process options are a bit set that control how the debugger eng
 ms.date: 12/07/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DEBUG_PROCESS_DETACH_ON_EXIT
 - DEBUG_PROCESS_ONLY_THIS_PROCESS
@@ -63,7 +64,7 @@ The process options only apply to live user-mode debugging.
 ## <span id="see_also"></span>See also
 
 
-[**.childdbg**](./-childdbg--debug-child-processes-.md)
+[**.childdbg**](../debuggercmds/../debuggercmds/-childdbg--debug-child-processes-.md)
 
  
 

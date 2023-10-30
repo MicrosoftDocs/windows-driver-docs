@@ -1,22 +1,23 @@
 ---
 title: IPrinterBidiSchemaResponses AddBlob method
-description: The AddBlob method adds a new response of type BIDI\_BLOB to the collection.
+description: The AddBlob method adds a new response of type BIDI_BLOB to the collection.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 keywords: ["AddBlob method Print Devices", "AddBlob method Print Devices , IPrinterBidiSchemaResponses interface", "IPrinterBidiSchemaResponses interface Print Devices , AddBlob method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IPrinterBidiSchemaResponses.AddBlob
 api_type:
 - COM
-ms.date: 04/20/2017
+ms.date: 06/26/2023
 ---
 
 # IPrinterBidiSchemaResponses::AddBlob method
 
-The AddBlob method adds a new response of type BIDI\_BLOB to the collection.
+The AddBlob method adds a new response of type BIDI_BLOB to the collection.
 
 ## Syntax
 
@@ -41,22 +42,9 @@ This method returns an **HRESULT** value.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Target platform</p></td>
-<td>Desktop</td>
-</tr>
-<tr class="even">
-<td><p>Version</p></td>
-<td><p>Windows 8 and later</p></td>
-</tr>
-</tbody>
-</table>
+**Target platform:** Desktop
+
+**Version:** Windows 8 and later
 
 ## See also
 

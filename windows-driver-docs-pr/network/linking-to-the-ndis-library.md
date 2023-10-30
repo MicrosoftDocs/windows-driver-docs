@@ -6,7 +6,7 @@ keywords:
 - NDIS library WDK networking
 - linking NDIS library WDK networking
 - library WDK NDIS
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # Linking to the NDIS Library

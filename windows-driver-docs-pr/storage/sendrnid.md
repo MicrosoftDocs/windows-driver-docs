@@ -4,6 +4,7 @@ description: The SendRNID WMI method sends a request node identification data (R
 keywords: ["SendRNID function Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SendRNID
 api_location:

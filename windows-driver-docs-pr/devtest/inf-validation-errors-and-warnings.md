@@ -356,7 +356,7 @@ The following errors and warnings are related to Windows Driver requirements:
 
 ## Installation (2000-2999)
 
-Issues in the 2000-2999 range appear as warnings. Possible values include the following.
+Issues in the 2000-2999 range are issues that depend on the context, such as directives that do not work on certain product SKUs or versions, or a directive that is not allowed in the specified device class.
 
 <table>
 <thead>
@@ -369,6 +369,33 @@ Issues in the 2000-2999 range appear as warnings. Possible values include the fo
 <tr>
 <td><strong>2083: Section not referenced or used</strong></td>
 <td>This warning indicates that the INF file provides a section that is not referenced. When the driver is installed, the contents of the section referenced in the warning are not evaluated.</td>
+</tr>
+<tr>
+<td><strong>2084: Replaced legacy pattern in section</strong></td>
+<td><p>This warning indicates that the INF provides a legacy mechanism that will be automatically replaced with an up-to-date one during parse. When the driver is installed, the contents of the section will be replaced by the applicable Include/Needs directives.</p>
+<p> To address, use Include/Needs directives in the <a href="/windows-hardware/drivers/install/inf-ddinstall-section">DDInstall</a> section and for each possible DDInstall.* section to reference the corresponding Inbox INF DDInstall.* sections as shown below:</p>
+<pre>
+[DDInstall]
+Include=umpass.inf
+Needs=UmPass
+; also include any existing DDInstall directives
+
+[DDInstall.HW]
+Include=umpass.inf
+Needs=UmPass.HW
+; also include any existing DDInstall.HW directives
+
+[DDInstall.Interfaces]
+Include=umpass.inf
+Needs=UmPass.Interfaces
+; also include any existing DDInstall.Interfaces directives
+
+[DDInstall.Services]
+Include=umpass.inf
+Needs=UmPass.Services
+; also include any existing any DDInstall.Services directives
+</pre>
+</td>
 </tr>
 <tr>
 <td><strong>2222: Legacy directive will be ignored.</strong></td>

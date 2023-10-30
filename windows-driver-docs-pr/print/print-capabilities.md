@@ -6,10 +6,12 @@ keywords:
 - XML PrintCapabilities WDK print
 - PrintCapabilities document WDK print
 - IPrintTicketProvider
-ms.date: 09/07/2022
+ms.date: 01/30/2023
 ---
 
 # Print capabilities
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 By using print capabilities technology, a print driver can return its capabilities as a set of elements in an XML document. Earlier versions of print drivers returned their capabilities information when the application called the **DeviceCapabilities** or **GetDeviceCaps** functions. These Microsoft Win32 functions, however, are limited because they return only information about a fixed set of printer features and settings and can return information about only one feature or setting for each function call.
 

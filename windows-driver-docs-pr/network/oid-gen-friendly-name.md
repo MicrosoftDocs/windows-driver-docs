@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_FRIENDLY_NAME
+ms.topic: reference
 description: As a query, the OID_GEN_FRIENDLY_NAME OID returns the friendly name of a miniport adapter.
 ms.date: 08/08/2017
 keywords: 

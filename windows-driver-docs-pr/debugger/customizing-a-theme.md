@@ -49,8 +49,6 @@ Place and position the placeholder\*.c files into the dock.
 
 Tab-dock every window type above the wanted placeholder window.
 
-For further information about adjusting window position in WinDbg, see [Positioning the Windows](positioning-the-windows.md).
-
  
 
  

@@ -1,20 +1,20 @@
 ---
 title: Microsoft Bluetooth Test Platform - Bluefruit Feather
 description: Bluetooth Test Platform (BTP) supported hardware (Bluefruit Feather).
-ms.date: 06/09/2021
+ms.date: 09/29/2023
 ---
 
 # Bluefruit Feather (nRF52840)
 
 ## Overview
 
-The nRF52840 is a Low Energy (LE) radio from Nordic Semiconductor capable of behaving as a HID peripheral, like a keyboard or mouse, among other things. More information can be found at [Adafruit](https://www.adafruit.com/product/4062) and through the [Nordic Semiconductor](https://www.nordicsemi.com/Products/Low-power-short-range-wireless/nRF52840) nRF52840 reference.
+The nRF52840 is a Low Energy (LE) radio from Nordic Semiconductor capable of behaving as a HID peripheral, like a keyboard or mouse, among other things. More information can be found at [Adafruit](https://www.adafruit.com/product/4062) and through the [Nordic Semiconductor](https://www.nordicsemi.com/Products/nRF52840) nRF52840 reference.
 
 | Device Name | Parameter | Usage Example |
 | --- | --- | --- |
 | Bluefruit Feather | bluefruit52 | RunPairingTests.bat bluefruit52 |
 
-:::image type="content" source="images/BluefruitFeather.png" alt-text="Photo of the Bluefruit Feather device.":::
+:::image type="content" source="images/BluefruitFeather.png" alt-text="Photo of the Bluefruit Feather nRF52840 device.":::
 
 ## Supported tests
 

@@ -5,6 +5,7 @@ description: "Learn more about: ZwRegistryOpen rule (wdm)"
 keywords: ["ZwRegistryOpen rule (wdm)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ZwRegistryOpen
 api_type:

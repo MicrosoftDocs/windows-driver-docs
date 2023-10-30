@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xA0 INTERNAL_POWER_ERROR", "INTERNAL_POWER_ERROR"]
 ms.date: 12/09/2020
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INTERNAL_POWER_ERROR
 api_type:
@@ -16,7 +17,7 @@ api_type:
 The INTERNAL\_POWER\_ERROR bug check has a value of 0x000000A0. This bug check indicates that the power policy manager experienced a fatal error.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 ## INTERNAL\_POWER\_ERROR Parameters
 
@@ -797,7 +798,7 @@ In the preceding table, several of the parameters are pointers to structures. Fo
 -   IO\_STACK\_LOCATION
 -   PEP\_DEVICE\_REGISTER
 
-Some of the structures that appear in the preceding table are not defined in any public header file. You can see the definitions of those structures by using the [**dt**](dt--display-type-.md) debugger command. The following example shows how to use the **dt** command to see the **DEVICE\_OBJECT\_POWER\_EXTENSION** structure.
+Some of the structures that appear in the preceding table are not defined in any public header file. You can see the definitions of those structures by using the [**dt**](../debuggercmds/dt--display-type-.md) debugger command. The following example shows how to use the **dt** command to see the **DEVICE\_OBJECT\_POWER\_EXTENSION** structure.
 
 ```dbgcmd
 3: kd> dt nt!DEVICE_OBJECT_POWER_EXTENSION
@@ -829,7 +830,7 @@ The following procedures will help you debug certain instances of this bug check
 
     If the caller is **PopExceptionFilter**, the first argument to this function is of type PEXCEPTION\_POINTERS. Note the value of this argument.
 
-2.  Use the [**dt (Display Type)**](dt--display-type-.md) command and specify the value that you found in the previous step as *argument*.
+2.  Use the [**dt (Display Type)**](../debuggercmds/dt--display-type-.md) command and specify the value that you found in the previous step as *argument*.
 
     ```dbgcmd
     dt nt!_EXCEPTION_POINTERS argument 
@@ -837,7 +838,7 @@ The following procedures will help you debug certain instances of this bug check
 
     This command displays the structure. Note the address of the context record.
 
-3.  Use the [**.cxr (Display Context Record)**](-cxr--display-context-record-.md) command and specify the context record that you found in the previous step as *record*.
+3.  Use the [**.cxr (Display Context Record)**](../debuggercmds/-cxr--display-context-record-.md) command and specify the context record that you found in the previous step as *record*.
 
     ```dbgcmd
     .cxr record 
@@ -845,14 +846,14 @@ The following procedures will help you debug certain instances of this bug check
 
     This command sets the register context to the proper value.
 
-4.  Use a variety of commands to analyze the source of the error. Start with [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) .
+4.  Use a variety of commands to analyze the source of the error. Start with [**kb (Display Stack Backtrace)**](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) .
 
 <span id="parameter-1-equals-0x7"></span><span id="PARAMETER-1-EQUALS-0X7"></span>
 **Debugging bug check 0xA0 when Parameter 1 equals 0x7**
 
 1.  Examine the stack. Look for the **ntoskrnl!PopExceptionFilter** function. The first argument to this function is of type PEXCEPTION\_POINTERS. Note the value of this argument.
 
-2.  Use the [**dt (Display Type)**](dt--display-type-.md) command and specify the value that you found in the previous step as *argument*.
+2.  Use the [**dt (Display Type)**](../debuggercmds/dt--display-type-.md) command and specify the value that you found in the previous step as *argument*.
 
     ```dbgcmd
     dt nt!_EXCEPTION_POINTERS argument 
@@ -860,7 +861,7 @@ The following procedures will help you debug certain instances of this bug check
 
     This command displays the structure. Note the address of the context record.
 
-3.  Use the [**.cxr (Display Context Record)**](-cxr--display-context-record-.md) command and specify the context record that you found in the previous step as *record*.
+3.  Use the [**.cxr (Display Context Record)**](../debuggercmds/-cxr--display-context-record-.md) command and specify the context record that you found in the previous step as *record*.
 
     ```dbgcmd
     .cxr record 
@@ -868,12 +869,12 @@ The following procedures will help you debug certain instances of this bug check
 
     This command sets the register context to the proper value.
 
-4.  Use a variety of commands to analyze the source of the error. Start with [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) .
+4.  Use a variety of commands to analyze the source of the error. Start with [**kb (Display Stack Backtrace)**](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) .
 
 <span id="parameter-1-equals-0x101"></span><span id="PARAMETER-1-EQUALS-0X101"></span>
 **Debugging bug check 0xA0 when Parameter 1 equals 0x101**
 
-1.  Use the [**dt (Display Type)**](dt--display-type-.md) command and specify the value of Parameter 3 as *argument*.
+1.  Use the [**dt (Display Type)**](../debuggercmds/dt--display-type-.md) command and specify the value of Parameter 3 as *argument*.
 
     ```dbgcmd
     dt nt!_EXCEPTION_POINTERS argument 
@@ -881,7 +882,7 @@ The following procedures will help you debug certain instances of this bug check
 
     This command displays the structure. Note the address of the context record.
 
-2.  Use the [**.cxr (Display Context Record)**](-cxr--display-context-record-.md) command and specify the context record that you found the previous step as *record*.
+2.  Use the [**.cxr (Display Context Record)**](../debuggercmds/-cxr--display-context-record-.md) command and specify the context record that you found the previous step as *record*.
 
     ```dbgcmd
     .cxr record 
@@ -889,7 +890,7 @@ The following procedures will help you debug certain instances of this bug check
 
     This command sets the register context to the proper value.
 
-3.  Use a variety of commands to analyze the source of the error. Start with [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) .
+3.  Use a variety of commands to analyze the source of the error. Start with [**kb (Display Stack Backtrace)**](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) .
 
  ## See Also
 

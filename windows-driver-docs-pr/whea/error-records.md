@@ -9,7 +9,7 @@ keywords:
 - error record format WDK WHEA
 - error record header WDK WHEA
 - error record section WDK WHEA
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Error Records
@@ -43,7 +43,7 @@ This error record section contains processor error data that is specific to the 
 ![Processor error data.](images/wheaxpfsection.gif)
 
 <a href="" id="itanium-processor-error"></a>Itanium Processor Error  
-This error record section contains processor error data that is specific to the Itanium processor architecture. For more information about the format of the error data that is contained in this error record section, see the [Intel Itanium Processor Family System Abstraction Layer Specification](https://go.microsoft.com/fwlink/p/?linkid=72212).
+This error record section contains processor error data that is specific to the Itanium processor architecture. For more information about the format of the error data that is contained in this error record section, see the Intel <I>Itanium Processor Family System Abstraction Layer Specification</I>.
 
 <a href="" id="itanium-processor-firmware-error-record-reference"></a>Itanium Processor Firmware Error Record Reference  
 This error record section contains a reference to a firmware error record that is specific to the Itanium processor architecture. This error record section is described by a [**WHEA\_FIRMWARE\_ERROR\_RECORD\_REFERENCE**](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_whea_firmware_error_record_reference) structure.
@@ -66,6 +66,3 @@ This error record section contains PCI/PCI-X device error data. The data that is
 For additional hardware error data that does not fit into one of the section types in the previous list, a platform-specific error record section can be defined to contain the data. For each type of platform-specific error record section that is defined, a corresponding GUID that identifies the type of the error record section must be defined. This GUID is specified in the **SectionType** member of any [**WHEA\_ERROR\_RECORD\_SECTION\_DESCRIPTOR**](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_whea_error_record_section_descriptor) structure that describes that type of error record section.
 
 If there is additional hardware error data that does not fit into one of the section types in the previous list or into a defined platform-specific error record section, a generic error record section is used to contain the data.
-
- 
-

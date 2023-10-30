@@ -5,6 +5,7 @@ keywords: TList Commands, Windows debugging
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - TList Commands
 api_type:

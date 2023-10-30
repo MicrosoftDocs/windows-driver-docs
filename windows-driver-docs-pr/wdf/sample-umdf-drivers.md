@@ -1,7 +1,7 @@
 ---
 title: Sample UMDF Drivers
 description: This topic lists available User-Mode Driver Framework (UMDF) sample drivers that you can download from the Windows driver samples repository on GitHub.
-ms.date: 04/20/2017
+ms.date: 01/17/2023
 ---
 
 # Sample UMDF Drivers
@@ -22,14 +22,14 @@ Earlier versions of driver samples are archived at [Windows 8.1 driver samples]
 -   [GPIO Sample Drivers](https://github.com/Microsoft/Windows-driver-samples/tree/main/gpio/samples)
 -   The HID client sample driver (Fx2Hid) sample was removed in Windows 8.1. If you are writing a Universal Windows app that communicates with a HID device, you'll use the Windows.Devices.Custom namespace to access the device's HID collections directly. For more information, see the [Custom driver access](/samples/browse/) sample app and the [HidUsbFx2](https://github.com/Microsoft/Windows-driver-samples/tree/main/hid/hidusbfx2) sample driver. If you are writing a Win32 application that accesses a HID collection, refer to the [HClient sample application](https://github.com/Microsoft/Windows-driver-samples/tree/main/hid/hclient).
 -   [Near-Field Proximity Sample Driver](https://github.com/Microsoft/Windows-driver-samples/tree/main/nfp/net)
--   [Sample UMDF Filter Driver above KMDF Function Driver for OSR USB-FX2](https://github.com/Microsoft/Windows-driver-samples/tree/main/usb/umdf_filter_kmdf)
--   [Sample UMDF Function Driver for OSR USB-FX2](https://github.com/Microsoft/Windows-driver-samples/tree/main/usb/umdf_fx2)
+-   [Sample UMDF Filter Driver above KMDF Function Driver for OSR USB-FX2](user-mode-driver-framework-design-guide.md)
+-   [Sample UMDF Function Driver for OSR USB-FX2](user-mode-driver-framework-design-guide.md)
 -   [SkeletonI2C Sample Driver](https://github.com/Microsoft/Windows-driver-samples/tree/main/spb/SkeletonI2C)
 -   [Toaster](https://github.com/Microsoft/Windows-driver-samples/tree/main/general/toaster/toastDrv)
--   [UMDF Driver Skeleton Sample](https://github.com/Microsoft/Windows-driver-samples/tree/main/general/umdfSkeleton)
--   [UMDF Echo Sample](https://github.com/Microsoft/Windows-driver-samples/tree/main/general/echo/umdf)
--   [UMDF SocketEcho Sample](https://github.com/Microsoft/Windows-driver-samples/tree/main/general/echo/umdfSocketEcho)
--   [Virtual serial driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/main/serial/VirtualSerial)
+-   [UMDF Driver Skeleton Sample](user-mode-driver-framework-design-guide.md)
+-   [UMDF Echo Sample](user-mode-driver-framework-design-guide.md)
+-   [UMDF SocketEcho Sample](user-mode-driver-framework-design-guide.md)
+-   [Virtual serial driver sample](user-mode-driver-framework-design-guide.md)
 -   [Windows Biometric Driver Samples](https://github.com/Microsoft/Windows-driver-samples/tree/main/biometrics)
 -   [WPD basic-hardware sample driver](https://github.com/Microsoft/Windows-driver-samples/tree/main/wpd/WpdBasicHardwareDriver)
 -   [WPD multi-transport sample driver](https://github.com/Microsoft/Windows-driver-samples/tree/main/wpd/WpdMultiTransportDriver)

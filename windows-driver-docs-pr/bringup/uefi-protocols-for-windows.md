@@ -1,12 +1,12 @@
 ---
 title: UEFI protocols for Windows
-description: This section describes UEFI protocols that are defined by Windows. These protocols expand up on the protocols defined by the UEFI specification, and they are used by Windows to accomplish specific functions during the boot process.
-ms.date: 08/20/2021
+description: This section describes UEFI protocols that are defined by Windows.
+ms.date: 03/23/2023
 ---
 
 # UEFI protocols for Windows
 
-> [!NOTE]
+> [!IMPORTANT]
 > Some information in this section may apply only to Windows 10 Mobile and certain processor architectures.
 
 This section describes UEFI protocols that are defined by Windows. These protocols expand up on the protocols defined by the UEFI specification, and they are used by Windows to accomplish specific functions during the boot process.

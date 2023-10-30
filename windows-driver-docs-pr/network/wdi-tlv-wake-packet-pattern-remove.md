@@ -1,7 +1,8 @@
 ---
 title: WDI_TLV_WAKE_PACKET_PATTERN_REMOVE
+ms.topic: reference
 description: WDI_TLV_WAKE_PACKET_PATTERN_REMOVE is a TLV that contains the wake packet pattern ID to be removed with OID_WDI_SET_REMOVE_WOL_PATTERN.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - WDI_TLV_WAKE_PACKET_PATTERN_REMOVE Network Drivers Starting with Windows Vista
 ---

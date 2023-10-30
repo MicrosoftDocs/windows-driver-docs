@@ -4,6 +4,7 @@ description: The KSPROPERTY_MEDIASEEKING_STOPPOSITION property retrieves the sto
 keywords: ["KSPROPERTY_MEDIASEEKING_STOPPOSITION Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_MEDIASEEKING_STOPPOSITION
 api_location:

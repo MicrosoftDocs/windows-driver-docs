@@ -4,6 +4,7 @@ description: Learn about the DXGKARG\_SYSTEM\_DISPLAY\_ENABLE\_FLAGS structure, 
 keywords: ["DXGKARG_SYSTEM_DISPLAY_ENABLE_FLAGS structure Display Devices", "PDXGKARG_SYSTEM_DISPLAY_ENABLE_FLAGS structure pointer Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DXGKARG_SYSTEM_DISPLAY_ENABLE_FLAGS
 api_location:

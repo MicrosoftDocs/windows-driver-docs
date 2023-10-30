@@ -5,6 +5,7 @@ keywords:
 - DevCon Rescan Driver Development Tools
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DevCon Rescan
 api_type:

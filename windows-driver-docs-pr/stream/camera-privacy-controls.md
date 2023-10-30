@@ -38,7 +38,7 @@ We recommend all designs turn the regular in-use indicator LED ON when the IR **
 
 ### Always-on AI experiences (for example camera-based human presence)
 
-For devices supporting always-on Camera-based AI features, where the AI silicon shares the main camera sensor, LED requirements differ when the dedicated presence silicon is exclusively accessing the camera. See the [Human Presence Whitepaper](https://partner.microsoft.com/dashboard/collaborate/packages/10214) on Microsoft Partner Center for details.
+For devices supporting always-on Camera-based AI features, where the AI silicon shares the main camera sensor, LED requirements differ when the dedicated presence silicon is exclusively accessing the camera. See the [Presence Sensing Whitepaper](https://partner.microsoft.com/dashboard/collaborate/packages/10214) on Microsoft Partner Center for details.
 
 ## Hardware privacy controls
 
@@ -106,12 +106,12 @@ As described in [Shutters with multiple cameras on a panel](#shutters-with-multi
 
 ![dual sensor design](images/camera-privacy-controls-6.png)
 
-When the shutter is closed, it must cover both sensors:
+When the shutter is closed, it must cover the RGB sensor, it is optional to cover the IR sensor:
 
 ![when shutter closed must cover both sensors](images/camera-privacy-controls-7.png)
 
 > [!NOTE]
-> We currently support an exemption for cameras whose mechanical shutter designs do not cover the IR camera. When a physical shutter is occluding the RGB camera, it is acceptable for the ISP firmware to discard image output from the IR camera and replace it with a synthesized black image. A future HLK update will require physical shutters to physically occlude the RGB and IR camera, to ensure robustness of the solution and stronger protection of customer privacy.
+> We currently support an exemption for cameras whose mechanical shutter designs do not cover the IR camera. When a physical shutter is occluding the RGB camera, it is acceptable for the ISP firmware to discard image output from the IR camera and replace it with a synthesized black image. However, if the IR sensor is used for Presence Sensing it is recommended to not cover the IR sensor and ensure the Presence sensor is functional. See the [Presence Sensing Whitepaper](https://partner.microsoft.com/dashboard/collaborate/packages/10214) on Microsoft Partner Center for details. A future HLK update will adopt this exception and only require physical shutters to physically occlude the RGB, to ensure robustness of the solution and stronger protection of customer privacy.
 
 ### Camera behavior considerations
 

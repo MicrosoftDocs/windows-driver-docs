@@ -9,7 +9,7 @@ keywords:
 - notifications WDK networking
 - notifications WDK PnP , NDIS ports
 - events WDK networkin
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # NDIS Ports PnP Event Notifications

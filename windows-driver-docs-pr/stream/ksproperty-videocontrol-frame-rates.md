@@ -4,6 +4,7 @@ description: The KSPROPERTY\_VIDEOCONTROL\_FRAME\_RATES property enumerates the 
 keywords: ["KSPROPERTY_VIDEOCONTROL_FRAME_RATES Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_VIDEOCONTROL_FRAME_RATES
 api_location:

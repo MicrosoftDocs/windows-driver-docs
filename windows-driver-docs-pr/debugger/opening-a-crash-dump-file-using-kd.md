@@ -19,7 +19,7 @@ The **-v** option (verbose mode) is also useful. For more information about the 
 ## <span id="KD_Command_Line"></span><span id="kd_command_line"></span><span id="KD_COMMAND_LINE"></span>KD Command Line
 
 
-You can also open a dump file after the debugger is running by entering the [**.opendump (Open Dump File)**](-opendump--open-dump-file-.md) command, followed by [**g (Go)**](g--go-.md).
+You can also open a dump file after the debugger is running by entering the [**.opendump (Open Dump File)**](../debuggercmds/-opendump--open-dump-file-.md) command, followed by [**g (Go)**](../debuggercmds/g--go-.md).
 
  
 

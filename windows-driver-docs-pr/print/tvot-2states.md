@@ -4,16 +4,19 @@ description: The TVOT_2STATES option type consists of two radio buttons inside a
 keywords: ["TVOT_2STATES Print Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - TVOT_2STATES
 api_location:
 - compstui.h
 api_type:
 - HeaderDef
-ms.date: 09/02/2021
+ms.date: 01/30/2023
 ---
 
 # TVOT_2STATES
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The TVOT_2STATES option type consists of two radio buttons inside a group box.
 

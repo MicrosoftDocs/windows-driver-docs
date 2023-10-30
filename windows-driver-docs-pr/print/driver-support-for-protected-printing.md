@@ -1,10 +1,12 @@
 ---
 title: Driver Support for Protected Printing
 description: Windows 8.1 includes support for protected printing, which allows users to specify a personal identification number (PIN) that is then used at the printer, prior to the job being printed out.
-ms.date: 04/20/2017
+ms.date: 06/22/2023
 ---
 
 # Driver Support for Protected Printing
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 Windows 8.1 includes support for protected printing, which allows users to specify a personal identification number (PIN) that is then used at the printer, prior to the job being printed out.
 
@@ -35,8 +37,7 @@ If you're working with a v4 driver, you have to make changes to the generic prin
 - Printer extensions
 - UWP device apps
 
-> [!NOTE]
-> You can use a v3 driver with the Print Schema keywords for protected printing, as long as you make the required changes in your PTProvider code. But the steps for making those changes are outside the scope of this topic.
+ou can use a v3 driver with the Print Schema keywords for protected printing, as long as you make the required changes in your PTProvider code. But the steps for making those changes are outside the scope of this topic.
 
 The following sections give you more information about how to implement changes that will allow your v4 driver to support protected printing.
 
@@ -48,85 +49,19 @@ You indicate support for protected printing in the DataFile for your v4 print dr
 
 If your driver uses a GPD file, add the following new keywords using this syntax:
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Keyword</th>
-<th>Description</th>
-<th>Level</th>
-<th>Allowed value</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong><em>JobPasscodeMinLength</strong></td>
-<td><p>Minimum length of the supported PIN numeric string.</p>
-<p>This value must be at least 4 and no greater than 15.</p></td>
-<td>Root</td>
-<td>Any <a href="numeric-values.md" data-raw-source="[GPD numeric value](numeric-values.md)">GPD numeric value</a></td>
-<td></em>JobPasscodeMinLength: 4</td>
-</tr>
-<tr class="even">
-<td><strong><em>JobPasscodeMaxLength</strong></td>
-<td><p>Maximum length of the supported PIN numeric string.</p>
-<p>This value must be at least 4 and no greater than 15. It must be greater than or equal to the <strong></em>JobPasscodeMinLength</strong> value.</p></td>
-<td>Root</td>
-<td>Any <a href="numeric-values.md" data-raw-source="[GPD numeric value](numeric-values.md)">GPD numeric value</a></td>
-<td>*JobPasscodeMaxLength: 9</td>
-</tr>
-</tbody>
-</table>
+| Keyword | Description | Level | Allowed value | Example |
+|--|--|--|--|--|
+| **\*JobPasscodeMinLength** | Minimum length of the supported PIN numeric string.<br><br>This value must be at least 4 and no greater than 15. | Root | Any [GPD numeric value](numeric-values.md) | \*JobPasscodeMinLength: 4 |
+| **\*JobPasscodeMaxLength** | Maximum length of the supported PIN numeric string.<br><br>This value must be at least 4 and no greater than 15. It must be greater than or equal to the **\*JobPasscodeMinLength** value. | Root | Any [GPD numeric value](numeric-values.md) | \*JobPasscodeMaxLength: 9 |
 
 ## What to add to a PPD file
 
 If your driver uses a PPD file, add the following new keywords using this syntax:
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Keyword</th>
-<th>Description</th>
-<th>Level</th>
-<th>Allowed value</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong><em>MSJobPasscodeMinLength</strong></td>
-<td><p>Minimum length of the supported PIN numeric string.</p>
-<p>This value must be at least 4 and no greater than 15.</p></td>
-<td>Root</td>
-<td><p>"int" (QuotedValue)</p>
-<p>In other words, the integer value must be expressed in quotation marks.</p></td>
-<td></em>MSJobPasscodeMinLength: "4"</td>
-</tr>
-<tr class="even">
-<td><strong><em>MSJobPasscodeMaxLength</strong></td>
-<td><p>Maximum length of the supported PIN numeric string.</p>
-<p>This value must be at least 4 and no greater than 15. It must be greater than or equal to the <b>MSJobPasscodeMinLength</b> value.</p></td>
-<td>Root</td>
-<td><p>"int" (QuotedValue)</p>
-<p>In other words, the integer value must be expressed in quotation marks.</p></td>
-<td>*MSJobPasscodeMaxLength: "9"</td>
-</tr>
-</tbody>
-</table>
+| Keyword | Description | Level | Allowed value | Example |
+|--|--|--|--|--|
+| **MSJobPasscodeMinLength** | Minimum length of the supported PIN numeric string.<br><br>This value must be at least 4 and no greater than 15. | Root | "int" (QuotedValue)<br><br>In other words, the integer value must be expressed in quotation marks. | \*MSJobPasscodeMinLength: "4" |
+| **MSJobPasscodeMaxLength** | Maximum length of the supported PIN numeric string.<br><br>This value must be at least 4 and no greater than 15. It must be greater than or equal to the **\*MSJobPasscodeMinLength** value. | Root | "int" (QuotedValue)<br><br>In other words, the integer value must be expressed in quotation marks. | \*MSJobPasscodeMaxLength: "9" |
 
 ### Specifying hardware constraints
 
@@ -229,8 +164,7 @@ Here is an example of a GPD file specifying JobPasscode with an Installable Hard
 }
 ```
 
-> [!NOTE]
-> You must use the \*ConcealFromUI keyword and set it to TRUE to prevent the protected printing option from being shown unintentionally. See the preceding GPD file example.
+You must use the \*ConcealFromUI keyword and set it to TRUE to prevent the protected printing option from being shown unintentionally. See the preceding GPD file example.
 
 Here's an example of a PPD file specifying JobPasscode with an Installable Hardware Constraint.
 
@@ -263,8 +197,7 @@ Here's an example of a PPD file specifying JobPasscode with an Installable Hardw
 
 As you can see in the preceding PPD file example, the \*UIConstraints keyword indicates the hardware constraint.
 
-> [!NOTE]
-> The Windows operating system automatically displays locale-specific strings for the protected printing feature and its associated options. You can't specify a new localized name for this feature or its options.
+The Windows operating system automatically displays locale-specific strings for the protected printing feature and its associated options. You can't specify a new localized name for this feature or its options.
 
 ### XPS rendering filters
 

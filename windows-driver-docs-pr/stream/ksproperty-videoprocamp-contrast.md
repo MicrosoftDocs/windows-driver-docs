@@ -4,6 +4,7 @@ description: The KSPROPERTY\_VIDEOPROCAMP\_CONTRAST property controls a camera's
 keywords: ["KSPROPERTY_VIDEOPROCAMP_CONTRAST Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_VIDEOPROCAMP_CONTRAST
 api_location:

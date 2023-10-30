@@ -1,11 +1,10 @@
 ---
 title: Using Inf2Cat to Create a Catalog File
 description: Using Inf2Cat to Create a Catalog File
-ms.date: 04/20/2017
+ms.date: 05/08/2023
 ---
 
 # Using Inf2Cat to Create a Catalog File
-
 
 The Inf2Cat tool can be used to create catalog files for any [driver package](driver-packages.md) that has an INF file. For more information about Inf2Cat and its command-line arguments, see [**Inf2Cat**](../devtest/inf2cat.md).
 
@@ -13,7 +12,7 @@ This topic discusses how to create a [catalog file](catalog-files.md) from a dri
 
 The name of catalog file that [**Inf2Cat**](../devtest/inf2cat.md) produces is specified through the CatalogFile directive. One or more of these directives are declared within the [**INF Version section**](inf-version-section.md) of the INF file. The INF **Version** section of the *toastpkg.inf* file is shown below:
 
-```cpp
+```inf
 [Version]
 Signature="$WINDOWS NT$"
 Class=TOASTER
@@ -23,6 +22,7 @@ DriverVer=09/21/2006,6.0.5736.1
 CatalogFile.NTx86  = tostx86.cat
 CatalogFile.NTIA64 = tostia64.cat
 CatalogFile.NTAMD64 = tstamd64.cat
+PnpLockdown = 1
 ```
 
 Two things should be noted about this [**INF Version section**](inf-version-section.md):
@@ -58,6 +58,3 @@ Where:
   One or more Windows versions may be specified in the **/os:** option. For example, if **/os:**<em>Vista_x64, Vistax32</em> is specified, Inf2Cat will create the *tstamd64.cat* and *tstx86.cat* files because of the INF CatalogFile directives in the *toastpkg*.inf INF file.
 
 For more information about the tool's command-line arguments, see [**Inf2Cat**](../devtest/inf2cat.md).
-
- 
-

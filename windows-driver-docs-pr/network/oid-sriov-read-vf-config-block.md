@@ -1,5 +1,6 @@
 ---
 title: OID_SRIOV_READ_VF_CONFIG_BLOCK
+ms.topic: reference
 description: An overlying driver issues an object identifier (OID) method request of OID_SRIOV_READ_VF_CONFIG_BLOCK to read data from a specified PCI Express (PCIe) Virtual Function (VF) configuration block.
 ms.date: 08/08/2017
 keywords: 

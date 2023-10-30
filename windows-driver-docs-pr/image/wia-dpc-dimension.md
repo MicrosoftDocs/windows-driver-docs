@@ -4,6 +4,7 @@ description: The WIA_DPC_DIMENSION property is reserved by Microsoft for future 
 keywords: ["WIA_DPC_DIMENSION Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPC_DIMENSION
 api_location:

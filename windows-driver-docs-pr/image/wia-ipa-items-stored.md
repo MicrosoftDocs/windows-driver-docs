@@ -4,6 +4,7 @@ description: The WIA_IPA_ITEMS_STORED property specifies how many items are stor
 keywords: ["WIA_IPA_ITEMS_STORED Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPA_ITEMS_STORED
 api_location:

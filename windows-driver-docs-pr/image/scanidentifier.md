@@ -4,15 +4,15 @@ description: The required ScanIdentifier element contains a device-specific stri
 keywords: ["ScanIdentifier element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ScanIdentifier
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 05/02/2023
 ---
 
 # ScanIdentifier element
-
 
 The required **ScanIdentifier** element contains a device-specific string that the scanner provides through a [**ScanAvailableEvent**](scanavailableevent.md) event.
 
@@ -34,30 +34,14 @@ Required. Any valid character string.
 
 ## Child elements
 
-
 There are no child elements.
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="createscanjobrequest.md" data-raw-source="[&lt;strong&gt;CreateScanJobRequest&lt;/strong&gt;](createscanjobrequest.md)"><strong>CreateScanJobRequest</strong></a></p></td>
-</tr>
-<tr class="even">
-<td><p><a href="scanavailableevent.md" data-raw-source="[&lt;strong&gt;ScanAvailableEvent&lt;/strong&gt;](scanavailableevent.md)"><strong>ScanAvailableEvent</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**CreateScanJobRequest**](createscanjobrequest.md) |
+| [**ScanAvailableEvent**](scanavailableevent.md) |
 
 ## Remarks
 
@@ -67,17 +51,6 @@ The **ScanIdentifier** value must be unique for every [**ScanAvailableEvent**](s
 
 ## See also
 
-
 [**CreateScanJobRequest**](createscanjobrequest.md)
 
 [**ScanAvailableEvent**](scanavailableevent.md)
-
- 
-
- 
-
-
-
-
-
-

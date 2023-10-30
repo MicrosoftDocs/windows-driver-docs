@@ -4,6 +4,7 @@ description: The DriverEntry function provides the Microsoft DirectX graphics ke
 keywords: ["DriverEntry function Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DriverEntry
 api_location:

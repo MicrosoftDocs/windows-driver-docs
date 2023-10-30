@@ -7,6 +7,7 @@ MSHAttr:
 keywords: ["Value method Print Devices", "Value method Print Devices , IPrinterBidiSchemaElement interface", "IPrinterBidiSchemaElement interface Print Devices , Value method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IPrinterBidiSchemaElement.Value
 api_type:

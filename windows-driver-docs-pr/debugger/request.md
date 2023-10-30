@@ -4,6 +4,7 @@ description: The Request method performs a variety of different operations.
 keywords: ["Request method Windows Debugging", "Request method Windows Debugging , IDebugAdvanced2 interface", "IDebugAdvanced2 interface Windows Debugging , Request method", "Request method Windows Debugging , IDebugAdvanced3 interface", "IDebugAdvanced3 interface Windows Debugging , Request method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IDebugAdvanced2.Request
 - IDebugAdvanced3.Request

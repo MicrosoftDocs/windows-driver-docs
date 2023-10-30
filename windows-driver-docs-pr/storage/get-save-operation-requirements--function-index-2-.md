@@ -1,101 +1,27 @@
 ---
 title: Get Save Operation Requirements (Function Index 2)
 description: This function returns information about hardware requirements for a save operation.
-ms.date: 10/17/2018
+ms.date: 11/18/2022
 ---
 
 # Get Save Operation Requirements (Function Index 2)
 
+This [_DSM Interface for Byte Addressable Energy Backed Function Class (Function Interface 1)](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md) function returns information about hardware requirements for a save operation. This function shall succeed for all NVDIMM-Ns that support a host-managed Energy Source (ES) policy. It may return a failure status if the device supports device-managed ES policy and save operation requirements aren't available.
 
-This function returns information about hardware requirements for a save operation. This function shall succeed for all NVDIMM-Ns that support a host-managed Energy Source (ES) policy, but may return a failure status if the device supports device-managed ES policy and save operation requirements are not available.
+Registers are defined in the [Byte Addressable Energy Backed Interface specification](https://www.jedec.org/category/keywords/nvdimm-n).
 
-> [!NOTE]
-> All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
+## Input
 
- 
-
-## <span id="Input"></span><span id="input"></span><span id="INPUT"></span>Input
-
-
-### <span id="Arg3"></span><span id="arg3"></span><span id="ARG3"></span>Arg3
+### Arg3
 
 None.
 
-## <span id="Output"></span><span id="output"></span><span id="OUTPUT"></span>Output
+## Output
 
-
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Field</th>
-<th align="left">Byte Length</th>
-<th align="left">Byte Offset</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><strong>Status</strong></td>
-<td align="left">4</td>
-<td align="left">0</td>
-<td align="left"><p>This function can return the following Function-Specific Error Codes:</p>
-<p>1: The NVDIMM-N does not report save operation requirements.</p>
-<p>Go to <a href="-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md" data-raw-source="[_DSM Method Output](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md)">_DSM Method Output</a> for more information.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><strong>Average Power Requirement</strong></td>
-<td align="left">2</td>
-<td align="left">4</td>
-<td align="left"><p>The average power (in milliwatts) required for the save operation.</p>
-<p><em>Byte 0 – <em>CSAVE_POWER_REQ0</em> (0, 0x29)</p>
-<p></em>Byte 1 – <em>CSAVE_POWER_REQ1</em> (0, 0x2A)</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><strong>Idle Power Requirement</strong></td>
-<td align="left">2</td>
-<td align="left">6</td>
-<td align="left"><p>The average power (in milliwatts) the module requires after the save operation completes.</p>
-<p><em>Byte 0 – <em>CSAVE_IDLE_POWER_REQ0</em> (0, 0x2B)</p>
-<p></em>Byte 1 – <em>CSAVE_IDLE_POWER_REQ1</em> (0, 0x2C)</p></td>
-</tr>
-<tr class="even">
-<td align="left"><strong>Minimum Voltage Requirement</strong></td>
-<td align="left">2</td>
-<td align="left">8</td>
-<td align="left"><p>The minimum voltage (in millivolts) the ES has to service during a save operation</p>
-<p><em>Byte 0 – <em>CSAVE_MIN_VOLT_REQ0</em> (0, 0x2D)</p>
-<p></em>Byte 1 – <em>CSAVE_MIN_VOLT_REQ1</em> (0, 0x2E)</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><strong>Maximum Voltage Requirement</strong></td>
-<td align="left">2</td>
-<td align="left">10</td>
-<td align="left"><p>The maximum voltage (in millivolts) the ES has to service during a save operation</p>
-<p><em>Byte 0 – <em>CSAVE_MAX_VOLT_REQ0</em> (0, 0x2F)</p>
-<p></em>Byte 1 – <em>CSAVE_MAX_VOLT_REQ1</em> (0, 0x30)</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
-## <span id="related_topics"></span>Related topics
-
-
-[\_DSM Interface for Byte Addressable Energy Backed Function Class (Function Interface 1)](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md)
-
- 
-
- 
-
-
-
-
-
-
+| Field | Byte length | Byte offset | Register | Description |
+| ----- | ----------- | ----------- | -------- | ----------- |
+| **Status**                   | 4 | 0 |  This function can return the following Function-Specific Error Code: *The NVDIMM-N does not report save operation requirements.* For more information, see [_DSM Method Output](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md). |
+| **Average Power Requirement** | 2 | 4 | Byte 0: *CSAVE_POWER_REQ0* (0, 0x29); Byte 1: *CSAVE_POWER_REQ1* (0, 0x2A) | The average power (in milliwatts) required for the save operation. |
+| **Idle Power Requirement**    | 2 | 6 | Byte 0: *CSAVE_IDLE_POWER_REQ0* (0, 0x2B); Byte 1: *CSAVE_IDLE_POWER_REQ1* (0, 0x2C) | The average power (in milliwatts) the module requires after the save operation completes. |
+| **Minimum Voltage Requirement** | 2 | 8 | Byte 0: *CSAVE_MIN_VOLT_REQ0* (0, 0x2D); Byte 1: *CSAVE_MIN_VOLT_REQ1* (0, 0x2E) | The minimum voltage (in millivolts) the ES has to service during a save operation. |
+| **Maximum Voltage Requirement** | 2 | 10 | Byte 0: *CSAVE_MAX_VOLT_REQ0* (0, 0x2F); Byte 1: *CSAVE_MAX_VOLT_REQ1* (0, 0x30) | The maximum voltage (in millivolts) the ES has to service during a save operation. |

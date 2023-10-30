@@ -4,6 +4,7 @@ description: DEBUG\_REQUEST\_TARGET\_CAN\_DETACH
 keywords: ["DEBUG_REQUEST_TARGET_CAN_DETACH Windows Debugging"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DEBUG_REQUEST_TARGET_CAN_DETACH
 api_type:

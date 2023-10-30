@@ -1,7 +1,8 @@
 ---
 title: EFI_USBFN_IO_PROTOCOL.GetEndpointMaxPacketSize
 description: The GetEndpointMaxPacketSize function returns the maximum packet size of the specified endpoint type for the supplied bus speed.
-ms.date: 08/23/2021
+ms.date: 03/23/2023
+ms.topic: reference
 ---
 
 # EFI_USBFN_IO_PROTOCOL.GetEndpointMaxPacketSize

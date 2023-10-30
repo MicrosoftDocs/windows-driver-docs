@@ -4,16 +4,19 @@ description: The TVOT_SCROLLBAR option type consists of a scroll bar inside a gr
 keywords: ["TVOT_SCROLLBAR Print Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - TVOT_SCROLLBAR
 api_location:
 - compstui.h
 api_type:
 - HeaderDef
-ms.date: 09/16/2021
+ms.date: 01/30/2023
 ---
 
 # TVOT_SCROLLBAR
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The TVOT_SCROLLBAR option type consists of a scroll bar inside a group box.
 

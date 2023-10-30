@@ -4,6 +4,7 @@ description: The KSPROPERTY\_VPCONFIG\_DECIMATIONCAPABILITY property indicates i
 keywords: ["KSPROPERTY_VPCONFIG_DECIMATIONCAPABILITY Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_VPCONFIG_DECIMATIONCAPABILITY
 api_location:

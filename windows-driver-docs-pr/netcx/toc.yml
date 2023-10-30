@@ -76,6 +76,8 @@
   items:
   - name: "Introduction to the Wi-Fi WDF class extension (WiFiCx)"
     href: wifi-wdf-class-extension-wificx.md
+  - name: "Building a WiFiCx driver for multiple versions of Windows"
+    href: building-a-wificx-driver-for-multiple-versions-of-windows.md
   - name: "Writing a WiFiCx client driver"
     href: writing-a-wificx-client-driver.md
   - name: "WiFiCx message structure"

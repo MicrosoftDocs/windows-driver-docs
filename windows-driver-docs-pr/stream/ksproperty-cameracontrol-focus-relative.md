@@ -4,6 +4,7 @@ description: The KSPROPERTY_CAMERACONTROL_FOCUS_RELATIVE property specifies the 
 keywords: ["KSPROPERTY_CAMERACONTROL_FOCUS_RELATIVE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_FOCUS_RELATIVE
 api_location:

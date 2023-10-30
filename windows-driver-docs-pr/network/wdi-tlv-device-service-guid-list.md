@@ -1,7 +1,8 @@
 ---
 title: WDI_TLV_DEVICE_SERVICE_GUID_LIST
+ms.topic: reference
 description: WDI_TLV_DEVICE_SERVICE_GUID_LIST is a WDI TLV that contains information about a device service received from the IHV driver.
-ms.date: 07/31/2021
+ms.date: 03/02/2023
 keywords:
  - WDI_TLV_DEVICE_SERVICE_GUID_LIST Network Drivers Starting with Windows Vista
 ---

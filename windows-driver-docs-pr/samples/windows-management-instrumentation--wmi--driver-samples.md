@@ -1,7 +1,7 @@
 ---
 title: Windows Management Instrumentation (WMI) driver samples
 description: The driver samples in this directory provide a starting point for writing a custom WMI driver for your device.
-ms.date: 11/21/2019
+ms.date: 03/22/2023
 ---
 
 # Windows Management Instrumentation (WMI) driver samples

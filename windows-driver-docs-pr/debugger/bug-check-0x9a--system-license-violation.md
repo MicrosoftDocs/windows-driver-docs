@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x9A SYSTEM_LICENSE_VIOLATION", "SYSTEM_LICENSE_VIOLATION"
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SYSTEM_LICENSE_VIOLATION
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The SYSTEM\_LICENSE\_VIOLATION bug check has a value of 0x0000009A. This bug check indicates that the software license agreement has been violated.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## SYSTEM\_LICENSE\_VIOLATION Parameters

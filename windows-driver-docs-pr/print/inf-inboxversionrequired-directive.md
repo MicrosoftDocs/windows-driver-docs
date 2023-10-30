@@ -1,17 +1,18 @@
 ---
 title: INF InboxVersionRequired Directive
 description: INF InboxVersionRequired Directive
-ms.date: 04/20/2017
+ms.date: 01/27/2023
 ---
 
 # INF InboxVersionRequired Directive
 
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 For package-aware drivers, you can use the **InboxVersionRequired** INF directive to specify a minimum acceptable version for all core drivers that the INF references. You can use the **UseDriverVer** keyword to specify the minimum version. This minimum version applies to all referenced core drivers in the INF.
 
 The following example package-aware-driver section shows how you insert the **InboxVersionRequired** INF directive:
 
-```cpp
+```inf
 [PrinterPackageInstallation.amd64]
 PackageAware=TRUE
 CoreDriverDependencies={D20EA372-DD35-4950-9ED8-A6335AFE79F0},{D20EA372-DD35-4950-9ED8-A6335AFE79F3}
@@ -24,9 +25,6 @@ You can also specify specific version strings as the value for **InboxVersionReq
 
 The following example shows how you set **InboxVersionRequired** to a specific version string:
 
-```cpp
+```inf
 InboxVersionRequired=09/28/1999,5.00.2136.1
 ```
-
- 
-

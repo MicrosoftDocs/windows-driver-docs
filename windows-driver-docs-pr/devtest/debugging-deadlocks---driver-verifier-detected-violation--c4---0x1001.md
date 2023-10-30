@@ -28,7 +28,7 @@ When the Deadlock Detection option is active (Deadlock Detection is part of the 
 (B)reak, (I)gnore, (W)arn only, (R)emove assert?
 ```
 
-To debug this violation on a computer running Windows 8.1, choose **B** (Break), and enter the suggested debugger command ([**!deadlock**](../debugger/-deadlock.md)):
+To debug this violation on a computer running Windows 8.1, choose **B** (Break), and enter the suggested debugger command ([**!deadlock**](../debuggercmds/-deadlock.md)):
 
 ```
 kd> !deadlock
@@ -48,7 +48,7 @@ Lock A =   97dd800c (MyTestDriver!AlphaLock+0x00000000) - Type 'Spinlock'.
 Lock B =   97dd8008 (MyTestDriver!BravoLock+0x00000000) - Type 'Spinlock'.
 ```
 
-The [**!deadlock**](../debugger/-deadlock.md) **3** command can also be used to show more information, including the stack at the time of last acquire:
+The [**!deadlock**](../debuggercmds/-deadlock.md) **3** command can also be used to show more information, including the stack at the time of last acquire:
 
 ```
 kd> !deadlock 3
@@ -106,7 +106,7 @@ Lock A =     97dd800c (MyTestDriver!AlphaLock+0x00000000) - Type 'Spinlock'.
     Stack:   << Current stack trace - use kb to display it >>
 ```
 
-The debugger suggests using the [**kb (Display Stack Backtrace)**](../debugger/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command to display the current stack trace.
+The debugger suggests using the [**kb (Display Stack Backtrace)**](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command to display the current stack trace.
 
 ```
 kd> kb
@@ -140,7 +140,7 @@ extern KSPIN_LOCK BravoLock;
 
 Inside of function *SystemControlIrpWorker*, there exists a path where AlphaLock (Lock A in the **!deadlock** output) is acquired and held when BravoLock (Lock B) is acquired. It is also worth noting that the locks are properly released in the reverse order in which they’re acquired. (The following code is heavily edited to show only the elements required to generate this scenario).
 
-```ManagedCPlusPlus
+```cpp
 NTSTATUS SystemControlIrpWorker(_In_ PIRP Irp)
 {
     KIRQL IrqlAlpha;
@@ -166,7 +166,7 @@ NTSTATUS SystemControlIrpWorker(_In_ PIRP Irp)
 
 If you review the following *DeviceControlIrpWorker* example function, you can see that it’s possible to acquire the locks in reverse order. That is, BravoLock can be acquired and held when attempting to acquire AlphaLock. The following example is simplified, but it shows that there is a possible path where a violation could occur.
 
-```ManagedCPlusPlus
+```cpp
 NTSTATUS DeviceControlIrpWorker(_In_ PIRP Irp, 
                                 _In_ BOOLEAN bSomeCondition)
 {
@@ -228,4 +228,4 @@ For more information about spin locks and other synchronization techniques, see 
 
 [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md)
 
-[**!deadlock**](../debugger/-deadlock.md)
+[**!deadlock**](../debuggercmds/-deadlock.md)

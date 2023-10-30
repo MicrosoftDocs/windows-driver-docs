@@ -5,7 +5,7 @@ keywords:
 - I/O resource usage reduction WDK
 - resource usage WDK
 - I/O resources WDK
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # I/O Resource Usage Reduction

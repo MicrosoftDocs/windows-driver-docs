@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x138 GPIO_CONTROLLER_DRIVER_ERROR", "GPIO_CONTROLLER_DRIV
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - GPIO_CONTROLLER_DRIVER_ERROR
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The GPIO\_CONTROLLER\_DRIVER\_ERROR bug check has a value of 0x00000138. This bug check indicates that the GPIO class extension driver encountered a fatal error.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## GPIO\_CONTROLLER\_DRIVER\_ERROR Parameters

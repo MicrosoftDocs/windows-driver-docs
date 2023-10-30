@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_BAND_CHANNEL (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_BAND_CHANNEL is a WiFiCx TLV that contains the channels to scan for a specified band.
 ms.date: 06/30/2021
 keywords:

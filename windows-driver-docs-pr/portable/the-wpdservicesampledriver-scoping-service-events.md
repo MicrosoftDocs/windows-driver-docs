@@ -1,7 +1,7 @@
 ---
 description: Scoping Service Events
 title: Scoping Service Events
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Scoping Service Events

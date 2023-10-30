@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1E1 DEVICE_DIAGNOSTIC_LOG_LIVEDUMP", "DEVICE_DIAGNOSTIC_
 ms.date: 08/24/2022
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DEVICE_DIAGNOSTIC_LOG_LIVEDUMP
 api_type:
@@ -57,7 +58,7 @@ The DEVICE\_DIAGNOSTIC\_LOG\_LIVEDUMP has a value of 0x000001E1. This indicates 
  
 ## Resolution
 
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
  
 
 ## See Also

@@ -4,14 +4,16 @@ description: The KSRTAUDIO\_BUFFER\_PROPERTY structure appends a buffer base add
 keywords: ["KSRTAUDIO_BUFFER_PROPERTY structure Audio Devices", "PKSRTAUDIO_BUFFER_PROPERTY structure pointer Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSRTAUDIO_BUFFER_PROPERTY
 api_location:
 - ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 03/06/2023
 ---
+
 
 # KSRTAUDIO\_BUFFER\_PROPERTY structure
 
@@ -20,7 +22,7 @@ The KSRTAUDIO\_BUFFER\_PROPERTY structure appends a buffer base address and requ
 
 ## Syntax
 
-```ManagedCPlusPlus
+```cpp
 typedef struct {
   KSPROPERTY Property;
   PVOID      BaseAddress;

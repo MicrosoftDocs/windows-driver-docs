@@ -4,6 +4,7 @@ description: The EXT\_TDOP\_SET\_PTR\_FROM\_TYPE\_ID\_AND\_U64 sub-operation of 
 keywords: ["EXT_TDOP_SET_PTR_FROM_TYPE_ID_AND_U64 Windows Debugging"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - EXT_TDOP_SET_PTR_FROM_TYPE_ID_AND_U64
 api_type:

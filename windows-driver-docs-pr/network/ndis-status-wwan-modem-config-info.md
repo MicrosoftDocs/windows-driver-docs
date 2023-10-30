@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_WWAN_MODEM_CONFIG_INFO
+ms.topic: reference
 description: Miniport drivers use the NDIS_STATUS_WWAN_MODEM_CONFIG_INFO notification to inform the MB service about the completion of a previous OID_WWAN_MODEM_CONFIG_INFO query request.
 keywords: ["NDIS_STATUS_WWAN_MODEM_CONFIG_INFO, Network Drivers Starting with Windows Vista"]
 topic_type:
@@ -10,7 +11,7 @@ api_location:
 - ndis.h
 api_type:
 - HeaderDef
-ms.date: 10/17/2018
+ms.date: 03/02/2023
 ---
 
 # NDIS_STATUS_WWAN_MODEM_CONFIG_INFO

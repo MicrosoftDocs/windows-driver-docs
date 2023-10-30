@@ -22,7 +22,7 @@ The Windows kernel supports loading pre-production drivers signed with the WHQL/
 - [Sign your pre-production drivers with Partner Center Hardware dashboard](../dashboard/hardware-submission-create.md)
 
 
-- Download *EnableUefiSbTest.exe* from the WDK. The default setup location of the *EnableUefiSbTest* tool is **C:\Program Files (x86)\Windows Kits\10\tools\\{arch}\SecureBoot\EnableSB**. `{arch}` can be one of `{amd64, x86, arm, arm64}`. The policies are located under the same SecureBoot directory:**C:\Program Files (x86)\Windows Kits\10\tools\\{arch}\SecureBoot\Policies**. 
+- Download *EnableUefiSbTest.exe* from the latest version of the Windows Driver Kit (WDK) or from [Download Center](https://aka.ms/PreprodDriverSignatureTool). The default setup location of the *EnableUefiSbTest* tool is **C:\Program Files (x86)\Windows Kits\10\tools\\{arch}\SecureBoot\EnableSB**. `{arch}` can be one of `{amd64, x86, arm, arm64}`. The policies are located under the same SecureBoot directory:**C:\Program Files (x86)\Windows Kits\10\tools\\{arch}\SecureBoot\Policies**. 
 
 
 ## Enable support for the pre-production WHQL/WHCP Signature
@@ -51,7 +51,7 @@ Use of the EnableUefiSbTest tool is strongly recommended. Alternatively, you can
     If Secure Boot is disabled and the keys have been successfully cleared, the following output is expected:
     
     ```PowerShell
-    PS C:\> .\EnableUefiSbTest.exe /dump
+    EnableUefiSbTest.exe /dump
     
     Name: PK
     Not Found
@@ -77,6 +77,12 @@ Use of the EnableUefiSbTest tool is strongly recommended. Alternatively, you can
 
     >[!NOTE]
     > EnableUefiSbTest.exe will not output/return anything after successfully running.
+	
+	Optionally, specify the `thirdparty` command to provision the Microsoft UEFI CA certificate alongside the default keys in the Secure Boot DB. This will allow trust for Microsoft UEFI CA-signed EFI executables like option ROMs and non-Windows bootloaders. 
+	
+	```PowerShell
+    EnableUefiSbTest.exe /thirdparty
+    ```
 
 
 5. For devices running Desktop-based Windows, mount the EFI partition of the system and copy over the Secure Boot policy (.p7b) file to **S:/EFI/Microsoft/Boot** by running the following command in an elevated instance of PowerShell or Terminal:

@@ -43,7 +43,7 @@ Since this kind of dump file does not contain images of any executables residing
 
 If a second bug check occurs and a second Small Memory Dump file is created, the previous file will be preserved. Each additional file will be given a distinct name, which contains the date of the crash encoded in the filename. For example, mini022900-01.dmp is the first memory dump file generated on February 29, 2000. A list of all Small Memory Dump files is kept in the directory %SystemRoot%\\Minidump.
 
-## <span id="related_topics"></span>Related topics
+## <span id="related_topics"></span>See also
 
 
 [Varieties of Kernel-Mode Dump Files](varieties-of-kernel-mode-dump-files.md)

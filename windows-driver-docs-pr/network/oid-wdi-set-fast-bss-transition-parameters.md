@@ -1,7 +1,8 @@
 ---
 title: OID_WDI_SET_FAST_BSS_TRANSITION_PARAMETERS
+ms.topic: reference
 description: OID_WDI_SET_FAST_BSS_TRANSITION_PARAMETERS is sent in response to NDIS_STATUS_WDI_INDICATION_FT_ASSOC_PARAMS_NEEDED. It has the parameters required to send the (Re)Association request. The command is sent to the driver as a direct OID.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - OID_WDI_SET_FAST_BSS_TRANSITION_PARAMETERS Network Drivers Starting with Windows Vista
 ms.custom: 19H1

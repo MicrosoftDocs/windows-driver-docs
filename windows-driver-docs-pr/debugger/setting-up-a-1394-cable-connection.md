@@ -92,7 +92,7 @@ If you decide to have multiple 1394 controllers enabled on the target computer, 
 
 Reboot the target computer.
 
-## <span id="related_topics"></span>Related topics
+## <span id="related_topics"></span>See also
 
 [Setting Up Kernel-Mode Debugging Manually](setting-up-kernel-mode-debugging-in-windbg--cdb--or-ntsd.md)
 

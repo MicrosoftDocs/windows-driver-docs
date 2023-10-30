@@ -3,7 +3,7 @@ title: NDIS Driver Stack
 description: NDIS Driver Stack
 keywords:
 - driver stacks WDK networking , NDIS basic configuration
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # NDIS Driver Stack
@@ -16,7 +16,7 @@ ms.date: 04/20/2017
 
 The following figure shows a basic configuration of the logical elements in an NDIS 6.0 driver stack. The figure illustrates a driver stack with an unspecified number of filter modules. The arrows represent information flow between the elements of the stack.
 
-![diagram illustrating an ndis driver stack with filter modules.](images/filterstack.png)
+:::image type="content" source="images/filterstack.png" alt-text="Diagram illustrating a basic configuration of an NDIS 6.0 driver stack with filter modules.":::
 
 As the preceding figure shows, you can stack any number of filter modules over a miniport adapter. These modules can be instances of different filter drivers and/or multiple instances of the same filter driver. If a miniport driver manages more than one miniport adapter, a separate driver stack can exist over each miniport adapter.
 
@@ -28,7 +28,7 @@ If more than one protocol driver binds to an miniport adapter, the filter module
 
 The following figure shows an NDIS 6.0 driver stack with an intermediate driver.
 
-![diagram illustrating an ndis driver stack with an intermediate driver.](images/imstack.png)
+:::image type="content" source="images/imstack.png" alt-text="Diagram illustrating an NDIS 6.0 driver stack with an intermediate driver.":::
 
 If you include an NDIS intermediate driver in the driver stack, the stack is essentially two stacks: one above the other.
 

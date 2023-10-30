@@ -7,11 +7,12 @@ MSHAttr:
 keywords: ["Failure method Print Devices", "Failure method Print Devices , IPrinterScriptUsbJobContextReturnCodes interface", "IPrinterScriptUsbJobContextReturnCodes interface Print Devices , Failure method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IPrinterScriptUsbJobContextReturnCodes.Failure
 api_type:
 - COM
-ms.date: 04/20/2017
+ms.date: 07/13/2023
 ---
 
 # IPrinterScriptUsbJobContextReturnCodes::Failure method
@@ -41,26 +42,11 @@ This method returns an **HRESULT** value.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Minimum supported client</p></td>
-<td><p>Windows 8.1</p></td>
-</tr>
-<tr class="even">
-<td><p>Minimum supported server</p></td>
-<td><p>Windows Server 2012 R2</p></td>
-</tr>
-<tr class="odd">
-<td><p>Target platform</p></td>
-<td>Desktop</td>
-</tr>
-</tbody>
-</table>
+**Minimum supported client:** Windows 8.1
+
+**Minimum supported server:** Windows Server 2012 R2
+
+**Target platform:** Desktop
 
 ## See also
 

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x9B UDFS_FILE_SYSTEM", "UDFS_FILE_SYSTEM"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - UDFS_FILE_SYSTEM
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The UDFS\_FILE\_SYSTEM bug check has a value of 0x0000009B. This bug check indicates that a problem occurred in the UDF file system.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## UDFS\_FILE\_SYSTEM Parameters
@@ -64,7 +65,7 @@ This bug check might also occur if nonpaged pool memory is full. If the nonpaged
 
 ## Resolution
 
-**To debug this problem:** Use the [**.cxr (Display Context Record)**](-cxr--display-context-record-.md) command with Parameter 3, and then use [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md).
+**To debug this problem:** Use the [**.cxr (Display Context Record)**](../debuggercmds/-cxr--display-context-record-.md) command with Parameter 3, and then use [**kb (Display Stack Backtrace)**](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md).
 
 **To resolve a disk corruption problem:** Check Event Viewer for error messages from SCSI and FASTFAT (System Log) or Autochk (Application Log) that might help identify the device or driver that is causing the error. Disable any virus scanners, backup application, or disk defragmenter tools that continually monitor the system. You should also run hardware diagnostics that the system manufacturer supplies. For more information about these procedures, see the owner's manual for your computer. Run **Chkdsk /f /r** to detect and resolve any file system structural corruption. You must restart the system before the disk scan begins on a system partition.
 

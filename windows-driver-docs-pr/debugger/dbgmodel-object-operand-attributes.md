@@ -1,12 +1,17 @@
 ---
 title: Debugger Data Model - Operand Attributes Objects
 description: An operand of a machine instruction is described by an operand attributes object.
-ms.date: 12/12/2018
+ms.date: 03/10/2023
+ms.topic: reference
 ---
+
 # Operand Attributes Objects 
+
 ## Summary
+
 An operand of a machine instruction is described by an operand attributes object.
 ## Object Properties
+
 |Name|Description|
 |--- |--- |
 |HasImmediate|Indicates whether the operand has an immediate value as part of the operand.|

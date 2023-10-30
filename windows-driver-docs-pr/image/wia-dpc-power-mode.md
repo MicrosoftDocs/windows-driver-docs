@@ -4,6 +4,7 @@ description: The WIA_DPC_POWER_MODE property defines the current power source fo
 keywords: ["WIA_DPC_POWER_MODE Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPC_POWER_MODE
 api_location:

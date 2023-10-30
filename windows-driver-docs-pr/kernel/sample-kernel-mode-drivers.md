@@ -71,7 +71,7 @@ Provides sample code for a set of drivers that conform to the [Windows Driver Mo
 
 Shows how to use [WPP software tracing](../devtest/wpp-software-tracing.md).
 
-[**UMDF Driver Skeleton Sample**](https://github.com/Microsoft/Windows-driver-samples/tree/main/general/umdfSkeleton)
+[**UMDF Driver Skeleton Sample**](../wdf/user-mode-driver-framework-design-guide.md)
 
 This sample demonstrates how to use version 1 of the User-Mode Driver Framework to write a minimal driver.
 

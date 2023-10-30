@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_PORT_AUTHENTICATION_PARAMETERS
+ms.topic: reference
 description: As a set, NDIS and overlying drivers use the OID_GEN_PORT_AUTHENTICATION_PARAMETERS OID to set the current state of an NDIS port.
 ms.date: 08/08/2017
 keywords: 

@@ -4,15 +4,15 @@ description: The required ScanDestination element specifies a single scan destin
 keywords: ["ScanDestination element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ScanDestination
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 05/02/2023
 ---
 
 # ScanDestination element
-
 
 The required **ScanDestination** element specifies a single scan destination on the client.
 
@@ -30,51 +30,22 @@ There are no attributes.
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="clientcontext.md" data-raw-source="[&lt;strong&gt;ClientContext&lt;/strong&gt;](clientcontext.md)"><strong>ClientContext</strong></a></p></td>
-</tr>
-<tr class="even">
-<td><p><a href="clientdisplayname.md" data-raw-source="[&lt;strong&gt;ClientDisplayName&lt;/strong&gt;](clientdisplayname.md)"><strong>ClientDisplayName</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**ClientContext**](clientcontext.md) |
+| [**ClientDisplayName**](clientdisplayname.md) |
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="scandestinations.md" data-raw-source="[&lt;strong&gt;ScanDestinations&lt;/strong&gt;](scandestinations.md)"><strong>ScanDestinations</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**ScanDestinations**](scandestinations.md) |
 
 ## Remarks
 
 The client includes one or more **ScanDestination** elements within the **ScanDestinations** element that it sends when it creates a subscription. The WSD Scan Service uses the information that is provided within **ScanDestination** to create appropriate [**ScanAvailableEvent**](scanavailableevent.md) event elements.
 
 ## See also
-
 
 [**ClientContext**](clientcontext.md)
 
@@ -83,13 +54,3 @@ The client includes one or more **ScanDestination** elements within the **ScanDe
 [**ScanAvailableEvent**](scanavailableevent.md)
 
 [**ScanDestinations**](scandestinations.md)
-
- 
-
- 
-
-
-
-
-
-

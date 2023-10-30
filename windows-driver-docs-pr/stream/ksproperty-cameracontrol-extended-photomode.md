@@ -4,6 +4,7 @@ description: This property sets or retrieves the photo mode setting for the came
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_PHOTOMODE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_EXTENDED_PHOTOMODE
 api_location:

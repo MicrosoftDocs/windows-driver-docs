@@ -8,10 +8,12 @@ keywords:
 - plotters WDK print
 - Hewlett-Packard Graphics Language WDK MSPlot
 - Microsoft Plotter Driver WDK print
-ms.date: 08/13/2021
+ms.date: 01/24/2023
 ---
 
 # Microsoft Plotter Driver
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The Microsoft Plotter Driver is the Microsoft standard printer driver for plotters that support the Hewlett-Packard Graphics Language.
 
@@ -27,8 +29,7 @@ The following topics describe the Microsoft Plotter Driver:
 
 [Plotter Driver Renderer](plotter-driver-renderer.md)
 
-> [!NOTE]
-> In Windows 10, the MSPLOT driver sample was removed and is not available in the Windows 10 driver sample repo on GitHub.
+In Windows 10, the MSPLOT driver sample was removed and is not available in the Windows 10 driver sample repo on GitHub.
 
 Previous versions of the MSPLOT Windows driver sample are archived at Microsoft Archive on GitHub:
 

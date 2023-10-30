@@ -4,15 +4,15 @@ description: The required RetrieveImageRequest operation element contains the cl
 keywords: ["RetrieveImageRequest element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn RetrieveImageRequest
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 05/01/2023
 ---
 
 # RetrieveImageRequest element
-
 
 The required **RetrieveImageRequest** operation element contains the client's request to retrieve scan data from the device after a scan job has been created.
 
@@ -30,31 +30,13 @@ There are no attributes.
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="documentdescription.md" data-raw-source="[&lt;strong&gt;DocumentDescription&lt;/strong&gt;](documentdescription.md)"><strong>DocumentDescription</strong></a></p></td>
-</tr>
-<tr class="even">
-<td><p><a href="jobid.md" data-raw-source="[&lt;strong&gt;JobId&lt;/strong&gt;](jobid.md)"><strong>JobId</strong></a></p></td>
-</tr>
-<tr class="odd">
-<td><p><a href="jobtoken.md" data-raw-source="[&lt;strong&gt;JobToken&lt;/strong&gt;](jobtoken.md)"><strong>JobToken</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**DocumentDescription**](documentdescription.md) |
+| [**JobId**](jobid.md) |
+| [**JobToken**](jobtoken.md) |
 
 ## Parent elements
-
 
 There are no parent elements.
 
@@ -68,49 +50,41 @@ This operation can return all of the [**common WSD Scan Service operation error 
 
 This operation might also return the following errors:
 
--   **ClientErrorJobIdNotFound**The scanner cannot find a job that matches the JobId value or the JobId value is not within the defined range.
+- **ClientErrorJobIdNotFound**The scanner cannot find a job that matches the JobId value or the JobId value is not within the defined range.
 
-    | Fault property | Definition                         |
-    |----------------|------------------------------------|
-    | \[Code\]       | soap:Sender                        |
-    | \[Subcode\]    | wscn:ClientErrorJobIdNotFound      |
-    | \[Reason\]     | The specified JobId was not found. |
-    | \[Detail\]     | JobId: Incorrect JobId             |
+    | Fault property | Definition |
+    |--|--|
+    | \[Code\] | soap:Sender |
+    | \[Subcode\] | wscn:ClientErrorJobIdNotFound |
+    | \[Reason\] | The specified JobId was not found. |
+    | \[Detail\] | JobId: Incorrect JobId |
 
-     
+- **ClientErrorNoImagesAvailable**The scanner does not have any more images available for the client to retrieve.
 
--   **ClientErrorNoImagesAvailable**The scanner does not have any more images available for the client to retrieve.
+    | Fault property | Definition |
+    |--|--|
+    | \[Code\] | soap:Sender |
+    | \[Subcode\] | wscn:ClientErrorNoImagesAvailable |
+    | \[Reason\] | The server has no images available to acquire. |
+    | \[Detail\] | None |
 
-    | Fault property | Definition                                     |
-    |----------------|------------------------------------------------|
-    | \[Code\]       | soap:Sender                                    |
-    | \[Subcode\]    | wscn:ClientErrorNoImagesAvailable              |
-    | \[Reason\]     | The server has no images available to acquire. |
-    | \[Detail\]     | None                                           |
+- **ClientErrorInvalidJobToken**The supplied JobToken value is not valid for the specified scan JobId.
 
-     
+    | Fault property | Definition |
+    |--|--|
+    | \[Code\] | soap:Sender |
+    | \[Subcode\] | wscn:ClientErrorInvalidJobToken |
+    | \[Reason\] | The JobToken parameter value is not valid with the JobId parameter. |
+    | \[Detail\] | None |
 
--   **ClientErrorInvalidJobToken**The supplied JobToken value is not valid for the specified scan JobId.
+- **ClientErrorJobCancelled**
 
-    | Fault property | Definition                                                          |
-    |----------------|---------------------------------------------------------------------|
-    | \[Code\]       | soap:Sender                                                         |
-    | \[Subcode\]    | wscn:ClientErrorInvalidJobToken                                     |
-    | \[Reason\]     | The JobToken parameter value is not valid with the JobId parameter. |
-    | \[Detail\]     | None                                                                |
-
-     
-
--   **ClientErrorJobCancelled**
-
-    | Fault property | Definition                              |
-    |----------------|-----------------------------------------|
-    | \[Code\]       | soap:Sender                             |
-    | \[Subcode\]    | wscn:ClientErrorJobCancelled            |
-    | \[Reason\]     | The current scan job has been canceled. |
-    | \[Detail\]     | None                                    |
-
-     
+    | Fault property | Definition |
+    |--|--|
+    | \[Code\] | soap:Sender |
+    | \[Subcode\] | wscn:ClientErrorJobCancelled |
+    | \[Reason\] | The current scan job has been canceled. |
+    | \[Detail\] | None |
 
 ## Examples
 
@@ -146,7 +120,6 @@ The following code example shows a client request to retrieve image data for the
 
 ## See also
 
-
 [**DocumentDescription**](documentdescription.md)
 
 [**JobId**](jobid.md)
@@ -154,13 +127,3 @@ The following code example shows a client request to retrieve image data for the
 [**JobToken**](jobtoken.md)
 
 [**RetrieveImageResponse**](retrieveimageresponse.md)
-
- 
-
- 
-
-
-
-
-
-

@@ -4,15 +4,15 @@ description: The required FilmOpticalResolution element specifies the maximum op
 keywords: ["FilmOpticalResolution element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn FilmOpticalResolution
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 04/24/2023
 ---
 
 # FilmOpticalResolution element
-
 
 The required **FilmOpticalResolution** element specifies the maximum optical resolution at which the film scanning input source can scan.
 
@@ -28,27 +28,13 @@ There are no attributes.
 
 ## Child elements
 
-
 There are no child elements.
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="film.md" data-raw-source="[&lt;strong&gt;Film&lt;/strong&gt;](film.md)"><strong>Film</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**Film**](film.md) |
 
 ## Remarks
 
@@ -58,19 +44,8 @@ If **Height** is absent, the WSD Scan Service should assume a square image resol
 
 ## See also
 
-
 [**Film**](film.md)
 
 [**Height**](height.md)
 
 [**Width**](width.md)
-
- 
-
- 
-
-
-
-
-
-

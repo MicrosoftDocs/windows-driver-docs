@@ -1,161 +1,121 @@
 ---
-title: User-Mode Dump Files
-description: User-Mode Dump Files
+title: User-mode dump files
+description: Get an overview of user-mode dump files and how to use them to help resolve bugs and crashes.
 keywords: ["dump file, user-mode"]
-ms.date: 12/03/2019
+ms.date: 12/30/2022
 ---
 
-# User-Mode Dump Files
+# User-mode dump files
 
-This section includes:
+In this article, get an overview of user-mode dump files and how to use them to help resolve bugs and crashes.
 
-- [Varieties of User-Mode Dump Files](#varieties)
+For information about analyzing a dump file, see [Analyze a user-mode dump file](analyzing-a-user-mode-dump-file.md).
 
-- [Creating a User-Mode Dump File](#creating)
+<a name="varieties"></a>
 
-For information on analyzing a dump file, see [Analyzing a User-Mode Dump File](analyzing-a-user-mode-dump-file.md).
+## Types of user-mode dump files
 
-## <span id="varieties"></span><span id="VARIETIES"></span> Varieties of User-Mode Dump Files
+Several types of user-mode crash dump files are available. The different types of dump files are divided into two categories:
 
-There are several kinds of user-mode crash dump files, but they are divided into two categories:
+- [Full user-mode dumps](#full)
+- [Minidumps](#minidumps)
 
-[Full User-Mode Dumps](#full)
+You can get a substantial amount of information by analyzing a dump file. However, no dump file can provide the amount of information you get from debugging the crash by using a debugger.
 
-[Minidumps](#minidumps)
+<a name="full"></a>
 
-The difference between these dump files is one of size. Minidumps are usually more compact, and can be easily sent to an analyst.
+### Full user-mode dumps
 
-**Note**   Much information can be obtained by analyzing a dump file. However, no dump file can provide as much information as actually debugging the crash directly with a debugger.
+A *full user-mode dump* is the basic user-mode dump file. A full user-mode dump file includes:
 
-## <span id="full"></span><span id="FULL"></span>Full User-Mode Dumps
+- The entire memory space of a process.
+- The program's executable image.
+- The handle table.
+- Other information that helps the debugger reconstruct the memory that was in use when the dump occurred.
 
-A *full user-mode dump* is the basic user-mode dump file.
+You can *shrink* a full user-mode dump file into a minidump. To shrink a full user-mode dump file, first, load the dump file in the debugger. Then, use the [.dump (Create Dump File)](../debuggercmds/-dump--create-dump-file-.md) command to save a new dump file in minidump format.
 
-This dump file includes the entire memory space of a process, the program's executable image itself, the handle table, and other information that will be useful to the debugger in reconstructing the memory that was in use when the dump occurred.
+Despite their names, the largest minidump file contains more information than the full user-mode dump file. For example, the `.dump /mf` and `.dump /ma` commands create larger and more complete files than the `.dump /f` command.
 
-It is possible to "shrink" a full user-mode dump file into a minidump. Simply load the dump file into the debugger and then use the [**.dump (Create Dump File)**](-dump--create-dump-file-.md) command to save a new dump file in minidump format.
+In user mode, `.dump /m`\[*MiniOptions*\] is often the best choice. The dump files you create by using this switch might vary in size from very small to very large. By specifying the correct *MiniOptions* switch, you can control exactly what information is included.
 
-**Note**   Despite their names, the largest "minidump" file actually contains more information than the full user-mode dump. For example, **.dump /mf** or **.dump /ma** will create a larger and more complete file than **.dump /f**.
+<a name="minidumps"></a>
 
-In user mode, **.dump /m\[**<em>MiniOptions</em>**\]** is the best choice. The dump files created with this switch can vary in size from very small to very large. By specifying the proper *MiniOptions* you can control exactly what information is included.
+### Minidumps
 
-## <span id="minidumps"></span><span id="MINIDUMPS"></span>Minidumps
+The size and contents of a minidump file vary depending on the program being dumped and the application doing the dumping and the options selected. Sometimes, a minidump file is moderately large and includes the full memory and handle table. Other times, the minidump file is much smaller. For example, a minidump file might contain only information about a single thread, or it might contain only information about modules that are referenced in the stack.
 
-A user-mode dump file that includes only selected parts of the memory associated with a process is called a *minidump*.
+The term *minidump* is misleading because the largest minidump files contain more information than a full user-mode dump file. For example, `.dump /mf` or `.dump /ma` creates a larger and more complete file than `.dump /f`. For this reason, we recommend that you use `.dump /m`\[*MiniOptions*\] instead of `.dump /f` to create all user-mode dump files.
 
-The size and contents of a minidump file vary depending on the program being dumped and the application doing the dumping. Sometimes, a minidump file is fairly large and includes the full memory and handle table. Other times, it is much smaller -- for example, it might only contain information about a single thread, or only contain information about modules that are actually referenced in the stack.
+If you create a minidump file by using the debugger, you can choose what information to include. The `.dump /m` command includes basic information about the loaded modules that make up the target process, thread information, and stack information. You can modify the basic command by using any of the switch options that are described in the following table:
 
-The name "minidump" is misleading, because the largest minidump files actually contain more information than the "full" user-mode dump. For example, **.dump /mf** or **.dump /ma** will create a larger and more complete file than **.dump /f**. For this reason, **.dump /m**\[*MiniOptions*\] recommended over **.dump /f** for all user-mode dump file creation.
+| `.dump` option | Effect on dump file |
+| --- | --- |
+| `/ma` | Creates a minidump with all optional additions. The `/ma` option is equivalent to `/mfFhut`. It adds full memory data, handle data, unloaded module information, basic memory information, and thread time information to the minidump. |
+| `/mf` | Adds full memory data to the minidump. All accessible committed pages owned by the target application are included. |
+| `/mF` | Adds all basic memory information to the minidump. This switch adds a stream to the minidump that contains all basic memory information, not only information about valid memory. The debugger uses the information to reconstruct the complete virtual memory layout of the process when the minidump is being debugged. |
+| `/mh` | Adds data about the handles that are associated with the target application to the minidump. |
+| `/mu` | Adds unloaded module information to the minidump. This option is available only in Windows Server 2003 and later versions of Windows. |
+| `/mt` | Adds more thread information to the minidump. The thread information includes thread times, which can be displayed by using [.ttime (Display Thread Times)](../debuggercmds/-ttime--display-thread-times-.md) when you debug the minidump. |
+| `/mi` | Adds secondary memory to the minidump. *Secondary memory* is any memory that's referenced by a pointer on the stack or backing store, plus a small region surrounding this address. |
+| `/mp` | Adds process environment block and thread environment block data to the minidump. This information can be useful if you need access to Windows system information regarding the application's processes and threads. |
+| `/mw` | Adds all committed read-write private pages to the minidump. |
+| `/md` | Adds all read-write data segments within the executable image to the minidump. |
+| `/mc` | Adds code sections within images.|
+| `/mr` | Deletes from the minidump portions of the stack and store memory that aren't used to re-create the stack trace. Local variables and other data type values are also deleted. This option doesn't make the minidump smaller (the unused memory sections are zeroed), but it's useful if you want to protect the privacy of other applications.|
+| `/mR` | Deletes the full module paths from the minidump. Only module *names* are included. This option is useful if you want to protect the privacy of the user's directory structure. |
 
-If you are creating a minidump file with the debugger, you can choose exactly what information to include. A simple **.dump /m** command will include basic information about the loaded modules that make up the target process, thread information, and stack information. This can be modified by using any of the following options:
+You can combine these switch options. For example, use the command `.dump /mfiu` to create a moderately large minidump that contains unloaded and secondary memory. Use the command `.dump /mrR` to create a minidump that removes some of the user's information. For full syntax details, see [.dump (Create Dump File)](../debuggercmds/-dump--create-dump-file-.md).
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">.dump option</th>
-<th align="left">Effect on dump file</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>/ma</strong></p></td>
-<td align="left"><p>Creates a minidump with all optional additions. The <strong>/ma</strong> option is equivalent to <strong>/mfFhut</strong> -- it adds full memory data, handle data, unloaded module information, basic memory information, and thread time information to the minidump.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>/mf</strong></p></td>
-<td align="left"><p>Adds full memory data to the minidump. All accessible committed pages owned by the target application will be included.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>/mF</strong></p></td>
-<td align="left"><p>Adds all basic memory information to the minidump. This adds a stream to the minidump that contains all basic memory information, not just information about valid memory. This allows the debugger to reconstruct the complete virtual memory layout of the process when the minidump is being debugged.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>/mh</strong></p></td>
-<td align="left"><p>Adds data about the handles associated with the target application to the minidump.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>/mu</strong></p></td>
-<td align="left"><p>Adds unloaded module information to the minidump. This is only available in Windows Server 2003 and later versions of Windows.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>/mt</strong></p></td>
-<td align="left"><p>Adds additional thread information to the minidump. This includes thread times, which can be displayed by using <strong><a href="-ttime--display-thread-times-.md" data-raw-source="[.ttime (Display Thread Times)](-ttime--display-thread-times-.md)">.ttime (Display Thread Times)</a></strong> when debugging the minidump.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>/mi</strong></p></td>
-<td align="left"><p>Adds <em>secondary memory</em> to the minidump. Secondary memory is any memory referenced by a pointer on the stack or backing store, plus a small region surrounding this address.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>/mp</strong></p></td>
-<td align="left"><p>Adds process environment block (PEB) and thread environment block (TEB) data to the minidump. This can be useful if you need access to Windows system information regarding the application's processes and threads.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>/mw</strong></p></td>
-<td align="left"><p>Adds all committed read-write private pages to the minidump.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>/md</strong></p></td>
-<td align="left"><p>Adds all read-write data segments within the executable image to the minidump.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>/mc</strong></p></td>
-<td align="left"><p>Adds code sections within images.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>/mr</strong></p></td>
-<td align="left"><p>Deletes from the minidump those portions of the stack and store memory that are not useful for recreating the stack trace. Local variables and other data type values are deleted as well. This option does not make the minidump smaller (since these memory sections are simply zeroed), but it is useful if you wish to protect the privacy of other applications.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>/mR</strong></p></td>
-<td align="left"><p>Deletes the full module paths from the minidump. Only the module <em>names</em> will be included. This is a useful option if you wish to protect the privacy of the user's directory structure.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>/mk "</strong> <em>FileName</em> <strong>"</strong></p></td>
-<td align="left"><p>(Windows Vista only) Creates a kernel-mode minidump in addition to the user-mode minidump. The kernel-mode minidump will be restricted to the same threads that are stored in the user-mode minidump. <em>FileName</em> must be enclosed in quotation marks.</p></td>
-</tr>
-</tbody>
-</table>
+## Tools to use to create a dump file
 
-These options can be combined. For example, the command **.dump /mfiu** can be used to create a fairly large minidump, or the command **.dump /mrR** can be used to create a minidump that preserves the user's privacy. For full syntax details, see [**.dump (Create Dump File)**](-dump--create-dump-file-.md).
+There are several different tools you can use to create a user-mode dump file:
 
-## <span id="creating"></span><span id="CREATING"></span>Creating a User-Mode Dump File
+- ProcDump
+- CDB
+- WinDbg
 
-There are several different tools that can be used to create a user-mode dump file: CDB, WinDbg and Procdump.
+### ProcDump
 
-## <span id="procdump"></span><span id="Procdump"></span>ProcDump
+ProcDump is a command-line utility you can use to monitor an application for CPU spikes and to generate crash dumps during a spike. An administrator or developer can use the crash dump files to determine the cause of the spike. ProcDump also includes monitoring for hung windows (by using the same definition of a window hang that Windows and Task Manager use) and unhandled exceptions. You can use ProcDump to generate dumps based on the values of system performance counters. ProcDump also can serve as a general process dump utility that you can embed in other scripts.
 
-ProcDump is a command-line utility whose primary purpose is monitoring an application for CPU spikes and generating crash dumps during a spike that an administrator or developer can use to determine the cause of the spike. ProcDump also includes hung window monitoring (using the same definition of a window hang that Windows and Task Manager use), unhandled exception monitoring and can generate dumps based on the values of system performance counters. It also can serve as a general process dump utility that you can embed in other scripts.
+For information about creating a user-mode dump file by using the Sysinternals ProcDump utility, see [ProcDump](/sysinternals/downloads/procdump).
 
-For information about creating a user-mode dump file using the Sysinternals ProcDump utility, see [ProcDump](/sysinternals/downloads/procdump).
+### CDB and WinDbg
 
-## <span id="cdb-windbg"></span><span id="CDB-WINDBG"></span>CDB and WinDbg
+Console Debugger (CDB) and Windows Debugger (WinDbg) are debugging tools that are included in Windows Software Development Kit and Windows Driver Kit. See the install options in [Download and install the WinDbg Windows debugger](index.md).
 
-CDB and WinDbg can create user-mode dump files in a variety of ways.
+You can use CDB or WinDbg to create user-mode dump files in multiple ways:
 
-### <span id="creating_a_dump_file_automatically"></span><span id="CREATING_A_DUMP_FILE_AUTOMATICALLY"></span>Creating a Dump File Automatically
+- Create a dump file automatically.
+- Create dump files when you debug.
+- Shrink an existing dump file.
 
-When an application error occurs, Windows can respond in several different ways, depending on the postmortem debugging settings. If these settings instruct a debugging tool to create a dump file, a user-mode memory dump file will be created. For more information, see [Enabling Postmortem Debugging](enabling-postmortem-debugging.md).
+For more information about the tools, see [Getting Started with Windows Debugging](getting-started-with-windows-debugging.md) and [Debug by using CDB](debugging-using-cdb-and-ntsd.md).
 
-### <span id="creating_dump_files_while_debugging"></span><span id="CREATING_DUMP_FILES_WHILE_DEBUGGING"></span>Creating Dump Files While Debugging
+## Create a dump file automatically
 
-When CDB or WinDbg is debugging a user-mode application, you can also use the [**.dump (Create Dump File)**](-dump--create-dump-file-.md) command to create a dump file.
+When an application error occurs, Windows might respond in one of several ways, depending on the postmortem debugging settings. If these settings instruct a debugging tool to create a dump file, a user-mode memory dump file is created. For more information, see [Enable postmortem debugging](enabling-postmortem-debugging.md).
 
-This command does not cause the target application to terminate. By selecting the proper command options, you can create a minidump file that contains exactly the amount of information you wish.
+## Create dump files when you're debugging
 
-### <span id="shrinking_an_existing_dump_file"></span><span id="SHRINKING_AN_EXISTING_DUMP_FILE"></span>Shrinking an Existing Dump File
+When CDB or WinDbg is debugging a user-mode application, you can also use the [.dump (Create Dump File)](../debuggercmds/-dump--create-dump-file-.md) command to create a dump file.
 
-CDB and WinDbg can also be used to *shrink* a dump file. To do this, begin debugging an existing dump file, and then use the **.dump** command to create a dump file of smaller size.
+This command doesn't cause the target application to terminate. By selecting specific command options, you can create a minidump file that contains exactly the amount of information you want.
 
-## <span id="cdb-windbg"></span><span id="CDB-WINDBG"></span> Time Travel Debugging (TTD)
+## Shrink an existing dump file
 
-In addition to CDB, WinDbg and Procdump, another option to debug user mode applications is Time Travel Debugging (TTD). Time Travel Debugging, is a tool that allows you to record an execution of your process running, then replay it later both forwards and backwards. Time Travel Debugging (TTD) can help you debug issues easier by letting you "rewind" your debugger session, instead of having to reproduce the issue until you find the bug.
+You can use CDB or WinDbg to shrink a dump file. To shrink a dump file, begin debugging an existing dump file. Then, use the `.dump` command to create a dump file of a smaller size.
 
-TTD allows you to go back in time to better understand the conditions that lead up to the bug and replay it multiple times to learn how best to fix the problem.
+## Time Travel Debugging
 
-TTD can have advantages over crash dump files, which often are missing the code execution that led up to the ultimate failure.
+Another option to debug user-mode applications is Time Travel Debugging (TTD). TTD is a tool you can use to record your process while it runs. You can replay the recording of the debugger session to find the bug. You can easily go to different parts of the recording to understand conditions that led up to the bug and how to fix the problem.
 
-For more information on Time Travel Debugging (TTD), see [Time Travel Debugging - Overview](time-travel-debugging-overview.md).
+TTD has significant advantages over crash dump files, which often are missing the code execution that led to the failure. The ability to travel backwards in the code execution, can be useful in determining the root cause.
+
+For more information, see the [Time Travel Debugging overview](../debuggercmds/time-travel-debugging-overview.md).
+
+## Next steps
+
+- Learn how to [analyze a user-mode dump file](analyzing-a-user-mode-dump-file.md).
+- Get tips to [extract information from a dump file](extracting-information-from-a-dump-file.md).

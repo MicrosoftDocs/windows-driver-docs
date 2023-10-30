@@ -2,6 +2,7 @@
 title: MB LTE Attach Operations
 description: MB LTE Attach Operations
 ms.date: 03/01/2021
+ms.custom: UpdateFrequency3
 ---
 
 # MB LTE Attach Operations
@@ -82,7 +83,7 @@ Per the 3GPP standard, the default LTE attach context can be split into two cate
 
 The following diagram illustrates an example flow of LTE attach configuration.
 
-![LTE attach config example flow.](images/LTE_attach_1.png "LTE attach config example flow")
+:::image type="content" source="images/LTE_attach_1.png" alt-text="Diagram that shows an example flow of LTE attach configuration.":::
 
 #### Query
 
@@ -219,7 +220,7 @@ During runtime, the OS should also be able to query what the last used attach in
 
 The below diagram illustrates an example message flow for LTE attach status.
 
-![LTE attach status example flow.](images/LTE_attach_2.png "LTE attach status example flow")
+:::image type="content" source="images/LTE_attach_2.png" alt-text="Diagram that shows an example flow for LTE attach status.":::
 
 #### Query
 

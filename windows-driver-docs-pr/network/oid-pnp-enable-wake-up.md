@@ -1,5 +1,6 @@
 ---
 title: OID_PNP_ENABLE_WAKE_UP
+ms.topic: reference
 description: OID_PNP_ENABLE_WAKE_UP
 ms.date: 08/08/2017
 keywords: 

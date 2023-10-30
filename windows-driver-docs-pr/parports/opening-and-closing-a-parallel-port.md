@@ -5,7 +5,7 @@ keywords:
 - parallel ports WDK , opening
 - parallel ports WDK , closing
 - parallel ports WDK , sharing
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Opening and Closing a Parallel Port

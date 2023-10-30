@@ -4,12 +4,13 @@ description: Learn more about the DRV_QUERYDEVNODE function.
 keywords:
 - mmddk/xxxMessage
 - xxxMessage
-ms.date: 10/27/2022
+ms.date: 03/06/2023
+ms.topic: reference
 ---
 
 # DRV\_QUERYDEVNODE function
 
-The DRV\_QUERYDEVNODE message queries for the [*devnode*](/windows-hardware/drivers/debugger/-devnode) number assigned to the device by the Plug and Play manager.
+The DRV\_QUERYDEVNODE message queries for the [*devnode*](../debuggercmds/-devnode.md) number assigned to the device by the Plug and Play manager.
 
 ## Syntax
 

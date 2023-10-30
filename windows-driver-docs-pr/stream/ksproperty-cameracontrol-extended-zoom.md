@@ -4,6 +4,7 @@ description: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ZOOM is used to control digita
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_ZOOM Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_EXTENDED_ZOOM
 api_location:

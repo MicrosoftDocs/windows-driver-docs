@@ -4,7 +4,7 @@ description: WAN-Specific Capabilities of CoNDIS WAN Drivers
 keywords:
 - CoNDIS WAN drivers WDK networking , vs. non-WAN CoNDIS drivers
 - non-WAN CoNDIS drivers WDK networking
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # WAN-Specific Capabilities of CoNDIS WAN Drivers

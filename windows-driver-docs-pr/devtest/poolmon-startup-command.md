@@ -5,20 +5,20 @@ keywords:
 - PoolMon Startup Command Driver Development Tools
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - PoolMon Startup Command
 api_type:
 - NA
-ms.date: 04/20/2017
+ms.date: 05/16/2023
 ---
 
 # PoolMon Startup Command
 
-
 To start PoolMon, type a command at the command line using the following syntax and parameters.
 
 ```
-    poolmon [/iTag] [/xTag] [/c [LocalTagFile]] [/g [PoolTagFile]] [/s[TSSessionID]] [ /p | /p /p ] [/e] [/( | /)]  [/t | /a| /f| /d | /b| /m] [/l] [/n [File]] [/? | /h] 
+    poolmon [/iTag] [/xTag] [/g [PoolTagFile]] [/s[TSSessionID]] [ /p | /p /p ] [/e] [/( | /)]  [/t | /a| /f| /d | /b| /m] [/l] [/n [File]] [/? | /h] 
 ```
 
 ## <span id="ddk_poolmon_startup_command_tools"></span><span id="DDK_POOLMON_STARTUP_COMMAND_TOOLS"></span>Parameters
@@ -33,21 +33,13 @@ Excludes allocations with the specified tag from the display. You can have multi
 <span id="_______Tag______"></span><span id="_______tag______"></span><span id="_______TAG______"></span> *Tag*   
 Specifies a pool tag or pool tag pattern. Pool tags are case-sensitive. The *Tag* argument can include an asterisk (**\***) to represent zero or more instances of any character, or a question mark (*<em>?</em>*) to represent one instance of any character. Do not begin a tag with an asterisk.
 
-<span id="________c______"></span><span id="________C______"></span> **/c**   
-Adds a column to the display (Mapped\_Driver) listing the drivers on the local computer that use each pool tag. This feature is supported only on 32-bit versions of Windows.
-
-<span id="_______LocalTagFile______"></span><span id="_______localtagfile______"></span><span id="_______LOCALTAGFILE______"></span> *LocalTagFile*   
-Specifies the path and file name of a local tag file, a formatted text file that contains a list of the drivers on the local computer, and the tag values that they assign. This file is the data source for the Mapped\_Driver column that appears when you use the **/c** parameter. The default is localtag.txt.
-
-If you use the **/c** parameter, but do not specify a value for *LocalTagFile*, and PoolMon does not find a localtag.txt file in the current directory, PoolMon generates a localtag.txt file by scanning the drivers on the local computer (%SystemRoot%\\System32\\Drivers\\\*.sys) .
-
 <span id="________g______"></span><span id="________G______"></span> **/g**   
 Adds a column to the display (Mapped\_Driver) listing Windows components and commonly used drivers that assign each tag.
 
 <span id="_______PoolTagFile______"></span><span id="_______pooltagfile______"></span><span id="_______POOLTAGFILE______"></span> *PoolTagFile*   
 Specifies the path and file name of a formatted text file that lists the names of Windows components and commonly used drivers and the tag values they assign. This file is the data source for the Mapped\_Driver column that appears when you use the **/g** parameter.
 
-The default is pooltag.txt, a file provided by Microsoft. *Pooltag.txt* is included in the Tools\\Other subdirectory of the Windows Driver Kit (WDK).
+The default is pooltag.txt, a file provided by Microsoft. *Pooltag.txt* is included in Windows Driver Kit (WDK).
 
 <span id="________s______"></span><span id="________S______"></span> **/s**   
 Displays allocations from the Terminal Services session pools.
@@ -105,21 +97,8 @@ Displays command-line syntax. The **/?** and **/h** parameters have the same eff
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
-PoolMon cannot generate a localtag.txt file on the 64-bit version of Windows Server 2003. As a result, the **/c** parameter and its functionality are available only on 32-bit versions of Windows.
-
-You can use the **/c** and **/g** parameters in the same command. If you do, the Mapped\_Driver column displays data from both the local tag and pool tag files.
-
-You can also use **/c** and **/g** to display data from other files in the Mapped\_Driver column by specifying a file name and location with either parameter -- **poolmon /c** *filename* or **poolcom /g** *filename*. In this case, the **/c** and **/g** parameters behave identically and can be used interchangeably.
+You can also use **/g** to display data from other files in the Mapped\_Driver column by specifying a file name and location with **poolcom /g** *filename*.
 
 Terminal Services session pool monitoring is available only on Windows Server 2003 and later versions of Windows.
 
 The kernel-mode portions of the Win32 subsystem allocate memory from Terminal Services session pools only when the computer is configured as a Terminal Server. Otherwise, Windows allocates pool memory for Terminal Services from the system pool.
-
-
-
-
-
-
-
-
-

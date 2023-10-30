@@ -48,7 +48,7 @@ To use this technique, you must do the following:
     windbg [-y KernelSymbolPath] [-k ConnectionOptions] 
     ```
 
-    For more information about this step, see [Live Kernel-Mode Debugging Using WinDbg](performing-kernel-mode-debugging-using-windbg.md)
+    For more information about this step, see [Live Kernel-Mode Debugging Using WinDbg (Classic)](performing-kernel-mode-debugging-using-windbg.md)
 
     .
 
@@ -60,7 +60,7 @@ To use this technique, you must do the following:
 
     For more information about this step, see [**Activating a Debugging Client**](activating-a-debugging-client.md).
 
-4.  Once the debuggers are running and the `Input>` prompt appears in the kernel debugger, use the [**.sleep (Pause Debugger)**](-sleep--pause-debugger-.md) command to pause the debuggers and let the target computer run for a few seconds. This gives the target computer time to process the remote transport protocol, establishing the connection between the user-mode remote server and the remote client.
+4.  Once the debuggers are running and the `Input>` prompt appears in the kernel debugger, use the [**.sleep (Pause Debugger)**](../debuggercmds/-sleep--pause-debugger-.md) command to pause the debuggers and let the target computer run for a few seconds. This gives the target computer time to process the remote transport protocol, establishing the connection between the user-mode remote server and the remote client.
 
 If you use CDB as the user-mode debugger, the Command Prompt window that is associated with CDB remains locked and unavailable while debugging continues. If you use NTSD, no additional window is created, even though NTSD has a process ID associated with it on the target computer.
 
@@ -72,9 +72,9 @@ The four modes and the methods of switching between them described in the topic 
 
 -   If your user-mode symbols are located on a symbol server, any debugger commands that require symbol access should be issued while in remote-controlled user-mode debugging mode.
 
--   To switch from kernel-controlled user-mode debugging to remote-controlled user-mode debugging, use the [**.sleep (Pause Debugger)**](-sleep--pause-debugger-.md) command. When the user-mode debugger wakes from the sleep command, it will be in remote-controlled user-mode debugging mode.
+-   To switch from kernel-controlled user-mode debugging to remote-controlled user-mode debugging, use the [**.sleep (Pause Debugger)**](../debuggercmds/-sleep--pause-debugger-.md) command. When the user-mode debugger wakes from the sleep command, it will be in remote-controlled user-mode debugging mode.
 
--   To switch from remote-controlled user-mode debugging to kernel-mode debugging, enter any command from the `Input>` prompt. If this prompt is not visible, switch to kernel-mode debugging, and then use the [**g (Go)**](g--go-.md) command at the `kd>` prompt.
+-   To switch from remote-controlled user-mode debugging to kernel-mode debugging, enter any command from the `Input>` prompt. If this prompt is not visible, switch to kernel-mode debugging, and then use the [**g (Go)**](../debuggercmds/g--go-.md) command at the `kd>` prompt.
 
 Internally, a user-mode debugger started with -ddefer gives first priority to input from the debugging client, and second priority to input from the kernel debugger. However, there can never be a conflict between simultaneous inputs, because when the kernel debugger has broken in to the target computer, the remote connection is unavailable.
 

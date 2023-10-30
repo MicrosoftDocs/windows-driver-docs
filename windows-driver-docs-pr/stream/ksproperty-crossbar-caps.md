@@ -4,6 +4,7 @@ description: The KSPROPERTY_CROSSBAR_CAPS property retrieves the crossbar capabi
 keywords: ["KSPROPERTY_CROSSBAR_CAPS Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CROSSBAR_CAPS
 api_location:

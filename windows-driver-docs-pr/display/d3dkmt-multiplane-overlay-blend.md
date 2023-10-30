@@ -4,6 +4,7 @@ description: Learn about the D3DKMT\_MULTIPLANE\_OVERLAY\_BLEND enumeration, whi
 keywords: ["D3DKMT_MULTIPLANE_OVERLAY_BLEND enumeration Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - D3DKMT_MULTIPLANE_OVERLAY_BLEND
 api_location:

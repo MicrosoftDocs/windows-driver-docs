@@ -4,6 +4,7 @@ description: KSPROPERTY\_RTAUDIO\_PACKETCOUNT returns the (1-based) count of pac
 keywords: ["KSPROPERTY_RTAUDIO_PACKETCOUNT Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_RTAUDIO_PACKETCOUNT
 api_location:

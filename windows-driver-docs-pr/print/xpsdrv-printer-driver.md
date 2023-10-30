@@ -7,10 +7,12 @@ keywords:
 - XPSDrv printer drivers WDK , about XPSDrv printer drivers
 - configuration modules WDK XPSDrv
 - render modules WDK XPSDrv
-ms.date: 08/10/2021
+ms.date: 01/26/2023
 ---
 
 # XPS Printer Driver (XPSDrv)
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The XPS printer driver (XPSDrv) is an enhanced, GDI-based Version 3 printer driver that was used prior to Windows Vista. XPSDrv printer drivers (like the GDI-based ones) consist of three main components.
 

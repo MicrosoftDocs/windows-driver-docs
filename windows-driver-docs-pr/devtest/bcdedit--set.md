@@ -5,6 +5,7 @@ ms.date: 03/16/2022
 keywords: ["BCDEdit /set Driver Development Tools"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - BCDEdit /set
 api_type:
@@ -86,7 +87,7 @@ The following sections describe some common *datatypes* and their associated *va
 Enables the system initialization log. This log is stored in the Ntbtlog.txt file in the %WINDIR% directory. It includes a list of loaded and unloaded drivers in text format.
 
 **bootmenupolicy** \[ **Legacy** | **Standard** \]  
-Defines the type of boot menu the system will use. ForWindows 10, Windows 8.1, Windows 8 and Windows RT the default is **Standard**. For Windows Server 2012 R2, Windows Server 2012, the default is **Legacy**. When **Legacy** is selected, the Advanced options menu (**F8**) is available. When **Standard** is selected, the boot menu appears but only under certain conditions: for example, if there is a startup failure, if you are booting up from a repair disk or installation media, if you have configured multiple boot entries, or if you manually configured the computer to use Advanced startup. When **Standard** is selected, the **F8** key is ignored during boot. Windows 8 PCs start up quickly so there isn't enough time to press **F8**. For more information, see [Windows Startup Settings (including safe mode)](https://support.microsoft.com/help/17076/windows-8-startup-settings-safe-mode).
+Defines the type of boot menu the system will use. For Windows 10, Windows 8.1, Windows 8 and Windows RT the default is **Standard**. For Windows Server 2012 R2, Windows Server 2012, the default is **Legacy**. When **Legacy** is selected, the Advanced options menu (**F8**) is available. When **Standard** is selected, the boot menu appears but only under certain conditions: for example, if there is a startup failure, if you are booting up from a repair disk or installation media, if you have configured multiple boot entries, or if you manually configured the computer to use Advanced startup. When **Standard** is selected, the **F8** key is ignored during boot. Windows 8 PCs start up quickly so there isn't enough time to press **F8**. For more information, see [Windows Startup Settings (including safe mode)](https://support.microsoft.com/help/17076/windows-8-startup-settings-safe-mode).
 
 > [!NOTE]
 > The option is available starting with Windows 8 and Windows Server 2012. You can also use the **onetimeadvancedoptions** to use the Advanced options (**F8**) menu (**Legacy**) one time on the next boot.
@@ -401,7 +402,7 @@ Enables kernel Emergency Management Services. The BCDEdit /ems option enables or
 The BCDEdit /emssettings option sets the global Emergency Management Services (EMS) settings for the computer. For more information, see  For more information, see [BCDEdit /emssettings](bcdedit--emssettings.md).
 
 ## Virtual Secure Mode
-**vmslaunchtype** \[ **Off** | **Auto**\]  
+**vsmlaunchtype** \[ **Off** | **Auto**\]  
 Controls the Virtual Secure Mode launch type. Can be Off or Auto. For more information, see [Manage Windows Defender Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard-manage).
 
 ## Event Logging

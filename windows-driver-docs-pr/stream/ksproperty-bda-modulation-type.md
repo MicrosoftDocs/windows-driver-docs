@@ -4,6 +4,7 @@ description: Clients use KSPROPERTY_BDA_MODULATION_TYPE to control the demodulat
 keywords: ["KSPROPERTY_BDA_MODULATION_TYPE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_BDA_MODULATION_TYPE
 api_location:

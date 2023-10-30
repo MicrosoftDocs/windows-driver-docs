@@ -1,7 +1,8 @@
 ---
 title: WDI_TLV_P2P_CHANNEL_LIST_ATTRIBUTE
+ms.topic: reference
 description: WDI_TLV_P2P_CHANNEL_LIST_ATTRIBUTE is a TLV that contains channel list attributes.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - WDI_TLV_P2P_CHANNEL_LIST_ATTRIBUTE Network Drivers Starting with Windows Vista
 ---

@@ -66,7 +66,7 @@ Our recommendation is that you use KMDF, especially if you are already familiar 
 ## Choosing a driver model for a file system driver
 
 
-For help with choosing a model for a file system filter driver, see [File system driver samples](../samples/file-system-driver-samples.md). Note that file system drivers can be quite complex and may require knowledge of advanced concepts for driver development.
+For help with choosing a model for a file system driver, see [File system driver samples](../samples/file-system-driver-samples.md). Note that file system drivers can be quite complex and may require knowledge of advanced concepts for driver development.
 
 
 ## Choosing a driver model for a file system filter driver

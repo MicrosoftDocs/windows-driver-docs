@@ -1,7 +1,8 @@
 ---
 title: NDIS_STATUS_RECEIVE_QUEUE_STATE
+ms.topic: reference
 description: The NDIS_STATUS_RECEIVE_QUEUE_STATE status indicates to overlying drivers that the queue state of a virtual machine queue (VMQ) receive queue has changed.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - NDIS_STATUS_RECEIVE_QUEUE_STATE Network Drivers Starting with Windows Vista
 ---

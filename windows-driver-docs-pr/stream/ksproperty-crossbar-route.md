@@ -4,6 +4,7 @@ description: The KSPROPERTY_CROSSBAR_ROUTE property queries whether a particular
 keywords: ["KSPROPERTY_CROSSBAR_ROUTE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CROSSBAR_ROUTE
 api_location:

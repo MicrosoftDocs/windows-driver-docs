@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xA5 ACPI_BIOS_ERROR", "ACPI_BIOS_ERROR"]
 ms.date: 09/12/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ACPI_BIOS_ERROR
 api_type:
@@ -16,7 +17,7 @@ api_type:
 The ACPI\_BIOS\_ERROR bug check has a value of 0x000000A5. This bug check indicates that the Advanced Configuration and Power Interface (ACPI) BIOS of the computer is not fully compliant with the ACPI specification.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## ACPI\_BIOS\_ERROR Parameters
@@ -583,7 +584,7 @@ The value of Parameter 1 indicates the error.
 
 ## Resolution
 
-If you are debugging this error, use the [**!analyze -v**](-analyze.md) extension. This extension displays all the relevant data (device extensions, nsobjects, or whatever is appropriate to the specific error).
+If you are debugging this error, use the [**!analyze -v**](../debuggercmds/-analyze.md) extension. This extension displays all the relevant data (device extensions, nsobjects, or whatever is appropriate to the specific error).
 
 If you are not performing debugging, this error indicates that you have to obtain a new BIOS. Contact your vendor or visit the internet to get a new BIOS.
 

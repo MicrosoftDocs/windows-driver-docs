@@ -1,7 +1,7 @@
 ---
 title: Windows button array Device-Specific Method (_DSM)
-description: To support evolution of the Windows Button user interface (UI), Windows defines a Device-Specific Method (_DSM) for the Windows button array device with the function that is described in this article.
-ms.date: 08/20/2021
+description: To support evolution of the Windows Button user interface (UI), Windows defines a Device-Specific Method (_DSM) for the Windows button array device.
+ms.date: 03/23/2023
 ---
 
 # Windows button array Device-Specific Method (_DSM)
@@ -34,5 +34,4 @@ An integer (DWORD) that has the following bit-field definitions:
 
 - Bit 0: This bit should be set to 1 if the platform supports ACPI Power Button Override time of 10 seconds or greater. Otherwise, this bit should be 0.
 
-> [!NOTE]
-> Function index 0 of every _DSM is a query function that returns the set of supported function indexes, and is always required. For more information, see section 9.14.1, "_DSM (Device Specific Method)", in the [ACPI 5.0 specification](https://uefi.org/specifications).
+Function index 0 of every _DSM is a query function that returns the set of supported function indexes, and is always required. For more information, see section 9.14.1, "_DSM (Device Specific Method)", in the [ACPI 5.0 specification](https://uefi.org/specifications).

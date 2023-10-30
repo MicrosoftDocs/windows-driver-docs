@@ -4,6 +4,7 @@ description: The class driver sends this request to the minidriver immediately b
 keywords: ["SRB_NOTIFY_IDLE_STATE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SRB_NOTIFY_IDLE_STATE
 api_type:

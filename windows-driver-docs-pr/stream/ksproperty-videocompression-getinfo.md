@@ -4,6 +4,7 @@ description: The KSPROPERTY\_VIDEOCOMPRESSION\_GETINFO property retrieves the vi
 keywords: ["KSPROPERTY_VIDEOCOMPRESSION_GETINFO Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_VIDEOCOMPRESSION_GETINFO
 api_location:

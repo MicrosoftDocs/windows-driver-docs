@@ -10,7 +10,6 @@ ms.topic: article
 
 # Power Metering and Budgeting Design Guide
 
-
 This section describes the Power Metering and Budgeting (PMB) infrastructure and the Power Meter Interface (PMI).
 
 This section contains the following topics:
@@ -28,15 +27,3 @@ This section contains the following topics:
 [Energy Meter Interface](energy-meter-interface.md)
 
 [EMI naming convention](rail_naming.md)
-
-
-
- 
-
- 
-
- 
-
-
-
-

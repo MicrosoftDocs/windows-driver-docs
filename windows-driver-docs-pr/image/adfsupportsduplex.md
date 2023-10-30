@@ -4,15 +4,15 @@ description: The required ADFSupportsDuplex element specifies whether the attach
 keywords: ["ADFSupportsDuplex element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ADFSupportsDuplex
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 03/27/2023
 ---
 
 # ADFSupportsDuplex element
-
 
 The required **ADFSupportsDuplex** element specifies whether the attached automatic document feeder (ADF) supports scanning both sides of the media.
 
@@ -34,27 +34,13 @@ Required. A Boolean value that must be 0, 1, false, or true.**false** or **true*
 
 ## Child elements
 
-
 There are no child elements.
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="adf.md" data-raw-source="[&lt;strong&gt;ADF&lt;/strong&gt;](adf.md)"><strong>ADF</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**ADF**](adf.md) |
 
 ## Remarks
 
@@ -64,15 +50,4 @@ You cannot extend the allowed values for this element.
 
 ## See also
 
-
 [**ADF**](adf.md)
-
- 
-
- 
-
-
-
-
-
-

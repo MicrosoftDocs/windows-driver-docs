@@ -1,52 +1,31 @@
 ---
-title: Installation Constraints
-description: Installation Constraints
+title: Installation constraints
+description: Installation constraints
 keywords:
 - installation constraints WDK Unidrv
-ms.date: 04/20/2017
+ms.date: 06/26/2023
 ---
 
-# Installation Constraints
+# Installation constraints
 
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
+Sometimes, certain installable printer options can't be installed simultaneously. For example, it might not be possible to install both the envelope feeder and the duplexing unit.
 
-
-
-Sometimes, certain installable printer options cannot be installed simultaneously. For example, it might not be possible to install both the envelope feeder and the duplexing unit.
-
-To specify combinations of printer options that cannot be simultaneously installed, use \*InvalidInstallableCombination entries.
+To specify combinations of printer options that can't be simultaneously installed, use \*InvalidInstallableCombination entries.
 
 The \*InvalidInstallableCombination entry has the following format:
 
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>*InvalidInstallableCombination: LIST (</strong><em>FeatureName</em> <strong>.</strong> <em>OptionName</em><strong>,</strong> <em>FeatureName</em> <strong>.</strong> <em>OptionName</em><strong>,</strong> ...<strong>)</strong></p></td>
-</tr>
-</tbody>
-</table>
+\***InvalidInstallableCombination: LIST** (*FeatureName*.*OptionName*,*FeatureName*.*OptionName*, ...)
 
- 
+where *FeatureName* is the name of a feature and *OptionName* is the name of an option associated with the feature. This list can include features as well as options, in which case the period and *OptionName* aren't included.
 
-where *FeatureName* is the name of a feature and *OptionName* is the name of an option associated with the feature. This list can include features as well as options, in which case the period and *OptionName* are not included.
+The features and options listed in a single \*InvalidInstallableCombination entry indicate a set of features and options that can't be used in combination. For example, the following entry specifies that the envelope feeder and the duplexing unit can't be simultaneously installed.
 
-The features and options listed in a single \*InvalidInstallableCombination entry indicate a set of features and options that cannot be used in combination. For example, the following entry specifies that the envelope feeder and the duplexing unit cannot be simultaneously installed.
-
-```cpp
+```GPD
 *InvalidInstallableCombination: LIST(InputBin.ENVFEED, Duplex)
 ```
 
-All \*InvalidInstallationCombination entries must be located at the GPD file's root level (that is, not within braces). The number of features and options included in an entry is not limited.
+All \*InvalidInstallationCombination entries must be located at the GPD file's root level (that is, not within braces). The number of features and options included in an entry isn't limited.
 
 If a feature or option is included in an \*InvalidInstallationCombination entry, the feature or option's \*Installable? attribute must be set to **TRUE**.
-
- 
-
- 
-
-
-
-

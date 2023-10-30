@@ -1,7 +1,7 @@
 ---
 title: System-Defined Device Setup Classes Reserved for System Use
 description: System-Defined Device Setup Classes Reserved for System Use
-ms.date: 06/03/2022
+ms.date: 12/14/2022
 ---
 
 # System-Defined Device Setup Classes Reserved for System Use
@@ -86,7 +86,7 @@ This class is reserved for system use.
 **USB Bus Devices (hubs and host controllers)**<br/>
 Class = USB<br/>
 ClassGuid = {36fc9e60-c465-11cf-8056-444553540000}<br/>
-This class includes USB host controllers and USB hubs, but not USB peripherals. Drivers for this class are system-supplied.
+This class includes USB host controllers and USB hubs, but not USB peripherals. Drivers for this class are system-supplied. Drivers for USB peripherals should use the appropriate class from [System-Defined Device Setup Classes Available to Vendors](./system-defined-device-setup-classes-available-to-vendors.md) that matches the functionality of the peripheral, or use the USBDevice class if no other class is a better fit.
 
  
 

@@ -4,14 +4,16 @@ description: The KSJACK\_DESCRIPTION2 structure specifies the capabilities and t
 keywords: ["KSJACK_DESCRIPTION2 structure Audio Devices", "PKSJACK_DESCRIPTION2 structure pointer Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSJACK_DESCRIPTION2
 api_location:
 - ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 03/06/2023
 ---
+
 
 # KSJACK\_DESCRIPTION2 structure
 
@@ -20,7 +22,7 @@ The `KSJACK_DESCRIPTION2` structure specifies the capabilities and the current s
 
 ## Syntax
 
-```ManagedCPlusPlus
+```cpp
 typedef struct _tagKSJACK_DESCRIPTION2 {
   DWORD DeviceStateInfo;
   DWORD JackCapabilities;

@@ -11,7 +11,7 @@ ms.date: 05/23/2017
 ## <span id="ddk_symbol_status_abbreviations_dbg"></span><span id="DDK_SYMBOL_STATUS_ABBREVIATIONS_DBG"></span>
 
 
-Symbol file types and their loading status can be determined by using the [**lm (List Loaded Modules)**](lm--list-loaded-modules-.md) command, the [**!lmi**](-lmi.md) extension, or WinDbg's [Debug | Modules](debug---modules.md) menu command.
+Symbol file types and their loading status can be determined by using the [**lm (List Loaded Modules)**](../debuggercmds/lm--list-loaded-modules-.md) command, the [**!lmi**](../debuggercmds/-lmi.md) extension, or WinDbg's **Debug | Modules** menu command.
 
 Each of these displays information about loaded modules and their symbols.
 

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x175 PREVIOUS_FATAL_ABNORMAL_RESET_ERROR", "PREVIOUS_FATA
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - PREVIOUS_FATAL_ABNORMAL_RESET_ERROR
 api_type:
@@ -18,7 +19,7 @@ The PREVIOUS\_FATAL\_ABNORMAL\_RESET\_ERROR live dump has a value of 0x00000175.
 (This code can never be used for a real bug check; it is used to identify live dumps.)
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## PREVIOUS\_FATAL\_ABNORMAL\_RESET\_ERROR Parameters

@@ -4,15 +4,15 @@ description: The optional ScanRegion element specifies the area to scan within t
 keywords: ["ScanRegion element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ScanRegion
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 05/02/2023
 ---
 
 # ScanRegion element
-
 
 The optional **ScanRegion** element specifies the area to scan within the input document boundaries.
 
@@ -30,53 +30,19 @@ There are no attributes.
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="scanregionheight.md" data-raw-source="[&lt;strong&gt;ScanRegionHeight&lt;/strong&gt;](scanregionheight.md)"><strong>ScanRegionHeight</strong></a></p></td>
-</tr>
-<tr class="even">
-<td><p><a href="scanregionwidth.md" data-raw-source="[&lt;strong&gt;ScanRegionWidth&lt;/strong&gt;](scanregionwidth.md)"><strong>ScanRegionWidth</strong></a></p></td>
-</tr>
-<tr class="odd">
-<td><p><a href="scanregionxoffset.md" data-raw-source="[&lt;strong&gt;ScanRegionXOffset&lt;/strong&gt;](scanregionxoffset.md)"><strong>ScanRegionXOffset</strong></a></p></td>
-</tr>
-<tr class="even">
-<td><p><a href="scanregionyoffset.md" data-raw-source="[&lt;strong&gt;ScanRegionYOffset&lt;/strong&gt;](scanregionyoffset.md)"><strong>ScanRegionYOffset</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**ScanRegionHeight**](scanregionheight.md) |
+| [**ScanRegionWidth**](scanregionwidth.md) |
+| [**ScanRegionXOffset**](scanregionxoffset.md) |
+| [**ScanRegionYOffset**](scanregionyoffset.md) |
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="mediaback.md" data-raw-source="[&lt;strong&gt;MediaBack&lt;/strong&gt;](mediaback.md)"><strong>MediaBack</strong></a></p></td>
-</tr>
-<tr class="even">
-<td><p><a href="mediafront.md" data-raw-source="[&lt;strong&gt;MediaFront&lt;/strong&gt;](mediafront.md)"><strong>MediaFront</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**MediaBack**](mediaback.md) |
+| [**MediaFront**](mediafront.md) |
 
 ## Remarks
 
@@ -91,7 +57,6 @@ If the requested scan region of a scan job would fall completely outside the sup
 The WSD Scan Service can adjust a requested scan region if it cannot fulfill the specified dimensions. Any changes to the scan region should be reported in the [**DocumentFinalParameters**](documentfinalparameters.md) elements in the scan job.
 
 ## See also
-
 
 [**DocumentFinalParameters**](documentfinalparameters.md)
 
@@ -108,13 +73,3 @@ The WSD Scan Service can adjust a requested scan region if it cannot fulfill the
 [**ScanRegionXOffset**](scanregionxoffset.md)
 
 [**ScanRegionYOffset**](scanregionyoffset.md)
-
- 
-
- 
-
-
-
-
-
-

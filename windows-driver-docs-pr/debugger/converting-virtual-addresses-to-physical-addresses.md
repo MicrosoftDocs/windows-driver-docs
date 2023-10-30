@@ -23,11 +23,11 @@ Suppose you are debugging a target computer on which the MyApp.exe process is ru
 
 **Converting a virtual address to a physical address using !vtop**
 
-1.  Make sure that you are working in hexadecimal. If necessary, set the current base with the [**N 16**](n--set-number-base-.md) command.
+1.  Make sure that you are working in hexadecimal. If necessary, set the current base with the [**N 16**](../debuggercmds/n--set-number-base-.md) command.
 
 2.  Determine the *byte index* of the address. This number is equal to the lowest 12 bits of the virtual address. Thus, the virtual address 0x0012F980 has a byte index of 0x980.
 
-3.  Determine the *directory base* of the address by using the [**!process**](-process.md) extension:
+3.  Determine the *directory base* of the address by using the [**!process**](../debuggercmds/-process.md) extension:
 
     ```dbgcmd
     kd> !process 0 0
@@ -40,7 +40,7 @@ Suppose you are debugging a target computer on which the MyApp.exe process is ru
 
 4.  Determine the *page frame number* of the directory base. This is simply the directory base without the three trailing hexadecimal zeros. In this example, the directory base is 0x098FD000, so the page frame number is 0x098FD.
 
-5.  Use the [**!vtop**](-vtop.md) extension. The first parameter of this extension should be the page frame number. The second parameter of **!vtop** should be the virtual address in question:
+5.  Use the [**!vtop**](../debuggercmds/-vtop.md) extension. The first parameter of this extension should be the page frame number. The second parameter of **!vtop** should be the virtual address in question:
 
     ```dbgcmd
     kd> !vtop 98fd 12f980
@@ -52,7 +52,7 @@ Suppose you are debugging a target computer on which the MyApp.exe process is ru
 
 6.  Add the byte index to the address of the beginning of the page: 0x09DE9000 + 0x980 = 0x09DE9980. This is the desired physical address.
 
-You can verify that this computation was done correctly by displaying the memory at each address. The [**!d\\***](-db---dc---dd---dp---dq---du---dw.md) extension displays memory at a specified physical address:
+You can verify that this computation was done correctly by displaying the memory at each address. The [**!d\\***](../debuggercmds/-db---dc---dd---dp---dq---du---dw.md) extension displays memory at a specified physical address:
 
 ```dbgcmd
 kd> !dc 9de9980
@@ -62,7 +62,7 @@ kd> !dc 9de9980
 # 9de99b0 .....
 ```
 
-The [**d\* (Display Memory)**](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) command uses a virtual address as its argument:
+The [**d\* (Display Memory)**](../debuggercmds/d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) command uses a virtual address as its argument:
 
 ```dbgcmd
 kd> dc 12f980
@@ -80,7 +80,7 @@ Again, assume you are investigating the virtual address 0x0012F980 belonging to 
 
 **Converting a virtual address to a physical address using !pte**
 
-1.  Make sure that you are working in hexadecimal. If necessary, set the current base with the [**N 16**](n--set-number-base-.md) command.
+1.  Make sure that you are working in hexadecimal. If necessary, set the current base with the [**N 16**](../debuggercmds/n--set-number-base-.md) command.
 
 2.  Determine the *byte index* of the address. This number is equal to the lowest 12 bits of the virtual address. Thus, the virtual address 0x0012F980 has a byte index of 0x980.
 
@@ -99,7 +99,7 @@ Again, assume you are investigating the virtual address 0x0012F980 belonging to 
     .cache forcedecodeuser done
     ```
 
-4.  Use the [**!pte**](-pte.md) extension with the virtual address as its argument. This displays information in two columns. The left column describes the page directory entry (PDE) for this address; the right column describes its page table entry (PTE):
+4.  Use the [**!pte**](../debuggercmds/-pte.md) extension with the virtual address as its argument. This displays information in two columns. The left column describes the page directory entry (PDE) for this address; the right column describes its page table entry (PTE):
 
     ```dbgcmd
     kd> !pte 12f980
@@ -121,7 +121,7 @@ Although the **!ptov** and **pte** extensions supply the fastest way to convert 
 
 Memory structures vary in size, depending on the processor and the hardware configuration. This example is taken from an x86 system that does not have Physical Address Extension (PAE) enabled.
 
-Using 0x0012F980 again as the virtual address, you first need to convert it to binary, either by hand or by using the [**.formats (Show Number Formats)**](-formats--show-number-formats-.md) command:
+Using 0x0012F980 again as the virtual address, you first need to convert it to binary, either by hand or by using the [**.formats (Show Number Formats)**](../debuggercmds/-formats--show-number-formats-.md) command:
 
 ```dbgcmd
 kd> .formats 12f980
@@ -179,7 +179,7 @@ c00004bc  09de9067
 
 This PTE has value 0x09DE9067. It is made of two fields:
 
--   The low 12 bits of the PTE are the *status flags*. In this case, these flags equal 0x067 -- or in binary, 0y000001100111. For an explanation of the status flags, see the [**!pte**](-pte.md) reference page.
+-   The low 12 bits of the PTE are the *status flags*. In this case, these flags equal 0x067 -- or in binary, 0y000001100111. For an explanation of the status flags, see the [**!pte**](../debuggercmds/-pte.md) reference page.
 
 -   The high 20 bits of the PTE are equal to the *page frame number* (PFN) of the PTE. In this case, the PFN is 0x09DE9.
 

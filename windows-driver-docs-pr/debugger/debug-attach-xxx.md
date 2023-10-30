@@ -4,6 +4,7 @@ description: The DEBUG\_ATTACH\_*XXX* bit-flags described in this topic control 
 ms.date: 08/10/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DEBUG_ATTACH_XXX
 api_location:
@@ -39,7 +40,7 @@ The possible values include the following.
 </dl>
 </td>
 <td align="left" width="60%">
-<p>Re-attach to an application to which a debugger has already attached (and possibly abandoned).  For more information about re-attaching to targets, see <a href="/windows-hardware/drivers/debugger/-attach--attach-to-process-" data-raw-source="[.attach (Attach to Process)](./-attach--attach-to-process-.md)">.attach (Attach to Process)</a>.</p>
+<p>Re-attach to an application to which a debugger has already attached (and possibly abandoned).  For more information about re-attaching to targets, see <a href="/windows-hardware/drivers/debuggercmds/-attach--attach-to-process-" data-raw-source="[.attach (Attach to Process)](./../debuggercmds/-attach--attach-to-process-.md)">.attach (Attach to Process)</a>.</p>
 <p>If this flag is set, then the other DEBUG_ATTACH_<i>XXX</i> flags must not be set.</p>
 </td>
 </tr>

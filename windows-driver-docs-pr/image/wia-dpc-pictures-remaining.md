@@ -4,6 +4,7 @@ description: The WIA_DPC_PICTURES_REMAINING property contains the number of pict
 keywords: ["WIA_DPC_PICTURES_REMAINING Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPC_PICTURES_REMAINING
 api_location:

@@ -41,7 +41,7 @@ To move data into or out of a memory object's buffer, your driver calls either [
 
 If your driver creates a memory object by calling [**WdfMemoryCreatePreallocated**](/windows-hardware/drivers/ddi/wdfmemory/nf-wdfmemory-wdfmemorycreatepreallocated), it can subsequently assign a different buffer to the memory object by calling [**WdfMemoryAssignBuffer**](/windows-hardware/drivers/ddi/wdfmemory/nf-wdfmemory-wdfmemoryassignbuffer).
 
-When a driver sends an I/O request to an [I/O target](using-i-o-targets.md), it typically passes an input or output buffer to a [framework I/O target object method](/windows-hardware/drivers/ddi/wdfiotarget/). The driver specifies the buffer by either passing a [**WDF\_MEMORY\_DESCRIPTOR**](/windows-hardware/drivers/ddi/wdfmemory/ns-wdfmemory-_wdf_memory_descriptor) structure that describes the buffer or by passing a memory object handle. (I/O target object methods that send I/O requests synchronously require a **WDF\_MEMORY\_DESCRIPTOR** structure, and methods that send I/O requests asynchronously require a memory object handle.)
+When a driver sends an I/O request to an [I/O target](./introduction-to-i-o-targets.md), it typically passes an input or output buffer to a [framework I/O target object method](/windows-hardware/drivers/ddi/wdfiotarget/). The driver specifies the buffer by either passing a [**WDF\_MEMORY\_DESCRIPTOR**](/windows-hardware/drivers/ddi/wdfmemory/ns-wdfmemory-_wdf_memory_descriptor) structure that describes the buffer or by passing a memory object handle. (I/O target object methods that send I/O requests synchronously require a **WDF\_MEMORY\_DESCRIPTOR** structure, and methods that send I/O requests asynchronously require a memory object handle.)
 
 For information about when a memory buffer is valid, see [Memory Buffer Life Cycle](memory-buffer-life-cycle.md).
 
@@ -73,4 +73,3 @@ However, drivers can also use memory objects for local buffers. An advantage to 
 ### Aligning Buffers
 
 Your driver can use the [**WDF\_ALIGN\_SIZE\_UP**](/windows-hardware/drivers/ddi/wdfcore/nf-wdfcore-wdf_align_size_up) or [**WDF\_ALIGN\_SIZE\_DOWN**](/windows-hardware/drivers/ddi/wdfcore/nf-wdfcore-wdf_align_size_down) function to calculate a buffer size that is aligned to a specified alignment offset. This calculation is useful if your driver must allocate multiple contiguous buffers, if each buffer must begin at an address alignment boundary.
-

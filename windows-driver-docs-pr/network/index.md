@@ -29,7 +29,7 @@ This guide includes the following sections:
 
 [Virtualized Networking](virtualized-networking.md)
 
-[Wireless Networking](wifi-universal-driver-model.md)
+[Wireless Networking](./wdi-miniport-driver-design-guide.md)
 
 [Network Module Registrar](network-module-registrar2.md)
 
@@ -46,5 +46,3 @@ This guide includes the following sections:
 [Kernel Mode SDK Topics for Network Drivers](kernel-mode-sdk-topics-for-network-drivers.md)
 
 [Previous Versions of Network Drivers](network-drivers-prior-to-windows-vista.md)
- 
-

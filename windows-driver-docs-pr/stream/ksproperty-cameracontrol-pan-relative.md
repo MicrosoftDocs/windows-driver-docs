@@ -4,6 +4,7 @@ description: The KSPROPERTY_CAMERACONTROL_PAN_RELATIVE property specifies a came
 keywords: ["KSPROPERTY_CAMERACONTROL_PAN_RELATIVE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_PAN_RELATIVE
 api_location:

@@ -9,7 +9,7 @@ ms.date: 04/20/2017
 
 When a Windows Driver Frameworks (WDF) driver calls [**WdfDeviceStopIdle**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicestopidle), the framework increments the device's power reference count. Every successful call to **WdfDeviceStopIdle** must be matched by a call to [**WdfDeviceResumeIdle**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceresumeidle) to decrement the power reference count.
 
-Starting in Kernel-Mode Driver Framework (KMDF) 1.15 and User-Mode Driver Framework (UMDF) 2.15, you can monitor power reference usage by using the [**!wdfkd.wdfdevice**](../debugger/-wdfkd-wdfdevice.md) and [**!wdfkd.wdftagtracker**](../debugger/-wdfkd-wdftagtracker.md) debugger extensions. This functionality is disabled by default for performance reasons, so you need to turn it on with the WdfVerifier application or by manually editing the driver’s service key.
+Starting in Kernel-Mode Driver Framework (KMDF) 1.15 and User-Mode Driver Framework (UMDF) 2.15, you can monitor power reference usage by using the [**!wdfkd.wdfdevice**](../debuggercmds/-wdfkd-wdfdevice.md) and [**!wdfkd.wdftagtracker**](../debuggercmds/-wdfkd-wdftagtracker.md) debugger extensions. This functionality is disabled by default for performance reasons, so you need to turn it on with the WdfVerifier application or by manually editing the driver’s service key.
 
 ## WdfVerifier
 
@@ -20,7 +20,7 @@ Open the settings list for your driver and right-click the **TrackPower** settin
 
  
 
-![setting track power references in wdfverifier.](images/wdfverifier--track-power-references-on.png)
+:::image type="content" source="images/wdfverifier--track-power-references-on.png" alt-text="Screenshot of setting track power references in WdfVerifier.":::
 
 ## Editing the Registry
 
@@ -63,14 +63,14 @@ if (NT_SUCCESS(status)) {
 ## Debugging with WdfKd
 
 
-To display the power references taken on the device, as well as a tag tracker that shows the reference history, use [**!wdfkd.wdfdevice**](../debugger/-wdfkd-wdfdevice.md) with verbose flags:
+To display the power references taken on the device, as well as a tag tracker that shows the reference history, use [**!wdfkd.wdfdevice**](../debuggercmds/-wdfkd-wdfdevice.md) with verbose flags:
 
 ```cpp
 kd> !wdfkd.wdfdevice 0x6d939790 ff
 Power references: 0 !wdftagtracker 0x9ea030a8
 ```
 
-Calling the [**!wdfkd.wdftagtracker**](../debugger/-wdfkd-wdftagtracker.md) shows the device’s power reference history:
+Calling the [**!wdfkd.wdftagtracker**](../debuggercmds/-wdfkd-wdftagtracker.md) shows the device’s power reference history:
 
 ```cpp
 kd> !wdftagtracker 0x9ea030a8
@@ -100,7 +100,7 @@ if (NT_SUCCESS(status)) {
 }
 ```
 
-Corresponding [**!wdftagtracker**](../debugger/-wdfkd-wdftagtracker.md) sample output:
+Corresponding [**!wdftagtracker**](../debuggercmds/-wdfkd-wdftagtracker.md) sample output:
 
 ```cpp
 (--) 0 ref: Tag 'Heyo' at Time 0x24e40 ticks

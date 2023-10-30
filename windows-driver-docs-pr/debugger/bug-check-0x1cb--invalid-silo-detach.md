@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1CB INVALID_SILO_DETACH", "INVALID_SILO_DETACH"]
 ms.date: 02/21/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INVALID_SILO_DETACH
 api_type:
@@ -16,7 +17,7 @@ api_type:
 The INVALID\_SILO\_DETACH bug check has a value of 0x000001CB. It indicates that a thread failed to detach from a silo before exiting.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
  
 

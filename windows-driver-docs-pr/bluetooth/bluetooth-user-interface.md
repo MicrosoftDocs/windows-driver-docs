@@ -1,7 +1,7 @@
 ---
 title: Bluetooth user interface
 description: Describes working with the Bluetooth user interface in Windows for software developers and vendors
-ms.date: 10/06/2022
+ms.date: 09/29/2023
 ---
 
 # Bluetooth user interface
@@ -34,7 +34,7 @@ The Bluetooth notification area icon appears when the Bluetooth radio is connect
 
 If users want a persistent Bluetooth notification area icon, they can select the **Show the Bluetooth icon in the notification area** check box on the **Options** tab of the Control Panel Bluetooth Settings application.
 
-:::image type="content" source="images/bluetoothnotificationsettings.jpg" alt-text="Screenshot of the Options tab in Bluetooth Settings dialog box.":::
+:::image type="content" source="images/bluetoothnotificationsettings.jpg" alt-text="Screenshot of the Options tab in the Bluetooth Settings dialog box, showing the 'Show the Bluetooth icon in the notification area' checkbox.":::
 
 > [!NOTE]
 > Even if no Bluetooth icon is in the notification area, you can still use the Control Panel Bluetooth Settings application to perform related tasks such as adding new Bluetooth devices, making the computer discoverable, and so on.

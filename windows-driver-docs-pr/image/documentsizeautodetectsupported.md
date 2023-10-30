@@ -4,15 +4,15 @@ description: The required DocumentSizeAutoDetectSupported element indicates whet
 keywords: ["DocumentSizeAutoDetectSupported element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn DocumentSizeAutoDetectSupported
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 04/24/2023
 ---
 
 # DocumentSizeAutoDetectSupported element
-
 
 The required **DocumentSizeAutoDetectSupported** element indicates whether the scan device can detect the size of the original media.
 
@@ -34,27 +34,13 @@ Required. A Boolean value that must be 0, 1, false, or true.**falsetrue**
 
 ## Child elements
 
-
 There are no child elements.
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="devicesettings.md" data-raw-source="[&lt;strong&gt;DeviceSettings&lt;/strong&gt;](devicesettings.md)"><strong>DeviceSettings</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**DeviceSettings**](devicesettings.md) |
 
 ## Remarks
 
@@ -64,15 +50,4 @@ You cannot extend the allowed values for this element.
 
 ## See also
 
-
 [**DeviceSettings**](devicesettings.md)
-
- 
-
- 
-
-
-
-
-
-

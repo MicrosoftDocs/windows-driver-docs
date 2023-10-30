@@ -4,6 +4,7 @@ description: DIF_FOUNDDEVICE
 keywords: ["DIF_FOUNDDEVICE Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DIF_FOUNDDEVICE
 api_type:

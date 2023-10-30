@@ -5,17 +5,17 @@ keywords:
 - INF UpdateInis Directive Device and Driver Installation
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INF UpdateInis Directive
 api_type:
 - NA
-ms.date: 07/11/2022
+ms.date: 07/17/2023
 ---
 
 # INF UpdateInis directive
 
-> [!NOTE]
-> If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
+[!INCLUDE [Caution invalid INF directive](../includes/inf-directive-invalid-22h2.md)]
 
 An **UpdateInis** directive references one or more named sections, specifying an INI file from which a particular section or line is to be read and applied to an existing INI file of the same name on the target computer. Optionally, line-by-line modifications from and to such INI files can be specified in the *update-ini-section*.
 

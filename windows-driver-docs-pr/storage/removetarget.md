@@ -4,6 +4,7 @@ description: The RemoveTarget WMI method configures the WMI provider so that it 
 keywords: ["RemoveTarget function Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - RemoveTarget
 api_location:

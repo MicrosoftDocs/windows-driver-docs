@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x16C INVALID_RUNDOWN_PROTECTION_FLAGS", "INVALID_RUNDOWN_
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INVALID_RUNDOWN_PROTECTION_FLAGS
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The INVALID\_RUNDOWN\_PROTECTION\_FLAGS bug check has a value of 0x0000016C. This indicates that the flags supplied to one of the rundown protection APIs were invalid.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## INVALID\_RUNDOWN\_PROTECTION\_FLAGS Parameters

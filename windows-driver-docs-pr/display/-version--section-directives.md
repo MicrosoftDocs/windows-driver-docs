@@ -1,11 +1,10 @@
 ---
 title: '[Version] section directives'
 description: This topic describes [Version] section directives in the INF.
-ms.date: 04/20/2017
+ms.date: 05/05/2023
 ---
 
 # \[Version\] section directives
-
 
 This topic describes *\[Version\]* section directives in the INF.
 
@@ -22,8 +21,9 @@ Provider=%MSFT%
 ClassGUID={4D36E968-E325-11CE-BFC1-08002BE10318}
 Class=Display
 DriverVer=11/22/2004, 6.14.10.7000
+PnpLockdown=1
 
-Note: 
+Note:
 no line item for LayoutFile=layout.inf
 no line item for CatalogFile=delta.cat
 ```
@@ -39,16 +39,9 @@ Provider=%IHV%
 ClassGUID={4D36E968-E325-11CE-BFC1-08002BE10318}
 Class=Display
 DriverVer=11/22/2004, 6.14.10.7000
+CatalogFile=ExampleCatalog.cat
+PnpLockdown=1
 
-Note: 
+Note:
 no line item for LayoutFile=layout.inf
 ```
-
- 
-
- 
-
-
-
-
-

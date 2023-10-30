@@ -7,10 +7,12 @@ keywords:
 - configuration component WDK print
 - components WDK printing
 - architecture WDK print
-ms.date: 09/08/2022
+ms.date: 01/26/2023
 ---
 
 # Introduction to printing
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The Microsoft Windows printing architecture consists of a print spooler and a set of printer drivers. By calling device-independent functions, applications can create print jobs and send them to many devices. This includes laser printers, vector plotters, raster printers, and fax machines.
 

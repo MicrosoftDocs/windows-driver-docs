@@ -11,7 +11,7 @@ This topic provides guidance to Mobile Broadband (MB) module manufacturers inten
 
 The information in this topic applies to:
 
--   Windows 8
+-   Windows 8/Windows 10/Windows 11
 
 ## Device Requirements
 
@@ -27,7 +27,7 @@ To support firmware updates on Mobile Broadband using Windows Update, module or 
 
 The following diagram shows the high level design and interaction between the three components involved: MBIM device, Windows 8 Operating System and IHV supplied firmware upgrade driver.
 
-![image showing how the components interact. this is described in the next paragraph.](images/mbdevicefirmwareupdate.png)
+:::image type="content" source="images/mbdevicefirmwareupdate.png" alt-text="Diagram showing the interaction between MBIM device, Windows 8 OS, and IHV supplied firmware upgrade driver.":::
 
 -   When the WWAN Service detects the arrival of new MB device, it will check if device support Firmware ID (FID) Device Service. If it is present, it will retrieve the FID, which is defined to be GUID. The Firmware Device Service specification that the IHV needs to the support on the device is described **below**.
 -   WWAN Service (Windows OS) will generate “soft device-node” using the FID obtained above as the device hardware Id. This referred to as “Soft Dev Node” in the diagram above. The creation of the dev-node will kick start PnP subsystem (Windows OS) to find the best matched driver. In Windows 8, PnP system will first attempt to install a driver from the local store, if one is available, and in parallel OS will attempt to fetch a better matched driver from WU. The inbox NULL driver will used be used as default if better match driver is not available to eliminate “Driver Not Found” issue.

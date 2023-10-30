@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x14B SOC_SUBSYSTEM_FAILURE", "Bug Check 0x14B SOC_SUBSYST
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Bug Check 0x14B SOC_SUBSYSTEM_FAILURE
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The SOC\_SUBSYSTEM\_FAILURE bug check has a value of 0x0000014B. This indicates that an unrecoverable error was encountered in a System on a Chip (SoC) subsystem.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## Bug Check 0x14B SOC\_SUBSYSTEM\_FAILURE Parameters
@@ -58,7 +59,7 @@ The SOC\_SUBSYSTEM\_FAILURE bug check has a value of 0x0000014B. This indicates 
 
 ## Resolution
 
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
 ```dbgcmd
 2: kd> !analyze -v
@@ -90,7 +91,7 @@ Use the provided nt!SOC\_SUBSYSTEM\_FAILURE\_DETAILS structure to dump the failu
 
 Work with SoC vendor to further parse the data, including the optional vendor supplied general purpose data block.
 
-You may want to examine the stack trace using the [**k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command. You can specify the processor number to examine the stacks on all processors.
+You may want to examine the stack trace using the [**k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)**](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command. You can specify the processor number to examine the stacks on all processors.
 
 You can also set a breakpoint in the code leading up to this stop code and attempt to single step forward into the faulting code.
 

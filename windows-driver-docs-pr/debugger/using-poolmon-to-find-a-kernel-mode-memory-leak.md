@@ -1,24 +1,21 @@
 ---
-title: Using PoolMon to Find a Kernel-Mode Memory Leak
-description: Using PoolMon to Find a Kernel-Mode Memory Leak
+title: Use PoolMon to find a kernel-mode memory leak
+description: Learn how to use PoolMon to find a kernel-mode memory leak by determining which pool tag is associated with the leak.
 keywords: ["memory leak, kernel-mode, PoolMon", "PoolMon", "PoolMon, finding a memory leak"]
-ms.date: 05/23/2017
+ms.date: 12/30/2022
 ---
 
-# Using PoolMon to Find a Kernel-Mode Memory Leak
+# Use PoolMon to find a kernel-mode memory leak
 
+If you suspect there's a kernel-mode memory leak, you can use the PoolMon tool to determine which pool tag is associated with the leak.
 
-If you suspect there is a kernel-mode memory leak, the easiest way to determine which pool tag is associated with the leak is to use the PoolMon tool.
+PoolMon (Poolmon.exe) monitors pool memory usage by pool tag name. This tool is included in the Windows Driver Kit (WDK). For more information, see [PoolMon](../devtest/poolmon.md).
 
-PoolMon (Poolmon.exe) monitors pool memory usage by pool tag name. This tool is included in the Windows Driver Kit (WDK). For a full description, see [PoolMon](../devtest/poolmon.md) in the WDK documentation.
+## GFlags pool settings
 
-### <span id="enable_pool_tagging__windows_2000_and_windows_xp_"></span><span id="ENABLE_POOL_TAGGING__WINDOWS_2000_AND_WINDOWS_XP_"></span>Enable Pool Tagging (Windows 2000 and Windows XP)
+Some GFlags settings such as Special Pool, will impact how memory pools are used. For more information, see [GFlags](gflags.md) and [Configuring Special Pool](configuring-special-pool.md).
 
-On Windows 2000 and Windows XP you must first use GFlags to enable pool tagging. GFlags is included in Debugging Tools for Windows. Start GFlags, choose the **System Registry** tab, check the **Enable Pool Tagging** box, and then select **Apply**. You must restart Windows for this setting to take effect. For more details, see [GFlags](gflags.md).
-
-On Windows Server 2003 and later versions of Windows, pool tagging is always enabled.
-
-### <span id="using_poolmon"></span><span id="USING_POOLMON"></span>Using PoolMon
+## Use PoolMon
 
 The PoolMon header displays the total paged and non-paged pool bytes. The columns show pool use for each pool tag. The display is updated automatically every few seconds. For example:
 
@@ -35,84 +32,66 @@ Fat   Paged   6662  ( 8)  4971  ( 6)  1691   174560 ( 128)   103
 MmSt  Paged    614  ( 0)   441  ( 0)   173    83456   ( 0)   482 
 ```
 
-PoolMon has command keys that sort the output according to various criteria. Press the letter associated with each command in order to re-sort the data. It takes a few seconds for each command to work.
+PoolMon has command keys that sort the output according to various criteria. Select the letter associated with each command in order to resort the data. It takes a few seconds for each command to work.
 
 The sort commands include:
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Command Key</th>
-<th align="left">Operation</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>P</strong></p></td>
-<td align="left"><p>Limits the tags shown to nonpaged pool, paged pool, or both. Repeatedly pressing <strong>P</strong> cycles through each of these options, in that order.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>B</strong></p></td>
-<td align="left"><p>Sorts tags by maximum byte usage.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>M</strong></p></td>
-<td align="left"><p>Sorts tags by maximum byte allocations.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>T</strong></p></td>
-<td align="left"><p>Sorts tags alphabetically by tag name.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>E</strong></p></td>
-<td align="left"><p>Causes the display to include the paged and non-paged totals across the bottom.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>A</strong></p></td>
-<td align="left"><p>Sorts tags by allocation size.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>F</strong></p></td>
-<td align="left"><p>Sorts tags by free operations.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>S</strong></p></td>
-<td align="left"><p>Sorts tags by the difference between allocations and frees.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Q</strong></p></td>
-<td align="left"><p>Quits PoolMon.</p></td>
-</tr>
-</tbody>
-</table>
+| Command key | Operation |
+|---|---|
+| **P** | Limits the tags shown to non-paged pool bytes, paged pool bytes, or both. Repeatedly pressing **P** cycles through each of these options, in that order.|
+| **B** | Sorts tags by maximum byte usage. |
+| **M** | Sorts tags by maximum byte allocations. |
+| **T** | Sorts tags alphabetically by tag name. |
+| **E** | Causes the display to include the paged and non-paged totals across the bottom. |
+| **A** | Sorts tags by allocation size. |
+| **F** | Sorts tags by free operations. |
+| **S** | Sorts tags by the difference between allocations and frees. |
+| **Q** | Quits PoolMon. |
 
- 
+### Display driver names in PoolMon
 
-### <span id="using_the_poolmon_utility_to_find_a_memory_leak"></span><span id="USING_THE_POOLMON_UTILITY_TO_FIND_A_MEMORY_LEAK"></span>Using the PoolMon Utility to Find a Memory Leak
+You can use the PoolMon /g parameter to display the names of Windows components and commonly used drivers that assign each pool tag. If you find a problem in allocations with a particular tag, this feature helps you identify the offending component or driver.
 
-To find a memory leak with the PoolMon utility, follow this procedure:
+The components and drivers are listed in the Mapped_Driver column, the right-most column in the display. The data for the Mapped_Driver column comes from pooltag.txt, a file installed with the WDK.
 
-1.  Start PoolMon.
+The following command shows the use of the /g parameter to add the Mapped_Driver column.
 
-2.  If you have determined that the leak is occurring in non-paged pool, press **P** once; if you have determined that it is occurring in paged pool, press **P** twice. If you do not know, do not press **P** and both kinds of pool are included.
+`poolmon /g "C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\triage\pooltag.txt"`
 
-3.  Press **B** to sort the display by maximum byte use.
+### Display specific pools
 
-4.  Start your test. Take a screen shot and copy it to Notepad.
+Use the /i parameter to show pool tags that start with a specific string, for example *Hid*.
 
-5.  Take a new screen shot every half hour. By comparing screen shots, determine which tag's bytes are increasing.
+`poolmon /iHid? /g "C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\triage\pooltag.txt"`
 
-6.  Stop your test and wait a few hours. How much of the tag was freed up in this time?
+```dbgcmd
+ Memory:33473120K Avail:20055132K  PageFlts:     5   InRam Krnl:10444K P:1843072K
+ Commit:15035764K Limit:67027552K Peak:16677444K            Pool N:1023400K P:1955448K
+ System pool information
+ Tag  Type     Allocs            Frees            Diff       Bytes                 Per Alloc Mapped_Driver
 
-Typically, after an application reaches a stable running state, it allocates memory and free memory at roughly the same rate. If it tends to allocate memory faster than it frees it, its memory use will grow over time. This often indicates a memory leak.
+ HidC Paged      1667 (   0)      1659 (   0)        8         896 (          0)         112 [hidclass.sys - HID Class d 
+ HidC Nonp      17375 (   0)     17256 (   0)      119       19808 (          0)         166 [hidclass.sys - HID Class d 
+ HidP Nonp       1014 (   0)       998 (   0)       16        6704 (          0)         419 [hidparse.sys - HID Parser]
+```
+### Use the PoolMon utility to find a memory leak
 
-### <span id="addressing_the_leak"></span><span id="ADDRESSING_THE_LEAK"></span>Addressing the Leak
+Here is one approach to find a memory leak with the PoolMon utility:
 
-After you have determined which pool tag is associated with the leak, this might reveal all you need to know about the leak. If you need to determine which specific instance of the allocation routine is causing the leak, see [Using the Kernel Debugger to Find Kernel-Mode Memory Leaks](using-the-kernel-debugger-to-find-a-kernel-mode-memory-leak.md).
+1. Start PoolMon.
 
- 
+2. If you've determined that the leak is occurring in a non-paged pool, select P once. If you've determined that it's occurring in a paged pool, select P twice. If you don't know, don't select P, so both kinds of pool are included.
 
+3. Select B to sort the display by maximum byte use.
+
+4. Start your test. Copy the output from the screen, for example by taking a screenshot and saving it.
+
+5. Take a new screenshot every half hour. By comparing screenshots, determine which tag's bytes are increasing.
+
+6. Stop your test and wait a few hours. Determine how much of the tag was freed up in this time.
+
+Typically, after an application reaches a stable running state, it allocates memory and free memory at the same rate. If it allocates memory faster than it frees it, its memory use grows over time. This often indicates a memory leak.
+
+## Address the leak
+
+After you've determined which pool tag is associated with the leak, you might have all you need to know about the leak. If you need to determine which specific instance of the allocation routine is causing the leak, see [Using the kernel debugger to find kernel-mode memory leaks](using-the-kernel-debugger-to-find-a-kernel-mode-memory-leak.md).

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x12E INVALID_MDL_RANGE", "INVALID_MDL_RANGE"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INVALID_MDL_RANGE
 api_type:
@@ -27,7 +28,7 @@ IoBuildPartialMdl(
 ```
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## INVALID\_MDL\_RANGE Parameters

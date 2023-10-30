@@ -4,16 +4,19 @@ description: The TVOT_TRACKBAR option type consists of a track bar inside a grou
 keywords: ["TVOT_TRACKBAR Print Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - TVOT_TRACKBAR
 api_location:
 - compstui.h
 api_type:
 - HeaderDef
-ms.date: 09/16/2021
+ms.date: 01/30/2023
 ---
 
 # TVOT_TRACKBAR
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The TVOT_TRACKBAR option type consists of a track bar inside a group box.
 

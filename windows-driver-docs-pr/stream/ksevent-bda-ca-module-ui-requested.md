@@ -4,6 +4,7 @@ description: Clients use KSEVENT_BDA_CA_MODULE_UI_REQUESTED to request notificat
 keywords: ["KSEVENT_BDA_CA_MODULE_UI_REQUESTED Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSEVENT_BDA_CA_MODULE_UI_REQUESTED
 api_location:

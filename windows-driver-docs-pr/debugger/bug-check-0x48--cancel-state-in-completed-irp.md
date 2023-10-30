@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x48 CANCEL_STATE_IN_COMPLETED_IRP", "CANCEL_STATE_IN_COMP
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - CANCEL_STATE_IN_COMPLETED_IRP
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The CANCEL\_STATE\_IN\_COMPLETED\_IRP bug check has a value of 0x00000048. This indicates that an I/O request packet (IRP) was completed, and then was subsequently canceled.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## CANCEL\_STATE\_IN\_COMPLETED\_IRP Parameters

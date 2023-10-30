@@ -5,6 +5,7 @@ keywords: ["Bug Check 17C PDC_LOCK_WATCHDOG_LIVEDUMP", "PDC_LOCK_WATCHDOG_LIVEDU
 ms.date: 01/04/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - PDC_LOCK_WATCHDOG_LIVEDUMP
 api_type:
@@ -33,12 +34,12 @@ A thread has been holding the PDC lock for too long. A livedump is created to pr
 ## Resolution
 -----
 
-Use the debugger [!thread](-thread.md) command to display the thread holding the lock that is provided in parameter 1.  Analyze that code to determine why it is holding the lock beyond the timeout period.
+Use the debugger [!thread](../debuggercmds/-thread.md) command to display the thread holding the lock that is provided in parameter 1.  Analyze that code to determine why it is holding the lock beyond the timeout period.
 
 
 ## See Also
 
-[\!thread](-thread.md)
+[\!thread](../debuggercmds/-thread.md)
 
 [Kernel Live Dump Code Reference](bug-check-code-reference-live-dump.md)
 

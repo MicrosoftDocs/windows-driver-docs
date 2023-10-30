@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1B PFN_SHARE_COUNT", "PFN_SHARE_COUNT"]
 ms.date: 09/14/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - PFN_SHARE_COUNT
 api_type:
@@ -19,7 +20,7 @@ The PFN\_SHARE\_COUNT bug check has a value of 0x0000001B.
 This bug check code is no longer used by the Windows operating system.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## See also

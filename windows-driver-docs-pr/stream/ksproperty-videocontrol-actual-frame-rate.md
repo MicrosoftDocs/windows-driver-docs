@@ -4,6 +4,7 @@ description: The KSPROPERTY\_VIDEOCONTROL\_ACTUAL\_FRAME\_RATE property retrieve
 keywords: ["KSPROPERTY_VIDEOCONTROL_ACTUAL_FRAME_RATE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_VIDEOCONTROL_ACTUAL_FRAME_RATE
 api_location:

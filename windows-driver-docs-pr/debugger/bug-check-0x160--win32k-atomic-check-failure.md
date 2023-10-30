@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x160 WIN32K_ATOMIC_CHECK_FAILURE", "WIN32K_ATOMIC_CHECK_F
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIN32K_ATOMIC_CHECK_FAILURE
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The WIN32K\_ATOMIC\_CHECK\_FAILURE bug check has a value of 0x00000160. This indicates that a Win32k function has violated an ATOMICCHECK.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## WIN32K\_ATOMIC\_CHECK\_FAILURE Parameters

@@ -1,56 +1,33 @@
 ---
-title: WIA\_IPS\_OVER\_SCAN\_TOP
-description: The WIA\_IPS\_OVER\_SCAN\_TOP property along with WIA\_IPS\_OVER\_SCAN\_BOTTOM, WIA\_IPS\_OVER\_SCAN\_LEFT, and WIA\_IPS\_OVER\_SCAN\_RIGHT are used to configure the amount of over scanning, in thousandths of an inch (0.001 \ 0034;) units, relative to the physical document.
+title: WIA_IPS_OVER_SCAN_TOP
+description: The WIA_IPS_OVER_SCAN_TOP property along with WIA_IPS_OVER_SCAN_BOTTOM, WIA_IPS_OVER_SCAN_LEFT, and WIA_IPS_OVER_SCAN_RIGHT are used to configure the amount of over scanning, in thousandths of an inch (0.001 \ 0034;) units, relative to the physical document.
 keywords: ["WIA_IPS_OVER_SCAN_TOP Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_OVER_SCAN_TOP
 api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 05/22/2018
+ms.date: 05/05/2023
 ---
 
-# WIA\_IPS\_OVER\_SCAN\_TOP
+# WIA_IPS_OVER_SCAN_TOP
 
+The **WIA_IPS_OVER_SCAN_TOP** property along with [**WIA_IPS_OVER_SCAN_BOTTOM**](wia-ips-over-scan-bottom.md), [**WIA_IPS_OVER_SCAN_LEFT**](wia-ips-over-scan-left.md), and [**WIA_IPS_OVER_SCAN_RIGHT**](wia-ips-over-scan-right.md) are used to configure the amount of over scanning, in thousandths of an inch (0.001") units, relative to the physical document. The WIA minidriver creates and maintains this property.
 
-The **WIA\_IPS\_OVER\_SCAN\_TOP** property along with [**WIA\_IPS\_OVER\_SCAN\_BOTTOM**](wia-ips-over-scan-bottom.md), [**WIA\_IPS\_OVER\_SCAN\_LEFT**](wia-ips-over-scan-left.md), and [**WIA\_IPS\_OVER\_SCAN\_RIGHT**](wia-ips-over-scan-right.md) are used to configure the amount of over scanning, in thousandths of an inch (0.001") units, relative to the physical document. The WIA minidriver creates and maintains this property.
+Property Type: VT_UI4
 
-
-
-
-Property Type: VT\_UI4
-
-Valid Values: WIA\_PROP\_RANGE
+Valid Values: WIA_PROP_RANGE
 
 Access Rights: Read/Write
 
 ## Remarks
 
-This property is valid for all programmable image data source items, including Flatbed (WIA\_CATEGORY\_FLATBED) and Feeder (WIA\_CATEGORY\_FEEDER) but only when the [**WIA\_IPS\_OVER\_SCAN**](wia-ips-over-scan.md) property is supported. When it is supported, this property is required.
+This property is valid for all programmable image data source items, including Flatbed (WIA_CATEGORY_FLATBED) and Feeder (WIA_CATEGORY_FEEDER) but only when the [**WIA_IPS_OVER_SCAN**](wia-ips-over-scan.md) property is supported. When it is supported, this property is required.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
-
- 
-
- 
-
-
-
-
-
+**Header:** wiadef.h (include Wiadef.h)

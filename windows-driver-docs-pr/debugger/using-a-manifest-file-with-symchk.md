@@ -22,10 +22,10 @@ In some cases, you might need to retrieve symbols for files that are on an isola
 
 ### <span id="example"></span><span id="EXAMPLE"></span>Example
 
-Suppose yourApp.exe is running on an isolated computer. The following command creates a manifest file that describes all the symbols needed to debug the yourApp.exe pocess.
+Suppose yourApp.exe is running on an isolated computer. The following command creates a manifest file that describes all the symbols needed to debug the yourApp.exe process.
 
 ```dbgcmd
-C:\>SymChk /om c:\Manifest\man.txt /ie yourApp.exe
+C:\>SymChk /om C:\Manifest\man.txt /ie yourApp.exe
 
 SYMCHK: FAILED files = 0
 SYMCHK: PASSED + IGNORED files = 28
@@ -34,7 +34,7 @@ SYMCHK: PASSED + IGNORED files = 28
 Now assume you have moved the manifest file to a different computer that is on a network that has access to a symbol store. The following command retrieves the symbols described in the manifest file and places them in the mySymbols folder.
 
 ```dbgcmd
-C:\>SymChk /im c:\FolderOnOtherComputer\man.txt /s srv*c:\mysymbols*\\aServer\symbols
+C:\>SymChk /im C:\FolderOnOtherComputer\man.txt /s srv*C:\mysymbols*\\aServer\symbols
 
 SYMCHK: myApp.exe             ERROR - Unable to download file. Error reported was 2
 . . .

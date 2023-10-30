@@ -3,11 +3,12 @@ title: Unidrv-based or PScript5-based XPSDrv Driver Changes
 description: Unidrv-based or PScript5-based XPSDrv Driver Changes
 keywords:
 - Version 3 XPS drivers WDK XPSDrv , changes
-ms.date: 04/20/2017
+ms.date: 01/30/2023
 ---
 
 # Unidrv-based or PScript5-based XPSDrv Driver Changes
 
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The following changes apply to core Unidrv or PScript5 behavior when they are running in XPSDrv mode:
 
@@ -26,11 +27,3 @@ The following changes apply to core Unidrv or PScript5 behavior when they are ru
 [Unidrv/PScript5 UI Standard Tab vs. Advanced Tree View Changes](unidrv-pscript5-ui-standard-tab-vs--advanced-tree-view-changes.md)
 
 [Providing IPrintCoreHelper Configuration Service to Filters](providing-iprintcorehelper-configuration-service-to-filters.md)
-
- 
-
- 
-
-
-
-

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xDF IMPERSONATING_WORKER_THREAD", "IMPERSONATING_WORKER_T
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IMPERSONATING_WORKER_THREAD
 api_type:
@@ -13,12 +14,10 @@ api_type:
 
 # Bug Check 0xDF: IMPERSONATING\_WORKER\_THREAD
 
-
 The IMPERSONATING\_WORKER\_THREAD bug check has a value of 0x000000DF. This indicates that a workitem did not disable impersonation before it completed.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
-
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 ## IMPERSONATING\_WORKER\_THREAD Parameters
 
@@ -54,16 +53,7 @@ The IMPERSONATING\_WORKER\_THREAD bug check has a value of 0x000000DF. This indi
 </tbody>
 </table>
 
- 
 
 ## Cause
 
 A worker thread was impersonating another process, and failed to disable impersonation before it returned.
-
- 
-
- 
-
-
-
-

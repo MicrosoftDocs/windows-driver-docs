@@ -4,6 +4,7 @@ description: Clients use KSPROPERTY_BDA_CA_REMOVE_PROGRAM to prevent access to a
 keywords: ["KSPROPERTY_BDA_CA_REMOVE_PROGRAM Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_BDA_CA_REMOVE_PROGRAM
 api_location:

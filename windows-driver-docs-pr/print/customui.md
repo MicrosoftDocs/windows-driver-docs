@@ -4,11 +4,12 @@ description: The optional customUI element specifies a custom user interface to 
 keywords: ["customUI element Print Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - customUI
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 06/19/2023
 ---
 
 # customUI element
@@ -36,91 +37,23 @@ This resource may not be available in some languages and countries.
 
 ## Attributes
 
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>bidi</strong></p></td>
-<td><p>xs:string</p></td>
-<td><p>Yes</p></td>
-<td><p></p>
-<p>A required attribute that specifies the type of communication between the printer driver and the event notification message. If the value is <strong>true</strong>, communication is bidirectional, and the driver function in the resource DLL must return a string; see the Example section. If the value is <strong>false</strong>, communication is one-way, from the printer driver to the event notification message.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>dll</strong></p></td>
-<td><p>xs:string</p></td>
-<td><p>Yes</p></td>
-<td><p></p>
-<p>A required attribute that specifies a resource DLL that contains the custom user interface display function. This DLL should be a dependent file of the printer driver and must be present in the driver resource folder (for example, %SYSTEMROOT%\system32\spool\drivers\w32x86\3).</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>entrypoint</strong></p></td>
-<td><p>xs:string</p></td>
-<td><p>Yes</p></td>
-<td><p></p>
-<p>A required attribute that specifies the function to call in the resource DLL.</p></td>
-</tr>
-</tbody>
-</table>
+| Attribute | Type | Required | Description |
+|--|--|--|--|
+| **bidi** | xs:string | Yes | A required attribute that specifies the type of communication between the printer driver and the event notification message. If the value is **true**, communication is bidirectional, and the driver function in the resource DLL must return a string; see the Example section. If the value is **false**, communication is one-way, from the printer driver to the event notification message. |
+| **dll** | xs:string | Yes | A required attribute that specifies a resource DLL that contains the custom user interface display function. This DLL should be a dependent file of the printer driver and must be present in the driver resource folder (for example, %SYSTEMROOT%\system32\spool\drivers\w32x86\3). |
+| **entrypoint** | xs:string | Yes | A required attribute that specifies the function to call in the resource DLL. |
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>Anything</strong></p></td>
-<td><p></p>
-<p>Specifies any child element according to the custom user interface schema. See the Example section.</p></td>
-</tr>
-</tbody>
-</table>
+| Element | Description |
+|--|--|
+| **Anything** | Specifies any child element according to the custom user interface schema. See the Example section. |
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="requestopen.md" data-raw-source="[&lt;strong&gt;requestOpen&lt;/strong&gt;](requestopen.md)"><strong>requestOpen</strong></a></p></td>
-<td><p></p>
-<p>An element that is used to open an event notification message on the client computer.</p></td>
-</tr>
-</tbody>
-</table>
+| Element | Description |
+|--|--|
+| [**requestOpen**](requestopen.md) | An element that is used to open an event notification message on the client computer. |
 
 ## Remarks
 
@@ -145,13 +78,4 @@ The following code example shows how to use the **customUI** element to call and
 
 ## See also
 
-
 [**requestOpen**](requestopen.md)
-
- 
-
- 
-
-
-
-

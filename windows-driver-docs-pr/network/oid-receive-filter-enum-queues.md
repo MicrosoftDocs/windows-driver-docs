@@ -1,5 +1,6 @@
 ---
 title: OID_RECEIVE_FILTER_ENUM_QUEUES
+ms.topic: reference
 description: Overlying drivers and user-mode applications issue object identifier (OID) query requests of OID_RECEIVE_FILTER_ENUM_QUEUES to obtain a list of all the receive queues that are allocated on a network adapter.
 ms.date: 08/08/2017
 keywords: 

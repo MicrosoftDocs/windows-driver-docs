@@ -25,7 +25,7 @@ Windows operating systems include native support for USB host controllers, hubs,
 
 ## Development tools
 
-- [Download the Windows Driver Kit (WDK)](/windows-hardware/drivers/download-the-wdk)
+- [Download the Windows Driver Kit (WDK)](../download-the-wdk.md)
 
 ## USB samples
 

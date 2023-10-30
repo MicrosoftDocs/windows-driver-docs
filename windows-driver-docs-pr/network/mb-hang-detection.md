@@ -4,6 +4,7 @@ description: MB hang detection
 keywords:
 - MB hang detection, Mobile Broadband hang detection, Mobile Broadband miniport driver hang detection
 ms.date: 08/09/2018
+ms.custom: UpdateFrequency3
 ---
 
 # MB hang detection
@@ -14,7 +15,7 @@ The flow diagrams in this topic use USB as the underlying bus, although the rese
 
 The following flow diagram applies generically to all NDIS object identifiers (OIDs) and callbacks to miniport drivers. There might be cases where the recovery part of this process does not work if NDIS does not fully support reset recovery.
 
-![High-level hang detection and reset flow.](images/mb-self-healing-hang-detection-highlevel.png "High-level hang detection and reset flow.")
+:::image type="content" source="images/mb-self-healing-hang-detection-highlevel.png" alt-text="Diagram illustrating high-level hang detection and reset flow.":::
 
 This hang detection and reset flow sequence consists of 3 phases:
 
@@ -30,7 +31,7 @@ For more information about the private interface that UDE client drivers can use
 
 This example uses [OID_WWAN_CONNECT](oid-wwan-connect.md) as an example for walking through the hang detection flow. 
 
-![Reset Flow for OID_WWAN_CONNECT.](images/mb-self-healing-hang-detection-wwanconnect-flow.png "Reset Flow for OID_WWAN_CONNECT.")
+:::image type="content" source="images/mb-self-healing-hang-detection-wwanconnect-flow.png" alt-text="Flowchart depicting reset flow for OID_WWAN_CONNECT during the hang detection process.":::
 
 1. NDIS (via the protocol driver) receives an [OID_WWAN_CONNECT](oid-wwan-connect.md).
 2. NDIS passes OID_WWAN_CONNECT down to the class driver.

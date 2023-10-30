@@ -5,6 +5,7 @@ keywords:
 - INF AddAutoLogger and UpdateAutoLogger Directives Device and Driver Installation
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INF AddAutoLogger and UpdateAutoLogger Directives
 api_type:

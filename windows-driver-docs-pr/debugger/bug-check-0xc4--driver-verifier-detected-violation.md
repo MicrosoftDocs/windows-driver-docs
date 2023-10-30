@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xC4 DRIVER_VERIFIER_DETECTED_VIOLATION", "DRIVER_VERIFIER
 ms.date: 04/10/2020
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DRIVER_VERIFIER_DETECTED_VIOLATION
 api_type:
@@ -16,7 +17,7 @@ api_type:
 The DRIVER\_VERIFIER\_DETECTED\_VIOLATION bug check has a value of 0x000000C4. This is the general bug check code for fatal errors found by Driver Verifier. For more information, see [Handling a Bug Check When Driver Verifier is Enabled](handling-a-bug-check-when-driver-verifier-is-enabled.md).
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 ## DRIVER\_VERIFIER\_DETECTED\_VIOLATION Parameters
 
@@ -186,7 +187,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 | Parameter 1 | Parameter 2 | Parameter 3 | Parameter 4 | Cause of Error |
 |-------------|-------------|-------------|-------------|----------------|
 |0x1000 | Address of the resource| Reserved | Reserved | Self-deadlock: The current thread has tried to recursively and exclusively acquire a resource which it only owns shared. A bug check with this parameter occurs only when the Deadlock Detection option of Driver Verifier is active.|
-|0x1001 | Address of the resource that was the final cause of the deadlock|Reserved|Reserved|Deadlock: A lock hierarchy violation has been found. A bug check with this parameter occurs only when the Deadlock Detection option of Driver Verifier is active. (Use the [!deadlock](-deadlock.md) extension for further information.)|
+|0x1001 | Address of the resource that was the final cause of the deadlock|Reserved|Reserved|Deadlock: A lock hierarchy violation has been found. A bug check with this parameter occurs only when the Deadlock Detection option of Driver Verifier is active. (Use the [!deadlock](../debuggercmds/-deadlock.md) extension for further information.)|
 |0x1002 | Address of the resource|Reserved|Reserved|Uninitialized resource: A resource has been acquired without having been initialized first. A bug check with this parameter occurs only when the Deadlock Detection option of Driver Verifier is active.|
 |0x1003 | Address of the resource that is being released deadlocked|Address of the resource that should have been released first|Reserved|Unexpected release: A resource has been released in an incorrect order. A bug check with this parameter occurs only when the Deadlock Detection option of Driver Verifier is active.|
 |0x1004 | Address of the resource|Address of the thread that acquired the resource|Address of the current thread|Unexpected thread: The wrong thread releases a resource. A bug check with this parameter occurs only when the Deadlock Detection option of Driver Verifier is active.|
@@ -327,7 +328,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 
 ## Cause
 
-See the description of each code in the Parameters section for a description of the cause. Further information can be obtained by using the [**!analyze -v**](-analyze.md) extension.
+See the description of each code in the Parameters section for a description of the cause. Further information can be obtained by using the [**!analyze -v**](../debuggercmds/-analyze.md) extension.
 
 ## Resolution
 

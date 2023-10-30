@@ -78,7 +78,7 @@ Next, replace calls to [**NdisOpenConfigurationEx**](/windows-hardware/drivers/d
 
 For more info, see [Accessing configuration information](accessing-configuration-information.md).
 
-## Receiving I/O control codes (IOTCLs) from user mode
+## Receiving I/O control codes (IOCTLs) from user mode
 
 Read this section if your NDIS driver calls [**NdisRegisterDeviceEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisregisterdeviceex), a routine used to create a control device object (CDO) to receive IOCTLs from user mode.
 
@@ -155,7 +155,7 @@ For a list of function equivalents, see [NDIS-WDF function equivalents](ndis-wdf
 
 See [Debugging a NetAdapterCx client driver](debugging-a-netadaptercx-client-driver.md).
 
-The [!ndiskd.netadapter](../debugger/-ndiskd-netadapter.md) debugger extension shows similar results to what **!ndiskd.miniport** shows for an NDIS 6 driver.
+The [!ndiskd.netadapter](../debuggercmds/-ndiskd-netadapter.md) debugger extension shows similar results to what **!ndiskd.miniport** shows for an NDIS 6 driver.
 
 ## Conclusion
 

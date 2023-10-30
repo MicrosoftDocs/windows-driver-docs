@@ -22,7 +22,7 @@ Each tag is associated with one of the data types in the [**FA\_ENTRY\_TYPE**](/
 
 To get or set the data block of an FA entry, use the [**IDebugFailureAnalysis2**](/windows-hardware/drivers/ddi/extsfns/nn-extsfns-idebugfailureanalysis2) interface.
 
-## <span id="related_topics"></span>Related topics
+## <span id="related_topics"></span>See also
 
 
 [Writing an Analysis Extension Plug-in to Extend !analyze](writing-an-analysis-extension-to-extend--analyze.md)

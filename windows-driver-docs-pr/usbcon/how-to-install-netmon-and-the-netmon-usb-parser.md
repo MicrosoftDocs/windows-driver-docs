@@ -1,7 +1,7 @@
 ---
 description: This topic provides installation information about Netmon and the USB ETW parsers.
 title: How to install Netmon and USB ETW Parsers
-ms.date: 09/16/2021
+ms.date: 09/11/2023
 ---
 
 # How to install Netmon and USB ETW Parsers
@@ -20,9 +20,10 @@ Install Netmon from the Microsoft Download Center, and then install USB ETW pars
     If your system type is 32-bit Operating System, you will use the x86 download. If your system type is 64-bit Operating System and your processor is Itanium, you will use the ia64 download. For other processor types, use the x64 or AMD64 download.
 
 1. Install Netmon:
-    1. On the [Windows Network Monitor](https://go.microsoft.com/fwlink/p/?linkid=103158) page in the Microsoft Download Center and read the description of the tool.
-    1. Under **Files in this Download** section toward the bottom of the page, select the **Download** button for your system type.
-    1. Download and run the .exe file to start the Setup Wizard.
+    1. Navigate to the [Windows Network Monitor](https://www.microsoft.com/download/details.aspx?id=4865) page in the Microsoft Download Center.
+    1. Select the **Download** button.
+    1. Choose the appropriate .exe file(s) for your system in the download pop-up window and select the **Download** button.
+    1. After the download completes, run the .exe file to start the Setup Wizard.
     1. Select **Typical** when you are asked to choose the setup type.
 
 1. Install the WDK from [Windows Driver Kit (WDK))](../download-the-wdk.md).
@@ -38,7 +39,7 @@ Install Netmon from the Microsoft Download Center, and then install USB ETW pars
     1. Open a PowerShell window (you don't need to **Run as administrator**) and run the following commands. Adjust the path if you installed the kit to a different location:
 
         ```syntax
-        cd "C:\Program Files (x86)\Windows Kits\8.0\Tools\x86\Network Monitor Parsers\usb"
+        cd "C:\Program Files (x86)\Windows Kits\10\Tools\10.0.22621.0\x86\Network Monitor Parsers\usb"
         ..\NplAutoProfile.ps1
         ```
 

@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_SECONDARY_STA_BAND_CHANNEL (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_SECONDARY_STA_BAND_CHANNEL is a WiFiCx TLV that contains a list of band IDs and channel numbers available for secondary STA connections. 
 ms.date: 08/30/2021
 keywords:

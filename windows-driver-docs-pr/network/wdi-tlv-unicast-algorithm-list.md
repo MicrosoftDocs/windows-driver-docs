@@ -1,7 +1,8 @@
 ---
 title: WDI_TLV_UNICAST_ALGORITHM_LIST
+ms.topic: reference
 description: WDI_TLV_UNICAST_ALGORITHM_LIST is a TLV that contains an array of unicast data algorithm pairs.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - WDI_TLV_UNICAST_ALGORITHM_LIST Network Drivers Starting with Windows Vista
 ---

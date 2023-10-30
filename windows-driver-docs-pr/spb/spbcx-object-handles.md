@@ -28,7 +28,7 @@ DECLARE_HANDLE(SPBREQUEST)
 
 The **SPBREQUEST** object class is derived from the **WDFREQUEST** object class, which represents an I/O request that is dispatched by the I/O manager.
 Thus, **WdfRequestXxx** methods that take **WDFREQUEST** handle values as parameters accept **SPBREQUEST** handle values as valid parameter values.
-For more information about these methods, see [Framework Request Objects](../wdf/framework-request-objects.md).
+For more information about these methods, see [Framework Request Objects](../wdf/creating-framework-request-objects.md).
 
 However, some SpbCx methods and callback functions specifically require **SPBREQUEST** handles as parameters.
 For such a parameter, substituting a **WDFREQUEST** handle that is not also an **SPBREQUEST** handle is an error.
@@ -72,7 +72,7 @@ The [SerCx2 Driver Support Methods](/windows-hardware/drivers/ddi/sercx/#functio
 However, a controller driver must typically call KMDF methods that require WDFFILEOBJECT handles, instead of **SPBTARGET** handles, to designate target devices.
 
 An **SPBTARGET** object is similar to a WDFFILEOBJECT object. However, an **SPBTARGET** object contains additional, SPB-specific information.
-For example, during the processing of an [IOCTL_SPB_EXECUTE_SEQUENCE](./spb-ioctls.md#ioctl_spb_execute_sequence) I/O control request, the **SPBTARGET** object for the target device tracks the state of the transfers in the [I/O transfer sequence](./i-o-transfer-sequences.md).
+For example, during the processing of an [IOCTL_SPB_EXECUTE_SEQUENCE](./spb-ioctls.md#ioctl_spb_execute_sequence-control-code) I/O control request, the **SPBTARGET** object for the target device tracks the state of the transfers in the [I/O transfer sequence](./i-o-transfer-sequences.md).
 
 To obtain the WDFFILEOBJECT handle to a target, the SPB controller driver calls the [SpbTargetGetFileObject](/windows-hardware/drivers/ddi/spbcx/nf-spbcx-spbtargetgetfileobject) method.
 This method accepts, as an input parameter, an **SPBTARGET** handle to an open target device, and returns the corresponding WDFFILEOBJECT handle to this target.
@@ -87,9 +87,9 @@ In addition, this driver can create child objects of the **SPBTARGET** object, s
 * [EvtDestroyCallback](/windows-hardware/drivers/ddi/wdfobject/nc-wdfobject-evt_wdf_object_context_destroy)
 * [EvtSpbTargetConnect](/windows-hardware/drivers/ddi/spbcx/nc-spbcx-evt_spb_target_connect)
 * [EvtSpbTargetDisconnect](/windows-hardware/drivers/ddi/spbcx/nc-spbcx-evt_spb_target_disconnect)
-* [Framework Request Objects](../wdf/framework-request-objects.md)
+* [Framework Request Objects](../wdf/creating-framework-request-objects.md)
 * [I/O transfer sequence](./i-o-transfer-sequences.md)
-* [IOCTL_SPB_EXECUTE_SEQUENCE](./spb-ioctls.md#ioctl_spb_execute_sequence)
+* [IOCTL_SPB_EXECUTE_SEQUENCE](./spb-ioctls.md#ioctl_spb_execute_sequence-control-code)
 * [IRP_MJ_CLOSE](../kernel/irp-mj-close.md)
 * [IRP_MJ_CREATE](../ifs/irp-mj-create.md)
 * [SerCx2 Driver Support Methods](/windows-hardware/drivers/ddi/sercx)

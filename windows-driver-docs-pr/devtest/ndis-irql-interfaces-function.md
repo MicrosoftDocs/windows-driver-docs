@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["Irql_Interfaces_Function rule (ndis)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Irql_Interfaces_Function
 api_type:

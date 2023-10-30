@@ -1,7 +1,8 @@
 ---
 title: PKEY\_CompositeFX\_EndpointEffectClsid
 description: In Windows 10 Version 1803 and later, the PKEY\_CompositeFX\_EndpointEffectClsid property key identifies the end point effect (EFX) in place. 
-ms.date: 11/15/2018
+ms.date: 03/06/2023
+ms.topic: reference
 ---
 
 # PKEY\_CompositeFX\_EndpointEffectClsid
@@ -31,7 +32,7 @@ HKR,FX\0,%PKEY_CompositeFX_EndpointEffectClsid%,0x00010000,%SWAP_FX_MODE_CLSID%,
 ```
 
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 [Media-Class INF Extensions](media-class-inf-extensions.md)
 

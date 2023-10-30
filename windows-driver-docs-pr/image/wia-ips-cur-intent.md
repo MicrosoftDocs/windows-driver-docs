@@ -4,6 +4,7 @@ description: The WIA_IPS_CUR_INTENT property contains the current settings for a
 keywords: ["WIA_IPS_CUR_INTENT Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_CUR_INTENT
 api_location:

@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_SCAN_DWELL_TIME (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_SCAN_DWELL_TIME is a WiFiCx TLV that contains scanning dwell time settings.
 ms.date: 06/30/2021
 keywords:

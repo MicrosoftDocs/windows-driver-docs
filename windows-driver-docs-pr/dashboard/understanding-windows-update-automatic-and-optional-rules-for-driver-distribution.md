@@ -1,7 +1,12 @@
 ---
-title: Using Windows Update to Install Drivers
+title: Understanding Windows Update rules for driver distribution
 description: This topic describes how you can control when Windows Update distributes your driver.
-ms.date: 11/02/2020
+keywords:
+- manual driver , automatic driver
+- optional driver , critical driver
+- Dynamic Update
+- driver distribution
+ms.date: 04/25/2023
 ms.topic: article
 ---
 
@@ -25,9 +30,11 @@ For more info about the **Manual** option, see [Publish a driver to Windows Upda
 
 When a device is connected to a Windows system:
 
-* [Plug and Play (PnP)](../kernel/introduction-to-plug-and-play.md) looks for a compatible driver already available on the computer. If one exists, Windows installs it on the device. Then, during the next daily scan of Windows Update, Windows searches for a more up-to-date version of the driver. This can take up to 24 hours from when the device is plugged in.
+* [Plug and Play (PnP)](../kernel/introduction-to-plug-and-play.md) looks for a compatible driver already available on the computer. 
 
-* If there is no compatible driver on the computer, Windows searches Windows Update for the highest-ranking **Automatic** driver.
+  * If one exists, Windows installs it on the device. Then, during the next daily scan of Windows Update, Windows searches for a more up-to-date version of the driver. This can take up to 24 hours from when the device is plugged in.
+
+  * If there is no compatible driver on the computer, Windows searches Windows Update immediately for the highest-ranking **Automatic** driver.
 
 When searching Windows Update:
 

@@ -1,87 +1,41 @@
 ---
-title: WIA\_IPS\_BLANK\_PAGES
-description: The WIA\_IPS\_BLANK\_PAGES property is used to configure blank page detection. The WIA minidriver creates and maintains this property.
+title: WIA_IPS_BLANK_PAGES
+description: The WIA_IPS_BLANK_PAGES property is used to configure blank page detection. The WIA minidriver creates and maintains this property.
 keywords: ["WIA_IPS_BLANK_PAGES Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_BLANK_PAGES
 api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 05/04/2023
 ---
 
-# WIA\_IPS\_BLANK\_PAGES
+# WIA_IPS_BLANK_PAGES
 
+The **WIA_IPS_BLANK_PAGES** property is used to configure blank page detection. The WIA minidriver creates and maintains this property.
 
-The **WIA\_IPS\_BLANK\_PAGES** property is used to configure blank page detection. The WIA minidriver creates and maintains this property.
+Property Type: VT_I4
 
-
-
-
-Property Type: VT\_I4
-
-Valid Values: WIA\_PROP\_LIST
+Valid Values: WIA_PROP_LIST
 
 Access Rights: Read/Write
 
 ## Remarks
 
-The following table describes the valid values for the **WIA\_IPS\_BLANK\_PAGES** property.
+The following table describes the valid values for the **WIA_IPS_BLANK_PAGES** property.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Value</th>
-<th>Definition</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>WIA_BLANK_PAGE_DETECTION_DISABLED</p></td>
-<td><p>Blank page detection is disabled. This is the required default value if the property is supported.</p></td>
-</tr>
-<tr class="even">
-<td><p>WIA_BLANK_PAGE_DISCARD</p></td>
-<td><p>The device detects blank pages and automatically skips scanning them (discards scanned data if any) and continues scanning.</p></td>
-</tr>
-<tr class="odd">
-<td><p>WIA_BLANK_PAGE_JOB_SEPARATOR</p></td>
-<td><p>The device detects blank pages and acts as configured through the <a href="wia-ips-job-separators.md" data-raw-source="[&lt;strong&gt;WIA_IPS_JOB_SEPARATORS&lt;/strong&gt;](wia-ips-job-separators.md)"><strong>WIA_IPS_JOB_SEPARATORS</strong></a> property. This value is valid only when the Feeder item supports the <strong>WIA_IPS_JOB_SEPARATORS</strong> property.</p></td>
-</tr>
-</tbody>
-</table>
+| Value | Definition |
+|--|--|
+| WIA_BLANK_PAGE_DETECTION_DISABLED | Blank page detection is disabled. This is the required default value if the property is supported. |
+| WIA_BLANK_PAGE_DISCARD | The device detects blank pages and automatically skips scanning them (discards scanned data if any) and continues scanning. |
+| WIA_BLANK_PAGE_JOB_SEPARATOR | The device detects blank pages and acts as configured through the [**WIA_IPS_JOB_SEPARATORS**](wia-ips-job-separators.md) property. This value is valid only when the Feeder item supports the **WIA_IPS_JOB_SEPARATORS** property. |
 
- 
-
-This property is optional, and is valid only for the Feeder data source item (represented in the [**WIA\_IPA\_ITEM\_CATEGORY**](wia-ipa-item-category.md) property as WIA\_CATEGORY\_FEEDER).
+This property is optional, and is valid only for the Feeder data source item (represented in the [**WIA_IPA_ITEM_CATEGORY**](wia-ipa-item-category.md) property as WIA_CATEGORY_FEEDER).
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
-
- 
-
- 
-
-
-
-
-
+**Header:** wiadef.h (include Wiadef.h)

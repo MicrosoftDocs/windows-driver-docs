@@ -5,17 +5,17 @@ keywords:
 - INF LogConfig Directive Device and Driver Installation
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INF LogConfig Directive
 api_type:
 - NA
-ms.date: 07/11/2022
+ms.date: 07/17/2023
 ---
 
 # INF LogConfig directive
 
-> [!NOTE]
-> If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
+[!INCLUDE [Caution invalid INF directive](../includes/inf-directive-invalid-22h2.md)]
 
 A **LogConfig** directive references one or more INF-writer-defined sections, each of which specifies a logical configuration of hardware resources − the interrupt request lines, memory ranges, I/O ports, and DMA channels that can be used by the device. Each *log-config-section* specifies an alternative set of bus-relative hardware resources that can be used by the device.
 

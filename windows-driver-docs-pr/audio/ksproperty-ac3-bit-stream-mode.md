@@ -4,14 +4,16 @@ description: The KSPROPERTY\_AC3\_BIT\_STREAM\_MODE property specifies the bit-s
 keywords: ["KSPROPERTY_AC3_BIT_STREAM_MODE Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AC3_BIT_STREAM_MODE
 api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 03/06/2023
 ---
+
 
 # KSPROPERTY\_AC3\_BIT\_STREAM\_MODE
 

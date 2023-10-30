@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_ADVERTISEMENT_ID (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_P2P_ADVERTISEMENT_ID is a WiFiCx TLV that contains an ID that uniquely identifies a service instance.
 ms.date: 06/17/2021
 keywords:

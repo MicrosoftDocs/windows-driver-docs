@@ -4,6 +4,7 @@ description: The EXT\_TDOP\_GET\_ARRAY\_ELEMENT sub-operation of the DEBUG\_REQU
 keywords: ["EXT_TDOP_GET_ARRAY_ELEMENT Windows Debugging"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - EXT_TDOP_GET_ARRAY_ELEMENT
 api_type:

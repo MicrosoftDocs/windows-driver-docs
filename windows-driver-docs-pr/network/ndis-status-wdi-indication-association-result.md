@@ -1,7 +1,8 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_ASSOCIATION_RESULT
+ms.topic: reference
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_ASSOCIATION_RESULT to indicate association results.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - NDIS_STATUS_WDI_INDICATION_ASSOCIATION_RESULT Network Drivers Starting with Windows Vista
 ---

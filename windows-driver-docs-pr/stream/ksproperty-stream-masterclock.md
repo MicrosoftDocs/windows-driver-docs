@@ -4,6 +4,7 @@ description: The KSPROPERTY\_STREAM\_MASTERCLOCK property is an optional propert
 keywords: ["KSPROPERTY_STREAM_MASTERCLOCK Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_STREAM_MASTERCLOCK
 api_location:

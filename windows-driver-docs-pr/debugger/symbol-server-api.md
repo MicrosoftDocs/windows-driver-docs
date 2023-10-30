@@ -1,24 +1,27 @@
 ---
-title: Symbol Server API
-description: Symbol Server API
-keywords: ["symbol servers, Symbol Server API", "SymbolServerXxx routines", "DbgHelp interface", "ImageHlp interface", "dbghelp.chm (Debug Help Library documentation), Symbol Server API", "Debug Help Library documentation (dbghelp.chm), Symbol Server API"]
-ms.date: 02/24/2020
+title: Symbol and Image File APIs
+description: Symbol and Image File APIs
+keywords: ["symbol servers, Symbol and Image File APIs", "SymbolServerXxx routines", "DbgHelp interface", "ImageHlp interface", "dbghelp.chm (Debug Help Library documentation), Symbol and Image File APIs", "Debug Help Library documentation (dbghelp.chm), Symbol and Image File APIs"]
+ms.date: 12/27/2022
 ---
 
-# Symbol Server API
+# Symbol and Image File APIs
 
 ## <span id="ddk_symbol_server_api_dbg"></span><span id="DDK_SYMBOL_SERVER_API_DBG"></span>
 
-The **SymbolServer*Xxx*** routines are needed if you want to write your own symbol server.
-
-These routines are part of the DbgHelp interface. For information on the DbgHelp interface, see:
+For more information about working with symbols using the DbgHelp interface, see:
 
 [Debug Help Library](/windows/win32/debug/debug-help-library)
 
 [DbgHelp Reference](/windows/win32/debug/dbghelp-reference)
 
-For information on the ImageHlp interface, see:
+For information on setting up a custom symbol server, see [Custom Symbol Stores and Symbol Servers](symbol-stores-and-symbol-servers.md). 
+
+For information on working with  Portable PDB (Program Database) format symbols, see [Portable PDB Symbols](symbols-portable-pdb.md). 
+
+For information on using the ImageHlp interface to work with PE files, see:
 
 [Image Help Library](/windows/win32/debug/image-help-library)
 
 [ImageHlp Reference](/windows/win32/debug/imagehlp-reference)
+

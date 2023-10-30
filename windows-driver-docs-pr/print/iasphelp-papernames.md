@@ -1,23 +1,24 @@
 ---
-title: Iasphelp get\_PaperNames method
+title: Iasphelp get_PaperNames method
 description: The PaperNames property enables an ASP Web page to obtain a set of strings that name all the paper forms for the printer.
 MS-HAID:
-- 'webfnc\_be2b332f-6300-4b3e-9fa7-fd2fd0bdffe5.xml'
-- 'print.iasphelp\_papernames'
+- 'webfnc_be2b332f-6300-4b3e-9fa7-fd2fd0bdffe5.xml'
+- 'print.iasphelp_papernames'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 keywords: ["get_PaperNames method Print Devices", "get_PaperNames method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_PaperNames method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Iasphelp.get_PaperNames
 api_type:
 - COM
-ms.date: 04/20/2017
+ms.date: 06/26/2023
 ---
 
-# Iasphelp::get\_PaperNames method
+# Iasphelp::get_PaperNames method
 
 The **PaperNames** property enables an ASP Web page to obtain a set of strings that name all the paper forms for the printer.
 
@@ -38,36 +39,15 @@ Caller-supplied location to receive a pointer to a set of strings representing a
 
 This property returns one of the values in the following table.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Return code</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>S_OK</strong></td>
-<td><p>The operation succeeded.</p></td>
-</tr>
-<tr class="even">
-<td><strong>E_HANDLE</strong></td>
-<td><p>The <a href="iasphelp-open.md" data-raw-source="[&lt;strong&gt;Iasphelp::Open&lt;/strong&gt;](iasphelp-open.md)"><strong>Iasphelp::Open</strong></a> method has not been called.</p></td>
-</tr>
-<tr class="odd">
-<td><strong>E_OUTOFMEMORY</strong></td>
-<td><p>Out of memory.</p></td>
-</tr>
-</tbody>
-</table>
+| Return code | Description |
+|--|--|
+| **S_OK** | The operation succeeded. |
+| **E_HANDLE** | The [**Iasphelp::Open**](iasphelp-open.md) method has not been called. |
+| **E_OUTOFMEMORY** | Out of memory. |
 
 ## VBScript Example
 
-The handler for this property obtains the list of paper forms by calling the printer driver's [**DrvDeviceCapabilities**](/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvdevicecapabilities) function with the DC\_PAPERNAMES flag set.
+The handler for this property obtains the list of paper forms by calling the printer driver's [**DrvDeviceCapabilities**](/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvdevicecapabilities) function with the DC_PAPERNAMES flag set.
 
 The [**Iasphelp::Open**](iasphelp-open.md) method must be called before the **Iasphelp::PaperNames** property can be queried.
 
@@ -81,18 +61,7 @@ PaperNameArray = objPrinter.PaperNames
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Target platform</p></td>
-<td>Desktop</td>
-</tr>
-</tbody>
-</table>
+**Target platform:** Desktop
 
 ## See also
 

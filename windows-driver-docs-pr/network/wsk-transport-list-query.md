@@ -2,6 +2,7 @@
 title: WSK_TRANSPORT_LIST_QUERY
 description: WSK_TRANSPORT_LIST_QUERY
 ms.date: 07/18/2017
+ms.topic: reference
 keywords:
  - WSK_TRANSPORT_LIST_QUERY Network Drivers Starting with Windows Vista
 ---

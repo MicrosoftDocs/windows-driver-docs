@@ -2,6 +2,7 @@
 title: MM_BAD_POINTER macro
 description: MM_BAD_POINTER macro
 ms.date: 07/16/2021
+ms.topic: reference
 ---
 
 # MM_BAD_POINTER

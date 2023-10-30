@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x4A IRQL_GT_ZERO_AT_SYSTEM_SERVICE", "IRQL_GT_ZERO_AT_SYS
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IRQL_GT_ZERO_AT_SYSTEM_SERVICE
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The IRQL\_GT\_ZERO\_AT\_SYSTEM\_SERVICE bug check has a value of 0x0000004A. This indicates that a thread is returning to user mode from a system call when its IRQL is still above PASSIVE\_LEVEL.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## IRQL\_GT\_ZERO\_AT\_SYSTEM\_SERVICE Parameters
@@ -56,7 +57,7 @@ The IRQL\_GT\_ZERO\_AT\_SYSTEM\_SERVICE bug check has a value of 0x0000004A. Thi
 
 
 ## Resolution 
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
  
 
  

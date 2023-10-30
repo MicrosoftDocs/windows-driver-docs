@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xBE ATTEMPTED_WRITE_TO_READONLY_MEMORY", "ATTEMPTED_WRITE
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ATTEMPTED_WRITE_TO_READONLY_MEMORY
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The ATTEMPTED\_WRITE\_TO\_READONLY\_MEMORY bug check has a value of 0x000000BE. This is issued if a driver attempts to write to a read-only memory segment.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## ATTEMPTED\_WRITE\_TO\_READONLY\_MEMORY Parameters
@@ -61,7 +62,7 @@ If the driver responsible for the error can be identified, its name is printed o
 
 ## Remarks
 
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
  
 
 

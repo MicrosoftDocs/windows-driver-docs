@@ -4,6 +4,7 @@ description: Clients enable the KSEVENT_CLOCK_INTERVAL_MARK event to be notified
 keywords: ["KSEVENT_CLOCK_INTERVAL_MARK Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSEVENT_CLOCK_INTERVAL_MARK
 api_type:

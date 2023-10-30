@@ -1,5 +1,6 @@
 ---
 title: OID_WWAN_REGISTER_PARAMS
+ms.topic: reference
 description: OID_WWAN_REGISTER_PARAMS sets or returns the parameters that an MB device uses during 5G registration requests.
 ms.date: 05/13/2021
 keywords: 

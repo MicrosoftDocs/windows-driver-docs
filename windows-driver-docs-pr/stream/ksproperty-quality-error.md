@@ -4,6 +4,7 @@ description: The KSPROPERTY\_QUALITY\_ERROR property is an optional property tha
 keywords: ["KSPROPERTY_QUALITY_ERROR Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_QUALITY_ERROR
 api_location:

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xCD PAGE_FAULT_BEYOND_END_OF_ALLOCATION", "PAGE_FAULT_BEY
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - PAGE_FAULT_BEYOND_END_OF_ALLOCATION
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The PAGE\_FAULT\_BEYOND\_END\_OF\_ALLOCATION bug check has a value of 0x000000CD. This indicates that the system accessed memory beyond the end of some driver's pool allocation.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## PAGE\_FAULT\_BEYOND\_END\_OF\_ALLOCATION Parameters

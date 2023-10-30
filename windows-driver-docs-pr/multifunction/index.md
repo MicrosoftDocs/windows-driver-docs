@@ -11,8 +11,7 @@ keywords:
 - multifunction devices WDK , installing
 - parent buses WDK multifunction devices
 - INF files WDK multifunction devices
-ms.date: 08/13/2021
-ms.topic: article
+ms.date: 03/17/2023
 ---
 
 # Multifunction device driver design guide

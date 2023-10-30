@@ -4,6 +4,7 @@ description: The WIA_DPC_ARTIST property contains the name of the owner (which i
 keywords: ["WIA_DPC_ARTIST Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPC_ARTIST
 api_location:

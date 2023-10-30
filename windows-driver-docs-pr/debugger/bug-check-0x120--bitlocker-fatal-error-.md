@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x120 BITLOCKER_FATAL_ERROR", "BITLOCKER_FATAL_ERROR"]
 ms.date: 01/30/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - BITLOCKER_FATAL_ERROR
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The BITLOCKER\_FATAL\_ERROR bug check has a value of 0x00000120. This indicates that BitLocker drive encryption encountered a problem that it cannot recover from.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## BITLOCKER\_FATAL\_ERROR Parameters

@@ -1,34 +1,40 @@
 ---
 title: Using an Extension INF File
 description: Starting in Windows 10, you can extend a driver package's functionality by providing an additional INF file called an extension INF.
-ms.date: 01/14/2022
+ms.date: 05/08/2023
 ---
 
 # Using an Extension INF File
 
 Prior to Windows 10, Windows selected a single [driver package](driver-packages.md) to install for a given device.  This resulted in large, complex driver packages that included code for all scenarios and configurations, and each minor update required an update to the entire driver package.  Starting in Windows 10, you can split INF functionality into multiple components, each of which can be serviced independently.  The core driver package installed on a device is now called the *base driver package* and is handled by the system in the same way driver packages have been handled prior to Windows 10. To extend a base driver package's functionality, provide an extension INF in a separate driver package.  An extension INF:
 
-* Can be provided by a different company and updated independently from the base INF.
-* Uses the same INF syntax as a base INF, but can extend the base INF for customization or specialization.
-* Enhances the value of the device, but is **not** necessary for the base driver package to work. In the absence of the extension INF, the system must be able to boot and connect to the network with just the base driver package. Input devices built into the system, such as a keyboard, must be able to function with at least basic functionality without any extension INFs.
-* Must be a [universal INF file](../install/using-a-universal-inf-file.md).
+- Can be provided by a different company and updated independently from the base INF.
 
-Every device must have one base driver package installed on it, and can optionally have one or more extension INFs associated with it. An extension INF will not be able to install on a device if there is no base driver package present to also install on the device.
+- Uses the same INF syntax as a base INF, but can extend the base INF for customization or specialization.
+
+- Enhances the value of the device, but is **not** necessary for the base driver package to work. In the absence of the extension INF, the system must be able to boot and connect to the network with just the base driver package. Input devices built into the system, such as a keyboard, must be able to function with at least basic functionality without any extension INFs.
+
+- Must be a [universal INF file](../install/using-a-universal-inf-file.md).
+
+Every device must have one base driver package installed on it, and can optionally have one or more extension INFs associated with it. An extension INF won't be able to install on a device if there's no base driver package present to also install on the device.
 
 Typical scenarios where you might use an extension INF include:
 
-* Modifying settings provided in a base driver package, such as customizing the device friendly name or modifying a hardware configuration setting.
-* Creating one or more software components by specifying the [INF AddComponent directive](inf-addcomponent-directive.md) and providing a [component INF file](using-a-component-inf-file.md).
-* Providing settings specific to the model or form factor of the system that enhances the experience or functionality of the device, such as hardware calibration data.
-* Adding a filter driver to the device stack.
+- Modifying settings provided in a base driver package, such as customizing the device friendly name or modifying a hardware configuration setting.
+
+- Creating one or more software components by specifying the [INF AddComponent directive](inf-addcomponent-directive.md) and providing a [component INF file](using-a-component-inf-file.md).
+
+- Providing settings specific to the model or form factor of the system that enhances the experience or functionality of the device, such as hardware calibration data.
+
+- Adding a filter driver to the device stack.
 
 You can find sample code for some of these scenarios in the examples below.  Also see [DCH-Compliant Driver Package Example](../develop/dch-example.md), which describes how the [DCHU universal driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/main/general/DCHU) uses extension INFs.
 
 ## How extension INF and base driver package work together
 
-During a device installation, settings in an extension INF are applied after settings in a base driver package. As a result, if an extension INF and a base driver package specify the same setting, the version in the extension INF is applied. Similarly, if the base driver package changes, the extension INF remains and is applied over the new base driver package.  If multiple extension INFs are installed on the same device, there is no predetermined ordering that the extension INFs will be applied in, so one extension INF cannot deterministically override values provided by a different extension INF.  Distinct extension INFs targeted at the same devices should not attempt to alter the same settings.
+During a device installation, settings in an extension INF are applied after settings in a base driver package. As a result, if an extension INF and a base driver package specify the same setting, the version in the extension INF is applied. Similarly, if the base driver package changes, the extension INF remains and is applied over the new base driver package.  If multiple extension INFs are installed on the same device, there's no predetermined ordering that the extension INFs will be applied in, so one extension INF can't deterministically override values provided by a different extension INF.  Distinct extension INFs targeted at the same devices shouldn't attempt to alter the same settings.
 
-It is helpful to include comments in the base driver package describing which entries can be overridden by an extension INF, as well as applicable parameter value ranges and constraints.
+It's helpful to include comments in the base driver package describing which entries can be overridden by an extension INF, as well as applicable parameter value ranges and constraints.
 
 ## Specifying ExtensionId
 
@@ -50,50 +56,51 @@ Next, the system processes the available extension INFs.  Two have **ExtensionId
 
 The extension INF with the unique **ExtensionId** value is also selected.  The system applies the base driver package for the device, and then applies the two extension INFs for that device.
 
-Note that extension INF files are always applied after the base driver package, but that there is no determined order in which the extension INFs are applied.
+Extension INF files are always applied after the base driver package, but that there's no determined order in which the extension INFs are applied.
 
 ## Creating an extension INF
 
 Here are the entries you need to define an INF as an extension INF.
 
-1.  Specify these values for **Class** and **ClassGuid** in the [**Version**](inf-version-section.md) section. For more info on setup classes, see [System-Defined Device Setup Classes Available to Vendors](./system-defined-device-setup-classes-available-to-vendors.md).
+1. Specify these values for **Class** and **ClassGuid** in the [**Version**](inf-version-section.md) section. For more info on setup classes, see [System-Defined Device Setup Classes Available to Vendors](./system-defined-device-setup-classes-available-to-vendors.md).
 
-    ```cpp
+    ```inf
     [Version]
     ...
     Class     = Extension
     ClassGuid = {e2f84ce7-8efa-411c-aa69-97454ca4cb57}
+    ...
     ```
 
-2.  Provide an **ExtensionId** entry in the [**\[Version\]**](inf-version-section.md) section. Generate a new GUID for the initial version of an extension INF, or reuse the last GUID for subsequent updates of the initial extension INF.
+1. Provide an **ExtensionId** entry in the [**\[Version\]**](inf-version-section.md) section. Generate a new GUID for the initial version of an extension INF, or reuse the last GUID for subsequent updates of the initial extension INF.
 
-    ```cpp
+    ```inf
     ExtensionId = {zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz} ; replace with your own GUID
     ```
 
-Note that an organization may only use an **ExtensionID** that it owns.  For information on registering an Extension ID, see [Managing hardware submissions in the Windows Hardware Dev Center dashboard](../dashboard/hardware-submission-update.md).
+An organization may only use an **ExtensionID** that it owns.  For information on registering an Extension ID, see [Managing hardware submissions in the Windows Hardware Dev Center dashboard](../dashboard/hardware-submission-update.md).
 
-3.  If you are updating an extension INF, keep the **ExtensionId** the same and increment the version and date specified by the [**DriverVer**](inf-driverver-directive.md) directive. For a given **ExtensionId** value, PnP selects the INF with the highest **DriverVer**.
+1. If you're updating an extension INF, keep the **ExtensionId** the same and increment the version and date specified by the [**DriverVer**](inf-driverver-directive.md) directive. For a given **ExtensionId** value, PnP selects the INF with the highest **DriverVer**.
 
->[!NOTE]
-> If your extension INF targets Windows 10 S, see [Windows 10 in S mode Driver Requirements](./windows10sdriverrequirements.md) for information about driver installation on that version of Windows.
+    > [!NOTE]
+    > If your extension INF targets Windows 10 S, see [Windows 10 in S mode Driver Requirements](./windows10sdriverrequirements.md) for information about driver installation on that version of Windows.
 
-4.  In the [**INF Models section**](inf-models-section.md), specify one or more hardware and compatible IDs that match those of the target device.  Note that these hardware and compatible IDs do not need to match those of the base driver package.  Typically, an extension INF lists a more specific hardware ID than the base driver package, with the goal of further specializing a specific driver configuration.  For example, the base driver package might use a two-part PCI hardware ID, while the extension INF specifies a four-part PCI hardware ID, like the following:
-    
-    ```cpp
+1. In the [**INF Models section**](inf-models-section.md), specify one or more hardware and compatible IDs that match those of the target device.  These hardware and compatible IDs don't need to match those of the base driver package.  Typically, an extension INF lists a more specific hardware ID than the base driver package, with the goal of further specializing a specific driver configuration.  For example, the base driver package might use a two-part PCI hardware ID, while the extension INF specifies a four-part PCI hardware ID, like the following:
+
+    ```inf
     [DeviceExtensions.NTamd64]
     %Device.ExtensionDesc% = DeviceExtension_Install, PCI\VEN_XXXX&DEV_XXXX&SUBSYS_XXXXXXXX&REV_XXXX
     ```
 
-    Alternatively, the extension INF might list the same hardware ID as the base driver package, for instance if the device is already very narrowly targeted, or if the base driver package already lists the most specific hardware ID.
-    
+    Alternatively, the extension INF might list the same hardware ID as the base driver package, for instance if the device is already narrowly targeted, or if the base driver package already lists the most specific hardware ID.
+
     In some cases, the extension INF might provide a less specific device ID, like a compatible ID, in order to customize a setting across a broader set of devices.
 
-    [CHID targeting](../bringup/target-a-system-using-chid.md) can be used if a four-part hardware ID is not possible or is not restrictive enough.
+    [CHID targeting](../bringup/target-a-system-using-chid.md) can be used if a four-part hardware ID isn't possible or isn't restrictive enough.
 
-5.  Do not define a service with `SPSVCINST_ASSOCSERVICE`.  An extension INF cannot provide a function driver for a device.  However, an extension INF can define other services, such as a filter driver for the device.  For more info about specifying services, see [**INF AddService Directive**](inf-addservice-directive.md).
+1. Don't define a service with `SPSVCINST_ASSOCSERVICE`.  An extension INF can't provide a function driver for a device.  However, an extension INF can define other services, such as a filter driver for the device.  For more info about specifying services, see [**INF AddService Directive**](inf-addservice-directive.md).
 
-In most cases, you'll submit an extension INF driver package to the Hardware Dev Center separately from the base driver package.  For examples on how to package extension INFs, as well as links to sample code, see [DCH-Compliant Driver Package Example](../develop/dch-example.md).
+In most cases, you'll submit an extension INF driver package to the Hardware Dev Center separately from the base driver package.  For examples on how to package extension INFs, and links to sample code, see [DCH-Compliant Driver Package Example](../develop/dch-example.md).
 
 The driver validation and submission process is the same for extension INFs as for base driver packages. For more info, see [Windows HLK Getting Started](/windows-hardware/test/hlk/getstarted/windows-hlk-getting-started).
 
@@ -101,7 +108,7 @@ The driver validation and submission process is the same for extension INFs as f
 
 To remove an extension driver package from the system and uninstall it from any devices using it, use [PnPUtil's](../devtest/pnputil.md) `delete-driver` command with the `uninstall` flag. This allows the extension driver package to be uninstalled from devices without removing the base driver package.
 
-Find the oem<#>.inf name of the driver package to uninstall and use `pnputil /delete-driver oem<#>.inf /uninstall`. 
+Find the oem<#>.inf name of the driver package to uninstall and use `pnputil /delete-driver oem<#>.inf /uninstall`.
 
 `pnputil /enum-drivers` can be used to help identify the appropriate oem<#>.inf name.
 
@@ -109,7 +116,7 @@ Find the oem<#>.inf name of the driver package to uninstall and use `pnputil /de
 
 In one common scenario, a device manufacturer (IHV) provides a base driver package, and then a system builder (OEM) provides an extension INF that supplements and in some cases overrides the configuration and settings of the base driver package.  The following snippet is a complete extension INF that shows how to set the device friendly name.
 
-```cpp
+```inf
 [Version]
 Signature   = "$WINDOWS NT$"
 Class       = Extension
@@ -146,7 +153,7 @@ The following snippet is a complete extension INF that is included in the [Drive
 
 To access this file online, see [`osrfx2_DCHU_extension.inx`](https://github.com/microsoft/Windows-driver-samples/blob/main/general/DCHU/osrfx2_DCHU_extension_loose/osrfx2_DCHU_extension/osrfx2_DCHU_extension.inx).
 
-```cpp
+```inf
 ;/*++
 ;
 ;Copyright (c) Microsoft Corporation.  All rights reserved.
@@ -167,13 +174,14 @@ To access this file online, see [`osrfx2_DCHU_extension.inx`](https://github.com
 ;--*/
 
 [Version]
-Signature = "$WINDOWS NT$"
-Class = Extension
-ClassGuid = {e2f84ce7-8efa-411c-aa69-97454ca4cb57}
-Provider = %ManufacturerName%
+Signature   = "$WINDOWS NT$"
+Class       = Extension
+ClassGuid   = {e2f84ce7-8efa-411c-aa69-97454ca4cb57}
+Provider    = %ManufacturerName%
 ExtensionId = {3846ad8c-dd27-433d-ab89-453654cd542a}
 CatalogFile = osrfx2_DCHU_extension.cat
-DriverVer = 05/16/2017,15.14.36.721
+DriverVer   = 05/16/2017,15.14.36.721
+PnpLockdown = 1
 
 [Manufacturer]
 %ManufacturerName% = OsrFx2Extension, NT$ARCH$
@@ -227,27 +235,32 @@ OsrFx2.ExtensionDesc = "OsrFx2 DCHU Device Extension"
 REG_EXPAND_SZ = 0x00020000
 FLG_ADDREG_KEYONLY = 0x00000010
 ```
+
 For info on how to use an Extension INF to install a filter driver, see [Device filter driver ordering](../develop/device-filter-driver-ordering.md).
 
 To improve extensibility, we recommend that an IHV put optional functionality in an [extension INF template](using-an-extension-inf-file-template.md).
 
 ## Backward compatibility
 
-Any change to the base driver package must be thoroughly tested to ensure that it does not break backward compatibility for existing extension INFs.
+Any change to the base driver package must be thoroughly tested to ensure that it doesn't break backward compatibility for existing extension INFs.
 
 When managing a base driver package, follow these best practices:
 
-* Document parameter value ranges and constraints both in code comments and in a design document. Future changes must conform to the specified ranges.
-* To support new ranges, add an optional parameter (no default value).
+- Document parameter value ranges and constraints both in code comments and in a design document. Future changes must conform to the specified ranges.
+- To support new ranges, add an optional parameter (no default value).
 
-##  Submitting an extension INF for certification
+## Submitting an extension INF for certification
 
-For detailed information on how to work with Extension INFs on the Hardware Dev Center, please see [Working with Extension INFs in the Windows Hardware Dev Center Dashboard](../dashboard/submit-dashboard-extension-inf-files.md).
+For detailed information on how to work with Extension INFs on the Hardware Dev Center, see [Working with Extension INFs in the Windows Hardware Dev Center Dashboard](../dashboard/submit-dashboard-extension-inf-files.md).
 
-## Related topics
+## Related articles
 
-* [Working with Extension INFs in the Partner Center](../dashboard/submit-dashboard-extension-inf-files.md)
-* [DCH-Compliant Driver Package Example](../develop/dch-example.md)
-* [Using a Universal INF File](using-a-universal-inf-file.md)
-* [Getting Started with Windows Drivers](../develop/getting-started-with-windows-drivers.md)
-* [Driver package installation toolkit for universal drivers](https://github.com/Microsoft/Windows-driver-samples/tree/main/general/DCHU)
+[Working with Extension INFs in the Partner Center](../dashboard/submit-dashboard-extension-inf-files.md)
+
+[DCH-Compliant Driver Package Example](../develop/dch-example.md)
+
+[Using a Universal INF File](using-a-universal-inf-file.md)
+
+[Getting Started with Windows Drivers](../develop/getting-started-with-windows-drivers.md)
+
+[Driver package installation toolkit for universal drivers](https://github.com/Microsoft/Windows-driver-samples/tree/main/general/DCHU)

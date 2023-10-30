@@ -4,15 +4,15 @@ description: The required FilmScanModesSupported element contains a list of film
 keywords: ["FilmScanModesSupported element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn FilmScanModesSupported
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 04/25/2023
 ---
 
 # FilmScanModesSupported element
-
 
 The required **FilmScanModesSupported** element contains a list of film exposure types that the film scanning option supports.
 
@@ -30,41 +30,15 @@ There are no attributes.
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="filmscanmodevalue.md" data-raw-source="[&lt;strong&gt;FilmScanModeValue&lt;/strong&gt;](filmscanmodevalue.md)"><strong>FilmScanModeValue</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**FilmScanModeValue**](filmscanmodevalue.md) |
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="film.md" data-raw-source="[&lt;strong&gt;Film&lt;/strong&gt;](film.md)"><strong>Film</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**Film**](film.md) |
 
 ## Remarks
 
@@ -72,17 +46,6 @@ The **FilmScanModesSupported** element contains one or more [**FilmScanModeValue
 
 ## See also
 
-
 [**Film**](film.md)
 
 [**FilmScanModeValue**](filmscanmodevalue.md)
-
- 
-
- 
-
-
-
-
-
-

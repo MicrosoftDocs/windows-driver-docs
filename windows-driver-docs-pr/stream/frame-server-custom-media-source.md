@@ -1,7 +1,7 @@
 ---
 title: Frame Server Custom Media Source
-description: Provides information on implementation of a Custom Media Source within the Frame Server architecture. 
-ms.date: 08/25/2020
+description: Provides information on implementation of a Custom Media Source within the Frame Server architecture.
+ms.date: 05/08/2023
 ---
 
 # Frame Server Custom Media Source
@@ -114,9 +114,12 @@ ClassGuid={5EF7C2A5-FF8F-4C1F-81A7-43D3CBADDC98}
 Provider=%ProviderString%
 DriverVer=01/28/2016,0.10.1234
 CatalogFile=SimpleMediaSourceDriver.cat
+PnpLockdown=1
 
 [DestinationDirs]
 DefaultDestDir = 12
+UMDriverCopy=12,UMDF ; copy to drivers\Umdf
+CustomCaptureSourceCopy=11
 
 ; ================= Class section =====================
 
@@ -174,10 +177,6 @@ SimpleMediaSourceDriver.dll,,,0x00004000 ; COPYFLG_IN_USE_RENAME
 
 [CustomCaptureSourceCopy]
 SimpleMediaSource.dll,,,0x00004000 ; COPYFLG_IN_USE_RENAME
-
-[DestinationDirs]
-UMDriverCopy=12,UMDF ; copy to driversMdf
-CustomCaptureSourceCopy=11
 
 ;-------------- Service installation
 [SimpleMediaSource.NT.Services]

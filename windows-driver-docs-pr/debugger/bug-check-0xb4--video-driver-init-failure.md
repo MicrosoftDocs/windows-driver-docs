@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xB4 VIDEO_DRIVER_INIT_FAILURE", "VIDEO_DRIVER_INIT_FAILUR
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - VIDEO_DRIVER_INIT_FAILURE
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The VIDEO\_DRIVER\_INIT\_FAILURE bug check has a value of 0x000000B4. This indicates that Windows was unable to enter graphics mode.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## VIDEO\_DRIVER\_INIT\_FAILURE Parameters

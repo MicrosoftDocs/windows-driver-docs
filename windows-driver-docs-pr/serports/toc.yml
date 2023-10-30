@@ -38,6 +38,8 @@
     items: 
     - name: "Accessing a Device on a SerCx2-Managed Serial Port"
       href: accessing-a-device-on-a-sercx2-managed-serial-port.md
+    - name: "Device Interface publication for a SerCx or SerCx2 managed Serial Port"
+      href: device-interface-publication-sercx.md
     - name: "Peripheral Drivers for Devices on SerCx2-Managed Serial Ports"
       href: peripheral-drivers-for-devices-on-sercx2-managed-serial-ports.md
     - name: "Opening a SerCx2-Managed Serial Port"

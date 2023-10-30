@@ -2,22 +2,20 @@
 title: Register for the Microsoft Windows Hardware Developer Program
 description: How to register for the Microsoft Windows Hardware Developer Program
 ms.topic: article
-ms.date: 04/20/2017
+ms.date: 01/18/2023
 ---
 
 # Register for the Microsoft Windows Hardware Developer Program
 
-This article shows you how to register for the Microsoft Windows Hardware Developer Program. When you register for the the Hardware Developer Program, you will be prompted to sign the Windows Compatibility Program and Driver Quality Attestment Testing Agreement (ver 2.0). In addition, you can also sign the following agreements if you are using features or assets that apply to those agreements:
+This article shows you how to register for the Microsoft Windows Hardware Developer Program. When you register for the the Hardware Developer Program, you will be prompted to accept the following agreements
 
-- Windows Logo License Agreement (ver 2018)
+- Code Signing Agreement
 
-- UEFI (Unified Extensible Firmware Interface) Firmware Agreement (ver 1.0)
+- Windows Hardware Compatibility Agreement
 
-- Windows Analytics Agreement (ver 2.0)
+- Windows Logo License Agreement (LLA) (ver. 2021)
 
-- Microsoft Collaborate Program Agreement (ver 1.0)
-
-- Windows Desktop Applications Program Agreement (ver 1.0)
+- Windows Analytics Agreement (ver. 2.0)
 
 ## Prerequisites
 
@@ -25,7 +23,7 @@ This article shows you how to register for the Microsoft Windows Hardware Develo
 
 - You must have an Extended Validation (EV) code signing certificate. Check whether your organization already has a code signing certificate. If your company already has a certificate, have the certificate available. If your organization doesn't have a certificate, you'll need to [purchase an EV certificate](code-signing-reqs.md#ev-certificate-signed-drivers).
 
-- You'll need to sign in with your organization’s Azure Active Directory (Azure AD) [Global administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) account. If you don’t know whether your organization has an Azure AD directory, contact your IT department. If your organization doesn’t have an Azure AD directory, you'll be able to create one for free during the registration process'
+- You'll need to sign in with your organization’s Microsoft Entra Identity (Microsoft Entra Identity) [Global administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) account. If you don’t know whether your organization has an Microsoft Entra Identity directory, contact your IT department. If your organization doesn’t have an Microsoft Entra Identity directory, you'll be able to create one for free during the registration process'
 
 - You must have the authority to sign legal agreements on behalf of your organization.
 
@@ -39,11 +37,11 @@ To register for the Hardware Developer Program:
 
     :::image type="content" source="./images/hardware-program-register/registration-start.png" alt-text="Screenshot of the first page of the Hardware Developer Program registration process. The 'Next' button is selected.":::
 
-1. If your organization has an Azure AD global administrator account, select **Sign in to Azure AD**. If your organization doesn't have an Azure AD directory, select **Create a new directory for free**. Follow the directions to create an account and sign in with your new global administrator user name and password.
+1. If your organization has an Microsoft Entra Identity global administrator account, select **Sign in to Microsoft Entra Identity**. If your organization doesn't have an Microsoft Entra Identity directory, select **Create a new directory for free**. Follow the directions to create an account and sign in with your new global administrator user name and password.
 
-    :::image type="content" source="./images/hardware-program-register/registration-work-account.png" alt-text="Screenshot of the Azure AD page of the Hardware Developer Program registration process. The 'Sign in to Azure AD' button is selected.":::
+    :::image type="content" source="./images/hardware-program-register/registration-work-account.png" alt-text="Screenshot of the Microsoft Entra Identity page of the Hardware Developer Program registration process. The 'Sign in to Microsoft Entra Identity' button is selected.":::
 
-1. Now that you've signed in to Azure AD, select the country or region where you live or where your business is located.
+1. Now that you've signed in to Microsoft Entra Identity, select the country or region where you live or where your business is located.
 
     :::image type="content" source="./images/hardware-program-register/registration-select-country.png" alt-text="Screenshot of the Account country page of the Hardware Developer Program registration process. ":::
 
@@ -65,7 +63,7 @@ To register for the Hardware Developer Program:
 1. Now you'll need to sign and upload your file. Follow the steps as directed on the **Registration - Sign and upload your file** page.
 
     > [!NOTE]
-    > You can sign the signable file with your certificate offline and return later to upload it. When you return, be sure to sign in with your Azure AD global administrator account to resume the process.
+    > You can sign the signable file with your certificate offline and return later to upload it. When you return, be sure to sign in with your Microsoft Entra Identity global administrator account to resume the process.
 
 1. After you've uploaded your file, select **Next** at the bottom of the page.
 

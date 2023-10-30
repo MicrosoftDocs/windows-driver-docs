@@ -1,28 +1,22 @@
 ---
-title: HFP Device Removal
-description: The HFP device removal topic discusses what happens when a Bluetooth hands-free profile (HFP) device is removed from (leaves) the audio system.
-ms.date: 04/20/2017
+title: HFP device removal
+description: Learn about the process and consequences of removing a Bluetooth hands-free profile (HFP) device from an audio system.
+ms.date: 07/27/2023
 ---
 
-# HFP Device Removal
+# HFP device removal
 
+This article discusses what how the audio driver should respond when when a Bluetooth hands-free profile (HFP) device is removed from (leaves) the audio system.
 
-The HFP device removal topic discusses what happens when a Bluetooth hands-free profile (HFP) device is removed from (leaves) the audio system.
+To remove the registered device interface for a paired HFP device, follow these steps:
 
-To remove the registered device interface for a paired HFP device, the audio driver:
+1. Cancel any pending IOCTL_BTHHFP_SPEAKER_GET_VOLUME_STATUS_UPDATE IOCTLs.
+2. Cancel any pending IOCTL_BTHHFP_STREAM_GET_STATUS_UPDATE IOCTLs.
+3. Cancel any pending IOCTL_BTHHFP_DEVICE_GET_CONNECTION_STATUS_UPDATE IOCTLs.
+4. De-reference the HFP FileObject (which also de-references the DeviceObject).
+5. Select KsDeleteFilterFactory to remove the filter factory representing the HFP device associated with the removed interface.
 
-1. Cancels any pending IOCTL\_BTHHFP\_SPEAKER\_GET\_VOLUME\_STATUS\_UPDATE IOCTLs.
+## Related topics
 
-2. Cancels any pending IOCTL\_BTHHFP\_STREAM\_GET\_STATUS\_UPDATE IOCTLs.
-
-3. Cancels any pending IOCTL\_BTHHFP\_DEVICE\_GET\_CONNECTION\_STATUS\_UPDATE IOCTLs.
-
-4. De-references the HFP FileObject (which also de-references the DeviceObject).
-
-5. Calls KsDeleteFilterFactory to remove the filter factory that represents the HFP device associated with the removed interface.
-
-## <span id="related_topics"></span>Related topics
-[Theory of Operation](theory-of-operation.md)  
-
-
-
+- [Bluetooth HFP bypass audio streaming](bluetooth-hfp-bypass-audio-streaming.md)
+- [Bluetooth Low Energy (LE) Audio](../bluetooth/bluetooth-low-energy-audio.md)

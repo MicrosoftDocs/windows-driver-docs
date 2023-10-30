@@ -16,7 +16,7 @@ To set an OID that a connection-oriented miniport driver maintains, a bound prot
 
 The call to **NdisCoOidRequest** can complete synchronously or asynchronously. To complete the call asynchronously, a miniport driver calls [**NdisCoOidRequestComplete**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscooidrequestcomplete). The following diagram illustrates setting information in a connection-oriented miniport driver.
 
-![diagram illustrating setting information in a connection-oriented miniport driver.](images/fig5-3.png)
+:::image type="content" source="images/fig5-3.png" alt-text="Diagram that shows the process of setting information in a connection-oriented miniport driver.":::
 
  
 

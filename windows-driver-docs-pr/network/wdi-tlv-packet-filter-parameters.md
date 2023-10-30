@@ -1,7 +1,8 @@
 ---
 title: WDI_TLV_PACKET_FILTER_PARAMETERS
+ms.topic: reference
 description: WDI_TLV_PACKET_FILTER_PARAMETERS is a TLV that contains packet filter parameters for OID_WDI_SET_RECEIVE_PACKET_FILTER.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - WDI_TLV_PACKET_FILTER_PARAMETERS Network Drivers Starting with Windows Vista
 ---

@@ -10,7 +10,8 @@ api_location:
 - fltkernel.h
 api_type:
 - HeaderDef
-ms.date: 02/04/2020
+ms.date: 03/13/2023
+ms.topic: reference
 ---
 
 # FLT_PARAMETERS for IRP_MJ_DIRECTORY_CONTROL union
@@ -19,7 +20,7 @@ Union component used when the **MajorFunction** field of the [**FLT_IO_PARAMETER
 
 ## Syntax
 
-```ManagedCPlusPlus
+``` C
 typedef union _FLT_PARAMETERS {
   ...   ;
   union {
@@ -46,77 +47,62 @@ typedef union _FLT_PARAMETERS {
 
 ## Members
 
-**DirectoryControl**  
-Structure containing the following members.
+- **DirectoryControl**: Structure containing the following members.
 
-**QueryDirectory**  
-Union component used for IRP_MN_QUERY_DIRECTORY operations.
+- **QueryDirectory**: Union component used for IRP_MN_QUERY_DIRECTORY operations.
 
-**Length**  
-Length, in bytes, of the buffer that the **QueryDirectory.DirectoryBuffer** member points to.
+- **Length**: Length, in bytes, of the buffer that the **QueryDirectory.DirectoryBuffer** member points to.
 
-**FileName**  
-Pointer to a [**UNICODE_STRING**](/windows-hardware/drivers/ddi/wudfwdm/ns-wudfwdm-_unicode_string) structure that contains the name of a file within the specified directory.
+- **FileName**: Pointer to a [**UNICODE_STRING**](/windows-hardware/drivers/ddi/wudfwdm/ns-wudfwdm-_unicode_string) structure that contains the name of a file within the specified directory.
 
-**FileInformationClass**  
-Specifies one of the values described below.
+- **FileInformationClass**: Specifies one of the values described below.
 
-| Value | Meaning |
-|-------|---------|
-| FileBothDirectoryInformation   | Return a [**FILE_BOTH_DIR_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_both_dir_information) structure for each file.                      |
-| FileDirectoryInformation       | Return a [**FILE_DIRECTORY_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_directory_information) structure for each file.                     |
-| FileFullDirectoryInformation   | Return a [**FILE_FULL_DIR_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_full_dir_information) structure for each file.                      |
-| FileIdBothDirectoryInformation | Return a [**FILE_ID_BOTH_DIR_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_id_both_dir_information) structure for each file.               |
-| FileIdFullDirectoryInformation | Return a [**FILE_ID_FULL_DIR_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_id_full_dir_information) structure for each file.               |
-| FileNamesInformation           | Return a [**FILE_NAMES_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_names_information) structure for each file.                             |
-| FileObjectIdInformation        | Return a [**FILE_OBJECTID_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_objectid_information) structure for each file.                       |
-| FileReparsePointInformation    | Return a single [**FILE_REPARSE_POINT_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_reparse_point_information) structure for the directory. |
+  | Value | Meaning |
+  |-------|---------|
+  | FileBothDirectoryInformation   | Return a [**FILE_BOTH_DIR_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_both_dir_information) structure for each file.                      |
+  | FileDirectoryInformation       | Return a [**FILE_DIRECTORY_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_directory_information) structure for each file.                     |
+  | FileFullDirectoryInformation   | Return a [**FILE_FULL_DIR_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_full_dir_information) structure for each file.                      |
+  | FileIdBothDirectoryInformation | Return a [**FILE_ID_BOTH_DIR_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_id_both_dir_information) structure for each file.               |
+  | FileIdFullDirectoryInformation | Return a [**FILE_ID_FULL_DIR_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_id_full_dir_information) structure for each file.               |
+  | FileNamesInformation           | Return a [**FILE_NAMES_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_names_information) structure for each file.                             |
+  | FileObjectIdInformation        | Return a [**FILE_OBJECTID_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_objectid_information) structure for each file.                       |
+  | FileReparsePointInformation    | Return a single [**FILE_REPARSE_POINT_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_reparse_point_information) structure for the directory. |
 
-**FileIndex**  
-Index of the file where the directory scan begins. Ignored if the SL_INDEX_SPECIFIED flag is not set. This parameter cannot be specified in any Win32 function or kernel-mode support routine. Currently it is used only by the NT virtual DOS machine (NTVDM), which exists only on 32-bit NT-based operating systems. Note that the file index is undefined for file systems, such as NTFS, in which the position of a file within the parent directory is not fixed and can be changed at any time to maintain sort order.
+- **FileIndex**: Index of the file where the directory scan begins. Ignored if the SL_INDEX_SPECIFIED flag is not set. This parameter cannot be specified in any Win32 function or kernel-mode support routine. Currently it is used only by the NT virtual DOS machine (NTVDM), which exists only on 32-bit NT-based operating systems. Note that the file index is undefined for file systems, such as NTFS, in which the position of a file within the parent directory is not fixed and can be changed at any time to maintain sort order.
 
-**DirectoryBuffer**  
-Pointer to a caller-supplied output buffer that receives the requested information about the contents of the directory. This member is optional and can be NULL if a MDL is provided in **QueryDirectory.MdlAddress**. See **Remarks**.
+- **DirectoryBuffer**: Pointer to a caller-supplied output buffer that receives the requested information about the contents of the directory. This member is optional and can be NULL if a MDL is provided in **QueryDirectory.MdlAddress**. See **Remarks**.
 
-**MdlAddress**  
-Address of a memory descriptor list (MDL) that describes the buffer that the **QueryDirectory.DirectoryBuffer** member points to. This member is optional and can be **NULL** if a buffer is provided in **QueryDirectory.DirectoryBuffer**. See **Remarks**.
+- **MdlAddress**: Address of a memory descriptor list (MDL) that describes the buffer that the **QueryDirectory.DirectoryBuffer** member points to. This member is optional and can be **NULL** if a buffer is provided in **QueryDirectory.DirectoryBuffer**. See **Remarks**.
 
-**NotifyDirectory**  
-Union component used for IRP_MN_NOTIFY_CHANGE_DIRECTORY operations.
+- **NotifyDirectory**: Union component used for IRP_MN_NOTIFY_CHANGE_DIRECTORY operations.
 
-**Length**  
-Length, in bytes, of the buffer that the **NotifyDirectory.DirectoryBuffer** member points to.
+- **Length**: Length, in bytes, of the buffer that the **NotifyDirectory.DirectoryBuffer** member points to.
 
-**CompletionFilter**  
-Bitmask of flags that specify the types of changes to files or directories that should cause the IRPs in the notify list to be completed. The possible flag values are described following.
+- **CompletionFilter**: Bitmask of flags that specify the types of changes to files or directories that should cause the IRPs in the notify list to be completed. The possible flag values are described following.
 
-| Flag | Meaning  |
-|------|----------|
-| FILE_NOTIFY_CHANGE_FILE_NAME    | A file has been added, deleted, or renamed in this directory.                  |
-| FILE_NOTIFY_CHANGE_DIR_NAME     | A subdirectory has been created, removed, or renamed.                          |
-| FILE_NOTIFY_CHANGE_NAME          | This directory's name has changed.                                             |
-| FILE_NOTIFY_CHANGE_ATTRIBUTES    | The value of an attribute of this file, such as last access time, has changed. |
-| FILE_NOTIFY_CHANGE_SIZE          | This file's size has changed.                                                  |
-| FILE_NOTIFY_CHANGE_LAST_WRITE   | This file's last modification time has changed.                                |
-| FILE_NOTIFY_CHANGE_LAST_ACCESS  | This file's last access time has changed.                                      |
-| FILE_NOTIFY_CHANGE_CREATION      | This file's creation time has changed.                                         |
-| FILE_NOTIFY_CHANGE_EA            | This file's extended attributes have been modified.                            |
-| FILE_NOTIFY_CHANGE_SECURITY      | This file's security information has changed.                                  |
-| FILE_NOTIFY_CHANGE_STREAM_NAME  | A file stream has been added, deleted, or renamed in this directory.           |
-| FILE_NOTIFY_CHANGE_STREAM_SIZE  | This file stream's size has changed.                                           |
-| FILE_NOTIFY_CHANGE_STREAM_WRITE | This file stream's data has changed.                                           |
+  | Flag | Meaning  |
+  |------|----------|
+  | FILE_NOTIFY_CHANGE_FILE_NAME    | A file has been added, deleted, or renamed in this directory.                  |
+  | FILE_NOTIFY_CHANGE_DIR_NAME     | A subdirectory has been created, removed, or renamed.                          |
+  | FILE_NOTIFY_CHANGE_NAME          | This directory's name has changed.                                             |
+  | FILE_NOTIFY_CHANGE_ATTRIBUTES    | The value of an attribute of this file, such as last access time, has changed. |
+  | FILE_NOTIFY_CHANGE_SIZE          | This file's size has changed.                                                  |
+  | FILE_NOTIFY_CHANGE_LAST_WRITE   | This file's last modification time has changed.                                |
+  | FILE_NOTIFY_CHANGE_LAST_ACCESS  | This file's last access time has changed.                                      |
+  | FILE_NOTIFY_CHANGE_CREATION      | This file's creation time has changed.                                         |
+  | FILE_NOTIFY_CHANGE_EA            | This file's extended attributes have been modified.                            |
+  | FILE_NOTIFY_CHANGE_SECURITY      | This file's security information has changed.                                  |
+  | FILE_NOTIFY_CHANGE_STREAM_NAME  | A file stream has been added, deleted, or renamed in this directory.           |
+  | FILE_NOTIFY_CHANGE_STREAM_SIZE  | This file stream's size has changed.                                           |
+  | FILE_NOTIFY_CHANGE_STREAM_WRITE | This file stream's data has changed.                                           |
 
-**Spare1**  
-Not currently used.
+- **Spare1**: Not currently used.
 
-**Spare2**  
-Not currently used.
+- **Spare2**: Not currently used.
 
-**DirectoryBuffer**  
-Pointer to a caller-supplied output buffer that receives the requested information about the contents of the directory. This member is optional and can be NULL if a MDL is provided in **NotifyDirectory.MdlAddress**. See **Remarks**.
+- **DirectoryBuffer**: Pointer to a caller-supplied output buffer that receives the requested information about the contents of the directory. This member is optional and can be NULL if a MDL is provided in **NotifyDirectory.MdlAddress**. See **Remarks**.
 
-**MdlAddress**  
-Address of an MDL that describes the buffer that the **NotifyDirectory.DirectoryBuffer** member points to. This member is optional and can be **NULL** if a buffer is provided in **NotifyDirectory.DirectoryBuffer**. See **Remarks**.
+- **MdlAddress**: Address of an MDL that describes the buffer that the **NotifyDirectory.DirectoryBuffer** member points to. This member is optional and can be **NULL** if a buffer is provided in **NotifyDirectory.DirectoryBuffer**. See **Remarks**.
 
 ## Remarks
 
@@ -130,8 +116,9 @@ IRP_MJ_DIRECTORY_CONTROL is an IRP-based operation.
 
 ## Requirements
 
-**Header**: Fltkernel.h (include Fltkernel.h)
-
+| Requirement type | Requirement |
+| ---------------- | ----------- |
+| Header | *Fltkernel.h* (include *Fltkernel.h*) |
 
 ## See also
 

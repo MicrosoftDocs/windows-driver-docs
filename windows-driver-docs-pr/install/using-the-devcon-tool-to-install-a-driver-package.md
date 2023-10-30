@@ -7,7 +7,7 @@ ms.date: 07/26/2022
 # Using the DevCon tool to install a driver package
 
 > [!IMPORTANT]
-> PnPUtil ships with every release of Windows and makes use of the most reliable and secure APIs available and it's use is recommended. For more information on using PnPutil instead of devcon, see [PnPUtil](../devtest/pnputil.md).
+> PnPUtil ships with every release of Windows and makes use of the most reliable and secure APIs available and its use is recommended. For more information on using PnPutil instead of devcon, see [PnPUtil](../devtest/pnputil.md).
 
 To install the driver package through DevCon, do the following:
 

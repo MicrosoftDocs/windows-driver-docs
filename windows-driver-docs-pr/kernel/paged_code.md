@@ -2,6 +2,7 @@
 title: PAGED_CODE macro
 description: PAGED_CODE macro
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # PAGED_CODE

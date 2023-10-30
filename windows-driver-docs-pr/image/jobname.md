@@ -4,15 +4,15 @@ description: The required JobName element specifies the client-supplied, user-fr
 keywords: ["JobName element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn JobName
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 04/28/2023
 ---
 
 # JobName element
-
 
 The required **JobName** element specifies the client-supplied, user-friendly name of the scan job.
 
@@ -34,33 +34,15 @@ Required. Any valid character string.
 
 ## Child elements
 
-
 There are no child elements.
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="jobdescription.md" data-raw-source="[&lt;strong&gt;JobDescription&lt;/strong&gt;](jobdescription.md)"><strong>JobDescription</strong></a></p></td>
-</tr>
-<tr class="even">
-<td><p><a href="jobendstate.md" data-raw-source="[&lt;strong&gt;JobEndState&lt;/strong&gt;](jobendstate.md)"><strong>JobEndState</strong></a></p></td>
-</tr>
-<tr class="odd">
-<td><p><a href="jobsummary.md" data-raw-source="[&lt;strong&gt;JobSummary&lt;/strong&gt;](jobsummary.md)"><strong>JobSummary</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**JobDescription**](jobdescription.md) |
+| [**JobEndState**](jobendstate.md) |
+| [**JobSummary**](jobsummary.md) |
 
 ## Remarks
 
@@ -72,7 +54,6 @@ The name of the user who submitted the job is specified in the [**JobOriginating
 
 ## See also
 
-
 [**DefaultScanTicket**](defaultscanticket.md)
 
 [**JobDescription**](jobdescription.md)
@@ -82,13 +63,3 @@ The name of the user who submitted the job is specified in the [**JobOriginating
 [**JobOriginatingUserName**](joboriginatingusername.md)
 
 [**JobSummary**](jobsummary.md)
-
- 
-
- 
-
-
-
-
-
-

@@ -1,7 +1,8 @@
 ---
 title: WDI_TLV_WFD_ASSOCIATION_STATUS
+ms.topic: reference
 description: WDI_TLV_WFD_ASSOCIATION_STATUS is a TLV that contains the status code to be set when an association request is denied.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - WDI_TLV_WFD_ASSOCIATION_STATUS Network Drivers Starting with Windows Vista
 ---

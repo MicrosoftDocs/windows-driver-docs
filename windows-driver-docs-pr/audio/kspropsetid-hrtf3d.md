@@ -2,8 +2,10 @@
 title: KSPROPSETID\_Hrtf3d
 description: KSPROPSETID\_Hrtf3d
 keywords: ["KSPROPSETID_Hrtf3d"]
-ms.date: 11/28/2017
+ms.date: 03/06/2023
+ms.topic: reference
 ---
+
 
 # KSPROPSETID\_Hrtf3d
 

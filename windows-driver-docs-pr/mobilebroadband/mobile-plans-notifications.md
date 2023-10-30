@@ -3,7 +3,7 @@ title: Mobile Plans Notifications
 description: This topic describes how to configure toast notifications in Mobile Plans.
 keywords:
 - Windows Mobile Plans toast notifications
-ms.date: 06/11/2019
+ms.date: 10/06/2023
 ---
 
 # Mobile Plans notifications
@@ -27,19 +27,19 @@ Because the mobile operator triggers the notification via SMS, the device must h
 
 The notification content can be customized by the mobile operator using a template with predefined elements. The highlighted elements below are definable by the mobile operator.
 
-![SMS notification template.](images/mobile_plans_sms_notification_template.png)
+:::image type="content" source="images/mobile_plans_sms_notification_template.png" alt-text="Screenshot of SMS notification template with customizable elements.":::
 
 Field name | Description | Example
 ---------- | ----------- | -------
-Notification type | Several pre-defined types of SMS-notifications are supported. Each type behaves the same. Only the strings shown for the `<accept>` and `<decline>` buttons change depending on the type. | Low Balance, Zero Balance, New Offer, Trial Offer, Trial Ending, Trial Ended
+Notification type | Several pre-defined types of SMS-notifications are supported. Each type behaves the same. Only the strings shown for the `<accept>` and `<decline>` buttons change depending on the type. | LowBalance, ZeroBalance, NewOffer, TrialOffer, TrialEnding, TrialEnded
 Title | One line call to action | "You're almost out of data"
 Body | Short message highlighting the offering value to the end user | "There's less than 5MB left for your current data plan. Take action now to make sure you stay connected."
-Image | A lifestyle oriented photo with the PC as the centerpiece. Image dimensions are 364x180 pixels at 100% scaling. | https://picsum.photos/id/1/364/180
-Logo | This is part of the assets that are provided during onboarding | 
+Image | A lifestyle oriented photo with the PC as the centerpiece. Image dimensions are 364x180 pixels at 100% scaling. | <https://picsum.photos/id/1/364/180>
+Logo | This is part of the assets that are provided during onboarding |
 
 ### Sample SMS-triggered notification
 
-![SMS notification sample.](images/mobile_plans_sms_notification_sample.png)
+:::image type="content" source="images/mobile_plans_sms_notification_sample.png" alt-text="Screenshot of a sample SMS-triggered notification on a Windows 10 device.":::
 
 ### Using multiple notification templates
 
@@ -49,10 +49,10 @@ Since the request includes identifiers for the active profile on the device, the
 
 The Get Notifications request returns the template ID to be used for the notification shown to the user.
 
-![Mobile Plans Get Notifications Callflow.](images/mobile_plans_get_notifications_callflow.png)
-
+:::image type="content" source="images/mobile_plans_get_notifications_callflow.png" alt-text="Diagram that shows the Mobile Plans Get Notifications Callflow process.":::
 
 ### GetNotifications API specification
+
 The `GetOffers` API is called upon receipt of the SMS message by the Mobile Plans application. The Mobile Plans service is a proxy for this request.
 
 ```HTTP
@@ -62,6 +62,7 @@ GET https://{notificationUri}sims/{simmri}/notifications
 - *{notificationUri}* is the NotificationUri value onboarded as part of the mobile operator's service configuration.
 
 The endpoint has three query parameters:
+
 - *limit*, which is required and specifies the number of notifications to return.
 - *imei*, which is optional and specifies the client’s IMEI.
 - *notificationType*, which is required and specifies the type of notifications to return. The *notificationType* parameter is always one of the enumerated strings accepted by the Mobile Plans’ GET Notifications Request.
@@ -95,17 +96,17 @@ Mobile operators in some markets also have the ability to show a promotional not
 
 The promotional notification content can be customized by the mobile operator using a template with predefined elements. The highlighted elements below are definable by the mobile operator.
 
-![Promo notification template.](images/mobile_plans_promo_notification_template.png)
+:::image type="content" source="images/mobile_plans_promo_notification_template.png" alt-text="Screenshot of the promo notification template with customizable elements.":::
 
 Field name | Description | Example
 ---------- | ----------- | -------
 Title | One line call to action | "Activate your free trial"
 Body | Short message highlighting the offering value to the end user | "Get 30GB FREE data, so you can stay connected from anywhere."
-Image | A lifestyle oriented photo with the PC as the centerpiece. Image dimensions are 360x243 pixels at 100% scaling. | https://picsum.photos/id/1/360/234
-Logo | This is part of the assets that are provided during onboarding | 
+Image | A lifestyle oriented photo with the PC as the centerpiece. Image dimensions are 360x243 pixels at 100% scaling. | <https://picsum.photos/id/1/360/234>
+Logo | This is part of the assets that are provided during onboarding |
 
 The [Notifications Visualizer app](https://www.microsoft.com/store/productId/9NBLGGH5XSL1) can be used to mockup and test notification content.
 
 ### Sample App-triggered notification
 
-![Mobile plans notification example.](images/mobile_plans_notifications.png)
+:::image type="content" source="images/mobile_plans_notifications.png" alt-text="Screenshot of a sample app-triggered notification on a Windows 10 device.":::

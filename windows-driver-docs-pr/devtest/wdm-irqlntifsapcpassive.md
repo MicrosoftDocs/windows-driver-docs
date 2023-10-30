@@ -5,6 +5,7 @@ ms.date: 04/03/2020
 keywords: ["IrqlNtifsApcPassive rule (wdm)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IrqlNtifsApcPassive
 api_type:

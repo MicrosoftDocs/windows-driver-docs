@@ -4,15 +4,15 @@ description: The required ScannerCurrentTime element indicates the current date 
 keywords: ["ScannerCurrentTime element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ScannerCurrentTime
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 05/02/2023
 ---
 
 # ScannerCurrentTime element
-
 
 The required **ScannerCurrentTime** element indicates the current date and time according to the scanner's internal clock.
 
@@ -30,31 +30,17 @@ There are no attributes.
 
 ## Text value
 
-Required. Any valid value for the dateTime type. For more information about dateTime, see XML Schema Part 2: Datatypes Second Edition.**dateTimedateTime**
+Required. Any valid value for the dateTime type. For more information about dateTime, see *XML Schema Part 2: Datatypes Second Edition*.**dateTimedateTime**
 
 ## Child elements
-
 
 There are no child elements.
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="scannerstatus.md" data-raw-source="[&lt;strong&gt;ScannerStatus&lt;/strong&gt;](scannerstatus.md)"><strong>ScannerStatus</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**ScannerStatus**](scannerstatus.md) |
 
 ## Remarks
 
@@ -64,15 +50,4 @@ All times are based on the time at startup, so the client can calculate duration
 
 ## See also
 
-
 [**ScannerStatus**](scannerstatus.md)
-
- 
-
- 
-
-
-
-
-
-

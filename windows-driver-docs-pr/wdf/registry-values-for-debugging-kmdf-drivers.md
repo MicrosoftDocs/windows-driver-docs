@@ -165,6 +165,22 @@ AddReg         = eee.AddReg
 HKR, Parameters\Wdf, LogPages,   0x00010001, 3 ; KMDF IFR size
 ```
 
+## ObjectLeakDetectionLimit
+
+In some cases, framework objects are incorrectly parented and not deleted after use. You can use **ObjectLeakDetectionLimit** and **ObjectsForLeakDetection** to specify a maximum number of objects and what should happen when this threshold is exceeded.
+
+*REG\_DWORD*
+
+Specifies the maximum number of objects of the types described in the **ObjectsForLeakDetection** key. To control whether exceeding this threshold should cause a debug break or a bugcheck, set the [**DbgBreakOnError**](#dbgbreakonerror) key. The limit scales with the number of devices installed, so if the driver creates three WDFDEVICE objects, the limit is three times the value specified in **ObjectLeakDetectionLimit**.
+
+## ObjectsForLeakDetection
+
+*REG\_MULTI\_SZ*
+
+Use with **ObjectLeakDetectionLimit**. Lists each type name to verify. For example, you could specify `WDFDMATRANSACTION WDFDEVICE`. To specify all handle types, use `*` as the string. If the ObjectsForLeakDetection key is not specified, the default is to monitor WDFREQUEST, WDFWORKITEM, WDFKEY, WDFSTRING, WDFOBJECT, and WDFDEVICE.
+
+If you specify WDFREQUEST, the verifier only counts WDFREQUEST objects that the driver creates. This feature does not currently support tracking the WDFMEMORY object type.
+
 ## TrackHandles
 
 *REG\_MULTI\_SZ*

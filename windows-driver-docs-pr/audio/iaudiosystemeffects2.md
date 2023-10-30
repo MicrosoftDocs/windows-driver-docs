@@ -4,11 +4,12 @@ description: The IAudioSystemEffects2 interface was introduced with Windows 8.1
 keywords: ["IAudioSystemEffects2 interface Audio Devices", "IAudioSystemEffects2 interface Audio Devices , described"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IAudioSystemEffects2
 api_type:
 - COM
-ms.date: 11/28/2017
+ms.date: 03/06/2023
 ---
 
 # IAudioSystemEffects2 interface

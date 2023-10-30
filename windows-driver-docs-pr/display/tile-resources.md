@@ -6,14 +6,13 @@ ms.date: 04/20/2017
 
 # Tile resources
 
-
 For tile resources, the asynchronous video memory manager services running on the device paging queue aren't sufficient. In particular, for tile resources we want to queue page table updates along with rendering and ensure that the updates are applied synchronously between draw operations.
 
 For example, given the following API call sequence by an application:
 
-1.  Draw \#42
-2.  Update tile mapping
-3.  Draw \#43
+1. Draw \#42
+2. Update tile mapping
+3. Draw \#43
 
 We want to ensure that *Draw \#42* executes with the page tables in their old state while *Draw \#43* executes with page tables in their new state. For *update tile mapping* operations that specify the no-overwrite flag, this synchronization can be relaxed a bit, but high performance synchronous updates must be supported.
 In order to support high performance queued updates, we need the ability to generate paging operations ahead of time and queue them to a context and wait for them to be executed once the dependent rendering context reaches a certain point (ex: after Draw \#42 above).
@@ -26,9 +25,9 @@ To solve this problem, we're introducing the notion of a per-context paging comp
 
 Page table update using the companion context is illustrated below.
 
-![interlocked page table update.](images/tile-resources.1.png)
+:::image type="content" source="images/tile-resources.1.png" alt-text="Diagram showing interlocked page table update process.":::
 
-The companion context is lazily created by the video memory manager against an engine chosen by the kernel mode driver during context creation (**DXGKARG\_CREATECONTEXT.PagingCompanionNodeId**).
+The companion context is lazily created by the video memory manager against an engine chosen by the kernel mode driver during context creation (**DXGKARG_CREATECONTEXT.PagingCompanionNodeId**).
 
 The companion context executes in a per-process privileged address space. The address space is privileged because it is both controlled by the kernel and only the direct memory access (DMA) buffers generated in the kernel are allowed to execute within. Outside of that, this is a normal GPU virtual address space and doesn't require any special hardware virtual address space privilege support.
 
@@ -50,14 +49,10 @@ Note that as long as there are queued page table updates referencing a particula
 
 This mechanism is illustrated below:
 
-![copy page table operation.](images/tile-resources.2.png)**
+:::image type="content" source="images/tile-resources.2.png" alt-text="Diagram illustrating the copy page table operation.":::
 
-## <span id="_Update_GPU_virtual_address_on_GPUs_with_CPU_VIRTUAL_page_table_update_mode"></span><span id="_update_gpu_virtual_address_on_gpus_with_cpu_virtual_page_table_update_mode"></span><span id="_UPDATE_GPU_VIRTUAL_ADDRESS_ON_GPUS_WITH_CPU_VIRTUAL_PAGE_TABLE_UPDATE_MODE"></span> Update GPU virtual address on GPUs with CPU\_VIRTUAL page table update mode
+## Update GPU virtual address on GPUs with CPU_VIRTUAL page table update mode
 
-
-On GPUs, which support the **DXGK\_PAGETABLEUPDATE\_CPU\_VIRTUAL** page table update mode, the **CopyPageTableEntries** operation will not be used. These are integrated GPU, which do not use paging buffers. The video memory manager will defer the update operation until the right time and use the [*UpdatePageTable*](./dxgkddiupdatepagetable.md) operations to setup page tables.
+On GPUs, which support the **DXGK_PAGETABLEUPDATE_CPU_VIRTUAL** page table update mode, the **CopyPageTableEntries** operation will not be used. These are integrated GPU, which do not use paging buffers. The video memory manager will defer the update operation until the right time and use the [*UpdatePageTable*](./dxgkddiupdatepagetable.md) operations to setup page tables.
 
 The disadvantage of this method is that the [*UpdatePageTable*](./dxgkddiupdatepagetable.md) operations are not parallel with rendering operations. The advantage is that the driver does not need to implement support for paging buffers and implement *UpdatePageTable* as an immediate operation.
-
- 
-

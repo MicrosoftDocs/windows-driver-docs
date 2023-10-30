@@ -80,7 +80,7 @@ If you click the **List modules that begin with usb** link, you see output simil
 ## <span id="Right-Click_Behavior_in_DML"></span><span id="right-click_behavior_in_dml"></span><span id="RIGHT-CLICK_BEHAVIOR_IN_DML"></span>Right-Click Behavior in DML
 
 
-Right-click behavior is available in DML. This sample shows how to define right click behavior using &lt;altlink&gt; to send a breakpoint [**bp (Set Breakpoint)**](bp--bu--bm--set-breakpoint-.md) command and send the [**u (Unassemble)**](u--unassemble-.md) with a regular click.
+Right-click behavior is available in DML. This sample shows how to define right click behavior using &lt;altlink&gt; to send a breakpoint [**bp (Set Breakpoint)**](../debuggercmds/bp--bu--bm--set-breakpoint-.md) command and send the [**u (Unassemble)**](../debuggercmds/u--unassemble-.md) with a regular click.
 
 ```text
 <link cmd="u MyProgram!memcpy">
@@ -129,7 +129,7 @@ Conversion to plain text drops the tags.
 
 **Example**
 
-This example shows how to define right click behavior using &lt;altlink&gt; to send a breakpoint [**bp (Set Breakpoint)**](bp--bu--bm--set-breakpoint-.md) command and send the [**u (Unassemble)**](u--unassemble-.md) with a regular click.
+This example shows how to define right click behavior using &lt;altlink&gt; to send a breakpoint [**bp (Set Breakpoint)**](../debuggercmds/bp--bu--bm--set-breakpoint-.md) command and send the [**u (Unassemble)**](../debuggercmds/u--unassemble-.md) with a regular click.
 
 ```text
 <link cmd="u MyProgram!memcpy">
@@ -365,7 +365,7 @@ This example code illustrates the following.
 
 <col fg="srccmnt" bg="wbg"><b>*** Common First Steps for Crash Dump Analysis ***</b> </col>
 <link cmd=".symfix" alt="Set standard symbol path using .symfix">.symfix<altlink name="Help about .symfix" cmd=".hh .symfix" /> </link> - Set standard symbol path
-<link cmd=".sympath+ C:\Symbols" alt="This link adds addtional symbol directories">.sympath+ C:\Symbols<altlink name="Help for .sympath" cmd=".hh .sympath" /> </link> - Add any additional symbol directories, for example C:\Symbols
+<link cmd=".sympath+ C:\Symbols" alt="This link adds additional symbol directories">.sympath+ C:\Symbols<altlink name="Help for .sympath" cmd=".hh .sympath" /> </link> - Add any additional symbol directories, for example C:\Symbols
 <link cmd=".reload /f" alt="This link reloads symbols">.reload /f<altlink name="Help for .reload" cmd=".hh .reload" /> </link> - Reloads symbols to make sure they are in good shape
 <link cmd="!analyze -v" alt="This link runs !analyze with the verbose option">!analyze -v<altlink name="Help for !analyze" cmd=".hh !analyze" /> </link> - Run !analyze with the verbose option
 <link cmd="vertarget" alt="This link runs checks the target version">vertarget<altlink name="Help for vertarget" cmd=".hh vertarget" /></link> - Check the target version
@@ -628,7 +628,7 @@ Note that an output object can register for both text and DML content if it can 
 
 The dbgeng will automatically convert between plain text and DML as necessary. For example, if a caller sends DML content to the engine the engine will convert it to plain text for all output clients which only accept plain text. Alternately, the engine will convert plain text to DML for all output callbacks which only accept DML.
 
-## <span id="related_topics"></span>Related topics
+## <span id="related_topics"></span>See also
 
 
 [Using Debugger Markup Language](debugger-markup-language-commands.md)

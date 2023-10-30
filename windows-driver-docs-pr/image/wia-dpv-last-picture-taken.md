@@ -4,6 +4,7 @@ description: The WIA_DPV_LAST_PICTURE_TAKEN property is reserved by Microsoft fo
 keywords: ["WIA_DPV_LAST_PICTURE_TAKEN Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPV_LAST_PICTURE_TAKEN
 api_location:

@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["PcAllocatedPages rule (audio)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - PcAllocatedPages
 api_type:

@@ -5,10 +5,12 @@ keywords:
 - Plotter Driver WDK print, user interface
 - MSPlot WDK print, user interface
 - user interface WDK MSPlot
-ms.date: 09/14/2022
+ms.date: 01/30/2023
 ---
 
 # Plotter driver user interface
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The plotter user interface employs [CPSUI](common-property-sheet-user-interface.md) to create the following two property sheet pages:
 

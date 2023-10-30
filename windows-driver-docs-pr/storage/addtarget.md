@@ -4,6 +4,7 @@ description: The AddTarget WMI method configures the WMI provider to inform the 
 keywords: ["AddTarget function Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - AddTarget
 api_location:

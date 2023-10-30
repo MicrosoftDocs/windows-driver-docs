@@ -4,6 +4,7 @@ description: The KSPROPERTY_EXTXPORT_STATE_NOTIFY property sets or gets notifica
 keywords: ["KSPROPERTY_EXTXPORT_STATE_NOTIFY Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_EXTXPORT_STATE_NOTIFY
 api_location:

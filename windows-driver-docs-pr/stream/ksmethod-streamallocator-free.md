@@ -4,6 +4,7 @@ description: The KSMETHOD\_STREAMALLOCATOR\_FREE method is used by a client to f
 keywords: ["KSMETHOD_STREAMALLOCATOR_FREE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSMETHOD_STREAMALLOCATOR_FREE
 api_type:

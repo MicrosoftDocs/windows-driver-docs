@@ -23,7 +23,7 @@ The control GUID appears in the [WPP\_CONTROL\_GUIDS](/previous-versions/windows
         WPP_DEFINE_BIT(NameOfTraceFlag2)  \
         .............................   \
         .............................   \
-        WPP_DEFINE_BIT(NameOfTraceFlag31) )
+        WPP_DEFINE_BIT(NameOfTraceFlag32) )
 ```
 
 [Tracepdb](tracepdb.md) creates a [trace (MOF) file](trace-managed-object-format--mof--file.md) that contains the control GUID and the trace levels of each trace provider that is represented in the PDB file. The name of the MOF file is the module name of the trace provider. Tracepdb can also produce a TMC file if you use the **-c** option.

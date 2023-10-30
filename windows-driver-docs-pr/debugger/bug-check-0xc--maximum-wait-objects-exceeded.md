@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xC MAXIMUM_WAIT_OBJECTS_EXCEEDED", "MAXIMUM_WAIT_OBJECTS_
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - MAXIMUM_WAIT_OBJECTS_EXCEEDED
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The MAXIMUM\_WAIT\_OBJECTS\_EXCEEDED bug check has a value of 0x0000000C. This indicates that the current thread exceeded the permitted number of wait objects.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## MAXIMUM\_WAIT\_OBJECTS\_EXCEEDED Parameters

@@ -1,10 +1,10 @@
 ---
-title: Adding UI to a WIA Minidriver
-description: Adding UI to a WIA Minidriver
-ms.date: 07/18/2018
+title: Add UI to a WIA Minidriver
+description: Add UI to a WIA Minidriver
+ms.date: 03/27/2023
 ---
 
-# Adding UI to a WIA Minidriver
+# Add UI to a WIA Minidriver
 
 You can add extended UI or replace UI components for a WIA minidriver by installing a separate DLL with the WIA minidriver. Unlike a TWAIN driver, a WIA driver's UI component is separate from the actual WIA minidriver. The UI components run in the application's process, while the WIA minidriver runs in the WIA service's process. So, a WIA driver might not directly show UI; only the WIA UI extension modules of the driver might show UI.
 
@@ -24,4 +24,4 @@ To provide a custom icon for a device, implement the [**IWiaUIExtension::GetDevi
 
 The rest of this section includes:
 
-[Creating a "Hello World" WIA Minidriver UI Extension](creating-a--hello-world--wia-minidriver-ui-extension.md), a complete example of how to implement your own custom UI.
+[Create a "Hello World" WIA Minidriver UI Extension](creating-a--hello-world--wia-minidriver-ui-extension.md), a complete example of how to implement your own custom UI.

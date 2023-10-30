@@ -4,10 +4,12 @@ description: Provides information about attributes for simulated fonts.
 keywords:
 - simulated font attributes WDK Unidrv
 - font attributes WDK Unidrv
-ms.date: 09/06/2022
+ms.date: 01/26/2023
 ---
 
 # Attributes for simulated fonts
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The following table lists attributes describing the printer's support for simulated fonts.
 

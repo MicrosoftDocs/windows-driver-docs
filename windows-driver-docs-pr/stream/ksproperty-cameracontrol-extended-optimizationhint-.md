@@ -4,6 +4,7 @@ description: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_OPTIMIZATIONHINT is used to co
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_OPTIMIZATIONHINT Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_EXTENDED_OPTIMIZATIONHINT
 api_location:

@@ -1,5 +1,6 @@
 ---
 title: OID_TIMESTAMP_CURRENT_CONFIG
+ms.topic: reference
 description: An overlying driver issues an OID query request of OID_TIMESTAMP_CURRENT_CONFIG to obtain the current timestamping configuration of the NIC.
 ms.date: 01/31/2021
 keywords: 

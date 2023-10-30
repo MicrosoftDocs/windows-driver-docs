@@ -4,6 +4,7 @@ description: A client uses the KSPROPERTY_PIN_DATAINTERSECTION property to find 
 keywords: ["KSPROPERTY_PIN_DATAINTERSECTION Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_PIN_DATAINTERSECTION
 api_location:

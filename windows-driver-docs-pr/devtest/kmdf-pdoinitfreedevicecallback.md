@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["PdoInitFreeDeviceCallback rule (kmdf)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - PdoInitFreeDeviceCallback
 api_type:

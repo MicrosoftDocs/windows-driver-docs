@@ -9,7 +9,7 @@ keywords:
 - platform-specific hardware error driver plug-ins WDK WHEA , error source control
 - PSHED plug-ins WDK WHEA , error source control
 - error source control WDK WHEA
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Participating in Error Source Control

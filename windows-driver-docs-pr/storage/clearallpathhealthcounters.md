@@ -4,6 +4,7 @@ description: The ClearAllPathsHealthCounters method is used to clear all gathere
 keywords: ["ClearAllPathHealthCounters function Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ClearAllPathHealthCounters
 api_location:

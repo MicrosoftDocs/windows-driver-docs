@@ -1,7 +1,8 @@
 ---
 title: OID_GEN_RNDIS_CONFIG_PARAMETER
+ms.topic: reference
 description: As a set, the OID_GEN_RNDIS_CONFIG_PARAMETER is used to set device-specific parameters.
-ms.date: 08/08/2017
+ms.date: 03/02/2023
 keywords: 
  -OID_GEN_RNDIS_CONFIG_PARAMETER Network Drivers Starting with Windows Vista
 ---

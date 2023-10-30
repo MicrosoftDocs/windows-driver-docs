@@ -1,11 +1,10 @@
 ---
 title: Opting Out of Volume Level Persistence
 description: Opting Out of Volume Level Persistence
-ms.date: 04/20/2017
+ms.date: 05/05/2023
 ---
 
 # Opting Out of Volume Level Persistence
-
 
 By default the volume level settings are maintained when you restart your computer. This default system behavior is referred to as *volume persistence*. If you do not want the volume levels to be maintained by the system after a computer restart, you can use an INF file at the time of installation of the audio adapter, to opt out of the default system behavior.
 
@@ -16,19 +15,20 @@ To opt out of volume persistence using an INF file, use the [**AddProperty**](..
 The following INF file fragment shows how to opt out of volume persistence:
 
 ```inf
- 
 ;; INF file fragment to show how to use AddProperty
 ;; to opt out of volume persistence
 ;;
 [Version]
-Signature = "$CHICAGO$"
+...
 Class = MEDIA
-ClassGUID = {...}
+ClassGUID = {4d36e96c-e325-11ce-bfc1-08002be10318}
 ...
+
 [Manufacturer]
-%MfgName% = CompanyName
+%MfgName% = CompanyName,NTamd64
 ...
-[CompanyName]
+
+[CompanyName.NTamd64]
 %DeviceDescription% = HdAudModel, hw-id
 ;; ... other device models listed here
 
@@ -50,8 +50,6 @@ DeviceDescription = "My WDM device driver"
 
 **Note**  The preceding INF file fragment, only shows the **Version** section and the sections relevant to the [**AddProperty**](../install/inf-addproperty-directive.md) directive.
 
- 
-
 The **%MfgName% = CompanyName** line entry in the **Manufacturer** section references the **CompanyName** section where the model and hardware ID (hw-id) of the audio adapter are provided. This section in an INF file, where model and hw-id information is provided, is called the *models section*. The actual title of the section is user-defined and in the preceding example it is **CompanyName**. For more information about the models section of an INF file, see [**INF Models Section**](../install/inf-models-section.md).
 
 The models section, in turn, references the device driver install (DDInstall) section, where information is provided about other INF files that the setup program must copy. The actual title of this section is user-defined and in the preceding example it is **HdAudModel**. The **Needs=KS.Registration...** line entry provides information about the specific sections within the INF files, from which the setup program must retrieve data for installation
@@ -65,6 +63,3 @@ The **HdAudModel** section shows two line entries with the first one commented o
 For more information about the AddProperty directive, see [**INF AddProperty Directive**](../install/inf-addproperty-directive.md).
 
 The property name that corresponds to the property category GUID and property ID in the preceding INF file fragment is PKEY\_AudioDevice\_DontPersistControls.
-
- 
-

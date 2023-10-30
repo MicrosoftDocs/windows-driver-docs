@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["IrqlExFree1 rule (wdm)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IrqlExFree1
 api_type:

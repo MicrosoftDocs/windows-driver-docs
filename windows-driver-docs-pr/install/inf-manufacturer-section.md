@@ -5,11 +5,12 @@ keywords:
 - INF Manufacturer Section Device and Driver Installation
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INF Manufacturer Section
 api_type:
 - NA
-ms.date: 06/15/2022
+ms.date: 10/12/2023
 ---
 
 # INF Manufacturer section
@@ -70,18 +71,18 @@ The _models-section-name_ entries in the **Manufacturer** section can be decorat
 For Windows XP to Windows 10, version 1511, the format of _TargetOSVersion_ decoration is as follows:
 
 ```inf
-nt[Architecture][.[OSMajorVersion][.[OSMinorVersion][.[ProductType][.SuiteMask]]]]
+NT[Architecture][.[OSMajorVersion][.[OSMinorVersion][.[ProductType][.SuiteMask]]]]
 ```
 
 Starting with Windows 10, version 1607 (Build 14310 and later), the format of the _TargetOSVersion_ decoration is as follows:
 
 ```inf
-nt[Architecture][.[OSMajorVersion][.[OSMinorVersion][.[ProductType][.[SuiteMask][.[BuildNumber]]]]]
+NT[Architecture][.[OSMajorVersion][.[OSMinorVersion][.[ProductType][.[SuiteMask][.[BuildNumber]]]]]
 ```
 
 Each field is defined as follows:
 
-**nt**  
+**NT**  
 Specifies the target operating system is NT-based. Windows 2000 and later versions of Windows are all NT-based.
 
 _Architecture_  
@@ -99,7 +100,7 @@ A number that represents the operating system's major version number. The follow
 
 | Windows version | Major version |
 |--|--|
-| Windows 11 | 10 |
+| Windows 11 (all releases) | 10 |
 | Windows Server 2022 | 10 |
 | Windows Server 2019 | 10 |
 | Windows Server 2016 | 10 |
@@ -122,7 +123,7 @@ A number that represents the operating system's minor version number. The follow
 
 | Windows version | Minor version |
 |--|--|
-| Windows 11 | 0 |
+| Windows 11 (all releases) | 0 |
 | Windows Server 2022 | 0 |
 | Windows Server 2019 | 0 |
 | Windows Server 2016 | 0 |
@@ -191,8 +192,10 @@ The following table defines the build number for the Windows operating system.
 
 | Windows version | Build number |
 |--|--|
+| Windows 11 version 22H2 | 22621 |
 | Windows 11 version 21H2 | 22000 |
 | Windows Server 2022 | 20348 |
+| Windows 10 version 22H2 | 19045 |
 | Windows 10 version 21H2 | 19044 |
 | Windows 10 version 21H1 | 19043 |
 | Windows 10 version 20H2 | 19042 |
@@ -210,7 +213,7 @@ The following table defines the build number for the Windows operating system.
 For more information about the _TargetOSVersion_ decoration, see [Combining Platform Extensions with Operating System Versions](combining-platform-extensions-with-operating-system-versions.md).
 
 > [!IMPORTANT]
-> We highly recommend that you always decorate _models-section-name_ entries in the **Manufacturer** and [**_Models_**](inf-models-section.md) sections with platform extensions for target operating systems of Windows XP or later versions of Windows. For x86-based hardware platforms, you should avoid the use of the **.nt** platform extension and use **.ntx86** instead.
+> We highly recommend that you always decorate _models-section-name_ entries in the **Manufacturer** and [**_Models_**](inf-models-section.md) sections with platform extensions for target operating systems of Windows XP or later versions of Windows. For x86-based hardware platforms, you should avoid the use of the **.NT** platform extension and use **.NTx86** instead.
 
 If your INF contains **Manufacturer** section entries with decorations, it must also include [**INF _Models_ sections**](inf-models-section.md) with names that match the operating system decorations. For example, if an INF contains the following **Manufacturer** section:
 
@@ -266,9 +269,9 @@ This example shows a **Manufacturer** section typical to an INF for a single IHV
 
 ```inf
 [Manufacturer]
-%Mfg%=Contoso        ; Models section == Contoso
+%Mfg%=Contoso,NTamd64        ; Models section == Contoso
 
-[Contoso]
+[Contoso.NTamd64]
 
 ; ...
 [Strings]
@@ -279,10 +282,10 @@ The next example shows part of a **Manufacturer** section typical to an INF for 
 
 ```inf
 [Manufacturer]
-%CONTOSO%=Contoso_Section
+%CONTOSO%=Contoso_Section,NTamd64
 ; several entries omitted here for brevity
-%FABRIKAM%=Fabrikam_Section
-%ADATUM%=Adatum_Section
+%FABRIKAM%=Fabrikam_Section,NTamd64
+%ADATUM%=Adatum_Section,NTamd64
 ```
 
 The following example shows a **Manufacturer** section that is specific to x86 platforms, Windows XP and later:

@@ -1,10 +1,10 @@
 ---
-title: Debugging Tools For Windows8 Release Notes
-description: Debugging Tools For Windows8 Release Notes
+title: Debugging Tools For Windows 8 Release Notes
+description: Debugging Tools For Windows 8 Release Notes
 ms.date: 11/28/2017
 ---
 
-# Debugging Tools For Windows8 Release Notes
+# Debugging Tools For Windows 8 Release Notes
 
 
 ## <span id="Channel_number_for_1394_debugging_in_Visual_Studio"></span><span id="channel_number_for_1394_debugging_in_visual_studio"></span><span id="CHANNEL_NUMBER_FOR_1394_DEBUGGING_IN_VISUAL_STUDIO"></span>Channel number for 1394 debugging in Visual Studio

@@ -6,17 +6,18 @@ keywords:
 - XPS filters WDK XPSDrv
 - filters WDK XPS
 - asynchronous notifications WDK XPS
-ms.date: 06/01/2020
+ms.date: 01/26/2023
 ---
 
 # Asynchronous Notifications in Print Filters
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The print filter pipeline has an asynchronous notification feature that is very similar to the asynchronous notification that is supported in the print spooler for applications. The [**RouterCreatePrintAsyncNotificationChannel**](/windows-hardware/drivers/ddi/prnasntp/nf-prnasntp-routercreateprintasyncnotificationchannel) function that is available in the print spooler is not available to print filters. Print filters must use the [IPrintClassObjectFactory](/windows-hardware/drivers/ddi/filterpipeline/nn-filterpipeline-iprintclassobjectfactory) interface to create IPrintAsyncNotify objects.
 
 This topic describes how to use the asynchronous notification feature in a print filter.
 
-> [!NOTE]
-> Throwing asynchronous notifications from a print filter is not supported in the v4 print driver model.
+Throwing asynchronous notifications from a print filter is not supported in the v4 print driver model.
 
 ## IPrintClassObjectFactory
 
@@ -104,8 +105,7 @@ In some cases, you must release the bidirectional notification channel when you 
 
 The filter must not impersonate the user account when it calls the IPrintAsyncNotify::CreatePrintAsyncNotifyChannel method. The authorization mechanism in the print spooler requires that it is called from the Local Service account. If the filter must impersonate the account of the user who submitted the job, the filter must revert to itself before it calls CreatePrintAsyncNotifyChannel. After the call returns, the filter can revert back to the user account, if necessary.
 
-> [!NOTE]
-> Even though the notification call is made while in the Local Service context, kPerUser notifications are still sent to the user who submitted the job based on the user association of the job ID.
+Even though the notification call is made while in the Local Service context, kPerUser notifications are still sent to the user who submitted the job based on the user association of the job ID.
 
 ## Adapting the WDK Sample Code
 

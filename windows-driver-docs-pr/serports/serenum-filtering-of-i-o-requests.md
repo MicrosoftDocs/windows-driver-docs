@@ -13,8 +13,8 @@ ms.date: 04/20/2017
 The following describes how Serenum filters I/O requests that are directed to a filter DO:
 
 - Handles bus-related operations that are associated with Plug and Play and power requests:
-    -   Removes a PDO, if one exists, when the filter DO is removed.
-    -   Enumerates the RS-232 port in response to an [**IRP\_MN\_QUERY\_DEVICE\_RELATIONS**](../kernel/irp-mn-query-device-relations.md) request of type **BusRelations**.
+    - Removes a PDO, if one exists, when the filter DO is removed.
+    - Enumerates the RS-232 port in response to an [**IRP\_MN\_QUERY\_DEVICE\_RELATIONS**](../kernel/irp-mn-query-device-relations.md) request of type **BusRelations**.
 - Completes Serenum-specific device control requests that return information about the RS-232 port.
 
 The following describes how Serenum filters I/O requests that are directed to a PDO (the PDO represents a child device attached to an RS-232 port):

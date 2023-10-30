@@ -1160,7 +1160,7 @@ This is the same information shown above in the XML format.
 </SupportedNetworkInterfaceCards>
 ```
 
-## Related topics
+## See also
 
 [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md)
 

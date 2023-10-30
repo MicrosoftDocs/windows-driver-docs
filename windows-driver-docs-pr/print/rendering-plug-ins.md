@@ -10,14 +10,12 @@ keywords:
 - printer rendering options WDK
 - Pscript WDK print
 - plug-ins WDK print , customized rendering
-ms.date: 04/20/2017
+ms.date: 01/30/2023
 ---
 
 # Rendering Plug-Ins
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The following topics describe how to customize printer rendering operations:
 
@@ -36,11 +34,3 @@ The following topics describe how to customize printer rendering operations:
 [Pscript-Specific Customized Rendering](pscript-specific-customized-rendering.md)
 
 [Unidrv-Specific Customized Rendering](unidrv-specific-customized-rendering.md)
-
- 
-
- 
-
-
-
-

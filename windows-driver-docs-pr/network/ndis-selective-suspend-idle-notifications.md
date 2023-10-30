@@ -1,7 +1,7 @@
 ---
 title: Overview of NDIS Selective Suspend Idle Notifications
 description: Overview of NDIS Selective Suspend Idle Notifications
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # Overview of NDIS Selective Suspend Idle Notifications

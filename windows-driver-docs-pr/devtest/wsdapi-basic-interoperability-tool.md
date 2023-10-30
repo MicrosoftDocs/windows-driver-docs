@@ -23,7 +23,7 @@ WSDAPI implements both the client and device sections of the specifications, and
 Before you read about the WSD interoperability tool, you should be familiar with the DPWS specification and its [referenced specifications](referenced-namespaces.md).
 
 >[!NOTE]
->WSDBIT may be used to assist with the implementation of DPWS on a device, but it is not intended to be a generic debugging tool. Other [WSDAPI development tools](/windows/win32/wsdapi/wsdapi-development-tools) (such as the [WSDAPI debugging tools](/windows/win32/wsdapi/debugging-tools)) are better suited to observing traffic and diagnosing failures. These tools are available in the Windows SDK for desktop apps, see [Downloads for developing desktop apps](https://developer.microsoft.com/windows/downloads/windows-10-sdk/).
+>WSDBIT may be used to assist with the implementation of DPWS on a device, but it is not intended to be a generic debugging tool. Other [WSDAPI development tools](/windows/win32/wsdapi/wsdapi-development-tools) (such as the [WSDAPI debugging tools](/windows/win32/wsdapi/debugging-tools)) are better suited to observing traffic and diagnosing failures. These tools are available in the Windows SDK for desktop apps, see [Downloads for developing desktop apps](https://developer.microsoft.com/windows/downloads/windows-sdk/).
 
 This section includes the following topics:
 

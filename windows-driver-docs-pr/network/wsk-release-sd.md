@@ -2,6 +2,7 @@
 title: WSK_RELEASE_SD
 description: WSK_RELEASE_SD
 ms.date: 07/18/2017
+ms.topic: reference
 keywords:
  - WSK_RELEASE_SD Network Drivers Starting with Windows Vista
 ---
@@ -56,7 +57,7 @@ To release a cached copy of a security descriptor, a WSK application calls the [
 </tbody>
 </table>
 
-For more information about the SECURITY\_DESCRIPTOR structure, see the reference page for SECURITY\_DESCRIPTOR in the Microsoft Windows SDK documentation.
+See the reference page for the [SECURITY_DESCRIPTOR](/windows/win32/api/winnt/ns-winnt-security_descriptor) structure for more information.
 
 The *Irp* parameter must be **NULL** for this client control operation.
 

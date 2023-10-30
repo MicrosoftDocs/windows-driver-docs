@@ -4,6 +4,7 @@ description: The required ScalingHeight element specifies the document scaling i
 keywords: ["ScalingHeight element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ScalingHeight wscn Override "" wscn UsedDefault ""
 api_type:

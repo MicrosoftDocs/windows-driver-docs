@@ -28,7 +28,7 @@ You can use Application Verifier alone or in conjunction with a user-mode debugg
 
 ## Installing AppVerifier
 
-Application Verifier is included in the [Windows Software Development Kit](https://developer.microsoft.com/windows/downloads/windows-10-sdk/) (SDK). To install Application Verifier, check the box for it, during installation of the SDK.
+Application Verifier is included in the [Windows Software Development Kit](https://developer.microsoft.com/windows/downloads/windows-sdk/) (SDK). To install Application Verifier, check the box for it, during installation of the SDK.
 
 ![application verifier main menu default landing page showing a single test app selected with tests listed on the right side](images/application-verifier-main-menu.png)
 

@@ -5,11 +5,12 @@ keywords:
 - Inf2Cat Driver Development Tools
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Inf2Cat
 api_type:
 - NA
-ms.date: 06/10/2022
+ms.date: 05/31/2023
 ---
 
 # Inf2Cat
@@ -23,10 +24,16 @@ Inf2Cat (Inf2Cat.exe) is a command-line tool that determines whether a [driver p
     WindowsVersionList [/nocat] [/verbose] [/?] [other switches]
 ```
 
-> [!TIP]
-> If you see `DriverVer set to a date in the future` when building your driver, change your driver package project settings so that Inf2Cat sets `/uselocaltime`. To do so, use **Configuration Properties->Inf2Cat->General->Use Local Time**. Now both [Stampinf](stampinf-command-options.md) and Inf2Cat use local time.
-
 The Inf2Cat tool is located in the Program Files\\Windows Kits\\8.0\\bin\\x86 or Program Files (x86)\\Windows Kits\\8.0\\bin\\x86 folder of the WDK.
+
+## Troubleshooting
+
+If you see `DriverVer set to a date in the future` when building your driver, change your driver package project settings so that Inf2Cat sets `/uselocaltime`. To do so, use **Configuration Properties->Inf2Cat->General->Use Local Time**. Now both [Stampinf](stampinf-command-options.md) and Inf2Cat use local time.
+
+If you see `An attempt was made to load a program with an incorrect format. (Exception from HRESULT: 0x8007000B) Signability test failed.`, try one of these workarounds:
+
+1. Set the project's inf2cat settings to `/nocat` and run inf2cat manually.
+2. Delete `inf2cat.exe.manifest` from the `\x86` folder of the active WDK to cause the tool to run in Visual Studio.
 
 ## Switches and Arguments
 
@@ -53,9 +60,9 @@ Configures Inf2Cat to verify that a [driver package's](../install/driver-package
 |Windows 11, version 21H2 Arm64 Edition|10_CO_ARM64|
 |Windows Server 2022 x64 Edition|ServerFE_X64|
 |Windows Server 2022 Arm64 Edition|ServerFE_ARM64|
-|Windows 10, version 21H2, 21H1, 20H2, 2004 x86 Edition|10_VB_X86|
-|Windows 10, version 21H2, 21H1, 20H2, 2004 x64 Edition|10_VB_X64|
-|Windows 10, version 21H2, 21H1, 20H2, 2004 Arm64 Edition|10_VB_ARM64|
+|Windows 10, version 22H2, 21H2, 21H1, 20H2, 2004 x86 Edition|10_VB_X86|
+|Windows 10, version 22H2, 21H2, 21H1, 20H2, 2004 x64 Edition|10_VB_X64|
+|Windows 10, version 22H2, 21H2, 21H1, 20H2, 2004 Arm64 Edition|10_VB_ARM64|
 |Windows 10, version 1909, 1903 x86 Edition|10_19H1_X86|
 |Windows 10, version 1909, 1903 x64 Edition|10_19H1_X64|
 |Windows 10, version 1909, 1903 Arm64 Edition|10_19H1_ARM64|

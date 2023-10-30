@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x12D VOLSNAP_OVERLAPPED_TABLE_ACCESS", "VOLSNAP_OVERLAPPE
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - VOLSNAP_OVERLAPPED_TABLE_ACCESS
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The VOLSNAP\_OVERLAPPED\_TABLE\_ACCESS bug check has a value of 0x0000012D. This indicates that volsnap tried to access a common table from two different threads which may result in table corruption and eventually corrupt the table.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## VOLSNAP\_OVERLAPPED\_TABLE\_ACCESS Parameters

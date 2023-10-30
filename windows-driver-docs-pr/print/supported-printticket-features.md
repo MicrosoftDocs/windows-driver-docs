@@ -1,10 +1,12 @@
 ---
 title: Supported PrintTicket Features
 description: This section provides information about the PrintTicket features that are supported by the standard XPS filters.
-ms.date: 04/20/2017
+ms.date: 01/25/2023
 ---
 
 # Supported PrintTicket Features
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 This section provides information about the PrintTicket features that are supported by the standard XPS filters.
 
@@ -44,11 +46,11 @@ The PCL6 generated for the selected media type is specified by the GPD MediaType
 
 1. The following default mappings are used:
 
-    | PageMediaType value            | GPD/PPD file entry |
-    |--------------------------------|--------------------|
-    | PrintTicket PhotographicGlossy | GPD GLOSSY         |
-    | PrintTicket Plain              | GPD STANDARD       |
-    | PrintTicket Transparency       | GPD TRANSPARENCY   |
+    | PageMediaType value | GPD/PPD file entry |
+    |---|---|
+    | PrintTicket PhotographicGlossy | GPD GLOSSY |
+    | PrintTicket Plain | GPD STANDARD |
+    | PrintTicket Transparency | GPD TRANSPARENCY |
 
 1. The name attribute of the PageMediaType Option matches the name of the Option in the GPD.
 
@@ -62,7 +64,7 @@ The PostScript generated for the selected media type is specified by the PPD Med
 
 This Feature describes the color of the media sheet. Supported Options are any with a corresponding GPD/PPD entry.
 
-The PCL6 generated for the selected media color is specified by the GPD Feature containing \*PrintSchemaKeywordMap: “PageMediaColor”. The Option in the GPD to use is selected in the following order:
+The PCL6 generated for the selected media color is specified by the GPD Feature containing \*PrintSchemaKeywordMap: "PageMediaColor". The Option in the GPD to use is selected in the following order:
 
 1. If PrintSchemaKeywordMap is specified and matches the name attribute of the PageMediaColor Option.
 
@@ -84,13 +86,13 @@ The PCL6 generated for the selected input tray is specified by the GPD InputBin 
 
 1. The following default mappings are used:
 
-    | JobInputBin value      | GPD/PPD file entry                  |
-    |------------------------|-------------------------------------|
-    | PrintTicket Cassette   | GPD AUTO,CASSETTE,ENVFEED,ENVMANUAL |
-    | PrintTicket AutoSelect | GPD FORMSOURCE                      |
-    | PrintTicket High       | GPD LARGECAPACITY,LARGEFMT,LOWER    |
-    | PrintTicket Manual     | GPD MANUAL,MIDDLE,SMALLFMT          |
-    | PrintTicket Tractor    | GPD TRACTOR,UPPER                   |
+    | JobInputBin value | GPD/PPD file entry |
+    |---|---|
+    | PrintTicket Cassette | GPD AUTO,CASSETTE,ENVFEED,ENVMANUAL |
+    | PrintTicket AutoSelect | GPD FORMSOURCE |
+    | PrintTicket High | GPD LARGECAPACITY,LARGEFMT,LOWER |
+    | PrintTicket Manual | GPD MANUAL,MIDDLE,SMALLFMT |
+    | PrintTicket Tractor | GPD TRACTOR,UPPER |
 
 1. The name attribute of the PageMediaType Option matches the name of the Option in the GPD.
 
@@ -110,10 +112,10 @@ The PCL6 generated for the selected orientation is specified by the GPD Orientat
 
 1. The following default mappings are used:
 
-    | PageOrientation value        | GPD/PPD file entry   |
-    |------------------------------|----------------------|
-    | PrintTicket Portrait         | GPD PORTRAIT         |
-    | PrintTicket Landscape        | GPD LANDSCAPE\_CC90  |
+    | PageOrientation value | GPD/PPD file entry |
+    |---|---|
+    | PrintTicket Portrait | GPD PORTRAIT |
+    | PrintTicket Landscape | GPD LANDSCAPE\_CC90 |
     | PrintTicket ReverseLandscape | GPD LANDSCAPE\_CC1.0 |
 
 1. The name attribute of the PageOrientation Option matches the name of the option in the GPD.
@@ -201,15 +203,14 @@ The PCL6 generated for the selected collation is specified by the GPD Collate fe
 
 1. The following default mappings are used:
 
-    | DocumentCollate value  | GPD/PPD file entry |
-    |------------------------|--------------------|
-    | PrintTicket Uncollated | GPD OFF            |
-    | PrintTicket Collated   | GPD ON             |
+    | DocumentCollate value | GPD/PPD file entry |
+    |---|---|
+    | PrintTicket Uncollated | GPD OFF |
+    | PrintTicket Collated | GPD ON |
 
 1. The name attribute of the DocumentCollate option matches the name of the option in the GPD.
 
-> [!NOTE]
-> When DocumentCollate is set to Collated and the GPD Collate option contains a command, then it is assumed that the device can generate the collated copies. The *XPS.PCL6* filter will only generate 1 copy of the job and use the GPD command to instruct the device to generate the collated copies. The filter then replaces NumOfCopies in the GPD command with the number of copies specified by JobCopiesAllDocuments.
+When DocumentCollate is set to Collated and the GPD Collate option contains a command, then it is assumed that the device can generate the collated copies. The *XPS.PCL6* filter will only generate 1 copy of the job and use the GPD command to instruct the device to generate the collated copies. The filter then replaces NumOfCopies in the GPD command with the number of copies specified by JobCopiesAllDocuments.
 
 The PostScript generated for the selected collation is specified by the PPD Collate feature. The Option in the PPD to use is selected in the following order:
 
@@ -217,15 +218,14 @@ The PostScript generated for the selected collation is specified by the PPD Coll
 
 1. The following default mappings are used:
 
-    | DocumentCollate value  | GPD/PPD file entry |
-    |------------------------|--------------------|
-    | PrintTicket Uncollated | PPD False          |
-    | PrintTicket Collated   | PPD True           |
+    | DocumentCollate value | GPD/PPD file entry |
+    |---|---|
+    | PrintTicket Uncollated | PPD False |
+    | PrintTicket Collated | PPD True |
 
 1. The name attribute of the DocumentCollate Option matches the name of the Option in the PPD.
 
-> [!NOTE]
-> When DocumentCollate is set to Collated and the PPD contains the Collate feature, or a feature which is keyword mapped to DocumentCollate, then it is assumed that the device can generate the collated copies. The XPS.PS filter will only generate 1 copy of the job and use the PPD command to instruct the device to generate the collated copies.
+When DocumentCollate is set to Collated and the PPD contains the Collate feature, or a feature which is keyword mapped to DocumentCollate, then it is assumed that the device can generate the collated copies. The XPS.PS filter will only generate 1 copy of the job and use the PPD command to instruct the device to generate the collated copies.
 
 ## JobDuplexAllDocumentsContiguously
 
@@ -238,10 +238,10 @@ The PCL6 generated for the selected duplex is specified by the GPD Duplex Featur
 1. The following default mappings are used:
 
     | JobDuplexAllDocumentsContiguously value | GPD/PPD file entry |
-    |-----------------------------------------|--------------------|
-    | PrintTicket OneSided                    | GPD NONE           |
-    | PrintTicket TwoSidedShortEdge           | GPD HORIZONTAL     |
-    | PrintTicket TwoSidedLongEdge            | GPD VERTICAL       |
+    |---|---|
+    | PrintTicket OneSided | GPD NONE |
+    | PrintTicket TwoSidedShortEdge | GPD HORIZONTAL |
+    | PrintTicket TwoSidedLongEdge | GPD VERTICAL |
 
 1. The name attribute of the JobDuplexAllDocumentsContiguously option matches the name of the Option in the GPD.
 
@@ -252,10 +252,10 @@ The PostScript generated for the selected duplex is specified by the PPD Duplex 
 1. The following default mappings are used:
 
     | JobDuplexAllDocumentsContiguously value | GPD/PPD file entry |
-    |-----------------------------------------|--------------------|
-    | PrintTicket OneSided                    | PPD None           |
-    | PrintTicket TwoSidedShortEdge           | PPD DuplexTumble   |
-    | PrintTicket TwoSidedLongEdge            | PPD DuplexNoTumble |
+    |---|---|
+    | PrintTicket OneSided | PPD None |
+    | PrintTicket TwoSidedShortEdge | PPD DuplexTumble |
+    | PrintTicket TwoSidedLongEdge | PPD DuplexNoTumble |
 
 1. The name attribute of the JobDuplexAllDocumentsContiguously option matches the name of the option in the PPD.
 
@@ -269,11 +269,11 @@ The PCL6 generated for the selected duplex is specified by the GPD Duplex Featur
 
 1. The following default mappings are used:
 
-    | DocumentDuplex value          | GPD/PPD file entry |
-    |-------------------------------|--------------------|
-    | PrintTicket OneSided          | GPD NONE           |
-    | PrintTicket TwoSidedShortEdge | GPD HORIZONTAL     |
-    | PrintTicket TwoSidedLongEdge  | GPD VERTICAL       |
+    | DocumentDuplex value | GPD/PPD file entry |
+    |---|---|
+    | PrintTicket OneSided | GPD NONE |
+    | PrintTicket TwoSidedShortEdge | GPD HORIZONTAL |
+    | PrintTicket TwoSidedLongEdge | GPD VERTICAL |
 
 1. The name attribute of the DocumentDuplex Option matches the name of the Option in the GPD.
 
@@ -283,11 +283,11 @@ The PostScript generated for the selected duplex is specified by the PPD Duplex 
 
 1. The following default mappings are used:
 
-    | DocumentDuplex value          | GPD/PPD file entry |
-    |-------------------------------|--------------------|
-    | PrintTicket OneSided          | PPD None           |
-    | PrintTicket TwoSidedShortEdge | PPD DuplexTumble   |
-    | PrintTicket TwoSidedLongEdge  | PPD DuplexNoTumble |
+    | DocumentDuplex value | GPD/PPD file entry |
+    |---|---|
+    | PrintTicket OneSided | PPD None |
+    | PrintTicket TwoSidedShortEdge | PPD DuplexTumble |
+    | PrintTicket TwoSidedLongEdge | PPD DuplexNoTumble |
 
 1. The name attribute of the DocumentDuplex Option matches the name of the Option in the PPD.
 
@@ -331,8 +331,7 @@ When the BindingGutter ScoredProperty is specified for BindRight or EdgeStitchRi
 
 When the BindingGutter ScoredProperty is specified for BindBottom or EdgeStitchBottom, the filter shifts the content of both the front and back sides of the sheet toward the top as specified by the JobBindAllDocumentsGutter parameter. Content on the top that now falls outside the printable area will be clipped.
 
-> [!NOTE]
-> The binding edge is the specified edge based on the orientation of the first page of the first document in the job. For all other options, BindingGutter is ignored.
+The binding edge is the specified edge based on the orientation of the first page of the first document in the job. For all other options, BindingGutter is ignored.
 
 If the GPD file does not specify a command for the selected option, then the PCL6 generated for the selected binding is determined by the filter.
 
@@ -354,8 +353,7 @@ When the BindingGutter ScoredProperty is specified for BindRight or EdgeStitchRi
 
 When the BindingGutter ScoredProperty is specified for BindBottom or EdgeStitchBottom, the filter shifts the content of both the front and back sides of the sheet toward the top as specified by the DocumentBindingGutter parameter. Content on the top that now falls outside the printable area will be clipped.
 
-> [!NOTE]
-> The binding edge is the specified edge based on the orientation of the first page of the document. For all other Options, BindingGutter is ignored.
+The binding edge is the specified edge based on the orientation of the first page of the document. For all other Options, BindingGutter is ignored.
 
 If the GPD file does not specify a command for the selected option, then the PCL6 generated for the selected binding is determined by the filter.
 
@@ -425,10 +423,10 @@ The PostScript generated for the selected mirroring is specified by the PPD Mirr
 
 1. The following default mappings are used:
 
-    | PageMirrorImage value        | GPD/PPD file entry |
-    |------------------------------|--------------------|
-    | PrintTicket None             | PPD False          |
-    | PrintTicket MirrorImageWidth | PPD True           |
+    | PageMirrorImage value | GPD/PPD file entry |
+    |---|---|
+    | PrintTicket None | PPD False |
+    | PrintTicket MirrorImageWidth | PPD True |
 
 1. The name attribute of the PageMirrorImage Option matches the name of the Option in the PPD.
 
@@ -449,9 +447,9 @@ The PostScript generated for the selected negative printing is specified by the 
 1. The following default mappings are used:
 
     | PageNegativeImage value | GPD/PPD file entry |
-    |-------------------------|--------------------|
-    | PrintTicket None        | PPD False          |
-    | PrintTicket Negative    | PPD True           |
+    |---|---|
+    | PrintTicket None | PPD False |
+    | PrintTicket Negative | PPD True |
 
 1. The name attribute of the PageNegativeImage Option matches the name of the Option in the PPD.
 

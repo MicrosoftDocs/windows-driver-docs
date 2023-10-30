@@ -1,16 +1,14 @@
 ---
 title: Debugging a User-Mode Process Using WinDbg
-description: You can use WinDbg to attach to a running process or to spawn and attach to a new process.
+description: You can use WinDbg Classic to attach to a running process or to spawn and attach to a new process.
 ms.date: 11/28/2017
 ---
 
-# <span id="debugger.debugging_a_user-mode_process_using_windbg"></span>Debugging a User-Mode Process Using WinDbg
-
+# <span id="debugger.debugging_a_user-mode_process_using_windbg"></span>Debugging a User-Mode Process Using WinDbg Classic
 
 You can use WinDbg to attach to a running process or to spawn and attach to a new process.
 
 ## <span id="Attaching_to_a_Running_Process"></span><span id="attaching_to_a_running_process"></span><span id="ATTACHING_TO_A_RUNNING_PROCESS"></span>Attaching to a Running Process
-
 
 There are several ways you can use WinDbg to attach to a running process. Regardless of the method you choose, you will need the process ID or the process name. The process ID is a number assigned by the operating system. For more information about how to determine the process ID and the process name, see [Finding the Process ID](finding-the-process-id.md).
 
@@ -33,11 +31,11 @@ For more information about the command-line syntax, see [**WinDbg Command-Line O
 
 ### <span id="debugger_command_window1"></span><span id="DEBUGGER_COMMAND_WINDOW1"></span>Debugger Command Window
 
-If WinDbg is already debugging one or more processes, you can attach to a running process by using the [**.attach (Attach to Process)**](-attach--attach-to-process-.md) command in the [Debugger Command window](the-debugger-command-window.md).
+If WinDbg is already debugging one or more processes, you can attach to a running process by using the [**.attach (Attach to Process)**](../debuggercmds/-attach--attach-to-process-.md) command in the [Debugger Command window](the-debugger-command-window.md).
 
 The debugger always starts multiple target processes simultaneously, unless some of their threads are frozen or suspended.
 
-If the [**.attach**](-attach--attach-to-process-.md) command is successful, the debugger attaches to the specified process the next time the debugger issues an execution command. If you use this command several times in a row, execution has to be requested by the debugger as many times as you use this command.
+If the [**.attach**](../debuggercmds/-attach--attach-to-process-.md) command is successful, the debugger attaches to the specified process the next time the debugger issues an execution command. If you use this command several times in a row, execution has to be requested by the debugger as many times as you use this command.
 
 ## <span id="Attaching_to_a_Running_Process_Noninvasively"></span><span id="attaching_to_a_running_process_noninvasively"></span><span id="ATTACHING_TO_A_RUNNING_PROCESS_NONINVASIVELY"></span>Attaching to a Running Process Noninvasively
 
@@ -60,7 +58,7 @@ There are several other useful command-line options. For more information about 
 
 ### <span id="debugger_command_window2"></span><span id="DEBUGGER_COMMAND_WINDOW2"></span>Debugger Command Window
 
-If the debugger is already active, you can noninvasively debug a running process by using the [**.attach -v (Attach to Process)**](-attach--attach-to-process-.md) command in the [Debugger Command window](the-debugger-command-window.md).
+If the debugger is already active, you can noninvasively debug a running process by using the [**.attach -v (Attach to Process)**](../debuggercmds/-attach--attach-to-process-.md) command in the [Debugger Command window](the-debugger-command-window.md).
 
 You can use the **.attach** command if the debugger is already debugging one or more processes invasively. You cannot use this command if WinDbg is dormant.
 
@@ -97,15 +95,15 @@ The **-o** option causes the debugger to attach to child processes. There are se
 
 ### <span id="debugger_command_window3"></span><span id="DEBUGGER_COMMAND_WINDOW3"></span>Debugger Command Window
 
-If WinDbg is already debugging one or more processes, you can create a new process by using the [**.create (Create Process)**](-create--create-process-.md) command in the [Debugger Command window](the-debugger-command-window.md).
+If WinDbg is already debugging one or more processes, you can create a new process by using the [**.create (Create Process)**](../debuggercmds/-create--create-process-.md) command in the [Debugger Command window](the-debugger-command-window.md).
 
 The debugger will always start multiple target processes simultaneously, unless some of their threads are frozen or suspended.
 
-If the [**.create**](-create--create-process-.md) command is successful, the debugger creates the specified process the next time that the debugger issues an execution command. If you use this command several times in a row, execution has to be requested by the debugger as many times as you use this command.
+If the [**.create**](../debuggercmds/-create--create-process-.md) command is successful, the debugger creates the specified process the next time that the debugger issues an execution command. If you use this command several times in a row, execution has to be requested by the debugger as many times as you use this command.
 
-You can control the application's starting directory by using the [**.createdir (Set Created Process Directory)**](-createdir--set-created-process-directory-.md) command before [**.create**](-create--create-process-.md). You can use the **.createdir -I** command or the **-noinh** command-line option to control whether the target application inherits the debugger's handles.
+You can control the application's starting directory by using the [**.createdir (Set Created Process Directory)**](../debuggercmds/-createdir--set-created-process-directory-.md) command before [**.create**](../debuggercmds/-create--create-process-.md). You can use the **.createdir -I** command or the **-noinh** command-line option to control whether the target application inherits the debugger's handles.
 
-You can activate or deactivate the debugging of child processes by using the [**.childdbg (Debug Child Processes)**](-childdbg--debug-child-processes-.md) command.
+You can activate or deactivate the debugging of child processes by using the [**.childdbg (Debug Child Processes)**](../debuggercmds/-childdbg--debug-child-processes-.md) command.
 
 ## <span id="Reattaching_to_a_Process"></span><span id="reattaching_to_a_process"></span><span id="REATTACHING_TO_A_PROCESS"></span>Reattaching to a Process
 

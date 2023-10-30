@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_FTM_PROPAGATION_PROPERTY (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_FTM_PROPAGATION_PROPERTY is a WiFiCx TLV that contains the negotiated bandwidth in MHz between two STAs to exercise the FTM.
 ms.date: 07/30/2021
 keywords:

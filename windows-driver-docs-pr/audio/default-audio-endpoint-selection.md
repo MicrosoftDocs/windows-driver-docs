@@ -3,7 +3,7 @@ title: Default Audio Endpoint Selection
 description: Default Audio Endpoint Selection 
 keywords:
 - audio default endpoint selection
-ms.date: 10/24/2022
+ms.date: 01/04/2023
 ---
 
 # Default Audio Endpoint Selection Starting in Windows 10
@@ -205,7 +205,7 @@ The Windows 10 default audio endpoint heuristic weights each endpoint factor. Th
 
 In addition, the Windows 10 heuristic assigns a rank value (_nRankXxx_ in this topic) to each enum value within a factor category. This rank value establishes the relative importance among all enum values under the same factor.
 
-These _WeightFactor\_Xxx_ and _nRankXxx_ values are stored in the registry during operating system installation. Registry storage makes it easier for OEMs to customize the default audio endpoint's selection process. The set of parameters for the heuristic's rank calculation depends on the endpoint's characteristics. The following table shows an example set of parameters.
+These _WeightFactor\_Xxx_ and _nRankXxx_ values are stored by Windows in the registry during operating system installation. The set of parameters for the heuristic's rank calculation depends on the endpoint's characteristics. The following table shows an example set of parameters.
 
 | **Weight of endpoint factor** | **Rank value of endpoint factor** |
 | --- | --- |
@@ -247,7 +247,7 @@ Windows 10 ships with settings that are based on the heuristic details in this t
 
 ### Inbox Heuristic Settings for the Default Console Audio Endpoint
 
-This section describes the default heuristic settings for each factor for a console audio endpoint. The factors are listed in priority order; that is, Windows 10 gives highest priority to the first factor in the following list when the audio subsystem determines the default console endpoint. NOTE: These values may change in the future, the registry keys are the definitive source for information on the current values.
+This section describes the default heuristic settings for each factor for a console audio endpoint. The factors are listed in priority order; that is, Windows 10 gives highest priority to the first factor in the following list when the audio subsystem determines the default console endpoint. 
 
 #### Jack Detection Capability
 
@@ -404,7 +404,7 @@ Windows 10 ranks the enum values for general location in the following priority 
 - Internal
 - Others (treated with the same lowest priority; that is, _nRankGenLoc_ is equal to zero)
 
-Audio drivers report the general location infomation of their endpoints through the KSPROPERTY\_JACK\_DESCRIPTION property. For details, see &quot;Jack Description Property **&quot;** on the MSDN Web site.
+Audio drivers report the general location infomation of their endpoints through the KSPROPERTY\_JACK\_DESCRIPTION property. For more information, see [Jack Description Property](jack-description-property.md).
 
 #### Geometric Location
 
@@ -413,7 +413,7 @@ Windows 10 ranks the enum values for geometric location in the following priorit
 - Front and InsideMobileLid
 - Others (treated with the same lowest priority; that is, with _nRankGeoLoc_ equal to zero)
 
-Audio drivers report the geometric location information of their endpoints through the KSPROPERTY\_JACK\_DESCRIPTION property. For details, see &quot;Jack Description Property&quot; on the MSDN Web site.
+Audio drivers report the geometric location information of their endpoints through the KSPROPERTY\_JACK\_DESCRIPTION property. For more information, see [Jack Description Property](jack-description-property.md).
 
 #### Exceptions
 
@@ -439,10 +439,6 @@ The second exception avoids endpoints which are obvious console-oriented endpoin
 
 At the time of this writing, a third exception exists to prefer cellular audio endpoints. This exception exists only for mobile scenarios with cellular capability and is outside of the scope of this documentation. As this type of endpoint will only exist on mobile systems, this exception can safely be ignored.
 
-## Windows 10 OEM Heuristics Customization
-
-All heuristic settings are controlled through registry settings. Windows 10 is shipped with the inbox default audio endpoint selection behavior. You can customize your systems to meet specific market needs. 
-
 ## See also
 
 [Jack Description Property](jack-description-property.md)
@@ -454,3 +450,4 @@ All heuristic settings are controlled through registry settings. Windows 10 is s
 [Pin Category Property](pin-category-property.md)
 
 [SetupPreferredAudioDevices](setuppreferredaudiodevices.md)
+

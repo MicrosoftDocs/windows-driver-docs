@@ -2,6 +2,7 @@
 title: SIO_WSK_SET_TCP_SILENT_MODE control code
 description: The SIO_WSK_SET_TCP_SILENT_MODE socket I/O control operation allows a WSK client to enable silent mode on the TCP connection.
 ms.date: 07/18/2017
+ms.topic: reference
 keywords:
  - SIO_WSK_SET_TCP_SILENT_MODE control code Network Drivers Starting with Windows Vista
 ---

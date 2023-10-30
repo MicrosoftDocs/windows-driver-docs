@@ -4,6 +4,7 @@ description: The required buttons element specifies one or more buttons that are
 keywords: ["buttons element Print Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - buttons
 api_type:

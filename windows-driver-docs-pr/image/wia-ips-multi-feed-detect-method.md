@@ -4,6 +4,7 @@ description: The WIA_IPS_MULTI_FEED_DETECT_METHOD property is used to configure 
 keywords: ["WIA_IPS_MULTI_FEED_DETECT_METHOD Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_MULTI_FEED_DETECT_METHOD
 api_location:

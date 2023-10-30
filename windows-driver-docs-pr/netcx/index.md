@@ -19,11 +19,13 @@ In previous versions of Windows, WDF and NDIS had individual advantages, but did
 
 With the NetAdapterCx model, conversely, you write a real WDF driver for your NIC. This means that your NetAdapterCx driver has access to full WDF functionality, as well as networking-specific APIs and I/O support from the NetAdapter class extension. As shown in the block diagram below, NetAdapterCx still works behind the scenes with NDIS, but it handles all the interaction with NDIS on your behalf.
 
-<img src="images/netcx-architecture.png" alt="Diagram of the NetAdapterCx architecture." title="NetAdapterCx architecture" width="600"/>
+:::image type="content" source="images/netcx-architecture.png" alt-text="Diagram that shows the NetAdapterCx architecture.":::
 
 ## Additional info
 
-To watch a video that discusses the benefits of using NetAdapterCx, see the [Network Adapter Class Extension: Overview](/teamblog/LearnTVAnnouncement) video on Channel 9.
+The following video [Network Adapter Class Extension: Overview](https://www.microsoft.com/videoplayer/embed/RE5daTH) discusses the benefits of using NetAdapterCx.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5daTH]
 
 To learn how to port an NDIS 6.x miniport driver to the NetAdapterCx NIC driver model, see [Porting NDIS miniport drivers to NetAdapterCx](porting-ndis-miniport-drivers-to-netadaptercx.md).
 
@@ -33,7 +35,9 @@ To see the source code for NetAdapterCx itself, or perform step-through debuggin
 
 If you would like to work with Microsoft as you develop a NetAdapterCx client driver, or have feedback on the class extension, please send us an [email](mailto:netadapter@microsoft.com).
 
-To watch a video that discusses the future roadmap and collaboration opportunities, see the [Network Adapter Class Extension: Roadmap and Collaboration](/teamblog/LearnTVAnnouncement) video on Channel 9.
+The following video [Network Adapter Class Extension: Roadmap and Collaboration](https://www.microsoft.com/videoplayer/embed/RE5ddHE) discusses future roadmap and collaboration opportunities.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5ddHE]
 
 ## Topics
 

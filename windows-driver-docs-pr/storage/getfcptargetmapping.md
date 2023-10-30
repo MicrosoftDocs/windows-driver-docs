@@ -4,6 +4,7 @@ description: The GetFcpTargetMapping WMI method retrieves a mapping between the 
 keywords: ["GetFcpTargetMapping function Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - GetFcpTargetMapping
 api_location:

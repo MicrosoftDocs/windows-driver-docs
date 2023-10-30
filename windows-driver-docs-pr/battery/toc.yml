@@ -1,4 +1,4 @@
-- name: "Battery Devices Design Guide"
+- name: "Battery devices design guide"
   href: index.md
 - name: "Writing Battery Miniclass Drivers"
 # Auto-expanded node
@@ -18,18 +18,18 @@
       href: battery-miniclass-driver-functionality.md
   - name: "Supplying Required Battery Miniclass Driver Functionality"
     href: supplying-required-battery-miniclass-driver-functionality.md
-  - name: "DriverEntry Routine of a Battery Miniclass Driver"
+  - name: "Battery miniclass driver: DriverEntry routine"
     href: driverentry-routine-of-a-battery-miniclass-driver.md
-  - name: "AddDevice Routine of a Battery Miniclass Driver"
+  - name: "AddDevice routine for battery miniclass drivers"
 # Auto-expanded node
     items: 
-    - name: "AddDevice Routine of a Battery Miniclass Driver"
+    - name: "AddDevice routine for battery miniclass drivers"
       href: adddevice-routine-of-a-battery-miniclass-driver.md
     - name: "Creating an FDO in the Battery Miniclass Driver"
       href: creating-an-fdo-in-the-battery-miniclass-driver.md
     - name: "Initializing the Battery Class Device"
       href: initializing-the-battery-class-device.md
-  - name: "DispatchDeviceControl Routine of a Battery Miniclass Driver"
+  - name: "Battery miniclass driver's DispatchDeviceControl routine"
     href: dispatchdevicecontrol-routine-of-a-battery-miniclass-driver.md
   - name: "DispatchSystemControl Routine of a Battery Miniclass Driver"
     href: dispatchsystemcontrol-routine-of-a-battery-miniclass-driver.md

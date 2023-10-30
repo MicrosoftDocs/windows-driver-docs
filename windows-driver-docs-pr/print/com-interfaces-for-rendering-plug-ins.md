@@ -4,14 +4,12 @@ description: COM Interfaces for Rendering Plug-Ins
 keywords:
 - rendering plug-ins WDK print , COM interfaces
 - COM interfaces WDK print , rendering plug-ins
-ms.date: 04/20/2017
+ms.date: 01/26/2023
 ---
 
 # COM Interfaces for Rendering Plug-Ins
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The following COM interfaces are defined for communication between Microsoft's printer drivers and rendering plug-ins:
 
@@ -34,11 +32,3 @@ The following COM interfaces are defined for communication between Microsoft's p
 The following figure shows the inheritance tree for the COM interfaces used in render plug-ins.
 
 ![diagram illustrating the inheritance tree for the com interfaces used in render plug-ins.](images/rendintf.png)
-
- 
-
- 
-
-
-
-

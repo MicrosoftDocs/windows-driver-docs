@@ -4,15 +4,15 @@ description: The required Time element specifies the time at which a condition o
 keywords: ["Time element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn Time
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 05/02/2023
 ---
 
 # Time element
-
 
 The required **Time** element specifies the time at which a condition occurred.
 
@@ -34,30 +34,14 @@ Required. Any valid value for the dateTime type. For more information about date
 
 ## Child elements
 
-
 There are no child elements.
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="conditionhistoryentry.md" data-raw-source="[&lt;strong&gt;ConditionHistoryEntry&lt;/strong&gt;](conditionhistoryentry.md)"><strong>ConditionHistoryEntry</strong></a></p></td>
-</tr>
-<tr class="even">
-<td><p><a href="devicecondition.md" data-raw-source="[&lt;strong&gt;DeviceCondition&lt;/strong&gt;](devicecondition.md)"><strong>DeviceCondition</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**ConditionHistoryEntry**](conditionhistoryentry.md) |
+| [**DeviceCondition**](devicecondition.md) |
 
 ## Remarks
 
@@ -65,17 +49,6 @@ The specified **Time** is according to the internal clock of the scanner.
 
 ## See also
 
-
 [**ConditionHistoryEntry**](conditionhistoryentry.md)
 
 [**DeviceCondition**](devicecondition.md)
-
- 
-
- 
-
-
-
-
-
-

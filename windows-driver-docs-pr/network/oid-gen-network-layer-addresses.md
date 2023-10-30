@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_NETWORK_LAYER_ADDRESSES
+ms.topic: reference
 description: As a set, the OID_GEN_NETWORK_LAYER_ADDRESSES OID notifies underlying miniport driver and other layered drivers about the list of network-layer addresses that are associated with bound instances.
 ms.date: 08/08/2017
 keywords: 

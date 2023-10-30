@@ -22,7 +22,7 @@ With RSS, the NIC and miniport driver provide the ability to schedule receive DP
 
 The following figure illustrates the RSS mechanism for determining a CPU.
 
-![diagram illustrating the rss mechanism for determining a cpu.](images/rss.png)
+:::image type="content" source="images/rss.png" alt-text="Diagram illustrating the RSS mechanism for determining a CPU.":::
 
 A NIC uses a hashing function to compute a hash value over a defined area (hash type) within the received network data. The defined area can be noncontiguous.
 
@@ -36,7 +36,7 @@ With message signaled interrupt (MSI) support, a NIC can also interrupt the asso
 
 The following figure illustrates the levels of hardware support for RSS.
 
-![diagram illustrating the levels of hardware support for rss.](images/rss-hw.png)
+:::image type="content" source="images/rss-hw.png" alt-text="Diagram illustrating the levels of hardware support for RSS.":::
 
 There are three possible levels of hardware support for RSS:
 

@@ -1,7 +1,8 @@
 ---
 title: WDI_TLV_P2P_GO_NEGOTIATION_CONFIRMATION_INFO
+ms.topic: reference
 description: WDI_TLV_P2P_GO_NEGOTIATION_CONFIRMATION_INFO is a TLV that contains Wi-Fi Direct GO Negotiation Confirmation information.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - WDI_TLV_P2P_GO_NEGOTIATION_CONFIRMATION_INFO Network Drivers Starting with Windows Vista
 ---

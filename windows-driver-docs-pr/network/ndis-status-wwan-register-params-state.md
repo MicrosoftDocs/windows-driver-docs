@@ -1,7 +1,8 @@
 ---
 title: NDIS_STATUS_WWAN_REGISTER_PARAMS_STATE
+ms.topic: reference
 description: Miniport drivers use the NDIS_STATUS_WWAN_REGISTER_PARAMS_STATE notification to communicate changes to the MB device's 5G-specific registration parameters to the MB Service.
-ms.date: 05/13/2021
+ms.date: 03/02/2023
 keywords: 
  -NDIS_STATUS_WWAN_REGISTER_PARAMS_STATE Network Drivers Starting with Windows Vista
 ---

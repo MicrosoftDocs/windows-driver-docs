@@ -5,6 +5,7 @@ keywords: ["Activating a Smart Client Windows Debugging"]
 ms.date: 02/28/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Activating a Smart Client
 api_type:
@@ -54,7 +55,7 @@ ssl:proto=Protocol,{certuser=Cert|machuser=Cert},server=Server,port=Socket[,pass
 ssl:proto=Protocol,{certuser=Cert|machuser=Cert},clicon=Server,port=Socket[,password=Password] 
 ```
 
-Alternatively, you can use the **Browse** button to locate active process servers. See [File | Connect to Remote Stub](file---connect-to-remote-stub.md) for details.
+Alternatively, you can use the **Browse** button to locate active process servers.
 
 ## <span id="ddk_activating_a_smart_client_dbg"></span><span id="DDK_ACTIVATING_A_SMART_CLIENT_DBG"></span>
 
@@ -116,13 +117,13 @@ Any additional command-line parameters can be placed here. See [Command-Line Opt
 
 Since the process server simply acts as a gateway for the smart client, the additional *Options* will be the same as those you would use if you were starting a user-mode debugger on the same machine as the target application.
 
-If you are using the **-premote** option with [**.attach (Attach to Process)**](-attach--attach-to-process-.md) or [**.create (Create Process)**](-create--create-process-.md), the parameters are the same as those listed above.
+If you are using the **-premote** option with [**.attach (Attach to Process)**](../debuggercmds/-attach--attach-to-process-.md) or [**.create (Create Process)**](../debuggercmds/-create--create-process-.md), the parameters are the same as those listed above.
 
 ## Troubleshooting
 
 If you see this message: *The client is not using same version of remoting protocol as the server* this indicates that the version of DbgSrv that you are attempting to connect to is using a different protocol version than the version of WinDbg. 
 
-It is uncommon that protocol changes are made. When this does happen, be sure you are using the matching versions of the latest available version of DbgSrv and WinDbg or WinDbg Preview. For information on downloading the latest version, see [Download Debugging Tools for Windows](debugger-download-tools.md).
+It is uncommon that protocol changes are made. When this does happen, be sure you are using the matching versions of the latest available version of DbgSrv and WinDbg (Classic) or WinDbg. For information on downloading the latest version, see [Debugging Tools for Windows](debugger-download-tools.md).
 
  
 

@@ -12,14 +12,12 @@ keywords:
 - .ntf files
 - East Asian fonts WDK print
 - Asian fonts WDK print
-ms.date: 04/20/2017
+ms.date: 01/30/2023
 ---
 
 # Pscript Minidrivers
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 Pscript minidrivers are created from .ppd files and .ntf files.
 
@@ -54,11 +52,3 @@ This section contains the following topics:
 [AddEuro](addeuro.md)
 
 [TrueGray](truegray.md)
-
- 
-
- 
-
-
-
-

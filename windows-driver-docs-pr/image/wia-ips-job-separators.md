@@ -1,95 +1,43 @@
 ---
-title: WIA\_IPS\_JOB\_SEPARATORS
-description: The WIA\_IPS\_JOB\_SEPARATORS property is used to enable the detection of job separators, and to configure the action that the device executes when it detects a job separator page. The WIA minidriver creates and maintains this property.
+title: WIA_IPS_JOB_SEPARATORS
+description: The WIA_IPS_JOB_SEPARATORS property is used to enable the detection of job separators, and to configure the action that the device executes when it detects a job separator page. The WIA minidriver creates and maintains this property.
 keywords: ["WIA_IPS_JOB_SEPARATORS Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_JOB_SEPARATORS
 api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 05/05/2023
 ---
 
-# WIA\_IPS\_JOB\_SEPARATORS
+# WIA_IPS_JOB_SEPARATORS
 
+The **WIA_IPS_JOB_SEPARATORS** property is used to enable the detection of job separators, and to configure the action that the device executes when it detects a job separator page. The WIA minidriver creates and maintains this property.
 
-The **WIA\_IPS\_JOB\_SEPARATORS** property is used to enable the detection of job separators, and to configure the action that the device executes when it detects a job separator page. The WIA minidriver creates and maintains this property.
+Property Type: VT_I4
 
-
-
-
-Property Type: VT\_I4
-
-Valid Values: WIA\_PROP\_LIST
+Valid Values: WIA_PROP_LIST
 
 Access Rights: Read/Write
 
 ## Remarks
 
-The following table describes the valid values for the **WIA\_IPS\_JOB\_SEPARATORS** property.
+The following table describes the valid values for the **WIA_IPS_JOB_SEPARATORS** property.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Value</th>
-<th>Definition</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>WIA_SEPARATOR_DISABLED</p></td>
-<td><p>Job separators detection is disabled. This is the required default value if the property is supported.</p></td>
-</tr>
-<tr class="even">
-<td><p>WIA_SEPARATOR_DETECT_SCAN_CONTINUE</p></td>
-<td><p>Detect job separator page, scan the separator page, and continue scanning.</p></td>
-</tr>
-<tr class="odd">
-<td><p>WIA_SEPARATOR_DETECT_SCAN_STOP</p></td>
-<td><p>Detect job separator page, scan the separator page, and stop scanning.</p></td>
-</tr>
-<tr class="even">
-<td><p>WIA_SEPARATOR_DETECT_NOSCAN_CONTINUE</p></td>
-<td><p>Detect job separator page, do not scan (skip) the separator page, and continue scanning.</p></td>
-</tr>
-<tr class="odd">
-<td><p>WIA_SEPARATOR_DETECT_NOSCAN_STOP</p></td>
-<td><p>Detect job separator page, do not scan (skip) the separator page, and stop scanning.</p></td>
-</tr>
-</tbody>
-</table>
+| Value | Definition |
+|--|--|
+| WIA_SEPARATOR_DISABLED | Job separators detection is disabled. This is the required default value if the property is supported. |
+| WIA_SEPARATOR_DETECT_SCAN_CONTINUE | Detect job separator page, scan the separator page, and continue scanning. |
+| WIA_SEPARATOR_DETECT_SCAN_STOP | Detect job separator page, scan the separator page, and stop scanning. |
+| WIA_SEPARATOR_DETECT_NOSCAN_CONTINUE | Detect job separator page, do not scan (skip) the separator page, and continue scanning. |
+| WIA_SEPARATOR_DETECT_NOSCAN_STOP | Detect job separator page, do not scan (skip) the separator page, and stop scanning. |
 
- 
-
-This property is optional, and is valid only for the Feeder data source item (represented in the [**WIA\_IPA\_ITEM\_CATEGORY**](wia-ipa-item-category.md) property as WIA\_CATEGORY\_FEEDER).
+This property is optional, and is valid only for the Feeder data source item (represented in the [**WIA_IPA_ITEM_CATEGORY**](wia-ipa-item-category.md) property as WIA_CATEGORY_FEEDER).
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
-
- 
-
- 
-
-
-
-
-
+**Header:** wiadef.h (include Wiadef.h)

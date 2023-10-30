@@ -15,7 +15,7 @@ Each workspace preserves the following information about the current debugging s
 
 -   All break and handling information for exceptions and events. For more information about the break and handling information, see Breakpoints in Workspaces.
 
--   All open source files. If a source file is not found, an error message appears. You can close these error messages individually or by using the [Window | Close All Error Windows](window---close-all-error-windows.md) command.
+-   All open source files. If a source file is not found, an error message appears. You can close these error messages individually or by using the **Window | Close All Error Windows** command.
 
 -   All user-defined aliases.
 
@@ -27,7 +27,7 @@ Each workspace preserves the following information about the debugger configurat
 
 -   The source path. (In remote debugging, the main source path and the local source path are saved.)
 
--   The current source options that were set with [**l+, l- (Set Source Options)**](l---l---set-source-options-.md).
+-   The current source options that were set with [**l+, l- (Set Source Options)**](../debuggercmds/l---l---set-source-options-.md).
 
 -   Log file settings.
 
@@ -35,13 +35,13 @@ Each workspace preserves the following information about the debugger configurat
 
 -   The most recent paths in each **Open** dialog box (except for the workspace file and text file paths, which are not saved).
 
--   The current [**.enable\_unicode**](-enable-unicode--enable-unicode-display-.md), [**.force\_radix\_output**](-force-radix-output--use-radix-for-integers-.md), and [**.enable\_long\_status**](-enable-long-status--enable-long-integer-display-.md) settings.
+-   The current [**.enable\_unicode**](../debuggercmds/-enable-unicode--enable-unicode-display-.md), [**.force\_radix\_output**](../debuggercmds/-force-radix-output--use-radix-for-integers-.md), and [**.enable\_long\_status**](../debuggercmds/-enable-long-status--enable-long-integer-display-.md) settings.
 
 All default workspaces and named workspaces preserve the following information about the WinDbg graphical interface. This information is loaded cumulatively, starting with the base workspace and ending with the most recently-loaded workspace.
 
 -   The title of the WinDbg window
 
--   The [Automatically Open Disassembly](window---automatically-open-disassembly.md) setting
+-   The Automatically Open Disassembly setting
 
 -   The default font
 

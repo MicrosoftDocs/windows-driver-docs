@@ -1,8 +1,10 @@
 ---
 title: KSPROPSETID\_FMRXControl
 description: The KSPROPSETID\_FMRXControl property set is used to control whether FM radio reception is enabled.
-ms.date: 11/28/2017
+ms.date: 03/06/2023
+ms.topic: reference
 ---
+
 
 # KSPROPSETID\_FMRXControl
 

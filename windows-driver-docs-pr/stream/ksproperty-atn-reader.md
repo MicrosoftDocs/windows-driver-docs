@@ -4,6 +4,7 @@ description: The KSPROPERTY_ATN_READER property retrieves the absolute track num
 keywords: ["KSPROPERTY_ATN_READER Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_ATN_READER
 api_location:

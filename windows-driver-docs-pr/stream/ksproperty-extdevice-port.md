@@ -4,6 +4,7 @@ description: The KSPROPERTY_EXTDEVICE_PORT property retrieves an external device
 keywords: ["KSPROPERTY_EXTDEVICE_PORT Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_EXTDEVICE_PORT
 api_location:

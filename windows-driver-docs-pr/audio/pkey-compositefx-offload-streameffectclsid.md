@@ -1,7 +1,8 @@
 ---
 title: PKEY\_CompositeFX\_Offload\_StreamEffectClsid
 description: In Windows 10, version 1803 and later, the PKEY\_CompositeFX\_Offload\_StreamEffectClsid property key identifies the stream effect (SFX) supported by the driver.
-ms.date: 01/07/2020
+ms.date: 03/06/2023
+ms.topic: reference
 ---
 
 # PKEY\_CompositeFX\_Offload\_StreamEffectClsid
@@ -31,6 +32,6 @@ HKR,FX\0,%PKEY_CompositeFX_Offload_StreamEffectClsid%,0x00010000,%SWAP_FX_MODE_C
 
 ```
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 [Media-Class INF Extensions](media-class-inf-extensions.md)

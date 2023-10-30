@@ -4,7 +4,7 @@ description: Windows Hello fingerprint driver signature process
 keywords:
 - biometric drivers WDK , windows hello
 - signing biometric drivers
-ms.date: 07/19/2017
+ms.date: 03/03/2023
 ---
 
 

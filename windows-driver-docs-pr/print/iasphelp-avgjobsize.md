@@ -1,24 +1,24 @@
 ---
-title: Iasphelp get\_AvgJobSize method
+title: Iasphelp get_AvgJobSize method
 description: The AvgJobSize property enables an ASP Web page to determine the average job size in a sequence of print jobs.
 MS-HAID:
-- 'webfnc\_de863905-eb8f-430a-a70b-7cb404dd3717.xml'
-- 'print.iasphelp\_avgjobsize'
+- 'webfnc_de863905-eb8f-430a-a70b-7cb404dd3717.xml'
+- 'print.iasphelp_avgjobsize'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 keywords: ["get_AvgJobSize method Print Devices", "get_AvgJobSize method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_AvgJobSize method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Iasphelp.get_AvgJobSize
 api_type:
 - COM
-ms.date: 04/20/2017
+ms.date: 06/23/2023
 ---
 
-# Iasphelp::get\_AvgJobSize method
-
+# Iasphelp::get_AvgJobSize method
 
 The **AvgJobSize** property enables an ASP Web page to determine the average job size in a sequence of print jobs.
 
@@ -37,7 +37,7 @@ A caller-supplied pointer to a memory location that receives the average job siz
 
 ## Return value
 
-This method returns S\_OK on success.
+This method returns S_OK on success.
 
 ## VBScript Example
 
@@ -56,18 +56,7 @@ JobSizeAvg = objPrinter.AvgJobSize
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Target platform</p></td>
-<td>Desktop</td>
-</tr>
-</tbody>
-</table>
+**Target platform:** Desktop
 
 ## See also
 

@@ -4,6 +4,7 @@ description: The SetDSMCounters method is used to set the timer counters for a p
 keywords: ["SetDSMCounters function Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SetDSMCounters
 api_location:

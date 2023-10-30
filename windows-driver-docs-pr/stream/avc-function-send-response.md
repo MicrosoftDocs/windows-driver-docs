@@ -4,6 +4,7 @@ description: The AVC_FUNCTION_SEND_RESPONSE function code is used to respond to 
 keywords: ["AVC_FUNCTION_SEND_RESPONSE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - AVC_FUNCTION_SEND_RESPONSE
 api_location:

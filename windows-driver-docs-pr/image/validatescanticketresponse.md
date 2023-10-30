@@ -4,15 +4,15 @@ description: The required ValidateScanTicketResponse operation notifies the clie
 keywords: ["ValidateScanTicketResponse element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ValidateScanTicketResponse
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 05/02/2023
 ---
 
 # ValidateScanTicketResponse element
-
 
 The required **ValidateScanTicketResponse** operation notifies the client whether a client's submitted [**ScanTicket**](scanticket.md) is valid.
 
@@ -30,25 +30,11 @@ There are no attributes.
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="validationinfo.md" data-raw-source="[&lt;strong&gt;ValidationInfo&lt;/strong&gt;](validationinfo.md)"><strong>ValidationInfo</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**ValidationInfo**](validationinfo.md) |
 
 ## Parent elements
-
 
 There are no parent elements.
 

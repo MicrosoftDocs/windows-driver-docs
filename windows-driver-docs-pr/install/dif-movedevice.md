@@ -4,6 +4,7 @@ description: DIF_MOVEDEVICE
 keywords: ["DIF_MOVEDEVICE Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DIF_MOVEDEVICE
 api_type:

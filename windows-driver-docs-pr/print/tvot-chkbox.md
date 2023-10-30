@@ -4,16 +4,19 @@ description: The TVOT_CHKBOX option type consists of a check box inside a group 
 keywords: ["TVOT_CHKBOX Print Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - TVOT_CHKBOX
 api_location:
 - compstui.h
 api_type:
 - HeaderDef
-ms.date: 09/08/2021
+ms.date: 01/30/2023
 ---
 
 # TVOT_CHKBOX
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The TVOT_CHKBOX option type consists of a check box inside a group box.
 

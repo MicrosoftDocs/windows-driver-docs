@@ -1,7 +1,8 @@
 ---
 title: OID_WDI_SET_MULTICAST_LIST
+ms.topic: reference
 description: OID_WDI_SET_MULTICAST_LIST specifies the multicast address list for a given port. This command can be set at any time.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - OID_WDI_SET_MULTICAST_LIST Network Drivers Starting with Windows Vista
 ms.custom: 19H1

@@ -4,6 +4,7 @@ description: The WIA_DPS_PAD_COLOR property contains the current pad color that 
 keywords: ["WIA_DPS_PAD_COLOR Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPS_PAD_COLOR
 api_location:

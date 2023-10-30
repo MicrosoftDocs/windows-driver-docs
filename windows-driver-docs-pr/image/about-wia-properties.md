@@ -1,7 +1,7 @@
 ---
 title: About WIA properties
 description: About WIA properties
-ms.date: 07/09/2018
+ms.date: 03/27/2023
 ---
 
 # About WIA properties
@@ -18,5 +18,4 @@ WIA properties can be divided into the following functional categories:
 
 [Properties for WIA File System Minidrivers](properties-for-wia-file-system-minidrivers.md)
 
-> [!NOTE]
-> The properties of any device that have no effect should be marked either read-only (required properties) or removed (all others).
+The properties of any device that have no effect should be marked either read-only (required properties) or removed (all others).

@@ -1,7 +1,8 @@
 ---
 title: WDI_TLV_INDICATION_WAKE_PACKET_PATTERN_ID
+ms.topic: reference
 description: WDI_TLV_INDICATION_WAKE_PACKET_PATTERN_ID is a TLV that contains the ID of the pattern that matches a wake packet.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - WDI_TLV_INDICATION_WAKE_PACKET_PATTERN_ID Network Drivers Starting with Windows Vista
 ---

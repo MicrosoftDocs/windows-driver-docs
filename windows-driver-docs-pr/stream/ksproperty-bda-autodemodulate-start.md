@@ -4,6 +4,7 @@ description: Clients use KSPROPERTY_BDA_AUTODEMODULATE_START to automatically de
 keywords: ["KSPROPERTY_BDA_AUTODEMODULATE_START Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_BDA_AUTODEMODULATE_START
 api_location:

@@ -1,11 +1,11 @@
 ---
-title: Entering Debugger Commands in WinDbg
-description: Entering Debugger Commands in WinDbg using the Debugger Command window 
+title: Entering Debugger Commands in WinDbg (Classic)
+description: Entering Debugger Commands in WinDbg (Classic) using the Debugger Command window 
 keywords: debugging information windows, command window, WinDbg
 ms.date: 05/23/2017
 ---
 
-# Entering Debugger Commands in WinDbg
+# Entering Debugger Commands in WinDbg (Classic)
 
 
 ## <span id="ddk_debugger_command_window_dbg"></span><span id="DDK_DEBUGGER_COMMAND_WINDOW_DBG"></span>
@@ -33,7 +33,7 @@ In the command entry pane, use the UP ARROW and DOWN ARROW keys to scroll throug
 
 The Debugger Command window contains a shortcut menu with additional commands. To access this menu, select and hold (or right-click) the title bar of the window or select the icon near the upper-right corner of the window (![screen shot of the button for accessing the debugger command window toolbar shortcut menu .](images/tbcmd.png)). The following list describes some of the menu commands:
 
--   **Add to command output** adds a comment to the command output, similar to the [Edit | Add to Command Output](edit---add-to-command-output.md) command.
+-   **Add to command output** adds a comment to the command output, similar to the **Edit | Add to Command Output** command.
 
 -   **Clear command output** deletes all of the text in the window.
 
@@ -47,7 +47,7 @@ The Debugger Command window contains a shortcut menu with additional commands. T
 
 -   **Always floating** causes the window to remain undocked, even if it is dragged to a docking location.
 
--   **Move with frame** causes the window to move when the WinDbg frame is moved, even if the window is undocked. For more information about docked, tabbed, and floating windows, see [Positioning the Windows](positioning-the-windows.md).
+-   **Move with frame** causes the window to move when the WinDbg frame is moved, even if the window is undocked. 
 
  
 

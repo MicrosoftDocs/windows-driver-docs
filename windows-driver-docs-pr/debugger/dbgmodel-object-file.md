@@ -1,13 +1,17 @@
 ---
 title: Debugger Data Model - File Objects
 description: File objects are used to open, edit, and otherwise manipulate files on the file system.
-ms.date: 12/13/2018
+ms.date: 03/10/2023
+ms.topic: reference
 ---
-# File Objects 
+# File Object
+
 ## Summary
+
 File objects are used to open, edit, and otherwise manipulate files on the file system.
 
 ## Object Methods
+
 |Name|Return Type|Signature|Description|
 |--- |--- |--- |--- |
 |Close||Close()|Closes the file. |
@@ -17,6 +21,7 @@ File objects are used to open, edit, and otherwise manipulate files on the file 
 |WriteBytes||WriteBytes(bytes, [byteCount])|Writes the specified bytes to the file. If *byteCount* is not supplied, every byte which can be iterated out of *bytes* is written to the file; otherwise, the first *byteCount* bytes within *bytes* is written.|
 
 ## Object Properties
+
 |Name|Description|
 |--- |--- |
 |Extension|A string containing the file extension.|
@@ -26,4 +31,5 @@ File objects are used to open, edit, and otherwise manipulate files on the file 
 |Size|The size of the file in bytes.|
 
 ## Remarks
+
 If the files are being used from a garbage collected environment such as a JavaScript script, they should be closed when no longer in use rather than waiting for a garbage collection to cause the file to close.

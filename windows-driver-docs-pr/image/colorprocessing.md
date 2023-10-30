@@ -4,15 +4,15 @@ description: The optional ColorProcessing element specifies the color-processing
 keywords: ["ColorProcessing element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ColorProcessing wscn MustHonor "" wscn Override "" wscn UsedDefault ""
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 03/29/2023
 ---
 
 # ColorProcessing element
-
 
 The optional **ColorProcessing** element specifies the color-processing mode of the input source on the scanner.
 
@@ -29,45 +29,11 @@ The optional **ColorProcessing** element specifies the color-processing mode of 
 
 ## Attributes
 
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong><strong>MustHonor</strong></strong></p></td>
-<td><p>xs:string</p></td>
-<td><p>No</p></td>
-<td><p></p>
-<p>Optional. A Boolean value that must be 0, false, 1, or true.<strong>falsetrue</strong></p></td>
-</tr>
-<tr class="even">
-<td><p><strong><strong>Override</strong></strong></p></td>
-<td><p>xs:string</p></td>
-<td><p>No</p></td>
-<td><p></p>
-<p>Optional. A Boolean value that must be 0, false, 1, or true.<strong>falsetrue</strong></p></td>
-</tr>
-<tr class="odd">
-<td><p><strong><strong>UsedDefault</strong></strong></p></td>
-<td><p>xs:string</p></td>
-<td><p>No</p></td>
-<td><p></p>
-<p>Optional. A Boolean value that must be 0, false, 1, or true.<strong>falsetrue</strong></p></td>
-</tr>
-</tbody>
-</table>
+| Attribute | Type | Required | Description |
+|--|--|--|--|
+| **MustHonor** | xs:string | No | Optional. A Boolean value that must be 0, false, 1, or true.**falsetrue** |
+| **Override** | xs:string | No | Optional. A Boolean value that must be 0, false, 1, or true.**falsetrue** |
+| **UsedDefault** | xs:string | No | Optional. A Boolean value that must be 0, false, 1, or true.**falsetrue** |
 
 ## Text value
 
@@ -75,27 +41,13 @@ For a list and description of the color processing Modes, see ColorEntry.[**Colo
 
 ## Child elements
 
-
 There are no child elements.
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="mediafront.md" data-raw-source="[&lt;strong&gt;MediaFront&lt;/strong&gt;](mediafront.md)"><strong>MediaFront</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**MediaFront**](mediafront.md) |
 
 ## Remarks
 
@@ -105,7 +57,6 @@ The WSD Scan Service can specify the optional **Override** and **UsedDefault** a
 
 ## See also
 
-
 [**ColorEntry**](colorentry.md)
 
 [**CreateScanJobRequest**](createscanjobrequest.md)
@@ -113,13 +64,3 @@ The WSD Scan Service can specify the optional **Override** and **UsedDefault** a
 [**DocumentFinalParameters**](documentfinalparameters.md)
 
 [**MediaFront**](mediafront.md)
-
- 
-
- 
-
-
-
-
-
-

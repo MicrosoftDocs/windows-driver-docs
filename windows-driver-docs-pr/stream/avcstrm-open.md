@@ -4,6 +4,7 @@ description: The AVCSTRM_OPEN function code opens a stream with a specific strea
 keywords: ["AVCSTRM_OPEN Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - AVCSTRM_OPEN
 api_type:

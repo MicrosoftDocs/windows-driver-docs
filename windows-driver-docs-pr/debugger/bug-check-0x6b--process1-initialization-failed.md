@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x6B PROCESS1_INITIALIZATION_FAILED", "PROCESS1_INITIALIZA
 ms.date: 06/27/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - PROCESS1_INITIALIZATION_FAILED
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The PROCESS1\_INITIALIZATION\_FAILED bug check has a value of 0x0000006B. This bug check indicates that the initialization of the Microsoft Windows operating system failed.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## PROCESS1\_INITIALIZATION\_FAILED Parameters
@@ -66,7 +67,7 @@ This bug check can also be caused by a missing file from the boot partition or b
 
  
 ## Resolution
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause. 
+The [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause. 
 
 
 

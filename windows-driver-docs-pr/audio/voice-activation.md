@@ -1,13 +1,13 @@
 ---
 title: Voice Activation
 description: Cortana, the Windows speech platform is used to power all of the speech experiences in Windows 10 such as Cortana and Dictation.
-ms.date: 05/15/2020
+ms.date: 08/17/2023
 ---
 
 # Voice Activation
 
 > [!NOTE]
-> This topic refers primarily to our consumer experiences, which are currently delivered in Windows 10 (version 1909 and earlier).
+> This topic refers primarily to our consumer experiences, which are currently delivered in Windows 10 (version 1909 and earlier) For more information, see [End of support for Cortana in Windows and Teams](https://support.microsoft.com/topic/end-of-support-for-cortana-in-windows-and-teams-d025b39f-ee5b-4836-a954-0ab646ee1efa).
 
 Cortana, the personal assistant technology was demonstrated for the first time at the Microsoft BUILD Developer Conference in 2013. The Windows speech platform is used to power all of the speech experiences in Windows 10 such as Cortana and Dictation. Voice activation is a feature that enables users to invoke a speech recognition engine from various device power states by saying a specific phrase - "Hey Cortana". To create hardware that supports voice activation technology, review the information in this topic.
 
@@ -21,7 +21,6 @@ To understand the voice interaction experience available in Windows, review thes
 |Topic|Description|
 |----|----|
 | [What is Cortana?](https://support.microsoft.com/help/17214/cortana-what-is)      | Provides and overview and usage direction for Cortana                 |
-| [Make Cortana yours](https://support.microsoft.com/help/17178/windows-10-make-cortana-yours) | Describes customization available through Cortana's Settings screens. |
 
 ## Introduction to "Hey Cortana" Voice Activation and "Learn my voice"
 
@@ -135,7 +134,7 @@ The audio stack external interfaces for enabling Voice Activation serves as the 
 
 Audio endpoint graph building occurs normally. The graph is prepared to handle faster than real time capture. Timestamps on captured buffers remain true. Specifically, the timestamps will correctly reflect data that was captured in the past and buffered, and is now “bursting”.
 
-### Theory of Operation
+### Theory of Bluetooth bypass audio streaming
 
 The driver exposes a KS filter for its capture device as usual. This filter supports several KS properties and a KS event to configure, enable and signal a detection event. The filter also includes an additional pin factory identified as a keyword spotter (KWS) pin. This pin is used to stream audio from the keyword spotter.
 

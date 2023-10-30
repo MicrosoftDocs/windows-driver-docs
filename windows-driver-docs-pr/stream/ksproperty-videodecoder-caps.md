@@ -4,6 +4,7 @@ description: The KSPROPERTY\_VIDEODECODER\_CAPS property describes the basic cap
 keywords: ["KSPROPERTY_VIDEODECODER_CAPS Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_VIDEODECODER_CAPS
 api_location:

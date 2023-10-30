@@ -4,6 +4,7 @@ description: The GetPathConfiguration method is used to retrieve the device info
 keywords: ["GetPathConfiguration function Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - GetPathConfiguration
 api_location:

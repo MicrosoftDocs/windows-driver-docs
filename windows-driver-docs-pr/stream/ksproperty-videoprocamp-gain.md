@@ -4,6 +4,7 @@ description: The KSPROPERTY\_VIDEOPROCAMP\_GAIN property sets or gets the camera
 keywords: ["KSPROPERTY_VIDEOPROCAMP_GAIN Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_VIDEOPROCAMP_GAIN
 api_location:

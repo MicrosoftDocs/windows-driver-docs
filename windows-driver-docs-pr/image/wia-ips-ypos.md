@@ -4,6 +4,7 @@ description: The WIA_IPS_YPOS property contains the current y-coordinate, in pix
 keywords: ["WIA_IPS_YPOS Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_YPOS
 api_location:

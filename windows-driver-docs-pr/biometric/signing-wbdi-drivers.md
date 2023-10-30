@@ -1,7 +1,7 @@
 ---
 title: Signing WBDI Drivers
 description: Signing WBDI Drivers
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Signing WBDI Drivers

@@ -1,7 +1,8 @@
 ---
 title: Common data fields
 description: This topic shows the common data fields that are included in all sensor-specific data fields.
-ms.date: 07/20/2018
+ms.date: 03/02/2023
+ms.topic: reference
 ---
 
 # Sensor data fields
@@ -16,10 +17,10 @@ Clients can use the ReadFile function to retrieve information from these data fi
 
 For more information about the types shown in the type column, see [PROPVARIANT structure](/windows/win32/api/propidlbase/ns-propidlbase-propvariant).
 
-|Property key|Type|Required/Optional|Description|
-| --- | --- | --- | --- |
-|PKEY_SensorData_Timestamp|VT_FILETIME|Required|The file time computed by the driver in UTC format. The class extension (CX) provides a helper function to convert ticks from boot to FILETIME so that remote systems don’t have to synchronize to the system clock.|
+| Property key | Type | Required/Optional | Description |
+|---|---|---|---|
+| PKEY_SensorData_Timestamp | VT_FILETIME | Required | The file time computed by the driver in UTC format. The class extension (CX) provides a helper function to convert ticks from boot to FILETIME so that remote systems don't have to synchronize to the system clock. |
 
 ## Related topics
 
-[PROPVARIANT structure](/windows/win32/api/propidlbase/ns-propidlbase-propvariant)
+- [PROPVARIANT structure](/windows/win32/api/propidlbase/ns-propidlbase-propvariant)

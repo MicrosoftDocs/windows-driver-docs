@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_LIMITED_CONNECTIVITY (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_LIMITED_CONNECTIVITY is a WiFiCx TLV that specifies  whether the WiFiCx driver can maintain a secondary STA connection.
 ms.date: 08/31/2021
 keywords:

@@ -4,6 +4,7 @@ description: KSPROPERTY_CAMERACONTROL_EXTENDED_BACKGROUNDSEGMENTATION is a prope
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_BACKGROUNDSEGMENTATION Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_EXTENDED_BACKGROUNDSEGMENTATION
 api_location:
@@ -11,7 +12,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 09/19/2022
-ms.topic: article
 ---
 
 # KSPROPERTY_CAMERACONTROL_EXTENDED_BACKGROUNDSEGMENTATION

@@ -25,7 +25,7 @@ If it is possible, the compiler and linker should not optimize your code. Source
 
 ### <span id="locating_the_symbol_files_and_source_files"></span><span id="LOCATING_THE_SYMBOL_FILES_AND_SOURCE_FILES"></span>Locating the Symbol Files and Source Files
 
-To debug in source mode, the debugger must be able to find the source files and the symbol files. For more information, see [Source Code](source-code.md).
+To debug in source mode, the debugger must be able to find the source files and the symbol files. For more information, see [Source path](source-path.md).
 
 ### <span id="beginning_source_debugging"></span><span id="BEGINNING_SOURCE_DEBUGGING"></span>Beginning Source Debugging
 
@@ -42,7 +42,7 @@ g
 
 The application is then loaded and stops when the **main** function is entered. (Of course, you can use any entry point, not only **main**.)
 
-If the application throws an exception, it breaks into the debugger. Source information is available at this point. However, if you issue a break by using the [**CTRL+C**](ctrl-c--break-.md), [CTRL+BREAK](debug---break.md), or Debug | Break command, the debugger creates a new thread, so you cannot see your source code.
+If the application throws an exception, it breaks into the debugger. Source information is available at this point. However, if you issue a break by using the [**CTRL+C**](ctrl-c--break-.md), **CTRL+BREAK**, or Debug | Break command, the debugger creates a new thread, so you cannot see your source code.
 
 After you have reached a thread that you have source files for, you can use the Debugger Command window to execute source debugging commands. If you are using WinDbg, the [Source window](source-window.md) appears. If you have already opened a Source window by clicking **Open Source File** on the **File** menu, WinDbg typically create a new window for the source. You can close the previous window without affecting the debugging process.
 
@@ -58,9 +58,7 @@ If you are in source mode, the appropriate Source window moves to the foreground
 
 As you move through the application, WinDbg highlights your location in the Source window and the Disassembly window. Lines at which breakpoints are set are also highlighted. The source code is colored according to the parsing of the language. If the Source window has been selected, you can hover over a symbol with the mouse to evaluate it. For more information about these features and how to control them, see [Source Windows](source-window.md).
 
-To activate source mode in WinDbg, use the [**l+t**](l---l---set-source-options-.md) command, click **source mode** on the **debug** menu, or click the **source mode on** button (![screen shot of the source mode on button.](images/tbsrc.png)) on the toolbar.
-
-When source mode is active, the **ASM** indicator appears unavailable on the status bar.
+To activate source mode in WinDbg, use the [**l+t**](../debuggercmds/l---l---set-source-options-.md) command, click **source mode** on the **debug** menu, or click the **source mode on** button. When source mode is active, the **ASM** indicator appears unavailable on the status bar.
 
 You can view or alter the values of any local variables as you step through a function in source mode. For more information, see [Reading and Writing Memory](reading-and-writing-memory.md).
 
@@ -68,15 +66,15 @@ You can view or alter the values of any local variables as you step through a fu
 
 If you are using CDB, you do not have a separate Source window. However, you can still view your progress as you step through the source.
 
-Before you can do source debugging in CDB, you have to load source line symbols by issuing the [**.lines (Toggle Source Line Support)**](-lines--toggle-source-line-support-.md) command or by starting the debugger with the [**-lines command-line option**](cdb-command-line-options.md).
+Before you can do source debugging in CDB, you have to load source line symbols by issuing the [**.lines (Toggle Source Line Support)**](../debuggercmds/-lines--toggle-source-line-support-.md) command or by starting the debugger with the [**-lines command-line option**](cdb-command-line-options.md).
 
-If you execute an [**l+t**](l---l---set-source-options-.md) command, all program stepping is performed one source line at a time. Use **l-t** to step one assembly instruction at a time. If you are using WinDbg, this command has the same effect as selecting or clearing **Source Mode** on the **Debug** menu or using the toolbar buttons.
+If you execute an [**l+t**](../debuggercmds/l---l---set-source-options-.md) command, all program stepping is performed one source line at a time. Use **l-t** to step one assembly instruction at a time. If you are using WinDbg, this command has the same effect as selecting or clearing **Source Mode** on the **Debug** menu or using the toolbar buttons.
 
-The [**l+s**](l---l---set-source-options-.md) command displays the current source line and line number at the prompt. If you want to see only the line number, use **l+l** instead.
+The [**l+s**](../debuggercmds/l---l---set-source-options-.md) command displays the current source line and line number at the prompt. If you want to see only the line number, use **l+l** instead.
 
-If you use [**l+o**](l---l---set-source-options-.md) and **l+s**, only the source line is displayed while you step through the program. The program counter, disassembly code, and register information are hidden. This kind of display enables you to quickly step through the code and view nothing but the source.
+If you use [**l+o**](../debuggercmds/l---l---set-source-options-.md) and **l+s**, only the source line is displayed while you step through the program. The program counter, disassembly code, and register information are hidden. This kind of display enables you to quickly step through the code and view nothing but the source.
 
-You can use the [**lsp (Set Number of Source Lines)**](lsp--set-number-of-source-lines-.md) command to specify exactly how many source lines are displayed when you step through or execute the application.
+You can use the [**lsp (Set Number of Source Lines)**](../debuggercmds/lsp--set-number-of-source-lines-.md) command to specify exactly how many source lines are displayed when you step through or execute the application.
 
 The following sequence of commands is an effective way to step through a source file.
 
@@ -90,13 +88,13 @@ pr            execute one source line, and toggle register display off
 p             execute one source line 
 ```
 
-Because [**ENTER**](enter--repeat-last-command-.md) repeats the last command, you can now step through the application by using the ENTER key. Each step causes the source line, memory offset, and assembly code to appear.
+Because [**ENTER**](../debuggercmds/enter--repeat-last-command-.md) repeats the last command, you can now step through the application by using the ENTER key. Each step causes the source line, memory offset, and assembly code to appear.
 
 For more information about how to interpret the disassembly display, see [Debugging in Assembly Mode](debugging-in-assembly-mode.md).
 
-When the assembly code is displayed, any memory location that is being accessed is displayed at the right end of the line. You can use the [**d\* (Display Memory)**](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) and [**e\* (Enter Values)**](e--ea--eb--ed--ed--ef--ep--eq--eu--ew--eza--ezu--enter-values-.md) commands to view or change the values in these locations.
+When the assembly code is displayed, any memory location that is being accessed is displayed at the right end of the line. You can use the [**d\* (Display Memory)**](../debuggercmds/d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) and [**e\* (Enter Values)**](../debuggercmds/e--ea--eb--ed--ed--ef--ep--eq--eu--ew--eza--ezu--enter-values-.md) commands to view or change the values in these locations.
 
-If you have to view each assembly instruction to determine offsets or memory information, use [**l-t**](l---l---set-source-options-.md) to step by assembly instructions instead of source lines. The source line information can still be displayed. Each source line corresponds to one or more assembly instructions.
+If you have to view each assembly instruction to determine offsets or memory information, use [**l-t**](../debuggercmds/l---l---set-source-options-.md) to step by assembly instructions instead of source lines. The source line information can still be displayed. Each source line corresponds to one or more assembly instructions.
 
 All of these commands are available in WinDbg and in CDB. You can use the commands to view source line information from WinDbg's [Debugger Command window](debugger-command-window.md) instead of from the Source window.
 
@@ -122,7 +120,7 @@ This technique is very versatile, because you can use it regardless of where the
 bp `source.c:31` 
 ```
 
-For more information, see [Source Line Syntax](source-line-syntax.md) and [Using Breakpoints](using-breakpoints.md).
+For more information, see [Source Line Syntax](../debuggercmds/source-line-syntax.md) and [Using Breakpoints](using-breakpoints.md).
 
 ### <span id="stepping_and_tracing_in_source_mode"></span><span id="STEPPING_AND_TRACING_IN_SOURCE_MODE"></span>Stepping and Tracing in Source Mode
 
@@ -134,7 +132,7 @@ For example, in the following command, the **t** command steps into both **GetTi
 printf( "%x\n", GetTickCount() );
 ```
 
-If you want to step over certain calls while tracing into other calls, use [**.step\_filter (Set Step Filter)**](-step-filter--set-step-filter-.md) to indicate which calls to step over.
+If you want to step over certain calls while tracing into other calls, use [**.step\_filter (Set Step Filter)**](../debuggercmds/-step-filter--set-step-filter-.md) to indicate which calls to step over.
 
 You can use **\_step\_filter** to filter out framework functions (for example, Microsoft Foundation Classes (MFC) or Active Template Library (ATL) calls).
 

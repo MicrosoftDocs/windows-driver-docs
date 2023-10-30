@@ -1,11 +1,11 @@
 ---
-title: Viewing and Editing Registers in WinDbg
+title: Viewing and Editing Registers in WinDbg (Classic)
 description: In WinDbg, you can view and edit registers by entering commands, by using the Registers window, or by using the Watch Window.
 keywords: ["debugging information windows, Registers window", "Registers window", "registers, Registers window"]
 ms.date: 05/23/2017
 ---
 
-# Viewing and Editing Registers in WinDbg
+# Viewing and Editing Registers in WinDbg (Classic)
 
 
 Registers are small volatile memory units that are located on the CPU. Many registers are dedicated to specific uses, and other registers are available for user-mode applications to use. The x86-based and x64-based processors have different collections of registers available. For more information about the registers on each processor, see [Processor Architecture](processor-architecture.md).
@@ -15,9 +15,9 @@ In WinDbg, you can view and edit registers by entering commands, by using the Re
 ## <span id="Commands"></span><span id="commands"></span><span id="COMMANDS"></span>Commands
 
 
-You can view and edit registers by entering the [**r (Registers)**](r--registers-.md) command in the Debugger Command window. You can customize the display by using several options or by using the [**rm (Register Mask)**](rm--register-mask-.md) command.
+You can view and edit registers by entering the [**r (Registers)**](../debuggercmds/r--registers-.md) command in the Debugger Command window. You can customize the display by using several options or by using the [**rm (Register Mask)**](../debuggercmds/rm--register-mask-.md) command.
 
-Registers are also automatically displayed every time that the target stops. If you are stepping through your code with the [**p (Step)**](p--step-.md) or [**t (Trace)**](t--trace-.md) commands, you see a register display at every step. To stop this display, use the **r** option when you use these commands.
+Registers are also automatically displayed every time that the target stops. If you are stepping through your code with the [**p (Step)**](../debuggercmds/p--step-.md) or [**t (Trace)**](../debuggercmds/t--trace-.md) commands, you see a register display at every step. To stop this display, use the **r** option when you use these commands.
 
 On an x86-based processor, the **r** option also controls several one-bit registers known as flags. To change these flags, you use a slightly different syntax than when changing regular registers. For more information about these flags and an explanation of this syntax, see [x86 Flags](x86-architecture.md#x86-flags).
 
@@ -43,7 +43,7 @@ In the Registers window, you can do the following:
     -   To save the new value, press ENTER.
     -   To discard the new value, press ESC.
     -   If you type an invalid value, the old value will reappear when you press ENTER.
--   Register values are displayed in the current radix, and you must type new values in the same radix. To change the current radix, use the [**n (Set Number Base)**](n--set-number-base-.md) command in the Debugger Command window.
+-   Register values are displayed in the current radix, and you must type new values in the same radix. To change the current radix, use the [**n (Set Number Base)**](../debuggercmds/n--set-number-base-.md) command in the Debugger Command window.
 
 -   In user mode, the Registers window displays the registers that are associated with the current thread. For more information about the current thread, see [Controlling Processes and Threads](controlling-processes-and-threads.md).
 
@@ -63,7 +63,7 @@ The Registers window has a toolbar that contains a **Customize** button and has 
 
 -   (Menu only) **Always floating** causes the window to remain undocked even if it is dragged to a docking location.
 
--   (Menu only) **Move with frame** causes the window to move when the WinDbg frame is moved, even if the window is undocked. For more information about docked, tabbed, and floating windows, see [Positioning the Windows](positioning-the-windows.md).
+-   (Menu only) **Move with frame** causes the window to move when the WinDbg frame is moved, even if the window is undocked. 
 
 -   (Menu only) **Help** opens this topic in the Debugging Tools for Windows documentation.
 

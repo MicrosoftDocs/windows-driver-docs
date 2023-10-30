@@ -7,10 +7,12 @@ keywords:
 - states WDK printer
 - verifying printer installations
 - installed driver tests WDK printer
-ms.date: 07/07/2020
+ms.date: 01/27/2023
 ---
 
 # Print device installation
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 Initial installation of your port-connected device can occur in many ways, and the system can be in a variety of states when your device is connected for the first time.
 

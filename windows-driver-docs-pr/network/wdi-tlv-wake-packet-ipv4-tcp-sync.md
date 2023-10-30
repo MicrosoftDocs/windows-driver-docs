@@ -1,7 +1,8 @@
 ---
 title: WDI_TLV_WAKE_PACKET_IPv4_TCP_SYNC
+ms.topic: reference
 description: WDI_TLV_WAKE_PACKET_IPv4_TCP_SYNC is a TLV that contains wake-on-LAN IPv4 TCP sync packet information.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - WDI_TLV_WAKE_PACKET_IPv4_TCP_SYNC Network Drivers Starting with Windows Vista
 ---

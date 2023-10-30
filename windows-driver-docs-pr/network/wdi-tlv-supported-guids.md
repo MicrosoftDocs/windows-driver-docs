@@ -1,7 +1,8 @@
 ---
 title: WDI_TLV_SUPPORTED_GUIDS
+ms.topic: reference
 description: WDI_TLV_SUPPORTED_GUIDS is a TLV that contains a supported NDIS GUID.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - WDI_TLV_SUPPORTED_GUIDS Network Drivers Starting with Windows Vista
 ---

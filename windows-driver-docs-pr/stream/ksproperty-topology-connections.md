@@ -4,6 +4,7 @@ description: The KSPROPERTY\_TOPOLOGY\_CONNECTIONS property queries all connecti
 keywords: ["KSPROPERTY_TOPOLOGY_CONNECTIONS Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_TOPOLOGY_CONNECTIONS
 api_location:

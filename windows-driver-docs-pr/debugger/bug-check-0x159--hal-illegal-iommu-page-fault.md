@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x159 HAL_ILLEGAL_IOMMU_PAGE_FAULT", "HAL_ILLEGAL_IOMMU_PA
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - HAL_ILLEGAL_IOMMU_PAGE_FAULT
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The HAL\_ILLEGAL\_IOMMU\_PAGE\_FAULT bug check has a value of 0x00000159. This indicates that the IOMMU has delivered a page fault against an ASID that was in the process of being freed. The driver was responsible for completing any inflight requests before this point in time and this bugcheck indicates a driver in the system did not do so.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## HAL\_ILLEGAL\_IOMMU\_PAGE\_FAULT Parameters

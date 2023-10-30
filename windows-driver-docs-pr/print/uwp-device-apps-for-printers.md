@@ -1,10 +1,12 @@
 ---
 title: UWP device apps for printers (print)
 description: UWP device apps for printers allow IHVs to highlight special features of their devices through customized printer preferences and notification support.
-ms.date: 07/07/2020
+ms.date: 01/25/2023
 ---
 
 # UWP device apps for printers (print)
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 UWP device apps for printers allow IHVs to highlight the special features of their devices through customized printer preferences and notification support.
 

@@ -7,11 +7,12 @@ keywords:
 - document descriptions WDK print
 - print jobs WDK , Print Tickets
 - jobs WDK print , Print Tickets
-ms.date: 04/20/2017
+ms.date: 01/30/2023
 ---
 
 # Print Ticket
 
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 A PrintTicket document is an XML document that describes how a document or document part is to be printed. A PrintTicket document can be associated with a print job, a document, or a page within a document. The PrintTicket document can be added to an XPS Document as a PrintTicket part and saved with document contents in a file. A PrintTicket document can also be added to a document as the application spools the document for printing.
 
@@ -26,6 +27,3 @@ This section contains the following topics:
 [Print Ticket Processing in the Print Driver](print-ticket-processing-in-the-print-driver.md)
 
 [Print Ticket Support in Unidrv and PScript5 Print Drivers](print-ticket-support-in-unidrv-and-pscript5-print-drivers.md)
-
- 
-

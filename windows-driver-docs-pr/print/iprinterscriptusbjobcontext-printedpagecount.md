@@ -7,6 +7,7 @@ MSHAttr:
 keywords: ["PrintedPageCount method Print Devices", "PrintedPageCount method Print Devices , IPrinterScriptUsbJobContext interface", "IPrinterScriptUsbJobContext interface Print Devices , PrintedPageCount method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IPrinterScriptUsbJobContext.PrintedPageCount
 api_type:

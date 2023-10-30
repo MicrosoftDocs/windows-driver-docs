@@ -3,9 +3,9 @@ title: WinDbg Command-Line Options
 description: First-time users of WinDbg should begin with the Debugging Using WinDbg section.
 keywords: ["WinDbg Command-Line Options Windows Debugging"]
 ms.date: 02/28/2022
-ms.topic: article
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WinDbg Command-Line Options
 api_type:
@@ -14,7 +14,7 @@ api_type:
 
 # WinDbg Command-Line Options
 
-First-time users of WinDbg should begin with the [Debugging Using WinDbg](debugging-using-windbg.md) section.
+First-time users of WinDbg should begin with the [Debugging Using WinDbg (Classic)](debugging-using-windbg.md) section.
 
 The WinDbg command line uses the following syntax:
 
@@ -56,24 +56,24 @@ Creates a debugging client, and connects to a debugging server that is already r
 Creates a smart client, and connects to a process server that is already running. For an explanation of the possible *SmartClientTransport* values, see [**Activating a Smart Client**](activating-a-smart-client.md).
 
 <span id="_______-a________Extension______"></span><span id="_______-a________extension______"></span><span id="_______-A________EXTENSION______"></span> **-a** *Extension*   
-Sets the default extension DLL. The default is kdextx86.dll or kdexts.dll. There must be no space after the "a", and the .dll file name extension must not be included. For details, and other methods of setting this default, see [Loading Debugger Extension DLLs](loading-debugger-extension-dlls.md).
+Sets the default extension DLL. The default is kdextx86.dll or kdexts.dll. There must be no space after the "a", and the .dll file name extension must not be included. For details, and other methods of setting this default, see [Loading Debugger Extension DLLs](../debuggercmds/loading-debugger-extension-dlls.md).
 
 <span id="_______-b______"></span><span id="_______-B______"></span> **-b**   
 This option is no longer supported.
 
 <span id="_______-c_________command______________"></span><span id="_______-C_________COMMAND______________"></span> **-c "** *command* **"**   
-Specifies the initial debugger command to run at start-up. This command must be enclosed in quotation marks. Multiple commands can be separated with semicolons. (If you have a long command list, it may be easier to put them in a script and then use the **-c** option with the [**$&lt;, $&gt;&lt;, $&gt;&lt;, $$&gt;&lt; (Run Script File)**](-----------------------a---run-script-file-.md) command.)
+Specifies the initial debugger command to run at start-up. This command must be enclosed in quotation marks. Multiple commands can be separated with semicolons. (If you have a long command list, it may be easier to put them in a script and then use the **-c** option with the [**$&lt;, $&gt;&lt;, $&gt;&lt;, $$&gt;&lt; (Run Script File)**](../debuggercmds/-----------------------a---run-script-file-.md) command.)
 
 If you are starting a debugging client, this command must be intended for the debugging server. Client-specific commands, such as **.lsrcpath**, are not allowed.
 
 <span id="_______-clines________lines______"></span><span id="_______-CLINES________LINES______"></span> **-clines** *lines*   
-Sets the approximate number of commands in the command history which can be accessed during remote debugging. For details, and for other ways to change this number, see [Using Debugger Commands](using-debugger-commands.md).
+Sets the approximate number of commands in the command history which can be accessed during remote debugging. For details, and for other ways to change this number, see [Using Debugger Commands](../debuggercmds/using-debugger-commands.md).
 
 <span id="_______-d______"></span><span id="_______-D______"></span> **-d**   
 (Kernel mode only) After a reboot, the debugger will break into the target computer as soon as a kernel module is loaded. (This break is earlier than the break from the **-b** option.) See [Crashing and Rebooting the Target Computer](crashing-and-rebooting-the-target-computer.md) for details and for other methods of changing this status.
 
 <span id="_______-ee__masm_c___"></span><span id="_______-EE__MASM_C___"></span> **-ee** {**masm**|**c++**}  
-Sets the default expression evaluator. If **masm** is specified, MASM expression syntax will be used. If **c++** is specified, C++ expression syntax will be used. If the **-ee** option is omitted, MASM expression syntax is used as the default. See [Evaluating Expressions](evaluating-expressions.md) for details.
+Sets the default expression evaluator. If **masm** is specified, MASM expression syntax will be used. If **c++** is specified, C++ expression syntax will be used. If the **-ee** option is omitted, MASM expression syntax is used as the default. See [Evaluating Expressions](../debuggercmds/evaluating-expressions.md) for details.
 
 <span id="_______-failinc______"></span><span id="_______-FAILINC______"></span> **-failinc**   
 Causes the debugger to ignore any questionable symbols. When debugging a user-mode or kernel-mode minidump file, this option will also prevent the debugger from loading any modules whose images can't be mapped. For details and for other methods of controlling this, see [SYMOPT\_EXACT\_SYMBOLS](symbol-options.md#symopt-exact-symbols).
@@ -111,7 +111,7 @@ Specifies the location of the executables that generated the fault. If the path 
 Allow journaling.
 
 <span id="_______-k__ConnectType_"></span><span id="_______-k__connecttype_"></span><span id="_______-K__CONNECTTYPE_"></span> **-k** \[*ConnectType*\]  
-(Kernel mode only) Starts a kernel debugging session. For details, see [Live Kernel-Mode Debugging Using WinDbg](performing-kernel-mode-debugging-using-windbg.md). If **-k** is used without any *ConnectType* options following it, it must be the final entry on the command line.
+(Kernel mode only) Starts a kernel debugging session. For details, see [Live Kernel-Mode Debugging Using WinDbg (Classic)](performing-kernel-mode-debugging-using-windbg.md). If **-k** is used without any *ConnectType* options following it, it must be the final entry on the command line.
 
 <span id="_______-kl______"></span><span id="_______-KL______"></span> **-kl**   
 (Kernel mode only) Starts a kernel debugging session on the same machine as the debugger.
@@ -135,7 +135,7 @@ Sets the local source path for a remote client. This option must follow **-remot
 Prevents any priority change. This parameter will prevent WinDbg from taking priority for CPU time while active.
 
 <span id="_______-noshell______"></span><span id="_______-NOSHELL______"></span> **-noshell**   
-Prohibits all **.shell** commands. This prohibition will last as long as the debugger is running, even if a new debugging session is begun. For details, and for other ways to disable shell commands, see [Using Shell Commands](using-shell-commands.md).
+Prohibits all **.shell** commands. This prohibition will last as long as the debugger is running, even if a new debugging session is begun. For details, and for other ways to disable shell commands, see [Using Shell Commands](../debuggercmds/using-shell-commands.md).
 
 <span id="_______-o______"></span><span id="_______-O______"></span> **-o**   
 (User mode only) Debugs all processes launched by the target application (child processes). By default, processes created by the one you are debugging will run as they normally do.
@@ -150,7 +150,7 @@ Specifies the decimal process ID to be debugged. This is used to debug a process
 (User mode only) Prevents the debugger from requesting an initial break-in when attaching to a target process. This can be useful if the application is already suspended, or if you wish to avoid creating a break-in thread in the target.
 
 <span id="_______-pd______"></span><span id="_______-PD______"></span> **-pd**   
-(User mode only) Causes the target application not to be terminated at the end of the debugging session. See [Ending a Debugging Session in WinDbg](ending-a-debugging-session-in-windbg.md) for details.
+(User mode only) Causes the target application not to be terminated at the end of the debugging session. See [Ending a Debugging Session in WinDbg (Classic)](ending-a-debugging-session-in-windbg.md) for details.
 
 <span id="_______-pe______"></span><span id="_______-PE______"></span> **-pe**   
 (User mode only) Indicates that the target application is already being debugged. See [Re-attaching to the Target Application](reattaching-to-the-target-application.md) for details.
@@ -171,7 +171,7 @@ Specifies the break timeout, in seconds. The default is 30. See [Controlling the
 (User mode only) Specifies that the debugger should attach to the target process noninvasively. For details, see [Noninvasive Debugging (User Mode)](noninvasive-debugging--user-mode-.md).
 
 <span id="_______-Q______"></span><span id="_______-q______"></span> **-Q**   
-Suppresses the "Save Workspace?" dialog box. Workspaces are not automatically saved. See [Using Workspaces](using-workspaces.md) for details.
+Suppresses the "Save Workspace?" dialog box. Workspaces are not automatically saved. See [Using Workspaces - WinDbg (Classic)](using-workspaces.md) for details.
 
 <span id="_______-QS______"></span><span id="_______-qs______"></span> **-QS**   
 Suppresses the "Reload Source?" dialog box. Source files are not automatically reloaded.
@@ -180,7 +180,7 @@ Suppresses the "Reload Source?" dialog box. Source files are not automatically r
 Suppresses the "Reload Source?" dialog box and automatically reloads source files.
 
 <span id="_______-QY______"></span><span id="_______-qy______"></span> **-QY**   
-Suppresses the "Save Workspace?" dialog box and automatically saves workspaces. See [Using Workspaces](using-workspaces.md) for details.
+Suppresses the "Save Workspace?" dialog box and automatically saves workspaces. See [Using Workspaces - WinDbg (Classic)](using-workspaces.md) for details.
 
 <span id="_______-robp______"></span><span id="_______-ROBP______"></span> **-robp**   
 This allows CDB to set a breakpoint on a read-only memory page. (The default is for such an operation to fail.)
@@ -222,13 +222,13 @@ Sets WinDbg window title.
 Enables verbose output from debugger.
 
 <span id="_______-W_______Workspace______"></span><span id="_______-w_______workspace______"></span><span id="_______-W_______WORKSPACE______"></span> **-W** *Workspace*   
-Loads the given named workspace. If the workspace name contains spaces, enclose it in quotation marks. If no workspace of this name exists, you will be given the option of creating a new workspace with this name or abandoning the load attempt. For details, see [Using Workspaces](using-workspaces.md).
+Loads the given named workspace. If the workspace name contains spaces, enclose it in quotation marks. If no workspace of this name exists, you will be given the option of creating a new workspace with this name or abandoning the load attempt. For details, see [Using Workspaces - WinDbg (Classic)](using-workspaces.md).
 
 <span id="_______-WF_______Filename______"></span><span id="_______-wf_______filename______"></span><span id="_______-WF_______FILENAME______"></span> **-WF** *Filename*   
-Loads the workspace from the given file. *Filename* should include the file and the extension (usually .wew). If the workspace name contains spaces, enclose it in quotation marks. If no workspace file with this name exists, you will be given the option of creating a new workspace file with this name or abandoning the load attempt. For details, see [Using Workspaces](using-workspaces.md).
+Loads the workspace from the given file. *Filename* should include the file and the extension (usually .wew). If the workspace name contains spaces, enclose it in quotation marks. If no workspace file with this name exists, you will be given the option of creating a new workspace file with this name or abandoning the load attempt. For details, see [Using Workspaces - WinDbg (Classic)](using-workspaces.md).
 
 <span id="_______-WX______"></span><span id="_______-wx______"></span> **-WX**   
-Disables automatic workspace loading. For details, see [Using Workspaces](using-workspaces.md).
+Disables automatic workspace loading. For details, see [Using Workspaces - WinDbg (Classic)](using-workspaces.md).
 
 <span id="_______-y_______SymbolPath______"></span><span id="_______-y_______symbolpath______"></span><span id="_______-Y_______SYMBOLPATH______"></span> **-y** *SymbolPath*   
 Specifies the symbol search path. Separate multiple paths with a semicolon (**;**). If the path contains spaces, it should be enclosed in quotation marks. For details, and for other ways to change this path, see [Symbol Path](symbol-path.md).
@@ -237,7 +237,7 @@ Specifies the symbol search path. Separate multiple paths with a semicolon (**;*
 Specifies the name of a crash dump file to debug. If the path and file name contain spaces, this must be surrounded by quotation marks. It is possible to open several dump files at once by including multiple **-z** options, each followed by a different *DumpFile* value. For details, see [Analyzing a User-Mode Dump File](analyzing-a-user-mode-dump-file.md) or [Analyzing a Kernel-Mode Dump File with WinDbg](analyzing-a-kernel-mode-dump-file-with-windbg.md).
 
 <span id="_______-zp_______PageFile______"></span><span id="_______-zp_______pagefile______"></span><span id="_______-ZP_______PAGEFILE______"></span> **-zp** *PageFile*   
-Specifies the name of a modified page file. This is useful if you are debugging a dump file and want to use the [**.pagein (Page In Memory)**](-pagein--page-in-memory-.md) command. You cannot use **-zp** with a standard Windows page file -- only specially-modified page files can be used.
+Specifies the name of a modified page file. This is useful if you are debugging a dump file and want to use the [**.pagein (Page In Memory)**](../debuggercmds/-pagein--page-in-memory-.md) command. You cannot use **-zp** with a standard Windows page file -- only specially-modified page files can be used.
 
 <span id="_______executable______"></span><span id="_______EXECUTABLE______"></span> *executable*   
 Specifies the command line of an executable process. This is used to launch a new process and debug it. This has to be the final item on the command line. All text after the executable name is passed to the executable as its argument string. For details, see [Debugging a User-Mode Process Using WinDbg](debugging-a-user-mode-process-using-windbg.md).

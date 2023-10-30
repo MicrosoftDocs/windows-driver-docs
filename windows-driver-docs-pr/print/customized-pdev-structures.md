@@ -4,14 +4,12 @@ description: Customized PDEV Structures
 keywords:
 - rendering plug-ins WDK print , PDEV structures
 - PDEV WDK print
-ms.date: 04/20/2017
+ms.date: 01/27/2023
 ---
 
 # Customized PDEV Structures
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The rendering plug-ins implement three methods to support private PDEV structures. Unidrv rendering plug-ins must implement the following methods:
 
@@ -30,6 +28,3 @@ Pscript5 rendering plug-ins must implement the following methods:
 [**IPrintOemPS::ResetPDEV**](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemps-resetpdev)
 
 PDEV structure is a generic term. It refers to a private, locally defined structure for use by the module that defines it. Typically, it is used for storing physical device characteristics. Each printer driver, and each rendering plug-in, defines its own PDEV structure. There is no globally defined structure of type "PDEV".
-
- 
-

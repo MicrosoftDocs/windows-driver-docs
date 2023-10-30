@@ -19,7 +19,7 @@ However, you can activate and deactivate some options without rebooting. These a
 This section explains the volatile settings and how to use them on the versions of Driver Verifier included in different versions of Windows.
 
 > [!NOTE]
-> This option will be deprecated in a future release of Windows. A replacement option for Windows 11 is provided with the **/now** [Verifier Command](verifier-command-line.md).
+> This option will be deprecated in a future release of Windows. A replacement for Windows 11 is provided with the **/dif [<ruleclass_1> <ruleclass_2> ...] /now** option. See [Verifier Command Line](verifier-command-line.md).
 
 ### Changing Options Without Rebooting
 
@@ -34,7 +34,7 @@ As of Windows 11, only the following flags can be used with volatile:
 ```
 
 > [!NOTE]
-> A number of other flags in Windows 11 may be enabled without reboot using the **/now** command. The supported flags are described in [Verifier Command](verifier-command-line.md).
+> A number of other flags in Windows 11 may be enabled without reboot using the **/dif [<ruleclass_1> <ruleclass_2> ...] /now** command. The supported flags are described in [Verifier Command Line](verifier-command-line.md).
 
 As of Windows 10, only the following flags can be used with volatile:
 

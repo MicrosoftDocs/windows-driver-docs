@@ -1,29 +1,26 @@
 ---
-title: WIA\_IPS\_MAXIMUM\_PATCH\_CODE\_SEARCH\_RETRIES
-description: The WIA\_IPS\_MAXIMUM\_PATCH\_CODE\_SEARCH\_RETRIES property describes the maximum number of retries the reader attempts if no patch code can be found when patch code detection is enabled.
+title: WIA_IPS_MAXIMUM_PATCH_CODE_SEARCH_RETRIES
+description: The WIA_IPS_MAXIMUM_PATCH_CODE_SEARCH_RETRIES property describes the maximum number of retries the reader attempts if no patch code can be found when patch code detection is enabled.
 keywords: ["WIA_IPS_MAXIMUM_PATCH_CODE_SEARCH_RETRIES Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_MAXIMUM_PATCH_CODE_SEARCH_RETRIES
 api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 05/05/2023
 ---
 
-# WIA\_IPS\_MAXIMUM\_PATCH\_CODE\_SEARCH\_RETRIES
+# WIA_IPS_MAXIMUM_PATCH_CODE_SEARCH_RETRIES
 
+The **WIA_IPS_MAXIMUM_PATCH_CODE_SEARCH_RETRIES** property describes the maximum number of retries the reader attempts if no patch code can be found when patch code detection is enabled.
 
-The **WIA\_IPS\_MAXIMUM\_PATCH\_CODE\_SEARCH\_RETRIES** property describes the maximum number of retries the reader attempts if no patch code can be found when patch code detection is enabled.
+Property Type: VT_I4
 
-
-
-
-Property Type: VT\_I4
-
-Valid Values: WIA\_PROP\_RANGE
+Valid Values: WIA_PROP_RANGE
 
 Access Rights: Read/Write
 
@@ -33,24 +30,4 @@ This property is required for all Patch Code Reader items. The property can be i
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
-
- 
-
- 
-
-
-
-
-
+**Header:** wiadef.h (include Wiadef.h)

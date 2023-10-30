@@ -8,7 +8,7 @@ keywords:
 - WHEA WDK , querying system event log
 - Windows Hardware Error Architecture WDK , querying system event log
 - event log WDK WHEA
-ms.date: 02/03/2021
+ms.date: 03/03/2023
 ---
 
 # Querying the System Event Log for Hardware Error Events

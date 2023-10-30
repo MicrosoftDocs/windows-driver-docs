@@ -4,6 +4,7 @@ description: The KSPROPERTY\_GM\_GRAPHMANAGER property is not currently supporte
 keywords: ["KSPROPERTY_GM_GRAPHMANAGER Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_GM_GRAPHMANAGER
 api_type:

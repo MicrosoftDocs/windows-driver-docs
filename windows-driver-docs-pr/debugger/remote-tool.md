@@ -42,7 +42,7 @@ This section includes:
 
 [Remote Tool Examples](remote-tool-examples.md)
 
-## <span id="related_topics"></span>Related topics
+## <span id="related_topics"></span>See also
 
 
 [Tools Included in Debugging Tools for Windows](extra-tools.md)

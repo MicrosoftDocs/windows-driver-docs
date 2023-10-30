@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x19C WIN32K_POWER_WATCHDOG_TIMEOUT", "WIN32K_POWER_WATCHD
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIN32K_POWER_WATCHDOG_TIMEOUT
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The WIN32K\_POWER\_WATCHDOG\_TIMEOUT bug check has a value of 0x0000019C. This indicates that Win32k did not turn the monitor on in a timely manner.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## WIN32K\_POWER\_WATCHDOG\_TIMEOUT Parameters
@@ -78,7 +79,7 @@ The WIN32K\_POWER\_WATCHDOG\_TIMEOUT bug check has a value of 0x0000019C. This i
 </table>
 
 ## Resolution
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
 
 

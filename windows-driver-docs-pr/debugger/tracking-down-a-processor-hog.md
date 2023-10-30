@@ -21,7 +21,7 @@ Use the following procedure to correct a bug of this sort.
 
 2.  Attach WinDbg, KD, or CDB to this process.
 
-3.  **Identify which thread is causing the problem:** Break into the offending application. Use the [**!runaway 3**](-runaway.md) extension to take a "snapshot" of where all the CPU time is going. Use [**g (Go)**](g--go-.md) and wait a few seconds. Then break in and use **!runaway 3** again.
+3.  **Identify which thread is causing the problem:** Break into the offending application. Use the [**!runaway 3**](../debuggercmds/-runaway.md) extension to take a "snapshot" of where all the CPU time is going. Use [**g (Go)**](../debuggercmds/g--go-.md) and wait a few seconds. Then break in and use **!runaway 3** again.
 
     ```dbgcmd
     0:002> !runaway 3
@@ -53,7 +53,7 @@ Use the following procedure to correct a bug of this sort.
 
     Compare the two sets of numbers and look for the thread whose user-mode time or kernel-mode time has increased the most. Because **!runaway** sorts by descending CPU time, the offending thread is usually the one at the top of the list. In this case, thread 0x4E0 is causing the problem.
 
-4.  Use the [**~ (Thread Status)**](---thread-status-.md) and [**~s (Set Current Thread)**](-s--set-current-thread-.md) commands to make this the current thread:
+4.  Use the [**~ (Thread Status)**](../debuggercmds/---thread-status-.md) and [**~s (Set Current Thread)**](../debuggercmds/-s--set-current-thread-.md) commands to make this the current thread:
     ```dbgcmd
     0:001> ~
        0  Id: 3f4.3d4 Suspend: 1 Teb: 7ffde000 Unfrozen
@@ -63,7 +63,7 @@ Use the following procedure to correct a bug of this sort.
     0:001> ~2s
     ```
 
-5.  Use [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) to obtain a stack trace of this thread:
+5.  Use [**kb (Display Stack Backtrace)**](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) to obtain a stack trace of this thread:
     ```dbgcmd
     0:002> kb
     FramePtr  RetAddr   Param1   Param2   Param3   Function Name
@@ -79,7 +79,7 @@ Use the following procedure to correct a bug of this sort.
     0b4fff90  77e1ac1c  77e15eaf 00149210 0b4fffec RPCRT4!?ReceiveLotsaCalls@OSF_ADDRESS@@QAEXXZ+0x76
     ```
 
-6.  Set a breakpoint on the return address of the currently-running function. In this case, the return address is shown on the first line as 0x77F6C600. The return address is equivalent to the function offset shown on the second line (**BuggyProgram!OpenDestFileStream+0xB3**). If no symbols are available for the application, the function name may not appear. Use the [**g (Go)**](g--go-.md) command to execute until this return address is reached, using either the symbolic or hexadecimal address:
+6.  Set a breakpoint on the return address of the currently-running function. In this case, the return address is shown on the first line as 0x77F6C600. The return address is equivalent to the function offset shown on the second line (**BuggyProgram!OpenDestFileStream+0xB3**). If no symbols are available for the application, the function name may not appear. Use the [**g (Go)**](../debuggercmds/g--go-.md) command to execute until this return address is reached, using either the symbolic or hexadecimal address:
     ```dbgcmd
     0:002> g BuggyProgram!OpenDestFileStream+0xb3
     ```
@@ -121,7 +121,7 @@ Use the following procedure to correct a bug of this sort.
 
 8.  Finally you will find a breakpoint that is not hit. In this case, you should assume that the last **g** command set the target running and it did not break. This means that the **SaveMsgToDestFolder()** function will never return.
 
-9.  Break into the thread again and set a breakpoint on **BuggyProgram!SaveMsgToDestFolder+0xB3** with the [**bp (Set Breakpoint)**](bp--bu--bm--set-breakpoint-.md) command. Then use the **g** command repeatedly. If this breakpoint hits immediately, regardless of how many times you have executed the target, it is very likely that you have identified the offending function:
+9.  Break into the thread again and set a breakpoint on **BuggyProgram!SaveMsgToDestFolder+0xB3** with the [**bp (Set Breakpoint)**](../debuggercmds/bp--bu--bm--set-breakpoint-.md) command. Then use the **g** command repeatedly. If this breakpoint hits immediately, regardless of how many times you have executed the target, it is very likely that you have identified the offending function:
     ```dbgcmd
     0:002> bp BuggyProgram!SaveMsgToDestFolder+0xb3
 
@@ -130,7 +130,7 @@ Use the following procedure to correct a bug of this sort.
     0:002> g 
     ```
 
-10. Use the [**p (Step)**](p--step-.md) command to proceed through the function until you identify the place where the looping sequence of instructions are. You can then analyze the application's source code to identify the cause of the spinning thread. The cause will usually turn out to be a problem in the logic of a **while**, **do-while**, **goto**, or **for** loop.
+10. Use the [**p (Step)**](../debuggercmds/p--step-.md) command to proceed through the function until you identify the place where the looping sequence of instructions are. You can then analyze the application's source code to identify the cause of the spinning thread. The cause will usually turn out to be a problem in the logic of a **while**, **do-while**, **goto**, or **for** loop.
 
  
 

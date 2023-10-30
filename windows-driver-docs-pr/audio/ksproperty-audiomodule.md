@@ -4,14 +4,16 @@ description: The KSPROPERTY\_AUDIOMODULE enumeration defines constants that are 
 keywords: ["KSPROPERTY_AUDIOMODULE enumeration Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIOMODULE
 api_location:
 - ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 03/06/2023
 ---
+
 
 # KSPROPERTY\_AUDIOMODULE enumeration
 
@@ -22,7 +24,7 @@ For more information about audio modules, see [Implementing Audio Module Discove
 
 ## Syntax
 
-```ManagedCPlusPlus
+```cpp
 typedef enum  { 
   KSPROPERTY_AUDIOMODULE_DESCRIPTORS             = 1,
   KSPROPERTY_AUDIOMODULE_COMMAND                 = 2,

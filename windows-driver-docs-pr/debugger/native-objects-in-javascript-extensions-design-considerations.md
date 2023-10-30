@@ -89,7 +89,7 @@ For more information, see [Debugging Using CDB and NTSD](debugging-using-cdb-and
 
 Investigate the use of test automation that can verify the functionality of your extensions, as new versions of the debugger are released.
 
-## <span id="related_topics"></span>Related topics
+## <span id="related_topics"></span>See also
 
 [Native Debugger Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md)
 

@@ -4,6 +4,7 @@ description: Clients use KSPROPERTY_BDA_SIGNAL_PRESENT to determine whether a si
 keywords: ["KSPROPERTY_BDA_SIGNAL_PRESENT Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_BDA_SIGNAL_PRESENT
 api_location:

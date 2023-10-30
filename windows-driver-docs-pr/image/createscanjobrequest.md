@@ -4,15 +4,15 @@ description: The required CreateScanJobRequest operation prepares a scan device 
 keywords: ["CreateScanJobRequest element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn CreateScanJobRequest
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 04/21/2023
 ---
 
 # CreateScanJobRequest element
-
 
 The required **CreateScanJobRequest** operation prepares a scan device to scan.
 
@@ -34,31 +34,13 @@ None
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="destinationtoken.md" data-raw-source="[&lt;strong&gt;DestinationToken&lt;/strong&gt;](destinationtoken.md)"><strong>DestinationToken</strong></a></p></td>
-</tr>
-<tr class="even">
-<td><p><a href="scanidentifier.md" data-raw-source="[&lt;strong&gt;ScanIdentifier&lt;/strong&gt;](scanidentifier.md)"><strong>ScanIdentifier</strong></a></p></td>
-</tr>
-<tr class="odd">
-<td><p><a href="scanticket.md" data-raw-source="[&lt;strong&gt;ScanTicket&lt;/strong&gt;](scanticket.md)"><strong>ScanTicket</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**DestinationToken**](destinationtoken.md) |
+| [**ScanIdentifier**](scanidentifier.md) |
+| [**ScanTicket**](scanticket.md) |
 
 ## Parent elements
-
 
 There are no parent elements.
 
@@ -68,11 +50,15 @@ The WSD Scan Service must support the **CreateScanJobRequest** operation.
 
 The **CreateScanJobRequest** operation is the main mechanism to prepare a scan device to scan the images that are available to it. This operation can be initiated in two different methods. Each method will send different arguments to **CreateScanJobRequest**. The two methods and arguments are:
 
--   The user selects a destination and pushes the scan button at the device. In this method, the client sends a **CreateScanJobRequest** with the following child elements:
-    -   The ScanIdentifier element that the Scan Service returns to the client through ScanAvailableEvent. The Scan Service should check this identifier to ensure that the correct client is requesting the scan after the user has selected the destination.
-    -   The DestinationToken element that the WSD Scan Service returns to the client when it subscribed to receive ScanAvailableEvent events. The Scan Service should check that the correct client is requesting the scan by checking this token.
-    -   A ScanTicket element to control the processing of the scan. The values in the scan ticket are the default values that are set at the client before the user went to the device to initiate the scan.
--   The user starts an application on the client and acquires an image. In this method, the client sends **CreateScanJobRequest** with only the **ScanTicket** element.
+- The user selects a destination and pushes the scan button at the device. In this method, the client sends a **CreateScanJobRequest** with the following child elements:
+
+  - The ScanIdentifier element that the Scan Service returns to the client through ScanAvailableEvent. The Scan Service should check this identifier to ensure that the correct client is requesting the scan after the user has selected the destination.
+
+  - The DestinationToken element that the WSD Scan Service returns to the client when it subscribed to receive ScanAvailableEvent events. The Scan Service should check that the correct client is requesting the scan by checking this token.
+
+  - A ScanTicket element to control the processing of the scan. The values in the scan ticket are the default values that are set at the client before the user went to the device to initiate the scan.
+
+- The user starts an application on the client and acquires an image. In this method, the client sends **CreateScanJobRequest** with only the **ScanTicket** element.
 
 Certain elements within the **CreateScanJobRequest** hierarchy can contain the **MustHonor** Boolean attribute. If **MustHonor** is present and true, the WSD Scan Service must honor the requested element and its value or reject the scan job request. If an unsupported element does not have a **MustHonor** attribute, or if its **MustHonor** attribute is false, the WSD Scan Service must ignore it. If a supported element's **MustHonor** attribute is false, the WSD Scan Service must substitue the requested value with a supported one.
 
@@ -84,60 +70,50 @@ This operation can return all of the [**common WSD Scan Service operation error 
 
 **CreateScanJobRequest** can also return the following errors:
 
--   **ServerErrorNotAcceptingJobs** The server cannot accept a new scan job. This error might occur because the scanner has been put into service mode or because there is a user intervention condition and all the memory buffers have been exhausted. The client can try the unmodified request again at some later point in time with an expectation that the server has become unblocked and the scanner is accepting jobs again.
+- **ServerErrorNotAcceptingJobs** The server cannot accept a new scan job. This error might occur because the scanner has been put into service mode or because there is a user intervention condition and all the memory buffers have been exhausted. The client can try the unmodified request again at some later point in time with an expectation that the server has become unblocked and the scanner is accepting jobs again.
 
-    | Fault property | Definition                                                                         |
-    |----------------|------------------------------------------------------------------------------------|
-    | \[Code\]       | soap:Receiver                                                                      |
-    | \[Subcode\]    | wscn:ServerErrorNotAcceptingJobs                                                   |
-    | \[Reason\]     | The service is temporarily blocked and cannot accept new job or document requests. |
-    | \[Detail\]     | None                                                                               |
+    | Fault property | Definition |
+    |--|--|
+    | \[Code\] | soap:Receiver |
+    | \[Subcode\] | wscn:ServerErrorNotAcceptingJobs |
+    | \[Reason\] | The service is temporarily blocked and cannot accept new job or document requests. |
+    | \[Detail\] | None |
 
-     
+- **ClientErrorFormatNotSupported** The scanner does not support the supplied Format value.
 
--   **ClientErrorFormatNotSupported** The scanner does not support the supplied Format value.
+    | Fault property | Definition |
+    |--|--|
+    | \[Code\] | soap:Sender |
+    | \[Subcode\] | wscn:ClientErrorFormatNotSupported |
+    | \[Reason\] | The Document Format parameter value is not supported. |
+    | \[Detail\] | Optional. The Scan Service can return a list of supported formats. The data in this element should be of type &lt;wscn:FormatSupportedType&gt;. |
 
-    | Fault property | Definition                                                                                                                                      |
-    |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-    | \[Code\]       | soap:Sender                                                                                                                                     |
-    | \[Subcode\]    | wscn:ClientErrorFormatNotSupported                                                                                                              |
-    | \[Reason\]     | The Document Format parameter value is not supported.                                                                                           |
-    | \[Detail\]     | Optional. The Scan Service can return a list of supported formats. The data in this element should be of type &lt;wscn:FormatSupportedType&gt;. |
+- **ClientErrorInvalidScanIdentifier** The supplied ScanIdentifier value is not currently valid within the scan device.
 
-     
+    | Fault property | Definition |
+    |--|--|
+    | \[Code\] | soap:Sender |
+    | \[Subcode\] | wscn:ClientErrorInvalidScanIdentifier |
+    | \[Reason\] | The ScanIdentifier parameter value is not currently valid. |
+    | \[Detail\] | None |
 
--   **ClientErrorInvalidScanIdentifier** The supplied ScanIdentifier value is not currently valid within the scan device.
+- **ClientErrorInvalidDestinationToken** The supplied DestinationToken value is not valid for the scan device.
 
-    | Fault property | Definition                                                 |
-    |----------------|------------------------------------------------------------|
-    | \[Code\]       | soap:Sender                                                |
-    | \[Subcode\]    | wscn:ClientErrorInvalidScanIdentifier                      |
-    | \[Reason\]     | The ScanIdentifier parameter value is not currently valid. |
-    | \[Detail\]     | None                                                       |
+    | Fault property | Definition |
+    |--|--|
+    | \[Code\] | soap:Sender |
+    | \[Subcode\] | wscn:ClientErrorInvalidDestinationToken |
+    | \[Reason\] | The DestinationToken parameter value is not currently valid. |
+    | \[Detail\] | None |
 
-     
+- **ClientErrorNoImagesAvailable** The server can't accept a new scan job because there is no media to be scanned. For example, this error is generated when a scan job is executed from the Automatic Document Feeder attached to the scanner, and the feeder is empty. The client can try the unmodified request again later, with the expectation that the condition was fixed and the scanner now has media to be scanned.
 
--   **ClientErrorInvalidDestinationToken** The supplied DestinationToken value is not valid for the scan device.
-
-    | Fault property | Definition                                                   |
-    |----------------|--------------------------------------------------------------|
-    | \[Code\]       | soap:Sender                                                  |
-    | \[Subcode\]    | wscn:ClientErrorInvalidDestinationToken                      |
-    | \[Reason\]     | The DestinationToken parameter value is not currently valid. |
-    | \[Detail\]     | None                                                         |
-
-     
-
--   **ClientErrorNoImagesAvailable** The server can’t accept a new scan job because there is no media to be scanned. For example, this error is generated when a scan job is executed from the Automatic Document Feeder attached to the scanner, and the feeder is empty. The client can try the unmodified request again later, with the expectation that the condition was fixed and the scanner now has media to be scanned.
-
-    | Fault property | Definition                                     |
-    |----------------|------------------------------------------------|
-    | \[Code\]       | soap:Sender                                    |
-    | \[Subcode\]    | wscn:ClientErrorNoImagesAvailable              |
-    | \[Reason\]     | The server has no images available to acquire. |
-    | \[Detail\]     | None                                           |
-
-     
+    | Fault property | Definition |
+    |--|--|
+    | \[Code\] | soap:Sender |
+    | \[Subcode\] | wscn:ClientErrorNoImagesAvailable |
+    | \[Reason\] | The server has no images available to acquire. |
+    | \[Detail\] | None |
 
 ## Examples
 
@@ -252,7 +228,6 @@ The following code example shows a scan job request when the scan is initiated f
 
 ## See also
 
-
 [**ColorProcessing**](colorprocessing.md)
 
 [**CompressionQualityFactor**](compressionqualityfactor.md)
@@ -294,13 +269,3 @@ The following code example shows a scan job request when the scan is initiated f
 [**ScanRegionYOffset**](scanregionyoffset.md)
 
 [**ScanTicket**](scanticket.md)
-
- 
-
- 
-
-
-
-
-
-

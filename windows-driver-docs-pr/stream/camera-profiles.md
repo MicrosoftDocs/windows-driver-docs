@@ -1,6 +1,6 @@
 ---
 title: Camera Profiles
-description: This topic discusses the format of camera profiles and various ways to define them
+description: This article discusses the format of camera profiles and various ways to define them
 ms.date: 08/16/2019
 ---
 
@@ -26,15 +26,15 @@ KsInitializeDeviceProfile(
 #### FilterFactory (KSFILTERFACTORY)
 
 This is the KSFILTERFACTORY that was created by the camera driver to
-uniquely identify the camera’s filter factory.
+uniquely identify the camera's filter factory.
 
-It is required that the ReferenceGuid field of the KSFILTER\_DESCRIPTOR
+It's required that the ReferenceGuid field of the KSFILTER\_DESCRIPTOR
 structure contained with the KSFILTERFACTORY be set with a unique GUID
 for this filter type. And the Flags field of the KSFILTER\_DESCRIPTOR
 has the KSFILTER\_FLAG\_PRIORITIZE\_REFERENCEGUID flag set.
 
-If the provided KSFILTERFACTORY does not contain a device interface
-associated with the KSCATEGORY\_VIDEO\_CAMERA, this API call will fail
+If the provided KSFILTERFACTORY doesn't contain a device interface
+associated with the KSCATEGORY\_VIDEO\_CAMERA, this API call fails
 with STATUS\_INVALID\_PARAMETER.
 
 To delete all profiles from the profile store associated with the device
@@ -59,11 +59,11 @@ KsPublishDeviceProfile(
     );
 ```
 
-This API will be called repeatedly for each profile the camera driver
+This API is called repeatedly for each profile the camera driver
 supports. Each call may have different set of concurrency and data range
 information. The ProfileId field of the KSCAMERA\_PROFILE\_INFO must be
 unique. If the same ProfileId is used and the content of the profile
-information is different, the subsequent call will overwrite the earlier
+information is different, the subsequent call overwrites the earlier
 profile information.
 
 #### FilterFactory (KSFILTERFACTORY)
@@ -128,7 +128,7 @@ Concurrency array. For Windows Threshold this must be less than or
 equal 1.
 >
 A value of 0 (with Camera.Concurrency set to NULL), indicates this
-profile is non-concurrent.
+profile is nonconcurrent.
 
 ***Camera.Concurrency***
 
@@ -156,12 +156,12 @@ typedef struct _KSCAMERA_PROFILE_INFO
 
 GUID representing a unique ID for the Profile. This GUID may be a
 unique IHV/OEM created GUID representing a custom profile or it may be
-one of the pre-defined GUIDs described in section 3.1.
+one of the predefined GUIDs described in section 3.1.
 
 NOTE: This field must NOT be set to KSCAMERAPROFILE\_Legacy. The
 Legacy profile must not be published by the camera driver. The Legacy
-profile ID will be sent to the camera driver during Capture
-Engine/Media Capture initialization if the application has not
+profile ID is sent to the camera driver during Capture
+Engine/Media Capture initialization if the application hasn't
 indicated that it can support profiles. In such cases, the camera
 driver must revert its behavior to the Windows 8.1 mode of operation
 and expose only the Reduced Set Media Types along with the
@@ -195,18 +195,17 @@ This field must not be NULL.
 
 Currently, an application has no knowledge as to whether it can attempt
 to stream from more than one camera until the attempt succeeds or fails.
-In the case of Web Blogging scenario, this means the application will
-have to attempt to activate both streams before it paints the UI with a
+In the case of Web Blogging scenario, this means the application has to attempt to activate both streams before it paints the UI with a
 picture in picture video element.
 
-The Concurrency parameter will provide a hint to the application that
+The Concurrency parameter provides a hint to the application that
 both front and back cameras can be activated at the same time using a
 specific profile (or set of profiles). With this knowledge, the
 application can draw the UI elements for both streams before activating
 them.
 
-For multiple applications, Concurrency will not be sufficient to
-guarantee concurrent operation. The Concurrency information will not
+For multiple applications, Concurrency won't be sufficient to
+guarantee concurrent operation. The Concurrency information won't
 attempt to solve this scenario. Instead, the existing Camera Yanking
 feature of Windows 8 will be leveraged.
 
@@ -218,7 +217,7 @@ may run simultaneously on different cameras.
 
 If both Camera.CountOfConcurrency and the Camera.Concurrency fields are
 0 & NULL respectively, it indicates to the OS that the profile defined
-by the KSCAMERA\_PROFILE\_INFO is not a concurrent profile.
+by the KSCAMERA\_PROFILE\_INFO isn't a concurrent profile.
 
 ```c
 typedef struct _KSCAMERA_PROFILE_CONCURRENCYINFO
@@ -273,7 +272,7 @@ typedef struct _KSCAMERA_PROFILE_PININFO
 This is the PINNAME category corresponding to Capture, Preview or
 Still image pin. For Windows Threshold, the only supported pin
 categories are: PINNAME\_VIDEO\_CAPTURE, PINNAME\_VIDEO\_PREVIEW,
-PINNAME\_VIDEO\_STILL. All other categories will result in an
+PINNAME\_VIDEO\_STILL. All other categories result in an
 STATUS\_INVALID\_PARAMETER error.
 
 ***Reserved***
@@ -324,14 +323,14 @@ The X (horizontal) and Y (vertical) frame size in pixels.
 
 ***MaxFrameRate***
 
-The num/denom ratio of frame rate (e.g., 30 / 1 = 30fps). This frame
+The num/denom ratio of frame rate (for example, 30 / 1 = 30 fps). This frame
 rate represents the maximum frame rate of the specified resolution
 under ideal lighting conditions. Actual frame rate may be lower than
 this value.
 
-For photo media information, if photo sequence cannot be enabled
+For photo media information, if photo sequence can't be enabled
 because of hardware constraints for the given photo resolution, the
-frame rate must be set to 0 (num=0,denom=0). This will inform the
+frame rate must be set to 0 (num=0,denom=0). This informs the
 application layer that photo sequence control will be rejected by the
 driver when that particular photo media type is selected.
 
@@ -346,23 +345,23 @@ May be bitwise OR of one or more of the following flags:
   This flag may not be set for media info on the photo pin.
 - **KSCAMERAPROFILE\_FLAGS\_VARIABLEPHOTOSEQUENCE**
   When the Variable Photo Sequence flag is set for the media info, VPS
-  support is available even if the photo media info does not provide a
+  support is available even if the photo media info doesn't provide a
   frame rate.
 
-  If this flag is set & frame rate is non-zero, for that photo media
+  If this flag is set & frame rate is nonzero, for that photo media
   info, VPS and Photo Sequence is available.
 
   If this flag is set & frame rate is zero, for that photo media info,
   VPS is available but not Photo Sequence.
 
-  If this flag is not set & frame rate is non-zero, for that photo media
-  info, VPS is not available but Photo Sequence is available.
+  If this flag isn't set & frame rate is nonzero, for that photo media
+  info, VPS isn't available but Photo Sequence is available.
 
-  If this flag is not set & frame rate is zero, neither VPS nor Photo
+  If this flag isn't set & frame rate is zero, neither VPS nor Photo
   Sequence is available for that media info.
 
   This flag may only be set for media info on the photo pin. Presence of
-  this flag on non-photo pin media info will result in the profile set
+  this flag on nonphoto pin media info results in the profile set
   being rejected.
 
 ***Data0…3***
@@ -389,7 +388,7 @@ KsPersistDeviceProfile(
 This is the KSFILTERFACTORY that was used to initialize the profile
 store in KsInitializeDeviceProfile. If KsPersistDeviceProfile is called
 without first initializing the profile store with
-KsInitializeDeviceProfile the call to KsPersistDeviceProfile will fail
+KsInitializeDeviceProfile the call to KsPersistDeviceProfile fails
 with STATUS\_INVALID\_DEVICE\_REQUEST.
 
 Furthermore, this API may also fail with STATUS\_INSUFFICIENT\_RESOURCE
@@ -472,7 +471,7 @@ Unused. Must be 0.
 
 ## INF Profile
 
-To allow OEMs the flexibility, based on different SKUs which may use the
+To allow OEMs the flexibility, based on different SKUs that may use the
 same reference driver but different sensors (or even in the case of
 different performance levels), the profiles can be published or
 overridden by using the following INF sections:
@@ -486,7 +485,7 @@ OEMCameraProfiles: REG_SZ:
 KSCAMERAPROFILE_VideoRecording,0;KSCAMERAPROFILE_HighQualityPhoto,0;KSCAMERAPROFILE_BalancedVideoPhoto,0;KSCAMERAPROFILE_VideoConferencing,0;{3074C75C-1D69-4A0A-895D-EB9EFDE1CF30},0
 ```
 
-In the example above, we are overriding the 0<sup>th</sup> indexed,
+In the example above, we're overriding the 0<sup>th</sup> indexed,
 KSCAMERAPROFILE\_VideoRecording, KSCAMERAPROFILE\_HighQualityPhoto,
 KSCAMERAPROFILE\_BalancedVideoPhoto and
 KSCAMERAPROFILE\_VideoConferencing along with a new custom profile with
@@ -522,8 +521,8 @@ MediaN-1: REG_SZ: <MediaInfo Format>
 
 MediaCount registry value indicates the number of MediaInfo present for
 this pin. Each MediaInfo must be given a registry entry name of
-“Media\#” where \ represents a 0 based index of N count (i.e.,
-Media0, Media1, Media2,…,MediaN-1).
+"Media\#" where \ represents a 0 based index of N count (for example,
+Media0, Media1, Media2 ...,MediaN-1).
 
 The MediaInfo specified by Media0 will be treated as the Preferred Media
 Type for the profile.
@@ -552,13 +551,13 @@ Media1: REG_SZ: 1920,1080,30,1,0,0,0,0,0
 Media2: REG_SZ: 640,360,30,1,0,0,0,0,0
 ```
 
-Will publish the VideoRecording profile from the IHV’s setting to only
+Will publish the VideoRecording profile from the IHV's setting to only
 allow 1080p, 720p, 360p recording (with the 720p made the Preferred
 Media Type) while allowing only 720p and 360p previews without any photo
 support.
 
 To define a custom profile, the same syntax may be used, but with the
-profile name being replaced with the custom profile’s GUID ID:
+profile name being replaced with the custom profile's GUID ID:
 
 ```reg
 <Device Interface
@@ -583,15 +582,15 @@ Media1: REG_SZ: 1280,720,0,0,0,0,0,0,0
 
 The modification to the registry can be handled in any manner suitable
 for the OEM. The recommended process is to create an AddReg section to
-the camera driver’s INF file so that the registry entries can be created
+the camera driver's INF file so that the registry entries can be created
 during camera installation (and removed when the driver is removed):
 
 ```INF
 [SampleDriver.DeviceInterface.AddReg]
-HKR,,”OEMCameraProfiles”,0,”KSCAMERAPROFILE_VideoRecording,0”,
-HKR,”KSCAMERAPROFILE_VideoRecording,0\PINNAME_VIDEO_PREVIEW”,”MediaCount”,0x00010001,2,
-HKR,”KSCAMERAPROFILE_VideoRecording,0\PINNAME_VIDEO_PREVIEW”,”Media0”,0,”1280,720,30,1,0,0,0,0,0”,
-HKR,”KSCAMERAPROFILE_VideoRecording,0\PINNAME_VIDEO_PREVIEW”,”Media1”,0,”640,360,30,1,0,0,0,0,0”,
+HKR,,"OEMCameraProfiles",0,"KSCAMERAPROFILE_VideoRecording,0",
+HKR,"KSCAMERAPROFILE_VideoRecording,0\PINNAME_VIDEO_PREVIEW","MediaCount",0x00010001,2,
+HKR,"KSCAMERAPROFILE_VideoRecording,0\PINNAME_VIDEO_PREVIEW","Media0",0,"1280,720,30,1,0,0,0,0,0",
+HKR,"KSCAMERAPROFILE_VideoRecording,0\PINNAME_VIDEO_PREVIEW","Media1",0,"640,360,30,1,0,0,0,0,0",
 ```
 
 …
@@ -659,17 +658,17 @@ limited to only 720p30 for both preview and record with no photo
 support.
 
 The PhotoSequence for the front camera is also disabled (overriding the
-IHV’s published profile).
+IHV's published profile).
 
 HighQualityPhoto profile is limited to 720p preview with 1080p single
-shot or 720p photo at 5fps.
+shot or 720p photo at 5 fps.
 
 The VideoConferencing profile is limited to just 720p30 for both preview
 and capture while indicating that it can be concurrently run with the
-rear camera’s VideoConferencing profile (the rear camera’s
-VideoConferencing profile is not shown in the INF—if not specified in
-the INF, the rear camera’s VideoConferencing profile will use whatever
-the IHV published or if it’s not present, profiles will be disabled
+rear camera's VideoConferencing profile (the rear camera's
+VideoConferencing profile isn't shown in the INF—if not specified in
+the INF, the rear camera's VideoConferencing profile uses whatever
+the IHV published or if it's not present, profiles are disabled
 since the above override is invalid).
 
 ## INF vs. KS API Profile

@@ -4,6 +4,7 @@ description: The KSEVENTSETID\_StreamAllocator event set specifies two events.
 keywords: ["KSEVENTSETID_StreamAllocator Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSEVENTSETID_StreamAllocator
 api_type:

@@ -4,6 +4,7 @@ description: The KSPROPERTY\_TUNER\_STATUS property retrieves information about 
 keywords: ["KSPROPERTY_TUNER_STATUS Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_TUNER_STATUS
 api_location:

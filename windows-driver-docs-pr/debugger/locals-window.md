@@ -1,11 +1,11 @@
 ---
-title: Viewing and Editing Local Variables in WinDbg
+title: Viewing and Editing Local Variables in WinDbg (Classic)
 description: In WinDbg, you can view local variables by entering commands, by using the Locals window, or by using the Watch window.
 keywords: ["debugging information windows, Locals window", "Locals window", "memory, Locals window"]
 ms.date: 05/23/2017
 ---
 
-# Viewing and Editing Local Variables in WinDbg
+# Viewing and Editing Local Variables in WinDbg (Classic)
 
 
 In WinDbg, you can view local variables by entering commands, by using the Locals window, or by using the Watch window.
@@ -13,7 +13,7 @@ In WinDbg, you can view local variables by entering commands, by using the Local
 ## <span id="Debugger_Command_Window"></span><span id="debugger_command_window"></span><span id="DEBUGGER_COMMAND_WINDOW"></span>Debugger Command Window
 
 
-You can view local variables and parameters by entering the [**dv**](dv--display-local-variables-.md) command or the [**dt**](dt--display-type-.md) command in the Debugger Command window.
+You can view local variables and parameters by entering the [**dv**](../debuggercmds/dv--display-local-variables-.md) command or the [**dt**](../debuggercmds/dt--display-type-.md) command in the Debugger Command window.
 
 ## <span id="ddk_locals_window_dbg"></span><span id="DDK_LOCALS_WINDOW_DBG"></span>Opening the Locals Window
 
@@ -37,18 +37,18 @@ In the Locals window, you can do the following:
 
 -   The **Value** column displays the current value of each variable.
 
-    -   To enter a new value for the variable, double-click the current value and type the new value, or edit the old value. (The cut, copy, and paste commands are available to use for editing.) You can type any [C++ expression](c---numbers-and-operators.md).
+    -   To enter a new value for the variable, double-click the current value and type the new value, or edit the old value. (The cut, copy, and paste commands are available to use for editing.) You can type any [C++ expression](../debuggercmds/c---numbers-and-operators.md).
     -   To save the new value, press ENTER.
     -   To discard the new value, press ESC.
     -   If you type an invalid value, the old value will reappear when you press ENTER.
 
-    Integers of type **int** are displayed as decimal values; integers of type **UINT** are displayed in the current radix. To change the current radix, use the [**n (Set Number Base)**](n--set-number-base-.md) command in the Debugger Command window.
+    Integers of type **int** are displayed as decimal values; integers of type **UINT** are displayed in the current radix. To change the current radix, use the [**n (Set Number Base)**](../debuggercmds/n--set-number-base-.md) command in the Debugger Command window.
 
 -   The **Type** column (if it is displayed in the Locals window) shows the current data type of each variable. Each variable is displayed in the format that is proper for its own data type. Data structures have their type names in the **Type** column. Other variable types display "Enter new type" in this column.
 
     If you double-click "Enter new type", you can cast the type by entering a new data type. This cast alters the current display of this variable only in the Locals window; it does not change anything in the debugger or on the target computer. Moreover, if you enter a new value in the **Value** column, the text you enter will be parsed based on the actual type of the symbol, rather than any new type you may have entered in the **Type** column. If you close and reopen the Locals window, you will lose the data type changes.
 
-    You can also enter an extension command in the **Type** column. The debugger will pass the address of the symbol to this extension, and will display the resulting output in a series of collapsible rows beneath the current row. For example, if the symbol in this row is a valid address for a thread environment block, you can enter **!teb** in the **Type** column to run the [**!teb**](-teb.md) extension on this symbol's address.
+    You can also enter an extension command in the **Type** column. The debugger will pass the address of the symbol to this extension, and will display the resulting output in a series of collapsible rows beneath the current row. For example, if the symbol in this row is a valid address for a thread environment block, you can enter **!teb** in the **Type** column to run the [**!teb**](../debuggercmds/-teb.md) extension on this symbol's address.
 
 -   The **Location** column (if it is displayed in the Locals window) shows the offset of each member of a data structure.
 
@@ -62,17 +62,17 @@ The Locals window has a toolbar that contains two buttons (**Typecast** and **Lo
 
 -   (Toolbar and menu) **Locations** turns the display of the **Location** column on and off.
 
--   (Menu only) **Display 16-bit values as Unicode** displays Unicode strings in this window. This command turns on and off a global setting that affects the Locals window, the Watch window, and debugger command output. This command is equivalent to using the [**.enable\_unicode (Enable Unicode Display)**](-enable-unicode--enable-unicode-display-.md) command.
+-   (Menu only) **Display 16-bit values as Unicode** displays Unicode strings in this window. This command turns on and off a global setting that affects the Locals window, the Watch window, and debugger command output. This command is equivalent to using the [**.enable\_unicode (Enable Unicode Display)**](../debuggercmds/-enable-unicode--enable-unicode-display-.md) command.
 
--   (Menu only) **Always display numbers in default radix** causes integers to be displayed in the default radix instead of displaying them in decimal format. This command turns on and off a global setting that affects the Locals window, the Watch window, and debugger command output. This command is equivalent to using the [**.force\_radix\_output (Use Radix for Integers)**](-force-radix-output--use-radix-for-integers-.md) command.
+-   (Menu only) **Always display numbers in default radix** causes integers to be displayed in the default radix instead of displaying them in decimal format. This command turns on and off a global setting that affects the Locals window, the Watch window, and debugger command output. This command is equivalent to using the [**.force\_radix\_output (Use Radix for Integers)**](../debuggercmds/-force-radix-output--use-radix-for-integers-.md) command.
 
-    **Note**   The **Always display numbers in default radix** command does not affect long integers. Long integers are displayed in decimal format unless the [**.enable\_long\_status (Enable Long Integer Display)**](-enable-long-status--enable-long-integer-display-.md) command is set. The **.enable\_long\_status** command affects the display in the Locals window, the Watch window, and in debugger command output; there is no equivalent for this command in the menu in the Locals window.
+    **Note**   The **Always display numbers in default radix** command does not affect long integers. Long integers are displayed in decimal format unless the [**.enable\_long\_status (Enable Long Integer Display)**](../debuggercmds/-enable-long-status--enable-long-integer-display-.md) command is set. The **.enable\_long\_status** command affects the display in the Locals window, the Watch window, and in debugger command output; there is no equivalent for this command in the menu in the Locals window.
 
      
 
 -   (Menu only) **Open memory window for selected value** opens a new docked Memory window that displays memory starting at the address of the selected expression.
 
--   (Menu only) **Invoke dt for selected memory value** runs the [**dt (Display Type)**](dt--display-type-.md) command with the selected symbol as its parameter. The result appears in the Debugger Command window. The **-n** option is automatically used to differentiate the symbol from a hexadecimal address. No other options are used. Note that the content that is produced by using this menu selection is identical to the content produced when running the **dt** command from the command line, but the format is slightly different.
+-   (Menu only) **Invoke dt for selected memory value** runs the [**dt (Display Type)**](../debuggercmds/dt--display-type-.md) command with the selected symbol as its parameter. The result appears in the Debugger Command window. The **-n** option is automatically used to differentiate the symbol from a hexadecimal address. No other options are used. Note that the content that is produced by using this menu selection is identical to the content produced when running the **dt** command from the command line, but the format is slightly different.
 
 -   (Menu only) **Toolbar** turns the toolbar on and off.
 
@@ -84,7 +84,7 @@ The Locals window has a toolbar that contains two buttons (**Typecast** and **Lo
 
 -   (Menu only) **Always floating** causes the window to remain undocked even if it is dragged to a docking location.
 
--   (Menu only) **Move with frame** causes the window to move when the WinDbg frame is moved, even if the window is undocked. For more information about docked, tabbed, and floating windows, see [Positioning the Windows](positioning-the-windows.md).
+-   (Menu only) **Move with frame** causes the window to move when the WinDbg frame is moved, even if the window is undocked.
 
 -   (Menu only) **Help** opens this topic in the Debugging Tools for Windows documentation.
 

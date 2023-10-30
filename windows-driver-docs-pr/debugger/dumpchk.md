@@ -1,76 +1,72 @@
 ---
 title: DumpChk
-description: DumpChk
+description: Learn about DumpChk (the Microsoft Crash Dump File Checker tool), which is a program that performs a quick analysis of a crash dump file.
 keywords: ["DumpChk"]
-ms.date: 09/17/2017
+ms.date: 03/07/2023
 ---
 
 # DumpChk
 
+**DumpChk** (the Microsoft Crash Dump File Checker tool) is a program that performs a quick analysis of a crash dump file. This tool enables you to see summary information about what the dump file contains. You can use **DumpChk** to find dump files that are corrupt and can't be opened by a debugger.
 
-DumpChk (the Microsoft Crash Dump File Checker tool) is a program that performs a quick analysis of a crash dump file. This enables you to see summary information about what the dump file contains. If the dump file is corrupt in such a way that it cannot be opened by a debugger, DumpChk reveals this fact.
+## Where to get DumpChk
 
-## <span id="Where_to_get_DumpChk"></span><span id="where_to_get_dumpchk"></span><span id="WHERE_TO_GET_DUMPCHK"></span>Where to get DumpChk
+**DumpChk.exe** is included in [Debugging Tools for Windows](index.md).
 
-
-DumpChk.exe is included in [Debugging Tools for Windows](index.md).
-
-## <span id="DumpChk_command-line_options"></span><span id="dumpchk_command-line_options"></span><span id="DUMPCHK_COMMAND-LINE_OPTIONS"></span>DumpChk command-line options
-
+## DumpChk command-line options
 
 ```dbgcmd
 DumpChk [-y SymbolPath] DumpFile
 ```
 
-### <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+### Parameters
 
-<span id="_______-y________SymbolPath______"></span><span id="_______-y________symbolpath______"></span><span id="_______-Y________SYMBOLPATH______"></span> **-y** *SymbolPath*   
-*SymbolPath* specifies where DumpChk is to search for symbols. Symbol information may be necessary for some dump files. It can also help to improve the information shown in the dump file by allowing symbol names to be resolved.
+**-y SymbolPath**  
+*SymbolPath* specifies where **DumpChk** is to search for symbols. Symbol information might be necessary for some dump files. It can also help to improve the information shown in the dump file by allowing symbol names to be resolved.
 
-<span id="_______DumpFile______"></span><span id="_______dumpfile______"></span><span id="_______DUMPFILE______"></span> *DumpFile*   
-*DumpFile* specifies the crash dump file that is to be analyzed. This may include an absolute or relative directory path or universal naming convention (UNC) path. If *DumpFile* contains spaces, it must be enclosed in quotation marks.
+**DumpFile**  
+*DumpFile* specifies the crash dump file that's to be analyzed. It might include an absolute or relative directory path or a universal naming convention (UNC) path. If *DumpFile* contains spaces, it must be enclosed in quotation marks.
 
-## <span id="Using_DumpChk"></span><span id="using_dumpchk"></span><span id="USING_DUMPCHK"></span>Using DumpChk
+## How to use DumpChk
 
-
-Here is an example in which the dump file is corrupt. The error shown at the end, `DebugClient cannot open DumpFile`, indicates that some kind of corruption must have occurred:
+The following example shows a corrupt dump file. The error shown at the end, `DebugClient cannot open DumpFile`, indicates that some kind of corruption must have occurred.
 
 ```console
-C:\Debuggers> dumpchk c:\mydir\dumpfile2.dmp 
+C:\Debuggers> dumpchk C:\mydir\dumpfile2.dmp 
 
-Loading dump file c:\mydir\dumpfile2.dmp
+Loading dump file C:\mydir\dumpfile2.dmp
 
 Microsoft (R) Windows Debugger Version 6.9.0003.113 X86
 Copyright (C) Microsoft. All rights reserved.
 
 
-Loading Dump File [c:\mydir\dumpfile2.dmp]
+Loading Dump File [C:\mydir\dumpfile2.dmp]
 Could not match Dump File signature - invalid file format
-Could not open dump file [c:\mydir\dumpfile2.dmp], HRESULT 0x80004002
+Could not open dump file [C:\mydir\dumpfile2.dmp], HRESULT 0x80004002
     "No such interface supported"
 **** DebugClient cannot open DumpFile - error 80004002   
 ```
 
-Because this display does not end with the words `Finished dump check`, the dump file is corrupt. The error message at the end explains that the dump file could not be opened.
+The `DebugClient cannot open DumpFile` error message at the end shows that the dump file couldn't be opened. If the dump file wasn't corrupt, this display would end with the words `Finished dump check`.
 
-Note that other errors may be listed, some of which are actually benign. For example, the following error message does not represent a problem:
+Other errors might be listed, some of which are benign. For example, the following error message doesn't represent a problem:
 
 ```dbgcmd
 error 3 InitTypeRead( nt!_PEB at 7ffd5000) 
 ```
 
-Here is an example of DumpChk run on a healthy user-mode minidump. The display begins with an overall summary of the dump file, and then gives detailed information about what data is contained in the dump file:
+The following example shows **DumpChk** run on a healthy user-mode minidump. The display begins with an overall summary of the dump file and then gives detailed information about what data is contained in the dump file:
 
 ```console
-C:\Debuggers> dumpchk c:\mydir\dumpfile1.dmp 
+C:\Debuggers> dumpchk C:\mydir\dumpfile1.dmp 
 
-Loading dump file c:\mydir\dumpfile1.dmp
+Loading dump file C:\mydir\dumpfile1.dmp
 
 Microsoft (R) Windows Debugger Version 6.9.0003.113 X86
 Copyright (C) Microsoft. All rights reserved.
 
 
-Loading Dump File [c:\mydir\dumpfile1.dmp]
+Loading Dump File [C:\mydir\dumpfile1.dmp]
 User Mini Dump File with Full Memory: Only application data is available
 
 Symbol search path is: srv*C:\CODE\LocalStore*\\symbols\symbols
@@ -192,21 +188,10 @@ PEB at 7ffd9000
 Finished dump check
 ```
 
-The output begins by identifying the characteristics of the dump file - in this case, a user-mode minidump with full memory information, including application data but not operating-system data. This is followed by the symbol path being used by DumpChk, and then a summary of the dump file contents.
+The output begins by identifying the characteristics of the dump file. In this case, a **user-mode** minidump with full memory information, including application data but not operating-system data. The symbol path that's being used by **DumpChk** follows, and then a summary of the dump file contents.
 
-Because this display ends with the words `Finished dump check`, the dump file is probably not corrupt, and can be opened by a debugger. However, more subtle forms of corrruption might still be present in the file.
+Because this display ends with the words `Finished dump check`, the dump file is probably not corrupt and can be opened by a debugger. However, more subtle forms of corruption might still be present in the file.
 
-## <span id="related_topics"></span>Related topics
+## See also
 
-
-[Tools Included in Debugging Tools for Windows](extra-tools.md)
-
- 
-
- 
-
-
-
-
-
-
+[Tools included in Debugging Tools for Windows](extra-tools.md)

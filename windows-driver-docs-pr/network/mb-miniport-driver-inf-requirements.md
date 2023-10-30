@@ -2,6 +2,7 @@
 title: MB Miniport Driver INF Requirements
 description: MB Miniport Driver INF Requirements
 ms.date: 04/20/2017
+ms.custom: UpdateFrequency3
 ---
 
 # MB Miniport Driver INF Requirements

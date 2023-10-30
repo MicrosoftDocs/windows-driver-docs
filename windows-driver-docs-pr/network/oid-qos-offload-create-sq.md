@@ -1,5 +1,6 @@
 ---
 title: OID_QOS_OFFLOAD_CREATE_SQ
+ms.topic: reference
 description: A driver issues OID_QOS_OFFLOAD_CREATE_SQ to create a new Scheduler Queue (SQ) on the miniport adapter
 ms.assetid:
 ms.date: 10/30/2020

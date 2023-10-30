@@ -2,6 +2,7 @@
 title: MB USSD Operations
 description: Describes the operations to send and receive messages using the Unstructured Supplementary Service Data (USSD) capabilities of an MB device
 ms.date: 04/20/2017
+ms.custom: UpdateFrequency3
 ---
 
 # MB USSD Operations

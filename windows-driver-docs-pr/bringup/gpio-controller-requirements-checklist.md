@@ -1,7 +1,7 @@
 ---
 title: GPIO controller requirements checklist
 description: This topic summarizes the hardware, firmware, and software requirements for General Purpose IO (GPIO) controller devices that are exposed to Windows.
-ms.date: 08/18/2021
+ms.date: 03/23/2023
 ---
 
 # GPIO controller requirements checklist
@@ -32,11 +32,11 @@ This topic summarizes the hardware, firmware, and software requirements for Gene
 
 - GPIO controller _CRS resource ordering provides bank-to-system interrupt mapping.
 
-- \_AEI method, and event method(s) (\_Exx, \_Lxx or \_EVT) exist for any GPIO-signaled ACPI events.
+- _AEI method, and event method(s) (\_Exx, \_Lxx or \_EVT) exist for any GPIO-signaled ACPI events.
 
 - GPIO controller _DSM included if any ActiveBoth interrupts connected to the controller are asserted logic high instead of logic low.
 
-- Implement \_REG methods for each GPIO controller and prevent use of GeneralPurposeIO OpRegions if \_REG indicates that the region handler is not available.
+- Implement _REG methods for each GPIO controller and prevent use of GeneralPurposeIO OpRegions if \_REG indicates that the region handler is not available.
 
 - Debounce timeout is included in the GPIOInt resource descriptor for any interrupt that requires debouncing.
 

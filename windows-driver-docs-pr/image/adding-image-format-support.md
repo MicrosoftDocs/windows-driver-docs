@@ -1,38 +1,34 @@
 ---
-title: Adding Image Format Support
-description: Adding Image Format Support
-ms.date: 04/20/2017
+title: Add Image Format Support
+description: Add Image Format Support
+ms.date: 03/27/2023
 ---
 
-# Adding Image Format Support
-
-
-
-
+# Add Image Format Support
 
 A WIA minidriver reports image formats to the WIA service in the [**IWiaMiniDrv::drvGetWiaFormatInfo**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvgetwiaformatinfo) method.
 
-### <a href="" id="implementing-iwiaminidrv-drvgetwiaformatinfo"></a>Implementing IWiaMiniDrv::drvGetWiaFormatInfo
+## Implement IWiaMiniDrv::drvGetWiaFormatInfo
 
 The WIA service calls the **IWiaMiniDrv::drvGetWiaFormatInfo** method to obtain the WIA device-supported TYMED and FORMAT pairs.
 
-The WIA driver should allocate memory (to be stored in this WIA driver and freed by this WIA driver) to contain an array of WIA\_FORMAT\_INFO structures (described in the Microsoft Windows SDK documentation). A pointer to the WIA driver-allocated memory should be passed to *ppwfi*. This is not done directly, but with a pointer to a pointer. In the following example, *ppwfi* is set with the address of m\_WIAFormatInfo\[0\], which in turn evaluates to the address of the first member of the structure.
+The WIA driver should allocate memory (to be stored in this WIA driver and freed by this WIA driver) to contain an array of WIA_FORMAT_INFO structures (described in the Microsoft Windows SDK documentation). A pointer to the WIA driver-allocated memory should be passed to *ppwfi*. This isn't done directly, but with a pointer to a pointer. In the following example, *ppwfi* is set with the address of m_WIAFormatInfo\[0\], which in turn evaluates to the address of the first member of the structure.
 
-It is important to note that the WIA service will not free this memory. It is the responsibility of the WIA driver to manage this allocated memory.
+It's important to note that the WIA service won't free this memory. It's the responsibility of the WIA driver to manage this allocated memory.
 
 The WIA driver should write the number of structures that are allocated in the memory location to which the *pcelt* parameter points.
 
-The WIA device should set the **guidFormatID** member of the WIA\_FORMAT\_INFO structure to the image format GUID. The device should set the **lTymed** member of this structure to the TYMED value associated with the image format GUID:
+The WIA device should set the **guidFormatID** member of the WIA_FORMAT_INFO structure to the image format GUID. The device should set the **lTymed** member of this structure to the TYMED value associated with the image format GUID:
 
 Valid TYMED values (also known as "Media Type") are:
 
-TYMED\_FILE
+TYMED_FILE
 
-TYMED\_MULTIPAGE\_FILE
+TYMED_MULTIPAGE_FILE
 
-TYMED\_CALLBACK
+TYMED_CALLBACK
 
-TYMED\_MULTIPAGE\_CALLBACK
+TYMED_MULTIPAGE_CALLBACK
 
 The following example shows an implementation of [**IWiaMiniDrv::drvGetWiaFormatInfo**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvgetwiaformatinfo):
 
@@ -82,6 +78,3 @@ HRESULT _stdcall CWIADevice::drvGetWiaFormatInfo(
     return S_OK;
 }
 ```
-
- 
-

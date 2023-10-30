@@ -5,6 +5,7 @@ keywords:
 - DevCon Remove Driver Development Tools
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DevCon Remove
 api_type:

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x144 BUGCODE_USB3_DRIVER", "BUGCODE_USB3_DRIVER"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - BUGCODE_USB3_DRIVER
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The **BUGCODE\_USB3\_DRIVER** bug check has a value of 0x00000144. This is the code used for all USB 3 bug checks. Parameter 1 specifies the type of the USB 3 bug check, and the meanings of the other parameters are dependent on Parameter 1.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## BUGCODE\_USB3\_DRIVER Parameters
@@ -99,7 +100,7 @@ The **BUGCODE\_USB3\_DRIVER** bug check has a value of 0x00000144. This is the c
 </tr>
 <tr class="odd">
 <td align="left"><p>0x805</p></td>
-<td align="left"><p><a href="/windows-hardware/drivers/wdf/framework-request-objects" data-raw-source="[WDFREQUEST](../wdf/framework-request-objects.md)">WDFREQUEST</a> handle for the Close Static Streams URB</p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/wdf/framework-request-objects" data-raw-source="[WDFREQUEST](../wdf/creating-framework-request-objects.md)">WDFREQUEST</a> handle for the Close Static Streams URB</p></td>
 <td align="left"><p>Pointer to the Close Static Streams URB</p></td>
 <td align="left"><p>Pointer to the client driver's device object</p></td>
 <td align="left"><p>A client driver sent a Close Static Streams URB in an invalid state (for example, after processing D0 Exit).</p></td>
@@ -402,4 +403,3 @@ To send a chained [**MDL**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_mdl), the 
 [Kernel Live Dump Code Reference](bug-check-code-reference-live-dump.md)
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
-

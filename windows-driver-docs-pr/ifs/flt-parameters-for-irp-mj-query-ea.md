@@ -10,7 +10,8 @@ api_location:
 - fltkernel.h
 api_type:
 - HeaderDef
-ms.date: 02/04/2020
+ms.date: 03/13/2023
+ms.topic: reference
 ---
 
 # FLT_PARAMETERS for IRP_MJ_QUERY_EA union
@@ -19,7 +20,7 @@ Union component used when the **MajorFunction** field of the [**FLT_IO_PARAMETER
 
 ## Syntax
 
-```ManagedCPlusPlus
+``` C
 typedef union _FLT_PARAMETERS {
   ...    ;
   struct {
@@ -36,26 +37,19 @@ typedef union _FLT_PARAMETERS {
 
 ## Members
 
-**QueryEa**  
-Structure within FLT_PARAMETERS union containing the following members.
+- **QueryEa**: Structure within FLT_PARAMETERS union containing the following members.
 
-**Length**  
-Length, in bytes, of the buffer that **EaBuffer** points to.
+- **Length**: Length, in bytes, of the buffer that **EaBuffer** points to.
 
-**EaList**  
-Pointer to a caller-supplied, FILE_GET_EA_INFORMATION-structured input buffer specifying the extended attributes to be queried.
+- **EaList**: Pointer to a caller-supplied, FILE_GET_EA_INFORMATION-structured input buffer specifying the extended attributes to be queried.
 
-**EaListLength**  
-Length, in bytes, of the buffer that **EaList** points to.
+- **EaListLength**: Length, in bytes, of the buffer that **EaList** points to.
 
-**EaIndex**  
-Index of the entry at which to begin scanning the extended-attribute list. This parameter is ignored if the SL_INDEX_SPECIFIED flag is not set in the FLT_IO_PARAMETER_BLOCK structure for the operation or if **EaList** points to a nonempty list.
+- **EaIndex**: Index of the entry at which to begin scanning the extended-attribute list. This parameter is ignored if the SL_INDEX_SPECIFIED flag is not set in the FLT_IO_PARAMETER_BLOCK structure for the operation or if **EaList** points to a nonempty list.
 
-**EaBuffer**  
-Pointer to a caller-supplied, [**FILE_FULL_EA_INFORMATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_full_ea_information)-structured output buffer where the extended attribute values are to be returned. This member is optional and can be **NULL** if a MDL is provided in **MdlAddress**. See **Remarks**.
+- **EaBuffer**: Pointer to a caller-supplied, [**FILE_FULL_EA_INFORMATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_full_ea_information)-structured output buffer where the extended attribute values are to be returned. This member is optional and can be **NULL** if a MDL is provided in **MdlAddress**. See **Remarks**.
 
-**MdlAddress**  
-Address of a memory descriptor list (MDL) describing the buffer that **EaBuffer** points to. This member is optional and can be **NULL** if a buffer is provided in **EaBuffer**. See **Remarks**.
+- **MdlAddress**: Address of a memory descriptor list (MDL) describing the buffer that **EaBuffer** points to. This member is optional and can be **NULL** if a buffer is provided in **EaBuffer**. See **Remarks**.
 
 ## Remarks
 
@@ -69,8 +63,9 @@ IRP_MJ_QUERY_EA is an IRP-based operation.
 
 ## Requirements
 
-**Header**: Fltkernel.h (include Fltkernel.h)
-
+| Requirement type | Requirement |
+| ---------------- | ----------- |
+| Header | *Fltkernel.h* (include *Fltkernel.h*) |
 
 ## See also
 

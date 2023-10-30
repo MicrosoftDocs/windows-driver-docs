@@ -4,6 +4,7 @@ description: The KSPROPERTY_DVDSUBPIC_HLI property specifies the rectangle of th
 keywords: ["KSPROPERTY_DVDSUBPIC_HLI Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_DVDSUBPIC_HLI
 api_location:

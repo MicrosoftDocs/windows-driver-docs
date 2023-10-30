@@ -1,7 +1,7 @@
 ---
 title: StorNVMe command set support
 description: Describes the command set support provided by StoreNVMe
-ms.date: 05/20/2022
+ms.date: 01/06/2023
 ---
 
 # StorNVMe command set support
@@ -45,7 +45,7 @@ The tables below list commands and opcodes defined in the NVM Express specificat
 | 80h | Format NVM                  | Yes | Yes | Yes | [IOCTL_STORAGE_PROTOCOL_COMMAND](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_protocol_command) for WinPE only. [IOCTL_SCSI_PASS_THROUGH](/windows-hardware/drivers/ddi/ntddscsi/ni-ntddscsi-ioctl_scsi_pass_through) for SCSIOP_SANITIZE. [IOCTL_STORAGE_REINITIALIZE_MEDIA](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_reinitialize_media) for crypto erase only. |
 | 81h | Security Send               | Yes | Yes | Yes | [IOCTL_SCSI_PASS_THROUGH](/windows-hardware/drivers/ddi/ntddscsi/ni-ntddscsi-ioctl_scsi_pass_through) for SCSIOP_SECURITY_PROTOCOL_OUT |
 | 82h | Security Receive            | Yes | Yes | Yes | [IOCTL_SCSI_PASS_THROUGH](/windows-hardware/drivers/ddi/ntddscsi/ni-ntddscsi-ioctl_scsi_pass_through) for SCSIOP_SECURITY_PROTOCOL_IN |
-| 84h | Sanitize                    | Yes | Yes | Yes | [IOCTL_STORAGE_PROTOCOL_COMMAND](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_protocol_command). From Windows 10, Version 2004 / May 2020 Update, Windows Server Version 2004 (Server Core). WinPE only prior to Windows 11, Windows Server 2022 |
+| 84h | Sanitize                    | Yes | Yes | Yes | [IOCTL_STORAGE_PROTOCOL_COMMAND](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_protocol_command). From Windows 10, Version 2004 / May 2020 Update, Windows Server Version 2004 (Server Core). WinPE only prior to Windows 11, Windows Server 2022 and only if the user uses IOCTL_STORAGE_PROTOCOL_COMMAND. |
 | 86h | Get LBA Status              | Yes |     |     | From Windows 11, Windows Server 2022 |
 | C0h-FFh | Vendor Specific         | N/A | Yes |     | [IOCTL_STORAGE_PROTOCOL_COMMAND](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_protocol_command). Vendor-specific pass-through commands require CSUPP=1 in corresponding Command Supported and Effects Log Page for each vendor-specific command opcode. |
 

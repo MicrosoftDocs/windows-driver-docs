@@ -4,6 +4,7 @@ description: The WIA_DPC_EXPOSURE_INDEX property enables you to emulate film spe
 keywords: ["WIA_DPC_EXPOSURE_INDEX Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPC_EXPOSURE_INDEX
 api_location:

@@ -3,7 +3,7 @@ title: Custom Control Codes
 description: vendors can define custom control codes
 keywords:
 - biometric drivers WDK , control codes
-ms.date: 11/13/2017
+ms.date: 03/03/2023
 ---
 
 # Custom Control Codes

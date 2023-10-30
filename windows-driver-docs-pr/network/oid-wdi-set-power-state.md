@@ -1,7 +1,8 @@
 ---
 title: OID_WDI_SET_POWER_STATE
+ms.topic: reference
 description: OID_WDI_SET_POWER_STATE sets the power state of the device.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - OID_WDI_SET_POWER_STATE Network Drivers Starting with Windows Vista
 ---
@@ -206,7 +207,7 @@ The following diagrams show interactions and sequences of transitions between D0
 
 ### D0 to Dx (armed to wake)
 
-![wdi d0 to dx armed transition.](images/wdi-d0-to-dx-armed-to-wake.png)
+:::image type="content" source="images/wdi-d0-to-dx-armed-to-wake.png" alt-text="Flowchart showing the transition from D0 to Dx when the device is armed to wake.":::
 
 -   Stop \[DnIO|UpIO\]: DnIO are messages (controls and data) to lower layer. UpIO are messages to upper layer.
 
@@ -220,13 +221,13 @@ The following diagrams show interactions and sequences of transitions between D0
 
 ### Dx (armed to wake) to D0 transition
 
-![dx armed to d0 transition.](images/wdi-dx-to-d0-armed-to-wake.png)
+:::image type="content" source="images/wdi-dx-to-d0-armed-to-wake.png" alt-text="Flowchart illustrating the transition from Dx to D0.":::
 
 -   If the NIC is armed to wake, it can't be D3Cold. Firmware must continue running in Dx.
 
 ### D0 to D3 (not armed to wake) transition
 
-![d0 to d3 not armed transition.](images/wdi-d0-to-d3-not-armed.png)
+:::image type="content" source="images/wdi-d0-to-d3-not-armed.png" alt-text="Flowchart depicting the transition from D0 to D3 when the device is not armed to wake.":::
 
 -   Stop \[DnIO|UpIO\]: DnIO are messages (controls and data) to lower layer. UpIO are messages to upper layer.
 
@@ -240,7 +241,7 @@ The following diagrams show interactions and sequences of transitions between D0
 
 ### Dx (not armed to wake) to D0 transition
 
-![dx not armed to d0 transition.](images/wdi-dx-to-d0-not-armed.png)
+:::image type="content" source="images/wdi-dx-to-d0-not-armed.png" alt-text="Flowchart showing the transition from Dx (not armed to wake) to D0.":::
 
 -   D2 notArmToWake: Kept power, no reinitialization required.
 -   D3 notArmtoWake: Might be Hot or Cold. Cold requires that context be restored.

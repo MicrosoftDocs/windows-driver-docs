@@ -1,10 +1,12 @@
 ---
 title: Device Stage for Document Devices
 description: Device Stage for Document Devices
-ms.date: 04/20/2017
+ms.date: 01/27/2023
 ---
 
 # Device Stage for Document Devices
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The Windows Device Experience is a collection of features to improve how users discover and use devices that are connected to their PC. These user features are supported by system and platform features that define how device makers present their devices and related applications and services in Windows.
 

@@ -1,7 +1,8 @@
 ---
 title: EFI_RNG_PROTOCOL.GetInfo
 description: Returns information about the RNG algorithms supported by a driver that implements EFI_RNG_PROTOCOL.
-ms.date: 08/20/2021
+ms.date: 03/23/2023
+ms.topic: reference
 ---
 
 # EFI_RNG_PROTOCOL.GetInfo

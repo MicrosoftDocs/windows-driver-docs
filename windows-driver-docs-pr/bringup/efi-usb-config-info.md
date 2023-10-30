@@ -1,7 +1,8 @@
 ---
 title: EFI_USB_CONFIG_INFO
 description: The EFI_USB_CONFIG_INFO structure is used to define the supported USB port configuration.
-ms.date: 08/20/2021
+ms.date: 03/23/2023
+ms.topic: reference
 ---
 
 # EFI_USB_CONFIG_INFO
@@ -20,12 +21,10 @@ typedef struct
 
 ## Members
 
-### ConfigDescriptor
-
+**ConfigDescriptor**
 An EFI_USB_CONFIG_DESCRIPTOR structure that contains configuration information for the USB function device.
 
-### InterfaceInfoTable
-
+**InterfaceInfoTable**
 An [EFI_USB_INTERFACE_INFO](efi-usb-interface-info.md) structure that contains information about the supported interfaces.
 
 ## Remarks

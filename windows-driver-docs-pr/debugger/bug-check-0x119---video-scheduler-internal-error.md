@@ -2,7 +2,7 @@
 title: Bug Check 0x119 VIDEO_SCHEDULER_INTERNAL_ERROR
 description: The VIDEO_SCHEDULER_INTERNAL_ERROR bug check has a value of 0x00000119. This indicates that the video scheduler has detected a fatal violation.
 keywords: ["Bug Check 0x119 VIDEO_SCHEDULER_INTERNAL_ERROR", "VIDEO_SCHEDULER_INTERNAL_ERROR"]
-ms.date: 02/07/2020
+ms.date: 08/17/2023
 topic_type:
 - apiref
 api_name:
@@ -11,43 +11,58 @@ api_type:
 - NA
 ---
 
-# Bug Check 0x119: VIDEO\_SCHEDULER\_INTERNAL\_ERROR
+# Bug Check 0x119: VIDEO_SCHEDULER_INTERNAL_ERROR
 
-The VIDEO\_SCHEDULER\_INTERNAL\_ERROR bug check has a value of 0x00000119. This indicates that the video scheduler has detected a fatal violation.
+The VIDEO_SCHEDULER_INTERNAL_ERROR bug check has a value of 0x00000119. This bug check indicates that the video scheduler has detected a fatal violation.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
-## VIDEO\_SCHEDULER\_INTERNAL\_ERROR Parameters
+## VIDEO_SCHEDULER_INTERNAL_ERROR Parameters
 
-Parameter 1 is the only parameter of interest and identifies the exact violation.
+Parameter 1 is the only parameter of interest. It identifies the exact violation.
 
-| Parameter 1 | Cause of Error                                       |
+| Parameter 1 | Cause of error    |
 |-----------|--------------------------------------------------------|
-|0x1|The driver has reported an invalid fence ID. |
-|0x2| The driver failed upon the submission of a command.|
-|0x3|The driver failed upon patching the command buffer. |
-|0x4| The driver reported an invalid flip capability.|
-|0x5| The driver failed a system or a paging command.|
+|0x1| Driver has reported an invalid fence ID. (DRIVER_REPORTED_INVALID_FENCE_ID) |
+|0x2| Driver failed upon the submission of a command. (DRIVER_FAILED_SUBMIT_COMMAND)|
+|0x3| Driver failed upon patching the command buffer. (DRIVER_FAILED_PATCH_COMMAND) |
+|0x4| Driver reported an invalid flip capability. (DRIVER_INVALID_FLIPQUEUE_LENGTH)|
+|0x5| Driver failed a system or a paging command. (DRIVER_FAULTED_SYSTEM_COMMAND)|
+|0x6| Driver reports NULL PhysicalAdapterMask for interrupt raised on multi-adapter GPU. (DRIVER_INVALID_ADAPTER_MASK)|
+|0x7| Driver reports display VSync on render only adapter. (REPORT_VSYNC_ON_RENDER_ONLY_ADAPTER) |
+|0x8| Driver node that is causing the reset did not have have its corresponding bit set. (INVALID_NODE_MASK) |
+|0x9| Driver failed on a cancel command. (FAILED_CANCEL_COMMAND) |
+|0xA| Driver reported and invalid out of range aborted fence. (REPORTED_INVALID_ABORTED_FENCE) |
+|0xB| Driver failed the SetVidPnSourceAddressWithMultiPlaneOverlay command. (FAILED_SETVIDPNSOURCEMPO_COMMAND)|
+|0xC| Driver PageFaultFlags indicate a fatal hardware fault. (FATAL_PAGE_FAULT)  |
+|0xD| Driver reported incorrect PageFaultFlags in DMA Page Faulted interrupt. (INVALID_DMA_FAULT_PARAMETERS)  |
+|0xE| Driver reported VSync for a plane index larger than max overlay planes on GPU. (REPORT_VSYNC_PLANE_OUT_OF_RANGE) |
+|0xF| Not used. (FAILED_POSTMPOPRESENT_COMMAND) |
+|0x10| Driver reported an unexpected interrupt after engine reset and before OS resumed engine. (UNEXPECTED_INTERRUPT_AFTER_RESET) |
+|0x11| Driver reports a suspend context completed fence value which OS has not generated yet. (INCORRECT_SUSPEND_FENCE) |
+|0x12| Driver failed to update a native fence monitored value. (FAILED_UPDATE_MONITORED_VALUE)|
+|0x13| Driver failed to update the native fence current value. (FAILED_UPDATE_CURRENT_VALUE)|
 |0x400| This is an internal OS state error, typically caused by a memory corruption or bad hardware.|
 |0xE00 | The OS ran out of memory for pre-allocated packets to handle passive flip requests.|
 |0x1000| This is an internal OS state error, typically caused by a memory corruption or bad hardware.|
+|0xA000| This is an internal OS state error, typically caused by a memory corruption or bad hardware.|
 |0x10000| This is an internal OS state error, typically caused by a memory corruption or bad hardware.|
 
 ## Resolution
 
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [!analyze](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
-If the faulting module listed in the !analyze output is a video driver, investigate if updates are available to that video driver from the vendor.
+If the faulting module listed in the **!analyze** output is a video driver, see if updates are available for that video driver from the vendor.
 
-For more information, see:
+## See also
 
-[Handling Command and DMA Buffers](../display/handling-command-and-dma-buffers.md)
+- [Handling command and DMA buffers](../display/handling-command-and-dma-buffers.md)
 
-[Submitting a Command Buffer](../display/submitting-a-command-buffer.md)
+- [Submitting a command buffer](../display/submitting-a-command-buffer.md)
 
-[Supplying Fence Identifiers](../display/supplying-fence-identifiers.md)
+- [Supplying fence identifiers](../display/supplying-fence-identifiers.md)
 
-[Video Memory Management and GPU Scheduling](../display/video-memory-management-and-gpu-scheduling.md)
+- [Video memory management and GPU scheduling](../display/video-memory-management-and-gpu-scheduling.md)
 
-[Direct flip of video memory](../display/direct-flip-of-video-memory.md)
+- [Direct flip of video memory](../display/direct-flip-of-video-memory.md)

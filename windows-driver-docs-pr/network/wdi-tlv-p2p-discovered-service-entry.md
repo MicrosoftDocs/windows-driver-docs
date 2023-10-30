@@ -1,7 +1,8 @@
 ---
 title: WDI_TLV_P2P_DISCOVERED_SERVICE_ENTRY
+ms.topic: reference
 description: WDI_TLV_P2P_DISCOVERED_SERVICE_ENTRY is a TLV that contains a discovered service entry.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - WDI_TLV_P2P_DISCOVERED_SERVICE_ENTRY Network Drivers Starting with Windows Vista
 ---

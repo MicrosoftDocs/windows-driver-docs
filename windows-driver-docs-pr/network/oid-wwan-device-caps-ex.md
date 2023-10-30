@@ -1,5 +1,6 @@
 ---
 title: OID_WWAN_DEVICE_CAPS_EX
+ms.topic: reference
 description: OID_WWAN_DEVICE_CAPS_EX is a similar but different OID from OID_WWAN_DEVICE_CAPS.
 keywords:
 - OID_WWAN_DEVICE_CAPS_EX, OID per executor, device capability ex
@@ -16,7 +17,7 @@ Miniport drivers must process query requests asynchronously, initially returning
 
 The following diagram illustrates a query request.
 
-![executor capability query.](images/multi-SIM_6_executorCapabilityQuery.png)
+:::image type="content" source="images/multi-SIM_6_executorCapabilityQuery.png" alt-text="Diagram that shows the executor capability query process.":::
 
 Set requests are not applicable.
 

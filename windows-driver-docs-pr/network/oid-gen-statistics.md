@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_STATISTICS
+ms.topic: reference
 description: As a query, NDIS and overlying drivers use the OID_GEN_STATISTICS OID to obtain statistics of an adapter or a miniport driver.
 ms.date: 08/08/2017
 keywords: 

@@ -625,13 +625,601 @@
         href: smp-example-mofs.md
       - name: "Windows Storage Management Provider API"
 # Auto-expanded node
-        items: 
+        items:
         - name: "Overview"
-          href: /previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal
-        - name: "Storage Management API Classes"
-          href: /previous-versions/windows/desktop/stormgmt/storage-management-api-classes
+          href: windows-storage-management-api-portal.md
         - name: "Storage Management API Common Return Codes"
-          href: /previous-versions/windows/desktop/stormgmt/storage-management-api-common-return-codes
+          href: storage-management-api-common-return-codes.md
+        - name: "Storage Management API Classes"
+          items:
+          - name: "Storage Management API Classes"
+            href: storage-management-api-classes.md
+          - name: MSFT_DedupProperties
+            href: msft-dedupproperties.md
+          - name: MSFT_Disk
+            items:
+            - name: MSFT_Disk
+              href: msft-disk.md
+            - name: Clear Method
+              href: clear-msft-disk.md
+            - name: ConvertStyle method
+              href: msft-disk-convertstyle.md
+            - name: CreatePartition Method
+              href: createpartition-msft-disk.md
+            - name: Initialize Method
+              href: initialize-msft-disk.md
+            - name: Offline method
+              href: msft-disk-offline.md
+            - name: Online method
+              href: msft-disk-online.md
+            - name: Refresh method
+              href: msft-disk-refresh.md
+            - name: SetAttributes method
+              href: msft-disk-setattributes.md
+          - name: MSFT_DiskImage
+            items:
+            - name: MSFT_DiskImage
+              href: msft-diskimage.md
+            - name: Dismount method
+              href: msft-diskimage-dismount.md
+            - name: Mount method
+              href: msft-diskimage-mount.md
+          - name: MSFT_DiskImageToVolume
+            href: msft-diskimagetovolume.md
+          - name: MSFT_DiskToPartition
+            href: msft-disktopartition.md
+          - name: MSFT_DiskToStorageReliabilityCounter
+            href: msft-disktostoragereliabilitycounter.md
+          - name: MSFT_FileShareAccessControlEntry
+            href: msft-fileshareaccesscontrolentry.md
+          - name: MSFT_FileIntegrity
+            items:
+            - name: MSFT_FileIntegrity
+              href: msft-fileintegrity.md
+            - name: Get method
+              href: msft-fileintegrity-get.md
+            - name: Repair method
+              href: msft-fileintegrity-repair.md
+            - name: Set method
+              href: msft-fileintegrity-set.md
+          - name: MSFT_FileServer
+            items:
+            - name: MSFT_FileServer
+              href: msft-fileserver.md
+            - name: CreateFileShare method
+              href: msft-fileserver-createfileshare.md
+            - name: DeleteObject method
+              href: msft-fileserver-deleteobject.md
+            - name: SetProperties method
+              href: msft-fileserver-setproperties.md
+          - name: MSFT_FileServerToFileShare
+            href: msft-fileservertofileshare.md
+          - name: MSFT_FileServerToVolume
+            href: msft-fileservertovolume.md
+          - name: MSFT_FileShare
+            items:
+            - name: MSFT_FileShare
+              href: msft-fileshare.md
+            - name: BlockAccess method
+              href: msft-fileshare-blockaccess.md
+            - name: DeleteObject method
+              href: msft-fileshare-deleteobject.md
+            - name: Diagnose method
+              href: msft-fileshare-diagnose.md
+            - name: GetAccessControlEntries method
+              href: msft-fileshare-getaccesscontrol.md
+            - name: GrantAccess method
+              href: msft-fileshare-grantaccess.md
+            - name: RevokeAccess method
+              href: msft-fileshare-revokeaccess.md
+            - name: SetAttributes method
+              href: msft-fileshare-setattributes.md
+            - name: SetDescription method
+              href: msft-fileshare-setdescription.md
+            - name: UnblockAccess method
+              href: msft-fileshare-unblockaccess.md
+          - name: MSFT_FileStorageTier
+            items:
+            - name: MSFT_FileStorageTier
+              href: msft-filestoragetier.md
+            - name: Clear method
+              href: msft-filestoragetier-clear.md
+            - name: Get method
+              href: msft-filestoragetier-get.md
+            - name: Set method
+              href: msft-filestoragetier-set.md
+          - name: MSFT_InitiatorId
+            items:
+            - name: MSFT_InitiatorId
+              href: msft-initiatorid.md
+            - name: DeleteObject Method
+              href: msft-initiatorid-deleteobject.md
+          - name: MSFT_InitiatorIdToVirtualDisk
+            href: msft-initiatoridtovirtualdisk.md
+          - name: MSFT_InitiatorPort
+            items:
+            - name: MSFT_InitiatorPort
+              href: msft-initiatorport.md
+            - name: SetNodeAddress method
+              href: msft-initiatorport-setnodeaddress.md
+          - name: MSFT_MaskingSet
+            items:
+            - name: MSFT_MaskingSet
+              href: msft-maskingset.md
+            - name: AddInitiatorId Method
+              href: msft-maskingset-addinitiatorid.md
+            - name: AddTargetPort Method
+              href: msft-maskingset-addtargetport.md
+            - name: AddVirtualDisk Method
+              href: msft-maskingset-addvirtualdisk.md
+            - name: DeleteObject Method
+              href: msft-maskingset-deleteobject.md
+            - name: GetSecurityDescriptor Method
+              href: msft-maskingset-getsecuritydescriptor.md
+            - name: RemoveInitiatorId Method
+              href: msft-maskingset-removeinitiatorid.md
+            - name: RemoveTargetPort Method
+              href: msft-maskingset-removetargetport.md
+            - name: RemoveVirtualDisk Method
+              href: msft-maskingset-removevirtualdisk.md
+            - name: SetFriendlyName Method
+              href: msft-maskingset-setfriendlyname.md
+            - name: SetSecurityDescriptor Method
+              href: msft-maskingset-setsecuritydescriptor.md
+          - name: MSFT_MaskingSetToInitiatorId
+            href: msft-maskingsettoinitiatorid.md
+          - name: MSFT_MaskingSetToTargetPort
+            href: msft-maskingsettotargetport.md
+          - name: MSFT_MaskingSetToVirtualDisk
+            href: msft-maskingsettovirtualdisk.md
+          - name: MSFT_OffloadDataTransferSetting
+            href: msft-offloaddatatransfersetting.md
+          - name: MSFT_Partition
+            items:
+            - name: MSFT_Partition
+              href: msft-partition.md
+            - name: AddAccessPath Method
+              href: addaccesspath-msft-partition.md
+            - name: DeleteObject Method
+              href: msft-partition-deleteobject.md
+            - name: GetAccessPaths Method
+              href: getaccesspaths-msft-partition.md
+            - name: GetSupportedSize method
+              href: msft-partition-getsupportedsizes.md
+            - name: Offline method
+              href: msft-partition-offline.md
+            - name: Online method
+              href: msft-partition-online.md
+            - name: RemoveAccessPath Method
+              href: removeaccesspath-msft-partition.md
+            - name: Resize Method
+              href: msft-partition-resize.md
+            - name: SetAttributes method
+              href: msft-partition-setattributes.md
+          - name: MSFT_PartitionToVolume
+            href: msft-partitiontovolume.md
+          - name: MSFT_PhysicalDisk
+            items:
+            - name: MSFT_PhysicalDisk
+              href: msft-physicaldisk.md
+            - name: Maintenance Method
+              href: msft-physicaldisk-maintenance.md
+            - name: Reset method
+              href: msft-physicaldisk-reset.md
+            - name: SetAttributes method
+              href: msft-physicaldisk-setattributes.md
+            - name: SetDescription method
+              href: msft-physicaldisk-setdescription.md
+            - name: SetFriendlyName method
+              href: msft-physicaldisk-setfriendlyname.md
+            - name: SetUsage method
+              href: msft-physicaldisk-setusage.md
+            - name: SetWriteCache method
+              href: msft-physicaldisk-setwritecache.md
+          - name: MSFT_PhysicalDiskToStorageReliabilityCounter
+            href: msft-physicaldisktostoragereliabilitycounter.md
+          - name: MSFT_ReplicaPeer
+            href: msft-replicapeer.md
+          - name: MSFT_ReplicationCapabilities
+            items:
+            - name: MSFT_ReplicationCapabilities
+              href: msft-replicationcapabilities.md
+            - name: GetRecoveryPointData method
+              href: msft-replicationcapabilities-getrecoverypointdata.md
+            - name: GetSupportedCopyStates method
+              href: msft-replicationcapabilities-getsupportedcopystates.md
+            - name: GetSupportedFeatures method
+              href: msft-replicationcapabilities-getsupportedfeatures.md
+            - name: GetSupportedGroupCopyStates method
+              href: msft-replicationcapabilities-getsupportedgroupcopystates.md
+            - name: GetSupportedGroupFeatures method
+              href: msft-replicationcapabilities-getsupportedgroupfeatures.md
+            - name: GetSupportedGroupOperations method
+              href: msft-replicationcapabilities-getsupportedgroupoperations.md
+            - name: GetSupportedOperations method
+              href: msft-replicationcapabilities-getsupportedoperations.md
+          - name: MSFT_ReplicationGroup
+            items:
+            - name: MSFT_ReplicationGroup
+              href: msft-replicationgroup.md
+            - name: AddMember method
+              href: msft-replicationgroup-addmember.md
+            - name: CreateReplica method
+              href: msft-replicationgroup-createreplica.md
+            - name: DeleteObject method
+              href: msft-replicationgroup-deleteobject.md
+            - name: GetReplicationSettings method
+              href: msft-replicationgroup-getreplicationsettings.md
+            - name: RemoveMember method
+              href: msft-replicationgroup-removemember.md
+            - name: SetFriendlyName method
+              href: msft-replicationgroup-setfriendlyname.md
+            - name: SetReplicationRelationship method
+              href: msft-replicationgroup-setreplicationrelationship.md
+            - name: SetReplicationSettings method
+              href: msft-replicationgroup-setreplicationsettings.md
+          - name: MSFT_ReplicationGroupToReplicaPeer
+            href: msft-replicationgrouptoreplicapeer.md
+          - name: MSFT_ReplicationGroupToVirtualDisk
+            href: msft-replicationgrouptovirtualdisk.md
+          - name: MSFT_ReplicationSettings
+            href: msft-replicationsettings.md
+          - name: MSFT_ResiliencySetting
+            items:
+            - name: MSFT_ResiliencySetting
+              href: msft-resiliencysetting.md
+            - name: SetDefaults method
+              href: msft-resiliencysetting-setdefaults.md
+          - name: MSFT_SoftError
+            href: msft-softerror.md
+          - name: MSFT_SoftError_EmptyCache
+            href: msft-softerror-emptycache.md
+          - name: MSFT_SoftError_NotAuthenticated
+            href: msft-softerror-notauthenticated.md
+          - name: MSFT_SoftError_NotInCache
+            href: msft-softerror-notincache.md
+          - name: MSFT_StorageAlertEvent
+            href: msft-storagealertevent.md
+          - name: MSFT_StorageArrivalEvent
+            href: msft-storagearrivalevent.md
+          - name: MSFT_StorageDepartureEvent
+            href: msft-storagedepartureevent.md
+          - name: MSFT_StorageDiagnoseResult
+            href: msft-storagediagnoseresult.md
+          - name: MSFT_StorageEnclosure
+            items:
+            - name: MSFT_StorageEnclosure
+              href: msft-storageenclosure.md
+            - name: GetVendorData method
+              href: msft-storageenclosure-getvendordata.md
+            - name: IdentifyElement method
+              href: msft-storageenclosure-identifyelement.md
+          - name: MSFT_StorageEnclosureToPhysicalDisk
+            href: msft-storageenclosuretophysicaldisk.md
+          - name: MSFT_StorageEvent
+            href: msft-storageevent.md
+          - name: MSFT_StorageExtendedStatus
+            href: msft-storageextendedstatus.md
+          - name: MSFT_StorageFaultDomain
+            href: msft-storagefaultdomain.md
+          - name: MSFT_StorageFaultDomainToStorageFaultDomain
+            href: msft-storagefaultdomaintostoragefaultdomain.md
+          - name: MSFT_StorageJob
+            items:
+            - name: MSFT_StorageJob
+              href: msft-storagejob.md
+            - name: GetExtendedStatus method
+              href: msft-storagejob-getextendedstatus.md
+            - name: RequestStateChange method
+              href: msft-storagejob-requeststatechange.md
+          - name: MSFT_StorageJobToAffectedStorageObject
+            href: msft-storagejobtoaffectedstorageobject.md
+          - name: MSFT_StorageModificationEvent
+            href: msft-storagemodificationevent.md
+          - name: MSFT_StorageNode
+            href: msft-storagenode.md
+          - name: MSFT_StorageNodeToDisk
+            href: msft-storagenodetodisk.md
+          - name: MSFT_StorageNodeToPhysicalDisk
+            href: msft-storagenodetophysicaldisk.md
+          - name: MSFT_StorageNodeToStorageEnclosure
+            href: msft-storagenodetostorageenclosure.md
+          - name: MSFT_StorageNodeToStoragePool
+            href: msft-storagenodetostoragepool.md
+          - name: MSFT_StorageNodeToVirtualDisk
+            href: msft-storagenodetovirtualdisk.md
+          - name: MSFT_StorageNodeToVolume
+            href: msft-storagenodetovolume.md
+          - name: MSFT_StorageObject
+            href: msft-storageobject.md
+          - name: MSFT_StoragePool
+            items:
+            - name: MSFT_StoragePool
+              href: msft-storagepool.md
+            - name: AddPhysicalDisk Method
+              href: addphysicaldisk-msft-storagepool.md
+            - name: CreateStorageTier method
+              href: msft-storagepool-createstoragetier.md
+            - name: CreateVirtualDisk Method
+              href: createvirtualdisk-msft-storagepool.md
+            - name: CreateVolume method
+              href: msft-storagepool-createvolume.md
+            - name: DeleteObject Method
+              href: msft-storagepool-deleteobject.md
+            - name: GetSecurityDescriptor Method
+              href: getsecuritydescriptor-msft-storagepool.md
+            - name: GetSupportedSize method
+              href: msft-storagepool-getsupportedsize.md
+            - name: Optimize method
+              href: msft-storagepool-optimize.md
+            - name: RemovePhysicalDisk Method
+              href: removephysicaldisk-msft-storagepool.md
+            - name: SetAttributes method
+              href: msft-storagepool-setattributes.md
+            - name: SetDefaults method
+              href: msft-storagepool-setdefaults.md
+            - name: SetFriendlyName method
+              href: msft-storagepool-setfriendlyname.md
+            - name: SetSecurityDescriptor Method
+              href: setsecuritydescriptor-msft-storagepool.md
+            - name: SetUsage method
+              href: msft-storagepool-setusage.md
+            - name: Upgrade method
+              href: msft-storagepool-upgrade.md
+          - name: MSFT_StoragePoolToPhysicalDisk
+            href: msft-storagepooltophysicaldisk.md
+          - name: MSFT_StoragePoolToResiliencySetting
+            href: msft-storagepooltoresiliencysetting.md
+          - name: MSFT_StoragePoolToStorageTier
+            href: msft-storagepooltostoragetier.md
+          - name: MSFT_StoragePoolToVirtualDisk
+            href: msft-storagepooltovirtualdisk.md
+          - name: MSFT_StoragePoolToVolume
+            href: msft-storagepooltovolume.md
+          - name: MSFT_StorageProvider
+            items:
+            - name: MSFT_StorageProvider
+              href: msft-storageprovider.md
+            - name: Discover Method
+              href: discover-msft-storageprovider.md
+            - name: GetSecurityDescriptor Method
+              href: msft-storageprovider-getsecuritydescriptor.md
+            - name: RegisterSubsystem method
+              href: msft-storageprovider-registersubsystem.md
+            - name: SetAttributes method
+              href: msft-storageprovider-setattributes.md
+            - name: SetSecurityDescriptor Method
+              href: setsecuritydescriptor-msft-storageprovider.md
+            - name: UnregisterSubsystem method
+              href: msft-storageprovider-unregistersubsystem.md
+          - name: MSFT_StorageProviderToStorageSubSystem
+            href: msft-storageprovidertostoragesubsystem.md
+          - name: MSFT_StorageReliabilityCounter
+            items:
+            - name: MSFT_StorageReliabilityCounter
+              href: msft-storagereliabilitycounter.md
+            - name: Reset method
+              href: msft-storagereliabilitycounter-reset.md
+          - name: MSFT_StorageSetting
+            items:
+            - name: MSFT_StorageSetting
+              href: msft-storagesetting.md
+            - name: Get method
+              href: msft-storagesetting-get.md
+            - name: Set method
+              href: msft-storagesetting-set.md
+            - name: UpdateHostStorageCache method
+              href: msft-storagesetting-updatehoststoragecache.md
+          - name: MSFT_StorageSubSystem
+            items:
+            - name: MSFT_StorageSubSystem
+              href: msft-storagesubsystem.md
+            - name: CreateFileServer method
+              href: msft-storagesubsystem-createfileserver.md
+            - name: CreateMaskingSet Method
+              href: msft-storagesubsystem-createmaskingset.md
+            - name: CreateReplicationGroup method
+              href: msft-storagesubsystem-createreplicationgroup.md
+            - name: CreateReplicationRelationship method
+              href: msft-storagesubsystem-createreplicationrelationship.md
+            - name: CreateStoragePool Method
+              href: createstoragepool-msft-storagesubsystem.md
+            - name: CreateVirtualDisk Method
+              href: msft-storagesubsystem-createvirtualdisk.md
+            - name: DeleteReplicationRelationship method
+              href: msft-storagesubsystem-deletereplicationrelationship.md
+            - name: Diagnose method
+              href: msft-storagesubsystem-diagnose.md
+            - name: GetDiagnosticInfo method
+              href: msft-storagesubsystem-getdiagnosticinfo.md
+            - name: GetSecurityDescriptor Method
+              href: msft-storagesubsystem-getsecuritydescriptor.md
+            - name: SetAttributes method
+              href: msft-storagesubsystem-setattributes.md
+            - name: SetDescription method
+              href: msft-storagesubsystem-setdescription.md
+            - name: SetSecurityDescriptor Method
+              href: msft-storagesubsystem-setsecuritydescriptor.md
+            - name: StartDiagnosticLog method
+              href: msft-storagesubsystem-startdiagnosticlog.md
+            - name: StopDiagnosticLog method
+              href: msft-storagesubsystem-stopdiagnosticlog.md
+          - name: MSFT_StorageSubSystemToDisk
+            href: msft-storagesubsystemtodisk.md
+          - name: MSFT_StorageSubSystemToFileServer
+            href: msft-storagesubsystemtofileserver.md
+          - name: MSFT_StorageSubSystemToFileShare
+            href: msft-storagesubsystemtofileshare.md
+          - name: MSFT_StorageSubSystemToInitiatorId
+            href: msft-storagesubsystemtoinitiatorid.md
+          - name: MSFT_StorageSubSystemToMaskingSet
+            href: msft-storagesubsystemtomaskingset.md
+          - name: MSFT_StorageSubSystemToOffloadDataTransferSetting
+            href: msft-storagesubsystemtooffloaddatatransfersetting.md
+          - name: MSFT_StorageSubSystemToPartition
+            href: msft-storagesubsystemtopartition.md
+          - name: MSFT_StorageSubSystemToPhysicalDisk
+            href: msft-storagesubsystemtophysicaldisk.md
+          - name: MSFT_StorageSubSystemToReplicaPeer
+            href: msft-storagesubsystemtoreplicapeer.md
+          - name: MSFT_StorageSubSystemToReplicationCapabilities
+            href: msft-storagesubsystemtoreplicationcapabilities.md
+          - name: MSFT_StorageSubSystemToReplicationGroup
+            href: msft-storagesubsystemtoreplicationgroup.md
+          - name: MSFT_StorageSubSystemToStorageEnclosure
+            href: msft-storagesubsystemtostorageenclosure.md
+          - name: MSFT_StorageSubSystemToStorageFaultDomain
+            href: msft-storagesubsystemtostoragefaultdomain.md
+          - name: MSFT_StorageSubSystemToStorageNode
+            href: msft-storagesubsystemtostoragenode.md
+          - name: MSFT_StorageSubSystemToStoragePool
+            href: msft-storagesubsystemtostoragepool.md
+          - name: MSFT_StorageSubSystemToTargetPort
+            href: msft-storagesubsystemtotargetport.md
+          - name: MSFT_StorageSubSystemToTargetPortal
+            href: msft-storagesubsystemtotargetportal.md
+          - name: MSFT_StorageSubSystemToVirtualDisk
+            href: msft-storagesubsystemtovirtualdisk.md
+          - name: MSFT_StorageSubSystemToVolume
+            href: msft-storagesubsystemtovolume.md
+          - name: MSFT_StorageTier
+            items:
+            - name: MSFT_StorageTier
+              href: msft-storagetier.md
+            - name: DeleteObject method
+              href: msft-storagetier-deleteobject.md
+            - name: GetSupportedSize method
+              href: msft-storagetier-getsupportedsize.md
+            - name: Resize method
+              href: msft-storagetier-resize.md
+            - name: SetAttributes method
+              href: msft-storagetier-setattributes.md
+            - name: SetDescription method
+              href: msft-storagetier-setdescription.md
+            - name: SetFriendlyName method
+              href: msft-storagetier-setfriendlyname.md
+          - name: MSFT_Synchronized
+            href: msft-synchronized.md
+          - name: MSFT_TargetPort
+            href: msft-targetport.md
+          - name: MSFT_TargetPortal
+            href: msft-targetportal.md
+          - name: MSFT_TargetPortToTargetPortal
+            href: msft-targetporttotargetportal.md
+          - name: MSFT_TargetPortToVirtualDisk
+            href: msft-targetporttovirtualdisk.md
+          - name: MSFT_VirtualDisk
+            items: 
+            - name: MSFT_VirtualDisk
+              href: msft-virtualdisk.md
+            - name: AddPhysicalDisk method
+              href: msft-virtualdisk-addphysicaldisk.md
+            - name: Attach method
+              href: msft-virtualdisk-attach.md
+            - name: CreateClone Method
+              href: msft-virtualdisk-createclone.md
+            - name: CreateReplica method
+              href: msft-virtualdisk-createremotereplica.md
+            - name: CreateSnapshot Method
+              href: msft-virtualdisk-createsnapshot.md
+            - name: DeleteObject Method
+              href: msft-virtualdisk-deleteobject.md
+            - name: Detach method
+              href: msft-virtualdisk-detach.md
+            - name: GetSecurityDescriptor Method
+              href: msft-virtualdisk-getsecuritydescriptor.md
+            - name: Hide Method
+              href: msft-virtualdisk-hide.md
+            - name: RemovePhysicalDisk method
+              href: msft-virtualdisk-removephysicaldisk.md
+            - name: Repair Method
+              href: msft-virtualdisk-repair.md
+            - name: Resize Method
+              href: msft-virtualdisk-resize.md
+            - name: SetAttributes method
+              href: msft-virtualdisk-setattributes.md
+            - name: SetFriendlyName method
+              href: msft-virtualdisk-setfriendlyname.md
+            - name: SetReplicationRelationship method
+              href: msft-virtualdisk-setreplicationrelationship.md
+            - name: SetSecurityDescriptor Method
+              href: msft-virtualdisk-setsecuritydescriptor.md
+            - name: SetUsage method
+              href: msft-virtualdisk-setusage.md
+            - name: Show Method
+              href: msft-virtualdisk-show.md
+          - name: MSFT_VirtualDiskToDisk
+            href: msft-virtualdisktodisk.md
+          - name: MSFT_VirtualDiskToPhysicalDisk
+            href: msft-virtualdisktophysicaldisk.md
+          - name: MSFT_VirtualDiskToReplicaPeer
+            href: msft-virtualdisktoreplicapeer.md
+          - name: MSFT_VirtualDiskToStorageTier
+            href: msft-virtualdisktostoragetier.md
+          - name: MSFT_VirtualDiskToVirtualDisk
+            href: msft-virtualdisktovirtualdisk.md
+          - name: MSFT_Volume
+            items:
+            - name: MSFT_Volume
+              href: msft-volume.md
+            - name: DeleteObject method
+              href: msft-volume-deleteobject.md
+            - name: Diagnose method
+              href: msft-volume-diagnose.md
+            - name: Flush method
+              href: msft-volume-flush.md
+            - name: Format Method
+              href: format-msft-volume.md
+            - name: GetAttributes method
+              href: msft-volume-getattributes.md
+            - name: GetCorruptionCount method
+              href: msft-volume-getcorruptioncount.md
+            - name: GetDedupProperties method
+              href: msft-volume-getdeduplicationstatistics.md
+            - name: GetSupportedClusterSizes method
+              href: msft-volume-getsupportedclustersizes.md
+            - name: GetSupportedFileSystems method
+              href: msft-volume-getsupportedfilesystems.md
+            - name: Optimize Method
+              href: optimize-msft-volume.md
+            - name: Repair Method
+              href: repair-msft-volume.md
+            - name: Resize method
+              href: msft-volume-resize.md
+            - name: SetAttributes method
+              href: msft-volume-setattributes.md
+            - name: SetDedupMode method
+              href: msft-volume-setdeduplication.md
+            - name: SetFileSystemLabel method
+              href: msft-volume-setfilesystemlabel.md
+          - name: MSFT_VolumeToFileShare
+            href: msft-volumetofileshare.md
+          - name: MSFT_VolumeToReplicaPeer
+            href: msft-volumetoreplicapeer.md
+          - name: PS_StorageCmdlets
+            items:
+            - name: PS_StorageCmdlets
+              href: ps-storagecmdlets.md
+            - name: AddPhysicalDisk method
+              href: ps-storagecmdlets-addphysicaldisk.md
+            - name: LaunchProviderHost method
+              href: ps-storagecmdlets-launchproviderhost.md
+            - name: RemovePhysicalDisk method
+              href: ps-storagecmdlets-removephysicaldisk.md
+            - name: SetDisk method
+              href: ps-storagecmdlets-setdisk.md
+            - name: SetPartition method
+              href: ps-storagecmdlets-setpartition.md
+            - name: SetPhysicalDisk method
+              href: ps-storagecmdlets-setphysicaldisk.md
+            - name: SetStoragePool method
+              href: ps-storagecmdlets-setstoragepool.md
+            - name: SetStorageSubSystem method
+              href: ps-storagecmdlets-setstoragesubsystem.md
+            - name: SetStorageTier method
+              href: ps-storagecmdlets-setstoragetier.md
+            - name: SetVirtualDisk method
+              href: ps-storagecmdlets-setvirtualdisk.md
     - name: "HBA WMI Classes"
 # Auto-expanded node
       items: 

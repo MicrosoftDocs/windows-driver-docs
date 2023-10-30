@@ -11,6 +11,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # MOUNTDEV_MOUNTED_DEVICE_GUID

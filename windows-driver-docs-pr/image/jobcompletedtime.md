@@ -4,15 +4,15 @@ description: The optional JobCompletedTime element specifies the time at which t
 keywords: ["JobCompletedTime element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn JobCompletedTime
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 04/28/2023
 ---
 
 # JobCompletedTime element
-
 
 The optional **JobCompletedTime** element specifies the time at which the scan job was completed.
 
@@ -30,34 +30,18 @@ There are no attributes.
 
 ## Text value
 
-Required. Any valid value for the dateTime type. For more information about dateTime, see XML Schema Part 2: Datatypes Second Edition.**dateTimedateTime**
+Required. Any valid value for the dateTime type. For more information about dateTime, see *XML Schema Part 2: Datatypes Second Edition.***dateTimedateTime**
 
 ## Child elements
-
 
 There are no child elements.
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="jobendstate.md" data-raw-source="[&lt;strong&gt;JobEndState&lt;/strong&gt;](jobendstate.md)"><strong>JobEndState</strong></a></p></td>
-</tr>
-<tr class="even">
-<td><p><a href="jobstatus.md" data-raw-source="[&lt;strong&gt;JobStatus&lt;/strong&gt;](jobstatus.md)"><strong>JobStatus</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**JobEndState**](jobendstate.md) |
+| [**JobStatus**](jobstatus.md) |
 
 ## Remarks
 
@@ -67,17 +51,6 @@ The specified time refers to the internal clock of the scan device and does not 
 
 ## See also
 
-
 [**JobEndState**](jobendstate.md)
 
 [**JobStatus**](jobstatus.md)
-
- 
-
- 
-
-
-
-
-
-

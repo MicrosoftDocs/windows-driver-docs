@@ -9,17 +9,13 @@ ms.date: 04/20/2017
 
 # Authenticated Key Exchange
 
-
-## <span id="ddk_authenticated_key_exchange_gg"></span><span id="DDK_AUTHENTICATED_KEY_EXCHANGE_GG"></span>
-
-
 This section applies only to Windows Server 2003 SP1 and later, and Windows XP SP2 and later.
 
 The following figure shows establishing a secure connection through authentication and key exchange. First, the video miniport driver supplies the graphics hardware certificate to the application. Next, the application extracts the public key from the graphics hardware certificate. After the application generates a data integrity key (k<sub>DI</sub>), the application uses the public key to encrypt a sequence that includes the data integrity key and supplies the sequence to the driver.
 
 Command and status messages are subsequently passed unencrypted; however, for each message, MACs are created by using the data integrity key.
 
-![diagram illustrating authentication and key exchange.](images/coppkey.png)
+:::image type="content" source="images/coppkey.png" alt-text="Diagram illustrating the process of authentication and key exchange to establish a secure connection.":::
 
 For more information about MACs, see [Cryptographic Primitives Used by COPP](cryptographic-primitives-used-by-copp.md).
 
@@ -58,14 +54,3 @@ The following table describes the values in the preceding figure.
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
- 
-
-
-
-
-

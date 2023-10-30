@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["IrqlExApcLte3 rule (wdm)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IrqlExApcLte3
 api_type:
@@ -39,7 +40,7 @@ Drivers that have errors related to IRQL can cause serious problems and could ca
 
 The following code violates this rule:
 
-```ManagedCPlusPlus
+```cpp
 NTSTATUS
 DispatchRequest (
     _In_ PDEVICE_REQUEST DeviceRequest

@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["StorPortCompleteRequest rule (storport)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - StorPortCompleteRequest
 api_type:

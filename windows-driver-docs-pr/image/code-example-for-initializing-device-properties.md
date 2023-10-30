@@ -1,23 +1,22 @@
 ---
-title: Code Example for Initializing Device Properties
-description: Code Example for Initializing Device Properties
-ms.date: 04/20/2017
+title: Code example for initializing device properties
+description: Code example for initializing device properties
+ms.date: 03/28/2023
 ---
 
-# Code Example for Initializing Device Properties
-
+# Code example for initializing device properties
 
 During the [**IWiaMiniDrv::drvInitItemProperties**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvinititemproperties) call for the Root item, the minidriver must initialize the following WIA properties that describe the device:
 
-[**WIA\_DPS\_SERVICE\_ID**](./wia-dps-service-id.md)
+[**WIA_DPS_SERVICE_ID**](./wia-dps-service-id.md)
 
-[**WIA\_DPS\_DEVICE\_ID**](./wia-dps-device-id.md)
+[**WIA_DPS_DEVICE_ID**](./wia-dps-device-id.md)
 
-[**WIA\_DPS\_GLOBAL\_IDENTITY**](./wia-dps-global-identity.md)
+[**WIA_DPS_GLOBAL_IDENTITY**](./wia-dps-global-identity.md)
 
-[**WIA\_DPA\_FIRMWARE\_VERSION**](./wia-dpa-firmware-version.md)
+[**WIA_DPA_FIRMWARE_VERSION**](./wia-dpa-firmware-version.md)
 
-The following code example shows how to initialize WIA\_DPS\_SERVICE\_ID by using the **OpenProperyStore** and **ReadDeviceProperty** methods to read PKEY\_PNPX\_ServiceId. The same general method can be used to initialize each of the device properties.
+The following code example shows how to initialize WIA_DPS_SERVICE_ID by using the **OpenPropertyStore** and **ReadDeviceProperty** methods to read PKEY_PNPX_ServiceId. The same general method can be used to initialize each of the device properties.
 
 ```cpp
 HRESULT hr = S_OK;
@@ -78,6 +77,3 @@ if (pPropertyStore)
     pPropertyStore = NULL;
 }
 ```
-
- 
-

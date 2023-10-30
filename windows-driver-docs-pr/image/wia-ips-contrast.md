@@ -4,6 +4,7 @@ description: The WIA_IPS_CONTRAST property contains the current hardware contras
 keywords: ["WIA_IPS_CONTRAST Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_CONTRAST
 api_location:

@@ -4,6 +4,7 @@ description: The KSPROPERTY\_SOUNDDETECTOR\_PATTERNS property is set by the oper
 keywords: ["KSPROPERTY_SOUNDDETECTOR_PATTERNS Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_SOUNDDETECTOR_PATTERNS
 api_location:

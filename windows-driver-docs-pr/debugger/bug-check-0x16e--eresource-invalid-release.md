@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x16E ERESOURCE_INVALID_RELEASE", "ERESOURCE_INVALID_RELEA
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ERESOURCE_INVALID_RELEASE
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The ERESOURCE\_INVALID\_RELEASE bug check has a value of 0x0000016E. This indicates that the target thread pointer supplied to ExReleaseResourceForThreadLite was invalid.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## ERESOURCE\_INVALID\_RELEASE Parameters
@@ -34,7 +35,7 @@ The ERESOURCE\_INVALID\_RELEASE bug check has a value of 0x0000016E. This indica
 
 ## Cause
 
-This bugcheck will hit if a call to ExSetOwnerPointerEx was skipped by the API client (if a cross-thread release was intended) or if the caller accidentally passed in a value other that supplied by ExGetCurrentResourceThread.
+This bugcheck will hit if a call to ExSetOwnerPointerEx was skipped by the API client (if a cross-thread release was intended) or if the caller accidentally passed in a value other that supplied by [**ExGetCurrentResourceThread**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-psgetcurrentthread).
 
  
 

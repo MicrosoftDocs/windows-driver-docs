@@ -2,6 +2,7 @@
 title: SO_WSK_SECURITY
 description: SO_WSK_SECURITY
 ms.date: 07/18/2017
+ms.topic: reference
 keywords:
  - SO_WSK_SECURITY Network Drivers Starting with Windows Vista
 ---
@@ -127,7 +128,7 @@ A WSK application must specify a pointer to an IRP when calling the **WskControl
 
 A WSK application must call the [**WskControlClient**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_client) function with the [**WSK\_RELEASE\_SD**](wsk-release-sd.md) control code to release the cached copy of the security descriptor when it is no longer needed.
 
-For more information about the SECURITY\_DESCRIPTOR structure, see the reference page for SECURITY\_DESCRIPTOR in the Microsoft Windows SDK documentation.
+See the reference page for the [SECURITY_DESCRIPTOR](/windows/win32/api/winnt/ns-winnt-security_descriptor) structure for more information.
 
 ## Requirements
 

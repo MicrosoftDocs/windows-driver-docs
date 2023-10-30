@@ -1,7 +1,8 @@
 ---
 title: NDIS_STATUS_WWAN_DEVICE_CAPS
+ms.topic: reference
 description: Miniport drivers use the NDIS_STATUS_WWAN_DEVICE_CAPS notification to respond to OID_WWAN_DEVICE_CAPS query requests. Miniport drivers cannot use this notification to send unsolicited events.This notification uses the NDIS_WWAN_DEVICE_CAPS structure.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - NDIS_STATUS_WWAN_DEVICE_CAPS Network Drivers Starting with Windows Vista
 ---

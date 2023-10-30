@@ -87,7 +87,7 @@ You can use **kdbgctrl -cb** to check whether kernel debugging is blocked.
 
 The DbgPrint buffer stores messages that the target computer has sent to the kernel debugger.
 
-If Full Kernel Debugging is enabled, these messages will automatically appear in the kernel debugger. But if this option is disabled, these messages will be stored in the buffer. At a later point in time, you can enable kernel debugging, connect to a kernel debugger, and use the [**!dbgprint**](-dbgprint.md) extension to see the contents of this buffer. For more information about this buffer, see The DbgPrint Buffer.
+If Full Kernel Debugging is enabled, these messages will automatically appear in the kernel debugger. But if this option is disabled, these messages will be stored in the buffer. At a later point in time, you can enable kernel debugging, connect to a kernel debugger, and use the [**!dbgprint**](../debuggercmds/-dbgprint.md) extension to see the contents of this buffer. For more information about this buffer, see The DbgPrint Buffer.
 
 The default size of the DbgPrint buffer is 4 KB on a free build of Windows. To determine the current buffer size, use **kdbgctrl -cdb**. To change the buffer size, use **kdbgctrl -sdb***Size*, where *Size* specifies the new buffer size. For syntax details, see [**KDbgCtrl Command-Line Options**](kdbgctrl-command-line-options.md).
 

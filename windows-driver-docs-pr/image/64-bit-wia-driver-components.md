@@ -1,7 +1,7 @@
 ---
 title: 64-bit WIA driver components
 description: 64-Bit WIA driver components
-ms.date: 03/21/2022
+ms.date: 03/27/2023
 ms.custom: contperf-fy22q3
 ---
 

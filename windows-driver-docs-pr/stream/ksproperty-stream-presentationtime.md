@@ -4,6 +4,7 @@ description: The KSPROPERTY\_STREAM\_PRESENTATIONTIME property is used to retrie
 keywords: ["KSPROPERTY_STREAM_PRESENTATIONTIME Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_STREAM_PRESENTATIONTIME
 api_location:

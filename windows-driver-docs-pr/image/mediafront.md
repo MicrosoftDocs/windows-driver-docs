@@ -4,15 +4,15 @@ description: The required MediaFront element contains all parameters that are sp
 keywords: ["MediaFront element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn MediaFront
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 05/01/2023
 ---
 
 # MediaFront element
-
 
 The required **MediaFront** element contains all parameters that are specific to the scanning of the front side of the physical media.
 
@@ -30,54 +30,23 @@ There are no attributes.
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="colorprocessing.md" data-raw-source="[&lt;strong&gt;ColorProcessing&lt;/strong&gt;](colorprocessing.md)"><strong>ColorProcessing</strong></a></p></td>
-</tr>
-<tr class="even">
-<td><p><a href="resolution.md" data-raw-source="[&lt;strong&gt;Resolution&lt;/strong&gt;](resolution.md)"><strong>Resolution</strong></a></p></td>
-</tr>
-<tr class="odd">
-<td><p><a href="scanregion.md" data-raw-source="[&lt;strong&gt;ScanRegion&lt;/strong&gt;](scanregion.md)"><strong>ScanRegion</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**ColorProcessing**](colorprocessing.md) |
+| [**Resolution**](resolution.md) |
+| [**ScanRegion**](scanregion.md) |
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="mediasides.md" data-raw-source="[&lt;strong&gt;MediaSides&lt;/strong&gt;](mediasides.md)"><strong>MediaSides</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**MediaSides**](mediasides.md) |
 
 ## Remarks
 
 If the **MediaFront** element does not contain a [**ScanRegion**](scanregion.md) element, the WSD Scan Service should use 0 as the offsets and the width and height of the [**InputMediaSize**](inputmediasize.md), if given. If **ScanRegion** is missing and **InputMediaSize** is not specified or cannot be determined by the scan device, you can determine the implementation.
 
 ## See also
-
 
 [**ColorProcessing**](colorprocessing.md)
 
@@ -90,13 +59,3 @@ If the **MediaFront** element does not contain a [**ScanRegion**](scanregion.md)
 [**Resolution**](resolution.md)
 
 [**ScanRegion**](scanregion.md)
-
- 
-
- 
-
-
-
-
-
-

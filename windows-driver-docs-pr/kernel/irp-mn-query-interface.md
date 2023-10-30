@@ -2,6 +2,7 @@
 title: IRP_MN_QUERY_INTERFACE
 description: The IRP_MN_QUERY_INTERFACE request enables a driver to export a direct-call interface to other drivers.A bus driver that exports an interface must handle this request for its child devices (child PDOs).
 ms.date: 07/30/2021
+ms.topic: reference
 keywords:
  - IRP_MN_QUERY_INTERFACE Kernel-Mode Driver Architecture
 ---

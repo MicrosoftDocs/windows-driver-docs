@@ -1,7 +1,8 @@
 ---
 title: NDIS_STATUS_PORT_STATE
+ms.topic: reference
 description: Miniport drivers that support NDIS ports use the NDIS_STATUS_PORT_STATE status indication to indicate changes in the state of an NDIS port.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - NDIS_STATUS_PORT_STATE Network Drivers Starting with Windows Vista
 ---

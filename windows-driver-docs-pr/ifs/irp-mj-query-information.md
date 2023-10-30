@@ -1,6 +1,6 @@
 ---
-title: IRP_MJ_QUERY_INFORMATION (IFS)
-description: IRP\_MJ\_QUERY\_INFORMATION
+title: IRP_MJ_QUERY_INFORMATION (FS and filter drivers)
+description: IRP_MJ_QUERY_INFORMATION
 keywords: ["IRP_MJ_QUERY_INFORMATION Installable File System Drivers"]
 topic_type:
 - apiref
@@ -8,207 +8,133 @@ api_name:
 - IRP_MJ_QUERY_INFORMATION
 api_type:
 - NA
-ms.date: 11/28/2017
+ms.date: 03/13/2023
+ms.topic: reference
 ---
 
-# IRP\_MJ\_QUERY\_INFORMATION (IFS)
-
+# IRP_MJ_QUERY_INFORMATION (FS and filter drivers)
 
 ## When Sent
 
-
-The IRP\_MJ\_QUERY\_INFORMATION request is sent by the I/O Manager and other operating system components, as well as by other kernel-mode drivers. This request can be sent, for example, when a user-mode application has called a Microsoft Win32 function such as **GetFileInformationByHandle** or when a kernel-mode component has called [**ZwQueryInformationFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntqueryinformationfile).
+The I/O Manager, other operating system components, and other kernel-mode drivers send IRP_MJ_QUERY_INFORMATION requests.  This request can be sent, for example, when a user-mode application has called a Win32 function such as **GetFileInformationByHandle** or when a kernel-mode component has called [**ZwQueryInformationFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntqueryinformationfile).
 
 ## Operation: File System Drivers
 
-
 The file system driver should extract and decode the file object to determine whether it represents a user open of a file or directory. If it does, the driver should process the query and complete the IRP. Otherwise, the driver should complete the IRP as appropriate without processing the query.
 
-The types of file and directory information that can be queried are file system-dependent, but generally include the following:
+The types of file and directory information that can be queried are file system-dependent, but generally include the following values:
 
-FileAllInformation
-FileAlternateNameInformation
-FileAttributeTagInformation
-FileBasicInformation
-FileCompressionInformation
-FileEaInformation
-FileInternalInformation
-FileNameInformation
-FileNetworkOpenInformation
-FilePositionInformation
-FileStandardInformation
-FileStreamInformation
-FileHardLinkInformation
-Although the FileAccessInformation, FileAlignmentInformation, and FileModeInformation information types can also be passed as a parameter to [**ZwQueryInformationFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntqueryinformationfile), this information is file-system-independent. Thus **ZwQueryInformationFile** supplies this information directly, without sending an IRP\_MJ\_QUERY\_INFORMATION request to the file system.
+- FileAllInformation
+- FileAlternateNameInformation
+- FileAttributeTagInformation
+- FileBasicInformation
+- FileCompressionInformation
+- FileEaInformation
+- FileInternalInformation
+- FileNameInformation
+- FileNetworkOpenInformation
+- FilePositionInformation
+- FileStandardInformation
+- FileStreamInformation
+- FileHardLinkInformation
 
-For more information about these information types, refer to the See Also links below. For a list of all possible information types, see the FILE\_INFORMATION\_CLASS enumeration in ntifs.h.
+Although the FileAccessInformation, FileAlignmentInformation, and FileModeInformation information types can also be passed as a parameter to [**ZwQueryInformationFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntqueryinformationfile), this information is file-system-independent. Thus **ZwQueryInformationFile** supplies this information directly, without sending an IRP_MJ_QUERY_INFORMATION request to the file system.
+
+For a list of all possible information types, see the FILE_INFORMATION_CLASS enumeration in *ntifs.h*.
 
 ## Operation: Network Redirector Drivers
 
+A network redirector driver not based on [RDBSS](./the-rdbss-driver-and-library.md) that receives an IRP_MJ_QUERY_INFORMATION request for FileAllInformation or FileNameInformation must respond with the full "\\server\\share\\file" path for the file name with a single leading backslash before the server name. This format for name information must be returned for a file accessed as a Universal Naming Convention (UNC) name (*\\\\server\\share\\folder\\filename.txt*, for example) or a file located on a mapped drive (*x:\\folder\\filename.txt*, for example).
 
-A network redirector driver not based on [RDBSS](./the-rdbss-driver-and-library.md) that receives an IRP\_MJ\_QUERY\_INFORMATION request for FileAllInformation or FileNameInformation, must respond with the full "\\server\\share\\file" path for the file name with a single leading backslash before the server name. This format for name information must be returned for a file accessed as a Universal Naming Convention (UNC) name (*\\\\server\\share\\folder\\filename.txt*, for example) or a file located on a mapped drive (*x:\\folder\\filename.txt*, for example).
+For a network mini-redirector driver (a driver that links dynamically with rdbss.sys or that links statically with rdbsslib.lib), RDBSS handles an IRP_MJ_QUERY_INFORMATION request for FileNameInformation and returns the correct name information. For a network mini-redirector driver, RDBSS handles an IRP_MJ_QUERY_INFORMATION request for FileAllInformation for the name information part of the request. The other parts of the FileAllInformation request are sent as separate requests to the network mini-redirector driver to resolve.
 
-For a network mini-redirector driver (a driver that links dynamically with rdbss.sys or that links statically with rdbsslib.lib), an IRP\_MJ\_QUERY\_INFORMATION request for FileNameInformation is handled internally by RDBSS and the correct name information is returned. For a network mini-redirector driver, an IRP\_MJ\_QUERY\_INFORMATION request for FileAllInformation is handled internally by RDBSS for the name information part of the request. The other parts of the FileAllInformation request are sent as separate requests to the network mini-redirector driver to resolve.
+A network redirector that receives an IRP_MJ_QUERY_INFORMATION request for FileAlternateNameInformation should respond with the short name (8.3 characters) for the file without any path information, if a short name exists for the file.
 
-A network redirector that receives an IRP\_MJ\_QUERY\_INFORMATION request for FileAlternateNameInformation should respond with the short name (8.3 characters) for the file without any path information, if a short name exists for the file.
-
-## Operation: File System Filter Drivers
-
+## Operation: Legacy File System Filter Drivers
 
 The filter driver should pass this IRP down to the next-lower driver on the stack.
 
 ## Parameters
 
+A file system or filter driver calls [**IoGetCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetcurrentirpstacklocation) for the given IRP to get a pointer to its own stack location in the IRP. In the following parameters, **Irp** points to the [**IRP**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp) and **IrpSp** points to the [**IO_STACK_LOCATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location). The driver can use the information that is set in the following members of the IRP and the IRP stack location to process a query file information request:
 
-A file system or filter driver calls [**IoGetCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetcurrentirpstacklocation) with the given IRP to get a pointer to its own [**stack location**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location) in the IRP, shown in the following list as *IrpSp*. (The IRP is shown as *Irp*.) The driver can use the information that is set in the following members of the IRP and the IRP stack location in processing a query file information request:
+- **DeviceObject** is a pointer to the target device object.
 
-<a href="" id="deviceobject"></a>*DeviceObject*  
-Pointer to the target device object.
+- **Irp->AssociatedIrp.SystemBuffer** points to the output buffer where the file or directory information is to be returned. This information is stored in one of the following structures:
 
-<a href="" id="irp--associatedirp-systembuffer"></a>*Irp-&gt;AssociatedIrp.SystemBuffer*  
-Pointer to the output buffer where the file or directory information is to be returned. This information is stored in one of the following structures:
+- FILE_ALL_INFORMATION
+- FILE_ATTRIBUTE_TAG_INFORMATION
+- FILE_BASIC_INFORMATION
+- FILE_COMPRESSION_INFORMATION
+- FILE_EA_INFORMATION
+- FILE_INTERNAL_INFORMATION
+- FILE_NAME_INFORMATION
+- FILE_NETWORK_OPEN_INFORMATION
+- FILE_POSITION_INFORMATION
+- FILE_STANDARD_INFORMATION
+- FILE_STREAM_INFORMATION
+- FILE_LINKS_INFORMATION
 
-FILE\_ALL\_INFORMATION
+- **Irp->IoStatus** points to an [**IO_STATUS_BLOCK**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block) structure that receives the final completion status and information about the requested operation. For more information, see the description of the **IoStatusBlock** parameter in the [**ZwQueryInformationFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntqueryinformationfile). routine.
 
-FILE\_ATTRIBUTE\_TAG\_INFORMATION
+- **Irp->UserBuffer** is an optional pointer to a caller-supplied output buffer into which the contents of **Irp->AssociatedIrp.SystemBuffer** are copied during I/O completion by the I/O manager. Drivers don't use this buffer to return any data for the request.
 
-FILE\_BASIC\_INFORMATION
+- **IrpSp->FileObject** points to the file object that is associated with **DeviceObject**.
 
-FILE\_COMPRESSION\_INFORMATION
+  The **IrpSp->FileObject** parameter contains a pointer to the **RelatedFileObject** field, which is also a FILE_OBJECT structure. The **RelatedFileObject** field of the FILE_OBJECT structure isn't valid during the processing of IRP_MJ_QUERY_INFORMATION and shouldn't be used.
 
-FILE\_EA\_INFORMATION
+- **IrpSp->MajorFunction** is set to IRP_MJ_QUERY_INFORMATION.
 
-FILE\_INTERNAL\_INFORMATION
+- **IrpSp->Parameters.QueryFile.FileInformationClass** is the type of file information to be queried. This member can be one of the following values.
 
-FILE\_NAME\_INFORMATION
+  | Value | Meaning |
+  | ----- | ------- |
+  | FileAllInformation | Return a FILE_ALL_INFORMATION structure for the file. |
+  | FileAttributeTagInformation | Return a [**FILE_ATTRIBUTE_TAG_INFORMATION**](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_file_attribute_tag_information) structure for the file. |
+  | FileBasicInformation | Return a [**FILE_BASIC_INFORMATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_basic_information) structure for the file. |
+  | FileCompressionInformation | Return a FILE_COMPRESSION_INFORMATION structure for the file. |
+  | FileEaInformation | Return a FILE_EA_INFORMATION structure for the file. |
+  | FileInternalInformation | Return a [**FILE_INTERNAL_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_internal_information) structure for the file. |
+  | FileNameInformation | Return a [**FILE_NAME_INFORMATION**](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_file_name_information) structure for the file. |
+  | FileNetworkOpenInformation | Return a single [**FILE_NETWORK_OPEN_INFORMATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_network_open_information) structure for the file. |
+  | FilePositionInformation | Return a single [**FILE_POSITION_INFORMATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_position_information) structure for the file. |
+  | FileStandardInformation | Return a single [**FILE_STANDARD_INFORMATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_standard_information) structure for the file. |
+  | FileStreamInformation | Return a single [**FILE_STREAM_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_stream_information) structure for the file. |
+  | FileHardLinkInformation | Return a [**FILE_LINKS_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_links_information) structure for the file. |
 
-FILE\_NETWORK\_OPEN\_INFORMATION
-
-FILE\_POSITION\_INFORMATION
-
-FILE\_STANDARD\_INFORMATION
-
-FILE\_STREAM\_INFORMATION
-
-FILE\_LINKS\_INFORMATION
-
-<a href="" id="irp--iostatus"></a>*Irp-&gt;IoStatus*
-Pointer to an [**IO\_STATUS\_BLOCK**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block) structure that receives the final completion status and information about the requested operation. For more information, see the description of the *IoStatusBlock* parameter in the [**ZwQueryInformationFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntqueryinformationfile). routine.
-
-<a href="" id="irp--userbuffer"></a>*Irp-&gt;UserBuffer*
-Optional pointer to a caller-supplied output buffer into which the contents of *Irp-&gt;AssociatedIrp.SystemBuffer* are copied during I/O completion by the I/O manager. Drivers do not use this buffer to return any data for the request.
-
-<a href="" id="irpsp--fileobject"></a>*IrpSp-&gt;FileObject*
-Pointer to the file object that is associated with *DeviceObject*.
-
-The *IrpSp-&gt;FileObject* parameter contains a pointer to the **RelatedFileObject** field, which is also a FILE\_OBJECT structure. The **RelatedFileObject** field of the FILE\_OBJECT structure is not valid during the processing of IRP\_MJ\_QUERY\_INFORMATION and should not be used.
-
-<a href="" id="irpsp--majorfunction"></a>*IrpSp-&gt;MajorFunction*
-Specifies IRP\_MJ\_QUERY\_INFORMATION.
-
-<a href="" id="irpsp--parameters-queryfile-fileinformationclass"></a>*IrpSp-&gt;Parameters.QueryFile.FileInformationClass*
-Type of file information to be queried. This member can be one of the following values.
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Value</th>
-<th align="left">Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>FileAllInformation</strong></p></td>
-<td align="left"><p>Return a FILE_ALL_INFORMATION structure for the file.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>FileAttributeTagInformation</strong></p></td>
-<td align="left"><p>Return a <a href="/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_file_attribute_tag_information" data-raw-source="[&lt;strong&gt;FILE_ATTRIBUTE_TAG_INFORMATION&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_file_attribute_tag_information)"><strong>FILE_ATTRIBUTE_TAG_INFORMATION</strong></a> structure for the file.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>FileBasicInformation</strong></p></td>
-<td align="left"><p>Return a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_basic_information" data-raw-source="[&lt;strong&gt;FILE_BASIC_INFORMATION&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_basic_information)"><strong>FILE_BASIC_INFORMATION</strong></a> structure for the file.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>FileCompressionInformation</strong></p></td>
-<td align="left"><p>Return a FILE_COMPRESSION_INFORMATION structure for the file.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>FileEaInformation</strong></p></td>
-<td align="left"><p>Return a FILE_EA_INFORMATION structure for the file.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>FileInternalInformation</strong></p></td>
-<td align="left"><p>Return a <a href="/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_internal_information" data-raw-source="[&lt;strong&gt;FILE_INTERNAL_INFORMATION&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_internal_information)"><strong>FILE_INTERNAL_INFORMATION</strong></a> structure for the file.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>FileNameInformation</strong></p></td>
-<td align="left"><p>Return a <a href="/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_file_name_information" data-raw-source="[&lt;strong&gt;FILE_NAME_INFORMATION&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_file_name_information)"><strong>FILE_NAME_INFORMATION</strong></a> structure for the file.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>FileNetworkOpenInformation</strong></p></td>
-<td align="left"><p>Return a single <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_network_open_information" data-raw-source="[&lt;strong&gt;FILE_NETWORK_OPEN_INFORMATION&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_network_open_information)"><strong>FILE_NETWORK_OPEN_INFORMATION</strong></a> structure for the file.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>FilePositionInformation</strong></p></td>
-<td align="left"><p>Return a single <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_position_information" data-raw-source="[&lt;strong&gt;FILE_POSITION_INFORMATION&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_position_information)"><strong>FILE_POSITION_INFORMATION</strong></a> structure for the file.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>FileStandardInformation</strong></p></td>
-<td align="left"><p>Return a single <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_standard_information" data-raw-source="[&lt;strong&gt;FILE_STANDARD_INFORMATION&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_standard_information)"><strong>FILE_STANDARD_INFORMATION</strong></a> structure for the file.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>FileStreamInformation</strong></p></td>
-<td align="left"><p>Return a single <a href="/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_stream_information" data-raw-source="[&lt;strong&gt;FILE_STREAM_INFORMATION&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_stream_information)"><strong>FILE_STREAM_INFORMATION</strong></a> structure for the file.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>FileHardLinkInformation</strong></p></td>
-<td align="left"><p>Return a <a href="/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_links_information" data-raw-source="[&lt;strong&gt;FILE_LINKS_INFORMATION&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_links_information)"><strong>FILE_LINKS_INFORMATION</strong></a> structure for the file.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
-<a href="" id="irpsp--parameters-queryfile-length"></a>*IrpSp-&gt;Parameters.QueryFile.Length*
-Length, in bytes, of the buffer pointed to by *Irp-&gt;AssociatedIrp.SystemBuffer*.
+- **IrpSp->Parameters.QueryFile.Length** is the length, in bytes, of the buffer pointed to by *Irp->AssociatedIrp.SystemBuffer*.
 
 ## Remarks
 
-The IRP\_MJ\_QUERY\_INFORMATION operation is always buffered by the I/O manager. The *Irp-&gt;AssociatedIrp.SystemBuffer* that is used to return the requested file or directory information is allocated by the I/O manager from non-paged pool memory. As a result, the *Irp-&gt;AssociatedIrp.SystemBuffer* returned by the operating system will always be a valid address for the length specified in *IrpSp-&gt;Parameters.QueryFile.Length*.
+The I/O manager always buffers the IRP_MJ_QUERY_INFORMATION operation. The I/O Manager allocates from non-paged pool memory the **Irp->AssociatedIrp.SystemBuffer** that is used to return the requested file or directory information. As a result, the **Irp->AssociatedIrp.SystemBuffer** returned by the operating system always is a valid address for the length specified in **IrpSp->Parameters.QueryFile.Length**.
 
-The *Irp-&gt;AssociatedIrp.UserBuffer* is used internally by the I/O manager and should not be used by file system or file system filter drivers.
+The **Irp->AssociatedIrp.UserBuffer** is used internally by the I/O manager and shouldn't be used by file system or file system filter drivers.
 
 ## See also
 
+[**FILE_ALIGNMENT_INFORMATION**](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_file_alignment_information)
 
-[**FILE\_ALIGNMENT\_INFORMATION**](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_file_alignment_information)
+[**FILE_ATTRIBUTE_TAG_INFORMATION**](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_file_attribute_tag_information)
 
-[**FILE\_ATTRIBUTE\_TAG\_INFORMATION**](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_file_attribute_tag_information)
+[**FILE_BASIC_INFORMATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_basic_information)
 
-[**FILE\_BASIC\_INFORMATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_basic_information)
+[**FILE_INTERNAL_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_internal_information)
 
-[**FILE\_INTERNAL\_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_internal_information)
+[**FILE_NAME_INFORMATION**](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_file_name_information)
 
-[**FILE\_NAME\_INFORMATION**](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_file_name_information)
+[**FILE_NETWORK_OPEN_INFORMATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_network_open_information)
 
-[**FILE\_NETWORK\_OPEN\_INFORMATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_network_open_information)
+[**FILE_POSITION_INFORMATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_position_information)
 
-[**FILE\_POSITION\_INFORMATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_position_information)
+[**FILE_STANDARD_INFORMATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_standard_information)
 
-[**FILE\_STANDARD\_INFORMATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_standard_information)
+[**FILE_STREAM_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_stream_information)
 
-[**FILE\_STREAM\_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_stream_information)
+[**FILE_LINKS_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_links_information)
 
-[**FILE\_LINKS\_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_links_information)
+[**IO_STACK_LOCATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location)
 
-[**IO\_STACK\_LOCATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location)
-
-[**IO\_STATUS\_BLOCK**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block)
+[**IO_STATUS_BLOCK**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block)
 
 [**IoCheckEaBufferValidity**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iocheckeabuffervalidity)
 
@@ -216,7 +142,6 @@ The *Irp-&gt;AssociatedIrp.UserBuffer* is used internally by the I/O manager and
 
 [**IRP**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp)
 
-[**IRP\_MJ\_SET\_INFORMATION**](irp-mj-set-information.md)
+[**IRP_MJ_SET_INFORMATION**](irp-mj-set-information.md)
 
 [**ZwQueryInformationFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntqueryinformationfile)
-

@@ -39,7 +39,7 @@ Open a Command Prompt window as Administrator, and enter the following command:
 
 **kd -kl**
 
-## <span id="related_topics"></span>Related topics
+## <span id="related_topics"></span>See also
 
 
 [Local Kernel-Mode Debugging](performing-local-kernel-debugging.md)

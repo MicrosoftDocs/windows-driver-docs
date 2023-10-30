@@ -4,6 +4,7 @@ description: The AVCSTRM_SET_PROPERTY function code is not currently implemented
 keywords: ["AVCSTRM_SET_PROPERTY Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - AVCSTRM_SET_PROPERTY
 api_type:

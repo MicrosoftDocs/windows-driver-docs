@@ -13,9 +13,9 @@ ms.date: 02/20/2020
 
 The names of global variables are stored in the symbol files that are created when an application is compiled. The debugger interprets the name of a global variable as a virtual address. Any command that accepts an address as a parameter also accepts the name of a variable. Therefore, you can use all of the commands that are described in [Accessing Memory by Virtual Address](accessing-memory-by-virtual-address.md) to read or write global variables.
 
-In addition, you can use the [**? (Evaluate Expression)**](---evaluate-expression-.md) command to display the address that is associated with any symbol.
+In addition, you can use the [**? (Evaluate Expression)**](../debuggercmds/---evaluate-expression-.md) command to display the address that is associated with any symbol.
 
-WinDbg provides user interface elements that you can use (in addition to commands) to view and edit global variables. See [Viewing and Editing Global Variables in WinDbg](viewing-and-editing-global-variables-in-windbg.md).
+WinDbg provides user interface elements that you can use (in addition to commands) to view and edit global variables. See [Viewing and Editing Global Variables in WinDbg (Classic)](viewing-and-editing-global-variables-in-windbg.md).
 
 Consider the following example. Suppose that you want to examine the `MyCounter` global variable, which is a 32-bit integer. Also suppose that the default radix is 10.
 
@@ -28,7 +28,7 @@ Evaluate expression: 1244892 = 0012fedc
 0012fedc  00000052
 ```
 
-The first command output tells you that the address of `MyCounter` is 0x0012FEDC. You can then use the [**d\* (Display Memory)**](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) command to display one double-word at this address. (You could also use 1244892, which is the decimal version of this address. However, most C programmers prefer to use 0x0012FEDC.) The second command tells you that the value of MyCounter is 0x52 (decimal 82).
+The first command output tells you that the address of `MyCounter` is 0x0012FEDC. You can then use the [**d\* (Display Memory)**](../debuggercmds/d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) command to display one double-word at this address. (You could also use 1244892, which is the decimal version of this address. However, most C programmers prefer to use 0x0012FEDC.) The second command tells you that the value of MyCounter is 0x52 (decimal 82).
 
 You could also perform these steps in the following command.
 
@@ -43,7 +43,7 @@ To change the value of `MyCounter` to decimal 83, use the following command.
 0:000> ed MyCounter 83 
 ```
 
-This example uses decimal input, because that format seems more natural for an integer. However, the output of the [**d\\***](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) command is still in hexadecimal format.
+This example uses decimal input, because that format seems more natural for an integer. However, the output of the [**d\\***](../debuggercmds/d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) command is still in hexadecimal format.
 
 ```dbgcmd
 0:000> dd MyCounter L1 0012fedc  00000053

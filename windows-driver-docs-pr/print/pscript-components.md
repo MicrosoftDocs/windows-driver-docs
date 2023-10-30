@@ -4,14 +4,12 @@ description: Pscript Components
 keywords:
 - PostScript Printer Driver WDK print , components
 - Pscript WDK print , components
-ms.date: 04/20/2017
+ms.date: 01/30/2023
 ---
 
 # Pscript Components
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 Pscript components consist of DLLs, plus text and binary data files, as illustrated in the following diagram:
 
@@ -48,11 +46,3 @@ Optional, printer-specific, [user interface plug-in](user-interface-plug-ins.md)
 
 <a href="" id="rendering-plug-in"></a>**Rendering Plug-In**  
 Optional, printer-specific, [rendering plug-in](rendering-plug-ins.md).
-
- 
-
- 
-
-
-
-

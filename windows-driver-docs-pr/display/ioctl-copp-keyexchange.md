@@ -4,6 +4,7 @@ description: Returns the digital certificate used by the graphics hardware.
 keywords: ["IOCTL_COPP_KeyExchange control code Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IOCTL_COPP_KeyExchange
 api_type:

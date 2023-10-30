@@ -4,11 +4,12 @@ description: The optional ContentType element specifies the main characteristics
 keywords: ["ContentType element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ContentType wscn MustHonor "" wscn Override "" wscn UsedDefault ""
 api_type:
 - Schema
-ms.date: 11/09/2020
+ms.date: 03/29/2023
 ---
 
 # ContentType element
@@ -38,13 +39,13 @@ The optional **ContentType** element specifies the main characteristics of the o
 
 Required. One of the following values:
 
-|Term  |Description  |
-|---------|---------|
-|Auto     |      The scan device will automatically detect the original type.   |
-|Text     |     he document is mainly composed of distinct text that contrasts strongly with the background.    |
-|Photo     |     The original is mainly composed of photographic images, where shades change gradually and edges are not distinct.    |
-|Halftone     |   The original is mainly composed of halftoned images.      |
-|Mixed     |     A multipage document with characteristics of more than one specific DocumentType.    |
+| Term | Description |
+|--|--|
+| Auto | The scan device will automatically detect the original type. |
+| Text | he document is mainly composed of distinct text that contrasts strongly with the background. |
+| Photo | The original is mainly composed of photographic images, where shades change gradually and edges are not distinct. |
+| Halftone | The original is mainly composed of halftoned images. |
+| Mixed | A multipage document with characteristics of more than one specific DocumentType. |
 
 You can both extend and subset values for this element.
 

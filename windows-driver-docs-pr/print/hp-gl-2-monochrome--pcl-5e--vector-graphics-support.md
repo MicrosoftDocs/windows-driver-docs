@@ -8,14 +8,12 @@ keywords:
 - HP-GL/2 monochrome WDK Unidrv , about HP-GL/2 monochrome
 - monochrome vector graphics WDK Unidrv
 - PCL-5e WDK Unidrv , about PCL-5e
-ms.date: 04/20/2017
+ms.date: 01/27/2023
 ---
 
 # HP-GL/2 Monochrome (PCL-5e) Vector Graphics Support
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 HP-GL/2 monochrome (PCL-5e) vector graphics support in Unidrv running on Windows XP and later allows the printer driver to create job data in a format that is optimal for the device: vector graphics versus raster graphics. This normally results in less system overhead, less output data to transmit, and faster print throughput.
 
@@ -30,11 +28,3 @@ The following topics are covered:
 [HP-GL/2 Supported Fonts](hp-gl-2-supported-fonts.md)
 
 [HP-GL/2 Caveats](hp-gl-2-caveats.md)
-
- 
-
- 
-
-
-
-

@@ -4,6 +4,7 @@ description: The KSPROPERTY\_STREAM\_PIPE\_ID property is opaque and used intern
 keywords: ["KSPROPERTY_STREAM_PIPE_ID Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_STREAM_PIPE_ID
 api_type:

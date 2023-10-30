@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x18D SECURE_FAULT_UNHANDLED", "SECURE_FAULT_UNHANDLED"]
 ms.date: 01/04/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SECURE_FAULT_UNHANDLED
 api_type:
@@ -18,7 +19,7 @@ The SECURE\_FAULT\_UNHANDLED bug check has a value of 0x0000018D.
 This bug check indidates that a secure fault originated by the secure kernel could not be handled.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
  ## SECURE\_FAULT\_UNHANDLED Parameters

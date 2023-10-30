@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x20001 HYPERVISOR_ERROR", "HYPERVISOR_ERROR"]
 ms.date: 05/15/2020
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - HYPERVISOR_ERROR
 api_type:
@@ -16,7 +17,7 @@ api_type:
 The HYPERVISOR\_ERROR bug check has a value of 0x00020001. This indicates that the hypervisor has encountered a fatal error.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 ## HYPERVISOR\_ERROR Parameters
 
@@ -30,4 +31,4 @@ The HYPERVISOR\_ERROR bug check has a value of 0x00020001. This indicates that t
 
 ## Resolution
 
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.

@@ -5,6 +5,7 @@ keywords: ["CTRL+F (Break to KD) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - CTRL+F (Break to KD)
 api_type:
@@ -52,14 +53,14 @@ CTRL+F  ENTER
 
 ## Remarks
 
-Under typical conditions, CTRL+F is identical to the standard break commands ([**CTRL+C**](ctrl-c--break-.md) in KD and CDB, and [Debug | Break](debug---break.md) or CTRL+BREAK in WinDbg.)
+Under typical conditions, CTRL+F is identical to the standard break commands ([**CTRL+C**](ctrl-c--break-.md) in KD and CDB, and **Debug | Break** or CTRL+BREAK in WinDbg.)
 
 However, if you are debugging KD with CDB, these two keys will work differently. CTRL+C will be intercepted by the host debugger (CDB), while CTRL+F will be intercepted by the target debugger (KD).
 
 ## <span id="see_also"></span>See also
 
 
-[**.breakin (Break to the Kernel Debugger)**](-breakin--break-to-the-kernel-debugger-.md)
+[**.breakin (Break to the Kernel Debugger)**](../debuggercmds/-breakin--break-to-the-kernel-debugger-.md)
 
  
 

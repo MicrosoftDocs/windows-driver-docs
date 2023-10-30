@@ -1,5 +1,6 @@
 ---
 title: OID_WWAN_REGISTER_STATE
+ms.topic: reference
 description: OID_WWAN_REGISTER_STATE selects a network provider to register with.
 ms.date: 08/08/2017
 keywords: 

@@ -10,7 +10,7 @@ keywords:
 - ISA interrupts WDK PCMCIA bus
 - INF files WDK PCMCIA bus
 - PcmciaExclusiveIrq
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # INF Override for Configuring PC Card Interrupts

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xFE BUGCODE_USB_DRIVER", "BUGCODE_USB_DRIVER"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - BUGCODE_USB_DRIVER
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The BUGCODE\_USB\_DRIVER bug check has a value of 0x000000FE. This indicates that an error has occurred in a universal serial bus (USB) driver.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## BUGCODE\_USB\_DRIVER Parameters
@@ -104,7 +105,7 @@ If Parameter 1 has a value of 8 and Parameter 2 has a value of 6, then Parameter
 
 ## Resolution
 
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
  
  
 

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x30 SET_OF_INVALID_CONTEXT", "SET_OF_INVALID_CONTEXT"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SET_OF_INVALID_CONTEXT
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The SET\_OF\_INVALID\_CONTEXT bug check has a value of 0x00000030. This indicates that the stack pointer in a trap frame had an invalid value.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## SET\_OF\_INVALID\_CONTEXT Parameters

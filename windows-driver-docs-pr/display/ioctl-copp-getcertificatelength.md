@@ -4,6 +4,7 @@ description: Returns the size, in bytes, of the certificate used by the graphics
 keywords: ["IOCTL_COPP_GetCertificateLength control code Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IOCTL_COPP_GetCertificateLength
 api_type:

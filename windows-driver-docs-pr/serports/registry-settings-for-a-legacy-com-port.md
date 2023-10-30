@@ -11,9 +11,10 @@ ms.date: 04/20/2017
 
 # Registry Settings for a Legacy COM Port
 
+In older versions of Windows, a named serial COM port located on the case of a PC, the inbox Serial.sys and Serenum.sys drivers were used.
 
-
-
+> [!NOTE]
+> This topic describes programming traditional COM ports. For information on USB attached serial ports, see [USB serial driver (Usbser.sys)](../usbcon/usb-driver-installation-based-on-compatible-ids.md).
 
 This topic describes the registry settings that Serial uses with legacy [COM ports](configuration-of-com-ports.md). Serial always configures a legacy serial device as a COM port.
 
@@ -21,23 +22,25 @@ Serial queries these entry values when it enumerates a legacy COM port. If a dev
 
 The registry settings for a legacy COM port are under a corresponding legacy COM port subkey that is under the **..\\Services\\Serial\\Parameters** key.
 
+For general information on how to locate and work with Windows drivers registry keys, see [Registry Trees for Devices and Drivers](../install/overview-of-registry-trees-and-keys.md).
+
 The following entry values are the same as described for a [Plug and Play serial device](registry-settings-for-a-plug-and-play-serial-device.md):
 
--   **ClockRate**
+- **ClockRate**
 
--   **PortIndex**
+- **PortIndex**
 
--   **Indexed**
+- **Indexed**
 
--   **RxFIFO**
+- **RxFIFO**
 
--   **TxFIFO**
+- **TxFIFO**
 
--   **MaskInverted**
+- **MaskInverted**
 
--   **DisablePort**
+- **DisablePort**
 
--   **ForceFifoEnable**
+- **ForceFifoEnable**
 
 The following additional entry values are used with legacy COM ports:
 
@@ -70,11 +73,3 @@ Specifies a Plug and Play device identifier for a Plug and Play device. Serial r
 
 <a href="" id="legacydiscovered--reg-dword-"></a>**LegacyDiscovered** (REG\_DWORD)  
 Boolean flag that indicates whether Serial has previously reported the device to the Plug and Play manager. Serial reads and sets this value. If **LegacyDiscovered** is nonzero, Serial has previously reported the device and does not report the device again. Otherwise, Serial reports the device and sets the entry value to 0x00000001.
-
- 
-
- 
-
-
-
-

@@ -4,6 +4,7 @@ description: The KSPROPERTY\_VIDEOPROCAMP\_DIGITAL\_MULTIPLIER property specifie
 keywords: ["KSPROPERTY_VIDEOPROCAMP_DIGITAL_MULTIPLIER Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_VIDEOPROCAMP_DIGITAL_MULTIPLIER
 api_location:

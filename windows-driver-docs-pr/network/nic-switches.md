@@ -9,7 +9,7 @@ ms.date: 04/20/2017
 
 A network adapter that supports single root I/O virtualization (SR-IOV) must implement a hardware bridge that forwards network traffic between the physical port on the adapter and internal [virtual ports (VPorts)](virtual-ports--vports-.md). This bridge is known as the *NIC switch* and is shown in the following figure.
 
-![stack diagram showing sr-iov adapter with a management parent partition and two child partitions containing guest operating systems.](images/sriovarchitecture.png)
+:::image type="content" source="images/sriovarchitecture.png" alt-text="Diagram showing SR-IOV adapter with a management parent partition and two child partitions containing guest operating systems.":::
 
 Each NIC switch contains the following components:
 

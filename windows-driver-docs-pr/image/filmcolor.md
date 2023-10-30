@@ -4,15 +4,15 @@ description: The required FilmColor element contains the list of color processin
 keywords: ["FilmColor element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn FilmColor
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 04/24/2023
 ---
 
 # FilmColor element
-
 
 The required **FilmColor** element contains the list of color processing capabilities that the film scanning input source supports.
 
@@ -30,41 +30,15 @@ There are no attributes.
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="colorentry.md" data-raw-source="[&lt;strong&gt;ColorEntry&lt;/strong&gt;](colorentry.md)"><strong>ColorEntry</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**ColorEntry**](colorentry.md) |
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="film.md" data-raw-source="[&lt;strong&gt;Film&lt;/strong&gt;](film.md)"><strong>Film</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**Film**](film.md) |
 
 ## Remarks
 
@@ -76,17 +50,6 @@ Another important aspect of the returned scan data is the photometric interpreta
 
 ## See also
 
-
 [**ColorEntry**](colorentry.md)
 
 [**Film**](film.md)
-
- 
-
- 
-
-
-
-
-
-

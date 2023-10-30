@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x117 VIDEO_TDR_TIMEOUT_DETECTED", "VIDEO_TDR_TIMEOUT_DETE
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - VIDEO_TDR_TIMEOUT_DETECTED
 api_type:
@@ -18,7 +19,7 @@ The VIDEO\_TDR\_TIMEOUT\_DETECTED live dump has a value of 0x00000117. This indi
 (This code can never be used for a real bug check; it is used to identify live dumps.)
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 ## VIDEO\_TDR\_TIMEOUT\_DETECTED Parameters
 
@@ -78,7 +79,7 @@ The GPU is taking more time than permitted to display graphics to your monitor. 
     -   Defective parts (memory modules, motherboards, etc.)
 -   Visual effects, or too many programs running in the background may be slowing your PC down so that the video card can not respond as necessary.
 
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
 ```dbgcmd
 3: kd> !analyze -v
@@ -155,7 +156,7 @@ Parameter 2 contains a pointer into the responsible device driver module (for ex
 BUGCHECK_P2: ffffffff9a02381e
 ```
 
-You may wish to examine the stack trace using the [**k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command.
+You may wish to examine the stack trace using the [**k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)**](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command.
 
 ```dbgcmd
 3: kd> k

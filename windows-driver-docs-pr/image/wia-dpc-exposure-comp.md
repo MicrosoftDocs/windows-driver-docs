@@ -4,6 +4,7 @@ description: The WIA_DPC_EXPOSURE_COMP property enables you to adjust the set po
 keywords: ["WIA_DPC_EXPOSURE_COMP Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPC_EXPOSURE_COMP
 api_location:

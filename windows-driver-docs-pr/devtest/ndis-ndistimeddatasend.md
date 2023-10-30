@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["NdisTimedDataSend rule (ndis)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - NdisTimedDataSend
 api_type:
@@ -16,7 +17,7 @@ api_type:
 
 The **NdisTimedDataSend** rule verifies that when an NDIS driver calls [*MiniportSendNetBufferLists*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_send_net_buffer_lists), the miniport driver completes the send request within 30 seconds.
 
-You can use a kernel debugger to help identify the cause of the problem. Check RULE\_STATE for PendingNbl, which points to the pending buffer list that causes the timeout. Use the [**!ndiskd.nbl**](../debugger/-ndiskd-nbl.md) debugger extension to examine the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list). For information about using the debugger, see [Windows Debugging](../debugger/index.md).
+You can use a kernel debugger to help identify the cause of the problem. Check RULE\_STATE for PendingNbl, which points to the pending buffer list that causes the timeout. Use the [**!ndiskd.nbl**](../debuggercmds/-ndiskd-nbl.md) debugger extension to examine the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list). For information about using the debugger, see [Windows Debugging](../debugger/index.md).
 
 **Driver model: NDIS**
 

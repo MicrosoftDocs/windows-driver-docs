@@ -6,7 +6,7 @@ keywords:
 - WHEA WDK , terminology
 - hardware errors WDK WHEA , terminology
 - errors WDK WHEA , terminology
-ms.date: 11/29/2021
+ms.date: 03/03/2023
 ---
 
 # Windows Hardware Error Architecture Definitions
@@ -36,7 +36,7 @@ ETW provides software developers the ability to start and stop event tracing ses
 The next-generation model for the interface between the operating system and the platform firmware. The interface consists of data tables that contain platform-related information, plus boot and runtime service calls that are available to the operating system and its loader. Together, these provide a standard environment for booting an operating system and running pre-boot applications. For more information about EFI, see the [Unified Extensible Firmware Interface (UEFI) Specification](https://go.microsoft.com/fwlink/p/?linkid=69484).
 
 <a href="" id="intelligent-platform-management-interface--ipmi-"></a>Intelligent Platform Management Interface (IPMI)  
-An interface that is used to monitor and manage functionality, and that is built into the hardware platform. IPMI is primarily used to monitor the health of the system hardware and to handle environmental error conditions. For more information about IPMI, see the [IPMI Specification](https://go.microsoft.com/fwlink/p/?linkid=69485).
+An interface that is used to monitor and manage functionality, and that is built into the hardware platform. IPMI is primarily used to monitor the health of the system hardware and to handle environmental error conditions. For more information about IPMI, see the [IPMI Specification](https://www.intel.com/content/dam/www/public/us/en/documents/product-specifications/ipmi-v2-rev1-1-spec-errata-6-markup.pdf).
 
 <a href="" id="low-level-hardware-error-handler--llheh-"></a>Low Level Hardware Error Handler (LLHEH)  
 The first operating system code that runs in response to a hardware error condition. An LLHEH can be an interrupt handler, exception handler, polling routine, or a callback routine that is called by the system firmware. All LLHEHs report hardware errors to the operating system through a common hardware error reporting function.

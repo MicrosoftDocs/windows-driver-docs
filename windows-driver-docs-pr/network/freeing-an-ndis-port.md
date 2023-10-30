@@ -5,7 +5,7 @@ keywords:
 - ports WDK NDIS , freeing
 - NDIS ports WDK , freeing
 - freeing NDIS ports
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # Freeing an NDIS Port

@@ -1,23 +1,24 @@
 ---
-title: Iasphelp get\_MediaReady method
+title: Iasphelp getMediaReady method
 description: The MediaReady property enables an ASP Web page to obtain a set of strings that name all of the paper forms for the printer that are currently available for use.
 MS-HAID:
-- 'webfnc\_b10e8434-7e12-4bb5-8c43-77cb890f72a8.xml'
-- 'print.iasphelp\_mediaready'
+- 'webfncb10e8434-7e12-4bb5-8c43-77cb890f72a8.xml'
+- 'print.iasphelpmediaready'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 keywords: ["get_MediaReady method Print Devices", "get_MediaReady method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_MediaReady method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Iasphelp.get_MediaReady
 api_type:
 - COM
-ms.date: 04/20/2017
+ms.date: 06/23/2023
 ---
 
-# Iasphelp::get\_MediaReady method
+# Iasphelp::getMediaReady method
 
 The **MediaReady** property enables an ASP Web page to obtain a set of strings that name all of the paper forms for the printer that are currently available for use.
 
@@ -38,36 +39,15 @@ A caller-supplied location to receive a pointer to a set of strings that name al
 
 This property returns one of the values in the following table.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Return code</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>S_OK</strong></td>
-<td><p>The operation succeeded.</p></td>
-</tr>
-<tr class="even">
-<td><strong>E_HANDLE</strong></td>
-<td><p>The <a href="iasphelp-open.md" data-raw-source="[&lt;strong&gt;Iasphelp::Open&lt;/strong&gt;](iasphelp-open.md)"><strong>Iasphelp::Open</strong></a> method has not been called.</p></td>
-</tr>
-<tr class="odd">
-<td><strong>E_OUTOFMEMORY</strong></td>
-<td><p>Out of memory.</p></td>
-</tr>
-</tbody>
-</table>
+| Return code | Description |
+|--|--|
+| **S_OK** | The operation succeeded. |
+| **E_HANDLE** | The [**Iasphelp::Open**](iasphelp-open.md) method has not been called. |
+| **E_OUTOFMEMORY** | Out of memory. |
 
 ## VBScript Example
 
-This method obtains a list of the names of the paper forms that are currently available for use by calling the printer driver's [**DrvDeviceCapabilities**](/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvdevicecapabilities) function with the DC\_MEDIAREADY flag set.
+This method obtains a list of the names of the paper forms that are currently available for use by calling the printer driver's [**DrvDeviceCapabilities**](/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvdevicecapabilities) function with the DCMEDIAREADY flag set.
 
 The [**Iasphelp::Open**](iasphelp-open.md) method must be called before the **Iasphelp::MediaReady** property can be queried.
 
@@ -81,18 +61,7 @@ MediaReadyArray = objPrinter.MediaReady
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Target platform</p></td>
-<td>Desktop</td>
-</tr>
-</tbody>
-</table>
+**Target platform:** Desktop
 
 ## See also
 

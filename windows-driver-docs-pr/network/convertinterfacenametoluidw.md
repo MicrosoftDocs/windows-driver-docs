@@ -5,6 +5,7 @@ keywords:
 - ConvertInterfaceNameToLuidW
 - netioapi/ConvertInterfaceNameToLuidW
 ms.date: 10/18/2022
+ms.topic: reference
 ---
 
 # ConvertInterfaceNameToLuidW function

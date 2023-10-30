@@ -1,7 +1,8 @@
 ---
 title: WDI_TLV_ACTION_FRAME_BODY
+ms.topic: reference
 description: WDI_TLV_ACTION_FRAME_BODY is a TLV that contains the body of an Action Frame.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - WDI_TLV_ACTION_FRAME_BODY Network Drivers Starting with Windows Vista
 ---

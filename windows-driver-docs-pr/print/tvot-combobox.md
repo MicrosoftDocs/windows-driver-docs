@@ -4,16 +4,19 @@ description: The TVOT_COMBOBOX option type consists of a combo box inside a grou
 keywords: ["TVOT_COMBOBOX Print Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - TVOT_COMBOBOX
 api_location:
 - compstui.h
 api_type:
 - HeaderDef
-ms.date: 09/08/2021
+ms.date: 01/30/2023
 ---
 
 # TVOT_COMBOBOX
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The TVOT_COMBOBOX option type consists of a combo box inside a group box.
 

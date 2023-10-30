@@ -4,6 +4,7 @@ description: The WIA_DPS_TRANSPARENCY_CAPABILITIES property is reserved by Micro
 keywords: ["WIA_DPS_TRANSPARENCY_CAPABILITIES Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPS_TRANSPARENCY_CAPABILITIES
 api_location:

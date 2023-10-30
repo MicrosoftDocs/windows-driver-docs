@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x121 DRIVER_VIOLATION", "DRIVER_VIOLATION"]
 ms.date: 10/08/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DRIVER_VIOLATION
 api_type:
@@ -16,7 +17,7 @@ api_type:
 The DRIVER\_VIOLATION bug check has a value of 0x00000121. This bug check indicates that a driver has caused a violation.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 ## DRIVER\_VIOLATION Parameters
 
@@ -53,4 +54,4 @@ Parameter 1 indicates the type of violation.
 
 ## Remarks
 
-Use a kernel debugger and view the call stack to determine the name of the driver that caused the violation: the [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause, then enter one of the [**k (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) commands to view the call stack.
+Use a kernel debugger and view the call stack to determine the name of the driver that caused the violation: the [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause, then enter one of the [**k (Display Stack Backtrace)**](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) commands to view the call stack.

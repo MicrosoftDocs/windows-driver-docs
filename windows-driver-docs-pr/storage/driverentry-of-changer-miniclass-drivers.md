@@ -4,6 +4,7 @@ description: In Microsoft Windows 2000, changer miniclass drivers do not have a 
 keywords: ["DriverEntry routine Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DriverEntry
 api_location:

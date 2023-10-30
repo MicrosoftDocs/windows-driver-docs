@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1ED HANDLE_ERROR_ON_CRITICAL_THREAD", "HANDLE_ERROR_ON_C
 ms.date: 09/13/2022
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - HANDLE_ERROR_ON_CRITICAL_THREAD
 api_type:
@@ -16,7 +17,7 @@ api_type:
 The HANDLE\_ERROR\_ON\_CRITICAL\_THREAD bug check has a value of 0x000001ED. This indicates that an invalid handle access problem was detected in kernel mode on a system-critical thread.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## HANDLE\_ERROR\_ON\_CRITICAL\_THREAD Parameters
@@ -31,7 +32,7 @@ The HANDLE\_ERROR\_ON\_CRITICAL\_THREAD bug check has a value of 0x000001ED. Thi
 
 ## Resolution
 
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
  ## See also
 

@@ -4,6 +4,7 @@ description: The AVCSTRM_WRITE function code is used to submit a data buffer to 
 keywords: ["AVCSTRM_WRITE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - AVCSTRM_WRITE
 api_type:

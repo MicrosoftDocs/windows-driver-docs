@@ -1,6 +1,6 @@
 ---
 title: Debugger Data Model C++ Additional Interfaces
-description: This topic describes  addtional interfaces associated with the Debugger C++ Data Model, such as metadata, concepts and object enumeration.
+description: This topic describes  additional interfaces associated with the Debugger C++ Data Model, such as metadata, concepts and object enumeration.
 ms.date: 09/12/2018
 ---
 
@@ -125,7 +125,7 @@ The GetNext method both moves the enumerator forward and returns the native/lang
 
 ---
 
-## <span id="related_topics"></span>Related topics
+## <span id="related_topics"></span>See also
 
 This topic is part of a series which describes the interfaces accessible from C++, how to use them to build a C++ based debugger extension, and how to make use of other data model constructs (e.g.: JavaScript or NatVis) from a C++ data model extension.
 

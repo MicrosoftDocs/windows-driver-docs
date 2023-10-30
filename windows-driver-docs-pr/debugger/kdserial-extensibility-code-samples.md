@@ -64,7 +64,7 @@ NOTE: the custom kdcom.dll will not be used for the boot debugger transport
 
 9) Continue through winload & connect to the kernel debugger via the custom kdcom.dll transport.
 
-## Related topics
+## See also
 
 [How to develop KDNET extensibility modules](how-to-develop-kdnet-extensibility-modules.md) 
 

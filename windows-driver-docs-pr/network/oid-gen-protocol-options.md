@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_PROTOCOL_OPTIONS
+ms.topic: reference
 description: As a set, the OID_GEN_PROTOCOL_OPTIONS OID specifies a bitmask that defines optional properties of the protocol driver.
 ms.date: 08/08/2017
 keywords: 

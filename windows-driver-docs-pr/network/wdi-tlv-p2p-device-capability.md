@@ -1,7 +1,8 @@
 ---
 title: WDI_TLV_P2P_DEVICE_CAPABILITY
+ms.topic: reference
 description: WDI_TLV_P2P_DEVICE_CAPABILITY is a TLV that contains Wi-Fi Direct device capabilities.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - WDI_TLV_P2P_DEVICE_CAPABILITY Network Drivers Starting with Windows Vista
 ---

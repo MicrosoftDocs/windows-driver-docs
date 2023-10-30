@@ -1,5 +1,6 @@
 ---
 title: OID_WWAN_SMS_SEND
+ms.topic: reference
 description: OID_WWAN_SMS_SEND sends SMS text messages to another MB device.
 ms.date: 08/08/2017
 keywords: 

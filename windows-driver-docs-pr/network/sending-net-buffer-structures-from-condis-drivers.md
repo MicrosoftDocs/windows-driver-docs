@@ -1,7 +1,7 @@
 ---
 title: Sending NET_BUFFER Structures from CoNDIS Drivers
 description: Sending NET_BUFFER Structures from CoNDIS Drivers
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # Sending NET\_BUFFER Structures from CoNDIS Drivers
@@ -12,7 +12,7 @@ ms.date: 04/20/2017
 
 The following figure illustrates a basic CoNDIS send operation, which involves a protocol driver, NDIS, and a miniport driver.
 
-![diagram illustrating a basic condis send operation, which involves a protocol driver, ndis, and a miniport driver.](images/netbuffercosend.png)
+:::image type="content" source="images/netbuffercosend.png" alt-text="Diagram illustrating a basic CoNDIS send operation involving a protocol driver, NDIS, and a miniport driver.":::
 
 As the preceding figure shows, protocol drivers call the [**NdisCoSendNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscosendnetbufferlists) function to send [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structures on a virtual connection (VC). NDIS then calls the miniport driver's [**MiniportCoSendNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_co_send_net_buffer_lists) function to forward the NET\_BUFFER\_LIST structures to an underlying miniport driver.
 

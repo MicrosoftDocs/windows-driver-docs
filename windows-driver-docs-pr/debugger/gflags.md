@@ -1,65 +1,61 @@
 ---
 title: GFlags
-description: GFlags (the Global Flags Editor), gflags.exe, enables and disables advanced debugging, diagnostic, and troubleshooting features. 
+description: Learn how GFlags (the Global Flags Editor), gflags.exe, enables and disables advanced debugging, diagnostic, and troubleshooting features. 
 keywords: GFlags, Global Flags Editor, gflags.exe
-ms.date: 06/12/2018
+ms.date: 03/08/2023
 ---
 
 # GFlags
 
+**GFlags**, the Global Flags Editor, enables and disables advanced debugging, diagnostic, and troubleshooting features. It's most often used to turn on indicators that other tools track, count, and log.
 
-GFlags (the Global Flags Editor), gflags.exe, enables and disables advanced debugging, diagnostic, and troubleshooting features. It is most often used to turn on indicators that other tools track, count, and log.
+## Where to get GFlags
 
-## <span id="Where_to_get_GFlags"></span><span id="where_to_get_gflags"></span><span id="WHERE_TO_GET_GFLAGS"></span>Where to get GFlags
+**GFlags.exe** is included in the [Debugging Tools for Windows 10 (WinDbg)](debugger-download-tools.md).
 
-
-GFlags is included in the [Debugging Tools for Windows 10 (WinDbg)](debugger-download-tools.md).
-
-After the debugging tools are installed, gflags.exe for use on 64 bit Windows is installed by default to the following directory.
+After the debugging tools are installed, the 64-bit version of **gflags.exe** is installed by default in the following directory.
 
 ```console
 C:\Program Files (x86)\Windows Kits\10\Debuggers\x64
 ```
 
-If you are running a 32 bit version of Windows, use the 32 bit version of gflags.exe located here.
+If you're running a 32-bit version of Windows, use the 32-bit version of **gflags.exe** located here:
 
 ```console
 C:\Program Files (x86)\Windows Kits\10\Debuggers\x86
 ```
 
+## Overview of GFlags
 
-## <span id="ddk_gflags_dtools"></span><span id="DDK_GFLAGS_DTOOLS"></span>Overview of GFlags
+Driver developers and testers often use **GFlags** to turn on debugging, logging, and test features either directly, or by including GFlags commands in a test script. The page heap verification features can help you to identify memory leaks and buffer errors in **kernel-mode** drivers.
 
+**GFlags** has both a dialog box and a command-line interface. Most features are available from both interfaces, but some features are accessible from only one of the interfaces. For more information, see [GFlags details](gflags-details.md).
 
-Driver developers and testers often use GFlags to turn on debugging, logging and test features, either directly, or by including GFlags commands in a test script. The page heap verification features can help you to identify memory leaks and buffer errors in kernel-mode drivers.
+### Features
 
-GFlags has both a dialog box and a command-line interface. Most features are available from both interfaces, but some features are accessible from only one of the interfaces. (See [GFlags Details](gflags-details.md).)
+- Page heap verification. GFlags now includes the functions of `PageHeap` (pageheap.exe), a tool that enables heap allocation monitoring. `PageHeap` was included in previous versions of Windows.
 
-### <span id="new_features"></span><span id="NEW_FEATURES"></span>Features
+- No reboot is required for the *Special Pool* feature. On Windows Vista and later versions of Windows, you can enable, disable, and configure the Special Pool feature without restarting ("rebooting") the computer. For more information, see [Special Pool](special-pool.md).
 
--   Page heap verification. GFlags now includes the functions of PageHeap (pageheap.exe), a tool that enables heap allocation monitoring. PageHeap was included in previous versions of Windows.
+- Object Reference Tracing. A new flag enables tracing of object referencing and object dereferencing in the kernel. This feature detects when an object reference count is decremented too many times or not decremented even though an object is no longer used. This flag is supported only in Windows Vista and later versions of Windows.
 
--   No reboot required for the Special Pool feature. On Windows Vista and later versions of Windows, you can enable, disable, and configure the Special Pool feature without restarting ("rebooting") the computer. For information, see [Special Pool](special-pool.md).
+- New dialog box design. The GFlags dialog box has tabbed pages for easier navigation.
 
--   Object Reference Tracing. A new flag enables tracing of object referencing and object dereferencing in the kernel. This new feature of Windows detects when an object reference count is decremented too many times or not decremented even though an object is no longer used. This flag is supported only in Windows Vista and later versions of Windows.
+### Requirements
 
--   New dialog box design. The GFlags dialog box has tabbed pages for easier navigation.
+To use most GFlags features, including setting flags in the registry or in kernel mode, or enabling page heap verification, you must be a member of the Administrator's group on the computer. However, prior to Windows Vista, users with at least Guest account access can launch a program from the **Global Flags** dialog box.
 
-### <span id="requirements"></span><span id="REQUIREMENTS"></span>Requirements
+When features don't work, or work differently, on particular operating system versions, the differences are explained in the description of the feature.
 
-To use most GFlags features, including setting flags in the registry or in kernel mode, or enabling page heap verification, you must be a member of the Administrators group on the computer. However, prior to Windows Vista, users with at least Guest account access can launch a program from the **Global Flags** dialog box.
+This section includes:
 
-When features do not work, or work differently, on particular operating system versions, the differences are explained in the description of the feature.
+[GFlags overview](gflags-overview.md)
 
-This topic includes:
+[GFlags details](gflags-details.md)
 
-[GFlags Overview](gflags-overview.md)
+[GFlags commands](gflags-commands.md)
 
-[GFlags Details](gflags-details.md)
-
-[**GFlags Commands**](gflags-commands.md)
-
-[GFlags Flag Table](gflags-flag-table.md)
+[GFlags flag table](gflags-flag-table.md)
 
 [GFlags and PageHeap](gflags-and-pageheap.md)
 
@@ -69,25 +65,16 @@ This topic includes:
 
 [Global Flag Reference](global-flag-reference.md)
 
-**Note**   Incorrect use of this tool can degrade system performance or prevent Windows from starting, requiring you to reinstall Windows.
+> [!NOTE]
+> Incorrect use of this tool can degrade system performance or prevent Windows from starting, requiring you to reinstall Windows.
 
- 
+> [!IMPORTANT]
+> Pool tagging is permanently enabled on Windows Server 2003 and later versions of Windows, including Windows Vista. On these systems, the **Enable pool tagging** check box on the **Global Flags** dialog box is dimmed, and commands to enable or disable pool tagging fail.
 
-**Important**  Pool tagging is permanently enabled on Windows Server 2003 and later versions of Windows, including Windows Vista. On these systems, the **Enable pool tagging** check box on the **Global Flags** dialog box is dimmed and commands to enable or disable pool tagging fail.
+## See also
 
- 
+[GFlags examples](gflags-examples.md)
 
-## <span id="related_topics"></span>Related topics
+[Global flag reference](global-flag-reference.md)
 
-
-[Tools Included in Debugging Tools for Windows](extra-tools.md)
-
- 
-
- 
-
-
-
-
-
-
+[Tools included in Debugging Tools for Windows](extra-tools.md)

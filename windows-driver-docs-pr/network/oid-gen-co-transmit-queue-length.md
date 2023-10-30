@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_CO_TRANSMIT_QUEUE_LENGTH
+ms.topic: reference
 description: This topic describes the OID_GEN_CO_TRANSMIT_QUEUE_LENGTH object identifier (OID).
 keywords:
 - OID_GEN_CO_TRANSMIT_QUEUE_LENGTH

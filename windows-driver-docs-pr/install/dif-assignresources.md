@@ -4,6 +4,7 @@ description: DIF_ASSIGNRESOURCES
 keywords: ["DIF_ASSIGNRESOURCES Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DIF_ASSIGNRESOURCES
 api_type:

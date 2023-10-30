@@ -4,6 +4,7 @@ description: The WIA_IPS_WARM_UP_TIME property contains the maximum warm-up time
 keywords: ["WIA_IPS_WARM_UP_TIME Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_WARM_UP_TIME
 api_location:

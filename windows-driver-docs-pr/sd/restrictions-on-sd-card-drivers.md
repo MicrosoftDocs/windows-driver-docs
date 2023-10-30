@@ -1,7 +1,7 @@
 ---
 title: Restrictions on SD Card Drivers (Windows Drivers)
 description: Learn more about Restrictions on SD Card Drivers.
-ms.date: 10/17/2022
+ms.date: 03/03/2023
 ---
 
 # Restrictions on SD Card Drivers

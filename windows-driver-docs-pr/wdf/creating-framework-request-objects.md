@@ -10,7 +10,9 @@ ms.date: 04/20/2017
 # Creating Framework Request Objects
 
 
+Framework request objects represent I/O requests that the I/O manager has sent to a driver. Framework-based drivers process each I/O request by calling [framework request object methods](/windows-hardware/drivers/ddi/wdfrequest/).
 
+Each I/O request contains a WDM *I/O request packet* ([**IRP**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp) structure), but framework-based drivers typically do not need to access the IRP structure.
 
 
 Most framework request objects are created by the framework, but your driver can also create request objects.
@@ -21,7 +23,7 @@ When a framework-based driver receives an I/O request packet (IRP) from the I/O 
 
 The following diagram illustrates the steps that occur when the framework creates a request object for a read operation.
 
-![steps to create a request object for a read operation.](images/kmdf-creating-request-objects.png)
+:::image type="content" source="images/kmdf-creating-request-objects.png" alt-text="Diagram illustrating the steps to create a request object for a read operation in a framework-based driver.":::
 
 The following steps correspond to the numbers in the preceding diagram:
 
@@ -39,11 +41,8 @@ The following steps correspond to the numbers in the preceding diagram:
 
 ### Request Objects Created by a Driver
 
-Framework-based drivers can also create request objects. For example, a driver might create request objects if it receives a read or write request for an amount of data that is larger than the driver's [I/O targets](using-i-o-targets.md) can handle at one time. In such a situation, the driver can divide the data into several smaller requests and use additional request objects to send these smaller requests to one or more I/O targets.
+Framework-based drivers can also create request objects. For example, a driver might create request objects if it receives a read or write request for an amount of data that is larger than the driver's [I/O targets](./introduction-to-i-o-targets.md) can handle at one time. In such a situation, the driver can divide the data into several smaller requests and use additional request objects to send these smaller requests to one or more I/O targets.
 
 To create a request object, your driver should call [**WdfRequestCreate**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestcreate) followed by framework object methods that initialize the request, such as [**WdfUsbTargetPipeFormatRequestForRead**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetpipeformatrequestforread).
 
 If a driver receives WDM IRPs in a WDM dispatch routine and then services or forwards them by using the framework, the driver can call [**WdfRequestCreateFromIrp**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestcreatefromirp).
-
- 
-

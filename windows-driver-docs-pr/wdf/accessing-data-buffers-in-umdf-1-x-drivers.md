@@ -10,8 +10,12 @@ ms.date: 04/20/2017
 
 # Accessing Data Buffers in UMDF 1.x Drivers
 
-
-[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
+> [!WARNING]
+> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.
+>
+> For more info, see [Getting Started with UMDF](../wdf/getting-started-with-umdf-version-2.md).
+>
+> For information on accessing data buffers for UMDF 2, see [Accessing Data Buffers in WDF Drivers](../wdf/accessing-data-buffers-in-wdf-drivers.md).
 
 When a driver receives a read, write, or device I/O control request, the request object contains either an input buffer or an output buffer, or both. (A few device I/O control requests provide two input, two output, or two input/output buffers.)
 

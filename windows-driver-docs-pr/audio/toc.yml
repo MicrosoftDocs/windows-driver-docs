@@ -7,14 +7,30 @@
 - name: "ACX - Audio Class Extensions"
 # Auto-expanded node
   items: 
-  - name: "ACX - Audio Class Extensions overview"
+  - name: "ACX audio class extensions overview"
     href: acx-audio-class-extensions-overview.md
-  - name: "ACX - Summary of ACX objects"
-    href: acx-summary-of-objects.md
-  - name: "ACX - Multi stack cross driver communications"
-    href: acx-audio-multi-stack.md
-  - name: "ACX - Version overview"
+  - name: "ACX version information"
     href: acx-version-overview.md
+  - name: "ACX summary of ACX objects"
+    href: acx-summary-of-objects.md
+  - name: "ACX reference documentation"
+    href: acx-reference.md
+  - name: "ACX streaming"
+    href: acx-streaming.md
+  - name: "ACX targets and synchronization"
+    href: acx-targets.md
+  - name: "ACX IO request packet IRPs"
+    href: acx-irps.md
+  - name: "ACX device enumeration"
+    href: acx-device-enumeration.md
+  - name: "ACX power management"
+    href: acx-power-management.md
+  - name: "ACX multi circuit composition"
+    href: acx-multi-circuit-composition.md
+  - name: "ACX multi stack cross driver communications"
+    href: acx-multi-stack.md
+  - name: "ACX logging and debugging"
+    href: acx-logging-and-debugging.md
 - name: "WDM Audio Drivers Overview"
 # Auto-expanded node
   items: 
@@ -128,8 +144,6 @@
         href: microphone-array-geometry-property.md
       - name: "Microphone Array Geometry Descriptor Format"
         href: microphone-array-geometry-descriptor-format.md
-      - name: "Modified INF for MSVAD Micarray"
-        href: modified-inf-for-msvad-micarray.md
     - name: "Hardware Events"
       href: hardware-events.md
   - name: "Audio Data Formats and Data Ranges"
@@ -362,66 +376,40 @@
     href: windows-11-apis-for-audio-processing-objects.md
   - name: "Audio Hardware Resource Management"
     href: audio-hardware-resource-management.md
-  - name: "Bluetooth Bypass Guidelines for Audio Drivers"
+  - name: "Bluetooth HFP Bypass Guidelines for Audio Drivers"
 # Auto-expanded node
     items: 
-    - name: "Bluetooth Bypass Guidelines for Audio Drivers"
+    - name: "Bluetooth HFP bypass guidelines for audio drivers"
       href: bluetooth-bypass-guidelines-for-audio-drivers.md
-    - name: "Windows Bluetooth host controller interface (HCI) Architectural Overview"
-      href: btth-architectural-overview.md
-    - name: "Theory of Operation"
-# Auto-expanded node
-      items: 
-      - name: "Theory of Operation"
-        href: theory-of-operation.md
-      - name: "HFP Device Startup"
-        href: startup.md
-      - name: "HFP Device Connection"
-        href: hfp-device-connection.md
-      - name: "HFP Device Removal"
-        href: removal.md
-      - name: "Kernel Streaming Considerations"
-        href: kernel-streaming-considerations.md
-      - name: "Audio Endpoint Container ID"
-        href: audio-endpoint-container-id.md
-      - name: "Management of I2S and SCO Resources"
-        href: management-of-i2s-and-sco-resources.md
-    - name: "Bluetooth Bypass DDI Reference"
-      href: bluetooth-bypass-ddi-reference.md
-    - name: "Related Design Guidelines"
-# Auto-expanded node
-      items: 
-      - name: "Related Design Guidelines"
-        href: related-design-guidelines.md
-      - name: "Setting Properties and Registry Values"
-        href: setting-properties-and-registry-values.md
-      - name: "Setting Friendly Names, Registering APOs"
-        href: setting-friendly-name--registering-apos.md
-      - name: "Obtaining Bluetooth Address of HF Device"
-        href: obtaining-bluetooth-address-of-hf-device.md
+    - name: "Bluetooth HFP bypass audio streaming"
+      href: bluetooth-hfp-bypass-audio-streaming.md
+    - name: "HFP device startup"
+      href: startup.md
+    - name: "HFP device connection"
+      href: hfp-device-connection.md
+    - name: "HFP device removal"
+      href: removal.md
+    - name: "Kernel streaming considerations"
+      href: kernel-streaming-considerations.md
+    - name: "Audio endpoint container ID"
+      href: audio-endpoint-container-id.md
+    - name: "Setting properties and registry values"
+      href: setting-properties-and-registry-values.md
+    - name: "Setting friendly names, sideband SCO transport and registering APOs"
+      href: setting-friendly-name--registering-apos.md
+    - name: "Obtaining bluetooth address of HF device"
+      href: obtaining-bluetooth-address-of-hf-device.md
   - name: "Hardware-Offloaded Audio Processing"
 # Auto-expanded node
     items: 
     - name: "Hardware-Offloaded Audio Processing"
       href: hardware-offloaded-audio-processing.md
-    - name: "Architectural Overview"
-      href: architectural-overview.md
-    - name: "Driver Implementation for Offloaded Audio"
-# Auto-expanded node
-      items: 
-      - name: "Driver Implementation for Offloaded Audio"
-        href: driver-implementation-for-offloaded-audio.md
-      - name: "Implementation Overview"
-        href: implementation-overview.md
-      - name: "Driver Implementation Details"
-# Auto-expanded node
-        items: 
-        - name: "Driver Implementation Details"
-          href: driver-implementation-details.md
-        - name: "Helper Interfaces for Offloaded Audio Processing"
-          href: helper-interfaces-for-offloaded-audio-processing.md
-        - name: "Glitch Reporting for Offloaded Audio"
-          href: glitch-reporting-for-offloaded-audio.md
+    - name: "Hardware Offloaded Audio Driver Implementation"
+      href: driver-implementation-details.md
+    - name: "Portcls Helper Interfaces for Offloaded Audio Processing"
+      href: helper-interfaces-for-offloaded-audio-processing.md
+    - name: "Glitch Reporting for Offloaded Audio"
+      href: glitch-reporting-for-offloaded-audio.md
     - name: "PortCls Power Management Updates for SoC"
 # Auto-expanded node
       items: 

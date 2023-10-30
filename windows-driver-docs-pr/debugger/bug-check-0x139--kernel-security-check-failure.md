@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x139 KERNEL_SECURITY_CHECK_FAILURE", "Bug Check 0x139 KER
 ms.date: 03/10/2022
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Bug Check 0x139 KERNEL_SECURITY_CHECK_FAILURE
 api_type:
@@ -17,7 +18,7 @@ api_type:
 The KERNEL\_SECURITY\_CHECK\_FAILURE bug check has a value of 0x00000139. This bug check indicates that the kernel has detected the corruption of a critical data structure.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## Bug Check 0x139 KERNEL\_SECURITY\_CHECK\_FAILURE Parameters
@@ -77,12 +78,12 @@ LIST\_ENTRY corruption can be difficult to track down and this bug check, indica
 Common causes of list entry corruption include:
 
 -   A driver has corrupted a kernel synchronization object, such as a KEVENT (for example double initializing a KEVENT while a thread was still waiting on that same KEVENT, or allowing a stack-based KEVENT to go out of scope while another thread was using that KEVENT). This type of bug check typically occurs in nt!Ke\* or nt!Ki\* code. It can happen when a thread finishes waiting on a synchronization object or when code attempts to put a synchronization object in the signaled state. Usually, the synchronization object being signaled is the one that has been corrupted. Sometimes, Driver Verifier with special pool can help track down the culprit (if the corrupted synchronization object is in a pool block that has already been freed).
--   A driver has corrupted a periodic KTIMER. This type of bug check typically occurs in nt!Ke\* or nt!Ki\* code and involves signaling a timer, or inserting or removing a timer from a timer table. The timer being manipulated may be the corrupted one, but it might be necessary to inspect the timer table with [**!timer**](-timer.md) (or manually walking the timer list links) to identify which timer has been corrupted. Sometimes, Driver Verifier with special pool can help track down the culprit (if the corrupted KTIMER is in a pool block that has already been freed).
+-   A driver has corrupted a periodic KTIMER. This type of bug check typically occurs in nt!Ke\* or nt!Ki\* code and involves signaling a timer, or inserting or removing a timer from a timer table. The timer being manipulated may be the corrupted one, but it might be necessary to inspect the timer table with [**!timer**](../debuggercmds/-timer.md) (or manually walking the timer list links) to identify which timer has been corrupted. Sometimes, Driver Verifier with special pool can help track down the culprit (if the corrupted KTIMER is in a pool block that has already been freed).
 -   A driver has mismanaged an internal LIST\_ENTRY-style linked list. A typical example would be calling **RemoveEntryList** twice on the same list entry without reinserting the list entry between the two **RemoveEntryList** calls. Other variations are possible, such as double inserting an entry into the same list.
 -   A driver has freed a data structure that contains a LIST\_ENTRY without removing the data structure from its corresponding list, causing corruption to be detected later when the list is examined after the old pool block has been reused.
 -   A driver has used a LIST\_ENTRY-style list in a concurrent fashion without proper synchronization, resulting in a torn update to the list.
 
-In most cases, you can identify the corrupted data structure by walking the linked list both forward and backwards (the [**dl**](dl--display-linked-list-.md) and **dlb** commands are useful for this purpose) and comparing the results. Where the list is inconsistent between a forward and backward walk is typically the location of the corruption. Since a linked list update operation can modify the list links of a neighboring element, you should look at the neighbors of a corrupted list entry closely, as they may be the underlying culprit.
+In most cases, you can identify the corrupted data structure by walking the linked list both forward and backwards (the [**dl**](../debuggercmds/dl--display-linked-list-.md) and **dlb** commands are useful for this purpose) and comparing the results. Where the list is inconsistent between a forward and backward walk is typically the location of the corruption. Since a linked list update operation can modify the list links of a neighboring element, you should look at the neighbors of a corrupted list entry closely, as they may be the underlying culprit.
 
 Because many system components internally utilize LIST\_ENTRY lists, various types of resource mismanagement by a driver using system APIs might cause linked list corruption in a system-managed linked list.
 
@@ -90,7 +91,7 @@ Because many system components internally utilize LIST\_ENTRY lists, various typ
 
 Determining the cause of this issues typically requires the use of the debugger to gather additional information. Multiple dump files should be examined to see if this stop code has similar characteristics, such as the code that is running when the stop code appears.
 
-For more information, see [Crash dump analysis using the Windows debuggers (WinDbg)](crash-dump-files.md), [Using the !analyze Extension](using-the--analyze-extension.md) and [!analyze](-analyze.md).
+For more information, see [Crash dump analysis using the Windows debuggers (WinDbg)](crash-dump-files.md), [Using the !analyze Extension](using-the--analyze-extension.md) and [!analyze](../debuggercmds/-analyze.md).
 
 Use the event log to see if there are higher level events that occur leading up to this stop code.
 

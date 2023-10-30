@@ -4,6 +4,7 @@ description: Clients use KSPROPERTY_BDA_AUTODEMODULATE_STOP to stop demodulating
 keywords: ["KSPROPERTY_BDA_AUTODEMODULATE_STOP Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_BDA_AUTODEMODULATE_STOP
 api_location:

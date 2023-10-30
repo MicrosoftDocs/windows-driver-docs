@@ -38,9 +38,9 @@ A dialog-box function processes the following messages:
 
 *Property-page callback* functions can also be implemented for each property page that **MergePropPages** creates. A property-page callback function performs initialization and cleanup operations for the page. To associate a property page with a property-page callback function, **MergePropPages** should point the **pfnCallback** member of each PROPSHEETPAGE structure for each page to the property-page callback function for that page.
 
-See the Microsoft Windows SDK documentation For more information about:
+See the [Microsoft Windows SDK documentation](/windows/win32/com/controls-and-property-pages) for more information about:
 
--   creating property pages and on structures, functions, and notifications for property pages
+-   creating property pages and structures, functions, and notifications for property pages
 
 -   dialog-box callback procedures, messages, and structures
 

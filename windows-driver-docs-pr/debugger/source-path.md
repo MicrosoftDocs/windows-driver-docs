@@ -1,15 +1,13 @@
 ---
-title: Source Path
+title: Source Code Path
 description: This topic covers how to set the source path or load the individual source files.
 keywords: source files and paths, source path
 ms.date: 05/23/2017
 ---
 
-# Source Path
-
+# Source Code Path
 
 ## <span id="ddk_source_path_dbg"></span><span id="DDK_SOURCE_PATH_DBG"></span>
-
 
 The *source path* specifies the directories where the C and C++ source files are located.
 
@@ -41,27 +39,25 @@ To control the source path and local source path, you can do one of the followin
 
 -   When you start the debugger, use the **-srcpath**[command-line option](command-line-options.md) to set the source path.
 
--   Use the [**.srcpath (Set Source Path)**](-srcpath---lsrcpath--set-source-path-.md) command to display, set, change, or append to the source path. If you are using a source server, [**.srcfix (Use Source Server)**](-srcfix---lsrcfix--use-source-server-.md) is slightly easier.
+-   Use the [**.srcpath (Set Source Path)**](../debuggercmds/-srcpath---lsrcpath--set-source-path-.md) command to display, set, change, or append to the source path. If you are using a source server, [**.srcfix (Use Source Server)**](../debuggercmds/-srcfix---lsrcfix--use-source-server-.md) is slightly easier.
 
--   (WinDbg only) Use the [**.lsrcpath (Set Local Source Path)**](-srcpath---lsrcpath--set-source-path-.md) command to display, set, change, or append to the local source path. If you are using a source server, [**.lsrcfix (Use Local Source Server)**](-srcfix---lsrcfix--use-source-server-.md) is slightly easier. You can also use the WinDbg Command-Line with the parameter -lscrpath. For more information, see [**WinDbg Command-Line Options**](windbg-command-line-options.md).
+-   (WinDbg only) Use the [**.lsrcpath (Set Local Source Path)**](../debuggercmds/-srcpath---lsrcpath--set-source-path-.md) command to display, set, change, or append to the local source path. If you are using a source server, [**.lsrcfix (Use Local Source Server)**](../debuggercmds/-srcfix---lsrcfix--use-source-server-.md) is slightly easier. You can also use the WinDbg Command-Line with the parameter -lscrpath. For more information, see [**WinDbg Command-Line Options**](windbg-command-line-options.md).
 
--   (WinDbg only) Use the [File | Source File Path](file---source-file-path.md) command or press CTRL+P to display, set, change, or append to the source path or the local source path.
+-   (WinDbg only) Use the **[File | Source File Path** command or press CTRL+P to display, set, change, or append to the source path or the local source path.
 
 You can also directly open or close a source file by doing one of the following:
 
--   Use the [**lsf (Load or Unload Source File)**](lsf--lsf---load-or-unload-source-file-.md) command to open or close a source file.
+-   Use the [**lsf (Load or Unload Source File)**](../debuggercmds/lsf--lsf---load-or-unload-source-file-.md) command to open or close a source file.
 
--   (WinDbg only) Use the [**.open (Open Source File)**](-open--open-source-file-.md) command to open a source file.
+-   (WinDbg only) Use the [**.open (Open Source File)**](../debuggercmds/-open--open-source-file-.md) command to open a source file.
 
--   (WinDbg only) Use the [file | open source file](file---open-source-file.md) command or press ctrl+o to open a source file. you can also use the **open source file (ctrl+o)** button (![screen shot of the open source file button.](images/tbopen.png)) on the toolbar.
+-   (WinDbg only) Use the **file | open source file** command or press ctrl+o to open a source file. you can also use the **open source file (ctrl+o)** button (![screen shot of the open source file button.](images/tbopen.png)) on the toolbar.
 
     **Note**   When you use **File | Open Source File** (or its shortcut menu or button equivalents) to open a source file, the path of that file is automatically appended to the source path.
 
-     
+-   (WinDbg only) Use the **File | Recent Files** command to open one of the four source files that you most recently opened in WinDbg.
 
--   (WinDbg only) Use the [File | Recent Files](file---recent-files.md) command to open one of the four source files that you most recently opened in WinDbg.
-
--   (WinDbg only) Use the [File | Close Current Window](file---close-current-window.md) command or select the **Close** button in the corner of the [Source window](source-window.md) to close a source file.
+-   (WinDbg only) Use the **File | Close Current Window** command or select the **Close** button in the corner of the [Source window](source-window.md) to close a source file.
 
 For more information about how to use source files, see [Debugging in Source Mode](debugging-in-source-mode.md).
 

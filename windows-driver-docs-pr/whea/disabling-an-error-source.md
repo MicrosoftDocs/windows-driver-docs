@@ -8,7 +8,7 @@ keywords:
 - errors WDK WHEA , disabling error sources
 - hardware error sources WDK WHEA , disabling
 - disabling an error source
-ms.date: 02/14/2022
+ms.date: 03/03/2023
 ---
 
 # Disabling an Error Source

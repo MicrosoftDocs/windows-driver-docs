@@ -1,16 +1,16 @@
 ---
 title: Set up your development environment
-description: This topic shows you how to set up your development environment, to use the Sharks Cove board and Microsoft-provided software development tools, to build a universal sensor driver for your sensor.
-ms.date: 09/13/2022
+description: This article shows you how to set up your development environment using the Sharks Cove board and Microsoft-provided software development tools to build a universal sensor driver for your sensor.
+ms.date: 03/14/2023
 ---
 
 # Set up your development environment
 
-This topic shows you how to set up your development environment, to use the Sharks Cove board and Microsoft-provided software development tools, to build a universal sensor driver for your sensor.
+This article shows you how to set up your development environment using the Sharks Cove board and Microsoft-provided software development tools to build a universal sensor driver for your sensor.
 
 Sharks Cove is a development board that has been designed and configured to be the core of an x86-based tablet platform. Additional devices such as cameras, sensors, a display etc. have been left out of the design of the board, so that new versions of these devices can be developed and tested using Sharks Cove.
 
-You can order a Sharks Cove from [Mouser Electronics](https://www.mouser.com/ProductDetail/SharksCove-by-CircuitCo/999-0005112?qs=mkp0qhOQ2tj2iw0Hi9QSNQ%3D%3D).
+You can order a Sharks Cove from [RCS Components](https://www.rcscomponents.kiev.ua/sharkscove%20by%20circuitco) or [Kynix](https://www.kynix.com/Parts/3944717/999-0005112.html).
 
 Before you get started with this exercise, make sure that you have the following hardware:
 
@@ -30,4 +30,4 @@ If you successfully completed the steps suggested in the preceding paragraph, th
 - Sharks Cove with the correct version of Windows installed
 - Sharks Cove configured to receive and test a deployed driver
 
-Follow the guidance in the next topic to [prepare your sensor test board](prepare-your-sensor-test-board.md) to be connected to the Sharks Cove board.
+Follow the guidance in the next article to [prepare your sensor test board](prepare-your-sensor-test-board.md) to be connected to the Sharks Cove board.

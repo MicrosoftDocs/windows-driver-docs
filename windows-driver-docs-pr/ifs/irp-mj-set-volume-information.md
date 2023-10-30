@@ -1,6 +1,6 @@
 ---
-title: IRP_MJ_SET_VOLUME_INFORMATION
-description: IRP\_MJ\_SET\_VOLUME\_INFORMATION
+title: IRP_MJ_SET_VOLUME_INFORMATION (FS and filter drivers)
+description: IRP_MJ_SET_VOLUME_INFORMATION
 keywords: ["IRP_MJ_SET_VOLUME_INFORMATION Installable File System Drivers"]
 topic_type:
 - apiref
@@ -8,120 +8,80 @@ api_name:
 - IRP_MJ_SET_VOLUME_INFORMATION
 api_type:
 - NA
-ms.date: 11/28/2017
+ms.date: 03/13/2023
+ms.topic: reference
 ---
 
-# IRP\_MJ\_SET\_VOLUME\_INFORMATION
-
+# IRP_MJ_SET_VOLUME_INFORMATION (FS and filter drivers)
 
 ## When Sent
 
-
-The IRP\_MJ\_SET\_VOLUME\_INFORMATION request is sent by the I/O Manager. It can be sent, for example, when a user-mode application has called a Microsoft Win32 function such as **SetVolumeLabel**.
+The I/O Manager sends the IRP_MJ_SET_VOLUME_INFORMATION request. It can be sent, for example, when a user-mode application has called a Win32 function such as **SetVolumeLabel**.
 
 ## Operation: File System Drivers
 
-
 The file system driver should extract and decode the file object to determine whether it represents a user volume open. If it does, the file system driver should set the appropriate volume information and complete the IRP. Otherwise, the file system should complete the IRP as appropriate without setting the volume information.
 
-The types of volume information that can be set are file system-dependent, but generally include one or more of the following:
+The types of volume information that can be set are file system-dependent, but generally include one or more of the following values:
 
-FileFsControlInformation
+- FileFsControlInformation
+- FileFsLabelInformation
+- FileFsObjectIdInformation
 
-FileFsLabelInformation
+For a list of all possible information types, see the FS_INFORMATION_CLASS enumeration in *ntifs.h*.
 
-FileFsObjectIdInformation
-
-For a list of all possible information types, see the FS\_INFORMATION\_CLASS enumeration in ntifs.h.
-
-## Operation: File System Filter Drivers
-
+## Operation: Legacy File System Filter Drivers
 
 The filter driver should pass this IRP down to the next-lower driver on the stack.
 
 ## Parameters
 
+A file system or filter driver calls [**IoGetCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetcurrentirpstacklocation) for the given IRP to get a pointer to its own stack location in the IRP. In the following parameters, **Irp** points to the [**IRP**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp) and **IrpSp** points to the [**IO_STACK_LOCATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location). The driver can use the information that is set in the following members of the IRP and the IRP stack location to process a set volume information request:
 
-A file system or filter driver calls [**IoGetCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetcurrentirpstacklocation) with the given IRP to get a pointer to its own [**stack location**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location) in the IRP, shown in the following list as *IrpSp*. (The IRP is shown as *Irp*.) The driver can use the information that is set in the following members of the IRP and the IRP stack location in processing a set volume information request:
+- **DeviceObject** is a pointer to the target device object.
 
-<a href="" id="deviceobject"></a>*DeviceObject*  
-Pointer to the target device object.
+- **Irp->AssociatedIrp.SystemBuffer** points to an input buffer that contains the values of the volume information to be set. This information is stored in one of the following structures:
 
-<a href="" id="irp--associatedirp-systembuffer"></a>*Irp-&gt;AssociatedIrp.SystemBuffer*  
-Pointer to an input buffer that contains the values of the volume information to be set. This information is stored in one of the following structures:
+  - FILE_FS_CONTROL_INFORMATION
+  - FILE_FS_LABEL_INFORMATION
+  - FILE_FS_OBJECTID_INFORMATION
 
-FILE\_FS\_CONTROL\_INFORMATION
+- **Irp->IoStatus** points to an [**IO_STATUS_BLOCK**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block) structure that receives the final completion status and information about the requested operation.
 
-FILE\_FS\_LABEL\_INFORMATION
+- **IrpSp->FileObject** points to the file object that is associated with **DeviceObject**.
 
-FILE\_FS\_OBJECTID\_INFORMATION
+  The **IrpSp->FileObject** parameter contains a pointer to the **RelatedFileObject** field, which is also a FILE_OBJECT structure. The **RelatedFileObject** field of the FILE_OBJECT structure isn't valid during the processing of IRP_MJ_SET_VOLUME_INFORMATION and shouldn't be used.
 
-<a href="" id="irp--iostatus"></a>*Irp-&gt;IoStatus*
-Pointer to an [**IO\_STATUS\_BLOCK**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block) structure that receives the final completion status and information about the requested operation.
+- **IrpSp->MajorFunction** is set to IRP_MJ_SET_VOLUME_INFORMATION.
 
-<a href="" id="irpsp--fileobject"></a>*IrpSp-&gt;FileObject*
-Pointer to the file object that is associated with *DeviceObject*.
+- **IrpSp->Parameters.SetVolume.FsInformationClass** is the type of information to be set for the volume, and can be one of the following:
 
-The *IrpSp-&gt;FileObject* parameter contains a pointer to the **RelatedFileObject** field, which is also a FILE\_OBJECT structure. The **RelatedFileObject** field of the FILE\_OBJECT structure is not valid during the processing of IRP\_MJ\_SET\_VOLUME\_INFORMATION and should not be used.
+  | Value | Meaning |
+  | ----- | ------- |
+  | FileFsControlInformation | Set [**FILE_FS_CONTROL_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_fs_control_information) for the volume. |
+  | FileFsLabelInformation | Set [**FILE_FS_LABEL_INFORMATION**](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_file_fs_label_information) for the volume. |
+  | FileFsObjectIdInformation | Set [**FILE_FS_OBJECTID_INFORMATION**](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_file_fs_objectid_information) for the volume. |
 
-<a href="" id="irpsp--majorfunction"></a>*IrpSp-&gt;MajorFunction*
-Specifies IRP\_MJ\_SET\_VOLUME\_INFORMATION.
-
-<a href="" id="irpsp--parameters-setvolume-fsinformationclass"></a>*IrpSp-&gt;Parameters.SetVolume.FsInformationClass*
-Specifies the type of information to be set for the volume. This value can be one of the following:
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Value</th>
-<th align="left">Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>FileFsControlInformation</strong></p></td>
-<td align="left"><p>Set <a href="/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_fs_control_information" data-raw-source="[&lt;strong&gt;FILE_FS_CONTROL_INFORMATION&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_fs_control_information)"><strong>FILE_FS_CONTROL_INFORMATION</strong></a> for the volume.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>FileFsLabelInformation</strong></p></td>
-<td align="left"><p>Set <a href="/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_file_fs_label_information" data-raw-source="[&lt;strong&gt;FILE_FS_LABEL_INFORMATION&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_file_fs_label_information)"><strong>FILE_FS_LABEL_INFORMATION</strong></a> for the volume.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>FileFsObjectIdInformation</strong></p></td>
-<td align="left"><p>Set <a href="/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_file_fs_objectid_information" data-raw-source="[&lt;strong&gt;FILE_FS_OBJECTID_INFORMATION&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_file_fs_objectid_information)"><strong>FILE_FS_OBJECTID_INFORMATION</strong></a> for the volume.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
-<a href="" id="irpsp--parameters-setvolume-length"></a>*IrpSp-&gt;Parameters.SetVolume.Length*
-Length, in bytes, of the buffer pointed to by *Irp-&gt;AssociatedIrp.SystemBuffer*.
+- **IrpSp->Parameters.SetVolume.Length** is the length, in bytes, of the buffer pointed to by **Irp->AssociatedIrp.SystemBuffer**.
 
 ## See also
 
+[**FILE_FS_CONTROL_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_fs_control_information)
 
-[**FILE\_FS\_CONTROL\_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_fs_control_information)
+[**FILE_FS_LABEL_INFORMATION**](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_file_fs_label_information)
 
-[**FILE\_FS\_LABEL\_INFORMATION**](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_file_fs_label_information)
+[**FILE_FS_OBJECTID_INFORMATION**](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_file_fs_objectid_information)
 
-[**FILE\_FS\_OBJECTID\_INFORMATION**](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_file_fs_objectid_information)
+[**IO_STACK_LOCATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location)
 
-[**IO\_STACK\_LOCATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location)
-
-[**IO\_STATUS\_BLOCK**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block)
+[**IO_STATUS_BLOCK**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block)
 
 [**IoGetCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetcurrentirpstacklocation)
 
 [**IRP**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp)
 
-[**IRP\_MJ\_QUERY\_VOLUME\_INFORMATION**](irp-mj-query-volume-information.md)
+[**IRP_MJ_QUERY_VOLUME_INFORMATION**](irp-mj-query-volume-information.md)
 
 [**ZwQueryVolumeInformationFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwqueryvolumeinformationfile)
 
 [**ZwSetVolumeInformationFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwsetvolumeinformationfile)
-

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1C7 STORE_DATA_STRUCTURE_CORRUPTION", "STORE_DATA_STRUCT
 ms.date: 01/28/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - STORE_DATA_STRUCTURE_CORRUPTION
 api_type:
@@ -16,7 +17,7 @@ api_type:
 The STORE\_DATA\_STRUCTURE\_CORRUPTION bug check has a value of 0x000001C7. It indicates that the store component detected a corruption in its data structures.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
  
 

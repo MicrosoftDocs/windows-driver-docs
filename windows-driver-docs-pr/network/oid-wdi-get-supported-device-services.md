@@ -1,7 +1,8 @@
 ---
 title: OID_WDI_GET_SUPPORTED_DEVICE_SERVICES
+ms.topic: reference
 description: OID_WDI_GET_SUPPORTED_DEVICE_SERVICES queries the IHV driver for all of its supported device services.
-ms.date: 07/31/2021
+ms.date: 03/02/2023
 keywords:
  - OID_WDI_GET_SUPPORTED_DEVICE_SERVICES Network Drivers Starting with Windows Vista
 ---

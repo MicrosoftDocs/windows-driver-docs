@@ -4,6 +4,7 @@ description: The KSPROPERTY_AUDDECOUT_CUR_MODE property indicates the current au
 keywords: ["KSPROPERTY_AUDDECOUT_CUR_MODE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDDECOUT_CUR_MODE
 api_location:

@@ -4,6 +4,7 @@ description: The KSPROPERTY\_AUDIO\_MIX\_LEVEL\_TABLE property specifies the mix
 keywords: ["KSPROPERTY_AUDIO_MIX_LEVEL_TABLE Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIO_MIX_LEVEL_TABLE
 api_location:

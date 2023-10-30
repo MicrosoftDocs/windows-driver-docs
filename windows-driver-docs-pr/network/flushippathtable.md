@@ -6,6 +6,7 @@ keywords:
 - netioapi/FlushIpPathTable
 - NETIOAPI_API
 ms.date: 10/25/2022
+ms.topic: reference
 ---
 
 # FlushIpPathTable function

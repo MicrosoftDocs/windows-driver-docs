@@ -1,29 +1,45 @@
 ---
-title: Extracting Information from a Dump File
-description: Extracting Information from a Dump File
+title: Extract information from a dump file
+description: Learn how to debug a dump file to determine certain kinds of information, such as the name of the target computer.
 keywords: ["extracting information from a dump file", "dump file, extracting various information", "machine name (determining from a dump file)", "computer name (determining from a dump file)", "IP address (determining from a dump file)"]
-ms.date: 03/13/2019
+ms.date: 12/14/2022
 ---
 
-# Extracting Information from a Dump File
+# Extract information from a dump file
 
+Some information, such as the name of the target computer, is easily available during live debugging. You can also debug a dump file to determine the information. This article explains how to extract information from a dump file.
 
-## <span id="ddk_extracting_information_from_a_dump_file_dbg"></span><span id="DDK_EXTRACTING_INFORMATION_FROM_A_DUMP_FILE_DBG"></span>
+## Find the computer name in a kernel-mode dump file
 
+Use the [!peb](../debuggercmds/-peb.md) extension if you need to determine the name of the computer on which the crash dump was made. Look for the value of COMPUTERNAME in its output.
 
-Certain kinds of information, such as the name of the target computer, are easily available during live debugging. When debugging a dump file it takes a little more work to determine this information.
+## Find the IP address in a kernel-mode dump file
 
-### <span id="finding_the_computer_name_in_a_kernel_mode_dump_file"></span><span id="FINDING_THE_COMPUTER_NAME_IN_A_KERNEL_MODE_DUMP_FILE"></span>Finding the Computer Name in a Kernel-Mode Dump File
+To determine the IP address of the computer on which the crash dump was made, find a thread stack that shows some send or receive network activity. Open one of the send or receive packets. The IP address is visible in that packet.
 
-If you need to determine the name of the computer on which the crash dump was made, you can use the [**!peb**](-peb.md) extension and look for the value of COMPUTERNAME it its output.
+## Find the process ID in a user-mode dump file
 
-### <span id="finding_the_ip_address_in_a_kernel_mode_dump_file"></span><span id="FINDING_THE_IP_ADDRESS_IN_A_KERNEL_MODE_DUMP_FILE"></span>Finding the IP Address in a Kernel-Mode Dump File
+To determine the process ID of the target application from a user-mode dump file, use the [| (Process status)](../debuggercmds/---process-status-.md) command. This command displays all the processes being debugged at the time the dump was written. The process marked with a period (.) is the current process. Its process ID is given in hexadecimal after the **id:** notation.
 
-To determine the IP address of the computer on which the crash dump was made, find a thread stack that shows some send/receive network activity. Open one of the send packets or receive packets. The IP address will be visible in that packet.
+## Integrate WER into applications
 
-### <span id="finding_the_process_id_in_a_user_mode_dump_file"></span><span id="FINDING_THE_PROCESS_ID_IN_A_USER_MODE_DUMP_FILE"></span>Finding the Process ID in a User-Mode Dump File
+[Windows error reporting (WER)](/windows/desktop/wer/windows-error-reporting) information can be integrated into applications to provide other crash dump information. For more information, see [Using WER](/windows/desktop/wer/using-wer).
 
-To determine the process ID of the target application from a user-mode dump file, use the [**| (Process Status)**](---process-status-.md) command. This will display all the processes being debugged at the time the dump was written. The process marked with a period (**.**) is the current process. Its process ID is given in hexadecimal after the **id:** notation.
+## See also
+
+- [Advanced driver debugging [336 KB] [PPT]](https://download.microsoft.com/download/f/0/5/f05a42ce-575b-4c60-82d6-208d3754b2d6/adv-drv_debug.ppt)
+
+- [Download the Windows Driver Kit (WDK)](../download-the-wdk.md)
+
+- [Driver debugging basics [WinHEC 2007; 633 KB] [PPT]](https://download.microsoft.com/download/a/f/d/afdfd50d-6eb9-425e-84e1-b4085a80e34e/dvr-t410_wh07.pptx)
+
+- [How to read the small memory dump file that is created by Windows if a crash occurs](https://support.microsoft.com/help/315263/how-to-read-the-small-memory-dump-file-that-is-created-by-windows-if-a)
+
+- [Resource-definition statements](/windows/desktop/menurc/resource-definition-statements)
+
+- [Windows error reporting](/windows/desktop/wer/windows-error-reporting)
+
+- [VERSIONINFO resource](/windows/desktop/menurc/versioninfo-resource)
 
  
 

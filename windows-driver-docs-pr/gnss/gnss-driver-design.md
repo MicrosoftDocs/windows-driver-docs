@@ -1,7 +1,7 @@
 ---
 title: Global Navigation Satellite System (GNSS) driver design
 description: Discusses design principles to consider when developing a Global Navigation Satellite System (GNSS) driver for Windows 10 including data structures, error reporting, and driver versioning.
-ms.date: 08/24/2021
+ms.date: 03/21/2023
 ---
 
 # Global Navigation Satellite System (GNSS) driver design
@@ -22,7 +22,7 @@ Unless otherwise specified, all parameters will follow the International System 
 
 ## Error reporting
 
-The Global Navigation Satellite System (GNSS) DDI expects an **NTSTATUS** as a return value from the driver. The high level operating system (HLOS) acts on only success and failure cases based on these error messages and does not look at a specific error message. Still it is preferred that the driver returns errors closely mapped to the corresponding **NTSTATUS** error message. The GNSS driver can send its own custom **NTSTATUS** error messages which could be helpful for diagnostic purposes.
+The Global Navigation Satellite System (GNSS) DDI expects an **NTSTATUS** as a return value from the driver. The high level operating system (HLOS) acts on only success and failure cases based on these error messages and doesn't look at a specific error message. Still it's preferred that the driver returns errors closely mapped to the corresponding **NTSTATUS** error message. The GNSS driver can send its own custom **NTSTATUS** error messages that could be helpful for diagnostic purposes.
 
 ## Driver versioning
 
@@ -36,8 +36,8 @@ Every structure specified for the Global Navigation Satellite System (GNSS) DDI 
 
 - The GNSS adapter must be backward compatible with older versions of the GNSS driver. If a protocol change is introduced in a new version of the DDI, a GNSS adapter compliant with the new GNSS DDI must implement the new protocol only for the new version of the driver, and use the old protocol for older version of the driver.
 
-- The GNSS driver must be forward compatible with newer versions of the GNSS adapter and should treat newer versions of the GNSS adapter in the same manner as current version that it is coded against.
+- The GNSS driver must be forward compatible with newer versions of the GNSS adapter and should treat newer versions of the GNSS adapter in the same manner as current version that it's coded against.
 
-- An older version of the GNSS adapter is not expected to function correctly with a newer version of the GNSS driver. To facilitate co-development of the GNSS adapter and the GNSS driver against a new version of the DDI, no strict version check will exist in the GNSS adapter to block newer GNSS drivers. However, a GNSS driver implemented against a newer version of the DDI will not be shipped to retail devices that contain a GNSS adapter implemented against an older version of the GNSS DDI.
+- An older version of the GNSS adapter isn't expected to function correctly with a newer version of the GNSS driver. To facilitate co-development of the GNSS adapter and the GNSS driver against a new version of the DDI, no strict version check will exist in the GNSS adapter to block newer GNSS drivers. However, a GNSS driver implemented against a newer version of the DDI won't be shipped to retail devices that contain a GNSS adapter implemented against an older version of the GNSS DDI.
 
-- Any Windows 8.1 or older GNSS sensor drivers will not be supported by the GNSS adapter. These drivers would continue to function in Windows 10 through the legacy stack. In presence of another Windows 10 GNSS driver the usage of the legacy GNSS sensor driver is undefined.
+- Any Windows 8.1 or older GNSS sensor drivers won't be supported by the GNSS adapter. These drivers would continue to function in Windows 10 through the legacy stack. In presence of another Windows 10 GNSS driver, the usage of the legacy GNSS sensor driver is undefined.

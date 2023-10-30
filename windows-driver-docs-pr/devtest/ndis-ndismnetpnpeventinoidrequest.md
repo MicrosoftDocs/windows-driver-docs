@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["NdisMNetPnPEventInOIDRequest rule (ndis)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - NdisMNetPnPEventInOIDRequest
 api_type:
