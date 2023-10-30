@@ -27,7 +27,7 @@ If you are performing [remote debugging through remote.exe](remote-debugging-thr
 
 If you are setting up a kernel-mode debugging session, you can restrict the debugger's ability to interfere with the host machine by using [Secure Mode](secure-mode.md).
 
-In user mode, Secure Mode is not available. You can stop an intrusive client from issuing Microsoft MS-DOS commands and running external programs by issuing the [**.noshell (Prohibit Shell Commands)**](-noshell--prohibit-shell-commands-.md) command. However, there are many other ways for a client to interfere with your computer.
+In user mode, Secure Mode is not available. You can stop an intrusive client from issuing Microsoft MS-DOS commands and running external programs by issuing the [**.noshell (Prohibit Shell Commands)**](../debuggercmds/-noshell--prohibit-shell-commands-.md) command. However, there are many other ways for a client to interfere with your computer.
 
 Note that both Secure Mode and **.noshell** will prevent both the Debugging Client and the Debugging Server from taking certain actions. There is no way to place a restriction on the client but not on the server.
 

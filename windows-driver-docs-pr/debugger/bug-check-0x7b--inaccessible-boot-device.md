@@ -160,7 +160,7 @@ To narrow down a cause, it's helpful to know as much as possible about the boot 
 
 ### Windows Debugger
 
-To analyze this error using the kernel debugger, run an [lm (List loaded modules)](lm--list-loaded-modules-.md) command in the debugger to see which modules are loaded to attempt to isolate the specific driver. Verify that the following drivers were loaded.
+To analyze this error using the kernel debugger, run an [lm (List loaded modules)](../debuggercmds/lm--list-loaded-modules-.md) command in the debugger to see which modules are loaded to attempt to isolate the specific driver. Verify that the following drivers were loaded.
 
 *disk*
 
@@ -230,7 +230,7 @@ fffff806`c0770000 fffff806`c0788000   storqosflt   (deferred)
 
 **Boot with a debugger attached.**
 
-If you can boot the target system with a debugger connected, issue [!devnode 0 1](-devnode.md) when the bug check occurs. You can see which device lacks a driver or doesn't start, and the reason for not starting might be apparent.
+If you can boot the target system with a debugger connected, issue [!devnode 0 1](../debuggercmds/-devnode.md) when the bug check occurs. You can see which device lacks a driver or doesn't start, and the reason for not starting might be apparent.
 
 One cause might be that Plug and Play can't assign resources to the boot device. You can verify this restriction by finding an entry for the service. If the status flags include DNF_INSUFFICIENT_RESOURCES or don't include DNF_STARTED or DNF_ENUMERATED, you might have located the problem. Try `!devnode 0 1 storahci` to save some time, instead of dumping the whole device tree.
 

@@ -38,9 +38,9 @@ You can resolve this problem by using WinDbg or by using basic troubleshooting t
 
 ### Debug by using WinDbg
 
-The [!analyze](-analyze.md) debugger extension displays information about the bug check and can help you determine the root cause.
+The [!analyze](../debuggercmds/-analyze.md) debugger extension displays information about the bug check and can help you determine the root cause.
 
-You can use the [!apc](-apc.md) extension to display the contents of one or more APCs.
+You can use the [!apc](../debuggercmds/-apc.md) extension to display the contents of one or more APCs.
 
 You also can set a breakpoint in the code that precedes this stop code and attempt to single-step forward into the faulting code.
 

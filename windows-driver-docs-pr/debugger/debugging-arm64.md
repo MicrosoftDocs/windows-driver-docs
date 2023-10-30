@@ -37,7 +37,7 @@ In the rare cases that you need to use Arm64 WinDbg to debug your x86 user mode 
 - .effmach arm64: Switch to and see Arm64 context
 - .effmach chpe: Switch to and see CHPE context.
 
-For more information about the .effmach, see [.effmach (Effective Machine)](-effmach--effective-machine-.md).
+For more information about the .effmach, see [.effmach (Effective Machine)](../debuggercmds/-effmach--effective-machine-.md).
 
 When debugging x86 apps in user mode, regardless of which WinDbg version you're using, be aware of these considerations.
 

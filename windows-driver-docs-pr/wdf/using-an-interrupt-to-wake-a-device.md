@@ -47,7 +47,7 @@ Follow these steps to create a wake-capable interrupt object in your KMDF or UMD
 
 9.  The framework continues with the normal power-up callback sequence, as described in [Power-Up Sequence for a Function or Filter Driver](power-up-sequence-for-a-function-or-filter-driver.md).
 
-You can use the [**!wdfkd.wdfinterrupt**](../debugger/-wdfkd-wdfinterrupt.md) debugger extension to show whether a specific interrupt has been configured to be wake-capable.
+You can use the [**!wdfkd.wdfinterrupt**](../debuggercmds/-wdfkd-wdfinterrupt.md) debugger extension to show whether a specific interrupt has been configured to be wake-capable.
 
 Wake interrupt functionality cannot be used in conjunction with USB selective suspend.
 

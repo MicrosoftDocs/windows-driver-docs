@@ -12,13 +12,13 @@ The following sections describe debugger command programs.
 
 ## Using the .foreach Token
 
-The following example uses the [**.foreach**](-foreach.md) token to search for WORD values of 5a4d. For each 5a4d value that is found, the debugger displays 8 DWORD values, starting at the address of where the 5a4d DWORD was found.
+The following example uses the [**.foreach**](../debuggercmds/-foreach.md) token to search for WORD values of 5a4d. For each 5a4d value that is found, the debugger displays 8 DWORD values, starting at the address of where the 5a4d DWORD was found.
 
 ```dbgcmd
 0:000> .foreach (place { s-[1]w 77000000 L?4000000 5a4d }) { dc place L8 } 
 ```
 
-The following example uses the [**.foreach**](-foreach.md) token to search for WORD values of 5a4d. For each 5a4d value that is found, the debugger displays 8 DWORD values, starting 4 bytes prior to the address where the 5a4d DWORD was found.
+The following example uses the [**.foreach**](../debuggercmds/-foreach.md) token to search for WORD values of 5a4d. For each 5a4d value that is found, the debugger displays 8 DWORD values, starting 4 bytes prior to the address where the 5a4d DWORD was found.
 
 ```dbgcmd
 0:000> .foreach (place { s-[1]w 77000000 L?4000000 5a4d }) { dc place -0x4 L8 } 
@@ -34,7 +34,7 @@ The following example displays the same values.
 
  
 
-The **-\[1\]** option together with the [**s (Search Memory)**](s--search-memory-.md) command causes its output to include only the addresses it finds, not the values that are found at those addresses.
+The **-\[1\]** option together with the [**s (Search Memory)**](../debuggercmds/s--search-memory-.md) command causes its output to include only the addresses it finds, not the values that are found at those addresses.
 
 The following command displays verbose module information for all modules that are located in the memory range from 0x77000000 through 0x7F000000.
 
@@ -42,15 +42,15 @@ The following command displays verbose module information for all modules that a
 0:000> .foreach (place { lm1m }) { .if ((${place} >= 0x77000000) & (${place} <= 0x7f000000)) { lmva place } } 
 ```
 
-The **1m** option together with the [**lm (List Loaded Modules)**](lm--list-loaded-modules-.md) command causes its output to include only the addresses of the modules, not the full description of the modules.
+The **1m** option together with the [**lm (List Loaded Modules)**](../debuggercmds/lm--list-loaded-modules-.md) command causes its output to include only the addresses of the modules, not the full description of the modules.
 
-The preceding example uses the [**${ } (Alias Interpreter)**](-------alias-interpreter-.md) token to make sure aliases are replaced even if they are next to other text. If the command did not include this token, the opening parenthesis that is next to **place** prevents alias replacement. Note that the **${}** token works on the variables that are used in **.foreach** and on true aliases.
+The preceding example uses the [**${ } (Alias Interpreter)**](../debuggercmds/-------alias-interpreter-.md) token to make sure aliases are replaced even if they are next to other text. If the command did not include this token, the opening parenthesis that is next to **place** prevents alias replacement. Note that the **${}** token works on the variables that are used in **.foreach** and on true aliases.
 
 ## Walking the Process List
 
 The following example walks through the kernel-mode process list and displays the executable name for each entry in the list.
 
-This example should be stored as a text file and executed with the [**$$&gt;&lt; (Run Script File)**](-----------------------a---run-script-file-.md) command. This command loads the whole file, replaces all carriage returns with semicolons, and executes the resulting block. This command enables you to write readable programs by using multiple lines and indentation, instead of having to squeeze the whole program onto a single line.
+This example should be stored as a text file and executed with the [**$$&gt;&lt; (Run Script File)**](../debuggercmds/-----------------------a---run-script-file-.md) command. This command loads the whole file, replaces all carriage returns with semicolons, and executes the resulting block. This command enables you to write readable programs by using multiple lines and indentation, instead of having to squeeze the whole program onto a single line.
 
 This example illustrates the following features:
 
@@ -58,7 +58,7 @@ This example illustrates the following features:
 
 -   This program uses the MASM expression evaluator. However, the **@@c++( )** token appears one time. This token causes the program to use the C++ expression evaluator to parse the expression within the parentheses. This usage enables the program to use the C++ structure tokens directly.
 
--   The **?** flag is used with the [**r (Registers)**](r--registers-.md) command. This flag assigns typed values to the pseudo-register **$t2**.
+-   The **?** flag is used with the [**r (Registers)**](../debuggercmds/r--registers-.md) command. This flag assigns typed values to the pseudo-register **$t2**.
 
 ```dbgcmd
 $$  Get process list LIST_ENTRY in $t0.
@@ -89,17 +89,17 @@ $$  Iterate over all processes in list.
 
 The following example walks through the user-mode LDR\_DATA\_TABLE\_ENTRY list and displays the base address and full path of each list entry.
 
-Like the preceding example, this program should be saved in a file and executed with the [**$$&gt;&lt; (Run Script File)**](-----------------------a---run-script-file-.md) command.
+Like the preceding example, this program should be saved in a file and executed with the [**$$&gt;&lt; (Run Script File)**](../debuggercmds/-----------------------a---run-script-file-.md) command.
 
 This example illustrates the following features:
 
 - This program uses the MASM expression evaluator. However, in two places, the **@@c++( )** token appears. This token causes the program to use the C++ expression evaluator to parse the expression within the parentheses. This usage enables the program to use C++ structure tokens directly.
 
-- The **?** flag is used with the [**r (Registers)**](r--registers-.md) command. This flag assigns typed values to the pseudo-registers **$t0** and **$t1**. In the body of the loop, **$t1** has the type **ntdll!\_LDR\_DATA\_TABLE\_ENTRY\\\***, so the program can make direct member references.
+- The **?** flag is used with the [**r (Registers)**](../debuggercmds/r--registers-.md) command. This flag assigns typed values to the pseudo-registers **$t0** and **$t1**. In the body of the loop, **$t1** has the type **ntdll!\_LDR\_DATA\_TABLE\_ENTRY\\\***, so the program can make direct member references.
 
-- The user-named aliases **$Base** and **$Mod** are used in this program. The dollar signs reduce the possibility that these aliases have been used previously in the current debugger session. The dollar signs are not necessary. The [**${/v: }**](-------alias-interpreter-.md) token interprets the alias literally, preventing it from being replaced if it was defined before the script is run. You can also use this token together with any block to prevent alias definitions before the block from being used.
+- The user-named aliases **$Base** and **$Mod** are used in this program. The dollar signs reduce the possibility that these aliases have been used previously in the current debugger session. The dollar signs are not necessary. The [**${/v: }**](../debuggercmds/-------alias-interpreter-.md) token interprets the alias literally, preventing it from being replaced if it was defined before the script is run. You can also use this token together with any block to prevent alias definitions before the block from being used.
 
-- The [**.block**](-block.md) token is used to add an extra alias replacement step. Alias replacement occurs one time for the whole script when it is loaded and one time when each block is entered. Without the **.block** token and its braces, the **.echo** command does not receive the values of the **$Mod** and **$Base** aliases that are assigned in the previous lines.
+- The [**.block**](../debuggercmds/-block.md) token is used to add an extra alias replacement step. Alias replacement occurs one time for the whole script when it is loaded and one time when each block is entered. Without the **.block** token and its braces, the **.echo** command does not receive the values of the **$Mod** and **$Base** aliases that are assigned in the previous lines.
 
 ```dbgcmd
 $$ Get module list LIST_ENTRY in $t0.

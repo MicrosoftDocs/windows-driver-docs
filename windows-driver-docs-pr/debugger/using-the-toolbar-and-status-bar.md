@@ -92,7 +92,7 @@ If you hide the toolbar or the status bar, you have more space for debugging inf
 
 ### <span id="setting_the_window_title"></span><span id="SETTING_THE_WINDOW_TITLE"></span>Setting the Window Title
 
-You can change the title of the WinDbg window by using the [**.wtitle (Set Window Title)**](-wtitle--set-window-title-.md) command.
+You can change the title of the WinDbg window by using the [**.wtitle (Set Window Title)**](../debuggercmds/-wtitle--set-window-title-.md) command.
 
  
 

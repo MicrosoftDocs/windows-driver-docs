@@ -17,14 +17,14 @@ Depending on which protocol sequence is used by this particular call, you can ge
 
 1. Start a user-mode debugger with the server thread as the target.
 
-2. Get the process ID by using the [**| (Process Status)**](---process-status-.md) command:
+2. Get the process ID by using the [**| (Process Status)**](../debuggercmds/---process-status-.md) command:
 
     ```dbgcmd
     0:001> |
       0     id: 3d4 name: rtsvr.exe
     ```
 
-3. Get the active calls in this process by using the [**!rpcexts.getcallinfo**](-rpcexts-getcallinfo.md) extension. (See the reference page for an explanation of the syntax.) You need to supply the process ID of 0x3D4:
+3. Get the active calls in this process by using the [**!rpcexts.getcallinfo**](../debuggercmds/-rpcexts-getcallinfo.md) extension. (See the reference page for an explanation of the syntax.) You need to supply the process ID of 0x3D4:
 
     ```dbgcmd
     0:001> !rpcexts.getcallinfo 0 0 FFFF 3d4
@@ -34,7 +34,7 @@ Depending on which protocol sequence is used by this particular call, you can ge
     03d4 0000.0004 02 000 19bb5061 0000.0002 00000001 00000001 00a1aced 0000.0003
     ```
 
-    Look for calls with status 02 or 01 (dispatched or active). In this example, the process only has one call. If there were more, you would have to use the [**!rpcexts.getdbgcell**](-rpcexts-getdbgcell.md) extension with the cell number in the THRDCELL column. This would allow you to examine the thread IDs so you could determine which call you were interested in.
+    Look for calls with status 02 or 01 (dispatched or active). In this example, the process only has one call. If there were more, you would have to use the [**!rpcexts.getdbgcell**](../debuggercmds/-rpcexts-getdbgcell.md) extension with the cell number in the THRDCELL column. This would allow you to examine the thread IDs so you could determine which call you were interested in.
 
 4. After you know which call you are interested in, look at the cell number in the CONN/CLN column. This is the cell ID of the connection object. In this case, the cell number is 0000.0003. Pass this cell number and the process ID to **!rpcexts.getdbgcell**:
 
@@ -55,7 +55,7 @@ Depending on which protocol sequence is used by this particular call, you can ge
 
 This extension will display all the information available about the client of this connection. The amount of actual information will vary, depending on the transport being used.
 
-In this example, local named pipes are being used as the transport and the process object address of the caller is displayed. If you attach a kernel debugger (or start a local kernel debugger), you can use the [**!process**](-process.md) extension to interpret this process address.
+In this example, local named pipes are being used as the transport and the process object address of the caller is displayed. If you attach a kernel debugger (or start a local kernel debugger), you can use the [**!process**](../debuggercmds/-process.md) extension to interpret this process address.
 
 If LRPC is used as the transport, the process ID and thread ID of the caller will be displayed.
 

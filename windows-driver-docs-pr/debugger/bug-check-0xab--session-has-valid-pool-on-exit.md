@@ -62,7 +62,7 @@ The SESSION\_HAS\_VALID\_POOL\_ON\_EXIT bug check occurs because a session drive
 
 ## Remarks
 
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be very helpful in determining the root cause.
+The [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be very helpful in determining the root cause.
 
  
  ## See Also

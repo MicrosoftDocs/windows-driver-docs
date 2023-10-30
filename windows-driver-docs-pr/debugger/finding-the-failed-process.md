@@ -11,7 +11,7 @@ ms.date: 05/23/2017
 ## <span id="ddk_finding_the_failed_process_dbg"></span><span id="DDK_FINDING_THE_FAILED_PROCESS_DBG"></span>
 
 
-Before finding the failed process, make sure that you are in the context of the accepting processor. To determine the accepting processor, use the [**!pcr**](-pcr.md) extension on each processor and looking for the processor for which an exception handler has been loaded. The exception handler of the accepting processor has an address other than 0xFFFFFFFF.
+Before finding the failed process, make sure that you are in the context of the accepting processor. To determine the accepting processor, use the [**!pcr**](../debuggercmds/-pcr.md) extension on each processor and looking for the processor for which an exception handler has been loaded. The exception handler of the accepting processor has an address other than 0xFFFFFFFF.
 
 For example, because the address of **NtTib.ExceptionList** on this processor, is 0xFFFFFFFF, this is not the processor with the failed process:
 
@@ -74,7 +74,7 @@ PCR Processor 1 @81497000
                   DpcQueue: 
 ```
 
-When you are in the correct processor context, the [**!process**](-process.md) extension displays the currently running process.
+When you are in the correct processor context, the [**!process**](../debuggercmds/-process.md) extension displays the currently running process.
 
 The most interesting parts of the process dump are:
 
@@ -110,31 +110,31 @@ In addition to **!process**, the following extensions can help to determine the 
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><strong><a href="-ready.md" data-raw-source="[!ready](-ready.md)">!ready</a></strong></p></td>
+<td align="left"><p><strong><a href="../debuggercmds/-ready.md" data-raw-source="[!ready](../debuggercmds/-ready.md)">!ready</a></strong></p></td>
 <td align="left"><p>Identifies the threads that are ready to run, in order of priority.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong><a href="-locks---kdext--locks-.md" data-raw-source="[!kdext*.locks](-locks---kdext--locks-.md)">!kdext*.locks</a></strong></p></td>
+<td align="left"><p><strong><a href="../debuggercmds/-locks---kdext--locks-.md" data-raw-source="[!kdext*.locks](../debuggercmds/-locks---kdext--locks-.md)">!kdext*.locks</a></strong></p></td>
 <td align="left"><p>Identifies any held resource locks, in case there is a deadlock with retail time outs.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong><a href="-vm.md" data-raw-source="[!vm](-vm.md)">!vm</a></strong></p></td>
+<td align="left"><p><strong><a href="../debuggercmds/-vm.md" data-raw-source="[!vm](../debuggercmds/-vm.md)">!vm</a></strong></p></td>
 <td align="left"><p>Checks the virtual memory usage.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong><a href="-poolused.md" data-raw-source="[!poolused](-poolused.md)">!poolused</a></strong></p></td>
+<td align="left"><p><strong><a href="../debuggercmds/-poolused.md" data-raw-source="[!poolused](../debuggercmds/-poolused.md)">!poolused</a></strong></p></td>
 <td align="left"><p>Determines whether one type of pool allocation is disproportionately large (pool tagging required).</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong><a href="-memusage.md" data-raw-source="[!memusage](-memusage.md)">!memusage</a></strong></p></td>
+<td align="left"><p><strong><a href="../debuggercmds/-memusage.md" data-raw-source="[!memusage](../debuggercmds/-memusage.md)">!memusage</a></strong></p></td>
 <td align="left"><p>Checks the physical memory status.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong><a href="-heap.md" data-raw-source="[!heap](-heap.md)">!heap</a></strong></p></td>
+<td align="left"><p><strong><a href="../debuggercmds/-heap.md" data-raw-source="[!heap](../debuggercmds/-heap.md)">!heap</a></strong></p></td>
 <td align="left"><p>Checks the validity of the heap.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong><a href="-irpfind.md" data-raw-source="[!irpfind](-irpfind.md)">!irpfind</a></strong></p></td>
+<td align="left"><p><strong><a href="../debuggercmds/-irpfind.md" data-raw-source="[!irpfind](../debuggercmds/-irpfind.md)">!irpfind</a></strong></p></td>
 <td align="left"><p>Searches nonpaged pool for active IRPs.</p></td>
 </tr>
 </tbody>

@@ -77,7 +77,7 @@ For more information, see [TList](tlist.md).
 
 ## The **.tlist** debugger command
 
-If there's already a user-mode debugger running on the system in question, the [**.tlist (List Process IDs)**](-tlist--list-process-ids-.md) command will display a list of all PIDs on that system.
+If there's already a user-mode debugger running on the system in question, the [**.tlist (List Process IDs)**](../debuggercmds/-tlist--list-process-ids-.md) command will display a list of all PIDs on that system.
 
 ## PowerShell Get-Process command
 

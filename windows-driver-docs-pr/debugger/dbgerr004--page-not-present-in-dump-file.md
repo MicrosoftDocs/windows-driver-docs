@@ -15,7 +15,7 @@ Debugger error **dbgerr004** displays the message "Page *number* not present in 
 
 The specified *number* is the page frame number (PFN) corresponding to the location in the physical memory of the original page.
 
-To suppress this error message, use the [**.ignore\_missing\_pages 1**](-ignore-missing-pages--suppress-missing-page-errors-.md) command. This command allows debugging to proceed, but does not display this error message.
+To suppress this error message, use the [**.ignore\_missing\_pages 1**](../debuggercmds/-ignore-missing-pages--suppress-missing-page-errors-.md) command. This command allows debugging to proceed, but does not display this error message.
 
 Kernel-mode memory dumps come in three sizes, and the smaller sizes do not include all the memory pages. For details, see [Varieties of Kernel-Mode Dump Files](varieties-of-kernel-mode-dump-files.md).
 

@@ -10,10 +10,10 @@ ms.date: 05/23/2017
 
 You can use the following commands for debugging device nodes and device stacks.
 
--   [**!devnode**](-devnode.md)
--   [**!devstack**](-devstack.md)
--   [**!devobj**](-devobj.md)
--   [**!drvobj**](-drvobj.md)
+-   [**!devnode**](../debuggercmds/-devnode.md)
+-   [**!devstack**](../debuggercmds/-devstack.md)
+-   [**!devobj**](../debuggercmds/-devobj.md)
+-   [**!drvobj**](../debuggercmds/-drvobj.md)
 
  
 

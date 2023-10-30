@@ -158,11 +158,11 @@ The following table lists the commands that parse the module list and control th
 </tr>
 <tr class="even">
 <td align="left"><p><strong>obj</strong> <em>Mask</em></p></td>
-<td align="left"><p>Lists all object files associated with the default module that match the specified pattern. <em>Mask</em> may contain a variety of wildcard characters and specifiers; see <a href="string-wildcard-syntax.md" data-raw-source="[String Wildcard Syntax](string-wildcard-syntax.md)">String Wildcard Syntax</a> for details.</p></td>
+<td align="left"><p>Lists all object files associated with the default module that match the specified pattern. <em>Mask</em> may contain a variety of wildcard characters and specifiers; see <a href="../debuggercmds/string-wildcard-syntax.md" data-raw-source="[String Wildcard Syntax](../debuggercmds/string-wildcard-syntax.md)">String Wildcard Syntax</a> for details.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>src</strong> <em>Mask</em></p></td>
-<td align="left"><p>Lists all source files associated with the default module that match the specified pattern. <em>Mask</em> may contain a variety of wildcard characters and specifiers; see <a href="string-wildcard-syntax.md" data-raw-source="[String Wildcard Syntax](string-wildcard-syntax.md)">String Wildcard Syntax</a> for details.</p></td>
+<td align="left"><p>Lists all source files associated with the default module that match the specified pattern. <em>Mask</em> may contain a variety of wildcard characters and specifiers; see <a href="../debuggercmds/string-wildcard-syntax.md" data-raw-source="[String Wildcard Syntax](../debuggercmds/string-wildcard-syntax.md)">String Wildcard Syntax</a> for details.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>enummod</strong></p></td>
@@ -189,7 +189,7 @@ The following table lists the commands that display and search for symbols.
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>enum</strong> <em>Module</em><strong>!</strong><em>Symbol</em></p></td>
-<td align="left"><p>Enumerates all symbols matching the specified module and symbol. <em>Module</em> specifies the module to search (without the file name extension). <em>Symbol</em> specifies a pattern that the symbol must contain. Both <em>Module</em> and <em>Symbol</em> may contain a variety of wildcard characters and specifiers; see <a href="string-wildcard-syntax.md" data-raw-source="[String Wildcard Syntax](string-wildcard-syntax.md)">String Wildcard Syntax</a> for details.</p></td>
+<td align="left"><p>Enumerates all symbols matching the specified module and symbol. <em>Module</em> specifies the module to search (without the file name extension). <em>Symbol</em> specifies a pattern that the symbol must contain. Both <em>Module</em> and <em>Symbol</em> may contain a variety of wildcard characters and specifiers; see <a href="../debuggercmds/string-wildcard-syntax.md" data-raw-source="[String Wildcard Syntax](../debuggercmds/string-wildcard-syntax.md)">String Wildcard Syntax</a> for details.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>enumaddr</strong> <em>Address</em></p></td>
@@ -235,7 +235,7 @@ The following table lists the commands that display and search for symbols.
 </tr>
 <tr class="even">
 <td align="left"><p><strong>locals</strong> <em>Function</em> [<em>Mask</em>]</p></td>
-<td align="left"><p>Displays all local variables contained within the specified function. If <em>Mask</em> is included, only those locals matching the specified pattern are displayed; see <a href="string-wildcard-syntax.md" data-raw-source="[String Wildcard Syntax](string-wildcard-syntax.md)">String Wildcard Syntax</a> for details.</p></td>
+<td align="left"><p>Displays all local variables contained within the specified function. If <em>Mask</em> is included, only those locals matching the specified pattern are displayed; see <a href="../debuggercmds/string-wildcard-syntax.md" data-raw-source="[String Wildcard Syntax](../debuggercmds/string-wildcard-syntax.md)">String Wildcard Syntax</a> for details.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>type</strong> <em>TypeName</em></p></td>
@@ -243,7 +243,7 @@ The following table lists the commands that display and search for symbols.
 </tr>
 <tr class="even">
 <td align="left"><p><strong>elines</strong> [<em>Source</em> [<em>Obj</em>]]</p></td>
-<td align="left"><p>Enumerates all source lines matching the specified source mask and object mask. <em>Source</em> specifies the name of the source file, including the absolute path and file name extension. <em>Obj</em> specifies the name of the object file, including the relative path and file name extension. Both <em>Source</em> and <em>Obj</em> may contain a variety of wildcard characters and specifiers; see <a href="string-wildcard-syntax.md" data-raw-source="[String Wildcard Syntax](string-wildcard-syntax.md)">String Wildcard Syntax</a> for details. If a parameter is omitted this is equivalent to using the asterisk (<strong><em></strong>) wildcard. If you do not wish to specify path information, prefix the file name with <strong></em>&lt;/strong&gt; to indicate a wildcard path.</p></td>
+<td align="left"><p>Enumerates all source lines matching the specified source mask and object mask. <em>Source</em> specifies the name of the source file, including the absolute path and file name extension. <em>Obj</em> specifies the name of the object file, including the relative path and file name extension. Both <em>Source</em> and <em>Obj</em> may contain a variety of wildcard characters and specifiers; see <a href="../debuggercmds/string-wildcard-syntax.md" data-raw-source="[String Wildcard Syntax](../debuggercmds/string-wildcard-syntax.md)">String Wildcard Syntax</a> for details. If a parameter is omitted this is equivalent to using the asterisk (<strong><em></strong>) wildcard. If you do not wish to specify path information, prefix the file name with <strong></em>&lt;/strong&gt; to indicate a wildcard path.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>index</strong> <em>Value</em></p></td>
@@ -256,7 +256,7 @@ The following table lists the commands that display and search for symbols.
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>srch</strong> [<strong>mask=</strong><em>Symbol</em>] [<strong>index=</strong><em>Index</em>] [<strong>tag=</strong><em>Tag</em>] [<strong>addr=</strong><em>Address</em>] [<strong>globals</strong>]</p></td>
-<td align="left"><p>Searches for all symbols that match the specified masks. <em>Symbol</em> specifies the symbol name. It should not include the module name, but it may contain wildcard characters and specifiers; see <a href="string-wildcard-syntax.md" data-raw-source="[String Wildcard Syntax](string-wildcard-syntax.md)">String Wildcard Syntax</a> for details. <em>Index</em> specifies the hexadecimal address of a symbol to be used as the parent for the search. <em>Tag</em> specifies the hexadecimal symbol type classifier (<strong>SymTag</strong><em>Xxx</em>) value that must match the symbol. <em>Address</em> specifies the address of the symbol. If <strong>globals</strong> is included, only global symbols will be displayed.</p></td>
+<td align="left"><p>Searches for all symbols that match the specified masks. <em>Symbol</em> specifies the symbol name. It should not include the module name, but it may contain wildcard characters and specifiers; see <a href="../debuggercmds/string-wildcard-syntax.md" data-raw-source="[String Wildcard Syntax](../debuggercmds/string-wildcard-syntax.md)">String Wildcard Syntax</a> for details. <em>Index</em> specifies the hexadecimal address of a symbol to be used as the parent for the search. <em>Tag</em> specifies the hexadecimal symbol type classifier (<strong>SymTag</strong><em>Xxx</em>) value that must match the symbol. <em>Address</em> specifies the address of the symbol. If <strong>globals</strong> is included, only global symbols will be displayed.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>uw</strong> <em>Address</em></p></td>

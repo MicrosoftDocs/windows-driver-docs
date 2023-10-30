@@ -27,7 +27,7 @@ Searching for call info ...
 
 For details on the optional parameters, see [**DbgRpc Command-Line Options**](dbgrpc-command-line-options.md).
 
-For a similar example using the RPC debugger extensions, see [**!rpcexts.getclientcallinfo**](-rpcexts-getclientcallinfo.md).
+For a similar example using the RPC debugger extensions, see [**!rpcexts.getclientcallinfo**](../debuggercmds/-rpcexts-getclientcallinfo.md).
 
 **Note**   Information about Client Call objects is only gathered if the **Full** state information is being gathered. See [Enabling RPC State Information](enabling-rpc-state-information.md) for details.
 

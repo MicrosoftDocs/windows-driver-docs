@@ -21,7 +21,7 @@ The **MajorFunction** member of the [**DRIVER\_OBJECT**](/windows-hardware/drive
 
 An IRP can be categorized according to its major function code, which is identified by a constant, such as **IRP\_MJ\_READ**, **IRP\_MJ\_WRITE**, or **IRP\_MJ\_PNP**. The constants that identify major function code serve as indices in the **MajorFunction** array. For example, suppose the driver implements a dispatch function to handle IRPs that have the major function code **IRP\_MJ\_WRITE**. In this case, the driver must fill in the **MajorFunction**\[IRP\_MJ\_WRITE\] element of the array with a pointer to the dispatch function.
 
-Typically the driver fills in some of the elements of the **MajorFunction** array and leaves the remaining elements set to default values provided by the I/O manager. The following example shows how to use the [**!drvobj**](../debugger/-drvobj.md) debugger extension to inspect the function pointers for the parport driver.
+Typically the driver fills in some of the elements of the **MajorFunction** array and leaves the remaining elements set to default values provided by the I/O manager. The following example shows how to use the [**!drvobj**](../debuggercmds/-drvobj.md) debugger extension to inspect the function pointers for the parport driver.
 
 ``` syntax
 0: kd> !drvobj parport 2
@@ -131,7 +131,7 @@ Notice that the driver pair occupies only one level in the device stack and is a
 ## <span id="Example_of_a_driver_pair"></span><span id="example_of_a_driver_pair"></span><span id="EXAMPLE_OF_A_DRIVER_PAIR"></span>Example of a driver pair
 
 
-Suppose you have a wireless network card in your laptop computer, and by looking in Device Manager, you determine that netwlv64.sys is the driver for the network card. You can use the [**!drvobj**](../debugger/-drvobj.md) debugger extension to inspect the function pointers for netwlv64.sys.
+Suppose you have a wireless network card in your laptop computer, and by looking in Device Manager, you determine that netwlv64.sys is the driver for the network card. You can use the [**!drvobj**](../debuggercmds/-drvobj.md) debugger extension to inspect the function pointers for netwlv64.sys.
 
 ``` syntax
 1: kd> !drvobj netwlv64 2

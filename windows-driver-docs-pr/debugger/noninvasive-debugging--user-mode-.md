@@ -13,7 +13,7 @@ ms.date: 05/23/2017
 
 If a user-mode application is already running, the debugger can debug it *noninvasively*. With noninvasive debugging, you do not have as many debugging actions. However, you can minimize the debugger's interference with the target application. Noninvasive debugging is useful if the target application has stopped responding.
 
-In noninvasive debugging, the debugger does not actually attach to the target application. The debugger suspends all of the target's threads and has access to the target's memory, registers, and other such information. However, the debugger cannot control the target, so commands like [**g (Go)**](g--go-.md) do not work.
+In noninvasive debugging, the debugger does not actually attach to the target application. The debugger suspends all of the target's threads and has access to the target's memory, registers, and other such information. However, the debugger cannot control the target, so commands like [**g (Go)**](../debuggercmds/g--go-.md) do not work.
 
 If you try to execute commands that are not permitted during noninvasive debugging, you receive an error message that states, "The debugger is not attached, so process execution cannot be monitored."
 
@@ -62,7 +62,7 @@ When the Attach to Process dialog box appears, select the Noninvasive check box.
 
 ### <span id="debugger_command_window"></span><span id="DEBUGGER_COMMAND_WINDOW"></span>Debugger Command Window
 
-If the debugger is already active, you can noninvasively debug a running process by using the [**.attach -v (Attach to Process)**](-attach--attach-to-process-.md) command in the [Debugger Command window](the-debugger-command-window.md).
+If the debugger is already active, you can noninvasively debug a running process by using the [**.attach -v (Attach to Process)**](../debuggercmds/-attach--attach-to-process-.md) command in the [Debugger Command window](the-debugger-command-window.md).
 
 You can use the .attach command if the debugger is already debugging one or more processes invasively. You can use this command in CDB if it is dormant, but not in a dormant WinDbg.
 

@@ -10,7 +10,7 @@ ms.topic: reference
 
 # DRV\_QUERYDEVNODE function
 
-The DRV\_QUERYDEVNODE message queries for the [*devnode*](../debugger/-devnode.md) number assigned to the device by the Plug and Play manager.
+The DRV\_QUERYDEVNODE message queries for the [*devnode*](../debuggercmds/-devnode.md) number assigned to the device by the Plug and Play manager.
 
 ## Syntax
 

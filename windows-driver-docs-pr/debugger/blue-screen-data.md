@@ -50,7 +50,7 @@ There are multiple ways to gather the four stop code parameters.
 
 - Examine the Windows system log in the Event Viewer. The event properties for the bug check will list the four stop code parameters. For more information, see [Open Event Viewer](/microsoft-365/security/defender-endpoint/event-error-codes).
 
-- Load the generated dump file and use the [!analyze](-analyze.md) command with the debugger attached. For more information, see [Analyzing a kernel-mode dump file with WinDbg](analyzing-a-kernel-mode-dump-file-with-windbg.md).
+- Load the generated dump file and use the [!analyze](../debuggercmds/-analyze.md) command with the debugger attached. For more information, see [Analyzing a kernel-mode dump file with WinDbg](analyzing-a-kernel-mode-dump-file-with-windbg.md).
 
 - Attach a kernel debugger to the faulting PC. When the stop code occurs, the debugger output will include the four parameters after the stop code hex value.
 
@@ -75,13 +75,13 @@ There are multiple ways to gather the four stop code parameters.
 
 ### Read bug check information from the debugger
 
-If a debugger is attached, and debugging is enabled on the PC, a bug check will cause the target computer to break into the debugger. In this case, the blue screen might not appear immediately. The full details on this crash will be sent to the debugger and appear in the debugger window. To see this information a second time, use the [.bugcheck (Display bug check data)](-bugcheck--display-bug-check-data-.md) command or the [!analyze](-analyze.md) extension command. For information on enabling debugging see, [Getting started with WinDbg (Kernel-Mode)](getting-started-with-windbg--kernel-mode-.md).
+If a debugger is attached, and debugging is enabled on the PC, a bug check will cause the target computer to break into the debugger. In this case, the blue screen might not appear immediately. The full details on this crash will be sent to the debugger and appear in the debugger window. To see this information a second time, use the [.bugcheck (Display bug check data)](../debuggercmds/-bugcheck--display-bug-check-data-.md) command or the [!analyze](../debuggercmds/-analyze.md) extension command. For information on enabling debugging see, [Getting started with WinDbg (Kernel-Mode)](getting-started-with-windbg--kernel-mode-.md).
 
 ## Kernel debugging and crash dump analysis
 
 Kernel debugging is especially useful when other troubleshooting techniques fail, or for a recurring problem. Remember to capture the exact text in the bug check information section of the error message. To isolate a complex problem and develop a viable workaround, it's useful to record the exact actions that lead to the failure.
 
-The [!analyze](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [!analyze](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
 You can also set a breakpoint in the code leading up to this stop code and attempt to single step forward into the faulting code.
 
@@ -91,7 +91,7 @@ For more information, see the following articles:
 
 [Analyzing a kernel-mode dump file with WinDbg](analyzing-a-kernel-mode-dump-file-with-windbg.md)
 
-[Using the !analyze extension](using-the--analyze-extension.md) and [!analyze](-analyze.md)
+[Using the !analyze extension](using-the--analyze-extension.md) and [!analyze](../debuggercmds/-analyze.md)
 
 [The Defrag Tools shows](/shows/defrag-tools/)
 
@@ -163,4 +163,4 @@ For general troubleshooting of Windows bug check codes, follow these suggestions
 
 - [Analyzing a kernel-mode dump file with WinDbg](analyzing-a-kernel-mode-dump-file-with-windbg.md)
 
-- [Using the !analyze extension](using-the--analyze-extension.md) and [!analyze](-analyze.md)
+- [Using the !analyze extension](using-the--analyze-extension.md) and [!analyze](../debuggercmds/-analyze.md)

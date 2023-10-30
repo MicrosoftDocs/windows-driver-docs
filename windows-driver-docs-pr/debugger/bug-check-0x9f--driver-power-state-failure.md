@@ -48,7 +48,7 @@ To determine the specific cause and to create a code fix, programming experience
 
 **Debugging bug check 0x9F when Parameter 1 equals 0x3**
 
-- In a kernel debugger, use the [**!analyze -v**](-analyze.md) command to perform the initial bug check analysis. The verbose analysis displays the address of the **nt!TRIAGE\_9F\_POWER** structure, which is in Arg3.
+- In a kernel debugger, use the [**!analyze -v**](../debuggercmds/-analyze.md) command to perform the initial bug check analysis. The verbose analysis displays the address of the **nt!TRIAGE\_9F\_POWER** structure, which is in Arg3.
 
 ```dbgcmd
 kd>!analyze -v
@@ -67,11 +67,11 @@ kd>!analyze -v
     Arg4: fffffa800ab61bd0, The blocked IRP
 ```
 
-If a driver that is responsible for the error can be identified, its name is printed on the blue screen and stored in memory at the location (PUNICODE\_STRING) **KiBugCheckDriver**. You can use [**dx** (display debugger object model expression)](dx--display-visualizer-variables-.md), a debugger command, to display this: `dx KiBugCheckDriver`.
+If a driver that is responsible for the error can be identified, its name is printed on the blue screen and stored in memory at the location (PUNICODE\_STRING) **KiBugCheckDriver**. You can use [**dx** (display debugger object model expression)](../debuggercmds/dx--display-visualizer-variables-.md), a debugger command, to display this: `dx KiBugCheckDriver`.
 
 The nt!TRIAGE\_9F\_POWER structure provides additional bug check information that might help you determine the cause of this bug check. The structure can provide a list of all outstanding power IRPs, a list of all power IRP worker threads, and a pointer to the delayed system worker queue.
 
-- Use the [**dt (Display Type)**](dt--display-type-.md) command and specify the nt!TRIAGE\_9F\_POWER structure using the address from Arg3.
+- Use the [**dt (Display Type)**](../debuggercmds/dt--display-type-.md) command and specify the nt!TRIAGE\_9F\_POWER structure using the address from Arg3.
 
 ```dbgcmd
     0: kd> dt nt!_TRIAGE_9F_POWER fffff8000386c3d8
@@ -82,9 +82,9 @@ The nt!TRIAGE\_9F\_POWER structure provides additional bug check information tha
        +0x018 DelayedWorkQueue : 0xfffff800`01c6d2d8 _TRIAGE_EX_WORK_QUEUE
 ```
 
-The [**dt (Display Type)**](dt--display-type-.md) command displays the structure. You can use various debugger commands to follow the LIST\_ENTRY fields to examine the list of outstanding IRPs and the power IRP worker threads.
+The [**dt (Display Type)**](../debuggercmds/dt--display-type-.md) command displays the structure. You can use various debugger commands to follow the LIST\_ENTRY fields to examine the list of outstanding IRPs and the power IRP worker threads.
 
-- Use the [**!irp**](-irp.md) command to examine the IRP that was blocked. The address of this IRP is in Arg4.
+- Use the [**!irp**](../debuggercmds/-irp.md) command to examine the IRP that was blocked. The address of this IRP is in Arg4.
 
 ```dbgcmd
     0: kd> !irp fffffa800ab61bd0
@@ -121,7 +121,7 @@ The [**dt (Display Type)**](dt--display-type-.md) command displays the structure
                 Args: 00000000 00000000 00000000 00000000
 ```
 
-- Use the [**!devstack**](-devstack.md) command with the PDO address in Arg2, to display information associated with the faulting driver.
+- Use the [**!devstack**](../debuggercmds/-devstack.md) command with the PDO address in Arg2, to display information associated with the faulting driver.
 
 ```dbgcmd
     0: kd> !devstack fffffa8007b13440
@@ -184,25 +184,25 @@ The [**dt (Display Type)**](dt--display-type-.md) command displays the structure
       THREAD: ffffe0000ef5e040 (static), IRP: ffffe00013d07420, DEVICE: ffffe00012dd5040
 ```
 
-- If you are working with a KMDF driver, use the [Windows Driver Framework Extensions](kernel-mode-driver-framework-extensions--wdfkd-dll-.md) (!wdfkd) to gather additional information.
+- If you are working with a KMDF driver, use the [Windows Driver Framework Extensions](../debuggercmds/kernel-mode-driver-framework-extensions--wdfkd-dll-.md) (!wdfkd) to gather additional information.
 
-  Use [**!wdfkd.wdflogdump**](-wdfkd-wdflogdump.md) &lt;your driver name&gt;, to see if KMDF is waiting for you to ACK any pending requests.
+  Use [**!wdfkd.wdflogdump**](../debuggercmds/-wdfkd-wdflogdump.md) &lt;your driver name&gt;, to see if KMDF is waiting for you to ACK any pending requests.
 
-  Use [**!wdfkd.wdfdevicequeues**](-wdfkd-wdfdevicequeues.md) &lt;your WDFDEVICE&gt; to examine all outstanding requests and what state they are in.
+  Use [**!wdfkd.wdfdevicequeues**](../debuggercmds/-wdfkd-wdfdevicequeues.md) &lt;your WDFDEVICE&gt; to examine all outstanding requests and what state they are in.
 
-- Use the [**!stacks**](-stacks.md) extension to examine the state of every thread and look for a thread that might be holding up the power state transition.
+- Use the [**!stacks**](../debuggercmds/-stacks.md) extension to examine the state of every thread and look for a thread that might be holding up the power state transition.
 
 - To help you determine the cause of the error, consider the following questions:
 
   - What are the characteristics of the physical device object (PDO) driver (Arg2)?
-  - Can you find the blocked thread? When you examine the thread with the [**!thread**](-thread.md) debugger command, what does the thread consist of?
+  - Can you find the blocked thread? When you examine the thread with the [**!thread**](../debuggercmds/-thread.md) debugger command, what does the thread consist of?
   - Is there IO associated with the thread that is blocking it? What symbols are on the stack?
   - When you examine the blocked power IRP, what do you notice?
   - What is the PnP minor function code of the power IRP?
 
 **Debugging bug check 0x9F when Parameter 1 equals 0x4**
 
-- In a kernel debugger, use the [**!analyze -v**](-analyze.md) command to perform the initial bug check analysis. The verbose analysis displays the address of the **nt!TRIAGE\_9F\_PNP** structure, which is in Parameter 4 (arg4).
+- In a kernel debugger, use the [**!analyze -v**](../debuggercmds/-analyze.md) command to perform the initial bug check analysis. The verbose analysis displays the address of the **nt!TRIAGE\_9F\_PNP** structure, which is in Parameter 4 (arg4).
 
 ```dbgcmd
     kd> !analyze -v
@@ -225,7 +225,7 @@ The [**dt (Display Type)**](dt--display-type-.md) command displays the structure
 
 The nt!TRIAGE\_9F\_PNP structure provides additional bug check information that might help you determine the cause of the error. The nt!TRIAGE\_9F\_PNP structure provides a pointer to a structure that contains the list of dispatched (but not completed) PnP IRPs and provides a pointer to the delayed system worker queue.
 
-- Use the [**dt (Display Type)**](dt--display-type-.md) command and specify the **nt!TRIAGE\_9F\_PNP** structure and the address that you found in Arg4.
+- Use the [**dt (Display Type)**](../debuggercmds/dt--display-type-.md) command and specify the **nt!TRIAGE\_9F\_PNP** structure and the address that you found in Arg4.
 
 ```dbgcmd
     kd> dt nt!TRIAGE_9F_PNP 82931b24
@@ -236,7 +236,7 @@ The nt!TRIAGE\_9F\_PNP structure provides additional bug check information that 
 
 ```
 
-The [**dt (Display Type)**](dt--display-type-.md) command displays the structure. You can use debugger commands to follow the LIST\_ENTRY fields to examine the list of outstanding PnP IRPs.
+The [**dt (Display Type)**](../debuggercmds/dt--display-type-.md) command displays the structure. You can use debugger commands to follow the LIST\_ENTRY fields to examine the list of outstanding PnP IRPs.
 
 To help you determine the cause of the error, consider the following questions:
 

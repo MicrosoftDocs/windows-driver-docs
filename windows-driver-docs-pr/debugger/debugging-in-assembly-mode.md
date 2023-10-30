@@ -23,15 +23,15 @@ The debugger primarily analyzes binary executable code. Instead of displaying th
 
 You can display the resulting code (known as *disassembly code*) in several different ways:
 
--   The [**u (Unassemble)**](u--unassemble-.md) command disassembles and displays a specified section of machine language.
+-   The [**u (Unassemble)**](../debuggercmds/u--unassemble-.md) command disassembles and displays a specified section of machine language.
 
--   The [**uf (Unassemble Function)**](uf--unassemble-function-.md) command disassembles and displays a function.
+-   The [**uf (Unassemble Function)**](../debuggercmds/uf--unassemble-function-.md) command disassembles and displays a function.
 
--   The [**up (Unassemble from Physical Memory)**](up--unassemble-from-physical-memory-.md) command disassembles and displays a specified section of machine language that has been stored in physical memory.
+-   The [**up (Unassemble from Physical Memory)**](../debuggercmds/up--unassemble-from-physical-memory-.md) command disassembles and displays a specified section of machine language that has been stored in physical memory.
 
--   The [**ur (Unassemble Real Mode BIOS)**](ur--unassemble-real-mode-bios-.md) command disassembles and displays a specified 16-bit real-mode code.
+-   The [**ur (Unassemble Real Mode BIOS)**](../debuggercmds/ur--unassemble-real-mode-bios-.md) command disassembles and displays a specified 16-bit real-mode code.
 
--   The [**ux (Unassemble x86 BIOS)**](ux--unassemble-x86-bios-.md) command disassembles and displays the x86-based BIOS code instruction set at a specified address.
+-   The [**ux (Unassemble x86 BIOS)**](../debuggercmds/ux--unassemble-x86-bios-.md) command disassembles and displays the x86-based BIOS code instruction set at a specified address.
 
 -   (WinDbg only) The disassembly window disassembles and displays a specified section of machine language. this window is automatically active if you select the **automatically open disassembly** command on the **window** menu. you can also open this window by selecting **disassembly** on the **view** menu, pressing alt+7, or pressing the **disassembly (alt+7)** button (![screen shot of the disassembly button.](images/tbdisasm2.png)) on the WinDbg toolbar.
 
@@ -45,15 +45,15 @@ The disassembly display appears in four columns: address offset, binary code, as
 
 To the right of the line that represents the current program counter, the display shows the values of any memory locations or registers that are being accessed. If this line contains a branch instruction, the notation **\[br=1\]** or **\[br=0\]** appears. This notation indicates a branch that is or is not taken, respectively.
 
-You can use the [**.asm (Change Disassembly Options)**](-asm--change-disassembly-options-.md) command to change how the disassembled instructions are displayed.
+You can use the [**.asm (Change Disassembly Options)**](../debuggercmds/-asm--change-disassembly-options-.md) command to change how the disassembled instructions are displayed.
 
 In WinDbg's Disassembly window, the line that represents the current program counter is highlighted. Lines where breakpoints are set are also highlighted.
 
 You can also use the following commands to manipulate assembly code:
 
--   The [**\# (Search for Disassembly Pattern)**](---search-for-disassembly-pattern-.md) command searches a region of memory for a specific pattern. This command is equivalent to searching the four columns of the disassembly display.
+-   The [**\# (Search for Disassembly Pattern)**](../debuggercmds/---search-for-disassembly-pattern-.md) command searches a region of memory for a specific pattern. This command is equivalent to searching the four columns of the disassembly display.
 
--   The [**a (Assemble)**](a--assemble-.md) command can take assembly instructions and translate them into binary machine code.
+-   The [**a (Assemble)**](../debuggercmds/../debuggercmds/a--assemble-.md) command can take assembly instructions and translate them into binary machine code.
 
 ### <span id="assembly_mode_and_source_mode"></span><span id="ASSEMBLY_MODE_AND_SOURCE_MODE"></span>Assembly Mode and Source Mode
 
@@ -67,7 +67,7 @@ In WinDbg, the [Disassembly window](disassembly-window.md) automatically moves t
 
 To set the mode, you can do one of the following:
 
--   Use the [**l+, l- (Set Source Options)**](l---l---set-source-options-.md) command to control the mode. The **l-t** command activates assembly mode.
+-   Use the [**l+, l- (Set Source Options)**](../debuggercmds/l---l---set-source-options-.md) command to control the mode. The **l-t** command activates assembly mode.
 
 -   (WinDbg only) Clear the **Source Mode** command on the **Debug** menu to cause the debugger to enter assembly mode.You can also select the **Source mode off** button (![screen shot of the source mode off button.](images/tbasm.png)) on the toolbar.
 

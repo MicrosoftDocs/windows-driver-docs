@@ -37,15 +37,15 @@ The specified processor isn't processing interrupts. Typically, this bug check o
 
 The following debugger commands can be used to investigate the processor states, IRQL level, and code that is running, to attempt to determine which piece of code is not allowing forward execution.
 
-[!analyze](-analyze.md)
+[!analyze](../debuggercmds/-analyze.md)
 
-[k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md)
+[k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md)
 
-[!pcr](-pcr.md)
+[!pcr](../debuggercmds/-pcr.md)
 
-[!prcb](-prcb.md)
+[!prcb](../debuggercmds/-prcb.md)
 
-[!irql](-irql.md)
+[!irql](../debuggercmds/-irql.md)
 
 ## See Also
 

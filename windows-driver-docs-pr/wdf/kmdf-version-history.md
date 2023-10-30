@@ -86,7 +86,7 @@ Unchanged from version 1.25.
 * Added [**WdfDmaTransactionSetSingleTransferRequirement**](/windows-hardware/drivers/ddi/wdfdmatransaction/nf-wdfdmatransaction-wdfdmatransactionsetsingletransferrequirement)
 * Added **WDF_DMA_ENABLER_CONFIG_REQUIRE_SINGLE_TRANSFER** flag in [**WDF_DMA_ENABLER_CONFIG_FLAGS**](/windows-hardware/drivers/ddi/wdfdmaenabler/ne-wdfdmaenabler-_wdf_dma_enabler_config_flags)
 * Added **STATUS_WDF_TOO_MANY_TRANSFERS** return value for [**WdfDmaTransactionInitialize**](/windows-hardware/drivers/ddi/wdfdmatransaction/nf-wdfdmatransaction-wdfdmatransactioninitialize) and [**WdfDmaTransactionDmaCompleted**](/windows-hardware/drivers/ddi/wdfdmatransaction/nf-wdfdmatransaction-wdfdmatransactiondmacompleted)
-* Added output messages for single transfer output to [**!wdfkd.wdfdmatransaction**](../debugger/-wdfkd-wdfdmatransaction.md) and [**!wdfkd.wdfdmaenabler**](../debugger/-wdfkd-wdfdmaenabler.md)
+* Added output messages for single transfer output to [**!wdfkd.wdfdmatransaction**](../debuggercmds/-wdfkd-wdfdmatransaction.md) and [**!wdfkd.wdfdmaenabler**](../debuggercmds/-wdfkd-wdfdmaenabler.md)
 * For more info about single transfer DMA, see [Using Single Transfer DMA](using-single-transfer-dma.md).
 
 ## KMDF 1.15 (Windows 10, version 1507)

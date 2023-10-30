@@ -43,7 +43,7 @@ Use the following procedure to accomplish this task. This procedure assumes you 
 6.  The debugging process will begin, and WinDbg will break into the DevCon process before DevCon installs your driver.
 
 7.  Configure the debugger to break into the co-installer process when it is loaded. You can do this by either of the following methods:
-    -   In the Debugger Command window, use the [**sxe (Set Exceptions)**](sx--sxd--sxe--sxi--sxn--sxr--sx---set-exceptions-.md) command followed by **ld:** and then the filename of the co-installer, excluding the file extension. There should be no space after the colon For example, if the name of the co-installer is mycoinst.dll, you would use the following command:
+    -   In the Debugger Command window, use the [**sxe (Set Exceptions)**](../debuggercmds/sx--sxd--sxe--sxi--sxn--sxr--sx---set-exceptions-.md) command followed by **ld:** and then the filename of the co-installer, excluding the file extension. There should be no space after the colon For example, if the name of the co-installer is mycoinst.dll, you would use the following command:
         ```dbgcmd
         sxe ld:mycoinst 
         ```

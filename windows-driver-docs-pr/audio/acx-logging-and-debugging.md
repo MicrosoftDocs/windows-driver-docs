@@ -61,7 +61,7 @@ To improve the reliability of your ACX driver consider the following behaviors f
 
 ### Using the WMI Tracing debugger extensions
 
-To view trace events in the debugger, use the WMI extension, Wmitrace.dll. It contains a library of functions designed to control and view WMI event tracing. For more information, see [WMI Tracing Extensions (Wmitrace.dll)](../debugger/wmi-tracing-extensions--wmitrace-dll-.md).
+To view trace events in the debugger, use the WMI extension, Wmitrace.dll. It contains a library of functions designed to control and view WMI event tracing. For more information, see [WMI Tracing Extensions (Wmitrace.dll)](../debuggercmds/wmi-tracing-extensions--wmitrace-dll-.md).
 
 ## ACX driver debugging
 

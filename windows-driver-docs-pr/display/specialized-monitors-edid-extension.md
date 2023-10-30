@@ -36,7 +36,7 @@ The party responsible for writing the firmware code that contains the EDID must 
 
 The VSDB structure must have the format and values that are outlined in the following table.
 
-![VSDB Specification.](images/specialized-displays-vsdb.png)
+:::image type="content" source="images/specialized-displays-vsdb.png" alt-text="Table showing the VSDB structure and values for specialized displays.":::
 
 ### Vendor specific tag code [3 bits]
 

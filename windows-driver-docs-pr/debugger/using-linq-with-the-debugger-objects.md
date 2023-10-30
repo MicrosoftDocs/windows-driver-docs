@@ -35,7 +35,7 @@ You can also work with the debugger objects with NatVis. For more information se
 
 ## Dx command
 
-The examples shown here use the dx command, for more information about working with the dx command, see [dx (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md).
+The examples shown here use the dx command, for more information about working with the dx command, see [dx (Display Debugger Object Model Expression)](../debuggercmds/dx--display-visualizer-variables-.md).
 
 ## Developing a LINQ Query
 
@@ -667,7 +667,7 @@ Use the *DeviceNodeObject.Problem* object to view devices that have specific pro
 dx @$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => n.DeviceNodeObject.Problem <operator> <problemCode>)
 ```
 
-For example, to view devices that have a non zero problem code use this command. This provides similar information to "[**!devnode**](-devnode.md) 0 21".
+For example, to view devices that have a non zero problem code use this command. This provides similar information to "[**!devnode**](../debuggercmds/-devnode.md) 0 21".
 
 ```dbgcmd
 1: kd> dx @$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => n.DeviceNodeObject.Problem != 0)
@@ -854,7 +854,7 @@ For more information about the CapabilityFlags, see [**DEVICE\_CAPABILITIES**](/
 
 ## <span id="see_also"></span>See also
 
-[dx (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md)
+[dx (Display Debugger Object Model Expression)](../debuggercmds/dx--display-visualizer-variables-.md)
 
 [Native Debugger Objects in NatVis](native-debugger-objects-in-natvis.md)
 

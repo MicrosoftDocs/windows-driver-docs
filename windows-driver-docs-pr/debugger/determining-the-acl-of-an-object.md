@@ -15,7 +15,7 @@ You can use the debugger to examine the access control list (ACL) of an object.
 
 The following method can be used if you are performing kernel debugging. To use it while you are performing user-mode debugging, you need to redirect control to a kernel debugger. See [Controlling the User-Mode Debugger from the Kernel Debugger](controlling-the-user-mode-debugger-from-the-kernel-debugger.md) for details.
 
-First, use the [**!object**](-object.md) debugger extension with the name of the object in question:
+First, use the [**!object**](../debuggercmds/-object.md) debugger extension with the name of the object in question:
 
 ```dbgcmd
 kd> !object \BaseNamedObjects\AgentToWkssvcEvent
@@ -25,7 +25,7 @@ Object: ffbb8a98  Type: (80e30e70) Event
     Directory Object: e14824a0  Name: AgentToWkssvcEvent
 ```
 
-This shows that the object header has address 0xFFBB8A80. Use the [**dt (Display Type)**](dt--display-type-.md) command with this address and the **nt!\_OBJECT\_HEADER** structure name:
+This shows that the object header has address 0xFFBB8A80. Use the [**dt (Display Type)**](../debuggercmds/dt--display-type-.md) command with this address and the **nt!\_OBJECT\_HEADER** structure name:
 
 ```dbgcmd
 kd> dt nt!_OBJECT_HEADER ffbb8a80
@@ -43,7 +43,7 @@ kd> dt nt!_OBJECT_HEADER ffbb8a80
    +0x018 Body             : _QUAD
 ```
 
-The security descriptor pointer value is shown as 0xE11F08B6. The lowest 3 bits of this value represent an offset past the beginning of this structure, so you should ignore them. In other words, the SECURITY\_DESCRIPTOR structure actually begins at 0xE11F08B6 & ~0x7. Use the [**!sd**](-sd.md) extension on this address:
+The security descriptor pointer value is shown as 0xE11F08B6. The lowest 3 bits of this value represent an offset past the beginning of this structure, so you should ignore them. In other words, the SECURITY\_DESCRIPTOR structure actually begins at 0xE11F08B6 & ~0x7. Use the [**!sd**](../debuggercmds/-sd.md) extension on this address:
 
 ```dbgcmd
 kd> !sd e11f08b0

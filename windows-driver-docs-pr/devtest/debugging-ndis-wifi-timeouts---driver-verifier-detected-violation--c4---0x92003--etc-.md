@@ -21,7 +21,7 @@ When Driver Verifier is testing a NDIS/WIFI time-out rule, such as [**NdisTimedO
 
 ### Use !analyze to display information about the bug check
 
-As with any bug check that occurs, once you have control of the debugger, the best first step is to run the [**!analyze -v**](../debugger/-analyze.md) command.
+As with any bug check that occurs, once you have control of the debugger, the best first step is to run the [**!analyze -v**](../debuggercmds/-analyze.md) command.
 
 ```
 DRIVER_VERIFIER_DETECTED_VIOLATION (c4)
@@ -95,7 +95,7 @@ STACK_TEXT:
 
 ### Use the !ruleinfo extension command
 
-The **DV\_RULE\_INFO:** field of the **!analyze** output shows a link to the command you can use to find more information about this rule violation. For this example, if you click the link, it runs the [**!ruleinfo**](../debugger/-ruleinfo.md) command with the RULE\_ID (0x92003) the Arg3 and Arg 4 bug check values.
+The **DV\_RULE\_INFO:** field of the **!analyze** output shows a link to the command you can use to find more information about this rule violation. For this example, if you click the link, it runs the [**!ruleinfo**](../debuggercmds/-ruleinfo.md) command with the RULE\_ID (0x92003) the Arg3 and Arg 4 bug check values.
 
 ```
 kd> !ruleinfo 0x92003 0xffffffff9c17b860 0xffffffff9c1f3480
@@ -123,7 +123,7 @@ RULE_STATE: 0x9C1F3480
 
 ### Identify the location of the violation
 
-In the example we are using here, the miniport driver, NdisTimedOidComplete.sys, has a sleep cycle injected into its *MPOidRequest* function. We can check by clicking on the LAST\_CALL\_STACK link in the [**!ruleinfo**](../debugger/-ruleinfo.md) output. This is the last call stack seen by Driver Verifier, where we see that NDIS called *ndisMInvokeOidRequest* before the time out occurred.
+In the example we are using here, the miniport driver, NdisTimedOidComplete.sys, has a sleep cycle injected into its *MPOidRequest* function. We can check by clicking on the LAST\_CALL\_STACK link in the [**!ruleinfo**](../debuggercmds/-ruleinfo.md) output. This is the last call stack seen by Driver Verifier, where we see that NDIS called *ndisMInvokeOidRequest* before the time out occurred.
 
 ```
 kd> dps 0x9C1F3480 + 0x10
@@ -139,12 +139,12 @@ kd> dps 0x9C1F3480 + 0x10
 
 ### Fixing the cause of the NDIS WIFI timeout violation
 
-When the crash dump has been generated for a timed rule, there is a possibility that the root cause can be found at the time of the crash dump. To debug further, consider starting with the NdisKd debugger extension commands, see [NDIS Extensions (Ndiskd.dll)](../debugger/ndis-extensions--ndiskd-dll-.md) and [Getting started with NDISKD](/archive/blogs/ndis/getting-started-with-ndiskd). You may also need to look at [Event Tracing for Windows (ETW)](event-tracing-for-windows--etw-.md) logs, if your driver has implemented ETW. If this rule were not enabled, this error will manifest itself as user application hang at best, or a [**Bug Check 0x9F: DRIVER\_POWER\_STATE\_FAILURE**](../debugger/bug-check-0x9f--driver-power-state-failure.md) at the worst.
+When the crash dump has been generated for a timed rule, there is a possibility that the root cause can be found at the time of the crash dump. To debug further, consider starting with the NdisKd debugger extension commands, see [NDIS Extensions (Ndiskd.dll)](../debuggercmds/ndis-extensions--ndiskd-dll-.md) and [Getting started with NDISKD](/archive/blogs/ndis/getting-started-with-ndiskd). You may also need to look at [Event Tracing for Windows (ETW)](event-tracing-for-windows--etw-.md) logs, if your driver has implemented ETW. If this rule were not enabled, this error will manifest itself as user application hang at best, or a [**Bug Check 0x9F: DRIVER\_POWER\_STATE\_FAILURE**](../debugger/bug-check-0x9f--driver-power-state-failure.md) at the worst.
 
 ## <span id="related_topics"></span>Related topics
 
 
-[NDIS Extensions (Ndiskd.dll)](../debugger/ndis-extensions--ndiskd-dll-.md)
+[NDIS Extensions (Ndiskd.dll)](../debuggercmds/ndis-extensions--ndiskd-dll-.md)
 
 [Getting started with NDISKD (part 1)](/archive/blogs/ndis/getting-started-with-ndiskd)
 

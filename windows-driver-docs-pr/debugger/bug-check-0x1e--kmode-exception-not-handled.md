@@ -79,13 +79,13 @@ If exception code 0x80000002 occurs, the trap frame supplies more information.
 If the specific cause of the exception is unknown, consider using the following procedure to get a stack trace.
 
 > [!NOTE]
-> This procedure assumes that you can locate `NT!PspUnhandledExceptionInSystemThread`. However, in some cases, like in an access violation crash, you won't be able to find `NT!PspUnhandledExceptionInSystemThread`. In that case, look for `ntoskrnl!KiDispatchException`. The third parameter that's passed to this function is a trap frame address. Use the [.trap (display trap frame)](-trap--display-trap-frame-.md) command with this address to set the register context to the correct value. Then you can do stack traces and issue other commands.
+> This procedure assumes that you can locate `NT!PspUnhandledExceptionInSystemThread`. However, in some cases, like in an access violation crash, you won't be able to find `NT!PspUnhandledExceptionInSystemThread`. In that case, look for `ntoskrnl!KiDispatchException`. The third parameter that's passed to this function is a trap frame address. Use the [.trap (display trap frame)](../debuggercmds/-trap--display-trap-frame-.md) command with this address to set the register context to the correct value. Then you can do stack traces and issue other commands.
 
 #### Get a stack trace
 
 To get a stack trace if normal stack tracing procedures fail:
 
-1. Use the [kb (display stack backtrace)](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command to display parameters in the stack trace. Look for the call to `NT!PspUnhandledExceptionInSystemThread`. (If this function isn't listed, see the preceding note.)
+1. Use the [kb (display stack backtrace)](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command to display parameters in the stack trace. Look for the call to `NT!PspUnhandledExceptionInSystemThread`. (If this function isn't listed, see the preceding note.)
 
 1. The first parameter to `NT!PspUnhandledExceptionInSystemThread` is a pointer to a structure. The pointer contains pointers to an `except` statement:
 
@@ -100,11 +100,11 @@ To get a stack trace if normal stack tracing procedures fail:
         )
     ```
 
-    Use the [dd (display memory)](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) command on that address to display the data you need.
+    Use the [dd (display memory)](../debuggercmds/d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) command on that address to display the data you need.
 
-1. The first retrieved value is an exception record. For the exception record, use the [.exr (display exception record)](-exr--display-exception-record-.md) command.
+1. The first retrieved value is an exception record. For the exception record, use the [.exr (display exception record)](../debuggercmds/-exr--display-exception-record-.md) command.
 
-   The second value is a context record. For the context record, use the [.cxr (display context record)](-cxr--display-context-record-.md) command.
+   The second value is a context record. For the context record, use the [.cxr (display context record)](../debuggercmds/-cxr--display-context-record-.md) command.
 
 1. After the `.cxr` command executes, use the `kb` command to display a stack trace that's based on the context record information. This stack trace indicates the calling stack where the unhandled exception occurred.
 

@@ -17,25 +17,18 @@ ms.date: 04/20/2017
 
 # Copying Bitmaps
 
-
-## <span id="ddk_copying_bitmaps_gg"></span><span id="DDK_COPYING_BITMAPS_GG"></span>
-
-
 **Bit block transfer** (BitBlt) functions implemented by drivers copy blocks of bits from one surface to another. These functions include:
 
-[**DrvBitBlt**](/windows/win32/api/winddi/nf-winddi-drvbitblt)
-
-[**DrvCopyBits**](/windows/win32/api/winddi/nf-winddi-drvcopybits)
-
-[**DrvStretchBlt**](/windows/win32/api/winddi/nf-winddi-drvstretchblt)
-
-[**DrvTransparentBlt**](/windows/win32/api/winddi/nf-winddi-drvtransparentblt)
+* [**DrvBitBlt**](/windows/win32/api/winddi/nf-winddi-drvbitblt)
+* [**DrvCopyBits**](/windows/win32/api/winddi/nf-winddi-drvcopybits)
+* [**DrvStretchBlt**](/windows/win32/api/winddi/nf-winddi-drvstretchblt)
+* [**DrvTransparentBlt**](/windows/win32/api/winddi/nf-winddi-drvtransparentblt)
 
 There is also a display-driver-specific BitBlt function named [**DrvSaveScreenBits**](/windows/win32/api/winddi/nf-winddi-drvsavescreenbits).
 
 If the surface being drawn on is a *device-managed surface* or bitmap, the driver must support a minimum level of bit block transfer functions. If the surface is a GDI-managed standard format bitmap, GDI handles only those operations not hooked by the driver.
 
-### <span id="drvbitblt"></span><span id="DRVBITBLT"></span> DrvBitBlt
+## DrvBitBlt
 
 The [**DrvBitBlt**](/windows/win32/api/winddi/nf-winddi-drvbitblt) function provides general bit block transfer capabilities. If a source is used, **DrvBitBlt** copies the contents of the source rectangle onto the destination rectangle. (The *pptlSrc* parameter of this function identifies the upper left corner of the rectangle.) If there is no source rectangle, **DrvBitBlt** ignores the *pptlSrc* parameter. The destination rectangle, the surface to be modified, is defined by two integer points, the upper left and lower right corners. The rectangle is *lower right exclusive*; the lower and right edges of the rectangle are not part of the block transfer. **DrvBitBlt** cannot be called with an empty destination rectangle. The two points of the rectangle are always well ordered; that is, both coordinates of the lower right point are greater than their counterparts in the upper left point.
 
@@ -45,7 +38,7 @@ Optionally, a block transfer handled by [**DrvBitBlt**](/windows/win32/api/windd
 
 Implementing [**DrvBitBlt**](/windows/win32/api/winddi/nf-winddi-drvbitblt) represents a significant portion of the work involved in writing a driver for a raster display driver that does not have a standard-format *frame buffer*. The Microsoft VGA driver that is furnished with the Windows Driver Kit (WDK) provides sample code that supports the basic function for a planar device. Implementing **DrvBitBlt** for other devices may be less complex.
 
-### <span id="drvcopybits"></span><span id="DRVCOPYBITS"></span> DrvCopyBits
+## DrvCopyBits
 
 The [**DrvCopyBits**](/windows/win32/api/winddi/nf-winddi-drvcopybits) function is called by GDI from its simulation operations to translate between a device-managed raster surface and a GDI standard-format bitmap. **DrvCopyBits** provides a fast path for SRCCOPY (0xCCCC) ROP bit block transfers.
 
@@ -53,11 +46,9 @@ Required for a graphics driver with device-managed bitmaps or raster surfaces, t
 
 If a driver supports a device-managed surface or bitmap, the driver must implement the [**DrvCopyBits**](/windows/win32/api/winddi/nf-winddi-drvcopybits) function. At a minimum, the driver must do the following when **DrvCopyBits** is called:
 
--   Perform a block transfer to and from a bitmap, in the device's preferred format, and to the device surface.
-
--   Perform the transfer with the SRCCOPY (0xCCCC) *raster operation (ROP)*.
-
--   Allow arbitrary clipping.
+* Perform a block transfer to and from a bitmap, in the device's preferred format, and to the device surface.
+* Perform the transfer with the SRCCOPY (0xCCCC) *raster operation (ROP)*.
+* Allow arbitrary clipping.
 
 The driver can use the GDI [**CLIPOBJ**](/windows/win32/api/winddi/ns-winddi-clipobj) enumeration services to reduce the clipping to a series of clip rectangles. GDI passes down a translation vector, the [**XLATEOBJ**](/windows/win32/api/winddi/ns-winddi-xlateobj) structure, to assist in color index translation between source and destination surfaces.
 
@@ -65,7 +56,7 @@ If the surface of a device is organized as a standard-format *device-independent
 
 [**DrvCopyBits**](/windows/win32/api/winddi/nf-winddi-drvcopybits) also is called with RLE bitmaps (see the Microsoft Windows SDK documentation) and **device-dependent bitmaps (DDBs)**. The bitmaps are provided to this function as a result of application program calls to several Win32 GDI routines. The optional DDB is supported only by a few specialized drivers.
 
-### <span id="drvstretchblt"></span><span id="DRVSTRETCHBLT"></span> DrvStretchBlt
+## DrvStretchBlt
 
 A driver optionally can provide the [**DrvStretchBlt**](/windows/win32/api/winddi/nf-winddi-drvstretchblt) function, even drivers that support device-managed surfaces. This function provides capabilities for stretching block transfers between device-managed and GDI-managed surfaces. **DrvStretchBlt** supports only certain types of stretching, such as stretching by integer multiples.
 
@@ -83,17 +74,16 @@ For color translation, [**DrvStretchBlt**](/windows/win32/api/winddi/nf-winddi-d
 
 If [**DrvStretchBlt**](/windows/win32/api/winddi/nf-winddi-drvstretchblt) has hooked a call to the [**EngStretchBlt**](/windows/win32/api/winddi/nf-winddi-engstretchblt) function and is asked to do something that it does not support, it returns the request to GDI so that the appropriate function can handle it.
 
-### <span id="drvtransparentblt"></span><span id="DRVTRANSPARENTBLT"></span> DrvTransparentBlt
+## DrvTransparentBlt
 
 The [**DrvTransparentBlt**](/windows/win32/api/winddi/nf-winddi-drvtransparentblt) function causes a source bitmap to be copied onto a destination bitmap so that portions of the destination bitmap remain visible after the copy. The *iTransColor* parameter of this function specifies the color that is to be made transparent.
 
 The following figure depicts an example of a transparent blt.
 
-![diagram illustrating transparent blt.](images/transblt.png)
+:::image type="content" source="images/transblt.png" alt-text="Diagram illustrating the process of transparent blt with source and destination bitmaps.":::
 
 From left to right, the preceding figure shows the source bitmap, the destination bitmap before the transparent blt, and the destination bitmap after the transparent blt. Note that the color in *iTransColor* is the same as that in the four regions above, below, and to either side of the central region in the source bitmap.
 
 When the blt operation takes place, these four regions are not copied, which causes any pixel pattern in the destination bitmap under these regions to remain visible. Any pixel pattern under the other regions (the four corners and the center) is overwritten in the transparent blt.
 
 This is illustrated in the right-most image: the portions of the letter 'M' in the four corners and the center were overwritten with the colors in the source bitmap. The portions of the letter 'M' under the four regions whose color is the same as that in *iTransColor* remain visible.
-

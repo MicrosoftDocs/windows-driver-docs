@@ -64,7 +64,7 @@ The process options only apply to live user-mode debugging.
 ## <span id="see_also"></span>See also
 
 
-[**.childdbg**](./-childdbg--debug-child-processes-.md)
+[**.childdbg**](../debuggercmds/../debuggercmds/-childdbg--debug-child-processes-.md)
 
  
 

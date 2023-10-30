@@ -67,7 +67,7 @@ This bug check can also be caused by a missing file from the boot partition or b
 
  
 ## Resolution
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause. 
+The [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause. 
 
 
 

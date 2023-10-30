@@ -54,4 +54,4 @@ Parameter 1 indicates the type of violation.
 
 ## Remarks
 
-Use a kernel debugger and view the call stack to determine the name of the driver that caused the violation: the [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause, then enter one of the [**k (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) commands to view the call stack.
+Use a kernel debugger and view the call stack to determine the name of the driver that caused the violation: the [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause, then enter one of the [**k (Display Stack Backtrace)**](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) commands to view the call stack.

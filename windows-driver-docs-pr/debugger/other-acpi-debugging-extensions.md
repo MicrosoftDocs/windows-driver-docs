@@ -13,25 +13,25 @@ ms.date: 05/23/2017
 
 The following extension commands are useful for debugging problems with an Advanced Configuration and Power Interface (ACPI) BIOS:
 
--   [**!acpicache**](-acpicache.md) displays all of the ACPI tables cached by the hardware application layer (HAL)
+-   [**!acpicache**](../debuggercmds/-acpicache.md) displays all of the ACPI tables cached by the hardware application layer (HAL)
 
--   [**!acpiinf**](-acpiinf.md) displays information on the configuration of the ACPI
+-   [**!acpiinf**](../debuggercmds/-acpiinf.md) displays information on the configuration of the ACPI
 
--   [**!acpiirqarb**](-acpiirqarb.md) displays the contents of the ACPI IRQ arbiter structure
+-   [**!acpiirqarb**](../debuggercmds/-acpiirqarb.md) displays the contents of the ACPI IRQ arbiter structure
 
--   [**!facs**](-facs.md) displays a Firmware ACPI Control Structure
+-   [**!facs**](../debuggercmds/-facs.md) displays a Firmware ACPI Control Structure
 
--   [**!fadt**](-fadt.md) displays a Fixed ACPI Description Table
+-   [**!fadt**](../debuggercmds/-fadt.md) displays a Fixed ACPI Description Table
 
--   [**!mapic**](-mapic.md) displays an ACPI Multiple APIC Table
+-   [**!mapic**](../debuggercmds/-mapic.md) displays an ACPI Multiple APIC Table
 
--   [**!nsobj**](-nsobj.md) displays an ACPI namespace object
+-   [**!nsobj**](../debuggercmds/-nsobj.md) displays an ACPI namespace object
 
--   [**!nstree**](-nstree.md) displays a section of the ACPI namespace tree
+-   [**!nstree**](../debuggercmds/-nstree.md) displays a section of the ACPI namespace tree
 
--   [**!rsdt**](-rsdt.md) displays the ACPI Root System Description Table
+-   [**!rsdt**](../debuggercmds/-rsdt.md) displays the ACPI Root System Description Table
 
-For a complete list of ACPI-related extensions, see [**!acpikd.help**](-acpikd-help.md).
+For a complete list of ACPI-related extensions, see [**!acpikd.help**](../debuggercmds/-acpikd-help.md).
 
 For details on the **!amli***xxx* extensions, see [The AMLI Debugger](the-amli-debugger.md).
 

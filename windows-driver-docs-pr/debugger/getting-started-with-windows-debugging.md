@@ -66,7 +66,7 @@ If your goal is to debug your own source code, you need to configure a path to y
 
 ## 8. Become familiar with debugger operation
 
-The [Debugger operation](debugger-operation-win8.md) section of this documentation describes debugger operation for various tasks. For example, [Loading debugger extension DLLs](loading-debugger-extension-dlls.md) explains how to load debugger extensions. 
+The [Debugger operation](debugger-operation-win8.md) section of this documentation describes debugger operation for various tasks. For example, [Loading debugger extension DLLs](../debuggercmds/loading-debugger-extension-dlls.md) explains how to load debugger extensions. 
 
 ## 9. Become familiar with debugging techniques
 
@@ -74,11 +74,11 @@ The [Debugger operation](debugger-operation-win8.md) section of this documentati
 
 ## 10. Use the debugger reference commands
 
-You can use different debugging commands as you work in the debugger. Use the [.hh command](-hh--open-html-help-file-.md) in the debugger to display help information about any debugging command. For more information about available commands, see [Debugger reference](debugger-reference.md).
+You can use different debugging commands as you work in the debugger. Use the [.hh command](../debuggercmds/-hh--open-html-help-file-.md) in the debugger to display help information about any debugging command. For more information about available commands, see [Debugger reference](debugger-reference.md).
 
 ## 11. Use debugging extensions for specific technologies
 
-There are multiple debugging extensions that can be used to parse domain-specific data structures. For more information, see [Specialized extensions](specialized-extensions.md).
+There are multiple debugging extensions that can be used to parse domain-specific data structures. For more information, see [Specialized extensions](../debuggercmds/specialized-extensions.md).
 
 ## 12. Learn about related Windows internals
 

@@ -240,7 +240,7 @@ The Debugger help file will display help for the **.prefer\_dml** command.
 
 **Display the version of Windows on the target system**
 
-5. Display detailed version information on the target system by typing the [**vertarget (Show Target Computer Version)**](vertarget--show-target-computer-version-.md) command in the WinDbg window.
+5. Display detailed version information on the target system by typing the [**vertarget (Show Target Computer Version)**](../debuggercmds/vertarget--show-target-computer-version-.md) command in the WinDbg window.
 
 ```dbgcmd
 0: kd> vertarget
@@ -255,7 +255,7 @@ System Uptime: 0 days 01:31:58.931
 
 **List the loaded modules**
 
-6. You can verify that you are working with the right kernel-mode process by displaying the loaded modules by typing the [**lm (List Loaded Modules)**](lm--list-loaded-modules-.md) command in the WinDbg window.
+6. You can verify that you are working with the right kernel-mode process by displaying the loaded modules by typing the [**lm (List Loaded Modules)**](../debuggercmds/lm--list-loaded-modules-.md) command in the WinDbg window.
 
 ```dbgcmd
 0: Kd> lm
@@ -526,7 +526,7 @@ set ENABLE_OPTIMIZER=0
     ...  
     ```
 
-    For more information, see [**lm**](lm--list-loaded-modules-.md).
+    For more information, see [**lm**](../debuggercmds/lm--list-loaded-modules-.md).
 
 2.  Select the **Browse all global symbols** link in the debug output to display information about items symbols that start with the letter a.
 3.  Because DML is enabled, some elements of the output are hot links that you can select. Select the *data* link in the debug output to display information about items symbols that start with the letter a.
@@ -538,7 +538,7 @@ set ENABLE_OPTIMIZER=0
     fffff806`9adb1000 tabletaudiosample!AddDevice (struct _DRIVER_OBJECT *, struct _DEVICE_OBJECT *)
     ```
 
-    For information, see [**x (Examine Symbols)**](x--examine-symbols-.md).
+    For information, see [**x (Examine Symbols)**](../debuggercmds/x--examine-symbols-.md).
 
 4.  The **!lmi** extension displays detailed information about a module. Type **!lmi tabletaudiosample**. Your output should be similar to the text shown below.
 
@@ -592,7 +592,7 @@ set ENABLE_OPTIMIZER=0
 
 Information about the device driver in the Plug and Play device tree can be useful for troubleshooting. For example, if a device driver is not resident in the device tree, there may an issue with the installation of the device driver.
 
-For more information about the device node debug extension, see [**!devnode**](-devnode.md).
+For more information about the device node debug extension, see [**!devnode**](../debuggercmds/-devnode.md).
 
 **&lt;-On the host system**
 
@@ -1207,7 +1207,7 @@ It can be useful to examine variables as the code executes to confirm that the c
 
 8.  **Use DML to Display Variables**
 
-    To use DML to explore variables, select the underlined elements. The select action builds a [**dx (Display NatVis Expression)**](dx--display-visualizer-variables-.md) command that allows you to drill down on nested data structures.
+    To use DML to explore variables, select the underlined elements. The select action builds a [**dx (Display NatVis Expression)**](../debuggercmds/dx--display-visualizer-variables-.md) command that allows you to drill down on nested data structures.
 
     ```dbgcmd
     0: kd> dx -r1 (*((tabletaudiosample!CMiniportWaveRT *)0xffffe001d10b8380))
@@ -1404,7 +1404,7 @@ This output shows the call stack while debugging the sample adapter code in a br
 11 00000000`00000000 : 00000000`00000000 00000000`00000000 00000000`00000080 00000000`00000000 : 0x12e
 ```
 
-You can use DML to further explore the code. When you select the first 00 entry, the [**.frame (Set Local Context)**](-frame--set-local-context-.md) command is used to set the context and then, the [**dv (Display Local Variables)**](dv--display-local-variables-.md) command displays the local variables.
+You can use DML to further explore the code. When you select the first 00 entry, the [**.frame (Set Local Context)**](../debuggercmds/-frame--set-local-context-.md) command is used to set the context and then, the [**dv (Display Local Variables)**](../debuggercmds/dv--display-local-variables-.md) command displays the local variables.
 
 ```dbgcmd
 0: kd> .frame 0n0;dv /t /v
@@ -1431,7 +1431,7 @@ To change the current process context, use the .process &lt;process&gt; command.
 
 -   Use the `!process` command to display the current process that is involved in playing the sound.
 
-    For more information see [**!process**](-process.md)
+    For more information see [**!process**](../debuggercmds/-process.md)
 
 The output shows that the process is associated with audiodg.exe. If you are still at the breakpoint described in the previous section of this topic, the current process should be associated with the audiodg.exe image.
 
@@ -1612,7 +1612,7 @@ Because this code is not active, all of the threads are in WAIT state, as expect
 
 **Threads**
 
-The commands to view and set threads are very similar to those of processes. Use the [**!thread**](-thread.md) command to view threads. Use [**.thread**](-thread--set-register-context-.md) to set the current threads.
+The commands to view and set threads are very similar to those of processes. Use the [**!thread**](../debuggercmds/-thread.md) command to view threads. Use [**.thread**](../debuggercmds/-thread--set-register-context-.md) to set the current threads.
 
 To explore threads associated with the media player, play the media clip again. If the breakpoint described in the previous section is still in place, you will stop in the context of audiodg.exe.
 
@@ -1623,7 +1623,7 @@ Use the !thread -1 0 to display brief information for the current thread. This s
 THREAD ffffe001d3a27040  Cid 10f0.17f4  Teb: 000000ee6cf9d000 Win32Thread: 0000000000000000 RUNNING on processor 0
 ```
 
-To view more information about the thread that is running, type [**!thread**](-thread.md). Information similar to the following should be displayed.
+To view more information about the thread that is running, type [**!thread**](../debuggercmds/-thread.md). Information similar to the following should be displayed.
 
 ```dbgcmd
 0: kd> !thread
@@ -1750,7 +1750,7 @@ For more information about threads and processes, see the following references:
 
 **&lt;- On the host system**
 
-The interrupt request level (IRQL) is used to manage the priority of interrupt servicing. Each processor has an IRQL setting that threads can raise or lower. Interrupts that occur at or below the processor's IRQL setting are masked and will not interfere with the current operation. Interrupts that occur above the processor's IRQL setting take precedence over the current operation. The [**!irql**](-irql.md) extension displays the interrupt request level (IRQL) on the current processor of the target computer before the debugger break occurred. When the target computer breaks into the debugger, the IRQL changes, but the IRQL that was effective just before the debugger break is saved and is displayed by !irql.
+The interrupt request level (IRQL) is used to manage the priority of interrupt servicing. Each processor has an IRQL setting that threads can raise or lower. Interrupts that occur at or below the processor's IRQL setting are masked and will not interfere with the current operation. Interrupts that occur above the processor's IRQL setting take precedence over the current operation. The [**!irql**](../debuggercmds/-irql.md) extension displays the interrupt request level (IRQL) on the current processor of the target computer before the debugger break occurred. When the target computer breaks into the debugger, the IRQL changes, but the IRQL that was effective just before the debugger break is saved and is displayed by !irql.
 
 ```dbgcmd
 0: kd> !irql
@@ -1761,7 +1761,7 @@ Debugger saved IRQL for processor 0x0 -- 2 (DISPATCH_LEVEL)
 
 **View the registers**
 
-Display the contents of the registers for the current thread on the current processor by using the [**r (Registers)**](r--registers-.md) command.
+Display the contents of the registers for the current thread on the current processor by using the [**r (Registers)**](../debuggercmds/r--registers-.md) command.
 
 ```dbgcmd
 0: kd> r
@@ -1781,7 +1781,7 @@ Alternatively, you can display the contents of the registers by selecting **View
 
 ![windbg registers window showing about 12 registers.](images/sysvad-lab-audio-display-registers.png)
 
-Viewing the contents of the registers can be helpful when stepping through assembly language code execution and in other scenarios. For more information see [**r (Registers)**](r--registers-.md).
+Viewing the contents of the registers can be helpful when stepping through assembly language code execution and in other scenarios. For more information see [**r (Registers)**](../debuggercmds/r--registers-.md).
 
 For information about contents of the register, see [x86 Architecture](x86-architecture.md) and [x64 Architecture](x64-architecture.md).
 
@@ -1899,7 +1899,7 @@ Alternatively, you can view the memory by selecting **View** &gt; **Memory**. Us
     }
     ```
 
-8.  Attempt to display the value at the memory location of IVolume by using the [**dt (Display Type)**](dt--display-type-.md) command.
+8.  Attempt to display the value at the memory location of IVolume by using the [**dt (Display Type)**](../debuggercmds/dt--display-type-.md) command.
 
     ```dbgcmd
     kd> dt dt lVolume
@@ -1915,7 +1915,7 @@ Alternatively, you can view the memory by selecting **View** &gt; **Memory**. Us
         return ntStatus;
     ```
 
-10. Display the value at the memory location of IVolume by using the [**dt (Display Type)**](dt--display-type-.md) command.
+10. Display the value at the memory location of IVolume by using the [**dt (Display Type)**](../debuggercmds/dt--display-type-.md) command.
 
     ```dbgcmd
     kd> dt lVolume
@@ -1925,7 +1925,7 @@ Alternatively, you can view the memory by selecting **View** &gt; **Memory**. Us
 
     Now that the variable is active, a value of 6291456 is displayed in this example.
 
-11. You can also display the memory location of IVolume by using the [**? (Evaluate Expression)**](---evaluate-expression-.md) command.
+11. You can also display the memory location of IVolume by using the [**? (Evaluate Expression)**](../debuggercmds/---evaluate-expression-.md) command.
 
     ```dbgcmd
     kd> ? lVolume

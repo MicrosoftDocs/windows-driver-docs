@@ -117,7 +117,7 @@ Any additional command-line parameters can be placed here. See [Command-Line Opt
 
 Since the process server simply acts as a gateway for the smart client, the additional *Options* will be the same as those you would use if you were starting a user-mode debugger on the same machine as the target application.
 
-If you are using the **-premote** option with [**.attach (Attach to Process)**](-attach--attach-to-process-.md) or [**.create (Create Process)**](-create--create-process-.md), the parameters are the same as those listed above.
+If you are using the **-premote** option with [**.attach (Attach to Process)**](../debuggercmds/-attach--attach-to-process-.md) or [**.create (Create Process)**](../debuggercmds/-create--create-process-.md), the parameters are the same as those listed above.
 
 ## Troubleshooting
 

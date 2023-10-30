@@ -79,7 +79,7 @@ The GPU is taking more time than permitted to display graphics to your monitor. 
     -   Defective parts (memory modules, motherboards, etc.)
 -   Visual effects, or too many programs running in the background may be slowing your PC down so that the video card can not respond as necessary.
 
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
 ```dbgcmd
 3: kd> !analyze -v
@@ -156,7 +156,7 @@ Parameter 2 contains a pointer into the responsible device driver module (for ex
 BUGCHECK_P2: ffffffff9a02381e
 ```
 
-You may wish to examine the stack trace using the [**k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command.
+You may wish to examine the stack trace using the [**k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)**](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command.
 
 ```dbgcmd
 3: kd> k

@@ -21,7 +21,7 @@ When you are performing AML debugging, you should carefully distinguish between 
 
 -   When you see no prompt at all, the target computer is running.
 
-At the beginning of any debugging session, you should set your AMLI Debugger options with the [**!amli set**](-amli-set.md) extension. The **verboseon**, **traceon**, and **errbrkon** options are also very useful. You should consider activating the **spewon** option. See the extension reference page for details.
+At the beginning of any debugging session, you should set your AMLI Debugger options with the [**!amli set**](../debuggercmds/-amli-set.md) extension. The **verboseon**, **traceon**, and **errbrkon** options are also very useful. You should consider activating the **spewon** option. See the extension reference page for details.
 
 There are several ways for the AMLI Debugger to become active:
 
@@ -31,23 +31,23 @@ There are several ways for the AMLI Debugger to become active:
 
 -   If the **errbrkon** option has been set, any AML error will cause ACPI to break into the AMLI Debugger.
 
--   If you want to deliberately break into the AMLI Debugger, use the [**!amli debugger**](-amli-debugger.md) extension and then the [**g (Go)**](g--go-.md) command. The next time any AML code is executed by the interpreter, the AMLI Debugger will take over.
+-   If you want to deliberately break into the AMLI Debugger, use the [**!amli debugger**](../debuggercmds/-amli-debugger.md) extension and then the [**g (Go)**](../debuggercmds/g--go-.md) command. The next time any AML code is executed by the interpreter, the AMLI Debugger will take over.
 
 When you are at the AMLI Debugger prompt, you can type **q** to return to the kernel debugger, or type **g** to resume normal execution.
 
 The following extensions are especially useful for AML debugging:
 
--   The [**!amli dns**](-amli-dns.md) extension displays the ACPI namespace for a particular object, the namespace tree subordinate to that object, or even the entire namespace tree. This command is especially useful in determining what a particular namespace object is -- whether it is a method, a fieldunit, a device, or another type of object.
+-   The [**!amli dns**](../debuggercmds/-amli-dns.md) extension displays the ACPI namespace for a particular object, the namespace tree subordinate to that object, or even the entire namespace tree. This command is especially useful in determining what a particular namespace object is -- whether it is a method, a fieldunit, a device, or another type of object.
 
--   The [**!amli find**](-amli-find.md) extension takes the name of any namespace object and returns its full path.
+-   The [**!amli find**](../debuggercmds/-amli-find.md) extension takes the name of any namespace object and returns its full path.
 
--   The [**!amli u**](-amli-u.md) extension unassembles AML code.
+-   The [**!amli u**](../debuggercmds/-amli-u.md) extension unassembles AML code.
 
--   The [**!amli lc**](-amli-lc.md) extension displays brief information about all active ACPI contexts.
+-   The [**!amli lc**](../debuggercmds/-amli-lc.md) extension displays brief information about all active ACPI contexts.
 
--   The [**!amli r**](-amli-r.md) extension displays detailed information about the current context of the interpreter. This is useful when the AMLI Debugger prompt appears after an error is detected.
+-   The [**!amli r**](../debuggercmds/-amli-r.md) extension displays detailed information about the current context of the interpreter. This is useful when the AMLI Debugger prompt appears after an error is detected.
 
--   Breakpoints can be set and controlled within AML code. Use [**!amli bp**](-amli-bp.md) to set a breakpoint, [**!amli bc**](-amli-bc.md) to clear a breakpoint, [**!amli bd**](-amli-bd.md) to disable a breakpoint, [**!amli be**](-amli-be.md) to re-enable a breakpoint, and [**!amli bl**](-amli-bl.md) to list all breakpoints.
+-   Breakpoints can be set and controlled within AML code. Use [**!amli bp**](../debuggercmds/-amli-bp.md) to set a breakpoint, [**!amli bc**](../debuggercmds/-amli-bc.md) to clear a breakpoint, [**!amli bd**](../debuggercmds/-amli-bd.md) to disable a breakpoint, [**!amli be**](../debuggercmds/-amli-be.md) to re-enable a breakpoint, and [**!amli bl**](../debuggercmds/-amli-bl.md) to list all breakpoints.
 
 -   The AMLI Debugger is able to run, step, and trace through AML code. Use the **run**, **p**, and **t** commands to perform these actions.
 

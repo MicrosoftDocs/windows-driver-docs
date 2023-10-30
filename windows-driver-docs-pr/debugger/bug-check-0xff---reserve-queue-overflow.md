@@ -56,7 +56,7 @@ The RESERVE\_QUEUE\_OVERFLOW bug check has a value of 0x000000FF. This indicates
 </table>
 
 ## Resolution 
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be very helpful in determining the root cause.
+The [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be very helpful in determining the root cause.
  
 
  

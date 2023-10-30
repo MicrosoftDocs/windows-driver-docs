@@ -65,7 +65,7 @@ Parameter 4 - Pointer to pool header.</td>
 
 ## Resolution
 
-The [**!analyze**](./-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
  
 

@@ -8,9 +8,9 @@ ms.date: 05/23/2017
 # Using !ks.graph
 
 
-The [**!ks.graph**](-ks-graph.md) command is one of most powerful extension commands in the kernel streaming extension module. This command displays a picture of an entire graph in kernel mode from any given starting point.
+The [**!ks.graph**](../debuggercmds/-ks-graph.md) command is one of most powerful extension commands in the kernel streaming extension module. This command displays a picture of an entire graph in kernel mode from any given starting point.
 
-Before running [**!ks.graph**](-ks-graph.md), you may want to enable all library extensions that are capable of being active. To do this, issue a [**!ks.libexts enableall**](-ks-libexts.md) command. The output of **!ks.graph** will be a textual description of the kernel mode graph in topologically sorted order. Here is an example:
+Before running [**!ks.graph**](../debuggercmds/-ks-graph.md), you may want to enable all library extensions that are capable of being active. To do this, issue a [**!ks.libexts enableall**](../debuggercmds/-ks-libexts.md) command. The output of **!ks.graph** will be a textual description of the kernel mode graph in topologically sorted order. Here is an example:
 
 ```dbgcmd
 kd> !graph ffa0c6d4 7

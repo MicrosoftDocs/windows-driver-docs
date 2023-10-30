@@ -6,7 +6,7 @@ ms.date: 03/20/2023
 
 # WDDM development road map
 
-![wdk roadmap for developing wddm display drivers.](images/wdkroadmap-th.png)
+:::image type="content" source="images/wdkroadmap-th.png" alt-text="Illustration of a roadmap with the acronym 'WDK' superimposed on a highway.":::
 
 The Windows Display Driver Model (WDDM) requires that a graphics hardware vendor supply a paired user-mode display driver (UMD) and kernel-mode display driver (KMD; also referred to as a display miniport driver).
 

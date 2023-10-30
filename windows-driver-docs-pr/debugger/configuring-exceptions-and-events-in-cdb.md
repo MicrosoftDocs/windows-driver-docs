@@ -11,7 +11,7 @@ You can configure CDB to react to specified exceptions and events in a specific 
 
 You can configure the break status or handling status by doing one of the following:
 
--   Use the [**SXE**](sx--sxd--sxe--sxi--sxn--sxr--sx---set-exceptions-.md), **SXD**, **SXN**, or **SXI** command.
+-   Use the [**SXE**](../debuggercmds/sx--sxd--sxe--sxi--sxn--sxr--sx---set-exceptions-.md), **SXD**, **SXN**, or **SXI** command.
 
 -   Use the **-x**, **-xe**, **-xd**, **-xn**, or **-xi** option on the [**CDB command line**](cdb-command-line-options.md).
 -   Use the **sxe** or **sxd** keyword in the Tools.ini file.

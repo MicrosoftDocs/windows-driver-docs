@@ -67,7 +67,7 @@ The default setting of zero causes the IFR to log errors, warnings, and informat
 
 **WppRecorder_UseTimeStamp: REG_DWORD** (available starting in WDK build 22557)
 
-Drivers set this entry to one to add timestamps to log entries that are then viewable using [**!rcdrkd.rcdrlogdump**](../debugger/-rcdrkd-rcdrlogdump.md) or [**!wdfkd.wdflogdump**](../debugger/-wdfkd-wdflogdump.md).
+Drivers set this entry to one to add timestamps to log entries that are then viewable using [**!rcdrkd.rcdrlogdump**](../debuggercmds/-rcdrkd-rcdrlogdump.md) or [**!wdfkd.wdflogdump**](../debuggercmds/-wdfkd-wdflogdump.md).
 
 **WppRecorder_PreciseTimeStamp: REG_DWORD** (available starting in WDK build 22557)
 
@@ -153,6 +153,6 @@ For a code example, see [**WppRecorderLogCreate**](/windows-hardware/drivers/ddi
 
 ## How to view trace messages in the debugger
 
-For KMDF and UMDF drivers, use [**!wdfkd.wdflogdump**](../debugger/-wdfkd-wdflogdump.md) as usual. It will print out both the framework IFR log and the driver IFR log.
+For KMDF and UMDF drivers, use [**!wdfkd.wdflogdump**](../debuggercmds/-wdfkd-wdflogdump.md) as usual. It will print out both the framework IFR log and the driver IFR log.
 
-For WDM drivers, use [**!rcdrkd.rcdrloglist**](../debugger/-rcdrkd-rcdrloglist.md) and [**!rcdrkd.rcdrlogdump**](../debugger/-rcdrkd-rcdrlogdump.md).
+For WDM drivers, use [**!rcdrkd.rcdrloglist**](../debuggercmds/-rcdrkd-rcdrloglist.md) and [**!rcdrkd.rcdrlogdump**](../debuggercmds/-rcdrkd-rcdrlogdump.md).

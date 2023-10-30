@@ -31,7 +31,7 @@ The advantage to the larger files is that, since they contain more information, 
 
 The advantage of the smaller files is that they are smaller and written more quickly. Speed is often valuable; if you are running a server, you may want the server to reboot as quickly as possible after a crash, and the reboot will not take place until the dump file has been written.
 
-After a Complete Memory Dump or Kernel Memory Dump has been created, it is possible to create a Small Memory Dump file from the larger dump file. See the [**.dump (Create Dump File)**](-dump--create-dump-file-.md) command for details.
+After a Complete Memory Dump or Kernel Memory Dump has been created, it is possible to create a Small Memory Dump file from the larger dump file. See the [**.dump (Create Dump File)**](../debuggercmds/-dump--create-dump-file-.md) command for details.
 
 **Note**   Much information can be obtained by analyzing a kernel-mode dump file. However, no kernel-mode dump file can provide as much information as actually debugging the crash directly with a kernel debugger.
 

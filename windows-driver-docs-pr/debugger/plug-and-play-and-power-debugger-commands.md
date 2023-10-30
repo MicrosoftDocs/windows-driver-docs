@@ -9,9 +9,9 @@ ms.date: 11/28/2017
 
 The following extensions are useful for debugging Plug and Play and power issues.
 
--   [**!pnpevent**](-pnpevent.md)
--   [**!pocaps**](-pocaps.md)
--   [**!popolicy**](-popolicy.md)
+-   [**!pnpevent**](../debuggercmds/-pnpevent.md)
+-   [**!pocaps**](../debuggercmds/-pocaps.md)
+-   [**!popolicy**](../debuggercmds/-popolicy.md)
 
  
 

@@ -17,7 +17,7 @@ The debugger gets its information about symbols from symbol files, which are loc
 Symbols for the Windows debuggers (WinDbg, KD, CDB, and NTSD) are available from a public symbol server via the internet. 
 
 >[!TIP] 
-> Symbols can be loaded automatically using the [**.symfix (Set Symbol Store Path)**](-symfix--set-symbol-store-path-.md) command, as long as you have access to the internet while your debugger is running. Then use the [**.reload (Reload Module)**](-reload--reload-module-.md) command to load the symbols.
+> Symbols can be loaded automatically using the [**.symfix (Set Symbol Store Path)**](../debuggercmds/-symfix--set-symbol-store-path-.md) command, as long as you have access to the internet while your debugger is running. Then use the [**.reload (Reload Module)**](../debuggercmds/-reload--reload-module-.md) command to load the symbols.
 
 If you are performing user-mode debugging, you will need symbols for your target application. If you are performing kernel-mode debugging, you will need symbols for the driver you are debugging, as well as the Windows public symbols. 
 
@@ -51,7 +51,7 @@ For additional detail on working with symbols refer to these pages.
 
 [Symbol Problems While Debugging](symbol-problems-while-debugging.md)
 
-If you simply want to configure your debugger to access symbols for your own programs and for Windows, you may find it quicker to read the less-detailed introductory topics [Symbol Path](symbol-path.md) and [Microsoft public symbol server](microsoft-public-symbols.md). Use the Use [**!sym noisy**](-sym.md) command to display additional detail as symbols are loaded to troubleshoot issues with symbols.
+If you simply want to configure your debugger to access symbols for your own programs and for Windows, you may find it quicker to read the less-detailed introductory topics [Symbol Path](symbol-path.md) and [Microsoft public symbol server](microsoft-public-symbols.md). Use the Use [**!sym noisy**](../debuggercmds/-sym.md) command to display additional detail as symbols are loaded to troubleshoot issues with symbols.
 
 
 

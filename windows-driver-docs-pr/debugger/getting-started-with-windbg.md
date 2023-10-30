@@ -25,7 +25,7 @@ After you install the debugging tools, find the installation directories for the
 
 3. In the command line near the bottom of the WinDbg window, enter this command:
 
-    [.sympath srv\*](-sympath--set-symbol-path-.md)  
+    [.sympath srv\*](../debuggercmds/-sympath--set-symbol-path-.md)  
 
     The output is similar to this example:
 
@@ -38,18 +38,18 @@ After you install the debugging tools, find the installation directories for the
 
     Then, enter this command:
 
-    [.reload](-reload--reload-module-.md)
+    [.reload](../debuggercmds/-reload--reload-module-.md)
 
     The `.reload` command tells WinDbg to do its initial search to find and load symbol files.
 
 4. To see the symbols for the notepad.exe module, enter this command:
 
-    [x notepad!*](x--examine-symbols-.md)
+    [x notepad!*](../debuggercmds/x--examine-symbols-.md)
 
     > [!NOTE]
     > If no output appears, enter `.reload` again.
 
-    To see symbols in the notepad.exe module that contain `main`, use the [examine symbols](x--examine-symbols-.md) command to list modules that match the mask:
+    To see symbols in the notepad.exe module that contain `main`, use the [examine symbols](../debuggercmds/x--examine-symbols-.md) command to list modules that match the mask:
 
     `x notepad!wWin*`
 
@@ -62,11 +62,11 @@ After you install the debugging tools, find the installation directories for the
 
 5. To put a breakpoint at `notepad!wWinMain`, enter this command:
 
-    [bu notepad!wWinMain](bp--bu--bm--set-breakpoint-.md)
+    [bu notepad!wWinMain](../debuggercmds/bp--bu--bm--set-breakpoint-.md)
 
     To verify that your breakpoint was set, enter this command:
 
-    [bl](bl--breakpoint-list-.md)
+    [bl](../debuggercmds/bl--breakpoint-list-.md)
 
     The output is similar to this example:
 
@@ -76,7 +76,7 @@ After you install the debugging tools, find the installation directories for the
 
 6. To start the Notepad process, enter this command:
 
-    [g](g--go-.md)
+    [g](../debuggercmds/g--go-.md)
 
     Notepad runs until it comes to the `WinMain` function, and then it breaks into the debugger.
 
@@ -88,7 +88,7 @@ After you install the debugging tools, find the installation directories for the
 
     To see a list of code modules that are currently loaded in the Notepad process, enter this command:
 
-    [lm](lm--list-loaded-modules-.md)
+    [lm](../debuggercmds/lm--list-loaded-modules-.md)
 
     The output is similar to this example:
 
@@ -115,7 +115,7 @@ After you install the debugging tools, find the installation directories for the
 
     To see a stack trace, enter this command:
 
-    [k](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md)
+    [k](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md)
 
     The output is similar to this example:
 
@@ -129,17 +129,17 @@ After you install the debugging tools, find the installation directories for the
 
 7. To start Notepad running again, enter this command:
 
-    [g](g--go-.md)
+    [g](../debuggercmds/g--go-.md)
 
 8. To break into Notepad, on the **File** menu, select **Break**.
 
 9. To set and verify a breakpoint at `ZwWriteFile`, enter these commands:
 
-    [bu ntdll!ZwWriteFile](bp--bu--bm--set-breakpoint-.md)
+    [bu ntdll!ZwWriteFile](../debuggercmds/bp--bu--bm--set-breakpoint-.md)
 
-    [bl](bl--breakpoint-list-.md)
+    [bl](../debuggercmds/bl--breakpoint-list-.md)
 
-10. To start Notepad running again, enter [g](g--go-.md). In the Notepad window, enter some text. On the **File** menu, select **Save**. The running code breaks in when it comes to `ZwCreateFile`. Enter the [k](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command to see the stack trace.
+10. To start Notepad running again, enter [g](../debuggercmds/g--go-.md). In the Notepad window, enter some text. On the **File** menu, select **Save**. The running code breaks in when it comes to `ZwCreateFile`. Enter the [k](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command to see the stack trace.
 
     ![Screenshot that shows a stack trace in WinDbg.](images/windbggetstart02.png)
 
@@ -147,7 +147,7 @@ After you install the debugging tools, find the installation directories for the
 
 11. To see a list of all threads in the Notepad process, enter this command (the tilde):
 
-    [~](---thread-status-.md)
+    [~](../debuggercmds/---thread-status-.md)
 
     The output is similar to this example:
 
@@ -172,9 +172,9 @@ After you install the debugging tools, find the installation directories for the
 
 12. To look at the stack trace for thread 0, enter these commands:
 
-    [~0s](-s--set-current-thread-.md)
+    [~0s](../debuggercmds/-s--set-current-thread-.md)
 
-    [k](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md)
+    [k](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md)
 
     The output is similar to this example:
 
@@ -198,7 +198,7 @@ After you install the debugging tools, find the installation directories for the
 
 13. To quit debugging and detach from the Notepad process, enter this command:
 
-    [qd](qd--quit-and-detach-.md)
+    [qd](../debuggercmds/qd--quit-and-detach-.md)
 
 ## Open your own application and attach WinDbg
 
@@ -229,19 +229,19 @@ For this exercise, assume that the built application (MyApp.exe) and the symbol 
 
 3. Enter these commands:
 
-    [.symfix](-symfix--set-symbol-store-path-.md)
+    [.symfix](../debuggercmds/-symfix--set-symbol-store-path-.md)
 
-    [.sympath](-sympath--set-symbol-path-.md)+ C:\\MyApp\\x64\\Debug
+    [.sympath](../debuggercmds/-sympath--set-symbol-path-.md)+ C:\\MyApp\\x64\\Debug
 
-    The commands tell WinDbg where to find symbols and source code for your application. In this case, the source code location doesn't need to be set by using [.srcpath](-srcpath---lsrcpath--set-source-path-.md) because the symbols have fully qualified paths to the source files.
+    The commands tell WinDbg where to find symbols and source code for your application. In this case, the source code location doesn't need to be set by using [.srcpath](../debuggercmds/-srcpath---lsrcpath--set-source-path-.md) because the symbols have fully qualified paths to the source files.
 
 4. Enter these commands:
 
-    [.reload](-reload--reload-module-.md)
+    [.reload](../debuggercmds/-reload--reload-module-.md)
 
-    [bu MyApp!main](bp--bu--bm--set-breakpoint-.md)
+    [bu MyApp!main](../debuggercmds/bp--bu--bm--set-breakpoint-.md)
 
-    [g](g--go-.md)
+    [g](../debuggercmds/g--go-.md)
 
     Your application breaks into the debugger when it comes to its `main` function.
 
@@ -263,7 +263,7 @@ For this exercise, assume that the built application (MyApp.exe) and the symbol 
 
 6. Enter this command:
 
-    [!analyze -v](-analyze.md)
+    [!analyze -v](../debuggercmds/-analyze.md)
 
     WinDbg displays an analysis of the problem (in this case, division by 0).
 
@@ -315,22 +315,22 @@ For this exercise, assume that the built application (MyApp.exe) and the symbol 
 ## Summary of commands
 
 - `Contents` command on the `Help` menu
-- [.sympath (Set Symbol Path)](-sympath--set-symbol-path-.md)
-- [.reload (Reload Module)](-reload--reload-module-.md)
-- [x (Examine Symbols)](x--examine-symbols-.md)
-- [g (Go)](g--go-.md)
+- [.sympath (Set Symbol Path)](../debuggercmds/-sympath--set-symbol-path-.md)
+- [.reload (Reload Module)](../debuggercmds/-reload--reload-module-.md)
+- [x (Examine Symbols)](../debuggercmds/x--examine-symbols-.md)
+- [g (Go)](../debuggercmds/g--go-.md)
 - `Break` command on the `Debug` menu
-- [lm (List Loaded Modules)](lm--list-loaded-modules-.md)
-- [k (Display Stack Backtrace)](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md)
-- [bu (Set Breakpoint)](bp--bu--bm--set-breakpoint-.md)
-- [bl (Breakpoint List)](bl--breakpoint-list-.md)
-- [~ (Thread Status)](---thread-status-.md)
-- [~s (Set Current Thread)](-s--set-current-thread-.md)
-- [.sympath+ (Set Symbol Path) append to existing symbol path](-sympath--set-symbol-path-.md)
-- [.srcpath (Set Source Path)](-srcpath---lsrcpath--set-source-path-.md)
+- [lm (List Loaded Modules)](../debuggercmds/lm--list-loaded-modules-.md)
+- [k (Display Stack Backtrace)](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md)
+- [bu (Set Breakpoint)](../debuggercmds/bp--bu--bm--set-breakpoint-.md)
+- [bl (Breakpoint List)](../debuggercmds/bl--breakpoint-list-.md)
+- [~ (Thread Status)](../debuggercmds/---thread-status-.md)
+- [~s (Set Current Thread)](../debuggercmds/-s--set-current-thread-.md)
+- [.sympath+ (Set Symbol Path) append to existing symbol path](../debuggercmds/-sympath--set-symbol-path-.md)
+- [.srcpath (Set Source Path)](../debuggercmds/-srcpath---lsrcpath--set-source-path-.md)
 - `Step Into` command on the `Debug` menu (F11)
-- [!analyze -v](-analyze.md)
-- [qd (Quit and Detach)](qd--quit-and-detach-.md)
+- [!analyze -v](../debuggercmds/-analyze.md)
+- [qd (Quit and Detach)](../debuggercmds/qd--quit-and-detach-.md)
 
 ## See also
 
