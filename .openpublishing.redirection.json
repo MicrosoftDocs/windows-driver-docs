@@ -8821,72 +8821,72 @@
             "source_path": "windows-driver-docs-pr/ifs/rxdbgbreakpoint.md",
             "redirect_URL": "/previous-versions/windows/hardware/rdbss/rxdbgbreakpoint",
             "redirect_document_id": false
-        }
+        },
         {
             "source_path": "myriad-of-machines-that-had-blue-screen-caused-by-crash-in-graphics-driver-binary-discrete-ecosystem.md",
             "redirect_URL": "/windows-hardware/drivers/dashboard/overview-of-microsoft-driver-measure-dictionary",
             "redirect_document_id": false
-        }
+        },
         {
             "source_path": "myriad-of-machines-that-had-blue-screen-caused-by-crash-in-graphics-driver-binary-integrated-ecosystem.md",
             "redirect_URL": "/windows-hardware/drivers/dashboard/overview-of-microsoft-driver-measure-dictionary",
             "redirect_document_id": false
-        }
+        },
         {
             "source_path": "myriad-of-machines-that-had-tdr-caused-by-crash-in-graphics-driver-binary-ecosystem.md",
             "redirect_URL": "/windows-hardware/drivers/dashboard/overview-of-microsoft-driver-measure-dictionary",
             "redirect_document_id": false
-        }
+        },
         {
             "source_path": "graphics-ecosystem-integrated-gpu-with-tdr.md",
             "redirect_URL": "/windows-hardware/drivers/dashboard/overview-of-microsoft-driver-measure-dictionary",
             "redirect_document_id": false
-        }
+        },
         {
             "source_path": "myriad-drivers-rolled-back-ecosystem.md",
             "redirect_URL": "/windows-hardware/drivers/dashboard/overview-of-microsoft-driver-measure-dictionary",
             "redirect_document_id": false
-        }
+        },
         {
             "source_path": "graphics-user-mode-crashes-edge-chromium-ecosystem.md",
             "redirect_URL": "/windows-hardware/drivers/dashboard/overview-of-microsoft-driver-measure-dictionary",
             "redirect_document_id": false
-        }
+        },
         {
             "source_path": "number-of-user-mode-crashes-in-top-microsoft-apps-normalized-by-usage-in-year-long-scale.md",
             "redirect_URL": "/windows-hardware/drivers/dashboard/overview-of-microsoft-driver-measure-dictionary",
             "redirect_document_id": false
-        }
+        },
         {
             "source_path": "graphics-drivers-health-user-mode-reliability-for-crashes-in-creative-apps.md",
             "redirect_URL": "/windows-hardware/drivers/dashboard/overview-of-microsoft-driver-measure-dictionary",
             "redirect_document_id": false
-        }
+        },
         {
             "source_path": "user-mode-reliability-for-crashes-in-microsoft-photos-app.md",
             "redirect_URL": "/windows-hardware/drivers/dashboard/overview-of-microsoft-driver-measure-dictionary",
             "redirect_document_id": false
-        }
+        },
         {
             "source_path": "user-mode-reliability-for-crashes-in-windows-components-ecosystem.md",
             "redirect_URL": "/windows-hardware/drivers/dashboard/overview-of-microsoft-driver-measure-dictionary",
             "redirect_document_id": false
-        }
+        },
         {
             "source_path": "graphics-user-mode-crashes-collaboration-ecosystem.md",
             "redirect_URL": "/windows-hardware/drivers/dashboard/overview-of-microsoft-driver-measure-dictionary",
             "redirect_document_id": false
-        }
+        },
         {
             "source_path": "pct-devices-winml-runtime-error-ecosystem.md",
             "redirect_URL": "/windows-hardware/drivers/dashboard/overview-of-microsoft-driver-measure-dictionary",
             "redirect_document_id": false
-        }
+        },
         {
             "source_path": "pct-swdrm-playback-failures-on-netflix.md",
             "redirect_URL": "/windows-hardware/drivers/dashboard/overview-of-microsoft-driver-measure-dictionary",
             "redirect_document_id": false
-        }
+        },
         {
             "source_path": "ecosystem-netflix-hwdrm-quality-comparison.md",
             "redirect_URL": "/windows-hardware/drivers/dashboard/overview-of-microsoft-driver-measure-dictionary",
