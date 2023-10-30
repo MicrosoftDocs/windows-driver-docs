@@ -44,6 +44,8 @@
     items: 
     - name: "Time Travel Debugging - Overview"
       href: time-travel-debugging-overview.md
+    - name: "Time Travel Debugging - Release Notes"
+      href: time-travel-debugging-release-notes.md
     - name: "Time Travel Debugging - Record a trace"
       href: time-travel-debugging-record.md
     - name: "Time Travel Debugging - Replay a trace"
