@@ -1568,6 +1568,16 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "windows-driver-docs-pr/driver-changes-for-windows-10-version-1903.md",
+            "redirect_URL": "/windows-hardware/drivers/what-s-new-in-driver-development",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/driver-changes-for-windows-11.md",
+            "redirect_URL": "/windows-hardware/drivers/what-s-new-in-driver-development",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/gpiobtn/hid-button-report-descriptors.md",
             "redirect_URL": "/windows-hardware/drivers/hid/acpi-button-device",
             "redirect_document_id": false

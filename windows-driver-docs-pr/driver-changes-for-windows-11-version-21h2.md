@@ -42,13 +42,4 @@ New API pages:
 - [Print support app design guide](./devapps/print-support-app-design-guide.md)
 - [Print support app association](./devapps/print-support-app-association.md)
 
-## Related Topics
-
-For information on what was new for drivers in past Windows releases, see the following pages:
-
-- [Driver development changes for Windows 11](driver-changes-for-windows-11.md)
-- [Driver development changes for Windows Server 2022](driver-changes-for-windows-server-2022.md)
-- [Driver development changes for Windows 10, version 2004](driver-changes-for-windows-10-version-2004.md)
-- [Driver development changes for Windows 10, version 1903](driver-changes-for-windows-10-version-1903.md)
-
 [Back to Top](#top)
