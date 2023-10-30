@@ -35,14 +35,14 @@ Last event: Exception C00000FD, second chance
 
 You can look up exception code 0xC00000FD in ntstatus.h, This exception code is STATUS\_STACK\_OVERFLOW, which indicates *A new guard page for the stack cannot be created.* All of the status codes are listed in [2.3.1 NTSTATUS Values](/openspecs/windows_protocols/ms-erref/596a1078-e883-4972-9bbc-49e60bebca55).
 
-You can also use the [!error](-error.md) command to look up errors in the Windows Debugger.
+You can also use the [!error](../debuggercmds/-error.md) command to look up errors in the Windows Debugger.
 
 ```dbgcmd
 0:002> !error 0xC00000FD
 Error code: (NTSTATUS) 0xc00000fd (3221225725) - A new guard page for the stack cannot be created.
 ```
 
-To double-check that the stack overflowed, you can use the [k (Display Stack Backtrace)](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command:
+To double-check that the stack overflowed, you can use the [k (Display Stack Backtrace)](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command:
 
 ```dbgcmd
 0:002> k 
@@ -68,7 +68,7 @@ ChildEBP RetAddr
 00000000 00000000 0x9fe4a8 
 ```
 
-The target thread has broken into COMCTL32!\_chkstk, which indicates a stack problem. Now you should investigate the stack usage of the target process. The process has multiple threads, but the important one is the one that caused the overflow, so identify this thread first using the [~ (Thread Status)](---thread-status-.md) command:
+The target thread has broken into COMCTL32!\_chkstk, which indicates a stack problem. Now you should investigate the stack usage of the target process. The process has multiple threads, but the important one is the one that caused the overflow, so identify this thread first using the [~ (Thread Status)](../debuggercmds/---thread-status-.md) command:
 
 ```dbgcmd
 0:002> ~*k
@@ -89,7 +89,7 @@ ChildEBP RetAddr
 
 Now you need to investigate thread 2. The period at the left of this line indicates that this is the current thread.
 
-The stack information is contained in the TEB (Thread Environment Block) at 0x7FFDC000. The easiest way to list it is using [!teb](-teb.md). 
+The stack information is contained in the TEB (Thread Environment Block) at 0x7FFDC000. The easiest way to list it is using [!teb](../debuggercmds/-teb.md). 
 
 ```dbgcmd
 0:000> !teb
@@ -113,14 +113,14 @@ TEB at 000000c64b95d000
 ```
 
 
-However, this requires you to have the proper symbols. A more difficult situation is when you have no symbols and need to use the [dd (Display Memory)](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) command to display the raw values at that location:
+However, this requires you to have the proper symbols. A more difficult situation is when you have no symbols and need to use the [dd (Display Memory)](../debuggercmds/d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) command to display the raw values at that location:
 
 ```dbgcmd
 0:002> dd 7ffdc000 L4 
 7ffdc000   009fdef0 00a00000 009fc000 00000000 
 ```
 
-To interpret this, you need to look up the definition of the TEB data structure. Use the [dt Display Type](dt--display-type-.md) command to do this on a system where symbols are available. 
+To interpret this, you need to look up the definition of the TEB data structure. Use the [dt Display Type](../debuggercmds/dt--display-type-.md) command to do this on a system where symbols are available. 
 
 ```dbgcmd
 0:000> dt _TEB
@@ -171,7 +171,7 @@ ntdll!_KTHREAD
 
 Refer to *Microsoft Windows Internals* for more information about thread data structures.
 
-Looking at a 32 bit version of the _TEB structure, it indicates that the second and third DWORDs in the TEB structure point to the bottom and top of the stack, respectively. In this example, these addresses are 0x00A00000 and 0x009FC000. (The stack grows downward in memory.) You can calculate the stack size using the [? (Evaluate Expression)](---evaluate-expression-.md) command:
+Looking at a 32 bit version of the _TEB structure, it indicates that the second and third DWORDs in the TEB structure point to the bottom and top of the stack, respectively. In this example, these addresses are 0x00A00000 and 0x009FC000. (The stack grows downward in memory.) You can calculate the stack size using the [? (Evaluate Expression)](../debuggercmds/---evaluate-expression-.md) command:
 
 ```dbgcmd
 0:002> ? a00000-9fc000
@@ -192,7 +192,7 @@ This shows that the maximum stack size is 256 K, which means more than adequate 
 
 Furthermore, this process looks clean -- it is not in an infinite recursion or exceeding its stack space by using excessively large stack-based data structures.
 
-Now break into KD and look at the overall system memory usage with the [!vm](-vm.md) extension command:
+Now break into KD and look at the overall system memory usage with the [!vm](../debuggercmds/-vm.md) extension command:
 
 ```dbgcmd
 0:002> .breakin 
@@ -263,7 +263,7 @@ ChildEBP RetAddr
 009fe128 77cf8290 COMCTL32!Header_WndProc+0x4e2
 ```
 
-Then use the [u, ub, uu (Unassemble)](u--unassemble-.md) command to look at the assembler code at that address. 
+Then use the [u, ub, uu (Unassemble)](../debuggercmds/u--unassemble-.md) command to look at the assembler code at that address. 
 
 ```dbgcmd
 0:002> u COMCTL32!Header_Draw
@@ -280,11 +280,11 @@ Then use the [u, ub, uu (Unassemble)](u--unassemble-.md) command to look at the 
 
 This shows that **Header\_Draw** allocated 0x58 bytes of stack space.
 
-The [r (Registers)](r--registers-.md) command provides information on the current contents of the registers, such as esp.
+The [r (Registers)](../debuggercmds/r--registers-.md) command provides information on the current contents of the registers, such as esp.
 
 ## Debugging stack overflow when symbols are available  
 
-Symbols provide labels to items stored in memory, and when available, can make examining code easier. For an overview of symbols, see [Using Symbols](using-symbols.md). For information on setting the symbols path, see [.sympath (Set Symbol Path)](-sympath--set-symbol-path-.md).
+Symbols provide labels to items stored in memory, and when available, can make examining code easier. For an overview of symbols, see [Using Symbols](using-symbols.md). For information on setting the symbols path, see [.sympath (Set Symbol Path)](../debuggercmds/-sympath--set-symbol-path-.md).
 
 To create a stack overflow, we can use this code, which continues to call a subroutine until the stack is exhausted.
 
@@ -329,7 +329,7 @@ ntdll!LdrpDoDebuggerBreak+0x2b:
 (336c.264c): Stack overflow - code c00000fd (first chance)
 ```
 
-Use the [!analyze](-analyze.md) command to check that we have indeed have a problem with our loop.
+Use the [!analyze](../debuggercmds/-analyze.md) command to check that we have indeed have a problem with our loop.
 
 ```dbgcmd
 ...
@@ -370,7 +370,7 @@ Using the kb command we see that there are many instances of our loop program ea
 
 ```
 
-If symbols are available the  [dt _TEB](dt--display-type-.md) can be used to display information about the thread block. For more information about thread memory, see [Thread Stack Size](/windows/win32/procthread/thread-stack-size).
+If symbols are available the  [dt _TEB](../debuggercmds/dt--display-type-.md) can be used to display information about the thread block. For more information about thread memory, see [Thread Stack Size](/windows/win32/procthread/thread-stack-size).
 
 ```dbgcmd
 0:000> dt _TEB
@@ -390,7 +390,7 @@ ntdll!_TEB
    +0x0c0 WOW32Reserved    : Ptr32 Void
 ```
 
-We can also use the [!teb](-teb.md) command that displays the StackBase abd StackLimit.
+We can also use the [!teb](../debuggercmds/-teb.md) command that displays the StackBase abd StackLimit.
 
 ```dbgcmd
 0:000> !teb
@@ -422,16 +422,16 @@ int 0n1044480
 
 ## Summary of commands
 
-- [k (Display Stack Backtrace)](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md)
-- [~ (Thread Status)](---thread-status-.md)
-- [d, da, db, dc, dd, dD, df, dp, dq, du, dw (Display Memory)](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md)
-- [u, ub, uu (Unassemble)](u--unassemble-.md)
-- [r (Registers)](r--registers-.md)
-- [.sympath (Set Symbol Path)](-sympath--set-symbol-path-.md) 
-- [x (Examine Symbols)](x--examine-symbols-.md)
-- [dt (Display Type)](dt--display-type-.md)
-- [!analyze](-analyze.md)
-- [!teb](-teb.md) 
+- [k (Display Stack Backtrace)](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md)
+- [~ (Thread Status)](../debuggercmds/---thread-status-.md)
+- [d, da, db, dc, dd, dD, df, dp, dq, du, dw (Display Memory)](../debuggercmds/d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md)
+- [u, ub, uu (Unassemble)](../debuggercmds/u--unassemble-.md)
+- [r (Registers)](../debuggercmds/r--registers-.md)
+- [.sympath (Set Symbol Path)](../debuggercmds/-sympath--set-symbol-path-.md) 
+- [x (Examine Symbols)](../debuggercmds/x--examine-symbols-.md)
+- [dt (Display Type)](../debuggercmds/dt--display-type-.md)
+- [!analyze](../debuggercmds/-analyze.md)
+- [!teb](../debuggercmds/-teb.md) 
 
 ## See also
 

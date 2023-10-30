@@ -70,7 +70,7 @@ Selects the level or amount of debug tracing in the NDIS components that you sel
 </table>
 
 <span id="DebugSystems"></span><span id="debugsystems"></span><span id="DEBUGSYSTEMS"></span>**DebugSystems**  
-Enables debug tracing for specified NDIS components. This corresponds to using the [**!ndiskd.dbgsystems**](-ndiskd-dbgsystems.md) extension. The following values specify the NDIS components that you can select:
+Enables debug tracing for specified NDIS components. This corresponds to using the [**!ndiskd.dbgsystems**](../debuggercmds/-ndiskd-dbgsystems.md) extension. The following values specify the NDIS components that you can select:
 
 <table>
 <colgroup>

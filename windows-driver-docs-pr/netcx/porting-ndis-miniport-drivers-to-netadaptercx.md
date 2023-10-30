@@ -155,7 +155,7 @@ For a list of function equivalents, see [NDIS-WDF function equivalents](ndis-wdf
 
 See [Debugging a NetAdapterCx client driver](debugging-a-netadaptercx-client-driver.md).
 
-The [!ndiskd.netadapter](../debugger/-ndiskd-netadapter.md) debugger extension shows similar results to what **!ndiskd.miniport** shows for an NDIS 6 driver.
+The [!ndiskd.netadapter](../debuggercmds/-ndiskd-netadapter.md) debugger extension shows similar results to what **!ndiskd.miniport** shows for an NDIS 6 driver.
 
 ## Conclusion
 

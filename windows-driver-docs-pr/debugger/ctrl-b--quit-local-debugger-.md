@@ -55,7 +55,7 @@ CTRL+B  ENTER
 
 ## Remarks
 
-In CDB, the [**q (Quit)**](q--qq--quit-.md) command should be used to exit. CTRL+B should only be used if the debugger is not responding.
+In CDB, the [**q (Quit)**](../debuggercmds/q--qq--quit-.md) command should be used to exit. CTRL+B should only be used if the debugger is not responding.
 
 In KD, the **q** command will end the debugging session and leave the target computer locked. If you need to preserve the debugging session (so a new debugger can connect to it), or if you need to leave the target computer running, you should use CTRL+B.
 

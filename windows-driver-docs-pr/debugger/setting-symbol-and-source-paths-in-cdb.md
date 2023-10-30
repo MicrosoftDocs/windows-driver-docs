@@ -18,7 +18,7 @@ The symbol path specifies the directories where the symbol files are located. Fo
 
 To control the symbol path in CDB, do one of the following:
 
--   Enter the [**.sympath (Set Symbol Path)**](-sympath--set-symbol-path-.md) command. If you are using a symbol server, the [**.symfix (Set Symbol Store Path)**](-symfix--set-symbol-store-path-.md) command is similar to .sympath but saves you typing.
+-   Enter the [**.sympath (Set Symbol Path)**](../debuggercmds/-sympath--set-symbol-path-.md) command. If you are using a symbol server, the [**.symfix (Set Symbol Store Path)**](../debuggercmds/-symfix--set-symbol-store-path-.md) command is similar to .sympath but saves you typing.
 
 -   When you start the debugger, use the **-y** command-line option. See [**CDB Command-Line Options**](cdb-command-line-options.md).
 
@@ -49,7 +49,7 @@ The debugger's executable image path is a string that consists of multiple direc
 
 To control the executable image path in CDB, do one of the following:
 
--   Enter the [**.exepath (Set Executable Path)**](-exepath--set-executable-path-.md) command.
+-   Enter the [**.exepath (Set Executable Path)**](../debuggercmds/-exepath--set-executable-path-.md) command.
 
 -   When you start the debugger, use the **-i** command-line option. See [**CDB Command-Line Options**](cdb-command-line-options.md).
 

@@ -40,7 +40,7 @@ The most common trap numbers are the following codes:
 
 There are two common causes of a double fault:
 
-- The first cause is a kernel stack overflow. This overflow occurs when a guard page is hit, and the kernel tries to push a trap frame. Because there's no stack left, a stack overflow results, causing the double fault. If you think this situation has occurred, use the [!thread](-thread.md) extension to determine the stack limits, and then use the [kb (Display Stack Backtrace)](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command with a large value, for example, kb 100, to display the full stack.
+- The first cause is a kernel stack overflow. This overflow occurs when a guard page is hit, and the kernel tries to push a trap frame. Because there's no stack left, a stack overflow results, causing the double fault. If you think this situation has occurred, use the [!thread](../debuggercmds/-thread.md) extension to determine the stack limits, and then use the [kb (Display Stack Backtrace)](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command with a large value, for example, kb 100, to display the full stack.
 - The second common cause is a hardware problem.
 
 The less-common trap codes include the following values:
@@ -66,13 +66,13 @@ A double fault can occur when the kernel stack overflows. This overflow occurs i
 
 ## Debug
 
-Always begin with the [!analyze](-analyze.md) extension with the **-v** option, verbose. Examine the output and the faulting code. Look for reoccurring trends in multiple dumps.
+Always begin with the [!analyze](../debuggercmds/-analyze.md) extension with the **-v** option, verbose. Examine the output and the faulting code. Look for reoccurring trends in multiple dumps.
 
-After you try **!analyze**, use the [kv (Display Stack Backtrace)](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) debugger command.
+After you try **!analyze**, use the [kv (Display Stack Backtrace)](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) debugger command.
 
-- If **kv** shows a task gate, use the [.tss (Display Task State Segment)](-tss--display-task-state-segment-.md) command on the part before the colon.
-- If **kv** shows a trap frame, use the [.trap (Display Trap Frame)](-trap--display-trap-frame-.md) command to format the frame.
-- Otherwise, use the [.trap (Display Trap Frame)](-trap--display-trap-frame-.md) command on the appropriate frame. On x86-based platforms, this frame is associated with the procedure **NT!KiTrap**.
+- If **kv** shows a task gate, use the [.tss (Display Task State Segment)](../debuggercmds/-tss--display-task-state-segment-.md) command on the part before the colon.
+- If **kv** shows a trap frame, use the [.trap (Display Trap Frame)](../debuggercmds/-trap--display-trap-frame-.md) command to format the frame.
+- Otherwise, use the [.trap (Display Trap Frame)](../debuggercmds/-trap--display-trap-frame-.md) command on the appropriate frame. On x86-based platforms, this frame is associated with the procedure **NT!KiTrap**.
 
 After using one of these commands, use **kv** again to display the new stack.
 
@@ -102,5 +102,5 @@ If you encounter this error while upgrading to a new version of the Windows oper
 
 ## See also
 
-- [!analyze](-analyze.md)
+- [!analyze](../debuggercmds/-analyze.md)
 - [Bug check code reference](bug-check-code-reference2.md)

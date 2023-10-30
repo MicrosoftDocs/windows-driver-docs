@@ -28,7 +28,7 @@ Last update time (in seconds since boot):470.25 (0x1D6.19)
 
 For details on the optional parameters, see [**DbgRpc Command-Line Options**](dbgrpc-command-line-options.md).
 
-For a similar example using the RPC debugger extensions, see [**!rpcexts.getdbgcell**](-rpcexts-getdbgcell.md).
+For a similar example using the RPC debugger extensions, see [**!rpcexts.getdbgcell**](../debuggercmds/-rpcexts-getdbgcell.md).
 
  
 

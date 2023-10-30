@@ -36,7 +36,7 @@ To confirm that the ambiguous breakpoints setting is active:
 @$debuggerRootNamespace.Debugger.Settings.EngineInitialization.ResolveAmbiguousBreakpoints                 : true
 ```
 
-For more information about using the dx command, see [dx (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md).
+For more information about using the dx command, see [dx (Display Debugger Object Model Expression)](../debuggercmds/dx--display-visualizer-variables-.md).
 
 To disable the feature, set the above value to be `false`. To make sure that the setting persists across sessions, make sure to click on `File -> Settings -> Debugger Settings` and then check the box marked `Persist engine settings across debugger sessions`.
 
@@ -44,7 +44,7 @@ To disable the feature, set the above value to be `false`. To make sure that the
 
 Resolving ambiguous breakpoint expressions only applies to running the breakpoint command to set a single breakpoint in the debugger. In other words, setting multiple breakpoints with the `bm` command will continue to work as usual. Running the command with this feature enabled, will result in new breakpoint behavior for single breakpoints.
 
-For general information about the breakpoint commands, see [bp, bu, bm (Set Breakpoint)](bp--bu--bm--set-breakpoint-.md).
+For general information about the breakpoint commands, see [bp, bu, bm (Set Breakpoint)](../debuggercmds/bp--bu--bm--set-breakpoint-.md).
 
 ### Hierarchical breakpoints
 
@@ -52,7 +52,7 @@ Hierarchical breakpoints represent the result of resolving an ambiguous breakpoi
 
 For example, if the command `bp foo!bar` is run, resulting in two matches against the symbol `bar`, then a hierarchical breakpoint will be created that controls the two matches. If the hierarchical is enabled/disabled/cleared, so too will be the matched breakpoints.
 
-The [.bpcmds(Display Breakpoint Commands)](-bpcmds--display-breakpoint-commands-.md) will list the breakpoint command that can be run to set each breakpoint. Breakpoints that are owned by a hierarchical breakpoint will still list a valid bp command that will set a breakpoint on its address. Hierarchical breakpoints will also be listed in the output and will display the command that can be used to recreate the whole set of breakpoints instead of just a single breakpoint.
+The [.bpcmds(Display Breakpoint Commands)](../debuggercmds/-bpcmds--display-breakpoint-commands-.md) will list the breakpoint command that can be run to set each breakpoint. Breakpoints that are owned by a hierarchical breakpoint will still list a valid bp command that will set a breakpoint on its address. Hierarchical breakpoints will also be listed in the output and will display the command that can be used to recreate the whole set of breakpoints instead of just a single breakpoint.
 
 ## Ambiguous symbols
 
@@ -209,6 +209,6 @@ If a hierarchical breakpoint _A_ owns breakpoints _B_, _C_ and then an ambiguous
 
 [Breakpoint Syntax](breakpoint-syntax.md)
 
-[bp, bu, bm (Set Breakpoint)](bp--bu--bm--set-breakpoint-.md)
+[bp, bu, bm (Set Breakpoint)](../debuggercmds/bp--bu--bm--set-breakpoint-.md)
 
 [Unresolved Breakpoints (bu Breakpoints)](unresolved-breakpoints---bu-breakpoints-.md)

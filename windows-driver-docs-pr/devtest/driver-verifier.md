@@ -164,7 +164,7 @@ All violations detected by Driver Verifier result in bug checks. Common bug chec
 
 For more information, see [Handling a Bug Check When Driver Verifier is Enabled](../debugger/handling-a-bug-check-when-driver-verifier-is-enabled.md). For tips about debugging Bug Check 0xC4, see [Debugging Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION](debugging-bug-check-0xc4--driver-verifier-detected-violation.md).
 
-When you start a new debugging session, use the debugger extension command, [**!analyze**](../debugger/-analyze.md). In kernel mode, the **!analyze** command displays information about the most recent bug check. To display *additional* information, to help identify the faulting driver, add option **-v** to the command at the **kd>** prompt:
+When you start a new debugging session, use the debugger extension command, [**!analyze**](../debuggercmds/-analyze.md). In kernel mode, the **!analyze** command displays information about the most recent bug check. To display *additional* information, to help identify the faulting driver, add option **-v** to the command at the **kd>** prompt:
 
 ```dbgcmd
 kd> !analyze -v
@@ -172,25 +172,25 @@ kd> !analyze -v
 
 In addition to **!analyze**, you can enter the following debugger extensions at the **kd>** prompt to view information that is specific to Driver Verifier:
 
--   [**!verifier**](../debugger/-verifier.md) dumps captured Driver Verifier statistics. Use **!verifier -?** to display all of the available options.
+-   [**!verifier**](../debuggercmds/-verifier.md) dumps captured Driver Verifier statistics. Use **!verifier -?** to display all of the available options.
 
     ```dbgcmd
     kd> !verifier
     ```
 
--   [**!deadlock**](../debugger/-deadlock.md) displays information related to locks or objects tracked by Driver Verifier's deadlock detection feature. Use **!deadlock -?** to display all of the available options.
+-   [**!deadlock**](../debuggercmds/-deadlock.md) displays information related to locks or objects tracked by Driver Verifier's deadlock detection feature. Use **!deadlock -?** to display all of the available options.
 
     ```dbgcmd
     kd> !deadlock
     ```
 
--   [**!iovirp**](../debugger/-iovirp.md) \[*address*\] displays information related to an IRP tracked by I/O Verifier. For example:
+-   [**!iovirp**](../debuggercmds/-iovirp.md) \[*address*\] displays information related to an IRP tracked by I/O Verifier. For example:
 
     ```dbgcmd
     kd> !iovirp 947cef68
     ```
 
--   [**!ruleinfo**](../debugger/-ruleinfo.md) \[*RuleID*\] displays information related to the [DDI compliance checking](ddi-compliance-checking.md) rule that was violated. (*RuleID* is always the first argument to the bug check.) All rule IDs from DDI compliance checking are in the form 0x200*nn*. For example:
+-   [**!ruleinfo**](../debuggercmds/-ruleinfo.md) \[*RuleID*\] displays information related to the [DDI compliance checking](ddi-compliance-checking.md) rule that was violated. (*RuleID* is always the first argument to the bug check.) All rule IDs from DDI compliance checking are in the form 0x200*nn*. For example:
 
     ```dbgcmd
     kd> !ruleinfo 0x20005

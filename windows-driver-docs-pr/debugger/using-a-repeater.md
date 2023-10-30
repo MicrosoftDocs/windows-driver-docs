@@ -21,7 +21,7 @@ A repeater connection obeys very simple rules:
 
 This means that any debugging commands, debugger output, control keys, and file access will take place exactly as if the client and server were directly connected. The repeater will be invisible to all these commands.
 
-Actions that terminate the connection itself will affect the repeater. For example, if you issue a [**qq (Quit)**](q--qq--quit-.md) command from the client, the server will shut down and will send a shutdown signal to the transport. This will cause the repeater to exit (unless it was started with the **-p** option). As another example, the [**.clients (List Debugging Clients)**](-clients--list-debugging-clients-.md) command will list the client's computer name, but it will show the connection protocol used to connect the server with the repeater.
+Actions that terminate the connection itself will affect the repeater. For example, if you issue a [**qq (Quit)**](../debuggercmds/q--qq--quit-.md) command from the client, the server will shut down and will send a shutdown signal to the transport. This will cause the repeater to exit (unless it was started with the **-p** option). As another example, the [**.clients (List Debugging Clients)**](../debuggercmds/-clients--list-debugging-clients-.md) command will list the client's computer name, but it will show the connection protocol used to connect the server with the repeater.
 
 If the server is shut down, the repeater will automatically exit (unless it was started with the **-p** option). When the repeater shuts down, this will cause a debugging client to exit as well, although a smart client will not. If for some reason you need to terminate the repeater directly, you can use Task Manager or the kill.exe tool.
 

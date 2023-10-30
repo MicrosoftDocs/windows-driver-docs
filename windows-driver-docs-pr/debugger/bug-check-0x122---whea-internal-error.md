@@ -111,7 +111,7 @@ The WHEA\_INTERNAL\_ERROR bug check has a value of 0x00000122. This bug check in
  
 ## Remarks
 
-The [**!analyze**](./-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
 If Parameter 1 is equal to 0x6, 0x9, 0xA, or 0xB, one of the other parameters contains the error source type. The following table gives possible values for the error source type.
 

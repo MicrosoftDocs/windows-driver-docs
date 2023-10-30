@@ -25,7 +25,7 @@ This issue is fixed in WDK version 10.0.22621.382. You can uninstall the WDK and
 
 ### Debugger within Visual Studio doesn't work
 
-It is not possible to debug drivers within the Visual Studio interface when using Visual Studio 2022 version 17.2.0 and 17.3 with the Windows 11, version 22H2 WDK (version 10.0.22621.382). To work around the problem, do one of the following: update Visual Studio to 17.4.1 or later, debug with WinDbg, or use a version of Visual Studio earlier than 17.2.0. The following error message is related to this issue:
+It is not possible to debug drivers within the Visual Studio interface when using Visual Studio 2022 version 17.2.0 and 17.3 with the Windows 11, version 22H2 WDK (10.0.22621.382). To work around the problem, do one of the following: update Visual Studio to 17.4.1 or later, debug with WinDbg, or use a version of Visual Studio earlier than 17.2.0. The following error message is related to this issue:
 
 QueryBuildManagerBusyEx must be called on the UI.
 

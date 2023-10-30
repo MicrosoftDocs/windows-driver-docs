@@ -17,19 +17,6 @@ ms.date: 04/20/2017
 
 # Decoder Stages
 
+The decoder stages that are depicted in the following figure show the operation of the motion compensation prediction (MCP) and inverse discrete-cosine transform (IDCT) parts of an accelerator. The data indicated as dct_type is a syntax element that controls the type of IDCT that is performed.
 
-## <span id="ddk_decoder_stages_gg"></span><span id="DDK_DECODER_STAGES_GG"></span>
-
-
-The decoder stages that are depicted in the following figure show the operation of the motion compensation prediction (MCP) and inverse discrete-cosine transform (IDCT) parts of an accelerator. The data indicated as dct\_type is a syntax element that controls the type of IDCT that is performed.
-
-![diagram illustrating decoder stages.](images/decstages.png)
-
- 
-
- 
-
-
-
-
-
+:::image type="content" source="images/decstages.png" alt-text="Diagram showing the operation of motion compensation prediction and inverse discrete-cosine transform in a decoder.":::

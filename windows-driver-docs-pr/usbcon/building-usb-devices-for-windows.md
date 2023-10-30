@@ -62,10 +62,10 @@ Event Tracing for Windows (ETW) is a general-purpose, high-speed tracing facilit
 [WPP Software Tracing](../devtest/wpp-software-tracing.md)  
 How to use the default operation of the Windows software trace preprocessor (WPP) to trace the operation of a software component (trace provider).
 
-[USB 3.0 Extensions](../debugger/usb-3-extensions.md) (usb3kd.dll)  
+[USB 3.0 Extensions](../debuggercmds/usb-3-extensions.md) (usb3kd.dll)  
 These commands display information from data structures maintained by three drivers in the USB 3.0 stack: the USB 3.0 hub driver, the USB host controller extension driver, and the USB 3.0 host controller driver.
 
-[USB 2.0 Extensions](../debugger/usb-2-0-extensions.md) (usb2kd.dll)  
+[USB 2.0 Extensions](../debuggercmds/usb-2-0-extensions.md) (usb2kd.dll)  
 These commands display information from data structures maintained by drivers in the USB 2.0 stack: the USB 2.0 hub driver and the USB 2.0 host controller driver.
 
 ## Related topics

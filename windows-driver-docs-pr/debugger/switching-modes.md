@@ -32,15 +32,15 @@ The target computer and the target application are frozen. The kernel-mode debug
 
 The session begins in user-mode debugging mode. The following actions and events cause the mode to change:
 
--   To switch from user-mode debugging to target application execution, use the [**g (Go)**](g--go-.md) command at the `Input>` prompt.
+-   To switch from user-mode debugging to target application execution, use the [**g (Go)**](../debuggercmds/g--go-.md) command at the `Input>` prompt.
 
 -   To temporarily switch from user-mode debugging to target application execution and then return to user-mode debugging, use a step, trace, or other temporary execution command. For a list of such commands, see [Controlling the Target](controlling-the-target.md).
 
--   To switch from user-mode debugging to sleep mode, use the [**.sleep (Pause Debugger)**](-sleep--pause-debugger-.md) command. This command is timed. When the time expires, the system returns to user-mode debugging.
+-   To switch from user-mode debugging to sleep mode, use the [**.sleep (Pause Debugger)**](../debuggercmds/-sleep--pause-debugger-.md) command. This command is timed. When the time expires, the system returns to user-mode debugging.
 
--   To switch from user-mode debugging to kernel-mode debugging, use the [**.breakin (Break to the Kernel Debugger)**](-breakin--break-to-the-kernel-debugger-.md) command. Note that **.breakin** might fail with an access denied error if the calling process does not have administrator rights. In this case, switch to KD by issuing a short **.sleep** command and pressing CTRL+C.
+-   To switch from user-mode debugging to kernel-mode debugging, use the [**.breakin (Break to the Kernel Debugger)**](../debuggercmds/-breakin--break-to-the-kernel-debugger-.md) command. Note that **.breakin** might fail with an access denied error if the calling process does not have administrator rights. In this case, switch to KD by issuing a short **.sleep** command and pressing CTRL+C.
 
--   You can switch from target application execution to user-mode debugging only in certain environments. If the target computer is running Microsoft Windows XP or a later version of the Windows operating system, you can use the [**!bpid**](-bpid.md) extension command. If you are using CDB (not NTSD), you can activate the CDB window on the target computer and press CTRL+C.
+-   You can switch from target application execution to user-mode debugging only in certain environments. If the target computer is running Microsoft Windows XP or a later version of the Windows operating system, you can use the [**!bpid**](../debuggercmds/-bpid.md) extension command. If you are using CDB (not NTSD), you can activate the CDB window on the target computer and press CTRL+C.
 
 -   If the target application hits a breakpoint, encounters an exception, encounters some other controlled event, or ends, the system switches from target application execution to user-mode debugging. You should plan such events in advance, especially when you are using NTSD. For more information about these events, see [Using Breakpoints](using-breakpoints2.md) and [Controlling Exceptions and Events](controlling-exceptions-and-events.md).
 
@@ -48,9 +48,9 @@ The session begins in user-mode debugging mode. The following actions and events
 
 -   If the debugger encounters a kernel error or if you use the Breakin.exe tool, the system switches from target application execution to kernel-mode debugging.
 
--   To switch from sleep mode to user-mode debugging, wait for the sleep time to expire, start a new CDB process on the target computer by using the -wake [**command-line option**](cdb-command-line-options.md), or use the [**.wake (Wake Debugger)**](-wake--wake-debugger-.md) command in a different copy of CDB or NTSD on the target computer.
+-   To switch from sleep mode to user-mode debugging, wait for the sleep time to expire, start a new CDB process on the target computer by using the -wake [**command-line option**](cdb-command-line-options.md), or use the [**.wake (Wake Debugger)**](../debuggercmds/-wake--wake-debugger-.md) command in a different copy of CDB or NTSD on the target computer.
 
--   To switch out of kernel-mode debugging, use the [**g (Go)**](g--go-.md) command at the `kd>` prompt. This command returns to user-mode debugging or target application execution (whichever of the two was the most recently-used state).
+-   To switch out of kernel-mode debugging, use the [**g (Go)**](../debuggercmds/g--go-.md) command at the `kd>` prompt. This command returns to user-mode debugging or target application execution (whichever of the two was the most recently-used state).
 
  
 

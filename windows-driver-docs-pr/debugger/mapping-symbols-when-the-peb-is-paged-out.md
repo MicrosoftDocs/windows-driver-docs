@@ -38,7 +38,7 @@ To load the symbols, enter the command that was given in the Reload command stri
 .reload notepad.exe=000007f7`8e9e0000,32000
 ```
 
-Here is another example that uses a slightly different technique. The example demonstrates how to use the [**!vad**](-vad.md) extension to map symbols when the PEB is paged out. The basic idea is to find the starting address and size of the relevant DLL so that you can then use the [**.reload**](-reload--reload-module-.md) command to load the necessary symbols. Suppose that the address of the current process is 0xE0000126\`01BA0AF0 and you want to fix the symbols for it. First, use the [**!process**](-process.md) command to obtain the virtual address descriptor (VAD) root address:
+Here is another example that uses a slightly different technique. The example demonstrates how to use the [**!vad**](../debuggercmds/-vad.md) extension to map symbols when the PEB is paged out. The basic idea is to find the starting address and size of the relevant DLL so that you can then use the [**.reload**](../debuggercmds/-reload--reload-module-.md) command to load the necessary symbols. Suppose that the address of the current process is 0xE0000126\`01BA0AF0 and you want to fix the symbols for it. First, use the [**!process**](../debuggercmds/-process.md) command to obtain the virtual address descriptor (VAD) root address:
 
 ```dbgcmd
 kd> !process e000012601ba0af0 1
@@ -50,7 +50,7 @@ PROCESS e000012601ba0af0
 ...
 ```
 
-Then use the [**!vad**](-vad.md) extension to list the VAD tree associated with the process. Those VADs labeled "EXECUTE\_WRITECOPY" belong to code modules.
+Then use the [**!vad**](../debuggercmds/-vad.md) extension to list the VAD tree associated with the process. Those VADs labeled "EXECUTE\_WRITECOPY" belong to code modules.
 
 ```dbgcmd
 kd> !vad e000012601a35e70
@@ -63,7 +63,7 @@ e000012601a5cba0 ( 7)   37d9c910 37d9c924         2 Mapped  Exe  EXECUTE_WRITECO
 ...
 ```
 
-Then use the [**!vad**](-vad.md) extension again to find the starting address and size of the paged out memory which holds the DLL of interest. This confirms that you have found the correct DLL:
+Then use the [**!vad**](../debuggercmds/-vad.md) extension again to find the starting address and size of the paged out memory which holds the DLL of interest. This confirms that you have found the correct DLL:
 
 ```dbgcmd
 kd> !vad e000012601be1080 1
@@ -79,7 +79,7 @@ VAD @ e000012601be1080
         File: \Windows\System32\ExplorerFrame.dll
 ```
 
-The "Start VPN" field - in this case, 0x37D9BD30 - indicates the starting virtual page number. This must be converted to an actual address, by multiplying it by the page size. You can use the [**? (Evaluate Expression)**](---evaluate-expression-.md) command to multiply this value by 0x2000, which is the page size for the Itanium-based machine the example comes from.
+The "Start VPN" field - in this case, 0x37D9BD30 - indicates the starting virtual page number. This must be converted to an actual address, by multiplying it by the page size. You can use the [**? (Evaluate Expression)**](../debuggercmds/---evaluate-expression-.md) command to multiply this value by 0x2000, which is the page size for the Itanium-based machine the example comes from.
 
 ```dbgcmd
 kd> ? 37d9bd3e*2000 

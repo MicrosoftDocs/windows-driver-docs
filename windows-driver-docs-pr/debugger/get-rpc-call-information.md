@@ -70,7 +70,7 @@ Searching for call info ...
 
 For details on the optional parameters, see [**DbgRpc Command-Line Options**](dbgrpc-command-line-options.md).
 
-For a similar example using the RPC debugger extensions, see [**!rpcexts.getcallinfo**](-rpcexts-getcallinfo.md).
+For a similar example using the RPC debugger extensions, see [**!rpcexts.getcallinfo**](../debuggercmds/-rpcexts-getcallinfo.md).
 
  
 

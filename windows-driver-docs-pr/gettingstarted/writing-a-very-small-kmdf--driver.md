@@ -10,7 +10,7 @@ ms.date: 11/04/2022
 
 This article describes how to write a small [Universal Windows driver](/windows-hardware/drivers) using Kernel-Mode Driver Framework (KMDF) and then deploy and install your driver on a separate computer. 
 
-To get started, be sure you have [Microsoft Visual Studio](../download-the-wdk.md#download-and-install-the-windows-11-version-22h2-wdk), the [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-sdk), and the [Windows Driver Kit (WDK)](../download-the-wdk.md) installed.
+Before you proceed, you'll need to follow the installation steps listed in [Download the Windows Driver Kit (WDK)](../download-the-wdk.md).
 
 [Debugging Tools for Windows](../debugger/index.md) is included when you install the WDK.
 
@@ -318,10 +318,10 @@ Now that you've installed your KmdfHelloWorld driver on the target computer, you
 
 1. At this point, you can experiment with the debugger by entering commands at the **kd&gt;** prompt. For example, you could try these commands:
 
-    - [lm](../debugger/lm--list-loaded-modules-.md)
-    - [.sympath](../debugger/-sympath--set-symbol-path-.md)
-    - [.reload](../debugger/-reload--reload-module-.md)
-    - [x KmdfHelloWorld!\*](../debugger/x--examine-symbols-.md)
+    - [lm](../debuggercmds/lm--list-loaded-modules-.md)
+    - [.sympath](../debuggercmds/-sympath--set-symbol-path-.md)
+    - [.reload](../debuggercmds/-reload--reload-module-.md)
+    - [x KmdfHelloWorld!\*](../debuggercmds/x--examine-symbols-.md)
 
 1. To let the target computer run again, choose **Go** from the **Debug** menu or press "g," then press "enter."
 1. To stop the debugging session, choose **Detach Debugger** from the **Debug** menu.

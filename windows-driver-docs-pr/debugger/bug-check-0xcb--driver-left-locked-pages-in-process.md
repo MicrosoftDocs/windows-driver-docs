@@ -36,7 +36,7 @@ For more information about memory descriptor list, see the following topics:
 
 For more information on locking memory, see [Locking Pageable Code or Data](../kernel/locking-pageable-code-or-data.md).
 
-To research the cause of this bug check, use the [!lockedpages](-lockedpages.md) debugger extension to display all of the locked MDLs for the current process.
+To research the cause of this bug check, use the [!lockedpages](../debuggercmds/-lockedpages.md) debugger extension to display all of the locked MDLs for the current process.
 
 ## Remarks
 

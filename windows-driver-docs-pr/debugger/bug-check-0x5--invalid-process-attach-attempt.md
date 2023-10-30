@@ -61,7 +61,7 @@ This bug check appears very infrequently.
 
 ## Remarks
 
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
 This bug check can occur if the driver calls the [KeAttachProcess](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-keattachprocess)  function and the thread is already attached to another process. It is better to use the [KeStackAttachProcess](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-kestackattachprocess) function. If the current thread was already attached to another process, the **KeStackAttachProcess** function saves the current APC state before it attaches the current thread to the new process. Calling **KeStackAttachProcess** incorrectly can also cause this bug check, for example if a DPC is running on the current processor.
 

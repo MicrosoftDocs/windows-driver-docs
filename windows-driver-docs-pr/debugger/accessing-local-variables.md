@@ -17,15 +17,15 @@ Visual Studio and WinDbg provide user interface elements that you can use (in ad
 
 You can also use the following methods to display, change, and use local variables:
 
--   The [**dv (Display Local Variables)**](dv--display-local-variables-.md) command displays the names and values of all local variables.
+-   The [**dv (Display Local Variables)**](../debuggercmds/dv--display-local-variables-.md) command displays the names and values of all local variables.
 
--   The [**!for\_each\_local**](-for-each-local.md) extension enables you to execute a single command repeatedly, once for each local variable.
+-   The [**!for\_each\_local**](../debuggercmds/-for-each-local.md) extension enables you to execute a single command repeatedly, once for each local variable.
 
 However, there is one primary difference between local and global variables. When an application is executing, the meaning of local variables depends on the location of the program counter, because the scope of such variables extends only to the function in which they are defined.
 
 The debugger interprets local variables according to the [local context](changing-contexts.md#local-context). By default, this context matches the location of the program counter. But the debugger can change the context. For more information about the local context, see Local Context.
 
-When the local context is changed, the Locals window is immediately updated to reflect the new collection of local variables. The [**dv**](dv--display-local-variables-.md) command also shows the new variables. All of these variable names are then interpreted correctly by the memory commands that are described earlier. You can then read or write to these variables.
+When the local context is changed, the Locals window is immediately updated to reflect the new collection of local variables. The [**dv**](../debuggercmds/dv--display-local-variables-.md) command also shows the new variables. All of these variable names are then interpreted correctly by the memory commands that are described earlier. You can then read or write to these variables.
 
  
 

@@ -264,7 +264,7 @@ Run the local kernel debugger windbg.exe -kl on the target.
 
 Make sure you have access to the kdnet.pdb symbol file by running .reload /f kdnet.dll
 
-Run [.kdtargetmac](-kdtargetmac--display-target-mac-address-.md) command to get the MAC address.
+Run [.kdtargetmac](../debuggercmds/-kdtargetmac--display-target-mac-address-.md) command to get the MAC address.
 
 ```dbgcmd
 kd> .kdtargetmac

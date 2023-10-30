@@ -54,7 +54,7 @@ The DRIVER\_IRQL\_NOT\_LESS\_OR\_EQUAL bug check has a value of 0x000000D1. This
 </tr>
 <tr class="even">
 <td align="left"><p>4</p></td>
-<td align="left"><p>Address that referenced memory. Use <a href="./ln--list-nearest-symbols-.md"><strong>ln</strong> (list nearest symbols)</a> on this address to see the name of the function.</p></td>
+<td align="left"><p>Address that referenced memory. Use <a href="../debuggercmds/../debuggercmds/ln--list-nearest-symbols-.md"><strong>ln</strong> (list nearest symbols)</a> on this address to see the name of the function.</p></td>
 </tr>
 </tbody>
 </table>
@@ -72,7 +72,7 @@ Typically, when this error occurs, a driver has tried to access an address that 
 
  - Executing pageable code at or above DISPATCH_LEVEL.
 
-If a driver that is responsible for the error can be identified, its name is printed on the blue screen and stored in memory at the location (PUNICODE\_STRING) **KiBugCheckDriver**. You can use [**dx** (display debugger object model expression)](dx--display-visualizer-variables-.md), a debugger command, to display this: **dx KiBugCheckDriver**.
+If a driver that is responsible for the error can be identified, its name is printed on the blue screen and stored in memory at the location (PUNICODE\_STRING) **KiBugCheckDriver**. You can use [**dx** (display debugger object model expression)](../debuggercmds/dx--display-visualizer-variables-.md), a debugger command, to display this: **dx KiBugCheckDriver**.
 
 This bug check is usually caused by drivers that have used improper memory addresses.
 
@@ -93,7 +93,7 @@ If the problem is caused by the driver that you are developing, make sure that t
 - Not marked as pageable
 - Does not call any other inline functions that could be paged out.
 
-The [**!analyze**](-analyze.md) debugger extension displays information about the bug check and can be helpful in determining the root cause. The following example is output from **!analyze**.
+The [**!analyze**](../debuggercmds/-analyze.md) debugger extension displays information about the bug check and can be helpful in determining the root cause. The following example is output from **!analyze**.
 
 ```dbgcmd
 DRIVER_IRQL_NOT_LESS_OR_EQUAL (d1)
@@ -108,7 +108,7 @@ Arg3: 0000000000000000, value 0 = read operation, 1 = write operation
 Arg4: fffff808adc386a6, address which referenced memory
 ```
 
-If a driver that is responsible for the error can be identified, its name is printed on the blue screen and stored in memory at the location (PUNICODE\_STRING) **KiBugCheckDriver**. You can use [**dx** (display debugger object model expression)](dx--display-visualizer-variables-.md), a debugger command, to display this: `dx KiBugCheckDriver`.
+If a driver that is responsible for the error can be identified, its name is printed on the blue screen and stored in memory at the location (PUNICODE\_STRING) **KiBugCheckDriver**. You can use [**dx** (display debugger object model expression)](../debuggercmds/dx--display-visualizer-variables-.md), a debugger command, to display this: `dx KiBugCheckDriver`.
 
 
 ```dbgcmd
@@ -116,11 +116,11 @@ If a driver that is responsible for the error can be identified, its name is pri
 KiBugCheckDriver                 : 0xffffc6092de892c8 : "Wdf01000.sys" [Type: _UNICODE_STRING *]
 ```
 
-If a trap frame is available in the dump file, use the [**.trap**](-trap--display-trap-frame-.md) command to set your context to the provided address.
+If a trap frame is available in the dump file, use the [**.trap**](../debuggercmds/-trap--display-trap-frame-.md) command to set your context to the provided address.
 
-To start debugging this type of bug check, examine the stack trace by using the [**k**, **kb**, **kc**, **kd**, **kp**, **kP**, **kv** (display stack backtrace)](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) commands.
+To start debugging this type of bug check, examine the stack trace by using the [**k**, **kb**, **kc**, **kd**, **kp**, **kP**, **kv** (display stack backtrace)](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) commands.
 
-In the debugger, run the [**!irql**](-irql.md) command to display information about the IRQL of a processor on the target computer before the debugger break. For example:
+In the debugger, run the [**!irql**](../debuggercmds/-irql.md) command to display information about the IRQL of a processor on the target computer before the debugger break. For example:
 
 ```dbgcmd
 0: kd> !irql
@@ -131,15 +131,15 @@ In the majority of cases of this type of bug check, the issue is not the IRQL le
 
 Because this bug check is usually caused by drivers that have used improper memory addresses, use parameters 1, 3, and 4 to investigate further.
 
-Use [**ln** (list nearest symbols)](ln--list-nearest-symbols-.md) with parameter 4 to see the name of the function that was called. Also examine the **!analyze** output to see if faulting code is identified.
+Use [**ln** (list nearest symbols)](../debuggercmds/ln--list-nearest-symbols-.md) with parameter 4 to see the name of the function that was called. Also examine the **!analyze** output to see if faulting code is identified.
 
-Use [**!pool**](-pool.md) on the parameter 1 address to see whether it is paged pool. Use [**!address**](-address.md) and the advanced [**!pte**](-pte.md) command to learn more about this area of memory.
+Use [**!pool**](../debuggercmds/-pool.md) on the parameter 1 address to see whether it is paged pool. Use [**!address**](../debuggercmds/-address.md) and the advanced [**!pte**](../debuggercmds/-pte.md) command to learn more about this area of memory.
 
-Use the [display memory](-db---dc---dd---dp---dq---du---dw.md) commands to examine the memory referenced in command in parameter 1.
+Use the [display memory](../debuggercmds/-db---dc---dd---dp---dq---du---dw.md) commands to examine the memory referenced in command in parameter 1.
 
-Use the [**u**, **ub**, **uu** (unassemble)](u--unassemble-.md) commands to look at the code in the address which referenced the memory in parameter 4.
+Use the [**u**, **ub**, **uu** (unassemble)](../debuggercmds/u--unassemble-.md) commands to look at the code in the address which referenced the memory in parameter 4.
 
-Use the command `lm t n` to list modules that are loaded in the memory. Use [**!memusage**](-memusage.md) and to examine the general state of the system memory. 
+Use the command `lm t n` to list modules that are loaded in the memory. Use [**!memusage**](../debuggercmds/-memusage.md) and to examine the general state of the system memory. 
 
 
 ### Driver Verifier

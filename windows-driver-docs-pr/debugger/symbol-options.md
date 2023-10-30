@@ -166,7 +166,7 @@ The following table lists these symbol options:
 
 ### <span id="changing-the-symbol-option-settings"></span><span id="CHANGING_THE_SYMBOL_OPTION_SETTINGS"></span>Changing the Symbol Option Settings
 
-The [**.symopt (Set Symbol Options)**](-symopt--set-symbol-options-.md) command can be used to change or display the symbol option settings. In addition, a number of command-line parameters and commands are available to change these settings; these are listed in the individual SYMOPT\_*XXX* sections.
+The [**.symopt (Set Symbol Options)**](../debuggercmds/-symopt--set-symbol-options-.md) command can be used to change or display the symbol option settings. In addition, a number of command-line parameters and commands are available to change these settings; these are listed in the individual SYMOPT\_*XXX* sections.
 
 You can also control all the settings at once with the **-sflags**[command-line option](command-line-options.md). This option can be followed with a decimal number, or with a hexadecimal number prefixed by **0x**. It is recommended that you use hexadecimal, since the symbol flags are aligned properly that way. Be cautious in using this method, since it sets the entire bitfield and will override all the symbol handler defaults. For example, **-sflags 0x401** will not only turn on SYMOPT\_EXACT\_SYMBOLS and SYMOPT\_CASE\_INSENSITIVE, but will also turn off all the other options that normally are on by default!
 
@@ -208,7 +208,7 @@ This option is off by default in DBH. Once DBH is running, it can be turned on o
 
 This symbol option allows line number information to be read from source files. This option must be on for source debugging to work correctly.
 
-In KD and CDB, this option is off by default; in WinDbg, this option is on by default. In CDB and KD, the -lines command-line option will turn this option on. Once the debugger is running, it can be turned on or off by using **.symopt+0x10** or .symopt-0x10, respectively. It can also be toggled on and off by using the [**.lines (Toggle Source Line Support)**](-lines--toggle-source-line-support-.md) command.
+In KD and CDB, this option is off by default; in WinDbg, this option is on by default. In CDB and KD, the -lines command-line option will turn this option on. Once the debugger is running, it can be turned on or off by using **.symopt+0x10** or .symopt-0x10, respectively. It can also be toggled on and off by using the [**.lines (Toggle Source Line Support)**](../debuggercmds/-lines--toggle-source-line-support-.md) command.
 
 This option is on by default in DBH. Once DBH is running, it can be turned on or off by using symopt +10 or symopt -10, respectively.
 
@@ -320,7 +320,7 @@ This option is off by default in DBH. Once DBH is running, it can be turned on o
 
 (Kernel mode only) This symbol option indicates whether [Secure Mode](secure-mode.md) is active.
 
-Secure Mode is off by default in all debuggers. It can be activated by using the -secure command-line option. If the debugger is running, is in dormant mode, and has not established any Debugging Servers, Secure Mode can be turned on by using **.symopt+0x40000** or [**.secure (Activate Secure Mode)**](-secure--activate-secure-mode-.md).
+Secure Mode is off by default in all debuggers. It can be activated by using the -secure command-line option. If the debugger is running, is in dormant mode, and has not established any Debugging Servers, Secure Mode can be turned on by using **.symopt+0x40000** or [**.secure (Activate Secure Mode)**](../debuggercmds/-secure--activate-secure-mode-.md).
 
 This option is off by default in DBH. Once DBH is running, it can be turned on or off by using symopt +40000 or symopt -40000, respectively.
 
@@ -332,7 +332,7 @@ This symbol option suppresses authentication dialog boxes from the proxy server.
 
 For details, see [Firewalls and Proxy Servers](firewalls-and-proxy-servers.md).
 
-In KD and CDB, this option is on by default; in WinDbg, this option is off by default. Once the debugger is running, it can be turned on or off by using **.symopt+0x80000** or .symopt-0x80000, respectively, followed by the [**.reload (Reload Module)**](-reload--reload-module-.md) command. It can also be turned on and off by using the [**!sym prompts off**](-sym.md) and **!sym prompts** extension commands, followed by the **.reload (Reload Module)** command.
+In KD and CDB, this option is on by default; in WinDbg, this option is off by default. Once the debugger is running, it can be turned on or off by using **.symopt+0x80000** or .symopt-0x80000, respectively, followed by the [**.reload (Reload Module)**](../debuggercmds/-reload--reload-module-.md) command. It can also be turned on and off by using the [**!sym prompts off**](../debuggercmds/-sym.md) and **!sym prompts** extension commands, followed by the **.reload (Reload Module)** command.
 
 This option is off by default in DBH. Once DBH is running, it can be turned on or off by using symopt +80000 or symopt -80000, respectively.
 
@@ -348,9 +348,9 @@ The name of each symbol file will be displayed as it is loaded. If the debugger 
 
 If an image file is loaded solely to recover symbolic header information, this will be displayed as well.
 
-This option is off by default in all debuggers. It can be activated by using the -n command-line option. Once the debugger is running, it can be turned on or off by using **.symopt+0x80000000** or .symopt-0x80000000, respectively. It can also be turned on and off by using the [**!sym noisy**](-sym.md) and **!sym quiet** extension commands.
+This option is off by default in all debuggers. It can be activated by using the -n command-line option. Once the debugger is running, it can be turned on or off by using **.symopt+0x80000000** or .symopt-0x80000000, respectively. It can also be turned on and off by using the [**!sym noisy**](../debuggercmds/-sym.md) and **!sym quiet** extension commands.
 
-**Note**   This option should not be confused with noisy *source* loading -- that is controlled by the [**.srcnoisy (Noisy Source Loading)**](-srcnoisy--noisy-source-loading-.md) command.
+**Note**   This option should not be confused with noisy *source* loading -- that is controlled by the [**.srcnoisy (Noisy Source Loading)**](../debuggercmds/-srcnoisy--noisy-source-loading-.md) command.
 
  
 

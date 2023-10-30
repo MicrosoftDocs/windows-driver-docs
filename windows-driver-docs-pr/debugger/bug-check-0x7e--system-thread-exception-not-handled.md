@@ -48,9 +48,9 @@ If you plan to debug this problem, the exception address (parameter 2) should id
 
 If a driver is listed by name within the bug check message, disable or remove that driver. If the issue is narrowed down to a single driver, set breakpoints and single-step forward in code to locate the failure and gain insight into events leading up to the crash.
 
-The [!analyze](-analyze.md) debugger extension displays information about the bug check and can be helpful in determining the root cause.
+The [!analyze](../debuggercmds/-analyze.md) debugger extension displays information about the bug check and can be helpful in determining the root cause.
 
-More analysis can be done by using the [!thread](-thread.md) extension, and the [dds, dps, and dqs (display words and symbols)](dds--dps--dqs--display-words-and-symbols-.md) commands. This technique is reasonable when WinDbg reports "Probably caused by : ntkrnlmp.exe."
+More analysis can be done by using the [!thread](../debuggercmds/-thread.md) extension, and the [dds, dps, and dqs (display words and symbols)](../debuggercmds/dds--dps--dqs--display-words-and-symbols-.md) commands. This technique is reasonable when WinDbg reports "Probably caused by : ntkrnlmp.exe."
 
 If exception code 0x80000003 occurs, a hard-coded breakpoint or assertion was hit, but the system was started with the **/NODEBUG** switch. This problem shouldn't occur frequently. If it occurs repeatedly, make sure that a kernel debugger is connected and the system is started with the **/DEBUG** switch.
 
@@ -62,7 +62,7 @@ For more information about WinDbg and **!analyze**, see:
 
 - [Analyzing a kernel-mode dump file with WinDbg](analyzing-a-kernel-mode-dump-file-with-windbg.md)
 
-- [Using the !analyze extension](using-the--analyze-extension.md) and [!analyze](-analyze.md)
+- [Using the !analyze extension](using-the--analyze-extension.md) and [!analyze](../debuggercmds/-analyze.md)
 
 ## Remarks
 

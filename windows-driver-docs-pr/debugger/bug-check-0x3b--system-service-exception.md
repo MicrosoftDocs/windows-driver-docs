@@ -50,9 +50,9 @@ Common exception codes include:
 
 To determine the specific cause and to create a code fix, programming experience and access to the source code of the faulting module is required.
 
-To debug this problem, use the [**.cxr** (display context record)](-cxr--display-context-record-.md) command with Parameter 3, and then use [**kb** (display stack backtrace)](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md). You can also set a breakpoint in the code that precedes this stop code and attempt to single-step forward into the faulting code. Use the [**u**, **ub**, **uu** (unassemble)](u--unassemble-.md) commands to see the assembly program code.
+To debug this problem, use the [**.cxr** (display context record)](../debuggercmds/-cxr--display-context-record-.md) command with Parameter 3, and then use [**kb** (display stack backtrace)](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md). You can also set a breakpoint in the code that precedes this stop code and attempt to single-step forward into the faulting code. Use the [**u**, **ub**, **uu** (unassemble)](../debuggercmds/u--unassemble-.md) commands to see the assembly program code.
 
-The [**!analyze**](-analyze.md) debugger extension displays information about the bug check and can be helpful in determining the root cause. The following example is output from **!analyze**.
+The [**!analyze**](../debuggercmds/-analyze.md) debugger extension displays information about the bug check and can be helpful in determining the root cause. The following example is output from **!analyze**.
 
 ```dbgcmd
 SYSTEM_SERVICE_EXCEPTION (3b)
@@ -75,21 +75,21 @@ For more information on Windows memory usage, see [Windows Internals 7th Edition
 
 ### Identify the driver
 
-If a driver that is responsible for the error can be identified, its name is printed on the blue screen and stored in memory at the location (PUNICODE\_STRING) **KiBugCheckDriver**. You can use [**dx** (display debugger object model expression)](dx--display-visualizer-variables-.md), a debugger command, to display this: `dx KiBugCheckDriver`.
+If a driver that is responsible for the error can be identified, its name is printed on the blue screen and stored in memory at the location (PUNICODE\_STRING) **KiBugCheckDriver**. You can use [**dx** (display debugger object model expression)](../debuggercmds/dx--display-visualizer-variables-.md), a debugger command, to display this: `dx KiBugCheckDriver`.
 
 ```dbgcmd
 kd> dx KiBugCheckDriver
 KiBugCheckDriver                 : 0xffffe10b9991e3e8 : "nvlddmkm.sys" [Type: _UNICODE_STRING *]
 ```
 
-Use the [**!error**](-error.md) extension to display information about the exception code in parameter 1. Following is an example of output from **!error**.
+Use the [**!error**](../debuggercmds/-error.md) extension to display information about the exception code in parameter 1. Following is an example of output from **!error**.
 
 ```dbgcmd
 2: kd> !error 00000000c0000005
 Error code: (NTSTATUS) 0xc0000005 (3221225477) - The instruction at 0x%p referenced memory at 0x%p. The memory could not be %s.
 ```
 
-Look at the **STACK TEXT** output from WinDbg for clues about what was running when the failure occurred. If multiple dump files are available, compare their information to look for common code that is in the stack. Use debugger commands like [**kb** (display stack backtrace)](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) to investigate the faulting code.
+Look at the **STACK TEXT** output from WinDbg for clues about what was running when the failure occurred. If multiple dump files are available, compare their information to look for common code that is in the stack. Use debugger commands like [**kb** (display stack backtrace)](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) to investigate the faulting code.
 
 Use the following command to list modules that are loaded in memory: **lm t n**
 

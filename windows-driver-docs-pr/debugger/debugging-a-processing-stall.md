@@ -8,7 +8,7 @@ ms.date: 05/23/2017
 # Debugging a Processing Stall
 
 
-Begin by finding the relevant pin. In a hypothetical case, the relevant video capture pin has address **8160DDE0**, so we use the [**!ks.dump**](-ks-dump.md) extension command on this address to get more details:
+Begin by finding the relevant pin. In a hypothetical case, the relevant video capture pin has address **8160DDE0**, so we use the [**!ks.dump**](../debuggercmds/-ks-dump.md) extension command on this address to get more details:
 
 ```dbgcmd
 kd> !ks.dump 8160DDE0 7
@@ -22,7 +22,7 @@ Pin object 8160DDE0 [CKsPin = 8160DD50]
         And Gate Count           1
 ```
 
-First, determine if the pin is in the appropriate state and whether the processing mutex is being held by another thread. In this case, the pin state is **KSSTATE\_RUN**, as it should be, and the processing mutex is not being held, so we next use the [**!ks.dumpqueue**](-ks-dumpqueue.md) extension to determine if there are frames available:
+First, determine if the pin is in the appropriate state and whether the processing mutex is being held by another thread. In this case, the pin state is **KSSTATE\_RUN**, as it should be, and the processing mutex is not being held, so we next use the [**!ks.dumpqueue**](../debuggercmds/-ks-dumpqueue.md) extension to determine if there are frames available:
 
 ```dbgcmd
 kd> !ks.dumpqueue 8160DDE0 7

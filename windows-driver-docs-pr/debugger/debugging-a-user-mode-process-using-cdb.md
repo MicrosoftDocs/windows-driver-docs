@@ -25,11 +25,11 @@ For more information about the command-line syntax, see [**CDB Command-Line Opti
 
 ### <span id="cdb_command_window1"></span><span id="CDB_COMMAND_WINDOW1"></span>CDB Command Window
 
-If the debugger is already debugging one or more processes, you can attach to a running process by using the [**.attach (Attach to Process)**](-attach--attach-to-process-.md) command.
+If the debugger is already debugging one or more processes, you can attach to a running process by using the [**.attach (Attach to Process)**](../debuggercmds/-attach--attach-to-process-.md) command.
 
 The debugger always starts multiple target processes simultaneously, unless some of their threads are frozen or suspended.
 
-If the [**.attach**](-attach--attach-to-process-.md) command is successful, the debugger attaches to the specified process the next time that the debugger issues an execution command. If you use this command several times in a row, execution has to be requested by the debugger as many times as you use this command.
+If the [**.attach**](../debuggercmds/-attach--attach-to-process-.md) command is successful, the debugger attaches to the specified process the next time that the debugger issues an execution command. If you use this command several times in a row, execution has to be requested by the debugger as many times as you use this command.
 
 ## <span id="Attaching_to_a_Running_Process_Noninvasively"></span><span id="attaching_to_a_running_process_noninvasively"></span><span id="ATTACHING_TO_A_RUNNING_PROCESS_NONINVASIVELY"></span>Attaching to a Running Process Noninvasively
 
@@ -50,7 +50,7 @@ There are several other useful command-line options. For more information about 
 
 ### <span id="cdb_command_window2"></span><span id="CDB_COMMAND_WINDOW2"></span>CDB Command Window
 
-If the debugger is already active, you can noninvasively debug a running process by entering the [**.attach -v (Attach to Process)**](-attach--attach-to-process-.md) command.
+If the debugger is already active, you can noninvasively debug a running process by entering the [**.attach -v (Attach to Process)**](../debuggercmds/-attach--attach-to-process-.md) command.
 
 You can use the **.attach** command if the debugger is already debugging one or more processes invasively.
 
@@ -73,15 +73,15 @@ In a Command Prompt window, you can spawn a new process when you launch CDB. Ent
 
 The **-o** option causes the debugger to attach to child processes. There are several other useful command-line options. For more information about the command-line syntax, see [**CDB Command-Line Options**](cdb-command-line-options.md).
 
-If the debugger is already debugging one or more processes, you can create a new process by entering the [**.create (Create Process)**](-create--create-process-.md) command.
+If the debugger is already debugging one or more processes, you can create a new process by entering the [**.create (Create Process)**](../debuggercmds/-create--create-process-.md) command.
 
 The debugger will always start multiple target processes simultaneously, unless some of their threads are frozen or suspended.
 
-If the [**.create**](-create--create-process-.md) command is successful, the debugger creates the specified process the next time that the debugger issues an execution command. If you use this command several times in a row, execution has to be requested by the debugger as many times as you use this command.
+If the [**.create**](../debuggercmds/-create--create-process-.md) command is successful, the debugger creates the specified process the next time that the debugger issues an execution command. If you use this command several times in a row, execution has to be requested by the debugger as many times as you use this command.
 
-You can control the application's starting directory by using the [**.createdir (Set Created Process Directory)**](-createdir--set-created-process-directory-.md) command before [**.create**](-create--create-process-.md). You can use the **.createdir -I** command or the **-noinh** command-line option to control whether the target application inherits the debugger's handles.
+You can control the application's starting directory by using the [**.createdir (Set Created Process Directory)**](../debuggercmds/-createdir--set-created-process-directory-.md) command before [**.create**](../debuggercmds/-create--create-process-.md). You can use the **.createdir -I** command or the **-noinh** command-line option to control whether the target application inherits the debugger's handles.
 
-You can activate or deactivate the debugging of child processes by using the [**.childdbg (Debug Child Processes)**](-childdbg--debug-child-processes-.md) command.
+You can activate or deactivate the debugging of child processes by using the [**.childdbg (Debug Child Processes)**](../debuggercmds/-childdbg--debug-child-processes-.md) command.
 
 ## <span id="Reattaching_to_a_Process"></span><span id="reattaching_to_a_process"></span><span id="REATTACHING_TO_A_PROCESS"></span>Reattaching to a Process
 

@@ -23,7 +23,7 @@ KD or WinDbg can exit or end the debugging session in the normal fashion. See [E
 
 for details. The KD connection server will remain in operation and can be re-used as many times as desired. (It can also be used by for any number of simultaneous debugging sessions.)
 
-The KD connection server can be terminated from either computer. To terminate it from the smart client, use the [**.endpsrv (End Process Server)**](-endpsrv--end-process-server-.md) command. To terminate the KD connection server from the computer it is running on, use Task Manager to end the kdsrv.exe process.
+The KD connection server can be terminated from either computer. To terminate it from the smart client, use the [**.endpsrv (End Process Server)**](../debuggercmds/-endpsrv--end-process-server-.md) command. To terminate the KD connection server from the computer it is running on, use Task Manager to end the kdsrv.exe process.
 
  
 

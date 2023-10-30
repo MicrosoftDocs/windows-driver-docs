@@ -14,7 +14,7 @@ The Windows recording component Sndrec32 is recording from the primary capture d
 
 The application shows running, but the stream position is not advancing. Position is halted at 8.50 seconds.
 
-Since the primary capture device on this machine is a PCI sound card, first use the [**!ks.pciaudio**](-ks-pciaudio.md) command to try and determine a starting point. Use a flag value of 1 to request a display of all running streams:
+Since the primary capture device on this machine is a PCI sound card, first use the [**!ks.pciaudio**](../debuggercmds/-ks-pciaudio.md) command to try and determine a starting point. Use a flag value of 1 to request a display of all running streams:
 
 ```dbgcmd
 kd> !pciaudio 1
@@ -25,7 +25,7 @@ kd> !pciaudio 1
             Pin 812567c0 RUN [emu10k1m!CMiniportWaveCyclicStreamSBLive ff9ec7f8] 
 ```
 
-In this case, there is only one PCI audio device and it is serviced by the Intel emu10k driver (\\Driver\\emu10k). This driver currently has a single running stream (0x812567C0). Now you can use [**!ks.graph**](-ks-graph.md) to view the kernel graph. Set *Level* and *Flags* both to 7 to obtain maximum detail on the stall:
+In this case, there is only one PCI audio device and it is serviced by the Intel emu10k driver (\\Driver\\emu10k). This driver currently has a single running stream (0x812567C0). Now you can use [**!ks.graph**](../debuggercmds/-ks-graph.md) to view the kernel graph. Set *Level* and *Flags* both to 7 to obtain maximum detail on the stall:
 
 ```dbgcmd
 kd> !graph 812567c0 7 7
@@ -37,7 +37,7 @@ Graph With Starting Point 812567c0:
  Queued: 81255418 811df008 81252008 81255280 81250b30 ffa1fe70 81252e70 ffa01d98 
 ```
 
-The above shows the details for factory 0. The emu10k output pin 0x812567C0 is connected to the splitter input pin 0x811DF960. There are eight IRPs queued to emu10k's output pin. The output from [**!ks.graph**](-ks-graph.md) continues as follows:
+The above shows the details for factory 0. The emu10k output pin 0x812567C0 is connected to the splitter input pin 0x811DF960. There are eight IRPs queued to emu10k's output pin. The output from [**!ks.graph**](../debuggercmds/-ks-graph.md) continues as follows:
 
 ```dbgcmd
 "splitter" Filter ffb18890, Child Factories 2

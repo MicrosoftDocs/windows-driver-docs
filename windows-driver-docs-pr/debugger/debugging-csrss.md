@@ -22,7 +22,7 @@ For general information on protected processes, as well as additional specifics 
 
 To examine CSRSS, some information is available using kernel debugging.
 
-Use the [**!process**](-process.md) extension to display information about processes associated with csrss.exe.
+Use the [**!process**](../debuggercmds/-process.md) extension to display information about processes associated with csrss.exe.
 
 ```dbgcmd
 0: kd> !process 0 0 csrss.exe
@@ -37,7 +37,7 @@ PROCESS ffffe381a68ab140
     Image: csrss.exe
 ```
 
-Take either of the associated processes, and set the context to that location using the [**.process (Set Process Context)**](-process--set-process-context-.md) command.
+Take either of the associated processes, and set the context to that location using the [**.process (Set Process Context)**](../debuggercmds/-process--set-process-context-.md) command.
 
 ```dbgcmd
 0: kd> .process /r /p ffffe381a583b080
@@ -45,7 +45,7 @@ Implicit process is now ffffe381`a583b080
 Loading User Symbols
 ```
 
-Now use the [**dt (Display Type)**](dt--display-type-.md) command to show the process structure directly:
+Now use the [**dt (Display Type)**](../debuggercmds/dt--display-type-.md) command to show the process structure directly:
 
 ```dbgcmd
 0: kd> dt csrss!_csr_process
@@ -71,6 +71,6 @@ Now use the [**dt (Display Type)**](dt--display-type-.md) command to show the pr
    +0x088 ServerDllPerProcessData : [1] Ptr64 Void
 ```
 
-The [!peb](-peb.md) extension can be used to display additional information about the process environment block (PEB).
+The [!peb](../debuggercmds/-peb.md) extension can be used to display additional information about the process environment block (PEB).
 
 

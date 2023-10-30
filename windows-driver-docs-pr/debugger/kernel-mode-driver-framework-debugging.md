@@ -12,7 +12,7 @@ Debugging extensions for Kernel-Mode Driver Framework (KMDF) are contained in th
 
 You can use the extension commands that the Wdfkd.dll extension library contains to debug drivers that use KMDF.
 
-For a description of the extension commands in Wdfkd.dll, see [Kernel-Mode Driver Framework Extensions (Wdfkd.dll)](kernel-mode-driver-framework-extensions--wdfkd-dll-.md).
+For a description of the extension commands in Wdfkd.dll, see [Kernel-Mode Driver Framework Extensions (Wdfkd.dll)](../debuggercmds/kernel-mode-driver-framework-extensions--wdfkd-dll-.md).
 
 These extensions can be used on Microsoft Windows XP and later operating systems. Some extensions have additional restrictions; these restrictions are noted on the individual reference pages.
 
@@ -20,7 +20,7 @@ These extensions can be used on Microsoft Windows XP and later operating systems
 
  
 
-To use this extension library, you must load the library into your debugger. For information about how to load extension libraries into a debugger, see [Loading Debugger Extension DLLs](loading-debugger-extension-dlls.md).
+To use this extension library, you must load the library into your debugger. For information about how to load extension libraries into a debugger, see [Loading Debugger Extension DLLs](../debuggercmds/loading-debugger-extension-dlls.md).
 
  
 

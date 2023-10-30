@@ -109,7 +109,7 @@ For more information, see:
 
 - [Analyzing a Kernel-Mode Dump File with WinDbg](analyzing-a-kernel-mode-dump-file-with-windbg.md)
 
-- [!analyze](-analyze.md)
+- [!analyze](../debuggercmds/-analyze.md)
 
 - [Kernel Live Memory Dump Code Reference](bug-check-code-reference-live-dump.md)
 

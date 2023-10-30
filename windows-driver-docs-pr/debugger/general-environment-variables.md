@@ -27,7 +27,7 @@ The following table lists the environment variables that can be used in both use
 <tbody>
 <tr class="odd">
 <td align="left"><p>_NT_DEBUGGER_EXTENSION_PATH = <em>Path</em></p></td>
-<td align="left"><p>Specifies the path that the debugger will first search for extension DLLs. <em>Path</em> can contain a drive letter followed by a colon (<strong>:</strong>). Separate multiple directories with semicolons (<strong>;</strong>). For details, see <a href="loading-debugger-extension-dlls.md" data-raw-source="[Loading Debugger Extension DLLs](loading-debugger-extension-dlls.md)">Loading Debugger Extension DLLs</a>.</p></td>
+<td align="left"><p>Specifies the path that the debugger will first search for extension DLLs. <em>Path</em> can contain a drive letter followed by a colon (<strong>:</strong>). Separate multiple directories with semicolons (<strong>;</strong>). For details, see <a href="../debuggercmds/loading-debugger-extension-dlls.md" data-raw-source="[Loading Debugger Extension DLLs](../debuggercmds/loading-debugger-extension-dlls.md)">Loading Debugger Extension DLLs</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>_NT_EXECUTABLE_IMAGE_PATH = <em>Path</em></p></td>
@@ -50,7 +50,7 @@ The following table lists the environment variables that can be used in both use
 </tr>
 <tr class="odd">
 <td align="left"><p>_NT_DEBUG_HISTORY_SIZE = <em>Number</em></p></td>
-<td align="left"><p>Specifies the number of commands in the command history that can be accessed during remote debugging. Because commands vary in length, the number of lines available may not exactly match <em>Number</em>. For details, and for other ways to change this number, see <a href="using-debugger-commands.md" data-raw-source="[Using Debugger Commands](using-debugger-commands.md)">Using Debugger Commands</a>.</p></td>
+<td align="left"><p>Specifies the number of commands in the command history that can be accessed during remote debugging. Because commands vary in length, the number of lines available may not exactly match <em>Number</em>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>_NT_DEBUG_LOG_FILE_OPEN = <em>Filename</em></p></td>
@@ -62,7 +62,7 @@ The following table lists the environment variables that can be used in both use
 </tr>
 <tr class="even">
 <td align="left"><p>_NT_EXPR_EVAL = {<strong>masm</strong> | <strong>c++</strong>}</p></td>
-<td align="left"><p>Specifies the default expression evaluator. If <strong>masm</strong> is specified, MASM expression syntax will be used. If <strong>c++</strong> is specified, C++ expression syntax will be used. MASM expression syntax is the default. See <a href="evaluating-expressions.md" data-raw-source="[Evaluating Expressions](evaluating-expressions.md)">Evaluating Expressions</a> for details.</p></td>
+<td align="left"><p>Specifies the default expression evaluator. If <strong>masm</strong> is specified, MASM expression syntax will be used. If <strong>c++</strong> is specified, C++ expression syntax will be used. MASM expression syntax is the default. See <a href="../debuggercmds/evaluating-expressions.md" data-raw-source="[Evaluating Expressions](../debuggercmds/evaluating-expressions.md)">Evaluating Expressions</a> for details.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>_NO_DEBUG_HEAP</p></td>

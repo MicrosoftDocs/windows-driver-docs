@@ -34,7 +34,7 @@ A storage miniport driver can now get and set more information about a device's 
 
 #### WinDbg Preview
 
-Updates to [WinDbg Preview](./debugger/debugging-using-windbg-preview.md) to cover new features such as [WinDbg Preview - Timelines](./debugger/windbg-timeline-preview.md). Time travel timelines allows for the visualization of time travel code execution traces.
+Updates to [WinDbg Preview](./debugger/debugging-using-windbg-preview.md) to cover new features such as [WinDbg Preview - Timelines](./debuggercmds/windbg-timeline-preview.md). Time travel timelines allows for the visualization of time travel code execution traces.
 
 #### Stop Codes
 

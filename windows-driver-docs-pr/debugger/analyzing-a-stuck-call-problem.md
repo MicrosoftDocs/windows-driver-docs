@@ -42,7 +42,7 @@ Here's how to troubleshoot this problem.
 
 2. Get the stack pointer of this thread. The stack will look like the one shown in the preceding example. In this example, the stack pointer is 0x0068FBA0.
 
-3. Get the call information for this thread. In order to do that, use the [**!rpcexts.rpcreadstack**](-rpcexts-rpcreadstack.md) extension with the thread stack pointer as its parameter, as follows:
+3. Get the call information for this thread. In order to do that, use the [**!rpcexts.rpcreadstack**](../debuggercmds/-rpcexts-rpcreadstack.md) extension with the thread stack pointer as its parameter, as follows:
 
 ```dbgcmd
 0:001> !rpcexts.rpcreadstack 68fba0
@@ -56,7 +56,7 @@ Here's how to troubleshoot this problem.
 
 The information displayed here will allow you to trace the call.
 
-4. The network address is empty, which indicates the local machine. The endpoint is 1120. You need to determine which process hosts this endpoint. This can be done by passing this endpoint number to the [**!rpcexts.getendpointinfo**](-rpcexts-getendpointinfo.md) extension, as follows:
+4. The network address is empty, which indicates the local machine. The endpoint is 1120. You need to determine which process hosts this endpoint. This can be done by passing this endpoint number to the [**!rpcexts.getendpointinfo**](../debuggercmds/-rpcexts-getendpointinfo.md) extension, as follows:
 
 ```dbgcmd
     0:001> !rpcexts.getendpointinfo 1120
@@ -66,7 +66,7 @@ The information displayed here will allow you to trace the call.
     0278 0000.0001 01            TCP 1120
 ```
 
-5. From the preceding information, you can see that process 0x278 contains this endpoint. You can determine if this process knows anything about this call by using the [**!rpcexts.getcallinfo**](-rpcexts-getcallinfo.md) extension. This extension needs four parameters: *CallID*, *IfStart*, and *ProcNum* (which were found in step 3), and the *ProcessID* of 0x278:
+5. From the preceding information, you can see that process 0x278 contains this endpoint. You can determine if this process knows anything about this call by using the [**!rpcexts.getcallinfo**](../debuggercmds/-rpcexts-getcallinfo.md) extension. This extension needs four parameters: *CallID*, *IfStart*, and *ProcNum* (which were found in step 3), and the *ProcessID* of 0x278:
 
 ```dbgcmd
     0:001> !rpcexts.getcallinfo 1 19bb5061 0 278
@@ -76,7 +76,7 @@ The information displayed here will allow you to trace the call.
     0278 0000.0004 02 000 19bb5061 0000.0002 00000001 00000001 00072c09 0000.0003
 ```
 
-6. The information in step 5 is useful, but somewhat abbreviated. The cell ID is given in the second column as 0000.0004. If you pass the process ID and this cell number to the [**!rpcexts.getdbgcell**](-rpcexts-getdbgcell.md) extension, you will see a more readable display of this cell:
+6. The information in step 5 is useful, but somewhat abbreviated. The cell ID is given in the second column as 0000.0004. If you pass the process ID and this cell number to the [**!rpcexts.getdbgcell**](../debuggercmds/-rpcexts-getdbgcell.md) extension, you will see a more readable display of this cell:
 
 ```dbgcmd
     0:001> !rpcexts.getdbgcell 278 0.4
@@ -92,7 +92,7 @@ The information displayed here will allow you to trace the call.
     Owning connection identifier: 0x0.3
 ```
 
-This shows that the call is in state "dispatched", which means is has left the RPC Run-Time. The last update time is 470.25. You can learn the current time by using the [**!rpcexts.rpctime**](-rpcexts-rpctime.md) extension:
+This shows that the call is in state "dispatched", which means is has left the RPC Run-Time. The last update time is 470.25. You can learn the current time by using the [**!rpcexts.rpctime**](../debuggercmds/-rpcexts-rpctime.md) extension:
 
 ```dbgcmd
     0:001> !rpcexts.rpctime

@@ -10,7 +10,7 @@ ms.date: 10/24/2022
 
 This topic describes how to write a [Universal Windows driver](/windows-hardware/drivers) using Kernel-Mode Driver Framework (KMDF). You'll start with a Microsoft Visual Studio template and then deploy and install your driver on a separate computer.
 
-To get started, be sure you have the latest versions of [Microsoft Visual Studio](../download-the-wdk.md#download-and-install-the-windows-11-version-22h2-wdk) and the [Windows Driver Kit (WDK)](../download-the-wdk.md) installed.
+Before you proceed, you'll need to follow the installation steps listed in [Download the Windows Driver Kit (WDK)](../download-the-wdk.md).
 
 [Debugging Tools for Windows](../debugger/index.md) is included when you install the WDK.
 
@@ -144,9 +144,9 @@ Now that you have installed your KMDF driver on the target computer, you'll atta
 1. At this point, you can experiment with the debugger by entering commands at the **kd&gt;** prompt. For example, you could try these commands:
 
     - [lm](./device-nodes-and-device-stacks.md)
-    - [.sympath](../debugger/-sympath--set-symbol-path-.md)
-    - [.reload](../debugger/-reload--reload-module-.md)
-    - [x KmdfDriver!\*](../debugger/x--examine-symbols-.md)
+    - [.sympath](../debuggercmds/-sympath--set-symbol-path-.md)
+    - [.reload](../debuggercmds/-reload--reload-module-.md)
+    - [x KmdfDriver!\*](../debuggercmds/x--examine-symbols-.md)
 
 1. To let the target computer run again, choose **Go** from the **Debug** menu or press "g," then press "enter."
 

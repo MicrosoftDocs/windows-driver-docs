@@ -68,7 +68,7 @@ The IRQL\_UNEXPECTED\_VALUE bug check has a value of 0x000000C8. This indicates 
 
 This error is usually caused by a device driver or another lower-level program that changed the IRQL for some period and did not restore the original IRQL at the end of that period. For example, the routine may have acquired a spin lock and failed to release it.
 
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be very helpful in determining the root cause.
+The [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be very helpful in determining the root cause.
 
 ## See also
 

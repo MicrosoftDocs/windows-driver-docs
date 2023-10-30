@@ -81,7 +81,7 @@ An attempt to access an invalid stack occurred. As kernel stack is limited in si
 
 Using a full kernel dump or an attached debugger, the following commands may be useful to gather information and track down the code that is incorrectly accessing memory.
 
-First use the [!analyze](-analyze.md) command to gather information, in particular the bug check parameters. Also examine the faulting source line and module name, if available.
+First use the [!analyze](../debuggercmds/-analyze.md) command to gather information, in particular the bug check parameters. Also examine the faulting source line and module name, if available.
 
 ```dbgcmd
 Arguments:
@@ -91,7 +91,7 @@ Arg3: fffff607893436c4
 Arg4: fffff60789343ea8
 ```
 
-Use the provided [.trap](-trap.md) command link in the !analyze output to set the context to the trap frame.
+Use the provided [.trap](../debuggercmds/-trap.md) command link in the !analyze output to set the context to the trap frame.
 
 ```dbgcmd
 TRAP_FRAME:  fffff60789343f50 -- (.trap 0xfffff60789343f50)
@@ -105,7 +105,7 @@ r11=fffff607893440f8 r12=0000000000000000 r13=0000000000000000
 r14=0000000000000000 r15=0000000000000000
 ```
 
-Use the [!thread](-thread.md) command to gather information on what is running. In this example it looks like a video scheduler worker thread is running. 
+Use the [!thread](../debuggercmds/-thread.md) command to gather information on what is running. In this example it looks like a video scheduler worker thread is running. 
 
 ```dbgcmd
 2: kd> !thread
@@ -125,7 +125,7 @@ Priority 16 BasePriority 16 PriorityDecrement 0 IoPriority 2 PagePriority 5
 ...
 ```
 
-Then use [kb (Display Stack Backtrace)](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) with the f option to display the stack and the memory usage to see if there is a large memory user. 
+Then use [kb (Display Stack Backtrace)](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) with the f option to display the stack and the memory usage to see if there is a large memory user. 
 
 ```dbgcmd
 2: kd> kf
@@ -137,7 +137,7 @@ Then use [kb (Display Stack Backtrace)](k--kb--kc--kd--kp--kp--kv--display-stack
 ...
 ```
 
-If a specific part of the code looks suspicious, use the [u, ub, uu (Unassemble)](u--unassemble-.md) command to examine the associated assemble language code.
+If a specific part of the code looks suspicious, use the [u, ub, uu (Unassemble)](../debuggercmds/u--unassemble-.md) command to examine the associated assemble language code.
 
 ```dbgcmd
 2: kd> u fffff607`893442c8 l10
@@ -159,7 +159,7 @@ fffff607`893442e8 7527            jne     fffff607`89344311
 fffff607`893442ea 6e              outs    dx,byte ptr [rsi]
 ```
 
-Use the [.cxr (Display Context Record)](-cxr.md) command to display the context record, using the parameter 3 value provided by !analyze.
+Use the [.cxr (Display Context Record)](../debuggercmds/-cxr.md) command to display the context record, using the parameter 3 value provided by !analyze.
 
 ```dbgcmd
 .cxr fffff607893436c4
@@ -167,7 +167,7 @@ Use the [.cxr (Display Context Record)](-cxr.md) command to display the context 
 ```
 
 
-Use the [!vm](-vm.md) command to examine memory usage, for example of to see how much of the Kernel Stacks memory is in use.
+Use the [!vm](../debuggercmds/-vm.md) command to examine memory usage, for example of to see how much of the Kernel Stacks memory is in use.
 
 ```dbgcmd
 0: kd> !vm
@@ -181,7 +181,7 @@ ResAvail Pages:           1279680 (    5118720 Kb)
 Kernel Stacks:              13686 (      54744 Kb)
 ```
 
-Use the [!stacks](-stacks.md) command, with the 2 parameter to view  information about stacks. This command may take some time to run. Examine the output for repeated patterns of blocked execution that may point towards and area for further investigation.
+Use the [!stacks](../debuggercmds/-stacks.md) command, with the 2 parameter to view  information about stacks. This command may take some time to run. Examine the output for repeated patterns of blocked execution that may point towards and area for further investigation.
 
 ## See Also
 

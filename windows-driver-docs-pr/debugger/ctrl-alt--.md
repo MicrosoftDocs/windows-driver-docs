@@ -57,7 +57,7 @@ CTRL+ALT+\
 
 This is equivalent to launching a new CDB through the [**remote.exe**](the-remote-exe-utility.md) utility, and using it to debug the debugger that you are already running.
 
-**CTRL+ALT+\\** is similar to the [**.dbgdbg (Debug Current Debugger)**](-dbgdbg--debug-current-debugger-.md) command, however **CTRL+ALT+\\** has the advantage that it can be used when no debugger command line is available.
+**CTRL+ALT+\\** is similar to the [**.dbgdbg (Debug Current Debugger)**](../debuggercmds/-dbgdbg--debug-current-debugger-.md) command, however **CTRL+ALT+\\** has the advantage that it can be used when no debugger command line is available.
 
  
 

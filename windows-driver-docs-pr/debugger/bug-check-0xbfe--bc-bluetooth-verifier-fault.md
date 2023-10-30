@@ -97,7 +97,7 @@ The BC\_BLUETOOTH\_VERIFIER\_FAULT bug check has a value of 0x00000BFE. This ind
 
 ## Resolution
 
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 Parameter 1 describes the type of violation. Look at the call stack to determine the misbehaving driver.
 
 

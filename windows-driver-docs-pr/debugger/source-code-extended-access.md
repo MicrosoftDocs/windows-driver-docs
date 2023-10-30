@@ -8,7 +8,7 @@ ms.date: 04/27/2021
 
 # Source Code Extended Access
 
-Starting WinDbg version 1.2104, the source path command ([.srcpath, .lsrcpath (Set Source Path)](-srcpath---lsrcpath--set-source-path-.md)) supports file retrieval from [DebugInfoD servers](https://sourceware.org/elfutils/Debuginfod.html) through the `DebugInfoD*` tag.
+Starting WinDbg version 1.2104, the source path command ([.srcpath, .lsrcpath (Set Source Path)](../debuggercmds/-srcpath---lsrcpath--set-source-path-.md)) supports file retrieval from [DebugInfoD servers](https://sourceware.org/elfutils/Debuginfod.html) through the `DebugInfoD*` tag.
 
 The `DebugInfoD*` tag can point to one or more DebugInfoD servers with each server URL formatted as `https://domain.com` and separated by `*`. The servers will be searched in the same order as listed in the source path and the files will be retrieved from the first matching URL.
 
@@ -43,7 +43,7 @@ The `srv*` tag supports automatice file retrieval using Source Link 1.0 or Sourc
 
 ## Resources
 
-[.srcpath, .lsrcpath (Set Source Path)](-srcpath---lsrcpath--set-source-path-.md)
+[.srcpath, .lsrcpath (Set Source Path)](../debuggercmds/-srcpath---lsrcpath--set-source-path-.md)
 
 [Source Path](source-path.md)
 

@@ -31,7 +31,7 @@ To help you troubleshoot problems running WDTF-based test, you can use a debugge
     ·         
     ```
 
-3.  Run the [**!process**](../debugger/-process.md) command to identify the threads running under Te.exe.
+3.  Run the [**!process**](../debuggercmds/-process.md) command to identify the threads running under Te.exe.
 
     ``` syntax
     !process fffffa80093c6340
@@ -46,11 +46,11 @@ To help you troubleshoot problems running WDTF-based test, you can use a debugge
 
 You can diagnose problems with these commands.
 
-[**!powertriage**](../debugger/-powertriage.md) (provides information about system and device power related components)
-[**!devnode**](../debugger/-devnode.md) (to display information about the PnP tree)
-[**!process**](../debugger/-process.md) (to examine processes to locate associated threads)
-[**!thread**](../debugger/-thread.md) (to view information about threads)
-[**!wdfkd.wdfdevice**](../debugger/-wdfkd-wdfdevice.md) (for WDF driver information)
+[**!powertriage**](../debuggercmds/-powertriage.md) (provides information about system and device power related components)
+[**!devnode**](../debuggercmds/-devnode.md) (to display information about the PnP tree)
+[**!process**](../debuggercmds/-process.md) (to examine processes to locate associated threads)
+[**!thread**](../debuggercmds/-thread.md) (to view information about threads)
+[**!wdfkd.wdfdevice**](../debuggercmds/-wdfkd-wdfdevice.md) (for WDF driver information)
 After confirming that there are active PnP or power management threads that are stuck (examine TickCount for this), follow up with the right component owners. (You can locate the component owners from looking at the stacks of the stuck threads).
 
  

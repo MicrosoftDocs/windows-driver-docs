@@ -13,7 +13,7 @@ If this occurs, the RPC server will not respond to the outside world. RPC calls 
 
 A similar problem can result if a faulty driver prevents IRPs from completing and reaching the RPC server.
 
-If you suspect that one of these problems may be occurring, use DbgRpc with the **-t** switch (or use the [**!rpcexts.getthreadinfo**](-rpcexts-getthreadinfo.md) extension). The process ID should be used as a parameter. In the following example, assume the process ID is 0xC4:
+If you suspect that one of these problems may be occurring, use DbgRpc with the **-t** switch (or use the [**!rpcexts.getthreadinfo**](../debuggercmds/-rpcexts-getthreadinfo.md) extension). The process ID should be used as a parameter. In the following example, assume the process ID is 0xC4:
 
 ```dbgcmd
 D:\wmsg>dbgrpc -t -P c4

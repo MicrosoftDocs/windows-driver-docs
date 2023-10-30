@@ -701,15 +701,15 @@ Consider the development of custom domain-specific security tests. To develop ad
 
 ### Security related debugger commands
 
-The !acl extension formats and displays the contents of an access control list (ACL). For more information, see [Determining the ACL of an Object](../debugger/determining-the-acl-of-an-object.md) and [**!acl**](../debugger/-acl.md).
+The !acl extension formats and displays the contents of an access control list (ACL). For more information, see [Determining the ACL of an Object](../debugger/determining-the-acl-of-an-object.md) and [**!acl**](../debuggercmds/-acl.md).
 
-The !token extension displays a formatted view of a security token object. For more information, see [**!token**](../debugger/-token.md).
+The !token extension displays a formatted view of a security token object. For more information, see [**!token**](../debuggercmds/-token.md).
 
-The !tokenfields extension displays the names and offsets of the fields within the access token object (the TOKEN structure). For more information, see [**!tokenfields**](../debugger/-tokenfields.md).
+The !tokenfields extension displays the names and offsets of the fields within the access token object (the TOKEN structure). For more information, see [**!tokenfields**](../debuggercmds/-tokenfields.md).
 
-The !sid extension displays the security identifier (SID) at the specified address. For more information, see [**!sid**](../debugger/-sid.md).
+The !sid extension displays the security identifier (SID) at the specified address. For more information, see [**!sid**](../debuggercmds/-sid.md).
 
-The !sd extension displays the security descriptor at the specified address. For more information, see [**!sd**](../debugger/-sd.md).
+The !sd extension displays the security descriptor at the specified address. For more information, see [**!sd**](../debuggercmds/-sd.md).
 
 ## Microsoft Vulnerable and Malicious Driver Reporting Center
 

@@ -239,7 +239,7 @@ Some debug commands display text using Debugger Markup Language (DML) that you c
 
    ![Screenshot shows the debugger help application showing help for the .prefer\-dml command.](images/debuglab-image-prefer-dml-help.png)
 
-4. To display detailed version information on the target system, enter the [vertarget (Show Target Computer Version)](vertarget--show-target-computer-version-.md) command in the WinDbg window:
+4. To display detailed version information on the target system, enter the [vertarget (Show Target Computer Version)](../debuggercmds/vertarget--show-target-computer-version-.md) command in the WinDbg window:
 
    ```dbgcmd
    0: kd> vertarget
@@ -252,7 +252,7 @@ Some debug commands display text using Debugger Markup Language (DML) that you c
    System Uptime: 0 days 01:31:58.931
    ```
 
-5. To verify that you're working with the correct kernel-mode process, enter the [lm (List Loaded Modules)](lm--list-loaded-modules-.md) command in the WinDbg window to display the loaded modules:
+5. To verify that you're working with the correct kernel-mode process, enter the [lm (List Loaded Modules)](../debuggercmds/lm--list-loaded-modules-.md) command in the WinDbg window to display the loaded modules:
 
    ```dbgcmd
    0: Kd> lm
@@ -512,7 +512,7 @@ set ENABLE_OPTIMIZER=0
    ...  
    ```
 
-   For more information, see [lm](lm--list-loaded-modules-.md).
+   For more information, see [lm](../debuggercmds/lm--list-loaded-modules-.md).
 
 2. Because this lab set `prefer_dml` earlier, some elements of the output are hot links that you can select. Select the **Browse all global symbols** link in the debug output to display information about items symbols that start with the letter "a".
 
@@ -531,7 +531,7 @@ set ENABLE_OPTIMIZER=0
    ...
    ```
 
-   For more information, see [x (Examine Symbols)](x--examine-symbols-.md).
+   For more information, see [x (Examine Symbols)](../debuggercmds/x--examine-symbols-.md).
 
 4. The `!lmi` extension displays detailed information about a module. Enter `!lmi echo`. Your output should be similar to the text shown in this example:
 
@@ -589,7 +589,7 @@ In this section, display information about the echo sample device driver and whe
 
 Information about the device driver in the Plug and Play device tree can be useful for troubleshooting. For example, if a device driver isn't resident in the device tree, there might an issue with the installation of the device driver.
 
-For more information about the device node debug extension, see [!devnode](-devnode.md).
+For more information about the device node debug extension, see [!devnode](../debuggercmds/-devnode.md).
 
 1. On the host system, to see all the device nodes in the Plug and Play device tree, enter the `!devnode 0 1` command.
 
@@ -874,7 +874,7 @@ In this section, display information about the processes and threads running in 
 
 ### Processes
 
-You can display or set process information by using the [!process](-process.md) debugger extension. Set a breakpoint to examine the process that's used when a sound is played.
+You can display or set process information by using the [!process](../debuggercmds/-process.md) debugger extension. Set a breakpoint to examine the process that's used when a sound is played.
 
 1. On the host system, enter the `dv` command to examine the locale variables associated with the `EchoEvtIo` routine:
 
@@ -952,7 +952,7 @@ You can display or set process information by using the [!process](-process.md) 
            THREAD ffffe00080e32080  Cid 03c4.0ec0  Teb: 00007ff7cfece000 Win32Thread: 0000000000000000 RUNNING on processor 1
    ```
 
-   The output shows that the process is associated with the *echoapp.exe* thread, which was running when your breakpoint on the driver write event was hit. For more information, see [!process](-process.md).
+   The output shows that the process is associated with the *echoapp.exe* thread, which was running when your breakpoint on the driver write event was hit. For more information, see [!process](../debuggercmds/-process.md).
 
 9. Use the `!process 0 0` to display summary information for all processes. In the output, use Ctrl+F to locate the same process address for the process associated with the *echoapp.exe* image. In the example, the process address is `ffffe0007e6a7780`.
 
@@ -1001,7 +1001,7 @@ You can display or set process information by using the [!process](-process.md) 
 
 ### Threads
 
-The commands to view and set threads are similar to the commands for processes. Use the [!thread](-thread.md) command to view threads. Use [.thread](-thread--set-register-context-.md) to set the current threads.
+The commands to view and set threads are similar to the commands for processes. Use the [!thread](../debuggercmds/-thread.md) command to view threads. Use [.thread](../debuggercmds/-thread--set-register-context-.md) to set the current threads.
 
 1. On the host system, enter `g` into the debugger to restart code execution on the target system.
 
@@ -1015,7 +1015,7 @@ The commands to view and set threads are similar to the commands for processes. 
     aade54c0 55              push    ebp
     ```
 
-4. To view the threads that are running, enter [!thread](-thread.md). Information similar to the following example should be displayed:
+4. To view the threads that are running, enter [!thread](../debuggercmds/-thread.md). Information similar to the following example should be displayed:
 
     ```dbgcmd
     0: kd>  !thread
@@ -1232,7 +1232,7 @@ In this section, display the interrupt request level (IRQL) and the contents of 
 
 The IRQL is used to manage the priority of interrupt servicing. Each processor has an IRQL setting that threads can raise or lower. Interrupts that occur at or below the processor's IRQL setting are masked and don't interfere with the current operation. Interrupts that occur above the processor's IRQL setting take precedence over the current operation.
 
-On the host system, the [!irql](-irql.md) extension displays the IRQL on the current processor of the target computer before the debugger break occurred. When the target computer breaks into the debugger, the IRQL changes, but the IRQL that was effective just before the debugger break is saved and is displayed by `!irql`.
+On the host system, the [!irql](../debuggercmds/-irql.md) extension displays the IRQL on the current processor of the target computer before the debugger break occurred. When the target computer breaks into the debugger, the IRQL changes, but the IRQL that was effective just before the debugger break is saved and is displayed by `!irql`.
 
 ```dbgcmd
 0: kd> !irql
@@ -1241,7 +1241,7 @@ Debugger saved IRQL for processor 0x0 -- 2 (DISPATCH_LEVEL)
 
 ### View the registers
 
-On the host system, display the contents of the registers for the current thread on the current processor by using the [r (Registers)](r--registers-.md) command.
+On the host system, display the contents of the registers for the current thread on the current processor by using the [r (Registers)](../debuggercmds/r--registers-.md) command.
 
 ```dbgcmd
 0: kd> r
@@ -1257,7 +1257,7 @@ nt!DbgBreakPointWithStatus:
 fffff803`bb757020 cc              int     3
 ```
 
-Alternatively, you can display the contents of the registers by selecting **View** > **Registers**. For more information, see [r (Registers)](r--registers-.md).
+Alternatively, you can display the contents of the registers by selecting **View** > **Registers**. For more information, see [r (Registers)](../debuggercmds/r--registers-.md).
 
 Viewing the contents of the registers can be helpful when stepping through assembly language code execution and in other scenarios. For more information about assembly language disassembly, see [Annotated x86 Disassembly](annotated-x86-disassembly.md) and [Annotated x64 disassembly](annotated-x64-disassembly.md).
 

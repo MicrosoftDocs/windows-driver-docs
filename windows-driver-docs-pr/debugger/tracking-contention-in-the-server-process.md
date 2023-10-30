@@ -15,7 +15,7 @@ In order to service incoming requests, RPC will maintain a set of worker threads
 
 If the number of worker threads is above 50, you may have excessive contention in the server process. Common causes of this are icriminate use of the heap, memory pressure, or serializing most activities in a server through a single critical section.
 
-To see the number of threads in a given server process, use the [**!rpcexts.getthreadinfo**](-rpcexts-getthreadinfo.md) extension, or use DbgRpc with the **-t** switch. Supply the process ID (in the following example, 0xC4):
+To see the number of threads in a given server process, use the [**!rpcexts.getthreadinfo**](../debuggercmds/-rpcexts-getthreadinfo.md) extension, or use DbgRpc with the **-t** switch. Supply the process ID (in the following example, 0xC4):
 
 ```console
 D:\wmsg>dbgrpc -t -P c4

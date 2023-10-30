@@ -17,15 +17,15 @@ For UMDF version 1, you'll use extension commands implemented in wudfext.dll. St
 
 To determine why UMDF indicates outstanding files, use the following steps:
 
-1.  Use [**!wudfext.umdevstack**](../debugger/-wudfext-umdevstack.md) (UMDF 1) or [**!wdfkd.wdfumdevstack**](../debugger/-wdfkd-wdfumdevstack.md) (UMDF 2) to dump the device stack. The dump includes outstanding UMDF intra-stack files (that is, file objects that a driver in the stack created as opposed to file objects that were created by an application or by a driver in another stack).
+1.  Use [**!wudfext.umdevstack**](../debuggercmds/-wudfext-umdevstack.md) (UMDF 1) or [**!wdfkd.wdfumdevstack**](../debuggercmds/-wdfkd-wdfumdevstack.md) (UMDF 2) to dump the device stack. The dump includes outstanding UMDF intra-stack files (that is, file objects that a driver in the stack created as opposed to file objects that were created by an application or by a driver in another stack).
 
-2.  For each intra-stack file, run [**!wudfext.umfile**](../debugger/-wudfext-umfile.md) (UMDF 1) or [**!wdfkd.wdfumfile**](../debugger/-wdfkd-wdfumfile.md) (UMDF 2) to obtain information about the file.
+2.  For each intra-stack file, run [**!wudfext.umfile**](../debuggercmds/-wudfext-umfile.md) (UMDF 1) or [**!wdfkd.wdfumfile**](../debuggercmds/-wdfkd-wdfumfile.md) (UMDF 2) to obtain information about the file.
 
     The output includes the list of IRPs that are pending.
 
-3.  Determine why each IRP is outstanding by using [**!wudfext.umirp**](../debugger/-wudfext-umirp.md) (UMDF 1) or [**!wdfkd.wdfumirp**](../debugger/-wdfkd-wdfumirp.md) (UMDF 2) to obtain information about the IRP.
+3.  Determine why each IRP is outstanding by using [**!wudfext.umirp**](../debuggercmds/-wudfext-umirp.md) (UMDF 1) or [**!wdfkd.wdfumirp**](../debuggercmds/-wdfkd-wdfumirp.md) (UMDF 2) to obtain information about the IRP.
 
-    From the output of each [**!wudfext.umirp**](../debugger/-wudfext-umirp.md) or [**!wdfkd.wdfumirp**](../debugger/-wdfkd-wdfumirp.md):
+    From the output of each [**!wudfext.umirp**](../debuggercmds/-wudfext-umirp.md) or [**!wdfkd.wdfumirp**](../debuggercmds/-wdfkd-wdfumirp.md):
 
     -   Determine if the IRP completed.
     -   Determine if a driver-created request was not deleted either explicitly by the driver or implicitly by the object tree.

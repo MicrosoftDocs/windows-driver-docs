@@ -17,7 +17,7 @@ You can use either KD or WinDbg as the kernel debugger. Note that many of the fa
 
 You can use either CDB or NTSD as the user-mode debugger. NTSD is the better choice, because it requires minimal resources from the processor and operating system of the computer whose application is being debugged. In fact, when NTSD is started under the control of the kernel debugger, no NTSD window is created. With NTSD, you can perform user-mode debugging through the serial port early in the boot phase and late into shutdown.
 
-**Note**  The [**.shell**](-shell--command-shell-.md) command is not supported when the output of a user-mode debugger is redirected to the kernel debugger.
+**Note**  The [**.shell**](../debuggercmds/-shell--command-shell-.md) command is not supported when the output of a user-mode debugger is redirected to the kernel debugger.
 
  
 

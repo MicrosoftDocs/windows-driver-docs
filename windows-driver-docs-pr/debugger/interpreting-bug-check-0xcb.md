@@ -18,7 +18,7 @@ BugCheck CB, {f90c6ae0, f9949215, 81861788, 26}
 Probably caused by : ks.sys ( ks!KsProbeStreamIrp+333 )
 ```
 
-As suggested, use [**!analyze -v**](-analyze.md) to get more detailed information.
+As suggested, use [**!analyze -v**](../debuggercmds/-analyze.md) to get more detailed information.
 
 ```dbgcmd
 kd> !analyze -v
@@ -30,7 +30,7 @@ Arguments:
 Arg3: 81861788, A pointer to the MDL containing the locked pages.
 ```
 
-Now, use the [**!search**](-search.md) extension to find the virtual addresses that are associated with the MDL pointer.
+Now, use the [**!search**](../debuggercmds/-search.md) extension to find the virtual addresses that are associated with the MDL pointer.
 
 ```dbgcmd
 kd> !search 81861788
@@ -44,7 +44,7 @@ Pfn      Offset   Hit      Va       Pte
 00001732 000009B4 81861788 817329B4 C0205CC8
 ```
 
-For each virtual address (VA) found, look for an IRP signature. Do this by using the [**dd**](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) command with the VA minus one DWORD.
+For each virtual address (VA) found, look for an IRP signature. Do this by using the [**dd**](../debuggercmds/d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) command with the VA minus one DWORD.
 
 ```dbgcmd
 kd> dd 808A7B0C-4 l4
@@ -58,7 +58,7 @@ kd> dd 817329B4-4 l4
 kd> $ Matches signature
 ```
 
-After a VA with an IRP signature has been found, use the [**!irp**](-irp.md) extension to find out what driver is pending on this IRP.
+After a VA with an IRP signature has been found, use the [**!irp**](../debuggercmds/-irp.md) extension to find out what driver is pending on this IRP.
 
 ```dbgcmd
 kd> !irp 817329b0 7

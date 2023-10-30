@@ -81,7 +81,7 @@ See [**Bug Check 0xC4**](../debugger/bug-check-0xc4--driver-verifier-detected-vi
 
 Once Deadlock Detection finds a violation, the **!deadlock** kernel debugger extension can be used to investigate exactly what has occurred. It can display the lock hierarchy topology as well as the call stacks for each thread at the time the locks were originally acquired.
 
-There is a detailed example of the [**!deadlock**](../debugger/-deadlock.md) extension, as well as general information about debugger extensions, in the documentation in the Debugging Tools for Windows package. See [Windows Debugging](../debugger/index.md) for details.
+There is a detailed example of the [**!deadlock**](../debuggercmds/-deadlock.md) extension, as well as general information about debugger extensions, in the documentation in the Debugging Tools for Windows package. See [Windows Debugging](../debugger/index.md) for details.
 
 ### Activating This Option
 

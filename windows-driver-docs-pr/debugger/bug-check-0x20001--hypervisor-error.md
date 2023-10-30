@@ -31,4 +31,4 @@ The HYPERVISOR\_ERROR bug check has a value of 0x00020001. This indicates that t
 
 ## Resolution
 
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.

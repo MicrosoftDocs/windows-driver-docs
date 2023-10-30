@@ -1,6 +1,6 @@
 ---
 title: TList
-description: TList (Task List Viewer), Tlist.exe, displays the processes running on the local computer along with useful information about each process.
+description: "TList (Task List Viewer), Tlist.exe, displays the processes running on the local computer along with useful information about each process."
 keywords: TList, Task List Viewer, Task List Viewer, See TList
 ms.date: 05/23/2017
 ---

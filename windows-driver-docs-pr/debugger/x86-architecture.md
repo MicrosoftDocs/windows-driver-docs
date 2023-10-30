@@ -143,9 +143,9 @@ All integer registers are 32 bit. However, many of them have 16-bit or 8-bit sub
 
 Operating on a subregister affects only the subregister and none of the parts outside the subregister. For example, storing to the **ax** register leaves the high 16 bits of the **eax** register unchanged.
 
-When using the [**? (Evaluate Expression)**](---evaluate-expression-.md) command, registers should be prefixed with an "at" sign ( **@** ). For example, you should use <strong>? @ax</strong> rather than **? ax**. This ensures that the debugger recognizes **ax** as a register rather than a symbol.
+When using the [**? (Evaluate Expression)**](../debuggercmds/---evaluate-expression-.md) command, registers should be prefixed with an "at" sign ( **@** ). For example, you should use <strong>? @ax</strong> rather than **? ax**. This ensures that the debugger recognizes **ax** as a register rather than a symbol.
 
-However, the (@) is not required in the [**r (Registers)**](r--registers-.md) command. For instance, **r ax=5** will always be interpreted correctly.
+However, the (@) is not required in the [**r (Registers)**](../debuggercmds/r--registers-.md) command. For instance, **r ax=5** will always be interpreted correctly.
 
 Two other registers are important for the processor's current state.
 
@@ -233,7 +233,7 @@ The following table lists the x86 flags:
 | **tf**    | Trap Flag            |       |             |If **tf** equals 1, the processor will raise a STATUS\_SINGLE\_STEP exception after the execution of one instruction. This flag is used by a debugger to implement single-step tracing. It should not be used by other applications. |
 | **iopl**  | I/O Privilege Level  |       |             |I/O Privilege Level This is a two-bit integer, with values between zero and 3. It is used by the operating system to control access to hardware. It should not be used by applications. |
  
-When registers are displayed as a result of some command in the Debugger Command window, it is the *flag status* that is displayed. However, if you want to change a flag using the [**r (Registers)**](r--registers-.md) command, you should refer to it by the *flag code*.
+When registers are displayed as a result of some command in the Debugger Command window, it is the *flag status* that is displayed. However, if you want to change a flag using the [**r (Registers)**](../debuggercmds/r--registers-.md) command, you should refer to it by the *flag code*.
 
 In the Registers window of WinDbg, the flag code is used to view or alter flags. The flag status is not supported.
 
