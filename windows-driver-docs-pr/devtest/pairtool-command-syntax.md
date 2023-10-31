@@ -96,7 +96,9 @@ Flags:
 
 Enumerates protocols supported in the OS this tool is running on.
 
-  /enum-protocols [/format <txt | xml | csv>] [/output-file <filename>]
+```syntax
+/enum-protocols [/format <txt | xml | csv>] [/output-file <filename>]
+```
 
 Flags:
 
