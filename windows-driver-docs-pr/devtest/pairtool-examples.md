@@ -1,0 +1,96 @@
+---
+title: PairTool examples
+description: This article shows examples of how to use the PairTool utility.
+ms.date: 10/31/2023
+prerelease: true
+---
+
+# PairTool examples
+
+This article shows examples of how to use the PairTool utility.
+
+### /enum-protocols
+
+Discover what protocols are installed and supported on this version on Windows. This can be useful for scoping down discovering endpoints only over specific protocols instead of all protocols. Aside from it potentially reducing a lot of extra results and making the output noisy, it can also be useful for performance. Discovery, particularly over wireless protocols, can be expensive in terms of power consumption and QoS, so should be avoided when not needed. Furthermore, protocols like Bluetooth and WiFiDirect sometimes share the same radio hardware which degrades the QoS of discovery when running at the same time to the point where devices can’t be discovered reliably, so it is typically better to not use them both at the same time.
+
+pairtool /enum-protocols
+
+### /enum-endpoints
+
+Discover devices over all protocols.
+
+```cmd
+pairtool /enum-endpoints
+```
+
+Discover only Bluetooth devices.
+
+```cmd
+pairtool /enum-endpoints /protocol Bluetooth,BluetoothLE
+```
+
+Discover what devices are paired without active “on-the-wire” discovery over the protocol. Since this does not activate discovery over the protocol, this is the lowest cost discovery method.
+
+```cmd
+pairtool /enum-endpoints /persisted
+```
+
+Save all discoverable Bluetooth devices to an XML file without updates.
+
+```cmd
+pairtool /enum-endpoints /protocol Bluetooth,BluetoothLE /sync /format XML /output-file out.xml
+```
+
+### /associate
+
+Associate an endpoint. For associate to work, typically and endpoint would have “Associable: true” when enumerated. If no other parameters are passed, then pairing ceremonies that require input will collect the input, like a PIN, from the console.
+
+```cmd
+pairtool /associate BluetoothLE#BluetoothLEdc:46:28:6a:16:01-d8:02:ba:2b:9e:2c
+```
+
+Automatically associate an endpoint without input, using just-works or similar ceremony. If the device supports one of these ceremonies, it will be selected, and pairing will complete without user interaction.
+
+```cmd
+pairtool /associate BluetoothLE#BluetoothLEdc:46:28:6a:16:01-d8:02:ba:2b:9e:2c /just-works
+```
+
+Associate more an endpoint as a set. For Bluetooth- style set pairing, the other endpoints of the set are  discovered at the end of the pairing ceremony. This tool will automatically start pairing the other set members in sequence.
+
+```cmd
+pairtool /associate BluetoothLE#BluetoothLEdc:46:28:6a:16:01-d8:02:ba:2b:9e:2c /set
+```
+
+Associate more than one endpoint as a set. This method also synchronizes device creation, as needed. Supplied set members are paired sequentially. If more set members are discovered as a result of pairing the specified endpoints, they are also paired sequentially.
+
+```cmd
+pairtool /associate DAFWSDProvider#urn:uuid:7efbca06-1e97-4ada-b85a-9c6ca59497fc /set IPP#7efbca06-1e97-4ada-b85a-9c6ca59497fc
+```
+
+Associate an endpoint just for the current user.
+
+```cmd
+pairtool /associate MCP#ab589c5e-d5c0-430f-a3f0-7295b421021a /per-user
+```
+
+Associate an endpoint just for a specific user SID.
+
+```cmd
+pairtool /associate MCP#ab589c5e-d5c0-430f-a3f0-7295b421021a /per-user S-1-12-1-5555
+```
+
+### /disassociate
+
+Unpair an endpoint.
+
+```cmd
+pairtool /disassociate BluetoothLE#BluetoothLEdc:46:28:6a:16:01-d8:02:ba:2b:9e:2c
+```
+
+### /challenge
+
+Challenge the liveness of the PnP of a paired endpoint. This is useful if an endpoints PnP device state appears to be online or offline incorrectly.
+
+```cmd
+pairtool /challenge MCP#8317e7db-8bac-40ca-bfa5-467735c06866
+```

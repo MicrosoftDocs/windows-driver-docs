@@ -44,6 +44,14 @@
   - name: "PnPUtil"
 # Auto-expanded node
     items: 
+    - name: "PairTool"
+      href: pairtool.md
+    - name: "PairTool Command Syntax"
+      href: pairtool-command-syntax.md
+    - name: "PairTool Examples"
+      href: pairtool-examples.md
+# Auto-expanded node
+    items: 
     - name: "PnPUtil"
       href: pnputil.md
     - name: "PnPUtil Command Syntax"
