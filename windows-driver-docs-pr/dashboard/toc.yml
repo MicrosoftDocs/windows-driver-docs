@@ -88,7 +88,7 @@
     href: overview-of-microsoft-driver-measure-dictionary.md
   - name: "Driver measure attributes"
     href: measure-attributes.md
-  - name: "Failure reports"
+  - name: "Reports"
     items:
     - name: "Cohort failure report"
       href: IDR-cohort-report.md
@@ -96,6 +96,8 @@
       href: pnp-failure-report.md
     - name: "Reliability failure report"
       href: reliability-failure-report.md
+    - name: "Driver install and health summary report"
+      href: driver-install-health-summary-report.md
   - name: "Systemic measures"
     items:
     - name: "Driver installation measures"
