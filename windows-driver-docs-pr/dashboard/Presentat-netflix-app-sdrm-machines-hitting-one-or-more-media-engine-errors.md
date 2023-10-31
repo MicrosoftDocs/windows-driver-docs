@@ -24,7 +24,7 @@ Examples of media engine errors can be found here: [Errors Online: Error lookup]
 | **Measurement criteria** | Percent of machines |
 | **Minimum population** | 100 machines |
 | **Passing criteria** | <=2% of devices hit a playback error|
-| **Measure ID** | v1. 39664000 (Legacy), v2. 44233428 |
+| **Measure ID** | 44233428 |
 
 ## Calculation
 
