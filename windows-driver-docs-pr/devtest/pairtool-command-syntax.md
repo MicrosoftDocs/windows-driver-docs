@@ -28,13 +28,13 @@ Enumerates device endpoints over the various protocols Windows supports. Example
 
 Flags:
 
-- `/protocol` - Protocol(s) to discover with. More than one protocol may be comma separated. Possible protocols may be enumerated with the /enum-protocols. The protocol ID or class are acceptable inputs here.
+- `/protocol` - Protocol(s) with which to discover. Use commas to separate multiple protocols. Possible protocols are enumerated with the [`/enum-protocols`](#enum-protocols) command. Protocol ID and class values are acceptable inputs.
 
-- `/persisted` - Enumerate endpoints persisted in the OS. This option will not initiate over-the-wire discovery.
+- `/persisted` - Enumerate endpoints persisted in the OS. The `/persisted` option doesn't initiate over-the-wire discovery.
 
-- `/sync` - Hold results until fully enumerated. This is not recommended as it can take a long time to get any results. Many protocols don't support the concept of "fully enumerated," so these protocols use long timeouts are used instead.
+- `/sync` - Hold results until fully enumerated. The `/sync` flag can take a long time to return any results. Many protocols don't support the concept of fully enumerated, so these protocols use long timeouts instead.
 
-- `/instance` - Endpoint instance(s) to discover directly. More than one instance ID may be comma separated. This allows for what some protocols describe as "directed discovery."
+- `/instance` - Endpoint instance(s) to discover directly. Use commas to separate multiple instance ID values. The `instance` flag allows for what some protocols describe as directed discovery.
 
 - `/continuous` - Continue enumerating until Ctrl+C is pressed.
 
@@ -56,11 +56,11 @@ Enumerates device endpoint services over the various protocols Windows supports.
 
 Flags:
 
-- `/protocol` - Protocol(s) to discover with. More than one protocol may be comma separated.
+- `/protocol` - Protocol(s) to discover with. Use commas to separate multiple protocol values.
 
-- `/sync` - Hold results until fully enumerated. This is not recommended as it can take a long time to get any results. Many protocols don't support the fully enumerated concept, so these protocols use long timeouts instead.
+- `/sync` - Hold results until fully enumerated. The `/sync` flag can take a long time to return any results. Many protocols don't support the fully enumerated concept, so these protocols use long timeouts instead.
 
-- `/instance` - Directed discovery of a specific service instance(s). More than one instance ID may be comma separated.
+- `/instance` - Directed discovery of a specific service instance(s). Use commas to separate multiple instance ID values.
 
 - `/continuous` - Continue enumerating until Ctrl+C is pressed.
 
@@ -80,9 +80,9 @@ Enumerates device endpoint containers over the various protocols Windows support
 
 Flags:
 
-- `/protocol` - Protocol(s) to discover with. More than one protocol may be comma separated.
+- `/protocol` - Protocol(s) to discover with. Use commas to separate multiple protocol values.
 
-- `/sync` - Hold results until fully enumerated. This is not recommended as it can take a long time to get any results. Many protocols don't support the fully enumerated concept, so these protocols use long timeouts are used instead.
+- `/sync` - Hold results until fully enumerated. The `/sync` flag can take a long time to return any results. Many protocols don't support the fully enumerated concept, so these protocols use long timeouts are used instead.
 
 - `/instance` - Directed discovery of specific container instances.
 
@@ -112,17 +112,15 @@ Set Pairing
 
 Not all protocols are set-pairing aware.
 
-This tool will chain set associations sequentially as an implementation detail; although, most protocols don't impose this limitation.
+This tool chain sets associations sequentially as an implementation detail. Although most protocols don't impose this limitation.
 
 Some protocols require set member IDs to be provided up front using the `/set [<id2>[,<id3>[,...]]]]` option.
 
-Other protocols, like Bluetooth, can only discover other set IDs after the primary endpoint's association is finalized. These other discovered set endpoints will be associated sequentially.
+Other protocols, like Bluetooth, can only discover other set IDs after the primary endpoint's association is finalized. These other discovered set endpoints are associated sequentially.
 
 Per-user Pairing
 
-Not all protocols are per-user association aware.
-
-For protocols that do, they generally only create PnP state visible to the user performing the pairing.
+Not all protocols are per-user association aware. For protocols that do, they only create PnP state visible to the user performing the pairing.
 
 ```syntax
   /associate <id1> [/set [<id2>[,<id3>[,...]]]] [/per-user [<sid>]]

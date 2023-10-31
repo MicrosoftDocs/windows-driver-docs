@@ -41,7 +41,7 @@
       href: configure-the-machine-for-testing.md
     - name: "Run the Tests"
       href: run-the-tests.md
-  - name: "PnPUtil"
+  - name: "PairTool"
 # Auto-expanded node
     items: 
     - name: "PairTool"
@@ -50,6 +50,7 @@
       href: pairtool-command-syntax.md
     - name: "PairTool Examples"
       href: pairtool-examples.md
+  - name: "PnPUtil"
 # Auto-expanded node
     items: 
     - name: "PnPUtil"
