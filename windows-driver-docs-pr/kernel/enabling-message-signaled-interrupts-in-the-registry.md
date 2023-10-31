@@ -12,7 +12,9 @@ To receive message-signaled interrupts (MSIs), a driver's INF file must enable M
 
 The **MSISupported** entry of **Interrupt Management\\MessageSignaledInterruptProperties** is a REG\_DWORD value that determines whether the device supports MSIs. Set **MSISupported** to 1 to enable MSI support.
 
-You can also use the registry to specify the maximum number of MSIs to allocate for their device. The **MessageNumberLimit** entry of **Interrupt Management\\MessageSignaledInterruptProperties** is a REG\_DWORD value that specifies the maximum number of MSIs to allocate. For PCI 2.2, **MessageNumberLimit** must be 1, 2, 4, 8, or 16. For PCI 3.0, **MessageNumberLimit** can be any number up to 2,048.
+You can also use the registry to specify the maximum number of MSIs to allocate for their device. The **MessageNumberLimit** entry of **Interrupt Management\\MessageSignaledInterruptProperties** is a REG\_DWORD value that specifies the maximum number of MSIs to allocate.
+
+For multi-message MSI (available starting with PCI 2.2), **MessageNumberLimit** must be 1, 2, 4, 8, or 16. For MSI-X devices (available starting with PCI 3.0), **MessageNumberLimit** can be any number up to 2,048.
 
 Use an [**INF AddReg Directive**](../install/inf-addreg-directive.md) in your driver's INF file to set registry keys under the device's hardware key. For more information, see [**INF DDInstall.HW Section**](../install/inf-ddinstall-hw-section.md).
 
