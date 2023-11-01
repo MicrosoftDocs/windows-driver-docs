@@ -88,7 +88,7 @@
     href: overview-of-microsoft-driver-measure-dictionary.md
   - name: "Driver measure attributes"
     href: measure-attributes.md
-  - name: "Failure reports"
+  - name: "Reports"
     items:
     - name: "Cohort failure report"
       href: IDR-cohort-report.md
@@ -96,6 +96,8 @@
       href: pnp-failure-report.md
     - name: "Reliability failure report"
       href: reliability-failure-report.md
+    - name: "Driver install and health summary report"
+      href: driver-install-health-summary-report.md
   - name: "Systemic measures"
     items:
     - name: "Driver installation measures"
@@ -186,74 +188,42 @@
       items:
       - name: "Graphics measures"
         href: graphics-measures.md
-      - name: "Standard and Expanded audience measures"
-        items:
-        - name: "Myriad of machines that had a stop error caused by a discrete graphics driver crash"
-          href: myriad-of-machines-that-had-blue-screen-caused-by-crash-in-graphics-driver-binary-discrete-standard.md
-        - name: "Myriad of machines that had a stop error caused by an integrated GPU driver crash"
-          href: myriad-of-machines-that-had-blue-screen-caused-by-crash-in-graphics-driver-binary-integrated-standard.md
-        - name: "Myriad of machines that had a TDR caused by a graphics driver crash"
-          href: myriad-of-machines-that-had-tdr-caused-by-crash-in-graphics-driver-binary-standard.md
-        - name: "Myriad of machines with integrated GPU that had a TDR caused by a graphics driver crash"
-          href: graphics-tdr-integrated-gpu.md
-        - name: "Myriad of of drivers that were rolled back or re-installed within 2 days of installation"
-          href: myriad-drivers-rolled-back-standard.md
-        - name: "Number of user mode crashes in Microsoft Photos app"
-          href: user-mode-reliability-for-crashes-in-microsoft-photos-app-expanded.md
-        - name: "Number of user mode for crashes in creative applications"
-          href: graphics-drivers-health-user-mode-reliability-for-crashes-in-creative-apps-expanded.md
-        - name: "Number of user mode crashes in top Microsoft apps"
-          href: number-of-user-mode-crashes-in-top-microsoft-apps-normalized-by-usage-in-year-long-scale-expanded.md
-        - name: "User mode crashes in Microsoft Edge Chromium"
-          href: graphics-user-mode-crashes-edge-chromium-standard.md
-        - name: "Number of user mode crashes in Windows components"
-          href: user-mode-reliability-for-crashes-in-windows-components.md
-        - name: "Crashes in communication and collaboration apps"
-          href: graphics-user-mode-crashes-collaboration-standard.md
-        - name: "Number of user mode crashes or TDRs in UWP gaming applications"
-          href: number-user-mode-crashes-in-UWP-gaming-applications.md
-        - name: "Number of user mode crashes or TDRs in Win32 gaming applications"
-          href: number-user-mode-crashes-in-win32-gaming-applications.md
-        - name: "Percent of devices with WinML Runtime Errors"
-          href: pct-devices-winml-runtime-error.md
-        - name: "PresentAT Netflix app SDRM machines hitting one or more media engine errors"
-          href: presentat-netflix-app-sdrm-machines-hitting-one-or-more-media-engine-errors.md
-        - name: "Percent of devices with SWDRM playback that triggered the Catalog reload event"
-          href: pct-devices-with-SWDRM-playback-that-triggered-the-catalog-reload-event.md
-        - name: "Session based SWDRM Driver measure for Video playback on Netflix"
-          href: session-based-SWDRM-driver-measure-for-video-playback-on-netflix.md
-        - name: "Session based HWDRM Driver measure for Video playback on Netflix"
-          href: session-based-HWDRM-driver-measure-for-video-playback-on-netflix.md
-      - name: "Ecosystem audience measures"
-        items:
-        - name: "Myriad of machines that had a stop error caused by a graphics driver crash (ecosystem)"
-          href: myriad-of-machines-that-had-blue-screen-caused-by-crash-in-graphics-driver-binary-discrete-ecosystem.md
-        - name: "Myriad of machines that had a stop error caused by an integrated graphics driver crash (ecosystem)"
-          href: myriad-of-machines-that-had-blue-screen-caused-by-crash-in-graphics-driver-binary-integrated-ecosystem.md
-        - name: "Myriad of machines that had a TDR caused by a graphics driver crash (ecosystem)"
-          href: myriad-of-machines-that-had-tdr-caused-by-crash-in-graphics-driver-binary-ecosystem.md
-        - name: "Myriad of machines with integrated GPU that had a TDR caused by graphics driver crash (ecosystem)"
-          href: graphics-ecosystem-integrated-gpu-with-tdr.md
-        - name: "Myriad of drivers that were rolled back or re-installed within 2 days of installation"
-          href: myriad-drivers-rolled-back-ecosystem.md
-        - name: "User mode crashes in Microsoft Edge Chromium (ecosystem)"
-          href: graphics-user-mode-crashes-edge-chromium-ecosystem.md
-        - name: "Number of user mode crashes in top Microsoft apps"
-          href: number-of-user-mode-crashes-in-top-microsoft-apps-normalized-by-usage-in-year-long-scale.md
-        - name: "Number of user mode crashes in creative apps"
-          href: graphics-drivers-health-user-mode-reliability-for-crashes-in-creative-apps.md
-        - name: "Number of user mode crashes in Microsoft Photos app (ecosystem)"
-          href: user-mode-reliability-for-crashes-in-microsoft-photos-app.md
-        - name: "Number of user mode crashes in Windows components (ecosystem)"
-          href: user-mode-reliability-for-crashes-in-windows-components-ecosystem.md
-        - name: "Crashes in communication and collaboration apps (ecosystem)"
-          href: graphics-user-mode-crashes-collaboration-ecosystem.md
-        - name: "Percent of devices with WinML Runtime Errors (Ecosystem)"
-          href: pct-devices-winml-runtime-error-ecosystem.md
-        - name: "Percent of SWDRM playback failures on Netflix"
-          href: pct-swdrm-playback-failures-on-netflix.md
-        - name: "Ecosystem Netflix HWDRM Quality Comparison"
-          href: ecosystem-netflix-hwdrm-quality-comparison.md
+      - name: "Myriad of machines that had a stop error caused by a discrete graphics driver crash"
+        href: myriad-of-machines-that-had-blue-screen-caused-by-crash-in-graphics-driver-binary-discrete-standard.md
+      - name: "Myriad of machines that had a stop error caused by an integrated GPU driver crash"
+        href: myriad-of-machines-that-had-blue-screen-caused-by-crash-in-graphics-driver-binary-integrated-standard.md
+      - name: "Myriad of machines that had a TDR caused by a graphics driver crash"
+        href: myriad-of-machines-that-had-tdr-caused-by-crash-in-graphics-driver-binary-standard.md
+      - name: "Myriad of machines with integrated GPU that had a TDR caused by a graphics driver crash"
+        href: graphics-tdr-integrated-gpu.md
+      - name: "Myriad of of drivers that were rolled back or re-installed within 2 days of installation"
+        href: myriad-drivers-rolled-back-standard.md
+      - name: "Number of user mode crashes in Microsoft Photos app"
+        href: user-mode-reliability-for-crashes-in-microsoft-photos-app-expanded.md
+      - name: "Number of user mode for crashes in creative applications"
+        href: graphics-drivers-health-user-mode-reliability-for-crashes-in-creative-apps-expanded.md
+      - name: "Number of user mode crashes in top Microsoft apps"
+        href: number-of-user-mode-crashes-in-top-microsoft-apps-normalized-by-usage-in-year-long-scale-expanded.md
+      - name: "User mode crashes in Microsoft Edge Chromium"
+        href: graphics-user-mode-crashes-edge-chromium-standard.md
+      - name: "Number of user mode crashes in Windows components"
+        href: user-mode-reliability-for-crashes-in-windows-components.md
+      - name: "Crashes in communication and collaboration apps"
+        href: graphics-user-mode-crashes-collaboration-standard.md
+      - name: "Number of user mode crashes or TDRs in UWP gaming applications"
+        href: number-user-mode-crashes-in-UWP-gaming-applications.md
+      - name: "Number of user mode crashes or TDRs in Win32 gaming applications"
+        href: number-user-mode-crashes-in-win32-gaming-applications.md
+      - name: "Percent of devices with WinML Runtime Errors"
+        href: pct-devices-winml-runtime-error.md
+      - name: "PresentAT Netflix app SDRM machines hitting one or more media engine errors"
+        href: presentat-netflix-app-sdrm-machines-hitting-one-or-more-media-engine-errors.md
+      - name: "Percent of devices with SWDRM playback that triggered the Catalog reload event"
+        href: pct-devices-with-SWDRM-playback-that-triggered-the-catalog-reload-event.md
+      - name: "Session based SWDRM Driver measure for Video playback on Netflix"
+        href: session-based-SWDRM-driver-measure-for-video-playback-on-netflix.md
+      - name: "Session based HWDRM Driver measure for Video playback on Netflix"
+        href: session-based-HWDRM-driver-measure-for-video-playback-on-netflix.md
     - name: "Wi-Fi"
       items:
       - name: "Wi-Fi Measures"

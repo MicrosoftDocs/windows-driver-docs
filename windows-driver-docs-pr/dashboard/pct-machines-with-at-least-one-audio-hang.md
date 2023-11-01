@@ -20,7 +20,7 @@ See "Audio user-mode reliability" on [Audio measures](audio-measures.md)
 |**Measurement criteria**|Aggregation of machines|
 |**Minimum population**|1000 machines|
 |**Passing criteria**|<=0.5 % of machines with at least 1 hang in either audio service|
-|**Measure ID**|*11458540 (Legacy)*, 38880837|
+|**Measure ID**| 38880837|
 
 ## Calculation
 

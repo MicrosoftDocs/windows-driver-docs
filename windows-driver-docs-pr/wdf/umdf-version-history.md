@@ -6,7 +6,7 @@ keywords:
 - UMDF WDK , version information
 - revision history WDK UMDF
 - version information WDK UMDF
-ms.date: 03/24/2023
+ms.date: 10/31/2023
 ---
 
 # UMDF Version History
@@ -15,9 +15,9 @@ This topic lists versions of User-Mode Driver Framework (UMDF), the correspondin
 
 The following table shows the release history of the UMDF library.  You can use the **In this article** sidebar on the right to navigate quickly to a specific version.
 
-| UMDF version | Release method               | Included in this version of Windows                          | Drivers using it can run on                             |
+| UMDF version | Initial release               | Included in                          | Drivers using this UMDF version run on                             |
 |--------------|------------------------------|--------------------------------------------------------------|---------------------------------------------------------|
-| 2.33         | Windows 11 WDK; WDK for Windows Server 2022 | Windows 11, version 21H2 (Cobalt); Windows Server 2022 (Iron)                              | Windows 11, version 21H2; Windows Server 2022 and later               |
+| 2.33         | Windows 11, version 21H2 WDK; WDK for Windows Server 2022 | Windows 11, version 23H2; Windows 11, version 22H2; Windows 11, version 21H2; Windows Server 2022 | Windows 11, version 21H2 and later; Windows Server 2022 and later  |
 | 2.31         | Windows 10, version 2004 WDK | Windows 10, version 2004 (May 2020 Update, Vibranium)        | Windows 10, version 2004 and later                      |
 | 2.29         | Not released in WDK          | Windows 10, version 1903 (March 2019 Update, 19H1)           | Windows 10, version 1903 and later                      |
 | 2.27         | Windows 10, version 1809 WDK | Windows 10, version 1809 (October 2018 Update, Redstone 5)   | Windows 10, version 1809 and later                      |
@@ -112,13 +112,13 @@ In addition to the shared functionality described in [Getting Started with UMDF]
 
 * Several debugger extension commands in Wdfkd.dll can now be used for UMDF 2.0 drivers as well. The extension library also contains the following new extension commands designed specifically for debugging UMDF 2.0 drivers:
 
-  * [**!wdfkd.wdfumdevstack**](../debuggercmds/-wdfkd-wdfumdevstack.md)
-  * [**!wdfkd.wdfumdevstacks**](../debuggercmds/-wdfkd-wdfumdevstacks.md)
-  * [**!wdfkd.wdfumdownirp**](../debuggercmds/-wdfkd-wdfumdownirp.md)
-  * [**!wdfkd.wdfumfile**](../debuggercmds/-wdfkd-wdfumfile.md)
-  * [**!wdfkd.wdfumirp**](../debuggercmds/-wdfkd-wdfumirp.md)
-  * [**!wdfkd.wdfumirps**](../debuggercmds/-wdfkd-wdfumirps.md)
-  * [**!wdfkd.wdfdeviceinterrupts**](../debuggercmds/-wdfkd-wdfdeviceinterrupts.md)
+  * [**!wdfkd.wdfumdevstack**](../debugger/-wdfkd-wdfumdevstack.md)
+  * [**!wdfkd.wdfumdevstacks**](../debugger/-wdfkd-wdfumdevstacks.md)
+  * [**!wdfkd.wdfumdownirp**](../debugger/-wdfkd-wdfumdownirp.md)
+  * [**!wdfkd.wdfumfile**](../debugger/-wdfkd-wdfumfile.md)
+  * [**!wdfkd.wdfumirp**](../debugger/-wdfkd-wdfumirp.md)
+  * [**!wdfkd.wdfumirps**](../debugger/-wdfkd-wdfumirps.md)
+  * [**!wdfkd.wdfdeviceinterrupts**](../debugger/-wdfkd-wdfdeviceinterrupts.md)
 
     For a list of extension commands and framework applicability, see [Debugger Extensions](debugger-extensions-for-kmdf-drivers.md).
 
