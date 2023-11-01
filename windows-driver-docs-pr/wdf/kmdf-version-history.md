@@ -5,7 +5,7 @@ keywords:
 - kernel-mode drivers WDK KMDF , revision history
 - KMDF WDK , revision history
 - Kernel-Mode Driver Framework WDK , revision history
-ms.date: 03/24/2023
+ms.date: 10/31/2023
 ---
 
 # KMDF Version History
@@ -14,18 +14,18 @@ This topic lists versions of Kernel-Mode Driver Framework (KMDF), the correspond
 
 The following table shows the release history of the KMDF library. You can use the **In this article** sidebar on the right to navigate quickly to a specific version.
 
-| KMDF version | Release method               | Included in this version of Windows                          | Drivers using it run on                                 |
+| KMDF version | Initial release               | Included in                        | Drivers using this KMDF version run on                                 |
 |--------------|------------------------------|--------------------------------------------------------------|---------------------------------------------------------|
-| 1.33         | Windows 11 WDK; WDK for Windows Server 2022 | Windows 11, version 21H2 (Cobalt); Windows Server 2022 (Iron)                              | Windows 11, version 21H2; Windows Server 2022 and later               |
-| 1.31         | Windows 10, version 2004 WDK | Windows 10, version 2004 (May 2020 Update, Vibranium)        | Windows 10, version 2004 and later                      |
-| 1.29         | Not released in WDK          | Windows 10, version 1903 (March 2019 Update, 19H1)           | Windows 10, version 1903 and later                      |
-| 1.27         | Windows 10, version 1809 WDK | Windows 10, version 1809 (October 2018 Update, Redstone 5)   | Windows 10, version 1809 and later                      |
-| 1.25         | Windows 10, version 1803 WDK | Windows 10, version 1803 (April 2018 Update, Redstone 4)     | Windows 10, version 1803 and later                      |
-| 1.23         | Windows 10, version 1709 WDK | Windows 10, version 1709 (Fall Creators Update, Redstone 3)  | Windows 10, version 1709 and later                      |
-| 1.21         | Windows 10, version 1703 WDK | Windows 10, version 1703 (Creators Update, Redstone 2)       | Windows 10, version 1703 and later                      |
-| 1.19         | Windows 10, version 1607 WDK | Windows 10, version 1607 (Anniversary Update, Redstone 1)    | Windows 10 version 1607, Windows Server 2016 and later  |
-| 1.17         | Windows 10, version 1511 WDK | Windows 10, version 1511 (November Update, Threshold 2)      | Windows 10 version 1511, Windows Server 2016 and later  |
-| 1.15         | Windows 10 WDK               | Windows 10, version 1507 (Threshold 1)                       | Windows 10, version 1507, Windows Server 2016 and later |
+| 1.33         | Windows 11, version 21H2 WDK; WDK for Windows Server 2022 | Windows 11, version 23H2; Windows 11, version 22H2; Windows 11, version 21H2; Windows Server 2022 | Windows 11, version 21H2 and later; Windows Server 2022 and later  |
+| 1.31         | Windows 10, version 2004 WDK | Windows 10, version 2004                                     | Windows 10, version 2004 and later                      |
+| 1.29         | Not released in WDK          | Windows 10, version 1903                                     | Windows 10, version 1903 and later                      |
+| 1.27         | Windows 10, version 1809 WDK | Windows 10, version 1809                                     | Windows 10, version 1809 and later                      |
+| 1.25         | Windows 10, version 1803 WDK | Windows 10, version 1803                                     | Windows 10, version 1803 and later                      |
+| 1.23         | Windows 10, version 1709 WDK | Windows 10, version 1709                                     | Windows 10, version 1709 and later                      |
+| 1.21         | Windows 10, version 1703 WDK | Windows 10, version 1703                                     | Windows 10, version 1703 and later                      |
+| 1.19         | Windows 10, version 1607 WDK | Windows 10, version 1607                                     | Windows 10 version 1607, Windows Server 2016 and later  |
+| 1.17         | Windows 10, version 1511 WDK | Windows 10, version 1511                                     | Windows 10 version 1511, Windows Server 2016 and later  |
+| 1.15         | Windows 10 WDK               | Windows 10, version 1507                                     | Windows 10, version 1507, Windows Server 2016 and later |
 | 1.13         | Windows 8.1 WDK              | Windows 8.1                                                  | Windows 8.1 and later                                   |
 | 1.11         | Windows 8 WDK                | Windows 8                                                    | Windows Vista and later                                 |
 | 1.9          | Windows 7 WDK                | Windows 7                                                    | Windows XP and later                                    |
@@ -86,7 +86,7 @@ Unchanged from version 1.25.
 * Added [**WdfDmaTransactionSetSingleTransferRequirement**](/windows-hardware/drivers/ddi/wdfdmatransaction/nf-wdfdmatransaction-wdfdmatransactionsetsingletransferrequirement)
 * Added **WDF_DMA_ENABLER_CONFIG_REQUIRE_SINGLE_TRANSFER** flag in [**WDF_DMA_ENABLER_CONFIG_FLAGS**](/windows-hardware/drivers/ddi/wdfdmaenabler/ne-wdfdmaenabler-_wdf_dma_enabler_config_flags)
 * Added **STATUS_WDF_TOO_MANY_TRANSFERS** return value for [**WdfDmaTransactionInitialize**](/windows-hardware/drivers/ddi/wdfdmatransaction/nf-wdfdmatransaction-wdfdmatransactioninitialize) and [**WdfDmaTransactionDmaCompleted**](/windows-hardware/drivers/ddi/wdfdmatransaction/nf-wdfdmatransaction-wdfdmatransactiondmacompleted)
-* Added output messages for single transfer output to [**!wdfkd.wdfdmatransaction**](../debuggercmds/-wdfkd-wdfdmatransaction.md) and [**!wdfkd.wdfdmaenabler**](../debuggercmds/-wdfkd-wdfdmaenabler.md)
+* Added output messages for single transfer output to [**!wdfkd.wdfdmatransaction**](../debugger/-wdfkd-wdfdmatransaction.md) and [**!wdfkd.wdfdmaenabler**](../debugger/-wdfkd-wdfdmaenabler.md)
 * For more info about single transfer DMA, see [Using Single Transfer DMA](using-single-transfer-dma.md).
 
 ## KMDF 1.15 (Windows 10, version 1507)

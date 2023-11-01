@@ -176,7 +176,7 @@ You can also manually install the driver on the target computer by using Device 
 
 - [PnPUtil](../devtest/pnputil.md)
 
-    This tool comes with the Windows. It is in Windows\\System31. You can use this utility to add the driver to the driver store.
+    This tool comes with the Windows. It is in Windows\\System32. You can use this utility to add the driver to the driver store.
 
     ```cmd
     C:\>pnputil /a m:\MyDriver_.inf
