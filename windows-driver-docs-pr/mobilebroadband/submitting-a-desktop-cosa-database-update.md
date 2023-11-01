@@ -1,7 +1,7 @@
 ---
 title: Submitting a desktop COSA database update
 description: Submit APN entries to Microsoft by following the steps in this topic and using the Mobile Operator Portal.
-ms.date: 10/24/2023
+ms.date: 11/01/2023
 ---
 
 # Submitting a desktop COSA database update
@@ -53,11 +53,13 @@ For example, the mobile operator has a new MCC, MNC pair that they want to add t
 
     :::image type="content" source="images/mobile-operator-portal-save-draft.png" alt-text="Screenshot of the Mobile Operator Portal save draft dialog box.":::
 
-## Modify an existing target  <!-- !!! -->
+## Modify an existing target
 
 This section demonstrates how to change an MCC, MNC value pair, add or change SPN, PNN, GID1, ICCID, or IMSI range.
 
 1. Open the correct profile you want to modify. If you have more than one profile, make sure you are modifying the correct profile.
+
+    :::image type="content" source="images/mobile-operator-portal-select-profile.png" alt-text="Screenshot of the Mobile Operator Portal select profile screen.":::
 
     - (Optional) Check your profiles' APN values.
     - (Optional) Check that your MCC, MNC pair does not exist in the current target list.
@@ -70,9 +72,13 @@ This section demonstrates how to change an MCC, MNC value pair, add or change SP
 
 1. Select **Save draft**, add a note, then select **Save**.
 
+:::image type="content" source="images/mobile-operator-portal-add-spn-on-target.png" alt-text="Screenshot of the Mobile Operator Portal save draft dialog box.":::
+
 ## Modify SIM branding
 
 1. Open the correct profile you want to modify. If you have more than one profile, make sure you are modifying the correct profile.
+
+    :::image type="content" source="images/mobile-operator-portal-select-profile.png" alt-text="Screenshot of the Mobile Operator Portal select profile screen.":::
 
     - (Optional) Check your profiles' APN values.
     - (Optional) Check that your MCC, MNC pair does not exist in the current target list.
@@ -83,6 +89,8 @@ This section demonstrates how to change an MCC, MNC value pair, add or change SP
     - Define **AccountExperienceURL** or add a **AppID** to automatically install applications
     - Change **BrandingName** associated with your SIM card and when this will be used
     - Specify when **BrandingName** will also be used
+
+    :::image type="content" source="images/mobile-operator-portal-modify-sim-branding.png" alt-text="Screenshot of the Mobile Operator Portal settings for SIM screen.":::
 
     Here is the list of possible settings:
 
@@ -98,7 +106,7 @@ This section demonstrates how to change an MCC, MNC value pair, add or change SP
         - Use when connected to Home network and Domestic roaming
         - Use when connected to Home network, Domestic roaming and International roaming
 
-    See [Desktop COSA-only settings](desktop-cosa-apn-database-settings.md#desktop-cosa-only-settings) for more information on **BrandingIcon**. 
+    See [Desktop COSA-only settings](desktop-cosa-apn-database-settings.md#desktop-cosa-only-settings) for more information on **BrandingIcon**.
 
     Branding Icon - a custom logo that appears in the Windows Connection Manager next to your network entry.
 
@@ -122,9 +130,13 @@ This section demonstrates how to change an MCC, MNC value pair, add or change SP
 
 1. Select **Save draft**, add a note, then select **Save**.
 
+:::image type="content" source="images/mobile-operator-portal-modify-sim-branding-save-draft.png" alt-text="Screenshot of the Mobile Operator Portal save draft for modified SIM branding.":::
+
 ## Add a new APN
 
 1. Open the correct profile you want to modify. If you have more than one profile, make sure you are modifying the correct profile.
+
+    :::image type="content" source="images/mobile-operator-portal-select-profile.png" alt-text="Screenshot of the Mobile Operator Portal select profile screen.":::
 
     - (Optional) Check your profiles' APN values.
     - (Optional) Check that your MCC, MNC pair does not exist in the current target list.
@@ -150,7 +162,7 @@ This section demonstrates how to change an MCC, MNC value pair, add or change SP
 
         You can put more than one purpose in a comma delimited list.
 
-    - **Roaming** – The roaming conditions under which the connection should be activated. 
+    - **Roaming** – The roaming conditions under which the connection should be activated.
 
         | Setting | Description |
         |--|--|
