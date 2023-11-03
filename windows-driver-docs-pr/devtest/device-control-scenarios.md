@@ -107,11 +107,3 @@ The XML fragment that was sent from the client is displayed correctly at the dev
 
  
 
- 
-
- 
-
-
-
-
-

@@ -37,11 +37,3 @@ The Code Analysis tool infers the current IRQL and reports this warning only whe
 
 If the Code Analysis tool cannot determine the IRQL at which the driver is running, it will not report this warning, even if the function is being called at the wrong IRQL.
 
- 
-
- 
-
-
-
-
-

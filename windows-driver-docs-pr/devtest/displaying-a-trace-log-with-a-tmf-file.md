@@ -35,11 +35,3 @@ If you do not have the [PDB symbol file](pdb-symbol-files.md) for the trace prov
 
 For more information about specifying TMF files, see Select TMF Files and Set TMF Search Path.
 
- 
-
- 
-
-
-
-
-

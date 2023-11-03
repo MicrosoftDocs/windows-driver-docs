@@ -33,11 +33,3 @@ The specified function has raised the IRQL above the maximum IRQL permitted for 
 
 This warning occurs inside a function that has been annotated with the **\_\_drv\_maxIRQL** annotation and indicates either a coding error in the function or a misunderstanding of the function's contract in the annotations.
 
- 
-
- 
-
-
-
-
-

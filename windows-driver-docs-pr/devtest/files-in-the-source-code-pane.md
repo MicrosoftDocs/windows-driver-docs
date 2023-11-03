@@ -24,11 +24,3 @@ The source file for the [Static Driver Verifier rules](static-driver-verifier-ru
 <span id="sdv-harness.c_"></span><span id="SDV-HARNESS.C_"></span>**sdv-harness.c**   
 The source file for the SDV [operating system model](operating-system-model.md) for the rules in the verification.
 
- 
-
- 
-
-
-
-
-

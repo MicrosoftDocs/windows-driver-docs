@@ -41,11 +41,3 @@ To format and display the trace messages from this session, use Tracefmt. The fo
 tracefmt -rt -display
 ```
 
- 
-
- 
-
-
-
-
-

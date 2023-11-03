@@ -38,11 +38,3 @@ sp->Foo(&spTemp);
 sp = spTemp;
 ```
 
- 
-
- 
-
-
-
-
-

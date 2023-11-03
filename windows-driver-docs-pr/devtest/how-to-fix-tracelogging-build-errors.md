@@ -64,11 +64,3 @@ See Case\#1. It is likely that your SDK does not define the macro **DECLSPEC\_SA
 #endif
 ```
 
- 
-
- 
-
-
-
-
-

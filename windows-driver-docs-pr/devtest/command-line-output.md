@@ -143,11 +143,3 @@ The following table describes the results that can appear in the results summary
 
  
 
- 
-
- 
-
-
-
-
-

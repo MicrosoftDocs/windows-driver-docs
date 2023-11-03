@@ -16,11 +16,3 @@ warning C28151: The value is not a legal value for an IRQL
 
 The IRQL is not within the range of valid values for an IRQL (0-31).
 
- 
-
- 
-
-
-
-
-

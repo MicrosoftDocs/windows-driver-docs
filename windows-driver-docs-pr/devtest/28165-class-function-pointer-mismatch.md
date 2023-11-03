@@ -30,11 +30,3 @@ The following code example avoids this warning.
 IoSetCancelRoutine(MyCancelRoutine);
 ```
 
- 
-
- 
-
-
-
-
-

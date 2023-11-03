@@ -27,11 +27,3 @@ You can define this function description in a local configuration file, such as 
 
 For a complete list of the optional parameters for RUN\_WPP, see [WPP Preprocessor](wpp-preprocessor.md).
 
- 
-
- 
-
-
-
-
-

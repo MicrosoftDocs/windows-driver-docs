@@ -66,11 +66,3 @@ This section lists and describes the [DDI Compliance Rules](static-driver-verifi
 
  
 
- 
-
- 
-
-
-
-
-

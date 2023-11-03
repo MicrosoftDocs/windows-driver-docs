@@ -25,11 +25,3 @@ Windows displays descriptive information that you provide about a device, such a
 
  
 
- 
-
- 
-
-
-
-
-

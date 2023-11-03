@@ -23,11 +23,3 @@ There are two types of options files:
 
  
 
- 
-
- 
-
-
-
-
-

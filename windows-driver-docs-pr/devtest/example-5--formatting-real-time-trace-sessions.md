@@ -49,11 +49,3 @@ Event traces dumped to mytrace.txt
 Event Summary dumped to mytrace.txt.sum
 ```
 
- 
-
- 
-
-
-
-
-

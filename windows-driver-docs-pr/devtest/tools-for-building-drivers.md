@@ -27,11 +27,3 @@ ms.date: 04/20/2017
 -   [Nmake2MsBuild](nmake2msbuild.md)
 -   [ProjectUpgradeTool](projectupgradetool.md)
 
- 
-
- 
-
-
-
-
-

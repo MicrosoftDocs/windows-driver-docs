@@ -166,7 +166,7 @@ Users interact with DTrace through the DTrace command, which serves as a front-e
 
 Traceext.sys (trace extension) is a Windows kernel extension driver, which allows Windows to expose functionality that DTrace relies on to provide tracing. The Windows kernel provides callouts during stackwalk or memory accesses which are then implemented by the trace extension.
 
-![DTrace Windows Architecture showing dtrace.exe talking to libtrace which talks to DTrace.sys, which calls Traceext.sys.](images/dtrace-architecture.png)
+:::image type="content" source="images/dtrace-architecture.png" alt-text="Diagram that shows DTrace Windows Architecture with dtrace.exe connected to libtrace, which communicates with DTrace.sys, and calls Traceext.sys.":::
 
 ## Installing DTrace under Windows
 

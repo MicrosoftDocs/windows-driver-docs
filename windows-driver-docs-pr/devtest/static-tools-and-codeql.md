@@ -33,8 +33,8 @@ ms.date: 09/27/2022
 
 ---
 
-
 ## Overview
+
 Microsoft is committed to mitigating the attack surface for the Windows operating system, and ensuring that third party drivers meet a strong security bar is critical to accomplishing that goal. One step in setting this security bar is by adding a new requirement to the [Windows Hardware Compatibility Program](/windows-hardware/design/compatibility) (WHCP) which states that all driver submissions must use the [CodeQL](https://codeql.github.com/) engine on driver source code and fix any violations that are deemed **"Must-Fix"**.
 
 [CodeQL](https://codeql.github.com/), by GitHub, is a powerful semantic code analysis engine, and the combination of an extensive suite of high-value security queries along with a robust platform make it an invaluable tool for securing driver code.
@@ -62,9 +62,9 @@ Supplementary CodeQL CLI documentation can be found at [CodeQL Getting Started](
 
 **For General Use**
 
-| Branch to use | CodeQL CLI version |
-|---------------|--------------------|
-| Main          | [2.6.3](https://github.com/github/codeql-cli-binaries/releases/tag/v2.6.3)              |
+| Branch to use | CodeQL CLI version                                                         |
+|---------------|----------------------------------------------------------------------------|
+| Main          | [2.6.3](https://github.com/github/codeql-cli-binaries/releases/tag/v2.6.3) |
 
 **For Windows Hardware Compatibility Program Use**
 
@@ -216,7 +216,7 @@ At this point, the set-up is complete and the next step is to perform the actual
     - The [Microsoft SARIF Viewer for Visual Studio](https://marketplace.visualstudio.com/items?itemName=WDGIS.MicrosoftSarifViewer) is great for displaying the results within Visual Studio for seamless transition from results to source code.
     - The [SARIF extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=MS-SarifVSCode.sarif-viewer)
 
-    The most important section of the SARIF file is the "Results" property within the "Run" object. Each query will have a Results property with details about any detected violations and where it occurred. If no violations are found, the property value will be empty. 
+    The most important section of the SARIF file is the "Results" property within the "Run" object. Each query will have a Results property with details about any detected violations and where it occurred. If no violations are found, the property value will be empty.
 
 > **[NOTE]** Queries are classified using statuses such as "error" "warning" and "problem" but this classification is separate from how the Windows Hardware Compatibility Program and specifically the Static Tools Logo Test will grade the results. Any driver with defects from any query within the "Must-Fix" suite will **not pass** the Static Tools Logo Test and will **fail to be certified**, regardless of the query classification in the raw query file (ex. "warning").
 
@@ -285,7 +285,7 @@ In this example, a small batch file is created in the target location and called
 
 1. Provide a path to the batch file and a description of the post build event.
 
-![Visual Studio post build event configuration showing a batch file configured as a command line option.](images/codeql-visual-studio-post-build-event.png)
+:::image type="content" source="images/codeql-visual-studio-post-build-event.png" alt-text="Visual Studio post build event configuration showing a batch file configured as a command line option.":::
 
 1. The results from the running the batch file will be displayed at the end of the build output.
 

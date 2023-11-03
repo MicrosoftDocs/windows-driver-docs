@@ -203,11 +203,3 @@ SFCDisable:REG_DWORD:2
 
 Setting **SFCDisable** to a value of 2 disables WFP for the next boot (only). A value of 0 (the default) enables WFP. For a description of the features of WFP, see the Microsoft Windows SDK.
 
- 
-
- 
-
-
-
-
-

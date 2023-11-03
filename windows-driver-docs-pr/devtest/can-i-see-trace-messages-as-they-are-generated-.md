@@ -65,11 +65,3 @@ tracefmt -rt MyTrace -p c:\tracing -display -o mytrace.txt
 
 For a detailed example, see [Example 5: Formatting Real-Time Trace Sessions](example-5--formatting-real-time-trace-sessions.md).
 
- 
-
- 
-
-
-
-
-
