@@ -2,7 +2,6 @@
 title: PairTool command syntax
 description: How to run PairTool, including syntax and parameters.
 ms.date: 11/03/2023
-prerelease: true
 ---
 
 # PairTool command syntax

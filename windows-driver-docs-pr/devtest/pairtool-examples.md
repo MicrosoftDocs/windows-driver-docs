@@ -2,7 +2,6 @@
 title: PairTool examples
 description: This article shows examples of how to use the PairTool utility.
 ms.date: 11/03/2023
-prerelease: true
 ---
 
 # PairTool examples

@@ -2,7 +2,6 @@
 title: PairTool
 description: PairTool
 ms.date: 11/03/2023
-prerelease: true
 ---
 
 # PairTool
