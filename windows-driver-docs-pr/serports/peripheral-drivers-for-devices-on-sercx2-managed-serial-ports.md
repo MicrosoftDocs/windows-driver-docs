@@ -22,7 +22,7 @@ The peripheral driver for the serially connected peripheral device is typically 
 
 The following block diagram shows the layers of software and hardware that form the communication paths between a peripheral device (at the bottom of the diagram) and this device's peripheral driver (at the top of the diagram). In this example, the peripheral device is connected to the port on the serial controller and to an interrupt pin on the GPIO controller.
 
-![software and hardware layers for a peripheral device on a sercx2-managed serial port.](images/seriallayers.png)
+:::image type="content" source="images/seriallayers.png" alt-text="Diagram that shows software and hardware layers for a peripheral device on a SerCx2-managed serial port.":::
 
 The peripheral driver in this example is a UMDF driver that sends I/O requests to the peripheral device. These requests move through the communication path shown on the left side of the diagram. The requests are handled by SerCx2 and the serial controller driver. The peripheral driver can request I/O operations that set the hardware configuration of the serial port (for example, change the baud rate), and that transfer data to and from the peripheral device through the serial port. For more information, see [I/O request path](#i-o-request-path).
 
