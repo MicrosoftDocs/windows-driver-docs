@@ -41,11 +41,3 @@ if (SomeFunction() == TRUE) {
 }
 ```
 
- 
-
- 
-
-
-
-
-

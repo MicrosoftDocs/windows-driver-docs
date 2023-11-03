@@ -43,11 +43,3 @@ Log Filename:           C:\Tracing\MyTrace.etl
 
 To verify that the trace session is stopped, use a list (**tracelog -l**) or query (**tracelog -q**) command.
 
- 
-
- 
-
-
-
-
-

@@ -46,11 +46,3 @@ Beginning in Windows Vista, you can activate and deactivate all options without 
 
 For details, see [Using Volatile Settings](using-volatile-settings.md).
 
- 
-
- 
-
-
-
-
-

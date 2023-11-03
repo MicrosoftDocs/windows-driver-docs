@@ -32,11 +32,3 @@ This section includes the following topics:
 
 [Advanced Software Tracing](advanced-software-tracing.md)
 
- 
-
- 
-
-
-
-
-

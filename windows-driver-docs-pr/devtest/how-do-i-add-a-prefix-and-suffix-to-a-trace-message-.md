@@ -73,11 +73,3 @@ The following example defines a trace macro that uses the format string prefix a
 [0]0F78.0460::06/24/2006-15:54:54.880 [tracedrv]Function Return=0x8000000f(STATUS_DEVICE_POWERED_OFF)
 ```
 
- 
-
- 
-
-
-
-
-

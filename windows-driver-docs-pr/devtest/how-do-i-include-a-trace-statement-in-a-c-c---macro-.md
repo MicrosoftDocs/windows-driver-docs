@@ -75,11 +75,3 @@ In the source code, use the macros, such as in the following call:
 _EXIT_IF_EXP_FAILED(hr,"it failed");
 ```
 
- 
-
- 
-
-
-
-
-

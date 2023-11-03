@@ -12,13 +12,4 @@ ms.date: 04/20/2017
 
 To resize a Defect Viewer window, place the cursor over the window border until the icon changes, and then drag the border to the desired position, as shown in the following screen shot.
 
-![screen shot showing how to resize the defect viewer window.](images/sdvresize.png)
-
- 
-
- 
-
-
-
-
-
+:::image type="content" source="images/sdvresize.png" alt-text="Screenshot of resizing the Defect Viewer window by dragging its border.":::

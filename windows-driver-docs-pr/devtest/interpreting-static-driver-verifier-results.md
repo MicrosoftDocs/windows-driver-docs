@@ -14,10 +14,9 @@ ms.date: 04/02/2018
 
 # Interpreting Static Driver Verifier Results
 
-
 When you launch Static Driver Verifier from Visual Studio and run an analysis of your driver, the results appear in the **Results** summary on the Main tab.
 
-![screen shot showing the results summary after running static driver verifier.](images/sdv-results-vs.png)
+:::image type="content" source="images/sdv-results-vs.png" alt-text="Screenshot of the Results summary in Visual Studio after running Static Driver Verifier.":::
 
 ### <span id="Statistics"></span><span id="statistics"></span><span id="STATISTICS"></span>Statistics
 
@@ -71,4 +70,3 @@ A spaceout is considered to be an inconclusive result. If SDV reports a spaceout
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Other**  
 
 The number of times that SDV encountered an internal error from which it could not recover.  See the [Static Driver Verifier Error Messages](./static-driver-verifier-error-messages.md) page for more information on errors and debugging.
-
