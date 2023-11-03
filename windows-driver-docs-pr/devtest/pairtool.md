@@ -1,7 +1,7 @@
 ---
 title: PairTool
 description: PairTool
-ms.date: 10/31/2023
+ms.date: 11/03/2023
 prerelease: true
 ---
 
@@ -19,3 +19,8 @@ PairTool is included in the %windir%\system32 directory with every version o
 
 - Open a Command Prompt window.
 - Type `pairtool /?` to view command options. For more information, see [PairTool command syntax](pairtool-command-syntax.md).
+
+## Related articles
+
+- [PairTool command syntax](pairtool-command-syntax.md)
+- [PairTool examples](pairtool-examples.md)

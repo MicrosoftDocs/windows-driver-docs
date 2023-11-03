@@ -1,7 +1,7 @@
 ---
 title: PairTool command syntax
 description: How to run PairTool, including syntax and parameters.
-ms.date: 10/31/2023
+ms.date: 11/03/2023
 prerelease: true
 ---
 
@@ -46,7 +46,7 @@ Flags:
 
 ## /enum-services
 
-Enumerates device endpoint services over the various protocols Windows supports. Examples of endpoint services: Bluetooth GATT, UPnP Digital Media Renderer (DMR), or ESCL scanning.
+Enumerates device endpoint services over the various protocols Windows supports. An endpoint service is a programmatic contract for functionality the endpoint supports. Examples of endpoint services: Bluetooth GATT, UPnP Digital Media Renderer (DMR), or ESCL scanning.
 
 ```syntax
   /enum-services [/protocol <protocol1>[,<protocol2>[,...]] [/persisted] [/sync]
@@ -70,7 +70,7 @@ Flags:
 
 ## /enum-containers
 
-Enumerates device endpoint containers over the various protocols Windows supports. Examples of endpoint containers: an XBOX on your network, an NAS, or a smart TV.
+Enumerates device endpoint containers over the various protocols Windows supports. An endpoint container is a collection of one or more endpoints over one or more protocols that conceptually represent what an end-user might perceive as the actual physical device. Examples of endpoint containers: an XBOX on your network, an NAS, or a smart TV.
 
 ```syntax
   /enum-containers [/protocol <protocol1>[,<protocol2>[,...]] [/persisted]
@@ -110,7 +110,7 @@ Flags:
 
 Associates or pairs an endpoint. This tool implements most supported pairing ceremonies. The ceremony options allow the tool to associate endpoints without extra user input.
 
-Set Pairing
+### Set Pairing
 
 Not all protocols are set-pairing aware.
 
@@ -120,7 +120,7 @@ Some protocols require set member IDs to be provided up front using the `/set [<
 
 Other protocols, like Bluetooth, can only discover other set IDs after the primary endpoint's association is finalized. These other discovered set endpoints are associated sequentially.
 
-Per-user Pairing
+### Per-user Pairing
 
 Not all protocols are per-user association aware. For protocols that do, they only create PnP state visible to the user performing the pairing.
 
@@ -132,11 +132,11 @@ Not all protocols are per-user association aware. For protocols that do, they on
 
 Flags:
 
-- `/set` - Associate endpoints as a set with optional secondary endpoint IDs.
+- `/set` - Associate endpoints as a set with optional, comma separated, secondary endpoint IDs.
 
 - `/per-user` - Associate endpoint just for current user, or user of provided SID.
 
-- `/protection` - Protection level for pairing connection.
+- `/protection` - Protection level for pairing connection. Valid options are `none`, `encryption`, and `authentication`. If this option is omitted, the protocol uses the default protection level, which is typically the highest level supported by the device.
 
 - `/just-works` - Use just-works, push-button, or similar ceremony.
 
@@ -184,3 +184,8 @@ Challenge the OS to verify if an associated endpoint is currently present.
 ```syntax
 /challenge <id>
 ```
+
+## Related articles
+
+- [PairTool](pairtool.md)
+- [PairTool examples](pairtool-examples.md)

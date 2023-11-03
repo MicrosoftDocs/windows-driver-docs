@@ -1,7 +1,7 @@
 ---
 title: PairTool examples
 description: This article shows examples of how to use the PairTool utility.
-ms.date: 10/31/2023
+ms.date: 11/03/2023
 prerelease: true
 ---
 
@@ -11,7 +11,7 @@ This article shows examples of how to use the PairTool utility.
 
 ## /enum-protocols
 
-Discover what protocols are installed and supported on this version on Windows. Enumerating protocols can be useful to scope down endpoint discovery over specific protocols instead of all protocols. Aside from reducing many extra results, it can also be useful for performance. Discovery, particularly over wireless protocols, can be expensive in terms of power consumption and QoS, so should be avoided when not needed. Furthermore, protocols like Bluetooth and WiFiDirect sometimes share the same radio hardware, which degrades the QoS of discovery when running at the same time to the point where devices can’t be discovered reliably, so it's typically better to not use them both at the same time.
+Discover what protocols are installed and supported on this version on Windows. Enumerating protocols can be useful to scope down endpoint discovery over specific protocols instead of all protocols. Aside from reducing many extra results, it can also be useful for performance. Discovery, particularly over wireless protocols, can be expensive in terms of power consumption and QoS, so should be avoided when not needed. Protocols like Bluetooth and WiFiDirect sometimes share the same radio hardware, which degrades the QoS of discovery when running at the same time. When QoS degrades, devices can't be discovered reliably. It's typically better not to use them both at the same time.
 
 ```cmd
 pairtool /enum-protocols
@@ -31,7 +31,7 @@ Discover only Bluetooth devices.
 pairtool /enum-endpoints /protocol Bluetooth,BluetoothLE
 ```
 
-Discover what devices are paired without active “on-the-wire” discovery over the protocol. Since this doesn't activate discovery over the protocol, this is the lowest cost discovery method.
+Discover what devices are paired without active on-the-wire discovery over the protocol. Since enumerating endpoints doesn't activate discovery over the protocol, this discover method has the lowest cost.
 
 ```cmd
 pairtool /enum-endpoints /persisted
@@ -45,13 +45,13 @@ pairtool /enum-endpoints /protocol Bluetooth,BluetoothLE /sync /format XML /outp
 
 ## /associate
 
-Associate an endpoint. For associate to work, typically and endpoint would have “Associable: true” when enumerated. If no other parameters are passed, then pairing ceremonies that require input collect the input, like a PIN, from the console.
+Associate an endpoint. For associate to work, typically and endpoint would have `Associable: true` when enumerated. If no other parameters are passed, then pairing ceremonies that require input collect the input, like a PIN, from the console.
 
 ```cmd
 pairtool /associate BluetoothLE#BluetoothLEdc:46:28:6a:16:01-d8:02:ba:2b:9e:2c
 ```
 
-Automatically associate an endpoint without input, using just-works or similar ceremony. If the device supports one of these ceremonies, it's selected, and pairing completes without user interaction.
+Automatically associate an endpoint without input, using just-works or similar ceremony. If the device supports one of these ceremonies, the device is selected, and pairing completes without user interaction.
 
 ```cmd
 pairtool /associate BluetoothLE#BluetoothLEdc:46:28:6a:16:01-d8:02:ba:2b:9e:2c /just-works
@@ -91,8 +91,13 @@ pairtool /disassociate BluetoothLE#BluetoothLEdc:46:28:6a:16:01-d8:02:ba:2b:9e:2
 
 ## /challenge
 
-Challenge the liveness of the PnP of a paired endpoint. This is useful if an endpoints PnP device state appears to be online or offline incorrectly.
+Challenge the liveness of the PnP device state of a paired endpoint. This challenge is useful if an endpoint's device state appears to be online or offline incorrectly.
 
 ```cmd
 pairtool /challenge MCP#8317e7db-8bac-40ca-bfa5-467735c06866
 ```
+
+## Related articles
+
+- [PairTool](pairtool.md)
+- [PairTool command syntax](pairtool-command-syntax.md)
