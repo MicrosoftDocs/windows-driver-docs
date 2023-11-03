@@ -1,15 +1,12 @@
 ---
 title: Submitting a desktop COSA database update
-description: Submit APN entries to Microsoft by following the steps in this topic and using the Mobile Operator Portal.
-ms.date: 11/01/2023
+description: This article describes how to submit COSA database updates to Microsoft by using the Mobile Operator Portal.
+ms.date: 11/02/2023
 ---
 
 # Submitting a desktop COSA database update
 
->[!IMPORTANT]
-> The following steps to submit an APN update apply to both desktop COSA, which is used for Windows 10, version 1703 and later, and apndatabase.xml, which is used for Windows 8, Windows 8.1, and versions of Windows 10 before 1703. Microsoft will convert apndatabase.xml submissions to COSA if you are targeting Windows 10, version 1703 or later.
-
-Now that you’ve tested the APN entries, it’s now time to submit them to Microsoft by following the steps in this topic.
+This article describes how to submit COSA database updates to Microsoft by using the Mobile Operator Portal. The Mobile Operator Portal is a web-based tool that allows mobile operators to submit their APN entries to Microsoft. The Mobile Operator Portal is available at [https://aka.ms/moconfig](https://aka.ms/moconfig).
 
 ## The COSA database
 
@@ -132,7 +129,7 @@ This section demonstrates how to change an MCC, MNC value pair, add or change SP
 
 :::image type="content" source="images/mobile-operator-portal-modify-sim-branding-save-draft.png" alt-text="Screenshot of the Mobile Operator Portal save draft for modified SIM branding.":::
 
-## Add a new APN
+## Add a new APN <!-- !!! -->
 
 1. Open the correct profile you want to modify. If you have more than one profile, make sure you are modifying the correct profile.
 
