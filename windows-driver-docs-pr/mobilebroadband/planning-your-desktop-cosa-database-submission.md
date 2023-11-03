@@ -1,29 +1,27 @@
 ---
-title: Planning your desktop COSA/APN database submission
-description: Planning your desktop COSA/APN database submission
-ms.date: 10/06/2023
+title: Planning your desktop COSA database submission
+description: Planning your desktop COSA database submission
+ms.date: 11/03/2023
 ---
 
-# Planning your desktop COSA/APN database submission
+# Planning your desktop COSA database submission
 
 > [!IMPORTANT]
 > Starting in Windows 10, version 1703, the APN database is replaced by a new format called COSA. Windows 8, Windows 8.1, and versions of Windows 10 before version 1703 will continue to use the APN database while Windows 10, version 1703 and later use COSA. For more information about COSA, see [COSA overview](cosa-overview.md).
 
-Use the sections in this topic when you are planning to add a new APN to the baseline COSA/APN database that ships with Windows desktop devices, or update an existing one.
+Use the sections in this topic when you are planning to add a new APN to the baseline COSA database that ships with Windows desktop devices, or update an existing one.
 
 ## The APN update process
 
 To connect to a mobile broadband network, the user is typically required to provide the following information:
 
 - On GSM networks, an Access Point Name (APN) such as "data.contoso.com" is required.
-
 - On CDMA networks, an access string that includes a special dial code such as "\#777" or a Network Access Identifier such as <somebody@contoso.com> is required.
-
 - A username and password for the network connection.
 
 COSA and the APN connectivity database are updated by using Windows Update. The figure below shows the overall submission process.
 
-:::image type="content" source="images/COSA_and_APN_database_submission_process_diagram.png" alt-text="Flowchart that shows the COSA/APN database submission process.":::
+:::image type="content" source="images/COSA_and_APN_database_submission_process_diagram.png" alt-text="Flowchart that shows the COSA database submission process.":::
 
 ## Complete the APN/COSA update spreadsheet
 
@@ -31,7 +29,7 @@ The APN update spreadsheet is used to gather the required information so Microso
 
 Use the following link to download the latest APN update spreadsheet: <https://go.microsoft.com/fwlink/p/?linkid=851213>
 
-For more info about the settings in the APN update spreadsheet, see [Desktop COSA/APN database settings](desktop-cosa-apn-database-settings.md).
+For more info about the settings in the APN update spreadsheet, see [Desktop COSA database settings](desktop-cosa-apn-database-settings.md).
 
 ## Considerations when completing the spreadsheet
 
@@ -60,7 +58,7 @@ Note the following only when submitting an APN update using apndatabase.xml, for
 
 Note the following for both COSA and APN database.
 
-- Changes provided by the OEM will take precedence over the default COSA/APN database included in Windows.
+- Changes provided by the OEM will take precedence over the default COSA database included in Windows.
 
 - The **Country/Region** and the **Operator** entries in the spreadsheet are used to determine whether this is an update to an existing APN or a request for a new APN. If the **Country/Region** and the **Operator** fields match content that already exists in the APN database, the entries will be deleted and replaced with the entries that you list in your spreadsheet.
 
@@ -74,7 +72,7 @@ Note the following for both COSA and APN database.
      Country/Region: Argentina
     ```
 
-    All entries currently in the COSA or APN connectivity database that match the following format will be deleted and replaced with the row in your spreadsheet for that **Operator** and **Country/Region** combination:
+    All entries currently in the COSA connectivity database that match the following format will be deleted and replaced with the row in your spreadsheet for that **Operator** and **Country/Region** combination:
 
     ```syntax
     <Operator name="Contoso (Argentina)">
@@ -98,25 +96,18 @@ Note the following for both COSA and APN database.
 - On each row of the spreadsheet that is submitted, you must specify only one of the following:
 
   - An MCC+MNC with a blank IMSI range
-
   - An MCC+MNC with a specific IMSI range
-
   - An MCC+MNC with a specific ICCID range
-
   - An MCC+MNC with a specific GSM provider name
 
 - If you have created a website for setting up Mobile Broadband service, it is important to provide the Account Experience URL and certificate data.
 
 - Access strings used for plan purchase (**Purchase Flag**=**Y**) can be one of the following:
-
   - For GSM networks, an APN with a specified **User Name** and **Password** used for purchasing the subscription.
-
   - For CDMA networks, a Network Access Identifier (NAI) is used for purchasing the subscription.
 
 - Access strings used for Internet connectivity (**Connect Flag**=**Y**) can be one of the following:
-
   - For GSM networks, an APN with a specified **User Name** and **Password** used to connect to the Internet.
-
   - For CDMA networks, a Network Access Identifier (NAI) is used to connect to the Internet.
 
-Once your spreadsheet is complete, you can test the APNs you’ve entered. For the next steps in testing your APN update, see [Testing your desktop COSA/APN database submission](testing-your-desktop-cosa-apn-database-submission.md).
+Once your spreadsheet is complete, you can test the APNs you’ve entered. For the next steps in testing your APN update, see [Testing your desktop COSA database submission](testing-your-desktop-cosa-database-submission.md).

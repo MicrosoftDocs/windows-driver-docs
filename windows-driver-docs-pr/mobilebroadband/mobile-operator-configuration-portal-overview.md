@@ -3,7 +3,7 @@ title: Mobile operator configuration portal
 description: This article introduces the mobile operator configuration portal to create a COSA database submission.
 author: mhopkins-msft
 ms.author: mhopkins
-ms.date: 09/21/2023
+ms.date: 11/03/2023
 ---
 
 # Mobile operator configuration portal

@@ -1,10 +1,10 @@
 ---
-title: Submitting the desktop COSA/APN database update
-description: Submitting the desktop COSA/APN database update
-ms.date: 04/20/2017
+title: Submitting a desktop COSA database update
+description: Submit a desktop COSA database update by following the steps in this topic.
+ms.date: 11/03/2023
 ---
 
-# Submitting the desktop COSA/APN database update
+# Submitting a desktop COSA database update
 
 >[!IMPORTANT]
 > The following steps to submit an APN update apply to both desktop COSA, which is used for Windows 10, version 1703 and later, and apndatabase.xml, which is used for Windows 8, Windows 8.1, and versions of Windows 10 before 1703. Microsoft will convert apndatabase.xml submissions to COSA if you are targeting Windows 10, version 1703 or later.
@@ -42,27 +42,27 @@ Provide your contact information:
    [phone 2]
 ```
 
-## Submit COSA/APN database updates to Microsoft
+## Submit COSA database updates to Microsoft
 
-Use the following procedure to submit COSA or APN connectivity database updates to Microsoft. 
+Use the following procedure to submit COSA connectivity database updates to Microsoft.
 
-1.  **Contact your Microsoft TAM** - Using the same MS Solve case described in [Testing your desktop COSA/APN database submission](testing-your-desktop-cosa-apn-database-submission.md), provide your TAM with a completed APN testing questionnaire to describe the level of testing that has been done.  
+1. **Contact your Microsoft TAM** - Using the same MS Solve case described in [Testing your desktop COSA database submission](testing-your-desktop-cosa-database-submission.md), provide your TAM with a completed APN testing questionnaire to describe the level of testing that has been done.  
 
-2.  **Microsoft triage process** -- Microsoft will review your submission and may contact you if errors are detected. Microsoft will not do any testing on your mobile network. If no errors are detected in your submission, it will proceed through the release process.
+2. **Microsoft triage process** -- Microsoft will review your submission and may contact you if errors are detected. Microsoft will not do any testing on your mobile network. If no errors are detected in your submission, it will proceed through the release process.
 
-3.  **Operator validation** -- Since Microsoft cannot test the APNs you provided for your mobile network, you’ll be asked to do so after a new COSA provisioning package or APN database has been generated. You’ll be provided a new copy of the COSA .ppkg file or the APN database XML file that you’ll use to apply to your PCs and test the functionality on your actual network. You’ll go through another test pass, as described in [Testing your desktop COSA/APN database submission](testing-your-desktop-cosa-apn-database-submission.md). Your Microsoft TAM will provide you with an installable file that will patch COSA or the APN database on the PC with the updated database. You’ll be given a specific time period to test the new APN database. Once you have completed your testing, you’ll be asked to reply back to your Microsoft contact with your sign-off. If you find an issue or error, there may be a limited opportunity to correct it. If the issue cannot be corrected in time, your changes will be reverted from the next released update of the APN database. You’ll need to resubmit your APN connectivity database submission and wait until the next scheduled update. 
+3. **Operator validation** -- Since Microsoft cannot test the APNs you provided for your mobile network, you’ll be asked to do so after a new COSA provisioning package or APN database has been generated. You’ll be provided a new copy of the COSA .ppkg file or the APN database XML file that you’ll use to apply to your PCs and test the functionality on your actual network. You’ll go through another test pass, as described in [Testing your desktop COSA database submission](testing-your-desktop-cosa-database-submission.md). Your Microsoft TAM will provide you with an installable file that will patch COSA or the APN database on the PC with the updated database. You’ll be given a specific time period to test the new APN database. Once you have completed your testing, you’ll be asked to reply back to your Microsoft contact with your sign-off. If you find an issue or error, there may be a limited opportunity to correct it. If the issue cannot be corrected in time, your changes will be reverted from the next released update of the APN database. You’ll need to resubmit your APN connectivity database submission and wait until the next scheduled update.
 
-4.  **Update is released** -- Once you have signed off on the new APN database, it will go through the update publishing process. Once it is ready, it will appear in Windows Update for users to install. You’ll be provided a more detailed release timeline after completing your APN database submission.
+4. **Update is released** -- Once you have signed off on the new APN database, it will go through the update publishing process. Once it is ready, it will appear in Windows Update for users to install. You’ll be provided a more detailed release timeline after completing your APN database submission.
 
 > [!IMPORTANT]
-> If you do not sign-off within the allotted time period, your changes will be reverted from the next released update of the APN connectivity database. You’ll need to resubmit your APN submission and wait until the next scheduled update.   
+> If you do not sign-off within the allotted time period, your changes will be reverted from the next released update of the APN connectivity database. You’ll need to resubmit your APN submission and wait until the next scheduled update.
 
 ### Deleting an APN database entry
 
 Deleting an APN entry is considered a special-case operation. If you are only deleting an entry, you do not have to fill out a spreadsheet. List the entries in the APN connectivity database you want to have deleted by answering the following questionnaire. Once this is done, send it to your TAM.
 
 > [!NOTE]
-> Deletions take place based on **Operator** and **Country/Region** combination. 
+> Deletions take place based on **Operator** and **Country/Region** combination.
 
 ```syntax
 Please describe which operator and region combination you wish to have removed from the APN database.
@@ -84,9 +84,4 @@ Provide your contact information:
    [E-mail from a corporate email account for the company you are submitting for]
    [phone 1]
    [phone 2]
-``` 
-
-
-
-
-
+```
