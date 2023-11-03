@@ -1,7 +1,7 @@
 ---
 title: Overview of system battery management
 description: Learn about the components and roles involved in system battery management, including battery GUI, power manager, and various drivers.
-ms.date: 10/04/2023
+ms.date: 11/01/2023
 ---
 
 # Overview of system battery management
@@ -17,7 +17,7 @@ Battery management involves the following system components:
 - Battery miniclass drivers: For individual battery devices
 - Devices: Including batteries and some Uninterruptible Power Supplies (UPS)
 
-:::image type="content" source="images/compbatt.png" alt-text="Diagram illustrating the components of battery management system.":::
+:::image type="content" source="images/compbatt.png" alt-text="Diagram showing the components of a battery management system, including Battery GUI, Power manager, Composite battery driver, Battery class driver, Battery miniclass drivers, and Devices.":::
 
 Devices controlled by battery miniclass drivers include batteries and some UPS devices. Batteries can be primary (nonrechargeable) or secondary (rechargeable) cells. A UPS is essentially a system battery with a much larger capacity and a different alert threshold than a laptop battery.
 
