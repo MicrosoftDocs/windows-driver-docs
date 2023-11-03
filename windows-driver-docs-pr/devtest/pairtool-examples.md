@@ -91,7 +91,7 @@ pairtool /disassociate BluetoothLE#BluetoothLEdc:46:28:6a:16:01-d8:02:ba:2b:9e:2
 
 ## /challenge
 
-Challenge the liveness of the PnP device state of a paired endpoint. This challenge is useful if an endpoint's device state appears to be online or offline incorrectly.
+Challenge the liveness of the PnP device state of a paired endpoint. This challenge is useful if an endpoint's device state appears to be incorrectly online or offline.
 
 ```cmd
 pairtool /challenge MCP#8317e7db-8bac-40ca-bfa5-467735c06866
