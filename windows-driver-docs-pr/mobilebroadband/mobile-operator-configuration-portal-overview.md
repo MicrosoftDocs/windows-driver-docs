@@ -8,50 +8,76 @@ ms.date: 09/21/2023
 
 # Mobile operator configuration portal
 
-This article introduces the mobile operator configuration portal to create a COSA database submission.
+This article introduces the Microsoft Mobile Operator Portal to create a COSA database submission.
 
-## Setting up your account
+The Mobile Operator Portal has replaced the previous APN spreasheet for making changed to the COSA database. The Mobile Operator Portal is a web-based tool that allows mobile operators to submit APN updates to the COSA database. The Mobile Operator Portal is available to all mobile operators that have a Microsoft representative.
 
-1. Go to the [mobile operator portal](https://aka.ms/moconfig).
-1. Select **Sign up now**.
-1. Enter your email in the first field and select **Send verification code**.
-1. Check your email, enter the verification code and select **Verify**.
-1. Enter a temporary password and select **Create** to send your request official to the mobile operator portal team.
-1. Send email to your Microsoft representative to get your account approved for portal access.
-1. After getting confirmation from your Microsoft representative, go thru and select **Sign Up** again, verify your email, then put a new password and select **Create**. This time around, this will be your permanent password for logging in.
+## Create your account
+
+If you don't yet have a Mobile Operator Portal account, follow these steps to create one.
+
+1. Navigate to the [Microsoft Mobile Operator Portal](https://aka.ms/moconfig) (MO portal).
+1. Select **Sign up now** below the **Sign in** button.
+    :::image type="content" source="images/mo-portal-sign-in.png" alt-text="Screenshot of the sign-in screen on the Microsoft Mobile Operator portal.":::
+1. Enter your email address and select **Send verification code**.
+    :::image type="content" source="images/mo-portal-verify.png" alt-text="Screenshot of the create email verification screen on the Microsoft Mobile Operator portal.":::
+1. After you receive the verification code in your email, enter it and select **Verify**.
+1. Enter a temporary password and select **Create** to send your request to the Mobile Operator Portal team.
+    :::image type="content" source="images/mo-portal-create-account.png" alt-text="Screenshot of the Microsoft Mobile Operator portal account creation page.":::
+1. Send an email to your Microsoft representative to get your account approved for portal access.
+    :::image type="content" source="images/mo-portal-account-queue.png" alt-text="Screenshot of the Microsoft Mobile Operator portal account creation queue message.":::
+1. After getting confirmation from your Microsoft representative, navigate back to the [Mobile Operator Portal](https://aka.ms/moconfig) and select **Sign Up** again.
+1. Verify your email, then enter a new non-temporary password and select **Create**. This is your login password going forward.
 
 ## Introduction to COSA
 
-COSA is made up of:
+COSA is made up of the following:
 
-- One or more targets
-- One SIM setting
-- One or more connections or Access Point Name (APN) settings
+- 1 or more targets
+- 1 SIM setting
+- 1 or more connections or APN settings
 
-Each COSA entry is also called a COSA profile. For a given COSA profile, you can specify multiple targets (different MCC, MNC pair; different IMSI or ICCID range); and a list of APNs to try to connect to (5G APNs, Internet APN, IMS APN, and so on).
+Each COSA entry is also called a COSA profile.
 
-However, for logo and branding, you can only specify one per COSA entry. If the desire is to create different logo and branding, you need to provide a different target for each COSA profile.
+For a given COSA profile, you can specify multiple targets (different MCC, MNC pair; different IMSI or ICCID range), and a list of APNs to try to connect to (5G APNs, Internet APN, IMS APN, an so on).
+
+For logo and branding, you can only specify one per COSA entry. If you need to create different logo and branding, provide a different target for each COSA profile.
 
 ## Adding a new target
 
 For example, the mobile operator has a new MCC, MNC pair that they want to add to the COSA profile.
 
-1. Open the correct profile you want to modify, if you have more than 1 profile, ensure you are modifying the right profile.
+1. Open the correct profile you want to modify, if you have more than one profile, ensure you are modifying the right profile.
+
+    :::image type="content" source="images/mobile-operator-portal-select-profile.png" alt-text="Screenshot of the Mobile Operator Portal select profile screen.":::
+
     - (Optional) Check your profile APN values
         1. Open **Connections > Cellular > Connection**
         1. Make sure it's the right APN. You can have multiple connections if you have more than one APN value for this COSA profile.
 
-    - (Optional) Check that your MCC, MNC pair does not exist in the currect target list
+        :::image type="content" source="images/mobile-operator-portal-check-apn-values.png" alt-text="Screenshot of the Mobile Operator Portal connection screen.":::
+
+    - (Optional) Check that your MCC, MNC pair does not exist in the current target list
         1. Open **Targets**
         1. Check each target to ensure there's no duplicate of what you want to create. If you see more than one target, check each of them one by one.
 
+        :::image type="content" source="images/mobile-operator-portal-target.png" alt-text="Screenshot of the Mobile Operator Portal targets screen.":::
+
 1. Select **+** to add a new target to your profile, and go to the new target added to your list. This is usually the last one in the **Targets** list. If you do not see any new targets, make sure you have clicked on the drop down beside the **Targets**.
+
+    :::image type="content" source="images/mobile-operator-portal-add-new-target.png" alt-text="Screenshot of the Mobile Operator Portal add new target form.":::
 
 1. Select **Save draft**, add a note, then select **Save**.
 
-## Modify and existing target or targets
+    :::image type="content" source="images/mobile-operator-portal-save-draft.png" alt-text="Screenshot of the Mobile Operator Portal save draft dialog box.":::
+
+## Modify an existing target
+
+This section demonstrates how to change an MCC, MNC value pair, add or change SPN, PNN, GID1, ICCID, or IMSI range.
 
 1. Open the correct profile you want to modify. If you have more than one profile, make sure you are modifying the correct profile.
+
+    :::image type="content" source="images/mobile-operator-portal-select-profile.png" alt-text="Screenshot of the Mobile Operator Portal select profile screen.":::
 
     - (Optional) Check your profiles' APN values.
     - (Optional) Check that your MCC, MNC pair does not exist in the current target list.
@@ -64,19 +90,25 @@ For example, the mobile operator has a new MCC, MNC pair that they want to add t
 
 1. Select **Save draft**, add a note, then select **Save**.
 
+:::image type="content" source="images/mobile-operator-portal-add-spn-on-target.png" alt-text="Screenshot of the Mobile Operator Portal save draft dialog box.":::
+
 ## Modify SIM branding
 
 1. Open the correct profile you want to modify. If you have more than one profile, make sure you are modifying the correct profile.
 
+    :::image type="content" source="images/mobile-operator-portal-select-profile.png" alt-text="Screenshot of the Mobile Operator Portal select profile screen.":::
+
     - (Optional) Check your profiles' APN values.
     - (Optional) Check that your MCC, MNC pair does not exist in the current target list.
 
-1. Navigate to **Cellular** -> **PerSimSettings** -> **SettingsForSim**, then either:
+1. Navigate to **Cellular > PerSimSettings > SettingsForSim**, then either:
 
     - Add or remove mobile operator logo
     - Define **AccountExperienceURL** or add a **AppID** to automatically install applications
     - Change **BrandingName** associated with your SIM card and when this will be used
     - Specify when **BrandingName** will also be used
+
+    :::image type="content" source="images/mobile-operator-portal-modify-sim-branding.png" alt-text="Screenshot of the Mobile Operator Portal settings for SIM screen.":::
 
     Here is the list of possible settings:
 
@@ -92,7 +124,7 @@ For example, the mobile operator has a new MCC, MNC pair that they want to add t
         - Use when connected to Home network and Domestic roaming
         - Use when connected to Home network, Domestic roaming and International roaming
 
-    See [Desktop COSA-only settings](desktop-cosa-apn-database-settings.md#desktop-cosa-only-settings) for more information on **BrandingIcon**. 
+    See [Desktop COSA-only settings](desktop-cosa-apn-database-settings.md#desktop-cosa-only-settings) for more information on **BrandingIcon**.
 
     Branding Icon - a custom logo that appears in the Windows Connection Manager next to your network entry.
 
@@ -116,9 +148,13 @@ For example, the mobile operator has a new MCC, MNC pair that they want to add t
 
 1. Select **Save draft**, add a note, then select **Save**.
 
-## Add a new APN
+:::image type="content" source="images/mobile-operator-portal-modify-sim-branding-save-draft.png" alt-text="Screenshot of the Mobile Operator Portal save draft for modified SIM branding.":::
+
+## Add a new APN <!-- !!! -->
 
 1. Open the correct profile you want to modify. If you have more than one profile, make sure you are modifying the correct profile.
+
+    :::image type="content" source="images/mobile-operator-portal-select-profile.png" alt-text="Screenshot of the Mobile Operator Portal select profile screen.":::
 
     - (Optional) Check your profiles' APN values.
     - (Optional) Check that your MCC, MNC pair does not exist in the current target list.
@@ -144,7 +180,7 @@ For example, the mobile operator has a new MCC, MNC pair that they want to add t
 
         You can put more than one purpose in a comma delimited list.
 
-    - **Roaming** – The roaming conditions under which the connection should be activated. 
+    - **Roaming** – The roaming conditions under which the connection should be activated.
 
         | Setting | Description |
         |--|--|
