@@ -53,11 +53,3 @@ You can activate the Kernel synchronization delay fuzzing feature for one or mor
 
 Most driver routines are reentrant and concurrent. Bugs related to concurrency are notoriously hard to find. Bugs can include deadlocks and race conditions, caused by synchronization problems and bad timing between threads. Stress testing is the traditional testing technique for finding these bugs, but it can be slow and expensive, and the results are not always reproducible. The Kernel synchronization delay fuzzing option increases the probability of race conditions appearing at runtime by inserting randomized delays in various kernel API function calls. For example, if a race condition results in a driver accessing IRP after it has been cancelled, the Kernel synchronization delay fuzzing option increases the chances of this race condition in such a way that Driver Verifier will detect the error during testing. The Kernel synchronization delay fuzzing option enhances the power and effectiveness of Driver Verifier.
 
- 
-
- 
-
-
-
-
-

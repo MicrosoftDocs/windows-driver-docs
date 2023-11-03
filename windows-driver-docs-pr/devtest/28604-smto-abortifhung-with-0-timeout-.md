@@ -43,11 +43,3 @@ SMTO_ABORTIFHUNG,
 &dwResult)); 
 ```
 
- 
-
- 
-
-
-
-
-

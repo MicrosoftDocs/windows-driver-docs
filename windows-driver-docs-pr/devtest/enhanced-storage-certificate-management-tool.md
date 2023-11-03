@@ -26,11 +26,3 @@ This section inlcludes the following topics:
 
 [**Enhanced Storage Certificate Management Tool Command Syntax**](enhanced-storage-certificate-management-tool-command-syntax.md)
 
- 
-
- 
-
-
-
-
-

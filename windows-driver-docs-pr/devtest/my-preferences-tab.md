@@ -6,12 +6,11 @@ ms.date: 04/20/2017
 
 # My Preferences Tab
 
-
 This topic describes WDF Verifier's **My Preferences** page. On this page, you can set preferences for some of the control panel’s features.
 
 At the top of the **My Preferences** tab, you'll find the **User Mode Debugger Preferences** box.
 
-![screen grab of my preferences tab.](images/wdfverifier-tab5.png)
+:::image type="content" source="images/wdfverifier-tab5.png" alt-text="Screenshot of the My Preferences tab in WDF Verifier.":::
 
 The debuggers listed on this page are part of the **Debugging Tools for Windows**. To download this package, select the **Debugging Tools for Windows** box when you install the [Windows SDK for Windows 8.1](https://developer.microsoft.com/windows/downloads/sdk-archive/). Alternatively, choose a custom (non-Microsoft) debugger by selecting **Use custom**.
 
@@ -19,8 +18,8 @@ Start by clicking the **Select a specific debugger** button and browsing to the 
 
 Your debugger preference is used in two cases:
 
--   WDF Verifier automatically attempts to connect the user-mode debugger when a new driver host process starts if you have selected the **Automatically launch user-mode debugger when requested** box on the [Global WDF Settings](global-wdf-settings-tab.md) page.
--   When you click the **Attach user mode debugger to this process** button (also on the [Global WDF Settings](global-wdf-settings-tab.md) tab), WDF Verifier attempts to connect the user-mode debugger to the specified host process.
+- WDF Verifier automatically attempts to connect the user-mode debugger when a new driver host process starts if you have selected the **Automatically launch user-mode debugger when requested** box on the [Global WDF Settings](global-wdf-settings-tab.md) page.
+- When you click the **Attach user mode debugger to this process** button (also on the [Global WDF Settings](global-wdf-settings-tab.md) tab), WDF Verifier attempts to connect the user-mode debugger to the specified host process.
 
 If you select the **Customized command line** box, WDF Verifier passes the specified string to whatever debugger you have chosen.
 
@@ -42,13 +41,10 @@ Finally, you can choose what you want WDF Verifier to do when the machine must b
 
 If intervention is needed, and you have selected **Report actions needed and ask for permission**, the following dialog box appears:
 
-![screen grab of actions required to make changes effective.](images/wdfverifier-reboot-dialog.png)
+:::image type="content" source="images/wdfverifier-reboot-dialog.png" alt-text="Screenshot of the Actions Required dialog box in WDF Verifier.":::
 
 The selected items are actions required to make all changes effective. You cannot toggle the selections.
 
 The selections are shown as a guide in case you want to click **No** and perform the steps manually. The order in which the actions appear is the order in which you should perform them.
 
 If you select the **Do not ask for permission again...** box, your choice persists unless you change the reboot setting on the My Preferences tab.
-
- 
-

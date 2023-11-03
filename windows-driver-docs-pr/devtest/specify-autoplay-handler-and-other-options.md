@@ -36,11 +36,3 @@ To define an AutoPlay Handler for a device, select from the following options un
 
      
 
- 
-
- 
-
-
-
-
-

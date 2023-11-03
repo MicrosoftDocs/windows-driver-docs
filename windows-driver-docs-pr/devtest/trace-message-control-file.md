@@ -32,11 +32,3 @@ The TMC file also contains the following information:
 
 TraceView uses the TMC file to find the trace flags for each provider. You can use this file as a quick reference to the control GUID of a trace provider.
 
- 
-
- 
-
-
-
-
-

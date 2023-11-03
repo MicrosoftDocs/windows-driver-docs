@@ -23,11 +23,3 @@ Use the following procedure to set advanced trace session options while you are 
 
 6.  Click the **Advanced Log Session Options** button.
 
- 
-
- 
-
-
-
-
-

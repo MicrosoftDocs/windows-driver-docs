@@ -38,12 +38,4 @@ The PwrTest .xml log file (pwrtestlog.xml) provides information about the specif
 
 [PwrTest Syntax](pwrtest-syntax.md)
 
- 
-
- 
-
-
-
-
-
 

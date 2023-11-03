@@ -21,11 +21,3 @@ Categories determine how devices are grouped.
 
 3.  Under **Primary category**, select the category that most people use to identify the device.
 
- 
-
- 
-
-
-
-
-

@@ -18,11 +18,3 @@ Before you include the [trace message header (.tmh) file](trace-message-header-f
 #define WPP_CHECK_INIT
 ```
 
- 
-
- 
-
-
-
-
-

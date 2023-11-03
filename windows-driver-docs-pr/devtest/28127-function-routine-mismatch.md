@@ -33,11 +33,3 @@ The driver is passing or assigning a function (pointer) of an unexpected type (t
 
 This type mismatch message is designed primarily to verify that the Code Analysis tool can recognize callbacks.
 
- 
-
- 
-
-
-
-
-

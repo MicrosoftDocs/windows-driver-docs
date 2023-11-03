@@ -42,11 +42,3 @@ ExInitializeNPagedLookasideList(   pLookaside,
                 depth);
 ```
 
- 
-
- 
-
-
-
-
-

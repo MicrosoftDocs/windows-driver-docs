@@ -17,11 +17,3 @@ This section provides examples for how to use BinPlace and includes the followin
 
 -   [Using BinPlace from the Command Line](using-binplace-from-the-command-line.md)
 
- 
-
- 
-
-
-
-
-

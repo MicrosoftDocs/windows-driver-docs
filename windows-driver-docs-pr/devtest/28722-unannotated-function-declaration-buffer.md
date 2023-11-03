@@ -30,11 +30,3 @@ The following code example avoids this warning by using the SAL annotation **\_O
 int foo( _Out_writes_(cch) LPTSTR buffer, size_t cch );
 ```
 
- 
-
- 
-
-
-
-
-

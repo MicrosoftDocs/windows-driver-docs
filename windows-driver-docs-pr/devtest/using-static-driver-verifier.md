@@ -19,11 +19,3 @@ For information about what you need to do to get up and running quickly, see [Us
 -   [Recommendations for Troubleshooting Static Driver Verifier](recommendations-for-troubleshooting-static-driver-verifier.md)
 -   [Using SDV and the Sample Drivers](using-sdv-and-the-sample-drivers.md)
 
- 
-
- 
-
-
-
-
-

@@ -33,11 +33,3 @@ The driver is calling a function that changes the IRQL to a level less than the 
 
 This warning occurs inside a function that has been annotated with the **\_\_drv\_minIRQL** annotation and indicates either a coding error in the function or a misunderstanding of the function's contract in the annotations.
 
- 
-
- 
-
-
-
-
-

@@ -39,11 +39,3 @@ If the Code Analysis tool cannot determine the IRQL at which the driver is runni
 
 For a description of a similar situation, see [Warning 28121](28121-irq-execution-too-high.md).
 
- 
-
- 
-
-
-
-
-

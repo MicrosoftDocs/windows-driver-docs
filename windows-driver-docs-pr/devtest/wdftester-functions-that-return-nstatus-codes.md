@@ -359,11 +359,3 @@ Following is a list of KMDF DDIs that return NTSTATUS codes. Any of these DDIs c
 
 **WdfWorkItemCreate**
 
- 
-
- 
-
-
-
-
-

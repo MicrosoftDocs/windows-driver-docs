@@ -35,7 +35,7 @@ In this section:
 
 ## Workflow - Adding Event Tracing to Kernel-Mode Drivers
 
-![overview of process to add event tracing to kernel mode drivers.](images/etw-km-process.png)
+:::image type="content" source="images/etw-km-process.png" alt-text="Flowchart that shows the process to add event tracing to kernel-mode drivers.":::
 
 ## 1. Decide the type of events to raise and where to publish them
 

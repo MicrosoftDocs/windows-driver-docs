@@ -15,11 +15,3 @@ The use of the question mark message icon in a modal dialog box is no longer rec
 
 Therefore, do not use this question mark message symbol in your message boxes. The system continues to support its inclusion only for backward compatibility.
 
- 
-
- 
-
-
-
-
-

@@ -6,7 +6,6 @@ ms.date: 04/20/2017
 
 # WDK and MSBuild overview
 
-
 Visual Studio can manage multiple projects. This section describes the WDK build environment.
 
 A Visual Studio solution can consist of a single project or multiple projects: both driver projects and non-driver projects. Every project is associated with a platform toolset. The platform toolset extends and modifies the build process for a given target architecture in order to build a particular kind of binary. The binary can be a driver, a library, or an executable program.
@@ -15,13 +14,4 @@ The following figure shows a typical build process using the MSBuild platform. I
 
 For C/C++ native code (user mode and kernel mode) and managed code, the WDK installs the .NET Full Framework, Windows headers, libraries (user mode or kernel mode) and tools, .NET Tools and the VC compilers, CRT headers, and libraries. Along with these, to be able to build C/C++ projects with MSBuild, all the components required by the compiler must be installed.
 
-![figure shows the wdk and msbuild platform for a visual studio driver solution.](images/build-platform-msbuild.png)
-
- 
-
- 
-
-
-
-
-
+:::image type="content" source="images/build-platform-msbuild.png" alt-text="Diagram that shows the WDK and MSBuild platform for a Visual Studio driver solution.":::

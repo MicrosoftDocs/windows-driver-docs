@@ -26,11 +26,3 @@ To close the Defect Viewer, do either of the following:
 
 -   Click the **Close** (**X**) button in the far right corner of the Static Driver Verifier Report.
 
- 
-
- 
-
-
-
-
-

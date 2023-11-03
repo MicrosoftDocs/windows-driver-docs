@@ -215,12 +215,4 @@ The example above shows that MSBuild invokes **tracewpp.exe** only on b.c and te
 
 [WPP Software Tracing](wpp-software-tracing.md)
 
- 
-
- 
-
-
-
-
-
 

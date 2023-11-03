@@ -47,11 +47,3 @@ KeRaiseIrql(DISPATCH_LEVEL, &OldIrql);
 KeLowerIrql(OldIrql);
 ```
 
- 
-
- 
-
-
-
-
-
