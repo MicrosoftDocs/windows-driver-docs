@@ -9,6 +9,10 @@ prerelease: true
 
 This article shows examples of how to use the PairTool utility.
 
+> [!IMPORTANT]
+> PairTool is currently in PREVIEW.
+> This information relates to a prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
+
 ## /enum-protocols
 
 Discover what protocols are installed and supported on this version on Windows. Enumerating protocols can be useful to scope down endpoint discovery over specific protocols instead of all protocols. Aside from reducing many extra results, it can also be useful for performance. Discovery, particularly over wireless protocols, can be expensive in terms of power consumption and QoS, so should be avoided when not needed. Protocols like Bluetooth and WiFiDirect sometimes share the same radio hardware, which degrades the QoS of discovery when running at the same time. When QoS degrades, devices can't be discovered reliably. It's typically better not to use them both at the same time.

@@ -7,6 +7,10 @@ prerelease: true
 
 # PairTool command syntax
 
+> [!IMPORTANT]
+> PairTool is currently in PREVIEW.
+> This information relates to a prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
+
 To run PairTool, open a command prompt window and type a command using the following syntax and commands.
 
 ``` cmd
