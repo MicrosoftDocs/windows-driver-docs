@@ -35,11 +35,3 @@ if (SomeMemAllocFunction(&MyPtr) == true) {
 }
 ```
 
- 
-
- 
-
-
-
-
-

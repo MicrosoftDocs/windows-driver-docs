@@ -150,11 +150,3 @@ In the example above, MSBuild invokes stampinf.exe on both a.inf and b.inf, but 
 
  
 
- 
-
- 
-
-
-
-
-

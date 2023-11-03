@@ -21,11 +21,3 @@ Each entry will contain both global counters and individual counters, just as wi
 
 For an explanation of these statistics, see [Monitoring Global Counters](monitoring-global-counters.md) and [Monitoring Individual Counters](monitoring-individual-counters.md).
 
- 
-
- 
-
-
-
-
-

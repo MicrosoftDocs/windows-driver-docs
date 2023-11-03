@@ -37,11 +37,3 @@ The Code Analysis tool infers the current IRQL and reports this warning only whe
 
 For a description of a similar situation, see[Warning 28123](28123-inconsistent-irq-level-calls-high.md).
 
- 
-
- 
-
-
-
-
-

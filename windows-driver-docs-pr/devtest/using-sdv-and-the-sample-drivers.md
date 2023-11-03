@@ -14,11 +14,3 @@ To help you get started using Static Driver Verifier (SDV) you can run the tool 
 -   [SDV-FailDriver-NDIS](https://github.com/Microsoft/Windows-driver-samples/tree/main/tools/sdv/samples/SDV-FailDriver-NDIS)
 -   [SDV-FailDriver-STORPORT](https://github.com/Microsoft/Windows-driver-samples/tree/main/tools/sdv/samples/SDV-FailDriver-STORPORT)
 
- 
-
- 
-
-
-
-
-

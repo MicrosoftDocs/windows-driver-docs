@@ -21,11 +21,3 @@ This section includes:
 
 [Using \_\_sdv\_save\_adapter\_context to Track Adapter Context Fields](using---sdv-save-adapter-context-to-track-adapter-context-fields.md)
 
- 
-
- 
-
-
-
-
-

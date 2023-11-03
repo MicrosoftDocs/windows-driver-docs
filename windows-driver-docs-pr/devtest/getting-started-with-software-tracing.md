@@ -19,11 +19,3 @@ This section includes the following topics:
 
 [What is an autologger?](what-is-an-autologger-.md)
 
- 
-
- 
-
-
-
-
-

@@ -27,11 +27,3 @@ Stopping a trace session does not remove the session from the display or delete 
 
 TraceView uses the **EnableTrace** function to stop the trace session. For more information about this function, see the Microsoft Windows SDK documentation.
 
- 
-
- 
-
-
-
-
-

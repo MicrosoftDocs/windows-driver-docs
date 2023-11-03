@@ -45,11 +45,3 @@ The following code example avoids this warning.
 memset(b, 0, sizeof(*b));
 ```
 
- 
-
- 
-
-
-
-
-

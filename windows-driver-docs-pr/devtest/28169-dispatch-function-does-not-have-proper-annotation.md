@@ -39,11 +39,3 @@ _Dispatch_type_(IRP_MJ_SYSTEM_CONTROL)
 DRIVER_DISPATCH DispatchSystemControl;
 ```
 
- 
-
- 
-
-
-
-
-

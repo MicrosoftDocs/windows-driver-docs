@@ -65,11 +65,3 @@ These property settings are the common settings that are required to build any u
 <span id="WindowsDriver.UserMode.UMDF"></span><span id="windowsdriver.usermode.umdf"></span><span id="WINDOWSDRIVER.USERMODE.UMDF"></span>**WindowsDriver.UserMode.UMDF**  
 These property settings are the special settings that you must apply when you build a UMDF driver. MSBuild uses the **$(DriverType)** property to specify the driver type as **UMDF**, as in the following example: *&lt;DriverType&gt;UMDF&lt;/DriverType&gt;*.
 
- 
-
- 
-
-
-
-
-

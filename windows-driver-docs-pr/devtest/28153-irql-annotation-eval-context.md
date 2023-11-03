@@ -34,11 +34,3 @@ This warning indicates that the Code Analysis tool cannot interpret the function
 
 This warning can occur with any of the driver-specific annotations that mention an IRQL when the Code Analysis tool cannot evaluate the expression for the IRQL.
 
- 
-
- 
-
-
-
-
-
