@@ -63,7 +63,12 @@ The HAL could not obtain non-paged memory pool for a system critical requirement
 
 These critical memory allocations are made early in system initialization, and the HAL\_MEMORY\_ALLOCATION bug check is not expected. This bug check probably indicates some other critical error such as pool corruption or massive consumption.
 
- 
+
+
+## Resolution
+The [!analyze](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be helpful in determining the root cause.
+
+
 
 ## See Also
 
