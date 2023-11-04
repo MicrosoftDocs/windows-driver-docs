@@ -9,7 +9,7 @@ ms.date: 03/08/2023
 
 [Debugging Tools for Windows](debugger-download-tools.md), supports kernel debugging over a network. This article describes how to set up network debugging automatically by using the *kdnet.exe* setup tool.
 
-The computer that runs the debugger is called the *host computer*, and the computer being debugged is called the *target computer*. The host computer must be running **Windows 7** or later, and the target computer must be running **Windows 8** or later.
+The computer that runs the debugger is called the host computer, and the computer being debugged is called the target computer. The host computer must be running **Windows 7** or later, and the target computer must be running **Windows 8** or later.
 
 ## Determine the IP address of the host computer
 
@@ -71,7 +71,7 @@ Use the kdnet.exe utility to automatically configure the debugger settings on th
 7. Enter the following command to set the IP address of the host system and generate a unique connection key. Use the IP address or the name of the host system. Pick a unique port address for each target/host pair that you work with, within the recommended range of 50000-50039.
 
    ```console
-   C:\>kdnet.exe <HostComputerIPAddress> <YourDebugPort> 
+   C:\KDNET>kdnet.exe <HostComputerIPAddress> <YourDebugPort> 
    
    Enabling network debugging on Intel(R) 82577LM Gigabit Network Connection.
    Key=2steg4fzbj2sz.23418vzkd4ko3.1g34ou07z4pev.1sp3yo9yz874p
@@ -81,12 +81,12 @@ Use the kdnet.exe utility to automatically configure the debugger settings on th
 
 ## Connect WinDbg to the target for kernel debugging
 
-On the host computer, open **WinDbg**. On the **File** menu, select **Kernel Debug**. In the Kernel Debugging dialog, open the **Net** tab. Paste in your port number and key that you saved in the notepad .txt file earlier. Select **OK**.
+On the host computer, open WinDbg. On the **File** menu, select **Kernel Debug**. In the Kernel Debugging dialog, open the **Net** tab. Paste in your port number and key saved in the notepad .txt file earlier. Select **OK**.
 
-You can also start a **WinDbg** session by opening a command prompt and entering the following command. \<YourPort> is the port you selected previously, and \<YourKey> is the key that was returned by kdnet.exe previously. Paste the key that you saved to the notepad .txt file earlier.
+You can also start a WinDbg session by opening a command prompt and entering the following command. \<YourPort> is the port you selected previously, and \<YourKey> is the key that was returned by kdnet.exe previously. Paste the key that you saved to the notepad .txt file earlier.
 
    ```console
-  windbg -k -d net:port=<YourDebugPort>,key=<YourKey> 
+  windbg.exe -k -d net:port=<YourDebugPort>,key=<YourKey> 
    ```
 
 The optional `-d` parameter shown in the example, enables early break-in. For more information, see [WinDbg command-line options](windbg-command-line-options.md).
@@ -120,7 +120,7 @@ After the target PC restarts, the debugger should connect automatically.
 
 ## Troubleshooting tips
 
-**Debugging application must be allowed through firewall**
+**Debugging applications must be allowed through a firewall**
 
 On the host side, where the debugger is running, all types of networking must be enabled to allow the debugger to communicate with the target through the firewall.
 
@@ -180,7 +180,7 @@ If both hypervisor and kernel debug are enabled, the hypervisor port is set to `
 
 ### Example usage
 
-Use the - bkw option to enable **bootmgr**, **kernel** and **winload** debugging.
+Use the - bkw option to enable bootmgr, kernel and winload debugging.
 
 ```console
 C:\>kdnet.exe <HostComputerIPAddress> <YourDebugPort> -bkw
