@@ -12,12 +12,12 @@ For information about how to get Debugging Tools for Windows, see [Download and 
 
 After you install the debugging tools, find the installation directories for the 64-bit (x64) and 32-bit (x86) versions of the tools. For example:
 
-- C:\\Program Files (x86)\\Windows Kits\\10\\Debuggers\\x64
-- C:\\Program Files (x86)\\Windows Kits\\10\\Debuggers\\x86
+- **C:\\Program Files (x86)\\Windows Kits\\10\\Debuggers\\x64**
+- **C:\\Program Files (x86)\\Windows Kits\\10\\Debuggers\\x86**
 
 ## Open Notepad and attach WinDbg
 
-1. Go to your installation directory, and open WinDbg.exe.
+1. Go to your installation directory, and open **WinDbg.exe**.
 
 2. On the **File** menu, select **Open Executable**. In the Open Executable dialog, go to the folder that contains notepad.exe. (The notepad.exe file usually is in C:\\Windows\\System32.) For **File name**, enter **notepad.exe**. Select **Open**.
 
