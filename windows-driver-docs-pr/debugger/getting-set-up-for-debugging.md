@@ -7,7 +7,8 @@ ms.date: 02/20/2020
 
 # Setting Up Debugging (Kernel-Mode and User-Mode)
 
-After you set up kernel-mode debugging, you can use WinDbg, or KD to establish a debugging session. After you set up user-mode debugging, you can use WinDbg, CDB, or NTSD to establish a debugging session.
+- After you set up kernel-mode debugging, you can use **WinDbg**, or **KD** to establish a debugging session.
+- After you set up user-mode debugging, you can use **WinDbg**, **CDB**, or **NTSD** to establish a debugging session.
 
 **Note**  The Windows debuggers are included in Debugging Tools for Windows. These debuggers are different from the Visual Studio debugger, which is included with Visual Studio. For more information, see [Windows Debugging](index.md).
 

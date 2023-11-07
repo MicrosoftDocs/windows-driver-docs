@@ -58,7 +58,7 @@ For information about the tasks required to implement UCSI in the BIOS, see [Int
 
 ## UCM-UCSI ACPI device for UCSI 2.0 and greater
 
-Starting in Windows 11, version 22H2 September Update, the Windows UCM-UCSI ACPI device drivers support UCSI specification version 2.0 and 2.1. The UCSI specification 2.0 has breaking changes in the memory mapping of its data structures as defined in [UCSI specification Table 3-1 Data Structures](https://www.intel.com/content/www/us/en/products/docs/io/universal-serial-bus/usb-type-c-ucsi-spec.html). To maintain backward compatibility, Windows requires the UCSI PPM of specification version 2.0 or greater to implement the following _DSM function under the **UCM-UCSI ACPI device** in ACPI firmware and return a nonzero value to indicate that UCSI OPM should follow the reported UCSI specification version.
+Starting in Windows 11, version 23H2, the Windows UCM-UCSI ACPI device drivers support UCSI specification version 2.0 and 2.1. The UCSI specification 2.0 has breaking changes in the memory mapping of its data structures as defined in [UCSI specification Table 3-1 Data Structures](https://www.intel.com/content/www/us/en/products/docs/io/universal-serial-bus/usb-type-c-ucsi-spec.html). To maintain backward compatibility, Windows requires the UCSI PPM of specification version 2.0 or greater to implement the following _DSM function under the **UCM-UCSI ACPI device** in ACPI firmware and return a nonzero value to indicate that UCSI OPM should follow the reported UCSI specification version.
 
 - **Arg0**: UUID = 6F8398C2-7CA4-11E4-AD36-631042B5008F
 - **Arg1**: Revision ID  = 0
