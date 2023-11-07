@@ -7,9 +7,9 @@ ms.date: 03/08/2023
 
 # Set up KDNET network kernel debugging automatically
 
-Debugging Tools for Windows supports kernel debugging over a network. This article describes how to set up network debugging automatically by using the *kdnet.exe* setup tool.
+[Debugging Tools for Windows](debugger-download-tools.md), supports kernel debugging over a network. This article describes how to set up network debugging automatically by using the *kdnet.exe* setup tool.
 
-The computer that runs the debugger is called the *host computer*, and the computer being debugged is called the *target computer*. The host computer must be running Windows 7 or later, and the target computer must be running Windows 8 or later.
+The computer that runs the debugger is called the host computer, and the computer being debugged is called the target computer. The host computer must be running **Windows 7** or later, and the target computer must be running **Windows 8** or later.
 
 ## Determine the IP address of the host computer
 
@@ -38,7 +38,7 @@ Use the kdnet.exe utility to automatically configure the debugger settings on th
 
 1. Confirm that the Windows Debugging Tools are installed on the host system. For information on downloading and installing the debugger tools, see [Debugging Tools for Windows](debugger-download-tools.md). 
 
-2. Locate the kdnet.exe and *VerifiedNICList.xml* files. By default, the files are located in the following location:
+2. Locate the *kdnet.exe* and *VerifiedNICList.xml* files. By default, the files are located in the following location:
 
    ```console
    C:\Program Files (x86)\Windows Kits\10\Debuggers\x64
@@ -51,7 +51,7 @@ Use the kdnet.exe utility to automatically configure the debugger settings on th
    
 3. On the host computer, copy the two files to a network share or thumb drive so that they're available on the target computer.
 
-4. On the target computer, create a C:\KDNET directory and copy the kdnet.exe and VerifiedNICList.xml files to that directory.
+4. On the target computer, create a **C:\KDNET** directory and copy the *kdnet.exe* and *VerifiedNICList.xml* files to that directory.
 
    > [!IMPORTANT]
    > Before using kdnet.exe to change boot information, you may need to temporarily suspend Windows security features such as BitLocker and Secure Boot on the test PC.
@@ -66,30 +66,30 @@ Use the kdnet.exe utility to automatically configure the debugger settings on th
    This Microsoft hypervisor supports using KDNET in guest VMs.
    ```
 
-6. When the output from kdnet.exe indicates that network adapter on the target is supported, you can proceed.
+6. When the output from kdnet.exe indicates that the network adapter on the target is supported, you can proceed.
 
 7. Enter the following command to set the IP address of the host system and generate a unique connection key. Use the IP address or the name of the host system. Pick a unique port address for each target/host pair that you work with, within the recommended range of 50000-50039.
 
    ```console
-   C:\>kdnet.exe <HostComputerIPAddress> <YourDebugPort> 
+   C:\KDNET>kdnet.exe <HostComputerIPAddress> <YourDebugPort> 
    
    Enabling network debugging on Intel(R) 82577LM Gigabit Network Connection.
    Key=2steg4fzbj2sz.23418vzkd4ko3.1g34ou07z4pev.1sp3yo9yz874p
    ```
 
-8. Copy the returned key into a notepad .txt file.
+8. Copy the returned key into a *notepad .txt* file.
 
 ## Connect WinDbg to the target for kernel debugging
 
-On the host computer, open WinDbg. On the **File** menu, select **Kernel Debug**. In the Kernel Debugging dialog, open the **Net** tab. Paste in your port number and key that you saved in the notepad .txt file earlier. Select **OK**.
+On the host computer, open WinDbg. On the **File** menu, select **Kernel Debug**. In the Kernel Debugging dialog, open the **Net** tab. Paste in your port number and key saved in the notepad .txt file earlier. Select **OK**.
 
 You can also start a WinDbg session by opening a command prompt and entering the following command. \<YourPort> is the port you selected previously, and \<YourKey> is the key that was returned by kdnet.exe previously. Paste the key that you saved to the notepad .txt file earlier.
 
    ```console
-  windbg -k -d net:port=<YourDebugPort>,key=<YourKey> 
+  windbg.exe -k -d net:port=<YourDebugPort>,key=<YourKey> 
    ```
 
-The optional `-d` parameter shown in the example, enables early break in. For more information, see [WinDbg command-line options](windbg-command-line-options.md).
+The optional `-d` parameter shown in the example, enables early break-in. For more information, see [WinDbg command-line options](windbg-command-line-options.md).
 
 If you're prompted to allow WinDbg to access the port through the firewall, allow WinDbg to access the port for **all three** of the different network types.
 
@@ -120,7 +120,7 @@ After the target PC restarts, the debugger should connect automatically.
 
 ## Troubleshooting tips
 
-**Debugging application must be allowed through firewall**
+**Debugging applications must be allowed through a firewall**
 
 On the host side, where the debugger is running, all types of networking must be enabled to allow the debugger to communicate with the target through the firewall.
 
@@ -130,7 +130,7 @@ Use the Control Panel to allow access through the firewall.
 
    - (WinDbg) In the list of applications, locate *WinDbg engine process (TCP) (all)*.
 
-   - (WinDbg (Clasic)) In the list of applications, locate *Windows GUI Symbolic Debugger* and *Windows Kernel Debugger*.
+   - (WinDbg (Classic)) In the list of applications, locate *Windows GUI Symbolic Debugger* and *Windows Kernel Debugger*.
 
 3. Use the checkboxes to allow those two applications through **all three** of the different network types.
 
