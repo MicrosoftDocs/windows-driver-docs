@@ -65,13 +65,13 @@ The `Dump1Keys` registry value is a bit map of the first hot key to use. For exa
 The values for the first hot key are described in the following table.
 
 | Value | First Key used in the keyboard shortcut sequence |
-|---|---|
-| 0x01 | Rightmost SHIFT key |
-| 0x02 | Rightmost CTRL key |
-| 0x04 | Rightmost ALT key |
-| 0x10 | Leftmost SHIFT key |
-| 0x20 | Leftmost CTRL key |
-| 0x40 | Leftmost ALT key |
+|-------|--------------------------------------------------|
+| 0x01  | Rightmost SHIFT key                              |
+| 0x02  | Rightmost CTRL key                               |
+| 0x04  | Rightmost ALT key                                |
+| 0x10  | Leftmost SHIFT key                               |
+| 0x20  | Leftmost CTRL key                                |
+| 0x40  | Leftmost ALT key                                 |
 
 You can assign `Dump1Keys` a value that enables one or more keys as the first key used in the keyboard shortcut sequence. For example, assign `Dump1Keys` a value of 0x11 to define both the rightmost and leftmost SHIFT keys as the first key in the keyboard shortcut sequence.
 
@@ -101,7 +101,7 @@ Index 124 (sysreq) is a special case because an 84-key keyboard has a different 
 
 If you define alternate keyboard shortcuts to force a system crash from a USB or PS/2 keyboard, you must either set the `CrashOnCtrlScroll` registry value to 0 or remove it from the registry.
 
-Example: In this sceanrio, a laptop uses a PS2 keyboard driver and an external HID keyboard is attached. Setting both values provides the ability to trigger a manual system crash from either keyboard. A manual system crash can be forced by holding the rightmost control key and pressing the spacebar twice when the following registry key is set.
+Example: In this scenario, a laptop uses a PS2 keyboard driver and an external HID keyboard is attached. Setting both values provides the ability to trigger a manual system crash from either keyboard. A manual system crash can be forced by holding the rightmost control key and pressing the spacebar twice when the following registry key is set.
 
 ```reg
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\i8042prt\crashdump]
