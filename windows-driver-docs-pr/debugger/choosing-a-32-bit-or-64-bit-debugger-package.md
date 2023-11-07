@@ -8,7 +8,7 @@ ms.date: 05/23/2017
 # Choosing the 32-bit or 64-bit Debugging Tools
 
 
-When you [Install Debugging Tools for Windows](https://learn.microsoft.com/windows-hardware/drivers/debugger), you get both a 32-bit set of tools and a 64-bit set of tools.
+When you [Install Debugging Tools for Windows](debugger-download-tools.md), you get both a 32-bit set of tools and a 64-bit set of tools.
 
 If you are using one of the other debugging environments (WinDbg, KD, CDB, or NTSD), you have to make the choice yourself. To determine which set of debugging tools to use, you need to know the type of processor that is running on your host computer and whether the host computer is running a 32- or 64-bit version of Windows.
 
