@@ -30,7 +30,7 @@ Configure the following settings to enable a system crash using the keyboard:
 
 4. With Hyper-V keyboards, you must enable the keyboard-initiated crash in the registry. In the registry key **HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\hyperkbd\Parameters**, create a value named `CrashOnCtrlScroll`, and set it equal to a `REG_DWORD` value of 0x01.
 
-Some laptops use the PS/2 driver for the built-in keyboard and also support external HID keybords.  For these systems, consider creating both the USB and PS/2 registry keys to allow the use of either keyboard.
+Some laptops use the PS/2 driver for the built-in keyboard and also support external HID keyboards.  For these systems, consider creating both the USB and PS/2 registry keys to allow the use of either keyboard.
 
 You must restart the system for these settings to take effect.
 
@@ -60,7 +60,7 @@ You must create the following registry `REG_DWORD` values under these subkeys:
 
 ## Dump1Keys
 
-The `Dump1Keys` registry value is a bit map of the first hot key to use. For example, instead of using the rightmost CTRL key to initiate the hot key sequence, you can set the first hot key to be the leftmost SHIFT key.
+The `Dump1Keys` registry value is a bit map of the first hotkey to use. For example, instead of using the rightmost CTRL key to initiate the hotkey sequence, you can set the first hotkey to be the leftmost SHIFT key.
 
 The values for the first hot key are described in the following table.
 
@@ -77,7 +77,7 @@ You can assign `Dump1Keys` a value that enables one or more keys as the first ke
 
 **Dump2Key**  
 
-The `Dump2Key` registry value is the index into the scan code table for the keyboard layout of the target computer. See the actual table in the driver:
+The `Dump2Key` registry value is the index in the scan code table for the keyboard layout of the target computer. See the actual table in the driver:
 
 ```cpp
 const UCHAR keyToScanTbl[134] = { 
@@ -101,7 +101,7 @@ Index 124 (sysreq) is a special case because an 84-key keyboard has a different 
 
 If you define alternate keyboard shortcuts to force a system crash from a USB or PS/2 keyboard, you must either set the `CrashOnCtrlScroll` registry value to 0 or remove it from the registry.
 
-Example: In this scenario, a laptop uses a PS2 keyboard driver and an external HID keyboard is attached. Setting both values provides the ability to trigger a manual system crash from either keyboard. A manual system crash can be forced by holding the rightmost control key and pressing the spacebar twice when the following registry key is set.
+Example: In this scenario, a laptop uses a PS2 keyboard driver, and an external HID keyboard is attached. Setting both values provides the ability to trigger a manual system crash from either keyboard. A manual system crash can be forced by holding the rightmost control key and pressing the spacebar twice when the following registry key is set.
 
 ```reg
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\i8042prt\crashdump]
@@ -115,6 +115,6 @@ Example: In this scenario, a laptop uses a PS2 keyboard driver and an external H
 
 ## Limitations
 
-It's possible but rare for a system to freeze in such a way that the keyboard shortcut sequence doesn't work. Using the keyboard shortcut sequence to initiate a crash will work even in many instances where CTRL+ALT+DELETE doesn't work.
+It's possible but rare for a system to freeze in such a way that the keyboard shortcut sequence doesn't work. Using the keyboard shortcut sequence to initiate a crash will work even in many instances where **CTRL+ALT+DELETE** doesn't work.
 
-Forcing a system crash from the keyboard doesn't work if the computer stops responding at a high interrupt request level (IRQL). This limitation exists because the Kbdhid.sys driver, which allows the memory dump process to run, operates at a lower IRQL than the i8042prt.sys driver.
+Forcing a system crash from the keyboard doesn't work if the computer stops responding at a high interrupt request level (IRQL). This limitation exists because the **Kbdhid.sys** driver, which allows the memory dump process to run, operates at a lower IRQL than the **i8042prt.sys** driver.
