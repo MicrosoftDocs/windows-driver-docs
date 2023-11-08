@@ -84,8 +84,8 @@
       items: 
       - name: "Planning your desktop COSA database submission"
         href: planning-your-desktop-cosa-database-submission.md
-      - name: "Mobile operator configuration portal overview"
-        href: mobile-operator-configuration-portal-overview.md
+      - name: "Mobile operator portal guide"
+        href: mobile-operator-portal-guide.md
       - name: "Desktop COSA database settings"
         href: desktop-cosa-database-settings.md
       - name: "Testing your desktop COSA database submission"

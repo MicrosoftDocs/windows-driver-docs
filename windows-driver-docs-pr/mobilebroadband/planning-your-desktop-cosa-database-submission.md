@@ -1,7 +1,7 @@
 ---
 title: Planning your desktop COSA database submission
-description: Planning your desktop COSA database submission
-ms.date: 11/03/2023
+description: Use this article plan for adding a new APN to the baseline COSA database that ships with Windows desktop devices, or to update an existing APN.
+ms.date: 11/07/2023
 ---
 
 # Planning your desktop COSA database submission
@@ -9,19 +9,25 @@ ms.date: 11/03/2023
 > [!IMPORTANT]
 > Starting in Windows 10, version 1703, the APN database is replaced by a new format called COSA. Windows 8, Windows 8.1, and versions of Windows 10 before version 1703 will continue to use the APN database while Windows 10, version 1703 and later use COSA. For more information about COSA, see [COSA overview](cosa-overview.md).
 
-Use the sections in this topic when you are planning to add a new APN to the baseline COSA database that ships with Windows desktop devices, or update an existing one.
+Use this article plan for adding a new APN to the baseline COSA database that ships with Windows desktop devices, or to update an existing APN.
 
-## The APN update process
+## The COSA update process
 
-To connect to a mobile broadband network, the user is typically required to provide the following information:
+To connect to a mobile broadband network, the user provides the following information:
 
-- On GSM networks, an Access Point Name (APN) such as "data.contoso.com" is required.
-- On CDMA networks, an access string that includes a special dial code such as "\#777" or a Network Access Identifier such as <somebody@contoso.com> is required.
+- On GSM networks, an Access Point Name (APN) such as "data.contoso.com".
+- On CDMA networks, an access string that includes a special dial code such as "\#777" or a Network Access Identifier such as "somebody@contoso.com".
 - A username and password for the network connection.
 
-COSA and the APN connectivity database are updated by using Windows Update. The figure below shows the overall submission process.
+The COSA connectivity database is updated by using Windows Update. The figure below shows the overall submission process.
 
 :::image type="content" source="images/COSA_and_APN_database_submission_process_diagram.png" alt-text="Flowchart that shows the COSA database submission process.":::
+
+## Use the Microsoft mobile operator portal
+
+The Microsoft mobile operator portal (MOP) is a web-based tool that allows Mobile Operators (MOs) to submit APN updates to Microsoft. The MOP is used to submit APN updates for the COSA database. The MOP is also used to submit APN updates for Windows 8, Windows 8.1, and versions of Windows 10 before Windows 10, version 1703. For more information about the MOP, see [Microsoft mobile operator portal](https://aka.ms/moconfig).
+
+For more information about the mobile operator portal, see the [Mobile operator portal guide](mobile-operator-portal-guide.md).
 
 ## Complete the APN/COSA update spreadsheet
 
@@ -29,7 +35,7 @@ The APN update spreadsheet is used to gather the required information so Microso
 
 Use the following link to download the latest APN update spreadsheet: <https://go.microsoft.com/fwlink/p/?linkid=851213>
 
-For more info about the settings in the APN update spreadsheet, see [Desktop COSA database settings](desktop-cosa-apn-database-settings.md).
+For more info about the settings in the COSA database, see [Desktop COSA database settings](desktop-cosa-database-settings.md).
 
 ## Considerations when completing the spreadsheet
 
@@ -111,3 +117,9 @@ Note the following for both COSA and APN database.
   - For CDMA networks, a Network Access Identifier (NAI) is used to connect to the Internet.
 
 Once your spreadsheet is complete, you can test the APNs you’ve entered. For the next steps in testing your APN update, see [Testing your desktop COSA database submission](testing-your-desktop-cosa-database-submission.md).
+
+## Related articles
+
+- [Microsoft mobile operator portal](https://aka.ms/moconfig)
+- [Testing your desktop COSA database submission](testing-your-desktop-cosa-database-submission.md)
+- [Submitting a desktop COSA database update](submitting-a-desktop-cosa-database-update.md)
