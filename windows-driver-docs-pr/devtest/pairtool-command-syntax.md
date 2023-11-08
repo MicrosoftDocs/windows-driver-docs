@@ -67,7 +67,7 @@ Flags:
 
 - `/continuous` - Continue enumerating until Ctrl+C is pressed.
 
-- /format - Output format as text, XML, or CSV. Valid options are `txt`, `xml`, or `csv`.
+- `/format` - Output format as text, XML, or CSV. Valid options are `txt`, `xml`, or `csv`.
 
 - `/output-file` - Output file.
 
