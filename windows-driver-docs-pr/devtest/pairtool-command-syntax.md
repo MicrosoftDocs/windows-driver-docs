@@ -1,7 +1,7 @@
 ---
 title: PairTool command syntax
 description: How to run PairTool, including syntax and parameters.
-ms.date: 11/03/2023
+ms.date: 11/08/2023
 ---
 
 # PairTool command syntax
@@ -67,7 +67,7 @@ Flags:
 
 - `/continuous` - Continue enumerating until Ctrl+C is pressed.
 
-- /format - Output format as text, XML, or CSV. Valid options are `txt`, `xml`, or `csv`.
+- `/format` - Output format as text, XML, or CSV. Valid options are `txt`, `xml`, or `csv`.
 
 - `/output-file` - Output file.
 
