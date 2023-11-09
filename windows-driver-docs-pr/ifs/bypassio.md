@@ -3,7 +3,7 @@ title: BypassIO for filter drivers
 description: About BypassIO
 keywords:
 - filter drivers WDK file system , BypassIO
-ms.date: 11/07/2023
+ms.date: 11/09/2023
 prerelease: false
 ---
 
@@ -39,7 +39,7 @@ Starting in Windows 11, BypassIO is supported as follows:
 
 ## How BypassIO works
 
-When [**NtReadFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntreadfile) is called on a BypassIO-enabled **FileHandle**, the operation typically doesn't flow through the traditional I/O stack, which traverses the entire file system stack, volume stack, and storage stack. Instead, no IRP is issued, and the operation flows directly from the I/O manager to the (NTFS) file system, then to the disk (*classpnp*) driver, and then to the StorNVMe driver. With a fully BypassIO-enabled **FileHandle**:
+When [**NtReadFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntreadfile) is called on a BypassIO-enabled **FileHandle**, the operation typically doesn't flow through the traditional I/O stack, which traverses the entire file system stack, volume stack, and storage stack. Instead, the operation flows directly from the I/O manager to the (NTFS) file system, then to the disk (*classpnp*) driver, and then to the StorNVMe driver. With a fully BypassIO-enabled **FileHandle**:
 
 * All file system filters are skipped.
 * All volume stack filters are skipped.
@@ -106,7 +106,7 @@ Minifilters should add support for BypassIO requests, which are sent through the
 A *fsutil* command has been added that issues an **FSCTL_MANAGE_BYPASS_IO** specifying the **FS_BPIO_OP_QUERY** operation. The displayed results identify the first driver that is preventing BypassIO and the reason why.
 
 ``` Command
-> fsutil bypassIo /v state <path>
+> fsutil bypassIo state <path> /v
 ```
 
 Where *\<path>* can be a volume, a directory, or a specific filename, and */v* is an optional verbose flag.
@@ -120,7 +120,7 @@ Driver: wof.sys
 Reason: The specified minifilter does not support bypass IO.
 ```
 
-In this second example, executing ```fsutil bypassIO /v state c:\``` on a system where BitLocker is enabled results in the following output:
+In this second example, executing ```fsutil bypassIO state c:\ /v``` on a system where BitLocker is enabled results in the following output:
 
 ``` output
 BypassIo on "c:\" is partially supported
