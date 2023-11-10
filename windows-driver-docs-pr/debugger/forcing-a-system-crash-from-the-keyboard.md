@@ -9,7 +9,7 @@ ms.date: 02/01/2023
 
 The following types of keyboards can cause a system crash directly:
 
-- **PS/2 keyboards connected on i8042prt ports**   
+- **PS/2 keyboards connected on i8042prt ports**
   This feature is available in Windows 2000 and later versions of the Windows operating system.
 
 - **USB keyboards**  
@@ -24,11 +24,11 @@ Configure the following settings to enable a system crash using the keyboard:
 
 1. If you want a crash dump file to be written, you must enable such dump files. Choose the path and file name, and select the size of the dump file. For more information, see [Enabling a kernel-mode dump file](enabling-a-kernel-mode-dump-file.md).
 
-2. With PS/2 keyboards, you must enable the keyboard-initiated crash in the registry. In the registry key **HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\i8042prt\Parameters**, create a value named `CrashOnCtrlScroll`, and set it equal to a `REG_DWORD` value of 0x01.
+2. With PS/2 keyboards, you must enable the keyboard-initiated crash in the registry. In the registry key `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\i8042prt\Parameters`, create a value named `CrashOnCtrlScroll`, and set it equal to a `REG_DWORD` value of 0x01.
 
-3. With USB keyboards, you must enable the keyboard-initiated crash in the registry. In the registry key **HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\kbdhid\Parameters**, create a value named `CrashOnCtrlScroll`, and set it equal to a `REG_DWORD` value of 0x01.
+3. With USB keyboards, you must enable the keyboard-initiated crash in the registry. In the registry key `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\kbdhid\Parameters`, create a value named `CrashOnCtrlScroll`, and set it equal to a `REG_DWORD` value of 0x01.
 
-4. With Hyper-V keyboards, you must enable the keyboard-initiated crash in the registry. In the registry key **HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\hyperkbd\Parameters**, create a value named `CrashOnCtrlScroll`, and set it equal to a `REG_DWORD` value of 0x01.
+4. With Hyper-V keyboards, you must enable the keyboard-initiated crash in the registry. In the registry key `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\hyperkbd\Parameters`, create a value named `CrashOnCtrlScroll`, and set it equal to a `REG_DWORD` value of 0x01.
 
 Some laptops use the PS/2 driver for the built-in keyboard and also support external HID keyboards.  For these systems, consider creating both the USB and PS/2 registry keys to allow the use of either keyboard.
 
@@ -46,15 +46,15 @@ You can configure alternate values under the following registry subkeys for keyb
 
 - For PS/2 keyboards:
 
-    **HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\i8042prt\crashdump**
+    `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\i8042prt\crashdump`
 
 - For USB keyboards:
 
-    **HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\kbdhid\crashdump**
+    `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\kbdhid\crashdump`
 
 - For Hyper-V keyboards:
 
-    **HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\hyperkbd\crashdump**
+    `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\hyperkbd\crashdump`
 
 You must create the following registry `REG_DWORD` values under these subkeys:
 
