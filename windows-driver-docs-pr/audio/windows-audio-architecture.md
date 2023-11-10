@@ -1,20 +1,20 @@
 ---
 title: Windows Audio Architecture
-description: This topic provided a high level summary of the Windows 10 audio architecture.
+description: This topic provided a high level summary of the Windows 11 audio architecture.
 ms.date: 04/20/2017
 ---
 
 # Windows Audio Architecture
 
 
-This topic provided a high level summary of the Windows 10 audio architecture.
+This topic provided a high level summary of the Windows 11 audio architecture.
 
-## <span id="Windows_10_Audio_Stack_Diagram"></span><span id="windows_10_audio_stack_diagram"></span><span id="WINDOWS_10_AUDIO_STACK_DIAGRAM"></span>Windows 10 Audio Stack Diagram
+## <span id="Windows_10_Audio_Stack_Diagram"></span><span id="windows_10_audio_stack_diagram"></span><span id="WINDOWS_10_AUDIO_STACK_DIAGRAM"></span>Windows 11 Audio Stack Diagram
 
 
-This diagram provides a summary of the major elements of the Windows 10 audio stack.
+This diagram provides a summary of the major elements of the Windows 11 audio stack.
 
-![windows 10 audio stack diagram showing apps, audio engine, drivers and hardware .](images/audio-windows-10-stack-diagram.png)
+![windows 11 audio stack diagram showing apps, audio engine, drivers and hardware .](images/audio-windows-10-stack-diagram.png)
 
 ## <span id="APIs"></span><span id="apis"></span><span id="APIS"></span>APIs
 
