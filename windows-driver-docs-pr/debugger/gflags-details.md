@@ -53,10 +53,10 @@ GFlags settings that are saved between sessions are stored in the registry. You 
 |Program-specific settings ("Image file") for all users of the computer.|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\\*ImageFileName*\\**GlobalFlag**|
 |Silent exit settings for a specific program ("Silent Process Exit") for all users of the computer.|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SilentProcessExit\\***ImageFileName***|
 |Page heap options for an image file for all users of the computer|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\\*ImageFileName*\\**PageHeapFlags**
-|User mode stack trace database size (**tracedb**)|HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\\*ImageFileName*\\**StackTraceDatabaseSizeInMb**|
-|Create user mode stack trace database (ust, 0x1000) for an image file|Windows adds the image file name to the value of the USTEnabled registry entry (HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\\**USTEnabled**).
-|Load image using large pages if possible|HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\\*ImageFileName*\\**UseLargePages**.
-|Special Pool (Kernel Special Pool Tag)|HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\\**PoolTag**|
-Verify Start / Verify End|HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\PoolTagOverruns. The **Verify Start** option sets the value to 0. The **Verify End** option sets the value to 1.
-|Debugger for an image file|HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\\*ImageFileName*\\**Debugger**
-|Object Reference Tracing|HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Kernel\\**ObTraceProcessName**, **ObTracePermanent** and **ObTracePoolTags**
+|User mode stack trace database size (**tracedb**)|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\\*ImageFileName*\\**StackTraceDatabaseSizeInMb**|
+|Create user mode stack trace database (ust, 0x1000) for an image file|Windows adds the image file name to the value of the USTEnabled registry entry (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\\**USTEnabled**).
+|Load image using large pages if possible|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\\*ImageFileName*\\**UseLargePages**.
+|Special Pool (Kernel Special Pool Tag)|HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\\**PoolTag**|
+Verify Start / Verify End|HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\PoolTagOverruns. The **Verify Start** option sets the value to 0. The **Verify End** option sets the value to 1.
+|Debugger for an image file|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\\*ImageFileName*\\**Debugger**
+|Object Reference Tracing|HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Kernel\\**ObTraceProcessName**, **ObTracePermanent** and **ObTracePoolTags**
