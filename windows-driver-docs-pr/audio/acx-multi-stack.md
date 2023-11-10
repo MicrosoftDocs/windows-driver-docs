@@ -14,6 +14,9 @@ For general information about the ACX, see [ACX audio class extensions overview
 
 For basic information on ACX targets, see [ACX targets and driver synchronization](acx-targets.md) and [ACX IO request packet IRPs](acx-irps.md).
 
+>[!NOTE]
+> The ACX headers and libraries are not included in the  WDK 10.0.22621.2428 (released October 24, 2023), but are available in previous versions, as well as the latest (25000 series builds) Insider Preview of the WDK. For more information about preview versions of the WDK, see [Installing preview versions of the Windows Driver Kit (WDK)](../installing-preview-versions-wdk.md).
+
 ## Single-Stack audio drivers
 
 Legacy PortCls and KS audio class drivers only support “single stack” audio drivers. The legacy audio framework communicates and interface with only one miniport driver. It is up to the miniport driver to manage the communication and synchronization with other driver stacks when necessary.  

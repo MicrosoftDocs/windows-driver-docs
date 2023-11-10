@@ -11,6 +11,9 @@ This topic provides a summary of the Audio Class eXtensions (ACX) targets and dr
 
 For general information about the ACX, see [ACX audio class extensions overview](acx-audio-class-extensions-overview.md) and [Summary of ACX Objects](acx-summary-of-objects.md). For information about IRPs, see [ACX IO request packet IRPs](acx-irps.md).
 
+>[!NOTE]
+> The ACX headers and libraries are not included in the  WDK 10.0.22621.2428 (released October 24, 2023), but are available in previous versions, as well as the latest (25000 series builds) Insider Preview of the WDK. For more information about preview versions of the WDK, see [Installing preview versions of the Windows Driver Kit (WDK)](../installing-preview-versions-wdk.md).
+
 ## ACX targets
 
 ACX uses [WdfIoTarget](/windows-hardware/drivers/ddi/wdfiotarget/) to facilitate communications between ACX objects, circuits, pins, streams, elements and circuit factories. WdfIoTarget is an existing WDF abstraction to facilitate the communication between two different stacks.

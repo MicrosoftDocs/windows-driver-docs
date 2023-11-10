@@ -9,6 +9,9 @@ ms.localizationpriority: medium
 
 This topic discusses ACX streaming and the associated buffering, which is critical to a glitch free audio experience. It describes the the mechanisms used by the driver to communicate about the stream state and manage the buffer for the stream. For a list of common ACX audio terms and an introduction to ACX, see [ACX audio class extensions overview](acx-audio-class-extensions-overview.md).
 
+>[!NOTE]
+> The ACX headers and libraries are not included in the  WDK 10.0.22621.2428 (released October 24, 2023), but are available in previous versions, as well as the latest (25000 series builds) Insider Preview of the WDK. For more information about preview versions of the WDK, see [Installing preview versions of the Windows Driver Kit (WDK)](../installing-preview-versions-wdk.md).
+
 ## ACX streaming types
 
 An AcxStream represents an audio stream on a specific circuit’s hardware. An AcxStream may aggregate one or more AcxElements-like objects.

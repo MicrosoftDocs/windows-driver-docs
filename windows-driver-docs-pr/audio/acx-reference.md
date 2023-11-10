@@ -11,6 +11,9 @@ This topic describes the header level reference documentation for the ACX audio 
 
 For a general overview of ACX, see [ACX audio class extensions overview](acx-audio-class-extensions-overview.md). ACX is based on the Windows Driver Framework (WDF) and WDF reference topics can also be useful when looking at the functions and callbacks in ACX. For more information about WDF see [Introduction to Framework Objects](../wdf/introduction-to-framework-objects.md).
 
+>[!NOTE]
+> The ACX headers and libraries are not included in the  WDK 10.0.22621.2428 (released October 24, 2023), but are available in previous versions, as well as the latest (25000 series builds) Insider Preview of the WDK. For more information about preview versions of the WDK, see [Installing preview versions of the Windows Driver Kit (WDK)](../installing-preview-versions-wdk.md).
+
 The following ACX headers have reference documentation available.
 
 Just like WDF drivers, DEVICE and DRIVER are used to initialize the base driver.

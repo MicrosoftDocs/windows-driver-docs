@@ -11,6 +11,10 @@ This topic discusses ACX multi circuit composition. For a general overview of AC
 
 As described in [Summary of ACX objects](acx-summary-of-objects.md), an AcxCircuit represents a partial or full audio path to a user perceived audio device (speakers, mic, etc.). An AcxCircuit has at least one input pin and one output pin (ACXPIN), and it may aggregate one or more AcxElements-like objects.
 
+>[!NOTE]
+> The ACX headers and libraries are not included in the  WDK 10.0.22621.2428 (released October 24, 2023), but are available in previous versions, as well as the latest (25000 series builds) Insider Preview of the WDK. For more information about preview versions of the WDK, see [Installing preview versions of the Windows Driver Kit (WDK)](../installing-preview-versions-wdk.md).
+
+
 ## ACX circuit identification
 
 Every ACX circuit has a circuit identifier. ACX defines the following:

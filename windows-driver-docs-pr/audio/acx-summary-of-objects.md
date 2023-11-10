@@ -11,6 +11,9 @@ This topic provides a high level summary of Audio Class Extensions (ACX) objects
 
 ACX objects are Windows Driver Framework (WDF) objects - WDFOBJECT. For more information about WDF see [Introduction to Framework Objects](../wdf/introduction-to-framework-objects.md). For a summary of WDF objects see [Summary of Framework Objects](../wdf/summary-of-framework-objects.md).
 
+>[!NOTE]
+> The ACX headers and libraries are not included in the  WDK 10.0.22621.2428 (released October 24, 2023), but are available in previous versions, as well as the latest (25000 series builds) Insider Preview of the WDK. For more information about preview versions of the WDK, see [Installing preview versions of the Windows Driver Kit (WDK)](../installing-preview-versions-wdk.md).
+
 ## ACX object hierarchy
 
 In ACX (as in WDF), the driver object is the root object, and all other objects are its children/descendants. All ACX objects are children of the driver object directly or indirectly via other ACX or WDF objects. An ACX driver can specify the parent of an ACX object during creation time. If the parent is not specified, ACX uses a default parent as described in these sections.
