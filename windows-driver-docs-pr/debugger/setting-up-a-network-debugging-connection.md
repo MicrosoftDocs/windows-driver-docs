@@ -10,7 +10,7 @@ ms.date: 01/20/2022
 Debugging Tools for Windows supports kernel debugging over a network. This article describes how to set up network debugging manually.
 
 > [!IMPORTANT]
-> Setting up a network debugging manually is a complex and error prone process.
+> Setting up a network debugging manually is a complex and error-prone process.
 > To set up network debugging automatically, see [Setting up KDNET network kernel debugging automatically](setting-up-a-network-debugging-connection-automatically.md). Using the KDNET utility is strongly recommended for all debugger users.
 
 The computer that runs the debugger is called the *host computer*, and the computer being debugged is called the *target computer*. The host computer must be running Windows 7 or later, and the target computer must be running Windows 8 or later.
@@ -147,11 +147,11 @@ Use the checkboxes to allow those applications through the firewall. Restart you
 
 ## Encryption key
 
-To keep the target computer secure, packets that travel between the host and target computers must be encrypted. You should use an automatically generated encryption key (provided by BCDEdit when you configure the target computer). Using an automatically generated encryption key is recomended as it is a more secure, and provides a unique value that is used in establishing the connection to a specific target. 
+To keep the target computer secure, packets that travel between the host and target computers must be encrypted. You should use an automatically generated encryption key (provided by BCDEdit when you configure the target computer). Using an automatically generated encryption key is recommended as it is more secure, and provides a unique value that is used in establishing the connection to a specific target. 
 
 Network debugging uses a 256-bit key that's specified as four 64-bit values, in base 36, separated by periods. Each 64-bit value is specified by using up to 13 characters. Valid characters are the letters *a* through *z* and the digits 0 through 9. Special characters aren't allowed.
 
-To specify your own key, open an elevated command prompt on the target computer. Enter the following command, where `w.x.y.z` is the IP address of the host computer, and *n* is your port number, and *Key* is your key:
+To specify your own key, open an elevated command prompt on the target computer. Enter the following command, where `w.x.y.z` is the IP address of the host computer, *n* is your port number, and *Key* is your key:
 
 ```console
 bcdedit /dbgsettings net hostip:w.x.y.z port:n key:Key
@@ -165,11 +165,11 @@ The target computer needs to be rebooted anytime the *dbgsettings* are changed.
 
 When you first attempt to establish a network debugging connection, you might be prompted to allow the debugging application (WinDbg or KD) access through the firewall. Client versions of Windows display the prompt, but server versions of Windows don't display the prompt. You should respond to the prompt by checking the boxes for **all three** network types: domain, private, and public. 
 
-If you don't get the prompt or if you didn't check the boxes when the prompt was available, you must use Control Panel to allow access through the firewall. Open **Control Panel > System and Security** and select **Allow an app through Windows Firewall**. 
+If you don't get the prompt or if you didn't check the boxes when the prompt was available, you must use the Control Panel to allow access through the firewall. Open **Control Panel > System and Security** and select **Allow an app through Windows Firewall**. 
 
    - (WinDbg) In the list of applications, locate *WinDbg engine process (TCP) (all)*.
 
-   - (WinDbg (Clasic)) In the list of applications, locate *Windows GUI Symbolic Debugger* and *Windows Kernel Debugger*.
+   - (WinDbg (Classic)) In the list of applications, locate *Windows GUI Symbolic Debugger* and *Windows Kernel Debugger*.
 
 Use the checkboxes to allow those applications through the firewall. Scroll down and select **OK** to save the firewall changes. Restart the debugger.
 
@@ -187,7 +187,7 @@ dhcp                    Yes
 The operation completed successfully.
 ```
 
-In the preceding output, the value of port is 50085. If the value of port lies outside the range allowed by your network administrator, enter the following command. The value *w.x.y.z* is the IP address of the host computer, and *YourDebugPort* is a port number in the allowed range.
+In the preceding output, the value of the port is 50085. If the value of the port lies outside the range allowed by your network administrator, enter the following command. The value *w.x.y.z* is the IP address of the host computer, and *YourDebugPort* is a port number in the allowed range.
 
 ```console
 bcdedit /dbgsettings net hostip:w.x.y.z port:YourDebugPort
@@ -212,7 +212,7 @@ KDNET on the target computer attempts to use Dynamic Host Configuration Protocol
 
 ### Always specify busparams when setting up KDNET on a physical machine with a PCI based NIC
 
-If you're setting up KDNET on a physical machine with a PCI or PCIe based NIC, you should always specify the busparams for the NIC you want to use for KDNET. To specify the bus parameters, open Device Manager, and locate the network adapter that you want to use for debugging. Open the property page for the network adapter and make a note of the bus number, device number, and function number that are displayed under *Location* on the *General* tab. In an elevated command prompt, enter the following command, where *b*, *d*, and *f* are the bus, device and function numbers in decimal format:
+If you're setting up KDNET on a physical machine with a PCI or PCIe-based NIC, you should always specify the busparams for the NIC you want to use for KDNET. To specify the bus parameters, open Device Manager, and locate the network adapter that you want to use for debugging. Open the property page for the network adapter and make a note of the bus number, device number, and function number that is displayed under *Location* on the *General* tab. In an elevated command prompt, enter the following command, where *b*, *d*, and *f* are the bus, device, and function numbers in decimal format:
 
 ```console
 bcdedit /set "{dbgsettings}" busparams b.d.f
@@ -232,7 +232,7 @@ Manually deleting entries isn't necessary when using the kdnet utility. For more
 
 When you use `bcdedit –deletevalue`, you must provide a valid bcd element name. For more information, see [BCDEdit /deletevalue](../devtest/bcdedit--deletevalue.md).
 
-To manually delete bcedit entries, complete the following steps:
+To manually delete bcdedit entries, complete the following steps:
 
 1. On the target computer, open a command prompt as an administrator.
 
@@ -250,7 +250,7 @@ When you delete the hostip, you need to specify *target=* on the debugger comman
     bcdedit -deletevalue {dbgsettings} port
     ```
 
-When you delete the port entry, KDNET uses the default ICANN registered debugger port of 5364.
+When you delete the port entry, KDNET uses the default ICANN-registered debugger port of 5364.
 
 ## Set up Hyper-V
 
@@ -272,7 +272,7 @@ This stoppage is by design and happens because KDNET takes exclusive control ove
 
 1. Open the Virtual Switch Manager from Hyper-V Manager, and select your existing Virtual Switch. Change the external network NIC to the *Microsoft Kernel Debug Network Adapter* by selecting it from the dropdown menu and then selecting **OK** in the Virtual Switch Manager dialog.
 
-2. After you update your Virtual Switch NIC, shutdown and restart your VMs.
+2. After you update your Virtual Switch NIC, shut down and restart your VMs.
 
 When KDNET debugging is turned off, the same procedure needs to be followed to repoint the external switch back to the native NDIS miniport for the NIC. Otherwise, VM connectivity is lost when the machine is rebooted after debugging is disabled.
 
@@ -290,7 +290,7 @@ To use IPv6 with the debugger, complete the following steps:
     bcdedit -deletevalue {dbgsettings} hostip
     ```
 
-3. Set the IPv6 address of the host. There must not be any spaces in the `hostipv6=s:t:u:v:w:x:y:z` string. \<YourPort> is the network port number to use for this target machine. \<YourKey> is the four part security key. \<b.d.f> are the bus device function location numbers for the NIC you want to use for KDNET.
+3. Set the IPv6 address of the host. There must not be any spaces in the `hostipv6=s:t:u:v:w:x:y:z` string. \<YourPort> is the network port number to use for this target machine. \<YourKey> is the four-part security key. \<b.d.f> are the bus device function location numbers for the NIC you want to use for KDNET.
 
     ```console
     bcdedit /dbgsettings net hostipv6:s:t:u:v:w:x:y:z port:<YourPort> key:<YourKey> busparams:<b.d.f>
@@ -335,15 +335,15 @@ To use IPv6 with the debugger, complete the following steps:
 
 - The target only will do IPv4 or IPv6, not both at the same time. The version of the IP protocol that's used is controlled by the target machine dbgsettings. If `hostip` is set, the target uses IPv4. If `hostipv6` is set, the target uses IPv6.
 
-- The host debugger normally auto selects use of IPv4 or IPv6. By default, the debugger listens on both an IPv4 socket and an IPv6 socket, and connects automatically on either one to the target machine.
+- The host debugger normally auto-selects the use of IPv4 or IPv6. By default, the debugger listens on both an IPv4 socket and an IPv6 socket and connects automatically on either one to the target machine.
 
-- If you want to force use of IPv6 in the debugger on the host, but you want the debugger to listen for a connection from the target, then you can add `target=::` to the debugger command line. `::` is an IPv6 address of 0.
+- If you want to force the use of IPv6 in the debugger on the host, but you want the debugger to listen for a connection from the target, then you can add `target=::` to the debugger command line. `::` is an IPv6 address of 0.
 
 - If you want to force IPv4 debugging in the debugger on the host, but you want the debugger to listen for a connection from the target, then you can add `target=0.0.0.0` to the debugger command line. `0.0.0.0` is an IPv4 address of 0.
 
 - If you specify `target=` on the debugger command line and use a machine name, the debugger converts that machine name into an IPv4 address and an IPv6 address. The debugger then attempts to connect on both.
 
-- When you specify `target=` on the debugger command line, and use an IP address, if the IP address contains any **:** characters, the debugger assumes it's an IPv6 address, and forces use of IPv6 for that connection. If the IP address contains any **.** characters, the debugger assumes it's an IPv4 address, and forces use of IPv4 for that connection.
+- When you specify `target=` on the debugger command line, and use an IP address, if the IP address contains any **:** characters, the debugger assumes it's an IPv6 address, and forces the use of IPv6 for that connection. If the IP address contains any **.** characters, the debugger assumes it's an IPv4 address, and forces the use of IPv4 for that connection.
 
 - If you set up IPv6 on the target and force use of IPv4 on the debugger command line, you don't get a connection.
 
