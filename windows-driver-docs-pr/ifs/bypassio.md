@@ -106,7 +106,7 @@ Minifilters should add support for BypassIO requests, which are sent through the
 A *fsutil* command has been added that issues an **FSCTL_MANAGE_BYPASS_IO** specifying the **FS_BPIO_OP_QUERY** operation. The displayed results identify the first driver that is preventing BypassIO and the reason why.
 
 ``` Command
-> fsutil bypassIo state <path> /v
+> fsutil bypassIo state /v <path>
 ```
 
 Where *\<path>* can be a volume, a directory, or a specific filename, and */v* is an optional verbose flag.
@@ -120,7 +120,7 @@ Driver: wof.sys
 Reason: The specified minifilter does not support bypass IO.
 ```
 
-In this second example, executing ```fsutil bypassIO state c:\ /v``` on a system where BitLocker is enabled results in the following output:
+In this second example, executing ```fsutil bypassIO state /v c:\``` on a system where BitLocker is enabled results in the following output:
 
 ``` output
 BypassIo on "c:\" is partially supported
