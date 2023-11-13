@@ -23,7 +23,7 @@ The computer that runs the debugger is called the *host computer*, and the compu
 
    **bcdedit /dbgsettings serial debugport:**<em>n</em> **baudrate:**<em>rate</em>
 
-   **Note**  The baud rate must be the same on the host computer and target computer. The recommended rate is 115200.
+   **Note**  The baud rate must be the same on the host computer and the target computer. The recommended rate is 115200.
 
 2. Reboot the target computer.
 
@@ -63,7 +63,7 @@ To start a debugging session, open a Command Prompt window, and enter one of the
 
 ### <span id="Specify_correct_COM_port_on_both_host_and_target"></span><span id="specify_correct_com_port_on_both_host_and_target"></span><span id="SPECIFY_CORRECT_COM_PORT_ON_BOTH_HOST_AND_TARGET"></span>Specify correct COM port on both host and target
 
-Determine the numbers of the COM ports you are using for debugging on the host and target computers. For example, suppose you have your null-modem cable connected to COM1 on the host computer and COM2 on the target computer.
+Determine the number of COM ports you are using for debugging on the host and target computers. For example, suppose you have your null-modem cable connected to COM1 on the host computer and COM2 on the target computer.
 
 On the target computer, open a Command Prompt window as Administrator, and enter **bcdedit /dbgsettings**. If you are using COM2 on the target computer, the output of **bcdedit** should show `debugport 2`.
 
