@@ -45,6 +45,6 @@ The Microsoft Universal Flash Storage (UFS) driver (*storufs.sys*) is the system
 * Command queue mgmt
 * Inline Crypto Engine (ICE) support
 
-\* *Write booster feature currently supported on UFS 3.1+ Intel platforms; Qualcomm platform is yet to be signed off.*
+\* *Write booster feature currently supported on UFS 3.1+ Intel platforms.*
 
 \** *HPB feature is currently supported on UFS 3.1+ Samsung platforms.*
