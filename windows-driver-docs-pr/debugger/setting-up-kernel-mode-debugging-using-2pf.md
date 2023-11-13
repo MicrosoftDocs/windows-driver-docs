@@ -8,7 +8,7 @@ ms.date: 04/12/2021
 
 Debugging Tools for Windows supports kernel debugging over a network cable using multiple Physical Functions (PFs) on the supported NICs by partitioning the PCI configuration space.
 
-With 2PF debugging, each PF can be connected to a single network port, so it allows the kernel debugging functionality to be connected to one PF while the standard network stack talks to the other PF. Because of this, KDNIC doesn't need to route the Windows networking traffic via KDNET, and KDNET will only be responsible to route the host kernel debugger traffic. This results in a dramatic performance increase.
+With 2PF debugging, each PF can be connected to a single network port, so it allows the kernel debugging functionality to be connected to one PF while the standard network stack talks to the other PF. Because of this, KDNIC doesn't need to route the Windows networking traffic via KDNET, and KDNET will only be responsible for routing the host kernel debugger traffic. This results in a dramatic performance increase.
 
 This topic describes how to set up 2PF debugging using the kdnet.exe utility.
 
@@ -36,7 +36,7 @@ The following is required:
 
 ## Supported 2PF Network Cards
 
-Vendors such as NVIDIA Mellanox and Cisco provide NICs that support 2PF network debugging. Check with the network card vendor to see which models of the network card are supported. Note that some vendors support 2PF on a sub set of network cards that share the same PnP ID.
+Vendors such as NVIDIA Mellanox and Cisco provide NICs that support 2PF network debugging. Check with the network card vendor to see which models of the network card are supported. Note that some vendors support 2PF on a sub-set of network cards that share the same PnP ID.
 
 ## Use kdnet.exe to confirm device support and view the busparams value
 
@@ -67,11 +67,11 @@ Use the kdnet.exe utility to display the parameter information for controllers t
    busparams=128.15.1, Standard USB 3.0 eXtensible Host Controller - 1.0 (Microsoft)
    busparams=0.15.1, Standard USB 3.0 eXtensible Host Controller - 1.0 (Microsoft)
    ```
-   Because the output shown above, does not include *"KDNET is running on this NIC."*, this indicates that traditional KDNET debugging is not enabled on any of the adapters. 
+   Because the output shown above does not include *"KDNET is running on this NIC."*, this indicates that traditional KDNET debugging is not enabled on any of the adapters. 
 
    If the NIC does **not** support the multiple PF feature, then the PF status notification of *"multiple physical functions are supported"* will be omitted (blank) from the displayed information.
 
-   If NIC supports multiple PF, then the actual displayed information will depend on the combination of the Network port (root port/PF added port), as well as cable connected/disconnected status to/from the NIC physical port.
+   If NIC supports multiple PF, then the actual displayed information will depend on the combination of the Network port (root port/PF added port), as well as the cable connected/disconnected status to/from the NIC physical port.
 
    This table summarizes different PF notifications for the primary NIC.
 
@@ -98,7 +98,7 @@ Use the kdnet.exe utility to configure the debugger settings on the target PC fo
 > You can re-enable Bit Locker and Secure Boot once you’re done using BCDEdit to update the boot information.
 > Appropriately manage the test PC, when the security features are disabled.  
 
-This process will adds a new physical function (PF) to the a NIC, specified by  `bus.device.function`. The new PF can be used only by KDNET, since the Windows inbox driver is set up to not run on an added, secondary PF. Follow these steps to add a new PF that will be used by the debug device.
+This process will add a new physical function (PF) to the NIC, specified by  `bus.device.function`. The new PF can be used only by KDNET since the Windows inbox driver is set up to not run on an added, secondary PF. Follow these steps to add a new PF that will be used by the debug device.
 
 ### Confirm that debugging is disabled before adding the new physical function
 
@@ -111,7 +111,7 @@ C:\> bcdedit /enum
 debug           No
 ```
 
-As an alternative, use kdnet.exe with out parameters to see if debugging is enabled. The output below, shows KDNET running on a system with debugging enabled on one NIC. This is the lower performance legacy setup.
+As an alternative, use kdnet.exe without parameters to see if debugging is enabled. The output below shows KDNET running on a system with debugging enabled on one NIC. This is the lower-performance legacy setup.
 
 ```console
 
@@ -165,9 +165,9 @@ Then reboot this machine by running shutdown -r -t 0 from this command prompt.
 
 `[port number]` is the TCP/IP port number. You can choose any port number from 49152 through 65535. The recommended range is between 50000 and 50039. The port that you choose will be opened for exclusive access by the debugger running on the host computer. Pick a unique port address for each target/host pair that you work with, within the recommended range of 50000-50039. 50005 is shown in the example.
 
-Note that -addpf will also add the `NO_KDNIC` attribute to the OS installation {default} loadoptions. This is because KDNIC is no longer required to run on top of KDNET.
+Note that -addpf will also add the `NO_KDNIC` attribute to the OS installation {default} load options. This is because KDNIC is no longer required to run on top of KDNET.
 
-The loadoptions = NO_KDNIC is added to {default} OS tag to ensure that kdnic.sys won't run out of the new added pf (141.0.1)
+The load options = NO_KDNIC is added to {default} OS tag to ensure that kdnic.sys won't run out of the newly added pf (141.0.1)
 
 Use the bcdedit command to confirm that NO_KDNIC has been set.
 
@@ -216,7 +216,7 @@ The operation completed successfully.
 
    `2steg4fzbj2sz.23418vzkd4ko3.1g34ou07z4pev.1sp3yo9yz874p`
 
-4. Optionaly use kdnet.exe to confirm that the multiple physical functions are enabled.
+4. Optionally use kdnet.exe to confirm that the multiple physical functions are enabled.
 
 ```console
 C:\KDNET> kdnet.exe
@@ -238,23 +238,23 @@ On the host, disable the firewall for the debugger port.
 
 ## Connecting WinDbg to the target for kernel debugging
 
-On the host computer, open WinDbg. On the **File** menu, choose **Kernel Debug**. In the Kernel Debugging dialog box, open the **Net** tab. Paste in your port number and key that you saved to in the notepad .txt file earlier. Select **OK**.
+On the host computer, open WinDbg. On the **File** menu, choose **Kernel Debug**. In the Kernel Debugging dialog box, open the **Net** tab. Paste in your port number and key that you saved in the notepad .txt file earlier. Select **OK**.
 
-You can also start a WinDbg session by opening a Command Prompt window and entering the following command, where is the port you selected above, and is the key that was returned by kdnet.exe above. Paste in the key in that you saved to in the notepad .txt file earlier.
+You can also start a WinDbg session by opening a Command Prompt window and entering the following command, where is the port you selected above, and is the key that was returned by kdnet.exe above. Paste in the key that you saved in the notepad .txt file earlier.
 
    `windbg -k -d net:port=<YourDebugPort>,key=<YourKey>`
 
 ### Reboot the target computer
 
-Once the debugger is connected, reboot the target computer. One way to do reboot the PC, is to use the `shutdown -r -t 0` command from an administrator's command prompt.
+Once the debugger is connected, reboot the target computer. One way to do reboot the PC is to use the `shutdown -r -t 0` command from an administrator's command prompt.
 
 After the target PC restarts, the debugger should connect automatically.
 
-Once the machine rebooted, then the NIC firmware will assign a new MAC address to the new added KDNET PF, and dbgsettings::busparams will point to the new added PF.
+Once the machine reboots, then the NIC firmware will assign a new MAC address to the newly added KDNET PF, and dbgsettings::busparams will point to the newly added PF.
 
 ## Finding the MAC address for the 2PF adapter
 
-Since the new added PF is a PCI bus configured port, there will be a new MAC address value assigned to new added PF by the NIC firmware. The kdnet.exe tool does not currently support displaying the MAC address for the added 2PF.
+Since the newly added PF is a PCI bus configured port, there will be a new MAC address value assigned to the newly added PF by the NIC firmware. The kdnet.exe tool does not currently support displaying the MAC address for the added 2PF.
 
 There are two ways of finding the new MAC address:
 
@@ -277,7 +277,7 @@ The target machine MAC address in open-device format is: DC9840C151E8
 
 ### Run the vendor provided firmware tools
 
-One way to locate the MAC address is to run the vendor provided firmware tools. Refer to the NIC vendor for information on downloading, installing and using the vendor's tools.
+One way to locate the MAC address is to run the vendor-provided firmware tools. Refer to the NIC vendor for information on downloading, installing, and using the vendor's tools.
 
 ```console
 ... 
@@ -285,11 +285,11 @@ Base MAC:              98039baa757c           4
 
 ```
 
-Find the MAC address field. Calculate the KDNET 2PF MAC address value by sequentially adding one to the last digit of the root MAC device. So for the root device with and address of `98039baa757c`, the KDNET 2PF device would have an address of  `98039baa757d`.
+Find the MAC address field. Calculate the KDNET 2PF MAC address value by sequentially adding one to the last digit of the root MAC device. So for the root device with an address of `98039baa757c`, the KDNET 2PF device would have an address of  `98039baa757d`.
 
 ## Restoring the previous configuration state - Removing the second PCI PF
 
-You can remove the previously added PF from a device by using the `kdnet -removepf` option and the original *bus.device.function* value. The PF will be detached from the NIC and the PF assigned resource will be released by the NIC firmware.
+You can remove the previously added PF from a device by using the `kdnet -removepf` option and the original *bus.device.function* value. The PF will be detached from the NIC and the PF-assigned resource will be released by the NIC firmware.
 
 To remove the KDNET PF from the device, open an elevated command prompt and run the following command.
 
@@ -308,7 +308,7 @@ Enabling network debugging on Mellanox ConnectX-4 Lx Ethernet Adapter #2.
 Manage-bde.exe not present.  Bitlocker presumed disabled.
 ```
 
-The kdnet.exe -removepf command also will remove the NO_KDNIC attribute from the OS installation {default} loadoptions, since KDNET will be enabled on the original bus.dev.fun, that is the dbgsettings::busparams will point to the original network port. This will cause KDNIC to be used again, providing a network connection again on top of KDNET.
+The kdnet.exe -removepf command also will remove the NO_KDNIC attribute from the OS installation {default} load options, since KDNET will be enabled on the original bus.dev.fun, that is the dbgsettings::busparams will point to the original network port. This will cause KDNIC to be used again, providing a network connection again on top of KDNET.
 
 
 Once the PF is removed the machine needs to be rebooted for the BCD changes to be applied.
@@ -322,7 +322,7 @@ shutdown -r -t 0
 
 ### Verify the 2PF adapter is present in device manager
 
-You can verify that the KDNET PF was added successfully by checking the new NIC adapter has a new bus.dev.fun port on Windows Device manager adapter list.
+You can verify that the KDNET PF was added successfully by checking the new NIC adapter has a new bus.dev.fun port on the Windows Device Manager adapter list.
 
 This diagram shows three different adapters, with Adapter #2 reserved for use by the kernel debugger.
 
@@ -340,7 +340,7 @@ Pci Bus:28.0.0
 
 **The PCI PF is already configured on this port**: *Error=(0x80004004) Failed PF operation on the debug device. The debug device is not configured for KDNET.*
 
-- Do not add/remove again a PF on the root port where it is already added as a PF.
+- Do not add/remove a PF on the root port where it is already added as a PF.
 
 ### Common error messages - removing a PF
 
@@ -356,7 +356,7 @@ Pci Bus:28.0.1
 
 **Adapter is not active**: Error=(0x80070002) *Failed PF operation on the debug device. The debug device is not configured for KDNET*
 
-- Do not use an added PF port with the “-removepf/-addpf” command line parameter, because any operation on the added PF port will result in a failure (error: Adapter is not active on port), since the vendor NIC inbox driver is set up to expressly *not* run on an added PF.
+- Do not use an added PF port with the “-removepf/-addpf” command line parameter, because any operation on the added PF port will result in a failure (error: Adapter is not active on the port), since the vendor NIC inbox driver is set up to expressly *not* run on an added PF.
 - Both command line options (-addpf/-removepf) must be used only on the root PCI device.
 
 ```console
@@ -369,7 +369,7 @@ Pci Bus:28.0.0
 
 **There is no PCI PF to remove on this port**: *Error=(0x80004005) Failed PF operation on the debug device. The debug device is not configured for KDNET*
 
-- If you add a new PF and then decide to remove it w/o rebooting it will result in a failure, since the vendor NIC firmware requires a rebooting/resetting the NIC HW before it can recognize the new added PF.
+- If you add a new PF and then decide to remove it w/o rebooting it will result in a failure, since the vendor NIC firmware requires rebooting/resetting the NIC HW before it can recognize the newly added PF.
 
 ### Common error messages - BCDEdit
 
