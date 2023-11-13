@@ -13,7 +13,7 @@ WinDbg is a debugger that can be used to analyze crash dumps, debug live user-mo
 
 ## ![Small WinDbg logo](images/windbg-logo-35px.png) Install WinDbg
 
-This latest version features a more modern user experience with an updated interface, fully fledged scripting capabilities, an extensible debugging data model, built-in Time Travel Debugging (TTD) support, and many additional features.
+This latest version features a more modern user experience with an updated interface, fully-fledged scripting capabilities, an extensible debugging data model, built-in Time Travel Debugging (TTD) support, and many additional features.
 
 For more information, see [WinDbg Overview](../debuggercmds/windbg-overview.md).
 
@@ -22,7 +22,7 @@ For more information, see [WinDbg Overview](../debuggercmds/windbg-overview.md).
 
 Select *Install* and the debugger will download and install.
 
-WinDbg will also periodically check for new versions in the background and autoupdate if necessary.
+WinDbg will also periodically check for new versions in the background and auto-update if necessary.
 
 > [!NOTE]
 > Formerly released as *WinDbg Preview* in the Microsoft Store, this version leverages the same underlying engine as *WinDbg (classic)* and supports all the same commands, extensions, and workflows.
