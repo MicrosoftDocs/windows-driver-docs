@@ -34,7 +34,7 @@ After you install the debugging tools, find the installation directories for the
     Expanded Symbol search path is: cache*;SRV
     ```
 
-    The symbol search path tells WinDbg where to look for symbol (PDB) files. The debugger needs symbol files to get information about code modules, like for function names and variable names.
+    The symbol search path tells WinDbg where to look for symbol (PDB) files. The debugger needs symbol files to get information about code modules, like function names and variable names.
 
     Then, enter this command:
 
