@@ -20,23 +20,19 @@ ms.date: 04/20/2017
 
 # Filter, Pin, and Node Properties
 
-
-## <span id="filter_pin_and_node_properties"></span><span id="FILTER_PIN_AND_NODE_PROPERTIES"></span>
-
-
 Microsoft Windows Driver Model (WDM) audio drivers represent an audio device as a KS filter, and they represent a hardware buffer on the device as a pin on the filter. When a client sends a property request to one of these filter or pin objects, the port driver receives the request and routes the request to the appropriate property handler in the port driver or miniport driver.
 
 Audio devices support three kinds of properties:
 
--   **Filter properties**
+- **Filter properties**
 
     A filter property is a property of the filter as a whole rather than a property of a particular pin or node within the filter. Requests for filter properties specify filter handles, but they do not specify node IDs.
 
--   **Pin properties**
+- **Pin properties**
 
     A pin property is a property of a particular pin instance on the filter. Requests for these properties specify pin handles, but they do not specify node IDs.
 
--   **Node properties**
+- **Node properties**
 
     A node property is a property of a topology node within the filter. A request for a node property specifies a filter handle or pin handle, plus a node ID.
 
@@ -44,7 +40,7 @@ Whether a node-property request specifies a filter or pin handle depends on whet
 
 The following figure shows these three kinds of property request: a pin-property request sent to a pin instance, a node-property request sent to a node (on a filter or pin instance), and a filter-property request sent to a filter instance.
 
-![diagram illustrating filter-, pin-, and node-property requests.](images/propreqs.png)
+:::image type="content" source="images/propreqs.png" alt-text="Diagram illustrating filter, pin, and node property requests.":::
 
 Typically, the port driver handles most requests for filter and pin properties, and the miniport driver handles requests for node properties.
 
@@ -52,17 +48,17 @@ The port driver supplies its own built-in handlers for the filter and pin proper
 
 When both the port driver and miniport driver supply handlers for the same property, the port driver uses its own handler and ignores the miniport driver's handler.
 
-### <span id="Filter_Descriptors"></span><span id="filter_descriptors"></span><span id="FILTER_DESCRIPTORS"></span>Filter Descriptors
+## Filter Descriptors
 
 The port driver obtains pointers to the miniport driver's property handlers by calling the [**IMiniport::GetDescription**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiport-getdescription) method. Through this method, the port driver retrieves a pointer to the miniport driver's filter descriptor, which is a structure of type [**PCFILTER\_DESCRIPTOR**](/windows-hardware/drivers/ddi/portcls/ns-portcls-pcfilter_descriptor). This structure specifies the miniport driver's property handlers for filter, pin, and node properties:
 
--   The PCFILTER\_DESCRIPTOR structure's **AutomationTable** member points to the automation table for the filter. This table specifies the miniport driver's property handlers for filter properties.
+- The PCFILTER\_DESCRIPTOR structure's **AutomationTable** member points to the automation table for the filter. This table specifies the miniport driver's property handlers for filter properties.
 
--   The PCFILTER\_DESCRIPTOR structure's **Pins** member contains the automation tables for the pins. Each table specifies the property handlers for the pin properties of a particular pin type.
+- The PCFILTER\_DESCRIPTOR structure's **Pins** member contains the automation tables for the pins. Each table specifies the property handlers for the pin properties of a particular pin type.
 
--   The PCFILTER\_DESCRIPTOR structure's **Nodes** member contains the automation tables for the topology nodes inside the filter. Each table specifies the property handlers for the node properties of a particular node type.
+- The PCFILTER\_DESCRIPTOR structure's **Nodes** member contains the automation tables for the topology nodes inside the filter. Each table specifies the property handlers for the node properties of a particular node type.
 
-### <span id="Filter_Properties"></span><span id="filter_properties"></span><span id="FILTER_PROPERTIES"></span>Filter Properties
+## Filter Properties
 
 The port driver accesses the miniport driver's filter-property handlers through the **AutomationTable** member of PCFILTER\_DESCRIPTOR. Typically, this automation table contains few handlers because the port driver supplies its own built-in handlers for all the filter properties that SysAudio and WDMAud use to query and configure audio devices.
 

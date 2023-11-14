@@ -84,7 +84,7 @@ The driver will also add an ACXAUDIOENGINE element to streams created for offloa
 
 This diagram shows a multi-stack ACX driver.
 
-![diagram illustrating three boxes with a DSP, CODEC and AMP and a kernel streaming interface shown on top](images/audio-acx-multi-stack-kernel-streaming.png)
+:::image type="content" source="images/audio-acx-multi-stack-kernel-streaming.png" alt-text="Diagram illustrating DSP, CODEC, and AMP boxes with a kernel streaming interface on top.":::
 
 Each ACX driver controls a separate portion of the audio hardware and could be provided by a different vendor. ACX provides a compatible kernel streaming interface to allow applications to run as is.
 

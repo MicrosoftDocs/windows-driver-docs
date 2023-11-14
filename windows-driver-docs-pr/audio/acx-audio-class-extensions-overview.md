@@ -39,7 +39,7 @@ The audio class extensions (ACX) have the following goals.
 
 This diagram illustrates the ACX architecture showing existing user mode apps and ACX objects in kernel mode and audio hardware at the bottom of the stack. In addition to the ACX objects, the driver developer has access to the WDF objects to take advantage of in their driver code, for example for power management.
 
-![diagram illustrating the acx architecture showing user and kernel mode with WDF and ACX objects in kernel mode and audio hardware at the bottom of the stack.](images/audio-acx-architecture-overview.png)
+:::image type="content" source="images/audio-acx-architecture-overview.png" alt-text="Diagram illustrating the ACX architecture, showing user and kernel mode with WDF and ACX objects in kernel mode, and audio hardware at the bottom of the stack.":::
 
 ### ACX coexistance with existing audio drivers
 

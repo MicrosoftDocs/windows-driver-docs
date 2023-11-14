@@ -28,7 +28,7 @@ For information on offloaded APOs, see [Hardware Offloaded APO Effects](implemen
 
 The following diagram shows the Windows software audio engine.
 
-![audio driver architecture showing application calling into sfx mfx and efx effects that then call to drivers and audio hardware](images/audio-hardware-offloaded-apo-overview.png)
+:::image type="content" source="images/audio-hardware-offloaded-apo-overview.png" alt-text="Diagram showing audio driver architecture with application calling into SFX, MFX, and EFX effects, connecting to drivers and audio hardware.":::
 
 Audio streams arrive in the software audio engine from the Windows audio session API (WASAPI) layer, and possibly through a higher-level API such as Media Foundation. In the software audio engine stream effects (SFX), can be applied on a per-stream basis before the separate streams are mixed, and then passed through any available endpoint effects (EFX) and sent to the rendering hardware and speakers.
 
@@ -46,7 +46,7 @@ In order to implement a path for a loopback stream, the audio driver is responsi
 
 The following diagram shows an overview of the resulting architecture when a hardware audio engine works with the Windows software audio engine.
 
-![the integrated architecture of the software and hardware audio engines, application calling into sfx mfx and efx effects that then call to drivers and audio hardware and showing the loopback stream from the hardware engine leading back to the wasapi layer](images/audio-hardware-offloaded-apo-overview.png)
+:::image type="content" source="images/audio-hardware-offloaded-apo-overview.png" alt-text="Diagram of integrated software and hardware audio engines, with application calling into SFX, MFX, and EFX effects, connecting to drivers, audio hardware, and loopback stream leading back to WASAPI layer.":::
 
 In a scenario where the audio driver has indicated its support for offloaded audio processing, the first n (in this case, three) streams that are initialized will be routed directly from the WASAPI layer to the hardware audio engine, bypassing the software audio engine. Any new audio streams subsequent to the n supported by the hardware audio engine will be routed through the software audio engine for processing. The resulting stream from the software audio engine is then sent to the hardware audio engine as a host process stream. The host process stream is mixed with the first n streams, EFX processing is applied, and the resulting stream is then sent to the speakers.
 
@@ -56,7 +56,7 @@ In Windows 8 and later operating systems, support has been provided for an on-b
 
 To make it possible for audio drivers to expose the hardware capabilities of these new audio adapters, Windows 8 introduced a KS-filter topology that the driver must use:
 
-![diagram showing the ks-filter topology, showing a host process input pin, an offloaded audio input pin, and a loopback output pin. audio processing is applied to the audio streams from the offloaded audio and host process pins.the loopback path is taken from the output of the final processing stage and leads directly out of the ks-filter topology. the other two streams flow through the dac and out of the ks-filter topology.](images/audio-engine-ksftopology-2023.png)
+:::image type="content" source="images/audio-engine-ksftopology-2023.png" alt-text="Diagram of KS-filter topology with host process input pin, offloaded audio input pin, and loopback output pin. Audio processing applied to offloaded audio and host process pins, loopback path from final processing stage, and two streams through DAC out of the ks-filter topology.":::
 
 As shown in the preceding figure, a KS-filter topology represents the data paths through the hardware, and also shows the functions that are available on those paths. In the case of an audio adapter that can process offloaded audio, there are the following inputs and outputs (called pins) on the KS-filter:
 

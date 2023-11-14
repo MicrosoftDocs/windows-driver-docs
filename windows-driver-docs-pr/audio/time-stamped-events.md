@@ -37,7 +37,7 @@ The time returned by this latency clock is the earliest time that the buffer can
 
 Therefore, the wave sink calls **IDirectMusicSynth::Render** on the synth, presenting the buffer and requesting that it be filled with rendered data. As shown in the following figure, the synth takes all the time-stamped events that come in as a result of **IDirectMusicSynth::PlayBuffer** function calls.
 
-![diagram illustrating queuing of time-stamped messages.](images/dmevents.png)
+:::image type="content" source="images/dmevents.png" alt-text="Diagram illustrating the queuing process of time-stamped messages in a synthesizer.":::
 
 Each input buffer contains time-stamped messages. Each of these messages is put in a queue to be rendered into a buffer at the time specified by its time stamp.
 

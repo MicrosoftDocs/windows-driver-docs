@@ -10,9 +10,9 @@ This topic provided a high level summary of the Windows 10/11 audio architecture
 
 ## Windows 10/11 Audio Stack Diagram
 
-This diagram provides a summary of the major elements of the Windows 11 audio stack.
+This diagram provides a summary of the major elements of the Windows 10/11 audio stack.
 
-![windows 10/11 audio stack diagram showing apps, audio engine, drivers and hardware .](images/audio-windows-10-stack-diagram.png)
+:::image type="content" source="images/audio-windows-10-stack-diagram.png" alt-text="Diagram that shows the Windows 10/11 audio stack, including apps, audio engine, drivers, and hardware.":::
 
 ## APIs
 

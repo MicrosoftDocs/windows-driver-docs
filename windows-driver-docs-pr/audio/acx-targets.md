@@ -38,7 +38,7 @@ All these types are built on top of the [WdfIoTarget](/windows-hardware/drivers/
 
 This diagram shows the ACX target architecture and the inheritance from the WDF Driver and Device objects.  
 
-![diagram illustrating the acx target architecture showing WDFDRIVER, WDFDEVICE, and under that ACXTARGET, ACXSTREAM ACXSTREAMFACTORY with the lowest layer showing ACXTARGETELEMENT and ACXTARGETPIN](images/audio-acx-multi-stack-acxtarget-objects.png)
+:::image type="content" source="images/audio-acx-multi-stack-acxtarget-objects.png" alt-text="Diagram illustrating the ACX target architecture with WDFDRIVER, WDFDEVICE, ACXTARGET, ACXSTREAM, ACXSTREAMFACTORY, ACXTARGETELEMENT, and ACXTARGETPIN.":::
 
 ## ACX driver synchronization and serialization
 

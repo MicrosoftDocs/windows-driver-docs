@@ -64,11 +64,11 @@ Next ACX (or for custom properties, the driver) performs the requested action an
 
 This diagram illustrates the typical request dispatch workflow.
 
-![diagram illustrating dispatch workflow showing and audio service, WDF, ACX and a driver](images/audio-acx-dispatch-workflow-1.png)
+:::image type="content" source="images/audio-acx-dispatch-workflow-1.png" alt-text="Diagram illustrating dispatch workflow with audio service, WDF, ACX, and a driver.":::
 
 This diagram illustrates the dispatch workflow when driver has an ACX preprocess callback defined, although in the end the request is handled by the ACX framework.
 
-![diagram illustrating dispatch workflow showing and audio service, WDF, ACX and a driver with a preprocess callback](images/audio-acx-dispatch-workflow-2.png)
+:::image type="content" source="images/audio-acx-dispatch-workflow-2.png" alt-text="Diagram illustrating dispatch workflow with audio service, WDF, ACX, and a driver having a preprocess callback.":::
 
 ### ACX circuit PnP internal interfaces
 

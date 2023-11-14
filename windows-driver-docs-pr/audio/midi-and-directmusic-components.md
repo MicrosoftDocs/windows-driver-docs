@@ -17,27 +17,23 @@ ms.date: 04/20/2017
 
 # MIDI and DirectMusic Components
 
-
-## <span id="midi_and_directmusic_components"></span><span id="MIDI_AND_DIRECTMUSIC_COMPONENTS"></span>
-
-
 Application programs rely on a combination of user- and kernel-mode components to capture and play back MIDI and DirectMusic streams.
 
 An application can use either of the following software interfaces for MIDI playback and capture:
 
--   Microsoft Windows Multimedia **midiOut***Xxx* and **midiIn***Xxx* functions
+- Microsoft Windows Multimedia **midiOut***Xxx* and **midiIn***Xxx* functions
 
--   DirectMusic API
+- DirectMusic API
 
 The behavior of the **midiOut***Xxx* and **midiIn***Xxx* functions is based on the capabilities of legacy MIDI drivers and devices. Beginning with Windows 98, the [WDMAud system driver](user-mode-wdm-audio-components.md#wdmaud_system_driver) translates calls to these functions into commands to WDM audio drivers. However, by emulating the behavior of older software and hardware, the **midiOut***Xxx* and **midiIn***Xxx* functions sacrifice the precision timing and enhanced functionality that are now available through the DirectMusic API. For more information about DirectMusic and the Windows Multimedia MIDI functions, see the Microsoft Windows SDK documentation.
 
 DirectMusic and the Windows Multimedia MIDI functions are clients of the [SysAudio system driver](kernel-mode-wdm-audio-components.md#sysaudio_system_driver), which builds the audio filter graphs that process the MIDI and DirectMusic streams. Graph building is transparent to the applications that use these software interfaces.
 
-### <span id="MIDI_Components"></span><span id="midi_components"></span><span id="MIDI_COMPONENTS"></span>MIDI Components
+## MIDI Components
 
 The following figure shows the user-mode and kernel-mode components that a MIDI application uses to *play back* MIDI data. This application interfaces to the WDM audio drivers through the **midiOut***Xxx* functions, which are implemented in the [WinMM system component](user-mode-wdm-audio-components.md#winmm_system_component), Winmm.dll.
 
-![diagram that shows midi playback components.](images/midiplay.png)
+:::image type="content" source="images/midiplay.png" alt-text="Diagram illustrating MIDI playback user-mode and kernel-mode components.":::
 
 The MIDI application in the preceding figure reads time-stamped MIDI events from a MIDI file and plays them. The MIDI and DMus miniport drivers are shown as darkened boxes to indicate that they can be vendor-supplied components. If appropriate, a vendor might choose to use one of the system-supplied miniport drivers--FMSynth, UART, or DMusUART--instead of writing a custom miniport driver. All of the other components in the figure are system-supplied.
 
@@ -61,7 +57,7 @@ Appearing at the bottom of the preceding figure are the names of the system-supp
 
 The following figure shows the user-mode and kernel-mode components that a MIDI application program uses to *capture* MIDI data. This application interfaces to the WDM audio drivers through the **midiIn***Xxx* functions.
 
-![diagram illustrating midi capture components.](images/midicapt.png)
+:::image type="content" source="images/midicapt.png" alt-text="Diagram showing MIDI capture user-mode and kernel-mode components.":::
 
 In the preceding figure, the MIDI and DMus miniport drivers are shown as darkened boxes to indicate that they can be vendor-supplied components. If appropriate, a vendor might instead choose to use one of the system-supplied miniport drivers, UART or DMusUARTCapture. All of the other components in the figure are system-supplied.
 
@@ -73,11 +69,11 @@ The MIDI or DMusic capture port driver outputs a time-stamped MIDI stream to Wdm
 
 The MIDI application at the top of the figure writes time-stamped MIDI events to a MIDI file. At the time that the application calls **midiInOpen** to open the MIDI input stream, it passes in a function pointer to its callback routine. When a note-on or note-off event occurs, the operating system calls the callback routine with a data block that includes one or more time-stamped MIDI messages. The time stamps on these messages are essentially the same ones that the MIDI or DMus miniport driver originally generated.
 
-### <span id="DirectMusic_Components"></span><span id="directmusic_components"></span><span id="DIRECTMUSIC_COMPONENTS"></span>DirectMusic Components
+## DirectMusic Components
 
 The following figure shows the user- and kernel-mode components that are used by a DirectMusic application program to *play back* or *capture* MIDI data.
 
-![diagram illustrating directmusic playback and capture components.](images/dmusplay.png)
+:::image type="content" source="images/dmusplay.png" alt-text="Diagram depicting DirectMusic playback and capture user-mode and kernel-mode components.":::
 
 The playback components are shown in the left half of the preceding figure, and capture components appear on the right. The DMus miniport drivers are shown as darkened boxes to indicate that they can be vendor-supplied components. If appropriate, a vendor can instead use one of the system-supplied miniport drivers, DMusUART or DMusUARTCapture. The other components in the figure are system-supplied.
 
@@ -90,6 +86,3 @@ The DirectMusic capture components appear in the right half of the preceding fig
 An adapter driver can use the system-supplied DMusUARTCapture miniport driver to control an MPU-401 capture device. The adapter driver creates this miniport driver by calling **PcNewMiniport** with GUID value **CLSID\_DMusUARTCapture**. The resulting miniport driver object supports an **IMiniportDMus** interface. The source code for the DMusUARTCapture miniport driver is available in the sample audio drivers in the Windows Driver Kit (WDK).
 
 A DirectMusic application can also run through a **midiOut***Xxx* device such as SWMidi (Swmidi.sys) if it chooses to. For simplicity, this path is omitted from the preceding figure. The DMusic driver (Dmusic.sys) requires an initial DLS download in order to operate correctly; using SWMidi avoids this requirement.
-
- 
-

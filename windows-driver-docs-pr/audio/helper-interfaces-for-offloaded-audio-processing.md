@@ -23,7 +23,7 @@ You must develop two classes to work with these interfaces, one for each interfa
 
 The class that you develop to work with **IMiniportAudioEngineNode**, must also inherit from [IMiniportWaveRT](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavert). The methods defined in **IMiniportAudioEngineNode** allow your driver to use KS properties that access the audio engine via a KS filter handle. The class/interface hierarchy is as follows:
 
-![the custom wavert miniport class inherits from iminiportwavert and from iminiportaudioenginenode.](images/offload-class-hier1.png)
+:::image type="content" source="images/offload-class-hier1.png" alt-text="Diagram showing custom WaveRT miniport class inheriting from IMiniportWaveRT and IMiniportAudioEngineNode.":::
 
 So if, for example, you develop a class called CYourMiniportWaveRT, then as you can see from the preceding diagram, CYourMiniportWaveRT must implement all the methods (shown as Operations) defined for the two parent interfaces.
 
@@ -50,7 +50,7 @@ The *Portcls.h* header file defines these interfaces.
 
 The class that you develop to work with the second interface, **IMiniportStreamAudioEngineNode**, must also inherit from [IMiniportWaveRTStreamNotification](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavertstreamnotification). The methods defined in **IMiniportStreamAudioEngineNode** allow your driver to use KS properties that access the audio engine via a pin instance handle. The class/interface hierarchy is as follows:
 
-![the custom wavert stream miniport class inherits from iminiportwavertstreamnotification and from iminiportstreamaudioenginenode.](images/offload-class-hier2.png)
+:::image type="content" source="images/offload-class-hier2.png" alt-text="Diagram showing custom WaveRT stream miniport class inheriting from IMiniportWaveRTStreamNotification and IMiniportStreamAudioEngineNode.":::
 
 So if, for example, you develop a class called CYourMiniportWaveRTStream, then as you can see from the preceding diagram, CYourMiniportWaveRTStream must implement all the methods defined for the two parent interfaces.
 

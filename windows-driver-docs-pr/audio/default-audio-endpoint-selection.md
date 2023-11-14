@@ -18,15 +18,15 @@ References and resources discussed here are listed at the end of this topic.
 
 Most PC audio devices contain multiple logically independent audio features. In Windows 7 and Windows 10 each feature is exposed as a separate audio endpoint. Endpoints are listed in the Control Panel Sound application, as shown in the following example dialog box from Windows 7.
 
-![Control Panel Sound application example dialog box from Windows 7.](images/audio-endpoint-control-panel.png)
+:::image type="content" source="images/audio-endpoint-control-panel.png" alt-text="Screenshot of Control Panel Sound application dialog box in Windows 7.":::
 
 And in the new sound settings page available in Windows 10.
 
-![sound settings page from Windows 10.](images/audio-endpoint-settings-menu.png)
+:::image type="content" source="images/audio-endpoint-settings-menu.png" alt-text="Screenshot of sound settings page in Windows 10.":::
 
 Only one audio endpoint at a time can be set as the default for a specific console or communications role. However, starting in Windows 10 there is the option to target a different endpoint for these roles to different applications using the App volume and device preferences page.
 
-![App volume and device preferences page from Windows 10.](images/audio-endpoint-app-volume.png)
+:::image type="content" source="images/audio-endpoint-app-volume.png" alt-text="Screenshot of App volume and device preferences page in Windows 10.":::
 
 The Windows 7 and Windows 10 audio subsystems use similar algorithms to determine the default audio endpoint when no user preference has been specified. However, the Windows 10 algorithm is different from Windows 7 in the way that it handles user selection of the default and that it handles a per-application preference.
 
@@ -50,7 +50,7 @@ There are four endpoint states: ACTIVE, UNPLUGGED, DISABLED, and NOT PRESENT, th
 
 The endpoint timestamp property is a property key containing the system time. In Windows 7, an endpoint's timestamp property is created or updated when it is set as the default audio endpoint through the Control Panel Sound application.
 
-![default audio endpoint in the control panel sound application.](images/audio-endpoint-default-endpoint.png)
+:::image type="content" source="images/audio-endpoint-default-endpoint.png" alt-text="Screenshot of default audio endpoint selection in Control Panel Sound application.":::
 
 A timestamp property is associated to each role, and the timestamp property is used by the default selection algorithm to identify which endpoints have been set as the preferred default by the user for that role. The algorithm will identify the endpoint with the newest timestamp property as the default endpoint.
 

@@ -84,7 +84,7 @@ Optionally, separate INF files can be used for the DSP and Codec.
 
 This diagram summarizes a componentized audio installation.
 
-![The componentized audio stack showing DSP driver codec and APOs.](images/audio-componentized-stack-diagram.png)
+:::image type="content" source="images/audio-componentized-stack-diagram.png" alt-text="Diagram of componentized audio stack with DSP driver, codec, and APOs.":::
 
 A separate extension INF file is used to customize each base driver component for a particular system. Customizations include tuning parameters and other system-specific settings. For more information, see
 [Using an Extension INF File](../install/using-an-extension-inf-file.md).
