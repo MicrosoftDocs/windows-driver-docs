@@ -75,9 +75,3 @@ In WinDbg, this can also be accomplished by selecting **View | Show Version**.
  
 
  
-
-
-
-
-
-

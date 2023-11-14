@@ -35,8 +35,3 @@ The following rules apply to Object Reference Tracing:
  
 
  
-
-
-
-
-

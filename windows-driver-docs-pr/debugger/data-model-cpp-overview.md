@@ -55,7 +55,7 @@ Logically name spacing things and extending on specific objects allows for the d
 
 The data model is the way that [WinDbg](debugging-using-windbg-preview.md), shows most things. Many elements in the new UI can be queried, extended, or scripted, because they are powered by the data model. For more information, see [WinDbg - Data Model](../debuggercmds/windbg-data-model-preview.md).
 
-![Data model explore window showing process and threads.](images/windbgx-data-model-process-threads.png)
+:::image type="content" source="images/windbgx-data-model-process-threads.png" alt-text="Screenshot of data model explore window displaying process and threads.":::
 
 
 ### Data Model Architectural View
@@ -65,7 +65,7 @@ The following diagram summarizes the major elements of the debugger data model a
 - To the left side, UI elements are shown that provide access to the objects and support such functionality as LINQ queries.  
 - On the right side of the diagram are components that provide data to debugger data model. This includes custom NatVis, JavaScript and C++ debugger data model extensions. 
 
-![Data model architectural view showing common object model in the center and providers on the right.](images/data-model-simple-architectural-view.png)
+:::image type="content" source="images/data-model-simple-architectural-view.png" alt-text="Diagram that shows data model architecture with common object model in the center and providers on the right.":::
 
 
 ### Object Model
@@ -79,7 +79,7 @@ This diagram shows how the IModelObject uses Key Stores to contain values that a
 - In the center is the *Key Store* that is used to store and access values.
 - At the bottom it shows *Concepts* that support objects with functionality such as the ability to convert to a displayable string or be indexed.
 
-![Data model architectural view showing IModelObject as input and a tuples key store.](images/data-model-object-model.png)
+:::image type="content" source="images/data-model-object-model.png" alt-text="Diagram that shows data model architecture with IModelObject as input and a tuples key store.":::
 
 ### The Data Model: A Consumer View
 
@@ -89,7 +89,7 @@ The next diagram shows a consumer view of the data model. In the example the [dx
 - IDebugHost* objects are used to gather information from the debugger engine. 
 - Expression and semantic evaluators are used to send the request to the debugger engine.
 
-![Data model architectural view showing UI feeding into evaluators that feed into IDebugHost.](images/data-model-consumer-view.png)
+:::image type="content" source="images/data-model-consumer-view.png" alt-text="Diagram that shows data model architecture with UI feeding into evaluators that connect to IDebugHost.":::
 
 
 ### The Data Model: A Producer View
@@ -100,7 +100,7 @@ This diagram shows a producer view of the data model.
 - A JavaScript provider can take advantage of *Dynamic Provider Concepts* to manipulate information in real time.
 - The bottom shows a native code provider that can also define additional functionality.
 
-![Data model architectural view showing IModelObject on with Natvis, Javascript and Native code consumers.](images/data-model-producer-view.png)
+:::image type="content" source="images/data-model-producer-view.png" alt-text="Diagram that shows data model architecture with IModelObject connected to NatVis, JavaScript, and Native code consumers.":::
 
 ### Data Model Manager
 
@@ -111,7 +111,7 @@ This diagram shows the central role that the data model manager plays in the man
 - The namespace block shows the central registration list.
 - The right side of the diagram shows two providers, one for NatVis on the top, and a C/C++ extension on the bottom.
 
-![Data model architectural view showing registered names being looked up by the data model manager.](images/data-model-manager.png)
+:::image type="content" source="images/data-model-manager.png" alt-text="Diagram that shows data model architecture with registered names being accessed by the data model manager.":::
 
 ## <span id="summary"> Summary of Debugger Data Model Interfaces
 

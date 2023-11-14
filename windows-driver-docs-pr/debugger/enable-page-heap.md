@@ -53,8 +53,3 @@ Setting this flag for an image file is the same as typing **gflags /p /enable** 
  
 
  
-
-
-
-
-

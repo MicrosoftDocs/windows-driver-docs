@@ -32,8 +32,3 @@ After it has been activated, Secure Mode cannot be turned off. For more informat
  
 
  
-
-
-
-
-

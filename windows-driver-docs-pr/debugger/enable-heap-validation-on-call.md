@@ -51,8 +51,3 @@ To avoid the high overhead associated with this flag, use the **HeapValidate** f
  
 
  
-
-
-
-
-

@@ -13,8 +13,3 @@ A portion of system memory that will not be paged to disk.
  
 
  
-
-
-
-
-

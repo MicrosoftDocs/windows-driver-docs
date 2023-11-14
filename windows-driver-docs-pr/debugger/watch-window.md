@@ -7,27 +7,21 @@ ms.date: 05/23/2017
 
 # Using the Watch Window - WinDbg (Classic)
 
-
-## <span id="ddk_watch_window_dbg"></span><span id="DDK_WATCH_WINDOW_DBG"></span>
-
-
 The Watch window displays information about global variables, local variables, and registers. You can customize this window to show the items that you are tracking.
 
-### <span id="opening_the_watch_window"></span><span id="OPENING_THE_WATCH_WINDOW"></span>Opening the Watch Window
+## Opening the Watch Window
 
 To open or switch to the Watch window, in the WinDbg window, on the **View** menu, click **Watch**.
 
-You can also press ALT+2 or click the **Watch (ALT+2)** button on the toolbar: ![screen shot of the watch button.](images/tbwatch.png)
+You can also press ALT+2 or click the **Watch (ALT+2)** button on the toolbar: :::image type="content" source="images/tbwatch.png" alt-text="Screenshot of the Watch button on the toolbar.":::
 
 ALT+SHIFT+2 will close the Watch window.
 
 The following screen shot shows an example of a Watch window.
 
-![screen shot of the watch window .](images/window-watch.png)
+:::image type="content" source="images/window-watch.png" alt-text="Screenshot of an example Watch window in WinDbg.":::
 
 The Watch window can contain four columns. The **Name** and **Value** columns are always displayed, and the **Type** and **Location** columns are optional. To display the **Type** and **Location** columns, click the **Typecast** and **Locations** buttons, respectively, on the toolbar.
-
-### <span id="using_the_watch_window"></span><span id="USING_THE_WATCH_WINDOW"></span>Using the Watch Window - WinDbg (Classic)
 
 In the Watch window, you can do the following:
 
@@ -64,51 +58,42 @@ Unlike the [Locals window](locals-window.md), the Watch window is not affected b
 
 If you open a new workspace, the Watch window contents are discarded and replaced with those in the new workspace.
 
-### <span id="toolbar_and_shortcut_menu"></span><span id="TOOLBAR_AND_SHORTCUT_MENU"></span>Toolbar and Shortcut Menu
+## Toolbar and Shortcut Menu
 
-The Watch window has a toolbar that contains two buttons (**Typecast** and **Locations**) and a shortcut menu with additional commands. To access the menu, right-click the title bar of the window or click the icon near the upper-right corner of the window: ![screen shot of the button icon for accessing the watch window toolbar shortcut menu .](images/window-watch-menu.png)
+The Watch window has a toolbar that contains two buttons (**Typecast** and **Locations**) and a shortcut menu with additional commands. To access the menu, right-click the title bar of the window or click the icon near the upper-right corner of the window: :::image type="content" source="images/window-watch-menu.png" alt-text="Screenshot of the button icon for accessing the Watch window toolbar shortcut menu.":::
 
 The toolbar and menu contain the following buttons and commands:
 
--   (Toolbar and menu) **Typecast** turns the display of the **Type** column on and off.
+- (Toolbar and menu) **Typecast** turns the display of the **Type** column on and off.
 
--   (Toolbar and menu) **Locations** turns the display of the **Location** column on and off.
+- (Toolbar and menu) **Locations** turns the display of the **Location** column on and off.
 
--   (Menu only) **Display 16-bit values as Unicode** displays Unicode strings in this window. This command turns on and off a global setting that affects the [Locals window](locals-window.md), the Watch window, and debugger command output. This command is equivalent to using the [**.enable\_unicode (Enable Unicode Display)**](../debuggercmds/-enable-unicode--enable-unicode-display-.md) command.
+- (Menu only) **Display 16-bit values as Unicode** displays Unicode strings in this window. This command turns on and off a global setting that affects the [Locals window](locals-window.md), the Watch window, and debugger command output. This command is equivalent to using the [**.enable\_unicode (Enable Unicode Display)**](../debuggercmds/-enable-unicode--enable-unicode-display-.md) command.
 
--   (Menu only) **Always display numbers in default radix** causes integers to be displayed in the default radix instead of always displaying them in decimal format. This command turns on and off a global setting that affects the Locals window, the Watch window, and debugger command output. This command is equivalent to using the [**.force\_radix\_output (Use Radix for Integers)**](../debuggercmds/-force-radix-output--use-radix-for-integers-.md) command.
+- (Menu only) **Always display numbers in default radix** causes integers to be displayed in the default radix instead of always displaying them in decimal format. This command turns on and off a global setting that affects the Locals window, the Watch window, and debugger command output. This command is equivalent to using the [**.force\_radix\_output (Use Radix for Integers)**](../debuggercmds/-force-radix-output--use-radix-for-integers-.md) command.
+
     **Note**   The **Always display numbers in default radix** command does not affect long integers. Long integers are displayed in decimal format unless the [**.enable\_long\_status (Enable Long Integer Display)**](../debuggercmds/-enable-long-status--enable-long-integer-display-.md) command is used. The **.enable\_long\_status** command affects the display in the Locals window, the Watch window, and debugger command output. There is no equivalent for this command in the menu in the Watch window.
+  
+- (Menu only) **Open memory window for selected value** opens a new docked Memory window that displays memory starting at the address of the selected expression.
 
-     
+- (Menu only) **Invoke dt for selected memory value** runs the [**dt (Display Type)**](../debuggercmds/dt--display-type-.md) command with the selected symbol as its parameter. The result appears in the [Debugger Command window](debugger-command-window.md). The **-n** option is automatically used to differentiate the symbol from a hexadecimal address. No other options are used. Note that the content produced using this menu selection is identical to the content produced when running the **dt** command from the command line, but the format is slightly different.
 
--   (Menu only) **Open memory window for selected value** opens a new docked Memory window that displays memory starting at the address of the selected expression.
+- (Menu only) **Toolbar** turns the toolbar on and off.
 
--   (Menu only) **Invoke dt for selected memory value** runs the [**dt (Display Type)**](../debuggercmds/dt--display-type-.md) command with the selected symbol as its parameter. The result appears in the [Debugger Command window](debugger-command-window.md). The **-n** option is automatically used to differentiate the symbol from a hexadecimal address. No other options are used. Note that the content produced using this menu selection is identical to the content produced when running the **dt** command from the command line, but the format is slightly different.
+- (Menu only) **Dock** or **Undock** causes the window to enter or leave the docked state.
 
--   (Menu only) **Toolbar** turns the toolbar on and off.
+- (Menu only) **Move to new dock** closes the Watch window and opens it in a new dock.
 
--   (Menu only) **Dock** or **Undock** causes the window to enter or leave the docked state.
+- (Menu only) **Set as tab-dock target for window type** is unavailable for the Watch window. This option is only available for [Source](source-window.md) or [Memory](memory-window.md) windows.
 
--   (Menu only) **Move to new dock** closes the Watch window and opens it in a new dock.
+- (Menu only) **Always floating** causes the window to remain undocked even if it is dragged to a docking location.
 
--   (Menu only) **Set as tab-dock target for window type** is unavailable for the Watch window. This option is only available for [Source](source-window.md) or [Memory](memory-window.md) windows.
+- (Menu only) **Move with frame** causes the window to move when the WinDbg frame is moved, even if the window is undocked.
 
--   (Menu only) **Always floating** causes the window to remain undocked even if it is dragged to a docking location.
+- (Menu only) **Help** opens this topic in the Debugging Tools for Windows documentation.
 
--   (Menu only) **Move with frame** causes the window to move when the WinDbg frame is moved, even if the window is undocked.
+- (Menu only) **Close** closes this window.
 
--   (Menu only) **Help** opens this topic in the Debugging Tools for Windows documentation.
+## See also
 
--   (Menu only) **Close** closes this window.
-
-### <span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
-
-For more information about controlling variables and a description of other memory-related commands, see [Reading and Writing Memory](reading-and-writing-memory.md). For more information about registers and their manipulation, see [Viewing and Editing Registers in WinDbg (Classic)](registers-window.md). 
- 
-
- 
-
-
-
-
-
+For more information about controlling variables and a description of other memory-related commands, see [Reading and Writing Memory](reading-and-writing-memory.md). For more information about registers and their manipulation, see [Viewing and Editing Registers in WinDbg (Classic)](registers-window.md).

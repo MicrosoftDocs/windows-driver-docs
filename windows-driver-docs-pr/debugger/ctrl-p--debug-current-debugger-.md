@@ -20,8 +20,3 @@ The **CTRL+P** command is obsolete and has been replaced by [**CTRL+\\**](ctrl--
  
 
  
-
-
-
-
-

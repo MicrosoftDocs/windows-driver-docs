@@ -63,8 +63,3 @@ HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Image File Execu
  
 
  
-
-
-
-
-

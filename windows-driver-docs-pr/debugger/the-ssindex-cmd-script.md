@@ -21,8 +21,3 @@ For more information, run Ssindex.cmd with the **-?** or **-??** (verbose help) 
  
 
  
-
-
-
-
-

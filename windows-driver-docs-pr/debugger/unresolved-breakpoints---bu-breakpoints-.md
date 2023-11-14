@@ -29,8 +29,3 @@ The WinDbg **Breakpoints** dialog box displays all breakpoints, indicating unres
  
 
  
-
-
-
-
-

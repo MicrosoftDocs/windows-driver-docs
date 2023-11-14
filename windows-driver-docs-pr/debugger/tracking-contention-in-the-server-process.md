@@ -42,8 +42,3 @@ If there are over 100 threads, a debugger should be attached to this process and
  
 
  
-
-
-
-
-

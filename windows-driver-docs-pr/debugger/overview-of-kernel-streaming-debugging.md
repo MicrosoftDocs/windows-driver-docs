@@ -19,8 +19,3 @@ If you wish to use these extensions with Windows 2000, you must copy Ks.dll from
  
 
  
-
-
-
-
-

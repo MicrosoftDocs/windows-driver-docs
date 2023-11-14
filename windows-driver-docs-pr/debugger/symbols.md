@@ -51,17 +51,6 @@ For additional detail on working with symbols refer to these pages.
 
 [Symbol Problems While Debugging](symbol-problems-while-debugging.md)
 
-If you simply want to configure your debugger to access symbols for your own programs and for Windows, you may find it quicker to read the less-detailed introductory topics [Symbol Path](symbol-path.md) and [Microsoft public symbol server](microsoft-public-symbols.md). Use the Use [**!sym noisy**](../debuggercmds/-sym.md) command to display additional detail as symbols are loaded to troubleshoot issues with symbols.
-
-
-
-
+If you simply want to configure your debugger to access symbols for your own programs and for Windows, you may find it quicker to read the less-detailed introductory topics [Symbol Path](symbol-path.md) and [Microsoft public symbol server](microsoft-public-symbols.md). Use the Use [**!sym noisy**](../debuggercmds/-sym.md) command to display additional detail as symbols are loaded to troubleshoot issues with symbols. 
 
  
-
- 
-
-
-
-
-

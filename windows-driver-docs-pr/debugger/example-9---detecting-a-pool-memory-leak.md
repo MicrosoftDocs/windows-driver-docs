@@ -73,8 +73,3 @@ poolmon.exe /b >> poolmon.log
  
 
  
-
-
-
-
-

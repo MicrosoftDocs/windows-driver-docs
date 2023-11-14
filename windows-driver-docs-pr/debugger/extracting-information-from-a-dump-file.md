@@ -44,8 +44,3 @@ To determine the process ID of the target application from a user-mode dump file
  
 
  
-
-
-
-
-

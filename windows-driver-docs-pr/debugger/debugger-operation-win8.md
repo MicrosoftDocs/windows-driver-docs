@@ -20,8 +20,3 @@ In this section:
  
 
  
-
-
-
-
-

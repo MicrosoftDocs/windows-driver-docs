@@ -28,8 +28,3 @@ Current Registry Settings for notepad.exe executable are: 00000002
  
 
  
-
-
-
-
-

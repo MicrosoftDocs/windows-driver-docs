@@ -65,7 +65,7 @@ This lab uses two computers. WinDbg runs on the *host* system and the Sysvad dri
 
  Use a network hub/router and network cables to connect the two PCs.
 
-![two pcs connected with a double arrow.](images/debuglab-image-targethostdrawing1.png)
+:::image type="content" source="images/debuglab-image-targethostdrawing1.png" alt-text="Diagram showing two PCs connected via a network hub/router.":::
 
 To work with kernel-mode applications and use WinDbg, we recommend that you use the KDNET over Ethernet transport. For information about how to use the Ethernet transport protocol, see [Getting Started with WinDbg (Kernel-Mode)](getting-started-with-windbg--kernel-mode-.md). For more information about setting up the target computer, see [Preparing a Computer for Manual Driver Deployment](../develop/preparing-a-computer-for-manual-driver-deployment.md) and [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md).
 
@@ -173,7 +173,7 @@ Copy the auto generated unique key into a text file, to avoid having to type it 
 
 If you receive a pop-up message from the firewall, and you wish to use the debugger, check **all three** of the boxes.
 
-![windows security alert - windows firewall has blocked some features of this app.](images/debuglab-image-firewall-dialog-box.png)
+:::image type="content" source="images/debuglab-image-firewall-dialog-box.png" alt-text="Screenshot of Windows Security Alert indicating that Windows Firewall has blocked some features of an app.":::
  
 
 **&lt;- On the host system**
@@ -198,7 +198,7 @@ Reboot the target system.
 
 In a minute or two, debug output should be displayed on the host system.
 
-![windows debugger showing command window output from a live kernel connection.](images/debuglab-image-winddbg-hh.png)
+:::image type="content" source="images/debuglab-image-winddbg-hh.png" alt-text="Screenshot of Windows Debugger displaying command window output from a live kernel connection.":::
 
 The Debugger Command window is the primary debugging information window in WinDbg. You can enter debugger commands and view the command output in this window.
 
@@ -236,7 +236,7 @@ You can access reference command help using the **.hh** command.
 
 The Debugger help file will display help for the **.prefer\_dml** command.
 
-![debugger help application showing help for the .prefer\-dml command.](images/debuglab-image-prefer-dml-help.png)
+:::image type="content" source="images/debuglab-image-prefer-dml-help.png" alt-text="Screenshot of Debugger Help application displaying help for the .prefer-dml command.":::
 
 **Display the version of Windows on the target system**
 
@@ -294,7 +294,7 @@ To download and build the Sysvad sample audio driver, perform the following step
 
     [https://github.com/Microsoft/Windows-driver-samples/tree/main/audio/sysvad](https://github.com/Microsoft/Windows-driver-samples/tree/main/audio/sysvad)
 
-    ![github repo showing general folder and download zip button.](images/sysvad-lab-github.png)
+    :::image type="content" source="images/sysvad-lab-github.png" alt-text="Screenshot of GitHub repository displaying the general folder and Download ZIP button.":::
 
     This lab, shows how to download the universal driver samples in one zip file.
 
@@ -314,7 +314,7 @@ To download and build the Sysvad sample audio driver, perform the following step
 
     In Visual Studio locate the Solution Explorer. (If this is not already open, choose **Solution Explorer** from the **View** menu.) In Solution Explorer, you can see one solution that has a number of projects. 
         
-    ![visual studio with the adapter.cpp file loaded from the sysvad project.](images/sysvad-lab-visual-studio-solution.png)
+    :::image type="content" source="images/sysvad-lab-visual-studio-solution.png" alt-text="Screenshot of Visual Studio with the adapter.cpp file loaded from the Sysvad project.":::
 
 3.  **Set the sample's configuration and platform**
 
@@ -408,7 +408,7 @@ To install the driver on the target system, perform the following steps.
 
     A dialog box will appear indicating that the test driver is an unsigned driver. Select **Install this driver anyway** to proceed.
 
-    ![windows security warning - windows can't verify the publisher.](images/debuglab-image-install-security-warning.png)
+    :::image type="content" source="images/debuglab-image-install-security-warning.png" alt-text="Screenshot of Windows Security Warning stating that Windows can't verify the publisher.":::
 
     >[!TIP]
     > If you have any issues with the installation, check the following file for more information.
@@ -430,7 +430,7 @@ To install the driver on the target system, perform the following steps.
 
     Confirm in Device Manager that audio hardware driver, displays the a down arrow, indicating that it is disabled.
 
-    ![device manager tree with the virtual audio device tablet sample highlighted.](images/sysvad-lab-audio-device-manager.png)
+    :::image type="content" source="images/sysvad-lab-audio-device-manager.png" alt-text="Screenshot of Device Manager tree with the Virtual Audio Device Tablet Sample highlighted.":::
 
     After successfully installing the sample driver, you're now ready to test it.
 
@@ -616,7 +616,7 @@ For more information about the device node debug extension, see [**!devnode**](.
 
 2. Use Ctrl+F to search in the output that is generated to look for the name of the device driver, *sysvad*.
 
-   ![find dialog box showing the term sysvad being searched for.](images/sysvad-lab-audio-find-dialog.png)
+   :::image type="content" source="images/sysvad-lab-audio-find-dialog.png" alt-text="Find dialog box with the term 'sysvad' entered in the search field.":::
 
    A device node entry with a name of `sysvad_TabletAudioSample` will be present in the !devnode output for Syvad.
 
@@ -747,7 +747,7 @@ The output shows that we have a farily simple device driver stack. The sysvad\_T
 
 This diagram shows a more complex device node tree.
 
-![device node tree with about 20 nodes.](images/debuglab-image-device-node-tree.png)
+:::image type="content" source="images/debuglab-image-device-node-tree.png" alt-text="Diagram of a device node tree consisting of approximately 20 nodes.":::
 
 **Note**  For more information about more complex driver stacks, see [Driver stacks](../gettingstarted/driver-stacks.md) and [Device nodes and device stacks](../gettingstarted/device-nodes-and-device-stacks.md).
 
@@ -1283,7 +1283,7 @@ It can be useful to examine variables as the code executes to confirm that the c
 
     Use the **View**&gt; **Locals** menu item to display local variables. This interface also provides this ability to drill down on more complex data structures.
 
-    ![windbg showing sample code locals and command windows.](images/sysvad-lab-display-variables.png)
+    :::image type="content" source="images/sysvad-lab-display-variables.png" alt-text="WinDbg interface displaying sample code locals and command windows.":::
 
 13. Use p or F10 to step forward about 10 lines in the code until you are highlighting the ntStatus = IsFormatSupported(Pin, Capture, DataFormat); line of code.
 
@@ -1377,7 +1377,7 @@ To display the call stack, use the k\* commands:
 
 If you want to keep the call stack available, you can select **View**&gt; **Call stack** to view it. Select the columns at the top of the window to toggle the display of additional information.
 
-![windbg call stack window.](images/sysvad-lab-call-stack.png)
+:::image type="content" source="images/sysvad-lab-call-stack.png" alt-text="WinDbg interface displaying the call stack window.":::
 
 This output shows the call stack while debugging the sample adapter code in a break state.
 
@@ -1779,7 +1779,7 @@ fffff803`bb757020 cc              int     3
 
 Alternatively, you can display the contents of the registers by selecting **View** &gt; **Registers**.
 
-![windbg registers window showing about 12 registers.](images/sysvad-lab-audio-display-registers.png)
+:::image type="content" source="images/sysvad-lab-audio-display-registers.png" alt-text="Screenshot of WinDbg registers window displaying approximately 12 registers.":::
 
 Viewing the contents of the registers can be helpful when stepping through assembly language code execution and in other scenarios. For more information see [**r (Registers)**](../debuggercmds/r--registers-.md).
 
@@ -1789,7 +1789,7 @@ For information about contents of the register, see [x86 Architecture](x86-archi
 
 You can disassemble the code that is under execution to view the assembly language code that is being run by selecting **View** &gt; **Disassembly**.
 
-![windbg disassembly window.](images/sysvad-lab-audio-disassembly-window.png)
+:::image type="content" source="images/sysvad-lab-audio-disassembly-window.png" alt-text="Screenshot of WinDbg disassembly window showing assembly language code.":::
 
 For more information about assembly language disassembly, see [Annotated x86 Disassembly](annotated-x86-disassembly.md) and [Annotated x64 Disassembly](annotated-x64-disassembly.md).
 
@@ -1836,7 +1836,7 @@ If you attempt to display an invalid address, its contents are shown as question
 
 Alternatively, you can view the memory by selecting **View** &gt; **Memory**. Use the **Display format** pull down to change how the memory is displayed.
 
-![windbg view memory window.](images/sysvad-lab-audio-memory-display.png)
+:::image type="content" source="images/sysvad-lab-audio-memory-display.png" alt-text="Screenshot of WinDbg view memory window with various display format options.":::
 
 1.  To view data associated with the volume control, set a breakpoint to fire on the PropertyHandlerAudioEngineVolumeLevel routine using the bm command. Before we set the new breakpoint, we will clear all of the previous breakpoints using bc \*.
 

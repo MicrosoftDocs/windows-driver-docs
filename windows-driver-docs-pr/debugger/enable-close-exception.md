@@ -47,8 +47,3 @@ The **Enable close exception** flag raises a user-mode exception whenever an inv
  
 
  
-
-
-
-
-

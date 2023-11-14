@@ -16,7 +16,7 @@ Two separate computer systems are typically used for debugging because instructi
 
 **Host &lt;--------------------------------------------------&gt; Target**
 
-![Diagram of host and target systems connected with a double arrow.](images/target-host-1.png)
+:::image type="content" source="images/target-host-1.png" alt-text="Diagram illustrating the connection between host and target systems with a double arrow.":::
 
 In some situations, it's possible to use a virtual machine as the second system. For example, a virtual PC could run on the same PC as the code that you need to debug. However, if your code communicates with low-level hardware, using a virtual PC might not be the best approach. For more information, see [Setting up network debugging of a virtual machine - KDNET](setting-up-network-debugging-of-a-virtual-machine-host.md).
 

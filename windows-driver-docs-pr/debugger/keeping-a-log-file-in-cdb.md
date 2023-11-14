@@ -47,8 +47,3 @@ To determine the log file status, do the following:
  
 
  
-
-
-
-
-

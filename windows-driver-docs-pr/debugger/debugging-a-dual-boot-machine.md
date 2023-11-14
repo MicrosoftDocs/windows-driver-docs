@@ -20,8 +20,3 @@ On an x86 computer, you should also verify that boosect.ini exists. This file co
  
 
  
-
-
-
-
-

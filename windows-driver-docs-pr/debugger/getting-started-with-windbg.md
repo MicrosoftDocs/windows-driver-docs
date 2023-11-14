@@ -21,7 +21,7 @@ After you install the debugging tools, find the installation directories for the
 
 2. On the **File** menu, select **Open Executable**. In the Open Executable dialog, go to the folder that contains notepad.exe. (The notepad.exe file usually is in C:\\Windows\\System32.) For **File name**, enter **notepad.exe**. Select **Open**.
 
-    ![Screenshot that shows WinDbg when Notepad is open.](images/windbggetstart01.png)
+    :::image type="content" source="images/windbggetstart01.png" alt-text="Screenshot of WinDbg with Notepad open.":::
 
 3. In the command line near the bottom of the WinDbg window, enter this command:
 
@@ -141,7 +141,7 @@ After you install the debugging tools, find the installation directories for the
 
 10. To start Notepad running again, enter [g](../debuggercmds/g--go-.md). In the Notepad window, enter some text. On the **File** menu, select **Save**. The running code breaks in when it comes to `ZwCreateFile`. Enter the [k](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command to see the stack trace.
 
-    ![Screenshot that shows a stack trace in WinDbg.](images/windbggetstart02.png)
+    :::image type="content" source="images/windbggetstart02.png" alt-text="Screenshot of a stack trace in WinDbg.":::
 
     In the WinDbg window, left of the command line, the processor and thread numbers are shown. In this example, the current processor number is 0, and the current thread number is 11 (`0:011>`). The window displays the stack trace for thread 11 running on processor 0.
 
@@ -247,7 +247,7 @@ For this exercise, assume that the built application (MyApp.exe) and the symbol 
 
     WinDbg displays your source code and the Command window.
 
-    ![Screenshot that shows source code in WinDbg.](images/windbggetstart03.png)
+    :::image type="content" source="images/windbggetstart03.png" alt-text="Screenshot of source code displayed in WinDbg.":::
 
 5. On the **Debug** menu, select **Step Into** (or select F11). Continue stepping until you step into `MyFunction`. When you step into the line `y = x / p2`, your application crashes and breaks into the debugger.
 

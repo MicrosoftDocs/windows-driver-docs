@@ -20,8 +20,3 @@ If you are debugging ACPI BIOS code, the preceding commands do not work, because
  
 
  
-
-
-
-
-

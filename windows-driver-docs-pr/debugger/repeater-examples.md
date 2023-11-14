@@ -56,8 +56,3 @@ For a more complicated example using repeaters, see [Two Firewalls](two-firewall
  
 
  
-
-
-
-
-

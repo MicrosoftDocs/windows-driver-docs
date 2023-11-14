@@ -62,8 +62,3 @@ To control the executable image path in CDB, do one of the following:
  
 
  
-
-
-
-
-

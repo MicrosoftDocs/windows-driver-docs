@@ -74,8 +74,3 @@ You cannot actually use this control key to change the baud rate at which you ar
  
 
  
-
-
-
-
-

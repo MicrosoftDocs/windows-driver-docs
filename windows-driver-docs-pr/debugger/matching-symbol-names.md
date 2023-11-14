@@ -22,8 +22,3 @@ For example, suppose there are two files, Longfilename1.pdb and Longfilename2.pd
  
 
  
-
-
-
-
-

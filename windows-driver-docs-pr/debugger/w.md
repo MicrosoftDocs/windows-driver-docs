@@ -19,8 +19,3 @@ An emulation layer in 64-bit Windows that can run 32-bit Windows applications. W
  
 
  
-
-
-
-
-

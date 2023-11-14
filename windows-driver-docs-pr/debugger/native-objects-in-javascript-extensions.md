@@ -6,20 +6,19 @@ ms.date: 02/02/2021
 
 # Native Debugger Objects in JavaScript Extensions
 
-
 Native debugger objects represent various constructs and behaviors of the debugger environment. The objects can be passed into (or acquired in) JavaScript extensions to manipulate the state of the debugger.
 
 Example debugger objects include the following.
 
--   Session
--   Threads / Thread
--   Processes / Process
--   Stack Frames / Stack Frame
--   Local Variables
--   Modules / Module
--   Utility
--   State
--   Settings
+- Session
+- Threads / Thread
+- Processes / Process
+- Stack Frames / Stack Frame
+- Local Variables
+- Modules / Module
+- Utility
+- State
+- Settings
 
 For example the host.namespace.Debugger.Utility.Control.ExecuteCommand object can be used to send the u command to the debugger with following two lines of JavaScript code.
 
@@ -61,16 +60,15 @@ Debugger
 
 All of the items listed above are clickable DML and can be recursed further down to view the debugger object structure.
 
-## <span id="Extending"></span><span id="extending"></span><span id="EXTENDING"></span>Extending the Debugger via the Data Model
-
+## Extending the Debugger via the Data Model
 
 The debugger data model allows for the creation of an interface to information about applications and drivers in Windows that has the following attributes.
 
--   Is discoverable and organized- a logically structured name space can be queried using the dx command.
--   Can be queried using LINQ- This allows for extraction and sorting of data using a standard query language.
--   Can be logically and consistently extended - Extensible using techniques described in this topic with debugger scripting providers such as Natvis and JavaScript.
+- Is discoverable and organized- a logically structured name space can be queried using the dx command.
+- Can be queried using LINQ- This allows for extraction and sorting of data using a standard query language.
+- Can be logically and consistently extended - Extensible using techniques described in this topic with debugger scripting providers such as Natvis and JavaScript.
 
-## <span id="Extending-Debugger-Object"></span><span id="extending-debugger-object"></span><span id="EXTENDING-DEBUGGER-OBJECT"></span>Extending a Debugger Object in JavaScript
+## Extending a Debugger Object in JavaScript
 
 In addition to being able to create a visualizer in JavaScript, script extensions can also modify the core concepts of the debugger - sessions, processes, threads, stacks, stack frames, local variables - and even publish themselves as extension points that other extensions can consume.
 
@@ -134,8 +132,6 @@ In addition, there are some additional data model objects that are defined by th
 
 **DataModel.Models.Concepts.StringDisplayable**: Applied to every object which has a display string conversion
 
- 
-
 **Example COM Debugger Object Extension Overview**
 
 Let's consider an example. Imagine that you want to create a debugger extension to display information specific to COM, such as the global interface table (GIT).
@@ -182,7 +178,6 @@ Next, create the object which implements the sub-namespace COM on a process.
 There can be multiple processes (whether attached to such in user mode or under KD). This extension cannot assume that the present state of the debugger is the what the user intended. Someone can capture &lt;someProcess&gt;.COM in a variable and modify it, which can lead to presenting information from the wrong process context. The solution is to add code in the extension so that each instantiation will keep track of what process it is attached to. For this code sample, this information is passed via the 'this' pointer of the property.
 
 `this.__process = process;`
-
 
 ```javascript
 class comNamespace
@@ -293,11 +288,6 @@ class gipTable
         throw new RangeError("Unable to find specified value");
     }
 }
-
-
-
-
-
 // globalObjects:
 //
 // The class which presents how we want the GIP table to look to the data model.  It iterates the actual objects
@@ -446,9 +436,7 @@ Debugger.Sessions.First().Processes.First().Threads.Duplicate(2),d              
 …
 ```
 
-
-
-## <span id="related_topics"></span>See also
+## See also
 
 [Native Debugger Objects in JavaScript Extensions - Debugger Object Details](native-objects-in-javascript-extensions-debugger-objects.md)
 

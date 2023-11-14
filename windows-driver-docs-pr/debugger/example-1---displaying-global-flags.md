@@ -52,8 +52,3 @@ Remember that the flag value displayed might not be the current, effective flag 
  
 
  
-
-
-
-
-

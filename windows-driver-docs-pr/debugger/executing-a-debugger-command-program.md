@@ -22,8 +22,3 @@ You can execute a debugger command program in one of the following ways:
  
 
  
-
-
-
-
-

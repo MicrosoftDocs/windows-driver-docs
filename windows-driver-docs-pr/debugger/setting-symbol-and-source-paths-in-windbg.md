@@ -61,8 +61,3 @@ To control the executable image path in WinDbg, do one of the following:
  
 
  
-
-
-
-
-

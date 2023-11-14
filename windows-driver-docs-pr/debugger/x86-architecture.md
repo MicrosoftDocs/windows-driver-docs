@@ -524,8 +524,3 @@ The **lock** prefix should not be used for unaligned memory accesses.
  
 
  
-
-
-
-
-

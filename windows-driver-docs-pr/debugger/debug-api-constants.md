@@ -36,8 +36,3 @@ ms.date: 08/20/2018
 [DEBUG_TYPEOPTS_XXX](debug-typeopts-xxx.md)
 
  
-
-
-
-
-

@@ -315,9 +315,3 @@ See these topics for additional information.
 [Crash dump analysis using the Windows debuggers (WinDbg)](crash-dump-files.md)
 
 [Analyzing a Kernel-Mode Dump File with WinDbg](analyzing-a-kernel-mode-dump-file-with-windbg.md)
-
-
-
-
-
-

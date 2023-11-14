@@ -70,8 +70,3 @@ Function calls that returned failure status codes are shaded in pink.
  
 
  
-
-
-
-
-
