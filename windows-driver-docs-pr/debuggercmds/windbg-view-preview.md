@@ -6,11 +6,11 @@ ms.date: 07/02/2020
 
 # WinDbg - View Menu
 
-![Small logo on WinDbg.](images/windbgx-preview-logo.png)
+:::image type="content" source="images/windbgx-preview-logo.png" alt-text="WinDbg logo with a magnifying glass inspecting bits.":::
 
 This section describes how work with the view menu in WinDbg.
 
-![View menu in debugger.](images/windbgx-view-menu.png)
+:::image type="content" source="images/windbgx-view-menu.png" alt-text="Screenshot of the View menu in WinDbg.":::
 
 The view menu will open a new Window for each item, or bring focus to the existing Window, if one is already open.
 
@@ -28,7 +28,7 @@ The locals and watch windows are both based off of the data model that is used b
 
 The locals window displays information about all of the local variables in the current scope. The locals window will highlight values that have changed during the previous code execution.
 
-![Locals window in debugger.](images/windbgx-locals-window.png)
+:::image type="content" source="images/windbgx-locals-window.png" alt-text="Screenshot of the Locals window in WinDbg.":::
 
 ## Registers
 
@@ -46,7 +46,7 @@ Use the stack Window to view the current call stack. The stack window provides b
 
 The disassembly window highlights the current instruction and retains that position when you scroll. 
 
-![Screenshot that shows the "Disassembly" window in debugger.](images/windbgx-disassembly.png)
+:::image type="content" source="images/windbgx-disassembly.png" alt-text="Screenshot of the Disassembly window in WinDbg.":::
 
 ## Threads
 
@@ -56,7 +56,7 @@ The threads window highlights the current thread.
 
 Use the breakpoints window to view, enable and clear breakpoints.
 
-![ Disassembly window in debugger.](images/windbgx-breakpoints-window.png)
+:::image type="content" source="images/windbgx-breakpoints-window.png" alt-text="Screenshot of the Breakpoints window in WinDbg.":::
 
 ## Logs
 
@@ -81,7 +81,7 @@ Use modules to display loaded modules and their related information. Modules dis
 - The base address that the module is loaded at
 - The file version
 
-![Modules view window showing five modules listed.](images/windbgx-view-modules.png)
+:::image type="content" source="images/windbgx-view-modules.png" alt-text="Screenshot of the Modules view window with five modules listed in WinDbg.":::
 
 ## Layouts
 

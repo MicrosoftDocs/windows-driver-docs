@@ -6,7 +6,7 @@ ms.date: 01/22/2020
 
 # Time Travel Debugging - Replay a trace
 
-![Small time travel logo showing clock.](images/ttd-time-travel-debugging-logo.png)
+:::image type="content" source="images/ttd-time-travel-debugging-logo.png" alt-text="Time travel debugging logo featuring a clock.":::
 
 This section describes how to replay time travel traces, navigating forwards and backwards in time.
 
@@ -14,19 +14,19 @@ This section describes how to replay time travel traces, navigating forwards and
 
 Use a trailing minus sign with the following commands to travel back in time.
 
-| Command  |
-|----------------|
-| p- (Step Back) |
-| t- (Trace Back)|
-| g- (Go Back)   |
+| Command         |
+|-----------------|
+| p- (Step Back)  |
+| t- (Trace Back) |
+| g- (Go Back)    |
 
-For more information, see [Time Travel Debugging - Navigation commands](time-travel-debugging-navigation-commands.md). 
+For more information, see [Time Travel Debugging - Navigation commands](time-travel-debugging-navigation-commands.md).
 
 ## Ribbon button time travel navigation
 
 Alternatively, use the ribbon buttons to navigate in the trace.
 
-![Screen shot of WinDbg showing start recording checkbox.](images/ttd-ribbon-buttons.png)
+:::image type="content" source="images/ttd-ribbon-buttons.png" alt-text="Screenshot of Go, Go Back, Step and Step back buttons in ribbon.":::
 
 ## Example TTD Trace Replay
 

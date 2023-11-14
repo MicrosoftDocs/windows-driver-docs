@@ -6,7 +6,7 @@ ms.date: 01/10/2020
 
 # WinDbg - Start a remote, process server and dump file session
 
-![Small logo on WinDbg.](images/windbgx-preview-logo.png)
+:::image type="content" source="images/windbgx-preview-logo.png" alt-text="WinDbg logo with a magnifying glass inspecting bits.":::
 
 This section describes how to start a  remote, process server and dump file session with the WinDbg debugger.
 
@@ -14,7 +14,7 @@ This section describes how to start a  remote, process server and dump file sess
 
 Use this option to connect to a remote debugging server.
 
-![Start debugging remote debug server dialog showing blank connection screen.](images/windbgx-remote-session.png)
+:::image type="content" source="images/windbgx-remote-session.png" alt-text="Screenshot of the Start Debugging Remote Debug Server dialog with blank connection fields.":::
 
 Remote debugging involves two debuggers running at two different locations. The debugger that performs the debugging is called the debugging server. The second debugger, called the debugging client, controls the debugging session from a remote location. To establish a remote session, you must set up the debugging server first and then connect to it with the debugging client.
 

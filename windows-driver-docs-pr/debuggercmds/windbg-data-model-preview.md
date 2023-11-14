@@ -14,7 +14,7 @@ Use the New Model Query dialog to create a new model query. You can put anything
 
 For example, specify `Debugger.Sessions` to examine the debugger sessions objects. 
 
-![New data model query dialog box.](images/windbgx-data-model-new-model-dialog.png)
+:::image type="content" source="images/windbgx-data-model-new-model-dialog.png" alt-text="Screenshot of the New data model query dialog box in WinDbg.":::
 
 For general information about the debugger objects refer to [dx (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md).
 
@@ -24,13 +24,13 @@ Use LINQ queries to dig deeper into the session. This query shows the top 5 proc
 Debugger.Sessions.First().Processes.Select(p => new { Name = p.Name, ThreadCount = p.Threads.Count() }).OrderByDescending(p => p.ThreadCount),5
 ```
 
-![Data model explore window showing process and threads.](images/windbgx-data-model-process-threads.png)
+:::image type="content" source="images/windbgx-data-model-process-threads.png" alt-text="Screenshot of the Data model explore window displaying processes and threads in WinDbg.":::
 
 ## Data Model Explorer
 
 Use the data model explorer to quickly browse every data model object in the `Debugger` namespace.
 
-![Data model explorer window showing debug object sessions.](images/windbgx-data-model-explore-window.png)
+:::image type="content" source="images/windbgx-data-model-explore-window.png" alt-text="Screenshot of the Data model explorer window with debug object sessions in WinDbg.":::
 
 ### Display Mode
 
@@ -38,7 +38,7 @@ Use display mode to toggle between grid and hierarchy display mode. You can righ
 
 Grid mode can be useful to dig down in the objects. For example, here is the previous top threads query in grid view. 
 
-![Data model explore window showing top threads.](images/windbgx-data-model-process-threads-grid.png)
+:::image type="content" source="images/windbgx-data-model-process-threads-grid.png" alt-text="Screenshot of the Data model explore window displaying top threads in grid view in WinDbg.":::
 
 When you click on any underlined item a new tab is opened and a query is run to display that information.
 
@@ -48,7 +48,7 @@ This query shows the devices in the plug and play device tree grouped by the nam
 Debugger.Sessions.First().Devices.DeviceTree.Flatten(n => n.Children).GroupBy(n => n.PhysicalDeviceObject->Driver->DriverName.ToDisplayString()) 
 ```
 
-![Data model explore window showing plug and play device tree in a grid view.](images/windbgx-data-model-pnp-device.png)
+:::image type="content" source="images/windbgx-data-model-pnp-device.png" alt-text="Screenshot of the Data model explore window presenting plug and play device tree in grid view in WinDbg.":::
 
 ### Change Query
 

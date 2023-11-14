@@ -26,7 +26,7 @@ The **!usbkd.usb2tree** command displays [USB 2.0 tree](usb-2-0-extensions.md#us
 
 This screen shot shows and example of the output of the **!usb2tree** command.
 
-![output of the !usbkd.usb2tree command showing uhci ehci information and an enumerated hub list.](images/usb2tree01.png)
+:::image type="content" source="images/usb2tree01.png" alt-text="Screenshot of the !usbkd.usb2tree command output displaying UHCI, EHCI information, and an enumerated hub list.":::
 
 The output shows one EHCI execution unit and two UHCI execution units. The execution units shown in this example happen to be on a single USB host controller device. The output also shows the root hubs and connected devices.
 

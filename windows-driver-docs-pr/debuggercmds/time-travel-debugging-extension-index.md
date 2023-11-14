@@ -6,7 +6,7 @@ ms.date: 01/22/2020
 
 # !index
 
-![Small time travel logo showing clock.](images/ttd-time-travel-debugging-logo.png)
+:::image type="content" source="images/ttd-time-travel-debugging-logo.png" alt-text="Time travel debugging logo featuring a clock.":::
 
 The **!index** extension indexes time travel traces or displays index status information.
 

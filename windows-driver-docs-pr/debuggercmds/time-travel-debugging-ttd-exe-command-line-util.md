@@ -6,7 +6,7 @@ ms.date: 07/06/2023
 
 # Time Travel Debugging - TTD.exe command line utility
 
-![Small time travel logo showing clock.](images/ttd-time-travel-debugging-logo.png)
+:::image type="content" source="images/ttd-time-travel-debugging-logo.png" alt-text="Time travel debugging logo featuring a clock.":::
 
 This article describes when and how to use the TTD.exe command line utility to record a trace.
 
@@ -139,7 +139,7 @@ Disables the UI for manual control of recording.
 
 If this option is not selected a small UI is displayed when recording is active. “Tracing Off” stops tracing and app continues; “Exit App” closes the app which also stops tracing.
 
-![A small application menu is displayed showing that tracing is on. It also includes an exit app button](images/ttd-time-travel-command-utility-ui-example.png)
+:::image type="content" source="images/ttd-time-travel-command-utility-ui-example.png" alt-text="Screenshot of small two button TTD UI displaying tracing status and an Exit App button.":::
 
 `-accepteula`
 
@@ -254,7 +254,7 @@ notepad.exe(x64) (PID:9960): Process exited with exit code 0 after 12984ms
 
 2. A small application menu is displayed showing that tracing is on.
 
-![A small application menu is displayed showing that tracing is on. It also includes a Exit app button](images/ttd-time-travel-command-utility-ui-example.png)
+:::image type="content" source="images/ttd-time-travel-command-utility-ui-example.png" alt-text="Screenshot of TTD UI displaying tracing status and an Exit App button.":::
 
 3. When the application is closed, a trace file is generated. In this example notepad01.run.
 

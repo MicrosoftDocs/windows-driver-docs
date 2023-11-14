@@ -14,7 +14,6 @@ api_type:
 
 # .dml\_flow (Unasemmble with Links)
 
-
 The **.dml\_flow** command displays a disassembled code block and provides links that you can use to construct a code flow graph.
 
 ```dbgcmd
@@ -22,7 +21,6 @@ The **.dml\_flow** command displays a disassembled code block and provides links
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
-
 
 <span id="Start"></span><span id="start"></span><span id="START"></span>*Start*  
 The address of an instruction from which the target address can be reached.
@@ -51,7 +49,7 @@ Suppose you want to examine all code paths from the start of **nt!MiFlushSection
 
 The output, in the [Command Browser window](../debugger/command-browser-window.md), is shown in the following image.
 
-![screen shot of .dml-flow output.](images/dmlflow01.png)
+:::image type="content" source="images/dmlflow01.png" alt-text="Screenshot of .dml-flow output in Command Browser window.":::
 
 The preceding image shows the code block that contains the target address, `` fffff800`01b3b6b4 ``. There is only one link (`` fffff800`01b3b681 ``) at the top of the image. That indicates that there is only one code block from which the current code block can be reached. If you click the link, you will see that code block disassembled, and you will see links that enable you to further explore the code flow graph.
 

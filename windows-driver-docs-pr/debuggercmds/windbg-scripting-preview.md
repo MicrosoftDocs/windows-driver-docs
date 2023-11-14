@@ -8,7 +8,7 @@ ms.date: 01/20/2020
 
 This section describes how to use the scripting support in the WinDbg.
 
-![Screen shot of scripting menu in debugger.](images/windbgx-javascript-new-script.png)
+:::image type="content" source="images/windbgx-javascript-new-script.png" alt-text="Screenshot of the scripting menu in WinDbg debugger.":::
 
 The WinDbg script window features basic syntax highlighting, IntelliSense, and error recognition.
 

@@ -10,7 +10,7 @@ ms.topic: article
 
 WinDbg is a debugger that can be used to analyze crash dumps, debug live user-mode and kernel-mode code, and examine CPU registers and memory.
 
-## ![Small WinDbg logo](images/windbg-logo-35px.png) Getting started with WinDbg
+## :::image type="content" source="images/windbg-logo-35px.png" alt-text="WinDbg logo.":::
 
 This latest version features a more modern user experience with an updated interface, fully fledged scripting capabilities, an extensible debugging data model, built-in Time Travel Debugging (TTD) support, and many additional features.
 
