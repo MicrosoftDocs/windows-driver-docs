@@ -291,8 +291,3 @@ In this example, LPDIRECTDRAWCLIPPER is defined as a pointer to the **IDirectDra
  
 
  
-
-
-
-
-

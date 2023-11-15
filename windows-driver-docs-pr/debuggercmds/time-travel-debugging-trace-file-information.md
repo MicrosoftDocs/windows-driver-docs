@@ -6,7 +6,7 @@ ms.date: 01/22/2020
 
 # Time Travel Debugging - Working with Trace Files
 
-![Small time travel logo showing clock.](images/ttd-time-travel-debugging-logo.png) 
+:::image type="content" source="images/ttd-time-travel-debugging-logo.png" alt-text="Time travel debugging logo featuring a clock.":::
 
 This section describes how to work with files created and consumed by time travel debugging.
 
@@ -25,7 +25,7 @@ Time Travel Debugging uses the following files to debug code execution.
 
 Trace .RUN files can be opened after they are recorded using **File** > **Start debugging** > **Open trace file**.
 
-![File open options showing open trace option highlighted.](images/ttd-start-debugging-options.png) 
+:::image type="content" source="images/ttd-start-debugging-options.png" alt-text="Screenshot of file open options with the 'Open trace file' option highlighted.":::
 
 All of the trace output files are stored in the users document folder by default. For example, for User1 the TTD files would be stored here:
 
@@ -36,7 +36,7 @@ You can change the location of the trace files when you start to record. For mor
 
 The most recently used list of files allows you to quickly access previously used target configuration files. Any recently used trace files or dump files are listed as well.
 
-![File open list of .run trace files showing five recently used trace files.](images/ttd-recent-trace-files.png) 
+:::image type="content" source="images/ttd-recent-trace-files.png" alt-text="Screenshot of file open list displaying five recently used .run trace files.":::
 
 ## Index .IDX files  
 

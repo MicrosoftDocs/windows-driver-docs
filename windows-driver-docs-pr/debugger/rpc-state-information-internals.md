@@ -132,8 +132,3 @@ The first 24 characters of the name of the server to which the call is made.
  
 
  
-
-
-
-
-

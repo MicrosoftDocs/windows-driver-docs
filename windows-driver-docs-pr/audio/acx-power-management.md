@@ -11,6 +11,10 @@ This topic discusses ACX power management. For information about ACX  device enu
 
 ACX leverages the WDF KMDF PnP power behavior. For more  information about KMDF power management sequences, see [PnP and Power Management Callback Sequences](../wdf/pnp-and-power-management-callback-sequences.md).
 
+>[!NOTE]
+> The ACX headers and libraries are not included in the  WDK 10.0.22621.2428 (released October 24, 2023), but are available in previous versions, as well as the latest (25000 series builds) Insider Preview of the WDK. For more information about preview versions of the WDK, see [Installing preview versions of the Windows Driver Kit (WDK)](../installing-preview-versions-wdk.md).
+
+
 ## ACX device enumeration and startup for static audio devices
 
 To learn about how ACX startup works, the following scenario will be described.

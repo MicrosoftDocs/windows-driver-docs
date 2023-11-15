@@ -7,27 +7,23 @@ ms.date: 05/23/2017
 
 # Using the Toolbar and Status Bar - WinDbg (Classic)
 
-
-## <span id="ddk_using_the_toolbar_and_status_bar_dbg"></span><span id="DDK_USING_THE_TOOLBAR_AND_STATUS_BAR_DBG"></span>
-
-
 The *toolbar* appears underneath the menu bar, near the top of the WinDbg window. The *status bar* appears at the bottom of the WinDbg window.
 
-### <span id="using_the_toolbar"></span><span id="USING_THE_TOOLBAR"></span>Using the Toolbar
+## Using the Toolbar
 
 The following screen shot shows the WinDbg toolbar.
 
-![screen shot of the windbg toolbar.](images/toolbar4.png)
+:::image type="content" source="images/toolbar4.png" alt-text="Screenshot of the WinDbg toolbar with various buttons.":::
 
 The toolbar buttons have various effects. Most of them are equivalent to menu commands. To execute the command that is associated with a toolbar button, click the toolbar button. When you cannot use a button, it appears unavailable.
 
 For more information about each button, see [Toolbar Buttons - WinDBg (Classic)](toolbar-buttons.md).
 
-### <span id="using_the_status_bar"></span><span id="USING_THE_STATUS_BAR"></span>Using the Status Bar
+## Using the Status Bar
 
 The following screen shot shows the WinDbg status bar.
 
-![screen shot of the windbg status bar.](images/statusbar3.png)
+:::image type="content" source="images/statusbar3.png" alt-text="Screenshot of the WinDbg status bar displaying different sections.":::
 
 The following table describes the sections of the WinDbg status bar.
 
@@ -82,23 +78,12 @@ The following table describes the sections of the WinDbg status bar.
 </tbody>
 </table>
 
- 
-
-### <span id="hiding_the_toolbar_or_status_bar"></span><span id="HIDING_THE_TOOLBAR_OR_STATUS_BAR"></span>Hiding the Toolbar or Status Bar
+## Hiding the Toolbar or Status Bar
 
 To display or hide the toolbar, select or clear **Toolbar** on the **View** menu. To display or hide the status bar, select or clear **Status Bar** on the **View** menu.
 
 If you hide the toolbar or the status bar, you have more space for debugging information windows in the WinDbg display area.
 
-### <span id="setting_the_window_title"></span><span id="SETTING_THE_WINDOW_TITLE"></span>Setting the Window Title
+## Setting the Window Title
 
 You can change the title of the WinDbg window by using the [**.wtitle (Set Window Title)**](../debuggercmds/-wtitle--set-window-title-.md) command.
-
- 
-
- 
-
-
-
-
-

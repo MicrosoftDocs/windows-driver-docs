@@ -18,8 +18,3 @@ On an x86-based processor, the **r** option also controls several one-bit regist
  
 
  
-
-
-
-
-

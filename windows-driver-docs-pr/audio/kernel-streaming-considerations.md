@@ -18,7 +18,7 @@ The audio driver should support the formats that are possible through the sideba
 
 All Bluetooth Hands-Free devices support both capture and render. The audio driver should expose a kernel streaming (KS) topology for the Hands-Free device, as shown in the following diagram, to support both render and capture.
 
-![Diagram showing the KS topology that the audio driver exposes for the hands-free device, to support render and capture.](images/btth-bypass-topology.png)
+:::image type="content" source="images/btth-bypass-topology.png" alt-text="Diagram illustrating KS topology for audio driver, supporting render and capture in Bluetooth Hands-Free devices.":::
 
 **Note:** The audio driver developer can choose whether to implement a single filter for both capture and render paths or separate filters. However, the HFP device only allows a single file object on the GUID_DEVINTERFACE_BLUETOOTH_HFP_SCO_HCIBYPASS device interface. Therefore, a design that uses two filters needs to allow both filters to share the single file object.
 

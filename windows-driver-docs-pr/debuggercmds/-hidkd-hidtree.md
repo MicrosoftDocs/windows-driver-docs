@@ -23,7 +23,7 @@ The **!hidkd.hidtree** command displays a list of all device nodes that have a H
 
 This screen shot shows an example of the output of the **!hidtree** command.
 
-![output of the hidtree command.](images/hidkd01.png)
+:::image type="content" source="images/hidkd01.png" alt-text="Screenshot of the output of the hidtree command.":::
 
 In this example, there are two device nodes that have a HID function driver. A functional device object (FDO) represents the HID driver in those two nodes. The first FDO node has two child nodes, and the second FDO node has one child node. In the debugger output, the child nodes have the PDO heading.
 

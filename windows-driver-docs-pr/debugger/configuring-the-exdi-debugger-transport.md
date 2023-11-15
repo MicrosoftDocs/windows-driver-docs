@@ -18,7 +18,7 @@ EXDI can be used to establish a connection with the QEMU virtual environment. Fo
 
 EXDI is an interface that allows extending WinDbg by adding support for hardware debuggers (e.g. JTAG-based, or GdbServer based). The diagram below illustrates the role of EXDI-GdbServer.
 
-![A stack diagram showing role of EXDI-GdbServer with WinDbg-DbgEng on top, a exdi interface and a exdi com server talking down to a GDB server ](images/exdi-server-dbgeng-interface-diagram.png)
+:::image type="content" source="images/exdi-server-dbgeng-interface-diagram.png" alt-text="Stack diagram showing EXDI-GdbServer's role with WinDbg-DbgEng on top, an EXDI interface, and an EXDI COM server communicating with a GDB server.":::
 
 As the EXDI connection has no dependency on Windows or the KDNET protocol being loaded on the target PC. Because these software debugger components are not required, EXDI can be useful in early device bring up and in debugging OS startup issues.
 
@@ -163,7 +163,7 @@ EXDI: Target initialization succeeded
 Kernel Debugger connection established
 ```
 
-![main windbg session showing exdi CLSID on Window title](images/exdi-windbg-debugger-session.png)
+:::image type="content" source="images/exdi-windbg-debugger-session.png" alt-text="Main WinDbg session displaying EXDI CLSID in the window title.":::
 
 The EXDIGdbServer console window can also display information about the status of the EXDI connection. For more information about the console, see [Troubleshooting](#troubleshooting).
 
@@ -217,7 +217,7 @@ The .exdicmd sends an EXDI command to the target system using the active EXDI de
 
 Use the output from the ExdiGdbServer window to monitor the connection sequence.
 
-![ExdiGdbServer text window showing long hex numbers](images/exdi-exdigdbserver-window.png)
+:::image type="content" source="images/exdi-exdigdbserver-window.png" alt-text="ExdiGdbServer text window displaying long hexadecimal numbers.":::
 
 **Issue**: Error: Unable to establish a connection with the GbDServer. Please verify the connection string `<hostname/ip>:portnumber`
 
@@ -281,7 +281,7 @@ This is a common error when the ExdiGdbSrv.dll COM server could not connect to t
 *This issue could be caused by:*
 - As described above, it is possible that the previous session of the ExdiGdbSrv.dll is still active. Locate and terminate the associated DLL host as described above.
 
-![windbg dialog box showing failure HR 0x80004005](images/exdi-error-failed-to-attachkernel.png)
+:::image type="content" source="images/exdi-error-failed-to-attachkernel.png" alt-text="WinDbg dialog box displaying failure with HR 0x80004005.":::
 
 ## EXDI XML Configuration files
 

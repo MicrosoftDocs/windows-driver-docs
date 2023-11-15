@@ -116,8 +116,3 @@ If you are debugging KD with CDB, then CTRL+C will be intercepted by the host de
  
 
  
-
-
-
-
-

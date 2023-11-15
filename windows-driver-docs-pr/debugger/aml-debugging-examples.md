@@ -206,8 +206,3 @@ Integer(:Value=0x0000000b[11])
  [The AMLI Debugger](the-amli-debugger.md)
 
  
-
-
-
-
-

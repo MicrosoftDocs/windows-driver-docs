@@ -32,7 +32,7 @@ It is possible that not all modes might be available for a particular system. Dr
 
 The following diagram shows a system that supports multiple modes:
 
-![multiple audio modes .](images/audio-modes-win-10.png)
+:::image type="content" source="images/audio-modes-win-10.png" alt-text="Diagram that shows a system supporting multiple audio modes, with multiple SFX, and MFX effects.":::
 
 ## Windows Audio Stream Categories
 

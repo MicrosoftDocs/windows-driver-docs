@@ -26,8 +26,3 @@ For example, the manifest format facilitates the following features:
  
 
  
-
-
-
-
-

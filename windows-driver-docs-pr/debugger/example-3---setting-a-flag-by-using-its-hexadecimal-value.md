@@ -30,8 +30,3 @@ Current Boot Registry Settings are: 02000000
  
 
  
-
-
-
-
-

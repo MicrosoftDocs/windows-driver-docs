@@ -108,8 +108,3 @@ The list of entries for the source stream variables.
  
 
  
-
-
-
-
-

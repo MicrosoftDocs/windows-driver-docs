@@ -1,7 +1,7 @@
 ---
 title: Registry Entries for StorPort Miniport Drivers
 description: StorPort defines a set of registry entries to configure the behavior of StorPort and miniport operations.
-ms.date: 06/24/2022
+ms.date: 11/09/2023
 ---
 
 # Registry Entries for StorPort Miniport Drivers
@@ -18,7 +18,7 @@ Registry entries for the miniport are keyed by the *\\Parameters* subkey and the
 * Path:
   * Miniport scope: HKLM\System\CurrentControlSet\Services\<*miniport name*>\Parameters\Device
   * Adapter scope: HKLM\System\CurrentControlSet\Services\<*miniport name*>\Parameters\Device<*adapter#*>
-* Value : Any miniport specific data.
+* Value: Any miniport specific data.
 * Description: Storport retrieves this registry data, and passes the buffer to the miniport as **Parameter** when it calls the miniport’s [**HwStorFindAdapter**](/windows-hardware/drivers/ddi/storport/nc-storport-hw_find_adapter)
 * Applies: Starting with Windows Server 2003.
 
@@ -81,7 +81,7 @@ Registry entries for the miniport are keyed by the *\\Parameters* subkey and the
   * Default: 0
   * Minimum: 3
   * Maximum: 16
-* Description: StorPort uses this value to calculate a base 2 exponent (e.g. 1 << value) to use as an alignment value for the uncached extension buffer allocation.
+* Description: StorPort uses this value to calculate a base 2 exponent (for example, 1 << value) to use as an alignment value for the uncached extension buffer allocation.
 * Applies: Starting with Windows Server 2003.
 
 ### Name: NumberOfRequests
@@ -116,7 +116,7 @@ Registry entries for the miniport are keyed by the *\\Parameters* subkey and the
   * Minimum: 0
   * Maximum: 65535
   * Units: seconds
-* Description: Indicates the I/O timeout value for devices managed by the miniport driver. If this registry value doesn’t exist, the system will use the global disk I/O timeout value.
+* Description: Indicates the I/O timeout value for devices managed by the miniport driver. If this registry value doesn’t exist, the system uses the default, global disk I/O timeout value controlled by an **IoTimeoutValue** registry value at the class driver layer (for example, HKLM\System\CurrentControlSet\Services\disk\IoTimeoutValue, typically set to 60 s, if *disk.sys* is used).
 * Applies: Starting with Windows 8.
 
 ### Name: IoLatencyCap
@@ -127,7 +127,7 @@ Registry entries for the miniport are keyed by the *\\Parameters* subkey and the
 * Value:
   * Default: 0
   * Units: milliseconds
-* Description: If this registry value is > 0, StorPort will hold incoming I/O requests in the queue when any I/O request sent to miniport driver has not been completed in the period of time specified.
+* Description: If this registry value is > 0, StorPort holds incoming I/O requests in the queue when any I/O request sent to the miniport driver hasn't completed in the period of time specified.
 * Applies: Starting with Windows 8.
 
 ## Device Enumeration Entries
@@ -154,7 +154,7 @@ Registry entries for the miniport are keyed by the *\\Parameters* subkey and the
   * Default: 25
   * Maximum: 100
   * Units: Percentage of queue depth
-* Description: When the miniport reports device-busy by setting **SCSISTAT_QUEUE_FULL** in **ScsiStatus** of a **SRB**, StorPort pauses the logical unit queue and waits until a certain amount I/O requests are completed by the miniport before sending any further requests. The amount of I/O requests StorPort waits on is calculated using this registry value relative to the count of I/O requests currently sent to the miniport.
+* Description: When the miniport reports device-busy by setting **SCSISTAT_QUEUE_FULL** in **ScsiStatus** of a **SRB**, StorPort pauses the logical unit queue and waits until a certain number of I/O requests are completed by the miniport before sending any further requests. The amount of I/O requests StorPort waits on is calculated using this registry value relative to the count of I/O requests currently sent to the miniport.
 * Applies: Starting with Windows Server 2003.
 
 ### Name: BusyPauseTime
@@ -165,7 +165,7 @@ Registry entries for the miniport are keyed by the *\\Parameters* subkey and the
 * Value:
   * Default: 250
   * Units: milliseconds
-* Description: When the miniport reports device-busy, StorPort pauses the unit queue and waits for the specified amount time before starting to send I/O requests again. To report device-busy, the miniport must do the following:
+* Description: When the miniport reports device-busy, StorPort pauses the unit queue and waits for the specified amount time before starting to send I/O requests again. To report device-busy, the miniport must:
   * Set **SRB_STATUS_BUSY** in the **SrbStatus** of a **SRB**
   * Set the **SRB**’s **ScsiStatus** member to either *not* equal **SCSISTAT_QUEUE_FULL** or to equal **SCSISTAT_BUSY**.
 * Applies: Starting with Windows Server 2003.
@@ -218,7 +218,7 @@ Registry entries for the miniport are keyed by the *\\Parameters* subkey and the
   * Adapter scope: HKLM\System\CurrentControlSet\Enum<*instance path*>\Device Parameters\StorPort
 * Value:
   * Default: 0, enabled
-* Description: If the value > 0, then runtime power management for adapter is disabled. This disables runtime power management for specific adapter. NOTE: Runtime power management for devices attached to this adapter is not affected.
+* Description: If the value > 0, then runtime power management for adapter is disabled, which disables runtime power management for the specific adapter. NOTE: Runtime power management for devices attached to this adapter isn't affected.
 * Applies: Starting with Windows 8.
 
 ### Name: IdleTimeoutInMS

@@ -93,7 +93,7 @@ The optional `-d` parameter shown in the example, enables early break-in. For mo
 
 If you're prompted to allow WinDbg to access the port through the firewall, allow WinDbg to access the port for **all three** of the different network types.
 
-![Screenshot of Windows Security Alert, showing selections to allow access to all three network types.](images/debuglab-image-firewall-dialog-box.png)
+:::image type="content" source="images/debuglab-image-firewall-dialog-box.png" alt-text="Screenshot of Windows Security Alert with selections to allow access to all three network types.":::
 
 
 
@@ -136,7 +136,7 @@ Use the Control Panel to allow access through the firewall.
 
 4. Scroll down and select **OK** to save the firewall changes. Restart the debugger.
 
-    ![Screenshot of the Control Panel firewall configuration, showing showing Windows GUI Symbolic Debugger and Windows Kernel Debugger applications with all three network types enabled.](images/firewall-control-pannel-windbg-gui-config.png)
+    :::image type="content" source="images/firewall-control-pannel-windbg-gui-config.png" alt-text="Screenshot of Control Panel firewall configuration displaying Windows GUI Symbolic Debugger and Windows Kernel Debugger applications with all three network types enabled.":::
 
 **Use ping to test connectivity**
 

@@ -28,7 +28,7 @@ In Windows Vista and later versions of Windows, this option is available on the 
 
     The following screen shot shows the Verify Start and Verify End settings on the System **Registry** tab.
 
-    ![screen shot illustrating the verify start and verify end options on the system registry tab.](images/gflags-overruns.png)
+    :::image type="content" source="images/gflags-overruns.png" alt-text="Screenshot of Verify Start and Verify End options on the System Registry tab in GFlags.":::
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
@@ -37,8 +37,3 @@ The **Verify Start** and **Verify End** alignment settings apply to all allocati
  
 
  
-
-
-
-
-

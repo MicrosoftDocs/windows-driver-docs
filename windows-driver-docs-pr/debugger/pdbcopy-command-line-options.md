@@ -80,8 +80,3 @@ For more information about the PDBCopy tool, see [Using PDBCopy](using-pdbcopy.m
  
 
  
-
-
-
-
-

@@ -18,7 +18,7 @@ Task Manager can be opened in a number of ways, but the simplest is to select Ct
 
 In Windows, first click **More details** to expand the information displayed.  From the **Processes** tab, select **Details** to see the process ID listed in the *PID* column.
 
-![partial screen shot of task manager in Windows 11, showing process numbers, sorted by user name.](images/process-id-task-manager-windows-11.png)
+:::image type="content" source="images/process-id-task-manager-windows-11.png" alt-text="Screenshot of Task Manager in Windows 11, displaying process numbers sorted by user name.":::
 
 Click on any column name to sort. You can right click a process name to see more options for a process.
 

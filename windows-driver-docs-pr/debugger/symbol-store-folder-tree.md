@@ -48,9 +48,3 @@ If you want to convert the structure after the symbol store is populated, use th
  
 
  
-
-
-
-
-
-

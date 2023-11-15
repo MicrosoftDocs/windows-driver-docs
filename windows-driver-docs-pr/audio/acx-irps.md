@@ -11,6 +11,10 @@ This topic provides a summary of the Audio Class eXtensions (ACX) IO request pac
 
 For general information about the ACX, see [ACX audio class extensions overview](acx-audio-class-extensions-overview.md) and [Summary of ACX Objects](acx-summary-of-objects.md). For information about ACX targets and synchronization, see [ACX targets and driver synchronization](acx-targets.md).
 
+>[!NOTE]
+> The ACX headers and libraries are not included in the  WDK 10.0.22621.2428 (released October 24, 2023), but are available in previous versions, as well as the latest (25000 series builds) Insider Preview of the WDK. For more information about preview versions of the WDK, see [Installing preview versions of the Windows Driver Kit (WDK)](../installing-preview-versions-wdk.md).
+
+
 ## IRP request dispatching
 
 An ACX client specifies an action via a driver request (IRP). For general information about IRPs, see, [I/O request packets](../gettingstarted/i-o-request-packets.md) and [Packet-Driven I/O with Reusable IRPs](../kernel/packet-driven-i-o-with-reusable-irps.md).
@@ -60,11 +64,11 @@ Next ACX (or for custom properties, the driver) performs the requested action an
 
 This diagram illustrates the typical request dispatch workflow.
 
-![diagram illustrating dispatch workflow showing and audio service, WDF, ACX and a driver](images/audio-acx-dispatch-workflow-1.png)
+:::image type="content" source="images/audio-acx-dispatch-workflow-1.png" alt-text="Diagram illustrating dispatch workflow with audio service, WDF, ACX, and a driver.":::
 
 This diagram illustrates the dispatch workflow when driver has an ACX preprocess callback defined, although in the end the request is handled by the ACX framework.
 
-![diagram illustrating dispatch workflow showing and audio service, WDF, ACX and a driver with a preprocess callback](images/audio-acx-dispatch-workflow-2.png)
+:::image type="content" source="images/audio-acx-dispatch-workflow-2.png" alt-text="Diagram illustrating dispatch workflow with audio service, WDF, ACX, and a driver having a preprocess callback.":::
 
 ### ACX circuit PnP internal interfaces
 

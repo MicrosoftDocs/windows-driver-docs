@@ -28,8 +28,3 @@ After Secure Mode has been activated, it cannot be turned off. Even ending the d
  
 
  
-
-
-
-
-

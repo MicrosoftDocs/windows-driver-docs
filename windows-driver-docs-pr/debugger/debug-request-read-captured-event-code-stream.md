@@ -41,9 +41,3 @@ The current event's instruction pointer is returned by the [**Request**](request
  
 
  
-
-
-
-
-
-

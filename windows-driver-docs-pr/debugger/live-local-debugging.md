@@ -76,8 +76,3 @@ f50beb24  f943fb1e ks!CKsPipeSection::SetDeviceState+0xb2
  
 
  
-
-
-
-
-

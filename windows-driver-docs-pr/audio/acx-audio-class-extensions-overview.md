@@ -19,6 +19,9 @@ The use of the ACX framework makes it easy to create working audio drivers ‘ou
 
 The ACX framework exposes audio concepts as WDF objects that driver can interact with (stream, format, etc.). This allows for a consistent programming experience and enables a larger community of audio driver developers.
 
+>[!NOTE]
+> The ACX headers and libraries are not included in the  WDK 10.0.22621.2428 (released October 24, 2023), but are available in previous versions, as well as the latest (25000 series builds) Insider Preview of the WDK. For more information about preview versions of the WDK, see [Installing preview versions of the Windows Driver Kit (WDK)](../installing-preview-versions-wdk.md).
+
 ### ACX goals
 
 The audio class extensions (ACX) have the following goals.
@@ -36,7 +39,7 @@ The audio class extensions (ACX) have the following goals.
 
 This diagram illustrates the ACX architecture showing existing user mode apps and ACX objects in kernel mode and audio hardware at the bottom of the stack. In addition to the ACX objects, the driver developer has access to the WDF objects to take advantage of in their driver code, for example for power management.
 
-![diagram illustrating the acx architecture showing user and kernel mode with WDF and ACX objects in kernel mode and audio hardware at the bottom of the stack.](images/audio-acx-architecture-overview.png)
+:::image type="content" source="images/audio-acx-architecture-overview.png" alt-text="Diagram illustrating the ACX architecture, showing user and kernel mode with WDF and ACX objects in kernel mode, and audio hardware at the bottom of the stack.":::
 
 ### ACX coexistance with existing audio drivers
 

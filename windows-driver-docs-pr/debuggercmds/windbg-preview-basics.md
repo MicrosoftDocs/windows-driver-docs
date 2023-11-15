@@ -6,7 +6,7 @@ ms.date: 03/21/2022
 
 # WinDbg Basics
 
-![Small logo on WinDbg.](images/windbgx-preview-logo.png) 
+:::image type="content" source="images/windbgx-preview-logo.png" alt-text="WinDbg logo with a magnifying glass inspecting bits.":::
 
 | Title               | Description        |
 | ------------------- | -------------------|

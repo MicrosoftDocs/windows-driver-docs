@@ -52,8 +52,3 @@ When you are performing user-mode debugging, the meaning of virtual addresses is
  
 
  
-
-
-
-
-

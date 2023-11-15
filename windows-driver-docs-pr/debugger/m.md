@@ -13,8 +13,3 @@ An image in a target process.
  
 
  
-
-
-
-
-

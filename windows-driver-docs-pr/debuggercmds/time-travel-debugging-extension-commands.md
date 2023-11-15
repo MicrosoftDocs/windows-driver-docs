@@ -6,7 +6,7 @@ ms.date: 09/22/2017
 
 # Time travel debugging extension commands
 
-![Small time travel logo showing clock.](images/ttd-time-travel-debugging-logo.png)
+:::image type="content" source="images/ttd-time-travel-debugging-logo.png" alt-text="Time travel debugging logo featuring a clock.":::
 
 This section introduces the time travel debugger extension commands.
 

@@ -30,8 +30,3 @@ If the target computer is running a more recent version of Windows, get the curr
  
 
  
-
-
-
-
-

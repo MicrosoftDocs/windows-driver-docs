@@ -60,8 +60,3 @@ Suppose you have two computers: a *logging computer* where you create a UMDH log
  
 
  
-
-
-
-
-

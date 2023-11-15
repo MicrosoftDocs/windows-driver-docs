@@ -66,8 +66,3 @@ umdh -p:2230 -g -f:garbage.txt
  
 
  
-
-
-
-
-

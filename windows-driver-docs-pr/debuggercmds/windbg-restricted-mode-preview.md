@@ -8,7 +8,7 @@ ms.date: 08/09/2021
 
 ## Restricted Mode
 
-![Small logo on WinDbg.](images/windbgx-preview-logo.png)
+:::image type="content" source="images/windbgx-preview-logo.png" alt-text="WinDbg logo with a magnifying glass inspecting bits.":::
 
 This section describes how to enable the restricted mode feature that restricts the type of debugging sessions that can be started.  
 

@@ -6,11 +6,11 @@ ms.date: 04/13/2023
 
 # WinDbg - Home Menu
 
-![Small logo of WinDbg with bit pattern.](images/windbgx-preview-logo.png)
+:::image type="content" source="images/windbgx-preview-logo.png" alt-text="WinDbg logo with a magnifying glass inspecting bits.":::
 
 This topic describes how to work with the home menu.
 
-![View menu in debugger.](images/windbgx-home-menu.png)
+:::image type="content" source="images/windbgx-home-menu.png" alt-text="Screenshot of the WinDbg home menu in the debugger.":::
 
 ## Flow Control
 

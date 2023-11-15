@@ -14,7 +14,7 @@ ms.date: 04/20/2017
 
 The following figure shows how the [USBAudio class system driver](kernel-mode-wdm-audio-components.md#usbaudio_class_system_driver) is configured to render and capture audio content. In this figure, the USBAudio driver sprouts pins to represent the terminals on the USB Audio device. Audio components such as KMixer, WDMAud, and DirectSound connect to these pins to render output streams or capture input streams.
 
-![diagram illustrating rendering and capturing audio content using the usbaudio driver.](images/usbaud.png)
+:::image type="content" source="images/usbaud.png" alt-text="Diagram illustrating the process of rendering and capturing audio content using the USBAudio driver.":::
 
 See the following for a description of the Microsoft Windows Driver Model (WDM) audio components:
 

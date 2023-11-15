@@ -11,6 +11,10 @@ This topic discusses ACX multi circuit composition. For a general overview of AC
 
 As described in [Summary of ACX objects](acx-summary-of-objects.md), an AcxCircuit represents a partial or full audio path to a user perceived audio device (speakers, mic, etc.). An AcxCircuit has at least one input pin and one output pin (ACXPIN), and it may aggregate one or more AcxElements-like objects.
 
+>[!NOTE]
+> The ACX headers and libraries are not included in the  WDK 10.0.22621.2428 (released October 24, 2023), but are available in previous versions, as well as the latest (25000 series builds) Insider Preview of the WDK. For more information about preview versions of the WDK, see [Installing preview versions of the Windows Driver Kit (WDK)](../installing-preview-versions-wdk.md).
+
+
 ## ACX circuit identification
 
 Every ACX circuit has a circuit identifier. ACX defines the following:
@@ -33,7 +37,7 @@ ACX binds circuits together until they form a complete audio path. ACX uses audi
 
 The following diagram shows the ACX objects used by ACX to detect, build, and monitor the circuits making up the composite audio endpoint.
 
-![diagram illustrating the acx target architecture showing ACXCIRCUITTEMPLATE, ACXCOMPOSITETEMPLATE (not shown), ACXMANAGER, ACXCIRCUITFACTORY and ACXCIRCUIT.  and under that ACXTARGET, ACXSTREAM ACXSTREAMFACTORY with the lowest layer showing ACXTARGETELEMENT and ACXTARGETPIN](images/audio-acx-multi-stack-acx-manager-related-objects.png)
+:::image type="content" source="images/audio-acx-multi-stack-acx-manager-related-objects.png" alt-text="Diagram illustrating the ACX target architecture with ACXCIRCUITTEMPLATE, ACXCOMPOSITEMANAGER, ACXMANAGER, ACXCIRCUITFACTORY and ACXCIRCUIT.":::
 
 >[!IMPORTANT]
 > Note that only the types shown in blue are public: ACXCIRCUITTEMPLATE, ACXCOMPOSITETEMPLATE (not shown), ACXMANAGER, ACXCIRCUITFACTORY and ACXCIRCUIT. All types shown in violet are internal, and they are listed here only for illustration purposes. The internal types are not guaranteed to stay the same, or be available in different releases of ACX, and must not be called or used directly.
@@ -54,7 +58,7 @@ When all the ACXCIRCUITs are detected and active, the ACXCOMPOSITE becomes activ
 
 The following sequence diagram shows how two ACX circuits (Circuit A and B) are bound together to create a full audio path, which is represented by the audio endpoint builder (AEB) with an software audio device.
 
-![diagram showing columns labeled driver a and driver b, acx interface b, circuit manager and and b and ACX composite and ACX manager with flow arrows shown below showing calling sequence](images/audio-acx-multi-stack-multi-circuit-driver-sequence.png)
+:::image type="content" source="images/audio-acx-multi-stack-multi-circuit-driver-sequence.png" alt-text="Diagram with columns labeled Driver A, Driver B, ACX Interface B, Circuit Manager A and B, ACX Composite, and ACX Manager, illustrating the calling sequence with flow arrows between the columns.":::
 
 ## Multi circuit format negotiation
 
@@ -64,7 +68,7 @@ This section describes the format negotiation taking places when the audio endpo
 
 Downlevel bridge pins are the pins that send data to (render) or receive data from (capture) a physical audio device directly or indirectly. This type of pins may or may not have ACXMODEFORMATLISTs associated with them. These bridge pins have a ‘AcxPinQualifierBridgeB’ or ‘AcxPinQualifierBridgeDevice’ type. For more information about ACXMODEFORMATLIST, see the [acxdataformat.h header](/windows-hardware/drivers/ddi/acxdataformat/).
 
-![diagram showing the render and capture data flow between a streaming pin, two circuits and a device.](images/audio-acx-multi-stream-flow-sequence.png)
+:::image type="content" source="images/audio-acx-multi-stream-flow-sequence.png" alt-text="Diagram showing the render and capture data flow between a streaming pin, two circuits, and a device.":::
 
 In this diagram, and article, uplevel and downlevel is used to describe the flow direction, as the direction of the up or down stream flow is dependent on if the pins are sending data to (render) or receiving data (capture).
 
@@ -98,7 +102,7 @@ Uplevel bridge pins are the pins that receive data from (render) or send data to
 
 The previous diagram shown here again, can also be used to show the render and capture data flow between a streaming pin, two circuits and a device.
 
-![diagram showing the render and capture data flow between a streaming pin, two circuits and a device.](images/audio-acx-multi-stream-flow-sequence.png)
+:::image type="content" source="images/audio-acx-multi-stream-flow-sequence.png" alt-text="Diagram showing the render and capture data flow between a streaming pin, two circuits, and a device. Arrows show render data flow going to the right, and capture to the right.":::
 
 #### Uplevel [Bridge] pins without ACXMODEFORMATLIST(s)
 

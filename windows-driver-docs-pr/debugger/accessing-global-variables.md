@@ -52,8 +52,3 @@ This example uses decimal input, because that format seems more natural for an i
  
 
  
-
-
-
-
-

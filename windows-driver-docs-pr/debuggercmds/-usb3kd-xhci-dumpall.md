@@ -29,7 +29,7 @@ Runs all of the XHCI commands and displays the output of each command.
 
 The following screen shot show the output of the **!xhci\_dumpall**l command.
 
-![output of the !xhci\-dumpall command showing xhci controller information.](images/xhcidumpall01.png)
+:::image type="content" source="images/xhcidumpall01.png" alt-text="Screenshot of the !xhci-dumpall command output displaying XHCI controller information.":::
 
 The output shows that there is one USB 3.0 host controller.
 

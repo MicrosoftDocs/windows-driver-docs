@@ -6,7 +6,7 @@ ms.date: 09/23/2017
 
 # Time travel navigation commands
 
-![Small time travel logo showing clock.](images/ttd-time-travel-debugging-logo.png)
+:::image type="content" source="images/ttd-time-travel-debugging-logo.png" alt-text="Time travel debugging logo featuring a clock.":::
 
 This section describes the time travel navigation commands.
 

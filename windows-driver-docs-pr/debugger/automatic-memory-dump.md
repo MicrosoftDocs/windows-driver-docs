@@ -22,7 +22,7 @@ The increased paging file size stays in place for 4 weeks and then returns to th
 
 To see the paging file settings, go to **Control Panel &gt; System and Security &gt; System &gt; Advanced system settings**. Under **Performance**, select **Settings**. On the **Advanced** tab, under **Virtual memory**, select **Change**. In the Virtual Memory dialog box, you can see the paging file settings.
 
-![screen shot of the virtual memory dialog box.](images/virtualmemorydialog.png)
+:::image type="content" source="images/virtualmemorydialog.png" alt-text="Screenshot of the Virtual Memory dialog box in Windows settings.":::
 
 The Automatic Memory Dump file is written to %SystemRoot%\\Memory.dmp by default.
 
@@ -43,9 +43,3 @@ The Automatic Memory Dump is available in Windows 8 and later.
  
 
  
-
-
-
-
-
-

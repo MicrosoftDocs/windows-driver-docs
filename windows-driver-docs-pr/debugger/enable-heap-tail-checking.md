@@ -51,8 +51,3 @@ This flag adds a short pattern to the end of each allocation. The Windows heap m
  
 
  
-
-
-
-
-

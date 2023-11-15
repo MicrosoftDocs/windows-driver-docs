@@ -28,8 +28,3 @@ The KD connection server can be terminated from either computer. To terminate it
  
 
  
-
-
-
-
-

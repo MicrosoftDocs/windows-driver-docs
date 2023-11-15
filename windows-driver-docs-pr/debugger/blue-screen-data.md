@@ -34,7 +34,7 @@ When Microsoft Windows encounters a condition that compromises safe system opera
 If you're using an insider build of Windows, the text is displayed on a green background. The exact appearance of the blue screen depends on the cause of the error.
 The following example shows a possible blue screen:
 
-![Screenshot showing a bug check Windows 10 blue screen with a QR code.](images/bug-check-example-blue-screen-page-fault.png)
+:::image type="content" source="images/bug-check-example-blue-screen-page-fault.png" alt-text="Screenshot of a Windows 10 blue screen displaying a bug check with a QR code.":::
 
 The stop code is displayed, such as [PAGE_FAULT_IN_NONPAGED_AREA](bug-check-0x50--page-fault-in-nonpaged-area.md). When it's available, the module name of the code that was being executed is also displayed, such as **AcmeVideo.sys**.
 

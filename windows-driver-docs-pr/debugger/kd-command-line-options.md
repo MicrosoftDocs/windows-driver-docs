@@ -246,8 +246,3 @@ KD will automatically detect the platform on which the target is running. You do
  
 
  
-
-
-
-
-

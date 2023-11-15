@@ -47,8 +47,3 @@ In Windows 8, debugging of inline functions is turned on by default. The command
  
 
  
-
-
-
-
-

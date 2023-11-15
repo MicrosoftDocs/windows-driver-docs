@@ -164,7 +164,7 @@ As with other dx commands, you can right click on a command after it was execute
 0: kd> dx -g @$devices().OrderBy(obj => obj.@"InstancePath")
 ```
 
-![debugger objects function alias grid output showing sorted rows.](images/debugger-objects-function-alias.png)
+:::image type="content" source="images/debugger-objects-function-alias.png" alt-text="Screenshot of debugger objects function alias grid output with sorted rows.":::
 
 ## Process Threads Example
 

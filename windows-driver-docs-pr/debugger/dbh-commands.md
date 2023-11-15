@@ -361,8 +361,3 @@ The following table lists the DBH commands that apply to real and imaginary symb
  
 
  
-
-
-
-
-

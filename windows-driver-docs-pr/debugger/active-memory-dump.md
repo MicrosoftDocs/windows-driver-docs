@@ -32,9 +32,3 @@ The Active Memory Dump is available in Windows 10 and later.
  
 
  
-
-
-
-
-
-

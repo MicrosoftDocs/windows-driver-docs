@@ -6,7 +6,7 @@ ms.date: 11/23/2022
 
 # WinDbg - Start a user mode session
 
-![Small logo for windbg.](images/windbgx-preview-logo.png)
+:::image type="content" source="images/windbgx-preview-logo.png" alt-text="WinDbg logo with a magnifying glass inspecting bits.":::
 
 This section describes how to start a user mode session with the WinDbg debugger.
 
@@ -37,7 +37,7 @@ Specify the following options:
 - Enable Debug child process
 - Record with Time Travel Debugging
 
-![Screenshot that shows the Launch Executable (advanced) dialog box with advanced options.](images/windbgx-launch-executable-advanced.png)
+:::image type="content" source="images/windbgx-launch-executable-advanced.png" alt-text="Screenshot of Launch Executable (advanced) dialog box displaying various options.":::
 
 ## Attach to a process
 
@@ -52,13 +52,13 @@ Use the search box to filter down the process list, for example by searching for
 
 Use the pull down dialog on the *Attach* button to select *non-invasive attach*.
 
-![Launch Executable (advanced) dialog box with advanced options.](images/windbgx-attach-to-a-process.png)
+:::image type="content" source="images/windbgx-attach-to-a-process.png" alt-text="Screenshot of Attach to a Process dialog box with process list and options.":::
 
 ## Launch App Package
 
 Use this option to launch and attach to an app package using either the Applications of Background Task tabs. Use the search box to locate a specific app or background task. Use the Package Details button to display information about the package.
 
-![Launch App Package Applications tab showing cal in the search box with three apps listed.](images/windbgx-launch-app-package.png)
+:::image type="content" source="images/windbgx-launch-app-package.png" alt-text="Screenshot of Launch App Package Applications tab with search results for 'cal' and three apps displayed.":::
 
 ---
 

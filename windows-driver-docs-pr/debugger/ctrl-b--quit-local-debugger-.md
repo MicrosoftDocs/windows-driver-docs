@@ -64,8 +64,3 @@ In WinDbg, the equivalent command is **File | Exit** or ALT+F4.
  
 
  
-
-
-
-
-

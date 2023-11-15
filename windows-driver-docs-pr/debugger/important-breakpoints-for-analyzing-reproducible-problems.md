@@ -26,8 +26,3 @@ Placing a breakpoint in either **scsiport!spstartiosynchronized** or **miniport!
  
 
  
-
-
-
-
-

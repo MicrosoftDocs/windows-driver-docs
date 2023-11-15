@@ -38,8 +38,3 @@ Some useful techniques in this case include:
  
 
  
-
-
-
-
-

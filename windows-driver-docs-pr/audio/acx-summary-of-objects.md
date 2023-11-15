@@ -11,11 +11,14 @@ This topic provides a high level summary of Audio Class Extensions (ACX) objects
 
 ACX objects are Windows Driver Framework (WDF) objects - WDFOBJECT. For more information about WDF see [Introduction to Framework Objects](../wdf/introduction-to-framework-objects.md). For a summary of WDF objects see [Summary of Framework Objects](../wdf/summary-of-framework-objects.md).
 
+>[!NOTE]
+> The ACX headers and libraries are not included in the  WDK 10.0.22621.2428 (released October 24, 2023), but are available in previous versions, as well as the latest (25000 series builds) Insider Preview of the WDK. For more information about preview versions of the WDK, see [Installing preview versions of the Windows Driver Kit (WDK)](../installing-preview-versions-wdk.md).
+
 ## ACX object hierarchy
 
 In ACX (as in WDF), the driver object is the root object, and all other objects are its children/descendants. All ACX objects are children of the driver object directly or indirectly via other ACX or WDF objects. An ACX driver can specify the parent of an ACX object during creation time. If the parent is not specified, ACX uses a default parent as described in these sections.
 
-![diagram illustrating the hierarchy of ACX objects with WDFDEVICE at the top and major ACX objects such as circuit and stream](images/audio-acx-object-hierarchy.png)
+:::image type="content" source="images/audio-acx-object-hierarchy.png" alt-text="Diagram illustrating the hierarchy of ACX objects, with WDFDEVICE at the top and major ACX objects like circuit and stream below.":::
 
 ## ACX Circuit
 
@@ -71,7 +74,7 @@ The DDIs for Stream are described in the [acxstreams.h](/windows-hardware/driver
 
 The following diagram illustrates an ACX circuit. The host and offload pins are inputs to the circuit with a loopback pin that could be used for echo cancellation. The output could be a bridge pin that routes to a speaker.
 
-![diagram illustrating and acx circuit with and host, offload an loopback pins on the left and a bridge pin on the right routed through a audio engine node](images/audio-acx-elements-1.png)
+:::image type="content" source="images/audio-acx-elements-1.png" alt-text="Diagram illustrating an ACX circuit with host, offload, and loopback pins on the left, and a bridge pin on the right, routed through an audio engine node.":::
 
 Note that driver doesn't need to perform the step of explicitly connecting when circuit/elements are connected in the  same order as they were added to the circuit. 
 

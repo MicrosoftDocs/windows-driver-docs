@@ -37,8 +37,3 @@ In response to the session commands, the Remote tool displays a label with the d
  
 
  
-
-
-
-
-
