@@ -24,8 +24,3 @@ You can also open a dump file after the debugger is running by entering the [**.
  
 
  
-
-
-
-
-

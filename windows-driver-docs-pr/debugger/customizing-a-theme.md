@@ -52,8 +52,3 @@ Tab-dock every window type above the wanted placeholder window.
  
 
  
-
-
-
-
-

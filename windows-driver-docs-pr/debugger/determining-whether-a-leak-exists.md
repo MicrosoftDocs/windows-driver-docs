@@ -37,8 +37,3 @@ User-mode memory leaks are always located in pageable pool and cause both the **
  
 
  
-
-
-
-
-

@@ -6,7 +6,7 @@ ms.date: 10/18/2017
 
 # Time Travel Debugging - Troubleshooting
 
-![Small time travel logo showing clock.](images/ttd-time-travel-debugging-logo.png) 
+:::image type="content" source="images/ttd-time-travel-debugging-logo.png" alt-text="Time travel debugging logo featuring a clock.":::
 
 This section describes how to troubleshoot time travel traces.
 

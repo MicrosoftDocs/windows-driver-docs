@@ -21,11 +21,11 @@ To facilitate the accurate display of local variables and parameters, the compil
 
 This screen shot of the Locals window in Visual Studio shows the parameters and local variables for a function in an optimized 64-bit application. The function is not inline, so we see both parameters and local variables.
 
-![screen shot of the locals window.](images/optimizedcode01.png)
+:::image type="content" source="images/optimizedcode01.png" alt-text="Screenshot of the Locals window in Visual Studio displaying parameters and local variables for a function in an optimized 64-bit application.":::
 
 You can use the [**dv -v**](../debuggercmds/dv--display-local-variables-.md) command to see the locations of the parameters and local variables.
 
-![screen shot that shows the locations of parameters and local variables.](images/optimizedcode02.png)
+:::image type="content" source="images/optimizedcode02.png" alt-text="Screenshot of the command output displaying the locations of parameters and local variables using the dv -v command.":::
 
 Notice that the Locals window displays the parameters correctly even though they are stored in registers.
 
@@ -175,9 +175,3 @@ Because there are no explicit call or return instructions for inline functions, 
  
 
  
-
-
-
-
-
-

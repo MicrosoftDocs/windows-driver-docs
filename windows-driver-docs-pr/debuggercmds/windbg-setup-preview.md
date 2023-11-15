@@ -6,7 +6,7 @@ ms.date: 01/16/2020
 
 # WinDbg - Settings and workspaces
 
-![Small logo of WinDbg with bit pattern.](images/windbgx-preview-logo.png)
+:::image type="content" source="images/windbgx-preview-logo.png" alt-text="WinDbg logo with a magnifying glass inspecting bits.":::
 
 This section describes how to setup and configure the WinDbg debugger.
 
@@ -14,7 +14,7 @@ This section describes how to setup and configure the WinDbg debugger.
 
 Use the settings menu to set things such as the source and symbol path as well as choose the light and dark theme for the debugger. 
 
-![Screen shot of settings showing general tab.](images/windbgx-settings-menu.png)
+:::image type="content" source="images/windbgx-settings-menu.png" alt-text="Screenshot of WinDbg settings menu displaying the general tab.":::
 
 There are currently six settings dialog panels:
 

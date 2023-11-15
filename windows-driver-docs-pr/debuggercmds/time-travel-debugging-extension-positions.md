@@ -7,7 +7,7 @@ ms.date: 01/22/2020
 
 # !positions
 
-![Small time travel logo showing clock.](images/ttd-time-travel-debugging-logo.png) 
+:::image type="content" source="images/ttd-time-travel-debugging-logo.png" alt-text="Time travel debugging logo featuring a clock.":::
 
 The **!positions** extension displays all the active threads, including their current positions in the time travel trace.
 

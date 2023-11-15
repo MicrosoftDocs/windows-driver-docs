@@ -6,7 +6,7 @@ ms.date: 10/30/2023
 
 # Time travel debugging release notes
 
-![Small time travel logo showing clock.](images/ttd-time-travel-debugging-logo.png)
+:::image type="content" source="images/ttd-time-travel-debugging-logo.png" alt-text="Time travel debugging logo featuring a clock.":::
 
 This topic provides information on what's new in Time Travel Debugging.
 

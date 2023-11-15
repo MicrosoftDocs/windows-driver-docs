@@ -30,13 +30,8 @@ In Windows Vista and later versions of Windows, you can also use the command lin
 
     The following screen shot shows an allocation size entered as a hexadecimal value.
 
-    ![screen shot that shows an allocation size entered as a hexadecimal value.](images/gflags-specialpool-size.png)
+    :::image type="content" source="images/gflags-specialpool-size.png" alt-text="Screenshot of allocation size entered as a hexadecimal value in GFlags.":::
 
  
 
  
-
-
-
-
-

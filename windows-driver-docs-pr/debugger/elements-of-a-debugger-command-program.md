@@ -28,8 +28,3 @@ The **$scmp**, **$sicmp**, and **$spat** string operators in MASM syntax are par
  
 
  
-
-
-
-
-

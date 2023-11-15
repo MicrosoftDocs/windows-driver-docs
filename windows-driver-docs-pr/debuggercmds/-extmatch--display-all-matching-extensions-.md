@@ -75,7 +75,7 @@ The following example lists all extension commands beginning with the string "he
 
 The following example lists all extension commands, so we can see which ones support DML.
 
-![screen shot of .extmatch /d output.](images/extmatch01.png)
+:::image type="content" source="images/extmatch01.png" alt-text="Screenshot of .extmatch /d command output.":::
 
  
 

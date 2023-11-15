@@ -22,7 +22,7 @@ For general information on setting up configuring and troubleshooting EXDI conne
 
 EXDI is an interface that allows extending WinDbg by adding support for hardware debuggers (e.g. JTAG-based, or GdbServer based). The diagram below illustrates the role of EXDI-GdbServer.
 
-![A stack diagram showing role of EXDI-GdbServer with WinDbg-DbgEng on top, a exdi interface and a exdi com server talking down to a GDB server.](images/exdi-server-dbgeng-interface-diagram.png)
+:::image type="content" source="images/exdi-server-dbgeng-interface-diagram.png" alt-text="Stack diagram showing the role of EXDI-GdbServer with WinDbg-DbgEng on top, an EXDI interface, and an EXDI COM server communicating with a GDB server.":::
 
 >[!IMPORTANT]
 > Because EXDI does not make use of the KDNET protocol, the connected debugger has significantly less information about what is running on the PC and many commands will work differently or may not work at all. Access to private symbols for the code being debugged can help the debugger better understand the target systems code execution. For more information, see [Public and Private Symbols](public-and-private-symbols.md).
@@ -107,11 +107,11 @@ c:\Program Files\qemu\StartQEMUx64Windows.bat
 
 If a firewall defender prompt appears, grant the app all rights to all types of networks to enable Windbg through the Windows firewall for the host debugger machine.
 
-![Windows Defender firewall dialog box showing all three boxes checked](images/exdi-windows-defender-firewall-dialog.png)
+:::image type="content" source="images/exdi-windows-defender-firewall-dialog.png" alt-text="Windows Defender Firewall dialog box with all three options checked.":::
 
 Once the Windows Virtual Machine is launched in the QEMU environment the QEMU UI will appear.
 
-![QEMU screen shot showing view menu options](images/exdi-windows-qemu-view-menu.png)
+:::image type="content" source="images/exdi-windows-qemu-view-menu.png" alt-text="Screenshot of QEMU displaying view menu options.":::
 
 Use CTRL+ALT+ a number key combination to go in the QEMU monitor console. This monitor is also available using *View->compatmonitor*.
 
@@ -292,7 +292,7 @@ PS>.\Start-ExdiDebugger.ps1 -ExdiTarget "QEMU" -GdbPort 1234 -Architecture x64 -
 
 The debugger should launch and connect to the QEMU GdbServer.
 
-![main windbg session showing exdi CLSID on Window title](images/exdi-windbg-debugger-session.png)
+:::image type="content" source="images/exdi-windbg-debugger-session.png" alt-text="Main WinDbg session displaying EXDI CLSID in the window title.":::
 
 The debugger will show the successful EXDI transport initialization.
 

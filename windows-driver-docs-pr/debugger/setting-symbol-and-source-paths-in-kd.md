@@ -63,8 +63,3 @@ To control the executable image path in KD, do one of the following:
  
 
  
-
-
-
-
-

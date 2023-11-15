@@ -44,7 +44,7 @@ In Windows Me, and Windows XP and later, USBAudio supports all the features that
 
 The following figure shows the driver hierarchy for a USB audio device. All of the driver components shown in the figure are provided by Microsoft with the operating system.
 
-![diagram illustrating the driver hierarchy for a usb audio device.](images/usbaudio.png)
+:::image type="content" source="images/usbaudio.png" alt-text="Diagram illustrating the driver hierarchy for a USB audio device.":::
 
 For more information about the driver components in the figure, see the following sections:
 

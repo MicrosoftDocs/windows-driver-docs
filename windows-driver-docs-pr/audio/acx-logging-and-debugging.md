@@ -9,6 +9,10 @@ ms.localizationpriority: medium
 
 This topic provides information on logging, tracing and debugging of the ACX Audio Class Extensions.
 
+>[!NOTE]
+> The ACX headers and libraries are not included in the  WDK 10.0.22621.2428 (released October 24, 2023), but are available in previous versions, as well as the latest (25000 series builds) Insider Preview of the WDK. For more information about preview versions of the WDK, see [Installing preview versions of the Windows Driver Kit (WDK)](../installing-preview-versions-wdk.md).
+
+
 ## ACX Driver Logging
 
 Software tracing for drivers is usually based on Event Tracing for Windows (ETW), a kernel-level facility that logs trace messages for both kernel-mode and user-mode processes. As ACX drivers are WDF drivers, all of the WDF logging and eventing capabilities are available for ACX driver developers.

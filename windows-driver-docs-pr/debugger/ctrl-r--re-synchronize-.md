@@ -74,8 +74,3 @@ If you are using a 1394 kernel connection, resynchronization may not always be s
  
 
  
-
-
-
-
-

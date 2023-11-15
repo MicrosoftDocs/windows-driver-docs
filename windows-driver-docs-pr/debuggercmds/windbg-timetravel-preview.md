@@ -6,11 +6,11 @@ ms.date: 01/10/2020
 
 # WinDbg - Time Travel Menu
 
-![Small logo on WinDbg.](images/windbgx-preview-logo.png)
+:::image type="content" source="images/windbgx-preview-logo.png" alt-text="WinDbg logo with a magnifying glass inspecting bits.":::
 
 This section describes how work with the time travel menu in WinDbg.
 
-![View menu in debugger.](images/windbgx-timetravel-menu.png)
+:::image type="content" source="images/windbgx-timetravel-menu.png" alt-text="Screenshot of the time travel menu in WinDbg.":::
 
 For more information about time travel see [Time Travel Debugging - Overview](time-travel-debugging-overview.md).
 

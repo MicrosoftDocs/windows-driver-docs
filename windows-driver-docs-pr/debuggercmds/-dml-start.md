@@ -14,7 +14,6 @@ api_type:
 
 # .dml\_start (Display DML Starting Point)
 
-
 The **.dml\_start** command displays output that serves as a starting point for exploration using commands that support [Debugger Markup Language](../debugger/debugger-markup-language-commands.md) (DML).
 
 ```dbgcmd
@@ -22,23 +21,20 @@ The **.dml\_start** command displays output that serves as a starting point for 
 .dml_start filename
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
-
+## Parameters
 
 <span id="filename"></span><span id="FILENAME"></span>*filename*  
 The name of a DML file to be displayed as the starting output.
 
-## <span id="Using_the_Default_Starting_Output"></span><span id="using_the_default_starting_output"></span><span id="USING_THE_DEFAULT_STARTING_OUTPUT"></span>Using the Default Starting Output
-
+## Using the Default Starting Output
 
 If *filename* is omitted, the debugger displays a default DML starting output as illustrated in the following image.
 
-![screen shot of .dml\-start output.](images/dmlstart01.png)
+:::image type="content" source="images/dmlstart01.png" alt-text="Screenshot of the default .dml-start output.":::
 
 Each line of output in the preceding example is a link that you can click to invoke other commands.
 
-## <span id="Providing_a_DML_File"></span><span id="providing_a_dml_file"></span><span id="PROVIDING_A_DML_FILE"></span>Providing a DML File
-
+## Providing a DML File
 
 If you supply a path to a DML file, the file is used as the starting output. For example, suppose the file c:\\MyFavoriteCommands.txt contains the following text and DML tags.
 
@@ -59,7 +55,7 @@ Explore device stacks, device objects, and driver objects.
 
 The command **.dml\_start c:\\MyFavoriteCommands.txt** will display the file as shown in the following image.
 
-![screen shot of dml file output.](images/dmlstart02.png)
+:::image type="content" source="images/dmlstart02.png" alt-text="Screenshot of the output from a custom DML file.":::
 
 ## Remarks
 
@@ -67,19 +63,8 @@ For information about DML tags that can be used in DML files, see dml.doc in the
 
 DML output often works well in the [Command Browser window](../debugger/command-browser-window.md). To display a DML file in the Command Browser window, use **.browse .dml\_start** *filename*.
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [Debugger Markup Language Commands](../debugger/debugger-markup-language-commands.md)
 
 [**.browse**](-browse--display-command-in-browser-.md)
-
- 
-
- 
-
-
-
-
-
-

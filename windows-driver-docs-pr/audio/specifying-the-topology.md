@@ -68,7 +68,7 @@ Each filter has one or more [KS pins](../stream/ks-pins.md) that serve as pathwa
 
 The following figure shows the topology of an example audio adapter.
 
-![diagram illustrating the topology of an audio adapter.](images/topoexample.png)
+:::image type="content" source="images/topoexample.png" alt-text="Diagram showing the topology of an audio adapter with connections among MIDI, WaveXxx, and topology filters.":::
 
 In the preceding figure, the topology at the top level consists of the connections among the MIDI, Wave*Xxx*, and topology filters. In addition, each filter has its own internal topology, which consists of the data paths through the filter and the control nodes that lie along each path. The nodes are labeled as shown in the following table.
 

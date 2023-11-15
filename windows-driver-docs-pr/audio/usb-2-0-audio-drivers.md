@@ -22,7 +22,7 @@ The driver is automatically enabled when a compatible device is attached to the 
 
 The *usbaudio2.sys* driver fits within the wider architecture of Windows USB Audio as shown.
 
-:::image type="content" source="images/usb-2-0-audio-arch.png" alt-text="A stack diagram showing ks.sys at the top and USB Audio devices at the bottom.":::
+:::image type="content" source="images/usb-2-0-audio-arch.png" alt-text="Stack diagram illustrating the Windows USB Audio architecture with ks.sys at the top and USB Audio devices at the bottom.":::
 
 ## Related USB specifications
 

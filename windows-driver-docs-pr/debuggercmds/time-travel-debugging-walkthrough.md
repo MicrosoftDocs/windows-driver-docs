@@ -6,12 +6,12 @@ ms.date: 01/23/2020
 
 # Time Travel Debugging - Sample App Walkthrough
 
-![Small time travel logo showing clock.](images/ttd-time-travel-debugging-logo.png)
+:::image type="content" source="images/ttd-time-travel-debugging-logo.png" alt-text="Time travel debugging logo featuring a clock.":::
 
 This lab introduces Time Travel Debugging (TTD), using a small sample program with a code flaw. TTD is used to debug, identify and root cause the issue. Although the issue in this small program is easy to find, the general procedure can be used on more complex code. This general procedure can be summarized as follows.
 
 1. Capture a time travel trace of the failed program.
-2. Use the [dx (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md) command to find the exception event stored in the recording. 
+2. Use the [dx (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md) command to find the exception event stored in the recording.
 3. Use the [!tt (time travel)](time-travel-debugging-extension-tt.md) command to travel to the position of the exception event in the trace.
 4. From that point in the trace single step backwards until the faulting code in question comes into scope.
 5. With the faulting code in scope, look at the local values and develop a hypothesis of a variable that may contain an incorrect value.
@@ -22,15 +22,14 @@ This lab introduces Time Travel Debugging (TTD), using a small sample program wi
 If the incorrect value came from some other variable, set another break on access breakpoint on the second variable. 
 10. Use g- to run back to the last point of memory access on the second suspect variable. See if that location or a few instructions before contains the code flaw. If so, you are done.
 11. Repeat this process walking back until the code that set the incorrect value that caused the error is located.
- 
+
 Although the general techniques described in this procedure apply to a broad set of code issues, there are unique code issues that will require a unique approach. The techniques illustrated in the walkthrough should serve to expand your debugging tool set and will illustrate some of what is possible with a TTD trace.
 
+## Lab objectives
 
-## <span id="Lab_objectives"></span><span id="lab_objectives"></span><span id="LAB_OBJECTIVES"></span>Lab objectives
+After completing this lab, you will be able to use the general procedure with a time travel trace to locate issues in code.
 
-After completing this lab, you will be able to use the general procedure with a time travel trace to locate issues in code. 
-
-## <span id="Lab_setup"></span><span id="lab_setup"></span><span id="LAB_SETUP"></span>Lab setup
+## Lab setup
 
 You will need the following hardware to be able to complete the lab.
 
@@ -61,7 +60,7 @@ The lab has the following three sections.
 
 2. Uncheck the Security Development Lifecycle (SDL) checks.
 
-    ![win32 application wizard application settings.](images/ttd-time-travel-walkthrough-application-wizard-application-settings.png) 
+    :::image type="content" source="images/ttd-time-travel-walkthrough-application-wizard-application-settings.png" alt-text="Win32 Application Wizard settings in Visual Studio.":::
 
 3. Click on **Finish**.
 
@@ -105,9 +104,7 @@ The lab has the following three sections.
 
  
    > [!NOTE]
-   > Although these setting are not recommended, it is possible to imagine a scenario where someone would advise using these settings
-   > to expedite coding or to facilitate certain testing environments.
-   >  
+   > Although these setting are not recommended, it is possible to imagine a scenario where someone would advise using these settings to expedite coding or to facilitate certain testing environments.  
 
 7. In Visual Studio, click **Build** &gt; **Build Solution**.
 
@@ -123,11 +120,11 @@ The lab has the following three sections.
 
     Double click on the exe file to run the sample app.
 
-    ![Screenshot that shows the .exe file running in the console.](images/ttd-time-travel-walkthrough-faulting-app-dialog-box.png)
+    :::image type="content" source="images/ttd-time-travel-walkthrough-faulting-app-dialog-box.png" alt-text="Screenshot of the console running the DisplayGreeting.exe file.":::
 
     If this dialog box appears, select **Close program**
 
-    ![Screenshot that shows the "(filename).exe has stopped working" dialog box.](images/ttd-time-travel-walkthrough-program-not-working-dialog-box.png)
+    :::image type="content" source="images/ttd-time-travel-walkthrough-program-not-working-dialog-box.png" alt-text="Screenshot of the dialog box displaying 'DisplayGreeting.exe has stopped working.'":::
 
     In the next section of the walkthrough, we will record the execution of the sample app to see if we can determine why this exception is occurring.
 
@@ -143,7 +140,7 @@ To launch the sample app and record a TTD trace, follow these steps. For general
 
 3. Enter the path to the user mode executable that you wish to record or select **Browse** to navigate to the executable. For information about working with the launch executable menu in WinDbg, see [WinDbg - Start a user-mode session](windbg-user-mode-preview.md).
 
-    ![Screen shot of WinDbg showing start recording checkbox in launch executable (advanced) screen.](images/ttd-time-travel-walkthrough-recording-app.png)
+    :::image type="content" source="images/ttd-time-travel-walkthrough-recording-app.png" alt-text="Screenshot of WinDbg with the 'Record with Time Travel Debugging' checkbox in the Launch Executable (Advanced) screen.":::
 
 4. Check the **Record with Time Travel Debugging** box to record a trace when the executable is launched.
 
@@ -151,17 +148,17 @@ To launch the sample app and record a TTD trace, follow these steps. For general
 
 6. When the "Configure recording" dialog box appears, Click **Record** to launch the executable and start recording.
 
-    ![Screen shot of WinDbg showing configure recording dialog with apath set to temp.](images/ttd-time-travel-walkthrough-recording-configure.png)
+    :::image type="content" source="images/ttd-time-travel-walkthrough-recording-configure.png" alt-text="Screenshot of WinDbg displaying the Configure Recording dialog with the path set to temp.":::
 
 7. The recording dialog appears indicating the trace is being recorded. Shortly after that, the application crashes.
 
 8. Click on **Close Program**, to dismiss the "DisplayGreeting has stopped working" dialog box.
 
-   ![Faulting app dialog box.](images/ttd-time-travel-walkthrough-program-not-working-dialog-box.png)
+   :::image type="content" source="images/ttd-time-travel-walkthrough-program-not-working-dialog-box.png" alt-text="Dialog box showing the DisplayGreeting app has stopped working.":::
 
 9. When the program crashes, the trace file will be closed and written out to disk.
 
-    ![Screen shot of WinDbg showing output with 1/1 keyframes indexed.](images/ttd-time-travel-walkthrough-windbg-indexed-frames.png)
+    :::image type="content" source="images/ttd-time-travel-walkthrough-windbg-indexed-frames.png" alt-text="Screenshot of WinDbg output displaying 1/1 keyframes indexed.":::
 
 10. The debugger will automatically open the trace file and index it. Indexing is a process that enables efficient debugging of the trace file. This indexing process will take longer for larger trace files.
 
@@ -329,13 +326,13 @@ At the point of failure in trace it is common to end up a few steps after the tr
 
     Also of interest is that the locals window contains values from our target app and the source code window is highlighting the line of code that is ready to be executed at this point in the trace.
 
-    ![Screenshot of WinDbg showing locals windows with memory ASCII output and source code window.](images/ttd-time-travel-walkthrough-locals-window.png)
+    :::image type="content" source="images/ttd-time-travel-walkthrough-locals-window.png" alt-text="Screenshot of WinDbg displaying Locals window with memory ASCII output and Source Code window.":::
 
 3. To further investigate, we can open up a memory window to view the contents near the base pointer memory address of *0x00effe44*.
 
 4. To display the associated ASCII characters, from the Memory ribbon, select **Text** and then **ASCII**.
 
-    ![screenshot of winbbg preview showing memory ascii output and source code window.](images/ttd-time-travel-walkthrough-memory-ascii.png)
+    :::image type="content" source="images/ttd-time-travel-walkthrough-memory-ascii.png" alt-text="Screenshot of WinDbg Preview displaying memory ASCII output and Source Code window.":::
 
 5. Instead of the base pointer pointing to an instruction it is pointing to our message text. So something is not right here, this may be close to the point in time that we have corrupted the stack. To further investigate we will set a breakpoint.
 
@@ -387,7 +384,7 @@ Note that you can only set four data breakpoints at any given time and it is up 
 
 **Set the break on memory access breakpoint for the base pointer**    
 
-1.  At this point in the trace we would like to set a breakpoint on write memory access to base pointer - ebp which in our example is 00effe44. To do this use the **ba** command using the address we want to monitor. We want to monitor writes for four bytes, so we specify w4. 
+1.  At this point in the trace we would like to set a breakpoint on write memory access to base pointer - ebp which in our example is 00effe44. To do this use the **ba** command using the address we want to monitor. We want to monitor writes for four bytes, so we specify w4.
 
     ```dbgcmd
     0:000> ba w4 00effe44
@@ -395,7 +392,7 @@ Note that you can only set four data breakpoints at any given time and it is up 
 
 2. Select **View** and then **Breakpoints** to confirm they are set as intended.
 
-    ![WinDbg showing breakpoints window with one breakpoint.](images/ttd-time-travel-walkthrough-view-breakpoints.png)
+    :::image type="content" source="images/ttd-time-travel-walkthrough-view-breakpoints.png" alt-text="Screenshot of WinDbg Breakpoints window displaying a single breakpoint.":::
 
 
 3.  From the Home menu, select **Go Back**  to travel back in time until the breakpoint is hit.
@@ -413,12 +410,12 @@ Note that you can only set four data breakpoints at any given time and it is up 
 
 4. Select **View** and then **Locals**. In the locals window we can see that the *destination* variable has only part of the message, while the *source* has contains all of the text. This information supports the idea that the stack was corrupted. 
 
-    ![Screenshot of WinDbg locals window.](images/ttd-time-travel-walkthrough-locals-window.png)
+    :::image type="content" source="images/ttd-time-travel-walkthrough-locals-window.png" alt-text="Screenshot of WinDbg displaying the Locals window.":::
 
 
 5. At this point we can examine the program stack to see what code is active. From the **View** ribbon select **Stack**. 
 
-    ![Screenshot of WinDbg stack window.](images/ttd-time-travel-walkthrough-stack-window.png)
+    :::image type="content" source="images/ttd-time-travel-walkthrough-stack-window.png" alt-text="Screenshot of WinDbg displaying the Stack window.":::
 
 
 As it is very unlikely that the Microsoft provided wscpy_s() function would have a code bug like this, we look further in the stack. The stack shows that Greeting!main calls Greeting!GetCppConGreeting. In our very small code sample we could just open the code at this point and likely find the error pretty easily. But to illustrate the techniques that can be used with larger, more complex program, we will set a new breakpoint to investigate further. 
@@ -444,11 +441,11 @@ As it is very unlikely that the Microsoft provided wscpy_s() function would have
 
 4. Confirm that a Hardware Read breakpoint is active in the breakpoints window.
 
-    ![WinDbg showing breakpoints window with one hardware read breakpoint.](images/ttd-time-travel-walkthrough-hardware-write-breakpoint.png)
+    :::image type="content" source="images/ttd-time-travel-walkthrough-hardware-write-breakpoint.png" alt-text="Screenshot of WinDbg Breakpoints window displaying a single hardware read breakpoint.":::
 
 5. As we are wondering about the size of the greeting string we will set a watch window to display the value of sizeof(greeting). From the View ribbon, select **Watch** and provide *sizeof(greeting)*.
 
-    ![WinDbg showing a watch locals window.](images/ttd-time-travel-watch-locals.png)
+    :::image type="content" source="images/ttd-time-travel-watch-locals.png" alt-text="Screenshot of WinDbg displaying a Watch Locals window.":::
 
 6. On the Time Travel menu, use **Time travel to start** or use the `!tt 0`command to move to the start of the trace.
 
@@ -492,7 +489,7 @@ As it is very unlikely that the Microsoft provided wscpy_s() function would have
 
 9. It looks like we have found the root cause. The *greeting* array that we declared is 50 characters in length, while the sizeof(greeting) that we pass into GetCppConGreeting is 0x64, 100).  
 
-    ![WinDbg showing the Display greeting code with a watch locals window showing X64.](images/ttd-time-travel-walkthrough-code-with-watch-locals.png)
+    :::image type="content" source="images/ttd-time-travel-walkthrough-code-with-watch-locals.png" alt-text="Screenshot of WinDbg displaying DisplayGreeting code with a Watch Locals window showing 0x64.":::
 
     As we look at the size issue further, we also notice that the message is 75 characters in length, 76 including the end of string character.
 
@@ -518,7 +515,7 @@ As it is very unlikely that the Microsoft provided wscpy_s() function would have
 
 1. An alternative way to perform this investigation would be to set a breakpoint by clicking on any line of code. For example clicking on the right side of the std:array definition line in the source window will set a breakpoint there.
 
-    ![Screenshot of source window showing breakpoint set on std:array.](images/ttd-time-travel-walkthrough-source-window-breakpoint.png)
+    :::image type="content" source="images/ttd-time-travel-walkthrough-source-window-breakpoint.png" alt-text="Screenshot of Source window in WinDbg with a breakpoint set on std::array.":::
 
 2. On the Time Travel menu, use **Time travel to start** command to move to the start of the trace.
 

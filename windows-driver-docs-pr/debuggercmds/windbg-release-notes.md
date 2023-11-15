@@ -7,7 +7,7 @@ ms.topic: article
 
 # Release notes
 
-![Small logo for windbg.](images/windbgx-preview-logo.png)
+:::image type="content" source="images/windbgx-preview-logo.png" alt-text="WinDbg logo with a magnifying glass inspecting bits.":::
 
 This topic provides information on what's new in WinDbg. Earlier versions were released as *WinDbg Preview*.
 
@@ -54,7 +54,7 @@ Example:
 
 When selecting `0x000001e2fb3f6160`, all other instances are highlighted no matter the format.
 
-![Image showing six or so examples of numbers being highlighted based on one number being selected.](images\windbgx-command-highlighting.png)
+:::image type="content" source="images\windbgx-command-highlighting.png" alt-text="Screenshot of WinDbg command window with multiple number formats highlighted.":::
 
 This feature works with semi-temporary highlights as well. Ctrl + Double Click on a number to highlight all its instances. You can keep track of multiple important numbers throughout your command history this way (to clear the highlight, Ctrl + Double Click on the number again). Finally, this feature also works when searching numbers with Ctrl + F.
 
@@ -112,15 +112,15 @@ Bookmark important Time Travel positions in WinDbg instead of manually copy past
 
 You can provide a descriptive name for bookmarks.
 
-![New bookmark dialog with example name for first api call in display greeting app.](images/windbgx-timeline-bookmark-new.png)
+:::image type="content" source="images/windbgx-timeline-bookmark-new.png" alt-text="Screenshot of new bookmark dialog with example name for first API call in Display Greeting app.":::
 
 Access Bookmarks via the Timeline window available in *View > Timeline*. When you hover over a bookmark, it will display the bookmark name.
 
-![Timeline showing three bookmarks hovering over one showing bookmark name.](images/windbgx-timeline-bookmarks.png)
+:::image type="content" source="images/windbgx-timeline-bookmarks.png" alt-text="Screenshot of WinDbg timeline with three bookmarks and a tooltip displaying bookmark name.":::
 
 You can select and hold (or right-click) the bookmark to travel to that position, rename or delete the bookmark.
 
-![Bookmark right click popup menu showing travel to position edit and remove.](images/windbgx-timeline-bookmark-edit.png)
+:::image type="content" source="images/windbgx-timeline-bookmark-edit.png" alt-text="Screenshot of bookmark right-click popup menu with options to travel to position, edit, and remove.":::
 
 **Modules Window**
 
@@ -132,7 +132,7 @@ It displays:
 - The base address that the module is loaded at
 - The file version
 
-![Modules view window showing five modules listed.](images/windbgx-view-modules.png)
+:::image type="content" source="images/windbgx-view-modules.png" alt-text="Screenshot of WinDbg Modules view window displaying five listed modules.":::
 
 
 **Thread names/descriptions available in live debugging**

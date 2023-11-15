@@ -47,8 +47,3 @@ The **Enable heap free checking** flag validates each heap allocation when it is
  
 
  
-
-
-
-
-

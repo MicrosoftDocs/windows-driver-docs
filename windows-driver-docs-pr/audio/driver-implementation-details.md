@@ -20,7 +20,7 @@ These additional topics in this section discuss the issues that you should be aw
 
 Windows supports the use of an audio adapter that can use an on-board hardware audio engine to process audio streams. When you develop such an audio adapter, the associated audio driver must expose this fact to the user mode audio system in a specific manner, so that the audio system can discover, use and properly expose the features of this adapter and its driver.
 
-![diagram that shows a dsp equipped system that implements effects in hardware.](images/audio-apo-dsp-equipped-system-with-hardware-effects-3.png)
+:::image type="content" source="images/audio-apo-dsp-equipped-system-with-hardware-effects-3.png" alt-text="Diagram showing a DSP-equipped system implementing effects in hardware.":::
 
 ## The KSNODETYPE\_AUDIO\_ENGINE GUID for node descriptors
 

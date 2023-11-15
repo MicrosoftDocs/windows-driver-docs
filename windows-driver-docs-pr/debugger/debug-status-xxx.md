@@ -152,8 +152,3 @@ The values in the following table are reverse ordered by precedence; the values 
  
 
  
-
-
-
-
-

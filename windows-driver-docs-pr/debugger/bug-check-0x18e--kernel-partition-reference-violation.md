@@ -35,9 +35,3 @@ Parameter 1 | Parameter 2 | Parameter 3 | Parameter 4
 | 0x1 : The system partition is being deleted | Pointer to the partition. | Reserved | Reserved |
 | 0x2 :  A partition with outstanding ex work queue items is being deleted. | Pointer to the partition. |Pointer to the ex work queue with outstanding items. | Reserved |
  
-
-
-
-
-
-

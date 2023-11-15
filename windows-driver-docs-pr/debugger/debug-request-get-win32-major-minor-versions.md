@@ -69,9 +69,3 @@ The following table lists the major and minor version numbers by operating syste
  
 
  
-
-
-
-
-
-

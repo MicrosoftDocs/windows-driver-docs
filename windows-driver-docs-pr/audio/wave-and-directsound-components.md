@@ -20,27 +20,23 @@ ms.date: 04/20/2017
 
 # Wave and DirectSound Components
 
-
-## <span id="wave_and_directsound_components"></span><span id="WAVE_AND_DIRECTSOUND_COMPONENTS"></span>
-
-
 Application programs rely on a combination of user-mode and kernel-mode components to capture (input) and render (output) wave streams. A wave stream is a digital-audio stream whose data format is described by a [**WAVEFORMATEX**](/windows/win32/api/mmeapi/ns-mmeapi-waveformatex) or [**WAVEFORMATEXTENSIBLE**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-waveformatextensible) structure.
 
 An application can use either of the following software interfaces for wave rendering and capture:
 
--   Microsoft Windows Multimedia waveOut*Xxx* and waveIn*Xxx* functions
+- Microsoft Windows Multimedia waveOut*Xxx* and waveIn*Xxx* functions
 
--   DirectSound and DirectSoundCapture APIs
+- DirectSound and DirectSoundCapture APIs
 
 The behavior of the waveOut*Xxx* and waveIn*Xxx* functions is based on the capabilities of legacy wave drivers and devices. Beginning with Windows 98, the [WDMAud system driver](user-mode-wdm-audio-components.md#wdmaud_system_driver) translates calls to these functions into commands to WDM audio drivers. However, by emulating the behavior of older software and hardware, the waveOut*Xxx* functions sacrifice the 3-D sound effects and hardware acceleration that are now available through the DirectSound API. For more information about DirectSound and the Windows Multimedia wave functions, see the Microsoft Windows SDK documentation.
 
 DirectSound and the Windows Multimedia wave functions are clients of the [SysAudio system driver](kernel-mode-wdm-audio-components.md#sysaudio_system_driver), which builds the audio filter graphs that process the wave and DirectSound streams. Graph building is transparent to the applications that use these software interfaces.
 
-### <span id="Wave_Components"></span><span id="wave_components"></span><span id="WAVE_COMPONENTS"></span>Wave Components
+## Wave Components
 
 The following figure shows the user-mode and kernel-mode components that a wave application uses to render or capture a digital audio stream consisting of wave PCM data.
 
-![diagram illustrating wave rendering and capture components.](images/wavecomp.png)
+:::image type="content" source="images/wavecomp.png" alt-text="Diagram illustrating user-mode and kernel-mode components for wave rendering and capture.":::
 
 The rendering components appear on the left side of the preceding figure, and the capture components appear on the right. The boxes representing the wave miniport driver are darkened to indicate that these are vendor-supplied components. The other components in the figure are system-supplied.
 
@@ -68,11 +64,11 @@ Regardless of whether the wave stream is captured by a USB device or by a WaveCy
 
 At the time that the wave-capture application calls the [**waveInOpen**](/previous-versions/dd743847(v=vs.85)) function to open the capture stream, it passes in a pointer to its callback routine. When a wave-capture event occurs, the operating system calls the callback routine with a buffer containing the next block of wave samples from the capture device. In response to the callback, the application writes the next block of wave data to the file.
 
-### <span id="DirectSound_Components"></span><span id="directsound_components"></span><span id="DIRECTSOUND_COMPONENTS"></span>DirectSound Components
+## DirectSound Components
 
 The following figure shows the user-mode and kernel-mode components that are used by a DirectSound application program to render or capture wave data.
 
-![diagram illustrating directsound rendering and capture components.](images/dscomp.png)
+:::image type="content" source="images/dscomp.png" alt-text="Diagram illustrating user-mode and kernel-mode components for DirectSound rendering and capture.":::
 
 The rendering components are shown in the left half of the preceding figure, and the capture components appear on the right. The wave miniport drivers are shown as darkened boxes to indicate that they are vendor-supplied components. The other components in the figure are system-supplied.
 
@@ -89,6 +85,3 @@ Alternatively, the source of the captured wave stream can be a USB audio device.
 If KMixer is inserted into the path of the capture stream, it performs sample-rate conversion on the stream, if needed, but does no mixing with other streams.
 
 At the top-right corner of the preceding figure, the application reads the wave data from the DirectSoundCapture buffer and writes it to the file.
-
- 
-

@@ -212,7 +212,7 @@ For more information, see:
 
 The miniport will call into their port to create and send the notification.  The general call sequence is shown in this diagram.
 
-![AudioIPortClsNotifications Calling Sequence.](images/AudioIPortClsNotificationsCallingSequenceDiagram.png)
+:::image type="content" source="images/AudioIPortClsNotificationsCallingSequenceDiagram.png" alt-text="Diagram showing the calling sequence for AudioIPortClsNotifications.":::
 
 
 

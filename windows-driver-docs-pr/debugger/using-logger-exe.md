@@ -69,8 +69,3 @@ These limitations will not apply if you are running Logger through the debugger 
  
 
  
-
-
-
-
-

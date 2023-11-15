@@ -20,7 +20,7 @@ Settings that you specify in the **Silent Process Exit** tab are saved in the re
 
     The following screen shot shows the **Silent Process Exit** tab in Windows 8.
 
-    ![screen shot of the image file tab in windows vista .](images/gflagssilentprocessexit01.png)
+    :::image type="content" source="images/gflagssilentprocessexit01.png" alt-text="Screenshot of the Silent Process Exit tab in Windows 8.":::
 
 2.  In the **Image** box, type the name of an executable file, including the file name extension, and then press the TAB key.
 
@@ -40,9 +40,3 @@ Settings that you specify in the **Silent Process Exit** tab are saved in the re
  
 
  
-
-
-
-
-
-

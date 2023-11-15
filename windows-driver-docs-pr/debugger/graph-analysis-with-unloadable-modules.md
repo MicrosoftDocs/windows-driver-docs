@@ -94,8 +94,3 @@ KMixer now appears as expected in the capture graph.
  
 
  
-
-
-
-
-

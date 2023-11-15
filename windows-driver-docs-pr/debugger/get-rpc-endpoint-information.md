@@ -67,8 +67,3 @@ For a similar example using the RPC debugger extensions, see [**!rpcexts.getendp
  
 
  
-
-
-
-
-

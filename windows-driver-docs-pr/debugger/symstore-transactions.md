@@ -176,8 +176,3 @@ The fields for the delete transaction are described as follows.
  
 
  
-
-
-
-
-

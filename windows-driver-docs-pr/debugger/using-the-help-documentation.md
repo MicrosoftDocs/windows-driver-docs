@@ -80,8 +80,3 @@ To open this Help documentation, do one of the following:
  
 
  
-
-
-
-
-

@@ -40,8 +40,3 @@ The following high-level queries are also available:
  
 
  
-
-
-
-
-

@@ -7,7 +7,7 @@ ms.topic: article
 
 # WinDbg - Command line startup options
 
-![Small logo on WinDbg.](images/windbgx-preview-logo.png)
+:::image type="content" source="images/windbgx-preview-logo.png" alt-text="WinDbg logo with a magnifying glass inspecting bits.":::
 
 ## Starting WinDbg
 
@@ -130,7 +130,7 @@ For general information on the startup parameters, see [WinDbg Command-Line Opti
 
 You can use -? to list the supported command line options.
 
-![Screen shot of command line help output listing about 50 options.](images/windbgx-start-up-options.png)
+:::image type="content" source="images/windbgx-start-up-options.png" alt-text="Screenshot of WinDbgX command line help output displaying various options.":::
 
 ## See Also
 

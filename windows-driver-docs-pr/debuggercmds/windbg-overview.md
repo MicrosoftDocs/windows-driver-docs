@@ -11,21 +11,21 @@ WinDbg is the latest version of WinDbg with more modern visuals, faster windows,
 > [!NOTE]
 > Formerly released as *WinDbg Preview* in the Microsoft Store, *WinDbg* leverages the same underlying engine as *WinDbg (Classic)* and supports all the same commands, extensions, and workflows.
 
-![Main screen in debugger.](images/windbgx-main-menu.png)
+:::image type="content" source="images/windbgx-main-menu.png" alt-text="Screenshot of the main screen in WinDbg debugger.":::
 
 ## General features
 
 - **Connection setup and recall** - Recent targets and session configurations are saved. They can be quickly restarted from the file menu.
 
-    ![Screen shot of main screen in debugger.](images/windbgx-start-debugging-menu.png)
+    :::image type="content" source="images/windbgx-start-debugging-menu.png" alt-text="Screenshot of the start debugging menu in WinDbg debugger.":::
 
 - **Dark theme** - Go to File > Settings to enable the dark theme.
 
-    ![Screen shot showing dark theme.](images/windbgx-dark-theme.png)
+    :::image type="content" source="images/windbgx-dark-theme.png" alt-text="Screenshot of WinDbg debugger with dark theme enabled.":::
 
 - **Keyboard navigation** - Use Ctrl+Tab to easily navigate between windows with just your keyboard.
 
-    ![Screen shot showing ctrl tab menu.](images/windbgx-ctrl-tab.gif)
+    :::image type="content" source="images/windbgx-ctrl-tab.gif" alt-text="Screenshot demonstrating the Ctrl+Tab menu in WinDbg debugger.":::
 
 - **Dump file processor detection** - Autodetects processor architecture for easier managed debugging.
 
@@ -37,49 +37,49 @@ WinDbg is the latest version of WinDbg with more modern visuals, faster windows,
 
     For more information, see [Time Travel Debugging - Overview](time-travel-debugging-overview.md).
 
-    ![Screen shot showing process record menu with a notepad process being seleced for recording.](images/windbgx-ttd.png)
+    :::image type="content" source="images/windbgx-ttd.png" alt-text="Screenshot of the process record menu in WinDbg with a Notepad process selected for recording.":::
 
 - **Launch App packages** - Debug your universal app or background task in a single click.
 
     For more information, see [Launch App Package](./windbg-user-mode-preview.md#launch-app-package).
 
-    ![Launch App Package Applications tab showing cal in the search box with three apps listed.](images/windbgx-launch-app-package.png)
+    :::image type="content" source="images/windbgx-launch-app-package.png" alt-text="Screenshot of the Launch App Package Applications tab in WinDbg with 'cal' in the search box and three apps listed.":::
 
 - **Attach to a process** - The new attach view provides a detailed view of running processes, easier configuration, and search support.
 
-    ![Attach to a process dialog.](images/windbgx-attach-to-a-process-zoomed.png)
+    :::image type="content" source="images/windbgx-attach-to-a-process-zoomed.png" alt-text="Screenshot of the Attach to a Process dialog in WinDbg debugger.":::
 
 ## Improved tool windows
 
 - **Command** - The command window has improved DML support, text highlighting, search (including Regex).
 
-    ![Screen shot showing columns highlighted in yellow.](images/windbgx-highlighting.gif)
+    :::image type="content" source="images/windbgx-highlighting.gif" alt-text="Screenshot of the command window in WinDbg with columns highlighted in yellow.":::
 
 - **Source** - The source code window provides syntax highlighting and other general improvements similar to most modern text editors.
 
-    ![Screen shot of source code windows in debugger.](images/windbgx-source-window.png)
+    :::image type="content" source="images/windbgx-source-window.png" alt-text="Screenshot of the source code window in WinDbg debugger with syntax highlighting.":::
 
 - **Disassembly** - The disassembly window is also improved, the highlight of the current instruction remains where it's when you scroll.
 
-    ![Disassembly windows in Debugger.](images/windbgx-disassembly.png)
+    :::image type="content" source="images/windbgx-disassembly.png" alt-text="Screenshot of the disassembly window in WinDbg debugger.":::
 
 - **Breakpoints** - The breakpoints window shows all your current breakpoints, a one-click toggle, and a hit count.
 
     For more information, see [Breakpoints](windbg-breakpoints-preview.md).
 
-    ![Breakpoint window in debugger.](images/windbgx-breakpoints-window.png)
+    :::image type="content" source="images/windbgx-breakpoints-window.png" alt-text="Screenshot of the breakpoint window in WinDbg debugger showing current breakpoints.":::
 
 - **Scripting** - The new scripting window makes developing JavaScript and NatVis extensions easier, with error highlighting and IntelliSense.
 
     For more information, see [WinDbg - Scripting](windbg-scripting-preview.md).
 
-    ![Screen shot of scripting menu in debugger showing intellisense.](images/windbgx-scripting-intellisense.png)
+    :::image type="content" source="images/windbgx-scripting-intellisense.png" alt-text="Screenshot of the scripting window in WinDbg debugger with IntelliSense and error highlighting.":::
 
 - **Data model** - The model window provides an expandable and browsable version of `dx` and `dx -g`, letting you create powerful tables on-top of your NatVis, JavaScript, and LINQ queries.
 
     For more information, see [WinDbg - Data model](windbg-data-model-preview.md).
 
-    ![Screen shot of data model menu in debugger.](images/windbgx-data-model-explore-window.png)
+    :::image type="content" source="images/windbgx-data-model-explore-window.png" alt-text="Screenshot of the data model window in WinDbg debugger with expandable and browsable features.":::
 
 - **Locals and watch** - The locals and watch windows are both based off the data model that is used by the `dx` command. This means they benefit from the same features as other data model windows.
 

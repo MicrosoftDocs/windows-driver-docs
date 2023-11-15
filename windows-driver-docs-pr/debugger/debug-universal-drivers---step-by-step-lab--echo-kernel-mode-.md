@@ -74,7 +74,7 @@ This lab uses two computers. Windows debugger runs on the *host* system and the 
 
 Use a network hub or router and network cables to connect the two computers.
 
-![Diagram shows two computers connected with a double arrow.](images/debuglab-image-targethostdrawing1.png)
+:::image type="content" source="images/debuglab-image-targethostdrawing1.png" alt-text="Diagram illustrating two computers connected via a network hub or router.":::
 
 To work with kernel-mode applications and use WinDbg, we recommend that you use the KDNET over Ethernet transport. For information about how to use the Ethernet transport protocol, see [Get started with WinDbg (kernel mode)](getting-started-with-windbg--kernel-mode-.md). For more information about setting up the target computer, see [Preparing a computer for manual driver deployment](../develop/preparing-a-computer-for-manual-driver-deployment.md) and [Setting up KDNET network kernel debugging automatically](setting-up-a-network-debugging-connection-automatically.md).
 
@@ -162,7 +162,7 @@ Enable kernel-mode debugging on the target system by completing the following st
    > [!NOTE]
    > If you receive a message from the firewall, and you want to use the debugger, select all three of the boxes.
    >
-   > ![Screenshot shows the Windows Security Alert dialog box saying that Windows Firewall has blocked some features of this app.](images/debuglab-image-firewall-dialog-box.png)
+   > :::image type="content" source="images/debuglab-image-firewall-dialog-box.png" alt-text="Screenshot of Windows Security Alert dialog box indicating Windows Firewall blocked some features of an app.":::
 
 1. On the host computer, open a Command Prompt window as Administrator. This lab uses the x64 version of *WinDbg.exe* from the Windows Driver Kit (WDK) that was installed as part of the Windows kit installation. Change to the default WinDbg directory, the default location is shown below.
 
@@ -220,7 +220,7 @@ Some debug commands display text using Debugger Markup Language (DML) that you c
 
 1. On the host system, use Ctrl+Scroll Lock in WinDBg to break into the code running on the target system. It may take some time for the target system to respond.
 
-   ![Main screen in debugger showing Command Window output from a live kernel connection.](images/windbgx-main-menu.png)
+   :::image type="content" source="images/windbgx-main-menu.png" alt-text="Main screen in debugger showing Command Window output from a live kernel connection.":::
 
 2. Enter the following command to enable DML in the Debugger Command window:
 
@@ -237,7 +237,7 @@ Some debug commands display text using Debugger Markup Language (DML) that you c
 
    The Debugger help file displays help for the `.prefer_dml` command.
 
-   ![Screenshot shows the debugger help application showing help for the .prefer\-dml command.](images/debuglab-image-prefer-dml-help.png)
+   :::image type="content" source="images/debuglab-image-prefer-dml-help.png" alt-text="Screenshot of debugger help application displaying help for the .prefer-dml command.":::
 
 4. To display detailed version information on the target system, enter the [vertarget (Show Target Computer Version)](../debuggercmds/vertarget--show-target-computer-version-.md) command in the WinDbg window:
 
@@ -311,7 +311,7 @@ To download and build the Echo sample audio driver:
 
     The KMDF Echo sample is located in the *general* folder.
 
-    ![Screenshot of github windows-driver-samples highlighting the general folder and the download zip button.](images/debuglab-image-github.png)
+    :::image type="content" source="images/debuglab-image-github.png" alt-text="Screenshot of GitHub windows-driver-samples page highlighting general folder and download zip button.":::
 
     1. Download the driver samples in one zip file: [Driver samples](https://github.com/Microsoft/Windows-driver-samples/archive/master.zip)
 
@@ -325,7 +325,7 @@ To download and build the Echo sample audio driver:
 
    In Visual Studio, locate the Solution Explorer. If this window isn't already open, select **Solution Explorer** from the **View** menu. In Solution Explorer, you can see one solution that has three projects.
 
-   ![Screenshot shows Visual Studio with the device.c file loaded from the kmdfecho project.](images/debuglab-image-echo-visual-studio.png)
+   :::image type="content" source="images/debuglab-image-echo-visual-studio.png" alt-text="Screenshot of Visual Studio displaying device.c file loaded from the kmdfecho project.":::
 
 3. Set the sample's configuration and platform. In Solution Explorer, select and hold or right-click **Solution 'kmdfecho' (3 projects)**, and select **Configuration Manager**. Make sure that the configuration and platform settings are the same for the three projects. By default, the configuration is set to **Win10 Debug**, and the platform is set to **Win64** for all the projects. If you make any configuration or platform changes for one project, make the same changes for the remaining three projects.
 
@@ -333,11 +333,11 @@ To download and build the Echo sample audio driver:
 
 5. Set the runtime library. Open the echo driver property page and locate **C/C++** > **Code Generation**.  Change Runtime Library to Multi-threaded Debug (/MTd). For more information about the build options, see [/MD, /MT, /LD (Use Run-Time Library)](/cpp/build/reference/md-mt-ld-use-run-time-library).
 
-   ![Screenshot shows the echo property page highlighting the runtime library setting.](images/debuglab-image-echoapp-properties.png)
+   :::image type="content" source="images/debuglab-image-echoapp-properties.png" alt-text="Screenshot of echo property page in Visual Studio highlighting the runtime library setting.":::
 
 6. In the driver properties, make sure **Driver Signing** > **Sign Mode** is set to **Test Sign**.  
 
-   ![Screenshot shows echo property page highlighting the sign mode setting.](images/debuglab-image-echoapp-driver-signing.png)
+   :::image type="content" source="images/debuglab-image-echoapp-driver-signing.png" alt-text="Screenshot of echo property page in Visual Studio highlighting the sign mode setting.":::
 
 7. In Visual Studio, select **Build** > **Build Solution**.
 
@@ -424,7 +424,7 @@ c:\tools\devcon install echo.inf root\ECHO
 
 A dialog box appears that indicates that the test driver is an unsigned driver. Select **Install this driver anyway** to proceed.
 
-![Screenshot shows a Windows Security warning that Windows can't verify the publisher of this driver software.](images/debuglab-image-install-security-warning.png)
+:::image type="content" source="images/debuglab-image-install-security-warning.png" alt-text="Screenshot of Windows Security warning stating Windows cannot verify the publisher of driver software.":::
 
 > [!TIP]
 > If you have any issues with the installation, check the following file for more information.
@@ -434,7 +434,7 @@ After successfully installing the sample driver, you're ready to test it.
 
 On the target computer, in a Command Prompt window, enter *devmgmt* to open Device Manager. In Device Manager, on the **View** menu, choose **Devices by type.** In the device tree, locate **Sample WDF Echo Driver** in the **Sample Device** node.
 
-![Screenshot shows the Device Manager tree with the sample wdf echo driver highlighted.](images/debuglab-image-device-manager-echo.png)
+:::image type="content" source="images/debuglab-image-device-manager-echo.png" alt-text="Screenshot of Device Manager tree highlighting the sample WDF echo driver.":::
 
 Enter *echoapp* to start the test echo app to confirm that the driver is functional.
 
@@ -611,7 +611,7 @@ For more information about the device node debug extension, see [!devnode](../de
 
 2. Use Ctrl+F to search in the output that's generated to look for the name of the device driver, *echo*.
 
-   ![Screenshot shows the Find dialog box showing the term echo being searched for.](images/debuglab-image-find-dialog.png)
+   :::image type="content" source="images/debuglab-image-find-dialog.png" alt-text="Screenshot of Find dialog box in WinDbg searching for the term 'echo'.":::
 
 3. The echo device driver should be loaded. Use the `!devnode 0 1 echo` command to display Plug and Play information associated with your echo device driver as shown in this example:
 
@@ -661,7 +661,7 @@ The output shows that you have a fairly simple device driver stack. The echo dri
 
 This diagram shows a more complex device node tree.
 
-![Diagram shows a device node tree with about 20 nodes.](images/debuglab-image-device-node-tree.png)
+:::image type="content" source="images/debuglab-image-device-node-tree.png" alt-text="Diagram illustrating a device node tree consisting of approximately 20 nodes.":::
 
 For more information about more complex driver stacks, see [Driver stacks](../gettingstarted/driver-stacks.md) and [Device nodes and device stacks](../gettingstarted/device-nodes-and-device-stacks.md).
 
@@ -742,11 +742,11 @@ For more information, see [Source code debugging in WinDbg](source-window.md).
 
 1. On the host system, when the driver is enabled, the [AddDevice](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) debug breakpoint should fire. The execution of the driver code on the target system should halt. When the breakpoint is hit, the execution should be stopped at the start of the *AddDevice* routine. The debug command output displays `Breakpoint 1 hit`.
 
-   ![Screenshot shows windbg showing sample code locals and command windows.](images/debuglab-image-breakpoint-echo-deviceadd.png)
+   :::image type="content" source="images/debuglab-image-breakpoint-echo-deviceadd.png" alt-text="Screenshot of WinDbg displaying sample code locals and command windows.":::
 
 1. Step through the code line by line by entering the `p` command or pressing F10 until you reach the following end of the [AddDevice](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine. The Brace character (`}`) is highlighted as shown.
 
-   ![Screenshot shows the code window showing brace character highlighted at start of adddevice routine.](images/debuglab-image-breakpoint-end-deviceadd.png)
+   :::image type="content" source="images/debuglab-image-breakpoint-end-deviceadd.png" alt-text="Screenshot of the code window with brace character highlighted at the start of AddDevice routine.":::
 
 In the next section, examine the state of the variables after the DeviceAdd code has executed.
 
@@ -800,7 +800,7 @@ This lab assumes that you're stopped at the [AddDevice](/windows-hardware/driver
 
 On the host system, to display variables, use the **view** > **local** menu item to display local variables.
 
-![Screenshot shows WinDbg local variables window.](images/debuglab-image-display-variables.png)
+:::image type="content" source="images/debuglab-image-display-variables.png" alt-text="Screenshot of WinDbg displaying the local variables window.":::
 
 To find the location of a global variable address, enter `? <variable name>`.
 
@@ -820,7 +820,7 @@ This lab assumes that you are stopped at the [*AddDevice*](/windows-hardware/dri
 
 Use the **view**&gt; **local** menu item to display local variables.
 
-![windbg local variables window.](images/debuglab-image-display-variables.png)
+:::image type="content" source="images/debuglab-image-display-variables.png" alt-text="Screenshot of WinDbg displaying the local variables window.":::
 
 **Global variables**
 
@@ -850,7 +850,7 @@ To display the call stack, use the `k*` commands.
 
 1. On the host system, if you want to keep the call stack available, select **view** > **call stack** to view it. Select the columns at the top of the window to toggle the display of additional information.
 
-   ![Screenshot shows the WinDbg display call stacks window.](images/debuglab-image-display-callstacks.png)
+   :::image type="content" source="images/debuglab-image-display-callstacks.png" alt-text="Screenshot of WinDbg displaying the call stacks window.":::
 
 2. Use the `kn` command to show the call stack while debugging the sample adapter code in a break state.
 

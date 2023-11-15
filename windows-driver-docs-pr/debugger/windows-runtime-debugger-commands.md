@@ -17,8 +17,3 @@ You can use the following debugger extensions to debug code that uses data types
  
 
  
-
-
-
-
-
