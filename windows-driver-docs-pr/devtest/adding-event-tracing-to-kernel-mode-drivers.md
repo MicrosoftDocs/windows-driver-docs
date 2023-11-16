@@ -5,7 +5,7 @@ keywords:
 - Event Tracing for Windows WDK , kernel-mode
 - ETW WDK , kernel-mode
 - kernel-mode ETW WDK software tracing
-ms.date: 10/26/2021
+ms.date: 11/15/2023
 ---
 
 # Adding Event Tracing to Kernel-Mode Drivers
@@ -17,21 +17,21 @@ This section describes how to use the Event Tracing for Windows (ETW) kernel-mod
 
 In this section:
 
-- [Workflow - Adding Event Tracing to Kernel-Mode Drivers](#workflow---adding-event-tracing-to-kernel-mode-drivers)
+[Workflow - Adding Event Tracing to Kernel-Mode Drivers](#workflow---adding-event-tracing-to-kernel-mode-drivers)
 
-- [1. Decide the type of events to raise and where to publish them](#1-decide-the-type-of-events-to-raise-and-where-to-publish-them)
+[1. Decide the type of events to raise and where to publish them](#1-decide-the-type-of-events-to-raise-and-where-to-publish-them)
 
-- [2. Create an instrumentation manifest that defines the provider, the events, and channels](#2-create-an-instrumentation-manifest-that-defines-the-provider-the-events-and-channels)
+[2. Create an instrumentation manifest that defines the provider, the events, and channels](#2-create-an-instrumentation-manifest-that-defines-the-provider-the-events-and-channels)
 
-- [3. Compile the instrumentation manifest by using the message compiler (Mc.exe)](#3-compile-the-instrumentation-manifest-by-using-the-message-compiler-mcexe)
+[3. Compile the instrumentation manifest by using the message compiler (Mc.exe)](#3-compile-the-instrumentation-manifest-by-using-the-message-compiler-mcexe)
 
-- [4. Add the generated code to raise (publish) the events (register, unregister, and write events)](#4-add-the-generated-code-to-raise-publish-the-events-register-unregister-and-write-events)
+[4. Add the generated code to raise (publish) the events (register, unregister, and write events)](#4-add-the-generated-code-to-raise-publish-the-events-register-unregister-and-write-events)
 
-- [5. Build the driver](#5-build-the-driver)
+[5. Build the driver](#5-build-the-driver)
 
-- [6. Install the manifest](#6-install-the-manifest)
+[6. Install the manifest](#6-install-the-manifest)
 
-- [7. Test the driver to verify ETW support](#7-test-the-driver-to-verify-etw-support)
+[7. Test the driver to verify ETW support](#7-test-the-driver-to-verify-etw-support)
 
 ## Workflow - Adding Event Tracing to Kernel-Mode Drivers
 
@@ -39,7 +39,9 @@ In this section:
 
 ## 1. Decide the type of events to raise and where to publish them
 
-Before you begin coding, you must decide what type of events you want the driver to log through Event Tracing for Windows (ETW). For example, you might want to log events that can help you diagnose problems after your driver is distributed, or events that might help you as you are developing your driver. The types of events are identified with channels. A *channel* is a named stream of events of type Admin, Operational, Analytical, or Debug directed toward a specific audience, similar to a television channel. A channel delivers the events from the event provider to the event logs and event consumers. For information, see [Windows Event Log Reference](/windows/win32/wes/windows-event-log-reference).
+Before you begin coding, you must decide what type of events you want the driver to log through Event Tracing for Windows (ETW). For example, you might want to log events that can help you diagnose problems after your driver is distributed, or events that might help you as you are developing your driver.For information, see [Windows Event Log Reference](/windows/win32/wes/windows-event-log-reference).
+
+The types of events are identified with channels. A *channel* is a named stream of events of type Admin, Operational, Analytical, or Debug directed toward a specific audience, similar to a television channel. A channel delivers the events from the event provider to the event logs and event consumers. For information, see[Defining Channels](/windows/win32/wes/defining-channels).
 
 During development, you are most likely interested in tracing events that help you debug your code. This same channel could be used in the production code to help troubleshoot problems that might appear after the driver is deployed. You might also want to trace events that could be used to measure performance; these events can help IT professionals fine tune server performance and can help identify network bottlenecks.
 
