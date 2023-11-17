@@ -10,6 +10,22 @@ ms.date: 10/30/2023
 
 This topic provides information on what's new in Time Travel Debugging.
 
+## 1.11.261
+
+Notable changes in this release include:
+- [ARM64] Fixed the behavior of the `SXTL`, `SQXTN2`, `SQXTUN2`, `UQXTN2`, `XTN2` and `TRN1` instructions when the destination register is used as a source.
+- [ARM64] Fixed an issue that caused the debugger to show SIMD registers with their lower 64 bits duplicated into the high 64 bits.
+- [AMD64] AVX512 emulation fixes for AMD's Zen4 processors (registers were getting corrupted).
+
+### Changed
+
+- Implement a new versioning system specifically for the emulator. (1.11.260)
+
+### Fixed
+
+- Fix faulty ARM64 instructions where the destination register is also used as a source. (1.11.261)
+- Fix the Zen4 workaround for direct returns to the emulator. (1.11.222)
+
 ## 1.11.202
 
 This release fixes a number of issues encountered while recording services or monitoring process launch via the `-monitor` switch. It also removes ARM32 recording support from the product.
@@ -61,14 +77,14 @@ This release is the first public release of the command line recorder. Along wit
 enable public release of the command line recorder, this release also includes a number of bug fixes, including
 a couple of fixes to the CPU emulator.
 
-The new `-timestampFileName` switch enables timestamp-based .run file generation. This is useful when you are
+The new ```-timestampFileName``` switch enables timestamp-based .run file generation. This is useful when you are
 recording many instances of the same process, and want to minimize recording startup time.
 
 ### Changed
 
 - Choose default injection mode at runtime based on which tracer is used (1.11.156)
 - Add switch to enable timestamp-based .run file generation (1.11.155)
-- Add EULA and -accepteula to TTD (1.11.154)
+- Add EULA and ```-accepteula``` to TTD (1.11.154)
 - Add ProcLaunchMon.sys to MSIX (1.11.153)
 - Create per-arch MSIX and MSIXBUNDLE (1.11.152)
 - Fix a number of issues that came up when testing TTD built with Clang. (1.11.146)

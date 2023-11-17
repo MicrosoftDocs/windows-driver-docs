@@ -58,6 +58,8 @@
     - name: "Supported Ethernet NICs for Network Kernel Debugging in Previous Versions of Windows"
 # Auto-expanded node
       items: 
+      - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 11 - 21H2"
+        href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-11-21h2.md
       - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 10 - 2004"
         href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-10-2004.md
       - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 10 - 1909"
