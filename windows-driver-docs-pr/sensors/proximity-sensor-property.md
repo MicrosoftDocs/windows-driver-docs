@@ -17,7 +17,8 @@ This property is an optional enumeration property.
 
 ## Human Proximity Detection Types
 
-For sensors reporting HumanProximity the sensor must report the detection techology used by the sensor using the `DEVPKEY_Sensor_HumanPresenceDetectionType` based on the definitions below. 
+For sensors reporting HumanProximity the sensor must report the detection techology used by the sensor using the `DEVPKEY_Sensor_HumanPresenceDetectionType` based on the definitions below.
+
 | HumanPresenceDetectionType | Description |
 |---|---|
 | Vendor-Defined Non-Biometric | Presence (of one or more people) is detected utilizing a vendor-defined, but non-biometric method. This is used to give positive affirmation that the sensor is using detection unrelated to biometrics as defined below. Without this, a Host cannot assume biometrics aren’t utilized by the device.| 
