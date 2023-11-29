@@ -37,7 +37,7 @@ The number of receive descriptors used by the miniport adapter. The miniport dri
 **\*TransmitBuffers**  
 The size, in bytes, of the transmit buffers that the hardware can support. This size is hardware-dependent and can include data buffers, buffer descriptors, and so on. Hardware vendors can assign any value that is appropriate for their purposes.
 
-**\*NetworkAddress**  
+**NetworkAddress**  
 The network address of the device. The format for a MAC address is: XX-XX-XX-XX-XX-XX. The hyphens (-) are optional.
 
 The columns in the table at the end of this topic describe the following attributes for keywords that can be edited:
@@ -67,7 +67,7 @@ The following table lists all of the keywords and describes the values that a dr
 |**\*JumboPacket**|Jumbo Packet|Int|1514|1514||
 |**\*ReceiveBuffers**|Receive Buffers|Int||1||
 |**\*TransmitBuffers**|Transmit Buffers|Int||0||
-|**\*NetworkAddress**|Network Address|Edit|N/A|N/A|N/A|
+|**NetworkAddress**|Network Address|Edit|N/A|N/A|N/A|
 
  
 
