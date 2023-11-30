@@ -3233,6 +3233,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "windows-driver-docs-pr/mobilebroadband/apn-database-schema-definition.md",
+            "redirect_URL": "/windows-hardware/drivers/mobilebroadband/desktop-cosa-database-settings",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/mobilebroadband/apn-database-submission.md",
             "redirect_URL": "/windows-hardware/drivers/mobilebroadband/cosa-apn-database-submission",
             "redirect_document_id": false
@@ -3271,6 +3276,16 @@
         {
             "source_path": "windows-driver-docs-pr/mobilebroadband/common-tasks-for-mobile-broadband-windows-runtime-apis.md",
             "redirect_URL": "/windows-hardware/drivers/mobilebroadband/create-a-mobilebroadbandaccount-object",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/mobilebroadband/connectioninfo.md",
+            "redirect_URL": "/windows-hardware/drivers/mobilebroadband/desktop-cosa-database-settings",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/mobilebroadband/connectioninfolist.md",
+            "redirect_URL": "/windows-hardware/drivers/mobilebroadband/desktop-cosa-database-settings",
             "redirect_document_id": false
         },
         {
