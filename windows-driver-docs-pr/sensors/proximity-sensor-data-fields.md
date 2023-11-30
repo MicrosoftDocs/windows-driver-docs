@@ -15,6 +15,8 @@ The following table shows the data fields. For more information about the types 
 |---|---|---|---|
 | PKEY_SensorData_ProximityDetection | VT_BOOL | Required | An indication that an object is within proximity of the sensor. |
 | PKEY_SensorData_ProximityDistanceMillimeters | VT_UI4 | Optional | Distance to the detected object, in millimeters. |
+| PKEY_SensorData_HumanPresence_DetectionDistance_Threshold | VT_R4 | Required | The default distance detection threshold value in millimeters. Changes greater than this are reported by the sensor. |
+| PKEY_SensorData_HumanPresence_AttentionDetection | VT_BOOL | Optional | Indicates if Attention Detection is supported by the sensor.  |
 
 ## Remarks
 
