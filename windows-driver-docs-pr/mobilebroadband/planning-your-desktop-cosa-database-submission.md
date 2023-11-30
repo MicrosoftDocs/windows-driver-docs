@@ -1,7 +1,7 @@
 ---
 title: Planning your desktop COSA database submission
 description: Use this article plan for adding a new APN to the baseline COSA database that ships with Windows desktop devices, or to update an existing APN.
-ms.date: 11/07/2023
+ms.date: 11/29/2023
 ---
 
 # Planning your desktop COSA database submission
@@ -25,30 +25,18 @@ The COSA connectivity database is updated by using Windows Update. The figure be
 
 ## Use the Microsoft mobile operator portal
 
-The Microsoft mobile operator portal (MOP) is a web-based tool that allows Mobile Operators (MOs) to submit APN updates to Microsoft. The MOP is used to submit APN updates for the COSA database. The MOP is also used to submit APN updates for Windows 8, Windows 8.1, and versions of Windows 10 before Windows 10, version 1703. For more information about the MOP, see [Microsoft mobile operator portal](https://aka.ms/moconfig).
+The Microsoft mobile operator configuration portal (MOCP) is a web-based tool that allows Mobile Operators (MOs) to submit APN updates to Microsoft. The MOCP is used to submit APN updates for the COSA database. For more information about the MOCP, see the [Microsoft mobile operator configuration portal](https://aka.ms/moconfig).
 
-For more information about the mobile operator portal, see the [Mobile operator portal guide](mobile-operator-portal-guide.md).
+For more information about the mobile operator portal, see the [Mobile operator configuration portal guide](mobile-operator-configuration-portal-guide.md).
 
-## Complete the APN/COSA update spreadsheet
+### COSA database considerations
 
-The APN update spreadsheet is used to gather the required information so Microsoft can update the COSA or the APN database appropriately. This spreadsheet is included in your submission request to Microsoft. MOs should send all information to target all devices to Microsoft when submitting an APN update, if applicable.
-
-Use the following link to download the latest APN update spreadsheet: <https://go.microsoft.com/fwlink/p/?linkid=851213>
-
-For more info about the settings in the COSA database, see [Desktop COSA database settings](desktop-cosa-database-settings.md).
-
-## Considerations when completing the spreadsheet
-
-### APN database considerations
-
-Note the following only when submitting an APN update using apndatabase.xml, for Windows 8, Windows 8.1, or versions of Windows 10 before Windows 10, version 1703.
-
-- The operator identification data is stored in the APN database as encoded Hardware IDs.
+- The operator identification data is stored in the COSA database as encoded Hardware IDs.
   - For GSM networks, you can have a separate database entry for each unique combination of MCC/MNC pair. If you are a Mobile Virtual Network Operator (MVNO) and do not have a unique MCC/MNC pair, you can specify one or more ranges of IMSIs or SIM ICC IDs currently leased from a Mobile Network Operator (MNO).
   - For CDMA networks, you can have a new database entry for each Provider ID (also called a SID) or Provider Name.
   - Certificate information for account provisioning metadata includes **Cert Issuer Name** and **Cert Subject Name** and is used to verify that account provisioning provided by a purchase website comes from the an authorized web service. If the certificate information stored here matches what the purchase website presents, Windows will allow that website to push network-specific configuration information to the PC.
 
-- When submitting an APN database update using apndatabase.xml, the following values must be included:
+- When submitting a COSA database update, the following values must be included:
   - A CDMA Provider name
   - A CDMA Provider ID (SID)
 
@@ -60,33 +48,29 @@ Note the following only when submitting an APN update using apndatabase.xml, for
 
   If you don’t provide an auto-connect order, Windows will ask the user to choose an APN, which could introduce user error. We recommend that the auto-connect order be specified. In this case, the user sees the **Friendly Name** of the APN in Windows Connection Manager.
 
-### APN database and COSA considerations
-
-Note the following for both COSA and APN database.
-
 - Changes provided by the OEM will take precedence over the default COSA database included in Windows.
 
-- The **Country/Region** and the **Operator** entries in the spreadsheet are used to determine whether this is an update to an existing APN or a request for a new APN. If the **Country/Region** and the **Operator** fields match content that already exists in the APN database, the entries will be deleted and replaced with the entries that you list in your spreadsheet.
+- The **Country/Region** and the **Operator** entries in the spreadsheet are used to determine whether this is an update to an existing APN or a request for a new APN. If the **Country/Region** and the **Operator** fields match content that already exists in the COSA database, the entries will be deleted and replaced with the entries that you list in the MOCP.
 
-    >[!NOTE]
-    >Because the previous entries will be deleted, it is important to list all APNs for the **Operator** and **Country/Region** combination, including the ones that are not changing.
+    > [!NOTE]
+    > Because the previous entries will be deleted, it is important to list all APNs for the **Operator** and **Country/Region** combination, including the ones that are not changing.
 
-    For example, when the following values are entered in a row in the spreadsheet:
+    For example, when the following values are entered in the MOCP:
 
     ```syntax
      Operator: Contoso
      Country/Region: Argentina
     ```
 
-    All entries currently in the COSA connectivity database that match the following format will be deleted and replaced with the row in your spreadsheet for that **Operator** and **Country/Region** combination:
+    All entries currently in the COSA connectivity database that match the following format will be deleted and replaced with data for that **Operator** and **Country/Region** combination:
 
     ```syntax
     <Operator name="Contoso (Argentina)">
     ```
 
-- If the **Operator** and **Country/Region** entries do not match content that already exists in COSA or the APN database, a new APN is created.
+- If the **Operator** and **Country/Region** entries do not match content that already exists in the COSA database, a new APN is created.
 
-    For example, if the following values are entered in a row in the spreadsheet:
+    For example, if the following values are entered in the MOCP:
 
     ```syntax
     Operator: Contoso
@@ -99,7 +83,7 @@ Note the following for both COSA and APN database.
     <Operator name="Contoso (Argentina)">
     ```
 
-- On each row of the spreadsheet that is submitted, you must specify only one of the following:
+- In the mobile operator configuration portal, you must specify only one of the following:
 
   - An MCC+MNC with a blank IMSI range
   - An MCC+MNC with a specific IMSI range
@@ -116,10 +100,10 @@ Note the following for both COSA and APN database.
   - For GSM networks, an APN with a specified **User Name** and **Password** used to connect to the Internet.
   - For CDMA networks, a Network Access Identifier (NAI) is used to connect to the Internet.
 
-Once your spreadsheet is complete, you can test the APNs you’ve entered. For the next steps in testing your APN update, see [Testing your desktop COSA database submission](testing-your-desktop-cosa-database-submission.md).
+For the next steps in testing your APN update, see [Testing your desktop COSA database submission](testing-your-desktop-cosa-database-submission.md).
 
 ## Related articles
 
-- [Microsoft mobile operator portal](https://aka.ms/moconfig)
+- [Microsoft mobile operator configuration portal](https://aka.ms/moconfig)
 - [Testing your desktop COSA database submission](testing-your-desktop-cosa-database-submission.md)
 - [Submitting a desktop COSA database update](submitting-a-desktop-cosa-database-update.md)
