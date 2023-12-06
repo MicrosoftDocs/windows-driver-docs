@@ -27,9 +27,7 @@ For supporting USB Type-C connectors, see [Type-C driver reference](/windows-har
 
 ## Microsoft-provided USB device class drivers
 
-Microsoft provides drivers for several USB device classes approved by USB-IF. The drivers and their installation files are included in Windows. They're available in the \\Windows\\System32\\DriverStore\\FileRepository folder.
-
-See, [USB device class drivers included in Windows](supported-usb-classes.md).
+Microsoft provides drivers for several USB device classes approved by USB-IF. The drivers and their installation files are included in Windows. They're available in the \\Windows\\System32\\DriverStore\\FileRepository folder. For more information, see [USB device class drivers included in Windows](supported-usb-classes.md).
 
 ## See also
 
