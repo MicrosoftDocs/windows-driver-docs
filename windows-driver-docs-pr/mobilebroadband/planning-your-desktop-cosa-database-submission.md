@@ -1,7 +1,7 @@
 ---
 title: Planning your desktop COSA database submission
 description: Use this article plan for adding a new APN to the baseline COSA database that ships with Windows desktop devices, or to update an existing APN.
-ms.date: 11/29/2023
+ms.date: 12/06/2023
 ---
 
 # Planning your desktop COSA database submission
@@ -25,7 +25,7 @@ The COSA connectivity database is updated by using Windows Update. The figure be
 
 ## Use the Microsoft mobile operator portal
 
-The Microsoft mobile operator configuration portal (MOCP) is a web-based tool that allows Mobile Operators (MOs) to submit APN updates to Microsoft. The MOCP is used to submit APN updates for the COSA database. For more information about the MOCP, see the [Microsoft mobile operator configuration portal](https://aka.ms/moconfig).
+The Microsoft mobile operator configuration portal (MOCP) is a web-based tool that allows mobile operators (MOs) to submit APN updates to Microsoft. The MOCP is used to submit APN updates for the COSA database. For more information about the MOCP, see the [Microsoft mobile operator configuration portal](https://aka.ms/moconfig).
 
 For more information about the mobile operator portal, see the [Mobile operator configuration portal guide](mobile-operator-configuration-portal-guide.md).
 
@@ -46,7 +46,7 @@ For more information about the mobile operator portal, see the [Mobile operator 
 
   For example, if Contoso had four APNs for MCC+MNC value 100 101, it would list each APN entry in a new row in the spreadsheet and number the auto-connect order starting with 1 up to 4 for each of those four entries because they share the same IMSI range. If Contoso had another set of APNs for MCC+MNC value 100 102, it should start the auto-connect ordering at 1 for that set of APNs.
 
-  If you don’t provide an auto-connect order, Windows will ask the user to choose an APN, which could introduce user error. We recommend that the auto-connect order be specified. In this case, the user sees the **Friendly Name** of the APN in Windows Connection Manager.
+  If you don't provide an auto-connect order, Windows will ask the user to choose an APN, which could introduce user error. We recommend that the auto-connect order be specified. In this case, the user sees the **Friendly Name** of the APN in Windows Connection Manager.
 
 - Changes provided by the OEM will take precedence over the default COSA database included in Windows.
 

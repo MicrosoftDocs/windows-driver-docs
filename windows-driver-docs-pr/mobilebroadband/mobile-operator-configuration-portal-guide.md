@@ -3,7 +3,7 @@ title: Microsoft mobile operator configuration portal guide
 description: This article introduces the mobile operator configuration portal to create a COSA database submission.
 author: mhopkins-msft
 ms.author: mhopkins
-ms.date: 11/07/2023
+ms.date: 12/06/2023
 ---
 
 # Microsoft mobile operator configuration portal guide
@@ -18,14 +18,14 @@ If you don't yet have a mobile operator configuration portal account, follow the
 
 1. Navigate to the [Microsoft mobile operator configuration portal](https://aka.ms/moconfig) (MO portal).
 1. Select **Sign up now** below the **Sign in** button.
-    :::image type="content" source="images/mo-portal-sign-in.png" alt-text="Screenshot of the sign-in screen on the Microsoft Mobile Operator portal.":::
+    :::image type="content" source="images/mo-portal-sign-in.png" alt-text="Screenshot of the sign-in screen on the Microsoft mobile operator configuration portal.":::
 1. Enter your email address and select **Send verification code**.
-    :::image type="content" source="images/mo-portal-verify.png" alt-text="Screenshot of the create email verification screen on the Microsoft Mobile Operator portal.":::
+    :::image type="content" source="images/mo-portal-verify.png" alt-text="Screenshot of the create email verification screen on the Microsoft mobile operator configuration portal.":::
 1. After you receive the verification code in your email, enter it and select **Verify**.
 1. Enter a temporary password and select **Create** to send your request to the mobile operator configuration portal team.
-    :::image type="content" source="images/mo-portal-create-account.png" alt-text="Screenshot of the Microsoft Mobile Operator portal account creation page.":::
+    :::image type="content" source="images/mo-portal-create-account.png" alt-text="Screenshot of the Microsoft mobile operator configuration portal account creation page.":::
 1. Send an email to your Microsoft representative to get your account approved for portal access.
-    :::image type="content" source="images/mo-portal-account-queue.png" alt-text="Screenshot of the Microsoft Mobile Operator portal account creation queue message.":::
+    :::image type="content" source="images/mo-portal-account-queue.png" alt-text="Screenshot of the Microsoft mobile operator configuration portal account creation queue message.":::
 1. After getting confirmation from your Microsoft representative, navigate back to the [mobile operator configuration portal](https://aka.ms/moconfig) and select **Sign Up** again.
 1. Verify your email, then enter a new non-temporary password and select **Create**. This is your login password going forward.
 
