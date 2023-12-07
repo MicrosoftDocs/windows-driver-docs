@@ -11,11 +11,11 @@ keywords:
 - Windows display driver model WDK , about display driver model
 - miniport drivers WDK display
 - display miniport drivers WDK See miniport drivers WDK display
-ms.date: 03/20/2023
+ms.date: 12/06/2023
 ---
 
 # WDDM overview
 
-The Windows Display Driver Model (WDDM) is the graphics display driver architecture introduced in Windows Vista (WDDM 1.0). This design guide discusses WDDM requirements, specifications, and behavior for WDDM drivers.
+The Windows Display Driver Model (WDDM) is the graphics display driver architecture introduced in Windows Vista (WDDM 1.0). The articles within this node discuss WDDM requirements, specifications, and behavior for WDDM drivers.
 
 WDDM is required starting with Windows 8 (WDDM 1.2).
