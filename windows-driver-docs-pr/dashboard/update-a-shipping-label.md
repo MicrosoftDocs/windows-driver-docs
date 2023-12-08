@@ -27,7 +27,7 @@ The *productID*, *submissionID* and *shippingLabelID* in the method represent th
 
 | Header | Type | Description |
 |:--|:--|:--|
-| Authorization | String | Required. The Microsoft Entra Identity access token in the form **Bearer** \<token\>. |
+| Authorization | String | Required. The Microsoft Entra ID access token in the form **Bearer** \<token\>. |
 | Accept | String | Optional. Specifies the type of content. Allowed value is “application/json” |
 
 ### Request parameters
