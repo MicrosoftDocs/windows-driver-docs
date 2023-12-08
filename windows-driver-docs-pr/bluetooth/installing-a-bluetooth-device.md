@@ -6,7 +6,7 @@ keywords:
 - client-side profile drivers WDK Bluetooth
 - server-side profile drivers WDK Bluetooth
 - INF files WDK Bluetooth
-ms.date: 03/18/2022
+ms.date: 12/05/2023
 ---
 
 # Installing a Bluetooth device
@@ -24,23 +24,23 @@ These two installation types require different installation procedures.
 
 ## Installing a client-side profile driver
 
-A user that wants to use a Bluetooth-enabled device will bring the device within range of the computer and initiate a connection from the computer to the remote device using the following installation sequence for a client-side profile driver.
+A user that wants to use a Bluetooth-enabled device brings the device within range of the computer and initiates a connection from the computer to the remote device using the following installation sequence for a client-side profile driver.
 
 1. Select **Add a Bluetooth device** in **Control Panel** to find all devices within range of the computer.
 
 2. Select the device to pair with.
 
-3. Pair the device with the local radio. This may or may not involve a PIN exchange.
+3. Pair the device with the local radio, which might or might not involve a PIN exchange.
 
 4. The local radio issues an SDP inquiry to identify the services supported on the remote device.
 
 5. The **Found New Hardware Wizard** searches for appropriate drivers on the local hard disk drive, and on Windows Update.
 
-6. If the **Found New Hardware Wizard** does not find an appropriate driver for the device, it prompts the user to insert the profile driver installation media that contains the profile driver's device setup information file (INF file).
+6. If the **Found New Hardware Wizard** doesn't find an appropriate driver for the device, it prompts the user to insert the profile driver installation media that contains the profile driver's device setup information file (INF file).
 
 ## Installing a server-side profile driver
 
-The Bluetooth driver stack supports service GUIDs as defined by the Bluetooth SIG, as well as custom GUIDs (that is, GUIDs that are not defined by the Bluetooth SIG).
+The Bluetooth driver stack supports service GUIDs as defined by the Bluetooth SIG, and custom GUIDs not defined by the Bluetooth SIG.
 
 > [!NOTE]
 > The **guidgen.exe** tool provided with the Microsoft Windows SDK can be used to create custom GUIDs.
@@ -49,7 +49,7 @@ A user-mode installation application must be written to expose computer function
 
 The installation application must communicate with the Bluetooth driver stack to create a service GUID for the functionality to expose. Vendors specify the service GUID in the application and in their device installation INF file.
 
-The installation application must call the user-mode API [BluetoothSetLocalServiceInfo](/windows/win32/api/bluetoothapis/nf-bluetoothapis-bluetoothsetlocalserviceinfo). Before the application can call this API the application must have the SE\_LOAD\_DRIVER\_NAME security privilege. The following code example demonstrates how to obtain this privilege. **Note** that the example does not demonstrate error handling.
+The installation application must call the user-mode API [BluetoothSetLocalServiceInfo](/windows/win32/api/bluetoothapis/nf-bluetoothapis-bluetoothsetlocalserviceinfo). Before the application can call this API, the application must have the SE\_LOAD\_DRIVER\_NAME security privilege. The following code example demonstrates how to obtain this privilege. **Note** that the example doesn't demonstrate error handling.
 
 ```cpp
 HANDLE procToken;
@@ -69,7 +69,7 @@ AdjustTokenPrivileges(procToken, FALSE, &tp, sizeof(TOKEN_PRIVILEGES), (PTOKEN_P
 
 ## Profile driver INF file
 
-A profile driver's INF file contains information about a Bluetooth device for client-side installation. For a server-side installation, the INF file specifies a device ID that corresponds to the service GUID created by the installation application. All Bluetooth devices are members of the **Bluetooth** class. The Bluetooth class installer (*Bthci.dll*) assists in installing profile drivers.
+A profile driver's INF file contains information about a Bluetooth device for client-side installation. For a server-side installation, the INF file specifies a device ID that corresponds to the service GUID created by the installation application. All Bluetooth devices are members of the **Bluetooth** class. The Bluetooth class installer (*Bthci.dll*) helps with installing profile drivers.
 
 For more information about creating and distributing INF files and installing drivers, see [Creating an INF File](../install/overview-of-inf-files.md) and [INF File Sections and Directives](../install/index.md).
 
@@ -89,11 +89,11 @@ The Bluetooth driver stack generates compatible IDs according to the following t
 
 *ServiceGUID* is a 16-bit GUID expanded into a 128-bit GUID, as defined by the Bluetooth specification. For example, {00001124-0000-1000-8000-00805F9B34FB} corresponds to an HID device.
 
-- The 8 digits following *VID&* correspond to the vendor ID code.
+- The eight digits following *VID&* correspond to the vendor ID code.
 
-- The 4 digits following *PID&* correspond to the product ID code.
+- The four digits following *PID&* correspond to the product ID code.
 
-- The 4 digits following *LOCALMFG&* correspond to the manufacturer of the local Bluetooth radio.
+- The four digits following *LOCALMFG&* correspond to the manufacturer of the local Bluetooth radio.
 
 - The VID/PID and LOCALMFG tags are independent of each other.
 
