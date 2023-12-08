@@ -1,28 +1,24 @@
 ---
 title: Manufacturer override of monitor EDIDs
 description: Manufacturers can write an INF file to update or override the Extended Display Identification Data (EDID) of any monitor.
-ms.date: 07/14/2023
+ms.date: 12/06/2023
 ms.custom: contperf-fy21q3
 ---
 
 # Manufacturer override of monitor EDIDs
 
-This topic describes how vendors and manufacturers can override the Extended Display Identification Data (EDID) of any monitor through an INF file, and provides a sample INF file (*Monsamp.inf*).
+This article describes how vendors and manufacturers can override the Extended Display Identification Data (EDID) of any monitor through an INF file. A sample INF file (*Monsamp.inf*) is provided.
 
-For information on how to use and modify *Monsamp.inf*, see [Monitor INF File Sections](monitor-inf-file-sections.md).
+All monitors, analog or digital, must support EDID, which contains information such as the monitor identifier, manufacturer data, hardware identifier, timing info, and so on. This data is stored in the monitor's EEPROM in a format that [VESA](https://vesa.org/) specifies.
 
-## Approaches to correcting EDIDs
-
-All monitors, analog or digital, must support EDID, which contains information such as the monitor identifier, manufacturer data, hardware identifier, timing info, and so on. This data is stored in the monitor's EEPROM in a format that is specified by [VESA](https://vesa.org/).
-
-Monitors provide the EDID to Microsoft Windows components, display drivers, and some user-mode applications. For example, during initialization the monitor driver queries the Windows Display Driver Model (WDDM) driver for its brightness query interface and device driver interface (DDI) support, which is in the EDID. Incorrect or invalid EDID information on the monitor's EEPROM can therefore lead to problems such as setting incorrect display modes.
+Monitors provide the EDID to Windows components, display drivers, and some user-mode applications. For example, during initialization, the monitor driver queries the Windows Display Driver Model (WDDM) driver for its brightness query interface and device driver interface (DDI) support, which is in the EDID. Incorrect or invalid EDID information on the monitor's EEPROM can lead to problems such as setting incorrect display modes.
 
 There are two approaches to correcting EDIDs:
 
 - Have the customer send the monitor back to the manufacturer, who reflashes the EEPROM with the correct EDID and returns the monitor to the customer.
-- The better solution, described here, is for the manufacturer to implement an INF file that contains the correct EDID info, and have the customer download it to the computer that is connected to the monitor. Windows extracts the updated EDID information from the INF and provides it to components instead of using the EEPROM EDID information, effectively overriding the EEPROM EDID.
+- The better solution is for the manufacturer to implement an INF file that contains the correct EDID info, and have the customer download it to the computer that is connected to the monitor. Windows extracts the updated EDID information from the INF and provides it to components instead of using the EEPROM EDID information, effectively overriding the EEPROM EDID.
 
-In addition to replacing the EDID information, a vendor can provide an override for the monitor name and the preferred display resolution. Such an override is frequently made available to customers through Windows Update or digital media in the shipping box, and receives higher precedence than the EDID override mentioned here. Guidelines for achieving this can be found in [Monitor INF File Sections](monitor-inf-file-sections.md).
+In addition to replacing the EDID information, a vendor can provide an override for the monitor name and the preferred display resolution. Such an override is frequently made available to customers through Windows Update or digital media in the shipping box, and receives higher precedence than the EDID override mentioned here. For more information, see [Monitor INF File Sections](monitor-inf-file-sections.md).
 
 ## EDID format
 
@@ -37,9 +33,9 @@ Each block is numbered, starting with 0 for the initial block. To update EDID in
 
 To update an EDID by using an INF:
 
-1. The monitor manufacturer implements an INF that contains the updated EDID information and downloads the file to the user's computer. This can be done through Windows Update or by shipping a CD with the monitor.
+1. The monitor manufacturer implements an INF that contains the updated EDID information and downloads the file to the user's computer. This download can be done through Windows Update or by shipping a CD with the monitor.
 2. Device installation reads the updated EDID information from the INF and stores the information as values under the [hardware key](../install/opening-a-device-s-hardware-key.md) of the monitor device. Each EDID override is stored under a separate key under the hardware key of the device.
-3. The monitor driver checks the registry during initialization and uses any EDID information that's stored there instead of the corresponding information on EEPROM. EDID information that has been added to the registry always takes precedence over EEPROM EDID info.
+3. The monitor driver checks the registry during initialization and uses any EDID information stored there instead of the corresponding information on EEPROM. EDID information that is added to the registry always takes precedence over EEPROM EDID info.
 4. Windows components and user-mode apps use the updated EDID info.
 
 ## Overriding an EDID with an INF
@@ -68,6 +64,8 @@ HKR, EDID_OVERRIDE, 5, 1, 24, 5C, ..., 2D
 For more information on INFs in general, and **AddReg** and **DDInstall** in particular, see [Creating an INF File](../hid/creating-an-inf-file.md).
 
 ## Sample INF file: Monsamp.inf
+
+For information on how to use and modify *Monsamp.inf*, see [Monitor INF File Sections](monitor-inf-file-sections.md).
 
 ```inf
 ; monsamp.INF
