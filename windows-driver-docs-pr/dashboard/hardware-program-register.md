@@ -23,7 +23,7 @@ This article shows you how to register for the Microsoft Windows Hardware Develo
 
 - You must have an Extended Validation (EV) code signing certificate. Check whether your organization already has a code signing certificate. If your company already has a certificate, have the certificate available. If your organization doesn't have a certificate, you'll need to [purchase an EV certificate](code-signing-reqs.md#ev-certificate-signed-drivers).
 
-- You'll need to sign in with your organization’s Microsoft Entra Identity (Microsoft Entra Identity) [Global administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) account. If you don’t know whether your organization has an Microsoft Entra Identity directory, contact your IT department. If your organization doesn’t have an Microsoft Entra Identity directory, you'll be able to create one for free during the registration process'
+- You'll need to sign in with your organization’s Microsoft Entra ID (Microsoft Entra ID) [Global administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) account. If you don’t know whether your organization has an Microsoft Entra ID directory, contact your IT department. If your organization doesn’t have an Microsoft Entra ID directory, you'll be able to create one for free during the registration process'
 
 - You must have the authority to sign legal agreements on behalf of your organization.
 
@@ -37,11 +37,11 @@ To register for the Hardware Developer Program:
 
     :::image type="content" source="./images/hardware-program-register/registration-start.png" alt-text="Screenshot of the first page of the Hardware Developer Program registration process. The 'Next' button is selected.":::
 
-1. If your organization has an Microsoft Entra Identity global administrator account, select **Sign in to Microsoft Entra Identity**. If your organization doesn't have an Microsoft Entra Identity directory, select **Create a new directory for free**. Follow the directions to create an account and sign in with your new global administrator user name and password.
+1. If your organization has an Microsoft Entra ID global administrator account, select **Sign in to Microsoft Entra ID**. If your organization doesn't have an Microsoft Entra ID directory, select **Create a new directory for free**. Follow the directions to create an account and sign in with your new global administrator user name and password.
 
-    :::image type="content" source="./images/hardware-program-register/registration-work-account.png" alt-text="Screenshot of the Microsoft Entra Identity page of the Hardware Developer Program registration process. The 'Sign in to Microsoft Entra Identity' button is selected.":::
+    :::image type="content" source="./images/hardware-program-register/registration-work-account.png" alt-text="Screenshot of the Microsoft Entra ID page of the Hardware Developer Program registration process. The 'Sign in to Microsoft Entra ID' button is selected.":::
 
-1. Now that you've signed in to Microsoft Entra Identity, select the country or region where you live or where your business is located.
+1. Now that you've signed in to Microsoft Entra ID, select the country or region where you live or where your business is located.
 
     :::image type="content" source="./images/hardware-program-register/registration-select-country.png" alt-text="Screenshot of the Account country page of the Hardware Developer Program registration process. ":::
 
@@ -63,7 +63,7 @@ To register for the Hardware Developer Program:
 1. Now you'll need to sign and upload your file. Follow the steps as directed on the **Registration - Sign and upload your file** page.
 
     > [!NOTE]
-    > You can sign the signable file with your certificate offline and return later to upload it. When you return, be sure to sign in with your Microsoft Entra Identity global administrator account to resume the process.
+    > You can sign the signable file with your certificate offline and return later to upload it. When you return, be sure to sign in with your Microsoft Entra ID global administrator account to resume the process.
 
 1. After you've uploaded your file, select **Next** at the bottom of the page.
 

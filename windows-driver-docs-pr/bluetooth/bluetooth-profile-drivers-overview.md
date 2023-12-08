@@ -1,38 +1,33 @@
 ---
 title: Introduction to Bluetooth profile drivers
-description: Introduction to Bluetooth profile drivers
+description: This article also provides guidelines on how to develop Bluetooth profile drivers for your Bluetooth-enabled device.
 keywords:
 - Bluetooth WDK , about Bluetooth
 - remote connections WDK Bluetooth
 - connections WDK Bluetooth
-ms.date: 10/06/2022
+ms.date: 12/08/2023
 ---
 
 # Introduction to Bluetooth profile drivers
 
-This section describes the support that Microsoft provides for the wireless Bluetooth protocol. Bluetooth is an industry standard protocol that enables wireless connectivity for a variety of devices including computers, mobile phones, handheld devices, mouse devices, keyboards, and printers. This section also provides guidelines on how to develop Bluetooth profile drivers for your Bluetooth-enabled device. Details of the Bluetooth protocol are available on the [Bluetooth](https://go.microsoft.com/fwlink/p/?linkid=26268) website.
+This article describes the support that Microsoft provides for the wireless Bluetooth protocol. Bluetooth is an industry standard protocol that enables wireless connectivity for various devices including computers, mobile phones, handheld devices, mouse devices, keyboards, and printers. This article also provides guidelines on how to develop Bluetooth profile drivers for your Bluetooth-enabled device. Details of the Bluetooth protocol are available on the [Bluetooth](https://www.bluetooth.com/) website.
 
-Microsoft provides support for the Bluetooth protocol in Microsoft Windows XP with Service Pack 2 (SP2) and later. Bluetooth drivers, known as profile drivers, are written by independent hardware vendors (IHVs) to support various protocols defined in the Bluetooth specifications. Profile drivers should follow the Windows Driver Model (WDM) architecture.
+Independent hardware vendors (IHVs) write Bluetooth profile drivers to support various protocols defined in the Bluetooth specifications. Bluetooth profile drivers should follow the Windows Driver Model (WDM) architecture.
 
 To support the Bluetooth protocol, Microsoft supplies several drivers and support files, including:
 
 - *BthPort.sys*
-
 - *BthEnum.sys*
-
 - *BthUsb.sys*
-
 - *BthProps.cpl*
-
-IHVs must use Windows Vista or later to develop their profile drivers because earlier versions of Windows, including Windows XP with SP2, do not support profile driver development.
 
 The Bluetooth driver stack provides device driver interfaces (DDIs) that enable profile drivers to access Synchronous Connection-Oriented (SCO) links and Logical Link Controller and Adaptation Protocol (L2CAP) links between the local system and remote Bluetooth devices.
 
 ## SCO
 
-Synchronous connection-oriented (SCO) links are point-to-point connections between two Bluetooth devices. They are defined primarily to support time-bounded information like voice.
+Synchronous connection-oriented (SCO) links are point-to-point connections between two Bluetooth devices. They're defined primarily to support time-bounded information like voice.
 
-The Windows Vista Bluetooth driver stack has been enhanced to provide SCO kernel-mode DDIs. By using these interfaces, profile drivers can use the SCO DDIs to open, update, and close SCO connections, as well as perform read and write operations over an open SCO connection.
+The Windows Bluetooth driver stack provides SCO kernel-mode device driver interfaces (DDIs). By using these interfaces, profile drivers can use the SCO DDIs to open, update, and close SCO connections, as well as perform read and write operations over an open SCO connection.
 
 For more information about SCO, see [Creating a SCO Client Connection to a Remote Device](creating-a-sco-client-connection-to-a-remote-device.md) and [Accepting SCO Connections in a Bluetooth Profile Driver](accepting-sco-connections-in-a-bluetooth-profile-driver.md).
 

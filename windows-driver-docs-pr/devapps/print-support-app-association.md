@@ -1,7 +1,7 @@
 ---
 title: Print support app association
 description: Provides guidance and examples for associating a print support app with a printer.
-ms.date: 06/12/2023
+ms.date: 12/06/2023
 ---
 
 # Print support app association
@@ -17,7 +17,7 @@ This article discusses the following tasks:
 
 - Prepare a psa.inf extension INF file
 
-- Install the psa.inf extension INF file on a Windows 10 PC
+- Install the psa.inf extension INF file on a Windows 11 PC
 
 - PSA association override for enterprise and business customers
 
@@ -27,19 +27,31 @@ This article discusses the following tasks:
 
 A print support app (PSA) is associated with a printer queue, using a Hardware Id or a Compatible Id.
 
-To find out the Hardware Id and Compatible Id for your printer, follow these steps:
+To find the Hardware Id and Compatible Id for your printer, follow these steps:
 
-1. Connect an IPP printer to the Windows 10 PC.
+1. Connect the IPP printer to the Windows 11 PC.
 
-1. From **Control Panel**, select **View Devices and Printers**.
+1. In the Windows 11 Settings app, select **Bluetooth & devices**.
 
-1. Right-click on your printer and select **Properties** from the context menu.
+1. On the **Bluetooth & devices** page, select **Printers & scanners**.
 
-1. On the **Hardware** tab, select **Microsoft IPP Class Driver** in the list of **Device Functions** and select the **Properties** button.
+1. Select the IPP printer.
 
-1. In the **Properties** dialog, select **Details**, then select **Hardware Ids** (or Compatible Id).
+1. On the IPP printer page, select **Hardware properties**.
 
-1. Copy the Hardware Id string (it starts with "PSA\_"). You need this for extension INF, or alternatively, the Compatible Id (which doesn't start with "PSA\_").
+1. In the printer hardware properties dialog, select the **Settings** tab.
+
+1. Click **Devices and Printers Folder**.
+
+1. Right-click on the IPP printer and select **Properties** from the context menu.
+
+1. On the **Hardware** tab, select **Microsoft IPP Class Driver** in the list of **Device Functions** and then click the **Properties** button.
+
+1. In the **Microsoft IPP Class Driver Properties** dialog, select the **Details** tab.
+
+1. In the **Property** drop-down list, select **Hardware Ids** (or Compatible Id).
+
+1. Copy the Hardware Id string (it starts with "PSA_") in the Value list. You need this for extension INF, or alternatively, the Compatible Id (which doesn't start with "PSA_").
 
 ### Prepare the PSA extension INF file
 
@@ -103,7 +115,7 @@ PrinterHardwareId2 = "PSA_XeroxAltaLink_B8055C036"
 PrinterHardwareId3 = "PSA_BrotherMFC-J775DWF678"
 ```
 
-### Test install extension INF on Windows 10
+### Test install extension INF on Windows 11
 
 1. Import your root certificate to the trusted store, if you used a self-signed certificate to sign the .cat file.
 
@@ -157,15 +169,27 @@ You can associate PSA with printers that natively support Universal Print.
 > [!IMPORTANT]
 > Printers using [Universal Print Connector](/universal-print/fundamentals/universal-print-connector-overview#:~:text=The%20Universal%20Print%20connector%20is%20a%20component%20that,use%20a%20connector.%20Connect%20printers%20to%20Universal%20Print) are not supported by Microsoft for use with PSA. However, in some instances, printers using Universal Print Connector may be supported by the original equipment manufacturer ("OEM") that provides the PSA and printer hardware.  Please check with your OEM.  The OEM, and not Microsoft, will be responsible for issues related to this OEM enablement and support.
 
-You can find the Hardware Id of a Universal Print printer in **Control Panel**, similar to a local IPP printer:
+You can find the Hardware Id of a Universal Print printer in the Windows 11 Settings app, similar to a local IPP printer:
 
-1. From **Control Panel**, select **View Devices and Printers**.
+1. In the Windows 11 Settings app, select **Bluetooth & devices**.
+
+1. On the **Bluetooth & devices** page, select **Printers & scanners**.
+
+1. Select the Universal Print printer.
+
+1. On the Universal Print printer page, select **Hardware properties**.
+
+1. In the printer hardware properties dialog, select the **Settings** tab.
+
+1. Click **Devices and Printers Folder**.
 
 1. Right-click on your printer and select **Properties** from the context menu.
 
-1. On the **Hardware** tab, select **Universal Print Class Driver** in the list of **Device Functions** and select the **Properties** button.
+1. On the **Hardware** tab, select **Universal Print Class Driver** in the list of **Device Functions** and then click the **Properties** button.
 
-1. In the **Properties** dialog, select **Details**, then select **Hardware Ids**.
+1. In the properties dialog, select the **Details** tab.
+
+1. In the **Property** drop-down list, select **Hardware Ids**.
 
 The Hardware Id is the printer-device-id IPP attribute from the printer.
 

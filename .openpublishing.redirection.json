@@ -372,7 +372,7 @@
         },
         {
             "source_path": "windows-driver-docs-pr/bluetooth/testing-BTP-setup.md",
-            "redirect_URL": "/windows-hardware/drivers/bluetooth/testing-BTP-Overview.md",
+            "redirect_URL": "/windows-hardware/drivers/bluetooth/testing-BTP-Overview",
             "redirect_document_id": false
         },
         {
@@ -383,6 +383,11 @@
         {
             "source_path": "windows-driver-docs-pr/bluetooth/bluetooth-low-energy-functions.md",
             "redirect_URL": "/windows/win32/api/_bltooth/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/bluetooth/universal-bluetooth-driver-model-for-windows-10.md",
+            "redirect_URL": "/windows-hardware/drivers/bluetooth/bluetooth-driver-model-for-windows",
             "redirect_document_id": false
         },
         {
