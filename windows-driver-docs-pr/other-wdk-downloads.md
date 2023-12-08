@@ -5,7 +5,7 @@ keywords:
 - Windows Driver Kit
 - previous versions
 - WDK
-ms.date: 10/24/2023
+ms.date: 12/8/2023
 ---
 
 # Other WDK downloads
@@ -16,32 +16,32 @@ Enterprise WDK (EWDK), and additional downloads for support purposes. To develop
 use the latest public versions of the Windows Driver Kit (WDK) and tools, available for
 download on [Download the Windows Driver Kit (WDK)](./download-the-wdk.md).
 
-To use these earlier versions, you must *first* install the version of
-Visual Studio that is appropriate for your targeted platform.
+To use these earlier versions of WDK, you must *first* install the version of
+Visual Studio and Software Development Kit (SDK) that is appropriate for your targeted platform.
 
 ## Runtime requirements
 
-Starting with the Windows 11, version 22H2 release of the WDK and EWDK, the kits support:
+Starting with the Windows 11, version TBD release of the WDK and EWDK, the kits support:
 
 * Visual Studio 2022 exclusively
 * Building and testing kernel-mode drivers for x64 and Arm64
-* Building and testing drivers for Windows 10, Windows Server 2016 and later client and server versions
+* Building and testing drivers for Windows 11 TBD, Windows Server 2022, and later client and server versions
 * Side by side (SxS) support with previous WDK/EWDK
 
-Multiple WDKs and EWDKs can be installed concurrently on the same computer and even be part of the same build system. You can run the Windows 11, version 22H2 WDK on Windows 7 and later.
+Multiple WDKs and EWDKs can be installed concurrently on the same computer and even be part of the same build system. You can run the Windows 11, version TBD WDK on Windows 7 and later.
 
-To target Windows 8.1, Windows 8, and Windows 7, install an older WDK (Windows 11, version 21H2 and previous) and an older version of Visual Studio either on the same machine or on a separate machine. For links to older kits, see the table below.
+To target Windows 11, Version 23H2, and previous versions of Windows, install a matching version of WDK and Visual Studio either on the same machine or on a separate machine. For links to older kits, see the table below.
 
-Certain device-specific stacks (for example graphics) continue to have x86/ARM32 user-mode components to support x86/ARM32 apps.
+Certain device-specific stacks (for example graphics) continue to have x86 user-mode components to support x86 apps.
 
 Additionally, starting with Windows 11, version 22H2 release of the WDK and EWDK, WDF redistributable co-installers are no longer supported. To learn how to work around this change, see [WDK Known Issues](./wdk-known-issues.md).
 
-You can run the Windows 11, version 21H2 WDK (including the WDK for Windows Server 2022) on Windows 7 and later, to develop drivers for the following operating systems:
+You can run Windows 11, version 23H2 WDK (including the WDK for Windows Server 2022) on Windows 7 and later, to develop drivers for the following operating systems:
 
 |Client OS|Server OS|
 |-|-|
-|Windows 11, version 21H2|Windows Server 2022|
-|Windows 10|Windows Server 2019, Windows Server 2016|
+|Windows 11, version 23H2<br/>Windows 11, version 22H2<br/>Windows 11, version 21H2|Windows Server 2022|
+|Windows 10 versions|Windows Server 2019, Windows Server 2016|
 |Windows 8.1|Windows Server 2012 R2|
 Windows 8|Windows Server 2012|
 Windows 7|Windows Server 2008 R2 SP1|
@@ -55,21 +55,21 @@ The following table indicates which Visual Studio version is required for the di
 
 | Targeted versions of Windows      | Edition(s) of Visual Studio            |
 |--------------------------|----------------------------------------|
-|Windows 11, version 22H2| [Visual Studio Community 2022](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=17) <br/> [Visual Studio Professional 2022](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=17) <br/> [Visual Studio Enterprise 2022](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=17)
+|Windows 11, version 22H2<br/>Windows 11, version 23H2| [Visual Studio Community 2022](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=17) <br/> [Visual Studio Professional 2022](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=17) <br/> [Visual Studio Enterprise 2022](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=17)
 |Windows 11, version 21H2<br/>Windows Server 2022 <br/>Windows 10, version 2004 <br/>Windows 10, version 1903|[Visual Studio Community 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=16) <br/>[Visual Studio Professional 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=16) <br/>[Visual Studio Enterprise 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=16)|
 | Windows 10, version 1809 <br/>Windows 10, version 1803 <br/>Windows 10, version 1709 | [Visual Studio Community 2017](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15) <br/>[Visual Studio Professional 2017](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15) <br/>[Visual Studio Enterprise 2017](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15) |
 | Windows 10, version 1703 <br/>Windows 10, version 1607 | [Visual Studio Express 2015 for Desktop](https://go.microsoft.com/fwlink/?linkid=875331) <br/>[Visual Studio Community 2015](https://go.microsoft.com/fwlink/p/?LinkId=534599) <br/>[Visual Studio Professional 2015](https://go.microsoft.com/fwlink/p/?LinkId=619628) <br/>[Visual Studio Enterprise 2015](https://go.microsoft.com/fwlink/p/?LinkId=619629) |
 | Windows 8.1 Update <br/>Windows 8.1 | [Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=875331) |
 | Windows 8                | [Visual Studio Professional 2012](https://go.microsoft.com/fwlink/p/?LinkID=255976) <br/>[Visual Studio Ultimate 2012](https://go.microsoft.com/fwlink/p/?LinkID=255982) |
 
-### Configure Visual Studio for Windows 11, version 22H2, version 21H2 and Windows 10, versions 1709, 1803, 1809, 1903, 2004, and Windows Server 2022
+### Configure Visual Studio for Windows 11, version 24H2, 23H2, 22H2, 21H2 and Windows 10, versions 1709, 1803, 1809, 1903, 2004, and Windows Server 2022
 
 When you install Visual Studio, select the **Desktop development with
 C++** workload. The Windows 11 Software Development Kit (SDK) is
 automatically included and is displayed in the right-hand **Summary**
 pane.
 
-To develop drivers for Arm/Arm64, choose **Individual components** and
+To develop drivers for ARM64/ARM64EC, choose **Individual components** and
 under **Compilers, build tools, and runtimes** select **Visual C++
 compilers and libraries for Arm/Arm64**.
 
