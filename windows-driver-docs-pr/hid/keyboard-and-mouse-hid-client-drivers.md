@@ -1,6 +1,6 @@
 ---
 title: Keyboard and mouse HID client drivers
-description: Keyboard and mouse HID client drivers. 
+description: Keyboards and mice represent the first set of HID clients that were standardized in the HID usage tables and implemented in Windows operating systems.
 keywords:
 - HID keyboard driver
 - keyboard drivers, HID
@@ -8,7 +8,7 @@ keywords:
 - HID mouse driver
 - mouse drivers, HID
 - HID mouse driver for Windows
-ms.date: 03/18/2022
+ms.date: 12/07/2023
 ---
 
 # Keyboard and mouse HID client drivers
@@ -19,7 +19,7 @@ ms.date: 03/18/2022
 > - [Mouse, touchpad, and keyboard problems in Windows](https://support.microsoft.com/help/17417/windows-mouse-touchpad-keyboard-problems)
 > - [Troubleshoot a wireless mouse that does not function correctly](https://support.microsoft.com/help/321122/troubleshoot-a-wireless-mouse-that-does-not-function-correctly)
 
-This topic discusses keyboard and mouse HID client drivers. Keyboards and mice represent the first set of HID clients that were standardized in the HID Usage tables and implemented in Windows operating systems.
+This article discusses keyboard and mouse HID client drivers. Keyboards and mice represent the first set of HID clients that were standardized in the HID usage tables and implemented in Windows operating systems.
 
 Keyboard and mouse HID client drivers are implemented in the form of HID Mapper Drivers. A HID mapper driver is a kernel-mode WDM filter driver that provides a bidirectional interface for I/O requests between a non-HID Class driver and the HID class driver. The mapper driver maps the I/O requests and data protocols of one to the other.
 
@@ -29,52 +29,52 @@ Windows provides system-supplied HID mapper drivers for HID keyboard, and HID mi
 
 The following figure illustrates the system-supplied driver stacks for USB keyboard, mouse, and touchpad devices.
 
-![keyboard and mouse driver stack diagram, showing the hid class mapper drivers for keyboards and mice, along with the keyboard and mouse class drivers.](images/keyboard-driver-stack.png)
+:::image type="content" source="images/keyboard-driver-stack.png" alt-text="Diagram of the keyboard and mouse driver stack showing the HID class mapper drivers for keyboards and mice.":::
 
-The figure above includes the following components:
+The figure shows the following components:
 
-- **KBDHID.sys**: HID client mapper driver for keyboards. Converts HID usages into scancodes to interface with the existing keyboard class driver.
+- **KBDHID.sys**: HID client mapper driver for keyboards. Converts HID usages into scan codes to interface with the existing keyboard class driver.
 - **MOUHID.sys**: HID client mapper driver for mice/touchpads. Converts HID usages into mouse commands (X/Y, buttons, wheel) to interface with the existing keyboard class driver.
-- **KBDCLASS.sys**: The [keyboard class driver](keyboard-and-mouse-class-drivers.md) maintains functionality for all keyboards and keypads on the system in a secure manner.
-- **MOUCLASS.sys**: The [mouse class driver](keyboard-and-mouse-class-drivers.md) maintains functionality for all mice / touchpads on the system. The driver does support both absolute and relative pointing devices. This is not the driver for touchscreens as that is managed by a different driver in Windows.
-- **HIDCLASS.sys**: The [HID class driver](hid-architecture.md#the-hid-class-driver). The HID Class driver is the glue between KBDHID.sys and MOUHID.sys HID clients and various transports (USB, Bluetooth, etc).
+- **KBDCLASS.sys**: The [keyboard class driver](keyboard-and-mouse-class-drivers.md) provides functionality for all keyboards and keypads on the system in a secure manner.
+- **MOUCLASS.sys**: The [mouse class driver](keyboard-and-mouse-class-drivers.md) provides functionality for all mice and touchpads on the system. The driver supports both absolute and relative pointing devices. MOUCLASS.sys isn't the Windows driver for touchscreens.
+- **HIDCLASS.sys**: The [HID class driver](hid-architecture.md#the-hid-class-driver). The HID Class driver is the glue between KBDHID.sys and MOUHID.sys HID clients and various transports, such as USB, Bluetooth, and so on.
 
 The system builds the driver stack as follows:
 
-- The transport stack creates a physical device object (PDO) for each HID device attached and loads the appropriate HID transport driver which in turn loads the HID Class Driver.
-- The HID class driver creates a PDO for each keyboard or mouse TLC. Complex HID devices (more than 1 TLC) are exposed as multiple PDOs created by HID class driver. For example, a keyboard with an integrated mouse might have one collection for the standard keyboard controls and a different collection for the mouse.
-- The keyboard or mouse hid client mapper drivers are loaded on the appropriate FDO.
+- The transport stack creates a physical device object (PDO) for each HID device attached and loads the appropriate HID transport driver, which in turn loads the HID Class Driver.
+- The HID class driver creates a PDO for each keyboard or mouse TLC. Complex HID devices (more than one TLC) are exposed as multiple PDOs created by HID class driver. For example, a keyboard with an integrated mouse might have one collection for the standard keyboard controls and a different collection for the mouse.
+- The keyboard or mouse HID client mapper drivers are loaded on the appropriate FDO.
 - The HID mapper drivers create FDOs for keyboard and mouse, and load the class drivers.
 
-### Important notes:
+### Important notes
 
-- Vendor drivers are not required for keyboards and mice that are compliant with the supported HID Usages and top level collections.
-- Vendors may optionally provide filter drivers in the HID stack to alter/enhance the functionality of these specific TLC.
-- Vendors should create separate TLCs, that are vendor specific, to exchange vendor proprietary data between their hid client and the device. Avoid using filter drivers unless critical.
+- Vendor drivers aren't required for keyboards and mice that are compliant with the supported HID Usages and top level collections.
+- Vendors optionally provide filter drivers in the HID stack to alter/enhance the functionality of these specific TLC.
+- Vendors should create separate, vendor specific, TLCs to exchange proprietary data between their HID client and the device. Avoid using filter drivers unless critical.
 - The system opens all keyboard and mouse collections for its exclusive use.
 - The system prevents disable/enabling a keyboard.
 - The system provides support for horizontal/vertical wheels with smooth scrolling capabilities.
 
 ## Driver Guidance
 
-Microsoft provides the following guidance for IHVs writing drivers:
+Microsoft provides this guidance for IHVs writing drivers:
 
-1. Driver developers are allowed to add additional drivers in the form of a filter driver or a new HID Client driver. The criteria are described below:
-    1. Filters drivers: Driver developers should ensure that their value-add driver is a filter driver and does not replace (or be used in place of) existing Windows HID drivers in the input stack.
-        - Filter drivers are allowed in the following scenarios:
+1. Driver developers are allowed to add more drivers in the form of a filter driver or a new HID client driver.
+    1. Filters drivers: Driver developers should ensure that their value-add driver is a filter driver and doesn't replace (or be used in place of) existing Windows HID drivers in the input stack.
+        - Filter drivers are allowed in these scenarios:
             - As an upper filter to kbdhid/mouhid
             - As an upper filter to kbdclass/mouclass
-        - Filter drivers are _not_ recommended as a filter between HIDCLASS and HID Transport minidriver
+        - Filter drivers *aren't* recommended as a filter between HIDCLASS and HID transport minidrivers
 
     1. Function drivers: Alternatively vendors can create a function driver (instead of a filter driver) but only for vendor specific HID PDOs (with a user mode service if necessary).
 
-        Function drivers are allowed in the following scenarios:
+        Function drivers are allowed in these scenarios:
 
         - Only load on the specific vendor's hardware
 
-    1. Transport drivers: Windows team does not recommend creating additional HID Transport minidriver as they are complex drivers to write/maintain. If a partner is creating a new HID Transport minidriver, especially on SoC systems, we recommend a detailed architectural review to understand the reasoning and ensure that the driver is developed correctly.
+    1. Transport drivers: Windows team doesn't recommend creating more HID transport minidrivers. They're complex drivers to write and maintain. If a partner is creating a new HID transport minidriver, especially on SoC systems, we recommend a detailed architectural review to understand the reasoning and ensure that the driver is developed correctly.
 
-1. Driver developers should leverage driver Frameworks (KMDF or UMDF) and not rely on WDM for their filter drivers.
+1. Driver developers should use driver frameworks (KMDF or UMDF) and not rely on WDM for their filter drivers.
 1. Driver developers should reduce the number of kernel-user transitions between their service and the driver stack.
 1. Driver developers should ensure ability to wake the system via both keyboard and touchpad functionality (adjustable by the end user (device manager) or the PC manufacturer). In addition on SoC systems, these devices must be able to wake themselves from a lower powered state while the system is in a working S0 state.
 1. Driver developers should ensure that their hardware is power managed efficiently.
@@ -85,7 +85,7 @@ Microsoft provides the following guidance for IHVs writing drivers:
 
 A *keyboard layout* fully describes a keyboard's input characteristics for Microsoft Windows 2000 and later versions. For example, a keyboard layout specifies the language, keyboard type and version, modifiers, scan codes, and so on.
 
-See the following for information about keyboard layouts:
+See these resources for information about keyboard layouts:
 
 - Keyboard header file, kdb.h, in the Windows Driver Development Kit (DDK), which documents general information about keyboard layouts.
 
@@ -93,7 +93,7 @@ See the following for information about keyboard layouts:
 
 To visualize the layout of a specific keyboard, see [Windows Keyboard Layouts](/globalization/windows-keyboard-layouts).
 
-For additional details around the keyboard layout, visit Control Panel\\Clock, Language, and Region\\Language.
+For more details around the keyboard layout, visit Control Panel\\Clock, Language, and Region\\Language.
 
 ## Supported buttons and wheels on mice
 
@@ -108,14 +108,15 @@ The following table identifies the features supported across different client ve
 
 ### Activating buttons 4-5 and wheel on PS/2 mice
 
-The method used by Windows to activate the new 4&5-button + wheel mode is an extension of the method used to activate the third button and the wheel in IntelliMouse-compatible mice:
+The method used by Windows to activate the new four and five-button and wheel mode is an extension of the method used to activate the third button and the wheel in IntelliMouse-compatible mice:
 
-- First, the mouse is set to the 3-button wheel mode, which is accomplished by setting the report rate consecutively to 200 reports/second, then to 100 reports/second, then to 80 reports/second, and then reading the ID from the mouse. The mouse should report an ID of 3 when this sequence is completed.
-- Next, the mouse is set to the 5-button wheel mode, which is accomplished by setting the report rate consecutively to 200 reports/second, then to 200 reports/second again, then to 80 reports/second, and then reading the ID from the mouse. Once this sequence is completed, a 5-button wheel mouse should report an ID of 4 (whereas an IntelliMouse-compatible 3-button wheel mouse would still report an ID of 3).
+- The mouse is set to the three-button wheel mode by setting the report rate to 200 reports per second, then to 100 reports per second, then to 80 reports per second. Then, reading the ID from the mouse. The mouse should report an ID of 3 when this sequence is completed.
 
-Note that this is applicable to PS/2 mice only and is not applicable to HID mice (HID mice must report accurate usages in their report descriptor).
+- Next, the mouse is set to the five-button wheel mode by setting the report rate to 200 reports per second, then to 200 reports per second again, then to 80 reports per second. Then, reading the ID from the mouse. Once the sequence is completed, a five-button wheel mouse should report an ID of 4 (whereas an IntelliMouse-compatible three-button wheel mouse would still report an ID of 3).
 
-#### Standard PS/2-compatible mouse data packet format (2 Buttons)
+This method is applicable to PS/2 mice only, not HID mice. HID mice must report accurate usages in their report descriptor.
+
+#### Standard PS/2-compatible mouse data packet format (two buttons)
 
 | Byte | D7    | D6    | D5    | D4    | D3  | D2 | D1 | D0 | Comment                          |
 |------|-------|-------|-------|-------|-----|----|----|----|----------------------------------|
@@ -126,7 +127,7 @@ Note that this is applicable to PS/2 mice only and is not applicable to HID mice
 > [!NOTE]
 > Windows mouse drivers do not check the overflow bits. In case of overflow, the mouse should simply send the maximal signed displacement value.
 
-#### Standard PS/2-compatible mouse data packet format (3 Buttons + VerticalWheel)
+#### Standard PS/2-compatible mouse data packet format (three buttons + vertical wheel)
 
 | Byte | D7 | D6 | D5    | D4    | D3 | D2 | D1 | D0 | Comment                     |
 |------|----|----|-------|-------|----|----|----|----|-----------------------------|
@@ -135,7 +136,7 @@ Note that this is applicable to PS/2 mice only and is not applicable to HID mice
 | 3    | Y7 | Y6 | Y5    | Y4    | Y3 | Y2 | Y1 | Y0 | Y data bytes                |
 | 4    | Z7 | Z6 | Z5    | Z4    | Z3 | Z2 | Z1 | Z0 | Z/wheel data byte           |
 
-#### Standard PS/2-compatible mouse data packet format (5 Buttons + VerticalWheel)
+#### Standard PS/2-compatible mouse data packet format (five buttons + vertical wheel)
 
 | Byte | D7 | D6 | D5    | D4    | D3 | D2 | D1 | D0 | Comment                          |
 |------|----|----|-------|-------|----|----|----|----|----------------------------------|
@@ -144,33 +145,35 @@ Note that this is applicable to PS/2 mice only and is not applicable to HID mice
 | 3    | Y7 | Y6 | Y5    | Y4    | Y3 | Y2 | Y1 | Y0 | Y data bytes                     |
 | 4    | 0  | 0  | B5    | B4    | Z3 | Z2 | Z1 | Z0 | Z/wheel data and buttons 4 and 5 |
 
->[!IMPORTANT]
->Notice that the Z/wheel data for a 5-button wheel mouse has been reduced to four bits instead of the 8 bits used in the IntelliMouse-compatible 3-button wheel mode. This reduction is made possible by the fact that the wheel typically cannot generate values beyond the range +7/-8 during any given interrupt period. Windows mouse drivers will sign extend the four Z/wheel data bits when the mouse is in the 5-button wheel mode, and the full Z/wheel data byte when the mouse operates in the 3-button wheel mode.
+> [!IMPORTANT]
+> Notice that the Z/wheel data for a five-button wheel mouse has been reduced to four bits instead of the 8 bits used in the IntelliMouse-compatible three-button wheel mode. This reduction is made possible by the fact that the wheel typically cannot generate values beyond the range +7/-8 during any given interrupt period. Windows mouse drivers will sign extend the four Z/wheel data bits when the mouse is in the five-button wheel mode, and the full Z/wheel data byte when the mouse operates in the three-button wheel mode.
 >
->Buttons 4 & 5 on are mapped to WM\_APPCOMMAND messages and correspond to App\_Back and App\_Forward.
+> Buttons 4 & 5 on are mapped to WM_APPCOMMAND messages and correspond to App_Back and App_Forward.
 
 ### Devices not requiring vendor drivers
 
-Vendor drivers are not required for the following devices:
+Vendor drivers aren't required for the following devices:
 
 - Devices that comply with the HID Standard.
 - Keyboard, mouse, or game port devices operated by the system-supplied non-HIDClass drivers.
 
 ## Kbfiltr sample
 
-Kbfiltr is designed to be used with Kbdclass, the system class driver for keyboard devices and I8042prt, the function driver for a PS/2-style keyboard. Kbfiltr demonstrates how to filter I/O requests and how to add callback routines that modify the operation of Kbdclass and I8042prt.
+Kbfiltr is used with Kbdclass, the system class driver for keyboard devices and I8042prt, the function driver for a PS/2-style keyboard. Kbfiltr demonstrates how to filter I/O requests and how to add callback routines that modify the operation of Kbdclass and I8042prt.
 
-For more information about Kbfiltr operation, see the following:
+For more information about Kbfiltr operation, see:
 
 - The [ntddkbd.h](/windows/win32/api/ntddkbd/) WDK header file.
 
 - The sample [Kbfiltr](/samples/microsoft/windows-driver-samples/keyboard-input-wdf-filter-driver-kbfiltr/) source code.
 
-### Kbfiltr IOCTLs
+### Kbfiltr IO control codes
+
+The following IOCTLs are used by Kbfiltr.
 
 #### IOCTL_INTERNAL_I8042_HOOK_KEYBOARD
 
-The IOCTL_INTERNAL_I8042_HOOK_KEYBOARD request does the following:
+The IOCTL_INTERNAL_I8042_HOOK_KEYBOARD request:
 
 - Adds an initialization callback routine to the I8042prt keyboard initialization routine.
 - Adds an ISR callback routine to the I8042prt keyboard ISR.
@@ -195,23 +198,25 @@ After Kbfiltr received the keyboard connect request, Kbfiltr filters the connect
 - Substitutes its own connect information for the class driver connect information.
 - Sends the **IOCTL_INTERNAL_KEYBOARD_CONNECT** request down the device stack.
 
-If the request is not successful, Kbfiltr completes the request with an appropriate error status.
+If the request isn't successful, Kbfiltr completes the request with an appropriate error status.
 
 Kbfiltr provides a template for a filter service callback routine that can supplement the operation of **KeyboardClassServiceCallback**, the Kbdclass class service callback routine. The filter service callback can filter the input data that is transferred from the device input buffer to the class data queue.
 
 #### IOCTL_INTERNAL_KEYBOARD_DISCONNECT
 
-The **IOCTL_INTERNAL_KEYBOARD_DISCONNECT** request is completed with a status of STATUS_NOT_IMPLEMENTED. Note that a Plug and Play keyboard can be added or removed by the Plug and Play manager.
+The **IOCTL_INTERNAL_KEYBOARD_DISCONNECT** request is completed with a status of STATUS_NOT_IMPLEMENTED. The Plug and Play manager can add or remove a Plug and Play keyboard.
 
 For all other device control requests, Kbfiltr skips the current IRP stack and sends the request down the device stack without further processing.
 
 ### Callback routines implemented by Kbfiltr
 
+Kbfiltr implements the following callback routines.
+
 #### KbFilter_InitializationRoutine
 
 See **PI8042_KEYBOARD_INITIALIZATION_ROUTINE**
 
-The **KbFilter_InitializationRoutine** is not needed if the I8042prt default initialization of a keyboard is sufficient.
+The **KbFilter_InitializationRoutine** isn't needed if the I8042prt default initialization of a keyboard is sufficient.
 
 I8042prt calls **KbFilter_InitializationRoutine** when it initializes the keyboard. Default keyboard initialization includes the following operations:
 
@@ -252,7 +257,7 @@ NTSTATUS KbFilter_InitializationRoutine(
 
 #### KbFilter_IsrHook
 
-See **PI8042_KEYBOARD_ISR**. This callback is not needed if the default operation of I8042prt is sufficient.
+See **PI8042_KEYBOARD_ISR**. This callback isn't needed if the default operation of I8042prt is sufficient.
 
 The I8042prt keyboard ISR calls **KbFilter_IsrHook** after it validates the interrupt and reads the scan code.
 
@@ -301,7 +306,7 @@ KbFilter_IsrHook KbFilter_IsrHook(
 
 See **PSERVICE_CALLBACK_ROUTINE**.
 
-The ISR dispatch completion routine of the function driver calls **KbFilter_ServiceCallback**, which then calls the keyboard class driver's implementation of *PSERVICE_CALLBACK_ROUTINE*. A vendor can implement a filter service callback to modify the input data that is transferred from the device's input buffer to the class data queue. For example, the callback can delete, transform, or insert data.
+The ISR dispatch completion routine of the function driver calls **KbFilter_ServiceCallback**, which then calls the keyboard class driver's implementation of **PSERVICE_CALLBACK_ROUTINE**. A vendor can implement a filter service callback to modify the input data that is transferred from the device's input buffer to the class data queue. For example, the callback can delete, transform, or insert data.
 
 ```cpp
 /*
@@ -332,15 +337,17 @@ VOID KbFilter_ServiceCallback(
 
 ## Moufiltr sample
 
-Moufiltr is designed to be used with Mouclass, the system class driver for mouse devices used with Windows 2000 and later versions, and I8042prt, the function driver for a PS/2-style mouse used with Windows 2000 and later. Moufiltr demonstrates how to filter I/O requests and add callback routines that modify the operation of Mouclass and I8042prt.
+Moufiltr is used with Mouclass, the system class driver for mouse devices used with Windows 2000 and later versions, and I8042prt, the function driver for a PS/2-style mouse used with Windows 2000 and later. Moufiltr demonstrates how to filter I/O requests and add callback routines that modify the operation of Mouclass and I8042prt.
 
-For more information about Moufiltr operation, see the following:
+For more information about Moufiltr operation, see these resources:
 
 - The [ntddmou.h](/windows/win32/api/ntddmou/) WDK header file.
 
 - The sample [Moufiltr](/samples/microsoft/windows-driver-samples/mouse-input-wdf-filter-driver-moufiltr/) source code.
 
-### Moufiltr control codes
+### Moufiltr IO control codes
+
+The following IOCTLs are used by Moufiltr.
 
 #### IOCTL_INTERNAL_I8042_HOOK_MOUSE
 
@@ -354,19 +361,19 @@ After Moufiltr receives the hook mouse request, it filters the request in the fo
 - Replaces the upper-level information with its own.
 - Saves the context of I8042prt and pointers to callbacks that the Moufiltr ISR callbacks can use.
 
-### Moufiltr Callback Routines
-
 #### IOCTL_INTERNAL_MOUSE_CONNECT
 
 The IOCTL_INTERNAL_MOUSE_CONNECT request connects Mouclass service to a mouse device.
 
 #### IOCTL_INTERNAL_MOUSE_DISCONNECT
 
-The IOCTL_INTERNAL_MOUSE_DISCONNECT request is completed by Moufiltr with an error status of STATUS_NOT_IMPLEMENTED.
+Moufiltr completes the IOCTL_INTERNAL_MOUSE_DISCONNECT request with an error status of STATUS_NOT_IMPLEMENTED.
 
 For all other requests, Moufiltr skips the current IRP stack and sends the request down the device stack without further processing.
 
-### Callback routines
+### Moufiltr Callback Routines
+
+The following callback routines are implemented by  MouFiltr.
 
 #### MouFilter_IsrHook
 
@@ -415,11 +422,11 @@ BOOLEAN MouFilter_IsrHook(
 );
 ```
 
-A **MouFilter_IsrHook** callback is not needed if the default operation of I8042prt is sufficient.
+A **MouFilter_IsrHook** callback isn't needed if the default operation of I8042prt is sufficient.
 
 The I8042prt mouse ISR calls **MouFilter_IsrHook** after it validates the interrupt.
 
-To reset a mouse, I8042prt goes through a sequence of operational substates, each one of which is identified by an MOUSE_RESET_SUBSTATE enumeration value. For more information about how I8042prt resets a mouse and the corresponding mouse reset substates, see the documentation of MOUSE_RESET_SUBSTATE in ntdd8042.h.
+To reset a mouse, I8042prt goes through a sequence of operational substates. A MOUSE_RESET_SUBSTATE enumeration value identifies each substate. For more information about how I8042prt resets a mouse and the corresponding mouse reset substates, see the documentation of MOUSE_RESET_SUBSTATE in ntdd8042.h.
 
 **MouFilter_IsrHook** runs in kernel mode at the IRQL of the I8042prt mouse ISR.
 
