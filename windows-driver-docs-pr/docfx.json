@@ -42,7 +42,7 @@
       "open_source_feedback_issueUrl": "https://github.com/MicrosoftDocs/windows-driver-docs/issues/new?template=customer-feedback.yml",
       "open_source_feedback_productLogoLightUrl": "https://github.com/MicrosoftDocs/DocsMedia/blob/main/media/logos/logo_windows.svg",
       "open_source_feedback_productLogoDarkUrl": "https://github.com/MicrosoftDocs/DocsMedia/blob/main/media/logos/logo_windows.svg",
-      "open_source_feedback_productName": "Windows driver docs",
+      "open_source_feedback_productName": "Windows driver documentation",
       "contributors_to_exclude": [
         "barrygolden",
         "DCtheGeek",
