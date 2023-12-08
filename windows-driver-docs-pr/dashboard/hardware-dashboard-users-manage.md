@@ -10,12 +10,12 @@ ms.date: 04/20/2017
 
 This article describes how you can use Partner Center User Management to manage your hardware dashboard users.
 
-The Partner Center uses Microsoft Entra Identity for user management. For some actions, such as creating a new user or deleting a user, you'll need to use your developer portal Global Admin account credentials. The Global Admin account is the account that was used to register for the Hardware program. If your account was migrated from Sysdev, your Global Admin was notified via e-mail. If you've lost or are unsure of your Global Admin credentials, please contact support.  The developer portal Global Admin account credentials are not the same as the Microsoft Entra Identity Global Admin account credentials.
+The Partner Center uses Microsoft Entra ID for user management. For some actions, such as creating a new user or deleting a user, you'll need to use your developer portal Global Admin account credentials. The Global Admin account is the account that was used to register for the Hardware program. If your account was migrated from Sysdev, your Global Admin was notified via e-mail. If you've lost or are unsure of your Global Admin credentials, please contact support.  The developer portal Global Admin account credentials are not the same as the Microsoft Entra ID Global Admin account credentials.
 
 ## Add existing users
 
 To add existing users, you'll need to have the Manager role assigned to your Partner Center account.
-As a user with the Manager role in Partner Center, you can add any user who is already associated with your Microsoft Entra Identity tenant.
+As a user with the Manager role in Partner Center, you can add any user who is already associated with your Microsoft Entra ID tenant.
 
 To add existing users:
 
