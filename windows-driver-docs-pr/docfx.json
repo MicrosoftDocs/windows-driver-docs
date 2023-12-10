@@ -38,7 +38,6 @@
       "feedback_system": "OpenSource",
       "open_source_feedback_contributorGuideUrl": "https://learn.microsoft.com/contribute/",
       "open_source_feedback_issueTitle": "Customer feedback - ",
-      "open_source_feedback_issueLabels": "needs-triage",
       "open_source_feedback_issueUrl": "https://github.com/MicrosoftDocs/windows-driver-docs/issues/new?template=customer-feedback.yml",
       "open_source_feedback_productLogoLightUrl": "https://learn.microsoft.com/media/logos/logo_windows.svg",
       "open_source_feedback_productLogoDarkUrl": "https://learn.microsoft.com/media/logos/logo_windows.svg",
