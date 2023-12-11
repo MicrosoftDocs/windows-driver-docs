@@ -18,7 +18,7 @@ body:
       label: Type of issue
       options:
         - Typo
-        - Code doesn't work
+        - Sample code doesn't work
         - Missing information
         - Outdated article
         - Other (describe below)
