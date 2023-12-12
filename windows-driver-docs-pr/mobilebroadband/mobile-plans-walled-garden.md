@@ -3,7 +3,7 @@ title: Mobile Plans walled garden
 description: Mobile Plans walled garden
 keywords:
 - Windows Mobile Plans mobile operators walled garden
-ms.date: 07/31/2019
+ms.date: 12/12/2023
 ms.topic: article
 ---
 
@@ -22,18 +22,18 @@ There are only a small number of required endpoints that are always accessible t
 
 | URL | HTTP/HTTPS |
 | --- | --- |
-| ctldl.windowsupdate<span></span>.com | http |
-| cdp1.public-trust<span></span>.com | http |
-| ocsp.omniroot<span></span>.com | http |
-| vassg142.ocsp.omniroot<span></span>.com | http |
-| vassg142.crl.omniroot<span></span>.com | http |
-| mscrl.microsoft<span></span>.com | http |
-| crl.microsoft<span></span>.com | http |
-| www.msftconnecttest<span></span>.com | http |
-| crl3.digicert<span></span>.com | http |
-| Ocsp.digicert<span></span>.com | http |
-| login.live<span></span>.com | http + https |
-| storagetos.datamart.windows<span></span>.com | http + https |
-| mps.datamart.windows<span></span>.com | http + https |
-| staging.datamart.windows<span></span>.com | http + https |
-| *smartscreen.microsoft<span></span>.com | https |
+| ctldl.windowsupdate.com | http |
+| cdp1.public-trust.com | http |
+| ocsp.omniroot.com | http |
+| vassg142.ocsp.omniroot.com | http |
+| vassg142.crl.omniroot.com | http |
+| mscrl.microsoft.com | http |
+| crl.microsoft.com | http |
+| www.msftconnecttest.com | http |
+| crl3.digicert.com | http |
+| Ocsp.digicert.com | http |
+| login.live.com | http + https |
+| storagetos.datamart.windows.com | http + https |
+| mps.datamart.windows.com | http + https |
+| staging.datamart.windows.com | http + https |
+| *smartscreen.microsoft.com | https |
