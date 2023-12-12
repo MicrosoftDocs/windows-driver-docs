@@ -14,12 +14,11 @@ api_type:
 
 # !memlist
 
-
 The **!memlist** extension scans physical memory lists from the page frame number (PFN) database in order to check them for consistency.
 
-```dbgcmd
-!memlist Flags
-```
+Syntax
+
+`!memlist Flags`
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
@@ -32,38 +31,12 @@ Causes the zeroed pages list to be verified.
 
 ### <span id="DLL"></span><span id="dll"></span>DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Kdexts.dll</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Kdexts.dll</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+Windows XP and later - Kdexts.dll
 
 ## Remarks
 
-At present, this extension will only check the zeroed pages list to make sure that all pages in that list are zeroed. The appropriate syntax is:
+This extension will only check the zeroed pages list to make sure that all pages in that list are zeroed. The appropriate syntax is:
 
 ```dbgcmd
 kd> !memlist 1
 ```
-
- 
-
- 
-
-
-
-
-

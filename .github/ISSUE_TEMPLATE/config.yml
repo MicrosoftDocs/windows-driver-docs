@@ -1,11 +1,5 @@
 blank_issues_enabled: false
 contact_links:
-  - name: learn.microsoft.com site feedback
-    url: https://github.com/MicrosoftDocs/feedback/issues/new/choose
-    about: Log general learn.microsoft.com site issues here
-  - name: Product feedback
-    url: https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app
-    about: Log product issues here
   - name: Windows Q&A forums
     url: https://learn.microsoft.com/en-us/answers/tags/60/windows
     about: Find answers to your technical questions about Windows

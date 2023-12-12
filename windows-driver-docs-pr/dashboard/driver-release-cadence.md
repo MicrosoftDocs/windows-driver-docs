@@ -2,12 +2,12 @@
 title: Driver Release Cadence
 description: Policy around when drivers are released
 ms.topic: article
-ms.date: 12/15/2020
+ms.date: 12/08/2023
 ---
 
 # Driver Shiproom Release Cadence Windows
 
-Last Updated: December 15, 2021
+Last Updated: December 8, 2023
 
 This page provides information on the operation schedule for driver shiproom. In order to provide the best experience for Windows users, there are certain times where aspects of publication operations are suspended.
 
@@ -40,21 +40,21 @@ To ensure we release quality drivers, reduce the risk of releasing drivers at th
 
 3. **Certain US Holidays**: Drivers needing “Microsoft Approval” will not be released on certain US Holidays and long weekends
 
-|US Holidays | 2023 | 2022 |
+|US Holidays | 2024 | 2023 |
 |----|----|----|
-|New Year's Day | Monday Jan 02 | Saturday Jan 01 | 
-|Martin Luther King Day | Monday Jan 16 | Monday Jan 17 |
-|Presidents Day | Monday Feb 20 |Monday Feb 21 | 
-|Memorial Day | Monday May 29 | Monday May 30 | 
+|New Year's Day | Monday Jan 01 |Monday Jan 02 |  
+|Martin Luther King Day | Monday Jan 17 | Monday Jan 16 |
+|Presidents Day | Monday Feb 19 |Monday Feb 20 | 
+|Memorial Day | Monday May 27 | Monday May 29 | 
 |Fourth of July | Tuesday Jul 04 |Monday Jul 04 | 
-|Labor Day | Monday Sep 06 | Monday Sep 05 | 
-|Thanksgiving Day | Thursday Nov 23 | Thursday Nov 24 | 
-|Day after Thanksgiving | Friday Nov 24| Friday Nov 25 |
-|Christmas Eve | -- | Saturday Dec 24 | 
-|Christmas Day | Monday Dec 25 | Sunday Dec 25 | 
-|Day after Christmas | Tuesday Dec 26 | -- |
+|Labor Day | Monday Sep 02 | Monday Sep 04 | 
+|Thanksgiving Day | Thursday Nov 28 | Thursday Nov 23 | 
+|Day after Thanksgiving | Friday Nov 29| Friday Nov 24 |
+|Christmas Eve | Tuesday Dec 24 | Sunday Dec 24 | 
+|Christmas Day | Wednesday Dec 25 | Monday Dec 25 | 
+|Day after Christmas | Thursday Dec 26 | Tuesday Dec 26 |
 
-4. **US Winter Holiday timeframe release moratorium**: During the US Winter Holiday season, for approximately two weeks driver shiproom will not be releasing ANY drivers, for calendar year 2022 this is December 17, 2022 through January 1, 2023 and for CY2023 this will be December 16, 2023 through January 1, 2024. 
+4. **US Winter Holiday timeframe release moratorium**: During the US Winter Holiday season, for approximately two weeks driver shiproom will not be releasing ANY drivers, for calendar year 2023 this is December 16, 2023 through January 1, 2024 and for CY2024 this will be December 14, 2024 through January 1, 2025. 
 
 See the [2022 driver deferral periods](#calendar) calendars for additional dates. 
 
@@ -73,5 +73,5 @@ See the [2022 driver deferral periods](#calendar) calendars for additional dates
 
 ** These calendars are subject to changes based on OS release timelines.
 
-![Sept - Dec 2022 Driver Release Calendar showing excluded dates as described above.](images/2022_driver_calendar.png )
 ![Sept - Dec 2023 Driver Release Calendar showing excluded dates as described above.](images/2023_driver_calendar.png )
+![Sept - Dec 2024 Driver Release Calendar showing excluded dates as described above.](images/2024_driver_calendar.png )

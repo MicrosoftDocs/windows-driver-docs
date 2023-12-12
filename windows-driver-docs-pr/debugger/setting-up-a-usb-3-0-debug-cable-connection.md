@@ -1,7 +1,7 @@
 ---
 title: Set up kernel-mode debugging over a USB 3.0 cable
 description: Learn how to manually set up kernel-mode debugging over a USB 3.0 cable.
-ms.date: 01/24/2022
+ms.date: 12/11/2023
 ---
 
 # Set up kernel-mode debugging over a USB 3.0 cable
@@ -15,6 +15,8 @@ Debugging over a USB 3.0 cable requires the following hardware:
 - A USB 3.0 debug cable, which is an A-A crossover cable that has two male type-A plugs and no Vbus connection
 - On the host computer, an xHCI (USB 3.0) host controller
 - On the target computer, an xHCI (USB 3.0) host controller that supports debugging
+
+To simplify the troubleshooting, connect the cable directly between the target and host computer, avoiding any hubs or docking stations.
 
 ## Set up the target computer
 
