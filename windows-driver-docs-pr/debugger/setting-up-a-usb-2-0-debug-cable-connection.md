@@ -20,6 +20,8 @@ Debugging over a USB 2.0 cable requires the following hardware:
 
 -   On the target computer, an EHCI (USB 2.0) host controller that supports debugging
 
+To simplify the troubleshooting, connect the cable directly between the target and host computer, avoiding any hubs or docking stations.
+
 ## Setting Up the Target Computer
 
 

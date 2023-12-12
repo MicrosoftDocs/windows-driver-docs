@@ -49,9 +49,9 @@ Threat modeling is most effective when performed in an organized, structured way
 
 One way to organize a threat modeling effort is to follow these steps:
 
-1.  Create a structured diagram showing data flow through the driver. Include all possible tasks that the driver performs and the source and destination of all input and output from the driver. A formal data flow diagram, or similar structured diagram, can help you to analyze the path of data through your driver and to identify the driver’s external interfaces, boundaries, and interactions. 
-2.  Analyze the potential security threats, based on the data flow diagram.
-3.  Assess the threats that you identified in the previous step and determine how to mitigate them.
+1. Create a structured diagram showing data flow through the driver. Include all possible tasks that the driver performs and the source and destination of all input and output from the driver. A formal data flow diagram, or similar structured diagram, can help you to analyze the path of data through your driver and to identify the driver’s external interfaces, boundaries, and interactions. 
+2. Analyze the potential security threats, based on the data flow diagram.
+3. Assess the threats that you identified in the previous step and determine how to mitigate them.
 
 ## Create a data flow diagram
 
