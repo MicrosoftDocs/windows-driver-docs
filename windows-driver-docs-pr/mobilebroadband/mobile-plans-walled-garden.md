@@ -22,9 +22,6 @@ There are only a small number of required endpoints that are always accessible t
 
 | URL | HTTP/HTTPS |
 | --- | --- |
-| service.datamart.windows<span></span>.com | https |
-| dogfood.datamart.windows<span></span>.com | https |
-| windows.policies.live<span></span>.net | https |
 | ctldl.windowsupdate<span></span>.com | http |
 | cdp1.public-trust<span></span>.com | http |
 | ocsp.omniroot<span></span>.com | http |
@@ -38,6 +35,4 @@ There are only a small number of required endpoints that are always accessible t
 | login.live<span></span>.com | http + https |
 | storagetos.datamart.windows<span></span>.com | http + https |
 | mps.datamart.windows<span></span>.com | http + https |
-| mps-service.datamart.windows<span></span>.com | http + https |
 | staging.datamart.windows<span></span>.com | http + https |
-| mps-staging.datamart.windows<span></span>.com | http + https |
