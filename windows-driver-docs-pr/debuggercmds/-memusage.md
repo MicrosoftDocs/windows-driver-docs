@@ -2,7 +2,7 @@
 title: memusage (WinDbg)
 description: The memusage extension displays summary statistics about physical memory use.
 keywords: ["memusage Windows Debugging"]
-ms.date: 05/23/2017
+ms.date: 12/11/2023
 topic_type:
 - apiref
 ms.topic: reference
@@ -14,14 +14,11 @@ api_type:
 
 # !memusage
 
-
 The **!memusage** extension displays summary statistics about physical memory use.
 
 Syntax
 
-```dbgcmd
-!memusage [Flags]
-```
+`!memusage [Flags]`
 
 ## <span id="ddk__memusage_dbg"></span><span id="DDK__MEMUSAGE_DBG"></span>Parameters
 
@@ -33,7 +30,7 @@ Can be any one of the following values. The default is 0x0.
 Displays general summary information, along with a more detailed description of the pages in the PFN database. See the Remarks section for an example of this type of output.
 
 <span id="0x1"></span><span id="0X1"></span>0x1  
-Displays only summary information about the modified no-write pages in the PFN database..
+Displays only summary information about the modified no-write pages in the PFN database.
 
 <span id="0x2"></span><span id="0X2"></span>0x2  
 Displays only detailed information about the modified no-write pages in the PFN database.
@@ -45,9 +42,6 @@ Displays only general summary information about memory use.
 
 **Modes**: kernel mode only
 
-
- 
-
 ### <span id="DLL"></span><span id="dll"></span>DLL
 
 Kdexts.dll
@@ -56,7 +50,7 @@ Kdexts.dll
 
 Physical memory statistics are collected from the Memory Manager's page frame number (PFN) database table.
 
-This command takes a long time to run, especially if the target computer is running in 64-bit mode, due to the greater amount of data to obtain. While it is loading the PFN database, a counter shows its progress. To speed up this loading, increase the COM port speed with the [**CTRL+A (Toggle Baud Rate)**](../debugger/ctrl-a--toggle-baud-rate-.md) key, or use the [**.cache (Set Cache Size)**](-cache--set-cache-size-.md) command to increase the cache size (perhaps to around 10 MB).
+This command takes a long time to run, especially if the target computer is running in 64-bit mode, due to the greater amount of data to obtain. While it is loading the PFN database, a counter shows its progress. To speed up this loading, use a network connection, or increase the COM port speed with the [**CTRL+A (Toggle Baud Rate)**](../debugger/ctrl-a--toggle-baud-rate-.md) key, or use the [**.cache (Set Cache Size)**](-cache--set-cache-size-.md) command to increase the cache size (perhaps to around 10 MB).
 
 The **!memusage** command can also be used while performing [local kernel debugging](../debugger/performing-local-kernel-debugging.md).
 
@@ -64,80 +58,55 @@ Here is an example of the output from this extension:
 
 ```dbgcmd
 kd> !memusage
- loading PFN database
-loading (98% complete)
+loading PFN database
+loading (100% complete)
+Compiling memory usage data (99% Complete).
+             Zeroed:      218 (     872 kb)
+               Free:      831 (    3324 kb)
+            Standby:   124049 (  496196 kb)
+           Modified:    55101 (  220404 kb)
+    ModifiedNoWrite:       58 (     232 kb)
+       Active/Valid:   321846 ( 1287384 kb)
+         Transition:        8 (      32 kb)
+         SLIST/Temp:     1533 (    6132 kb)
+                Bad:        0 (       0 kb)
+            Unknown:        0 (       0 kb)
+              TOTAL:   503644 ( 2014576 kb)
 
-Compiling memory usage data (100% Complete).
-             Zeroed:     49 (   196 kb)
-               Free:      5 (    20 kb)
-            Standby:   5489 ( 21956 kb)
-           Modified:    714 (  2856 kb)
-    ModifiedNoWrite:      1 (     4 kb)
-       Active/Valid:  10119 ( 40476 kb)
-         Transition:      6 (    24 kb)
-            Unknown:      0 (     0 kb)
-              TOTAL:  16383 ( 65532 kb)
-
+Dangling Yes Commit:      184 (     736 kb)
+ Dangling No Commit:    81706 (  326824 kb)
   Building kernel map
   Finished building kernel map
-Scanning PFN database - (99% complete) 
+Scanning PFN database - (100% complete) 
 
+...
+
+```
+
+Also included in the report is detailed information about the usage of memory that is visible to the debugger.
+
+```dbgcmd
   Usage Summary (in Kb):
+Control       Valid Standby Dirty Shared Locked PageTables  name
+ffffaf0fb369f010   204    956     0    32   204     0  mapped_file( shell32.dll )
+ffffaf0fb369f270   492     60     0   252   492     0  mapped_file( KernelBase.dll )
+ffffaf0fb36ad050    20     36     0     0    20     0  mapped_file( WMIsvc.dll )
+ffffaf0fb36adad0    88    144     0    40    88     0  mapped_file( Can't read file name buffer at ffffc10e0497e170 )
+ffffaf0fb36b5670   780   1012     0   560   780     0  mapped_file( KernelBase.dll )
+ffffaf0fb36b5910    44    144     0    28    44     0  mapped_file( cfgmgr32.dll )
+ffffaf0fb36bc270     8      0     0     0     8     0  mapped_file( Can't read file name buffer at ffffc10e061a17d0 )
+ffffaf0fb36bc520    24     56     0     4    24     0  mapped_file( ShareHost.dll )
 
+...
 
-Control Valid Standby Dirty Shared Locked PageTables  name
-
-8251a258    12    108     0     0     0     0  mapped_file( cscui.dll )
-827ab1b8     8   1708     0     0     0     0  mapped_file( $Mft )
-8263c408   908     48     0     0     0     0  mapped_file( win32k.sys )
-8252dda8     0    324     0     0     0     0  mapped_file( ShellIconCache )
-8272f638   128    112     0   116     0     0  mapped_file( advapi32.dll )
-......
-82755958     0      4     0     0     0     0  mapped_file( $Directory )
-8250b518     0      4     0     0     0     0    No Name for File
-8254d8d8     0      4     0     0     0     0  mapped_file( $Directory )
-82537be8     0      4     0     0     0     0  mapped_file( Windows Explorer.lnk )
-
---------  1348      0     0 ----- -----   904  process ( System )
---------   492      0     0 ----- -----    72  process ( winmine.exe )
---------  3364   1384  1396 ----- -----   188  process ( explorer.exe )
---------   972      0     0 ----- -----    88  process ( services.exe )
---------   496   1456   384 ----- -----   164  process ( winmgmt.exe )
---------  1144      0     0 ----- -----   120  process ( svchost.exe )
---------   944      0     0 ----- -----   156  process ( winlogon.exe )
---------   412      0     0 ----- -----    64  process ( csrss.exe )
-......
---------    12      0     0 ----- -----     8  process ( wmiadap.exe )
-
---------   316      0     0 ----- -----     0  pagefile section (346e)
---------  4096      0     0 ----- -----     0  pagefile section (9ad)
-
---------   884    280    36 -----     0 -----  driver ( ntoskrnl.exe )
---------    88      8     0 -----     0 -----  driver ( hal.dll )
---------     8      0     0 -----     0 -----  driver ( kdcom.dll )
---------    12      0     0 -----     0 -----  driver ( BOOTVID.dll )
-......
---------     8      0     0 -----     0 -----  driver ( ndisuio.sys )
---------    16      0     0 -----     0 -----  driver ( dump_scsiport.sys )
---------    56      0     0 -----     0 -----  driver ( dump_aic78xx.sys )
---------  2756   1060   876 -----     0 -----  driver ( Paged Pool )
---------  1936    128   148 -----     0 -----  driver ( Kernel Stacks )
---------     0      0     0 -----     0 -----  driver ( NonPaged Pool )
 ```
 
 The first column displays the address of the control area structure that describes each mapped structure. Use the [**!ca**](-ca.md) extension command to display these control areas.
 
 ## Remarks
 
-You can use the [**!vm**](-vm.md) extension command to analyze virtual memory use. This extension is typically more useful than **!memusage**. For more information about memory management, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon. 
+You can use the [**!vm**](-vm.md) extension command to analyze virtual memory use. This extension is typically more useful than **!memusage**. For more information about memory management, see *Microsoft Windows Internals*, by Pavel Yosifovich, Andrea Allievi, Alex Ionescu, Mark Russinovich and David Solomon.
 
 The [**!pfn**](-pfn.md) extension command can be used to display a particular page frame entry in the PFN database.
 
- 
-
- 
-
-
-
-
-
+The [**!pool**](-pool.md) extension displays information about a specific pool allocation or about the entire system-wide pool.

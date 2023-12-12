@@ -1,7 +1,7 @@
 ---
 title: Driver security checklist
 description: This article provides a driver security checklist for driver developers.
-ms.date: 05/04/2023
+ms.date: 12/11/2023
 ---
 
 # Driver security checklist
@@ -20,45 +20,45 @@ In addition to avoiding the issues associated with a driver being attacked, many
 
 **Security checklist:** *Complete the security task described in each of these topics.*
 
-:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist.":::
+:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist."::: [Confirm that a kernel driver is required](#confirm-that-a-kernel-driver-is-required)
 
-:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist.":::
+:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist."::: [Use the driver frameworks](#use-the-driver-frameworks)
 
-:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist.":::
+:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist."::: [Control access to software only drivers](#control-access-to-software-only-drivers)
 
-:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist.":::
+:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist."::: [Do not production sign test driver code](#do-not-production-sign-test-code)
 
-:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist.":::
+:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist."::: [Perform threat analysis](#perform-threat-analysis)
 
-:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist.":::
+:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist."::: [Follow driver secure coding guidelines](#follow-driver-secure-coding-guidelines)
 
-:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist.":::
+:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist."::: [Implement HVCI compatible code](#implement-hvci-compatible-code)
 
-:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist.":::
+:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist."::: [Follow technology specific code best practices](#follow-technology-specific-code-best-practices)
 
-:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist.":::
+:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist."::: [Perform peer code review](#perform-peer-code-review)
 
-:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist.":::
+:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist."::: [Manage driver access control](#manage-driver-access-control)
 
-:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist.":::
+:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist."::: [Enhance device installation security](#enhance-device-installation-security)
 
-:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist.":::
+:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist."::: [Execute proper release driver signing](#execute-proper-release-driver-signing)
 
-:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist.":::
+:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist."::: [Use code analysis in Visual Studio to investigate driver security](#use-code-analysis-in-visual-studio-to-investigate-driver-security)
 
-:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist.":::
+:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist."::: [Use Static Driver Verifier to check for vulnerabilities](#use-static-driver-verifier-to-check-for-vulnerabilities)
 
-:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist.":::
+:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist."::: [Check code with BinSkim Binary Analyzer](#check-code-with-the-binskim-binary-analyzer)
 
-:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist.":::
+:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist."::: [Use code validation tools](#use-additional-code-validation-tools)
 
-:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist.":::
+:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist."::: [Review debugger techniques and extensions](#review-debugger-techniques-and-extensions)
 
-:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist.":::
+:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist."::: [Understand how drivers are reported using the Microsoft Vulnerable and Malicious Driver Reporting Center](#microsoft-vulnerable-and-malicious-driver-reporting-center)
 
-:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist.":::
+:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist."::: [Review secure coding resources](#review-secure-coding-resources)
 
-[Summary of key takeaways](#summary-of-key-takeaways)
+:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist.":::Review the [Summary of key takeaways](#summary-of-key-takeaways)
 
 ## Confirm that a kernel driver is required
 
