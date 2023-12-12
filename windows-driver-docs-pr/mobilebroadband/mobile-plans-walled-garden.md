@@ -36,3 +36,4 @@ There are only a small number of required endpoints that are always accessible t
 | storagetos.datamart.windows<span></span>.com | http + https |
 | mps.datamart.windows<span></span>.com | http + https |
 | staging.datamart.windows<span></span>.com | http + https |
+| *smartscreen.microsoft<span></span>.com | https |
