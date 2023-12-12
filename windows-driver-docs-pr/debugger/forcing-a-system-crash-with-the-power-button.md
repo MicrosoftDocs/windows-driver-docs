@@ -2,7 +2,7 @@
 title: Forcing a System Crash with the Power Button
 description: Forcing a System Crash with the Power Button
 keywords: ["boot process, causing system crash from power button", "system crash, power button", "bug check, power button"]
-ms.date: 10/13/2023
+ms.date: 12/11/2023
 ---
 
 # Forcing a System Crash with the Power Button
@@ -88,10 +88,10 @@ To support Long Power Button Hold, the device needs:
 - A General Purpose I/O (GPIO) based Power Button
 - Firmware to route the power event to the Windows Power Manager
 - The bug check feature to be enabled in the registry
- 
-## See also 
 
-[Forcing a System Crash with the Power Button](forcing-a-system-crash-with-the-power-button.md)
+## See also
+
+[Bug Check 0x11C8: MANUALLY_INITIATED_POWER_BUTTON_HOLD_LIVE_DUMP](bug-check-0x1c8--manually-initiated-power-button-hold.md)
 
 [Inside Show - Bugcheck 0x1C8 MANUALLY_INITIATED_POWER_BUTTON_HOLD](/shows/inside/0x1c8)
 

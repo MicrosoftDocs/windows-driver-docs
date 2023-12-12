@@ -46,7 +46,7 @@ In addition to avoiding the issues associated with a driver being attacked, many
 
 :::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist."::: [Use code analysis in Visual Studio to investigate driver security](#use-code-analysis-in-visual-studio-to-investigate-driver-security)
 
-:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist."::: [Use Static Driver Verifier to Check for Vulnerabilities](#use-static-driver-verifier-to-check-for-vulnerabilities)
+:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist."::: [Use Static Driver Verifier to check for vulnerabilities](#use-static-driver-verifier-to-check-for-vulnerabilities)
 
 :::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist."::: [Check code with BinSkim Binary Analyzer](#check-code-with-the-binskim-binary-analyzer)
 
