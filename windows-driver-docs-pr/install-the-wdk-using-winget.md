@@ -33,7 +33,7 @@ You can use WinGet to install Visual Studio 2022 with all the workloads and comp
   "components": [
     "Microsoft.Component.MSBuild",
     "Microsoft.VisualStudio.Component.CoreEditor",
-    "Microsoft.VisualStudio.Component.NuGet.BuildTools",
+    "Microsoft.VisualStudio.Component.NuGet",
     "Microsoft.VisualStudio.Component.Roslyn.Compiler",
     "Microsoft.VisualStudio.Component.TextTemplating",
     "Microsoft.VisualStudio.Component.VC.ASAN",
@@ -45,7 +45,7 @@ You can use WinGet to install Visual Studio 2022 with all the workloads and comp
     "Microsoft.VisualStudio.Component.VC.ATLMFC",
     "Microsoft.VisualStudio.Component.VC.CoreIde",
     "Microsoft.VisualStudio.Component.VC.MFC.ARM64.Spectre",
-    "Microsoft.VisualStudio.Component.VC.MFC.ARM64"
+    "Microsoft.VisualStudio.Component.VC.MFC.ARM64",
     "Microsoft.VisualStudio.Component.VC.Redist.14.Latest",
     "Microsoft.VisualStudio.Component.VC.Runtimes.ARM64.Spectre",
     "Microsoft.VisualStudio.Component.VC.Runtimes.ARM64EC.Spectre",
@@ -56,7 +56,7 @@ You can use WinGet to install Visual Studio 2022 with all the workloads and comp
     "Microsoft.VisualStudio.Component.Windows10SDK",
     "Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Core",
     "Microsoft.VisualStudio.Workload.CoreEditor",
-    "Microsoft.VisualStudio.Workload.NativeDesktop",
+    "Microsoft.VisualStudio.Workload.NativeDesktop"
   ]
 }
 ```
