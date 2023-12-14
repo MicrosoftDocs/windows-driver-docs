@@ -1,8 +1,7 @@
 ---
 title: USB Video Class (UVC) camera implementation guide
 description: Outlines how to expose certain capabilities of a USB Video Class compliant camera to the applications through the inbox driver.
-ms.date: 05/16/2022
-ms.custom: contperf-fy22q4
+ms.date: 12/14/2023
 ---
 
 # USB Video Class (UVC) camera implementation guide
@@ -31,13 +30,13 @@ A UVC camera can specify its category preference through attributes, **SensorCam
 
 The attribute **SensorCameraMode** takes a value 1 or 2.
 
-A value of 1, will register the device under KSCATEGORY_SENSOR_CAMERA. In addition to this specify a value of 1 for **SkipCameraEnumeration** to make the camera available to applications looking only for sensor cameras. A camera that exposes only sensor camera media types should use this value.
+A value of 1 will register the device under KSCATEGORY_SENSOR_CAMERA. In addition to this, specify a value of 1 for **SkipCameraEnumeration** to make the camera available to applications looking only for sensor cameras. A camera that exposes only sensor camera media types should use this value.
 
-A value of 2 for **SensorCameraMode**, will register the device under KSCATEGORY_SENSOR_CAMERA & KSCATEGORY_VIDEO_CAMERA. This will make the camera available for applications looking for either sensor and color cameras. A camera that exposes both sensor camera and color camera media types should use this value.
+A value of 2 for **SensorCameraMode** will register the device under KSCATEGORY_SENSOR_CAMERA & KSCATEGORY_VIDEO_CAMERA. This makes the camera available for applications looking for either sensor and color cameras. A camera that exposes both sensor camera and color camera media types should use this value.
 
 We recommend you specify the above-mentioned registry value using the BOS descriptor. Refer to the [Example composite device](#example-composite-device) section below for a sample BOS descriptor with a platform specific MS OS 2.0 descriptor.
 
-If you cannot update the device firmware as described above, you can use a custom INF and specify that your camera need to be registered as a sensor camera by specifying a value for **SensorCameraMode** and **SkipCameraEnumeration** as follows:
+If you can't update the device firmware as described above, you can use a custom INF and specify that your camera need to be registered as a sensor camera by specifying a value for **SensorCameraMode** and **SkipCameraEnumeration** as follows:
 
 A custom INF file (based on the inbox UVC driver)  must include the following AddReg entries:
 
@@ -60,7 +59,7 @@ HKR,, SkipCameraEnumeration, 0x00010001,1 ; This makes the camera available
                                           ; IR cameras
 ```
 
-If the **SensorCameraMode** and **SkipCameraEnumeration** attributes are not specified in the firmware or the INF, the camera will be registered as a color camera and will be visible only to color camera aware applications.
+If the **SensorCameraMode** and **SkipCameraEnumeration** attributes aren't specified in the firmware or the INF, the camera is registered as a color camera and will be visible only to color camera aware applications.
 
 ## IR stream
 
@@ -70,8 +69,8 @@ The following format type GUIDs should be specified in the stream video format d
 
 | Type | Description |
 |--|--|
-| KSDATAFORMAT_SUBTYPE_L8_IR | Uncompressed 8 bit luma plane. This type maps to [MFVideoFormat_L8](/windows/desktop/medfound/video-subtype-guids#luminance-and-depth-formats). |
-| KSDATAFORMAT_SUBTYPE_L16_IR | Uncompressed 16 bit luma plane. This type maps to [MFVideoFormat_L16](/windows/desktop/medfound/video-subtype-guids#luminance-and-depth-formats). |
+| KSDATAFORMAT_SUBTYPE_L8_IR | Uncompressed 8-bit luma plane. This type maps to [MFVideoFormat_L8](/windows/desktop/medfound/video-subtype-guids#luminance-and-depth-formats). |
+| KSDATAFORMAT_SUBTYPE_L16_IR | Uncompressed 16-bit luma plane. This type maps to [MFVideoFormat_L16](/windows/desktop/medfound/video-subtype-guids#luminance-and-depth-formats). |
 | KSDATAFORMAT_SUBTYPE_MJPG_IR | Compressed MJPEG frames. Media Foundation converts this into NV12 uncompressed frames and uses only the luma plane. |
 
 When these format type GUIDs are specified in the guidFormat field of the frame descriptor, the Media Foundation capture pipeline marks the stream as IR stream. Applications written with Media Foundation FrameReader API will be able to consume the IR stream. No scaling or conversions of the IR frames are supported by the pipeline for IR streams.
@@ -108,7 +107,7 @@ Windows inbox USB Video Class driver supports cameras that produce Depth streams
 
 | Type | Description |
 |--|--|
-| KSDATAFORMAT_SUBTYPE_D16 | 16 bit depth map values. This type is identical to [MFVideoFormat_D16](/windows/desktop/medfound/video-subtype-guids#luminance-and-depth-formats). The values are in millimeters. |
+| KSDATAFORMAT_SUBTYPE_D16 | 16-bit depth map values. This type is identical to [MFVideoFormat_D16](/windows/desktop/medfound/video-subtype-guids#luminance-and-depth-formats). The values are in millimeters. |
 
 When the format type GUID is specified in the guidFormat member of the frame descriptor, the Media Foundation capture pipeline marks the stream as depth stream. Applications written with FrameReader API will be able to consume the depth stream. No scaling or conversions of the depth frames are supported by the pipeline for depth streams.
 
@@ -139,9 +138,9 @@ typedef struct _VIDEO_FORMAT_FRAME
 
 ## Grouping cameras
 
-Windows supports grouping of cameras based on their container ID to aid applications work with related cameras. For example, an IR camera and a Color camera present on the same physical device can be exposed to the OS as related cameras. This will make applications like Windows Hello to make use of the related cameras for their scenarios.
+Windows supports grouping of cameras based on their container ID to aid applications work with related cameras. For example, an IR camera and a Color camera present on the same physical device can be exposed to the OS as related cameras. This makes applications like Windows Hello use the related cameras for their scenarios.
 
-The relation between the camera functions could be specified in the camera's BOS descriptor in firmware. The UVC driver will make use of this information and expose these camera functions as related. This will make the OS camera stack expose them as a related group of cameras to the applications.
+The relation between the camera functions could be specified in the camera's BOS descriptor in firmware. The UVC driver will make use of this information and expose these camera functions as related. This makes the OS camera stack expose them as a related group of cameras to the applications.
 
 The camera firmware must specify a *UVC-FSSensorGroupID*, which is a GUID in string form with the curly parenthesis. The cameras that have the same *UVC-FSSensorGroupID* will be grouped together.
 
@@ -149,7 +148,7 @@ The sensor group can be given a name by specifying *UVC-FSSensorGroupName*, a Un
 
 Refer to the Example composite device section below for an illustrative example BOS that specifies *UVC-FSSensorGroupID* and *UVC-FSSensorGroupName*.
 
-If you cannot update the device firmware as described above, you can use a custom INF and specify that your camera is part of a sensor group by specifying a sensor group ID and name as follows. The custom INF file (based on the inbox UVC driver) must include the following AddReg entries:
+If you can't update the device firmware as described above, you can use a custom INF and specify that your camera is part of a sensor group by specifying a sensor group ID and name as follows. The custom INF file (based on the inbox UVC driver) must include the following AddReg entries:
 
 **FSSensorGroupID**: REG_SZ: "{your sensor group ID GUID}"
 
@@ -185,13 +184,13 @@ UVC specification does provide a mechanism to specify if the video streaming int
 
 The value to specify to enable Method 2/3 still image capture is a DWORD named *UVC-EnableDependentStillPinCapture*. Specify its value using the BOS descriptor. The [Example composite device](#example-composite-device) below illustrates enabling still image capture with an example BOS descriptor.
 
-If you cannot update the device firmware as described above, you can use a custom INF to specify that your camera supports Method 2 or Method 3 still capture method.
+If you can't update the device firmware as described above, you can use a custom INF to specify that your camera supports Method 2 or Method 3 still capture method.
 
 The custom INF file (based on either custom UVC driver or inbox UVC driver) must include the following AddReg entry:
 
 **EnableDependentStillPinCapture**: REG_DWORD: 0x0 (Disabled) to 0x1 (Enabled)
 
-When this entry is set to Enabled (0x1), the capture pipeline will leverage Method 2/3 for still image capture (assuming the firmware also advertises support for Method 2/3 as specified by UVC spec).
+When this entry is set to Enabled (0x1), the capture pipeline leverages Method 2/3 for still image capture (assuming the firmware also advertises support for Method 2/3 as specified by UVC spec).
 
 An example for the custom INF section is as follows:
 
@@ -231,17 +230,17 @@ The following figure illustrates the architecture involving a chain of DMFTs.
 
 Capture samples flow from camera driver to DevProxy, then go through the DMFT chains. Every DMFT in the chain has a chance to process the sample. If the DMFT doesn't want to process the sample, it can act as a pass-through just pass the sample to next DMFT.
 
-For controls like KsProperty, the call will go up stream – the last DMFT in the chain will get the call first, the call can be handled there or get passed to previous DMFT in the chain.
+For controls like KsProperty, the call goes upstream – the last DMFT in the chain gets the call first, the call can be handled there or get passed to previous DMFT in the chain.
 
-Errors will be propagated from DMFT to DTM then to applications. For IHV/OEM DMFTs, any one of the DMFT fails to instantiate will be a fatal error for DTM.
+Errors are propagated from DMFT to DTM then to applications. For IHV/OEM DMFTs, if any of the DMFT fails to instantiate, it will be a fatal error for DTM.
 
 Requirements on DMFTs:
 
-- The input pin count of the DMFT must match with the output pin count of previous DMFT, otherwise DTM would fail during initialization. However, the input and output pin counts of same DMFT do not need to match.
+- The input pin count of the DMFT must match with the output pin count of previous DMFT, otherwise DTM would fail during initialization. However, the input and output pin counts of the same DMFT don't need to match.
 
-- DMFT needs to support interfaces - IMFDeviceTransform, IMFShutdown, IMFRealTimeClientEx, IKsControl and IMFMediaEventGenerator; IMFTransform may need to be supported if there is MFT0 configured or the next DMFT in the chain requires IMFTransform support.
+- DMFT needs to support interfaces - IMFDeviceTransform, IMFShutdown, IMFRealTimeClientEx, IKsControl and IMFMediaEventGenerator; IMFTransform may need to be supported if there's MFT0 configured or the next DMFT in the chain requires IMFTransform support.
 
-- On 64-bit systems that do not make use of Frame Server, both 32-bit and 64-bit DMFTs must be registered. Given that a USB camera might get plugged into an arbitrary system, for "external" (or non-inbox) USB cameras, the USB camera vendor should supply both 32-bit and 64-bit DMFTs.
+- On 64-bit systems that don't make use of Frame Server, both 32-bit and 64-bit DMFTs must be registered. Given that a USB camera might get plugged into an arbitrary system, for "external" (or non-inbox) USB cameras, the USB camera vendor should supply both 32-bit and 64-bit DMFTs.
 
 ## Configuring the DMFT chain
 
@@ -251,7 +250,7 @@ In the custom .INF file's "Interface AddReg" section, specify the DMFT CLSIDs by
 
 **CameraDeviceMftCLSIDChain** (REG_MULTI_SZ) %Dmft0.CLSID%,%Dmft.CLSID%,%Dmft2.CLSID%
 
-As shown in the sample INF settings below (replace the %Dmft0.CLSID% and % Dmft1.CLSID% with the actual CLSID strings you are using for your DMFTs), there are maximum of 2 CLSIDs allowed in Windows 10, version 1703, and the first one is closest to DevProxy and the last one is the last DMFT in the chain.
+As shown in the sample INF settings below (replace the %Dmft0.CLSID% and % Dmft1.CLSID% with the actual CLSID strings you're using for your DMFTs), there are maximum of 2 CLSIDs allowed in Windows 10, version 1703, and the first one is closest to DevProxy and the last one is the last DMFT in the chain.
 
 Platform DMFT CLSID is {3D096DDE-8971-4AD5-98F9-C74F56492630}.
 
@@ -269,7 +268,7 @@ Some example **CameraDeviceMftCLSIDChain** settings:
 
   - CameraDeviceMftCLSIDChain = "{3D096DDE-8971-4AD5-98F9-C74F56492630}",%Dmft.CLSID%
 
-  - Here is a screen shot of the result registry key for an USB camera with Platform DMFT and an DMFT (with GUID {D671BE6C-FDB8-424F-81D7-03F5B1CE2CC7}) in the chain.
+  - Here's a screenshot of the result registry key for a USB camera with the Platform DMFT and a DMFT (with GUID {D671BE6C-FDB8-424F-81D7-03F5B1CE2CC7}) in the chain.
 
 ![Registry editor DMFT chain.](images/dmft-registry-editor.png)
 
@@ -280,9 +279,9 @@ Some example **CameraDeviceMftCLSIDChain** settings:
 > [!NOTE]
 > The **CameraDeviceMftCLSIDChain** can have a maximum 2 of CLSIDs.
 
-If **CameraDeviceMftCLSIDChain** is configured, the legacy CameraDeviceMftCLSID settings will be skipped by DTM.
+If **CameraDeviceMftCLSIDChain** is configured, the legacy CameraDeviceMftCLSID settings are skipped by DTM.
 
-If **CameraDeviceMftCLSIDChain** is not configured and the legacy CameraDeviceMftCLSID is configured, then the chain would look like (if its USB camera and supported by Platform DMFT and Platform DMFT is enabled) DevProxy &lt;–&gt; Platform DMFT &lt;–&gt; OEM/IHV DMFT or (if the camera is not supported by Platform DMFT or Platform DMFT is disabled) DevProxy &lt;-&gt; OEM/IHV DMFT.
+If **CameraDeviceMftCLSIDChain** isn't configured and the legacy CameraDeviceMftCLSID is configured, then the chain would look like (if its USB camera and supported by Platform DMFT and Platform DMFT is enabled) DevProxy &lt;–&gt; Platform DMFT &lt;–&gt; OEM/IHV DMFT or (if the camera isn't supported by Platform DMFT or Platform DMFT is disabled) DevProxy &lt;-&gt; OEM/IHV DMFT.
 
 Example INF file settings:
 
@@ -307,17 +306,17 @@ Starting in Windows 10, version 1703, Windows provides an inbox Device MFT for U
 > [!NOTE]
 > If the camera does not support UVC 1.5 based ROI, then the PDMFT will not load even if the device opted in to use PDMFT.
 
-A UVC camera could opt-in to use platform DMFT by specifying the EnablePlatformDmft through BOS descriptor.
+A UVC camera could opt in to use platform DMFT by specifying the EnablePlatformDmft through BOS descriptor.
 
 The value to specify to enable Platform DMFT is a DWORD by name *UVC-EnablePlatformDmft* and specify its value using the BOS descriptor. The [Example composite device](#example-composite-device) section below illustrates enabling Platform DMFT with an example BOS descriptor.
 
-If you cannot update the device firmware as described above, you can use a custom INF file to enable Platform DMFT for the device.
+If you can't update the device firmware as described above, you can use a custom INF file to enable Platform DMFT for the device.
 
 The custom INF file (based on either custom UVC driver or inbox UVC driver) must include the following AddReg entry:
 
 **EnablePlatformDmft**: REG_DWORD: 0x0 (Disabled) to 0x1 (Enabled)
 
-When this entry is set to Enabled (0x1), the capture pipeline will use inbox Platform DMFT for the device. The following shows an example of this custom INF section:
+When this entry is set to Enabled (0x1), the capture pipeline uses the inbox Platform DMFT for the device. The following shows an example of this custom INF section:
 
 ```inf
 [USBVideo.NT.Interfaces]
@@ -337,18 +336,18 @@ HKR,,RTCFlags,0x00010001,0x00000010
 HKR,,EnablePlatformDmft,0x00010001,0x00000001
 ```
 
-In Windows 10, version 1703, if a device opts in to use PDMFT then all features that are supported by the PDMFT are enabled (based on the device capabilities). Granular configuration of PDMFT features is not supported.
+In Windows 10, version 1703, if a device opts in to use PDMFT then all features that are supported by the PDMFT are enabled (based on the device capabilities). Granular configuration of PDMFT features isn't supported.
 
 > [!NOTE]
 > Face-based ROI coordinates are calculated relative to the field of view of the image transmitted into the PDMFT. If the field of view has been modified due to use of a control such as [Zoom, Pan or Tilt](propsetid-vidcap-cameracontrol.md) or [Digital Window](digital-window-overview.md), the camera is responsible for mapping the provided coordinates back to the sensor's full field of view, considering the current zoom/pan window.
 
 ## Face Auth Profile via MS OS Descriptors
 
-Windows 10 RS5 now enforces a Face Auth Profile V2 requirement for any camera with Windows Hello support. For MIPI based systems with custom camera driver stack, this support can be published either via an INF (or an Extension INF) or through a user mode plug in (Device MFT).
+Windows 10 RS5 now enforces a Face Auth Profile V2 requirement for any camera with Windows Hello support. For MIPI based systems with custom camera driver stack, this support can be published either via an INF (or an Extension INF) or through a user mode plug-in (Device MFT).
 
-However, for USB Video devices, a constraint with UVC based cameras is that for Windows 10 19H1, custom camera drivers are not allowed. All UVC based cameras must use the inbox USB Video Class driver and any vendor extensions must be implemented in the form of a Device MFT.
+However, for USB Video devices, a constraint with UVC based cameras is that for Windows 10 19H1, custom camera drivers aren't allowed. All UVC based cameras must use the inbox USB Video Class driver and any vendor extensions must be implemented in the form of a Device MFT.
 
-For many OEM/ODMs, the preferred approach for camera modules is to implement much of the functionality within the module's firmware, i.e. via Microsoft OS Descriptors.
+For many OEM/ODMs, the preferred approach for camera modules is to implement much of the functionality within the module's firmware, that is, via Microsoft OS Descriptors.
 
 The following cameras are supported for publish Face Auth Profile via the MSOS Descriptors (also called BOS descriptors):
 
@@ -374,7 +373,7 @@ Examples are included below for the following specifications:
 The extended properties OS descriptor has two components
 
 - A fixed-length header section
-- One or more variable length custom properties sections, which follows the header section
+- One or more variable length custom properties sections, which follow the header section
 
 #### Microsoft OS 1.0 Descriptor Header Section
 
@@ -402,7 +401,7 @@ The Header Section describes a single custom property (Face Auth Profile).
 
 The UVC-CPV2FaceAuth data payload is a 32-bit unsigned integer. The high order 16-bit represents the 0 based index of the media type list exposed by the RGB pin. The low order 16-bit represents the 0 based index of the media type list exposed by the IR pin.
 
-For example, a Type 3 Camera which exposes the following media types, in the order declared from the RGB pin:
+For example, a Type 3 Camera that exposes the following media types, in the order declared from the RGB pin:
 
 - YUY2, 640x480@30fps
 
@@ -420,7 +419,7 @@ And the following media type for IR:
 
 - L8, 480x480@10fps
 
-A payload value of 0x00010000, will result in the following Face Auth Profile being published:
+A payload value of 0x00010000 will result in the following Face Auth Profile being published:
 
 Pin0:(RES==1280,720;FRT==30,1;SUT==MJPG)  // Second media type (0x0001)  
 Pin1:(RES==480,480;FRT==30,1;SUT==L8)     // First media type (0x0000)
@@ -430,7 +429,7 @@ Pin1:(RES==480,480;FRT==30,1;SUT==L8)     // First media type (0x0000)
 
 ##### Type 1 Camera Sample
 
-For a Type 1 Camera, since there is no IR pin (with the expectation that a Type 1 Camera will be paired to a Type 2 Camera on the machine in a Sensor Group), only the RGB media type index is published. For the IR media type index, the low order 16-bit value of the payload must be set to 0xFFFF.
+For a Type 1 Camera, since there's no IR pin (with the expectation that a Type 1 Camera will be paired to a Type 2 Camera on the machine in a Sensor Group), only the RGB media type index is published. For the IR media type index, the low order 16-bit value of the payload must be set to 0xFFFF.
 
 For example, if a Type 1 Camera exposed the following list of media types:
 
@@ -496,7 +495,7 @@ UCHAR Example2_MSOS20DescriptorSet_UVCFaceAuthForFutureWindows[0x3C] =
 }
 ```
 
-When UVC-CPV2FaceAuth registry entry is added, devices do not need to publish the EnableDshowRedirection registry entry as described in [DShow Bridge implementation guidance for UVC devices](./dshow-bridge-implementation-guidance-for-usb-video-class-devices.md).
+When UVC-CPV2FaceAuth registry entry is added, devices don't need to publish the EnableDshowRedirection registry entry as described in [DShow Bridge implementation guidance for UVC devices](./dshow-bridge-implementation-guidance-for-usb-video-class-devices.md).
 
 However, if the device vendor must support older versions of Windows and/or need to enable MJPEG decompression within Frame Server, the EnableDshowRedirection registry entry must be added.
 
@@ -506,9 +505,9 @@ When OEMs build systems using Type 1 and Type 2 Cameras to provide both RGB and 
 
 This is done by declaring a FSSensorGroupId and FSSensorGroupName tag in an Extension INF to be created under the device interface property for each camera.
 
-However, if Extension INF is not provided, ODMs may use the same MSOS Descriptors to publish the FSSensorGroupId and FSSensorGroupName values. The inbox Windows 10 USB Video Class driver will automatically take any MSOS Descriptor whose Payload Name has been prefixed with "UVC-" and migrate the tag into the device interface property store (removing the "UVC-" prefix).
+However, if Extension INF isn't provided, ODMs may use the same MSOS Descriptors to publish the FSSensorGroupId and FSSensorGroupName values. The inbox Windows 10 USB Video Class driver will automatically take any MSOS Descriptor whose Payload Name has been prefixed with "UVC-" and migrate the tag into the device interface property store (removing the "UVC-" prefix).
 
-So a Type 1 and Type 2 Camera which publishes the following will allow the OS to synthesize the cameras into a multi-device Sensor Group for use with Windows Hello:
+So a Type 1 and Type 2 Camera that publishes the following will allow the OS to synthesize the cameras into a multi-device Sensor Group for use with Windows Hello:
 
 > UVC-FSSensorGroupId  
 > UVC-FSSensorGroupName
@@ -521,7 +520,7 @@ The value of the GUID must be the same between the Type 1 and Type 2 Cameras and
 
 ## Custom Device Interface Categories for Sensor Groups
 
-Starting in 19H1, Windows is providing an IHV/OEM specified extension mechanism to allow publishing synthesized Sensor Groups into any custom or pre-defined category. Generation of a Sensor Group is defined by IHV/OEMs providing a Sensor Group ID key in the custom INF:
+Starting in 19H1, Windows is providing an IHV/OEM specified extension mechanism to allow publishing synthesized Sensor Groups into any custom or predefined category. Generation of a Sensor Group is defined by IHV/OEMs providing a Sensor Group ID key in the custom INF:
 
 > FSSensorGroupId: {Custom GUID}  
 > FSSensorGroupName: \<Friendly Name used for Sensor Group\>
@@ -532,7 +531,7 @@ In addition to the two above AddReg entries in the INF, a new AddReg entry is de
 
 Multiple categories are defined using a semi-colon (;) delimited GUID list.
 
-Each device declaring a matching FSSensorGroupId, must declare the same FSSensorGroupCategoryList. If the list does not match, all lists will be ignored and the Sensor Group will be published by default into KSCATEGORY_SENSOR_GROUP as if no custom categories were defined.
+Each device declaring a matching FSSensorGroupId must declare the same FSSensorGroupCategoryList. If the list doesn't match, all lists are ignored and the Sensor Group are published by default into KSCATEGORY_SENSOR_GROUP as if no custom categories were defined.
 
 ## Camera Rotation
 
@@ -544,7 +543,7 @@ See [UVC Control Cache](camera-device-uvc-control-cache.md)
 
 ## BOS and MS OS 2.0 descriptor
 
-UVC compliant camera can specify Windows specific device configuration values in a platform capability BOS descriptor in its firmware using [Microsoft OS 2.0 Descriptors](/previous-versions/dn385747(v=msdn.10)). Please refer the documentation on MS OS 2.0 descriptor to understand how to specify a valid BOS descriptor that conveys the device configuration to the OS.
+UVC compliant camera can specify Windows specific device configuration values in a platform capability BOS descriptor in its firmware using [Microsoft OS 2.0 Descriptors](/previous-versions/dn385747(v=msdn.10)). Refer the documentation on MS OS 2.0 descriptor to understand how to specify a valid BOS descriptor that conveys the device configuration to the OS.
 
 ### Microsoft OS 2.0 Descriptor Set Header
 
@@ -577,7 +576,7 @@ UVC driver reads the configuration values from the device HW registry key and co
 
 Configuring UVC devices through platform BOS descriptor is a mechanism that was enabled in Windows 10, version 1703 to help UVC device vendors to configure the device without the need of an INF file on Windows OS.
 
-Configuring UVC devices through custom INF is still supported and that takes precedence over BOS descriptor based mechanism. While specifying device properties through INF, you do not need to add the prefix "UVC-". This prefix is only needed for device properties that are specified through BOS descriptor and that are per interface instance specific. If your device needs user mode plugins like DMFT, then you need to supply an INF for installing the DMFT. It cannot be configured using firmware.
+Configuring UVC devices through custom INF is still supported and that takes precedence over BOS descriptor based mechanism. While specifying device properties through INF, you don't need to add the prefix "UVC-". This prefix is only needed for device properties that are specified through BOS descriptor and that are per interface instance specific. If your device needs user mode plugins like DMFT, then you need to supply an INF for installing the DMFT. It can't be configured using firmware.
 
 ## Currently supported configuration values through BOS descriptor
 
@@ -588,7 +587,7 @@ Configuring UVC devices through custom INF is still supported and that takes pre
 | UVC-EnableDependentStillPinCapture | REG_DWORD | To enable still capture Method 2/3 |
 | UVC-EnablePlatformDmft | REG_DWORD | To enable Platform DMFT |
 
-When UVC driver sees the registry values with prefix "UVC-", it populates the device's category interface instance registry key, with the same values without the prefix. The driver will do this for any variable specified by the firmware, not just the ones listed above.
+When UVC driver sees the registry values with prefix "UVC-", it populates the device's category interface instance registry key, with the same values without the prefix. The driver does this for any variable specified by the firmware, not just the ones listed above.
 
 ```Registry
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceClasses\{e5323777-f976-4f5b-9b55-b94699c46e44}\<Device Symbolic Link>\Device Parameters
@@ -644,7 +643,7 @@ The BOS platform capability descriptor specifies:
 
 1. MS OS 2.0 descriptor platform capability GUID
 
-1. A vendor control code bMS_VendorCode (here is it set to 1. It can take any value the vendor prefers) to retrieve the MS OS 2.0 descriptor.
+1. A vendor control code bMS_VendorCode (here's it set to 1. It can take any value the vendor prefers) to retrieve the MS OS 2.0 descriptor.
 
 1. This BOS descriptor is applicable for OS version Windows 10 and later.
 

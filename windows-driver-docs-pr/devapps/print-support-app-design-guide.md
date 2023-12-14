@@ -1,7 +1,7 @@
 ---
 title: Print support app design guide
 description: Provides guidance and examples for printer OEMs and IHVs that are implementing a print support app (PSA) for their device.
-ms.date: 06/12/2023
+ms.date: 12/14/2023
 ---
 
 # Print support app design guide
@@ -30,7 +30,7 @@ Another area where the printer manufacturers can improve and differentiate is pr
 |--|--|
 | PSA | Print Support Application. A UWP app that uses the API described in this article. |
 | MPD | Modern Print Dialog. This is shown to the user when an app is printing using Windows.Graphics.Printing API. |
-| CPD | Common Print Dialog. This is shown to the user when app is printing using win32 API. Apps that need to show print preview don't trigger this dialog and implement a version of dialog themselves. Office apps are a prime example of this. |
+| CPD | Common Print Dialog. This is shown to the user when app is printing using the Win32 API. Apps that need to show print preview don't trigger this dialog and implement a version of dialog themselves. Office apps are a prime example of this. |
 | IPP | Internet Printing Protocol. Used from a client device to interact with the printer to retrieve and set printing preferences and to send the document to be printed. |
 | Print Support Associated Printer | Printer that is linked to PSA. |
 | IPP Printer | Printer that supports IPP protocol. |
@@ -54,7 +54,7 @@ These samples reference a **printsupport** namespace, which is defined as:
 
 When a user is about to print a document, they often would like to set some preferences with which to print it. For example, they may choose to print a document in landscape orientation. They may also take advantage of a custom feature that their printer supports. Windows provides default UI to show custom preferences, but the user may not understand them as there are no appropriate icons or descriptions. Windows may also be using the wrong UI control to present it. Such a custom feature is best presented by an app that understands the feature completely. This is the motivation behind offering an API that lets the printer manufacturers create apps tailored to the various printer models they make.
 
-A new UAP extension contract is created with a new category named "windows.printSupportSettingsUI". Apps activated with this contract receive a new ActivationKind called PrintSupportSettingsUI. This contract doesn't require any new capability.
+A new UAP extension contract is created with a new category named windows.printSupportSettingsUI. Apps activated with this contract receive a new ActivationKind called PrintSupportSettingsUI. This contract doesn't require any new capability.
 
 ```xml
 <Extensions>
@@ -63,7 +63,7 @@ A new UAP extension contract is created with a new category named "windows.print
 </Extensions>
 ```
 
-This contract is invoked when the user select **More Settings** in MPD or **Preferences** in CPD. This contract can also be invoked from **Printing Preferences** in the Settings app. When the contract is activated, the app receives a **PrintSupportSettingsUISession** object that can be used to get the current **PrintTicket** and **PrintDevice** objects. The **PrintDevice** object can be used for communicating with the printer to receive printer and job attributes. The app can then show UI with appropriate options of the printer to the user. When the user makes the choices and select **OK**, the application may then modify the print ticket, validate it, and then submit back using **PrintSupportPrintTicketTarget** object. If the user chooses to cancel the preferences window, changes should be discarded, and the application should exit by completing the deferral taken from the **PrintSupportSettingsUISession** object.
+This contract is invoked when the user selects **More Settings** in MPD or **Preferences** in CPD. This contract can also be invoked from **Printing Preferences** in the Settings app. When the contract is activated, the app receives a **PrintSupportSettingsUISession** object that can be used to get the current **PrintTicket** and **PrintDevice** objects. The **PrintDevice** object can be used for communicating with the printer to receive printer and job attributes. The app can then show UI with appropriate options of the printer to the user. When the user makes the choices and selects **OK**, the application may then modify the print ticket, validate it, and then submit back using **PrintSupportPrintTicketTarget** object. If the user chooses to cancel the preferences window, changes should be discarded, and the application should exit by completing the deferral taken from the **PrintSupportSettingsUISession** object.
 
 The Print Support App is expected to handle multiple simultaneous activations for different print jobs, so such an app must support multiple instances using the **SupportsMultipleInstances** element in the package.appxmanifest file. Failure to do so might result in situations where confirming preferences of one print job might close other preferences windows that may be open. The user is required to open those preferences windows again.
 
@@ -357,7 +357,7 @@ This service can run at any point in a print job for the associated IPP printer.
 
 1. `event Windows.Foundation.TypedEventHandler<PrintSupportExtensionSession, PrintSupportPrintDeviceCapabilitiesChangedEventArgs>; PrintDeviceCapabilitiesChanged;`
 
-    The event is raised after the print system has updated the cached PrintDeviceCapabilities of the associated IPP printer. When this event is raised, the PrintSupportExtension background class can inspect the changed PrintDeviceCapabilities and modify it.
+    The event is raised after the print system updates the cached PrintDeviceCapabilities of the associated IPP printer. When this event is raised, the PrintSupportExtension background class can inspect the changed PrintDeviceCapabilities and modify it.
 
 ### Custom validation of print ticket
 
@@ -461,7 +461,7 @@ A new **ActivationKind** called **PrintSupportJobUI** is defined. This doesn't r
 </Extensions>
 ```
 
-This is a UI contract that can be launched from either the Print Support Workflow background contract, or when the user select on a print job error toast. On activation, **PrintWorkflowJobActivatedEventArgs** is provided, which has a **PrintWorkflowJobUISession** object. Using **PrintWorkflowJobUISession**, the foreground application should register for the **PdlDataAvailable** event if it wants to access the PDL data. If the foreground application would like to show custom error messages for any errors that can occur during the job, it should register for the **JobNotification** event. Once the events are registered, the application should call the **PrintWorkflowJobUISession::Start** function in order for the print system to start firing events.
+This is a UI contract that can be launched from either the Print Support Workflow background contract, or when the user selects a print job error toast. On activation, **PrintWorkflowJobActivatedEventArgs** is provided, which has a **PrintWorkflowJobUISession** object. Using **PrintWorkflowJobUISession**, the foreground application should register for the **PdlDataAvailable** event if it wants to access the PDL data. If the foreground application would like to show custom error messages for any errors that can occur during the job, it should register for the **JobNotification** event. Once the events are registered, the application should call the **PrintWorkflowJobUISession::Start** function in order for the print system to start firing events.
 
 ### Skipping system rendering
 
@@ -825,7 +825,7 @@ public sealed partial class JobUIPage : Page
 
 ### Create job with initial job attributes
 
-Currently, some IPP printers don't support set-attribute operation. The **CreateJobOnPrinterWithAttributes** function and CreateJobOnPrinterWithAttributesBuffer function on **PrintWorkflowPdlDataAvailableEventArgs** are provided to mitigate this issue. Using these APIs, a PSA developer can provide job attributes that is passed to printer when job is created on the printer.
+Currently, some IPP printers don't support set-attribute operation. The **CreateJobOnPrinterWithAttributes** function and CreateJobOnPrinterWithAttributesBuffer function on **PrintWorkflowPdlDataAvailableEventArgs** are provided to mitigate this issue. Using these APIs, a PSA developer can provide job attributes that are passed to printer when job is created on the printer.
 
 ```csharp
 public sealed partial class JobUIPage : Page
@@ -988,7 +988,7 @@ private void OnPdlModificationRequested(PrintWorkflowJobBackgroundSession sessio
 > [!IMPORTANT]
 > This section describes PSA functionality available starting in Windows 11, version 22H2.
 
-In this scenario, using the print dialog with PSA integration enables the following:
+In this scenario, using the print dialog with PSA integration enables the following actions:
 
 - Get a callback when selection is changed in the MPD to the printer associated with PSA
 
