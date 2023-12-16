@@ -1,12 +1,11 @@
 ---
 title: Overview of Single Root I/O Virtualization (SR-IOV)
-description: The SR-IOV interface is an extension to the PCI Express (PCIe) specification.
-ms.date: 03/16/2022
+description: This article provides an overview of the Single Root I/O Virtualization (SR-IOV) interface, an extension to the PCI Express (PCIe) specification.
+ms.date: 12/15/2023
 ms.custom: contperf-fy21q2
 ---
 
 # Overview of Single Root I/O Virtualization (SR-IOV)
-
 
 The single root I/O virtualization (SR-IOV) interface is an extension to the PCI Express (PCIe) specification. SR-IOV allows a device, such as a network adapter, to separate access to its resources among various PCIe hardware functions. These functions consist of the following types:
 
@@ -23,12 +22,3 @@ For more information, see the following topics:
 [SR-IOV Architecture](sr-iov-architecture.md)
 
 [SR-IOV Data Paths](sr-iov-data-paths.md)
-
- 
-
- 
-
-
-
-
-
