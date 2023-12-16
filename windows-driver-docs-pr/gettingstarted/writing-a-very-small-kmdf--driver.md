@@ -1,16 +1,14 @@
 ---
 title: Write a Hello World Windows Driver (KMDF)
-description: How to write a Windows driver using Kernel-Mode Driver Framework (KMDF). You'll start with a Microsoft Visual Studio template and then deploy and install your driver on a separate computer.
-keywords:
-- KMDF Hello World
-ms.date: 11/04/2022
+description: How to write a Windows driver using Kernel-Mode Driver Framework (KMDF). You'll start with a Microsoft Visual Studio template.
+ms.date: 12/15/2023
 ---
 
 # Write a Hello World Windows Driver (KMDF)
 
 This article describes how to write a small [Universal Windows driver](/windows-hardware/drivers) using Kernel-Mode Driver Framework (KMDF) and then deploy and install your driver on a separate computer. 
 
-Before you proceed, you'll need to follow the installation steps listed in [Download the Windows Driver Kit (WDK)](../download-the-wdk.md).
+Before you proceed, complete the installation steps listed in [Download the Windows Driver Kit (WDK)](../download-the-wdk.md).
 
 [Debugging Tools for Windows](../debugger/index.md) is included when you install the WDK.
 
@@ -20,7 +18,7 @@ Before you proceed, you'll need to follow the installation steps listed in [Down
 1. In the **Create a new project** dialog box, select **C++** in the left dropdown, choose **Windows** in the middle dropdown, and choose **Driver** in the right dropdown.
 1. Select **Kernel Mode Driver, Empty (KMDF)** from the list of project types. Select **Next**.
 
-    :::image type="content" source="images/vs2019-kmdf-template.png" alt-text="Screen shot of the Visual Studio new project dialog box, showing kernel mode driver selected.":::
+    :::image type="content" source="images/vs2019-kmdf-template.png" alt-text="Screenshot of the Visual Studio new project dialog box with the kernel mode driver option selected.":::
 
 1. In the **Configure your new project** dialog box, enter "KmdfHelloWorld" in the **Project name** field.
 
@@ -30,15 +28,15 @@ Before you proceed, you'll need to follow the installation steps listed in [Down
 1. In the **Location** field, enter the directory where you want to create the new project.
 1. Check **Place solution and project in the same directory** and select **Create**.
 
-    :::image type="content" source="images/vs2019-kmdf-configure.png" alt-text="Screen shot of the Visual Studio configure your new project configuration dialog box. The Create button is highlighted.":::
+    :::image type="content" source="images/vs2019-kmdf-configure.png" alt-text="Screenshot of the Visual Studio configure your new project dialog box with the Create button highlighted.":::
 
     Visual Studio creates one project and a solution. You can see them in the **Solution Explorer** window. (If the Solution Explorer window isn't visible, choose **Solution Explorer** from the **View** menu.) The solution has a driver project named KmdfHelloWorld.
 
-    :::image type="content" source="images/vs2019-kmdf-hello-world-solution-explorer.png" alt-text="Screen shot of the Visual Studio solution explorer window, showing the solution and the empty driver project KmdfHelloWorld.":::
+    :::image type="content" source="images/vs2019-kmdf-hello-world-solution-explorer.png" alt-text="Screenshot of the Visual Studio solution explorer window displaying the solution and the empty driver project named KmdfHelloWorld.":::
 
-1. In the **Solution Explorer** window, select and hold (or right-click) the **KmdfHelloWorld** project and choose **Configuration Manager**. Choose a configuration and platform for the driver project. For example, choose **Debug** and **x64**.
+1. In the **Solution Explorer** window, select and hold (or right-select) the **KmdfHelloWorld** project and choose **Configuration Manager**. Choose a configuration and platform for the driver project. For example, choose **Debug** and **x64**.
 
-1. In the **Solution Explorer** window, again select and hold (or right-click) the **KmdfHelloWorld** project, choose **Add**, and then select **New Item**.
+1. In the **Solution Explorer** window, again select and hold (or right-select) the **KmdfHelloWorld** project, choose **Add**, and then select **New Item**.
 1. In the **Add New Item** dialog box, select **C++ File**. For **Name**, enter "Driver.c".
 
     > [!NOTE]
@@ -46,7 +44,7 @@ Before you proceed, you'll need to follow the installation steps listed in [Down
 
      Select **Add**. The *Driver.c* file is added under **Source Files**, as shown here.
 
-    :::image type="content" source="images/vs2019-first-driver-kmdf.png" alt-text="Screen shot of the Visual Studio solution explorer window, showing the driver.c file added to the driver project.":::
+    :::image type="content" source="images/vs2019-first-driver-kmdf.png" alt-text="Screenshot of the Visual Studio solution explorer window displaying the driver.c file added to the driver project.":::
 
 ## Write your first driver code
 
@@ -223,9 +221,9 @@ Next, you'll build your driver.
 
 ## Build the driver
 
-1. In the **Solution Explorer** window, select and hold (or right-click) **Solution 'KmdfHelloWorld' (1 project)** and choose **Configuration Manager**. Choose a configuration and platform for the driver project. For this exercise, we choose **Debug** and **x64**.
+1. In the **Solution Explorer** window, select and hold (or right-select) **Solution 'KmdfHelloWorld' (1 project)** and choose **Configuration Manager**. Choose a configuration and platform for the driver project. For this exercise, we choose **Debug** and **x64**.
 
-1. In the **Solution Explorer** window, select and hold (or right-click) **KmdfHelloWorld** and choose **Properties**. In **Wpp Tracing &gt; All Options**, set **Run Wpp tracing** to **No**. Select **Apply** and then **OK**.
+1. In the **Solution Explorer** window, select and hold (or right-select) **KmdfHelloWorld** and choose **Properties**. In **Wpp Tracing > All Options**, set **Run Wpp tracing** to **No**. Select **Apply** and then **OK**.
 
 1. To build your driver, choose **Build Solution** from the **Build** menu. Visual Studio shows the build progress in the **Output** window. (If the **Output** window isn't visible, choose **Output** from the **View** menu.) When you've verified that the solution built successfully, you can close Visual Studio.
 
@@ -258,7 +256,7 @@ So far you've used Visual Studio to build a driver on the host computer. Now you
 1. For **Target Device Name**, select the name of the computer that you configured for testing and debugging. In this exercise, we use a computer named MyTestComputer.
 1. Select **Hardware ID Driver Update**, and enter the hardware ID for your driver. For this exercise, the hardware ID is Root\\KmdfHelloWorld. Select **OK**.
 
-    :::image type="content" source="images/vs2019-kmdf-hello-world-property-pages.png" alt-text="Screen shot showing the kmdfhelloworld property pages window with the deployment driver install selected.":::
+    :::image type="content" source="images/vs2019-kmdf-hello-world-property-pages.png" alt-text="Screenshot of the kmdfhelloworld property pages window with the deployment driver install option selected.":::
 
     >[!NOTE]
     > In this exercise, the hardware ID does not identify a real piece of hardware. It identifies an imaginary device that will be given a place in the [device tree](device-nodes-and-device-stacks.md) as a child of the root node. For real hardware, do not select **Hardware ID Driver Update**; instead, select **Install and Verify**. You'll see the hardware ID in your driver's information (INF) file. In the **Solution Explorer** window, go to **KmdfHelloWorld &gt; Driver Files**, and double-click KmdfHelloWorld.inf. The hardware ID is located under \[Standard.NT$ARCH$\].
@@ -300,7 +298,7 @@ With your Hello World driver deployed to the target computer, now you'll install
 
         A dialog box will appear indicating that the test driver is an unsigned driver. Select **Install this driver anyway** to proceed.
         
-        :::image type="content" source="../debugger/images/debuglab-image-install-security-warning.png" alt-text="Screenshot of the driver installation warning.":::
+        :::image type="content" source="../debugger/images/debuglab-image-install-security-warning.png" alt-text="Screenshot of the security warning displayed during the driver installation process.":::
 
 ## Debug the driver
 
