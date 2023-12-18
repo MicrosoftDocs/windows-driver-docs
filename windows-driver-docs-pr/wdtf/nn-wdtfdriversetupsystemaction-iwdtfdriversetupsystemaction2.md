@@ -52,8 +52,7 @@ Defines operations that control the system during driver setup.
 
 ## -inheritance
 
-The <b>IWDTFDriverSetupSystemAction2</b> interface inherits from <b>IWDTFAction2</b>. <b>IWDTFDriverSetupSystemAction2</b> also has these types of members:
-<ul>
-<li><a href="/">Methods</a></li>
-</ul>
+The <b>IWDTFDriverSetupSystemAction2</b> interface inherits from <b>IWDTFAction2</b>.
+
+
 
