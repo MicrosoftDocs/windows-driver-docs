@@ -46,9 +46,9 @@ The following diagram shows the high level design and interaction between the th
 This section provides a sample INF that is part of the WU package. The key points to note in INF file are:
 
 -   The firmware binaries are independent of the UMDF driver.
--   The firmware binaries are located a well-known, pre-defined location as shown below to filename collisions. The binaries cannot be not be executable files containing PE/COFF headers.
--   `%windir%\Firmware\<IHVCompanyName>\<UniqueBinaryName>.bin`
--   The UMDF driver is aware of this predefined well-known location.
+-   The firmware binaries are located in the driverstore directory, a path determined by the operating system and referenced in the INF using DIRID 13. The binaries cannot be not be executable files containing PE/COFF headers.
+-   `%13%\<UniqueBinaryName>.bin`
+-   The INF file stores this location in the registry and the UMDF driver reads the registry value to discover the binary location.
 -   The sample INF template below has highlighted items that need to be filled by the IHV.
 
 ```cpp
@@ -66,10 +66,16 @@ PnpLockdown     = 1
 
 [Firmware.NTx86]
 %DeviceDesc%    = Firmware_Install,MBFW\{FirmwareID}    ; From Device Service
-;eg.%DeviceDesc%=Firmware_Install,MBFW\{2B13DD42-649C-3442-9E08-D85B26D7825C}
+;%DeviceDesc%    = Firmware_Install,MBFW\{2B13DD42-649C-3442-9E08-D85B26D7825C}
 
 [Firmware_Install.NT]
 CopyFiles       = FirmwareDriver_CopyFiles,FirmwareImage_CopyFiles
+
+[Firmware_Install.NT.HW]
+AddReg          = Device_AddReg
+
+[Device_AddReg]
+HKR,,FirmwareBinary,,"%13%\MBIHVFirmware-XYZ-1.0.bin"
 
 [Firmware_Install.NT.Services]
 AddService      = WUDFRd,0x000001fa,WUDFRD_ServiceInstall
@@ -92,7 +98,6 @@ HKR,,CoInstallers32,0x00010000,"WUDFCoinstaller.dll"
 UmdfService      = MBIHVFirmwareDriver,MBIHVFirmwareDriver_Install
 UmdfServiceOrder = MBIHVFirmwareDriver
 
-
 [MBIHVFirmwareDriver_Install]
 UmdfLibraryVersion  = 1.11
 ServiceBinary       = %12%\UMDF\MBFWDriver.dll
@@ -105,8 +110,8 @@ MBIHVFirmware-XYZ-1.0.bin   ; Firmware Image
 MBFWDriver.dll          ; UMDF driver for SoftDevNode
 
 [DestinationDirs]
-FirmwareImage_CopyFiles  = 10,Firmware\MBIHV ; %SystemRoot%\Firmware\MBIHV
-FirmwareDriver_CopyFiles = 12,UMDF     ;%SystemRoot%\System32\drivers\UMDF
+FirmwareImage_CopyFiles  = 13      ; Driver Store
+FirmwareDriver_CopyFiles = 12,UMDF ;%SystemRoot%\System32\drivers\UMDF
 
 [SourceDisksFiles]
 MBIHVFirmware-XYZ-1.0.bin = 1
