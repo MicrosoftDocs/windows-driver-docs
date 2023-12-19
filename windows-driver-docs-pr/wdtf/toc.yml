@@ -1,7 +1,7 @@
-- name: "WDTF design guide"
+- name: "WDTF Design Guide"
 # Auto-expanded node
   items: 
-  - name: "WDTF design guide"
+  - name: "WDTF Design Guide"
     href: index.md
   - name: "WDTF Quick Start"
     href: wdtf-quick-start-.md
@@ -72,3 +72,65 @@
         href: extending-the-framework.md
       - name: "COM Interface Design Skills"
         href: com-interface-design-skills.md
+- name: "WDTF Reference"
+  items: 
+  - name: "IWDTFDriverPackageAction2 interface"
+    items:
+    - name: "IWDTFDriverPackageAction2 interface"
+      href: nn-wdtfdriverpackageaction-iwdtfdriverpackageaction2.md
+    - name: "IWDTFDriverPackageAction2::Compare"
+      href: nf-wdtfdriverpackageaction-iwdtfdriverpackageaction2-compare.md
+    - name: "IWDTFDriverPackageAction2::GetQueryForDeviceThatCanUsePackage method"
+      href: nf-wdtfdriverpackageaction-iwdtfdriverpackageaction2-getqueryfordevicethatcanusepackage.md
+    - name: "IWDTFDriverPackageAction2::GetQueryForDeviceUsingPackage method"
+      href: nf-wdtfdriverpackageaction-iwdtfdriverpackageaction2-getqueryfordeviceusingpackage.md
+    - name: "IWDTFDriverPackageAction2::get_CatalogFile"
+      href: nf-wdtfdriverpackageaction-iwdtfdriverpackageaction2-get_catalogfile.md
+    - name: "IWDTFDriverPackageAction2::get_ClassGuid"
+      href: nf-wdtfdriverpackageaction-iwdtfdriverpackageaction2-get_classguid.md
+    - name: "IWDTFDriverPackageAction2::get_ClassName"
+      href: nf-wdtfdriverpackageaction-iwdtfdriverpackageaction2-get_classname.md
+    - name: "IWDTFDriverPackageAction2::get_Date"
+      href: nf-wdtfdriverpackageaction-iwdtfdriverpackageaction2-get_date.md
+    - name: "IWDTFDriverPackageAction2::get_DigitalSigner"
+      href: nf-wdtfdriverpackageaction-iwdtfdriverpackageaction2-get_digitalsigner.md
+    - name: "IWDTFDriverPackageAction2::get_HasCatalog"
+      href: nf-wdtfdriverpackageaction-iwdtfdriverpackageaction2-get_hascatalog.md
+    - name: "IWDTFDriverPackageAction2::get_InfFileName"
+      href: nf-wdtfdriverpackageaction-iwdtfdriverpackageaction2-get_inffilename.md
+    - name: "IWDTFDriverPackageAction2::get_IsDigitalSigned"
+      href: nf-wdtfdriverpackageaction-iwdtfdriverpackageaction2-get_isdigitalsigned.md
+    - name: "IWDTFDriverPackageAction2::get_IsImported"
+      href: nf-wdtfdriverpackageaction-iwdtfdriverpackageaction2-get_isimported.md
+    - name: "IWDTFDriverPackageAction2::get_Provider"
+      href: nf-wdtfdriverpackageaction-iwdtfdriverpackageaction2-get_provider.md
+    - name: "IWDTFDriverPackageAction2::get_Version"
+      href: nf-wdtfdriverpackageaction-iwdtfdriverpackageaction2-get_version.md
+    - name: "IWDTFDriverPackageAction2::SetPackageInfFileName"
+      href: nf-wdtfdriverpackageaction-iwdtfdriverpackageaction2-setpackageinffilename.md
+  - name: "IWDTFDriverSetupAction2 interface"
+    items:
+    - name: "IWDTFDriverSetupAction2 interface"
+      href: nn-wdtfdriversetupdeviceaction-iwdtfdriversetupaction2.md
+    - name: "IWDTFDriverSetupAction2::UnInstallDriverPermanently"
+      href: nf-wdtfdriversetupdeviceaction-iwdtfdriversetupaction2-uninstalldriverpermanently.md
+    - name: "IWDTFDriverSetupAction2::UpdateDriver"
+      href: nf-wdtfdriversetupdeviceaction-iwdtfdriversetupaction2-updatedriver.md
+  - name: "IWDTFDriverSetupSystemAction2 interface"
+    items:
+    - name: "IWDTFDriverSetupSystemAction2 interface"
+      href: nn-wdtfdriversetupsystemaction-iwdtfdriversetupsystemaction2.md
+    - name: "IWDTFDriverSetupSystemAction2::ClearTriageLogs"
+      href: nf-wdtfdriversetupsystemaction-iwdtfdriversetupsystemaction2-cleartriagelogs.md
+    - name: "IWDTFDriverSetupSystemAction2::ImportDriverPackage"
+      href: nf-wdtfdriversetupsystemaction-iwdtfdriversetupsystemaction2-importdriverpackage.md
+    - name: "IWDTFDriverSetupSystemAction2::IsImported"
+      href: nf-wdtfdriversetupsystemaction-iwdtfdriversetupsystemaction2-isimported.md
+    - name: "IWDTFDriverSetupSystemAction2::RemoveDriverPackage"
+      href: nf-wdtfdriversetupsystemaction-iwdtfdriversetupsystemaction2-removedriverpackage.md
+    - name: "IWDTFDriverSetupSystemAction2::RescanAllDevices"
+      href: nf-wdtfdriversetupsystemaction-iwdtfdriversetupsystemaction2-rescanalldevices.md
+    - name: "IWDTFDriverSetupSystemAction2::SnapTriageLogs"
+      href: nf-wdtfdriversetupsystemaction-iwdtfdriversetupsystemaction2-snaptriagelogs.md
+    - name: "IWDTFDriverSetupSystemAction2::WaitNoPendingInstallEvents"
+      href: nf-wdtfdriversetupsystemaction-iwdtfdriversetupsystemaction2-waitnopendinginstallevents.md
