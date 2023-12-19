@@ -72,7 +72,6 @@
         href: extending-the-framework.md
       - name: "COM Interface Design Skills"
         href: com-interface-design-skills.md
-    items: 
     - name: "WDTF Reference"
       items: 
       - name: "IWDTFDriverPackageAction2 interface"
@@ -110,7 +109,7 @@
         - name: "IWDTFDriverPackageAction2::SetPackageInfFileName"
           href: nf-wdtfdriverpackageaction-iwdtfdriverpackageaction2-setpackageinffilename.md
       - name: "IWDTFDriverSetupAction2 interface"
-       items:
+        items:
         - name: "IWDTFDriverSetupAction2 interface"
           href: nn-wdtfdriversetupdeviceaction-iwdtfdriversetupaction2.md
         - name: "IWDTFDriverSetupAction2::UnInstallDriverPermanently"
