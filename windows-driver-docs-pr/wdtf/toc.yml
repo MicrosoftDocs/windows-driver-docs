@@ -1,7 +1,7 @@
-- name: "WDTF design guide"
+- name: "WDTF Design Guide"
 # Auto-expanded node
   items: 
-  - name: "WDTF design guide"
+  - name: "WDTF Design Guide"
     href: index.md
   - name: "WDTF Quick Start"
     href: wdtf-quick-start-.md
