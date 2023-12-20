@@ -3,13 +3,12 @@ title: Certificate Stores
 description: Certificate Stores
 keywords:
 - certificate stores WDK
-ms.date: 08/05/2021
+ms.date: 12/20/2023
 ---
 
 # Certificate Stores
 
-
-On a computer that has the Windows operating system installed, the operating system stores a certificate locally on the computer in a storage location called the *certificate store*. A certificate store often has numerous certificates, possibly issued from a number of different certification authorities (CAs).
+Windows stores certificates locally on the computer in a storage location called the *certificate store*. A certificate store often has numerous certificates, possibly issued from a number of different certification authorities (CAs).
 
 This section includes the following topics:
 
@@ -19,7 +18,4 @@ This section includes the following topics:
 
 [Trusted Publishers Certificate Store](trusted-publishers-certificate-store.md)
 
- 
 For info on viewing certificates, see [How to: View certificates with the MMC snap-in](/dotnet/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in).
-
-

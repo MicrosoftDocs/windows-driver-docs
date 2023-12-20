@@ -1,16 +1,16 @@
 ---
 title: Driver Packages
 description: Driver Packages
-ms.date: 12/09/2021
+ms.date: 12/20/2023
 ---
 
 # Driver Packages
 
-A *driver package* consists of a set of software components to support a device under Windows. If you plan to design and build a new device, follow industry hardware standards. When you follow these standards, you are more likely to have a streamlined development process as well as lower your support costs. Not only do test suites exist for such devices, but, in many cases, generic driver packages exist for standard types. Therefore, you might not have to write a new driver package.
+A *driver package* is a collection of software components that enable a Windows device to work properly. If you want to create a new device, you should follow industry hardware standards. This will make your development process easier and cheaper. You may also find test suites and generic driver packages for standard devices, so you may not need to provide your own driver package.
 
-All devices on a Windows system should have a driver package installed on them.  The system provides some generic driver packages that can be installed on some classes of devices. For devices that do not have driver packages provided by the system, a vendor should provide a driver package to install on the device to support it under Windows. For a device that is covered by a system provided driver package, a vendor may choose to provide a better matching driver package to install on the device to provide enhanced functionality.
+Every device on a Windows system needs a driver package. Windows provides some generic driver packages for some types of devices. For devices that are not supported by Windows, the device vendor should provide a custom driver package. The vendor can also provide a custom driver package a device that is supported by Windows in order to provide enhanced functionality.
 
-This section provides information to help you determine which components to supply within your driver package.
+This section explains what components you need to include in your driver package.
 
 ## In this section
 
