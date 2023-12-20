@@ -8,7 +8,7 @@ metadata:
    author: tedhudek
    ms.author: tedhudek
    ms.topic: hub-page
-   ms.date: 08/05/2021
+   ms.date: 12/20/2023
    ms.localizationpriority: medium
    uhfHeaderId: "MSDocsHeader-WinHW"
    
@@ -121,40 +121,5 @@ additionalContent:
         - title: Edit boot options
           summary: Learn how to customize boot options.
           url: ./devtest/editing-boot-options.md
-        - title: Use Device Manager to uninstall devices and driver packages
-          summary: Device Manager is a Control Panel application that allows you to manage devices and drivers. 
-          url: ./install/using-device-manager-to-uninstall-devices-and-driver-packages.md
-        - title: Create a new shipping label
-          summary: Use this method in the Microsoft Hardware API to create a new shipping label. 
-          url: ./dashboard/create-a-new-shipping-label.md
-        - title: Manage shipping labels
-          summary: Learn how to manage shipping labels for your Windows Hardware dashboard submissions. 
-          url: ./dashboard/manage-shipping-labels.md
-        - title: Get a code signing certificate
-          summary: Learn how to get a code signing certificate to secure your digital information.
-          url: ./dashboard/code-signing-cert-manage.md
     # Section
-    - title: Resources
-      items:
-        - title: Partner Center for Windows Hardware
-          summary: Learn how to create and manage system and driver submissions quickly and easily.
-          url: ./dashboard/index.yml
-        - title: What's new in driver development
-          summary: Learn about the latest driver development features in Windows 11.
-          url: ./what-s-new-in-driver-development.md
-        - title: Overview of Driver Technologies
-          summary: Entryway to specific Windows driver models, from Bluetooth to USB and more.
-          url: ./device-and-driver-technologies.md
-        - title: Bug Check Code Reference
-          summary: This section contains descriptions of common bug check codes, including the parameters displayed with the error code on the blue bug check screen.
-          url: ./debugger/bug-check-code-reference2.md
-        - title: Driver Verifier
-          summary: Driver Verifier monitors Windows kernel-mode drivers and graphics drivers to detect illegal function calls or actions that might corrupt the system.
-          url: ./devtest/driver-verifier.md
-        - title: Windows Device Console (Devcon.exe)
-          summary: DevCon is a command-line tool that displays detailed information about devices on computers running Windows.
-          url: ./devtest/devcon.md
-        - title: WinUSB (Winusb.sys)
-          summary: This section describes the generic WinUSB driver (Winusb.sys) and its user-mode component (Winusb.dll) provided by Microsoft for all USB devices.
-          url: ./usbcon/winusb.md
   footer: "[@WindowsDocs on Twitter](https://twitter.com/WindowsDocs) - [OneDevMinute on YouTube](/shows/One-Dev-Minute/?WT.mc_id=odm-c9-niner) - [Windows developer support](https://developer.microsoft.com/windows/support) - [Stack Overflow](https://stackoverflow.com/questions/tagged/windows)"
