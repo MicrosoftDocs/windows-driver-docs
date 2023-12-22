@@ -160,3 +160,5 @@ The [!ndiskd.netadapter](../debuggercmds/-ndiskd-netadapter.md) debugger extensi
 ## Conclusion
 
 Using the steps in this topic, you should have a working driver that starts and stops your device.
+
+**Note**: NetAdapterCx doesn't currently support iSCSI boot.
