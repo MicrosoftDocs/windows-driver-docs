@@ -1,15 +1,11 @@
 ---
-title: Enabling a Kernel-Mode Dump File
-description: Enabling a Kernel-Mode Dump File
+title: Enabling a Kernel-Mode dump file
+description: Enabling a Kernel-Mode dump file
 keywords: ["dump file, enabling kernel-mode dump file"]
-ms.date: 05/23/2017
+ms.date: 12/21/2023
 ---
 
-# Enabling a Kernel-Mode Dump File
-
-
-## <span id="ddk_enabling_a_kernel_mode_dump_file_dbg"></span><span id="DDK_ENABLING_A_KERNEL_MODE_DUMP_FILE_DBG"></span>
-
+# Enabling a Kernel-Mode dump file
 
 During a system crash, the Windows crash dump settings determine whether a dump file will be created, and if so, what size the dump file will be.
 
@@ -29,13 +25,8 @@ The settings that you select will apply to any kernel-mode dump file created by 
 
 However, these settings do not affect dump files created by the [**.dump**](../debuggercmds/-dump--create-dump-file-.md) command. See [Creating a Dump File Without a System Crash](creating-a-dump-file-without-a-system-crash.md) for details on using this command.
 
-## <span id="related_topics"></span>See also
-
+## See also
 
 [Kernel-Mode Dump Files](kernel-mode-dump-files.md)
 
 [Varieties of Kernel-Mode Dump Files](varieties-of-kernel-mode-dump-files.md)
-
- 
-
- 

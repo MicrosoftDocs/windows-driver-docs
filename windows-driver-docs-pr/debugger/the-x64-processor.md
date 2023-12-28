@@ -7,10 +7,6 @@ ms.date: 05/23/2017
 
 # The x64 Processor
 
-
-## <span id="ddk_the_x64_processor_dbg"></span><span id="DDK_THE_X64_PROCESSOR_DBG"></span>
-
-
 This section includes:
 
 [x64 Architecture](x64-architecture.md)
@@ -20,9 +16,3 @@ This section includes:
 [Annotated x64 Disassembly](annotated-x64-disassembly.md)
 
 **Note**   The x64 processor architecture is sometimes referred to as "AMD64", "x86-64", "AMD x86-64" or "Intel64".
-
- 
-
- 
-
- 

@@ -8,7 +8,7 @@ keywords:
 - Driver Verifier WDK , about Driver Verifier
 - illegal function calls WDK Driver Verifier
 - stress testing WDK Driver Verifier
-ms.date: 09/19/2023
+ms.date: 12/28/2023
 ---
 
 # Driver Verifier
@@ -120,10 +120,9 @@ For each of the following actions, you can use Driver Verifier Manager or enter 
 
 2. Restart the computer.
 
-
 **To view Driver Verifier statistics**
 
-- In **Driver Verifier Manager**, select **Display information about the currently verified drivers**, and then select **Next**. Continuing to select **Next** displays additional information.
+In **Driver Verifier Manager**, select **Display information about the currently verified drivers**, and then select **Next**. Continuing to select **Next** displays additional information.
 
   or
 
@@ -136,7 +135,7 @@ For each of the following actions, you can use Driver Verifier Manager or enter 
 
 **To view Driver Verifier settings**
 
-- In **Driver Verifier Manager**, select **Display existing settings**, and then select **Next**.
+In **Driver Verifier Manager**, select **Display existing settings**, and then select **Next**.
 
   or
 
@@ -146,23 +145,23 @@ For each of the following actions, you can use Driver Verifier Manager or enter 
   verifier /querysettings
   ```
 
-
 ## How to debug Driver Verifier violations
 
 To get the most benefit from Driver Verifier, you should use a kernel debugger and connect it to the test computer. For an overview of debugging tools for Windows, see [Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)](../debugger/index.md).
 
 If Driver Verifier detects a violation, it generates a bug check to stop the computer. This is to provide you with the most information possible for debugging the issue. When you have a kernel debugger connected to a test computer that is running Driver Verifier, and Driver Verifier detects a violation, Windows breaks into the debugger and displays a brief description of the error.
 
-All violations detected by Driver Verifier result in bug checks. Common bug check codes include the following:
+All violations detected by Driver Verifier result in bug checks. This is typically a Bug Check 0xC4. For more information, see [Debugging Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION](debugging-bug-check-0xc4--driver-verifier-detected-violation.md) and [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md).
 
--   [**Bug Check 0xC1: SPECIAL\_POOL\_DETECTED\_MEMORY\_CORRUPTION**](../debugger/bug-check-0xc1--special-pool-detected-memory-corruption.md)
--   [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md)
--   [**Bug Check 0xC6: DRIVER\_CAUGHT\_MODIFYING\_FREED\_POOL**](../debugger/bug-check-0xc6--driver-caught-modifying-freed-pool.md)
--   [**Bug Check 0xC9: DRIVER\_VERIFIER\_IOMANAGER\_VIOLATION**](../debugger/bug-check-0xc9--driver-verifier-iomanager-violation.md)
--   [**Bug Check 0xD6: DRIVER\_PAGE\_FAULT\_BEYOND\_END\_OF\_ALLOCATION**](../debugger/bug-check-0xd6--driver-page-fault-beyond-end-of-allocation.md)
--   [**Bug Check 0xE6: DRIVER\_VERIFIER\_DMA\_VIOLATION**](../debugger/bug-check-0xe6--driver-verifier-dma-violation.md)
+Other common bug check codes include the following:
 
-For more information, see [Handling a Bug Check When Driver Verifier is Enabled](../debugger/handling-a-bug-check-when-driver-verifier-is-enabled.md). For tips about debugging Bug Check 0xC4, see [Debugging Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION](debugging-bug-check-0xc4--driver-verifier-detected-violation.md).
+- [**Bug Check 0xC1: SPECIAL\_POOL\_DETECTED\_MEMORY\_CORRUPTION**](../debugger/bug-check-0xc1--special-pool-detected-memory-corruption.md)
+- [**Bug Check 0xC6: DRIVER\_CAUGHT\_MODIFYING\_FREED\_POOL**](../debugger/bug-check-0xc6--driver-caught-modifying-freed-pool.md)
+- [**Bug Check 0xC9: DRIVER\_VERIFIER\_IOMANAGER\_VIOLATION**](../debugger/bug-check-0xc9--driver-verifier-iomanager-violation.md)
+- [**Bug Check 0xD6: DRIVER\_PAGE\_FAULT\_BEYOND\_END\_OF\_ALLOCATION**](../debugger/bug-check-0xd6--driver-page-fault-beyond-end-of-allocation.md)
+- [**Bug Check 0xE6: DRIVER\_VERIFIER\_DMA\_VIOLATION**](../debugger/bug-check-0xe6--driver-verifier-dma-violation.md)
+
+For more information, see [Handling a Bug Check When Driver Verifier is Enabled](../debugger/handling-a-bug-check-when-driver-verifier-is-enabled.md).
 
 When you start a new debugging session, use the debugger extension command, [**!analyze**](../debuggercmds/-analyze.md). In kernel mode, the **!analyze** command displays information about the most recent bug check. To display *additional* information, to help identify the faulting driver, add option **-v** to the command at the **kd>** prompt:
 
@@ -172,39 +171,34 @@ kd> !analyze -v
 
 In addition to **!analyze**, you can enter the following debugger extensions at the **kd>** prompt to view information that is specific to Driver Verifier:
 
--   [**!verifier**](../debuggercmds/-verifier.md) dumps captured Driver Verifier statistics. Use **!verifier -?** to display all of the available options.
+- [**!verifier**](../debuggercmds/-verifier.md) dumps captured Driver Verifier statistics. Use **!verifier -?** to display all of the available options.
 
     ```dbgcmd
     kd> !verifier
     ```
 
--   [**!deadlock**](../debuggercmds/-deadlock.md) displays information related to locks or objects tracked by Driver Verifier's deadlock detection feature. Use **!deadlock -?** to display all of the available options.
+- [**!deadlock**](../debuggercmds/-deadlock.md) displays information related to locks or objects tracked by Driver Verifier's deadlock detection feature. Use **!deadlock -?** to display all of the available options.
 
     ```dbgcmd
     kd> !deadlock
     ```
 
--   [**!iovirp**](../debuggercmds/-iovirp.md) \[*address*\] displays information related to an IRP tracked by I/O Verifier. For example:
+- [**!iovirp**](../debuggercmds/-iovirp.md) \[*address*\] displays information related to an IRP tracked by I/O Verifier. For example:
 
     ```dbgcmd
     kd> !iovirp 947cef68
     ```
 
--   [**!ruleinfo**](../debuggercmds/-ruleinfo.md) \[*RuleID*\] displays information related to the [DDI compliance checking](ddi-compliance-checking.md) rule that was violated. (*RuleID* is always the first argument to the bug check.) All rule IDs from DDI compliance checking are in the form 0x200*nn*. For example:
-
-    ```dbgcmd
-    kd> !ruleinfo 0x20005
-    ```
-
+- Look up the [DDI compliance checking](ddi-compliance-checking.md) rule that was violated. (*RuleID* is always the first argument to the bug check.) All rule IDs from DDI compliance checking are in the form 0x200*nn*. 
 
 ## Related topics
 
-[Driver Verifier: What's New](driver-verifier--what-s-new.md)
-
 [Driver Verifier Options](driver-verifier-options.md)
 
-[**Driver Verifier Command Syntax**](verifier-command-line.md)
+[Driver Verifier Command Syntax](verifier-command-line.md)
 
 [Using Driver Verifier](using-driver-verifier.md)
 
 [Controlling Driver Verifier](controlling-driver-verifier.md)
+
+[DDI compliance checking](ddi-compliance-checking.md)

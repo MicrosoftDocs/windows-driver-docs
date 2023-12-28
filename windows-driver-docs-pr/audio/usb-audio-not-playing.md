@@ -1,7 +1,7 @@
 ---
 title: USB audio device not playing
 description: This article discusses the "Audio services not responding" error.
-ms.date: 10/28/2022
+ms.date: 12/27/2023
 ---
 
 # USB audio device not playing
@@ -19,7 +19,7 @@ Consider the following scenario:
 
 In this scenario, the device can't be used, and the computer doesn't have sound. The speaker icon on the task bar is marked with an X mark. When you select the icon, you receive the following message:
 
-> Audio services not responding. Both the Windows Audio and the Windows Audio End Point Builder services must be running for audio to work correctly.
+> *Audio services not responding. Both the Windows Audio and the Windows Audio End Point Builder services must be running for audio to work correctly.*
 
 ## Cause
 

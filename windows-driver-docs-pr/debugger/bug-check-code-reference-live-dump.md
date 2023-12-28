@@ -1,7 +1,7 @@
 ---
 title: Kernel Live Dump Code Reference
 description: This section contains descriptions of the common kernel live dumps, and describes how they are different from traditional bug checks.
-ms.date: 11/01/2022
+ms.date: 12/20/2023
 ---
 
 # Kernel Live Dump Code Reference
@@ -216,3 +216,13 @@ These stop codes can be used for live dumps or to bug check the device.
 | 0x00000124 | [**WHEA\_UNCORRECTABLE\_ERROR**](bug-check-0x124---whea-uncorrectable-error.md) |
 | 0x00000144 | [**BUGCODE\_USB3\_DRIVER**](bug-check-0x144--bugcode-usb3-driver.md)            |
 | 0x00000164 | [**WIN32K\_CRITICAL\_FAILURE**](bug-check-0x164--win32k-critical-failure.md)    |
+
+## See also
+
+[Bug Check Code Reference](bug-check-code-reference2.md)
+
+[!analyze](../debuggercmds/-analyze.md)
+
+[General Tips for Blue Screens](general-troubleshooting-tips.md)
+
+[Blue Screen Data](blue-screen-data.md)
