@@ -11,9 +11,9 @@ Processors use virtual addresses when reading or writing to memory locations. Du
 
 There are several benefits to accessing memory using virtual addresses:
 
--   A program can use a contiguous range of virtual addresses to access a large, non-contiguous memory buffer in physical memory.
+-   A program can use a contiguous range of virtual addresses to access a large, noncontiguous memory buffer in physical memory.
 
--    A program can use a use a range of virtual addresses to access a memory buffer larger than the available physical memory. When physical memory is low, the memory manager saves pages of physical memory (typically 4 kilobytes in size) to a disk file. The system moves pages of data or code between physical memory and the disk as needed.
+-    A program can use a range of virtual addresses to access a memory buffer larger than the available physical memory. When physical memory is low, the memory manager saves pages of physical memory (typically 4 kilobytes in size) to a disk file. The system moves pages of data or code between physical memory and the disk as needed.
 
 -   The virtual addresses used by different processes are isolated. The code in one process can't alter the physical memory that is being used by another process or the operating system.
 
@@ -29,7 +29,7 @@ The following diagram illustrates some key features of virtual address spaces.
 
 :::image type="content" source="images/virtualaddressspace01.png" alt-text="Diagram showing the virtual address spaces for two 64-bit processes, Notepad.exe and MyApp.exe.":::
 
-The diagram shows the virtual address spaces for two 64-bit processes: Notepad.exe and MyApp.exe. Each process has its own virtual address space, ranging from 0x000'0000000 through 0x7FF'FFFFFFFF. Each shaded block represents one page (4 kilobytes in size) of virtual or physical memory. Note that the Notepad process uses three contiguous pages of virtual addresses, starting at 0x7F7'93950000. However, these three contiguous pages of virtual addresses map to noncontiguous pages in physical memory. Also, both processes use a page of virtual memory beginning at 0x7F7'93950000, but these virtual pages map to different pages of physical memory.
+The diagram shows the virtual address spaces for two 64-bit processes: Notepad.exe and MyApp.exe. Each process has its own virtual address space, ranging from 0x000'0000000 through 0x7FF'FFFFFFFF. Each shaded block represents one page (4 kilobytes in size) of virtual or physical memory. The Notepad process uses three contiguous pages of virtual addresses, starting at 0x7F7'93950000. However, these three contiguous pages of virtual addresses map to noncontiguous pages in physical memory. Also, both processes use a page of virtual memory beginning at 0x7F7'93950000, but these virtual pages map to different pages of physical memory.
 
 ## User space and system space
 
@@ -58,7 +58,7 @@ Drivers running in kernel mode must be careful when directly reading from or wri
 
 ## Paged pool and nonpaged pool
 
-In user space, all physical memory pages can be paged out to a disk file as needed. In system space, some physical pages can be paged out and others cannot. System space has two regions for dynamically allocating memory: paged pool and nonpaged pool. 
+In user space, all physical memory pages can be paged out to a disk file as needed. In system space, some physical pages can be paged out and others can't. System space has two regions for dynamically allocating memory: paged pool and nonpaged pool. 
 
 Memory that is allocated in paged pool can be paged out to a disk file as needed. Memory that is allocated in nonpaged pool can never be paged out to a disk file.
 
