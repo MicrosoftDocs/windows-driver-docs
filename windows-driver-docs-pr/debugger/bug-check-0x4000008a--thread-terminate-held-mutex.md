@@ -35,6 +35,8 @@ The THREAD\_TERMINATE\_HELD\_MUTEX bug check has a value of 0x4000008A. This ind
 
 ## Cause
 
+The [!analyze](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+
 To investigate, look at the callstack. If there is a driver on the stack that is directly followed by system exception handling routines and then thread termination routines, this driver is at fault and needs to be fixed so that it does not cause an unhandled exception while holding a kernel mutex. If the stack just shows normal thread termination code and no driver is implicated, run [**!pool**](../debuggercmds/-pool.md) or use [**ln (List Nearest Symbols)**](../debuggercmds/ln--list-nearest-symbols-.md) on the address of the mutex (parameter 2) and see if you can discover who owns the it. This bug will almost certainly be in the code of the owner of that mutex.
 
  

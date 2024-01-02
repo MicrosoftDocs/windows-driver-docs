@@ -1,7 +1,7 @@
 ---
 title: PnPUtil Examples
 description: PnPUtil Examples
-ms.date: 07/31/2023
+ms.date: 12/27/2023
 ---
 
 # PnPUtil Examples
@@ -113,7 +113,7 @@ pnputil /enum-devices /connected
 Enumerate device with specific instance ID
 
 ```console
-pnputil /enum-devices /instanceid "ACPI\PNP0A08\1"
+pnputil /enum-devices /instanceid "ROOT\SYSTEM\0000"
 ```
 
 Enumerate all devices with specific class
@@ -242,3 +242,10 @@ Scan the system for any device hardware changes
 pnputil /scan-devices
 ```
 
+Administrator rights are required to run the pnputil /scan-devices command.
+
+### See also
+
+[PnPUtil](pnputil.md)
+
+[PnPUtil Command Syntax](pnputil-command-syntax.md)

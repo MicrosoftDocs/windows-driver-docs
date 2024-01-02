@@ -6,15 +6,13 @@ ms.date: 11/28/2017
 
 # Symbol Store Folder Tree
 
-
 The symbol store backing SMB and HTTP requests is a folder tree residing on a local disk.
 
 To keep administration simple, the sub-folder name (e.g. Symbols) can also be used as the File Share name and also the Virtual Directory name. If a new symbol store was to be added, a new sub-folder would be made under D:\\SymStore, and a new File Share and Virtual Directory of that name would be made to expose the store to clients.
 
 The folder tree’s location should be chosen carefully as well as the disk’s file system. The symbol store can get extremely big (terabytes) when caching files from (internal) build servers and the Internet. The folder tree should reside on a disk that is capable of a high number of reads and low number of writes. The file system can affect performance - ReFS may perform better than NTFS and should be investigated for large deployments. Equally, the networking to the server should be of sufficient speed to handle the load from the clients and also the load to the upstream symbol stores to retrieve the symbols for cache population.
 
-## <span id="Symbol_Store_Single-Tier_or_Two-Tier_Structure"></span><span id="symbol_store_single-tier_or_two-tier_structure"></span><span id="SYMBOL_STORE_SINGLE-TIER_OR_TWO-TIER_STRUCTURE"></span>Symbol Store Single-Tier or Two-Tier Structure
-
+## Symbol Store Single-Tier or Two-Tier Structure
 
 Normally files are placed in a single tier directory structure in which a single subdirectory exists for each filename cached. Under each filename folder, additional folders are made to store each version of the file. The tree will have this structure:
 
@@ -38,13 +36,8 @@ D:\SymStore\Symbols\ke\kernel32.pdb\...\
 
 If you want to convert the structure after the symbol store is populated, use the convertstore.exe application in the debugger folder. To allow the tool to work, create a folder called 000Admin in the root folder. This folder is required by convertstore.exe so that it can control the locking of the symbol store.
 
-## <span id="related_topics"></span>See also
-
+## See also
 
 [HTTP Symbol Stores](http-symbol-stores.md)
 
-[File Share (SMB) Symbol Server](file-share--smb--symbol-server.md)
-
- 
-
- 
+[File Share (SMB) Debugger Symbol Server](file-share--smb--symbol-server.md)

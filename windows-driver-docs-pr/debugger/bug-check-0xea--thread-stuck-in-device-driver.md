@@ -66,6 +66,8 @@ This usually indicates problem with the hardware itself, or with the device driv
 
 ## Resolution
 
+The [!analyze](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+
 Use the [**.thread (Set Register Context)**](../debuggercmds/-thread--set-register-context-.md) command together with Parameter 1. Then use [**kb (Display Stack Backtrace)**](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) to find the location where the thread is stuck.
 
 If the kernel debugger is already connected and running when Windows detects a time-out condition. Then **DbgBreakPoint** will be called instead of **KeBugCheckEx**. A detailed message will be printed to the debugger. See [Sending Output to the Debugge](sending-output-to-the-debugger.md)for more information.

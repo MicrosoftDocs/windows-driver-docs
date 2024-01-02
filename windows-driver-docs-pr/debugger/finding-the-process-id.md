@@ -2,7 +2,7 @@
 title: Finding the Process ID
 description: Finding the Process ID
 keywords: ["process, process ID (PID)", "PID (process ID)", "TList, related techniques", "Task Manager"]
-ms.date: 03/10/2022
+ms.date: 12/20/2023
 ms.custom: contperf-fy21q3
 ---
 
@@ -95,8 +95,4 @@ For more information, see [Get-Process](/powershell/module/microsoft.powershell.
 
 ## Additional resources
 
-To learn more about Windows internals (including memory usage, context, threads, and processes), review additional resources, such as [*Windows Internals*](/sysinternals/resources/windows-internals) by Mark Russinovich, David Solomon, and Alex Ionescu.
-
-
-
-
+To learn more about Windows internals (including context, threads, and processes), review additional resources, such as [*Windows Internals*](/sysinternals/resources/windows-internals) by  Pavel Yosifovich, Mark Russinovich, David Solomon, and Alex Ionescu.

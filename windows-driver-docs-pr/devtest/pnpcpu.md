@@ -12,7 +12,6 @@ ms.date: 04/20/2017
 
 # PNPCPU
 
-
 PNPCPU (Pnpcpu.exe) is a command line tool that simulates a hot add of processors to a running instance of Windows Server 2008.
 
 Driver and application developers can use this tool to test that their driver or application does not fail when processors are added at system runtime. In cases where the driver or application has been extended to make use of the Hot Add Processor feature, PNPCPU can be used to confirm that all relevant Plug and Play notifications are handled correctly.
@@ -30,4 +29,3 @@ This section includes the following information:
 [PNPCPU General Notes](pnpcpu-general-notes.md)
 
 [PNPCPU Limitations](pnpcpu-limitations.md)
-

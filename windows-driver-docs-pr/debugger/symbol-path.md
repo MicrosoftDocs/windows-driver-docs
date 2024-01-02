@@ -2,7 +2,7 @@
 title: Symbol path for Windows debuggers
 description: Learn how the symbol path specifies locations where Windows debuggers, such as WinDbg, KD, CDB, and NTST, look for symbol files. 
 keywords: symbol files and paths, symbols, lazy symbol loading, deferred symbol loading, symbol path
-ms.date: 03/08/2023
+ms.date: 12/21/2023
 ---
 
 # Symbol path for Windows debuggers
@@ -14,8 +14,7 @@ Some compilers, including Microsoft Visual Studio, put symbol files in the same 
 In most other situations, you need to set the symbol path to point to your symbol file locations.
 
  >[!TIP]
- > Use [.symfix](../debuggercmds/-symfix--set-symbol-store-path-.md) to set a default path to the public Microsoft public symbol server that works well in many situations.
-
+ > Use *[.symfix](../debuggercmds/-symfix--set-symbol-store-path-.md)* to set a default path to the public Microsoft public symbol server that works well in many situations.
 
 ## Symbol path syntax
 
@@ -57,7 +56,7 @@ For example, the following command tells the debugger to obtain symbols from the
 
 If you're connected to the Internet or a corporate network, the most efficient way to access symbols is to use a symbol server such as the public [Microsoft public symbol server](https://msdl.microsoft.com/download/symbols). You can use a symbol server by using one of the following strings in your symbol path.
 
-* The `srv*` string
+- The `srv*` string
 
   If you include the string `srv*` in your symbol path, the debugger uses a symbol server to get symbols from the default symbol store. For example, the following command tells the debugger to get symbols from the default symbol store. These symbols aren't cached on the local computer.
 
@@ -65,7 +64,7 @@ If you're connected to the Internet or a corporate network, the most efficient w
   .sympath srv*
   ```
 
-* The `srv*symbolstore` string
+- The `srv*symbolstore` string
 
   If you include the string `srv*symbolstore` in your symbol path, the debugger uses a symbol server to get symbols from the *symbolstore*. For example, the following command tells the debugger to get symbols from the [Microsoft symbol server](https://msdl.microsoft.com/download/symbols) store. These symbols aren't cached on the local computer.
 
@@ -73,9 +72,9 @@ If you're connected to the Internet or a corporate network, the most efficient w
   .sympath srv*https://msdl.microsoft.com/download/symbols
   ```
 
-* The `srv*localsymbolcache*symbolstore` string
+- The `srv*localsymbolcache*symbolstore` string
 
-  If you include the string `srv*localcache*symbolstore` in your symbol path, the debugger uses a symbol server to get symbols from the *symbolstore* and caches them in the *localcache* directory. For example, the following command tells the debugger to get symbols from the [Microsoft symbol server](https://msdl.microsoft.com/download/symbols) store and cache the symbols in `c:\MyServerSymbols`.
+  If you include the string `srv*localcache*symbolstore` in your symbol path, the debugger uses a symbol server to get symbols from the *symbolstore* and caches them in the *localcache* directory. For example, the following command tells the debugger to get symbols from the Microsoft symbol server -`https://msdl.microsoft.com/download/symbols` and cache the symbols in `c:\MyServerSymbols`.
 
   ```dbgcmd
   .sympath srv*C:\MyServerSymbols*https://msdl.microsoft.com/download/symbols
@@ -100,7 +99,6 @@ If you include the string `cache*;` in your symbol path, symbols loaded from any
 If you include the string `cache*localsymbolcache;` in your symbol path, symbols loaded from any element that appears to the right of this string are stored in the *localsymbolcache* directory.
 
 For example, the following command tells the debugger to get symbols from the [Microsoft symbol server](https://msdl.microsoft.com/download/symbols) store and cache the symbols in the `c:\MySymbols` directory.
-
 
 ```dbgcmd
 .sympath cache*C:\MySymbols;srv*https://msdl.microsoft.com/download/symbols
@@ -128,15 +126,15 @@ A symbol server is available with [Azure Artifacts in Azure DevOps Services](/az
 
 To control the symbol path, you can select one of the following methods:
 
-* Use the [.symfix set symbol store path command](../debuggercmds/-symfix--set-symbol-store-path-.md) to set a default path to the public Microsoft symbol server that works well in many situations. To set a local cache, just type `.symfix C:\MyCache`.
+- Use the [.symfix set symbol store path command](../debuggercmds/-symfix--set-symbol-store-path-.md) to set a default path to the public Microsoft symbol server that works well in many situations. To set a local cache, just type `.symfix C:\MyCache`.
 
-* Use the [.sympath command](../debuggercmds/-sympath--set-symbol-path-.md) to display, set, change, or append to the path. 
+- Use the [.sympath command](../debuggercmds/-sympath--set-symbol-path-.md) to display, set, change, or append to the path. 
 
-* Before you start the debugger, use the `_NT_SYMBOL_PATH` and `_NT_ALT_SYMBOL_PATH` [environment variables](environment-variables.md) to set the path. The symbol path is created by appending `_NT_SYMBOL_PATH` after `_NT_ALT_SYMBOL_PATH`. Typically, the path is set through the `_NT_SYMBOL_PATH`. However, you might want to use `_NT_ALT_SYMBOL_PATH` to override these settings in special cases, such as if you have private versions of shared symbol files. If you try to add an invalid directory through these environment variables, the debugger ignores this directory.
- 
-* When you start the debugger, use the [-y command-line option](command-line-options.md) to set the path.
+- Before you start the debugger, use the `_NT_SYMBOL_PATH` and `_NT_ALT_SYMBOL_PATH` [environment variables](environment-variables.md) to set the path. The symbol path is created by appending `_NT_SYMBOL_PATH` after `_NT_ALT_SYMBOL_PATH`. Typically, the path is set through the `_NT_SYMBOL_PATH`. However, you might want to use `_NT_ALT_SYMBOL_PATH` to override these settings in special cases, such as if you have private versions of shared symbol files. If you try to add an invalid directory through these environment variables, the debugger ignores this directory.
 
-* In WinDbg only, you can use the [File | Symbol File Path command](file---symbol-file-path.md) or press `CTRL+S` to display, set, change, or append to the path.
+- When you start the debugger, use the [-y command-line option](command-line-options.md) to set the path.
+
+- In WinDbg only, you can use the [File | Symbol File Path command](file---symbol-file-path.md) or press `CTRL+S` to display, set, change, or append to the path.
 
 If you use the [-sins command-line option](command-line-options.md), the debugger ignores the symbol path environment variable.
 
@@ -146,4 +144,10 @@ Use [**!sym noisy**](../debuggercmds/-sym.md) or the *-n* [**WinDbg Command-Line
 
 ## See also
 
+[Symbols](symbols.md)
+
 [Advanced SymSrv use](advanced-symsrv-use.md)
+
+[.sympath command](../debuggercmds/-sympath--set-symbol-path-.md)
+
+[.symfix](../debuggercmds/-symfix--set-symbol-store-path-.md)

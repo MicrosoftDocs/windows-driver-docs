@@ -1,11 +1,7 @@
 ---
 title: Introduction to Receive Side Scaling (RSS)
 description: RSS is a network driver technology that enables the efficient distribution of network receive processing across multiple CPUs in multiprocessor systems.
-keywords:
-- receive-side scaling WDK networking , about receive-side scaling
-- RSS WDK networking , about receive-side scaling
-- CPU determination WDK RSS
-ms.date: 03/16/2022
+ms.date: 12/15/2023
 ms.custom: contperf-fy21q1
 ---
 
@@ -18,11 +14,11 @@ Receive side scaling (RSS) is a network driver technology that enables the effic
 
 To process received data efficiently, a miniport driver's receive interrupt service function schedules a deferred procedure call (DPC). Without RSS, a typical DPC indicates all received data within the DPC call. Therefore, all of the receive processing that is associated with the interrupt runs on the CPU where the receive interrupt occurs. For an overview of non-RSS receive processing, see [Non-RSS Receive Processing](non-rss-receive-processing.md).
 
-With RSS, the NIC and miniport driver provide the ability to schedule receive DPCs on other processors. Also, the RSS design ensures that the processing that is associated with a given connection stays on an assigned CPU. The NIC implements a hash function and the resulting hash value provides the means to select a CPU.
+RSS allows the NIC and miniport driver to schedule receive DPCs on other processors. The RSS design ensures that processing associated with a given connection stays on an assigned CPU. The NIC implements a hash function, and the resulting hash value helps select a CPU.
 
 The following figure illustrates the RSS mechanism for determining a CPU.
 
-:::image type="content" source="images/rss.png" alt-text="Diagram illustrating the RSS mechanism for determining a CPU.":::
+:::image type="content" source="images/rss.png" alt-text="Diagram that shows the process of the RSS mechanism in determining a CPU.":::
 
 A NIC uses a hashing function to compute a hash value over a defined area (hash type) within the received network data. The defined area can be noncontiguous.
 
@@ -36,18 +32,15 @@ With message signaled interrupt (MSI) support, a NIC can also interrupt the asso
 
 The following figure illustrates the levels of hardware support for RSS.
 
-:::image type="content" source="images/rss-hw.png" alt-text="Diagram illustrating the levels of hardware support for RSS.":::
+:::image type="content" source="images/rss-hw.png" alt-text="Diagram that shows the different levels of hardware support for RSS.":::
 
 There are three possible levels of hardware support for RSS:
 
-<a href="" id="hash-calculation-with-a-single-queue"></a>Hash calculation with a single queue  
-The NIC calculates the hash value and the miniport driver assigns received packets to queues that are associated with CPUs. For more information, see [RSS with a Single Hardware Receive Queue](rss-with-a-single-hardware-receive-queue.md).
+- [Hash calculation with a single queue](rss-with-a-single-hardware-receive-queue.md): The NIC calculates the hash value, and the miniport driver assigns received packets to queues that are associated with CPUs.
 
-<a href="" id="hash-calculation-with-multiple-receive-queues"></a>Hash calculation with multiple receive queues  
-The NIC assigns the received data buffers to queues that are associated with CPUs. For more information, see [RSS with Hardware Queuing](rss-with-hardware-queuing.md).
+- [Hash calculation with multiple receive queues](rss-with-hardware-queuing.md): The NIC assigns the received data buffers to queues associated with CPUs.
 
-<a href="" id="message-signaled-interrupts--msis-"></a>Message Signaled Interrupts (MSIs)  
-The NIC interrupts the CPU that should handle the received packets. For more information, see [RSS with Message Signaled Interrupts](rss-with-message-signaled-interrupts.md).
+- [Message signaled interrupts (MSIs)](rss-with-message-signaled-interrupts.md): The NIC interrupts the CPU that should handle the received packets.
 
 The NIC always passes on the 32-bit hash value.
 
@@ -57,7 +50,7 @@ RSS can improve network system performance by reducing:
 
 -   Processing delays by distributing receive processing from a NIC across multiple CPUs.
 
-    This helps to ensure that no CPU is heavily loaded while another CPU is idle.
+    Distributing receive processing helps to ensure that no CPU is heavily loaded while another CPU is idle.
 
 -   Spin lock overhead by increasing the probability that software algorithms that share data execute on the same CPU.
 
@@ -83,7 +76,7 @@ To achieve these performance improvements in a secure environment, RSS provides 
 
 -   Send-side scaling
 
-    RSS enables driver stacks to process send and receive-side data for a given connection on the same CPU. Typically, an overlying driver (for example, TCP) sends part of a data block and waits for an acknowledgment before sending the balance of the data. The acknowledgment then triggers subsequent send requests. The RSS indirection table identifies a particular CPU for the receive data processing. By default, the send processing runs on the same CPU if it is triggered by the receive acknowledgment. A driver can also specify the CPU (for example, if a timer is used).
+    RSS enables driver stacks to process send and receive-side data for a given connection on the same CPU. Typically, an overlying driver (for example, TCP) sends part of a data block and waits for an acknowledgment before sending the balance of the data. The acknowledgment then triggers subsequent send requests. The RSS indirection table identifies a particular CPU for the receive data processing. By default, the send processing runs on the same CPU if it's triggered by the receive acknowledgment. A driver can also specify the CPU (for example, if a timer is used).
 
 -   Secure hash
 
@@ -92,11 +85,3 @@ To achieve these performance improvements in a secure environment, RSS provides 
 -   MSI-X support
 
     RSS, with support for MSI-X, runs the interrupt service routine (ISR) on the same CPU that later executes the DPC. This reduces spin lock overhead and reloading of caches.
- 
-
- 
-
-
-
-
-

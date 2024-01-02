@@ -1,7 +1,7 @@
 ---
 title: USB Audio 2.0 drivers
 description: A USB Audio 2.0 driver is shipped with Windows. This driver provides basic audio over USB functionality.
-ms.date: 10/28/2022
+ms.date: 12/27/2023
 ms.topic: article
 ms.custom: 
 - CI 111498
@@ -228,7 +228,7 @@ For IHV provided third party driver USB Audio 2.0 drivers, those drivers will co
 
 ## Audio Jack Registry Descriptions
 
-Starting in Windows 10 release 1703, IHVs that create USB Audio Class 2.0 devices having one or more jacks have the capability to describe these jacks to the in-box Audio Class 2.0 driver. The in-box driver uses the supplied jack information when handling the KSPROPERTY_JACK_DESCRIPTION for this device.
+Starting in Windows 10 release 1703, IHVs that create USB Audio Class 2.0 devices having one or more jacks have the capability to describe these jacks to the in-box Audio Class 2.0 driver. The in-box driver uses the supplied jack information when handling the [KSPROPERTY_JACK_DESCRIPTION](./ksproperty-jack-description.md) for this device.
 
 Jack information is stored in the registry in the device instance key (HW key).
 
@@ -328,7 +328,7 @@ If the driver doesn't start, the system event log should be checked. The driver 
 
 For information on how to read logs for the USB Audio 2.0 class driver using supplemental TMF files, see [Report problems, with logs, and suggest features, with the Feedback Hub](https://matthewvaneerde.wordpress.com/2016/09/26/report-problems-with-logs-and-suggest-features-with-the-feedback-hub/) on Matthew van Eerde's web log. For general information on working with TMF files, see [Displaying a Trace Log with a TMF File](../devtest/displaying-a-trace-log-with-a-tmf-file.md).
 
-For information on "Audio services not responding" error and USB Audio device doesn't work in Windows 10 version 1703 see, [USB Audio Not Playing](usb-audio-not-playing.md)
+For information on "Audio services not responding" error and USB Audio device doesn't work in Windows 10 version 1703 see, [USB Audio Not Playing](usb-audio-not-playing.md).
 
 ## Feedback Hub
 
@@ -340,6 +340,7 @@ This USB Audio 2.0 class driver was developed by [Thesycon](https://www.thesycon
 
 ### See also
 
+- [USB Audio Not Playing](usb-audio-not-playing.md)
 - [Windows Driver Model (WDM)](../kernel/writing-wdm-drivers.md)
 - [Audio Drivers Overview](./getting-started-with-wdm-audio-drivers.md)
 - [WaveRT Port Driver](./introducing-the-wavert-port-driver.md)

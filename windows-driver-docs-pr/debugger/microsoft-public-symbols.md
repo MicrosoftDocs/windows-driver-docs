@@ -2,7 +2,7 @@
 title: Microsoft public symbol server
 description: Learn about the Microsoft symbol server, which makes Windows debugger symbols publicly available.
 keywords: ["SymSrv, public Microsoft symbols", "symbol servers, public Microsoft symbols", "public symbol store", "Microsoft symbol store"]
-ms.date: 12/22/2022
+ms.date: 12/21/2023
 ---
 
 # Microsoft public symbol server
@@ -50,3 +50,11 @@ The Microsoft symbol server provides compressed versions of the symbol files. Th
 ## Microsoft license terms - Microsoft symbol server
 
 Microsoft makes certain symbols, binary code, and other executables available via the Microsoft symbol server. These resources are used in debugging and testing of the user’s software with Microsoft software. They aren't intended for unauthorized use. Refer to the [Microsoft license terms - Microsoft symbol server](/legal/windows-sdk/microsoft-symbol-server-license-terms).
+
+See also
+
+[Symbol path for Windows debuggers](symbol-path.md)
+
+[Symbols and Symbol Files](symbols-and-symbol-files.md)
+
+[.symfix (Set symbol store path)](../debuggercmds/-symfix--set-symbol-store-path-.md)

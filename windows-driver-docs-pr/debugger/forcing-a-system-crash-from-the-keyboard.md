@@ -2,7 +2,7 @@
 title: Forcing a system crash from the keyboard
 description: Learn how to configure your settings to force a system crash from the PS/2, USB, and Hyper-V keyboard types.
 keywords: ["boot process, causing system crash from keyboard", "CTRL+SCROLL LOCK", "system crash, causing from keyboard", "bug check, causing from keyboard", "keyboard-caused system crash", "USB keyboard and system crash", "PS/2 keyboard and system crash", "forcing system crash from keyboard"]
-ms.date: 02/01/2023
+ms.date: 12/21/2023
 ---
 
 # Forcing a system crash from the keyboard
@@ -118,3 +118,18 @@ Example: In this scenario, a laptop uses a PS2 keyboard driver, and an external 
 It's possible but rare for a system to freeze in such a way that the keyboard shortcut sequence doesn't work. Using the keyboard shortcut sequence to initiate a crash will work even in many instances where **CTRL+ALT+DELETE** doesn't work.
 
 Forcing a system crash from the keyboard doesn't work if the computer stops responding at a high interrupt request level (IRQL). This limitation exists because the **Kbdhid.sys** driver, which allows the memory dump process to run, operates at a lower IRQL than the **i8042prt.sys** driver.
+
+## See also
+
+[Bug check 0xE2: MANUALLY_INITIATED_CRASH](bug-check-0xe2--manually-initiated-crash.md)
+
+[!analyze -v](../debuggercmds/-analyze.md)
+
+[Analyzing a Kernel-Mode Dump File with WinDbg](analyzing-a-kernel-mode-dump-file-with-windbg.md)
+
+[Bug Check 0x161: LIVE_SYSTEM_DUMP](bug-check-0x161--live-system-dump.md)
+
+[Generate a kernel or complete crash dump](/troubleshoot/windows-client/performance/generate-a-kernel-or-complete-crash-dump)
+
+[Varieties of Kernel-Mode Dump Files](varieties-of-kernel-mode-dump-files.md).
+

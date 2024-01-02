@@ -2,7 +2,7 @@
 title: Analyze a kernel-mode dump file by using WinDbg
 description: Learn how to analyze a kernel-mode dump file by using WinDbg. Analysis of a dump file is similar to analysis of a live debugging session.
 keywords: ["WinDbg, analyzing a kernel-mode dump file", "CAB file containing a dump file, analyzing kernel-mode dump file with WinDbg"]
-ms.date: 12/19/2022
+ms.date: 12/21/2023
 ---
 
 # Analyze a kernel-mode dump file by using WinDbg
@@ -52,3 +52,15 @@ The following debugger extensions are especially useful for analyzing a kernel-m
 - [!process 0 7](../debuggercmds/-process.md)
 
 For techniques to read specific kinds of information from a dump file, see [Extracting information from a dump file](extracting-information-from-a-dump-file.md).
+
+## See also
+
+[Get started with WinDbg (kernel mode)](getting-started-with-windbg--kernel-mode-.md)
+
+[Debugger operation](debugger-operation-win8.md)
+
+[Debugging techniques](debugging-techniques.md)
+
+[Download and install the WinDbg Windows debugger](./index.md)
+
+[!analyze](../debuggercmds/-analyze.md)

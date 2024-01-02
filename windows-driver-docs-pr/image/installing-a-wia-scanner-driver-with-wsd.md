@@ -1,14 +1,14 @@
 ---
 title: Install a WIA scanner driver with WSD
 description: Provides information about installing a WIA scanner driver with the *WSDScan.sys* kernel-mode driver.
-ms.date: 03/21/2022
+ms.date: 12/14/2023
 ---
 
 # Install a WIA scanner driver with WSD
 
 To install a WIA scanner driver with WSD, you should use the *WSDScan.sys* kernel-mode driver. During **IRP_MN_START_DEVICE**, *WSDScan.sys* reads the **PKEY_PNPX_ID** device property and saves it to the registry.
 
- The device property is written to a device key that is created in the registry for the imaging device that is being installed and to the **CreateFileName** WIA registry value (which is described in [INF Files for WIA Devices](inf-files-for-wia-devices.md)). 
+ The device property is written to a device key that is created in the registry for the imaging device that is being installed and to the **CreateFileName** WIA registry value (which is described in [INF Files for WIA Devices](inf-files-for-wia-devices.md)).
 
 This value is returned by the WIA service to the WIA minidriver when the [**IStiDeviceControl::GetMyDevicePortName**](/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istidevicecontrol-getmydeviceportname) call is made during the [**IStiUSD::Initialize**](/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istiusd-initialize) method.
 

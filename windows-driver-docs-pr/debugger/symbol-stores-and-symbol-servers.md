@@ -28,7 +28,7 @@ This section includes:
 
 [HTTP Symbol Stores](http-symbol-stores.md)
 
-[File Share (SMB) Symbol Server](file-share--smb--symbol-server.md)
+[File Share (SMB) Debugger Symbol Server](file-share--smb--symbol-server.md)
 
 [Symbol Store Folder Tree](symbol-store-folder-tree.md)
 

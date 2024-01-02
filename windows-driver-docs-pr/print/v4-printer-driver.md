@@ -1,14 +1,14 @@
 ---
 title: V4 printer driver
 description: The v4 printer driver model was designed to address known issues with the version 3 driver model, and thus improve the quality of the experience that users have with their printers.
-ms.date: 01/24/2023
+ms.date: 12/14/2023
 ---
 
 # V4 printer driver
 
 [!include[Print Support Apps](../includes/print-support-apps.md)]
 
-The v4 printer driver model is a refinement of the existing v3 printer driver model. It's designed to improve driver development, reduce IT management costs, and support new scenarios. The v4 print driver model continues to support many familiar technologies like [XPSDrv](xpsdrv-printer-driver.md), [GPD](introduction-to-gpd-files.md), [PPD](pscript-minidrivers.md), [Autoconfiguration](printer-autoconfiguration.md), and [Bidi](bidirectional-communication.md). The v4 print driver model also supports several new extensibility points.
+The v4 printer driver model is a refinement of the existing v3 printer driver model. Its design improves driver development, reduce IT management costs, and support new scenarios. The v4 print driver model continues to support many familiar technologies like [XPSDrv](xpsdrv-printer-driver.md), [GPD](introduction-to-gpd-files.md), [PPD](pscript-minidrivers.md), [Autoconfiguration](printer-autoconfiguration.md), and [Bidi](bidirectional-communication.md). The v4 print driver model also supports several new extensibility points.
 
 The v4 print driver model is also optimized for several new scenarios:
 

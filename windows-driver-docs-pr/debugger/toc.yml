@@ -1628,7 +1628,7 @@
       href: symbol-stores-and-symbol-servers.md      
     - name: "HTTP Symbol Stores"
       href: http-symbol-stores.md
-    - name: "File Share (SMB) Symbol Server"
+    - name: "File Share (SMB) Debugger Symbol Server"
       href: file-share--smb--symbol-server.md
     - name: "Symbol Store Folder Tree"
       href: symbol-store-folder-tree.md
