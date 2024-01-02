@@ -48,7 +48,7 @@ Provide your contact information:
 
 Use the following procedure to submit COSA connectivity database updates to Microsoft.
 
-1. **Contact your Microsoft TAM** - Using the same MS Solve case described in [Testing your desktop COSA database submission](testing-your-desktop-cosa-database-submission.md), provide your TAM with a completed APN testing questionnaire to describe the level of testing that has been done.  
+1. **Contact your Microsoft TAM** - Using the same MS Solve case described in [Testing your desktop COSA database submission](testing-your-desktop-cosa-database-submission.md), provide your TAM with a completed APN testing questionnaire to describe the level of testing that has been done.  
 
 2. **Microsoft triage process** -- Microsoft will review your submission and may contact you if errors are detected. Microsoft will not do any testing on your mobile network. If no errors are detected in your submission, it will proceed through the release process.
 

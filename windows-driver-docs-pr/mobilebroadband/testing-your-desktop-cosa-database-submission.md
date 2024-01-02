@@ -19,7 +19,7 @@ If you do not have a TAM:
 - Contact Microsoft Support by calling (800) MICROSOFT (642-7676).
 - Inform the customer service representative that a COSA database update is needed.
 - Provide the test package to the support engineer.
-- If asked, specify Windows 10 or Windows 11 as the product, as appropriate.
+- If asked, specify Windows 10 or Windows 11 as the product, as appropriate.
 
 > [!NOTE]
 > You will need to provide a credit card to open the incident, but you will not be charged.
