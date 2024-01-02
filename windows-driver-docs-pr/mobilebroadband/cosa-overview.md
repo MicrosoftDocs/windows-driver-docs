@@ -1,7 +1,9 @@
 ---
 title: COSA overview
 description: COSA is the data format that mobile operators use to provision Windows devices for mobile broadband.
-ms.date: 04/20/2017
+ms.date: 01/02/2024
+author: mhopkins-msft
+ms.author: mhopkins
 ---
 
 # COSA overview

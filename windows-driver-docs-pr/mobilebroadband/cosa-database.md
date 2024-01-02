@@ -1,7 +1,9 @@
 ---
 title: Introduction to the COSA database
 description: Introduction to the COSA database
-ms.date: 09/15/2023
+ms.date: 01/02/2024
+author: mhopkins-msft
+ms.author: mhopkins
 ---
 
 # Introduction to the COSA database

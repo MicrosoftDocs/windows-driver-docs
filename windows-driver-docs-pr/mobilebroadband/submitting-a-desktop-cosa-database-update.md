@@ -1,7 +1,9 @@
 ---
 title: Submitting a desktop COSA database update
 description: Submit a desktop COSA database update by following the steps in this topic.
-ms.date: 11/03/2023
+ms.date: 01/02/2024
+author: mhopkins-msft
+ms.author: mhopkins
 ---
 
 # Submitting a desktop COSA database update

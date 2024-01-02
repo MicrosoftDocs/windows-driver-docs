@@ -1,7 +1,9 @@
 ---
 title: Testing your desktop COSA database submission
 description: Testing your desktop COSA database submission
-ms.date: 12/06/2023
+ms.date: 01/02/2024
+author: mhopkins-msft
+ms.author: mhopkins
 ---
 
 # Testing your desktop COSA database submission

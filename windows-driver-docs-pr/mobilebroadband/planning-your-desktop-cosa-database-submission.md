@@ -1,7 +1,9 @@
 ---
 title: Planning your desktop COSA database submission
 description: Use this article plan for adding a new APN to the baseline COSA database that ships with Windows desktop devices, or to update an existing APN.
-ms.date: 12/06/2023
+ms.date: 01/02/2024
+author: mhopkins-msft
+ms.author: mhopkins
 ---
 
 # Planning your desktop COSA database submission
