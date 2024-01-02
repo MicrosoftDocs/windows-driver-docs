@@ -1,7 +1,7 @@
 ---
 title: Get started with WinDbg (user mode)
 description: Get started using WinDbg in Debugging Tools for Windows with hands-on, user-mode debugger exercises.
-ms.date: 03/08/2023
+ms.date: 12/20/2023
 ---
 
 # Get started with WinDbg (user mode)
@@ -19,7 +19,7 @@ After you install the debugging tools, find the installation directories for the
 
 1. Go to your installation directory, and open **WinDbg.exe**.
 
-2. On the **File** menu, select **Open Executable**. In the Open Executable dialog, go to the folder that contains notepad.exe. (The notepad.exe file usually is in C:\\Windows\\System32.) For **File name**, enter **notepad.exe**. Select **Open**.
+2. On the **File** menu, select **Launch Executable**. In the Launch Executable dialog, go to the folder that contains notepad.exe. (The notepad.exe file usually is in C:\\Windows\\System32.) For **File name**, enter **notepad.exe**. Select **Open**.
 
     :::image type="content" source="images/windbggetstart01.png" alt-text="Screenshot of WinDbg with Notepad open.":::
 
@@ -47,7 +47,7 @@ After you install the debugging tools, find the installation directories for the
     [x notepad!*](../debuggercmds/x--examine-symbols-.md)
 
     > [!NOTE]
-    > If no output appears, enter `.reload` again.
+    > If no output appears, enter `.reload /f` to attempt to force the symbol load. Use !sym noisy to display additional symbol load information.
 
     To see symbols in the notepad.exe module that contain `main`, use the [examine symbols](../debuggercmds/x--examine-symbols-.md) command to list modules that match the mask:
 
@@ -225,7 +225,7 @@ For this exercise, assume that the built application (MyApp.exe) and the symbol 
 
 1. Open WinDbg.
 
-2. On the **File** menu, select **Open Executable**. In the Open Executable dialog, go to C:\\MyApp\\x64\\Debug. For **File name**, enter **MyApp.exe**. Select **Open**.
+2. On the **File** menu, select **Launch Executable**. In the Launch Executable dialog, go to C:\\MyApp\\x64\\Debug. For **File name**, enter **MyApp.exe**. Select **Open**.
 
 3. Enter these commands:
 

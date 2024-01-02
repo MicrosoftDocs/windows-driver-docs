@@ -32,7 +32,7 @@ TTD recordings capture memory contents and may contain personally identifiable o
 including but not necessarily limited to file paths, registry, memory or file contents. The exact
 information depends on target process activity while it was recorded.
 
-## How to download and install the TTD.exe command line utility
+## How to download and install the TTD.exe command line utility (Preferred method)
 
 Download the TTD command line utility here - [https://aka.ms/ttd/download](https://aka.ms/ttd/download)
 
@@ -41,6 +41,145 @@ Select *Install* and TTD will download and install. The TTD command is added to 
 If you encounter difficulties installing, see [Troubleshoot installation issues with the App Installer file](/windows/msix/app-installer/troubleshoot-appinstaller-issues).
 
 On some PC's you may need to install the [Microsoft App Installer for Windows 10](https://www.microsoft.com/store/productId/9NBLGGH4NNS1). It is available in the Microsoft Store app in Windows. Windows Package Manager is supported through App Installer starting on Windows 10 1809.
+
+## How to download and install the TTD.exe command line utility (Offline method)
+
+While the preferred installation method is to use the App Installer, you can also download the TTD command line package and extract the files manually. Here are two ways to do it.
+
+### Extract the files from an already installed TTD.exe command line utility
+
+If you have already installed the TTD command line utility, you can extract the files from the installed location. In Powershell you would do this to find the installed location:
+
+```powershell
+(Get-AppxPackage | where Name -eq 'Microsoft.TimeTravelDebugging').InstallLocation
+```
+
+From there you can copy all the binaries (*.dll, *.exe, *.sys) to a new location. Here is one way to do this in Powershell:
+
+```powershell
+robocopy.exe (Get-AppxPackage | where Name -eq 'Microsoft.TimeTravelDebugging').InstallLocation c:\myttd *.exe *.dll *.sys /E /XD AppxMetadata
+```
+
+Replace "c:\myttd" with the destination of your choice. The result will look something like this (on an x64 machine):
+
+```console
+ls -Recurse c:\myttd
+
+    Directory: C:\myttd
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----           11/9/2023  2:43 PM                x86
+-a---           11/9/2023  2:43 PM          79240 ProcLaunchMon.sys
+-a---           11/9/2023  2:43 PM         112568 TTD.exe
+-a---           11/9/2023  2:43 PM         309176 TTDInject.exe
+-a---           11/9/2023  2:43 PM          55328 TTDLoader.dll
+-a---           11/9/2023  2:43 PM         821176 TTDRecord.dll
+-a---           11/9/2023  2:43 PM        1222584 TTDRecordCPU.dll
+-a---           11/9/2023  2:43 PM          63416 TTDRecordUI.dll
+
+    Directory: C:\myttd\x86
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---           11/9/2023  2:43 PM         247728 TTDInject.exe
+-a---           11/9/2023  2:43 PM          42928 TTDLoader.dll
+-a---           11/9/2023  2:43 PM        1128480 TTDRecordCPU.dll
+```
+
+Note that the x86 binaries are in a subdirectory. If you do not need to record 32-bit processes this folder can be deleted (and you could add /xd x86 to the robocopy command to avoid copying it in the first place). The ARM64 version does not have any subdirectories.
+
+The TTDRecordUI.dll is only needed if you want to use the UI to control recording. If you do not want the UI, you can delete this file.
+
+### Download the TTD.exe command line utility package and extract the files manually
+
+If you do not want to install the TTD command line utility, you can download the package and extract the files manually. The following
+Powershell script will:
+* Get the URL for the current version of TTD from https://aka.ms/ttd/download.
+* Download the MSIX bundle.
+* Extract the requested architecture's MSIX from MSIX bundle.
+* Extract the TTD binaries from the MSIX.
+
+```powershell
+param(
+    $OutDir = ".",
+    [ValidateSet("x64", "x86", "arm64")]
+    $Arch = "x64"
+)
+
+# Ensure the output directory exists
+if (!(Test-Path $OutDir)) {
+    $null = mkdir $OutDir
+}
+
+# Ensure the temp directory exists
+$TempDir = Join-Path $OutDir "TempTtd"
+if (!(Test-Path $TempDir)) {
+    $null = mkdir $TempDir
+}
+
+# Determine if the destination already contains binaries
+$extensions = @('.dll', '.exe', '.sys')
+$existingBinaries = (Get-ChildItem -recurse $OutDir | Where-Object Extension -In $extensions).Count -gt 0
+
+# Download the appinstaller to find the current uri for the msixbundle
+Invoke-WebRequest https://aka.ms/ttd/download -OutFile $TempDir\ttd.appinstaller
+
+# Download the msixbundle
+$msixBundleUri = ([xml](Get-Content $TempDir\ttd.appinstaller)).AppInstaller.MainBundle.Uri
+
+if ($PSVersionTable.PSVersion.Major -lt 6) {
+    # This is a workaround to get better performance on older versions of PowerShell
+    $ProgressPreference = 'SilentlyContinue'
+}
+
+# Download the msixbundle (but name as zip for older versions of Expand-Archive)
+Invoke-WebRequest $msixBundleUri -OutFile $TempDir\ttd.zip
+
+# Extract the 3 msix files (plus other files)
+Expand-Archive -DestinationPath $TempDir\UnzippedBundle $TempDir\ttd.zip -Force
+
+# Expand the build you want - also renaming the msix to zip for Windows PowerShell
+$fileName = switch ($Arch) {
+    "x64"   { "TTD-x64"   }
+    "x86"   { "TTD-x86"   }
+    "arm64" { "TTD-ARM64" }
+}
+
+# Rename msix (for older versions of Expand-Archive) and extract the debugger
+Rename-Item "$TempDir\UnzippedBundle\$fileName.msix" "$fileName.zip"
+Expand-Archive -DestinationPath "$OutDir" "$TempDir\UnzippedBundle\$fileName.zip"
+
+# Delete the temp directory
+Remove-Item $TempDir -Recurse -Force
+
+# Remove unnecessary files, if it is safe to do so
+if (-not $existingBinaries) {
+    Get-ChildItem -Recurse -File $OutDir |
+        Where-Object Extension -NotIn $extensions |
+        Remove-Item -Force
+
+    Remove-Item -Recurse -Force (Join-Path $OutDir "AppxMetadata")
+} else {
+    Write-Host "Detected pre-existing binaries in '$OutDir' so did not remove any files from TTD package."
+}
+```
+
+Assuming you saved the above script as `Get-Ttd.ps1`, you can run it like this to download the x64 binaries to the c:\myttd directory:
+
+```powershell
+md c:\myttd
+cd c:\myttd
+.\Get-Ttd.ps1
+```
+
+Or you could specify the output directory and architecture:
+
+```powershell
+.\Get-Ttd.ps1 -OutDir c:\myttd-arm64 -Arch arm64
+```
+
+Replace "c:\myttd" or "c:\myttd-arm64" with the destination of your choice.
 
 ## How to record a trace using the TTD.exe command line utility
 

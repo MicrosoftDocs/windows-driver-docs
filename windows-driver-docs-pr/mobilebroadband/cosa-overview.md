@@ -1,7 +1,9 @@
 ---
 title: COSA overview
 description: COSA overview
-ms.date: 04/20/2017
+ms.date: 01/02/2024
+author: mhopkins-msft
+ms.author: mhopkins
 ---
 
 # COSA overview
@@ -30,9 +32,9 @@ The settings are largely the same as what MOs configured in apndatabase.xml, wit
 
 Three events trigger the Windows provisioning engine to look for a change in settings: 
 
-1.	The insertion or removal of a physical SIM (change in ICCID)
-2.	Reconfiguration of an eSIM (change in ICCID)
-3.	When the device boots
+1.  The insertion or removal of a physical SIM (change in ICCID)
+2.  Reconfiguration of an eSIM (change in ICCID)
+3.  When the device boots
 
 ### <a href="" id="SIMinfo"></a> What SIM information from modems does COSA use?
 

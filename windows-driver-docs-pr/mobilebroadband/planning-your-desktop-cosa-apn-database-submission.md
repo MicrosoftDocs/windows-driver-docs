@@ -1,7 +1,9 @@
 ---
 title: Planning your desktop COSA/APN database submission
 description: Planning your desktop COSA/APN database submission
-ms.date: 10/06/2023
+ms.date: 01/02/2024
+author: mhopkins-msft
+ms.author: mhopkins
 ---
 
 # Planning your desktop COSA/APN database submission
@@ -54,7 +56,7 @@ Note the following only when submitting an APN update using apndatabase.xml, for
 
   For example, if Contoso had four APNs for MCC+MNC value 100 101, it would list each APN entry in a new row in the spreadsheet and number the auto-connect order starting with 1 up to 4 for each of those four entries because they share the same IMSI range. If Contoso had another set of APNs for MCC+MNC value 100 102, it should start the auto-connect ordering at 1 for that set of APNs.
 
-  If you don’t provide an auto-connect order, Windows will ask the user to choose an APN, which could introduce user error. We recommend that the auto-connect order be specified. In this case, the user sees the **Friendly Name** of the APN in Windows Connection Manager.
+  If you don't provide an auto-connect order, Windows will ask the user to choose an APN, which could introduce user error. We recommend that the auto-connect order be specified. In this case, the user sees the **Friendly Name** of the APN in Windows Connection Manager.
 
 ### APN database and COSA considerations
 
@@ -119,4 +121,4 @@ Note the following for both COSA and APN database.
 
   - For CDMA networks, a Network Access Identifier (NAI) is used to connect to the Internet.
 
-Once your spreadsheet is complete, you can test the APNs you’ve entered. For the next steps in testing your APN update, see [Testing your desktop COSA/APN database submission](testing-your-desktop-cosa-apn-database-submission.md).
+Once your spreadsheet is complete, you can test the APNs you've entered. For the next steps in testing your APN update, see [Testing your desktop COSA/APN database submission](testing-your-desktop-cosa-apn-database-submission.md).

@@ -1,7 +1,9 @@
 ---
 title: Testing your desktop COSA/APN database submission
 description: Testing your desktop COSA/APN database submission
-ms.date: 04/20/2017
+ms.date: 01/02/2024
+author: mhopkins-msft
+ms.author: mhopkins
 ---
 
 # Testing your desktop COSA/APN database submission
@@ -101,7 +103,7 @@ Before you submit an APN update, you should editing the local APN database or cr
 
 **Modify the local APN connectivity database**
 
-1. **Copy any existing values from the local APN database file** -- View the existing entries in the local APN database on your PC and copy these entries into a new XML file. If you don’t have any APN entries in the local copy of the APN database, skip this step and start with a blank XML file.
+1. **Copy any existing values from the local APN database file** -- View the existing entries in the local APN database on your PC and copy these entries into a new XML file. If you don't have any APN entries in the local copy of the APN database, skip this step and start with a blank XML file.
 
 2. **Modify values in the XML file according to the published APN schema** – Ensure that your APN entries follow the [APN database schema reference](apn-schema-definition.md).
 
@@ -125,10 +127,10 @@ Before you submit an APN update, you should editing the local APN database or cr
 
    2. If a mobile broadband profile exists, type **netsh mb profile interface=&lt;Interface name&gt; name=&lt;Profile name&gt;**
 
-   3. Ensure that the device doesn’t have a provisioned context by running the following command: **netsh mb show provisionedcontext interface=&lt;Interface name&gt;**
+   3. Ensure that the device doesn't have a provisioned context by running the following command: **netsh mb show provisionedcontext interface=&lt;Interface name&gt;**
 
       **Note**
-      If the device provides a provisioned context, Windows will use the APN from that provisioned context instead of the local APN database and you will not able to test your APNs. If the device has a provisioned context, you need to acquire another device that doesn’t provide a provisioned context.    
+      If the device provides a provisioned context, Windows will use the APN from that provisioned context instead of the local APN database and you will not able to test your APNs. If the device has a provisioned context, you need to acquire another device that doesn't provide a provisioned context.    
 
    4. Open Windows Connection Manager. It will show the Wi-Fi and mobile broadband networks that are within range.
 

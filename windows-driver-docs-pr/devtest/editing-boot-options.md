@@ -7,21 +7,24 @@ keywords:
 - Bootcfg tool
 - custom boot options WDK
 - boot entries WDK
-ms.date: 10/26/2022
+ms.date: 12/27/2023
 ---
 
 # Edit boot options
 
-This section is a practical guide to editing boot options on a computer and suggests a step-by-step procedure for customizing the basic elements of boot options.
+This section covers editing boot options on a computer and provides a procedure for customizing the basic elements of boot options. It describes a method of using BCDEdit, a tool included with the operating system.
 
-This section describes a method of using BCDEdit, a tool included with the operating system. For information about BCDEdit command syntax, type **bcdedit /?** or **bcdedit /? TOPICS** in a Command Prompt window.
+For more information, see [BCDEdit options reference](./bcd-boot-options-reference.md). For information about BCDEdit command syntax, type **bcdedit /?** or **bcdedit /? TOPICS** in a Command Prompt window.
 
-For more information, see [BCDEdit options reference](./bcd-boot-options-reference.md).
+> [!CAUTION]
+> Administrative privileges are required to use BCDEdit to modify BCD. Changing some boot entry options using the **BCDEdit /set** command could render your computer inoperable. As an alternative, use the System Configuration utility (MSConfig.exe) to change boot settings. For more information, see *[How to open MSConfig in Windows 10](https://support.microsoft.com/help/4026130/windows-how-to-open-msconfig-in-windows-10)*.
 
 > [!NOTE]
 > Before setting BCDEdit options you might need to disable or suspend BitLocker and Secure Boot on the computer.
 
 For help on editing boot entry parameters to enable and disable Windows features, see [Using boot parameters](using-boot-parameters.md).
+
+## Configure operating system features
 
 To configure operating system features in boot options:
 
@@ -31,7 +34,7 @@ To configure operating system features in boot options:
 
 - [Add parameters to the boot entry](changing-boot-parameters.md) that enable and configure Windows features.
 
-Then, to make testing quicker and easier:
+Then, to make testing easier:
 
 - [Make the new boot entry the default entry](changing-the-default-boot-entry.md).
 
@@ -39,7 +42,4 @@ Then, to make testing quicker and easier:
 
 ## Related articles
 
- [BCDEdit command-line options](/windows-hardware/manufacture/desktop/bcdedit-command-line-options)
-
-> [!CAUTION]
-> Administrative privileges are required to use BCDEdit to modify BCD. Changing some boot entry options using the **BCDEdit /set** command could render your computer inoperable. As an alternative, use the System Configuration utility (MSConfig.exe) to change boot settings.
+[BCDEdit command-line options](/windows-hardware/manufacture/desktop/bcdedit-command-line-options)

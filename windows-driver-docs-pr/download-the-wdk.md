@@ -36,7 +36,11 @@ When you install Visual Studio 2022, select the **Desktop development with C++**
 
 * MSVC v143 - VS 2022 C++ ARM64/ARM64EC Spectre-mitigated libs (Latest)</br>
 * MSVC v143 - VS 2022 C++ x64/x86 Spectre-mitigated libs (Latest)</br>
-Hint: Use the Search box to look for "msvc 64 latest" or "msvc 64 latest spectre" to quickly see these components.</br>
+* C++ ATL for latest v143 build tools with Spectre Mitigations (ARM64/ARM64EC)</br>
+* C++ ATL for latest v143 build tools with Spectre Mitigations (x86 & x64)</br>
+* C++ MFC for latest v143 build tools with Spectre Mitigations (ARM64/ARM64EC)</br>
+* C++ MFC for latest v143 build tools with Spectre Mitigations (x86 & x64)</br>
+Hint: Use the Search box to look for "64 latest spectre" to quickly see these components.</br>
 
  Don't worry about the SDK at this point; you install this next in step 2 below.
 

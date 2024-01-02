@@ -6,7 +6,7 @@ keywords:
 - ETW WDK
 - tracing WDK , ETW
 - software tracing WDK , ETW
-ms.date: 04/20/2017
+ms.date: 12/27/2023
 ---
 
 # Event Tracing for Windows (ETW)
@@ -21,6 +21,3 @@ Topics in this section include:
 [Adding Event Tracing to Kernel-Mode Drivers](adding-event-tracing-to-kernel-mode-drivers.md)
 
 [ETW Kernel-Mode Reference](/previous-versions/windows/hardware/previsioning-framework/ff545650(v=vs.85))
-
- 
-

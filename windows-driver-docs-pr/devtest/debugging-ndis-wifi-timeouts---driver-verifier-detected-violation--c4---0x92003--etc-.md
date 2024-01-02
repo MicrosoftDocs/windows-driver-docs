@@ -13,17 +13,16 @@ When Driver Verifier is testing a NDIS/WIFI time-out rule, such as [**NdisTimedO
 
 ## Debugging NDIS/WIFI timeout errors
 
-
--   [Use !analyze to display information about the bug check](#use-analyze-to-display-information-about-the-bug-check)
--   [Use the !ruleinfo extension command](#use-the-ruleinfo-extension-command)
--   [Click the LAST\_CALL\_STACK link to identify the location of the violation](#identify-the-location-of-the-violation)
--   [Fixing the cause of the NDIS/WIFI timeout violation](#fixing-the-cause-of-the-ndis-wifi-timeout-violation)
+- [Use !analyze to display information about the bug check](#use-analyze-to-display-information-about-the-bug-check)
+- [Use the !ruleinfo extension command](#use-the-ruleinfo-extension-command)
+- [Click the LAST\_CALL\_STACK link to identify the location of the violation](#identify-the-location-of-the-violation)
+- [Fixing the cause of the NDIS/WIFI timeout violation](#fixing-the-cause-of-the-ndis-wifi-timeout-violation)
 
 ### Use !analyze to display information about the bug check
 
 As with any bug check that occurs, once you have control of the debugger, the best first step is to run the [**!analyze -v**](../debuggercmds/-analyze.md) command.
 
-```
+```text
 DRIVER_VERIFIER_DETECTED_VIOLATION (c4)
 A device driver attempting to corrupt the system has been caught.  This is
 because the driver was specified in the registry as being suspect (by the

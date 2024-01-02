@@ -10,7 +10,7 @@ api_name:
 - PnPUtil
 api_type:
 - NA
-ms.date: 10/03/2023
+ms.date: 12/28/2023
 ---
 
 # PnPUtil Command Syntax
@@ -290,3 +290,7 @@ The following commands are still supported, but are legacy.  We recommend that y
 ## Examples
 
 For examples of how to use the PnPUtil tool, see [PnPUtil Examples](pnputil-examples.md).
+
+### See also
+
+[PnPUtil](pnputil.md)

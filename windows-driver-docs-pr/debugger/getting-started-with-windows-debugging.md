@@ -1,7 +1,7 @@
 ---
 title: Get started with Windows debugging
 description: Get started with debugging for Windows, and find resources to help you install tools and learn debugging techniques.
-ms.date: 12/07/2022
+ms.date: 12/20/2023
 ---
 
 # Get started with Windows debugging
@@ -82,7 +82,7 @@ There are multiple debugging extensions that can be used to parse domain-specifi
 
 ## 12. Learn about related Windows internals
 
-This documentation assumes that you have some knowledge about core Windows internals. To learn more about Windows internals, including memory usage, context, threads, and processes, you can review resources such as [*Windows Internals*](/sysinternals/resources/windows-internals) by Mark Russinovich, David Solomon, and Alex Ionescu.
+This documentation assumes that you have some knowledge about core Windows internals. To learn more about Windows internals, including memory usage, context, threads, and processes, you can review resources such as [Windows Internals](/sysinternals/resources/windows-internals) by  Pavel Yosifovich, Mark E. Russinovich, David A. Solomon and Alex Ionescu.
 
 ## 13. Review additional debugging resources
 

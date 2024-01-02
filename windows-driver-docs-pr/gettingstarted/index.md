@@ -1,14 +1,11 @@
 ---
-title: Getting started with drivers on Windows
-description: Start here to learn fundamental concepts about drivers.
-keywords:
-- Write a driver
-- get started with drivers
-ms.date: 08/06/2021
+title: Get started with drivers on Windows
+description: Start here to learn fundamental concepts about drivers on Windows.
+ms.date: 12/15/2023
 ms.topic: article
 ---
 
-# Getting started with drivers on Windows
+# Get started with drivers on Windows
 
 Start here to learn fundamental concepts about drivers.
 
