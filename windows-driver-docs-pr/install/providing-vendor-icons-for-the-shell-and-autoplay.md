@@ -11,7 +11,7 @@ keywords:
 - no-media-inserted icons WDK
 - icons WDK AutoPlay
 - copying icon files
-ms.date: 04/30/2020
+ms.date: 01/03/2024
 ---
 
 # Providing Icons for a Device
@@ -62,15 +62,11 @@ HKR, , NoMediaIcons, 0x10000, "no-media-inserted-icon-file"
 
 Then include an [**INF SourceDisksFiles section**](inf-sourcedisksfiles-section.md) that lists the icon files and a corresponding [**INF CopyFiles directive**](inf-copyfiles-directive.md) that copies them to the system.
 
-The **Icons** and **NoMediaIcons** value entries are stored under the **Device Parameters** key under the device's *hardware key*. For example, `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\<Hardware ID>\Device Parameters` would contain entries like the following:
+The **Icons** and **NoMediaIcons** value entries are stored under the device's [*hardware key*](./opening-a-device-s-hardware-key.md) which would contain entries like the following:
 
 * `Icons [REG_MULTI_SZ] = %SystemRoot%\system32\icon.ico`
 
 * `NoMediaIcons [REG_MULTI_SZ] = %SystemRoot%\system32\noicon.ico`
-
-To modify the **Device Parameters** key from user mode, use [**SetupDiCreateDevRegKey**](/windows/win32/api/setupapi/nf-setupapi-setupdicreatedevregkeya) or [**SetupDiOpenDevRegKey**](/windows/win32/api/setupapi/nf-setupapi-setupdiopendevregkey).
-
-From kernel mode, use [**IoOpenDeviceRegistryKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioopendeviceregistrykey).
 
 ## Resources
 
