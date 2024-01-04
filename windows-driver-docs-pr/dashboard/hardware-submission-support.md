@@ -2,7 +2,7 @@
 title: Get support for Partner Center dashboard issues
 description: Get support for Partner Center dashboard issues
 ms.topic: article
-ms.date: 01/04/2023
+ms.date: 01/04/2024
 ---
 
 # Get support for Partner Center dashboard issues
