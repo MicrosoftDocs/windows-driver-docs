@@ -16,7 +16,7 @@ The WDK is used to develop, test, and deploy drivers for Windows.
 * [Learn what's new in driver development](./what-s-new-in-driver-development.md)
 * [Review known issues](./wdk-known-issues.md)
 
-You can run the WDK 10.0.22621.2428 (released October 24, 2023) on Windows 7 and later to target Windows 10, Windows Server 2016 and later client and server versions.
+To target Windows 11, version 23H2, developers should use WDK 10.0.22621.2428 (released October 24, 2023). You can run this WDK on Windows 7 and later to target Windows 10, Windows Server 2016 and later client and server versions.
 
 To target Windows 8.1, Windows 8, and Windows 7, install an older WDK and an older version of Visual Studio either on the same machine or on a separate machine. For links to older kits, see [Other WDK downloads](./other-wdk-downloads.md).
 
