@@ -6,7 +6,7 @@ keywords:
 - WDK
 - Download
 - drivers
-ms.date: 01/03/2024
+ms.date: 01/04/2024
 ---
 
 # Download the Windows Driver Kit (WDK)
@@ -42,13 +42,15 @@ When you install Visual Studio 2022, select the **Desktop development with C++**
 * C++ MFC for latest v143 build tools with Spectre Mitigations (x86 & x64)</br>
 Hint: Use the Search box to look for "64 latest spectre" to quickly see these components.</br>
 
-Installing Visual Studio should automatically download the Windows Software Development Kit (SDK). In the event that it does not, use the following link:
+## ![download icon.](images/download-install.png) Step 2: Install SDK
+
+Installing Visual Studio should automatically download the Windows SDK 10.0.22621.2428 (released October 24, 2023). In the event that it does not, use the following link:
 
 * [Download Windows SDK 10.0.22621.2428 (released October 24, 2023)](https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/)
 
 The provided links for the SDK and the WDK have matching build numbers, which is always required for the kits to work together. If you decide to install your own SDK/WDK pair, perhaps for a different Windows version, ensure that the build numbers match.
 
-## ![download icon.](images/download-install.png) Step 2: Install WDK
+## ![download icon.](images/download-install.png) Step 3: Install WDK
 
 * [Download WDK 10.0.22621.2428 (released October 24, 2023)](https://go.microsoft.com/fwlink/?linkid=2249371)
 
