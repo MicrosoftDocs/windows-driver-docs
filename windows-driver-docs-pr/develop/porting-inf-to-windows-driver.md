@@ -274,4 +274,4 @@ AddReg=MediaCategoryRegistration
 HKLM,SYSTEM\CurrentControlSet\Control\MediaCategories\%ExampleGuid%,Display,1,00,00,00,00
 ```
 
-This value is not needed and should be removed from the INF.
+This value is not used and should be removed from the INF.
