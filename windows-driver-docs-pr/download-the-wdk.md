@@ -16,8 +16,6 @@ The WDK is used to develop, test, and deploy drivers for Windows. The most recen
 * You can install and run this WDK on Windows 7 and later.
 * You can use this kit to build drivers for Windows 10, Windows Server 2016 and later client and server versions.
 
-For more details, see [Kit versioning](#kit-versioning).
-
 To target Windows 8.1, Windows 8, and Windows 7, install an older WDK and an older version of Visual Studio either on the same machine or on a separate machine. For links to older kits, see [Other WDK downloads](./other-wdk-downloads.md).
 
 [Join the Windows Insider Program](https://insider.windows.com/) to get [WDK Insider Preview builds](https://aka.ms/wipwdk). For installation instructions for the Windows Insider Preview builds, see [Installing preview versions of the Windows Driver Kit (WDK)](./installing-preview-versions-wdk.md).
@@ -51,7 +49,7 @@ Installing Visual Studio should automatically download the Windows SDK 10.0.2262
 
 * [Download Windows SDK 10.0.22621](https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/)
 
-The provided links for the SDK and the WDK have matching build numbers, which is always required for the kits to work together. If you decide to install your own SDK/WDK pair, perhaps for a different Windows version, ensure that the build numbers match.
+The provided links for the SDK and the WDK have matching build numbers, which is always required for the kits to work together. If you decide to install your own SDK/WDK pair, perhaps for a different Windows version, ensure that the build numbers match. For more details, see [Kit versioning](#kit-versioning).
 
 ## ![download icon.](images/download-install.png) Step 3: Install WDK
 
