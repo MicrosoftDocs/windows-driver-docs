@@ -6,17 +6,17 @@ keywords:
 - WDK
 - Download
 - drivers
-ms.date: 01/04/2024
+ms.date: 01/05/2024
 ---
 
 # Download the Windows Driver Kit (WDK)
 
-The WDK is used to develop, test, and deploy drivers for Windows.
+The WDK is used to develop, test, and deploy drivers for Windows. The most recent public release is WDK 10.0.22621.
 
-* [Learn what's new in driver development](./what-s-new-in-driver-development.md)
-* [Review known issues](./wdk-known-issues.md)
+* You can install and run this WDK on Windows 7 and later.
+* You can use this kit to build drivers for Windows 10, Windows Server 2016 and later client and server versions.
 
-To target Windows 11, version 23H2, developers should use WDK 10.0.22621. You can run this WDK on Windows 7 and later to target Windows 10, Windows Server 2016 and later client and server versions. For more details, see [Kit versioning](#kit-versioning).
+For more details, see [Kit versioning](#kit-versioning).
 
 To target Windows 8.1, Windows 8, and Windows 7, install an older WDK and an older version of Visual Studio either on the same machine or on a separate machine. For links to older kits, see [Other WDK downloads](./other-wdk-downloads.md).
 
@@ -90,7 +90,7 @@ A full kit build string includes as its last two components, the build number an
 
 To build a driver, the *build number* of your SDK installation must match the *build number* of your WDK installation. The QFE values does not need to match unless your driver uses functionality that is only available in the headers included with a later QFE.
 
-A quick way to see the full build string for locally installed kits is to go to Windows settings (Win+I) and type `kit`. The full build string appears to the right of the kit name. If you navigate to `C:\Program Files (x86)\Windows Kits\10\Include`, note that the QFE shown there is hardcoded to `.0`, so this is not a reliable way to check your QFE identifier. Also note that when you install a kit, the new installation replaces any previously existing installation of the same build number. When you install Visual Studio with the **Desktop development with C++** workload, if the installation payload includes the Windows SDK, the right-hand Summary pane also shows a hardcoded `.0` for QFE.
+A quick way to see the full build string for locally installed kits is to go to Windows settings (Win+I), navigate to Apps, then Installed apps, and in the Search box type `kit`. The full build string appears to the right of the kit name. If you navigate to `C:\Program Files (x86)\Windows Kits\10\Include`, note that the QFE shown there is hardcoded to `.0`, so this is not a reliable way to check your QFE identifier. Also note that when you install a kit, the new installation replaces any previously existing installation of the same build number. When you install Visual Studio with the **Desktop development with C++** workload, if the installation payload includes the Windows SDK, the right-hand Summary pane also shows a hardcoded `.0` for QFE.
 
 ## Driver samples for Windows
 
@@ -113,3 +113,5 @@ To download the driver samples, do one of the following:
 
 * [Windows 11 hardware requirements](/windows/whats-new/windows-11-requirements)
 * [Install the WDK using WinGet](./install-the-wdk-using-winget.md)
+* [Learn what's new in driver development](./what-s-new-in-driver-development.md)
+* [Review known issues](./wdk-known-issues.md)
