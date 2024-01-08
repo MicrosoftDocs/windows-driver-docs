@@ -41,7 +41,7 @@ For information about the new features for UMDF drivers in Windows 10, see [Wha
 
 For each UMDF version section below, the Windows version in which it was released is listed in parentheses.
 
-## UMDF 2.33 (Windows 11, version 21H2; Windows Server 2022)
+## Latest version - UMDF 2.33 (Windows 11, version 21H2; Windows Server 2022)
 
 * For devices that specify **SystemManagedIdleTimeout** or **SystemManagedIdleTimeoutWithHint** in the [WDF_POWER_POLICY_IDLE_TIMEOUT_TYPE](/windows-hardware/drivers/ddi/wdfdevice/ne-wdfdevice-_wdf_power_policy_idle_timeout_type) enumeration, when calling the [**WdfDeviceStopIdle**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicestopidle) macro with *WaitForD0* set to **FALSE**, if the device is still in D0 and the idle timeout period has not yet elapsed, **WdfDeviceStopIdle** returns STATUS_SUCCESS (in previous versions this resulted in a return value of STATUS_PENDING).
 * [**WdfDeviceWdmAssignPowerFrameworkSettings**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicewdmassignpowerframeworksettings) function now supports UMDF.
