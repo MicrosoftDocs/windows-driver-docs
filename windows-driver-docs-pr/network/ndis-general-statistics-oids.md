@@ -2,12 +2,14 @@
 title: NDIS general statistics OIDs
 description: This section describes general statistics OIDs for all NDIS drivers
 keywords: ["NDIS general statistics OIDs", "WDK NDIS general statistics OIDs", "WDK general statistics OIDs"]
-ms.date: 03/02/2023
+ms.date: 01/08/2024
 ---
 
 # NDIS general statistics OIDs
 
 A driver should respond to a query of a statistics OID with complete information so that the driver can supply the operating system and applications with information that they need to monitor network status, respond to security issues, and diagnose problems. If statistics counters are in hardware, the driver should read the appropriate statistics value from hardware each time that a statistics OID is queried.
+
+**Note**: General statistics OIDs count all traffic through the network adapter including [Network Direct Kernel (NDK)](overview-of-network-direct-kernel-provider-interface--ndkpi-.md#ndkpi-and-rdma) traffic. NDK statistics may be counted separately with [OID_NDK_STATISTICS](oid-ndk-statistics.md).
 
 ## Miniport driver support for 64-bit counters
 
@@ -45,8 +47,7 @@ Miniport drivers can also support 64-bit counters for other statistics OIDs, suc
 
 System support for 64-bit counters is available in Windows XP and later operating systems.
 
->[!NOTE]
-> If an NDIS MUX driver exposes multiple miniport instances, querying the following general statistics OIDs should return data specific to that miniport instance. For example, if a MUX driver implements virtual local area network (VLAN) filtering and exposes one miniport per VLAN, the statistics values returned from the following OIDs are expected to be per VLAN.
-> - [OID_GEN_STATISTICS](./oid-gen-statistics.md)
-> - [OID_GEN_RCV_OK](./oid-gen-rcv-ok.md)
-> - [OID_GEN_XMIT_OK](./oid-gen-xmit-ok.md)
+**Note**: If an NDIS MUX driver exposes multiple miniport instances, querying the following general statistics OIDs should return data specific to that miniport instance. For example, if a MUX driver implements virtual local area network (VLAN) filtering and exposes one miniport per VLAN, the statistics values returned from the following OIDs are expected to be per VLAN.
+- [OID_GEN_STATISTICS](./oid-gen-statistics.md) 
+- [OID_GEN_RCV_OK](./oid-gen-rcv-ok.md)
+- [OID_GEN_XMIT_OK](./oid-gen-xmit-ok.md)
