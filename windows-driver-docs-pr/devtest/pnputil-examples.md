@@ -1,7 +1,7 @@
 ---
 title: PnPUtil Examples
 description: PnPUtil Examples
-ms.date: 12/27/2023
+ms.date: 01/08/2024
 ---
 
 # PnPUtil Examples
@@ -243,6 +243,65 @@ pnputil /scan-devices
 ```
 
 Administrator rights are required to run the pnputil /scan-devices command.
+
+## /enum-devicetree
+
+Enumerate device tree
+
+```console
+pnputil /enum-devicetree
+```
+
+Enumerate device tree with "ROOT\SYSTEM\0000" as root
+
+```console
+pnputil /enum-devicetree "ROOT\SYSTEM\0000"
+```
+
+Enumerate device tree with "ROOT\SYSTEM\0000" as root and display driver information
+
+```console
+pnputil /enum-devicetree ROOT\SYSTEM\0000 /drivers
+```
+
+Enumerate tree of connected devices and display device interfaces
+
+```console
+pnputil /enum-devicetree /connected /interfaces
+```
+
+Enumerate tree and display device stack information, interfaces, drivers and services
+
+```console
+pnputil /enum-devicetree /stack /interfaces /drivers /services
+```
+
+## /enum-containers
+
+Enumerate all device containers on the system
+
+```console
+pnputil /enum-containers
+```
+
+Enumerate specific device container
+
+```console
+pnputil /enum-containers /containerid ""{00000000-0000-0000-ffff-ffffffffffff}"
+```
+
+Enumerate all connected device containers and associated devices
+
+```console
+pnputil /enum-containers /connected /devices
+```
+
+
+Enumerate all disconnected device containers, associated devices and output to a file in XML format
+
+```console
+pnputil /enum-containers /disconnected /devices /format xml /output-file disconnecteddevices.xml
+```
 
 ### See also
 

@@ -1,7 +1,7 @@
 ---
 title: PnPUtil
 description: PnPUtil
-ms.date: 04/20/2017
+ms.date: 01/08/2024
 ---
 
 # PnPUtil

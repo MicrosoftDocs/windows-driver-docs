@@ -10,7 +10,7 @@ api_name:
 - PnPUtil
 api_type:
 - NA
-ms.date: 12/28/2023
+ms.date: 01/08/2024
 ---
 
 # PnPUtil Command Syntax
@@ -22,10 +22,11 @@ To run PnPUtil, open a command prompt window (Run as Administrator) and type a c
 ```syntax
 PNPUTIL [/add-driver <...> | /delete-driver <...> |
          /export-driver <...> | /enum-drivers |
-         /enum-devices [<...>] | /enum-interfaces [<...>] |
+         /enum-devices [<...>] | /enum-devicetree [<...>] |
          /disable-device <...> | /enable-device <...> |
          /restart-device <...> | /remove-device <...> |
          /scan-devices [<...>] | /enum-classes [<...>] |
+         /enum-interfaces [<...>] | /enum-containers [<...>] |
          /?]
 ```
 
@@ -236,9 +237,32 @@ Flags available starting in Windows 11, version 22H2:
 - `/deviceid <device ID>` - filter by device hardware and compatible ID
 - `/resources` - display device resources
 
+### /enum-devicetree
+
+Enumerates the device tree.
+
+Command available starting in Windows 11, version 23H2.
+
+```syntax
+/enum-devicetree [root device instance ID] [/connected] [/services]
+                 [/stack] [/drivers] [/interfaces]
+```
+
+`root device instance ID` - display device tree starting at the specified root device instance ID.
+
+Flags
+
+- `/connected` - filter by connected devices
+- `/services` - display device services
+- `/stack` - display effective device stack information
+- `/drivers` - display matching and installed drivers
+- `/interfaces` - display device interfaces
+
 ### /enum-interfaces
 
-Enumerates all device interfaces on the system. Command available starting in Windows 10, version 1903.
+Enumerates all device interfaces on the system.
+
+Command available starting in Windows 10, version 1903.
 
 ```syntax
 PNPUTIL /enum-interfaces [/enabled | /disabled] [/class <GUID>] [/properties]
@@ -256,7 +280,9 @@ Flags available starting in Windows 11, version 22H2:
 
 ### /enum-classes
 
-Enumerates all device classes on the system. Command available starting in Windows 11, version 22H2.
+Enumerates all device classes on the system.
+
+Command available starting in Windows 11, version 22H2.
 
 ```syntax
 PNPUTIL /enum-classes [/class <name | GUID>] [/services]
@@ -267,12 +293,39 @@ Flags available starting in Windows 11, version 22H2:
 - `/class <name | GUID>` - filter by device class name or GUID
 - `/services` - display device class services
 
+### /enum-containers
+
+Enumerates all device containers on the system.
+
+Command available starting in Windows 11, version 23H2.
+
+```syntax
+PNPUTIL /enum-containers [/containerid <container id>] [/connected | /disconnected]
+                         [/problem] [/devices] [/format <txt | xml | csv>]
+                         [/output-file [<filename>]]
+```
+
+Flags
+
+`/containerid <container id>` - filter by container ID.
+
+`/connected | /disconnected` - filter by connected device containers or filter by disconnected device containers
+
+`/problem`  - filter by device containers with problems
+
+`/devices` - display container devices
+
+`/format` - format output as text, XML, or CSV
+
+`/output-file [<filename>]` - write output to optional filename
+
 ### /?
 
 Displays the command-line syntax.
 
 ```syntax
 PNPUTIL /?
+
 ```
 
 ## Legacy Command Mapping
