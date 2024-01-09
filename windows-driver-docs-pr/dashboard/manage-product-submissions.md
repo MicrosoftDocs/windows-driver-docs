@@ -9,7 +9,7 @@ ms.date: 03/31/2022
 
 Use the following methods in *Microsoft Hardware APIs* to manage submissions for your products and for getting them signed by Microsoft. For an introduction to Microsoft Hardware APIs, including prerequisites for using the API, see [hardware dashboard API](dashboard-api.md).
 
-```cpp
+```cpp      
 https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/
 ```
 
@@ -27,7 +27,7 @@ Methods for managing product submissions
 
 1. If you have not done so already, complete all the [prerequisites](dashboard-api.md) for the Microsoft Hardware APIs.
 
-1. [Obtain an Microsoft Entra ID access token](dashboard-api.md#obtain-an-microsoft-entra-identity-access-token). You must pass this access token to the methods in the Microsoft Store submission API. After you obtain an access token, you have 60 minutes to use it before it expires. After the token expires, you can obtain a new one.
+1. [Obtain an Microsoft Entra ID access token](dashboard-api.md#obtain-a-microsoft-entra-identity-access-token). You must pass this access token to the methods in the Microsoft Store submission API. After you obtain an access token, you have 60 minutes to use it before it expires. After the token expires, you can obtain a new one.
 
 1. [Create a new product](create-a-new-product.md)  by executing the following method in the Microsoft Hardware API. This creates a new in-progress product and allows you to submit packages for this product.
 

@@ -45,7 +45,7 @@ After you have completed the above prerequisites we must now assign the appropri
     Select **Driver Submitter**, **Shipping Label owner**, and if available, **Shipping Label promoter**.  [Learn more about these roles](./hardware-dashboard-users-manage.md)
     
 
-## Obtain an Microsoft Entra ID access token
+## Obtain a Microsoft Entra ID access token
 
 Before you call any of the methods in the Microsoft Hardware API, you must first obtain an Microsoft Entra ID access token that you pass to the **Authorization** header of each method in the API. After you obtain an access token, you have 60 minutes to use it before it expires. After the token expires, you can refresh the token, so you can continue to use it in further calls to the API. To obtain the access token, follow the instructions in [Service to Service Calls Using Client Credentials](/azure/active-directory/azuread-dev/v1-oauth2-client-creds-grant-flow) to send an HTTP POST to the `https://login.microsoftonline.com/<tenant_id>/oauth2/token` endpoint. Here is a sample request.
 
