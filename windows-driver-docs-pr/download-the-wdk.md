@@ -6,17 +6,15 @@ keywords:
 - WDK
 - Download
 - drivers
-ms.date: 10/24/2023
+ms.date: 01/05/2024
 ---
 
 # Download the Windows Driver Kit (WDK)
 
-The WDK is used to develop, test, and deploy drivers for Windows.
+The WDK is used to develop, test, and deploy drivers for Windows. The most recent public release is WDK 10.0.22621.
 
-* [Learn what's new in driver development](./what-s-new-in-driver-development.md)
-* [Review known issues](./wdk-known-issues.md)
-
-You can run the WDK 10.0.22621.2428 (released October 24, 2023) on Windows 7 and later to target Windows 10, Windows Server 2016 and later client and server versions.
+* You can install and run this WDK on Windows 7 and later.
+* You can use this kit to build drivers for Windows 10, Windows Server 2016 and later client and server versions.
 
 To target Windows 8.1, Windows 8, and Windows 7, install an older WDK and an older version of Visual Studio either on the same machine or on a separate machine. For links to older kits, see [Other WDK downloads](./other-wdk-downloads.md).
 
@@ -40,22 +38,22 @@ When you install Visual Studio 2022, select the **Desktop development with C++**
 * C++ ATL for latest v143 build tools with Spectre Mitigations (x86 & x64)</br>
 * C++ MFC for latest v143 build tools with Spectre Mitigations (ARM64/ARM64EC)</br>
 * C++ MFC for latest v143 build tools with Spectre Mitigations (x86 & x64)</br>
+
 Hint: Use the Search box to look for "64 latest spectre" to quickly see these components.</br>
 
- Don't worry about the SDK at this point; you install this next in step 2 below.
-
+Note: The **Desktop development with C++** workload selected above also installs the Windows SDK 10.0.22621.
 
 ## ![download icon.](images/download-install.png) Step 2: Install SDK
 
-After you've successfully installed Visual Studio, your next step is to download the Windows Software Development Kit (SDK).
+Installing Visual Studio should automatically download the Windows SDK 10.0.22621. In the event that it does not, use the following link:
 
-* [Download Windows SDK 10.0.22621.2428 (released October 24, 2023)](https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/)
+* [Download Windows SDK 10.0.22621](https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/)
 
-The provided links for the SDK and the WDK have matching build numbers, which is always required for the kits to work together. If you decide to install your own SDK/WDK pair, perhaps for a different Windows version, ensure that the build numbers match.
+The provided links for the SDK and the WDK have matching build numbers, which is always required for the kits to work together. If you decide to install your own SDK/WDK pair, perhaps for a different Windows version, ensure that the build numbers match. For more details, see [Kit versioning](#kit-versioning).
 
 ## ![download icon.](images/download-install.png) Step 3: Install WDK
 
-* [Download WDK 10.0.22621.2428 (released October 24, 2023)](https://go.microsoft.com/fwlink/?linkid=2249371)
+* [Download WDK 10.0.22621](https://go.microsoft.com/fwlink/?linkid=2249371)
 
 The WDK Visual Studio extension is included in the default WDK installation.
 
@@ -72,7 +70,7 @@ The latest public version of the EWDK contains Visual Studio 2022 Build Tools 17
 
 The EWDK also requires the .NET Framework version 4.7.2. For more information about other requirements for the .NET Framework, see [.NET Framework system requirements](/dotnet/framework/get-started/system-requirements).
 
-* [Download EWDK 10.0.22621.2428 (released October 24, 2023) with Visual Studio Build Tools](/legal/windows/hardware/enterprise-wdk-license-2022)
+* [Download EWDK 10.0.22621 with Visual Studio Build Tools](/legal/windows/hardware/enterprise-wdk-license-2022)
 
 Once you have downloaded the ISO, use these steps to set up your build environment:
 
@@ -83,6 +81,14 @@ Once you have downloaded the ISO, use these steps to set up your build environme
 5. When you're done with the build environment, you may want to eject the ISO.
 
 Note that the Visual Studio major version should match with the version in the EWDK. For example, Visual Studio 2022 works with the EWDK that contain VS17.X build tools. For a list of Visual Studio 2022 version numbers, see [Visual Studio 2022 Releases](/visualstudio/releases/2022/release-history).
+
+## Kit versioning
+
+A full kit build string includes as its last two components, the build number and a QFE (Quick Fix Engineering) value. For example, 10.0.22621.2428 has a build number of 22621, and a QFE value of 2428.
+
+To build a driver, the *build number* of your SDK installation must match the *build number* of your WDK installation. The QFE values does not need to match unless your driver uses functionality that is only available in the headers included with a later QFE.
+
+A quick way to see the full build string for locally installed kits is to go to Windows settings (Win+I), navigate to Apps, then Installed apps, and in the Search box type `kit`. The full build string appears to the right of the kit name. If you navigate to `C:\Program Files (x86)\Windows Kits\10\Include`, note that the QFE shown there is hardcoded to `.0`, so this is not a reliable way to check your QFE identifier. Also note that when you install a kit, the new installation replaces any previously existing installation of the same build number. When you install Visual Studio with the **Desktop development with C++** workload, if the installation payload includes the Windows SDK, the right-hand Summary pane also shows a hardcoded `.0` for QFE.
 
 ## Driver samples for Windows
 
@@ -105,3 +111,5 @@ To download the driver samples, do one of the following:
 
 * [Windows 11 hardware requirements](/windows/whats-new/windows-11-requirements)
 * [Install the WDK using WinGet](./install-the-wdk-using-winget.md)
+* [Learn what's new in driver development](./what-s-new-in-driver-development.md)
+* [Review known issues](./wdk-known-issues.md)

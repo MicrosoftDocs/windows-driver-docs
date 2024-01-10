@@ -1,20 +1,22 @@
 ---
-title: Installing and Configuring Printer Drivers
+title: Install and configure printer drivers
 description: Describes installation and configuration of printer drivers.
 keywords:
-- installing drivers WDK printer
+- install drivers WDK printer
 - printer driver installations WDK
-ms.date: 08/10/2021
+ms.date: 01/02/2024
 ---
 
-# Installing and Configuring Printer Drivers
+# Install and configure printer drivers
 
-This section describes installation and configuration of printer drivers. It includes the following topics:
+This section describes installation and configuration of printer drivers.
 
-[Printer Installation Basics](printer-installation-basics.md)
+It includes the following topics:
 
-[Plug and Play for Printers](plug-and-play-for-printers.md)
+[Printer installation basics](printer-installation-basics.md)
 
-[Installing Printers Over a Network](installing-printers-over-a-network.md)
+[Plug and Play for printers](plug-and-play-for-printers.md)
 
-[Printer Configuration](printer-configuration.md)
+[Install printers over a network](installing-printers-over-a-network.md)
+
+[Printer configuration](printer-configuration.md)

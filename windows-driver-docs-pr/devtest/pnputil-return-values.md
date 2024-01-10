@@ -1,7 +1,7 @@
 ---
 title: PnPUtil Return Values
 description: PnPUtil Return Values
-ms.date: 12/28/2023
+ms.date: 01/08/2024
 ---
 
 # PnPUtil Return Values
