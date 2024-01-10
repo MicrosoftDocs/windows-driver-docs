@@ -5,13 +5,13 @@ keywords:
 - Windows Driver Kit
 - previous versions
 - WDK
-ms.date: 10/24/2023
+ms.date: 01/04/2024
 ---
 
 # Other WDK downloads
 
 The Windows Driver Kit (WDK) is used to develop, test, and deploy Windows Drivers.
-This topic contains information about earlier versions of the Windows Driver Kit (WDK),
+This topic contains information about versions of the Windows Driver Kit (WDK),
 Enterprise WDK (EWDK), and additional downloads for support purposes. To develop drivers,
 use the latest public versions of the Windows Driver Kit (WDK) and tools, available for
 download on [Download the Windows Driver Kit (WDK)](./download-the-wdk.md).
@@ -55,7 +55,7 @@ The following table indicates which Visual Studio version is required for the di
 
 | Targeted versions of Windows      | Edition(s) of Visual Studio            |
 |--------------------------|----------------------------------------|
-|Windows 11, version 22H2| [Visual Studio Community 2022](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=17) <br/> [Visual Studio Professional 2022](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=17) <br/> [Visual Studio Enterprise 2022](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=17)
+|Windows 11, version 23H2<br/>Windows 11, version 22H2| [Visual Studio Community 2022](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=17) <br/> [Visual Studio Professional 2022](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=17) <br/> [Visual Studio Enterprise 2022](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=17)
 |Windows 11, version 21H2<br/>Windows Server 2022 <br/>Windows 10, version 2004 <br/>Windows 10, version 1903|[Visual Studio Community 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=16) <br/>[Visual Studio Professional 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=16) <br/>[Visual Studio Enterprise 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=16)|
 | Windows 10, version 1809 <br/>Windows 10, version 1803 <br/>Windows 10, version 1709 | [Visual Studio Community 2017](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15) <br/>[Visual Studio Professional 2017](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15) <br/>[Visual Studio Enterprise 2017](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15) |
 | Windows 10, version 1703 <br/>Windows 10, version 1607 | [Visual Studio Express 2015 for Desktop](https://go.microsoft.com/fwlink/?linkid=875331) <br/>[Visual Studio Community 2015](https://go.microsoft.com/fwlink/p/?LinkId=534599) <br/>[Visual Studio Professional 2015](https://go.microsoft.com/fwlink/p/?LinkId=619628) <br/>[Visual Studio Enterprise 2015](https://go.microsoft.com/fwlink/p/?LinkId=619629) |
@@ -100,7 +100,7 @@ develop, build, package, deploy, test, and debug drivers.
 | Released with      | WDK and related downloads                       |
 |--------------------------|-------------------------------------------------|
 |Windows 11, Version 23H2 | [WDK 10.0.22621.2428 (released October 24, 2023)](./download-the-wdk.md)|
-|Windows 11, version 22H2  | [WDK for Windows 11, version 22H2 (10.0.22621.382, released 5/24/2022)](https://go.microsoft.com/fwlink/?linkid=2196230)|
+|Windows 11, version 22H2  | [WDK for Windows 11, version 22H2 (10.0.22621.382, released May 24, 2022)](https://go.microsoft.com/fwlink/?linkid=2196230)|
 |Windows 11, version 21H2  | [WDK for Windows 11, version 21H2](https://go.microsoft.com/fwlink/?linkid=2166289)|
 | Windows Server 2022      | [WDK for Windows Server 2022](https://go.microsoft.com/fwlink/?linkid=2164149)|
 | Windows 10, version 2004 | [WDK for Windows 10, version 2004](https://go.microsoft.com/fwlink/?linkid=2128854)|
