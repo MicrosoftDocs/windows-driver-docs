@@ -8,18 +8,18 @@ keywords:
 - winget
 - install
 - download
-ms.date: 09/27/2023
+ms.date: 01/08/2024
 ---
 
 # Install the WDK using WinGet
 
-You can use the Windows Package Manager (WinGet) tool to install or update the Windows Driver Kit on your machine, along with its dependencies such as Visual Studio and the Windows Software Development Kit, from command line.
+You can use the Windows Package Manager (WinGet) tool to install or update the Windows Driver Kit on your computer, along with its dependencies such as Visual Studio and the Windows Software Development Kit, all from the command line.
 
 Refer to the [WinGet install documentation](/windows/package-manager/winget/#install-winget) if you need help making sure that you have WinGet installed and configured correctly.
 
 ## Install the latest WDK step by step using WinGet
 
-The latest version of the WDK is 22621, which targets Windows 11, version 22H2. It requires Visual Studio 2022 and Windows 11, version 22H2 SDK (22621).
+The latest version of the WDK is 10.0.22621. It requires Visual Studio 2022 and Windows SDK 10.0.22621. For more info, see [Kit versioning](./download-the-wdk.md#kit-versioning).
 
 ### Step 1: Install Visual Studio 2022
 
@@ -78,7 +78,7 @@ winget install --source winget --exact --id Microsoft.VisualStudio.2022.Enterpri
 
 You can check Visual Studio documentation on [How to use WinGet to install or modify Visual Studio](/visualstudio/install/use-command-line-parameters-to-install-visual-studio#use-winget-to-install-or-modify-visual-studio) for more details.
 
-### Step 2: Install Windows 11, version 22H2 SDK and WDK
+### Step 2: Install Windows SDK and WDK
 
 You can install both the Windows SDK and WDK from WinGet by running the following commands:
 
@@ -146,7 +146,7 @@ winget install --source winget --exact --id Microsoft.WindowsWDK.10.0.<kit-versi
 ```
 
 > [!NOTE]
-> If the Windows Driver Kit version you are looking for is not available in WinGet, you will need to download and install it separately by going to the [Other WDK downloads](./other-wdk-downloads.md) site.
+> If the Windows Driver Kit version you are looking for is not available in WinGet, you will need to download and install it separately from [Other WDK downloads](./other-wdk-downloads.md).
 
 Unless you have the WDK Visual Studio extension from a newer WDK installed already, you will need to install it manually. It's located by default under `%ProgramFiles(x86)%\Windows Kits\10\Vsix\<vs-version>\10.0.<kit-version>.0\WDK.vsix` for kit versions 22621 and newer, or `%ProgramFiles(x86)%\Windows Kits\10\Vsix\<vs-version>\WDK.vsix` for kit versions 22000 and older.
 
