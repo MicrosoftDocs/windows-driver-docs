@@ -1,12 +1,14 @@
 ---
 title: Exploring the Driver Options in the Wizard
 description: This article explores the driver options in the first section of the Create a v4 Print Driver wizard.
-ms.date: 01/25/2023
+ms.date: 01/10/2024
 ---
 
 # Exploring the Driver Options in the Wizard
 
 [!include[Print Support Apps](../includes/print-support-apps.md)]
+
+[!include[Print driver end of life servicing](../includes/print-eol-servicing.md)]
 
 This article explores the driver options in the first section of the **Create a v4 Print Driver** wizard.
 
@@ -94,7 +96,7 @@ This template provides the method headers for all supported JavaScript constrain
 
 ### Autoconfiguration GDL
 
-This provides a basic auto-configuration file for a v4 print driver. For information about GDL syntax for auto-configuration, and to explore an example file, see the [Print Auto Configuration Sample](/samples/microsoft/windows-driver-samples/print-auto-configuration-sample).
+This provides a basic autoconfiguration file for a v4 print driver. For information about GDL syntax for autoconfiguration, and to explore an example file, see the [Print Auto Configuration Sample](/samples/microsoft/windows-driver-samples/print-auto-configuration-sample).
 
 ### TCPMon Bidi extension XML
 
