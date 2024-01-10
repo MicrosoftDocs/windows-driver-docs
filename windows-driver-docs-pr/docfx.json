@@ -58,7 +58,7 @@
         "tedhudek"
       ],
       "titleSuffix": "Windows drivers",
-      "ms.prod": "windows-hardware",
+      "ms.service": "windows-hardware-driver-quality",
       "author": "tedhudek",
       "ms.author": "tedhudek",
       "ms.topic": "article",
@@ -72,7 +72,7 @@
       }
     },
     "fileMetadata": {
-      "ms.technology": {
+      "ms.subservice": {
         "*": "whats-new-and-downloads",
         "**/3dprint/*": "3dprint",
         "**/acpi/*": "acpi",
