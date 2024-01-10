@@ -17,7 +17,6 @@ ms.date: 12/05/2023
 There are two installation types for Bluetooth profile drivers:
 
 - **Client-side installation** for remote devices where the remote device advertises its services and the computer connects to it. Examples include: mice, keyboards, and printers.
-
 - **Server-side installation** where the computer advertises services and remote devices can connect to the computer to use those services. For example, a vendor could author a server-side installation to enable a mobile device to print to a printer attached to the computer.
 
 These two installation types require different installation procedures.
@@ -27,16 +26,11 @@ These two installation types require different installation procedures.
 A user that wants to use a Bluetooth-enabled device brings the device within range of the computer and initiates a connection from the computer to the remote device using the following installation sequence for a client-side profile driver.
 
 1. Select **Add a Bluetooth device** in **Control Panel** to find all devices within range of the computer.
-
-2. Select the device to pair with.
-
-3. Pair the device with the local radio, which might or might not involve a PIN exchange.
-
-4. The local radio issues an SDP inquiry to identify the services supported on the remote device.
-
-5. The **Found New Hardware Wizard** searches for appropriate drivers on the local hard disk drive, and on Windows Update.
-
-6. If the **Found New Hardware Wizard** doesn't find an appropriate driver for the device, it prompts the user to insert the profile driver installation media that contains the profile driver's device setup information file (INF file).
+1. Select the device to pair with.
+1. Pair the device with the local radio, which might or might not involve a PIN exchange.
+1. The local radio issues an SDP inquiry to identify the services supported on the remote device.
+1. The **Found New Hardware Wizard** searches for appropriate drivers on the local hard disk drive, and on Windows Update.
+1. If the **Found New Hardware Wizard** doesn't find an appropriate driver for the device, it prompts the user to insert the profile driver installation media that contains the profile driver's device setup information file (INF file).
 
 ## Installing a server-side profile driver
 
@@ -78,9 +72,7 @@ For more information about creating and distributing INF files and installing dr
 The Bluetooth driver stack generates hardware IDs according to the following templates:
 
 - BTHENUM\\{ *ServiceGUID*}\_VID& *nnnnnnnn*
-
 - BTHENUM\\{ *ServiceGUID*}\_VID& *nnnnnnnn*\_PID& *nnnn*
-
 - BTHENUM\\{ *ServiceGUID*}\_LOCALMFG& *nnnn*
 
 The Bluetooth driver stack generates compatible IDs according to the following template:
@@ -90,18 +82,15 @@ The Bluetooth driver stack generates compatible IDs according to the following t
 *ServiceGUID* is a 16-bit GUID expanded into a 128-bit GUID, as defined by the Bluetooth specification. For example, {00001124-0000-1000-8000-00805F9B34FB} corresponds to an HID device.
 
 - The eight digits following *VID&* correspond to the vendor ID code.
-
 - The four digits following *PID&* correspond to the product ID code.
-
 - The four digits following *LOCALMFG&* correspond to the manufacturer of the local Bluetooth radio.
-
 - The VID/PID and LOCALMFG tags are independent of each other.
 
 The most generic device ID is a *ServiceGUID* by itself. For example:
 
 BTHENUM\\{00001124-0000-1000-8000-00805F9B34FB}
 
-The Bluetooth driver stack can be restricted to load your profile driver and software to run only on a specific release of a remote device by using Plug and Play IDs in both the remote device and the INF file. **Note** that the Bluetooth driver stack generates a VID/PID pair only if the device publishes a Plug and Play ID that the stack can detect using SDP. For example:
+The Bluetooth driver stack can be restricted to load your profile driver and software to run only on a specific release of a remote device by using Plug and Play IDs in both the remote device and the INF file. The Bluetooth driver stack generates a VID/PID pair only if the device publishes a Plug and Play ID that the stack can detect using SDP. For example:
 
 BTHENUM\\{00001124-0000-1000-8000-00805F9B34FB}\_VID& *nnnnnnnn*\_PID& *nnnn*
 

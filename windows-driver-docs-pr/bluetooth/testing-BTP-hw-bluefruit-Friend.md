@@ -1,7 +1,7 @@
 ---
 title: Microsoft Bluetooth Test Platform - Bluefruit Friend
 description: Bluetooth Test Platform (BTP) supported hardware (Bluefruit Friend).
-ms.date: 10/02/2023
+ms.date: 01/10/2024
 ---
 
 # Bluefruit LE UART Friend (nRF51822)
@@ -31,7 +31,7 @@ The Bluefruit LE UART Friend can be purchased via [Adafruit](https://www.adafrui
 
 ## Getting started
 
-1. If purchased from MCCI, the board arrives with a 12-pin pmod adapter already attached and ready to be programmed. If the device was purchased via Adafruit, you need to make an adapter for the radio to attach to the Traduci. Contact btpsupport@microsoft.com for help.
+1. If purchased from MCCI, the board arrives with a 12-pin pmod adapter already attached and ready to be programmed. If the device was purchased via Adafruit, you need to make an adapter for the radio to attach to the Traduci. Contact <btpsupport@microsoft.com> for help.
 1. Install the [Bluefruit Connect app](https://learn.adafruit.com/bluefruit-le-connect) by Adafruit on an Android device or iPhone.
 1. Move the switch on the Bluefruit Friend device to UART mode for firmware update.
 1. Plug the Bluefruit into the Bluetooth Test Platform Traduci board port labeled 'JC' and power it on from a command prompt using TraduciCMD.exe: `TraduciCmd.exe -power 3 3`. The red LED on port JC should light up, and the blue LED on the Bluefruit Friend device.
@@ -62,4 +62,4 @@ The Bluefruit LE UART Friend can be purchased via [Adafruit](https://www.adafrui
   - Once radio is powered on, connect a jumper wire from pin 11 (GND) on the 12-pin adapter to pin 8 (DFU) on the Bluefruit board. A male to female jumper wire is easiest to use. Hold the connection for approximately 4 seconds. The red LED should light up, then the blue LED. The lights should flash back and forth. Once the blue LED stops flashing, break the connection. If you maintain the connection, the system continues to reset the chip. Pull the jumper once the red light is solid.
   - Follow from step 5 above.
 
-If still not working, email btpsupport@microsoft.com
+If still not working, email <btpsupport@microsoft.com>

@@ -1,7 +1,7 @@
 ---
-title: Microsoft-defined Bluetooth HCI commands and events
+title: Microsoft-Defined Bluetooth HCI Commands and Events
 description: The Bluetooth Host-Controller Interface (HCI) specifies all interactions between a host and a Bluetooth radio controller.
-ms.date: 09/29/2023
+ms.date: 01/10/2024
 ---
 
 # Microsoft-defined Bluetooth HCI extensions
@@ -337,7 +337,7 @@ If the controller supports the RSSI monitoring of LE advertisements without samp
 
 The Controller shall support a minimum of 30 simultaneous Monitor_handles, a minimum of 30 simultaneous tracked devices, and a minimum of 20 simultaneous tracked duplicate advertisements. The Controller shall also be capable of performing a continuous LE scan at 10% duty cycle.
 
-If Address Resolution is enabled in the Controller and the Host intends to monitor a remote device with its IRK successfully stored in the Controller's resolving list, then the Host shall provide the Peer_Identity_Address and Peer_Identity_Address_Type parameters from the remote device’s resolving list entry as the Peer_device_address and Peer_device_address_type parameters, respectively.
+If Address Resolution is enabled in the Controller and the Host intends to monitor a remote device with its IRK successfully stored in the Controller's resolving list, then the Host shall provide the Peer_Identity_Address and Peer_Identity_Address_Type parameters from the remote device's resolving list entry as the Peer_device_address and Peer_device_address_type parameters, respectively.
 
 | *RSSI_sampling_period* | Legacy Advertisements | Extended Advertisements (Non-Anonymous) | Extended Advertisements (Anonymous) |
 |--|--|--|--|
@@ -397,13 +397,13 @@ When active scanning is enabled, the scan response for an advertisement matching
 If the controller receives a HCI_VS_MSFT_LE_Monitor_Advertisement command when the filters are disabled (due to  a previously received [HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable][ref_HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable] command with *Enable* set to 0x00), the controller shall accept the command if it can, but set it to a disabled state.
 The controller may also refuse the command for other reasons such as resource exhaustion.
 
-If all bits of Monitor_options are clear, the Controller should return the error code _Invalid HCI Command Parameters_ (0x12).
+If all bits of Monitor_options are clear, the Controller should return the error code *Invalid HCI Command Parameters* (0x12).
 
-If bit 1 or bit 3 of Monitor_options is set and Peer_device_IRK is set to an invalid IRK, or none of the bits of Monitor_options is set, the Controller should return the error code _Invalid HCI Command Parameters_ (0x12).
+If bit 1 or bit 3 of Monitor_options is set and Peer_device_IRK is set to an invalid IRK, or none of the bits of Monitor_options is set, the Controller should return the error code *Invalid HCI Command Parameters* (0x12).
 
-If bit 0 or bit 1 or bit 2 or bit 3 of Monitor_options is set and Condition_type is set to 0x03 or 0x04, then the Controller should return the error code _Invalid HCI Command Parameters_ (0x12).
+If bit 0 or bit 1 or bit 2 or bit 3 of Monitor_options is set and Condition_type is set to 0x03 or 0x04, then the Controller should return the error code *Invalid HCI Command Parameters* (0x12).
 
-If bit 0 of Advertisement_report_filter_options is set and RSSI_sampling_period is any value other than 0x00, the Controller should return the error code _Invalid HCI Command Parameters_ (0x12).
+If bit 0 of Advertisement_report_filter_options is set and RSSI_sampling_period is any value other than 0x00, the Controller should return the error code *Invalid HCI Command Parameters* (0x12).
 
 #### Missing parameters
 
@@ -500,7 +500,6 @@ Peer_device_IRK (16 octets):
 |--|--|
 | 0x0000000000000000&nbsp;0000000000000000 | Invalid IRK. Shall not be the value when Monitor_options bit 1 is set or when Monitor_options bit 3 is set. |
 | 0xXXXXXXXXXXXXXXXX&nbsp;XXXXXXXXXXXXXXXX | IRK of the device to match. Peer_device_address and Peer_device_address_type shall be populated. |
-
 
 Condition_type (1 octet):
 

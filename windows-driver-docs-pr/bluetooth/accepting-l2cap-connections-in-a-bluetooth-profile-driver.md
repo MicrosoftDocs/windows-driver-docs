@@ -1,5 +1,5 @@
 ---
-title: Accepting L2CAP connections in a Bluetooth profile driver
+title: Accepting L2CAP Connections in a Bluetooth Profile Driver
 description: Accepting L2CAP connections in a Bluetooth profile driver
 keywords:
 - L2CAP profile drivers WDK Bluetooth
@@ -8,7 +8,7 @@ keywords:
 - connections WDK Bluetooth
 - remote connection notifications WDK Bluetooth
 - notifications WDK Bluetooth
-ms.date: 10/07/2022
+ms.date: 01/10/2024
 ---
 
 # Accepting L2CAP connections in a Bluetooth profile driver

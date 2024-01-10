@@ -1,7 +1,7 @@
 ---
 title: Microsoft Bluetooth Test Platform - Bluefruit Feather
 description: Bluetooth Test Platform (BTP) supported hardware (Bluefruit Feather).
-ms.date: 09/29/2023
+ms.date: 01/10/2024
 ---
 
 # Bluefruit Feather (nRF52840)
@@ -49,8 +49,8 @@ You need to update the firmware for each release of BTP.
 
 1. Acquire and setup the Arduino command line interface.
     1. Download the latest version of the [arduino-cli](https://arduino.github.io/arduino-cli/latest/installation/#download).
-    2. If not done already, add the arduino-cli to your [PATH variable](/windows-server/administration/windows-commands/path).
-    3. To acquire the Adafruit board packages, run the following from a command prompt:
+    1. If not done already, add the arduino-cli to your [PATH variable](/windows-server/administration/windows-commands/path).
+    1. To acquire the Adafruit board packages, run the following from a command prompt:
 
     ```console
     arduino-cli config init
@@ -79,7 +79,7 @@ You need to update the firmware for each release of BTP.
 - Configurable ATT database
 - Small form factor, low power, surface mount module
 
-> [!Note]
+> [!NOTE]
 > The Bluefruit Feather is not currently supported for use with the Traduci.
 
 ## Trouble shooting

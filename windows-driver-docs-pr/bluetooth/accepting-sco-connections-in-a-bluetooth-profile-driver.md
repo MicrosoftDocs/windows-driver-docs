@@ -1,12 +1,12 @@
 ---
-title: Accepting SCO connections in a Bluetooth profile driver
+title: Accepting SCO Connections in a Bluetooth Profile Driver
 description: Accepting SCO connections in a Bluetooth profile driver
 keywords:
 - Synchronous Connection-Oriented WDK Bluetooth
 - SCO profile drivers WDK Bluetooth
 - incoming SCO connection requests WDK Bluetooth
 - remote connection notifications WDK Bluetooth
-ms.date: 10/07/2022
+ms.date: 01/10/2024
 ---
 
 # Accepting SCO connections in a Bluetooth profile driver

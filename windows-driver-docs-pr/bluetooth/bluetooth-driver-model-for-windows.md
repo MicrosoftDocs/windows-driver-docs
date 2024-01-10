@@ -1,7 +1,7 @@
 ---
-title: Bluetooth driver model for Windows
+title: Bluetooth Driver Model for Windows
 description: The Bluetooth transport driver interface uses the 'Windows Driver' model. 'Windows Driver' extends and replaces the older 'Universal Driver' classification.
-ms.date: 12/07/2023
+ms.date: 01/10/2024
 ---
 
 # Bluetooth driver model for Windows

@@ -1,7 +1,7 @@
 ---
-title: Microsoft Bluetooth Test Platform - Audio tests
+title: Microsoft Bluetooth Test Platform - Audio Tests
 description: Bluetooth Test Platform (BTP) audio tests.
-ms.date: 04/11/2023
+ms.date: 01/10/2024
 ---
 
 # BTP audio tests
@@ -19,7 +19,7 @@ Features and purchasing information for supported devices can be found at [Suppo
 ## Supported devices
 
 - [BM 64-EVB](testing-BTP-hw-bm64.md)
-- [RN52](testing-BTP-hw-rn52.md) 
+- [RN52](testing-BTP-hw-rn52.md)
 
 ## Running the Audio Tests
 
