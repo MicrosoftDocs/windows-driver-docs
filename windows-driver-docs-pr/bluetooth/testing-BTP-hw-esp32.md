@@ -1,15 +1,15 @@
 ---
 title: Microsoft Bluetooth Test Platform - Model 2433 ESP32
 description: Bluetooth Test Platform (BTP) supported hardware (ESP32).
-ms.date: 10/02/2023
+ms.date: 01/10/2024
 ---
 
 # Microsoft Bluetooth Test Platform - Model 2433 ESP32
 
 ## Overview
 
-The ESP32 is a microcontroller with integrated Wi-Fi and dual-mode Bluetooth designed for use in IoT devices. The Model 2433 ESP32 is a custom ESP32 board with a 12-pin adapter fit for the Traduci that exercises Wi-Fi connections for BTP. More information can be found via the ESP32 page from **[Espressif](https://www.espressif.com/en/products/socs/esp32).** 
-The Model 2433 ESP32 allows the ESP32 to be utilized as a Traduci sled device. More information can be found via the Model 2433 ESP32 page from **[MCCI](https://store.mcci.com/products/esp32-sled)** or **[Digilent](https://digilent.com/shop/pmod-esp32-wireless-communication-module).** 
+The ESP32 is a microcontroller with integrated Wi-Fi and dual-mode Bluetooth designed for use in IoT devices. The Model 2433 ESP32 is a custom ESP32 board with a 12-pin adapter fit for the Traduci that exercises Wi-Fi connections for BTP. More information can be found via the ESP32 page from **[Espressif](https://www.espressif.com/en/products/socs/esp32).**
+The Model 2433 ESP32 allows the ESP32 to be utilized as a Traduci sled device. More information can be found via the Model 2433 ESP32 page from **[MCCI](https://store.mcci.com/products/esp32-sled)** or **[Digilent](https://digilent.com/shop/pmod-esp32-wireless-communication-module).**
 
 | Device Name | Parameter | Usage Example |
 | --- | --- | --- |
@@ -44,7 +44,7 @@ If the ESP32 has already been updated, skip to [Updating ESP32 Firmware via Trad
 
 Updating ESP32 firmware manually is required for first time setup of an ESP32 radio for use with the BTP Wi-Fi Coexistence tests. After first time setup, firmware updates to the device sled can be done via [Traduci.cmd](testing-BTP-hw-esp32.md#updating-esp32-firmware-via-traducicmd).  
 
-1.  Acquire and set up the Arduino command line interface.
+1. Acquire and set up the Arduino command line interface.
     1. Download the latest version of the [arduino-cli](https://arduino.github.io/arduino-cli/latest/installation/#download).
     1. If not done already, add the arduino-cli to your [PATH variable](/windows-server/administration/windows-commands/path).
     1. To acquire the ESP32 board packages, run these commands from a cmd prompt:

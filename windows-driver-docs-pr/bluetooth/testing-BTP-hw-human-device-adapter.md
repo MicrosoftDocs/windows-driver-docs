@@ -1,7 +1,7 @@
 ---
 title: Microsoft Bluetooth Test Platform - Human Device Adapter
 description: Bluetooth Test Platform (BTP) Human Device Adapter (HDA) Setup and Pairing 
-ms.date: 04/11/2023
+ms.date: 01/10/2024
 ---
 
 # Human Device Adapter
@@ -58,7 +58,7 @@ The optional parameter `-VerboseLogs` can be added to provide a more verbose out
     Press any key to continue
     ```
 
-2. The script then begins the pairing process by running checks, then prompting the user to enter their device (here named "MyTestDevice") into "*Band* Pairing Mode". After putting the device in pairing mode, press any key to continue.
+1. The script then begins the pairing process by running checks, then prompting the user to enter their device (here named "MyTestDevice") into "*Band* Pairing Mode". After putting the device in pairing mode, press any key to continue.
 
     ```console
     StartGroup: BluetoothTests::TaefPairingTests::OutgoingJustWorksPairingTest
@@ -71,7 +71,7 @@ The optional parameter `-VerboseLogs` can be added to provide a more verbose out
     Press any key to continue . . .
     ```
 
-3. The script initiates pairing. If pairing is successful, you see the following the output. Respond to any notifications on the device or on the test PC to confirm and finish pairing. The test then prompts you to take the device out of pairing mode. After you to take the device out of pairing mode, press any key to continue.
+1. The script initiates pairing. If pairing is successful, you see the following the output. Respond to any notifications on the device or on the test PC to confirm and finish pairing. The test then prompts you to take the device out of pairing mode. After you to take the device out of pairing mode, press any key to continue.
 
     ```console
     [BluetoothTestHelpers::Pairing::Pair]: Initiating pairing request from device with address D83BBFAC35607 to device with address B4F1DA96C0A4
@@ -84,7 +84,7 @@ The optional parameter `-VerboseLogs` can be added to provide a more verbose out
     Press any key to continue . . .
     ```
 
-4. After pairing is complete, the script continues onto the tests available in the test suite. Documentation on available tests and how to run them can be found in [Currently supported BTP tests](testing-BTP-Tests.md)
+1. After pairing is complete, the script continues onto the tests available in the test suite. Documentation on available tests and how to run them can be found in [Currently supported BTP tests](testing-BTP-Tests.md)
 
 ## HDA log capture
 
@@ -92,10 +92,7 @@ If problems are encountered Bluetooth logs can be captured Bluetooth logs by fol
 
 ## See also
 
-[Bluetooth Test Platform Homepage](testing-BTP-Overview.md)
-
-[Bluetooth Test Platform Software Setup](testing-btp-setup-software.md)
-
-[Bluetooth Test Platform Available Tests](testing-btp-tests.md)
-
-[Busiotools for Windows Repo on GitHub for Log Capturing](https://github.com/Microsoft/busiotools/tree/master/bluetooth/tracing)
+- [Bluetooth Test Platform Homepage](testing-BTP-Overview.md)
+- [Bluetooth Test Platform Software Setup](testing-btp-setup-software.md)
+- [Bluetooth Test Platform Available Tests](testing-btp-tests.md)
+- [Busiotools for Windows Repo on GitHub for Log Capturing](https://github.com/Microsoft/busiotools/tree/master/bluetooth/tracing)

@@ -1,12 +1,12 @@
 ---
-title: Supporting Bluetooth event notifications
+title: Supporting Bluetooth Event Notifications
 description: Supporting Bluetooth event notifications
 keywords:
 - Bluetooth WDK , event notifications
 - event notifications WDK Bluetooth
 - notifications WDK Bluetooth
 - profile drivers WDK Bluetooth
-ms.date: 10/06/2022
+ms.date: 01/10/2024
 ---
 
 # Supporting Bluetooth event notifications
@@ -57,7 +57,7 @@ The value passed in the [*L2CAP callback function*](/windows-hardware/drivers/dd
 
 For SCO connections, the [*SCO callback function*](/windows-hardware/drivers/ddi/bthddi/nc-bthddi-pfnsco_indication_callback) accepts three arguments:
 
-- The context that is defined for the SCO connection. In the case of **BRB_SCO_REGISTER_SERVER** requests, this context is the value passed in the **IndicationCallbackContext** member of the \_BRB_SCO_REGISTER_SERVER structure passed with the request. In the case of **BRB_SCO_OPEN_CHANNEL** or **BRB_SCO_OPEN_CHANNEL_RESPONSE** requests, this context is the value passed in the **CallbackContext** member of the _BRB_SCO_OPEN_CHANNEL structure passed with the request.
+- The context that is defined for the SCO connection. In the case of **BRB_SCO_REGISTER_SERVER** requests, this context is the value passed in the **IndicationCallbackContext** member of the \_BRB_SCO_REGISTER_SERVER structure passed with the request. In the case of **BRB_SCO_OPEN_CHANNEL** or **BRB_SCO_OPEN_CHANNEL_RESPONSE** requests, this context is the value passed in the **CallbackContext** member of the_BRB_SCO_OPEN_CHANNEL structure passed with the request.
 
 - A value from the [**SCO_INDICATION_CODE**](/windows-hardware/drivers/ddi/bthddi/ne-bthddi-_sco_indication_code) enumeration that indicates the type of the notification of the incoming SCO connection or bonding state change.
 

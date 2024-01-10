@@ -1,7 +1,7 @@
 ---
 title: Bluetooth Low Energy (LE) Audio
 description: This article provides an overview of Bluetooth LE Audio introduced in Windows 11 version 22H2 (KB5026446).
-ms.date: 09/29/2023
+ms.date: 01/10/2024
 ---
 
 # Bluetooth Low Energy (LE) Audio

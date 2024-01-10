@@ -1,7 +1,7 @@
 ---
-title: Microsoft Bluetooth Test Platform - BM-64-EVB board
+title: Microsoft Bluetooth Test Platform - BM-64-EVB Board
 description: Bluetooth Test Platform (BTP) supported hardware (BM64).
-ms.date: 09/29/2023
+ms.date: 01/10/2024
 ---
 
 # BM-64-EVB board
@@ -116,7 +116,7 @@ After firmware and EEPROM updates occur, the UART messaging capabilities of the 
 1. Start the `SPKCommandSetTool vA.B.exe` (found at `DSPK v2.x.y Package\Tools\SPKCommandSetTool`).
 
     - Set the *Port* to the COM port associated with the BM-64-EVB.
-    - Set the *Baudrate* to *19200* per the EEPROM updates. 
+    - Set the *Baudrate* to *19200* per the EEPROM updates.
 
 1. Select on the *Open* button. Messages may appear in the bottom log to the right.
 1. Select on the *Information* tab and select on the *Update* button.
@@ -197,4 +197,4 @@ Another solution is using a different version of the SPKCommand. To do so, downl
 
 ## Known test failures
 
- With version 1.7.2, both standalone audio tests fail as do some audio-HID tests due to backend architecture changes. If these architecture changes break you, file a bug or email btpsupport@microsoft.com
+ With version 1.7.2, both standalone audio tests fail as do some audio-HID tests due to backend architecture changes. If these architecture changes break you, file a bug or email <btpsupport@microsoft.com>

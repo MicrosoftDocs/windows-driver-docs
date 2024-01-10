@@ -2,7 +2,7 @@
 title: Bluetooth Radio Reset and Recovery
 description: Bluetooth radio automated error recovery mechanisms
 keywords: ["Bluetooth Radio Error Recovery", "Bluetooth PLDR"]
-ms.date: 10/06/2022
+ms.date: 01/10/2024
 ---
 
 # Bluetooth Radio Reset and Recovery
@@ -43,11 +43,11 @@ While there are different approaches to recover from a failed state, Bluetooth u
 
 - **To support FLDR** there must be an __RST method defined inside the device scope as detailed in [ACPI firmware: Function-level reset](../kernel/working-with-guid-device-reset-interface-standard.md#acpi-firmware-function-level-reset).
 
-- **To support PLDR** there must be an __RST or __PR3 method defined under the device scope as detailed in [ACPI firmware: Platform-level reset](../kernel/working-with-guid-device-reset-interface-standard.md#acpi-firmware-platform-level-reset). If a __PR3_ method is used, ACPI uses the D3Cold power cycle mechanism to reset. This emulates removing power from the device and subsequently restoring it. If any other devices share the same power rail they will also be reset. If an __RST_ method is defined and referenced by a __PRR_ (PowerResource) then all devices that use that PowerResource will be affected.
+- **To support PLDR** there must be an __RST or__PR3 method defined under the device scope as detailed in [ACPI firmware: Platform-level reset](../kernel/working-with-guid-device-reset-interface-standard.md#acpi-firmware-platform-level-reset). If a __PR3_ method is used, ACPI uses the D3Cold power cycle mechanism to reset. This emulates removing power from the device and subsequently restoring it. If any other devices share the same power rail they will also be reset. If an__RST_ method is defined and referenced by a __PRR_ (PowerResource) then all devices that use that PowerResource will be affected.
 
-  - Since PLDR works only for internal devices, it must be declared as such in ACPI. For USB devices, to specify a port that is internal (not user visible) and can be connected to an integrated device, set the __UPC.PortIsConnectable_ byte to 0xFF and the __PLD.UserVisible_ bit to 0.
+  - Since PLDR works only for internal devices, it must be declared as such in ACPI. For USB devices, to specify a port that is internal (not user visible) and can be connected to an integrated device, set the __UPC.PortIsConnectable_ byte to 0xFF and the__PLD.UserVisible_ bit to 0.
 
-  - If the __PR3_ (D3Cold) mechanism is used for PLDR, ensure that scenarios like SystemWake and DeviceWake continue to work. Nominally, this means that there are appropriate power resources defined for D2, e.g. __PR2_. The following table is a useful guide:
+  - If the __PR3_ (D3Cold) mechanism is used for PLDR, ensure that scenarios like SystemWake and DeviceWake continue to work. Nominally, this means that there are appropriate power resources defined for D2, e.g.__PR2_. The following table is a useful guide:
 
 | Power state | ACPI resource | Behavior |
 |--|--|--|

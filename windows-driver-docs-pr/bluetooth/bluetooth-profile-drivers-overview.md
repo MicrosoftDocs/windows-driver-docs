@@ -1,11 +1,11 @@
 ---
-title: Introduction to Bluetooth profile drivers
+title: Introduction to Bluetooth Profile Drivers
 description: This article also provides guidelines on how to develop Bluetooth profile drivers for your Bluetooth-enabled device.
 keywords:
 - Bluetooth WDK , about Bluetooth
 - remote connections WDK Bluetooth
 - connections WDK Bluetooth
-ms.date: 12/08/2023
+ms.date: 01/10/2024
 ---
 
 # Introduction to Bluetooth profile drivers

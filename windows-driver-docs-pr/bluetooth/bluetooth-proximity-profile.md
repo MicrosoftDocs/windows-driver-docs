@@ -1,7 +1,7 @@
 ---
 title: Bluetooth Proximity Profile
 description: The Proximity Profile defines two roles intended to allow devices to detect their proximity.
-ms.date: 10/02/2023
+ms.date: 01/10/2024
 ---
 
 # Bluetooth Proximity Profile
