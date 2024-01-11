@@ -1,7 +1,7 @@
 ---
-title: Opening HID collections
+title: Opening HID Collections
 description: This section describes how a HID Client can communicate with the HID Class driver (HIDClass) to operate the device's HID collections.
-ms.date: 10/12/2022
+ms.date: 01/11/2024
 ---
 
 # Opening HID collections

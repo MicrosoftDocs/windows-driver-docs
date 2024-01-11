@@ -1,11 +1,10 @@
 ---
-title: Non-HID legacy devices
+title: Non-Hid Legacy Devices
 description: This section describes drivers, transports, and filter-drivers for non-HID keyboards and mice. These devices primarily run on the PS/2 transport.
-ms.date: 04/20/2017
+ms.date: 01/11/2024
 ---
 
 # Non-HID legacy devices
-
 
 This section describes drivers, transports, and filter-drivers for non-HID keyboards and mice. These devices primarily run on the PS/2 transport.
 
@@ -13,15 +12,6 @@ This section does not contain information about Sermouse, the Windows system fun
 
 ## Non-HID driver stack
 
-
 Windows 8 uses the following driver stack for non-HID keyboard, mouse, and touchpad hardware. The only non-HID Transport supported on Windows 8 is PS2.
 
 ![non-hid driver stack.](images/non-hid-driver-stack.png)
-
- 
-
- 
-
-
-
-

@@ -1,12 +1,12 @@
 ---
-title: Button capability arrays
+title: Button Capability Arrays
 description: Button capability arrays
 keywords:
 - button capability arrays WDK HID
 - arrays WDK HID
 - capabilities WDK HID collections
 - button usages WDK HID
-ms.date: 10/11/2022
+ms.date: 01/11/2024
 ---
 
 # Button capability arrays
