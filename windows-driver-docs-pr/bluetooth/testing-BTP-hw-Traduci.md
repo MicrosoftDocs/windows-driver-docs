@@ -1,7 +1,7 @@
 ---
-title: Microsoft Bluetooth Test Platform Traduci board support
+title: Microsoft Bluetooth Test Platform Traduci Board Support
 description: Bluetooth Test Platform (BTP) Traduci board support.
-ms.date: 10/02/2023
+ms.date: 01/10/2024
 ---
 
 # Traduci board support

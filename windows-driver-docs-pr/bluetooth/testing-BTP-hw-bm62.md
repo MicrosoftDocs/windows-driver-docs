@@ -1,7 +1,7 @@
 ---
-title: Microsoft Bluetooth Test Platform - BM-62-EVB board
+title: Microsoft Bluetooth Test Platform - BM-62-EVB Board
 description: Bluetooth Test Platform (BTP) supported hardware (BM62).
-ms.date: 09/29/2023
+ms.date: 01/10/2024
 ---
 
 # BM62
@@ -23,12 +23,12 @@ The BM62 is a dual-mode Bluetooth v5.0 radio designed for use in headsets, speak
 - [Audio & HID tests](testing-BTP-tests-audio-hid.md) (as an audio device)
 - [Wi-Fi coexistence tests](testing-BTP-tests-wifi.md) (as an audio device)
 
-
 ## Required Hardware
 
 The Pmod + Audio header BM62 device can be purchased via [MCCI](https://store.mcci.com/collections/frontpage/products/model-2435-bm62-audio-capable-radio-sled).
 
 ### BM62 Device on a BTP-compatible sled
+
 :::image type="content" source="images/BM62_Traduci.png" alt-text="Photo of the BM62 Bluetooth radio device connected to the Traduci.":::
 
 > [!NOTE]

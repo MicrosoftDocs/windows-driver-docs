@@ -1,7 +1,7 @@
 ---
-title: Get the Microsoft Bluetooth Test Platform software package
+title: Get the Microsoft Bluetooth Test Platform Software Package
 description: How to install the Bluetooth Test Platform (BTP) software package.
-ms.date: 05/13/2022
+ms.date: 01/10/2024
 ---
 
 # Get the Microsoft Bluetooth Test Platform software package

@@ -1,7 +1,7 @@
 ---
 title: Microsoft Bluetooth Test Platform - RN42
 description: Bluetooth Test Platform (BTP) supported hardware (RN42).
-ms.date: 09/29/2023
+ms.date: 01/10/2024
 ---
 
 # RN42 (PMOD BT2)

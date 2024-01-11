@@ -1,7 +1,7 @@
 ---
-title: Bluetooth LE Proximity Profile overview
+title: Bluetooth LE Proximity Profile Overview
 description: Proximity detection is a common use of Bluetooth Low Energy (LE).
-ms.date: 09/29/2023
+ms.date: 01/10/2024
 ---
 
 # Bluetooth LE Proximity Profile overview

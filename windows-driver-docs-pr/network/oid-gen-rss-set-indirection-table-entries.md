@@ -31,7 +31,7 @@ OID_GEN_RSS_SET_INDIRECTION_TABLE_ENTRIES must be issued to a miniport adapter w
 
 This OID is invoked only at IRQL == DISPATCH_LEVEL.
 
-Miniport drivers should be prepared to handle at least as many indirection table entry move actions as they advertise in the [NDIS_NIC_SWITCH_CAPABILITIES](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_capabilities) structure. This is defined in the **NumberOfIndirectionTableEntriesPerNonDefaultVPort** or **NumberOfIndirectionTableEntriesForDefaultVPort** member of that structure, or **128** in Native RSS mode.
+Miniport drivers should be prepared to handle at least as many indirection table entry move actions as they advertise in the [NDIS_NIC_SWITCH_CAPABILITIES](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_capabilities) structure. This is defined in the **NumberOfIndirectionTableEntriesPerNonDefaultPFVPort** or **NumberOfIndirectionTableEntriesForDefaultVPort** member of that structure, or **128** in Native RSS mode.
 
 Miniport drivers should attempt to execute as many entries as they can and update the **EntryStatus** member of each [NDIS_RSS_SET_INDIRECTION_ENTRY](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_rss_set_indirection_entry) with the result of the operation.
 
