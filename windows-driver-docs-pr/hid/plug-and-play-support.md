@@ -4,7 +4,7 @@ description: This section describes the enumeration process on the Universal Ser
 ms.date: 01/11/2024
 ---
 
-# Plug and play support
+# Plug and Play support
 
 This section describes the enumeration process on the Universal Serial Bus.
 
