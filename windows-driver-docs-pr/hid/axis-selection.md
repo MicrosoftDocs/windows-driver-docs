@@ -1,12 +1,12 @@
 ---
-title: Axis selection
+title: Axis Selection
 description: Axis selection
 keywords:
 - joysticks WDK HID , axes
 - virtual joystick drivers WDK HID , axes
 - VJoyD WDK HID , axes
 - axes WDK joysticks
-ms.date: 10/11/2022
+ms.date: 01/11/2024
 ---
 
 # Axis selection

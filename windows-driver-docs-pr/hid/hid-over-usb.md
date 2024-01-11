@@ -1,5 +1,5 @@
 ---
-title: HID over USB Overview
+title: HID Over USB Overview
 description: USB was the first supported HID transport in the Windows operating system.
 keywords:
 - HID miniport driver
@@ -8,7 +8,7 @@ keywords:
 - USB 2.0
 - USB 3.0
 - USB, HID
-ms.date: 04/20/2017
+ms.date: 01/11/2024
 ---
 
 # HID over USB Overview

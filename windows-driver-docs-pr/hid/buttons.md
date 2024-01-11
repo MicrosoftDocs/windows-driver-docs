@@ -1,7 +1,7 @@
 ---
-title: HID button drivers
+title: HID Button Drivers
 description: Use the Microsoft-provided button driver for GPIO buttons; otherwise, implement your driver that injects HID data to the operating system.
-ms.date: 04/20/2017
+ms.date: 01/11/2024
 ---
 
 # HID button drivers

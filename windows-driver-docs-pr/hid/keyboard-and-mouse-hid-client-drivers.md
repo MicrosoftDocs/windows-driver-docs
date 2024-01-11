@@ -1,5 +1,5 @@
 ---
-title: Keyboard and mouse HID client drivers
+title: Keyboard and Mouse HID Client Drivers
 description: Keyboards and mice represent the first set of HID clients that were standardized in the HID usage tables and implemented in Windows operating systems.
 keywords:
 - HID keyboard driver
@@ -8,7 +8,7 @@ keywords:
 - HID mouse driver
 - mouse drivers, HID
 - HID mouse driver for Windows
-ms.date: 12/07/2023
+ms.date: 01/11/2024
 ---
 
 # Keyboard and mouse HID client drivers

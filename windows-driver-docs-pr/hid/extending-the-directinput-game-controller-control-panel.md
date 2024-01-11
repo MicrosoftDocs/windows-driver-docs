@@ -1,5 +1,5 @@
 ---
-title: Extending the DirectInput game controller control panel
+title: Extending the DirectInput Game Controller Control Panel
 description: Extending the DirectInput game controller control panel
 keywords:
 - property sheets WDK DirectInput
@@ -8,7 +8,7 @@ keywords:
 - joysticks WDK HID , game controller support
 - force feedback drivers WDK HID , property sheets
 - game pad support WDK DirectInput
-ms.date: 10/11/2022
+ms.date: 01/11/2024
 ---
 
 # Extending the DirectInput game controller control panel

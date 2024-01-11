@@ -1,12 +1,12 @@
 ---
-title: Registry settings
+title: Registry Settings
 description: Registry settings
 keywords:
 - joysticks WDK HID , registry settings
 - virtual joystick drivers WDK HID , registry settings
 - VJoyD WDK HID , registry settings
 - registry WDK joysticks
-ms.date: 10/12/2022
+ms.date: 01/11/2024
 ---
 
 # Registry settings
