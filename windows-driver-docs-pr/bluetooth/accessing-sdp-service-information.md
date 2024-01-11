@@ -1,5 +1,5 @@
 ---
-title: Accessing SDP service information
+title: Accessing SDP Service Information
 description: Accessing SDP service information
 keywords:
 - Bluetooth WDK , SDP server communication
@@ -11,7 +11,7 @@ keywords:
 - IOCTL_BTH_SDP_CONNECT
 - searching SDP records WDK Bluetooth
 - IOCTL_BTH_SDP_SERVICE_SEARCH
-ms.date: 10/07/2022
+ms.date: 01/10/2024
 ---
 
 # Accessing SDP service information

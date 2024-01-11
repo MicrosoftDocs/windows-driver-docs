@@ -1,11 +1,11 @@
 ---
-title: Bluetooth driver stack
+title: Bluetooth Driver Stack
 description: Bluetooth driver stack
 keywords:
 - Bluetooth WDK , driver stack
 - driver stacks WDK Bluetooth
 - stacks WDK Bluetooth
-ms.date: 09/29/2023
+ms.date: 01/10/2024
 ---
 
 # Bluetooth driver stack

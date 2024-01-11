@@ -1,7 +1,7 @@
 ---
-title: Bluetooth user interface
+title: Bluetooth User Interface
 description: Describes working with the Bluetooth user interface in Windows for software developers and vendors
-ms.date: 09/29/2023
+ms.date: 01/10/2024
 ---
 
 # Bluetooth user interface

@@ -9,8 +9,8 @@ metadata:
   ms.author: eliotgra
   ms.date: 02/14/2020
   ms.topic: landing-page
-  ms.prod: windows-hardware
-  ms.technology: dashboard
+  ms.service: windows-hardware-driver-quality
+  ms.subservice: dashboard
   services: wdk
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new

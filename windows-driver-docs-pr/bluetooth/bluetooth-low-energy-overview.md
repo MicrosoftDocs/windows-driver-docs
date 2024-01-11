@@ -1,7 +1,7 @@
 ---
-title: Bluetooth Low Energy (LE) overview
+title: Bluetooth Low Energy (LE) Overview
 description: This article provides an overview of Bluetooth Low Energy (LE) in Windows.
-ms.date: 09/29/2023
+ms.date: 01/10/2024
 ---
 
 # Bluetooth Low Energy (LE) overview
