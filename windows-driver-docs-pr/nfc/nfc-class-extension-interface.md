@@ -16,15 +16,15 @@ The NFC CX interface is based on the UMDF class extension model. The NFC CX inte
 
 The NFC CX interface includes the following methods:
 
-- [**NfcCxDeviceInitConfig**](/windows-hardware/drivers/ddi/nfccx/nf-nfccx-nfccxdeviceinitconfig)
-- [**NfcCxDeviceInitialize**](/windows-hardware/drivers/ddi/nfccx/nf-nfccx-nfccxdeviceinitialize)
-- [**NfcCxDeviceDeinitialize**](/windows-hardware/drivers/ddi/nfccx/nf-nfccx-nfccxdevicedeinitialize)
-- [**NfcCxHardwareEvent**](/windows-hardware/drivers/ddi/nfccx/nf-nfccx-nfccxhardwareevent)
-- [**NfcCxNciReadNotification**](/windows-hardware/drivers/ddi/nfccx/nf-nfccx-nfccxncireadnotification)
-- [**NfcCxSetRfDiscoveryConfig**](/windows-hardware/drivers/ddi/nfccx/nf-nfccx-nfccxsetrfdiscoveryconfig)
-- [**NfcCxSetLlcpConfig**](/windows-hardware/drivers/ddi/nfccx/nf-nfccx-nfccxsetllcpconfig)
-- [**NfcCxRegisterSequenceHandler**](/windows-hardware/drivers/ddi/nfccx/nf-nfccx-nfccxregistersequencehandler)
-- [**NfcCxUnRegisterSequenceHandler**](/windows-hardware/drivers/ddi/nfccx/nf-nfccx-nfccxunregistersequencehandler)
+- **[NfcCxDeviceInitConfig](/windows-hardware/drivers/ddi/nfccx/nf-nfccx-nfccxdeviceinitconfig)**
+- **[NfcCxDeviceInitialize](/windows-hardware/drivers/ddi/nfccx/nf-nfccx-nfccxdeviceinitialize)**
+- **[NfcCxDeviceDeinitialize](/windows-hardware/drivers/ddi/nfccx/nf-nfccx-nfccxdevicedeinitialize)**
+- **[NfcCxHardwareEvent](/windows-hardware/drivers/ddi/nfccx/nf-nfccx-nfccxhardwareevent)**
+- **[NfcCxNciReadNotification](/windows-hardware/drivers/ddi/nfccx/nf-nfccx-nfccxncireadnotification)**
+- **[NfcCxSetRfDiscoveryConfig](/windows-hardware/drivers/ddi/nfccx/nf-nfccx-nfccxsetrfdiscoveryconfig)**
+- **[NfcCxSetLlcpConfig](/windows-hardware/drivers/ddi/nfccx/nf-nfccx-nfccxsetllcpconfig)**
+- **[NfcCxRegisterSequenceHandler](/windows-hardware/drivers/ddi/nfccx/nf-nfccx-nfccxregistersequencehandler)**
+- **[NfcCxUnRegisterSequenceHandler](/windows-hardware/drivers/ddi/nfccx/nf-nfccx-nfccxunregistersequencehandler)**
 
 ## Related topics
 

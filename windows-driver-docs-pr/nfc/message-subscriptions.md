@@ -14,11 +14,11 @@ ms.date: 01/11/2024
 
 A subscription is represented as a unique open handle within the driver. A subscription is made active by opening a handle into the "Subs\\" device namespace. The type of the subscription is defined to be everything following the "Subs\\" prefix.
 
-A callback on message reception is given through a completed [**IOCTL_NFP_GET_NEXT_SUBSCRIBED_MESSAGE**](/windows-hardware/drivers/ddi/nfpdev/ni-nfpdev-ioctl_nfp_get_next_subscribed_message).
+A callback on message reception is given through a completed **[IOCTL_NFP_GET_NEXT_SUBSCRIBED_MESSAGE](/windows-hardware/drivers/ddi/nfpdev/ni-nfpdev-ioctl_nfp_get_next_subscribed_message)**.
 
-A subscription can be temporarily disabled via an [**IOCTL_NFP_DISABLE**](/windows-hardware/drivers/ddi/nfpdev/ni-nfpdev-ioctl_nfp_disable).
+A subscription can be temporarily disabled via an **[IOCTL_NFP_DISABLE](/windows-hardware/drivers/ddi/nfpdev/ni-nfpdev-ioctl_nfp_disable)**.
 
-A subscription can be re-enabled via an [**IOCTL_NFP_ENABLE**](/windows-hardware/drivers/ddi/nfpdev/ni-nfpdev-ioctl_nfp_enable).
+A subscription can be re-enabled via an **[IOCTL_NFP_ENABLE](/windows-hardware/drivers/ddi/nfpdev/ni-nfpdev-ioctl_nfp_enable)**.
 
 ## Handles
 
@@ -74,15 +74,15 @@ The driver MUST NOT queue or deliver a given message to the client if that messa
 
 ## Unresponsive or Misbehaving Clients
 
-If a client stops draining the "Received" queue by failing to send the required [**IOCTL_NFP_GET_NEXT_SUBSCRIBED_MESSAGE**](/windows-hardware/drivers/ddi/nfpdev/ni-nfpdev-ioctl_nfp_get_next_subscribed_message) request for a period of ten to twenty seconds \[10-20sec\], the driver should assume that the client is gone. Under normal circumstances, clients should refresh their requests well within one second \[1s\]. If this occurs, the driver must set the "CompleteEventImmediately" counter to zero and must not increment the counter until the client wakes up and sends the required IRP.
+If a client stops draining the "Received" queue by failing to send the required **[IOCTL_NFP_GET_NEXT_SUBSCRIBED_MESSAGE](/windows-hardware/drivers/ddi/nfpdev/ni-nfpdev-ioctl_nfp_get_next_subscribed_message)** request for a period of ten to twenty seconds \[10-20sec\], the driver should assume that the client is gone. Under normal circumstances, clients should refresh their requests well within one second \[1s\]. If this occurs, the driver must set the "CompleteEventImmediately" counter to zero and must not increment the counter until the client wakes up and sends the required IRP.
 
 ### Required Actions
 
-The driver must set the "CompleteEventImmediately" counter to zero and must not increment the counter if the client has not sent a replacement [**IOCTL_NFP_GET_NEXT_SUBSCRIBED_MESSAGE**](/windows-hardware/drivers/ddi/nfpdev/ni-nfpdev-ioctl_nfp_get_next_subscribed_message) within 10 - 20 seconds of the prior IOCTL completion.
+The driver must set the "CompleteEventImmediately" counter to zero and must not increment the counter if the client has not sent a replacement **[IOCTL_NFP_GET_NEXT_SUBSCRIBED_MESSAGE](/windows-hardware/drivers/ddi/nfpdev/ni-nfpdev-ioctl_nfp_get_next_subscribed_message)** within 10 - 20 seconds of the prior IOCTL completion.
 
 ## Malformed Messages
 
-The client is likely to drop or ignore all errors (except STATUS_BUFFER_OVERFLOW) returned from [**IOCTL_NFP_GET_NEXT_SUBSCRIBED_MESSAGE**](/windows-hardware/drivers/ddi/nfpdev/ni-nfpdev-ioctl_nfp_get_next_subscribed_message). Therefore, the driver shouldn't complete these with error conditions merely because a malformed message was received.
+The client is likely to drop or ignore all errors (except STATUS_BUFFER_OVERFLOW) returned from **[IOCTL_NFP_GET_NEXT_SUBSCRIBED_MESSAGE](/windows-hardware/drivers/ddi/nfpdev/ni-nfpdev-ioctl_nfp_get_next_subscribed_message)**. Therefore, the driver shouldn't complete these with error conditions merely because a malformed message was received.
 
 ### Required Actions
 
