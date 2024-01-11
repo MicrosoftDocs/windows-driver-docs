@@ -4,7 +4,7 @@ description: This section describes plug and play support for devices that suppo
 ms.date: 01/11/2024
 ---
 
-# Plug and play support for I2C
+# Plug and Play support for I2C
 
 This article describes plug and play support for devices that support HID over the I<sup>2</sup>C transport.
 
