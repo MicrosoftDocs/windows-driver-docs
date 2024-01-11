@@ -4,7 +4,7 @@ description: Describes the D3Hot support feature of HidSpiCx.
 ms.date: 01/11/2024
 ---
 
-# D3Hot Support for HID over SPI devices
+# D3Hot support for HID over SPI devices
 
 Starting Windows 11 22H2, HidSpiCx provides support for a D3Hot power policy, allowing hardware accelerated controllers to support wake from D3. This increases support for hardware accelerated applications on buses such as PCI to allow the HidSpiCx device to remain armed for wake (in the HIDSPI SLEEP state) in the D3Hot power state, without going through a host initiated reset on return to D0.
 
