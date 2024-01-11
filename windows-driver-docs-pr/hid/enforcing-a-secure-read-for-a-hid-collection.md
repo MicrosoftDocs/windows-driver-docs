@@ -9,7 +9,7 @@ keywords:
 ms.date: 01/11/2024
 ---
 
-# Enforcing a Secure Read For a HID Collection
+# Enforcing a secure read for a HID collection
 
 This section describes how a user-mode application or kernel-mode driver can enforce a *secure read* for a top-level [HID collection](hid-collections.md).
 
