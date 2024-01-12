@@ -1,7 +1,7 @@
 ---
-title: Capacitive touch tests in MITT
+title: Capacitive Touch Tests in MITT
 description: Capacitive touch tests in the MITT software package require MCATT (Microsoft Capacitive Applications Test Tool).
-ms.date: 04/27/2021
+ms.date: 01/12/2024
 ---
 
 # Capacitive touch tests in MITT
