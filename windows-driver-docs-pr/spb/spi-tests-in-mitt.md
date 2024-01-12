@@ -1,7 +1,7 @@
 ---
-title: SPI tests in MITT
+title: SPI Tests in MITT
 description: SPI test modules that are included in the MITT software package.
-ms.date: 04/07/2022
+ms.date: 01/12/2024
 ---
 
 # SPI tests in MITT
