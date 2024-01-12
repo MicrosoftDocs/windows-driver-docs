@@ -1,7 +1,7 @@
 ---
-title: Driver update methods
+title: Driver Update Methods
 description: Update methods supported by the sensor driver.
-ms.date: 04/20/2017
+ms.date: 01/11/2024
 ---
 
 # Driver update methods
@@ -177,6 +177,5 @@ DriverUpdateDatafields(sensorID)
 
 ## Related topics
 
-[Introduction to the Sensor and Location Platform in Windows](./index.md)
-
-[Sensor Driver Logic](./driver-logic--pseudo-code-.md)
+- [Introduction to the Sensor and Location Platform in Windows](./index.md)
+- [Sensor Driver Logic](./driver-logic--pseudo-code-.md)

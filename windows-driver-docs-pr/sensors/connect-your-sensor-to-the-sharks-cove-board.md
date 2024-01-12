@@ -1,11 +1,10 @@
 ---
-title: Connect your sensor to the Sharks Cove board
+title: Connect Your Sensor to the Sharks Cove Board
 description: This topic provides guidance on how to connect your sensor test board to the Sharks Cove board.
-ms.date: 04/20/2017
+ms.date: 01/11/2024
 ---
 
 # Connect your sensor to the Sharks Cove board
-
 
 This topic provides guidance on how to connect your sensor test board to the Sharks Cove board.
 
@@ -25,21 +24,13 @@ Here are some examples of how information from the ADXL345 data sheet, and the S
 
 **J1C1 PIN4** connected to **VDD** and **CS** on the accelerometer board.
 
--   **VDD** is the supply voltage line for the Digital Interface. We decided to use the accelerometer in dual-voltage configuration, and also keep the power consumption low. So out of the four available voltages (**J1C1 PIN1 - PIN4**) we targeted the two lowest ones. These are 2.8V on **J1C1 PIN3** and 1.8V on **J1C1 PIN4**. In dual-voltage configuration, **VDD** must be connected to a lower voltage than **VS**. So we’ve connected **VDD** to **J1C1 PIN4**, the 1.8V line on Sharks Cove.
--   **CS** is the communication mode selection pin for the accelerometer. To enable the I2C communication mode, you must tie **CS** high, in this case to **VDD**, which is taken care of by the modification with the blue wire in [Prepare your sensor test board](prepare-your-sensor-test-board.md). The modification ties both **VDD** and **CS** from the accelerometer board to **J1C1 PIN4**, the 1.8V line.
+- **VDD** is the supply voltage line for the Digital Interface. We decided to use the accelerometer in dual-voltage configuration, and also keep the power consumption low. So out of the four available voltages (**J1C1 PIN1 - PIN4**) we targeted the two lowest ones. These are 2.8V on **J1C1 PIN3** and 1.8V on **J1C1 PIN4**. In dual-voltage configuration, **VDD** must be connected to a lower voltage than **VS**. So we've connected **VDD** to **J1C1 PIN4**, the 1.8V line on Sharks Cove.
+- **CS** is the communication mode selection pin for the accelerometer. To enable the I2C communication mode, you must tie **CS** high, in this case to **VDD**, which is taken care of by the modification with the blue wire in [Prepare your sensor test board](prepare-your-sensor-test-board.md). The modification ties both **VDD** and **CS** from the accelerometer board to **J1C1 PIN4**, the 1.8V line.
 
 **J1C1 PIN12** connected to **SDO** on the accelerometer board.
 
--   When the **SDO** line is high, the 7-bit I2C address for the accelerometer board is 0x1D, followed by the R/W bit. When the **SDO** line is low (i.e. connected to Ground), the I2C address for the accelerometer board is 0x53, followed by the R/W bit. In the Microsoft SPBAccelerometer sample, it was decided that the address of 0x53 would be used. And that’s why the **SDO** line is connected to a Ground pin (**J1C1 PIN12**) on Sharks Cove.
+- When the **SDO** line is high, the 7-bit I2C address for the accelerometer board is 0x1D, followed by the R/W bit. When the **SDO** line is low (i.e. connected to Ground), the I2C address for the accelerometer board is 0x53, followed by the R/W bit. In the Microsoft SPBAccelerometer sample, it was decided that the address of 0x53 would be used. And that's why the **SDO** line is connected to a Ground pin (**J1C1 PIN12**) on Sharks Cove.
 
 The connection decisions outlined in the preceding bullets were based on information from the *Theory of Operation* section (page 6) and the *Serial Communications* section (page 8) of the ADXL345 data sheet.
 
 After successfully connecting your sensor test board to Sharks Cove, read the next topic for guidance on how to [write and deploy your universal sensor driver](write-and-deploy-your-universal-sensor-driver.md).
-
- 
-
- 
-
-
-
-

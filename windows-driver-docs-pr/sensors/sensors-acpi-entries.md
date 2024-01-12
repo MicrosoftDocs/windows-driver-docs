@@ -1,16 +1,14 @@
 ---
-title: Sensors ACPI entries
+title: Sensors ACPI Entries
 description: This topic describes the advanced configuration and power management interface (ACPI) entries that are specific to sensors in Windows 10.
-ms.date: 04/20/2017
+ms.date: 01/11/2024
 ---
 
 # Sensors ACPI entries
 
-
 This topic describes the advanced configuration and power management interface (ACPI) entries that are specific to sensors in Windows 10 Mobile. These entries are to be added to the ACPI source language (ASL) file.
 
 ## ROTM
-
 
 A rotation matrix (ROTM) is a matrix that is used to describe the relationship between the sensor's X, Y, and Z axes and the X, Y, and Z axes of the mobile device (as defined by an OEM).
 
@@ -31,7 +29,6 @@ Method(ROTM, 0x0, NotSerialized) {
 
 ## PRIM
 
-
 The following **Method** marks a sensor as primary.
 
 ```cpp
@@ -43,11 +40,3 @@ Method(PRIM, 0x0, NotSerialized) {
 
 >[!NOTE]
 > If there are multiple sensors of the same kind on the mobile device (for example, multiple accelerometers), then one of them must be marked as primary using the **PRIM** keyword. The primary sensor will be used by the WinRT API when the sensor's GetDefault method is invoked. The primary sensor will also be used by any operating system features that are dependent on that sensor type.
-
-
-
-
-
-
-
-
