@@ -58,12 +58,11 @@ These code snippets highlight some of the important sections of the sensor drive
 
 Remember that D0 is the active state of the device. To put the device into D0 requires setting up this configuration in the registers of the device itself, and you will communicate with the device over I2C. You must hold the lock for this resource before performing a write or read.
 
-Within the *device.cpp* file, find the **OnD0Entry** function and notice that it calls **PowerOn**, using the ADXL345 context to do the work of powering on the device. Within the **PowerOn** function, find the following code:
-1.
+1. Within the *device.cpp* file, find the **OnD0Entry** function and notice that it calls **PowerOn**, using the ADXL345 context to do the work of powering on the device. Within the **PowerOn** function, find the following code:
 
-```cpp
-WdfWaitLockAcquire(m_I2CWaitLock, NULL);
-```
+    ```cpp
+    WdfWaitLockAcquire(m_I2CWaitLock, NULL);
+    ```
 
     The preceding code is used to acquire a lock for the I2C bus.
 
