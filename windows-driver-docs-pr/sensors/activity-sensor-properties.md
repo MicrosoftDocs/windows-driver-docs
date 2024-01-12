@@ -1,7 +1,7 @@
 ---
-title: Activity sensor properties
+title: Activity Sensor Properties
 description: The property keys for the activity sensor.
-ms.date: 03/02/2023
+ms.date: 01/11/2024
 ms.topic: reference
 ---
 

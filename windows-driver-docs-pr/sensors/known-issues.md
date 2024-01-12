@@ -1,28 +1,17 @@
 ---
-title: Known issues
+title: Known Issues
 description: This topic identifies known issues in the tool outupt.
-ms.date: 04/20/2017
+ms.date: 01/11/2024
 ---
 
 # Known issues
 
+This topic identifies known issues in the tool output.
 
-This topic identifies known issues in the tool outupt.
+## SENSOR_PROPERTY_DEVICE_ID
 
-## SENSOR\_PROPERTY\_DEVICE\_ID
-
-
-The **SENSOR\_PROPERTY\_DEVICE\_ID** property, which the tool displays in the property list, corresponds to **SENSOR\_PROPERTY\_DEVICE\_PATH** property which is defined in the header file sensors.h.
+The **SENSOR_PROPERTY_DEVICE_ID** property, which the tool displays in the property list, corresponds to **SENSOR_PROPERTY_DEVICE_PATH** property which is defined in the header file sensors.h.
 
 ## Ambient Light Sensor (ALR) Curve
 
-
 The tool returns ALR curve values as \[Offset, LUX\] pairs (rather than \[LUX, Offset\] pairs).
-
- 
-
- 
-
-
-
-

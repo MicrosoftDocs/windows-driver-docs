@@ -1,7 +1,7 @@
 ---
-title: Review the INX file
+title: Review the INX File
 description: This topics shows you how to revise the INF file for the sample sensor driver, to make it suitable for installing your sensor driver on your target device.
-ms.date: 05/08/2023
+ms.date: 01/11/2024
 ---
 
 # Review the INX file
@@ -17,25 +17,27 @@ When you create a driver project in Microsoft Visual Studio, an INX file is firs
 Although you must review the INX file in its entirety, these steps will point out two important sections.
 
 1. Click the *ADXL345Acc.inx* file to open it, and find the \[Version\] section, near the beginning of the file.
-   ```inf
-   [Version]
-   ...
-   Class       = Sensor
-   ClassGuid   = {5175D334-C371-4806-B3BA-71FD53C9258D}
-   ...
-   ```
 
-Note that the device class is set to “sensor” and the appropriate GUID is provided. For more information about device class GUIDS for Windows, see [System-Defined Device Setup Classes Available to Vendors](../install/system-defined-device-setup-classes-available-to-vendors.md).
+    ```inf
+    [Version]
+    ...
+    Class       = Sensor
+    ClassGuid   = {5175D334-C371-4806-B3BA-71FD53C9258D}
+    ...
+    ```
 
-2. Find the \[ADXL345Acc\_Device.NT$ARCH$\] section.
-   ```inf
-   [ADXL345Acc_Device.NT$ARCH$]
-   ; DisplayName       Section          DeviceId
-   ; -----------       -------          --------
-   %ADXL345Acc_DevDesc% = ADXL345Acc_Inst, ACPI\ADXL345Acc
-   ```
+Note that the device class is set to "sensor" and the appropriate GUID is provided. For more information about device class GUIDS for Windows, see [System-Defined Device Setup Classes Available to Vendors](../install/system-defined-device-setup-classes-available-to-vendors.md).
 
-It is important to note that the value of the DeviceId in the preceding snippet (in this case, "ADXL345Acc") corresponds to the device name that is used to update the ‘hardware information’ file called the secondary system description table (SSDT).
+1. Find the \[ADXL345Acc\_Device.NT$ARCH$\] section.
+
+    ```inf
+    [ADXL345Acc_Device.NT$ARCH$]
+    ; DisplayName       Section          DeviceId
+    ; -----------       -------          --------
+    %ADXL345Acc_DevDesc% = ADXL345Acc_Inst, ACPI\ADXL345Acc
+    ```
+
+It is important to note that the value of the DeviceId in the preceding snippet (in this case, "ADXL345Acc") corresponds to the device name that is used to update the 'hardware information' file called the secondary system description table (SSDT).
 
 If you're not installing the sample sensor driver on a mobile device, then after updating the relevant generic files, including the INX file, see [Build the sensor driver](build-the-sensor-driver.md), to see how to build the driver in Visual Studio. The build process generates your sensor driver files, including an INF file that Windows will use when you install the driver on the Sharks Cove.
 
@@ -43,24 +45,23 @@ If you're not installing the sample sensor driver on a mobile device, then after
 
 If you're using a mobile device, instead of the Sharks Cove, as your target device for testing the sample driver, then perform the following additional tasks to update the INF file.
 
-1. In the *ADXL345Acc.inx* file, find the \[ADXL345Acc\_Inst.NT.HW\] section, and notice that it is empty.
+1. In the *ADXL345Acc.inx* file, find the \[ADXL345Acc\_Inst.NT.HW\] section, and notice that it is empty. If you are not updating your INF file to be used on a mobile, then you must leave the [ADXL345Acc_Inst.NT.HW] section empty. In that case, skip the tasks in this section and move on to the [Build the sensor driver](build-the-sensor-driver.md) topic.
 
-**Important**  If you are not updating your INF file to be used on a mobile, then you must leave the \[ADXL345Acc\_Inst.NT.HW\] section empty. In that case, skip the tasks in this section and move on to the [Build the sensor driver](build-the-sensor-driver.md) topic.
+1. Add the following code snippet to the empty section.
 
-2. Add the following code snippet to the empty section.
+    ```inf
+    [ADXL345Acc_Inst.NT.HW]
+    AddReg=Sensor_Inst_SecurityAddReg
+    
+    [Sensor_Inst_SecurityAddReg]
+    HKR,,Security,,"D:P(A;;GA;;;BA)(A;;GA;;;SY)(A;;GA;;;S-1-5-84-0-0-0-0-0)"    ; Allow all UMDF drivers to access this driver
+    ```
 
-```inf
-[ADXL345Acc_Inst.NT.HW]
-AddReg=Sensor_Inst_SecurityAddReg
+    > [!IMPORTANT]
+    > Make a note of the value of the AddReg field, because it has to precisely match one of the values that you add to a file that you will update in the next step. From the preceding snippet example, you would make a note of *Sensor\_Inst\_SecurityAddReg*.
 
-[Sensor_Inst_SecurityAddReg]
-HKR,,Security,,"D:P(A;;GA;;;BA)(A;;GA;;;SY)(A;;GA;;;S-1-5-84-0-0-0-0-0)"    ; Allow all UMDF drivers to access this driver
-```
-
-**Important**  Make a note of the value of the AddReg field, because it has to precisely match one of the values that you add to a file that you will update in the next step. From the preceding snippet example, you would make a note of *Sensor\_Inst\_SecurityAddReg*.
-
-3. [Create a mobile package](creating-a-mobile-package.md) for installing the sample driver on your mobile device.
+1. [Create a mobile package](creating-a-mobile-package.md) for installing the sample driver on your mobile device.
 
 ## Related topics
 
-[Creating a mobile package](creating-a-mobile-package.md)
+- [Creating a mobile package](creating-a-mobile-package.md)

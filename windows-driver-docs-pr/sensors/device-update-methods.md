@@ -1,7 +1,7 @@
 ---
-title: Device update methods
+title: Device Update Methods
 description: Methods supported by the sensor driver to update the sensor device.
-ms.date: 04/20/2017
+ms.date: 01/11/2024
 ---
 
 # Device update methods
@@ -23,7 +23,7 @@ effectiveCRI DriverUpdateDeviceCRI(sensorID, requestedCRI)
 {
     if (sensor device is intelligent (ex. HID))
     {
-        HIDSensorSetProperties(sensorID, requestedRS, requestedPS, requestedCRI, requestedCS[], requestedLDA) //Driver issues USB/HID “SET_FEATURE” command to the sensor device
+        HIDSensorSetProperties(sensorID, requestedRS, requestedPS, requestedCRI, requestedCS[], requestedLDA) //Driver issues USB/HID "SET_FEATURE" command to the sensor device
     }
     else if (sensor device is simple (ex. SPB))
     {
@@ -47,7 +47,7 @@ effectiveCS[] DriverUpdateDeviceCS(sensorID, requestedCSs)
 {
     if (sensor device is intelligent (ex. HID))
     {
-        HIDSensorSetProperties(sensorID, requestedRS, requestedPS, requestedCRI, requestedCS[], requestedLDA) // Driver issues USB/HID “SET_FEATURE” command to the sensor device
+        HIDSensorSetProperties(sensorID, requestedRS, requestedPS, requestedCRI, requestedCS[], requestedLDA) // Driver issues USB/HID "SET_FEATURE" command to the sensor device
     }
     else if (sensor device is simple (ex. SPB))
     {
@@ -71,7 +71,7 @@ effectiveLDA DriverUpdateDeviceLDA(sensorID, requestedLDA)
 {
     if (sensor device is intelligent (ex. HID))
     {
-        HIDSensorSetProperties(sensorID, requestedRS, requestedPS, requestedCRI, requestedCS[], requestedLDA) // Driver issues USB/HID “SET_FEATURE” command to the sensor device
+        HIDSensorSetProperties(sensorID, requestedRS, requestedPS, requestedCRI, requestedCS[], requestedLDA) // Driver issues USB/HID "SET_FEATURE" command to the sensor device
     }
     else if (sensor device is simple (ex. SPB))
     {
@@ -99,7 +99,7 @@ effectiveRS DriverUpdateDeviceRS(sensorID, requestedRS)
 {
     if (sensor device is intelligent (ex. HID))
     {
-        HIDSensorSetProperties(sensorID, requestedRS, requestedPS, requestedCRI, requestedCS[], requestedLDA) // Driver issues USB/HID “SET_FEATURE” command to the sensor device
+        HIDSensorSetProperties(sensorID, requestedRS, requestedPS, requestedCRI, requestedCS[], requestedLDA) // Driver issues USB/HID "SET_FEATURE" command to the sensor device
     }
     else if (sensor device is simple (ex. SPB))
     {
@@ -134,7 +134,7 @@ effectivePS DriverUpdateDevicePS(sensorID, requestedPS)
 {
     if (sensor device is intelligent (ex. HID))
     {
-        HIDSensorSetProperties(sensorID, requestedRS, requestedPS, requestedCRI, requestedCS[], requestedLDA) // Driver issues USB/HID “SET_FEATURE” command to the sensor device
+        HIDSensorSetProperties(sensorID, requestedRS, requestedPS, requestedCRI, requestedCS[], requestedLDA) // Driver issues USB/HID "SET_FEATURE" command to the sensor device
     }
     else if (sensor device is simple (ex. SPB))
     {
@@ -155,6 +155,5 @@ effectivePS DriverUpdateDevicePS(sensorID, requestedPS)
 
 ## Related topics
 
-[Introduction to the Sensor and Location Platform in Windows](./index.md)
-
-[Sensor Driver Logic](./driver-logic--pseudo-code-.md)
+- [Introduction to the Sensor and Location Platform in Windows](./index.md)
+- [Sensor Driver Logic](./driver-logic--pseudo-code-.md)

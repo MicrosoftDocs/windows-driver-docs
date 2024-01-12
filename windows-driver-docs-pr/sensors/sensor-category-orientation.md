@@ -1,5 +1,5 @@
 ---
-title: SENSOR_CATEGORY_ORIENTATION
+title: Sensor_category_orientation
 description: The SENSOR_CATEGORY_ORIENTATION category contains sensors that provide information about physical orientation.
 topic_type:
 - apiref
@@ -44,7 +44,7 @@ api_location:
 - Sensors.h
 api_type:
 - HeaderDef
-ms.date: 03/02/2023
+ms.date: 01/11/2024
 ms.topic: reference
 ---
 
@@ -99,8 +99,8 @@ This category includes the following platform-defined data fields.
 | **SENSOR_DATA_TYPE_MAGNETIC_HEADING_MAGNETIC_NORTH_DEGREES**<br>(PID = 13) | **VT_R8** | Uncompensated compass heading relative to magnetic North in degrees. The measurement of the heading angle is represented as measured on the plane that the compass device is installed relative to. |
 | **SENSOR_DATA_TYPE_MAGNETIC_HEADING_TRUE_NORTH_DEGREES**<br>(PID = 14) | **VT_R8** | Uncompensated compass heading relative to true North in degrees. The measurement of the heading angle is represented as measured on the plane that the compass device is installed relative to. |
 | **SENSOR_DATA_TYPE_QUADRANT_ANGLE_DEGREES**<br>(PID = 15) | **VT_R8** | Aggregated quadrant-orientation, in degrees. |
-| **SENSOR_DATA_TYPE_ROTATION_MATRIX**<br>(PID = 16) | **VT_VECTOR\|VT_UI1** | Counted array representing the orientation of the device in 3D space as a 3x3 rotation matrix (VT_VECTOR\|VT_UI1).<br><br> Data for vector types is always serialized as VT_UI1 (an array of unsigned, 1-byte characters). This data field must contain each value as a single-precision float (VT_R4).<br><br> This array is expressed as a matrix:<br>![rotation matrix](images/sensor-data-type-rotation-matrix.png)<br><br> These values are ordered in the rotation matrix data field array as follows:<br>M11,M12,M13,M21,M22,M23,M31,M32, M33Note that for devices implementing support for the in-box Windows 8 HID sensor class driver, this data field is optional. If only **SENSOR_DATA_TYPE_QUATERNION** is implemented, **SENSOR_DATA_TYPE_ROTATION_MATRIX** will be calculated and populated for each data report sent. Devices not using the in-box HID sensor class driver need to calculate and expose both **SENSOR_DATA_TYPE_QUATERNION** and **SENSOR_DATA_TYPE_ROTATION_MATRIX** sensor data fields. |
-| **SENSOR_DATA_TYPE_QUATERNION**<br>(PID = 17) | **VT_VECTOR\|VT_UI1** | The x, y, z, w values of a quaternion representing the orientation of the device in 3D space. (VT_VECTOR\|VT_UI1).<br><br> Data for vector types is always serialized as VT_UI1 (an array of unsigned, 1-byte characters).<br><br>This data field must contain each value as a single-precision float (VT_R4).<br><br>The order of the values in this array is as follows: [x,y,z,w]<br><br>The W value of a quaternion is limited to [0,1] instead of the full [-1, 1].<br><br> All rotations must be stated in the forward direction (and not the reverse).<br><br>Note: The output of quaternion should be in normalized format. When quaternions are expressed in normalized format, the values will satisfy the following:<br>![quaternion formula](images/sensor-data-type-quaternion-formula.png) |
+| **SENSOR_DATA_TYPE_ROTATION_MATRIX**<br>(PID = 16) | **VT_VECTOR** or **VT_UI1** | Counted array representing the orientation of the device in 3D space as a 3x3 rotation matrix (VT_VECTOR or VT_UI1).<br><br> Data for vector types is always serialized as VT_UI1 (an array of unsigned, 1-byte characters). This data field must contain each value as a single-precision float (VT_R4).<br><br> This array is expressed as a matrix:<br>![rotation matrix](images/sensor-data-type-rotation-matrix.png)<br><br> These values are ordered in the rotation matrix data field array as follows:<br>M11,M12,M13,M21,M22,M23,M31,M32, M33Note that for devices implementing support for the in-box Windows 8 HID sensor class driver, this data field is optional. If only **SENSOR_DATA_TYPE_QUATERNION** is implemented, **SENSOR_DATA_TYPE_ROTATION_MATRIX** will be calculated and populated for each data report sent. Devices not using the in-box HID sensor class driver need to calculate and expose both **SENSOR_DATA_TYPE_QUATERNION** and **SENSOR_DATA_TYPE_ROTATION_MATRIX** sensor data fields. |
+| **SENSOR_DATA_TYPE_QUATERNION**<br>(PID = 17) | **VT_VECTOR** or **VT_UI1** | The x, y, z, w values of a quaternion representing the orientation of the device in 3D space. (VT_VECTOR or VT_UI1).<br><br> Data for vector types is always serialized as VT_UI1 (an array of unsigned, 1-byte characters).<br><br>This data field must contain each value as a single-precision float (VT_R4).<br><br>The order of the values in this array is as follows: [x,y,z,w]<br><br>The W value of a quaternion is limited to [0,1] instead of the full [-1, 1].<br><br> All rotations must be stated in the forward direction (and not the reverse).<br><br>Note: The output of quaternion should be in normalized format. When quaternions are expressed in normalized format, the values will satisfy the following:<br>![quaternion formula](images/sensor-data-type-quaternion-formula.png) |
 | **SENSOR_DATA_TYPE_SIMPLE_DEVICE_ORIENTATION**<br>(PID = 18) | **VT_UI4** | Aggregated device-orientation, specified as an enumeration. (The enumeration values correspond to one of four quadrants.) |
 | **SENSOR_DATA_TYPE_MAGNETOMETER_ACCURACY**<br>(PID = 22) | **VT_I4** | Magnetometer accuracy reading, specified as an enumeration. |
 

@@ -1,7 +1,7 @@
 ---
-title: Sensor types
+title: Sensor Types
 description: Universal Sensor Type GUIDs
-ms.date: 03/02/2023
+ms.date: 01/11/2024
 ms.topic: reference
 ---
 

@@ -1,11 +1,10 @@
 ---
-title: Creating a persistent unique identifier for a sensor (previous version)
+title: Creating a Persistent Unique Identifier for a Sensor (Previous Version)
 description: Creating a persistent unique identifier for a sensor (previous version)
-ms.date: 07/20/2018
+ms.date: 01/11/2024
 ---
 
 # Creating a persistent unique identifier for a sensor (previous version)
-
 
 Your driver must create persistent unique identifier (PUID) for each sensor. A PUID is a GUID value that is stored across sessions and uniquely identifies the object on the device. Your driver must return the PUID value when queried for the property named SENSOR\_PROPERTY\_PERSISTENT\_UNIQUE\_ID. If a device contains multiple sensors, each sensor must be assigned its own PUID. Applications can retrieve this ID by calling the [ISensor::GetID](/windows/win32/api/sensorsapi/nf-sensorsapi-isensor-getid) method in the Sensor API.
 
@@ -77,4 +76,5 @@ HRESULT CMyDevice::GetUniqueID(__in IWDFDevice* pWdfDevice,
 ```
 
 ## Related topics
-[The Sensors Geolocation Driver Sample](../gnss/sensors-geolocation-driver-sample.md)
+
+- [The Sensors Geolocation Driver Sample](../gnss/sensors-geolocation-driver-sample.md)

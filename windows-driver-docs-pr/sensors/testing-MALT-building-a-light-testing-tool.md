@@ -1,10 +1,10 @@
 ---
-title: Building a light and color testing tool (MALT)
+title: Building a Light and Color Testing Tool (MALT)
 author: windows-driver-content
 description: This topic provides instructions on how to use the MALT (Microsoft Ambient Light Tool) as a light and color testing solution.
 ms.assetid: d045b771-b536-457c-897b-ecb6517bf0a8
 
-ms.date: 08/22/2022
+ms.date: 01/11/2024
 ---
 
 # Building a light and color testing tool (MALT)
