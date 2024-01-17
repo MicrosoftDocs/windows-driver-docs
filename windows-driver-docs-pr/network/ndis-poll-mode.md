@@ -76,8 +76,9 @@ Like the DPC model, when an Rx packet arrives the hardware generates an interrup
 
 1. NDIS continues to poll the driver until it assesses that the driver is no longer making forward progress. At this point NDIS will stop polling and ask the driver to [re-enable the interrupt](#managing-interrupts).
 
-## Standardized INF Keyword For Ndis Poll Mode
-The below keyword must be used to enable or disable support for NDIS Poll Mode:
+## Standardized INF keyword for NDIS Poll Mode
+
+The following keyword must be used to enable or disable support for NDIS Poll Mode:
 
 **\*NdisPoll**
 Enumeration standardized INF keywords have the following attributes:
@@ -103,6 +104,7 @@ The default value for the menu.
 |||1 (Default)|Enabled|
 
 For more information about using enumeration keywords, see [Enumeration Keywords](enumeration-keywords.md).
+
 ## Creating a Poll object
 
 To create a Poll object, the miniport driver does the following in its [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) callback function:
