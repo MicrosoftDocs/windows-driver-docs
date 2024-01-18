@@ -181,8 +181,14 @@ Traceext.sys (trace extension) is a Windows kernel extension driver, which allow
     > [!IMPORTANT]
     > Before using bcdedit to change boot information you may need to temporarily suspend Windows security features such as Patchguard, BitLocker and Secure Boot on the test PC.
     > Re-enable these security features when testing is complete and appropriately manage the test PC, when the security features are disabled.
+ 
+4. Update the PATH environment variableto include C:\Program Files\DTrace
 
-4. Enable DTrace on the machine using the bcdedit command.  
+```
+set PATH=%PATH%;"C:\Program Files\DTrace"
+```
+
+6. Enable DTrace on the machine using the bcdedit command.  
 
 ```cmd
 bcdedit /set dtrace ON
