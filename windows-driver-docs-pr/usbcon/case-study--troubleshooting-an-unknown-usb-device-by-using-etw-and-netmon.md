@@ -1,7 +1,7 @@
 ---
+title: Case Study - Troubleshooting an Unknown USB Device
 description: Provides an example of how to use USB ETW and Netmon to troubleshoot a USB device that Windows does not recognize.
-title: Case Study - Troubleshooting an unknown USB device
-ms.date: 04/20/2017
+ms.date: 01/12/2024
 ---
 
 # Case Study: Troubleshooting an unknown USB device by using ETW and Netmon
@@ -45,7 +45,7 @@ Because this is a device failure, we recommend that you use Netmon with the USB 
 
 Event 2 is the first USB event in the log. This and several subsequent events describe the USB host controllers, hubs, and devices that were connected to the system when we started the trace. We can call this group of events the device summary events, or just summary events. Like the first event, the summary events do not describe driver activity. Summary events record the state of the devices at the start of a logging session. Other events represent something happening on the bus, interactions with client drivers or the system, or changes of internal state.
 
-The USB hub and USB port drivers both log summary events. The driver that logged an event is identified in the Protocol Name column. For example, an event that is logged by the USB port driver has the USBPort\_MicrosoftWindowsUSBPORT protocol name. A USB event trace typically contains a sequence of port summary events, followed by a sequence of hub summary events. Many of the USB port and USB hub summary events have the words “Information” or “Attributes” in their description.
+The USB hub and USB port drivers both log summary events. The driver that logged an event is identified in the Protocol Name column. For example, an event that is logged by the USB port driver has the USBPort\_MicrosoftWindowsUSBPORT protocol name. A USB event trace typically contains a sequence of port summary events, followed by a sequence of hub summary events. Many of the USB port and USB hub summary events have the words "Information" or "Attributes" in their description.
 
 How can you identify the end of the summary events? If there is a significant break in the timestamp pattern among the USB hub events at the start of the log, that break is probably the end of the device summary. Otherwise, the first USB port event after any USB hub events is likely the first non-summary event. Figure 3 on the following page shows the first non-summary event in this sample trace.
 
@@ -116,7 +116,7 @@ The USB error filter narrows the list of events to only those that meet the crit
 | (USBPort_MicrosoftWindowsUSBUSBPORT AND NetEvent.Header.Descriptor.Opcode == 34) | USB port events that have opcode 34 are port errors. |
 | (USBHub_MicrosoftWindowsUSBUSBHUB AND NetEvent.Header.Descriptor.Opcode == 11) | USB hub events that have opcode 11 are hub errors. |
 | (NetEvent.Header.Descriptor.Level == 0x2) | Events that have level 0x2 are usually errors. |
-| (USBHub_MicrosoftWindowsUSBUSBHUB AND NetEvent.Header.Descriptor.Id == 210) | USB hub events with ID 210 are ”USB Hub Exception Logged” events. For more information, see [Understanding Error Events and Status Codes](#understanding-error-events-and-status-codes). |
+| (USBHub_MicrosoftWindowsUSBUSBHUB AND NetEvent.Header.Descriptor.Id == 210) | USB hub events with ID 210 are "USB Hub Exception Logged" events. For more information, see [Understanding Error Events and Status Codes](#understanding-error-events-and-status-codes). |
 
 This image shows the smaller set of events that appear in the **Frame Summary** pane after we applied the USB error filter to our sample trace log.
 
@@ -191,5 +191,5 @@ For USB enumeration to continue, the device should have responded to this reques
 
 ## Related topics
 
-[Using USB ETW](using-usb-etw.md)  
-[USB Event Tracing for Windows](usb-event-tracing-for-windows.md)
+- [Using USB ETW](using-usb-etw.md)
+- [USB Event Tracing for Windows](usb-event-tracing-for-windows.md)

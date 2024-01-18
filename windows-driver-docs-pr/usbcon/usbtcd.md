@@ -1,7 +1,7 @@
 ---
+title: USBTCD Package
 description: USBTCD is the combination of a user-mode application and kernel-mode driver.
-title: USBTCD
-ms.date: 04/20/2017
+ms.date: 01/17/2024
 ---
 
 # USBTCD package
@@ -27,7 +27,7 @@ Return value: 1
 
 You can use the following commands to measure performance for transfers to and from the bulk endpoints of a SuperMUTT device.
 
-```console
+```cmd
 Usbtcd –perf –read 1 100 2 10240000 0
 
 Usbtcd –perf –write 1 100 0 10240000 0
@@ -37,7 +37,7 @@ In the preceding command, USBTCD reads 10240000 bytes from pipe 2. In the second
 
 These commands are used to measure performance of bulk endpoints of the MUTT device. Notice that the transfer sizes are reduced in this case.
 
-```console
+```cmd
 Usbtcd –perf –read 1 100 2 512000 0
 
 Usbtcd –perf –write 1 100 0 512000 0
@@ -45,7 +45,7 @@ Usbtcd –perf –write 1 100 0 512000 0
 
 These commands measure the performance of data transfers to streams of bulk endpoints of the SuperMUTT device. Currently, the device firmware tries to switch streams every millisecond be sending an ERDY together with the new stream number to the host. That is implemented with a timer inside the device.
 
-```console
+```cmd
 Usbtcd –sread 1 100 7 1 1024 0
 
 Usbtcd –swrite 1 100 6 1 1024 0
@@ -55,7 +55,7 @@ In the preceding command, USBTCD reads and writes to a particular stream in the 
 
 To view help on USBTCD, run the following command:
 
-```console
+```cmd
 usbtcd -?
 ```
 
@@ -63,6 +63,5 @@ The command shows information on the command-line options. Transfer sizes, verbo
 
 ## Related topics
 
-[Tools in the MUTT software package](mutt-software-package.md)  
-
-[Microsoft USB Test Tool (MUTT) devices](microsoft-usb-test-tool--mutt--devices.md)  
+- [Tools in the MUTT software package](mutt-software-package.md)
+- [Microsoft USB Test Tool (MUTT) devices](microsoft-usb-test-tool--mutt--devices.md)

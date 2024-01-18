@@ -1,7 +1,7 @@
 ---
-title: USB selective suspend
+title: USB Selective Suspend
 description: This article provides information about choosing the correct mechanism for the selective suspend feature.
-ms.date: 03/07/2023
+ms.date: 01/17/2024
 ms.custom: contperf-fy21q3
 ---
 

@@ -1,7 +1,7 @@
 ---
-title: USB-C connector system software interface (UCSI) driver
+title: USB-C Connector System Software Interface (UCSI) Driver
 description: Microsoft provides a USB Type-C Connector System Software Interface (UCSI) Specification-compliant driver.
-ms.date: 09/06/2023
+ms.date: 01/17/2024
 ---
 
 # USB Type-C&reg; connector system software interface (UCSI) driver
@@ -44,13 +44,13 @@ See the UCSI specification for commands that are required in all UCSI implementa
 
 In addition to the commands marked as **Required**, Windows requires these commands:
 
-- GET\_ALTERNATE\_MODES
-- GET\_CAM\_SUPPORTED
-- GET\_PDOS
-- SET\_NOTIFICATION\_ENABLE: The system or controller must support the following notifications within SET\_NOTIFICATION\_ENABLE:
+- GET_ALTERNATE_MODES
+- GET_CAM_SUPPORTED
+- GET_PDOS
+- SET_NOTIFICATION_ENABLE: The system or controller must support the following notifications within SET_NOTIFICATION_ENABLE:
   - Supported Provider Capabilities Change
   - Negotiated Power Level Change
-- GET\_CONNECTOR\_STATUS: The system or controller must support these connector status changes within GET\_CONNECTOR\_STATUS:
+- GET_CONNECTOR_STATUS: The system or controller must support these connector status changes within GET_CONNECTOR_STATUS:
   - Supported Provider Capabilities Change
   - Negotiated Power Level Change
 
@@ -82,7 +82,7 @@ The examples given in this section describe interaction between the USB Type-C h
 
 1. USB Type-C hardware/firmware detects a device-attach event and the Windows 10 system DRP system initially becomes the UFP role.
     1. The firmware sends a notification indicating a change in the connector.
-    1. The UCSI driver sends a ​ GET\_CONNECTOR\_STATUS request.
+    1. The UCSI driver sends a ​ GET_CONNECTOR_STATUS request.
     1. The firmware responds that its Connect Status = 1​ and Connector Partner Type = DFP. ​
 1. The drivers in the USB function stack respond to the enumeration.
 1. The USB connector manager class extension recognizes that the USB function stack has loaded and hence the system is in the wrong state. It tells the UCSI driver to send Set USB Operation Role and Set Power Direction Role requests to the firmware.
@@ -93,7 +93,7 @@ The examples given in this section describe interaction between the USB Type-C h
 1. USB Type-C hardware/firmware detects that a charger is connected and negotiates a default power contract. It also observes that the charger isn't providing sufficient power to the system.
 1. USB Type-C hardware/firmware sets the slow charging bit.
     1. The firmware sends a notification indicating a change in the connector.
-    1. The UCSI driver sends a ​ GET\_CONNECTOR\_STATUS request.
+    1. The UCSI driver sends a ​ GET_CONNECTOR_STATUS request.
     1. The firmware responds with Connect Status = 1​, Connector Partner Type=DFP, and Battery Charging Status = Slow/Trickle.
 
 1. The USB connector manager class extension sends notification to the UI to display the charger mismatch troubleshoot message.
@@ -112,7 +112,7 @@ You can test individual commands in your UCSI BIOS/EC implementation by using UC
 1. Open Registry Editor (regedit.exe).
 1. Navigate to the device instance path under this key.
 
-    HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Enum\\&lt;device-instance-path&gt;\\Device Parameters
+    HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Enum\\\<device-instance-path>\\Device Parameters
 
 1. Create a DWORD value named **TestInterfaceEnabled** and set the value to 0x1.
 1. Restart the device by selecting the **Disable** option on the device node in Device Manager, and then selecting **Enable**. Alternatively, you can restart the PC.

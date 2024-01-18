@@ -1,7 +1,7 @@
 ---
-title: USB Type-C slow charging notification requirements in Windows
+title: USB Type-C Slow Charging Notification Requirements in Windows
 description: This article describes how to use Windows notifications when a user plugs in a USB Type-C power source that results in a suboptimal power delivery contract.
-ms.date: 03/21/2023
+ms.date: 01/17/2024
 ms.custom: template-concept
 ---
 

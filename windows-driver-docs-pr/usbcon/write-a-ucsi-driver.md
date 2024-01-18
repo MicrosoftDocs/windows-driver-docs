@@ -1,7 +1,7 @@
 ---
+title: Write a UCSI Client Driver
 description: Describes the behavior of the UCSI class extension that implements the UCSI specification in a transport agnostic way.
-title: Write a UCSI client driver
-ms.date: 09/30/2018
+ms.date: 01/17/2024
 ---
 
 # Write a UCSI client driver
@@ -61,11 +61,11 @@ OS Policy Manager (OPM) implements the logic to interact with PPM, as described 
 A typical operation involves several commands to be completed by the UCSI-complicant hardware. For example, let's consider the GET_CONNECTOR_STATUS command.
 
 1. The PPM firmware sends a connect change notification to the UcmUcsiCx/client driver.
-2. In response, the UcmUcsiCx/client driver sends a GET_CONNECTOR_STATUS command back to the PPM firmware.  
-3. The PPM firmware executes GET_CONNECTOR_STATUS and asynchronously sends a command-complete notification to the UcmUcsiCx/client driver. That notification contains data about the actual connect status.
-4. The UcmUcsiCx/client driver processes that status information and sends an ACK_CC_CI to the PPM firmware.
-5. The PPM firmware executes ACK_CC_CI and asynchronously sends a command-complete notification to the UcmUcsiCx/client driver.
-6. The UcmUcsiCx/client driver considers the GET_CONNECTOR_STATUS command to be complete.
+1. In response, the UcmUcsiCx/client driver sends a GET_CONNECTOR_STATUS command back to the PPM firmware.  
+1. The PPM firmware executes GET_CONNECTOR_STATUS and asynchronously sends a command-complete notification to the UcmUcsiCx/client driver. That notification contains data about the actual connect status.
+1. The UcmUcsiCx/client driver processes that status information and sends an ACK_CC_CI to the PPM firmware.
+1. The PPM firmware executes ACK_CC_CI and asynchronously sends a command-complete notification to the UcmUcsiCx/client driver.
+1. The UcmUcsiCx/client driver considers the GET_CONNECTOR_STATUS command to be complete.
 
 ## Communication with Platform Policy Manager (PPM)
 
@@ -108,7 +108,7 @@ In your [**EVT_WDF_DRIVER_DEVICE_ADD**](/windows-hardware/drivers/ddi/wdfdriver/
 
 1. After you have set the Plug and Play and power management event callback functions ([**WdfDeviceInitSetPnpPowerEventCallbacks**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpnppowereventcallbacks)), call [**UcmUcsiDeviceInitInitialize**](/windows-hardware/drivers/ddi/ucmucsidevice/nf-ucmucsidevice-ucmucsideviceinitinitialize) to initialize the [**WDFDEVICE_INIT**](../wdf/wdfdevice_init.md) opaque structure. The call associates the client driver with the framework.
 
-2. After creating the framework device object (WDFDEVICE), call [**UcmUcsiDeviceInitialize**](/windows-hardware/drivers/ddi/ucmucsidevice/nf-ucmucsidevice-ucmucsideviceinitialize) to register the client diver with UcmUcsiCx.
+1. After creating the framework device object (WDFDEVICE), call [**UcmUcsiDeviceInitialize**](/windows-hardware/drivers/ddi/ucmucsidevice/nf-ucmucsidevice-ucmucsideviceinitialize) to register the client diver with UcmUcsiCx.
 
 ## 2. Create the PPM object with UcmUcsiCx
 
@@ -116,7 +116,7 @@ In your implementation of [**EVT_WDF_DEVICE_PREPARE_HARDWARE**](/windows-hardwar
 
 1. Provide a handle to the connector collection on the device.
    1. Create the connector collection by calling [**UcmUcsiConnectorCollectionCreate**](/windows-hardware/drivers/ddi/ucmucsippm/nf-ucmucsippm-ucmucsiconnectorcollectioncreate).
-   2. Enumerate the connectors on the device and add them to the collection by calling [**UcmUcsiConnectorCollectionAddConnector**](/windows-hardware/drivers/ddi/ucmucsippm/nf-ucmucsippm-ucmucsiconnectorcollectionaddconnector)
+   1. Enumerate the connectors on the device and add them to the collection by calling [**UcmUcsiConnectorCollectionAddConnector**](/windows-hardware/drivers/ddi/ucmucsippm/nf-ucmucsippm-ucmucsiconnectorcollectionaddconnector)
 
       ```cpp
       // Create the connector collection.
@@ -138,13 +138,13 @@ In your implementation of [**EVT_WDF_DEVICE_PREPARE_HARDWARE**](/windows-hardwar
                    &connectorInfo);
       ```
 
-2. Decide whether you want to enable the device controller.
+1. Decide whether you want to enable the device controller.
 
-3. Configure and create the PPM object.
+1. Configure and create the PPM object.
    1. Initialize a [**UCMUCSI_PPM_CONFIG**](/windows-hardware/drivers/ddi/ucmucsippm/ns-ucmucsippm-_ucmucsi_ppm_config) structure by providing the connector handle you created in step 1.
-   2. Set **UsbDeviceControllerEnabled** member to a boolean value determined in step 2.
-   3. Set your event callbacks in WDF_OBJECT_ATTRIBUTES.
-   4. Call [**UcmUcsiPpmCreate**](/windows-hardware/drivers/ddi/ucmucsippm/nf-ucmucsippm-ucmucsippmcreate) by passing all the configured structures.
+   1. Set **UsbDeviceControllerEnabled** member to a boolean value determined in step 2.
+   1. Set your event callbacks in WDF_OBJECT_ATTRIBUTES.
+   1. Call [**UcmUcsiPpmCreate**](/windows-hardware/drivers/ddi/ucmucsippm/nf-ucmucsippm-ucmucsippmcreate) by passing all the configured structures.
 
       ```cpp
       UCMUCSIPPM ppmObject = WDF_NO_HANDLE;
@@ -207,11 +207,11 @@ Conversely, when the driver does not want to process any more requests, it must 
 Consider this example sequence of the events that occurs when a USB Type-C partner is attached to a connector.
 
 1. PPM firmware determines an attach event and sends a notification to the client driver.
-2. Client driver calls [**UcmUcsiPpmNotification**](/windows-hardware/drivers/ddi/ucmucsippm/nf-ucmucsippm-ucmucsippmnotification) to send that notification to UcmUcsiCx.
-3. UcmUcsiCx notfies the OPM state machine and it sends a Get Connector Status command to UcmUcsiCx.
-4. UcmUcsiCx creates a request and sends [IOCTL_UCMUCSI_PPM_SEND_UCSI_DATA_BLOCK](/windows-hardware/drivers/ddi/ucmucsippmrequests/ni-ucmucsippmrequests-ioctl_ucmucsi_ppm_send_ucsi_data_block) to the client driver.
-5. The client driver processes that request and sends the command to the PPM firmware. The driver completes this request asynchronously and sends another notification to UcmUcsiCx.
-6. On successful command complete notification, the OPM state machine reads the payload (containing connector status info) and notifies UCM of the Type-C attach event.
+1. Client driver calls [**UcmUcsiPpmNotification**](/windows-hardware/drivers/ddi/ucmucsippm/nf-ucmucsippm-ucmucsippmnotification) to send that notification to UcmUcsiCx.
+1. UcmUcsiCx notfies the OPM state machine and it sends a Get Connector Status command to UcmUcsiCx.
+1. UcmUcsiCx creates a request and sends [IOCTL_UCMUCSI_PPM_SEND_UCSI_DATA_BLOCK](/windows-hardware/drivers/ddi/ucmucsippmrequests/ni-ucmucsippmrequests-ioctl_ucmucsi_ppm_send_ucsi_data_block) to the client driver.
+1. The client driver processes that request and sends the command to the PPM firmware. The driver completes this request asynchronously and sends another notification to UcmUcsiCx.
+1. On successful command complete notification, the OPM state machine reads the payload (containing connector status info) and notifies UCM of the Type-C attach event.
 
 In this example, the payload also indicated that a change in power delivery negotiation status between the firmware and the port partner was successful. The OPM state machine sends another UCSI command: Get PDOs.
 Similar to Get Connector Status command, when Get PDOs command completes successfully, the OPM state machine notifies UCM of this event.

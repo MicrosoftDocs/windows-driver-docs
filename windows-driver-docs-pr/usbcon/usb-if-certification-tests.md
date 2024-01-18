@@ -1,7 +1,7 @@
 ---
-title: USB-IF certification tests
+title: USB-IF Certification Tests
 description: Guidelines for hardware vendors and device manufacturers to prepare USB devices and host controllers for Windows Hardware Certification Program submission.
-ms.date: 03/14/2023
+ms.date: 01/17/2024
 ---
 
 # USB-IF certification
