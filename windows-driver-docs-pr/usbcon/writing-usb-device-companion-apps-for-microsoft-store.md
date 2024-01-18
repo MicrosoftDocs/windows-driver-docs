@@ -1,7 +1,7 @@
 ---
-title: UWP app for a USB device
+title: UWP App for a USB Device
 description: The Windows.Devices.Usb namespace provides APIs to communicate with an external USB device.
-ms.date: 03/08/2023
+ms.date: 01/17/2024
 ---
 
 # UWP app for a USB device
@@ -32,14 +32,20 @@ The **[Windows.Devices.Usb](/uwp/api/Windows.Devices.Usb)** namespace provides a
 You *can't* use **[Windows.Devices.Usb](/uwp/api/Windows.Devices.Usb)** in these cases:
 
 - If the device driver isn't Winusb.sys.
+
 - You want to communicate with USB isochronous endpoints of the device.
+
 - You want to communicate streams of a SuperSpeed bulk endpoint. For those endpoints, the USB Windows Runtime classes for bulk transfers can only send or receive data from the first stream of the endpoint.
+
 - You allow multiple apps to concurrently access the device.
+
 - Your USB device is an internal device.
+
     > [!NOTE]
     > The APIs are primarily designed for accessing peripheral devices. The API can also access PC internal USB devices. However access to PC internal USB devices from a UWP app is limited to a privileged app that is explicitly declared by the OEM for that PC.
 
 - The kernel-mode device stack has a filter driver above Winusb.sys.
+
     > [!NOTE]
     > This scenario is available to privileged apps only.
 

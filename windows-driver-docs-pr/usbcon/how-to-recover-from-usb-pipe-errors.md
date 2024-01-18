@@ -1,7 +1,7 @@
 ---
-title: How to recover from USB pipe errors
+title: How to Recover From USB Pipe Errors
 description: This article provides information about steps you can try when a data transfer to a USB pipe fails. The mechanisms described in this article cover abort, reset, and cycle port operations on bulk, interrupt, and isochronous pipes.
-ms.date: 01/24/2023
+ms.date: 01/16/2024
 ms.custom: contperf-fy21q3
 ---
 
@@ -32,9 +32,7 @@ The client driver must make sure that at a given time, the driver performs only 
 
 ## What you need to know
 
-### Technologies
-
-- [Kernel-Mode Driver Framework](../wdf/index.md)
+This article uses the [Kernel-Mode Driver Framework (KMDF)](../wdf/index.md).
 
 ### Prerequisites
 
@@ -46,9 +44,7 @@ The client driver must make sure that at a given time, the driver performs only 
 
 - The client driver must have a handle to the framework target pipe object. For more information, see [How to enumerate USB pipes](how-to-get-usb-pipe-handles.md).
 
-## Instructions
-
-### Step 1: Determine the cause of the error condition
+## Step 1: Determine the cause of the error condition
 
 The client driver initiates a data transfer by using a USB Request Block (URB). After the request completes, the USB driver stack returns a USBD status code that indicates whether the transfer was successful or it failed. In a failure, the USBD code indicates the reason for failure.
 
@@ -57,11 +53,11 @@ The client driver initiates a data transfer by using a USB Request Block (URB). 
 
 Transfer failures can result from a device error, such as USBD_STATUS_STALL_PID or USBD_STATUS_BABBLE_DETECTED. They can also result due to an error reported by the host controller, such as USBD_STATUS_XACT_ERROR.
 
-### Step 2: Determine whether the device is connected to the port
+## Step 2: Determine whether the device is connected to the port
 
 Before issuing any request that resets the pipe or the device, make sure that the device is connected. You can determine the connected state of the device by calling the **[WdfUsbTargetDeviceIsConnectedSynchronous](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdeviceisconnectedsynchronous)** method.
 
-### Step 3: Cancel all pending transfers to the pipe
+## Step 3: Cancel all pending transfers to the pipe
 
 Before sending any requests that reset the pipe or port, cancel all pending transfer requests to the pipe, which the USB driver stack hasn't yet completed. You can cancel requests in one of these ways:
 
@@ -81,7 +77,7 @@ Before sending any requests that reset the pipe or port, cancel all pending tran
 
     The driver can send the request synchronously by specifying WDF_REQUEST_SEND_OPTION_SYNCHRONOUS as one of the request options in **[WdfRequestSend](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestsend)**. If you send the request synchronously, then call **[WdfUsbTargetPipeAbortSynchronously](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetpipeabortsynchronously)** instead.
 
-### Step 4: Reset the USB pipe
+## Step 4: Reset the USB pipe
 
 Start the error recovery by resetting the pipe. You can send a reset-pipe request by calling one of these methods:
 
@@ -96,7 +92,7 @@ The reset-pipe request clears the error condition in the device and the host con
 
 To clear the host controller error, the driver stack clears the HALT state of the pipe and resets the data toggle of the pipe to 0.
 
-### Step 5: Reset the USB port
+## Step 5: Reset the USB port
 
 If a reset-pipe operation doesn't clear the error condition and data transfers continue to fail, send a reset-port request.
 
@@ -112,7 +108,7 @@ A reset-port operation causes the device to get re-enumerated on the USB bus. Th
 
 You can't reset an individual function of a composite device. For a composite device, when the client driver of a particular function sends a reset-port request, the entire device is reset. If the USB device maintains state, that reset-port request can affect the client drivers of other functions. Therefore, it's important that the client driver attempts to reset the pipe before resetting the port.
 
-### Step 6: Cycle the USB port
+## Step 6: Cycle the USB port
 
 A cycle-port operation is similar to the device that is unplugged and plugged back to the port, except the device isn't disconnected electrically. The device is disconnected and reconnected in software. This operation leads to device reset and enumeration. As a result, the PnP Manager rebuilds the device node.
 
@@ -138,4 +134,5 @@ Similar to the reset-port operation (described in step 6), for a composite devic
 
 ## Related topics
 
+- [Kernel-Mode Driver Framework](../wdf/index.md)
 - [USB I/O Transfers](usb-device-i-o.md)

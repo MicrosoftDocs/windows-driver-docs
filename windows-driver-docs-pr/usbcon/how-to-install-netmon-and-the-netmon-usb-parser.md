@@ -1,7 +1,7 @@
 ---
+title: How to Install Netmon and USB ETW Parsers
 description: This topic provides installation information about Netmon and the USB ETW parsers.
-title: How to install Netmon and USB ETW Parsers
-ms.date: 09/11/2023
+ms.date: 01/16/2024
 ---
 
 # How to install Netmon and USB ETW Parsers
@@ -57,6 +57,6 @@ Netmon is now configured for use with a USB ETW trace file. For more information
 
 ## Related topics
 
-* [Using USB ETW](using-usb-etw.md)  
-* [USB Event Tracing for Windows](usb-event-tracing-for-windows.md)  
-* [How to open an ETW trace in Netmon](how-to-examining-a-trace-file-by-using-netmon.md)
+- [Using USB ETW](using-usb-etw.md)
+- [USB Event Tracing for Windows](usb-event-tracing-for-windows.md)
+- [How to open an ETW trace in Netmon](how-to-examining-a-trace-file-by-using-netmon.md)

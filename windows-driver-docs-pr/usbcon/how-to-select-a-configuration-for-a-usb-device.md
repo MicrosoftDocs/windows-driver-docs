@@ -1,12 +1,10 @@
 ---
-title: How to select a configuration for a USB device
-description: In this topic, you will learn about how to select a configuration in a universal serial bus (USB) device.
-ms.date: 01/25/2023
+title: How to Select a Configuration for a USB Device
+description: This article demonstrates how to select a configuration for a universal serial bus (USB) device.
+ms.date: 01/16/2024
 ---
 
 # How to select a configuration for a USB device
-
-In this topic, you will learn about how to select a configuration in a universal serial bus (USB) device.
 
 To select a configuration for a USB device, the client driver for the device must choose at least one of the supported configurations and specify the alternate settings of each interface to use. The client driver packages those choices in a *select-configuration request* and sends the request to the Microsoft-provided USB driver stack, specifically the USB bus driver (USB hub PDO). The USB bus driver selects each interface in the specified configuration and sets up a communication channel, or *pipe*, to each endpoint within the interface. After the request completes, the client driver receives a handle for the selected configuration, and pipe handles for the endpoints that are defined in the active alternate setting for each interface. The client driver can then use the received handles to change configuration settings and to send I/O read and write requests to a particular endpoint.
 
@@ -17,14 +15,15 @@ Alternately, you can allocate an **[URB](/windows-hardware/drivers/ddi/usb/ns-us
 ## Prerequisites
 
 - Starting in Windows 8, **[USBD_SelectConfigUrbAllocateAndBuild](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_selectconfigurballocateandbuild)** replaces **[USBD_CreateConfigurationRequestEx](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_createconfigurationrequestex)**.
+
 - Before sending a select-configuration request, you must have a USBD handle for your client driver's registration with the USB driver stack. To create a USBD handle call **[USBD_CreateHandle](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_createhandle)**.
+
 - Make sure you have obtained the configuration descriptor (**[USB_CONFIGURATION_DESCRIPTOR](/windows-hardware/drivers/ddi/usbspec/ns-usbspec-_usb_configuration_descriptor)** structure) of the configuration to select. Typically, you submit an URB of the type URB_FUNCTION_GET_DESCRIPTOR_FROM_DEVICE (see **[_URB_CONTROL_DESCRIPTOR_REQUEST](/windows-hardware/drivers/ddi/usb/ns-usb-_urb_control_descriptor_request)**) to retrieve information about device configuration. For more information, see [USB Configuration Descriptors](usb-configuration-descriptors.md).
 
-## Instructions
-
-### Step 1: Create an array of USBD_INTERFACE_LIST_ENTRY structures
+## Step 1: Create an array of USBD_INTERFACE_LIST_ENTRY structures
 
 1. Get the number of interfaces in the configuration. This information is contained in the **bNumInterfaces** member of the **[USB_CONFIGURATION_DESCRIPTOR](/windows-hardware/drivers/ddi/usbspec/ns-usbspec-_usb_configuration_descriptor)** structure.
+
 1. Create an array of **[USBD_INTERFACE_LIST_ENTRY](/windows-hardware/drivers/ddi/usbdlib/ns-usbdlib-_usbd_interface_list_entry)** structures. The number of elements in the array must be one more than the number of interfaces. Initialize the array by calling **[RtlZeroMemory](/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlzeromemory)**.
 
     The client driver specifies alternate settings in each interface to enable, in the array of **[USBD_INTERFACE_LIST_ENTRY](/windows-hardware/drivers/ddi/usbdlib/ns-usbdlib-_usbd_interface_list_entry)** structures.
@@ -45,9 +44,10 @@ Alternately, you can allocate an **[URB](/windows-hardware/drivers/ddi/usb/ns-us
     For information about how Usbccgp.sys handles a select-configuration request sent by a client driver, see [Configuring Usbccgp.sys to Select a Non-Default USB Configuration](selecting-the-configuration-for-a-multiple-interface--composite--usb-d.md).
 
 1. For each element (except the last element) in the array, set the **InterfaceDescriptor** member to the address of an interface descriptor. For the first element in the array, set the **InterfaceDescriptor** member to the address of the interface descriptor that represents the first interface in the configuration. Similarly for the *n*th element in the array, set the **InterfaceDescriptor** member to the address of the interface descriptor that represents the *n*th interface in the configuration.
+
 1. The **InterfaceDescriptor** member of the last element must be set to NULL.
 
-### Step 2: Get a pointer to an URB allocated by the USB driver stack
+## Step 2: Get a pointer to an URB allocated by the USB driver stack
 
 Next, call **[USBD_SelectConfigUrbAllocateAndBuild](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_selectconfigurballocateandbuild)** by specifying the configuration to select and the populated array of **[USBD_INTERFACE_LIST_ENTRY](/windows-hardware/drivers/ddi/usbdlib/ns-usbdlib-_usbd_interface_list_entry)** structures. The routine performs the following tasks:
 
@@ -59,13 +59,13 @@ Next, call **[USBD_SelectConfigUrbAllocateAndBuild](/windows-hardware/drivers/dd
     > [!NOTE]
     > In Windows 7 and ealier, the client driver created an URB for a select-configuration request by calling **[USBD_CreateConfigurationRequestEx](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_createconfigurationrequestex)**. In Windows 2000 **USBD_CreateConfigurationRequestEx** initializes **Pipes\[i\].MaximumTransferSize** to the default maximum transfer size for a single URB read/write request. The client driver can specify a different maximum transfer size in the **Pipes\[i\].MaximumTransferSize**. The USB stack ignores this value in Windows XP, Windows Server 2003, and later versions of the operating system. For more information about **MaximumTransferSize**, see "Setting USB Transfer and Packet Sizes" in [USB Bandwidth Allocation](usb-bandwidth-allocation.md).
 
-### Step 3: Submit the URB to the USB driver stack
+## Step 3: Submit the URB to the USB driver stack
 
 To submit the URB to the USB driver stack, the client driver must send an **[IOCTL_INTERNAL_USB_SUBMIT_URB](/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_internal_usb_submit_urb)** I/O control request . For information about submitting an URB, see [How to Submit an URB](send-requests-to-the-usb-driver-stack.md).
 
 After receiving the URB, the USB driver stack fills the rest of the members of each **[USBD_INTERFACE_INFORMATION](/windows-hardware/drivers/ddi/usb/ns-usb-_usbd_interface_information)** structure. In particular, the **Pipes** array member is filled with information about the pipes associated with the endpoints of the interface.
 
-### Step 4: On request completion, inspect the USBD_INTERFACE_INFORMATION structures and the URB
+## Step 4: On request completion, inspect the USBD_INTERFACE_INFORMATION structures and the URB
 
 After the USB driver stack completes the IRP for the request, the stack returns the list of alternate settings and the related interfaces in the **[USBD_INTERFACE_LIST_ENTRY](/windows-hardware/drivers/ddi/usbdlib/ns-usbdlib-_usbd_interface_list_entry)** array.
 
@@ -239,9 +239,7 @@ Exit:
         USBD_UrbFree( deviceExtension->UsbdHandle, urb); 
     }
 
-
     return ntStatus;
-
 }
 
 NTSTATUS CompletionRoutine ( PDEVICE_OBJECT DeviceObject,
@@ -259,14 +257,11 @@ NTSTATUS CompletionRoutine ( PDEVICE_OBJECT DeviceObject,
 
     KdPrintEx(( DPFLTR_IHVDRIVER_ID, DPFLTR_INFO_LEVEL, "Select-configuration request completed. \n" ));
 
-
     return STATUS_MORE_PROCESSING_REQUIRED;
 }
 ```
 
-## Remarks
-
-### Disabling a Configuration for a USB Device
+## Disabling a configuration for a USB device
 
 To disable a USB device, create and submit a select-configuration request with a NULL configuration descriptor. For that type of request, you can reuse the URB that you created for request that selected a configuration in the device. Alternately, you can allocate a new URB by calling **[USBD_UrbAllocate](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_urballocate)**. Before submitting the request you must format the URB by using the **[UsbBuildSelectConfigurationRequest](/previous-versions/ff538968(v=vs.85))** macro as shown in the following example code.
 

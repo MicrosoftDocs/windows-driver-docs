@@ -1,7 +1,7 @@
 ---
-title: Hardware design of USB Type-C systems
+title: Hardware Design of USB Type-C Systems
 description: Here are some example designs for USB Type-C system.
-ms.date: 01/20/2023
+ms.date: 01/12/2024
 ---
 
 # Hardware design: USB Type-C systems

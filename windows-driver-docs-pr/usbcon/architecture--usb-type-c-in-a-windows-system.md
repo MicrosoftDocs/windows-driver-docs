@@ -1,7 +1,7 @@
 ---
-title: Architecture of USB Type-C design for a Windows system
+title: Architecture of USB Type-C Design for a Windows System
 description: Describes a typical hardware design of a USB Type-C system and the Microsoft-provided drivers that support the hardware components.
-ms.date: 01/18/2023
+ms.date: 01/12/2024
 ---
 
 # Architecture: USB Type-C design for a Windows system

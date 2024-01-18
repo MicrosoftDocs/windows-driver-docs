@@ -1,7 +1,7 @@
 ---
+title: Overview of Using Xperf With USB ETW
 description: This topic describes how to use Xperf with Netmon to analyze USB trace data.
-title: Overview of using Xperf with USB ETW
-ms.date: 09/16/2021
+ms.date: 01/17/2024
 ---
 
 # Overview of using Xperf with USB ETW
@@ -19,4 +19,4 @@ You can use Xperf with Netmon to analyze trace data or to analyze kernel events 
 
 ## Related topics
 
-* [USB Event Tracing for Windows](usb-event-tracing-for-windows.md)  
+- [USB Event Tracing for Windows](usb-event-tracing-for-windows.md)

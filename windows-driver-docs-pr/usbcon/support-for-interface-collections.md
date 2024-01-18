@@ -1,7 +1,7 @@
 ---
-title: Overview of enumeration of interface collections on USB composite devices
+title: Overview of Enumeration of Interface Collections on USB Composite Devices
 description: Interfaces on a composite USB device can be grouped in collections. The USB generic parent driver (Usbccgp.sys) can enumerate interface collections in four ways.
-ms.date: 05/08/2023
+ms.date: 01/17/2024
 ---
 
 # Overview of enumeration of interface collections on USB composite devices
@@ -479,7 +479,7 @@ Enumerated WHCM interface collections have the following properties.
 The hardware ID formats in the preceding topics describe use the following conventions:
 
 - a C-language **printf** format represents integers. For example, "%04x" means a 4-digit hexadecimal integer, "%02x" means a 2-digit hexadecimal integer, and so on.
-- The integer that follows the string "Vid_" is a 4-digit hexadecimal representation of the vendor code that the USB committee (www.usb.org) assigns to the vendor.
+- The integer that follows the string "Vid_" is a 4-digit hexadecimal representation of the vendor code that the USB committee (<www.usb.org>) assigns to the vendor.
 - The integer that follows the string "Pid_" is a 4-digit hexadecimal representation of the product code that the vendor assigns to the device.
 - The integer that follows the string "Rev_" is a 4-digit hexadecimal representation of the revision number of the device.
 - The integer that follows the string "Cdc_" is the interface subclass.
@@ -556,5 +556,5 @@ In these compatible IDs, c(2), s(2), and p(2) contain values that are taken, res
 
 ## Related topics
 
-- [USB Generic Parent Driver (Usbccgp.sys)](usb-common-class-generic-parent-driver.md)  
+- [USB Generic Parent Driver (Usbccgp.sys)](usb-common-class-generic-parent-driver.md)
 - [Microsoft-provided USB drivers](system-supplied-usb-drivers.md)

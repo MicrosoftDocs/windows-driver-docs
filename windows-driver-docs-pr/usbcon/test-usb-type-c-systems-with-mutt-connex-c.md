@@ -1,7 +1,7 @@
 ---
-title: Test USB Type-C systems with USB Type-C ConnEx
+title: Test USB Type-C Systems With USB Type-C ConnEx
 description: The MUTT Connection Exerciser Type-C (USB Type-C ConnEx) hardware board is a custom shield for the Arduino board.
-ms.date: 02/23/2023
+ms.date: 01/17/2024
 ---
 
 # Test USB Type-C systems with USB Type-C ConnEx
@@ -141,7 +141,7 @@ In these steps, you will connect the hardware pieces, update the firmware on the
 
 1. Plug the micro-usb into the back of the ConnEx and the USB A into the proxy controller (SUT if available).
 
-2. Update the device with the USB Type-C ConnEx firmware.
+1. Update the device with the USB Type-C ConnEx firmware.
 
     - Open an elevated Command Prompt window.
     - Navigate to the location of the MUTT software package, such as C:\\Program Files (x86)\\USBTest\\*&lt;arch&gt;*.
@@ -149,11 +149,11 @@ In these steps, you will connect the hardware pieces, update the firmware on the
 
         **ConnExUtil.exe –UpdateFirmware**
 
-3. Plug in the SUT using the attached USB Type-C cable on the back of the device.
+1. Plug in the SUT using the attached USB Type-C cable on the back of the device.
 
-4. Attach the peripherals to the USB ports labeled **J2**, **J3**, **J4**, **J6**.
+1. Attach the peripherals to the USB ports labeled **J2**, **J3**, **J4**, **J6**.
 
-5. Ensure that the device is recognized by the Device Manager on your proxy controller (SUT if available).
+1. Ensure that the device is recognized by the Device Manager on your proxy controller (SUT if available).
 
 ## Get started with older versions
 
@@ -176,7 +176,7 @@ In these steps, you will connect the hardware pieces, update the firmware on the
 
         :::image type="content" source="images/connexc-align.png" alt-text="Picture showing how to align the pins of the USB Type-C ConnEx.":::
 
-     2. Gently press the two boards together. Be careful not to bend the pins on the shield.
+     1. Gently press the two boards together. Be careful not to bend the pins on the shield.
 
         :::image type="content" source="images/connexc-connect.png" alt-text="Picture showing how to assemble the USB Type-C ConnEx.":::
 
@@ -184,7 +184,7 @@ In these steps, you will connect the hardware pieces, update the firmware on the
 
         :::image type="content" source="images/connexc-connect1.png" alt-text="Picture of an assembled ConnEx-C board.":::
 
-2. Power the USB Type-C ConnEx from the attached microcontroller by using either the USB Type-B (connected to the proxy controller) or from an external power adapter. The LCD display is similar to this image:
+1. Power the USB Type-C ConnEx from the attached microcontroller by using either the USB Type-B (connected to the proxy controller) or from an external power adapter. The LCD display is similar to this image:
 
     After five seconds, the LCD display shows the current and voltage.
 
@@ -194,7 +194,7 @@ In these steps, you will connect the hardware pieces, update the firmware on the
 
     If you do not the see display as shown in the previous image, make sure your have assembled the unit correctly.
 
-3. Update the microcontroller with the USB Type-C ConnEx firmware.
+1. Update the microcontroller with the USB Type-C ConnEx firmware.
 
     - Open an elevated Command Prompt window.
     - Navigate to the location of the MUTT software package, such as C:\\Program Files (x86)\\USBTest\\*&lt;arch&gt;*.
@@ -202,17 +202,17 @@ In these steps, you will connect the hardware pieces, update the firmware on the
 
         **MuttUtil.exe –UpdateTabFirmware**
 
-4. Plug in the SUT to the male USB Type-C port (labeled **J1**) on the shield.
+1. Plug in the SUT to the male USB Type-C port (labeled **J1**) on the shield.
 
     **Caution**  The **J1** connector requires additional support when connecting the SUT. The connector is not sturdy enough to sustain the weight of a device or by itself.
 
     :::image type="content" source="images/connexc-connect4.png" alt-text="Picture of attaching the system under test (SUT).":::
 
-5. Attach the peripherals to the USB ports labeled **J2**, **J3**, **J4**, **J6**.
+1. Attach the peripherals to the USB ports labeled **J2**, **J3**, **J4**, **J6**.
 
     :::image type="content" source="images/connexc-connect7.png" alt-text="Picture of peripherals attached to the USB Type-C ConnEx.":::
 
-6. Attach the proxy controller to the microcontroller.
+1. Attach the proxy controller to the microcontroller.
 
     - If the proxy controller is a desktop PC or laptop, establish connection over USB. Connect the USB Type-B port on the microcontroller to a USB port on the proxy controller, as shown in the preceding image.
     - If the proxy controller is a mobile SUT, establish connection by using the audio port. For this connection, you need the DTMF shield.
@@ -220,15 +220,15 @@ In these steps, you will connect the hardware pieces, update the firmware on the
 
             :::image type="content" source="images/connexc-connect6.png" alt-text="Picture of DTMF attachment.":::
 
-        2. Connect the audio port of the shield to the audio port on the SUT by using a 4-pin male-to-male audio cable.
+        1. Connect the audio port of the shield to the audio port on the SUT by using a 4-pin male-to-male audio cable.
 
             Your setup should be similar to this image:
 
             :::image type="content" source="images/connexc-connect5.png" alt-text="Picture of attaching a system under test with DTMF.":::
 
-7. Make sure USB Type-C ConnEx is recognized by Device Manager on the proxy controller.
+1. Make sure USB Type-C ConnEx is recognized by Device Manager on the proxy controller.
     1. Right-click the Start button in the task bar and select **Device Manager**.
-    2. Expand the **Ports (COM & LPT)** node and note the COM port that is used by the microcontroller. In this example, it is connected to COM 4.
+    1. Expand the **Ports (COM & LPT)** node and note the COM port that is used by the microcontroller. In this example, it is connected to COM 4.
 
         :::image type="content" source="images/connexc-connect8.png" alt-text="Screenshot of USB Type-C ConnEx in Windows Device Manager.":::
 
@@ -340,12 +340,12 @@ The stress testing section describes procedures for stress and edge case scenari
 | **J6** | PC with USB Type-A port cable connected by using a USB Type-A to USB Micro-B cable. |
 
 1. Power off the SUT.
-2. Connect the SUT to the port labeled as **J1** on USB Type-C ConnEx.
-3. Connect the proxy controller to USB Type-C ConnEx.
-4. Connect peripherals to USB Type-C ConnEx.
-5. Power on the SUT and log on to Windows.
-6. At an elevated Command prompt, run the CXLOOP.CMD script. When script pauses, confirm the newly activated peripheral is operational.
-7. Reverse the orientation of USB Type-C cable and repeat step 5 - 7.
+1. Connect the SUT to the port labeled as **J1** on USB Type-C ConnEx.
+1. Connect the proxy controller to USB Type-C ConnEx.
+1. Connect peripherals to USB Type-C ConnEx.
+1. Power on the SUT and log on to Windows.
+1. At an elevated Command prompt, run the CXLOOP.CMD script. When script pauses, confirm the newly activated peripheral is operational.
+1. Reverse the orientation of USB Type-C cable and repeat step 5 - 7.
 
 For configuration images related to step 2 -4, see [Get started...](#get-started-with-older-versions).
 
@@ -362,12 +362,12 @@ For configuration images related to step 2 -4, see [Get started...](#get-started
 | **J6** | PC with USB Type-A port cable connected by using a USB Type-A to USB Micro-B cable. |
 
 1. Power off the SUT.
-2. Connect the SUT to the port labeled as **J1** on USB Type-C ConnEx.
-3. Connect the proxy controller to USB Type-C ConnEx.
-4. Connect peripherals to USB Type-C ConnEx.
-5. Power on the SUT and log on to Windows.
-6. At an elevated Command prompt, run the CXLOOP.CMD script. When script pauses, confirm the newly activated peripheral is operational.
-7. Reverse the orientation of USB Type-C cable and repeat step 5 - 7.
+1. Connect the SUT to the port labeled as **J1** on USB Type-C ConnEx.
+1. Connect the proxy controller to USB Type-C ConnEx.
+1. Connect peripherals to USB Type-C ConnEx.
+1. Power on the SUT and log on to Windows.
+1. At an elevated Command prompt, run the CXLOOP.CMD script. When script pauses, confirm the newly activated peripheral is operational.
+1. Reverse the orientation of USB Type-C cable and repeat step 5 - 7.
 
 For configuration images related to step 2 -4, see [Get started...](#get-started-with-older-versions).
 
@@ -384,23 +384,23 @@ For configuration images related to step 2 -4, see [Get started...](#get-started
 | **J6** | USB Micro-B charger. |
 
 1. Power off the SUT.
-2. Connect the SUT to the port labeled as **J1** on USB Type-C ConnEx.
-3. Connect the proxy controller to USB Type-C ConnEx.
-4. Connect peripherals to USB Type-C ConnEx.
-5. Power on the SUT and log on to Windows.
-6. At an elevated Command prompt, run the CXLOOP.CMD script. When script pauses, confirm the newly activated peripheral is operational.
-7. Reverse the orientation of USB Type-C cable and repeat step 5 - 7.
-8. Connect USB Type-C ConnEx to port **J2**.
+1. Connect the SUT to the port labeled as **J1** on USB Type-C ConnEx.
+1. Connect the proxy controller to USB Type-C ConnEx.
+1. Connect peripherals to USB Type-C ConnEx.
+1. Power on the SUT and log on to Windows.
+1. At an elevated Command prompt, run the CXLOOP.CMD script. When script pauses, confirm the newly activated peripheral is operational.
+1. Reverse the orientation of USB Type-C cable and repeat step 5 - 7.
+1. Connect USB Type-C ConnEx to port **J2**.
 
     **ConnExUtil.exe /setPort 2**
 
-9. If SUT contains more than one USB Type-C port, connect two USB Type-C ports on the same system with a USB Type-C cable.
+1. If SUT contains more than one USB Type-C port, connect two USB Type-C ports on the same system with a USB Type-C cable.
 
     Confirm that the SUT is not charging (itself).
 
     Confirm that the LCD reading of power matches the expectations of the wall adapter.
 
-10. Replace the USB Type-C charger connected to **J3** with another USB Type-C charger from a different manufacturer.
+1. Replace the USB Type-C charger connected to **J3** with another USB Type-C charger from a different manufacturer.
 
     Confirm the device is receiving current.
 
@@ -419,17 +419,17 @@ For configuration images related to step 2 -4, see [Get started...](#get-started
 | **J6** | PC with USB Type-A port cable connected by using a USB Type-A to USB Micro-B cable. |
 
 1. Power off the SUT.
-2. Connect the SUT to the port labeled as **J1** on USB Type-C ConnEx.
-3. Connect the proxy controller to USB Type-C ConnEx.
-4. Connect peripherals to USB Type-C ConnEx.
-5. Power on the SUT and log on to Windows.
-6. At an elevated Command prompt, run the CXLOOP.CMD script. When script pauses, confirm the newly activated peripheral is operational.
-7. Reverse the orientation of USB Type-C cable and repeat step 5 - 7.
-8. Connect USB Type-C ConnEx to port **J2**.
+1. Connect the SUT to the port labeled as **J1** on USB Type-C ConnEx.
+1. Connect the proxy controller to USB Type-C ConnEx.
+1. Connect peripherals to USB Type-C ConnEx.
+1. Power on the SUT and log on to Windows.
+1. At an elevated Command prompt, run the CXLOOP.CMD script. When script pauses, confirm the newly activated peripheral is operational.
+1. Reverse the orientation of USB Type-C cable and repeat step 5 - 7.
+1. Connect USB Type-C ConnEx to port **J2**.
 
     Confirm role swap. The Amperage shown on the LCD screen indicates power roles. **+ve** if **J1** is the power sink; **-ve** if **J1** is the power source.
 
-9. Perform necessary steps to swap data roles and confirm current roles of each system have changed.
+1. Perform necessary steps to swap data roles and confirm current roles of each system have changed.
 
 For configuration images related to step 2 -4, see [Get started...](#get-started-with-older-versions).
 
@@ -446,15 +446,15 @@ For configuration images related to step 2 -4, see [Get started...](#get-started
 | **J6** | PC with USB Type-A port cable connected by using a USB Type-A to USB Micro-B cable. |
 
 1. Power off the SUT.
-2. Connect the SUT to the port labeled as **J1** on USB Type-C ConnEx.
-3. Connect the proxy controller to USB Type-C ConnEx.
-4. Connect peripherals to USB Type-C ConnEx.
-5. Power on the SUT and log on to Windows.
-6. At an elevated Command prompt, run the CXSTRESS.CMD for 12 hours.
+1. Connect the SUT to the port labeled as **J1** on USB Type-C ConnEx.
+1. Connect the proxy controller to USB Type-C ConnEx.
+1. Connect peripherals to USB Type-C ConnEx.
+1. Power on the SUT and log on to Windows.
+1. At an elevated Command prompt, run the CXSTRESS.CMD for 12 hours.
 
     Terminate the script by pressing Ctrl-C.
 
-7. Perform the steps described in [FT Case 1: Device Enumeration](#ft-case-1-device-enumeration).
+1. Perform the steps described in [FT Case 1: Device Enumeration](#ft-case-1-device-enumeration).
 
 For configuration images related to step 2 -4, see [Get started...](#get-started-with-older-versions).
 
@@ -471,15 +471,15 @@ For configuration images related to step 2 -4, see [Get started...](#get-started
 | **J6** | USB Micro-B charger. |
 
 1. Power off the SUT.
-2. Connect the SUT to the port labeled as **J1** on USB Type-C ConnEx.
-3. Connect the proxy controller to USB Type-C ConnEx.
-4. Connect peripherals to USB Type-C ConnEx.
-5. Power on the SUT and log on to Windows.
-6. At an elevated Command prompt, run the CXSTRESS.CMD for 12 hours. .
+1. Connect the SUT to the port labeled as **J1** on USB Type-C ConnEx.
+1. Connect the proxy controller to USB Type-C ConnEx.
+1. Connect peripherals to USB Type-C ConnEx.
+1. Power on the SUT and log on to Windows.
+1. At an elevated Command prompt, run the CXSTRESS.CMD for 12 hours. .
 
     Terminate the script by pressing Ctrl-C.
 
-7. Perform the steps described in [FT Case 3: Charging and power delivery (PD)](#ft-case-3-charging-and-power-delivery-pd).
+1. Perform the steps described in [FT Case 3: Charging and power delivery (PD)](#ft-case-3-charging-and-power-delivery-pd).
 
 For configuration images related to step 2 -4, see [Get started...](#get-started-with-older-versions).
 
@@ -502,7 +502,7 @@ The following stress tests can be adapted from the SuperMUTT test documentation 
 | [Plug and Play (PnP)](type.md#st-case-3-plug-and-play) | Generates various PnP sequences. | System, Dock, Device |
 | [Device Topology](type.md#st-case-4-device-topology) | Tests a range of devices and topologies with the product. | System, Dock, Device |
 
-## Validating success or failure of the tests
+## Validating test results
 
 ### Confirming charging and power
 
@@ -513,15 +513,15 @@ The onboard LCD on the USB Type-C ConnEx displays power (volts, amps, and direct
 ### Confirming device addition on desktops
 
 1. Identify the USB host controller to which your device is connected.
-2. Make sure that the new device appears under the correct node in Device Manager.
-3. For USB 3.0 hubs connected to a USB 3.0 port, expect to see two hub devices: one enumerated at SuperSpeed and another at high speed.
+1. Make sure that the new device appears under the correct node in Device Manager.
+1. For USB 3.0 hubs connected to a USB 3.0 port, expect to see two hub devices: one enumerated at SuperSpeed and another at high speed.
 
 ### Confirm device removal on desktops
 
 1. Identify your device in Device Manager.
-2. Perform the test step to remove the device from the system.
-3. Confirm that the device is no longer present in Device Manager.
-4. For a USB 3.0 hub, check that both devices (SuperSpeed and companion hubs) are removed. Failure to remove a device in this case may be a device failure and should be investigated by all components involved to triage the appropriate root cause.
+1. Perform the test step to remove the device from the system.
+1. Confirm that the device is no longer present in Device Manager.
+1. For a USB 3.0 hub, check that both devices (SuperSpeed and companion hubs) are removed. Failure to remove a device in this case may be a device failure and should be investigated by all components involved to triage the appropriate root cause.
 
 ### Confirm device functionality
 
