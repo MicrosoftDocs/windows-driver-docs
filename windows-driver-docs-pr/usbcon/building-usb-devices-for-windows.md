@@ -1,7 +1,7 @@
 ---
 title: Overview of Building USB Devices for Windows
 description: This section provides links for manufacturers of USB peripheral devices.
-ms.date: 01/12/2024
+ms.date: 01/17/2024
 ---
 
 # Overview of building USB devices for Windows
@@ -28,7 +28,7 @@ An IHV can use Microsoft OS descriptors to store the information in firmware ins
 
    This document introduces Microsoft OS descriptors. It includes a specification for the OS string descriptor, extended properties OS feature descriptor, and OS feature descriptors formats.
 
-- [Microsoft OS 2.0 Descriptors Specification](./-microsoft-os-2-0-descriptors-specification.md)
+- [Microsoft OS 2.0 Descriptors Specification](microsoft-os-2-0-descriptors-specification.md)
 
    This document defines and describes the implementation of version 2.0 of the Microsoft OS Descriptors. The goal of Microsoft OS 2.0 Descriptors is to address the limitations and reliability problems with version 1.0 of OS descriptors and enable new Windows-specific functionality for USB devices.
 
