@@ -33,7 +33,7 @@ This page also lists the IddCx version (and **IddCxGetVersion** value) shipped w
 
 | Build number | Release codename | Release name         | IddCx version | IddCxGetVersion returned |
 | ------------ | ---------------- | -------------------- | ------------- | ------------------------ |
-| TBD          | SV3              | Windows 11 22H2 Sept Update | 1.10          | 0x1A00 |
+| 22621        | n/a              | Windows 11 23H2      | 1.10          | 0x1A00 |
 | 22621        | SV2              | Windows 11 22H2      | 1.9           | 0x1900 |
 | 22000        | SV1              | Windows 11 21H2      | 1.8           | 0x1800 |
 
