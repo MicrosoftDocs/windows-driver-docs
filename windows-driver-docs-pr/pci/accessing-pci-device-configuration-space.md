@@ -6,7 +6,7 @@ keywords:
 - configuration space WDK buses
 - IRP_MN_READ_CONFIG
 - IRP_MN_WRITE_CONFIG
-ms.date: 03/03/2023
+ms.date: 01/22/2024
 ---
 
 # Accessing PCI Device Configuration Space
@@ -19,7 +19,7 @@ Some operations on a peripheral component interconnect (PCI) device are reserved
 -   The configuration I/O request packets (IRPs), [**IRP\_MN\_READ\_CONFIG**](../kernel/irp-mn-read-config.md) and [**IRP\_MN\_WRITE\_CONFIG**](../kernel/irp-mn-write-config.md)
 
 >[!NOTE]
->Starting with Windows 10, 2004, if a device has a Secure Devices (SDEV) ACPI table and Virtualization-based security enabled, restrictions are placed on unsupported methods for accessing PCI device configuration space. If a driver or process attempts to read or manipulate PCI device configuration space using a method that is not listed above, the access will be blocked and will result in a system bug check.
+>Starting with Windows 10, version 2004, if a device has a Secure Devices (SDEV) ACPI table and Virtualization-based security enabled, restrictions are placed on unsupported methods for accessing PCI device configuration space. If a driver or process attempts to read or manipulate PCI device configuration space using a method that is not listed above, the access will be blocked and will result in a system bug check.
 
 The Windows XP and Windows Server 2003 and later operating systems have exclusive control over the configuration space header, as defined by the *PCI Local Bus* specification, as well as all of the capabilities in the capabilities linked list. Drivers must not attempt to modify these registers.
 
@@ -31,3 +31,9 @@ PCI Express and PCI-X mode 2 support an extended PCI device configuration space 
 
 In addition, the system should support memory-mapped configuration space accesses. This is by defining an MCFG table in the system BIOS/firmware. Windows Vista and Windows Server 2008 and later operating systems automatically support memory-mapped configuration space accesses.
 
+>[!WARNING]
+>[**HalGetBusDataByOffset**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-halgetbusdatabyoffset) and [**HalSetBusDataByOffset**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-halsetbusdatabyoffset) are provided for backward compatibility but should be used only if using the above two methods is not possible.
+
+## See also
+
+[Accessing Device Configuration Space](../kernel/accessing-device-configuration-space.md)
