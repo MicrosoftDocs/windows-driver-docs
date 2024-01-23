@@ -10,6 +10,8 @@
   href: building-a-netadaptercx-client-driver.md
 - name: "INF files for NetAdapterCx client drivers"
   href: inf-files-for-netadaptercx-client-drivers.md
+- name: "User-mode NetAdapterCx"
+  href: user-mode-netcx.md
 - name: "Managing the lifetime of objects in NetAdapterCx"
   items:
   - name: "Summary of NetAdapterCx objects"
