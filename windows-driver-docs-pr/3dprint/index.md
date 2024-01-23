@@ -1,5 +1,5 @@
 ---
-title: 3D printer driver design guide
+title: 3D Printer Driver Design Guide
 description: This section provides information about 3D printer drivers in Windows 10.
 ms.date: 03/17/2023
 ---
