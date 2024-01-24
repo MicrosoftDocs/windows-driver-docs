@@ -1,5 +1,5 @@
 ---
-title: Using WBDI with Non-PnP Devices or Proprietary Stacks
+title: Using WBDI With Non-PnP Devices or Proprietary Stacks
 description: Using WBDI with Non-PnP Devices or Proprietary Stacks
 keywords:
 - biometric drivers WDK , legacy
