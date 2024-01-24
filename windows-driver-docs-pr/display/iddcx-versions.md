@@ -17,7 +17,7 @@ This page also lists the IddCx version (and **IddCxGetVersion** value) shipped w
 
 | IddCx version | IddCxGetVersion returned | Changes from previous public version |
 | ------------- | ------------------------ | ------------------------------------ |
-| [1.10](iddcx1.10-updates.md) | 0x1A80 | Add HDR10 and SDR Wide Color Gamut (WCG) support - Windows 2024 |
+| [1.10](iddcx1.10-updates.md) | 0x1A80 | Add HDR10, SDR Wide Color Gamut (WCG) and runtime power management support - Windows 2024 |
 | [1.10](iddcx1.10-updates.md) | 0x1A00 | Add HDR10 and SDR Wide Color Gamut (WCG) support - Windows 11 23H2 |
 | [1.9](iddcx1.9-updates.md) | 0x1900 | Add [**IddCxSetRealtimeGPUPriority**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxsetrealtimegpupriority); disallow UMDF process pooling |
 | [1.8](iddcx1.8-updates.md) | 0x1800 | Add [**IDDCX_ADAPTER_FLAGS_PREFER_PRECISE_PRESENT_REGIONS**](/windows-hardware/drivers/ddi/iddcx/ne-iddcx-iddcx_adapter_flags) |
