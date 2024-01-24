@@ -1,5 +1,5 @@
 ---
-title: Interaction of battery class and miniclass drivers
+title: Interaction of Battery Class and Miniclass Drivers
 description: Learn about the interaction between battery class and miniclass drivers in a computer system and how they work together to manage battery usage.
 keywords:
 - battery miniclass drivers WDK, battery class driver interaction
