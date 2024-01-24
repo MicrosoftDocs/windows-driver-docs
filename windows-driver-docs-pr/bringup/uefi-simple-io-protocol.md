@@ -1,5 +1,5 @@
 ---
-title: UEFI simple I/O protocol
+title: UEFI Simple I/O Protocol
 description: UEFI simple I/O protocol
 ms.date: 03/23/2023
 ---

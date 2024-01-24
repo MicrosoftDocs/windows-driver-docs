@@ -1,5 +1,5 @@
 ---
-title: Secure boot and device encryption overview
+title: Secure Boot and Device Encryption Overview
 description: This topic provides an overview of secure boot and device encryption functionality, with emphasis on key OEM requirements and considerations.
 ms.date: 03/23/2023
 ---

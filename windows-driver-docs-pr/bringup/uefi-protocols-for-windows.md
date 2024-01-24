@@ -1,5 +1,5 @@
 ---
-title: UEFI protocols for Windows
+title: UEFI Protocols for Windows
 description: This section describes UEFI protocols that are defined by Windows.
 ms.date: 03/23/2023
 ---

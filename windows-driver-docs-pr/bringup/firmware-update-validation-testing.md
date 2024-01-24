@@ -1,5 +1,5 @@
 ---
-title: Firmware update validation testing
+title: Firmware Update Validation Testing
 description: Provides information about firmware update validation testing.
 ms.date: 03/23/2023
 ---

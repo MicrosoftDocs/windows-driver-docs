@@ -1,5 +1,5 @@
 ---
-title: Certify and sign the update package
+title: Certify and Sign the Update Package
 description: The firmware update is delivered as a driver package and must go through the same verification and signing processes as a regular driver package.
 ms.date: 03/22/2023
 ---

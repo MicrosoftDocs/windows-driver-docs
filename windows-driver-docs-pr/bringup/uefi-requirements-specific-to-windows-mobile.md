@@ -1,5 +1,5 @@
 ---
-title: UEFI requirements for Windows 10 Mobile
+title: UEFI Requirements for Windows 10 Mobile
 description: In addition to UEFI requirements that apply to all Windows editions, Windows 10 Mobile devices must meet additional requirements described in this topic.
 ms.date: 03/23/2023
 ---

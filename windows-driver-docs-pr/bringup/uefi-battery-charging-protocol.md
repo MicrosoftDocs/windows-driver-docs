@@ -1,5 +1,5 @@
 ---
-title: UEFI battery charging protocol
+title: UEFI Battery Charging Protocol
 description: The UEFI battery charging protocol is used by the Microsoft UEFI battery charging application to communicate with the UEFI battery charging driver. 
 ms.date: 03/23/2023
 ---

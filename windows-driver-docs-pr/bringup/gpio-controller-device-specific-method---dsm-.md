@@ -1,5 +1,5 @@
 ---
-title: GPIO controller Device-Specific Method (_DSM)
+title: GPIO Controller Device-Specific Method (_DSM)
 description: To support a variety of device-class-specific communications between the general-purpose I/O (GPIO) driver stack in Windows and the platform firmware, Microsoft defines a Device-Specific Method (_DSM) that can be included under a GPIO controller in the ACPI namespace.
 ms.date: 03/23/2023
 ---

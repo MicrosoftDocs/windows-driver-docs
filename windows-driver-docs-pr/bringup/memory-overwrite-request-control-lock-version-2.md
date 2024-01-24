@@ -1,5 +1,5 @@
 ---
-title: Memory Overwrite Request Control (MOR) LOCK version 2
+title: Memory Overwrite Request Control (MOR) LOCK Version 2
 description: Provides information about Memory Overwrite Request Control (MOR) LOCK version 2.
 ms.date: 03/23/2023
 ---

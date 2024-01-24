@@ -1,5 +1,5 @@
 ---
-title: Authoring an update driver package
+title: Authoring an Update Driver Package
 description: This topic provides information about authoring an update driver package and provides example INF file settings and configurations.
 ms.date: 09/21/2023
 ---

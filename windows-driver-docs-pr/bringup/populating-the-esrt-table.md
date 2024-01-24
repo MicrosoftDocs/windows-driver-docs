@@ -1,5 +1,5 @@
 ---
-title: Populate the ESRT table
+title: Populate the ESRT Table
 description: The EFI System Resource Table (ESRT) provides a mechanism for identifying integrated device and system firmware resources for the purposes of targeting firmware updates to those resources.
 ms.date: 03/23/2023
 ---

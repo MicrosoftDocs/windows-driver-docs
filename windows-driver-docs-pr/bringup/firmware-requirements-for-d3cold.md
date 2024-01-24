@@ -1,5 +1,5 @@
 ---
-title: Firmware requirements for D3cold
+title: Firmware Requirements for D3cold
 description: Starting with Windows 8, devices can enter the D3cold power sub-state even when the system stays in the S0 power state.
 ms.date: 03/23/2023
 ---

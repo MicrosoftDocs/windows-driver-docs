@@ -1,5 +1,5 @@
 ---
-title: Customize firmware for different geographic regions
+title: Customize Firmware for Different Geographic Regions
 description: Systems are sold in various markets and geographies worldwide. To enable this, OEMs must define unique GUID values for devices/system firmware that may require region-specific firmware.
 ms.date: 03/22/2023
 ---

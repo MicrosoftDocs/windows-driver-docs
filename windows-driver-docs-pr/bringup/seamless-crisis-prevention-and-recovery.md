@@ -1,5 +1,5 @@
 ---
-title: Seamless crisis prevention and recovery
+title: Seamless Crisis Prevention and Recovery
 description: Discussion of firmware update failure prevention and recovery.
 ms.date: 11/13/2023
 ---

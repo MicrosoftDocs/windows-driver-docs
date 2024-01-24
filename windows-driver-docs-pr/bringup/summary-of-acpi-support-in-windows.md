@@ -1,5 +1,5 @@
 ---
-title: Summary of ACPI support in Windows
+title: Summary of ACPI Support in Windows
 description: This article summarizes the subset of ACPI 5.0 features that are required to support Windows on SoC-based platforms.
 ms.date: 03/23/2023
 ---

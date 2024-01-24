@@ -1,5 +1,5 @@
 ---
-title: EFI_RNG_ALGORITHM_LIST structure
+title: EFI_RNG_ALGORITHM_LIST Structure
 description: This data structure contains a list of the supported Random Number Generation (RNG) algorithms.
 keywords:
 - EFI_RNG_ALGORITHM_LIST structure

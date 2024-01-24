@@ -1,5 +1,5 @@
 ---
-title: Switch from legacy MBR disk to GPT disk with Windows 10
+title: Switch From Legacy MBR Disk to GPT Disk With Windows 10
 description: Provides guidance to enable a seamless upgrade and enable the user to leverage new and improved security features of Windows 10.
 ms.date: 03/23/2023
 ---

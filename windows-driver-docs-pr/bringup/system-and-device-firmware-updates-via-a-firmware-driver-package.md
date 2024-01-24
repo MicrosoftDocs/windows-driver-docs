@@ -1,5 +1,5 @@
 ---
-title: System and device firmware updates via a firmware driver package
+title: System and Device Firmware Updates via a Firmware Driver Package
 description: Describes deploying a firmware update using a firmware driver package.
 ms.date: 03/23/2023
 ---

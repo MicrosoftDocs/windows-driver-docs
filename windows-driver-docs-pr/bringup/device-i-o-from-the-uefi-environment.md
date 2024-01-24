@@ -1,5 +1,5 @@
 ---
-title: Device I/O from the UEFI environment
+title: Device I/O From the UEFI Environment
 description: When the Windows OS loader calls the UpdateCapsule function, each capsule contained in the CapsuleHeaderArray is executed.
 ms.date: 03/22/2023
 ---
