@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0x70 SESSION4_INITIALIZATION_FAILED
+title: Bug Check 0X70 SESSION4_INITIALIZATION_FAILED
 description: The SESSION4_INITIALIZATION_FAILED bug check has a value of 0x00000070. This bug check indicates that the initialization of the Microsoft Windows operating system failed.
 keywords: ["Bug Check 0x70 SESSION4_INITIALIZATION_FAILED", "SESSION4_INITIALIZATION_FAILED"]
 ms.date: 05/23/2017

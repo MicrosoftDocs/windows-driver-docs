@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0x131 INVALID_EXTENDED_PROCESSOR_STATE
+title: Bug Check 0X131 INVALID_EXTENDED_PROCESSOR_STATE
 description: The INVALID_EXTENDED_PROCESSOR_STATE bug check has a value of 0x00000131. This indicates that an invalid combination of parameters was detected while saving or restoring extended processor state.
 keywords: ["Bug Check 0x131 INVALID_EXTENDED_PROCESSOR_STATE", "INVALID_EXTENDED_PROCESSOR_STATE"]
 ms.date: 05/23/2017

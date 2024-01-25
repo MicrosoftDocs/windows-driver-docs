@@ -1,5 +1,5 @@
 ---
-title: Bug check 0xA IRQL_NOT_LESS_OR_EQUAL
+title: Bug Check 0xA IRQL_NOT_LESS_OR_EQUAL
 description: The IRQL_NOT_LESS_OR_EQUAL bug check has a value of 0x0000000A.
 keywords: ["Bug Check 0xA IRQL_NOT_LESS_OR_EQUAL", "IRQL_NOT_LESS_OR_EQUAL"]
 ms.date: 12/08/2022

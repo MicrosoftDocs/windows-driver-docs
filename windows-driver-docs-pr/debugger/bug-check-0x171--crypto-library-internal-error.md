@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0x171 CRYPTO_LIBRARY_INTERNAL_ERROR
+title: Bug Check 0X171 CRYPTO_LIBRARY_INTERNAL_ERROR
 description: The CRYPTO_LIBRARY_INTERNAL_ERROR bug check has a value of 0x00000171. It indicates that an internal error in the crypto libraries occurred.
 keywords: ["Bug Check 0x171 CRYPTO_LIBRARY_INTERNAL_ERROR", "CRYPTO_LIBRARY_INTERNAL_ERROR"]
 ms.date: 02/16/2022

@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0x123 CRYPTO_SELF_TEST_FAILURE
+title: Bug Check 0X123 CRYPTO_SELF_TEST_FAILURE
 description: The CRYPTO_SELF_TEST_FAILURE bug check has a value of 0x00000123. This indicates that the cryptographic subsystem failed a mandatory algorithm self-test during bootstrap.
 keywords: ["Bug Check 0x123 CRYPTO_SELF_TEST_FAILURE", "CRYPTO_SELF_TEST_FAILURE"]
 ms.date: 01/30/2019

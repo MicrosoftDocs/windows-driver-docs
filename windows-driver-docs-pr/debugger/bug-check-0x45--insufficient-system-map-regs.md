@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0x45 INSUFFICIENT_SYSTEM_MAP_REGS
+title: Bug Check 0X45 INSUFFICIENT_SYSTEM_MAP_REGS
 description: The INSUFFICIENT_SYSTEM_MAP_REGS bug check has a value of 0x00000045.This bug check appears very infrequently.
 keywords: ["Bug Check 0x45 INSUFFICIENT_SYSTEM_MAP_REGS", "INSUFFICIENT_SYSTEM_MAP_REGS"]
 ms.date: 05/23/2017

@@ -1,5 +1,5 @@
 ---
-title: Find a memory leak
+title: Find a Memory Leak
 description: Provides information about how to find memory leak.
 keywords: ["memory leak", "memory leak, debugging"]
 ms.date: 12/21/2023

@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0x39 SYSTEM_EXIT_OWNED_MUTEX
+title: Bug Check 0X39 SYSTEM_EXIT_OWNED_MUTEX
 description: The SYSTEM_EXIT_OWNED_MUTEX bug check has a value of 0x00000039. This indicates that the worker routine returned without releasing the mutex object that it owned.
 keywords: ["Bug Check 0x39 SYSTEM_EXIT_OWNED_MUTEX", "SYSTEM_EXIT_OWNED_MUTEX"]
 ms.date: 05/23/2017

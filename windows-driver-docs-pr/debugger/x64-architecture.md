@@ -1,5 +1,5 @@
 ---
-title: x64 Architecture
+title: X64 Architecture
 description: The x64 architecture is a backwards-compatible extension of x86. It provides a legacy 32-bit mode, which is identical to x86, and a new 64-bit mode.
 keywords: ["x64 processor, architecture", "registers, on an x64 processor", "x64 processor, registers"]
 ms.date: 12/21/2023

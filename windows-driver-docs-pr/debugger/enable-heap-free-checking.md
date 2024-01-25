@@ -1,5 +1,5 @@
 ---
-title: Enable heap free checking
+title: Enable Heap Free Checking
 description: Enable heap free checking
 keywords: ["Enable heap free checking (global flag)"]
 ms.date: 05/23/2017

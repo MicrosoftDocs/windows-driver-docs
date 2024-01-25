@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0x81 SPIN_LOCK_INIT_FAILURE
+title: Bug Check 0X81 SPIN_LOCK_INIT_FAILURE
 description: The SPIN_LOCK_INIT_FAILURE bug check has a value of 0x00000081.This bug check appears very infrequently.
 keywords: ["Bug Check 0x81 SPIN_LOCK_INIT_FAILURE", "SPIN_LOCK_INIT_FAILURE"]
 ms.date: 05/23/2017

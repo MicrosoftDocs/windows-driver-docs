@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0x73 CONFIG_LIST_FAILED
+title: Bug Check 0X73 CONFIG_LIST_FAILED
 description: The CONFIG_LIST_FAILED bug check has a value of 0x00000073. This bug check indicates that one of the top-level registry keys, also known as core system hives, cannot be linked in the registry tree.
 keywords: ["Bug Check 0x73 CONFIG_LIST_FAILED", "CONFIG_LIST_FAILED"]
 ms.date: 05/23/2017

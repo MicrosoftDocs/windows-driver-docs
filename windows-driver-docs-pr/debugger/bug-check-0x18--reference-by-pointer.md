@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0x18 REFERENCE_BY_POINTER
+title: Bug Check 0X18 REFERENCE_BY_POINTER
 description: The REFERENCE_BY_POINTER bug check has a value of 0x00000018. This indicates that the reference count of an object is illegal for the current state of the object.
 keywords: ["Bug Check 0x18 REFERENCE_BY_POINTER", "REFERENCE_BY_POINTER"]
 ms.date: 05/23/2017

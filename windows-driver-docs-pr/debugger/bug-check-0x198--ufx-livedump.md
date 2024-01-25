@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0x198 UFX_LIVEDUMP
+title: Bug Check 0X198 UFX_LIVEDUMP
 description: The UFX_LIVEDUMP live dump has a value of 0x00000198. This indicates that a UFX live dump occurred.
 keywords: ["Bug Check 0x198 UFX_LIVEDUMP", "UFX_LIVEDUMP"]
 ms.date: 05/23/2017

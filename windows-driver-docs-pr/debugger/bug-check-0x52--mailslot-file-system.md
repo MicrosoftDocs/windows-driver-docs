@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0x52 MAILSLOT_FILE_SYSTEM
+title: Bug Check 0X52 MAILSLOT_FILE_SYSTEM
 description: The MAILSLOT_FILE_SYSTEM bug check has a value of 0x00000052.This bug check appears very infrequently.
 keywords: ["Bug Check 0x52 MAILSLOT_FILE_SYSTEM", "MAILSLOT_FILE_SYSTEM"]
 ms.date: 05/23/2017

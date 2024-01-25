@@ -1,5 +1,5 @@
 ---
-title: Load image using large pages if possible
+title: Load Image Using Large Pages if Possible
 description: Load image using large pages if possible
 keywords: ["Load image using large pages if possible (global flag)"]
 ms.date: 05/23/2017

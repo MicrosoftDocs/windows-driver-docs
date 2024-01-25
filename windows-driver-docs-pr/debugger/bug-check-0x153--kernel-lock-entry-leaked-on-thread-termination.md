@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0x153 KERNEL_LOCK_ENTRY_LEAKED_ON_THREAD_TERMINATION
+title: Bug Check 0X153 KERNEL_LOCK_ENTRY_LEAKED_ON_THREAD_TERMINATION
 description: The KERNEL_LOCK_ENTRY_LEAKED_ON_THREAD_TERMINATION bug check has a value of 0x00000153. This indicates that a thread was terminated before it had freed all its AutoBoost lock entries.
 keywords: ["Bug Check 0x153 KERNEL_LOCK_ENTRY_LEAKED_ON_THREAD_TERMINATION", "KERNEL_LOCK_ENTRY_LEAKED_ON_THREAD_TERMINATION"]
 ms.date: 05/23/2017

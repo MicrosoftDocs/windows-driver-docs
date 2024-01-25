@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0x128 WORKER_THREAD_RETURNED_WITH_BAD_IO_PRIORITY
+title: Bug Check 0X128 WORKER_THREAD_RETURNED_WITH_BAD_IO_PRIORITY
 description: The WORKER_THREAD_RETURNED_WITH_BAD_IO_PRIORITY bug check has a value of 0x00000128. This indicates that a worker threads IOPriority was wrongly modified by the called worker routine.
 keywords: ["Bug Check 0x128 WORKER_THREAD_RETURNED_WITH_BAD_IO_PRIORITY", "WORKER_THREAD_RETURNED_WITH_BAD_IO_PRIORITY"]
 ms.date: 05/23/2017

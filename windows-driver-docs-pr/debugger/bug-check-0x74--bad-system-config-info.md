@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0x74 BAD_SYSTEM_CONFIG_INFO
+title: Bug Check 0X74 BAD_SYSTEM_CONFIG_INFO
 description: The BAD_SYSTEM_CONFIG_INFO bug check has a value of 0x00000074. This bug check indicates that there is an error in the registry.
 keywords: ["Bug Check 0x74 BAD_SYSTEM_CONFIG_INFO", "BAD_SYSTEM_CONFIG_INFO"]
 ms.date: 01/29/2021

@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0x187 VIDEO_DWMINIT_TIMEOUT_FALLBACK_BDD
+title: Bug Check 0X187 VIDEO_DWMINIT_TIMEOUT_FALLBACK_BDD
 description: The VIDEO_DWMINIT_TIMEOUT_FALLBACK_BDD live dump has a value of 0x00000187. This indicates that video fell back to BDD rather than using the IHV driver. This always generates a live dump.
 keywords: ["Bug Check 0x187 VIDEO_DWMINIT_TIMEOUT_FALLBACK_BDD", "VIDEO_DWMINIT_TIMEOUT_FALLBACK_BDD"]
 ms.date: 05/23/2017

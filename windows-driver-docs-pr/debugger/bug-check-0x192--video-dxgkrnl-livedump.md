@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0x193 VIDEO_DXGKRNL_LIVEDUMP
+title: Bug Check 0X193 VIDEO_DXGKRNL_LIVEDUMP
 description: The VIDEO_DXGKRNL_LIVEDUMP live dump has a value of 0x00000193. This indicates a livedump triggered by dxgkrnl occurred.
 keywords: ["Bug Check 0x193 VIDEO_DXGKRNL_LIVEDUMP", "VIDEO_DXGKRNL_LIVEDUMP"]
 ms.date: 05/23/2017

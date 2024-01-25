@@ -1,5 +1,5 @@
 ---
-title: Disable stack extension
+title: Disable Stack Extension
 description: Disable stack extension
 keywords: ["Disable stack extension (global flag)"]
 ms.date: 05/23/2017

@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0x197 WIN32K_SECURITY_FAILURE
+title: Bug Check 0X197 WIN32K_SECURITY_FAILURE
 description: The WIN32K_SECURITY_FAILURE bug check has a value of 0x00000197. This indicates a security failure was detected in win32k.
 keywords: ["Bug Check 0x197 WIN32K_SECURITY_FAILURE", "WIN32K_SECURITY_FAILURE"]
 ms.date: 05/23/2017

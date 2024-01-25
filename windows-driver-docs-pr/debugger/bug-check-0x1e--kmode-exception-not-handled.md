@@ -1,5 +1,5 @@
 ---
-title: Bug check 0x1E KMODE_EXCEPTION_NOT_HANDLED
+title: Bug Check 0x1E KMODE_EXCEPTION_NOT_HANDLED
 description: The 0x0000001E KMODE_EXCEPTION_NOT_HANDLED bug check indicates that a kernel-mode program generated an exception the error handler didn't catch.
 keywords: ["Bug check 0x1E KMODE_EXCEPTION_NOT_HANDLED", "KMODE_EXCEPTION_NOT_HANDLED"]
 ms.date: 12/08/2022

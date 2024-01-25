@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0x24 NTFS_FILE_SYSTEM
+title: Bug Check 0X24 NTFS_FILE_SYSTEM
 description: The NTFS_FILE_SYSTEM bug check has a value of 0x00000024. This indicates a problem occurred in ntfs.sys, the driver file that allows the system to read and write to NTFS drives.
 keywords: ["Bug Check 0x24 NTFS_FILE_SYSTEM", "NTFS_FILE_SYSTEM"]
 ms.date: 05/23/2017

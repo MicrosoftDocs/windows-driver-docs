@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0x85 SETUP_FAILURE
+title: Bug Check 0X85 SETUP_FAILURE
 description: The SETUP_FAILURE bug check has a value of 0x00000085. This bug check indicates that a fatal error occurred during setup.
 keywords: ["Bug Check 0x85 SETUP_FAILURE", "SETUP_FAILURE"]
 ms.date: 05/23/2017

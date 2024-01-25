@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0x113 VIDEO_DXGKRNL_FATAL_ERROR
+title: Bug Check 0X113 VIDEO_DXGKRNL_FATAL_ERROR
 description: The VIDEO_DXGKRNL_FATAL_ERROR bug check has a value of 0x00000113 that indicates that the Microsoft DirectX graphics kernel subsystem has detected a violation.
 keywords: ["Bug Check 0x113 VIDEO_DXGKRNL_FATAL_ERROR", "VIDEO_DXGKRNL_FATAL_ERROR"]
 ms.date: 05/23/2017

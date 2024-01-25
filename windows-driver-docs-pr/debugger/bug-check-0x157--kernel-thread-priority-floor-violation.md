@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0x157 KERNEL_THREAD_PRIORITY_FLOOR_VIOLATION
+title: Bug Check 0X157 KERNEL_THREAD_PRIORITY_FLOOR_VIOLATION
 description: The ATTEMPTED_SWITCH_FROM_DPC bug check has a value of 0x00000157. This indicates that an illegal operation was attempted on the priority floor of a particular thread.
 keywords: ["Bug Check 0x157 KERNEL_THREAD_PRIORITY_FLOOR_VIOLATION", "KERNEL_THREAD_PRIORITY_FLOOR_VIOLATION"]
 ms.date: 05/23/2017

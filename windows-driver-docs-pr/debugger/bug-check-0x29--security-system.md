@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0x29 SECURITY_SYSTEM
+title: Bug Check 0X29 SECURITY_SYSTEM
 description: The SECURITY_SYSTEM bug check has a value of 0x00000029.This bug check appears very infrequently.
 keywords: ["Bug Check 0x29 SECURITY_SYSTEM", "SECURITY_SYSTEM"]
 ms.date: 05/23/2017

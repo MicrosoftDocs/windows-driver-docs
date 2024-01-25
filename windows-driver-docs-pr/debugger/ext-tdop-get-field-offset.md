@@ -1,5 +1,5 @@
 ---
-title: EXT\_TDOP\_GET\_FIELD\_OFFSET
+title: EXT_TDOP_GET_FIELD_OFFSET
 description: The EXT\_TDOP\_GET\_FIELD\_OFFSET sub-operation of the DEBUG\_REQUEST\_EXT\_TYPED\_DATA\_ANSI Request operation returns the offset of a member within a structure.
 keywords: ["EXT_TDOP_GET_FIELD_OFFSET Windows Debugging"]
 topic_type:

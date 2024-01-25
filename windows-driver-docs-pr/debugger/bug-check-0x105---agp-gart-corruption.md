@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0x105 AGP_GART_CORRUPTION
+title: Bug Check 0X105 AGP_GART_CORRUPTION
 description: The AGP_GART_CORRUPTION bug check has a value of 0x00000105. This indicates that the Graphics Aperture Remapping Table (GART) is corrupt.
 keywords: ["Bug Check 0x105 AGP_GART_CORRUPTION", "AGP_GART_CORRUPTION"]
 ms.date: 05/23/2017

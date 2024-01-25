@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0x69 IO1_INITIALIZATION_FAILED
+title: Bug Check 0X69 IO1_INITIALIZATION_FAILED
 description: The IO1_INITIALIZATION_FAILED bug check has a value of 0x00000069. This bug check indicates that the initialization of the I/O system failed for some reason.
 keywords: ["Bug Check 0x69 IO1_INITIALIZATION_FAILED", "IO1_INITIALIZATION_FAILED"]
 ms.date: 05/23/2017

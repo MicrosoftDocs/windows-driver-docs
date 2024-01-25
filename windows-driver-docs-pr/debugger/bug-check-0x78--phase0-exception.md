@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0x78 PHASE0_EXCEPTION
+title: Bug Check 0X78 PHASE0_EXCEPTION
 description: The PHASE0_EXCEPTION bug check has a value of 0x00000078.This bug check occurs when an unexpected break is encountered during HAL initialization.
 keywords: ["Bug Check 0x78 PHASE0_EXCEPTION", "PHASE0_EXCEPTION"]
 ms.date: 05/23/2017

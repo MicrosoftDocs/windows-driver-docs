@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0x57 XNS_INTERNAL_ERROR
+title: Bug Check 0X57 XNS_INTERNAL_ERROR
 description: The XNS_INTERNAL_ERROR bug check has a value of 0x00000057.This bug check appears very infrequently.
 keywords: ["Bug Check 0x57 XNS_INTERNAL_ERROR", "XNS_INTERNAL_ERROR"]
 ms.date: 05/23/2017

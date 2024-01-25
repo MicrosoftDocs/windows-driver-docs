@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0x36 DEVICE_REFERENCE_COUNT_NOT_ZERO
+title: Bug Check 0X36 DEVICE_REFERENCE_COUNT_NOT_ZERO
 description: The DEVICE_REFERENCE_COUNT_NOT_ZERO bug check has a value of 0x00000036. This indicates that a driver attempted to delete a device object that still had a positive reference count.
 keywords: ["Bug Check 0x36 DEVICE_REFERENCE_COUNT_NOT_ZERO", "DEVICE_REFERENCE_COUNT_NOT_ZERO"]
 ms.date: 05/23/2017

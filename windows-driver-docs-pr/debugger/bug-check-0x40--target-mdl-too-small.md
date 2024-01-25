@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0x40 TARGET_MDL_TOO_SMALL
+title: Bug Check 0X40 TARGET_MDL_TOO_SMALL
 description: The TARGET_MDL_TOO_SMALL bug check has a value of 0x00000040. This indicates that a driver has improperly used IoBuildPartialMdl.
 keywords: ["Bug Check 0x40 TARGET_MDL_TOO_SMALL", "TARGET_MDL_TOO_SMALL"]
 ms.date: 05/23/2017

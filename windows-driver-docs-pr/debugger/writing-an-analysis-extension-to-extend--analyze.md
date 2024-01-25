@@ -1,5 +1,5 @@
 ---
-title: Writing an Analysis Extension Plugin to Extend analyze
+title: Writing an Analysis Extension Plugin to Extend Analyze
 description: You can extend the capabilities of the analyze debugger command by writing an analysis extension plugin.
 ms.date: 11/28/2017
 ---

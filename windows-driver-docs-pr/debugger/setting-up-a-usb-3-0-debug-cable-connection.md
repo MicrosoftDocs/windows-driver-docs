@@ -1,5 +1,5 @@
 ---
-title: Set up kernel-mode debugging over a USB 3.0 cable
+title: Set Up Kernel-Mode Debugging Over a USB 3.0 Cable
 description: Learn how to manually set up kernel-mode debugging over a USB 3.0 cable.
 ms.date: 12/11/2023
 ---

@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0x50 PAGE_FAULT_IN_NONPAGED_AREA
+title: Bug Check 0X50 PAGE_FAULT_IN_NONPAGED_AREA
 description: The PAGE_FAULT_IN_NONPAGED_AREA bug check has a value of 0x00000050. This indicates that invalid system memory has been referenced. 
 keywords: ["Bug Check 0x50 PAGE_FAULT_IN_NONPAGED_AREA", "PAGE_FAULT_IN_NONPAGED_AREA"]
 ms.date: 03/15/2022

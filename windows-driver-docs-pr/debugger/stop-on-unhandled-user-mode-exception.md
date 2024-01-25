@@ -1,5 +1,5 @@
 ---
-title: Stop on unhandled user-mode exception
+title: Stop on Unhandled User-Mode Exception
 description: Stop on unhandled user-mode exception
 ms.date: 11/28/2017
 ---

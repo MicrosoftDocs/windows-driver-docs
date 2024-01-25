@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0x28 CORRUPT_ACCESS_TOKEN
+title: Bug Check 0X28 CORRUPT_ACCESS_TOKEN
 description: The CORRUPT_ACCESS_TOKEN bug check has a value of 0x00000028.This bug check appears very infrequently.
 keywords: ["Bug Check 0x28 CORRUPT_ACCESS_TOKEN", "CORRUPT_ACCESS_TOKEN"]
 ms.date: 05/23/2017

@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0x56 INSTRUCTION_COHERENCY_EXCEPTION
+title: Bug Check 0X56 INSTRUCTION_COHERENCY_EXCEPTION
 description: The INSTRUCTION_COHERENCY_EXCEPTION bug check has a value of 0x00000056.This bug check appears very infrequently.
 keywords: ["Bug Check 0x56 INSTRUCTION_COHERENCY_EXCEPTION", "INSTRUCTION_COHERENCY_EXCEPTION"]
 ms.date: 05/23/2017

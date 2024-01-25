@@ -1,5 +1,5 @@
 ---
-title: Get started with Windows debugging
+title: Get Started with Windows Debugging
 description: Get started with debugging for Windows, and find resources to help you install tools and learn debugging techniques.
 ms.date: 12/20/2023
 ---

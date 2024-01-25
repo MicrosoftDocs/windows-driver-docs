@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0x97 BOUND_IMAGE_UNSUPPORTED
+title: Bug Check 0X97 BOUND_IMAGE_UNSUPPORTED
 description: The BOUND_IMAGE_UNSUPPORTED bug check has a value of 0x00000097.This bug check appears very infrequently.
 keywords: ["Bug Check 0x97 BOUND_IMAGE_UNSUPPORTED", "BOUND_IMAGE_UNSUPPORTED"]
 ms.date: 05/23/2017

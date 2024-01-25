@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0x46 DEREF_UNKNOWN_LOGON_SESSION
+title: Bug Check 0X46 DEREF_UNKNOWN_LOGON_SESSION
 description: The DEREF_UNKNOWN_LOGON_SESSION bug check has a value of 0x00000046.This bug check appears very infrequently.
 keywords: ["Bug Check 0x46 DEREF_UNKNOWN_LOGON_SESSION", "DEREF_UNKNOWN_LOGON_SESSION"]
 ms.date: 05/23/2017

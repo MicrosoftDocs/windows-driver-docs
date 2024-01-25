@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0x155 OS_DATA_TAMPERING
+title: Bug Check 0X155 OS_DATA_TAMPERING
 description: The OS_DATA_TAMPERING bug check has a value of 0x00000155.
 keywords: ["Bug Check 0x155 OS_DATA_TAMPERING", "OS_DATA_TAMPERING"]
 ms.date: 05/23/2017

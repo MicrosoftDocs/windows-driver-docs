@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0x166 CLUSTER_RESOURCE_CALL_TIMEOUT_LIVEDUMP
+title: Bug Check 0X166 CLUSTER_RESOURCE_CALL_TIMEOUT_LIVEDUMP
 description: The CLUSTER_RESOURCE_CALL_TIMEOUT_LIVEDUMP live dump has a value of 0x00000166. This indicates that a Cluster Resource call took longer than configured timeout.
 keywords: ["Bug Check 0x166 CLUSTER_RESOURCE_CALL_TIMEOUT_LIVEDUMP", "CLUSTER_RESOURCE_CALL_TIMEOUT_LIVEDUMP"]
 ms.date: 12/27/2018

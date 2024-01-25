@@ -1,5 +1,5 @@
 ---
-title: Bug check 0xEF CRITICAL_PROCESS_DIED
+title: Bug Check 0xEF CRITICAL_PROCESS_DIED
 description: Learn how the CRITICAL_PROCESS_DIED bug check has a value of 0x000000EF and indicates that a critical system process died.
 keywords: ["Bug Check 0xEF CRITICAL_PROCESS_DIED", "CRITICAL_PROCESS_DIED"]
 ms.date: 12/16/2022

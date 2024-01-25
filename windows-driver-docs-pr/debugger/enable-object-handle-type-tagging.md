@@ -1,5 +1,5 @@
 ---
-title: Enable object handle type tagging
+title: Enable Object Handle Type Tagging
 description: Enable object handle type tagging
 keywords: ["Enable object handle type tagging (global flag)"]
 ms.date: 05/23/2017

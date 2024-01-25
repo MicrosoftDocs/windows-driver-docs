@@ -1,5 +1,5 @@
 ---
-title: dbgerr002 Bad Pointer
+title: Dbgerr002 Bad Pointer
 description: dbgerr002 Bad Pointer
 keywords: ["dbgerr002", "Bad pointer (dbgerr002)"]
 ms.date: 05/23/2017

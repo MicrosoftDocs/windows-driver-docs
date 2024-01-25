@@ -1,5 +1,5 @@
 ---
-title: Maintain a list of objects for each type
+title: Maintain a List of Objects for Each Type
 description: Maintain a list of objects for each type
 keywords: ["Maintain a list of objects for each type (global flag)"]
 ms.date: 10/25/2018

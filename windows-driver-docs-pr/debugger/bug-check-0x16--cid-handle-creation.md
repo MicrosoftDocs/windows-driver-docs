@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0x16 CID_HANDLE_CREATION
+title: Bug Check 0X16 CID_HANDLE_CREATION
 description: The CID_HANDLE_CREATION bug check has a value of 0x00000016.This bug check appears very infrequently.
 keywords: ["Bug Check 0x16 CID_HANDLE_CREATION", "CID_HANDLE_CREATION"]
 ms.date: 05/23/2017

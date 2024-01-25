@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0x23 FAT_FILE_SYSTEM
+title: Bug Check 0X23 FAT_FILE_SYSTEM
 description: The FAT_FILE_SYSTEM bug check has a value of 0x00000023. This indicates that a problem occurred in the FAT file system.
 keywords: ["Bug Check 0x23 FAT_FILE_SYSTEM", "FAT_FILE_SYSTEM"]
 ms.date: 05/23/2017

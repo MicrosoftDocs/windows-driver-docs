@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0x92 UP_DRIVER_ON_MP_SYSTEM
+title: Bug Check 0X92 UP_DRIVER_ON_MP_SYSTEM
 description: The UP_DRIVER_ON_MP_SYSTEM bug check has a value of 0x00000092. This bug check indicates that a uniprocessor-only driver has been loaded on a multiprocessor system.
 keywords: ["Bug Check 0x92 UP_DRIVER_ON_MP_SYSTEM", "UP_DRIVER_ON_MP_SYSTEM"]
 ms.date: 05/23/2017

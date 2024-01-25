@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0x94 KERNEL_STACK_LOCKED_AT_EXIT
+title: Bug Check 0X94 KERNEL_STACK_LOCKED_AT_EXIT
 description: The KERNEL_STACK_LOCKED_AT_EXIT bug check has a value of 0x00000094. This bug check indicates that a thread exited while its kernel stack was marked as not swappable.
 keywords: ["Bug Check 0x94 KERNEL_STACK_LOCKED_AT_EXIT", "KERNEL_STACK_LOCKED_AT_EXIT"]
 ms.date: 05/23/2017

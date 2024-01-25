@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0x66 CACHE_INITIALIZATION_FAILED
+title: Bug Check 0X66 CACHE_INITIALIZATION_FAILED
 description: The CACHE_INITIALIZATION_FAILED bug check has a value of 0x00000066.This bug check appears very infrequently.
 keywords: ["Bug Check 0x66 CACHE_INITIALIZATION_FAILED", "CACHE_INITIALIZATION_FAILED"]
 ms.date: 05/23/2017

@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0x33 UNEXPECTED_INITIALIZATION_CALL
+title: Bug Check 0X33 UNEXPECTED_INITIALIZATION_CALL
 description: The UNEXPECTED_INITIALIZATION_CALL bug check has a value of 0x00000033.This bug check appears very infrequently.
 keywords: ["Bug Check 0x33 UNEXPECTED_INITIALIZATION_CALL", "UNEXPECTED_INITIALIZATION_CALL"]
 ms.date: 05/23/2017

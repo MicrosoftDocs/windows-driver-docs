@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0x55 DATA_COHERENCY_EXCEPTION
+title: Bug Check 0X55 DATA_COHERENCY_EXCEPTION
 description: The DATA_COHERENCY_EXCEPTION bug check has a value of 0x00000055.This bug check appears very infrequently.
 keywords: ["Bug Check 0x55 DATA_COHERENCY_EXCEPTION", "DATA_COHERENCY_EXCEPTION"]
 ms.date: 05/23/2017

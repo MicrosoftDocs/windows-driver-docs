@@ -1,5 +1,5 @@
 ---
-title: Enable bad handles detection
+title: Enable Bad Handles Detection
 description: Enable bad handles detection
 keywords: ["Enable bad handles detection (global flag)"]
 ms.date: 05/23/2017

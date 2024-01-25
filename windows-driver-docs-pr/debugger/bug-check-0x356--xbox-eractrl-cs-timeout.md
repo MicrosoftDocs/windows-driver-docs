@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0x356 XBOX_ERACTRL_CS_TIMEOUT 
+title: Bug Check 0X356 XBOX_ERACTRL_CS_TIMEOUT 
 description: The XBOX_ERACTRL_CS_TIMEOUT  bug check has a value of 0x00000356.
 keywords: ["Bug Check 0x356 XBOX_ERACTRL_CS_TIMEOUT", "XBOX_ERACTRL_CS_TIMEOUT"]
 ms.date: 07/02/2018

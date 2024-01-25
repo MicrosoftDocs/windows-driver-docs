@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0x4 INVALID_DATA_ACCESS_TRAP
+title: Bug Check 0X4 INVALID_DATA_ACCESS_TRAP
 description: The INVALID_DATA_ACCESS_TRAP bug check has a value of 0x00000004.This bug check appears very infrequently.
 keywords: ["Bug Check 0x4 INVALID_DATA_ACCESS_TRAP", "INVALID_DATA_ACCESS_TRAP"]
 ms.date: 05/23/2017

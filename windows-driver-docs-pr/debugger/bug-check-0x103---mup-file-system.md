@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0x103 MUP_FILE_SYSTEM
+title: Bug Check 0X103 MUP_FILE_SYSTEM
 description: The MUP_FILE_SYSTEM bug check has a value of 0x00000103.
 keywords: ["Bug Check 0x103 MUP_FILE_SYSTEM", "MUP_FILE_SYSTEM"]
 ms.date: 05/23/2017

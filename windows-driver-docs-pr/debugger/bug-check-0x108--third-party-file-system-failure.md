@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0x108 THIRD_PARTY_FILE_SYSTEM_FAILURE
+title: Bug Check 0X108 THIRD_PARTY_FILE_SYSTEM_FAILURE
 description: The THIRD_PARTY_FILE_SYSTEM_FAILURE bug check has a value of 0x00000108. This indicates that an unrecoverable problem has occurred in a third-party file system or file system filter.
 keywords: ["Bug Check 0x108 THIRD_PARTY_FILE_SYSTEM_FAILURE", "THIRD_PARTY_FILE_SYSTEM_FAILURE"]
 ms.date: 05/23/2017

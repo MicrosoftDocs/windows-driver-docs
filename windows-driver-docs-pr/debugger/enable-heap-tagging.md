@@ -1,5 +1,5 @@
 ---
-title: Enable heap tagging
+title: Enable Heap Tagging
 description: Enable heap tagging
 keywords: ["Enable heap tagging (global flag)"]
 ms.date: 05/23/2017

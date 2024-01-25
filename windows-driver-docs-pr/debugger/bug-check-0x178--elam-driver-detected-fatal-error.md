@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0x178 ELAM_DRIVER_DETECTED_FATAL_ERROR
+title: Bug Check 0X178 ELAM_DRIVER_DETECTED_FATAL_ERROR
 description: The ELAM_DRIVER_DETECTED_FATAL_ERROR bug check has a value of 0x00000178. This indicates that ELAM driver detected a fatal error.
 keywords: ["Bug Check 0x178 ELAM_DRIVER_DETECTED_FATAL_ERROR", "ELAM_DRIVER_DETECTED_FATAL_ERROR"]
 ms.date: 05/23/2017

@@ -1,5 +1,5 @@
 ---
-title: Bug check 0x7F UNEXPECTED_KERNEL_MODE_TRAP
+title: Bug Check 0x7F UNEXPECTED_KERNEL_MODE_TRAP
 description: Learn about the UNEXPECTED_KERNEL_MODE_TRAP bug check, value 0x0000007F. It indicates that the Intel CPU generated a trap that the kernel failed to catch.
 keywords: ["Bug Check 0x7F UNEXPECTED_KERNEL_MODE_TRAP", "UNEXPECTED_KERNEL_MODE_TRAP"]
 ms.date: 02/16/2022

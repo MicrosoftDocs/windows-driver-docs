@@ -1,5 +1,5 @@
 ---
-title: debugbaseeventcallbackswide
+title: DebugBaseEventCallbacksWide class
 description: The DebugBaseEventCallbacksWide class provides a base implementation of the IDebugEventCallbacksWide interface. 
 keywords: [DebugBaseEventCallbacksWide]
 ms.date: 01/10/2018

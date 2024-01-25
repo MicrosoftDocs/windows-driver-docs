@@ -1,5 +1,5 @@
 ---
-title: debugbaseeventcallbacks
+title: DebugBaseEventCallbacks class
 description: The DebugBaseEventCallbacks class provides a base implementation of the IDebugEventCallbacks interface. 
 keywords: [DebugBaseEventCallbacks]
 ms.date: 01/10/2018

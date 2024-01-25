@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0x62 OBJECT1_INITIALIZATION_FAILED
+title: Bug Check 0X62 OBJECT1_INITIALIZATION_FAILED
 description: The OBJECT1_INITIALIZATION_FAILED bug check has a value of 0x00000062.This bug check appears very infrequently.
 keywords: ["Bug Check 0x62 OBJECT1_INITIALIZATION_FAILED", "OBJECT1_INITIALIZATION_FAILED"]
 ms.date: 05/23/2017

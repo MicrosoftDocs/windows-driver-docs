@@ -1,5 +1,5 @@
 ---
-title: CTRL+\ (Debug Current Debugger)
+title: CTRL+ (Debug Current Debugger)
 description: The CTRL+\ key combination launches a new instance of CDB; this new debugger takes the current debugger as its target.
 keywords: ["CTRL+\ (Debug Current Debugger) Windows Debugging"]
 ms.date: 05/23/2017

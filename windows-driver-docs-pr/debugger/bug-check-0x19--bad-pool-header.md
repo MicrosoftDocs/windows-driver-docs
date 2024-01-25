@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0x19 BAD_POOL_HEADER
+title: Bug Check 0X19 BAD_POOL_HEADER
 description: The BAD_POOL_HEADER bug check has a value of 0x00000019. This indicates that a pool header is corrupt.
 keywords: ["Bug Check 0x19 BAD_POOL_HEADER", "BAD_POOL_HEADER"]
 ms.date: 12/07/2017

@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0x14 CREATE_DELETE_LOCK_NOT_LOCKED
+title: Bug Check 0X14 CREATE_DELETE_LOCK_NOT_LOCKED
 description: The CREATE_DELETE_LOCK_NOT_LOCKED bug check has a value of 0x00000014.This bug check appears very infrequently.
 keywords: ["Bug Check 0x14 CREATE_DELETE_LOCK_NOT_LOCKED", "CREATE_DELETE_LOCK_NOT_LOCKED"]
 ms.date: 05/23/2017

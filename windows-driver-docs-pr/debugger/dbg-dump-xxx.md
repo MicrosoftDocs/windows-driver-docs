@@ -1,5 +1,5 @@
 ---
-title: DBG\_DUMP\_XXX
+title: DBG_DUMP_XXX
 description: DBG\_DUMP\_XXX
 ms.date: 12/07/2017
 keywords: ["DBG_DUMP_XXX Windows Debugging"]

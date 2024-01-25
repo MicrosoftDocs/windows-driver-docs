@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0x80 NMI_HARDWARE_FAILURE
+title: Bug Check 0X80 NMI_HARDWARE_FAILURE
 description: The NMI_HARDWARE_FAILURE bug check has a value of 0x00000080. This bug check indicates that a hardware malfunction has occurred.
 keywords: ["Bug Check 0x80 NMI_HARDWARE_FAILURE", "NMI_HARDWARE_FAILURE"]
 ms.date: 05/23/2017

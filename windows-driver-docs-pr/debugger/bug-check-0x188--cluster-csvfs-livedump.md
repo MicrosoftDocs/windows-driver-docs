@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0x188 CLUSTER_CSVFS_LIVEDUMP
+title: Bug Check 0X188 CLUSTER_CSVFS_LIVEDUMP
 description: The CLUSTER_CSVFS_LIVEDUMP live dump has a value of 0x00000188. This indicates that CSVFS initiated this livedump to help debug an inconsistent state.
 keywords: ["Bug Check 0x188 CLUSTER_CSVFS_LIVEDUMP", "CLUSTER_CSVFS_LIVEDUMP"]
 ms.date: 05/23/2017
