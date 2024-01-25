@@ -1,5 +1,5 @@
 ---
-title: HD audio bus driver
+title: HD Audio Bus Driver
 description: HD audio bus driver
 keywords:
 - HD audio, Universal Audio Architecture

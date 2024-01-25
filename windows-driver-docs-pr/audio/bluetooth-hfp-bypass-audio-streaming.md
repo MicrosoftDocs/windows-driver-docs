@@ -1,5 +1,5 @@
 ---
-title: Bluetooth hands-free profile (HFP) bypass audio streaming
+title: Bluetooth Hands-Free Profile (HFP) Bypass Audio Streaming
 description: This article explains the operation and theory of Bluetooth hands-free profile (HFP) bypass audio streaming.
 ms.date: 07/27/2023
 ---

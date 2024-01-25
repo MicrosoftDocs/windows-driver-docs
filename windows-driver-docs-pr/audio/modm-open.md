@@ -1,5 +1,5 @@
 ---
-title: MODM_OPEN function (Windows Drivers)
+title: MODM_OPEN Function (Windows Drivers)
 description: Learn more about the MODM_OPEN function.
 keywords:
 - mmddk/modMessage

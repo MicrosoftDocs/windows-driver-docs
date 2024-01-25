@@ -1,5 +1,5 @@
 ---
-title: MODM_PAUSE function (Windows Drivers)
+title: MODM_PAUSE Function (Windows Drivers)
 description: Learn more about the MODM_PAUSE function.
 keywords:
 - mmddk/modMessage

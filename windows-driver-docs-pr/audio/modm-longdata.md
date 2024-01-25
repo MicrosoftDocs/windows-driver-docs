@@ -1,5 +1,5 @@
 ---
-title: MODM_LONGDATA function (Windows Drivers)
+title: MODM_LONGDATA Function (Windows Drivers)
 description: Learn more about the MODM_LONGDATA function.
 keywords:
 - mmddk/modMessage

@@ -1,5 +1,5 @@
 ---
-title: DRV_QUERYDEVNODE function (Windows Drivers)
+title: DRV_QUERYDEVNODE Function (Windows Drivers)
 description: Learn more about the DRV_QUERYDEVNODE function.
 keywords:
 - mmddk/xxxMessage

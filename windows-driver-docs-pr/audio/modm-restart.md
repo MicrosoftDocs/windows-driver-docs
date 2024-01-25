@@ -1,5 +1,5 @@
 ---
-title: MODM_RESTART function (Windows Drivers)
+title: MODM_RESTART Function (Windows Drivers)
 description: Learn more about the MODM_RESTART function.
 keywords:
 - mmddk/modMessage

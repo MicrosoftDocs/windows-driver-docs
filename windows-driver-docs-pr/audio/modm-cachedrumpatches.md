@@ -1,5 +1,5 @@
 ---
-title: MODM_CACHEDRUMPATCHES function (Windows Drivers)
+title: MODM_CACHEDRUMPATCHES Function (Windows Drivers)
 description: Learn more about the MODM_CACHEDRUMPATCHES function.
 keywords:
 - mmddk/modMessage

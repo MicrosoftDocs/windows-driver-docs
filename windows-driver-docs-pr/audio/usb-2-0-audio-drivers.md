@@ -1,5 +1,5 @@
 ---
-title: USB Audio 2.0 drivers
+title: USB Audio 2.0 Drivers
 description: A USB Audio 2.0 driver is shipped with Windows. This driver provides basic audio over USB functionality.
 ms.date: 12/27/2023
 ms.topic: article

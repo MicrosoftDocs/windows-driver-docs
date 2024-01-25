@@ -1,5 +1,5 @@
 ---
-title: MODM_GETVOLUME function (Windows Drivers)
+title: MODM_GETVOLUME Function (Windows Drivers)
 description: Learn more about the MODM_GETVOLUME function.
 keywords:
 - mmddk/modMessage

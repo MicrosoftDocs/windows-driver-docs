@@ -1,5 +1,5 @@
 ---
-title: ACX targets and driver synchronization
+title: ACX Targets and Driver Synchronization
 description: This topic provides a high level summary of the ACX targets and driver synchronization.
 ms.date: 09/29/2023
 ms.localizationpriority: medium

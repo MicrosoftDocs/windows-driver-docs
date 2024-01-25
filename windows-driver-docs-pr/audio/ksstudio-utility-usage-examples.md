@@ -1,5 +1,5 @@
 ---
-title: KsStudio - Usage examples
+title: KsStudio - Usage Examples
 description: This topic provides three usage examples for troubleshooting WDM audio issues using  the KSStudio utility.
 keywords:
 - KsStudio utility WDK audio

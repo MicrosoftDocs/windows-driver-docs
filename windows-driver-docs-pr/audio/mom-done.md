@@ -1,5 +1,5 @@
 ---
-title: MOM_DONE function (Windows Drivers)
+title: MOM_DONE Function (Windows Drivers)
 description: Learn more about the MOM_DONE function.
 keywords:
 - mmddk/modMessage

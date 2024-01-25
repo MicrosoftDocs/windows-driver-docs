@@ -1,5 +1,5 @@
 ---
-title: MODM_GETNUMDEVS function (Windows Drivers)
+title: MODM_GETNUMDEVS Function (Windows Drivers)
 description: Learn more about the MODM_GETNUMDEVS function.
 keywords:
 - mmddk/modMessage

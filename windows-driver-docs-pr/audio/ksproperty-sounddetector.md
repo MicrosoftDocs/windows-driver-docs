@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_SOUNDDETECTOR enumeration
+title: KSPROPERTY_SOUNDDETECTOR Enumeration
 description: The KSPROPERTY\_SOUNDDETECTOR enumeration defines constants that are used to register a filter for an audio capture device that also supports a detector.
 keywords: ["KSPROPERTY_SOUNDDETECTOR enumeration Audio Devices"]
 topic_type:

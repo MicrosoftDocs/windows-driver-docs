@@ -1,5 +1,5 @@
 ---
-title: IKeywordDetectorOemAdapter interface
+title: IKeywordDetectorOemAdapter Interface
 description: IKeywordDetectorOemAdapter is a Component Object Model (COM) interface for interacting with the Voice Activation Driver Interface. The IKeywordDetectorOemAdapter interface is supported in Windows 10 and later versions of Windows.
 keywords: ["IKeywordDetectorOemAdapter interface Audio Devices", "IKeywordDetectorOemAdapter interface Audio Devices , described"]
 topic_type:

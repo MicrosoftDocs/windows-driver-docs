@@ -1,5 +1,5 @@
 ---
-title: ACX power management
+title: ACX Power Management
 description: This topic provides a summary of the ACX power management
 ms.date: 09/29/2023
 ms.localizationpriority: medium

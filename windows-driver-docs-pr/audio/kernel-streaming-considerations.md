@@ -1,5 +1,5 @@
 ---
-title: Kernel streaming considerations
+title: Kernel Streaming Considerations
 description: This article clarifies the requirements and special considerations related to Bluetooth bypass audio streaming.
 ms.date: 04/20/2017
 ---

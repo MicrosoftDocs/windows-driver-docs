@@ -1,5 +1,5 @@
 ---
-title: Summary of ACX objects
+title: Summary of ACX Objects
 description: This topic provides a high level summary of ACX objects that form the base of an ACX audio driver.
 ms.date: 09/29/2023
 ms.localizationpriority: medium

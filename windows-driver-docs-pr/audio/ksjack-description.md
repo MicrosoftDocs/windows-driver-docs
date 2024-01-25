@@ -1,6 +1,6 @@
 ---
-title: KSJACK\_DESCRIPTION structure
-description: The KSJACK\_DESCRIPTION structure specifies the physical attributes of an audio jack.
+title: KSJACK_DESCRIPTION Structure
+description: The KSJACK_DESCRIPTION structure specifies the physical attributes of an audio jack.
 keywords: ["KSJACK_DESCRIPTION structure Audio Devices", "PKSJACK_DESCRIPTION structure pointer Audio Devices"]
 topic_type:
 - apiref

@@ -1,5 +1,5 @@
 ---
-title: MOM_CLOSE function (Windows Drivers)
+title: MOM_CLOSE Function (Windows Drivers)
 description: Learn more about the MOM_CLOSE function.
 keywords:
 - mmddk/modMessage

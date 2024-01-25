@@ -1,5 +1,5 @@
 ---
-title: modMessage function (Windows Drivers)
+title: modMessage Function (Windows Drivers)
 description: Learn more about the modMessage function.
 keywords:
 - mmddk/modMessage

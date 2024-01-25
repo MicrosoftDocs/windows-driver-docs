@@ -1,5 +1,5 @@
 ---
-title: DRV_QUERYDEVICEINTERFACESIZE function (Windows Drivers)
+title: DRV_QUERYDEVICEINTERFACESIZE Function (Windows Drivers)
 description: Learn more about the DRV_QUERYDEVICEINTERFACESIZE function.
 keywords:
 - mmddk/xxxMessage

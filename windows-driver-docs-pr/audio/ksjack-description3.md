@@ -1,5 +1,5 @@
 ---
-title: KSJACK\_DESCRIPTION3 structure
+title: KSJACK_DESCRIPTION3 Structure
 description: The KSJACK\_DESCRIPTION3 structure specifies the capabilities and the current state of a jack that supports jack presence detection.
 keywords: ["KSJACK_DESCRIPTION3 structure Audio Devices", "PKSJACK_DESCRIPTION3 structure pointer Audio Devices"]
 topic_type:

@@ -1,5 +1,5 @@
 ---
-title: MODM_UNPREPARE function (Windows Drivers)
+title: MODM_UNPREPARE Function (Windows Drivers)
 description: Learn more about the MODM_UNPREPARE function.
 keywords:
 - mmddk/modMessage
