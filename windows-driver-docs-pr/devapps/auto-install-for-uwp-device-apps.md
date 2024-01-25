@@ -1,5 +1,5 @@
 ---
-title: Automatic installation for UWP device apps
+title: Automatic Installation for UWP Device Apps
 description: This topic describes how automatic installation works and how the app, metadata, and drivers can be updated and uninstalled.
 ms.date: 03/17/2023
 ---

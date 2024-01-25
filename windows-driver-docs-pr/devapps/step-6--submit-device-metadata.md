@@ -1,5 +1,5 @@
 ---
-title: Step 6 Submit device metadata for your UWP device app
+title: Step 6 Submit Device Metadata for your UWP Device App
 description: This topic describes how to submit device metadata for your UWP device app to the Windows Dev Center hardware dashboard.
 ms.date: 03/17/2023
 ---

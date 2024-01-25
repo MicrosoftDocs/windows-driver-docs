@@ -1,5 +1,5 @@
 ---
-title: Using Driver MFTs on multi-pin cameras
+title: Using Driver MFTs on Multi-Pin Cameras
 description: Some cameras provide separate pins for preview, capture, and stills. These multi-pin cameras pose unique challenges to developers. This topic covers some points to consider when developing a camera driver MFT on a multi-pin camera.
 ms.date: 03/17/2023
 ---

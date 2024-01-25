@@ -1,5 +1,5 @@
 ---
-title: Step 3 Add an experience ID to the Microsoft Store device app
+title: Step 3 Add an Experience ID to the Microsoft Store Device App
 description: This topic describes how to add the experience ID to your UWP device app.
 ms.date: 03/17/2023
 ---

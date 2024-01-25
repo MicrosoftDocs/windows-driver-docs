@@ -1,5 +1,5 @@
 ---
-title: Creating a device background task in Windows 8.1
+title: Creating a Device Background Task in Windows 8.1
 description: This topic describes how to create a device background task that uses the DeviceUseTrigger or DeviceServicingTrigger.
 ms.date: 03/17/2023
 ---
