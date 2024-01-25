@@ -1,5 +1,5 @@
 ---
-title: How to write a driver test using a Driver Test template
+title: How to Write a Driver Test Using a Driver Test Template
 description: Use the Windows Driver Kit (WDK) for Windows 8 to create your own driver tests or to customize some of the tests that are provided.
 ms.date: 03/26/2020
 ---
