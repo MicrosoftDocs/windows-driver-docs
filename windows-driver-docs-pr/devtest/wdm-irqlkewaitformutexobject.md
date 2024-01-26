@@ -1,5 +1,5 @@
 ---
-title: IrqlKeWaitForMutexObject rule (wdm)
+title: IrqlKeWaitForMutexObject Rule (Wdm)
 ms.date: 05/21/2018
 description: "Learn more about: IrqlKeWaitForMutexObject rule (wdm)"
 keywords: ["IrqlKeWaitForMutexObject rule (wdm)"]

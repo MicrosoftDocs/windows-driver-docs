@@ -1,5 +1,5 @@
 ---
-title: C28736 warning
+title: C28736 Warning
 description: Warning C28736 Banned API Argument Usage.
 ms.date: 04/20/2017
 f1_keywords: 

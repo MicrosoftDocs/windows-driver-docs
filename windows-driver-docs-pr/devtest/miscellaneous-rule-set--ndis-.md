@@ -1,5 +1,5 @@
 ---
-title: Miscellaneous rule set (NDIS)
+title: Miscellaneous Rule Set (NDIS)
 description: Use these rules to verify that your driver correctly follows a general set of requirements for the proper handling of timers, pause operations, keys, strings and bindings.
 ms.date: 05/21/2018
 ---

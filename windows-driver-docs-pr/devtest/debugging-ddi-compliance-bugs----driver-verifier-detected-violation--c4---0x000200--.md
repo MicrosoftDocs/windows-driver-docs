@@ -1,5 +1,5 @@
 ---
-title: Debugging DRIVER_VERIFIER_DETECTED_VIOLATION (C4) 0x20002 - 0x20022
+title: Debugging DRIVER_VERIFIER_DETECTED_VIOLATION (C4) 0X20002 - 0X20022
 description: When you have the DDI compliance checking option selected, and Driver Verifier detects that the driver violates one of the DDI compliance rules, Driver Verifier generates Bug Check 0xC4 DRIVER_VERIFIER_DETECTED_VIOLATION (with Parameter 1 equal to the identifier of the specific compliance rule).
 ms.date: 04/20/2017
 ---

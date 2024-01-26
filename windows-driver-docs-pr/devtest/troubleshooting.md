@@ -1,5 +1,5 @@
 ---
-title: Troubleshooting the metadata authoring wizards
+title: Troubleshooting the Metadata Authoring Wizards
 description: Troubleshooting the metadata authoring wizards
 keywords:
 - Troubleshooting the Metadata Authoring Wizard

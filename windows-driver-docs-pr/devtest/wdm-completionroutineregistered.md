@@ -1,5 +1,5 @@
 ---
-title: CompletionRoutineRegistered rule (wdm)
+title: CompletionRoutineRegistered Rule (Wdm)
 description: The CompletionRoutineRegistered rule specifies that if the dispatch routine registers an IoCompletion routine using IoSetCompletionRoutineEx, the dispatch routine must thereafter call IoCallDriver or PoCallDriver.
 ms.date: 05/21/2018
 keywords: ["CompletionRoutineRegistered rule (wdm)"]

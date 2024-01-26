@@ -1,5 +1,5 @@
 ---
-title: WmiForward rule (wdm)
+title: WmiForward Rule (Wdm)
 description: The WmiForward rule specifies that the driver must forward WMI minor IRPs when forwarding is required.
 ms.date: 05/21/2018
 keywords: ["WmiForward rule (wdm)"]

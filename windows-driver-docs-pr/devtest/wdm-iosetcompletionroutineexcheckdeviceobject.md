@@ -1,5 +1,5 @@
 ---
-title: IoSetCompletionRoutineExCheckDeviceObject rule (wdm)
+title: IoSetCompletionRoutineExCheckDeviceObject Rule (Wdm)
 description: The IoSetCompletionRoutineExCheckDeviceObject rule specifies that if the current device object is not passed to IoSetCompletionRoutineEx and the lower device object is, this can lead to a race condition where the current device object could be unloaded even though the completion routine has not run.
 ms.date: 05/21/2018
 keywords: ["IoSetCompletionRoutineExCheckDeviceObject rule (wdm)"]

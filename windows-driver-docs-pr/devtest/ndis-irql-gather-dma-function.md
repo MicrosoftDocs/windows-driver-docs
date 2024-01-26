@@ -1,5 +1,5 @@
 ---
-title: Irql\_Gather\_DMA\_Function rule (ndis)
+title: Irql_Gather_DMA_Function Rule (Ndis)
 description: The Irql\_Gather\_DMA\_Function rule specifies that the NDIS scatter/gather DMA functions must be called at correct IRQL levels.
 ms.date: 05/21/2018
 keywords: ["Irql_Gather_DMA_Function rule (ndis)"]

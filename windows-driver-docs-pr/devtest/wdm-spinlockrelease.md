@@ -1,5 +1,5 @@
 ---
-title: SpinlockRelease rule (wdm)
+title: SpinlockRelease Rule (Wdm)
 description: The SpinlockRelease rule specifies that calls to KeReleaseSpinLock are made in strict alternation with KeAcquireSpinLock and KeAcquireSpinLockRaiseToDpc.
 ms.date: 05/21/2018
 keywords: ["SpinlockRelease rule (wdm)"]

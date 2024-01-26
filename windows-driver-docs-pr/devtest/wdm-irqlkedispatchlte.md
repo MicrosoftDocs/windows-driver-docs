@@ -1,5 +1,5 @@
 ---
-title: IrqlKeDispatchLte rule (wdm)
+title: IrqlKeDispatchLte Rule (Wdm)
 ms.date: 05/21/2018
 description: "Learn more about: IrqlKeDispatchLte rule (wdm)"
 keywords: ["IrqlKeDispatchLte rule (wdm)"]

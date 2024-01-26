@@ -1,5 +1,5 @@
 ---
-title: RemoveLockForward rule (wdm)
+title: RemoveLockForward Rule (Wdm)
 description: The RemoveLockForward rule verifies that calls to IoAcquireRemoveLock and IoReleaseRemoveLock are used correctly when forwarding a IRP to another device.
 ms.date: 05/21/2018
 keywords: ["RemoveLockForward rule (wdm)"]

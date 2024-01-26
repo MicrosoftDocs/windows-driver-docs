@@ -1,5 +1,5 @@
 ---
-title: MarkingQueuedIrps rule (wdm)
+title: MarkingQueuedIrps Rule (Wdm)
 description: The MarkingQueuedIrps rule specifies that the driver calls IoMarkIrpPending for an IRP that requires further processing only while holding a spin lock. This rule applies only when the driver adds the IRP to a driver-managed queue.
 ms.date: 05/21/2018
 keywords: ["MarkingQueuedIrps rule (wdm)"]

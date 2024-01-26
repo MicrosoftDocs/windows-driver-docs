@@ -1,5 +1,5 @@
 ---
-title: StorPortStatusPending rule (storport)
+title: StorPortStatusPending Rule (Storport)
 description: This rule checks that an SRB is not completed with status SRB\_STATUS\_PENDING.
 ms.date: 05/21/2018
 keywords: ["StorPortStatusPending rule (storport)"]

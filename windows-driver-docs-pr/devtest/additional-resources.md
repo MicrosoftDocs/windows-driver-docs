@@ -1,5 +1,5 @@
 ---
-title: Additional resources
+title: Additional Resources
 description: Additional resources
 keywords:
 - device metadata resources

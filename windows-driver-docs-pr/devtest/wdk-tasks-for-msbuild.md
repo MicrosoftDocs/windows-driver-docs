@@ -1,5 +1,5 @@
 ---
-title: WDK tasks for MSBuild
+title: WDK Tasks for MSBuild
 description: The Windows Driver Kit (WDK) includes tools that are often used in the build process but are not normally distributed with Visual Studio.
 ms.date: 04/20/2017
 ---

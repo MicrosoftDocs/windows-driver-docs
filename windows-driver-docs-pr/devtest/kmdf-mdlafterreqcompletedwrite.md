@@ -1,5 +1,5 @@
 ---
-title: MdlAfterReqCompletedWrite rule (kmdf)
+title: MdlAfterReqCompletedWrite Rule (Kmdf)
 description: The MdlAfterReqCompletedWrite rule specifies that within the EvtIoWrite callback function, the memory descriptor list (MDL) object retrieved cannot be accessed after the I/O request is completed.
 ms.date: 05/21/2018
 keywords: ["MdlAfterReqCompletedWrite rule (kmdf)"]

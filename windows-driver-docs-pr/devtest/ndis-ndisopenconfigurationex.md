@@ -1,5 +1,5 @@
 ---
-title: NdisOpenConfigurationEx rule (ndis)
+title: NdisOpenConfigurationEx Rule (Ndis)
 description: This rule checks that NdisOpenConfigurationEx and NdisCloseConfiguration are called in alternate order. The ultimate goal is to make sure that configuration handles are closed when MiniportHaltEx exits.
 ms.date: 05/21/2018
 keywords: ["NdisOpenConfigurationEx rule (ndis)"]

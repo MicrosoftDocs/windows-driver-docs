@@ -1,5 +1,5 @@
 ---
-title: StorPortMSILock rule (storport)
+title: StorPortMSILock Rule (Storport)
 description: Miniport drivers are required to acquire the MSI spin lock for a message if, and only if, the InterruptSynchronizationMode member of the PORT\_CONFIGURATION\_INFORMATION (Storport) structure is set to InterruptSynchronizePerMessage.
 ms.date: 05/21/2018
 keywords: ["StorPortMSILock rule (storport)"]

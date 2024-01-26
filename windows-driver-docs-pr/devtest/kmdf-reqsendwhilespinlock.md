@@ -1,5 +1,5 @@
 ---
-title: ReqSendWhileSpinlock rule (kmdf)
+title: ReqSendWhileSpinlock Rule (Kmdf)
 description: The ReqSendWhileSpinlock rule specifies that no requests are sent while the driver holds a spinlock.
 ms.date: 05/21/2018
 keywords: ["ReqSendWhileSpinlock rule (kmdf)"]

@@ -1,5 +1,5 @@
 ---
-title: Irql\_Filter\_Driver\_Function rule (ndis)
+title: Irql_Filter_Driver_Function Rule (Ndis)
 description: The Irql\_Filter\_Driver\_Function rule specifies that the NDIS functions for filter drivers must be called at correct IRQL levels.
 ms.date: 05/21/2018
 keywords: ["Irql_Filter_Driver_Function rule (ndis)"]

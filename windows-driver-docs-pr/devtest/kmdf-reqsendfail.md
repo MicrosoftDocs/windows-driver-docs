@@ -1,5 +1,5 @@
 ---
-title: ReqSendFail rule (kmdf)
+title: ReqSendFail Rule (Kmdf)
 description: The ReqSendFail rule specifies that a driver must set the correct completion status in cases in which the WdfRequestSend method might fail.
 ms.date: 05/21/2018
 keywords: ["ReqSendFail rule (kmdf)"]

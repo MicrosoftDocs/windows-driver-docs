@@ -1,5 +1,5 @@
 ---
-title: Default rule set (Storport)
+title: Default Rule Set (Storport)
 description: Learn about the default rule set (Storport) that specifies the recommended sets of rules to use when you analyze your driver.
 ms.date: 05/21/2018
 ---

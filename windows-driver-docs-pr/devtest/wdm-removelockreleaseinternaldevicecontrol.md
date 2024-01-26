@@ -1,5 +1,5 @@
 ---
-title: RemoveLockReleaseInternalDeviceControl rule (wdm)
+title: RemoveLockReleaseInternalDeviceControl Rule (Wdm)
 description: The RemoveLockReleaseInternalDeviceControl rule verifies that calls to IoAcquireRemoveLock and IoReleaseRemoveLock are used in strict alternation. Moreover, at the end of the dispatch routine the driver should not hold the remove lock.
 ms.date: 05/21/2018
 keywords: ["RemoveLockReleaseInternalDeviceControl rule (wdm)"]

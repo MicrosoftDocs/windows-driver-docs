@@ -1,5 +1,5 @@
 ---
-title: InvalidReqAccessLocal rule (kmdf)
+title: InvalidReqAccessLocal Rule (Kmdf)
 description: The InvalidReqAccessLocal rule specifies that locally created requests are not accessed after they are completed or canceled.
 ms.date: 05/21/2018
 keywords: ["InvalidReqAccessLocal rule (kmdf)"]

@@ -1,5 +1,5 @@
 ---
-title: C28648 warning
+title: C28648 Warning
 description: Warning C28648 PulseEvent is an unreliable function.
 ms.date: 04/20/2017
 f1_keywords: 

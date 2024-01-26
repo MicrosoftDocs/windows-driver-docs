@@ -1,5 +1,5 @@
 ---
-title: QueuedSpinLock rule (storport)
+title: QueuedSpinLock Rule (Storport)
 description: The QueuedSpinLock rule verifies that in-stack queued spin locks that are acquired using KeAcquireInStackQueuedSpinLock are promptly released using KeReleaseInStackQueuedSpinLock.
 ms.date: 05/21/2018
 keywords: ["QueuedSpinLock rule (storport)"]

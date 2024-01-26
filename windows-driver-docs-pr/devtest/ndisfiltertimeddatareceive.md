@@ -1,5 +1,5 @@
 ---
-title: NdisFilterTimedDataReceive rule (ndis)
+title: NdisFilterTimedDataReceive Rule (Ndis)
 description: The NdisFilterTimedDataReceive rule verifies that an NDIS filter driver completes a receive request by the FilterReceiveNetBufferLists function before timing out.
 ms.date: 05/21/2018
 keywords: ["NdisFilterTimedDataReceive rule (ndis)"]

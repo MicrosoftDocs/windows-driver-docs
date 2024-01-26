@@ -1,5 +1,5 @@
 ---
-title: How do I redefine an fprintf function as a tracing call
+title: How do I Redefine an Fprintf Function as a Tracing Call
 description: How do I redefine an fprintf function as a tracing call
 ms.date: 04/20/2017
 ---

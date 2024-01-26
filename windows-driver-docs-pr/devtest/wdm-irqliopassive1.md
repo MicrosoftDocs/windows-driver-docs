@@ -1,5 +1,5 @@
 ---
-title: IrqlIoPassive1 rule (wdm)
+title: IrqlIoPassive1 Rule (Wdm)
 ms.date: 05/21/2018
 description: "Learn more about: IrqlIoPassive1 rule (wdm)"
 keywords: ["IrqlIoPassive1 rule (wdm)"]

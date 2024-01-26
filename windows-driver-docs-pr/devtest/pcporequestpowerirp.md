@@ -1,5 +1,5 @@
 ---
-title: PcPoRequestPowerIrp rule (audio)
+title: PcPoRequestPowerIrp Rule (Audio)
 description: This rule verifies that a PortCls miniport driver should not call PoRequestPowerIrp with IRP\_MN\_SET\_POWER.
 ms.date: 05/21/2018
 keywords: ["PcPoRequestPowerIrp rule (audio)"]

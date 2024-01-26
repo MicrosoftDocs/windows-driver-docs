@@ -1,5 +1,5 @@
 ---
-title: IoSetCompletionExCompleteIrp rule (wdm)
+title: IoSetCompletionExCompleteIrp Rule (Wdm)
 description: The IoSetCompletionExCompleteIrp rule specifies that the IoSetCompletionRoutineEx routine returns an NTSTATUS value.
 ms.date: 05/21/2018
 keywords: ["IoSetCompletionExCompleteIrp rule (wdm)"]

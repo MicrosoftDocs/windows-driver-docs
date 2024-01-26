@@ -1,5 +1,5 @@
 ---
-title: PnpSurpriseRemove rule (wdm)
+title: PnpSurpriseRemove Rule (Wdm)
 description: The PnpSurpriseRemove rule specifies that the driver does not call IoDeleteDevice or IoDetachDevice while processing an IRP\_MN\_SURPRISE\_REMOVAL request.
 ms.date: 05/21/2018
 keywords: ["PnpSurpriseRemove rule (wdm)"]

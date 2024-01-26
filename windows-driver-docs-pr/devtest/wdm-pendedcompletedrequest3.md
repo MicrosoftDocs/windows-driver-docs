@@ -1,5 +1,5 @@
 ---
-title: PendedCompletedRequest3 rule (wdm)
+title: PendedCompletedRequest3 Rule (Wdm)
 description: The PendedCompletedRequest3 rule specifies that a pending IRP should not be completed with a call to IoCompleteRequest.
 ms.date: 05/21/2018
 keywords: ["PendedCompletedRequest3 rule (wdm)"]

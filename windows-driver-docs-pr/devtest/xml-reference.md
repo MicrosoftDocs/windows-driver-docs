@@ -1,5 +1,5 @@
 ---
-title: XML reference
+title: XML Reference
 description: XML reference
 keywords:
 - device metadata XML Reference

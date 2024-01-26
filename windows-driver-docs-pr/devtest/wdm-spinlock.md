@@ -1,5 +1,5 @@
 ---
-title: SpinLock rule (wdm)
+title: SpinLock Rule (Wdm)
 description: The SpinLock rule specifies that, after calling KeAcquireSpinLock, the driver calls KeReleaseSpinLock before subsequent calls to KeAcquireSpinLock or to KeAcquireSpinLockRaiseToDpc.
 ms.date: 05/21/2018
 keywords: ["SpinLock rule (wdm)"]

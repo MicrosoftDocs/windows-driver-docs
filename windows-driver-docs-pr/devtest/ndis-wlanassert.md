@@ -1,5 +1,5 @@
 ---
-title: WlanAssert rule (ndis)
+title: WlanAssert Rule (Ndis)
 description: The WlanAssert rule includes a set of checks validated inside the WDIWIFI driver.
 ms.date: 04/08/2020
 keywords: ["WlanAssert rule (ndis)"]

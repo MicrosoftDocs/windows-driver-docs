@@ -1,5 +1,5 @@
 ---
-title: C28602 warning
+title: C28602 Warning
 description: Warning C28602 Avoid calling SendMessageTimeout with HWND_BROADCAST.
 ms.date: 04/20/2017
 f1_keywords: 

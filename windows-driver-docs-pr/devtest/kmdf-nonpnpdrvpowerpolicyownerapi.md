@@ -1,5 +1,5 @@
 ---
-title: NonPnPDrvPowerPolicyOwnerAPI rule (kmdf)
+title: NonPnPDrvPowerPolicyOwnerAPI Rule (Kmdf)
 description: The NonPnPDrvPowerPolicyOwnerAPI rule specifies that non-PnP drivers cannot call certain DDIs related to power management.
 ms.date: 05/21/2018
 keywords: ["NonPnPDrvPowerPolicyOwnerAPI rule (kmdf)"]

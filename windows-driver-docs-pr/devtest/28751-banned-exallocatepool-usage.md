@@ -1,5 +1,5 @@
 ---
-title: C28751 warning
+title: C28751 Warning
 description: Warning C28751 Banned usage of ExAllocatePool and its variants.
 ms.date: 08/22/2022
 f1_keywords: ["C28751", "BANNED_API_USAGE_EXALLOCATEPOOL", "__WARNING_BANNED_API_USAGE_EXALLOCATEPOOL"]

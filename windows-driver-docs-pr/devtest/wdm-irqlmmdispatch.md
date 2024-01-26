@@ -1,5 +1,5 @@
 ---
-title: IrqlMmDispatch rule (wdm)
+title: IrqlMmDispatch Rule (Wdm)
 description: The IrqlMmDispatch rule specifies that the driver calls MmFreeContiguousMemory only when it is executing at IRQL DISPATCH\_LEVEL.
 ms.date: 05/21/2018
 keywords: ["IrqlMmDispatch rule (wdm)"]

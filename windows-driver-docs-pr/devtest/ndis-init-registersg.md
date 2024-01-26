@@ -1,5 +1,5 @@
 ---
-title: Init\_RegisterSG rule (ndis)
+title: Init_RegisterSG Rule (Ndis)
 description: The Init\_RegisterSG rule specifies that the registration of the scatter-gather list (SG), which usually happens during initialization, must be undone if something goes wrong in the initialization process or during the halting of the miniport driver.If NdisMRegisterScatterGatherDma is called at least one time during MiniportInitializeEx, the NdisMDeregisterScatterGatherDma function should be called at least one time in MiniportHaltEx.
 ms.date: 05/21/2018
 keywords: ["Init_RegisterSG rule (ndis)"]

@@ -1,5 +1,5 @@
 ---
-title: ReqMarkCancelableSend rule (kmdf)
+title: ReqMarkCancelableSend Rule (Kmdf)
 description: The ReqMarkCancelableSend rule specifies that requests forwarded by the driver are not marked as cancelable by calling WdfRequestMarkCancelable.
 ms.date: 05/21/2018
 keywords: ["ReqMarkCancelableSend rule (kmdf)"]

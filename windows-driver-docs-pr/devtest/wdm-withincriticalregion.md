@@ -1,5 +1,5 @@
 ---
-title: WithinCriticalRegion rule (wdm)
+title: WithinCriticalRegion Rule (Wdm)
 description: The WithinCriticalRegion rule specifies that the driver's calls to particular synchronization functions appear only after calling KeEnterCriticalRegion and before calling KeLeaveCriticalRegion.
 ms.date: 05/21/2018
 keywords: ["WithinCriticalRegion rule (wdm)"]

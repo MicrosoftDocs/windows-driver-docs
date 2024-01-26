@@ -1,5 +1,5 @@
 ---
-title: StopAckWithinEvtIoStop rule (kmdf)
+title: StopAckWithinEvtIoStop Rule (Kmdf)
 description: The StopAckWithinEvtIoStop rule specifies that the WdfRequestStopAcknowledge function is only called from within EvtIoStop callback function.
 ms.date: 05/21/2018
 keywords: ["StopAckWithinEvtIoStop rule (kmdf)"]

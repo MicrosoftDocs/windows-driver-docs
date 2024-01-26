@@ -1,5 +1,5 @@
 ---
-title: NDIS/WIFI verification rule set
+title: NDIS/WIFI Verification Rule Set
 description: Note  You can test NDIS/WIFI drivers with these rules starting with Windows 8.1. .
 ms.date: 05/21/2018
 ---

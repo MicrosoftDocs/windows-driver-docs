@@ -1,5 +1,5 @@
 ---
-title: ChildDeviceInitApi rule (kmdf)
+title: ChildDeviceInitApi Rule (Kmdf)
 description: The ChildDeviceInitApi rule specifies that for a child device, the framework device object initialization methods must be called before the driver calls the WdfDeviceCreate method for the child device object.
 ms.date: 05/21/2018
 keywords: ["ChildDeviceInitApi rule (kmdf)"]

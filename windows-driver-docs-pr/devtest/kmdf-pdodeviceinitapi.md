@@ -1,5 +1,5 @@
 ---
-title: PdoDeviceInitAPI rule (kmdf)
+title: PdoDeviceInitAPI Rule (Kmdf)
 description: The PdoDeviceInitAPI rule specifies that WdfPdoInitAllocate and all other device object initialization DDIs that set up a WDFDEVICE\_INIT structure for the physical device object (PDO) must be called before the driver calls WdfDeviceCreate for the PDO.
 ms.date: 05/21/2018
 keywords: ["PdoDeviceInitAPI rule (kmdf)"]

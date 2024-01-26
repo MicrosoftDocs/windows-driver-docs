@@ -1,5 +1,5 @@
 ---
-title: MarkPower rule (wdm)
+title: MarkPower Rule (Wdm)
 description: The MarkPower rule specifies that an IRP\_MJ\_POWER with IRP\_MN\_SET\_POWER for SystemPowerState IRP going to S0 is pended. This rule only applies to FDO and FIDO drivers.
 ms.date: 05/21/2018
 keywords: ["MarkPower rule (wdm)"]

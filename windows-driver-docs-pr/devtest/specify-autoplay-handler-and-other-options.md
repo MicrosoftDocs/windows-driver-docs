@@ -1,5 +1,5 @@
 ---
-title: Specify AutoPlay Handler and options in the Device Metadata Authoring Wizard
+title: Specify AutoPlay Handler and Options in the Device Metadata Authoring Wizard
 description: Specify AutoPlay Handler and options in the Device Metadata Authoring Wizard
 keywords:
 - Specify AutoPlay Handler and options in the Device Metadata Authoring Wizard

@@ -1,5 +1,5 @@
 ---
-title: IrqlDispatch rule (storport)
+title: IrqlDispatch Rule (Storport)
 description: This rule verifies that the following routines are only called at IRQL DISPATCH\_LEVEL.
 ms.date: 05/21/2018
 keywords: ["IrqlDispatch rule (storport)"]

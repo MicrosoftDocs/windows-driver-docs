@@ -1,5 +1,5 @@
 ---
-title: InitFreeDeviceCreateType2 rule (kmdf)
+title: InitFreeDeviceCreateType2 Rule (Kmdf)
 description: The InitFreeDeviceCreateType2 rule specifies that a driver must not call WdfDeviceCreate after it calls WdfDeviceInitFree.
 ms.date: 05/21/2018
 keywords: ["InitFreeDeviceCreateType2 rule (kmdf)"]

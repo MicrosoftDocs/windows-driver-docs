@@ -1,5 +1,5 @@
 ---
-title: WdfIoQueueRetrieveNextRequest rule (kmdf)
+title: WdfIoQueueRetrieveNextRequest Rule (Kmdf)
 description: The WdfIoQueueRetrieveNextRequest rule specifies that WdfIoQueueRetrieveNextRequest is not called after WdfIoQueueFindRequest is called.
 ms.date: 05/21/2018
 keywords: ["WdfIoQueueRetrieveNextRequest rule (kmdf)"]

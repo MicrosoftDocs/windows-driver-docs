@@ -1,5 +1,5 @@
 ---
-title: RemoveLock rule (wdm)
+title: RemoveLock Rule (Wdm)
 description: The RemoveLock rule specifies that calls to IoAcquireRemoveLock and IoReleaseRemoveLock are used correctly. Moreover, at the end of the IRP\_MJ\_PNP or IRP\_MJ\_POWER routine, the driver should not hold the RemoveLock.
 ms.date: 05/21/2018
 keywords: ["RemoveLock rule (wdm)"]

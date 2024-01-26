@@ -1,5 +1,5 @@
 ---
-title: Irql\_OID\_Function rule (ndis)
+title: Irql_OID_Function Rule (Ndis)
 description: The Irql\_OID\_Function rule specifies that the NDIS OID request DDIs must be called at correct IRQL levels.
 ms.date: 05/21/2018
 keywords: ["Irql_OID_Function rule (ndis)"]

@@ -1,5 +1,5 @@
 ---
-title: Process cannot access file Path because it is being used by another process
+title: Process Cannot Access File Path Because it is Being Used by Another Process
 description: The process cannot access the file path because it is being used by another process.
 ms.date: 04/20/2017
 ---

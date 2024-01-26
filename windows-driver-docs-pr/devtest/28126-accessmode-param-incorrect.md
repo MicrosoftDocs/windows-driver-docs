@@ -1,5 +1,5 @@
 ---
-title: C28126 warning
+title: C28126 Warning
 description: Warning C28126 The AccessMode parameter to ObReferenceObject* should be IRP->RequestorMode.
 keywords:
 - warnings listed WDK PREfast for Drivers

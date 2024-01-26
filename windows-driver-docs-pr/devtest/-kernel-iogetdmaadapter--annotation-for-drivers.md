@@ -1,5 +1,5 @@
 ---
-title: 'DMA IO Misue _Kernel_IoGetDmaAdapter_ annotation for drivers'
+title: 'DMA IO Misue _Kernel_IoGetDmaAdapter_ Annotation for Drivers'
 description: Use the _Kernel_IoGetDmaAdapter_ annotation to direct the code analysis tools to look for misuse of DMA pointers.
 ms.date: 08/24/2023
 ---

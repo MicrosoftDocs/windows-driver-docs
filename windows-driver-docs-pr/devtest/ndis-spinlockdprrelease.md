@@ -1,5 +1,5 @@
 ---
-title: SpinLockDprRelease rule (ndis)
+title: SpinLockDprRelease Rule (Ndis)
 description: The SpinLockDprRelease rule verifies that calls to NdisAcquireSpinLock or NdisDprAcquireSpinLock are called only when the SpinLock is the \ 0034;unlocked \ 0034; state.
 ms.date: 05/21/2018
 keywords: ["SpinLockDprRelease rule (ndis)"]

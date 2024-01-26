@@ -1,5 +1,5 @@
 ---
-title: WdfSpinlock rule (kmdf)
+title: WdfSpinlock Rule (Kmdf)
 description: The WdfSpinlock rule specifies that calls to the WdfSpinLockAcquire method are used in strict alternation with WdfSpinlockRelease.
 ms.date: 05/21/2018
 keywords: ["WdfSpinlock rule (kmdf)"]

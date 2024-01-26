@@ -1,5 +1,5 @@
 ---
-title: CancelSpinlockRelease rule (wdm)
+title: CancelSpinlockRelease Rule (Wdm)
 description: The CancelSpinlockRelease rule specifies that calls to IoAcquireCancelSpinLock and IoReleaseCancelSpinLock are used in strict alternation. That is, every call to IoAcquireCancelSpinLock must have a corresponding call to IoReleaseCancelSpinLock.
 ms.date: 05/21/2018
 keywords: ["CancelSpinlockRelease rule (wdm)"]

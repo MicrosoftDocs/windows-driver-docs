@@ -1,5 +1,5 @@
 ---
-title: MdlAfterReqCompletedIntIoctlA rule (kmdf)
+title: MdlAfterReqCompletedIntIoctlA Rule (Kmdf)
 description: The MdlAfterReqCompletedIntIoctlA rule specifies that within the EvtIoInternalDeviceControl callback function, the memory descriptor list (MDL) cannot be accessed after the I/O request is completed.
 ms.date: 05/21/2018
 keywords: ["MdlAfterReqCompletedIntIoctlA rule (kmdf)"]

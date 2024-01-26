@@ -1,5 +1,5 @@
 ---
-title: NsRemoveLockMnSurpriseRemove rule (wdm)
+title: NsRemoveLockMnSurpriseRemove Rule (Wdm)
 description: The NsRemoveLockMnSurpriseRemove rule verifies that a driver does not return STATUS\_NOT\_SUPPORTED when processing an IRP\_MJ\_PNP request with minorFunction IRP\_MN\_SUPRISE\_REMOVAL. This rule only applies to FDO and FIDO drivers.
 ms.date: 05/21/2018
 keywords: ["NsRemoveLockMnSurpriseRemove rule (wdm)"]

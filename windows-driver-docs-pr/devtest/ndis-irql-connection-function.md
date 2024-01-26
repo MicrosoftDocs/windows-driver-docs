@@ -1,5 +1,5 @@
 ---
-title: Irql\_Connection\_Function rule (ndis)
+title: Irql_Connection_Function Rule (Ndis)
 description: The Irql\_Connection\_Function rule specifies that the NDIS connection functions for protocol drivers must be called at correct IRQL levels.
 ms.date: 05/21/2018
 keywords: ["Irql_Connection_Function rule (ndis)"]

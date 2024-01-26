@@ -1,5 +1,5 @@
 ---
-title: How do I add a prefix and suffix to a trace message
+title: How do I Add a Prefix and Suffix to a Trace Message
 description: How do I add a prefix and suffix to a trace message
 ms.date: 04/20/2017
 ---

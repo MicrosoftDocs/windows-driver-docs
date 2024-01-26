@@ -1,5 +1,5 @@
 ---
-title: MiniportOnlyWdmDevice rule (kmdf)
+title: MiniportOnlyWdmDevice Rule (Kmdf)
 description: The MiniportOnlyWdmDevice rule specifies that WDF drivers should not use IoCreateDevice and IoCreateDeviceSecure functions to create bare WDM device objects.
 ms.date: 05/21/2018
 keywords: ["MiniportOnlyWdmDevice rule (kmdf)"]

@@ -1,5 +1,5 @@
 ---
-title: ZwRegistryOpen rule (storport)
+title: ZwRegistryOpen Rule (Storport)
 description: This rule verifies that the handle to the registry key opened via ZwOpenKey is subsequently used correctly by other ZwXxx routines.
 ms.date: 05/21/2018
 keywords: ["ZwRegistryOpen rule (storport)"]

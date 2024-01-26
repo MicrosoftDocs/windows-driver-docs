@@ -1,5 +1,5 @@
 ---
-title: NdisTimedDataSend rule (ndis)
+title: NdisTimedDataSend Rule (Ndis)
 description: The NdisTimedDataSend rule verifies that when an NDIS driver calls MiniportSendNetBufferLists, the miniport driver completes the send request within 30 seconds.
 ms.date: 05/21/2018
 keywords: ["NdisTimedDataSend rule (ndis)"]

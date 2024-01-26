@@ -1,5 +1,5 @@
 ---
-title: CompleteRequest rule (wdm)
+title: CompleteRequest Rule (Wdm)
 description: The CompleteRequest rule verifies that the IoCompleteRequest routine is not called after a completion routine runs and that it does not return STATUS\_MORE\_PROCESSING\_REQUIRED.
 ms.date: 05/21/2018
 keywords: ["CompleteRequest rule (wdm)"]

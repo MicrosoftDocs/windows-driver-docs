@@ -1,5 +1,5 @@
 ---
-title: Use __sdv_save_request and __sdv_retrieve_request for Deferred Procedure Calls
+title: Use __Sdv_Save_Request and __Sdv_Retrieve_Request for Deferred Procedure Calls
 description: Using __sdv_save_request and __sdv_retrieve_request for Deferred Procedure Calls
 keywords:
 - __sdv_save_request

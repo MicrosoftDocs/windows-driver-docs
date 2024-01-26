@@ -1,5 +1,5 @@
 ---
-title: RequestCompleted rule (kmdf)
+title: RequestCompleted Rule (Kmdf)
 description: The RequestCompleted rule specifies that for a non-filter driver each request presented to the driver's default I/O queue must be completed, unless the request is deferred or forwarded, or if WdfRequestStopAcknowledge is called.
 ms.date: 05/21/2018
 keywords: ["RequestCompleted rule (kmdf)"]

@@ -1,5 +1,5 @@
 ---
-title: WdfRequestSendSyncAtDispatch2 rule (kmdf)
+title: WdfRequestSendSyncAtDispatch2 Rule (Kmdf)
 description: The WdfRequestSendSyncAtDispatch2 rule verifies that the WdfRequestSend function is sent at the correct IRQL priority level.
 ms.date: 05/21/2018
 keywords: ["WdfRequestSendSyncAtDispatch2 rule (kmdf)"]

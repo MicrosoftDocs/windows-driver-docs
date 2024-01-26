@@ -1,5 +1,5 @@
 ---
-title: C28123 warning
+title: C28123 Warning
 description: Warning C28123 The function is not permitted to be called at a high IRQ level. Prior function calls are inconsistent with this constraint.
 keywords:
 - warnings listed WDK PREfast for Drivers

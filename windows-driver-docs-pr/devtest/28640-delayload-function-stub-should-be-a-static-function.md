@@ -1,5 +1,5 @@
 ---
-title: C28640 warning
+title: C28640 Warning
 description: Warning C28640 function delayload stub should be a static function.
 ms.date: 04/20/2017
 f1_keywords: 

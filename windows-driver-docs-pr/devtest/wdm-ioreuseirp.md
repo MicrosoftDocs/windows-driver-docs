@@ -1,5 +1,5 @@
 ---
-title: IoReuseIrp rule (wdm)
+title: IoReuseIrp Rule (Wdm)
 description: The IoReuseIrp rule specifies that a driver should use IoReuseIrp only on IRPs that it previously allocated with IoAllocateIrp.
 ms.date: 05/21/2018
 keywords: ["IoReuseIrp rule (wdm)"]

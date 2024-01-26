@@ -1,5 +1,5 @@
 ---
-title: KsTimedPinSetDeviceState rule ()
+title: KsTimedPinSetDeviceState Rule ()
 description: The KsTimedPinSetDeviceState rule specifies that a AVStream (KS) miniport driver makes state transitions using the AVStream minidriver's AVStrMiniPinSetDeviceState routine within the required time.
 ms.date: 05/21/2018
 keywords: ["KsTimedPinSetDeviceState rule ()"]

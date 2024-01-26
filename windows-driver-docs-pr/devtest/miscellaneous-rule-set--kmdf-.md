@@ -1,5 +1,5 @@
 ---
-title: Miscellaneous rule set (KMDF)
+title: Miscellaneous Rule Set (KMDF)
 description: Use these rules to verify that your driver correctly follows a general set of requirements for the proper handling of device objects, keys, and that the driver does not makes calls to DDIs that are not appropriate for a non-PnP driver or for a non-FDO driver that is not a power policy owner.
 ms.date: 05/21/2018
 ---

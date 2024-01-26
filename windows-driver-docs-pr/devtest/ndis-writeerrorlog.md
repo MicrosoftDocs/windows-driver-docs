@@ -1,5 +1,5 @@
 ---
-title: WriteErrorLog rule (ndis)
+title: WriteErrorLog Rule (Ndis)
 description: The WriteErrorLog rule specifies that if the NdisMAllocateSharedMemory function is called in the MiniportInitializeEx function, the driver should also call NdisWriteErrorLogEntry if the allocation fails.
 ms.date: 05/21/2018
 keywords: ["WriteErrorLog rule (ndis)"]

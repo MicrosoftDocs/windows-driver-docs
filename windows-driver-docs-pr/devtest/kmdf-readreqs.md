@@ -1,5 +1,5 @@
 ---
-title: ReadReqs rule (kmdf)
+title: ReadReqs Rule (Kmdf)
 description: The ReadReqs rule specifies that read requests are not passed to inappropriate KMDF methods.
 ms.date: 05/21/2018
 keywords: ["ReadReqs rule (kmdf)"]

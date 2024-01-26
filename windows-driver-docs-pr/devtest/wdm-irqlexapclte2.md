@@ -1,5 +1,5 @@
 ---
-title: IrqlExApcLte2 rule (wdm)
+title: IrqlExApcLte2 Rule (Wdm)
 description: The IrqlExApcLte2 rule specifies that the driver calls the following routines only at IRQL less than or equal to APC_LEVEL.
 ms.date: 07/21/2021
 keywords: ["IrqlExApcLte2 rule (wdm)"]

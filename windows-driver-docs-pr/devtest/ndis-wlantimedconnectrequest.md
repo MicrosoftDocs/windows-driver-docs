@@ -1,5 +1,5 @@
 ---
-title: WlanTimedConnectRequest rule (ndis)
+title: WlanTimedConnectRequest Rule (Ndis)
 description: The WlanTimedConnectRequest rule verifies that an OID\_DOT11\_CONNECT\_REQUEST is followed by a NDIS\_STATUS\_DOT11\_CONNECTION\_START within 10 seconds.
 ms.date: 05/21/2018
 keywords: ["WlanTimedConnectRequest rule (ndis)"]

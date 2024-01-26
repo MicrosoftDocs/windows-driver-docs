@@ -1,5 +1,5 @@
 ---
-title: StorPortIrql rule (storport)
+title: StorPortIrql Rule (Storport)
 description: The StorPortIrql rule checks that StorPort routines are called at the correct IRQL levels.
 ms.date: 05/21/2018
 keywords: ["StorPortIrql rule (storport)"]

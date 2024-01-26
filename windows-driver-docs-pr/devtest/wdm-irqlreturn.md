@@ -1,5 +1,5 @@
 ---
-title: IrqlReturn rule (wdm)
+title: IrqlReturn Rule (Wdm)
 description: The IrqlReturn rule specifies that the driver's dispatch routines return at the same IRQL at which they were called.
 ms.date: 05/21/2018
 keywords: ["IrqlReturn rule (wdm)"]

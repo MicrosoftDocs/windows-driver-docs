@@ -1,5 +1,5 @@
 ---
-title: C28740 warning
+title: C28740 Warning
 description: Warning C28740 Unannotated unsigned buffer.
 ms.date: 04/20/2017
 f1_keywords: 

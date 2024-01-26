@@ -1,5 +1,5 @@
 ---
-title: BufAfterReqCompletedWrite rule (kmdf)
+title: BufAfterReqCompletedWrite Rule (Kmdf)
 description: The BufAfterReqCompletedWrite rule specifies that within the EvtIoWrite callback function, the I/O request buffer retrieved cannot be accessed after the I/O request is completed.
 ms.date: 05/21/2018
 keywords: ["BufAfterReqCompletedWrite rule (kmdf)"]

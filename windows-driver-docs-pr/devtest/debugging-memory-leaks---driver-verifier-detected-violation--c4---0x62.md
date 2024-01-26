@@ -1,5 +1,5 @@
 ---
-title: Debugging memory leaks - DRIVER_VERIFIER_DETECTED_VIOLATION (C4) 0x62
+title: Debugging Memory Leaks - DRIVER_VERIFIER_DETECTED_VIOLATION (C4) 0X62
 description: Driver Verifier generates Bug Check 0xC4 DRIVER_VERIFIER_DETECTED_VIOLATION with a parameter 1 value of 0x62 when a driver unloads without first freeing all of its pool allocations.
 ms.date: 04/20/2017
 ---

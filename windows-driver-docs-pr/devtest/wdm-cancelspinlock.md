@@ -1,5 +1,5 @@
 ---
-title: CancelSpinLock rule (wdm)
+title: CancelSpinLock Rule (Wdm)
 description: The CancelSpinLock rule specifies that the driver calls IoAcquireCancelSpinLock before calling IoReleaseCancelSpinLock and that the driver calls IoReleaseCancelSpinLock before any subsequent calls to IoAcquireCancelSpinLock.
 ms.date: 05/21/2018
 keywords: ["CancelSpinLock rule (wdm)"]

@@ -1,5 +1,5 @@
 ---
-title: IrqlKeReleaseSpinLock rule (storport)
+title: IrqlKeReleaseSpinLock Rule (Storport)
 description: This rule verifies that KeReleaseSpinLock is called at IRQL DISPATCH\_LEVEL only. It must also set the IRQL to the previous IRQL level. Typically this call would be preceded by a call to KeAcquireSpinLock.
 ms.date: 05/21/2018
 keywords: ["IrqlKeReleaseSpinLock rule (storport)"]

@@ -1,5 +1,5 @@
 ---
-title: MemAfterReqCompletedRead rule (kmdf)
+title: MemAfterReqCompletedRead Rule (Kmdf)
 description: The MemAfterReqCompletedRead rule specifies that within the EvtIoRead callback function, the framework memory object cannot be accessed after the I/O request is completed.
 ms.date: 05/21/2018
 keywords: ["MemAfterReqCompletedRead rule (kmdf)"]

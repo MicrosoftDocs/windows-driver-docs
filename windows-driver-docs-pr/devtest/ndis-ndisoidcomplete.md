@@ -1,5 +1,5 @@
 ---
-title: NdisOidComplete rule (ndis)
+title: NdisOidComplete Rule (Ndis)
 description: The NdisOidComplete rule verifies that an NDIS miniport driver completes an OID correctly.
 ms.date: 05/21/2018
 keywords: ["NdisOidComplete rule (ndis)"]

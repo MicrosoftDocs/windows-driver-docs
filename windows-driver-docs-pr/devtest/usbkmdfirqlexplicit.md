@@ -1,5 +1,5 @@
 ---
-title: UsbKmdfIrqlExplicit rule (kmdf)
+title: UsbKmdfIrqlExplicit Rule (Kmdf)
 description: The UsbKmdfIrqlExplicit rule verifies that KMDF DDIs are called at the correct IRQL level. This rule applies to all EvtIoCallback functions.
 ms.date: 05/21/2018
 keywords: ["UsbKmdfIrqlExplicit rule (kmdf)"]

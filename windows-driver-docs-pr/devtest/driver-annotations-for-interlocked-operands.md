@@ -1,5 +1,5 @@
 ---
-title: Driver annotations for interlocked operands
+title: Driver Annotations for Interlocked Operands
 description: Driver annotations for interlocked operands
 ms.date: 08/24/2023
 ---

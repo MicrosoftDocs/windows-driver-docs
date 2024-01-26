@@ -1,5 +1,5 @@
 ---
-title: PeriodicTimer rule (ndis)
+title: PeriodicTimer Rule (Ndis)
 description: The PeriodicTimer rule specifies that the caller of NdisCancelTimerObject must be running at IRQL PASSIVE\_LEVEL if a nonzero value was specified in the MillisecondsPeriod parameter of the NdisSetTimerObject function.
 ms.date: 05/21/2018
 keywords: ["PeriodicTimer rule (ndis)"]

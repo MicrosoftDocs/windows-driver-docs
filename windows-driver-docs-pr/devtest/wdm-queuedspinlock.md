@@ -1,5 +1,5 @@
 ---
-title: QueuedSpinLock rule (wdm)
+title: QueuedSpinLock Rule (Wdm)
 description: The QueuedSpinLock rule specifies that the driver calls KeAcquireInStackQueuedSpinLock before calling KeReleaseInStackQueuedSpinLock and that the driver calls KeReleaseInStackQueuedSpinLock before any subsequent calls to KeAcquireInStackQueuedSpinLock.
 ms.date: 05/21/2018
 keywords: ["QueuedSpinLock rule (wdm)"]

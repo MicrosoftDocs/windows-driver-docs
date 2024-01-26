@@ -1,5 +1,5 @@
 ---
-title: StorPortStartIo rule (storport)
+title: StorPortStartIo Rule (Storport)
 description: Waits or data allocation must never be performed in the miniport's StartIo routine.
 ms.date: 05/21/2018
 keywords: ["StorPortStartIo rule (storport)"]

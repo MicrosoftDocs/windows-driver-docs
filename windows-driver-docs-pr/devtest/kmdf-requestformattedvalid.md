@@ -1,5 +1,5 @@
 ---
-title: RequestFormattedValid rule (kmdf)
+title: RequestFormattedValid Rule (Kmdf)
 description: The RequestFormattedValid rule specifies that the driver formats all requests, except for a WDF\_REQUEST\_SEND\_OPTION\_SEND\_AND\_FORGET request, before it sends them to an I/O target.
 ms.date: 05/21/2018
 keywords: ["RequestFormattedValid rule (kmdf)"]

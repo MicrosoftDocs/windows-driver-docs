@@ -1,5 +1,5 @@
 ---
-title: InputBufferAPI rule (kmdf)
+title: InputBufferAPI Rule (Kmdf)
 ms.date: 05/21/2018
 description: "Learn more about: InputBufferAPI rule (kmdf)"
 keywords: ["InputBufferAPI rule (kmdf)"]

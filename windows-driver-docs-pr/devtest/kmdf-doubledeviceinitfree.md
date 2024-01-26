@@ -1,5 +1,5 @@
 ---
-title: DoubleDeviceInitFree rule (kmdf)
+title: DoubleDeviceInitFree Rule (Kmdf)
 description: The DoubleDeviceInitFree rule specifies that drivers should not free device initialization structure twice.
 ms.date: 05/21/2018
 keywords: ["DoubleDeviceInitFree rule (kmdf)"]

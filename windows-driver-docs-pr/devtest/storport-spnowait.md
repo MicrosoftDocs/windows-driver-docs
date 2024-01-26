@@ -1,5 +1,5 @@
 ---
-title: SpNoWait rule (storport)
+title: SpNoWait Rule (Storport)
 description: This rule verifies that waits or data allocation are not performed inside StartIo.
 ms.date: 05/21/2018
 keywords: ["SpNoWait rule (storport)"]

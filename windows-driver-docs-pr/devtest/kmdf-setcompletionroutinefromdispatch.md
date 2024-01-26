@@ -1,5 +1,5 @@
 ---
-title: SetCompletionRoutineFromDispatch rule (kmdf)
+title: SetCompletionRoutineFromDispatch Rule (Kmdf)
 description: The SetCompletionRoutineFromDispatch rule verifies that the driver does not specify a completion routine on an IRP from their EvtDeviceWdmIrpDispatch callback function.
 ms.date: 05/21/2018
 keywords: ["SetCompletionRoutineFromDispatch rule (kmdf)"]

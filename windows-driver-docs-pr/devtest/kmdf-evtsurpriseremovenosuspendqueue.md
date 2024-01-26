@@ -1,5 +1,5 @@
 ---
-title: EvtSurpriseRemoveNoSuspendQueue rule (kmdf)
+title: EvtSurpriseRemoveNoSuspendQueue Rule (Kmdf)
 description: The EvtSurpriseRemoveNoSuspendQueue rule specifies that WDF Drivers shouldn’t drain, stop, or purge the queue from EvtDeviceSurpriseRemoval callback function, instead self-managed I/O callback functions should be used.
 ms.date: 05/21/2018
 keywords: ["EvtSurpriseRemoveNoSuspendQueue rule (kmdf)"]

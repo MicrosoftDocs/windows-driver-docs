@@ -1,5 +1,5 @@
 ---
-title: IrqlIoApcLte rule (wdm)
+title: IrqlIoApcLte Rule (Wdm)
 description: The IrqlIoApcLte rule specifies that the driver calls the following I/O manager routines only when it is executing at IRQL APC_LEVEL.
 ms.date: 05/21/2018
 keywords: ["IrqlIoApcLte rule (wdm)"]

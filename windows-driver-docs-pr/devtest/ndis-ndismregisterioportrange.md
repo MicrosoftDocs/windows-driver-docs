@@ -1,5 +1,5 @@
 ---
-title: NdisMRegisterIoPortRange rule (ndis)
+title: NdisMRegisterIoPortRange Rule (Ndis)
 description: A miniport driver calls NdisMRegisterIoPortRange from its MiniportInitializeEx or MINIPORT\_ADD\_DEVICE functions. MiniportInitializeEx or MINIPORT\_ADD\_DEVICE must call NdisMSetMiniportAttributes before calling NdisMRegisterIoPortRange.
 ms.date: 05/21/2018
 keywords: ["NdisMRegisterIoPortRange rule (ndis)"]

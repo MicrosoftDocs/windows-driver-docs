@@ -1,5 +1,5 @@
 ---
-title: NdisAllocateGenericObject rule (ndis)
+title: NdisAllocateGenericObject Rule (Ndis)
 description: The NdisAllocateGenericObject rule specifies that NdisAllocateGenericObject and NdisFreeGenericObject are called in alternate order. The ultimate goal is to make sure all generic objects are freed when MiniportHaltEx ends.
 ms.date: 05/21/2018
 keywords: ["NdisAllocateGenericObject rule (ndis)"]

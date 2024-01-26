@@ -1,5 +1,5 @@
 ---
-title: KsStreamPointerUnlock rule ()
+title: KsStreamPointerUnlock Rule ()
 description: The KsStreamPointerUnlock rule specifies that a kernel-streaming (KS) miniport driver unlocks all stream pointers before the driver is unloaded (or the device stopped).
 ms.date: 05/21/2018
 keywords: ["KsStreamPointerUnlock rule ()"]

@@ -1,5 +1,5 @@
 ---
-title: DoubleCompletion rule (wdm)
+title: DoubleCompletion Rule (Wdm)
 description: The DoubleCompletion (WDM) rule specifies that the driver must not call the IoCompleteRequest routine twice for the same IRP.
 ms.date: 05/21/2018
 keywords: ["DoubleCompletion rule (wdm)"]

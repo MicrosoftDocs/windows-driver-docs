@@ -1,5 +1,5 @@
 ---
-title: C28616 warning
+title: C28616 Warning
 description: Warning C28616 Multithreaded AV condition.
 ms.date: 09/19/2022
 f1_keywords: ["C28616", "INTERLOCKEDDECREMENT_MISUSE1", "__WARNING_INTERLOCKEDDECREMENT_MISUSE1"]

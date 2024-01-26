@@ -1,5 +1,5 @@
 ---
-title: EvtIoStopCancel rule (kmdf)
+title: EvtIoStopCancel Rule (Kmdf)
 description: The EvtIoStopCancel rule specifies that within the EvtIoStop callback function, the driver calls one of following methods for I/O requests that are not cancelable.
 ms.date: 05/21/2018
 keywords: ["EvtIoStopCancel rule (kmdf)"]

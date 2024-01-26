@@ -1,5 +1,5 @@
 ---
-title: How do I initialize WPP software tracing in a user-mode application
+title: How do I Initialize WPP Software Tracing in a User-Mode Application
 description: How do I initialize WPP software tracing in a user-mode application
 ms.date: 04/20/2017
 ---

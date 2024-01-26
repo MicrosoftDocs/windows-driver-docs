@@ -1,5 +1,5 @@
 ---
-title: NdisFilterTimedPauseComplete rule (ndis)
+title: NdisFilterTimedPauseComplete Rule (Ndis)
 description: The NdisFilterTimedPauseComplete verifies three things The FilterPause function will be completed in 10 seconds or less.The FilterPause function must not fail.The FilterPause function must not complete twice.
 ms.date: 05/21/2018
 keywords: ["NdisFilterTimedPauseComplete rule (ndis)"]

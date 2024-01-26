@@ -1,5 +1,5 @@
 ---
-title: PagedCode rule (wdm)
+title: PagedCode Rule (Wdm)
 description: The PagedCode rule specifies that the driver calls the PAGED_CODE macro only when it is executing at IRQL less than or equal to  APC_LEVEL.
 ms.date: 07/21/2021
 keywords: ["PagedCode rule (wdm)"]

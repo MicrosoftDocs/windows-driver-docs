@@ -1,5 +1,5 @@
 ---
-title: EvtIoStopResume rule (kmdf)
+title: EvtIoStopResume Rule (Kmdf)
 description: The EvtIoStopResume rule specifies that if a driver registers a EvtIoStop callback function and then calls WdfRequestStopAcknowledge with the Requeue parameter equal to FALSE, the driver must register a EvtIoResume callback function.
 ms.date: 05/21/2018
 keywords: ["EvtIoStopResume rule (kmdf)"]

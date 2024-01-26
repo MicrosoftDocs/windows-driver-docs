@@ -1,5 +1,5 @@
 ---
-title: PowerUpFail rule (wdm)
+title: PowerUpFail Rule (Wdm)
 description: The PowerUpFail rule specifies a FDO or FIDO driver should not fail a IRP\_MN\_SET\_POWER request when the device is powering up.
 ms.date: 05/21/2018
 keywords: ["PowerUpFail rule (wdm)"]

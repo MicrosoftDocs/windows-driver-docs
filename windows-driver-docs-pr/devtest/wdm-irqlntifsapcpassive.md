@@ -1,5 +1,5 @@
 ---
-title: IrqlNtifsApcPassive rule (wdm)
+title: IrqlNtifsApcPassive Rule (Wdm)
 description: The IrqlNtifsApcPassive rule specifies that the driver calls the DDIs listed in the rule only when it is executing either at IRQL = PASSIVE_LEVEL or at IRQL <= APC_LEVEL.
 ms.date: 04/03/2020
 keywords: ["IrqlNtifsApcPassive rule (wdm)"]

@@ -1,5 +1,5 @@
 ---
-title: Irql\_SendRcv\_Function rule (ndis)
+title: Irql_SendRcv_Function Rule (Ndis)
 description: The Irql\_SendRcv\_Function rule specifies that the send and receive functions for NDIS drivers must be called at correct IRQL levels.
 ms.date: 05/21/2018
 keywords: ["Irql_SendRcv_Function rule (ndis)"]

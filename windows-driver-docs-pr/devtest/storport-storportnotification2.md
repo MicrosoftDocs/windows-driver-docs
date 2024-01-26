@@ -1,5 +1,5 @@
 ---
-title: StorPortNotification2 rule (storport)
+title: StorPortNotification2 Rule (Storport)
 description: This rule verifies that calls to StorPortNotification use only allowed (i.e. documented) notification types.
 ms.date: 05/21/2018
 keywords: ["StorPortNotification2 rule (storport)"]

@@ -1,5 +1,5 @@
 ---
-title: StorPortSpinLock4 rule (storport)
+title: StorPortSpinLock4 Rule (Storport)
 description: This rule is the release counterpart of StorPortSpinLock. It is similar to the SpinLockRelease rule.
 ms.date: 05/21/2018
 keywords: ["StorPortSpinLock4 rule (storport)"]

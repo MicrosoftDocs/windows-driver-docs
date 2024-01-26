@@ -1,5 +1,5 @@
 ---
-title: IoAllocateIrpSignalEventInCompletion3 rule (wdm)
+title: IoAllocateIrpSignalEventInCompletion3 Rule (Wdm)
 description: The IoAllocateIrpSignalEventInCompletion3 rule specifies that KeSetEvent needs to be called in the completion routine when the Irp- PendingReturned flag is set and the completion routine is processing a locally created asynchronous IRP.
 ms.date: 05/21/2018
 keywords: ["IoAllocateIrpSignalEventInCompletion3 rule (wdm)"]

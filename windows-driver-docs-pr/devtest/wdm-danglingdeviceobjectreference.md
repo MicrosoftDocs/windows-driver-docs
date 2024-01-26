@@ -1,5 +1,5 @@
 ---
-title: DanglingDeviceObjectReference rule (wdm)
+title: DanglingDeviceObjectReference Rule (Wdm)
 description: The DanglingDeviceObjectReference rule specifies that the driver calls ObDereferenceObject with the same device object pointer that IoGetAttachedDeviceReference returned.
 ms.date: 05/21/2018
 keywords: ["DanglingDeviceObjectReference rule (wdm)"]

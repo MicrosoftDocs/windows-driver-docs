@@ -1,10 +1,10 @@
 ---
-title: Irql rule set (Storport)
+title: IRQL Rule Set (Storport)
 description: Use these rules to verify that your driver makes DDI calls at the required IRQL.A driver that does not follow the IRQL rules can cause serious problems during operation that can lead to deadlock conditions or computer crashes.
 ms.date: 05/21/2018
 ---
 
-# Irql rule set (Storport)
+# IRQL rule set (Storport)
 
 
 Use these rules to verify that your driver makes DDI calls at the required IRQL.

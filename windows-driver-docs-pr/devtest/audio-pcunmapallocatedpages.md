@@ -1,5 +1,5 @@
 ---
-title: PcUnmapAllocatedPages rule (audio)
+title: PcUnmapAllocatedPages Rule (Audio)
 description: The PcUnmapAllocatedPages rule specifies that A PortCls miniport driver doesn't map an MDL that is currently mapped without first unmapping it.A PortCls miniport driver unmaps the memory prior to freeing it using the IMiniportWaveRTStream interface.
 ms.date: 05/21/2018
 keywords: ["PcUnmapAllocatedPages rule (audio)"]

@@ -1,5 +1,5 @@
 ---
-title: Opening the Tracing Flags and Level Selection dialog box
+title: Opening the Tracing Flags and Level Selection Dialog Box
 description: Opening the Tracing Flags and Level Selection dialog box
 keywords:
 - trace flags WDK

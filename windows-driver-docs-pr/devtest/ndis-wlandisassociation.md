@@ -1,5 +1,5 @@
 ---
-title: WlanDisassociation rule (ndis)
+title: WlanDisassociation Rule (Ndis)
 description: The WlanDisassociation rule verifies that the miniport driver correctly follows the Native 802.11 wireless LAN (WLAN) disassociation sequence.
 ms.date: 05/21/2018
 keywords: ["WlanDisassociation rule (ndis)"]

@@ -1,5 +1,5 @@
 ---
-title: RemoveLockReleaseShutdown rule (wdm)
+title: RemoveLockReleaseShutdown Rule (Wdm)
 description: The RemoveLockReleaseShutdown rule verifies that calls to IoAcquireRemoveLock and IoReleaseRemoveLock are used in strict alternation. Moreover, at the end of the dispatch routine the driver should not hold the remove lock.
 ms.date: 05/21/2018
 keywords: ["RemoveLockReleaseShutdown rule (wdm)"]

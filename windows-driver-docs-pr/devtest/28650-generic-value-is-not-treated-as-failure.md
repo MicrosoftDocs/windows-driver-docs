@@ -1,5 +1,5 @@
 ---
-title: C28650 warning
+title: C28650 Warning
 description: The type for which 0 is being used does not treat it as failure case.
 ms.date: 04/20/2017
 f1_keywords: 

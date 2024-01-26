@@ -1,5 +1,5 @@
 ---
-title: Select locales and package type in the Device Metadata Authoring Wizard
+title: Select Locales and Package Type in the Device Metadata Authoring Wizard
 description: Select locales and package type in the Device Metadata Authoring Wizard
 keywords:
 - Select locales and package type in the Device Metadata Authoring Wizard

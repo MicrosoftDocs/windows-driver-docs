@@ -1,5 +1,5 @@
 ---
-title: C30029 warning
+title: C30029 Warning
 description: Warning C30029 Calling a memory allocating function that requests executable memory.
 ms.date: 08/23/2022
 f1_keywords: ["C30029", "BANNED_MEM_ALLOCATION_NOTYPE", "__WARNING_BANNED_MEM_ALLOCATION_NOTYPE"]

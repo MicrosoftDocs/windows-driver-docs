@@ -1,5 +1,5 @@
 ---
-title: SpinLock rule (ndis)
+title: SpinLock Rule (Ndis)
 description: The SpinLock rule verifies the correct use of the NDIS spin lock interface.
 ms.date: 05/21/2018
 keywords: ["SpinLock rule (ndis)"]

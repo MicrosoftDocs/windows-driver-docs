@@ -1,5 +1,5 @@
 ---
-title: Warning rule set (WDM)
+title: Warning Rule Set (WDM)
 description: Use these rules to verify that your driver can correctly processes IRPs in various contexts and follows Microsoft recommended best practices.
 ms.date: 05/21/2018
 ---

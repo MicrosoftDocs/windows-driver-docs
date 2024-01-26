@@ -1,5 +1,5 @@
 ---
-title: PdoInitFreeDeviceCreateType4 rule (kmdf)
+title: PdoInitFreeDeviceCreateType4 Rule (Kmdf)
 description: The PdoInitFreeDeviceCreateType4 rule specifies that the driver must call WdfDeviceInitFree if an error occurs when the driver calls WdfDeviceCreate.
 ms.date: 05/21/2018
 keywords: ["PdoInitFreeDeviceCreateType4 rule (kmdf)"]

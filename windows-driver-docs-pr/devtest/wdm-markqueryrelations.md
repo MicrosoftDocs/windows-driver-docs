@@ -1,5 +1,5 @@
 ---
-title: MarkQueryRelations rule (wdm)
+title: MarkQueryRelations Rule (Wdm)
 description: The MarkQueryRelations rule specifies that the driver should pend the IRP\_MN\_QUERY\_DEVICE\_RELATIONS IRP.
 ms.date: 05/21/2018
 keywords: ["MarkQueryRelations rule (wdm)"]

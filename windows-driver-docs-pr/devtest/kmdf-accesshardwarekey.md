@@ -1,5 +1,5 @@
 ---
-title: AccessHardwareKey rule (kmdf)
+title: AccessHardwareKey Rule (Kmdf)
 description: The AccessHardwareKey rule specifies that a bus driver should not try to access the hardware key of a child device from EvtChildListCreateDevice.
 ms.date: 05/21/2018
 keywords: ["AccessHardwareKey rule (kmdf)"]

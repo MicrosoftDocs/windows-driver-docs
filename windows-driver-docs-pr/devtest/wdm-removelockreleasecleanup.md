@@ -1,5 +1,5 @@
 ---
-title: RemoveLockReleaseCleanup rule (wdm)
+title: RemoveLockReleaseCleanup Rule (Wdm)
 description: The RemoveLockReleaseCleanup rule specifies that calls to IoAcquireRemoveLock and IoReleaseRemoveLock are used in strict alternation.
 ms.date: 05/21/2018
 keywords: ["RemoveLockReleaseCleanup rule (wdm)"]

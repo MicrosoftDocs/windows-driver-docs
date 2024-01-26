@@ -1,5 +1,5 @@
 ---
-title: CompleteCanceledReq rule (kmdf)
+title: CompleteCanceledReq Rule (Kmdf)
 description: The CompleteCanceledReq rule specifies that if the request has already been canceled, the request is no longer valid, and the driver should not complete it.
 ms.date: 05/21/2018
 keywords: ["CompleteCanceledReq rule (kmdf)"]

@@ -1,5 +1,5 @@
 ---
-title: How do I send trace messages to a kernel debugger
+title: How do I Send Trace Messages to a Kernel Debugger
 description: How do I send trace messages to a kernel debugger
 ms.date: 04/20/2017
 ---

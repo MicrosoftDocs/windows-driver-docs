@@ -1,5 +1,5 @@
 ---
-title: UsbContReader rule (kmdf)
+title: UsbContReader Rule (Kmdf)
 description: The UsbContReader rule specifies that a continuous reader is configured correctly within a driver's EvtDevicePrepareHardware event callback function, where the driver makes a call to the WdfUsbTargetPipeConfigContinuousReader method.
 ms.date: 05/21/2018
 keywords: ["UsbContReader rule (kmdf)"]

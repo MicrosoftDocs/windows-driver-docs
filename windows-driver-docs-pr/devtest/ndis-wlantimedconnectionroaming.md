@@ -1,5 +1,5 @@
 ---
-title: WlanTimedConnectionRoaming rule (ndis)
+title: WlanTimedConnectionRoaming Rule (Ndis)
 description: The WlanTimedConnectionRoaming rule specifies that the NDIS miniport driver finishes the wireless LAN (WLAN) connection/roaming operations within 10 seconds.
 ms.date: 05/21/2018
 keywords: ["WlanTimedConnectionRoaming rule (ndis)"]

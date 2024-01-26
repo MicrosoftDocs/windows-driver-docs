@@ -1,5 +1,5 @@
 ---
-title: MarkStartDevice rule (wdm)
+title: MarkStartDevice Rule (Wdm)
 description: The MarkStartDevice rule specifies that the driver pends an IRP\_MN\_START\_DEVICE IRP correctly. This rule only applies to FDO and FIDO drivers.
 ms.date: 05/21/2018
 keywords: ["MarkStartDevice rule (wdm)"]

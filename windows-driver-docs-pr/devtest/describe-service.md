@@ -1,5 +1,5 @@
 ---
-title: Describe your service in the Mobile Broadband Metadata Authoring Wizard
+title: Describe your Service in the Mobile Broadband Metadata Authoring Wizard
 description: Describe your service in the Mobile Broadband Metadata Authoring Wizard
 keywords:
 - Describe your service in the Mobile Broadband Metadata Authoring Wizard

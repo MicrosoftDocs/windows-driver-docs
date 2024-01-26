@@ -1,5 +1,5 @@
 ---
-title: FailD0EntryIoTargetState rule (kmdf)
+title: FailD0EntryIoTargetState Rule (Kmdf)
 description: The FailD0EntryIoTargetState rule specifies that an I/O target for a USB continuous reader started within the EvtDeviceD0Entry will get stopped appropriately from the same callback if the EvtDeviceD0Entry fails.
 ms.date: 05/21/2018
 keywords: ["FailD0EntryIoTargetState rule (kmdf)"]

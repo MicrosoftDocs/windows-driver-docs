@@ -1,5 +1,5 @@
 ---
-title: SpinLockDpc rule (wdm)
+title: SpinLockDpc Rule (Wdm)
 description: The SpinLockDpc rule specifies that calls to KeAcquireSpinLock or KeAcquireSpinLockRaiseToDpc and KeReleaseSpinLock must be made in strict alternation.
 ms.date: 05/21/2018
 keywords: ["SpinLockDpc rule (wdm)"]

@@ -1,5 +1,5 @@
 ---
-title: IrqlIoRtlZwPassive rule (wdm)
+title: IrqlIoRtlZwPassive Rule (Wdm)
 description: The IrqlIoRtlZwPassive rule specifies that the driver calls the DDIs listed in the rule only when it is executing at IRQL = PASSIVE_LEVEL.
 ms.date: 04/03/2020
 keywords: ["IrqlIoRtlZwPassive rule (wdm)"]

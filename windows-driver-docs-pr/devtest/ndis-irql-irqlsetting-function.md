@@ -1,5 +1,5 @@
 ---
-title: Irql\_IrqlSetting\_Function rule (ndis)
+title: Irql_IrqlSetting_Function Rule (Ndis)
 description: The Irql\_IrqlSetting\_Function rule specifies that the NDIS interrupt macros must be called at correct IRQL levels.
 ms.date: 05/21/2018
 keywords: ["Irql_IrqlSetting_Function rule (ndis)"]

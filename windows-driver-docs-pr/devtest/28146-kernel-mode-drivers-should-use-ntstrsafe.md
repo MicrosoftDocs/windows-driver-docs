@@ -1,5 +1,5 @@
 ---
-title: C28146 warning
+title: C28146 Warning
 description: Warning C28146 Kernel Mode drivers should use ntstrsafe.h, not strsafe.h. Found in source file.
 keywords:
 - warnings listed WDK PREfast for Drivers

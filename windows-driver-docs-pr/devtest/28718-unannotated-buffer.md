@@ -1,5 +1,5 @@
 ---
-title: C28718 warning
+title: C28718 Warning
 description: Warning C28718 Unannotated buffer.
 ms.date: 04/20/2017
 f1_keywords: 

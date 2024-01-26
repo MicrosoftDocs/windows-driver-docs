@@ -1,5 +1,5 @@
 ---
-title: CheckDeviceObjectFlags rule (wdm)
+title: CheckDeviceObjectFlags Rule (Wdm)
 description: The CheckDeviceObjectFlags rule specifies that a bus driver must check that the device object flags for DO\_POWER\_PAGABLE and DO\_POWER\_INRUSH are set consistently for the FDO and the child PDOs. This rule only applies to bus drivers.
 ms.date: 05/21/2018
 keywords: ["CheckDeviceObjectFlags rule (wdm)"]

@@ -1,5 +1,5 @@
 ---
-title: NdisFDeregisterFilterDriver rule (ndis)
+title: NdisFDeregisterFilterDriver Rule (Ndis)
 description: A filter driver must call NdisFDeregisterFilterDriver from its FilterDriverUnload routine.
 ms.date: 05/21/2018
 keywords: ["NdisFDeregisterFilterDriver rule (ndis)"]

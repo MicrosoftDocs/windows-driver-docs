@@ -1,5 +1,5 @@
 ---
-title: ReqDelete rule (kmdf)
+title: ReqDelete Rule (Kmdf)
 description: The ReqDelete rule specifies that driver-created requests are not passed to WdfRequestCompleteXxx functions. Instead, the request should be deleted upon completion.
 ms.date: 05/21/2018
 keywords: ["ReqDelete rule (kmdf)"]

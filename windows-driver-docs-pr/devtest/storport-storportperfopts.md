@@ -1,5 +1,5 @@
 ---
-title: StorPortPerfOpts rule (storport)
+title: StorPortPerfOpts Rule (Storport)
 description: This rule verifies that the PerfConfigData parameter that is passed to StorPortInitializePerfOpts is not NULL.
 ms.date: 05/21/2018
 keywords: ["StorPortPerfOpts rule (storport)"]

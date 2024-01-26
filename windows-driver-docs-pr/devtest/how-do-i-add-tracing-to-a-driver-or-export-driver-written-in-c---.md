@@ -1,5 +1,5 @@
 ---
-title: How do I add tracing to a driver or export driver written in C++
+title: How do I Add Tracing to a Driver or Export Driver Written in C++
 description: How do I add tracing to a driver or export driver written in C++
 ms.date: 04/20/2017
 ---

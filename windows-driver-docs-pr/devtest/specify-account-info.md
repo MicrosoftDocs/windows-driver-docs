@@ -1,5 +1,5 @@
 ---
-title: Specify account information in the Mobile Broadband Metadata Authoring Wizard
+title: Specify Account Information in the Mobile Broadband Metadata Authoring Wizard
 description: Specify account information in the Mobile Broadband Metadata Authoring Wizard
 keywords:
 - Specify account information in the Mobile Broadband Metadata Authoring Wizard

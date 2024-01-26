@@ -1,5 +1,5 @@
 ---
-title: Init\_NdisAllocateIoWorkItem rule (ndis)
+title: Init_NdisAllocateIoWorkItem Rule (Ndis)
 description: The Init\_NdisAllocateIoWorkItem rule specifies that if NdisAllocateIoWorkItem is called at least once during MiniportInitializeEx, the NdisFreeIoWorkItem function should - be called at least once in MPHaltEx, if MiniportInitializeEx succeeds.
 ms.date: 05/21/2018
 keywords: ["Init_NdisAllocateIoWorkItem rule (ndis)"]

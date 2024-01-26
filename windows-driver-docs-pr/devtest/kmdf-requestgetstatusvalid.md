@@ -1,5 +1,5 @@
 ---
-title: RequestGetStatusValid rule (kmdf)
+title: RequestGetStatusValid Rule (Kmdf)
 description: The RequestGetStatusValid rule that specifies that WdfRequestGetStatus should be called for a request in one of the following situations When WdfRequestSend returns failure.When the request has been sent with WDF\_REQUEST\_SEND\_OPTION\_SYNCHRONOUS.
 ms.date: 05/21/2018
 keywords: ["RequestGetStatusValid rule (kmdf)"]

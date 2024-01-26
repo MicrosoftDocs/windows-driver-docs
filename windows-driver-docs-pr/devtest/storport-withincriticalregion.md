@@ -1,5 +1,5 @@
 ---
-title: WithinCriticalRegion rule (storport)
+title: WithinCriticalRegion Rule (Storport)
 description: This rule verifies that the driver's calls to certain synchronization functions are made only while normal kernel APC delivery is disabled.
 ms.date: 05/21/2018
 keywords: ["WithinCriticalRegion rule (storport)"]

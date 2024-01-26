@@ -1,5 +1,5 @@
 ---
-title: Using the _analysis_assume Function to Suppress False Defects
+title: Using the _Analysis_Assume Function to Suppress False Defects
 description: Using the _analysis_assume Function to Suppress False Defects
 ms.date: 04/20/2017
 ---

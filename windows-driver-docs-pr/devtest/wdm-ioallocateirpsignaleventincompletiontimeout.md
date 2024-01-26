@@ -1,5 +1,5 @@
 ---
-title: IoAllocateIrpSignalEventInCompletionTimeout rule (wdm)
+title: IoAllocateIrpSignalEventInCompletionTimeout Rule (Wdm)
 description: The IoAllocateIrpSignalEventInCompletionTimeout rule reports a defect if it detects that this driver will wait indefinitely until the lower driver returns, as the IRP’s event is required to be signaled in the completion routine.
 ms.date: 05/21/2018
 keywords: ["IoAllocateIrpSignalEventInCompletionTimeout rule (wdm)"]

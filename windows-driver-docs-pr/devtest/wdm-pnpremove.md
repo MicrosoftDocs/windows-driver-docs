@@ -1,5 +1,5 @@
 ---
-title: PnpRemove rule (wdm)
+title: PnpRemove Rule (Wdm)
 description: The PnpRemove rule specifies that the driver cannot complete IRP\_MN\_SURPRISE\_REMOVAL, IRP\_MN\_CANCEL\_REMOVE\_DEVICE, IRP\_MN\_CANCEL\_STOP\_DEVICE, or IRP\_MN\_REMOVE\_DEVICE requests with a failure.
 ms.date: 05/21/2018
 keywords: ["PnpRemove rule (wdm)"]

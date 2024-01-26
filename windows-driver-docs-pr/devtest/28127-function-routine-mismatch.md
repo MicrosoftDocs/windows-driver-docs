@@ -1,5 +1,5 @@
 ---
-title: C28127 warning
+title: C28127 Warning
 description: Warning C28127 The function being used as a routine does not exactly match the type expected.
 keywords:
 - warnings listed WDK PREfast for Drivers

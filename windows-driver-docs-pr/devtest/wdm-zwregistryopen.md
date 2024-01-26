@@ -1,5 +1,5 @@
 ---
-title: ZwRegistryOpen rule (wdm)
+title: ZwRegistryOpen Rule (Wdm)
 ms.date: 05/21/2018
 description: "Learn more about: ZwRegistryOpen rule (wdm)"
 keywords: ["ZwRegistryOpen rule (wdm)"]

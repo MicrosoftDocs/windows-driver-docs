@@ -1,5 +1,5 @@
 ---
-title: FDOPowerPolicyOwnerAPI rule (kmdf)
+title: FDOPowerPolicyOwnerAPI Rule (Kmdf)
 description: The FDOPowerPolicyOwnerAPI rule specifies that if an FDO driver relinquishes power policy ownership, the methods WdfDeviceInitSetPowerPolicyEventCallbacks, WdfDeviceAssignS0IdleSettings, and WdfDeviceAssignSxWakeSettings can only be called on the execution paths where the driver is a power policy owner. SDV issues a warning for this rule.
 ms.date: 05/21/2018
 keywords: ["FDOPowerPolicyOwnerAPI rule (kmdf)"]

@@ -1,5 +1,5 @@
 ---
-title: MultRemoveLock rule (wdm)
+title: MultRemoveLock Rule (Wdm)
 description: The MultRemoveLock rule verifies that IoAcquireRemoveLock is called with only one unique Remove Lock. This is a warning rule.
 ms.date: 05/21/2018
 keywords: ["MultRemoveLock rule (wdm)"]

@@ -1,5 +1,5 @@
 ---
-title: IrpCancelField rule (wdm)
+title: IrpCancelField Rule (Wdm)
 description: The IrpCancelField rule specifies that the driver check the value of the Irp- Cancel member when setting a cancel routine on an IRP that it has pended.
 ms.date: 05/21/2018
 keywords: ["IrpCancelField rule (wdm)"]

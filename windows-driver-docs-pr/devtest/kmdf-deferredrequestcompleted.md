@@ -1,5 +1,5 @@
 ---
-title: DeferredRequestCompleted rule (kmdf)
+title: DeferredRequestCompleted Rule (Kmdf)
 description: The DeferredRequestCompleted rule specifies that if an I/O request presented to a driver's default I/O queue is not completed in the callback function but is deferred for later processing, the request must be completed in a deferred processing callback function, unless the request is forwarded and delivered to the framework, or unless the WdfRequestStopAcknowledge method is called.
 ms.date: 05/21/2018
 keywords: ["DeferredRequestCompleted rule (kmdf)"]

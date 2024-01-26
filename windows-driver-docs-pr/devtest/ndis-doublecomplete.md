@@ -1,5 +1,5 @@
 ---
-title: DoubleComplete rule (ndis)
+title: DoubleComplete Rule (Ndis)
 description: The DoubleComplete rule specifies that NDIS drivers must not complete an object identifier (OID) request multiple times.
 ms.date: 05/21/2018
 keywords: ["DoubleComplete rule (ndis)"]

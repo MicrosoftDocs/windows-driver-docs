@@ -1,5 +1,5 @@
 ---
-title: What happens to NULL strings in tracing code
+title: What Happens to NULL Strings in Tracing Code
 description: What happens to NULL strings in tracing code
 ms.date: 04/20/2017
 ---

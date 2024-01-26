@@ -1,5 +1,5 @@
 ---
-title: Flags\_Irql rule (ndis)
+title: Flags_Irql Rule (Ndis)
 description: The Flags\_Irql rule specifies that KeGetCurrentIrql must not be called within callback functions that have a dispatch level flag parameter that indicates the current IRQL.
 ms.date: 05/21/2018
 keywords: ["Flags_Irql rule (ndis)"]

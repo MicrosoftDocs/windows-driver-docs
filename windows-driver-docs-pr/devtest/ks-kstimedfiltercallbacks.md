@@ -1,5 +1,5 @@
 ---
-title: KsTimedFilterCallbacks rule ()
+title: KsTimedFilterCallbacks Rule ()
 description: The KsTimedFilterCallbacks rule specifies that a kernel-streaming (KS) miniport driver returns from a filter callback function within 500 ms.
 ms.date: 05/21/2018
 keywords: ["KsTimedFilterCallbacks rule ()"]

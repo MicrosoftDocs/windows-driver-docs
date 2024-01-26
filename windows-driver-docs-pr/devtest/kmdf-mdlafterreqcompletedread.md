@@ -1,5 +1,5 @@
 ---
-title: MdlAfterReqCompletedRead rule (kmdf)
+title: MdlAfterReqCompletedRead Rule (Kmdf)
 description: The MdlAfterReqCompletedRead rule specifies that within the EvtIoRead callback function, the memory descriptor list (MDL) object retrieved cannot be accessed after the I/O request is completed.
 ms.date: 05/21/2018
 keywords: ["MdlAfterReqCompletedRead rule (kmdf)"]

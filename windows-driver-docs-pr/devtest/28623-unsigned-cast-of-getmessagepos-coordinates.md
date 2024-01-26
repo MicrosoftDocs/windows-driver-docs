@@ -1,5 +1,5 @@
 ---
-title: C28623 warning
+title: C28623 Warning
 description: Warning C28623 Unsigned cast of GetMessagePos() coordinates. Use GET_X_LPARAM/GET_Y_LPARAM instead of LOWORD/HIWORD.
 ms.date: 04/20/2017
 f1_keywords: 

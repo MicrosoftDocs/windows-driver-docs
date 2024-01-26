@@ -1,5 +1,5 @@
 ---
-title: NdisStallExecution\_Delay rule (ndis)
+title: NdisStallExecution_Delay Rule (Ndis)
 description: The NdisStallExecution\_Delay rule specifies that NdisStallExecution must never be called by using a value for MicrosecondsToStall that is greater than 50 microseconds.
 ms.date: 05/21/2018
 keywords: ["NdisStallExecution_Delay rule (ndis)"]

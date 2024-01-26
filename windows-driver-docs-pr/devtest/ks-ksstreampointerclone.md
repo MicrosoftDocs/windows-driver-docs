@@ -1,5 +1,5 @@
 ---
-title: KsStreamPointerClone rule ()
+title: KsStreamPointerClone Rule ()
 description: The KsStreamPointerClone rule specifies that a kernel-stream (KS) miniport driver correctly uses the KsStreamPointerClone and KsStreamPointerDelete functions.
 ms.date: 05/21/2018
 keywords: ["KsStreamPointerClone rule ()"]

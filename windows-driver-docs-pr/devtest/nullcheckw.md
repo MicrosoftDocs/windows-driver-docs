@@ -1,5 +1,5 @@
 ---
-title: NullCheck rule (wdm)
+title: NullCheck Rule (Wdm)
 description: The NullCheck rule verifies that a NULL value inside the driver code is not dereferenced later in the driver.
 ms.date: 05/21/2018
 keywords: ["NullCheck rule (wdm)"]

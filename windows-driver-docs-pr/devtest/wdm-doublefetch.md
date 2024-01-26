@@ -1,5 +1,5 @@
 ---
-title: DoubleFetch rule (wdm)
+title: DoubleFetch Rule (Wdm)
 description: Learn about the DoubleFetch rule (wdm). 
 ms.date: 10/21/2020
 keywords: ["DoubleFetch rule (wdm)"]

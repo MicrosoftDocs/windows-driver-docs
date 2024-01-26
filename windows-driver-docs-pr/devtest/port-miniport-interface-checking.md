@@ -1,5 +1,5 @@
 ---
-title: Port/Miniport interface checking
+title: Port/Miniport Interface Checking
 description: Port/Miniport interface checking
 keywords:
 - Port/Miniport interface checking

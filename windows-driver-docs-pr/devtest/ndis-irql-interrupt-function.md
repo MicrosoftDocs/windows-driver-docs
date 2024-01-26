@@ -1,5 +1,5 @@
 ---
-title: Irql\_Interrupt\_Function rule (ndis)
+title: Irql_Interrupt_Function Rule (Ndis)
 description: The Irql\_Interrupt\_Function rule specifies that the NDIS functions for interrupts must be called at correct IRQL levels.
 ms.date: 05/21/2018
 keywords: ["Irql_Interrupt_Function rule (ndis)"]

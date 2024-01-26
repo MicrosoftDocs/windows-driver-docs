@@ -1,5 +1,5 @@
 ---
-title: Wmimofck task
+title: Wmimofck Task
 description: The Windows Driver Kit (WDK) provides the Wmimofck task so you can run the wmimofck.exe tool when you build a driver using MSBuild.
 ms.date: 04/20/2017
 ---

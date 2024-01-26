@@ -1,5 +1,5 @@
 ---
-title: KsStreamPointerLock rule ()
+title: KsStreamPointerLock Rule ()
 description: The KsStreamPointerLock rule specifies that a kernel-streaming (KS) miniport driver uses the KsStreamPointerLock and KsStreamPointerUnlock functions in the correct sequence.
 ms.date: 05/21/2018
 keywords: ["KsStreamPointerLock rule ()"]

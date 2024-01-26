@@ -1,5 +1,5 @@
 ---
-title: ReqNotCanceledLocal rule (kmdf)
+title: ReqNotCanceledLocal Rule (Kmdf)
 description: The ReqNotCanceledLocal rule specifies that if a request marked as cancelable is completed in a default I/O queue callback function, the WdfRequestUnmarkCancelable method must be called on the I/O request before completion.
 ms.date: 05/21/2018
 keywords: ["ReqNotCanceledLocal rule (kmdf)"]

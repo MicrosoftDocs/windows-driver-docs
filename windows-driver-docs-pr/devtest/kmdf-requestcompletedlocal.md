@@ -1,5 +1,5 @@
 ---
-title: RequestCompletedLocal rule (kmdf)
+title: RequestCompletedLocal Rule (Kmdf)
 description: The RequestCompletedLocal rule specifies that if an I/O request is not completed in any of the EvtIoDefault, EvtIoRead, EvtIoWrite, EvtIoDeviceControl, and EvtIoInternalDeviceControl callback functions, and if WdfRequestMarkCancelable was not called on the request within the callback function, there might be a problem with request completion in the driver's code.
 ms.date: 05/21/2018
 keywords: ["RequestCompletedLocal rule (kmdf)"]

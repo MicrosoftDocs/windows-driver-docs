@@ -1,5 +1,5 @@
 ---
-title: Backing up Boot Options in EFI
+title: Backing Up Boot Options in EFI
 description: Backing up Boot Options in EFI
 keywords:
 - back ups WDK boot options , EFI

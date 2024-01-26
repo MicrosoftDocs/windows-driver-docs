@@ -1,5 +1,5 @@
 ---
-title: How to set advanced trace session options
+title: How to Set Advanced Trace Session Options
 description: How to set advanced trace session options
 keywords:
 - trace sessions WDK , advanced options

@@ -1,5 +1,5 @@
 ---
-title: NdisTimedOidComplete rule (ndis)
+title: NdisTimedOidComplete Rule (Ndis)
 description: The NdisTimedOidComplete rule specifies that the NDIS miniport driver completes an OID request within 12 seconds.
 ms.date: 05/21/2018
 keywords: ["NdisTimedOidComplete rule (ndis)"]

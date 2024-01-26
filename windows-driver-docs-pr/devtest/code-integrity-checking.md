@@ -1,5 +1,5 @@
 ---
-title: Code integrity checks
+title: Code Integrity Checks
 description: Code integrity checks for Driver Verifier
 keywords:
 - Code integrity checks for Driver Verifier

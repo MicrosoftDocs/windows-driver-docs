@@ -1,5 +1,5 @@
 ---
-title: KsCallbackReturn rule ()
+title: KsCallbackReturn Rule ()
 description: The KsCallbackReturn rule specifies that a kernel-streaming (KS) miniport driver callback function returns only allowed status values.
 ms.date: 05/21/2018
 keywords: ["KsCallbackReturn rule ()"]

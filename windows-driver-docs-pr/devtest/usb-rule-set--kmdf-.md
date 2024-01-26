@@ -1,5 +1,5 @@
 ---
-title: Usb rule set (KMDF)
+title: Usb Rule Set (KMDF)
 description: Use these rules to verify that your driver correctly handles some specialized KMDF methods for USB devices.
 ms.date: 05/21/2018
 ---

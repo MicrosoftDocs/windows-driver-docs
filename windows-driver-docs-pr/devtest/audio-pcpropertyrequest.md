@@ -1,5 +1,5 @@
 ---
-title: PcPropertyRequest rule (audio)
+title: PcPropertyRequest Rule (Audio)
 description: The PcPropertyRequest rule specifies that a PortCls miniport driver should never call the PcCompletePendingPropertyRequest with an NtStatus value of STATUS\_PENDING.
 ms.date: 05/21/2018
 keywords: ["PcPropertyRequest rule (audio)"]

@@ -1,5 +1,5 @@
 ---
-title: DDI usage rule set (Storport)
+title: DDI Usage Rule Set (Storport)
 description: Use these rules to verify that your driver correctly uses Storport DDIs correctly.
 ms.date: 05/21/2018
 ---

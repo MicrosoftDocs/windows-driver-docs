@@ -1,5 +1,5 @@
 ---
-title: Init\_DeRegisterInterrupt rule (ndis)
+title: Init_DeRegisterInterrupt Rule (Ndis)
 description: The Init\_DeRegisterInterrupt rule specifies that if NdisMRegisterInterruptEx is called at least once during MPInitilize, NdisMDeregisterInterruptEx should be called at least once in MPHaltEx.
 ms.date: 05/21/2018
 keywords: ["Init_DeRegisterInterrupt rule (ndis)"]

@@ -1,5 +1,5 @@
 ---
-title: Irql\_MCM\_Function rule (ndis)
+title: Irql_MCM_Function Rule (Ndis)
 description: The Irql\_MCM\_Function rule specifies that the NDIS MCM functions for drivers must be called at correct IRQL levels.
 ms.date: 05/21/2018
 keywords: ["Irql_MCM_Function rule (ndis)"]

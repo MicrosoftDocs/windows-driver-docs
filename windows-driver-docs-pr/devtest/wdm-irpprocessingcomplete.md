@@ -1,5 +1,5 @@
 ---
-title: IrpProcessingComplete rule (wdm)
+title: IrpProcessingComplete Rule (Wdm)
 description: The IrpProcessingComplete rule specifies that if a dispatch routine returns STATUS\_SUCCESS, the IRP must have been completed by either the driver itself or by a lower-level driver.
 ms.date: 05/21/2018
 keywords: ["IrpProcessingComplete rule (wdm)"]

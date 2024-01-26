@@ -1,5 +1,5 @@
 ---
-title: WlanTimedScan rule (ndis)
+title: WlanTimedScan Rule (Ndis)
 description: The WlanTimedScan rule verifies that a WLAN scan operation is completed within 15 seconds.
 ms.date: 05/21/2018
 keywords: ["WlanTimedScan rule (ndis)"]

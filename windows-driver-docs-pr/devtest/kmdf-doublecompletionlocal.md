@@ -1,5 +1,5 @@
 ---
-title: DoubleCompletionLocal rule (kmdf)
+title: DoubleCompletionLocal Rule (Kmdf)
 description: The DoubleCompletionLocal rule specifies that drivers must not complete an I/O request twice.
 ms.date: 05/21/2018
 keywords: ["DoubleCompletionLocal rule (kmdf)"]

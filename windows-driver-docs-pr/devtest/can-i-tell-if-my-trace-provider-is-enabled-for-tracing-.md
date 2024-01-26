@@ -1,5 +1,5 @@
 ---
-title: Can I tell if my trace provider is enabled for tracing
+title: Can I Tell if My Trace Provider is Enabled for Tracing
 description: Can I tell if my trace provider is enabled for tracing
 ms.date: 04/20/2017
 ---

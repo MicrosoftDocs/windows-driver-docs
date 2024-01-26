@@ -1,5 +1,5 @@
 ---
-title: RemoveLockMnRemove2 rule (wdm)
+title: RemoveLockMnRemove2 Rule (Wdm)
 description: The RemoveLockMnRemove2 rule verifies that calls to IoAcquireRemoveLock and IoReleaseRemoveLockAndWait are used correctly when processing IRP\_MN\_REMOVE\_DEVICE request before the IRP is forwarded to lower drivers.
 ms.date: 05/21/2018
 keywords: ["RemoveLockMnRemove2 rule (wdm)"]

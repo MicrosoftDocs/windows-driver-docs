@@ -1,5 +1,5 @@
 ---
-title: StorPortTimer rule (storport)
+title: StorPortTimer Rule (Storport)
 description: The HW\_TIMER routine must be defined if a call to StorPortNotification(RequestTimerCall) is made.
 ms.date: 05/21/2018
 keywords: ["StorPortTimer rule (storport)"]

@@ -1,5 +1,5 @@
 ---
-title: OutputBufferAPI rule (kmdf)
+title: OutputBufferAPI Rule (Kmdf)
 ms.date: 05/21/2018
 description: "Learn more about: OutputBufferAPI rule (kmdf)"
 keywords: ["OutputBufferAPI rule (kmdf)"]

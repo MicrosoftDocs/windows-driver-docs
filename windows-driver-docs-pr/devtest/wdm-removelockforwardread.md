@@ -1,5 +1,5 @@
 ---
-title: RemoveLockForwardRead rule (wdm)
+title: RemoveLockForwardRead Rule (Wdm)
 description: The RemoveLockForwardRead rule verifies that calls to IoAcquireRemoveLock and IoReleaseRemoveLock are used in correctly.
 ms.date: 05/21/2018
 keywords: ["RemoveLockForwardRead rule (wdm)"]

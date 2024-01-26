@@ -1,5 +1,5 @@
 ---
-title: ForwardedAtBadIrqlFsdSync rule
+title: ForwardedAtBadIrqlFsdSync Rule
 description: The ForwardedAtBadIrqlFsdSync rule specifies that the driver call IoCallDriver and PoCallDriver at IRQL DISPATCH\_LEVEL, unless the IRP major function code being forwarded is one of the following IRP\_MJ\_POWERIRP\_MJ\_READIRP\_MJ\_WRITEIRP\_MJ\_DEVICE\_CONTROLIRP\_MJ\_INTERNAL\_DEVICE\_CONTROL.
 ms.date: 05/21/2018
 keywords: ["ForwardedAtBadIrqlFsdSync rule"]

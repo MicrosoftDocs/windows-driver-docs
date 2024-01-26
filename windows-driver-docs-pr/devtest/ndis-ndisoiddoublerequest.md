@@ -1,5 +1,5 @@
 ---
-title: NdisOidDoubleRequest rule (ndis)
+title: NdisOidDoubleRequest Rule (Ndis)
 description: This NdisOidDoubleRequest rule verifies that Minport driver must complete the NDIS\_OID\_REQUEST that is currently pending.
 ms.date: 05/21/2018
 keywords: ["NdisOidDoubleRequest rule (ndis)"]

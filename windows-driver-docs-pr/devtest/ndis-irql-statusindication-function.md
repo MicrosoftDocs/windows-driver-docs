@@ -1,5 +1,5 @@
 ---
-title: Irql\_StatusIndication\_Function rule (ndis)
+title: Irql_StatusIndication_Function Rule (Ndis)
 description: The Irql\_StatusIndication\_Function rule specifies that the NDIS status indication functions for miniport and filter drivers must be called at correct IRQL levels.
 ms.date: 05/21/2018
 keywords: ["Irql_StatusIndication_Function rule (ndis)"]

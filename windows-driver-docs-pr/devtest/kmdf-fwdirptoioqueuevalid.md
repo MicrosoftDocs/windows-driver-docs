@@ -1,5 +1,5 @@
 ---
-title: FwdIrpToIoQueueValid rule (kmdf)
+title: FwdIrpToIoQueueValid Rule (Kmdf)
 description: The rule FwdIrpToIoQueueValid specifies that the driver sends an IRP to an I/O queue, using WdfDeviceWdmDispatchIrpToIoQueue method from either the EvtDeviceWdmIrpDispatch callback or the EvtDeviceWdmIrpPreprocess callback.
 ms.date: 05/21/2018
 keywords: ["FwdIrpToIoQueueValid rule (kmdf)"]

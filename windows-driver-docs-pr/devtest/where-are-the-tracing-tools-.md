@@ -1,5 +1,5 @@
 ---
-title: Where are the tracing tools
+title: Where are the Tracing Tools
 description: Where are the tracing tools
 ms.date: 04/20/2017
 ---

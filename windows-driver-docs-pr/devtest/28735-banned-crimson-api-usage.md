@@ -1,5 +1,5 @@
 ---
-title: C28735 warning
+title: C28735 Warning
 description: Warning C28735 Banned Crimson API Usage.
 ms.date: 04/20/2017
 f1_keywords: 

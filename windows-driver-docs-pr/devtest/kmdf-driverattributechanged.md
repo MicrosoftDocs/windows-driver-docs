@@ -1,5 +1,5 @@
 ---
-title: DriverAttributeChanged rule (kmdf)
+title: DriverAttributeChanged Rule (Kmdf)
 description: The DriverAttributeChanged rule specifies that a driver must not change the execution level or synchronization scope of a KMDF driver.
 ms.date: 05/21/2018
 keywords: ["DriverAttributeChanged rule (kmdf)"]

@@ -1,5 +1,5 @@
 ---
-title: TargetRelationNeedsRef rule (wdm)
+title: TargetRelationNeedsRef Rule (Wdm)
 description: The TargetRelationNeedsRef rule specifies that when processing a TargetDeviceRelation query, the driver's DispatchPnP routine calls one of the following functions to reference the child device's PDO ObReferenceObjectObReferenceObjectByHandleObReferenceObjectByPointer.
 ms.date: 05/21/2018
 keywords: ["TargetRelationNeedsRef rule (wdm)"]

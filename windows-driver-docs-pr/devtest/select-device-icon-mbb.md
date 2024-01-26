@@ -1,5 +1,5 @@
 ---
-title: Select service icon in the Mobile Broadband Metadata Authoring Wizard
+title: Select Service Icon in the Mobile Broadband Metadata Authoring Wizard
 description: Select service icon in the Mobile Broadband Metadata Authoring Wizard
 keywords:
 - Select service icon in the Mobile Broadband Metadata Authoring Wizard

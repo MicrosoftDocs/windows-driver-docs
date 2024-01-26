@@ -1,5 +1,5 @@
 ---
-title: WlanTimedLinkQuality rule (ndis)
+title: WlanTimedLinkQuality Rule (Ndis)
 description: The WlanTimedLinkQuality rule specifies the NDIS\_STATUS\_DOT11\_LINK\_QUALITY indication is made in 15 seconds after a successful NDIS\_STATUS\_DOT11\_ASSOCIATION\_COMPLETION.
 ms.date: 05/21/2018
 keywords: ["WlanTimedLinkQuality rule (ndis)"]
