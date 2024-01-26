@@ -238,6 +238,8 @@ The main benefits of monitoring compared to the other methods are:
 - The target app will run with its normal privileges. If you launch the app directly from ttd.exe it will launch elevated and that may change the behavior of the program.
 - It is useful for automation (use a script that monitors the launch of a program and collects a trace).
 
+The -monitor option can be specified more than once to monitor multiple programs.
+
 For example usage, see [Scenario usage examples - monitoring processes](#scenario-usage-examples---monitoring-processes).
 
 ## Command line options
@@ -363,6 +365,24 @@ If TTD.exe fails to record, or the .out file indicates a simulation of 0 seconds
 | `MostAggressive`   | Assumes that the replay CPU will be similar and of equal or greater capability than the CPU used to record. |
 |`IntelAvxRequired`  | Assumes that the replay CPU will be Intel/AMD 64-bit CPU supporting AVX. |
 |`IntelAvx2Required` | Assumes that the replay CPU will be Intel/AMD 64-bit CPU supporting AVX2.|
+
+### Reducing overhead of tracing
+
+While TTD is very efficient for what it does (full instruction level tracing encoded into less than one byte/instruction on average), it still has noticeable overhead when recording. Modern CPUs can execute billions of instructions per second, making even one byte/instruction expensive. In many cases recording the entire process is not necessary.
+
+The following options can be used to reduce the overhead of tracing:
+
+`-module <module name>`
+
+Record only the specified module (e.g. comdlg32.dll) and the code that it calls. This can be the executable itself or any DLL loaded by the executable. This option can be specified more than once to record multiple modules.
+
+When this option is used the target process runs at full speed until code in the specified module(s) is executed. TTD will then record the process until execution leaves the specified module(s), at which point recording is turned off and the target returns to full speed. Because turning recording on/off is expensive, TTD will leave recording on when a specified module calls out to other modules in the process.
+
+`-recordmode <Automatic | Manual>`
+
+Normally recording starts as soon as TTD injects itself in the target process ("Automatic" mode, the default). If your program makes use of TTD's [in-process recording API](https://github.com/microsoft/WinDbg-Samples/tree/master/TTD/docs) to control when recording occurs then you can use the "Manual" mode to run at full speed until your program calls the API to start recording.
+
+Using these options can result in a significant reduction in recording overhead and trace file size. Debugging a trace recorded with these options is no different than a trace of the entire process. Whenever you reach a location in the trace where recording is turned off, the next instruction in the trace is the first instruction executed when recording resumed.
 
 ### Event related settings
 
