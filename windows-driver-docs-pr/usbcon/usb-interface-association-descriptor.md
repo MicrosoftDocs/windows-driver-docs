@@ -1,7 +1,7 @@
 ---
-title: USB interface association descriptor
+title: USB Interface Association Descriptor
 description: USB interface association descriptor (IAD) allows the device to group interfaces that belong to a function.
-ms.date: 03/07/2023
+ms.date: 01/17/2024
 ---
 
 # USB interface association descriptor
@@ -95,7 +95,7 @@ The descriptor is as follows:
 ```cpp
     BYTE  bLength             0x09
     BYTE  bDescriptorType     0x02
-    WORD  wTotalLength        0x....
+    WORD  wTotalLength        0x...
     BYTE  bNumInterfaces      0x03
     BYTE  bConfigurationValue 0x01
     BYTE  iConfiguration      0x01

@@ -1,7 +1,7 @@
 ---
-title: Overview of implementing power management in USB client drivers
+title: Overview of Implementing Power Management in USB Client Drivers
 description: The articles in this section examine the ways in which the WDM power model interacts with the power management properties of USB devices.
-ms.date: 03/08/2023
+ms.date: 01/17/2024
 ---
 
 # Overview of implementing power management in USB client drivers

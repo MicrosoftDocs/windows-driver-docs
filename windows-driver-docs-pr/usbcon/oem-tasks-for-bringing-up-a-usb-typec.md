@@ -1,7 +1,7 @@
 ---
+title: Windows Support for USB Type-C Connectors
 description: Windows support for USB Type-C connector and tasks for OEMs who are building USB Type-C systems.
-title: Windows support for USB Type-C connectors
-ms.date: 03/18/2022
+ms.date: 01/17/2024
 ---
 
 # Windows support for USB Type-C connectors
@@ -27,13 +27,10 @@ The USB Type-C connector, introduced by the USB-IF, defined in the USB 3.1 speci
 
 ## Official specifications
 
-[USB Type-C specification](https://usb.org/document-library/usb-type-cr-cable-and-connector-specification-revision-20)
-
-[USB Power Delivery](https://www.usb.org/sites/default/files/D2T2-1%20-%20USB%20Power%20Delivery.pdf)
-
-[Billboard Devices specification](https://www.usb.org/document-library/billboard-device-class-spec-revision-121-and-adopters-agreement#:~:text=The%20USB%20Billboard%20Device%20Class%20definition%20describes%20the,to%20provide%20support%20details%20in%20a%20human-readable%20format.)
-
-[UCSI Specification](https://www.intel.com/content/www/us/en/products/docs/io/universal-serial-bus/usb-type-c-ucsi-spec.html)
+- [USB Type-C specification](https://usb.org/document-library/usb-type-cr-cable-and-connector-specification-revision-20)
+- [USB Power Delivery](https://www.usb.org/sites/default/files/D2T2-1%20-%20USB%20Power%20Delivery.pdf)
+- [Billboard Devices specification](https://www.usb.org/document-library/billboard-device-class-spec-revision-121-and-adopters-agreement#:~:text=The%20USB%20Billboard%20Device%20Class%20definition%20describes%20the,to%20provide%20support%20details%20in%20a%20human-readable%20format.)
+- [UCSI Specification](https://www.intel.com/content/www/us/en/products/docs/io/universal-serial-bus/usb-type-c-ucsi-spec.html)
 
 ## Hardware design
 

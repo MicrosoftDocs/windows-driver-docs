@@ -1,5 +1,5 @@
 ---
-title: Tap and Do scenarios
+title: Tap and Do Scenarios
 description: Tap and Do scenarios
 keywords:
 - NFC
@@ -7,7 +7,7 @@ keywords:
 - proximity
 - near field proximity
 - NFP
-ms.date: 06/08/2020
+ms.date: 01/11/2024
 ---
 
 # Tap and Do scenarios
@@ -22,7 +22,7 @@ There are two user scenarios areas supported for *Tap and Do* in Windows.
 
 Before users can use peripheral devices with Windows, they must logically connect, pair, and setup the devices on the computer. They can do this either with cables or over a wireless network.
 
-While using cables is intuitive and effective, this often give a poor user experience because people don’t typically carry cables with them to stay connected. Meanwhile, pairing a peripheral wireless device with Windows can be a multi-step task requiring device discovery and authentication.
+While using cables is intuitive and effective, this often give a poor user experience because people don't typically carry cables with them to stay connected. Meanwhile, pairing a peripheral wireless device with Windows can be a multi-step task requiring device discovery and authentication.
 
 With Tap and Do, the user just taps the peripheral wireless device to the computer. This single action works to trigger the automatic wireless setup of the device without any other steps. The simplicity of this experience eliminates common user difficulties associated with device setup.
 
@@ -38,6 +38,5 @@ See [Tap and Do Use Cases](tap-and-do-use-cases.md) for and explanation of vario
 
 ## Related topics
 
-[NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/index)  
-
-[Near field proximity DDI reference](/windows-hardware/drivers/ddi/_nfpdrivers)
+- [NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/index)
+- [Near field proximity DDI reference](/windows-hardware/drivers/ddi/_nfpdrivers)

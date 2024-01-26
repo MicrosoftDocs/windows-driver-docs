@@ -1,14 +1,14 @@
 ---
+title: How to Prepare the Test System to Run MUTT Test Tools
 description: Before using MUTT devices, you must prepare the test system.
-title: How to prepare the test system to run MUTT test tools
-ms.date: 04/07/2022
+ms.date: 01/17/2024
 ---
 
 # How to prepare the test system to run MUTT test tools
 
 Before using MUTT devices, you must prepare the test system.
 
-## Prerequisites
+## Before you start
 
 The instructions in this document are based on the following assumptions:
 
@@ -67,6 +67,5 @@ Go to [https://aka.ms/usbtrace](https://aka.ms/usbtrace) for instructions and to
 
 ## Related topics
 
-[Universal Serial Bus (USB)](index.md)  
-
-[Microsoft USB Test Tool (MUTT) devices](microsoft-usb-test-tool--mutt--devices.md)
+- [Universal Serial Bus (USB)](index.md)
+- [Microsoft USB Test Tool (MUTT) devices](microsoft-usb-test-tool--mutt--devices.md)

@@ -1,11 +1,10 @@
 ---
-title: Relative orientation sensor data fields
+title: Relative Orientation Sensor Data Fields
 description: This topic provides information about the data fields that are specific to the relative orientation sensor.
-ms.date: 07/20/2018
+ms.date: 01/11/2024
 ---
 
 # Relative orientation sensor data fields
-
 
 This topic provides information about the data fields that are specific to the relative orientation sensor.
 
@@ -19,12 +18,6 @@ The following table shows the data fields. For more information about the types 
 |PKEY_SensorData_QuaternionY|VT_R4|Required|X-component of rotational axis vector.|
 |PKEY_SensorData_QuaternionZ|VT_R4|Required|X-component of rotational axis vector.|
 
- 
-
 ## Related topics
 
-
-[PROPVARIANT structure](/windows/win32/api/propidlbase/ns-propidlbase-propvariant)
-
- 
-
+- [PROPVARIANT structure](/windows/win32/api/propidlbase/ns-propidlbase-propvariant)

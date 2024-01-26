@@ -1,5 +1,5 @@
 ---
-title: Message transmission
+title: Message Transmission
 description: Message transmission
 keywords:
 - NFC
@@ -7,11 +7,10 @@ keywords:
 - proximity
 - near field proximity
 - NFP
-ms.date: 04/20/2017
+ms.date: 01/11/2024
 ---
 
 # Message transmission
-
 
 When the NFP technology determines that another device is proximate, as defined by the proximity technology, this should act as the trigger to transmit published messages between the devices.
 
@@ -27,8 +26,6 @@ The NFP device driver interface does not require that the published messages be 
 
 There is no mechanism defined in the NFP device driver interface to inform clients if any app on a receiving device was subscribed to the message. There is also no mechanism for telling clients that a message they are not subscribed to was received.
 
- 
-
- 
 ## Related topics
+
 [Near field communications (NFC) API reference](/windows-hardware/drivers/ddi/_nfpdrivers/)

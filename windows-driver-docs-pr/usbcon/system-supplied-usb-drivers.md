@@ -1,7 +1,7 @@
 ---
-title: Overview of Microsoft-provided USB drivers
+title: Overview of Microsoft-Provided USB Drivers
 description: This article describes the class drivers, generic client driver, and the parent composite driver that are provided by Microsoft.
-ms.date: 12/05/2023
+ms.date: 01/17/2024
 ---
 
 # Overview of Microsoft-provided USB drivers

@@ -1,7 +1,7 @@
 ---
-title: About sensor parameter types
+title: About Sensor Parameter Types
 description: About sensor parameter types
-ms.date: 11/30/2022
+ms.date: 01/11/2024
 ---
 
 # About sensor parameter types

@@ -1,5 +1,5 @@
 ---
-title: Reserved IOCTL codes
+title: Reserved IOCTL Codes
 keywords:
 - NFC
 - near field communications
@@ -7,22 +7,19 @@ keywords:
 - near field proximity
 - NFP
 description: Information about reserved ioctl codes for NFC drivers, which must return STATUS_INVALID_DEVICE_STATE.
-ms.date: 04/20/2017
+ms.date: 01/11/2024
 ---
 
 # Reserved IOCTL codes
 
+All the following IOCTL codes are reserved, unless explicitly defined above; the driver MUST return STATUS_INVALID_DEVICE_STATE from any of the following:
 
-All the following IOCTL codes are reserved, unless explicitly defined above; the driver MUST return STATUS\_INVALID\_DEVICE\_STATE from any of the following:
-
-CTL\_CODE(FILE\_DEVICE\_NFP, 0x0000, \*, \*) through CTL\_CODE(FILE\_DEVICE\_NFP, 0x00FF, \*, \*)
+CTL_CODE(FILE_DEVICE_NFP, 0x0000, \*, \*) through CTL_CODE(FILE_DEVICE_NFP, 0x00FF, \*, \*)
 
 The following IOCTLs MAY be used for IHV-specific functionality:
 
-CTL\_CODE(FILE\_DEVICE\_NFP, 0x0100, \*, \*) through CTL\_CODE(FILE\_DEVICE\_NFP, 0x01FF, \*, \*)
+CTL_CODE(FILE_DEVICE_NFP, 0x0100, \*, \*) through CTL_CODE(FILE_DEVICE_NFP, 0x01FF, \*, \*)
 
- 
-
- 
 ## Related topics
-[Near field communications (NFC) API reference](/windows-hardware/drivers/ddi/_nfpdrivers/)
+
+- [Near field communications (NFC) API reference](/windows-hardware/drivers/ddi/_nfpdrivers/)

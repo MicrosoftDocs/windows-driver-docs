@@ -1,7 +1,7 @@
 ---
-title: USB device registry entries
+title: USB Device Registry Entries
 description: This article describes USB device-specific registry entries.
-ms.date: 08/17/2023
+ms.date: 01/17/2024
 ms.custom: contperf-fy22q4
 ---
 

@@ -1,17 +1,17 @@
 ---
 description: Supporting USB chargers for function controllers
-title: USB filter driver for supporting USB chargers
-ms.date: 04/20/2017
+title: USB Filter Driver for Supporting USB Chargers
+ms.date: 01/17/2024
 ---
 
 
 # USB filter driver for supporting USB chargers
 
-Write a filter driver that supports detection of chargers, if the function controller uses the in-box Synopsys and ChipIdea drivers. If you are writing a client driver for a proprietary function controller, charger/attach detection is integrated in the client driver by implementing [EVT_UFX_DEVICE_PROPRIETARY_CHARGER_SET_PROPERTY](/windows-hardware/drivers/ddi/ufxclient/nc-ufxclient-evt_ufx_device_proprietary_charger_set_property), [EVT_UFX_DEVICE_PROPRIETARY_CHARGER_RESET](/windows-hardware/drivers/ddi/ufxclient/nc-ufxclient-evt_ufx_device_proprietary_charger_reset), and [EVT_UFX_DEVICE_DETECT_PROPRIETARY_CHARGER](/windows-hardware/drivers/ddi/ufxclient/nc-ufxclient-evt_ufx_device_proprietary_charger_detect).
+Write a filter driver that supports detection of chargers, if the function controller uses the in-box Synopsys and ChipIdea drivers. If you are writing a client driver for a proprietary function controller, charger/attach detection is integrated in the client driver by implementing **[EVT_UFX_DEVICE_PROPRIETARY_CHARGER_SET_PROPERTY](/windows-hardware/drivers/ddi/ufxclient/nc-ufxclient-evt_ufx_device_proprietary_charger_set_property)**, **[EVT_UFX_DEVICE_PROPRIETARY_CHARGER_RESET](/windows-hardware/drivers/ddi/ufxclient/nc-ufxclient-evt_ufx_device_proprietary_charger_reset)**, and **[EVT_UFX_DEVICE_DETECT_PROPRIETARY_CHARGER](/windows-hardware/drivers/ddi/ufxclient/nc-ufxclient-evt_ufx_device_proprietary_charger_detect)**.
 
 The USB function stack allows the device, such as a phone or tablet, to charge when connected to a host and USB charger as defined by the USB Battery Charging (BC) 1.2 specification.
 
-- There are two types of ports that the device can use for charging. The device can charge from a dedicated charging port (DCP) on a charger that shipped with the device. Alternately, the device can from standard downstream ports or charging downstream ports when the device is connected to a PC. Both of those cases are compliant with the [USB BC 1.2 specification](https://www.usb.org/sites/default/files/BCv1.2_070312_0.zip).
+- There are two types of ports that the device can use for charging. The device can charge from a dedicated charging port (DCP) on a charger that shipped with the device. Alternately, the device can from standard downstream ports or charging downstream ports when the device is connected to a PC. Both of those cases are compliant with the [USB BC 1.2 specification](https://www.usb.org/document-library/battery-charging-v12-spec-and-adopters-agreement).
 
 - Certain chargers do not follow the specification. USB function stack allows the device to charge from those proprietary USB chargers.
 

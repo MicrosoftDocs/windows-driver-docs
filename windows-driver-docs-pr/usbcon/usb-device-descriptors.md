@@ -1,7 +1,7 @@
 ---
+title: USB Device Descriptors
 description: The device descriptor contains information about a USB device as a whole. This topic describes the USB_DEVICE_DESCRIPTOR structure and includes information about how a client driver can send a get-descriptor request to obtain the device descriptor.
-title: USB device descriptors
-ms.date: 09/16/2021
+ms.date: 01/17/2024
 ---
 
 # USB device descriptors
@@ -14,8 +14,8 @@ A device might report different information in its device descriptor when the de
 
 The host obtains the device descriptor through a control transfer. In the transfer, the request type is GET DESCRIPTOR and the recipient is the device. The client driver can initiate that transfer in either of two ways: by using the framework USB target device object or by sending an URB with the request information.
 
-* [Getting the device descriptor](#getting-the-device-descriptor)
-* [Sample device descriptor](#sample-device-descriptor)
+- [Getting the device descriptor](#getting-the-device-descriptor)
+- [Sample device descriptor](#sample-device-descriptor)
 
 ## Getting the device descriptor
 
@@ -74,5 +74,5 @@ Typically, to configure the device, the client driver gets information about the
 
 ## Related topics
 
-* [USB Descriptors](usb-descriptors.md)
-* [USB Configuration Descriptors](usb-configuration-descriptors.md)
+- [USB Descriptors](usb-descriptors.md)
+- [USB Configuration Descriptors](usb-configuration-descriptors.md)

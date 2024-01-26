@@ -1,5 +1,5 @@
 ---
-title: Near field proximity design guide
+title: Near Field Proximity Design Guide
 description: Near field proximity design guide
 keywords:
 - NFC
@@ -7,7 +7,7 @@ keywords:
 - proximity
 - near field proximity
 - NFP
-ms.date: 04/20/2017
+ms.date: 01/11/2024
 ---
 
 # Near field proximity design guide
@@ -22,5 +22,5 @@ ms.date: 04/20/2017
 
 ## Related topics
 
-[NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/_nfpdrivers)  
-[Near field proximity DDI reference](/windows-hardware/drivers/ddi/nfpdev)
+- [NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/_nfpdrivers)
+- [Near field proximity DDI reference](/windows-hardware/drivers/ddi/nfpdev)

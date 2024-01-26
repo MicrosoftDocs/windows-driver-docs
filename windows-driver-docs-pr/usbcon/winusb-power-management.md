@@ -1,7 +1,7 @@
 ---
-title: WinUSB power management
+title: WinUSB Power Management
 description: WinUSB power management
-ms.date: 02/23/2023
+ms.date: 01/17/2024
 ---
 
 # WinUSB power management

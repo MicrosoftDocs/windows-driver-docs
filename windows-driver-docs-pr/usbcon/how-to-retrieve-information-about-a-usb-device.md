@@ -1,7 +1,7 @@
 ---
-title: USB hardware verifier (USB3HWVerifierAnalyzer.exe)
+title: USB Hardware Verifier (USB3HWVerifierAnalyzer.exe)
 description: This article describes the USB hardware verifier tool (USB3HWVerifierAnalyzer.exe) that is used for testing and debugging specific hardware events.
-ms.date: 02/02/2023
+ms.date: 01/16/2024
 ---
 
 # USB hardware verifier (USB3HWVerifierAnalyzer.exe)
@@ -42,9 +42,9 @@ To capture events by using the hardware verifier, perform these steps:
 
    | Option | Description |
    |---|---|
-   | -v &lt;VendorID&gt; | Logs all hardware verifier events for the specified VendorID. |
-   | -p &lt;ProductID&gt; | Logs all hardware verifier events for the specified ProductID. |
-   | -f &lt;ETL file&gt; | Parses the specified ETL file. Real-time parsing isn't supported. With this option, the tool parses the file offline. |
+   | -v \<VendorID> | Logs all hardware verifier events for the specified VendorID. |
+   | -p \<ProductID> | Logs all hardware verifier events for the specified ProductID. |
+   | -f \<ETL file> | Parses the specified ETL file. Real-time parsing isn't supported. With this option, the tool parses the file offline. |
    | /v output | Displays all events to the console. |
 
 1. Run the test scenario for which you want to capture hardware events.
@@ -62,7 +62,7 @@ To capture events by using the hardware verifier, perform these steps:
 
    Here's an example output from the hardware verifier tool:
 
-   ```console
+   ```output
    Session Name : TraceSessionFriJan271351112023
 
    Attempting to start session TraceSessionFriJan271351112023...
@@ -162,7 +162,7 @@ To capture events by using the hardware verifier, perform these steps:
 
    In the output file, search for the previously noted **Key** values. The values are associated with one of these fields: **fid_UcxController**, **fid_HubDevice**, and **fid_UsbDevice**.
 
-1. Open AllEvents.etl in Netmon and select **Add &lt;field_name&gt; to display filter** to filter events by controller, hub, and device. For more information, see [How to install Netmon and USB ETW parsers](how-to-retrieve-information-about-a-usb-device.md).
+1. Open AllEvents.etl in Netmon and select **Add \<field_name> to display filter** to filter events by controller, hub, and device. For more information, see [How to install Netmon and USB ETW parsers](how-to-retrieve-information-about-a-usb-device.md).
 
 ## USB hardware verifier flags
 

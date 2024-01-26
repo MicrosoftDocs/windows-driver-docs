@@ -1,5 +1,5 @@
 ---
-title: NFC CX quick start guide
+title: NFC CX Quick Start Guide
 description: A quick start guide for writing an NFC functional driver using the NFC Class Extension.
 keywords:
 - NFC
@@ -8,7 +8,7 @@ keywords:
 - near field proximity
 - NFP
 - CX
-ms.date: 12/10/2018
+ms.date: 01/11/2024
 ms.topic: article
 ---
 
@@ -82,7 +82,7 @@ A complete version of this sample code is available on GitHub: [NFC CX client dr
     ```
 
 1. In the INF file, add a reference to the NFC Class Extension. Doing this ensures that Windows Driver Framework (WDF) loads the NFC CX driver when the client driver loads.
-  
+
     1. Find the `<project-name>_Install` section.
     1. Add `UmdfExtensions=NfcCx0102`.
 

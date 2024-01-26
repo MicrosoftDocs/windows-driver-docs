@@ -1,7 +1,7 @@
 ---
-title: USB client drivers for media-agnostic (MA-USB)
+title: USB Client Drivers for Media-Agnostic (MA-USB)
 description: USB device driver that sends MA-USB packets.
-ms.date: 06/28/2023
+ms.date: 01/17/2024
 ---
 
 # USB client drivers for media-agnostic (MA-USB)

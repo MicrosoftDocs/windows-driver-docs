@@ -1,7 +1,7 @@
 ---
-title: Windows 8.1 - What's new for USB
+title: Windows 8.1 - What's New for USB
 description: Here are the new features and improvements for Universal Serial Bus (USB) in Windows 8.1.
-ms.date: 03/08/2023
+ms.date: 01/17/2024
 ---
 
 # Windows 8.1: What's new for USB
@@ -10,7 +10,7 @@ Here are the new features and improvements for Universal Serial Bus (USB) in Win
 
 ## Windows Runtime USB API for developing UWP apps
 
-Windows Runtime provides a new namespace: [**Windows.Devices.Usb**](/uwp/api/Windows.Devices.Usb) (see [Writing apps for USB devices (UWP apps using C#/VB/C++)](/previous-versions/windows/apps/dn263144(v=win.10)) for a brief overview). By using the namespace, you can write a UWP app that talks to a custom USB device.
+Windows Runtime provides a new namespace: **[Windows.Devices.Usb](/uwp/api/Windows.Devices.Usb)** (see [Writing apps for USB devices (UWP apps using C#/VB/C++)](/previous-versions/windows/apps/dn263144(v=win.10)) for a brief overview). By using the namespace, you can write a UWP app that talks to a custom USB device.
 
 For more information, see these articles:
 
@@ -23,7 +23,7 @@ For more information, see these articles:
 - [How to get USB descriptors (UWP app)](how-to-get-usb-descriptors--uwp-app-.md)
 - [How to select a USB interface setting (UWP app)](how-to-select-a-usb-interface-setting--uwp-app-.md)
 
-These samples demonstrate the use of the [**Windows.Devices.Usb**](/uwp/api/Windows.Devices.Usb) namespace.
+These samples demonstrate the use of the **[Windows.Devices.Usb](/uwp/api/Windows.Devices.Usb)** namespace.
 
 | UWP app sample | Description |
 |---|---|
@@ -73,12 +73,12 @@ In Windows 8.1, the performance and reliability of both USB 3.0 and 2.0 driver 
 
 - These USB tests in the Hardware Certification Kit (HCK) have been improved. The device enumeration tests now have a new parameter that reduces manual intervention during testing using simplified topologies. The suspend tests have been improved logging capabilities.
 
-    - [USB Exposed Port Controller Test](/previous-versions/windows/hardware/hck/hh998021(v=vs.85))
-    - [USB Hub Exposed Port Test USB](/previous-versions/windows/hardware/hck/jj123960(v=vs.85))
-    - [Hub Selective Suspend Test](/previous-versions/windows/hardware/hck/jj124844(v=vs.85))
-    - [USB Exposed Port System Test](/previous-versions/windows/hardware/hck/jj123655(v=vs.85))
-    - [USB Selective Suspend Test (xHCI)](/previous-versions/windows/hardware/hck/jj124491(v=vs.85))
-    - [USB 3.0 Suspend Test](/previous-versions/windows/hardware/hck/jj125210(v=vs.85))
+  - [USB Exposed Port Controller Test](/previous-versions/windows/hardware/hck/hh998021(v=vs.85))
+  - [USB Hub Exposed Port Test USB](/previous-versions/windows/hardware/hck/jj123960(v=vs.85))
+  - [Hub Selective Suspend Test](/previous-versions/windows/hardware/hck/jj124844(v=vs.85))
+  - [USB Exposed Port System Test](/previous-versions/windows/hardware/hck/jj123655(v=vs.85))
+  - [USB Selective Suspend Test (xHCI)](/previous-versions/windows/hardware/hck/jj124491(v=vs.85))
+  - [USB 3.0 Suspend Test](/previous-versions/windows/hardware/hck/jj125210(v=vs.85))
 - MUTT and SuperMUTT devices are now USB-IF compliance devices. The devices and the accompanying software package are integrated in to the HCK suite of USB tests. They provide automated testing that can be used during the development cycle of USB controllers, devices and systems, especially stress testing.
 
     MUTT hardware can be purchased from [JJG Technologies](http://www.jjgtechnologies.com/mutt.htm). The device doesn't have installed firmware installed. To install firmware, download the MUTT software package from [this Web site](./index.md) and run MUTTUtil.exe. For more information, see the documentation included with the package.

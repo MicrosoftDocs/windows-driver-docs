@@ -1,7 +1,7 @@
 ---
-title: Getting started with MALT
+title: Getting Started With MALT
 description: How to upload firmware to the MALT and how to calibrate it using SensorExplorer.
-ms.date: 06/14/2022
+ms.date: 01/11/2024
 ---
 
 # Getting started with MALT
@@ -158,6 +158,6 @@ On the Home tab, you should be able to select any button under the **Sensor Data
 
     - Ensure you actually did select the **Calibrate Top** or **Calibrate Bottom** buttons.
 
-    - If you are sure you appropriately calibrated the top and the bottom sensors given the above instructions, email sensortools@microsoft.com.
+    - If you are sure you appropriately calibrated the top and the bottom sensors given the above instructions, email <sensortools@microsoft.com>.
 
-If this troubleshooting section doesn't address your issues, please email sensortools@microsoft.com.
+If this troubleshooting section doesn't address your issues, please email <sensortools@microsoft.com>.

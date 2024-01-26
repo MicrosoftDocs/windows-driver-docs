@@ -1,7 +1,7 @@
 ---
-title: Overview of developing Windows drivers for emulated USB devices (UDE)
+title: Overview of Developing Windows Drivers for Emulated USB Devices (UDE)
 description: Overview of developing Windows drivers for emulated USB devices (UDE)
-ms.date: 01/19/2023
+ms.date: 01/12/2024
 ---
 
 # Overview of developing Windows drivers for emulated USB devices (UDE)
@@ -12,7 +12,7 @@ This article describes USB emulated device (UDE) support in the Windows operatin
 
 The Windows Driver Kit (WDK) contains resources that are required for driver development, such as headers, libraries, tools, and samples.
 
-[Download kits and tools for Windows](https://go.microsoft.com/fwlink/p/?linkid=617155)
+[Download kits and tools for Windows](https://developer.microsoft.com/windows/hardware/)
 
 To write a function controller driver, you need:
 

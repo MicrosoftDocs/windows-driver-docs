@@ -1,27 +1,24 @@
 ---
-title: Prepare your sensor test board
+title: Prepare Your Sensor Test Board
 description: This topic shows you how to prepare your sensor test board for connection to the Sharks Cove board.
-ms.date: 04/20/2017
+ms.date: 01/11/2024
 ---
 
 # Prepare your sensor test board
 
-
 This topic shows you how to prepare your sensor test board for connection to the Sharks Cove board.
 
-**Note**  This topic assumes that you’re using a sensor test board (sometimes referred to as a sensor *breakout* board) that you purchased from an IHV, and that the sensor test board was not developed specifically for use with Sharks Cove.
-
- 
+**Note**  This topic assumes that you're using a sensor test board (sometimes referred to as a sensor *breakout* board) that you purchased from an IHV, and that the sensor test board was not developed specifically for use with Sharks Cove.
 
 If you purchased your sensor test board from an IHV, and it was not developed specifically for use with Sharks Cove, it might be necessary to make some modifications to the test board. This topic shows you the kind of information that you must read to find out if you need to make modifications to your sensor test board. If you need to modify the sensor test board, then follow the guidance in this topic to prepare the test board for connection to Sharks Cove.
 
-After you have chosen the sensor for which you would like to build a universal sensor driver, you must then obtain the manufacturer’s data sheets for the sensor, and the technical specifications for the Sharks Cove.
+After you have chosen the sensor for which you would like to build a universal sensor driver, you must then obtain the manufacturer's data sheets for the sensor, and the technical specifications for the Sharks Cove.
 
 The Sharks Cove board has a variety of headers to allow connections to external devices. A 20-pin male header, labeled J1C1 SENSOR HEADER, allows you to connect sensors to Sharks Cove. Sensors connected to J1C1, communicate with Sharks Cove using the I2C simple peripheral bus (SPB).
 
-Study the data sheets and technical specifications to figure out how you’re going to connect the pins (or other connections points) of the sensor test board to J1C1.
+Study the data sheets and technical specifications to figure out how you're going to connect the pins (or other connections points) of the sensor test board to J1C1.
 
-Here’s a table from the *Sharks Cove Technical Specifications Rev. 1.0*, showing the pin allocations for J1C1.
+Here's a table from the *Sharks Cove Technical Specifications Rev. 1.0*, showing the pin allocations for J1C1.
 
 | J1C1 pin\# | Signal name            | Comments                                                                                            |
 |------------|------------------------|-----------------------------------------------------------------------------------------------------|
@@ -46,8 +43,6 @@ Here’s a table from the *Sharks Cove Technical Specifications Rev. 1.0*, showi
 | 19         | Not connected          | None                                                                                                |
 | 20         | Not connected          | None                                                                                                |
 
- 
-
 And if, for example, you had chosen to build a universal sensor driver for the ADXL345 accelerometer, then the following diagram from page 5 of the ADXL345 Digital Accelerometer data sheet (along with Table 4 on the same page) shows you the pins available for connecting the accelerometer board to Sharks Cove.
 
 ![adxl345 accelerometer pin configuration.](images/adxl345-pins.png)
@@ -66,10 +61,10 @@ So the following diagram shows the modifications that you must make to the ADXL3
 
 In other words, modify the ADXL345 breakout board as follows:
 
--   Cut the track that connects the VDD/IO line to the VS line. Then check by measuring between pin 1 and pin 6 with a multimeter, to make sure that you have an open circuit.
--   Solder a wire to connect the VDD/IO line to the CS line (pin 7). Then measure with a multimeter, to make sure that you have a short circuit between pin 1 and pin 7.
+- Cut the track that connects the VDD/IO line to the VS line. Then check by measuring between pin 1 and pin 6 with a multimeter, to make sure that you have an open circuit.
+- Solder a wire to connect the VDD/IO line to the CS line (pin 7). Then measure with a multimeter, to make sure that you have a short circuit between pin 1 and pin 7.
 
-Here’s an image showing a modified ADXL345 accelerometer breakout board.
+Here's an image showing a modified ADXL345 accelerometer breakout board.
 
 ![real image of a modified adxl345 accelerometer breakout board.](images/adxl-mod-real.png)
 
@@ -77,17 +72,9 @@ A yellow dot has been added to the preceding image, and placed on the ADXL345 ch
 
 So preparing your sensor test board for connection to Sharks Cove, could involve any or all of the following:
 
--   Cutting a printed circuit board (PCB) track to break an unwanted connection between components on the sensor test board.
--   Cutting a PCB track and rerouting the connection to a new destination on the sensor test board.
--   Soldering a ribbon cable with a female insulation displacement connector (IDC) header to the sensor test board. This makes it easy and convenient to connect the two boards.
--   As an alternative to the preceding bullet, you can find a way to mount the sensor test board on a breadboard, then find a convenient way to connect the relevant rows of the breadboard to the matching pins of J1C1.
+- Cutting a printed circuit board (PCB) track to break an unwanted connection between components on the sensor test board.
+- Cutting a PCB track and rerouting the connection to a new destination on the sensor test board.
+- Soldering a ribbon cable with a female insulation displacement connector (IDC) header to the sensor test board. This makes it easy and convenient to connect the two boards.
+- As an alternative to the preceding bullet, you can find a way to mount the sensor test board on a breadboard, then find a convenient way to connect the relevant rows of the breadboard to the matching pins of J1C1.
 
-After you’ve made all the necessary modifications to your sensor test board, follow the guidance in the next topic to [connect your sensor to the Sharks Cove board](connect-your-sensor-to-the-sharks-cove-board.md).
-
- 
-
- 
-
-
-
-
+After you've made all the necessary modifications to your sensor test board, follow the guidance in the next topic to [connect your sensor to the Sharks Cove board](connect-your-sensor-to-the-sharks-cove-board.md).
