@@ -6,7 +6,7 @@ ms.date: 01/22/2024
 
 # User-mode NetAdapterCx
  
-Starting in WIN11_NEXT, NetAdapterCx enables you to write a [User-Mode Driver Framework (UMDF)](/wdf/getting-started-with-umdf-version-2) network adapter driver. The UMDF APIs in NetAdapterCx align with the KMDF versions, allowing you to convert your KMDF-based client driver to UMDF with little to no code changes.
+Starting in WIN11_NEXT, NetAdapterCx enables you to write a [User-Mode Driver Framework (UMDF)](/wdf/getting-started-with-umdf-version-2.md) network adapter driver. The UMDF APIs in NetAdapterCx align with the KMDF versions, allowing you to convert your KMDF-based client driver to UMDF with little to no code changes.
 
 ## Benefits of user-mode NetAdapterCx drivers
 
@@ -33,7 +33,7 @@ UMDF drivers must set the **DmaCapabilities** member in
 
 ### Client-side buffer allocation
 
-Client-side [network data buffer management]((network-data-buffer-management.md)) is not available in user-mode. UMDF NetAdapterCx drivers must rely on the system to allocate data buffers for the transmit and receive data paths. 
+Client-side [network data buffer management](network-data-buffer-management.md) is not available in user-mode. UMDF NetAdapterCx drivers must rely on the system to allocate data buffers for the transmit and receive data paths. 
 
 When your UMDF driver advertises its hardware data buffer capabilities using the [**NET_ADAPTER_RX_CAPABILITIES**](/windows-hardware/drivers/ddi/netadapter/ns-netadapter-_net_adapter_rx_capabilities) structure, it must:
 
@@ -42,7 +42,7 @@ When your UMDF driver advertises its hardware data buffer capabilities using the
 
 ## Convert a KMDF NetAdapterCx driver to UMDF
 
-To operate in user-mode, the client driver must only use core WDF APIs that are part of UMDF. For example, the client driver must not use any [APIs exclusive to KMDF drivers](./wdf/comparing-umdf-2-0-functionality-to-kmdf.md).
+To operate in user-mode, the client driver must only use core WDF APIs that are part of UMDF. For example, the client driver must not use any [APIs exclusive to KMDF drivers](../wdf/comparing-umdf-2-0-functionality-to-kmdf.md).
 
 To convert your KMDF NetAdapterCx driver to UMDF, follow the steps in [How to convert a KMDF driver to a UMDF 2 driver](../wdf/how-to-generate-a-umdf-driver-from-a-kmdf-driver.md).
 
