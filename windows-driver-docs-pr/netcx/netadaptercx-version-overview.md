@@ -11,14 +11,15 @@ ms.custom: Vib
 
 This section highlights new features for the Network Adapter WDF Class Extension (NetAdapterCx) driver model. Use the following topics to learn more about the changes in each version of NetAdapterCx.
 
-The current version of NetAdapterCx is **2.2**.
+The current version of NetAdapterCx is **2.5**.
 
 Windows OS support for NetAdapterCx versions are described in the following table.
 
-| Operating system | KMDF version | Supported NetAdapterCx version | Version notes |
-| --- | --- | --- | --- |
-| Windows 10, version 2004 | 1.31 | 2.0 | Initial release. Supports [MBBCx](mobile-broadband-mbb-wdf-class-extension-mbbcx.md) (Mobile Broadband) only. |
-| Windows 11 | 1.33 | 2.2 | Supports [NetAdapterCx](index.md) (Ethernet), [MBBCx](mobile-broadband-mbb-wdf-class-extension-mbbcx.md) (Mobile Broadband), and [WiFiCx](wifi-wdf-class-extension-wificx.md) (Wi-Fi). |
+| Operating system | KMDF version | UMDF version | Supported NetAdapterCx version | Version notes |
+| --- | --- | --- | --- | --- |
+| WIN11_NEXT | 1.33 | 2.33 | 2.5 | Supports KMDF and UMDF [NetAdapterCx](index.md) (Ethernet), [MBBCx](mobile-broadband-mbb-wdf-class-extension-mbbcx.md) (Mobile Broadband), and [WiFiCx](wifi-wdf-class-extension-wificx.md) (Wi-Fi). |
+| Windows 11 | 1.33 | N/A | 2.2 | Supports KMDF [NetAdapterCx](index.md) (Ethernet), [MBBCx](mobile-broadband-mbb-wdf-class-extension-mbbcx.md) (Mobile Broadband), and [WiFiCx](wifi-wdf-class-extension-wificx.md) (Wi-Fi). |
+| Windows 10, version 2004 | 1.31 | N/A | 2.0 | Initial release. Supports KMDF [NetAdapterCx](index.md) (Ethernet) and [MBBCx](mobile-broadband-mbb-wdf-class-extension-mbbcx.md) (Mobile Broadband). |
 
 > [!IMPORTANT]
 > NetAdapterCx client drivers written in previous versions will not work in the latest version of Windows until they are retargeted to the current version.
