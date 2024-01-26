@@ -1,5 +1,5 @@
 ---
-title: Tap and Do use cases
+title: Tap and Do Use Cases
 description: Tap and Do use cases
 keywords:
 - NFC
@@ -7,7 +7,7 @@ keywords:
 - proximity
 - near field proximity
 - NFP
-ms.date: 06/08/2020
+ms.date: 01/11/2024
 ---
 
 # Tap and Do use cases
@@ -52,8 +52,8 @@ Use category: personal or enterprise (interpersonal).
 ### Use case example: Tap and Setup
 
 1. An NFP-enabled device is placed near a computer to trigger device setup.
-2. Windows detects the device and presents a toast user interface (UI) inviting the user to proceed with installing the device. If the user accepts, device pairing and setup proceed. If the user declines, pairing does not occur and device setup does not proceed. In such a case, the user must tap again to initiate pairing if desired.
-3. When device setup has finished, Windows may invoke AutoPlay if specified by the device. Otherwise, no device experience is shown.
+1. Windows detects the device and presents a toast user interface (UI) inviting the user to proceed with installing the device. If the user accepts, device pairing and setup proceed. If the user declines, pairing does not occur and device setup does not proceed. In such a case, the user must tap again to initiate pairing if desired.
+1. When device setup has finished, Windows may invoke AutoPlay if specified by the device. Otherwise, no device experience is shown.
 
 ## Tap and Reconnect
 
@@ -64,8 +64,8 @@ Use category: personal.
 ### Use case example: Tap and Reconnect
 
 1. An NFP-enabled device is placed near a computer to trigger device reconnection.
-2. Windows detects the device and presents a toast UI inviting the user to proceed with installing the device. If the user accepts, device pairing proceeds. If the user declines, pairing does not occur. In such a case, the user must tap again to initiate pairing if desired.
-3. When device pairing has finished, Windows may invoke AutoPlay if specified by the device. The user’s previous choice will be remembered. Otherwise, no device experience is shown.
+1. Windows detects the device and presents a toast UI inviting the user to proceed with installing the device. If the user accepts, device pairing proceeds. If the user declines, pairing does not occur. In such a case, the user must tap again to initiate pairing if desired.
+1. When device pairing has finished, Windows may invoke AutoPlay if specified by the device. The user's previous choice will be remembered. Otherwise, no device experience is shown.
 
 ## Tap and Use
 
@@ -76,7 +76,7 @@ Use category: personal or interpersonal.
 ### Use case example: Tap and Use
 
 1. A user wants to play a game with their friend. They both start apps that are designed for NFP. The app may prompt both users to tap their computers together.
-2. Once the users tap their computers together, the API is triggered and information set to be transmitted is exchanged between the computers. That may include setting up a channel over a wireless link so that the apps are able to communicate with each other.
+1. Once the users tap their computers together, the API is triggered and information set to be transmitted is exchanged between the computers. That may include setting up a channel over a wireless link so that the apps are able to communicate with each other.
 
 ## Tap and Launch
 
@@ -87,8 +87,8 @@ Use category: personal or interpersonal.
 ### Use case example: Tap and Launch
 
 1. A user wants to play a game with their friend. They both start apps that are designed for NFP. The app may prompt both users to tap their computers together.
-2. The second user is not running the app but has it installed. They are invited to launch the app. If they decline the invitation, nothing happens.
-3. If second user accepts the invitation, the app starts. The users are now able to play the game together.
+1. The second user is not running the app but has it installed. They are invited to launch the app. If they decline the invitation, nothing happens.
+1. If second user accepts the invitation, the app starts. The users are now able to play the game together.
 
 ## Tap and Acquire
 
@@ -99,8 +99,8 @@ Use category: personal or interpersonal.
 ### Use case example: Tap and Acquire
 
 1. A user wants to play a game with a friend and starts an app. The app may prompt them to tap their computer to another computer.
-2. The second user does not have the app installed. They are invited to acquire the app the friend is inviting them to use. If they decline the invitation, nothing happens.
-3. If they accept the invitation, they can acquire the app. The app will not start automatically. To do that, they will either need to run it directly and tap again with their friend (the *Tap and Use* use case), or simply tap again with their friend to launch the app (the *Tap and Launch* use case).
+1. The second user does not have the app installed. They are invited to acquire the app the friend is inviting them to use. If they decline the invitation, nothing happens.
+1. If they accept the invitation, they can acquire the app. The app will not start automatically. To do that, they will either need to run it directly and tap again with their friend (the *Tap and Use* use case), or simply tap again with their friend to launch the app (the *Tap and Launch* use case).
 
 ## Tap and Send
 
@@ -111,8 +111,8 @@ Use category: personal or interpersonal.
 ### Use case example: Tap and Send
 
 1. A user viewing a web page within an Internet browser on their computer taps their computer to the computer of another user.
-2. The sending user is presented with a UI to send the URL of the webpage they are viewing.
-3. The user sees that their friend has accepted the content transfer and the transfer UI is presented.
+1. The sending user is presented with a UI to send the URL of the webpage they are viewing.
+1. The user sees that their friend has accepted the content transfer and the transfer UI is presented.
 
 ## Tap and Receive
 
@@ -123,5 +123,5 @@ Use category: personal or interpersonal.
 ### Use case example: Tap and Receive
 
 1. A user taps their computer to a device that their friend is holding that is sharing content. Or they tap their computer against a poster on a wall that contains an embedded tag. The tag has content available to be read.
-2. The user is invited to receive the content. If they decline the invitation, nothing happens. If they accept the invitation, they are presented with the progress of the receive action.
-3. Once the content is received, they are then invited to launch an app to handle the content. The app is launched and handed the content.
+1. The user is invited to receive the content. If they decline the invitation, nothing happens. If they accept the invitation, they are presented with the progress of the receive action.
+1. Once the content is received, they are then invited to launch an app to handle the content. The app is launched and handed the content.

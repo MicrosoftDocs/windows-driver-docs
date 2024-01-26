@@ -1,7 +1,7 @@
 ---
-title: OEM tasks for USB Type-C systems
+title: OEM Tasks for USB Type-C Systems
 description: This table describes the use cases supported by Windows, and the other tasks OEMs must perform for those use cases to work.
-ms.date: 02/23/2023
+ms.date: 01/17/2024
 ---
 
 # OEM tasks for USB Type-C systems

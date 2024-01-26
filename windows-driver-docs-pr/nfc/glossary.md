@@ -1,5 +1,5 @@
 ---
-title: NFC glossary
+title: NFC Glossary
 description: This topic provides a glossary of NFC class extension (CX) terms.
 Robots: noindex, nofollow
 keywords:
@@ -8,7 +8,7 @@ keywords:
 - proximity
 - near field proximity
 - NFP
-ms.date: 11/16/2022
+ms.date: 01/11/2024
 ---
 
 # NFC glossary

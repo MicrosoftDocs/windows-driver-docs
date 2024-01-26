@@ -1653,6 +1653,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "windows-driver-docs-pr/ifs/nf-ntifs-ntcopyfilechunk.md",
+            "redirect_URL": "/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntcopyfilechunk",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/ifs/oplock-semantics.md",
             "redirect_url": "/windows-hardware/drivers/ifs/oplock-overview",
             "redirect_document_id": false

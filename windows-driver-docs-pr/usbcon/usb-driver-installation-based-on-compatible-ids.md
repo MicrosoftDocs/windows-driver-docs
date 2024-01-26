@@ -1,13 +1,15 @@
 ---
-title: USB serial driver (Usbser.sys)
+title: USB Serial Driver (Usbser.sys)
 description: Use the Microsoft-provided USB driver (Usbser.sys) for your communications and CDC control device.
-ms.date: 12/05/2023
+ms.date: 01/17/2024
 ---
 
 # USB serial driver (Usbser.sys)
 
 > [!IMPORTANT]
 > This topic is for programmers. If you are a customer experiencing USB problems, see [Troubleshoot common USB problems](https://support.microsoft.com/help/17614/windows-10-troubleshoot-common-usb-problems)
+
+Use the Microsoft-provided USB driver (Usbser.sys) for your communications and CDC control device. Microsoft encourages you to use the drivers included with Windows whenever possible.
 
 ## Versions supported
 
@@ -17,8 +19,6 @@ ms.date: 12/05/2023
 ## Applies to
 
 - Device manufacturers of CDC control devices
-
-Use the Microsoft-provided USB driver (Usbser.sys) for your communications and CDC control device. Microsoft encourages you to use the drivers included with Windows whenever possible.
 
 In Windows 10, the driver was rewritten using the [Kernel-Mode Driver Framework](../wdf/index.md), improving the overall stability of the driver.
 

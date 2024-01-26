@@ -1,7 +1,7 @@
 ---
-title: How to add USB device capabilities to the app manifest
+title: How to Add USB Device Capabilities to the App Manifest
 description: This topic describes the device capabilities that are required for a Windows app that uses the Windows.Devices.Usb namespace.
-ms.date: 02/23/2023
+ms.date: 01/17/2024
 ---
 
 # How to add USB device capabilities to the app manifest
@@ -15,11 +15,11 @@ This topic describes the device capabilities that are required for a Windows app
 
 Your USB app must include certain device capabilities in its [App package manifest](/uwp/schemas/appxpackage/appx-package-manifest) to specify key information about the device. Here are the required elements in hierarchical order:
 
-**[\<DeviceCapability\>](/uwp/schemas/appxpackage/appxmanifestschema/element-devicecapability)**: The **Name** attribute must be "usb".
+**[\<DeviceCapability>](/uwp/schemas/appxpackage/appxmanifestschema/element-devicecapability)**: The **Name** attribute must be "usb".
 
-**\<Device\>**: The **Id** attribute must specify the vendor/product Id or can be "any" to allow access to any device that matches the function type.
+**\<Device>**: The **Id** attribute must specify the vendor/product Id or can be "any" to allow access to any device that matches the function type.
 
-**\<Function\>**: The **Type** attribute can specify the device class code, name, or the device interface GUID.
+**\<Function>**: The **Type** attribute can specify the device class code, name, or the device interface GUID.
 
 > [!NOTE]
 > You cannot modify the USB device capability in Microsoft Visual Studio 2013. You must right-click the Package.appxmanifest file in **Solution Explorer** and select **Open With...**, and then **XML (Text) Editor**. The file opens in plain XML.
@@ -73,7 +73,7 @@ These USB device classes are not supported:
 
 ## USB device capability examples
 
-The following example allows the app to access any ActiveSync or StillImage interface on any device. The app is not required to specify the vendor and product identifiers because these are known class types.
+The following example allows the app to access any **ActiveSync** or **StillImage** interface on any device. The app is not required to specify the vendor and product identifiers because these are known class types.
 
 ```xml
 <DeviceCapability Name="usb">

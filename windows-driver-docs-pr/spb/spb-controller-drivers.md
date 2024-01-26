@@ -1,7 +1,7 @@
 ---
-title: Overview of SPB controller drivers
+title: Overview of SPB Controller Drivers
 description: An SPB controller is a device that controls a simple peripheral bus (SPB) and that transfers data to and from the peripheral devices that are connected to the SPB.
-ms.date: 04/20/2017
+ms.date: 01/12/2024
 ---
 
 # Overview of SPB controller drivers
@@ -22,7 +22,7 @@ The SPB controller driver and SpbCx both run in kernel mode, and communicate wit
 
 The drivers that send I/O requests to the SPB controller are either kernel-mode drivers that use the [Kernel-Mode Driver Framework](../wdf/index.md) (KMDF), or user-mode drivers that use the [User-Mode Driver Framework](/previous-versions/ff554928(v=vs.85)) (UMDF). These drivers can send read and write requests to transfer data to and from SPB-connected peripheral devices. In addition, the drivers can send I/O control (IOCTL) requests to perform SPB-specific operations.
 
-The SPB controller driver directly accesses the hardware registers of the SPB controller device to initiate data transfers to and from peripheral devices that are connected to the SPB. For an SPB such as I²C, these data transfers occur at relatively slow speeds. Although the hardware registers of the SPB controller are likely to be memory mapped, the registers of the peripheral devices must be accessed serially through the SPB.
+The SPB controller driver directly accesses the hardware registers of the SPB controller device to initiate data transfers to and from peripheral devices that are connected to the SPB. For an SPB such as I<sup>2</sup>C, these data transfers occur at relatively slow speeds. Although the hardware registers of the SPB controller are likely to be memory mapped, the registers of the peripheral devices must be accessed serially through the SPB.
 
 In response to an I/O request to transfer data to or from an SPB-connected peripheral device, the SPB controller driver initiates the bus transfer, marks the I/O request as pending, and returns without waiting for the transfer to complete. Later, when the SPB controller hardware finishes the transfer, the controller signals an interrupt, and the ISR in the SPB controller driver either completes the pending I/O request or initiates the next transfer in the requested I/O operation.
 

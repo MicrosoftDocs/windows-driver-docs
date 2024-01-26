@@ -1,7 +1,7 @@
 ---
-title: PC/SC interface for smart cards
+title: PC/SC Interface for Smart Cards
 description: This topic describes the ATR format for different NFC card types. 
-ms.date: 11/16/2022
+ms.date: 01/11/2024
 ---
 
 # PC/SC interface for smart cards

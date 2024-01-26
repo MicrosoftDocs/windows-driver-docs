@@ -1,8 +1,8 @@
 ---
-title: Sensor device driver design guide
+title: Sensor Device Driver Design Guide
 description: Sensor device driver design guide
 ms.assetid: 74e8ae08-3e61-41be-aed0-e733dc6072cf
-ms.date: 09/29/2020
+ms.date: 01/11/2024
 ms.topic: article
 ---
 
@@ -23,11 +23,8 @@ Location devices comprise one especially interesting category. By now, most peop
 The Windows sensor and location platform consists of the following developer and user components:
 
 - The DDI. Windows provides a standard way for sensor devices to connect to the computer and to provide data to other subsystems.
-
 - The Windows Sensor API provides a set of methods, properties, and events to work with connected sensors and sensor data.
-
 - The Windows Location API, which is built on the Windows Sensor API, provides a set of programming objects. These objects include scripting objects, for working with location information.
-
 - The Control Panel gives computer users control over location settings.
 
 The following sections describe each of these components.

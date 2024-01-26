@@ -1,5 +1,5 @@
 ---
-title: Wi-Fi direct pairing implementation
+title: Wi-Fi Direct Pairing Implementation
 description: This section provides design guidelines and requirements for a peripheral device to participate in the Tap and Setup and Tap and Reconnect use cases.
 keywords:
 - NFC
@@ -7,17 +7,17 @@ keywords:
 - proximity
 - near field proximity
 - NFP
-ms.date: 11/15/2022
+ms.date: 01/11/2024
 ---
 
 # Wi-Fi direct pairing implementation
 
 This section provides design guidelines and requirements for a peripheral device to participate in the Tap and Setup and Tap and Reconnect use cases.
 
->[!NOTE]
->The pairing implementation described in this topic is currently supported in Windows 8.1, for pairing to printer devices only.
->
->Windows 10 and later supports NFC to Wi-Fi Direct static connection handover through the Wi-Fi alliance's Wi-Fi P2P Carrier Configuration Record. For more information, see [Wi-Fi Alliance](https://www.wi-fi.org/).
+> [!NOTE]
+> The pairing implementation described in this topic is currently supported in Windows 8.1, for pairing to printer devices only.
+> 
+> Windows 10 and later supports NFC to Wi-Fi Direct static connection handover through the Wi-Fi alliance's Wi-Fi P2P Carrier Configuration Record. For more information, see [Wi-Fi Alliance](https://www.wi-fi.org/).
 
 ## Peripheral Wi-Fi direct device pairing
 
@@ -249,4 +249,4 @@ Any attempt to tap the device on a system running an operating system that doesn
 
 ## Related topics
 
-- [NFC device driver interface (DDI) reference](/windows-hardware/drivers/ddi/index)  
+- [NFC device driver interface (DDI) reference](/windows-hardware/drivers/ddi/index)

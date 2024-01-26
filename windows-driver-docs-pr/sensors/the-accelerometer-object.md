@@ -1,35 +1,32 @@
 ---
-title: Accelerometer object
-description: The sample driver treats the accelerometer as an object that’s represented by the CAccelerometerDevice class.
-ms.date: 04/20/2017
+title: Accelerometer Object
+description: The sample driver treats the accelerometer as an object that's represented by the CAccelerometerDevice class.
+ms.date: 01/11/2024
 ---
 
 # Accelerometer object
-
 
 | Module                  | Class/Interface      |
 |-------------------------|----------------------|
 | AccelerometerDevice.cpp | CAccelerometerDevice |
 | SensorDdi.cpp           | CSensorDdi           |
 
- 
-
-The sample driver treats the accelerometer as an object that’s represented by the CAccelerometerDevice class. This object is declared in the header file AccelerometerDevice.h; and, is defined in AccelerometerDevice.cpp. If you were to extend this driver to support another sensor, in addition to the ADXL345, you'll create a similarly named header and source file that corresponded to your new device (for example, CompassDevice.h and CompassDevice.cpp). If your driver supported a single sensor, replace the existing header and source files.
+The sample driver treats the accelerometer as an object that's represented by the CAccelerometerDevice class. This object is declared in the header file AccelerometerDevice.h; and, is defined in AccelerometerDevice.cpp. If you were to extend this driver to support another sensor, in addition to the ADXL345, you'll create a similarly named header and source file that corresponded to your new device (for example, CompassDevice.h and CompassDevice.cpp). If your driver supported a single sensor, replace the existing header and source files.
 
 The accelerometer object supports the methods that:
 
--   Initialize the accelerometer
-    -   Configure the hardware
-    -   Connect the data-notification interrupt
-    -   Write data to the device's register interface
-    -   Read data from the device’s register interface
-    -   Support user-mode interrupts
-    -   Retrieve the supported data fields
-    -   Retrieve the supported events
-    -   Retrieve the supported properties
-    -   Set the report interval
-    -   Set the device state
-    -   Set the default property values
+- Initialize the accelerometer
+  - Configure the hardware
+  - Connect the data-notification interrupt
+  - Write data to the device's register interface
+  - Read data from the device's register interface
+  - Support user-mode interrupts
+  - Retrieve the supported data fields
+  - Retrieve the supported events
+  - Retrieve the supported properties
+  - Set the report interval
+  - Set the device state
+  - Set the default property values
 
 ## Initialization methods
 
@@ -37,17 +34,13 @@ The accelerometer object supports the methods that:
 |-------------------------|----------------------|
 | AccelerometerDevice.cpp | CAccelerometerDevice |
 
- 
-
 The object supports these methods:
 
-| Method                                      | Description                                                                                                                                                                                                                                                                           |
-|---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **CAccelerometerDevice::InitializeDevice**  | Retrieves the device configuration settings from ACPI, and then, retrieves the resource-hub connection IDs. This method is invoked by the **CSensorDdi::Initialize** method after the latter has initialized the sensor driver interface, the client manager, and the report manager. |
-| **CAccelerometerDevice::ConfigureHardware** | Allocates the read and write buffers and sets the read and writer registers.                                                                                                                                                                                                          |
-| **CAccelerometerDevice::ConnectInterrupt**  | Sreates a WUDF device interrupt. It does this by configuring a WUDF\_INTERRUPT\_CONFIG data structure and then invoking the **IWDFDevice3::CreateInterrupt** method.                                                                                                                  |
-
- 
+| Method | Description |
+|--|--|
+| **CAccelerometerDevice::InitializeDevice** | Retrieves the device configuration settings from ACPI, and then, retrieves the resource-hub connection IDs. This method is invoked by the **CSensorDdi::Initialize** method after the latter has initialized the sensor driver interface, the client manager, and the report manager. |
+| **CAccelerometerDevice::ConfigureHardware** | Allocates the read and write buffers and sets the read and writer registers. |
+| **CAccelerometerDevice::ConnectInterrupt** | Sreates a WUDF device interrupt. It does this by configuring a WUDF\_INTERRUPT\_CONFIG data structure and then invoking the **IWDFDevice3::CreateInterrupt** method. |
 
 For the complete sequence of initialization methods, refer to the [Driver initialization](driver-initialization.md) section in this guide.
 
@@ -57,13 +50,11 @@ For the complete sequence of initialization methods, refer to the [Driver initia
 |-------------------------|----------------------|
 | AccelerometerDevice.cpp | CAccelerometerDevice |
 
- 
-
 The accelerometer object supports both a read- and a write-operation. These operations let the driver get the current value of a given register, or, to write a new value to a register. The **CAccelerometerDevice::ReadRegister** corresponds to the read operation and the **CAccelerometerDevice::WriteRegister** corresponds to the write operation. These operations are invoked:
 
--   At driver initialization time when the **CAccelereometerDevice::ConfigureHardware** method is invoked to configure the device and place it in standby mode.
--   When the count of connected clients goes to zero and the **CAccelerometerDevice::SetDeviceStateStandby** method is invoked.
--   When the GPIO line is asserted by the ADXL345 and the **CAccelerometerDevice::OnInterruptIsr** method is invoked.
+- At driver initialization time when the **CAccelereometerDevice::ConfigureHardware** method is invoked to configure the device and place it in standby mode.
+- When the count of connected clients goes to zero and the **CAccelerometerDevice::SetDeviceStateStandby** method is invoked.
+- When the GPIO line is asserted by the ADXL345 and the **CAccelerometerDevice::OnInterruptIsr** method is invoked.
 
 ## Supporting user-mode interrupts
 
@@ -79,8 +70,6 @@ The accelerometer object supports user-mode interrupts with the **CAccelerometer
 | 0x35     | High-order byte of the Y-axis reading |
 | 0x36     | Low-order byte of the Z-axis reading  |
 | 0x37     | High-order byte of the Z-axis reading |
-
- 
 
 The code in the **CAccelerometerDevice::RequestData** method packages the register contents for each axis into a variable of type SHORT (xRaw, yRaw, and zRaw) and then applies a scale factor of .00390625. (The scale factor is a result of dividing the range of acceleration values, 32 in this case (because +/- 16G is supported), by the number that can be represented in 13 bits (2^13)--which is the selected resolution.
 
@@ -101,7 +90,7 @@ zAccel = (DOUBLE)zRaw * scaleFactor;
 
 After the driver computes the values, it packages each one into a **PROPVARIANT** structure and invokes the **CAccelerometerDevice::AddDataField** method to update the value for each axis.
 
-Note that the supported acceleration range (+/- 16G) and the resolution were set using register 0x31 in the ADXL345. This occurs in the *g\_ConfigurationSettings* array found at the beginning of AccelerometerDevice.cpp:
+The supported acceleration range (+/- 16G) and the resolution were set using register 0x31 in the ADXL345. This occurs in the *g\_ConfigurationSettings* array found at the beginning of AccelerometerDevice.cpp:
 
 ```cpp
 // +-16g, 13-bit resolution
@@ -116,8 +105,6 @@ Note that the supported acceleration range (+/- 16G) and the resolution were set
 | Module                  | Class/Interface      |
 |-------------------------|----------------------|
 | AccelerometerDevice.cpp | CAccelerometerDevice |
-
- 
 
 The sensor platform supports report intervals and lets applications set them to values within a defined range. The minimum and default report intervals for the sample driver are defined in the file Adxl345.h.
 
@@ -157,13 +144,11 @@ hr = WriteRegister(ADXL345_INT_ENABLE, pWriteBuffer, 1);
 |-------------------------|----------------------|
 | AccelerometerDevice.cpp | CAccelerometerDevice |
 
- 
-
 The sample device supports three device modes:
 
--   Measurement mode with eventing
--   Measurement mode without eventing
--   Standby mode
+- Measurement mode with eventing
+- Measurement mode without eventing
+- Standby mode
 
 Measurement mode results in data collection; standby mode results in no data being returned by the device. When measurement mode with eventing is set, the driver lets apps register to receive notifications when data arrives from the device. When measurement mode without eventing is set, apps must poll the device for the most recent data.
 
@@ -191,7 +176,7 @@ hr = WriteRegister(ADXL345_POWER_CTL, pBuffer, 1);
 
 When measurement mode with eventing is set, Windows apps can receive data updates from the driver by registering an event handler for the **Accelerometer.ReadingChanged** event.
 
-The driver sets this mode during initialization (and, when it’s returning from standby mode). The driver sets this mode with two write operations. The first operation ensures that the device is placed in measurement mode:
+The driver sets this mode during initialization (and, when it's returning from standby mode). The driver sets this mode with two write operations. The first operation ensures that the device is placed in measurement mode:
 
 ```cpp
 pBuffer[0] = ADXL345_POWER_CTL_MEASURE;
@@ -226,11 +211,3 @@ Then, a second write operation places the device in standby mode:
 pBuffer[0] = ADXL345_POWER_CTL_STANDBY;
 hr = WriteRegister(ADXL345_POWER_CTL, pBuffer, 1);
 ```
-
- 
-
- 
-
-
-
-

@@ -1,7 +1,7 @@
 ---
-title: How to transfer data to USB isochronous endpoints
+title: How to Transfer Data to USB Isochronous Endpoints
 description: This topic describes how a client driver can build a USB Request Block (URB) to transfer data to and from isochronous endpoints in a USB device.
-ms.date: 02/22/2023
+ms.date: 01/17/2024
 ---
 
 # How to transfer data to USB isochronous endpoints
@@ -22,7 +22,7 @@ Isochronous transfers are packet based. The term *isochronous packet* in this to
 
 The client driver starts an isochronous transfer by creating an URB for the request and submitting the URB to the USB driver stack. The request is handled by one of the lower drivers in the USB driver stack. Upon receiving the URB, the USB driver stack performs a set of validations and schedules transactions for the request. For full speed, an isochronous packet to be transferred in each bus interval is contained in a single transaction on the wire. Certain high-speed devices permit multiple transactions in a bus interval. In that case, the client driver can send or receive more data in the isochronous packet in a single request (URB). SuperSpeed devices support multiple transactions and burst transfers, allowing even more bytes per bus interval. For more information about burst transfers, see USB 3.0 specification page 9-42.
 
-## Prerequisites
+## Before you start
 
 Before you create a request for an isochronous transfer, you must have information about the pipe that is opened for the isochronous endpoint.
 
@@ -292,7 +292,6 @@ NTSTATUS CreateIsochURB  ( PDEVICE_OBJECT         DeviceObject,
     // For high-speed transfers
     if (deviceExtension->IsDeviceHighSpeed || deviceExtension->IsDeviceSuperSpeed)
     {
-
         // Ideally you can pre-calculate numberOfPacketsPerFrame for the Pipe and
         // store it in the pipe context.
 
@@ -320,7 +319,6 @@ NTSTATUS CreateIsochURB  ( PDEVICE_OBJECT         DeviceObject,
             break;
         }
 
-
         //Calculate the number of packets.
         numberOfPackets = TotalLength / isochPacketSize;
 
@@ -346,7 +344,6 @@ NTSTATUS CreateIsochURB  ( PDEVICE_OBJECT         DeviceObject,
         // Microsoft USB stack only supports bInterval value of 1 for
         // full-speed isochronous endpoints.
 
-
         //Calculate the number of packets.
         numberOfPacketsPerFrame = 1;
 
@@ -358,7 +355,6 @@ NTSTATUS CreateIsochURB  ( PDEVICE_OBJECT         DeviceObject,
             ntStatus = STATUS_INVALID_PARAMETER;
             goto Exit;
         }
-
     }
 
     // Allocate an isochronous URB for the transfer
@@ -392,7 +388,6 @@ NTSTATUS CreateIsochURB  ( PDEVICE_OBJECT         DeviceObject,
     Urb->UrbIsochronousTransfer.NumberOfPackets = numberOfPackets;
     Urb->UrbIsochronousTransfer.UrbLink = NULL;
 
-
     // Set the offsets for every packet for reads/writes
 
     for (index = 0; index < numberOfPackets; index++)
@@ -409,7 +404,6 @@ NTSTATUS CreateIsochURB  ( PDEVICE_OBJECT         DeviceObject,
     // Set the USBD_START_ISO_TRANSFER_ASAP. The USB driver stack will calculate the start frame.
     // StartFrame value set by the client driver is ignored.
     Urb->UrbIsochronousTransfer.TransferFlags |= USBD_START_ISO_TRANSFER_ASAP;
-
 
 Exit:
 

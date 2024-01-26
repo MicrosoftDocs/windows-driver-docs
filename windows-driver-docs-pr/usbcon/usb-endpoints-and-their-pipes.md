@@ -1,22 +1,20 @@
 ---
+title: USB Endpoints and Their Pipes
 description: A USB device has endpoints that are used to for data transfers.
-title: USB endpoints and their pipes
-ms.date: 04/20/2017
+ms.date: 01/17/2024
 ---
 
 # USB endpoints and their pipes
 
-
-**Summary**
-
--   Endpoint is hardware on the device; pipe is software on the host side.
--   Endpoint is not configured; pipe is configured for transfers
--   The host sends or receives data to or from a pipe.
-
 A USB device has endpoints that are used to for data transfers. On the host side, endpoints are represented by pipes. This topic differentiates between those two terms.
 
-## USB endpoint
+## Summary
 
+- Endpoint is hardware on the device; pipe is software on the host side.
+- Endpoint is not configured; pipe is configured for transfers
+- The host sends or receives data to or from a pipe.
+
+## USB endpoint
 
 An *endpoint* is a buffer on a USB device. Endpoint is a term that relates to the hardware itself, independent of the host operating system. The host can send and receive data to or from that buffer. Endpoints can be categorized into control and data endpoints.
 
@@ -32,7 +30,6 @@ The host software can look at endpoint information, before the device has been c
 
 ## USB pipes
 
-
 Data is transferred between a USB device and the USB host through an abstraction called a *pipe*. Pipes is purely a software term. A pipe talks to an endpoint on a device, and that endpoint has an address. The other end of a pipe is always the host controller.
 
 A pipe for an endpoint is opened when the device is configured either by selecting a configuration and an interface's alternate setting. Therefore they become targets for I/O operations. A pipe has all the properties of an endpoint, but it is active and be used to communicate with the host.
@@ -42,7 +39,5 @@ An unconfigured endpoint is called an endpoint while a configured endpoint is ca
 ![usb pipes and endpoints.](images/endpoints.png)
 
 ## Related topics
-[Concepts for all USB developers](usb-concepts-for-all-developers.md)  
 
-
-
+- [Concepts for all USB developers](usb-concepts-for-all-developers.md)  

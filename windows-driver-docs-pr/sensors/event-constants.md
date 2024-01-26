@@ -1,5 +1,5 @@
 ---
-title: Event constants
+title: Event Constants
 description: The sensor platform defines the following constants for driver events.
 keywords:
 - Event Constants
@@ -12,7 +12,7 @@ api_location:
 - Sensors.h
 api_type:
 - HeaderDef
-ms.date: 03/02/2023
+ms.date: 01/11/2024
 ms.topic: reference
 ---
 

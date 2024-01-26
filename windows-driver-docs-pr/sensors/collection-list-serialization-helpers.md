@@ -1,11 +1,10 @@
 ---
-title: Collection list serialization helpers
+title: Collection List Serialization Helpers
 description: The collection list serialization helper functions are used by the v2 sensor drivers, for performing serialization-related operations on SENSOR\_COLLECTION\_LIST structures.
-ms.date: 07/20/2018
+ms.date: 01/11/2024
 ---
 
 # Collection list serialization helpers
-
 
 The collection list serialization helper functions are used by the v2 sensor drivers, for performing serialization-related operations on [**SENSOR\_COLLECTION\_LIST**](/windows-hardware/drivers/ddi/sensorsdef/ns-sensorsdef-sensor_collection_list) structures.
 
@@ -15,63 +14,63 @@ The helper functions are used along with the sensor device driver software inter
 
 Usage by sensor DDSI
 
--   Allocates a serialization buffer, and returns a pointer to the buffer.
+- Allocates a serialization buffer, and returns a pointer to the buffer.
 
 Comments
 
--   A successful buffer allocation is indicated by a STATUS\_OK value. Otherwise, the appropriate NTSTATUS error code is returned.
+- A successful buffer allocation is indicated by a STATUS\_OK value. Otherwise, the appropriate NTSTATUS error code is returned.
 
 **SerializationBufferFree**
 
 Usage by sensor DDSI
 
--   Frees a serialization buffer that is no longer needed.
+- Frees a serialization buffer that is no longer needed.
 
 Comments
 
--   None.
+- None.
 
 **CollectionsListGetSerializedSize**
 
 Usage by sensor DDSI
 
--   Retrieves the size of the serialization buffer.
+- Retrieves the size of the serialization buffer.
 
 Comments
 
--   Buffer size is returned as a ULONG variable.
+- Buffer size is returned as a ULONG variable.
 
 **CollectionsListSerializeToBuffer**
 
 Usage by sensor DDSI
 
--   Writes the [**SENSOR\_COLLECTION\_LIST**](/windows-hardware/drivers/ddi/sensorsdef/ns-sensorsdef-sensor_collection_list) information to the serialization buffer.
+- Writes the [**SENSOR\_COLLECTION\_LIST**](/windows-hardware/drivers/ddi/sensorsdef/ns-sensorsdef-sensor_collection_list) information to the serialization buffer.
 
 Comments
 
--   A successful write operation is indicated by a STATUS\_OK value. Otherwise, the appropriate NTSTATUS error code is returned.
+- A successful write operation is indicated by a STATUS\_OK value. Otherwise, the appropriate NTSTATUS error code is returned.
 
 **CollectionsListAllocateBufferAndSerialize**
 
 Usage by sensor DDSI
 
--   Allocates a serialization buffer, and then writes the [**SENSOR\_COLLECTION\_LIST**](/windows-hardware/drivers/ddi/sensorsdef/ns-sensorsdef-sensor_collection_list) information to the buffer.
+- Allocates a serialization buffer, and then writes the [**SENSOR\_COLLECTION\_LIST**](/windows-hardware/drivers/ddi/sensorsdef/ns-sensorsdef-sensor_collection_list) information to the buffer.
 
 Comments
 
--   If buffer allocation is successful, the collection list information is written to the buffer. Otherwise, the write operation is not performed and the appropriate NTSTATUS error code is returned.
+- If buffer allocation is successful, the collection list information is written to the buffer. Otherwise, the write operation is not performed and the appropriate NTSTATUS error code is returned.
 
--   A successful write operation is indicated by a STATUS\_OK value. Otherwise, the appropriate NTSTATUS error code is returned.
+- A successful write operation is indicated by a STATUS\_OK value. Otherwise, the appropriate NTSTATUS error code is returned.
 
 **CollectionsListDeserializeFromBuffer**
 
 Usage by sensor DDSI
 
--   Reads [**SENSOR\_COLLECTION\_LIST**](/windows-hardware/drivers/ddi/sensorsdef/ns-sensorsdef-sensor_collection_list) information from a source buffer.
+- Reads [**SENSOR\_COLLECTION\_LIST**](/windows-hardware/drivers/ddi/sensorsdef/ns-sensorsdef-sensor_collection_list) information from a source buffer.
 
 Comments
 
--   A successful read operation is indicated by a STATUS\_OK value. Otherwise, the appropriate NTSTATUS error code is returned.
+- A successful read operation is indicated by a STATUS\_OK value. Otherwise, the appropriate NTSTATUS error code is returned.
 
 ## Requirements
 
@@ -81,13 +80,6 @@ Comments
 
 **Header**: Sensorsutils.h
 
-
- 
-
 ## Related topics
 
-
-[Marshalling helper functions](marshalling-helper-functions.md)
-
- 
-
+- [Marshalling helper functions](marshalling-helper-functions.md)

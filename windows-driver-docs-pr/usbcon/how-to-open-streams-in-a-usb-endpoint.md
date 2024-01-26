@@ -1,7 +1,7 @@
 ---
-title: How to open and close static streams in a USB bulk endpoint
+title: How to Open and Close Static Streams in a USB Bulk Endpoint
 description: This article discusses static streams capability and explains how a USB client driver can open and close streams in a bulk endpoint of a USB 3.0 device.
-ms.date: 01/24/2023
+ms.date: 01/16/2024
 ---
 
 # How to open and close static streams in a USB bulk endpoint
@@ -38,9 +38,7 @@ Before a client driver can open or close streams, the driver must have:
 
   **WDM drivers:** Obtain a USBD pipe handle by sending a select-configuration or select-interface request. For more information, see [How to Select a Configuration for a USB Device](how-to-select-a-configuration-for-a-usb-device.md).
 
-## Instructions
-
-### How to open static streams
+## How to open static streams
 
 1. Determine whether the underlying USB driver stack and the host controller supports the static streams capability by calling the **[WdfUsbTargetDeviceQueryUsbCapability](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicequeryusbcapability)** method. Typically, the client driver calls the routine in the driver's **[EVT_WDF_DEVICE_PREPARE_HARDWARE](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware)** event callback routine.
 
@@ -62,28 +60,32 @@ Before a client driver can open or close streams, the driver must have:
    - An output buffer (pointer to USHORT). Upon completion, the buffer is filled with the maximum number of streams (per endpoint) supported by the host controller.
    - The length, in bytes, of the output buffer. For streams, the length is `sizeof (USHORT)`.
 
-2. Evaluate the returned NTSTATUS value. If the routine completes successfully, returns STATUS_SUCCESS, the static streams capability is supported. Otherwise, the method returns an appropriate error code.
-3. Determine the number of streams to open. The maximum number of streams that can be opened is limited by:
+1. Evaluate the returned NTSTATUS value. If the routine completes successfully, returns STATUS_SUCCESS, the static streams capability is supported. Otherwise, the method returns an appropriate error code.
+
+1. Determine the number of streams to open. The maximum number of streams that can be opened is limited by:
    - The maximum number of streams supported by the host controller. That number is received by **[WdfUsbTargetDeviceQueryUsbCapability](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicequeryusbcapability)** (for WDM drivers, **[USBD_QueryUsbCapability](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_queryusbcapability)**), in the caller-supplied output buffer. The Microsoft-provided USB driver stack supports up to 255 streams. **WdfUsbTargetDeviceQueryUsbCapability** takes that limitation into consideration while calculating the number of streams. The method never returns a value that is greater than 255.
    - The maximum number of streams supported by the endpoint in the device. To get that number, inspect the endpoint companion descriptor (see **[USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR](/windows-hardware/drivers/ddi/usbspec/ns-usbspec-_usb_superspeed_endpoint_companion_descriptor)** in Usbspec.h). To obtain the endpoint companion descriptor, you must parse the configuration descriptor. To obtain the configuration descriptor, the client driver must call the **[WdfUsbTargetDeviceRetrieveConfigDescriptor](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdeviceretrieveconfigdescriptor)** method. You must use the helper routines, **[USBD_ParseConfigurationDescriptorEx](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_parseconfigurationdescriptorex)** and **[USBD_ParseDescriptor](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_parsedescriptors)**. For code example, see the example function named RetrieveStreamInfoFromEndpointDesc in [How to enumerate USB pipes](how-to-get-usb-pipe-handles.md).
 
    To determine the maximum number of streams, choose the lesser of two values supported by the host controller and the endpoint.
-4. Allocate an array of **[USBD_STREAM_INFORMATION](/windows-hardware/drivers/ddi/usb/ns-usb-_usbd_stream_information)** structures with *n* elements, where *n* is the number of streams to open. The client driver is responsible for releasing this array after the driver is finished using streams.
-5. Allocate an URB for the open-streams request by calling the **[WdfUsbTargetDeviceCreateUrb](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicecreateurb)** method. If the call completes successfully, the method retrieves a WDF memory object and the address of the **[URB](/windows-hardware/drivers/ddi/usb/ns-usb-_urb)** structure that is allocated by the USB driver stack.
+
+1. Allocate an array of **[USBD_STREAM_INFORMATION](/windows-hardware/drivers/ddi/usb/ns-usb-_usbd_stream_information)** structures with *n* elements, where *n* is the number of streams to open. The client driver is responsible for releasing this array after the driver is finished using streams.
+
+1. Allocate an URB for the open-streams request by calling the **[WdfUsbTargetDeviceCreateUrb](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicecreateurb)** method. If the call completes successfully, the method retrieves a WDF memory object and the address of the **[URB](/windows-hardware/drivers/ddi/usb/ns-usb-_urb)** structure that is allocated by the USB driver stack.
 
    **WDM drivers:** Call the **[USBD_UrbAllocate](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_urballocate)** routine.
 
-6. Format the URB for the open-stream request. The URB uses the **[_URB_OPEN_STATIC_STREAMS](/windows-hardware/drivers/ddi/usb/ns-usb-_urb_open_static_streams)** structure to define the request. To format the URB, you need:
+1. Format the URB for the open-stream request. The URB uses the **[_URB_OPEN_STATIC_STREAMS](/windows-hardware/drivers/ddi/usb/ns-usb-_urb_open_static_streams)** structure to define the request. To format the URB, you need:
    - The USBD pipe handle to the endpoint. If you have a WDF pipe object, you can obtain the USBD pipe handle by calling the **[WdfUsbTargetPipeWdmGetPipeHandle](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetpipewdmgetpipehandle)** method.
    - The stream array (created in step 4)
    - A pointer to the **[URB](/windows-hardware/drivers/ddi/usb/ns-usb-_urb)** structure (created in step 5).
 
    To format the URB, call **[UsbBuildOpenStaticStreamsRequest](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbbuildopenstaticstreamsrequest)** and pass the required information as parameter values. Make sure that the number of streams specified to **UsbBuildOpenStaticStreamsRequest** doesn't exceed the maximum number of supported streams.
-7. Send the URB as a WDF request object by calling the **[WdfRequestSend](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestsend)** method. To send the request synchronously, call the **[WdfUsbTargetDeviceSendUrbSynchronously](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicesendurbsynchronously)** method instead.
+
+1. Send the URB as a WDF request object by calling the **[WdfRequestSend](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestsend)** method. To send the request synchronously, call the **[WdfUsbTargetDeviceSendUrbSynchronously](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicesendurbsynchronously)** method instead.
 
    **WDM drivers:** Associate the URB with an IRP, and submit the IRP to the USB driver stack. For more information, see [How to Submit an URB](send-requests-to-the-usb-driver-stack.md).
 
-8. After the request is complete, check the status of the request.
+1. After the request is complete, check the status of the request.
 
    If USB driver stack fails the request, the URB status contains the relevant error code. Some common failure conditions are described in the Remarks section.
 
@@ -93,7 +95,7 @@ For an open-streams request, you'll need to allocate an URB and an array. The cl
 
 The stream array can be released after the client driver is finished using streams or has stored them for I/O requests. In the code example included in this article, the driver stores the streams array in the device context. The driver releases the device context just before releasing the device object is removed.
 
-### How to transfer data to a particular stream
+## How to transfer data to a particular stream
 
 To send a data transfer request to a particular stream, you'll need a WDF request object. Typically, the client driver isn't required to allocate a WDF request object. When the I/O Manager receives a request from an application, the I/O Manager creates an IRP for the request. That IRP is intercepted by the framework. The framework then allocates a WDF request object to represent the IRP. After that, the framework passes the WDF request object to the client driver. The client driver can then associate the request object with the data transfer URB and send it down to the USB driver stack.
 
@@ -113,17 +115,21 @@ The following WDF methods *aren't* supported for streams:
 The following procedure assumes that the client driver receives the request object from framework.
 
 1. Allocate an URB by calling **[WdfUsbTargetDeviceCreateUrb](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicecreateurb)**. This method allocates a WDF memory object that contains the newly allocated URB. The client driver can choose to allocate an URB for every I/O request or allocate an URB and reuse it for the same type of request.
+
 1. Format the URB for a bulk transfer by calling **[UsbBuildInterruptOrBulkTransferRequest](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbbuildinterruptorbulktransferrequest)**. In the *PipeHandle* parameter, specify the handle to the stream. The stream handles were obtained in a previous request, described in the [How to open static streams](#how-to-open-static-streams) section.
+
 1. Format the WDF request object by calling the **[WdfUsbTargetPipeFormatRequestForUrb](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetpipeformatrequestforurb)** method. In the call, specify the WDF memory object that contains the data transfer URB. The memory object was allocated in step 1.
+
 1. Send the URB as a WDF request either by calling **[WdfRequestSend](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestsend)** or **[WdfUsbTargetPipeSendUrbSynchronously](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetpipesendurbsynchronously)**. If you call **WdfRequestSend**, you must specify a completion routine by calling **[WdfRequestSetCompletionRoutine](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestsetcompletionroutine)** so that the client driver can get notified when the asynchronous operation is complete. You must free the data transfer URB in the completion routine.
 
 **WDM drivers:** Allocate an URB by calling **[USBD_UrbAllocate](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_urballocate)** and format it for bulk transfer (see **[_URB_BULK_OR_INTERRUPT_TRANSFER](/windows-hardware/drivers/ddi/usb/ns-usb-_urb_bulk_or_interrupt_transfer)**). To format the URB, you can call **[UsbBuildInterruptOrBulkTransferRequest](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbbuildinterruptorbulktransferrequest)** or format the URB structure manually. Specify the handle to the stream in the URB's **UrbBulkOrInterruptTransfer.PipeHandle** member.
 
-### How to close static streams
+## How to close static streams
 
 The client driver can close streams after the driver is finished using them. However, the close-stream request is optional. The USB driver stack closes all streams when the endpoint associated with the streams is de-configured. An endpoint is de-configured when an alternate configuration or interface is selected, the device is removed, and so on. A client driver must close streams if the driver wants to open a different number of streams. To send a close-stream request:
 
 1. Allocate an **[URB](/windows-hardware/drivers/ddi/usb/ns-usb-_urb)** structure by calling **[WdfUsbTargetDeviceCreateUrb](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicecreateurb)**.
+
 1. Format the URB for the close-streams request. The **UrbPipeRequest** member of the **[URB](/windows-hardware/drivers/ddi/usb/ns-usb-_urb)** structure is an **[_URB_PIPE_REQUEST](/windows-hardware/drivers/ddi/usb/ns-usb-_urb_pipe_request)** structure. Fill in its members as follows:
     - The **Hdr** member of **[_URB_PIPE_REQUEST](/windows-hardware/drivers/ddi/usb/ns-usb-_urb_pipe_request)** must be URB_FUNCTION_CLOSE_STATIC_STREAMS
     - The **PipeHandle** member must be the handle to the endpoint that contains the open streams in use.
@@ -132,9 +138,7 @@ The client driver can close streams after the driver is finished using them. How
 
 The close-handle request closes all streams that were previously opened by the client driver. The client driver can't use the request to close specific streams in the endpoint.
 
-## Remarks
-
-### Best practices for sending a static streams request
+## Best practices for sending a static streams request
 
 The USB driver stack performs validations on the received URB. To avoid validation errors:
 
@@ -144,7 +148,7 @@ The USB driver stack performs validations on the received URB. To avoid validati
 - Don't send a close-stream request to an endpoint that doesn't have open streams.
 - After static streams are open for an endpoint, don't send I/O requests by using the endpoint pipe handle that was obtained through a select-configuration or select-interface requests. This is true even if the static streams have been closed.
 
-### Reset and abort pipe operations
+## Reset and abort pipe operations
 
 At times, transfers to or from an endpoint can fail. Such failures can result from an error condition on the endpoint or host controller, such as a stall or halt condition. To clear the error condition, the client driver first cancels pending transfers and then resets the pipe with which the endpoint is associated. To cancel pending transfers, the client driver can send an abort-pipe request. To reset a pipe, the client driver must send a reset-pipe request.
 
@@ -161,61 +165,52 @@ NTSTATUS
     _In_ WDFUSBPIPE Pipe)
 {
     NTSTATUS status;
-
     PDEVICE_CONTEXT deviceContext;
-
     PPIPE_CONTEXT pipeContext;
-
     USHORT cStreams = 0;
-
     USBD_PIPE_HANDLE usbdPipeHandle;
-
     WDFMEMORY urbMemory = NULL;
     PURB      urb = NULL;
 
     PAGED_CODE();
 
     deviceContext =GetDeviceContext(Device);
-
     pipeContext = GetPipeContext (Pipe);
 
     if (deviceContext->MaxStreamsController == 0)
     {
-        TraceEvents(TRACE_LEVEL_ERROR, TRACE_DEVICE, 
+        TraceEvents(TRACE_LEVEL_ERROR, TRACE_DEVICE,
             "%!FUNC! Static streams are not supported.");
 
         status = STATUS_NOT_SUPPORTED;
-
         goto Exit;
-
     }
 
-    // If static streams are not supported, number of streams supported is zero. 
+    // If static streams are not supported, number of streams supported is zero.
 
     if (pipeContext->MaxStreamsSupported == 0)
     {
         status = STATUS_DEVICE_CONFIGURATION_ERROR;
 
-        TraceEvents(TRACE_LEVEL_ERROR, TRACE_DEVICE, 
+        TraceEvents(TRACE_LEVEL_ERROR, TRACE_DEVICE,
             "%!FUNC! Static streams are not supported by the endpoint.");
 
         goto Exit;
     }
 
     // Determine the number of streams to open.
-    // Compare the number of streams supported by the endpoint with the 
-    // number of streams supported by the host controller, and choose the 
-    // lesser of the two values. The deviceContext->MaxStreams value was 
+    // Compare the number of streams supported by the endpoint with the
+    // number of streams supported by the host controller, and choose the
+    // lesser of the two values. The deviceContext->MaxStreams value was
     // obtained in a previous call to WdfUsbTargetDeviceQueryUsbCapability
     // that determined whether or not static streams is supported and
-    // retrieved the maximum number of streams supported by the 
-    // host controller. The device context stores the values for IN and OUT 
+    // retrieved the maximum number of streams supported by the
+    // host controller. The device context stores the values for IN and OUT
     // endpoints.
 
     // Allocate an array of USBD_STREAM_INFORMATION structures to store handles to streams.
     // The number of elements in the array is the number of streams to open.
     // The code snippet stores the array in its device context.
-
 
     cStreams = min(deviceContext->MaxStreamsController, pipeContext->MaxStreamsSupported);
 
@@ -231,13 +226,13 @@ NTSTATUS
     {
         status = STATUS_INSUFFICIENT_RESOURCES;
 
-        TraceEvents(TRACE_LEVEL_ERROR, TRACE_DEVICE, 
+        TraceEvents(TRACE_LEVEL_ERROR, TRACE_DEVICE,
             "%!FUNC! Could not allocate stream information array.");
 
         goto Exit;
     }
 
-    RtlZeroMemory (pipeContext->StreamInfo,  
+    RtlZeroMemory (pipeContext->StreamInfo,
         sizeof (USBD_STREAM_INFORMATION) * cStreams);
 
     // Get USBD pipe handle from the WDF target pipe object. The client driver received the
@@ -245,10 +240,9 @@ NTSTATUS
 
     usbdPipeHandle = WdfUsbTargetPipeWdmGetPipeHandle (Pipe);
 
-
-    // Allocate an URB for the open streams request. 
-    // WdfUsbTargetDeviceCreateUrb returns the address of the 
-    // newly allocated URB and the WDFMemory object that 
+    // Allocate an URB for the open streams request.
+    // WdfUsbTargetDeviceCreateUrb returns the address of the
+    // newly allocated URB and the WDFMemory object that
     // contains the URB.
 
     status = WdfUsbTargetDeviceCreateUrb (
@@ -259,7 +253,7 @@ NTSTATUS
 
     if (status != STATUS_SUCCESS)
     {
-        TraceEvents(TRACE_LEVEL_ERROR, TRACE_DEVICE, 
+        TraceEvents(TRACE_LEVEL_ERROR, TRACE_DEVICE,
             "%!FUNC! Could not allocate URB for an open-streams request.");
 
         goto Exit;
@@ -274,7 +268,6 @@ NTSTATUS
         usbdPipeHandle,
         (USHORT)cStreams,
         pipeContext->StreamInfo);
-
 
     // Send the request synchronously.
     // Upon completion, the USB driver stack populates the array of with handles to streams.
@@ -291,14 +284,12 @@ NTSTATUS
     }
 
 Exit:
-
     if (urbMemory)
     {
         WdfObjectDelete (urbMemory);
     }
 
     return status;
-
 }
 ```
 

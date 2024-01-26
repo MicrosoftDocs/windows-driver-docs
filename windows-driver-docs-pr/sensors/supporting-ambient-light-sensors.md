@@ -1,7 +1,7 @@
 ---
-title: Supporting ambient light sensors
+title: Supporting Ambient Light Sensors
 description: Supporting ambient light sensors
-ms.date: 04/20/2017
+ms.date: 01/11/2024
 ---
 
 # Supporting ambient light sensors
@@ -87,6 +87,5 @@ SetLuxChangeSensitivity(PROPVARIANT var)
 
 ## Related topics
 
-[Introduction to the Sensor and Location Platform in Windows](./index.md)
-
-[Sensor Driver Logic](./driver-logic--pseudo-code-.md)
+- [Introduction to the Sensor and Location Platform in Windows](./index.md)
+- [Sensor Driver Logic](./driver-logic--pseudo-code-.md)

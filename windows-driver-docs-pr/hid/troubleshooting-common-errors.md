@@ -1,23 +1,23 @@
 ---
-title: Troubleshooting common errors
-description: This section covers common issues that hardware vendors and driver developers may encounter when debugging their I²C firmware or driver software.
-ms.date: 04/20/2017
+title: Troubleshooting Common Errors
+description: This section covers common issues that hardware vendors and driver developers may encounter when debugging their I<sup>2</sup>C firmware or driver software.
+ms.date: 01/11/2024
 ---
 
 # Troubleshooting common errors
 
-This article covers common issues that hardware vendors and driver developers may encounter when debugging their I²C firmware or driver software.
+This article covers common issues that hardware vendors and driver developers may encounter when debugging their I<sup>2</sup>C firmware or driver software.
 
-## HIDI²C Driver Does not Load
+## HIDI<sup>2</sup>C Driver Does not Load
 
-If the I²C Controller driver loaded but the device does not appear in the Windows Device Manager, refer to the following:
+If the I<sup>2</sup>C Controller driver loaded but the device does not appear in the Windows Device Manager, refer to the following:
 
 The above issue typically occurs if there's an invalid [ACPI Source Language (ASL)](https://uefi.org/htmlspecs/ACPI_Spec_6_4_html/19_ASL_Reference/ACPI_Source_Language_Reference.html?highlight=acpi%20source%20language) code for the host or the device. To determine whether the problem was due to a failure to match the INF, refer to the setupapi.dev.log file. Another indicator that the problem is due to a mismatch is *Error Code 10* in Windows Device Manager.
 
 To resolve this issue, ensure the following:
 
 - The \_CID value must be **PNP0C50**.
-- The I²C **controller** and **device characteristics** in the BIOS must be accurate.
+- The I<sup>2</sup>C **controller** and **device characteristics** in the BIOS must be accurate.
 - The **HID descriptor address** (for the device) in the BIOS must be accurate.
 - The GPIO Interrupt must be correctly identified and marked as **Exclusive, Level, ActiveLow**.
 
@@ -39,17 +39,17 @@ If the correct report descriptor was retrieved from the device is verified but t
 
 This section highlights questions frequently asked by hardware vendors and driver developers.
 
-- Will the Windows 8 inbox HIDI²C driver work for HID devices connected over I²C
-  - Yes, it will work provided the firmware is compliant with this HID I²C Protocol Specification
+- Will the Windows 8 inbox HIDI<sup>2</sup>C driver work for HID devices connected over I<sup>2</sup>C
+  - Yes, it will work provided the firmware is compliant with this HID I<sup>2</sup>C Protocol Specification
 
 - What is the data structure communicated between devices (such as Keyboards) and OS drivers?
-  - The data structure would be in the form of an input report defined by a report descriptor, according to HID standard. The device itself rather than HIDI²C defines the input report structure. You simply report the keyboard usages as you would with a USB keyboard, and then provide the descriptor and corresponding INPUT reports as per the HID I²C Specification
+  - The data structure would be in the form of an input report defined by a report descriptor, according to HID standard. The device itself rather than HIDI<sup>2</sup>C defines the input report structure. You simply report the keyboard usages as you would with a USB keyboard, and then provide the descriptor and corresponding INPUT reports as per the HID I<sup>2</sup>C Specification
 
 - If multiple reports are being buffered at the same time, what should the device do?
   - If multiple reports are being buffered, the device should keep the interrupt asserted until the last report has been read (acknowledged). As long as there is more data to report after a given read operation, the device should keep the line asserted using a level-trigger GPIO setting.
 
-- Is it accurate to say that we should get the same DevicePath in the case of USB and I²C connectivity?
-  - No, the device path will NOT be identical between USB and I²C. The differences are minor but noteworthy. Please refer to the Hardware ID section in the Windows Driver Kit (WDK) for more details.
+- Is it accurate to say that we should get the same DevicePath in the case of USB and I<sup>2</sup>C connectivity?
+  - No, the device path will NOT be identical between USB and I<sup>2</sup>C. The differences are minor but noteworthy. Please refer to the Hardware ID section in the Windows Driver Kit (WDK) for more details.
 
-- What is the required I²C transfer limit in order for HIDI²C devices to leverage the Windows inbox HIDI²C driver?
-  - All I²C controllers are required to support transfers up to 4 KB. The maximum HID report descriptor length is 4 KB.
+- What is the required I<sup>2</sup>C transfer limit in order for HIDI<sup>2</sup>C devices to leverage the Windows inbox HIDI<sup>2</sup>C driver?
+  - All I<sup>2</sup>C controllers are required to support transfers up to 4 KB. The maximum HID report descriptor length is 4 KB.

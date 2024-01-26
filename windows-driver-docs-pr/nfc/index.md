@@ -1,5 +1,5 @@
 ---
-title: NFC design guide
+title: NFC Design Guide
 description: Windows exposes a rich set of experiences using NFC technology.
 ms.assetid: 26BFE25A-AC46-4634-8330-990DB447E55A
 keywords:
@@ -10,7 +10,7 @@ keywords:
 - NFP
 - smart card
 - smartcard
-ms.date: 11/15/2022
+ms.date: 01/11/2024
 ms.topic: article
 ---
 

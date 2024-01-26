@@ -1,7 +1,7 @@
 ---
-title: Plug and Play support for HID over SPI
+title: Plug and Play Support for HID Over SPI
 description: Describes Plug and Play support for devices that support HID over SPI.
-ms.date: 06/22/2021
+ms.date: 01/11/2024
 ---
 
 # Plug and Play support for HID over SPI
@@ -115,7 +115,6 @@ The table below provides an overview of the HID report operations supported by t
 | Report Descriptor Request | 0x02 | 0x8 |
 | Command Request | 0x07 | 0x4 |
 | Reset Response | N/A | 0x3 |
-
 
 ## See also
 

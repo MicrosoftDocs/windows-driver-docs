@@ -1,7 +1,7 @@
 ---
-title: Internal helper methods
+title: Internal Helper Methods
 description: A sensor driver supports a number of internal helper methods that perform tasks like polling for data, setting properties, retrieving properties, updating the device state, and supporting events.
-ms.date: 04/20/2017
+ms.date: 01/11/2024
 ---
 
 # Internal helper methods
@@ -57,7 +57,7 @@ DriverUpdateDeviceState()
 If a sensor driver supports intelligent sensors (like HID), it may include support for methods that poll data, handle events, retrieve properties, set properties, and manage power. The pseudocode demonstrates these tasks using the **HIDSensorPollData**, **HIDSensorSetProperties**, and **HIDSensorGetProperties** methods.
 
 ```cpp
-HIDSensorPollData(sensorID) // Driver issues USB/HID “GET_INPUT” command to the sensor device
+HIDSensorPollData(sensorID) // Driver issues USB/HID "GET_INPUT" command to the sensor device
 {
     // the driver is making a request for polled data
     // if the sensor is in a READY state respond by sending
@@ -134,7 +134,7 @@ HIDSensorSetProperties(sensorID, requestedRS, requestedPS, requestedCRI, request
 ```
 
 ```cpp
-HIDSensorGetProperties(sensorID, RS, PS, CRI, CS[], LDA) //Driver issues USB/HID “GET_FEATURE” command to the sensor
+HIDSensorGetProperties(sensorID, RS, PS, CRI, CS[], LDA) //Driver issues USB/HID "GET_FEATURE" command to the sensor
 {
     buffer.effectiveRS
     buffer.effectivePS
@@ -176,6 +176,5 @@ datafields[] SpbSensorPollData(sensorID)
 
 ## Related topics
 
-[Introduction to the Sensor and Location Platform in Windows](./index.md)
-
-[Sensor Driver Logic](./driver-logic--pseudo-code-.md)
+- [Introduction to the Sensor and Location Platform in Windows](./index.md)
+- [Sensor Driver Logic](./driver-logic--pseudo-code-.md)

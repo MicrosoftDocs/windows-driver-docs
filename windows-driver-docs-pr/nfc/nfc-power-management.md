@@ -1,5 +1,5 @@
 ---
-title: NFC power management
+title: NFC Power Management
 description: NFC power management
 keywords:
 - NFC
@@ -7,11 +7,10 @@ keywords:
 - proximity
 - near field proximity
 - NFP
-ms.date: 04/20/2017
+ms.date: 01/11/2024
 ---
 
 # NFC power management
-
 
 The NFC driver shall intelligently manage the power state of the device. The following are general guidelines for IHVs that provide NFC drivers.
 
@@ -21,8 +20,6 @@ The NFC driver shall intelligently manage the power state of the device. The fol
 
 **Overall power management.** If both proximity and card emulation operations are deactivated, then the NFC driver may power down the device completely by transitioning to a low power state (D3 state) using idle power management (when the system is in S0 state).
 
- 
-
- 
 ## Related topics
+
 [NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/index)

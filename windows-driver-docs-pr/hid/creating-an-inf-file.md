@@ -1,5 +1,5 @@
 ---
-title: Creating an INF file
+title: Creating an INF File
 description: Creating an INF file
 keywords:
 - joysticks WDK HID , INF files
@@ -7,7 +7,7 @@ keywords:
 - VJoyD WDK HID , INF files
 - INF files WDK joysticks
 - INF files WDK joysticks , creating
-ms.date: 10/11/2022
+ms.date: 01/11/2024
 ---
 
 # Creating an INF file

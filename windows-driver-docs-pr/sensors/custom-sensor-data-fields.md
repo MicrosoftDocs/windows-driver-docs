@@ -1,7 +1,7 @@
 ---
-title: Custom sensor data fields
+title: Custom Sensor Data Fields
 description: This topic provides information about the data fields that can be used by a custom sensor.
-ms.date: 03/02/2023
+ms.date: 01/11/2024
 ms.topic: reference
 ---
 
@@ -66,8 +66,6 @@ HID drivers only support the VT_UI4 type for custom properties, while non-HID dr
 - VT_FILETIME
 - VT_CLSID
 - VT_VECTOR | VT_CLSID
-
-## Remarks
 
 ## Related topics
 

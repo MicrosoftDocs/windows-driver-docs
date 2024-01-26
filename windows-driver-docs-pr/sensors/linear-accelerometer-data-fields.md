@@ -1,7 +1,7 @@
 ---
-title: Linear accelerometer data fields
+title: Linear Accelerometer Data Fields
 description: This topic provides information about the data fields that are specific to the linear accelerometer.
-ms.date: 03/02/2023
+ms.date: 01/11/2024
 ms.topic: reference
 ---
 
