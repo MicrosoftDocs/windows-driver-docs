@@ -6,7 +6,7 @@ ms.date: 01/22/2024
 
 # User-mode NetAdapterCx
  
-Starting in WIN11_NEXT, NetAdapterCx enables you to write a [User-Mode Driver Framework (UMDF)](/wdf/getting-started-with-umdf-version-2.md) network adapter driver. The UMDF APIs in NetAdapterCx align with the KMDF versions, allowing you to convert your KMDF-based client driver to UMDF with little to no code changes.
+Starting in WIN11_NEXT, NetAdapterCx enables you to write a [User-Mode Driver Framework (UMDF)](../wdf/getting-started-with-umdf-version-2.md) network adapter driver. The UMDF APIs in NetAdapterCx align with the KMDF versions, allowing you to convert your KMDF-based client driver to UMDF with little to no code changes.
 
 ## Benefits of user-mode NetAdapterCx drivers
 
