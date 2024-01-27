@@ -1,5 +1,5 @@
 ---
-title: Overlay support
+title: Overlay Support
 description: Overlay support
 keywords:
 - drawing page flips WDK DirectDraw , overlay surfaces

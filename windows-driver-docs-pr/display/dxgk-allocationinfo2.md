@@ -1,5 +1,5 @@
 ---
-title: \_DXGK\_ALLOCATIONINFO2 structure
+title: _DXGK_ALLOCATIONINFO2 Structure
 description: The DXGK\_ALLOCATIONINFO2 structure is reserved for system use. Do not use it in your driver.
 keywords: ["_DXGK_ALLOCATIONINFO2 structure Display Devices", "DXGK_ALLOCATIONINFO2 structure Display Devices"]
 topic_type:

@@ -1,5 +1,5 @@
 ---
-title: DXVA\_DeinterlaceBobDeviceClass DeinterlaceBltEx method
+title: DXVA_DeinterlaceBobDeviceClass DeinterlaceBltEx Method
 description: The sample DeinterlaceBltEx function performs deinterlace or frame-rate conversion, combines the deinterlaced or frame-rate converted video with supplied video substreams, and writes the combined output to a destination surface.
 keywords: ["DeinterlaceBltEx method Display Devices", "DeinterlaceBltEx method Display Devices , DXVA_DeinterlaceBobDeviceClass interface", "DXVA_DeinterlaceBobDeviceClass interface Display Devices , DeinterlaceBltEx method"]
 topic_type:

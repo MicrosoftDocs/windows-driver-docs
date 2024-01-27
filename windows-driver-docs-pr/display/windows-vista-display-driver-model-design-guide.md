@@ -1,5 +1,5 @@
 ---
-title: WDDM overview
+title: WDDM Overview
 description: The Windows Display Driver Model (WDDM) is available starting with Windows Vista and is required starting with Windows 8. This section discusses requirements, specifications, and behavior for WDDM drivers.
 keywords:
 - WDDM Design Guide WDK

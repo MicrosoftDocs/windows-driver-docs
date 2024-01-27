@@ -1,5 +1,5 @@
 ---
-title: GPU virtual memory in WDDM 2.0
+title: GPU Virtual Memory in WDDM 2.0
 description: This section provides details about GPU virtual memory, including why the changes were made and how drivers will use it.
 ms.date: 08/10/2021
 ---

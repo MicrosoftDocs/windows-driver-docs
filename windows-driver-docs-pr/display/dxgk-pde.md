@@ -1,5 +1,5 @@
 ---
-title: \_DXGK\_PDE structure
+title: _DXGK_PDE Structure
 description: The DXGK\_PDE structure is reserved for system use. Do not use it in your driver.
 keywords: ["_DXGK_PDE structure Display Devices", "DXGK_PDE structure Display Devices"]
 topic_type:

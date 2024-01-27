@@ -1,5 +1,5 @@
 ---
-title: Multisample Support through StretchBlt
+title: Multisample Support Through StretchBlt
 description: Multisample Support through StretchBlt
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , multisample rendering, StretchBlt

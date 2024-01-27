@@ -1,5 +1,5 @@
 ---
-title: \_DXGK\_CREATEALLOCATIONFLAGS2 structure
+title: _DXGK_CREATEALLOCATIONFLAGS2 Structure
 description: The DXGK\_CREATEALLOCATIONFLAGS2 structure is reserved for system use. Do not use it in your driver.
 keywords: ["_DXGK_CREATEALLOCATIONFLAGS2 structure Display Devices", "DXGK_CREATEALLOCATIONFLAGS2 structure Display Devices"]
 topic_type:

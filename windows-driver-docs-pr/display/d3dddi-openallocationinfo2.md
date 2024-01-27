@@ -1,5 +1,5 @@
 ---
-title: D3DDDI\_OPENALLOCATIONINFO2 structure
+title: D3DDDI_OPENALLOCATIONINFO2 Structure
 description: Learn about the D3DDDI\_OPENALLOCATIONINFO2 structure, which is reserved for system use. Do not use in your driver.
 keywords: ["D3DDDI_OPENALLOCATIONINFO2 structure Display Devices"]
 topic_type:

@@ -1,5 +1,5 @@
 ---
-title: MCDM architecture
+title: MCDM Architecture
 description: Microsoft Compute Driver Model architecture
 ms.date: 01/06/2023
 ---

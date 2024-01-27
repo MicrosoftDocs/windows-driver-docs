@@ -1,5 +1,5 @@
 ---
-title: D3DKMT\_CREATE\_OUTPUTDUPL structure
+title: D3DKMT_CREATE_OUTPUTDUPL Structure
 description: Learn about the D3DKMT\_CREATE\_OUTPUTDUPL structure, which is reserved for system use. Do not use in your driver.
 keywords: ["D3DKMT_CREATE_OUTPUTDUPL structure Display Devices"]
 topic_type:

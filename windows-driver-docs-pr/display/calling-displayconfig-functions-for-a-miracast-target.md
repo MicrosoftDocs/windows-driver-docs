@@ -1,5 +1,5 @@
 ---
-title: Calling DisplayConfig functions for a Miracast target
+title: Calling DisplayConfig Functions for a Miracast Target
 description: Calling DisplayConfig functions for a Miracast target
 ms.date: 03/24/2023
 ---

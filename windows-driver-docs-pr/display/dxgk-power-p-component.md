@@ -1,5 +1,5 @@
 ---
-title: DXGK\_POWER\_P\_COMPONENT structure
+title: DXGK_POWER_P_COMPONENT Structure
 description: Learn about the DXGK\_POWER\_P\_COMPONENT structure, which is reserved for system use. Do not use it in your driver.
 keywords: ["DXGK_POWER_P_COMPONENT structure Display Devices"]
 topic_type:

@@ -1,5 +1,5 @@
 ---
-title: Updates for IddCx versions 1.9 and later
+title: Updates for IddCx Versions 1.9 and Later
 description: IddCx version 1.9 updates for console and remote indirect display drivers
 ms.date: 08/11/2022
 keywords:

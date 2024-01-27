@@ -1,5 +1,5 @@
 ---
-title: DXGK\_PRESENTALLOCATIONINFO structure
+title: DXGK_PRESENTALLOCATIONINFO Structure
 description: The DXGK\_PRESENTALLOCATIONINFO structure is reserved for system use. Do not use it in your driver.
 keywords: ["DXGK_PRESENTALLOCATIONINFO structure Display Devices"]
 topic_type:

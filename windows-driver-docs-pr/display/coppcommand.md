@@ -1,5 +1,5 @@
 ---
-title: COPPCommand function
+title: COPPCommand Function
 description: The sample COPPCommand function performs an operation on a COPP DirectX VA device.
 keywords:
 - copy protection WDK COPP , video miniport driver code template

@@ -1,5 +1,5 @@
 ---
-title: \_DXGKARG\_UPDATEPAGETABLE structure
+title: _DXGKARG_UPDATEPAGETABLE Structure
 description: The DXGKARG\_UPDATEPAGETABLE structure is reserved for system use. Do not use it in your driver.
 keywords: ["_DXGKARG_UPDATEPAGETABLE structure Display Devices", "DXGKARG_UPDATEPAGETABLE structure Display Devices"]
 topic_type:
