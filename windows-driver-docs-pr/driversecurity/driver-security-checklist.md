@@ -1,5 +1,5 @@
 ---
-title: Driver security checklist
+title: Driver Security Checklist
 description: This article provides a driver security checklist for driver developers.
 ms.date: 12/11/2023
 ---
