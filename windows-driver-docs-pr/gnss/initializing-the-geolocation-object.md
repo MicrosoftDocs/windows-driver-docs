@@ -1,5 +1,5 @@
 ---
-title: Initializing the geolocation object
+title: Initializing the Geolocation Object
 description: Geolocation.cpp contains an Initialize method that initializes the settable property keys and data-field keys for the simulated geolocation-sensor.
 ms.date: 03/21/2023
 ---
