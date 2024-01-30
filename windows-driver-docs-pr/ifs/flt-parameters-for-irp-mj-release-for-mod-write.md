@@ -44,6 +44,9 @@ IRP_MJ_RELEASE_FOR_MOD_WRITE is a file system (FSFilter) callback operation.
 
 For more information about FSFilter callback operations, see the reference entry for [**FsRtlRegisterFileSystemFilterCallbacks**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlregisterfilesystemfiltercallbacks).
 
+## Note
+This function is called as a Special Kernel APC.  As a result, acquiring any low IRQL locks (for instance ERESOURCE) can result in deadlock and should be avoided.
+
 ## Requirements
 
 | Requirement type | Requirement |
