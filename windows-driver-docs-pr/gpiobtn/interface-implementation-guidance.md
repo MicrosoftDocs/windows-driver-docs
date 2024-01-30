@@ -1,5 +1,5 @@
 ---
-title: Interface implementation guidance
+title: Interface Implementation Guidance
 description: This section provides guidance for interface implementation.
 ms.date: 10/17/2018
 ---
