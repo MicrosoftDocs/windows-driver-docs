@@ -1,5 +1,5 @@
 ---
-title: Windows Hello fingerprint driver signature process
+title: Windows Hello Fingerprint Driver Signature Process
 description: Windows Hello fingerprint driver signature process
 keywords:
 - biometric drivers WDK , windows hello
