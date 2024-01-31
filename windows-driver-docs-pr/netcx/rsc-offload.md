@@ -12,9 +12,12 @@ ms.custom: Fe
 When receiving data, most layers in the TCP/IP stack must look at each segment's header information separately. This creates a large amount of overhead when large amounts of data are being received.
 
 [Receive segment coalescing (RSC)](../network/overview-of-receive-segment-coalescing.md) reduces this overhead by coalescing a sequence of received segments and indicating them up the TCP/IP stack in one single coalesced segment. The upper layers in the TCP/IP stack only need to look at one header for the entire sequence.
+
 A network interface card (NIC) that supports RSC in hardware can greatly improve the receive path performance. It can also reduce the host CPU utilization as it frees the protocol layer from doing RSC in software.
 
-For more details on RSC, see [Overview of Receive Segment Coalescing](../network/overview-of-receive-segment-coalescing.md).
+NetAdapterCX supports both TCP RSC and UDP RSC (URO). For more details, see: 
+- [Overview of Receive Segment Coalescing](../network/overview-of-receive-segment-coalescing.md)
+- [UDP RSC Offload (URO)](#udp-rsc-offload-uro)
 
 ## INF keywords for controlling RSC offload
 
@@ -46,7 +49,7 @@ The following rules apply to the [**NET_ADAPTER_OFFLOAD_RSC_CAPABILITIES**](/win
 
 2. `NetAdapterOffloadLayer3FlagIPv4NoOptions` and `NetAdapterOffloadLayer3FlagIPv6NoExtensions` are the only valid values for the **Layer3Flags** field. These flags indicate IPv4 and IPv6 support respectively.
 
-3. `NetAdapterOffloadLayer4FlagTcpNoOptions` is the only valid value for the **Layer4Flags** field.
+3. `NetAdapterOffloadLayer4FlagTcpNoOptions` and `NetAdapterOffloadLayer4FlagUdp` are the only valid value for the **Layer4Flags** field. These flags indicate TCP and UDP support respectively.
 
 4. Layer 3 flags must be set if the `NetAdapterOffloadLayer4FlagTcpNoOptions` flag is set.
 
@@ -85,7 +88,7 @@ Client drivers can call the following functions to determine which RSC offloads 
 * [**NetOffloadIsRscTcpTimestampOptionEnabled**](/windows-hardware/drivers/ddi/netadapteroffload/nf-netadapteroffload-netoffloadisrsctcptimestampoptionenabled)
 
 
-The following examples shows how a client driver might update its RSC offload capabilities:
+The following example shows how a client driver might update its RSC offload capabilities:
 ```C++
 VOID
 MyEvtAdapterOffloadSetRsc(
@@ -101,3 +104,11 @@ MyEvtAdapterOffloadSetRsc(
     adapterContext->IsRscTcpTimestampOptionEnabled = NetOffloadIsRscTcpTimestampOptionEnabled(Offload);
 }
 ```
+
+## UDP RSC Offload (URO)
+
+URO enables the coalescing of received UDP segments. NICs can combine UDP datagrams from the same flow that match a set of rules into a logically contiguous buffer. These combined datagrams are then indicated to the Windows networking stack as a single large packet. For information on URO rules, see [UDP Receive Segment Coalescing Offload](udp-rsc-offload.md).
+
+NetAdapterCx client drivers can use the existing RSC structures and RSC API for URO. To configure URO, client drivers must set the **Layer4Flags** field in the [**NET_ADAPTER_OFFLOAD_RSC_CAPABILITIES**](/windows-hardware/drivers/ddi/netadapteroffload/ns-netadapteroffload-_net_adapter_offload_rsc_capabilities) structure to `NetAdapterOffloadLayer4FlagUdp`.
+
+URO behavior mirrors RSC with one exception. When the [*EVT_NET_ADAPTER_OFFLOAD_SET_RSC*](/windows-hardware/drivers/ddi/netadapteroffload/nc-netadapteroffload-evt_net_adapter_offload_set_rsc) callback disables URO, the driver must indicate existing coalesced segments and wait until all outstanding URO indications are completed. This approach ensures that there are no URO indications active once the callback returns. 
