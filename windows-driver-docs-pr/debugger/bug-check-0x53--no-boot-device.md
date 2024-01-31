@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X53 NO_BOOT_DEVICE
+title: Bug Check 0x53 NO_BOOT_DEVICE
 description: The NO_BOOT_DEVICE bug check has a value of 0x00000053.This bug check appears very infrequently.
 keywords: ["Bug Check 0x53 NO_BOOT_DEVICE", "NO_BOOT_DEVICE"]
 ms.date: 05/23/2017

@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X82 DFS_FILE_SYSTEM
+title: Bug Check 0x82 DFS_FILE_SYSTEM
 description: The DFS_FILE_SYSTEM bug check has a value of 0x00000082.This bug check appears very infrequently.
 keywords: ["Bug Check 0x82 DFS_FILE_SYSTEM", "DFS_FILE_SYSTEM"]
 ms.date: 05/23/2017

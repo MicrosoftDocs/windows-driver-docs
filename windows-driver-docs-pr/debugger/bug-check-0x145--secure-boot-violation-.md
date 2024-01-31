@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X145 SECURE_BOOT_VIOLATION
+title: Bug Check 0x145 SECURE_BOOT_VIOLATION
 description: The SECURE_BOOT_VIOLATION bug check has a value of 0x00000145. This indicates that the secure Boot policy enforcement could not be started.
 keywords: ["Bug Check 0x145 SECURE_BOOT_VIOLATION", "SECURE_BOOT_VIOLATION"]
 ms.date: 05/23/2017

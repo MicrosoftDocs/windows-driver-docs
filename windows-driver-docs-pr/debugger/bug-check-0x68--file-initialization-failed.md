@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X68 FILE_INITIALIZATION_FAILED
+title: Bug Check 0x68 FILE_INITIALIZATION_FAILED
 description: The FILE_INITIALIZATION_FAILED bug check has a value of 0x00000068.This bug check appears very infrequently.
 keywords: ["Bug Check 0x68 FILE_INITIALIZATION_FAILED", "FILE_INITIALIZATION_FAILED"]
 ms.date: 05/23/2017

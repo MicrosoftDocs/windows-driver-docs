@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X49 PAGE_FAULT_WITH_INTERRUPTS_OFF
+title: Bug Check 0x49 PAGE_FAULT_WITH_INTERRUPTS_OFF
 description: The PAGE_FAULT_WITH_INTERRUPTS_OFF bug check has a value of 0x00000049.This bug check appears very infrequently.
 keywords: ["Bug Check 0x49 PAGE_FAULT_WITH_INTERRUPTS_OFF", "PAGE_FAULT_WITH_INTERRUPTS_OFF"]
 ms.date: 05/23/2017

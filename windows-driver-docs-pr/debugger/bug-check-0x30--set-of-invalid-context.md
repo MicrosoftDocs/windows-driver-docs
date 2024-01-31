@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X30 SET_OF_INVALID_CONTEXT
+title: Bug Check 0x30 SET_OF_INVALID_CONTEXT
 description: The SET_OF_INVALID_CONTEXT bug check has a value of 0x00000030. This indicates that the stack pointer in a trap frame had an invalid value.
 keywords: ["Bug Check 0x30 SET_OF_INVALID_CONTEXT", "SET_OF_INVALID_CONTEXT"]
 ms.date: 05/23/2017

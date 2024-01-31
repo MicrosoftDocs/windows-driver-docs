@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X156 WINSOCK_DETECTED_HUNG_CLOSESOCKET_LIVEDUMP
+title: Bug Check 0x156 WINSOCK_DETECTED_HUNG_CLOSESOCKET_LIVEDUMP
 description: The WINSOCK_DETECTED_HUNG_CLOSESOCKET_LIVEDUMP live dump has a value of 0x00000156. This indicates that Winsock detected a hung transport endpoint close request.
 keywords: ["Bug Check 0x156 WINSOCK_DETECTED_HUNG_CLOSESOCKET_LIVEDUMP", "WINSOCK_DETECTED_HUNG_CLOSESOCKET_LIVEDUMP"]
 ms.date: 04/18/2022

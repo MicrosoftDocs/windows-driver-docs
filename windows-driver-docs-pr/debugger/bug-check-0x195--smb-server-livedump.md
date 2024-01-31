@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X195 SMB_SERVER_LIVEDUMP
+title: Bug Check 0x195 SMB_SERVER_LIVEDUMP
 description: The SMB_SERVER_LIVEDUMP live dump has a value of 0x00000195. This indicates the SMB server detected a problem and has captured a kernel dump to collect debug information.
 keywords: ["Bug Check 0x195 SMB_SERVER_LIVEDUMP", "SMB_SERVER_LIVEDUMP"]
 ms.date: 05/23/2017

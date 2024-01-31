@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X159 HAL_ILLEGAL_IOMMU_PAGE_FAULT
+title: Bug Check 0x159 HAL_ILLEGAL_IOMMU_PAGE_FAULT
 description: The HAL_ILLEGAL_IOMMU_PAGE_FAULT bug check has a value of 0x00000159.
 keywords: ["Bug Check 0x159 HAL_ILLEGAL_IOMMU_PAGE_FAULT", "HAL_ILLEGAL_IOMMU_PAGE_FAULT"]
 ms.date: 05/23/2017

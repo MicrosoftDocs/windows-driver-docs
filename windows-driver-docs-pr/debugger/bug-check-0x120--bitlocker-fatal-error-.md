@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X120 BITLOCKER_FATAL_ERROR
+title: Bug Check 0x120 BITLOCKER_FATAL_ERROR
 description: The BITLOCKER_FATAL_ERROR bug check has a value of 0x00000120. This indicates that BitLocker drive encryption encountered a problem that it cannot recover from.
 keywords: ["Bug Check 0x120 BITLOCKER_FATAL_ERROR", "BITLOCKER_FATAL_ERROR"]
 ms.date: 01/30/2019

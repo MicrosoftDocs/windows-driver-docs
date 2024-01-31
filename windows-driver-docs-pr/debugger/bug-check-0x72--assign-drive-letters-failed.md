@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X72 ASSIGN_DRIVE_LETTERS_FAILED
+title: Bug Check 0x72 ASSIGN_DRIVE_LETTERS_FAILED
 description: The ASSIGN_DRIVE_LETTERS_FAILED bug check has a value of 0x00000072.This bug check appears very infrequently.
 keywords: ["Bug Check 0x72 ASSIGN_DRIVE_LETTERS_FAILED", "ASSIGN_DRIVE_LETTERS_FAILED"]
 ms.date: 05/23/2017

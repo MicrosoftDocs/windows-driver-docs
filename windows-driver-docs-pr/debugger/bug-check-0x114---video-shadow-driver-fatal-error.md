@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X114 VIDEO_SHADOW_DRIVER_FATAL_ERROR
+title: Bug Check 0x114 VIDEO_SHADOW_DRIVER_FATAL_ERROR
 description: The VIDEO_SHADOW_DRIVER_FATAL_ERROR bug check has a value of 0x00000114. This indicates that the shadow driver has detected a violation.This bug check appears very infrequently.
 keywords: ["Bug Check 0x114 VIDEO_SHADOW_DRIVER_FATAL_ERROR", "VIDEO_SHADOW_DRIVER_FATAL_ERROR"]
 ms.date: 05/23/2017

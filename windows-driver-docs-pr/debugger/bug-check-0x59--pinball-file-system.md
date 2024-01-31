@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X59 PINBALL_FILE_SYSTEM
+title: Bug Check 0x59 PINBALL_FILE_SYSTEM
 description: The PINBALL_FILE_SYSTEM bug check has a value of 0x00000059. This indicates that a problem occurred in the Pinball file system.
 keywords: ["Bug Check 0x59 PINBALL_FILE_SYSTEM", "PINBALL_FILE_SYSTEM"]
 ms.date: 05/23/2017

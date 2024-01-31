@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X122 WHEA_INTERNAL_ERROR
+title: Bug Check 0x122 WHEA_INTERNAL_ERROR
 description: The WHEA_INTERNAL_ERROR bug check has a value of 0x00000122.
 keywords: ["Bug Check 0x122 WHEA_INTERNAL_ERROR", "WHEA_INTERNAL_ERROR"]
 ms.date: 05/23/2017

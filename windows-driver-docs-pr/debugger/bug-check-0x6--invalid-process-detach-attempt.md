@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X6 INVALID_PROCESS_DETACH_ATTEMPT
+title: Bug Check 0x6 INVALID_PROCESS_DETACH_ATTEMPT
 description: The INVALID_PROCESS_DETACH_ATTEMPT bug check has a value of 0x00000006. This bug check appears very infrequently.
 keywords: ["Bug Check 0x6 INVALID_PROCESS_DETACH_ATTEMPT", "INVALID_PROCESS_DETACH_ATTEMPT"]
 ms.date: 05/23/2017

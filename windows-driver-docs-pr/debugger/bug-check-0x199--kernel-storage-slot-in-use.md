@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X199 KERNEL_STORAGE_SLOT_IN_USE
+title: Bug Check 0x199 KERNEL_STORAGE_SLOT_IN_USE
 description: The KERNEL_STORAGE_SLOT_IN_USE bug check has a value of 0x00000199. This indicates that the storage slot cannot be freed because there is an object using it.
 keywords: ["Bug Check 0x199 KERNEL_STORAGE_SLOT_IN_USE", "KERNEL_STORAGE_SLOT_IN_USE"]
 ms.date: 05/23/2017

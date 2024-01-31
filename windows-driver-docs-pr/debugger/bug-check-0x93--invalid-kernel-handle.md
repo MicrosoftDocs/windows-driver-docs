@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X93 INVALID_KERNEL_HANDLE
+title: Bug Check 0x93 INVALID_KERNEL_HANDLE
 description: The INVALID_KERNEL_HANDLE bug check has a value of 0x00000093. This bug check indicates that an invalid or protected handle was passed to NtClose.
 keywords: ["Bug Check 0x93 INVALID_KERNEL_HANDLE", "INVALID_KERNEL_HANDLE"]
 ms.date: 10/10/2019

@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X51 REGISTRY_ERROR
+title: Bug Check 0x51 REGISTRY_ERROR
 description: The REGISTRY_ERROR bug check has a value of 0x00000051. This indicates that a severe registry error has occurred.
 keywords: ["Bug Check 0x51 REGISTRY_ERROR", "REGISTRY_ERROR"]
 ms.date: 05/23/2017

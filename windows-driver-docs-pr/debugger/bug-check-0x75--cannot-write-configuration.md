@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X75 CANNOT_WRITE_CONFIGURATION
+title: Bug Check 0x75 CANNOT_WRITE_CONFIGURATION
 description: The CANNOT_WRITE_CONFIGURATION bug check has a value of 0x00000075. This bug check indicates that the SYSTEM registry hive file cannot be converted to a mapped file.
 keywords: ["Bug Check 0x75 CANNOT_WRITE_CONFIGURATION", "CANNOT_WRITE_CONFIGURATION"]
 ms.date: 05/23/2017

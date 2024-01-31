@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X67 CONFIG_INITIALIZATION_FAILED
+title: Bug Check 0x67 CONFIG_INITIALIZATION_FAILED
 description: The CONFIG_INITIALIZATION_FAILED bug check has a value of 0x00000067. This bug check indicates that the registry configuration failed.
 keywords: ["Bug Check 0x67 CONFIG_INITIALIZATION_FAILED", "CONFIG_INITIALIZATION_FAILED"]
 ms.date: 05/23/2017

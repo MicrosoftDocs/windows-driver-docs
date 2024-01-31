@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X196 LOADER_ROLLBACK_DETECTED
+title: Bug Check 0x196 LOADER_ROLLBACK_DETECTED
 description: The LOADER_ROLLBACK_DETECTED bug check has a value of 0x00000196. This indicates that the version of the OS loader does not match the operating system.
 keywords: ["Bug Check 0x196 LOADER_ROLLBACK_DETECTED", "LOADER_ROLLBACK_DETECTED"]
 ms.date: 05/23/2017

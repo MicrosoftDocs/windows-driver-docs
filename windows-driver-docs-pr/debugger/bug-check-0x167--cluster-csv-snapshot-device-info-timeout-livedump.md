@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X167 CLUSTER_CSV_SNAPSHOT_DEVICE_INFO_TIMEOUT_LIVEDUMP
+title: Bug Check 0x167 CLUSTER_CSV_SNAPSHOT_DEVICE_INFO_TIMEOUT_LIVEDUMP
 description: The CLUSTER_CSV_SNAPSHOT_DEVICE_INFO_TIMEOUT_LIVEDUMP live dump has a value of 0x00000167. This indicates that a Cluster  Service call to the volsnap to query snapshot information took too long.
 keywords: ["Bug Check 0x167 CLUSTER_CSV_SNAPSHOT_DEVICE_INFO_TIMEOUT_LIVEDUMP", "CLUSTER_CSV_SNAPSHOT_DEVICE_INFO_TIMEOUT_LIVEDUMP"]
 ms.date: 01/03/2019

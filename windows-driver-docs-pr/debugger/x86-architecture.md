@@ -1,5 +1,5 @@
 ---
-title: X86 Architecture
+title: x86 Architecture
 description: x86 Architecture
 keywords: ["x86 processor, architecture", "registers, on an x86 processor", "x86 processor, registers", "x86 processor, calling conventions", "x86 processor, data types"]
 ms.date: 10/21/2022

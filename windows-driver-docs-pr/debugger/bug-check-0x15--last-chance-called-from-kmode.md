@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X15 LAST_CHANCE_CALLED_FROM_KMODE
+title: Bug Check 0x15 LAST_CHANCE_CALLED_FROM_KMODE
 description: The LAST_CHANCE_CALLED_FROM_KMODE bug check has a value of 0x00000015.This bug check appears very infrequently.
 keywords: ["Bug Check 0x15 LAST_CHANCE_CALLED_FROM_KMODE", "LAST_CHANCE_CALLED_FROM_KMODE"]
 ms.date: 05/23/2017

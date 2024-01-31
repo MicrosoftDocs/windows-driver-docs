@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X37 FLOPPY_INTERNAL_ERROR
+title: Bug Check 0x37 FLOPPY_INTERNAL_ERROR
 description: The FLOPPY_INTERNAL_ERROR bug check has a value of 0x00000037.This bug check appears very infrequently.
 keywords: ["Bug Check 0x37 FLOPPY_INTERNAL_ERROR", "FLOPPY_INTERNAL_ERROR"]
 ms.date: 05/23/2017

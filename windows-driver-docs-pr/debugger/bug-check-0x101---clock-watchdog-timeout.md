@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X101 CLOCK_WATCHDOG_TIMEOUT
+title: Bug Check 0x101 CLOCK_WATCHDOG_TIMEOUT
 description: Learn how the CLOCK_WATCHDOG_TIMEOUT bug check indicates that an expected clock interrupt on a secondary processor isn't received within the allocated interval.
 keywords: ["Bug Check 0x101 CLOCK_WATCHDOG_TIMEOUT", "CLOCK_WATCHDOG_TIMEOUT"]
 ms.date: 02/24/2023

@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X133 DPC_WATCHDOG_VIOLATION
+title: Bug Check 0x133 DPC_WATCHDOG_VIOLATION
 description: The DPC_WATCHDOG_VIOLATION bug check has a value of 0x00000133.
 keywords: ["Bug Check 0x133 DPC_WATCHDOG_VIOLATION", "DPC_WATCHDOG_VIOLATION"]
 ms.date: 03/14/2022

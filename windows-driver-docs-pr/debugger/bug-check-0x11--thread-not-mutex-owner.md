@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X11 THREAD_NOT_MUTEX_OWNER
+title: Bug Check 0x11 THREAD_NOT_MUTEX_OWNER
 description: The THREAD_NOT_MUTEX_OWNER bug check has a value of 0x00000011.This bug check appears very infrequently.
 keywords: ["Bug Check 0x11 THREAD_NOT_MUTEX_OWNER", "THREAD_NOT_MUTEX_OWNER"]
 ms.date: 05/23/2017

@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X173 COREMSGCALL_INTERNAL_ERROR
+title: Bug Check 0x173 COREMSGCALL_INTERNAL_ERROR
 description: The COREMSGCALL_INTERNAL_ERROR bug check has a value of 0x00000173. This indicates that the CoreMessageCall detected an unrecoverable error.
 keywords: ["Bug Check 0x173 COREMSGCALL_INTERNAL_ERROR", "COREMSGCALL_INTERNAL_ERROR"]
 ms.date: 01/04/2019

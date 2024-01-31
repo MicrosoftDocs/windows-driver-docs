@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X20001 HYPERVISOR_ERROR
+title: Bug Check 0x20001 HYPERVISOR_ERROR
 description: The HYPERVISOR_ERROR bug check has a value of 0x00020001. This indicates that the hypervisor has encountered a fatal error.
 keywords: ["Bug Check 0x20001 HYPERVISOR_ERROR", "HYPERVISOR_ERROR"]
 ms.date: 05/15/2020

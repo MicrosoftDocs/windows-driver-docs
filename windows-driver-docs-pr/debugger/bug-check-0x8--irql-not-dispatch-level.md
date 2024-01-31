@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X8 IRQL_NOT_DISPATCH_LEVEL
+title: Bug Check 0x8 IRQL_NOT_DISPATCH_LEVEL
 description: The IRQL_NOT_DISPATCH_LEVEL bug check has a value of 0x00000008.This bug check appears very infrequently.
 keywords: ["Bug Check 0x8 IRQL_NOT_DISPATCH_LEVEL", "IRQL_NOT_DISPATCH_LEVEL"]
 ms.date: 05/23/2017

@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X32 PHASE1_INITIALIZATION_FAILED
+title: Bug Check 0x32 PHASE1_INITIALIZATION_FAILED
 description: The PHASE1_INITIALIZATION_FAILED bug check has a value of 0x00000032. This indicates that system initialization failed.
 keywords: ["Bug Check 0x32 PHASE1_INITIALIZATION_FAILED", "PHASE1_INITIALIZATION_FAILED"]
 ms.date: 05/23/2017

@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X77 KERNEL_STACK_INPAGE_ERROR
+title: Bug Check 0x77 KERNEL_STACK_INPAGE_ERROR
 description: The KERNEL_STACK_INPAGE_ERROR bug check has a value of 0x00000077. This bug check indicates that the requested page of kernel data from the paging file could not be read into memory.
 keywords: ["Bug Check 0x77 KERNEL_STACK_INPAGE_ERROR", "KERNEL_STACK_INPAGE_ERROR"]
 ms.date: 05/23/2017

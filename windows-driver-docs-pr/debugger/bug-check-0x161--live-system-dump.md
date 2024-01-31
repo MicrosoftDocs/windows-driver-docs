@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X161 LIVE_SYSTEM_DUMP
+title: Bug Check 0x161 LIVE_SYSTEM_DUMP
 description: The LIVE_SYSTEM_DUMP live dump has a value of 0x00000161. This indicates that the system administrator requested the collection of a live system memory dump.
 keywords: ["Bug Check 0x161 LIVE_SYSTEM_DUMP", "LIVE_SYSTEM_DUMP"]
 ms.date: 01/30/2023

@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X117 VIDEO_TDR_TIMEOUT_DETECTED
+title: Bug Check 0x117 VIDEO_TDR_TIMEOUT_DETECTED
 description: The VIDEO_TDR_TIMEOUT_DETECTED live dump has a value of 0x00000117. This indicates that the display driver failed to respond in a timely fashion.
 keywords: ["Bug Check 0x117 VIDEO_TDR_TIMEOUT_DETECTED", "VIDEO_TDR_TIMEOUT_DETECTED"]
 ms.date: 05/23/2017

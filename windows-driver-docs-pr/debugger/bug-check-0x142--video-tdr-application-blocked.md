@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X142 VIDEO_TDR_APPLICATION_BLOCKED
+title: Bug Check 0x142 VIDEO_TDR_APPLICATION_BLOCKED
 description: The VIDEO_TDR_APPLICATION_BLOCKED live dump has a value of 0x00000142. This indicates that an application has been blocked from accessing graphics hardware.
 keywords: ["Bug Check 0x142 VIDEO_TDR_APPLICATION_BLOCKED", "VIDEO_TDR_APPLICATION_BLOCKED"]
 ms.date: 05/23/2017

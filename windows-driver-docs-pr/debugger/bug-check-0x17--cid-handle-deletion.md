@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X17 CID_HANDLE_DELETION
+title: Bug Check 0x17 CID_HANDLE_DELETION
 description: The CID_HANDLE_DELETION bug check has a value of 0x00000017.This bug check appears very infrequently.
 keywords: ["Bug Check 0x17 CID_HANDLE_DELETION", "CID_HANDLE_DELETION"]
 ms.date: 05/23/2017

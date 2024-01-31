@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X141 VIDEO_ENGINE_TIMEOUT_DETECTED
+title: Bug Check 0x141 VIDEO_ENGINE_TIMEOUT_DETECTED
 description: The VIDEO_ENGINE_TIMEOUT_DETECTED live dump has a value of 0x00000141. This indicates that one of the display engines failed to respond in timely fashion.
 keywords: ["Bug Check 0x141 VIDEO_ENGINE_TIMEOUT_DETECTED", "VIDEO_ENGINE_TIMEOUT_DETECTED"]
 ms.date: 05/23/2017

@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X130 DYNAMIC_ADD_PROCESSOR_MISMATCH
+title: Bug Check 0x130 DYNAMIC_ADD_PROCESSOR_MISMATCH
 description: The DYNAMIC_ADD_PROCESSOR_MISMATCH bug check has a value of 0x00000130. This bugcheck indicates that a new processor added to the system is incompatible with the current configuration.
 keywords: ["Bug Check 0x130 DYNAMIC_ADD_PROCESSOR_MISMATCH", "DYNAMIC_ADD_PROCESSOR_MISMATCH"]
 ms.date: 05/23/2017

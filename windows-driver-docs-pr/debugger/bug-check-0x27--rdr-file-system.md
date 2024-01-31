@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X27 RDR_FILE_SYSTEM
+title: Bug Check 0x27 RDR_FILE_SYSTEM
 description: The RDR_FILE_SYSTEM bug check has a value of 0x00000027. This indicates that a problem occurred in the SMB redirector file system.
 keywords: ["Bug Check 0x27 RDR_FILE_SYSTEM", "RDR_FILE_SYSTEM"]
 ms.date: 05/23/2017

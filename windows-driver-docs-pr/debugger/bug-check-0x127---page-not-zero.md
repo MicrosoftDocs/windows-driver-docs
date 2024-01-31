@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X127 PAGE_NOT_ZERO
+title: Bug Check 0x127 PAGE_NOT_ZERO
 description: The PAGE_NOT_ZERO bug check has a value of 0x00000127.
 keywords: ["Bug Check 0x127 PAGE_NOT_ZERO", "PAGE_NOT_ZERO"]
 ms.date: 05/23/2017

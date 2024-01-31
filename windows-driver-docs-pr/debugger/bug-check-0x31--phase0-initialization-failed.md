@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X31 PHASE0_INITIALIZATION_FAILED
+title: Bug Check 0x31 PHASE0_INITIALIZATION_FAILED
 description: The PHASE0_INITIALIZATION_FAILED bug check has a value of 0x00000031. This indicates that system initialization failed.
 keywords: ["Bug Check 0x31 PHASE0_INITIALIZATION_FAILED", "PHASE0_INITIALIZATION_FAILED"]
 ms.date: 05/23/2017

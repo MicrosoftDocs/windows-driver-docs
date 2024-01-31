@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X154 UNEXPECTED_STORE_EXCEPTION
+title: Bug Check 0x154 UNEXPECTED_STORE_EXCEPTION
 description: Learn about the UNEXPECTED_STORE_EXCEPTION bug check, which indicates that the kernel memory store component caught an unexpected exception.
 keywords: ["Bug Check 0x154 UNEXPECTED_STORE_EXCEPTION", "UNEXPECTED_STORE_EXCEPTION"]
 ms.date: 12/12/2022

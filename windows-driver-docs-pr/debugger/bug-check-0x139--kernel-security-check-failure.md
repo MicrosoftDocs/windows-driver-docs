@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X139 KERNEL_SECURITY_CHECK_FAILURE
+title: Bug Check 0x139 KERNEL_SECURITY_CHECK_FAILURE
 description: The KERNEL_SECURITY_CHECK_FAILURE bug check has a value of 0x00000139. This bug check indicates that the kernel has detected the corruption of a critical data structure.
 keywords: ["Bug Check 0x139 KERNEL_SECURITY_CHECK_FAILURE", "Bug Check 0x139 KERNEL_SECURITY_CHECK_FAILURE"]
 ms.date: 03/10/2022

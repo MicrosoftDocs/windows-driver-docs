@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X13 EMPTY_THREAD_REAPER_LIST
+title: Bug Check 0x13 EMPTY_THREAD_REAPER_LIST
 description: The EMPTY_THREAD_REAPER_LIST bug check has a value of 0x00000013. This bug check is not currently used by Windows.
 keywords: ["Bug Check 0x13 EMPTY_THREAD_REAPER_LIST", "EMPTY_THREAD_REAPER_LIST"]
 ms.date: 11/06/2023

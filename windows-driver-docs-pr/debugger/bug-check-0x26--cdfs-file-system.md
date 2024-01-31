@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X26 CDFS_FILE_SYSTEM
+title: Bug Check 0x26 CDFS_FILE_SYSTEM
 description: The CDFS_FILE_SYSTEM bug check has a value of 0x00000026. This indicates that a problem occurred in the CD file system.
 keywords: ["Bug Check 0x26 CDFS_FILE_SYSTEM", "CDFS_FILE_SYSTEM"]
 ms.date: 05/23/2017

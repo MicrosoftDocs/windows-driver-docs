@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X174 COREMSG_INTERNAL_ERROR
+title: Bug Check 0x174 COREMSG_INTERNAL_ERROR
 description: The COREMSG_INTERNAL_ERROR bug check has a value of 0x00000174. It indicates that CoreMessaging detected an unrecoverable error.
 keywords: ["Bug Check 0x174 COREMSG_INTERNAL_ERROR", "COREMSG_INTERNAL_ERROR"]
 ms.date: 01/04/2019

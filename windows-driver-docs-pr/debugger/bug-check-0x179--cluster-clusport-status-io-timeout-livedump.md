@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X179 CLUSTER_CLUSPORT_STATUS_IO_TIMEOUT_LIVEDUMP
+title: Bug Check 0x179 CLUSTER_CLUSPORT_STATUS_IO_TIMEOUT_LIVEDUMP
 description: The CLUSTER_CLUSPORT_STATUS_IO_TIMEOUT_LIVEDUMP live dump has a value of 0x00000179. This indicates that SMB client on the initiator node complains that an IO on target node is taking too long and fails all IOs with STATUS_IO_TIMEOUT.
 keywords: ["Bug Check 0x179 CLUSTER_CLUSPORT_STATUS_IO_TIMEOUT_LIVEDUMP", "CLUSTER_CLUSPORT_STATUS_IO_TIMEOUT_LIVEDUMP"]
 ms.date: 01/03/2019

@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X64 SYMBOLIC_INITIALIZATION_FAILED
+title: Bug Check 0x64 SYMBOLIC_INITIALIZATION_FAILED
 description: The SYMBOLIC_INITIALIZATION_FAILED bug check has a value of 0x00000064.This bug check appears very infrequently.
 keywords: ["Bug Check 0x64 SYMBOLIC_INITIALIZATION_FAILED", "SYMBOLIC_INITIALIZATION_FAILED"]
 ms.date: 05/23/2017

@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X132 RESOURCE_OWNER_POINTER_INVALID
+title: Bug Check 0x132 RESOURCE_OWNER_POINTER_INVALID
 description: The RESOURCE_OWNER_POINTER_INVALID bug check has a value of 0x00000132. This indicates that an invalid resource owner pointer was supplied.
 keywords: ["Bug Check 0x132 RESOURCE_OWNER_POINTER_INVALID", "RESOURCE_OWNER_POINTER_INVALID"]
 ms.date: 05/23/2017

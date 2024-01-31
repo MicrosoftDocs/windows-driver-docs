@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X136 VHD_BOOT_HOST_VOLUME_NOT_ENOUGH_SPACE
+title: Bug Check 0x136 VHD_BOOT_HOST_VOLUME_NOT_ENOUGH_SPACE
 description: The VHD_BOOT_HOST_VOLUME_NOT_ENOUGH_SPACE bug check has a value of 0x00000136 indicating an initialization failure while booting from a VHD. There is not enough free space to expand the VHD.
 keywords: ["Bug Check 0x136 VHD_BOOT_HOST_VOLUME_NOT_ENOUGH_SPACE", "VHD_BOOT_HOST_VOLUME_NOT_ENOUGH_SPACE"]
 ms.date: 05/23/2017

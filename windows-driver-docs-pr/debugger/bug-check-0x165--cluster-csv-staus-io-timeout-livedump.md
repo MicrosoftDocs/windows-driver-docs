@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X165 CLUSTER_CSV_STATUS_IO_TIMEOUT_LIVEDUMP
+title: Bug Check 0x165 CLUSTER_CSV_STATUS_IO_TIMEOUT_LIVEDUMP
 description: The CLUSTER_CSV_STATUS_IO_TIMEOUT_LIVEDUMP live dump has a value of 0x00000165. This indicates that a SMB client is experiencing a timeout situation.
 keywords: ["Bug Check 0x165 CLUSTER_CSV_STATUS_IO_TIMEOUT_LIVEDUMP", "CLUSTER_CSV_STATUS_IO_TIMEOUT_LIVEDUMP"]
 ms.date: 01/03/2019

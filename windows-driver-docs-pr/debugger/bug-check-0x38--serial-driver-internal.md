@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X38 SERIAL_DRIVER_INTERNAL
+title: Bug Check 0x38 SERIAL_DRIVER_INTERNAL
 description: The SERIAL_DRIVER_INTERNAL bug check has a value of 0x00000038.This bug check appears very infrequently.
 keywords: ["Bug Check 0x38 SERIAL_DRIVER_INTERNAL", "SERIAL_DRIVER_INTERNAL"]
 ms.date: 05/23/2017

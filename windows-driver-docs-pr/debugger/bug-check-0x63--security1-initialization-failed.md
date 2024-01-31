@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X63 SECURITY1_INITIALIZATION_FAILED
+title: Bug Check 0x63 SECURITY1_INITIALIZATION_FAILED
 description: The SECURITY1_INITIALIZATION_FAILED bug check has a value of 0x00000063.This bug check appears very infrequently.
 keywords: ["Bug Check 0x63 SECURITY1_INITIALIZATION_FAILED", "SECURITY1_INITIALIZATION_FAILED"]
 ms.date: 05/23/2017

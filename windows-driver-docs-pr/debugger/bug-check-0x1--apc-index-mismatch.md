@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X1 APC_INDEX_MISMATCH
+title: Bug Check 0x1 APC_INDEX_MISMATCH
 description: Learn about bug check 0x00000001, which indicates a mismatch in the APC state index.
 keywords: ["Bug check 0x1 APC_INDEX_MISMATCH", "APC_INDEX_MISMATCH"]
 ms.date: 10/02/2023

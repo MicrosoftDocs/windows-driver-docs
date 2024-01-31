@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X119 VIDEO_SCHEDULER_INTERNAL_ERROR
+title: Bug Check 0x119 VIDEO_SCHEDULER_INTERNAL_ERROR
 description: The VIDEO_SCHEDULER_INTERNAL_ERROR bug check has a value of 0x00000119. This indicates that the video scheduler has detected a fatal violation.
 keywords: ["Bug Check 0x119 VIDEO_SCHEDULER_INTERNAL_ERROR", "VIDEO_SCHEDULER_INTERNAL_ERROR"]
 ms.date: 08/17/2023

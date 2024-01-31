@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X71 SESSION5_INITIALIZATION_FAILED
+title: Bug Check 0x71 SESSION5_INITIALIZATION_FAILED
 description: The SESSION5_INITIALIZATION_FAILED bug check has a value of 0x00000071. This bug check indicates that the initialization of the Microsoft Windows operating system failed.
 keywords: ["Bug Check 0x71 SESSION5_INITIALIZATION_FAILED", "SESSION5_INITIALIZATION_FAILED"]
 ms.date: 05/23/2017

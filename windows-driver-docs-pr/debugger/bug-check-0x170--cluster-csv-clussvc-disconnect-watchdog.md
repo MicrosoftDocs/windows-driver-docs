@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X170 CLUSTER_CSV_CLUSSVC_DISCONNECT_WATCHDOG
+title: Bug Check 0x170 CLUSTER_CSV_CLUSSVC_DISCONNECT_WATCHDOG
 description: The CLUSTER_CSV_CLUSSVC_DISCONNECT_WATCHDOG bug check has a value of 0x00000170. This indicates that the Cluster disconnect is not making forward progress.
 keywords: ["Bug Check 0x170 CLUSTER_CSV_CLUSSVC_DISCONNECT_WATCHDOG", "CLUSTER_CSV_CLUSSVC_DISCONNECT_WATCHDOG"]
 ms.date: 01/03/2019

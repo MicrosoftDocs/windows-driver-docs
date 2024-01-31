@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X2 DEVICE_QUEUE_NOT_BUSY
+title: Bug Check 0x2 DEVICE_QUEUE_NOT_BUSY
 description: The DEVICE_QUEUE_NOT_BUSY bug check has a value of 0x00000002.This bug check appears very infrequently.
 keywords: ["Bug Check 0x2 DEVICE_QUEUE_NOT_BUSY", "DEVICE_QUEUE_NOT_BUSY"]
 ms.date: 05/23/2017

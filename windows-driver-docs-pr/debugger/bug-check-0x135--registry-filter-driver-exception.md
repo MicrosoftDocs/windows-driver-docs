@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X135 REGISTRY_FILTER_DRIVER_EXCEPTION
+title: Bug Check 0x135 REGISTRY_FILTER_DRIVER_EXCEPTION
 description: The REGISTRY_FILTER_DRIVER_EXCEPTION bug check has a value of 0x00000135. This bugcheck is caused by an unhandled exception in a registry filtering driver.
 keywords: ["Bug Check 0x135 REGISTRY_FILTER_DRIVER_EXCEPTION", "REGISTRY_FILTER_DRIVER_EXCEPTION"]
 ms.date: 05/23/2017

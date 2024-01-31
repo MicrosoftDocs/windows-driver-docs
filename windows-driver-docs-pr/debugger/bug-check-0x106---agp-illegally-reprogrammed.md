@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0X106 AGP_ILLEGALLY_REPROGRAMMED
+title: Bug Check 0x106 AGP_ILLEGALLY_REPROGRAMMED
 description: The AGP_ILLEGALLY_REPROGRAMMED bug check has a value of 0x00000106. This indicates that the Accelerated Graphics Port (AGP) hardware has been reprogrammed by an unauthorized agent.
 keywords: ["Bug Check 0x106 AGP_ILLEGALLY_REPROGRAMMED", "AGP_ILLEGALLY_REPROGRAMMED"]
 ms.date: 05/23/2017
