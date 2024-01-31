@@ -7,10 +7,10 @@ keywords:
 - strings WDK Unidrv
 - standard variable expressions WDK Unidrv
 - max_repeat
-ms.date: 01/30/2023
+ms.date: 01/31/2024
 ---
 
-# Standard Variable Expressions
+# Standard variable expressions
 
 [!include[Print Support Apps](../includes/print-support-apps.md)]
 
@@ -24,64 +24,25 @@ A standard variable expression can consist of a combination of the following com
 
 - Expression operators
 
-A standard variable expression cannot contain embedded macro references.
+A standard variable expression can't contain embedded macro references.
 
 The expression operators are included in the following table.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Operator</th>
-<th>Definitions</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><em>Val1</em><strong>+</strong><em>Val2</em></p></td>
-<td><p>Addition.</p></td>
-</tr>
-<tr class="even">
-<td><p><em>Val1</em><strong>-</strong><em>Val2</em></p></td>
-<td><p>Subtraction.</p></td>
-</tr>
-<tr class="odd">
-<td><p><em>Val1</em><strong>/</strong><em>Val2</em></p></td>
-<td><p>Division.</p></td>
-</tr>
-<tr class="even">
-<td><p><em>Val1</em><strong>*</strong><em>Val2</em></p></td>
-<td><p>Multiplication.</p></td>
-</tr>
-<tr class="odd">
-<td><p><em>Val1</em><strong>MOD</strong><em>Val2</em></p></td>
-<td><p>Modulus. Value is the remainder of dividing <em>Val1</em> by <em>Val2</em>.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>max</strong> ( <em>Val1</em> , <em>Val2</em> )</p></td>
-<td><p>Maximum. Value is the maximum of <em>Val1</em> and <em>Val2</em>.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>max_repeat</strong> ( <em>Val1</em> )</p></td>
-<td><p>See the <strong>Using max_repeat</strong> section.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>min</strong> ( <em>Val1</em> , <em>Val2</em> )</p></td>
-<td><p>Minimum. Value is the minimum of <em>Val1</em> and <em>Val2</em>.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>( )</strong></p></td>
-<td><p>Precedence operators. If not used, C-language precedence is used.</p></td>
-</tr>
-</tbody>
-</table>
+| Operator | Definitions |
+|--|--|
+| *Val1*<b>+</b>*Val2* | Addition |
+| *Val1*<b>-</b>*Val2* | Subtraction |
+| *Val1*<b>/</b>*Val2* | Division |
+| *Val1*<b>*</b>*Val2* | Multiplication |
+| *Val1***MOD***Val2* | Modulus. Value is the remainder of dividing Val1 by Val2. |
+| **max** ( *Val1* , *Val2* ) | Maximum. Value is the maximum of Val1 and Val2. |
+| **max_repeat** ( *Val1* ) | See the **Using max_repeat** section. |
+| **min** ( *Val1* , *Val2* ) | Minimum. Value is the minimum of *Val1* and *Val2*. |
+| **( )** | Precedence operators. If not used, C language precedence is used. |
 
-Standard variable expressions do not modify the values assigned to the standard variables. The calculated value is placed in the escape sequence, using the format specified by the [command string argument type](command-string-argument-types.md) specifier.
+Standard variable expressions don't modify the values assigned to the standard variables. The calculated value is placed in the escape sequence, using the format specified by the [command string argument type](command-string-argument-types.md) specifier.
 
-## <a href="" id="ddk-using-max-repeat-gg"></a>Using max_repeat
+## Using max_repeat
 
 The use of **max_repeat** is best explained with an example. Suppose a GPD file contains the following entry:
 
@@ -89,7 +50,7 @@ The use of **max_repeat** is best explained with an example. Suppose a GPD file 
 *Command:CmdXMoveRelRight{*Cmd:"<1B>["%d[0,9600]{max_repeat((DestXRel/4))}"a"}
 ```
 
-This command contains a single argument, of type **%d**. It also contains an argument range specification. Whenever Unidrv sends this command to the printer, it first calculates DestXRel/4 and determines if it is within the specified range. If the calculated value is greater than 9600, Unidrv sends the command repeatedly, with a maximum value of 9600, until the specified value has been sent. Thus if DestXRel/4 equals 20,000, Unidrv sends the following commands:
+This command contains a single argument, of type **%d**. It also contains an argument range specification. Whenever Unidrv sends this command to the printer, it first calculates DestXRel/4 and determines if it is within the specified range. If the calculated value is greater than 9600, Unidrv sends the command repeatedly, with a maximum value of 9600, until the specified value is sent. Thus if DestXRel/4 equals 20,000, Unidrv sends the following commands:
 
 ```GPD
 <1B>[9600
