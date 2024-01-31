@@ -2,14 +2,7 @@
 title: requestOpen element
 description: The requestOpen element is used to open an event notification message on the client computer.
 keywords: ["requestOpen element Print Devices"]
-topic_type:
-- apiref
-ms.topic: reference
-api_name:
-- requestOpen
-api_type:
-- Schema
-ms.date: 11/28/2017
+ms.date: 01/30/2024
 ---
 
 # requestOpen element
@@ -38,57 +31,17 @@ There are no attributes.
 
 ## Child elements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="balloonui.md" data-raw-source="[&lt;strong&gt;balloonUI&lt;/strong&gt;](balloonui.md)"><strong>balloonUI</strong></a></p></td>
-<td><p></p>
-<p>An optional element that is used to display a message balloon on the client computer.</p></td>
-</tr>
-<tr class="even">
-<td><p><a href="customui.md" data-raw-source="[&lt;strong&gt;customUI&lt;/strong&gt;](customui.md)"><strong>customUI</strong></a></p></td>
-<td><p></p>
-<p>An optional element that specifies a custom user interface to be displayed on a client computer.</p></td>
-</tr>
-<tr class="odd">
-<td><p><a href="messageboxui.md" data-raw-source="[&lt;strong&gt;messageBoxUI&lt;/strong&gt;](messageboxui.md)"><strong>messageBoxUI</strong></a></p></td>
-<td><p></p>
-<p>An optional element that is used to display a message box on the client computer.</p></td>
-</tr>
-</tbody>
-</table>
+| Element | Description |
+|--|--|
+| [**balloonUI**](balloonui.md) | An optional element that is used to display a message balloon on the client computer. |
+| [**customUI**](customui.md) | An optional element that specifies a custom user interface to be displayed on a client computer. |
+| [**messageBoxUI**](messageboxui.md) | An optional element that is used to display a message box on the client computer. |
 
 ## Parent elements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="asyncprintuirequest.md" data-raw-source="[&lt;strong&gt;asyncPrintUIRequest&lt;/strong&gt;](asyncprintuirequest.md)"><strong>asyncPrintUIRequest</strong></a></p></td>
-<td><p></p>
-<p>A required element that describes a request issued by the printer driver to create a message on a client computer.</p></td>
-</tr>
-</tbody>
-</table>
+| Element | Description |
+|--|--|
+| [**asyncPrintUIRequest**](asyncprintuirequest.md) | A required element that describes a request issued by the printer driver to create a message on a client computer. |
 
 ## Examples
 
