@@ -1,5 +1,5 @@
 ---
-title: Overview of system battery management
+title: Overview of System Battery Management
 description: Learn about the components and roles involved in system battery management, including battery GUI, power manager, and various drivers.
 ms.date: 11/01/2023
 ---

@@ -1,5 +1,5 @@
 ---
-title: AddDevice routine for battery miniclass drivers
+title: AddDevice Routine for Battery Miniclass Drivers
 description: Discover the AddDevice routine and its role in initializing battery-specific state for battery miniclass drivers.
 keywords:
 - AddDevice routine WDK battery
