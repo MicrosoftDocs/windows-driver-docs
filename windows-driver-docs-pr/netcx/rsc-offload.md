@@ -107,7 +107,7 @@ MyEvtAdapterOffloadSetRsc(
 
 ## UDP RSC Offload (URO)
 
-URO enables the coalescing of received UDP segments. NICs can combine UDP datagrams from the same flow that match a set of rules into a logically contiguous buffer. These combined datagrams are then indicated to the Windows networking stack as a single large packet. For information on URO rules, see [UDP Receive Segment Coalescing Offload](udp-rsc-offload.md).
+URO enables the coalescing of received UDP segments. NICs can combine UDP datagrams from the same flow that match a set of rules into a logically contiguous buffer. These combined datagrams are then indicated to the Windows networking stack as a single large packet. For information on URO rules, see [UDP Receive Segment Coalescing Offload](../network/udp-rsc-offload.md).
 
 NetAdapterCx client drivers can use the existing RSC structures and RSC API for URO. To configure URO, client drivers must set the **Layer4Flags** field in the [**NET_ADAPTER_OFFLOAD_RSC_CAPABILITIES**](/windows-hardware/drivers/ddi/netadapteroffload/ns-netadapteroffload-_net_adapter_offload_rsc_capabilities) structure to `NetAdapterOffloadLayer4FlagUdp`.
 

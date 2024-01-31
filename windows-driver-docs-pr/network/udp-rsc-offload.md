@@ -79,7 +79,7 @@ Starting in NDIS 6.89, the NDIS interface for URO facilitates communication betw
 
 ### Report URO capability
 
-A miniport driver advertises support for URO in the **UdpRsc** member of the [**NDIS_OFFLOAD**](../ntddndis/ns-ntddndis-_ndis_offload.md) structure, which it passes to the [**NdisMSetMiniportAttributes**](../ndis/nf-ndis-ndismsetminiportattributes.md) function.
+A miniport driver advertises support for URO in the **UdpRsc** member of the [**NDIS_OFFLOAD**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_offload) structure, which it passes to the [**NdisMSetMiniportAttributes**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes) function.
 
 ### Query URO capability
 
