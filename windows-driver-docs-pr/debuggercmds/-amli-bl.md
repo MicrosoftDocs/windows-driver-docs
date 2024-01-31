@@ -1,6 +1,6 @@
 ---
-title: amli bl (WinDbg)
-description: The amli bl extension displays a list of all AML breakpoints.
+title: "!amli bl (WinDbg)"
+description: "The !amli bl extension displays a list of all AML breakpoints."
 keywords: ["amli bl Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
@@ -14,7 +14,6 @@ api_type:
 
 # !amli bl
 
-
 The **!amli bl** extension displays a list of all AML breakpoints.
 
 Syntax
@@ -26,17 +25,17 @@ Syntax
 ## <span id="ddk__amli_bl_dbg"></span><span id="DDK__AMLI_BL_DBG"></span>
 
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Kdexts.dll
 
 ### Additional Information
 
-For information about related commands and their uses, see [The AMLI Debugger](../debugger/the-amli-debugger.md).
+For information about related commands and their uses, see [The amli Debugger](../debugger/the-amli-debugger.md).
 
 ## Remarks
 
-The AMLI Debugger supports a maximum of ten breakpoints.
+The !amli Debugger supports a maximum of ten breakpoints.
 
 Here is an example of the **!amli bl** extension:
 

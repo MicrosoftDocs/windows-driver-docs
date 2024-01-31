@@ -78,7 +78,7 @@ Specifies the type of handle that you want to examine. Only handles that match t
 <span id="_______-_______"></span> **-?**   
 (User mode only) Displays some Help text for this extension in the [Debugger Command window](../debugger/debugger-command-window.md).
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

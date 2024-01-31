@@ -21,13 +21,13 @@ The **!storagekd.storsrb** extension displays information about the specified St
 !storagekd.storsrb Address 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Address"></span><span id="_______address"></span><span id="_______ADDRESS"></span> *Address*  
 Specifies the address of the SRB.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

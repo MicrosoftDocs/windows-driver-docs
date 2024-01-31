@@ -21,7 +21,7 @@ The **!wdfkd.wdfhelp** extension displays help information about all Wdfkd.dll e
 !wdfkd.wdfhelp
 ```
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Wdfkd.dll
 

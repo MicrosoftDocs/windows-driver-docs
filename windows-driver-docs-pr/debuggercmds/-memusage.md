@@ -42,7 +42,7 @@ Displays only general summary information about memory use.
 
 **Modes**: kernel mode only
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Kdexts.dll
 

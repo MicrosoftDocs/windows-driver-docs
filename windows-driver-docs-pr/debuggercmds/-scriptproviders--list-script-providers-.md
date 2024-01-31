@@ -21,7 +21,7 @@ The **.scriptproviders** command lists the active script providers.
 .scriptproviders 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______________"></span>    

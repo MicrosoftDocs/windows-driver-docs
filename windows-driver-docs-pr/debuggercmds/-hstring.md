@@ -21,7 +21,7 @@ The **!hstring** extension displays the fields of an **HSTRING**. The last item 
 !hstring Address
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="Address"></span><span id="address"></span><span id="ADDRESS"></span>*Address*  

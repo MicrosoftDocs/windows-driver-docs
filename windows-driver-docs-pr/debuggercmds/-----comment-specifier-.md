@@ -1,6 +1,6 @@
 ---
-title: $$ (Comment Specifier)
-description: If two dollar signs ( $$ ) appear at the start of a command, then the rest of the line is treated as a comment, unless the comment is terminated by a semicolon.
+title: "$$ (Comment Specifier)"
+description: "If two dollar signs ( $$ ) appear at the start of a command, then the rest of the line is treated as a comment, unless the comment is terminated by a semicolon."
 keywords: ["comment token ($$)", "$$ (Comment Specifier) Windows Debugging"]
 ms.date: 08/30/2023
 topic_type:

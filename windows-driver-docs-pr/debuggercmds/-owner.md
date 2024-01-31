@@ -30,7 +30,7 @@ Specifies the module whose owner is desired. An asterisk (\*) at the end of *Mod
 <span id="_______Symbol______"></span><span id="_______symbol______"></span><span id="_______SYMBOL______"></span> *Symbol*   
 Specifies the symbol within *Module* whose owner is desired. An asterisk (\*) at the end of *Symbol* represents any number of additional characters. If *Symbol* is omitted, the owner of the entire module is displayed.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

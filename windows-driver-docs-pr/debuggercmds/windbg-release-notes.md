@@ -1,6 +1,7 @@
 ---
 title: WinDbg Release notes
 description: This topic provides information on what's new in WinDbg.
+keywords: ["Release notes", "WinDbg", "Windows Debugging"]
 ms.date: 06/26/2023
 ms.topic: article
 ---

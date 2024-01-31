@@ -46,7 +46,7 @@ User-Mode Syntax:
 <span id="_______-_______"></span> **-?**   
 Displays help text for this extension.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Exts.dll
 

@@ -1,6 +1,7 @@
 ---
 title: WinDbg - View Menu 
 description: This section describes how work with the view menu.
+keywords: ["View Menu", "WinDbg", "Menu", "Windows Debugging"]
 ms.date: 07/02/2020
 ---
 

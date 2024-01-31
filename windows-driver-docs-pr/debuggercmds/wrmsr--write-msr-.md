@@ -14,7 +14,6 @@ api_type:
 
 # wrmsr (Write MSR)
 
-
 The **wrmsr** command writes a value to a Model-Specific Register (MSR) at the specified address.
 
 `wrmsr Address Value`

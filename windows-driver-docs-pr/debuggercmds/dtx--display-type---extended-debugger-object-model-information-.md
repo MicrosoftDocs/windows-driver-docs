@@ -21,7 +21,7 @@ The dtx command displays extended symbolic type information using the debugger o
 dtx -DisplayOpts [Module!]Name Address
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="________DisplayOpts_______"></span><span id="________displayopts_______"></span><span id="________DISPLAYOPTS_______"></span> **DisplayOpts**   

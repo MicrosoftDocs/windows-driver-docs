@@ -22,7 +22,7 @@ For more information about the Network Adapter WDF Class Extension (NetAdapterCx
 !ndiskd.netpacket -handle <x> [-basic] [-layout] [-checksum] [-data]
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______-handle______"></span><span id="_______-HANDLE______"></span> *-handle*   

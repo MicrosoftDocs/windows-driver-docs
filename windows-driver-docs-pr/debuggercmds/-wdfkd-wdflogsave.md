@@ -21,7 +21,7 @@ The **!wdfkd.wdflogsave** extension saves the Kernel-Mode Driver Framework (KMDF
 !wdfkd.wdflogsave [DriverName [FileName]]
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______DriverName______"></span><span id="_______drivername______"></span><span id="_______DRIVERNAME______"></span> *DriverName*   
@@ -30,7 +30,7 @@ Optional. The name of a driver. *DriverName* must not include the .sys file name
 <span id="_______FileName______"></span><span id="_______filename______"></span><span id="_______FILENAME______"></span> *FileName*   
 Optional. The name of the file to which the KMDF error log records should be saved. *FileName* should not include the .etl file name extension. If you omit *FileName*, the KMDF error log records are saved to the DriverName.etl file.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Wdfkd.dll
 

@@ -21,7 +21,7 @@ The **!tzinfo** extension displays the contents of the specified thermal zone in
 !tzinfo Address
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   

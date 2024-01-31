@@ -22,7 +22,7 @@ The **.prefer\_dml** command sets the default behavior for commands that are cap
 .prefer_dml 1
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______0"></span> 0  

@@ -21,13 +21,13 @@ The **!ndiskd.nbllog** extension displays the log of all NBL ([**NET\_BUFFER\_LI
 !ndiskd.nbllog [-stacks] 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______-stacks______"></span><span id="_______-STACKS______"></span> *-stacks*   
 Include callstacks.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Ndiskd.dll
 

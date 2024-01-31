@@ -27,7 +27,7 @@ The **!rpcexts.eerecord** extension displays the contents of an extended error i
 <span id="_______EERecordAddress______"></span><span id="_______eerecordaddress______"></span><span id="_______EERECORDADDRESS______"></span> *EERecordAddress*   
 Specifies the address of the extended error record.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
