@@ -1,5 +1,5 @@
 ---
-title: IRP_MJ_PNP (FS and filter drivers)
+title: IRP_MJ_PNP (FS and Filter Drivers)
 description: IRP_MJ_PNP
 keywords: ["IRP_MJ_PNP Installable File System Drivers"]
 topic_type:

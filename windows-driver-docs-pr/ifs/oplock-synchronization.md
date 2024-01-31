@@ -1,5 +1,5 @@
 ---
-title: Oplock synchronization
+title: Oplock Synchronization
 description: Describes how filters and file systems handle oplock synchronization
 ms.date: 01/08/2021
 ---

@@ -1,5 +1,5 @@
 ---
-title: Tools for minifilter development and testing
+title: Tools for Minifilter Development and Testing
 description: Development and Testing Tools
 keywords:
 - filter manager WDK file system minifilter , tools

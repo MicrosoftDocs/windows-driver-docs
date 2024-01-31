@@ -1,5 +1,5 @@
 ---
-title: Types of oplocks
+title: Types of Oplocks
 description: Describes the different types of oplocks
 ms.date: 07/07/2023
 ---

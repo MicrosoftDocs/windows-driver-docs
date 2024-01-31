@@ -1,5 +1,5 @@
 ---
-title: FSCTL_FILE_LEVEL_TRIM control code
+title: FSCTL_FILE_LEVEL_TRIM Control Code
 description: The FSCTL_FILE_LEVEL_TRIM control code provides a method to trim data ranges with in a file.
 keywords: ["FSCTL_FILE_LEVEL_TRIM control code Installable File System Drivers"]
 topic_type:

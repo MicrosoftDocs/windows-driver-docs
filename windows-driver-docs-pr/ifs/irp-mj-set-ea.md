@@ -1,5 +1,5 @@
 ---
-title: IRP_MJ_SET_EA (FS and filter drivers)
+title: IRP_MJ_SET_EA (FS and Filter Drivers)
 description: IRP_MJ_SET_EA
 keywords: ["IRP_MJ_SET_EA Installable File System Drivers"]
 topic_type:

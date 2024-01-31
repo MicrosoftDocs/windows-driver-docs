@@ -1,5 +1,5 @@
 ---
-title: FSCTL_SET_REPARSE_POINT control code
+title: FSCTL_SET_REPARSE_POINT Control Code
 description: The FSCTL_SET_REPARSE_POINT control code sets a reparse point on a file or directory.
 keywords: ["FSCTL_SET_REPARSE_POINT control code Installable File System Drivers"]
 topic_type:

@@ -1,5 +1,5 @@
 ---
-title: FSCTL_UPDATE_OVERLAY control code
+title: FSCTL_UPDATE_OVERLAY Control Code
 description: The FSCTL_UPDATE_OVERLAY control code updates a new data source identifier for a backing source attached to a volume.
 keywords: ["FSCTL_UPDATE_OVERLAY control code Installable File System Drivers"]
 topic_type:

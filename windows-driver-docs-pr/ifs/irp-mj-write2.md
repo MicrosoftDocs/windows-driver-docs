@@ -1,5 +1,5 @@
 ---
-title: Checking the Oplock State of an IRP_MJ_WRITE operation
+title: Checking the Oplock State of an IRP_MJ_WRITE Operation
 description: Checking the Oplock State of an IRP_MJ_WRITE operation
 ms.date: 11/25/2019
 ---
