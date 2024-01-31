@@ -1,5 +1,5 @@
 ---
-title: Virtual address spaces
+title: Virtual Address Spaces
 description: Learn how processors use virtual addresses to read and write to memory locations.
 ms.date: 11/30/2021
 ms.custom: contperf-fy22q2

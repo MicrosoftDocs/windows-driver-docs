@@ -1,5 +1,5 @@
 ---
-title: Get started with drivers on Windows
+title: Get Started with Drivers on Windows
 description: Start here to learn fundamental concepts about drivers on Windows.
 ms.date: 12/15/2023
 ms.topic: article
