@@ -1,5 +1,5 @@
 ---
-title: Getting Started With Biometric Drivers
+title: Getting Started with Biometric Drivers
 description: Getting Started with Biometric Drivers
 keywords:
 - biometric drivers WDK , about biometric drivers
