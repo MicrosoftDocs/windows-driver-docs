@@ -114,14 +114,14 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 <td align="left"><p>The pool block header size is corrupt.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>0x21</p></td>
+<td align="left"><p>0X21</p></td>
 <td align="left"><p>The pool pointer being freed</p></td>
 <td align="left"><p>The number of bytes allocated for the pool block</p></td>
 <td align="left"><p>The corrupted value found following the pool block</p></td>
 <td align="left"><p>The data following the pool block being freed is corrupt. Typically this means the consumer (call stack) has overrun the block.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>0x22</p></td>
+<td align="left"><p>0X22</p></td>
 <td align="left"><p>The address being freed</p></td>
 <td align="left"><p>Reserved</p></td>
 <td align="left"><p>Reserved</p></td>
