@@ -14807,7 +14807,7 @@
             "redirect_document_id": false
         },
         {
-            "source_path":  "windows-driver-docs-pr/debuggercmds/-wmitrace.tfp.md",
+            "source_path":  "windows-driver-docs-pr/debuggercmds/-wmitrace-tfp.md",
             "redirect_URL":  "/windows-hardware/drivers/debuggercmds/kernel-mode-extensions",
             "redirect_document_id":  false
         },
