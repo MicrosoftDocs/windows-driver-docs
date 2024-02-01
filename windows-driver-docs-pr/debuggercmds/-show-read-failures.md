@@ -22,7 +22,7 @@ The **.show\_read\_failures** command enables or disables the display of read fa
 .show_sym_failures /V
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="________v______"></span><span id="________V______"></span> **/v**   

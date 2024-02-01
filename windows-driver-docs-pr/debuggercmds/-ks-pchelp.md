@@ -21,7 +21,7 @@ The **!ks.pchelp** extension displays a help text showing PortCls-specific Ks.dl
 !ks.pchelp 
 ```
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

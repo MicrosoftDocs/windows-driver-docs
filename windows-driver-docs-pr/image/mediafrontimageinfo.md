@@ -1,5 +1,5 @@
 ---
-title: MediaFrontImageInfo element
+title: MediaFrontImageInfo Element
 description: The required MediaFrontImageInfo element contains the image information for a simplex scan or for the front side of an ADF duplex scan.
 keywords: ["MediaFrontImageInfo element Imaging Devices"]
 topic_type:

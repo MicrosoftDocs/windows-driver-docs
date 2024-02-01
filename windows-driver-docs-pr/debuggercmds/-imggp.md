@@ -27,7 +27,7 @@ The **!imggp** extension displays the global pointer (GP) directory entry value 
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the base address of the image.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

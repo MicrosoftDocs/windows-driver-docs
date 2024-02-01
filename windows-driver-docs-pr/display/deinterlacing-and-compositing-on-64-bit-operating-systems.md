@@ -1,5 +1,5 @@
 ---
-title: Deinterlacing and Compositing on 64-bit Operating Systems
+title: Deinterlacing and Compositing on 64-Bit Operating Systems
 description: Deinterlacing and Compositing on 64-bit Operating Systems
 keywords:
 - deinterlacing WDK DirectX VA , 64-bit

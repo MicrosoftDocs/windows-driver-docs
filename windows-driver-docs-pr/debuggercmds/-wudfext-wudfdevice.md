@@ -21,13 +21,13 @@ The **!wudfext.wudfdevice** extension displays the Plug and Play (PnP) and power
 !wudfext.wudfdevice pWDFDevice
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______pWDFDevice______"></span><span id="_______pwdfdevice______"></span><span id="_______PWDFDEVICE______"></span> *pWDFDevice*   
 Specifies the address of the **IWDFDevice** interface to display PnP or power-management state about.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

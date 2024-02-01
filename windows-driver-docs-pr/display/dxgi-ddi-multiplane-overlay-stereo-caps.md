@@ -1,5 +1,5 @@
 ---
-title: DXGI\_DDI\_MULTIPLANE\_OVERLAY\_STEREO\_CAPS enumeration
+title: DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_CAPS Enumeration
 description: Learn about the DXGI\_DDI\_MULTIPLANE\_OVERLAY\_STEREO\_CAPS enumeration, which is reserved for system use. Do not use it in your driver.
 keywords: ["DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_CAPS enumeration Display Devices"]
 topic_type:

@@ -1,5 +1,5 @@
 ---
-title: Creating an INF file for a minifilter driver
+title: Creating an INF File for a Minifilter Driver
 description: Describes how to create an INF file for a filter driver
 keywords:
 - INF files WDK file system , minifilter drivers

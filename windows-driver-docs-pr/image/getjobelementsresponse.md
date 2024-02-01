@@ -1,5 +1,5 @@
 ---
-title: GetJobElementsResponse element
+title: GetJobElementsResponse Element
 description: The required GetJobElementsResponse element returns the job-related information that a client requests.
 keywords: ["GetJobElementsResponse element Imaging Devices"]
 topic_type:

@@ -1,6 +1,6 @@
 ---
-title: amli lc (WinDbg)
-description: The amli lc extension lists all active ACPI contexts.
+title: "!amli lc (WinDbg)"
+description: "The !amli lc extension lists all active ACPI contexts."
 keywords: ["amli lc Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
@@ -14,7 +14,6 @@ api_type:
 
 # !amli lc
 
-
 The **!amli lc** extension lists all active ACPI contexts.
 
 Syntax
@@ -23,10 +22,7 @@ Syntax
    !amli lc
 ```
 
-## <span id="ddk__amli_lc_dbg"></span><span id="DDK__AMLI_LC_DBG"></span>
-
-
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Kdexts.dll
 

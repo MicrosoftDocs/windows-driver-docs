@@ -1,6 +1,7 @@
 ---
 title: Time travel debugging release notes
 description: This topic provides information on what's new in Time Travel Debugging.
+keywords: ["release notes", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
 ms.date: 10/30/2023
 ---
 

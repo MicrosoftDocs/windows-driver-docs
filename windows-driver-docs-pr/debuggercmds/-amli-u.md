@@ -1,7 +1,7 @@
 ---
-title: amli u (WinDbg)
-description: The amli u extension unassembles AML code.
-keywords: ["amli u Windows Debugging"]
+title: "!amli u (WinDbg)"
+description: "The !amli u extension unassembles AML code."
+keywords: ["!amli u Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
 - apiref
@@ -13,7 +13,6 @@ api_type:
 ---
 
 # !amli u
-
 
 The **!amli u** extension unassembles AML code.
 
@@ -32,7 +31,7 @@ Specifies the full path of the method name to be disassembled.
 <span id="_______CodeAddress______"></span><span id="_______codeaddress______"></span><span id="_______CODEADDRESS______"></span> *CodeAddress*   
 Specifies the address of the AML code where disassembly will begin. If *CodeAddress* is prefixed with two percent signs (**%%**), it is interpreted as a physical address. Otherwise, it is interpreted as a virtual address.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Kdexts.dll
 
@@ -48,7 +47,6 @@ The disassembly display will continue until the end of the method is reached.
 
 **Note**   The standard [**u (Unassemble)**](u--unassemble-.md) command will not give proper results with AML code.
 
- 
 
 Here are some examples. To disassemble the object at address 0x80E5D701, use the following command:
 
@@ -67,12 +65,3 @@ The following command will disassemble the \_DCK method:
 ```console
 kd> u \_sb.pci0.dock._dck
 ```
-
- 
-
- 
-
-
-
-
-

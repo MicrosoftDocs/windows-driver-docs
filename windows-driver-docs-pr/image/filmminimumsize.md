@@ -1,5 +1,5 @@
 ---
-title: FilmMinimumSize element
+title: FilmMinimumSize Element
 description: The required FilmMinimumSize element specifies the smallest size original that an end user can scan with the film scanning option.
 keywords: ["FilmMinimumSize element Imaging Devices"]
 topic_type:

@@ -1,5 +1,5 @@
 ---
-title: MRxLowIOSubmit\ LOWIO\_OP\_FSCTL\ routine
+title: MRxLowIOSubmit[LOWIO_OP_FSCTL] Routine
 description: The MRxLowIOSubmit\ LOWIO\_OP\_FSCTL\ routine is called by RDBSS to request that a network mini-redirector issue file system control request on remote file.
 keywords: ["MRxLowIOSubmit LOWIO_OP_FSCTL routine Installable File System Drivers", "PMRX_CALLDOWN"]
 topic_type:

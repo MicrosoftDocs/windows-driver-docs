@@ -22,7 +22,7 @@ The **!for\_each\_process** extension executes the specified debugger command on
 !for_each_process -? 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______CommandString______"></span><span id="_______commandstring______"></span><span id="_______COMMANDSTRING______"></span> *CommandString*   
@@ -33,7 +33,7 @@ If *CommandString* includes multiple commands, separate them with semicolons (;)
 <span id="_______-_______"></span> **-?**   
 Displays help for this extension in the Debugger Command window.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 This extension works only in kernel mode, even though it resides in Ext.dll.
 

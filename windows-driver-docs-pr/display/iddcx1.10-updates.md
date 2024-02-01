@@ -1,5 +1,5 @@
 ---
-title: Updates for IddCx versions 1.10 and later
+title: Updates for IddCx Versions 1.10 and Later
 description: Version 1.10 updates to the Indirect Display Driver Class eXtension for console and remote indirect display drivers
 ms.date: 10/20/2023
 keywords:

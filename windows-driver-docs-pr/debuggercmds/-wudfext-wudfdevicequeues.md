@@ -21,13 +21,13 @@ The **!wudfext.wudfdevicequeues** extension displays information about all the I
 !wudfext.wudfdevicequeues pWDFDevice
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______pWDFDevice______"></span><span id="_______pwdfdevice______"></span><span id="_______PWDFDEVICE______"></span> *pWDFDevice*   
 Specifies the address of the **IWDFDevice** interface for which to display information about all of its associated I/O queues. The [**!wudfext.wudfdriverinfo**](-wudfext-wudfdriverinfo.md) extension command determines the address of **IWDFDevice**.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

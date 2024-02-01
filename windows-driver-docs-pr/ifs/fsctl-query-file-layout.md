@@ -1,5 +1,5 @@
 ---
-title: FSCTL_QUERY_FILE_LAYOUT control code
+title: FSCTL_QUERY_FILE_LAYOUT Control Code
 description: The FSCTL_QUERY_FILE_LAYOUT control code retrieves file layout information for a file system volume.
 keywords: ["FSCTL_QUERY_FILE_LAYOUT control code Installable File System Drivers"]
 topic_type:

@@ -21,7 +21,7 @@ The **.readmem** command reads raw binary data from the specified file and copie
 .readmem FileName Range 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______FileName______"></span><span id="_______filename______"></span><span id="_______FILENAME______"></span> *FileName*   

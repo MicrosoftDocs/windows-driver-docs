@@ -1,5 +1,5 @@
 ---
-title: D3D12 enhanced barriers
+title: D3D12 Enhanced Barriers
 description: Learn about D3D12 enhanced barriers
 keywords:
 - D3D12 enhanced barriers

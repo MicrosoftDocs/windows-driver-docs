@@ -1,5 +1,5 @@
 ---
-title: DestinationResponse element
+title: DestinationResponse Element
 description: The required DestinationResponse element contains the response information for a single ScanDestination registration.
 keywords: ["DestinationResponse element Imaging Devices"]
 topic_type:

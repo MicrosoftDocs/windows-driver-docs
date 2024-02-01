@@ -24,7 +24,7 @@ The **!whea** extension displays top-level Windows Hardware Error Architecture (
 ## <span id="ddk__ubp_dbg"></span><span id="DDK__UBP_DBG"></span>
 
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

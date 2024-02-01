@@ -1,7 +1,7 @@
 ---
-title: amli do (WinDbg)
-description: The amli do extension displays an AML data object.
-keywords: ["amli do Windows Debugging"]
+title: "!amli do (WinDbg)"
+description: "The !amli do extension displays an AML data object."
+keywords: ["!amli do Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !amli do
 
-
 The **!amli do** extension displays an AML data object.
 
 Syntax
@@ -23,25 +22,15 @@ Syntax
     !amli do Address
 ```
 
-## <span id="ddk__amli_do_dbg"></span><span id="DDK__AMLI_DO_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the address of the data object.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Kdexts.dll
 
 ### Additional Information
 
 For information about related commands and their uses, see [The AMLI Debugger](../debugger/the-amli-debugger.md).
-
- 
-
- 
-
-
-
-
-

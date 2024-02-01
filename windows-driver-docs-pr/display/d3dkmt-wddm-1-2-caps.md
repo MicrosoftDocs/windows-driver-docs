@@ -1,5 +1,5 @@
 ---
-title: D3DKMT\_WDDM\_1\_2\_CAPS structure
+title: D3DKMT_WDDM_1_2_CAPS Structure
 description: Learn about the D3DKMT\_WDDM\_1\_2\_CAPS structure, which is reserved for system use. Do not use in your driver.
 keywords: ["D3DKMT_WDDM_1_2_CAPS structure Display Devices"]
 topic_type:

@@ -1,5 +1,5 @@
 ---
-title: Cancel a data transfer by a device
+title: Cancel a Data Transfer by a Device
 description: Cancel a data transfer by a device
 ms.date: 03/28/2023
 ---

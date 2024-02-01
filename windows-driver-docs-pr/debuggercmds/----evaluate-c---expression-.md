@@ -1,6 +1,6 @@
 ---
-title: (Evaluate C++ Expression)
-description: The double question mark ( ) command evaluates and displays the value of an expression according to C++ expression rules.
+title: "?? (Evaluate C++ Expression)"
+description: "The double question mark (??) command evaluates and displays the value of an expression according to C++ expression rules."
 keywords: ["(Evaluate C++ Expression) Windows Debugging"]
 ms.date: 08/30/2023
 topic_type:

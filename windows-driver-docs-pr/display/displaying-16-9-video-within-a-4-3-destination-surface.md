@@ -1,6 +1,6 @@
 ---
-title: Displaying 16 9 Video within a 4 3 Destination Surface
-description: Displaying 16 9 Video within a 4 3 Destination Surface
+title: Displaying 16:9 Video Within a 4:3 Destination Surface
+description: Displaying 16:9 Video within a 4:3 Destination Surface
 keywords:
 - displaying 16 9 video
 - 4 3 destination surface displays 16 9 video WDK DirectX VA

@@ -21,7 +21,7 @@ The **.extmatch** command displays extension commands exported by the currently 
 .extmatch [Options] Pattern 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 *Options*

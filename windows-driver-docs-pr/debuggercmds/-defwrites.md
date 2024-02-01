@@ -24,7 +24,7 @@ The **!defwrites** extension displays the values of the kernel variables used by
 ## <span id="ddk__defwrites_dbg"></span><span id="DDK__DEFWRITES_DBG"></span>
 
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Kdexts.dll
  

@@ -1,5 +1,5 @@
 ---
-title: WDDM support for DisplayPort monitors over USB4
+title: WDDM Support for DisplayPort Monitors Over USB4
 description: WDDM support for DisplayPort monitors over USB4
 keywords:
 - display drivers, usb4

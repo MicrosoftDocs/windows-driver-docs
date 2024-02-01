@@ -1,5 +1,5 @@
 ---
-title: D3DKMT\_OUTPUTDUPL\_GET\_POINTER\_SHAPE\_DATA structure
+title: D3DKMT_OUTPUTDUPL_GET_POINTER_SHAPE_DATA Structure
 description: Learn about the D3DKMT\_OUTPUTDUPL\_GET\_POINTER\_SHAPE\_DATA structure, which is reserved for system use. Do not use in your driver.
 keywords: ["D3DKMT_OUTPUTDUPL_GET_POINTER_SHAPE_DATA structure Display Devices"]
 topic_type:

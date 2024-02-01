@@ -1,5 +1,5 @@
 ---
-title: FSCTL_SET_ZERO_DATA control code
+title: FSCTL_SET_ZERO_DATA Control Code
 description: The FSCTL_SET_ZERO_DATA control code fills a specified range of a file with zeros (0).
 keywords: ["FSCTL_SET_ZERO_DATA control code Installable File System Drivers"]
 topic_type:

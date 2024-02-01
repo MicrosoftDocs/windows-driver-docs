@@ -1,5 +1,5 @@
 ---
-title: FSCTL_OPLOCK_BREAK_NOTIFY control code
+title: FSCTL_OPLOCK_BREAK_NOTIFY Control Code
 description: The FSCTL_OPLOCK_BREAK_NOTIFY control code allows the calling application to wait for completion of an opportunistic lock (oplock) break.
 keywords: ["FSCTL_OPLOCK_BREAK_NOTIFY control code Installable File System Drivers"]
 topic_type:

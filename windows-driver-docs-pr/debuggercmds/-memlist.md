@@ -20,7 +20,7 @@ Syntax
 
 `!memlist Flags`
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Flags______"></span><span id="_______flags______"></span><span id="_______FLAGS______"></span> *Flags*   
@@ -29,7 +29,7 @@ Specifies which memory lists to verify. At present, only one value has been impl
 <span id="Bit_0__0x1_"></span><span id="bit_0__0x1_"></span><span id="BIT_0__0X1_"></span>Bit 0 (0x1)  
 Causes the zeroed pages list to be verified.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Windows XP and later - Kdexts.dll
 

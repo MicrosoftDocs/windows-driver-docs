@@ -1,5 +1,5 @@
 ---
-title: Sharpness element
+title: Sharpness Element
 description: The optional Sharpness element specifies the relative amount to reduce or enhance the sharpness of the scanned document.
 keywords: ["Sharpness element Imaging Devices"]
 topic_type:

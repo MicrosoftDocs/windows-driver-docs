@@ -1,7 +1,7 @@
 ---
-title: amli ds (WinDbg)
-description: The amli ds extension displays an AML stack.
-keywords: ["amli ds Windows Debugging"]
+title: "!amli ds (WinDbg)"
+description: "The !amli ds extension displays an AML stack."
+keywords: ["!amli ds Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !amli ds
 
-
 The **!amli ds** extension displays an AML stack.
 
 Syntax
@@ -23,7 +22,7 @@ Syntax
     !amli ds [/v] [Address] 
 ```
 
-## <span id="ddk__amli_ds_dbg"></span><span id="DDK__AMLI_DS_DBG"></span>Parameters
+## Parameters
 
 
 <span id="________v______"></span><span id="________V______"></span> **/v**   
@@ -32,9 +31,9 @@ Causes the display to be verbose.
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the address of the context block whose stack is desired. If *Address* is omitted, the current context is used.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
-The !stacks extension displays information about the kernel stacks.
+Kdexts.dll
 
 ### Additional Information
 

@@ -21,7 +21,7 @@ The **!wdfkd.wdfdriverinfo** extension displays information about the specified 
 !wdfkd.wdfdriverinfo [DriverName [Flags]]
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______DriverName______"></span><span id="_______drivername______"></span><span id="_______DRIVERNAME______"></span> *DriverName*   
@@ -54,7 +54,7 @@ The display will include handles that the driver potentially leaked. KMDF versio
 <span id="Bit_10__0x400_"></span><span id="bit_10__0x400_"></span><span id="BIT_10__0X400_"></span>Bit 10 (0x400)  
 The display will include the device tree in verbose form.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Wdfkd.dll
 

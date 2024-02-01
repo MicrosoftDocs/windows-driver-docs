@@ -1,5 +1,5 @@
 ---
-title: DXGK\_POWER\_COMPONENT\_P\_FLAGS structure
+title: DXGK_POWER_COMPONENT_P_FLAGS Structure
 description: Learn about the DXGK\_POWER\_COMPONENT\_P\_FLAGS structure, which is reserved for system use. Do not use in your driver.
 keywords: ["DXGK_POWER_COMPONENT_P_FLAGS structure Display Devices"]
 topic_type:

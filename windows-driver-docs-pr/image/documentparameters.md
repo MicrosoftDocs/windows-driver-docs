@@ -1,5 +1,5 @@
 ---
-title: DocumentParameters element
+title: DocumentParameters Element
 description: The optional DocumentParameters element specifies the image processing functions to apply to documents in a job.
 keywords: ["DocumentParameters element Imaging Devices"]
 topic_type:

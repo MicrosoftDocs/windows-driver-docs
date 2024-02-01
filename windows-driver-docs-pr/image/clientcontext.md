@@ -1,5 +1,5 @@
 ---
-title: ClientContext element
+title: ClientContext Element
 description: The required ClientContext element specifies a client-specific string.
 keywords: ["ClientContext element Imaging Devices"]
 topic_type:

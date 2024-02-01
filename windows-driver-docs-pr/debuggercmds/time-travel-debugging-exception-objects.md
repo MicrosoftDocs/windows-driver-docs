@@ -1,6 +1,7 @@
 ---
 title: TTD Exception Objects
 description: This section describes the exception model objects associated with time travel debugging.
+keywords: ["TTD Exception Objects", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
 ms.date: 09/24/2017
 ---
 
@@ -10,7 +11,6 @@ ms.date: 09/24/2017
 ## Description
 
 *TTD Exception* objects are used to give information about exceptions that happened during a trace session.
-
 
 ## Properties
 

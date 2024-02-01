@@ -1,5 +1,5 @@
 ---
-title: Defining the geolocation sensor as an object
+title: Defining the Geolocation Sensor as an Object
 description: The sensors geolocation driver sample treats its simulated geolocation-sensor as an object.
 ms.date: 03/21/2023
 ---

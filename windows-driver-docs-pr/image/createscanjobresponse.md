@@ -1,5 +1,5 @@
 ---
-title: CreateScanJobResponse element
+title: CreateScanJobResponse Element
 description: The required CreateScanJobResponse element contains the WSD Scan Service's response to a client's scan request.
 keywords: ["CreateScanJobResponse element Imaging Devices"]
 topic_type:

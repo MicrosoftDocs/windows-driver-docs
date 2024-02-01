@@ -1,5 +1,5 @@
 ---
-title: IOMMU DMA remapping
+title: IOMMU DMA Remapping
 description: In the IOMMU model, each process has a single virtual address space that is shared between the CPU and graphics processing unit (GPU) and is managed by the OS memory manager.
 ms.date: 08/31/2023
 ---

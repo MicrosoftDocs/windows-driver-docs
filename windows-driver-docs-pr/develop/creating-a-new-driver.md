@@ -1,5 +1,5 @@
 ---
-title: Creating a new device function driver
+title: Creating a New Device Function Driver
 description: In this article, we explain how to use Visual Studio to start writing a new device function driver.
 ms.date: 04/05/2023
 ---

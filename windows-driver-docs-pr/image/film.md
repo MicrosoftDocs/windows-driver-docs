@@ -1,5 +1,5 @@
 ---
-title: Film element
+title: Film Element
 description: The optional Film element describes the capabilities of the film scanning option that is attached to the scanner.
 keywords: ["Film element Imaging Devices"]
 topic_type:

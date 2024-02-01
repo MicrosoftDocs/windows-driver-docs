@@ -1,5 +1,5 @@
 ---
-title: ScannerStatusSummaryEvent element
+title: ScannerStatusSummaryEvent Element
 description: The required ScannerStatusSummaryEvent element informs the client that the scan device's status has changed.
 keywords: ["ScannerStatusSummaryEvent element Imaging Devices"]
 topic_type:

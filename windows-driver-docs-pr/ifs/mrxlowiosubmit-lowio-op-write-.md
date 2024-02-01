@@ -1,5 +1,5 @@
 ---
-title: MRxLowIOSubmit\ LOWIO\_OP\_WRITE\ routine
+title: MRxLowIOSubmit[LOWIO_OP_WRITE] Routine
 description: The MRxLowIOSubmit\ LOWIO\_OP\_WRITE\ routine is called by RDBSS to issue a write request to the network mini-redirector.
 keywords: ["MRxLowIOSubmit LOWIO_OP_WRITE routine Installable File System Drivers", "PMRX_CALLDOWN"]
 topic_type:

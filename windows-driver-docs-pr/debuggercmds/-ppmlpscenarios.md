@@ -21,7 +21,7 @@ The **!ppmlpscenarios** command displays per-scenario policy overrides.
 !ppmlpscenarios
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 None
 
@@ -29,7 +29,7 @@ This command is supported on the following versions of Windows:
 
 - Windows 8
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Kdexts.dll 
 

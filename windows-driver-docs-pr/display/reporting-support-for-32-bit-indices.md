@@ -1,5 +1,5 @@
 ---
-title: Reporting Support for 32-bit Indices
+title: Reporting Support for 32-Bit Indices
 description: Reporting Support for 32-bit Indices
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , index buffers

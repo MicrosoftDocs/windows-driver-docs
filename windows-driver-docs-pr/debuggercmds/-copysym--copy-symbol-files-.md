@@ -21,7 +21,7 @@ The **.copysym** command copies the current symbol files to the specified direct
     .copysym [/l] Path
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="________l______"></span><span id="________L______"></span> **/l**   

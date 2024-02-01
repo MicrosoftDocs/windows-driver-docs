@@ -1,5 +1,5 @@
 ---
-title: DD_DXAPI_GET_LAST_VP_AUTOFLIP_SURFACE control code (Windows Drivers)
+title: DD_DXAPI_GET_LAST_VP_AUTOFLIP_SURFACE Control Code (Windows Drivers)
 description: Learn more about the DD_DXAPI_GET_LAST_VP_AUTOFLIP_SURFACE control code.
 keywords:
 - DD_DXAPI_GET_LAST_VP_AUTOFLIP_SURFACE

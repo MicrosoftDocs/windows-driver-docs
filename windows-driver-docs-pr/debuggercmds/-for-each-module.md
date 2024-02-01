@@ -161,7 +161,7 @@ These aliases are available only during the lifetime of the call to **!for\_each
 <span id="_______-_______"></span> -?   
 Displays some Help text for this extension in the [Debugger Command window](../debugger/debugger-command-window.md).
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

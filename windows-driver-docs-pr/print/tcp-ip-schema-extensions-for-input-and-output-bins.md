@@ -8,48 +8,24 @@ keywords:
 - InputBin construct
 - output bins WDK printer
 - input bins WDK printer
-ms.date: 04/20/2017
+ms.date: 01/31/2024
 ---
 
-# TCP/IP Schema Extensions for Input and Output Bins
-
+# TCP/IP schema extensions for input and output bins
 
 The Tcpbidi.xsd file, which is used to extend the bidi schema, defines two constructs, InputBin and OutputBin, that implement extensions that are related to specific printer input and output bins. InputBin and OutputBin constructs both have the following available attributes.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>name</strong></p></td>
-<td><p>The bidi schema name of the bin.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>mibName</strong></p></td>
-<td><p>The MIB name of the bin.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>refreshInterval</strong></p></td>
-<td><p>(Optional) The value of the polling interval, in seconds. The default value is 600 seconds.</p></td>
-</tr>
-</tbody>
-</table>
+| Attribute | Meaning |
+|--|--|
+| **name** | The bidi schema name of the bin. |
+| **mibName** | The MIB name of the bin. |
+| **refreshInterval** | (Optional) The value of the polling interval, in seconds. The default value is 600 seconds. |
 
- 
-
-### Code Example
+## Code example
 
 The following code example shows how the InputBin and OutputBin constructs can be used to identify two input bins and one output bin.
 
-```cpp
+```xml
 <Property name="Printer">
   <Property name="Layout">
     <Property name="InputBins">
@@ -67,16 +43,8 @@ The following code example shows how the InputBin and OutputBin constructs can b
 
 This section includes the following topics.
 
-[Implicit Bin Extensions](implicit-bin-extensions.md)
+[Implicit bin extensions](implicit-bin-extensions.md)
 
-[Explicit Bin Extensions](explicit-bin-extensions.md)
+[Explicit bin extensions](explicit-bin-extensions.md)
 
-[Driver-Specific Bins](driver-specific-bins.md)
-
- 
-
- 
-
-
-
-
+[Driver-specific bins](driver-specific-bins.md)

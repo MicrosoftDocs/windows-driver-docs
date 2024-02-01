@@ -1,5 +1,5 @@
 ---
-title: Geolocation sample driver file list
+title: Geolocation Sample Driver File List
 description: The source file of the geolocation driver sample includes the following categories of files.
 ms.date: 03/21/2023
 ---

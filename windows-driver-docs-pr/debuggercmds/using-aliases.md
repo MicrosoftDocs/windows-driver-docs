@@ -1,14 +1,11 @@
 ---
 title: Using Aliases
 description: Using Aliases
+keywords: ["Using Aliases", "WinDbg", "Windows Debugging"]
 ms.date: 11/28/2017
 ---
 
 # Using Aliases
-
-
-## <span id="ddk_using_aliases_dbg"></span><span id="DDK_USING_ALIASES_DBG"></span>
-
 
 *Aliases* are character strings that are automatically replaced with other character strings. You can use them in debugger commands and to avoid retyping certain common phrases.
 
@@ -22,7 +19,7 @@ The debugger supports three kinds of aliases:
 
 -   The debugger sets and names *automatic aliases*.
 
-### <span id="defining_a_user_named_alias"></span><span id="DEFINING_A_USER_NAMED_ALIAS"></span>Defining a User-Named Alias
+## Defining a User-Named Alias
 
 When you define a user-named alias, you can choose the alias name and the alias equivalent:
 
@@ -38,7 +35,7 @@ To remove an alias, use the [**ad (Delete Alias)**](ad--delete-alias-.md) comman
 
 To list all current user-named aliases, use the [**al (List Aliases)**](al--list-aliases-.md) command.
 
-### <span id="defining_a_fixed_name_alias"></span><span id="DEFINING_A_FIXED_NAME_ALIAS"></span>Defining a Fixed-Name Alias
+## Defining a Fixed-Name Alias
 
 There are 10 fixed-name aliases. Their alias names are **$u0**, **$u1**, ..., **$u9**. Their alias equivalents can be any string that does not contain the ENTER keystroke.
 
@@ -50,7 +47,7 @@ Use the [**r (Registers)**](r--registers-.md) command to define the alias equiva
 
 By default, if you do not define a fixed-name alias, it is an empty string.
 
-### <span id="automatic_aliases"></span><span id="AUTOMATIC_ALIASES"></span>Automatic Aliases
+## Automatic Aliases
 
 The debugger sets the following automatic aliases.
 
@@ -101,7 +98,7 @@ The debugger sets the following automatic aliases.
 
 Automatic aliases are similar to [automatic pseudo-registers](pseudo-register-syntax.md), except that you can use automatic aliases with alias-related tokens (such as **${ }**), while you cannot use pseudo-registers with these tokens.
 
-### <span id="using_an_alias_in_the_debugger_command_window"></span><span id="USING_AN_ALIAS_IN_THE_DEBUGGER_COMMAND_WINDOW"></span>Using an Alias in the Debugger Command Window
+## Using an Alias in the Debugger Command Window
 
 After you define an alias, you can use it in any command entry. The alias name is automatically replaced with the alias equivalent. Therefore, you can use the alias as an expression or as a macro.
 
@@ -119,7 +116,7 @@ A fixed-name alias expands correctly from any point within a line, regardless of
 
 You cannot use commands that are available only in WinDbg ([**.open**](-open--open-source-file-.md), [**.write\_cmd\_hist (Write Command History)**](-write-cmd-hist--write-command-history-.md), [**.lsrcpath**](-srcpath---lsrcpath--set-source-path-.md), and [**.lsrcfix**](-srcfix---lsrcfix--use-source-server-.md)) and a few additional commands ([**.hh**](-hh--open-html-help-file-.md), [**.cls**](-cls--clear-screen-.md), [**.wtitle**](-wtitle--set-window-title-.md), [**.remote**](-remote--create-remote-exe-server-.md), kernel-mode [**.restart**](-restart--restart-kernel-connection-.md), and user-mode [**.restart**](-restart--restart-target-application-.md)) with aliases.
 
-### <span id="using_an_alias_in_a_script_file"></span><span id="USING_AN_ALIAS_IN_A_SCRIPT_FILE"></span>Using an Alias in a Script File
+## Using an Alias in a Script File
 
 When you use an alias in a script file, you must take special care to make sure that the alias is expanded at the correct time. Consider the following script:
 
@@ -169,7 +166,7 @@ With the altered script, we get the following correct output.
 
 For more information, see [**.block**](-block.md) and [**${ } (Alias Interpreter)**](-------alias-interpreter-.md).
 
-### <span id="Using_a_.foreach_Token_in_an_Alias"></span><span id="using_a_.foreach_token_in_an_alias"></span><span id="USING_A_.FOREACH_TOKEN_IN_AN_ALIAS"></span>Using a .foreach Token in an Alias
+## Using a .foreach Token in an Alias
 
 When you use a [**.foreach**](-foreach.md) token in the definition of an alias, you must take special care to ensure that the token is expanded. Consider the following sequence of commands.
 
@@ -205,7 +202,7 @@ Now we get the expected output.
  myAlias          5 
 ```
 
-### <span id="recursive_aliases"></span><span id="RECURSIVE_ALIASES"></span>Recursive Aliases
+## Recursive Aliases
 
 You can use a fixed-name alias in the definition of any alias. You can also use a user-named alias in the definition of a fixed-name alias. However, to use a user-named alias in the definition of another user-named alias, you have to add a semicolon before the **as** or **aS** command, or else the alias replacement does not occur on that line.
 
@@ -238,7 +235,7 @@ The following example is also permitted and displays **9**.
 Evaluate expression: 9 = 00000009
 ```
 
-### <span id="examples"></span><span id="EXAMPLES"></span>Examples
+## Alias Examples
 
 You can use aliases so that you do not have to type long or complex symbol names, as in the following example.
 
@@ -282,7 +279,7 @@ Both of the preceding examples are equivalent to the following command.
 0:000> bp MyApi "dd esp 14; g"
 ```
 
-### <span id="tools_ini_file"></span><span id="TOOLS_INI_FILE"></span> Tools.ini File
+## Tools.ini File
 
 In CDB (and NTSD), you can predefine fixed-name aliases in the [tools.ini](../debugger/configuring-tools-ini.md) file. To predefine a fixed-name alias, add the **$u** fields that you want to your \[NTSD\] entry, as in the following example.
 
@@ -295,19 +292,10 @@ $u9:$u1 + 42
 
 You cannot set user-named aliases in the Tools.ini file.
 
-### <span id="fixed_name_aliases_vs__user_named_aliases"></span><span id="FIXED_NAME_ALIASES_VS__USER_NAMED_ALIASES"></span>Fixed-Name Aliases vs. User-Named Aliases
+## Fixed-Name Aliases vs. User-Named Aliases
 
 User-name aliases are easier to use than fixed-named aliases. Their definition syntax is simpler, and you can list them by using the [**al (List Aliases)**](al--list-aliases-.md) command.
 
 Fixed-named aliases are replaced if they are used next to other text. To make a user-named alias be replaced when it is next to other text, enclose it in the [**${ } (Alias Interpreter)**](-------alias-interpreter-.md) token.
 
 Fixed-name alias replacement occurs before user-named alias replacement.
-
- 
-
- 
-
-
-
-
-

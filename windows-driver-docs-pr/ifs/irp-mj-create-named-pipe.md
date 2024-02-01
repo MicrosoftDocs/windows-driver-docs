@@ -1,5 +1,5 @@
 ---
-title: IRP_MJ_CREATE_NAMED_PIPE (FS and filter drivers)
+title: IRP_MJ_CREATE_NAMED_PIPE (FS and Filter Drivers)
 description: IRP_MJ_CREATE_NAMED_PIPE
 keywords: ["IRP_MJ_CREATE_NAMED_PIPE File System Drivers"]
 topic_type:

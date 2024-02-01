@@ -1,5 +1,5 @@
 ---
-title: GetActiveJobsResponse element
+title: GetActiveJobsResponse Element
 description: The required GetActiveJobsResponse element returns a summary of job-related variables for all currently active scan jobs.
 keywords: ["GetActiveJobsResponse element Imaging Devices"]
 topic_type:

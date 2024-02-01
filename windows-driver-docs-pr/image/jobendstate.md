@@ -1,5 +1,5 @@
 ---
-title: JobEndState element
+title: JobEndState Element
 description: The required JobEndState element describes the final state of the current scan job.
 keywords: ["JobEndState element Imaging Devices"]
 topic_type:

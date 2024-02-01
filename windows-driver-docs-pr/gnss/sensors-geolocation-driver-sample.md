@@ -1,5 +1,5 @@
 ---
-title: Geolocation driver sample for Windows 8.1
+title: Geolocation Driver Sample for Windows 8.1
 description: The geolocation sample driver for Windows 8.1 demonstrates a sensor driver for a Global Positioning System (GPS) device.
 keywords:
 - GPS

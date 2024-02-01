@@ -1,5 +1,5 @@
 ---
-title: DeinterlaceCloseStream method
+title: DeinterlaceCloseStream Method
 description: The sample DXVA\_DeinterlaceBobDeviceClass::DeinterlaceCloseStream function closes the deinterlace stream object and instructs the device driver to release any hardware resource associated with the stream.
 keywords: ["DeinterlaceCloseStream method Display Devices", "DeinterlaceCloseStream method Display Devices , DXVA_DeinterlaceBobDeviceClass interface", "DXVA_DeinterlaceBobDeviceClass interface Display Devices , DeinterlaceCloseStream method"]
 topic_type:

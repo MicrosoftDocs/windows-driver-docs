@@ -1,5 +1,5 @@
 ---
-title: FsRtlExitFileSystem function
+title: FsRtlExitFileSystem Function
 description: Learn more about the FsRtlExitFileSystem macro.
 keywords: ["FsRtlExitFileSystem function Installable File System Drivers"]
 topic_type:

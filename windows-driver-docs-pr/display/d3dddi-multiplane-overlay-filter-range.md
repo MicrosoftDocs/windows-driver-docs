@@ -1,5 +1,5 @@
 ---
-title: D3DDDI\_MULTIPLANE\_OVERLAY\_FILTER\_RANGE structure
+title: D3DDDI_MULTIPLANE_OVERLAY_FILTER_RANGE Structure
 description: Learn about the D3DDDI\_MULTIPLANE\_OVERLAY\_FILTER\_RANGE structure, which is reserved for system use. Do not use it in your driver.
 keywords: ["D3DDDI_MULTIPLANE_OVERLAY_FILTER_RANGE structure Display Devices"]
 topic_type:

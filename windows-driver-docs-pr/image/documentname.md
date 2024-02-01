@@ -1,5 +1,5 @@
 ---
-title: DocumentName element
+title: DocumentName Element
 description: The required DocumentName element contains the name of the document that the client supplies.
 keywords: ["DocumentName element Imaging Devices"]
 topic_type:

@@ -1,5 +1,5 @@
 ---
-title: JobToken element
+title: JobToken Element
 description: The required JobToken element contains the device-created token for a new scan job.
 keywords: ["JobToken element Imaging Devices"]
 topic_type:

@@ -23,7 +23,7 @@ The **.idle\_cmd** command sets the *idle command*. This is a command that is ex
 .idle_cmd /d
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______String______"></span><span id="_______string______"></span><span id="_______STRING______"></span> *String*   

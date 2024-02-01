@@ -1,5 +1,5 @@
 ---
-title: Microsoft Compute Driver Model overview
+title: Microsoft Compute Driver Model Overview
 description: Overview of Microsoft Compute Driver Model
 ms.date: 12/01/2022
 ---

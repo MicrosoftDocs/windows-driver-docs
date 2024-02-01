@@ -30,7 +30,7 @@ Specifies the trace session. *LoggerID* is an ordinal number that the system ass
 <span id="_______LoggerName______"></span><span id="_______loggername______"></span><span id="_______LOGGERNAME______"></span> *LoggerName*   
 Specifies the trace session. *LoggerName* is the text name that was specified when the trace session was started.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 This extension is exported by Wmitrace.dll.
 

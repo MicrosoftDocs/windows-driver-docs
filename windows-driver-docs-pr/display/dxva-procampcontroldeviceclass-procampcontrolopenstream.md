@@ -1,5 +1,5 @@
 ---
-title: ProcAmpControlOpenStream method
+title: ProcAmpControlOpenStream Method
 description: The sample DXVA\_ProcAmpControlDeviceClass::ProcAmpControlOpenStream function creates a ProcAmp stream object.
 keywords: ["ProcAmpControlOpenStream method Display Devices", "ProcAmpControlOpenStream method Display Devices , DXVA_ProcAmpControlDeviceClass interface", "DXVA_ProcAmpControlDeviceClass interface Display Devices , ProcAmpControlOpenStream method"]
 topic_type:

@@ -1,5 +1,5 @@
 ---
-title: ACPI_METHOD_SET_ARGUMENT_INTEGER macro
+title: ACPI_METHOD_SET_ARGUMENT_INTEGER Macro
 description: The ACPI_METHOD_SET_ARGUMENT_INTEGER macro sets the members of an ACPI_METHOD_ARGUMENT structure for a single integer value.
 keywords: 
 - ACPI_METHOD_SET_ARGUMENT_INTEGER macro ACPI Devices

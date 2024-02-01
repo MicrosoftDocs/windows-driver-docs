@@ -1,5 +1,5 @@
 ---
-title: PlatenMinimumSize element
+title: PlatenMinimumSize Element
 description: The required PlatenMinimumSize element specifies the smallest size document that an end user can scan on the flatbed platen.
 keywords: ["PlatenMinimumSize element Imaging Devices"]
 topic_type:

@@ -1,5 +1,5 @@
 ---
-title: Installing the radio manager DLL
+title: Installing the Radio Manager DLL
 description: To install the radio manager DLL, you'll need to follow the steps below.
 ms.date: 03/21/2023
 ---

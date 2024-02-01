@@ -1,5 +1,5 @@
 ---
-title: What's new for Windows 7 display drivers (WDDM 1.1)
+title: What's New for Windows 7 Display Drivers (WDDM 1.1)
 description: What's new for Windows 7 display drivers (WDDM 1.1)
 ms.date: 04/20/2017
 ---

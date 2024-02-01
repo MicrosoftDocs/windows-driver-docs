@@ -1,5 +1,5 @@
 ---
-title: Cancellation of data transfers in Windows Vista
+title: Cancellation of Data Transfers in Windows Vista
 description: Cancellation of data transfers in Windows Vista
 ms.date: 03/28/2023
 ---
