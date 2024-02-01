@@ -1,5 +1,5 @@
 ---
-title: Install a boot-start driver
+title: Install a Boot-Start Driver
 description: Provides information about how to install a boot-start driver.
 keywords:
 - Device setup WDK device installations, boot drivers

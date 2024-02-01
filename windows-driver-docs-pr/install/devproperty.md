@@ -1,5 +1,5 @@
 ---
-title: DEVPROPERTY structure (Windows Drivers)
+title: DEVPROPERTY Structure (Windows Drivers)
 description: Learn more about the DEVPROPERTY structure.
 keywords:
 - DEVPROP_TYPE_GUID

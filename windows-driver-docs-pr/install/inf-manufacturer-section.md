@@ -1,5 +1,5 @@
 ---
-title: INF Manufacturer section
+title: INF Manufacturer Section
 description: The Manufacturer section identifies the manufacturer of one or more devices that can be installed by using the INF file.
 keywords:
 - INF Manufacturer Section Device and Driver Installation

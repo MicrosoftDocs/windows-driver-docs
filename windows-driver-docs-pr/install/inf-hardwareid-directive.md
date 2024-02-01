@@ -1,5 +1,5 @@
 ---
-title: INF HardwareId directive
+title: INF HardwareId Directive
 description: The Found New Hardware Wizard and Hardware Update Wizard support INF HardwareId directives in the [DeviceInstall] section of an Autorun.inf file.
 keywords:
 - INF HardwareId Directive Device and Driver Installation

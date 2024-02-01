@@ -1,5 +1,5 @@
 ---
-title: INF Version section
+title: INF Version Section
 description: By convention, the Version section appears first in INF files. Every INF file must have this section.
 keywords:
 - INF Version Section Device and Driver Installation

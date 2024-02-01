@@ -1,5 +1,5 @@
 ---
-title: Format of Log Entries That Are Not Part of a Text Log Section
+title: Format of Log Entries that are Not Part of a Text Log Section
 description: Format of Log Entries That Are Not Part of a Text Log Section
 keywords:
 - formats WDK SetupAPI logging

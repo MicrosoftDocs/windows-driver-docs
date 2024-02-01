@@ -1,5 +1,5 @@
 ---
-title: INF File Entry Values That Modify Device Properties
+title: INF File Entry Values that Modify Device Properties
 description: INF File Entry Values That Modify Device Properties
 ms.date: 04/20/2017
 ---

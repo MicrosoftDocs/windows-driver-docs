@@ -1,5 +1,5 @@
 ---
-title: Accessing device driver properties
+title: Accessing Device Driver Properties
 description: Provides information about accessing device driver properties.
 ms.date: 08/15/2022
 ---

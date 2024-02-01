@@ -1,5 +1,5 @@
 ---
-title: Opening a device's software key
+title: Opening a Device'S Software Key
 description: Provides information about opening a device's software key.
 keywords:
 - software keys WDK device installations

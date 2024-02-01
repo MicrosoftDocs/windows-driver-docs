@@ -1,5 +1,5 @@
 ---
-title: Determining Whether a Device Is Plugged In
+title: Determining Whether a Device is Plugged in
 description: Determining Whether a Device Is Plugged In
 keywords:
 - reinstalling unplugged devices

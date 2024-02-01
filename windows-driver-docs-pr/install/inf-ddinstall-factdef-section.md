@@ -1,5 +1,5 @@
 ---
-title: INF DDInstall.FactDef section
+title: INF DDInstall.FactDef Section
 description: This section should be used in an INF for any manually installed non-PnP device that an end-user might install.
 keywords:
 - INF DDInstall.FactDef Section Device and Driver Installation

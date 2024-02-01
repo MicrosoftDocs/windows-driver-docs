@@ -1,5 +1,5 @@
 ---
-title: Setup classes vs. interface classes
+title: Setup Classes Vs. Interface Classes
 description: Learn more about setup classes vs. interface classes
 keywords:
 - device interface classes WDK device installations

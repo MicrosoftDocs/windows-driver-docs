@@ -1,5 +1,5 @@
 ---
-title: Device Installation Application Started through AutoRun
+title: Device Installation Application Started Through AutoRun
 description: Device Installation Application Started through AutoRun
 ms.date: 04/20/2017
 ---

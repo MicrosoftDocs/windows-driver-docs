@@ -1,5 +1,5 @@
 ---
-title: INF AddInterface directive
+title: INF AddInterface Directive
 description: One or more AddInterface directives can be specified within an INF DDInstall.Interfaces section.
 keywords:
 - INF AddInterface Directive Device and Driver Installation

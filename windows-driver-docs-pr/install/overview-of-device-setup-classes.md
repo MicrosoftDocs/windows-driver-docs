@@ -1,5 +1,5 @@
 ---
-title: Overview of device setup classes
+title: Overview of Device Setup Classes
 description: Learn more about device setup classes
 ms.date: 04/11/2022
 ---

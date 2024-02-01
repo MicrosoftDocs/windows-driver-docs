@@ -1,5 +1,5 @@
 ---
-title: INF DDInstall.Interfaces section
+title: INF DDInstall.Interfaces Section
 description: A per-Models DDInstall.Interfaces section can have one or more AddInterface directives, depending on how many device interfaces a particular device/driver supports.
 keywords:
 - INF DDInstall.Interfaces Section Device and Driver Installation

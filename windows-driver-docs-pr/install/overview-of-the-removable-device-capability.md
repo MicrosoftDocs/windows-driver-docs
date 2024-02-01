@@ -1,5 +1,5 @@
 ---
-title: Overview of removable device capability
+title: Overview of Removable Device Capability
 description: Overview of the removable device capability
 ms.date: 04/08/2022
 ---

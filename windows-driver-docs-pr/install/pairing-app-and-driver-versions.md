@@ -1,5 +1,5 @@
 ---
-title: Pairing a driver with a Universal Windows Platform (UWP) app
+title: Pairing a Driver with a Universal Windows Platform (UWP) App
 description: This topic describes how to specify that a Universal Windows Platform (UWP) app should only load if a specific driver is present.
 ms.date: 11/18/2021
 ---

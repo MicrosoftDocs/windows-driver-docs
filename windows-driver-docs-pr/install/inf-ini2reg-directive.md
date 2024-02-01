@@ -1,5 +1,5 @@
 ---
-title: INF Ini2Reg directive
+title: INF Ini2Reg Directive
 description: An Ini2Reg directive references one or more named sections in which lines or sections from a supplied INI file are moved into the registry. This creates or replaces one or more value entries under a specified key.
 keywords:
 - INF Ini2Reg Directive Device and Driver Installation
