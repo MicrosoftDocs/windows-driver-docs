@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_JACK Enumeration
+title: KSPROPERTY_JACK Enumeration
 description: The KSPROPERTY\_JACK enumeration defines new property IDs that are used by audio jack structures.
 keywords: ["KSPROPERTY_JACK enumeration Audio Devices"]
 topic_type:
