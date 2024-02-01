@@ -1,5 +1,5 @@
 ---
-title: Timeout detection and recovery (TDR)
+title: Timeout Detection and Recovery (TDR)
 description: Describes timeout detection and recovery (TDR) for the Windows Display Driver Model (WDDM)
 keywords:
 - TDR (timeout detection and recovery) WDK display drivers

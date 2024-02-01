@@ -1,5 +1,5 @@
 ---
-title: DD_DXAPI_SET_VP_SKIP_FIELD control code (Windows Drivers)
+title: DD_DXAPI_SET_VP_SKIP_FIELD Control Code (Windows Drivers)
 description: Learn more about the DD_DXAPI_SET_VP_SKIP_FIELD control code.
 keywords:
 - DD_DXAPI_SET_VP_SKIP_FIELD

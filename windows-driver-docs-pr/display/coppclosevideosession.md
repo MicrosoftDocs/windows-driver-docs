@@ -1,5 +1,5 @@
 ---
-title: COPPCloseVideoSession function
+title: COPPCloseVideoSession Function
 description: The sample COPPCloseVideoSession function closes the COPP DirectX VA device object that is used for the current video session.
 keywords:
 - copy protection WDK COPP , video miniport driver code template

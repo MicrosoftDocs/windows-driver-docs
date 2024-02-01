@@ -1,5 +1,5 @@
 ---
-title: DD_DXAPI_OPENSURFACE control code (Windows Drivers)
+title: DD_DXAPI_OPENSURFACE Control Code (Windows Drivers)
 description: Learn more about the DD_DXAPI_OPENSURFACE control code.
 keywords:
 - DD_DXAPI_OPENSURFACE

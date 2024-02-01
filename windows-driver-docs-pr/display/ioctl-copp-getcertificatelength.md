@@ -1,5 +1,5 @@
 ---
-title: IOCTL\_COPP\_GetCertificateLength control code
+title: IOCTL_COPP_GetCertificateLength Control Code
 description: Returns the size, in bytes, of the certificate used by the graphics hardware.
 keywords: ["IOCTL_COPP_GetCertificateLength control code Display Devices"]
 topic_type:

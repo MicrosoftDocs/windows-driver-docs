@@ -1,5 +1,5 @@
 ---
-title: Indirect display driver model overview
+title: Indirect Display Driver Model Overview
 description: The indirect display driver model provides a simple user mode driver model to support monitors that aren't connected to traditional GPU display outputs.
 keywords:
 - IddCx

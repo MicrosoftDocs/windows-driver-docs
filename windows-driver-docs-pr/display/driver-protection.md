@@ -1,5 +1,5 @@
 ---
-title: Driver protection
+title: Driver Protection
 description: Along with every virtual address, the video memory manager allows independent hardware vendors (IHVs) to define a driver / hardware specific protection (i.e.
 ms.date: 04/20/2017
 ---

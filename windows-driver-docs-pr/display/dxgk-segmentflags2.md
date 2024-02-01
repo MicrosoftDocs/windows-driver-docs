@@ -1,5 +1,5 @@
 ---
-title: DXGK\_SEGMENTFLAGS2 structure
+title: DXGK_SEGMENTFLAGS2 Structure
 description: The DXGK\_SEGMENTFLAGS2 structure is reserved for system use. Do not use it in your driver.
 keywords: ["DXGK_SEGMENTFLAGS2 structure Display Devices"]
 topic_type:

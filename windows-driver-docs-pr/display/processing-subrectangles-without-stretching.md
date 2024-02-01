@@ -1,5 +1,5 @@
 ---
-title: Processing Subrectangles without Stretching
+title: Processing Subrectangles Without Stretching
 description: Processing Subrectangles without Stretching
 keywords:
 - deinterlacing WDK DirectX VA , subrectangular processing

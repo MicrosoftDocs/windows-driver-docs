@@ -1,5 +1,5 @@
 ---
-title: Multiplane overlay resource creation
+title: Multiplane Overlay Resource Creation
 description: When multiplane overlays are used, these requirements apply to allocations that are created within Microsoft DirectX apps.
 ms.date: 04/20/2017
 ---

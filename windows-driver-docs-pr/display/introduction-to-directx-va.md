@@ -1,5 +1,5 @@
 ---
-title: DXVA v1.0 support overview
+title: DXVA V1.0 Support Overview
 description: Introduction to DirectX VA
 keywords:
 - DirectX Video Acceleration WDK Windows 2000 display , about DirectX Video Acceleration
