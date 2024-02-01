@@ -1,5 +1,5 @@
 ---
-title: WIA transfer constants
+title: WIA Transfer Constants
 description: WIA transfer constants
 ms.date: 05/11/2023
 ---

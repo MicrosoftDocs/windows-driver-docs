@@ -1,5 +1,5 @@
 ---
-title: ADFSupportsDuplex element
+title: ADFSupportsDuplex Element
 description: The required ADFSupportsDuplex element specifies whether the attached automatic document feeder (ADF) supports scanning both sides of the media.
 keywords: ["ADFSupportsDuplex element Imaging Devices"]
 topic_type:

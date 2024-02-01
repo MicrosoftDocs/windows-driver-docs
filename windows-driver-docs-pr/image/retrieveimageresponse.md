@@ -1,5 +1,5 @@
 ---
-title: RetrieveImageResponse element
+title: RetrieveImageResponse Element
 description: The required RetrieveImageResponse operation element returns the scan data to the client.
 keywords: ["RetrieveImageResponse element Imaging Devices"]
 topic_type:

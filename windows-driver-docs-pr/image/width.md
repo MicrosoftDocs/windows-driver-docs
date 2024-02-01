@@ -1,5 +1,5 @@
 ---
-title: Width element
+title: Width Element
 description: The required Width element specifies a width value that the scan device supports for scanner configuration elements that require a Width.
 keywords: ["Width element Imaging Devices"]
 topic_type:

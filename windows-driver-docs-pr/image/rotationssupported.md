@@ -1,5 +1,5 @@
 ---
-title: RotationsSupported element
+title: RotationsSupported Element
 description: The required RotationsSupported element contains the list of rotation values that the scanner supports for rotating each image of a scanned document.
 keywords: ["RotationsSupported element Imaging Devices"]
 topic_type:

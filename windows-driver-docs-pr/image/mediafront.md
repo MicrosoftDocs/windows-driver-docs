@@ -1,5 +1,5 @@
 ---
-title: MediaFront element
+title: MediaFront Element
 description: The required MediaFront element contains all parameters that are specific to the scanning of the front side of the physical media.
 keywords: ["MediaFront element Imaging Devices"]
 topic_type:

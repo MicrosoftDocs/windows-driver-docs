@@ -1,5 +1,5 @@
 ---
-title: IWiaLog COM interface
+title: IWiaLog COM Interface
 description: IWiaLog COM interface
 ms.date: 05/03/2023
 ---

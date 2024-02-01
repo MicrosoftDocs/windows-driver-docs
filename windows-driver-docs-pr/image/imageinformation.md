@@ -1,5 +1,5 @@
 ---
-title: ImageInformation element
+title: ImageInformation Element
 description: The required ImageInformation element contains information about the resulting image data from a scan made with a ScanTicket element that is currently being validated.
 keywords: ["ImageInformation element Imaging Devices"]
 topic_type:

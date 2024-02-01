@@ -1,5 +1,5 @@
 ---
-title: ValidTicket element
+title: ValidTicket Element
 description: The required ValidTicket element indicates whether a client's ScanTicket was valid.
 keywords: ["ValidTicket element Imaging Devices"]
 topic_type:

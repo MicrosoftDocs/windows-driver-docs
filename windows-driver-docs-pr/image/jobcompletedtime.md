@@ -1,5 +1,5 @@
 ---
-title: JobCompletedTime element
+title: JobCompletedTime Element
 description: The optional JobCompletedTime element specifies the time at which the scan job was completed.
 keywords: ["JobCompletedTime element Imaging Devices"]
 topic_type:

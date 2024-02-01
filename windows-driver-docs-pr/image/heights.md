@@ -1,5 +1,5 @@
 ---
-title: Heights element
+title: Heights Element
 description: The required Heights element contains the list of heights at which the scanner can scan images.
 keywords: ["Heights element Imaging Devices"]
 topic_type:

@@ -1,5 +1,5 @@
 ---
-title: ADFFront element
+title: ADFFront Element
 description: The required ADFFront element describes the capabilities of the front side of the automatic document feeder (ADF) that is attached to the scanner.
 keywords: ["ADFFront element Imaging Devices"]
 topic_type:

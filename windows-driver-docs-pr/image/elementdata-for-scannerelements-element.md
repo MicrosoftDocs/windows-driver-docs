@@ -1,5 +1,5 @@
 ---
-title: ElementData for ScannerElements element
+title: ElementData for ScannerElements Element
 description: The required ElementData element contains the data that is returned for a scanner-related schema request.
 keywords: ["ElementData for ScannerElements element Imaging Devices"]
 topic_type:

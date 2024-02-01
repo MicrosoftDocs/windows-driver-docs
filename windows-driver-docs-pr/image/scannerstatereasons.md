@@ -1,5 +1,5 @@
 ---
-title: ScannerStateReasons element
+title: ScannerStateReasons Element
 description: The required ScannerStateReasons element is a list of ScannerStateReason elements that describes all of the reasons why the scanner is in its current state.
 keywords: ["ScannerStateReasons element Imaging Devices"]
 topic_type:

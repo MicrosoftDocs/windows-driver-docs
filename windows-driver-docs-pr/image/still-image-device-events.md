@@ -1,5 +1,5 @@
 ---
-title: Still image device events
+title: Still Image Device Events
 description: Still image device events
 ms.date: 05/02/2023
 ---

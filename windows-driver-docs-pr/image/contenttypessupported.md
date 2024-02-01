@@ -1,5 +1,5 @@
 ---
-title: ContentTypesSupported element
+title: ContentTypesSupported Element
 description: The required ContentTypesSupported element contains a list of keywords that describe the different document content types that the scanner supports.
 keywords: ["ContentTypesSupported element Imaging Devices"]
 topic_type:

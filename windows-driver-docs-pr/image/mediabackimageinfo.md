@@ -1,5 +1,5 @@
 ---
-title: MediaBackImageInfo element
+title: MediaBackImageInfo Element
 description: The optional MediaBackImageInfo element contains the image information for the back side of an ADF duplex scan.
 keywords: ["MediaBackImageInfo element Imaging Devices"]
 topic_type:

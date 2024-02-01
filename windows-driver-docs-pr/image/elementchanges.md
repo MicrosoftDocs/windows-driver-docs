@@ -1,5 +1,5 @@
 ---
-title: ElementChanges element
+title: ElementChanges Element
 description: The required ElementChanges element contains the changes to the ScannerDescription, ScannerConfiguration, DefaultScanTicket, and vendor-extended elements.
 keywords: ["ElementChanges element Imaging Devices"]
 topic_type:

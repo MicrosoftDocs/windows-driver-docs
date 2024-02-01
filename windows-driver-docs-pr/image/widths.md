@@ -1,5 +1,5 @@
 ---
-title: Widths element
+title: Widths Element
 description: The required Widths element contains the list of widths at which the scanner can scan images.
 keywords: ["Widths element Imaging Devices"]
 topic_type:

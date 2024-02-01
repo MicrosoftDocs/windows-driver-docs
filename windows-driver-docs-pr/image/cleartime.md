@@ -1,5 +1,5 @@
 ---
-title: ClearTime element
+title: ClearTime Element
 description: The required ClearTime element specifies the time at which a condition was cleared.
 keywords: ["ClearTime element Imaging Devices"]
 topic_type:

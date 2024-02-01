@@ -1,5 +1,5 @@
 ---
-title: WIA components
+title: WIA Components
 description: WIA components
 ms.date: 05/04/2023
 ---

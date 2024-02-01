@@ -1,5 +1,5 @@
 ---
-title: DocumentSizeAutoDetect element
+title: DocumentSizeAutoDetect Element
 description: The optional DocumentSizeAutoDetect element specifies whether the scan device automatically determines the size of the original scan media.
 keywords: ["DocumentSizeAutoDetect element Imaging Devices"]
 topic_type:

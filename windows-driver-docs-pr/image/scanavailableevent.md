@@ -1,5 +1,5 @@
 ---
-title: ScanAvailableEvent element
+title: ScanAvailableEvent Element
 description: The required ScanAvailableEvent element informs a client that a scan device to which the client is subscribed is ready to scan a job.
 keywords: ["ScanAvailableEvent element Imaging Devices"]
 topic_type:

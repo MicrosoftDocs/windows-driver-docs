@@ -1,5 +1,5 @@
 ---
-title: FilmMaximumSize element
+title: FilmMaximumSize Element
 description: The required FilmMaximumSize element specifies the largest size original that an end user can scan with the film scanning input source.
 keywords: ["FilmMaximumSize element Imaging Devices"]
 topic_type:
