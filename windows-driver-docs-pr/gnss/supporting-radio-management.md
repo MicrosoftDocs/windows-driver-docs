@@ -1,5 +1,5 @@
 ---
-title: Supporting radio management
+title: Supporting Radio Management
 description: When the user chooses the Wireless option in PC settings on their Windows 8 laptop, notebook, or tablet, they can turn any connected wireless devices on or off.
 keywords:
 - radio management API
