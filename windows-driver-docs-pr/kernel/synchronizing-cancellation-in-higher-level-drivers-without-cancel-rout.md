@@ -1,5 +1,5 @@
 ---
-title: Synchronizing Cancellation in Higher-Level Drivers without Cancel Routines
+title: Synchronizing Cancellation in Higher-Level Drivers Without Cancel Routines
 description: Synchronizing Cancellation in Higher-Level Drivers without Cancel Routines
 ms.date: 10/17/2018
 ---

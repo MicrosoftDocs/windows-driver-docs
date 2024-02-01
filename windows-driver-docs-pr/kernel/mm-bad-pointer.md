@@ -1,5 +1,5 @@
 ---
-title: MM_BAD_POINTER macro
+title: MM_BAD_POINTER Macro
 description: MM_BAD_POINTER macro
 ms.date: 07/16/2021
 ms.topic: reference

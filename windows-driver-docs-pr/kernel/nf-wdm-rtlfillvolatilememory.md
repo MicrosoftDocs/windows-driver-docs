@@ -1,5 +1,5 @@
 ---
-title: RtlFillVolatileMemory function (wdm.h)
+title: RtlFillVolatileMemory Function (Wdm.H)
 ms.date: 01/04/2024
 description: This article describes the RtlFillVolatileMemory function (wdm.h).
 ---

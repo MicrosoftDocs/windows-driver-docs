@@ -1,5 +1,5 @@
 ---
-title: Queuing I/O Requests While a Device Is Sleeping
+title: Queuing I/O Requests While a Device is Sleeping
 description: Queuing I/O Requests While a Device Is Sleeping
 keywords: ["I/O WDK power management", "queuing I/O requests", "sleep power management WDK kernel", "asleep devices WDK power management", "queuing IRPs", "power IRPs WDK kernel , queuing I/O requests", "working state returns WDK power management"]
 ms.date: 06/16/2017

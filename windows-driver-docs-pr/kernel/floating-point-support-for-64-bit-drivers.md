@@ -1,5 +1,5 @@
 ---
-title: Using extended processor features in Windows drivers
+title: Using Extended Processor Features in Windows Drivers
 description: Windows drivers for x86 and x64 systems that use extended processor features must wrap floating point calculations between calls to KeSaveExtendedProcessorState and KeRestoreExtendedProcessorState in order to avoid errors in concurrent applications that might be using the registers.
 keywords: ["floating point WDK kernel"]
 ms.date: 06/16/2017

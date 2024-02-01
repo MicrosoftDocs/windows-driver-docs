@@ -1,5 +1,5 @@
 ---
-title: Windows kernel run-time library obsolete routines
+title: Windows Kernel Run-Time Library Obsolete Routines
 description: Windows kernel run-time library obsolete routines
 ms.date: 10/17/2018
 ---

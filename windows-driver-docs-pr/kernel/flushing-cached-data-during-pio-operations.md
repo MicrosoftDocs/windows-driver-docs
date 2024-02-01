@@ -1,5 +1,5 @@
 ---
-title: Flushing Cached Data during PIO Operations
+title: Flushing Cached Data During PIO Operations
 description: Flushing Cached Data during PIO Operations
 keywords: ["flushing cached data", "KeFlushIoBuffers", "PIO transfer operations WDK kernel"]
 ms.date: 06/16/2017

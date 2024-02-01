@@ -1,5 +1,5 @@
 ---
-title: Determining When to Send a Wait/Wake IRP
+title: Determining when to Send a Wait/Wake IRP
 description: Determining When to Send a Wait/Wake IRP
 keywords: ["timing wait/wake IRPs WDK power management", "sending wait/wake IRPs", "wait/wake IRPs WDK power management , sending"]
 ms.date: 06/16/2017

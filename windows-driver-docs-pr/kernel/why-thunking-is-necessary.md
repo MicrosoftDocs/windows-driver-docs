@@ -1,5 +1,5 @@
 ---
-title: Why Thunking Is Necessary
+title: Why Thunking is Necessary
 description: Why Thunking Is Necessary
 keywords: ["thunking WDK", "WOW64 thunking layer WDK", "32-bit I/O support WDK 64-bit , thunking", "buffer size WDK kernel", "DRIVER_DATA structure", "pointer precision WDK 64-bit", "fixed-precision data types WDK 64-bit"]
 ms.date: 06/16/2017
