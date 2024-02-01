@@ -1,5 +1,5 @@
 ---
-title: Step 2 a Driver for the Device is Selected
+title: Step 2 A Driver for the Device is Selected
 description: Step 2 A Driver for the Device is Selected
 ms.date: 03/23/2023
 ---
