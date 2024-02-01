@@ -24,7 +24,7 @@ The **!threadtoken** extension displays the impersonation state of the current t
 ## <span id="ddk__threadtoken_dbg"></span><span id="DDK__THREADTOKEN_DBG"></span>
 
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

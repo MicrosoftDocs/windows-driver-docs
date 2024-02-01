@@ -1,5 +1,5 @@
 ---
-title: Creating a log file for Static Driver Verifier
+title: Creating a Log File for Static Driver Verifier
 description: Learn how to run a Static Driver Verifier (SDV) before creating a Driver Verification Log (DVL) for your driver.
 ms.date: 04/20/2017
 ---

@@ -1,6 +1,6 @@
 ---
-title: s (Set Current System)
-description: The s command sets or displays the current system number.
+title: "|| s (Set Current System)"
+description: "The || s command sets or displays the current system number."
 keywords: ["s (Set Current System) Windows Debugging"]
 ms.date: 08/30/2023
 topic_type:

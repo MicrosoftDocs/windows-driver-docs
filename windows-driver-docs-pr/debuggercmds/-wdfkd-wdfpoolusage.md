@@ -21,7 +21,7 @@ The **!wdfkd.wdfpoolusage** extension displays pool usage information for a spec
 !wdfkd.wdfpoolusage [DriverName [SearchAddress] [Flags]]]
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______DriverName______"></span><span id="_______drivername______"></span><span id="_______DRIVERNAME______"></span> *DriverName*   
@@ -42,7 +42,7 @@ Displays internal type information for each handle.
 <span id="Bit_2__0x4_"></span><span id="bit_2__0x4_"></span><span id="BIT_2__0X4_"></span>Bit 2 (0x4)  
 Displays the caller of each pool entry.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Wdfkd.dll
 

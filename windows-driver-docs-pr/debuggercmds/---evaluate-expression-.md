@@ -1,6 +1,6 @@
 ---
-title: (Evaluate Expression)
-description: The question mark ( ) command evaluates and displays the value of an expression.Note  A question mark by itself ( ) displays command help.
+title: "? (Evaluate Expression)"
+description: "The question mark ( ? ) command evaluates and displays the value of an expression.Note  A question mark by itself ( ? ) displays command help."
 keywords: ["(Evaluate Expression) Windows Debugging"]
 ms.date: 04/26/2021
 topic_type:

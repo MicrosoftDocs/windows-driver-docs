@@ -1,7 +1,7 @@
 ---
-title: analyze (WinDbg)
-description: Learn how the analyze extension displays the information about the current exception or the bug check.
-keywords: ["analyze Windows Debugging"]
+title: "!analyze (WinDbg)"
+description: "Learn how the !analyze extension displays the information about the current exception or the bug check."
+keywords: ["!analyze Windows Debugging"]
 ms.date: 12/16/2022
 topic_type:
 - apiref

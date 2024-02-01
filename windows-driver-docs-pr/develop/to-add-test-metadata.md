@@ -1,5 +1,5 @@
 ---
-title: How to add test metadata
+title: How to Add Test Metadata
 description: Create test content for Windows 8, using the Windows Driver Kit (WDK) and the Test Authoring and Execution Framework (TAEF).
 ms.date: 04/20/2017
 ---

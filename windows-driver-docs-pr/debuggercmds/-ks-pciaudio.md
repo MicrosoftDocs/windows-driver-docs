@@ -21,7 +21,7 @@ The **!ks.pciaudio** extension displays a list of FDOs currently attached to Por
 !ks.pciaudio [Options] [Level]  
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 *Options*
@@ -39,7 +39,7 @@ Output displayed streams. *Level* has meaning only when this bit is set.
 <span id="_______Level______"></span><span id="_______level______"></span><span id="_______LEVEL______"></span> *Level*   
 Optional, and applicable only if Bit 3 is set in *Options*. Levels are the same as those for [**!ks.dump**](-ks-dump.md).
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

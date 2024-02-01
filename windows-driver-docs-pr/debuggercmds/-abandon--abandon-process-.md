@@ -1,6 +1,6 @@
 ---
-title: .abandon (Abandon Process)
-description: The .abandon command ends the debugging session, but leaves the target application in a debugging state. This returns the debugger to dormant mode.
+title: ".abandon (Abandon Process)"
+description: "The .abandon command ends the debugging session, but leaves the target application in a debugging state. This returns the debugger to dormant mode."
 keywords: [".abandon (Abandon Process) Windows Debugging"]
 ms.date: 08/30/2023
 topic_type:

@@ -1,5 +1,5 @@
 ---
-title: How to identify the Windows version in ACPI by using _OSI
+title: How to Identify the Windows Version in ACPI by Using _OSI
 description: Provides information about the ACPI Source Language (ASL) Operating System Interface Level (_OSI) method used to identify the host operating system.
 ms.date: 03/17/2023
 ms.custom: contperf-fy22q4

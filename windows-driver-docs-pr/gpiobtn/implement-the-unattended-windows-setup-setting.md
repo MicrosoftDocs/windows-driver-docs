@@ -1,5 +1,5 @@
 ---
-title: Implement the unattended Windows Setup setting
+title: Implement the Unattended Windows Setup Setting
 description: This topic describes how to set the unattended Windows Setup component setting.
 ms.date: 10/17/2018
 ---

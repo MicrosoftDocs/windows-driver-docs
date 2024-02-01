@@ -24,7 +24,7 @@ The **!kuser** extension displays the shared user-mode page (KUSER\_SHARED\_DATA
 ## <span id="ddk__kuser_dbg"></span><span id="DDK__KUSER_DBG"></span>
 
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

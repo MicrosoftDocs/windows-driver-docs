@@ -1,6 +1,6 @@
 ---
-title: amli dl (WinDbg)
-description: The amli dl extension displays a portion of the AML interpreter's event log.
+title: "!amli dl (WinDbg)"
+description: "The !amli dl extension displays a portion of the AML interpreter's event log."
 keywords: ["amli dl Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
@@ -14,7 +14,6 @@ api_type:
 
 # !amli dl
 
-
 The **!amli dl** extension displays a portion of the AML interpreter's event log.
 
 Syntax
@@ -23,10 +22,7 @@ Syntax
     !amli dl
 ```
 
-## <span id="ddk__amli_dl_dbg"></span><span id="DDK__AMLI_DL_DBG"></span>
-
-
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Kdexts.dll
 
@@ -51,12 +47,3 @@ INSQ: [c15a6618]QTh=00000000,QCt=00000000,QFg=00000002: Ctx=c18b4000,Obj=\_WAK
 EVAL: [c15a6618]QTh=00000000,QCt=00000000,QFg=00000002: Ctx=c18b4000,Obj=\_WAK
 RUNC: [c15a6618]QTh=c15a6618,QCt=c18b4000,QFg=00000002: Ctx=c18b4000,Obj=\_WAK
 ```
-
- 
-
- 
-
-
-
-
-

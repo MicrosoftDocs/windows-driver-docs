@@ -1,5 +1,5 @@
 ---
-title: PrintTicket document example
+title: PrintTicket Document Example
 description: The keywords in this example are for illustration only, although they reflect the Print Schema keywords for 3D manufacturing.
 ms.date: 03/17/2023
 ---

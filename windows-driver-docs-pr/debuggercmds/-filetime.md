@@ -21,7 +21,7 @@ The **!filetime** extension converts a 64-bit FILETIME structure into a human-re
 !filetime Time
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Time______"></span><span id="_______time______"></span><span id="_______TIME______"></span> *Time*   

@@ -14,7 +14,6 @@ api_type:
 
 # z (Execute While)
 
-
 The **z** command executes a command while a given condition is true.
 
 User-Mode

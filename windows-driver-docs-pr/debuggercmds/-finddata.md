@@ -21,7 +21,7 @@ The **!finddata** extension displays the cached data at a given offset within a 
 !finddata FileObject Offset
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______FileObject______"></span><span id="_______fileobject______"></span><span id="_______FILEOBJECT______"></span> *FileObject*   

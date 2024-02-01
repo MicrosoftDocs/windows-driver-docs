@@ -23,12 +23,12 @@ For more information about the interface stack table, see [Maintaining a Network
 !ndiskd.ifstacktable 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 This extension has no parameters.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Ndiskd.dll
 

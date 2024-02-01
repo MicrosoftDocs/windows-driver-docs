@@ -21,7 +21,7 @@ The **.scriptlist** command lists the loaded scripts.
 .scriptlist 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______________"></span>    

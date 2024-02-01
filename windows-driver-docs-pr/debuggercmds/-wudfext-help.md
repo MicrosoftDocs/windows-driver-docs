@@ -21,7 +21,7 @@ The **!wudfext.help** extension displays all Wudfext.dll extension commands.
 !wudfext.help
 ```
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

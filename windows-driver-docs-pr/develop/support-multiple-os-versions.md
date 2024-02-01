@@ -1,5 +1,5 @@
 ---
-title: Supporting multiple operating system versions
+title: Supporting Multiple Operating System Versions
 description: This page describes how to make a driver package support different functionality on multiple operating system versions.
 ms.date: 04/12/2022
 ---

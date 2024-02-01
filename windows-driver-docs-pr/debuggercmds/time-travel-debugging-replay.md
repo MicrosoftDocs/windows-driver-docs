@@ -1,6 +1,7 @@
 ---
 title: Time Travel Debugging - Replay a trace
 description: This section describes how to replay time travel traces.
+keywords: ["Replay a trace", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
 ms.date: 01/22/2020
 ---
 

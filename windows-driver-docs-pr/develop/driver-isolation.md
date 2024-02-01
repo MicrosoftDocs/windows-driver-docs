@@ -1,5 +1,5 @@
 ---
-title: Driver package isolation
+title: Driver Package Isolation
 description: This page describes driver isolation, a requirement for a Windows Driver.
 ms.date: 07/14/2023
 ---

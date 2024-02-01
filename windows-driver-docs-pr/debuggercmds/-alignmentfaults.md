@@ -1,7 +1,7 @@
 ---
-title: alignmentfaults
-description: The alignmentfaults extension displays all current type alignment faults by location and image, sorted by frequencies.
-keywords: ["alignmentfaults Windows Debugging"]
+title: "!alignmentfaults"
+description: "The !alignmentfaults extension displays all current type alignment faults by location and image, sorted by frequencies."
+keywords: ["!alignmentfaults Windows Debugging"]
 ms.date: 12/17/2019
 topic_type:
 - apiref
@@ -14,19 +14,16 @@ api_type:
 
 # !alignmentfaults
 
-
 The **!alignmentfaults** extension displays all current type alignment faults by location and image, sorted by frequencies.
 
 ```dbgcmd
 !alignmentfaults
 ```
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
-<p><strong>Windows XP and later</strong></p>
-<p>Kdexts.dll</p>
+Kdexts.dll
 
- 
 ### Additional Information
 
 For information about alignment faults, see the Microsoft Windows SDK documentation.

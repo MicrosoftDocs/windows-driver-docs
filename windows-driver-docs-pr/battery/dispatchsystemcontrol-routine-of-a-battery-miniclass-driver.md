@@ -1,5 +1,5 @@
 ---
-title: Battery miniclass driver's DispatchSystemControl routine
+title: Battery Miniclass Driver's DispatchSystemControl Routine
 description: Discover the DispatchSystemControl routine in battery miniclass drivers and its role in supporting Windows Management Instrumentation (WMI).
 keywords:
 - battery miniclass drivers WDK, routines

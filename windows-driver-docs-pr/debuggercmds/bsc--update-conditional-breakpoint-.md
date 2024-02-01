@@ -21,7 +21,7 @@ The **bsc** command changes the condition under which a breakpoint occurs or cha
 bsc ID Condition ["CommandString"] 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______ID______"></span><span id="_______id______"></span> *ID*   

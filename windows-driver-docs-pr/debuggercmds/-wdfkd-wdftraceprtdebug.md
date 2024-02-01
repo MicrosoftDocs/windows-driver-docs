@@ -21,7 +21,7 @@ The **!wdfkd.wdftraceprtdebug** extension enables and disables the Traceprt.dll 
 !wdfkd.wdftraceprtdebug {on | off}
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______on______"></span><span id="_______ON______"></span> **on**   
@@ -30,7 +30,7 @@ Enables the Traceprt.dll diagnostic mode.
 <span id="_______off______"></span><span id="_______OFF______"></span> **off**   
 Disables the Traceprt.dll diagnostic mode.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Wdfkd.dll
 

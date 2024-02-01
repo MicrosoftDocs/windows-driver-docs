@@ -78,7 +78,7 @@ You can use the following aliases in *CommandString*.
 <span id="_______-_______"></span> -?   
 Displays help for this extension.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Ext.dll
 

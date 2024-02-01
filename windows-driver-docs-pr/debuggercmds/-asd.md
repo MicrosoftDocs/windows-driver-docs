@@ -21,7 +21,7 @@ The **!asd** extension displays a specified number of failure analysis entries f
     !asd Address DataUsed
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
@@ -30,7 +30,7 @@ Specifies the address of the first failure analysis entry to display.
 <span id="_______DataUsed______"></span><span id="_______dataused______"></span><span id="_______DATAUSED______"></span> *DataUsed*   
 Determines the number of tokens to display.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

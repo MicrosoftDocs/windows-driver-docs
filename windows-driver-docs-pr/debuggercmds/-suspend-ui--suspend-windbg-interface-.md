@@ -23,7 +23,7 @@ The **.suspend\_ui** command suspends the refresh of WinDbg debugging informatio
 .suspend_ui 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______0______"></span> **0**   
