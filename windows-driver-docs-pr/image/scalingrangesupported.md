@@ -1,5 +1,5 @@
 ---
-title: ScalingRangeSupported element
+title: ScalingRangeSupported Element
 description: The required ScalingRangeSupported element describes the range of values that the scan device supports for scaling the output document.
 keywords: ["ScalingRangeSupported element Imaging Devices"]
 topic_type:

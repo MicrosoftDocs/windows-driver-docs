@@ -36,7 +36,7 @@ Specifies a single global flag. *Abbreviation* is a three-letter abbreviation fo
 <span id="_______-_______"></span> **-?**   
 Displays some Help text for this extension, including a list of global flag abbreviations, in the [Debugger Command window](../debugger/debugger-command-window.md).
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

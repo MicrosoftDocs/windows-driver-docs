@@ -1,5 +1,5 @@
 ---
-title: Behavior and guidance
+title: Behavior and Guidance
 description: The states of the two indicators available (mode and docking) play an important role in determining the user experience around touch keyboard and screen auto-rotation.
 ms.date: 10/17/2018
 ---

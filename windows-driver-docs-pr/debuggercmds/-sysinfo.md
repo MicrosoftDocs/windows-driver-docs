@@ -28,7 +28,7 @@ The **!sysinfo** extension reads and displays specified SMBIOS, Advanced Configu
 !sysinfo -?
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______cpuinfo______"></span><span id="_______CPUINFO______"></span> **cpuinfo**   
@@ -82,7 +82,7 @@ Verbose. Displays the details of entries in the SMBIOS table.
 <span id="_______-_______"></span> **-?**   
 Displays help for this extension in the Debugger Command window.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

@@ -37,7 +37,7 @@ Displays the most detailed help text available. This feature is not supported in
 <span id="_______CommandName______"></span><span id="_______commandname______"></span><span id="_______COMMANDNAME______"></span> *CommandName*   
 Displays only the help text for the specified command. This feature is not supported in all DLLs or for all commands.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 This extension is supported by most extension DLLs.
 

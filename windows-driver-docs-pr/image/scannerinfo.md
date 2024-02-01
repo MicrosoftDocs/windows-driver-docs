@@ -1,5 +1,5 @@
 ---
-title: ScannerInfo element
+title: ScannerInfo Element
 description: The optional ScannerInfo element contains any administratively assigned descriptive information about the scanner.
 keywords: ["ScannerInfo element Imaging Devices"]
 topic_type:

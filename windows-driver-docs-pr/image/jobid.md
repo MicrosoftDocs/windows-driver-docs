@@ -1,5 +1,5 @@
 ---
-title: JobId element
+title: JobId Element
 description: The required JobId element uniquely identifies a job within a scanner.
 keywords: ["JobId element Imaging Devices"]
 topic_type:

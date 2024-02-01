@@ -1,5 +1,5 @@
 ---
-title: AutoExposure element
+title: AutoExposure Element
 description: The required AutoExposure element specifies that the WSD Scan Service should automatically determine the exposure settings for the document.
 keywords: ["AutoExposure element Imaging Devices"]
 topic_type:

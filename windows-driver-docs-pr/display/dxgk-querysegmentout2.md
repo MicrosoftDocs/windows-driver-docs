@@ -1,5 +1,5 @@
 ---
-title: DXGK\_QUERYSEGMENTOUT2 structure
+title: DXGK_QUERYSEGMENTOUT2 Structure
 description: The DXGK\_QUERYSEGMENTOUT2 structure is reserved for system use. Do not use it in your driver.
 keywords: ["DXGK_QUERYSEGMENTOUT2 structure Display Devices"]
 topic_type:

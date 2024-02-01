@@ -1,5 +1,5 @@
 ---
-title: AutoExposureSupported element
+title: AutoExposureSupported Element
 description: The required AutoExposureSupported element specifies whether the scan device supports automatic adjustment of the various exposure settings.
 keywords: ["AutoExposureSupported element Imaging Devices"]
 topic_type:

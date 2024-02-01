@@ -1,5 +1,5 @@
 ---
-title: Kernel-mode file copy and detecting copy file scenarios
+title: Kernel-mode File Copy and Detecting Copy File Scenarios
 description: How to copy files in kernel mode and detect copy file scenarios
 keywords:
 - NtCopyFileChunk

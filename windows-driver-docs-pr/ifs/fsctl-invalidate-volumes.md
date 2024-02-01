@@ -1,5 +1,5 @@
 ---
-title: FSCTL_INVALIDATE_VOLUMES control code
+title: FSCTL_INVALIDATE_VOLUMES Control Code
 description: The FSCTL_INVALIDATE_VOLUMES control code finds and removes all the volumes mounted on the device represented by the specified file object or handle.
 keywords: ["FSCTL_INVALIDATE_VOLUMES control code Installable File System Drivers"]
 topic_type:

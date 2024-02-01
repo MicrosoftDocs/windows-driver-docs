@@ -21,7 +21,7 @@ The **!ks.kshelp** extension displays a help text showing original KS 1.0-specif
 !ks.kshelp 
 ```
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

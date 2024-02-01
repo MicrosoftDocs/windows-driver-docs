@@ -1,5 +1,5 @@
 ---
-title: DestinationToken element
+title: DestinationToken Element
 description: The required DestinationToken element contains a device-specific string that the scanner assigns to the current client destination.
 keywords: ["DestinationToken element Imaging Devices"]
 topic_type:

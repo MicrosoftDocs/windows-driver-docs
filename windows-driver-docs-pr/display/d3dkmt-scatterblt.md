@@ -1,5 +1,5 @@
 ---
-title: D3DKMT\_SCATTERBLT structure
+title: D3DKMT_SCATTERBLT Structure
 description: Learn about the D3DKMT\_SCATTERBLT structure, which is reserved for system use. Do not use in your driver.
 keywords: ["D3DKMT_SCATTERBLT structure Display Devices"]
 topic_type:

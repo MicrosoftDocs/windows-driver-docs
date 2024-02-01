@@ -1,5 +1,5 @@
 ---
-title: Resolution element
+title: Resolution Element
 description: The optional Resolution element specifies the resolution of the scanned image.
 keywords: ["Resolution element Imaging Devices"]
 topic_type:

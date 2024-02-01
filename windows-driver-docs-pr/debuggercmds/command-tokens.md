@@ -1,15 +1,11 @@
 ---
 title: Command Tokens
 description: Command Tokens
-keywords: ["commands, tokens used in commands"]
-ms.date: 05/23/2017
+keywords: ["Command Tokens", "WinDbg", "Windows Debugging"]
+ms.date: 01/23/2024
 ---
 
 # Command Tokens
-
-
-## <span id="ddk_command_tokens_dbg"></span><span id="DDK_COMMAND_TOKENS_DBG"></span>
-
 
 This section of the reference discusses the various tokens used within debugger commands and meta-commands.
 
@@ -50,6 +46,3 @@ These tokens include:
 [**.printf**](-printf.md)
 
 [**.while**](-while.md)
-
- 
-

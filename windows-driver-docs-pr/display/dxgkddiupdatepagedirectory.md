@@ -1,5 +1,5 @@
 ---
-title: DxgkDdiUpdatePageDirectory function
+title: DxgkDdiUpdatePageDirectory Function
 description: The DxgkDdiUpdatePageDirectory function is reserved for system use. Do not implement it in your driver.
 keywords: ["DxgkDdiUpdatePageDirectory function Display Devices"]
 topic_type:

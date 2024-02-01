@@ -1,5 +1,5 @@
 ---
-title: PlatenColor element
+title: PlatenColor Element
 description: The required PlatenColor element contains a list of ColorEntry elements that describe the color processing capabilities of the platen.
 keywords: ["PlatenColor element Imaging Devices"]
 topic_type:

@@ -1,5 +1,5 @@
 ---
-title: DXGKCB\_COMPLETEPSTATETRANSITION callback function
+title: DXGKCB_COMPLETEPSTATETRANSITION Callback Function
 description: Learn about the DXGKCB\_COMPLETEPSTATETRANSITION callback function, which is reserved for system use. Do not use it in your driver.
 keywords: ["DxgkCbCompletePStateTransition callback function Display Devices", "DXGKCB_COMPLETEPSTATETRANSITION"]
 topic_type:

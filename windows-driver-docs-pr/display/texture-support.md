@@ -1,5 +1,5 @@
 ---
-title: Texture support
+title: Texture Support
 description: Texture support
 keywords:
 - drawing page flips WDK DirectDraw , textures

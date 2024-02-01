@@ -32,7 +32,7 @@ Specifies the hexadecimal address of the SECURITY\_DESCRIPTOR structure.
 <span id="_______Flags______"></span><span id="_______flags______"></span><span id="_______FLAGS______"></span> *Flags*   
 If this is set to 1, the friendly name is displayed. This includes the security identifier (SID) type, as well as the domain and user name for the SID.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Exts.dll
 

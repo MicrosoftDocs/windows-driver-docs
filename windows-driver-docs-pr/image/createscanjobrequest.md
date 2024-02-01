@@ -1,5 +1,5 @@
 ---
-title: CreateScanJobRequest element
+title: CreateScanJobRequest Element
 description: The required CreateScanJobRequest operation prepares a scan device to scan.
 keywords: ["CreateScanJobRequest element Imaging Devices"]
 topic_type:

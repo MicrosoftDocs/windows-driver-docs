@@ -1,5 +1,5 @@
 ---
-title: Building, troubleshooting and debugging WIA minidrivers
+title: Building, Troubleshooting and Debugging WIA Minidrivers
 description: Building, troubleshooting and debugging WIA minidrivers
 ms.date: 03/27/2023
 ---

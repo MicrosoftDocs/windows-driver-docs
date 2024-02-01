@@ -1,5 +1,5 @@
 ---
-title: Install the driver and sample app
+title: Install the Driver and Sample App
 description: This section provides information on installing the driver and the WSD sample app.
 ms.date: 03/17/2023
 ---

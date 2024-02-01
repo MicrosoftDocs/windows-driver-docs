@@ -23,7 +23,7 @@ When a thread reaches a breakpoint, the **.bpsync** command freezes all other th
 .bpsync 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______1______"></span> **1**   

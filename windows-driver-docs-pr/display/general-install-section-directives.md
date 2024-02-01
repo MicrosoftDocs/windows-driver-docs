@@ -1,5 +1,5 @@
 ---
-title: General install section directives
+title: General Install Section Directives
 description: Directives that apply to general installations.
 ms.date: 04/20/2017
 ---

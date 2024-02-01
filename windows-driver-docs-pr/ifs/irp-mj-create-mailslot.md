@@ -1,5 +1,5 @@
 ---
-title: IRP_MJ_CREATE_MAILSLOT (FS and filter drivers)
+title: IRP_MJ_CREATE_MAILSLOT (FS and Filter Drivers)
 description: IRP_MJ_CREATE_MAILSLOT
 keywords:
 - IRP_MJ_CREATE_MAILSLOT File System Drivers

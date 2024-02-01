@@ -29,7 +29,7 @@ UMDF
 !wdfkd.wdflogdump  [DriverName.dll][HostProcessId][-d | -f | -m]
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______DriverName______"></span><span id="_______drivername______"></span><span id="_______DRIVERNAME______"></span> *DriverName*   
@@ -61,7 +61,7 @@ UMDF:
 
 **-m** Merges framework and driver logs in their recorded order.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Wdfkd.dll
 

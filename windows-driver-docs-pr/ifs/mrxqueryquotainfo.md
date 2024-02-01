@@ -1,5 +1,5 @@
 ---
-title: MRxQueryQuotaInfo routine
+title: MRxQueryQuotaInfo Routine
 description: The MRxQueryQuotaInfo routine is called by RDBSS to request that a network mini-redirector query quota information on a file system object.
 keywords: ["MRxQueryQuotaInfo routine Installable File System Drivers", "PMRX_CALLDOWN"]
 topic_type:

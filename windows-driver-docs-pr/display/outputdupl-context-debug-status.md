@@ -1,5 +1,5 @@
 ---
-title: OUTPUTDUPL\_CONTEXT\_DEBUG\_STATUS enumeration
+title: OUTPUTDUPL_CONTEXT_DEBUG_STATUS Enumeration
 description: Learn about the OUTPUTDUPL\_CONTEXT\_DEBUG\_STATUS enumeration, which is reserved for system use. Do not use in your driver.
 keywords: ["OUTPUTDUPL_CONTEXT_DEBUG_STATUS enumeration Display Devices"]
 topic_type:

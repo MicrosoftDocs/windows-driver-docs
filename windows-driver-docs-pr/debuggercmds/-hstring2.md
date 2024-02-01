@@ -21,7 +21,7 @@ The **!hstring2** extension displays an entire **HSTRING** including any embedde
 !hstring2 Address
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="Address"></span><span id="address"></span><span id="ADDRESS"></span>*Address*  

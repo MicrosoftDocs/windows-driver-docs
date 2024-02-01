@@ -1,5 +1,5 @@
 ---
-title: DXGKCB\_PRESENT\_DISPLAYONLY\_PROGRESS callback function
+title: DXGKCB_PRESENT_DISPLAYONLY_PROGRESS Callback Function
 description: Learn about the DXGKCB\_PRESENT\_DISPLAYONLY\_PROGRESS callback function, which is reserved for system use. Do not use it in your driver.
 keywords: ["pfnPresentDisplayOnlyProgress callback function Display Devices", "DXGKCB_PRESENT_DISPLAYONLY_PROGRESS"]
 topic_type:

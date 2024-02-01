@@ -1,5 +1,5 @@
 ---
-title: MRxSetFileInfo routine
+title: MRxSetFileInfo Routine
 description: The MRxSetFileInfo routine is called by RDBSS to request that a network mini-redirector set file information on a file system object.
 keywords: ["MRxSetFileInfo routine Installable File System Drivers", "PMRX_CALLDOWN"]
 topic_type:

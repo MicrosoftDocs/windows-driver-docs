@@ -1,5 +1,5 @@
 ---
-title: ADFColor element
+title: ADFColor Element
 description: The required ADFColor element contains the list of color processing capabilities that the front or back side of the automatic document feeder (ADF) supports.
 keywords: ["ADFColor element Imaging Devices"]
 topic_type:

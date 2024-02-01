@@ -1,5 +1,5 @@
 ---
-title: IRP-Based I/O Operations That use Neither Buffered Nor Direct I/O
+title: IRP-Based I/O Operations That Use Neither Buffered Nor Direct I/O
 description: IRP-Based I/O Operations That Always Use Neither Buffered Nor Direct I/O
 keywords:
 - neither buffered nor direct I/O WDK file system

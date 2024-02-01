@@ -22,7 +22,7 @@ The **!processirps** extension displays information about I/O request packets (I
 !processirps ProcessAddress [Flags]
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_ProcessAddress"></span><span id="_processaddress"></span><span id="_PROCESSADDRESS"></span> **** *ProcessAddress*  
@@ -42,7 +42,7 @@ If you specify *Flags*, you must also specify *ProcessAddress*. If you do not sp
 ## <span id="ddk__processfields_dbg"></span><span id="DDK__PROCESSFIELDS_DBG"></span>
 
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 kdexts.dll
 

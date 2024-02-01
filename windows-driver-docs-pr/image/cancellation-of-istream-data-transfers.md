@@ -1,5 +1,5 @@
 ---
-title: Cancellation of IStream data transfers
+title: Cancellation of IStream Data Transfers
 description: Cancellation of IStream data transfers
 ms.date: 03/28/2023
 ---

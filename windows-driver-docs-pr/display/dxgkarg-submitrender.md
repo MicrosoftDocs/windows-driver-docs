@@ -1,5 +1,5 @@
 ---
-title: \_DXGKARG\_SUBMITRENDER structure
+title: _DXGKARG_SUBMITRENDER Structure
 description: The DXGKARG\_SUBMITRENDER structure is reserved for system use. Do not use it in your driver.
 keywords: ["_DXGKARG_SUBMITRENDER structure Display Devices", "DXGKARG_SUBMITRENDER structure Display Devices"]
 topic_type:

@@ -1,5 +1,5 @@
 ---
-title: FSCTL_ENUM_OVERLAY control code
+title: FSCTL_ENUM_OVERLAY Control Code
 description: The FSCTL_ENUM_OVERLAY control code enumerates all the data sources from a backing provider for a specified volume.
 keywords: ["FSCTL_ENUM_OVERLAY control code Installable File System Drivers"]
 topic_type:

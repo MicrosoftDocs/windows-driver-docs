@@ -1,7 +1,7 @@
 ---
-title: amli r (WinDbg)
-description: The amli r extension displays information about the current context or the specified context.
-keywords: ["amli r Windows Debugging"]
+title: "!amli r (WinDbg)"
+description: "The !amli r extension displays information about the current context or the specified context."
+keywords: ["!amli r Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !amli r
 
-
 The **!amli r** extension displays information about the current context or the specified context.
 
 Syntax
@@ -23,13 +22,12 @@ Syntax
    !amli r [ContextAddress]
 ```
 
-## <span id="ddk__amli_r_dbg"></span><span id="DDK__AMLI_R_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______ContextAddress______"></span><span id="_______contextaddress______"></span><span id="_______CONTEXTADDRESS______"></span> *ContextAddress*   
 Specifies the address of the context block to be displayed. The address of a context block can be determined from the **Ctxt** field in the [**!amli lc**](-amli-lc.md) display. If *ContextAddress* is prefixed with two percent signs (**%%**), it is interpreted as a physical address. Otherwise, it is interpreted as a virtual address. If this parameter is omitted, the current context is displayed.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Kdexts.dll
 

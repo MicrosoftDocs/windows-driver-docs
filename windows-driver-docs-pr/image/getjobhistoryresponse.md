@@ -1,5 +1,5 @@
 ---
-title: GetJobHistoryResponse element
+title: GetJobHistoryResponse Element
 description: The required GetJobHistoryResponse element returns a summary of completed jobs.
 keywords: ["GetJobHistoryResponse element Imaging Devices"]
 topic_type:

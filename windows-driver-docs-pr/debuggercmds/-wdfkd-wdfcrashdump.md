@@ -29,7 +29,7 @@ UMDF
 !wdfkd.wdfcrashdump [DriverName.dll][-d | -f | -m]
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______InfoType______"></span><span id="_______infotype______"></span><span id="_______INFOTYPE______"></span> *InfoType*   
@@ -53,7 +53,7 @@ Displays only the framework logs.
 <span id="-m"></span><span id="-M"></span>**-m**  
 Merges framework and driver logs in their recorded order.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Wdfkd.dll
 

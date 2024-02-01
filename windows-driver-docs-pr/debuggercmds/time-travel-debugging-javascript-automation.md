@@ -1,6 +1,7 @@
 ---
 title: Time Travel Debugging - JavaScript Automation
 description: This section describes how to use JavaScript automation to work with TTD traces.
+keywords: ["JavaScript Automation", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
 ms.date: 09/17/2020
 ---
 

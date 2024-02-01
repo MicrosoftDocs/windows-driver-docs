@@ -1,5 +1,5 @@
 ---
-title: IOCTL\_COPP\_Status control code
+title: IOCTL_COPP_Status Control Code
 description: Returns status on a protected video session.
 keywords: ["IOCTL_COPP_Status control code Display Devices"]
 topic_type:

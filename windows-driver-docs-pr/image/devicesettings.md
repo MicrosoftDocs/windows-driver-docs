@@ -1,5 +1,5 @@
 ---
-title: DeviceSettings element
+title: DeviceSettings Element
 description: The required DeviceSettings element describes the basic capabilities of the scan device.
 keywords: ["DeviceSettings element Imaging Devices"]
 topic_type:

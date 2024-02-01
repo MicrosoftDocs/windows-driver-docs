@@ -21,7 +21,7 @@ The **!scsikd.help** extension displays help text for Scsikd.dll extension comma
 !scsikd.help 
 ```
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

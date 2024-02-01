@@ -1,5 +1,5 @@
 ---
-title: CancelJobRequest element
+title: CancelJobRequest Element
 description: The required CancelJobRequest operation enables a client to cancel a scan job.
 keywords: ["CancelJobRequest element Imaging Devices"]
 topic_type:

@@ -1,5 +1,5 @@
 ---
-title: ScalingHeight element (output document height)
+title: ScalingHeight Element (Output Document Height)
 description: The required ScalingHeight element contains the range of allowable values for scaling the height of the output document.
 keywords: ["ScalingHeight element Imaging Devices"]
 topic_type:

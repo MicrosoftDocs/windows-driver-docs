@@ -1,7 +1,7 @@
 ---
-title: amli cl (WinDbg)
-description: The amli cl extension clears the AML interpreter's event log.
-keywords: ["amli cl Windows Debugging"]
+title: "!amli cl (WinDbg)"
+description: "The !amli cl extension clears the AML interpreter's event log."
+keywords: ["!amli cl Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !amli cl
 
-
 The **!amli cl** extension clears the AML interpreter's event log.
 
 Syntax
@@ -23,22 +22,10 @@ Syntax
     !amli cl
 ```
 
-## <span id="ddk__amli_cl_dbg"></span><span id="DDK__AMLI_CL_DBG"></span>
-
-
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Kdexts.dll
 
 ### Additional Information
 
 For information about related commands and their uses, see [The AMLI Debugger](../debugger/the-amli-debugger.md).
-
- 
-
- 
-
-
-
-
-

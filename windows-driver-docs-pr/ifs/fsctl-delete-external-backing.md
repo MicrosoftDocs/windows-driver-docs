@@ -1,5 +1,5 @@
 ---
-title: FSCTL_DELETE_EXTERNAL_BACKING control code
+title: FSCTL_DELETE_EXTERNAL_BACKING Control Code
 description: The FSCTL_DELETE_EXTERNAL_BACKING control code removes the association of a file with an external backing provider, including the Windows Image Format (WIM) provider or compressed file provider.
 keywords: ["FSCTL_DELETE_EXTERNAL_BACKING control code Installable File System Drivers"]
 topic_type:

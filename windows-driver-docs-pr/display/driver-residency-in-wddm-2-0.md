@@ -1,5 +1,5 @@
 ---
-title: Driver residency in WDDM 2.0
+title: Driver Residency in WDDM 2.0
 description: This section provides details about the driver residency changes for Windows Display Driver Model (WDDM) 2.0. The functionality described is available starting with Windows 10.
 ms.date: 04/20/2017
 ---

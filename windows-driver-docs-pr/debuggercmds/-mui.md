@@ -30,7 +30,7 @@ The **!mui** extension displays the Multilingual User Interface (MUI) cache info
 !mui -?
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______-c______"></span><span id="_______-C______"></span> **-c**   
@@ -63,7 +63,7 @@ Causes the output to include contained resource types for the module at *ModuleA
 <span id="_______-_______"></span> **-?**   
 Displays some brief Help text for this extension in the Debugger Command window.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

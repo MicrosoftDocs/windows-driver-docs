@@ -1,5 +1,5 @@
 ---
-title: PFREE_FUNCTION function pointer
+title: PFREE_FUNCTION Function Pointer
 description: Learn more about the PFREE_FUNCTION typed routine.
 keywords: ["PFREE_FUNCTION function pointer Installable File System Drivers"]
 topic_type:

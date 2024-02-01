@@ -1,7 +1,7 @@
 ---
-title: acpiinf (WinDbg)
-description: The acpiinf extension displays information on the configuration of the ACPI, including system tables and the contents of the ACPI fixed feature hardware.
-keywords: ["acpiinf Windows Debugging"]
+title: "!acpiinf (WinDbg)"
+description: "The !acpiinf extension displays information on the configuration of the ACPI, including system tables and the contents of the ACPI fixed feature hardware."
+keywords: ["!acpiinf Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
 - apiref
@@ -14,30 +14,13 @@ api_type:
 
 # !acpiinf
 
-
 The **!acpiinf** extension displays information on the configuration of the Advanced Configuration and Power Interface (ACPI), including the location of system tables and the contents of the ACPI fixed feature hardware.
 
    !acpiinf
 
+## DLL
 
-### <span id="DLL"></span><span id="dll"></span>DLL
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Unavailable</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Kdexts.dll</p></td>
-</tr>
-</tbody>
-</table>
+Kdexts.dll
 
  
 

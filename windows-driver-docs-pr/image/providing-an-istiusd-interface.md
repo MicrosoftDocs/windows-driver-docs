@@ -1,5 +1,5 @@
 ---
-title: Provide an IStiUSD interface
+title: Provide an IStiUSD Interface
 description: Provide an IStiUSD interface
 ms.date: 05/03/2023
 ---

@@ -1,5 +1,5 @@
 ---
-title: JobName element
+title: JobName Element
 description: The required JobName element specifies the client-supplied, user-friendly name of the scan job.
 keywords: ["JobName element Imaging Devices"]
 topic_type:

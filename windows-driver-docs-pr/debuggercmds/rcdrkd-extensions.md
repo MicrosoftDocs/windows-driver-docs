@@ -1,6 +1,7 @@
 ---
 title: RCDRKD Extensions
 description: This section describes the RCDRKD debugger extension commands. These commands display WPP trace messages created by drivers.
+keywords: ["RCDRKD Extensions", "extensions", "WinDbg", "Windows Debugging"]
 ms.date: 11/28/2017
 ---
 

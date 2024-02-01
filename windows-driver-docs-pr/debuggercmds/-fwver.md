@@ -1,5 +1,5 @@
 ---
-title: fwver (WinDbg)
+title: "!fwver (WinDbg)"
 description: The fwver extension displays the Itanium firmware version.
 keywords: ["fwver Windows Debugging"]
 ms.date: 05/23/2017
@@ -14,7 +14,6 @@ api_type:
 
 # !fwver
 
-
 The **!fwver** extension displays the Itanium firmware version.
 
 ```dbgcmd
@@ -23,31 +22,9 @@ The **!fwver** extension displays the Itanium firmware version.
 
 **Important**  This command has been deprecated in the Windows Debugger Version 10.0.14257 and later, and is no longer available.
 
- 
+## DLL
 
-## <span id="ddk__fwver_dbg"></span><span id="DDK__FWVER_DBG"></span>
-
-
-### <span id="DLL"></span><span id="dll"></span>DLL
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Unavailable</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Kdexts.dll</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+Windows XP and later - Kdexts.dll
 
 This extension command can only be used with an Itanium target computer.
 

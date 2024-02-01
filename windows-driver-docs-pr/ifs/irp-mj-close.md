@@ -1,5 +1,5 @@
 ---
-title: IRP_MJ_CLOSE (FS and filter drivers)
+title: IRP_MJ_CLOSE (FS and Filter Drivers)
 description: IRP_MJ_CLOSE
 keywords: ["IRP_MJ_CLOSE Installable File System Drivers"]
 topic_type:

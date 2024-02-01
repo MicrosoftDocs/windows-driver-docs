@@ -1,5 +1,5 @@
 ---
-title: NumberOfLines element
+title: NumberOfLines Element
 description: The required NumberOfLines element describes the exact height, in pixels, of the final output image.
 keywords: ["NumberOfLines element Imaging Devices"]
 topic_type:

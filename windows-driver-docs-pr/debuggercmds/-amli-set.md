@@ -1,7 +1,7 @@
 ---
-title: amli set (WinDbg)
-description: The amli set extension sets or displays the AMLI Debugger options.
-keywords: ["amli set Windows Debugging"]
+title: "!amli set (WinDbg)"
+description: "The !amli set extension sets or displays the AMLI Debugger options."
+keywords: ["!amli set Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
 - apiref
@@ -14,15 +14,13 @@ api_type:
 
 # !amli set
 
-
 The **!amli set** extension sets or displays the AMLI Debugger options.
 
 ```dbgcmd
     !amli set Options
 ```
 
-## <span id="ddk__amli_set_dbg"></span><span id="DDK__AMLI_SET_DBG"></span>Parameters
-
+## Parameters
 
 *Options*
 Specifies one or more options to be set. Separate multiple options with spaces. Possible values include:
@@ -81,7 +79,7 @@ Enables mutex event logging.
 <span id="logmutoff"></span><span id="LOGMUTOFF"></span>**logmutoff**  
 Disables mutex event logging.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Kdexts.dll
 

@@ -1,5 +1,5 @@
 ---
-title: TDR in Windows 8 and later
+title: TDR in Windows 8 and Later
 description: Starting with Windows 8, GPU timeout detection and recovery (TDR) behavior allows parts of individual physical adapters to be reset, instead of requiring an adapter-wide reset.
 keywords:
 - TDR (timeout detection and recovery) WDK display , changes in Windows 8

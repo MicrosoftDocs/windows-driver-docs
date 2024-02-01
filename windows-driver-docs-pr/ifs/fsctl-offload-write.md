@@ -1,5 +1,5 @@
 ---
-title: FSCTL_OFFLOAD_WRITE control code
+title: FSCTL_OFFLOAD_WRITE Control Code
 description: The FSCTL_OFFLOAD_WRITE control code initiates an offload write for a block of data in a storage system that supports offload write primitives.
 keywords: ["FSCTL_OFFLOAD_WRITE control code Installable File System Drivers"]
 topic_type:

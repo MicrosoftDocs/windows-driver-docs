@@ -1,5 +1,5 @@
 ---
-title: WDDM 1.3 display miniport driver support for wireless displays
+title: WDDM 1.3 Display Miniport Driver Support for Wireless Displays
 description: Driver support for Windows 8.1 Miracast wireless displays
 ms.date: 03/24/2023
 ---

@@ -1,5 +1,5 @@
 ---
-title: DocumentDescription element
+title: DocumentDescription Element
 description: The required DocumentDescription element defines all of the description attributes that pertain to the basic creation information of the currently identified Document element.
 keywords: ["DocumentDescription element Imaging Devices"]
 topic_type:

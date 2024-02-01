@@ -1,6 +1,7 @@
 ---
 title: Time Travel Debugging Extension !tt Command 
 description: The !tt time travel debugger extension that allows you to navigate forward and backwards in time.
+keywords: ["!tt Command", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
 ms.date: 01/22/2020
 ---
 
@@ -45,7 +46,7 @@ Provide a time position in any of the following formats to travel to that point 
    >
    > yy - the second element is a step count, which corresponds roughly to the instruction count since the sequencing event.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 ttdext.dll
 

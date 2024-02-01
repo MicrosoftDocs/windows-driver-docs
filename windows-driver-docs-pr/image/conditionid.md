@@ -1,5 +1,5 @@
 ---
-title: ConditionId element
+title: ConditionId Element
 description: The required ConditionId element uniquely identifies the device condition that was cleared.
 keywords: ["ConditionId element Imaging Devices"]
 topic_type:

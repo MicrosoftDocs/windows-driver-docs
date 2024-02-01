@@ -1,5 +1,5 @@
 ---
-title: ScanDestination element
+title: ScanDestination Element
 description: The required ScanDestination element specifies a single scan destination on the client.
 keywords: ["ScanDestination element Imaging Devices"]
 topic_type:

@@ -1,5 +1,5 @@
 ---
-title: Using an INF file to uninstall a file system filter driver
+title: Using an INF File to Uninstall a File System Filter Driver
 description: Describes various ways to uninstall a file system filter driver
 keywords:
 - INF files WDK file system , uninstalling filter drivers

@@ -1,5 +1,5 @@
 ---
-title: DD_DXAPI_FLIP_VP control code (Windows Drivers)
+title: DD_DXAPI_FLIP_VP Control Code (Windows Drivers)
 description: Learn more about the DD_DXAPI_FLIP_VP control code.
 keywords:
 - DD_DXAPI_FLIP_VP

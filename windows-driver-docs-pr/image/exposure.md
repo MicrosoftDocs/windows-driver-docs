@@ -1,5 +1,5 @@
 ---
-title: Exposure element
+title: Exposure Element
 description: The optional Exposure element specifies the exposure settings of the document.
 keywords: ["Exposure element Imaging Devices"]
 topic_type:

@@ -1,5 +1,5 @@
 ---
-title: Manufacturer override of monitor EDIDs
+title: Manufacturer Override of Monitor EDIDs
 description: Manufacturers can write an INF file to update or override the Extended Display Identification Data (EDID) of any monitor.
 ms.date: 12/06/2023
 ms.custom: contperf-fy21q3

@@ -21,7 +21,7 @@ The **!minipkd.adapters** extension displays all of the adapters that work with 
 !minipkd.adapters 
 ```
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

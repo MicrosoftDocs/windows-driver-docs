@@ -22,7 +22,7 @@ The **!pat** extension displays the Page Attribute Table (PAT) registers for the
 !pat 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Flag______"></span><span id="_______flag______"></span><span id="_______FLAG______"></span> *Flag*   

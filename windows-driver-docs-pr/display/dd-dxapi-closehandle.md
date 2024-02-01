@@ -1,5 +1,5 @@
 ---
-title: DD_DXAPI_CLOSEHANDLE control code (Windows Drivers)
+title: DD_DXAPI_CLOSEHANDLE Control Code (Windows Drivers)
 description: Learn more about the DD_DXAPI_CLOSEHANDLE control code.
 keywords:
 - DD_DXAPI_CLOSEHANDLE

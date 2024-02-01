@@ -1,5 +1,5 @@
 ---
-title: ScanRegionXOffset element
+title: ScanRegionXOffset Element
 description: The optional ScanRegionXOffset element specifies the distance from the fast scan lead edge to the beginning of the scan region.
 keywords: ["ScanRegionXOffset element Imaging Devices"]
 topic_type:

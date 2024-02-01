@@ -1,5 +1,5 @@
 ---
-title: Brightness element
+title: Brightness Element
 description: The optional Brightness element specifies the relative amount to reduce or enhance the brightness of the scanned document.
 keywords: ["Brightness element Imaging Devices"]
 topic_type:

@@ -1,5 +1,5 @@
 ---
-title: DefaultScanTicket element
+title: DefaultScanTicket Element
 description: Learn about the 'DefaultScanTicket' element. See code examples and view additional available resources.
 keywords: ["DefaultScanTicket element Imaging Devices"]
 topic_type:

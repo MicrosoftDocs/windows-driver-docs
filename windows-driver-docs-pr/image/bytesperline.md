@@ -1,5 +1,5 @@
 ---
-title: BytesPerLine element
+title: BytesPerLine Element
 description: The required BytesPerLine element specifies the number of bytes per scan line in the resultant image file.
 keywords: ["BytesPerLine element Imaging Devices"]
 topic_type:

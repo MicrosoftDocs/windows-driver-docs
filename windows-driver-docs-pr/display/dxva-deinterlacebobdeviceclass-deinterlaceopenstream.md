@@ -1,5 +1,5 @@
 ---
-title: DeinterlaceOpenStream method
+title: DeinterlaceOpenStream Method
 description: The sample DXVA_DeinterlaceBobDeviceClass::DeinterlaceOpenStream function creates and opens a deinterlace stream object.
 keywords: ["DeinterlaceOpenStream method Display Devices", "DeinterlaceOpenStream method Display Devices , DXVA_DeinterlaceBobDeviceClass interface", "DXVA_DeinterlaceBobDeviceClass interface Display Devices , DeinterlaceOpenStream method"]
 topic_type:

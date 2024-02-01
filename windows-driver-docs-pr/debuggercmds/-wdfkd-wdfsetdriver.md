@@ -21,13 +21,13 @@ The **!wdfkd.wdfsetdriver** extension sets the name of the default Kernel-Mode D
 !wdfkd.wdfsetdriver DriverName
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______DriverName______"></span><span id="_______drivername______"></span><span id="_______DRIVERNAME______"></span> *DriverName*   
 The name of a driver. *DriverName* must not include the .sys file name extension.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Wdfkd.dll
 

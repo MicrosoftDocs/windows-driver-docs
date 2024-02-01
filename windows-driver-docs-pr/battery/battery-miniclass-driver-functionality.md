@@ -1,5 +1,5 @@
 ---
-title: Battery miniclass driver functionality
+title: Battery Miniclass Driver Functionality
 description: Discover the responsibilities and functions of a battery miniclass driver, including managing battery capacity, charge, and power state.
 keywords:
 - battery miniclass drivers WDK, functionality

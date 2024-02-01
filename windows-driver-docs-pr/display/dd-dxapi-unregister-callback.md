@@ -1,5 +1,5 @@
 ---
-title: DD_DXAPI_UNREGISTER_CALLBACK control code (Windows Drivers)
+title: DD_DXAPI_UNREGISTER_CALLBACK Control Code (Windows Drivers)
 description: Learn more about the DD_DXAPI_UNREGISTER_CALLBACK control code.
 keywords:
 - DD_DXAPI_UNREGISTER_CALLBACK

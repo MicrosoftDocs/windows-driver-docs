@@ -1,5 +1,5 @@
 ---
-title: JobElements element
+title: JobElements Element
 description: The required JobElements element contains all of the job-related elements that a client requests through a call to GetJobElementsRequest.
 keywords: ["JobElements element Imaging Devices"]
 topic_type:

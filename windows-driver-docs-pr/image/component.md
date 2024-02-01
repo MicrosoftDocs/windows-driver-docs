@@ -1,5 +1,5 @@
 ---
-title: Component element
+title: Component Element
 description: The required Component element identifies the component that the current DeviceCondition or ConditionHistoryEntry element describes.
 keywords: ["Component element Imaging Devices"]
 topic_type:

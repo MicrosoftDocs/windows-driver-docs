@@ -1,5 +1,5 @@
 ---
-title: Document element
+title: Document Element
 description: The required Document element contains the details about one of the documents that are scanned during a scan job.
 keywords: ["Document element Imaging Devices"]
 topic_type:

@@ -1,5 +1,5 @@
 ---
-title: EDID extension for head-mounted and specialized monitors
+title: EDID Extension for Head-Mounted and Specialized Monitors
 description: EDID extension for head-mounted and specialized monitors
 keywords:
 - display devices WDK

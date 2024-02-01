@@ -21,7 +21,7 @@ The **.extpath** command sets or displays the extension DLL search path.
 .extpath[+] [Directory[;...]]
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="______________"></span> +   

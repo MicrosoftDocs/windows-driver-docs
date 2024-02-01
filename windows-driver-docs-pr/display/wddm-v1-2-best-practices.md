@@ -1,5 +1,5 @@
 ---
-title: WDDM 1.2 best practices
+title: WDDM 1.2 Best Practices
 description: To deliver the best experience in Windows 8 and later, Windows takes advantage of the graphics hardware paired with a Windows Display Driver Model (WDDM) 1.2 or later driver. This section summarizes the best practices.
 ms.date: 04/20/2017
 ---

@@ -1,5 +1,5 @@
 ---
-title: ContrastSupported element
+title: ContrastSupported Element
 description: The required ContrastSupported element specifies whether the scan device supports user control of the scan contrast setting.
 keywords: ["ContrastSupported element Imaging Devices"]
 topic_type:

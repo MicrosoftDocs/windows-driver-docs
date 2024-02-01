@@ -21,7 +21,7 @@ The **.apply\_dbp** command applies the current process' existing data breakpoin
     .apply_dbp [/m Context] 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="________m_______Context______"></span><span id="________m_______context______"></span><span id="________M_______CONTEXT______"></span> **/m** *Context*   
