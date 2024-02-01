@@ -1,5 +1,5 @@
 ---
-title: Print schema references
+title: Print Schema References
 description: Provides references and links to industry standards, specifications, and technical articles.
 ms.date: 03/17/2023
 ---
