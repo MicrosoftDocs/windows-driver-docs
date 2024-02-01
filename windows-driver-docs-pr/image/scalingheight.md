@@ -1,5 +1,5 @@
 ---
-title: ScalingHeight element (slow scan direction)
+title: ScalingHeight Element (Slow Scan Direction)
 description: The required ScalingHeight element specifies the document scaling in the slow scan direction.
 keywords: ["ScalingHeight element Imaging Devices"]
 topic_type:

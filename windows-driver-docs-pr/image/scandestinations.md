@@ -1,5 +1,5 @@
 ---
-title: ScanDestinations element
+title: ScanDestinations Element
 description: The required ScanDestinations element is a collection of all of the scan destinations that a client wants to register with the scan device.
 keywords: ["ScanDestinations element Imaging Devices"]
 topic_type:

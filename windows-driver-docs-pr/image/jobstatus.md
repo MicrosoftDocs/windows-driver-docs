@@ -1,5 +1,5 @@
 ---
-title: JobStatus element
+title: JobStatus Element
 description: The required JobStatus element contains all information about the status of the current scan job.
 keywords: ["JobStatus element Imaging Devices"]
 topic_type:

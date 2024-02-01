@@ -1,5 +1,5 @@
 ---
-title: ScanTicket element
+title: ScanTicket Element
 description: The required ScanTicket element defines all of the description and processing parameters of the currently identified scan job.
 keywords: ["ScanTicket element Imaging Devices"]
 topic_type:

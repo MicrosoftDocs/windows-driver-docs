@@ -1,5 +1,5 @@
 ---
-title: ADFMinimumSize element
+title: ADFMinimumSize Element
 description: The required ADFMinimumSize element specifies the smallest size original that an end user can scan on the front or back of the automatic document feeder (ADF).
 keywords: ["ADFMinimumSize element Imaging Devices"]
 topic_type:

@@ -1,5 +1,5 @@
 ---
-title: ScansCompleted element
+title: ScansCompleted Element
 description: The required ScansCompleted element specifies the number of images that are scanned.
 keywords: ["ScansCompleted element Imaging Devices"]
 topic_type:

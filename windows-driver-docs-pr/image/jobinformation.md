@@ -1,5 +1,5 @@
 ---
-title: JobInformation element
+title: JobInformation Element
 description: The optional JobInformation element describes the intended use of the job.
 keywords: ["JobInformation element Imaging Devices"]
 topic_type:

@@ -1,5 +1,5 @@
 ---
-title: ContentTypeValue element
+title: ContentTypeValue Element
 description: The required ContentTypeValue element specifies one document content type that the scan device supports.
 keywords: ["ContentTypeValue element Imaging Devices"]
 topic_type:

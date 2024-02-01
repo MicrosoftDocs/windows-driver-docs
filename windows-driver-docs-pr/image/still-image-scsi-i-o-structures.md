@@ -1,5 +1,5 @@
 ---
-title: Still image SCSI I/O structures
+title: Still Image SCSI I/O Structures
 description: Still image SCSI I/O structures
 ms.date: 05/04/2023
 ---

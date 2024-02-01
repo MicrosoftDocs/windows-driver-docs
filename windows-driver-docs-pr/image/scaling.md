@@ -1,5 +1,5 @@
 ---
-title: Scaling element
+title: Scaling Element
 description: The optional Scaling element specifies the scaling of both the width and height of the scanned document.
 keywords: ["Scaling element Imaging Devices"]
 topic_type:

@@ -1,5 +1,5 @@
 ---
-title: ClientDisplayName element
+title: ClientDisplayName Element
 description: The required ClientDisplayName element specifies the string that the scanner should display in its user interface.
 keywords: ["ClientDisplayName element Imaging Devices"]
 topic_type:

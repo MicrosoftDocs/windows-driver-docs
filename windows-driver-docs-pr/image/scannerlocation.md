@@ -1,5 +1,5 @@
 ---
-title: ScannerLocation element
+title: ScannerLocation Element
 description: The optional ScannerLocation element specifies the administratively assigned location of the scanner.
 keywords: ["ScannerLocation element Imaging Devices"]
 topic_type:

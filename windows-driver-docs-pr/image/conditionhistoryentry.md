@@ -1,5 +1,5 @@
 ---
-title: ConditionHistoryEntry element
+title: ConditionHistoryEntry Element
 description: The required ConditionHistoryEntry element provides details about one of the past conditions on the scanner.
 keywords: ["ConditionHistoryEntry element Imaging Devices"]
 topic_type:

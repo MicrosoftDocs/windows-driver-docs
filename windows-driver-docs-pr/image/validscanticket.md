@@ -1,5 +1,5 @@
 ---
-title: ValidScanTicket element
+title: ValidScanTicket Element
 description: The optional ValidScanTicket element contains a valid ScanTicket.
 keywords: ["ValidScanTicket element Imaging Devices"]
 topic_type:

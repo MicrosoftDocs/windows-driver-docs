@@ -1,5 +1,5 @@
 ---
-title: ScannerDescription element
+title: ScannerDescription Element
 description: ScannerDescription element
 keywords: ["ScannerDescription element Imaging Devices"]
 topic_type:

@@ -1,5 +1,5 @@
 ---
-title: CompressionQualityFactorSupported element
+title: CompressionQualityFactorSupported Element
 description: The required CompressionQualityFactorSupported element specifies the range of compression quality factors that the scan device supports.
 keywords: ["CompressionQualityFactorSupported element Imaging Devices"]
 topic_type:

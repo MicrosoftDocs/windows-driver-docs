@@ -1,5 +1,5 @@
 ---
-title: Format element
+title: Format Element
 description: The optional Format element indicates a single file format and compression type supported by the scanner.
 keywords: ["Format element Imaging Devices"]
 topic_type:

@@ -1,5 +1,5 @@
 ---
-title: ScannerStatusConditionClearedEvent element
+title: ScannerStatusConditionClearedEvent Element
 description: The required ScannerStatusConditionClearedEvent element informs the client that a previously reported DeviceCondition condition has been cleared at the scanner.
 keywords: ["ScannerStatusConditionClearedEvent element Imaging Devices"]
 topic_type:

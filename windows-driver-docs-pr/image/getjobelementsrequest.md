@@ -1,5 +1,5 @@
 ---
-title: GetJobElementsRequest element
+title: GetJobElementsRequest Element
 description: The required GetJobElementsRequest element requests information that is related to the job that the JobId element identifies.
 keywords: ["GetJobElementsRequest element Imaging Devices"]
 topic_type:

@@ -1,5 +1,5 @@
 ---
-title: ADFResolutions element
+title: ADFResolutions Element
 description: The required ADFResolutions element contains a list of resolutions at which the front or back side of the scanner's automatic document feeder (ADF) can scan.
 keywords: ["ADFResolutions element Imaging Devices"]
 topic_type:

@@ -1,5 +1,5 @@
 ---
-title: Name Element for DeviceCondition and ConditionHistoryEntry element
+title: Name Element for DeviceCondition and ConditionHistoryEntry Element
 description: The required Name element names the current error condition that is specified in a DeviceCondition or ConditionHistoryEntry element.
 keywords: ["Name Element for DeviceCondition and ConditionHistoryEntry element Imaging Devices"]
 topic_type:

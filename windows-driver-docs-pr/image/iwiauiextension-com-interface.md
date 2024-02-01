@@ -1,5 +1,5 @@
 ---
-title: IWiaUIExtension COM interface
+title: IWiaUIExtension COM Interface
 description: IWiaUIExtension COM interface
 ms.date: 05/03/2023
 ---

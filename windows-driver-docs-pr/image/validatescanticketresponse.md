@@ -1,5 +1,5 @@
 ---
-title: ValidateScanTicketResponse element
+title: ValidateScanTicketResponse Element
 description: The required ValidateScanTicketResponse operation notifies the client whether a client's submitted ScanTicket is valid.
 keywords: ["ValidateScanTicketResponse element Imaging Devices"]
 topic_type:

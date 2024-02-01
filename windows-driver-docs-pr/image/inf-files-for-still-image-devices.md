@@ -1,5 +1,5 @@
 ---
-title: INF files for still image devices
+title: INF Files for Still Image Devices
 description: INF files for still image devices
 ms.date: 05/03/2023
 ---

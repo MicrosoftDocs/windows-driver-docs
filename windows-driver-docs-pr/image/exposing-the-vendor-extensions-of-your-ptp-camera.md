@@ -1,5 +1,5 @@
 ---
-title: Exposing the Vendor Extensions of Your PTP Camera
+title: Exposing the Vendor Extensions of your PTP Camera
 description: Exposing the Vendor Extensions of Your PTP Camera
 ms.date: 04/20/2017
 ---

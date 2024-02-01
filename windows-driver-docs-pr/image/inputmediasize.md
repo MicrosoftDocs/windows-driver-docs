@@ -1,5 +1,5 @@
 ---
-title: InputMediaSize element
+title: InputMediaSize Element
 description: The required InputMediaSize element specifies the size of the media to be scanned for the current job.
 keywords: ["InputMediaSize element Imaging Devices"]
 topic_type:

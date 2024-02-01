@@ -1,5 +1,5 @@
 ---
-title: JobOriginatingUserName element
+title: JobOriginatingUserName Element
 description: The required JobOriginatingUserName element specifies the name of the user who submitted the scan job.
 keywords: ["JobOriginatingUserName element Imaging Devices"]
 topic_type:
