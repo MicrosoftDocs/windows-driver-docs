@@ -1,5 +1,5 @@
 ---
-title: FSCTL_OPLOCK_BREAK_ACK_NO_2 control code
+title: FSCTL_OPLOCK_BREAK_ACK_NO_2 Control Code
 description: The FSCTL_OPLOCK_BREAK_ACK_NO_2 control code responds to notification that an exclusive (level 1, batch, or filter) opportunistic lock (oplock) on a file has been broken.
 keywords: ["FSCTL_OPLOCK_BREAK_ACK_NO_2 control code Installable File System Drivers"]
 topic_type:

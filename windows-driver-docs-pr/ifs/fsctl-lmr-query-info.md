@@ -1,5 +1,5 @@
 ---
-title: FSCTL_LMR_QUERY_INFO control code
+title: FSCTL_LMR_QUERY_INFO Control Code
 description: The FSCTL_LMR_QUERY_INFO control code retrieves the desired information for a remote file or directory opened locally.
 keywords: ["FSCTL_LMR_QUERY_INFO control code File System Filter Drivers"]
 topic_type:

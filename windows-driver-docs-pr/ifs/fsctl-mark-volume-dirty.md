@@ -1,5 +1,5 @@
 ---
-title: FSCTL_MARK_VOLUME_DIRTY control code
+title: FSCTL_MARK_VOLUME_DIRTY Control Code
 description: The FSCTL_MARK_VOLUME_DIRTY control code marks a specified volume as dirty, which triggers Autochk.exe to run on the volume during the next system restart.
 keywords: ["FSCTL_MARK_VOLUME_DIRTY control code Installable File System Drivers"]
 topic_type:

@@ -1,5 +1,5 @@
 ---
-title: IRP major function codes for FS and legacy filters
+title: IRP Major Function Codes for FS and Legacy Filters
 description: major function codes for FS and legacy filters
 keywords:
 - IRPs, file system drivers

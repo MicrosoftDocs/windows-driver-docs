@@ -1,5 +1,5 @@
 ---
-title: FSCTL_OFFLOAD_READ control code
+title: FSCTL_OFFLOAD_READ Control Code
 description: The FSCTL_OFFLOAD_READ control code initiates an offload read for a block of data in a storage system that supports offload read primitives.
 keywords: ["FSCTL_OFFLOAD_READ control code Installable File System Drivers"]
 topic_type:

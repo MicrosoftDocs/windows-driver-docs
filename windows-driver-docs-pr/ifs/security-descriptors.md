@@ -1,5 +1,5 @@
 ---
-title: Security descriptors in file systems
+title: Security Descriptors in File Systems
 description: Describes file system support of security descriptors
 keywords:
 - security WDK file systems , descriptors

@@ -1,5 +1,5 @@
 ---
-title: Load order groups and altitudes for minifilter drivers
+title: Load Order Groups and Altitudes for Minifilter Drivers
 description: Describes load order groups and altitudes for minifilter drivers
 keywords:
 - altitudes WDK file system minifilter

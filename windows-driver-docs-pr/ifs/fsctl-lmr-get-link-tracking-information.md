@@ -1,5 +1,5 @@
 ---
-title: FSCTL_LMR_GET_LINK_TRACKING_INFORMATION control code
+title: FSCTL_LMR_GET_LINK_TRACKING_INFORMATION Control Code
 description: The FSCTL_LMR_GET_LINK_TRACKING_INFORMATION control code retrieves the link tracking information for a file.
 keywords: ["FSCTL_LMR_GET_LINK_TRACKING_INFORMATION control code Installable File System Drivers"]
 topic_type:

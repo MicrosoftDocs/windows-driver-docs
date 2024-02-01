@@ -1,5 +1,5 @@
 ---
-title: IRP_MJ_SHUTDOWN (FS and filter drivers)
+title: IRP_MJ_SHUTDOWN (FS and Filter Drivers)
 description: IRP_MJ_SHUTDOWN
 keywords: ["IRP_MJ_SHUTDOWN Installable File System Drivers"]
 topic_type:

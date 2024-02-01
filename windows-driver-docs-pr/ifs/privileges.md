@@ -1,5 +1,5 @@
 ---
-title: Managing privileges in a file system
+title: Managing Privileges in a File System
 description: Describes how to manage privileges in a file system
 keywords:
 - security WDK file systems , privileges

@@ -1,5 +1,5 @@
 ---
-title: FSCTL_QUERY_PERSISTENT_VOLUME_STATE control code
+title: FSCTL_QUERY_PERSISTENT_VOLUME_STATE Control Code
 description: The FSCTL_QUERY_PERSISTENT_VOLUME_STATE control code retrieves persistent settings for a file system volume.
 keywords: ["FSCTL_QUERY_PERSISTENT_VOLUME_STATE control code Installable File System Drivers"]
 topic_type:

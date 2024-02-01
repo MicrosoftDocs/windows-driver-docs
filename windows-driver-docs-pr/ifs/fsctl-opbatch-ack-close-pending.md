@@ -1,5 +1,5 @@
 ---
-title: FSCTL_OPBATCH_ACK_CLOSE_PENDING control code
+title: FSCTL_OPBATCH_ACK_CLOSE_PENDING Control Code
 description: The FSCTL_OPBATCH_ACK_CLOSE_PENDING control code responds to notification that an exclusive (level 1, batch, or filter) opportunistic lock (oplock) on a file has been broken.
 keywords: ["FSCTL_OPBATCH_ACK_CLOSE_PENDING control code Installable File System Drivers"]
 topic_type:

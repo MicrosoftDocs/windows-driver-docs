@@ -1,5 +1,5 @@
 ---
-title: FSCTL_REQUEST_BATCH_OPLOCK control code
+title: FSCTL_REQUEST_BATCH_OPLOCK Control Code
 description: The FSCTL_REQUEST_BATCH_OPLOCK control code requests a batch opportunistic lock (oplock) on a file.
 keywords: ["FSCTL_REQUEST_BATCH_OPLOCK control code Installable File System Drivers"]
 topic_type:

@@ -1,5 +1,5 @@
 ---
-title: IRP_MJ_READ (FS and filter drivers)
+title: IRP_MJ_READ (FS and Filter Drivers)
 description: IRP_MJ_READ
 keywords: ["IRP_MJ_READ Installable File System Drivers"]
 topic_type:

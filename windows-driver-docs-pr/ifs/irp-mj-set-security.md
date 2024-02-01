@@ -1,5 +1,5 @@
 ---
-title: IRP_MJ_SET_SECURITY (FS and filter drivers)
+title: IRP_MJ_SET_SECURITY (FS and Filter Drivers)
 description: IRP_MJ_SET_SECURITY
 keywords: ["IRP_MJ_SET_SECURITY Installable File System Drivers"]
 topic_type:

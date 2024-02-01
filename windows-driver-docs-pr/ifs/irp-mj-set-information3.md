@@ -1,5 +1,5 @@
 ---
-title: Security checks on IRP_MJ_SET_INFORMATION
+title: Security Checks on IRP_MJ_SET_INFORMATION
 description: Describes how a file system does security checks on IRP_MJ_SET_INFORMATION
 keywords:
 - IRP_MJ_SET_INFORMATION
