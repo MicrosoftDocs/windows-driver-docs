@@ -1,5 +1,5 @@
 ---
-title: Windows driver samples
+title: Windows Driver Samples
 description: Windows 10 driver samples are available on the Microsoft Samples portal and on GitHub.
 ms.date: 03/22/2023
 ---
