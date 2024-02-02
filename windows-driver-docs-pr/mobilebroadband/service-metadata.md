@@ -1,5 +1,5 @@
 ---
-title: Service metadata overview
+title: Service Metadata Overview
 description: Service metadata overview
 ms.date: 10/06/2023
 ---

@@ -1,5 +1,5 @@
 ---
-title: ServiceInfo XML schema overview
+title: ServiceInfo XML Schema Overview
 description: ServiceInfo XML schema overview
 ms.date: 07/05/2019
 ---

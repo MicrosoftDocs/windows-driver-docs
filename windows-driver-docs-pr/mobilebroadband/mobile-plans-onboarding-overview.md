@@ -1,5 +1,5 @@
 ---
-title: Mobile Plans onboarding
+title: Mobile Plans Onboarding
 description: An overview of the steps required to onboard to Mobile Plans
 keywords:
 - Windows Mobile Plans mobile operator onboarding

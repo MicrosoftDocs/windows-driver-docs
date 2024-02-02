@@ -1,5 +1,5 @@
 ---
-title: Submitting the desktop COSA/APN database update
+title: Submitting the Desktop COSA/APN Database Update
 description: Submitting the desktop COSA/APN database update
 ms.date: 01/02/2024
 author: mhopkins-msft

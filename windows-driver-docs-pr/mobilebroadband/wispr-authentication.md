@@ -1,5 +1,5 @@
 ---
-title: WISPr authentication overview
+title: WISPr Authentication Overview
 description: WISPr authentication overview
 ms.date: 10/06/2023
 ---

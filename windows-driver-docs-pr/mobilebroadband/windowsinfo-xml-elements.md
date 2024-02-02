@@ -1,5 +1,5 @@
 ---
-title: WindowsInfo XML elements list
+title: WindowsInfo XML Elements List
 description: WindowsInfo XML elements list
 ms.date: 07/05/2019
 ---

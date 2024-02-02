@@ -1,5 +1,5 @@
 ---
-title: SMS device storage limits
+title: SMS Device Storage Limits
 description: SMS device storage limits
 ms.date: 04/20/2017
 ---

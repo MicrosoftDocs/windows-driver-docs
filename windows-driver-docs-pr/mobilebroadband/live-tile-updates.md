@@ -1,5 +1,5 @@
 ---
-title: Live tile updates
+title: Live Tile Updates
 description: Live tile updates
 ms.date: 04/20/2017
 ---

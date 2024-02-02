@@ -1,5 +1,5 @@
 ---
-title: COSA overview
+title: COSA Overview
 description: COSA overview
 ms.date: 01/02/2024
 author: mhopkins-msft

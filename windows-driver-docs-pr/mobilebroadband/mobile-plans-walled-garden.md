@@ -1,5 +1,5 @@
 ---
-title: Mobile Plans walled garden
+title: Mobile Plans Walled Garden
 description: Mobile Plans walled garden
 keywords:
 - Windows Mobile Plans mobile operators walled garden

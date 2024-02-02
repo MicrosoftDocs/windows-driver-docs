@@ -1,5 +1,5 @@
 ---
-title: Mobile Plans general appendix
+title: Mobile Plans General Appendix
 description: This topic describes appendix information for the Mobile Plans program.
 keywords:
 - Windows Mobile Plans appendix, Mobile Plans appendix mobile operators

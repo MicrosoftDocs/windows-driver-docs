@@ -1,5 +1,5 @@
 ---
-title: Establish temporary network connectivity
+title: Establish Temporary Network Connectivity
 description: Establish temporary network connectivity
 ms.date: 04/20/2017
 ---

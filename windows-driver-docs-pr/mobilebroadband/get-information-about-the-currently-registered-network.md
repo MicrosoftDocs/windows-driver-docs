@@ -1,5 +1,5 @@
 ---
-title: Get information about the currently registered network
+title: Get Information About the Currently Registered Network
 description: Get information about the currently registered network
 ms.date: 04/20/2017
 ---

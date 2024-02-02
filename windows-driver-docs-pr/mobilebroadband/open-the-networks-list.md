@@ -1,5 +1,5 @@
 ---
-title: Open the networks list
+title: Open the Networks List
 description: Open the networks list
 ms.date: 04/20/2017
 ---

@@ -1,5 +1,5 @@
 ---
-title: PackageInfo XML elements list
+title: PackageInfo XML Elements List
 description: PackageInfo XML elements list
 ms.date: 07/05/2019
 ---

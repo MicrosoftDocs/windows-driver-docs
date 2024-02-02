@@ -1,5 +1,5 @@
 ---
-title: Mobile Plans service configuration
+title: Mobile Plans Service Configuration
 description: This topic describes the configuration steps for the Mobile Plans program.
 keywords:
 - Windows Mobile Plans configuration, Mobile Plans configuration mobile operators

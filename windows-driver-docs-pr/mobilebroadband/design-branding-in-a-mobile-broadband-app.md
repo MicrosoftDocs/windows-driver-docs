@@ -1,5 +1,5 @@
 ---
-title: Design branding in a mobile broadband app
+title: Design Branding in a Mobile Broadband App
 description: Design branding in a mobile broadband app
 ms.date: 10/05/2023
 ---

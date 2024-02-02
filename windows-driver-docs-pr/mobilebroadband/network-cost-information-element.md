@@ -1,5 +1,5 @@
 ---
-title: Network cost information element
+title: Network Cost Information Element
 description: Network cost information element
 ms.date: 05/31/2021
 ---

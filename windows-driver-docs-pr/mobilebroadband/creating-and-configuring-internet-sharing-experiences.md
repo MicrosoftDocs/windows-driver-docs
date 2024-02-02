@@ -1,5 +1,5 @@
 ---
-title: Creating and configuring Internet Sharing experiences
+title: Creating and Configuring Internet Sharing Experiences
 description: Creating and configuring Internet Sharing experiences
 ms.date: 04/20/2017
 ---

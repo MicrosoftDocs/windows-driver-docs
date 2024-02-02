@@ -1,5 +1,5 @@
 ---
-title: PackageInfo XML schema definition
+title: PackageInfo XML Schema Definition
 description: PackageInfo XML schema definition
 ms.date: 04/20/2017
 ---

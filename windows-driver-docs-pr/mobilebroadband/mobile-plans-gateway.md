@@ -1,5 +1,5 @@
 ---
-title: Mobile Plans gateway page
+title: Mobile Plans Gateway Page
 description: Mobile Plans gateway page
 keywords:
 - Windows Mobile Plans mobile operators

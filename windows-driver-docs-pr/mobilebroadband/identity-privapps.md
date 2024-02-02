@@ -1,5 +1,5 @@
 ---
-title: Identity (SoftwareInfo - priviliged applications)
+title: Identity (SoftwareInfo - Priviliged Applications)
 description: Identity (SoftwareInfo - priviliged applications)
 ms.date: 04/20/2017
 ---

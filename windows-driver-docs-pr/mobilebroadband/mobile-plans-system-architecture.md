@@ -1,5 +1,5 @@
 ---
-title: Mobile Plans system architecture
+title: Mobile Plans System Architecture
 description: Mobile Plans system architecture
 keywords:
 - Windows Mobile Plans mobile operators

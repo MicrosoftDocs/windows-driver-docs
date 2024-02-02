@@ -1,5 +1,5 @@
 ---
-title: Get SMS device information
+title: Get SMS Device Information
 description: Get SMS device information
 ms.date: 04/20/2017
 ---

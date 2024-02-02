@@ -1,5 +1,5 @@
 ---
-title: Developer guide for creating service metadata
+title: Developer Guide for Creating Service Metadata
 description: Developer guide for creating service metadata
 ms.date: 10/06/2023
 ---

@@ -1,5 +1,5 @@
 ---
-title: Retrieve ConnectionProfile objects for a MobileBroadbandAccount
+title: Retrieve ConnectionProfile Objects for a MobileBroadbandAccount
 description: Retrieve ConnectionProfile objects for a MobileBroadbandAccount
 ms.date: 04/20/2017
 ---

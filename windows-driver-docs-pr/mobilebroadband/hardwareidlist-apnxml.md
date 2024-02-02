@@ -1,5 +1,5 @@
 ---
-title: HardwareIDList (APN element)
+title: HardwareIDList (APN Element)
 description: HardwareIDList (APN element)
 ms.date: 04/20/2017
 ---

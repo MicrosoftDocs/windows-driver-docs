@@ -1,5 +1,5 @@
 ---
-title: Account management
+title: Account Management
 description: Account management
 ms.date: 10/05/2023
 ---

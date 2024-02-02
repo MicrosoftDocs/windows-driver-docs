@@ -1,5 +1,5 @@
 ---
-title: Read received SMS by using the text-mode interface
+title: Read Received SMS by Using the Text-Mode Interface
 description: Read received SMS by using the text-mode interface
 ms.date: 04/20/2017
 ---

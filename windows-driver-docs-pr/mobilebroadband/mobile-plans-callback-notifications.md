@@ -1,5 +1,5 @@
 ---
-title: Mobile Plans callback notifications
+title: Mobile Plans Callback Notifications
 description: Learn about the Callback notifications support by the Mobile Plans app. See code examples and view additional available information.
 keywords:
 - Windows Mobile Plans Callback notifications, Mobile Plans implementation mobile operators

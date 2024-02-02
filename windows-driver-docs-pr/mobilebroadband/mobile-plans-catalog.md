@@ -1,5 +1,5 @@
 ---
-title: Mobile Plans catalog
+title: Mobile Plans Catalog
 description: Mobile Plans catalog
 keywords:
 - Windows Mobile Plans mobile operators
