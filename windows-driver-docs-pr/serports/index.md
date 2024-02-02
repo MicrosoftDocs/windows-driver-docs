@@ -4,7 +4,6 @@ description: You can design a driver or application that uses the serial I/O req
 ms.assetid: 66120e14-20dc-4220-b340-c05cbc59dac8
 ms.date: 05/04/2022
 ms.topic: article
-ms.custom: contperf-fy22q4
 ---
 
 # Serial Controller Driver Design Guide

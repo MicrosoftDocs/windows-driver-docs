@@ -6,7 +6,6 @@ keywords:
 - offloaded data transfers
 - Windows offloaded data transfers
 - offloaded data transfers, storage
-ms.custom: contperf-fy22q1
 ---
 
 # Windows Storage Offloaded Data Transfer

@@ -8,7 +8,7 @@ keywords:
 - nodes WDK SANs
 - SAN NIC WDK SANs
 ms.date: 01/28/2022
-ms.custom: contperf-fy23q3
+ms.custom: engagement-fy23
 ---
 
 # Introduction to System Area Networks
@@ -77,14 +77,3 @@ A kernel-mode provider for a particular SAN. (Reserved for future use.)
 
 [Virtual Interface Architecture and Support for SAN](virtual-interface-architecture-and-support-for-san.md)
  
-
-
-
-
-
-
-
-
-
-
-

@@ -2,7 +2,6 @@
 title: Standardized INF Keywords for Power Management
 description: Standardized INF Keywords for Power Management
 ms.date: 01/29/2021
-ms.custom: contperf-fy21q3
 ---
 
 # Standardized INF Keywords for Power Management
@@ -118,4 +117,3 @@ The following table describes the possible INF entries for the power management 
 |**\*DeviceSleepOnDisconnect**|Device sleep on disconnect|0|Disabled|
 |||1 (Default)|Enabled|
  
-

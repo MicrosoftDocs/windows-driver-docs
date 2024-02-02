@@ -3,7 +3,6 @@ title: System Shutdown State S5
 description: System Shutdown State S5
 keywords: ["S5 WDK power management", "system shutdown states WDK power management", "software resumption WDK power management", "resumption WDK power management", "hardware latency WDK power management", "system hardware context WDK power management", "hardware context WDK power management", "context WDK power management", "latency WDK power management", "system power states WDK kernel , shutdown state", "shutdown states WDK power management"]
 ms.date: 06/07/2021
-ms.custom: contperf-fy21q4
 ---
 
 # System Shutdown State S5

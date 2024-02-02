@@ -6,7 +6,6 @@ keywords:
 - COM ports WDK serial devices
 - Serial driver WDK , COM ports
 ms.date: 03/17/2022
-ms.custom: contperf-fy22q4
 ---
 
 # Programming Installation of Serial Ports and COM Ports

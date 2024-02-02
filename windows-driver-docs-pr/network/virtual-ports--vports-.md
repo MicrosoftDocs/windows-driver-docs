@@ -2,7 +2,6 @@
 title: Virtual Ports (VPorts)
 description: A VPort is a data object that represents an internal port on the NIC switch of a network adapter that supports single root I/O virtualization (SR-IOV).
 ms.date: 03/09/2022
-ms.custom: contperf-fy22q3
 ---
 
 # Virtual Ports (VPorts)

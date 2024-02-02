@@ -5,7 +5,6 @@ keywords:
 - processors WDK RSS
 - CPU configuration WDK RSS
 ms.date: 09/21/2020
-ms.custom: contperf-fy21q1
 ---
 
 # Setting the Number of RSS Processors

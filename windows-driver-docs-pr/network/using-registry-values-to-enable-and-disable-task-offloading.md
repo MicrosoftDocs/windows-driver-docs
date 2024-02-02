@@ -7,7 +7,6 @@ keywords:
 - task offload WDK TCP/IP transport , enabling services
 - task offload WDK TCP/IP transport , disabling services
 ms.date: 10/30/2020
-ms.custom: contperf-fy21q2 
 ---
 
 # Using Registry Values to Enable and Disable Task Offloading
@@ -123,4 +122,3 @@ Setting this value to one disables all of the task offloads from the TCP/IP tran
 Setting this value to zero disables Internet protocol security (IPsec) offloads from the TCP/IP transport. The offloading of TCP/IP checksum tasks, large send offload version 1 (LSOV1), and large send offload version 2 (LSOV2) are not affected. Setting this value to one enables IPsec offloads.
 
  
-

@@ -2,7 +2,6 @@
 title: Distinguishing Fast Startup from Wake-from-Hibernation
 description: Starting with Windows 8, a fast startup mode is available to start a computer in less time than is typically required for a traditional, cold startup.
 ms.date: 05/10/2021
-ms.custom: contperf-fy21q4
 ---
 
 # Distinguishing Fast Startup from Wake-from-Hibernation
@@ -41,4 +40,3 @@ To prepare for a fast startup, Windows performs a full shutdown sequence and sav
 3. Finally, Windows saves the kernel memory image (including the loaded kernel-mode drivers) in Hiberfil.sys and shuts down the computer.
 
 If the driver for a device configures the device differently depending on whether a cold startup or a wake-from-hibernation occurred, this driver should, after a fast startup, configure the device as though a cold startup occurred. For example, the system-supplied NDIS driver disables miniport wake capabilities on a fast startup but not on a wake-from-hibernation.
-
