@@ -1,5 +1,5 @@
 ---
-title: PCI driver programming guide
+title: PCI Driver Programming Guide
 description: PCI driver programming guide
 ms.assetid: 014f6243-6166-42e1-9f0f-1a438c77fd78
 keywords:
