@@ -1,5 +1,5 @@
 ---
-title: Installing Device Metadata Packages Through a Driver Package
+title: Installing Device Metadata Packages through a Driver Package
 description: Installing Device Metadata Packages through a Driver Package
 ms.date: 04/20/2017
 ---

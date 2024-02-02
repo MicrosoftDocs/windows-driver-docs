@@ -1,5 +1,5 @@
 ---
-title: Test-Signing a Driver Binary Through an Embedded Signature
+title: Test-Signing a Driver Binary through an Embedded Signature
 description: Test-Signing a Driver Binary through an Embedded Signature
 ms.date: 03/03/2022
 ---

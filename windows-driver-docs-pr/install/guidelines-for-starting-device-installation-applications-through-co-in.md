@@ -1,5 +1,5 @@
 ---
-title: Starting Device Installation Applications Through Co-installers
+title: Starting Device Installation Applications through Co-installers
 description: Guidelines for Starting Device Installation Applications through Co-installers
 ms.date: 04/20/2017
 ---
