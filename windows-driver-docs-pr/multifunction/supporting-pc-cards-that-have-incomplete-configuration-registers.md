@@ -1,5 +1,5 @@
 ---
-title: Supporting PC Cards That Have Incomplete Configuration Registers
+title: Supporting PC Cards that have Incomplete Configuration Registers
 description: Provides information on supporting PC cards that have incomplete configuration registers.
 keywords:
 - incomplete configuration registers WDK multifunction devices

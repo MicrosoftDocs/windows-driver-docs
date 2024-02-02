@@ -1,5 +1,5 @@
 ---
-title: Multifunction device driver design guide
+title: Multifunction Device Driver Design Guide
 description: Provides design guidance for multifunction devices
 keywords:
 - multifunction devices WDK
