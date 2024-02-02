@@ -1,5 +1,5 @@
 ---
-title: Configuration of COM ports
+title: Configuration of COM Ports
 description: Configuration of COM ports
 keywords:
 - COM ports WDK serial devices
