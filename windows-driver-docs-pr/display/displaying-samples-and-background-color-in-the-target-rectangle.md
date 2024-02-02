@@ -7,7 +7,6 @@ keywords:
 - background color options WDK DirectX VA
 - deinterlacing WDK DirectX VA , target rectangle
 ms.date: 12/06/2018
-ms.custom: seodec18
 ---
 
 # Displaying Samples and Background Color in the Target Rectangle
@@ -33,8 +32,3 @@ The following topics show how to display various samples with background color i
  
 
  
-
-
-
-
-

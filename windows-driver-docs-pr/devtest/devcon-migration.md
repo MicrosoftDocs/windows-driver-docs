@@ -8,7 +8,6 @@ keywords:
 - DevCon WDK , commands
 - Device Console WDK , commands
 - commands WDK DevCon
-ms.custom: contperf-fy22q3
 ms.date: 06/19/2023
 ---
 

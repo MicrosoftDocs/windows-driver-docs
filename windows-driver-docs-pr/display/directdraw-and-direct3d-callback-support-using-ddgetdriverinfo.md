@@ -9,7 +9,6 @@ keywords:
 - callback functions WDK Direct3D
 - DirectDraw driver initialization WDK Windows 2000 display , callback functions
 ms.date: 12/06/2018
-ms.custom: seodec18
 ---
 
 # DirectDraw and Direct3D Callback Support Using DdGetDriverInfo
@@ -83,4 +82,3 @@ The display driver can implement the [**DdGetDriverInfo**](/windows/win32/api/dd
 <!-- -->
 
 -   If the driver receives the GUID\_VideoPortCallbacks GUID, it returns a pointer to the [**DD\_VIDEOPORTCALLBACKS**](/windows/win32/api/ddrawint/ns-ddrawint-dd_videoportcallbacks) structure to indicate its support of [VPE Callback Functions](vpe-callback-functions.md). For more information, see [Video Port Extensions to DirectX](video-port-extensions-to-directx.md).
-

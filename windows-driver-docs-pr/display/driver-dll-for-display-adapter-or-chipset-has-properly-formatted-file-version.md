@@ -2,7 +2,6 @@
 title: File Version Formatting for Display Driver DLLs
 description: This topic describes the proper formatting for display driver DLLs for display adapters and chipsets.
 ms.date: 12/06/2018
-ms.custom: seodec18
 ---
 
 # File Version Formatting for Display Driver DLLs
@@ -48,8 +47,3 @@ For example:
  
 
  
-
-
-
-
-

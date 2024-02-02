@@ -9,7 +9,6 @@ keywords:
 - video port extensions WDK DirectDraw , kernel-mode video transport
 - VPEs WDK DirectDraw , kernel-mode video transport
 ms.date: 12/06/2018
-ms.custom: seodec18
 ---
 
 # DirectDraw Interfaces for Kernel-Mode Video Transport Support
@@ -19,4 +18,3 @@ The kernel-mode video transport must keep track of surface information for each 
 A good example of how a driver can use these **dwDriverReserved**_N_ members is to set a flag indicating which physical overlay an overlay surface is using if the hardware supports more than one physical overlay.
 
  
-

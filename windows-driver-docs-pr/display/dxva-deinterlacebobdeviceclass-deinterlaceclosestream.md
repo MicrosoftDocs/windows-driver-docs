@@ -10,7 +10,6 @@ api_name:
 api_type:
 - COM
 ms.date: 12/06/2018
-ms.custom: seodec18
 ---
 
 # DXVA\_DeinterlaceBobDeviceClass::DeinterlaceCloseStream method
@@ -44,4 +43,3 @@ The *DeinterlaceCloseStream* function maps directly to the **DestroyMoComp** mem
 [**DeinterlaceOpenStream**](dxva-deinterlacebobdeviceclass-deinterlaceopenstream.md)
 
  
-

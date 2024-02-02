@@ -2,7 +2,6 @@
 title: Custom Symbol Stores and Symbol Servers
 description: Custom Symbol Stores and Symbol Servers
 keywords: ["symbol servers", "symbol servers, overview", "symbol stores", "symbol stores, overview", "SymSrv", "SymSrv, overview", "SymStore", "SymStore, overview"]
-ms.custom: contperf-fy22q2
 ms.date: 10/28/2021
 ---
 

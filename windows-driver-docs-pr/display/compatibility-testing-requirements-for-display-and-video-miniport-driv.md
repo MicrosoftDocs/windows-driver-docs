@@ -9,7 +9,6 @@ keywords:
 - compatibility testing WDK Windows 2000 display
 - testing compatibility WDK Windows 2000 display
 ms.date: 12/06/2018
-ms.custom: seodec18
 ---
 
 # Compatibility Testing Requirements for Display and Video Miniport Drivers
@@ -25,8 +24,3 @@ This section lists some of the requirements for NT-based operating system graphi
  
 
  
-
-
-
-
-

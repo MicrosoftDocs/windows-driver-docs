@@ -1,6 +1,6 @@
 ---
 title: Bug Check 0x124 WHEA_UNCORRECTABLE_ERROR
-description: Learn about the bug check 0x124 WHEA_UNCORRECTABLE_ERROR, which indicates that a fatal hardware error has occurred. 
+description: Learn about the bug check 0x124 WHEA_UNCORRECTABLE_ERROR, which indicates that a fatal hardware error has occurred.
 keywords: ["Bug Check 0x124 WHEA_UNCORRECTABLE_ERROR", "WHEA_UNCORRECTABLE_ERROR"]
 ms.date: 12/12/2022
 topic_type:
@@ -10,7 +10,6 @@ api_name:
 - WHEA_UNCORRECTABLE_ERROR
 api_type:
 - NA
-ms.custom: contperf-fy22q1
 ---
 
 # Bug Check 0x124: WHEA_UNCORRECTABLE_ERROR
