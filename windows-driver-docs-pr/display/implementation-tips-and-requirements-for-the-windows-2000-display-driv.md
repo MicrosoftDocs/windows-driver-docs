@@ -2,7 +2,6 @@
 title: Tips and Requirements - Windows 2000 Display Driver Model
 description: Implementation Tips and Requirements for the Windows 2000 Display Driver Model
 ms.date: 12/06/2018
-ms.custom: seodec18
 ---
 
 # Tips and Requirements for the Windows 2000 Display Driver Model
@@ -19,8 +18,3 @@ The following topics discuss tips and requirements for implementing display and 
  
 
  
-
-
-
-
-

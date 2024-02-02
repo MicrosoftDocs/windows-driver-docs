@@ -12,7 +12,6 @@ api_location:
 api_type:
 - COM
 ms.date: 12/06/2018
-ms.custom: seodec18
 ---
 
 # DXVA\_DeinterlaceContainerDeviceClass::ProcAmpControlQueryCaps method
@@ -143,4 +142,3 @@ DXVA_DeinterlaceContainerDeviceClass::ProcAmpControlQueryCaps(
 [**DD\_MOTIONCOMPCALLBACKS**](/windows/win32/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks)
 
 [**DD\_RENDERMOCOMPDATA**](/windows/win32/api/ddrawint/ns-ddrawint-dd_rendermocompdata)
-

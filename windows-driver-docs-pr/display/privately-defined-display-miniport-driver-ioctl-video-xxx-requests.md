@@ -8,7 +8,6 @@ keywords:
 - IOCTL_VIDEO_XXX requests WDK video miniport
 - I/O WDK video miniport
 ms.date: 12/06/2018
-ms.custom: seodec18
 ---
 
 # Privately Defined Display-Miniport Driver IOCTL\_VIDEO\_XXX Requests
@@ -20,4 +19,3 @@ However, only a specific display-and-miniport driver pair can use privately defi
 For more information about defining private I/O control codes, see [Using I/O Control Codes](../kernel/introduction-to-i-o-control-codes.md).
 
  
-

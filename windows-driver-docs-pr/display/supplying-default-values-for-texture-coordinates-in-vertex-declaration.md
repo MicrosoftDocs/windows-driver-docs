@@ -5,7 +5,6 @@ keywords:
 - vertex declarations WDK DirectX 9.0
 - texture coordinates WDK DirectX 9.0
 ms.date: 12/06/2018
-ms.custom: seodec18
 ---
 
 # Default Texture Coordinates in Vertex Declarations
@@ -24,4 +23,3 @@ The exception for [source parameter tokens](./source-parameter-token.md) is with
 For this instruction, the source parameter tokens (f\#) are taken as 32-bit floats.
 
  
-

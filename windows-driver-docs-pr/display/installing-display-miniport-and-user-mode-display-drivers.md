@@ -11,7 +11,6 @@ keywords:
 - INF files WDK display , about driver installations
 - miniport drivers WDK display , installing
 ms.date: 12/06/2018
-ms.custom: seodec18
 ---
 
 # Installation Requirements for Display Miniport and User-Mode Display Drivers
@@ -56,4 +55,3 @@ You should refer to the [Overview of INF Files](../install/overview-of-inf-files
 **Note**   There are no INF sections and directives for uninstalling display drivers that are specific to graphic devices.
 
  
-

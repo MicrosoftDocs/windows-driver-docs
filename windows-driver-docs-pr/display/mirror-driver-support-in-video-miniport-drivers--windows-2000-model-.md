@@ -5,7 +5,6 @@ keywords:
 - video miniport drivers WDK Windows 2000 , mirror drivers
 - mirror drivers WDK Windows 2000 display
 ms.date: 12/06/2018
-ms.custom: seodec18
 ---
 
 # Mirror Driver Support in Video Miniport Drivers (Windows 2000 Model)

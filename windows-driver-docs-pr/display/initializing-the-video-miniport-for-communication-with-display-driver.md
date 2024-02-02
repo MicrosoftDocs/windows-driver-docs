@@ -7,7 +7,6 @@ keywords:
 - HwVidInitialize
 - one-time initialization WDK video miniport
 ms.date: 12/06/2018
-ms.custom: seodec18
 ---
 
 # Initializing the Video Miniport for Communication with Display Driver
@@ -21,4 +20,3 @@ When the [*HwVidInitialize*](/windows-hardware/drivers/ddi/video/nc-video-pvideo
 Usually, a display driver controls the display the end user sees, except occasionally when a full-screen MS-DOS application is run in an x86-based machine running an NT-based operating system. For more information about supporting this feature in VGA-compatible miniport drivers, see [VGA-Compatible Video Miniport Drivers (Windows 2000 Model)](vga-compatible-video-miniport-drivers--windows-2000-model-.md).
 
 The [*HwVidInitialize*](/windows-hardware/drivers/ddi/video/nc-video-pvideo_hw_initialize) function can call [**VideoPortGetRegistryParameters**](/windows-hardware/drivers/ddi/video/nf-video-videoportgetregistryparameters) or [**VideoPortSetRegistryParameters**](/windows-hardware/drivers/ddi/video/nf-video-videoportsetregistryparameters) to get and set configuration information in the registry. For example, *HwVidInitialize* might call **VideoPortSetRegistryParameters** to set up nonvolatile configuration information in the registry for the next boot. It might call **VideoPortGetRegistryParameters** to get adapter-specific, bus-relative configuration parameters written into the registry by an installation program.
-

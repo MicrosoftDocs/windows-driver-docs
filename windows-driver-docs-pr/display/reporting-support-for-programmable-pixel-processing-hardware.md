@@ -5,7 +5,6 @@ keywords:
 - pixel shaders WDK DirectX 8.0 , programmable hardware
 - programmable pixel processing hardware WDK DirectX 8.0
 ms.date: 12/06/2018
-ms.custom: seodec18
 ---
 
 # Reporting Support for Programmable Pixel Shader Hardware
@@ -25,8 +24,3 @@ Implementations must allow data within the range they report to pass through pix
  
 
  
-
-
-
-
-
