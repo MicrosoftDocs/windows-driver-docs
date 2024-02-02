@@ -1,10 +1,13 @@
 ---
 title: Memory Overwrite Request Control (MOR) LOCK version 2
 description: Provides information about Memory Overwrite Request Control (MOR) LOCK version 2.
-ms.date: 03/23/2023
+ms.date: 02/01/2024
 ---
 
 # Memory Overwrite Request Control (MOR) lock version 2
+
+> [!WARNING]
+> Memory Overwrite Request Control (MOR) lock cannot be unlocked in Windows systems running with Virtualization Based Security (VBS) and/or Hypervisor-enforced Code Integrity (HVCI) which is the default configuration for Windows 11 22H2 and later versions.
 
 To prevent advanced memory attacks, the existing system BIOS security mitigation MemoryOverwriteRequestControl is improved to support locking to defend against new threats.
 
