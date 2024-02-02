@@ -1,5 +1,5 @@
 ---
-title: Memory (print)
+title: Memory (Print)
 description: The value entries for the memory installed in the print device
 ms.date: 07/07/2020
 ---

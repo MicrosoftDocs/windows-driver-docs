@@ -1,5 +1,5 @@
 ---
-title: Delete a port
+title: Delete a Port
 description: Provides information about how to delete a port.
 keywords:
 - port management WDK print, deleting ports

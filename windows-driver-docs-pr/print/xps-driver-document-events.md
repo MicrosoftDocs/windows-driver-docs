@@ -1,5 +1,5 @@
 ---
-title: XPS driver document events
+title: XPS Driver Document Events
 description: Provides information about XPS driver document events.
 keywords:
 - Version 3 XPS drivers WDK XPSDrv , events

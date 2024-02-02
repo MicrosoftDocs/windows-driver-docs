@@ -1,5 +1,5 @@
 ---
-title: Job management
+title: Job Management
 description: A job management feature has been introduced in Windows 8.1 and later versions of Windows to provide a live view of the job queue.
 ms.date: 01/25/2023
 ---

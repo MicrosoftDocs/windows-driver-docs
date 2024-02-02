@@ -1,5 +1,5 @@
 ---
-title: Color management for printers
+title: Color Management for Printers
 description: Describes operations that printer drivers must perform to support color management.
 keywords:
 - printer driver customizing WDK , color management

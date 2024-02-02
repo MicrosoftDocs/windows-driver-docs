@@ -1,5 +1,5 @@
 ---
-title: Option attributes for all features
+title: Option Attributes for All Features
 description: Option attributes for all features
 ms.date: 07/18/2023
 ---

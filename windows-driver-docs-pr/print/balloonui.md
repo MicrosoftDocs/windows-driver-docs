@@ -1,5 +1,5 @@
 ---
-title: balloonUI element
+title: balloonUI Element
 description: The optional balloonUI element is used to display a message balloon on the client computer.
 keywords: ["balloonUI element Print Devices"]
 topic_type:

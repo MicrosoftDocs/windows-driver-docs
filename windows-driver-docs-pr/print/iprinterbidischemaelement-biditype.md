@@ -1,5 +1,5 @@
 ---
-title: IPrinterBidiSchemaElement BidiType method
+title: IPrinterBidiSchemaElement BidiType Method
 description: The BidiType method returns the Bidi schema element type.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

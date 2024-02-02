@@ -1,5 +1,5 @@
 ---
-title: Installing queue-specific files
+title: Installing Queue-Specific Files
 description: Installing queue-specific files
 keywords:
 - Point and Print WDK , queue-specific files

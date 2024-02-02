@@ -1,5 +1,5 @@
 ---
-title: Printer connected to an LPT port
+title: Printer Connected to an LPT Port
 description: Provides information about a printer connected to an LPT port.
 keywords:
 - LPT enumerator WDK printer

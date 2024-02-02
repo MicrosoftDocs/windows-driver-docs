@@ -1,5 +1,5 @@
 ---
-title: Explicit bin extensions
+title: Explicit Bin Extensions
 description: Explicit bin extensions
 keywords:
 - explicit bin extensions WDK printer

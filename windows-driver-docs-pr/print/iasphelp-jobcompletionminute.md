@@ -1,5 +1,5 @@
 ---
-title: Iasphelp getJobCompletionMinute method
+title: Iasphelp getJobCompletionMinute Method
 description: The JobCompletionMinute property enables an ASP Web page to determine when the print jobs that are currently pending will be finished.
 MS-HAID:
 - 'webfnc63bca3eb-0ead-4430-8e82-9014d58c133b.xml'

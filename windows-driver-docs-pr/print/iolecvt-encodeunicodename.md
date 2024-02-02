@@ -1,5 +1,5 @@
 ---
-title: IOleCvt EncodeUnicodeName method
+title: IOleCvt EncodeUnicodeName Method
 description: The EncodeUnicodeName property enables an ASP Web page to translate an ANSI string to its Unicode equivalent.
 MS-HAID:
 - 'webfnc_e31e8dae-76bb-4250-9d16-090a987c0dbf.xml'

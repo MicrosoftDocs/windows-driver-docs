@@ -1,5 +1,5 @@
 ---
-title: Plotter driver user interface
+title: Plotter Driver User Interface
 description: Provides information about the plotter driver user interface.
 keywords:
 - Plotter Driver WDK print, user interface

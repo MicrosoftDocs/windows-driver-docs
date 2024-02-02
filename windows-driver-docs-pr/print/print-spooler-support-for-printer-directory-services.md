@@ -1,5 +1,5 @@
 ---
-title: Print spooler support for printer Directory Services
+title: Print Spooler Support for Printer Directory Services
 description: Provides information about print spooler support for printer Directory Services.
 keywords:
 - Directory Services WDK printer

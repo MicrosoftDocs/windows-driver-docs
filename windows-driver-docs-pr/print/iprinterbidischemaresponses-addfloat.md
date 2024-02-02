@@ -1,5 +1,5 @@
 ---
-title: IPrinterBidiSchemaResponses AddFloat method
+title: IPrinterBidiSchemaResponses AddFloat Method
 description: The AddFloat method adds a new response of type BIDI_FLOAT to the collection.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

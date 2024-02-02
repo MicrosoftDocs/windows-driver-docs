@@ -1,5 +1,5 @@
 ---
-title: Functions defined by print providers
+title: Functions Defined by Print Providers
 description: Provides information about functions defined by print providers.
 keywords:
 - print providers WDK, functions
