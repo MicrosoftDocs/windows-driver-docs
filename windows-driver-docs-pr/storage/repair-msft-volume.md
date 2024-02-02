@@ -1,5 +1,5 @@
 ---
-title: Repair method of the MSFT\_Volume class
+title: Repair Method of the MSFT_Volume Class
 description: Repairs the volume.
 ms.assetid: ee445db1-1afe-45ce-88f5-44fe8a13e002
 keywords:

@@ -1,5 +1,5 @@
 ---
-title: MSFT\_DedupProperties class
+title: MSFT_DedupProperties Class
 description: Volume deduplication properties.
 ms.assetid: BE95BD75-F45E-494B-9091-558815543801
 keywords:

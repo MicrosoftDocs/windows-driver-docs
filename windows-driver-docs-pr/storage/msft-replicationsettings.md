@@ -1,5 +1,5 @@
 ---
-title: MSFT\_ReplicationSettings class
+title: MSFT_ReplicationSettings Class
 description: Represents the settings to be configured on a group or sync pair.
 ms.assetid: 0C78E4F9-C420-47B3-9E4E-7EAADCF21A06
 keywords:

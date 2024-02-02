@@ -1,5 +1,5 @@
 ---
-title: SetFriendlyName method of the MSFT\_ReplicationGroup class
+title: SetFriendlyName Method of the MSFT_ReplicationGroup Class
 description: Sets the friendly name for the replication group.
 ms.assetid: 3336F133-E1D6-43CA-AF8C-A90313CA097B
 keywords:

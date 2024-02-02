@@ -1,5 +1,5 @@
 ---
-title: SM\_SendRPL function
+title: SM_SendRPL Function
 description: The SM\_SendRPL WMI method sends a read port list (RPL) command through the indicated port to indicated destination port.
 keywords: ["SM_SendRPL function Storage Devices"]
 topic_type:

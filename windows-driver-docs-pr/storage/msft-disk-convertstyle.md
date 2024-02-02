@@ -1,5 +1,5 @@
 ---
-title: ConvertStyle method of the MSFT\_Disk class
+title: ConvertStyle Method of the MSFT_Disk Class
 description: Converts the partition style of an already initialized disk.
 ms.assetid: 38C1C3A0-DAB0-490F-A308-D0966364B728
 keywords:

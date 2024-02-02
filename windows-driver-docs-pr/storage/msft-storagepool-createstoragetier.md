@@ -1,5 +1,5 @@
 ---
-title: CreateStorageTier method of the MSFT\_StoragePool class
+title: CreateStorageTier Method of the MSFT_StoragePool Class
 description: Creates a storage tier template on the storage pool.
 ms.assetid: F559AE08-E9E8-4BEF-9E54-C5F8E3E9A9A0
 keywords:

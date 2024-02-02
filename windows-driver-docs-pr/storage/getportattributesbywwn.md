@@ -1,5 +1,5 @@
 ---
-title: GetPortAttributesByWWN function
+title: GetPortAttributesByWWN Function
 description: The GetPortAttributesByWWN method retrieves the attributes for the port specified by Port Name.
 keywords: ["GetPortAttributesByWWN function Storage Devices"]
 topic_type:

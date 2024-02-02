@@ -1,5 +1,5 @@
 ---
-title: MS\_SMHBA\_FC\_PHY WMI Class
+title: MS_SMHBA_FC_PHY WMI Class
 description: MS\_SMHBA\_FC\_PHY WMI Class
 ms.date: 10/17/2018
 ---

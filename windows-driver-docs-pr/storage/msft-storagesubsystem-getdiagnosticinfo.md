@@ -1,5 +1,5 @@
 ---
-title: GetDiagnosticInfo method of the MSFT\_StorageSubSystem class
+title: GetDiagnosticInfo Method of the MSFT_StorageSubSystem Class
 description: Gets the diagnostic information of the storage subsystem.
 ms.assetid: F0ED1A8C-3F20-460C-8D60-1461332C75AA
 keywords:

@@ -1,5 +1,5 @@
 ---
-title: Attach method of the MSFT\_VirtualDisk class
+title: Attach Method of the MSFT_VirtualDisk Class
 description: Attaches a storage spaces-based virtual disk to the system.
 ms.assetid: 1B2768DB-EDDF-406E-B88B-FEA4F471D37C
 keywords:

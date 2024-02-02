@@ -1,5 +1,5 @@
 ---
-title: MSFT\_FileShareAccessControlEntry class
+title: MSFT_FileShareAccessControlEntry Class
 description: Models the subsystem's concept of an access control entry for a file share.
 ms.assetid: 0F2A94A2-BFA9-4895-B93F-71A502850F1E
 keywords:

@@ -1,5 +1,5 @@
 ---
-title: AddPort function
+title: AddPort Function
 description: The AddPort WMI method configures the WMI provider to inform the WMI client about events that are associated with the indicated port.
 keywords: ["AddPort function Storage Devices"]
 topic_type:

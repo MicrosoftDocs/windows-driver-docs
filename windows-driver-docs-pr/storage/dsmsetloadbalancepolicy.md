@@ -1,5 +1,5 @@
 ---
-title: DsmSetLoadBalancePolicy function
+title: DsmSetLoadBalancePolicy Function
 description: The DsmSetLoadBalancePolicy method is used to set the DSM load balance policy.
 keywords: ["DsmSetLoadBalancePolicy function Storage Devices"]
 topic_type:

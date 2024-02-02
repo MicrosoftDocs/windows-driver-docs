@@ -1,5 +1,5 @@
 ---
-title: ISCSI\_PortalInfo WMI Class
+title: ISCSI_PortalInfo WMI Class
 description: ISCSI\_PortalInfo WMI Class
 ms.date: 10/17/2018
 ---

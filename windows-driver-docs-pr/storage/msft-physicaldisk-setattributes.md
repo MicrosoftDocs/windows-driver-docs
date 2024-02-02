@@ -1,5 +1,5 @@
 ---
-title: SetAttributes method of the MSFT\_PhysicalDisk class
+title: SetAttributes Method of the MSFT_PhysicalDisk Class
 description: Updates the attributes of the physical disk.
 ms.assetid: 8A7194B5-345D-43F1-933D-6061C7107D80
 keywords:

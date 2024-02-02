@@ -1,5 +1,5 @@
 ---
-title: SM\_GetTargetMapping function
+title: SM_GetTargetMapping Function
 description: The SM\_GetTargetMapping WMI method retrieves a mapping between the information that uniquely identifies a set of logical units for the operating system and the fibre channel protocol (FCP) identifiers for these logical units.
 keywords: ["SM_GetTargetMapping function Storage Devices"]
 topic_type:

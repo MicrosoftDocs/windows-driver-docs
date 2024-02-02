@@ -1,5 +1,5 @@
 ---
-title: MSiSCSI\_AdapterEvent WMI Class
+title: MSiSCSI_AdapterEvent WMI Class
 description: MSiSCSI\_AdapterEvent WMI Class
 ms.date: 10/17/2018
 ---

@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StoragePool class
+title: MSFT_StoragePool Class
 description: Represents a logical grouping of physical disks that may be used to create virtual disks.
 ms.assetid: 5b6c5566-7a3f-4bc4-b69e-53664920c9b2
 keywords:

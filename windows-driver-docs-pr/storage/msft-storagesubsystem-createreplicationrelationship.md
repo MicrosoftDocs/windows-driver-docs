@@ -1,5 +1,5 @@
 ---
-title: CreateReplicationRelationship method of the MSFT\_StorageSubSystem class
+title: CreateReplicationRelationship Method of the MSFT_StorageSubSystem Class
 description: Creates two replication groups and a replication relationship between them. This method requires the subsystem to support fully discovered replication.
 ms.assetid: 354EDEDE-CE2F-4865-9A79-0B664D705649
 keywords:

@@ -1,5 +1,5 @@
 ---
-title: SM\_GetLUNStatistics function
+title: SM_GetLUNStatistics Function
 description: The SMHBA\_GetLUNStatistics method returns traffic statistics for a specific SCSI logical unit that is provided by using the FCP protocol or SSP protocol on a specific local HBA.
 keywords: ["SM_GetLUNStatistics function Storage Devices"]
 topic_type:

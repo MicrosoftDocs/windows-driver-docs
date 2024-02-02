@@ -1,5 +1,5 @@
 ---
-title: DSM\_QueryLBPolicy WMI Class
+title: DSM_QueryLBPolicy WMI Class
 description: DSM\_QueryLBPolicy WMI Class
 ms.date: 10/17/2018
 ---

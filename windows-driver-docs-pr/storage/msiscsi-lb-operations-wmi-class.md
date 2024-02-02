@@ -1,5 +1,5 @@
 ---
-title: MSiSCSI\_LB\_Operations WMI Class
+title: MSiSCSI_LB_Operations WMI Class
 description: MSiSCSI\_LB\_Operations WMI Class
 ms.date: 10/17/2018
 ---

@@ -1,5 +1,5 @@
 ---
-title: RemoveChapForPhysicalPort method (Windows Drivers)
+title: RemoveChapForPhysicalPort Method (Windows Drivers)
 description: Learn more about the RemoveChapForPhysicalPort method.
 ms.date: 10/14/2022
 ---

@@ -1,5 +1,5 @@
 ---
-title: BlockAccess method of the MSFT\_FileShare class
+title: BlockAccess Method of the MSFT_FileShare Class
 description: Denies specified users access to the file share.
 ms.assetid: FA3B0467-BE7E-4847-8AA3-BF73E622E83F
 keywords:

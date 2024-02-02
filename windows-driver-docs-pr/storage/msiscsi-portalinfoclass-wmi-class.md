@@ -1,5 +1,5 @@
 ---
-title: MSiSCSI\_PortalInfoClass WMI Class
+title: MSiSCSI_PortalInfoClass WMI Class
 description: MSiSCSI\_PortalInfoClass WMI Class
 ms.date: 10/17/2018
 ---

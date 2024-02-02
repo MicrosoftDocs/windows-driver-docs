@@ -1,5 +1,5 @@
 ---
-title: DeleteObject method of the MSFT\_StoragePool class
+title: DeleteObject Method of the MSFT_StoragePool Class
 description: Deletes an empty storage pool.
 ms.assetid: EC79C0BB-EDBB-4922-B91F-83B81AAB3506
 keywords:

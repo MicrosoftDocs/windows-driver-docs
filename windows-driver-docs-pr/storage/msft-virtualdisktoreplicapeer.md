@@ -1,5 +1,5 @@
 ---
-title: MSFT\_VirtualDiskToReplicaPeer class
+title: MSFT_VirtualDiskToReplicaPeer Class
 description: Association between replicated virtual disks (MSFT\_VirtualDisk to MSFT\_ReplicaPeer).
 ms.assetid: 751166F2-07D4-4E69-AE8D-38EAFAF78DE3
 keywords:

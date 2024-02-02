@@ -1,5 +1,5 @@
 ---
-title: GetSupportedFileSystems method of the MSFT\_Volume class
+title: GetSupportedFileSystems Method of the MSFT_Volume Class
 description: Retrieves the names of file systems that are supported on the volume.
 ms.assetid: AE1FF69D-E373-46AA-8AB0-11883C782B87
 keywords:

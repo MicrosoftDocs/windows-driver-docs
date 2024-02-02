@@ -1,5 +1,5 @@
 ---
-title: GetSupportedSize method of the MSFT\_Partition class
+title: GetSupportedSize Method of the MSFT_Partition Class
 description: Retrieves the minimum and maximum sizes that the partition can be resized to using the Resize method.
 ms.assetid: 8BE1F2BF-AFA8-4AC3-BFB0-54723F605E95
 keywords:

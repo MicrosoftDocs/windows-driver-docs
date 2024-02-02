@@ -1,5 +1,5 @@
 ---
-title: RemovePhysicalDisk method of the MSFT\_VirtualDisk class
+title: RemovePhysicalDisk Method of the MSFT_VirtualDisk Class
 description: Removes one or more physical disks from manual allocation.
 ms.assetid: 105B2483-D0F0-4D82-BD60-EE6C5B149662
 keywords:

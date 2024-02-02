@@ -1,5 +1,5 @@
 ---
-title: Discover method of the MSFT\_StorageProvider class
+title: Discover Method of the MSFT_StorageProvider Class
 description: Discovers the objects that are owned by the storage provider.
 ms.assetid: afafd4d5-c0c1-4461-814d-bf00de403b3f
 keywords:

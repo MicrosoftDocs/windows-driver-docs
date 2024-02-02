@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StorageNodeToVolume class
+title: MSFT_StorageNodeToVolume Class
 description: Association between MSFT\_StorageNode and MSFT\_Volume.
 ms.assetid: 7C19ED8C-34E7-409D-AF09-62C1FE49D7D7
 keywords:
