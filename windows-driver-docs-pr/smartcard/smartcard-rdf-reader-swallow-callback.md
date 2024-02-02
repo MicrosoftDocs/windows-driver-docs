@@ -1,5 +1,5 @@
 ---
-title: RDF_READER_SWALLOW callback function
+title: RDF_READER_SWALLOW Callback Function
 description: RDF_READER_SWALLOW callback function
 keywords:
 - vendor-supplied drivers RDF callback functions
