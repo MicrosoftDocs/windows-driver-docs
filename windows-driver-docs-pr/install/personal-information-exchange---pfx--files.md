@@ -1,5 +1,5 @@
 ---
-title: Personal Information Exchange (.pfx) Files
+title: Personal Information Exchange (.Pfx) Files
 description: Personal Information Exchange (.pfx) Files
 ms.date: 04/20/2017
 ---

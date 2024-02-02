@@ -1,5 +1,5 @@
 ---
-title: Identifiers for USB devices
+title: Identifiers for USB Devices
 description: Identifiers for USB Devices
 keywords:
 - device identification strings WDK , USB devices

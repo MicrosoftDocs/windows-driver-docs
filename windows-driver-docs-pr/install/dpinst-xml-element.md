@@ -1,5 +1,5 @@
 ---
-title: dpinst XML Element
+title: Dpinst XML Element
 description: dpinst XML Element
 keywords: ["dpinst XML Element Device and Driver Installation"]
 topic_type:

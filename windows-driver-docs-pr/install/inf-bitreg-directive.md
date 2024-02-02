@@ -1,5 +1,5 @@
 ---
-title: INF BitReg directive
+title: INF BitReg Directive
 description: A BitReg directive references one or more INF-writer-defined sections used to set or clear bits within an existing REG_BINARY-type value entry in the registry (this directive is rarely used in device/driver INF files).
 keywords:
 - INF BitReg Directive Device and Driver Installation

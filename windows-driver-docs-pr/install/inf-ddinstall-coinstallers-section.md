@@ -1,5 +1,5 @@
 ---
-title: INF DDInstall.CoInstallers section
+title: INF DDInstall.CoInstallers Section
 description: The Co-Installers section registers one or more device-specific co-installers to supplement the operations of existing device class installers.
 keywords:
 - INF DDInstall.CoInstallers Section Device and Driver Installation

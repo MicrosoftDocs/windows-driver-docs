@@ -1,5 +1,5 @@
 ---
-title: INF DelReg directive
+title: INF DelReg Directive
 description: A DelReg directive references one or more INF-writer-defined sections describing keys and/or value entries to be removed from the registry.
 keywords:
 - INF DelReg Directive Device and Driver Installation

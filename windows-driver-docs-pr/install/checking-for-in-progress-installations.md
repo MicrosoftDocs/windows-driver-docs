@@ -1,5 +1,5 @@
 ---
-title: How a Device Installation Application checks for in-progress device installations
+title: How a Device Installation Application Checks for In-Progress Device Installations
 description: How a Device Installation Application determines whether other device installation activities are in progress before performing its installations.
 keywords:
 - in-progress installations WDK

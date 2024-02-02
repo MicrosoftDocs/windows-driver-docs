@@ -1,5 +1,5 @@
 ---
-title: Install a filter driver
+title: Install a Filter Driver
 description: Provides information about how to install a filter driver.
 keywords:
 - Device setup WDK device installations , filter drivers

@@ -1,5 +1,5 @@
 ---
-title: Update device firmware using Windows Update
+title: Update Device Firmware Using Windows Update
 description: This article describes how to update your device's firmware using the Windows Update (WU) service.
 ms.date: 10/26/2022
 ---

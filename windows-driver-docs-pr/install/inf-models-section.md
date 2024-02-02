@@ -1,5 +1,5 @@
 ---
-title: INF Models section
+title: INF Models Section
 description: A Models section identifies a device, references its DDInstall section, and specifies a hardware identifier for the device.
 keywords:
 - INF Models Section Device and Driver Installation

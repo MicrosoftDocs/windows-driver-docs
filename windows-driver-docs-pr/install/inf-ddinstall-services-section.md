@@ -1,5 +1,5 @@
 ---
-title: INF DDInstall.Services section
+title: INF DDInstall.Services Section
 description: Each per-Models DDInstall.Services section contains one or more INF AddService directives that reference additional INF-writer-defined sections in an INF file.
 keywords:
 - INF DDInstall.Services Section Device and Driver Installation

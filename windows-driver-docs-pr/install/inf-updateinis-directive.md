@@ -1,5 +1,5 @@
 ---
-title: INF UpdateInis directive
+title: INF UpdateInis Directive
 description: An UpdateInis directive specifies an INI file from which to read a section to be applied to an existing INI file of the same name on a target computer.
 keywords:
 - INF UpdateInis Directive Device and Driver Installation

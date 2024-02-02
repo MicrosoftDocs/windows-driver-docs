@@ -1,5 +1,5 @@
 ---
-title: WHQL test signature program
+title: WHQL Test Signature Program
 description: WHQL test signature program
 author: mhopkins-msft
 ms.date: 04/19/2022

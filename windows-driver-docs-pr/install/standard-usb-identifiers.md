@@ -1,5 +1,5 @@
 ---
-title: Standard USB identifiers
+title: Standard USB Identifiers
 description: The set of identifiers generated for USB devices depends on whether the device is a single-interface device or a multiple-interface device.
 keywords:
 - USB identifiers WDK device installations

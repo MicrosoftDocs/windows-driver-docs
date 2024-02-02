@@ -1,5 +1,5 @@
 ---
-title: language XML Element
+title: Language XML Element
 description: language XML Element
 keywords: ["language XML Element Device and Driver Installation"]
 topic_type:

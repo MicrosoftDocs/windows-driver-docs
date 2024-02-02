@@ -1,5 +1,5 @@
 ---
-title: Marking a Device as having a Finish-Install Action to Perform
+title: Marking a Device as Having a Finish-Install Action to Perform
 description: Marking a Device as having a Finish-Install Action to Perform
 ms.date: 04/20/2017
 ---

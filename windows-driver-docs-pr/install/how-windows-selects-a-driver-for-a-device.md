@@ -1,5 +1,5 @@
 ---
-title: How Windows selects a driver package for a device
+title: How Windows Selects a Driver Package for a Device
 description: How Windows selects a driver package for a device
 keywords:
 - driver selections WDK device installations , where Device setupsearches

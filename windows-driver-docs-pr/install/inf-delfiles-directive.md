@@ -1,5 +1,5 @@
 ---
-title: INF DelFiles directive
+title: INF DelFiles Directive
 description: A DelFiles directive references an INF-writer-defined section elsewhere in the INF file, and causes that list of files to be deleted.
 keywords:
 - INF DelFiles Directive Device and Driver Installation

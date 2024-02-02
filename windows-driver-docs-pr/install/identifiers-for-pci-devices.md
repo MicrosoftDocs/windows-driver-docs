@@ -1,5 +1,5 @@
 ---
-title: Identifiers for PCI devices
+title: Identifiers for PCI Devices
 description: Describes the device identification string formats that the PCI bus driver uses to report hardware IDs.
 keywords:
 - device identification strings WDK , PCI devices

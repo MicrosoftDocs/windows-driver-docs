@@ -1,5 +1,5 @@
 ---
-title: INF Reboot directive
+title: INF Reboot Directive
 description: A Reboot directive indicates that the caller should be notified to reboot the system after installation is complete.
 keywords:
 - INF Reboot Directive Device and Driver Installation
