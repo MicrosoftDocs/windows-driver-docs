@@ -9,7 +9,6 @@ keywords:
 - color filling destination surfaces WDK DirectX VA
 - color filling substream surfaces WDK DirectX VA
 ms.date: 12/06/2018
-ms.custom: seodec18
 ---
 
 # Operations on Video Substream and Destination Surfaces
@@ -84,4 +83,3 @@ Your driver's *DdBlt* function must support copying the FOURCC destination surfa
 The destination surface for the bit-block transfer operations can be the primary surface or a Direct3D texture.
 
  
-

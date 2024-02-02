@@ -2,7 +2,7 @@
 title: Features Added in Prior WDDM 2.X Versions
 description: Describes features in prior Windows 10 releases for display and graphics drivers
 ms.date: 08/10/2021
-ms.custom: seodec18, 19H1
+ms.custom: 19H1
 ---
 
 # Features added in prior WDDM 2.X versions

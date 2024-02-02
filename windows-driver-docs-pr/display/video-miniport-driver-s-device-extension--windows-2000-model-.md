@@ -7,7 +7,6 @@ keywords:
 - extensions WDK video miniport
 - adapter states WDK video miniport
 ms.date: 12/06/2018
-ms.custom: seodec18
 ---
 
 # Video Miniport Driver's Device Extension (Windows 2000 Model)
@@ -23,4 +22,3 @@ Each miniport driver defines the size, internal structure, and contents of its d
 The miniport driver must also use the device extension to maintain the state information for a single adapter. Each adapter detected by the system will have separate state information maintained in a separate device extension. The miniport driver must not use global variables to store any per-adapter state. This is especially critical in order to provide seamless multiple monitor support.
 
  
-

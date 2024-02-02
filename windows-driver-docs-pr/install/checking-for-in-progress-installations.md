@@ -5,7 +5,6 @@ keywords:
 - in-progress installations WDK
 - checking in-progress installations
 - verifying in-progress installations
-ms.custom: contperf-fy22q3
 ms.date: 03/08/2022
 ---
 
