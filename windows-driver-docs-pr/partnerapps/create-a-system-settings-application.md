@@ -1,5 +1,5 @@
 ---
-title: Create a partner settings app
+title: Create a Partner Settings App
 description: Create a partner settings app
 ms.date: 03/17/2023
 ---
