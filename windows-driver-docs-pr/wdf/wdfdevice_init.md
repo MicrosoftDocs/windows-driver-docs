@@ -1,5 +1,5 @@
 ---
-title: WDFDEVICE_INIT structure
+title: WDFDEVICE_INIT Structure
 description: The WDFDEVICE_INIT structure is an opaque structure that is defined and allocated by the framework.
 keywords:
  - WDFDEVICE_INIT structure

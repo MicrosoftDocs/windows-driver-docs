@@ -1,5 +1,5 @@
 ---
-title: WdfObjectAddCustomType macro
+title: WdfObjectAddCustomType Macro
 description: The WdfObjectAddCustomType macro associates a framework object with a custom type.
 keywords:
  - WdfObjectAddCustomType macro

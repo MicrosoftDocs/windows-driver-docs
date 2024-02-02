@@ -1,5 +1,5 @@
 ---
-title: Working with USB Devices in UMDF 1.x Drivers
+title: Working with USB Devices in UMDF 1.X Drivers
 description: Working with USB Devices in UMDF 1.x Drivers
 keywords:
 - UMDF WDK , USB devices

@@ -1,5 +1,5 @@
 ---
-title: USB-Specific UMDF 1.x Interfaces
+title: USB-Specific UMDF 1.X Interfaces
 description: USB-Specific UMDF 1.x Interfaces
 keywords:
 - UMDF WDK , UMDF-USB object model

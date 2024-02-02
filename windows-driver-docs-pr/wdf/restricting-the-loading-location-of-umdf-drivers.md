@@ -1,5 +1,5 @@
 ---
-title: Restricting the loading location of UMDF drivers
+title: Restricting the Loading Location of UMDF Drivers
 description: Provides information about restricting the loading location of UMDF drivers.
 keywords:
 - locations WDK UMDF

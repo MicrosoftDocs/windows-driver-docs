@@ -1,5 +1,5 @@
 ---
-title: Handling Client Impersonation in UMDF 1.x Drivers
+title: Handling Client Impersonation in UMDF 1.X Drivers
 description: Handling Client Impersonation in UMDF 1.x Drivers
 keywords:
 - User-Mode Driver Framework WDK , impersonation

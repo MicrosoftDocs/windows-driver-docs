@@ -1,5 +1,5 @@
 ---
-title: WDFVERIFY macro
+title: WDFVERIFY Macro
 description: The WDFVERIFY macro tests a logical expression and, if the expression evaluates to FALSE, breaks into the kernel debugger.
 keywords:
  - WDFVERIFY macro

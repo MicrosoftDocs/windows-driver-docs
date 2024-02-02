@@ -1,5 +1,5 @@
 ---
-title: WdfObjectDereferenceWithTag macro
+title: WdfObjectDereferenceWithTag Macro
 description: The WdfObjectDereferenceWithTag macro decrements the reference count for a specified framework object and assigns the driver's current file name and line number to the reference. This macro also assigns a tag value to the reference.
 keywords:
  - WdfObjectDereferenceWithTag macro
