@@ -1,5 +1,5 @@
 ---
-title: Device-specific operations for I/O requests for parallel ports
+title: Device-specific Operations for I/O Requests for Parallel Ports
 description: Documents device-specific operations for I/O requests for parallel ports
 keywords: ["Parallel ports WDK", "Parallel drivers WDK", "Parallel IRP codes"]
 ms.date: 03/03/2023

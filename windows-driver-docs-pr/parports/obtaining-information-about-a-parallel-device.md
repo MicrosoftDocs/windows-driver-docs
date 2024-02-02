@@ -1,5 +1,5 @@
 ---
-title: Obtaining Information about a Parallel Device
+title: Obtaining Information About a Parallel Device
 description: Obtaining Information about a Parallel Device
 keywords:
 - parallel devices WDK , obtaining information
