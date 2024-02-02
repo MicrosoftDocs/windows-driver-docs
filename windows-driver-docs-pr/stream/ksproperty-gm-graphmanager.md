@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_GM\_GRAPHMANAGER
+title: KSPROPERTY_GM_GRAPHMANAGER
 description: The KSPROPERTY\_GM\_GRAPHMANAGER property is not currently supported.
 keywords: ["KSPROPERTY_GM_GRAPHMANAGER Streaming Media Devices"]
 topic_type:

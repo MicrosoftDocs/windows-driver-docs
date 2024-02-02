@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FACEAUTH\_MODE
+title: KSPROPERTY_CAMERACONTROL_EXTENDED_FACEAUTH_MODE
 description: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FACEAUTH\_MODE is a property ID that is used to turn on and off face authentication.
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_FACEAUTH_MODE Streaming Media Devices"]
 topic_type:

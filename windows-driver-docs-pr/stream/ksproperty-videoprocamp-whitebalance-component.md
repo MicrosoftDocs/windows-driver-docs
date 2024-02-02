@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_VIDEOPROCAMP\_WHITEBALANCE\_COMPONENT
+title: KSPROPERTY_VIDEOPROCAMP_WHITEBALANCE_COMPONENT
 description: The KSPROPERTY\_VIDEOPROCAMP\_WHITEBALANCE\_COMPONENT property specifies the white balance setting in blue and red values for video formats.
 keywords: ["KSPROPERTY_VIDEOPROCAMP_WHITEBALANCE_COMPONENT Streaming Media Devices"]
 topic_type:

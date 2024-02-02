@@ -1,5 +1,5 @@
 ---
-title: KSNODETYPE\_VIDEO\_INPUT\_MTT
+title: KSNODETYPE_VIDEO_INPUT_MTT
 description: KSNODETYPE\_VIDEO\_INPUT\_MTT
 ms.date: 11/28/2017
 ---

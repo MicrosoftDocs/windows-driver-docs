@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_VPCONFIG\_NUMVIDEOFORMAT
+title: KSPROPERTY_VPCONFIG_NUMVIDEOFORMAT
 description: The KSPROPERTY\_VPCONFIG\_NUMVIDEOFORMAT property obtains the maximum number of supported pixel formats.
 keywords: ["KSPROPERTY_VPCONFIG_NUMVIDEOFORMAT Streaming Media Devices"]
 topic_type:

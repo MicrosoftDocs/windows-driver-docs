@@ -1,5 +1,5 @@
 ---
-title: SRB\_GET\_STREAM\_INFO
+title: SRB_GET_STREAM_INFO
 description: SRB\_GET\_STREAM\_INFO
 keywords: ["SRB_GET_STREAM_INFO Streaming Media Devices"]
 topic_type:

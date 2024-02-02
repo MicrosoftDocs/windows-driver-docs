@@ -1,5 +1,5 @@
 ---
-title: KSEVENT\_DYNAMIC\_FORMAT\_CHANGE
+title: KSEVENT_DYNAMIC_FORMAT_CHANGE
 description: Clients enable the KSEVENT\_DYNAMIC\_FORMAT\_CHANGE event to signal that a dynamic format change has occurred.
 keywords: ["KSEVENT_DYNAMIC_FORMAT_CHANGE Streaming Media Devices"]
 topic_type:

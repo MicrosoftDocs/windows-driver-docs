@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FIELDOFVIEW
+title: KSPROPERTY_CAMERACONTROL_EXTENDED_FIELDOFVIEW
 description: The field of view property describes the current Field of View (FOV) of the camera along with the pitch angle of the camera position.
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_FIELDOFVIEW Streaming Media Devices"]
 topic_type:

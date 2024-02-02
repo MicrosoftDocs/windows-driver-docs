@@ -1,5 +1,5 @@
 ---
-title: KSPROPSETID\_Connection
+title: KSPROPSETID_Connection
 description: KSPROPSETID\_Connection
 ms.date: 11/28/2017
 ---

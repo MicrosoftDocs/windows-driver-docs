@@ -1,5 +1,5 @@
 ---
-title: PROPSETID\_EXT\_DEVICE
+title: PROPSETID_EXT_DEVICE
 description: PROPSETID\_EXT\_DEVICE
 ms.date: 11/28/2017
 ---

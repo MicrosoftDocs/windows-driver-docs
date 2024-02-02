@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_GM\_RENDER\_CLOCK
+title: KSPROPERTY_GM_RENDER_CLOCK
 description: The KSPROPERTY\_GM\_RENDER\_CLOCK property is not currently supported.
 keywords: ["KSPROPERTY_GM_RENDER_CLOCK Streaming Media Devices"]
 topic_type:

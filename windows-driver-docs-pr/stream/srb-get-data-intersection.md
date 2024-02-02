@@ -1,5 +1,5 @@
 ---
-title: SRB\_GET\_DATA\_INTERSECTION
+title: SRB_GET_DATA_INTERSECTION
 description: SRB\_GET\_DATA\_INTERSECTION
 keywords: ["SRB_GET_DATA_INTERSECTION Streaming Media Devices"]
 topic_type:

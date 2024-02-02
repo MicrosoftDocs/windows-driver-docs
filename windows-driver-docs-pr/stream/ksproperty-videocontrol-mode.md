@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_VIDEOCONTROL\_MODE
+title: KSPROPERTY_VIDEOCONTROL_MODE
 description: The KSPROPERTY\_VIDEOCONTROL\_MODE property controls the mode of image production. This includes settings for horizontal and vertical image flipping, and enabling frame capture by an external trigger. This property is optional.
 keywords: ["KSPROPERTY_VIDEOCONTROL_MODE Streaming Media Devices"]
 topic_type:

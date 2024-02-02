@@ -1,5 +1,5 @@
 ---
-title: PROPSETID\_EXT\_TRANSPORT
+title: PROPSETID_EXT_TRANSPORT
 description: PROPSETID\_EXT\_TRANSPORT
 ms.date: 11/28/2017
 ---

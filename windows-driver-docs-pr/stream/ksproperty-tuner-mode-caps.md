@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_TUNER\_MODE\_CAPS
+title: KSPROPERTY_TUNER_MODE_CAPS
 description: The KSPROPERTY\_TUNER\_MODE\_CAPS property describes the capabilities of a tuning mode for a tuner that supports analog TV or radio tuning. This property must be implemented.
 keywords: ["KSPROPERTY_TUNER_MODE_CAPS Streaming Media Devices"]
 topic_type:

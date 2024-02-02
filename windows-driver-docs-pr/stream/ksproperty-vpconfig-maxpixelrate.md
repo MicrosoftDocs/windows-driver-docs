@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_VPCONFIG\_MAXPIXELRATE
+title: KSPROPERTY_VPCONFIG_MAXPIXELRATE
 description: The KSPROPERTY\_VPCONFIG\_MAXPIXELRATE property specifies the maximum pixel rate based on pixel format and specifies the dimension (width by height) of the connection.
 keywords: ["KSPROPERTY_VPCONFIG_MAXPIXELRATE Streaming Media Devices"]
 topic_type:

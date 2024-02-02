@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_STREAM\_PIPE\_ID
+title: KSPROPERTY_STREAM_PIPE_ID
 description: The KSPROPERTY\_STREAM\_PIPE\_ID property is opaque and used internally for communication between the KSProxy system driver and AVStream.
 keywords: ["KSPROPERTY_STREAM_PIPE_ID Streaming Media Devices"]
 topic_type:
