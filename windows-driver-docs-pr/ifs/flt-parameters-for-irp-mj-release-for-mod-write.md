@@ -10,7 +10,7 @@ api_location:
 - fltkernel.h
 api_type:
 - HeaderDef
-ms.date: 03/13/2023
+ms.date: 02/02/2024
 ms.topic: reference
 ---
 
@@ -42,10 +42,9 @@ The [**FLT_PARAMETERS**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_f
 
 IRP_MJ_RELEASE_FOR_MOD_WRITE is a file system (FSFilter) callback operation.
 
-For more information about FSFilter callback operations, see the reference entry for [**FsRtlRegisterFileSystemFilterCallbacks**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlregisterfilesystemfiltercallbacks).
+IRP_MJ_RELEASE_FOR_MOD_WRITE is typically invoked from the modified page writer as part of a special kernel APC. It always runs at IRQL = APC_LEVEL. Because it might be called in the context of a special kernel APC, it can preempt kernel-mode code that executes at IRQL = PASSIVE_LEVEL, including both user APCs and normal kernel APCs. Therefore, take care when waiting on resources that may be held by a thread that the IRP_MJ_RELEASE_FOR_MODE_WRITE operation may have preempted. Attempting to wait on such resources may result in a deadlock.
 
-## Note
-This function is called as a Special Kernel APC.  As a result, acquiring any low IRQL locks (for instance ERESOURCE) can result in deadlock and should be avoided.
+For more information about FSFilter callback operations, see the reference entry for [**FsRtlRegisterFileSystemFilterCallbacks**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlregisterfilesystemfiltercallbacks).
 
 ## Requirements
 
