@@ -21,13 +21,13 @@ The **!minipkd.srb** extension displays the specified SCSI request block (SRB) d
 !minipkd.srb SRB 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______SRB______"></span><span id="_______srb______"></span> *SRB*   
 Specifies the address of an SRB.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

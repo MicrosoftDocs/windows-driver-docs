@@ -1,6 +1,7 @@
 ---
 title: TTD Heap Objects
 description: This section describes the heap model objects associated with time travel debugging.
+keywords: ["TTD Heap Objects", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
 ms.date: 09/24/2017
 ---
 

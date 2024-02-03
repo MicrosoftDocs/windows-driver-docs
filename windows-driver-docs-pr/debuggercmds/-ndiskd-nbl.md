@@ -23,7 +23,7 @@ The **!ndiskd.nbl** extension displays information about a [**NET\_BUFFER\_LIST*
     [-stacks] [-NblCurrentOwner]
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______-handle______"></span><span id="_______-HANDLE______"></span> *-handle*   
@@ -62,7 +62,7 @@ Includes callstacks with NBL log (use with -log).
 <span id="_______-NblCurrentOwner______"></span><span id="_______-nblcurrentowner______"></span><span id="_______-NBLCURRENTOWNER______"></span> *-NblCurrentOwner*   
 Shows the current owner of the NBL.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Ndiskd.dll
 

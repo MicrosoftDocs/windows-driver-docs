@@ -39,7 +39,7 @@ If this bit is set and bit 2 (0x4) is not set, the display will include informat
 <span id="Bit_2__0x4_"></span><span id="bit_2__0x4_"></span><span id="BIT_2__0X4_"></span>Bit 2 (0x4)  
 Causes the display to be a much longer and more detailed list of the driver image. Information about each section is included. If bit 1 (0x2) is set, this will also include header information.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

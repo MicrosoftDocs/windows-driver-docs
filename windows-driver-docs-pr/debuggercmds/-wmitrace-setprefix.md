@@ -22,7 +22,7 @@ The **!wmitrace.setprefix** extension specifies the trace message prefix that is
 !wmitrace.setprefix 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="______________"></span> **+**   
@@ -136,7 +136,7 @@ Each %n variable represents a parameter that is described in the following table
 
 The symbol within exclamation marks is a conversion character that specifies the format and precision of the variable. For example, %8!04X! specifies the process ID formatted as a four-digit, unsigned, hexadecimal number.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 This extension is exported by Wmitrace.dll.
 

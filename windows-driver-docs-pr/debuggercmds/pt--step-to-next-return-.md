@@ -29,7 +29,7 @@ Kernel-Mode
 pt [r] [= StartAddress] [Count] ["Command"]
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Thread______"></span><span id="_______thread______"></span><span id="_______THREAD______"></span> *Thread*   

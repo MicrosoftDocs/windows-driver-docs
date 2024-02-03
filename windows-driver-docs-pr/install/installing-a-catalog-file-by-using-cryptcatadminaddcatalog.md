@@ -1,5 +1,5 @@
 ---
-title: Installing a Catalog File by using CryptCATAdminAddCatalog
+title: Installing a Catalog File by Using CryptCATAdminAddCatalog
 description: Installing a Catalog File by using CryptCATAdminAddCatalog
 ms.date: 04/20/2017
 ---

@@ -1,6 +1,7 @@
 ---
 title: Time Travel Debugging - TTD.exe command line utility
 description: This section describes when and how to use work with the TTD.exe command line utility
+keywords: ["TTD.exe command line utility", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
 ms.date: 07/06/2023
 ---
 

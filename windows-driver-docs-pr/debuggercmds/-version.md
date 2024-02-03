@@ -29,7 +29,7 @@ This extension command should not be confused with the [**version (Show Debugger
 <span id="_______ExtensionDLL______"></span><span id="_______extensiondll______"></span><span id="_______EXTENSIONDLL______"></span> *ExtensionDLL*   
 Specifies the extension DLL whose version number is to be displayed.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 This extension is available in most extension DLLs.
 

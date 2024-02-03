@@ -1,5 +1,5 @@
 ---
-title: The radio-manager file list
+title: The Radio-Manager File List
 description: Describes the files that are found in the radio manager DLL.
 ms.date: 03/21/2023
 ---

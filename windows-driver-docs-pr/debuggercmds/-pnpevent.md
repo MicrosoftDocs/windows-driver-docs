@@ -27,7 +27,7 @@ The **!pnpevent** extension displays the Plug and Play device event queue.
 <span id="_______DeviceEvent______"></span><span id="_______deviceevent______"></span><span id="_______DEVICEEVENT______"></span> *DeviceEvent*   
 Specifies the address of a device event to display. If this is zero or omitted, the tree of all device events in the queue is displayed.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

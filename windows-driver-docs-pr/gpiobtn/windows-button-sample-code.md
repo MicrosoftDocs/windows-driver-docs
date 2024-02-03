@@ -1,5 +1,5 @@
 ---
-title: Windows button sample code
+title: Windows Button Sample Code
 description: This topic contains a code sample that toggles the identified Windows button down and then up.
 ms.date: 10/17/2018
 ---

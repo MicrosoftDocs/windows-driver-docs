@@ -1,5 +1,5 @@
 ---
-title: COPPQueryStatus function
+title: COPPQueryStatus Function
 description: The sample COPPQueryStatus function retrieves status on a protected video session that is associated with a COPP DirectX VA device.
 keywords:
 - copy protection WDK COPP , video miniport driver code template

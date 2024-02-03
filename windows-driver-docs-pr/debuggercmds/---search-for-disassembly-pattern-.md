@@ -1,6 +1,6 @@
 ---
-title: \# (Search for Disassembly Pattern)
-description: The number sign (#) command searches for the specified pattern in the disassembly code.
+title: "# (Search for Disassembly Pattern)"
+description: "The number sign (#) command searches for the specified pattern in the disassembly code."
 keywords: ["(Search for Disassembly Pattern) Windows Debugging"]
 ms.date: 08/30/2023
 topic_type:

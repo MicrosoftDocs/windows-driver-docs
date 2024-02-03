@@ -33,7 +33,7 @@ Specifies the trace session. *LoggerName* is the text name that was specified wh
 <span id="_______GUID______"></span><span id="_______guid______"></span> *GUID*   
 Specifies the GUID of the provider to be disabled.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 This extension is exported by Wmitrace.dll.
 

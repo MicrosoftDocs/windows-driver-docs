@@ -1,5 +1,5 @@
 ---
-title: FSCTL_IS_VOLUME_DIRTY control code
+title: FSCTL_IS_VOLUME_DIRTY Control Code
 description: The FSCTL_IS_VOLUME_DIRTY control code determines whether the specified volume is dirty.
 keywords: ["FSCTL_IS_VOLUME_DIRTY control code Installable File System Drivers"]
 topic_type:

@@ -23,7 +23,7 @@ The **.pop** command restores the state of the debugger to a state that has prev
 .pop /r /q
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="________r______"></span><span id="________R______"></span> **/r**   

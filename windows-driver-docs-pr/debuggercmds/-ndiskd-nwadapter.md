@@ -20,7 +20,7 @@ The **!ndiskd.nwadapter** extension displays information about one or more nwifi
 !ndiskd.nwadapter [-handle <x>]
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 <span id="_______-handle______"></span><span id="_______-HANDLE______"></span> *-handle*   
 Address of an ADAPT block.

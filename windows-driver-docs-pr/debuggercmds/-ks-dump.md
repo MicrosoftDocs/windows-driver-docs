@@ -21,7 +21,7 @@ The **!ks.dump** extension displays the specified object.
 !ks.dump Object [Level] [Flags]  
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Object______"></span><span id="_______object______"></span><span id="_______OBJECT______"></span> *Object*   
@@ -45,7 +45,7 @@ Analyze a stalled graph for suspects.
 <span id="Bit_3__0x8_"></span><span id="bit_3__0x8_"></span><span id="BIT_3__0X8_"></span>Bit 3 (0x8)  
 Show all pin states.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

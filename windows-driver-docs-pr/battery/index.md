@@ -1,5 +1,5 @@
 ---
-title: Battery devices design guide
+title: Battery Devices Design Guide
 description: Learn about battery device drivers, including writing battery miniclass drivers and UPS minidrivers.
 ms.assetid: d8eecfcb-6c06-40d1-8c78-b8c88eb890f2
 ms.date: 10/04/2023

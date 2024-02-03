@@ -21,7 +21,7 @@ The **!wudfext.umdevstack** extension displays detailed information about a devi
 !wudfext.umdevstack DevstackAddress [Flags] 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______DevstackAddress______"></span><span id="_______devstackaddress______"></span><span id="_______DEVSTACKADDRESS______"></span> *DevstackAddress*   
@@ -36,7 +36,7 @@ Displays detailed information about the device stack.
 <span id="Bit_8__0x80_"></span><span id="bit_8__0x80_"></span><span id="BIT_8__0X80_"></span>Bit 8 (0x80)  
 Displays information about the internal framework.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

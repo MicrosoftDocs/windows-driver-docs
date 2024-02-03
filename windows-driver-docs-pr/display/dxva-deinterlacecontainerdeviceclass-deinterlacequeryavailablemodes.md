@@ -1,5 +1,5 @@
 ---
-title: DeinterlaceQueryAvailableModes method
+title: DeinterlaceQueryAvailableModes Method
 description: The sample DXVA\_DeinterlaceContainerDeviceClass::DeinterlaceQueryAvailableModes function queries for available deinterlacing or frame-rate conversion modes for a particular input video format.
 keywords: ["DeinterlaceQueryAvailableModes method Display Devices", "DeinterlaceQueryAvailableModes method Display Devices , DXVA_DeinterlaceContainerDeviceClass interface", "DXVA_DeinterlaceContainerDeviceClass interface Display Devices , DeinterlaceQueryAvailableModes method"]
 topic_type:
@@ -10,7 +10,6 @@ api_name:
 api_type:
 - COM
 ms.date: 12/06/2018
-ms.custom: seodec18
 ---
 
 # DXVA\_DeinterlaceContainerDeviceClass::DeinterlaceQueryAvailableModes method
@@ -112,4 +111,3 @@ After the *VMR* has determined the deinterlace or frame conversion modes availab
 [**DXVA\_VideoDesc**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_videodesc)
 
 [**DXVA\_SampleFormat**](/windows-hardware/drivers/ddi/dxva/ne-dxva-_dxva_sampleformat)
-

@@ -1,5 +1,5 @@
 ---
-title: FormatValue element
+title: FormatValue Element
 description: The required FormatValue element specifies a single supported file format and compression type.
 keywords: ["FormatValue element Imaging Devices"]
 topic_type:

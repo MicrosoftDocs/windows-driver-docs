@@ -1,6 +1,7 @@
 ---
 title: Time Travel Debugging - Record a trace 
 description: This section describes how to record time travel traces.
+keywords: ["Record a trace", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
 ms.date: 12/09/2022
 ---
 

@@ -21,7 +21,7 @@ The **!wdfkd.wdfumirp** extension displays information about a user-mode I/O req
 !wdfkd.wdfumirp Address
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   

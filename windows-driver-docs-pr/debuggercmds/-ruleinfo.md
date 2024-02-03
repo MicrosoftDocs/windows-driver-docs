@@ -33,7 +33,7 @@ Additional state information about the violation. This is the third argument of 
 <span id="_______SubState______"></span><span id="_______substate______"></span><span id="_______SUBSTATE______"></span> *SubState*   
 Sub-state information about the violation. This is the fourth argument of the **DRIVER\_VERIFIER\_DETECTED\_VIOLATION** bug check.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 ext.dll
 

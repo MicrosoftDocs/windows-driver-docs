@@ -21,7 +21,7 @@ The **!minipkd.help** extension displays help text for the Minipkd.dll extension
 !minipkd.help 
 ```
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

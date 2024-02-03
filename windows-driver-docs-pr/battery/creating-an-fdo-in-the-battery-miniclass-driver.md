@@ -1,5 +1,5 @@
 ---
-title: Create an FDO in the battery miniclass driver
+title: Create an FDO in the Battery Miniclass Driver
 description: Discover how to create a functional device object (FDO) in the battery miniclass driver and attach it to the device stack.
 keywords:
 - battery miniclass drivers WDK, FDOs

@@ -1,5 +1,5 @@
 ---
-title: INF DDInstall section
+title: INF DDInstall Section
 description: Each per-Models DDInstall section contains an optional DriverVer directive and one or more directives referencing additional named sections in the INF file, shown here with the most frequently specified INF directives, CopyFiles and AddReg, listed first.
 keywords:
 - INF DDInstall Section Device and Driver Installation

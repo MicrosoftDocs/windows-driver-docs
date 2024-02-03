@@ -1,6 +1,7 @@
 ---
 title: USB 3.0 Data Structures
 description: This topic describes the data structures used by the USB 3.0 host controller driver.
+keywords: ["USB 3.0 Data Structures", "extensions", "WinDbg", "Windows Debugging"]
 ms.date: 11/28/2017
 ---
 

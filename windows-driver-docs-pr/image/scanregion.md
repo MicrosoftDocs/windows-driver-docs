@@ -1,5 +1,5 @@
 ---
-title: ScanRegion element
+title: ScanRegion Element
 description: The optional ScanRegion element specifies the area to scan within the input document boundaries.
 keywords: ["ScanRegion element Imaging Devices"]
 topic_type:

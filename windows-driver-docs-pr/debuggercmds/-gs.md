@@ -21,7 +21,7 @@ The **!gs** extension analyzes a /GS stack overflow.
 !gs
 ```
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

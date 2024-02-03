@@ -1,5 +1,5 @@
 ---
-title: DD_DXAPI_OPENDIRECTDRAW control code (Windows Drivers)
+title: DD_DXAPI_OPENDIRECTDRAW Control Code (Windows Drivers)
 description: Learn more about the DD_DXAPI_OPENDIRECTDRAW control code.
 keywords:
 - IP Helper WDK networking

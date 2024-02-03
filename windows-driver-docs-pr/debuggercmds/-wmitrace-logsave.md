@@ -33,7 +33,7 @@ Specifies the trace session. *LoggerName* is the text name that was specified wh
 <span id="_______Filename______"></span><span id="_______filename______"></span><span id="_______FILENAME______"></span> *Filename*   
 Specifies a path (optional) and file name for the output file.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 This extension is exported by Wmitrace.dll.
 

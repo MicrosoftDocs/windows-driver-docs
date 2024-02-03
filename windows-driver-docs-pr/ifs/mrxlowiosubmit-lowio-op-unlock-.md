@@ -1,5 +1,5 @@
 ---
-title: MRxLowIOSubmit\ LOWIO\_OP\_UNLOCK\ routine
+title: MRxLowIOSubmit[LOWIO_OP_UNLOCK] Routine
 description: The MRxLowIOSubmit\ LOWIO\_OP\_UNLOCK\ routine is called by RDBSS to request that a network mini-redirector remove a single lock on a file object.
 keywords: ["MRxLowIOSubmit LOWIO_OP_UNLOCK routine Installable File System Drivers", "PMRX_CALLDOWN"]
 topic_type:

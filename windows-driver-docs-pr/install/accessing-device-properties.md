@@ -1,5 +1,5 @@
 ---
-title: Accessing device properties
+title: Accessing Device Properties
 description: Provides information about accessing device properties.
 keywords:
 - device properties WDK device installations , accessing

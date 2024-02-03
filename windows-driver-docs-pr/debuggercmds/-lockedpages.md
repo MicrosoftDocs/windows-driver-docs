@@ -23,13 +23,13 @@ Syntax
 !lockedpages [Process]
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Process______"></span><span id="_______process______"></span><span id="_______PROCESS______"></span> *Process*   
 Specifies a process. If *Process* is omitted, the current process is used.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Kdexts.dll
 

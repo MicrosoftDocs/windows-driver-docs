@@ -1,5 +1,5 @@
 ---
-title: Scaling the desktop image
+title: Scaling the Desktop Image
 description: Describes how desktop image scaling works
 keywords:
 - connecting displays WDK Windows 7 display , CCD concepts, scaling the desktop image

@@ -1,5 +1,5 @@
 ---
-title: Still image USB I/O structures
+title: Still Image USB I/O Structures
 description: Still image USB I/O structures
 ms.date: 05/04/2023
 ---

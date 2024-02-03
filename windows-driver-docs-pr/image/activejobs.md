@@ -1,5 +1,5 @@
 ---
-title: ActiveJobs element
+title: ActiveJobs Element
 description: The required ActiveJobs element contains a list of all currently active scan jobs.
 keywords: ["ActiveJobs element Imaging Devices"]
 topic_type:

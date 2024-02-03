@@ -1,5 +1,5 @@
 ---
-title: Code example for opening a Property Store
+title: Code Example for Opening a Property Store
 description: Code example for opening a Property Store
 ms.date: 03/28/2023
 ---

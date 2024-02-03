@@ -22,7 +22,7 @@ The **.inline** command enables or disables inline function debugging.
 .inline 1
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______0"></span> **0**  

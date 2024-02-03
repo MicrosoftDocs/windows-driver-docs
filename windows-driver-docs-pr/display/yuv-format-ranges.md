@@ -1,5 +1,5 @@
 ---
-title: YUV format ranges in Windows 8.1
+title: YUV Format Ranges in Windows 8.1
 description: How User-mode display drivers take advantage of YUV video formats
 keywords:
 - full-range YUV WDK display

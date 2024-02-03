@@ -1,5 +1,5 @@
 ---
-title: D3DKMT\_FLIPMODEL\_INDEPENDENT\_FLIP\_STAGE enumeration
+title: D3DKMT_FLIPMODEL_INDEPENDENT_FLIP_STAGE Enumeration
 description: Learn about the D3DKMT\_FLIPMODEL\_INDEPENDENT\_FLIP\_STAGE enumeration, which is reserved for system use. Do not use in your driver.
 keywords: ["D3DKMT_FLIPMODEL_INDEPENDENT_FLIP_STAGE enumeration Display Devices"]
 topic_type:

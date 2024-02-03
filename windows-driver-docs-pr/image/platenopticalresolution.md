@@ -1,5 +1,5 @@
 ---
-title: PlatenOpticalResolution element
+title: PlatenOpticalResolution Element
 description: The required PlatenOpticalResolution element specifies the maximum optical resolution at which the platen can scan.
 keywords: ["PlatenOpticalResolution element Imaging Devices"]
 topic_type:

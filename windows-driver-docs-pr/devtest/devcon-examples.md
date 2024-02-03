@@ -10,7 +10,6 @@ keywords:
 - commands WDK DevCon
 - Example 44 Forcibly update the HAL
 - HAL update example
-ms.custom: contperf-fy22q3
 ms.date: 10/28/2022
 ---
 

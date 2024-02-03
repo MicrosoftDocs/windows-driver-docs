@@ -27,7 +27,7 @@ The **!vprot** extension displays virtual memory protection information.
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the hexadecimal address whose memory protection status is to be displayed.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

@@ -1,6 +1,6 @@
 ---
-title: amli dns (WinDbg)
-description: The amli dns extension displays an ACPI namespace object.
+title: "!amli dns (WinDbg)"
+description: "The !amli dns extension displays an ACPI namespace object."
 keywords: ["amli dns Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
@@ -14,7 +14,6 @@ api_type:
 
 # !amli dns
 
-
 The **!amli dns** extension displays an ACPI namespace object.
 
 Syntax
@@ -23,8 +22,7 @@ Syntax
     !amli dns [/s] [Name | Address]
 ```
 
-## <span id="ddk__amli_dns_dbg"></span><span id="DDK__AMLI_DNS_DBG"></span>Parameters
-
+## Parameters
 
 <span id="________s______"></span><span id="________S______"></span> **/s**   
 Causes the entire namespace subtree under the specified object to be displayed recursively.
@@ -35,7 +33,7 @@ Specifies the namespace path.
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the address of the namespace node.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Kdexts.dll
 
@@ -92,12 +90,3 @@ To display the entire namespace, type:
 ```console
 kd> !amli dns
 ```
-
- 
-
- 
-
-
-
-
-

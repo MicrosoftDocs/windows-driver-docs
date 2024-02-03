@@ -1,5 +1,5 @@
 ---
-title: IRP_MJ_WRITE (FS and filter drivers)
+title: IRP_MJ_WRITE (FS and Filter Drivers)
 description: IRP_MJ_WRITE
 keywords: ["IRP_MJ_WRITE Installable File System Drivers"]
 topic_type:

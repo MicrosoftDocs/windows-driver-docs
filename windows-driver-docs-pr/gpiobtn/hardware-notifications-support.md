@@ -1,5 +1,5 @@
 ---
-title: Hardware notifications support
+title: Hardware Notifications Support
 description: Windows 10, version 1709 provides an infrastructure for the hardware-agnostic support of notification components such as LEDs and vibration mechanisms.
 ms.date: 10/17/2018
 ---

@@ -44,7 +44,7 @@ Only the VAD specified by *VAD-Root* is displayed. The display will include a mo
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Address in the virtual address range of a user-mode module.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

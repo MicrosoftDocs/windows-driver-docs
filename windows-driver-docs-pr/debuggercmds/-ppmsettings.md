@@ -21,7 +21,7 @@ The **!ppmsettings** command displays currently active ppm settings for the proc
 !ppmsettings
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 None
 
@@ -31,7 +31,7 @@ This command is supported on the following versions of Windows:
 - Windows 10, Version 1607
 - Windows 10, Version 1703
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Kdexts.dll 
 

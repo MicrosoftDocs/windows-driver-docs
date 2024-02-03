@@ -21,7 +21,7 @@ The **.effmach** command displays or changes the processor mode that the debugge
 .effmach [MachineType]
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______MachineType______"></span><span id="_______machinetype______"></span><span id="_______MACHINETYPE______"></span> *MachineType*   

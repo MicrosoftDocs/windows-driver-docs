@@ -21,13 +21,13 @@ The **!minipkd.portconfig** extension displays information about the specified P
 !minipkd.portconfig PortConfig 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______PortConfig______"></span><span id="_______portconfig______"></span><span id="_______PORTCONFIG______"></span> *PortConfig*   
 Specifies the address of a PORT\_CONFIGURATION\_INFORMATION data structure.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

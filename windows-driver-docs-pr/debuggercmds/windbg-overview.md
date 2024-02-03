@@ -1,6 +1,7 @@
 ---
 title: WinDbg Overview
 description: This section is an overview of WinDbg's major features.
+keywords: ["Overview of WinDbg's major features", "WinDbg", "Overview", "Windows Debugging"]
 ms.date: 04/10/2023
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: SeStopImpersonatingClient routine
+title: SeStopImpersonatingClient Routine
 description: Learn more about the SeStopImpersonatingClient routine.
 keywords: ["SeStopImpersonatingClient routine Installable File System Drivers"]
 topic_type:

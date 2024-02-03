@@ -1,5 +1,5 @@
 ---
-title: Common, camera, and scanner properties
+title: Common, Camera, and Scanner Properties
 description: Common, camera, and scanner properties
 ms.date: 03/29/2023
 ---

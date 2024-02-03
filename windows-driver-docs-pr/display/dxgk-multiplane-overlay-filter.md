@@ -1,5 +1,5 @@
 ---
-title: \_DXGK\_MULTIPLANE\_OVERLAY\_FILTER structure
+title: _DXGK_MULTIPLANE_OVERLAY_FILTER Structure
 description: Reserved for system use. Do not use it in your driver.Note  This structure is available only in the D3dkmddi.h header provided with Windows Driver Kit (WDK) Version 8 that shipped with Windows 8. It has been removed from later versions of the header. .
 keywords: ["_DXGK_MULTIPLANE_OVERLAY_FILTER structure Display Devices", "DXGK_MULTIPLANE_OVERLAY_FILTER structure Display Devices"]
 topic_type:

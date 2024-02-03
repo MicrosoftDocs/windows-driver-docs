@@ -1,5 +1,5 @@
 ---
-title: General Unicode requirement in INF files
+title: General Unicode Requirement in INF Files
 description: INF files should be saved and encoded as Unicode; they must not be ANSI.
 ms.date: 02/10/2023
 ---

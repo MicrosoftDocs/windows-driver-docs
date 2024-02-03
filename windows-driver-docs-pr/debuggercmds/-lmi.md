@@ -27,7 +27,7 @@ The **!lmi** extension displays detailed information about a module.
 <span id="_______Module______"></span><span id="_______module______"></span><span id="_______MODULE______"></span> *Module*   
 Specifies a loaded module, either by name or by base address.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

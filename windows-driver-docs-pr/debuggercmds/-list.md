@@ -56,7 +56,7 @@ Specifies the address of the first data structure. This is the address at the to
 <span id="_______-h______"></span><span id="_______-H______"></span> **-h**   
 Displays some brief Help text for this extension in the Debugger Command window.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

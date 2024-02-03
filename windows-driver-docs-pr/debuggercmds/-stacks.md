@@ -55,7 +55,7 @@ Specifies the level of detail to use in the display. The following table lists t
 <span id="_______FilterString______"></span><span id="_______filterstring______"></span><span id="_______FILTERSTRING______"></span> *FilterString*   
 Displays only threads that contain the specified substring in a symbol.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Kdexts.dll
 

@@ -21,13 +21,13 @@ The **!wdfkd.wdftmffile** extension sets the trace message format (.tmf) file to
 !wdfkd.wdftmffile TMFpath
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______TMFpath______"></span><span id="_______tmfpath______"></span><span id="_______TMFPATH______"></span> *TMFpath*   
 A path that contains the .tmf file.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Wdfkd.dll
 

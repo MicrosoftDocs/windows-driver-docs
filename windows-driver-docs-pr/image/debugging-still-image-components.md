@@ -1,5 +1,5 @@
 ---
-title: Debugging still image components
+title: Debugging Still Image Components
 description: Debugging still image components
 ms.date: 04/21/2023
 ---

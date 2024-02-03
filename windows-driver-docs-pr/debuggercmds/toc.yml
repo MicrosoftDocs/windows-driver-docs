@@ -592,8 +592,6 @@
         href: -logfile--display-log-file-status-.md
       - name: ".logopen (Open Log File)"
         href: -logopen--open-log-file-.md
-      - name: ".netsyms (Disable Network Symbol Loading)"
-        href: -netsyms.md
       - name: ".netuse (Control Network Connections)"
         href: -netuse--control-network-connections-.md
       - name: ".noshell (Prohibit Shell Commands)"
@@ -1232,8 +1230,6 @@
         href: -vm.md
       - name: "!vpb"
         href: -vpb.md
-      - name: "!vpdd"
-        href: -vpdd.md
       - name: "!vtop"
         href: -vtop.md
       - name: "!wdmaud"
@@ -1705,8 +1701,6 @@
         items: 
         - name: "RPC Extensions (Rpcexts.dll)"
           href: rpc-extensions--rpcexts-dll-.md
-        - name: "!rpcexts.checkrpcsym"
-          href: -rpcexts-checkrpcsym.md
         - name: "!rpcexts.eeinfo"
           href: -rpcexts-eeinfo.md
         - name: "!rpcexts.eerecord"
@@ -1809,8 +1803,6 @@
           href: -ks-automation.md
         - name: "!ks.devhdr"
           href: -ks-devhdr.md
-        - name: "!ks.dhdr"
-          href: -ks-dhdr.md
         - name: "!ks.dump"
           href: -ks-dump.md
         - name: "!ks.dumpbag"
@@ -1843,8 +1835,6 @@
           href: -ks-pciaudio.md
         - name: "!ks.pciks"
           href: -ks-pciks.md
-        - name: "!ks.shdr"
-          href: -ks-shdr.md
         - name: "!ks.topology"
           href: -ks-topology.md
       - name: "SCSI Miniport Extensions (Scsikd.dll and Minipkd.dll)"
@@ -1935,10 +1925,6 @@
           href: -wdfkd-wdfobject.md
         - name: "!wdfkd.wdfopenhandles"
           href: -wdfkd-wdfopenhandles.md
-        - name: "!wdfkd.wdfpool"
-          href: -wdfkd-wdfpool.md
-        - name: "!wdfkd.wdfpooltracker"
-          href: -wdfkd-wdfpooltracker.md
         - name: "!wdfkd.wdfpoolusage"
           href: -wdfkd-wdfpoolusage.md
         - name: "!wdfkd.wdfqueue"
@@ -2063,8 +2049,6 @@
           href: -wmitrace-stop.md
         - name: "!wmitrace.strdump"
           href: -wmitrace-strdump.md
-        - name: "!wmitrace.tfp"
-          href: -wmitrace-tfp.md
         - name: "!wmitrace.tmffile"
           href: -wmitrace-tmffile.md
         - name: "!wmitrace.traceoperation"

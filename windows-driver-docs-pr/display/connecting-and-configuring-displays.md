@@ -1,5 +1,5 @@
 ---
-title: Connecting and configuring displays
+title: Connecting and Configuring Displays
 description: Connecting and Configuring Displays
 keywords:
 - displays WDK Windows 7 display

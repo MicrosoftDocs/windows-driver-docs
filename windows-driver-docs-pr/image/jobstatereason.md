@@ -1,5 +1,5 @@
 ---
-title: JobStateReason element
+title: JobStateReason Element
 description: The optional JobStateReason element specifies one reason why a job is in its current state.
 keywords: ["JobStateReason element Imaging Devices"]
 topic_type:

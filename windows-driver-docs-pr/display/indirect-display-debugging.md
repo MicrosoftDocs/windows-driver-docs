@@ -1,5 +1,5 @@
 ---
-title: Debugging indirect display drivers
+title: Debugging Indirect Display Drivers
 description: Describes debugging techniques for indirect display drivers
 ms.date: 08/05/2022
 keywords:

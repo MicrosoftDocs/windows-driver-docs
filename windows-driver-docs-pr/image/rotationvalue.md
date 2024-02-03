@@ -1,5 +1,5 @@
 ---
-title: RotationValue element
+title: RotationValue Element
 description: The required RotationValue element specifies a single rotation value supported by the scan device.
 keywords: ["RotationValue element Imaging Devices"]
 topic_type:

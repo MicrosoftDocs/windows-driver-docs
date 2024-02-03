@@ -1,5 +1,5 @@
 ---
-title: GetActiveJobsRequest element
+title: GetActiveJobsRequest Element
 description: The required GetActiveJobsRequest element requests a summary of all currently active jobs in the scan device.
 keywords: ["GetActiveJobsRequest element Imaging Devices"]
 topic_type:

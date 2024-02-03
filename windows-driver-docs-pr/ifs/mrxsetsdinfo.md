@@ -1,5 +1,5 @@
 ---
-title: MRxSetSdInfo routine
+title: MRxSetSdInfo Routine
 description: TheMRxSetSdInfo routine is called by RDBSS to request that a network mini-redirector set security descriptor information on a file system object.
 keywords: ["MRxSetSdInfo routine Installable File System Drivers", "PMRX_CALLDOWN"]
 topic_type:

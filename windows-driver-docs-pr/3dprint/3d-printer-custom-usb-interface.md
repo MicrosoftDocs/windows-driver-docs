@@ -1,5 +1,5 @@
 ---
-title: Custom USB interface support for 3D printers
+title: Custom USB Interface Support for 3D Printers
 description: This topic describes how to enable a custom USB interfaces for 3D printers in the v3 and v4 print driver ecosystems.
 ms.date: 03/17/2023
 ---

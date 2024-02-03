@@ -1,6 +1,7 @@
 ---
 title: Time travel debugging extensions
 description: This section describes how to use the time travel debugger extension commands.
+keywords: ["Time travel debugging extensions", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
 ms.date: 09/22/2017
 ---
 

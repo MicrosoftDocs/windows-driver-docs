@@ -1,5 +1,5 @@
 ---
-title: Building a custom compositor app for head-mounted and specialized monitors
+title: Building a Custom Compositor App for Head-Mounted and Specialized Monitors
 description: Building a custom compositor app for head-mounted and specialized monitors
 keywords:
 - display devices WDK

@@ -22,7 +22,7 @@ The **!dpa** extension displays pool allocation information.
 !dpa -?
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 *Options*
@@ -49,24 +49,9 @@ Displays all pool allocations that contain the pointer *Ptr*.
 <span id="_______-_______"></span> **-?**   
 Displays some brief Help text for this extension in the Debugger Command window.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Unavailable</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Kdexts.dll</p></td>
-</tr>
-</tbody>
-</table>
+Windows XP and later - Kdexts.dll
 
  
 

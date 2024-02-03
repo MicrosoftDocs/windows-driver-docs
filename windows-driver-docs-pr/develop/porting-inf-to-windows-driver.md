@@ -1,5 +1,5 @@
 ---
-title: Porting an INF to follow driver package isolation
+title: Porting an INF to Follow Driver Package Isolation
 description: This article provides tips on how to port an INF from old syntax to conform to driver package isolation
 ms.date: 01/05/2024
 ---

@@ -34,7 +34,7 @@ If this is set to 1, the SID type, domain, and user name for the SID is displaye
 
 If this is set to 1, the friendly name is displayed. This includes the SID type, as well as the domain and user name for the SID.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Exts.dll
 

@@ -1,5 +1,5 @@
 ---
-title: Requesting and granting oplocks
+title: Requesting and Granting Oplocks
 description: Requesting and granting oplocks
 ms.date: 07/07/2023
 ---

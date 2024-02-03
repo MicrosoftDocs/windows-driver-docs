@@ -1,5 +1,5 @@
 ---
-title: INF files for WIA devices
+title: INF Files for WIA Devices
 description: INF files for WIA devices
 ms.date: 05/03/2023
 ---

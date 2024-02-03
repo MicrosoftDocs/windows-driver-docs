@@ -1,6 +1,7 @@
 ---
 title: WinDbg Basics 
 description: This section describes the basic capabilities of WinDbg debugger.
+keywords: ["Summary", "WinDbg", "basic capabilities of WinDbg", "Windows Debugging"]
 ms.date: 03/21/2022
 ---
 

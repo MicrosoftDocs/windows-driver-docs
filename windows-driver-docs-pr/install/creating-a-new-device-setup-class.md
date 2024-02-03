@@ -1,5 +1,5 @@
 ---
-title: Creating a new device setup class
+title: Creating a New Device Setup Class
 description: Learn more about how to create a new device setup class
 keywords:
 - device setup classes WDK device installations

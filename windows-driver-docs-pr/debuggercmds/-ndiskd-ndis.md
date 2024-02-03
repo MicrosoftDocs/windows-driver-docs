@@ -21,12 +21,12 @@ The **!ndiskd.ndis** extension displays build information about ndis.sys.
 !ndiskd.ndis 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 This extension has no parameters.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Ndiskd.dll
 

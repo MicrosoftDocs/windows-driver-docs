@@ -21,13 +21,13 @@ The **!wudfext.wudfrefhist** extension displays the reference count stack histor
 !wudfext.wudfrefhist ObjectAddress
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______ObjectAddress______"></span><span id="_______objectaddress______"></span><span id="_______OBJECTADDRESS______"></span> *ObjectAddress*   
 Specifies the address of the UMDF object whose reference count stack history is to be displayed. Note that this is the address of the object itself, not of the interface.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Wudfext.dll
 

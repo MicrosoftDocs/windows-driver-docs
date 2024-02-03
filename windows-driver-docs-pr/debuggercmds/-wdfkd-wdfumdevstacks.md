@@ -21,7 +21,7 @@ The **!wdfkd.wdfumdevstacks** extension displays information about all UMDF devi
 !wdfkd.wdfumdevstacks [Flags] 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Flags______"></span><span id="_______flags______"></span><span id="_______FLAGS______"></span> *Flags*   

@@ -1,5 +1,5 @@
 ---
-title: PixelsPerLine element
+title: PixelsPerLine Element
 description: The required PixelsPerLine element describes the exact width, in pixels, of the final output image.
 keywords: ["PixelsPerLine element Imaging Devices"]
 topic_type:

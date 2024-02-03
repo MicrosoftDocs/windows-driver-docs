@@ -1,5 +1,5 @@
 ---
-title: ProcAmpControlBlt method
+title: ProcAmpControlBlt Method
 description: The sample DXVA\_ProcAmpControlDeviceClass::ProcAmpControlBlt function performs the ProcAmp adjustment operation by writing the output to the destination surface.
 keywords: ["ProcAmpControlBlt method Display Devices", "ProcAmpControlBlt method Display Devices , DXVA_ProcAmpControlDeviceClass interface", "DXVA_ProcAmpControlDeviceClass interface Display Devices , ProcAmpControlBlt method"]
 topic_type:

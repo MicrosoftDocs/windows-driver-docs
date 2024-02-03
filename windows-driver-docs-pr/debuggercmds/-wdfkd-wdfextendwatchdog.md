@@ -21,7 +21,7 @@ The **!wdfkd.wdfextendwatchdog** extension extends the time-out period (from 10 
 !wdfkd.wdfextendwatchdog Handle [Extend]
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Handle______"></span><span id="_______handle______"></span><span id="_______HANDLE______"></span> *Handle*   
@@ -30,7 +30,7 @@ A handle to a WDFDEVICE-typed object.
 <span id="_______Extend______"></span><span id="_______extend______"></span><span id="_______EXTEND______"></span> *Extend*   
 Optional. A value that indicates whether to enable or disable extension of the time-out period. If *Extend* is 0, extension is disabled, and the time-out period is 10 minutes. If *Extend* is 1, extension is enabled and the time-out period is 24 hours. The default value is 1.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Wdfkd.dll
 

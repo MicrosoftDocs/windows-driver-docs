@@ -1,5 +1,5 @@
 ---
-title: GetJobHistoryRequest element
+title: GetJobHistoryRequest Element
 description: The required GetJobHistoryRequest element requests a summary of job-related variables for previously completed jobs.
 keywords: ["GetJobHistoryRequest element Imaging Devices"]
 topic_type:

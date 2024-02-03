@@ -40,7 +40,7 @@ Allows authentication dialog boxes to appear when SymSrv receives an authenticat
 <span id="_______prompts_off______"></span><span id="_______PROMPTS_OFF______"></span> **prompts off**   
 Suppresses all authentication dialog boxes when SymSrv receives an authentication request. This may result in SymSrv being unable to access symbols over the internet.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

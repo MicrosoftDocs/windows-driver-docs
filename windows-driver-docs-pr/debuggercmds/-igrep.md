@@ -30,7 +30,7 @@ Specifies the pattern to search for. If omitted, the last *Pattern* is used.
 <span id="_______StartAddress______"></span><span id="_______startaddress______"></span><span id="_______STARTADDRESS______"></span> *StartAddress*   
 Specifies the hexadecimal address at which to begin searching. If omitted, the current program counter is used.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

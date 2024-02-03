@@ -29,7 +29,7 @@ This extension command should not be confused with the [**.thread (Set Register 
 <span id="_______TEB______"></span><span id="_______teb______"></span> *TEB*   
 Specifies the address of the thread environment block (TEB).
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

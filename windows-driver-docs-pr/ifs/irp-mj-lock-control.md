@@ -1,5 +1,5 @@
 ---
-title: IRP_MJ_LOCK_CONTROL (FS and filter drivers)
+title: IRP_MJ_LOCK_CONTROL (FS and Filter Drivers)
 description: IRP_MJ_LOCK_CONTROL
 keywords: ["IRP_MJ_LOCK_CONTROL Installable File System Drivers"]
 topic_type:

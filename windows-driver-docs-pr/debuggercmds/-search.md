@@ -24,7 +24,7 @@ Syntax
 !search -?
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______-s______"></span><span id="_______-S______"></span> **-s**   
@@ -48,7 +48,7 @@ Specifies the page frame number (PFN) of the end of the range to be searched. If
 <span id="_______-_______"></span> **-?**   
 Displays help for this extension in the Debugger Command window.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Kdexts.dll
 

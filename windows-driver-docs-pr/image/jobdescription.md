@@ -1,5 +1,5 @@
 ---
-title: JobDescription element
+title: JobDescription Element
 description: The required JobDescription element contains basic creation information for the currently identified job.
 keywords: ["JobDescription element Imaging Devices"]
 topic_type:

@@ -1,5 +1,5 @@
 ---
-title: RequestedElements element
+title: RequestedElements Element
 description: The required RequestedElements element identifies the elements that the client wants data for when it calls GetScannerElementsRequest or GetJobElementsRequest.
 keywords: ["RequestedElements element Imaging Devices"]
 topic_type:

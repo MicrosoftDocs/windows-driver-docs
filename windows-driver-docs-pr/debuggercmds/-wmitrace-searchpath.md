@@ -33,7 +33,7 @@ The path to the directory where the debugger should look for the trace message f
 
 <span id="_____________"></span>   
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 This extension is exported by Wmitrace.dll.
 

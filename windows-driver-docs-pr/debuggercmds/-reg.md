@@ -140,7 +140,7 @@ Displays ownership of an intent lock. *LockAddress* specifies the address of the
 <span id="_______dumppool_sr"></span><span id="_______DUMPPOOL_SR"></span> **dumppool** \[**s**|**r**\]  
 Displays registry-allocated paged pool. If **s** is specified, the list of registry pages is saved to a temporary file. If **r** is specified, the registry page list is restored from the previously saved temporary file.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Kdexts.dll
 

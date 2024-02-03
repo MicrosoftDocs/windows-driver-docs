@@ -27,7 +27,7 @@ The **!popolicy** extension displays the power policy of the target computer.
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the address of the power policy structure to display. If this is omitted, then nt!PopPolicy is displayed.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

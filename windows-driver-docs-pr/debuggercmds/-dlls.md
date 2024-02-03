@@ -58,7 +58,7 @@ Specifies the address of the loader entry for a module. If you include this para
 <span id="_______-h______"></span><span id="_______-H______"></span> **-h**   
 Displays some Help text for this extension in the [Debugger Command window](../debugger/debugger-command-window.md).
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

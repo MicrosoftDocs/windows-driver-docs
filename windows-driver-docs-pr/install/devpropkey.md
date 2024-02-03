@@ -1,5 +1,5 @@
 ---
-title: DEVPROPKEY structure
+title: DEVPROPKEY Structure
 description: In Windows Vista and later versions of Windows, the DEVPROPKEY structure represents a device property key for a device property in the unified device property model.
 keywords: ["DEVPROPKEY structure Device and Driver Installation"]
 topic_type:

@@ -1,5 +1,5 @@
 ---
-title: Context monitoring
+title: Context Monitoring
 description: Context monitoring uses a monitored fence object, allowing for flexible synchronization between GPU engines, or across CPU cores and GPU engines.
 ms.date: 12/06/2023
 ---

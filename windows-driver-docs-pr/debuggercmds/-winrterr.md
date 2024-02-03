@@ -22,7 +22,7 @@ The **!winrterr** sets the debugger reporting mode for Windows Runtime errors.
 !winrterr
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="Mode"></span><span id="mode"></span><span id="MODE"></span>*Mode*  

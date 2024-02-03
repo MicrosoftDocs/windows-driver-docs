@@ -28,7 +28,7 @@ The **!tp** extension displays thread pool information.
 !tp -?
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______pool_Address_____________"></span><span id="_______pool_address_____________"></span><span id="_______POOL_ADDRESS_____________"></span> **pool** **** *Address*   
@@ -103,7 +103,7 @@ This flag is relevant only when the **pool** option is used. In Windows XP, Wind
 <span id="_______-_______"></span> **-?**   
 Displays a brief help text for this extension in the Debugger Command window.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

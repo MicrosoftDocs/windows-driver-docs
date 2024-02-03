@@ -1,5 +1,5 @@
 ---
-title: Global Navigation Satellite System (GNSS) driver design guide
+title: Global Navigation Satellite System (GNSS) Driver Design Guide
 description: This section contains design guidance for building Global Navigation Satellite System (GNSS) device drivers.
 ms.date: 03/21/2023
 ---

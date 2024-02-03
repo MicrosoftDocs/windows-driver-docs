@@ -1,5 +1,5 @@
 ---
-title: Choosing a driver model
+title: Choosing a Driver Model
 description: Microsoft Windows provides a variety of driver models that you can use to write drivers.
 keywords:
 - driver model

@@ -21,7 +21,7 @@ The **!wdfkd.wdfopenhandles** extension displays information about all the handl
 !wdfkd.wdfopenhandles Handle [Flags]
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Handle______"></span><span id="_______handle______"></span><span id="_______HANDLE______"></span> *Handle*   
@@ -33,7 +33,7 @@ Optional. Specifies the kind of information to display. *Flags* can be any combi
 <span id="Bit_0__0x1_"></span><span id="bit_0__0x1_"></span><span id="BIT_0__0X1_"></span>Bit 0 (0x1)  
 Displays file object context information.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Wdfkd.dll
 
