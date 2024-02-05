@@ -108,6 +108,7 @@ The following flag can be set for IRP_MN_NOTIFY_CHANGE_DIRECTORY:
   | ----- | ------- |
   | **DirectoryNotifyInformation** | Return a [**FILE_NOTIFY_INFORMATION**](/windows/win32/api/winnt/ns-winnt-file_notify_information) structure for directory change. |
   | **DirectoryNotifyExtendedInformation** | Return a [**FILE_NOTIFY_EXTENDED_INFORMATION**](/windows/win32/api/winnt/ns-winnt-file_notify_extended_information) structure for each directory change. |
+  | **DirectoryNotifyFullInformation** | Return a [**FILE_NOTIFY_FULL_INFORMATION**](/windows/win32/api/winnt/ns-winnt-file_notify_full_information) structure for each directory change. |
 
 ## See also
 
@@ -132,6 +133,8 @@ The following flag can be set for IRP_MN_NOTIFY_CHANGE_DIRECTORY:
 [**FILE_NOTIFY_INFORMATION**](/windows/win32/api/winnt/ns-winnt-file_notify_information)
 
 [**FILE_NOTIFY_EXTENDED_INFORMATION**](/windows/win32/api/winnt/ns-winnt-file_notify_extended_information)
+
+[**FILE_NOTIFY_FULL_INFORMATION**](/windows/win32/api/winnt/ns-winnt-file_notify_full_information)
 
 [**IO_STACK_LOCATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location)
 
