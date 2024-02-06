@@ -1,5 +1,5 @@
 ---
-title: Implementing software tracing for Windows
+title: Implementing Software Tracing for Windows
 description: How do I implement software tracing for Windows XP and later versions of Windows
 ms.date: 04/20/2017
 ---

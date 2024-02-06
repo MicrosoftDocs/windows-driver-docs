@@ -1,5 +1,5 @@
 ---
-title: SpChangeIrql rule (storport)
+title: SpChangeIrql Rule (Storport)
 description: This rule verifies that the StorPort callback routines return at the same IRQL level as the level at which they are called.
 ms.date: 05/21/2018
 keywords: ["SpChangeIrql rule (storport)"]

@@ -1,5 +1,5 @@
 ---
-title: Example 9 Creating a TMF file
+title: Example 9 Creating a TMF File
 description: Example 9 Creating a TMF file
 keywords:
 - Tracefmt WDK , TMF files

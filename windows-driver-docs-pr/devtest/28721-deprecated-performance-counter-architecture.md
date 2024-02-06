@@ -1,5 +1,5 @@
 ---
-title: C28721 warning
+title: C28721 Warning
 description: Warning C28721 Deprecated performance counter architecture.
 ms.date: 04/20/2017
 f1_keywords: 

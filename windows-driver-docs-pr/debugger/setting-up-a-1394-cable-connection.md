@@ -1,5 +1,5 @@
 ---
-title: Setting Up Kernel-Mode Debugging over a 1394 Cable Manually
+title: Setting Up Kernel-Mode Debugging Over a 1394 Cable Manually
 description: Debugging Tools for Windows supports kernel debugging over a 1394 (Firewire) cable. This topic describes how to set up 1394 debugging manually.
 keywords: making a 1394 cable connection, 1394 connection, IEEE 1394 cable, FireWire cable
 ms.date: 02/20/2020
