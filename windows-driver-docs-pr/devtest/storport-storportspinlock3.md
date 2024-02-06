@@ -1,5 +1,5 @@
 ---
-title: StorPortSpinLock3 rule (storport)
+title: StorPortSpinLock3 Rule (Storport)
 description: The StorPortSpinLock3 rule verifies the lock acquisition hierarchy that is described in the documentation for the StorPortAcquireSpinLock routine.
 ms.date: 05/21/2018
 keywords: ["StorPortSpinLock3 rule (storport)"]

@@ -1,5 +1,5 @@
 ---
-title: DDI compliance checking
+title: DDI Compliance Checking
 description: The DDI compliance checking option determines whether the driver correctly interacts with the Windows operating system kernel.
 ms.date: 04/03/2020
 ---

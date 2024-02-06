@@ -1,5 +1,5 @@
 ---
-title: IoAllocateComplete rule
+title: IoAllocateComplete Rule
 description: The IoAllocateComplete rule specifies that a driver should not call IoCompleteRequest if the IRP was created with IoAllocateIrp.
 ms.date: 05/21/2018
 keywords: ["IoAllocateComplete rule"]

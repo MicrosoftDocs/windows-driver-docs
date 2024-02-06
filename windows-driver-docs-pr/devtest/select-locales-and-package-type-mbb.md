@@ -1,5 +1,5 @@
 ---
-title: Select locales and package type in Mobile Broadband Metadata Authoring Wizard
+title: Select Locales and Package Type in Mobile Broadband Metadata Authoring Wizard
 description: Select locales and package type in the Mobile Broadband Metadata Authoring Wizard
 keywords:
 - Select locales and package type in the Mobile Broadband Metadata Authoring Wizard

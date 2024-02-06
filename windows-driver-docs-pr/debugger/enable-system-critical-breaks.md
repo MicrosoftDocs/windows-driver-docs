@@ -1,5 +1,5 @@
 ---
-title: Enable system critical breaks
+title: Enable System Critical Breaks
 description: Enable system critical breaks
 keywords: ["Enable system critical breaks (global flag)"]
 ms.date: 05/23/2017

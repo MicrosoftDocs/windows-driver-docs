@@ -1,5 +1,5 @@
 ---
-title: ZwRegistryCreate rule (storport)
+title: ZwRegistryCreate Rule (Storport)
 description: This rule verifies that the handle to a registry key created with ZwCreateKey is subsequently used correctly by other ZwXxx routines.
 ms.date: 05/21/2018
 keywords: ["ZwRegistryCreate rule (storport)"]
