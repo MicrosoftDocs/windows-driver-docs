@@ -1,5 +1,5 @@
 ---
-title: NdisMFreeSharedMemory Rule (Ndis)
+title: NdisMFreeSharedMemory Rule (NDIS)
 description: NdisMFreeSharedMemory cannot be called from a MiniportShutdownEx function.
 ms.date: 05/21/2018
 keywords: ["NdisMFreeSharedMemory rule (ndis)"]

@@ -1,5 +1,5 @@
 ---
-title: NdisMDeregisterInterruptEx Rule (Ndis)
+title: NdisMDeregisterInterruptEx Rule (NDIS)
 description: After NdisMDeregisterInterruptEx returns control, the miniport driver cannot call the NdisMSynchronizeWithInterruptEx function.
 ms.date: 05/21/2018
 keywords: ["NdisMDeregisterInterruptEx rule (ndis)"]

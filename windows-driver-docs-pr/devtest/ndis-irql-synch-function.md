@@ -1,5 +1,5 @@
 ---
-title: Irql_Synch_Function Rule (Ndis)
+title: Irql_Synch_Function Rule (NDIS)
 description: The Irql\_Synch\_Function rule specifies that the NDIS interrupt and synchronization DDIs must be called at correct IRQL levels.
 ms.date: 05/21/2018
 keywords: ["Irql_Synch_Function rule (ndis)"]

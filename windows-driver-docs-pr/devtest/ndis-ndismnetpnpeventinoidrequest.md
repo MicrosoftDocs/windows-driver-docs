@@ -1,5 +1,5 @@
 ---
-title: NdisMNetPnPEventInOIDRequest Rule (Ndis)
+title: NdisMNetPnPEventInOIDRequest Rule (NDIS)
 description: This rule checks that NdisMNetPnPEvent is not called in the context of an OID request.
 ms.date: 05/21/2018
 keywords: ["NdisMNetPnPEventInOIDRequest rule (ndis)"]

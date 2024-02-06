@@ -1,5 +1,5 @@
 ---
-title: NdisMIndicateStatusEx Rule (Ndis)
+title: NdisMIndicateStatusEx Rule (NDIS)
 description: The driver must not call NdisMIndicateStatusEx after it returns from the MiniportHaltEx function.
 ms.date: 05/21/2018
 keywords: ["NdisMIndicateStatusEx rule (ndis)"]

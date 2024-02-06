@@ -1,5 +1,5 @@
 ---
-title: NdisReEnumerateProtocolBindings Rule (Ndis)
+title: NdisReEnumerateProtocolBindings Rule (NDIS)
 description: Protocol drivers cannot call NdisReEnumerateProtocolBindings from within the context of the ProtocolBindAdapterEx or ProtocolUnbindAdapterEx functions.
 ms.date: 05/21/2018
 keywords: ["NdisReEnumerateProtocolBindings rule (ndis)"]

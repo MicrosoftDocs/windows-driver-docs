@@ -1,5 +1,5 @@
 ---
-title: WlanAssociation Rule (Ndis)
+title: WlanAssociation Rule (NDIS)
 description: The WlanAssociation rule verifies the miniport driver correctly follows the Native 802.11 wireless LAN (WLAN) association sequence.
 ms.date: 05/21/2018
 keywords: ["WlanAssociation rule (ndis)"]
