@@ -1,5 +1,5 @@
 ---
-title: MODM_PREPARE function (Windows Drivers)
+title: MODM_PREPARE Function (Windows Drivers)
 description: Learn more about the MODM_PREPARE function.
 keywords:
 - mmddk/modMessage

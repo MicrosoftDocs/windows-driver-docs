@@ -1,5 +1,5 @@
 ---
-title: Configuring tools.ini
+title: Configuring Tools.Ini
 description: Configuring tools.ini
 keywords: ["tools.ini file", "ntsd.ini file"]
 ms.date: 05/23/2017

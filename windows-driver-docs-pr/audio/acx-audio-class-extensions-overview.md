@@ -1,5 +1,5 @@
 ---
-title: ACX audio class extensions overview
+title: ACX Audio Class Extensions Overview
 description: This topic provides a high level overview of the ACX Audio Class Extensions.
 ms.date: 09/29/2023
 ms.localizationpriority: medium

@@ -1,6 +1,6 @@
 ---
-title: Symbols for Windows debugging
-description: Symbols for the Windows debuggers (WinDbg, KD, CDB, and NTSD) are available from a public symbol server.
+title: Symbols for Windows Debugging
+description: Symbols for the Windows debuggers (WinDbg, KD, CDB, and NTSD) are available from a public symbol server. 
 keywords: ["symbols", "setup, symbols", "symbols, setup"]
 ms.date: 12/20/2022
 ---
