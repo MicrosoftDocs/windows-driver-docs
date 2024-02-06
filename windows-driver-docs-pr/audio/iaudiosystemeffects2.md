@@ -1,5 +1,5 @@
 ---
-title: IAudioSystemEffects2 interface
+title: IAudioSystemEffects2 Interface
 description: The IAudioSystemEffects2 interface was introduced with Windows 8.1 for retrieving information about the processing objects in a given mode.
 keywords: ["IAudioSystemEffects2 interface Audio Devices", "IAudioSystemEffects2 interface Audio Devices , described"]
 topic_type:

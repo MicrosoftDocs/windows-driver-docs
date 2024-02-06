@@ -1,5 +1,5 @@
 ---
-title: StorPortSpinLock rule (storport)
+title: StorPortSpinLock Rule (Storport)
 description: This rule verifies that locks that are acquired via StorPortAcquireSpinLock are promptly released via StorPortReleaseSpinLock.
 ms.date: 05/21/2018
 keywords: ["StorPortSpinLock rule (storport)"]
