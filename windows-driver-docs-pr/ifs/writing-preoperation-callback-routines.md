@@ -51,8 +51,6 @@ The following information about a minifilter's pre-operation callback routine IR
 
 - A pre-operation callback can be called at IRQL = PASSIVE_LEVEL or IRQL = APC_LEVEL. Most pre-operation callbacks are called at IRQL = PASSIVE_LEVEL, in the context of the thread that originated the I/O request. Only a handful of pre-operation callbacks might be called at IRQL = APC_LEVEL.
 
-- For fast I/O and file system filter (FsFilter) operations, a pre-operation callback routine is always called at IRQL = PASSIVE_LEVEL. IRQL > PASSIVE_LEVEL applies only to IRP-based operations.
-
 - For IRP-based operations, a minifilter's pre-operation callback can be called in the context of a system worker thread if a higher filter or minifilter driver pends the operation for processing by the worker thread. A pre-operation callback is the equivalent of a legacy filter's dispatch routine, so knowing the [IRQL and thread context of a legacy filter's dispatch routine](dispatch-routine-irql-and-thread-context.md) might be helpful.
 
 - Context objects can't be retrieved in post-operation routines at IRQL > APC_LEVEL. Instead, either get the context object during a pre-operation routine and pass it to the post-operation routine or perform post-operation processing at IRQL <= APC_LEVEL. For more information about contexts, see [Managing Contexts](managing-contexts.md).

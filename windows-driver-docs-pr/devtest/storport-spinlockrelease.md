@@ -1,5 +1,5 @@
 ---
-title: SpinLockRelease rule (storport)
+title: SpinLockRelease Rule (Storport)
 description: This rule verifies that the driver does not attempt to release a lock via KeReleaseSpinLock without first acquiring it via KeAquireSpinlock or KeAcquireSpinLockRaiseToDpc. The rule passes when the acquired spin lock is released.
 ms.date: 05/21/2018
 keywords: ["SpinLockRelease rule (storport)"]

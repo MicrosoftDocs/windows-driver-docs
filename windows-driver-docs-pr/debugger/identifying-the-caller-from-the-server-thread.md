@@ -1,5 +1,5 @@
 ---
-title: Identifying the Caller From the Server Thread
+title: Identifying the Caller from the Server Thread
 description: Identifying the Caller From the Server Thread
 keywords: ["RPC debugging, identifying the caller"]
 ms.date: 05/23/2017

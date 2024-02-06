@@ -1,5 +1,5 @@
 ---
-title: DEBUG\_ATTACH\_XXX
+title: DEBUG_ATTACH_XXX
 description: The DEBUG\_ATTACH\_*XXX* bit-flags described in this topic control how the debugger engine attaches to a user-mode process.
 ms.date: 08/10/2018
 topic_type:

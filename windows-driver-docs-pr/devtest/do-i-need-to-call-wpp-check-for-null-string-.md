@@ -1,5 +1,5 @@
 ---
-title: Do I need to call WPP_CHECK_FOR_NULL_STRING
+title: Do I Need to Call WPP_CHECK_FOR_NULL_STRING
 description: Do I need to call WPP_CHECK_FOR_NULL_STRING
 ms.date: 04/20/2017
 ---

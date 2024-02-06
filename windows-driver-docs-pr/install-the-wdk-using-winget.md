@@ -8,7 +8,7 @@ keywords:
 - winget
 - install
 - download
-ms.date: 01/08/2024
+ms.date: 02/02/2024
 ---
 
 # Install the WDK using WinGet
@@ -63,6 +63,10 @@ You can use WinGet to install Visual Studio 2022 with all the workloads and comp
 
 Depending on the edition you would like to install, you will need to provide `winget` with a different set of installer parameters along with the path to the .vsconfig file you have just created to customize your installation.
 
+> [!CAUTION]
+> You must provide an absolute path to your `wdk.vsconfig` file in the following commands. Otherwise, WinGet may fail to install Visual Studio while still reporting success. 
+
+
 **Visual Studio Community 2022**:
 ```cmd
 winget install --source winget --exact --id Microsoft.VisualStudio.2022.Community --override "--passive --config <vsconfig-folder>\wdk.vsconfig"
@@ -84,11 +88,11 @@ You can install both the Windows SDK and WDK from WinGet by running the followin
 
 **Windows SDK**:
 ```cmd
-winget install --source winget --exact --id Microsoft.WindowsSDK.10.0.22621
+winget install --source winget --exact --id Microsoft.WindowsSDK.10.0.22621 --log $env:USERPROFILE/Desktop/sdk-install.log
 ```
 **Windows WDK**:
 ```cmd
-winget install --source winget --exact --id Microsoft.WindowsWDK.10.0.22621
+winget install --source winget --exact --id Microsoft.WindowsWDK.10.0.22621 --log $env:USERPROFILE/Desktop/wdk-install.log
 ```
 
 ### Step 3: Install WDK Visual Studio extension

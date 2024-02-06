@@ -1,5 +1,5 @@
 ---
-title: Setting Up Kernel-Mode Debugging over a USB 2.0 Cable Manually
+title: Setting Up Kernel-Mode Debugging Over a USB 2.0 Cable Manually
 description: Debugging Tools for Windows supports kernel debugging over a USB 2.0 cable. This topic describes how to set up USB 2.0 debugging manually.
 keywords: ["setup, making a USB 2.0 cable connection", "cable connection, USB 2.0 debug cable", "USB 2.0 debugging connection", "USB 2.0 debugging connection, setting up the hardware", "USB 2.0 debugging connection, software requirements"]
 ms.date: 02/07/2019

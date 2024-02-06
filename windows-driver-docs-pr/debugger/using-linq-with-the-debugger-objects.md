@@ -1,5 +1,5 @@
 ---
-title: Using LINQ With the debugger objects
+title: Using LINQ with the Debugger Objects
 description: Using LINQ With the debugger objects. LINQ syntax can be used with the debugger objects to search and manipulate data.
 keywords: ["Using LINQ With the debugger objects"]
 ms.date: 04/12/2019
@@ -13,7 +13,7 @@ Debugger objects are projected into a namespace rooted at "Debugger". Processes,
 
 LINQ is conceptually similar to the Structured Query Language (SQL) that is used to query databases. You can use a number of LINQ methods to search, filter and parse debug data. The LINQ C# method syntax is used. For more information on LINQ and the LINQ C# syntax, see [Getting Started with LINQ in C#](/dotnet/csharp/programming-guide/concepts/linq/getting-started-with-linq)
 
-LINQ that is used in the debugger support uses the “method syntax” of LINQ and not the “query syntax”. You can find more details about the differences in [LINQ (Language-Integrated Query)](/dotnet/csharp/programming-guide/concepts/linq/query-syntax-and-method-syntax-in-linq).
+LINQ that is used in the debugger support uses the "method syntax" of LINQ and not the "query syntax". You can find more details about the differences in [LINQ (Language-Integrated Query)](/dotnet/csharp/programming-guide/concepts/linq/query-syntax-and-method-syntax-in-linq).
 
 LINQ commands such as the following can be used with the debugger objects. All, .Any, .Count, .First, .Flatten, .GroupBy, .Last, .OrderBy, .OrderByDescending, .Select, and .Where. These methods follow (as closely as possible) the C# LINQ method form.
 
@@ -459,9 +459,9 @@ Error Handling Methods
 
 **AllNonError (PredicateMethod)**: Returns whether all non-error elements of a collection satisfy a given condition.
 
-**FirstNonError (\[PredicateMethod\])**: Returns the first element of a collection that isn’t an error.
+**FirstNonError (\[PredicateMethod\])**: Returns the first element of a collection that isn't an error.
 
-**LastNonError (\[PredicateMethod\])**: Returns the last element of a collection that isn’t an error.
+**LastNonError (\[PredicateMethod\])**: Returns the last element of a collection that isn't an error.
 
 
 

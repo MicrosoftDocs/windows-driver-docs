@@ -1,5 +1,5 @@
 ---
-title: IoAllocateFree rule
+title: IoAllocateFree Rule
 description: The IoAllocateFree rule specifies that a driver should use IoFreeIrp only on IRPs that were previously allocated with IoAllocateIrp.
 ms.date: 05/21/2018
 keywords: ["IoAllocateFree rule"]
