@@ -1,5 +1,5 @@
 ---
-title: SpinLockSafe rule (storport)
+title: SpinLockSafe Rule (Storport)
 description: This rule verifies that the IoStartNextPacket and IoCompleteRequest routines are not called while holding a spin lock.
 ms.date: 05/21/2018
 keywords: ["SpinLockSafe rule (storport)"]

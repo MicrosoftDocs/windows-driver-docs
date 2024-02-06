@@ -1,5 +1,5 @@
 ---
-title: Kernel-mode dump files
+title: Kernel-mode Dump Files
 description: Learn how to create and analyze kernel-mode memory dump files to resolve kernel-mode errors.
 keywords: ["dump file, kernel mode"]
 ms.date: 12/21/2023

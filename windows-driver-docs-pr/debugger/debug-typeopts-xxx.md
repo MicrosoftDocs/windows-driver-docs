@@ -1,5 +1,5 @@
 ---
-title: DEBUG\_TYPEOPTS\_XXX
+title: DEBUG_TYPEOPTS_XXX
 description: The type options affect how the engine formats numbers and strings for output.
 ms.date: 12/07/2017
 topic_type:

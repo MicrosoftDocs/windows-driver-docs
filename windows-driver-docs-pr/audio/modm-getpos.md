@@ -1,5 +1,5 @@
 ---
-title: MODM_GETPOS function (Windows Drivers)
+title: MODM_GETPOS Function (Windows Drivers)
 description: Learn more about the MODM_GETPOS function.
 keywords:
 - mmddk/modMessage

@@ -1,5 +1,5 @@
 ---
-title: MODM_PROPERTIES function (Windows Drivers)
+title: MODM_PROPERTIES Function (Windows Drivers)
 description: Learn more about the MODM_PROPERTIES function.
 keywords:
 - mmddk/modMessage

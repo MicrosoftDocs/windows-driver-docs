@@ -1,5 +1,5 @@
 ---
-title: Review and save package in the Mobile Broadband Metadata Authoring Wizard
+title: Review and Save Package in the Mobile Broadband Metadata Authoring Wizard
 description: Review and save package in the Mobile Broadband Metadata Authoring Wizard
 keywords:
 - Review and save package in the Mobile Broadband Metadata Authoring Wizard
