@@ -1,5 +1,5 @@
 ---
-title: C28624 warning
+title: C28624 Warning
 description: Warning C28624 No call to Release() to match incremented refcount from LResultFromObject.
 ms.date: 04/20/2017
 f1_keywords: 

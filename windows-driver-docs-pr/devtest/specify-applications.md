@@ -1,5 +1,5 @@
 ---
-title: Specify applications in the Device Metadata Authoring Wizard
+title: Specify Applications in the Device Metadata Authoring Wizard
 description: Specify applications in the Device Metadata Authoring Wizard
 keywords:
 - Specify applications in the Device Metadata Authoring Wizard

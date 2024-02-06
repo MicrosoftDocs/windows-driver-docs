@@ -1,5 +1,5 @@
 ---
-title: C30030 warning
+title: C30030 Warning
 description: Warning C30030 Calling a memory allocating function and passing a parameter that indicates executable memory.
 ms.date: 08/24/2022
 f1_keywords: ["C30030", "BANNED_MEM_ALLOCATION_UNSAFE", "__WARNING_BANNED_MEM_ALLOCATION_UNSAFE"]

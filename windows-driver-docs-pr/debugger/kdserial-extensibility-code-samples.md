@@ -1,5 +1,5 @@
 ---
-title: KDNET Serial, and KDSerial extensibility code samples
+title: KDNET Serial, and KDSerial Extensibility Code Samples
 description: Debugging Tools for Windows supports extending the KDNET serial transport.
 ms.date: 04/14/2022
 ---

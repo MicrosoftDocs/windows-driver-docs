@@ -1,5 +1,5 @@
 ---
-title: Enable pool tagging
+title: Enable Pool Tagging
 description: Enable pool tagging
 keywords: ["Enable pool tagging (global flag)"]
 ms.date: 01/11/2021
