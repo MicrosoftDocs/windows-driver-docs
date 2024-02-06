@@ -1,5 +1,5 @@
 ---
-title: Forcing a system crash from the keyboard
+title: Forcing a System Crash from the Keyboard
 description: Learn how to configure your settings to force a system crash from the PS/2, USB, and Hyper-V keyboard types.
 keywords: ["boot process, causing system crash from keyboard", "CTRL+SCROLL LOCK", "system crash, causing from keyboard", "bug check, causing from keyboard", "keyboard-caused system crash", "USB keyboard and system crash", "PS/2 keyboard and system crash", "forcing system crash from keyboard"]
 ms.date: 12/21/2023

@@ -1,5 +1,5 @@
 ---
-title: Bug check 0x7B INACCESSIBLE_BOOT_DEVICE
+title: Bug Check 0x7B INACCESSIBLE_BOOT_DEVICE
 description: Learn how the INACCESSIBLE_BOOT_DEVICE bug check indicates that the Microsoft Windows operating system has lost access to the system partition during startup.
 keywords: ["Bug Check 0x7B INACCESSIBLE_BOOT_DEVICE", "INACCESSIBLE_BOOT_DEVICE"]
 ms.date: 02/22/2023

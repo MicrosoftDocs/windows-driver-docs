@@ -1,5 +1,5 @@
 ---
-title: Run the tests
+title: Run the Tests
 description: Description of the tests and configuration file for the data-driven SysFund tests for Windows drivers
 keywords:
 - Sysfund tests

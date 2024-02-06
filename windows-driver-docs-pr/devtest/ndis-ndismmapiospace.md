@@ -1,5 +1,5 @@
 ---
-title: NdisMMapIoSpace rule (ndis)
+title: NdisMMapIoSpace Rule (NDIS)
 description: The NdisMMapIoSpace function should only be called in the context of MiniportInitializeEx.
 ms.date: 05/21/2018
 keywords: ["NdisMMapIoSpace rule (ndis)"]

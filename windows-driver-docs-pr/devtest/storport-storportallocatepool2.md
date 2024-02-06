@@ -1,5 +1,5 @@
 ---
-title: StorPortAllocatePool2 rule (storport)
+title: StorPortAllocatePool2 Rule (Storport)
 description: This rule verifies that the miniport must not attempt to call StorPortAllocatePool on an allocated buffer without deallocating it first.
 ms.date: 05/21/2018
 keywords: ["StorPortAllocatePool2 rule (storport)"]

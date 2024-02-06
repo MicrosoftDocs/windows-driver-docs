@@ -1,5 +1,5 @@
 ---
-title: C28722 warning
+title: C28722 Warning
 description: Warning C28722 Unannotated buffer in function declaration.
 ms.date: 04/20/2017
 f1_keywords: 

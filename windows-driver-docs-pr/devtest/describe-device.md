@@ -1,5 +1,5 @@
 ---
-title: Describe the device in the Device Metadata Authoring Wizard
+title: Describe the Device in the Device Metadata Authoring Wizard
 description: Describe the device in the Device Metadata Authoring Wizard
 keywords:
 - Describe the device in the Device Metadata Authoring Wizard

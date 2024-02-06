@@ -1,5 +1,5 @@
 ---
-title: How to fix TraceLogging build errors
+title: How to Fix TraceLogging Build Errors
 description: This topic describes some common build errors and how to resolve them.
 ms.date: 04/20/2017
 ---

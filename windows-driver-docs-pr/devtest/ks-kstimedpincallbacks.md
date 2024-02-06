@@ -1,5 +1,5 @@
 ---
-title: KsTimedPinCallbacks rule ()
+title: KsTimedPinCallbacks Rule ()
 description: The KsTimedPinCallbacks rule specifies that a kernel-streaming (KS) miniport driver returns from a pin callback function within 500 ms.
 ms.date: 05/21/2018
 keywords: ["KsTimedPinCallbacks rule ()"]

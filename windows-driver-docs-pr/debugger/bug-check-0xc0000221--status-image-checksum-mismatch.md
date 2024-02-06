@@ -1,5 +1,5 @@
 ---
-title: Bug check 0xC0000221 STATUS_IMAGE_CHECKSUM_MISMATCH
+title: Bug Check 0xC0000221 STATUS_IMAGE_CHECKSUM_MISMATCH
 description: The STATUS_IMAGE_CHECKSUM_MISMATCH bug check has a value of 0xC0000221 and indicates that a driver or a system DLL is corrupted.
 keywords: ["Bug check 0xC0000221 STATUS_IMAGE_CHECKSUM_MISMATCH", "STATUS_IMAGE_CHECKSUM_MISMATCH"]
 ms.date: 12/08/2022
