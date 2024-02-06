@@ -1,5 +1,5 @@
 ---
-title: ReservedDDIs Rule (Wdm)
+title: ReservedDDIs Rule (WDM)
 description: The ReservedDDIs rule verifies that drivers do not call any reserved functions.
 ms.date: 05/21/2018
 keywords: ["ReservedDDIs rule (wdm)"]

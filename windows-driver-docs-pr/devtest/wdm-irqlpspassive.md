@@ -1,5 +1,5 @@
 ---
-title: IrqlPsPassive Rule (Wdm)
+title: IrqlPsPassive Rule (WDM)
 ms.date: 05/21/2018
 description: "Learn more about: IrqlPsPassive rule (wdm)"
 keywords: ["IrqlPsPassive rule (wdm)"]

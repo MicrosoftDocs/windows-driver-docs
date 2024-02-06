@@ -1,5 +1,5 @@
 ---
-title: IrqlExAllocatePool Rule (Wdm)
+title: IrqlExAllocatePool Rule (WDM)
 description: The IrqlExAllocatePool rule specifies that the driver calls ExAllocatePoolWithTag and ExAllocatePoolWithTagPriority only when it is executing at IRQL DISPATCH\_LEVEL.
 ms.date: 05/21/2018
 keywords: ["IrqlExAllocatePool rule (wdm)"]

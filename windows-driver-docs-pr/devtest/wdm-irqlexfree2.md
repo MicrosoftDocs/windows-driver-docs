@@ -1,5 +1,5 @@
 ---
-title: IrqlExFree2 Rule (Wdm)
+title: IrqlExFree2 Rule (WDM)
 description: The IrqlExFree2 rule specifies that ExFreePool and ExFreePoolWithTag are called at proper IRQL.
 ms.date: 05/21/2018
 keywords: ["IrqlExFree2 rule (wdm)"]

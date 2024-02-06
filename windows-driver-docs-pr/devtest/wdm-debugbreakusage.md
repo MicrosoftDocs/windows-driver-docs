@@ -1,5 +1,5 @@
 ---
-title: DebugBreakUsage Rule (Wdm)
+title: DebugBreakUsage Rule (WDM)
 description: The DebugBreakUsage rule specifies that the driver must not call DbgBreakPoint or DbgBreakPointWithStatus. This rule only applies when you are building a non-debug version of the driver.
 ms.date: 05/21/2018
 keywords: ["DebugBreakUsage rule (wdm)"]

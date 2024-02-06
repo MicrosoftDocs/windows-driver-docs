@@ -1,5 +1,5 @@
 ---
-title: IoBuildDeviceIoControlSetEvent Rule (Wdm)
+title: IoBuildDeviceIoControlSetEvent Rule (WDM)
 description: The IoBuildDeviceIoControlSetEvent rule specifies that a driver that calls IoBuildDeviceIoControlRequest must not call KeSetEvent if the driver supplies a pointer to a caller-allocated and initialized event object.
 ms.date: 05/21/2018
 keywords: ["IoBuildDeviceIoControlSetEvent rule (wdm)"]

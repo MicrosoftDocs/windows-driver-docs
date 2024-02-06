@@ -1,5 +1,5 @@
 ---
-title: MarkDevicePower Rule (Wdm)
+title: MarkDevicePower Rule (WDM)
 description: The MarkDevicePower rule specifies that an IRP\_MJ\_POWER with IRP\_MN\_SET\_POWER for SystemPowerState IRP going to S0 is pended.
 ms.date: 05/21/2018
 keywords: ["MarkDevicePower rule (wdm)"]

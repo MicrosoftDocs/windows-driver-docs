@@ -1,5 +1,5 @@
 ---
-title: ZwRegistryCreate Rule (Wdm)
+title: ZwRegistryCreate Rule (WDM)
 ms.date: 05/21/2018
 description: "Learn more about: ZwRegistryCreate rule (wdm)"
 keywords: ["ZwRegistryCreate rule (wdm)"]

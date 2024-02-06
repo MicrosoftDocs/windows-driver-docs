@@ -1,5 +1,5 @@
 ---
-title: WmiComplete Rule (Wdm)
+title: WmiComplete Rule (WDM)
 description: The WmiComplete rule specifies that when processing a WMI minor IRP, the driver calls IoCompleteRequest before returning from the DispatchSystemControl routine.
 ms.date: 05/21/2018
 keywords: ["WmiComplete rule (wdm)"]

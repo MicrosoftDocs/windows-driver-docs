@@ -1,5 +1,5 @@
 ---
-title: IoBuildFsdFree Rule (Wdm)
+title: IoBuildFsdFree Rule (WDM)
 description: The IoBuildFsdFree rule specifies that a driver should use IoFreeIrp only on IRPs it previously allocated with IoBuildAsynchronousFsdRequest.
 ms.date: 05/21/2018
 keywords: ["IoBuildFsdFree rule (wdm)"]

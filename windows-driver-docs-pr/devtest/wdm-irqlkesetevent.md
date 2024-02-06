@@ -1,5 +1,5 @@
 ---
-title: IrqlKeSetEvent Rule (Wdm)
+title: IrqlKeSetEvent Rule (WDM)
 description: The IrqlKeSetEvent rule specifies that the KeSetEvent routine is only called at IRQL DISPATCH_LEVEL when Wait is set to FALSE, and at IRQL APC_LEVEL when Wait is set to TRUE.
 ms.date: 05/21/2018
 keywords: ["IrqlKeSetEvent rule (wdm)"]

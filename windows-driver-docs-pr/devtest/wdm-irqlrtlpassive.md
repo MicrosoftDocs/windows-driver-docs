@@ -1,5 +1,5 @@
 ---
-title: IrqlRtlPassive Rule (Wdm)
+title: IrqlRtlPassive Rule (WDM)
 description: The IrqlRtlPassive rule specifies that the driver calls RtlDeleteRegistryValue only when it is executing at IRQL equal to PASSIVE_LEVEL.
 ms.date: 07/21/2021
 keywords: ["IrqlRtlPassive rule (wdm)"]

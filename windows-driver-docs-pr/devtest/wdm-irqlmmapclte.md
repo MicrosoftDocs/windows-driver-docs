@@ -1,5 +1,5 @@
 ---
-title: IrqlMmApcLte Rule (Wdm)
+title: IrqlMmApcLte Rule (WDM)
 ms.date: 05/21/2018
 description: "Learn more about: IrqlMmApcLte rule (wdm)"
 keywords: ["IrqlMmApcLte rule (wdm)"]

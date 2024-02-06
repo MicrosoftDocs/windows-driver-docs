@@ -1,5 +1,5 @@
 ---
-title: IoSetCompletionRoutineExCheck Rule (Wdm)
+title: IoSetCompletionRoutineExCheck Rule (WDM)
 description: The IoSetCompletionRoutineExCheck rule specifies that the IoSetCompletionRoutineEx routine returns an NTSTATUS value.
 ms.date: 05/21/2018
 keywords: ["IoSetCompletionRoutineExCheck rule (wdm)"]

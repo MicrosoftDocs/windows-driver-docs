@@ -1,5 +1,5 @@
 ---
-title: Selecting Drivers to Be Verified
+title: Selecting Drivers to be Verified
 description: Selecting Drivers to be Verified
 keywords:
 - Driver Verifier WDK , driver selections

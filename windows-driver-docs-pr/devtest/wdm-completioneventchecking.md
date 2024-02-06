@@ -1,5 +1,5 @@
 ---
-title: CompletionEventChecking Rule (Wdm)
+title: CompletionEventChecking Rule (WDM)
 description: The CompletionEventChecking rule specifies that a driver does not call IoMarkIrpPending and KeSetEvent in a completion routine for the same IRP.
 ms.date: 05/21/2018
 keywords: ["CompletionEventChecking rule (wdm)"]

@@ -1,5 +1,5 @@
 ---
-title: IrqlKeReleaseSpinLock Rule (Wdm)
+title: IrqlKeReleaseSpinLock Rule (WDM)
 description: The IrqlKeReleaseSpinLock rule specifies that the driver calls KeReleaseSpinLock only when it is executing at IRQL equal to  DISPATCH_LEVEL.
 ms.date: 07/21/2021
 keywords: ["IrqlKeReleaseSpinLock rule (wdm)"]

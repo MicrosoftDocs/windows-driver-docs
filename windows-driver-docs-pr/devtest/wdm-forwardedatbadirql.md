@@ -1,5 +1,5 @@
 ---
-title: ForwardedAtBadIrql Rule (Wdm)
+title: ForwardedAtBadIrql Rule (WDM)
 ms.date: 05/21/2018
 description: "Learn more about: ForwardedAtBadIrql rule (wdm)"
 keywords: ["ForwardedAtBadIrql rule (wdm)"]
