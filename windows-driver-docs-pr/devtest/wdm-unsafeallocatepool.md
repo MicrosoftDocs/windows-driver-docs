@@ -1,5 +1,5 @@
 ---
-title: UnSafeAllocatePool rule (wdm)
+title: UnSafeAllocatePool Rule (WDM)
 description: Learn about the UnSafeAllocatePool rule (wdm). 
 ms.date: 01/15/2021
 keywords: ["UnSafeAllocatePool rule (wdm)"]

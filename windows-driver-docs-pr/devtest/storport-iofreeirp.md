@@ -1,5 +1,5 @@
 ---
-title: IoFreeIrp rule (storport)
+title: IoFreeIrp Rule (Storport)
 description: This rule verifies that an IRP that was allocated by IoAllocateIrp either will be freed by IoFreeIrp or its completion routine will get set by IoSetCompletionRoutine.
 ms.date: 05/21/2018
 keywords: ["IoFreeIrp rule (storport)"]

@@ -1,5 +1,5 @@
 ---
-title: KsProcessingMutex rule ()
+title: KsProcessingMutex Rule ()
 ms.date: 05/21/2018
 description: "Learn more about: KsProcessingMutex rule ()"
 keywords: ["KsProcessingMutex rule ()"]

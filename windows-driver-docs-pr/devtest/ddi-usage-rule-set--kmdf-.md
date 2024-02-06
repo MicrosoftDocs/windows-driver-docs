@@ -1,5 +1,5 @@
 ---
-title: DDI usage rule set (KMDF)
+title: DDI Usage Rule Set (KMDF)
 description: Use these rules to verify that your driver correctly uses KMDF DDIs correctly.
 ms.date: 05/21/2018
 ---
