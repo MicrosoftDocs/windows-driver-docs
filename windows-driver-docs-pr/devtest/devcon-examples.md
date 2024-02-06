@@ -1,5 +1,5 @@
 ---
-title: Device Console (DevCon.exe) examples
+title: Device Console (DevCon.exe) Examples
 description: Provides examples for Device Console (DevCon.exe) commands.
 keywords:
 - DevCon WDK , examples

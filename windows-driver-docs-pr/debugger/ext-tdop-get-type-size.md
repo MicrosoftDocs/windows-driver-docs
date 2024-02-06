@@ -1,5 +1,5 @@
 ---
-title: EXT\_TDOP\_GET\_TYPE\_SIZE
+title: EXT_TDOP_GET_TYPE_SIZE
 description: The EXT\_TDOP\_GET\_TYPE\_SIZE sub-operation of the DEBUG\_REQUEST\_EXT\_TYPED\_DATA\_ANSI Request operation returns the size of the specified typed data.
 keywords: ["EXT_TDOP_GET_TYPE_SIZE Windows Debugging"]
 topic_type:
