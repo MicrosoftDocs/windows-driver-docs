@@ -1,5 +1,5 @@
 ---
-title: WDF verification
+title: WDF Verification
 description: WDF verification for Driver Verifier
 keywords:
 - WDF verification for Driver Verifier

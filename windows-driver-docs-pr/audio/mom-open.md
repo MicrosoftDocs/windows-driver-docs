@@ -1,5 +1,5 @@
 ---
-title: MOM_OPEN function (Windows Drivers)
+title: MOM_OPEN Function (Windows Drivers)
 description: Learn more about the MOM_OPEN function.
 keywords:
 - mmddk/modMessage

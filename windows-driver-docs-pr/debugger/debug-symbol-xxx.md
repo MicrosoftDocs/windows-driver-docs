@@ -1,5 +1,5 @@
 ---
-title: DEBUG\_SYMBOL\_XXX
+title: DEBUG_SYMBOL_XXX
 description: The DEBUG\_SYMBOL\_XXX constants are used for the symbol flags bit-set. The symbol flags describe (in part) a symbol in a symbol group.
 ms.date: 12/07/2017
 topic_type:
