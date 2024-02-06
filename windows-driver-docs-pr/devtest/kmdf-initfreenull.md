@@ -1,5 +1,5 @@
 ---
-title: InitFreeNull Rule (Kmdf)
+title: InitFreeNull Rule (KMDF)
 description: The InitFreeNull rule specifies that DDIs receiving PWDFDEVICE\_INIT as a parameter cannot be called by using a NULL pointer to a WDFDEVICE\_INIT structure.
 ms.date: 05/21/2018
 keywords: ["InitFreeNull rule (kmdf)"]

@@ -1,5 +1,5 @@
 ---
-title: WdfInterruptLockRelease Rule (Kmdf)
+title: WdfInterruptLockRelease Rule (KMDF)
 description: The WdfInterruptLockRelease rule specifies that calls to WdfInterruptAcquireLock and WdfInterruptReleaseLock are used in a balanced way within a KMDF callback routine.
 ms.date: 05/21/2018
 keywords: ["WdfInterruptLockRelease rule (kmdf)"]

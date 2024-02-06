@@ -1,5 +1,5 @@
 ---
-title: ControlDeviceInitAllocate Rule (Kmdf)
+title: ControlDeviceInitAllocate Rule (KMDF)
 description: The ControlDeviceInitAllocate rule specifies that for a control device object, the driver must call the framework device object initialization method WdfControlDeviceInitAllocate before the driver calls WdfDeviceCreate.
 ms.date: 05/21/2018
 keywords: ["ControlDeviceInitAllocate rule (kmdf)"]

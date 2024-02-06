@@ -1,5 +1,5 @@
 ---
-title: ReqCompletionRoutine Rule (Kmdf)
+title: ReqCompletionRoutine Rule (KMDF)
 description: The ReqCompletionRoutine rule specifies that a completion routine must be set before a request is sent to an I/O target.
 ms.date: 05/21/2018
 keywords: ["ReqCompletionRoutine rule (kmdf)"]

@@ -1,5 +1,5 @@
 ---
-title: UsbDeviceCreateFail Rule (Kmdf)
+title: UsbDeviceCreateFail Rule (KMDF)
 description: The UsbDeviceCreateFail rule specifies that the driver returns from the EvtDevicePrepareHardware event callback function with an error status if creation of a WDFUSBDEVICE object fails.
 ms.date: 05/21/2018
 keywords: ["UsbDeviceCreateFail rule (kmdf)"]

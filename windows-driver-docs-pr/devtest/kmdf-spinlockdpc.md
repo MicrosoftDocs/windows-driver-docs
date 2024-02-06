@@ -1,5 +1,5 @@
 ---
-title: SpinlockDpc Rule (Kmdf)
+title: SpinlockDpc Rule (KMDF)
 description: The SpinlockDpc rule specifies that calls to KeAcquireSpinLock or KeAcquireSpinLockRaiseToDpc and KeReleaseSpinlock are used in strict alternation.
 ms.date: 05/21/2018
 keywords: ["SpinlockDpc rule (kmdf)"]

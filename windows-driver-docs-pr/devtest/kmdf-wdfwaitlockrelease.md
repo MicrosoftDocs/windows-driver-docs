@@ -1,5 +1,5 @@
 ---
-title: WdfWaitlockRelease Rule (Kmdf)
+title: WdfWaitlockRelease Rule (KMDF)
 description: The WdfWaitlockRelease rule specifies that calls to WdfWaitLockAcquire and WdfWaitLockRelease are used in a balanced way within a KMDF event callback function.
 ms.date: 05/21/2018
 keywords: ["WdfWaitlockRelease rule (kmdf)"]

@@ -1,5 +1,5 @@
 ---
-title: FileObjectConfigured Rule (Kmdf)
+title: FileObjectConfigured Rule (KMDF)
 description: The FileObjectConfigured rule specifies that a call to the WdfRequestGetFileObject method is preceded by a call to WdfDeviceInitSetFileObjectConfig.
 ms.date: 05/21/2018
 keywords: ["FileObjectConfigured rule (kmdf)"]

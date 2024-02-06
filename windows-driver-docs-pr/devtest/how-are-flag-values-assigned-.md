@@ -1,5 +1,5 @@
 ---
-title: How Are Flag Values Assigned
+title: How are Flag Values Assigned
 description: How are flag values assigned
 ms.date: 04/20/2017
 ---

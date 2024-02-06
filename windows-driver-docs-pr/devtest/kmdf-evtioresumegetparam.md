@@ -1,5 +1,5 @@
 ---
-title: EvtIoResumeGetParam Rule (Kmdf)
+title: EvtIoResumeGetParam Rule (KMDF)
 description: The EvtIoResumeGetParam rule specifies that WdfRequestGetParameters is not called within the EvtIoResumeGetParam callback function.
 ms.date: 05/21/2018
 keywords: ["EvtIoResumeGetParam rule (kmdf)"]

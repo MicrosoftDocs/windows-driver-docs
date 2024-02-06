@@ -1,5 +1,5 @@
 ---
-title: MemAfterReqCompletedWrite Rule (Kmdf)
+title: MemAfterReqCompletedWrite Rule (KMDF)
 description: The MemAfterReqCompletedWrite rule specifies that within the EvtIoWrite callback function, the framework memory object cannot be accessed after the I/O request is completed.
 ms.date: 05/21/2018
 keywords: ["MemAfterReqCompletedWrite rule (kmdf)"]

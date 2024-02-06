@@ -1,5 +1,5 @@
 ---
-title: MemAfterReqCompletedIntIoctlA Rule (Kmdf)
+title: MemAfterReqCompletedIntIoctlA Rule (KMDF)
 description: The MemAfterReqCompletedIntIoctlA rule specifies that within the EvtIoInternalDeviceControl callback function, the framework memory object cannot be accessed after the I/O request is completed.
 ms.date: 05/21/2018
 keywords: ["MemAfterReqCompletedIntIoctlA rule (kmdf)"]

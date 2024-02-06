@@ -1,5 +1,5 @@
 ---
-title: BufAfterReqCompletedRead Rule (Kmdf)
+title: BufAfterReqCompletedRead Rule (KMDF)
 description: The BufAfterReqCompletedRead rule specifies that within the EvtIoRead callback function, the I/O request buffer retrieved cannot be accessed after the I/O request is completed. There are 14 DDIs that serve as possible buffer access methods.
 ms.date: 05/21/2018
 keywords: ["BufAfterReqCompletedRead rule (kmdf)"]

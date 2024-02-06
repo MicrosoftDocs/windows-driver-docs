@@ -1,5 +1,5 @@
 ---
-title: UnSafeAllocatePool Rule (Kmdf)
+title: UnSafeAllocatePool Rule (KMDF)
 description: Learn about the UnSafeAllocatePool rule (kmdf). 
 ms.date: 01/15/2021
 keywords: ["UnSafeAllocatePool rule (KMDF)"]

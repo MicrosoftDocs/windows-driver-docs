@@ -1,5 +1,5 @@
 ---
-title: NoIoQueuePurgeSynchronously Rule (Kmdf)
+title: NoIoQueuePurgeSynchronously Rule (KMDF)
 ms.date: 05/21/2018
 description: "Learn more about: NoIoQueuePurgeSynchronously rule (kmdf)"
 keywords: ["NoIoQueuePurgeSynchronously rule (kmdf)"]

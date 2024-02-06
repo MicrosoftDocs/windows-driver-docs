@@ -1,5 +1,5 @@
 ---
-title: SyncReqSend2 Rule (Kmdf)
+title: SyncReqSend2 Rule (KMDF)
 description: The SyncReqSend2 rule specifies that synchronous request sends have a nonzero time-out value set.
 ms.date: 05/21/2018
 keywords: ["SyncReqSend2 rule (kmdf)"]

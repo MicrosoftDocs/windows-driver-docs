@@ -1,5 +1,5 @@
 ---
-title: Debugging Memory Leaks - DRIVER_VERIFIER_DETECTED_VIOLATION (C4) 0X62
+title: Debugging Memory Leaks - DRIVER_VERIFIER_DETECTED_VIOLATION (C4) 0x62
 description: Driver Verifier generates Bug Check 0xC4 DRIVER_VERIFIER_DETECTED_VIOLATION with a parameter 1 value of 0x62 when a driver unloads without first freeing all of its pool allocations.
 ms.date: 04/20/2017
 ---
@@ -73,7 +73,7 @@ Specify [Pool Tracking](pool-tracking.md) (**verifier /flags 0x8**). The Pool Tr
 
 ### Use the !verifier 3 extension command to find out about the pool allocations
 
-For this particular bug check, the information provided in parameter 4 (Arg4) is the most important. Arg4 shows number of allocations that weren’t freed. The output of the [**!analyze**](../debuggercmds/-analyze.md) command also shows the [**!verifier**](../debuggercmds/-verifier.md) debugger extension command that you can use to display what those allocations were. The full output of **!verifier 3 MyDriver.sys** command is shown in the following example:
+For this particular bug check, the information provided in parameter 4 (Arg4) is the most important. Arg4 shows number of allocations that weren't freed. The output of the [**!analyze**](../debuggercmds/-analyze.md) command also shows the [**!verifier**](../debuggercmds/-verifier.md) debugger extension command that you can use to display what those allocations were. The full output of **!verifier 3 MyDriver.sys** command is shown in the following example:
 
 ```
 kd> !verifier 3 Mydriver.sys
@@ -256,7 +256,7 @@ Pool block 9a836fd0, Size 00000030, Thread 88758740
 
 ### Fixing memory leaks
 
-This Driver Verifier bug check is designed to prevent the driver from leaking kernel memory. In each case, the proper fix is to identify any existing code paths where the allocated objects are not freed and ensure they’re freed properly.
+This Driver Verifier bug check is designed to prevent the driver from leaking kernel memory. In each case, the proper fix is to identify any existing code paths where the allocated objects are not freed and ensure they're freed properly.
 
 [Static Driver Verifier](static-driver-verifier.md) is a tool that scans Windows driver source code and reports on possible issues by simulating the exercising of various code paths. Static Driver Verifier is an excellent development-time utility to help identify these kinds of issues.
 

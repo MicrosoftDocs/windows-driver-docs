@@ -1,5 +1,5 @@
 ---
-title: ReqIsCancOnCancReq Rule (Kmdf)
+title: ReqIsCancOnCancReq Rule (KMDF)
 description: The ReqIsCancOnCancReq rule specifies that the WdfRequestIsCanceled method can only be called on a request that is not marked as cancelable.
 ms.date: 05/21/2018
 keywords: ["ReqIsCancOnCancReq rule (kmdf)"]

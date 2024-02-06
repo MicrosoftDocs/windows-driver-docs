@@ -1,5 +1,5 @@
 ---
-title: EvtIoStopGetParam Rule (Kmdf)
+title: EvtIoStopGetParam Rule (KMDF)
 description: The EvtIoStopGetParam rule checks that WdfRequestGetParameters is not called within EvtIoStop callback.
 ms.date: 05/21/2018
 keywords: ["EvtIoStopGetParam rule (kmdf)"]
