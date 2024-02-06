@@ -8,7 +8,7 @@ api_name:
 - IRP_MJ_DIRECTORY_CONTROL
 api_type:
 - NA
-ms.date: 02/05/2023
+ms.date: 02/05/2024
 ms.topic: reference
 ---
 
