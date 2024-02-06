@@ -1,5 +1,5 @@
 ---
-title: DDI usage rule set (NDIS)
+title: DDI Usage Rule Set (NDIS)
 description: Use these rules to verify that your driver correctly uses NDIS DDIs correctly.
 ms.date: 05/21/2018
 ---

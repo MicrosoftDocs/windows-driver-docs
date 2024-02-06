@@ -1,5 +1,5 @@
 ---
-title: IrpProcessing rule set (KMDF)
+title: IrpProcessing Rule Set (KMDF)
 description: Learn about using rules (KMDF) to verify that your driver correctly processes I/O request packets (IRP).
 ms.date: 05/21/2018
 ---

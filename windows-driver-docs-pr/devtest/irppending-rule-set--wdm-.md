@@ -1,5 +1,5 @@
 ---
-title: IrpPending rule set (WDM)
+title: IrpPending Rule Set (WDM)
 description: Use these rules to verify that your driver correctly pends I/O request packets (IRP).
 ms.date: 05/21/2018
 ---

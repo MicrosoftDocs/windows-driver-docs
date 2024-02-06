@@ -1,5 +1,5 @@
 ---
-title: IrpTracking rule set (WDM)
+title: IrpTracking Rule Set (WDM)
 description: Use these rules to verify that your driver correctly tracks I/O request packets (IRP) so that the device is not removed while IRPs are outstanding.
 ms.date: 05/21/2018
 ---
