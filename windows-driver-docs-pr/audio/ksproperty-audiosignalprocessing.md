@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_AUDIOSIGNALPROCESSING enumeration
+title: KSPROPERTY_AUDIOSIGNALPROCESSING Enumeration
 description: The KSPROPERTY\_AUDIOSIGNALPROCESSING enumeration defines a constant that is used by audio drivers in connection with audio processing modes on pins.
 keywords: ["KSPROPERTY_AUDIOSIGNALPROCESSING enumeration Audio Devices"]
 topic_type:

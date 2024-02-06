@@ -1,5 +1,5 @@
 ---
-title: KsIrqlDDIs rule ()
+title: KsIrqlDDIs Rule ()
 description: The KsIrqlDDIs rule specifies that a kernel-streaming (KS) miniport driver calls KS DDIs at the correct IRQL level.
 ms.date: 05/21/2018
 keywords: ["KsIrqlDDIs rule ()"]

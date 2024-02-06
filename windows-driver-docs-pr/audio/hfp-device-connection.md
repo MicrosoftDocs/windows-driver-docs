@@ -1,5 +1,5 @@
 ---
-title: HFP device connection
+title: HFP Device Connection
 description: This article discusses how the audio system determines and handles connection status information for a Bluetooth hands-free profile (HFP) device.
 ms.date: 07/27/2023
 ---

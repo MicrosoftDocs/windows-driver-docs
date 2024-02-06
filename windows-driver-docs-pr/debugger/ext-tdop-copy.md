@@ -1,5 +1,5 @@
 ---
-title: EXT\_TDOP\_COPY
+title: EXT_TDOP_COPY
 description: The EXT\_TDOP\_COPY sub-operation of the DEBUG\_REQUEST\_EXT\_TYPED\_DATA\_ANSI Request operation makes a copy of a typed data description.
 keywords: ["EXT_TDOP_COPY Windows Debugging"]
 topic_type:
