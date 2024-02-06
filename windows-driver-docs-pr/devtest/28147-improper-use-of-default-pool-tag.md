@@ -1,5 +1,5 @@
 ---
-title: C28147 warning
+title: C28147 Warning
 description: Warning C28147 The use of a default pool tag (' kdD' or ' mdW') for calls to this function defeats the purpose of pool tagging.
 keywords:
 - warnings listed WDK PREfast for Drivers

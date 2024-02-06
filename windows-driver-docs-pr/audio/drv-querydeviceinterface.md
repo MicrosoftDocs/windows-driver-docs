@@ -1,5 +1,5 @@
 ---
-title: DRV_QUERYDEVICEINTERFACE function (Windows Drivers)
+title: DRV_QUERYDEVICEINTERFACE Function (Windows Drivers)
 description: Learn more about the DRV_QUERYDEVICEINTERFACE function.
 keywords:
 - mmddk/xxxMessage

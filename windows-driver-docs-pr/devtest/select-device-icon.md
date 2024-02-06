@@ -1,5 +1,5 @@
 ---
-title: Select device icon in the Device Metadata Authoring Wizard
+title: Select Device Icon in the Device Metadata Authoring Wizard
 description: Select device icon in the Device Metadata Authoring Wizard
 keywords:
 - Select device icon in the Device Metadata Authoring Wizard

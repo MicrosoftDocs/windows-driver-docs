@@ -1,5 +1,5 @@
 ---
-title: DEBUG\_FORMAT\_XXX
+title: DEBUG_FORMAT_XXX
 description: The DEBUG_FORMAT_XXX bit-flags are used by WriteDumpFile2 and WriteDumpFileWide to determine the format of a crash dump file and, for user-mode Minidumps, what information to include in the file.
 ms.date: 08/20/2018
 topic_type:

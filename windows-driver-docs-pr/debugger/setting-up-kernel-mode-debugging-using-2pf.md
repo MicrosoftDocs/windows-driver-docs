@@ -1,5 +1,5 @@
 ---
-title: Setting Up 2PF Kernel-Mode Debugging using KDNET
+title: Setting Up 2PF Kernel-Mode Debugging Using KDNET
 description: Debugging Tools for Windows supports kernel debugging over the high speed 2PF transport. This topic describes how to set up 2PF using the kdnet.exe utility.
 ms.date: 04/12/2021
 ---

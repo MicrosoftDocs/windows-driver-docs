@@ -1,5 +1,5 @@
 ---
-title: SrbProcessing rule set (Storport)
+title: SrbProcessing Rule Set (Storport)
 description: Use these rules to verify that your driver correctly processes SRB requests.
 ms.date: 05/21/2018
 ---

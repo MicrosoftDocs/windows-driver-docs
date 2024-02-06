@@ -1,5 +1,5 @@
 ---
-title: Can I customize DoTraceMessage
+title: Can I Customize DoTraceMessage
 description: Can I customize DoTraceMessage
 ms.date: 04/20/2017
 ---

@@ -1,5 +1,5 @@
 ---
-title: C28152 warning
+title: C28152 Warning
 description: Warning C28152 The return from an AddDevice-like function unexpectedly DO_DEVICE_INITIALIZING.
 keywords:
 - warnings listed WDK PREfast for Drivers

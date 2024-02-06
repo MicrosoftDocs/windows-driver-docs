@@ -1,5 +1,5 @@
 ---
-title: Enable close exception
+title: Enable Close Exception
 description: Enable close exception
 keywords: ["Enable close exception (global flag)"]
 ms.date: 05/23/2017

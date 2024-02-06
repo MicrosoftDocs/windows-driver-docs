@@ -1,5 +1,5 @@
 ---
-title: DEBUG\_PROCESS\_XXX
+title: DEBUG_PROCESS_XXX
 description: The process options are a bit set that control how the debugger engine treats user-modeprocesses. Some of these process options are global; others are specific to a process.
 ms.date: 12/07/2017
 topic_type:
