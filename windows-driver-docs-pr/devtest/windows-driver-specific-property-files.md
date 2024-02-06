@@ -1,5 +1,5 @@
 ---
-title: Windows driver-specific property files
+title: Windows Driver-Specific Property Files
 description: The driver property sheets have default settings for all of the tools that MSBuild uses to build any driver project.
 ms.date: 04/20/2017
 ---

@@ -1,5 +1,5 @@
 ---
-title: ACX power management
+title: ACX Power Management
 description: This topic provides a summary of the ACX power management
 ms.date: 09/29/2023
 ms.localizationpriority: medium
@@ -13,7 +13,6 @@ ACX leverages the WDF KMDF PnP power behavior. For more  information about KMDF 
 
 >[!NOTE]
 > The ACX headers and libraries are not included in the  WDK 10.0.22621.2428 (released October 24, 2023), but are available in previous versions, as well as the latest (25000 series builds) Insider Preview of the WDK. For more information about preview versions of the WDK, see [Installing preview versions of the Windows Driver Kit (WDK)](../installing-preview-versions-wdk.md).
-
 
 ## ACX device enumeration and startup for static audio devices
 
@@ -60,7 +59,7 @@ A "dynamic" AcxCircuit can be removed at any time by invalidating and removing t
 
 A "static" AcxCircuit can only be removed when the driver is handling the WDF PrepareHardware/ReleaseHardware callbacks for its FDO device. The lifetime of a "static" circuit is bound to the lifetime of the FDO.
 
-The driver can remove an AcxFactoryCircuit (circuit provider) in its  the WDF PrepareHardware/ReleaseHardware callbacks. Removing an AcxFactoryCircuit has the effect of removing all its associated "dynamic" AcxCircuit(s). AcxCircuit(s) can also be removed when the ACX manager tells a circuit factory to remove a specific circuit, or when the ACX manager closes its AcxFactoryCircuit handles - in this scenario ACX closes all the circuits associated with that handle.
+The driver can remove an AcxFactoryCircuit (circuit provider) in its the WDF PrepareHardware/ReleaseHardware callbacks. Removing an AcxFactoryCircuit has the effect of removing all its associated "dynamic" AcxCircuit(s). AcxCircuit(s) can also be removed when the ACX manager tells a circuit factory to remove a specific circuit, or when the ACX manager closes its AcxFactoryCircuit handles - in this scenario ACX closes all the circuits associated with that handle.
 
 The [ACX_CIRCUIT_PNPPOWER_CALLBACKS structure](/windows-hardware/drivers/ddi/acxcircuit/ns-acxcircuit-acx_circuit_pnppower_callbacks) describes the following callbacks that can be used by an ACX driver.
 
@@ -97,7 +96,7 @@ Windows provides a run-time power management framework (PoFx) which adds support
 
 WDF supports power-managed I/O queues. This type of queue is fully integrated with WDF power management. WDF invokes the queue’s callbacks at various steps in the power up/power down WDF sequence. For more information, see [Using Power-Managed I/O Queues](../wdf/using-power-managed-i-o-queues.md).
 
-ACX Drivers can use this type of queue only if the driver is not using single/multi-component with multi-state (Fx) feature.
+ACX Drivers can use this type of queue only if the driver is not using the single/multi-component with multi-state (Fx) feature.
 
 ## ACX driver and D3Hot / D3Cold (D3) states
 

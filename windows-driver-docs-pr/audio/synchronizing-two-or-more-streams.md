@@ -1,5 +1,5 @@
 ---
-title: Synchronizing Two or More Streams
+title: Synchronizing Two Or More Streams
 description: Synchronizing Two or More Streams
 keywords:
 - HD Audio, synchronizing streams

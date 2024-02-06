@@ -1,5 +1,5 @@
 ---
-title: SpDuplex rule (storport)
+title: SpDuplex Rule (Storport)
 description: This rule verifies that this miniport is in Full Duplex mode. Any driver built according to the StorPort-miniport model must be in Full Duplex mode. Half Duplex should only be used when porting an existing SCSI driver to StorPort.
 ms.date: 05/21/2018
 keywords: ["SpDuplex rule (storport)"]

@@ -1,5 +1,5 @@
 ---
-title: MODM_SETVOLUME function (Windows Drivers)
+title: MODM_SETVOLUME Function (Windows Drivers)
 description: Learn more about the MODM_SETVOLUME function.
 keywords:
 - mmddk/modMessage

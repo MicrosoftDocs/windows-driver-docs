@@ -1,5 +1,5 @@
 ---
-title: MODM_GETDEVCAPS function (Windows Drivers)
+title: MODM_GETDEVCAPS Function (Windows Drivers)
 description: Learn more about the MODM_GETDEVCAPS function.
 keywords:
 - mmddk/modMessage

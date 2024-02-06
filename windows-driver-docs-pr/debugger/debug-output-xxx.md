@@ -1,5 +1,5 @@
 ---
-title: DEBUG\_OUTPUT\_XXX
+title: DEBUG_OUTPUT_XXX
 description: The DEBUG\_OUTPUT\_XXX constants are output flags. The output flags form a bit field that indicates the type of the output that accompanies them.
 ms.date: 11/13/2018
 topic_type:

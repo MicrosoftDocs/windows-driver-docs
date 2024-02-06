@@ -1,5 +1,5 @@
 ---
-title: DEBUG\_REQUEST\_GET\_ADDITIONAL\_CREATE\_OPTIONS control code
+title: DEBUG_REQUEST_GET_ADDITIONAL_CREATE_OPTIONS Control Code
 description: The DEBUG\_REQUEST\_GET\_ADDITIONAL\_CREATE\_OPTIONS Request operation returns the default process creation options.
 keywords: ["DEBUG_REQUEST_GET_ADDITIONAL_CREATE_OPTIONS control code Windows Debugging"]
 topic_type:

@@ -1,5 +1,5 @@
 ---
-title: Locking rule set (WDM)
+title: Locking Rule Set (WDM)
 description: Use these rules to verify that your driver correctly manages shared resources.
 ms.date: 05/21/2018
 ---

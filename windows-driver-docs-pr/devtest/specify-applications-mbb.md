@@ -1,5 +1,5 @@
 ---
-title: Specify applications in the Mobile Broadband Metadata Authoring Wizard
+title: Specify Applications in the Mobile Broadband Metadata Authoring Wizard
 description: Specify applications in the Mobile Broadband Metadata Authoring Wizard
 keywords:
 - Specify applications in the Mobile Broadband Metadata Authoring Wizard
