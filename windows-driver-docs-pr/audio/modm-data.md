@@ -1,5 +1,5 @@
 ---
-title: MODM_DATA function (Windows Drivers)
+title: MODM_DATA Function (Windows Drivers)
 description: Learn more about the MODM_DATA function.
 keywords:
 - mmddk/modMessage

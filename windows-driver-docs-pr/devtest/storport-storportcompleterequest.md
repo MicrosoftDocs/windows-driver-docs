@@ -1,5 +1,5 @@
 ---
-title: StorPortCompleteRequest rule (storport)
+title: StorPortCompleteRequest Rule (Storport)
 description: This rule verifies that no calls to StorPortCompleteRequest are made by the miniport. Usage of the StorPortCompleteRequest is not recommended; miniports should instead call StorPortNotification with notificationType RequestComplete.
 ms.date: 05/21/2018
 keywords: ["StorPortCompleteRequest rule (storport)"]
