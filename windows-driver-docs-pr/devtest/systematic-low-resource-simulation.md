@@ -1,5 +1,5 @@
 ---
-title: Systematic low resources simulation
+title: Systematic Low Resources Simulation
 description: The Systematic low resources simulation option injects resource failures in kernel mode drivers.
 ms.date: 04/20/2017
 ---

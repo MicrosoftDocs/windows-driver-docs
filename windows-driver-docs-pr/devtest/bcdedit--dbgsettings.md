@@ -130,7 +130,7 @@ Specifies that the target machine and the host machine will use a USB 2.0 or USB
 **TARGETNAME:** <em>targetname</em>   
 Specifies a string value to use for the target name. Note that TargetName does not have to be the official name of the target computer; it can be any string that you create as long as it meets these restrictions:
 
-- The string must not contain “debug” anywhere in the TargetName in any combination of upper or lower case. For example if you use “DeBuG” or "DEBUG" anywhere in your targetname, debugging will not work correctly.
+- The string must not contain "debug" anywhere in the TargetName in any combination of upper or lower case. For example if you use "DeBuG" or "DEBUG" anywhere in your targetname, debugging will not work correctly.
 - The only characters in the string are the hyphen (-), the underscore(_), the digits 0 through 9, and the letters A through Z (upper or lower case).
 - The maximum length of the string is 24 characters.
 

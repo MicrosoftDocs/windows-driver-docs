@@ -1,5 +1,5 @@
 ---
-title: Ambiguous breakpoint resolution
+title: Ambiguous Breakpoint Resolution
 description: Learn more about ambiguous breakpoint resolution
 keywords: ["Debugger Engine, breakpoints"]
 ms.date: 06/26/2023
