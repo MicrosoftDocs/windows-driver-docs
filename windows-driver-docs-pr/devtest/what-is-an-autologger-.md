@@ -1,5 +1,5 @@
 ---
-title: What is an autologger
+title: What is an Autologger
 description: What is an autologger
 ms.date: 04/20/2017
 ---
