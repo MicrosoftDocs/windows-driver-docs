@@ -7,7 +7,6 @@ keywords:
 - backward compatibility WDK networking
 - compatibility WDK networking
 ms.date: 03/02/2023
-ms.custom: contperf-fy21q4
 ---
 
 # Overview of NDIS versions
@@ -50,6 +49,3 @@ The following table describes Windows operating system, Microsoft Windows Driver
 | Windows 98 | Windows NT 4.0 DDK or Windows 98 DDK | 4.1. Protocol driver is a vxd-type driver. | X | X | X |
 | Windows 95 OSR2 | Windows NT 4.0 DDK or Windows 95 DDK | 4.0. Protocol driver is a vxd-type driver. Added these features: [**MiniportSendPackets**](/previous-versions/windows/hardware/network/ff550524(v=vs.85)), [**ProtocolReceivePacket**](/previous-versions/windows/hardware/network/ff563251(v=vs.85)), [**MiniportAllocateComplete**](/previous-versions/windows/hardware/network/ff549352(v=vs.85)).|  |  |  |
 | Windows 95 | Windows NT 4.0 DDK or Windows 95 DDK | 3.1. Added support for miniport drivers and Plug and Play. |  |  |  |
-
-
-

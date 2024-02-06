@@ -8,7 +8,6 @@ keywords:
 - registered callback functions WDK video miniport
 - temporary registration WDK video miniport
 ms.date: 12/06/2018
-ms.custom: seodec18
 ---
 
 # Registering Callback Functions in Video Miniport Drivers

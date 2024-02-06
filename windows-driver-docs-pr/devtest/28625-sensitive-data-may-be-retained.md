@@ -1,5 +1,5 @@
 ---
-title: C28625 warning
+title: C28625 Warning
 description: Warning C28625 Function call used to clear sensitive data will be optimized away.
 ms.date: 04/20/2017
 f1_keywords: 

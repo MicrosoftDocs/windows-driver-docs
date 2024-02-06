@@ -1,5 +1,5 @@
 ---
-title: INF InterfaceInstall32 section
+title: INF InterfaceInstall32 Section
 description: This section creates one or more new device interface classes.
 keywords:
 - INF InterfaceInstall32 Section Device and Driver Installation

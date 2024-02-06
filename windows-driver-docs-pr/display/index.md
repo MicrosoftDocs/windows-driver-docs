@@ -7,7 +7,6 @@ keywords:
 - compute accelerator driver development WDK, Windows
 - miniport drivers WDK display
 ms.date: 02/22/2023
-ms.custom: contperf-fy22q3
 ms.topic: article
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Opening software keys for all devices in a setup class
+title: Opening Software Keys for All Devices in a Setup Class
 description: Provides information about opening software keys for all devices in a setup class.
 keywords:
 - software keys WDK device installations , opening for all devices in a setup class

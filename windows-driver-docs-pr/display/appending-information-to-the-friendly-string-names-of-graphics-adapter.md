@@ -7,7 +7,6 @@ keywords:
 - graphics adapters string names WDK display
 - appending to graphics adapters string names WDK display
 ms.date: 12/06/2018
-ms.custom: seodec18
 ---
 
 # Appending Information to the Friendly String Names of Graphics Adapters
@@ -30,4 +29,3 @@ New Driver Model Foo Device Name (Microsoft Corporation - WDDM)
 For more information about the *Strings* section and the *%strkey%* tokens that are specified elsewhere in the INF, see [**INF Strings Section**](../install/inf-strings-section.md).
 
  
-

@@ -1,5 +1,5 @@
 ---
-title: INF AddSoftware directive
+title: INF AddSoftware Directive
 description: An AddSoftware directive describes the installation of standalone software.
 ms.date: 07/08/2022
 ---

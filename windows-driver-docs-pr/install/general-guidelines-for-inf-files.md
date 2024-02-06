@@ -1,5 +1,5 @@
 ---
-title: General guidelines for INF files
+title: General Guidelines for INF Files
 description: Provides general guidelines for INF files.
 keywords:
 - INF files WDK device installations, general guidelines

@@ -10,7 +10,6 @@ api_name:
 api_type:
 - COM
 ms.date: 12/06/2018
-ms.custom: seodec18
 ---
 
 # DXVA\_ProcAmpControlDeviceClass::ProcAmpControlCloseStream method
@@ -47,4 +46,3 @@ The **ProcAmpControlCloseStream** function maps directly to a **DestroyMoComp** 
 [**ProcAmpControlOpenStream**](dxva-procampcontroldeviceclass-procampcontrolopenstream.md)
 
  
-

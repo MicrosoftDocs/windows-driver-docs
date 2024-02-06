@@ -1,5 +1,5 @@
 ---
-title: Rules for modifying device properties
+title: Rules for Modifying Device Properties
 description: Provides information about rules for modifying device properties.
 keywords:
 - device properties WDK device installations , rules for modifying

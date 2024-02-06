@@ -1,5 +1,5 @@
 ---
-title: Identifiers for Secure Digital (SD) devices
+title: Identifiers for Secure Digital (SD) Devices
 description: Identifiers for Secure Digital (SD) devices
 keywords:
 - device identification strings WDK , SD devices
