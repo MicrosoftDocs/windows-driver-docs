@@ -1,5 +1,5 @@
 ---
-title: SpinLockDpc rule (storport)
+title: SpinLockDpc Rule (Storport)
 description: This rule verifies that a call to KeAcquireSpinLockRaiseToDpc is promptly followed by a call to KeReleaseSpinlock.
 ms.date: 05/21/2018
 keywords: ["SpinLockDpc rule (storport)"]

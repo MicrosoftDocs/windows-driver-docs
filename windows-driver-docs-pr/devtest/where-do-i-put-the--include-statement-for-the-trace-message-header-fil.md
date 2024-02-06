@@ -1,6 +1,6 @@
 ---
-title: Where do I put the #include statement for the trace message header file
-description: Where do I put the #include statement for the trace message header file
+title: Where do I Put the Include Statement for the Trace Message Header File
+description: Where do I put the include statement for the trace message header file
 ms.date: 04/20/2017
 ---
 

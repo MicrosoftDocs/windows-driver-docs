@@ -1,5 +1,5 @@
 ---
-title: Enable loading of kernel debugger symbols
+title: Enable Loading of Kernel Debugger Symbols
 description: Enable loading of kernel debugger symbols
 keywords: ["Enable loading of kernel debugger symbols (global flag)"]
 ms.date: 05/23/2017

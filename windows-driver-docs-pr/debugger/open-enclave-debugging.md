@@ -1,5 +1,5 @@
 ---
-title: Open Enclave debugging
+title: Open Enclave Debugging
 description: Open Enclave debugging
 ms.date: 08/06/2020
 ---
