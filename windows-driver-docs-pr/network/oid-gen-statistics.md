@@ -2,7 +2,7 @@
 title: OID_GEN_STATISTICS
 ms.topic: reference
 description: As a query, NDIS and overlying drivers use the OID_GEN_STATISTICS OID to obtain statistics of an adapter or a miniport driver.
-ms.date: 08/08/2017
+ms.date: 01/08/2024
 keywords: 
  -OID_GEN_STATISTICS Network Drivers Starting with Windows Vista
 ---
@@ -11,6 +11,8 @@ keywords:
 
 
 As a query, NDIS and overlying drivers use the OID\_GEN\_STATISTICS OID to obtain statistics of an adapter or a miniport driver.
+
+**Note**: General statistics OIDs count all traffic through the network adapter including [Network Direct Kernel (NDK)](overview-of-network-direct-kernel-provider-interface--ndkpi-.md#ndkpi-and-rdma) traffic. NDK statistics may be counted separately with [OID_NDK_STATISTICS](oid-ndk-statistics.md).
 
 **Version Information**
 

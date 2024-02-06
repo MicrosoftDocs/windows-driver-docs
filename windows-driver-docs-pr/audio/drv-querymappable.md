@@ -1,5 +1,5 @@
 ---
-title: DRV_QUERYMAPPABLE function (Windows Drivers)
+title: DRV_QUERYMAPPABLE Function (Windows Drivers)
 description: Learn more about the DRV_QUERYMAPPABLE function.
 keywords:
 - mmddk/xxxMessage

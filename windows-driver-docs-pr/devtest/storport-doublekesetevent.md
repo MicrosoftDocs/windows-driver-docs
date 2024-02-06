@@ -1,5 +1,5 @@
 ---
-title: DoubleKeSetEvent rule (storport)
+title: DoubleKeSetEvent Rule (Storport)
 description: This rule verifies that KeSetEvent is not called twice on the same event object. If the same event object is passed to the routine, the driver fails the rule.
 ms.date: 05/21/2018
 keywords: ["DoubleKeSetEvent rule (storport)"]

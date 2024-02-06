@@ -1,5 +1,5 @@
 ---
-title: DoubleExFreePool rule (storport)
+title: DoubleExFreePool Rule (Storport)
 description: This rule verifies that the driver does not attempt to free the same block of pool memory twice.
 ms.date: 05/21/2018
 keywords: ["DoubleExFreePool rule (storport)"]

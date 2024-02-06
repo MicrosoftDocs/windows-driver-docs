@@ -1,5 +1,5 @@
 ---
-title: MODM_STOP function (Windows Drivers)
+title: MODM_STOP Function (Windows Drivers)
 description: Learn more about the MODM_STOP function.
 keywords:
 - mmddk/modMessage

@@ -1,5 +1,5 @@
 ---
-title: User-Mode Dump Heap (UMDH) tool
+title: User-Mode Dump Heap (UMDH) Tool
 description: The User-Mode Dump Heap (UMDH) tool, Umdh.exe, analyzes the Microsoft Windows heap memory allocations for a given process
 keywords: UMDH, User-Mode Dump Heap
 ms.date: 05/23/2017

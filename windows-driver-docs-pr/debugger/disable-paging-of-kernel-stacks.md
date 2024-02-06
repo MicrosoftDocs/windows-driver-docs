@@ -1,5 +1,5 @@
 ---
-title: Disable paging of kernel stacks
+title: Disable Paging of Kernel Stacks
 description: Disable paging of kernel stacks
 keywords: ["Disable paging of kernel stacks (global flag)"]
 ms.date: 05/23/2017

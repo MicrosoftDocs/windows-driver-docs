@@ -1,5 +1,5 @@
 ---
-title: Combine custom and Windows APOs
+title: Combine Custom and Windows APOs
 description: Combine Windows and Custom Audio processing objects (APOs) to provide customizable software based digital signal processing for Windows audio streams.
 ms.date: 06/23/2022
 ---
