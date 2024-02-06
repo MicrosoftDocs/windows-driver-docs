@@ -1,5 +1,5 @@
 ---
-title: EXT\_TDOP\_RELEASE
+title: EXT_TDOP_RELEASE
 description: The EXT\_TDOP\_RELEASE sub-operation of the DEBUG\_REQUEST\_EXT\_TYPED\_DATA\_ANSI Request operation releases a typed data description.
 keywords: ["EXT_TDOP_RELEASE Windows Debugging"]
 topic_type:

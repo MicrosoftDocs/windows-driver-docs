@@ -1,5 +1,5 @@
 ---
-title: SpinLock rule (storport)
+title: SpinLock Rule (Storport)
 description: This rule verifies that a call to KeAcquireSpinLock is promptly followed by a call to KeReleaseSpinlock.
 ms.date: 05/21/2018
 keywords: ["SpinLock rule (storport)"]

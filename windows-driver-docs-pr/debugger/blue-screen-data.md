@@ -1,5 +1,5 @@
 ---
-title: Blue screen data
+title: Blue Screen Data
 description: Learn about bug checks, which provide information when Microsoft Windows encounters a condition that compromises safe system operation and the system halts.
 keywords: ["Blue Screen Data Windows Debugging"]
 ms.date: 12/14/2022

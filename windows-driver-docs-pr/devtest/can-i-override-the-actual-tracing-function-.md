@@ -1,5 +1,5 @@
 ---
-title: Can I override the actual tracing function
+title: Can I Override the Actual Tracing Function
 description: Can I override the actual tracing function
 ms.date: 04/20/2017
 ---
