@@ -1,5 +1,5 @@
 ---
-title: StorPortDeprecated rule (storport)
+title: StorPortDeprecated Rule (Storport)
 description: This rule verifies that the driver does not call either of these deprecated routines StorPortValidateRange or StorPortLogError.
 ms.date: 05/21/2018
 keywords: ["StorPortDeprecated rule (storport)"]

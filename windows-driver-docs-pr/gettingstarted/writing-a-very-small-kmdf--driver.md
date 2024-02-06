@@ -34,7 +34,7 @@ Before you proceed, complete the installation steps listed in [Download the Wind
 
     :::image type="content" source="images/vs2019-kmdf-hello-world-solution-explorer.png" alt-text="Screenshot of the Visual Studio solution explorer window displaying the solution and the empty driver project named KmdfHelloWorld.":::
 
-1. In the **Solution Explorer** window, select and hold (or right-select) the **KmdfHelloWorld** project and choose **Configuration Manager**. Choose a configuration and platform for the driver project. For example, choose **Debug** and **x64**.
+1. In the **Solution Explorer** window, select and hold (or right-select) the **KmdfHelloWorld** solution and choose **Configuration Manager**. Choose a configuration and platform for the driver project. For example, choose **Debug** and **x64**.
 
 1. In the **Solution Explorer** window, again select and hold (or right-select) the **KmdfHelloWorld** project, choose **Add**, and then select **New Item**.
 1. In the **Add New Item** dialog box, select **C++ File**. For **Name**, enter "Driver.c".

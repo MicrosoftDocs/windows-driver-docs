@@ -1,5 +1,5 @@
 ---
-title: DRVM_MAPPER_CONSOLEVOICECOM_GET function (Windows Drivers)
+title: DRVM_MAPPER_CONSOLEVOICECOM_GET Function (Windows Drivers)
 description: Learn more about the DRVM_MAPPER_CONSOLEVOICECOM_GET function.
 keywords:
 - mmddk/xxxMessage

@@ -1,5 +1,5 @@
 ---
-title: C28169 warning
+title: C28169 Warning
 description: Warning C28169 The dispatch function does not have any _Dispatch_type_ annotations.
 ms.date: 04/20/2017
 f1_keywords: 

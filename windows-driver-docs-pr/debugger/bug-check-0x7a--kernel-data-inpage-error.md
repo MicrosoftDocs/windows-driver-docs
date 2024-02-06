@@ -1,5 +1,5 @@
 ---
-title: Bug check 0x7A KERNEL_DATA_INPAGE_ERROR
+title: Bug Check 0x7A KERNEL_DATA_INPAGE_ERROR
 description: Learn about bug check 0x7A KERNEL_DATA_INPAGE_ERROR, which indicates that the requested page of kernel data from the paging file couldn't be read into memory.
 keywords: ["Bug check 0x7A KERNEL_DATA_INPAGE_ERROR", "KERNEL_DATA_INPAGE_ERROR"]
 ms.date: 02/24/2023

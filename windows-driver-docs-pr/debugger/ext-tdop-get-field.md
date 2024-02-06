@@ -1,5 +1,5 @@
 ---
-title: EXT\_TDOP\_GET\_FIELD
+title: EXT_TDOP_GET_FIELD
 description: The EXT\_TDOP\_GET\_FIELD sub-operation of the DEBUG\_REQUEST\_EXT\_TYPED\_DATA\_ANSI Request operation returns typed data description that represents a member of a given structure.
 keywords: ["EXT_TDOP_GET_FIELD Windows Debugging"]
 topic_type:
