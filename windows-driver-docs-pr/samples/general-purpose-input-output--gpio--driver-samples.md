@@ -1,5 +1,5 @@
 ---
-title: General-purpose input/output (GPIO) driver samples
+title: General-purpose Input/Output (GPIO) Driver Samples
 description: The driver sample in this directory provide a starting point for writing a custom GPIO driver for your device.
 ms.date: 03/22/2023
 ---
