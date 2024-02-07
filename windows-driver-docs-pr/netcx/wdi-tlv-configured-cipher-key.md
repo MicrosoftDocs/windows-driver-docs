@@ -32,8 +32,8 @@ The size (in bytes) of the following values.
 | [WDI_TLV_CIPHER_KEY_BIP_KEY](wdi-tlv-cipher-key-bip-key.md) |  | X |Present if and only if **CipherAlgorithm** is **WDI_CIPHER_ALGO_BIP**. |
 | [WDI_TLV_CIPHER_KEY_WEP_KEY](wdi-tlv-cipher-key-wep-key.md) |  | X |Present if and only if **CipherAlgorithm** is **WDI_CIPHER_ALGO_WEP40**, **WDI_CIPHER_ALGO_WEP104**, or **WDI_CIPHER_ALGO_WEP**. |
 | [WDI_TLV_CIPHER_KEY_IHV_KEY](wdi-tlv-cipher-key-ihv-key.md) |  | X |Present if and only if **CipherAlgorithm** is in the range of **WDI_CIPHER_ALGO_IHV_START** to **WDI_CIPHER_ALGO_IHV_END**. |
-| [WDI_TLV_CIPHER_KEY_GCMP_256_KEY](wdi-tlv-cipher-key-gcmp-256-key.md) |  | X |Contains GCMP_256 cipher algorithm key data. This is only present if the cipher algorithm is **WDI\_CIPHER\_ALGO\_GCMP\_256**. |
-| [WDI_TLV_CIPHER_KEY_BIP_GMAC_256_KEY](wdi-tlv-cipher-key-bip-gmac-256-key.md) |  | X |Present ony if cipher algorithm is **WDI\_CIPHER\_ALGO\_BIP\_GMAC\_256**. |
+| [WDI_TLV_CIPHER_KEY_GCMP_256_KEY](wdi-tlv-cipher-key-gcmp-256-key.md) |  | X |Contains GCMP_256 cipher algorithm key data. This is only present if the cipher algorithm is **WDI_CIPHER_ALGO_GCMP_256**. |
+| [WDI_TLV_CIPHER_KEY_BIP_GMAC_256_KEY](wdi-tlv-cipher-key-bip-gmac-256-key.md) |  | X |Present ony if cipher algorithm is **WDI_CIPHER_ALGO_BIP_GMAC_256**. |
 | [WDI_TLV_LINK_ID](wdi-tlv-link-id.md) | | X | Specifies the AP's link Id. This will be present when setting or querying the link-specific keys on a multi-link connection. |
 
 ## Requirements

@@ -41,7 +41,7 @@ Windows parses the beacon IEs for Multi-Link and RNR IEs. If present, it marks t
 
 ## Multi-Link connection setup
 
-Windows provides a setting to the driver in the [OID_WDI_TASK_CONNECT](oid-wdi-task-connect.md) task to indicate whether the driver can connect using MLO. This setting is represented by the **MloConnectionSupported** flag in [WDI_TLV_CONNECTION_SETTINGS](wdi-tlv-connection-settings.md). When **MloConnectionSupported** is **true**, the driver can only use the AKM and cipher pairs specified by [WDI_TLV_RSNA_AKM_CIPHER_SUITE](wdi-tlv-rsna-akm-cipher-suite.md) in the [OID_WDI_TASK_CONNECT](oid-wdi-task-connect.md) and [OID_WDI_TASK_ROAM](oid-wdi-task-roam.md) requests. The only exception is if the auth/cipher is not part of the RSNA IE.
+Windows provides a setting in the [OID_WDI_TASK_CONNECT](oid-wdi-task-connect.md) task that indicates whether the driver can connect using MLO. This setting is represented by the **MloConnectionSupported** flag in [WDI_TLV_CONNECTION_SETTINGS](wdi-tlv-connection-settings.md). When **MloConnectionSupported** is **true**, the driver can only use the AKM and cipher pairs specified by [WDI_TLV_RSNA_AKM_CIPHER_SUITE](wdi-tlv-rsna-akm-cipher-suite.md) in the [OID_WDI_TASK_CONNECT](oid-wdi-task-connect.md) and [OID_WDI_TASK_ROAM](oid-wdi-task-roam.md) requests. The only exception is if the auth/cipher is not part of the RSNA IE.
 
 For SAE-based connections, Windows sets the AKM and cipher in the SAE Commit request, which tells the driver which AKM and cipher to use later on in the association request.
 
@@ -58,7 +58,7 @@ Include the appropriate Multi-Link IE(s) in the authentication frames when conne
 
 ## Association
 
-When Windows sends [OID_WDI_TASK_CONNECT](oid-wdi-task-connect.md) and [OID_WDI_TASK_ROAM](oid-wdi-task-roam.md) tasks, the driver should only connect to APs using Wi-Fi 7 MLO if the AP supports Multi-Link connectivity with the AKMs listed in [WDI_TLV_RSNA_AKM_SUITE](wdi-tlv-rsna-akm-suite.md) in the [WDI_TLV_CONNECT_PARAMETERS](wdi-tlv-connect-parameters.md) TLV.
+When Windows sends [OID_WDI_TASK_CONNECT](oid-wdi-task-connect.md) and [OID_WDI_TASK_ROAM](oid-wdi-task-roam.md) tasks, the driver should only connect to APs using Wi-Fi 7 MLO if the AP supports Multi-Link connectivity with the AKMs listed in [WDI_TLV_RSNA_AKM_CIPHER_SUITE](wdi-tlv-rsna-akm-cipher-suite.md) in the [WDI_TLV_CONNECT_PARAMETERS](wdi-tlv-connect-parameters.md) TLV.
 
 The driver includes the appropriate Multi-Link IE(s) in the association frames when connecting for MLO. On Association-Completion, Windows checks the Multi-Link IEs in the Association Request/Response frames in the [NDIS_STATUS_WDI_INDICATION_ASSOCIATION_RESULT](ndis-status-wdi-indication-association-result.md) indication to determine if MLO was used in the connection.
 

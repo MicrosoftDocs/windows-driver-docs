@@ -1,15 +1,15 @@
 ---
 title: WDI_TLV_CIPHER_ALGORITHM (dot11wificxtypes.hpp)
 ms.topic: reference
-description: WDI_TLV_CIPHER_ALGORITHM is a WiFiCx TLV that contains a WDI_CIPHER_ALGORITHM enum.
-ms.date: 07/19/2023
+description: WDI_TLV_CIPHER_ALGORITHM is a WiFiCx TLV that contains the WDI_CIPHER_ALGORITHM enum.
+ms.date: 02/07/2024
 ---
 
 # WDI_TLV_CIPHER_ALGORITHM (dot11wificxtypes.hpp)
 
 [!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
-**WDI_TLV_CIPHER_ALGORITHM** is a TLV that contains a [**WDI_CIPHER_ALGORITHM**](/windows-hardware/drivers/ddi/dot11wificxtypes/ne-dot11wificxtypes-wdi_cipher_algorithm) enum.
+**WDI_TLV_CIPHER_ALGORITHM** is a TLV that contains the [**WDI_CIPHER_ALGORITHM**](/windows-hardware/drivers/ddi/dot11wificxtypes/ne-dot11wificxtypes-wdi_cipher_algorithm) enum.
 
 
 ## TLV type
@@ -24,7 +24,7 @@ The size (in bytes) of the [**WDI_CIPHER_ALGORITHM**](/windows-hardware/drivers/
 
 | Type | Description |
 | --- | --- |
-| [**WDI_CIPHER_ALGORITHM**](/windows-hardware/drivers/ddi/dot11wificxtypes/ne-dot11wificxtypes-wdi_cipher_algorithm) | A cipher algorithm value. |
+| [**WDI_CIPHER_ALGORITHM**](/windows-hardware/drivers/ddi/dot11wificxtypes/ne-dot11wificxtypes-wdi_cipher_algorithm) | Specifies a cipher algorithm. |
 
 ## Requirements
 

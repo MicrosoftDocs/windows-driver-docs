@@ -23,7 +23,7 @@ The size (in bytes) of the array of [**RSNA_AKM_CIPHER_PAIR**](/windows-hardware
 
 | Type | Description |
 |-----------------|-----------------|
-| [**RSNA_AKM_CIPHER_PAIR**](/windows-hardware/drivers/ddi/windot11/ns-windot11-rsna_akm_cipher_pair) | An array of RSNA AKM and cipher pairs. |
+| [**RSNA_AKM_CIPHER_PAIR**](/windows-hardware/drivers/ddi/windot11/ns-windot11-rsna_akm_cipher_pair)[] | An array of RSNA AKM and cipher pairs. |
 
 ## Requirements
 

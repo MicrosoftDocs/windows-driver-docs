@@ -47,6 +47,11 @@ If **HostFIPSModeEnabled** is set to **1**, the following rules apply.
 
 The connection parameters must not have **MFPEnabled** and **HostFIPSModeEnabled** both set to **1**. Management Frame Protection (802.11w) requires the port to encrypt/decrypt certain management and action frames, so it can't be enabled for a connection using Host FIPS mode. In addition, Wake on Wireless LAN features aren't applicable in Host-FIPS mode.
 
+## WiFi 7 / MLO requirements
+
+Windows provides the **MloConnectionSupported** setting in [**WDI_TLV_CONNECTION_SETTINGS**](wdi-tlv-connection-settings.md) that indicates whether the driver can connect using MLO. When connection to a secure network,  the driver can only use the AKM and cipher pairs specified in [WDI_TLV_RSNA_AKM_CIPHER_SUITE](wdi-tlv-rsna-akm-cipher-suite.md). The only exception is if the auth/cipher is not part of the RSNA IE.
+
+For more information, see [WiFiCx Wi-Fi 7 feature requirements](wificx-wi-fi-7.md).
 
 ## Task parameters
 

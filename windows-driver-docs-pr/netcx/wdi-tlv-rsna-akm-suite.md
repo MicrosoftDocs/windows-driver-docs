@@ -2,7 +2,7 @@
 title: WDI_TLV_RSNA_AKM_SUITE (dot11wificxtypes.hpp)
 ms.topic: reference
 description: WDI_TLV_RSNA_AKM_SUITE is a WiFiCx TLV that contains the RSNA AKM suites that the driver supports.
-ms.date: 07/21/2023
+ms.date: 02/07/2024
 ---
 
 # WDI_TLV_RSNA_AKM_SUITE (dot11wificxtypes.hpp)
@@ -23,7 +23,7 @@ The size (in bytes) of the array of [**RSNA_AKM_SUITE**](/windows-hardware/drive
 
 | Type | Description |
 |-----------------|-----------------|
-| [**RSNA_AKM_SUITE**](/windows-hardware/drivers/ddi/windot11/ne-windot11-rsna_akm_suite) | An array of RSNA AKMs. |
+| [**RSNA_AKM_SUITE**](/windows-hardware/drivers/ddi/windot11/ne-windot11-rsna_akm_suite)[] | An array of RSNA AKMs. |
 
 ## Requirements
 
