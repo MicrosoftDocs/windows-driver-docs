@@ -1,5 +1,5 @@
 ---
-title: ServiceInfo XML elements list
+title: ServiceInfo XML Elements List
 description: ServiceInfo XML elements list
 ms.date: 07/05/2019
 ---

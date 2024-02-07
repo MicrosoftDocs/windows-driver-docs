@@ -1,5 +1,5 @@
 ---
-title: Using mbidgenerator.exe to generate hardware IDs
+title: Using Mbidgenerator.Exe to Generate Hardware IDs
 description: Using mbidgenerator.exe to generate hardware IDs
 ms.date: 04/20/2017
 ---

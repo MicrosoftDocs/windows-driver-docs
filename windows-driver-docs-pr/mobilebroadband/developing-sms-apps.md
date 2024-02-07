@@ -1,5 +1,5 @@
 ---
-title: Introduction to developing SMS apps
+title: Introduction to Developing SMS Apps
 description: Introduction to developing SMS apps
 ms.date: 10/06/2023
 ---

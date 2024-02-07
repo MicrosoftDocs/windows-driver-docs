@@ -1,5 +1,5 @@
 ---
-title: Review the hotspot authentication sample
+title: Review the Hotspot Authentication Sample
 description: Review the hotspot authentication sample
 ms.date: 04/20/2017
 ---

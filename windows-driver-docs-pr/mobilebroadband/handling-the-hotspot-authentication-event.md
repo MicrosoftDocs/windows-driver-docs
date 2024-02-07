@@ -1,5 +1,5 @@
 ---
-title: Handling the hotspot authentication event
+title: Handling the Hotspot Authentication Event
 description: Handling the hotspot authentication event
 ms.date: 04/20/2017
 ---

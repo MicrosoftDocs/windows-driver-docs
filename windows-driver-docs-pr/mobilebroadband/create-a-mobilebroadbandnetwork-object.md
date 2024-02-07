@@ -1,5 +1,5 @@
 ---
-title: Create a MobileBroadbandNetwork object
+title: Create a MobileBroadbandNetwork Object
 description: Create a MobileBroadbandNetwork object
 ms.date: 04/20/2017
 ---
