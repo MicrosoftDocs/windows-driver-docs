@@ -1,5 +1,5 @@
 ---
-title: RtlFillDeviceMemory function (wdm.h)
+title: RtlFillDeviceMemory Function (Wdm.H)
 ms.date: 01/04/2024
 description: This article describes the RtlFillDeviceMemory function (wdm.h).
 ---
