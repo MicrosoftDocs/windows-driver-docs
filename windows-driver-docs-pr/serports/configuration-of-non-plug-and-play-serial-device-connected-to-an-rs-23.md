@@ -1,5 +1,5 @@
 ---
-title: Configure Non-PnP devices to an RS-232 Port
+title: Configure Non-PnP Devices to an RS-232 Port
 description: Configuration of Non-Plug and Play Serial Device Connected to an RS-232 Port
 keywords:
 - Plug and Play serial devices WDK
