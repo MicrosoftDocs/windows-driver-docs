@@ -1,5 +1,5 @@
 ---
-title: Iasphelp get_ShareName method
+title: Iasphelp get_ShareName Method
 description: The ShareName property enables an ASP Web page to obtain the printer's shared name.
 MS-HAID:
 - 'webfnc_68b8e99e-a40b-44ee-94c8-2a8bcc293fa3.xml'

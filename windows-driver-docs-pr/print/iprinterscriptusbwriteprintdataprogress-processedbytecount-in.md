@@ -1,5 +1,5 @@
 ---
-title: IPrinterScriptUsbWritePrintDataProgress ProcessedByteCount method (in)
+title: IPrinterScriptUsbWritePrintDataProgress ProcessedByteCount Method (In)
 description: Sets the number of bytes that the IHV JavaScript function has processed at the time this method was called.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

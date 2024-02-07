@@ -1,5 +1,5 @@
 ---
-title: Add a port
+title: Add a Port
 description: Provides information about how to add a port.
 keywords:
 - port management WDK print, adding ports

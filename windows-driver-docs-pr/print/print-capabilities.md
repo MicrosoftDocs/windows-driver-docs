@@ -1,5 +1,5 @@
 ---
-title: Print capabilities
+title: Print Capabilities
 description: Using print capabilities technology, a print driver can return its capabilities as a set of elements in an XML document.
 keywords:
 - Print Capabilities WDK , about Print Capabilities

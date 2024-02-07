@@ -1,5 +1,5 @@
 ---
-title: Iasphelp CalcJobETA method
+title: Iasphelp CalcJobETA Method
 description: The CalcJobETA method enables an ASP Web page to calculate the time at which a print job is to be completed.
 MS-HAID:
 - 'webfnc_65577773-9d44-429e-a2fe-eb1a1475b7f6.xml'

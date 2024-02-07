@@ -1,5 +1,5 @@
 ---
-title: Referencing locales
+title: Referencing Locales
 description: Provides information about referencing locales.
 keywords:
 - Unidrv, referencing locales

@@ -1,5 +1,5 @@
 ---
-title: Hardware-resident fonts
+title: Hardware-resident Fonts
 description: Hardware-resident fonts
 keywords:
 - printer font descriptions WDK Unidrv , hardware-resident fonts

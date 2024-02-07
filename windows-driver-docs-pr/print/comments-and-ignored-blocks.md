@@ -1,5 +1,5 @@
 ---
-title: Comments and ignored blocks
+title: Comments and Ignored Blocks
 description: Comments and ignored blocks
 keywords:
 - GPD file entries WDK Unidrv , ignored blocks

@@ -1,5 +1,5 @@
 ---
-title: Hostfont registry entries
+title: Hostfont Registry Entries
 description: Provides information about hostfont registry entries.
 keywords:
 - PostScript Printer Driver WDK print , HostFontXxx registry entries

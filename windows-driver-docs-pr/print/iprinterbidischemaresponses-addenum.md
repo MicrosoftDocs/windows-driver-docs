@@ -1,5 +1,5 @@
 ---
-title: IPrinterBidiSchemaResponses AddEnum method
+title: IPrinterBidiSchemaResponses AddEnum Method
 description: The AddEnum method adds a new response of type BIDI_ENUM to the collection.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

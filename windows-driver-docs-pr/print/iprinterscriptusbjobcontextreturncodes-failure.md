@@ -1,5 +1,5 @@
 ---
-title: IPrinterScriptUsbJobContextReturnCodes Failure method
+title: IPrinterScriptUsbJobContextReturnCodes Failure Method
 description: Returns a value of '1' to inform USBMon that the method call failed.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

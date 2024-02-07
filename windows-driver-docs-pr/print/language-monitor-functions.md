@@ -1,5 +1,5 @@
 ---
-title: Language monitor functions
+title: Language Monitor Functions
 description: Provides a list of functions that a language monitor must define.
 keywords:
 - language monitors WDK print, functions

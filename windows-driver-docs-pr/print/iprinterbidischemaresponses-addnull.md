@@ -1,5 +1,5 @@
 ---
-title: IPrinterBidiSchemaResponses AddNull method
+title: IPrinterBidiSchemaResponses AddNull Method
 description: The AddNull method adds a new response of type BIDI_NULL to the collection.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

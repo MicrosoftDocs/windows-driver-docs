@@ -1,5 +1,5 @@
 ---
-title: Iasphelp get_MibErrorDscp method
+title: Iasphelp get_MibErrorDscp Method
 description: The MibErrorDscp property enables an ASP Web page to convert a Simple Network Management Protocol (SNMP) management information base (MIB) error code into a text description of the error.
 MS-HAID:
 - 'webfnc_3931fbc6-1960-4d40-a6e3-8816ee832c89.xml'

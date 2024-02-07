@@ -1,5 +1,5 @@
 ---
-title: Iasphelp get_AvgJobSizeUnit method
+title: Iasphelp get_AvgJobSizeUnit Method
 description: The AvgJobSizeUnit property enables an ASP Web page to determine the units of the average job size.
 MS-HAID:
 - 'webfnc_b7542526-ad13-46d7-a1c1-e02d7832dfb6.xml'

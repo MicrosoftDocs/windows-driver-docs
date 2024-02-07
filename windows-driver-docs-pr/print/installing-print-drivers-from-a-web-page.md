@@ -1,5 +1,5 @@
 ---
-title: Install print drivers from a Web page
+title: Install Print Drivers from a Web Page
 description: Provides information about how to install print drivers from a Web page.
 keywords:
 - Internet printing WDK, installing drivers from Web pages

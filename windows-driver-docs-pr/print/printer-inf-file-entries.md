@@ -1,5 +1,5 @@
 ---
-title: Printer INF file entries
+title: Printer INF File Entries
 description: Provides information about printer INF file entries.
 keywords:
 - INF files WDK print, entries

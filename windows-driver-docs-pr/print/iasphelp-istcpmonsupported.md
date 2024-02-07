@@ -1,5 +1,5 @@
 ---
-title: Iasphelp getIsTCPMonSupported method
+title: Iasphelp getIsTCPMonSupported Method
 description: The IsTCPMonSupported property enables an ASP Web page to determine if Microsoft's standard TCP/IP port monitor is being used with a printer.
 MS-HAID:
 - 'webfnc54f72229-524a-4bf2-917d-6a3ffcc27959.xml'
