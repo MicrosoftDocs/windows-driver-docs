@@ -13,7 +13,9 @@ keywords:
 
 **OID_WDI_SET_SAE_AUTH_PARAMS** is sent by WDI in response to an [NDIS_STATUS_WDI_INDICATION_SAE_AUTH_PARAMS_NEEDED](ndis-status-wdi-indication-sae-auth-params-needed.md) indication from the driver. It contains the parameters required to send the Simultaneous Authentication of Equals (SAE) Commit or Confirm request, or an error message indicating a failure to perform SAE with the BSSID. 
 
-For SAE authentication using Wi-Fi 7 MLO, Windows will set the selected AKM and cipher that the driver will use in [WDI_TLV_SAE_COMMIT_PARAMS](wdi-tlv-sae-commit-params.md) when calling OID_WDI_SET_SAE_AUTH_PARAMS. These values are specified by in the [WDI_TLV_RSNA_AKM_SUITE](wdi-tlv-rsna-akm-suite.md) and [WDI_TLV_CIPHER_ALGORITHM](wdi-tlv-cipher-algorithm.md) TLVs.
+For SAE authentication using Wi-Fi 7 MLO, Windows will set the selected AKM and cipher that the driver will use in [WDI_TLV_SAE_COMMIT_PARAMS](wdi-tlv-sae-commit-params.md) when calling OID_WDI_SET_SAE_AUTH_PARAMS. These values are specified in the [WDI_TLV_RSNA_AKM_SUITE](wdi-tlv-rsna-akm-suite.md) and [WDI_TLV_CIPHER_ALGORITHM](wdi-tlv-cipher-algorithm.md) TLVs.
+
+For SAE authentication using Wi-Fi 7 MLO, Windows sets the AKM and cipher in [WDI_TLV_SAE_COMMIT_PARAMS](wdi-tlv-sae-commit-params.md). These values are specified in the [WDI_TLV_RSNA_AKM_SUITE](wdi-tlv-rsna-akm-suite.md) and [WDI_TLV_CIPHER_ALGORITHM](wdi-tlv-cipher-algorithm.md) TLVs. The driver uses these values later on in the association request.
 
 This command is sent as a Direct OID request to the driver.
 

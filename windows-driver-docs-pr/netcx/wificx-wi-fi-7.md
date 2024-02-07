@@ -47,7 +47,7 @@ For SAE-based connections, Windows sets the AKM and cipher in the SAE Commit req
 
 ## Authentication
 
-For SAE authentication using Wi-Fi 7 MLO, Windows sets the selected AKM and cipher that the driver uses in [WDI_TLV_SAE_COMMIT_PARAMS](wdi-tlv-sae-commit-params.md) when calling [OID_WDI_SET_SAE_AUTH_PARAMS](oid-wdi-set-sae-auth-params.md). These values are specified in the [WDI_TLV_RSNA_AKM_SUITE](wdi-tlv-rsna-akm-suite.md) and [WDI_TLV_CIPHER_ALGORITHM](wdi-tlv-cipher-algorithm.md) TLVs.
+For SAE authentication using Wi-Fi 7 MLO, Windows sets the AKM and cipher in [WDI_TLV_SAE_COMMIT_PARAMS](wdi-tlv-sae-commit-params.md) when calling [OID_WDI_SET_SAE_AUTH_PARAMS](oid-wdi-set-sae-auth-params.md). These values are specified in the [WDI_TLV_RSNA_AKM_SUITE](wdi-tlv-rsna-akm-suite.md) and [WDI_TLV_CIPHER_ALGORITHM](wdi-tlv-cipher-algorithm.md) TLVs. The driver uses these values later on in the association request.
 
 In the [NDIS_STATUS_WDI_INDICATION_SAE_AUTH_PARAMS_NEEDED](ndis-status-wdi-indication-sae-auth-params-needed.md) indication, the driver should:
 

@@ -23,7 +23,7 @@ The size (in bytes) of the array of [**RSNA_AKM_SUITE**](/windows-hardware/drive
 
 | Type | Description |
 |-----------------|-----------------|
-| [**RSNA_AKM_SUITE**](/windows-hardware/drivers/ddi/windot11/ne-windot11-rsna_akm_suite)[] | An array of RSNA AKMs. |
+| [**RSNA_AKM_SUITE**](/windows-hardware/drivers/ddi/windot11/ne-windot11-rsna_akm_suite)[] | An array of RSNA AKM suites. |
 
 ## Requirements
 

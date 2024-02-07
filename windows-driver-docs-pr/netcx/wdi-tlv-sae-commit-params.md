@@ -30,7 +30,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 | [WDI_TLV_SAE_ELEMENT](wdi-tlv-sae-element.md) | TLV\<LIST\<UINT8>> |   |   | The Encoded Field Element (EFE). |
 | [WDI_TLV_SAE_ANTI_CLOGGING_TOKEN](wdi-tlv-sae-anti-clogging-token.md) | TLV\<LIST\<UINT8>> |   |  X | The anti-clogging token as requested by the BSSID. |
 | [WDI_TLV_SAE_REJECTED_GROUPS](wdi-tlv-sae-rejected-groups.md) | TLV\<LIST\<UINT8>> |   | X  | Any rejected groups. |
-| [WDI_TLV_RSNA_AKM_SUITE](wdi-tlv-rsna-akm-suite.md) |   | | X | List of RSNA AKMs. |
+| [WDI_TLV_RSNA_AKM_SUITE](wdi-tlv-rsna-akm-suite.md) |   | | X | List of RSNA AKM suites. |
 | [WDI_TLV_CIPHER_ALGORITHM](wdi-tlv-cipher-algorithm.md) |   | | X | A cipher algorithm value. |
 
 ## Requirements
