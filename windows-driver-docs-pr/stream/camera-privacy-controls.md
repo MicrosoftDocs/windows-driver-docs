@@ -1,5 +1,5 @@
 ---
-title: Camera privacy shutters and kill switches
+title: Camera Privacy Shutters and Kill Switches
 description: Provides device design guidance for privacy shutters and kill switches, considerations for shutter state sensing, and how shutters are expected to interact with existing HLK requirements for indicator LEDs.
 ms.date: 01/02/2024
 ---

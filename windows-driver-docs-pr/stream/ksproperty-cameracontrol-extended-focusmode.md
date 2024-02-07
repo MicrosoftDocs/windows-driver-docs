@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FOCUSMODE
+title: KSPROPERTY_CAMERACONTROL_EXTENDED_FOCUSMODE
 description: The focus mode property controls the auto, manual, and preset focus modes of the camera.
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_FOCUSMODE Streaming Media Devices"]
 topic_type:

@@ -1,5 +1,5 @@
 ---
-title: Driver support for uvc control cache
+title: Driver Support for Uvc Control Cache
 description: Provides information about how to explicitly utilize camera control cache for a device.
 ms.date: 08/16/2019
 ---

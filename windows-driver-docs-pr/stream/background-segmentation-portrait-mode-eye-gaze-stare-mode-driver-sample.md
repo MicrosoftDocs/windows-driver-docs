@@ -1,5 +1,5 @@
 ---
-title: Background segmentation shallow focus mode and eye gaze stare mode driver sample
+title: Background Segmentation Shallow Focus Mode and Eye Gaze Stare Mode Driver Sample
 description: An example implementation of background segmentation shallow focus mode and eye gaze stare mode controls in a camera driver.
 ms.date: 05/16/2022
 ---

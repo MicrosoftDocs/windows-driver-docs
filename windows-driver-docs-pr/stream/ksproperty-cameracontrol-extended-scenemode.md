@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_SCENEMODE (driver defined mode)
+title: KSPROPERTY_CAMERACONTROL_EXTENDED_SCENEMODE (Driver Defined Mode)
 description: The scene mode property selects a driver defined mode which represents a collection of preset controls.
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_SCENEMODE Streaming Media Devices"]
 topic_type:

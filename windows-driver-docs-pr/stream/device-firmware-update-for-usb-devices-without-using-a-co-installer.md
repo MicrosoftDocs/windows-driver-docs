@@ -1,5 +1,5 @@
 ---
-title: Device firmware update For USB devices without using a co-installer
+title: Device Firmware Update for USB Devices Without Using a Co-Installer
 description: Outlines a recommended method to update USB device firmware without a co-installer.
 ms.date: 05/08/2023
 ---

@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY structure (ks.h)
+title: KSPROPERTY Structure (Ks.H)
 description: The KSPROPERTY structure specifies a single kernel streaming property within a property set.
 ms.date: 07/14/2022
 ---

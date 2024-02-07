@@ -1,5 +1,5 @@
 ---
-title: SRB\_OPEN\_STREAM
+title: SRB_OPEN_STREAM
 description: SRB\_OPEN\_STREAM
 keywords: ["SRB_OPEN_STREAM Streaming Media Devices"]
 topic_type:

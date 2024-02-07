@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PHOTOMAXFRAMERATE
+title: KSPROPERTY_CAMERACONTROL_EXTENDED_PHOTOMAXFRAMERATE
 description: This property provides the maximum capture frame rate for a camera when it is in photo sequence mode.
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_PHOTOMAXFRAMERATE Streaming Media Devices"]
 topic_type:

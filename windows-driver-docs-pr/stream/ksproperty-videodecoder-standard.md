@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_VIDEODECODER\_STANDARD
+title: KSPROPERTY_VIDEODECODER_STANDARD
 description: The KSPROPERTY\_VIDEODECODER\_STANDARD property controls the current analog video standard. This property must be implemented.
 keywords: ["KSPROPERTY_VIDEODECODER_STANDARD Streaming Media Devices"]
 topic_type:
