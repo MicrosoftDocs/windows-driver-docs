@@ -1,5 +1,5 @@
 ---
-title: Action interfaces
+title: Action Interfaces
 description: The action interfaces control an instance of the IWDTFTarget2 interface. Every plug-in must support this interface.
 keywords:
 - Windows Device Testing Framework WDK , action interfaces
