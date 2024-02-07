@@ -12,7 +12,7 @@ This article outlines the driver changes required to support these features.
 
 ## Wi-Fi 7 capability detection
 
-The driver must support WDI version 2.0.9.11 for Wi-Fi 7 connection setup. 
+The driver must support WDI version 2.0.12 for Wi-Fi 7 connection setup. 
 
 To indicate support for Wi-Fi MLO connections, the driver must set the following capabilities in the [**WIFI_STATION_CAPABILITIES**](/windows-hardware/drivers/ddi/wificx/ns-wificx-wifi_station_capabilities) structure:
 - The number of entries in **MLOAddressesList** must match **MaxMLOLinksSupported**, which indicates if the driver is capable of setting up MLO links.
@@ -41,7 +41,7 @@ Windows parses the beacon IEs for Multi-Link and RNR IEs. If present, it marks t
 
 ## Multi-Link connection setup
 
-Windows provides a setting to the driver in the [OID_WDI_TASK_CONNECT](oid-wdi-task-connect.md) task to indicate whether the driver can connect using MLO. This setting is represented by the **MloConnectionSupported** flag in [WDI_TLV_CONNECTION_SETTINGS](wdi-tlv-connection-settings.md). When **MloConnectionSupported** is **true**, the driver can only use the AKMs specified by [WDI_TLV_RSNA_AKM_SUITE](wdi-tlv-rsna-akm-suite.md). When **MloConnectionSupported** is **false**, the driver should only expect to connect without multi-link connectivity.
+Windows provides a setting to the driver in the [OID_WDI_TASK_CONNECT](oid-wdi-task-connect.md) task to indicate whether the driver can connect using MLO. This setting is represented by the **MloConnectionSupported** flag in [WDI_TLV_CONNECTION_SETTINGS](wdi-tlv-connection-settings.md). When **MloConnectionSupported** is **true**, the driver can only use the AKM and cipher pairs specified by [WDI_TLV_RSNA_AKM_CIPHER_SUITE](wdi-tlv-rsna-akm-cipher-suite.md) in the [OID_WDI_TASK_CONNECT](oid-wdi-task-connect.md) and [OID_WDI_TASK_ROAM](oid-wdi-task-roam.md) requests. The only exception is if the auth/cipher is not part of the RSNA IE.
 
 For SAE-based connections, Windows sets the AKM and cipher in the SAE Commit request, which tells the driver which AKM and cipher to use later on in the association request.
 
@@ -66,7 +66,7 @@ Windows requires that the driver indicates the Association Request and Response 
 
 For association using Wi-Fi 7 MLO, the driver must set the following values in NDIS_STATUS_WDI_INDICATION_ASSOCIATION_RESULT:
 
-- Set the **BSSID** ([WDI_TLV_BSSID](wdi-tlv-bssid.md)) in [WDI_TLV_ASSOCIATION_RESULT](./wdi-tlv-association-result.md) to the AP's Link MAC address.
+- Set the **BSSID** ([WDI_TLV_BSSID](wdi-tlv-bssid.md)) in [WDI_TLV_ASSOCIATION_RESULT](./wdi-tlv-association-result.md) to the AP's Link MAC address. There should only be one instance of the **AssociationResultsContainer** entry in NDIS_STATUS_WDI_INDICATION_ASSOCIATION_RESULT.
 - Set the **LocalLinkBssId** ([WDI_TLV_MLO_LINK_BSSID](wdi-tlv-mlo-link-bssid.md)) in WDI_TLV_ASSOCIATION_RESULT to the local Link MAC address.
 
 Note: If the **LocalLinkBssId** isn't set, Windows can't use MLO for the connection.

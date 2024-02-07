@@ -548,6 +548,8 @@
       href: wdi-tlv-roaming-needed-parameters.md
     - name: "WDI_TLV_RSN_KEY_INFO"
       href: wdi-tlv-rsn-key-info.md
+    - name: "WDI_TLV_RSNA_AKM_CIPHER_SUITE"
+      href: wdi-tlv-rsna-akm-cipher-suite.md
     - name: "WDI_TLV_RSNA_AKM_SUITE"
       href: wdi-tlv-rsna-akm-suite.md
     - name: "WDI_TLV_RTT"
