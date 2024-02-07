@@ -1,5 +1,5 @@
 ---
-title: RDF_TRANSMIT callback function
+title: RDF_TRANSMIT Callback Function
 description: RDF_TRANSMIT callback function
 keywords:
 - vendor-supplied drivers RDF callback functions
