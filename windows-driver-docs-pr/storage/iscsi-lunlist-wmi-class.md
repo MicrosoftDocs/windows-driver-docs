@@ -1,5 +1,5 @@
 ---
-title: ISCSI\_LUNList WMI Class
+title: ISCSI_LUNList WMI Class
 description: ISCSI\_LUNList WMI Class
 ms.date: 10/17/2018
 ---

@@ -1,5 +1,5 @@
 ---
-title: Format method of the MSFT\_Volume class
+title: Format Method of the MSFT_Volume Class
 description: Formats the volume.
 ms.assetid: 007dd46a-4812-4273-beaa-74fbe9520c7d
 keywords:

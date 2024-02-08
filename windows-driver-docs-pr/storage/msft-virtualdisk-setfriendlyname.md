@@ -1,5 +1,5 @@
 ---
-title: SetFriendlyName method of the MSFT\_VirtualDisk class
+title: SetFriendlyName Method of the MSFT_VirtualDisk Class
 description: Renames the virtual disk.
 ms.assetid: 2EE40577-65EE-478E-9C69-20E47D949AC5
 keywords:

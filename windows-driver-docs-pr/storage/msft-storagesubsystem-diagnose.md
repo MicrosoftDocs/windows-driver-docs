@@ -1,5 +1,5 @@
 ---
-title: Diagnose method of the MSFT\_StorageSubSystem class
+title: Diagnose Method of the MSFT_StorageSubSystem Class
 description: Performs a diagnostic on the storage subsystem, returning any actionable results.
 ms.assetid: 80854E59-F81F-468B-AFAD-DF819414E3BE
 keywords:

@@ -1,5 +1,5 @@
 ---
-title: GetFCPStatistics function
+title: GetFCPStatistics Function
 description: The GetFCPStatistics WMI method returns FCP traffic statistics for the indicated SCSI logical unit on the indicated local HBA.
 keywords: ["GetFCPStatistics function Storage Devices"]
 topic_type:

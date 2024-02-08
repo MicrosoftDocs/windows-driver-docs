@@ -1,5 +1,5 @@
 ---
-title: Detach method of the MSFT\_VirtualDisk class
+title: Detach Method of the MSFT_VirtualDisk Class
 description: Detaches a storage spaces-based virtual disk from a computer.
 ms.assetid: ED70182D-C5FF-4BB7-9CDC-FDA4C60BB36D
 keywords:

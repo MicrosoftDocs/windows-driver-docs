@@ -1,5 +1,5 @@
 ---
-title: SM\_SendCTPassThru function
+title: SM_SendCTPassThru Function
 description: The SM\_SendCTPassThru WMI method sends a common transport (CT) pass-through command to the indicated port.
 keywords: ["SM_SendCTPassThru function Storage Devices"]
 topic_type:

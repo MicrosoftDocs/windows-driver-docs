@@ -1,5 +1,5 @@
 ---
-title: MSFT\_OffloadDataTransferSetting class
+title: MSFT_OffloadDataTransferSetting Class
 description: Represents the offload data transfer (ODX) settings for a subsystem.
 ms.assetid: DCE938F6-8901-409F-9CBB-CAAB1F38F9AA
 keywords:

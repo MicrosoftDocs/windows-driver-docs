@@ -1,5 +1,5 @@
 ---
-title: SetFriendlyName method of the MSFT\_FileServer class
+title: SetFriendlyName Method of the MSFT_FileServer Class
 description: Allows the file server to be renamed.
 ms.assetid: B9E430B6-36B2-4370-ABCE-E6DF2F395DD4
 keywords:

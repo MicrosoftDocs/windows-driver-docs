@@ -1,5 +1,5 @@
 ---
-title: SetUsage method of the MSFT\_VirtualDisk class
+title: SetUsage Method of the MSFT_VirtualDisk Class
 description: Sets or changes the intended usage for the virtual disk.
 ms.assetid: 232159C8-51D3-423A-8868-4BD1056E536A
 keywords:

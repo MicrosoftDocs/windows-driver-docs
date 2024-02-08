@@ -1,5 +1,5 @@
 ---
-title: MPIO\_DISK\_HEALTH\_CLASS WMI Class
+title: MPIO_DISK_HEALTH_CLASS WMI Class
 description: MPIO\_DISK\_HEALTH\_CLASS WMI Class
 ms.date: 10/17/2018
 ---

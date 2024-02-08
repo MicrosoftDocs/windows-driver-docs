@@ -1,5 +1,5 @@
 ---
-title: CreateVirtualDisk method of the MSFT\_StorageSubSystem class
+title: CreateVirtualDisk Method of the MSFT_StorageSubSystem Class
 description: Creates a new virtual disk.
 ms.assetid: D31EEC10-7DEA-4701-9025-FBD04A50E5F7
 keywords:

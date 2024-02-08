@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StorageSubSystemToMaskingSet class
+title: MSFT_StorageSubSystemToMaskingSet Class
 description: Association between StorageSubSystem and MaskingSet.
 ms.assetid: 38E7838B-E9CB-4FDF-9952-A4DB47F57FE0
 keywords:

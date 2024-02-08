@@ -1,5 +1,5 @@
 ---
-title: SCSI miniport driver overview
+title: SCSI Miniport Driver Overview
 description: SCSI Miniport Drivers
 keywords:
 - SCSI miniport drivers WDK storage

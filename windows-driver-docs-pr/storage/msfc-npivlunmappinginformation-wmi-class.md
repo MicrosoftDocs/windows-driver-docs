@@ -1,5 +1,5 @@
 ---
-title: MSFC\_NPIVLUNMappingInformation WMI Class
+title: MSFC_NPIVLUNMappingInformation WMI Class
 description: MSFC\_NPIVLUNMappingInformation WMI Class
 ms.date: 10/17/2018
 ---

@@ -1,5 +1,5 @@
 ---
-title: RemoveMember method of the MSFT\_ReplicationGroup class
+title: RemoveMember Method of the MSFT_ReplicationGroup Class
 description: Remove members from this replication group.
 ms.assetid: 52BED6E0-FCB3-49D9-9766-78B191DEB0C2
 keywords:

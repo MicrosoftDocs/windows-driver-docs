@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StorageSubSystem class
+title: MSFT_StorageSubSystem Class
 description: Represents a storage array subsystem that exposes virtual disks and/or a computer system that exposes file server capabilities.
 ms.assetid: 3fa2f78f-be75-42c0-baba-b08f4959af8c
 keywords:

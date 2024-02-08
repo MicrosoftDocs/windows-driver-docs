@@ -1,5 +1,5 @@
 ---
-title: SM\_SendRNID function
+title: SM_SendRNID Function
 description: The SM\_SendRNID WMI method sends a request node identification data (RNID) command to the indicated port.
 keywords: ["SM_SendRNID function Storage Devices"]
 topic_type:

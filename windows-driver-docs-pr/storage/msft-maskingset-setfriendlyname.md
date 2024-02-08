@@ -1,5 +1,5 @@
 ---
-title: SetFriendlyName method of the MSFT\_MaskingSet class
+title: SetFriendlyName Method of the MSFT_MaskingSet Class
 description: Sets the friendly name for the masking set.
 ms.assetid: 4D64C38C-938E-4896-A316-C113BF13652A
 keywords:

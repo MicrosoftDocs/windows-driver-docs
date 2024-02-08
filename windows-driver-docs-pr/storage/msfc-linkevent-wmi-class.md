@@ -1,5 +1,5 @@
 ---
-title: MSFC\_LinkEvent WMI Class
+title: MSFC_LinkEvent WMI Class
 description: MSFC\_LinkEvent WMI Class
 ms.date: 10/17/2018
 ---

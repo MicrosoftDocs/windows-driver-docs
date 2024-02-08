@@ -1,5 +1,5 @@
 ---
-title: SM\_GetRNIDMgmtInfo function
+title: SM_GetRNIDMgmtInfo Function
 description: The SM\_GetRNIDMgmtInfo WMI method retrieves FC3 management information that is associated with a Fibre Channel adapter.
 keywords: ["SM_GetRNIDMgmtInfo function Storage Devices"]
 topic_type:

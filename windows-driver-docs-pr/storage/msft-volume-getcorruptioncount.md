@@ -1,5 +1,5 @@
 ---
-title: GetCorruptionCount method of the MSFT\_Volume class
+title: GetCorruptionCount Method of the MSFT_Volume Class
 description: Retrieves the corruption count for the volume.
 ms.assetid: 30F417D9-A4E3-49A3-A86E-79AFF5CC9D1C
 keywords:

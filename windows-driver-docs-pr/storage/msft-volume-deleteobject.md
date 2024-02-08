@@ -1,5 +1,5 @@
 ---
-title: DeleteObject method of the MSFT\_Volume class
+title: DeleteObject Method of the MSFT_Volume Class
 description: Deletes the volume.
 ms.assetid: FDD37FD3-D0F1-4357-ADFD-E8D2CCCBE383
 keywords:

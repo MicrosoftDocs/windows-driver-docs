@@ -1,5 +1,5 @@
 ---
-title: MSFT\_FileServerToFileShare class
+title: MSFT_FileServerToFileShare Class
 description: Association between a MSFT\_FileServer and its MSFT\_FileShare objects.
 ms.assetid: 9A76E1EA-50B1-49F2-8B0D-BB444CC89188
 keywords:

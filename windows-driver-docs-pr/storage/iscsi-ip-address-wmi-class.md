@@ -1,5 +1,5 @@
 ---
-title: ISCSI\_IP\_Address WMI Class
+title: ISCSI_IP_Address WMI Class
 description: ISCSI\_IP\_Address WMI Class
 ms.date: 10/17/2018
 ---

@@ -1,5 +1,5 @@
 ---
-title: MSFT\_SoftError\_NotAuthenticated class
+title: MSFT_SoftError_NotAuthenticated Class
 description: Represents an access-denied error.
 ms.assetid: EC170B07-05EA-46F7-A910-559C96DFAD7B
 keywords:

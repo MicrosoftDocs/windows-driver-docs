@@ -1,5 +1,5 @@
 ---
-title: MSFC\_HBAAdapterMethods WMI Class
+title: MSFC_HBAAdapterMethods WMI Class
 description: MSFC\_HBAAdapterMethods WMI Class
 ms.date: 10/17/2018
 ---

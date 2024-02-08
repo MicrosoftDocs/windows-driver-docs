@@ -1,5 +1,5 @@
 ---
-title: Using _DSM for storage class memory
+title: Using _DSM for Storage Class Memory
 description: To support device-class-specific communications between the storage driver stack in Windows and the platform firmware, Microsoft defines Device-Specific Methods (_DSM) that can be used with storage drivers.
 ms.date: 11/18/2022
 ---

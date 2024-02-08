@@ -1,5 +1,5 @@
 ---
-title: Online method of the MSFT\_Disk class
+title: Online Method of the MSFT_Disk Class
 description: Brings the disk online.
 ms.assetid: 18F3A556-9BAD-48D8-BFEF-30414B45FFE1
 keywords:

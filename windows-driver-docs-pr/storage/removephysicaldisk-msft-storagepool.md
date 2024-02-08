@@ -1,5 +1,5 @@
 ---
-title: RemovePhysicalDisk method of the MSFT\_StoragePool class
+title: RemovePhysicalDisk Method of the MSFT_StoragePool Class
 description: Removes one or more physical disks from the pool and returns all previously allocated space on the disk to the available capacity in the primordial pool.
 ms.assetid: 90bbc740-0ca2-4601-af98-93c9eddfed55
 keywords:

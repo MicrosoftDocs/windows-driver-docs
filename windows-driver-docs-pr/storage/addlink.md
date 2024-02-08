@@ -1,5 +1,5 @@
 ---
-title: AddLink function
+title: AddLink Function
 description: The AddLink WMI method configures the WMI provider to inform the WMI client of fabric link events.
 keywords: ["AddLink function Storage Devices"]
 topic_type:

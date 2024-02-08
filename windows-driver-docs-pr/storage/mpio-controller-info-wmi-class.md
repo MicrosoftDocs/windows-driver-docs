@@ -1,5 +1,5 @@
 ---
-title: MPIO\_CONTROLLER\_INFO WMI Class
+title: MPIO_CONTROLLER_INFO WMI Class
 description: MPIO\_CONTROLLER\_INFO WMI Class
 ms.date: 10/17/2018
 ---

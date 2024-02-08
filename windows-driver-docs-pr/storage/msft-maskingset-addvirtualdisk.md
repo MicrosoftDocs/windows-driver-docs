@@ -1,5 +1,5 @@
 ---
-title: AddVirtualDisk method of the MSFT\_MaskingSet class
+title: AddVirtualDisk Method of the MSFT_MaskingSet Class
 description: Adds one or more virtual disks to the masking set.
 ms.assetid: D81ED854-CF77-4C55-9A2D-D17D7E64FD3B
 keywords:
