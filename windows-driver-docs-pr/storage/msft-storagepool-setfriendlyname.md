@@ -1,5 +1,5 @@
 ---
-title: SetFriendlyName method of the MSFT\_StoragePool class
+title: SetFriendlyName Method of the MSFT_StoragePool Class
 description: Sets the friendly name for the storage pool.
 ms.assetid: 6FD041BB-0554-4E20-896E-4E54DB287384
 keywords:

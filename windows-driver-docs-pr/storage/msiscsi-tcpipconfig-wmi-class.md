@@ -1,5 +1,5 @@
 ---
-title: MSiSCSI\_TCPIPConfig WMI Class
+title: MSiSCSI_TCPIPConfig WMI Class
 description: MSiSCSI\_TCPIPConfig WMI Class
 ms.date: 10/17/2018
 ---

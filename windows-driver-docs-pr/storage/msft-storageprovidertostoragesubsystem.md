@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StorageProviderToStorageSubSystem class
+title: MSFT_StorageProviderToStorageSubSystem Class
 description: Association between StorageProvider and StorageSubSystem.
 ms.assetid: 0be0f434-3d17-4075-86db-58b11ef15544
 keywords:

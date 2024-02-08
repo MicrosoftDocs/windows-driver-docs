@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StorageEvent class
+title: MSFT_StorageEvent Class
 description: Base class for representing storage events.
 ms.assetid: 77338A5C-7AF6-4C78-80E1-AF557B60CA46
 keywords:

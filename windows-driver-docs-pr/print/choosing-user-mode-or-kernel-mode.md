@@ -1,5 +1,5 @@
 ---
-title: Choose user mode or kernel mode
+title: Choose User Mode or Kernel Mode
 description: Provides information about how to choose user mode or kernel mode.
 keywords:
 - printer graphics DLL WDK , user-mode vs. kernel-mode

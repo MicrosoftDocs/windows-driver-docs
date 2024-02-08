@@ -1,5 +1,5 @@
 ---
-title: SM\_SetPersistentBinding function
+title: SM_SetPersistentBinding Function
 description: The SM\_SetPersistentBinding method sets the bindings that are used by the HBA miniport driver to map the OS-specific LUN information to the fibre channel protocol (FCP) identifiers for the logical units.
 keywords: ["SM_SetPersistentBinding function Storage Devices"]
 topic_type:

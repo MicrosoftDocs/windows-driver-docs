@@ -1,5 +1,5 @@
 ---
-title: Triaging WDTF-based tests
+title: Triaging WDTF-based Tests
 description: To help you better understand what is going on in your WDTF-based tests, you can use the built-in support for WDTF Object Logging and WPP Software Tracing.
 ms.date: 04/20/2017
 ---

@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_WAVE\_OUTPUT\_CAPABILITIES
+title: KSPROPERTY_WAVE_OUTPUT_CAPABILITIES
 description: The KSPROPERTY\_WAVE\_OUTPUT\_CAPABILITIES property returns a wave device's wave output capabilities.
 keywords: ["KSPROPERTY_WAVE_OUTPUT_CAPABILITIES Streaming Media Devices"]
 topic_type:

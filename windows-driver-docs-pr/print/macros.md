@@ -1,5 +1,5 @@
 ---
-title: Macros (GPD language)
+title: Macros (GPD Language)
 description: The GPD language supports block macros and value macros.
 keywords:
 - GPD file entries WDK Unidrv , macros

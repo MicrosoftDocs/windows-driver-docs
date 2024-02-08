@@ -1,5 +1,5 @@
 ---
-title: Differences between UVC 1.0 and UVC 1.1
+title: Differences Between UVC 1.0 and UVC 1.1
 description: Differences between UVC 1.0 and UVC 1.1
 keywords:
 - USB Video Class drivers WDK AVStream , version differences

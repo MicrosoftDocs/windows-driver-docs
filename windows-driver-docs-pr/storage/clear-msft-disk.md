@@ -1,5 +1,5 @@
 ---
-title: Clear method of the MSFT\_Disk class
+title: Clear Method of the MSFT_Disk Class
 description: Removes partition information and uninitializes a disk, returning it to a RAW state.
 ms.assetid: a3703b30-5e32-4bcf-9abd-fd3fb67fa6b6
 keywords:

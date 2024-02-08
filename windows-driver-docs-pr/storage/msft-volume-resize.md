@@ -1,5 +1,5 @@
 ---
-title: Resize method of the MSFT\_Volume class
+title: Resize Method of the MSFT_Volume Class
 description: Resizes the volume.
 ms.assetid: 9676FA96-D1FA-4435-87DE-72703B54D538
 keywords:

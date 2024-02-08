@@ -1,5 +1,5 @@
 ---
-title: parameter element
+title: Parameter Element
 description: The optional parameter element specifies a text string that is substituted for a percentage ( ) character in the text of an event notification message.
 keywords: ["parameter element Print Devices"]
 topic_type:

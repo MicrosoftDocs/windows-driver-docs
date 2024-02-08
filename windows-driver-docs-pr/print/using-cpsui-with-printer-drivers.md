@@ -1,5 +1,5 @@
 ---
-title: Use CPSUI with printer drivers
+title: Use CPSUI with Printer Drivers
 description: Provides information about how to use Using CPSUI with printer drivers.
 keywords:
 - Common Property Sheet User Interface WDK print, displaying property sheet pages

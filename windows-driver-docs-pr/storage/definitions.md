@@ -1,5 +1,5 @@
 ---
-title: Storage silo definitions
+title: Storage Silo Definitions
 description: Definitions
 ms.date: 06/15/2023
 ---

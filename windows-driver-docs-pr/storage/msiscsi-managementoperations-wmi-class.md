@@ -1,5 +1,5 @@
 ---
-title: MSiSCSI\_ManagementOperations WMI Class
+title: MSiSCSI_ManagementOperations WMI Class
 description: MSiSCSI\_ManagementOperations WMI Class
 ms.date: 10/17/2018
 ---

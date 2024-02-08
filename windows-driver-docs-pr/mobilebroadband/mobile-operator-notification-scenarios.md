@@ -1,5 +1,5 @@
 ---
-title: Mobile operator notification scenarios
+title: Mobile Operator Notification Scenarios
 description: Mobile operator notification scenarios
 ms.date: 04/20/2017
 ---

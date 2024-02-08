@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StorageSubSystemToReplicaPeer class
+title: MSFT_StorageSubSystemToReplicaPeer Class
 description: Association between an MSFT\_StorageSubSystem and MSFT\_ReplicaPeer.
 ms.assetid: F0DA41D9-7EFE-4526-918A-183110D1E309
 keywords:

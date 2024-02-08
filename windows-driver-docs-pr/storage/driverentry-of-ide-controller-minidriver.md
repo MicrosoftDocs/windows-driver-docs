@@ -1,5 +1,5 @@
 ---
-title: DriverEntry of IDE Controller Minidriver function
+title: DriverEntry of IDE Controller Minidriver Function
 description: DriverEntry initializes the minidriver.
 keywords: ["DriverEntry function Storage Devices"]
 topic_type:

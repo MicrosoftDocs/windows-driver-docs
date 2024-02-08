@@ -1,5 +1,5 @@
 ---
-title: ISNMP GetAsByte method
+title: ISNMP GetAsByte Method
 description: The GetAsByte method enables an ASP Web page to get the value identified by an SNMP OID and to convert the value to an unsigned integer.
 MS-HAID:
 - 'webfnc_915155f7-8444-4824-88be-808f10a9ff8e.xml'

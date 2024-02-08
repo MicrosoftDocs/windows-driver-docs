@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_TOPOLOGY\_NAME
+title: KSPROPERTY_TOPOLOGY_NAME
 description: The KSPROPERTY\_TOPOLOGY\_NAME property provides the localized Unicode string name of the node.
 keywords: ["KSPROPERTY_TOPOLOGY_NAME Streaming Media Devices"]
 topic_type:

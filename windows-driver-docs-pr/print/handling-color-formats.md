@@ -1,5 +1,5 @@
 ---
-title: Handling color formats
+title: Handling Color Formats
 description: Handling color formats
 keywords:
 - Unidrv, color formats

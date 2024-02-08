@@ -1,5 +1,5 @@
 ---
-title: Font cartridges
+title: Font Cartridges
 description: Font cartridges
 keywords:
 - printer font descriptions WDK Unidrv , cartridges

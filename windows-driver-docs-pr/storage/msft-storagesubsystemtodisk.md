@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StorageSubSystemToDisk class
+title: MSFT_StorageSubSystemToDisk Class
 description: Association between MSFT\_StorageSubSystem and MSFT\_Disk.
 ms.assetid: 3028CC6E-0F50-4E50-AE91-0ACD063CE21C
 keywords:

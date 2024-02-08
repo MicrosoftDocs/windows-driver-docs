@@ -1,5 +1,5 @@
 ---
-title: Using Files In A Driver
+title: Using Files in a Driver
 description: Using Files In A Driver
 keywords: ["files WDK kernel", "file objects WDK kernel", "objects WDK file objects", "file handles WDK kernel", "handle to file WDK kernel", "reading data from files", "writing data to files", "reading metadata for file", "writing metadata for file", "driver file objects WDK kernel", "multiple file objects WDK kernel", "kernel-mode drivers WDK , files"]
 ms.date: 06/16/2017

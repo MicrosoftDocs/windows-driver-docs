@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_STREAM\_RATECAPABILITY
+title: KSPROPERTY_STREAM_RATECAPABILITY
 description: The KSPROPERTY\_STREAM\_RATECAPABILITY property allows a graph manager to query all connection points involved in the flow of a particular stream (obtained through KSPROPERTY\_PIN\_DATAROUTING) for their capability in adjusting a requested rate to the nominal rate.
 keywords: ["KSPROPERTY_STREAM_RATECAPABILITY Streaming Media Devices"]
 topic_type:

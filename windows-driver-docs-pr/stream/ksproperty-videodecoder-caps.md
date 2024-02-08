@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_VIDEODECODER\_CAPS
+title: KSPROPERTY_VIDEODECODER_CAPS
 description: The KSPROPERTY\_VIDEODECODER\_CAPS property describes the basic capabilities of a video decoder. This property must be implemented.
 keywords: ["KSPROPERTY_VIDEODECODER_CAPS Streaming Media Devices"]
 topic_type:

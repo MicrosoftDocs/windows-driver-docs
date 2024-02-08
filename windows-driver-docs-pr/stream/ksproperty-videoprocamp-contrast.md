@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_VIDEOPROCAMP\_CONTRAST
+title: KSPROPERTY_VIDEOPROCAMP_CONTRAST
 description: The KSPROPERTY\_VIDEOPROCAMP\_CONTRAST property controls a camera's contrast (luma gain) setting. This property is optional.
 keywords: ["KSPROPERTY_VIDEOPROCAMP_CONTRAST Streaming Media Devices"]
 topic_type:

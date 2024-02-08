@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StorageDepartureEvent class
+title: MSFT_StorageDepartureEvent Class
 description: Represents a storage departure event. Storage departure events are used whenever a storage object is removed or deleted.
 ms.assetid: BE1BD4FF-A99D-4439-BFCA-F43E81E36306
 keywords:

@@ -1,5 +1,5 @@
 ---
-title: SM\_SetBindingSupport function
+title: SM_SetBindingSupport Function
 description: The SM\_SetBindingSupport method sets the binding capabilities for the indicated port.
 keywords: ["SM_SetBindingSupport function Storage Devices"]
 topic_type:

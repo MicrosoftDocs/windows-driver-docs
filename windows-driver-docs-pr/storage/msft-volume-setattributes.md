@@ -1,5 +1,5 @@
 ---
-title: SetAttributes method of the MSFT\_Volume class
+title: SetAttributes Method of the MSFT_Volume Class
 description: Sets or changes the volume attributes.
 ms.assetid: 526F2E01-6E34-4891-ACF9-A8A87FDF0271
 keywords:

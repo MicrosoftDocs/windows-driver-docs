@@ -1,5 +1,5 @@
 ---
-title: MSiSCSI\_InitiatorInstanceFailureEvent WMI Class
+title: MSiSCSI_InitiatorInstanceFailureEvent WMI Class
 description: MSiSCSI\_InitiatorInstanceFailureEvent WMI Class
 ms.date: 10/17/2018
 ---

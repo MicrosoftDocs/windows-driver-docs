@@ -1,5 +1,5 @@
 ---
-title: Planning your desktop COSA/APN database submission
+title: Planning your Desktop COSA/APN Database Submission
 description: Planning your desktop COSA/APN database submission
 ms.date: 01/02/2024
 author: mhopkins-msft

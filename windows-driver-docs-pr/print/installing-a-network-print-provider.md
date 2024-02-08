@@ -1,5 +1,5 @@
 ---
-title: Install a network print provider
+title: Install a Network Print Provider
 description: Provides information about how to install a network print provider.
 keywords:
 - print providers WDK , installing

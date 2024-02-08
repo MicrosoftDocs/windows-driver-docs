@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StorageAlertEvent class
+title: MSFT_StorageAlertEvent Class
 description: Represents a storage alert event.
 ms.assetid: 3DB2E42D-28BA-418C-8494-1C6FDCF44B98
 keywords:

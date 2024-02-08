@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PHOTOTRIGGERTIME
+title: KSPROPERTY_CAMERACONTROL_EXTENDED_PHOTOTRIGGERTIME
 description: This property controls the trigger time for the camera driver. The trigger time is used in determining a reference frame for a photo sequence.
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_PHOTOTRIGGERTIME Streaming Media Devices"]
 topic_type:

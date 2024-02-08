@@ -1,5 +1,5 @@
 ---
-title: PRINTERBIDISCHEMAELEMENTTYPE enumeration
+title: PRINTERBIDISCHEMAELEMENTTYPE Enumeration
 description: Specifies the possible values of data transferred in a bidi operation.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

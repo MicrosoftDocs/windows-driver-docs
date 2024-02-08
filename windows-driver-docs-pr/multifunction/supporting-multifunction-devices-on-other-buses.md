@@ -1,5 +1,5 @@
 ---
-title: Supporting Multifunction Devices On Other Buses
+title: Supporting Multifunction Devices on Other Buses
 description: Provides information about supporting multifunction devices on other buses.
 keywords:
 - multifunction devices WDK , other buses

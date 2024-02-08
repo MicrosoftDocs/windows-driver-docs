@@ -1,5 +1,5 @@
 ---
-title: SendRLS function
+title: SendRLS Function
 description: The SendRLS WMI method sends a read link error status block (RLS) through the indicated local port to the indicated remote port to retrieve a link error status block associated with the remote port.
 keywords: ["SendRLS function Storage Devices"]
 topic_type:

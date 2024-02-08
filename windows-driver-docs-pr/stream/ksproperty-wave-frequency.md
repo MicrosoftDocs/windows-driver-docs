@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_WAVE\_FREQUENCY
+title: KSPROPERTY_WAVE_FREQUENCY
 description: The KSPROPERTY\_WAVE\_FREQUENCY property specifies a wave device's frequency setting.
 keywords: ["KSPROPERTY_WAVE_FREQUENCY Streaming Media Devices"]
 topic_type:

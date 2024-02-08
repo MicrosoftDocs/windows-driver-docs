@@ -1,5 +1,5 @@
 ---
-title: IPrinterBidiSchemaResponses AddBlob method
+title: IPrinterBidiSchemaResponses AddBlob Method
 description: The AddBlob method adds a new response of type BIDI_BLOB to the collection.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

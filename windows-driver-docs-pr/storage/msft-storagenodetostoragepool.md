@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StorageNodeToStoragePool class
+title: MSFT_StorageNodeToStoragePool Class
 description: Association between a storage node and a storage pool.
 ms.assetid: 701C6089-46CB-4A26-B5A7-83316DFF49B5
 keywords:

@@ -1,5 +1,5 @@
 ---
-title: asyncPrintUIRequest element
+title: asyncPrintUIRequest Element
 description: The required asyncPrintUIRequest element describes a request issued by the printer driver to create a message on a client computer.
 keywords: ["asyncPrintUIRequest element Print Devices"]
 topic_type:

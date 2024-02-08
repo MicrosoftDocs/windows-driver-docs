@@ -1,5 +1,5 @@
 ---
-title: Get method of the MSFT\_StorageSetting class
+title: Get Method of the MSFT_StorageSetting Class
 description: Retrieves the current state of all storage settings for the computer.
 ms.assetid: 044A260C-65A0-462B-8C2D-1553E17493D0
 keywords:

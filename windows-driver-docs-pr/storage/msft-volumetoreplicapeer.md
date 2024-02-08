@@ -1,5 +1,5 @@
 ---
-title: MSFT\_VolumeToReplicaPeer class
+title: MSFT_VolumeToReplicaPeer Class
 description: Association between MSFT\_Volume and MSFT\_ReplicaPeer .
 ms.assetid: FB7BF33C-21F1-4DAB-B45E-F2126ACC10BF
 keywords:

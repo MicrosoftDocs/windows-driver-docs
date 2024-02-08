@@ -1,5 +1,5 @@
 ---
-title: V4 printer driver
+title: V4 Printer Driver
 description: The v4 printer driver model was designed to address known issues with the version 3 driver model, and thus improve the quality of the experience that users have with their printers.
 ms.date: 12/14/2023
 ---

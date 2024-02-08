@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_VPCONFIG\_SURFACEPARAMS
+title: KSPROPERTY_VPCONFIG_SURFACEPARAMS
 description: The KSPROPERTY\_VPCONFIG\_SURFACEPARAMS property specifies the video port surface settings..
 keywords: ["KSPROPERTY_VPCONFIG_SURFACEPARAMS Streaming Media Devices"]
 topic_type:

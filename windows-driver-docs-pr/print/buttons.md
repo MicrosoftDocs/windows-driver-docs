@@ -1,5 +1,5 @@
 ---
-title: buttons element
+title: Buttons Element
 description: The required buttons element specifies one or more buttons that are displayed in the event notification message box on the client computer.
 keywords: ["buttons element Print Devices"]
 topic_type:

@@ -1,5 +1,5 @@
 ---
-title: MPIO\_DSM\_Path\_V2 WMI Class
+title: MPIO_DSM_Path_V2 WMI Class
 description: MPIO\_DSM\_Path\_V2 WMI Class
 ms.date: 10/17/2018
 ---

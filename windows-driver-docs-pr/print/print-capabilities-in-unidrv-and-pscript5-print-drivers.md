@@ -1,5 +1,5 @@
 ---
-title: Print capabilities in Unidrv and PScript5 print drivers
+title: Print Capabilities in Unidrv and PScript5 Print Drivers
 description: Provides information about print capabilities in Unidrv and PScript5 print drivers.
 keywords:
 - Print Capabilities WDK, Unidrv

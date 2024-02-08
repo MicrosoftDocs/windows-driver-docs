@@ -1,5 +1,5 @@
 ---
-title: SRB\_CLOSE\_DEVICE\_INSTANCE
+title: SRB_CLOSE_DEVICE_INSTANCE
 description: SRB\_CLOSE\_DEVICE\_INSTANCE
 keywords: ["SRB_CLOSE_DEVICE_INSTANCE Streaming Media Devices"]
 topic_type:

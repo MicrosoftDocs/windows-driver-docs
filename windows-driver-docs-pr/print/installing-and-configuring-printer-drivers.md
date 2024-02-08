@@ -1,5 +1,5 @@
 ---
-title: Install and configure printer drivers
+title: Install and Configure Printer Drivers
 description: Describes installation and configuration of printer drivers.
 keywords:
 - install drivers WDK printer

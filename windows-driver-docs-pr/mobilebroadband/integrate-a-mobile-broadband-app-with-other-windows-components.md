@@ -1,5 +1,5 @@
 ---
-title: Integrate a mobile broadband app with other Windows components
+title: Integrate a Mobile Broadband App with Other Windows Components
 description: Integrate a mobile broadband app with other Windows components
 ms.date: 10/06/2023
 ---

@@ -1,5 +1,5 @@
 ---
-title: GetSupportedGroupCopyStates method of the MSFT\_ReplicationCapabilities class
+title: GetSupportedGroupCopyStates Method of the MSFT_ReplicationCapabilities Class
 description: Returns, for a given ReplicationType, the supported replication group copy states.
 ms.assetid: 47DA6025-D1F6-4840-883E-EBA63C5E37D0
 keywords:

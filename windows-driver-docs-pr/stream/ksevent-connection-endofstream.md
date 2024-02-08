@@ -1,5 +1,5 @@
 ---
-title: KSEVENT\_CONNECTION\_ENDOFSTREAM
+title: KSEVENT_CONNECTION_ENDOFSTREAM
 description: The KSEVENT\_CONNECTION\_ENDOFSTREAM event allows a client to receive notification of an end of stream event.
 keywords: ["KSEVENT_CONNECTION_ENDOFSTREAM Streaming Media Devices"]
 topic_type:

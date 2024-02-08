@@ -1,5 +1,5 @@
 ---
-title: Hide method of the MSFT\_VirtualDisk class
+title: Hide Method of the MSFT_VirtualDisk Class
 description: Hides a virtual disk from an initiator.
 ms.assetid: E47716E5-9397-4AAB-B33F-CB39188A683A
 keywords:

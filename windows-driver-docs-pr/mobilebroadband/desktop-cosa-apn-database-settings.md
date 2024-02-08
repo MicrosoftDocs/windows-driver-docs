@@ -1,5 +1,5 @@
 ---
-title: Desktop COSA/APN database settings
+title: Desktop COSA/APN Database Settings
 description: Desktop COSA/APN database settings
 ms.date: 01/02/2024
 author: mhopkins-msft

@@ -1,5 +1,5 @@
 ---
-title:  RtlZeroVolatileMemory function (wdm.h)
+title:  RtlZeroVolatileMemory Function (Wdm.H)
 ms.date: 01/04/2024
 description: This article describes the RtlZeroVolatileMemory function (wdm.h).
 ---

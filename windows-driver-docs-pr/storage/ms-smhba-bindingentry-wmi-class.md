@@ -1,5 +1,5 @@
 ---
-title: MS\_SMHBA\_BINDINGENTRY WMI Class
+title: MS_SMHBA_BINDINGENTRY WMI Class
 description: MS\_SMHBA\_BINDINGENTRY WMI Class
 ms.date: 10/17/2018
 ---

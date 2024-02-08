@@ -1,5 +1,5 @@
 ---
-title: Iasphelp getMaximumResolution method
+title: Iasphelp getMaximumResolution Method
 description: The MaximumResolution property enables an ASP Web page to determine a printer's maximum resolution.
 MS-HAID:
 - 'webfnc156e8337-489a-44e6-9c81-0a8f6dd3aa08.xml'

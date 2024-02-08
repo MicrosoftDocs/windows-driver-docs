@@ -1,5 +1,5 @@
 ---
-title: Print a print job
+title: Print a Print Job
 description: Provides information about how to print a print job.
 keywords:
 - print monitors WDK, printing print jobs

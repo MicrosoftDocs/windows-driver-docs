@@ -1,5 +1,5 @@
 ---
-title: Handling an IRP_MN_STOP_DEVICE Request (Windows 2000 and later)
+title: Handling an IRP_MN_STOP_DEVICE Request (Windows 2000 and Later)
 description: Handling an IRP_MN_STOP_DEVICE Request (Windows 2000 and later)
 keywords: ["IRP_MN_STOP_DEVICE"]
 ms.date: 06/16/2017

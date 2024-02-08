@@ -1,5 +1,5 @@
 ---
-title: CreateReplicationGroup method of the MSFT\_StorageSubSystem class
+title: CreateReplicationGroup Method of the MSFT_StorageSubSystem Class
 description: Creates a replication group on a storage subsystem.
 ms.assetid: B6B5CCB3-1B4B-4323-8BE9-145112A5FD70
 keywords:

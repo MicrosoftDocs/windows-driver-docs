@@ -1,5 +1,5 @@
 ---
-title: Iasphelp get_DriverName method
+title: Iasphelp get_DriverName Method
 description: The DriverName property enables an ASP Web page to obtain the name of the printer driver.
 MS-HAID:
 - 'webfnc_99826bd3-a4fb-41b4-9f05-10598c4fcc01.xml'

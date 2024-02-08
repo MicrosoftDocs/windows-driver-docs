@@ -1,5 +1,5 @@
 ---
-title: IPrinterScriptUsbJobContext interface
+title: IPrinterScriptUsbJobContext Interface
 description: The IPrinterScriptUsbJobContext interface is passed as a parameter to the startPrintJob JavaScript function.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

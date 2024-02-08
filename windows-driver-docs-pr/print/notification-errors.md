@@ -1,5 +1,5 @@
 ---
-title: Notification errors
+title: Notification Errors
 description: Notification errors
 keywords:
 - spooler notification WDK print , errors

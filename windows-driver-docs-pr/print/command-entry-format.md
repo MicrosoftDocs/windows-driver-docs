@@ -1,5 +1,5 @@
 ---
-title: Command entry format
+title: Command Entry Format
 description: Command entry format
 keywords:
 - printer commands WDK Unidrv , entry format

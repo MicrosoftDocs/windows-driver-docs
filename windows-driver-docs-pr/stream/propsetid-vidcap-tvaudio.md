@@ -1,5 +1,5 @@
 ---
-title: PROPSETID\_VIDCAP\_TVAUDIO
+title: PROPSETID_VIDCAP_TVAUDIO
 description: PROPSETID\_VIDCAP\_TVAUDIO
 ms.date: 11/28/2017
 ---

@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_STREAM\_ALLOCATOR
+title: KSPROPERTY_STREAM_ALLOCATOR
 description: The KSPROPERTY\_STREAM\_ALLOCATOR property is an optional property that should be implemented if the pin allocates stream buffers or can provide an allocator
 keywords: ["KSPROPERTY_STREAM_ALLOCATOR Streaming Media Devices"]
 topic_type:

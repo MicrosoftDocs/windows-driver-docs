@@ -1,5 +1,5 @@
 ---
-title: SetChapForPhysicalPort method (Windows Drivers)
+title: SetChapForPhysicalPort Method (Windows Drivers)
 description: Learn more about the SetChapForPhysicalPort method.
 ms.date: 10/14/2022
 ---

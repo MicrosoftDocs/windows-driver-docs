@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_VPCONFIG\_SETCONNECTINFO
+title: KSPROPERTY_VPCONFIG_SETCONNECTINFO
 description: The KSPROPERTY\_VPCONFIG\_SETCONNECTINFO property sets the video port configuration with user-defined connection information. It is a pointer to an array of DDVIDEOPORTCONNECT structures as returned by the KSPROPERTY\_VPCONFIG\_GETCONNECTINFO property.
 keywords: ["KSPROPERTY_VPCONFIG_SETCONNECTINFO Streaming Media Devices"]
 topic_type:

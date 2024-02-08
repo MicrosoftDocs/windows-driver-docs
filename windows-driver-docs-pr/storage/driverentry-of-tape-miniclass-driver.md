@@ -1,5 +1,5 @@
 ---
-title: DriverEntry of Tape Miniclass Driver routine
+title: DriverEntry of Tape Miniclass Driver Routine
 description: DriverEntry initializes a tape miniclass driver. This routine is required.
 keywords: ["DriverEntry routine Storage Devices"]
 topic_type:

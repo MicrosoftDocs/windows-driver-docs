@@ -1,5 +1,5 @@
 ---
-title: RemovePersistentEntry function
+title: RemovePersistentEntry Function
 description: The RemovePersistentEntry method removes a binding from the list of bindings associated with the indicated port.
 keywords: ["RemovePersistentEntry function Storage Devices"]
 topic_type:
