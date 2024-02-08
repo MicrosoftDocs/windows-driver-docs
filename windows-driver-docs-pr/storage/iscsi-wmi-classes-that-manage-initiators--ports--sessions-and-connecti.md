@@ -1,5 +1,5 @@
 ---
-title: iSCSI WMI Classes That Manage Initiators, Ports, Sessions and Connections
+title: iSCSI WMI Classes that Manage Initiators, Ports, Sessions and Connections
 description: iSCSI WMI Classes That Manage Initiators, Ports, Sessions and Connections
 ms.date: 10/17/2018
 ---

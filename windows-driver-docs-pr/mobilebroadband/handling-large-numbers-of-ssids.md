@@ -1,5 +1,5 @@
 ---
-title: Handling large numbers of SSIDs
+title: Handling Large Numbers of SSIDs
 description: Handling large numbers of SSIDs
 ms.date: 04/20/2017
 ---

@@ -1,5 +1,5 @@
 ---
-title: Plan purchase
+title: Plan Purchase
 description: Plan purchase
 ms.date: 10/06/2023
 ---

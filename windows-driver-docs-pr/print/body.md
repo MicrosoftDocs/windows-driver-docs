@@ -1,5 +1,5 @@
 ---
-title: body element
+title: Body Element
 description: The required body element provides text that is displayed in the event notification message.
 keywords: ["body element Print Devices"]
 topic_type:

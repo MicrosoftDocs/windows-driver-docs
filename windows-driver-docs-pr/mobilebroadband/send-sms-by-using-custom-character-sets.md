@@ -1,5 +1,5 @@
 ---
-title: Send SMS by using custom character sets
+title: Send SMS by Using Custom Character Sets
 description: Send SMS by using custom character sets
 ms.date: 04/20/2017
 ---

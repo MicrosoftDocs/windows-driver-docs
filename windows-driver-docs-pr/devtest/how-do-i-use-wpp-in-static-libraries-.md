@@ -1,5 +1,5 @@
 ---
-title: How do I use WPP in static libraries
+title: How do I Use WPP in Static Libraries
 description: How do I use WPP in static libraries
 ms.date: 04/20/2017
 ---

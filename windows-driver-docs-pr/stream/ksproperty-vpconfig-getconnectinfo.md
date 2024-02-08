@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_VPCONFIG\_GETCONNECTINFO
+title: KSPROPERTY_VPCONFIG_GETCONNECTINFO
 description: The KSPROPERTY\_VPCONFIG\_GETCONNECTINFO property retrieves all possible video port configurations.
 keywords: ["KSPROPERTY_VPCONFIG_GETCONNECTINFO Streaming Media Devices"]
 topic_type:

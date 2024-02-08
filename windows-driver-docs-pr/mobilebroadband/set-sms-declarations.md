@@ -1,5 +1,5 @@
 ---
-title: Set SMS declarations
+title: Set SMS Declarations
 description: Set SMS declarations
 ms.date: 04/20/2017
 ---

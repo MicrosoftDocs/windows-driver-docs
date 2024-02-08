@@ -1,5 +1,5 @@
 ---
-title: Group parent
+title: Group Parent
 description: Provides information about how property sheet pages can be grouped by assigning them to a group parent.
 keywords:
 - group parents WDK print

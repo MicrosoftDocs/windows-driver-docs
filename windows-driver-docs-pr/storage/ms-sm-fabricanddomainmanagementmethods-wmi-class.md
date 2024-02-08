@@ -1,5 +1,5 @@
 ---
-title: MS\_SM\_FabricAndDomainManagementMethods WMI Class
+title: MS_SM_FabricAndDomainManagementMethods WMI Class
 description: MS\_SM\_FabricAndDomainManagementMethods WMI Class
 ms.date: 10/17/2018
 ---

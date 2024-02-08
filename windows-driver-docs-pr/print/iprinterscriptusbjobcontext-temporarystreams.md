@@ -1,5 +1,5 @@
 ---
-title: IPrinterScriptUsbJobContext TemporaryStreams method
+title: IPrinterScriptUsbJobContext TemporaryStreams Method
 description: Returns an array of IPrinterScriptableSequentialStream interfaces for the persistent data streams used by the IHV JavaScript functions for the current job.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

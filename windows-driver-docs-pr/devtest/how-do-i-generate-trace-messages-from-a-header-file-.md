@@ -1,5 +1,5 @@
 ---
-title: How do I generate trace messages from a header file
+title: How do I Generate Trace Messages from a Header File
 description: How do I generate trace messages from a header file
 ms.date: 04/20/2017
 ---

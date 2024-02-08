@@ -1,5 +1,5 @@
 ---
-title: SetAttributes method of the MSFT\_VirtualDisk class
+title: SetAttributes Method of the MSFT_VirtualDisk Class
 description: Sets or updates various attributes for the virtual disk.
 ms.assetid: AC57C471-7424-4F01-9C1E-44E523BBC8F2
 keywords:

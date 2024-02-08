@@ -1,5 +1,5 @@
 ---
-title: KSPROPSETID\_TSRateChange
+title: KSPROPSETID_TSRateChange
 description: KSPROPSETID\_TSRateChange
 ms.date: 11/28/2017
 ---

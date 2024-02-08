@@ -1,5 +1,5 @@
 ---
-title: Windows kernel global variables
+title: Windows Kernel Global Variables
 description: Kernel global variables.
 ms.date: 10/17/2018
 ---

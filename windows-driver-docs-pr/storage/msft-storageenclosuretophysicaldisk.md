@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StorageEnclosureToPhysicalDisk class
+title: MSFT_StorageEnclosureToPhysicalDisk Class
 description: Association between StorageEnclosure and PhysicalDisk.
 ms.assetid: B2FDB260-CD0D-4481-B002-572D58D0CF84
 keywords:

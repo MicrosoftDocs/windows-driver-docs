@@ -1,5 +1,5 @@
 ---
-title: Specifying Priority Boosts When Completing I/O Requests
+title: Specifying Priority Boosts when Completing I/O Requests
 description: Specifying Priority Boosts When Completing I/O Requests
 keywords:
 - request processing WDK KMDF , priority boosts

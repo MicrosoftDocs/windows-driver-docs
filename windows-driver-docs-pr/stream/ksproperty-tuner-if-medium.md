@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_TUNER\_IF\_MEDIUM
+title: KSPROPERTY_TUNER_IF_MEDIUM
 description: KSPROPERTY\_TUNER\_IF\_MEDIUM describes the medium for the intermediate frequency pin for devices that support digital TV tuning. This property is optional.
 keywords: ["KSPROPERTY_TUNER_IF_MEDIUM Streaming Media Devices"]
 topic_type:

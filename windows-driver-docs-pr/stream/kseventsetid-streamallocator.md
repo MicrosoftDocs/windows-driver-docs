@@ -1,5 +1,5 @@
 ---
-title: KSEVENTSETID\_StreamAllocator
+title: KSEVENTSETID_StreamAllocator
 description: The KSEVENTSETID\_StreamAllocator event set specifies two events.
 keywords: ["KSEVENTSETID_StreamAllocator Streaming Media Devices"]
 topic_type:

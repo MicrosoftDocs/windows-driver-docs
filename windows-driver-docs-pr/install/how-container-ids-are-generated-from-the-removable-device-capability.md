@@ -1,5 +1,5 @@
 ---
-title: How container IDs are generated from removable device capability
+title: How Container IDs are Generated from Removable Device Capability
 description: Describes how container IDs are generated from removable device capability
 ms.date: 04/08/2022
 ---

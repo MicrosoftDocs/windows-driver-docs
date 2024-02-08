@@ -1,5 +1,5 @@
 ---
-title: Adding Constructs to Your GDL File for PPD
+title: Adding Constructs to your GDL File for PPD
 description: Adding Constructs to Your GDL File for PPD
 keywords:
 - constructs WDK printer autoconfig

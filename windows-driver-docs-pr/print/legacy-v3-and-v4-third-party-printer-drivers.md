@@ -1,5 +1,5 @@
 ---
-title: Legacy v3 and v4 third-party printer drivers
+title: Legacy V3 and V4 Third-Party Printer Drivers
 description: This section provides information on designing, testing, and debugging legacy v3 and v4 third-party printer drivers.
 keywords:
 - print devices WDK

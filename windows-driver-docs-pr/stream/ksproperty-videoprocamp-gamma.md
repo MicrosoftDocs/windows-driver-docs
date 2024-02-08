@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_VIDEOPROCAMP\_GAMMA
+title: KSPROPERTY_VIDEOPROCAMP_GAMMA
 description: The KSPROPERTY\_VIDEOPROCAMP\_GAMMA property controls a camera's gamma setting. This property is optional.
 keywords: ["KSPROPERTY_VIDEOPROCAMP_GAMMA Streaming Media Devices"]
 topic_type:

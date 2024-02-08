@@ -1,5 +1,5 @@
 ---
-title: CreateClone method of the MSFT\_VirtualDisk class
+title: CreateClone Method of the MSFT_VirtualDisk Class
 description: Creates a clone of a virtual disk, resulting in a new virtual disk whose data is identical to that of the original virtual disk.
 ms.assetid: A077E942-2A7C-4B81-887E-E77219A4F546
 keywords:

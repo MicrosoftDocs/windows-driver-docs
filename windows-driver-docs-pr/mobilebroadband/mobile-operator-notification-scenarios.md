@@ -1,7 +1,7 @@
 ---
-title: Mobile operator notification scenarios
-description: This topic explains when to use a mobile operator notification with your mobile broadband app.
-ms.date: 10/11/2023
+title: Mobile Operator Notification Scenarios
+description: Mobile operator notification scenarios
+ms.date: 02/08/2024
 ---
 
 # Mobile operator notification scenarios
@@ -20,13 +20,13 @@ The app handles the incoming message as appropriate. Likely responses include an
 
 - Immediately syncing current data usage
 
-- Updating the mobile broadband app’s tile
+- Updating the mobile broadband app's tile
 
 - Retrieving and applying updated operator provisioning XML
 
 - Displaying a notification to the user
 
-If you want to display the message in the app, the background task that is triggered by the [MobileOperatorNotification](mobile-operator-notification-event-technical-details.md) event must read the message contents and store the message contents in the app’s own local data storage. The mobile broadband SMS platform does not maintain a queue of received administrative SMS notifications.
+If you want to display the message in the app, the background task that is triggered by the [MobileOperatorNotification](mobile-operator-notification-event-technical-details.md) event must read the message contents and store the message contents in the app's own local data storage. The mobile broadband SMS platform does not maintain a queue of received administrative SMS notifications.
 
 ### Mobile network operator SMS notifications
 
@@ -50,7 +50,7 @@ In many areas, MNOs are required by regulatory laws to notify a user when the us
 
 1. You enable local data usage notifications by using provisioning metadata.
 
-2. Local data counters estimate that usage on the profile has changed by more than 5% of the user’s data limit since the last update.
+2. Local data counters estimate that usage on the profile has changed by more than 5% of the user's data limit since the last update.
 
 3. The Data Usage and Subscription Manager (DUSM) notifies the System Event Broker to trigger the [MobileOperatorNotification](mobile-operator-notification-event-technical-details.md) event.
 
@@ -72,7 +72,7 @@ In many areas, MNOs are required by regulatory laws to notify a user when the us
 
 ## Data plan expiration and usage reset
 
-The DUSM tracks details about the user’s account or accounts, including the plan expiration date for pre-paid data plans, or the plan usage reset date for post-paid data plans. When the user’s data plan expires, the DUSM notifies the System Event Broker to trigger the [MobileOperatorNotification](mobile-operator-notification-event-technical-details.md) event. The mobile broadband app can handle the event by displaying a toast notification and tile update to the user, informing them that their plan has expired or directing them to renew their service.
+The DUSM tracks details about the user's account or accounts, including the plan expiration date for pre-paid data plans, or the plan usage reset date for post-paid data plans. When the user's data plan expires, the DUSM notifies the System Event Broker to trigger the [MobileOperatorNotification](mobile-operator-notification-event-technical-details.md) event. The mobile broadband app can handle the event by displaying a toast notification and tile update to the user, informing them that their plan has expired or directing them to renew their service.
 
 In the case of a post-paid data plan, the DUSM will reset the plan data usage to zero on a particular date, such as the first day of the month. When this occurs, the [MobileOperatorNotification](mobile-operator-notification-event-technical-details.md) event is triggered and the app can notify the user of their updated data usage.
 

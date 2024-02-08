@@ -1,6 +1,11 @@
 ---
+<<<<<<< HEAD:windows-driver-docs-pr/mobilebroadband/desktop-cosa-database-settings.md
 title: Desktop COSA database settings
 description: Desktop COSA database settings
+=======
+title: Desktop COSA/APN Database Settings
+description: Desktop COSA/APN database settings
+>>>>>>> main:windows-driver-docs-pr/mobilebroadband/desktop-cosa-apn-database-settings.md
 ms.date: 01/02/2024
 author: mhopkins-msft
 ms.author: mhopkins

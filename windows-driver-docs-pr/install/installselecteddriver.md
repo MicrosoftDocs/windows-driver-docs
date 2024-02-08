@@ -1,5 +1,5 @@
 ---
-title: InstallSelectedDriver function
+title: InstallSelectedDriver Function
 description: The InstallSelectedDriver function installs a selected driver on a selected device.
 keywords: ["InstallSelectedDriver function Device and Driver Installation"]
 topic_type:

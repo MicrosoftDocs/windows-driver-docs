@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_VIDEOPROCAMP\_HUE
+title: KSPROPERTY_VIDEOPROCAMP_HUE
 description: The KSPROPERTY\_VIDEOPROCAMP\_HUE property controls the hue setting of the camera. This property is optional.
 keywords: ["KSPROPERTY_VIDEOPROCAMP_HUE Streaming Media Devices"]
 topic_type:

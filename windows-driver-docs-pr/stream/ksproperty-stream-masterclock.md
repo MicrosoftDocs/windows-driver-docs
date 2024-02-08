@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_STREAM\_MASTERCLOCK
+title: KSPROPERTY_STREAM_MASTERCLOCK
 description: The KSPROPERTY\_STREAM\_MASTERCLOCK property is an optional property that should be implemented if the pin uses or produces a master clock that can be used for synchronization.
 keywords: ["KSPROPERTY_STREAM_MASTERCLOCK Streaming Media Devices"]
 topic_type:

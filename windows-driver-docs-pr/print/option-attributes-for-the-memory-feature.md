@@ -1,5 +1,5 @@
 ---
-title: Option attributes for the Memory feature
+title: Option Attributes for the Memory Feature
 description: Option attributes for the Memory feature
 keywords:
 - Memory Feature WDK print

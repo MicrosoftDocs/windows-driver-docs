@@ -1,5 +1,5 @@
 ---
-title: Windows automatically segments long messages
+title: Windows Automatically Segments Long Messages
 description: Windows automatically segments long messages
 ms.date: 04/20/2017
 ---

@@ -1,5 +1,5 @@
 ---
-title: Introduction to print providers
+title: Introduction to Print Providers
 description: Provides an introduction to print providers.
 keywords:
 - print providers WDK, about print providers

@@ -1,5 +1,5 @@
 ---
-title: IPrinterScriptUsbJobContextReturnCodes Success method
+title: IPrinterScriptUsbJobContextReturnCodes Success Method
 description: Returns a value of zero (0) to inform USBMon that the function call completed successfully.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

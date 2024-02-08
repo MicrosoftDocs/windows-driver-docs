@@ -1,5 +1,5 @@
 ---
-title: RAW data type
+title: RAW Data Type
 description: Provides information about the RAW data type.
 keywords:
 - print processors WDK, data types

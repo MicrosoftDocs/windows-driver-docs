@@ -1,5 +1,5 @@
 ---
-title: PairTool command syntax
+title: PairTool Command Syntax
 description: How to run PairTool, including syntax and parameters.
 ms.date: 11/08/2023
 ---

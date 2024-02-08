@@ -1,5 +1,5 @@
 ---
-title: Delete the registry keys of a device
+title: Delete the Registry Keys of a Device
 description: Provides information about how to delete the registry keys of a device.
 keywords:
 - registry WDK device installations, delete a device's registry keys

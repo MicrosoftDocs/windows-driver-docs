@@ -1,5 +1,5 @@
 ---
-title: Peronal hotspot communication channels
+title: Peronal Hotspot Communication Channels
 description: Peronal hotspot communication channels
 ms.date: 10/05/2023
 ---

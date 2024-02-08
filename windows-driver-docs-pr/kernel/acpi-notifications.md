@@ -1,5 +1,5 @@
 ---
-title: ACPI notifications
+title: ACPI Notifications
 description: Each ACPI notification that the PEP's AcceptAcpiNotification callback routine receives is accompanied by a Notification parameter that indicates the type of notification, and a Data parameter.
 keywords: [AcceptAcpiNotification]
 ms.date: 01/17/2018

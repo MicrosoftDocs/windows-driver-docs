@@ -1,5 +1,5 @@
 ---
-title: Writing an INF file for a Smart Card Reader Driver
+title: Writing an INF File for a Smart Card Reader Driver
 description: Writing an INF file for a Smart Card Reader Driver
 keywords:
 - smart card drivers WDK , writing INF file

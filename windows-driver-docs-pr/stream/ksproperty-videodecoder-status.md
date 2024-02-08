@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_VIDEODECODER\_STATUS
+title: KSPROPERTY_VIDEODECODER_STATUS
 description: The KSPROPERTY\_VIDEDECODER\_STATUS property retrieves status information from the video decoder. This property must be implemented.
 keywords: ["KSPROPERTY_VIDEODECODER_STATUS Streaming Media Devices"]
 topic_type:

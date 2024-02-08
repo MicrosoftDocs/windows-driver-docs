@@ -1,5 +1,5 @@
 ---
-title: Color attributes
+title: Color Attributes
 description: Provides information about color attributes.
 keywords:
 - color attributes WDK Unidrv

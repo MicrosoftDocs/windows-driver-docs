@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StorageProvider class
+title: MSFT_StorageProvider Class
 description: Represents a storage management provider (SMP) package that manages a storage subsystem.
 ms.assetid: afafd4d5-c0c1-4461-814d-bf00de403b3f
 keywords:

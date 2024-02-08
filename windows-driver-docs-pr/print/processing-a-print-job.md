@@ -1,5 +1,5 @@
 ---
-title: Process a print job
+title: Process a Print Job
 description: Provides information about how to process a print job.
 keywords:
 - print processors WDK , print job processing

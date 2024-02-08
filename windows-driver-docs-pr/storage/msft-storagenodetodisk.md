@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StorageNodeToDisk class
+title: MSFT_StorageNodeToDisk Class
 description: Association between MSFT\_StorageNode and MSFT\_Disk.
 ms.assetid: B892198B-F423-4F6A-8A43-99917D98B78F
 keywords:

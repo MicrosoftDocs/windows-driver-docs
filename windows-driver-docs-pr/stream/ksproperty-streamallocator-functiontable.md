@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_STREAMALLOCATOR\_FUNCTIONTABLE
+title: KSPROPERTY_STREAMALLOCATOR_FUNCTIONTABLE
 description: The KSPROPERTY\_STREAMALLOCATOR\_FUNCTIONTABLE property retrieves the function table of the given allocator.
 keywords: ["KSPROPERTY_STREAMALLOCATOR_FUNCTIONTABLE Streaming Media Devices"]
 topic_type:

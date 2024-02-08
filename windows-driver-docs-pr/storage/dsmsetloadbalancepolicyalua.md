@@ -1,5 +1,5 @@
 ---
-title: DsmSetLoadBalancePolicyALUA function
+title: DsmSetLoadBalancePolicyALUA Function
 description: The DsmSetLoadBalancePolicyALUA method is used to set the DSM ALUA load balance policy.
 keywords: ["DsmSetLoadBalancePolicyALUA function Storage Devices"]
 topic_type:

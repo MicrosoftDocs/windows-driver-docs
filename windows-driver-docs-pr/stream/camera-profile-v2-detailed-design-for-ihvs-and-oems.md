@@ -1,5 +1,5 @@
 ---
-title: Camera Profile V2 detailed design for IHVs and OEMs
+title: Camera Profile V2 Detailed Design for IHVs and OEMs
 description: This article provides information about Camera Profile V2 detailed design for IHVs and OEMs.
 ms.date: 06/08/2023
 ---

@@ -1,5 +1,5 @@
 ---
-title: Print device installation
+title: Print Device Installation
 description: Provides information about initial installation of your port-connected print device, and potential system states when your device is connected for the first time.
 keywords:
 - hot-pluggable bus WDK printer

@@ -12,7 +12,6 @@ api_location:
 api_type:
 - COM
 ms.date: 12/06/2018
-ms.custom: seodec18
 ---
 
 # DXVA\_DeinterlaceContainerDeviceClass::ProcAmpControlQueryRange method
@@ -200,4 +199,3 @@ DXVA_DeinterlaceContainerDeviceClass::ProcAmpControlQueryRange(
 [**DXVA\_VideoDesc**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_videodesc)
 
 [**DXVA\_VideoPropertyRange**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_videopropertyrange)
-

@@ -1,5 +1,5 @@
 ---
-title: Iasphelp get_PaperNames method
+title: Iasphelp get_PaperNames Method
 description: The PaperNames property enables an ASP Web page to obtain a set of strings that name all the paper forms for the printer.
 MS-HAID:
 - 'webfnc_be2b332f-6300-4b3e-9fa7-fd2fd0bdffe5.xml'

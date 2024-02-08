@@ -1,5 +1,5 @@
 ---
-title: MSFT\_ReplicationGroupToReplicaPeer class
+title: MSFT_ReplicationGroupToReplicaPeer Class
 description: Association between replicated groups (MSFT\_ReplicationGroup to MSFT\_ReplicaPeer).
 ms.assetid: 57DC1776-987F-491E-A063-B17824E02496
 keywords:

@@ -1,5 +1,5 @@
 ---
-title: Specify mobile telephone numbers
+title: Specify Mobile Telephone Numbers
 description: Specify mobile telephone numbers
 ms.date: 04/20/2017
 ---

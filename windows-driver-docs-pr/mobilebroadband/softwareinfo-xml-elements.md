@@ -1,5 +1,5 @@
 ---
-title: SoftwareInfo XML elements list
+title: SoftwareInfo XML Elements List
 description: SoftwareInfo XML elements list
 ms.date: 07/05/2019
 ---

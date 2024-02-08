@@ -1,5 +1,5 @@
 ---
-title: ew Keyword for PPD Schema
+title: Ew Keyword for PPD Schema
 description: ew Keyword for PPD Schema
 keywords:
 - root-level keywords WDK printer autoconfiguration

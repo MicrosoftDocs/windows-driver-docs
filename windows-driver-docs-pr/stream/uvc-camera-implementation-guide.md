@@ -1,5 +1,5 @@
 ---
-title: USB Video Class (UVC) camera implementation guide
+title: USB Video Class (UVC) Camera Implementation Guide
 description: Outlines how to expose certain capabilities of a USB Video Class compliant camera to the applications through the inbox driver.
 ms.date: 12/14/2023
 ---

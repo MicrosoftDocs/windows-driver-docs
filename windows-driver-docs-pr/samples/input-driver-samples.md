@@ -1,5 +1,5 @@
 ---
-title: Input driver samples
+title: Input Driver Samples
 description: The input driver samples in this directory provide a starting point for writing a custom driver for your device.
 ms.date: 03/22/2023
 ---

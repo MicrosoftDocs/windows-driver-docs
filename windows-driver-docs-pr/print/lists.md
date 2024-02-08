@@ -1,5 +1,5 @@
 ---
-title: Lists (GPD language)
+title: Lists (GPD Language)
 description: To assign a set of values to an attribute, use the LIST keyword.
 keywords:
 - GPD file entries WDK Unidrv , lists

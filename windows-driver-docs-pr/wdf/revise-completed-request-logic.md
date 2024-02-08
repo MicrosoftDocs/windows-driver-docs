@@ -1,5 +1,5 @@
 ---
-title: Revise Code That Handles Completed Requests
+title: Revise Code that Handles Completed Requests
 description: Revise Code That Handles Completed Requests
 ms.date: 04/20/2017
 ---

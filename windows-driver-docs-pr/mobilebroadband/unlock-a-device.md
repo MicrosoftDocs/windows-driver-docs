@@ -1,5 +1,5 @@
 ---
-title: Unlock a device
+title: Unlock a Device
 description: Unlock a device
 ms.date: 04/20/2017
 ---

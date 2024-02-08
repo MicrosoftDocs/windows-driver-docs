@@ -4,7 +4,6 @@ description: Programming Serial Device Installation
 keywords:
 - serial devices WDK , programming
 ms.date: 06/30/2022
-ms.custom: contperf-fy22q4
 ---
 
 # Programming Serial Device Installation

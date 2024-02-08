@@ -1,5 +1,5 @@
 ---
-title: Option entry format
+title: Option Entry Format
 description: Option entry format
 keywords:
 - printer options WDK Unidrv , entry format

@@ -1,5 +1,5 @@
 ---
-title: SoftwareInfo XML schema overview
+title: SoftwareInfo XML Schema Overview
 description: SoftwareInfo XML schema overview
 ms.date: 10/10/2023
 ---

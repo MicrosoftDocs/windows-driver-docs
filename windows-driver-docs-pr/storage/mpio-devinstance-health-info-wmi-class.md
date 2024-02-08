@@ -1,5 +1,5 @@
 ---
-title: MPIO\_DEVINSTANCE\_HEALTH\_INFO WMI Class
+title: MPIO_DEVINSTANCE_HEALTH_INFO WMI Class
 description: MPIO\_DEVINSTANCE\_HEALTH\_INFO WMI Class
 ms.date: 10/17/2018
 ---

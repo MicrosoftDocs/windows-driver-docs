@@ -8,7 +8,6 @@ keywords:
 - Filter Verifier WDK file system minifilter
 - Verifier utility
 ms.date: 03/10/2022
-ms.custom: contperf-fy22q3
 ---
 
 # Tools for minifilter development and testing

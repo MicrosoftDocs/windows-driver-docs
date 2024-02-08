@@ -1,5 +1,5 @@
 ---
-title: GetBindingCapability function
+title: GetBindingCapability Function
 description: The GetBindingCapability method retrieves the binding capabilities for the indicated port.
 keywords: ["GetBindingCapability function Storage Devices"]
 topic_type:

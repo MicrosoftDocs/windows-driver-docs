@@ -1,5 +1,5 @@
 ---
-title: Captive portals
+title: Captive Portals
 description: A captive portal is a restricted network connection in which all client HTTP requests are redirected to the provider’s web site.
 ms.date: 10/10/2023
 ---

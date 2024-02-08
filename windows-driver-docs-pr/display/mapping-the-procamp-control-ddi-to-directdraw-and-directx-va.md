@@ -5,7 +5,6 @@ keywords:
 - ProcAmp WDK DirectX VA , mapping ProcAmp control DDI
 - mapping ProcAmp control DDI
 ms.date: 12/06/2018
-ms.custom: seodec18
 ---
 
 # Map the ProcAmp Control DDI to DirectDraw and DirectX VA
@@ -19,4 +18,3 @@ The following topics describe how the ProcAmp control DDI is mapped to the motio
 [Calling the ProcAmp Control DDI from a User-Mode Component](calling-the-procamp-control-ddi-from-a-user-mode-component.md)
 
  
-

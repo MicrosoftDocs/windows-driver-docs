@@ -1,5 +1,5 @@
 ---
-title: DEBUG\_OUTCTL\_XXX
+title: DEBUG_OUTCTL_XXX
 description: The DEBUG\_OUTCTL\_XXX constants are used for output control. The constants form a bit field that specifies the current policy of where to send output. The bit field is divided into two sections.
 ms.date: 12/07/2017
 keywords: ["DEBUG_OUTCTL_XXX Windows Debugging"]

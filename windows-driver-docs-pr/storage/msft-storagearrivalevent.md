@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StorageArrivalEvent class
+title: MSFT_StorageArrivalEvent Class
 description: Represents a storage arrival event. Storage arrival events are used whenever a storage object is added or created.
 ms.assetid: 3A8CEFFE-E255-487E-9728-DD9DBD2643C7
 keywords:

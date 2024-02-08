@@ -1,5 +1,5 @@
 ---
-title: SRB\_UNINITIALIZE\_DEVICE
+title: SRB_UNINITIALIZE_DEVICE
 description: SRB\_UNINITIALIZE\_DEVICE
 keywords: ["SRB_UNINITIALIZE_DEVICE Streaming Media Devices"]
 topic_type:

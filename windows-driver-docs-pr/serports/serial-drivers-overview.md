@@ -2,7 +2,6 @@
 title: Previous Versions of Windows -  Serial Controller Drivers Overview
 description: Windows provides driver support for traditional serial controller devices.
 ms.date: 05/04/2022
-ms.custom: contperf-fy22q4
 ---
 
 # Previous Versions of Windows - Serial Controller Drivers Overview

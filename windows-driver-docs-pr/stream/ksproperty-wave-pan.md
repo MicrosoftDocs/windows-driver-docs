@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_WAVE\_PAN
+title: KSPROPERTY_WAVE_PAN
 description: The KSPROPERTY\_WAVE\_PAN property specifies a wave device's pan setting.
 keywords: ["KSPROPERTY_WAVE_PAN Streaming Media Devices"]
 topic_type:

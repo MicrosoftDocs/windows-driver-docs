@@ -1,5 +1,5 @@
 ---
-title: WindowsInfo XML schema overview
+title: WindowsInfo XML Schema Overview
 description: WindowsInfo XML schema overview
 ms.date: 10/10/2023
 ---

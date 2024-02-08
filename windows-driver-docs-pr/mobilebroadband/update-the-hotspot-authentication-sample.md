@@ -1,5 +1,5 @@
 ---
-title: Update the hotspot authentication sample
+title: Update the Hotspot Authentication Sample
 description: Update the hotspot authentication sample
 ms.date: 04/20/2017
 ---

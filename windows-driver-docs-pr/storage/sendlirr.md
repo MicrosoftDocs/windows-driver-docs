@@ -1,5 +1,5 @@
 ---
-title: SendLIRR function
+title: SendLIRR Function
 description: The SendLIRR WMI method sends a link incident record registration (LIRR) command through the indicated local port to the indicated remote port.
 keywords: ["SendLIRR function Storage Devices"]
 topic_type:

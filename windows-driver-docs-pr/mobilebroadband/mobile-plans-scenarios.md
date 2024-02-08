@@ -1,5 +1,5 @@
 ---
-title: Mobile Plans scenarios
+title: Mobile Plans Scenarios
 description: This topic describes the basic end user facing scenarios that mobile operators can implement.
 keywords:
 - Windows Mobile Plans scenarios, Mobile Plans implementation mobile operators

@@ -1,6 +1,6 @@
 ---
+title: Support for Base-Driver Commands (WpdServiceSampleDriver)
 description: Support for base-driver commands (WpdServiceSampleDriver)
-title: Support for base-driver commands (WpdServiceSampleDriver)
 ms.date: 03/03/2023
 ---
 

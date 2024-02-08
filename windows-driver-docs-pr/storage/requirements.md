@@ -1,5 +1,5 @@
 ---
-title: Silo driver system requirements
+title: Silo Driver System Requirements
 description: Describes the requirements that the storage silo driver system meets
 ms.date: 04/20/2017
 ---

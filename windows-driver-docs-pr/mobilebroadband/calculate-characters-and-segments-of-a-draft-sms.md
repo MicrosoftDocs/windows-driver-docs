@@ -1,5 +1,5 @@
 ---
-title: Calculate characters and segments of a draft SMS
+title: Calculate Characters and Segments of a Draft SMS
 description: Calculate characters and segments of a draft SMS
 ms.date: 10/10/2023
 ---

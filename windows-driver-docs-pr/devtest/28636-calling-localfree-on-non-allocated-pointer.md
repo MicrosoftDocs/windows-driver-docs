@@ -1,5 +1,5 @@
 ---
-title: C28636 warning
+title: C28636 Warning
 description: Warning C28636 Calling LocalFree on non-allocated pointer obtained from calls to GetSecurityDescriptorOwner/Group/Dacl/Sacl.
 ms.date: 04/20/2017
 f1_keywords: 

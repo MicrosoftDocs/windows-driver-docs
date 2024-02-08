@@ -1,5 +1,5 @@
 ---
-title: Human interface devices (HID) driver samples
+title: Human Interface Devices (HID) Driver Samples
 description: The driver samples in this directory provide a starting point for writing a custom HID driver for your device.
 ms.date: 03/22/2023
 ---

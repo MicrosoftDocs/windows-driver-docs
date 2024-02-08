@@ -1,5 +1,5 @@
 ---
-title: KSEVENTSETID\_DynamicFormatChange
+title: KSEVENTSETID_DynamicFormatChange
 description: The KSEVENTSETID\_DynamicFormatChange event set includes a single event KSEVENT\_DYNAMIC\_FORMAT\_CHANGE
 keywords: ["KSEVENTSETID_DynamicFormatChange Streaming Media Devices"]
 topic_type:

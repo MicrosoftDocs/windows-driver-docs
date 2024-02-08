@@ -1,5 +1,5 @@
 ---
-title: SetBindingSupport function
+title: SetBindingSupport Function
 description: The SetBindingSupport method sets the binding capabilities that are currently enabled for the indicated port.
 keywords: ["SetBindingSupport function Storage Devices"]
 topic_type:

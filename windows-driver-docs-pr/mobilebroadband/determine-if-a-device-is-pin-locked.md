@@ -1,5 +1,5 @@
 ---
-title: Determine if a device is PIN-locked
+title: Determine if a Device is PIN-locked
 description: Determine if a device is PIN-locked
 ms.date: 04/20/2017
 ---

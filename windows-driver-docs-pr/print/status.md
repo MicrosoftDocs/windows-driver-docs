@@ -1,5 +1,5 @@
 ---
-title: Status property
+title: Status Property
 description: The Status property contains information about the current state of the print device.
 ms.date: 09/08/2021
 ---

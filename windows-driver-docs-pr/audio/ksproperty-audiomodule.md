@@ -1,6 +1,6 @@
 ---
-title: KSPROPERTY\_AUDIOMODULE enumeration
-description: The KSPROPERTY\_AUDIOMODULE enumeration defines constants that are used by audio drivers to communicate information about partner defined audio modules.
+title: KSPROPERTY_AUDIOMODULE Enumeration
+description: The KSPROPERTY_AUDIOMODULE enumeration defines constants that are used by audio drivers to communicate information about partner defined audio modules.
 keywords: ["KSPROPERTY_AUDIOMODULE enumeration Audio Devices"]
 topic_type:
 - apiref

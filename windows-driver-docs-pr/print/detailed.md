@@ -1,5 +1,5 @@
 ---
-title: Detailed property
+title: Detailed Property
 description: A comprehensive description of the current information about the device, including any problem conditions.
 ms.date: 09/03/2021
 ---

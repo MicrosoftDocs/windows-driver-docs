@@ -5,7 +5,6 @@ keywords:
 - TDR (timeout detection and recovery) WDK display drivers
 - TDR (timeout detection and recovery) WDK graphics drivers
 ms.date: 12/06/2023
-ms.custom: contperf-fy21q2
 ---
 
 # Timeout detection and recovery (TDR)

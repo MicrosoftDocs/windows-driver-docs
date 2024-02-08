@@ -1,5 +1,5 @@
 ---
-title: KSEVENT\_STREAMALLOCATOR\_FREEFRAME
+title: KSEVENT_STREAMALLOCATOR_FREEFRAME
 description: The KSEVENT\_STREAMALLOCATOR\_FREEFRAME event can be used to receive notification when a free frame is available for allocation.
 keywords: ["KSEVENT_STREAMALLOCATOR_FREEFRAME Streaming Media Devices"]
 topic_type:

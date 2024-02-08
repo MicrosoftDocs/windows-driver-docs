@@ -1,5 +1,5 @@
 ---
-title: AddPhysicalDisk method of the PS\_StorageCmdlets class
+title: AddPhysicalDisk Method of the PS_StorageCmdlets Class
 description: AddPhysicalDisk method of the PS_StorageCmdlets class.
 ms.assetid: AE4A0CC7-9896-4BDA-918B-BAC2B44ED522
 keywords:

@@ -1,5 +1,5 @@
 ---
-title: Directory Services for printers
+title: Directory Services for Printers
 description: Provides information about Directory Services for printers.
 keywords:
 - Directory Services WDK printer

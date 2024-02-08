@@ -1,5 +1,5 @@
 ---
-title: Build a v4 Printer Driver in Visual Studio
+title: Build a V4 Printer Driver in Visual Studio
 description: Build a v4 printer driver in Microsoft Visual Studio 2019, using the built-in driver templates and the driver development Wizard.
 ms.date: 01/10/2024
 ---

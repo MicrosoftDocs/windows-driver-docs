@@ -1,5 +1,5 @@
 ---
-title: Enumerate available mobile broadband accounts
+title: Enumerate Available Mobile Broadband Accounts
 description: Enumerate available mobile broadband accounts
 ms.date: 04/20/2017
 ---

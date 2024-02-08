@@ -1,5 +1,5 @@
 ---
-title: IPrinterScriptUsbJobContextReturnCodes interface
+title: IPrinterScriptUsbJobContextReturnCodes Interface
 description: The IPrinterScriptUsbJobContextReturnCodes interface represents an array of return codes that an IHV has defined for their JavaScript functions.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

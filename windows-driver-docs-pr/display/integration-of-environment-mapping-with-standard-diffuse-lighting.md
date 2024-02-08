@@ -9,7 +9,6 @@ keywords:
 - diffuse lighting WDK Direct3D
 - standard diffuse lighting WDK Direct3D
 ms.date: 12/06/2018
-ms.custom: seodec18
 ---
 
 # Environment Mapping with Standard Diffuse Lighting
@@ -19,8 +18,3 @@ Standard diffuse lighting calculations for Gouraud shading of diffuse components
  
 
  
-
-
-
-
-

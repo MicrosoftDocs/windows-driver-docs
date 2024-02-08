@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_TUNER\_FREQUENCY
+title: KSPROPERTY_TUNER_FREQUENCY
 description: The KSPROPERTY\_TUNER\_FREQUENCY property sets or gets the current frequency or channel of the tuner. This property must be implemented.
 keywords: ["KSPROPERTY_TUNER_FREQUENCY Streaming Media Devices"]
 topic_type:

@@ -1,5 +1,5 @@
 ---
-title: Service identifier ownership updates
+title: Service Identifier Ownership Updates
 description: Service identifier ownership updates
 ms.date: 04/20/2017
 ---

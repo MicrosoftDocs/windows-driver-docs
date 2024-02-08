@@ -1,5 +1,5 @@
 ---
-title: Handling an IRP that the Framework Does Not Support
+title: Handling an IRP that the Framework does not Support
 description: Handling an IRP that the Framework Does Not Support
 keywords:
 - unsupported WDM IRPs WDK KMDF

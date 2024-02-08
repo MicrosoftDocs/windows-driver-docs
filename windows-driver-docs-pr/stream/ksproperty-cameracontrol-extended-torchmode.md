@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_TORCHMODE
+title: KSPROPERTY_CAMERACONTROL_EXTENDED_TORCHMODE
 description: Torch mode determines how a camera’s flash is used in low light conditions.
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_TORCHMODE Streaming Media Devices"]
 topic_type:

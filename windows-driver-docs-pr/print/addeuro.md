@@ -1,5 +1,5 @@
 ---
-title: AddEuro feature
+title: AddEuro Feature
 description: The AddEuro feature adds this symbol to the printer's device font.
 keywords:
 - minidrivers WDK Pscript , AddEuro feature

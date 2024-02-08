@@ -1,5 +1,5 @@
 ---
-title: Driver support for camera orientation
+title: Driver Support for Camera Orientation
 description: Provides information about how to explicitly specify the camera orientation on a device.
 ms.date: 08/16/2019
 ---

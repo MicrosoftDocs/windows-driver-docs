@@ -1,5 +1,5 @@
 ---
-title: Configure a port
+title: Configure a Port
 description: Provides information about how to configure a port.
 keywords:
 - port management WDK print, configuring ports
