@@ -1,5 +1,5 @@
 ---
-title: Naming conventions in Pscript and Unidrv minidrivers
+title: Naming Conventions in Pscript and Unidrv Minidrivers
 description: Naming conventions in Pscript and Unidrv minidrivers
 keywords:
 - in-box autoconfiguration support WDK printer , naming conventions

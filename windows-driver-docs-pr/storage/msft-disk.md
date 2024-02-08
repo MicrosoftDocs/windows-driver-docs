@@ -1,5 +1,5 @@
 ---
-title: MSFT\_Disk class
+title: MSFT_Disk Class
 description: Represents a Windows disk.
 ms.assetid: a3703b30-5e32-4bcf-9abd-fd3fb67fa6b6
 keywords:

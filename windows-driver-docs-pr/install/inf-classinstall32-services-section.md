@@ -1,5 +1,5 @@
 ---
-title: INF ClassInstall32.Services section
+title: INF ClassInstall32.Services Section
 description: A ClassInstall32.Services section installs a new device setup class for devices in the new class.
 keywords:
 - INF ClassInstall32.Services Section Device and Driver Installation

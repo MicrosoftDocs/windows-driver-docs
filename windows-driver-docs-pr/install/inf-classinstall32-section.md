@@ -1,5 +1,5 @@
 ---
-title: INF ClassInstall32 section
+title: INF ClassInstall32 Section
 description: A ClassInstall32 section installs a new device setup class for devices in the new class.
 keywords:
 - INF ClassInstall32 Section Device and Driver Installation

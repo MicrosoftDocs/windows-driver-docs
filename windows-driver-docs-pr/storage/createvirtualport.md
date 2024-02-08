@@ -1,5 +1,5 @@
 ---
-title: CreateVirtualPort method
+title: CreateVirtualPort Method
 description: The CreateVirtualPort method creates a virtual port with a specific world wide port name (WWPN) .
 keywords: ["CreateVirtualPort method Storage Devices"]
 topic_type:

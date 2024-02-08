@@ -1,5 +1,5 @@
 ---
-title: General attributes
+title: General Attributes
 description: General attributes
 keywords:
 - printer attributes WDK Unidrv , general

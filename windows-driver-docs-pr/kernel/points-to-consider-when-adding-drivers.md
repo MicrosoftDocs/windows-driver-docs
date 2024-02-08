@@ -1,5 +1,5 @@
 ---
-title: Points to Consider When Adding Drivers
+title: Points to Consider when Adding Drivers
 description: Points to Consider When Adding Drivers
 keywords: ["WDM drivers WDK kernel , configurations", "WDM drivers WDK kernel , layered drivers", "layered drivers WDK kernel", "driver layers WDK WDM", "replacing drivers", "adding kernel-mode drivers"]
 ms.date: 06/16/2017

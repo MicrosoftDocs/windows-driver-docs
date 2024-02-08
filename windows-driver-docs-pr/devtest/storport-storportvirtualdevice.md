@@ -1,5 +1,5 @@
 ---
-title: StorPortVirtualDevice rule (storport)
+title: StorPortVirtualDevice Rule (Storport)
 description: This rule verifies that upon exit from the HwStorFindAdapter routine, the VirtualDevice field in the PORT\_CONFIGURATION\_INFORMATION (Storport) structure has been set to FALSE. The rule applies only to physical StorPort miniports.
 ms.date: 05/21/2018
 keywords: ["StorPortVirtualDevice rule (storport)"]

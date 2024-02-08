@@ -1,5 +1,5 @@
 ---
-title: MSFT\_ReplicaPeer class
+title: MSFT_ReplicaPeer Class
 description: An enumerable object that represents an object in a target subsystem for which there is a replication relationship.
 ms.assetid: 5DE51AC0-E84A-4DD9-9F9B-E8A3F6948E9F
 keywords:

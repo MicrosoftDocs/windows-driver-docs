@@ -12,7 +12,6 @@ api_location:
 api_type:
 - COM
 ms.date: 12/06/2018
-ms.custom: seodec18
 ---
 
 # DXVA\_DeinterlaceContainerDeviceClass::DeinterlaceQueryModeCaps method
@@ -133,4 +132,3 @@ The DD\_RENDERMOCOMPDATA structure is filled as follows.
 [**DXVA\_DeinterlaceCaps**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_deinterlacecaps)
 
 [**DXVA\_VideoDesc**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_videodesc)
-

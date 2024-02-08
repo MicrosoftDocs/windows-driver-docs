@@ -1,5 +1,5 @@
 ---
-title: Command attributes
+title: Command Attributes
 description: Command attributes
 keywords:
 - printer attributes WDK Unidrv , commands

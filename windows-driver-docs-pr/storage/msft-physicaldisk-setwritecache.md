@@ -1,5 +1,5 @@
 ---
-title: SetWriteCache method of the MSFT\_PhysicalDisk class
+title: SetWriteCache Method of the MSFT_PhysicalDisk Class
 description: Allows the physical disk's write cache to be enabled or disabled.
 ms.assetid: 1DBA8B0E-0C31-471C-B90B-89C1B07CF7F3
 keywords:

@@ -1,5 +1,5 @@
 ---
-title: Enumerate SMS devices
+title: Enumerate SMS Devices
 description: Enumerate SMS devices
 ms.date: 04/20/2017
 ---

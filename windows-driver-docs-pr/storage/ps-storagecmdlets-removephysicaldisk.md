@@ -1,5 +1,5 @@
 ---
-title: RemovePhysicalDisk method of the PS\_StorageCmdlets class
+title: RemovePhysicalDisk Method of the PS_StorageCmdlets Class
 description: RemovePhysicalDisk method of the PS\_StorageCmdlets class
 ms.assetid: 3A5E84DE-4E2F-4DE8-85D8-86F56518FEC0
 keywords:

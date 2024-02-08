@@ -1,5 +1,5 @@
 ---
-title: Win32 API support for print capabilities
+title: Win32 API Support for Print Capabilities
 description: Provides information about Win32 API support for print capabilities.
 keywords:
 - Print Capabilities WDK, Win32 API support

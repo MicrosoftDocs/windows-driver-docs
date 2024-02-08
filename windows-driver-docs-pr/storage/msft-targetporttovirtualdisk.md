@@ -1,5 +1,5 @@
 ---
-title: MSFT\_TargetPortToVirtualDisk class
+title: MSFT_TargetPortToVirtualDisk Class
 description: Association between TargetPort and VirtualDisk.
 ms.assetid: EF675F41-FD41-4C95-97AD-6189ACF4032A
 keywords:

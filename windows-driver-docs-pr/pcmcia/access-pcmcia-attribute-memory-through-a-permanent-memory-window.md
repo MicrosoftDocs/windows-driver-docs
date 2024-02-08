@@ -1,5 +1,5 @@
 ---
-title: Access Memory Through a Permanent Memory Window
+title: Access Memory through a Permanent Memory Window
 description: Access PCMCIA Attribute Memory Through a Permanent Memory Window
 keywords:
 - attribute memory WDK PCMCIA bus , permanent-assigned memory window

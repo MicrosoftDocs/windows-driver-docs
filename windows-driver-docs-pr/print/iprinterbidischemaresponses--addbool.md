@@ -1,5 +1,5 @@
 ---
-title: IPrinterBidiSchemaResponses AddBool method
+title: IPrinterBidiSchemaResponses AddBool Method
 description: The AddBool method adds a new response of type BIDI_BOOL to the collection.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

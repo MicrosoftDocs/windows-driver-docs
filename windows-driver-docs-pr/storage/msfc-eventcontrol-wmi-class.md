@@ -1,5 +1,5 @@
 ---
-title: MSFC\_EventControl WMI Class
+title: MSFC_EventControl WMI Class
 description: MSFC\_EventControl WMI Class
 ms.date: 10/17/2018
 ---

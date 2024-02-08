@@ -1,5 +1,5 @@
 ---
-title: KSMETHOD\_STREAMALLOCATOR\_FREE
+title: KSMETHOD_STREAMALLOCATOR_FREE
 description: The KSMETHOD\_STREAMALLOCATOR\_FREE method is used by a client to free a frame back to the given allocator.
 keywords: ["KSMETHOD_STREAMALLOCATOR_FREE Streaming Media Devices"]
 topic_type:

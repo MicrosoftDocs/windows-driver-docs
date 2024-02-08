@@ -1,5 +1,5 @@
 ---
-title: SetDescription method of the MSFT\_StorageTier class
+title: SetDescription Method of the MSFT_StorageTier Class
 description: Updates the description of the storage tier.
 ms.assetid: 6A75DF7D-995E-4A82-B965-4FF086E58EC5
 keywords:

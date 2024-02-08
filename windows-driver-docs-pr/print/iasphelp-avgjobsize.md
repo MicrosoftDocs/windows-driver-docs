@@ -1,5 +1,5 @@
 ---
-title: Iasphelp get_AvgJobSize method
+title: Iasphelp get_AvgJobSize Method
 description: The AvgJobSize property enables an ASP Web page to determine the average job size in a sequence of print jobs.
 MS-HAID:
 - 'webfnc_de863905-eb8f-430a-a70b-7cb404dd3717.xml'

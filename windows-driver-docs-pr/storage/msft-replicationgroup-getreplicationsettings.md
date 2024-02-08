@@ -1,5 +1,5 @@
 ---
-title: GetReplicationSettings method of the MSFT\_ReplicationGroup class
+title: GetReplicationSettings Method of the MSFT_ReplicationGroup Class
 description: Returns the replication settings for this replication group.
 ms.assetid: 6A4144F4-C432-439C-B0F1-DAB8E8636ECC
 keywords:

@@ -1,5 +1,5 @@
 ---
-title: SetDescription method of the MSFT\_FileShare class
+title: SetDescription Method of the MSFT_FileShare Class
 description: Allows a user to set the description field of the file share.
 ms.assetid: 09CEA9ED-198E-4163-8981-8B164BDB8E34
 keywords:

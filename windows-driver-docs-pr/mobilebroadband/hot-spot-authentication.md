@@ -1,5 +1,5 @@
 ---
-title: Hot spot authentication
+title: Hot Spot Authentication
 description: Hot spot authentication
 ms.date: 04/20/2017
 ---

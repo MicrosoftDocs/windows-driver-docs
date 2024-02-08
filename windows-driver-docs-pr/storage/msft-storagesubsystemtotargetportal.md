@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StorageSubSystemToTargetPortal class
+title: MSFT_StorageSubSystemToTargetPortal Class
 description: Association between StorageSubSystem and TargetPortal.
 ms.assetid: 40AEE0E9-85C7-4DCA-AE74-17E26399CE08
 keywords:

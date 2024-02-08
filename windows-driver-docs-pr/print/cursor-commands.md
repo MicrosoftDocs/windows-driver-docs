@@ -1,5 +1,5 @@
 ---
-title: Cursor commands
+title: Cursor Commands
 description: Cursor commands
 keywords:
 - printer commands WDK Unidrv , cursors

@@ -1,5 +1,5 @@
 ---
-title: Iasphelp get_IsHTTP method
+title: Iasphelp get_IsHTTP Method
 description: The IsHTTP property enables an ASP Web page to determine whether the printer is connected to an HTTP port.
 MS-HAID:
 - 'webfnc_e3e58eea-498f-4e85-8072-2c49ac50d733.xml'

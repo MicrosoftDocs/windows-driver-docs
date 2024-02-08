@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StorageSubSystemToStorageFaultDomain class
+title: MSFT_StorageSubSystemToStorageFaultDomain Class
 description: Association between MSFT\_StorageSubSystem and MSFT\_StorageFaultDomain.
 ms.assetid: 6A53CF61-FFD7-4657-8B88-BD97BC80C075
 keywords:

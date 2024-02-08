@@ -1,5 +1,5 @@
 ---
-title: IPrinterScriptUsbJobContext JobPropertyBag method
+title: IPrinterScriptUsbJobContext JobPropertyBag Method
 description: Returns the property bag associated with the current print job.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

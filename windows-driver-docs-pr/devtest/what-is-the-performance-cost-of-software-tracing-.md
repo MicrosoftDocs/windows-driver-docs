@@ -1,5 +1,5 @@
 ---
-title: What is the performance cost of software tracing
+title: What is the Performance Cost of Software Tracing
 description: What is the performance cost of software tracing
 ms.date: 04/20/2017
 ---

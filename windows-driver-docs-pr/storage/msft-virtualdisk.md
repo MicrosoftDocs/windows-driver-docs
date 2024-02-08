@@ -1,5 +1,5 @@
 ---
-title: MSFT\_VirtualDisk class
+title: MSFT_VirtualDisk Class
 description: Represents a subsystem storage volume.
 ms.assetid: 4f0d6967-ab9c-494f-a991-f62fda8c2fa8
 keywords:

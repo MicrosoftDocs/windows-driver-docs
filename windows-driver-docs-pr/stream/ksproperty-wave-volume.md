@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_WAVE\_VOLUME
+title: KSPROPERTY_WAVE_VOLUME
 description: The KSPROPERTY\_WAVE\_VOLUME property specifies a wave device's volume setting.
 keywords: ["KSPROPERTY_WAVE_VOLUME Streaming Media Devices"]
 topic_type:

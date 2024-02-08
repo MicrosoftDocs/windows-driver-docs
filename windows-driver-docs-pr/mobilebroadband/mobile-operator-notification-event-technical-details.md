@@ -1,5 +1,5 @@
 ---
-title: Mobile operator notification event technical details
+title: Mobile Operator Notification Event Technical Details
 description: Mobile operator notification event technical details
 ms.date: 04/20/2017
 ---

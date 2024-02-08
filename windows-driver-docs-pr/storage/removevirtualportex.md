@@ -1,5 +1,5 @@
 ---
-title: RemoveVirtualPortEx method (Windows Drivers)
+title: RemoveVirtualPortEx Method (Windows Drivers)
 description: Learn more about the RemoveVirtualPortEx method.
 ms.date: 10/14/2022
 ---

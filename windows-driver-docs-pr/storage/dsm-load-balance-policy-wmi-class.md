@@ -1,5 +1,5 @@
 ---
-title: DSM\_Load\_Balance\_Policy WMI Class
+title: DSM_Load_Balance_Policy WMI Class
 description: DSM\_Load\_Balance\_Policy WMI Class
 ms.date: 10/17/2018
 ---

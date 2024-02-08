@@ -1,5 +1,5 @@
 ---
-title: KSEVENTSETID\_Device
+title: KSEVENTSETID_Device
 description: The KSEVENTSETID\_Device event set specifies device events that can be enabled on a filter.
 keywords: ["KSEVENTSETID_Device Streaming Media Devices"]
 topic_type:

@@ -1,5 +1,5 @@
 ---
-title: MS\_SM\_AdapterInformationQuery WMI Class
+title: MS_SM_AdapterInformationQuery WMI Class
 description: MS\_SM\_AdapterInformationQuery WMI Class
 ms.date: 10/17/2018
 ---

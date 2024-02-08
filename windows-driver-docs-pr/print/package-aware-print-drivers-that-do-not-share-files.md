@@ -1,5 +1,5 @@
 ---
-title: Package-Aware Print Drivers that Do Not Share Files
+title: Package-Aware Print Drivers that do not Share Files
 description: Package-Aware Print Drivers that Do Not Share Files
 keywords:
 - package-aware print drivers WDK

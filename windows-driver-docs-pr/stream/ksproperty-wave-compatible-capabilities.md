@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_WAVE\_COMPATIBLE\_CAPABILITIES
+title: KSPROPERTY_WAVE_COMPATIBLE_CAPABILITIES
 description: The KSPROPERTY\_WAVE\_COMPATIBLE\_CAPABILITIES property determines a device's wave compatible capabilities.
 keywords: ["KSPROPERTY_WAVE_COMPATIBLE_CAPABILITIES Streaming Media Devices"]
 topic_type:

@@ -1,5 +1,5 @@
 ---
-title: Download queue-specific files
+title: Download Queue-Specific Files
 description: Provides information about how to download queue-specific files.
 keywords:
 - download queue-specific printer files

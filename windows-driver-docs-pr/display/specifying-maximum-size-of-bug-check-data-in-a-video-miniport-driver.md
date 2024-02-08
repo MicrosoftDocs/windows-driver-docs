@@ -6,7 +6,6 @@ keywords:
 - video miniport driver bug-check data WDK DirectX 9.0
 - bug-check data size WDK DirectX 9.0
 ms.date: 12/06/2018
-ms.custom: seodec18
 ---
 
 # The Max Size of Bug-check Data in a Video Miniport Driver
@@ -21,8 +20,3 @@ The Windows XP SP1 DDK documentation incorrectly specified the maximum value for
  
 
  
-
-
-
-
-

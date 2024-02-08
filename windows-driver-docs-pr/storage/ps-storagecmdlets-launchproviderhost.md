@@ -1,5 +1,5 @@
 ---
-title: LaunchProviderHost method of the PS\_StorageCmdlets class
+title: LaunchProviderHost Method of the PS_StorageCmdlets Class
 description: LaunchProviderHost method of the PS\_StorageCmdlets class.
 ms.assetid: 7E6D272E-B4B0-4007-A79A-F8A5F521A223
 keywords:

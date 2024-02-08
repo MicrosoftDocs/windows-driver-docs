@@ -1,5 +1,5 @@
 ---
-title: Windows kernel routines reserved for system use
+title: Windows Kernel Routines Reserved for System Use
 description: Windows kernel routines reserved for system use
 ms.date: 10/17/2018
 ---

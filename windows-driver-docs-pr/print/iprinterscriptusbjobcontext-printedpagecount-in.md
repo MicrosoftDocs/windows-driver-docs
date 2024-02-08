@@ -1,5 +1,5 @@
 ---
-title: IPrinterScriptUsbJobContext PrintedPageCount method (in)
+title: IPrinterScriptUsbJobContext PrintedPageCount Method (In)
 description: Sets the number of pages that have been printed by the print device in the current job.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

@@ -1,5 +1,5 @@
 ---
-title: RDF_CARD_POWER callback function
+title: RDF_CARD_POWER Callback Function
 description: RDF_CARD_POWER callback function
 keywords:
 - vendor-supplied drivers RDF callback functions

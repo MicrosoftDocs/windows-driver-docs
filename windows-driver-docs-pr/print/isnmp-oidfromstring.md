@@ -1,5 +1,5 @@
 ---
-title: ISNMP OIDFromString method
+title: ISNMP OIDFromString Method
 description: The OIDFromString method enables an ASP Web page to convert an SNMP OID string to a numeric array.
 MS-HAID:
 - 'webfnc_de08026f-5b6b-4c82-a653-2e16606e6b85.xml'

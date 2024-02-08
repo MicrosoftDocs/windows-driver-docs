@@ -1,5 +1,5 @@
 ---
-title: Connections between subunit plugs and unit plugs within one AV/C unit
+title: Connections Between Subunit Plugs and Unit Plugs Within One AV/C Unit
 description: Provides information about connections between subunit plugs and unit plugs within one AV/C unit
 keywords:
 - connections WDK AV/C

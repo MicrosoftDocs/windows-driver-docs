@@ -1,5 +1,5 @@
 ---
-title: IPrinterBidiSchemaResponses AddString method
+title: IPrinterBidiSchemaResponses AddString Method
 description: The AddString method adds a new response of type BIDI_STRING to the collection.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

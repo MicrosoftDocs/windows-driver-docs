@@ -1,6 +1,6 @@
 ---
-title: Naming convention for EMI rails 
-description: Naming convention for EMI rails 
+title: Naming Convention for EMI Rails
+description: Naming convention for EMI rails
 keywords:
 - Energy Metering , interface
 - Energy Meter Interface WDK
@@ -27,7 +27,7 @@ Energy Estimation Engine (E3) attributes energy to software applications. If the
 
 If the Emi rail name matches the name in the map above, the measurement from that rail and only that rail will be used for the E3 component energy.  
 
-If there is not an exact match to the name but matches that start being with “rail name_”, the sum of these rails will be used for the component.
+If there is not an exact match to the name but matches that start being with "rail name_", the sum of these rails will be used for the component.
 
 ## Example of exact match
 

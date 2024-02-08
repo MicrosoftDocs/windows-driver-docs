@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StoragePoolToVirtualDisk class
+title: MSFT_StoragePoolToVirtualDisk Class
 description: Association between StoragePool and VirtualDisk.
 ms.assetid: 623782e9-11c8-4344-8eae-ea6058e000c8
 keywords:

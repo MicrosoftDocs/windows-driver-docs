@@ -1,5 +1,5 @@
 ---
-title: Feature attributes
+title: Feature Attributes
 description: Feature attributes
 keywords:
 - printer attributes WDK Unidrv , features

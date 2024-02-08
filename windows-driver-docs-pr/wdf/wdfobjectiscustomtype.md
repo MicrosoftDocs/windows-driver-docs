@@ -1,5 +1,5 @@
 ---
-title: WdfObjectIsCustomType macro
+title: WdfObjectIsCustomType Macro
 description: The WdfObjectIsCustomType macro determines whether a framework object is of a specified custom type.
 keywords:
  - WdfObjectIsCustomType macro

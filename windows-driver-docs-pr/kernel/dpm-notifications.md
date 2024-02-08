@@ -1,5 +1,5 @@
 ---
-title: Device power management (DPM) notifications
+title: Device Power Management (DPM) Notifications
 description: Each device power management (DPM) notification that the PEP's AcceptDeviceNotification callback routine receives is accompanied by a Notification parameter that indicates the type of notification, and a Data parameter that points to a data structure that contains the information for the specified notification type.
 keywords: [AcceptDeviceNotification]
 ms.date: 01/17/2018

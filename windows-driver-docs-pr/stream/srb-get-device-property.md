@@ -1,5 +1,5 @@
 ---
-title: SRB\_GET\_DEVICE\_PROPERTY
+title: SRB_GET_DEVICE_PROPERTY
 description: SRB\_GET\_DEVICE\_PROPERTY
 keywords: ["SRB_GET_DEVICE_PROPERTY Streaming Media Devices"]
 topic_type:

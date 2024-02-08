@@ -1,5 +1,5 @@
 ---
-title: KSEVENTSETID\_Connection
+title: KSEVENTSETID_Connection
 description: The KSEVENTSETID\_Connection event set specifies the general events that can be enabled on a filter and a pin.
 keywords: ["KSEVENTSETID_Connection Streaming Media Devices"]
 topic_type:

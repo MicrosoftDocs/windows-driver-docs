@@ -1,5 +1,5 @@
 ---
-title: GetEventBuffer function
+title: GetEventBuffer Function
 description: The GetEventBuffer WMI method retrieves the next events in the HBA's event queue.
 keywords: ["GetEventBuffer function Storage Devices"]
 topic_type:

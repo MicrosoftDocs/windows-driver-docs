@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_VPCONFIG\_VIDEOPORTID
+title: KSPROPERTY_VPCONFIG_VIDEOPORTID
 description: The KSPROPERTY\_VPCONFIG\_VIDEOPORTID property returns the Microsoft DirectDraw video port ID property information.
 keywords: ["KSPROPERTY_VPCONFIG_VIDEOPORTID Streaming Media Devices"]
 topic_type:

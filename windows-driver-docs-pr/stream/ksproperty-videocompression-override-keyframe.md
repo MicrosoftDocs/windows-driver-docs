@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_VIDEOCOMPRESSION\_OVERRIDE\_KEYFRAME
+title: KSPROPERTY_VIDEOCOMPRESSION_OVERRIDE_KEYFRAME
 description: The KSPROPERTY\_VIDEOCOMPRESSION\_OVERRIDE\_KEYFRAME property temporarily overrides the key frame rate. This property is optional.
 keywords: ["KSPROPERTY_VIDEOCOMPRESSION_OVERRIDE_KEYFRAME Streaming Media Devices"]
 topic_type:

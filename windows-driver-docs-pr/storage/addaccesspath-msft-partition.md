@@ -1,5 +1,5 @@
 ---
-title: AddAccessPath method of the MSFT\_Partition class
+title: AddAccessPath Method of the MSFT_Partition Class
 description: Adds a mount path or drive letter assignment to the partition.
 ms.assetid: d692d4f5-c912-48ec-98a6-9c72ac6e75f6
 keywords:

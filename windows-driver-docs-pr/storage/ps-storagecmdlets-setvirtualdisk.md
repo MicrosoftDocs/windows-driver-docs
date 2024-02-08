@@ -1,5 +1,5 @@
 ---
-title: SetVirtualDisk method of the PS\_StorageCmdlets class
+title: SetVirtualDisk Method of the PS_StorageCmdlets Class
 description: SetVirtualDisk method of the PS\_StorageCmdlets class
 ms.assetid: BE125D67-3648-41CC-AA39-629E0EE64F39
 keywords:

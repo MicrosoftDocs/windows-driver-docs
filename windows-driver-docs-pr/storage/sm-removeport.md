@@ -1,5 +1,5 @@
 ---
-title: SM\_RemovePort function
+title: SM_RemovePort Function
 description: The SM\_RemovePort WMI method configures the WMI provider so that it stops passing events that are associated with the indicated port to the WMI client.
 keywords: ["SM_RemovePort function Storage Devices"]
 topic_type:

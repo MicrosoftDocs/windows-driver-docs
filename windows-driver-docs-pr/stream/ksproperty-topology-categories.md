@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_TOPOLOGY\_CATEGORIES
+title: KSPROPERTY_TOPOLOGY_CATEGORIES
 description: The KSPROPERTY\_TOPOLOGY\_CATEGORIES property queries for the array of functional categories that a driver supports.
 keywords: ["KSPROPERTY_TOPOLOGY_CATEGORIES Streaming Media Devices"]
 topic_type:

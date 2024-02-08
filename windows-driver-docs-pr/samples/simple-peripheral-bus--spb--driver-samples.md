@@ -1,5 +1,5 @@
 ---
-title: Simple peripheral bus (SPB) driver samples
+title: Simple Peripheral Bus (SPB) Driver Samples
 description: The driver samples in this directory provide a starting point for writing a custom SPB driver for your device.
 ms.date: 03/22/2023
 ---

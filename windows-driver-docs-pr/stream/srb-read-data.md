@@ -1,5 +1,5 @@
 ---
-title: SRB\_READ\_DATA
+title: SRB_READ_DATA
 description: SRB\_READ\_DATA
 keywords: ["SRB_READ_DATA Streaming Media Devices"]
 topic_type:

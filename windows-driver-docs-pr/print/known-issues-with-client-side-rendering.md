@@ -1,5 +1,5 @@
 ---
-title: Known issues with client-side rendering
+title: Known Issues with Client-Side Rendering
 description: Discussion of known issues with client-side rendering.
 keywords:
 - client-side rendering WDK print , known issues

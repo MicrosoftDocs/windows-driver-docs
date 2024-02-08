@@ -1,5 +1,5 @@
 ---
-title: KSPROPSETID\_DvdSubPic
+title: KSPROPSETID_DvdSubPic
 description: KSPROPSETID\_DvdSubPic
 ms.date: 11/28/2017
 ---

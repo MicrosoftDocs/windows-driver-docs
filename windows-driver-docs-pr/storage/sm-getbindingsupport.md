@@ -1,5 +1,5 @@
 ---
-title: SM\_GetBindingSupport function
+title: SM_GetBindingSupport Function
 description: The SM\_GetBindingSupport method retrieves the binding capabilities that are currently enabled for the indicated port.
 keywords: ["SM_GetBindingSupport function Storage Devices"]
 topic_type:

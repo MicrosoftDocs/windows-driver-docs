@@ -1,5 +1,5 @@
 ---
-title: Receive notification when mobile broadband accounts are added or removed
+title: Receive Notification when Mobile Broadband Accounts are Added or Removed
 description: Receive notification when mobile broadband accounts are added or removed
 ms.date: 04/20/2017
 ---

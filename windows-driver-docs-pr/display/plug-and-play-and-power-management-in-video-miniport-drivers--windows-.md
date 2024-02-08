@@ -8,7 +8,6 @@ keywords:
 - PnP WDK video miniport
 - power management WDK video miniport
 ms.date: 12/06/2018
-ms.custom: seodec18
 ---
 
 # Power Management and Plug and Play in Video Miniport Drivers (Windows 2000 Model)
@@ -32,4 +31,3 @@ Miniport drivers must implement the following functions to support PnP and Power
 The graphics adapter for a legacy miniport driver cannot be removed from the system while the system is running, nor are legacy miniport drivers automatically detected when added to a running system.
 
 See [Child Devices of the Display Adapter (Windows 2000 Model)](child-devices-of-the-display-adapter--windows-2000-model-.md) for more information about detecting and communicating with an adapter's child devices. For general information about Plug and Play drivers, see [Plug and Play](../kernel/introduction-to-plug-and-play.md).
-

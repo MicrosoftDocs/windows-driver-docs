@@ -1,5 +1,5 @@
 ---
-title: Set method of the MSFT\_FileStorageTier class
+title: Set Method of the MSFT_FileStorageTier Class
 description: Pins a volume or file to a storage tier.
 ms.assetid: 9F235321-2013-49F8-91AF-7A6369BB739A
 keywords:

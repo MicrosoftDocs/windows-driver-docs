@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StorageSubSystemToFileServer class
+title: MSFT_StorageSubSystemToFileServer Class
 description: Association between a MSFT\_StorageSubSystem and its MSFT\_FileServer.
 ms.assetid: 64B3A267-4286-4D0D-A646-F001074180EE
 keywords:

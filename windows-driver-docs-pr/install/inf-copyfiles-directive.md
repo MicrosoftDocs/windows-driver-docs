@@ -1,5 +1,5 @@
 ---
-title: INF CopyFiles directive
+title: INF CopyFiles Directive
 description: A CopyFiles directive can cause a single file to be copied from the source media to the default destination directory or can reference one or more INF-writer-defined sections in the INF that each specifies a list of files to be copied from the source media to the destination.
 keywords:
 - INF CopyFiles Directive Device and Driver Installation

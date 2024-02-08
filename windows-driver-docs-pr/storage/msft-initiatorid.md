@@ -1,5 +1,5 @@
 ---
-title: MSFT\_InitiatorId class
+title: MSFT_InitiatorId Class
 description: Represents an initiator identifier.
 ms.assetid: 446877F7-C9A3-40D5-A17E-D3DBBF341B9B
 keywords:

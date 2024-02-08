@@ -1,5 +1,5 @@
 ---
-title: MODM_RESET function (Windows Drivers)
+title: MODM_RESET Function (Windows Drivers)
 description: Learn more about the MODM_RESET function.
 keywords:
 - mmddk/modMessage

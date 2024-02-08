@@ -1,5 +1,5 @@
 ---
-title: MSFC\_TargetEvent WMI Class
+title: MSFC_TargetEvent WMI Class
 description: MSFC\_TargetEvent WMI Class
 ms.date: 10/17/2018
 ---

@@ -1,5 +1,5 @@
 ---
-title: Introduction to COSA/APN database
+title: Introduction to COSA/APN Database
 description: Introduction to COSA/APN database
 ms.date: 01/02/2024
 author: mhopkins-msft

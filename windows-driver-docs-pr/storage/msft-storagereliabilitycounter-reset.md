@@ -1,5 +1,5 @@
 ---
-title: Reset method of the MSFT\_StorageReliabilityCounter class
+title: Reset Method of the MSFT_StorageReliabilityCounter Class
 description: Resets reliability values.
 ms.assetid: EA32E7A8-1758-4176-BE8A-952C4A3783F8
 keywords:

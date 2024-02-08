@@ -1,5 +1,5 @@
 ---
-title: PPM power control codes
+title: PPM Power Control Codes
 description: The power control codes described in this topic are used by platform extension plug-ins (PEPs). 
 keywords: [PPM power control codes]
 ms.date: 01/17/2018

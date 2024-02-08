@@ -1,5 +1,5 @@
 ---
-title: INF SourceDisksFiles section
+title: INF SourceDisksFiles Section
 description: The SourceDisksFiles section names source files, installation disks, and directory paths used during installation.
 keywords:
 - INF SourceDisksFiles Section Device and Driver Installation

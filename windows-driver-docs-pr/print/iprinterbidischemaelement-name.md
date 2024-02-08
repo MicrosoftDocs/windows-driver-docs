@@ -1,5 +1,5 @@
 ---
-title: IPrinterBidiSchemaElement Name method
+title: IPrinterBidiSchemaElement Name Method
 description: The Name method returns the Bidi schema element name.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

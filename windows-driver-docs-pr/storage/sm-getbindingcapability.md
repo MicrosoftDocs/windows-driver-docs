@@ -1,5 +1,5 @@
 ---
-title: SM\_GetBindingCapability function
+title: SM_GetBindingCapability Function
 description: The SM\_GetBindingCapability method retrieves the binding capabilities for the indicated port.
 keywords: ["SM_GetBindingCapability function Storage Devices"]
 topic_type:

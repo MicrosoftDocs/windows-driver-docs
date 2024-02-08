@@ -1,5 +1,5 @@
 ---
-title: Add forms to the forms database
+title: Add Forms to the Forms Database
 description: Provides information about how to add forms to the forms database.
 keywords:
 - additional forms WDK Unidrv

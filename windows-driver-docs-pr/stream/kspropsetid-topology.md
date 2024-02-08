@@ -1,5 +1,5 @@
 ---
-title: KSPROPSETID\_Topology
+title: KSPROPSETID_Topology
 description: KSPROPSETID\_Topology
 ms.date: 11/28/2017
 ---

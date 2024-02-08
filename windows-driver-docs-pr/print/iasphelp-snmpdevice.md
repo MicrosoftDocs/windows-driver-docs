@@ -1,5 +1,5 @@
 ---
-title: Iasphelp get_SNMPDevice method
+title: Iasphelp get_SNMPDevice Method
 description: The SNMPDevice property enables an ASP Web page to obtain a printer's SNMP device index (as defined by RFC 1759).
 MS-HAID:
 - 'webfnc_e4a9d1b3-1168-45a7-98cb-9c19fdf83009.xml'

@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_TOPOLOGY\_CONNECTIONS
+title: KSPROPERTY_TOPOLOGY_CONNECTIONS
 description: The KSPROPERTY\_TOPOLOGY\_CONNECTIONS property queries all connections between nodes of a KS filter.
 keywords: ["KSPROPERTY_TOPOLOGY_CONNECTIONS Streaming Media Devices"]
 topic_type:

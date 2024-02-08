@@ -1,5 +1,5 @@
 ---
-title: action element
+title: Action Element
 description: The optional action element describes an action that will be completed when a user clicks a button in the balloon message.
 keywords: ["action element Print Devices"]
 topic_type:

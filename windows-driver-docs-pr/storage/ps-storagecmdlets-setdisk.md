@@ -1,5 +1,5 @@
 ---
-title: SetDisk method of the PS\_StorageCmdlets class
+title: SetDisk Method of the PS_StorageCmdlets Class
 description: SetDisk method of the PS\_StorageCmdlets class
 ms.assetid: 9451FC42-3210-4DE9-924F-7B4F7356287C
 keywords:

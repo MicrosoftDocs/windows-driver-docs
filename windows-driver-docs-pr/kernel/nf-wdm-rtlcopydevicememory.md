@@ -1,5 +1,5 @@
 ---
-title: RtlCopyDeviceMemory function (wdm.h)
+title: RtlCopyDeviceMemory Function (Wdm.H)
 ms.date: 01/04/2024
 description: This article describes the RtlCopyDeviceMemory function.
 ---

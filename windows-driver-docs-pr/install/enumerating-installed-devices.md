@@ -1,5 +1,5 @@
 ---
-title: Enumerate installed devices
+title: Enumerate Installed Devices
 description: Provides information about how to enumerate installed devices.
 keywords:
 - enumerate installed devices WDK

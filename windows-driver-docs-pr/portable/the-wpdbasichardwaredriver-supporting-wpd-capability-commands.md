@@ -1,6 +1,6 @@
 ---
+title: Support for Capability Commands (WpdBasicHardwareDriver Sample)
 description: Support for capability commands (WpdBasicHardwareDriver sample)
-title: Support for capability commands (WpdBasicHardwareDriver sample)
 ms.date: 03/03/2023
 ---
 
