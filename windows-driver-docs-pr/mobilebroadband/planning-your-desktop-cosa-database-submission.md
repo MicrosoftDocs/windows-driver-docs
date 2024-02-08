@@ -1,6 +1,6 @@
 ---
 <<<<<<< HEAD:windows-driver-docs-pr/mobilebroadband/planning-your-desktop-cosa-database-submission.md
-title: Planning your desktop COSA database submission
+title: Planning your Desktop COSA Database Submission
 description: Use this article plan for adding a new APN to the baseline COSA database that ships with Windows desktop devices, or to update an existing APN.
 =======
 title: Planning your Desktop COSA/APN Database Submission

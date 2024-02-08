@@ -6,7 +6,7 @@ ms.date: 02/08/2024
 
 # Mobile operator notification scenarios
 
-This topic explains when the use a mobile operator notification with your mobile broadband app.
+This article explains when the use a mobile operator notification with your mobile broadband app.
 
 ## Connect to and disconnect from mobile broadband
 
@@ -50,25 +50,25 @@ In many areas, MNOs are required by regulatory laws to notify a user when the us
 
 1. You enable local data usage notifications by using provisioning metadata.
 
-2. Local data counters estimate that usage on the profile has changed by more than 5% of the user's data limit since the last update.
+1. Local data counters estimate that usage on the profile has changed by more than 5% of the user's data limit since the last update.
 
-3. The Data Usage and Subscription Manager (DUSM) notifies the System Event Broker to trigger the [MobileOperatorNotification](mobile-operator-notification-event-technical-details.md) event.
+1. The Data Usage and Subscription Manager (DUSM) notifies the System Event Broker to trigger the [MobileOperatorNotification](mobile-operator-notification-event-technical-details.md) event.
 
-4. The System Event Broker invokes the mobile broadband app to handle the background event.
+1. The System Event Broker invokes the mobile broadband app to handle the background event.
 
-5. The app handles the event by retrieving the most current usage information from your back-end infrastructure.
+1. The app handles the event by retrieving the most current usage information from your back-end infrastructure.
 
-6. If the current usage information exceeds a threshold (such as 80%), the app displays a toast notification to the user and updates the DUSM with the current usage. Alternatively, if the current usage does not exceed a threshold, the app does not need to display the toast notification.
+1. If the current usage information exceeds a threshold (such as 80%), the app displays a toast notification to the user and updates the DUSM with the current usage. Alternatively, if the current usage does not exceed a threshold, the app does not need to display the toast notification.
 
 ### Roaming notification by using Windows Connection Manager
 
 1. Windows Connection Manager registers on a roaming mobile broadband network.
 
-2. Windows Connection Manager notifies the System Event Broker to trigger the [MobileOperatorNotification](mobile-operator-notification-event-technical-details.md) event.
+1. Windows Connection Manager notifies the System Event Broker to trigger the [MobileOperatorNotification](mobile-operator-notification-event-technical-details.md) event.
 
-3. The System Event Broker invokes the mobile operator app to handle the background event.
+1. The System Event Broker invokes the mobile operator app to handle the background event.
 
-4. The app identifies whether the user will incur additional usage charges when roaming on this network and if necessary, displays a toast notification and tile updates to the user.
+1. The app identifies whether the user will incur additional usage charges when roaming on this network and if necessary, displays a toast notification and tile updates to the user.
 
 ## Data plan expiration and usage reset
 
@@ -84,6 +84,5 @@ Some MNOs or MVNOs do not support Internet Sharing features on their network or 
 
 ## Related topics
 
-[Enabling mobile operator notifications and system events](enabling-mobile-operator-notifications-and-system-events.md)
-
-[Creating and configuring Internet Sharing experiences](creating-and-configuring-internet-sharing-experiences.md)
+- [Enabling mobile operator notifications and system events](enabling-mobile-operator-notifications-and-system-events.md)
+- [Creating and configuring Internet Sharing experiences](creating-and-configuring-internet-sharing-experiences.md)

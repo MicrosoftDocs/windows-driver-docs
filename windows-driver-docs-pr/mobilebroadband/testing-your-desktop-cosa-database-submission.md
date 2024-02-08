@@ -1,6 +1,6 @@
 ---
 <<<<<<< HEAD:windows-driver-docs-pr/mobilebroadband/testing-your-desktop-cosa-database-submission.md
-title: Testing your desktop COSA database submission
+title: Testing your Desktop COSA Database Submission
 description: Testing your desktop COSA database submission
 =======
 title: Testing your Desktop COSA/APN Database Submission
