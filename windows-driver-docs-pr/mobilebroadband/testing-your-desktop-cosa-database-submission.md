@@ -1,12 +1,7 @@
 ---
-<<<<<<< HEAD:windows-driver-docs-pr/mobilebroadband/testing-your-desktop-cosa-database-submission.md
 title: Testing your Desktop COSA Database Submission
 description: Testing your desktop COSA database submission
-=======
-title: Testing your Desktop COSA/APN Database Submission
-description: Testing your desktop COSA/APN database submission
->>>>>>> main:windows-driver-docs-pr/mobilebroadband/testing-your-desktop-cosa-apn-database-submission.md
-ms.date: 01/02/2024
+ms.date: 02/08/2024
 author: mhopkins-msft
 ms.author: mhopkins
 ---
