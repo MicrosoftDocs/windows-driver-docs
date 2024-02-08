@@ -1,5 +1,5 @@
 ---
-title: WDF_PTR_GET_OFFSET macro
+title: WDF_PTR_GET_OFFSET Macro
 description: The WDF_PTR_GET_OFFSET macro subtracts an address from another address and returns the resulting offset value.
 keywords:
  - WDF_PTR_GET_OFFSET macro

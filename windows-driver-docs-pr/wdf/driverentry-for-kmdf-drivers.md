@@ -1,5 +1,5 @@
 ---
-title: DriverEntry for WDF Drivers routine
+title: DriverEntry for WDF Drivers Routine
 description: DriverEntry is the first driver-supplied routine that is called after a driver is loaded. It is responsible for initializing the driver.
 keywords: ["DriverEntry routine", "routine", "DRIVER_INITIALIZE routine"]
 topic_type:
