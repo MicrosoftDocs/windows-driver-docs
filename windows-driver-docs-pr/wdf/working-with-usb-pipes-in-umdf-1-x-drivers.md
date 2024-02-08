@@ -1,5 +1,5 @@
 ---
-title: Working with USB Pipes in UMDF 1.X Drivers
+title: Working with USB Pipes in UMDF 1.x Drivers
 description: Working with USB Pipes in UMDF 1.x Drivers
 keywords:
 - UMDF WDK , USB pipes

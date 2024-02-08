@@ -1,5 +1,5 @@
 ---
-title: Using the Registry in UMDF 1.X Drivers
+title: Using the Registry in UMDF 1.x Drivers
 description: Using the Registry in UMDF 1.x Drivers
 keywords:
 - registry WDK UMDF
