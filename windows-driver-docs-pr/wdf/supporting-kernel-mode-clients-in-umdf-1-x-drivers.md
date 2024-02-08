@@ -1,5 +1,5 @@
 ---
-title: Supporting Kernel-Mode Clients in UMDF 1.X Drivers
+title: Supporting Kernel-Mode Clients in UMDF 1.x Drivers
 description: Supporting Kernel-Mode Clients in UMDF 1.x Drivers
 keywords:
 - kernel-mode clients WDK UMDF
