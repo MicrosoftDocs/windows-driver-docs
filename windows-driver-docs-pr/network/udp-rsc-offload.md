@@ -8,7 +8,7 @@ ms.date: 01/29/2024
 
 Starting in WIN11_NEXT, UDP Receive Segment Coalescing Offload (URO) enables network interface cards (NICs) to coalesce UDP receive segments. NICs can combine UDP datagrams from the same flow that match a set of rules into a logically contiguous buffer. These combined datagrams are then indicated to the Windows networking stack as a single large packet. 
 
-Coalescing UPD datagrams reduces the CPU cost to process packets in high-bandwidth flows, resulting in higher throughput and fewer cycles per byte.
+Coalescing UDP datagrams reduces the CPU cost to process packets in high-bandwidth flows, resulting in higher throughput and fewer cycles per byte.
 
 The following sections describe the rules for coalescing UDP packets and how to write a URO miniport driver.
 
@@ -73,6 +73,36 @@ Packets from multiple receives interleaved may be separated and coalesced with t
 
 The packets within a given flow must not be reordered with respect to each other. For example, the packets from the A flow must be coalesced in the order received, regardless of the packets from the B and C flows received in between.
 
+## INF keyword for controlling URO
+
+The following keyword can be used to enable/disable URO with a registry key setting.
+
+**\*UdpRsc**
+
+Enumeration standardized INF keywords have the following attributes:
+
+SubkeyName  
+The name of the keyword that you must specify in the INF file and that appears in the registry.
+
+ParamDesc  
+The display text that is associated with SubkeyName.
+
+Value  
+The enumeration integer value that is associated with each option in the list. This value is stored in NDI\\params\\ *SubkeyName*\\*Value*.
+
+EnumDesc  
+The display text that is associated with each value that appears in the menu.
+
+Default  
+The default value for the menu.
+
+|SubkeyName|ParamDesc|Value|EnumDesc|
+|--- |--- |--- |--- |
+|**\*UdpRsc**|URO|0|Disabled|
+|||1 (Default)|Enabled|
+
+For more information about using enumeration keywords, see [Enumeration Keywords](enumeration-keywords.md).
+
 ## Write a URO miniport driver
 
 Starting in NDIS 6.89, the NDIS interface for URO facilitates communication between TCP/IP and the NDIS miniport driver.
@@ -124,7 +154,7 @@ For information on the Winsock URO API, see [IPPROTO_UDP socket options](/window
 
 The Microsoft TCP/IP transport enables URO at bind time with NDIS, unless configuration prevents it from doing so.
 
-WFP callouts can use `FWP_CALLOUT_FLAG_ALLOW_URO` in [**FWPS_CALLOUT2**](/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-fwps_callout2_) to advertise their support for URO. If an incompatible WFP callout is registered at a URO-sensitive layer, then the OS will disable URO while the callout is active.
+WFP callouts can use `FWP_CALLOUT_FLAG_ALLOW_URO` in [**FWPS_CALLOUT2**](/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-fwps_callout2_) to advertise their support for URO. If an incompatible WFP callout is registered at a URO-sensitive layer, then the OS will disable URO while the callout is registered.
 
 If a socket opts-in to URO with a max coalesced size greater than or equal to the hardware offload size, then the stack will deliver the NBLs from hardware unmodified to the socket.
 If a socket opts-in to a smaller max coalesced size, the stack will break the coalesced receive into the smaller size for the socket.

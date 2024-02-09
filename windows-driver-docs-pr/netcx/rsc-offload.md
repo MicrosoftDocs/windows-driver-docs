@@ -15,9 +15,9 @@ When receiving data, most layers in the TCP/IP stack must look at each segment's
 
 A network interface card (NIC) that supports RSC in hardware can greatly improve the receive path performance. It can also reduce the host CPU utilization as it frees the protocol layer from doing RSC in software.
 
-NetAdapterCX supports both TCP RSC and UDP RSC (URO). For more details, see: 
-- [Overview of Receive Segment Coalescing](../network/overview-of-receive-segment-coalescing.md)
-- [UDP RSC Offload (URO)](#udp-rsc-offload-uro)
+For more details on RSC, see [Overview of Receive Segment Coalescing](../network/overview-of-receive-segment-coalescing.md).
+
+NetAdapterCX also supports UDP RSC (URO) starting in version 2.5. For more details, see [UDP RSC Offload (URO)](#udp-rsc-offload-uro).
 
 ## INF keywords for controlling RSC offload
 
@@ -107,7 +107,9 @@ MyEvtAdapterOffloadSetRsc(
 
 ## UDP RSC Offload (URO)
 
-URO enables the coalescing of received UDP segments. NICs can combine UDP datagrams from the same flow that match a set of rules into a logically contiguous buffer. These combined datagrams are then indicated to the Windows networking stack as a single large packet. For information on URO rules, see [UDP Receive Segment Coalescing Offload](../network/udp-rsc-offload.md).
+URO enables the coalescing of received UDP segments. NICs can combine UDP datagrams from the same flow that match a set of rules into a logically contiguous buffer. These combined datagrams are then indicated to the Windows networking stack as a single large packet. For information on URO rules, see [Rules for coalescing UDP packets ](../network/udp-rsc-offload.md).
+
+The URO keyword specified in [INF keyword for controlling URO](../network/../network/udp-rsc-offload.md) can be used to enable/disable URO with a registry key setting.
 
 NetAdapterCx client drivers can use the existing RSC structures and RSC API for URO. To configure URO, client drivers must set the **Layer4Flags** field in the [**NET_ADAPTER_OFFLOAD_RSC_CAPABILITIES**](/windows-hardware/drivers/ddi/netadapteroffload/ns-netadapteroffload-_net_adapter_offload_rsc_capabilities) structure to `NetAdapterOffloadLayer4FlagUdp`.
 
