@@ -932,6 +932,8 @@
       href: kspropsetid-audioengine.md
     - name: "KSPROPSETID_AudioGfx"
       href: kspropsetid-audiogfx.md
+    - name: "KSPROPSETID_AudioLoopback"
+      href: kspropsetid-audioloopback.md      
     - name: "KSPROPSETID_AudioModule"
 # Auto-expanded node
       items: 
@@ -964,7 +966,7 @@
       href: kspropsetid-fmrxtopology.md
     - name: "KSPROPSETID_Hrtf3d"
       href: kspropsetid-hrtf3d.md
-    - name: "KSPROPSETID_INTERLEAVEDAUDIO_FORMATINFORMATION"
+    - name: "KSPROPSETID_InterleavedAudio"
       href: kspropsetid-interleavedaudio.md
     - name: "KSPROPSETID_Itd3d"
       href: kspropsetid-itd3d.md
@@ -1458,6 +1460,8 @@
       href: ksproperty-audiogfx-capturetargetdeviceid.md
     - name: "KSPROPERTY_AUDIOGFX_RENDERTARGETDEVICEID"
       href: ksproperty-audiogfx-rendertargetdeviceid.md
+    - name: "KSPROPERTY_AUDIOLOOPBACK"
+      href: ksproperty-audioloopback.md
     - name: "KSPROPERTY_AUDIOMODULE"
       href: ksproperty-audiomodule.md
     - name: "KSPROPERTY_AUDIOSIGNALPROCESSING"
