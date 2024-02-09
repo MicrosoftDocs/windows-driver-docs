@@ -20,11 +20,11 @@ To submit a request to the Partner Center drivers team in GitHub:
 
 1. Once you're on the page, select the feedback icon on the upper right side of the page.
 
-    :::image type="content" source="images/hardware-submission-support/github-feedback.png" alt-text="Screenshot showing the Github feedback icon on the documentation page.":::
+    :::image type="content" source="images/hardware-submission-support/github-feedback.png" alt-text="Screenshot showing the GitHub feedback icon on the documentation page.":::
 
 1. Your browser should now be scrolled to the **Feedback** section. Select **This page**.
 
-    :::image type="content" source="images/hardware-submission-support/github-feedback-this-page.png" alt-text="Screenshot showing the Github This Page button on the documentation page.":::
+    :::image type="content" source="images/hardware-submission-support/github-feedback-this-page.png" alt-text="Screenshot showing the GitHub This Page button on the documentation page.":::
 
 1. Enter the title and content of your feedback.
 
