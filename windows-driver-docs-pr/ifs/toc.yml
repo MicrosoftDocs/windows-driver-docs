@@ -379,18 +379,16 @@
       href: bypassio.md
     - name: "Supporting BypassIO operations"
       href: bypassio-operations.md
-  - name: "KM file copy and scenarios"
-    items:
-    - name: "Kernel-mode file copy and detecting copy file scenarios"
-      href: km-file-copy.md
-    - name: "NtCopyFileChunk"
-      href: nf-ntifs-ntcopyfilechunk.md
+  - name: "Kernel-mode file copy"
+    href: km-file-copy.md
   - name: "File system placeholders"
     items:
     - name: "About placeholders"
       href: placeholders.md
     - name: "Minifilter guidance for placeholders"
       href: placeholders_guidance.md
+  - name: "Vetoing a binding"
+    href: vetoing-a-binding.md
 - name: "File system legacy filter drivers"
   # Auto-expanded node L1
   items:
