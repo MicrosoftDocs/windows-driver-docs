@@ -13,7 +13,7 @@ Starting in Windows 11, version 24H2, [bind links](/windows/win32/bindlink/) can
 
 Minifilters can choose to veto a binding that changes directories they care about. For example, an antivirus filter can veto the binding of a folder that stores its definition files.
 
-Minifilters can veto a binding only on the system's boot partition ([**DO_SYSTEM_BOOT_PARTITION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object)). It's not possible to veto a binding on any other partitions.
+Minifilters can veto a binding only on the system's boot partition (DO_SYSTEM_BOOT_PARTITION). It's not possible to veto a binding on any other partitions.
 
 In response to a [**CreateBindLink**](/windows/win32/api/bindlink/nf-bindlink-createbindlink) request, *BindFlt* sends [**IRP_MJ_QUERY_OPEN**](flt-parameters-for-irp-mj-query-open.md) with the following parameters:
 
