@@ -165,9 +165,9 @@ Then reboot this machine by running shutdown -r -t 0 from this command prompt.
 
 `[port number]` is the TCP/IP port number. You can choose any port number from 49152 through 65535. The recommended range is between 50000 and 50039. The port that you choose will be opened for exclusive access by the debugger running on the host computer. Pick a unique port address for each target/host pair that you work with, within the recommended range of 50000-50039. 50005 is shown in the example.
 
-Note that -addpf will also add the `NO_KDNIC` attribute to the OS installation {default} load options. This is because KDNIC is no longer required to run on top of KDNET.
+Note that -addpf will also add the `NO_KDNIC` attribute to the OS installation {default} loadoptions. This is because KDNIC is no longer required to run on top of KDNET.
 
-The load options = NO_KDNIC is added to {default} OS tag to ensure that kdnic.sys won't run out of the newly added pf (141.0.1)
+The loadoptions = NO_KDNIC is added to {default} OS tag to ensure that kdnic.sys won't run out of the newly added pf (141.0.1)
 
 Use the bcdedit command to confirm that NO_KDNIC has been set.
 
@@ -308,7 +308,7 @@ Enabling network debugging on Mellanox ConnectX-4 Lx Ethernet Adapter #2.
 Manage-bde.exe not present.  Bitlocker presumed disabled.
 ```
 
-The kdnet.exe -removepf command also will remove the NO_KDNIC attribute from the OS installation {default} load options, since KDNET will be enabled on the original bus.dev.fun, that is the dbgsettings::busparams will point to the original network port. This will cause KDNIC to be used again, providing a network connection again on top of KDNET.
+The kdnet.exe -removepf command also will remove the NO_KDNIC attribute from the OS installation {default} loadoptions, since KDNET will be enabled on the original bus.dev.fun, that is the dbgsettings::busparams will point to the original network port. This will cause KDNIC to be used again, providing a network connection again on top of KDNET.
 
 
 Once the PF is removed the machine needs to be rebooted for the BCD changes to be applied.
