@@ -18,7 +18,7 @@ For information on how to create a VM, see [Create a Virtual Machine with Hyper-
 
 **2. Define an external virtual switch** 
 
-To communicate with the VM a virtual external network switch can be used. For information on how to create external network switch, see [Create a virtual network](/virtualization/hyper-v-on-windows/quick-start/connect-to-network).
+To communicate with the VM a virtual external network switch can be used. For information on how to create an external network switch, see [Create a virtual network](/virtualization/hyper-v-on-windows/quick-start/connect-to-network).
 
 When the external network switch is configured the following options must be set.
 
@@ -84,20 +84,20 @@ To run the host debugger on the same PC as the target virtual machine, follow th
 
 Use the kdnet.exe utility to automatically configure the  debugger settings on the target PC,  by following these steps.
 
-1. Locate the WDK *kdnet.exe* and *VerifiedNICList.xml* files. By default they are located here.
+1. Locate the WDK *kdnet.exe* and *VerifiedNICList.xml* files. By default, they are located here.
 
 ```console
 C:\Program Files (x86)\Windows Kits\10\Debuggers\x64
 ```
 
 > [!NOTE]
-> These directions assumes that both PCs are running a 64 bit version of Windows on both the target and host. 
+> These directions assume that both PCs are running a 64-bit version of Windows on both the target and host. 
 > If that is not the case, the best approach is to run the same "bitness" of tools on the host that the target is running. 
-For example, if the target is running 32 bit Windows, run a 32 version of the debugger on the host. 
+For example, if the target is running 32-bit Windows, run a 32 version of the debugger on the host. 
 > For more information, see [Choosing the 32-Bit or 64-Bit Debugging Tools](choosing-a-32-bit-or-64-bit-debugger-package.md).
 > 
 
-2. To allow the long key that is used to be cut and pasted, enable enhanced session support. In the VM window, from the **View** pull down menu, enable *Enhanced session*. 
+2. To allow the long key that is used to be cut and pasted, enable enhanced session support. In the VM window, from the **View** pull-down menu, enable *Enhanced session*. 
 
 3. On the target VM computer, create a C:\KDNET directory and copy the *kdnet.exe* and *VerifiedNICList.xml* files to that directory.
 
@@ -110,7 +110,7 @@ For example, if the target is running 32 bit Windows, run a 32 version of the de
     busparams=0.25.0, Intel(R) 82579LM Gigabit Network Connection, KDNET is running on this NIC.kdnet.exe
     ```
 
-5. Type this command to set the IP address of the host system and generated a unique connection key. Use the IP address of the host system you recorded earlier.  Pick a unique port address for each target/host pair that you work with, with in the range 50000-50039. For this example, we will select 50005.
+5. Type this command to set the IP address of the host system and generate a unique connection key. Use the IP address of the host system you recorded earlier.  Pick a unique port address for each target/host pair that you work with, within the range of 50000-50039. For this example, we will select 50005.
 
     ```console
     C:\>kdnet <YourIPAddress> <YourDebugPort> 
@@ -124,11 +124,11 @@ For example, if the target is running 32 bit Windows, run a 32 version of the de
     Then restart this VM by running shutdown -r -t 0 from this command prompt.
     ```
 
-6. Use CRTL+C to copy the provided windbg output into the command buffer. Doing this avoids attempting to write down the long key value that is returned.
+6. Use CRTL+C to copy the provided Windbg output into the command buffer. Doing this avoids attempting to write down the long key value that is returned.
 
 7. Re-enable BitLocker and secure boot when you're done configuring the debugger settings.
 
-8. Because a VM with enhanced session support can timeout when it is left in a breakpoint, disable *Enhanced session* support using the **View** pull down menu in the VM. 
+8. Because a VM with enhanced session support can timeout when it is left in a breakpoint, disable *Enhanced session* support using the **View** pull-down menu in the VM. 
 
 9. The VM will be restarted after the debugger is loaded and running. This process is described next.
 
@@ -136,7 +136,7 @@ For example, if the target is running 32 bit Windows, run a 32 version of the de
 ## Starting the Debugging Session
 
 
-1. To connect to the target PC, use CTRL+V to paste in the main OS command window the windbg string that was returned by kdnet that you copied earlier.
+1. To connect to the target PC, use CTRL+V to paste in the main OS command window the Windbg string that was returned by kdnet that you copied earlier.
 
     ```console
     C:\Debuggers\windbg -k net:port=<YourDebugPort>,key=<YourKey> 
@@ -156,7 +156,7 @@ When the target virtual machine is restarted, the debugger in the host OS should
 
 After connecting to the VM, hit break on your debugger and you can start debugging. 
 
-To support the debugging connection a Kernel Debug Network Adapter is added and visible in network properties, after the VM is rebooted.
+To support the debugging connection a Kernel Debug Network Adapter is added and visible in network properties after the VM is rebooted.
 
 ## Troubleshooting KDNET Virtual Machine Network Debugging
 
@@ -173,7 +173,7 @@ C:\>Ping <HostComputerIPAddress>
 
 *My VMs don't have network connectivity*
 
-- Open Virtual Switch Manager from Hyper-V Manager, select your existing Virtual Switch, and change the external network NIC to the Microsoft Kernel Debug Network Adapter by selecting it from the drop down box and then selecting OK in the Virtual Switch Manager dialog box.  After updating your Virtual Switch NIC, make sure to then shutdown and restart your VMs. 
+- Open Virtual Switch Manager from Hyper-V Manager, select your existing Virtual Switch, and change the external network NIC to the Microsoft Kernel Debug Network Adapter by selecting it from the drop-down box and then selecting OK in the Virtual Switch Manager dialog box.  After updating your Virtual Switch NIC, make sure to then shutdown and restart your VMs. 
 
 ## Sequence to add Hyper-V role to a Windows PC
 
