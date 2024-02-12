@@ -20,7 +20,7 @@ DTrace (DTrace.exe) is a command-line tool that displays system information and 
 > [!NOTE]
 > DTrace is supported in the Insider builds of Windows after version 18980 and Windows Server Build 18975.
 
-The DTrace on Windows Github site is located here:
+The DTrace on Windows GitHub site is located here:
 
 [https://github.com/microsoft/DTrace-on-Windows](https://github.com/microsoft/DTrace-on-Windows)
 
