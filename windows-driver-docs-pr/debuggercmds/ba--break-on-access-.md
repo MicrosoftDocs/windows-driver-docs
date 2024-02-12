@@ -100,16 +100,16 @@ Causes the breakpoint to be active only when the call stack depth is larger than
 <span id="_______dxObjectExpression______"></span><span id="_______dxObjectExpression______"></span><span id="_______DXOBJECTEXPRESSION______"></span> **/w dx object expression**
 Sets a conditional breakpoint based on the boolean value returned by dx object expression. The argument is a data model (dx) expression which evaluates to true (matches condition – break) or false (does not match condition – do not break).
 
-This example sets a conditional breakpoint based on the value of localVariable.
+This example sets a conditional breakpoint based on the value of globalVariable. This allows an access breakpoint, for instance, to check the value that was written when determining if the debugger should break in.
 
 ```dbgcmd
-bp /w "localVariable == 4" mymodule!myfunction
+ba w 4 /w "mymodule!globalVariable == 4" mymodule!globalVariable
 ```
 
 This example shows how to set a breakpoint using JavaScript.
 
 ```dbgcmd
-bp /w "@$scriptContents.myFunc(localVariable)" @rip
+ba w 4 /w "@$scriptContents.myFunc(mymodule!globalVariable)" mymodule!globalVariable
 ```
 
 For more information on debugger objects, see [dx (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md).
