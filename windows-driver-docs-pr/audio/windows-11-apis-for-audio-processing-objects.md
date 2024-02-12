@@ -189,7 +189,6 @@ The following code from the [Aec APO sample header-  AecAPO.h](https://github.co
 
 The following code is from the [Aec APO MFX sample - AecApoMfx.cpp](https://github.com/microsoft/Windows-driver-samples/blob/main/audio/sysvad/APO/AecApo/AecApoMfx.cpp) and shows the implementation of AddAuxiliaryInput, when the APO can only handle one auxiliary input.
 
-
 ```cpp
 STDMETHODIMP
 CAecApoMFX::AddAuxiliaryInput(
@@ -222,7 +221,7 @@ Also review the sample code that shows the implementation of `CAecApoMFX::IsInpu
 
 ### Sequence of operations - AEC
 
-On initialization: 
+On initialization:
 
 1. IAudioProcessingObject::Initialize
 2. IApoAuxiliaryInputConfiguration::AddAuxiliaryInput
