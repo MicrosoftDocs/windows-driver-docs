@@ -39,7 +39,7 @@ A driver which only supports `AUDIOLOOPBACK_TAPPOINT_CAPS_POSTVOLUMEMUTE` will f
 
 ## AUDIOLOOPBACK_TAPPOINT_TYPE enum
 
-The AUDIOLOOPBACK_TAPPOINT_TYPE enum contains the  pre and post tap point definitions. For more information, see [AUDIOLOOPBACK_TAPPOINT_TYPE enum](/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-audioloopback_tappoint_type).
+The AUDIOLOOPBACK_TAPPOINT_TYPE enum contains the  pre and post tap point definitions. For more information, see [AUDIOLOOPBACK_TAPPOINT_TYPE enum](ne-ksmedia-audioloopback_tappoint_type.md).
 
 ### See also
 
@@ -47,6 +47,6 @@ The AUDIOLOOPBACK_TAPPOINT_TYPE enum contains the  pre and post tap point defini
 
 [KSPROPERTY structure](/windows-hardware/drivers/stream/ksproperty-structure)
 
-[AUDIOLOOPBACK_TAPPOINT_TYPE enum](/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-audioloopback_tappoint_type)
+[AUDIOLOOPBACK_TAPPOINT_TYPE enum](ne-ksmedia-audioloopback_tappoint_type.md)
 
-[KSATTRIBUTE_AUDIOLOOPBACK_TAPPOINT structure](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksattribute_audioloopback_tappoint)
+[KSATTRIBUTE_AUDIOLOOPBACK_TAPPOINT structure](ns-ksmedia-ksattribute_audioloopback_tappoint.md)

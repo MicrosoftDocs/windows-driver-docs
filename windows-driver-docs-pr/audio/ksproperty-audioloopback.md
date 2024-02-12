@@ -18,13 +18,13 @@ ms.date: 02/06/2024
 
 The **KSPROPERTY_AUDIOLOOPBACK** property indicates if the loopback tap point is pre or post volume and mute.
 
-Starting in Windows 11 23H2, setting the KSPROPERTY_AUDIOLOOPBACK property is a requirement.
+Starting in Windows 11 24H2, setting the KSPROPERTY_AUDIOLOOPBACK property is a requirement.
 
 ## Usage Summary Table
 
 |Get|Set|Target|Property descriptor type|Property value type|
 |-- |-- |---- |------------------------ |------------------ |
-|Yes|No |Pin  |[KSATTRIBUTE_AUDIOLOOPBACK_TAPPOINT](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksattribute_audioloopback_tappoint/) | [KSATTRIBUTE structure](/windows-hardware/drivers/ddi/ks/ns-ks-ksattribute)|
+|Yes|No |Pin  |[KSATTRIBUTE_AUDIOLOOPBACK_TAPPOINT](ns-ksmedia-ksattribute_audioloopback_tappoint.md) | [KSATTRIBUTE structure](/windows-hardware/drivers/ddi/ks/ns-ks-ksattribute)|
 
 KSPROPERTY_AUDIOLOOPBACK is an enum of properties that are associated with [KSPROPSETID_AudioLoopback](kspropsetid-audioloopback.md), with the following property implemented.
 
@@ -45,7 +45,7 @@ The tappoint caps are defined as follows.
 #define AUDIOLOOPBACK_TAPPOINT_CAPS_POSTVOLUMEMUTE     (0x2)
 ```
 
-The [KSATTRIBUTE_AUDIOLOOPBACK_TAPPOINT structure](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksattribute_audioloopback_tappoint/) available in ksmedia.h can provide a wrapper for specifying the AUDIO_LOOPBACK_TAPPOINT_TYPE attribute about where to tap loopback in the stream graph.
+The [KSATTRIBUTE_AUDIOLOOPBACK_TAPPOINT structure](ns-ksmedia-ksattribute_audioloopback_tappoint.md) available in ksmedia.h can provide a wrapper for specifying the AUDIO_LOOPBACK_TAPPOINT_TYPE attribute about where to tap loopback in the stream graph.
 
 ### Return Value
 
@@ -84,18 +84,17 @@ DEFINE_GUIDSTRUCT("8F42C0B2-91CE-4BCF-9CCD-0E599037AB35", KSNODETYPE_AUDIO_LOOPB
 #define KSNODETYPE_AUDIO_LOOPBACK DEFINE_GUIDNAMED(KSNODETYPE_AUDIO_LOOPBACK)
 ```
 
-
 ## Requirements
 
 | Requirement              | Value                   |
 |--------------------------|-------------------------|
-| Minimum supported client | Windows 11 Version 23H2 |
+| Minimum supported client | Windows 11 Version 24H2 |
 | Header                   | Ksmedia.h               |
 
 ## See also
 
 [KSPROPSETID_AudioLoopback](kspropsetid-audioloopback.md)
 
-[AUDIOLOOPBACK_TAPPOINT_TYPE enum](/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-audioloopback_tappoint_type)
+[AUDIOLOOPBACK_TAPPOINT_TYPE enum](ne-ksmedia-audioloopback_tappoint_type.md)
 
-[KSATTRIBUTE_AUDIOLOOPBACK_TAPPOINT structure](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksattribute_audioloopback_tappoint/)
+[KSATTRIBUTE_AUDIOLOOPBACK_TAPPOINT structure](ns-ksmedia-ksattribute_audioloopback_tappoint.md)
