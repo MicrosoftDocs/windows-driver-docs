@@ -387,8 +387,8 @@
       href: placeholders.md
     - name: "Minifilter guidance for placeholders"
       href: placeholders_guidance.md
-  - name: "Vetoing a binding"
-    href: vetoing-a-binding.md
+  - name: "Vetoing a bind link"
+    href: vetoing-a-bind-link.md
 - name: "File system legacy filter drivers"
   # Auto-expanded node L1
   items:
