@@ -1,5 +1,5 @@
 ---
-title: Firmware update status
+title: Firmware Update Status
 description: It is expected that all firmware updates will be applied, and the results of all updates reflected in the ESRT on the subsequent invocation of the Windows OS loader.
 ms.date: 03/23/2023
 ---

@@ -1,5 +1,5 @@
 ---
-title: Old method - Windows 10, version 1607 and earlier
+title: Old Method - Windows 10, Version 1607 and Earlier
 description: Provides information about the old method upgrade scenario (Windows 7 to Windows 10) - Windows 10, version 1607 and earlier.
 ms.date: 03/23/2023
 ---

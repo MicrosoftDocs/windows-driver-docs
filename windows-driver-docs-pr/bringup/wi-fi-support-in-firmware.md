@@ -1,5 +1,5 @@
 ---
-title: Wi-Fi support in firmware 
+title: Wi-Fi Support in Firmware 
 description: Wi-Fi support in firmware 
 ms.date: 07/05/2023
 ---

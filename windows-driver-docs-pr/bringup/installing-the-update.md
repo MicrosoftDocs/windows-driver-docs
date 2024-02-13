@@ -1,5 +1,5 @@
 ---
-title: Install the update
+title: Install the Update
 description: Firmware update packages can be installed using any tool that installs Windows drivers.
 ms.date: 03/23/2023
 ---
