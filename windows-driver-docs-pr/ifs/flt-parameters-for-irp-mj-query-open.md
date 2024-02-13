@@ -1,7 +1,7 @@
 ---
 title: FLT_PARAMETERS for IRP_MJ_QUERY_OPEN Union
 description: The following union component is used when the MajorFunction field of the FLT_IO_PARAMETER_BLOCK structure for the operation is IRP_MJ_QUERY_OPEN.
-keywords: ["FLT_PARAMETERS for IRP_MJ_QUERY_OPEN union Installable File System Drivers", "FLT_PARAMETERS union Installable File System Drivers", "PFLT_PARAMETERS union pointer Installable File System Drivers"]
+keywords: ["FLT_PARAMETERS for IRP_MJ_QUERY_OPEN union WDK", "FLT_PARAMETERS union WDK", "PFLT_PARAMETERS union pointer Installable File System WDK"]
 topic_type:
 - apiref
 api_name:
@@ -10,7 +10,7 @@ api_location:
 - fltkernel.h
 api_type:
 - HeaderDef
-ms.date: 03/13/2023
+ms.date: 02/12/2024
 ms.topic: reference
 ---
 
@@ -48,6 +48,7 @@ typedef union _FLT_PARAMETERS {
   | FileStatInformation | A [**FILE_STAT_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_stat_information) structure. This structure contains an access mask. For more information about access masks, see [ACCESS_MASK](../kernel/access-mask.md). |
   | FileStatLxInformation | A [**FILE_STAT_LX_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_stat_lx_information) structure. This structure contains an access mask. For more information about access masks, see [ACCESS_MASK](../kernel/access-mask.md). |
   | FileCaseSensitiveInformation | A [**FILE_CASE_SENSITIVE_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_case_sensitive_information) structure. |
+  | FileStatBasicInformation | A [**FILE_STAT_BASIC_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_stat_basic_information) structure. |
 
 ## Remarks
 
