@@ -1,5 +1,5 @@
 ---
-title: What's new in driver development
+title: What's New in Driver Development for Windows 11, Version 23H2
 description: This section describes new features for driver development in Windows 11, version 23H2.
 ms.date: 10/24/2023
 ---

@@ -1,7 +1,7 @@
 ---
-title: What's new in driver development
+title: What's New in Driver Development for Windows 11, Version 24H2
 description: This section describes new features for driver development in Windows 11, version 24H2.
-ms.date: 04/08/2024
+ms.date: 02/12/2024
 ---
 
 # <a name="top"></a>What's new in driver development for Windows 11, version 24H2
@@ -16,7 +16,7 @@ This section describes new features and updates for driver development in Window
 
 ## Display and graphics drivers
 
-* A [GPU native fence synchronization object] is added as an extenion to the monitored fence object, supporting the following additional features:
+* A [GPU native fence synchronization object] is added as an extension to the monitored fence object, supporting the following additional features:
 
   * GPU wait on monitored fence value, which allows for high performance engine-to-engine synchronization without requiring CPU round trips.
   * Conditional interrupt notification only for GPU fence signals that have CPU waiters, enabling substantial power savings.
