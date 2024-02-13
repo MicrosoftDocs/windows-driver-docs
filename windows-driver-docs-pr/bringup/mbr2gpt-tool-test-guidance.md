@@ -1,5 +1,5 @@
 ---
-title: MBR2GPT tool test guidance
+title: MBR2GPT Tool Test Guidance
 description: Provides guidance on the MBR2GPT tool test.
 ms.date: 03/23/2023
 ---

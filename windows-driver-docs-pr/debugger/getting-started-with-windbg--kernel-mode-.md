@@ -47,7 +47,7 @@ After you set up your host and target computer and connect them with a debug cab
 
 1. On the host computer, open WinDbg and establish a kernel-mode debugging session with the target computer.
 2. To open the debugger documentation CHM file, go to the **Help** menu and select **Contents**. The debugger documentation is also available online in [Debugging Tools for Windows](index.md).
-3. When you establish a kernel-mode debugging session, WinDbg might break in to the target computer automatically. If WinDbg doesn't break in, go to the **Debug** menu and select **Break**.
+3. When you establish a kernel-mode debugging session, WinDbg might break into the target computer automatically. If WinDbg doesn't break in, go to the **Debug** menu and select **Break**.
 
 4. In the command line at the bottom of the WinDbg window, enter the following command:
 
@@ -85,7 +85,7 @@ After you set up your host and target computer and connect them with a debug cab
    ...
    ```
 
-6. To start target computer running, enter the following command:
+6. To start the target computer running, enter the following command:
 
    [g](../debuggercmds/g--go-.md)
 
@@ -141,7 +141,7 @@ After you set up your host and target computer and connect them with a debug cab
 
     Enter [g](../debuggercmds/g--go-.md) to let the target computer run.
 
-11. If the target computer doesn't break in to the debugger immediately, perform a few actions on the target computer (for example, open Notepad). The target computer will break in to the debugger when **MmCreateProcessAddressSpace** is called. To see the stack trace, enter the following commands:
+11. If the target computer doesn't break into the debugger immediately, perform a few actions on the target computer (for example, open Notepad). The target computer will break into the debugger when **MmCreateProcessAddressSpace** is called. To see the stack trace, enter the following commands:
 
     [.reload](../debuggercmds/-reload--reload-module-.md)
 
@@ -357,7 +357,7 @@ After you set up your host and target computer and connect them with a debug cab
 
     Enter `g` to let the target computer run.
 
-    If the target computer doesn't break in to the debugger immediately, perform a few actions on the target computer (for example, open Notepad and save a file). The target computer will break in to the debugger when `ClassGlobalDispatch` is called. To see the stack trace, enter the following commands:
+    If the target computer doesn't break into the debugger immediately, perform a few actions on the target computer (for example, open Notepad and save a file). The target computer will break into the debugger when `ClassGlobalDispatch` is called. To see the stack trace, enter the following commands:
 
     [.reload](../debuggercmds/-reload--reload-module-.md)
 
