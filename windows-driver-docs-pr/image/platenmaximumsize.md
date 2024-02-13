@@ -1,5 +1,5 @@
 ---
-title: PlatenMaximumSize element
+title: PlatenMaximumSize Element
 description: The required PlatenMaximumSize element specifies the largest size document that an end user can scan on the flatbed platen.
 keywords: ["PlatenMaximumSize element Imaging Devices"]
 topic_type:

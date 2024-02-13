@@ -1,5 +1,5 @@
 ---
-title: Mobile Plans account management
+title: Mobile Plans Account Management
 description: This topic describes the Windows account management experience with Mobile Plans.
 keywords:
 - Windows Mobile Plans account management, Mobile Plans mobile operators

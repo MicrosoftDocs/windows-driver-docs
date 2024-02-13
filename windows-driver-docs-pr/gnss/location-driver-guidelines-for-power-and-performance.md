@@ -1,5 +1,5 @@
 ---
-title: Location driver guidelines for power and performance
+title: Location Driver Guidelines for Power and Performance
 description: The following sections describe guidelines to ensure that your location driver conserves power and provides data efficiently.
 ms.date: 03/21/2023
 ---

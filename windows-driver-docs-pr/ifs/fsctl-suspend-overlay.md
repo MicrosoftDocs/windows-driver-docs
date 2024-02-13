@@ -1,5 +1,5 @@
 ---
-title: FSCTL_SUSPEND_OVERLAY control code
+title: FSCTL_SUSPEND_OVERLAY Control Code
 description: The FSCTL_SUSPEND_OVERLAY control code suspends a backing source attached to a volume, preventing access to the backing source and allowing it to be modified or removed.
 keywords: ["FSCTL_SUSPEND_OVERLAY control code Installable File System Drivers"]
 topic_type:

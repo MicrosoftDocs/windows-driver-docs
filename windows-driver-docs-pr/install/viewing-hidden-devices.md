@@ -1,5 +1,5 @@
 ---
-title: Viewing hidden devices
+title: Viewing Hidden Devices
 description: Viewing hidden devices
 keywords:
 - non-present devices WDK

@@ -21,7 +21,7 @@ The **!ks.objhdr** extension displays the kernel streaming object header associa
 !ks.objhdr FileObject [Level] [Flags]  
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______FileObject______"></span><span id="_______fileobject______"></span><span id="_______FILEOBJECT______"></span> *FileObject*   
@@ -33,7 +33,7 @@ Optional. Values are the same as those for [**!ks.dump**](-ks-dump.md).
 <span id="_______Flags______"></span><span id="_______flags______"></span><span id="_______FLAGS______"></span> *Flags*   
 Optional. Values are the same as those for [**!ks.dump**](-ks-dump.md).
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

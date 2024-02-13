@@ -1,5 +1,5 @@
 ---
-title: Checking the Oplock State of an IRP_MJ_CREATE operation
+title: Checking the Oplock State of an IRP_MJ_CREATE Operation
 description: Checking the Oplock State of an IRP_MJ_CREATE operation
 ms.date: 04/20/2017
 ---

@@ -1,5 +1,5 @@
 ---
-title: CancelJobResponse element
+title: CancelJobResponse Element
 description: The required CancelJobResponse operation element acknowledges a client's job cancelation request.
 keywords: ["CancelJobResponse element Imaging Devices"]
 topic_type:

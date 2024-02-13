@@ -1,5 +1,5 @@
 ---
-title: Streaming media device driver design guide
+title: Streaming Media Device Driver Design Guide
 description: Use the guidance in this section to design and implement drivers for devices that stream video and audio.
 keywords:
 - streaming media WDK

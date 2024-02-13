@@ -21,13 +21,13 @@ The **!ks.enumdrvobj** extension displays all KSDEVICE structures associated wit
 !ks.enumdrvobj DriverObject
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______DriverObject______"></span><span id="_______driverobject______"></span><span id="_______DRIVEROBJECT______"></span> *DriverObject*   
 Specifies a pointer to a WDM driver object.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

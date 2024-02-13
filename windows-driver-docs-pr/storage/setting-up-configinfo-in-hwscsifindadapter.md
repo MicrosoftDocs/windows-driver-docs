@@ -1,5 +1,5 @@
 ---
-title: Setting up ConfigInfo in HwScsiFindAdapter
+title: Setting Up ConfigInfo in HwScsiFindAdapter
 description: Setting up ConfigInfo in HwScsiFindAdapter
 keywords:
 - HwScsiFindAdapter

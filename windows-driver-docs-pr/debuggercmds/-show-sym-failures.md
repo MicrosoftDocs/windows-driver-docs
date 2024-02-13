@@ -24,7 +24,7 @@ The **.show\_sym\_failures** command enables or disables the display of symbol l
 .show_sym_failures /T
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="________s______"></span><span id="________S______"></span> **/s**   

@@ -1,5 +1,5 @@
 ---
-title: How to read the driver test results log
+title: How to Read the Driver Test Results Log
 description: From the Driver Test Group Explorer, you can display the results from driver tests, save the test results to a folder, or load the results from a folder.
 ms.date: 04/20/2017
 ---

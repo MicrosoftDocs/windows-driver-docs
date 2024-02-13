@@ -1,5 +1,5 @@
 ---
-title: About reparse points
+title: About Reparse Points
 description: Describes file system filter driver reparse points
 keywords:
 - WDK file systems filter driver , reparse points

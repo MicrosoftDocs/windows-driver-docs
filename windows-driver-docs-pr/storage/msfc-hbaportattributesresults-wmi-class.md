@@ -1,5 +1,5 @@
 ---
-title: MSFC\_HBAPortAttributesResults WMI Class
+title: MSFC_HBAPortAttributesResults WMI Class
 description: MSFC\_HBAPortAttributesResults WMI Class
 ms.date: 10/17/2018
 ---

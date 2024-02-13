@@ -1,5 +1,5 @@
 ---
-title: GetSecurityDescriptor method of the MSFT\_VirtualDisk class
+title: GetSecurityDescriptor Method of the MSFT_VirtualDisk Class
 description: Retrieves the security descriptor that controls access to the virtual disk object instance.
 ms.assetid: 430EAAFF-96B4-45E4-9D4F-0713B4094B5B
 keywords:

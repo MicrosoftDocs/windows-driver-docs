@@ -1,5 +1,5 @@
 ---
-title: About minifilter contexts
+title: About Minifilter Contexts
 description: Defines minifilter context and lists types of minifilter contexts
 keywords:
 - file system minifilter drivers WDK , contexts

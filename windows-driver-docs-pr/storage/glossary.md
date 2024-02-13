@@ -1,5 +1,5 @@
 ---
-title: Storage class memory glossary
+title: Storage Class Memory Glossary
 description: Glossary page
 Robots: noindex, nofollow
 ms.date: 10/17/2018

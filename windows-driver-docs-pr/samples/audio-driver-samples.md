@@ -1,5 +1,5 @@
 ---
-title: Audio driver samples
+title: Audio Driver Samples
 description: The audio driver sample in this directory provides a starting point for writing a custom audio driver for your device.
 ms.date: 03/22/2023
 ---

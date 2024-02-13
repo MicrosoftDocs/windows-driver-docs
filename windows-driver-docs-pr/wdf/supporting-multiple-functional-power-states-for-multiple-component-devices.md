@@ -1,5 +1,5 @@
 ---
-title: Multiple-Component Device, one or more Functional Power States
+title: Multiple-Component Device, One or More Functional Power States
 description: Supporting Multiple-Component Devices with Single or Multiple Functional Power States
 ms.date: 04/20/2017
 ---

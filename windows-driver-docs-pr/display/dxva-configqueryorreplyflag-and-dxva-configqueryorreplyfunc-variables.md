@@ -17,7 +17,6 @@ keywords:
 - probing configurations WDK DirectX VA
 - configuration probing and locking WDK DirectX VA
 ms.date: 12/06/2018
-ms.custom: seodec18
 ---
 
 # DXVA\_ConfigQueryOrReplyFlag and DXVA\_ConfigQueryorReplyFunc Variables
@@ -143,4 +142,3 @@ The least significant 8 bits of the *DXVA\_EncryptProtocolFunc* DWORD variable c
 When *bDXVA\_Func* is used to signal an actual operation to be performed (compressed picture decoding, alpha-blend data loading, alpha-blend combination, or picture resampling), *bDXVA\_Func* is conveyed to the accelerator by inclusion in a series of *bDXVA\_Func* byte values in the **dwFunction** member of a [**DD\_RENDERMOCOMPDATA**](/windows/win32/api/ddrawint/ns-ddrawint-dd_rendermocompdata) structure in a call to [*DdMoCompRender*](/windows/win32/api/ddrawint/nc-ddrawint-pdd_mocompcb_render). The first *bDXVA\_Func* operation is specified in the most significant byte, the next operation is specified in the next most significant byte, and so on. Any remaining bytes of **dwFunction** are set to zero.
 
  
-

@@ -27,7 +27,7 @@ The **!imgreloc** extension displays the addresses of each loaded module and ind
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the base address of the image.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

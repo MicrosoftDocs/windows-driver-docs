@@ -1,5 +1,5 @@
 ---
-title: Support for headless systems
+title: Support for Headless Systems
 description: Windows 8 supports booting without any graphics hardware.
 ms.date: 04/20/2017
 ---

@@ -1,5 +1,5 @@
 ---
-title: JobHistory element (required)
+title: JobHistory Element (Required)
 description: The required JobHistory element contains a list of JobSummary elements that describe the most recently completed jobs in the scan device.
 keywords: ["JobHistory element Imaging Devices"]
 topic_type:

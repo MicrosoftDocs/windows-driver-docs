@@ -21,7 +21,7 @@ The **!ks.help** extension displays a help text showing all AVStream-specific Ks
 !ks.help 
 ```
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

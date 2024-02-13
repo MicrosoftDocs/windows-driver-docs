@@ -21,7 +21,7 @@ The **!ks.graph** extension command displays a textual description of the kernel
 !ks.graph Object [Level] [Flags] 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Object______"></span><span id="_______object______"></span><span id="_______OBJECT______"></span> *Object*   
@@ -42,7 +42,7 @@ Display a list of IRPs that are pending from each pin instance in the graph. Onl
 <span id="Bit_4__0x10_"></span><span id="bit_4__0x10_"></span><span id="BIT_4__0X10_"></span>Bit 4 (0x10)  
 Analyze a stalled graph for suspect filters.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

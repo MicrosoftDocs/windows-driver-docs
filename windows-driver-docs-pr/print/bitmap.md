@@ -1,5 +1,5 @@
 ---
-title: bitmap element
+title: Bitmap Element
 description: The optional bitmap element is used to display a bitmap image to the left of the body text in a message box.
 keywords: ["bitmap element Print Devices"]
 topic_type:

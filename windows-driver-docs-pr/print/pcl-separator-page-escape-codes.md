@@ -1,5 +1,5 @@
 ---
-title: PCL separator page escape codes
+title: PCL Separator Page Escape Codes
 description: PCL separator page escape codes
 keywords:
 - PCL separator page escape codes WDK PCL XL

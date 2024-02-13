@@ -1,5 +1,5 @@
 ---
-title: SRB\_OPEN\_MASTER\_CLOCK
+title: SRB_OPEN_MASTER_CLOCK
 description: SRB\_OPEN\_MASTER\_CLOCK
 keywords: ["SRB_OPEN_MASTER_CLOCK Streaming Media Devices"]
 topic_type:

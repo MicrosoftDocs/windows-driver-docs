@@ -1,5 +1,5 @@
 ---
-title: IRP_MJ_CLEANUP (FS and FS filters)
+title: IRP_MJ_CLEANUP (FS and FS Filters)
 description: IRP_MJ_CLEANUP
 keywords: ["IRP_MJ_CLEANUP Installable File System Drivers"]
 topic_type:

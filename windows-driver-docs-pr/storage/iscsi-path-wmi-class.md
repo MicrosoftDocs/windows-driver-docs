@@ -1,5 +1,5 @@
 ---
-title: ISCSI\_Path WMI Class
+title: ISCSI_Path WMI Class
 description: ISCSI\_Path WMI Class
 ms.date: 10/17/2018
 ---

@@ -1,5 +1,5 @@
 ---
-title: Layout property
+title: Layout Property
 description: Contains information about the appearance of each page of the print job.
 ms.date: 09/07/2021
 ---

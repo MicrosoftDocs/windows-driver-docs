@@ -1,5 +1,5 @@
 ---
-title: Mount method of the MSFT\_DiskImage class
+title: Mount Method of the MSFT_DiskImage Class
 description: Mounts the disk image.
 ms.assetid: CD233786-8087-4093-834B-096FE2ADBEB1
 keywords:

@@ -1,5 +1,5 @@
 ---
-title: JobSummary element
+title: JobSummary Element
 description: The optional JobSummary element contains a summary about a scan job.
 keywords: ["JobSummary element Imaging Devices"]
 topic_type:

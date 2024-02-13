@@ -1,5 +1,5 @@
 ---
-title: SM\_AddLink function
+title: SM_AddLink Function
 description: The SM\_AddLink WMI method configures the WMI provider to inform the WMI client of fabric link events.
 keywords: ["SM_AddLink function Storage Devices"]
 topic_type:

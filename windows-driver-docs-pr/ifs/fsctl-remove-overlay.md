@@ -1,5 +1,5 @@
 ---
-title: FSCTL_REMOVE_OVERLAY control code
+title: FSCTL_REMOVE_OVERLAY Control Code
 description: The FSCTL_REMOVE_OVERLAY control code removes a backing source from a volume.
 keywords: ["FSCTL_REMOVE_OVERLAY control code Installable File System Drivers"]
 topic_type:

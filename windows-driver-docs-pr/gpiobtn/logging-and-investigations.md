@@ -1,5 +1,5 @@
 ---
-title: Logging and investigations
+title: Logging and Investigations
 description: This topic describes logging and investigations for GPIO implementations.
 ms.date: 10/17/2018
 ---

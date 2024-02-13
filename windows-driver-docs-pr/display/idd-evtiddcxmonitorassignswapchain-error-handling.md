@@ -1,5 +1,5 @@
 ---
-title: EvtIddCxMonitorAssignSwapChain error handling
+title: EvtIddCxMonitorAssignSwapChain Error Handling
 description: Error handling associated with EvtIddCxMonitorAssignSwapChain
 ms.date: 08/05/2022
 keywords:

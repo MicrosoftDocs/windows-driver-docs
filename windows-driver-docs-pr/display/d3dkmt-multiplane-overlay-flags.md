@@ -1,5 +1,5 @@
 ---
-title: D3DKMT\_MULTIPLANE\_OVERLAY\_FLAGS enumeration
+title: D3DKMT_MULTIPLANE_OVERLAY_FLAGS Enumeration
 description: Learn about the D3DKMT\_MULTIPLANE\_OVERLAY\_FLAGS enumeration, which is reserved for system use. Do not use in your driver.
 keywords: ["D3DKMT_MULTIPLANE_OVERLAY_FLAGS enumeration Display Devices"]
 topic_type:

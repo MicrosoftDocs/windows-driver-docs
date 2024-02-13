@@ -1,5 +1,5 @@
 ---
-title: Windows compatible hardware development boards
+title: Windows Compatible Hardware Development Boards
 description: Leverage the power of the Windows platform and Visual Studio to create innovative experiences and solutions that are brought to life by interfacing hardware components to Windows devices.
 ms.date: 04/20/2017
 ---

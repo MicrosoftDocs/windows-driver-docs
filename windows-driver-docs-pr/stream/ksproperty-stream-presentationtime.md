@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_STREAM\_PRESENTATIONTIME
+title: KSPROPERTY_STREAM_PRESENTATIONTIME
 description: The KSPROPERTY\_STREAM\_PRESENTATIONTIME property is used to retrieve and set the current presentation time of a filter pin.
 keywords: ["KSPROPERTY_STREAM_PRESENTATIONTIME Streaming Media Devices"]
 topic_type:

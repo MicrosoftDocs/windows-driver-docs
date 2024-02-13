@@ -4,7 +4,6 @@ description: The display miniport driver can receive requests to retrieve COPP-c
 keywords:
 - OPM WDK display , retrieving COPP-compatible information
 ms.date: 12/06/2018
-ms.custom: seodec18
 ---
 
 # Retrieving COPP-Compatible Information on Protected Output
@@ -41,4 +40,3 @@ The driver returns the following information for the indicated request:
 -   For DXGKMDT\_OPM\_GET\_CONNECTED\_HDCP\_DEVICE\_INFORMATION set in **guidInformation** and undefined in **abParameters**, the driver returns information in the members of [**DXGKMDT\_OPM\_CONNECTED\_HDCP\_DEVICE\_INFORMATION**](/windows-hardware/drivers/ddi/d3dkmdt/ns-d3dkmdt-_dxgkmdt_opm_connected_hdcp_device_information) that contain High-bandwidth Digital Content Protection (HDCP) information.
 
  
-

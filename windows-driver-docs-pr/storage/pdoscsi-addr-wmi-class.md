@@ -1,5 +1,5 @@
 ---
-title: PDOSCSI\_ADDR WMI Class
+title: PDOSCSI_ADDR WMI Class
 description: PDOSCSI\_ADDR WMI Class
 ms.date: 10/17/2018
 ---

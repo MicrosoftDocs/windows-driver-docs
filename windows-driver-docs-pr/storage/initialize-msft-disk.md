@@ -1,5 +1,5 @@
 ---
-title: Initialize method of the MSFT\_Disk class
+title: Initialize Method of the MSFT_Disk Class
 description: Initializes a RAW disk with a particular partition style.
 ms.assetid: 70782a94-406f-4c28-9562-8df554b65463
 keywords:

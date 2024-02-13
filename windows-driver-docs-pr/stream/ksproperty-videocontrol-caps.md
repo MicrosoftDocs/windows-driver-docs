@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_VIDEOCONTROL\_CAPS
+title: KSPROPERTY_VIDEOCONTROL_CAPS
 description: The KSPROPERTY\_VIDEOCONTROL\_CAPS property identifies the video control capabilities of the device. This property must be implemented.
 keywords: ["KSPROPERTY_VIDEOCONTROL_CAPS Streaming Media Devices"]
 topic_type:

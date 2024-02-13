@@ -1,5 +1,5 @@
 ---
-title: Option attributes for the PaperSize feature
+title: Option Attributes for the PaperSize Feature
 description: Option attributes for the PaperSize feature
 keywords:
 - PaperSize Feature

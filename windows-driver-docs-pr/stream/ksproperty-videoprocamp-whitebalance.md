@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_VIDEOPROCAMP\_WHITEBALANCE
+title: KSPROPERTY_VIDEOPROCAMP_WHITEBALANCE
 description: The KSPROPERTY\_VIDEOPROCAMP\_WHITEBALANCE property sets or gets a camera's white balance setting. This property is optional.
 keywords: ["KSPROPERTY_VIDEOPROCAMP_WHITEBALANCE Streaming Media Devices"]
 topic_type:

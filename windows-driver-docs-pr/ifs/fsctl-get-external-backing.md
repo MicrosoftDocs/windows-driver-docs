@@ -1,5 +1,5 @@
 ---
-title: FSCTL_GET_EXTERNAL_BACKING control code
+title: FSCTL_GET_EXTERNAL_BACKING Control Code
 description: The FSCTL_GET_EXTERNAL_BACKING control code gets the backing information for a file from an external backing provider.
 keywords: ["FSCTL_GET_EXTERNAL_BACKING control code Installable File System Drivers"]
 topic_type:

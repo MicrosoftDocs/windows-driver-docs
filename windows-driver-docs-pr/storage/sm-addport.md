@@ -1,5 +1,5 @@
 ---
-title: SM\_AddPort function
+title: SM_AddPort Function
 description: The SM\_AddPort WMI method configures the WMI provider to inform the WMI client about events that are associated with the indicated port.
 keywords: ["SM_AddPort function Storage Devices"]
 topic_type:

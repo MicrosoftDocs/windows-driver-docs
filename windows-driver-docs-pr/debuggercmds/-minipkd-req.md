@@ -22,7 +22,7 @@ The **!minipkd.req** extension displays information about all of the currently a
 !minipkd.req Device 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Adapter______"></span><span id="_______adapter______"></span><span id="_______ADAPTER______"></span> *Adapter*   
@@ -31,7 +31,7 @@ Specifies the address of the adapter.
 <span id="_______Device______"></span><span id="_______device______"></span><span id="_______DEVICE______"></span> *Device*   
 Specifies the physical device object (PDO) for the Logical Unit Extension (LUN) device.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

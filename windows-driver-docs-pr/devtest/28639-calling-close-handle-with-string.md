@@ -1,5 +1,5 @@
 ---
-title: C28639 warning
+title: C28639 Warning
 description: Warning C28639 Calling close handle with string.
 ms.date: 04/20/2017
 f1_keywords: 

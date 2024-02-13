@@ -1,5 +1,5 @@
 ---
-title: MSFT\_FileIntegrity class
+title: MSFT_FileIntegrity Class
 description: Represents the file integrity state for a file.
 ms.assetid: 1CDF98E4-3E19-4324-AE61-15F2FEF94BBA
 keywords:

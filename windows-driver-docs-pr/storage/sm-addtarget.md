@@ -1,5 +1,5 @@
 ---
-title: SM\_AddTarget function
+title: SM_AddTarget Function
 description: The SM\_AddTarget WMI method configures the WMI provider to inform the WMI client about events that are associated with the indicated targets.
 keywords: ["SM_AddTarget function Storage Devices"]
 topic_type:

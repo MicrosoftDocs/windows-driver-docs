@@ -20,12 +20,12 @@ The **!wudfext.wudfrequest** extension displays information about an I/O request
 !wudfext.wudfrequest pWDFRequest
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 <span id="_______pWDFRequest______"></span><span id="_______pwdfrequest______"></span><span id="_______PWDFREQUEST______"></span> *pWDFRequest*   
 Specifies the address of the **WDFIoRequest** interface to display information about. The [**!wudfext.wudfqueue**](-wudfext-wudfqueue.md) extension command determines the address of **WDFIoRequest**.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Wudfext.dll
  

@@ -31,7 +31,7 @@ Specifies the number of the endpoint to be displayed. If omitted, the endpoints 
 <span id="_______-_______"></span> **-?**   
 Displays some brief Help text for this extension in the Command Prompt window.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

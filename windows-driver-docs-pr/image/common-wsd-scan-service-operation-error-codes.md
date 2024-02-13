@@ -1,5 +1,5 @@
 ---
-title: Common WSD Scan Service operation error codes
+title: Common WSD Scan Service Operation Error Codes
 description: This article lists error codes that are common to all WSD Scan Service operations.
 keywords: ["Common WSD Scan Service Operation Error Codes Imaging Devices"]
 topic_type:

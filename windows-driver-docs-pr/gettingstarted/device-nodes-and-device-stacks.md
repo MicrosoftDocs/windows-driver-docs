@@ -1,5 +1,5 @@
 ---
-title: Device nodes and device stacks
+title: Device Nodes and Device Stacks
 description: In Windows, devices are represented by device nodes in the Plug and Play (PnP) device tree.
 keywords:
 - device node

@@ -1,5 +1,5 @@
 ---
-title: WdfObjectDereference macro
+title: WdfObjectDereference Macro
 description: The WdfObjectDereference macro decrements the reference count for a specified framework object.
 keywords:
  - WdfObjectDereference macro

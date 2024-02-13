@@ -1,5 +1,5 @@
 ---
-title: Step 1 Create a UWP device app
+title: Step 1 Create a UWP Device App
 description: This topic describes the basic process for creating a UWP device app by using Microsoft Visual Studio. Learn about the tasks that are common to all UWP device apps.
 ms.date: 03/17/2023
 ---

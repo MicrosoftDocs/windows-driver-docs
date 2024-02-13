@@ -1,5 +1,5 @@
 ---
-title: MRxQueryVolumeInfo routine
+title: MRxQueryVolumeInfo Routine
 description: The MRxQueryVolumeInfo routine is called by RDBSS to request that a network mini-redirector query volume information.
 keywords: ["MRxQueryVolumeInfo routine Installable File System Drivers", "PMRX_CALLDOWN"]
 topic_type:

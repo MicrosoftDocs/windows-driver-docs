@@ -1,6 +1,7 @@
 ---
-title: time travel navigation commands
+title: Time travel navigation commands
 description: This section describes the time travel navigation commands.
+keywords: ["Time travel navigation commands", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
 ms.date: 09/23/2017
 ---
 

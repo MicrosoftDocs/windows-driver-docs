@@ -26,7 +26,7 @@ Syntax
 ## <span id="ddk__rsdt_dbg"></span><span id="DDK__RSDT_DBG"></span>
 
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Kdexts.dll
 

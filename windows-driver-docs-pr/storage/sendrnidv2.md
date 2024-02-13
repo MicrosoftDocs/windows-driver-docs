@@ -1,5 +1,5 @@
 ---
-title: SendRNIDV2 function
+title: SendRNIDV2 Function
 description: The SendRNIDV2 WMI method sends a version 2 RNID command to the indicated port.
 keywords: ["SendRNIDV2 function Storage Devices"]
 topic_type:

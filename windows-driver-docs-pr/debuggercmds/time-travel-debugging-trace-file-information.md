@@ -1,6 +1,7 @@
 ---
 title: Time Travel Debugging - Working with Trace Files 
 description: This section describes how to work with time travel trace files 
+keywords: ["Working with Trace Files", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
 ms.date: 01/22/2020
 ---
 

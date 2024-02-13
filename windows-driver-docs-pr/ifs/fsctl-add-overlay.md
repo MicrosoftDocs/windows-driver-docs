@@ -1,5 +1,5 @@
 ---
-title: FSCTL_ADD_OVERLAY control code
+title: FSCTL_ADD_OVERLAY Control Code
 description: The FSCTL_ADD_OVERLAY control code adds a new external backing source to a volume’s namespace. This backing source can be a Windows Image Format (WIM) file.
 keywords: ["FSCTL_ADD_OVERLAY control code Installable File System Drivers"]
 topic_type:

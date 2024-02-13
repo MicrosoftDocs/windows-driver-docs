@@ -1,5 +1,5 @@
 ---
-title: Optimize method of the MSFT\_Volume class
+title: Optimize Method of the MSFT_Volume Class
 description: Optimizes the volume.
 ms.assetid: ef56d743-1b6b-421c-8ffc-82c08cc9dee1
 keywords:

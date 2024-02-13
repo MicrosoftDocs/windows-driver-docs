@@ -1,5 +1,5 @@
 ---
-title: KSPROPSETID\_BdaPIDFilter
+title: KSPROPSETID_BdaPIDFilter
 description: KSPROPSETID\_BdaPIDFilter
 ms.date: 11/28/2017
 ---

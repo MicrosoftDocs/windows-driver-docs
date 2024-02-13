@@ -25,7 +25,7 @@ The **.typeopt** command sets or displays the type options.
 .typeopt 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="______________"></span> **+**   

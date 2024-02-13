@@ -1,5 +1,5 @@
 ---
-title: Battery class driver functionality
+title: Battery Class Driver Functionality
 description: Discover the functionality of the kernel-mode battery class driver and the tasks it performs for miniclass drivers.
 ms.date: 10/04/2023
 ---

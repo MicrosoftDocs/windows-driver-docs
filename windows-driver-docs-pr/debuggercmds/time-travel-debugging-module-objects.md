@@ -1,12 +1,14 @@
 ---
 title: TTD Module Objects
 description: This section describes the module model objects associated with time travel debugging.
+keywords: ["TTD Module Objects", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
 ms.date: 09/20/2017
 ---
 
 # TTD Module Objects
 
 ## Description
+
 *TTD Module* objects are used to give information about modules that were loaded and unloaded during a trace session.
 
 ## Properties

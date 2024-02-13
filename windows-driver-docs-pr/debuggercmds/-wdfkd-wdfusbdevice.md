@@ -21,7 +21,7 @@ The !wdfkd.wdfusbdevice extension displays information about a specified Kernel-
 !wdfkd.wdfusbdevice Handle [Flags]
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Handle______"></span><span id="_______handle______"></span><span id="_______HANDLE______"></span> *Handle*   
@@ -36,7 +36,7 @@ The display will include the properties of the I/O target.
 <span id="Bit_1__0x2_"></span><span id="bit_1__0x2_"></span><span id="BIT_1__0X2_"></span>Bit 1 (0x2)  
 The display will include the properties of the I/O target for each USB pipe object.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Wdfkd.dll
 

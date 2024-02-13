@@ -1,5 +1,5 @@
 ---
-title: UWP device apps for internal devices
+title: UWP Device Apps for Internal Devices
 description: This topic introduces the ways that UWP device apps can access internal devices.
 ms.date: 03/17/2023
 ---

@@ -1,5 +1,5 @@
 ---
-title: \_\_RxSynchronizeBlockingOperationsMaybeDroppingFcbLock function
+title: __RxSynchronizeBlockingOperationsMaybeDroppingFcbLock Function
 description: \_\_RxSynchronizeBlockingOperationsMaybeDroppingFcbLock synchronizes blocking I/O requests to the same work queue.
 keywords: ["__RxSynchronizeBlockingOperationsMaybeDroppingFcbLock function Installable File System Drivers"]
 topic_type:

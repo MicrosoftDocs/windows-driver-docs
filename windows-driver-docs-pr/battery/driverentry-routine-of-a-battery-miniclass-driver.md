@@ -1,5 +1,5 @@
 ---
-title: "Battery miniclass driver: DriverEntry routine"
+title: "Battery Miniclass Driver: DriverEntry Routine"
 description: "Discover the DriverEntry routine in a battery miniclass driver and its role in the initialization process."
 keywords:
 - battery miniclass drivers WDK, routines

@@ -102,7 +102,7 @@ Clears the current Driver Verifier settings on the debug target. The clearing of
 <span id="______________"></span> **?**   
 Displays some brief Help text for this extension in the Debugger Command window.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Kdexts.dll
 

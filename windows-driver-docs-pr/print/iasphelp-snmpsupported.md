@@ -1,5 +1,5 @@
 ---
-title: Iasphelp get_SNMPSupported method
+title: Iasphelp get_SNMPSupported Method
 description: The SNMPSupported property enables an ASP Web page to determine if SNMP is being used with a printer.
 MS-HAID:
 - 'webfnc_2128dc9d-a113-4061-a6c9-3ebe2a304dd5.xml'

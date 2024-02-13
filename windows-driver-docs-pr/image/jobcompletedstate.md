@@ -1,5 +1,5 @@
 ---
-title: JobCompletedState element
+title: JobCompletedState Element
 description: The required JobCompletedState element specifies a job's final job state.
 keywords: ["JobCompletedState element Imaging Devices"]
 topic_type:

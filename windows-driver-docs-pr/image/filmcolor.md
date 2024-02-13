@@ -1,5 +1,5 @@
 ---
-title: FilmColor element
+title: FilmColor Element
 description: The required FilmColor element contains the list of color processing capabilities that the film scanning input source supports.
 keywords: ["FilmColor element Imaging Devices"]
 topic_type:

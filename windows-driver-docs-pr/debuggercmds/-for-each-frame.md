@@ -31,7 +31,7 @@ Specifies the debugger commands to execute one time for each frame. If *CommandS
 <span id="_______-_______"></span> **-?**   
 Displays some Help text for this extension in the [Debugger Command window](../debugger/debugger-command-window.md).
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

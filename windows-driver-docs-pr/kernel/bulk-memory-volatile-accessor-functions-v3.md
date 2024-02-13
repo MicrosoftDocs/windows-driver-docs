@@ -1,5 +1,5 @@
 ---
-title: Bulk memory volatile accessor functions (v3) overview
+title: Bulk Memory Volatile Accessor Functions (V3) Overview
 description: bulk memory volatile accessor functions (v3)
 ms.date: 01/04/2024
 ---

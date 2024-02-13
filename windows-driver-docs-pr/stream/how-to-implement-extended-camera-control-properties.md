@@ -1,5 +1,5 @@
 ---
-title: How To Implement Extended Camera Control Properties
+title: How to Implement Extended Camera Control Properties
 description: Implementing extended camera control properties for a camera driver.
 ms.date: 04/20/2017
 ---

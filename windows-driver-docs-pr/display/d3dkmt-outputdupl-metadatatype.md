@@ -1,5 +1,5 @@
 ---
-title: D3DKMT\_OUTPUTDUPL\_METADATATYPE enumeration
+title: D3DKMT_OUTPUTDUPL_METADATATYPE Enumeration
 description: Learn about the D3DKMT\_OUTPUTDUPL\_METADATATYPE enumeration, which is reserved for system use. Do not use in your driver.
 keywords: ["D3DKMT_OUTPUTDUPL_METADATATYPE enumeration Display Devices"]
 topic_type:

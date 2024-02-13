@@ -1,5 +1,5 @@
 ---
-title: DSM\_QuerySupportedLBPolicies WMI Class
+title: DSM_QuerySupportedLBPolicies WMI Class
 description: DSM\_QuerySupportedLBPolicies WMI Class
 ms.date: 10/17/2018
 ---

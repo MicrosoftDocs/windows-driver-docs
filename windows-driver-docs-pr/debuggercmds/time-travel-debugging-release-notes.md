@@ -1,7 +1,8 @@
 ---
 title: Time travel debugging release notes
 description: This topic provides information on what's new in Time Travel Debugging.
-ms.date: 10/30/2023
+keywords: ["release notes", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
+ms.date: 02/12/2024
 ---
 
 # Time travel debugging release notes
@@ -9,6 +10,47 @@ ms.date: 10/30/2023
 :::image type="content" source="images/ttd-time-travel-debugging-logo.png" alt-text="Time travel debugging logo featuring a clock.":::
 
 This topic provides information on what's new in Time Travel Debugging.
+
+## 1.11.304
+
+TTD now implements and publishes publicly an API to control the recorder from within the live recorded process. Documentation and a sample can be found in [GitHub](https://github.com/microsoft/WinDbg-Samples/tree/HEAD/TTD).
+
+TTD can now inject itself with recording turned off using the new `-recordMode` switch. By default TTD uses `-recordMode Automatic` which causes all threads to be recorded. If `-recordMode Manual` is specified then TTD injects into the target process but does not record anything until told to do so through an API call.
+
+Recording can now be restricted to a specific set of modules using the `-module` switch. In some scenarios this can result in substantially faster recording and smaller trace files. More than one `-module` switch may be specified.
+
+Matching record and replay components are now included in the distribution. In the event of an incompatibility between the debugger and the command line recorder, or a replay bug, the replay components can be copied into the debugger install as a workaround until a new debugger is released.
+
+The installed file location can be found in Powershell by doing the following:
+
+```
+ls (Get-AppxPackage | where Name -eq 'Microsoft.TimeTravelDebugging').InstallLocation
+```
+
+### Added
+
+- Add -recordmode switch to enable injection without automatic recording (1.11.296)
+- Add -module switch and use to create SR config (1.11.291)
+- Project custom data recorded by the in-process API to data model (1.11.286)
+- Add a new TTDLiveRecorder.dll and wire it up along with TTDRecordCPU.dll (1.11.283)
+- Add replay components to MSIX & fix SDK lookup (1.11.265)
+
+### Changed
+
+none
+
+### Fixed
+
+- Work around [a bug](https://github.com/nlohmann/json/issues/4236) in the nlohmann JSON serializer, which is used in some internal tooling (1.11.281)
+  - Contributed [a fix](https://github.com/nlohmann/json/pull/4237) to that library that will become available in [a future release](https://github.com/nlohmann/json/milestone/49?closed=1).
+- Adjust string alignment to avoid a rare CRT bug (1.11.279)
+  - Reported to and fixed in the VS and OS codebases.
+- Several small fixes from Watson crash reports (1.11.276)
+- Fix a regression that may cause trace file corruption in some cases (1.11.264)
+
+### Known issues
+
+- On ARM64, the compiler is failing to tail-call a number of high-frequency functions which in extreme cases can cause the recorder to run out of stack space and crash.
 
 ## 1.11.261
 

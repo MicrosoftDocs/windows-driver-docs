@@ -55,7 +55,7 @@ Specifies the duration of the flush timer, in seconds. Starting in Windows 8, y
 
  
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 This extension is exported by Wmitrace.dll.
 

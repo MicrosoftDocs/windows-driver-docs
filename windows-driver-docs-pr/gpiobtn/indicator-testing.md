@@ -1,5 +1,5 @@
 ---
-title: Indicator testing
+title: Indicator Testing
 description: This topic describes common indicator step procedures and examples.
 ms.date: 10/17/2018
 ---

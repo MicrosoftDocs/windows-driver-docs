@@ -1,5 +1,5 @@
 ---
-title: Device identification strings
+title: Device Identification Strings
 description: The Plug and Play (PnP) manager and other device installation components use device identification strings to identify devices that are installed in a computer.
 keywords:
 - compatible IDs WDK device installations

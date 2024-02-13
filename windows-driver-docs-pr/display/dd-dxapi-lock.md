@@ -1,5 +1,5 @@
 ---
-title: DD_DXAPI_LOCK control code (Windows Drivers)
+title: DD_DXAPI_LOCK Control Code (Windows Drivers)
 description: Learn more about the DD_DXAPI_LOCK control code.
 keywords:
 - DD_DXAPI_LOCK

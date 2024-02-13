@@ -21,7 +21,7 @@ The **!fpsearch** extension searches the freed special pool for a specified addr
 !fpsearch [Address] [Flag]
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   

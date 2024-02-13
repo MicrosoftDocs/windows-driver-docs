@@ -1,5 +1,5 @@
 ---
-title: Camera intrinsics
+title: Camera Intrinsics
 description: Provides information about camera intrinsics.
 ms.date: 09/26/2018
 ---

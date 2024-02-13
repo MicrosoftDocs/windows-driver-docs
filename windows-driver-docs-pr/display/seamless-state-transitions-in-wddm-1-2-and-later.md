@@ -1,5 +1,5 @@
 ---
-title: Providing seamless state transitions in WDDM 1.2 and later
+title: Providing Seamless State Transitions in WDDM 1.2 and Later
 description: several features help to minimize screen flashes during the boot process, transitions from lower power states, and transitions back to operating system control.
 keywords:
 - state transitions WDK display

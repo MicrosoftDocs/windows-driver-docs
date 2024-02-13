@@ -1,5 +1,5 @@
 ---
-title: CreateSnapshot method of the MSFT\_VirtualDisk class
+title: CreateSnapshot Method of the MSFT_VirtualDisk Class
 description: Creates a new virtual disk that is a shadow copy of the existing virtual disk.
 ms.assetid: 320B1576-614B-4590-BEA1-371E2B5BCBBA
 keywords:

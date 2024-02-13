@@ -1,5 +1,5 @@
 ---
-title: SetPersistentEntry function
+title: SetPersistentEntry Function
 description: The SetPersistentEntry method adds a binding to the list of bindings associated with the indicated port.
 keywords: ["SetPersistentEntry function Storage Devices"]
 topic_type:

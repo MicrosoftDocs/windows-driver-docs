@@ -1,5 +1,5 @@
 ---
-title: SetAttributes method of the MSFT\_FileShare class
+title: SetAttributes Method of the MSFT_FileShare Class
 description: Allows the user to update or set various attributes on the file share.
 ms.assetid: 24327F54-8EBE-4872-93C6-0041193BA3BC
 keywords:

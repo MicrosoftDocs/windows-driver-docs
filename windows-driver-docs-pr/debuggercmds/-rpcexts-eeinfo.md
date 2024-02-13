@@ -27,7 +27,7 @@ The **!rpcexts.eeinfo** extension displays the extended error information chain.
 <span id="_______EEInfoAddress______"></span><span id="_______eeinfoaddress______"></span><span id="_______EEINFOADDRESS______"></span> *EEInfoAddress*   
 Specifies the address of the extended error information.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

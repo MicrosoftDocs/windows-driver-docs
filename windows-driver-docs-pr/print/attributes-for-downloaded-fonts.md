@@ -1,5 +1,5 @@
 ---
-title: Attributes for downloaded fonts
+title: Attributes for Downloaded Fonts
 description: Provides information about attributes for downloaded fonts.
 keywords:
 - downloaded font attributes WDK Unidrv

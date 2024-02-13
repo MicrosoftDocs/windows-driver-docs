@@ -1,5 +1,5 @@
 ---
-title: Global Navigation Satellite System (GNSS) driver design guide for Windows 8.1
+title: Global Navigation Satellite System (GNSS) Driver Design Guide for Windows 8.1
 description: This guide describes the design requirements and architecture of the Global Navigation Satellite System (GNSS) device driver for Windows 8.1.
 ms.date: 03/21/2023
 ---

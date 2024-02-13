@@ -1,5 +1,5 @@
 ---
-title: MSFT\_DiskToStorageReliabilityCounter class
+title: MSFT_DiskToStorageReliabilityCounter Class
 description: Association between a MSFT\_Disk object and the corresponding MSFT\_StorageReliabilityCounter object.
 ms.assetid: A9B5BF06-4062-4244-9A27-9B4AC5ACEA00
 keywords:

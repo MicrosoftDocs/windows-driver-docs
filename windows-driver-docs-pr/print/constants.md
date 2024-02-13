@@ -1,5 +1,5 @@
 ---
-title: Constants (GPD language)
+title: Constants (GPD Language)
 description: Constants are named values that are predefined by the GPD language.
 keywords:
 - GPD file entries WDK Unidrv , constants

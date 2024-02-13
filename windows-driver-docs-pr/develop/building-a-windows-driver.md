@@ -1,5 +1,5 @@
 ---
-title: Building a Windows driver
+title: Building a Windows Driver
 description: Guide to building a Windows Driver
 ms.date: 04/28/2020
 ---

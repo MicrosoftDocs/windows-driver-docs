@@ -1,5 +1,5 @@
 ---
-title: Methods for specifying pages
+title: Methods for Specifying Pages
 description: Provides information about methods for specifying pages.
 keywords:
 - Common Property Sheet User Interface WDK print, specifying pages

@@ -1,5 +1,5 @@
 ---
-title: ConditionHistory element
+title: ConditionHistory Element
 description: The optional ConditionHistory element is a collection of ConditionHistoryEntry elements that provide details about recent conditions and errors on the scanner.
 keywords: ["ConditionHistory element Imaging Devices"]
 topic_type:

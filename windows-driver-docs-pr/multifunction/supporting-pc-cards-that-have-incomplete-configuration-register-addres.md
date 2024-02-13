@@ -1,5 +1,5 @@
 ---
-title: PC cards with incomplete configuration register addresses
+title: PC Cards with Incomplete Configuration Register Addresses
 description: Information on supporting PC cards with incomplete configuration register addresses.
 keywords:
 - incomplete configuration registers WDK multifunction devices

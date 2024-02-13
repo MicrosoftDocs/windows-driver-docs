@@ -1,6 +1,7 @@
 ---
 title: WinDbg - Scripting Menu
 description: This section describes how to use scripting in the WinDbg debugger.
+keywords: ["Scripting Menu", "WinDbg", "Menu", "Windows Debugging"]
 ms.date: 01/20/2020
 ---
 
@@ -13,6 +14,7 @@ This section describes how to use the scripting support in the WinDbg.
 The WinDbg script window features basic syntax highlighting, IntelliSense, and error recognition.
 
 Use the ribbon buttons to:
+
 - Create a new script
 - Open an existing script
 - Execute a script

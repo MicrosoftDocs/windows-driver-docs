@@ -1,5 +1,5 @@
 ---
-title: Language monitors
+title: Language Monitors
 description: Provides information about language monitors.
 keywords:
 - print monitors WDK, language monitors

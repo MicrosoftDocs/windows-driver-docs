@@ -1,5 +1,5 @@
 ---
-title: ScannerName element
+title: ScannerName Element
 description: The required ScannerName element specifies the administratively assigned user-friendly name of the scanner.
 keywords: ["ScannerName element Imaging Devices"]
 topic_type:

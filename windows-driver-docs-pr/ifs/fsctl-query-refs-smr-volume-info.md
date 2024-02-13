@@ -1,5 +1,5 @@
 ---
-title: FSCTL_QUERY_REFS_SMR_VOLUME_INFO control code
+title: FSCTL_QUERY_REFS_SMR_VOLUME_INFO Control Code
 description: The FSCTL_QUERY_REFS_SMR_VOLUME_INFO control code queries the Shingled Magnetic Recording (SMR) volume for its current state on space and garbage collection activities.
 keywords: ["FSCTL_QUERY_REFS_SMR_VOLUME_INFO control code Installable File System Drivers"]
 topic_type:

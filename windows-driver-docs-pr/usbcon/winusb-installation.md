@@ -2,7 +2,6 @@
 title: WinUSB (Winusb.sys) Installation for Developers
 description: Install WinUSB (Winusb.sys) in the device's kernel-mode stack as the USB device's function driver instead of implementing a driver.
 ms.date: 01/17/2024
-ms.custom: contperf-fy22q4
 ---
 
 # WinUSB (Winusb.sys) installation for developers

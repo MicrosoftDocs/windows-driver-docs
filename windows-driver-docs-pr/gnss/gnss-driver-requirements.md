@@ -1,5 +1,5 @@
 ---
-title: Global Navigation Satellite System (GNSS) driver requirements
+title: Global Navigation Satellite System (GNSS) Driver Requirements
 description: Describes requirements, assumptions, and constraints to consider when developing a Global Navigation Satellite System (GNSS) driver for Windows 10.
 ms.date: 03/21/2023
 ---

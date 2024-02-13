@@ -2,7 +2,6 @@
 title: How to Recover From USB Pipe Errors
 description: This article provides information about steps you can try when a data transfer to a USB pipe fails. The mechanisms described in this article cover abort, reset, and cycle port operations on bulk, interrupt, and isochronous pipes.
 ms.date: 01/16/2024
-ms.custom: contperf-fy21q3
 ---
 
 # How to recover from USB pipe errors

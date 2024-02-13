@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_STREAM\_PRESENTATIONEXTENT
+title: KSPROPERTY_STREAM_PRESENTATIONEXTENT
 description: The clients sends a KSPROPERTY\_STREAM\_PRESENTATIONEXTENT request to query the stream extent.
 keywords: ["KSPROPERTY_STREAM_PRESENTATIONEXTENT Streaming Media Devices"]
 topic_type:

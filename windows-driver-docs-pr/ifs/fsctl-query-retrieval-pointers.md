@@ -1,5 +1,5 @@
 ---
-title: FSCTL_QUERY_RETRIEVAL_POINTERS control code
+title: FSCTL_QUERY_RETRIEVAL_POINTERS Control Code
 description: The FSCTL_QUERY_RETRIEVAL_POINTERS control code retrieves a mapping between virtual cluster numbers (VCN, offsets within the file/stream space) and logical cluster numbers (LCN, offsets within the volume space), starting at the beginning of the file up to the map size specified in InputBuffer.
 keywords: ["FSCTL_QUERY_RETRIEVAL_POINTERS control code Installable File System Drivers"]
 topic_type:

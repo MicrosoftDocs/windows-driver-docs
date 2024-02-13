@@ -23,7 +23,7 @@ The **!wdfkd.wdfsearchpath** extension sets the search path to formatting files 
 !wdfkd.wdfsearchpath Path
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Path______"></span><span id="_______path______"></span><span id="_______PATH______"></span> *Path*   

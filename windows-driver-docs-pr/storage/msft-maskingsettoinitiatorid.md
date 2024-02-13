@@ -1,5 +1,5 @@
 ---
-title: MSFT\_MaskingSetToInitiatorId class
+title: MSFT_MaskingSetToInitiatorId Class
 description: Association between MaskingSet and InitiatorId.
 ms.assetid: 8D2D62DE-D7DB-4E22-9704-017B586988BE
 keywords:

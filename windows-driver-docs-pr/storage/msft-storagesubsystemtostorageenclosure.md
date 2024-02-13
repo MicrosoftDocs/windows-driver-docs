@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StorageSubSystemToStorageEnclosure class
+title: MSFT_StorageSubSystemToStorageEnclosure Class
 description: Association between StorageSubSystem and StorageEnclosure.
 ms.assetid: 787A2FC9-A215-4F76-936E-709D5BC0FD30
 keywords:

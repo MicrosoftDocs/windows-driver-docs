@@ -1,5 +1,5 @@
 ---
-title: Mobile Plans legacy callback notifications
+title: Mobile Plans Legacy Callback Notifications
 description: This topic describes the Callback notifications support by Mobile Plans app
 keywords:
 - Windows Mobile Plans Legacy Callback notifications, Mobile Plans Legacy implementation mobile operators

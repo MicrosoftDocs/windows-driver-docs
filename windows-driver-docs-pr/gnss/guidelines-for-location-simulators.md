@@ -1,5 +1,5 @@
 ---
-title: Guidance for location simulators
+title: Guidance for Location Simulators
 description: This section contains guidance for implementing a location simulator driver.
 ms.date: 03/21/2023
 ---

@@ -27,7 +27,7 @@ The **!diskspace** extension displays the amount of free space on a hard disk of
 <span id="_______Drive______"></span><span id="_______drive______"></span><span id="_______DRIVE______"></span> *Drive*   
 Specifies the drive letter of the disk. The colon (:) after *Drive* is optional.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

@@ -1,5 +1,5 @@
 ---
-title: Iasphelp Close method
+title: Iasphelp Close Method
 description: The Close method enables an ASP Web page to close access to a printer.
 MS-HAID:
 - 'webfnc_62b91ac5-2f01-44d6-9289-ee2136acacc4.xml'

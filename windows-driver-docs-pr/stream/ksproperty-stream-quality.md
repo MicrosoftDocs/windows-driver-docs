@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_STREAM\_QUALITY
+title: KSPROPERTY_STREAM_QUALITY
 description: The KSPROPERTY\_STREAM\_QUALITY property is an optional property that should be implemented if the pin generates Quality Management complaints.
 keywords: ["KSPROPERTY_STREAM_QUALITY Streaming Media Devices"]
 topic_type:

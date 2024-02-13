@@ -1,5 +1,5 @@
 ---
-title: Name property
+title: Name Property
 description: This property is an vendor-mapped Consumable name.
 ms.date: 09/08/2021
 ---

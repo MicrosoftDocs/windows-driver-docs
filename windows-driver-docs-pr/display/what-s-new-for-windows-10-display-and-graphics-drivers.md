@@ -1,5 +1,5 @@
 ---
-title: What's new for Windows 10 display and graphics drivers
+title: What's New for Windows 10 Display and Graphics Drivers
 description: Describes new features in Windows 10 for display drivers
 ms.date: 05/12/2020
 ---

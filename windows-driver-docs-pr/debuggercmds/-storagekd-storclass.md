@@ -21,7 +21,7 @@ The **!storagekd.storclass** extension displays information about the specified 
 !storagekd.storclass [Address [Level]] 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Address"></span><span id="_______address"></span><span id="_______ADDRESS"></span> *Address*  
@@ -30,7 +30,7 @@ Specifies the address to the device object or device extension of a classpnp dev
 <span id="_______Level"></span><span id="_______level"></span><span id="_______LEVEL"></span> *Level*  
 Specifies the amount of detail to display. This parameter can be set to 0, 1, or 2, with 2 giving the most detail and 0 the least. The default is 0.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

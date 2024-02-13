@@ -1,5 +1,5 @@
 ---
-title: ValidationInfo element
+title: ValidationInfo Element
 description: The required ValidationInfo element contains all ScanTicket validation information in response to a client's ValidateScanTicketRequest.
 keywords: ["ValidationInfo element Imaging Devices"]
 topic_type:

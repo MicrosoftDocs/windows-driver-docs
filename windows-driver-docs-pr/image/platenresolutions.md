@@ -1,5 +1,5 @@
 ---
-title: PlatenResolutions element
+title: PlatenResolutions Element
 description: The required PlatenResolutions element contains a list of resolutions at which the scanner's platen can scan.
 keywords: ["PlatenResolutions element Imaging Devices"]
 topic_type:

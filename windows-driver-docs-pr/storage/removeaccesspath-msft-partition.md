@@ -1,5 +1,5 @@
 ---
-title: RemoveAccessPath method of the MSFT\_Partition class
+title: RemoveAccessPath Method of the MSFT_Partition Class
 description: Remove the access path from the partition.
 ms.assetid: 0238bfe6-2e36-44e2-81ee-04bfa159ef47
 keywords:

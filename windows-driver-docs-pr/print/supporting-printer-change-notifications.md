@@ -1,5 +1,5 @@
 ---
-title: Support printer change notifications
+title: Support Printer Change Notifications
 description: Provides information about how to support printer change notifications.
 keywords:
 - print providers WDK, printer change notifications

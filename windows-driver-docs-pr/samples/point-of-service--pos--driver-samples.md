@@ -1,5 +1,5 @@
 ---
-title: Point of service (POS) driver samples
+title: Point of Service (POS) Driver Samples
 description: The driver samples in this directory provide a starting point for writing a custom POS driver for your device.
 ms.date: 03/22/2023
 ---

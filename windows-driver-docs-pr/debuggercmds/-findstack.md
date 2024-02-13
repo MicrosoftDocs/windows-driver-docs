@@ -22,7 +22,7 @@ The **!findstack** extension locates all of the stacks that contain a specified 
 !findstack -?
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Symbol______"></span><span id="_______symbol______"></span><span id="_______SYMBOL______"></span> *Symbol*   
@@ -43,7 +43,7 @@ Displays the entire thread stack for each thread that contains *Symbol*.
 <span id="_______-_______"></span> **-?**   
 Displays some brief Help text for this extension in the Debugger Command window.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

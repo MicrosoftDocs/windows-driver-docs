@@ -1,5 +1,5 @@
 ---
-title: How to run the DevFund Tests via the command-line
+title: How to Run the DevFund Tests Via the Command-Line
 description: The WDK provides the test binaries and tools which make it easy to run the Device Fundamentals tests from the command-line.
 keywords:
 - DevFund tests

@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StoragePoolToResiliencySetting class
+title: MSFT_StoragePoolToResiliencySetting Class
 description: Association between StoragePool and ResiliencySetting.
 ms.assetid: 8EA9D275-ED5D-4901-B0CD-546247512800
 keywords:

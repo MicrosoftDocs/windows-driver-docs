@@ -1,5 +1,5 @@
 ---
-title: GPIO buttons and indicators implementation guide
+title: GPIO Buttons and Indicators Implementation Guide
 description: Windows 8 introduced support for general-purpose I/O (GPIO) buttons and indicators by using a HID miniport class driver.
 ms.date: 10/17/2018
 ---

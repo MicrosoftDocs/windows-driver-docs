@@ -1,5 +1,5 @@
 ---
-title: WdfObjectReference macro
+title: WdfObjectReference Macro
 description: The WdfObjectReference macro increments the reference count for a specified framework object.
 keywords:
  - WdfObjectReference macro

@@ -14,7 +14,6 @@ keywords:
 - DirectDraw compressed textures WDK Windows 2000 display , height
 - compressed texture surfaces WDK DirectDraw , height
 ms.date: 12/06/2018
-ms.custom: seodec18
 ---
 
 # Handling Compressed Texture Surfaces Created In System Memory
@@ -39,4 +38,3 @@ RealHeight = Height * 4;
 The driver should assign the restored width and height values to members in the kernel's [**DD\_SURFACE\_GLOBAL**](/windows/win32/api/ddrawint/ns-ddrawint-dd_surface_global) surface structure. Doing so prevents the DirectDraw kernel-mode runtime from rejecting DXT texture download blts because the width and height values do not match. That is, if the driver leaves the altered sizes in the **wWidth** and **wHeight** members of DD\_SURFACE\_GLOBAL, the DirectDraw kernel-mode runtime rejects a blt from the altered system-memory surface to the video-memory surface because the width and height of the source, which is in unaltered coordinates, seems to be "outside" the altered DD\_SURFACE\_GLOBAL size.
 
  
-

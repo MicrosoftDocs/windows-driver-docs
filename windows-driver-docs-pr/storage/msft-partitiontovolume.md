@@ -1,5 +1,5 @@
 ---
-title: MSFT\_PartitionToVolume class
+title: MSFT_PartitionToVolume Class
 description: Association between Partition and Volume.
 ms.assetid: 739714d6-683a-468f-b404-cb78991383af
 keywords:

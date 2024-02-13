@@ -1,5 +1,5 @@
 ---
-title: HolePunch property
+title: HolePunch Property
 description: Contains all of the information that describes the device hole punch attachment.
 ms.date: 09/07/2021
 ---

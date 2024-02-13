@@ -1,5 +1,5 @@
 ---
-title: \_DXGK\_DMABUFFERCAPS structure
+title: _DXGK_DMABUFFERCAPS Structure
 description: The DXGK\_DMABUFFERCAPS structure is reserved for system use. Do not use it in your driver.
 keywords: ["_DXGK_DMABUFFERCAPS structure Display Devices", "DXGK_DMABUFFERCAPS structure Display Devices"]
 topic_type:

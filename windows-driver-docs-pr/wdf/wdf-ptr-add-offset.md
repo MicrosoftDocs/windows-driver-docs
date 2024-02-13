@@ -1,5 +1,5 @@
 ---
-title: WDF_PTR_ADD_OFFSET macro
+title: WDF_PTR_ADD_OFFSET Macro
 description: The WDF_PTR_ADD_OFFSET macro adds an offset value to an address and returns the resulting address.
 keywords:
  - WDF_PTR_ADD_OFFSET macro

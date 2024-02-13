@@ -1,6 +1,7 @@
 ---
 title: HID Extensions
 description: This section describes the Human Interface Device (HID) debugger extension commands.
+keywords: ["HID Extensions", "extensions", "WinDbg", "Windows Debugging"]
 ms.date: 11/28/2017
 ---
 

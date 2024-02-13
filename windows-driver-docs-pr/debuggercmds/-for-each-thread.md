@@ -22,7 +22,7 @@ The **!for\_each\_thread** extension executes the specified debugger command onc
 !for_each_thread -? 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______CommandString______"></span><span id="_______commandstring______"></span><span id="_______COMMANDSTRING______"></span> *CommandString*   
@@ -31,7 +31,7 @@ Specifies the debugger commands to be executed for each thread. If *CommandStrin
 <span id="_______-_______"></span> **-?**   
 Displays help for this extension in the Debugger Command window.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 This extension works only in kernel mode, even though it resides in Ext.dll.
 

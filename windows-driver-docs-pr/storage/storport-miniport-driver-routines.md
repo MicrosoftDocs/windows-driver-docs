@@ -1,5 +1,5 @@
 ---
-title: Storport driver miniport routines
+title: Storport Driver Miniport Routines
 description: Describes the Storport miniport driver routines and differences between the design of the SCSI port driver and that of the Storport driver.
 keywords:
 - Storport driver support routines

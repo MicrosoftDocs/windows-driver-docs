@@ -1,5 +1,5 @@
 ---
-title: SetUsage method of the MSFT\_StoragePool class
+title: SetUsage Method of the MSFT_StoragePool Class
 description: Sets or changes the intended usage for the storage pool object.
 ms.assetid: CC133913-C19A-4565-8D91-45679B7C709A
 keywords:

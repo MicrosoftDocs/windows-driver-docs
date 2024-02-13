@@ -21,7 +21,7 @@ The **!wdfkd.wdftagtracker** extension displays all available tag information (i
 !wdfkd.wdftagtracker TagObjectPointer [Flags]
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______TagObjectPointer______"></span><span id="_______tagobjectpointer______"></span><span id="_______TAGOBJECTPOINTER______"></span> *TagObjectPointer*   
@@ -36,7 +36,7 @@ Displays the history of acquire operations and release operations on the object.
 <span id="Bit_1__0x2_"></span><span id="bit_1__0x2_"></span><span id="BIT_1__0X2_"></span>Bit 1 (0x2)  
 Displays the line number of the object in hexadecimal instead of decimal.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Wdfkd.dll
 

@@ -21,13 +21,13 @@ The **!storagekd.storadapter** extension displays information about the specifie
 !storagekd.storadapter [Address]  
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the address of a Storport adapter device object. If *Address* is omitted, a list of all Storport adapters is displayed.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

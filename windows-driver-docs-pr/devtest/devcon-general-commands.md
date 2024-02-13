@@ -10,7 +10,6 @@ api_name:
 - Device Console (DevCon.exe) Commands
 api_type:
 - NA
-ms.custom: contperf-fy22q3
 ms.date: 10/28/2022
 ---
 

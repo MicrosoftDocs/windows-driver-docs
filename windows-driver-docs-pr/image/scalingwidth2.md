@@ -1,5 +1,5 @@
 ---
-title: ScalingWidth element (output document)
+title: ScalingWidth Element (Output Document)
 description: The required ScalingWidth element contains the range of allowable values for scaling the width of the output document.
 keywords: ["ScalingWidth element Imaging Devices"]
 topic_type:

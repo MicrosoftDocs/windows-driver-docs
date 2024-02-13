@@ -1,5 +1,5 @@
 ---
-title: Add print ticket support to monolithic print drivers
+title: Add Print Ticket Support to Monolithic Print Drivers
 description: Provides information about how to add print ticket support to monolithic print drivers.
 keywords:
 - printer interface DLL WDK , Print Ticket support

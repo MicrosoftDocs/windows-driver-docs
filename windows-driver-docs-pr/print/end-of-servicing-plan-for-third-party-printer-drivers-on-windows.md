@@ -1,5 +1,5 @@
 ---
-title: End of servicing plan for third-party printer drivers on Windows
+title: End of Servicing Plan for Third-Party Printer Drivers on Windows
 description: This article provides information on the end of servicing plan for third-party printer drivers on Windows.
 keywords:
 - print devices WDK

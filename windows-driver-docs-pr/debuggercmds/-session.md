@@ -34,7 +34,7 @@ Sets the [session context](../debugger/changing-contexts.md#session-context) to 
 <span id="_______-_______"></span> **-?**   
 Displays help for this extension in the Debugger Command window.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Kdexts.dll
 

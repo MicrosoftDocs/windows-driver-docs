@@ -21,13 +21,13 @@ The **!wudfext.wudfdriverinfo** extension displays information about a UMDF driv
 !wudfext.wudfdriverinfo Name
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Name______"></span><span id="_______name______"></span><span id="_______NAME______"></span> *Name*   
 Specifies the name of the UMDF driver to display information about.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

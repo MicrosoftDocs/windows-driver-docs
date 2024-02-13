@@ -1,5 +1,5 @@
 ---
-title: Iasphelp get_Color method
+title: Iasphelp get_Color Method
 description: The Color property enables an ASP Web page to determine if a printer supports color printing.
 MS-HAID:
 - 'webfnc_1eb57c03-7aa3-4acb-8a2c-3327a37e019d.xml'

@@ -1,5 +1,5 @@
 ---
-title: Enable color management
+title: Enable Color Management
 description: Provides information about how to enable color management.
 keywords:
 - color management WDK print, enabling

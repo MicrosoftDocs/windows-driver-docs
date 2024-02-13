@@ -1,5 +1,5 @@
 ---
-title: IRP_MJ_FLUSH_BUFFERS (FS and filter drivers)
+title: IRP_MJ_FLUSH_BUFFERS (FS and Filter Drivers)
 description: IRP_MJ_FLUSH_BUFFERS
 keywords: ["IRP_MJ_FLUSH_BUFFERS Installable File System Drivers"]
 topic_type:

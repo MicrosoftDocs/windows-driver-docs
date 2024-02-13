@@ -22,7 +22,7 @@ The **.help** command displays a list of all meta-commands.
 .help /D 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="________D"></span><span id="________d"></span> **/D**  

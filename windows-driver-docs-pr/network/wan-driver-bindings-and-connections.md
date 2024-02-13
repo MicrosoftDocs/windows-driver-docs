@@ -10,7 +10,6 @@ keywords:
 - architecture WDK WAN , connections
 - WAN miniport drivers WDK networking , bindings
 ms.date: 10/14/2021
-ms.custom: contperf-fy22q2
 ---
 
 # WAN Driver Bindings and Connections
@@ -52,8 +51,3 @@ Before a WAN miniport driver can send or receive packets on a wide area network,
  
 
  
-
-
-
-
-

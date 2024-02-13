@@ -1,5 +1,5 @@
 ---
-title: GetFC4Statistics function
+title: GetFC4Statistics Function
 description: The GetFC4Statistics WMI method reports traffic statistics on a port of type Nx\_Port for the indicated FC-4 protocol.
 keywords: ["GetFC4Statistics function Storage Devices"]
 topic_type:

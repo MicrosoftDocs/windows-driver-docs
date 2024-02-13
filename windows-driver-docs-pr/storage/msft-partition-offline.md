@@ -1,5 +1,5 @@
 ---
-title: Offline method of the MSFT\_Partition class
+title: Offline Method of the MSFT_Partition Class
 description: Takes the partition offline.
 ms.assetid: 83D3AC38-49FC-4450-A1CA-45384039211A
 keywords:

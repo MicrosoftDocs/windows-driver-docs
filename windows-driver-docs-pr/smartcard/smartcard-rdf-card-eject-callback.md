@@ -1,5 +1,5 @@
 ---
-title: RDF_CARD_EJECT callback function
+title: RDF_CARD_EJECT Callback Function
 description: RDF_CARD_EJECT callback function
 keywords:
 - vendor-supplied drivers RDF callback functions

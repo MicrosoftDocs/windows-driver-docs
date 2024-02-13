@@ -1,5 +1,5 @@
 ---
-title: Determine which Windows device is connecting to the network
+title: Determine Which Windows Device is Connecting to the Network
 description: Determine which Windows device is being used to connect to the network
 ms.date: 04/20/2017
 ---

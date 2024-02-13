@@ -1,5 +1,5 @@
 ---
-title: \_DXGK\_ALLOCATIONGROUPDESCRIPTOR structure
+title: _DXGK_ALLOCATIONGROUPDESCRIPTOR Structure
 description: The DXGK\_ALLOCATIONGROUPDESCRIPTOR structure is reserved for system use. Do not use it in your driver.
 keywords: ["_DXGK_ALLOCATIONGROUPDESCRIPTOR structure Display Devices", "DXGK_ALLOCATIONGROUPDESCRIPTOR structure Display Devices"]
 topic_type:

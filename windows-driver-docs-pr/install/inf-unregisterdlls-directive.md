@@ -1,5 +1,5 @@
 ---
-title: INF UnregisterDlls directive
+title: INF UnregisterDlls Directive
 description: An UnregisterDlls directive references one or more INF sections used to specify files that are OLE controls and require self-unregistration (self-removal).
 keywords:
 - INF UnregisterDlls Directive Device and Driver Installation

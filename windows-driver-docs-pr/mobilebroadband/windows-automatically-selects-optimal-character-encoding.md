@@ -1,5 +1,5 @@
 ---
-title: Windows automatically selects optimal character encoding
+title: Windows Automatically Selects Optimal Character Encoding
 description: Windows automatically selects optimal character encoding
 ms.date: 04/20/2017
 ---

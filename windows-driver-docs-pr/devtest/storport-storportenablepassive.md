@@ -1,5 +1,5 @@
 ---
-title: StorPortEnablePassive rule (storport)
+title: StorPortEnablePassive Rule (Storport)
 description: This rule verifies that StorPortEnablePassiveInitialization is not called from any StorPort miniport driver routine other than HwInitialize.
 ms.date: 05/21/2018
 keywords: ["StorPortEnablePassive rule (storport)"]

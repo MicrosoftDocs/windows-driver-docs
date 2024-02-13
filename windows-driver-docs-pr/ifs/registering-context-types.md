@@ -1,5 +1,5 @@
 ---
-title: Registering context types
+title: Registering Context Types
 description: Registering Context Types
 keywords:
 - contexts WDK file system minifilter , registering types

@@ -1,5 +1,5 @@
 ---
-title: Battery miniclass driver's DispatchDeviceControl routine
+title: Battery Miniclass Driver's DispatchDeviceControl Routine
 description: Discover the DispatchDeviceControl routine in a battery miniclass driver and how it manages IRPs containing battery IOCTLs.
 keywords:
 - battery miniclass drivers WDK, routines

@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_TUNER\_SCAN\_STATUS
+title: KSPROPERTY_TUNER_SCAN_STATUS
 description: The KSPROPERTY\_TUNER\_SCAN\_STATUS property describes the status of a scanning operation. This property can be implemented optionally.
 keywords: ["KSPROPERTY_TUNER_SCAN_STATUS Streaming Media Devices"]
 topic_type:

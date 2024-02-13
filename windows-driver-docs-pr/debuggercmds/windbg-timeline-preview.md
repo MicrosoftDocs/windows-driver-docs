@@ -1,6 +1,7 @@
 ---
-title: WinDbg - Timelines 
+title: WinDbg - Time Travel Timelines 
 description: This section describes how work with the time travel timelines feature in WinDbg.
+keywords: ["Time Travel Timelines", "WinDbg", "Menu", "Windows Debugging"]
 ms.date: 07/02/2020
 ---
 

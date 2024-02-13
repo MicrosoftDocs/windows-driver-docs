@@ -1,5 +1,5 @@
 ---
-title: GetScannerElementsResponse element
+title: GetScannerElementsResponse Element
 description: The required GetScannerElementsResponse element contains the WSD Scan Service's response to a client's request for information about the scanner.
 keywords: ["GetScannerElementsResponse element Imaging Devices"]
 topic_type:

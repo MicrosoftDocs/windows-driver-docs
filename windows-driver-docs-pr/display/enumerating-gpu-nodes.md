@@ -1,5 +1,5 @@
 ---
-title: Enumerating GPU engine capabilities
+title: Enumerating GPU Engine Capabilities
 description: Starting in Windows 8.1, a display miniport driver must implement the DxgkDdiGetNodeMetadata function, which is used to query the engine capabilities of a GPU node.
 keywords:
 - GPU nodes, enumerating WDK Display Drivers

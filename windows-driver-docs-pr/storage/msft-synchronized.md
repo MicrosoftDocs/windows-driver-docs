@@ -1,5 +1,5 @@
 ---
-title: MSFT\_Synchronized class
+title: MSFT_Synchronized Class
 description: Synchronized status of a storage object and its snapshots, clones, or mirrors.
 ms.assetid: 460FAAB4-9DB2-4B02-9E2B-07791E93E728
 keywords:

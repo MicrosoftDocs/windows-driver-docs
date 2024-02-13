@@ -1,5 +1,5 @@
 ---
-title: Supporting PnP and Power Management in Your Driver
+title: Supporting PnP and Power Management in your Driver
 description: Supporting PnP and Power Management in Your Driver
 keywords:
 - PnP WDK KMDF , about PnP in framework-based drivers

@@ -1,5 +1,5 @@
 ---
-title: DriverEntry of Video Miniport Driver function
+title: DriverEntry of Video Miniport Driver Function
 description: DriverEntry is the initial entry point into the video miniport driver.
 keywords: ["DriverEntry function Display Devices"]
 topic_type:

@@ -1,5 +1,5 @@
 ---
-title: INF DriverVer directive
+title: INF DriverVer Directive
 description: A DriverVer directive specifies version information for drivers installed by this INF.
 keywords:
 - INF DriverVer Directive Device and Driver Installation

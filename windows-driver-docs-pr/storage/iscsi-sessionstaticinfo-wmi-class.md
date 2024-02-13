@@ -1,5 +1,5 @@
 ---
-title: ISCSI\_SessionStaticInfo WMI Class
+title: ISCSI_SessionStaticInfo WMI Class
 description: ISCSI\_SessionStaticInfo WMI Class
 ms.date: 10/17/2018
 ---

@@ -1,5 +1,5 @@
 ---
-title: Full-Screen VDMs in x86-based Machines
+title: Full-Screen VDMs in X86-Based Machines
 description: Full-Screen VDMs in x86-based Machines
 keywords:
 - video miniport drivers WDK Windows 2000 , VGA, full-screen VDMs in x86-based machines

@@ -1,5 +1,5 @@
 ---
-title: Mapping WIA properties with the same IDs and names
+title: Mapping WIA Properties with the Same IDs and Names
 description: Mapping WIA properties with the same IDs and names
 ms.date: 05/10/2023
 ---

@@ -1,5 +1,5 @@
 ---
-title: SKU differentiation directive
+title: SKU Differentiation Directive
 description: With Windows Server 2008 and Windows Vista SP1, the in-box display driver INFs were modified to include a new value that represented the drivers as Client Only, meaning that the drivers would not install on server SKUs of Windows.
 ms.date: 04/20/2017
 ---

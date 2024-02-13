@@ -21,7 +21,7 @@ The **!uniqstack** extension displays all of the stacks for all of the threads i
 !uniqstack [ -b | -v | -p ] [ -n ]
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______-b______"></span><span id="_______-B______"></span> **-b**   
@@ -36,7 +36,7 @@ Causes the display to include the full parameters for each function that is call
 <span id="_______-n______"></span><span id="_______-N______"></span> **-n**   
 Causes frame numbers to be displayed.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

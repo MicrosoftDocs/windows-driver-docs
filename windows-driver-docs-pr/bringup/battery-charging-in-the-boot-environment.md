@@ -1,5 +1,5 @@
 ---
-title: Battery charging in the boot environment for Windows 10 Mobile
+title: Battery Charging in the Boot Environment for Windows 10 Mobile
 description: For devices that run Windows 10 Mobile, the BSP that OEMs receive from the SoC vendor includes a UEFI battery charging driver that is designed specifically for the SoC vendor's hardware.
 ms.date: 03/22/2023
 ---

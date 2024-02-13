@@ -28,7 +28,7 @@ Syntax
 
 None
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

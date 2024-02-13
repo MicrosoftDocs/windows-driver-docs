@@ -1,5 +1,5 @@
 ---
-title: Option attributes for the Halftone feature
+title: Option Attributes for the Halftone Feature
 description: Option attributes for the Halftone feature
 keywords:
 - Halftone Feature

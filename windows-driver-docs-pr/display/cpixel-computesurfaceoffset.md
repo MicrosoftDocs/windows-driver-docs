@@ -1,6 +1,6 @@
 ---
-title: CPixel ComputeSurfaceOffset method
-description: The CPixel ComputeSurfaceOffset method determines the subrectangular offset of a surface.
+title: CPixel::ComputeSurfaceOffset Method
+description: The CPixel::ComputeSurfaceOffset method determines the subrectangular offset of a surface.
 keywords: ["ComputeSurfaceOffset method Display Devices", "ComputeSurfaceOffset method Display Devices , CPixel interface", "CPixel interface Display Devices , ComputeSurfaceOffset method"]
 topic_type:
 - apiref

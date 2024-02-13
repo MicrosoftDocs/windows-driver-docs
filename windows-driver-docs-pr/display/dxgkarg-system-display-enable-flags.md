@@ -1,5 +1,5 @@
 ---
-title: DXGKARG\_SYSTEM\_DISPLAY\_ENABLE\_FLAGS structure
+title: DXGKARG_SYSTEM_DISPLAY_ENABLE_FLAGS Structure
 description: Learn about the DXGKARG\_SYSTEM\_DISPLAY\_ENABLE\_FLAGS structure, which is reserved for system use. Do not use it in your driver.
 keywords: ["DXGKARG_SYSTEM_DISPLAY_ENABLE_FLAGS structure Display Devices", "PDXGKARG_SYSTEM_DISPLAY_ENABLE_FLAGS structure pointer Display Devices"]
 topic_type:

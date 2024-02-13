@@ -1,5 +1,5 @@
 ---
-title: Font substitution
+title: Font Substitution
 description: Font substitution
 keywords:
 - printer font descriptions WDK Unidrv , substitutions
