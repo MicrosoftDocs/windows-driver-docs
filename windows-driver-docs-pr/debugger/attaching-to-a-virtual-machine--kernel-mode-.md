@@ -130,7 +130,7 @@ Depending on the specifics of the VM in use, you may need to change the network 
 
 **Windows Firewall**
 
-You can use Control Panel to allow access through the Windows firewall. Open Control Panel > System and Security, and select Allow an app through Windows Firewall. In the list of applications, locate *Windows GUI Symbolic Debugger* and *Windows Kernel Debugger*. Use the check boxes to allow those two applications through the firewall. Restart your debugging application (WinDbg or KD).
+You can use the Control Panel to allow access through the Windows firewall. Open Control Panel > System and Security, and select Allow an app through Windows Firewall. In the list of applications, locate *Windows GUI Symbolic Debugger* and *Windows Kernel Debugger*. Use the checkboxes to allow those two applications through the firewall. Restart your debugging application (WinDbg or KD).
 
 
 ## <span id="Third_Party_VMs"></span>Third Party VMs

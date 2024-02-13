@@ -1,5 +1,5 @@
 ---
-title: UEFI check signature protocol
+title: UEFI Check Signature Protocol
 description: Provides information about the UEFI check signature protocol.
 ms.date: 03/23/2023
 ---
