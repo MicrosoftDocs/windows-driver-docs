@@ -1,5 +1,5 @@
 ---
-title: UEFI requirements for USB flashing support
+title: UEFI Requirements for USB Flashing Support
 description: Microsoft provides several USB-based flashing solutions for use in engineering and manufacturing environments. In order for a device to be used with these tools, the UEFI environment on the device must meet the requirements listed in this topic.
 ms.date: 03/23/2023
 ---
