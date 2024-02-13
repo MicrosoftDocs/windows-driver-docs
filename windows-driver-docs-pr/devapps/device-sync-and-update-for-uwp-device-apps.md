@@ -1,5 +1,5 @@
 ---
-title: Device sync and update for Store device apps in Windows 8.1
+title: Device Sync and Update for Store Device Apps in Windows 8.1
 description: In Windows 8.1, your UWP app can use a device background task to synchronize data on your peripheral device.
 ms.date: 03/17/2023
 ---

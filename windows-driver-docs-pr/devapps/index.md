@@ -1,5 +1,5 @@
 ---
-title: UWP device apps
+title: UWP Device Apps
 description: UWP device apps are device companions, have capabilities beyond regular UWP apps, and perform privileged operations, such as firmware updates
 ms.date: 03/17/2023
 ---

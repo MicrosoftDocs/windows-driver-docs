@@ -1,5 +1,5 @@
 ---
-title: What's new for UWP device apps
+title: What's New for UWP Device Apps
 description: This section provides a glimpse of what's new for UWP device apps.
 ms.date: 03/17/2023
 ---
