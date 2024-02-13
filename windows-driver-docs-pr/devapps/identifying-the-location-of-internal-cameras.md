@@ -1,5 +1,5 @@
 ---
-title: Identifying the location of internal cameras
+title: Identifying the Location of Internal Cameras
 description: This topic provides info about supporting internal cameras on systems in Windows 8.1.
 ms.date: 03/17/2023
 ---

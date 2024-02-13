@@ -1,5 +1,5 @@
 ---
-title: How to customize print settings (UWP device apps)
+title: How to Customize Print Settings (UWP Device Apps)
 description: This topic introduces the advanced print settings flyout, and shows how the C# version of the Print settings and print notifications sample replaces the default flyout with a custom flyout.
 ms.date: 03/17/2023
 ---
