@@ -1,7 +1,7 @@
 ---
 title: System-defined ECPs
 description: Lists and describes system-defined extra create parameters (ECPs) that attach extra information to the IRP_MJ_CREATE operation on a file.
-ms.date: 02/09/2024
+ms.date: 02/12/2024
 ---
 
 # System-defined ECPs
@@ -45,4 +45,4 @@ One exception to restricting a filter driver from attaching any of the following
 | GUID_ECP_QUERY_ON_CREATE | The GUID that identifies the ECP for query file information on create. |
 | GUID_ECP_RKF_BYPASS | The GUID that identifies the [**RKF_BYPASS_ECP_CONTEXT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-rkf_bypass_ecp_context) ECP context structure. |
 | GUID_ECP_SRV_OPEN   | The GUID that identifies the [**SRV_OPEN_ECP_CONTEXT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_srv_open_ecp_context) ECP context structure. A server attaches the SRV_OPEN_ECP_CONTEXT structure to an open file request. The server uses this GUID on any open file request that the server makes to satisfy a conditional client request. The file-system stack can then determine whether SRV_OPEN_ECP_CONTEXT is attached to the open file request. Based on the information in SRV_OPEN_ECP_CONTEXT the file-system stack can determine the client that requested that the file be opened and why. |
-| GUID_ECP_TYPE_VETO_BINDING | Identifies the [**VETO_BINDING_ECP_CONTEXT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-veto_binding_ecp_context) ECP context structure. This ECP can be used to veto a binding on the system boot partition. Available starting in Windows 11, version 24H2. |
+| GUID_ECP_TYPE_VETO_BINDING | Identifies the [**VETO_BINDING_ECP_CONTEXT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-veto_binding_ecp_context) ECP context structure. This ECP can be used to [veto a bind link](vetoing-a-bind-link.md) on the system's boot partition. Available starting in Windows 11, version 24H2. |
