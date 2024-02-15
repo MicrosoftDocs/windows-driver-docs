@@ -39,7 +39,7 @@ typedef union _FLT_PARAMETERS {
 
 - **FileInformation**: A pointer to a caller-allocated buffer into which the routine writes the requested information about the file object. The **FileInformationClass** member specifies the type of information that the caller requests.
 
-- **Length**: The size, in bytes, of the buffer pointed to by **FileInformation**.
+- **Length**: A pointer to the size, in bytes, of the buffer pointed to by **FileInformation**.
 
 - **FileInformationClass**: Specifies the type of information to be returned about the file, in the buffer that **FileInformation** points to. Device and intermediate drivers can specify any of the following [**FILE_INFORMATION_CLASS**](/windows-hardware/drivers/ddi/wdm/ne-wdm-_file_information_class) values. Other values cause the call to fail and should not be passed to PreQueryOpen/PostQueryOpen calls.
 
@@ -55,6 +55,8 @@ typedef union _FLT_PARAMETERS {
 The [**FLT_PARAMETERS**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters) structure for IRP_MJ_QUERY_OPEN operations contains the parameters for an **QueryOpen** operation represented by a callback data ([**FLT_CALLBACK_DATA**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)) structure. It is contained in an FLT_IO_PARAMETER_BLOCK structure.
 
 IRP_MJ_QUERY_OPEN is a file system (FSFilter) callback operation.
+
+The File System does *not* fill in the Information field in the IO_STATUS block.  Filters should not inspect this value in their post-calls.
 
 For more information about FSFilter callback operations, see the reference entry for [**FsRtlRegisterFileSystemFilterCallbacks**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlregisterfilesystemfiltercallbacks).
 
