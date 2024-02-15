@@ -39,7 +39,7 @@ typedef union _FLT_PARAMETERS {
 
 - **FileInformation**: A pointer to a caller-allocated buffer into which the routine writes the requested information about the file object. The **FileInformationClass** member specifies the type of information that the caller requests.
 
-- **Length**: The size, in bytes, of the buffer pointed to by **FileInformation**.
+- **Length**: A pointer to the size, in bytes, of the buffer pointed to by **FileInformation**.
 
 - **FileInformationClass**: Specifies the type of information to be returned about the file, in the buffer that **FileInformation** points to. Device and intermediate drivers can specify any of the following [**FILE_INFORMATION_CLASS**](/windows-hardware/drivers/ddi/wdm/ne-wdm-_file_information_class) values. Other values cause the call to fail and should not be passed to PreQueryOpen/PostQueryOpen calls.
 
