@@ -56,6 +56,8 @@ The [**FLT_PARAMETERS**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_f
 
 IRP_MJ_QUERY_OPEN is a file system (FSFilter) callback operation.
 
+The File System does *not* fill in the Information field in the IO_STATUS block.  Filters should not inspect this value in their post-calls.
+
 For more information about FSFilter callback operations, see the reference entry for [**FsRtlRegisterFileSystemFilterCallbacks**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlregisterfilesystemfiltercallbacks).
 
 ## Requirements
