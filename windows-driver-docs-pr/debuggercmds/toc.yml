@@ -121,9 +121,9 @@
     - name: "Loading Debugger Extension DLLs"
       href: loading-debugger-extension-dlls.md
     - name: "Using Debugger Extension Commands"
-      href: writing-new-debugger-extensions.md
+      href: using-debugger-extension-commands.md
     - name: "Writing New Debugger Extensions"
-      href: using-debugger-extension-commands.md      
+      href: writing-new-debugger-extensions.md
   - name: "Debugger Commands"
 # Auto-expanded node
     items: 
