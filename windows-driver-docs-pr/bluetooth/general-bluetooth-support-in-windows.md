@@ -4,6 +4,7 @@ description: Provides information about Bluetooth version and profile support in
 ms.date: 01/10/2024
 content_well_notification: 
   - AI-contribution
+ai-usage: ai-assisted
 ---
 
 # Bluetooth version and profile support in Windows 11
