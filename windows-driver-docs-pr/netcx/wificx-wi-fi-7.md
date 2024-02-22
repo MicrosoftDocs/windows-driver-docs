@@ -19,13 +19,11 @@ To indicate support for Wi-Fi MLO connections, the driver must set the following
 - The number of entries in **AkmsList** must match **NumAkmsSupported**. This list should include all the AKM suites that the driver supports and must include the AKM 24 if the OS is expected to support SAE with a 384-bit PMK.
  
 To support SAE connections using AKM 24 or AKM 8 with GCMP-256 cipher, the driver must add the following auth-cipher pairs when calling [**WifiDeviceSetStationCapabilities**](/windows-hardware/drivers/ddi/wificx/nf-wificx-wifidevicesetstationcapabilities):
-- In **UnicastAlgorithmsList**:
-{ DOT11_AUTH_ALGO_WPA3_SAE, DOT11_CIPHER_ALGO_GCMP_256 }
-- In **MulticastMgmtAlgorithmsList**:
-{ DOT11_AUTH_ALGO_WPA3_SAE, DOT11_CIPHER_ALGO_GCMP_256 }
+- In **UnicastAlgorithmsList**: **DOT11_AUTH_ALGO_WPA3_SAE +  DOT11_CIPHER_ALGO_GCMP_256**
+- In **MulticastMgmtAlgorithmsList**: **DOT11_AUTH_ALGO_WPA3_SAE + DOT11_CIPHER_ALGO_GCMP_256**
  
 To support OWE connections with GCMP-256 cipher, the driver must add the following auth-cipher pair when calling [**WifiDeviceSetStationCapabilities**](/windows-hardware/drivers/ddi/wificx/nf-wificx-wifidevicesetstationcapabilities):
-- In **UnicastAlgorithmsList**: { DOT11_AUTH_ALGO_OWE, DOT11_CIPHER_ALGO_GCMP_256 }
+- In **UnicastAlgorithmsList**: **DOT11_AUTH_ALGO_OWE + DOT11_CIPHER_ALGO_GCMP_256**
 
 ## Frame MAC addresses
 

@@ -608,6 +608,8 @@
       href: wdi-tlv-start-ap-parameters.md
     - name: "WDI_TLV_STATUS"
       href: wdi-tlv-status.md
+    - name: "WDI_TLV_SAE_STATUS_CODE"
+      href: wdi-tlv-sae-status-code.md
     - name: "WDI_TLV_SUPPORTED_GUIDS"
       href: wdi-tlv-supported-guids.md
     - name: "WDI_TLV_TKIP_MIC_FAILURE_INFO"
@@ -818,6 +820,9 @@
       href: wificx-ihv-extensible-types.md
   - name: "Dual STA connectivity"
     href: dual-sta-connectivity.md
-  - name: "WiFiCx Wi-Fi 7 feature requirements"
+  - name: "Wi-Fi 7 feature requirements"
     href: wificx-wi-fi-7.md
+  - name: "WPA3 SoftAP"
+    href: wificx-wpa3-softap.md
+
 
