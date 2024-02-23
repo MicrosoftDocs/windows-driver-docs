@@ -23,7 +23,7 @@ For more information about SAE authentication, see [WiFiCx WPA3 SAE authenticati
 
 | TLV | Type | Multiple TLV instances allowed | Optional | Description |
 | --- | --- | --- | --- | --- |
-| [WDI_TLV_BSSID](wdi-tlv-bssid.md) | [**WDI_MAC_ADDRESS**](/windows-hardware/drivers/ddi/dot11wificxintf/ns-dot11wificxintf-wdi_mac_address) |  |  | The BSSID of the AP. |
+| [WDI_TLV_BSSID](wdi-tlv-bssid.md) | [**WDI_MAC_ADDRESS**](/windows-hardware/drivers/ddi/dot11wificxintf/ns-dot11wificxintf-wdi_mac_address) |  |  | The BSSID of the peer. |
 | [WDI_TLV_SAE_REQUEST_TYPE](wdi-tlv-sae-request-type.md) | [**WDI_SAE_REQUEST_TYPE**](/windows-hardware/drivers/ddi/dot11wificxtypes/ne-dot11wificxtypes-wdi_sae_request_type) |   |   | The type of SAE request frame to send to the BSSID. |
 | [WDI_TLV_SAE_COMMIT_PARAMS](wdi-tlv-sae-commit-params.md) | WDI_SAE_COMMIT_PARAMS |  | X | The SAE Commit request parameters. Used to send both commit-request and commit-response frames. |
 | [WDI_TLV_SAE_CONFIRM_PARAMS](wdi-tlv-sae-confirm-params.md) | WDI_SAE_CONFIRM_PARAMS |  | X | The SAE Confirm request parameters. Used to send both confirm-request and confirm-response frames. |
