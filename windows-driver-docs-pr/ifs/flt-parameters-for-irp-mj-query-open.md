@@ -54,9 +54,9 @@ typedef union _FLT_PARAMETERS {
 
 The [**FLT_PARAMETERS**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters) structure for IRP_MJ_QUERY_OPEN operations contains the parameters for an **QueryOpen** operation represented by a callback data ([**FLT_CALLBACK_DATA**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)) structure. It is contained in an FLT_IO_PARAMETER_BLOCK structure.
 
-IRP_MJ_QUERY_OPEN is a file system (FSFilter) callback operation.
+IRP_MJ_QUERY_OPEN is a file system (FSFilter) callback operation. A filter can reject the operation in both its [pre-operation callback](/windows-hardware/drivers/ddi/fltkernel/nc-fltkernel-pflt_pre_operation_callback) and [post-operation callback](/windows-hardware/drivers/ddi/fltkernel/nc-fltkernel-pflt_post_operation_callback) using FLT_PREOP_DISALLOW_FSFILTER_IO and FLT_POSTOP_DISALLOW_FSFILTER_IO, respectively.
 
-The File System does *not* fill in the Information field in the IO_STATUS block.  Filters should not inspect this value in their post-calls.
+The File System does *not* fill in the **Information** field in the IO_STATUS block.  Filters shouldn't inspect this value in their post-calls.
 
 For more information about FSFilter callback operations, see the reference entry for [**FsRtlRegisterFileSystemFilterCallbacks**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlregisterfilesystemfiltercallbacks).
 
