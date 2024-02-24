@@ -42,7 +42,7 @@ The following diagram illustrates the basic architecture of a GPU native fence o
 
 The diagram includes two main components:
 
-* Current value (referred to as *CurrentValue* in this article). This memory location contains the currently signaled 64-bit fence value. *CurrentValue** is mapped and accessible to both the CPU (writeable from kernel mode, readable from both user and kernel mode) and GPU (readable and writeable using GPU virtual address). *CurrentValue* requires 64-bit writes to be atomic from both the CPU and the GPU point of view. That is, updates to the high and low 32 bits can't be torn and should be visible at the same time. This concept is already present in the existing monitored fence object.
+* Current value (referred to as *CurrentValue* in this article). This memory location contains the currently signaled 64-bit fence value. *CurrentValue* is mapped and accessible to both the CPU (writeable from kernel mode, readable from both user and kernel mode) and GPU (readable and writeable using GPU virtual address). *CurrentValue* requires 64-bit writes to be atomic from both the CPU and the GPU point of view. That is, updates to the high and low 32 bits can't be torn and should be visible at the same time. This concept is already present in the existing monitored fence object.
 
 * Monitored value (referred to as *MonitoredValue* in this article). This memory location contains the least currently waited on value by the CPU subtracted by 1. *MonitoredValue* is mapped and accessible to both the CPU (readable and writeable from kernel mode, no user mode access) and GPU (readable using GPU VA, no write access). The OS maintains the list of outstanding CPU waiters for a given fence object, and it updates *MonitoredValue* as waiters are added and removed. When there are no outstanding waiters, the value is set to UINT64_MAX. This concept is new to the GPU native fence sync object.
 
@@ -245,18 +245,20 @@ The following interfaces are updated or introduced to query native fence caps:
 The following KMD-implemented DDIs are introduced to create, open, close, and destroy a native fence object. *Dxgkrnl* calls these DDIs on behalf of user-mode components. *Dxgkrnl* calls them only if the OS enabled the [**DXGK_FEATURE_NATIVE_FENCE**](/windows-hardware/drivers/ddi/d3dukmdt/ne-d3dukmdt-dxgk_feature_id) feature.
 
 * [**DxgkDdiCreateNativeFence**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_createnativefence)/[**DXGKARG_CREATENATIVEFENCE**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgkarg_createnativefence)
-* [**Dxgk**DxgkDdiCreateNativeFence****](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_opennativefence)/[**DXGKARG_OPENNATIVEFENCE**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgkarg_opennativefence)
-* [**Dxgk**DxgkDdiCloseNativeFence****](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_closenativefence)/[**DXGKARG_CLOSENATIVEFENCE**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgkarg_closenativefence)
-* [**Dxgk**DxgkDdiDestroyNativeFence****](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_destroynativefence)/[**DXGKARG_DESTROYNATIVEFENCE**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgkarg_destroynativefence)
+* [**DxgkDdiCreateNativeFence**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_opennativefence)/[**DXGKARG_OPENNATIVEFENCE**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgkarg_opennativefence)
+* [**DxgkDdiCloseNativeFence**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_closenativefence)/[**DXGKARG_CLOSENATIVEFENCE**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgkarg_closenativefence)
+* [**DxgkDdiDestroyNativeFence**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_destroynativefence)/[**DXGKARG_DESTROYNATIVEFENCE**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgkarg_destroynativefence)
 
 The following DDIs were updated to support native fence objects:
 
 * The following members were added to [**DRIVER_INITIALIZATION_DATA**](/windows-hardware/drivers/ddi/dispmprt/ns-dispmprt-_driver_initialization_data). Drivers that support native GPU fence objects should implement the functions and provide *Dxgkrnl* with pointers to them via this structure.
 
-  * PDXGKDDI_CREATENATIVEFENCE    DxgkDdiCreateNativeFence;  // added in WDDM 3.1
-  * PDXGKDDI_DESTROYNATIVEFENCE   DxgkDdiDestroyNativeFence; // added in WDDM 3.1
-  * PDXGKDDI_OPENNATIVEFENCE      DxgkDdiCreateNativeFence;  // added in WDDM 3.2
-  * PDXGKDDI_CLOSENATIVEFENCE     DxgkDdiCloseNativeFence;   // added in WDDM 3.2
+  * **PDXGKDDI_CREATENATIVEFENCE    DxgkDdiCreateNativeFence**  (added in WDDM 3.1)
+  * **PDXGKDDI_DESTROYNATIVEFENCE   DxgkDdiDestroyNativeFence** (added in WDDM 3.1)
+  * **PDXGKDDI_OPENNATIVEFENCE      DxgkDdiCreateNativeFence**  (added in WDDM 3.2)
+  * **PDXGKDDI_CLOSENATIVEFENCE     DxgkDdiCloseNativeFence**   (added in WDDM 3.2)
+  * **PDXGKDDI_SETNATIVEFENCELOGBUFFER  DxgkDdiSetNativeFenceLogBuffer** (added in WDDM 3.2)
+  * **PDXGKDDI_UPDATENATIVEFENCELOGS    DxgkDdiUpdateNativeFenceLogs** (added in WDDM 3.2)
 
 ### Global and local handles for shared fences
 
@@ -294,7 +296,7 @@ Support structures and enumerations that are introduced or updated include:
 
 ## Indicating a native hardware queue progress fence object
 
-The following updates are introduced to indicate a native hardware queue progress fence object:
+The following update is introduced to indicate a native hardware queue progress fence object:
 
 * A [**NativeProgressFence**](/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_createhwqueueflags) flag is added for calls to [**DxgkDdiCreateHwQueue**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_createhwqueue).
 
@@ -389,7 +391,7 @@ In Scenario 2a, the iGPU doesn't support native fences but the dGPU does. A wait
 
 #### Scenario 2b
 
-In Scenario 2b, native fence support remains the same (iGPU doesn't support, dGPU does). This time, a signal is submitted on the iGPU and wait is submitted on the dGPU.
+In Scenario 2b, native fence support remains the same (iGPU doesn't support, dGPU does). This time, a signal is submitted on the iGPU and a wait is submitted on the dGPU.
 
 | iGPU SignalFromGPU (hFence, 10) | iGPU SignalFromCPU (hFence, 10) | dGPU WaitFromGpu (hFence, 10) | dGPU WaitFromCpu(hFence, 10) |
 | ----------------------------- | ----------------------------- | ------------------------------- | ------------------------------ |
@@ -420,7 +422,7 @@ With native fences and user-mode submission, *Dxgkrnl* doesn't have visibility o
 
 ::::image type="content" source="images/gpuview_fences.png" alt-text="Diagram illustrating fence operations with boxes for signals and waits.":::
 
-A way to recreate the fence operations as shown in this *GPUView* image is needed. The dark pink boxes are signals and light pink boxes are Waits. Each box begins when the operation was submitted on the CPU to *Dxgkrnl* and ends when *Dxgkrnl* completes the operation on CPU. This way we're able to study the entire lifetime of a command.
+A way to recreate the fence operations as shown in this *GPUView* image is needed. The dark pink boxes are signals and light pink boxes are waits. Each box begins when the operation was submitted on the CPU to *Dxgkrnl* and ends when *Dxgkrnl* completes the operation on CPU. This way we're able to study the entire lifetime of a command.
 
 So, at a high level, the per HWQueue conditions required to be logged are:
 
@@ -473,7 +475,7 @@ DXGK_NATIVE_FENCE_LOG_ENTRY LogEntry = {};
 LogEntry.hNativeFence = FenceF;
 LogEntry.FenceValue = V1;
 LogEntry.OperationType = DXGK_NATIVE_FENCE_LOG_OPERATION_SIGNAL_EXECUTED;
-LogEntry.FenceEndGpuTimestamp = GPUT1;
+LogEntry.FenceEndGpuTimestamp = GPUT1;  // Time when UMD submits a command to the GPU
 ```
 
 After the GPU scheduler observes *HWQueueA* is unblocked at GPU time *GPUT2*, it reads the UMD payload and logs the event in the OS-provided fence log for *HWQueueA*:
@@ -483,7 +485,7 @@ DXGK_NATIVE_FENCE_LOG_ENTRY LogEntry = {};
 LogEntry.hNativeFence = FenceF;
 LogEntry.FenceValue = V1;
 LogEntry.OperationType = DXGK_NATIVE_FENCE_LOG_OPERATION_WAIT_UNBLOCKED;
-LogEntry.FenceObservedGpuTimestamp = GPUTo
+LogEntry.FenceObservedGpuTimestamp = GPUTo;  // Time that GPU acknowledged UMD's submitted command and queued the fence wait on HW
 LogEntry.FenceEndGpuTimestamp = GPUT2;
 ```
 
