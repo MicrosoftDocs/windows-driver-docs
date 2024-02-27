@@ -1,7 +1,7 @@
 ---
 title: Proximity Sensor Data Fields
 description: This topic provides information about the data fields that are specific to the proximity sensor.
-ms.date: 01/11/2024
+ms.date: 02/26/2024
 ms.topic: reference
 ---
 
@@ -16,21 +16,37 @@ The following table shows the data fields. For more information about the types 
 | PKEY_SensorData_ProximityDetection | VT_BOOL | Required | An indication that an object is within proximity of the sensor. |
 | PKEY_SensorData_ProximityDistanceMillimeters | VT_UI4 | Optional | Distance to the detected object, in millimeters. |
 | PKEY_SensorData_HumanPresence_DetectionDistance_Threshold | VT_R4 | Required | The default distance detection threshold value in millimeters. Changes greater than this are reported by the sensor. |
-| PKEY_SensorData_HumanPresence_AttentionDetection | VT_BOOL | Optional | Indicates if Attention Detection is supported by the sensor.  |
+| PKEY_SensorData_HumanPresence_AttentionDetection | VT_BOOL | Optional | Indicates if attention detection is supported by the sensor. |
+| PKEY_Sensor_Proximity_SensorCapabilities | VT_UI4 | Required | Contains a bitmap of capability flags defined by the [PROXIMITY_SENSOR_CAPABILITIES](/windows-hardware/drivers/ddi/sensorsdef/ne-sensorsdef-proximity_sensor_capabilities) enum. |
+| DEVPKEY_Sensor_HumanPresence_MaxDetectablePersonsCount | VT_UI4 | Required | The maximum number of persons the sensor is able to detect simultaneously. This property is mandatory for sensors that support multi-person detection. |
+| PKEY_SensorData_HumanPresence_DetectedPersonsCount | VT_UI4 | Required | The total number of detected persons reported by the current sensor reading. Detailed per-person data is provided in vector properties below, each element describing one person. Items in vector properties are sorted by distance, starting with the person closest to the device. This property must be present in sensor readings when multi-person detection capability is supported. |
+| PKEY_SensorData_HumanPresence_DistanceMillimetersVector | VT_VECTOR\|VT_UI4 | Required | Each person's distance from the device in millimeters, starting with the person closest to the device. This property must be present in sensor readings when distance detection and multi-person detection capabilities are supported. Max(UI4) value is considered unknown. |
+| PKEY_SensorData_HumanPresence_AttentionVector | VT_VECTOR\|VT_BOOL | Required | Each person's engagement state as Boolean values, starting with the person closest to the device. This property must be present in sensor readings when engagement detection and multi-person detection capabilities are supported. Values other than VARIANT_TRUE and VARIANT_FALSE are considered unknown. |
+| PKEY_SensorData_HumanPresence_HeadAzimuthVector | VT_VECTOR\|VT_R4 | Required | Each person's head azimuth to the device, in degrees, starting with the person closest to the device. This property must be present in sensor readings when head azimuth detection and multi-person detection capabilities are supported. Values outside of the valid range [-90, 90] are considered unknown. |
+| PKEY_SensorData_HumanPresence_HeadAltitudeVector | VT_VECTOR\|VT_R4 | Required | Each person's head altitude to the device, in degrees, starting with the person closest to the device. This property must be present in sensor readings when head altitude detection and multi-person detection capabilities are supported. Values outside of the valid range [-90, 90] are considered unknown. |
+| PKEY_SensorData_HumanPresence_HeadRollVector | VT_VECTOR\|VT_R4 | Required | Each person's head roll in degrees, starting with the person closest to the device. This property must be present in sensor readings when head roll detection and multi-person detection capabilities are supported. Values outside of the valid range [0, 360] are considered unknown. |
+| PKEY_SensorData_HumanPresence_HeadPitchVector | VT_VECTOR\|VT_R4 | Required | Each person's head pitch in degrees, starting with the person closest to the device. This property must be present in sensor readings when head pitch detection and multi-person detection capabilities are supported. Values outside of the valid range [-180, 180] are considered unknown. |
+| PKEY_SensorData_HumanPresence_HeadYawVector | VT_VECTOR\|VT_R4 | Required | Each person's head yaw in degrees, starting with the person closest to the device. This property must be present in sensor readings when head yaw detection and multi-person detection capabilities are supported. Values outside of the valid range [-90, 90] are considered unknown. |
+| PKEY_SensorData_HumanPresence_PersonIdVector | VT_VECTOR\|VT_UI4 | Required | Each person's face correlation IDs, starting with the person closest to the device. Face correlation ID is a unique identifier of a person within the current session. The session is implementation specific. For example, it may be the sensor's current active power state cycle. The purpose of this identifier is to distinguish people from one another as they move within the sensor's field of view. This property must be present in sensor readings when face identification and multi-person detection capabilities are supported. Max(UI4) value is considered unknown. |
+| PKEY_SensorData_HumanPresence_HeadAzimuth | VT_R4 | Required | Head azimuth to the device, in degrees. |
+| PKEY_SensorData_HumanPresence_HeadAltitude | VT_R4 | Required | Head altitude to the device, in degrees. |
+| PKEY_SensorData_HumanPresence_HeadRoll | VT_R4 | Required | Head roll in degrees. |
+| PKEY_SensorData_HumanPresence_HeadPitch | VT_R4 | Required | Head pitch in degrees. |
+| PKEY_SensorData_HumanPresence_HeadYaw | VT_R4 | Required | Head yaw in degrees. |
 
 ## Remarks
 
-If a sensor supports the **PKEY_SensorData_ProximityDistanceMillimeters** data field, then in response to a call from [EvtSensorGetDataFieldProperties](/windows-hardware/drivers/ddi/sensorscx/ns-sensorscx-_sensor_controller_config) for the **PKEY_SensorData_ProximityDistanceMillimeters** data field, the sensor must report the following data field *properties*:
+If a sensor supports the **PKEY_SensorData_ProximityDistanceMillimeters** data field, then in response to a call from **[EvtSensorGetDataFieldProperties](/windows-hardware/drivers/ddi/sensorscx/ns-sensorscx-_sensor_controller_config)** for the **PKEY_SensorData_ProximityDistanceMillimeters** data field, the sensor must report the following data field properties:
 
 | Data field property | Type | Required/Optional | Description |
 |---|---|---|---|
 | PKEY_SensorDataField_RangeMinimum | VT_R4 (float) | Required | Indicates the lower boundary (inclusive) of the sensor's effective detection range in millimeters. |
 | PKEY_SensorDataField_RangeMaximum | VT_R4 (float) | Required | Indicates the upper boundary (inclusive) of the sensor's effective detection range in millimeters. |
 
->[!NOTE]
+> [!NOTE]
 > The effective detection range is a straight-line distance from the sensor to the object. This distance is measured along the axis in which the sensor is pointing, and it's inclusive of the actual boundaries.
 
-If the driver fails to report these data-field properties, Apps will still be able to detect the proximity sensor via the WinRT API. However, these Apps will not know the supported-range of the sensor, and might decide not to use the sensor.
+If the driver fails to report these data-field properties, apps will still be able to detect the proximity sensor via the WinRT API. However, these apps will not know the supported-range of the sensor, and might decide not to use the sensor.
 
 ## Related topics
 
