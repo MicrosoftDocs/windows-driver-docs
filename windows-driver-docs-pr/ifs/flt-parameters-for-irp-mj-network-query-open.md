@@ -41,13 +41,13 @@ typedef union _FLT_PARAMETERS {
 
 ## Remarks
 
-The [**FLT_PARAMETERS**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters) structure for IRP_MJ_NETWORK_QUERY_OPEN operations contains the parameters for a NetworkQueryOpen operation represented by a callback data ([**FLT_CALLBACK_DATA**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)) structure. The **FLT_PARAMETERS** structure is contained in an [**FLT_IO_PARAMETER_BLOCK**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block) structure.
+The [**FLT_PARAMETERS**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters) structure for IRP_MJ_NETWORK_QUERY_OPEN operations contains the parameters for a **NetworkQueryOpen** operation represented by a ([**FLT_CALLBACK_DATA**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)) structure. The **FLT_PARAMETERS** structure is contained in an [**FLT_IO_PARAMETER_BLOCK**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block) structure.
 
 > [!NOTE]
 > The file object associated with IRP_MJ_NETWORK_QUERY_OPEN is a stack-based object.
-A filter registered for the NetworkQueryOpen callback must not reference this object. That is, do not call ObReferenceObject or ObDereferenceObject on this stack-based file object. Also, do not save a pointer to the object.
+A filter registered for the **NetworkQueryOpen** callback must not reference this object. That is, don't call **ObReferenceObject** or **ObDereferenceObject** on this stack-based file object, and don't save a pointer to the object.
 
-IRP_MJ_NETWORK_QUERY_OPEN is a fast I/O operation. It is the equivalent of the FastIoQueryOpen (not FastIoQueryNetworkOpenInfo) operation. A filter must register for this operation.
+IRP_MJ_NETWORK_QUERY_OPEN is a fast I/O operation. It's the equivalent of the [**FastIoQueryOpen**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_fast_io_dispatch) (not **FastIoQueryNetworkOpenInfo**) operation. A filter can reject the operation in its [pre-operation callback](/windows-hardware/drivers/ddi/fltkernel/nc-fltkernel-pflt_pre_operation_callback) using FLT_PREOP_DISALLOW_FASTIO. It can't reject the operation in its post-operation callback since the file system has already completed the operation and the data is present.
 
 ## Requirements
 

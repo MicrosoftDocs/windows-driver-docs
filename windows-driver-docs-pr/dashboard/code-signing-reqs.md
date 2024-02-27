@@ -21,7 +21,7 @@ For more extensive information on driver signing requirements see the following 
 
 Code signing certificates can be purchased from one of the following certificate authorities:
 
-- [DigiCert code signing certificate](https://www.digicert.com/order/order-1.php)
+- [DigiCert code signing certificate](https://order.digicert.com/step1/code_signing)
 - [Entrust code signing certificate](https://www.entrustdatacard.com/products/digital-signing-certificates/code-signing-certificates)
 - [GlobalSign code signing certificate](https://go.microsoft.com/fwlink/p/?LinkId=620888)
 - [SSL.com code signing certificate](https://www.ssl.com/certificates/ev-code-signing/)
