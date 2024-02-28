@@ -5,14 +5,20 @@ keywords:
 - streaming media WDK
 - media streaming WDK
 - data streaming WDK
-ms.date: 06/08/2023
+ms.date: 02/14/2024
 ---
 
 # Streaming media device driver design guide
 
 Use the guidance in this section to design and implement drivers for devices that stream video and audio (for example, webcams and digital camcorders).
 
-## New and updated content for Windows 11, version 22H2
+## New and updated content for Windows 11, version 22H2 and Windows 11, version 23H2
+
+[Camera settings page](camera-settings-page.md)
+
+[Camera companion apps](camera-companion-apps.md)
+
+[Network cameras](network-cameras.md)
 
 [Background segmentation portrait mode and eye gaze stare mode driver sample](background-segmentation-portrait-mode-eye-gaze-stare-mode-driver-sample.md)
 
