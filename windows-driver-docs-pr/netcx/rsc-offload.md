@@ -49,7 +49,7 @@ The following rules apply to the [**NET_ADAPTER_OFFLOAD_RSC_CAPABILITIES**](/win
 
 2. `NetAdapterOffloadLayer3FlagIPv4NoOptions` and `NetAdapterOffloadLayer3FlagIPv6NoExtensions` are the only valid values for the **Layer3Flags** field. These flags indicate IPv4 and IPv6 support respectively.
 
-3. `NetAdapterOffloadLayer4FlagTcpNoOptions` and `NetAdapterOffloadLayer4FlagUdp` are the only valid value for the **Layer4Flags** field. These flags indicate TCP and UDP support respectively.
+3. `NetAdapterOffloadLayer4FlagTcpNoOptions` and `NetAdapterOffloadLayer4FlagUdp` are the only valid values for the **Layer4Flags** field. These flags indicate TCP and UDP support respectively.
 
 4. Layer 3 flags must be set if the `NetAdapterOffloadLayer4FlagTcpNoOptions` flag is set.
 

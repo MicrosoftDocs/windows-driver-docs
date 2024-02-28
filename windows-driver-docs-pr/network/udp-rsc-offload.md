@@ -6,7 +6,7 @@ ms.date: 01/29/2024
 
 # UDP Receive Segment Coalescing Offload (URO)
 
-Starting in WIN11_NEXT, UDP Receive Segment Coalescing Offload (URO) enables network interface cards (NICs) to coalesce UDP receive segments. NICs can combine UDP datagrams from the same flow that match a set of rules into a logically contiguous buffer. These combined datagrams are then indicated to the Windows networking stack as a single large packet. 
+Starting in Windows 11, version 24H2, UDP Receive Segment Coalescing Offload (URO) enables network interface cards (NICs) to coalesce UDP receive segments. NICs can combine UDP datagrams from the same flow that match a set of rules into a logically contiguous buffer. These combined datagrams are then indicated to the Windows networking stack as a single large packet. 
 
 Coalescing UDP datagrams reduces the CPU cost to process packets in high-bandwidth flows, resulting in higher throughput and fewer cycles per byte.
 
