@@ -116,7 +116,7 @@ When a camera supports both **Standard Blur** and **Portrait Blur**, the control
 
 When a camera only supports **Standard Eye Contact**, the control displays as an on/off toggle with the label **Eye contact**.
 
-When a camera supports both **Standard Eye Contact** and **Teleprompter**, the control displays as an on/off toggle with the label **Eye contact**, plus a radio button to select **Standard** and **Enhanced** that is available when **Eye contact** is turned on.
+When a camera supports both **Standard Eye Contact** and **Enhanced Eye Contact**, the control displays as an on/off toggle with the label **Eye contact**, plus a radio button to select **Standard** and **Enhanced** that is available when **Eye contact** is turned on.
 
 ### Adjusting Video Rotation
 
