@@ -4,7 +4,7 @@ description: Using Static tools and CodeQL on Windows driver source code to disc
 keywords:
 - dynamic verification tools WDK
 - static verification tools WDK
-ms.date: 09/27/2022
+ms.date: 02/26/2024
 ---
 
 # CodeQL and the Static Tools Logo Test
@@ -23,7 +23,9 @@ ms.date: 09/27/2022
 
 [4. Convert SARIF to Driver Verification Log Format (DVL)](#4-convert-sarif-to-driver-verification-log-format-dvl)
 
-[5. Visual Studio Post Build Event (Optional)](#5-visual-studio-post-build-event-optional)
+[5. Suppressing CodeQL Results](#5-suppressing-codeql-results)
+
+[6. Visual Studio Post Build Event (Optional)](#6-visual-studio-post-build-event-optional)
 
 [Troubleshooting and Known Issues](#troubleshooting)
 
@@ -219,6 +221,7 @@ At this point, the set-up is complete and the next step is to perform the actual
     The most important section of the SARIF file is the "Results" property within the "Run" object. Each query will have a Results property with details about any detected violations and where it occurred. If no violations are found, the property value will be empty.
 
 > **[NOTE]** Queries are classified using statuses such as "error" "warning" and "problem" but this classification is separate from how the Windows Hardware Compatibility Program and specifically the Static Tools Logo Test will grade the results. Any driver with defects from any query within the "Must-Fix" suite will **not pass** the Static Tools Logo Test and will **fail to be certified**, regardless of the query classification in the raw query file (ex. "warning").
+> 
 
 ## 4. Convert SARIF to Driver Verification Log Format (DVL)
 
@@ -258,7 +261,20 @@ The Static Tools Logo Test parses a [Driver Verification Log (DVL)](../develop/c
 
 Further instructions for the Static Tools Logo HLK Test and guidance on where to place the DVL file can be found in [Running the test](/windows-hardware/test/hlk/testref/6ab6df93-423c-4af6-ad48-8ea1049155ae#running-the-test).
 
-## 5. Visual Studio Post-Build Event (Optional)
+## 5. Suppressing CodeQL Results
+
+CodeQL for driver supports suppressing results. Suppressions are currently provided as a convenience to help developers triage issues and reduce noise, not as a way to bypass the must-fix checks. They have no impact on generating a Driver Verification Log or passing the Static Tools Logo test at this time. To use suppressions, you must run the DriverAlertSuppression.ql query at the same time as the other queries or suites you wish to run.  By default, this query is enabled when running our suites from our githubs main/development branch.
+
+For checks that have been ported from Code Analysis, existing Code Analysis suppressions will be honored. For more information, see [C++ warning pragma](/cpp/preprocessor/warning).
+   - `Known limitation:` You cannot combine a #pragma(disable) and #pragma(suppress) in the same line at this time.
+     
+For checks that are new to CodeQL, you can suppress them by doing one of two things:
+   - Write a “#pragma(suppress:the-rule-id-here)” annotation (minus quotes) on the line above the violation, as you would for Code Analysis.  “the-rule-id-here” can be replaced by the @id value in a given query’s metadata, viewable at the top of the file.
+   - Write a comment on the line above comprised of the text “lgtm[the-rule-id-here]” (minus quotes).  You will need to run the standard [C/C++ alert suppression query](https://github.com/github/codeql/blob/main/cpp/ql/src/AlertSuppression.ql) instead of the driver alert suppression query.  
+     
+Once a suppression is present and recognized, the resulting SARIF file will include data that a result was suppressed, and most result viewers will not show the result by default
+
+## 6. Visual Studio Post-Build Event (Optional)
 
 If you are building the driver using Visual Studio, you can configure CodeQL queries to run as a post build event.
 
