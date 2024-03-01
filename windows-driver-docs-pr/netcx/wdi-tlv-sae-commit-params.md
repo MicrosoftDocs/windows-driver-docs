@@ -2,7 +2,7 @@
 title: WDI_TLV_SAE_COMMIT_PARAMS (dot11wificxtypes.hpp)
 ms.topic: reference
 description: WDI_TLV_SAE_COMMIT_PARAMS is a WiFiCx TLV that contains parameters for a Simultaneous Authentication of Equals (SAE) Commit request or response. 
-ms.date: 02/15/2024
+ms.date: 02/29/2024
 ---
 
 # WDI_TLV_SAE_COMMIT_PARAMS (dot11wificxtypes.hpp)
@@ -32,7 +32,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 | [WDI_TLV_SAE_REJECTED_GROUPS](wdi-tlv-sae-rejected-groups.md) | TLV\<LIST\<UINT8>> |   | X  | Any rejected groups. |
 | [WDI_TLV_RSNA_AKM_SUITE](wdi-tlv-rsna-akm-suite.md) |   | | X | List of RSNA AKM suites. |
 | [WDI_TLV_CIPHER_ALGORITHM](wdi-tlv-cipher-algorithm.md) |   | | X | A cipher algorithm value. |
-| [WDI_TLV_SAE_STATUS_CODE](wdi-tlv-sae-status-code.md) |   | |  | The SAE status code. |
+| [WDI_TLV_SAE_STATUS_CODE](wdi-tlv-sae-status-code.md) |   | |  | The 802.11 SAE status code. |
 
 ## Requirements
 

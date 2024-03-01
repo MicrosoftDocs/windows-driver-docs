@@ -1,7 +1,7 @@
 ---
 title: WPA3 SoftAP
 description: The WPA3 SoftAP feature enables devices to set up a SoftAP that utilizes WPA3-SAE and is capable of operating on either the 2.4 GHz or 5 GHz band.
-ms.date: 02/20/2024
+ms.date: 02/29/2024
 ---
 
 # WiFiCx WPA3 SoftAP
@@ -58,29 +58,32 @@ The OS doesn't provide a specific flag for using H2E only in the AP start parame
 
 The OS might respond to a peer commit request by requesting an anti-clogging token. The OS calls [OID_WDI_SET_SAE_AUTH_PARAMS](oid-wdi-set-sae-auth-params.md) with:
 * The request type **WDI_SAE_REQUEST_TYPE_COMMIT_PARAMS** or **WDI_SAE_REQUEST_TYPE_COMMIT_PARAMS_H2E** (if H2E is used).
-* **StatusCode** set to **DOT11_FRAME_STATUS_ANTI_CLOGGING_TOKEN_REQUIRED**. 
+* The commit frame **StatusCode** ([WDI_TLV_SAE_COMMIT_PARAMS](wdi-tlv-sae-commit-params.md) > [WDI_TLV_SAE_STATUS_CODE](wdi-tlv-sae-status-code.md)) set to **DOT11_FRAME_STATUS_ANTI_CLOGGING_TOKEN_REQUIRED**. 
 
 The peer provides an anti-clogging token as part of the commit parameters.
 
-In a SoftAP scenario, when an anti-clogging token is included in the commit parameters, Scalar/Element values aren't generated. These fields are therefore optional in the [WDI_TLV_SAE_COMMIT_PARAMS](wdi-tlv-sae-commit-params.md) TLV, and the driver should check for their presence before accessing them. This change remains compatible with existing drivers. New drivers should validate the presence of these optional fields in all paths.
+In a SoftAP scenario, when an anti-clogging token is included in the commit parameters, Scalar/Element values aren't generated. These fields are therefore optional in the WDI_TLV_SAE_COMMIT_PARAMS TLV, and the driver should check for their presence before accessing them. This change remains compatible with existing drivers. New drivers should validate the presence of these optional fields in all paths.
 
-### Handle rejected groups
+### Rejected groups
 
-The OS only supports Group 19. It rejects any other group by sending a [OID_WDI_SET_SAE_AUTH_PARAMS](oid-wdi-set-sae-auth-params.md) command with:
-* **WDI_SAE_REQUEST_TYPE** set to **WDI_SAE_REQUEST_TYPE_COMMIT_PARAMS** or **WDI_SAE_REQUEST_TYPE_COMMIT_H2E_PARAMS** (if H2E is used).
-* **StatusCode** set to **DOT11_FRAME_STATUS_UNSUPPORTED_FINITE_CYCLIC_GROUP**. 
+The OS only supports Group 19. If the OS receives a commit frame from a peer that indicates a group that the OS doesn't support, the OS sends an [OID_WDI_SET_SAE_AUTH_PARAMS](oid-wdi-set-sae-auth-params.md) command. In the command, the OS sets:
 
-The OS provides the rejected group in the **FiniteCyclicGroup** field of the commit parameters (not to be confused with the **RejectedGroups** field, which contains groups rejected by the peer).
+* **WDI_SAE_REQUEST_TYPE** to **WDI_SAE_REQUEST_TYPE_COMMIT_PARAMS** or **WDI_SAE_REQUEST_TYPE_COMMIT_H2E_PARAMS** (if H2E is used).
+* **SaeStatus** to **WDI_SAE_STATUS_COMMIT_MESSAGE_UNSUPPORTED_FINITE_GROUP**.
+* The commit frame **StatusCode** ([WDI_TLV_SAE_COMMIT_PARAMS](wdi-tlv-sae-commit-params.md) > [WDI_TLV_SAE_STATUS_CODE](wdi-tlv-sae-status-code.md)) to **DOT11_FRAME_STATUS_UNSUPPORTED_FINITE_CYCLIC_GROUP**.
+* The commit frame **FiniteCyclicGroup** ([WDI_TLV_SAE_COMMIT_PARAMS](wdi-tlv-sae-commit-params.md) > [WDI_TLV_SAE_FINITE_CYCLIC_GROUP](wdi-tlv-sae-finite-cyclic-group.md)) to the rejected group (not to be confused with the **RejectedGroups** field, which contains groups that the peer rejects).
 
-If the OS receives a commit frame from a peer that includes a group within the rejected group element that the OS supports, the OS still fails the SAE authentication. The OS sends an [OID_WDI_SET_SAE_AUTH_PARAMS](oid-wdi-set-sae-auth-params.md) command with:
+If the OS receives a commit frame from a peer that includes a group within the **RejectedGroups** field that the OS actually supports, the OS will still fail the SAE authentication. The OS will send an [OID_WDI_SET_SAE_AUTH_PARAMS](oid-wdi-set-sae-auth-params.md) command with:
 
 * **WDI_SAE_REQUEST_TYPE** set to **WDI_SAE_REQUEST_TYPE_FAILURE**. 
 * **SaeStatus** set to **WDI_SAE_STATUS_COMMIT_MESSAGE_INVALID_REJECTED_GROUP**.
 
 ### SAE authentication sequence
-Once the [OID_WDI_TASK_START_AP](oid-wdi-task-start-ap.md) task is called, the driver allows devices to send SAE authentication frames and passes them up to the OS if **DOT11_AUTH_ALGO_WPA3_SAE** is set in the list of authentication algorithms in OID_WDI_TASK_START_AP.
+
+Once the [OID_WDI_TASK_START_AP](oid-wdi-task-start-ap.md) task is called, the driver allows devices to send SAE authentication frames if **DOT11_AUTH_ALGO_WPA3_SAE** is set in the authentication algorithms list in OID_WDI_TASK_START_AP.  The driver uses the [NDIS_STATUS_WDI_INDICATION_SAE_AUTH_PARAMS_NEEDED](ndis-status-wdi-indication-sae-auth-params-needed.md) indication to pass the SAE authentication parameters to the OS.
 
 Windows calls [OID_WDI_SET_SAE_AUTH_PARAMS](oid-wdi-set-sae-auth-params.md) with **WDI_SAE_COMMIT_PARAMS** and **WDI_SAE_CONFIRM_PARAMS** to complete the SAE exchange.
+
 After the driver receives the confirm parameters from the OS and sends them to the peer, it can accept an association request and indicate it to the OS.
 
 ## High performance SoftAP
