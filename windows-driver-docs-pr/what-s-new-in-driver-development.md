@@ -1,7 +1,7 @@
 ---
 title: What's New in Driver Development for Windows 11, Version 24H2
 description: This section describes new features for driver development in Windows 11, version 24H2.
-ms.date: 02/12/2024
+ms.date: 03/04/2024
 ---
 
 # <a name="top"></a>What's new in driver development for Windows 11, version 24H2
@@ -33,6 +33,10 @@ This section describes new features and updates for driver development in Window
 Starting in Windows 11, version 24H2, [bind links](/windows/win32/bindlink/) can be used to bind a file system namespace to a local "virtual path" through the Bind Filter (*bindflt.sys*). Minifilters can choose to veto such bind links on the system's boot partition. For more information, see [Vetoing a bind link].
 
 ## Human presence sensors
+
+## Network drivers
+
+UDP Receive Segment Coalescing Offload (URO) is a new hardware offload feature that enables network interface cards (NICs) to coalesce UDP receive segments.  For more information, see [UDP Receive Segment Coalescing Offload (URO)](./network/udp-rsc-offload.md) and [NetAdapterCx URO](./netcx/rsc-offload.md).
 
 ## Print devices
 
