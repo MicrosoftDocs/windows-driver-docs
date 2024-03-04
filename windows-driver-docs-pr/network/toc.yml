@@ -1894,6 +1894,8 @@
         href: standardized-inf-keywords-for-rsc.md
       - name: "Programming Considerations for RSC Drivers"
         href: programming-considerations-for-rsc-drivers.md
+    - name: "UDP Receive Segment Coalescing Offload (URO)"
+      href: udp-rsc-offload.md
   - name: "Receive Side Scaling"
     items: 
     - name: "Introduction to Receive Side Scaling"
