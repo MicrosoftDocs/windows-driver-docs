@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_SCENEMODE (ISP control parameters)
+title: KSPROPERTY_CAMERACONTROL_EXTENDED_SCENEMODE (ISP Control Parameters)
 description: The KSPROPERTY\_CAMERACONTROL\_EXTENDED\_SCENEMODE property ID that is defined in the KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PROPERTY enumeration provides OEMs with capabilities to fine tune the scene mode along with any other ISP control parameters as needed.
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_SCENEMODE Streaming Media Devices"]
 topic_type:

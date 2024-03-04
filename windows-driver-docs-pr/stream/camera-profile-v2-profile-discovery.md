@@ -1,5 +1,5 @@
 ---
-title: Camera Profile V2 profile discovery
+title: Camera Profile V2 Profile Discovery
 description: This topic provides information about Camera Profile V2 profile discovery.
 ms.date: 06/08/2023
 ---

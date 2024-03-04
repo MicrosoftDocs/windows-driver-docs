@@ -1,5 +1,5 @@
 ---
-title: FilmScanModesSupported element
+title: FilmScanModesSupported Element
 description: The required FilmScanModesSupported element contains a list of film exposure types that the film scanning option supports.
 keywords: ["FilmScanModesSupported element Imaging Devices"]
 topic_type:

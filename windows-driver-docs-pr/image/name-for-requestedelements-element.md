@@ -1,5 +1,5 @@
 ---
-title: Name for RequestedElements element
+title: Name for RequestedElements Element
 description: This required Name element identifies the section of the WSD Scan Service schema that the client wants data for when it calls GetScannerElementsRequest or GetJobElementsRequest.
 keywords: ["Name for RequestedElements element Imaging Devices"]
 topic_type:

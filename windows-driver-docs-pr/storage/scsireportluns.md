@@ -1,5 +1,5 @@
 ---
-title: ScsiReportLuns function
+title: ScsiReportLuns Function
 description: The ScsiReportLuns WMI method sends a SCSI report LUNs command to the indicated device.
 keywords: ["ScsiReportLuns function Storage Devices"]
 topic_type:

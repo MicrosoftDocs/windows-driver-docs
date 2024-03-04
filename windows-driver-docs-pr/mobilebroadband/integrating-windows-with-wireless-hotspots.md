@@ -1,5 +1,5 @@
 ---
-title: Introduction to integrating Windows with wireless hotspots
+title: Introduction to Integrating Windows with Wireless Hotspots
 description: Introduction to integrating Windows with wireless hotspots
 ms.date: 07/05/2019
 ---

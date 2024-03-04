@@ -25,7 +25,7 @@ The **!btb** extension displays the Itanium-based processor, branch traces buffe
 
  
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <p><strong>Windows XP and later</strong></p>
 <p>Kdexts.dll</p></td>

@@ -1,5 +1,5 @@
 ---
-title: \_DXGKARG\_CREATEALLOCATION2 structure
+title: _DXGKARG_CREATEALLOCATION2 Structure
 description: The DXGKARG\_CREATEALLOCATION2 structure is reserved for system use. Do not use it in your driver.
 keywords: ["_DXGKARG_CREATEALLOCATION2 structure Display Devices", "DXGKARG_CREATEALLOCATION2 structure Display Devices"]
 topic_type:

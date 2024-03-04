@@ -21,7 +21,7 @@ The **.browse** command displays the output of a specified command in a new [Com
 .browse Command
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="Command"></span><span id="command"></span><span id="COMMAND"></span>*Command*  

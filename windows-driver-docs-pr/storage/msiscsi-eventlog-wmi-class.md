@@ -1,5 +1,5 @@
 ---
-title: MSiSCSI\_EventLog WMI Class
+title: MSiSCSI_EventLog WMI Class
 description: MSiSCSI\_EventLog WMI Class
 ms.date: 10/17/2018
 ---

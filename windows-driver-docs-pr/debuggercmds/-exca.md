@@ -30,7 +30,7 @@ Specifies the base port of the PCIC.
 <span id="_______SocketNumber______"></span><span id="_______socketnumber______"></span><span id="_______SOCKETNUMBER______"></span> *SocketNumber*   
 Specifies the socket number of the ExCA register on the PCIC.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

@@ -1,5 +1,5 @@
 ---
-title: Install a print processor
+title: Install a Print Processor
 description: Provides information about how to install a print processor.
 keywords:
 - print processors WDK, installing

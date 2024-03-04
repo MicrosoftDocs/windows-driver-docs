@@ -1,5 +1,5 @@
 ---
-title: Provisioning Windows using a website
+title: Provisioning Windows Using a Website
 description: Provisioning Windows using a website
 ms.date: 04/20/2017
 ---

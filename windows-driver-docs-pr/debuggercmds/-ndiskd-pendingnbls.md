@@ -20,7 +20,7 @@ The **!ndiskd.pendingnbls** extension displays pending NBLs ([**NET\_BUFFER\_LIS
 !ndiskd.pendingnbls [-handle <x>] [-fullstack] [-verbosity <x>] 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 <span id="_______-handle______"></span><span id="_______-HANDLE______"></span> *-handle*   
 Handle of an NDIS miniport, filter, or open.

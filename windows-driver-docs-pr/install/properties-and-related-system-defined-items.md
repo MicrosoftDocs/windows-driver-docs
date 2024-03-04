@@ -1,5 +1,5 @@
 ---
-title: Properties and related system-defined items
+title: Properties and Related System-Defined Items
 description: Learn more about properties and related system-defined items.
 ms.date: 04/12/2022
 ---

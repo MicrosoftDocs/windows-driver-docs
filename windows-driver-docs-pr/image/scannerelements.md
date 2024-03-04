@@ -1,5 +1,5 @@
 ---
-title: ScannerElements element
+title: ScannerElements Element
 description: The required ScannerElements contains all of the scanner information that is being returned to a client.
 keywords: ["ScannerElements element Imaging Devices"]
 topic_type:

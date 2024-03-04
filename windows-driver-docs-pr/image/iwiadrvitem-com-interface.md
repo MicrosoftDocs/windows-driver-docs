@@ -1,5 +1,5 @@
 ---
-title: IWiaDrvItem COM interface
+title: IWiaDrvItem COM Interface
 description: IWiaDrvItem COM interface
 ms.date: 05/03/2023
 ---

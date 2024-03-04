@@ -1,5 +1,5 @@
 ---
-title: SM\_ScsiReadCapacity function
+title: SM_ScsiReadCapacity Function
 description: The SM\_ScsiReadCapacity WMI method sends a SCSI Read Capacity command to the indicated device.
 keywords: ["SM_ScsiReadCapacity function Storage Devices"]
 topic_type:

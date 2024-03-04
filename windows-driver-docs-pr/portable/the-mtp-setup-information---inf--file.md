@@ -1,6 +1,6 @@
 ---
+title: The MTP Setup Information (.Inf) File
 description: The MTP Setup Information (.inf) File
-title: The MTP Setup Information (.inf) File
 ms.date: 03/03/2023
 ---
 
@@ -33,7 +33,7 @@ The entries in the following table can support any of three transports (USB, IP,
 <pre><code>;;[DDInstall]
 ;;Include = wpdmtp.inf
 ;;Needs = WPD.MTP</code></pre>
-<p>Starting with Windows 7, <em>WinUsb.sys</em> replaces <em>WpdUsb.sys</em> as the lower filter driver for MTP devices that connect to the computer by using USB. The following directive is required for a vendor’s INF to include <em>WinUsb.inf</em> and a specific WinUSB section:</p>
+<p>Starting with Windows 7, <em>WinUsb.sys</em> replaces <em>WpdUsb.sys</em> as the lower filter driver for MTP devices that connect to the computer by using USB. The following directive is required for a vendor's INF to include <em>WinUsb.inf</em> and a specific WinUSB section:</p>
 <pre><code>;;[DDInstall]
 ;;Include = wpdmtp.inf, WINUSB.INF
 ;;Needs = WPD.MTP, WINUSB.NT</code></pre></td>

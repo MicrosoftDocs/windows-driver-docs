@@ -1,5 +1,5 @@
 ---
-title: OUTPUTDUPL\_CONTEXT\_DEBUG\_INFO structure
+title: OUTPUTDUPL_CONTEXT_DEBUG_INFO Structure
 description: Learn about the OUTPUTDUPL\_CONTEXT\_DEBUG\_INFO structure, which is reserved for system use. Do not use in your driver.
 keywords: ["OUTPUTDUPL_CONTEXT_DEBUG_INFO structure Display Devices"]
 topic_type:

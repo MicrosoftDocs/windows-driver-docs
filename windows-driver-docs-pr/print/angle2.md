@@ -1,5 +1,5 @@
 ---
-title: Angle property
+title: Angle Property
 description:  Contains all of the value entries that pertain to the orientation of staples.
 ms.date: 08/31/2021
 ---

@@ -1,5 +1,5 @@
 ---
-title: Setting Up Kernel-Mode Debugging of a Virtual Machine Manually using a Virtual COM Port
+title: Setting Up Kernel-Mode Debugging of a Virtual Machine Manually Using a Virtual COM Port
 description: Debugging Tools for Windows supports kernel debugging of a virtual machine using a Virtual COM Port.
 keywords: ["virtual machine debugging", "Virtual PC debugging", "VMware debugging"]
 ms.date: 04/23/2019
@@ -130,7 +130,7 @@ Depending on the specifics of the VM in use, you may need to change the network 
 
 **Windows Firewall**
 
-You can use Control Panel to allow access through the Windows firewall. Open Control Panel > System and Security, and select Allow an app through Windows Firewall. In the list of applications, locate *Windows GUI Symbolic Debugger* and *Windows Kernel Debugger*. Use the check boxes to allow those two applications through the firewall. Restart your debugging application (WinDbg or KD).
+You can use the Control Panel to allow access through the Windows firewall. Open Control Panel > System and Security, and select Allow an app through Windows Firewall. In the list of applications, locate *Windows GUI Symbolic Debugger* and *Windows Kernel Debugger*. Use the checkboxes to allow those two applications through the firewall. Restart your debugging application (WinDbg or KD).
 
 
 ## <span id="Third_Party_VMs"></span>Third Party VMs

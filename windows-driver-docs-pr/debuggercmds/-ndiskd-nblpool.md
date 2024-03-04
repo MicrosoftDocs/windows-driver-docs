@@ -22,7 +22,7 @@ The **!ndiskd.nblpool** extension displays information about a [**NET\_BUFFER\_L
     [-findctx <str>] [-findctxtype <str>] [-findva <x>] [-findpa <x>]
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______-handle______"></span><span id="_______-HANDLE______"></span> *-handle*   
@@ -52,7 +52,7 @@ Find NBLs that contain an NB that straddles the given virtual address.
 <span id="_______-findpa______"></span><span id="_______-FINDPA______"></span> *-findpa*   
 Find NBLs that contain an NB that straddles the given physical address.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Ndiskd.dll
 

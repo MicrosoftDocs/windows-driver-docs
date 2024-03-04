@@ -1,7 +1,7 @@
 ---
-title: ahcache (WinDbg)
-description: The ahcache extension displays the application compatibility cache.
-keywords: ["ahcache Windows Debugging"]
+title: "!ahcache (WinDbg)"
+description: "The !ahcache extension displays the application compatibility cache."
+keywords: ["!ahcache Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
 - apiref
@@ -13,7 +13,6 @@ api_type:
 ---
 
 # !ahcache
-
 
 The **!ahcache** extension displays the application compatibility cache.
 
@@ -33,32 +32,6 @@ Displays the RTL\_GENERIC\_TABLE list instead of the LRU list.
 <span id="Bit_4__0x10_"></span><span id="bit_4__0x10_"></span><span id="BIT_4__0X10_"></span>Bit 4 (0x10)  
 Verbose display: includes all entry details, not just the names.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Unavailable</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Kdexts.dll</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
- 
-
- 
-
-
-
-
-
+Kdexts.dll

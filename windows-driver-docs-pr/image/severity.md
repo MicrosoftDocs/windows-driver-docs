@@ -1,5 +1,5 @@
 ---
-title: Severity element
+title: Severity Element
 description: The required Severity element specifies the severity level of the current DeviceCondition or ConditionHistoryEntry element.
 keywords: ["Severity element Imaging Devices"]
 topic_type:

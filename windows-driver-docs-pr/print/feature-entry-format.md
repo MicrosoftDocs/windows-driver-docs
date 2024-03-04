@@ -1,5 +1,5 @@
 ---
-title: Feature entry format
+title: Feature Entry Format
 description: Feature entry format
 keywords:
 - printer features WDK Unidrv , entry format

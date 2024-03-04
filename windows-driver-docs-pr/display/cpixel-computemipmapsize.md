@@ -1,6 +1,6 @@
 ---
-title: CPixel ComputeMipMapSize method
-description: The CPixel ComputeMipMapSize method determines the amount of memory required to allocate a mipmap texture.
+title: CPixel::ComputeMipMapSize Method
+description: The CPixel::ComputeMipMapSize method determines the amount of memory required to allocate a mipmap texture.
 keywords: ["ComputeMipMapSize method Display Devices", "ComputeMipMapSize method Display Devices , CPixel interface", "CPixel interface Display Devices , ComputeMipMapSize method"]
 topic_type:
 - apiref

@@ -21,7 +21,7 @@ The **!wdfkd.wdfumdownirp** extension displays the kernel-mode I/O request packe
 !wdfkd.wdfumdownirp UmIrp [FileObject] 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______UmIrp______"></span><span id="_______umirp______"></span><span id="_______UMIRP______"></span> *UmIrp*   

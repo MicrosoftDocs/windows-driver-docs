@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PROFILE
+title: KSPROPERTY_CAMERACONTROL_EXTENDED_PROFILE
 description: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PROFILE is used to allow the capture framework to inform the camera driver which profile was selected. .
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_PROFILE Streaming Media Devices"]
 topic_type:

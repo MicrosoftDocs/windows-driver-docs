@@ -1,5 +1,5 @@
 ---
-title: Driver design guides for display, graphics, and compute accelerator devices
+title: Driver Design Guides for Display, Graphics, and Compute Accelerator Devices
 description: Design guide for display device drivers, graphics device drivers, and compute accelerator device drivers
 keywords:
 - display driver development WDK , Windows
@@ -7,7 +7,6 @@ keywords:
 - compute accelerator driver development WDK, Windows
 - miniport drivers WDK display
 ms.date: 02/22/2023
-ms.custom: contperf-fy22q3
 ms.topic: article
 ---
 

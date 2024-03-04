@@ -1,5 +1,5 @@
 ---
-title: RemovePort function
+title: RemovePort Function
 description: The RemovePort WMI method configures the WMI provider so that it stops passing events associated with the indicated port to the WMI client.
 keywords: ["RemovePort function Storage Devices"]
 topic_type:

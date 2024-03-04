@@ -1,5 +1,5 @@
 ---
-title: MSFT\_VolumeToFileShare class
+title: MSFT_VolumeToFileShare Class
 description: Association between a MSFT\_Volume and its MSFT\_FileShare objects.
 ms.assetid: 50CF46C1-F67C-436C-9E71-7C7DFE18BDA1
 keywords:

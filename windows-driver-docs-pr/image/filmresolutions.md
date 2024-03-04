@@ -1,5 +1,5 @@
 ---
-title: FilmResolutions element
+title: FilmResolutions Element
 description: The required FilmResolutions element contains a list of resolutions at which the scanner's film scanning input source can scan.
 keywords: ["FilmResolutions element Imaging Devices"]
 topic_type:

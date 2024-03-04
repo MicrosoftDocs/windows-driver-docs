@@ -1,5 +1,5 @@
 ---
-title: Install a WIA scanner driver with WSD
+title: Install a WIA Scanner Driver with WSD
 description: Provides information about installing a WIA scanner driver with the *WSDScan.sys* kernel-mode driver.
 ms.date: 12/14/2023
 ---

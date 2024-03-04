@@ -1,5 +1,5 @@
 ---
-title: KMDF extensions and driver triples
+title: KMDF Extensions and Driver Triples
 description: In this topic, we discuss class-based extensions to the Kernel Mode Driver Framework (KMDF).
 ms.date: 04/20/2017
 ---

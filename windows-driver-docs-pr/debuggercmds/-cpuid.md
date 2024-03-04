@@ -27,7 +27,7 @@ The **!cpuid** extension displays information about the processors on the system
 <span id="_______Processor______"></span><span id="_______processor______"></span><span id="_______PROCESSOR______"></span> *Processor*   
 Specifies the processor whose information will be displayed. If you omit this parameter, all processors are displayed.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

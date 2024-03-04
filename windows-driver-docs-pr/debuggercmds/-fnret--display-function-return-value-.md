@@ -21,7 +21,7 @@ The **.fnret** command displays information about a function's return value.
 .fnret [/s] Address [Value] 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="________s______"></span><span id="________S______"></span> **/s**   

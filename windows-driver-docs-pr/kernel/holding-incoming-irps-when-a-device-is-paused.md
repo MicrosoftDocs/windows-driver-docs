@@ -1,5 +1,5 @@
 ---
-title: Holding Incoming IRPs When A Device Is Paused
+title: Holding Incoming IRPs when a Device is Paused
 description: Holding Incoming IRPs When A Device Is Paused
 keywords: ["holding IRPs", "IRPs WDK PnP", "I/O request packets WDK PnP", "pausing PnP devices"]
 ms.date: 06/16/2017

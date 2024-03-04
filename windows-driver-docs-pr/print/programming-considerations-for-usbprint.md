@@ -1,5 +1,5 @@
 ---
-title: Programming considerations for USBPRINT
+title: Programming Considerations for USBPRINT
 description: Provides information about programming considerations for USBPRINT.
 keywords:
 - printer drivers WDK, USB

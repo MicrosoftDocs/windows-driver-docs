@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_VIDEOCOMPRESSION\_OVERRIDE\_FRAME\_SIZE
+title: KSPROPERTY_VIDEOCOMPRESSION_OVERRIDE_FRAME_SIZE
 description: The KSPROPERTY\_VIDEOCOMPRESSION\_OVERRIDE\_FRAME\_SIZE property temporarily overrides the frame size (byte count). This property is optional.
 keywords: ["KSPROPERTY_VIDEOCOMPRESSION_OVERRIDE_FRAME_SIZE Streaming Media Devices"]
 topic_type:

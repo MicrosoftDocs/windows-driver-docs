@@ -1,5 +1,5 @@
 ---
-title: Camera Profile V2 architectural overview
+title: Camera Profile V2 Architectural Overview
 description: This article provides a Camera Profile V2 architectural overview.
 ms.date: 06/08/2023
 ---

@@ -21,7 +21,7 @@ The **!wdfkd.wdffindobjects** extension searches memory for WDF objects.
 !wdfkd.wdffindobjects [StartAddress [Flags]]
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______StartAddress______"></span><span id="_______startaddress______"></span><span id="_______STARTADDRESS______"></span> *StartAddress*   
@@ -36,7 +36,7 @@ Displays verbose output.
 <span id="Bit_1__0x2_"></span><span id="bit_1__0x2_"></span><span id="BIT_1__0X2_"></span>Bit 1 (0x2)  
 Displays internal type information for each handle.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Wdfkd.dll
 

@@ -1,5 +1,5 @@
 ---
-title: Device Interface publication for a SerCx or SerCx2 managed Serial Port
+title: Device Interface Publication for a SerCx or SerCx2 Managed Serial Port
 description: Learn how to publish a device interface for a SerCx or SerCx2 managed serial port.
 ms.date: 01/20/2023
 ---

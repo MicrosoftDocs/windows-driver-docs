@@ -1,5 +1,5 @@
 ---
-title: Accessing the unified device property model
+title: Accessing the Unified Device Property Model
 description: This topic describes how a Windows Driver Frameworks (WDF) driver retrieves or modifies properties that are exposed through the unified device property model.
 ms.date: 04/12/2022
 ---

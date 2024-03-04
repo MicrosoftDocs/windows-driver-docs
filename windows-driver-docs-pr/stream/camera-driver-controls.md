@@ -1,5 +1,5 @@
 ---
-title: Universal camera driver controls for Windows 10
+title: Universal Camera Driver Controls for Windows 10
 description: Provides information about universal camera driver controls for Windows 10.
 ms.date: 03/23/2021
 ---

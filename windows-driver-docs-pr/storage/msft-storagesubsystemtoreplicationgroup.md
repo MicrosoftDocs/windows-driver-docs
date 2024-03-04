@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StorageSubSystemToReplicationGroup class
+title: MSFT_StorageSubSystemToReplicationGroup Class
 description: Association between a MSFT\_StorageSubSystem and MSFT\_ReplicationGroup.
 ms.assetid: FBADE666-2039-4C76-ACBC-E5804EFFF11C
 keywords:

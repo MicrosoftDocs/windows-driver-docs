@@ -1,5 +1,5 @@
 ---
-title: WIA tools
+title: WIA Tools
 description: WIA tools
 ms.date: 05/11/2023
 ---

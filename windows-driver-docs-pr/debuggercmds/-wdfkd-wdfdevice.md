@@ -21,7 +21,7 @@ The **!wdfkd.wdfdevice** extension displays information that is associated with 
 !wdfkd.wdfdevice Handle [Flags]
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Handle______"></span><span id="_______handle______"></span><span id="_______HANDLE______"></span> *Handle*   
@@ -45,7 +45,7 @@ The display will include detailed Plug and Play (PnP) state information.
 <span id="Bit_4__0x10_"></span><span id="bit_4__0x10_"></span><span id="BIT_4__0X10_"></span>Bit 4 (0x10)  
 The display will include the device object's callback functions.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Wdfkd.dll
 

@@ -1,5 +1,5 @@
 ---
-title: D3DKMT\_MULTIPLANE\_OVERLAY\_BLEND enumeration
+title: D3DKMT_MULTIPLANE_OVERLAY_BLEND Enumeration
 description: Learn about the D3DKMT\_MULTIPLANE\_OVERLAY\_BLEND enumeration, which is reserved for system use. Do not use in your driver.
 keywords: ["D3DKMT_MULTIPLANE_OVERLAY_BLEND enumeration Display Devices"]
 topic_type:

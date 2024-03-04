@@ -1,5 +1,5 @@
 ---
-title: INF AddService directive
+title: INF AddService Directive
 description: An AddService directive is used within an INF DDInstall.Services section or INF DefaultInstall.Services section.
 keywords:
 - INF AddService Directive Device and Driver Installation

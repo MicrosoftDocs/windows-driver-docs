@@ -24,7 +24,7 @@ The **!logexts.help** extension displays a Help text in the Command Prompt windo
 ## <span id="ddk__logexts_help_dbg"></span><span id="DDK__LOGEXTS_HELP_DBG"></span>
 
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

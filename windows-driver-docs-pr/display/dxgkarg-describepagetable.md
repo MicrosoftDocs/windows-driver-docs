@@ -1,5 +1,5 @@
 ---
-title: \_DXGKARG\_DESCRIBEPAGETABLE structure
+title: _DXGKARG_DESCRIBEPAGETABLE Structure
 description: The DXGKARG\_DESCRIBEPAGETABLE structure is reserved for system use. Do not use it in your driver.
 keywords: ["_DXGKARG_DESCRIBEPAGETABLE structure Display Devices", "DXGKARG_DESCRIBEPAGETABLE structure Display Devices"]
 topic_type:

@@ -21,7 +21,7 @@ The **!wdfkd.wdfumdevstack** extension displays detailed information about a UMD
 !wdfkd.wdfumdevstack DevstackAddress [Flags] 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______DevstackAddress______"></span><span id="_______devstackaddress______"></span><span id="_______DEVSTACKADDRESS______"></span> *DevstackAddress*   

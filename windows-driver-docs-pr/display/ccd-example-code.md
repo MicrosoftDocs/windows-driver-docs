@@ -1,5 +1,5 @@
 ---
-title: CCD example pseudocode
+title: CCD Example Pseudocode
 description: Example pseudocode for using CCD APIs to set clone view
 keywords:
 - connecting displays WDK Windows 7 display , CCD APIs, example code

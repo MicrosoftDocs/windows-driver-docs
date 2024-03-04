@@ -21,13 +21,13 @@ The **!ks.enumdevobj** extension displays the KSDEVICE associated with a given W
 !ks.enumdevobj DeviceObject 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______DeviceObject______"></span><span id="_______deviceobject______"></span><span id="_______DEVICEOBJECT______"></span> *DeviceObject*   
 Specifies a pointer to a WDM device object.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

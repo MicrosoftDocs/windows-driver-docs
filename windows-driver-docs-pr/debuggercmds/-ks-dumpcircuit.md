@@ -21,7 +21,7 @@ The **!ks.dumpcircuit** extension lists details of the transport circuit associa
 !ks.dumpcircuitextension Object [Level] 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Object______"></span><span id="_______object______"></span><span id="_______OBJECT______"></span> *Object*   
@@ -32,7 +32,7 @@ For PortCls, object must be one of the following types: CPortPin\*, CKsShellRequ
 <span id="_______Level______"></span><span id="_______level______"></span><span id="_______LEVEL______"></span> *Level*   
 Optional. Specifies the level of detail to display on a 0-7 scale with progressively more information displayed for higher values. To display all available details, supply a value of 7.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

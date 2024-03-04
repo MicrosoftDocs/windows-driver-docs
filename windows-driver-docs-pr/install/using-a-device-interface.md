@@ -1,5 +1,5 @@
 ---
-title: Using a device interface
+title: Using a Device Interface
 description: Learn more about how to use a device interface
 keywords:
 - interface classes WDK device installations

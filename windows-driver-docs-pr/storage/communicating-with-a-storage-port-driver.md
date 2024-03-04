@@ -1,5 +1,5 @@
 ---
-title: Communicating with a storage port driver
+title: Communicating with a Storage Port Driver
 description: How storage miniports communicate with a storage port driver
 keywords:
 - storage miniport drivers WDK

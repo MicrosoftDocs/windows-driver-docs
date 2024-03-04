@@ -1,5 +1,5 @@
 ---
-title: ProcAmpControlCloseStream method
+title: ProcAmpControlCloseStream Method
 description: The sample DXVA\_ProcAmpControlDeviceClass::ProcAmpCloseStream function closes the ProcAmp stream object and instructs the device driver to release hardware resources associated with the stream.
 keywords: ["ProcAmpControlCloseStream method Display Devices", "ProcAmpControlCloseStream method Display Devices , DXVA_ProcAmpControlDeviceClass interface", "DXVA_ProcAmpControlDeviceClass interface Display Devices , ProcAmpControlCloseStream method"]
 topic_type:
@@ -10,7 +10,6 @@ api_name:
 api_type:
 - COM
 ms.date: 12/06/2018
-ms.custom: seodec18
 ---
 
 # DXVA\_ProcAmpControlDeviceClass::ProcAmpControlCloseStream method
@@ -47,4 +46,3 @@ The **ProcAmpControlCloseStream** function maps directly to a **DestroyMoComp** 
 [**ProcAmpControlOpenStream**](dxva-procampcontroldeviceclass-procampcontrolopenstream.md)
 
  
-

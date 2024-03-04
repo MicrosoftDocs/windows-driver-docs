@@ -1,5 +1,5 @@
 ---
-title: AddInitiatorId method of the MSFT\_MaskingSet class
+title: AddInitiatorId Method of the MSFT_MaskingSet Class
 description: Adds one or more initiator identifiers to the masking set.
 ms.assetid: 2B0B1B65-01B5-459D-957F-FFEA7FD57DE5
 keywords:

@@ -1,5 +1,5 @@
 ---
-title: RtlMoveVolatileMemory function (wdm.h)
+title: RtlMoveVolatileMemory Function (Wdm.H)
 ms.date: 01/04/2024
 description: This article describes the RtlMoveVolatileMemory function (wdm.h).
 ---

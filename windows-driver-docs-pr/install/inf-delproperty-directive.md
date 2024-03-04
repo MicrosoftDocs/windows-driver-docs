@@ -1,5 +1,5 @@
 ---
-title: INF DelProperty directive
+title: INF DelProperty Directive
 description: DelProperty references INF file sections that delete device properties for a device instance, a device setup class, a device interface class, or a device interface.
 keywords:
 - INF DelProperty Directive Device and Driver Installation

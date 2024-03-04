@@ -1,5 +1,5 @@
 ---
-title: FSCTL_QUERY_VOLUME_NUMA_INFO control code
+title: FSCTL_QUERY_VOLUME_NUMA_INFO Control Code
 description: The FSCTL_QUERY_VOLUME_NUMA_INFO control code finds the current Non-Uniform Memory Architecture (NUMA) node index for a volume.
 keywords: ["FSCTL_QUERY_VOLUME_NUMA_INFO control code Installable File System Drivers"]
 topic_type:

@@ -1,5 +1,5 @@
 ---
-title: MCDM KM driver implementation guidelines
+title: MCDM KM Driver Implementation Guidelines
 description: Implementation guidelines for MCDM kernel-mode driver
 ms.date: 01/12/2023
 ---

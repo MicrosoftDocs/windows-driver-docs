@@ -1,5 +1,5 @@
 ---
-title: Setting up Video Adapter Access Ranges
+title: Setting Up Video Adapter Access Ranges
 description: Setting up Video Adapter Access Ranges
 keywords:
 - video adapter access ranges WDK video miniport

@@ -1,5 +1,5 @@
 ---
-title: Color commands
+title: Color Commands
 description: Provides information about color commands for printing.
 keywords:
 - printer commands WDK Unidrv, colors

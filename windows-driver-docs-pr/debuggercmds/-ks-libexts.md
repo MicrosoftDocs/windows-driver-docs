@@ -21,7 +21,7 @@ The **!ks.libexts** extension provides access to Microsoft-supplied library exte
 !ks.libexts [Command] [Libext] 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="Command"></span><span id="command"></span><span id="COMMAND"></span>*Command*  
@@ -45,7 +45,7 @@ Show details about all currently linked library extensions. When this is used, o
 <span id="_______Libext______"></span><span id="_______libext______"></span><span id="_______LIBEXT______"></span> *Libext*   
 Specifies the name of a library extension. Required only for *Command* values of **enable** or **disable**.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

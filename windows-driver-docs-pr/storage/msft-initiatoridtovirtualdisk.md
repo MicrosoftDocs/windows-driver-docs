@@ -1,5 +1,5 @@
 ---
-title: MSFT\_InitiatorIdToVirtualDisk class
+title: MSFT_InitiatorIdToVirtualDisk Class
 description: Association between InitiatorId and VirtualDisk.
 ms.assetid: A0E84922-4D13-4934-8F00-2C2809062713
 keywords:

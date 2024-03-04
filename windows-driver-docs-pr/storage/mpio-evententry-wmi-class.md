@@ -1,5 +1,5 @@
 ---
-title: MPIO\_EventEntry WMI Class
+title: MPIO_EventEntry WMI Class
 description: MPIO\_EventEntry WMI Class
 ms.date: 10/17/2018
 ---

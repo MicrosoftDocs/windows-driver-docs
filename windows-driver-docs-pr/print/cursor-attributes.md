@@ -1,5 +1,5 @@
 ---
-title: Cursor attributes
+title: Cursor Attributes
 description: Cursor attributes
 keywords:
 - cursor attributes WDK Unidrv

@@ -1,5 +1,5 @@
 ---
-title: Functions defined by print processors
+title: Functions Defined by Print Processors
 description: Provides information about functions defined by print processors.
 keywords:
 - print processors WDK, functions

@@ -23,7 +23,7 @@ The **.flash\_on\_break** command specifies whether the WinDbg taskbar entry fla
 .flash_on_break 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______on______"></span><span id="_______ON______"></span> **on**   

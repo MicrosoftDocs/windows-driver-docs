@@ -1,5 +1,5 @@
 ---
-title: MPEG-4 AVC (H.264) support in DirectX VA
+title: MPEG-4 AVC (H.264) Support in DirectX VA
 description: MPEG-4 AVC (H.264)
 keywords:
 - MPEG-4 AVC (H.264) WDK DirectX VA version 1.0

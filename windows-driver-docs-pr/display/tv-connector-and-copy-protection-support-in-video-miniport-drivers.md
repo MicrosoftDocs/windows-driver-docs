@@ -10,7 +10,6 @@ keywords:
 - copy protection WDK video miniport , about copy protection support
 - hardware WDK copy protection
 ms.date: 12/06/2018
-ms.custom: seodec18
 ---
 
 # TV Connector and Copy Protection Support in Video Miniport Drivers
@@ -28,4 +27,3 @@ The following sections provide implementation details for miniport drivers of de
 [Setting Copy Protection Hardware](setting-copy-protection-hardware.md)
 
  
-

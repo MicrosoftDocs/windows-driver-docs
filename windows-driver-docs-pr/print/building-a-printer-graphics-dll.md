@@ -1,5 +1,5 @@
 ---
-title: Build a printer graphics DLL
+title: Build a Printer Graphics DLL
 description: Provides information about how to build a printer graphics DLL.
 keywords:
 - printer graphics DLL WDK, building

@@ -27,7 +27,7 @@ The **!wmitrace.tmffile** extension specifies a trace message format (TMF) file.
 <span id="_______TMFFile______"></span><span id="_______tmffile______"></span><span id="_______TMFFILE______"></span> *TMFFile*   
 Specifies a trace message format file.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 This extension is exported by Wmitrace.dll.
 

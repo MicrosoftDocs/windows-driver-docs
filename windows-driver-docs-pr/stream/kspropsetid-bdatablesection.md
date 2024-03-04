@@ -1,5 +1,5 @@
 ---
-title: KSPROPSETID\_BdaTableSection
+title: KSPROPSETID_BdaTableSection
 description: KSPROPSETID\_BdaTableSection
 ms.date: 11/28/2017
 ---

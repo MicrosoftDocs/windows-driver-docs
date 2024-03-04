@@ -1,5 +1,5 @@
 ---
-title: StartDiagnosticLog method of the MSFT\_StorageSubSystem class
+title: StartDiagnosticLog Method of the MSFT_StorageSubSystem Class
 description: Starts a diagnostic log for the storage subsystem.
 ms.assetid: C3A6500C-E0E4-48D5-AB81-788AACD0AB9C
 keywords:

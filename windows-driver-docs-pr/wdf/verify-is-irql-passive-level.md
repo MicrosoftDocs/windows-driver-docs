@@ -1,5 +1,5 @@
 ---
-title: VERIFY_IS_IRQL_PASSIVE_LEVEL macro
+title: VERIFY_IS_IRQL_PASSIVE_LEVEL Macro
 description: The VERIFY_IS_IRQL_PASSIVE_LEVEL macro breaks into the kernel debugger if the driver is not executing at IRQL PASSIVE_LEVEL.
 keywords:
  - VERIFY_IS_IRQL_PASSIVE_LEVEL macro

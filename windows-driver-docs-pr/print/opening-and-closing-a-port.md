@@ -1,5 +1,5 @@
 ---
-title: Open and close a port
+title: Open and Close a Port
 description: Provides information about how to open and close a port.
 keywords:
 - print monitors WDK, port management

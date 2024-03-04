@@ -1,5 +1,5 @@
 ---
-title: MSFT\_VirtualDiskToVirtualDisk class
+title: MSFT_VirtualDiskToVirtualDisk Class
 description: Association between a source VirtualDisk and a target VirtualDisk.
 ms.assetid: 6C0F1564-E5C0-42D9-94DA-EFE0B32815B7
 keywords:

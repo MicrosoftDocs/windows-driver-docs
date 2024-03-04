@@ -1,5 +1,5 @@
 ---
-title: SRB\_CLOSE\_STREAM
+title: SRB_CLOSE_STREAM
 description: SRB\_CLOSE\_STREAM
 keywords: ["SRB_CLOSE_STREAM Streaming Media Devices"]
 topic_type:

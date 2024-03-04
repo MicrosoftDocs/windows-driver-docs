@@ -1,5 +1,5 @@
 ---
-title: ScannerStatusConditionEvent element
+title: ScannerStatusConditionEvent Element
 description: The required ScannerStatusConditionEvent element provides the client with detailed information about a single status change in the scan device.
 keywords: ["ScannerStatusConditionEvent element Imaging Devices"]
 topic_type:

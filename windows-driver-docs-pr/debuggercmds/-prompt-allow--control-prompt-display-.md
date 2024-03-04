@@ -22,7 +22,7 @@ The **.prompt\_allow** command controls what information is displayed during ste
 .prompt_allow 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="______________"></span> **+**   

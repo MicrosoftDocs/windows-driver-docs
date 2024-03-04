@@ -1,5 +1,5 @@
 ---
-title: INF AddReg directive
+title: INF AddReg Directive
 description: An AddReg directive references one or more INF-writer-defined add-registry-sections that are used to modify or create registry information.
 keywords:
 - INF AddReg Directive Device and Driver Installation

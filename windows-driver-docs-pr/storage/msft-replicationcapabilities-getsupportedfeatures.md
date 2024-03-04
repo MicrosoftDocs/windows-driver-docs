@@ -1,5 +1,5 @@
 ---
-title: GetSupportedFeatures method of the MSFT\_ReplicationCapabilities class
+title: GetSupportedFeatures Method of the MSFT_ReplicationCapabilities Class
 description: Returns, for a given ReplicationType, the supported features.
 ms.assetid: 0DA00822-1931-47CA-874E-6192895F5124
 keywords:

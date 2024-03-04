@@ -1,5 +1,5 @@
 ---
-title: Sample configuration XML
+title: Sample Configuration XML
 description: Use the sample configuration XML in this topic to develop configuration files for your device.
 ms.date: 03/17/2023
 ---

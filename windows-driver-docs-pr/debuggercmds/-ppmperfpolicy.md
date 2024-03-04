@@ -21,11 +21,11 @@ The **!ppmperfpolicy** command is no longer supported, use the [!ppmsettings](-p
 !ppmperfpolicy
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 None
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Kdexts.dll
   

@@ -1,5 +1,5 @@
 ---
-title: messageBoxUI element
+title: messageBoxUI Element
 description: The optional messageBoxUI element is used to display a message box on the client computer.
 keywords: ["messageBoxUI element Print Devices"]
 topic_type:

@@ -21,7 +21,7 @@ The **bs** command changes the command executed when the specified breakpoint is
 bs ID ["CommandString"] 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______ID______"></span><span id="_______id______"></span> *ID*   

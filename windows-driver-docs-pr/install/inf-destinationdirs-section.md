@@ -1,5 +1,5 @@
 ---
-title: INF DestinationDirs section
+title: INF DestinationDirs Section
 description: A DestinationDirs section specifies the target destination directory or directories for all copy, delete, and/or rename operations on files referenced by name elsewhere in the INF file.
 keywords:
 - INF DestinationDirs Section Device and Driver Installation

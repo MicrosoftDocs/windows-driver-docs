@@ -30,7 +30,7 @@ Turns the trace message display off.
 <span id="_______1______"></span> **1**   
 Turns the trace message display on.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 This extension is exported by Wmitrace.dll.
 

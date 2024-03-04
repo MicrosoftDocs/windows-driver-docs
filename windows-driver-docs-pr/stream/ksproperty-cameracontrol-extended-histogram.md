@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_HISTOGRAM
+title: KSPROPERTY_CAMERACONTROL_EXTENDED_HISTOGRAM
 description: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_HISTOGRAM is a property ID that will be used to control the histogram metadata produced by the driver. This is a pin level control for the preview pin only.
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_HISTOGRAM Streaming Media Devices"]
 topic_type:

@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_GM\_TIMESTAMP\_CLOCK
+title: KSPROPERTY_GM_TIMESTAMP_CLOCK
 description: The KSPROPERTY\_GM\_TIMESTAMP\_CLOCK property is not currently supported.
 keywords: ["KSPROPERTY_GM_TIMESTAMP_CLOCK Streaming Media Devices"]
 topic_type:

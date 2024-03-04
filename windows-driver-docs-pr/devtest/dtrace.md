@@ -20,7 +20,7 @@ DTrace (DTrace.exe) is a command-line tool that displays system information and 
 > [!NOTE]
 > DTrace is supported in the Insider builds of Windows after version 18980 and Windows Server Build 18975.
 
-The DTrace on Windows Github site is located here:
+The DTrace on Windows GitHub site is located here:
 
 [https://github.com/microsoft/DTrace-on-Windows](https://github.com/microsoft/DTrace-on-Windows)
 
@@ -170,9 +170,7 @@ Traceext.sys (trace extension) is a Windows kernel extension driver, which allow
 
 ## Installing DTrace under Windows
 
-1. Check that you are running a supported version of Windows. The current download of DTrace is supported in the Insider builds of 20H1 Windows after version 18980 and Windows Server Build 18975. *Installing this version of DTrace on older versions of Windows can lead to system instability and is not recommended.*
-
-   The archived version of DTrace for 19H1 is available at [Archived Download DTrace on Windows](https://www.microsoft.com/download/58091). Note that this version of DTrace is no longer supported.
+1. Check that you are running a supported version of Windows. The current download of DTrace is supported in the Insider builds of 20H1 Windows after version 18980 and Windows Server Build 18975. *Installing this version of DTrace on older versions of Windows can lead to system instability and is not recommended.* (The archived version of DTrace for 19H1 is no longer available and is no longer supported.)
 
 2. Download the MSI installation file ([Download DTrace on Windows](https://www.microsoft.com/download/details.aspx?id=100441)) from the Microsoft Download Center.
 

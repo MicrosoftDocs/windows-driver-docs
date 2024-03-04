@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StorageSubSystemToVolume class
+title: MSFT_StorageSubSystemToVolume Class
 description: Association between an MSFT\_StorageSubSystem and MSFT\_Volume.
 ms.assetid: EA89DCE7-39BE-4BEC-9C27-2C267595010D
 keywords:

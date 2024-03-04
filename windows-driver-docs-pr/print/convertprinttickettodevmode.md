@@ -1,5 +1,5 @@
 ---
-title: ConvertPrintTicketToDevMode overview
+title: ConvertPrintTicketToDevMode Overview
 description: Describes IPrintOemPrintTicketProvider::ConvertPrintTicketToDevMode method usage from an application's passed print ticket.
 keywords:
 - ConvertPrintTicketToDevMode

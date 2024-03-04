@@ -38,7 +38,7 @@ Specifies one of the following error codes:
 <span id="_______Flags______"></span><span id="_______flags______"></span><span id="_______FLAGS______"></span> *Flags*   
 If *Flags* is set to 1, the error code is read as an NTSTATUS code.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

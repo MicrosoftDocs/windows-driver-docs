@@ -20,7 +20,7 @@ The **!ndiskd.ifprovider** extension displays information about an [NDIS interfa
 !ndiskd.ifprovider [-handle <x>]
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 <span id="_______-handle______"></span><span id="_______-HANDLE______"></span> *-handle*   
 Optional handle of an IfProvider.

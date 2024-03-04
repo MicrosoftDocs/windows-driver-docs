@@ -21,7 +21,7 @@ Display Target MAC Address
 .kdtargetmac 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 ### Environment

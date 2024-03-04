@@ -1,5 +1,5 @@
 ---
-title: How to test pre-production drivers with Secure Boot enabled
+title: How to Test Pre-Production Drivers with Secure Boot Enabled
 description: How to test pre-production drivers with Secure Boot enabled
 keywords:
 - Secure Boot enabled

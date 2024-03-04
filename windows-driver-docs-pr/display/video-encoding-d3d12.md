@@ -1,5 +1,5 @@
 ---
-title: D3D12 video encoding
+title: D3D12 Video Encoding
 description: Learn about D3D12 video encoding
 keywords:
 - Direct3D12 video encoding

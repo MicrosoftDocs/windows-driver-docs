@@ -35,6 +35,10 @@
       href: what-s-new-for-windows-8-display-drivers.md
     - name: "What's new for Windows 7 display drivers (WDDM 1.1)"
       href: what-s-new-for-windows-7-display-drivers--wddm-1-1-.md
+  - name: "WDDM 3.2 features"
+    items:
+    - name: "Native GPU fence objects"
+      href: native-gpu-fence-objects.md
   - name: "WDDM 3.1 features"
     items:
     - name: "Sharing the backing store with KMD"

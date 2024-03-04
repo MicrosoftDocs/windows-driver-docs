@@ -23,7 +23,7 @@ The **.sound\_notify** command causes a sound to be played when WinDbg enters th
 .sound_notify /d 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="________ed______"></span><span id="________ED______"></span> **/ed**   

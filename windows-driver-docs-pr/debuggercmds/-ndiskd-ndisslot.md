@@ -25,7 +25,7 @@ The **!ndiskd.ndisslot** extension displays the contents of an NDIS per-processo
 !ndiskd.ndisslot [-handle <x>] [-itemtype <str>] 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______-handle______"></span><span id="_______-HANDLE______"></span> *-handle*   
@@ -34,7 +34,7 @@ Handle of the slot.
 <span id="_______-itemtype______"></span><span id="_______-ITEMTYPE______"></span> *-itemtype*   
 Type of the value stored in the slot.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Ndiskd.dll
 

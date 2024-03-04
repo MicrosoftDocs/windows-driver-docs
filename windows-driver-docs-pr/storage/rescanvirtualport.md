@@ -1,5 +1,5 @@
 ---
-title: RescanVirtualPort method (Windows Drivers)
+title: RescanVirtualPort Method (Windows Drivers)
 description: Learn more about the RescanVirtualPort method.
 ms.date: 10/14/2022
 ---

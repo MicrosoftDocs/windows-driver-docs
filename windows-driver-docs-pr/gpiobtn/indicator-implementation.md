@@ -1,5 +1,5 @@
 ---
-title: Indicator implementation
+title: Indicator Implementation
 description: This topic describes indicator implementation.
 ms.date: 10/17/2018
 ---

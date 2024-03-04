@@ -1,5 +1,5 @@
 ---
-title: CD-ROM I/O control codes
+title: CD-ROM I/O Control Codes
 description: Class drivers for CD-ROM devices handle additional public I/O control codes, described in this topic.
 keywords:
 - CD-ROM drivers WDK storage

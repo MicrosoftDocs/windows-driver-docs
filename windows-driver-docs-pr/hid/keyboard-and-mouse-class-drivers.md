@@ -2,7 +2,6 @@
 title: Configuration of Keyboard and Mouse Class Drivers
 description: Non-HID keyboards and mice can connect over multiple legacy buses but still use the same class driver.
 ms.date: 01/11/2024
-ms.custom: contperf-fy22q1
 ---
 
 # Configuration of keyboard and mouse class drivers

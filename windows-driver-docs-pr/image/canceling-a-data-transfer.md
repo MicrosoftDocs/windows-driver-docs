@@ -1,5 +1,5 @@
 ---
-title: Cancel a data transfer
+title: Cancel a Data Transfer
 description: Cancel a data transfer
 ms.date: 03/28/2023
 ---

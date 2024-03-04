@@ -21,7 +21,7 @@ The **!chksym** extension tests the validity of a module against a symbol file.
     !chksym Module [Symbol] 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Module______"></span><span id="_______module______"></span><span id="_______MODULE______"></span> *Module*   
@@ -30,7 +30,7 @@ Specifies the name of the module by its name or base address.
 <span id="_______Symbol______"></span><span id="_______symbol______"></span><span id="_______SYMBOL______"></span> *Symbol*   
 Specifies the name of a symbol file.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

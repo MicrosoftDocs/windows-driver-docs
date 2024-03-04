@@ -1,5 +1,5 @@
 ---
-title: WIA functions for debugging
+title: WIA Functions for Debugging
 description: WIA functions for debugging
 ms.date: 05/10/2023
 ---

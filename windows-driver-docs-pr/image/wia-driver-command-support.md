@@ -1,5 +1,5 @@
 ---
-title: WIA driver command support
+title: WIA Driver Command Support
 description: WIA driver command support
 ms.date: 05/10/2023
 ---

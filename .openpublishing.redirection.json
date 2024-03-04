@@ -14805,6 +14805,46 @@
             "source_path": "ecosystem-netflix-hwdrm-quality-comparison.md",
             "redirect_URL": "/windows-hardware/drivers/dashboard/overview-of-microsoft-driver-measure-dictionary",
             "redirect_document_id": false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/debuggercmds/-wmitrace-tfp.md",
+            "redirect_URL":  "/windows-hardware/drivers/debuggercmds/kernel-mode-extensions",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/debuggercmds/-wdfkd-wdfpooltracker.md",
+            "redirect_URL":  "/windows-hardware/drivers/debuggercmds/kernel-mode-extensions",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/debuggercmds/-wdfkd-wdfpool.md",
+            "redirect_URL":  "/windows-hardware/drivers/debuggercmds/kernel-mode-extensions",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/debuggercmds/-vpdd.md",
+            "redirect_URL":  "/windows-hardware/drivers/debuggercmds/kernel-mode-extensions",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/debuggercmds/-rpcexts-checkrpcsym.md",
+            "redirect_URL":  "/windows-hardware/drivers/debuggercmds/kernel-mode-extensions",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/debuggercmds/-netsyms.md",
+            "redirect_URL":  "/windows-hardware/drivers/debuggercmds/kernel-mode-extensions",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/debuggercmds/-ks-shdr.md",
+            "redirect_URL":  "/windows-hardware/drivers/debuggercmds/kernel-mode-extensions",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/debuggercmds/-ks-dhdr.md",
+            "redirect_URL":  "/windows-hardware/drivers/debuggercmds/kernel-mode-extensions",
+            "redirect_document_id":  false
         }
     ]
 }

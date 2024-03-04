@@ -1,5 +1,5 @@
 ---
-title: Header files in the Windows Driver Kit
+title: Header Files in the Windows Driver Kit
 description: Header files in the Windows Driver Kit
 keywords:
 - driver design decisions WDK , header file changes

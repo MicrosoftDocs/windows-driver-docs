@@ -1,6 +1,7 @@
 ---
 title: USB 3.0 Extensions
 description: This section describes the USB 3.0 debugger extension commands.
+keywords: ["USB 3.0 Extensions", "extensions", "WinDbg", "Windows Debugging"]
 ms.date: 11/28/2017
 ---
 

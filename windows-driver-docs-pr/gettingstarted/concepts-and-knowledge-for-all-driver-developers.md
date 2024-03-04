@@ -1,5 +1,5 @@
 ---
-title: Concepts for all driver developers
+title: Concepts for All Driver Developers
 description: This section describes essential concepts for all driver developers.
 keywords:
 - driver fundamentals

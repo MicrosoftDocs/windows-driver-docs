@@ -1,5 +1,5 @@
 ---
-title: DocumentSizeAutoDetectSupported element
+title: DocumentSizeAutoDetectSupported Element
 description: The required DocumentSizeAutoDetectSupported element indicates whether the scan device can detect the size of the original media.
 keywords: ["DocumentSizeAutoDetectSupported element Imaging Devices"]
 topic_type:

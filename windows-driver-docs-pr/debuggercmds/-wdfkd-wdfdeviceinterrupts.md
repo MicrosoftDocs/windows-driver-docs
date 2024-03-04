@@ -21,7 +21,7 @@ The **!wdfkd.wdfdeviceinterrupts** extension displays all the interrupt objects 
 !wdfkd.wdfdeviceinterrupts Handle
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Handle______"></span><span id="_______handle______"></span><span id="_______HANDLE______"></span> *Handle*   

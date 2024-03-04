@@ -21,13 +21,13 @@ The **!envvar** extension displays the value of the specified environment variab
 !envvar Variable
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Variable______"></span><span id="_______variable______"></span><span id="_______VARIABLE______"></span> *Variable*   
 Specifies the environment variable whose value is displayed. *Variable* is not case sensitive.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

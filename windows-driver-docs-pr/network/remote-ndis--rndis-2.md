@@ -6,7 +6,6 @@ keywords:
 - network drivers WDK , Remote NDIS
 - RNDIS
 ms.date: 03/02/2023
-ms.custom: contperf-fy21q4
 ---
 
 # Introduction to Remote NDIS (RNDIS)
@@ -35,8 +34,3 @@ This section includes:
  
 
  
-
-
-
-
-

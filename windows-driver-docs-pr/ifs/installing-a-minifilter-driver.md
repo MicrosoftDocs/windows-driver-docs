@@ -1,5 +1,5 @@
 ---
-title: Installing a filter driver
+title: Installing a Filter Driver
 description: Describes how to install a filter driver
 keywords:
 - file system filter drivers WDK, installing

@@ -1,5 +1,5 @@
 ---
-title: MSFT\_ReplicationCapabilities class
+title: MSFT_ReplicationCapabilities Class
 description: Represents the replication capabilities of a storage subsystem.
 ms.assetid: EBD8AB73-BE3C-4AD8-9541-9853D3851900
 keywords:

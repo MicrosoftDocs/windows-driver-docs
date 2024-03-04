@@ -1,5 +1,5 @@
 ---
-title: Platen element
+title: Platen Element
 description: The optional Platen element describes the capabilities of the flatbed platen that is available on the scanner.
 keywords: ["Platen element Imaging Devices"]
 topic_type:

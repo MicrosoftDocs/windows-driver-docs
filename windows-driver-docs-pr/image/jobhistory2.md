@@ -1,5 +1,5 @@
 ---
-title: JobHistory element (optional)
+title: JobHistory Element (Optional)
 description: The optional JobHistory element contains information about scan jobs that have recently completed processing.
 keywords: ["JobHistory element Imaging Devices"]
 topic_type:

@@ -1,5 +1,5 @@
 ---
-title: Features supported by StorUFS
+title: Features Supported by StorUFS
 description: Overview of Features supported by StorUFS
 ms.date: 11/13/2023
 ---

@@ -1,5 +1,5 @@
 ---
-title: DocumentFinalParameters element
+title: DocumentFinalParameters Element
 description: The required DocumentFinalParameters element contains the actual DocumentParameters element that the scan device uses for image acquisition.
 keywords: ["DocumentFinalParameters element Imaging Devices"]
 topic_type:

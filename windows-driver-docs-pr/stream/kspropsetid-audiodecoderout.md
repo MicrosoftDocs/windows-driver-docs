@@ -1,5 +1,5 @@
 ---
-title: KSPROPSETID\_AudioDecoderOut
+title: KSPROPSETID_AudioDecoderOut
 description: KSPROPSETID\_AudioDecoderOut
 ms.date: 11/28/2017
 ---

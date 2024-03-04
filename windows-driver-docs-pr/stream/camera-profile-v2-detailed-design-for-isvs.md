@@ -1,5 +1,5 @@
 ---
-title: Camera Profile V2 detailed design for ISVs
+title: Camera Profile V2 Detailed Design for ISVs
 description: This article provides information about Camera Profile V2 detailed design for ISVs.
 ms.date: 06/08/2023
 ---

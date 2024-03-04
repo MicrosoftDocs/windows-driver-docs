@@ -1,5 +1,5 @@
 ---
-title: Mapping for a Vista application and legacy driver
+title: Mapping for a Vista Application and Legacy Driver
 description: Mapping for a Vista application and legacy driver
 ms.date: 05/03/2023
 ---

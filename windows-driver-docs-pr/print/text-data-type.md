@@ -1,5 +1,5 @@
 ---
-title: TEXT data type
+title: TEXT Data Type
 description: Provides information about the TEXT data type.
 keywords:
 - print processors WDK, data types

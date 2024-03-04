@@ -1,5 +1,5 @@
 ---
-title: Iasphelp get_ErrorDscp method
+title: Iasphelp get_ErrorDscp Method
 description: The ErrorDscp property enables an ASP Web page to convert an error code to a descriptive string.
 MS-HAID:
 - 'webfnc_55f547fe-4cbe-4905-b268-afd7af400de4.xml'

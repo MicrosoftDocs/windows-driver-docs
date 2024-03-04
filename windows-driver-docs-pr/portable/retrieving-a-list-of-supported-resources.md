@@ -1,6 +1,6 @@
 ---
+title: Retrieving a List of Supported Resources
 description: Retrieving a list of Supported Resources
-title: Retrieving a list of Supported Resources
 ms.date: 03/03/2023
 ---
 

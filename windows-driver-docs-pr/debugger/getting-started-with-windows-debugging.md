@@ -1,5 +1,5 @@
 ---
-title: Get started with Windows debugging
+title: Get Started with Windows Debugging
 description: Get started with debugging for Windows, and find resources to help you install tools and learn debugging techniques.
 ms.date: 12/20/2023
 ---
@@ -74,7 +74,7 @@ The [Debugger operation](debugger-operation-win8.md) section of this documentati
 
 ## 10. Use the debugger reference commands
 
-You can use different debugging commands as you work in the debugger. Use the [.hh command](../debuggercmds/-hh--open-html-help-file-.md) in the debugger to display help information about any debugging command. For more information about available commands, see [Debugger reference](debugger-reference.md).
+You can use different debugging commands as you work in the debugger. Use the [.hh command](../debuggercmds/-hh--open-html-help-file-.md) in the debugger to display helpful information about any debugging command. For more information about available commands, see [Debugger reference](debugger-reference.md).
 
 ## 11. Use debugging extensions for specific technologies
 

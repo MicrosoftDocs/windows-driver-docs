@@ -1,5 +1,5 @@
 ---
-title: WDF_PTR_ADD_OFFSET_TYPE macro
+title: WDF_PTR_ADD_OFFSET_TYPE Macro
 description: The WDF_PTR_ADD_OFFSET_TYPE macro adds an offset value to an address and returns the resulting address cast to the specified type.
 keywords:
  - WDF_PTR_ADD_OFFSET_TYPE macro

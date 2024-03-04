@@ -1,6 +1,7 @@
 ---
 title: WinDbg - Data Model Menu
 description: This section describes how to work with the data model menu in the WinDbg debugger.
+keywords: ["Data Model Menu", "WinDbg", "Menu", "Windows Debugging"]
 ms.date: 01/10/2020
 ---
 

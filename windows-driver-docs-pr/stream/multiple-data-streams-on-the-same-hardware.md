@@ -1,5 +1,5 @@
 ---
-title: Multiple Data Streams on the same Hardware
+title: Multiple Data Streams on the Same Hardware
 description: Multiple Data Streams on the same Hardware
 keywords:
 - multiple data streams WDK DVD decoder

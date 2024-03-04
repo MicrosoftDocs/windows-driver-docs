@@ -1,5 +1,5 @@
 ---
-title: D3DKMT\_UNPINDIRECTFLIPRESOURCES structure
+title: D3DKMT_UNPINDIRECTFLIPRESOURCES Structure
 description: Learn about the D3DKMT\_UNPINDIRECTFLIPRESOURCES structure, which is reserved for system use. Do not use in your driver.
 keywords: ["D3DKMT_UNPINDIRECTFLIPRESOURCES structure Display Devices"]
 topic_type:

@@ -1,5 +1,5 @@
 ---
-title: MSiSCSI\_BootInformation WMI Class
+title: MSiSCSI_BootInformation WMI Class
 description: MSiSCSI\_BootInformation WMI Class
 ms.date: 10/17/2018
 ---

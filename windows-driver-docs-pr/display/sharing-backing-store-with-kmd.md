@@ -1,5 +1,5 @@
 ---
-title: Sharing the backing store with KMD
+title: Sharing the Backing Store with KMD
 description:  UMD and KMD can share the graphics allocation backing store
 ms.date: 09/08/2022
 keywords:

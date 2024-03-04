@@ -1,5 +1,5 @@
 ---
-title: Printer configuration commands
+title: Printer Configuration Commands
 description: Printer configuration commands
 keywords:
 - printer commands WDK Unidrv , configuration

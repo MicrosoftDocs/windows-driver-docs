@@ -1,5 +1,5 @@
 ---
-title: WDF_DECLARE_CUSTOM_TYPE macro
+title: WDF_DECLARE_CUSTOM_TYPE Macro
 description: The WDF_DECLARE_CUSTOM_TYPE macro creates a name and an accessor method for a driver's custom type.
 keywords:
  - WDF_DECLARE_CUSTOM_TYPE macro

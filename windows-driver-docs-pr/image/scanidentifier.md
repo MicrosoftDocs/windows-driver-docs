@@ -1,5 +1,5 @@
 ---
-title: ScanIdentifier element
+title: ScanIdentifier Element
 description: The required ScanIdentifier element contains a device-specific string that the scanner provides through a ScanAvailableEvent event.
 keywords: ["ScanIdentifier element Imaging Devices"]
 topic_type:

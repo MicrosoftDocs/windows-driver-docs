@@ -1,5 +1,5 @@
 ---
-title: ElementData for JobElements element
+title: ElementData for JobElements Element
 description: The required ElementData element contains the data that is returned for a job-related schema request.
 keywords: ["ElementData for JobElements element Imaging Devices"]
 topic_type:

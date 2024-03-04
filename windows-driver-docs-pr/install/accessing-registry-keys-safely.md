@@ -1,5 +1,5 @@
 ---
-title: Accessing registry keys safely
+title: Accessing Registry Keys Safely
 description: Provides information about accessing registry keys safely.
 keywords:
 - registry WDK device installations , accessing registry keys safely

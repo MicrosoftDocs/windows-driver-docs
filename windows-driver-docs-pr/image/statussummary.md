@@ -1,5 +1,5 @@
 ---
-title: StatusSummary element
+title: StatusSummary Element
 description: The required StatusSummary element contains a summary of the scan device's current status.
 keywords: ["StatusSummary element Imaging Devices"]
 topic_type:

@@ -21,13 +21,13 @@ The **!ks.dumplog** extension displays the internal kernel streaming debug log.
 !ks.dumplog [Entries] 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Entries______"></span><span id="_______entries______"></span><span id="_______ENTRIES______"></span> *Entries*   
 Optional. Specifies the number of log entries to display. If *Entries* is zero or omitted, the entire log is displayed.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>

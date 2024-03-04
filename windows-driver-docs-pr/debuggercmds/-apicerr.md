@@ -21,7 +21,7 @@ The **!apicerr** extension displays the local Advanced Programmable Interrupt Co
      !apicerr [Format] 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Format______"></span><span id="_______format______"></span><span id="_______FORMAT______"></span> *Format*   
@@ -33,24 +33,9 @@ Displays the error log according to order of occurrence.
 <span id="0x1"></span><span id="0X1"></span>0x1  
 Displays the error log according to processor.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Unavailable</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Kdexts.dll</p></td>
-</tr>
-</tbody>
-</table>
+Windows XP and later - Kdexts.dll
 
  
 

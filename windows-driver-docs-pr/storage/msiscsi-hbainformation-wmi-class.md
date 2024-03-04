@@ -1,5 +1,5 @@
 ---
-title: MSiSCSI\_HBAInformation WMI Class
+title: MSiSCSI_HBAInformation WMI Class
 description: MSiSCSI\_HBAInformation WMI Class
 ms.date: 10/17/2018
 ---

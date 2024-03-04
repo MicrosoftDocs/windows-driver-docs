@@ -1,5 +1,5 @@
 ---
-title: DXGK\_INTERFACESPECIFICDATA structure
+title: DXGK_INTERFACESPECIFICDATA Structure
 description: The DXGK\_INTERFACESPECIFICDATA structure is reserved for system use. Do not use it in your driver.
 keywords: ["DXGK_INTERFACESPECIFICDATA structure Display Devices"]
 topic_type:

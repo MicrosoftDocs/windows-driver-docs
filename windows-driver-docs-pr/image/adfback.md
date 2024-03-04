@@ -1,5 +1,5 @@
 ---
-title: ADFBack element
+title: ADFBack Element
 description: The optional ADFBack element describes the capabilities of the back side of a duplex automatic document feeder (ADF) that is attached to the scanner.
 keywords: ["ADFBack element Imaging Devices"]
 topic_type:

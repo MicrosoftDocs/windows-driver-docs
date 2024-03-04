@@ -1,5 +1,5 @@
 ---
-title: Road map for the Windows Display Driver Model (WDDM)
+title: Road Map for the Windows Display Driver Model (WDDM)
 description: Road map for Developing Drivers for the Windows Display Driver Model (WDDM)
 ms.date: 03/20/2023
 ---

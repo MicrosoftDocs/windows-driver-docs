@@ -1,5 +1,5 @@
 ---
-title: HardDisk property
+title: HardDisk Property
 description: The value entries for a hard disk installed in the device.
 ms.date: 09/07/2021
 ---

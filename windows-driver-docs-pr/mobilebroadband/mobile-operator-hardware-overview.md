@@ -1,5 +1,5 @@
 ---
-title: Mobile operator hardware overview
+title: Mobile Operator Hardware Overview
 description: Mobile operator hardware overview
 ms.date: 10/06/2023
 ---

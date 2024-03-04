@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PHOTOFRAMERATE
+title: KSPROPERTY_CAMERACONTROL_EXTENDED_PHOTOFRAMERATE
 description: This property gets the capture frame rate when the photo mode for the camera is sequence mode.
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_PHOTOFRAMERATE Streaming Media Devices"]
 topic_type:

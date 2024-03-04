@@ -1,5 +1,5 @@
 ---
-title: Reporting Device Powered On When System Returns to S0
+title: Reporting Device Powered On when System Returns to S0
 description: Reporting Device Powered On When System Returns to S0
 ms.date: 04/20/2017
 ---

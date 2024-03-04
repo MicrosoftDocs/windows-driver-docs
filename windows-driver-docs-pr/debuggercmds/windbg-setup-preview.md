@@ -1,6 +1,7 @@
 ---
 title: WinDbg - Settings and workspaces
 description: This section describes how to setup the WinDbg debugger.
+keywords: ["Settings and workspaces", "WinDbg", "Menu", "Windows Debugging"]
 ms.date: 01/16/2020
 ---
 

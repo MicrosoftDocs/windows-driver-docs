@@ -1,5 +1,5 @@
 ---
-title: Location (staple)
+title: Location (Staple)
 description: This property contains all the value entries that pertain to the location of staples on output pages.
 ms.date: 07/07/2020
 ---

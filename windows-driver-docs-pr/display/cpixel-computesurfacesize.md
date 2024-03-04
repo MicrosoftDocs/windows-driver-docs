@@ -1,6 +1,6 @@
 ---
-title: CPixel ComputeSurfaceSize method
-description: The CPixel ComputeSurfaceSize method determines the amount of memory required to allocate a surface.
+title: CPixel::ComputeSurfaceSize Method
+description: The CPixel::ComputeSurfaceSize method determines the amount of memory required to allocate a surface.
 keywords: ["ComputeSurfaceSize method Display Devices", "ComputeSurfaceSize method Display Devices , CPixel interface", "CPixel interface Display Devices , ComputeSurfaceSize method"]
 topic_type:
 - apiref

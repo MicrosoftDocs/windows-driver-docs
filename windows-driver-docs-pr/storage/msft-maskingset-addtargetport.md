@@ -1,5 +1,5 @@
 ---
-title: AddTargetPort method of the MSFT\_MaskingSet class
+title: AddTargetPort Method of the MSFT_MaskingSet Class
 description: Adds one or more target ports to the masking set.
 ms.assetid: 36FAC871-02AF-4913-9E46-87F4DED0AAC2
 keywords:

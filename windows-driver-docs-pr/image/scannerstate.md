@@ -1,5 +1,5 @@
 ---
-title: ScannerState element
+title: ScannerState Element
 description: The required ScannerState element identifies the current state of the scanning portion of the scan device.
 keywords: ["ScannerState element Imaging Devices"]
 topic_type:

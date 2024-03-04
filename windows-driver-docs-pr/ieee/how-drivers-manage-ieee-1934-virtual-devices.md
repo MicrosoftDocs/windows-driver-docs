@@ -1,12 +1,11 @@
 ---
-title: How drivers manage IEEE 1394 virtual devices
+title: How Drivers Manage IEEE 1394 Virtual Devices
 description: How drivers manage IEEE 1394 virtual devices
 keywords:
 - emulation drivers WDK IEEE 1394 bus
 - hardware emulation drivers WDK IEEE 1394 bus
 - virtual devices WDK IEEE 1394 bus
 ms.date: 03/03/2023
-ms.custom: contperf-fy22q3
 ---
 
 # How drivers manage IEEE 1394 virtual devices

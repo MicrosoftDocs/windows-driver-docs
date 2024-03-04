@@ -17,9 +17,11 @@
   items: 
   - name: "Device firmware update for USB devices without using a co-installer"
     href: device-firmware-update-for-usb-devices-without-using-a-co-installer.md
-- name: "Network camera design guide"
+- name: "Network cameras"
 # Auto-expanded node
   items: 
+  - name: "Network cameras"
+    href: network-cameras.md
   - name: "Network camera design guide"
     href: network-camera-design-guide.md
   - name: "KSPROPERTYSETID_NetworkCameraControl"
@@ -32,6 +34,13 @@
     href: ksproperty-networkcameracontrol-ntp.md
   - name: "KSPROPERTY_NETWORKCAMERACONTROL_URI"
     href: ksproperty-networkcameracontrol-uri.md
+- name: "Camera settings page and companion apps"
+# Auto-expanded node
+  items: 
+  - name: "Camera settings page"
+    href: camera-settings-page.md
+  - name: "Camera companion apps"
+    href: camera-companion-apps.md
 - name: "Digital Window overview"
 # Auto-expanded node
   items: 

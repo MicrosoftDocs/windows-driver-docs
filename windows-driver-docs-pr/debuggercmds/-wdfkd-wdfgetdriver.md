@@ -21,7 +21,7 @@ The **!wdfkd.wdfgetdriver** extension displays the name of the current default d
 !wdfkd.wdfgetdriver
 ```
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Wdfkd.dll
 

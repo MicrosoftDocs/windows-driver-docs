@@ -1,5 +1,5 @@
 ---
-title: USB Video Class driver overview
+title: USB Video Class Driver Overview
 description: Provides information about using the system-supplied USB Video Class (UVC) driver, Usbvideo.sys. 
 keywords:
 - USB Video Class drivers WDK AVStream , about USB Video Class drivers

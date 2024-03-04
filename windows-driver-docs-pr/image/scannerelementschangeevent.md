@@ -1,5 +1,5 @@
 ---
-title: ScannerElementsChangeEvent element
+title: ScannerElementsChangeEvent Element
 description: The required ScannerElementsChangeEvent element informs the client that a change has occurred in the scanner.
 keywords: ["ScannerElementsChangeEvent element Imaging Devices"]
 topic_type:

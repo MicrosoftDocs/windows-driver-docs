@@ -1,5 +1,5 @@
 ---
-title: IPrintCoreUI2 COM interface
+title: IPrintCoreUI2 COM Interface
 description: IPrintCoreUI2 COM interface
 keywords:
 - IPrintCoreUI2

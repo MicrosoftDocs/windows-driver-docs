@@ -1,5 +1,5 @@
 ---
-title: D3DDDI\_MULTIPLANE\_OVERLAY\_FILTER\_TYPE enumeration
+title: D3DDDI_MULTIPLANE_OVERLAY_FILTER_TYPE Enumeration
 description: Learn about the D3DDDI\_MULTIPLANE\_OVERLAY\_FILTER\_TYPE enumeration, which is reserved for system use. Do not use it in your driver.
 keywords: ["D3DDDI_MULTIPLANE_OVERLAY_FILTER_TYPE enumeration Display Devices"]
 topic_type:

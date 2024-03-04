@@ -1,5 +1,5 @@
 ---
-title: Printer driver design guide
+title: Printer Driver Design Guide
 description: This section provides information on designing printer drivers.
 keywords:
 - print devices WDK

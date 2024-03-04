@@ -1,5 +1,5 @@
 ---
-title: Attributes for device fonts
+title: Attributes for Device Fonts
 description: Provides information about attributes for device fonts.
 keywords:
 - device fonts WDK Unidrv

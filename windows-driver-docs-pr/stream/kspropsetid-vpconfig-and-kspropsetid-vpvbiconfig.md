@@ -1,5 +1,5 @@
 ---
-title: KSPROPSETID\_VPConfig and KSPROPSETID\_VPVBIConfig
+title: KSPROPSETID_VPConfig and KSPROPSETID_VPVBIConfig
 description: KSPROPSETID\_VPConfig and KSPROPSETID\_VPVBIConfig
 ms.date: 11/28/2017
 ---

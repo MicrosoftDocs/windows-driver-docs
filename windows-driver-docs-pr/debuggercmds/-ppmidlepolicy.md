@@ -20,7 +20,7 @@ The **!ppmidlepolicy** command displays C-state policy.
 !ppmidlepolicy
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 None
 
@@ -28,7 +28,7 @@ This command is supported on the following versions of Windows:
 
 - Windows 7
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Kdexts.dll 
 

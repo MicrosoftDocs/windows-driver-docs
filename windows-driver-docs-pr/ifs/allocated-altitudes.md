@@ -1,5 +1,5 @@
 ---
-title: Allocated filter altitudes
+title: Allocated Filter Altitudes
 description: Lists file system filter altitudes allocated by Microsoft
 ms.date: 12/06/2023
 keywords:

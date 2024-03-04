@@ -1,5 +1,5 @@
 ---
-title: IPrinterScriptUsbWritePrintDataProgress interface
+title: IPrinterScriptUsbWritePrintDataProgress Interface
 description: The IPrinterScriptUsbWritePrintDataProgress interface is passed as a parameter in the writePrintData JavaScript function call.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

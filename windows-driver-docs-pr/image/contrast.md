@@ -1,5 +1,5 @@
 ---
-title: Contrast element
+title: Contrast Element
 description: The optional Contrast element specifies the relative amount to reduce or enhance the contrast of the scanned document.
 keywords: ["Contrast element Imaging Devices"]
 topic_type:

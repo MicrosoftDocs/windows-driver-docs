@@ -1,5 +1,5 @@
 ---
-title: Option attributes for the Resolution feature
+title: Option Attributes for the Resolution Feature
 description: Option attributes for the Resolution feature
 keywords:
 - Resolution Feature

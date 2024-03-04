@@ -22,7 +22,7 @@ The **.scroll\_prefs** command controls the positioning of the source in a Sourc
 .scroll_prefs 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Before______"></span><span id="_______before______"></span><span id="_______BEFORE______"></span> *Before*   

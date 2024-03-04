@@ -1,5 +1,5 @@
 ---
-title: CreateVirtualPortEx method (Windows Drivers)
+title: CreateVirtualPortEx Method (Windows Drivers)
 description: Learn more about the CreateVirtualPortEx method.
 ms.date: 10/14/2022
 ---
