@@ -41,6 +41,10 @@ The following INF file keywords are defined for installing media-class device dr
 
 [**PKEY\_CompositeFX\_StreamEffectClsid**](pkey-compositefx-streameffectclsid.md)
 
+[**PKEY\_Devices\_AudioDevice\_Microphone\_EqCoefficientsDb**](pkey-devices-audiodevice-microphone-eqcoefficientsdb.md)
+
+[**PKEY\_Devices\_AudioDevice\_Microphone\_IsFarField**](pkey-devices-audiodevice-microphone-isfarfield.md)
+
 [**PKEY\_FX\_EndpointEffectClsid**](pkey-fx-endpointeffectclsid.md)
 
 [**PKEY\_FX\_ModeEffectClsid**](pkey-fx-modeeffectclsid.md)

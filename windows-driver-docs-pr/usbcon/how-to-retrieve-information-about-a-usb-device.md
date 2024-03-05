@@ -1,7 +1,7 @@
 ---
 title: USB Hardware Verifier (USB3HWVerifierAnalyzer.exe)
 description: This article describes the USB hardware verifier tool (USB3HWVerifierAnalyzer.exe) that is used for testing and debugging specific hardware events.
-ms.date: 01/16/2024
+ms.date: 02/29/2024
 ---
 
 # USB hardware verifier (USB3HWVerifierAnalyzer.exe)
@@ -54,7 +54,7 @@ To capture events by using the hardware verifier, perform these steps:
    > [!NOTE]
    > The AllEvents ETL file will always contain all ETW events for all devices. It is not affected by the **-v** and **-p** switches.
 
-   Here's the command line to filter by VerndorId and ProductId:
+   Here's the command line to filter by VendorId and ProductId:
 
    ```console
    USB3HWVerifierAnalyzer.exe -v 0781 -p 5595
