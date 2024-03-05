@@ -21,9 +21,9 @@ This article shows you how to register for the Microsoft Windows Hardware Develo
 
 - If you have an existing organization Dev Center account that you want to use for the Hardware program, sign in with it before you begin registration.
 
-- You must have an Extended Validation (EV) code signing certificate. Check whether your organization already has a code signing certificate. If your company already has a certificate, have the certificate available. If your organization doesn't have a certificate, you'll need to [purchase an EV certificate](code-signing-reqs.md#ev-certificate-signed-drivers).
+- You must have an Extended Validation (EV) code signing certificate. Check whether your organization already has a code signing certificate. If your company already has a certificate, have the certificate available. If your organization doesn't have a certificate, you'll need to [purchase an EV certificate](code-signing-reqs.md#ev-certificate-signed-drivers). You only need the certificate to register for the Hardware Developer Program. You don't need to sign your driver with it.
 
-- You'll need to sign in with your organization’s Microsoft Entra ID (Microsoft Entra ID) [Global administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) account. If you don’t know whether your organization has an Microsoft Entra ID directory, contact your IT department. If your organization doesn’t have an Microsoft Entra ID directory, you'll be able to create one for free during the registration process'
+- You'll need to sign in with your organization’s Microsoft Entra ID [Global administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) account. If you don’t know whether your organization has an Microsoft Entra ID directory, contact your IT department. If your organization doesn’t have an Microsoft Entra ID directory, you'll be able to create one for free during the registration process'
 
 - You must have the authority to sign legal agreements on behalf of your organization.
 

@@ -12,7 +12,7 @@ ms.date: 03/04/2024
 
 # Embedded Signatures in a Driver File
 
-Starting in Windows 10 desktop editions (Home, Pro, Enterprise, and Education) and Windows Server 2016, kernel-mode drivers must be signed by the Windows Hardware Dev Center Dashboard, which requires an EV certificate.
+Starting in Windows 10 desktop editions (Home, Pro, Enterprise, and Education) and Windows Server 2016, kernel-mode drivers must be signed by the Windows Hardware Dev Center. To [register for the Windows Hardware Dev Center](../dashboard/hardware-program-register.md), you will need an EV certificate.
 
 For more info about these changes, see [Driver Signing Changes in Windows 10](https://techcommunity.microsoft.com/t5/Windows-Hardware-Certification/Driver-Signing-changes-in-Windows-10-version-1607/ba-p/364894).
 
