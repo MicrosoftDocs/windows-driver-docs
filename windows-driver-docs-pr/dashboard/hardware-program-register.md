@@ -31,7 +31,7 @@ This article shows you how to register for the Microsoft Windows Hardware Develo
 
 To register for the Hardware Developer Program:
 
-1. Go to the [Hardware Developer Program registration page](https://go.microsoft.com/fwlink/?LinkID=828002).
+1. Go to the [Hardware Developer Program registration](./index.yml).
 
 1. Read the prerequisites to make sure you have what you need, and then select **Next**.
 
