@@ -39,7 +39,7 @@ For this second example, the search order will be:
 
 ## Supported source code formats
 
-The `srv*` tag supports automatice file retrieval using Source Link 1.0 or Source Link 2.0, it does not support *DebugInfoD* URLs.
+The `srv*` tag supports automatic file retrieval using Source Link 1.0 or Source Link 2.0, it does not support *DebugInfoD* URLs.
 
 ## Resources
 
