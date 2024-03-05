@@ -43,6 +43,10 @@
         href: setting-up-qemu-kernel-mode-debugging-using-exdi.md
       - name: "Configuring the EXDI Debugger Transport"
         href: configuring-the-exdi-debugger-transport.md
+      - name: "Linux live remote process debugging"
+        href: linux-live-remote-process-debugging.md
+      - name: "Linux symbols and sources"
+        href: linux-dwarf-symbols.md             
       - name: "Setting Up Kernel-Mode Debugging over USB EEM on an ARM device using KDNET"
         href: setting-up-kernel-mode-debugging-over-usb-eem-arm-kdnet.md
       - name: "Setting Up Kernel-Mode Debugging over a USB 3.0 Cable Manually"
