@@ -41,7 +41,7 @@ Windows will only send one MSCS request following a successful association. If t
 
 If the returned response status is failure, MSCS isn't active and the OS won't try to renegotiate an MSCS session. Any subsequent MSCS responses from the AP (including MSCS response frames with the status CHANGE) will either terminate an existing MSCS session or be ignored by the OS. If an MSCS session is terminated (due to OS teardown, AP teardown, or roam/disassociation), the OS will only attempt to establish MSCS again after successful reassociation.
 
-When MSCS support is indicated, the driver must support [Wake on Incoming Action Frame](#wake-on-incoming-action-frame) for MSCS. When going to Dx with an active MSCS session, the OS will configure the driver to wake on receipt of an MSCS response frame.
+When MSCS support is indicated, the driver must support [Wake on Incoming Action Frame](#wake-on-incoming-action-frame-support) for MSCS. When going to Dx with an active MSCS session, the OS will configure the driver to wake on receipt of an MSCS response frame.
 
 The OS may prompt the driver to send an MSCS Request Action Frame to the AP to request MSCS teardown via the OID_WDI_TASK_SEND_REQUEST_ACTION_FRAME task.
 
