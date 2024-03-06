@@ -50,7 +50,7 @@ If the driver fails to report these data-field properties, apps will still be ab
 
 ### Head position parameters
 
-:::image type="content" source="images/head-position-parameters.png" alt-text="{alt-text}":::
+:::image type="content" source="images/head-position-parameters.png" alt-text="Diagram showing the head position parameters relative to the computer screen.":::
 
 - The convention for X, Y, Z axes is the same as in the device coordinate system used for motion and orientation sensors.
 - Axes start at the center of the device's screen.
@@ -60,17 +60,17 @@ If the driver fails to report these data-field properties, apps will still be ab
 - Axes are fixed relative to the device and don't change with the device's rotation.
 - For non screen-based devices, the axes are defined relative to the devices' front panel.
 - If the sensor doesn't support face detection, the reference point for azimuth and altitude might be different from the center of the person's face, as long as it's consistent between different sensor readings.
-- Azimuth is the angle between Z axis and XZ-projection of the vector pointing from the sensor device to the center of the person's face. Range (-90, +90). The angle value is positive in the counterclockwise rotation around Y axis.
-- Altitude is the angle between the vector pointing from the sensor device to the center of the person's face and its XZ-projection. Range (-90, +90). The angle value is positive in the direction of Y axis.
+- Azimuth is the angle between Z axis and XZ-projection of the vector pointing from the sensor device to the center of the person's face. Range [-90, +90]. The angle value is positive in the counterclockwise rotation around Y axis.
+- Altitude is the angle between the vector pointing from the sensor device to the center of the person's face and its XZ-projection. Range [-90, +90]. The angle value is positive in the direction of Y axis.
 
 ### Head orientation parameters
 
-:::image type="content" source="images/head-orientation-parameters.png" alt-text="{alt-text}":::
+:::image type="content" source="images/head-orientation-parameters.png" alt-text="Diagram showing the head orientation parameters relative to the computer screen.":::
 
 - Head orientation is described in intrinsic Tait-Bryan angles, applied in roll, pitch, yaw order.
-- Roll is the counterclockwise rotation of the person's head around the Z axis, in degrees. Range (0, 360). In the zero position the Z axis is parallel to the device's Z axis and points from the center of the person's face towards the device.
-- Pitch is the counterclockwise rotation of the person's head around the X axis, in degrees. Range (-180, 180). In the zero position the X axis is parallel to the device's X axis and points from the center of the person's face rightwards from the device's perspective.
-- Yaw is the counterclockwise rotation of the person's head around the Y axis, in degrees. Range (-90, 90). In the zero position the Y axis is parallel to the device's Y axis and points from the center of the person's face upwards.
+- Roll is the counterclockwise rotation of the person's head around the Z axis, in degrees. Range [0, 360]. In the zero position the Z axis is parallel to the device's Z axis and points from the center of the person's face towards the device.
+- Pitch is the counterclockwise rotation of the person's head around the X axis, in degrees. Range [-180, 180]. In the zero position the X axis is parallel to the device's X axis and points from the center of the person's face rightwards from the device's perspective.
+- Yaw is the counterclockwise rotation of the person's head around the Y axis, in degrees. Range [-90, 90]. In the zero position the Y axis is parallel to the device's Y axis and points from the center of the person's face upwards.
 
 ## Related topics
 
