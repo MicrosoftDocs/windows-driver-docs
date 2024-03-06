@@ -6,7 +6,7 @@ ms.date: 02/29/2024
 
 # WiFiCx WPA3 SoftAP
 
-The WPA3 SoftAP feature enables devices to set up a Soft Access Point (SoftAP) using the Wi-Fi Protected Access 3 - Simultaneous Authentication of Equals (WPA3-SAE) security protocol. This SoftAP can operate on either the 2.4 GHz or 5 GHz band. Starting in WDI version 2.0.11 and WiFiCx version 1.1.1, you can integrate WPA3 SoftAP functionality in your WiFiCx client driver. 
+The WPA3 SoftAP feature enables devices to set up a Soft Access Point (SoftAP) using the Wi-Fi Protected Access 3 - Simultaneous Authentication of Equals (WPA3-SAE) security protocol. This SoftAP can operate on either the 2.4 GHz or 5 GHz band. Starting in WDI version 2.0.11 and WiFiCx version 1.1, you can integrate WPA3 SoftAP functionality in your WiFiCx client driver. 
 
 WPA3 SoftAP supports WPA3-SAE and a WPA3-SAE transition mode for backward compatibility. The transition mode accommodates both WPA2-PSK and WPA3-SAE authentication methods, ensuring secure Wi-Fi connectivity across various devices and environments.
 
