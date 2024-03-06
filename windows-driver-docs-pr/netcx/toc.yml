@@ -822,6 +822,8 @@
     href: dual-sta-connectivity.md
   - name: "Wi-Fi 7 feature requirements"
     href: wificx-wi-fi-7.md
+  - name: "QOS R1"
+    href: qos-r1.md
   - name: "WPA3 SoftAP"
     href: wificx-wpa3-softap.md
 

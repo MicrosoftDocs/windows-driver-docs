@@ -2,7 +2,7 @@
 title: WDI_TLV_CONNECTION_SETTINGS (dot11wificxtypes.hpp)
 ms.topic: reference
 description: WDI_TLV_CONNECTION_SETTINGS is a WiFiCx TLV that contains connection settings for OID_WDI_TASK_CONNECT.
-ms.date: 06/30/2021
+ms.date: 03/01/2024
 keywords:
  - WDI_TLV_CONNECTION_SETTINGS Network Drivers Starting with Windows Vista
 ---
@@ -39,8 +39,8 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT8                                                        | Specifies if 802.11v BSS transition is supported. If this bit is set to 1, the Station must set the BSS Transition field of the Extended capabilities element (Bit 19) to 1 in the association request.                   |
 | UINT8 | The **MloConnectionSupported** flag that specifies if Multi-Link Operation (MLO) connection is supported. |
 | UINT8 | Specifies if this is a FIPS mode connection.  The station must use only certified cipher algorithms if HostFIPSModeEnabled is false (for example, when hardware FIPS support is used). |
-| UINT8 | Specifies if MSCS is supported by the OS for this connection. If set to true, IHV driver must set the Mirrored SCS field of the Extended Capabilities element to 1. |
-| UINT8 | Specifies if DSCP to UP Mapping is supported by the OS for this connection. If set to true, IHV driver must set the QoS Map field of the Extended Capabilities element to 1. |
+| UINT8 | The **MSCSSupported** flag specifies if the OS supports MSCS for this connection. If set to 1, the IHV driver must set the Mirrored SCS field of the Extended Capabilities element (Bit 85) to 1 in the association request. |
+| UINT8 | The **DSCPToUPMappingSupported** flag specifies if the OS supports QOS Mapping for this connection. If set to 1, the IHV driver must set the QoS Map field of the Extended Capabilities element (Bit 32) to 1 in the association request. |
 
  
 
