@@ -38,7 +38,7 @@ To perform this operation, call [**FltFsControlFile**](/windows-hardware/drivers
 
 - **OutputBufferLength** [in]: Set to 0.
 
-## Status block
+## Return Value
 
 [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) returns STATUS_SUCCESS if the operation succeeds. Otherwise, the appropriate NTSTATUS values is returned.
 
