@@ -1,7 +1,7 @@
 ---
-title: Bluetooth host radio support
+title: Bluetooth Host Radio Support
 description: Provides a list of questions and answers about Bluetooth host radio support in Windows
-ms.date: 10/07/2022
+ms.date: 01/10/2024
 ---
 
 # Bluetooth Host Radio Support
@@ -50,9 +50,9 @@ The Control Panel Bluetooth application was incorporated into Devices and Printe
 
 If the Bluetooth icon does not appear in the taskbar, it could be due to one or more of the following reasons:
 
-- The Bluetooth radio is turned off.
-- The Bluetooth radio is in emulation mode.
-- In the **Bluetooth Settings** dialog, the **Show the Bluetooth icon in the notification area** check box is not selected.
+* The Bluetooth radio is turned off.
+* The Bluetooth radio is in emulation mode.
+* In the **Bluetooth Settings** dialog, the **Show the Bluetooth icon in the notification area** check box is not selected.
 
 ## Windows support for Bluetooth radio firmware updates
 

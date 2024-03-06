@@ -1,5 +1,5 @@
 ---
-title: How do I debug tracing failures
+title: How do I Debug Tracing Failures
 description: How do I debug tracing failures
 ms.date: 04/20/2017
 ---
@@ -24,12 +24,4 @@ WppDebug(level,(format,...));
 ```
 
 Do not confuse the **WppDebug** macro, which traces WPP actions, with the **WPP\_DEBUG** macro, which sends trace messages to a debugger.
-
- 
-
- 
-
-
-
-
 

@@ -1,5 +1,5 @@
 ---
-title: Building and sending a Bluetooth request block (BRB)
+title: Building and Sending a Bluetooth Request Block (BRB)
 description: Building and sending a Bluetooth request block (BRB)
 keywords:
 - Bluetooth WDK , Bluetooth request blocks
@@ -7,7 +7,7 @@ keywords:
 - Bluetooth WDK , request blocks
 - sending BRBs
 - return values WDK Bluetooth
-ms.date: 10/06/2022
+ms.date: 01/10/2024
 ---
 
 # Building and sending a Bluetooth request block (BRB)

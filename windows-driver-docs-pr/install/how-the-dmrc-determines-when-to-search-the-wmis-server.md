@@ -1,5 +1,5 @@
 ---
-title: How the DMRC Determines When to Search the WMIS Server
+title: How the DMRC Determines when to Search the WMIS Server
 description: How the DMRC Determines When to Search the WMIS Server
 ms.date: 04/20/2017
 ---

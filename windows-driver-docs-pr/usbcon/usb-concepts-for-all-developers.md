@@ -1,7 +1,7 @@
 ---
+title: Getting Started With USB Development
 description: A Universal Serial Bus (USB) device defines its capabilities and features through configurations, interfaces, alternate settings, and endpoints.
-title: Getting started with USB development
-ms.date: 10/28/2022
+ms.date: 01/17/2024
 ---
 
 # Getting started with USB development

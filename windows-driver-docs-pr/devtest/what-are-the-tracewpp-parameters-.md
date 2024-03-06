@@ -1,5 +1,5 @@
 ---
-title: What are the TraceWPP parameters
+title: What are the TraceWPP Parameters
 description: What are the TraceWPP parameters
 ms.date: 04/20/2017
 ---
@@ -14,12 +14,4 @@ To list all the TraceWPP parameters, use the following command:
 ```
 TraceWpp -?
 ```
-
- 
-
- 
-
-
-
-
 

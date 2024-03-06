@@ -1,5 +1,5 @@
 ---
-title: DXGK\_SEGMENTDESCRIPTOR2 structure
+title: DXGK_SEGMENTDESCRIPTOR2 Structure
 description: The DXGK\_SEGMENTDESCRIPTOR2 structure is reserved for system use. Do not use it in your driver.
 keywords: ["DXGK_SEGMENTDESCRIPTOR2 structure Display Devices"]
 topic_type:

@@ -1,13 +1,12 @@
 ---
 title: Hardware ID
 description: A hardware ID is a vendor-defined identification string that Windows uses to match a device to an INF file.
-ms.date: 04/08/2022
-ms.custom: contperf-fy21q3
+ms.date: 12/20/2023
 ---
 
 # Hardware ID
 
-A hardware ID is a vendor-defined identification string that Windows uses to match a device to a [driver package](driver-packages.md). A hardware ID identifies what a device is to some level of specificity and is indicating that any driver package that declares it can work with a device that has that ID can work with this device for some degree of functionality. In most cases, a device has more than one hardware ID associated with it. Typically, a list of hardware IDs is sorted from most to least suitable for a device. For example, the list of conceptual hardware IDs for a device might look like:
+A hardware ID is a vendor-defined identification string that Windows uses to match a device to a [driver package](driver-packages.md). A hardware ID identifies a device and indicates that any driver package that declares it can work with a device that has that ID for some degree of functionality. In most cases, a device has more than one hardware ID associated with it. Typically, a list of hardware IDs is sorted from most to least suitable for a device. For example, the list of conceptual hardware IDs for a device might look like:
 
 ```syntax
 <Product X made by company Y with firmware revision Z>
@@ -50,9 +49,9 @@ To find the list of hardware IDs for a given device, follow these steps:
 
 1. Find the device in the tree.
 
-1. Right-click the device and select **Properties**.
+1. Right-select the device and select **Properties**.
 
-1. Select the Details tab.
+1. Select the **Details** tab.
 
 1. In the **Property** drop-down, select **Hardware Ids** or **Compatible Ids**.
 

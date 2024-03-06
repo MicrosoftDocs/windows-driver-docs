@@ -1,7 +1,7 @@
 ---
-title: ACPI button device
+title: ACPI Button Device
 description: The generic button device is a standard device for reporting button events through hardware interrupts.
-ms.date: 04/20/2017
+ms.date: 01/11/2024
 ---
 
 # ACPI button device

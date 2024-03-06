@@ -1,7 +1,7 @@
 ---
-title: USB device layout
+title: USB Device Layout
 description: A USB device defines its capabilities and features through configurations, interfaces, alternate settings, and endpoints.
-ms.date: 06/09/2023
+ms.date: 01/17/2024
 ---
 
 # USB device layout

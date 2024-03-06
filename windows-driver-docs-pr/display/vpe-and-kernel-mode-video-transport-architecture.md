@@ -18,7 +18,7 @@ This section provides some details about the Windows 2000 and later architecture
 
 In Windows 2000 and later, as shown in the following figure, the DxApi callbacks are part of the [video miniport driver](video-miniport-drivers-in-the-windows-2000-display-driver-model.md).
 
-![diagram illustrating windows 2000 kernel-mode video transport architecture.](images/ddfg011.png)
+:::image type="content" source="images/ddfg011.png" alt-text="Diagram illustrating Windows 2000 kernel-mode video transport architecture.":::
 
 For more information about the DxApi callbacks, see [DxApi Miniport Driver Functions For Windows 2000 and Later](dxapi-miniport-driver-functions-for-windows-2000-and-later.md).
 
@@ -29,4 +29,4 @@ The preceding figure shows the kernel-mode video transport architecture in relat
 
 In Windows 2000 and later, the client then passes these handles to the miniport driver. These handles are specified in the calls to the kernel-mode video transport. The following figure shows a simple version of how the handles are passed in user- and kernel-mode video transport.
 
-![diagram illustrating handle passing in windows 2000 video transport.](images/ddfg012.png)
+:::image type="content" source="images/ddfg012.png" alt-text="Diagram illustrating handle passing in Windows 2000 video transport.":::

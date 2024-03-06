@@ -37,8 +37,3 @@ For details about using thread and processes, see [Controlling Threads and Proce
  
 
  
-
-
-
-
-

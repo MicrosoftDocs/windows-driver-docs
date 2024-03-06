@@ -23,11 +23,3 @@ The TraceView workspaces feature has the following limitations.
 
 -   Workspaces that are created by one version of TraceView might not be supported in other versions of TraceView.
 
- 
-
- 
-
-
-
-
-

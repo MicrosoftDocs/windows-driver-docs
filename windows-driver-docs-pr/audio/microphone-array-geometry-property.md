@@ -5,11 +5,10 @@ keywords:
 - mic array WDK audio
 - geometry descriptor WDK audio
 - microphone array WDK audio
-ms.date: 04/20/2017
+ms.date: 09/25/2023
 ---
 
 # Microphone Array Geometry Property
-
 
 In Windows Vista and later, support is provided for microphone arrays. In most situations, a single microphone embedded in a laptop or monitor does not capture sound very well. An array of microphones performs better to isolate a sound source and reject ambient noise and reverberation. The [**KSPROPERTY\_AUDIO\_MIC\_ARRAY\_GEOMETRY**](./ksproperty-audio-mic-array-geometry.md) property specifies the geometry of a microphone array. The property value, [**KSAUDIO\_MIC\_ARRAY\_GEOMETRY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_mic_array_geometry), describes the array type (linear, planar, and so on), the number of microphones in the array and other features.
 
@@ -106,27 +105,4 @@ pMAG->KsMicCoord[1].wHorizontalAngle = 0;
 
 The preceding code example shows information that was provided for a linear microphone array that has two microphone elements, each of which is a cardioid type and located 100 mm from the center of the array.
 
-For the second modification, edit the Msvad.inf file as shown in [Modified INF for MSVAD Micarray](modified-inf-for-msvad-micarray.md).
-
-After you complete the file modifications, complete the following procedure to build and install the sample driver for the microphone array.
-
-1.  Start the WDK build environment in which you want to work. For example, the x86 Free Build Environment.
-
-2.  Navigate to the Src\\Audio\\Msvad folder.
-
-3.  Type the **build** command, and then press Enter.
-
-4.  Copy the modified Msvad.inf file to the following folder that was created by the build process:
-
-    Src\\Audio\\Msvad\\Micarray\\objfre\_wlh\_x86\\i386
-
-5.  Verify that the folder in Step 4 contains a file called Vadarray.sys.
-
-6.  Open the Control Panel and use **Add Hardware** to manually install the sample driver.
-
-7.  Open the **Sound** applet in Control Panel and click the **Recording** tab to verify that you can see the virtual microphone array you just installed.
-
 For information about how to develop an application to discover microphone arrays, see Appendix C of [How to Build and Use Microphone Arrays for Windows Vista](https://download.microsoft.com/download/9/c/5/9c5b2167-8017-4bae-9fde-d599bac8184a/MicArrays_guide.doc).
-
- 
-

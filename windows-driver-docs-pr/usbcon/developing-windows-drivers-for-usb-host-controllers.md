@@ -1,7 +1,7 @@
 ---
-title: Overview of developing Windows drivers for USB host controllers
+title: Overview of Developing Windows Drivers for USB Host Controllers
 description: This article describes support in the Windows operating system, for developing a USB host controller driver that communicates with the Microsoft-provided USB host controller extension (UCX).
-ms.date: 01/19/2023
+ms.date: 01/12/2024
 ---
 
 # Overview of developing Windows drivers for USB host controllers
@@ -33,7 +33,7 @@ To write a host controller driver, you need UCX (Ucx01000.sys) and the stub libr
 
 The WDK contains resources that are required for driver development, such as headers, libraries, tools, and samples.
 
-[Download kits and tools for Windows](https://go.microsoft.com/fwlink/p/?linkid=617155)
+[Download kits and tools for Windows](https://developer.microsoft.com/windows/hardware/)
 
 ## Get started
 
@@ -41,7 +41,7 @@ Read the official specification that describes the expected behavior of differen
 
 [xHCI for Universal Serial Bus: Specification](https://www.intel.com/content/www/us/en/products/docs/io/universal-serial-bus/extensible-host-controler-interface-usb-xhci.html)
 
-[Official Universal Serial Bus Documents]( https://go.microsoft.com/fwlink/p/?linkid=224892)
+[Official Universal Serial Bus Documents](https://www.usb.org/documents)
 
 ## Understand the architecture of UCX
 

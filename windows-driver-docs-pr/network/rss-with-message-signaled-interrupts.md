@@ -20,7 +20,7 @@ Miniport drivers can support message signaled interrupts (MSIs) to improve RSS p
 
 The following figure illustrates RSS with MSI-X.
 
-![diagram illustrating rss with msi-x.](images/rssmsistack.png)
+:::image type="content" source="images/rssmsistack.png" alt-text="Diagram illustrating RSS with MSI-X in a network stack.":::
 
 In the figure, the dashed arrows represent processing on a different connection. RSS with MSI-X allows the NIC to interrupt the correct CPU for a connection.
 

@@ -1,7 +1,7 @@
 ---
-title: UART tests in MITT
+title: UART Tests in MITT
 description: The MITT software package includes tests for validating data transfers to a UART controller and its driver. The MITT board's UART interface acts as a UART loopback device.
-ms.date: 04/07/2022
+ms.date: 01/12/2024
 ---
 
 # UART tests in MITT

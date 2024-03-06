@@ -1,5 +1,5 @@
 ---
-title: Security considerations for reparse points
+title: Security Considerations for Reparse Points
 description: File System Filter Driver security considerations for reparse points
 keywords:
 - security WDK file systems , reparse points

@@ -1,7 +1,7 @@
 ---
-title: Bluetooth version and profile support in previous Windows versions
+title: Bluetooth Version and Profile Support in Previous Windows Versions
 description: Bluetooth version and profile support in previous Windows versions
-ms.date: 03/08/2022
+ms.date: 01/10/2024
 ---
 
 # Bluetooth version and profile support in previous Windows versions

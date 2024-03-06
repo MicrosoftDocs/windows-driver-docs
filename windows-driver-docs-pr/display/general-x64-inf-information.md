@@ -1,5 +1,5 @@
 ---
-title: General x64 INF Information
+title: General X64 INF Information
 description: General x64 INF Information
 keywords:
 - INF files WDK display , 64-bit

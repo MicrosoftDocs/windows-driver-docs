@@ -1,5 +1,5 @@
 ---
-title: Service identifier ownership updates
+title: Service Identifier Ownership Updates
 description: Service identifier ownership updates
 ms.date: 04/20/2017
 ---
@@ -25,7 +25,7 @@ Depending on the technology, service identifiers can consist of the following:
 
     -   **Provider Name** The name flashed on to the device when the firmware is provisioned.
 
-If the ownership of an IMSI changes, the new operator must send an email to sysdev@microsoft.com with the following info:
+If the ownership of an IMSI changes, go to [Partner Center dashboard technical support](/windows-hardware/drivers/dashboard/hardware-submission-support) and supply the following info:
 
 -   Organization name used by the operator during the Windows Dev Center hardware dashboard registration process
 

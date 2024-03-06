@@ -17,11 +17,7 @@ ms.date: 04/20/2017
 
 # DLS Download Support
 
-
-## <span id="custom_dls"></span><span id="CUSTOM_DLS"></span>
-
-
-If you are writing your own synthesizer, you also have to provide support for downloadable sounds (DLS) so that the application can convert MIDI note messages to particular instrument sounds. Specifically, you should implement your [**IDirectMusicSynth::Download**](/windows/win32/api/dmusics/nf-dmusics-idirectmusicsynth-download) method so that it can download instrument wave and articulation data to the synthesizer. This method should accept raw data (typically from a collection file) and store it in a form that can be used by your rendering engine.
+If you are writing your own synthesizer, you also have to provide support for downloadable sounds (DLS) so that the application can convert MIDI note messages to particular instrument sounds. Specifically, you should implement your **IDirectMusicSynth::Download** method so that it can download instrument wave and articulation data to the synthesizer. This method should accept raw data (typically from a collection file) and store it in a form that can be used by your rendering engine.
 
 When DirectMusic downloads DLS data to the driver, the format of the data buffer is defined in terms of several DirectMusic structures. The downloaded data begins with two structures:
 
@@ -44,6 +40,3 @@ For more information about these data structures and the data formats that are u
 The DLS data format is identical in kernel and user modes.
 
 The [KSPROPSETID\_Synth\_Dls](./kspropsetid-synth-dls.md) property set contains properties that are used to download DLS samples and instruments to a DirectMusic synthesizer. This property set can be used to download both DLS Level 1 and DLS Level 2 data. Only the format of the downloaded data changes between DLS Levels 1 and 2.
-
- 
-

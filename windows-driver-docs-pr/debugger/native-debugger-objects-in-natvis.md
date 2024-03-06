@@ -21,7 +21,7 @@ Native debugger objects represent various constructs and behaviors of the debugg
 -   State
 -   Settings
 
-You can use the dx command and LINQ to interact with the debugger objects. For more information, see [dx (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md) and [Using LINQ With the debugger objects](using-linq-with-the-debugger-objects.md).
+You can use the dx command and LINQ to interact with the debugger objects. For more information, see [dx (Display Debugger Object Model Expression)](../debuggercmds/dx--display-visualizer-variables-.md) and [Using LINQ With the debugger objects](using-linq-with-the-debugger-objects.md).
 
 You can also work with debugger objects using JavaScript. For more information about that see, 
 [Native Debugger Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md).
@@ -34,13 +34,13 @@ Refer to these resources for general information about working with NatVis.
 
 [Create custom views of native objects](/visualstudio/debugger/create-custom-views-of-native-objects)
 
-[**.nvload**](-nvload--natvis-load-.md)
+[**.nvload**](../debuggercmds/-nvload--natvis-load-.md)
 
-[**.nvlist**](-nvlist--natvis-list-.md)
+[**.nvlist**](../debuggercmds/-nvlist--natvis-list-.md)
 
-[**.nvunload**](-nvunload--natvis-unload-.md)
+[**.nvunload**](../debuggercmds/-nvunload--natvis-unload-.md)
 
-[**.nvunloadall**](-nvunloadall--natvis-unload-all-.md)
+[**.nvunloadall**](../debuggercmds/-nvunloadall--natvis-unload-all-.md)
 
 ## Custom NatVis object example
 
@@ -78,7 +78,7 @@ Copy Dog.natvis to the Visualizers folder in your installation directory for Deb
 
 C:\\Program Files\\Debugging Tools for Windows (x64)\\Visualizers
 
-Run your program, and break in at the main function. Take a step so that the variable `MyDog` gets initialized. Display `MyDog` using [**??**](----evaluate-c---expression-.md) and again using **dx**.
+Run your program, and break in at the main function. Take a step so that the variable `MyDog` gets initialized. Display `MyDog` using [**??**](../debuggercmds/----evaluate-c---expression-.md) and again using **dx**.
 
 ```dbgcmd
 0:000> ??MyDog
@@ -93,7 +93,7 @@ MyDog     : {Age = 8 years. Weight = 30 pounds.} [Type: CDog]
 
 ## See also
 
-[dx (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md)
+[dx (Display Debugger Object Model Expression)](../debuggercmds/dx--display-visualizer-variables-.md)
 
 [Using LINQ With the debugger objects](using-linq-with-the-debugger-objects.md)
 

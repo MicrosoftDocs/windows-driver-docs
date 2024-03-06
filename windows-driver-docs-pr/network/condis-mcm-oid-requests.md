@@ -19,7 +19,7 @@ To originate an OID request to a CoNDIS client driver, an MCM calls the [**NdisM
 
 The following figure illustrates an OID request that an MCM originated.
 
-![diagram illustrating an oid request that an mcm originated.](images/mcmcorequest.png)
+:::image type="content" source="images/mcmcorequest.png" alt-text="Diagram showing an OID request originated by an MCM.":::
 
 After an MCM driver calls the [**NdisMCmOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismcmoidrequest) function, NDIS calls the [**ProtocolCoOidRequest**](/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_co_oid_request) function of the client driver.
 
@@ -35,11 +35,11 @@ After a client calls the **NdisCoOidRequest** function, NDIS calls either the [*
 
 The following figure illustrates an OID request for the miniport parameters of the MCM.
 
-![diagram illustrating an oid request for the miniport parameters of the mcm.](images/protocol2mcmcorequest.png)
+:::image type="content" source="images/protocol2mcmcorequest.png" alt-text="Diagram depicting an OID request for the miniport parameters of an MCM.":::
 
 The following figure illustrates an OID request for the call manager parameters of the MCM.
 
-![diagram illustrating an oid request for the call manager parameters of the mcm.](images/client2mcmcorequest.png)
+:::image type="content" source="images/client2mcmcorequest.png" alt-text="Diagram displaying an OID request for the call manager parameters of an MCM.":::
 
 To complete synchronously, [**NdisCoOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscooidrequest) returns NDIS\_STATUS\_SUCCESS or an error status. To complete asynchronously, [**ProtocolCoOidRequest**](/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_co_oid_request) or [**MiniportCoOidRequest**](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_co_oid_request) returns NDIS\_STATUS\_PENDING.
 

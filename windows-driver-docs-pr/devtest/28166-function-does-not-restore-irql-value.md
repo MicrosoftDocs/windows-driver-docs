@@ -1,5 +1,5 @@
 ---
-title: C28166 warning
+title: C28166 Warning
 description: Warning C28166 The function does not restore the IRQL to the value that was current at function entry and is required to do so.
 keywords:
 - warnings listed WDK PREfast for Drivers
@@ -19,12 +19,4 @@ This warning indicates that a function has the **\_IRQL\_requires\_same\_** anno
 Typically, the **\_IRQL\_requires\_same\_** annotation is used on callback functions.
 
 To avoid this warning, the driver must properly save the initial IRQL value and restore the same IRQL value at function exit, which is what the **\_IRQL\_requires\_same\_** annotation asserts.
-
- 
-
- 
-
-
-
-
 

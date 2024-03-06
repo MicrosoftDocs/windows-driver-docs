@@ -10,11 +10,11 @@ The extensible switch interface notifies underlying extensions about changes to 
 
 The following figure shows the extensible switch control path for OID requests for NDIS 6.40 (Windows Server 2012 R2) and later.
 
-![diagram of the vswitch oid control path for ndis 6.40.](images/vswitch-oid-controlpath-ndis640.png)
+:::image type="content" source="images/vswitch-oid-controlpath-ndis640.png" alt-text="Diagram showing the extensible switch control path for OID requests in NDIS 6.40.":::
 
 The following figure shows the extensible switch control path for OID requests for NDIS 6.30 (Windows Server 2012).
 
-![diagram of the vswitch oid control path for ndis 6.30.](images/vswitch-oid-controlpath.png)
+:::image type="content" source="images/vswitch-oid-controlpath.png" alt-text="Diagram showing the extensible switch control path for OID requests in NDIS 6.30.":::
 
 **Note**  In the extensible switch interface, NDIS filter drivers are known as *extensible switch extensions* and the driver stack is known as the *extensible switch driver stack*. 
 

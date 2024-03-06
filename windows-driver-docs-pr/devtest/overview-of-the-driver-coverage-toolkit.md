@@ -36,13 +36,13 @@ The [Driver Coverage filter driver](driver-coverage-filter-driver.md) increments
 
 The following figure shows an example of IRP traffic within a driver stack for a device.
 
-![diagram illustrating i/o request packet (irp) traffic within a driver stack for a device.](images/coverage-3.png)
+:::image type="content" source="images/coverage-3.png" alt-text="Diagram illustrating I/O Request Packet (IRP) traffic within a driver stack for a device.":::
 
 In this example, the [Driver Coverage filter driver](driver-coverage-filter-driver.md) monitors the following IRPs:
 
--   IRP A, which has just entered the driver stack.
+- IRP A, which has just entered the driver stack.
 
--   IRP B, which is about to leave the driver stack.
+- IRP B, which is about to leave the driver stack.
 
 The Driver Coverage filter driver increments its MN and MN/MJ function code counters for both IRPs. Also, because both IRPs A and B are active within the driver stack, the Driver Coverage filter driver increments its IRP pair counter for the tuple {IRP A, IRP B}.
 

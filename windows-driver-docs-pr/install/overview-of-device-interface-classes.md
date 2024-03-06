@@ -1,5 +1,5 @@
 ---
-title: Overview of device interface classes
+title: Overview of Device Interface Classes
 description: Learn more about device interface classes
 keywords:
 - interface classes WDK device installations

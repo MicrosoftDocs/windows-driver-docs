@@ -1,5 +1,5 @@
 ---
-title: GetSupportedGroupOperations method of the MSFT\_ReplicationCapabilities class
+title: GetSupportedGroupOperations Method of the MSFT_ReplicationCapabilities Class
 description: Returns, for a given ReplicationType, the supported operations on a group synchronized association that can be supplied to the ModifyReplicaSynchronization operation.
 ms.assetid: 66ED73BA-2404-45F0-B4E1-6BB9A999D689
 keywords:

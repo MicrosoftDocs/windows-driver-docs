@@ -1,10 +1,10 @@
 ---
 title: Bluetooth Software Radio Switch Function Prototypes
 description: Learn about bluetooth version and profile support in previous windows versions. See requirements, recommendations, and code examples.
-ms.date: 02/12/2018
+ms.date: 01/10/2024
 ---
 
-# Bluetooth Software Radio Switch Function Prototypes
+# Bluetooth software radio switch function prototypes
 
 > Note: Beginning with Windows 8.1 vendors are no longer required to implement radio on/off capability (for Bluetooth 4.0 radios) in a software DLL as described in this topic, because the operating system now handles this functionality. Windows 8.1 will ignore any such DLL, even if present.
 
@@ -48,7 +48,7 @@ To enable the software radio switch controls in the menu and in the control pane
 
 Key: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTHPORT\Parameters\Radio Support
 
-Value Name: “SupportDLL”
+Value Name: "SupportDLL"
 
 Value Data : (the path)
 
@@ -64,7 +64,7 @@ It is required to install the DLL in a secure location such as C:\Program Files\
 
 While this design allows flexibility in how the hardware can be controlled, it is required that the off state results in no transmission/reception from the radio. Additionally, it is recommended to power down the radio to its lowest power state to conserve energy and remove it from the bus to allow the Bluetooth stack to unload.
 
-BluetoothEnableRadio shall only return a result after the change in radio state has occurred. Additionally, because this DLL extension is meant to provide a unified radio on/off infrastructure within Windows, usage of the DLL should be reserved for Windows components. It’s the responsibility of the DLL to ensure the correct result is returned if the DLL is also used by a non-Windows component, or if a hardware switch is implemented that could turn off the radio outside the context of the Bluetooth Media Radio Manager (e.g. a switch hardwired to power off the radio).
+BluetoothEnableRadio shall only return a result after the change in radio state has occurred. Additionally, because this DLL extension is meant to provide a unified radio on/off infrastructure within Windows, usage of the DLL should be reserved for Windows components. It's the responsibility of the DLL to ensure the correct result is returned if the DLL is also used by a non-Windows component, or if a hardware switch is implemented that could turn off the radio outside the context of the Bluetooth Media Radio Manager (e.g. a switch hardwired to power off the radio).
 
 Windows 8 Radio Management requires the DLL to execute its instructions in the Local Service Account context. Under this context, the DLL will have the minimum privilege on the local computer, which is typically less than that of a normal user context.
 

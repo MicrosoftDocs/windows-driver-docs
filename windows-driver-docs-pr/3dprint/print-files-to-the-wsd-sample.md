@@ -1,5 +1,5 @@
 ---
-title: Print files to the WSD sample
+title: Print Files to the WSD Sample
 description: This section describes how to print to the WSD sample.
 ms.date: 03/17/2023
 ---

@@ -1,8 +1,7 @@
 ---
-title: KSPIN_INTERFACE structure (ks.h)
+title: KSPIN_INTERFACE Structure (Ks.H)
 description: The KSPIN_INTERFACE structure describes a specific interface within an interface set.
 ms.date: 07/14/2022
-ms.custom: contperf-fy22q1
 ---
 
 # KSPIN_INTERFACE structure

@@ -33,8 +33,3 @@ Parameter | Description
 2 | Pointer to Unicode Name of the Aml Context
 3 | Pointer to ACPI Device Extension.
 4 | Pointer to ACPI Triage Block.
-
-
-
-
-

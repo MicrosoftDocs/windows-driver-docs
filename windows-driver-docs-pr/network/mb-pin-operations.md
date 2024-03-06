@@ -12,21 +12,19 @@ ms.custom: UpdateFrequency3
 This topic describes the operations related to access control of subscription information stored either in the MB device memory or on the Subscriber Identity Module (SIM) card. This includes enabling, disabling, or changing the Personal Identification Number (PIN), as well as unlocking via PIN or Personal Unlocking Key (PUK). 
 
 ## Architecture/Flows
-User actions to enable/disable/unlock/change PIN
+### User actions to enable/disable/unlock/change PIN
 
-![PIN actions flowchart.](images/pinActions.png)
+:::image type="content" source="images/pinActions.png" alt-text="Flowchart illustrating user actions for enabling, disabling, unlocking, and changing PIN.":::
 
-&nbsp;
 
-Cellular UX query for PIN1/PUK1 state
+### Cellular UX query for PIN1/PUK1 state
 
-![Query PIN1 / PUK1 flowchart.](images/pinQuery.png)
+:::image type="content" source="images/pinQuery.png" alt-text="Flowchart depicting the process of querying PIN1 and PUK1 states in cellular UX.":::
 
-&nbsp;
 
-Auto-unlock after resuming from hibernation
+### Auto-unlock after resuming from hibernation
 
-![Auto-Unlock after resuming from hibernation flowchart.](images/auto-unlock-pin-hibernation.png)
+:::image type="content" source="images/auto-unlock-pin-hibernation.png" alt-text="Flowchart showing the auto-unlock process after resuming from hibernation.":::
 
 ## MBIM_CID_MS_PIN_EX
 

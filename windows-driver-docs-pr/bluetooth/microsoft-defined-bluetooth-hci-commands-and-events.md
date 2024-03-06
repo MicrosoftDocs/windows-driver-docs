@@ -1,7 +1,7 @@
 ---
-title: Microsoft-defined Bluetooth HCI commands and events
+title: Microsoft-Defined Bluetooth HCI Commands and Events
 description: The Bluetooth Host-Controller Interface (HCI) specifies all interactions between a host and a Bluetooth radio controller.
-ms.date: 04/17/2023
+ms.date: 01/10/2024
 ---
 
 # Microsoft-defined Bluetooth HCI extensions
@@ -137,7 +137,7 @@ The controller shall refuse the command if another HCI_VS_MSFT_Monitor_Rssi comm
 
 This state diagram shows the transition states on the controller when monitoring RSSI for a connection.
 
-:::image type="content" source="images/HCI_VS_MSFT_Monitor_Rssi_State_Diagram.png" alt-text="State diagram of HCI_VS_MSFT_Monitor_Rssi":::
+:::image type="content" source="images/HCI_VS_MSFT_Monitor_Rssi_State_Diagram.png" alt-text="State diagram showing transition states on the controller when monitoring RSSI for a connection.":::
 
 The controller shall generate an [HCI_VS_MSFT_Rssi_Event][ref_HCI_VS_MSFT_Rssi_Event] when the received RSSI is greater than or equal to the specified *RSSI_threshold_high*. After this event has been generated, the controller shall not generate a new [HCI_VS_MSFT_Rssi_Event][ref_HCI_VS_MSFT_Rssi_Event] to specify that the *RSSI_threshold_high* has been exceeded until it generates an [HCI_VS_MSFT_Rssi_Event][ref_HCI_VS_MSFT_Rssi_Event] that specifies the RSSI has fallen below *RSSI_threshold_low*.
 
@@ -281,7 +281,7 @@ If the controller doesn't support RSSI monitoring for LE Advertisements, it shal
 
 This state diagram shows the transition states on the controller when monitoring RSSI for an advertisement.
 
-:::image type="content" source="images/HCI_VS_MSFT_LE_Monitor_Advertisement_State_Diagram.svg" alt-text="State diagram for HCI_VS_MSFT_LE_Monitor_Advertisement.":::
+:::image type="content" source="images/HCI_VS_MSFT_LE_Monitor_Advertisement_State_Diagram.svg" alt-text="State diagram showing transition states for HCI_VS_MSFT_LE_Monitor_Advertisement.":::
 
 The controller shall begin monitoring an advertisement only when the received RSSI is greater than or equal to *RSSI_threshold_high* for a particular device and the *Monitor_options* match (see below).  The controller shall generate an [HCI_VS_MSFT_LE_Monitor_Device_Event][ref_HCI_VS_MSFT_LE_Monitor_Device_Event] with *Monitor_state* set to 1 and *Monitor_handle* set to the handle for this *Condition*, to notify the host that the controller is monitoring this particular device for *Condition*. Additionally, the Controller shall propagate the first advertisement report of a monitored advertisement to the Host only when the *Advertisement_report_filter_options* match (see below).
 
@@ -337,7 +337,7 @@ If the controller supports the RSSI monitoring of LE advertisements without samp
 
 The Controller shall support a minimum of 30 simultaneous Monitor_handles, a minimum of 30 simultaneous tracked devices, and a minimum of 20 simultaneous tracked duplicate advertisements. The Controller shall also be capable of performing a continuous LE scan at 10% duty cycle.
 
-If Address Resolution is enabled in the Controller and the Host intends to monitor a remote device with its IRK successfully stored in the Controller's resolving list, then the Host shall provide the Peer_Identity_Address and Peer_Identity_Address_Type parameters from the remote device’s resolving list entry as the Peer_device_address and Peer_device_address_type parameters, respectively.
+If Address Resolution is enabled in the Controller and the Host intends to monitor a remote device with its IRK successfully stored in the Controller's resolving list, then the Host shall provide the Peer_Identity_Address and Peer_Identity_Address_Type parameters from the remote device's resolving list entry as the Peer_device_address and Peer_device_address_type parameters, respectively.
 
 | *RSSI_sampling_period* | Legacy Advertisements | Extended Advertisements (Non-Anonymous) | Extended Advertisements (Anonymous) |
 |--|--|--|--|
@@ -360,7 +360,7 @@ The *Condition_type* parameter specifies whether the *Condition* parameter speci
 
 If the *Condition_type* parameter specifies a pattern, the *Condition* contains two sections that contain the number of patterns present within the *Condition*, and the pattern data.
 
-:::image type="content" source="images/HCI_VS_MSFT_LE_Monitor_Advertisement_Conditions.png" alt-text="Pattern condition data layout":::
+:::image type="content" source="images/HCI_VS_MSFT_LE_Monitor_Advertisement_Conditions.png" alt-text="Diagram illustrating the pattern condition data layout for HCI_VS_MSFT_LE_Monitor_Advertisement.":::
 
 *Number of Patterns* specifies the number of patterns that need to be matched.
 
@@ -397,13 +397,13 @@ When active scanning is enabled, the scan response for an advertisement matching
 If the controller receives a HCI_VS_MSFT_LE_Monitor_Advertisement command when the filters are disabled (due to  a previously received [HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable][ref_HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable] command with *Enable* set to 0x00), the controller shall accept the command if it can, but set it to a disabled state.
 The controller may also refuse the command for other reasons such as resource exhaustion.
 
-If all bits of Monitor_options are clear, the Controller should return the error code _Invalid HCI Command Parameters_ (0x12).
+If all bits of Monitor_options are clear, the Controller should return the error code *Invalid HCI Command Parameters* (0x12).
 
-If bit 1 or bit 3 of Monitor_options is set and Peer_device_IRK is set to an invalid IRK, or none of the bits of Monitor_options is set, the Controller should return the error code _Invalid HCI Command Parameters_ (0x12).
+If bit 1 or bit 3 of Monitor_options is set and Peer_device_IRK is set to an invalid IRK, or none of the bits of Monitor_options is set, the Controller should return the error code *Invalid HCI Command Parameters* (0x12).
 
-If bit 0 or bit 1 or bit 2 or bit 3 of Monitor_options is set and Condition_type is set to 0x03 or 0x04, then the Controller should return the error code _Invalid HCI Command Parameters_ (0x12).
+If bit 0 or bit 1 or bit 2 or bit 3 of Monitor_options is set and Condition_type is set to 0x03 or 0x04, then the Controller should return the error code *Invalid HCI Command Parameters* (0x12).
 
-If bit 0 of Advertisement_report_filter_options is set and RSSI_sampling_period is any value other than 0x00, the Controller should return the error code _Invalid HCI Command Parameters_ (0x12).
+If bit 0 of Advertisement_report_filter_options is set and RSSI_sampling_period is any value other than 0x00, the Controller should return the error code *Invalid HCI Command Parameters* (0x12).
 
 #### Missing parameters
 
@@ -500,7 +500,6 @@ Peer_device_IRK (16 octets):
 |--|--|
 | 0x0000000000000000&nbsp;0000000000000000 | Invalid IRK. Shall not be the value when Monitor_options bit 1 is set or when Monitor_options bit 3 is set. |
 | 0xXXXXXXXXXXXXXXXX&nbsp;XXXXXXXXXXXXXXXX | IRK of the device to match. Peer_device_address and Peer_device_address_type shall be populated. |
-
 
 Condition_type (1 octet):
 
@@ -997,7 +996,7 @@ This example illustrates RSSI advertisement monitoring. The RSSI values for rece
 | *RSSI_threshold_low_time_interval* | 3 seconds |
 | *RSSI_sampling_period* | 2 seconds |
 
-:::image type="content" source="images/HCI_Example_Advertisement_Monitoring.png" alt-text="Advertisement monitoring graph":::
+:::image type="content" source="images/HCI_Example_Advertisement_Monitoring.png" alt-text="Graph showing advertisement monitoring with RSSI values over time.":::
 
 The advertisement RSSI is greater than *RSSI_threshold_high* at time 3. The periodic timer for sampling starts at time 3. Every 2 seconds, the periodic timer expires and the average RSSI value of the received advertisement is propagated to the stack.
 
@@ -1053,7 +1052,7 @@ This flowchart provides an example controller implementation of advertisement fi
 
 A controller can implement this logic differently, as long as the host is notified of the advertisement or [HCI_VS_MSFT_LE_Monitor_Device_Event][ref_HCI_VS_MSFT_LE_Monitor_Device_Event] as specified by the flowchart.
 
-:::image type="content" source="images/HCI_Filtering_Flowchart.png" alt-text="Microsoft HCI extension filtering flowchart":::
+:::image type="content" source="images/HCI_Filtering_Flowchart.png" alt-text="Flowchart that shows Microsoft HCI extension filtering process.":::
 
 ### Sequence diagram: Propagate scan response associated with advertisement
 
@@ -1063,4 +1062,4 @@ This sequence diagram shows a propagate scan response that is associated with an
 This diagram only shows the expected sequence of events between controller and host, and doesn't show events between the controller and a particular device.
 Assume that there's an advertisement *A* that satisfies an advertisement filter, and an advertisement *B* that doesn't satisfy the advertisement filter.
 
-:::image type="content" source="images/HCI_Propagate_Scan_Sequence.png" alt-text="HCI propagate scan sequence diagram":::
+:::image type="content" source="images/HCI_Propagate_Scan_Sequence.png" alt-text="Sequence diagram that shows HCI propagate scan response associated with advertisement.":::

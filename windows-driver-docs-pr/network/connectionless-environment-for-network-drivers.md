@@ -17,7 +17,7 @@ The connectionless environment is the standard network driver environment for co
 
 The following figure shows the NDIS environment for connectionless network drivers.
 
-![diagram illustrating the ndis environment for connectionless network drivers.](images/media01.png)
+:::image type="content" source="images/media01.png" alt-text="Diagram illustrating the NDIS environment for connectionless network drivers.":::
 
 ## Related topics
 

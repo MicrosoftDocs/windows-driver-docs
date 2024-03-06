@@ -1,5 +1,5 @@
 ---
-title: How do I use WPP in static libraries
+title: How do I Use WPP in Static Libraries
 description: How do I use WPP in static libraries
 ms.date: 04/20/2017
 ---
@@ -41,12 +41,4 @@ WPP_DEFINE_BIT(MemoryAllocations) \
 ```
 
 You can select the degree of control that you need for tracing on both your component and the static library, by specifying either a separate control GUID for the .lib and the .exe files, each with its own flags, or one control GUID for both. In the sample, the .exe file is using the same flags as the .lib file.
-
- 
-
- 
-
-
-
-
 

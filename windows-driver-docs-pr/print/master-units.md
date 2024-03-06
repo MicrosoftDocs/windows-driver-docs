@@ -4,7 +4,7 @@ description: Master Units
 keywords:
 - GPD files WDK Unidrv , master units
 - master units WDK GPD files
-ms.date: 01/27/2023
+ms.date: 07/18/2023
 ---
 
 # Master Units
@@ -21,22 +21,14 @@ To determine a plane's master units, calculate the least common multiple (LCM) o
 
 - Calculate the LCM of 288 and 96, which is 576. Thus, the vertical master unit is 1/576th of an inch.
 
-**Important**   Both of the master unit values and the vertical and horizontal resolutions should be a multiple of the number of pins in the print head (that is, the **PinsPerPhysPass** value). If this condition is not met, it is possible that extra blank lines will be produced for certain paper sizes.
+> [!IMPORTANT]
+> Both of the master unit values and the vertical and horizontal resolutions should be a multiple of the number of pins in the print head (that is, the **PinsPerPhysPass** value). If this condition is not met, it is possible that extra blank lines will be produced for certain paper sizes.
 
 To specify a printer's master units, use the \***MasterUnits** attribute. The attribute's format is as follows:
 
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>*<strong>MasterUnits</strong>: PAIR ( <em>X_Denominator</em> , <em>Y_Denominator</em> )</p></td>
-</tr>
-</tbody>
-</table>
+\***MasterUnits**: PAIR ( *X_Denominator* , *Y_Denominator* )
 
-where *X\_Denominator* is the LCM of the denominators for the horizontal resolutions, and *Y\_Denominator* is the LCM of the denominators for the vertical resolutions. The following GPD entry specifies the master units for the example:
+where *X_Denominator* is the LCM of the denominators for the horizontal resolutions, and *Y_Denominator* is the LCM of the denominators for the vertical resolutions. The following GPD entry specifies the master units for the example:
 
 ```GPD
 *MasterUnits: PAIR(320, 576)

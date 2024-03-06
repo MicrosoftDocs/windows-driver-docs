@@ -1,5 +1,5 @@
 ---
-title: Setting Up QEMU Kernel-Mode Debugging using EXDI
+title: Setting Up QEMU Kernel-Mode Debugging Using EXDI
 description: Debugging Tools for Windows supports debugging QEMU using EXDI. This topic describes how to setup QEMU kernel debugging using EXDI.
 ms.date: 04/22/2022
 ms.localizationpriority: medium
@@ -22,7 +22,7 @@ For general information on setting up configuring and troubleshooting EXDI conne
 
 EXDI is an interface that allows extending WinDbg by adding support for hardware debuggers (e.g. JTAG-based, or GdbServer based). The diagram below illustrates the role of EXDI-GdbServer.
 
-![A stack diagram showing role of EXDI-GdbServer with WinDbg-DbgEng on top, a exdi interface and a exdi com server talking down to a GDB server.](images/exdi-server-dbgeng-interface-diagram.png)
+:::image type="content" source="images/exdi-server-dbgeng-interface-diagram.png" alt-text="Stack diagram showing the role of EXDI-GdbServer with WinDbg-DbgEng on top, an EXDI interface, and an EXDI COM server communicating with a GDB server.":::
 
 >[!IMPORTANT]
 > Because EXDI does not make use of the KDNET protocol, the connected debugger has significantly less information about what is running on the PC and many commands will work differently or may not work at all. Access to private symbols for the code being debugged can help the debugger better understand the target systems code execution. For more information, see [Public and Private Symbols](public-and-private-symbols.md).
@@ -37,7 +37,7 @@ In this topic, we will describe the process to attach to a QEMU Virtual Windows 
 1. Start the gdbserver on QEMU.
 1. Check network connectivity and locate and record the target image IP address. (HOST IP default address of 1.2.3.4).
 1. Download and install the Windows debugging tools on the host system.
-1. Download, build, register and configure the EXDI server for QEMU located on Github.
+1. Download, build, register and configure the EXDI server for QEMU located on GitHub.
 1. Configure the debugger host (WinDbg) by editing the EXDI configuration XML files.
 1. Launch WinDbg using the command line to connect to the EXDI server.
 1. Use WinDbg to debug the target QEMU Windows image.
@@ -107,11 +107,11 @@ c:\Program Files\qemu\StartQEMUx64Windows.bat
 
 If a firewall defender prompt appears, grant the app all rights to all types of networks to enable Windbg through the Windows firewall for the host debugger machine.
 
-![Windows Defender firewall dialog box showing all three boxes checked](images/exdi-windows-defender-firewall-dialog.png)
+:::image type="content" source="images/exdi-windows-defender-firewall-dialog.png" alt-text="Windows Defender Firewall dialog box with all three options checked.":::
 
 Once the Windows Virtual Machine is launched in the QEMU environment the QEMU UI will appear.
 
-![QEMU screen shot showing view menu options](images/exdi-windows-qemu-view-menu.png)
+:::image type="content" source="images/exdi-windows-qemu-view-menu.png" alt-text="Screenshot of QEMU displaying view menu options.":::
 
 Use CTRL+ALT+ a number key combination to go in the QEMU monitor console. This monitor is also available using *View->compatmonitor*.
 
@@ -292,7 +292,7 @@ PS>.\Start-ExdiDebugger.ps1 -ExdiTarget "QEMU" -GdbPort 1234 -Architecture x64 -
 
 The debugger should launch and connect to the QEMU GdbServer.
 
-![main windbg session showing exdi CLSID on Window title](images/exdi-windbg-debugger-session.png)
+:::image type="content" source="images/exdi-windbg-debugger-session.png" alt-text="Main WinDbg session displaying EXDI CLSID in the window title.":::
 
 The debugger will show the successful EXDI transport initialization.
 
@@ -320,29 +320,29 @@ This means that under many connection sequences, the break will not function as 
 
 Commands such as the following that access memory directly will work.
 
-[k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md)
+[k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md)
 
-[r (Registers)](r--registers-.md)
+[r (Registers)](../debuggercmds/r--registers-.md)
 
-[d, da, db, dc, dd, dD, df, dp, dq, du, dw (Display Memory)](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md)
+[d, da, db, dc, dd, dD, df, dp, dq, du, dw (Display Memory)](../debuggercmds/d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md)
 
-[u (Unassemble)](u--unassemble-.md)
+[u (Unassemble)](../debuggercmds/u--unassemble-.md)
 
 And you can step through code.
 
-[p (Step)](p--step-.md)
+[p (Step)](../debuggercmds/p--step-.md)
 
 There are also commands that can be used to attempt to locate code that you wish to debug.
 
-[s (Search Memory)](s--search-memory-.md)
+[s (Search Memory)](../debuggercmds/s--search-memory-.md)
 
-[.imgscan (Find Image Headers)](-imgscan--find-image-headers-.md)
+[.imgscan (Find Image Headers)](../debuggercmds/-imgscan--find-image-headers-.md)
 
 Imgscan can be helpful with EDXI debugging, as unlike traditional KDNET based kernel debugging, setting breakpoints based on symbols may not be available. Locating a desired target image, can facilitate using its location to set a memory access breakpoint.
 
 ### .exdicmd (EXDI Command)
 
-The .exdicmd sends an EXDI command to the target system using the active EXDI debugging connection. For more information, see [.exdicmd (EXDI Command)](-exdicmd--exdi-command-.md).
+The .exdicmd sends an EXDI command to the target system using the active EXDI debugging connection. For more information, see [.exdicmd (EXDI Command)](../debuggercmds/-exdicmd--exdi-command-.md).
 
 ## EXDI XML Configuration files
 
@@ -362,7 +362,7 @@ Refer to the troubleshooting information in [Configuring the EXDI Debugger Trans
 
 [Configuring the EXDI Debugger Transport](configuring-the-exdi-debugger-transport.md)
 
-[.exdicmd (EXDI Command)](-exdicmd--exdi-command-.md)
+[.exdicmd (EXDI Command)](../debuggercmds/-exdicmd--exdi-command-.md)
 
 [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md)
 

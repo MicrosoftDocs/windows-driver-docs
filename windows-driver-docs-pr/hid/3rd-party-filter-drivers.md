@@ -1,7 +1,7 @@
 ---
-title: 3rd party filter drivers
+title: 3rd Party Filter Drivers
 description: Sample filter drivers in the Microsoft Windows Driver Kit (WDK).
-ms.date: 10/11/2022
+ms.date: 01/11/2024
 ---
 
 # 3rd party filter drivers

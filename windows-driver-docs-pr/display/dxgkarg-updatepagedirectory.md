@@ -1,5 +1,5 @@
 ---
-title: \_DXGKARG\_UPDATEPAGEDIRECTORY structure
+title: _DXGKARG_UPDATEPAGEDIRECTORY Structure
 description: The DXGKARG\_UPDATEPAGEDIRECTORY structure is reserved for system use. Do not use it in your driver.
 keywords: ["_DXGKARG_UPDATEPAGEDIRECTORY structure Display Devices", "DXGKARG_UPDATEPAGEDIRECTORY structure Display Devices"]
 topic_type:

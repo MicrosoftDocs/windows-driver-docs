@@ -31,11 +31,3 @@ This section includes:
 
 [Driver Verifier Manager](driver-verifier-manager--windows-xp-and-later-.md)
 
- 
-
- 
-
-
-
-
-

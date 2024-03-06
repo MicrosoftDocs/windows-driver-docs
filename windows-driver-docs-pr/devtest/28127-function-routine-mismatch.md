@@ -1,5 +1,5 @@
 ---
-title: C28127 warning
+title: C28127 Warning
 description: Warning C28127 The function being used as a routine does not exactly match the type expected.
 keywords:
 - warnings listed WDK PREfast for Drivers
@@ -32,12 +32,4 @@ warning C28127: The function being used as a routine does not exactly match the 
 The driver is passing or assigning a function (pointer) of an unexpected type (that is, function signature). This often occurs in C when the expected return type of a function is VOID and a function with an (implied) **int** return value is actually supplied. It can also happen when the parameters are compatible but not identical. In general, callback functions should match the expected type exactly, which is most easily accomplished using a function typedef.
 
 This type mismatch message is designed primarily to verify that the Code Analysis tool can recognize callbacks.
-
- 
-
- 
-
-
-
-
 

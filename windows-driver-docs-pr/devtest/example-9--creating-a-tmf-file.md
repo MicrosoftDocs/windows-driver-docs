@@ -1,5 +1,5 @@
 ---
-title: Example 9 Creating a TMF file
+title: Example 9 Creating a TMF File
 description: Example 9 Creating a TMF file
 keywords:
 - Tracefmt WDK , TMF files
@@ -100,12 +100,4 @@ EventTrace
 [0]0338.0E40::06/10/2005-14:25:45.539 [tracedrv]Machine State :: Offline
 [0]0338.0E40::06/10/2005-14:25:45.539 [tracedrv]Function Return=0x8000000f(STATUS_DEVICE_POWERED_OFF)
 ```
-
- 
-
- 
-
-
-
-
 

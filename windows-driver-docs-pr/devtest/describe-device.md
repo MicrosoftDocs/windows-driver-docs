@@ -1,5 +1,5 @@
 ---
-title: Describe the device in the Device Metadata Authoring Wizard
+title: Describe the Device in the Device Metadata Authoring Wizard
 description: Describe the device in the Device Metadata Authoring Wizard
 keywords:
 - Describe the device in the Device Metadata Authoring Wizard
@@ -24,12 +24,4 @@ Windows displays descriptive information that you provide about a device, such a
 **Note**  If you selected **Multiple Locales** in the **Package Definition** tab, you see multiple **Locale** tabs. Click each tab to define the information for all locales. If you don't complete the required fields in each locale tab, you receive an error message when you click the **Finish** button on the **Finish** tab.
 
  
-
- 
-
- 
-
-
-
-
 

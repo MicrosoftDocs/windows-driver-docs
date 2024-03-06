@@ -7,7 +7,7 @@ ms.date: 04/20/2017
 # Roadmap for Developing WDM Audio Drivers
 
 
-![figure of a roadmap with the text "wdk" superimposed on a highway](images/wdkroadmap-th.png)Audio drivers are based on the Windows driver model (WDM).
+:::image type="content" source="images/wdkroadmap-th.png" alt-text="Illustration of a roadmap with the text 'WDM' superimposed on a highway.":::
 
 To create a WDM audio driver, perform the following steps:
 

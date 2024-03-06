@@ -6,14 +6,14 @@ ms.date: 10/28/2022
 
 # Bug Check Code Reference
 
-This section contains descriptions of common bug check codes that are displayed on the blue bug check screen. This section also describes how you can use the [**!analyze**](-analyze.md) extension in the Windows Debugger to display information about a bug check code.
+This section contains descriptions of common bug check codes that are displayed on the blue bug check screen. This section also describes how you can use the [**!analyze**](../debuggercmds/-analyze.md) extension in the Windows Debugger to display information about a bug check code.
 
 > [!NOTE]
 > This topic is for programmers. If you are a customer whose system has displayed a blue screen with a bug check code, see [Troubleshoot blue screen errors](https://support.microsoft.com/help/14238/windows-10-troubleshoot-blue-screen-errors).
 
 ## Using WinDbg to display stop code information
 
-If a specific bug check code does not appear in this topic, use the [**!analyze**](-analyze.md) extension in the Windows Debugger (WinDbg) with the following syntax (in kernel mode), replacing `<code>` with a bug check code:
+If a specific bug check code does not appear in this topic, use the [**!analyze**](../debuggercmds/-analyze.md) extension in the Windows Debugger (WinDbg) with the following syntax (in kernel mode), replacing `<code>` with a bug check code:
 
 `!analyze -show <code>`
 
@@ -42,7 +42,7 @@ For more information, see:
 
 - [Analyzing a Kernel-Mode Dump File with WinDbg](analyzing-a-kernel-mode-dump-file-with-windbg.md)
 
-- [!analyze](-analyze.md)
+- [!analyze](../debuggercmds/-analyze.md)
 
 - [Processor Architecture](processor-architecture.md)
 

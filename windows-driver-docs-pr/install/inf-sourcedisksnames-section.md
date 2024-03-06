@@ -1,5 +1,5 @@
 ---
-title: INF SourceDisksNames section
+title: INF SourceDisksNames Section
 description: A SourceDisksNames section identifies the distribution disks or CD-ROM discs that contain the source files to be transferred to the target computer during installation.
 keywords:
 - INF SourceDisksNames Section Device and Driver Installation

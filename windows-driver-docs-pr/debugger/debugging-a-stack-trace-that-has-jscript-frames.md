@@ -17,8 +17,3 @@ If your stack includes JScript frames that you think might be incorrect, enter t
  
 
  
-
-
-
-
-

@@ -1,5 +1,5 @@
 ---
-title: MM_BAD_POINTER macro
+title: MM_BAD_POINTER Macro
 description: MM_BAD_POINTER macro
 ms.date: 07/16/2021
 ms.topic: reference
@@ -32,7 +32,7 @@ Starting with Windows 8.1, the **MM_BAD_POINTER** macro is defined in the Wdm.h 
 
 Starting with Windows Vista, the [**MmBadPointer**](./mm64bitphysicaladdress.md) global variable is available as a pointer to a pointer value that is guaranteed to be an invalid address. However, starting with Windows 8.1, the use of **MmBadPointer** is deprecated, and you should update your drivers to use the **MM_BAD_POINTER** macro instead.
 
-Available starting with Windows 8.1\. Compatible with previous versions of Windows starting with Windows Vista._
+Available starting with Windows 8.1\. Compatible with previous versions of Windows starting with Windows Vista.
 
 
 ## See also

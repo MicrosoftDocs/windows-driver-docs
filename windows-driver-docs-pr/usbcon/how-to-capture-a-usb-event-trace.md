@@ -1,7 +1,7 @@
 ---
-title: How to capture a USB event trace with Logman
+title: How to Capture a USB Event Trace With Logman
 description: This article provides information about using the Logman tool to capture a USB ETW event trace.
-ms.date: 04/20/2017
+ms.date: 01/12/2024
 ---
 
 # How to capture a USB event trace with Logman
@@ -48,7 +48,7 @@ Event traces from the USB 3.0 driver stack are similar to the USB 2.0 driver sta
     You can stop USB hub and port event collection by running the following command:
 
     ```cpp
-    logman stop -n usbtrace 
+    logman stop -n usbtrace
     logman delete -n usbtrace
     move /Y %SystemRoot%\Tracing\usbtrace_000001.etl %SystemRoot%\Tracing\usbtrace.etl
 
@@ -104,7 +104,7 @@ Logman update Usbtrace -p Microsoft-Windows-USB-USBHUB –ets
 If your filtered trace log has many host controller asynchronous schedule enable and disable events, you can filter them out when viewing the log by using a Netmon filter, as shown in the following example:
 
 ```console
-NOT (Description == "USBPort_MicrosoftWindowsUSBUSBPORT:Host Controller Async Schedule Enable" 
+NOT (Description == "USBPort_MicrosoftWindowsUSBUSBPORT:Host Controller Async Schedule Enable"
 OR Description == "USBPort_MicrosoftWindowsUSBUSBPORT:Host Controller Async Schedule Disable")
 ```
 
@@ -114,6 +114,6 @@ Sometimes it is helpful to have the transfer events in your trace log, such as h
 
 ## Related topics
 
-- [Using USB ETW](using-usb-etw.md)  
-- [USB Event Tracing for Windows](usb-event-tracing-for-windows.md)  
+- [Using USB ETW](using-usb-etw.md)
+- [USB Event Tracing for Windows](usb-event-tracing-for-windows.md)
 - [Defining Keywords Used to Classify Types of Events](/windows/desktop/WES/defining-keywords-used-to-classify-types-of-events)

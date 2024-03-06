@@ -6,7 +6,7 @@ ms.date: 11/09/2022
 
 # Metadata Files for Analysis Extension Plug-ins
 
-When you write an analysis extension plug-in, you also write a metadata file that describes the situations for which you want your plug-in to be called. When the [**!analyze**](-analyze.md) debugger command runs, it uses metadata files to determine which plug-ins to load.
+When you write an analysis extension plug-in, you also write a metadata file that describes the situations for which you want your plug-in to be called. When the [**!analyze**](../debuggercmds/-analyze.md) debugger command runs, it uses metadata files to determine which plug-ins to load.
 
 Create a metadata file that has the same name as your analysis extension plug-in and an extension of .alz. For example, if your analysis extension plug-in is named MyAnalyzer.dll, your metadata file must be named MyAnalyzer.alz. Place the metadata file in the same directory as your analysis extension plug-in.
 
@@ -88,7 +88,7 @@ TagDesc         0xA0000000  SAMPLE_PLUGIN_DEBUG_TEXT    {Sample debug help text 
 
 [**\_EFN\_Analyze**](/windows-hardware/drivers/ddi/extsfns/nc-extsfns-ext_analysis_plugin)
 
-[**!analyze**](-analyze.md)
+[**!analyze**](../debuggercmds/-analyze.md)
 
  
 

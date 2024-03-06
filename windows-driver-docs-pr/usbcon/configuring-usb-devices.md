@@ -1,7 +1,7 @@
 ---
 description: The topics in this section describe how a client driver must configure their device.
-title: Overview of selecting a USB configuration in USB drivers overview
-ms.date: 09/13/2022
+title: Overview of Selecting a USB Configuration in USB Drivers Overview
+ms.date: 01/12/2024
 ---
 
 # Overview of selecting a USB configuration in USB drivers

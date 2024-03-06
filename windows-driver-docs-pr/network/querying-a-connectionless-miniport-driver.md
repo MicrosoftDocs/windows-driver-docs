@@ -18,7 +18,7 @@ If NDIS does not respond for the miniport driver, the call to **NdisOidRequest**
 
 NDIS can also call a miniport driver's *MiniportOidRequest* function on its own behalf--for example, after the miniport driver's *MiniportInitializeEx* function has returned NDIS\_STATUS\_SUCCESS--to query the miniport driver's capabilities, status, or statistics. The following diagram illustrates querying a connectionless miniport driver.
 
-![diagram illustrating querying a connectionless miniport driver.](images/fig5-2.png)
+:::image type="content" source="images/fig5-2.png" alt-text="Diagram illustrating the process of querying a connectionless miniport driver.":::
 
 NDIS responds to many OID requests on behalf of the miniport driver. The miniport driver reports many of its OID values during initialization and in status indications. For more information about OID values that are reported in attributes, see [**NDIS\_MINIPORT\_ADAPTER\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_attributes) and the related attributes structures.
 

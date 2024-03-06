@@ -1,11 +1,10 @@
 ---
-title: Using vector types with sensors
+title: Using Vector Types With Sensors
 description: Using vector types with sensors
-ms.date: 04/20/2017
+ms.date: 01/11/2024
 ---
 
 # Using vector types with sensors
-
 
 Some properties and data fields contain arrays of information. For example, the SENSOR\_PROPERTY\_LIGHT\_RESPONSE\_CURVE property contains an array of 4-byte unsigned integers. However, when applications receive such arrays through the Sensor API, they are always represented as type VT\_VECTOR|UI1, an array of single-byte characters.
 
@@ -42,4 +41,5 @@ PropVariantClear(&pvCurve);
 ```
 
 ## Related topics
-[The Sensors Geolocation Driver Sample](../gnss/sensors-geolocation-driver-sample.md)
+
+- [The Sensors Geolocation Driver Sample](../gnss/sensors-geolocation-driver-sample.md)

@@ -20,7 +20,7 @@ User-mode memory dump files can be analyzed by WinDbg. The processor or Windows 
 
 ### <span id="installing_symbol_files"></span><span id="INSTALLING_SYMBOL_FILES"></span>Installing Symbol Files
 
-Before analyzing the memory dump file, you will need to access the symbol files for the version of Windows that generated the dump file. These files will be used by the debugger you choose to use to analyze the dump file. For information about working with the symbol server, see see [Microsoft Public Symbols](microsoft-public-symbols.md)..
+Before analyzing the memory dump file, you will need to access the symbol files for the version of Windows that generated the dump file. These files will be used by the debugger you choose to use to analyze the dump file. For information about working with the symbol server, see [Microsoft Public Symbols](microsoft-public-symbols.md).
 
 You will also need to install all the symbol files for the user-mode process, either an application or system service, that caused the system to generate the dump file. If this code was written by you, the symbol files should have been generated when the code was compiled and linked. If this is commercial code, check on the product CD-ROM or contact the software manufacturer for these particular symbol files.
 
@@ -34,17 +34,17 @@ The **-v** option (verbose mode) is also useful. For a full list of options, see
 
 If WinDbg is already running and is in dormant mode, you can open a crash dump by selecting the **File | Open Crash Dump** menu command or pressing the CTRL+D shortcut key. When the **Open Crash Dump** dialog box appears, enter the full path and name of the crash dump file in the **File name** text box, or use the dialog box to select the proper path and file name. When the proper file has been chosen, select **Open**.
 
-You can also open a dump file after the debugger is running by using the [**.opendump (Open Dump File)**](-opendump--open-dump-file-.md) command, followed with [**g (Go)**](g--go-.md).
+You can also open a dump file after the debugger is running by using the [**.opendump (Open Dump File)**](../debuggercmds/-opendump--open-dump-file-.md) command, followed with [**g (Go)**](../debuggercmds/g--go-.md).
 
-It is possible to debug multiple dump files at the same time. This can be done by including multiple **-z** switches on the command line (each followed by a different file name), or by using [**.opendump**](-opendump--open-dump-file-.md) to add additional dump files as debugger targets. For information about how to control a multiple-target session, see [Debugging Multiple Targets](debugging-multiple-targets.md).
+It is possible to debug multiple dump files at the same time. This can be done by including multiple **-z** switches on the command line (each followed by a different file name), or by using [**.opendump**](../debuggercmds/-opendump--open-dump-file-.md) to add additional dump files as debugger targets. For information about how to control a multiple-target session, see [Debugging Multiple Targets](debugging-multiple-targets.md).
 
 Dump files generally end with the extension .dmp or .mdmp. You can use network shares or Universal Naming Convention (UNC) file names for the memory dump file.
 
-It is also common for dump files to be packed into a CAB file. If you specify the file name (including the .cab extension) after the **-z** option or as the argument to an [**.opendump**](-opendump--open-dump-file-.md) command, the debugger can read the dump files directly out of the CAB. However, if there are multiple dump files stored in a single CAB, the debugger will only be able to read one of them. The debugger will not read any additional files from the CAB, even if they were symbol files or executables associated with the dump file.
+It is also common for dump files to be packed into a CAB file. If you specify the file name (including the .cab extension) after the **-z** option or as the argument to an [**.opendump**](../debuggercmds/-opendump--open-dump-file-.md) command, the debugger can read the dump files directly out of the CAB. However, if there are multiple dump files stored in a single CAB, the debugger will only be able to read one of them. The debugger will not read any additional files from the CAB, even if they were symbol files or executables associated with the dump file.
 
 ### <span id="analyzing_a_full_user_dump_file"></span><span id="ANALYZING_A_FULL_USER_DUMP_FILE"></span>Analyzing a Full User Dump File
 
-Analysis of a full user dump file is similar to analysis of a live debugging session. See the [Debugger Commands](debugger-commands.md) reference section for details on which commands are available for debugging dump files in user mode.
+Analysis of a full user dump file is similar to analysis of a live debugging session. See the [Debugger Commands](../debuggercmds/debugger-commands.md) reference section for details on which commands are available for debugging dump files in user mode.
 
 ### <span id="analyzing_minidump_files"></span><span id="ANALYZING_MINIDUMP_FILES"></span>Analyzing Minidump Files
 
@@ -61,7 +61,7 @@ User-mode memory dump files can be analyzed by CDB. The processor or Windows ver
 
 ### <span id="installing_symbol_files"></span><span id="INSTALLING_SYMBOL_FILES"></span>Installing Symbol Files
 
-Before analyzing the memory dump file, you will need to access the symbol files for the version of Windows that generated the dump file. These files will be used by the debugger you choose to use to analyze the dump file. For information about working with the symbol server, see see [Microsoft Public Symbols](microsoft-public-symbols.md).
+Before analyzing the memory dump file, you will need to access the symbol files for the version of Windows that generated the dump file. These files will be used by the debugger you choose to use to analyze the dump file. For information about working with the symbol server, see [Microsoft Public Symbols](microsoft-public-symbols.md).
 
 You will also need to install all the symbol files for the user-mode process, either an application or system service, that caused the system to generate the dump file. If this code was written by you, the symbol files should have been generated when the code was compiled and linked. If this is commercial code, check on the product CD-ROM or contact the software manufacturer for these particular symbol files.
 
@@ -73,17 +73,17 @@ To analyze a dump file, start CDB with the **-z** command-line option:
 
 The **-v** option (verbose mode) is also useful. For a full list of options, see [**CDB Command-Line Options**](cdb-command-line-options.md).
 
-You can also open a dump file after the debugger is running by using the [**.opendump (Open Dump File)**](-opendump--open-dump-file-.md) command, followed with [**g (Go)**](g--go-.md). This allows you to debug multiple dump files at the same time.
+You can also open a dump file after the debugger is running by using the [**.opendump (Open Dump File)**](../debuggercmds/-opendump--open-dump-file-.md) command, followed with [**g (Go)**](../debuggercmds/g--go-.md). This allows you to debug multiple dump files at the same time.
 
-It is possible to debug multiple dump files at the same time. This can be done by including multiple **-z** switches on the command line (each followed by a different file name), or by using [**.opendump**](-opendump--open-dump-file-.md) to add additional dump files as debugger targets. For information about how to control a multiple-target session, see [Debugging Multiple Targets](debugging-multiple-targets.md).
+It is possible to debug multiple dump files at the same time. This can be done by including multiple **-z** switches on the command line (each followed by a different file name), or by using [**.opendump**](../debuggercmds/-opendump--open-dump-file-.md) to add additional dump files as debugger targets. For information about how to control a multiple-target session, see [Debugging Multiple Targets](debugging-multiple-targets.md).
 
 Dump files generally end with the extension .dmp or .mdmp. You can use network shares or Universal Naming Convention (UNC) file names for the memory dump file.
 
-It is also common for dump files to be packed into a CAB file. If you specify the file name (including the .cab extension) after the **-z** option or as the argument to an [**.opendump**](-opendump--open-dump-file-.md) command, the debugger can read the dump files directly out of the CAB. However, if there are multiple dump files stored in a single CAB, the debugger will only be able to read one of them. The debugger will not read any additional files from the CAB, even if they are symbol files or executables associated with the dump file.
+It is also common for dump files to be packed into a CAB file. If you specify the file name (including the .cab extension) after the **-z** option or as the argument to an [**.opendump**](../debuggercmds/-opendump--open-dump-file-.md) command, the debugger can read the dump files directly out of the CAB. However, if there are multiple dump files stored in a single CAB, the debugger will only be able to read one of them. The debugger will not read any additional files from the CAB, even if they are symbol files or executables associated with the dump file.
 
 ### <span id="analyzing_a_full_user_dump_file"></span><span id="ANALYZING_A_FULL_USER_DUMP_FILE"></span>Analyzing a Full User Dump File
 
-Analysis of a full user dump file is similar to analysis of a live debugging session. See the [Debugger Commands](debugger-commands.md) reference section for details on which commands are available for debugging dump files in user mode.
+Analysis of a full user dump file is similar to analysis of a live debugging session. See the [Debugger Commands](../debuggercmds/debugger-commands.md) reference section for details on which commands are available for debugging dump files in user mode.
 
 ### <span id="analyzing_minidump_files"></span><span id="ANALYZING_MINIDUMP_FILES"></span>Analyzing Minidump Files
 
@@ -99,8 +99,3 @@ For techniques that can be used to read specific kinds of information from a dum
  
 
  
-
-
-
-
-

@@ -1,7 +1,7 @@
 ---
-title: USB bandwidth allocation
+title: USB Bandwidth Allocation
 description: This article provides guidance concerning the careful management of USB bandwidth.
-ms.date: 02/24/2023
+ms.date: 01/17/2024
 ---
 
 # USB bandwidth allocation

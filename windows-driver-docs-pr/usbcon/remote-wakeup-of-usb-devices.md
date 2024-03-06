@@ -1,20 +1,20 @@
 ---
+title: Remote Wake-Up of USB Devices
 description: This topic describes best practices for implementing the remote wake-up capability in a client driver.
-title: Remote wake-up of USB devices
-ms.date: 03/18/2022
+ms.date: 01/17/2024
 ---
 
 # Remote wake-up of USB devices
 
 USB devices that can respond to external wake signals while suspended are said to have a *remote wake-up* capability. Examples of devices that have a remote wake-up capability are mice, keyboards, USB hubs, modems (wake on ring), NICs, wake on cable insertion. All of these devices are capable of producing remote wake signaling. Devices that are not capable of generating remote wake signaling include video cameras, mass storage devices, audio devices, and printers.
 
-Drivers for devices that support remote wake-up signaling must issue an [**IRP\_MN\_WAIT\_WAKE**](../kernel/irp-mn-wait-wake.md) IRP, also known as a wait wake IRP, to arm the device for remote wake-up. The wait wake mechanism is described in the section [Supporting Devices That Have Wake-Up Capabilities](../kernel/supporting-devices-that-have-wake-up-capabilities.md).
+Drivers for devices that support remote wake-up signaling must issue an **[IRP_MN_WAIT_WAKE](../kernel/irp-mn-wait-wake.md)** IRP, also known as a wait wake IRP, to arm the device for remote wake-up. The wait wake mechanism is described in the section [Supporting Devices That Have Wake-Up Capabilities](../kernel/supporting-devices-that-have-wake-up-capabilities.md).
 
 ## Remote wake-up on a USB leaf device
 
-In USB terminology, a USB device is enabled for remote wake-up when its DEVICE\_REMOTE\_WAKEUP feature is set. The USB specification specifies that host software must set the remote wake-up feature on a device "only just prior" to putting the device to sleep.
+In USB terminology, a USB device is enabled for remote wake-up when its DEVICE_REMOTE_WAKEUP feature is set. The USB specification specifies that host software must set the remote wake-up feature on a device "only just prior" to putting the device to sleep.
 
-For this reason, the USB stack does not set the DEVICE\_REMOTE\_WAKEUP feature on a device after receiving a wait wake IRP for the device. Instead, it waits until it receives a [**IRP\_MN\_SET\_POWER**](../kernel/irp-mn-set-power.md) request to change the WDM device state of the device to D1/D2. Under most circumstances, when the USB stack receives this request, it both sets the remote wake-up feature on the device and puts the device to sleep by suspending the device's upstream port. When you design and debug your driver, you should keep in mind that there is a loose relationship between arming a USB device for wake-up in software, by means of a wait wake IRP, and arming the device for wake-up in hardware by setting the remote wake-up feature.
+For this reason, the USB stack does not set the DEVICE_REMOTE_WAKEUP feature on a device after receiving a wait wake IRP for the device. Instead, it waits until it receives a **[IRP_MN_SET_POWER](../kernel/irp-mn-set-power.md)** request to change the WDM device state of the device to D1/D2. Under most circumstances, when the USB stack receives this request, it both sets the remote wake-up feature on the device and puts the device to sleep by suspending the device's upstream port. When you design and debug your driver, you should keep in mind that there is a loose relationship between arming a USB device for wake-up in software, by means of a wait wake IRP, and arming the device for wake-up in hardware by setting the remote wake-up feature.
 
 The USB stack does not enable the device for remote wake-up when it receives a request to change the device to a sleep state of D3, because according to the WDM power model, devices in D3 cannot wake the system.
 
@@ -26,4 +26,4 @@ Universal Host Controller Interface (UHCI) USB host controllers do not distingui
 
 ## Related topics
 
-[USB Power Management](usb-power-management.md)
+- [USB Power Management](usb-power-management.md)

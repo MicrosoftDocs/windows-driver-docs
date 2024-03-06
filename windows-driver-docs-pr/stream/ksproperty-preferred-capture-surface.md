@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_PREFERRED\_CAPTURE\_SURFACE
+title: KSPROPERTY_PREFERRED_CAPTURE_SURFACE
 description: The KSPROPERTY\_PREFERRED\_CAPTURE\_SURFACE property returns the capture driver's preferred memory target for capture, either VRAM or a type of system memory.To use VRAM transport, a capture minidriver must support this property.
 keywords: ["KSPROPERTY_PREFERRED_CAPTURE_SURFACE Streaming Media Devices"]
 topic_type:

@@ -1,11 +1,10 @@
 ---
-title: Defining custom values for sensor universal driver constants
+title: Defining Custom Values for Sensor Universal Driver Constants
 description: Defining custom values for sensor universal driver constants
-ms.date: 07/20/2018
+ms.date: 01/11/2024
 ---
 
 # Defining custom values for sensor constants
-
 
 You can define custom values for categories, sensor types, data fields, properties, and events.
 
@@ -15,17 +14,17 @@ Avoid defining new constants if an existing set of platform-defined constants wi
 
 If you choose to define custom values, follow these guidelines:
 
--   Generate new PROPERTYKEYs. Do not reuse GUIDs from platform-defined constants and do not base your new GUIDs on platform-defined base values.
+- Generate new PROPERTYKEYs. Do not reuse GUIDs from platform-defined constants and do not base your new GUIDs on platform-defined base values.
 
--   Use identical GUIDs for new sensor data types in the same sensor category. To make each data type unique, increment the PID part of the property key.
+- Use identical GUIDs for new sensor data types in the same sensor category. To make each data type unique, increment the PID part of the property key.
 
--   Use identical GUIDs for new sensor properties that you define for your sensor. To make each property unique, increment the PID part of the property key.
+- Use identical GUIDs for new sensor properties that you define for your sensor. To make each property unique, increment the PID part of the property key.
 
--   Use identical GUIDs for new sensor event type that you define for your sensor. To make each event type unique, increment the PID part of the property key.
+- Use identical GUIDs for new sensor event type that you define for your sensor. To make each event type unique, increment the PID part of the property key.
 
--   Create unique constants. To avoid conflicts between constant names, begin each custom name with a value that helps make the name unique, both within the sensor code and across other implementations. For example, a company named Fabrikam could begin each constant definition with `FABRIKAM_`.
+- Create unique constants. To avoid conflicts between constant names, begin each custom name with a value that helps make the name unique, both within the sensor code and across other implementations. For example, a company named Fabrikam could begin each constant definition with `FABRIKAM_`.
 
--   Document and publish the values. If you want developers to be able to access the data from your sensor through the Windows Sensor API or Location API, you must document your custom values and publish the constants, for example by providing a header file. If your sensor is part of a proprietary system, publishing the custom values is not required.
+- Document and publish the values. If you want developers to be able to access the data from your sensor through the Windows Sensor API or Location API, you must document your custom values and publish the constants, for example by providing a header file. If your sensor is part of a proprietary system, publishing the custom values is not required.
 
 ## Example
 
@@ -64,18 +63,12 @@ DEFINE_PROPERTYKEY(SAMPLE_SENSOR_DATA_TYPE_SECOND,
 
 To use the DEFINE\_PROPERTYKEY macro, use one of the following two options:
 
--   Include Initguid.h in your project. In this case, the macro defines the property key for you. This approach works in most cases, but can cause naming collisions in large, complex projects.
+- Include Initguid.h in your project. In this case, the macro defines the property key for you. This approach works in most cases, but can cause naming collisions in large, complex projects.
 
--   Do not include Initguid.h. Instead, compile your definitions into a static library file that has the .lib file name extension. In this case, the macro declares the names for your property keys for the compiler. However, you have to reference the .lib file in your linker settings. This approach works best in large projects that use multiple modules.
+- Do not include Initguid.h. Instead, compile your definitions into a static library file that has the .lib file name extension. In this case, the macro declares the names for your property keys for the compiler. However, you have to reference the .lib file in your linker settings. This approach works best in large projects that use multiple modules.
 
 Using the macro without including Initguid.h and without referencing a library file will cause the LNK2001 error.
 
 ## Related topics
 
-[Sensors Driver ADXL345Acc Sample](https://go.microsoft.com/fwlink/p/?LinkId=617957)
-
-<!--
-https://go.microsoft.com/fwlink/p/?LinkId=617957: https://github.com/Microsoft/Windows-driver-samples/tree/main/sensors/ADXL345Acc
--->
-
-
+- [Sensors Driver ADXL345Acc Sample](https://github.com/Microsoft/Windows-driver-samples/tree/main/sensors/ADXL345Acc)

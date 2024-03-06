@@ -27,7 +27,7 @@ To support firmware updates on Mobile Broadband using Windows Update, module or 
 
 The following diagram shows the high level design and interaction between the three components involved: MBIM device, Windows 8 Operating System and IHV supplied firmware upgrade driver.
 
-![image showing how the components interact. this is described in the next paragraph.](images/mbdevicefirmwareupdate.png)
+:::image type="content" source="images/mbdevicefirmwareupdate.png" alt-text="Diagram showing the interaction between MBIM device, Windows 8 OS, and IHV supplied firmware upgrade driver.":::
 
 -   When the WWAN Service detects the arrival of new MB device, it will check if device support Firmware ID (FID) Device Service. If it is present, it will retrieve the FID, which is defined to be GUID. The Firmware Device Service specification that the IHV needs to the support on the device is described **below**.
 -   WWAN Service (Windows OS) will generate “soft device-node” using the FID obtained above as the device hardware Id. This referred to as “Soft Dev Node” in the diagram above. The creation of the dev-node will kick start PnP subsystem (Windows OS) to find the best matched driver. In Windows 8, PnP system will first attempt to install a driver from the local store, if one is available, and in parallel OS will attempt to fetch a better matched driver from WU. The inbox NULL driver will used be used as default if better match driver is not available to eliminate “Driver Not Found” issue.
@@ -46,9 +46,9 @@ The following diagram shows the high level design and interaction between the th
 This section provides a sample INF that is part of the WU package. The key points to note in INF file are:
 
 -   The firmware binaries are independent of the UMDF driver.
--   The firmware binaries are located a well-known, pre-defined location as shown below to filename collisions. The binaries cannot be not be executable files containing PE/COFF headers.
--   `%windir%\Firmware\<IHVCompanyName>\<UniqueBinaryName>.bin`
--   The UMDF driver is aware of this predefined well-known location.
+-   The firmware binaries are located in the driverstore directory, a path determined by the operating system and referenced in the INF using DIRID 13. The binaries cannot be not be executable files containing PE/COFF headers.
+-   `%13%\<UniqueBinaryName>.bin`
+-   The INF file stores this location in the registry and the UMDF driver reads the registry value to discover the binary location.
 -   The sample INF template below has highlighted items that need to be filled by the IHV.
 
 ```cpp
@@ -66,10 +66,16 @@ PnpLockdown     = 1
 
 [Firmware.NTx86]
 %DeviceDesc%    = Firmware_Install,MBFW\{FirmwareID}    ; From Device Service
-;eg.%DeviceDesc%=Firmware_Install,MBFW\{2B13DD42-649C-3442-9E08-D85B26D7825C}
+;%DeviceDesc%    = Firmware_Install,MBFW\{2B13DD42-649C-3442-9E08-D85B26D7825C}
 
 [Firmware_Install.NT]
 CopyFiles       = FirmwareDriver_CopyFiles,FirmwareImage_CopyFiles
+
+[Firmware_Install.NT.HW]
+AddReg          = Device_AddReg
+
+[Device_AddReg]
+HKR,,FirmwareBinary,,"%13%\MBIHVFirmware-XYZ-1.0.bin"
 
 [Firmware_Install.NT.Services]
 AddService      = WUDFRd,0x000001fa,WUDFRD_ServiceInstall
@@ -92,7 +98,6 @@ HKR,,CoInstallers32,0x00010000,"WUDFCoinstaller.dll"
 UmdfService      = MBIHVFirmwareDriver,MBIHVFirmwareDriver_Install
 UmdfServiceOrder = MBIHVFirmwareDriver
 
-
 [MBIHVFirmwareDriver_Install]
 UmdfLibraryVersion  = 1.11
 ServiceBinary       = %12%\UMDF\MBFWDriver.dll
@@ -105,8 +110,8 @@ MBIHVFirmware-XYZ-1.0.bin   ; Firmware Image
 MBFWDriver.dll          ; UMDF driver for SoftDevNode
 
 [DestinationDirs]
-FirmwareImage_CopyFiles  = 10,Firmware\MBIHV ; %SystemRoot%\Firmware\MBIHV
-FirmwareDriver_CopyFiles = 12,UMDF     ;%SystemRoot%\System32\drivers\UMDF
+FirmwareImage_CopyFiles  = 13      ; Driver Store
+FirmwareDriver_CopyFiles = 12,UMDF ;%SystemRoot%\System32\drivers\UMDF
 
 [SourceDisksFiles]
 MBIHVFirmware-XYZ-1.0.bin = 1

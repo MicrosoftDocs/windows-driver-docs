@@ -20,7 +20,7 @@ To set single transfer for a single transaction, use the following sequence:
     If initialization fails due to transaction fragmentation, a driver can fail the I/O request or it can rearrange the transaction's memory buffers and reinitialize the transaction.
 4. Call [**WdfDmaTransactionExecute**](/windows-hardware/drivers/ddi/wdfdmatransaction/nf-wdfdmatransaction-wdfdmatransactionexecute).
 
-When debugging your driver, you can use the [**!wdfkd.wdfdmatransaction**](../debugger/-wdfkd-wdfdmatransaction.md) extension to determine if single transfer is set for a given transaction object.
+When debugging your driver, you can use the [**!wdfkd.wdfdmatransaction**](../debuggercmds/-wdfkd-wdfdmatransaction.md) extension to determine if single transfer is set for a given transaction object.
 
 ## Setting the single-transfer requirement for all DMA transactions created with a particular DMA enabler
 
@@ -30,6 +30,6 @@ A driver that uses this flag does not need to call [**WdfDmaTransactionSetSingle
 
 This setting also persists if the driver [reuses the transaction object](reusing-dma-transaction-objects.md).
 
-When debugging, use the [**!wdfkd.wdfdmaenabler**](../debugger/-wdfkd-wdfdmaenabler.md) extension to determine if single transfer is set for a given DMA enabler object.
+When debugging, use the [**!wdfkd.wdfdmaenabler**](../debuggercmds/-wdfkd-wdfdmaenabler.md) extension to determine if single transfer is set for a given DMA enabler object.
 
 For information about the order in which WDF calls your driver's DMA event callback functions, see [Handling I/O Requests in a KMDF Driver for a Bus-Master DMA Device](handling-i-o-requests-in-a-kmdf-driver-for-a-bus-master-dma-device.md).

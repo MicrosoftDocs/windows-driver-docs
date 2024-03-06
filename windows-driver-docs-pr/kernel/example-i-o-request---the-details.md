@@ -1,5 +1,5 @@
 ---
-title: Example I/O Request - The Details
+title: Example I/O Request - the Details
 description: Example I/O Request - The Details
 keywords: ["I/O stack locations WDK kernel", "layered driver IRP processing WDK kernel", "stack locations WDK kernel"]
 ms.date: 06/16/2017

@@ -20,7 +20,7 @@ ms.date: 04/20/2017
 
 The following figure shows an overview of how the Windows Sockets switch sets a SAN socket to acknowledge and queue--that is, listen for--incoming connection requests from a remote peer. The topics that follow describe the listening process in more detail.
 
-![diagram overview of how the windows sockets switch sets a san socket to acknowledge and queue incoming connection requests from a remote peer.](images/apiflow4.png)
+:::image type="content" source="images/apiflow4.png" alt-text="Diagram showing the process of Windows Sockets switch setting a SAN socket to acknowledge and queue incoming connection requests from a remote peer.":::
 
 When the Windows Sockets switch receives a **WSPListen** call that was initiated by an application, the switch always calls the TCP/IP provider's **WSPListen** function first to set the TCP/IP provider's socket to acknowledge and queue incoming connection requests. If the application's socket is bound to the IP address of a SAN NIC or to the wildcard IP address, the switch also uses the appropriate SAN service provider to create and bind an additional socket. For more information, see [Creating and Binding SAN Sockets](creating-and-binding-san-sockets.md).
 

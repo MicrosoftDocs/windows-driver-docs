@@ -1,5 +1,5 @@
 ---
-title: Review and save package in the Mobile Broadband Metadata Authoring Wizard
+title: Review and Save Package in the Mobile Broadband Metadata Authoring Wizard
 description: Review and save package in the Mobile Broadband Metadata Authoring Wizard
 keywords:
 - Review and save package in the Mobile Broadband Metadata Authoring Wizard
@@ -26,12 +26,4 @@ After completing all of the tabs in the wizard, review and save your package.
 2.  Next to **Folder location**, confirm the location on your computer for the saved package, or click **Change** to change it.
 3.  If you want to test the package on your PC, select **Copy packages to your system's local metadata store**.
 4.  Click **Finish**.
-
- 
-
- 
-
-
-
-
 

@@ -1,7 +1,7 @@
 ---
-title: PropVariant helpers
+title: PropVariant Helpers
 description: The PropVariant helper functions are used by the v2 sensor drivers for manipulating the PROPVARIANT structures associated with the sensors.
-ms.date: 03/02/2023
+ms.date: 01/11/2024
 ms.topic: reference
 ---
 

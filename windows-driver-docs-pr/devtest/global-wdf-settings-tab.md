@@ -9,12 +9,11 @@ ms.date: 04/20/2017
 
 # Global WDF Settings Tab
 
-
 This topic provides detailed information about WDF Verifier's **Global WDF Settings** page. This page presents global (system-wide) WDF verification options, and shows UMDF host processes with hosted drivers.
 
 At the top, you'll see the **Loader Diagnostic Output Control** box. Here, you can specify whether you want to see diagnostic messages from the KMDF and UMDF 2.0 loaders. These are global options that set the diagnostic (DbgPrint enable) flags for the respective loaders.
 
-![screen grab of global wdf settings tab.](images/wdfverifier-tab3.png)
+:::image type="content" source="images/wdfverifier-tab3.png" alt-text="Screenshot of the Global WDF Settings tab in WDF Verifier.":::
 
 You can also choose if you want to see loader diagnostic messages in the kernel debugger.
 
@@ -33,6 +32,3 @@ When you make changes to the UMDF Verifier settings, these changes affect subseq
 3.  Select **Automatically launch user-mode debugger when requested**, and click **Apply**.
 4.  Leave WDF Verifier running. When a new host process starts, WDF Verifier attaches your preferred debugger to the process.
 5.  If your driver is already running, change the tracing level or select **Send Log Output to Kernel Debugger** and click **Apply**. Doing so stops and restarts all UMDF processes unless you have turned off the auto-restart feature (you can restore it on the [My Preferences](my-preferences-tab.md) page).
-
- 
-

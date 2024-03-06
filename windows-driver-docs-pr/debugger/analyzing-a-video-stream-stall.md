@@ -21,8 +21,3 @@ This section shows how to analyze a video stream stall. All sample output is gen
  
 
  
-
-
-
-
-

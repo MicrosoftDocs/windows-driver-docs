@@ -27,7 +27,7 @@ NDIS Poll Mode is available to NDIS 6.85 and later miniport drivers.
 
 The following sequence diagram illustrates a typical example of how an NDIS miniport driver handles a burst of Rx packets using a DPC. In this example the hardware is standard in terms of PCIe NICs. It has a receive hardware queue and an interrupt mask for that queue. 
 
-:::image type="content" source="./images/ndis-traditional-dpc-diagram.png" alt-text="Diagram illustrating the NDIS DPC model.":::
+:::image type="content" source="./images/ndis-traditional-dpc-diagram.png" alt-text="Diagram showing the NDIS DPC model with Rx packets and a receive hardware queue.":::
 
 When there's no network activity the hardware has the Rx interrupt enabled. When an Rx packet arrives:
 1. The hardware generates an interrupt and NDIS calls the driver’s [*MiniportInterrupt*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_isr) function (ISR).
@@ -64,7 +64,7 @@ A Poll object offers the following:
 
 The following sequence diagram illustrates how the same hypothetical PCIe NIC driver handles a burst of Rx packets using a Poll object instead of a DPC. 
 
-:::image type="content" source="./images/ndis-poll-mode-sequence-diagram.png" alt-text="Diagram illustrating NDIS Poll Mode.":::
+:::image type="content" source="./images/ndis-poll-mode-sequence-diagram.png" alt-text="Diagram showing NDIS Poll Mode with Rx packets and a receive hardware queue.":::
 
 Like the DPC model, when an Rx packet arrives the hardware generates an interrupt, NDIS calls the driver’s ISR, and the driver disables the interrupt from the ISR. At this point the Poll Mode model diverges:
 
@@ -75,6 +75,35 @@ Like the DPC model, when an Rx packet arrives the hardware generates an interrup
     Once the driver fetches up to the maximum number of Rx packets it should initialize NBLs, add them to the NBL queue provided by the poll handler, and exit the callback. The driver shouldn't enable the interrupt before exiting.
 
 1. NDIS continues to poll the driver until it assesses that the driver is no longer making forward progress. At this point NDIS will stop polling and ask the driver to [re-enable the interrupt](#managing-interrupts).
+
+## Standardized INF keyword for NDIS Poll Mode
+
+The following keyword must be used to enable or disable support for NDIS Poll Mode:
+
+**\*NdisPoll**
+Enumeration standardized INF keywords have the following attributes:
+
+SubkeyName  
+The name of the keyword that you must specify in the INF file and that appears in the registry.
+
+ParamDesc  
+The display text that is associated with SubkeyName.
+
+Value  
+The enumeration integer value that is associated with each option in the list. This value is stored in NDI\\params\\ *SubkeyName*\\*Value*.
+
+EnumDesc  
+The display text that is associated with each value that appears in the menu.
+
+Default  
+The default value for the menu.
+
+|SubkeyName|ParamDesc|Value|EnumDesc|
+|--- |--- |--- |--- |
+|**\*NdisPoll**|Ndis Poll Mode|0|Disabled|
+|||1 (Default)|Enabled|
+
+For more information about using enumeration keywords, see [Enumeration Keywords](enumeration-keywords.md).
 
 ## Creating a Poll object
 

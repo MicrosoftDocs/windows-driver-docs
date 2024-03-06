@@ -1,5 +1,5 @@
 ---
-title: APN schema definition
+title: APN Schema Definition
 description: APN schema definition
 ms.date: 04/20/2017
 ---

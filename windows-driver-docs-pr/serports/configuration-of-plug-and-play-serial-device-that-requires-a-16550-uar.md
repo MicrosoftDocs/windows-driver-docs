@@ -24,6 +24,6 @@ An example is a PCMCIA card with a modem.
 
 The following diagram shows the typical configuration for a sample toaster device and a sample blender device that require a 16550 UART-compatible interface.
 
-![left figure: hardware configuration for a plug and play toaster device on a pcmcia card. right figure: configuration of drivers and device stacks for a plug and play toaster device on a pcmcia card.](images/ser3.png)
+:::image type="content" source="images/ser3.png" alt-text="Diagram showing hardware configuration for a Plug and Play toaster device on a PCMCIA card (left) and configuration of drivers and device stacks for the same device (right).":::
 
 In these configurations, the Toaster device is a child device on a PCMCIA bus. The PCMCIA bus driver creates a PDO for the Toaster device when it enumerates the PCMCIA card. The INF file for the Toaster device specifies Serial as a lower-level device filter driver. Serial provides a 16550 UART-compatible interface to the hardware device. The Toaster driver creates and attaches an FDO to the Toaster device stack.

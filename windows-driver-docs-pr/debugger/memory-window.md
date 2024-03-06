@@ -11,15 +11,15 @@ In WinDbg, you can view and edit memory by entering commands or by using a Memor
 
 ## Debugger Command Window
 
-You can view memory by entering one of the [**Display Memory**](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) commands in the Debugger Command window. You can edit memory by entering one of the [**Enter Values**](e--ea--eb--ed--ed--ef--ep--eq--eu--ew--eza--ezu--enter-values-.md) commands in the Debugger Command window. For more information, see [Accessing Memory by Virtual Address](accessing-memory-by-virtual-address.md) and [Accessing Memory by Physical Address](accessing-memory-by-physical-address.md).
+You can view memory by entering one of the [**Display Memory**](../debuggercmds/d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) commands in the Debugger Command window. You can edit memory by entering one of the [**Enter Values**](../debuggercmds/e--ea--eb--ed--ed--ef--ep--eq--eu--ew--eza--ezu--enter-values-.md) commands in the Debugger Command window. For more information, see [Accessing Memory by Virtual Address](accessing-memory-by-virtual-address.md) and [Accessing Memory by Physical Address](accessing-memory-by-physical-address.md).
 
 ## Opening a Memory Window
 
-To open a Memory window, choose **Memory** from the **View** menu. (You can also press ALT+5 or select the **Memory** button (![screen shot of the memory button.](images/tbmem.png)) on the toolbar. ALT+SHIFT+5 closes the active Memory window.)
+To open a Memory window, choose **Memory** from the **View** menu. (You can also press ALT+5 or select the **Memory** button (:::image type="content" source="images/tbmem.png" alt-text="Screenshot of the Memory button in WinDbg.":::
 
 The following screen shot shows an example of a Memory window.
 
-![screen shot of the memory window.](images/window-memory.png)
+:::image type="content" source="images/window-memory.png" alt-text="Screenshot of an example Memory window in WinDbg.":::
 
 ## Using a Memory Window
 
@@ -37,11 +37,11 @@ In the Memory window, you can do the following:
 
 - To change the memory location that is being viewed, enter a new address into the address box at the top of the Memory window. Note that the Memory window refreshes its display while you enter an address, so you could get error messages before you have completed typing the address.
 
-    **Note**   The address that you enter into the box is interpreted in the current radix. If the current radix is not 16, you should prefix a hexadecimal address with **0x**. To change the default radix, use the [**n (Set Number Base)**](n--set-number-base-.md) command in the Debugger Command window. The display within the Memory window itself is not affected by the current radix.
+    **Note**   The address that you enter into the box is interpreted in the current radix. If the current radix is not 16, you should prefix a hexadecimal address with **0x**. To change the default radix, use the [**n (Set Number Base)**](../debuggercmds/n--set-number-base-.md) command in the Debugger Command window. The display within the Memory window itself is not affected by the current radix.
 
 - To change the data type that the window uses to display memory, use the **Display format** menu in the Memory window toolbar. Supported data types include short words, double words, and quad-words; short, long, and quad integers and unsigned integers; 10-byte, 16-byte, 32-bit, and 64-bit real numbers; ASCII characters; Unicode characters; and hexadecimal bytes. The display of hexadecimal bytes includes ASCII characters as well.
 
-The Memory window has a toolbar that contains two buttons, a menu, and a box and has a shortcut menu with additional commands. To access the menu, select and hold (or right-click) the title bar or select the icon near the upper-right corner of the window (![screen shot of the button that displays the memory window toolbar shortcut menu.](images/tbmem.png)). The toolbar and shortcut menu contain the following choices:
+The Memory window has a toolbar that contains two buttons, a menu, and a box and has a shortcut menu with additional commands. To access the menu, select and hold (or right-click) the title bar or select the icon near the upper-right corner of the window on the toolbar. ALT+SHIFT+5 closes the active Memory window.
 
 - (Toolbar only) The address box enables you to specify a new address or offset. The exact meaning of this box depends on the memory type you are viewing. For example, if you are viewing virtual memory, the box enables you to specify a new virtual address or offset.
 
@@ -83,7 +83,7 @@ Each tab enables you to specify the memory that you want to display:
 
 - In the **Virtual Memory** tab, in the **Offset** box, specify the address or offset of the beginning of the memory range that you want to view.
 
-- In the **Physical Memory** tab, in the **Offset** box, specify the physical address of the beginning of the memory range that you want to view. The Memory window can display only described, cacheable physical memory. If you want to display physical memory that has other attributes, use the [**d\* (Display Memory)**](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) command or the [**!d\\***](-db---dc---dd---dp---dq---du---dw.md) extension.
+- In the **Physical Memory** tab, in the **Offset** box, specify the physical address of the beginning of the memory range that you want to view. The Memory window can display only described, cacheable physical memory. If you want to display physical memory that has other attributes, use the [**d\* (Display Memory)**](../debuggercmds/d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) command or the [**!d\\***](../debuggercmds/-db---dc---dd---dp---dq---du---dw.md) extension.
 
 - In the **Bus Data** tab, in the **Bus Data Type** menu, specify the bus data type. Then, use the **Bus number**, **Slot number**, and **Offset** boxes to specify the bus data that you want to view.
 

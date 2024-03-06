@@ -1,5 +1,5 @@
 ---
-title: Link collections
+title: Link Collections
 description: Link collections
 keywords:
 - link collections WDK HID
@@ -8,7 +8,7 @@ keywords:
 - aliased collections WDK HID
 - link collection nodes WDK HID
 - arrays WDK HID
-ms.date: 10/11/2022
+ms.date: 01/11/2024
 ---
 
 # Link collections

@@ -26,8 +26,3 @@ There are several ways to filter out function calls in LogViewer:
  
 
  
-
-
-
-
-

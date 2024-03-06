@@ -34,8 +34,3 @@ To determine whether full or standard page heap verification is enabled for a pr
  
 
  
-
-
-
-
-

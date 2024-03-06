@@ -35,8 +35,3 @@ walk.cmd c:\symbols\*.pdb srctool.exe -x
  
 
  
-
-
-
-
-

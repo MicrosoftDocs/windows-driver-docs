@@ -1,5 +1,5 @@
 ---
-title: RDF_IOCTL_VENDOR callback function
+title: RDF_IOCTL_VENDOR Callback Function
 description: RDF_IOCTL_VENDOR callback function
 keywords:
 - vendor-supplied drivers RDF callback functions

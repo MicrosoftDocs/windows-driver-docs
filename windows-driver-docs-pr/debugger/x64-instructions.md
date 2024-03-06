@@ -156,8 +156,3 @@ Two SSE instructions can be used to move 128-bit values (such as GUIDs) from mem
  
 
  
-
-
-
-
-

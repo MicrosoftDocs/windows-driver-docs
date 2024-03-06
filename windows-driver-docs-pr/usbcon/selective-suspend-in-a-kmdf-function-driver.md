@@ -1,7 +1,7 @@
 ---
-title: Selective suspend in USB KMDF function drivers
+title: Selective Suspend in USB KMDF Function Drivers
 description: This article describes how KMDF function drivers support USB selective suspend.
-ms.date: 02/23/2023
+ms.date: 01/17/2024
 ---
 
 # Selective suspend in USB KMDF function drivers

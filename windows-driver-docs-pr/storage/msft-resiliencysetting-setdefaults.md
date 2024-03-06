@@ -1,5 +1,5 @@
 ---
-title: SetDefaults method of the MSFT\_ResiliencySetting class
+title: SetDefaults Method of the MSFT_ResiliencySetting Class
 description: Allows a user to modify the default property values of the MSFT\_ResiliencySetting object.
 ms.assetid: E568F70B-3492-4D17-BF77-657E091046C6
 keywords:

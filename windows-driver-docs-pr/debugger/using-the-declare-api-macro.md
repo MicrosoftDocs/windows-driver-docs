@@ -43,8 +43,3 @@ If you are using 32-bit pointers, DECLARE\_API remains the same, except that **d
  
 
  
-
-
-
-
-

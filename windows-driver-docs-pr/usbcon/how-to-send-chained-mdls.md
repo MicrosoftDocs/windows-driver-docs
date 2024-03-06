@@ -1,12 +1,12 @@
 ---
-description: Learn about the chained MDLs capability in the USB driver stack, and how a client driver can send a transfer buffer as a chain of MDL structure.
-title: How to send chained MDLs
-ms.date: 09/21/2021
+title: How to Send Chained MDL Structures
+description: This article describes chained MDLs capability in the USB driver stack, and how a client driver can send a transfer buffer as a chain of MDL structures.
+ms.date: 01/16/2024
 ---
 
-# How to send chained MDLs
+# How to send chained MDL structures
 
-In this topic, you will learn about the chained MDLs capability in the USB driver stack, and how a client driver can send a transfer buffer as a chain of [MDL](/windows-hardware/drivers/ddi/wdm/ns-wdm-_mdl) structure.
+This article describes the chained MDLs capability in the USB driver stack, and how a client driver can send a transfer buffer as a chain of **[MDL](/windows-hardware/drivers/ddi/wdm/ns-wdm-_mdl)** structures.
 
 Most USB host controllers require the transfer buffer to be virtually contiguous. Virtually contiguous means that the buffer can start and end anywhere in a page but the rest of the buffer must start and end on a page boundary. Many USB client drivers are able to meet that requirement. However, for certain client drivers, particularly those that need to add or remove additional data to or from the buffer, allocating virtually contiguous memory for the transfer buffer is not preferable.
 
@@ -16,35 +16,37 @@ The client driver can overcome that performance impact by sending the transfer b
 
 In order to use chained MDLs, the client driver must detect whether the underlying USB driver stack, loaded by Windows, supports the capability and then build a chain of MDLs in a proper order.
 
-## Prerequisites
+## Before you start
 
-The chained MDL capability is only supported for bulk, isochronous, and interrupt transfers. Before you query for the chained MDL capability, make sure that your client driver has a USBD handle for the driver's registration with the USB driver stack. To create a USBD handle, call [USBD_CreateHandle](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_createhandle).Typically, the client driver creates the USBD handle in its [AddDevice](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine.
+The chained MDL capability is only supported for bulk, isochronous, and interrupt transfers. Before you query for the chained MDL capability, make sure that your client driver has a USBD handle for the driver's registration with the USB driver stack. To create a USBD handle, call **[USBD_CreateHandle](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_createhandle)**.Typically, the client driver creates the USBD handle in its **[AddDevice](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device)** routine.
 
-You can query for the chained MDL capability in the client driver's [IRP_MN_START_DEVICE](../kernel/irp-mn-start-device.md) handler or anytime later. The client driver must not query for this capability in its [AddDevice](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine.
+You can query for the chained MDL capability in the client driver's [IRP_MN_START_DEVICE](../kernel/irp-mn-start-device.md) handler or anytime later. The client driver must not query for this capability in its **[AddDevice](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device)** routine.
 
 ## Instructions
 
-1. Call the [USBD_QueryUsbCapability](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_queryusbcapability) routine to determine whether the USB driver stack supports the chained MDLs capability. To query for that capability, specify UsbCapabilityChainedMdls as the GUID. Set the *OutputBuffer* parameter to NULL and *OutputBufferSize* parameter to 0.
-1. Check the NTSTATUS value returned by [USBD_QueryUsbCapability](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_queryusbcapability) and evaluate the result. If the routine completes successfully, the chained MDLs capability is supported. Any other value indicates that the capability is not supported.
-1. Create the chain of MDLs. Each [MDL](/windows-hardware/drivers/ddi/wdm/ns-wdm-_mdl) has a **Next** pointer that points to another **MDL**.
+1. Call the **[USBD_QueryUsbCapability](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_queryusbcapability)** routine to determine whether the USB driver stack supports the chained MDLs capability. To query for that capability, specify UsbCapabilityChainedMdls as the GUID. Set the *OutputBuffer* parameter to NULL and *OutputBufferSize* parameter to 0.
+
+1. Check the NTSTATUS value returned by **[USBD_QueryUsbCapability](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_queryusbcapability)** and evaluate the result. If the routine completes successfully, the chained MDLs capability is supported. Any other value indicates that the capability is not supported.
+
+1. Create the chain of MDLs. Each **[MDL](/windows-hardware/drivers/ddi/wdm/ns-wdm-_mdl)** has a **Next** pointer that points to another **MDL**.
 
     The driver can build a chain MDL by manually setting the **Next** pointer.
 
-    In the preceding example, the protocol driver sends the packet as an MDL. The intermediate driver can create another [MDL](/windows-hardware/drivers/ddi/wdm/ns-wdm-_mdl) that references the block of memory with the header data. To create a chain, the intermediate driver can point the header MDL's **Next** pointer to the MDL received from the protocol driver. The intermediate driver can then forward the chain of two MDLs to the miniport driver, which supplies a reference to the chained MDL in the URB for the request and submits the request to the USB driver stack. For more information, see [Using MDLs](../kernel/using-mdls.md).
+    In the preceding example, the protocol driver sends the packet as an MDL. The intermediate driver can create another **[MDL](/windows-hardware/drivers/ddi/wdm/ns-wdm-_mdl)** that references the block of memory with the header data. To create a chain, the intermediate driver can point the header MDL's **Next** pointer to the MDL received from the protocol driver. The intermediate driver can then forward the chain of two MDLs to the miniport driver, which supplies a reference to the chained MDL in the URB for the request and submits the request to the USB driver stack. For more information, see [Using MDLs](../kernel/using-mdls.md).
 
-1. While building an URB for an I/O request that uses chained MDLs, set the **TransferBufferMDL** member of the associated [URB](/windows-hardware/drivers/ddi/usb/ns-usb-_urb) structure (such as [_URB_BULK_OR_INTERRUPT_TRANSFER](/windows-hardware/drivers/ddi/usb/ns-usb-_urb_bulk_or_interrupt_transfer) or [_URB_ISOCH_TRANSFER](/windows-hardware/drivers/ddi/usb/ns-usb-_urb_isoch_transfer)) to the first MDL in the chain, and set the **TransferBufferLength** to the total number of bytes to transfer. The data may span more than one MDL entry in the MDL chain.
+1. While building an URB for an I/O request that uses chained MDLs, set the **TransferBufferMDL** member of the associated **[URB](/windows-hardware/drivers/ddi/usb/ns-usb-_urb)** structure (such as **[_URB_BULK_OR_INTERRUPT_TRANSFER](/windows-hardware/drivers/ddi/usb/ns-usb-_urb_bulk_or_interrupt_transfer)** or **[_URB_ISOCH_TRANSFER](/windows-hardware/drivers/ddi/usb/ns-usb-_urb_isoch_transfer)**) to the first MDL in the chain, and set the **TransferBufferLength** to the total number of bytes to transfer. The data may span more than one MDL entry in the MDL chain.
 
    In Windows 8, two new types of URB functions have been added that enable a client driver to use chained MDLs for data transfers. If you want to use this capability, make sure that set the **Function** member of the URB header is set to one of following URB functions:
 
-   * URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER_USING_CHAINED_MDL
-   * URB_FUNCTION_ISOCH_TRANSFER_USING_CHAINED_MDL
+   - URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER_USING_CHAINED_MDL
+   - URB_FUNCTION_ISOCH_TRANSFER_USING_CHAINED_MDL
 
-   For information about those URB functions, see [_URB_HEADER](/windows-hardware/drivers/ddi/usb/ns-usb-_urb_header).
+   For information about those URB functions, see **[_URB_HEADER](/windows-hardware/drivers/ddi/usb/ns-usb-_urb_header)**.
 
 ## Remarks
 
-For code example that queries the underlying USB driver stack to determine whether the driver stack can accept chained MDLs, see [USBD_QueryUsbCapability](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_queryusbcapability).
+For code example that queries the underlying USB driver stack to determine whether the driver stack can accept chained MDLs, see **[USBD_QueryUsbCapability](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_queryusbcapability)**.
 
 ## Related topics
 
-[USB I/O Operations](usb-device-i-o.md)
+- [USB I/O Operations](usb-device-i-o.md)

@@ -1,5 +1,5 @@
 ---
-title: SM\_SetRNIDMgmtInfo function
+title: SM_SetRNIDMgmtInfo Function
 description: The SM\_SetRNIDMgmtInfo WMI method sets FC3 management information that is associated with a fibre channel adapter.
 keywords: ["SM_SetRNIDMgmtInfo function Storage Devices"]
 topic_type:

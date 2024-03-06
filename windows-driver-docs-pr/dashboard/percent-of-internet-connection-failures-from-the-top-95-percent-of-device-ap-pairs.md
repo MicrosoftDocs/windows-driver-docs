@@ -20,7 +20,7 @@ After a device connects to an access point (AP), it can use that connection to a
 | **Measurement criteria** | Device / AP pair aggregation  |
 | **Minimum instances** | 1,000 |
 | **Passing criteria** | <= 6% of Instances have connection failures to internet via Wi-Fi |
-| **Measure ID** | 32321427 (Legacy), 40722956 |
+| **Measure ID** | 40722956 |
 
 ## Calculation
 

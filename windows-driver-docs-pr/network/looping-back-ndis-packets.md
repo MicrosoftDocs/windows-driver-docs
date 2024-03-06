@@ -48,7 +48,7 @@ A protocol binding will not receive loopback packets if either of the following 
 
 The following figure shows the loopback algorithm logic flow.
 
-![flowchart illustrating the loopback algorithm logic flow.](images/loopback.png)
+:::image type="content" source="images/loopback.png" alt-text="Flowchart that shows the loopback algorithm logic flow.":::
 
  
 

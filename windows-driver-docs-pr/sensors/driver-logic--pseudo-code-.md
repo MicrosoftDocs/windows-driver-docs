@@ -1,7 +1,7 @@
 ---
-title: Sensor driver logic
+title: Sensor Driver Logic
 description: This section describes key driver logic, or tasks, as pseudocode.
-ms.date: 04/20/2017
+ms.date: 01/11/2024
 ---
 
 # Sensor driver logic
@@ -146,4 +146,4 @@ enum deviceState
 
 ## Related topics
 
-[Introduction to the Sensor and Location Platform in Windows](./index.md)
+- [Introduction to the Sensor and Location Platform in Windows](./index.md)

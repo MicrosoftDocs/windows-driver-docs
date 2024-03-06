@@ -14,8 +14,8 @@ Beginning with Windows 8, you can develop, build, and debug both kernel-mode an
 
 Two new sets of debugger extension commands are included:
 
--   [USB 3.0 Extensions](usb-3-extensions.md)
--   [RCDRKD Extensions](rcdrkd-extensions.md)
+-   [USB 3.0 Extensions](../debuggercmds/usb-3-extensions.md)
+-   [RCDRKD Extensions](../debuggercmds/rcdrkd-extensions.md)
 
 In addition to Visual Studio, you can sse the Windows debugger to debug Windows apps. The Debugging Tools for Windows package includes, [**PLMDebug.exe**](plmdebug.md), that enables you to take manual control of suspending, resuming, debugging, and terminating Windows app.
 

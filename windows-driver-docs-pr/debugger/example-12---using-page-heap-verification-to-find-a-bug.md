@@ -171,8 +171,3 @@ A quick inspection reveals the cause of the problem: The program tries to write 
  
 
  
-
-
-
-
-

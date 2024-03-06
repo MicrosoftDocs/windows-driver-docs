@@ -35,7 +35,7 @@ When an extension is bound and enabled on an extensible switch instance, it can 
 
 The following diagram shows the various states for the extensible switch port and network adapter connection components. The diagram also shows the OID set requests that cause the state transition for the component.
 
-![flowchart showing the oid set requests that cause the state transition for the component.](images/vswitchstate.png)
+:::image type="content" source="images/vswitchstate.png" alt-text="Flowchart illustrating the OID set requests causing state transitions for Hyper-V extensible switch port and network adapter components.":::
 
 The following list describes the various states of the extensible switch port and network adapter connection components:
 

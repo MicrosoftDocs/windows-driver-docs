@@ -1,7 +1,7 @@
 ---
-title: USB client driver verifier
+title: USB Client Driver Verifier
 description: This article describes the USB client driver verifier feature of the USB 3.0 driver stack that enables the client driver to test certain failure cases.
-ms.date: 02/01/2023
+ms.date: 01/16/2024
 ---
 
 # USB client driver verifier
@@ -56,10 +56,10 @@ HKEY_LOCAL_MACHINE
                   <USB client driver verifier setting> (DWORD)
 ```
 
-The *&lt;USB client driver verifier setting&gt;* registry entry takes a DWORD value.
+The *\<USB client driver verifier setting>* registry entry takes a DWORD value.
 If you add, modify, or remove any setting, you must re-enumerate the device with the system to apply the setting.
 
-This table shows the possible values for *&lt;USB client driver verifier setting&gt;*. The settings apply to the client driver specified under the **services** key.
+This table shows the possible values for *\<USB client driver verifier setting>*. The settings apply to the client driver specified under the **services** key.
 
 | USB client driver verifier setting | Choose one of these possible values: | Use to simulate... |
 |---|---|---|

@@ -21,7 +21,7 @@ ms.date: 04/20/2017
 
 A KS filter graph is a collection of KS filters that have been connected together to process one or more data streams. An audio filter graph is a KS filter graph that consists of filters that process audio data streams. For example, the following figure is a simplified diagram of an audio filter graph that performs audio rendering and capture.
 
-![diagram illustrating a simple audio filter for rendering and capture.](images/graph.png)
+:::image type="content" source="images/graph.png" alt-text="Diagram illustrating a simple audio filter graph for rendering and capture.":::
 
 In the figure, the filter graph extends from the pins at the top of the two wave filters to the pins at the bottom of the two topology filters. The user-mode software modules and external audio devices (that is, the speaker and microphone) lie outside the graph.
 

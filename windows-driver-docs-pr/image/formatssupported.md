@@ -1,5 +1,5 @@
 ---
-title: FormatsSupported element
+title: FormatsSupported Element
 description: The required FormatsSupported element is a collection of elements that list the document file formats that the scanner supports.
 keywords: ["FormatsSupported element Imaging Devices"]
 topic_type:

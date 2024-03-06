@@ -1,5 +1,5 @@
 ---
-title: Security checks on IRP_MJ_FILE_SYSTEM_CONTROL
+title: Security Checks on IRP_MJ_FILE_SYSTEM_CONTROL
 description: Describes how a file system does security checks on IRP_MJ_FILE_SYSTEM_CONTROL
 keywords:
 - IRP_MJ_FILE_SYSTEM_CONTROL

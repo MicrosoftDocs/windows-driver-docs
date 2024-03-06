@@ -30,8 +30,3 @@ All additional manifest files must reside in the same directory as Main.h.
  
 
  
-
-
-
-
-

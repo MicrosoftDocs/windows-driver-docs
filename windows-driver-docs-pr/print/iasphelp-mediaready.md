@@ -1,5 +1,5 @@
 ---
-title: Iasphelp getMediaReady method
+title: Iasphelp getMediaReady Method
 description: The MediaReady property enables an ASP Web page to obtain a set of strings that name all of the paper forms for the printer that are currently available for use.
 MS-HAID:
 - 'webfncb10e8434-7e12-4bb5-8c43-77cb890f72a8.xml'

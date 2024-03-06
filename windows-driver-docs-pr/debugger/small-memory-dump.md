@@ -51,9 +51,3 @@ If a second bug check occurs and a second Small Memory Dump file is created, the
  
 
  
-
-
-
-
-
-

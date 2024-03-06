@@ -34,9 +34,9 @@ For example, **ObReferenceObjectWithTag** and **ObDereferenceObjectWithTag**, wh
 
 To track down a potential object leak or under-reference, identify a set of associated **ObReferenceObject*Xxx*WithTag** and **ObDereferenceObject*Xxx*WithTag** calls in your driver that increment and decrement the reference count of a particular object. Choose a common tag value (for example, "Lky8") to use for all the calls in this set. After your driver finishes using an object, the number of decrements should match the number of increments exactly. If these numbers don't match, your driver has an object reference bug. The debugger can compare the number of increments and decrements for each tag value and tell you if they don't match. With this capability, you can quickly pinpoint the source of the reference-count mismatch.
 
-To view an object reference trace in the Windows debugging tools, use the [!obtrace](../debugger/-obtrace.md) kernel-mode debugger extension. If object reference tracing is on, you can use the [!obtrace](../debugger/-obtrace.md) extension to display object reference tags. By default, object reference tracing is off. Use the [Global Flags Editor](https://go.microsoft.com/fwlink/p/?linkid=153601) (Gflags) to enable object reference tracing. For more information about Gflags, see [Configuring Object Reference Tracing](../debugger/configuring-object-reference-tracing.md).
+To view an object reference trace in the Windows debugging tools, use the [!obtrace](../debuggercmds/-obtrace.md) kernel-mode debugger extension. If object reference tracing is on, you can use the [!obtrace](../debuggercmds/-obtrace.md) extension to display object reference tags. By default, object reference tracing is off. Use the [Global Flags Editor](https://go.microsoft.com/fwlink/p/?linkid=153601) (Gflags) to enable object reference tracing. For more information about Gflags, see [Configuring Object Reference Tracing](../debugger/configuring-object-reference-tracing.md).
 
-The output of the [!obtrace](../debugger/-obtrace.md) extension includes a "Tag" column, as the following example shows:
+The output of the [!obtrace](../debuggercmds/-obtrace.md) extension includes a "Tag" column, as the following example shows:
 
 ```cpp
 0: kd> !obtrace 0x8a226130
@@ -79,7 +79,7 @@ Tag: Lky8 References: 1 Dereferences: 0 Over reference by: 1
 
 The last line in this example indicates that the reference and dereference counts that are associated with the "Lky8" tag do not match and that the result of this mismatch is an over-reference by one (that is, a leak).
 
-If the result were instead an under-reference, the last line of the [!obtrace](../debugger/-obtrace.md) output might be as follows:
+If the result were instead an under-reference, the last line of the [!obtrace](../debuggercmds/-obtrace.md) output might be as follows:
 
 ```cpp
 Tag: Lky8 References: 1 Dereferences: 2 Under reference by: 1
@@ -87,4 +87,4 @@ Tag: Lky8 References: 1 Dereferences: 2 Under reference by: 1
 
 By default, the operating system conserves memory by deleting the object reference trace for an object after it frees the object. Keeping a trace in memory even after the system frees an object can be handy when tracking down an under-reference. For this purpose, the Gflags tool provides a "Permanent" option, which preserves the trace in memory while the computer shuts down and starts again.
 
-Windows XP introduced object reference tracing. Because initially the trace didn't include tags, developers had to use less convenient techniques to identify object reference bugs. The debugger could track the references of groups of objects, which the developer selected by object type. The only way that the developer could identify the various sources of object references and dereferences was to compare their call stacks. Although the previous [!obtrace](../debugger/-obtrace.md) example contains only five stacks, certain types of object, such as a process ([**EPROCESS**](eprocess.md)) object, might be referenced and dereferenced many thousands of times. With thousands of stacks to inspect, it might be difficult to identify the source of an object leak or under-reference without using tags.
+Windows XP introduced object reference tracing. Because initially the trace didn't include tags, developers had to use less convenient techniques to identify object reference bugs. The debugger could track the references of groups of objects, which the developer selected by object type. The only way that the developer could identify the various sources of object references and dereferences was to compare their call stacks. Although the previous [!obtrace](../debuggercmds/-obtrace.md) example contains only five stacks, certain types of object, such as a process ([**EPROCESS**](eprocess.md)) object, might be referenced and dereferenced many thousands of times. With thousands of stacks to inspect, it might be difficult to identify the source of an object leak or under-reference without using tags.

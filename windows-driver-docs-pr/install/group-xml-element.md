@@ -1,5 +1,5 @@
 ---
-title: group XML Element
+title: Group XML Element
 description: group XML Element
 keywords: ["group XML Element Device and Driver Installation"]
 topic_type:

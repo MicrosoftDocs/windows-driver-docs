@@ -55,7 +55,7 @@ The GPU is taking more time than permitted to display graphics to your monitor. 
   - Defective parts (memory modules, motherboards, etc.)
 - Visual effects, or too many programs running in the background may be slowing your PC down, so the video card can't respond as necessary.
 
-The [!analyze](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [!analyze](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
 ```dbgcmd
 1: kd> !analyze -v
@@ -84,7 +84,7 @@ MODULE_NAME: nvlddmkm
 IMAGE_NAME:  nvlddmkm.sys
 ```
 
-You can use the [lm (List Loaded Modules)](lm--list-loaded-modules-.md) command to display information about the faulting driver, including the timestamp.
+You can use the [lm (List Loaded Modules)](../debuggercmds/lm--list-loaded-modules-.md) command to display information about the faulting driver, including the timestamp.
 
 ```dbgcmd
 1: kd> lmvm nvlddmkm
@@ -141,7 +141,7 @@ fffff801`6470c144 48ff257d2deaff  jmp     qword ptr [nvlddmkm+0x6eeec8 (fffff801
 fffff801`6470c14b cc              int     3
 ```
 
-You may wish to examine the stack trace by using the [k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command.
+You may wish to examine the stack trace by using the [k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command.
 
 ```dbgcmd
 1: kd> k

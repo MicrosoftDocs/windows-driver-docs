@@ -1,5 +1,5 @@
 ---
-title: FLT_PARAMETERS for IRP_MJ_CREATE union
+title: FLT_PARAMETERS for IRP_MJ_CREATE Union
 description: The following union component is used when the MajorFunction field of the FLT_IO_PARAMETER_BLOCK structure for the operation is IRP_MJ_CREATE.
 keywords: ["FLT_PARAMETERS for IRP_MJ_CREATE union Installable File System Drivers", "FLT_PARAMETERS union Installable File System Drivers", "PFLT_PARAMETERS union pointer Installable File System Drivers"]
 topic_type:

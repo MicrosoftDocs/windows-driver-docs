@@ -36,7 +36,7 @@ When you write a WdbgExts extension DLL, you can export certain functions:
     }
     ```
 
--   You must export a function called [*ExtensionApiVersion*](/windows-hardware/drivers/ddi/wdbgexts/nc-wdbgexts-pwindbg_extension_api_version). The debugger calls this function and expects back a pointer to an **EXT\_API\_VERSION** structure that contains the version number of the extension DLL. The debugger uses this version number when executing commands like [**.chain**](-chain--list-debugger-extensions-.md) and [**version**](version--show-debugger-version-.md) that display the extension version number.
+-   You must export a function called [*ExtensionApiVersion*](/windows-hardware/drivers/ddi/wdbgexts/nc-wdbgexts-pwindbg_extension_api_version). The debugger calls this function and expects back a pointer to an **EXT\_API\_VERSION** structure that contains the version number of the extension DLL. The debugger uses this version number when executing commands like [**.chain**](../debuggercmds/-chain--list-debugger-extensions-.md) and [**version**](../debuggercmds/version--show-debugger-version-.md) that display the extension version number.
 
 -   You can optionally export a function called [*CheckVersion*](/windows-hardware/drivers/ddi/wdbgexts/nc-wdbgexts-pwindbg_check_version). The debugger calls this routine every time you use an extension command. You can use this to print out version mismatch warnings when your DLL is of a slightly different version than the debugger, but not different enough to prevent it from running.
 

@@ -25,10 +25,10 @@ For more information, see [Developing apps using multiple PDP contexts](../mobil
 
 ## Primary Flow
 ### App activates additional PDP contexts:
-![Flow diagram showing the App activating additional PDP contexts.](images/App_activate_additional_PDP_contexts.PNG?raw=true "App_activate_additional_PDP_contexts")
+:::image type="content" source="images/App_activate_additional_PDP_contexts.PNG?raw=true" alt-text="Diagram that shows the process of an app activating additional PDP contexts.":::
 
 ### Additional NetAdapter Initialization
-![Additional NetAdapter Initialization.](images/Additional_NetAdapter_Initialization.PNG?raw=true "Additional_NetAdapter_Initialization")
+:::image type="content" source="images/Additional_NetAdapter_Initialization.PNG?raw=true" alt-text="Diagram that illustrates the additional NetAdapter initialization process.":::
 
 
 ## Decision Logic in WwanSvc for Additional PDP Context Connections
@@ -37,7 +37,7 @@ For more information, see [Developing apps using multiple PDP contexts](../mobil
 1. WCM should no longer use the *cost* property of the default profile.
 1. If the new additional pdp context APN request coincides with the default internet APN, disconnect the current additional PDP context.
 
-![Decision Logic in WWANSVC for Connecting Additional PDP Context connection.](images/design_wwansvc_additional_pdp_contexts.png?raw=true "design_wwansvc_additional_pdp_contexts")
+:::image type="content" source="images/design_wwansvc_additional_pdp_contexts.png?raw=true" alt-text="Flowchart that demonstrates the decision logic in WWANSVC for connecting additional PDP context connections.":::
 
 
 ## Hardware Lab Kit (HLK) Tests

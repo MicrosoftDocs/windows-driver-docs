@@ -21,7 +21,7 @@ If an experienced debugging technician is present, they can attach a kernel debu
 
 However, if no technician is present, you may wish to create a kernel-mode dump file and send it to an off-site technician. This dump file can be used to analyze the cause of the error.
 
-There are two ways to deliberately cause a system crash:
+There are three ways to deliberately cause a system crash:
 
 [Forcing a System Crash from the Debugger](forcing-a-system-crash-from-the-debugger.md)
 

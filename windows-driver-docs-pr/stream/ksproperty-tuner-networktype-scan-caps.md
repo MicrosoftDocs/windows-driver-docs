@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_TUNER\_NETWORKTYPE\_SCAN\_CAPS
+title: KSPROPERTY_TUNER_NETWORKTYPE_SCAN_CAPS
 description: The KSPROPERTY\_TUNER\_NETWORKTYPE\_SCAN\_CAPS property describes the scanning capabilities of a particular broadcast network type that the tuning device supports. This property can be implemented optionally.
 keywords: ["KSPROPERTY_TUNER_NETWORKTYPE_SCAN_CAPS Streaming Media Devices"]
 topic_type:

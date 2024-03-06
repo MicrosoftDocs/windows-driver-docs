@@ -15,8 +15,3 @@ For more information, run PDBStr with the **-?** option.
  
 
  
-
-
-
-
-

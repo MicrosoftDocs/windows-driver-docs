@@ -1,14 +1,11 @@
 ---
-title: ACX audio class extensions overview
+title: ACX Audio Class Extensions Overview
 description: This topic provides a high level overview of the ACX Audio Class Extensions.
-ms.date: 04/19/2023
+ms.date: 09/29/2023
 ms.localizationpriority: medium
 ---
 
 # ACX audio class extensions overview
-
->[!IMPORTANT]
-> Some information relates to a prerelease product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 This topic provides a high level summary of the ACX Audio Class Extensions.
 
@@ -21,6 +18,9 @@ ACX is built using the Kernel Mode Driver Framework (KMDF) and not the User Mode
 The use of the ACX framework makes it easy to create working audio drivers ‘out of the box’. For example, ACX  supports default completion for most of its settings. This makes it easier for the driver to use the correct setting, yet still allows for customization.
 
 The ACX framework exposes audio concepts as WDF objects that driver can interact with (stream, format, etc.). This allows for a consistent programming experience and enables a larger community of audio driver developers.
+
+>[!NOTE]
+> The ACX headers and libraries are not included in the  WDK 10.0.22621.2428 (released October 24, 2023), but are available in previous versions, as well as the latest (25000 series builds) Insider Preview of the WDK. For more information about preview versions of the WDK, see [Installing preview versions of the Windows Driver Kit (WDK)](../installing-preview-versions-wdk.md).
 
 ### ACX goals
 
@@ -39,7 +39,7 @@ The audio class extensions (ACX) have the following goals.
 
 This diagram illustrates the ACX architecture showing existing user mode apps and ACX objects in kernel mode and audio hardware at the bottom of the stack. In addition to the ACX objects, the driver developer has access to the WDF objects to take advantage of in their driver code, for example for power management.
 
-![diagram illustrating the acx architecture showing user and kernel mode with WDF and ACX objects in kernel mode and audio hardware at the bottom of the stack.](images/audio-acx-architecture-overview.png)
+:::image type="content" source="images/audio-acx-architecture-overview.png" alt-text="Diagram illustrating the ACX architecture, showing user and kernel mode with WDF and ACX objects in kernel mode, and audio hardware at the bottom of the stack.":::
 
 ### ACX coexistance with existing audio drivers
 

@@ -1,5 +1,5 @@
 ---
-title: MSFT\_TargetPort class
+title: MSFT_TargetPort Class
 description: Represents a target port.
 ms.assetid: 00D10838-331D-4145-9040-2F96A85324EB
 keywords:

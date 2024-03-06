@@ -58,4 +58,4 @@ The ILLEGAL\_ATS\_INITIALIZATION bug check has a value of 0x000001E9. This indic
 
 ## Resolution
 
-The [**!analyze**](-analyze.md) debug extension displays information about the bugcheck and can be helpful in determining the root cause.
+The [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bugcheck and can be helpful in determining the root cause.

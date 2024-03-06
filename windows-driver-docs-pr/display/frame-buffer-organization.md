@@ -15,10 +15,6 @@ ms.date: 04/20/2017
 
 # Frame Buffer Organization
 
-
-## <span id="ddk_frame_buffer_organization_gg"></span><span id="DDK_FRAME_BUFFER_ORGANIZATION_GG"></span>
-
-
 All picture buffers are assumed to have frame-organized buffers as described in the MPEG-2 video specification (sample locations are given as frame coordinates).
 
 It is possible to use an implementation-specific translation layer to convert prediction blocks without loss (see *lossy compression*) that are described in frame coordinates to field coordinates. For example, a single frame motion prediction can be broken into two separate, top and bottom macroblock-portion predictions.
@@ -27,13 +23,4 @@ Three video component channels (Y, Cb, Cr) are decoded using interfaces defined 
 
 The following figure shows how video data buffering is implemented in the host and accelerator.
 
-![diagram illustrating video data buffering in host and accelerator systems.](images/hostaccsys.png)
-
- 
-
- 
-
-
-
-
-
+:::image type="content" source="images/hostaccsys.png" alt-text="Diagram illustrating video data buffering in the host and accelerator.":::

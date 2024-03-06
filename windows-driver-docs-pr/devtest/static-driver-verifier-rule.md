@@ -20,11 +20,3 @@ ms.date: 04/20/2017
 
 A verification rule defines a requirement for proper interaction between a driver and the kernel interface of the operating system. The rules are written in Specification Language for Interface Checking (SLIC), a simple language that was developed by Microsoft Research expressly for this purpose.
 
- 
-
- 
-
-
-
-
-

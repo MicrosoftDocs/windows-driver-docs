@@ -21,7 +21,7 @@ Kernel settings take precedence over registry settings during run time, but when
 
     The following screen shot shows the **Kernel Flags** tab in Windows Vista.
 
-    ![screen shot of the kernel flags tab in windows vista .](images/gflags-kernel.png)
+    :::image type="content" source="images/gflags-kernel.png" alt-text="Screenshot of the Kernel Flags tab in Windows Vista.":::
 
 2.  Set or clear a flag by selecting or clearing the check box associated with the flag.
 
@@ -30,8 +30,3 @@ Kernel settings take precedence over registry settings during run time, but when
  
 
  
-
-
-
-
-

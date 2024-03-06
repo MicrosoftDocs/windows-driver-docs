@@ -21,10 +21,9 @@ ms.date: 04/20/2017
 
 # WDTF Architecture
 
-
 To understand the architecture of WDTF, you should first read [Windows Device Testing Framework Design Guide](wdtf-overview.md). The most important concept is that WDTF uses devices and the system by abstracting each of them into a *target* (an [**IWDTFTarget2**](/windows-hardware/drivers/ddi/wdtf/nn-wdtf-iwdtftarget2) interface). The following illustration shows the core object model that WDTF provides.
 
-![diagram illustrating the wdtf core object model.](images/wdtf-objectmodel.gif)
+:::image type="content" source="images/wdtf-objectmodel.gif" alt-text="Diagram illustrating the WDTF core object model, showing System and Device depot.":::
 
 Your scenario can use some or all of the following WDTF objects and interfaces:
 
@@ -40,9 +39,9 @@ The [**DeviceDepot**](/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtf2-get_devi
 <a href="" id="iwdtftarget2"></a>[**IWDTFTarget2**](/windows-hardware/drivers/ddi/wdtf/nn-wdtf-iwdtftarget2)  
 The [**IWDTFTarget2**](/windows-hardware/drivers/ddi/wdtf/nn-wdtf-iwdtftarget2) interface represents a *target* of testing activities. All activities that you perform with the framework involve at least one target. Targets can have one of the following forms:
 
--   A *device-type target* represents a hardware (or software) device that is attached to the computer.
+- A *device-type target* represents a hardware (or software) device that is attached to the computer.
 
--   A *system-type target* represents a computer as a whole.
+- A *system-type target* represents a computer as a whole.
 
 A target contains attributes that describe the device or computer they represent.
 
@@ -53,13 +52,10 @@ The [**IWDTFTargets2**](/windows-hardware/drivers/ddi/wdtf/nn-wdtf-iwdtftargets2
 
 WDTF includes a set of interfaces and implementations ([**action interfaces**](/windows-hardware/drivers/ddi/index)) that you can use in your test scenarios to control targets. Each implementation knows how to perform target-specific actions, such as enabling and disabling, or performing I/O operations. Your scripts can refer to these interfaces by their interface name, without understanding the specific implementation, as the following illustration shows.
 
-![diagram illustrating the target::getinterface method.](images/wdtf-getinterface.gif)
+:::image type="content" source="images/wdtf-getinterface.gif" alt-text="Diagram illustrating the Target::GetInterface method.":::
 
 For more information about these interfaces, see [Controlling Targets](controlling-targets.md).
 
 ### Simple Data Evaluation Language (SDEL)
 
 WDTF includes a simple query language, Simple Data Evaluation Language (SDEL), that is similar to XPath and that simplifies the task of collecting targets based on attributes or relationships. SDEL enables you to form brief query statements that define selection constraints based on both the attributes of each target and relationships between them. For more information about SDEL, see [Simple Data Evaluation Language Overview](simple-data-evaluation-language-overview.md).
-
- 
-

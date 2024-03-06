@@ -14,7 +14,7 @@ This section describes the typical configuration of hardware, drivers, and devic
 
 The following diagram shows the typical configuration for a Plug and Play Toaster device.
 
-![diagram illustrating hardware and drivers-and-device-stacks configurations for a plug and play toaster device.](images/ser2.png)
+:::image type="content" source="images/ser2.png" alt-text="Diagram showing hardware and drivers-device stacks configurations for a Plug and Play Toaster device.":::
 
 Serial and Serenum are used in the previous configurations. Serial creates and attaches a function device object (FDO) to the RS-232 port stack, and Serenum creates and attaches an upper-level filter device object (DO) to the RS-232 port stack. Serenum enumerates the device attached to the RS-232 port after the Plug and Play manager sends an IRP\_MN\_QUERY\_RELATIONS request of type **BusRelations** to the RS-232 device stack.
 

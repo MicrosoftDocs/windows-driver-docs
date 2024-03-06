@@ -1,7 +1,7 @@
 ---
-title: Driver security checklist
+title: Driver Security Checklist
 description: This article provides a driver security checklist for driver developers.
-ms.date: 05/04/2023
+ms.date: 12/11/2023
 ---
 
 # Driver security checklist
@@ -20,45 +20,45 @@ In addition to avoiding the issues associated with a driver being attacked, many
 
 **Security checklist:** *Complete the security task described in each of these topics.*
 
-![empty checkbox.](images/checkbox.png)[Confirm that a kernel driver is required](#confirm-that-a-kernel-driver-is-required)
+:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist."::: [Confirm that a kernel driver is required](#confirm-that-a-kernel-driver-is-required)
 
-![empty checkbox.](images/checkbox.png)[Use the driver frameworks](#use-the-driver-frameworks)
+:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist."::: [Use the driver frameworks](#use-the-driver-frameworks)
 
-![empty checkbox.](images/checkbox.png)[Control access to software only drivers](#control-access-to-software-only-drivers)
+:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist."::: [Control access to software only drivers](#control-access-to-software-only-drivers)
 
-![empty checkbox.](images/checkbox.png)[Do not production sign test driver code](#do-not-production-sign-test-code)
+:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist."::: [Do not production sign test driver code](#do-not-production-sign-test-code)
 
-![empty checkbox.](images/checkbox.png)[Perform threat analysis](#perform-threat-analysis)
+:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist."::: [Perform threat analysis](#perform-threat-analysis)
 
-![empty checkbox.](images/checkbox.png)[Follow driver secure coding guidelines](#follow-driver-secure-coding-guidelines)
+:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist."::: [Follow driver secure coding guidelines](#follow-driver-secure-coding-guidelines)
 
-![empty checkbox.](images/checkbox.png)[Implement HVCI compatible code](#implement-hvci-compatible-code)
+:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist."::: [Implement HVCI compatible code](#implement-hvci-compatible-code)
 
-![empty checkbox.](images/checkbox.png)[Follow technology specific code best practices](#follow-technology-specific-code-best-practices)
+:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist."::: [Follow technology specific code best practices](#follow-technology-specific-code-best-practices)
 
-![empty checkbox.](images/checkbox.png)[Perform peer code review](#perform-peer-code-review)
+:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist."::: [Perform peer code review](#perform-peer-code-review)
 
-![empty checkbox.](images/checkbox.png)[Manage driver access control](#manage-driver-access-control)
+:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist."::: [Manage driver access control](#manage-driver-access-control)
 
-![empty checkbox.](images/checkbox.png)[Enhance device installation security](#enhance-device-installation-security)
+:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist."::: [Enhance device installation security](#enhance-device-installation-security)
 
-![empty checkbox.](images/checkbox.png)[Execute proper release driver signing](#execute-proper-release-driver-signing)
+:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist."::: [Execute proper release driver signing](#execute-proper-release-driver-signing)
 
-![empty checkbox.](images/checkbox.png)[Use code analysis in Visual Studio to investigate driver security](#use-code-analysis-in-visual-studio-to-investigate-driver-security)
+:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist."::: [Use code analysis in Visual Studio to investigate driver security](#use-code-analysis-in-visual-studio-to-investigate-driver-security)
 
-![empty checkbox.](images/checkbox.png)[Use Static Driver Verifier to Check for Vulnerabilities](#use-static-driver-verifier-to-check-for-vulnerabilities)
+:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist."::: [Use Static Driver Verifier to check for vulnerabilities](#use-static-driver-verifier-to-check-for-vulnerabilities)
 
-![empty checkbox.](images/checkbox.png)[Check code with BinSkim Binary Analyzer](#check-code-with-the-binskim-binary-analyzer)
+:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist."::: [Check code with BinSkim Binary Analyzer](#check-code-with-the-binskim-binary-analyzer)
 
-![empty checkbox.](images/checkbox.png)[Use code validation tools](#use-additional-code-validation-tools)
+:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist."::: [Use code validation tools](#use-additional-code-validation-tools)
 
-![empty checkbox.](images/checkbox.png)[Review debugger techniques and extensions](#review-debugger-techniques-and-extensions)
+:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist."::: [Review debugger techniques and extensions](#review-debugger-techniques-and-extensions)
 
-![empty checkbox.](images/checkbox.png)[Understand how drivers are reported using the Microsoft Vulnerable and Malicious Driver Reporting Center](#microsoft-vulnerable-and-malicious-driver-reporting-center)
+:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist."::: [Understand how drivers are reported using the Microsoft Vulnerable and Malicious Driver Reporting Center](#microsoft-vulnerable-and-malicious-driver-reporting-center)
 
-![empty checkbox.](images/checkbox.png)[Review secure coding resources](#review-secure-coding-resources)
+:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist."::: [Review secure coding resources](#review-secure-coding-resources)
 
-[Summary of key takeaways](#summary-of-key-takeaways)
+:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist.":::Review the [Summary of key takeaways](#summary-of-key-takeaways)
 
 ## Confirm that a kernel driver is required
 
@@ -114,7 +114,7 @@ In considering security, a common methodology is to create specific threat model
 
 This article provides driver specific guidance for creating a lightweight threat model: [Threat modeling for drivers](threat-modeling-for-drivers.md). The article provides an example driver threat model diagram that can be used as a starting point for your driver.
 
-![Sample data flow diagram for hypothetical kernel-mode driver.](images/sampledataflowdiagramkernelmodedriver.gif)
+:::image type="content" source="images/sampledataflowdiagramkernelmodedriver.gif" alt-text="Sample data flow diagram illustrating a hypothetical kernel-mode driver.":::
 
 Security Development Lifecycle (SDL) best practices and associated tools can be used by IHVs and OEMs to improve the security of their products. For more information see [SDL recommendations for OEMs](../bringup/security-overview.md#sdl-recommendations-for-oems).
 
@@ -645,7 +645,7 @@ For more information about sympath, see [Symbol path for Windows debuggers](../d
 
 To enable these warnings in Visual Studio, under C/C++ in the property pages for the project, remove the values that you don't wish to exclude in **Disable Specific Warnings**.
 
-![dialog box for disable specific warnings in Visual Studio 2019.](images/disable-specific-warnings-dialog.png)
+:::image type="content" source="images/disable-specific-warnings-dialog.png" alt-text="Screenshot of the dialog box for disabling specific warnings in Visual Studio 2019.":::
 
 The default compile options in Visual Studio for driver projects can disable warnings such as the following. These warnings will be reported by BinSkim.
 
@@ -701,15 +701,15 @@ Consider the development of custom domain-specific security tests. To develop ad
 
 ### Security related debugger commands
 
-The !acl extension formats and displays the contents of an access control list (ACL). For more information, see [Determining the ACL of an Object](../debugger/determining-the-acl-of-an-object.md) and [**!acl**](../debugger/-acl.md).
+The !acl extension formats and displays the contents of an access control list (ACL). For more information, see [Determining the ACL of an Object](../debugger/determining-the-acl-of-an-object.md) and [**!acl**](../debuggercmds/-acl.md).
 
-The !token extension displays a formatted view of a security token object. For more information, see [**!token**](../debugger/-token.md).
+The !token extension displays a formatted view of a security token object. For more information, see [**!token**](../debuggercmds/-token.md).
 
-The !tokenfields extension displays the names and offsets of the fields within the access token object (the TOKEN structure). For more information, see [**!tokenfields**](../debugger/-tokenfields.md).
+The !tokenfields extension displays the names and offsets of the fields within the access token object (the TOKEN structure). For more information, see [**!tokenfields**](../debuggercmds/-tokenfields.md).
 
-The !sid extension displays the security identifier (SID) at the specified address. For more information, see [**!sid**](../debugger/-sid.md).
+The !sid extension displays the security identifier (SID) at the specified address. For more information, see [**!sid**](../debuggercmds/-sid.md).
 
-The !sd extension displays the security descriptor at the specified address. For more information, see [**!sd**](../debugger/-sd.md).
+The !sd extension displays the security descriptor at the specified address. For more information, see [**!sd**](../debuggercmds/-sd.md).
 
 ## Microsoft Vulnerable and Malicious Driver Reporting Center
 

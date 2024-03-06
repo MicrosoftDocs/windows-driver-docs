@@ -9,12 +9,11 @@ keywords:
 - connections WDK Bluetooth
 - protocols WDK Bluetooth
 - custom drivers WDK Bluetooth
-ms.date: 04/20/2017
+ms.date: 01/10/2024
 ms.topic: article
 ---
 
 # Bluetooth Profile Drivers
-
 
 This section describes Bluetooth profile drivers. The information in this section is divided into the following topics:
 
@@ -31,12 +30,3 @@ This section describes Bluetooth profile drivers. The information in this sectio
 [Transport Bus Driver for Bluetooth Power Control Handling Guidelines](transport-bus-driver-for-bluetooth-power-control-handling-guidelines.md)
 
 [Bluetooth LE Proximity Profile Devices and Apps](implementing-a-bluetooth-le-proximity-profile-device-and-application.md)
-
- 
-
- 
-
-
-
-
-

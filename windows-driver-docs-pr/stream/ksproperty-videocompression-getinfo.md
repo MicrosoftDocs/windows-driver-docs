@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_VIDEOCOMPRESSION\_GETINFO
+title: KSPROPERTY_VIDEOCOMPRESSION_GETINFO
 description: The KSPROPERTY\_VIDEOCOMPRESSION\_GETINFO property retrieves the video compression capabilities of the device. This property must be implemented.
 keywords: ["KSPROPERTY_VIDEOCOMPRESSION_GETINFO Streaming Media Devices"]
 topic_type:

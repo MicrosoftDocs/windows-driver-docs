@@ -1,7 +1,7 @@
 ---
-title: Testing with SensorExplorer
+title: Testing With SensorExplorer
 description: How to use SensorExplorer for sensor testing and logging
-ms.date: 07/08/2021
+ms.date: 01/11/2024
 ---
 
 # SensorExplorer overview

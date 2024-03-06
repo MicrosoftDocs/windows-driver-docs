@@ -1,5 +1,5 @@
 ---
-title: Troubleshooting HID reports
+title: Troubleshooting HID Reports
 description: Describes the most common problems that user-mode applications and kernel-mode drivers might encounter when attempting to extract or set HID usages.
 keywords:
 - HID reports WDK , troubleshooting
@@ -7,7 +7,7 @@ keywords:
 - troubleshooting reports WDK HID
 - dropped HID reports WDK
 - errors WDK HID reports
-ms.date: 10/12/2022
+ms.date: 01/11/2024
 ---
 
 # Troubleshooting HID reports

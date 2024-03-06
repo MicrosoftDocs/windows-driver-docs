@@ -14,7 +14,7 @@ ms.date: 04/20/2017
 
 The following figure shows a configuration of a port class audio adapter driver that renders and captures audio content.
 
-![diagram illustrating rendering and capturing audio content by using a port class audio adapter driver.](images/portcls.png)
+:::image type="content" source="images/portcls.png" alt-text="Diagram illustrating the configuration of a port class audio adapter driver for rendering and capturing audio content.":::
 
 See the following for a description of the Microsoft Windows Driver Model (WDM) audio components:
 

@@ -21,18 +21,17 @@ ms.date: 04/20/2017
 
 # Introduction to Video Present Networks
 
-
 The video present network (VidPN) manager, which is a component of the DirectX graphics kernel subsystem (Dxgkrnl.sys), is responsible for managing the collection of monitors and other display devices that are connected to a display adapter. The responsibilities of the VidPN manager include the following:
 
--   Respond to hot plugging and unplugging of monitors.
+* Respond to hot plugging and unplugging of monitors.
 
--   Maintain and update a set of available display modes as the set of connected monitors changes.
+* Maintain and update a set of available display modes as the set of connected monitors changes.
 
--   Manage the association between rendering surfaces and video outputs on the display adapter; for example, clone views and extension of the desktop to multiple monitors.
+* Manage the association between rendering surfaces and video outputs on the display adapter; for example, clone views and extension of the desktop to multiple monitors.
 
--   Adjust the set of available display devices and display modes when the lid on a laptop computer is opened or closed.
+* Adjust the set of available display devices and display modes when the lid on a laptop computer is opened or closed.
 
--   Adjust the set of available display devices and display modes when a laptop computer is docked or undocked.
+* Adjust the set of available display devices and display modes when a laptop computer is docked or undocked.
 
 The hardware on a display adapter that is responsible for scanning rendered content from video memory and presenting it on video outputs is called the *display adapter's presentational subsystem*. A *video present network (VidPN)* is a software model of a display adapter's presentational subsystem.
 
@@ -44,7 +43,7 @@ Note that video present targets are not the monitors (or other external display 
 
 The following diagram illustrates a VidPN.
 
-![diagram illustrating a video present network (vidpn).](images/vidpn.png)
+:::image type="content" source="images/vidpn.png" alt-text="Diagram illustrating a Video Present Network (VidPN) with sources, targets, and connectors.":::
 
 The VidPN illustrated in the preceding diagram has three video present targets: a DVI connector, an HD15 connector, and an S-video connector. The VidPN topology is represented by the lines that connect the two sources to the three targets. The topology specifies that Source 1 is connected to the DVI target and Source 2 is connected to both the HD15 and S-video targets. The content rendered on Source 2 is presented as a clone view on the display devices connected to the HD15 and S-video connectors.
 
@@ -52,29 +51,20 @@ Each video present source supports a certain set of surface formats called *sour
 
 The model works similarly for video present targets. Each video present target supports a certain set of video signal formats called *target modes*, and a VidPN maintains a *target mode set* for each video present target. The target mode set for a particular video present target changes as the topology changes and as modes are chosen for other video present targets.
 
-### <span id="the_role_of_the_display_miniport_driver"></span><span id="THE_ROLE_OF_THE_DISPLAY_MINIPORT_DRIVER"></span>The Role of the Display Miniport Driver
+## The Role of the Display Miniport Driver
 
 A display adapter has one or more *video output codecs* (for example, a CRTC) that read from video present sources and place the corresponding video signals on video present targets. At any given time, a video output codec can read from at most one video present source; however, that codec can supply a video signal to more than one video present target (clone view).The VidPN manager concerns itself with the associations between video present sources and video present targets, but does not concern itself with the role of the video output codecs. The decisions about which video output codec reads from a particular video present source is entirely under the control of the display miniport driver. For example, suppose a display adapter has two video output codecs, and the VidPN manager asks the display miniport driver to implement the topology shown in the following diagram.
 
-![diagram illustrating a video present network (vidpn) topology.](images/vidpntopology.png)
+:::image type="content" source="images/vidpntopology.png" alt-text="Diagram showing a VidPN topology with two sources connected to three targets.":::
 
 The following diagram shows one way that the display miniport driver could assign video output codecs to video present sources.
 
-![diagram illustrating video codecs used to implement a video present network (vidpn) topology.](images/vidpncodecs1.png)
+:::image type="content" source="images/vidpncodecs1.png" alt-text="Diagram showing the driver assigning CRTC1 to HD15 for Source 1, and CRTC2 to HD15 and S-Video for Source 2.":::
 
-Notice that the clone view (HD15, S-video) in the preceding diagram is handled by a single CRTC. Now suppose that the HD15 output connected to CRTC 1 is no longer needed. Then the display miniport driver could implement the clone view by configuring the video output codecs as shown in the following diagram:
+Notice that the clone view (HD15, S-video) in the preceding diagram is handled by a single CRTC. Now suppose that the HD15 output connected to CRTC1 is no longer needed. Then the display miniport driver could implement the clone view by configuring the video output codecs as shown in the following diagram:
 
-![diagram illustrating an alternative use of video output codecs.](images/vidpncodecs2.png)
+:::image type="content" source="images/vidpncodecs2.png" alt-text="Diagram showing an alternative use of video output codecs with two CRTCs for clone view.":::
 
 Implementing the clone view with two CRTCs has some advantages over implementing it with one CRTC. For example, with two CRTCs the HD15 and S-video outputs can have different resolutions and refresh rates.
 
 The important point is that the VidPN manager never knows anything about how the video output codecs on a display adapter are assigned to the video present sources and targets. The VidPN manager knows only the associations between sources and targets. The underlying composite associations that involve the video output codecs are known only to the display miniport driver.
-
- 
-
- 
-
-
-
-
-

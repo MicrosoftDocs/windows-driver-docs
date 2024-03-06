@@ -1,7 +1,7 @@
 ---
+title: Windows Desktop App for a USB Device
 description: Learn about how an application can call WinUSB Functions to communicate with a USB device.
-title: Windows desktop app for a USB device
-ms.date: 10/28/2022
+ms.date: 01/17/2024
 ---
 
 # Windows desktop app for a USB device
@@ -31,13 +31,13 @@ It's simpler to use WinUSB functions to communicate with a device than to implem
 
     - Follow the instructions at [Downloading the Windows Driver Kit](../download-the-wdk.md).
 
-2. Get a test USB device and its hardware specification.
+1. Get a test USB device and its hardware specification.
 
     - Use the specification to determine the functionality of the app and the related design decisions.
 
     - Microsoft USB Test Tool (MUTT) devices are available from [JJG Technologies](http://www.jjgtechnologies.com/Mutt20.htm). This device requires firmware from Microsoft available at [Download MUTT Software Package](./mutt-software-package.md#download-mutt-software-package).
 
-3. Write a skeleton app that obtains a handle to the device.
+1. Write a skeleton app that obtains a handle to the device.
 
     There are two approaches for writing the first application:
 
@@ -45,28 +45,27 @@ It's simpler to use WinUSB functions to communicate with a device than to implem
 
     - Call [SetupAPI](../install/setupapi.md) routines to get a handle to the device and open it by calling [WinUsb_Initialize](/windows/desktop/api/winusb/nf-winusb-winusb_initialize). For more information, see [How to Access a USB Device by Using WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md).
 
-4. Install Winusb.sys for your device.
+1. Install Winusb.sys for your device.
 
     If using Visual Studio, install the driver package on the target computer by using Visual Studio deployment. For instructions see [Write a Windows desktop app based on the WinUSB template](how-to-write-a-windows-desktop-app-that-communicates-with-a-usb-device.md). Otherwise manually install the driver in Device Manager by writing a custom INF. For more information, see [WinUSB (Winusb.sys) Installation](winusb-installation.md).
 
-5. Get information about your device and view its descriptors.
+1. Get information about your device and view its descriptors.
 
     For conceptual information, see [Concepts for all USB developers](usb-concepts-for-all-developers.md). Get information about your device capabilities by reading the configuration descriptor, interface descriptors for each supported alternate settings, and their endpoint descriptors. For more information, see [Query the Device for USB Descriptors](using-winusb-api-to-communicate-with-a-usb-device.md#step-2-query-the-device-for-usb-descriptors).
 
-6. Send a USB control transfer.
+1. Send a USB control transfer.
 
     Send standard control requests and vendor commands to your device. For more information, see [Send Control Transfer to the Default Endpoint](using-winusb-api-to-communicate-with-a-usb-device.md#step-3-send-control-transfer-to-the-default-endpoint).
 
-7. Send bulk or interrupt transfers.
+1. Send bulk or interrupt transfers.
 
     Perform read and write operations to and from the bulk, interrupt, and isochronous endpoints supported by your device. For more information, see [Issue I/O Requests](using-winusb-api-to-communicate-with-a-usb-device.md#step-4-issue-io-requests).
 
-8. Send isochronous transfers.
+1. Send isochronous transfers.
 
     Send isochronous read and write requests, mostly used for streaming data. This feature is only available on Windows 8.1 and later. For more information, see [Sending USB isochronous transfers from a WinUSB desktop app](getting-set-up-to-use-windows-devices-usb.md).
 
 ## See also
 
-[Developing Windows applications for USB devices](developing-windows-applications-that-communicate-with-a-usb-device.md)  
-
-[Universal Serial Bus (USB)](../index.yml)
+- [Developing Windows applications for USB devices](developing-windows-applications-that-communicate-with-a-usb-device.md)
+- [Universal Serial Bus (USB)](../index.yml)

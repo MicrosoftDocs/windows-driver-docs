@@ -1,5 +1,5 @@
 ---
-title: SRB\_UNKNOWN\_STREAM\_COMMAND
+title: SRB_UNKNOWN_STREAM_COMMAND
 description: SRB\_UNKNOWN\_STREAM\_COMMAND
 keywords: ["SRB_UNKNOWN_STREAM_COMMAND Streaming Media Devices"]
 topic_type:

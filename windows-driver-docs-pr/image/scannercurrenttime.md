@@ -1,5 +1,5 @@
 ---
-title: ScannerCurrentTime element
+title: ScannerCurrentTime Element
 description: The required ScannerCurrentTime element indicates the current date and time according to the scanner's internal clock.
 keywords: ["ScannerCurrentTime element Imaging Devices"]
 topic_type:

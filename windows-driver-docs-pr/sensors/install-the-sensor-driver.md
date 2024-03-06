@@ -1,11 +1,10 @@
 ---
-title: Install the sensor driver
+title: Install the Sensor Driver
 description: This topic shows you how to install the sensor driver on a development board.
-ms.date: 04/20/2017
+ms.date: 01/11/2024
 ---
 
 # Install the sensor driver
-
 
 This topic shows you how to install the sensor driver on a development board, after you update the secondary system description table (SSDT) for the development board.
 
@@ -19,41 +18,41 @@ To make the Sharks Cove's ACPI driver aware of the new device (the accelerometer
 
 ## Before you begin
 
-
 Before you start performing the tasks outlined below, please make sure that your Sharks Cove is set up as shown in the following image:
 
 ![recommended setup for sharks cove board.](images/sharkscove-setup.png)
 
 ## Retrieve and review the default SSDT
 
-
 This section shows you how to use the ACPI Source Language (ASL) compiler to retrieve the factory default SSDT for the Sharks Cove, and then review it. You will also learn how to replace the default SSDT with an updated one.
 
 1. On your development computer, navigate to the following location to copy the ASL compiler:
 **c:\\Program Files (x86)\\Windows Kits\\10\\Tools\\x86\\ACPIVerify**
-2. Copy the *Asl.exe* file, and save it to a flash drive.
 
-3. On the Sharks Cove, create a **Tools** folder in the root directory. Then Attach the flash drive to the Sharks Cove's USB hub, and copy the *Asl.exe* file to the **Tools** folder.
+1. Copy the *Asl.exe* file, and save it to a flash drive.
 
-4. Open a Command prompt window as an administrator, and enter the following commands:
-**cd\\tools**
-**dir**
-Make sure that the *Asl.exe* file is listed in the directory.
+1. On the Sharks Cove, create a **Tools** folder in the root directory. Then Attach the flash drive to the Sharks Cove's USB hub, and copy the *Asl.exe* file to the **Tools** folder.
 
-5. Invoke the ASL compiler and create an ASL file by entering the following command:
+1. Open a Command prompt window as an administrator, and enter the following commands:
+    **cd\\tools**
+    **dir**
+    Make sure that the *Asl.exe* file is listed in the directory.
+
+1. Invoke the ASL compiler and create an ASL file by entering the following command:
 **asl /tab=ssdt**
-6. Make sure that the ASL file was created successfully by entering the following command:
+
+1. Make sure that the ASL file was created successfully by entering the following command:
 **dir ssdt.asl**
-7. Open the ASL file in Notepad by entering the following command:
+
+1. Open the ASL file in Notepad by entering the following command:
 **notepad ssdt.asl**
 Review the ASL file, and notice that there are no references to the accelerometer, or the I2C bus.
 
-8. Close Notepad. Then enter the following command in the Command prompt window, to rename the *ssdt.asl* file.
+1. Close Notepad. Then enter the following command in the Command prompt window, to rename the *ssdt.asl* file.
 **ren ssdt.asl ssdt-old.asl**
 Then use the **dir** command to make sure that the file is now listed as *ssdt-old.asl*.
 
 ## Update the default SSDT
-
 
 Perform the following tasks to update the SSDT, and load it to replace the factory default version. The updated SSDT will be stored in a potion of memory called *battery-backed RAM*. So make sure that the button cell (battery) that came with your Sharks Cove is plugged into its socket.
 
@@ -144,50 +143,51 @@ Perform the following tasks to update the SSDT, and load it to replace the facto
     }
     ```
 
-2. In Notepad, select **File** &gt; **Save As**. Then select the **Save as type** dropdown box, and select **All Files**.
+1. In Notepad, select **File** &gt; **Save As**. Then select the **Save as type** dropdown box, and select **All Files**.
 
-3. In the **File name** box, type *ssdt.asl*, then select **Save**, and close Notepad.
+1. In the **File name** box, type *ssdt.asl*, then select **Save**, and close Notepad.
 
-4. In the Command prompt window, use the **dir** command to make sure that you can see the default file now listed as *ssdt-old.asl*, and the new file listed as *ssdt.asl*.
+1. In the Command prompt window, use the **dir** command to make sure that you can see the default file now listed as *ssdt-old.asl*, and the new file listed as *ssdt.asl*.
 
-5. Compile the *ssdt.asl* file into a format that the Sharks Cove can understand by entering the following command:
+1. Compile the *ssdt.asl* file into a format that the Sharks Cove can understand by entering the following command:
 **asl ssdt.asl**
-6. Verify that the compiled file was successfully created in **Step 3** by entering the following command:
+
+1. Verify that the compiled file was successfully created in **Step 3** by entering the following command:
 **dir ssdt.aml**
 You should see the *ssdt.aml* file listed in the tools directory.
 
-7. Load the compiled file into battery-backed RAM by entering the following command:
+1. Load the compiled file into battery-backed RAM by entering the following command:
 **asl /loadtable ssdt.aml**
-## Turn on testsigning
 
+## Turn on testsigning
 
 Before you install the sample sensor driver, you must turn on testsigning. Perform the following tasks to turn on testsigning. Perform the following steps to install the sensor driver via **Device Manager**.
 
 1. In the Command prompt window, enter the following command to see whether testsigning is already turned on.<br/>
 **bcdedit /enum**
-2. If you see a listing similar to the following, showing an entry for testsigning, with its value set to `yes` then skip to **Step 5**.<br/>
+
+1. If you see a listing similar to the following, showing an entry for testsigning, with its value set to `yes` then skip to **Step 5**.<br/>
 ![command prompt window showing testsigning set to yes.](images/testsigning.png)
 
-3. If you need to turn on test signing, then enter the following command:
+1. If you need to turn on test signing, then enter the following command:
 **bcdedit /set testsigning on**
 
-4. Repeat **Step 1** (in this exercise) to verify that the value of the testsigning system variable is now set to 'yes' in the Windows Boot Loader list.
+1. Repeat **Step 1** (in this exercise) to verify that the value of the testsigning system variable is now set to 'yes' in the Windows Boot Loader list.
 
-5. Restart the Sharks Cove. As the board restarts, hold the Volume-up button for about 2 seconds, to enter system setup (UEFI) window.
+1. Restart the Sharks Cove. As the board restarts, hold the Volume-up button for about 2 seconds, to enter system setup (UEFI) window.
 
-6. In the UEFI window, select **Device Manager** &gt; **System Setup** &gt; **Boot**, and make sure that **UEFI Security Boot** is set to **&lt;Disable&gt;**.
+1. In the UEFI window, select **Device Manager** &gt; **System Setup** &gt; **Boot**, and make sure that **UEFI Security Boot** is set to **&lt;Disable&gt;**.
 
-7. Save your changes and exit the UEFI window.
+1. Save your changes and exit the UEFI window.
 
 ## Install the sensor driver
 
-
 There are four main methods for installing a driver on the Sharks Cove board:
 
--   Download the driver from a network source directly onto the Sharks Cove.
--   Develop the sensor driver on a host computer, with your Sharks Cove connected as a provisioned client. Then deploy the driver from the host computer to the Sharks Cove.
--   Copy the driver package to a flash drive and attach the flash drive to the Sharks Cove. Then use the **devcon** command from a Command prompt window to install the driver manually.
--   Copy the driver package to a flash drive and attach the flash drive to the Sharks Cove. Then install the driver manually via **Device Manager**.
+- Download the driver from a network source directly onto the Sharks Cove.
+- Develop the sensor driver on a host computer, with your Sharks Cove connected as a provisioned client. Then deploy the driver from the host computer to the Sharks Cove.
+- Copy the driver package to a flash drive and attach the flash drive to the Sharks Cove. Then use the **devcon** command from a Command prompt window to install the driver manually.
+- Copy the driver package to a flash drive and attach the flash drive to the Sharks Cove. Then install the driver manually via **Device Manager**.
 
 For simplicity, we will use the last method in the preceding list. Perform the following steps to manually install the sensor driver via **Device Manager**.
 
@@ -195,19 +195,16 @@ You must connect your sensor to the Sharks Cove before you install the sensor dr
 
 1. Make sure that the ADXL345 accelerometer is connected to the Sharks Cove J1C1 connector, then power up the Sharks Cove.
 
-2. Attach a flash drive with the sensor driver to the powered USB hub connected to the Sharks Cove. For example, this can be the flash drive onto which you saved the driver that you built by following the steps in [Build the sensor driver](build-the-sensor-driver.md).
+1. Attach a flash drive with the sensor driver to the powered USB hub connected to the Sharks Cove. For example, this can be the flash drive onto which you saved the driver that you built by following the steps in [Build the sensor driver](build-the-sensor-driver.md).
 
-3. Open **Device Manager**, and look for an "Unknown device" in the **Other devices** node with a yellow bang symbol against it (see the following screen shot).<br/>![device manager screenshot, showing an unknown device with a yellow bang.](images/dev-manager.png)
+1. Open **Device Manager**, and look for an "Unknown device" in the **Other devices** node with a yellow bang symbol against it (see the following screen shot).<br/>![device manager screenshot, showing an unknown device with a yellow bang.](images/dev-manager.png)
 
-4. Select and hold (or right-click) the device with the yellow bang (listed as Unknown device), and select **Update Driver Software**, and select **Browse my computer for driver software**.
+1. Select and hold (or right-click) the device with the yellow bang (listed as Unknown device), and select **Update Driver Software**, and select **Browse my computer for driver software**.
 
-5. Browse to the ADXL345 driver on the flash drive, then select **Next**. Follow the screen prompts to install the sensor driver.
+1. Browse to the ADXL345 driver on the flash drive, then select **Next**. Follow the screen prompts to install the sensor driver.
 
-6. After the sample sensor driver is successfully installed, **Device Manager** displays the sensor as shown in the following screen shot.<br/>![device manager screen shot, showing device nodes for successfully installed adxl345 accelerometer.](images/dev-mgr-sensors.png)
+1. After the sample sensor driver is successfully installed, **Device Manager** displays the sensor as shown in the following screen shot.<br/>![device manager screen shot, showing device nodes for successfully installed adxl345 accelerometer.](images/dev-mgr-sensors.png)
 
 For information about how to use Visual Studio to deploy a driver to a client computer (like the Sharks Cove), see [Deploying a Driver to a Test Computer](../develop/deploying-a-driver-to-a-test-computer.md).
 
 After successfully installing the sample sensor driver, see [Test your universal sensor driver](test-your-universal-sensor-driver.md) for information about how to test a sensor.
-
- 
-

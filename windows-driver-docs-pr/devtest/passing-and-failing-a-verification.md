@@ -35,11 +35,3 @@ A verification is *inconclusive* if it terminates before it completes because of
 
 When a rule does not apply to the driver, for example, if the driver does not make use of the device driver interfaces that the rule verifies, SDV reports that the rule is **Not Applicable**.
 
- 
-
- 
-
-
-
-
-

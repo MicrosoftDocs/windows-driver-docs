@@ -1,11 +1,10 @@
 ---
-title: Sample driver I/O model
+title: Sample Driver I/O Model
 description: An SPB driver communicates over the simple peripheral bus, the system GPIO pins, and the resource hub. Here you can see how the components are organized in user mode, kernel mode, and the actual hardware.
-ms.date: 04/20/2017
+ms.date: 01/11/2024
 ---
 
 # Sample driver I/O model
-
 
 An SPB driver communicates over the simple peripheral bus, the system GPIO pins, and the resource hub. Here you can see how the components are organized in: user mode, kernel mode, and the actual hardware.
 
@@ -13,12 +12,11 @@ An SPB driver communicates over the simple peripheral bus, the system GPIO pins,
 
 ## Simple peripheral bus (SPB)
 
-
 Windows 8.1 supports an SPB component as a class extension (running in kernel mode) that makes developing and implementing SPB controller drivers easier. The SPB component:
 
--   Handles all communication with the Resource Hub including registration and setting retrieval.
--   Implements tiered queue structure to manage simultaneous targets and bus-locking requests
--   Translates buffers from user-mode to kernel-mode
+- Handles all communication with the Resource Hub including registration and setting retrieval.
+- Implements tiered queue structure to manage simultaneous targets and bus-locking requests
+- Translates buffers from user-mode to kernel-mode
 
 For more information see [Simple Peripheral Bus](/windows-hardware/design/component-guidelines/simple-peripheral-bus--spb-).
 
@@ -28,8 +26,6 @@ For more information see [Simple Peripheral Bus](/windows-hardware/design/compon
 |----------------|-----------------|
 | SpbRequest.cpp | CSpbRequest     |
 
- 
-
 The SpbAccelerometer sample code interacts with the SPB component is found in SpbRequest.cpp. The three methods in the CSpbRequest class interact with this component as described below.
 
 | Method                                          | Purpose                                       |
@@ -37,8 +33,6 @@ The SpbAccelerometer sample code interacts with the SPB component is found in Sp
 | **CSpbRequest::CreateAndSendIoctl**             | Creates and issues an IOCTL request.          |
 | **CSpbRequest::CreateAndSendWrite**             | Creates and issues an SPB write               |
 | **CSpbRequest::CreateAndSendWriteReadSequence** | Creates and issues a SPB write/read sequence. |
-
- 
 
 ## General-purpose input/output (GPIO)
 
@@ -52,9 +46,7 @@ On SoC platforms GPIO pins are spread across the chip as well as exposed on othe
 |----------------------|-----------------|
 | SpbAccelerometer.asl | N/A             |
 
- 
-
-The SpbAccelerometer sample relies on the GPIO component for interrupts. The GpioInt() element in the SpbAccelerometer.asl file defines the GPIO pin that’s connected to the ADXL345 as an interrupt resource.
+The SpbAccelerometer sample relies on the GPIO component for interrupts. The GpioInt() element in the SpbAccelerometer.asl file defines the GPIO pin that's connected to the ADXL345 as an interrupt resource.
 
 ```cpp
 //
@@ -77,17 +69,13 @@ Here are the key elements of the I2C resource:
 | 400000     | Specifies the operating frequency for the subordinate device. |
 | \\\\SB.I2C | Specifies the ACPI node for the subordinate device.           |
 
- 
-
 ### Processing acceleration data
 
 | Module                  | Class/Interface      |
 |-------------------------|----------------------|
 | AccelerometerDevice.cpp | CAccelerometerDevice |
 
- 
-
-If the GPIO line is asserted by the ADXL345, the sample driver’s passive ISR routine (**CAccelerometerDevice::OnInterruptIsr**) is invoked. A helper function, **CAccelerometerDevice::OnInterruptWorkItem**, processes the interrupt data that::**OnInterruptIsr** stored.
+If the GPIO line is asserted by the ADXL345, the sample driver's passive ISR routine (**CAccelerometerDevice::OnInterruptIsr**) is invoked. A helper function, **CAccelerometerDevice::OnInterruptWorkItem**, processes the interrupt data that::**OnInterruptIsr** stored.
 
 If the interrupt processed by ::**OnInterruptIsr** corresponds to register 0x30 (ADXL\_345\_INT\_SOURCE in the file Adxl345.h), the driver invokes a register read operation to get the contents of registers 0x32 through 0x37. These registers contain the latest acceleration data for the X-, Y-, and Z-axis. The read operations are invoked in the **CAcclerometerDevice::RequestData** method (which is invoked by **CAccelerometerDevice::OnInterruptWorkItem**).
 
@@ -116,16 +104,14 @@ Windows 8.1 supports a resource hub that manages the connections for all devices
 
 The hub is a component specifically aimed at SoC platforms and their flat device tree. Buses on these systems differ from PCs:
 
--   Connections are typically non-discoverable; they are statically defined in ACPI
--   Hardware components often have multiple dependencies spanning multiple buses, rather than strict parent-child relationships
+- Connections are typically non-discoverable; they are statically defined in ACPI
+- Hardware components often have multiple dependencies spanning multiple buses, rather than strict parent-child relationships
 
 ### Resource hub and the sample driver
 
 | Module               | Class/Interface |
 |----------------------|-----------------|
 | SpbAccelerometer.asl | N/A             |
-
- 
 
 The **ResourceTemplate** section of SpbAccelerometer.asl specifies how the resources are connected.
 
@@ -145,6 +131,3 @@ Name(RBUF, ResourceTemplate()
         })
 Return(RBUF)
 ```
-
- 
-

@@ -1,5 +1,5 @@
 ---
-title: MRxTruncate routine
+title: MRxTruncate Routine
 description: The MRxTruncate routine is called by RDBSS to request that a network mini-redirector truncate the contents of a file system object.
 keywords: ["MRxTruncate routine Installable File System Drivers", "PMRX_CALLDOWN"]
 topic_type:

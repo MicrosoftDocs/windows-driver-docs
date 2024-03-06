@@ -25,7 +25,7 @@ The Microsoft Windows Driver Kit (WDK) includes a set of applications and comman
 
 The tools include [trace controllers](trace-controller.md) that configure, start, update, and stop trace sessions, and [trace consumers](trace-consumer.md) that receive trace messages generated during the sessions and convert the binary data into human-readable format for files or display.
 
-The tools support a variety of [trace providers](trace-provider.md), including user-mode applications and kernel-mode drivers, which are instrumented for software tracing by using [WPP software tracing](wpp-software-tracing.md) or ([Event Tracing for Windows (ETW)](event-tracing-for-windows--etw-.md). For a comparison of the two approaches to instrumenting your code, see [When to Use WPP Software Tracing and Event Tracing for Windows (ETW)](#when-should-i-use-wpp-software-tracing-or-the-event-tracing-for-windows-etw-api).
+The tools support a variety of [trace providers](trace-provider.md), including user-mode applications and kernel-mode drivers, which are instrumented for software tracing by using [WPP software tracing](wpp-software-tracing.md) or [Event Tracing for Windows (ETW)](event-tracing-for-windows--etw-.md). For a comparison of the two approaches to instrumenting your code, see [When to Use WPP Software Tracing and Event Tracing for Windows (ETW)](#when-should-i-use-wpp-software-tracing-or-the-event-tracing-for-windows-etw-api).
 
 The tools also can access reserved [trace sessions](trace-session.md) that are built into Windows, such as the [Global Logger trace session](global-logger-trace-session.md) / [NT Kernel Logger trace session](nt-kernel-logger-trace-session.md).
 

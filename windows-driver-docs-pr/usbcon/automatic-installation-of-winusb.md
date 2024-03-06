@@ -1,7 +1,7 @@
 ---
-title: WinUSB device
+title: WinUSB Device
 description: In this topic, you will learn about how a WinUSB device is recognized by Windows. The information in this article applies to you if you are an OEM or independent hardware vendor (IHV) developing a device for which you want to use Winusb.sys as the function driver and want to load the driver automatically without having to provide a custom INF.
-ms.date: 05/08/2023
+ms.date: 01/12/2024
 ---
 
 # WinUSB device

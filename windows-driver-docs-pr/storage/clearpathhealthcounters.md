@@ -1,5 +1,5 @@
 ---
-title: ClearPathHealthCounters function
+title: ClearPathHealthCounters Function
 description: The ClearPathHealthCounters method is used to clear all gathered MPIO health statistics for a particular path of an MPIO disk.
 keywords: ["ClearPathHealthCounters function Storage Devices"]
 topic_type:

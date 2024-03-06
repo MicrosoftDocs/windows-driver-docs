@@ -59,11 +59,11 @@ Available Script Providers:
 
 The following commands are available to work with JavaScript Debugger Scripting.
 
--   [**.scriptproviders (List Script Providers)**](-scriptproviders--list-script-providers-.md)
--   [**.scriptload (Load Script)**](-scriptload--load-script-.md)
--   [**.scriptunload (Unload Script)**](-scriptunload--unload-script-.md)
--   [**.scriptrun (Run Script)**](-scriptrun--run-script-.md)
--   [**.scriptlist (List Loaded Scripts)**](-scriptlist--list-loaded-scripts-.md)
+-   [**.scriptproviders (List Script Providers)**](../debuggercmds/-scriptproviders--list-script-providers-.md)
+-   [**.scriptload (Load Script)**](../debuggercmds/-scriptload--load-script-.md)
+-   [**.scriptunload (Unload Script)**](../debuggercmds/-scriptunload--unload-script-.md)
+-   [**.scriptrun (Run Script)**](../debuggercmds/-scriptrun--run-script-.md)
+-   [**.scriptlist (List Loaded Scripts)**](../debuggercmds/-scriptlist--list-loaded-scripts-.md)
 
 **Requirements**
 
@@ -92,7 +92,7 @@ Available Script Providers:
 
 Any file ending in ".NatVis" is understood as a NatVis script and any file ending in ".js" is understood as a JavaScript script. Either type of script can be loaded with the .scriptload command.
 
-For more information, see [**.scriptproviders (List Script Providers)**](-scriptproviders--list-script-providers-.md)
+For more information, see [**.scriptproviders (List Script Providers)**](../debuggercmds/-scriptproviders--list-script-providers-.md)
 
 ## <span id=".scriptload__load_script_"></span><span id=".SCRIPTLOAD__LOAD_SCRIPT_"></span>.scriptload (Load Script)
 
@@ -106,7 +106,7 @@ JavaScript script successfully loaded from 'C:\WinDbg\Scripts\TestScript.js'
 
 Any object model manipulations made by the script will stay in place until the script is subsequently unloaded or is run again with different content.
 
-For more information, see [**.scriptload (Load Script)**](-scriptload--load-script-.md)
+For more information, see [**.scriptload (Load Script)**](../debuggercmds/-scriptload--load-script-.md)
 
 ## <span id=".SCRIPTRUN"></span>.scriptrun
 
@@ -121,7 +121,7 @@ Hello World!  We are in JavaScript!
 
 Any debugger object model manipulations made by the script will stay in place until the script is subsequently unloaded or is run again with different content.
 
-For more information, see [**.scriptrun (Run Script)**](-scriptrun--run-script-.md).
+For more information, see [**.scriptrun (Run Script)**](../debuggercmds/-scriptrun--run-script-.md).
 
 ## <span id=".scriptunload__unload_script_"></span><span id=".SCRIPTUNLOAD__UNLOAD_SCRIPT_"></span>.scriptunload (Unload Script)
 
@@ -133,7 +133,7 @@ The .scriptunload command unloads a loaded script and calls the *uninitializeScr
 JavaScript script unloaded from 'C:\WinDbg\Scripts\TestScript.js'
 ```
 
-For more information, see [**.scriptunload (Unload Script)**](-scriptunload--unload-script-.md).
+For more information, see [**.scriptunload (Unload Script)**](../debuggercmds/-scriptunload--unload-script-.md).
 
 ## <span id=".scriptlist__list_loaded_scripts_"></span><span id=".SCRIPTLIST__LIST_LOADED_SCRIPTS_"></span>.scriptlist (List Loaded Scripts)
 
@@ -146,7 +146,7 @@ Command Loaded Scripts:
     JavaScript script from 'C:\WinDbg\Scripts\TestScript.js'
 ```
 
-For more information, see [**.scriptlist (List Loaded Scripts)**](-scriptlist--list-loaded-scripts-.md).
+For more information, see [**.scriptlist (List Loaded Scripts)**](../debuggercmds/-scriptlist--list-loaded-scripts-.md).
 
 ## <span id="Started"></span><span id="started"></span><span id="STARTED"></span>Get Started with JavaScript Debugger Scripting
 
@@ -174,7 +174,7 @@ JavaScript script successfully loaded from 'c:\WinDbg\Scripts\HelloWorld.js'
 ***> Hello World! 
 ```
 
-After the script is loaded the additional functionality is available in the debugger. Use the [**dx (Display NatVis Expression)**](dx--display-visualizer-variables-.md) command to display *Debugger.State.Scripts* to see that our script is now resident.
+After the script is loaded the additional functionality is available in the debugger. Use the [**dx (Display NatVis Expression)**](../debuggercmds/dx--display-visualizer-variables-.md) command to display *Debugger.State.Scripts* to see that our script is now resident.
 
 ```dbgcmd
 0:000> dx Debugger.State.Scripts
@@ -208,7 +208,7 @@ Use the .scriptload command to load the script.
 JavaScript script successfully loaded from 'c:\WinDbg\Scripts\FirstSampleFunction.js'
 ```
 
-After the script is loaded the additional functionality is available in the debugger. Use the [**dx (Display NatVis Expression)**](dx--display-visualizer-variables-.md) command to display *Debugger.State.Scripts* to see that our script is now resident.
+After the script is loaded the additional functionality is available in the debugger. Use the [**dx (Display NatVis Expression)**](../debuggercmds/dx--display-visualizer-variables-.md) command to display *Debugger.State.Scripts* to see that our script is now resident.
 
 ```dbgcmd
 0:000> dx Debugger.State.Scripts
@@ -255,7 +255,7 @@ JavaScript script successfully unloaded from 'c:\WinDbg\Scripts\FirstSampleFunct
 
 ### <span id="Automate"></span><span id="automate"></span><span id="AUTOMATE"></span>Debugger Command Automation
 
-This section describes how to create and execute a simple JavaScript debugger script that automates the sending of the [**u (Unassemble)**](u--unassemble-.md) command. The sample also shows how to gather and display command output in a loop.
+This section describes how to create and execute a simple JavaScript debugger script that automates the sending of the [**u (Unassemble)**](../debuggercmds/u--unassemble-.md) command. The sample also shows how to gather and display command output in a loop.
 
 This script provides a single function, RunCommands().
 
@@ -289,7 +289,7 @@ Use the .scriptload command to load the RunCommands script.
 JavaScript script successfully loaded from 'c:\WinDbg\Scripts\RunCommands.js'
 ```
 
-After the script is loaded the additional functionality is available in the debugger. Use the [**dx (Display NatVis Expression)**](dx--display-visualizer-variables-.md) command to display *Debugger.State.Scripts.RunCommands* to see that our script is now resident.
+After the script is loaded the additional functionality is available in the debugger. Use the [**dx (Display NatVis Expression)**](../debuggercmds/dx--display-visualizer-variables-.md) command to display *Debugger.State.Scripts.RunCommands* to see that our script is now resident.
 
 ```dbgcmd
 0:000>dx -r3 Debugger.State.Scripts.RunCommands
@@ -381,7 +381,7 @@ function uninitializeScript()
 
 This table summarizes which functions are called by the script commands
 
-| Command            | [.scriptload](-scriptload--load-script-.md) | [.scriptrun (Run Script)](-scriptrun--run-script-.md) | [.scriptunload (Unload Script)](-scriptunload--unload-script-.md) |
+| Command            | [.scriptload](../debuggercmds/-scriptload--load-script-.md) | [.scriptrun (Run Script)](../debuggercmds/-scriptrun--run-script-.md) | [.scriptunload (Unload Script)](../debuggercmds/-scriptunload--unload-script-.md) |
 |--------------------|---------------------------------------------|-------------------------------------------------------|-------------------------------------------------------------------|
 | root               | yes                                         | yes                                                   |                                                                   |
 | initializeScript   | yes                                         | yes                                                   |                                                                   |
@@ -430,7 +430,7 @@ function main()
 ## <span id="Visualizer"></span><span id="visualizer"></span><span id="VISUALIZER"></span>Creating a Debugger Visualizer in JavaScript
 
 
-Custom visualization files allow you to group and organize data in a visualization structure that better reflects the data relationships and content. You can use the JavaScript debugger extensions to write debugger visualizers which act in a way very similar to NatVis. This is accomplished via authoring a JavaScript prototype object (or an ES6 class) which acts as the visualizer for a given data type. For more information about NatVis and the debugger see [**dx (Display NatVis Expression)**](dx--display-visualizer-variables-.md).
+Custom visualization files allow you to group and organize data in a visualization structure that better reflects the data relationships and content. You can use the JavaScript debugger extensions to write debugger visualizers which act in a way very similar to NatVis. This is accomplished via authoring a JavaScript prototype object (or an ES6 class) which acts as the visualizer for a given data type. For more information about NatVis and the debugger see [**dx (Display NatVis Expression)**](../debuggercmds/dx--display-visualizer-variables-.md).
 
 **Example class - Simple1DArray**
 
@@ -493,7 +493,7 @@ function initializeScript()
 
 Save the script in a file named arrayVisualizer.js.
 
-Use the [**.load (Load Extension DLL)**](-load---loadby--load-extension-dll-.md) command to load the JavaScript provider.
+Use the [**.load (Load Extension DLL)**](../debuggercmds/-load---loadby--load-extension-dll-.md) command to load the JavaScript provider.
 
 ```dbgcmd
 0:000> .load C:\ScriptProviders\jsprovider.dll
@@ -810,7 +810,7 @@ This method is also available.
 
 ## <span id="Debugging"></span><span id="debugging"></span><span id="DEBUGGING"></span>JavaScript Debugging
 
-This section describes how to use the script debugging capabilities of the debugger. The debugger has integrated support for debugging JavaScript scripts using the [.scriptdebug (Debug JavaScript)](-scriptdebug--debug-javascript-.md) command.
+This section describes how to use the script debugging capabilities of the debugger. The debugger has integrated support for debugging JavaScript scripts using the [.scriptdebug (Debug JavaScript)](../debuggercmds/-scriptdebug--debug-javascript-.md) command.
 
 >[!NOTE]
 > To use JavaScript Debugging with WinDb, run the debugger as Administrator.

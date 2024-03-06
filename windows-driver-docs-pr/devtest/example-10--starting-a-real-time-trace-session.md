@@ -27,11 +27,3 @@ The following command uses Tracefmt to format the trace messages from the MyTrac
 tracefmt -rt MyTrace -p c:\tracing -o mytrace.txt
 ```
 
- 
-
- 
-
-
-
-
-

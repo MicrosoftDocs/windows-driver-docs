@@ -1,5 +1,5 @@
 ---
-title: C28715 warning
+title: C28715 Warning
 description: Warning C28715 Cast between semantically different integer types.
 ms.date: 04/20/2017
 f1_keywords: 
@@ -40,12 +40,4 @@ if (SomeFunction() == TRUE) {
    return -1;
 }
 ```
-
- 
-
- 
-
-
-
-
 

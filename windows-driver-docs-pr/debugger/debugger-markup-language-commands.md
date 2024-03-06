@@ -16,26 +16,26 @@ DML is available in Windows 10 and later.
 
 The following commands are capable of generating DML output:
 
--   [**.dml\_start**](-dml-start.md)
--   [**.dml\_flow**](-dml-flow.md)
--   [**!dml\_proc**](-dml-proc.md)
--   [**lmD**](lm--list-loaded-modules-.md)
--   [**kM**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md)
--   [**.chain /D**](-chain--list-debugger-extensions-.md)
--   [**.help /D**](-help--meta-command-help-.md)
--   [**.printf /D**](-printf.md)
+-   [**.dml\_start**](../debuggercmds/-dml-start.md)
+-   [**.dml\_flow**](../debuggercmds/-dml-flow.md)
+-   [**!dml\_proc**](../debuggercmds/-dml-proc.md)
+-   [**lmD**](../debuggercmds/lm--list-loaded-modules-.md)
+-   [**kM**](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md)
+-   [**.chain /D**](../debuggercmds/-chain--list-debugger-extensions-.md)
+-   [**.help /D**](../debuggercmds/-help--meta-command-help-.md)
+-   [**.printf /D**](../debuggercmds/-printf.md)
 
-The [**lmD**](lm--list-loaded-modules-.md) command is an example of a command that is capable of providing DML output. The **lmD** command displays a list of loaded modules. As the following image shows, each module name is a link that you can click to get more detailed information about the module.
+The [**lmD**](../debuggercmds/lm--list-loaded-modules-.md) command is an example of a command that is capable of providing DML output. The **lmD** command displays a list of loaded modules. As the following image shows, each module name is a link that you can click to get more detailed information about the module.
 
-![screen shot of lmd output.](images/dmlcommands01.png)
+:::image type="content" source="images/dmlcommands01.png" alt-text="Screenshot of lmD command output in debugger.":::
 
 The following image shows the result of clicking the **usbuhci** link. The output includes additional links that enable you to explore further details of the usbuhci module.
 
-![screen shot of module details.](images/dmlcommands02.png)
+:::image type="content" source="images/dmlcommands02.png" alt-text="Screenshot of usbuhci module details in debugger.":::
 
 **Turning DML On and Off**
 
-The [**.prefer\_dml**](-prefer-dml.md) command turns DML on or off. When DML is turned on (.prefer\_dml 1), commands that are capable of generating DML output will generate DML output by default.
+The [**.prefer\_dml**](../debuggercmds/-prefer-dml.md) command turns DML on or off. When DML is turned on (.prefer\_dml 1), commands that are capable of generating DML output will generate DML output by default.
 
 ### <span id="Console_Enhancements"></span><span id="console_enhancements"></span><span id="CONSOLE_ENHANCEMENTS"></span>Console Enhancements
 
@@ -67,14 +67,14 @@ Links have a right-click context menu similar to the right-click context menu in
 
 Clicking the icon near the upper-right corner of the title bar to set the command browser windows to either auto-refresh or manual-refresh. Auto-refresh browsers will automatically re-run their command on debugger state changes. This keeps the output live but at the cost of executing the command on all changes. Auto-refresh is on by default. If the browser does not need to be live the window’s context menu can be used to disable auto-refresh.
 
-Because commands are executed by the engine, not by the user interface, user-interface specific commands, such as [**.cls (Clear Screen)**](-cls--clear-screen-.md), will return a syntax error in when used in command browser windows. It also means that when the user interface is a remote client, the command will be executed by the server, not by the client, and the command output will show server state.
+Because commands are executed by the engine, not by the user interface, user-interface specific commands, such as [**.cls (Clear Screen)**](../debuggercmds/-cls--clear-screen-.md), will return a syntax error in when used in command browser windows. It also means that when the user interface is a remote client, the command will be executed by the server, not by the client, and the command output will show server state.
 
 Command browser windows can run any debugger command, it does not have to be a command that produces DML. You can use browser windows to have an arbitrary set of commands active for use.
 
 ## <span id="Customizing_DML"></span><span id="customizing_dml"></span><span id="CUSTOMIZING_DML"></span>Customizing DML
 
 
-DML defines a small set of tags that can be included in command output. One example is the &lt;link&gt; tag. You can experiment with the &lt;link&gt; tag (and other DML tags) by using the [**.dml\_start**](-dml-start.md) and [**.browse**](-browse--display-command-in-browser-.md) commands. The command **.browse .dml\_start** *filepath* executes the commands stored in a DML file. The output is displayed in the [Command Browser window](command-browser-window.md) instead of the regular command window.
+DML defines a small set of tags that can be included in command output. One example is the &lt;link&gt; tag. You can experiment with the &lt;link&gt; tag (and other DML tags) by using the [**.dml\_start**](../debuggercmds/-dml-start.md) and [**.browse**](../debuggercmds/-browse--display-command-in-browser-.md) commands. The command **.browse .dml\_start** *filepath* executes the commands stored in a DML file. The output is displayed in the [Command Browser window](command-browser-window.md) instead of the regular command window.
 
 Suppose the file c:\\DmlExperiment.txt contains the following lines.
 
@@ -89,19 +89,14 @@ The following command displays the text and link in the Command Browser window.
 .browse .dml_start c:\Dml_Experiment.txt
 ```
 
-![screen shot of dml file output.](images/dmlcommands03.png)
+:::image type="content" source="images/dmlcommands03.png" alt-text="Screenshot of DML file output in Command Browser window.":::
 
 If you click the **List modules that begin with usb** link, you see output similar to the following image.
 
-![screen shot of module list.](images/dmlcommands04.png)
+:::image type="content" source="images/dmlcommands04.png" alt-text="Screenshot of module list after clicking link in DML file output.":::
 
 For a thorough discussion of DML customization and a complete list of DML tags, see [Customizing Debugger Output Using DML](customizing-debugger-output-using-dml.md).
 
  
 
  
-
-
-
-
-

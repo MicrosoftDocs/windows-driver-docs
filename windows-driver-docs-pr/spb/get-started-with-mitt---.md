@@ -1,7 +1,7 @@
 ---
-title: Get started with MITT
+title: Get Started With MITT
 description: To run MITT tests, you must install the MITT firmware on a new MITT board. These steps describe how to update the MITT firmware and prepare the host machine for running MITT tests.
-ms.date: 04/27/2021
+ms.date: 01/12/2024
 ---
 
 # Get started with MITT
@@ -22,8 +22,8 @@ To run MITT tests, you need a computer that will run as the host and system unde
 - The computer must have the MITT software package installed.
 - The computer must be connected as a target to a kernel debugger running on a separate machine. For more information about how to get Windbg, see [Windows Debugging](../debugger/index.md).
 
->[!NOTE]
->Windbg can be installed as a standalone tool set.
+> [!NOTE]
+> Windbg can be installed as a standalone tool set.
 
 >[!NOTE]
 >If your SUT is a phone, then the host computer, SUT, and MITT board must be configured as shown in this image.
@@ -80,8 +80,8 @@ The system under test must be connected to a kernel debugger. Debugging tools ar
 
     The preceding output shows a successful installation of the second MITT firmware image. Notice the seven segment on the MITT board. You must see 000X where X is the current version of the MITT firmware.
 
->[!NOTE]
->The **UpdateFirmware** option cannot restore the factory firmware image installed on the MITT board.
+> [!NOTE]
+> The **UpdateFirmware** option cannot restore the factory firmware image installed on the MITT board.
 
 If MuttUtil returns an error while updating or installing the firmware,
 

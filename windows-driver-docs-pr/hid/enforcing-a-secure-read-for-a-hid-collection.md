@@ -1,19 +1,15 @@
 ---
-title: Enforcing a Secure Read For a HID Collection
+title: Enforcing a Secure Read for a HID Collection
 description: Enforcing a Secure Read For a HID Collection
 keywords:
 - collections WDK HID , secure reads
 - HID collections WDK , secure reads
 - secure reads WDK HID
 - trusted secure reads WDK HID
-ms.date: 04/20/2017
+ms.date: 01/11/2024
 ---
 
-# Enforcing a Secure Read For a HID Collection
-
-
-
-
+# Enforcing a secure read for a HID collection
 
 This section describes how a user-mode application or kernel-mode driver can enforce a *secure read* for a top-level [HID collection](hid-collections.md).
 
@@ -25,16 +21,13 @@ This mechanism is provided primarily so that "trusted" user-mode system componen
 
 Enabling and disabling a secure read for a collection works in the following way:
 
--   The HID class driver maintains a file-specific secure read count for each open file of a collection. The HID class driver also maintains a secure read count for the collection, which is the sum of the file-specific secure read counts. The secure read count for the collection is initialized to zero when the collection is created, and a secure read count for a file is initialized to zero when a file is opened.
+- The HID class driver maintains a file-specific secure read count for each open file of a collection. The HID class driver also maintains a secure read count for the collection, which is the sum of the file-specific secure read counts. The secure read count for the collection is initialized to zero when the collection is created, and a secure read count for a file is initialized to zero when a file is opened.
 
--   When the HID class driver receives an enable request for a file, it increments by 1 the secure read count for the file (and increments by 1 the secure read count for the collection).
+- When the HID class driver receives an enable request for a file, it increments by 1 the secure read count for the file (and increments by 1 the secure read count for the collection).
 
--   When the HID class driver receives a disable request for a file:
-    -   If the secure read count for the file is greater than zero, the driver decrements by 1 the secure read count for the file (and decrements by 1 the secure read count for the collection).
-    -   If the secure read count for the file is equal to zero, the driver does not change the secure read counts.
--   If the secure read count for a collection is greater than zero, the HID class driver enforces a secure read for the collection. Otherwise, the driver does not enforce a secure read for the collection.
+- When the HID class driver receives a disable request for a file:
+  - If the secure read count for the file is greater than zero, the driver decrements by 1 the secure read count for the file (and decrements by 1 the secure read count for the collection).
+  - If the secure read count for the file is equal to zero, the driver does not change the secure read counts.
+- If the secure read count for a collection is greater than zero, the HID class driver enforces a secure read for the collection. Otherwise, the driver does not enforce a secure read for the collection.
 
--   A client should use a disable request to cancel a corresponding enable request. However, if the client does not do this, the HID class driver appropriately decrements the secure read count for a collection when it processes an [**IRP\_MJ\_CLOSE**](../kernel/irp-mj-close.md) request for a file. When the driver processes the close request, it decrements the secure read count for the collection by the secure read count for the file being closed.
-
- 
-
+- A client should use a disable request to cancel a corresponding enable request. However, if the client does not do this, the HID class driver appropriately decrements the secure read count for a collection when it processes an [**IRP\_MJ\_CLOSE**](../kernel/irp-mj-close.md) request for a file. When the driver processes the close request, it decrements the secure read count for the collection by the secure read count for the file being closed.

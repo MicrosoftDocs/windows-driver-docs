@@ -1,7 +1,7 @@
 ---
-title: USB device class drivers included in Windows
+title: USB Device Class Drivers Included in Windows
 description: This article lists the Microsoft-provided drivers for the supported USB device classes.
-ms.date: 02/23/2023
+ms.date: 01/17/2024
 ---
 
 # USB device class drivers included in Windows

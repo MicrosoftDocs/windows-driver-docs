@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StorageNode class
+title: MSFT_StorageNode Class
 description: Represents a storage node in a cluster.
 ms.assetid: EAEDDC82-F170-48C4-BA93-A414C96C00D1
 keywords:

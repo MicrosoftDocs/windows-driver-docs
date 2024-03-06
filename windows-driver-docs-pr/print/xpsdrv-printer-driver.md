@@ -7,7 +7,7 @@ keywords:
 - XPSDrv printer drivers WDK , about XPSDrv printer drivers
 - configuration modules WDK XPSDrv
 - render modules WDK XPSDrv
-ms.date: 01/26/2023
+ms.date: 12/14/2023
 ---
 
 # XPS Printer Driver (XPSDrv)
@@ -26,6 +26,6 @@ These are the three main components of XPSDrv printer drivers:
 
 The configuration module of an XPSDrv printer driver provides the same functions as the configuration module of the [Printer Interface DLL](printer-interface-dll.md) of a GDI-based driver, but the XPSDrv configuration module also supports the [Print Ticket and Print Capabilities technologies](print-ticket-and-print-capabilities-technologies.md).
 
-The render module of an XPSDrv printer driver does not, necessarily, use the GDI-based rendering functions of a GDI-based printer driver. Instead, the render module of an XPSDrv printer driver consists of zero or more filters and a configuration file that describes the actions of each filter. The filters in the rendering module of an XPSDrv printer driver must also support the Print Ticket technology to correctly process the print job for the printer.
+The render module of an XPSDrv printer driver doesn't, necessarily, use the GDI-based rendering functions of a GDI-based printer driver. Instead, the render module of an XPSDrv printer driver consists of zero or more filters and a configuration file that describes the actions of each filter. The filters in the rendering module of an XPSDrv printer driver must also support the Print Ticket technology to correctly process the print job for the printer.
 
 For more information about installing XPSDrv drivers, see [XPSDrv Installation](xpsdrv-installation.md).

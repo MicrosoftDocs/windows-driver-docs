@@ -1,5 +1,5 @@
 ---
-title: C28135 warning
+title: C28135 Warning
 description: Warning C28135 If the first argument to KeWaitForSingleObject is a local variable, the Mode parameter must be KernelMode.
 keywords:
 - warnings listed WDK PREfast for Drivers
@@ -29,12 +29,4 @@ The following code example avoids this warning.
 ```
 KeWaitForSingleObject(&MyMutex, UserRequest, KernelMode, false, NULL);
 ```
-
- 
-
- 
-
-
-
-
 

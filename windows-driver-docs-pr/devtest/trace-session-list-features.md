@@ -43,11 +43,3 @@ When a trace session or trace log is displayed in the Trace Session List, you ca
 
 -   [Manage trace message filters](filtering-trace-messages.md)
 
- 
-
- 
-
-
-
-
-

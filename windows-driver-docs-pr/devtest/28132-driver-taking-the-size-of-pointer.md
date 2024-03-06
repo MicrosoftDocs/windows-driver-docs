@@ -1,5 +1,5 @@
 ---
-title: C28132 warning
+title: C28132 Warning
 description: Warning C28132 Taking the size of pointer.
 keywords:
 - warnings listed WDK PREfast for Drivers
@@ -44,12 +44,4 @@ The following code example avoids this warning.
 ```
 memset(b, 0, sizeof(*b));
 ```
-
- 
-
- 
-
-
-
-
 

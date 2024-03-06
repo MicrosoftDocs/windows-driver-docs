@@ -57,7 +57,7 @@ The DRIVER\_PAGE\_FAULT\_IN\_FREED\_SPECIAL\_POOL bug check has a value of 0x000
 </table>
 
  
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 If the driver responsible for the error can be identified, its name is printed on the blue screen and stored in memory at the location (PUNICODE\_STRING) **KiBugCheckDriver**.
 
 ## Cause

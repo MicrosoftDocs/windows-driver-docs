@@ -1,5 +1,5 @@
 ---
-title: Supporting Miracast wireless display drivers
+title: Supporting Miracast Wireless Display Drivers
 description: Describes how to provide driver support for Miracast wireless displays.
 keywords:
 - Wireless displays

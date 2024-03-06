@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_STREAMALLOCATOR\_STATUS
+title: KSPROPERTY_STREAMALLOCATOR_STATUS
 description: The KSPROPERTY\_STREAMALLOCATOR\_STATUS property retrieves the current status of the specified allocator.
 keywords: ["KSPROPERTY_STREAMALLOCATOR_STATUS Streaming Media Devices"]
 topic_type:

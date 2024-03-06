@@ -1,5 +1,5 @@
 ---
-title: Refresh method of the MSFT\_Disk class
+title: Refresh Method of the MSFT_Disk Class
 description: Refreshes the cached disk layout information.
 ms.assetid: 4BFE5289-DA95-4ED7-993E-496E97D9695A
 keywords:

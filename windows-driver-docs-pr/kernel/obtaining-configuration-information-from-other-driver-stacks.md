@@ -13,13 +13,11 @@ ms.date: 06/16/2017
 
 At times you need to obtain information from the configuration space of a device whose driver is on a stack other than the one that your driver is on. For instance, suppose you want to set a bit in the configuration space of a PCI-to-PCI bridge and you do not have a pointer to the PDO of the bridge. Although the operating system enumerates PCI-to-PCI bridges and creates a PDO for every bridge on the system, it does not register device interfaces for these devices. Therefore, you cannot use the device interface mechanism to access the configuration space of these bridges. For more information about device interfaces see [Introduction to Device Interfaces](../install/overview-of-device-interface-classes.md).
 
-In Windows NT 4.0, drivers could access the configuration space of such devices using the [**HalGetBusData**](/previous-versions/windows/hardware/drivers/ff546644(v=vs.85)) and [**HalSetBusData**](/previous-versions/windows/hardware/drivers/ff546644(v=vs.85)) routines. In Windows 2000 and later versions of Windows, this is no longer the case.
-
-Windows 2000 and later versions of Windows do not allow drivers to access hardware belonging to other driver stacks. A filter driver can be written to provide the functionality needed. If you wish to access bridge hardware, for instance, you must design a filter driver that implements the required operations on the bridge's configuration space. You must also provide an INF file that specifies the bridge hardware's possible hardware IDs, so the PnP manager can load the filter driver onto the bridge's driver stack when it detects the device ID of the bridge.
+One way for a driver to access hardware belonging to other driver stacks is to write a filter driver. To access bridge hardware, for instance, you could design a filter driver that implements the required operations on the bridge's configuration space. You must also provide an INF file that specifies the bridge hardware's possible hardware IDs, so the PnP manager can load the filter driver onto the bridge's driver stack when it detects the device ID of the bridge.
 
 Alternatively, you can install a filter programmatically using **SetupDi<em>Xxx</em>** functions in the co-installer for your device.
 
 The filter driver can then access the bridge using the [**BUS\_INTERFACE\_STANDARD**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_bus_interface_standard) interface.
 
- 
+
 

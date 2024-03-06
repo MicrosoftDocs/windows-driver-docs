@@ -34,7 +34,7 @@ The [**Problem status**](devpkey-device-problemstatus.md) property appears in th
 
 ## Using the debugger to find problem code and problem status for a device
 
-To view all devices that have a problem code in the kernel debugger, use the [**!devnode 0 21**](../debugger/-devnode.md) extension. This also shows you the ProblemStatus on the device. For example:
+To view all devices that have a problem code in the kernel debugger, use the [**!devnode 0 21**](../debuggercmds/-devnode.md) extension. This also shows you the ProblemStatus on the device. For example:
 
 ```
 0: kd> !devnode 0 21
@@ -48,7 +48,7 @@ DevNode 0x8ad6ab78 for PDO 0x81635c30
   Problem Status = 0xc00000bb
 ```
 
-You can also view problem code and problem status by issuing [**!devnode**](../debugger/-devnode.md) on a DEVICE_NODE address:
+You can also view problem code and problem status by issuing [**!devnode**](../debuggercmds/-devnode.md) on a DEVICE_NODE address:
 
 ```
 0: kd> !devnode 0x8ad6ab78 

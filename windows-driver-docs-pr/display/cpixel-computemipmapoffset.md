@@ -1,6 +1,6 @@
 ---
-title: CPixel ComputeMipMapOffset method
-description: The CPixel ComputeMipMapOffset method determines the sublevel offset of a mipmap texture.
+title: CPixel::ComputeMipMapOffset Method
+description: The CPixel::ComputeMipMapOffset method determines the sublevel offset of a mipmap texture.
 keywords: ["ComputeMipMapOffset method Display Devices", "ComputeMipMapOffset method Display Devices , CPixel interface", "CPixel interface Display Devices , ComputeMipMapOffset method"]
 topic_type:
 - apiref

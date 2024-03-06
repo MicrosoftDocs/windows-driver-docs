@@ -1,5 +1,5 @@
 ---
-title: Raising sensor events
+title: Raising Sensor Events
 description: Raising sensor events
 keywords:
 - sensor events
@@ -8,11 +8,10 @@ keywords:
 - sensor data update event
 - state change event
 - sensor state change event
-ms.date: 04/20/2017
+ms.date: 01/11/2024
 ---
 
 # Raising sensor events
-
 
 For more information about how sensor events work, see [About Sensor Driver Events](about-sensor-driver-events.md).
 
@@ -258,4 +257,5 @@ DWORD WINAPI CSampleEvents::_EventThreadProc(__in LPVOID pvData)
 ```
 
 ## Related topics
-[The Sensors Geolocation Driver Sample](../gnss/sensors-geolocation-driver-sample.md)
+
+- [The Sensors Geolocation Driver Sample](../gnss/sensors-geolocation-driver-sample.md)

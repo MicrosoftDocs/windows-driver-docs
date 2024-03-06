@@ -1,5 +1,5 @@
 ---
-title: Review and save package in the Device Metadata Authoring Wizard
+title: Review and Save Package in the Device Metadata Authoring Wizard
 description: Review and save package in the Device Metadata Authoring Wizard
 keywords:
 - Review and save package in the Device Metadata Authoring Wizard
@@ -27,12 +27,4 @@ After completing all of the tabs in the wizard, review and save your package.
 3.  Next to **Folder location**, confirm the location on your computer where you want to save package, or click **Change** to select a different location.
 4.  If you want to install and test the metadata package on your PC, select **Copy packages to your system's local metadata store**.
 5.  Click **Finish**.
-
- 
-
- 
-
-
-
-
 

@@ -1,5 +1,5 @@
 ---
-title: Direct3D software requirements in Windows 8
+title: Direct3D Software Requirements in Windows 8
 description: This topic describes software requirements to support Microsoft Direct3D in Windows 8.
 ms.date: 04/20/2017
 ---

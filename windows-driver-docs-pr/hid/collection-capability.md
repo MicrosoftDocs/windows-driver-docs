@@ -1,10 +1,10 @@
 ---
-title: Collection capability
+title: Collection Capability
 description: Collection capability
 keywords:
 - capabilities WDK HID collections
 - summary capabilities WDK HID
-ms.date: 10/12/2022
+ms.date: 01/11/2024
 ---
 
 # Collection capability

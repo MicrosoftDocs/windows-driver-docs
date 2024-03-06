@@ -1,5 +1,5 @@
 ---
-title: How do I include a trace statement in a C/C++ macro
+title: How do I Include a Trace Statement in a C/C++ Macro
 description: How do I include a trace statement in a C/C++ macro
 ms.date: 04/20/2017
 ---
@@ -74,12 +74,4 @@ In the source code, use the macros, such as in the following call:
 ```
 _EXIT_IF_EXP_FAILED(hr,"it failed");
 ```
-
- 
-
- 
-
-
-
-
 

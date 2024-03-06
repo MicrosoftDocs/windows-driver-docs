@@ -1,5 +1,5 @@
 ---
-title: MSFT\_InitiatorPort class
+title: MSFT_InitiatorPort Class
 description: Represents a Host Bus Adapter (HBA) initiator port on the host computer.
 ms.assetid: FFD445F4-3A34-4681-B38E-6E84C0E5DF06
 keywords:

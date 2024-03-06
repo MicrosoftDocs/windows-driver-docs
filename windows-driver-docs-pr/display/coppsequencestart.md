@@ -1,5 +1,5 @@
 ---
-title: COPPSequenceStart function
+title: COPPSequenceStart Function
 description: The sample COPPSequenceStart function sets the current video session to protected mode.
 keywords:
 - copy protection WDK COPP , video miniport driver code template

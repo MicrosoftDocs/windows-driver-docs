@@ -21,7 +21,7 @@ The Static Driver Verifier Defect Viewer has functionality that allows you to sa
 
 To save a trace, select "Save as..." from the file menu, or press Ctrl-S.  
 
-![screen shot of the defect viewer window, showing the location of the save functionality.](images/sdv-savedefecttrace.png)
+:::image type="content" source="images/sdv-savedefecttrace.png" alt-text="Screenshot of the Static Driver Verifier Defect Viewer window, highlighting the location of the Save functionality.":::
 
 Then specify a folder where the trace folder ("sdvdefect") will be placed.
 

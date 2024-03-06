@@ -13,7 +13,7 @@ ms.date: 03/20/2023
 
 The WDDM display driver model architecture is composed of user-mode and kernel-mode parts. The following figure shows the architecture required to support WDDM.
 
-![diagram illustrating the wddm architecture.](images/dx10arch.png)
+:::image type="content" source="images/dx10arch.png" alt-text="Diagram showing the WDDM architecture with user-mode and kernel-mode parts.":::
 
 A graphics hardware vendor must supply a user-mode display driver and display miniport driver (also known as a kernel-mode display driver or KMD).
 

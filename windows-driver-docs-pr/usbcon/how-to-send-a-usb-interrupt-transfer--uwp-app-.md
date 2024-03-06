@@ -1,69 +1,62 @@
 ---
+title: How to Send a USB Interrupt Transfer Request (UWP App)
 description: A USB device can support interrupt endpoints so that it can send or receive data at regular intervals.
-title: How to send a USB interrupt transfer request (UWP app)
-ms.date: 04/20/2017
+ms.date: 01/16/2024
 ---
 
 # How to send a USB interrupt transfer request (UWP app)
 
+Interrupt transfers occur when the host polls the device. This article demonstrates how to:
 
-**Summary**
+- Implement the event handler for **[UsbInterruptInPipe.DataReceived](/uwp/api/Windows.Devices.Usb.UsbInterruptInPipe#Windows_Devices_Usb_UsbInterruptInPipe_DataReceived)**
+- Register and unregister the event handler
 
--   Interrupt transfers occur when the host polls the device
--   Implement the event handler for [**UsbInterruptInPipe.DataReceived**](/uwp/api/Windows.Devices.Usb.UsbInterruptInPipe#Windows_Devices_Usb_UsbInterruptInPipe_DataReceived)
--   Register and unregister the event handler
+## Important APIs
 
-**Important APIs**
-
--   [**UsbInterruptInPipe**](/uwp/api/Windows.Devices.Usb.UsbInterruptInPipe)
--   [**UsbInterruptOutPipe**](/uwp/api/Windows.Devices.Usb.UsbInterruptOutPipe)
--   [**UsbInterruptInEventArgs**](/uwp/api/Windows.Devices.Usb.UsbInterruptInEventArgs)
+- **[UsbInterruptInPipe](/uwp/api/Windows.Devices.Usb.UsbInterruptInPipe)**
+- **[UsbInterruptOutPipe](/uwp/api/Windows.Devices.Usb.UsbInterruptOutPipe)**
+- **[UsbInterruptInEventArgs](/uwp/api/Windows.Devices.Usb.UsbInterruptInEventArgs)**
 
 A USB device can support interrupt endpoints so that it can send or receive data at regular intervals. To accomplish that, the host polls the device at regular intervals and data is transmitted each time the host polls the device. Interrupt transfers are mostly used for getting interrupt data from the device. This topic describes how a UWP app can get continuous interrupt data from the device.
 
-**Interrupt endpoint information**
+## Interrupt endpoint information
 
 For interrupt endpoints, the descriptor exposes these properties. Those values are for information only and should not affect how you manage the buffer transfer buffer.
 
--   How often can data be transmitted?
+- How often can data be transmitted?
 
-    Get that information by getting the **Interval** value of the endpoint descriptor (see [**UsbInterruptOutEndpointDescriptor.Interval**](/uwp/api/Windows.Devices.Usb.UsbInterruptOutEndpointDescriptor#Windows_Devices_Usb_UsbInterruptOutEndpointDescriptor_Interval) or [**UsbInterruptInEndpointDescriptor.Interval**](/uwp/api/Windows.Devices.Usb.UsbInterruptInEndpointDescriptor#Windows_Devices_Usb_UsbInterruptInEndpointDescriptor_Interval)). That value indicates how often data is sent to or received from the device in each frame on the bus.
+    Get that information by getting the **Interval** value of the endpoint descriptor (see **[UsbInterruptOutEndpointDescriptor.Interval](/uwp/api/Windows.Devices.Usb.UsbInterruptOutEndpointDescriptor#Windows_Devices_Usb_UsbInterruptOutEndpointDescriptor_Interval)** or **[UsbInterruptInEndpointDescriptor.Interval](/uwp/api/Windows.Devices.Usb.UsbInterruptInEndpointDescriptor#Windows_Devices_Usb_UsbInterruptInEndpointDescriptor_Interval)**). That value indicates how often data is sent to or received from the device in each frame on the bus.
 
-    **Note**  The **Interval** property is not the **bInterval** value (defined in the USB specification).
+    The **Interval** property is not the **bInterval** value (defined in the USB specification).
 
     That value indicates how often data is transmitted to or from the device. For example, for a high speed device, if **Interval** is 125 microseconds, data is transmitted every 125 microseconds. If **Interval** is 1000 microseconds, then data is transmitted every millisecond.
 
--   How much data can be transmitted in each service interval?
+- How much data can be transmitted in each service interval?
 
-    Get the number of bytes that can transmitted by getting the maximum packet size supported by the endpoint descriptor (see UsbInterruptOutEndpointDescriptor.MaxPacketSize or UsbInterruptInEndpointDescriptor.MaxPacketSize. The maximum packet size constrained on the speed of the device. For low-speed devices up to 8 bytes. For full-speed devices, up to 64 bytes. For high-speed, high-bandwidth devices, the app can send or receive more than maximum packet size up to 3072 bytes per microframe.
+    Get the number of bytes that can transmitted by getting the maximum packet size supported by the endpoint descriptor (see **[UsbInterruptOutEndpointDescriptor.MaxPacketSize](/uwp/api/windows.devices.usb.usbinterruptoutendpointdescriptor.maxpacketsize)** or **[UsbInterruptInEndpointDescriptor.MaxPacketSize](/uwp/api/windows.devices.usb.usbinterruptinendpointdescriptor.maxpacketsize)**). The maximum packet size constrained on the speed of the device. For low-speed devices up to 8 bytes. For full-speed devices, up to 64 bytes. For high-speed, high-bandwidth devices, the app can send or receive more than maximum packet size up to 3072 bytes per microframe.
 
-    **Note**  Interrupt endpoints on SuperSpeed devices are capable of transmitting even more number of bytes. That value is indicated by the **wBytesPerInterval** of the USB\_SUPERSPEED\_ENDPOINT\_COMPANION\_DESCRIPTOR. To retrieve the descriptor, get the descriptor buffer by using the [**UsbEndpointDescriptor.AsByte**](/uwp/api/Windows.Devices.Usb.UsbControlRequestType#Windows_Devices_Usb_UsbControlRequestType_AsByte) property and then parse that buffer by using [**DataReader**](/uwp/api/Windows.Storage.Streams.DataReader) methods.
+    Interrupt endpoints on SuperSpeed devices are capable of transmitting even more number of bytes. That value is indicated by the **wBytesPerInterval** of the USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR. To retrieve the descriptor, get the descriptor buffer by using the **[UsbEndpointDescriptor.AsByte](/uwp/api/Windows.Devices.Usb.UsbControlRequestType#Windows_Devices_Usb_UsbControlRequestType_AsByte)** property and then parse that buffer by using **[DataReader](/uwp/api/Windows.Storage.Streams.DataReader)** methods.
 
+## Interrupt OUT transfers
 
+A USB device can support interrupt OUT endpoints that receive data from the host at regular intervals. Each time the host polls the device, the host sends data. A UWP app can initiate an interrupt OUT transfer request that specifies the data to send. That request is completed when the device acknowledges the data from the host. A UWP app can write data to the **[UsbInterruptOutPipe](/uwp/api/Windows.Devices.Usb.UsbInterruptOutPipe)**.
 
-**Interrupt OUT transfers**
+## Interrupt IN transfers
 
-A USB device can support interrupt OUT endpoints that receive data from the host at regular intervals. Each time the host polls the device, the host sends data. A UWP app can initiate an interrupt OUT transfer request that specifies the data to send. That request is completed when the device acknowledges the data from the host. A UWP app can write data to the [**UsbInterruptOutPipe**](/uwp/api/Windows.Devices.Usb.UsbInterruptOutPipe).
+Conversely, a USB device can support interrupt IN endpoints as a way to inform the host about hardware interrupts generated by the device. Typically USB Human Interface Devices (HID) such as keyboards and pointing devices support interrupt OUT endpoints. When an interrupt occurs, the endpoint stores interrupt data but that data does not reach the host immediately. The endpoint must wait for the host controller to poll the device. Because there must be minimal delay between the time data is generated and reaches the host, it polls the device at regular intervals. A UWP app can get data received in the **[UsbInterruptInPipe](/uwp/api/Windows.Devices.Usb.UsbInterruptInPipe)**. The request that completes when data from the device is received by the host.
 
-**Interrupt IN transfers**
+## Before you start
 
-Conversely, a USB device can support interrupt IN endpoints as a way to inform the host about hardware interrupts generated by the device. Typically USB Human Interface Devices (HID) such as keyboards and pointing devices support interrupt OUT endpoints. When an interrupt occurs, the endpoint stores interrupt data but that data does not reach the host immediately. The endpoint must wait for the host controller to poll the device. Because there must be minimal delay between the time data is generated and reaches the host, it polls the device at regular intervals. A UWP app can get data received in the [**UsbInterruptInPipe**](/uwp/api/Windows.Devices.Usb.UsbInterruptInPipe). The request that completes when data from the device is received by the host.
-
-## Before you start...
-
-
--   You must have opened the device and obtained the [**UsbDevice**](/uwp/api/Windows.Devices.Usb.UsbDevice) object. Read [How to connect to a USB device (UWP app)](how-to-connect-to-a-usb-device--uwp-app-.md).
--   You can see the complete code shown in this topic in the CustomUsbDeviceAccess sample, Scenario3\_InterruptPipes files.
+- You must have opened the device and obtained the **[UsbDevice](/uwp/api/Windows.Devices.Usb.UsbDevice)** object. Read [How to connect to a USB device (UWP app)](how-to-connect-to-a-usb-device--uwp-app-.md).
+- You can see the complete code shown in this topic in the CustomUsbDeviceAccess sample, Scenario3_InterruptPipes files.
 
 ## Writing to the interrupt OUT endpoint
 
-
-The way the app sends an interrupt OUT transfer request is identical to bulk OUT transfers, except the target is an interrupt OUT pipe, represented by [**UsbInterruptOutPipe**](/uwp/api/Windows.Devices.Usb.UsbInterruptOutPipe). For more information, see [How to send a USB bulk transfer request (UWP app)](how-to-send-a-usb-bulk-transfer--uwp-app-.md).
+The way the app sends an interrupt OUT transfer request is identical to bulk OUT transfers, except the target is an interrupt OUT pipe, represented by **[UsbInterruptOutPipe](/uwp/api/Windows.Devices.Usb.UsbInterruptOutPipe)**. For more information, see [How to send a USB bulk transfer request (UWP app)](how-to-send-a-usb-bulk-transfer--uwp-app-.md).
 
 ## Step 1: Implement the interrupt event handler (Interrupt IN)
 
-
-When data is received from the device into the interrupt pipe, it raises the [**DataReceived**](/uwp/api/Windows.Devices.Usb.UsbInterruptInPipe#Windows_Devices_Usb_UsbInterruptInPipe_DataReceived) event. To get the interrupt data, the app must implement an event handler. The *eventArgs* parameter of the handler, points to the data buffer.
+When data is received from the device into the interrupt pipe, it raises the **[DataReceived](/uwp/api/Windows.Devices.Usb.UsbInterruptInPipe#Windows_Devices_Usb_UsbInterruptInPipe_DataReceived)** event. To get the interrupt data, the app must implement an event handler. The *eventArgs* parameter of the handler, points to the data buffer.
 
 This example code shows a simple implementation of the event handler. The handler maintains the count of interrupts received. Each time the handler is invoked, it increments the count. The handler gets the data buffer from *eventArgs* parameter and displays the count of interrupts and the length of bytes received.
 
@@ -90,7 +83,7 @@ private async void OnInterruptDataReceivedEvent(UsbInterruptInPipe sender, UsbIn
 }
 ```
 
-```ManagedCPlusPlus
+```cpp
 void OnInterruptDataReceivedEvent(UsbInterruptInPipe^ /* sender */, UsbInterruptInEventArgs^  eventArgs )
 {
     numInterruptsReceived++;
@@ -116,22 +109,18 @@ void OnInterruptDataReceivedEvent(UsbInterruptInPipe^ /* sender */, UsbInterrupt
 
 ## Step 2: Get the interrupt pipe object (Interrupt IN)
 
+To register the event handler for the **[DataReceived](/uwp/api/Windows.Devices.Usb.UsbInterruptInPipe#Windows_Devices_Usb_UsbInterruptInPipe_DataReceived)** event, obtain a reference to the **[UsbInterruptInPipe](/uwp/api/Windows.Devices.Usb.UsbInterruptInPipe)** by using any these properties:
 
-To register the event handler for the [**DataReceived**](/uwp/api/Windows.Devices.Usb.UsbInterruptInPipe#Windows_Devices_Usb_UsbInterruptInPipe_DataReceived) event, obtain a reference to the [**UsbInterruptInPipe**](/uwp/api/Windows.Devices.Usb.UsbInterruptInPipe) by using any these properties:
-
--   [**UsbDevice.DefaultInterface.InterruptInPipes\[n\]**](/uwp/api/Windows.Devices.Usb.UsbInterface) if your interrupt endpoint is present in the first USB interface.
--   [**UsbDevice.Configuration.UsbInterfaces\[m\].InterruptInPipes\[n\]**](/uwp/api/Windows.Devices.Usb.UsbInterface) for enumerating all interrupt IN pipes per interface, supported by the device.
--   [**UsbInterface.InterfaceSettings\[m\].InterruptInEndpoints \[n\].Pipe**](/uwp/api/Windows.Devices.Usb.UsbInterface) for enumerating interrupt IN pipes defined by settings of an interface.
--   [**UsbEndpointDescriptor.AsInterruptInEndpointDescriptor.Pipe**](/uwp/api/Windows.Devices.Usb.UsbInterruptInEndpointDescriptor#Windows_Devices_Usb_UsbInterruptInEndpointDescriptor_Pipe) for getting the pipe object from the endpoint descriptor for the interrupt IN endpoint.
+- **[UsbDevice.DefaultInterface.InterruptInPipes\[n\]](/uwp/api/Windows.Devices.Usb.UsbInterface)** if your interrupt endpoint is present in the first USB interface.
+- **[UsbDevice.Configuration.UsbInterfaces\[m\].InterruptInPipes\[n\]](/uwp/api/Windows.Devices.Usb.UsbInterface)** for enumerating all interrupt IN pipes per interface, supported by the device.
+- **[UsbInterface.InterfaceSettings\[m\].InterruptInEndpoints \[n\].Pipe](/uwp/api/Windows.Devices.Usb.UsbInterface)** for enumerating interrupt IN pipes defined by settings of an interface.
+- **[UsbEndpointDescriptor.AsInterruptInEndpointDescriptor.Pipe](/uwp/api/Windows.Devices.Usb.UsbInterruptInEndpointDescriptor#Windows_Devices_Usb_UsbInterruptInEndpointDescriptor_Pipe)** for getting the pipe object from the endpoint descriptor for the interrupt IN endpoint.
 
 **Note**  Avoid getting the pipe object by enumerating interrupt endpoints of an interface setting that is not currently selected. To transfer data, pipes must be associated with endpoints in the active setting.
 
-
-
 ## Step 3: Register the event handler to start receiving data (Interrupt IN)
 
-
-Next, you must register the event handler on the [**UsbInterruptInPipe**](/uwp/api/Windows.Devices.Usb.UsbInterruptInPipe) object that raises the [**DataReceived**](/uwp/api/Windows.Devices.Usb.UsbInterruptInPipe#Windows_Devices_Usb_UsbInterruptInPipe_DataReceived) event.
+Next, you must register the event handler on the **[UsbInterruptInPipe](/uwp/api/Windows.Devices.Usb.UsbInterruptInPipe)** object that raises the **[DataReceived](/uwp/api/Windows.Devices.Usb.UsbInterruptInPipe#Windows_Devices_Usb_UsbInterruptInPipe_DataReceived)** event.
 
 This example code shows how to register the event handler. In this example, the class keeps track of the event handler, pipe for which the event handler is registered, and whether the pipe is currently receiving data. All that information is used for unregistering the event handler, shown in the next step.
 
@@ -166,7 +155,6 @@ void RegisterForInterruptEvent(TypedEventHandler<UsbInterruptInPipe, UsbInterrup
 After the event handler is registered, it is invoked each time data is received in the associated interrupt pipe.
 
 ## Step 4: Unregister the event handler to stop receiving data (Interrupt IN)
-
 
 After you are finished receiving data, unregister the event handler.
 

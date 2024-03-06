@@ -1,5 +1,5 @@
 ---
-title: Message type
+title: Message Type
 description: Message type
 keywords:
 - NFC
@@ -7,7 +7,7 @@ keywords:
 - proximity
 - near field proximity
 - NFP
-ms.date: 11/16/2022
+ms.date: 01/11/2024
 ---
 
 # Message type

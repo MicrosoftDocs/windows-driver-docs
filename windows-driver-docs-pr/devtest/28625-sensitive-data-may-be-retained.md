@@ -1,5 +1,5 @@
 ---
-title: C28625 warning
+title: C28625 Warning
 description: Warning C28625 Function call used to clear sensitive data will be optimized away.
 ms.date: 04/20/2017
 f1_keywords: 
@@ -12,12 +12,4 @@ f1_keywords:
 warning C28625: Function call used to clear sensitive data will be optimized away
 
 The current function call might be optimized during compilation, which could make sensitive data stay in memory. Use the **SecureZeroMemory** or **RtlSecureZeroMemory** functions instead. A heuristic looks for identifier names that contain items such as "key" or "pass" to trigger this warning.
-
- 
-
- 
-
-
-
-
 

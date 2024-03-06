@@ -40,8 +40,3 @@ The Portable PDB (Program Database) format describes an encoding of debugging in
 For information about creating custom symbol servers, see [Custom Symbol Stores and Symbol Servers](symbol-stores-and-symbol-servers.md).
  
  
-
-
-
-
-

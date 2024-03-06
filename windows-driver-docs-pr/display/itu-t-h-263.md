@@ -27,19 +27,15 @@ ms.date: 04/20/2017
 
 # ITU-T H.263
 
-
-## <span id="ddk_itu_t_h_263_gg"></span><span id="DDK_ITU_T_H_263_GG"></span>
-
-
 ITU-T Recommendation H.263 is titled Video Coding for Low Bit Rate Communication. This recommendation offers improved compression performance relative to H.261, MPEG-1, and MPEG-2. The H.263 standard contains a baseline mode of operation that supports only the most basic features of H.263. It also contains a large number of optional, enhanced modes of operation that can be used for various purposes. Baseline H.263 prediction operates in this interface using a subset of the MPEG-1 features. The baseline mode contains no bidirectional prediction âˆ’ only forward prediction.
 
-**Rounding control:** Several H.263 optional modes require rounding control. This feature is supported by the **bRcontrol** member of [**DXVA\_PictureParameters**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_pictureparameters).
+**Rounding control:** Several H.263 optional modes require rounding control. This feature is supported by the **bRcontrol** member of [**DXVA_PictureParameters**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_pictureparameters).
 
-**Motion Vectors over Picture Boundaries:** Several H.263 optional modes allow motion vectors that address locations outside the boundaries of a picture, as defined in H.263 Annex D. The **bPicExtrapolation** member of [**DXVA\_PictureParameters**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_pictureparameters), indicates whether the accelerator needs to support such motion. There are two ways that an accelerator can support motion vectors over picture boundaries. In either case, the result is the same:
+**Motion Vectors over Picture Boundaries:** Several H.263 optional modes allow motion vectors that address locations outside the boundaries of a picture, as defined in H.263 Annex D. The **bPicExtrapolation** member of [**DXVA_PictureParameters**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_pictureparameters), indicates whether the accelerator needs to support such motion. There are two ways that an accelerator can support motion vectors over picture boundaries. In either case, the result is the same:
 
--   Clip the value of the address on each sample fetch to ensure that it stays within picture boundaries.
+* Clip the value of the address on each sample fetch to ensure that it stays within picture boundaries.
 
--   Pad the picture by using duplicated samples to widen the actual memory area used by one macroblock width and height across each border of the picture.
+* Pad the picture by using duplicated samples to widen the actual memory area used by one macroblock width and height across each border of the picture.
 
 **Bidirectional motion prediction:** the bidirectional motion prediction used in some optional H.263 prediction operations uses a different rounding operator than MPEG-1. (It uses downward-rounding of half integer values as opposed to upward-rounding.) The **bBidirectionalAveragingMode** member of [**DXVA\_PictureParameters**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_pictureparameters) indicates the rounding method used for combining prediction planes in bidirectional motion compensation.
 
@@ -49,11 +45,11 @@ ITU-T Recommendation H.263 is titled Video Coding for Low Bit Rate Communication
 
 OBMC prediction blocks can be realized in the hardware accelerator as a combination of predictions organized into three planes:
 
--   A current plane (with a plane index of zero)
+* A current plane (with a plane index of zero)
 
--   An upper/lower plane (with a plane index of 1)
+* An upper/lower plane (with a plane index of 1)
 
--   A left/right plane (with a plane index of 2)
+* A left/right plane (with a plane index of 2)
 
 The three planes can serve as temporary storage for the blocks *q(x,y)*, *r(x,y)*, and *s(x,y)* defined in H.263 Section F.3. After each of the three planes have been filled out for all four blocks, they can be combined according to the formula in H.263 Section F.3, and weighted by their respective *H* matrices given in H.263 Annex F.
 
@@ -61,21 +57,21 @@ As an example, an OBMC luminance macroblock prediction may be comprised of eight
 
 To implement the OBMC process in DirectX VA, 10 motion vectors are sent for the macroblock as shown in the following figure. The first four motion vectors are for the Y₀, Y₁, Y₂, and Y₃ blocks in the current macroblock. Remote motion vectors are then sent in the following order:
 
-1.  Left and right halves of the top of the macroblock.
+1. Left and right halves of the top of the macroblock.
 
-2.  Top and bottom halves of the left side of the macroblock.
+2. Top and bottom halves of the left side of the macroblock.
 
-3.  Top and bottom halves of the right side of the macroblock.
+3. Top and bottom halves of the right side of the macroblock.
 
 The following figure shows the motion vectors sent for a macroblock when using OBMC processing. (The letter C indicates a motion vector of the current macroblock. The letter R indicates a motion vector that is remote with respect to the current macroblock.)
 
-![diagram illustrating ten motion vectors sent for a macroblock when using overlapped block motion compensation (obmc) processing.](images/10vectors.png)
+:::image type="content" source="images/10vectors.png" alt-text="Diagram showing ten motion vectors for a macroblock in OBMC processing.":::
 
 Note that H.263 does not use distinct remote vectors for the left and right halves of the bottom of the macroblock—it reuses the vectors for the current macroblock.
 
 The following figure shows how one 8x8 block is placed in the three types of prediction planes used by OBMC processing in H.263.
 
-![diagram illustrating h.263 registration of one 8x8 block in the overlapped block motion compensation (obmc) prediction planes.](images/h263reg.png)
+:::image type="content" source="images/h263reg.png" alt-text="Diagram depicting H.263 registration of an 8x8 block in OBMC prediction planes.":::
 
 **PB frames (Annex G and M)**: In this mode, macroblocks for a P-frame and a pseudoâˆ’B-frame are multiplexed together into the unique PB-frame picture coding type. The B portion of each macroblock borrows from information encoded for the P portion of the macroblock: the B-frame forward and backward motion vectors are scaled from the P-frame vector, and the reconstructed P-frame macroblock serves as backward reference for the B portion. The PB-frame includes only a pseudoâˆ’B-frame, because the backward prediction for each macroblock can only refer to the reconstructed P macroblock that is contained within the same PB macroblock. However, as with traditional B-frame semantics, a B macroblock within a PB-frame can refer to any location within the forward-reference frame. The limitation of the backward reference creates smaller backward prediction block shapes (as described in H.263 Figure G.2). PB-frames are supported in DirectX VA by representing the P portions of the PB-frame as a P-frame, and the B portions of the PB-frame as a separate B-in-P bidirectionally predicted picture containing a unique B-in-PB type of macroblock that has two motion vectors.
 
@@ -94,6 +90,3 @@ The following figure shows how one 8x8 block is placed in the three types of pre
 **IDCT (Annex W):** This interface supports the inverse discrete cosine transform (IDCT) specified in Annex W of H.263.
 
 **Other H.263 Optional Features:** Other optional features of H.263 can be supported without any impact on the DirectX VA design. For example, Annexes I, K, S, and T can be easily handled by altering the software decoder without any impact on the accelerator.
-
- 
-

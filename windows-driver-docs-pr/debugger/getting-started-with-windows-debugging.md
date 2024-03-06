@@ -1,7 +1,7 @@
 ---
-title: Get started with Windows debugging
+title: Get Started with Windows Debugging
 description: Get started with debugging for Windows, and find resources to help you install tools and learn debugging techniques.
-ms.date: 12/07/2022
+ms.date: 12/20/2023
 ---
 
 # Get started with Windows debugging
@@ -16,7 +16,7 @@ Two separate computer systems are typically used for debugging because instructi
 
 **Host &lt;--------------------------------------------------&gt; Target**
 
-![Diagram of host and target systems connected with a double arrow.](images/target-host-1.png)
+:::image type="content" source="images/target-host-1.png" alt-text="Diagram illustrating the connection between host and target systems with a double arrow.":::
 
 In some situations, it's possible to use a virtual machine as the second system. For example, a virtual PC could run on the same PC as the code that you need to debug. However, if your code communicates with low-level hardware, using a virtual PC might not be the best approach. For more information, see [Setting up network debugging of a virtual machine - KDNET](setting-up-network-debugging-of-a-virtual-machine-host.md).
 
@@ -66,7 +66,7 @@ If your goal is to debug your own source code, you need to configure a path to y
 
 ## 8. Become familiar with debugger operation
 
-The [Debugger operation](debugger-operation-win8.md) section of this documentation describes debugger operation for various tasks. For example, [Loading debugger extension DLLs](loading-debugger-extension-dlls.md) explains how to load debugger extensions. 
+The [Debugger operation](debugger-operation-win8.md) section of this documentation describes debugger operation for various tasks. For example, [Loading debugger extension DLLs](../debuggercmds/loading-debugger-extension-dlls.md) explains how to load debugger extensions. 
 
 ## 9. Become familiar with debugging techniques
 
@@ -74,15 +74,15 @@ The [Debugger operation](debugger-operation-win8.md) section of this documentati
 
 ## 10. Use the debugger reference commands
 
-You can use different debugging commands as you work in the debugger. Use the [.hh command](-hh--open-html-help-file-.md) in the debugger to display help information about any debugging command. For more information about available commands, see [Debugger reference](debugger-reference.md).
+You can use different debugging commands as you work in the debugger. Use the [.hh command](../debuggercmds/-hh--open-html-help-file-.md) in the debugger to display helpful information about any debugging command. For more information about available commands, see [Debugger reference](debugger-reference.md).
 
 ## 11. Use debugging extensions for specific technologies
 
-There are multiple debugging extensions that can be used to parse domain-specific data structures. For more information, see [Specialized extensions](specialized-extensions.md).
+There are multiple debugging extensions that can be used to parse domain-specific data structures. For more information, see [Specialized extensions](../debuggercmds/specialized-extensions.md).
 
 ## 12. Learn about related Windows internals
 
-This documentation assumes that you have some knowledge about core Windows internals. To learn more about Windows internals, including memory usage, context, threads, and processes, you can review resources such as [*Windows Internals*](/sysinternals/resources/windows-internals) by Mark Russinovich, David Solomon, and Alex Ionescu.
+This documentation assumes that you have some knowledge about core Windows internals. To learn more about Windows internals, including memory usage, context, threads, and processes, you can review resources such as [Windows Internals](/sysinternals/resources/windows-internals) by  Pavel Yosifovich, Mark E. Russinovich, David A. Solomon and Alex Ionescu.
 
 ## 13. Review additional debugging resources
 

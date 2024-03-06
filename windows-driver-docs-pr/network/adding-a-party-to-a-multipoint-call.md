@@ -16,13 +16,13 @@ ms.date: 04/20/2017
 
 A client requests to add a party to a multipoint call with [**NdisClAddParty**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscladdparty). A client can add a party only to an existing multipoint call--that is, a call for which the client supplied a *ProtocolPartyContext* to [**NdisClMakeCall**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisclmakecall)(see [Making a Call](making-a-call.md)).
 
-The following figure shows a client of a call manager requesting to add a party to multipoint call.
+The following figure shows a client of a call manager requesting to add a party to a multipoint call.
 
-![diagram illustrating a client of a call manager requesting to add a party to multipoint call.](images/cm-17.png)
+:::image type="content" source="images/cm-17.png" alt-text="Diagram showing a client of a call manager requesting to add a party to a multipoint call.":::
 
 The following figure shows a client of an MCM driver requesting to add a party to multipoint call.
 
-![diagram illustrating a client of an mcm driver requesting to add a party to multipoint call.](images/fig1-17.png)
+:::image type="content" source="images/fig1-17.png" alt-text="Diagram depicting a client of an MCM driver requesting to add a party to a multipoint call.":::
 
 Before it calls **NdisClAddParty**, a client must allocate and initialize its context area for the party to be added. Clients commonly pass a pointer to such a context area as the *ProtocolPartyContext* and a pointer to a variable within that context area as the *NdisPartyHandle* parameters when they call **NdisClAddParty**.
 

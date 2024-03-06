@@ -21,11 +21,3 @@ To ungroup a trace session group:
 
 When you ungroup stopped trace sessions, they start running again. To remove the trace sessions, stop them, and then [remove them](removing-a-trace-session.md).
 
- 
-
- 
-
-
-
-
-

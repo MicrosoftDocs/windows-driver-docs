@@ -1,5 +1,5 @@
 ---
-title: MSFT\_SoftError\_NotInCache class
+title: MSFT_SoftError_NotInCache Class
 description: Represents a not-in-cache error.
 ms.assetid: EF2B4036-008A-49D2-A784-4089F62BEB3F
 keywords:

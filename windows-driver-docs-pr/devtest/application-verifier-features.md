@@ -40,7 +40,7 @@ A log is generated when a verifier stop occurs during verification of an applica
 
 Application Verifier displays a Logs window that contains the applications that have been run previously and the logs associated with them. To access the log window, on the View menu, select Logs.  To view the details of a log, select name of the application.
 
-![screen shot of application verifier showing single log for one app test app.](images/application-verifier-logs.png)
+:::image type="content" source="images/application-verifier-logs.png" alt-text="Screenshot of Application Verifier displaying a single log for a test app.":::
 
 ### Saving/Exporting Logs to XML
 
@@ -143,7 +143,7 @@ To close the property window - On the View menu, select Property Window . The ch
 
 Each verification layer has its own set of properties to set and change. To set a property for a verification layer, select the layer within the test area (for example, Basics). This step will display the properties of the selected test.
 
-![screen shot of application verifier showing properties for the heaps test](images/application-verifier-properties.png)
+:::image type="content" source="images/application-verifier-properties.png" alt-text="Screenshot of Application Verifier displaying properties for the Heaps test.":::
 
 ### Setting Properties 
  

@@ -1,5 +1,5 @@
 ---
-title: Open a dump file with WinDbg
+title: Open a Dump File with WinDbg
 description: Learn about various ways to open a crash memory dump file using WinDbg in a debugging session.
 ms.date: 12/13/2022
 ---
@@ -24,4 +24,4 @@ The `-v` option, which is verbose mode, is also useful. For more information abo
 
 ## Debugger command window
 
-If WinDbg is already in a kernel-mode debugging session, you can open a dump file by using the [.opendump (open dump file)](-opendump--open-dump-file-.md) command, followed by the [g (Go)](g--go-.md) command.
+If WinDbg is already in a kernel-mode debugging session, you can open a dump file by using the [.opendump (open dump file)](../debuggercmds/-opendump--open-dump-file-.md) command, followed by the [g (Go)](../debuggercmds/g--go-.md) command.

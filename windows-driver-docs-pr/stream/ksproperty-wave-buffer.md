@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_WAVE\_BUFFER
+title: KSPROPERTY_WAVE_BUFFER
 description: The KSPROPERTY\_WAVE\_BUFFER property describes a wave device's buffer.
 keywords: ["KSPROPERTY_WAVE_BUFFER Streaming Media Devices"]
 topic_type:

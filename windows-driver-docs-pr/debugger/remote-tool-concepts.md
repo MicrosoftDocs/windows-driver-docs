@@ -42,8 +42,3 @@ For help with the Remote Server query command, see [**Remote Server Query Comman
  
 
  
-
-
-
-
-

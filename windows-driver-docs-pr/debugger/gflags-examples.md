@@ -50,8 +50,3 @@ The examples in the second section apply to features available only in Windows V
  
 
  
-
-
-
-
-

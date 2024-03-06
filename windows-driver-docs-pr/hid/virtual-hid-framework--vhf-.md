@@ -1,7 +1,7 @@
 ---
-title: Write a HID source driver by using Virtual HID Framework (VHF)
+title: Write a HID Source Driver by Using Virtual HID Framework (VHF)
 description: Learn about writing a HID source driver that reports HID data to the operating system.
-ms.date: 05/09/2022
+ms.date: 01/11/2024
 ---
 
 # Write a HID source driver by using Virtual HID Framework (VHF)

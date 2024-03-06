@@ -1,5 +1,5 @@
 ---
-title: Rotation element
+title: Rotation Element
 description: The optional Rotation element specifies the amount to rotate each image of the scanned document.
 keywords: ["Rotation element Imaging Devices"]
 topic_type:

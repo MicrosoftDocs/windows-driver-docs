@@ -1,10 +1,12 @@
 ---
-title: Access a USB device by using WinUSB functions
+title: Access a USB Device by Using WinUSB Functions
 description: This article includes a walkthrough of using WinUSB functions to communicate with a USB device that is using the Winusb.sys driver.
-ms.date: 10/28/2022
+ms.date: 01/17/2024
 ---
 
 # Access a USB device by using WinUSB functions
+
+This article includes a detailed walkthrough of how to use [WinUSB functions](/windows/win32/api/winusb/) to communicate with a USB device that is using Winusb.sys as its function driver.
 
 ## Summary
 
@@ -17,8 +19,6 @@ ms.date: 10/28/2022
 - [SetupAPI Functions](../install/setupapi.md)
 - [WinUSB functions](/windows/win32/api/winusb/)
 
-This article includes a detailed walkthrough of how to use [WinUSB functions](/windows/win32/api/winusb/) to communicate with a USB device that is using Winusb.sys as its function driver.
-
 If you're using Microsoft Visual Studio 2013, create your skeleton app by using the WinUSB template. In that case, skip steps 1 through 3 and proceed from step 4 in this article. The template opens a file handle to the device and obtains the WinUSB handle required for subsequent operations. That handle is stored in the app-defined DEVICE_DATA structure in device.h.
 
 For more information about the template, see Write a Windows desktop app based on the WinUSB template.
@@ -26,7 +26,7 @@ For more information about the template, see Write a Windows desktop app based o
 > [!NOTE]
 > WinUSB functions require Windows XP or later. You can use these functions in your C/C++ application to communicate with your USB device. Microsoft does not provide a managed API for WinUSB.
 
-## Prerequisites
+## Before you start
 
 The following items apply to this walkthrough:
 

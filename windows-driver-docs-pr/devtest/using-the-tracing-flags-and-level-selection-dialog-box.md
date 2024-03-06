@@ -1,5 +1,5 @@
 ---
-title: Using the Tracing Flags and Level Selection dialog box
+title: Using the Tracing Flags and Level Selection Dialog Box
 description: Using the Tracing Flags and Level Selection dialog box
 keywords:
 - trace flags WDK
@@ -23,12 +23,4 @@ In the **Tracing Flags and Level Selection** dialog box, the **G** (GUID) icon r
     -   Double-click the **Flags** item for the provider, and then select or clear the check box for the flag that you want. (You can select multiple flags).
     -   Right-click the **Flags** item, and then click **Set All Flags** or **Clear All Flags**.
 -   To save the changes, click **OK**.
-
- 
-
- 
-
-
-
-
 

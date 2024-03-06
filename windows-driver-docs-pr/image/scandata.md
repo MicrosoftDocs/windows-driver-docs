@@ -1,5 +1,5 @@
 ---
-title: ScanData element
+title: ScanData Element
 description: The required ScanData element contains the binary data that represents the scanned image.
 keywords: ["ScanData element Imaging Devices"]
 topic_type:

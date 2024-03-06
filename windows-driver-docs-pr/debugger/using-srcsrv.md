@@ -18,7 +18,7 @@ For example:
 
 If the source path is set as shown in the preceding example, the debugger first uses [SrcSrv](srcsrv.md) to retrieve source files from locations specified in the target modules' symbol files. If SrcSrv is unable to retrieve a source file, the debugger attempts to retrieve it from c:\\someSourceCode. Regardless of whether srv\* is the first element in the path or appears later, the debugger always uses SymSrv before it searches any other directories listed in the path.
 
-If a source file is retrieved by [SrcSrv](srcsrv.md), it remains on your hard drive after the debugging session is over. Source files are stored locally in the src subdirectory of the home directory (unlike the symbol server, the source server does not specify a local cache in the `srv*` syntax itself). The home directory defaults to the Debugging Tools for Windows installation directory; it can be changed by using the [**!homedir**](-homedir.md) extension or by setting the DBGHELP\_HOMEDIR environment variable. If the src subdirectory of the home directory does not already exist, it is created.
+If a source file is retrieved by [SrcSrv](srcsrv.md), it remains on your hard drive after the debugging session is over. Source files are stored locally in the src subdirectory of the home directory (unlike the symbol server, the source server does not specify a local cache in the `srv*` syntax itself). The home directory defaults to the Debugging Tools for Windows installation directory; it can be changed by using the [**!homedir**](../debuggercmds/-homedir.md) extension or by setting the DBGHELP\_HOMEDIR environment variable. If the src subdirectory of the home directory does not already exist, it is created.
 
 ### <span id="debugging_srcsrv"></span><span id="DEBUGGING_SRCSRV"></span>Debugging SrcSrv
 
@@ -26,7 +26,7 @@ If you experience any trouble extracting the source files from the debugger, sta
 
 ### <span id="retrieving_source_files"></span><span id="RETRIEVING_SOURCE_FILES"></span>Retrieving Source Files
 
-If you use the [**.open (Open Source File)**](-open--open-source-file-.md) command to open a new source file through [SrcSrv](srcsrv.md), you must include the -m Address parameter.
+If you use the [**.open (Open Source File)**](../debuggercmds/-open--open-source-file-.md) command to open a new source file through [SrcSrv](srcsrv.md), you must include the -m Address parameter.
 
 To facilitate the use of [SrcSrv](srcsrv.md) from tools other than the debuggers listed previously, the DbgHelp API provides access to SrcSrv functionality through the **SymGetSourceFile** function. To retrieve the name of the source file to be retrieved, call the **SymEnumSourceFiles** or **SymGetLineFromAddr64** function. For more details on the DbgHelp API, see the dbghelp.chm documentation, which can be found in the sdk/help subdirectory of the Debugging Tools for Windows installation directory, or see [Debug Help Library](/windows/win32/debug/debug-help-library).
 

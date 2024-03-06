@@ -1,7 +1,7 @@
 ---
+title: USBLPM Tool
 description: The USBLPM tool monitors the U0/U1/U2/U3 power states of USB 3.0 ports.
-title: USBLPM
-ms.date: 04/20/2017
+ms.date: 01/17/2024
 ---
 
 # USBLPM tool
@@ -35,9 +35,9 @@ Where the time value is an integer from 1 through 100000. The **/PollingInterval
 **To test a device or a hub:**
 
 1. Start the tool.
-2. Change the mode from Monitoring to Testing.
-3. Select the test device.
-4. Click **Start** to start a test run.
+1. Change the mode from Monitoring to Testing.
+1. Select the test device.
+1. Click **Start** to start a test run.
 
 The test completes within 10 seconds and the results are displayed to the user.
 
@@ -46,19 +46,19 @@ The test tries different combinations of U0/U1/U2 states and ensures that the te
 To test a hub, remove all devices attached to it and run the test. Then, attach one or more devices and rerun the test. However, if one of the downstream devices does not correctly support U1/U2, the hub test fails. Therefore, before running the test on the hub, we recommend that you first run the test on devices that are downstream of the hub to ensure that they pass the test.
 
 > [!NOTE]
->Do not change the device topology while running the test. The behavior of the tool is undefined if the configuration is changed dynamically.
+> Do not change the device topology while running the test. The behavior of the tool is undefined if the configuration is changed dynamically.
 
 ### Configuring U1/U2 states
 
 You can use USBLPM to enable or disable U1 and U2 states for all USB devices on the system by running the following command:
 
-```console
+```cmd
 usblpm /enable|/disable U1|U2
 ```
 
 For example, this command disables U2:
 
-```console
+```cmd
 usblpm /disable U2
 ```
 
@@ -69,8 +69,8 @@ In the Configuring mode, the tool does not display any window. The enabling or d
 Before you test USBLPM for a SuperSpeed hub, you should perform the following steps to disable selective suspend.
 
 1. In Device Manager, right-click on the **SuperSpeed hub** and select **Properties**.
-2. Click the **Power Management** tab.
-3. Uncheck **Allow the computer to turn off this device to save power**.
+1. Click the **Power Management** tab.
+1. Uncheck **Allow the computer to turn off this device to save power**.
 
 After you have finished testing with USBLPM, enable selective suspend for the hub by checking **Allow the computer to turn off this device to save power to re-enable selective suspend**.
 
@@ -79,6 +79,5 @@ After you have finished testing with USBLPM, enable selective suspend for the hu
 
 ## Related topics
 
-[Overview of Microsoft USB Test Tool (MUTT) devices](./microsoft-usb-test-tool--mutt--devices.md)
-
-[Tools in the MUTT software package](mutt-software-package.md)
+- [Overview of Microsoft USB Test Tool (MUTT) devices](./microsoft-usb-test-tool--mutt--devices.md)
+- [Tools in the MUTT software package](mutt-software-package.md)

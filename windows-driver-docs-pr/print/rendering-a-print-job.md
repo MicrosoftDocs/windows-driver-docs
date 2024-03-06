@@ -1,5 +1,5 @@
 ---
-title: Render a print job
+title: Render a Print Job
 description: Provides information about how to render a print job.
 keywords:
 - printer graphics DLL WDK, rendering print jobs

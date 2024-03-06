@@ -14,12 +14,10 @@ api_type:
 
 # Activating a Process Server
 
-
 The process server that is included in Debugging Tools for Windows is called DbgSrv (dbgsrv.exe). To activate a process server, open an elevated Command Prompt window (Run as Administrator), and enter the **dbgsrv** command.
 
 **Note**  You can activate a process server without having elevated privileges, and debugging clients will be able to connect to the server. However, clients will not be able to discover a process server unless it was activated with elevated privileges. For information about how to discover debugging servers, see [Searching for Process Servers](searching-for-process-servers.md).
 
- 
 
 DbgSrv supports several transport protocols: named pipe (NPIPE), TCP, COM port, secure pipe (SPIPE), and secure sockets layer (SSL).
 
@@ -41,15 +39,12 @@ dbgsrv -t ssl:proto=Protocol,{certuser=Cert|machuser=Cert},port=Socket,clicon=Cl
 
 ## <span id="ddk_activating_a_process_server_dbg"></span><span id="DDK_ACTIVATING_A_PROCESS_SERVER_DBG"></span>
 
-
 The parameters in the previous commands have the following possible values:
 
 <span id="________pipe_________PipeName"></span><span id="________pipe_________pipename"></span><span id="________PIPE_________PIPENAME"></span> **pipe=** *PipeName*  
 When NPIPE or SPIPE protocol is used, *PipeName* is a string that will serve as the name of the pipe. Each pipe name should identify a unique process server. If you attempt to reuse a pipe name, you will receive an error message. *PipeName* must not contain spaces or quotation marks. *PipeName* can include a numerical **printf**-style format code, such as **%x** or **%d**. The process server will replace this with the process ID of DbgSrv. A second such code will be replaced with the thread ID of DbgSrv.
 
 **Note**  You might need to enable file and printer sharing on the computer that is running the process server. In Control Panel, navigate to **Network and Internet &gt; Network and Sharing Center&gt; Advanced sharing settings**. Select **Turn on file and printer sharing**.
-
- 
 
 <span id="________port_________Socket"></span><span id="________port_________socket"></span><span id="________PORT_________SOCKET"></span> **port=** *Socket*  
 When TCP or SSL protocol is used, *Socket* is the socket port number.
@@ -62,8 +57,6 @@ When TCP or SSL protocol is used and the **clicon** parameter is specified, a *r
 Since the process server is looking for one specific client, you cannot connect multiple clients to the server if you use this method. If the connection is refused or is broken you will have to restart the process server. A reverse-connection process server will not appear when someone uses the **-QR** command-line option to display all active servers.
 
 **Note**   When **clicon** is used, it is best to start the smart client before the process server is created, although the usual order (server before client) is also permitted.
-
- 
 
 <span id="port_________COMPort"></span><span id="port_________comport"></span><span id="PORT_________COMPORT"></span>**port=** *COMPort*  
 When COM protocol is used, *COMPort* specifies the COM port to be used. The prefix "COM" is optional -- for example, both "com2" and "2" are acceptable.
@@ -103,7 +96,7 @@ Suspends the Image File Execution Option (IFEO) value for the given image. *Exec
 Causes DbgSrv to create a new process. You can use this to create a process that you intend to debug. This is similar to spawning a new process from the debugger, except that this process will not be debugged when it is created. To debug this process, determine its PID and use the **-p** option when starting the smart client to debug this process.
 
 <span id="s"></span><span id="S"></span>**s**  
-Causes the newly-created process to be immediately suspended. If you are using this option, it is recommended that you use CDB as your smart client, and that you start the smart client with the **-pb** command-line option, in conjunction with **-p PID**. If you include the **-pb** option on the command line, the process will resume when the debugger attaches to it; otherwise you can resume the process with the [**~\*m**](-m--resume-thread-.md) command.
+Causes the newly-created process to be immediately suspended. If you are using this option, it is recommended that you use CDB as your smart client, and that you start the smart client with the **-pb** command-line option, in conjunction with **-p PID**. If you include the **-pb** option on the command line, the process will resume when the debugger attaches to it; otherwise you can resume the process with the [**~\*m**](../debuggercmds/-m--resume-thread-.md) command.
 
 <span id="AppCmdLine"></span><span id="appcmdline"></span><span id="APPCMDLINE"></span>*AppCmdLine*  
 Specifies the full command line of the process to be created. *AppCmdLine* can be either a Unicode or ASCII string, and can include any printable character. All text that appears after the **-c\[s\]** parameter will be taken to form the string *AppCmdLine*.

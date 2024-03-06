@@ -1,5 +1,5 @@
 ---
-title: Updates for IddCx versions 1.6 and later
+title: Updates for IddCx Versions 1.6 and Later
 description: IddCx version 1.6 updates for console and remote indirect display drivers
 ms.date: 08/09/2022
 keywords:
@@ -23,7 +23,7 @@ The IddCx version returned by [**IddCxGetVersion**](/windows-hardware/drivers/dd
 
 ## WPP information in public IddCx symbols
 
-Starting with IddCx version 1.6, the public IddCx symbol files contain all the Windows software trace processor (WPP) information. This means that the [**!wmitrace.logdump**](../debugger/-wmitrace-logdump.md) debugger command decodes and displays the WPP message in the kernel debugger.
+Starting with IddCx version 1.6, the public IddCx symbol files contain all the Windows software trace processor (WPP) information. This means that the [**!wmitrace.logdump**](../debuggercmds/-wmitrace-logdump.md) debugger command decodes and displays the WPP message in the kernel debugger.
 
 ## Ability to access buffers allocated in system memory
 

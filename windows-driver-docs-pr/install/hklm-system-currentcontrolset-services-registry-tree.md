@@ -1,13 +1,14 @@
 ---
 title: HKLM\SYSTEM\CurrentControlSet\Services Registry Tree
 description: HKLM\SYSTEM\CurrentControlSet\Services registry tree stores information about each service on the system.
-ms.custom: contperf-fy22q4
-ms.date: 05/20/2022
+ms.date: 12/20/2023
 ---
 
 # HKLM\\SYSTEM\\CurrentControlSet\\Services Registry Tree
 
-The **HKLM\\SYSTEM\\CurrentControlSet\\Services** registry tree stores information about each service on the system. Each driver has a key of the form **HKLM\\SYSTEM\\CurrentControlSet\\Services\\**<em>DriverName</em>. The PnP manager passes this path of a driver in the *RegistryPath* parameter when it calls the driver's [**DriverEntry**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) routine. A driver can pre-seed global driver-defined data under the **Parameters** subkey of its key in the **Services** tree using an [**AddReg**](./inf-addreg-directive.md) directive in the driver's INF file. To access that key at runtime, a WDM driver should use [IoOpenDriverRegistryKey](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioopendriverregistrykey) with a DRIVER_REGKEY_TYPE of DriverRegKeyParameters and a WDF driver should use [WdfDriverOpenParametersRegistryKey](/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdriveropenparametersregistrykey). Information that is stored under this key is available to the driver during its initialization.
+The **HKLM\\SYSTEM\\CurrentControlSet\\Services** registry tree stores information about each service on the system. Each driver has a key of the form **HKLM\\SYSTEM\\CurrentControlSet\\Services\\**<em>DriverName</em>.
+
+The PnP manager passes this path of a driver in the *RegistryPath* parameter when it calls the driver's [**DriverEntry**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) routine. A driver can store global driver-defined data under the **Parameters** subkey of its key in the **Services** tree using an [**AddReg**](./inf-addreg-directive.md) directive in the driver's INF file. To access that key at runtime, a WDM driver should use [IoOpenDriverRegistryKey](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioopendriverregistrykey) with a DRIVER_REGKEY_TYPE of **DriverRegKeyParameters** and a WDF driver should use [**WdfDriverOpenParametersRegistryKey**](/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdriveropenparametersregistrykey). Information that is stored under this key is available to the driver during its initialization.
 
 For more info about registry keys that drivers typically use, see [Introduction to Registry Keys for Drivers](../wdf/introduction-to-registry-keys-for-drivers.md).
 

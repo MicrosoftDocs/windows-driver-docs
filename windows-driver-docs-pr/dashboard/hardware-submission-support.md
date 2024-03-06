@@ -2,7 +2,7 @@
 title: Get support for Partner Center dashboard issues
 description: Get support for Partner Center dashboard issues
 ms.topic: article
-ms.date: 09/07/2022
+ms.date: 01/04/2024
 ---
 
 # Get support for Partner Center dashboard issues
@@ -15,16 +15,16 @@ To submit a request to the Partner Center drivers team in GitHub:
 
 1. Go to the Partner Center documentation web page that you believe should've been able to help you with your issue.
 
->[!TIP]
->If the content you are looking for doesn't exist at all, just find a page that is relatively related to your issue.
+    >[!TIP]
+    >If the content you are looking for doesn't exist at all, just find a page that is relatively related to your issue.
 
 1. Once you're on the page, select the feedback icon on the upper right side of the page.
 
-    :::image type="content" source="images/hardware-submission-support/github-feedback.png" alt-text="Screenshot showing the Github feedback icon on the documentation page.":::
+    :::image type="content" source="images/hardware-submission-support/github-feedback.png" alt-text="Screenshot showing the GitHub feedback icon on the documentation page.":::
 
 1. Your browser should now be scrolled to the **Feedback** section. Select **This page**.
 
-    :::image type="content" source="images/hardware-submission-support/github-feedback-this-page.png" alt-text="Screenshot showing the Github This Page button on the documentation page.":::
+    :::image type="content" source="images/hardware-submission-support/github-feedback-this-page.png" alt-text="Screenshot showing the GitHub This Page button on the documentation page.":::
 
 1. Enter the title and content of your feedback.
 

@@ -1,5 +1,5 @@
 ---
-title: Port monitor client DLL functions
+title: Port Monitor Client DLL Functions
 description: Provides information about port monitor client DLL functions.
 keywords:
 - port monitors WDK print, functions

@@ -1,5 +1,5 @@
 ---
-title: Specify AutoPlay Handler and options in the Device Metadata Authoring Wizard
+title: Specify AutoPlay Handler and Options in the Device Metadata Authoring Wizard
 description: Specify AutoPlay Handler and options in the Device Metadata Authoring Wizard
 keywords:
 - Specify AutoPlay Handler and options in the Device Metadata Authoring Wizard
@@ -35,12 +35,4 @@ To define an AutoPlay Handler for a device, select from the following options un
     **Note**  You can't define both AutoPlay Handler and Desktop AutoPlay Handler.
 
      
-
- 
-
- 
-
-
-
-
 

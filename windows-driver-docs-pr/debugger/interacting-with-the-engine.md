@@ -17,7 +17,7 @@ The type of value that is returned by **Evaluate** is determined by the symbols 
 
 ## Aliases
 
-*Aliases* are character strings that are automatically replaced with other character strings when used in debugger commands and expressions. For an overview of aliases, see [Using Aliases](using-aliases.md). The debugger engine has several classes of aliases.
+*Aliases* are character strings that are automatically replaced with other character strings when used in debugger commands and expressions. For an overview of aliases, see [Using Aliases](../debuggercmds/using-aliases.md). The debugger engine has several classes of aliases.
 
 The *fixed-name aliases* are indexed by number and have the names **$u0**, **$u1**, ..., **$u9**. The values of these aliases can be set using the [**SetTextMacro**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-settextmacro) method and can be retrieved using [**GetTextMacro**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-gettextmacro) method.
 

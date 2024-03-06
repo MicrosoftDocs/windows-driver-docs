@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_VIDEOPROCAMP\_SHARPNESS
+title: KSPROPERTY_VIDEOPROCAMP_SHARPNESS
 description: The KSPROPERTY\_VIDEOPROCAMP\_SHARPNESS property controls a camera's sharpness setting. This property is optional.
 keywords: ["KSPROPERTY_VIDEOPROCAMP_SHARPNESS Streaming Media Devices"]
 topic_type:

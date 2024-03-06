@@ -1,7 +1,7 @@
 ---
-title: Headers and libraries required by a USB client driver
+title: Headers and Libraries Required by a USB Client Driver
 description: This article lists the headers and libraries required for writing a Windows Driver Model (WDM) USB client driver.
-ms.date: 01/20/2023
+ms.date: 01/12/2024
 ---
 
 # Headers and libraries required by a USB client driver

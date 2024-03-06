@@ -1,12 +1,12 @@
 ---
-title: Microsoft universal printer driver (Unidrv)
+title: Microsoft Universal Printer Driver (Unidrv)
 description: This section shows how to add minidrivers to Unidrv to support different printer models.
 keywords:
 - printer drivers WDK, Unidrv
 - Unidrv WDK print
 - Universal printer driver WDK See Unidrv
 - minidrivers WDK Unidrv
-ms.date: 01/24/2023
+ms.date: 12/14/2023
 ---
 
 # Microsoft universal printer driver (Unidrv)

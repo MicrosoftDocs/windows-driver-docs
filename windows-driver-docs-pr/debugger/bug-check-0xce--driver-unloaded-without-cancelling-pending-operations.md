@@ -67,7 +67,7 @@ This driver failed to cancel lookaside lists, DPCs, worker threads, or other suc
  
 ## Resolution
 
-The [!analyze](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [!analyze](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
  
 
 

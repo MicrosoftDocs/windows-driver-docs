@@ -27,8 +27,3 @@ No Registry Settings for notepad.exe executable
  
 
  
-
-
-
-
-

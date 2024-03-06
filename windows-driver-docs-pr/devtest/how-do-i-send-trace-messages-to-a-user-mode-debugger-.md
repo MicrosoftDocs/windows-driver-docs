@@ -1,5 +1,5 @@
 ---
-title: How do I send trace messages to a user-mode debugger
+title: How do I Send Trace Messages to a User-Mode Debugger
 description: How do I send trace messages to a user-mode debugger
 ms.date: 04/20/2017
 ---
@@ -36,12 +36,4 @@ WPP_DEBUG((format, ...))
 ```
 
 You can use most formats and arguments with WPP\_DEBUG. However, you cannot use the tracing-specific format specifications, such as %!IPADDR%.
-
- 
-
- 
-
-
-
-
 

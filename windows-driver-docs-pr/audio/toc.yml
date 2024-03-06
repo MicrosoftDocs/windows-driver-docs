@@ -144,8 +144,6 @@
         href: microphone-array-geometry-property.md
       - name: "Microphone Array Geometry Descriptor Format"
         href: microphone-array-geometry-descriptor-format.md
-      - name: "Modified INF for MSVAD Micarray"
-        href: modified-inf-for-msvad-micarray.md
     - name: "Hardware Events"
       href: hardware-events.md
   - name: "Audio Data Formats and Data Ranges"
@@ -378,52 +376,40 @@
     href: windows-11-apis-for-audio-processing-objects.md
   - name: "Audio Hardware Resource Management"
     href: audio-hardware-resource-management.md
-  - name: "Bluetooth Bypass Guidelines for Audio Drivers"
+  - name: "Bluetooth HFP Bypass Guidelines for Audio Drivers"
 # Auto-expanded node
     items: 
-    - name: "Bluetooth Bypass Guidelines for Audio Drivers"
+    - name: "Bluetooth HFP bypass guidelines for audio drivers"
       href: bluetooth-bypass-guidelines-for-audio-drivers.md
-    - name: "Theory of Bluetooth bypass audio streaming"
-      href: theory-of-operation.md
-    - name: "HFP Device Startup"
+    - name: "Bluetooth HFP bypass audio streaming"
+      href: bluetooth-hfp-bypass-audio-streaming.md
+    - name: "HFP device startup"
       href: startup.md
-    - name: "HFP Device Connection"
+    - name: "HFP device connection"
       href: hfp-device-connection.md
-    - name: "HFP Device Removal"
+    - name: "HFP device removal"
       href: removal.md
-    - name: "Kernel Streaming Considerations"
+    - name: "Kernel streaming considerations"
       href: kernel-streaming-considerations.md
-    - name: "Audio Endpoint Container ID"
+    - name: "Audio endpoint container ID"
       href: audio-endpoint-container-id.md
-    - name: "Setting Properties and Registry Values"
+    - name: "Setting properties and registry values"
       href: setting-properties-and-registry-values.md
-    - name: "Setting Friendly Names,Sideband SCO Transport and Registering APOs"
+    - name: "Setting friendly names, sideband SCO transport and registering APOs"
       href: setting-friendly-name--registering-apos.md
-    - name: "Obtaining Bluetooth Address of HF Device"
+    - name: "Obtaining bluetooth address of HF device"
       href: obtaining-bluetooth-address-of-hf-device.md
   - name: "Hardware-Offloaded Audio Processing"
 # Auto-expanded node
     items: 
     - name: "Hardware-Offloaded Audio Processing"
       href: hardware-offloaded-audio-processing.md
-    - name: "Architectural Overview"
-      href: architectural-overview.md
-    - name: "Driver Implementation for Offloaded Audio"
-# Auto-expanded node
-      items: 
-      - name: "Driver Implementation for Offloaded Audio"
-        href: driver-implementation-for-offloaded-audio.md
-      - name: "Implementation Overview"
-        href: implementation-overview.md
-      - name: "Driver Implementation Details"
-# Auto-expanded node
-        items: 
-        - name: "Driver Implementation Details"
-          href: driver-implementation-details.md
-        - name: "Helper Interfaces for Offloaded Audio Processing"
-          href: helper-interfaces-for-offloaded-audio-processing.md
-        - name: "Glitch Reporting for Offloaded Audio"
-          href: glitch-reporting-for-offloaded-audio.md
+    - name: "Hardware Offloaded Audio Driver Implementation"
+      href: driver-implementation-details.md
+    - name: "Portcls Helper Interfaces for Offloaded Audio Processing"
+      href: helper-interfaces-for-offloaded-audio-processing.md
+    - name: "Glitch Reporting for Offloaded Audio"
+      href: glitch-reporting-for-offloaded-audio.md
     - name: "PortCls Power Management Updates for SoC"
 # Auto-expanded node
       items: 
@@ -946,6 +932,8 @@
       href: kspropsetid-audioengine.md
     - name: "KSPROPSETID_AudioGfx"
       href: kspropsetid-audiogfx.md
+    - name: "KSPROPSETID_AudioLoopback"
+      href: kspropsetid-audioloopback.md      
     - name: "KSPROPSETID_AudioModule"
 # Auto-expanded node
       items: 
@@ -978,7 +966,7 @@
       href: kspropsetid-fmrxtopology.md
     - name: "KSPROPSETID_Hrtf3d"
       href: kspropsetid-hrtf3d.md
-    - name: "KSPROPSETID_INTERLEAVEDAUDIO_FORMATINFORMATION"
+    - name: "KSPROPSETID_InterleavedAudio"
       href: kspropsetid-interleavedaudio.md
     - name: "KSPROPSETID_Itd3d"
       href: kspropsetid-itd3d.md
@@ -1224,6 +1212,8 @@
       href: pkey-compositefx-offload-streameffectclsid.md
     - name: "PKEY_CompositeFX_StreamEffectClsid"
       href: pkey-compositefx-streameffectclsid.md
+    - name: "PKEY_Devices_AudioDevice_Microphone_EqCoefficientsDb"
+      href: pkey-devices-audiodevice-microphone-eqcoefficientsdb.md
     - name: "PKEY_Devices_AudioDevice_Microphone_IsFarField"
       href: pkey-devices-audiodevice-microphone-isfarfield.md
     - name: "PKEY_FX_KeywordDetector_StreamEffectClsid"
@@ -1472,6 +1462,8 @@
       href: ksproperty-audiogfx-capturetargetdeviceid.md
     - name: "KSPROPERTY_AUDIOGFX_RENDERTARGETDEVICEID"
       href: ksproperty-audiogfx-rendertargetdeviceid.md
+    - name: "KSPROPERTY_AUDIOLOOPBACK"
+      href: ksproperty-audioloopback.md
     - name: "KSPROPERTY_AUDIOMODULE"
       href: ksproperty-audiomodule.md
     - name: "KSPROPERTY_AUDIOSIGNALPROCESSING"

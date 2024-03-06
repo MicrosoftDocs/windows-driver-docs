@@ -18,10 +18,6 @@ ms.date: 04/20/2017
 
 # Flipping
 
-
-## <span id="ddk_flipping_gg"></span><span id="DDK_FLIPPING_GG"></span>
-
-
 Using a back buffer that can be flipped with a front buffer is the best way to take advantage of DirectDraw. Page flipping is essential for smooth, tear-free animation in games and video playback.
 
 The *primary surface* is the area of memory that is being read from to draw the screen that is currently being displayed. If a primary surface has one or more attached back buffers, it is a *flippable* surface.
@@ -34,17 +30,8 @@ Surfaces that are not used for flipping can have any dimension and can store non
 
 The following figure illustrates the relationship between two flippable surfaces.
 
-![diagram illustrating flipping.](images/ddfig7.png)
+:::image type="content" source="images/ddfig7.png" alt-text="Diagram showing the relationship between two flippable surfaces in DirectDraw.":::
 
 If a front buffer has one or more back buffers attached, it is a flippable surface, as shown in the preceding figure. The back buffer and all attached flippable surfaces must be the same size and pixel depth as the front buffer. A back buffer surface becomes the primary surface using a flip. A flip simply changes a pointer so it points to a different flippable surface, thereby displaying the new surface. The front buffer (which is no longer the primary surface) then becomes accessible, and can have new data written to it.
 
 Flipping solves most screen flicker problems. The ability to render to a surface that is not being displayed allows smooth, tear-free animation for game play and video playback.
-
- 
-
- 
-
-
-
-
-

@@ -1,11 +1,11 @@
 ---
-title: Obtaining preparsed data
+title: Obtaining Preparsed Data
 description: Obtaining preparsed data
 keywords:
 - collections WDK HID , preparsed data
 - HID collections WDK , preparsed data
 - preparsed data WDK HID
-ms.date: 10/12/2022
+ms.date: 01/11/2024
 ---
 
 # Obtaining preparsed data

@@ -51,8 +51,3 @@ This example uses GFlags and User Mode Dump Heap (UMDH, umdh.exe), a tool includ
  
 
  
-
-
-
-
-

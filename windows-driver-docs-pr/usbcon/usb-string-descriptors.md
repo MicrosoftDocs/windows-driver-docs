@@ -1,22 +1,18 @@
 ---
-description: Device, configuration, and interface descriptors may contain references to string descriptors. This topic describes how to get a particular string descriptor from the device.
 title: USB String Descriptors
-ms.date: 04/20/2017
+description: Device, configuration, and interface descriptors may contain references to string descriptors. This topic describes how to get a particular string descriptor from the device.
+ms.date: 01/17/2024
 ---
 
 # USB String Descriptors
 
-
 Device, configuration, and interface descriptors may contain references to string descriptors. This topic describes how to get a particular string descriptor from the device.
-
-
-
 
 String descriptors are referenced by their one-based index number. A string descriptor contains one or more Unicode strings; each string is a translation of the others into another language.
 
-Client drivers use [**UsbBuildGetDescriptorRequest**](/previous-versions/ff538943(v=vs.85)), with *DescriptorType* = USB\_STRING\_DESCRIPTOR\_TYPE, to build the request to obtain a string descriptor. The *Index* parameter specifies the index number, and the *LanguageID* parameter specifies the language ID (the same values are used as in Microsoft Win32 LANGID values). Drivers can request the special index number of zero to determine which language IDs the device supports. For this special value, the device returns an array of language IDs rather than a Unicode string.
+Client drivers use **[UsbBuildGetDescriptorRequest](/previous-versions/ff538943(v=vs.85))**, with *DescriptorType* = USB_STRING_DESCRIPTOR_TYPE, to build the request to obtain a string descriptor. The *Index* parameter specifies the index number, and the *LanguageID* parameter specifies the language ID (the same values are used as in Microsoft Win32 LANGID values). Drivers can request the special index number of zero to determine which language IDs the device supports. For this special value, the device returns an array of language IDs rather than a Unicode string.
 
-Because the string descriptor consists of variable-length data, the driver must obtain it in two steps. First the driver must issue the request, passing a data buffer large enough to hold the header for a string descriptor, a USB\_STRING\_DESCRIPTOR structure. The **bLength** member of USB\_STRING\_DESCRIPTOR specifies the size in bytes of the entire descriptor. The driver then makes the same request with a data buffer of size **bLength**.
+Because the string descriptor consists of variable-length data, the driver must obtain it in two steps. First the driver must issue the request, passing a data buffer large enough to hold the header for a string descriptor, a USB_STRING_DESCRIPTOR structure. The **bLength** member of USB_STRING_DESCRIPTOR specifies the size in bytes of the entire descriptor. The driver then makes the same request with a data buffer of size **bLength**.
 
 The following code demonstrates how to request the *i*-th string descriptor, with language ID *langID*:
 
@@ -48,4 +44,5 @@ UsbBuildGetDescriptorRequest(
 ```
 
 ## Related topics
-[USB Descriptors](usb-descriptors.md)
+
+- [USB Descriptors](usb-descriptors.md)

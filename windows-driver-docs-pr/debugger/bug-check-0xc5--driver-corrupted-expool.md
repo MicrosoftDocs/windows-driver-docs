@@ -66,7 +66,7 @@ In most cases, this bug check results if a driver corrupts a small allocation (l
 
 ## Resolution
 
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause. If you have recently installed any new software, check to see if it is properly installed. Check for updated drivers on the manufacturer's website.
+The [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause. If you have recently installed any new software, check to see if it is properly installed. Check for updated drivers on the manufacturer's website.
 
 To debug this error, use the special pool option of Driver Verifier. If this fails to reveal the driver that caused the error, use the Global Flags utility to enable the special pool by pool tag.
 

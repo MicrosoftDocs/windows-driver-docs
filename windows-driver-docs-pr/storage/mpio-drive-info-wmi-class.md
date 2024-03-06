@@ -1,5 +1,5 @@
 ---
-title: MPIO\_DRIVE\_INFO WMI Class
+title: MPIO_DRIVE_INFO WMI Class
 description: MPIO\_DRIVE\_INFO WMI Class
 ms.date: 10/17/2018
 ---

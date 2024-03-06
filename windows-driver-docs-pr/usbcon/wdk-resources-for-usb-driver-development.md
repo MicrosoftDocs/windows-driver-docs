@@ -1,7 +1,7 @@
 ---
-title: Common tasks for USB client drivers
+title: Common Tasks for USB Client Drivers
 description: This article lists the "How to" articles in the USB driver documentation set. Each how-to article presents a set of tasks as a sequence of steps with code examples.
-ms.date: 03/08/2023
+ms.date: 01/17/2024
 ---
 
 # Common tasks for USB client drivers

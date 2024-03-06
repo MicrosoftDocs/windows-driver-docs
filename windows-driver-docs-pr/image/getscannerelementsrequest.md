@@ -1,5 +1,5 @@
 ---
-title: GetScannerElementsRequest element
+title: GetScannerElementsRequest Element
 description: The required GetScannerElementsRequest element enables a client to request information about the scanner.
 keywords: ["GetScannerElementsRequest element Imaging Devices"]
 topic_type:

@@ -1,5 +1,5 @@
 ---
-title: Original interface
+title: Original Interface
 description: Original interface
 keywords:
 - joysticks WDK HID , interfaces
@@ -11,7 +11,7 @@ keywords:
 - VJoyD WDK HID , callbacks
 - callbacks WDK joysticks
 - polling WDK joysticks
-ms.date: 10/12/2022
+ms.date: 01/11/2024
 ---
 
 # Original interface

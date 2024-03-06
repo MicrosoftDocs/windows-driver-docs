@@ -1,5 +1,5 @@
 ---
-title: DXGKDDI\_SUBMITRENDER callback function
+title: DXGKDDI_SUBMITRENDER Callback Function
 description: The DxgkDdiSubmitRender function is reserved for system use. Do not implement it in your driver.
 keywords: ["DxgkDdiSubmitRender callback function Display Devices", "DXGKDDI_SUBMITRENDER"]
 topic_type:

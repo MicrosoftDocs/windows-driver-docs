@@ -14,7 +14,7 @@ ms.date: 04/20/2017
 
 This topic describes how you can use the Wudfext.dll debugger extensions to view information about objects used by a User-Mode Driver Framework (UMDF) version 1 driver.
 
-Starting with UMDF version 2, you should instead use the Wdfkd.dll debugger extensions. For more info, see [Windows Driver Framework Extensions (Wdfkd.dll)](../debugger/kernel-mode-driver-framework-extensions--wdfkd-dll-.md).
+Starting with UMDF version 2, you should instead use the Wdfkd.dll debugger extensions. For more info, see [Windows Driver Framework Extensions (Wdfkd.dll)](../debuggercmds/kernel-mode-driver-framework-extensions--wdfkd-dll-.md).
 
 You can perform the following steps to view information about UMDF version 1 objects:
 

@@ -1,5 +1,5 @@
 ---
-title: UEFI display power state protocol
+title: UEFI Display Power State Protocol
 description: Provides information about the UEFI display power state protocol.
 ms.date: 03/23/2023
 ---

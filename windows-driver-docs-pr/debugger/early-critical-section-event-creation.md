@@ -1,5 +1,5 @@
 ---
-title: Early critical section event creation
+title: Early Critical Section Event Creation
 description: Early critical section event creation
 keywords: ["Early critical section event creation (global flag)"]
 ms.date: 05/23/2017
@@ -49,8 +49,3 @@ Because this flag uses a significant amount of nonpaged pool memory, use it only
  
 
  
-
-
-
-
-

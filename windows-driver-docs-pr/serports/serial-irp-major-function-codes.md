@@ -1,5 +1,5 @@
 ---
-title: Serial IRP major function codes
+title: Serial IRP Major Function Codes
 description: Documents serial IRP major function codes
 keywords: ["serial devices WDK", "serial drivers WDK", "Serial IRP codes"]
 ms.date: 10/17/2018

@@ -1,5 +1,5 @@
 ---
-title: DEBUG\_ENGOPT\_XXX
+title: DEBUG_ENGOPT_XXX
 description: The DEBUG\_ENGOPT\_XXX constants are global options that affect the behavior of the debugger engine.
 ms.date: 08/10/2018
 topic_type:
@@ -159,7 +159,7 @@ The following global options affect the behavior of the debugger engine.
 </dl>
 </td>
 <td align="left" width="60%">
-<p>Turn on quiet mode. For more information, see <a href="sq--set-quiet-mode-.md"><b>sq (Set Quiet Mode)</b></a>. </p>
+<p>Turn on quiet mode. For more information, see <a href="../debuggercmds/sq--set-quiet-mode-.md"><b>sq (Set Quiet Mode)</b></a>. </p>
 </td>
 </tr>
 <tr VALIGN="top">

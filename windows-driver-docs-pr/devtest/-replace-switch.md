@@ -138,14 +138,11 @@ For more information, see [**Creating Certificates for USB Storage Devices**](cr
 
 The **/Replace** switch is used to replace any certificate from the target device except for following certificates:
 
--   The provisioning certificate (PCp). To replace the PCp certificate, you must use the [**/Initialize switch**](-initialize-switch.md).
+- The provisioning certificate (PCp). To replace the PCp certificate, you must use the [**/Initialize switch**](-initialize-switch.md).
 
--   The ASC-manufacturer certificate (ASCm).
+- The ASC-manufacturer certificate (ASCm).
 
     **Note**   The Enhanced Storage Certificate Management tool cannot add, remove, or replace the ASCm certificate from the ASC store in the target device.
-
-     
-
 To replace certificates in the target device, the device must have been provisioned with a PCp certificate, and the private key of that certificate must reside in the host so that it can pass administrative authentication with the device.
 
 If you replace an ASCh certificate, the tool removes all related SCh in the ASCh certificate chain.
@@ -161,12 +158,4 @@ The following example shows how to replace the certificate at index two within t
 ```
 EhStorCertMgrCmd /Replace -Volume:"\\?\usbstor#ieee1667control&ven_&prod_&rev_#123456789&0&control#{4f40006f-b933-4550-b532-2b58cee614d3}" -Index:2 -Store:TestCert -Type:SCh -Validation:None
 ```
-
- 
-
- 
-
-
-
-
 

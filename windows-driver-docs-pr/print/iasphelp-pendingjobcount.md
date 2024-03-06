@@ -1,5 +1,5 @@
 ---
-title: Iasphelp get_PendingJobCount method
+title: Iasphelp get_PendingJobCount Method
 description: The PendingJobCount property enables an ASP Web page to determine the number of pending print jobs.
 MS-HAID:
 - 'webfnc_fd1cbaac-f195-4a38-8788-990eb9b3fd6c.xml'

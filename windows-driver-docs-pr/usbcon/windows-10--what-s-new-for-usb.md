@@ -1,25 +1,24 @@
 ---
+title: Windows 10 - What's New for USB
 description: Highlights the new features and improvements for Universal Serial Bus (USB) in Windows 10.
-title: Windows 10 - What's new for USB
-ms.date: 04/20/2017
+ms.date: 01/17/2024
 ---
 
 # Windows 10: What's new for USB
 
-
 This topic highlights the new features and improvements for Universal Serial Bus (USB) in Windows 10.
 
--  **UCSI driver extension** 
+- **UCSI driver extension**
     Starting in Windows 10, version 1809, a new class extension for UCSI (UcmUcsiCx.sys) has been added,which implements the UCSI specification in a transport agnostic way. With minimal amount of code, your driver, which is a client to UcmUcsiCx, can communicate with the USB Type-C hardware over non-ACPI transport. This topic describes the services provided by the UCSI class extension and the expected behavior of the client driver.
 
--   **USB Type-C Port Controller Interface** 
+- **USB Type-C Port Controller Interface**
 
-    Windows 10 version 1703 provides a class extension (UcmTcpciCx.sys) that supports the Universal Serial Bus Type-C Port Controller Interface Specification. A USB Type-C connector driver does not need to maintain any internal PD/Type-C state. 
-    The complexity of managing the USB Type-C connector and USB Power Delivery (PD) state machines is handled by the system. You only need to write a client driver that communicates hardware events to the system through the class extension. 
+    Windows 10 version 1703 provides a class extension (UcmTcpciCx.sys) that supports the Universal Serial Bus Type-C Port Controller Interface Specification. A USB Type-C connector driver does not need to maintain any internal PD/Type-C state.
+    The complexity of managing the USB Type-C connector and USB Power Delivery (PD) state machines is handled by the system. You only need to write a client driver that communicates hardware events to the system through the class extension.
 
-    [USB Type-C Port Controller Interface driver class extensions reference](/previous-versions/windows/hardware/drivers/mt805826(v=vs.85))
+    [USB Type-C Port Controller Interface driver class extensions reference](/windows-hardware/drivers/ddi/_usbref/#type-c-driver-reference)
 
--   **USB Dual Role support.**
+- **USB Dual Role support.**
 
     USB Dual Role controllers are now supported in Windows. Windows includes in-box client drivers for ChipIdea and Synopsys controllers. For other controllers, Microsoft provides a set of programming interfaces that allow the dual-role class extension (UrsCx) and its client driver to communicate with each other to handle the role-switching capability of a dual-role controller.
 
@@ -27,33 +26,33 @@ This topic highlights the new features and improvements for Universal Serial Bus
 
     [USB Dual Role Driver Stack Architecture](usb-dual-role-driver-stack-architecture.md)
 
-    [USB dual-role controller driver programming reference](/previous-versions/windows/hardware/drivers/mt628026(v=vs.85))
+    [USB dual-role controller driver programming reference](/windows-hardware/drivers/ddi/_usbref/#dual-role-controller-driver-reference/windows-hardware/drivers/ddi/_usbref/#dual-role-controller-driver-reference)
 
--   **New set of programming interfaces for developing a USB Type-C connector driver.**
+- **New set of programming interfaces for developing a USB Type-C connector driver.**
 
     This version introduces native support for USB Type-C as defined in the USB 3.1 specification. The feature allows devices to use a reversible connector, a symmetric cable, faster charging, and Alternate Modes running over the USB cable. These programming interfaces allow you to write a driver for the connector (called the client driver in this section) that communicates with the Microsoft-provided class extension module: UcmCx to handle scenarios related to Type-C connectors such as, which ports support Type-C, which ports support power delivery.
 
     [Developing Windows drivers for USB Type-C connectors](developing-windows-drivers-for-usb-type-c-connectors.md)
 
-    [USB connector manager class extension (UcmCx)](/previous-versions/windows/hardware/drivers/mt188011(v=vs.85))
+    [USB connector manager class extension (UcmCx)](/windows-hardware/drivers/ddi/_usbref/#type-c-driver-reference)
 
--   **New set of programming interfaces for developing an emulated host controller and a connected virtual device.**
+- **New set of programming interfaces for developing an emulated host controller and a connected virtual device.**
 
     Windows 10 introduces support for emulated devices. Now you can develop an emulated Universal Serial Bus (USB) host controller driver and a connected virtual USB device. Both components are combined into a single KMDF driver that communicates with the Microsoft-provided USB device emulation class extension (UdeCx).
 
     [Developing Windows drivers for emulated USB devices (UDE)](developing-windows-drivers-for-emulated-usb-host-controllers-and-devices.md)
 
-    [Emulated USB host controller driver programming reference](/previous-versions/windows/hardware/drivers/mt628025(v=vs.85))
+    [Emulated USB host controller driver programming reference](/windows-hardware/drivers/ddi/_usbref/#emulated-host-controller-driver-reference)
 
--   **New set of programming interfaces for developing a USB host controller driver.**
+- **New set of programming interfaces for developing a USB host controller driver.**
 
     You can develop a host controller if your hardware is not xHCI specification-compliant or your are writing a virtual host controller, such as a controller that routes USB traffic over a TCP connection to the peripherals attached to a device. Your host controller driver is a client to the USB host controller extension, which is a system-supplied driver that follows the framework class extension model. Within the [Microsoft USB 3.0 Driver Stack](/windows-hardware/drivers/ddi/index#usb-3-0-driver-stack), UCX provides functionality to assist the host controller driver in managing a USB host controller device.
 
     [Developing Windows drivers for USB host controllers](developing-windows-drivers-for-usb-host-controllers.md)
 
-    [USB host controller extension (UCX) reference](/previous-versions/windows/hardware/drivers/mt188009(v=vs.85))
+    [USB host controller extension (UCX) reference](/windows-hardware/drivers/ddi/_usbref/#host-controller-driver-reference)
 
--   **New set of programming interfaces for developing a USB function controller driver.**
+- **New set of programming interfaces for developing a USB function controller driver.**
 
     You can write a client driver that communicates with the USB function class extension (UFX) and implements controller-specific operations. UFX handles USB function logic that is common to all USB function controllers.
 
@@ -65,17 +64,14 @@ This topic highlights the new features and improvements for Universal Serial Bus
 
     [User mode services to UFX programming reference](/windows-hardware/drivers/ddi/ufxclient)
 
-    [USB function class driver to UFX programming reference](/previous-versions/windows/hardware/drivers/mt188008(v=vs.85))
+    [USB function class driver to UFX programming reference](/windows-hardware/drivers/ddi/_usbref/#function-class-driver-reference)
 
-    [USB function controller client driver programming reference](/previous-versions/windows/hardware/drivers/mt188010(v=vs.85))
+    [USB function controller client driver programming reference](/windows-hardware/drivers/ddi/_usbref/#usb-function-controller-client-driver-reference)
 
-    [USB filter driver for supporting proprietary chargers](/previous-versions/windows/hardware/drivers/mt188012(v=vs.85))
+    [USB filter driver for supporting proprietary chargers](/windows-hardware/drivers/usbcon/usb-filter-driver-for-supporting-chargers)
 
--   **Improved experience for USB CDC (serial) devices.**
+- **Improved experience for USB CDC (serial) devices.**
 
     Allows devices that are compliant with the USB communication devices Class (Class\_02 & SubClass\_02) to work with Windows 10 by using the Usbser.sys driver. Device manufacturers are no longer required to write a custom INF to install that driver.
 
     [USB serial driver (Usbser.sys)](usb-driver-installation-based-on-compatible-ids.md)
-
- 
-

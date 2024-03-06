@@ -1,5 +1,5 @@
 ---
-title: How do I generate trace messages from a header file
+title: How do I Generate Trace Messages from a Header File
 description: How do I generate trace messages from a header file
 ms.date: 04/20/2017
 ---
@@ -39,12 +39,4 @@ RUN_WPP=$(SOURCES) -km -ext:.c.C.h.H  -preserveext:.c.h
 The **-preserveext** parameter preserves the specified file name extensions when creating the names of [trace message header](trace-message-header-file.md) (.tmh) files. This parameter prevents WPP from creating multiple TMH files with the same name. By default, WPP uses only the .tmh file name extension, such as tracedrv.tmh. With the **-preserveext** parameter, the files are instead named tracedrv.c.tmh and tracedrv.h.tmh.
 
 For a complete list of the optional parameters for RUN\_WPP, see [WPP Preprocessor](wpp-preprocessor.md).
-
- 
-
- 
-
-
-
-
 

@@ -329,8 +329,3 @@ The return value is stored in **rax**, and then the non-volatile registers are r
 [X86-64 Wikipedia](https://en.wikipedia.org/wiki/X86-64)
 
  
-
-
-
-
-

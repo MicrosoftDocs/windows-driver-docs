@@ -1,5 +1,5 @@
 ---
-title: DDirectX 5.0 interface
+title: DDirectX 5.0 Interface
 description: DirectX 5.0 interface
 keywords:
 - joysticks WDK HID , interfaces
@@ -13,7 +13,7 @@ keywords:
 - polling WDK joysticks
 - joysticks WDK HID , versions
 - VJoyD WDK HID , versions
-ms.date: 10/11/2022
+ms.date: 01/11/2024
 ---
 
 # DirectX 5.0 interface

@@ -74,8 +74,3 @@ To control workspaces, you can do the following:
  
 
  
-
-
-
-
-

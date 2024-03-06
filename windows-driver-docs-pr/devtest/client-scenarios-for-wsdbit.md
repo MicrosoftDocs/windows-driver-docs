@@ -52,11 +52,3 @@ This section includes the following topics:
 
 [Secure Communication Scenarios](secure-communication-scenarios.md)
 
- 
-
- 
-
-
-
-
-

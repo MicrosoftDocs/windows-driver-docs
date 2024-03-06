@@ -42,7 +42,7 @@ Starting with Windows 8.1, Driver Verifier introduces four new options for detec
 * The [Kernel synchronization delay fuzzing](kernel-synchronization-delay-fuzzing.md) option randomizes thread schedules to help detect concurrency bugs in the driver.
 
 * The [VM switch verification](vm-switch-verification.md) option monitors filter drivers (extensible switch extensions) that run inside the [Hyper-V Extensible Switch](../network/hyper-v-extensible-switch.md).
-* New debugger extension: [**!ruleinfo**](../debugger/-ruleinfo.md)
+* New debugger extension: [**!ruleinfo**](../debuggercmds/-ruleinfo.md)
 
 ## Driver Verifier in Windows 8 (*Updated: October 20, 2012*)
 
@@ -83,7 +83,7 @@ In Windows 7, Driver Verifier provides checks for queued spin locks, these check
 
 * Checking for obviously incorrect pointer values, such as a user-mode virtual address that is used as a spin lock address.
 
-* Logging IRQL transitions in the Driver Verifier IRQL log. This information appears when you use the **!verifier 8** extension of the Windows Debuggers. See [**!verifier**](../debugger/-verifier.md).
+* Logging IRQL transitions in the Driver Verifier IRQL log. This information appears when you use the **!verifier 8** extension of the Windows Debuggers. See [**!verifier**](../debuggercmds/-verifier.md).
 
 ## Additional Debugging Information
 
@@ -129,14 +129,14 @@ Drivers submitted to WHQL for testing must pass Driver Verifier. New Driver Veri
 * New automatic check for Monitoring Stack Switching
 * New Driver Verifier options for DMA Verification (also known as HAL Verification), Deadlock Detection, and SCSI Verification
 * I/O Verification changes that combine "Level 1" and "Level 2" tests, optional Enhanced I/O Verification tests
-* New debugger extensions [**!deadlock**](../debugger/-deadlock.md) and [**!dma**](../debugger/-dma.md)
+* New debugger extensions [**!deadlock**](../debuggercmds/-deadlock.md) and [**!dma**](../debuggercmds/-dma.md)
 * New bug checks: 0xE6 (DRIVER\_VERIFIER\_DMA\_VIOLATION) and 0xF1 (SCSI\_VERIFIER\_DETECTED\_VIOLATION)
 * Additional sub-codes for the existing bug check codes 0xC4 and 0xC9
 
 Driver Verifier features also include:
 
 * **New Verifier command line options** The verifier.exe utility has a new parameter, *VolatileDriverList*, which can be used with the **/adddriver** keyword to specify a list of drivers to add to the volatile settings. *VolatileDriverList* can be used with the **/removedriver** keyword to specify a list of drivers to remove.
-* **New !verifier extensions** New [**!verifier**](../debugger/-verifier.md) extensions display additional log information when monitoring low resources or IRQL raises and spin locks. Online help is also available.
+* **New !verifier extensions** New [**!verifier**](../debuggercmds/-verifier.md) extensions display additional log information when monitoring low resources or IRQL raises and spin locks. Online help is also available.
   * *Flags* set with 0x4 causes the display to include a log of faults injected by Driver Verifier during low resources simulation
   * *Flags* set with 0x8 causes the display to include a log of the most recent IRQL changes made by the drivers being verified
   * If *Flags* equals exactly 0x4 or 0x8, the Quantity parameter specifies the number of records or log entries to include in the display

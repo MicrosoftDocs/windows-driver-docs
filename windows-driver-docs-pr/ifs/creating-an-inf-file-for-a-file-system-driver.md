@@ -1,5 +1,5 @@
 ---
-title: Creating an INF file for a file system driver
+title: Creating an INF File for a File System Driver
 description: Describes how to create an INF file for a file system driver
 keywords:
 - INF files WDK file system , creating
@@ -13,7 +13,6 @@ keywords:
 - Version section WDK file system
 - creating INF files WDK file system
 ms.date: 06/29/2021
-ms.custom: contperf-fy21q4
 ---
 
 # Creating an INF file for a file system driver

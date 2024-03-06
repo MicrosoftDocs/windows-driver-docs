@@ -1,5 +1,5 @@
 ---
-title: How to customize camera options with a UWP device app
+title: How to Customize Camera Options with a UWP Device App
 description: In Windows 8.1, UWP device apps let device manufacturers customize the flyout that displays more camera options in some camera apps.
 ms.date: 03/17/2023
 ---

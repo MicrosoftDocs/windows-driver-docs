@@ -1,7 +1,7 @@
 ---
 title: Boot and UEFI
 description: Provides guidance about the boot process and UEFI implementation requirements for devices that run Windows 10.
-ms.date: 03/22/2023
+ms.date: 12/14/2023
 ---
 
 # Boot and UEFI
@@ -9,7 +9,7 @@ ms.date: 03/22/2023
 > [!IMPORTANT]
 > Some information in this section may apply only to Windows 10 Mobile and certain processor architectures.
 
-A device running Windows 10 has several requirements for booting into the OS. After the device's firmware initializes all the hardware, the device needs to ensure that there is enough power to boot. Afterwards, the device needs to ensure that the device is booting into the appropriate OS depending on if the user wants to perform an update or a restore on the device, or if the user wants to boot the device into the main OS.
+A device running Windows 10 has several requirements for booting into the OS. After the device's firmware initializes all the hardware, the device needs to ensure that there's enough power to boot. Afterwards, the device needs to ensure that the device is booting into the appropriate OS depending on if the user wants to perform an update or a restore on the device, or if the user wants to boot the device into the main OS.
 
 To accommodate each of these scenarios, the Windows 10 boot process uses the following components:
 
@@ -19,7 +19,7 @@ To accommodate each of these scenarios, the Windows 10 boot process uses the fo
 
 - Windows Boot Manager provided by Microsoft.
 
-This topic provides an overview of the boot process, and it describes the SoC firmware boot loaders, UEFI, and Windows Boot Manager in more detail.
+This article provides an overview of the boot process, and it describes the SoC firmware boot loaders, UEFI, and Windows Boot Manager in more detail.
 
 ## Overview of the boot process
 
@@ -35,17 +35,17 @@ The following diagram illustrates this process at a high level.
 
 ![boot process overview for windows phone.](images/oem-boot-flow-overview.png)
 
-Following are additional details about some of the components in this diagram:
+Following are more details about some of the components in this diagram:
 
 - The update OS is a minimal OS environment provided by Microsoft. This OS is used specifically for installing updates.
 
-- Full Flash Update (FFU) image flashing mode refers to a UEFI application that flashes an OS image to device storage. Microsoft provides a UEFI flashing application which can be used in non-manufacturing scenarios. OEMs can also implement their own UEFI flashing application. For more information, see [Capture and apply Windows Full Flash Update (FFU) images](/windows-hardware/manufacture/desktop/deploy-windows-using-full-flash-update--ffu).
+- Full Flash Update (FFU) image flashing mode refers to a UEFI application that flashes an OS image to device storage. Microsoft provides a UEFI flashing application that can be used in non-manufacturing scenarios. OEMs can also implement their own UEFI flashing application. For more information, see [Capture and apply Windows Full Flash Update (FFU) images](/windows-hardware/manufacture/desktop/deploy-windows-using-full-flash-update--ffu).
 
 ## SoC firmware boot loaders
 
-The SoC firmware boot loaders initialize the minimal set of hardware required for the device to run. The SoC firmware boot loaders are designed to finish as fast as possible, and nothing is drawn to the screen while they are running. After the SoC firmware boot loaders finish, the device is booted into the UEFI environment.
+The SoC firmware boot loaders initialize the minimal set of hardware required for the device to run. The SoC firmware boot loaders are designed to finish as fast as possible, and nothing is drawn to the screen while they're running. After the SoC firmware boot loaders finish, the device is booted into the UEFI environment.
 
-The SoC firmware boot loaders also contain an emergency flashing capability that allows devices to be flashed when the boot environment is not stable and Full Flash Update (FFU) image-based flashing using the Microsoft-provided flashing tool is not possible. Emergency flashing requires tools specific to the SoC. For more information, contact the SoC vendor.
+The SoC firmware boot loaders also contain an emergency flashing capability that allows devices to be flashed when the boot environment isn't stable and Full Flash Update (FFU) image-based flashing using the Microsoft-provided flashing tool isn't possible. Emergency flashing requires tools specific to the SoC. For more information, contact the SoC vendor.
 
 ## UEFI
 
@@ -72,7 +72,7 @@ Boot applications implement functionality for the following scenarios:
 
 - Booting the device to the main OS.
 
-The following diagram illustrates some of the key portions of the process that the Boot Manager follows after it is launched by the UEFI environment.
+The following diagram illustrates some of the key portions of the process that the Boot Manager follows after it's launched by the UEFI environment.
 
 ![boot manager process for windows phone.](images/oem-boot-flow-detail.png)
 
@@ -84,7 +84,7 @@ The following steps describe this process in more detail:
 
 1. The Boot Manager first captures any reserved hardware button combinations that are pressed by the user.
 
-1. In non-retail OS images, the Boot Manager next runs an offline crash dump boot application which allows the device to capture a snapshot of physical memory from the previous OS session. When the device resets abnormally, the previous OS session's memory is preserved across the reset. When this happens, the offline crash dump application will save that memory and turn it into an offline crash dump file, which can be transferred off the device and analyzed. If the device did not reset abnormally in the previous OS session, the offline crash dump application exits immediately.
+1. In non-retail OS images, the Boot Manager next runs an offline crash dump boot application that allows the device to capture a snapshot of physical memory from the previous OS session. When the device resets abnormally, the previous OS session's memory is preserved across the reset. When this happens, the offline crash dump application saves that memory and turn it into an offline crash dump file, which can be transferred off the device and analyzed. If the device didn't reset abnormally in the previous OS session, the offline crash dump application exits immediately.
 
 1. In all OS images, the Boot Manager next runs mobilestartup.efi. This application runs several boot libraries, some of which are only run on first boot (for example, to provision the secure boot policy) or only in non-retail images (for example, to enter USB mass storage mode). The following libraries are always run:
 
@@ -92,9 +92,9 @@ The following steps describe this process in more detail:
 
     1. Next, mobilestartup.efi runs the libraries that implement flashing, device reset, and updates. These libraries determine whether the device should boot to flashing or device reset mode, or if the device should continue to the Update OS or Main OS.
 
-1. If mobilestartup.efi does not boot to flashing or device reset mode, the Boot Manager boots into the Main OS or the Update OS.
+1. If mobilestartup.efi doesn't boot to flashing or device reset mode, the Boot Manager boots into the Main OS or the Update OS.
 
-## Related topics
+## Related articles
 
 [Battery charging in the boot environment](battery-charging-in-the-boot-environment.md)  
 

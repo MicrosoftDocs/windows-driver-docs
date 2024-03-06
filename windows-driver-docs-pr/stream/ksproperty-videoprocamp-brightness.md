@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_VIDEOPROCAMP\_BRIGHTNESS
+title: KSPROPERTY_VIDEOPROCAMP_BRIGHTNESS
 description: The KSPROPERTY\_VIDEOPROCAMP\_BRIGHTNESS property controls the brightness setting. This property is optional.
 keywords: ["KSPROPERTY_VIDEOPROCAMP_BRIGHTNESS Streaming Media Devices"]
 topic_type:

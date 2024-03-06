@@ -20,7 +20,7 @@ DTrace (DTrace.exe) is a command-line tool that displays system information and 
 > [!NOTE]
 > DTrace is supported in the Insider builds of Windows after version 18980 and Windows Server Build 18975.
 
-The DTrace on Windows Github site is located here:
+The DTrace on Windows GitHub site is located here:
 
 [https://github.com/microsoft/DTrace-on-Windows](https://github.com/microsoft/DTrace-on-Windows)
 
@@ -128,7 +128,7 @@ The Function Boundary Tracing (FBT) provider provides probes associated with the
 
 For each instruction set, there are a small number of functions that do not call other functions and are highly optimized by the compiler (so-called leaf functions) that cannot be instrumented by FBT. Probes for these functions are not present in DTrace.
 
-The command `dtrace -ln fbt:nt::` will list all the probes and their parameters available for the nt module. Use the debugger [lm (List Loaded Modules)](../debugger/lm--list-loaded-modules-.md) command to list all available modules.
+The command `dtrace -ln fbt:nt::` will list all the probes and their parameters available for the nt module. Use the debugger [lm (List Loaded Modules)](../debuggercmds/lm--list-loaded-modules-.md) command to list all available modules.
 
 ```dtrace
 C:\>dtrace -ln "fbt:nt::"
@@ -148,7 +148,7 @@ C:\>dtrace -ln "fbt:nt::"
 
 The DTrace PID provider allows you to trace the internal execution of user-mode processes such as a web browser or a database. You can also attach DTrace at the time of process launch so as to debug process start-up issues. As part of the PID definition, you specify the functions defined in the process and specific offsets (or all offset using wildcard *) within the function. PID provider requires the binary to be launched or running at the time of script execution.
 
-This example command displays information about a specific call in the PID associated with notepad.exe. Use the debugger [lm (List Loaded Modules)](../debugger/lm--list-loaded-modules-.md) command to list all available modules.
+This example command displays information about a specific call in the PID associated with notepad.exe. Use the debugger [lm (List Loaded Modules)](../debuggercmds/lm--list-loaded-modules-.md) command to list all available modules.
 
 ```dtrace
 C:\Windows\system32>dtrace -ln "pid$target:ntdll:RtlAllocateHeap:entry" -c notepad.exe
@@ -166,13 +166,11 @@ Users interact with DTrace through the DTrace command, which serves as a front-e
 
 Traceext.sys (trace extension) is a Windows kernel extension driver, which allows Windows to expose functionality that DTrace relies on to provide tracing. The Windows kernel provides callouts during stackwalk or memory accesses which are then implemented by the trace extension.
 
-![DTrace Windows Architecture showing dtrace.exe talking to libtrace which talks to DTrace.sys, which calls Traceext.sys.](images/dtrace-architecture.png)
+:::image type="content" source="images/dtrace-architecture.png" alt-text="Diagram that shows DTrace Windows Architecture with dtrace.exe connected to libtrace, which communicates with DTrace.sys, and calls Traceext.sys.":::
 
 ## Installing DTrace under Windows
 
-1. Check that you are running a supported version of Windows. The current download of DTrace is supported in the Insider builds of 20H1 Windows after version 18980 and Windows Server Build 18975. *Installing this version of DTrace on older versions of Windows can lead to system instability and is not recommended.*
-
-   The archived version of DTrace for 19H1 is available at [Archived Download DTrace on Windows](https://www.microsoft.com/download/58091). Note that this version of DTrace is no longer supported.
+1. Check that you are running a supported version of Windows. The current download of DTrace is supported in the Insider builds of 20H1 Windows after version 18980 and Windows Server Build 18975. *Installing this version of DTrace on older versions of Windows can lead to system instability and is not recommended.* (The archived version of DTrace for 19H1 is no longer available and is no longer supported.)
 
 2. Download the MSI installation file ([Download DTrace on Windows](https://www.microsoft.com/download/details.aspx?id=100441)) from the Microsoft Download Center.
 
@@ -181,8 +179,14 @@ Traceext.sys (trace extension) is a Windows kernel extension driver, which allow
     > [!IMPORTANT]
     > Before using bcdedit to change boot information you may need to temporarily suspend Windows security features such as Patchguard, BitLocker and Secure Boot on the test PC.
     > Re-enable these security features when testing is complete and appropriately manage the test PC, when the security features are disabled.
+ 
+4. Update the PATH environment variableto include C:\Program Files\DTrace
 
-4. Enable DTrace on the machine using the bcdedit command.  
+```
+set PATH=%PATH%;"C:\Program Files\DTrace"
+```
+
+6. Enable DTrace on the machine using the bcdedit command.  
 
 ```cmd
 bcdedit /set dtrace ON

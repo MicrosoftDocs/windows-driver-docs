@@ -1,5 +1,5 @@
 ---
-title: Driver control and device control
+title: Driver Control and Device Control
 description: Provides information about driver control and device control.
 keywords:
 - proprietary color management WDK print

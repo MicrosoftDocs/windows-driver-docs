@@ -121,7 +121,7 @@ The FAST\_ERESOURCE\_PRECONDITION\_VIOLATION bug check has a value of 0x000001C6
 The current thread is performing an invalid call to a fast resource routine.
 
 ## Resolution
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
 ## See Also
 

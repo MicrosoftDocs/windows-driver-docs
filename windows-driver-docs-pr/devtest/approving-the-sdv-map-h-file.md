@@ -56,11 +56,3 @@ To fix this error, delete the lines in the Sdv.map file that cause the error or 
 
 2.  Use the **staticdv /scan** command to regenerate the map file, or use a **staticdv /rule** or **staticdv /config** command to run an SDV analysis.
 
- 
-
- 
-
-
-
-
-

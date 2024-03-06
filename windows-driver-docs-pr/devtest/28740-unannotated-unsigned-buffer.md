@@ -1,5 +1,5 @@
 ---
-title: C28740 warning
+title: C28740 Warning
 description: Warning C28740 Unannotated unsigned buffer.
 ms.date: 04/20/2017
 f1_keywords: 
@@ -29,12 +29,4 @@ The following code example avoids this warning by using the SAL annotation **\_O
 ```
     int foo( _Out_writes_(cch) BYTE * buffer, size_t cch );
 ```
-
- 
-
- 
-
-
-
-
 

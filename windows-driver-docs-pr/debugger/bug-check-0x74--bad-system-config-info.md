@@ -68,7 +68,7 @@ Looking up the NT status value returned in parameter 4 can provide additional in
 
 Check in the Windows system eventlog to see if there are any registry related error events. If there are see if the event lists a hive or specific key that the error occurred in.
 
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
 ```dbgcmd
 BAD_SYSTEM_CONFIG_INFO (74)
@@ -91,14 +91,14 @@ Arg4: ffffffffc000014c, usually the NT status code.
 
 Review all of the information returned by the !analyze to learn about the failure.
 
-Use the [!error](-error.md) extension to display information about the NTSTATUS value in parameter 4.
+Use the [!error](../debuggercmds/-error.md) extension to display information about the NTSTATUS value in parameter 4.
 
 ```dbgcmd
 2: kd> !ERROR ffffffffc000014c
 Error code: (NTSTATUS) 0xc000014c (3221225804) - {The Registry Is Corrupt}  The structure of one of the files that contains Registry data is corrupt, or the image of the file in memory is corrupt, or the file could not be recovered because the alternate copy or log was absent or corrupt.
 ```
 
-Use the [!reg](-reg.md) extenstion to display information about the registry, for example the hives present in the registry.
+Use the [!reg](../debuggercmds/-reg.md) extenstion to display information about the registry, for example the hives present in the registry.
 
 ```dbgcmd
 !reg hivelist

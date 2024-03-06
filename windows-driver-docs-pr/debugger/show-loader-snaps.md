@@ -1,5 +1,5 @@
 ---
-title: Show loader snaps
+title: Show Loader Snaps
 description: Show loader snaps
 keywords: ["Show loader snaps (global flag)"]
 ms.date: 05/23/2017
@@ -49,8 +49,3 @@ For per-process (image file), this flag displays information about loading and u
  
 
  
-
-
-
-
-

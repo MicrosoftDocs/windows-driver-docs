@@ -1,16 +1,12 @@
 ---
-title: Interrupts from SPB-Connected Peripheral Devices
-description: Unlike a bus such as PCI, a simple peripheral bus (SPB), such as I²C or SPI, provides no standardized, bus-specific means to convey interrupt requests from peripheral devices to the processor.
-ms.date: 04/20/2017
+title: Interrupts From SPB-Connected Peripheral Devices
+description: Unlike a bus such as PCI, a simple peripheral bus (SPB), such as I<sup>2</sup>C or SPI, provides no standardized, bus-specific means to convey interrupt requests from peripheral devices to the processor.
+ms.date: 01/12/2024
 ---
 
-# Interrupts from SPB-Connected Peripheral Devices
+# Interrupts from SPB-connected peripheral devices
 
-
-Unlike a bus such as PCI, a [simple peripheral bus](/previous-versions/hh450903(v=vs.85)) (SPB), such as I²C or SPI, provides no standardized, bus-specific means to convey interrupt requests from peripheral devices to the processor. Instead, an SPB-connected peripheral device signals an interrupt through a separate hardware path that lies outside of both the SPB and the SPB controller. The details of this interrupt path tend to vary from one hardware platform to the next, but Windows hides these details from the driver for an SPB-connected peripheral device to enable the driver to work across a variety of hardware platforms.
-
-
-
+Unlike a bus such as PCI, a [simple peripheral bus](/previous-versions/hh450903(v=vs.85)) (SPB), such as I<sup>2</sup>C or SPI, provides no standardized, bus-specific means to convey interrupt requests from peripheral devices to the processor. Instead, an SPB-connected peripheral device signals an interrupt through a separate hardware path that lies outside of both the SPB and the SPB controller. The details of this interrupt path tend to vary from one hardware platform to the next, but Windows hides these details from the driver for an SPB-connected peripheral device to enable the driver to work across a variety of hardware platforms.
 
 Typically, the interrupt request line from an SPB-connected peripheral device is connected to a pin on a general-purpose I/O (GPIO) controller, and the GPIO controller relays interrupts from the device to the processor. For more information, see [GPIO Interrupts](../gpio/gpio-interrupts.md).
 
@@ -27,6 +23,3 @@ The device's passive-level ISR should perform only the initial servicing of the 
 Starting with Windows 8, the [User-Mode Driver Framework](../wdf/overview-of-the-umdf.md) (UMDF) supports ISRs for UMDF drivers. The UMDF driver for an SPB peripheral device calls the [**IWDFDevice3::CreateInterrupt**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdevice3-createinterrupt) method to connect an ISR to the interrupt from the device. When the device signals an interrupt request, the kernel's trap handler schedules the ISR to run at passive level. For more information, see [Accessing Hardware and Handling Interrupts](../wdf/accessing-hardware-and-handling-interrupts.md).
 
 Starting with Windows 8, the [Kernel-Mode Driver Framework](../wdf/index.md) (KMDF) supports passive-level ISRs. The KMDF driver for an SPB peripheral device calls the [**WdfInterruptCreate**](/windows-hardware/drivers/ddi/wdfinterrupt/nf-wdfinterrupt-wdfinterruptcreate) method to connect a passive-level ISR to the interrupt from the device. One of the input parameters to this method is a pointer to a [**WDF\_INTERRUPT\_CONFIG**](/windows-hardware/drivers/ddi/wdfinterrupt/ns-wdfinterrupt-_wdf_interrupt_config) structure that contains configuration information for the interrupt. To configure the ISR to run at passive level, set the **PassiveHandling** member of this structure to **TRUE**. For more information, see [Supporting Passive-Level Interrupts](../wdf/supporting-passive-level-interrupts.md).
-
- 
-

@@ -6,54 +6,28 @@ keywords:
 - Video Acceleration WDK DirectX , restricted profiles
 - VA WDK DirectX , restricted profiles
 - restricted profiles WDK DirectX VA
-ms.date: 04/20/2017
+ms.date: 09/01/2023
 ---
 
 # Restricted Profiles
 
-
-## <span id="ddk_restricted_profiles_gg"></span><span id="DDK_RESTRICTED_PROFILES_GG"></span>
-
-
-This section provides information about the following restricted profiles that can be supported by Microsoft DirectX VA.
+This section provides information about the following restricted profiles that Microsoft DirectX VA can support.
 
 These restricted profiles are defined in anticipation of combinations of features likely to find widespread support. They establish a set of video coding tools necessary for decoding and also determining whether a given video data format can be decoded in some fashion using the DirectX VA API.
 
-[H261\_A](h261-a.md)
+* [H261_A](h261-a.md)
+* [H261_B](h261-b.md)
+* [H263_A](h263-a.md)
+* [H263_B](h263-b.md)
+* [H263_C](h263-c.md)
+* [H263_D](h263-d.md)
+* [H263_E](h263-e.md)
+* [H263_F](h263-f.md)
+* [MPEG1_A](mpeg1-a.md)
+* [MPEG2_A](mpeg2-a.md)
+* [MPEG2_B](mpeg2-b.md)
+* [MPEG2_C](mpeg2-c.md)
+* [MPEG2_D](mpeg2-d.md)
+* [WMV8_A, WMV8_B, WMV9_A, WMV9_B, and WMV9_C](wmv8-a--wmv8-b--wmv9-a--wmv9-b--and-wmv9-c.md)
 
-[H261\_B](h261-b.md)
-
-[H263\_A](h263-a.md)
-
-[H263\_B](h263-b.md)
-
-[H263\_C](h263-c.md)
-
-[H263\_D](h263-d.md)
-
-[H263\_E](h263-e.md)
-
-[H263\_F](h263-f.md)
-
-[MPEG1\_A](mpeg1-a.md)
-
-[MPEG2\_A](mpeg2-a.md)
-
-[MPEG2\_B](mpeg2-b.md)
-
-[MPEG2\_C](mpeg2-c.md)
-
-[MPEG2\_D](mpeg2-d.md)
-
-[WMV8\_A, WMV8\_B, WMV9\_A, WMV9\_B, and WMV9\_C](wmv8-a--wmv8-b--wmv9-a--wmv9-b--and-wmv9-c.md)
-
-For information about the restricted profiles of the MPEG-4 AVC (H.264) and VC-1 video codec standards, download [DirectX Video Acceleration Specification for H.264/AVC Decoding](https://go.microsoft.com/fwlink/p/?linkid=141799) and [DirectX Video Acceleration Specification for Windows Media Video v8, v9 and vA Decoding (Including SMPTE 421M "VC-1")](https://go.microsoft.com/fwlink/p/?linkid=141800).
-
- 
-
- 
-
-
-
-
-
+For information about the restricted profiles of the MPEG-4 AVC (H.264) and VC-1 video codec standards, see *DirectX Video Acceleration Specification for H.264/AVC Decoding* and *DirectX Video Acceleration Specification for Windows Media Video v8, v9 and vA Decoding (Including SMPTE 421M "VC-1")*.

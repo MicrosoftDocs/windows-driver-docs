@@ -20,7 +20,7 @@ ms.date: 06/30/2020
 
 The following figure shows the data-format descriptor for a wave audio stream.
 
-![diagram illustrating a wave-format descriptor.](images/wavefmt.png)
+:::image type="content" source="images/wavefmt.png" alt-text="Diagram illustrating a wave-format descriptor for an audio stream.":::
 
 As indicated in the figure, the amount of additional format information following the [**KSDATAFORMAT**](/windows-hardware/drivers/ddi/ks/ns-ks-ksdataformat) structure varies depending on the data format.
 

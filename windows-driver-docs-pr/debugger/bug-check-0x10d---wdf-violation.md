@@ -219,7 +219,7 @@ See the description of each code in the Parameters section for an explanation of
 
 ## Resolution
 
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in gathering information, such as the faulting code module.
+The [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in gathering information, such as the faulting code module.
 
 Typically, the WDF dump file will yield further information on the driver that caused this bug check. Use this command to look at the log file.
 
@@ -231,7 +231,7 @@ If Parameter 1 is equal to **0x2**, examine the caller's stack to determine the 
 
 If Parameter 1 is equal to **0x3**, the driver's Kernel-Mode Driver Framework error log will include details about the outstanding references.
 
-If Parameter 1 is equal to **0x4**, use the [**ln debugger**](ln--list-nearest-symbols-.md) command with the value of *Parameter 3* as its argument to determine which function requires a non-**NULL** parameter.
+If Parameter 1 is equal to **0x4**, use the [**ln debugger**](../debuggercmds/ln--list-nearest-symbols-.md) command with the value of *Parameter 3* as its argument to determine which function requires a non-**NULL** parameter.
 
 If Parameter 1 is equal to **0x7**, use the **!wdfkd.wdfhandle***Parameter 2* extension command to determine the handle type.
 

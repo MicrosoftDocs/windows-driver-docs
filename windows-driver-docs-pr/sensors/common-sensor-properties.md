@@ -1,7 +1,7 @@
 ---
-title: Common sensor properties
+title: Common Sensor Properties
 description: This topic describes the sensor properties that are common for all sensors.
-ms.date: 03/02/2023
+ms.date: 01/11/2024
 ms.topic: reference
 ---
 

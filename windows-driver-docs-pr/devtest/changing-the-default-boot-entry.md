@@ -42,11 +42,3 @@ To change the default boot entry to the earlier Windows operating system loader 
 bcdedit /default {ntldr}
 ```
 
- 
-
- 
-
-
-
-
-

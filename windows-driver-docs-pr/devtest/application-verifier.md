@@ -30,7 +30,7 @@ You can use Application Verifier alone or in conjunction with a user-mode debugg
 
 Application Verifier is included in the [Windows Software Development Kit](https://developer.microsoft.com/windows/downloads/windows-sdk/) (SDK). To install Application Verifier, check the box for it, during installation of the SDK.
 
-![application verifier main menu default landing page showing a single test app selected with tests listed on the right side](images/application-verifier-main-menu.png)
+:::image type="content" source="images/application-verifier-main-menu.png" alt-text="Screenshot of Application Verifier main menu with a single test app selected and tests listed on the right side.":::
 
 ## What Is AppVerifier?
 
@@ -131,13 +131,5 @@ This section contains the following topics.
 [Application Verifier - Debugging Application Verifier Stops](application-verifier-debugging-application-verifier-stops.md)
   
 [Application Verifier - Frequently Asked Questions](application-verifier-faqs.md)
-
-
- 
-
- 
-
-
-
 
 

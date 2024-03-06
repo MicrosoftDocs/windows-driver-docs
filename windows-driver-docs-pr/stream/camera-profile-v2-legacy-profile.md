@@ -1,5 +1,5 @@
 ---
-title: Camera Profile V2 legacy profile
+title: Camera Profile V2 Legacy Profile
 description: This article provides information about the Camera Profile V2 legacy profile.
 ms.date: 06/08/2023
 ---

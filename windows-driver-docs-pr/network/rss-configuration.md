@@ -44,7 +44,7 @@ To rebalance the processing load, the overlying driver can set the RSS parameter
 
 The following figure provides example contents for two instances of the indirection table.
 
-![diagram illustrating the contents of two instances of an rss indirection table.](images/rss-table.png)
+:::image type="content" source="images/rss-table.png" alt-text="Diagram illustrating the contents of two instances of an RSS indirection table with a four processor configuration and 64 entries.":::
 
 The preceding figure assumes a four processor configuration, and the number of least significant bits used from the hash value is 6 bits. Therefore, the indirection table contains 64 entries.
 

@@ -1,7 +1,7 @@
 ---
-title: Talking to USB devices, start to finish (UWP app)
+title: Talking to USB Devices, Start to Finish (UWP App)
 description: This article provides an end-to-end walkthrough for creating a UWP app that talks to a USB device.
-ms.date: 02/22/2023
+ms.date: 01/17/2024
 ---
 
 # Talking to USB devices, start to finish (UWP app)
@@ -78,8 +78,8 @@ Open your Package.appxmanifest file in a text editor and add the **[DeviceCapabi
 
 ```xml
 <Capabilities>
-  <!--When the device's classId is FF * *, there is a predefined name for the class. 
-      You can use the name instead of the class id. 
+  <!--When the device's classId is FF * *, there is a predefined name for the class.
+      You can use the name instead of the class id.
       There are also other predefined names that correspond to a classId.-->
   <m2:DeviceCapability Name="usb">
     <!--SuperMutt Device-->

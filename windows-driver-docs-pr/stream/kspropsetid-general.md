@@ -1,5 +1,5 @@
 ---
-title: KSPROPSETID\_General
+title: KSPROPSETID_General
 description: KSPROPSETID\_General
 ms.date: 11/28/2017
 ---

@@ -115,11 +115,3 @@ A value of **0** means that there is no maximum value. TraceView retains all mes
 
 This value appears in the **Max Trace Records** column of the [Trace Session List](trace-session-list.md).
 
- 
-
- 
-
-
-
-
-

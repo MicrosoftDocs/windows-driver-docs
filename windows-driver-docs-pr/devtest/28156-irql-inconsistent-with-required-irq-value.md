@@ -1,5 +1,5 @@
 ---
-title: C28156 warning
+title: C28156 Warning
 description: Warning C28156 The actual IRQL is inconsistent with the required IRQL.
 keywords:
 - warnings listed WDK PREfast for Drivers
@@ -30,12 +30,4 @@ warning C28156: The actual IRQL is inconsistent with the required IRQL
  
 
 An **\_IRQL\_requires\_** annotation specifies that the driver should be executing at a particular IRQL when the function completes, but there is at least one path in which the driver is executing at a different IRQL when the function completes.
-
- 
-
- 
-
-
-
-
 

@@ -1,7 +1,7 @@
 ---
-title: Enumeration properties
+title: Enumeration Properties
 description: This article describes the static sensor properties that are available from the PnP Driver Store.
-ms.date: 03/02/2023
+ms.date: 01/11/2024
 ms.topic: reference
 ---
 

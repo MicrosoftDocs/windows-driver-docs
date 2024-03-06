@@ -1,5 +1,5 @@
 ---
-title: SetDedupMode method of the MSFT\_Volume class
+title: SetDedupMode Method of the MSFT_Volume Class
 description: Enables or disables deduplication on the volume.
 ms.assetid: A37E60BA-914A-4876-B411-138B8D9335B3
 keywords:

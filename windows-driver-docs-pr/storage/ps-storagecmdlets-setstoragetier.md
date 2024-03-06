@@ -1,5 +1,5 @@
 ---
-title: SetStorageTier method of the PS\_StorageCmdlets class
+title: SetStorageTier Method of the PS_StorageCmdlets Class
 description: SetStorageTier method of the PS_StorageCmdlets class.
 ms.assetid: E5BA4821-782F-49D7-AF32-20EB8FD6EAA4
 keywords:

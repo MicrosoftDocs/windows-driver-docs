@@ -1,5 +1,5 @@
 ---
-title: ProcAmpControlOpenStream method
+title: ProcAmpControlOpenStream Method
 description: The sample DXVA\_ProcAmpControlDeviceClass::ProcAmpControlOpenStream function creates a ProcAmp stream object.
 keywords: ["ProcAmpControlOpenStream method Display Devices", "ProcAmpControlOpenStream method Display Devices , DXVA_ProcAmpControlDeviceClass interface", "DXVA_ProcAmpControlDeviceClass interface Display Devices , ProcAmpControlOpenStream method"]
 topic_type:
@@ -10,7 +10,6 @@ api_name:
 api_type:
 - COM
 ms.date: 12/06/2018
-ms.custom: seodec18
 ---
 
 # DXVA\_ProcAmpControlDeviceClass::ProcAmpControlOpenStream method
@@ -55,4 +54,3 @@ The *ProcAmpControlOpenStream* function maps directly to a call to the CreateMoC
 [**ProcAmpControlQueryRange**](dxva-deinterlacecontainerdeviceclass-procampcontrolqueryrange.md)
 
  
-

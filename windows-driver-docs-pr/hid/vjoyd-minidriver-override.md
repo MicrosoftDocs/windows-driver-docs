@@ -1,12 +1,12 @@
 ---
-title: VJoyD minidriver override
+title: VJoyD Minidriver Override
 description: VJoyD minidriver override
 keywords:
 - joysticks WDK HID , overrides
 - virtual joystick drivers WDK HID , overrides
 - VJoyD WDK HID , overrides
 - overriding virtual minidrivers WDK joysticks
-ms.date: 10/12/2022
+ms.date: 01/11/2024
 ---
 
 # VJoyD minidriver override

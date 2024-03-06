@@ -1,7 +1,7 @@
 ---
-title: Supported smart card attributes
+title: Supported Smart Card Attributes
 description: This topic describes supported smart card attributes.
-ms.date: 12/01/2022
+ms.date: 01/11/2024
 ---
 
 # Supported smart card attributes

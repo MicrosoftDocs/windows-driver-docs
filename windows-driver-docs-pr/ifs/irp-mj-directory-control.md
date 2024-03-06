@@ -1,5 +1,5 @@
 ---
-title: IRP_MJ_DIRECTORY_CONTROL (FS and filter drivers)
+title: IRP_MJ_DIRECTORY_CONTROL (FS and Filter Drivers)
 description: IRP_MJ_DIRECTORY_CONTROL
 keywords: ["IRP_MJ_DIRECTORY_CONTROL  Installable File System Drivers"]
 topic_type:
@@ -8,7 +8,7 @@ api_name:
 - IRP_MJ_DIRECTORY_CONTROL
 api_type:
 - NA
-ms.date: 03/13/2023
+ms.date: 02/05/2024
 ms.topic: reference
 ---
 
@@ -106,8 +106,9 @@ The following flag can be set for IRP_MN_NOTIFY_CHANGE_DIRECTORY:
 
   | Value | Meaning |
   | ----- | ------- |
-  | **DirectoryNotifyInformation** | Return a [**FILE_NOTIFY_INFORMATION**](/windows/win32/api/winnt/ns-winnt-file_notify_information) structure for directory change. |
-  | **DirectoryNotifyExtendedInformation** | Return a [**FILE_NOTIFY_EXTENDED_INFORMATION**](/windows/win32/api/winnt/ns-winnt-file_notify_extended_information) structure for each directory change. |
+  | **DirectoryNotifyInformation** | Return a [**FILE_NOTIFY_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-file_notify_information) structure for directory change. |
+  | **DirectoryNotifyExtendedInformation** | Return a [**FILE_NOTIFY_EXTENDED_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-file_notify_extended_information) structure for each directory change. |
+  | **DirectoryNotifyFullInformation** | Return a [**FILE_NOTIFY_FULL_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-file_notify_full_information) structure for each directory change. |
 
 ## See also
 
@@ -129,9 +130,11 @@ The following flag can be set for IRP_MN_NOTIFY_CHANGE_DIRECTORY:
 
 [**FsRtlNotifyFullChangeDirectory**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlnotifyfullchangedirectory)
 
-[**FILE_NOTIFY_INFORMATION**](/windows/win32/api/winnt/ns-winnt-file_notify_information)
+[**FILE_NOTIFY_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-file_notify_information)
 
-[**FILE_NOTIFY_EXTENDED_INFORMATION**](/windows/win32/api/winnt/ns-winnt-file_notify_extended_information)
+[**FILE_NOTIFY_EXTENDED_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-file_notify_extended_information)
+
+[**FILE_NOTIFY_FULL_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-file_notify_full_information)
 
 [**IO_STACK_LOCATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location)
 

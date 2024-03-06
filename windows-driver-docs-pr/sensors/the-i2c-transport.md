@@ -1,25 +1,22 @@
 ---
-title: I2C transport
+title: I2C Transport
 description: I2C transport
-ms.date: 04/20/2017
+ms.date: 01/11/2024
 ---
 
 # I2C transport
-
 
 | Module                  | Class/Interface      |
 |-------------------------|----------------------|
 | AccelerometerDevice.cpp | CAccelerometerDevice |
 | Adxl345.h               | N/A                  |
 
- 
+The I<sup>2</sup>C (Inter-IC) transport is a two-wire serial transport that was introduced by the Phillips Corporation for their consumer products. Sensors are one category of device that support this transport. Examples include:
 
-The I²C (Inter-IC) transport is a two-wire serial transport that was introduced by the Phillips Corporation for their consumer products. Sensors are one category of device that support this transport. Examples include:
-
--   ADXL345 accelerometer
--   HMC5883L compass
--   MS5611-01BA03 barometric pressure sensor
--   TMP100 temperature sensor
+- ADXL345 accelerometer
+- HMC5883L compass
+- MS5611-01BA03 barometric pressure sensor
+- TMP100 temperature sensor
 
 The two wires on the I2C bus correspond to a clock-line (SCL) and a serial data-line (SDA). For more information about the I2C transport, see to the I2C Bus Specification.
 
@@ -29,6 +26,7 @@ The sample driver has a method that writes values to a given register (**CAcclel
 
 For example, the following sequence of **WriteRegister** and **ReadRegister** calls takes place during driver and device initialization. The driver invokes **WriteRegister** to configure the sensor. If the operation succeeds, **ReadRegister** returns contents that reflect the previously written values.
 
+```output
 Method
 Register
 Data
@@ -36,7 +34,7 @@ Purpose
 **CAccelerometerDevice::WriteRegister**
 0x2d
 '\\0' (0x00)
-Reset the sensor’s power-control register and place the device in standby mode.
+Reset the sensor's power-control register and place the device in standby mode.
 **CAccelerometerDevice::ReadRegister**
 0x2d
 '\\0' (0x00)
@@ -52,7 +50,7 @@ Full-resolution has been set with maximum range (+/- 16G).
 . . .
 . . .
 . . .
- 
+```
 
 The complete register map for the accelerometer is in Table 16 of the device's data sheet. The sample driver supports a subset of these registers. These supported values are found within the Adxl345.h header file:
 
@@ -92,11 +90,3 @@ The complete register map for the accelerometer is in Table 16 of the device's d
 #define ADXL345_FIFO_CTL                    0x38
 #define ADXL345_FIFO_STATUS                 0x39
 ```
-
- 
-
- 
-
-
-
-

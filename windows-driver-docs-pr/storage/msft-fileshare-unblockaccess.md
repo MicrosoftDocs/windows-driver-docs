@@ -1,5 +1,5 @@
 ---
-title: UnblockAccess method of the MSFT\_FileShare class
+title: UnblockAccess Method of the MSFT_FileShare Class
 description: Removes specified users from the denied access list for the file share.
 ms.assetid: DA0B78BE-571F-4B5E-9120-7321FE2BB977
 keywords:

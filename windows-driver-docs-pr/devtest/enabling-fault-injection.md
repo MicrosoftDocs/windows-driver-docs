@@ -39,11 +39,3 @@ The **runtest** option executes simple disable and enable operations on a driver
 
 8.  Unregisters the driver.
 
- 
-
- 
-
-
-
-
-

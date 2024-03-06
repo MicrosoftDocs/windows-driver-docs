@@ -11,12 +11,11 @@ ms.date: 04/20/2017
 
 # State Pane
 
-
 The **State** pane displays Boolean expressions for the values of variables in the driver, the operating system model, and the rule. SDV uses these expressions to construct an abstraction of the driver, the operating system model, and the rule, and uses them in the verification.
 
 The following screen shot shows an example **State** pane in the Defect Viewer.
 
-![screen shot of the state pane in the defect viewer.](images/sdv-state.png)
+:::image type="content" source="images/sdv-state.png" alt-text="Screenshot of the State pane in the Defect Viewer.":::
 
 The **State** pane is a component of the Defect Viewer. When a code element is highlighted in the [Trace Tree pane](trace-tree-pane.md), and the corresponding line of source code is highlighted in the [Source Code pane](source-code-pane.md), the **State** pane displays the Boolean expressions (from the set of expressions that SDV is tracking for the driver) that evaluate to **TRUE** before the line of code is executed.
 
@@ -44,9 +43,13 @@ Typically, because each line of source code represents only one step in the trac
 
 For example, the following screen shot shows the State pane displaying a line of code that includes a function pointer. In this case, each step tab represents a step in the resolution of the pointer, the calling of the pointed-to function, and its result. (The number of step tabs reveals how many steps it takes for SDV to resolve the function pointer.)
 
-![screen shot of the state pane displaying a line of code that includes a function pointer.](images/sdv-statetab.png)
+:::image type="content" source="images/sdv-statetab.png" alt-text="Screenshot of the State pane displaying a line of code with a function pointer.":::
 
-To view each step tab in the **State** pane in order, select the associated line of code in the **Source Code** pane. Then, click the line of code in the **Source Code** pane repeatedly. Each time you click the selected line of code, SDV displays the next step tab until you have cycled through all of the step tabs. The curved yellow arrow (![curved yellow arrow icon indicating the selected step.](images/sdv-ico-steptab.png)) indicates the selected step. You can also click any tab in the **State** pane to view its content.
+To view each step tab in the **State** pane in order, select the associated line of code in the **Source Code** pane. Then, click the line of code in the **Source Code** pane repeatedly. Each time you click the selected line of code, SDV displays the next step tab until you have cycled through all of the step tabs. The curved yellow arrow indicates the selected step.
+
+:::image type="content" source="images/sdv-ico-steptab.png" alt-text="Icon of a curved yellow arrow indicating the selected step.":::
+
+You can also click any tab in the **State** pane to view its content.
 
 ### <span id="comment"></span><span id="COMMENT"></span>Comment
 
@@ -58,12 +61,3 @@ sdv irql current ==2
 sdv irql current!=1
 sdv irql current!=0
 ```
-
- 
-
- 
-
-
-
-
-

@@ -1,5 +1,5 @@
 ---
-title: D3DKMT\_OUTPUTDUPL\_GET\_FRAMEINFO structure
+title: D3DKMT_OUTPUTDUPL_GET_FRAMEINFO Structure
 description: Learn about the D3DKMT\_OUTPUTDUPL\_GET\_FRAMEINFO structure, which is reserved for system use. Do not use in your driver.
 keywords: ["D3DKMT_OUTPUTDUPL_GET_FRAMEINFO structure Display Devices"]
 topic_type:

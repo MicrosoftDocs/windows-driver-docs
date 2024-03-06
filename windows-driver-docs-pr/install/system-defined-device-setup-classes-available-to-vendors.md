@@ -1,8 +1,7 @@
 ---  
 title: System-Defined Device Setup Classes Available to Vendors  
 description: System-Defined Device Setup Classes Available to Vendors 
-ms.date: 06/04/2021
-ms.custom: contperf-fy21q1
+ms.date: 12/20/2023
 ---  
 
 # System-Defined Device Setup Classes Available to Vendors  
@@ -14,7 +13,7 @@ If you're writing a Windows device driver for a specific category of device, you
 
 To see how these entries appear in an INF file, check out [cdrom.inf](https://github.com/microsoft/Windows-driver-samples/blob/aaeca58c5e7b67740a603a3150db225670b42bb6/storage/class/cdrom/src/cdrom.inf#L7-L8) in the [Windows driver samples](https://github.com/microsoft/Windows-driver-samples) repo.
 
-Values in the list can be used to install device drivers on Windows 2000 and later, unless specially noted.
+Unless otherwise noted, you can use entries in the following list to install device drivers on Windows 2000 and later.
 
 > [!NOTE]
 > If you're looking for info on troubleshooting a problem with a CD or DVD drive, see [The CD drive or the DVD drive does not work as expected](https://support.microsoft.com/help/929461/the-cd-drive-or-the-dvd-drive-does-not-work-as-expected-on-a-computer).

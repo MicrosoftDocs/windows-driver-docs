@@ -15,7 +15,7 @@ ms.date: 04/20/2017
 
 The following figure shows the configuration of Microsoft Windows Driver Model (WDM) audio components that render and capture wave content.
 
-![diagram illustrating rendering and capturing wave content.](images/wave.png)
+:::image type="content" source="images/wave.png" alt-text="Diagram that shows the configuration of WDM audio components for rendering and capturing wave content.":::
 
 See the following for a description of the WDM audio components:
 

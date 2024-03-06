@@ -1,13 +1,13 @@
 ---
 title: Universal Serial Bus (USB)
 description: Learn to develop Windows drivers for USB devices.
-ms.date: 10/28/2022
+ms.date: 12/06/2023
 ms.topic: article
 ---
 
 # Universal Serial Bus (USB)
 
-Universal Serial Bus (USB) provides an expandable, hot-pluggable Plug and Play serial interface that ensures a standard, low-cost connection for peripheral devices such as keyboards, mice, joysticks, printers, scanners, storage devices, modems, and video conferencing cameras. Migration to USB is recommended for all peripheral devices that use legacy ports such as PS/2, serial, and parallel ports.
+Universal Serial Bus (USB) provides an expandable Plug and Play serial interface that ensures a standard, low-cost connection for peripheral devices. USB devices include keyboards, mice, joysticks, printers, scanners, storage devices, modems, video conferencing cameras, and more.
 
 The USB-IF is a Special Interest Groups (SIGs) that maintains the [Official USB Specification](https://www.usb.org/documents), test specifications and tools.
 
@@ -17,7 +17,9 @@ Windows operating systems include native support for USB host controllers, hubs,
 
 ## USB in Windows
 
-- [Windows 10: What's new for USB](windows-10--what-s-new-for-usb.md): Overview of new features and improvements in USB in Windows 10.
+- [Windows support for USB Type-C connectors](oem-tasks-for-bringing-up-a-usb-typec.md): For OEMs who want to build a Windows system with USB Type-C connectors.
+
+- [Universal Serial Bus 4 (USB4&trade;)](/windows-hardware/design/component-guidelines/universal-serial-bus-4): Provides OEMs, IHVs and silicon vendors bringing up Windows systems supporting USB4 with information about the USB4 connection manager, facilitating debugging, and bring-up procedures.
 
 - [USB FAQ](usb-faq--introductory-level.yml): Frequently asked questions from driver developers about the USB stack and features that are supported in USB.
 
@@ -144,6 +146,16 @@ Get information about the tools that you can use to test your USB hardware or so
 
 Read an overview of tests in the Hardware Certification Kit that enable hardware vendors and device manufacturers to prepare their USB devices and host controllers for Windows Hardware Certification submission.
 
+## Universal Serial Bus 4 (USB4&trade;)
+
+- [Universal Serial Bus 4 (USB4&trade;)](/windows-hardware/design/component-guidelines/universal-serial-bus-4): Provides OEMs, IHVs and silicon vendors bringing up Windows systems supporting USB4 with information about the USB4 connection manager, facilitating debugging, and bring-up procedures.
+
+- [Introduction to the USB4 connection manager in Windows](/windows-hardware/design/component-guidelines/usb4-intro-to-connection-manager): The connection manager in a USB4 domain is responsible for enumeration, configuration, and management of the USB4 domain.
+
+- [Universal Serial Bus 4 (USB4&trade;) design details and general requirements](/windows-hardware/design/component-guidelines/usb4-design-details-and-general-requirements): High-level design and user experience requirements.
+
+- [Universal Serial Bus 4 (USB4&trade;) required testing](/windows-hardware/design/component-guidelines/usb4-required-testing): The HLK requirements aren't designed to provide complete end-to-end functional test coverage for the USB4 feature set. We recommend that you perform thorough validation of important usage scenarios.
+
 ## Other Resources for USB
 
 - [Official USB Specification](https://www.usb.org/documents): Provides complete technical details for the USB protocol.
@@ -153,12 +165,6 @@ Read an overview of tests in the Hardware Certification Kit that enable hardware
 - [OSR Online Lists - ntdev](https://community.osr.com/categories/ntdev): Discussion list managed by [OSR Online](https://www.osronline.com/index.cfm) for kernel-mode driver developers.
 
 - [Windows Hardware Dev Center](https://developer.microsoft.com/windows/hardware/): Miscellaneous resources based on frequently asked questions from developers who are new to developing USB devices and drivers that work with Windows operating systems.
-
-## USB-related videos
-
-- [Understanding USB 3.0 in Windows 8](/events/build-build2011/hw-256t)
-- [Building great USB 3.0 devices](/events/build-build2011/hw-773t)
-- [USB Debugging Innovations in Windows 8 (Part I, II, & III)](/events/build-build2011/hw-258p)
 
 ## USB hardware for learning
 
@@ -176,4 +182,4 @@ Read an overview of tests in the Hardware Certification Kit that enable hardware
 
 - [USB generic function driver–WinUSB](winusb.md): WinUSB is a generic driver for USB devices that is included with all versions of Windows since Windows Vista. Windows provides Winusb.sys that can be loaded as a function driver for a custom device and a function of a composite device.
 
-- [USB generic parent driver for composite devices–Usbccgp](usb-common-class-generic-parent-driver.md): Parent driver for USB devices with multiple functions. Usbccgp creates physical device objects (PDOs) for each of those functions. Those individual PDOs are managed by their respective USB function drivers, which could be the Winusb.sys driver or a USB device class driver.
+- [USB generic parent driver for composite devices–Usbccgp](usb-common-class-generic-parent-driver.md): Parent driver for USB devices with multiple functions. Usbccgp creates physical device objects (PDOs) for each of those functions. Those individual PDOs manage their respective USB function drivers, which could be the Winusb.sys driver or a USB device class driver.

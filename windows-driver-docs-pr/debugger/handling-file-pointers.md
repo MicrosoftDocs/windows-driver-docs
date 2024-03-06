@@ -15,8 +15,3 @@ Because this feature is automatically applied, an option exists to turn it off i
  
 
  
-
-
-
-
-

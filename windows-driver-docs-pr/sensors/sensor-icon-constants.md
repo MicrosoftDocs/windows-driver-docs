@@ -1,5 +1,5 @@
 ---
-title: Sensor icon constants
+title: Sensor Icon Constants
 description: Sensor drivers can specify one of a set of platform-defined icons, or a custom icon, to represent the device in Control Panel. The following table lists the platform-defined icon resource IDs.
 keywords: ["Sensor Icon Constants Sensor Devices"]
 topic_type:
@@ -8,7 +8,7 @@ api_name:
 - Sensor icon constants
 api_type:
 - NA
-ms.date: 03/02/2023
+ms.date: 01/11/2024
 ms.topic: reference
 ---
 

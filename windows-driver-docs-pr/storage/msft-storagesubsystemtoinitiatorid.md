@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StorageSubSystemToInitiatorId class
+title: MSFT_StorageSubSystemToInitiatorId Class
 description: Association between StorageSubSystem and InitiatorId.
 ms.assetid: C7F30596-DEA8-4179-8C2B-0F8F65248CF9
 keywords:

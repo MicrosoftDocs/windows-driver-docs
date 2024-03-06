@@ -21,7 +21,7 @@ The EVENT\_TRACING\_FATAL\_ERROR bug check has a value of 0x0000011D. This bug c
 
 ## Resolution
 
-In a kernel debugger, use the [**!analyze -v**](-analyze.md) command to perform the initial bug check analysis. Parameter 1 will list the subtype of the bugcheck.
+In a kernel debugger, use the [**!analyze -v**](../debuggercmds/-analyze.md) command to perform the initial bug check analysis. Parameter 1 will list the subtype of the bugcheck.
 
 0x01 : Unable to initialize security.
 

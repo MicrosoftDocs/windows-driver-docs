@@ -1,5 +1,5 @@
 ---
-title: C28650 warning
+title: C28650 Warning
 description: The type for which 0 is being used does not treat it as failure case.
 ms.date: 04/20/2017
 f1_keywords: 
@@ -16,12 +16,4 @@ Returning a status value such as !TRUE is not the same as returning a status val
 Certain data types such as **NTSTATUS** and **HRESULT** have associated macros that classify values of these types into SUCCESS or FAILURE. These macros check the most significant bit of the returned value or values to determine this. Thus, 0 and 1 are both classified as SUCCESS values.
 
 The proper way to fix this warning is to return a proper error code instead of a generic value such as -1.
-
- 
-
- 
-
-
-
-
 

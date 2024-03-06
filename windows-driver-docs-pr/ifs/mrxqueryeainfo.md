@@ -1,5 +1,5 @@
 ---
-title: MRxQueryEaInfo routine
+title: MRxQueryEaInfo Routine
 description: The MRxQueryEaInfo routine is called by RDBSS to request that a network mini-redirector query extended attribute information on a file system object.
 keywords: ["MRxQueryEaInfo routine Installable File System Drivers", "PMRX_CALLDOWN"]
 topic_type:

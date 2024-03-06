@@ -1,7 +1,7 @@
 ---
-title: Tools in the MUTT software package
+title: Tools in the MUTT Software Package
 description: The MUTT software package contains several tools to be used with MUTT devices. The suite of tools include a firmware upgrade application, driver installation package, and applications that send transfers to the device.
-ms.date: 02/14/2023
+ms.date: 01/17/2024
 ---
 
 # Tools in the MUTT software package

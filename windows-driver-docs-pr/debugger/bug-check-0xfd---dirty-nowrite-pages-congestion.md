@@ -63,7 +63,7 @@ This bug check usually occurs because the component that owns the modified non-w
 
 ## Resolution
 
-For more information about which driver is causing the problem, use the [**!vm 3**](-vm.md) extension, followed by [**!memusage 1**](-memusage.md) .
+For more information about which driver is causing the problem, use the [**!vm 3**](../debuggercmds/-vm.md) extension, followed by [**!memusage 1**](../debuggercmds/-memusage.md) .
 
  
 

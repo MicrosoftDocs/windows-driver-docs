@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StorageTier class
+title: MSFT_StorageTier Class
 description: Represents a storage tier.
 ms.assetid: 0E049D07-DD37-4F64-8483-3ECF32211567
 keywords:

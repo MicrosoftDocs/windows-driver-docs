@@ -16,21 +16,21 @@ ms.date: 04/22/2021
 
 This topic describes how pin factories and pin instantiation can be displayed using the [KSStudio Utility](ksstudio-utility.md).
 
-## Pin Factories 
+## Pin Factories
 
 An audio filter's pin factories describe all of the pins that the filter can instantiate. In general, KS Filters host one or more pin factories. For more information see [Pin Factories](pin-factories.md).
 
-In the *Object Topology View* of the KSStudio Utility, pin factories are located on a filter such that dataflow is drawn from left to right. The various pin types and their representations are shown below. 
+In the *Object Topology View* of the KSStudio Utility, pin factories are located on a filter such that dataflow is drawn from left to right. The various pin types and their representations are shown below.
 
 **Communication Flow and Data Flow** 
 
-![Diagram showing KsStudio Pin Factories .](images/ksstudio-pin-factories.png)
+:::image type="content" source="images/ksstudio-pin-factories.png" alt-text="Diagram showing various pin types and their representations in KsStudio.":::
 
-## Pin Instantiation 
+## Pin Instantiation
 
 There are several ways to instantiate a pin in KSStudio. 
 
-- Manual instantiation. This method is useful if you want to control the format of the pin. Right-click on a pin factory and choose Instantiate from the popup menu. This produces the `KSPIN_CONNECT` parameters dialog. 
+- Manual instantiation. This method is useful if you want to control the format of the pin. Right-click on a pin factory and choose Instantiate from the popup menu. This produces the `KSPIN_CONNECT` parameters dialog.
 
 This dialog shows an appropriate structure (based on `KSPIN_CONNECT`) used to instantiate a pin. The structure shown is the result of a call to the filters Data Range Intersection handler. The members of the structure and substructures can be changed by double clicking on them. The PinToHandle member can be populated by choosing a pin instance from the .ConnectTo tree in the bottom of the dialog. When the dialog is confirmed, the KSPIN_CONNECT structure is passed as a parameter to KsCreatePin. 
 
@@ -44,23 +44,23 @@ For each pin instantiated using the above methods, representations of the pin in
 
 ## Nodes
 
-Nodes are used to describe the path of data flow through a filter. They are also used to declare the scope of effect that results from a property call as described below in "Properties and Events on Nodes". 
+Nodes are used to describe the path of data flow through a filter. They are also used to declare the scope of effect that results from a property call as described below in "Properties and Events on Nodes".
 
-To view a filter's nodes in the graph view, right-click on the filter and chose "view nodes". 
+To view a filter's nodes in the graph view, right-click on the filter and chose "view nodes".
 
-When you click on a node in the graph view, the following UI actions are invoked: 
+When you click on a node in the graph view, the following UI actions are invoked:
 
-- Every path through the selected node is highlighted in the filter 
+- Every path through the selected node is highlighted in the filter
 
-- The corresponding representation of the node in the tree view is selected 
+- The corresponding representation of the node in the tree view is selected
 
-Note that orphaned nodes (nodes with no connections) are drawn in the upper left corner of the filters graphical domain. 
+Note that orphaned nodes (nodes with no connections) are drawn in the upper left corner of the filters graphical domain.
 
-## Properties and Events on Nodes 
+## Properties and Events on Nodes
 
-Property and Event calls are made via communication targets (filters and pins). As a parameter to these property and event calls, a node ordinal may be specified. In this sense, a property call is said to be *on* a node, *through* a pin or filter. 
+Property and Event calls are made via communication targets (filters and pins). As a parameter to these property and event calls, a node ordinal may be specified. In this sense, a property call is said to be *on* a node, *through* a pin or filter.
 
-KSStudio visually represents these relationships in both the *Object Topology View* and in the *Object Details View*. 
+KSStudio visually represents these relationships in both the *Object Topology View* and in the *Object Details View*.
 
 When a pin is instantiated, nodes are added as child items of the pin instance in the *Object Details View*. Properties on these nodes are queried on the nodes, through the pin. Note that most properties on nodes make sense only through the pin or through the filter, but not through both. 
 
@@ -75,9 +75,3 @@ When a pin is instantiated, nodes are added as child items of the pin instance i
 [KSStudio - KS Monitor](ksstudio-utility-ks-monitor.md)
 
 [KSStudio - Usage Examples](ksstudio-utility-usage-examples.md)
-
- 
-
-
-
-

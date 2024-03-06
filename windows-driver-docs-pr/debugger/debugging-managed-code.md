@@ -86,13 +86,13 @@ start             end                 module name
 
 In the preceding example, notice that the version of the CLR (clr.dll) matches the version of the DAC (mscordacwks.dll): v4.0.30319. Also notice that both components are 64-bit.
 
-When you use [**.cordll**](-cordll--control-clr-debugging-.md) to load the DAC, the SOS debugging extension (sos.dll) might get loaded automatically. If sos.dll doesn't get loaded automatically, you can use one of these commands to load it.
+When you use [**.cordll**](../debuggercmds/-cordll--control-clr-debugging-.md) to load the DAC, the SOS debugging extension (sos.dll) might get loaded automatically. If sos.dll doesn't get loaded automatically, you can use one of these commands to load it.
 
 **.loadby sos clr** (for version 4.0 of the CLR)
 
 **.loadby sos mscorwks** (for version 1.0 or 2.0 of the CLR)
 
-As an alternative to using [**.loadby**](-load---loadby--load-extension-dll-.md), you can use **.load**. For example, to load version 4.0 of the 64-bit CLR, you could enter a command similar to this.
+As an alternative to using [**.loadby**](../debuggercmds/-load---loadby--load-extension-dll-.md), you can use **.load**. For example, to load version 4.0 of the 64-bit CLR, you could enter a command similar to this.
 
 **.load C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\sos.dll**
 
@@ -163,7 +163,7 @@ In the preceding example, notice that the version of the CLR (clr.dll) matches t
 
 ### Using the SOS Debugging Extension
 
-To verify that the SOS debugging extension loaded correctly, enter the [**.chain**](-chain--list-debugger-extensions-.md) command.
+To verify that the SOS debugging extension loaded correctly, enter the [**.chain**](../debuggercmds/-chain--list-debugger-extensions-.md) command.
 
 ```dbgcmd
 0:000> .chain
@@ -180,4 +180,4 @@ To test the SOS debugging extension, enter **!sos.help**. Then try one of the co
 
 ### Notes
 
-Sometimes a managed-code application loads more than one version of the CLR. In that case, you must specify which version of the DAC to load. For more information, see [**.cordll**](-cordll--control-clr-debugging-.md).
+Sometimes a managed-code application loads more than one version of the CLR. In that case, you must specify which version of the DAC to load. For more information, see [**.cordll**](../debuggercmds/-cordll--control-clr-debugging-.md).

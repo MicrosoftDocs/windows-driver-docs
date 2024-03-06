@@ -1,7 +1,7 @@
 ---
-title: Testing display whitepoint
+title: Testing Display Whitepoint
 description: This topic provides instructions on how to use the MALT (Microsoft Ambient Light Tool) to test the display whitepoint.
-ms.date: 07/08/2021
+ms.date: 01/11/2024
 ---
 
 # Testing display whitepoint

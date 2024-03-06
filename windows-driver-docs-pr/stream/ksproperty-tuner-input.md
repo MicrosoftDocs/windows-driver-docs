@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_TUNER\_INPUT
+title: KSPROPERTY_TUNER_INPUT
 description: The KSPROPERTY\_TUNER\_INPUT property describes the input of the tuner in the current tuning mode, such as selecting between cable and antenna tuner inputs. This property must be implemented.
 keywords: ["KSPROPERTY_TUNER_INPUT Streaming Media Devices"]
 topic_type:

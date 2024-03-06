@@ -1,11 +1,10 @@
 ---
-title: Specifying a sensor icon
+title: Specifying a Sensor Icon
 description: Specifying a sensor icon
-ms.date: 04/20/2017
+ms.date: 01/11/2024
 ---
 
 # Specifying a sensor icon
-
 
 Sensor drivers can specify one of a set of platform-defined icons, or a custom icon, to represent the device in Control Panel. To specify a particular icon, create a DeviceIcon entry in your driver's INX (or INF) file, with the following format:
 
@@ -35,4 +34,5 @@ AddProperty     = DriverPropertiesSection
 For more information about device properties in INF files, see [**INF AddProperty Directive**](../install/inf-addproperty-directive.md).
 
 ## Related topics
-[**Sensor Icon Constants**](sensor-icon-constants.md)
+
+- [Sensor Icon Constants](sensor-icon-constants.md)

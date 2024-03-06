@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StorageSubSystemToStorageNode class
+title: MSFT_StorageSubSystemToStorageNode Class
 description: Association between a storage subsystem and a storage node.
 ms.assetid: E8D27895-90A7-4A61-A1AE-79F82AF9C53E
 keywords:

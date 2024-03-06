@@ -1,5 +1,5 @@
 ---
-title: Enable heap tagging
+title: Enable Heap Tagging
 description: Enable heap tagging
 keywords: ["Enable heap tagging (global flag)"]
 ms.date: 05/23/2017
@@ -42,7 +42,7 @@ The **Enable heap tagging** flag assigns unique tags to heap allocations.
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
-You can display the tag by using the [**!heap**](-heap.md) debugger extension with the -t parameter.
+You can display the tag by using the [**!heap**](../debuggercmds/-heap.md) debugger extension with the -t parameter.
 
 ### <span id="see_also"></span><span id="SEE_ALSO"></span>See Also
 
@@ -51,8 +51,3 @@ You can display the tag by using the [**!heap**](-heap.md) debugger extension wi
  
 
  
-
-
-
-
-

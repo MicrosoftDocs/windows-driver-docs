@@ -516,7 +516,7 @@ The following table lists those **I/O Verification** errors that can appear.
 <tr class="even">
 <td align="left"><p>0x225</p></td>
 <td align="left"><p>Non-fatal error</p></td>
-<td align="left"><p>An IRP dispatch handler has returned a status that is illegal (0xFFFFFFFF). This is probably due to an uninitialized stack variable. To debug this error, use the <strong><a href="ln--list-nearest-symbols-.md" data-raw-source="[ln (List Nearest Symbols)](ln--list-nearest-symbols-.md)">ln (List Nearest Symbols)</a></strong> command with the specified address.</p>
+<td align="left"><p>An IRP dispatch handler has returned a status that is illegal (0xFFFFFFFF). This is probably due to an uninitialized stack variable. To debug this error, use the <strong><a href="../debuggercmds/ln--list-nearest-symbols-.md" data-raw-source="[ln (List Nearest Symbols)](../debuggercmds/ln--list-nearest-symbols-.md)">ln (List Nearest Symbols)</a></strong> command with the specified address.</p>
 <p>Param 2 - The address in the driver's code where the error was detected.</p>
 <p>Param 3 - IRP address.</p>
 <p>Param 4 - Status code.</p>

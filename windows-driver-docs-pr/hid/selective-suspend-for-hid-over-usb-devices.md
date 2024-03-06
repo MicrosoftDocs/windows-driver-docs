@@ -1,7 +1,7 @@
 ---
-title: Selective suspend for HID over USB devices
+title: Selective Suspend for HID Over USB Devices
 description: Revision 2.0 of the Universal Serial Bus Specification specifies a USB selective suspend feature.
-ms.date: 05/05/2023
+ms.date: 01/11/2024
 ---
 
 # Selective suspend for HID over USB devices
@@ -12,23 +12,23 @@ By default, USB selective suspend is disabled by Windows in order to provide a c
 
 A HID device that supports selective suspend must be designed to:
 
--   Retain the first input, touch, movement or key press when resuming from selective suspend.
--   Wake from selective suspend on movement.
--   Maintain the wireless link (if applicable).
--   Maintain power to any active status LEDs, such as NUM lock or CAPS lock.
--   Resume from selective suspend without any perceived delay by the user.
+- Retain the first input, touch, movement or key press when resuming from selective suspend.
+- Wake from selective suspend on movement.
+- Maintain the wireless link (if applicable).
+- Maintain power to any active status LEDs, such as NUM lock or CAPS lock.
+- Resume from selective suspend without any perceived delay by the user.
 
 Windows 8 supports two methods for enabling Selective Suspend for HID USB devices. They are as follows:
 
-1.  **Microsoft OS Descriptor \[PREFERRED\]**: The Microsoft OS Descriptor’s Extended Properties descriptor can be used to write the necessary registry key(s) to support USB HID Selective Suspend.
-2.  **Vendor Provided INF**: The Hardware manufacturer can provide an INF file (that matches on the USB Hardware ID for the HID devnode) to install the appropriate registry keys.
+1. **Microsoft OS Descriptor \[PREFERRED\]**: The Microsoft OS Descriptor's Extended Properties descriptor can be used to write the necessary registry key(s) to support USB HID Selective Suspend.
+2. **Vendor Provided INF**: The Hardware manufacturer can provide an INF file (that matches on the USB Hardware ID for the HID devnode) to install the appropriate registry keys.
 
 Microsoft recommends that hardware vendors and PC manufacturers use the first option to enable USB HID Selective Suspend. The advantages of this option are:
 
--   Hardware vendors and PC manufacturers do not have to install an additional INF file.
--   The necessary registry setting is automatically populated on new Windows 8 installations.
--   The necessary registry setting is preserved on an upgrade to Windows 8.
--   The user cannot lose (or disable) Selective Suspend functionality by uninstalling the INF.
+- Hardware vendors and PC manufacturers do not have to install an additional INF file.
+- The necessary registry setting is automatically populated on new Windows 8 installations.
+- The necessary registry setting is preserved on an upgrade to Windows 8.
+- The user cannot lose (or disable) Selective Suspend functionality by uninstalling the INF.
 
 However, hardware vendors and PC manufacturers who wish to still use the INF approach, can use the example below. The following is a sample INF file that shows how to enable this USB feature for HID devices in Windows:
 
@@ -91,18 +91,18 @@ VendorXYZ.DeviceDesc = "VendorXYZ Device"
 
 Where:
 
-1.  The [**INF Version section**](../install/inf-version-section.md) should have the **CLASSGUID** and **DriverVer** directives set as follows:
+1. The [**INF Version section**](../install/inf-version-section.md) should have the **CLASSGUID** and **DriverVer** directives set as follows:
 
-    -   The **CLASSGUID** directive must specify the Microsoft class GUID for HID devices. This GUID has the value {745a17a0-74d3-11d0-b6fe-00a0c90f57da}.
+    - The **CLASSGUID** directive must specify the Microsoft class GUID for HID devices. This GUID has the value {745a17a0-74d3-11d0-b6fe-00a0c90f57da}.
 
-    -   The **DriverVer** directive must have a value that has a newer date and greater version number than the value specified by the **DriverVer** directive in Input.inf.
+    - The **DriverVer** directive must have a value that has a newer date and greater version number than the value specified by the **DriverVer** directive in Input.inf.
 
-2.  The VendorXYZDevice\* sections specify the hardware identifier (ID) for the vendor's HID device. The hardware ID consists of a vendor identifier (VID) and product identifier (PID). Each hardware ID for a device must have VID/PID values that are unique to the vendor and device. This ensures that the same hardware ID does not correspond to multiple names and settings
+2. The VendorXYZDevice\* sections specify the hardware identifier (ID) for the vendor's HID device. The hardware ID consists of a vendor identifier (VID) and product identifier (PID). Each hardware ID for a device must have VID/PID values that are unique to the vendor and device. This ensures that the same hardware ID does not correspond to multiple names and settings
 
-3.  The VendorXYZDevice\_Install.NT and VendorXYZDevice\_Install.NT.HW sections are [**INF DDInstall sections**](../install/inf-ddinstall-section.md). In this example, these sections contain INF **Include** and **Needs** directives.
+3. The VendorXYZDevice\_Install.NT and VendorXYZDevice\_Install.NT.HW sections are [**INF DDInstall sections**](../install/inf-ddinstall-section.md). In this example, these sections contain INF **Include** and **Needs** directives.
 
     The **Include** directives reference the system-supplied Input.inf file, which contains INF sections needed to enable the USB selective suspend feature for the vendor's HID device.
 
     The **Needs** directives indicate which sections from Input.inf should be processed during device installation. In this case, the HID\_SelSus\_Inst section is selected instead of the default HID\_Inst section, which does not support selective suspend.
 
-4.  The VendorXYZDevice\_Install.NT.Services section is an [**INF DDInstall.HW section**](../install/inf-ddinstall-hw-section.md). In this example, the section also contains the same values for the INF **Include** and **Needs** directives.
+4. The VendorXYZDevice\_Install.NT.Services section is an [**INF DDInstall.HW section**](../install/inf-ddinstall-hw-section.md). In this example, the section also contains the same values for the INF **Include** and **Needs** directives.

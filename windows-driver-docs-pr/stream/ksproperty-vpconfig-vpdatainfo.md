@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_VPCONFIG\_VPDATAINFO
+title: KSPROPERTY_VPCONFIG_VPDATAINFO
 description: The KSPROPERTY\_VPCONFIG\_VPDATAINFO property indicates the initial configuration state of the video port.
 keywords: ["KSPROPERTY_VPCONFIG_VPDATAINFO Streaming Media Devices"]
 topic_type:

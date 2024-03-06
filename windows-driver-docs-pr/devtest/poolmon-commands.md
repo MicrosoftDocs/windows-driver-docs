@@ -16,11 +16,3 @@ PoolMon has two separate, but related, sets of commands.
 
 -   [**PoolMon Run-time Commands**](poolmon-run-time-commands.md): To configure PoolMon while it is running, type a run-time command.
 
- 
-
- 
-
-
-
-
-

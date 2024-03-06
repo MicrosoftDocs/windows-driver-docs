@@ -43,11 +43,3 @@ tracelog -start MyTrace −guid MyProvider.guid -f testtrace%d.etl -newfile 1
 
 The resulting 1 MB files are numbered in the order that they are created, for example testtrace1.etl.
 
- 
-
- 
-
-
-
-
-

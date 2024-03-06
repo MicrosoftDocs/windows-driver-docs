@@ -40,7 +40,7 @@ In DirectX 8 and later, DirectMusic always uses its built-in wave sink to output
 
 The figure below shows how the DirectMusic architecture incorporates user-mode synthesizers and wave sinks. Note that the block labeled "DirectMusic Port" in the following figure should not be confused with the kernel-mode [DMus port driver](dmus-port-driver.md) in the PortCls system driver module, portcls.sys. A DirectMusic port is a user-mode object with an **IDirectMusicPort** interface (part of the DirectMusic API) and is implemented in dmusic.dll. For more information about DirectMusic ports, see the Microsoft Windows SDK documentation.
 
-![diagram illustrating directmusic architecture for user-mode synthesizers and wave sinks.](images/dmblock.png)
+:::image type="content" source="images/dmblock.png" alt-text="Diagram illustrating DirectMusic architecture for user-mode synthesizers and wave sinks.":::
 
 In the preceding figure, the application sends data to the user-mode DirectMusic port, which passes the data (MIDI or DLS) down to the software synth (dmsynth.dll by default) so that it can render the notes into wave data. The wave sink manages the timing and hands the synth a buffer to fill when it is ready to receive a burst of data. The synth fills up the buffer (an **IDirectSoundBuffer** object by default) with data so that it can be passed to DirectSound. DirectSound either plays the data through the [KMixer system driver](kernel-mode-wdm-audio-components.md#kmixer_system_driver) or plays it through a DirectSound hardware-accelerated rendering pin on the audio device, if one is available (see [Overview of DirectSound Hardware Acceleration](overview-of-directsound-hardware-acceleration.md)).
 
@@ -48,7 +48,4 @@ This same basic architecture also applies to kernel-mode implementations, with t
 
 When these steps are completed, the user-mode DirectMusic port should be open and activated for use. As soon as this much of the driver code is working, you can start implementing features. Use the source code for the user-mode Microsoft Software Synthesizer as a template and begin adding the new functionality.
 
-A user-mode software synthesizer can be implemented as an object with an [IDirectMusicSynth](/windows/win32/api/dmusics/nn-dmusics-idirectmusicsynth) interface. A user-mode wave sink can be implemented as an object with an [IDirectMusicSynthSink](/windows/win32/api/dmusics/nn-dmusics-idirectmusicsynthsink) interface. For more information, see [IDirectMusicSynth and IDirectMusicSynthSink](idirectmusicsynth-and-idirectmusicsynthsink.md).
-
- 
-
+A user-mode software synthesizer can be implemented as an object with an IDirectMusicSynth interface. A user-mode wave sink can be implemented as an object with an IDirectMusicSynthSink interface. For more information, see [IDirectMusicSynth and IDirectMusicSynthSink](idirectmusicsynth-and-idirectmusicsynthsink.md).

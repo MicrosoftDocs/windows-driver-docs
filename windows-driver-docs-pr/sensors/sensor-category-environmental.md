@@ -1,5 +1,5 @@
 ---
-title: SENSOR_CATEGORY_ENVIRONMENTAL
+title: Sensor_category_environmental
 description: The SENSOR_CATEGORY_ENVIRONMENTAL category contains sensors that provide information about the surrounding environment or weather.
 keywords: ["SENSOR_CATEGORY_ENVIRONMENTAL Sensor Devices"]
 topic_type:
@@ -10,7 +10,7 @@ api_location:
 - Sensors.h
 api_type:
 - HeaderDef
-ms.date: 03/02/2023
+ms.date: 01/11/2024
 ms.topic: reference
 ---
 

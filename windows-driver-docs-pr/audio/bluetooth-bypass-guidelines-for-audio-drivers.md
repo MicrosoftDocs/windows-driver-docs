@@ -1,14 +1,14 @@
 ---
-title: Bluetooth bypass guidelines for audio drivers
-description: Learn how to reroute audio data past the Bluetooth host controller interface (HCI) for processing in system-on-a-chip (SoC) solutions.
-ms.date: 06/14/2023
+title: Bluetooth HFP Bypass Guidelines for Audio Drivers
+description: Learn how to reroute audio data past the Bluetooth hands-free profile (HFP) host controller interface (HCI) for processing in system-on-a-chip (SoC) solutions.
+ms.date: 09/26/2023
 ---
 
-# Bluetooth bypass guidelines for audio drivers
+# Bluetooth HFP bypass guidelines for audio drivers
 
-This article presents Bluetooth bypass design guidelines for audio driver developers, demonstrating how to reroute audio data past the Bluetooth host controller interface (HCI) for processing in system-on-a-chip (SoC) solutions.
+This article presents Bluetooth hands-free profile (HFP) bypass design guidelines for audio driver developers, demonstrating how to reroute audio data past the Bluetooth host controller interface (HCI) for processing in system-on-a-chip (SoC) solutions.
 
-Bluetooth bypass audio data streaming support was introduced in Windows 8.1.
+Bluetooth HFP bypass audio data streaming support was introduced in Windows 8.1.
 
 Windows is compatible with low-power Intel-based and Arm-based SoC designs, optimized for "always on" scenarios where low battery consumption is crucial.
 
@@ -18,7 +18,7 @@ This feature offloads functionality present in Windows versions prior to 8.1. Fr
 
 The following diagram illustrates the software and hardware components that work together to provide this support.
 
-:::image type="content" source="images/btth-bypass-arch.png" alt-text="Diagram showing the software and hardware components that work together to provide Windows support for Bluetooth bypass audio streaming.":::
+:::image type="content" source="images/btth-bypass-arch.png" alt-text="Diagram illustrating the software and hardware components that work together to provide Windows support of Bluetooth bypass audio streaming.":::
 
 This Windows feature doesn't support bypass audio streaming using advanced audio distribution profile (A2DP). Windows 8 provides a separate A2DP profile driver that fully supports audio functionality through the standard Bluetooth HCI without requiring additional audio drivers.
 
@@ -30,4 +30,6 @@ For detailed information about the DDI members, see [Bluetooth HFP DDI Reference
 
 ## Related topics
 
-[Theory of Bluetooth bypass audio streaming](theory-of-operation.md)
+- [Bluetooth HFP bypass guidelines for audio drivers](bluetooth-bypass-guidelines-for-audio-drivers.md)
+- [Bluetooth HFP bypass audio streaming](bluetooth-hfp-bypass-audio-streaming.md)
+- [Bluetooth Low Energy (LE) Audio](../bluetooth/bluetooth-low-energy-audio.md)

@@ -1,5 +1,5 @@
 ---
-title: KSMETHOD\_STREAMALLOCATOR\_ALLOC
+title: KSMETHOD_STREAMALLOCATOR_ALLOC
 description: The KSMETHOD\_STREAMALLOCATOR\_ALLOC method is used by a client to allocate a frame from the given allocator.
 keywords: ["KSMETHOD_STREAMALLOCATOR_ALLOC Streaming Media Devices"]
 topic_type:

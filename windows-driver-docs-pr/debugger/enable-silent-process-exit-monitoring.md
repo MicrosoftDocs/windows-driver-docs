@@ -1,5 +1,5 @@
 ---
-title: Enable silent process exit monitoring
+title: Enable Silent Process Exit Monitoring
 description: Enable silent process exit monitoring
 ms.date: 11/28/2017
 ---
@@ -42,8 +42,3 @@ For more information about monitoring a process for silent exit, see [Monitoring
  
 
  
-
-
-
-
-

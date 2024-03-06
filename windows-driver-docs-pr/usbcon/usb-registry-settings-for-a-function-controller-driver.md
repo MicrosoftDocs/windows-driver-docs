@@ -1,7 +1,7 @@
 ---
 description: OEMs must set several registry values to make sure that their device enumerates with the correct metadata when connected to a computer.
-title: USB registry settings for a function controller driver
-ms.date: 03/06/2023
+title: USB Registry Settings for a Function Controller Driver
+ms.date: 01/17/2024
 ms.topic: reference
 ---
 
@@ -9,9 +9,7 @@ ms.topic: reference
 
 OEMs must set several registry values to make sure that their device enumerates with the correct metadata when connected to a computer. These values specify device and configuration descriptors for the [USB device-side drivers in Windows](usb-device-side-drivers-in-windows.md). OEMs that create and include their own interfaces must set additional registry values in order for their interfaces to be loaded and used.
 
-Registry keys related to the device-side USB drivers are under:
-
-**HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\USBFN**
+Registry keys related to the device-side USB drivers are under: **HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\USBFN**
 
 This topic describes settings for the preceding key and sub-keys that define the device, configuration, and interface descriptors for the device.
 

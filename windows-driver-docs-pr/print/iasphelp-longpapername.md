@@ -1,5 +1,5 @@
 ---
-title: Iasphelp getLongPaperName method
+title: Iasphelp getLongPaperName Method
 description: The LongPaperName property enables an ASP Web page to convert a short paper name to a long paper name.
 MS-HAID:
 - 'webfnc17250b54-29f4-41c5-bdf2-b72e0823d8e4.xml'

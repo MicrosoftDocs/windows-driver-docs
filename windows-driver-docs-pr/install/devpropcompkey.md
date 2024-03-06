@@ -1,5 +1,5 @@
 ---
-title: DEVPROPCOMPKEY structure (Windows Drivers)
+title: DEVPROPCOMPKEY Structure (Windows Drivers)
 description: Learn more about the DEVPROPCOMPKEY structure.
 keywords:
 - DEVPROP_STORE_SYSTEM

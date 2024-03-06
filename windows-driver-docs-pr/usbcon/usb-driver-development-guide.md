@@ -1,7 +1,7 @@
 ---
-title: Overview of developing Windows client drivers for USB devices
+title: Overview of Developing Windows Client Drivers for USB Devices
 description: This article describes Universal Serial Bus (USB) support in the Windows operating system, so that you can develop USB device drivers that are interoperable with Windows.
-ms.date: 01/17/2023
+ms.date: 01/17/2024
 ---
 
 # Overview of developing Windows client drivers for USB devices

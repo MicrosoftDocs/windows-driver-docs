@@ -1,7 +1,7 @@
 ---
-title: Microsoft Bluetooth Test Platform - BTP Power State HID tests
+title: Microsoft Bluetooth Test Platform - BTP Power State HID Tests
 description: Bluetooth Test Platform (BTP) Power State HID tests.
-ms.date: 04/11/2023
+ms.date: 01/10/2024
 ms.localizationpriority: medium
 ---
 

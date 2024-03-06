@@ -27,8 +27,3 @@ For more information, see [Event Filters](event-filters.md).
  
 
  
-
-
-
-
-

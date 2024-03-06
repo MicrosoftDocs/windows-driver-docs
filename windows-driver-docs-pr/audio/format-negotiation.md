@@ -6,10 +6,9 @@ ms.date: 11/08/2018
 
 # Format Negotiation
 
-
 After an application initiates audio processing, the graph builder configures the sAPOs into an audio graph and also initializes the sAPOs. The audio service then negotiates with the LFX sAPO to establish the format for the audio data at the input and output of the sAPO. This negotiation process is known as format negotiation.
 
-All sAPOs that provide audio systems effects for Windows Vista must have certain interfaces and methods. The methods used by the sAPO and the audio engine to negotiate the data format are: the **IsInputFormatSupported** method of the **IAudioProcessingObject** interface and the **LockForProcess** and **UnlockForProcess** methods of the **IAudioProcessingObjectConfiguration** interface. 
+All sAPOs that provide audio systems effects for Windows Vista must have certain interfaces and methods. The methods used by the sAPO and the audio engine to negotiate the data format are: the **IsInputFormatSupported** method of the **IAudioProcessingObject** interface and the **LockForProcess** and **UnlockForProcess** methods of the **IAudioProcessingObjectConfiguration** interface.
 
 To initiate format negotiation, the audio service first sets the output of the LFX sAPO to the default float32-based format. The audio service then calls the **IAudioProcessingObject::IsInputFormatSupported** method of the LFX sAPO, suggests the default format, and monitors the HRESULT response of this method. If the LFX sAPO can support the suggested format, it returns S\_OK, together with a reference to the supported format. If the LFX sAPO cannot support the suggested format, it returns S\_FALSE together with a reference to a format that is the closest match to the suggested one. If the LFX sAPO cannot support the suggested format and does not have a close match, it returns APOERR\_FORMAT\_NOT\_SUPPORTED. The GFX sAPO works with the output format of the LFX sAPO. So the GFX sAPO is not involved in the format negotiation process.
 
@@ -20,13 +19,3 @@ If the Windows Vista sAPO returns an error to the wrapping custom sAPO in respon
 Because of the way that the audio service operates, the LFX and GFX sAPOs must be able to respond independently of each other to queries from the audio service regarding data formats.
 
 **Important**   When you implement a custom sAPO that wraps a Windows Vista LFX sAPO, do not specify the APO\_FLAG\_FRAMESPERSECOND\_MUST\_MATCH flag in the registration properties of the custom sAPO. If you specify this flag, the Windows Vista LFX sAPO will be unable to perform speaker fill, headphone virtualization, or virtual surround. Additionally, your custom sAPO will not be able to down-mix any audio streams. For example, your custom sAPO will not be able to mix a 5.1 audio stream down to a two-channel stereo audio stream.
-
- 
-
- 
-
- 
-
-
-
-

@@ -9,7 +9,7 @@ ms.date: 04/20/2017
 
 This topic discusses the steps that are involved with halting the miniport driver for a PCI Express (PCIe) Physical Function (PF) on an adapter that supports single root I/O virtualization (SR-IOV). These steps are shown in the following figure.
 
-![image of the process described in the full text, in which requests and functions flow between the overlying driver, ndis, and the pf miniport driver.](images/sriov-pf-halt.png)
+:::image type="content" source="images/sriov-pf-halt.png" alt-text="Diagram that shows the process of halting a PF Miniport Driver, illustrating the flow of requests and functions between the overlying driver, NDIS, and the PF miniport driver.":::
 
 This topic contains the following information:
 

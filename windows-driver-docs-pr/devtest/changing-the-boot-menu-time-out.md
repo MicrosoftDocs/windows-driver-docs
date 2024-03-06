@@ -36,11 +36,3 @@ Use the **/timeout** option and specify the timeout value in seconds. For exampl
 bcdedit /timeout 15
 ```
 
- 
-
- 
-
-
-
-
-

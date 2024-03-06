@@ -35,9 +35,3 @@ Logger and LogViewer are included in [Debugging Tools for Windows](index.md).
  
 
  
-
-
-
-
-
-

@@ -1,8 +1,8 @@
 ---
-title: Microsoft public symbol server
+title: Microsoft Public Symbol Server
 description: Learn about the Microsoft symbol server, which makes Windows debugger symbols publicly available.
 keywords: ["SymSrv, public Microsoft symbols", "symbol servers, public Microsoft symbols", "public symbol store", "Microsoft symbol store"]
-ms.date: 12/22/2022
+ms.date: 12/21/2023
 ---
 
 # Microsoft public symbol server
@@ -24,7 +24,7 @@ set _NT_SYMBOL_PATH=srv*DownstreamStore*https://msdl.microsoft.com/download/symb
 
 *DownstreamStore* must specify a directory on your local computer or network that will be used to cache symbols. This downstream store holds symbols that the debugger has accessed. Most symbols that have never been accessed remain on the symbol store at Microsoft. This storage process keeps your downstream store relatively small and allows the symbol server to work quickly, only downloading each file once.
 
-To avoid typing this long symbol path, use the [.symfix (Set symbol store path)](-symfix--set-symbol-store-path-.md) command. The following command appends the public symbol store to your existing symbol path:
+To avoid typing this long symbol path, use the [.symfix (Set symbol store path)](../debuggercmds/-symfix--set-symbol-store-path-.md) command. The following command appends the public symbol store to your existing symbol path:
 
 ```dbgcmd
 .symfix+ C:\MySymbols
@@ -32,7 +32,7 @@ To avoid typing this long symbol path, use the [.symfix (Set symbol store path)]
 
 If local symbol cache location is omitted, the sym subdirectory of the debugger installation directory is used.
 
-Use the [.sympath (Set symbol store path)](-symfix--set-symbol-store-path-.md) command to display the full symbol path. The following example shows how to use symfix to create a local symbol cache and use the Microsoft http symbol server.
+Use the [.sympath (Set symbol store path)](../debuggercmds/-symfix--set-symbol-store-path-.md) command to display the full symbol path. The following example shows how to use symfix to create a local symbol cache and use the Microsoft http symbol server.
 
 ```dbgcmd
 0: kd> .symfix c:\MyCache
@@ -50,3 +50,11 @@ The Microsoft symbol server provides compressed versions of the symbol files. Th
 ## Microsoft license terms - Microsoft symbol server
 
 Microsoft makes certain symbols, binary code, and other executables available via the Microsoft symbol server. These resources are used in debugging and testing of the user’s software with Microsoft software. They aren't intended for unauthorized use. Refer to the [Microsoft license terms - Microsoft symbol server](/legal/windows-sdk/microsoft-symbol-server-license-terms).
+
+See also
+
+[Symbol path for Windows debuggers](symbol-path.md)
+
+[Symbols and Symbol Files](symbols-and-symbol-files.md)
+
+[.symfix (Set symbol store path)](../debuggercmds/-symfix--set-symbol-store-path-.md)

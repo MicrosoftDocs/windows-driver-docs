@@ -1,5 +1,5 @@
 ---
-title: TrustedCertificate (APN element)
+title: TrustedCertificate (APN Element)
 description: TrustedCertificate (APN element)
 ms.date: 04/20/2017
 ---

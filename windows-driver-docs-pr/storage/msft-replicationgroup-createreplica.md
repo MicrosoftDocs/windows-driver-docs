@@ -1,5 +1,5 @@
 ---
-title: CreateReplica method of the MSFT\_ReplicationGroup class
+title: CreateReplica Method of the MSFT_ReplicationGroup Class
 description: Creates a replication relationship between replication groups.
 ms.assetid: 785C38FF-635A-4146-ABBC-8C28027B24A4
 keywords:

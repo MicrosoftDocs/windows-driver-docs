@@ -10,13 +10,9 @@ ms.date: 04/20/2017
 
 # Using Memory Segments to Describe the GPU Address Space
 
-
-## <span id="ddk_using_memory_segments_to_describe_the_gpu_address_space_gg"></span><span id="DDK_USING_MEMORY_SEGMENTS_TO_DESCRIBE_THE_GPU_ADDRESS_SPACE_GG"></span>
-
-
 Before the video memory manager can manage the address space of the GPU, the display miniport driver must describe the GPU's address space to the video memory manager by using memory segments. The display miniport driver creates memory segments to generalize and virtualize video memory resources. The driver can configure memory segments according to the memory types that the hardware supports (for example, frame buffer memory or system memory aperture).
 
-During driver initialization, the driver must return the list of segment types that describe how memory resources can be managed by the video memory manager. The driver specifies the number of segment types that it supports and describes each segment type by responding to calls to its [**DxgkDdiQueryAdapterInfo**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_queryadapterinfo) function. The driver describes each segment using a [**DXGK\_SEGMENTDESCRIPTOR**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_segmentdescriptor) structure. For more information, see [Initializing Use of Memory Segments](initializing-use-of-memory-segments.md).
+During driver initialization, the driver must return the list of segment types that describe how memory resources can be managed by the video memory manager. The driver specifies the number of segment types that it supports and describes each segment type by responding to calls to its [**DxgkDdiQueryAdapterInfo**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_queryadapterinfo) function. The driver describes each segment using a [**DXGK_SEGMENTDESCRIPTOR**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_segmentdescriptor) structure. For more information, see [Initializing Use of Memory Segments](initializing-use-of-memory-segments.md).
 
 Thereafter, the number and types of segments remain unchanged. The video memory manager ensures that each process receives a fair share of the resources in any particular segment. The video memory manager manages all segments independently, and segments do not overlap. Therefore, the video memory manager allocates a fair amount of video memory resources from one segment to an application regardless of the amount of resources that application currently holds from another segment.
 
@@ -26,11 +22,6 @@ The driver is not required to specify all video memory resources that are availa
 
 The following figure shows how the driver can configure memory segments from the GPU address space.
 
-![diagram illustrating the division of gpu address space into segments.](images/memseg.png)
+:::image type="content" source="images/memseg.png" alt-text="Diagram illustrating the division of GPU address space into memory segments.":::
 
-**Note**   Video memory that is hidden from the video memory manager cannot be mapped into user space or be made exclusively available to any particular process. To do so breaks the fundamental rules of virtual memory that require that all processes running on the system have access to all memory.
-
- 
-
- 
-
+Video memory that is hidden from the video memory manager cannot be mapped into user space or be made exclusively available to any particular process. To do so breaks the fundamental rules of virtual memory that require that all processes running on the system have access to all memory.

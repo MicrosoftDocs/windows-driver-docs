@@ -1,5 +1,5 @@
 ---
-title: Publishing messages
+title: Publishing Messages
 description: Publishing messages
 keywords:
 - NFC
@@ -7,13 +7,12 @@ keywords:
 - proximity
 - near field proximity
 - NFP
-ms.date: 04/20/2017
+ms.date: 01/11/2024
 ---
 
 # Publishing messages
 
-
-Clients can publish messages with specific types but will have limited knowledge of who will receive the message or when the message has been received by another app or device. This allows clients to easily “advertise” information to anyone interested without the need to manage the timing of message transmission.
+Clients can publish messages with specific types but will have limited knowledge of who will receive the message or when the message has been received by another app or device. This allows clients to easily "advertise" information to anyone interested without the need to manage the timing of message transmission.
 
 Clients of the Windows proximity API can request to publish messages. The publication lifetime is bound to the client. As long as the client is running, it can maintain the publication. At any time, the client can drop the publication (by unpublish). If the client stops running, the publication is removed.
 
@@ -23,13 +22,10 @@ The NFP model is intended to support short (and therefore quickly transmitted) m
 
 ## Message Transmitted Callback
 
-
 The Message Transmitted Callback allows clients to know when a message they have published has been transmitted to another device. One of the goals of the Message Transmitted Callback is to enable an app to unpublish a message as soon as it has been transmitted.
 
 The model does not provide for knowledge of the receiving side actually processing the message. The only way to accomplish this is for the receiver to publish a message back to the client.
 
- 
-
- 
 ## Related topics
-[Near field communications (NFC) API reference](/windows-hardware/drivers/ddi/_nfpdrivers/)
+
+- [Near field communications (NFC) API reference](/windows-hardware/drivers/ddi/_nfpdrivers/)

@@ -12,7 +12,7 @@ ms.date: 03/02/2023
 
 The following figure illustrates a basic CoNDIS receive operation, which involves a protocol driver, NDIS, and a miniport driver.
 
-![diagram illustrating a basic condis receive operation, which involves a protocol driver, ndis, and a miniport driver.](images/netbuffercoreceive.png)
+:::image type="content" source="images/netbuffercoreceive.png" alt-text="Diagram illustrating a basic CoNDIS receive operation involving a protocol driver, NDIS, and a miniport driver.":::
 
 As the preceding figure shows, miniport drivers call the [**NdisMCoIndicateReceiveNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismcoindicatereceivenetbufferlists) function to indicate [**NET\_BUFFER**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer) structures to overlying drivers. In most miniport drivers, each NET\_BUFFER structure is attached to a separate [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure, so protocol drivers can create a subset of the original list of NET\_BUFFER\_LIST structures and forward them to different clients. However, the number of NET\_BUFFER structures that are attached to a NET\_BUFFER\_LIST depends on the driver.
 

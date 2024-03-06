@@ -1,5 +1,5 @@
 ---
-title: System-defined device properties
+title: System-defined Device Properties
 description: Learn more about system-defined device properties.
 keywords:
 - device properties WDK device installations , system-defined

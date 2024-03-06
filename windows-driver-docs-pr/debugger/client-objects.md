@@ -15,7 +15,7 @@ Almost all interaction with the [debugger engine](introduction.md#debugger-engin
 
 ### <span id="primary-clients"></span><span id="PRIMARY_CLIENTS"></span>Primary Clients
 
-A *primary client* is a client that has joined the current debugging session. Initially, when a new client object is created, it is not a primary client. A client becomes a primary client when it is used to acquire a target (for example, by calling [**CreateProcess2**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-createprocess2)) or is connected to the debugging session using [**ConnectSession**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-connectsession). The debugger command [**.clients**](-clients--list-debugging-clients-.md) lists only the primary clients.
+A *primary client* is a client that has joined the current debugging session. Initially, when a new client object is created, it is not a primary client. A client becomes a primary client when it is used to acquire a target (for example, by calling [**CreateProcess2**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-createprocess2)) or is connected to the debugging session using [**ConnectSession**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-connectsession). The debugger command [**.clients**](../debuggercmds/-clients--list-debugging-clients-.md) lists only the primary clients.
 
 ### <span id="callback-objects"></span><span id="CALLBACK_OBJECTS"></span>Callback Objects
 

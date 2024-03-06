@@ -1,5 +1,5 @@
 ---
-title: Overview of Windows support for ACPI 5.0
+title: Overview of Windows Support for ACPI 5.0
 description: The ACPI 5.0 specification enables support of SoC-based mobile platforms that run Windows 8 and later, but continues to support many useful features that were introduced in earlier versions Windows.
 ms.date: 03/23/2023
 ---

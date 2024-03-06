@@ -55,7 +55,7 @@ The VIDEO\_DXGKRNL\_LIVEDUMP live dump has a value of 0x00000193. This indicates
 </table>
 
 ## Resolution
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
  
 
  ## See Also

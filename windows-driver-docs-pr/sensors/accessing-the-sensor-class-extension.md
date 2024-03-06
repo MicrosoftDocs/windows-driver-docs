@@ -1,29 +1,26 @@
 ---
-title: Access the sensor class extension
+title: Access the Sensor Class Extension
 description: Access the sensor class extension
-ms.date: 07/20/2018
+ms.date: 01/11/2024
 ---
 
 # Access the sensor class extension
-
 
 | Module     | Class/Interface |
 |------------|-----------------|
 | Device.cpp | CMyDevice       |
 
- 
-
 Microsoft supports two Sensor APIs. Both simplify accessing devices, retrieving data, and setting properties:
 
--   **Desktop API** (for traditional desktop apps) - uses COM/Win32; you write apps in C++.
--   **WinRT API** (for Windows apps) - you write apps in HtML and JavaScript, or, XAML and Visual Basic, C# or C++.
+- **Desktop API** (for traditional desktop apps) - uses COM/Win32; you write apps in C++.
+- **WinRT API** (for Windows apps) - you write apps in HtML and JavaScript, or, XAML and Visual Basic, C# or C++.
 
 The sensor class extension (**ISensorClassExtension**) links your sensor driver and the Sensor APIs. Your driver uses it to accomplish the following:
 
--   Initialize and unitialize the sensor class extension
--   Raise events
--   Process WPD input/output control codes (IOCTLs)
--   Close UMDF file handles
+- Initialize and unitialize the sensor class extension
+- Raise events
+- Process WPD input/output control codes (IOCTLs)
+- Close UMDF file handles
 
 ## Initializing the class extension
 
@@ -66,11 +63,3 @@ When a sensor app registers an event handler for state-change events, the sample
 ```cpp
 HRESULT hr = m_spClassExtension->PostStateChange(SensorId, state);
 ```
-
- 
-
- 
-
-
-
-

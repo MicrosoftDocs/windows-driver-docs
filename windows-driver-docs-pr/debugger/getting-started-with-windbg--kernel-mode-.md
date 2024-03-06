@@ -1,5 +1,5 @@
 ---
-title: Get started with WinDbg (kernel-mode)
+title: Get Started with WinDbg (Kernel-Mode)
 description: Learn how to set up and establish a WinDbg kernel-mode debugging session. The WinDbg kernel-mode debugger is included in Debugging Tools for Windows.
 ms.date: 03/08/2023
 ---
@@ -10,8 +10,8 @@ WinDbg is a kernel-mode and user-mode debugger that's included in Debugging Tool
 
 For information about how to get Debugging Tools for Windows, see [Download and install the WinDbg Windows debugger](index.md). After you have installed the debugging tools, locate the installation directories for 64-bit (x64) and 32-bit (x86) versions of the tools. For example:
 
-- C:\Program Files (x86)\Windows Kits\10\Debuggers\x64
-- C:\Program Files (x86)\Windows Kits\10\Debuggers\x86
+- **C:\Program Files (x86)\Windows Kits\10\Debuggers\x64**
+- **C:\Program Files (x86)\Windows Kits\10\Debuggers\x86**
 
 ## Set up a kernel-mode debugging
 
@@ -25,11 +25,11 @@ The Windows debuggers support the following types of cables:
 
 For speed and reliability, you should use an Ethernet cable with a local network hub. The following diagram illustrates a host and target computer connected for debugging with an Ethernet cable.
 
-![A diagram of the host and target computers with an ethernet connection.](images/configfortest01.png)
+:::image type="content" source="images/configfortest01.png" alt-text="Diagram showing host and target computers connected via Ethernet for debugging.":::
 
 An option for older versions of Windows is to use a direct cable, such as a USB or serial cable.
 
-![A diagram of the host and target computers with a debug cable.](images/configfortest02.png)
+:::image type="content" source="images/configfortest02.png" alt-text="Diagram illustrating host and target computers connected using a debug cable for debugging.":::
 
 For details about how to set up the host and target computers, see [Setting up kernel-mode debugging manually](setting-up-kernel-mode-debugging-in-windbg--cdb--or-ntsd.md).
 
@@ -47,11 +47,11 @@ After you set up your host and target computer and connect them with a debug cab
 
 1. On the host computer, open WinDbg and establish a kernel-mode debugging session with the target computer.
 2. To open the debugger documentation CHM file, go to the **Help** menu and select **Contents**. The debugger documentation is also available online in [Debugging Tools for Windows](index.md).
-3. When you establish a kernel-mode debugging session, WinDbg might break in to the target computer automatically. If WinDbg doesn't break in, go to the **Debug** menu and select **Break**.
+3. When you establish a kernel-mode debugging session, WinDbg might break into the target computer automatically. If WinDbg doesn't break in, go to the **Debug** menu and select **Break**.
 
 4. In the command line at the bottom of the WinDbg window, enter the following command:
 
-   [.sympath srv*](-sympath--set-symbol-path-.md)
+   [.sympath srv*](../debuggercmds/-sympath--set-symbol-path-.md)
 
    The output is similar to the following example:
 
@@ -64,11 +64,11 @@ After you set up your host and target computer and connect them with a debug cab
 
    Enter the following command, which tells WinDbg to do its initial finding and loading of symbol files:
 
-   [.reload](-reload--reload-module-.md)
+   [.reload](../debuggercmds/-reload--reload-module-.md)
 
 5. To see a list of loaded modules, enter the following command:
 
-   [lm](lm--list-loaded-modules-.md)
+   [lm](../debuggercmds/lm--list-loaded-modules-.md)
 
    The output is similar to the following example:
 
@@ -85,15 +85,15 @@ After you set up your host and target computer and connect them with a debug cab
    ...
    ```
 
-6. To start target computer running, enter the following command:
+6. To start the target computer running, enter the following command:
 
-   [g](g--go-.md)
+   [g](../debuggercmds/g--go-.md)
 
 7. To break in again, go to the **Debug** menu and select **Break**.
 
 8. Enter the following command to examine the `_FILE_OBJECT` data type in the `nt` module:
 
-   [dt nt!_FILE_OBJECT](dt--display-type-.md)
+   [dt nt!_FILE_OBJECT](../debuggercmds/dt--display-type-.md)
 
    The output is similar to the following example:
 
@@ -110,7 +110,7 @@ After you set up your host and target computer and connect them with a debug cab
 
 9. Enter the following command to examine some of the symbols in the `nt` module:
 
-   [x nt!\*CreateProcess\*](x--examine-symbols-.md)
+   [x nt!\*CreateProcess\*](../debuggercmds/x--examine-symbols-.md)
 
    The output is similar to the following example:
 
@@ -125,11 +125,11 @@ After you set up your host and target computer and connect them with a debug cab
 
 10. Enter the following command to put a breakpoint at **MmCreateProcessAddressSpace**:
 
-    [bu nt!MmCreateProcessAddressSpace](bp--bu--bm--set-breakpoint-.md)
+    [bu nt!MmCreateProcessAddressSpace](../debuggercmds/bp--bu--bm--set-breakpoint-.md)
 
     To verify that the breakpoint is set, enter the following command:
 
-    [bl](bl--breakpoint-list-.md)
+    [bl](../debuggercmds/bl--breakpoint-list-.md)
 
     The output is similar to the following example:
 
@@ -139,13 +139,13 @@ After you set up your host and target computer and connect them with a debug cab
     0 e fffff800`02e03904     0001 (0001) nt!MmCreateProcessAddressSpace
     ```
 
-    Enter [g](g--go-.md) to let the target computer run.
+    Enter [g](../debuggercmds/g--go-.md) to let the target computer run.
 
-11. If the target computer doesn't break in to the debugger immediately, perform a few actions on the target computer (for example, open Notepad). The target computer will break in to the debugger when **MmCreateProcessAddressSpace** is called. To see the stack trace, enter the following commands:
+11. If the target computer doesn't break into the debugger immediately, perform a few actions on the target computer (for example, open Notepad). The target computer will break into the debugger when **MmCreateProcessAddressSpace** is called. To see the stack trace, enter the following commands:
 
-    [.reload](-reload--reload-module-.md)
+    [.reload](../debuggercmds/-reload--reload-module-.md)
 
-    [k](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md)
+    [k](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md)
 
     The output is similar to the following example:
 
@@ -166,13 +166,13 @@ After you set up your host and target computer and connect them with a debug cab
 
 13. Clear your breakpoint by entering the following command:
 
-    [bc *](bc--breakpoint-clear-.md)
+    [bc *](../debuggercmds/bc--breakpoint-clear-.md)
 
-    Enter [g](g--go-.md) to let the target computer run. To break in again, go to the **Debug** menu and select **Break**, or press **CTRL-Break**.
+    Enter [g](../debuggercmds/g--go-.md) to let the target computer run. To break in again, go to the **Debug** menu and select **Break**, or press **CTRL-Break**.
 
 14. To see a list of all processes, enter the following command:
 
-    [!process 0 0](-process.md)
+    [!process 0 0](../debuggercmds/-process.md)
 
     The output is similar to the following example:
 
@@ -197,7 +197,7 @@ After you set up your host and target computer and connect them with a debug cab
 
 15. Copy the address of one process, and enter the following command:
 
-    [!process *Address* 2](-process.md)
+    [!process *Address* 2](../debuggercmds/-process.md)
 
     For example: `!process ffffe00000d5290 2`
 
@@ -224,7 +224,7 @@ After you set up your host and target computer and connect them with a debug cab
 
 16. Copy the address of one thread, and enter the following command:
 
-    [!thread *Address*](-thread.md)
+    [!thread *Address*](../debuggercmds/-thread.md)
 
     For example: `!thread ffffe00000e6d080`
 
@@ -251,7 +251,7 @@ After you set up your host and target computer and connect them with a debug cab
 
 17. To see all the device nodes in the Plug and Play device tree, enter the following command:
 
-    [!devnode 0 1](-devnode.md)
+    [!devnode 0 1](../debuggercmds/-devnode.md)
 
     ```dbgcmd
     0:000>0: kd> !devnode 0 1
@@ -276,7 +276,7 @@ After you set up your host and target computer and connect them with a debug cab
 
 18. To see the device nodes and their hardware resources, enter the following command:
 
-    [!devnode 0 9](-devnode.md)
+    [!devnode 0 9](../debuggercmds/-devnode.md)
 
     ```dbgcmd
     0:000>...
@@ -300,7 +300,7 @@ After you set up your host and target computer and connect them with a debug cab
 
 19. To see a device node that has a service name of **disk**, enter the following command:
 
-    [!devnode 0 1 disk](-devnode.md)
+    [!devnode 0 1 disk](../debuggercmds/-devnode.md)
 
     ```dbgcmd
     0: kd> !devnode 0 1 disk
@@ -313,9 +313,9 @@ After you set up your host and target computer and connect them with a debug cab
     ...
     ```
 
-20. The output of [!devnode 0 1](-devnode.md) shows the address of the physical device object (PDO) for the node. Copy the address of a physical device object (PDO), and enter the following command:
+20. The output of [!devnode 0 1](../debuggercmds/-devnode.md) shows the address of the physical device object (PDO) for the node. Copy the address of a physical device object (PDO), and enter the following command:
 
-    [!devstack *PdoAddress*](-devstack.md)
+    [!devstack *PdoAddress*](../debuggercmds/-devstack.md)
 
     For example: `<PdoAddress>!devstack 0xffffe00001159610`
 
@@ -329,7 +329,7 @@ After you set up your host and target computer and connect them with a debug cab
 
 21. To get information about the driver disk.sys, enter the following command:
 
-    [!drvobj disk 2](-drvobj.md)
+    [!drvobj disk 2](../debuggercmds/-drvobj.md)
 
     ```dbgcmd
     0:000>0: kd> !drvobj disk 2
@@ -351,17 +351,17 @@ After you set up your host and target computer and connect them with a debug cab
 
 22. The output of `!drvobj` shows addresses of dispatch routines. For example, `CLASSPNP!ClassGlobalDispatch`. To set and verify a breakpoint at `ClassGlobalDispatch`, enter the following commands:
 
-    [bu CLASSPNP!ClassGlobalDispatch](bp--bu--bm--set-breakpoint-.md)
+    [bu CLASSPNP!ClassGlobalDispatch](../debuggercmds/bp--bu--bm--set-breakpoint-.md)
 
-    [bl](bl--breakpoint-list-.md)
+    [bl](../debuggercmds/bl--breakpoint-list-.md)
 
     Enter `g` to let the target computer run.
 
-    If the target computer doesn't break in to the debugger immediately, perform a few actions on the target computer (for example, open Notepad and save a file). The target computer will break in to the debugger when `ClassGlobalDispatch` is called. To see the stack trace, enter the following commands:
+    If the target computer doesn't break into the debugger immediately, perform a few actions on the target computer (for example, open Notepad and save a file). The target computer will break into the debugger when `ClassGlobalDispatch` is called. To see the stack trace, enter the following commands:
 
-    [.reload](-reload--reload-module-.md)
+    [.reload](../debuggercmds/-reload--reload-module-.md)
 
-    [k](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md)
+    [k](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md)
 
     The output is similar to the following example:
 
@@ -380,29 +380,29 @@ After you set up your host and target computer and connect them with a debug cab
 
 23. To end your debugging session, enter the following command:
 
-    [qd](qd--quit-and-detach-.md)
+    [qd](../debuggercmds/qd--quit-and-detach-.md)
 
 ## Summary of commands
 
 - **Contents** command on the **Help** menu
-- [.sympath (Set symbol path)](-sympath--set-symbol-path-.md)
-- [.reload (Reload module)](-reload--reload-module-.md)
-- [x (Examine symbols)](x--examine-symbols-.md)
-- [g (Go)](g--go-.md)
-- [dt (Display type)](dt--display-type-.md)
+- [.sympath (Set symbol path)](../debuggercmds/-sympath--set-symbol-path-.md)
+- [.reload (Reload module)](../debuggercmds/-reload--reload-module-.md)
+- [x (Examine symbols)](../debuggercmds/x--examine-symbols-.md)
+- [g (Go)](../debuggercmds/g--go-.md)
+- [dt (Display type)](../debuggercmds/dt--display-type-.md)
 - **Break** command on the **Debug** menu
-- [lm (List loaded modules)](lm--list-loaded-modules-.md)
-- [k (Display stack backtrace)](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md)
-- [bu (Set breakpoint)](bp--bu--bm--set-breakpoint-.md)
-- [bl (Breakpoint list)](bl--breakpoint-list-.md)
-- [bc (Breakpoint clear)](bc--breakpoint-clear-.md)
+- [lm (List loaded modules)](../debuggercmds/lm--list-loaded-modules-.md)
+- [k (Display stack backtrace)](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md)
+- [bu (Set breakpoint)](../debuggercmds/bp--bu--bm--set-breakpoint-.md)
+- [bl (Breakpoint list)](../debuggercmds/bl--breakpoint-list-.md)
+- [bc (Breakpoint clear)](../debuggercmds/bc--breakpoint-clear-.md)
 - **Step Into** command on the **Debug** menu (**F11**)
-- [!process](-process.md)
-- [!thread](-thread.md)
-- [!devnode](-devnode.md)
-- [!devstack](-devstack.md)
-- [!drvobj](-drvobj.md)
-- [qd (Quit and detach)](qd--quit-and-detach-.md)
+- [!process](../debuggercmds/-process.md)
+- [!thread](../debuggercmds/-thread.md)
+- [!devnode](../debuggercmds/-devnode.md)
+- [!devstack](../debuggercmds/-devstack.md)
+- [!drvobj](../debuggercmds/-drvobj.md)
+- [qd (Quit and detach)](../debuggercmds/qd--quit-and-detach-.md)
 
 ## See also
 

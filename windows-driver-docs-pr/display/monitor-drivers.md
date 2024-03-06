@@ -5,26 +5,18 @@ keywords:
 - display devices WDK
 - monitor drivers WDK
 - display drivers WDK , monitor drivers
-ms.date: 04/20/2017
+ms.date: 12/06/2023
 ---
 
-# Monitor Drivers
+# Monitor drivers on Windows
 
+Each monitor has a device stack that includes the following monitor drivers:
 
-## <span id="ddk_monitor_drivers_gg"></span><span id="DDK_MONITOR_DRIVERS_GG"></span>
+* A Microsoft-supplied monitor class function driver, which is required for all monitors.
+* Optionally, a vendor-supplied monitor filter driver. Monitor vendors can implement a filter driver to add functionality to their monitor device. For example, a filter driver might provide a custom monitor configuration UI.
 
-
-Each monitor has a device stack that includes a Microsoft monitor class function driver and possibly a vendor-supplied filter driver. The following topics describe the function and filter drivers associated with monitors:
+The following articles describe the function and filter drivers associated with monitors:
 
 [Monitor Class Function Driver](monitor-class-function-driver.md)
 
 [Monitor Filter Drivers](monitor-filter-drivers.md)
-
- 
-
- 
-
-
-
-
-

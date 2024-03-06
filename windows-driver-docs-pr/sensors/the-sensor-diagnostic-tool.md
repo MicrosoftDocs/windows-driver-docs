@@ -1,5 +1,5 @@
 ---
-title: Testing sensor functionality with the Sensor Diagnostic Tool
+title: Testing Sensor Functionality With the Sensor Diagnostic Tool
 description: Use the Sensor Diagnostic Tool to test your driver, firmware, and hardware functionality.
 keywords:
 - testing sensors
@@ -13,7 +13,7 @@ keywords:
 - sensor, change sensitivity
 - report interval
 - change sensitivity
-ms.date: 04/20/2017
+ms.date: 01/11/2024
 ---
 
 # Testing sensor functionality with the Sensor Diagnostic Tool
@@ -52,5 +52,5 @@ However, it's important to note that when the tool retrieves ALS values, it retu
 
 ## Related topics
 
-[Testing Sensor Functionality](testing-sensor-functionality.md)  
-[Testing Location Functionality](testing-location-functionality.md)  
+- [Testing Sensor Functionality](testing-sensor-functionality.md)  
+- [Testing Location Functionality](testing-location-functionality.md)  

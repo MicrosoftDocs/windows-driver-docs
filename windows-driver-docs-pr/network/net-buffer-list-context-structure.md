@@ -23,7 +23,7 @@ NDIS drivers use [**NET\_BUFFER\_LIST\_CONTEXT**](/windows-hardware/drivers/ddi/
 
 The following figure shows the fields in a NET\_BUFFER\_LIST\_CONTEXT structure.
 
-![diagram illustrating the fields in a net\-buffer\-list\-context structure.](images/netbufferlistcontext.png)
+:::image type="content" source="images/netbufferlistcontext.png" alt-text="Diagram illustrating the fields in a NET_BUFFER_LIST_CONTEXT structure.":::
 
 The [**NET\_BUFFER\_LIST\_CONTEXT**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list_context) structure includes **ContextData** member that contains the context data. This data can be any context information that a driver requires for the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure.
 

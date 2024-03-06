@@ -1,5 +1,5 @@
 ---
-title: Debug Windows drivers step-by-step lab (echo kernel mode)
+title: Debug Windows Drivers Step-By-Step Lab (Echo Kernel Mode)
 description: This lab introduces the WinDbg kernel debugger. Use WinDbg to debug the echo kernel mode sample driver code.
 keywords: ["debug lab", "step-by-step", "ECHO"]
 ms.date: 03/07/2023
@@ -74,7 +74,7 @@ This lab uses two computers. Windows debugger runs on the *host* system and the 
 
 Use a network hub or router and network cables to connect the two computers.
 
-![Diagram shows two computers connected with a double arrow.](images/debuglab-image-targethostdrawing1.png)
+:::image type="content" source="images/debuglab-image-targethostdrawing1.png" alt-text="Diagram illustrating two computers connected via a network hub or router.":::
 
 To work with kernel-mode applications and use WinDbg, we recommend that you use the KDNET over Ethernet transport. For information about how to use the Ethernet transport protocol, see [Get started with WinDbg (kernel mode)](getting-started-with-windbg--kernel-mode-.md). For more information about setting up the target computer, see [Preparing a computer for manual driver deployment](../develop/preparing-a-computer-for-manual-driver-deployment.md) and [Setting up KDNET network kernel debugging automatically](setting-up-a-network-debugging-connection-automatically.md).
 
@@ -162,7 +162,7 @@ Enable kernel-mode debugging on the target system by completing the following st
    > [!NOTE]
    > If you receive a message from the firewall, and you want to use the debugger, select all three of the boxes.
    >
-   > ![Screenshot shows the Windows Security Alert dialog box saying that Windows Firewall has blocked some features of this app.](images/debuglab-image-firewall-dialog-box.png)
+   > :::image type="content" source="images/debuglab-image-firewall-dialog-box.png" alt-text="Screenshot of Windows Security Alert dialog box indicating Windows Firewall blocked some features of an app.":::
 
 1. On the host computer, open a Command Prompt window as Administrator. This lab uses the x64 version of *WinDbg.exe* from the Windows Driver Kit (WDK) that was installed as part of the Windows kit installation. Change to the default WinDbg directory, the default location is shown below.
 
@@ -220,7 +220,7 @@ Some debug commands display text using Debugger Markup Language (DML) that you c
 
 1. On the host system, use Ctrl+Scroll Lock in WinDBg to break into the code running on the target system. It may take some time for the target system to respond.
 
-   ![Main screen in debugger showing Command Window output from a live kernel connection.](images/windbgx-main-menu.png)
+   :::image type="content" source="images/windbgx-main-menu.png" alt-text="Main screen in debugger showing Command Window output from a live kernel connection.":::
 
 2. Enter the following command to enable DML in the Debugger Command window:
 
@@ -237,9 +237,9 @@ Some debug commands display text using Debugger Markup Language (DML) that you c
 
    The Debugger help file displays help for the `.prefer_dml` command.
 
-   ![Screenshot shows the debugger help application showing help for the .prefer\-dml command.](images/debuglab-image-prefer-dml-help.png)
+   :::image type="content" source="images/debuglab-image-prefer-dml-help.png" alt-text="Screenshot of debugger help application displaying help for the .prefer-dml command.":::
 
-4. To display detailed version information on the target system, enter the [vertarget (Show Target Computer Version)](vertarget--show-target-computer-version-.md) command in the WinDbg window:
+4. To display detailed version information on the target system, enter the [vertarget (Show Target Computer Version)](../debuggercmds/vertarget--show-target-computer-version-.md) command in the WinDbg window:
 
    ```dbgcmd
    0: kd> vertarget
@@ -252,7 +252,7 @@ Some debug commands display text using Debugger Markup Language (DML) that you c
    System Uptime: 0 days 01:31:58.931
    ```
 
-5. To verify that you're working with the correct kernel-mode process, enter the [lm (List Loaded Modules)](lm--list-loaded-modules-.md) command in the WinDbg window to display the loaded modules:
+5. To verify that you're working with the correct kernel-mode process, enter the [lm (List Loaded Modules)](../debuggercmds/lm--list-loaded-modules-.md) command in the WinDbg window to display the loaded modules:
 
    ```dbgcmd
    0: Kd> lm
@@ -311,7 +311,7 @@ To download and build the Echo sample audio driver:
 
     The KMDF Echo sample is located in the *general* folder.
 
-    ![Screenshot of github windows-driver-samples highlighting the general folder and the download zip button.](images/debuglab-image-github.png)
+    :::image type="content" source="images/debuglab-image-github.png" alt-text="Screenshot of GitHub windows-driver-samples page highlighting general folder and download zip button.":::
 
     1. Download the driver samples in one zip file: [Driver samples](https://github.com/Microsoft/Windows-driver-samples/archive/master.zip)
 
@@ -325,7 +325,7 @@ To download and build the Echo sample audio driver:
 
    In Visual Studio, locate the Solution Explorer. If this window isn't already open, select **Solution Explorer** from the **View** menu. In Solution Explorer, you can see one solution that has three projects.
 
-   ![Screenshot shows Visual Studio with the device.c file loaded from the kmdfecho project.](images/debuglab-image-echo-visual-studio.png)
+   :::image type="content" source="images/debuglab-image-echo-visual-studio.png" alt-text="Screenshot of Visual Studio displaying device.c file loaded from the kmdfecho project.":::
 
 3. Set the sample's configuration and platform. In Solution Explorer, select and hold or right-click **Solution 'kmdfecho' (3 projects)**, and select **Configuration Manager**. Make sure that the configuration and platform settings are the same for the three projects. By default, the configuration is set to **Win10 Debug**, and the platform is set to **Win64** for all the projects. If you make any configuration or platform changes for one project, make the same changes for the remaining three projects.
 
@@ -333,11 +333,11 @@ To download and build the Echo sample audio driver:
 
 5. Set the runtime library. Open the echo driver property page and locate **C/C++** > **Code Generation**.  Change Runtime Library to Multi-threaded Debug (/MTd). For more information about the build options, see [/MD, /MT, /LD (Use Run-Time Library)](/cpp/build/reference/md-mt-ld-use-run-time-library).
 
-   ![Screenshot shows the echo property page highlighting the runtime library setting.](images/debuglab-image-echoapp-properties.png)
+   :::image type="content" source="images/debuglab-image-echoapp-properties.png" alt-text="Screenshot of echo property page in Visual Studio highlighting the runtime library setting.":::
 
 6. In the driver properties, make sure **Driver Signing** > **Sign Mode** is set to **Test Sign**.  
 
-   ![Screenshot shows echo property page highlighting the sign mode setting.](images/debuglab-image-echoapp-driver-signing.png)
+   :::image type="content" source="images/debuglab-image-echoapp-driver-signing.png" alt-text="Screenshot of echo property page in Visual Studio highlighting the sign mode setting.":::
 
 7. In Visual Studio, select **Build** > **Build Solution**.
 
@@ -424,7 +424,7 @@ c:\tools\devcon install echo.inf root\ECHO
 
 A dialog box appears that indicates that the test driver is an unsigned driver. Select **Install this driver anyway** to proceed.
 
-![Screenshot shows a Windows Security warning that Windows can't verify the publisher of this driver software.](images/debuglab-image-install-security-warning.png)
+:::image type="content" source="images/debuglab-image-install-security-warning.png" alt-text="Screenshot of Windows Security warning stating Windows cannot verify the publisher of driver software.":::
 
 > [!TIP]
 > If you have any issues with the installation, check the following file for more information.
@@ -434,7 +434,7 @@ After successfully installing the sample driver, you're ready to test it.
 
 On the target computer, in a Command Prompt window, enter *devmgmt* to open Device Manager. In Device Manager, on the **View** menu, choose **Devices by type.** In the device tree, locate **Sample WDF Echo Driver** in the **Sample Device** node.
 
-![Screenshot shows the Device Manager tree with the sample wdf echo driver highlighted.](images/debuglab-image-device-manager-echo.png)
+:::image type="content" source="images/debuglab-image-device-manager-echo.png" alt-text="Screenshot of Device Manager tree highlighting the sample WDF echo driver.":::
 
 Enter *echoapp* to start the test echo app to confirm that the driver is functional.
 
@@ -512,7 +512,7 @@ set ENABLE_OPTIMIZER=0
    ...  
    ```
 
-   For more information, see [lm](lm--list-loaded-modules-.md).
+   For more information, see [lm](../debuggercmds/lm--list-loaded-modules-.md).
 
 2. Because this lab set `prefer_dml` earlier, some elements of the output are hot links that you can select. Select the **Browse all global symbols** link in the debug output to display information about items symbols that start with the letter "a".
 
@@ -531,7 +531,7 @@ set ENABLE_OPTIMIZER=0
    ...
    ```
 
-   For more information, see [x (Examine Symbols)](x--examine-symbols-.md).
+   For more information, see [x (Examine Symbols)](../debuggercmds/x--examine-symbols-.md).
 
 4. The `!lmi` extension displays detailed information about a module. Enter `!lmi echo`. Your output should be similar to the text shown in this example:
 
@@ -589,7 +589,7 @@ In this section, display information about the echo sample device driver and whe
 
 Information about the device driver in the Plug and Play device tree can be useful for troubleshooting. For example, if a device driver isn't resident in the device tree, there might an issue with the installation of the device driver.
 
-For more information about the device node debug extension, see [!devnode](-devnode.md).
+For more information about the device node debug extension, see [!devnode](../debuggercmds/-devnode.md).
 
 1. On the host system, to see all the device nodes in the Plug and Play device tree, enter the `!devnode 0 1` command.
 
@@ -611,7 +611,7 @@ For more information about the device node debug extension, see [!devnode](-devn
 
 2. Use Ctrl+F to search in the output that's generated to look for the name of the device driver, *echo*.
 
-   ![Screenshot shows the Find dialog box showing the term echo being searched for.](images/debuglab-image-find-dialog.png)
+   :::image type="content" source="images/debuglab-image-find-dialog.png" alt-text="Screenshot of Find dialog box in WinDbg searching for the term 'echo'.":::
 
 3. The echo device driver should be loaded. Use the `!devnode 0 1 echo` command to display Plug and Play information associated with your echo device driver as shown in this example:
 
@@ -661,7 +661,7 @@ The output shows that you have a fairly simple device driver stack. The echo dri
 
 This diagram shows a more complex device node tree.
 
-![Diagram shows a device node tree with about 20 nodes.](images/debuglab-image-device-node-tree.png)
+:::image type="content" source="images/debuglab-image-device-node-tree.png" alt-text="Diagram illustrating a device node tree consisting of approximately 20 nodes.":::
 
 For more information about more complex driver stacks, see [Driver stacks](../gettingstarted/driver-stacks.md) and [Device nodes and device stacks](../gettingstarted/device-nodes-and-device-stacks.md).
 
@@ -742,11 +742,11 @@ For more information, see [Source code debugging in WinDbg](source-window.md).
 
 1. On the host system, when the driver is enabled, the [AddDevice](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) debug breakpoint should fire. The execution of the driver code on the target system should halt. When the breakpoint is hit, the execution should be stopped at the start of the *AddDevice* routine. The debug command output displays `Breakpoint 1 hit`.
 
-   ![Screenshot shows windbg showing sample code locals and command windows.](images/debuglab-image-breakpoint-echo-deviceadd.png)
+   :::image type="content" source="images/debuglab-image-breakpoint-echo-deviceadd.png" alt-text="Screenshot of WinDbg displaying sample code locals and command windows.":::
 
 1. Step through the code line by line by entering the `p` command or pressing F10 until you reach the following end of the [AddDevice](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine. The Brace character (`}`) is highlighted as shown.
 
-   ![Screenshot shows the code window showing brace character highlighted at start of adddevice routine.](images/debuglab-image-breakpoint-end-deviceadd.png)
+   :::image type="content" source="images/debuglab-image-breakpoint-end-deviceadd.png" alt-text="Screenshot of the code window with brace character highlighted at the start of AddDevice routine.":::
 
 In the next section, examine the state of the variables after the DeviceAdd code has executed.
 
@@ -800,7 +800,7 @@ This lab assumes that you're stopped at the [AddDevice](/windows-hardware/driver
 
 On the host system, to display variables, use the **view** > **local** menu item to display local variables.
 
-![Screenshot shows WinDbg local variables window.](images/debuglab-image-display-variables.png)
+:::image type="content" source="images/debuglab-image-display-variables.png" alt-text="Screenshot of WinDbg displaying the local variables window.":::
 
 To find the location of a global variable address, enter `? <variable name>`.
 
@@ -820,7 +820,7 @@ This lab assumes that you are stopped at the [*AddDevice*](/windows-hardware/dri
 
 Use the **view**&gt; **local** menu item to display local variables.
 
-![windbg local variables window.](images/debuglab-image-display-variables.png)
+:::image type="content" source="images/debuglab-image-display-variables.png" alt-text="Screenshot of WinDbg displaying the local variables window.":::
 
 **Global variables**
 
@@ -850,7 +850,7 @@ To display the call stack, use the `k*` commands.
 
 1. On the host system, if you want to keep the call stack available, select **view** > **call stack** to view it. Select the columns at the top of the window to toggle the display of additional information.
 
-   ![Screenshot shows the WinDbg display call stacks window.](images/debuglab-image-display-callstacks.png)
+   :::image type="content" source="images/debuglab-image-display-callstacks.png" alt-text="Screenshot of WinDbg displaying the call stacks window.":::
 
 2. Use the `kn` command to show the call stack while debugging the sample adapter code in a break state.
 
@@ -874,7 +874,7 @@ In this section, display information about the processes and threads running in 
 
 ### Processes
 
-You can display or set process information by using the [!process](-process.md) debugger extension. Set a breakpoint to examine the process that's used when a sound is played.
+You can display or set process information by using the [!process](../debuggercmds/-process.md) debugger extension. Set a breakpoint to examine the process that's used when a sound is played.
 
 1. On the host system, enter the `dv` command to examine the locale variables associated with the `EchoEvtIo` routine:
 
@@ -952,7 +952,7 @@ You can display or set process information by using the [!process](-process.md) 
            THREAD ffffe00080e32080  Cid 03c4.0ec0  Teb: 00007ff7cfece000 Win32Thread: 0000000000000000 RUNNING on processor 1
    ```
 
-   The output shows that the process is associated with the *echoapp.exe* thread, which was running when your breakpoint on the driver write event was hit. For more information, see [!process](-process.md).
+   The output shows that the process is associated with the *echoapp.exe* thread, which was running when your breakpoint on the driver write event was hit. For more information, see [!process](../debuggercmds/-process.md).
 
 9. Use the `!process 0 0` to display summary information for all processes. In the output, use Ctrl+F to locate the same process address for the process associated with the *echoapp.exe* image. In the example, the process address is `ffffe0007e6a7780`.
 
@@ -1001,7 +1001,7 @@ You can display or set process information by using the [!process](-process.md) 
 
 ### Threads
 
-The commands to view and set threads are similar to the commands for processes. Use the [!thread](-thread.md) command to view threads. Use [.thread](-thread--set-register-context-.md) to set the current threads.
+The commands to view and set threads are similar to the commands for processes. Use the [!thread](../debuggercmds/-thread.md) command to view threads. Use [.thread](../debuggercmds/-thread--set-register-context-.md) to set the current threads.
 
 1. On the host system, enter `g` into the debugger to restart code execution on the target system.
 
@@ -1015,7 +1015,7 @@ The commands to view and set threads are similar to the commands for processes. 
     aade54c0 55              push    ebp
     ```
 
-4. To view the threads that are running, enter [!thread](-thread.md). Information similar to the following example should be displayed:
+4. To view the threads that are running, enter [!thread](../debuggercmds/-thread.md). Information similar to the following example should be displayed:
 
     ```dbgcmd
     0: kd>  !thread
@@ -1232,7 +1232,7 @@ In this section, display the interrupt request level (IRQL) and the contents of 
 
 The IRQL is used to manage the priority of interrupt servicing. Each processor has an IRQL setting that threads can raise or lower. Interrupts that occur at or below the processor's IRQL setting are masked and don't interfere with the current operation. Interrupts that occur above the processor's IRQL setting take precedence over the current operation.
 
-On the host system, the [!irql](-irql.md) extension displays the IRQL on the current processor of the target computer before the debugger break occurred. When the target computer breaks into the debugger, the IRQL changes, but the IRQL that was effective just before the debugger break is saved and is displayed by `!irql`.
+On the host system, the [!irql](../debuggercmds/-irql.md) extension displays the IRQL on the current processor of the target computer before the debugger break occurred. When the target computer breaks into the debugger, the IRQL changes, but the IRQL that was effective just before the debugger break is saved and is displayed by `!irql`.
 
 ```dbgcmd
 0: kd> !irql
@@ -1241,7 +1241,7 @@ Debugger saved IRQL for processor 0x0 -- 2 (DISPATCH_LEVEL)
 
 ### View the registers
 
-On the host system, display the contents of the registers for the current thread on the current processor by using the [r (Registers)](r--registers-.md) command.
+On the host system, display the contents of the registers for the current thread on the current processor by using the [r (Registers)](../debuggercmds/r--registers-.md) command.
 
 ```dbgcmd
 0: kd> r
@@ -1257,7 +1257,7 @@ nt!DbgBreakPointWithStatus:
 fffff803`bb757020 cc              int     3
 ```
 
-Alternatively, you can display the contents of the registers by selecting **View** > **Registers**. For more information, see [r (Registers)](r--registers-.md).
+Alternatively, you can display the contents of the registers by selecting **View** > **Registers**. For more information, see [r (Registers)](../debuggercmds/r--registers-.md).
 
 Viewing the contents of the registers can be helpful when stepping through assembly language code execution and in other scenarios. For more information about assembly language disassembly, see [Annotated x86 Disassembly](annotated-x86-disassembly.md) and [Annotated x64 disassembly](annotated-x64-disassembly.md).
 

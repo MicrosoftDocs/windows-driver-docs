@@ -1,7 +1,7 @@
 ---
-title: USB Type-C manual interoperability test procedures
+title: USB Type-C Manual Interoperability Test Procedures
 description: This article explains how to test the interoperability of USB Type-C enabled systems and Windows.
-ms.date: 02/22/2023
+ms.date: 01/17/2024
 ---
 
 # USB Type-C manual interoperability test procedures
@@ -195,7 +195,7 @@ Applies to: System, dock, device
 
 1. Restart the test system.
 1. Plug a USB SuperMUTT device to exposed USB Type-C port.
-1. Run the [DF - Sleep with IO During (Certification)]( https://go.microsoft.com/fwlink/p/?LinkId=623311) test:
+1. Run the [DF - Sleep with IO During](/windows-hardware/test/hlk/testref/9d87d997-f451-4a3d-852c-90367d4d3864) test:
 1. Repeat step 3 with a USB Type-C test device.
 
 ## ST Case 2: Transfer Events
@@ -213,7 +213,7 @@ Applies to: System, dock, device
 
 1. Restart the test system.
 1. Plug a USB SuperMUTT device to exposed USB Type-C port.
-1. Run the [DF - Sleep and PnP with IO Before and After]( https://go.microsoft.com/fwlink/p/?LinkId=623313) test.
+1. Run the [DF - Sleep and PNP with IO Before and After](/windows-hardware/test/hlk/testref/6bd51c1b-3dad-4a5e-b46d-98c2fe91d1aa) test.
 1. Repeat step 3 with a USB Type-C test device.
 
 ## ST Case 4: Device Topology

@@ -188,12 +188,4 @@ The following table describes the XML elements that appear in the log file.
 
 [PwrTest Syntax](pwrtest-syntax.md)
 
- 
-
- 
-
-
-
-
-
 

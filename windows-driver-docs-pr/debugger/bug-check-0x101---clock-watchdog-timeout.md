@@ -1,5 +1,5 @@
 ---
-title: Bug check 0x101 CLOCK_WATCHDOG_TIMEOUT
+title: Bug Check 0x101 CLOCK_WATCHDOG_TIMEOUT
 description: Learn how the CLOCK_WATCHDOG_TIMEOUT bug check indicates that an expected clock interrupt on a secondary processor isn't received within the allocated interval.
 keywords: ["Bug Check 0x101 CLOCK_WATCHDOG_TIMEOUT", "CLOCK_WATCHDOG_TIMEOUT"]
 ms.date: 02/24/2023
@@ -37,15 +37,15 @@ The specified processor isn't processing interrupts. Typically, this bug check o
 
 The following debugger commands can be used to investigate the processor states, IRQL level, and code that is running, to attempt to determine which piece of code is not allowing forward execution.
 
-[!analyze](-analyze.md)
+[!analyze](../debuggercmds/-analyze.md)
 
-[k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md)
+[k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md)
 
-[!pcr](-pcr.md)
+[!pcr](../debuggercmds/-pcr.md)
 
-[!prcb](-prcb.md)
+[!prcb](../debuggercmds/-prcb.md)
 
-[!irql](-irql.md)
+[!irql](../debuggercmds/-irql.md)
 
 ## See Also
 

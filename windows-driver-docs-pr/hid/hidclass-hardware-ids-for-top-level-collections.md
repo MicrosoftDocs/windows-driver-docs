@@ -15,11 +15,10 @@ keywords:
 - input devices WDK , collections
 - collections WDK HID , hardware IDs
 - top-level collections WDK HID
-ms.date: 04/20/2017
+ms.date: 01/11/2024
 ---
 
-# HIDClass Hardware IDs for Top-Level Collections
-
+# HIDClass hardware IDs for top-level collections
 
 This section specifies the [hardware IDs](../install/hardware-ids.md) that the HID class driver generates for [top-level collections](top-level-collections.md).
 
@@ -27,8 +26,8 @@ Vendors must use the formats that are designated as *vendor hardware ID formats*
 
 The hardware IDs that the HID class driver generates for a devnode depends on the following:
 
-1.  Number of functions supported by the underlying transport
-2.  Number of Top Level Collections in the Report Descriptor
+1. Number of functions supported by the underlying transport
+1. Number of Top Level Collections in the Report Descriptor
 
 Based on these factors, there are 4 categories of hardware IDs
 
@@ -37,90 +36,83 @@ Based on these factors, there are 4 categories of hardware IDs
 | Single-Function | Case 1     | Case 2       |
 | Multi-Function  | Case 3     | Case 4       |
 
- 
-
 ## Case 1: Single-function device with single TLC
-
 
 Condition under which this Hardware ID format is used:
 
-1.  Number of functions supported by the underlying transport = 1 &&
-2.  Number of TLC = 1
+1. Number of functions supported by the underlying transport = 1 &&
+1. Number of TLC = 1
 
 Hardware ID Format:
 
--   HID\\Vid\_v(4)&Pid\_d(4)&Rev\_r(4)
--   HID\\Vid\_v(4)&Pid\_d(4)
--   HID\_DEVICE\_UP:p(4)\_U:u(4)
--   HID\_DEVICE
+- HID\Vid_v(4)&Pid_d(4)&Rev_r(4)
+- HID\Vid_v(4)&Pid_d(4)
+- HID_DEVICE_UP:p(4)_U:u(4)
+- HID_DEVICE
 
 ## Case 2: Single-function device with multiple TLC
 
-
 Condition under which this Hardware ID format is used:
 
-1.  Number of functions supported by the underlying transport = 1 &&
-2.  Number of TLC > 1
+1. Number of functions supported by the underlying transport = 1 &&
+1. Number of TLC > 1
 
 Hardware ID Format:
 
--   HID\\Vid\_v(4)&Pid\_d(4)&Rev\_r(4)&Colb(2)
--   HID\\Vid\_v(4)&Pid\_d(4)&Colb(2)
--   HID\_DEVICE\_UP:p(4)\_U:u(4) \[RESERVED FOR WINDOWS INFs ONLY\]
--   HID\_DEVICE \[RESERVED FOR WINDOWS INFs ONLY\]
+- HID\Vid_v(4)&Pid_d(4)&Rev_r(4)&Colb(2)
+- HID\Vid_v(4)&Pid_d(4)&Colb(2)
+- HID_DEVICE_UP:p(4)_U:u(4) [RESERVED FOR WINDOWS INFs ONLY]
+- HID_DEVICE [RESERVED FOR WINDOWS INFs ONLY]
 
 ## Case 3: Multi-function device with single TLC
 
-
 Condition under which this Hardware ID format is used:
 
-1.  Number of functions supported by the underlying transport > 1 &&
-2.  Number of TLC = 1
+1. Number of functions supported by the underlying transport > 1 &&
+1. Number of TLC = 1
 
 Hardware ID Format:
 
--   HID\\Vid\_v(4)&Pid\_d(4)&Rev\_r(4)&MI\_z(2)
--   HID\\Vid\_v(4)&Pid\_d(4)&MI\_z(2)
--   HID\_DEVICE\_UP:p(4)\_U:u(4) \[RESERVED FOR WINDOWS INFs ONLY\]
--   HID\_DEVICE \[RESERVED FOR WINDOWS INFs ONLY\]
+- HID\Vid_v(4)&Pid_d(4)&Rev_r(4)&MI_z(2)
+- HID\Vid_v(4)&Pid_d(4)&MI_z(2)
+- HID_DEVICE_UP:p(4)_U:u(4) [RESERVED FOR WINDOWS INFs ONLY]
+- HID_DEVICE [RESERVED FOR WINDOWS INFs ONLY]
 
 ## Case 4: Multi-function device with multiple TLC
 
-
 Condition under which this Hardware ID format is used:
 
-1.  Number of functions supported by the underlying transport > 1 &&
-2.  Number of TLC > 1
+1. Number of functions supported by the underlying transport > 1 &&
+1. Number of TLC > 1
 
 Hardware ID Format:
 
--   HID\\Vid\_v(4)&Pid\_d(4)&Rev\_r(4)&MI\_z(2)&Colb(2)
--   HID\\Vid\_v(4)&Pid\_d(4)&MI\_z(2)&Colb(2)
--   HID\_DEVICE\_UP:p(4)\_U:u(4) \[RESERVED FOR WINDOWS INFs ONLY\]
--   HID\_DEVICE \[RESERVED FOR WINDOWS INFs ONLY\]
+- HID\Vid_v(4)&Pid_d(4)&Rev_r(4)&MI_z(2)&Colb(2)
+- HID\Vid_v(4)&Pid_d(4)&MI_z(2)&Colb(2)
+- HID_DEVICE_UP:p(4)_U:u(4) [RESERVED FOR WINDOWS INFs ONLY]
+- HID_DEVICE [RESERVED FOR WINDOWS INFs ONLY]
 
 ## Special purpose hardware ID
-
 
 The following are hardware IDs (for internal use only) that Windows uses to provide default system functionality.
 
 | Device Type            | Usage Page | Usage | Hardware ID                   |
 |------------------------|:----------:|:-----:|-------------------------------|
-| Pointer                | 0x01       | 0x01  | HID\_DEVICE\_SYSTEM\_MOUSE    |
-| Mouse                  | 0x01       | 0x02  | HID\_DEVICE\_SYSTEM\_MOUSE    |
-| Joystick               | 0x01       | 0x04  | HID\_DEVICE\_SYSTEM\_GAME     |
-| Game pad               | 0x01       | 0x05  | HID\_DEVICE\_SYSTEM\_GAME     |
-| Keyboard               | 0x01       | 0x06  | HID\_DEVICE\_SYSTEM\_KEYBOARD |
-| Keypad                 | 0x01       | 0x07  | HID\_DEVICE\_SYSTEM\_KEYBOARD |
-| System control         | 0x01       | 0x80  | HID\_DEVICE\_SYSTEM\_CONTROL  |
-| Consumer audio control | 0x0C       | 0x01  | HID\_DEVICE\_SYSTEM\_CONSUMER |
+| Pointer                | 0x01       | 0x01  | HID_DEVICE_SYSTEM_MOUSE    |
+| Mouse                  | 0x01       | 0x02  | HID_DEVICE_SYSTEM_MOUSE    |
+| Joystick               | 0x01       | 0x04  | HID_DEVICE_SYSTEM_GAME     |
+| Game pad               | 0x01       | 0x05  | HID_DEVICE_SYSTEM_GAME     |
+| Keyboard               | 0x01       | 0x06  | HID_DEVICE_SYSTEM_KEYBOARD |
+| Keypad                 | 0x01       | 0x07  | HID_DEVICE_SYSTEM_KEYBOARD |
+| System control         | 0x01       | 0x80  | HID_DEVICE_SYSTEM_CONTROL  |
+| Consumer audio control | 0x0C       | 0x01  | HID_DEVICE_SYSTEM_CONSUMER |
 
 Important notes:
 
--   There are no compatible IDs generated by HIDClass
--   Vendor 3rd party INFs must only match against the hardware IDs
--   Hardware IDs that contain HID\_DEVICE\_SYSTEM\_\* are “special” devices that the operating system opens for its use. Vendor provided INF must not match on these special hardware IDs.
--   Vendor provided 3rd party HID transport minidrivers must provided the fields listed below to ensure that HIDClass can generate the appropriate hardware IDs.
+- There are no compatible IDs generated by HIDClass
+- Vendor 3rd party INFs must only match against the hardware IDs
+- Hardware IDs that contain HID_DEVICE_SYSTEM_* are "special" devices that the operating system opens for its use. Vendor provided INF must not match on these special hardware IDs.
+- Vendor provided 3rd party HID transport minidrivers must provided the fields listed below to ensure that HIDClass can generate the appropriate hardware IDs.
 
 Legend:
 

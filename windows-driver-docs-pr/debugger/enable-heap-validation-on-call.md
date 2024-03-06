@@ -1,5 +1,5 @@
 ---
-title: Enable heap validation on call
+title: Enable Heap Validation on Call
 description: Enable heap validation on call
 keywords: ["Enable heap validation on call (global flag)"]
 ms.date: 05/23/2017
@@ -51,8 +51,3 @@ To avoid the high overhead associated with this flag, use the **HeapValidate** f
  
 
  
-
-
-
-
-

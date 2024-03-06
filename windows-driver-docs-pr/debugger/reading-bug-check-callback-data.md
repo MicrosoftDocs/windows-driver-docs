@@ -30,11 +30,11 @@ See [Varieties of Kernel-Mode Dump Files](varieties-of-kernel-mode-dump-files.md
 
 ## Displaying Callback Data
 
-To display bug check callback data, you can use the [**!bugdump**](-bugdump.md) extension.
+To display bug check callback data, you can use the [**!bugdump**](../debuggercmds/-bugdump.md) extension.
 
-Without any parameters, [**!bugdump**](-bugdump.md) will display data for all callbacks.
+Without any parameters, [**!bugdump**](../debuggercmds/-bugdump.md) will display data for all callbacks.
 
-To view data for one specific callback routine, use [**!bugdump**](-bugdump.md)*Component*, where *Component* is the same parameter that was passed to **KeRegisterBugCheckCallback** when that routine was registered.
+To view data for one specific callback routine, use [**!bugdump**](../debuggercmds/-bugdump.md)*Component*, where *Component* is the same parameter that was passed to **KeRegisterBugCheckCallback** when that routine was registered.
 
 ### Displaying Secondary Callback Data
 
@@ -42,9 +42,9 @@ There are two methods for displaying secondary callback data. You can use the **
 
 Each block of secondary callback data is identified by a GUID tag. This tag is specified by the **Guid** field of the **(KBUGCHECK\_SECONDARY\_DUMP\_DATA)ReasonSpecificData** parameter passed to [BugCheckSecondaryDumpDataCallback](/windows-hardware/drivers/ddi/wdm/nc-wdm-kbugcheck_reason_callback_routine).
 
-The [**.enumtag (Enumerate Secondary Callback Data)**](-enumtag--enumerate-secondary-callback-data-.md) command is not a very precise instrument. It displays every secondary data block, showing the tag and then showing the data in hexadecimal and ASCII format. It is generally useful only to determine what tags are actually being used for secondary data blocks.
+The [**.enumtag (Enumerate Secondary Callback Data)**](../debuggercmds/-enumtag--enumerate-secondary-callback-data-.md) command is not a very precise instrument. It displays every secondary data block, showing the tag and then showing the data in hexadecimal and ASCII format. It is generally useful only to determine what tags are actually being used for secondary data blocks.
 
-To use this data in a more practical way, it is recommended that you write your own debugger extension. This extension must call methods in the dbgeng.h header file. For details, see [Writing New Debugger Extensions](writing-new-debugger-extensions.md).
+To use this data in a more practical way, it is recommended that you write your own debugger extension. This extension must call methods in the dbgeng.h header file. For details, see [Writing New Debugger Extensions](../debuggercmds/writing-new-debugger-extensions.md).
 
 If you know the GUID tag of the secondary data block, your extension should use the method **IDebugDataSpaces3::ReadTagged** to access the data. Its prototype is as follows:
 

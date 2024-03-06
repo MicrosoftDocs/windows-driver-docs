@@ -1,5 +1,5 @@
 ---
-title: ColorEntry element
+title: ColorEntry Element
 description: The required ColorEntry element describes a single color-processing mode that an input source on the scanner supports.
 keywords: ["ColorEntry element Imaging Devices"]
 topic_type:

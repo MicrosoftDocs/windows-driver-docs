@@ -8,7 +8,7 @@ keywords:
 - nodes WDK SANs
 - SAN NIC WDK SANs
 ms.date: 01/28/2022
-ms.custom: contperf-fy23q3
+ms.custom: engagement-fy23
 ---
 
 # Introduction to System Area Networks
@@ -29,7 +29,7 @@ A SAN network interface controller (NIC), a transport driver for the SAN NIC, or
 
 The following figure shows the architecture required to support a SAN. The shaded areas represent components that a SAN NIC vendor supplies to enable using a SAN.
 
-![diagram illustrating the architecture required to support a system area network (san).](images/wsdpsan.png)
+:::image type="content" source="images/wsdpsan.png" alt-text="Diagram illustrating the architecture required to support a SAN.":::
 
 The following is a description of the components shown in this figure.
 
@@ -77,14 +77,3 @@ A kernel-mode provider for a particular SAN. (Reserved for future use.)
 
 [Virtual Interface Architecture and Support for SAN](virtual-interface-architecture-and-support-for-san.md)
  
-
-
-
-
-
-
-
-
-
-
-

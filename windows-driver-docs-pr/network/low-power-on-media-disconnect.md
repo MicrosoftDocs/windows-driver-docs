@@ -38,7 +38,7 @@ During initialization, a miniport drivers that supports D3 on disconnect must re
 
 The following figure illustrates the sequence of events to set a network adapter to a low-power state after a media disconnect event.
 
-![diagram illustrating the sequence of events to set a nic to a low power state after a media disconnect event.](images/d3ondisconnect.png)
+:::image type="content" source="images/d3ondisconnect.png" alt-text="Diagram illustrating the sequence of events to set a network adapter to a low-power state after a media disconnect event.":::
 
 When the adapter detects a media disconnect, the following sequence occurs:
 
@@ -56,7 +56,7 @@ When the adapter detects a media disconnect, the following sequence occurs:
 
 The following figure illustrates the sequence of events to restore full power to a network adapter after a media connect event.
 
-![diagram illustrating the sequence of events to restore full power to a nic after a media connect event.](images/d0onconnect.png)
+:::image type="content" source="images/d0onconnect.png" alt-text="Diagram illustrating the sequence of events to restore full power to a nic after a media connect event.":::
 
 When the media is reconnected the following sequence occurs:
 

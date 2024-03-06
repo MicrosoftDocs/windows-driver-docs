@@ -131,8 +131,3 @@ Since the KD connection server simply acts as a gateway for the smart client, th
  
 
  
-
-
-
-
-

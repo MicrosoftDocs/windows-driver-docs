@@ -1,5 +1,5 @@
 ---
-title: How do I update the flags in a running trace session
+title: How do I Update the Flags in a Running Trace Session
 description: How do I update the flags in a running trace session
 ms.date: 04/20/2017
 ---
@@ -14,12 +14,4 @@ Flags and levels are properties of a [trace provider](trace-provider.md), not of
 For information about the **tracelog -enable** command, see [**Tracelog Command Syntax**](tracelog-command-syntax.md). For an example of how to use this command, see [Example 5: Enabling Trace providers](example-5--enabling-trace-providers.md).
 
 You can also use [TraceView](traceview.md) to change the flags or levels in a trace session that you started by using TraceView. The graphical user interface makes it easy to see what properties can be changed while the session runs, and to change them.
-
- 
-
- 
-
-
-
-
 

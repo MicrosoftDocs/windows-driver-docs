@@ -26,8 +26,3 @@ Any other value is a status code indicating an error during the dump process.
  
 
  
-
-
-
-
-

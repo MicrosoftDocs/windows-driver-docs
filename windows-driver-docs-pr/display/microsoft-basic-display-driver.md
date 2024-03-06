@@ -15,7 +15,6 @@ The key benefits of using MSBDD are as follows:
 - MSBDD supports Unified Extensible Firmware Interface (UEFI) Graphics Output Protocol (GOP).
 - MSBDD works on both XDDM and WDDM hardware.
 
-
 MSBDD can use the video BIOS to manage modes and resolutions on a single monitor. On UEFI platforms, MSBDD inherits the linear frame buffer that is set during boot; in this case, no mode or resolution changes are possible. As shown in the figure below, MSBDD is used in the following scenarios:
 
 - Server: Server configurations that lack WDDM-capable graphics hardware can use MSBDD.
@@ -29,4 +28,4 @@ MSBDD can use the video BIOS to manage modes and resolutions on a single monitor
   - Driver upgrade: By using MSBDD, there is no need to go through a system reboot when upgrading to the IHV-recommended driver.
   - Safe mode: In this mode, only trusted drivers get loaded; this includes MSBDD.
 
-![scenarios supported by microsoft basic display driver.](images/scenariossupportedmicrosoftbasicdisplaydriver.jpg)
+:::image type="content" source="images/scenariossupportedmicrosoftbasicdisplaydriver.jpg" alt-text="Diagram showing driver installation scenarios in which the Microsoft Basic Display Driver is used.":::

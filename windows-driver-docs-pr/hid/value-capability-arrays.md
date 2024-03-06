@@ -1,12 +1,12 @@
 ---
-title: Value capability arrays
+title: Value Capability Arrays
 description: Value capability arrays
 keywords:
 - value capability arrays WDK HID
 - arrays WDK HID
 - capabilities WDK HID collections
 - usage value arrays WDK HID
-ms.date: 10/12/2022
+ms.date: 01/11/2024
 ---
 
 # Value capability arrays

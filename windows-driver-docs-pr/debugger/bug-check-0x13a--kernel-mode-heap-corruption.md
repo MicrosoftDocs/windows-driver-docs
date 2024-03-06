@@ -1,5 +1,5 @@
 ---
-title: Bug check 0x13A KERNEL_MODE_HEAP_CORRUPTION
+title: Bug Check 0x13A KERNEL_MODE_HEAP_CORRUPTION
 description: Learn how the KERNEL_MODE_HEAP_CORRUPTION bug check indicates that the kernel mode heap manager has detected corruption in a heap.
 keywords: ["Bug Check 0x13A KERNEL_MODE_HEAP_CORRUPTION", "KERNEL_MODE_HEAP_CORRUPTION"]
 ms.date: 02/23/2023
@@ -72,9 +72,9 @@ The KERNEL_MODE_HEAP_CORRUPTION bug check has a value of 0x0000013A. This bug ch
 
 ## Resolution
 
-The [!analyze](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [!analyze](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
-The [!heap](-heap.md) extension displays heap usage information, controls breakpoints in the heap manager, detects leaked heap blocks, searches for heap blocks, or displays page heap information.
+The [!heap](../debuggercmds/-heap.md) extension displays heap usage information, controls breakpoints in the heap manager, detects leaked heap blocks, searches for heap blocks, or displays page heap information.
 
 For general information on troubleshooting blue screen bug checks, see [Blue screen data](blue-screen-data.md).
 

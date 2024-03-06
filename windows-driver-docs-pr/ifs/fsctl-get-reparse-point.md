@@ -1,5 +1,5 @@
 ---
-title: FSCTL_GET_REPARSE_POINT control code
+title: FSCTL_GET_REPARSE_POINT Control Code
 description: The FSCTL_GET_REPARSE_POINT control code retrieves the reparse point data associated with the specified file or directory.
 keywords: ["FSCTL_GET_REPARSE_POINT control code Installable File System Drivers"]
 topic_type:

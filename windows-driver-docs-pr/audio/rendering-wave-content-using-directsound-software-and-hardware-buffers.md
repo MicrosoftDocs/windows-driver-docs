@@ -15,7 +15,7 @@ ms.date: 04/20/2017
 
 The following figure shows a configuration of Microsoft Windows Driver Model (WDM) components that renders to DirectSound software and hardware buffers.
 
-![diagram illustrating rendering wave content using directsound software and hardware buffers.](images/hwbuf.png)
+:::image type="content" source="images/hwbuf.png" alt-text="Diagram illustrating the configuration of WDM components for rendering wave content using DirectSound software and hardware buffers.":::
 
 See the following for a description of the WDM audio components:
 

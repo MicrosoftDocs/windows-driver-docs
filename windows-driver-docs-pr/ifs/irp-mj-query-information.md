@@ -1,5 +1,5 @@
 ---
-title: IRP_MJ_QUERY_INFORMATION (FS and filter drivers)
+title: IRP_MJ_QUERY_INFORMATION (FS and Filter Drivers)
 description: IRP_MJ_QUERY_INFORMATION
 keywords: ["IRP_MJ_QUERY_INFORMATION Installable File System Drivers"]
 topic_type:

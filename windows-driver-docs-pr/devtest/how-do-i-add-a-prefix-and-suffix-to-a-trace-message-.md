@@ -1,5 +1,5 @@
 ---
-title: How do I add a prefix and suffix to a trace message
+title: How do I Add a Prefix and Suffix to a Trace Message
 description: How do I add a prefix and suffix to a trace message
 ms.date: 04/20/2017
 ---
@@ -72,12 +72,4 @@ The following example defines a trace macro that uses the format string prefix a
 ```
 [0]0F78.0460::06/24/2006-15:54:54.880 [tracedrv]Function Return=0x8000000f(STATUS_DEVICE_POWERED_OFF)
 ```
-
- 
-
- 
-
-
-
-
 

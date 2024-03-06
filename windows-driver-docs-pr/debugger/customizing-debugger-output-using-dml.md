@@ -71,16 +71,16 @@ The following command displays the text and link in the Command Browser window.
 .browse .dml_start c:\Dml_Experiment.txt
 ```
 
-![screen shot of dml file output.](images/dmlcommands03.png)
+:::image type="content" source="images/dmlcommands03.png" alt-text="Screenshot of DML file output in Command Browser window.":::
 
 If you click the **List modules that begin with usb** link, you see output similar to the following image.
 
-![screen shot of module list.](images/dmlcommands04.png)
+:::image type="content" source="images/dmlcommands04.png" alt-text="Screenshot of module list after clicking the link in DML output.":::
 
 ## <span id="Right-Click_Behavior_in_DML"></span><span id="right-click_behavior_in_dml"></span><span id="RIGHT-CLICK_BEHAVIOR_IN_DML"></span>Right-Click Behavior in DML
 
 
-Right-click behavior is available in DML. This sample shows how to define right click behavior using &lt;altlink&gt; to send a breakpoint [**bp (Set Breakpoint)**](bp--bu--bm--set-breakpoint-.md) command and send the [**u (Unassemble)**](u--unassemble-.md) with a regular click.
+Right-click behavior is available in DML. This sample shows how to define right click behavior using &lt;altlink&gt; to send a breakpoint [**bp (Set Breakpoint)**](../debuggercmds/bp--bu--bm--set-breakpoint-.md) command and send the [**u (Unassemble)**](../debuggercmds/u--unassemble-.md) with a regular click.
 
 ```text
 <link cmd="u MyProgram!memcpy">
@@ -129,7 +129,7 @@ Conversion to plain text drops the tags.
 
 **Example**
 
-This example shows how to define right click behavior using &lt;altlink&gt; to send a breakpoint [**bp (Set Breakpoint)**](bp--bu--bm--set-breakpoint-.md) command and send the [**u (Unassemble)**](u--unassemble-.md) with a regular click.
+This example shows how to define right click behavior using &lt;altlink&gt; to send a breakpoint [**bp (Set Breakpoint)**](../debuggercmds/bp--bu--bm--set-breakpoint-.md) command and send the [**u (Unassemble)**](../debuggercmds/u--unassemble-.md) with a regular click.
 
 ```text
 <link cmd="u MyProgram!memcpy">

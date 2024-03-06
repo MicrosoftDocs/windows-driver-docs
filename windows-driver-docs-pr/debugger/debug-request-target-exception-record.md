@@ -1,5 +1,5 @@
 ---
-title: DEBUG\_REQUEST\_TARGET\_EXCEPTION\_RECORD
+title: DEBUG_REQUEST_TARGET_EXCEPTION_RECORD
 description: DEBUG\_REQUEST\_TARGET\_EXCEPTION\_RECORD
 keywords: ["DEBUG_REQUEST_TARGET_EXCEPTION_RECORD Windows Debugging"]
 topic_type:
@@ -31,9 +31,3 @@ The exception record for the stored event. The type of the exception record is E
  
 
  
-
-
-
-
-
-

@@ -1,5 +1,5 @@
 ---
-title: Filtering data
+title: Filtering Data
 description: In order to optimize data throughput and battery life, your sensor device must apply filter criteria to the data-update events so that they are only raised when needed.
 keywords:
 - change sensitivity
@@ -15,7 +15,7 @@ keywords:
 - sensor events
 - filtering data
 - data filtering
-ms.date: 12/01/2022
+ms.date: 01/11/2024
 ---
 
 # Filtering data

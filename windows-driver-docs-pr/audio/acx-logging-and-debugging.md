@@ -1,16 +1,17 @@
 ---
-title: ACX logging and debugging
+title: ACX Logging and Debugging
 description: This topic provides information on logging, tracing and debugging of the ACX Audio Class Extensions.
-ms.date: 04/14/2023
+ms.date: 09/29/2023
 ms.localizationpriority: medium
 ---
 
 # ACX logging and debugging
 
->[!IMPORTANT]
-> Some information relates to a prerelease product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
 This topic provides information on logging, tracing and debugging of the ACX Audio Class Extensions.
+
+>[!NOTE]
+> The ACX headers and libraries are not included in the  WDK 10.0.22621.2428 (released October 24, 2023), but are available in previous versions, as well as the latest (25000 series builds) Insider Preview of the WDK. For more information about preview versions of the WDK, see [Installing preview versions of the Windows Driver Kit (WDK)](../installing-preview-versions-wdk.md).
+
 
 ## ACX Driver Logging
 
@@ -64,7 +65,7 @@ To improve the reliability of your ACX driver consider the following behaviors f
 
 ### Using the WMI Tracing debugger extensions
 
-To view trace events in the debugger, use the WMI extension, Wmitrace.dll. It contains a library of functions designed to control and view WMI event tracing. For more information, see [WMI Tracing Extensions (Wmitrace.dll)](../debugger/wmi-tracing-extensions--wmitrace-dll-.md).
+To view trace events in the debugger, use the WMI extension, Wmitrace.dll. It contains a library of functions designed to control and view WMI event tracing. For more information, see [WMI Tracing Extensions (Wmitrace.dll)](../debuggercmds/wmi-tracing-extensions--wmitrace-dll-.md).
 
 ## ACX driver debugging
 

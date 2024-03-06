@@ -34,7 +34,7 @@ A system wide watchdog has expired. This indicates that the system is hung and n
 
 ## Resolution
 
-The [**!analyze**](-analyze.md) debugger extension displays information about the bug check and can be helpful in determining the root cause. For more information about WinDbg and **!analyze**, see [Using the !analyze extension](using-the--analyze-extension.md) and [!analyze](-analyze.md).
+The [**!analyze**](../debuggercmds/-analyze.md) debugger extension displays information about the bug check and can be helpful in determining the root cause. For more information about WinDbg and **!analyze**, see [Using the !analyze extension](using-the--analyze-extension.md) and [!analyze](../debuggercmds/-analyze.md).
 
 
 ## See Also

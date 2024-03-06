@@ -1,5 +1,5 @@
 ---
-title: DD_DXAPI_OPENVPCAPTUREDEVICE control code (Windows Drivers)
+title: DD_DXAPI_OPENVPCAPTUREDEVICE Control Code (Windows Drivers)
 description: Learn more about the DD_DXAPI_OPENVPCAPTUREDEVICE control code.
 keywords:
 - DD_DXAPI_OPENVPCAPTUREDEVICE

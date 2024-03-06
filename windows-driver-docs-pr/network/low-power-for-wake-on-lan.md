@@ -18,7 +18,7 @@ Note that the lower power on the media disconnect (D3 on disconnect) feature is 
 
 The following figure illustrates the sequence of events that occurs to set a network adapter to a low power state.
 
-![diagram illustrating the sequence of events to set a nic to a low power state.](images/d3onsleep.png)
+:::image type="content" source="images/d3onsleep.png" alt-text="Diagram illustrating the sequence of events to set a network adapter to a low power state.":::
 
 When NDIS puts a network adapter in a low power state, the following sequence occurs:
 
@@ -34,7 +34,7 @@ When NDIS puts a network adapter in a low power state, the following sequence oc
 
 The following figure illustrates the sequence of events that occurs to restore full power to a network adapter after a WOL event.
 
-![diagram illustrating the sequence of events to restore full power to a nic after a wol event.](images/d0onwol.png)
+:::image type="content" source="images/d0onwol.png" alt-text="Diagram illustrating the sequence of events to restore full power to a network adapter after a WOL event.":::
 
 When the network adapter is waking the computer the following sequence occurs:
 

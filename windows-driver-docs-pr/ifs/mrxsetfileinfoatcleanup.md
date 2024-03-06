@@ -1,5 +1,5 @@
 ---
-title: MRxSetFileInfoAtCleanup routine
+title: MRxSetFileInfoAtCleanup Routine
 description: The MRxSetFileInfoAtCleanup routine is called by RDBSS to request that a network mini-redirector set file information on a file system object at cleanup.
 keywords: ["MRxSetFileInfoAtCleanup routine Installable File System Drivers", "PMRX_CALLDOWN"]
 topic_type:

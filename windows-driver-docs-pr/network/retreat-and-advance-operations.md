@@ -25,7 +25,7 @@ Advance operations are required when a send operation is complete or when a driv
 
 The following figure shows the relationship between the network data and these operations.
 
-![diagram illustrating data space allocation.](images/netbufferdata-basic.png)
+:::image type="content" source="images/netbufferdata-basic.png" alt-text="Diagram showing the relationship between network data and advance and retreat operations.":::
 
 The following topics provide more information about advance and retreat operations:
 

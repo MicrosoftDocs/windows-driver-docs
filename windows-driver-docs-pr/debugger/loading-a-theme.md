@@ -23,8 +23,3 @@ After you have loaded a theme, you may alter it to more closely suit your prefer
  
 
  
-
-
-
-
-

@@ -4,7 +4,7 @@ description: Package-Aware Print Drivers that Share Files
 keywords:
 - package-aware print drivers WDK
 - core drivers WDK printer
-ms.date: 01/30/2023
+ms.date: 07/18/2023
 ---
 
 # Package-Aware Print Drivers that Share Files
@@ -38,40 +38,13 @@ As of Windows Vista, do not include Ntprint.inf because Unidrv is packaged as a 
 
 Core print package files are listed in the following table.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Core File</th>
-<th>GUID</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>UNIDRV</p></td>
-<td><p>{D20EA372-DD35-4950-9ED8-A6335AFE79F0}</p></td>
-</tr>
-<tr class="even">
-<td><p>PSCRIPT</p></td>
-<td><p>{D20EA372-DD35-4950-9ED8-A6335AFE79F1}</p></td>
-</tr>
-<tr class="odd">
-<td><p>PCLXL</p></td>
-<td><p>{D20EA372-DD35-4950-9ED8-A6335AFE79F2}</p></td>
-</tr>
-<tr class="even">
-<td><p>PLOTTER</p></td>
-<td><p>{D20EA372-DD35-4950-9ED8-A6335AFE79F4}</p></td>
-</tr>
-<tr class="odd">
-<td><p>XPSDRV</p></td>
-<td><p>{D20EA372-DD35-4950-9ED8-A6335AFE79F5}</p></td>
-</tr>
-</tbody>
-</table>
+| Core File | GUID |
+|--|--|
+| UNIDRV | {D20EA372-DD35-4950-9ED8-A6335AFE79F0} |
+| PSCRIPT | {D20EA372-DD35-4950-9ED8-A6335AFE79F1} |
+| PCLXL | {D20EA372-DD35-4950-9ED8-A6335AFE79F2} |
+| PLOTTER | {D20EA372-DD35-4950-9ED8-A6335AFE79F4} |
+| XPSDRV | {D20EA372-DD35-4950-9ED8-A6335AFE79F5} |
 
 More than one core driver section can be referenced; for example:
 

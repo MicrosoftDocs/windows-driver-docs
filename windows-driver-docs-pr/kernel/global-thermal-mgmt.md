@@ -1,5 +1,5 @@
 ---
-title: Global thermal management 
+title: Global Thermal Management 
 description: Learn about the GUID_THERMAL_COOLING_INTERFACE driver interface and how it's used in global thermal management.
 keywords: ["global thermal managment", "thermal"]
 ms.date: 06/16/2017

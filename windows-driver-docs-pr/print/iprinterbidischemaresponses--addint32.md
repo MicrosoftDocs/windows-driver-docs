@@ -1,5 +1,5 @@
 ---
-title: IPrinterBidiSchemaResponses AddInt32 method
+title: IPrinterBidiSchemaResponses AddInt32 Method
 description: The AddInt32 method adds a new response of type BIDI_INT to the collection.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

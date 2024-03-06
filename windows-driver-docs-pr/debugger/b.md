@@ -45,8 +45,3 @@ The hexadecimal code indicating a specific type of bug check .
  
 
  
-
-
-
-
-

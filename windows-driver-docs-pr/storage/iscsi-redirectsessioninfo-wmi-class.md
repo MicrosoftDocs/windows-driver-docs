@@ -1,5 +1,5 @@
 ---
-title: ISCSI\_RedirectSessionInfo WMI Class
+title: ISCSI_RedirectSessionInfo WMI Class
 description: ISCSI\_RedirectSessionInfo WMI Class
 ms.date: 10/17/2018
 ---

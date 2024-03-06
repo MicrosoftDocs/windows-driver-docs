@@ -30,6 +30,6 @@ The INTERRUPT\_EXCEPTION\_NOT\_HANDLED bug check has a value of 0x0000003D. This
 
 ## Resolution
  
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
  
 

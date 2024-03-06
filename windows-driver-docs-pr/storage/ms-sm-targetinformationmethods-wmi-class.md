@@ -1,5 +1,5 @@
 ---
-title: MS\_SM\_TargetInformationMethods WMI Class
+title: MS_SM_TargetInformationMethods WMI Class
 description: MS\_SM\_TargetInformationMethods WMI Class
 ms.date: 10/17/2018
 ---

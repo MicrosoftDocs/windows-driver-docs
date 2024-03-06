@@ -1,7 +1,7 @@
 ---
-title: '[Version] section directives'
+title: '[Version] Section Directives'
 description: This topic describes [Version] section directives in the INF.
-ms.date: 05/05/2023
+ms.date: 01/12/2024
 ---
 
 # \[Version\] section directives

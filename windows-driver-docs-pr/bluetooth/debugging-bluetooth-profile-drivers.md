@@ -6,11 +6,10 @@ keywords:
 - Bluetooth WDK , debugging profile drivers
 - debugging drivers WDK Bluetooth
 - profile drivers WDK Bluetooth , debugging
-ms.date: 04/20/2017
+ms.date: 01/10/2024
 ---
 
-# Debugging Bluetooth Profile Drivers
-
+# Debugging Bluetooth profile drivers
 
 While you develop your Bluetooth profile driver, you can use [Driver Verifier](../devtest/driver-verifier.md) to assist with its debugging.
 
@@ -20,13 +19,10 @@ To utilize the verification checks fully, make sure you use the Bluetooth Reques
 
 The verification checks can help to catch the following kinds of errors:
 
--   Attempts to resubmit a BRB before it has been completed
+- Attempts to resubmit a BRB before it has been completed
 
--   Attempts to allocate or initialize an invalid BRB type
+- Attempts to allocate or initialize an invalid BRB type
 
--   Attempts to submit a BRB with an invalid size
+- Attempts to submit a BRB with an invalid size
 
 While debugging your profile driver, you can use the **!analyze-v** debugger command after a BC\_BLUETOOTH\_VERIFIER\_FAULT to obtain an explanation of the fault.
-
- 
-

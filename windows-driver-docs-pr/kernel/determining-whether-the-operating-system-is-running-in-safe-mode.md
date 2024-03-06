@@ -1,5 +1,5 @@
 ---
-title: Determining Whether the Operating System Is Running in Safe Mode
+title: Determining Whether the Operating System is Running in Safe Mode
 description: Determining Whether the Operating System Is Running in Safe Mode
 keywords: ["Safe Mode WDK kernel", "operating system Safe Mode WDK kernel", "InitSafeBootMode", "preventing Safe Mode WDK kernel", "checking Safe Mode", "verifying Safe Mode", "startup Safe Mode WDK kernel"]
 ms.date: 06/16/2017

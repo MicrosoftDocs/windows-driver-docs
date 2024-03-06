@@ -1,6 +1,6 @@
 ---
+title: Support for WPD Infrastructure (WpdBasicHardwareDriverSample)
 description: Support for WPD infrastructure (WpdBasicHardwareDriverSample)
-title: Support for WPD infrastructure (WpdBasicHardwareDriverSample)
 ms.date: 03/03/2023
 ---
 

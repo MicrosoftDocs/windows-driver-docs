@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_VIDEOPROCAMP\_COLORENABLE
+title: KSPROPERTY_VIDEOPROCAMP_COLORENABLE
 description: The KSPROPERTY\_VIDEOPROCAMP\_COLORENABLE property controls the color enable setting. This property is optional.
 keywords: ["KSPROPERTY_VIDEOPROCAMP_COLORENABLE Streaming Media Devices"]
 topic_type:

@@ -1,5 +1,5 @@
 ---
-title: WdfObjectGetTypedContext macro
+title: WdfObjectGetTypedContext Macro
 description: The WdfObjectGetTypedContext macro returns a pointer to an object's context space.
 keywords:
  - WdfObjectGetTypedContext macro

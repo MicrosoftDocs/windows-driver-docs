@@ -21,7 +21,7 @@ A miniport driver with a WDM lower edge (an NDIS-WDM miniport driver) follows th
 
 The following diagram shows an NDIS-WDM miniport driver that interfaces with the USB driver stack by using a WDM lower edge.
 
-![diagram illustrating an ndis-wdm miniport driver that interfaces with the usb driver stack by using a wdm lower edge.](images/nonndslo.png)
+:::image type="content" source="images/nonndslo.png" alt-text="Diagram showing an NDIS-WDM miniport driver interfacing with the USB driver stack using a WDM lower edge.":::
 
 The following list describes the components that the preceding diagram shows:
 

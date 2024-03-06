@@ -1,7 +1,7 @@
 ---
-title: Error handling for HID over SPI
+title: Error Handling for HID Over SPI
 description: How to handle errors that may occur in HID over SPI.
-ms.date: 06/22/2021
+ms.date: 01/11/2024
 ---
 
 # Error handling for HID over SPI

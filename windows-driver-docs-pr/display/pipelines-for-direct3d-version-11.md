@@ -21,120 +21,86 @@ ms.date: 04/20/2017
 
 # Pipelines for Direct3D Version 11
 
-
 This section applies only to Windows 7 and later, and Windows Server 2008 R2 and later versions of Windows operating system.
 
 The graphics rendering pipeline for Direct3D version 11 is expanded from the [graphics rendering pipeline for Direct3D version 10](rendering-pipeline.md). In addition to the shared programmable shader cores that Direct3D version 10 supported, Direct3D version 11 also supports hull, domain, and compute shader cores.
 
 Direct3D version 11 actually supports two separate pipelines: the draw pipeline (graphics rendering pipeline) and the dispatch pipeline (compute shader pipeline). The draw and dispatch pipelines are technically loosely connected in the sense that you cannot have the same subresource bound for writing in both pipelines simultaneously, or bound for writing in one pipeline and for reading in the other pipeline.
 
-The following figure shows the functional block of the draw pipeline for Direct3D version 11.
+The following figure shows the functional blocks of the draw pipeline for Direct3D version 11.
 
-![diagram illustrating the functional block of the draw pipeline.](images/pipeline-dx11.png)
+:::image type="content" source="images/pipeline-dx11.png" alt-text="Diagram illustrating the functional blocks of the Direct3D version 11 draw pipeline.":::
 
-The following figure shows the functional block of the dispatch pipeline for Direct3D version 11.
+The following figure shows the functional blocks of the dispatch pipeline for Direct3D version 11.
 
-![diagram illustrating the functional block of the dispatch pipeline.](images/pipeline-compute.png)
+:::image type="content" source="images/pipeline-compute.png" alt-text="Diagram illustrating the functional blocks of the Direct3D version 11 dispatch pipeline.":::
 
 The following sections describe the new-for-Direct3D 11 blocks that are shown in the preceding figures.
 
-### <span id="hull_shader"></span><span id="HULL_SHADER"></span>Hull Shader
+## Hull Shader
 
 The hull shader operates once per patch. You can use the hull shader with patches from the input assembler. The hull shader can transform input control points that make up a patch into output control points. The hull shader can perform other setup for the fixed-function tessellator stage. For example, the hull shader can output tess factors, which are numbers that indicate how much to tessellate.
 
 The Direct3D runtime calls the following driver functions to create, set up, and destroy the hull shader:
 
-[**CalcPrivateShaderSize**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_calcprivateshadersize)
+* [**CalcPrivateShaderSize**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_calcprivateshadersize)
+* [**CalcPrivateTessellationShaderSize**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11ddi_calcprivatetessellationshadersize)
+* [*CreateHullShader*](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11ddi_createhullshader)
+* [**DestroyShader**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_destroyshader)
+* [**HsSetShaderResources**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_setshaderresources)
+* [**HsSetShader**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_setshader)
+* [**HsSetSamplers**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_setsamplers)
+* [**HsSetConstantBuffers**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_setconstantbuffers)
+* [**HsSetShaderWithIfaces**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11ddi_setshader_with_ifaces)
 
-[**CalcPrivateTessellationShaderSize**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11ddi_calcprivatetessellationshadersize)
-
-[*CreateHullShader*](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11ddi_createhullshader)
-
-[**DestroyShader**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_destroyshader)
-
-[**HsSetShaderResources**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_setshaderresources)
-
-[**HsSetShader**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_setshader)
-
-[**HsSetSamplers**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_setsamplers)
-
-[**HsSetConstantBuffers**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_setconstantbuffers)
-
-[**HsSetShaderWithIfaces**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11ddi_setshader_with_ifaces)
-
-### <span id="tessellator"></span><span id="TESSELLATOR"></span>Tessellator
+## Tessellator
 
 The tessellator is a fixed-function unit whose operation is defined by declarations in the hull shader. The tessellator operates once per patch that is output by the hull shader. The hull shader generates tess factors, which are numbers that notify the tessellator how much to tessellate (generate geometry and connectivity) over the domain of the patch.
 
 The Direct3D runtime calls the driver's [**CalcPrivateTessellationShaderSize**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11ddi_calcprivatetessellationshadersize) function to calculate the size of the memory region for a hull or domain shader.
 
-### <span id="domain_shader"></span><span id="DOMAIN_SHADER"></span>Domain Shader
+## Domain Shader
 
 The domain shader is invoked once per vertex, which is generated by the tessellator. Each invocation is identified by its coordinate on a generic domain. The role of the domain shader is to turn that coordinate into something tangible (such as, a point in 3-D space) for use down stream of the domain shader. Each domain shader invocation for a patch also accesses shared input of all the hull shader output (such as, output control points).
 
 The Direct3D runtime calls the following driver functions to create, set up, and destroy the domain shader:
 
-[**CalcPrivateTessellationShaderSize**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11ddi_calcprivatetessellationshadersize)
+* [**CalcPrivateTessellationShaderSize**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11ddi_calcprivatetessellationshadersize)
+* [*CreateDomainShader*](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11ddi_createdomainshader)
+* [**DestroyShader**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_destroyshader)
+* [**DsSetShaderResources**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_setshaderresources)
+* [**DsSetShader**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_setshader)
+* [**DsSetSamplers**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_setsamplers)
+* [**DsSetConstantBuffers**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_setconstantbuffers)
+* [**DsSetShaderWithIfaces**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11ddi_setshader_with_ifaces)
 
-[*CreateDomainShader*](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11ddi_createdomainshader)
-
-[**DestroyShader**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_destroyshader)
-
-[**DsSetShaderResources**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_setshaderresources)
-
-[**DsSetShader**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_setshader)
-
-[**DsSetSamplers**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_setsamplers)
-
-[**DsSetConstantBuffers**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_setconstantbuffers)
-
-[**DsSetShaderWithIfaces**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11ddi_setshader_with_ifaces)
-
-### <span id="compute_shader"></span><span id="COMPUTE_SHADER"></span>Compute Shader
+## Compute Shader
 
 The compute shader allows the GPU to be viewed as a generic grid of data-parallel processors, without any graphics impediments from the draw pipeline. The compute shader has explicit access to fast shared memory to facilitate communication between groups of shader invocations. The compute shader also has the ability to perform scattered reads and writes to memory. The availablility of atomic operations enables unique access to shared memory addresses. The compute shader is not part of the draw pipeline. The compute shader exists on its own. However, the compute shader exists on the same device as all the other shader stages. The Direct3D runtime calls the driver's *DispatchXxx* functions rather than the driver's *DrawXxx* functions to invoke the compute shader.
 
 The Direct3D runtime calls the following driver functions to create, set up, and destroy the compute shader:
 
-[*CreateComputeShader*](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11ddi_createcomputeshader)
+* [*CreateComputeShader*](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11ddi_createcomputeshader)
+* [**DestroyShader**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_destroyshader)
+* [**CsSetShaderResources**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_setshaderresources)
+* [**CsSetShader**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_setshader)
+* [**CsSetSamplers**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_setsamplers)
+* [**CsSetConstantBuffers**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_setconstantbuffers)
+* [**CsSetShaderWithIfaces**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11ddi_setshader_with_ifaces)
+* [**CsSetUnorderedAccessViews**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11ddi_setunorderedaccessviews)
+* [**Dispatch**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11ddi_dispatch)
+* [**DispatchIndirect**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11ddi_dispatchindirect)
 
-[**DestroyShader**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_destroyshader)
-
-[**CsSetShaderResources**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_setshaderresources)
-
-[**CsSetShader**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_setshader)
-
-[**CsSetSamplers**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_setsamplers)
-
-[**CsSetConstantBuffers**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_setconstantbuffers)
-
-[**CsSetShaderWithIfaces**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11ddi_setshader_with_ifaces)
-
-[**CsSetUnorderedAccessViews**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11ddi_setunorderedaccessviews)
-
-[**Dispatch**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11ddi_dispatch)
-
-[**DispatchIndirect**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11ddi_dispatchindirect)
-
-### <span id="unordered_access_resource_views"></span><span id="UNORDERED_ACCESS_RESOURCE_VIEWS"></span>Unordered Access Resource Views
+## Unordered Access Resource Views
 
 Unordered access resource views are read/write resources that you can bind to the compute shader or pixel shader. The binding of unordered access resource views is similar to how you can bind shader resource views, which are read-only resources, to any shader stage.
 
 The Direct3D runtime calls the following driver functions to create, set up, and destroy unordered access resource views:
 
-[**CalcPrivateUnorderedAccessViewSize**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11ddi_calcprivateunorderedaccessviewsize)
-
-[**CreateUnorderedAccessView**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11ddi_createunorderedaccessview)
-
-[**DestroyUnorderedAccessView**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11ddi_destroyunorderedaccessview)
-
-[**ClearUnorderedAccessViewFLOAT**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11ddi_clearunorderedaccessviewfloat)
-
-[**ClearUnorderedAccessViewUINT**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11ddi_clearunorderedaccessviewuint)
-
-[**CopyStructureCount**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11ddi_copystructurecount)
-
-[**SetRenderTargets(D3D11)**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11ddi_setrendertargets)
-
- 
-
+* [**CalcPrivateUnorderedAccessViewSize**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11ddi_calcprivateunorderedaccessviewsize)
+* [**CreateUnorderedAccessView**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11ddi_createunorderedaccessview)
+* [**DestroyUnorderedAccessView**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11ddi_destroyunorderedaccessview)
+* [**ClearUnorderedAccessViewFLOAT**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11ddi_clearunorderedaccessviewfloat)
+* [**ClearUnorderedAccessViewUINT**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11ddi_clearunorderedaccessviewuint)
+* [**CopyStructureCount**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11ddi_copystructurecount)
+* [**SetRenderTargets(D3D11)**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11ddi_setrendertargets)

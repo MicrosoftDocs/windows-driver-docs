@@ -43,11 +43,3 @@ In this example, the command starts the critical section process logger on two r
 tracelog -start MyTrace -um -critsec -pids 2 4806 5164 -f testtrace.etl
 ```
 
- 
-
- 
-
-
-
-
-

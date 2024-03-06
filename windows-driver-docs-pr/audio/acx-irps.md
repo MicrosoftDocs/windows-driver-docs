@@ -1,18 +1,19 @@
 ---
-title: ACX IO request packet IRPs
+title: ACX IO Request Packet IRPs
 description: This topic provides a high level summary of the ACX IO request packet IRPs.
-ms.date: 04/14/2023
+ms.date: 09/29/2023
 ms.localizationpriority: medium
 ---
 
 # ACX IO request packet IRPs
 
->[!IMPORTANT]
-> Some information relates to a prerelease product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
 This topic provides a summary of the Audio Class eXtensions (ACX) IO request packet IRPs.
 
 For general information about the ACX, see [ACX audio class extensions overview](acx-audio-class-extensions-overview.md) and [Summary of ACX Objects](acx-summary-of-objects.md). For information about ACX targets and synchronization, see [ACX targets and driver synchronization](acx-targets.md).
+
+>[!NOTE]
+> The ACX headers and libraries are not included in the  WDK 10.0.22621.2428 (released October 24, 2023), but are available in previous versions, as well as the latest (25000 series builds) Insider Preview of the WDK. For more information about preview versions of the WDK, see [Installing preview versions of the Windows Driver Kit (WDK)](../installing-preview-versions-wdk.md).
+
 
 ## IRP request dispatching
 
@@ -63,11 +64,11 @@ Next ACX (or for custom properties, the driver) performs the requested action an
 
 This diagram illustrates the typical request dispatch workflow.
 
-![diagram illustrating dispatch workflow showing and audio service, WDF, ACX and a driver](images/audio-acx-dispatch-workflow-1.png)
+:::image type="content" source="images/audio-acx-dispatch-workflow-1.png" alt-text="Diagram illustrating dispatch workflow with audio service, WDF, ACX, and a driver.":::
 
 This diagram illustrates the dispatch workflow when driver has an ACX preprocess callback defined, although in the end the request is handled by the ACX framework.
 
-![diagram illustrating dispatch workflow showing and audio service, WDF, ACX and a driver with a preprocess callback](images/audio-acx-dispatch-workflow-2.png)
+:::image type="content" source="images/audio-acx-dispatch-workflow-2.png" alt-text="Diagram illustrating dispatch workflow with audio service, WDF, ACX, and a driver having a preprocess callback.":::
 
 ### ACX circuit PnP internal interfaces
 

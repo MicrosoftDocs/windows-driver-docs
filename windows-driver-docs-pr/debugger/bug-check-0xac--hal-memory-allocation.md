@@ -14,15 +14,12 @@ api_type:
 
 # Bug Check 0xAC: HAL\_MEMORY\_ALLOCATION
 
-
 The HAL\_MEMORY\_ALLOCATION bug check has a value of 0x000000AC. This bug check indicates that the hardware abstraction layer (HAL) could not obtain sufficient memory.
 
 > [!IMPORTANT]
 > This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
-
 ## HAL\_MEMORY\_ALLOCATION Parameters
-
 
 <table>
 <colgroup>
@@ -55,20 +52,16 @@ The HAL\_MEMORY\_ALLOCATION bug check has a value of 0x000000AC. This bug check 
 </tbody>
 </table>
 
- 
-
 ## Cause
 
 The HAL could not obtain non-paged memory pool for a system critical requirement.
 
 These critical memory allocations are made early in system initialization, and the HAL\_MEMORY\_ALLOCATION bug check is not expected. This bug check probably indicates some other critical error such as pool corruption or massive consumption.
 
- 
+## Resolution
+
+The [!analyze](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
 ## See Also
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
-
-
-
-

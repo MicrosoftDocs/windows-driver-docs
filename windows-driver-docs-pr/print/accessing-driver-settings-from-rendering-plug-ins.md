@@ -1,5 +1,5 @@
 ---
-title: Access driver settings from rendering plug-ins
+title: Access Driver Settings from Rendering Plug-Ins
 description: Provides information on how to access driver settings from rendering plug-ins.
 keywords:
 - rendering plug-ins WDK print , accessing driver settings

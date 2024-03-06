@@ -73,7 +73,7 @@ This current IRQL (Parameter 3) should be zero. If it is not, the driver's cance
 
 
 ## Resolution
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
  
 
  

@@ -1,5 +1,5 @@
 ---
-title: MPIO\_ADAPTER\_INFORMATION WMI Class
+title: MPIO_ADAPTER_INFORMATION WMI Class
 description: MPIO\_ADAPTER\_INFORMATION WMI Class
 ms.date: 10/17/2018
 ---

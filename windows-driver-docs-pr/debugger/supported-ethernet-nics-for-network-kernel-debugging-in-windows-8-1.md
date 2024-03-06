@@ -393,9 +393,3 @@ For vendor ID 15B3, these device IDs are supported:
  
 
  
-
-
-
-
-
-

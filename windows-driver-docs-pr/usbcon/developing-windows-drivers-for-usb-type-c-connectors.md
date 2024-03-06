@@ -1,7 +1,7 @@
 ---
-title: Overview of developing Windows drivers for USB Type-C connectors
+title: Overview of Developing Windows Drivers for USB Type-C Connectors
 description: You need to write a driver for the connector if your USB Type-C system does not include an embedded controller, otherwise you can load the Microsoft-provided UCSI driver.
-ms.date: 01/19/2023
+ms.date: 01/12/2024
 ---
 
 # Overview of developing Windows drivers for USB Type-C connectors
@@ -37,7 +37,7 @@ To implement the solutions proposed in the preceding table, read these topics:
 
 ## Related sections
 
-- [Write a USB role-switch (URS) client driver ](./usb-dual-role-driver-stack-architecture.md)
+- [Write a USB role-switch (URS) client driver](./usb-dual-role-driver-stack-architecture.md)
 - [USB dual-role controller driver programming reference](/previous-versions/windows/hardware/drivers/mt628026(v=vs.85))
 - [Write a USB function client driver](./developing-windows-drivers-for-usb-function-controllers.md)
 - [USB function controller programming reference](/windows-hardware/drivers/ddi/usbfnbase)

@@ -14,10 +14,6 @@ ms.date: 04/20/2017
 
 # Audio Data Ranges
 
-
-## <span id="audio_data_ranges"></span><span id="AUDIO_DATA_RANGES"></span>
-
-
 Each pin on a KS filter declares which data formats it supports. The pin factory exposes this information as an array of data ranges. Unlike the format descriptors described previously, a data range describes a range of data formats. For example, the data range for a wave pin specifies the range of sample sizes, frequencies, and channels that the pin supports.
 
 When the miniport driver instantiates a pin, it configures the pin to handle a stream with a particular data format that it selects from the pin's data ranges. This work is done by the miniport driver's data-intersection handler, which selects an audio data format that is common to two pins so that they can be connected. For more information, see [Data-Intersection Handlers](data-intersection-handlers.md).

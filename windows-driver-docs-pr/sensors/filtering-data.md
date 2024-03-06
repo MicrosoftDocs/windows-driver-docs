@@ -1,5 +1,5 @@
 ---
-title: Filtering data (previous version)
+title: Filtering Data (Previous Version)
 description: In order to optimize data throughput, your sensor device must apply filter criteria to the data-update events so that they're only raised when needed.
 keywords:
 - change sensitivity
@@ -13,7 +13,7 @@ keywords:
 - sensor events
 - filtering data
 - data filtering
-ms.date: 12/01/2022
+ms.date: 01/11/2024
 ---
 
 # Filtering data (previous version)
@@ -107,9 +107,9 @@ After the driver evaluated this set of connected clients, it chose the following
 
 - E-CRI: 70 ms
 - E-CS values: (could collapse to single value using smallest threshold)
-    - X:0.005
-    - Y:0.005
-    - Z: 0.005
+  - X:0.005
+  - Y:0.005
+  - Z: 0.005
 
 Notice in this example that clients that don't have an event sink set (first and third rows) are disregarded since event filtering doesn't apply to those clients.
 

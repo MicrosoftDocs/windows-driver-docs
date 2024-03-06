@@ -1,5 +1,5 @@
 ---
-title: DEBUG\_FILTER\_XXX
+title: DEBUG_FILTER_XXX
 description: DEBUG\_FILTER\_XXX
 ms.date: 12/07/2017
 keywords: ["DEBUG_FILTER_XXX Windows Debugging"]
@@ -166,8 +166,3 @@ The following constants are used to specify the handling status of an exception 
  
 
  
-
-
-
-
-

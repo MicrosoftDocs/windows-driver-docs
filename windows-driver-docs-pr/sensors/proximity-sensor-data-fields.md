@@ -1,7 +1,7 @@
 ---
-title: Proximity sensor data fields
+title: Proximity Sensor Data Fields
 description: This topic provides information about the data fields that are specific to the proximity sensor.
-ms.date: 03/02/2023
+ms.date: 01/11/2024
 ms.topic: reference
 ---
 
@@ -15,6 +15,8 @@ The following table shows the data fields. For more information about the types 
 |---|---|---|---|
 | PKEY_SensorData_ProximityDetection | VT_BOOL | Required | An indication that an object is within proximity of the sensor. |
 | PKEY_SensorData_ProximityDistanceMillimeters | VT_UI4 | Optional | Distance to the detected object, in millimeters. |
+| PKEY_SensorData_HumanPresence_DetectionDistance_Threshold | VT_R4 | Required | The default distance detection threshold value in millimeters. Changes greater than this are reported by the sensor. |
+| PKEY_SensorData_HumanPresence_AttentionDetection | VT_BOOL | Optional | Indicates if Attention Detection is supported by the sensor.  |
 
 ## Remarks
 

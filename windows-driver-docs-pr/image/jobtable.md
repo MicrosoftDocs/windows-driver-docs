@@ -1,5 +1,5 @@
 ---
-title: JobTable element
+title: JobTable Element
 description: The required JobTable element contains current and historical information about scan jobs.
 keywords: ["JobTable element Imaging Devices"]
 topic_type:

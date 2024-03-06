@@ -109,13 +109,13 @@ The logs are stored in non-pageable memory, so they're recoverable after a syste
 **For a KMDF driver**
 
 1.  Load the RCDRKD commands by typing **.load rcdrkd.dll** in the debugger.
-2.  Use the [**!wdfkd.wdfldr**](../debugger/-wdfkd-wdfldr.md) extension to display information about the driver that are currently dynamically bound to Windows Driver Frameworks (WDF).
-3.  Use [**!rcdrkd.rcdrlogdump**](../debugger/-rcdrkd-rcdrlogdump.md) and [**!rcdrkd.rcdrcrashdump**](../debugger/-rcdrkd-rcdrcrashdump.md) to view messages that the driver provides.
-4.  Use [**!wdfkd.wdflogdump**](../debugger/-wdfkd-wdflogdump.md) or [**!wdfkd.wdfcrashdump**](../debugger/-wdfkd-wdfcrashdump.md) to see messages that the framework provides.
+2.  Use the [**!wdfkd.wdfldr**](../debuggercmds/-wdfkd-wdfldr.md) extension to display information about the driver that are currently dynamically bound to Windows Driver Frameworks (WDF).
+3.  Use [**!rcdrkd.rcdrlogdump**](../debuggercmds/-rcdrkd-rcdrlogdump.md) and [**!rcdrkd.rcdrcrashdump**](../debuggercmds/-rcdrkd-rcdrcrashdump.md) to view messages that the driver provides.
+4.  Use [**!wdfkd.wdflogdump**](../debuggercmds/-wdfkd-wdflogdump.md) or [**!wdfkd.wdfcrashdump**](../debuggercmds/-wdfkd-wdfcrashdump.md) to see messages that the framework provides.
 
 **Live debugging of a UMDF driver**
 
-1.  Use the [**!wdfkd.wdfldr**](../debugger/-wdfkd-wdfldr.md) extension to display information about the drivers that are currently dynamically bound to WDF. Find your user-mode driver. Enter the associated host process.
+1.  Use the [**!wdfkd.wdfldr**](../debuggercmds/-wdfkd-wdfldr.md) extension to display information about the drivers that are currently dynamically bound to WDF. Find your user-mode driver. Enter the associated host process.
 2.  Type **!wdfkd.wdflogdump** *&lt;YourDriverName.dll&gt; &lt;Flag&gt;* , where *&lt;Flag&gt;* is:
 
     -   0x1 – Merged framework and driver logs
@@ -127,13 +127,13 @@ The logs are stored in non-pageable memory, so they're recoverable after a syste
 **Viewing Inflight Trace Recorder logs after a UMDF driver crash**
 
 1. From WinDbg, select **File-&gt;Open Crash Dump**, and specify the minidump file you would like to debug.
-2. Type [**!wdfkd.wdfcrashdump *&lt;YourDriverName.dll&gt; &lt;process ID of driver host&gt; &lt;Option&gt;***](../debugger/-wdfkd-wdfcrashdump.md), where *&lt;Option&gt;* is:
+2. Type [**!wdfkd.wdfcrashdump *&lt;YourDriverName.dll&gt; &lt;process ID of driver host&gt; &lt;Option&gt;***](../debuggercmds/-wdfkd-wdfcrashdump.md), where *&lt;Option&gt;* is:
 
    -   0x1 – Merged framework and driver logs
    -   0x2 – Driver logs
    -   0x3 – Framework logs
 
-   If you don't specify a driver, [**!wdfcrashdump**](../debugger/-wdfkd-wdfcrashdump.md) displays information for all drivers. If you don't specify a host process, and there's only one, the extension uses the single host process. If you don't specify a host process and there's more than one, the extension lists the active host processes.
+   If you don't specify a driver, [**!wdfcrashdump**](../debuggercmds/-wdfkd-wdfcrashdump.md) displays information for all drivers. If you don't specify a host process, and there's only one, the extension uses the single host process. If you don't specify a host process and there's more than one, the extension lists the active host processes.
 
    If the log information stored in the minidump doesn't match the entered name, the minidump doesn't contain the driver's logs.
 
@@ -146,7 +146,7 @@ For more information about adding tracing messages to your driver, see [Adding W
 
 [How to Enable Debugging of a UMDF Driver](enabling-a-debugger.md)
 
-[RCDRKD Extensions](../debugger/rcdrkd-extensions.md)
+[RCDRKD Extensions](../debuggercmds/rcdrkd-extensions.md)
 
 [Using the Framework's Event Logger](using-the-framework-s-event-logger.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Pscript user interface
+title: Pscript User Interface
 description: Provides information about the Pscript user interface.
 keywords:
 - PostScript Printer Driver WDK print, user interface

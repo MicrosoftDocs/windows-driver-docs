@@ -1,5 +1,5 @@
 ---
-title: Enhanced Storage class driver
+title: Enhanced Storage Class Driver
 description: Learn more about ehstorclass.sys
 keywords:
 - Enhanced storage class driver, WDK

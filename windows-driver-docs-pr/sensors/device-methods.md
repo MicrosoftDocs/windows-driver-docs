@@ -1,21 +1,19 @@
 ---
-title: Device methods
+title: Device Methods
 description: The sensor firmware supports several helper methods that perform tasks like supporting events and managing power.
-ms.date: 04/20/2017
+ms.date: 01/11/2024
 ---
 
 # Device methods
-
 
 The sensor firmware supports several helper methods that perform tasks like supporting events and managing power.
 
 ## Device methods for intelligent sensors
 
-
 For intelligent sensors (like HID), the firmware includes support for methods that handle events and manage power. The pseudocode demonstrates these tasks using the **HIDSensorDeviceEvent** and **HIDDeviceManagePower** methods.
 
 ```cpp
-HIDSensorDeviceEvent(sensorID) // Driver issues USB/HID “SEND_INPUT” command to the sensor
+HIDSensorDeviceEvent(sensorID) // Driver issues USB/HID "SEND_INPUT" command to the sensor
 {
     // an event has occurred on the sensor device
     // this could be one of several things, not only just a data update event
@@ -78,7 +76,6 @@ HIDDeviceManagePower(powerState)
 
 ## Device methods for simple sensors
 
-
 For simple sensors (like SPB), the firmware includes support for a method that handles events. The pseudocode demonstrates this task using the **SpbSensorDeviceEvent**.
 
 ```cpp
@@ -120,11 +117,3 @@ SpbSensorDeviceEvent(sensorID)
     }
 }
 ```
-
- 
-
- 
-
-
-
-

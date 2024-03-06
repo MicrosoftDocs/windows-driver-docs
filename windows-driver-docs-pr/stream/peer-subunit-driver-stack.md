@@ -1,6 +1,6 @@
 ---
 title: Peer Subunit Driver Stack
-description: Peer subunit driver stack
+description: PThe peer driver stack consists of the drivers loaded to represent AV/C subunits that are active on the IEEE 1394 bus and that can be controlled from the computer.
 keywords:
 - peer subunit driver stacks WDK AV/C
 - driver stacks WDK AV/C
@@ -21,7 +21,7 @@ The peer driver stack consists of the drivers loaded to represent AV/C subunits 
 
 Peer subunit drivers access and control their subunits through the IOCTL\_AVC\_CLASS interface that is exported by *Avc.sys*. *Avc.sys* handles the AV/C command and response protocol, including all interaction with the IEC 61883 Function Control Protocol (FCP). However, note that a peer subunit driver is not prevented from communicating with and directly accessing certain *61883.sys* functionality when necessary. A subunit driver might need to communicate directly with *61883.sys* when the subunit driver represents an AV/C subunit that uses a stream format that Microsoft does not support. A subunit driver can use the **IOCTL\_61883\_CLASS** interface to communicate directly with *61883.sys* when necessary. Microsoft supplies the lower-filter driver, *Avcstrm.sys*, which can assist with streaming DV and MPEG2 formats. For more information about *Avcstrm.sys*, see [AV/C Streaming Overview](av-c-streaming-overview.md).
 
-A peer subunit driver can register to be notified of and receive AV/C commands from external AV/C devices. To register, a peer subunit driver issues an [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](../kernel/irp-mj-internal-device-control.md) I/O request packet (IRP) with the **IoControlCode** member of the IOCTL\_AVC\_CLASS I/O control code and the subfunction set to AVC\_FUNCTION\_GET\_REQUEST. This functionality allows a peer subunit driver to receive AV/C requests from its subunit and enables support for specifications, such as the Connection and Compatibility Management (CCM) protocol and Digital Transmission Content Protection (DTCP). For more information about DTCP, see the [Digital Transmission Licensing Administrator](https://www.dtcp.com/) website.
+A peer subunit driver can register to be notified of and receive AV/C commands from external AV/C devices. To register, a peer subunit driver issues an [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](../kernel/irp-mj-internal-device-control.md) I/O request packet (IRP) with the **IoControlCode** member of the IOCTL\_AVC\_CLASS I/O control code and the subfunction set to AVC\_FUNCTION\_GET\_REQUEST. This functionality allows a peer subunit driver to receive AV/C requests from its subunit and enables support for specifications, such as the Connection and Compatibility Management (CCM) protocol and Digital Transmission Content Protection (DTCP). For more information about DTCP, see the [Digital Transmission Licensing Administrator](https://dtcp.com/) website.
 
 Note that this functionality is intended to support a virtual AV/C subunit driver to send AV/C commands to the computer (where the subunit driver is located in the virtual AV/C device stack) and not to permit AV/C subunits on external devices to send AV/C commands to the computer system.
 

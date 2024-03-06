@@ -30,7 +30,7 @@ An NDIS miniport driver must supply a [*MiniportHaltEx*](/windows-hardware/drive
 
 The following diagram illustrates unloading a miniport driver.
 
-![diagram illustrating unloading a miniport driver.](images/207-11.png)
+:::image type="content" source="images/207-11.png" alt-text="Diagram illustrating the process of unloading a miniport driver.":::
 
 *MiniportHaltEx* should complete the operations that are necessary to unload the driver before returning. If the miniport driver has any outstanding receive indications (that is, received network data that it has indicated up to NDIS but which NDIS has not yet returned), *MiniportHaltEx* must not return until such data is returned to the miniport driver's [*MiniportReturnNetBufferLists*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_return_net_buffer_lists) function.
 

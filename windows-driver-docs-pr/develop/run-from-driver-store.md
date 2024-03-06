@@ -113,7 +113,7 @@ By default, a driver package can't be removed from the system if it's still inst
 
 ### Testing private binaries
 
-When developing a driver package, if there's a need to replace a particular executable file from the driver package with a private version instead of fully rebuilding and replacing the driver package on the system, then it's recommended that a kernel debugger is used along with the [**.kdfiles**](../debugger/-kdfiles--set-driver-replacement-map-.md) command.  Since the full path to the file in the Driver Store shouldn't be hardcoded, it's recommended that in the .kdfiles mapping, the *OldDriver* file name is just the direct name of the file with no preceding path information.  To facilitate this (and other scenarios), names of files in driver packages should be as unique as possible so it doesn't match the name of a file from an unrelated driver package on the system.
+When developing a driver package, if there's a need to replace a particular executable file from the driver package with a private version instead of fully rebuilding and replacing the driver package on the system, then it's recommended that a kernel debugger is used along with the [**.kdfiles**](../debuggercmds/-kdfiles--set-driver-replacement-map-.md) command.  Since the full path to the file in the Driver Store shouldn't be hardcoded, it's recommended that in the .kdfiles mapping, the *OldDriver* file name is just the direct name of the file with no preceding path information.  To facilitate this (and other scenarios), names of files in driver packages should be as unique as possible so it doesn't match the name of a file from an unrelated driver package on the system.
 
 ## Porting an INF to use run from Driver Store
 

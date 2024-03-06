@@ -1,5 +1,5 @@
 ---
-title: How to use the Bluetooth Driver Stack
+title: How to Use the Bluetooth Driver Stack
 description: How to use the Bluetooth Driver Stack
 keywords:
 - Bluetooth WDK , driver stack
@@ -19,7 +19,7 @@ keywords:
 - IOCTLs WDK Bluetooth
 - remote connections WDK Bluetooth
 - connections WDK Bluetooth
-ms.date: 10/07/2022
+ms.date: 01/10/2024
 ---
 
 # How to use the Bluetooth Driver Stack

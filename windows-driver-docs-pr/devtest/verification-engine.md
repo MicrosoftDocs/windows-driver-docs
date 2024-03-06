@@ -23,11 +23,3 @@ The verification engine takes the following input:
 
 -   Static Driver Verifier [operating system model](operating-system-model.md)
 
- 
-
- 
-
-
-
-
-

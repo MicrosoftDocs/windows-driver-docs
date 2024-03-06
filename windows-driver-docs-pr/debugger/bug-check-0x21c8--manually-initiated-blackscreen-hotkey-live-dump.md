@@ -52,7 +52,7 @@ The MANUALLY\_INITIATED\_BLACKSCREEN\_HOTKEY\_LIVE\_DUMP live dump has a value o
 </table>
 
 ## Resolution
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
  
 
 ## See also

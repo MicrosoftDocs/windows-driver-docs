@@ -58,13 +58,13 @@ The GUIDs for the available compressed audio formats are listed in the following
 </tr>
 <tr class="odd">
 <td align="left"><p>0x04</p></td>
-<td align="left"><p>00000004-0cea-0010-8000-00aa00389b71</p>
+<td align="left"><p>00000005-0cea-0010-8000-00aa00389b71</p>
 <p>KSDATAFORMAT_SUBTYPE_IEC61937_MPEG3</p></td>
 <td align="left"><p>MPEG-3 (Layer 3)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x05</p></td>
-<td align="left"><p>00000005-0cea-0010-8000-00aa00389b71</p>
+<td align="left"><p>00000004-0cea-0010-8000-00aa00389b71</p>
 <p>KSDATAFORMAT_SUBTYPE_IEC61937_MPEG2</p></td>
 <td align="left"><p>MPEG-2 (Multichanel)</p></td>
 </tr>

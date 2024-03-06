@@ -1,5 +1,5 @@
 ---
-title: Communicating with SDP Servers Overview
+title: Communicating With SDP Servers Overview
 description: Communicating with SDP Servers Overview
 keywords:
 - Bluetooth WDK , SDP server communication
@@ -11,11 +11,10 @@ keywords:
 - services browsing WDK Bluetooth
 - advertising services WDK Bluetooth
 - services advertising WDK Bluetooth
-ms.date: 04/20/2017
+ms.date: 01/10/2024
 ---
 
 # Communicating with SDP Servers Overview
-
 
 The Bluetooth driver stack supports the Service Discovery Protocol (SDP). This protocol allows profile drivers to search or browse for services that are offered by Bluetooth devices that are in range of the local radio. SDP uses the Logical Link Control and Adaptation Protocol (L2CAP) as its transport protocol and follows a client-server model.
 
@@ -26,6 +25,3 @@ After a L2CAP server profile driver registers itself to accept incoming L2CAP co
 After the profile driver has advertised its services, other Bluetooth devices can search or browse for these services. For more information about SDP services, see [Accessing SDP Service Information](accessing-sdp-service-information.md).
 
 To stop advertising services with SDP, a profile driver uses [**IOCTL\_BTH\_SDP\_REMOVE\_RECORD**](/windows-hardware/drivers/ddi/bthioctl/ni-bthioctl-ioctl_bth_sdp_remove_record).
-
- 
-

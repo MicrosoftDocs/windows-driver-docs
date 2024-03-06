@@ -48,8 +48,3 @@ To determine whether a full or standard page heap verification is enabled for a 
  
 
  
-
-
-
-
-

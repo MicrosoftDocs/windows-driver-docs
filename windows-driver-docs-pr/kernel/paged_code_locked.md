@@ -1,5 +1,5 @@
 ---
-title: PAGED_CODE_LOCKED macro
+title: PAGED_CODE_LOCKED Macro
 description: PAGED_CODE_LOCKED macro
 ms.date: 10/17/2018
 ms.topic: reference

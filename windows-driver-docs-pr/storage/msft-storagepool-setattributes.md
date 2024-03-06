@@ -1,5 +1,5 @@
 ---
-title: SetAttributes method of the MSFT\_StoragePool class
+title: SetAttributes Method of the MSFT_StoragePool Class
 description: Sets or changes attribute values for the storage pool object.
 ms.assetid: 01D081C7-349A-4344-AF11-123872887AE4
 keywords:

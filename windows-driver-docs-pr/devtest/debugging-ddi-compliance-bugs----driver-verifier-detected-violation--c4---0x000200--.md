@@ -21,7 +21,7 @@ The DDI Compliance rules ensure that a driver correctly interacts with the Windo
 
 ### Use !analyze to display information about the bug check
 
-As with any bug check that occurs, once you have control of the debugger, the best first step is to run the [**!analyze -v**](../debugger/-analyze.md) command.
+As with any bug check that occurs, once you have control of the debugger, the best first step is to run the [**!analyze -v**](../debuggercmds/-analyze.md) command.
 
 ```
 *******************************************************************************
@@ -52,11 +52,11 @@ DV_MSDN_LINK: https://go.microsoft.com/fwlink/p/?linkid=216021
 DV_RULE_INFO: 0x20004
 ```
 
-Whenever [Driver Verifier](driver-verifier.md) catches a [DDI compliance checking](ddi-compliance-checking.md) violation, information about the violation will be provided in the [**!analyze**](../debugger/-analyze.md) output.
+Whenever [Driver Verifier](driver-verifier.md) catches a [DDI compliance checking](ddi-compliance-checking.md) violation, information about the violation will be provided in the [**!analyze**](../debuggercmds/-analyze.md) output.
 
 In this example, [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md) has a parameter 1 (Arg1) value of 0x20004, which indicates that the driver has violated the [**IrqlExAllocatePool**](./wdm-irqlexallocatepool.md) compliance rule.
 
-The [**!analyze**](../debugger/-analyze.md) output includes the following information:
+The [**!analyze**](../debuggercmds/-analyze.md) output includes the following information:
 
 **DV\_VIOLATED\_CONDITION:** This field provides a description of what caused the rule violation. In this example, the condition violated was that a driver attempted to allocate memory at a very high IRQL level, or attempted to allocated paged pool memory at DISPATCH\_LEVEL. For example, this may have been a driver that was attempting to call [**ExAllocatePoolWithTagPriority**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtagpriority) in an Interrupt Service Routine (ISR), or a driver that attempted to allocate paged pool memory while holding a spin lock.
 

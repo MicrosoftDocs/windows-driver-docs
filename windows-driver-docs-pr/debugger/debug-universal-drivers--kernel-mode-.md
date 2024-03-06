@@ -65,7 +65,7 @@ This lab uses two computers. WinDbg runs on the *host* system and the Sysvad dri
 
  Use a network hub/router and network cables to connect the two PCs.
 
-![two pcs connected with a double arrow.](images/debuglab-image-targethostdrawing1.png)
+:::image type="content" source="images/debuglab-image-targethostdrawing1.png" alt-text="Diagram showing two PCs connected via a network hub/router.":::
 
 To work with kernel-mode applications and use WinDbg, we recommend that you use the KDNET over Ethernet transport. For information about how to use the Ethernet transport protocol, see [Getting Started with WinDbg (Kernel-Mode)](getting-started-with-windbg--kernel-mode-.md). For more information about setting up the target computer, see [Preparing a Computer for Manual Driver Deployment](../develop/preparing-a-computer-for-manual-driver-deployment.md) and [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md).
 
@@ -173,7 +173,7 @@ Copy the auto generated unique key into a text file, to avoid having to type it 
 
 If you receive a pop-up message from the firewall, and you wish to use the debugger, check **all three** of the boxes.
 
-![windows security alert - windows firewall has blocked some features of this app.](images/debuglab-image-firewall-dialog-box.png)
+:::image type="content" source="images/debuglab-image-firewall-dialog-box.png" alt-text="Screenshot of Windows Security Alert indicating that Windows Firewall has blocked some features of an app.":::
  
 
 **&lt;- On the host system**
@@ -198,7 +198,7 @@ Reboot the target system.
 
 In a minute or two, debug output should be displayed on the host system.
 
-![windows debugger showing command window output from a live kernel connection.](images/debuglab-image-winddbg-hh.png)
+:::image type="content" source="images/debuglab-image-winddbg-hh.png" alt-text="Screenshot of Windows Debugger displaying command window output from a live kernel connection.":::
 
 The Debugger Command window is the primary debugging information window in WinDbg. You can enter debugger commands and view the command output in this window.
 
@@ -236,11 +236,11 @@ You can access reference command help using the **.hh** command.
 
 The Debugger help file will display help for the **.prefer\_dml** command.
 
-![debugger help application showing help for the .prefer\-dml command.](images/debuglab-image-prefer-dml-help.png)
+:::image type="content" source="images/debuglab-image-prefer-dml-help.png" alt-text="Screenshot of Debugger Help application displaying help for the .prefer-dml command.":::
 
 **Display the version of Windows on the target system**
 
-5. Display detailed version information on the target system by typing the [**vertarget (Show Target Computer Version)**](vertarget--show-target-computer-version-.md) command in the WinDbg window.
+5. Display detailed version information on the target system by typing the [**vertarget (Show Target Computer Version)**](../debuggercmds/vertarget--show-target-computer-version-.md) command in the WinDbg window.
 
 ```dbgcmd
 0: kd> vertarget
@@ -255,7 +255,7 @@ System Uptime: 0 days 01:31:58.931
 
 **List the loaded modules**
 
-6. You can verify that you are working with the right kernel-mode process by displaying the loaded modules by typing the [**lm (List Loaded Modules)**](lm--list-loaded-modules-.md) command in the WinDbg window.
+6. You can verify that you are working with the right kernel-mode process by displaying the loaded modules by typing the [**lm (List Loaded Modules)**](../debuggercmds/lm--list-loaded-modules-.md) command in the WinDbg window.
 
 ```dbgcmd
 0: Kd> lm
@@ -294,7 +294,7 @@ To download and build the Sysvad sample audio driver, perform the following step
 
     [https://github.com/Microsoft/Windows-driver-samples/tree/main/audio/sysvad](https://github.com/Microsoft/Windows-driver-samples/tree/main/audio/sysvad)
 
-    ![github repo showing general folder and download zip button.](images/sysvad-lab-github.png)
+    :::image type="content" source="images/sysvad-lab-github.png" alt-text="Screenshot of GitHub repository displaying the general folder and Download ZIP button.":::
 
     This lab, shows how to download the universal driver samples in one zip file.
 
@@ -314,7 +314,7 @@ To download and build the Sysvad sample audio driver, perform the following step
 
     In Visual Studio locate the Solution Explorer. (If this is not already open, choose **Solution Explorer** from the **View** menu.) In Solution Explorer, you can see one solution that has a number of projects. 
         
-    ![visual studio with the adapter.cpp file loaded from the sysvad project.](images/sysvad-lab-visual-studio-solution.png)
+    :::image type="content" source="images/sysvad-lab-visual-studio-solution.png" alt-text="Screenshot of Visual Studio with the adapter.cpp file loaded from the Sysvad project.":::
 
 3.  **Set the sample's configuration and platform**
 
@@ -408,7 +408,7 @@ To install the driver on the target system, perform the following steps.
 
     A dialog box will appear indicating that the test driver is an unsigned driver. Select **Install this driver anyway** to proceed.
 
-    ![windows security warning - windows can't verify the publisher.](images/debuglab-image-install-security-warning.png)
+    :::image type="content" source="images/debuglab-image-install-security-warning.png" alt-text="Screenshot of Windows Security Warning stating that Windows can't verify the publisher.":::
 
     >[!TIP]
     > If you have any issues with the installation, check the following file for more information.
@@ -430,7 +430,7 @@ To install the driver on the target system, perform the following steps.
 
     Confirm in Device Manager that audio hardware driver, displays the a down arrow, indicating that it is disabled.
 
-    ![device manager tree with the virtual audio device tablet sample highlighted.](images/sysvad-lab-audio-device-manager.png)
+    :::image type="content" source="images/sysvad-lab-audio-device-manager.png" alt-text="Screenshot of Device Manager tree with the Virtual Audio Device Tablet Sample highlighted.":::
 
     After successfully installing the sample driver, you're now ready to test it.
 
@@ -526,7 +526,7 @@ set ENABLE_OPTIMIZER=0
     ...  
     ```
 
-    For more information, see [**lm**](lm--list-loaded-modules-.md).
+    For more information, see [**lm**](../debuggercmds/lm--list-loaded-modules-.md).
 
 2.  Select the **Browse all global symbols** link in the debug output to display information about items symbols that start with the letter a.
 3.  Because DML is enabled, some elements of the output are hot links that you can select. Select the *data* link in the debug output to display information about items symbols that start with the letter a.
@@ -538,7 +538,7 @@ set ENABLE_OPTIMIZER=0
     fffff806`9adb1000 tabletaudiosample!AddDevice (struct _DRIVER_OBJECT *, struct _DEVICE_OBJECT *)
     ```
 
-    For information, see [**x (Examine Symbols)**](x--examine-symbols-.md).
+    For information, see [**x (Examine Symbols)**](../debuggercmds/x--examine-symbols-.md).
 
 4.  The **!lmi** extension displays detailed information about a module. Type **!lmi tabletaudiosample**. Your output should be similar to the text shown below.
 
@@ -592,7 +592,7 @@ set ENABLE_OPTIMIZER=0
 
 Information about the device driver in the Plug and Play device tree can be useful for troubleshooting. For example, if a device driver is not resident in the device tree, there may an issue with the installation of the device driver.
 
-For more information about the device node debug extension, see [**!devnode**](-devnode.md).
+For more information about the device node debug extension, see [**!devnode**](../debuggercmds/-devnode.md).
 
 **&lt;-On the host system**
 
@@ -616,7 +616,7 @@ For more information about the device node debug extension, see [**!devnode**](-
 
 2. Use Ctrl+F to search in the output that is generated to look for the name of the device driver, *sysvad*.
 
-   ![find dialog box showing the term sysvad being searched for.](images/sysvad-lab-audio-find-dialog.png)
+   :::image type="content" source="images/sysvad-lab-audio-find-dialog.png" alt-text="Find dialog box with the term 'sysvad' entered in the search field.":::
 
    A device node entry with a name of `sysvad_TabletAudioSample` will be present in the !devnode output for Syvad.
 
@@ -747,7 +747,7 @@ The output shows that we have a farily simple device driver stack. The sysvad\_T
 
 This diagram shows a more complex device node tree.
 
-![device node tree with about 20 nodes.](images/debuglab-image-device-node-tree.png)
+:::image type="content" source="images/debuglab-image-device-node-tree.png" alt-text="Diagram of a device node tree consisting of approximately 20 nodes.":::
 
 **Note**  For more information about more complex driver stacks, see [Driver stacks](../gettingstarted/driver-stacks.md) and [Device nodes and device stacks](../gettingstarted/device-nodes-and-device-stacks.md).
 
@@ -1207,7 +1207,7 @@ It can be useful to examine variables as the code executes to confirm that the c
 
 8.  **Use DML to Display Variables**
 
-    To use DML to explore variables, select the underlined elements. The select action builds a [**dx (Display NatVis Expression)**](dx--display-visualizer-variables-.md) command that allows you to drill down on nested data structures.
+    To use DML to explore variables, select the underlined elements. The select action builds a [**dx (Display NatVis Expression)**](../debuggercmds/dx--display-visualizer-variables-.md) command that allows you to drill down on nested data structures.
 
     ```dbgcmd
     0: kd> dx -r1 (*((tabletaudiosample!CMiniportWaveRT *)0xffffe001d10b8380))
@@ -1283,7 +1283,7 @@ It can be useful to examine variables as the code executes to confirm that the c
 
     Use the **View**&gt; **Locals** menu item to display local variables. This interface also provides this ability to drill down on more complex data structures.
 
-    ![windbg showing sample code locals and command windows.](images/sysvad-lab-display-variables.png)
+    :::image type="content" source="images/sysvad-lab-display-variables.png" alt-text="WinDbg interface displaying sample code locals and command windows.":::
 
 13. Use p or F10 to step forward about 10 lines in the code until you are highlighting the ntStatus = IsFormatSupported(Pin, Capture, DataFormat); line of code.
 
@@ -1377,7 +1377,7 @@ To display the call stack, use the k\* commands:
 
 If you want to keep the call stack available, you can select **View**&gt; **Call stack** to view it. Select the columns at the top of the window to toggle the display of additional information.
 
-![windbg call stack window.](images/sysvad-lab-call-stack.png)
+:::image type="content" source="images/sysvad-lab-call-stack.png" alt-text="WinDbg interface displaying the call stack window.":::
 
 This output shows the call stack while debugging the sample adapter code in a break state.
 
@@ -1404,7 +1404,7 @@ This output shows the call stack while debugging the sample adapter code in a br
 11 00000000`00000000 : 00000000`00000000 00000000`00000000 00000000`00000080 00000000`00000000 : 0x12e
 ```
 
-You can use DML to further explore the code. When you select the first 00 entry, the [**.frame (Set Local Context)**](-frame--set-local-context-.md) command is used to set the context and then, the [**dv (Display Local Variables)**](dv--display-local-variables-.md) command displays the local variables.
+You can use DML to further explore the code. When you select the first 00 entry, the [**.frame (Set Local Context)**](../debuggercmds/-frame--set-local-context-.md) command is used to set the context and then, the [**dv (Display Local Variables)**](../debuggercmds/dv--display-local-variables-.md) command displays the local variables.
 
 ```dbgcmd
 0: kd> .frame 0n0;dv /t /v
@@ -1431,7 +1431,7 @@ To change the current process context, use the .process &lt;process&gt; command.
 
 -   Use the `!process` command to display the current process that is involved in playing the sound.
 
-    For more information see [**!process**](-process.md)
+    For more information see [**!process**](../debuggercmds/-process.md)
 
 The output shows that the process is associated with audiodg.exe. If you are still at the breakpoint described in the previous section of this topic, the current process should be associated with the audiodg.exe image.
 
@@ -1612,7 +1612,7 @@ Because this code is not active, all of the threads are in WAIT state, as expect
 
 **Threads**
 
-The commands to view and set threads are very similar to those of processes. Use the [**!thread**](-thread.md) command to view threads. Use [**.thread**](-thread--set-register-context-.md) to set the current threads.
+The commands to view and set threads are very similar to those of processes. Use the [**!thread**](../debuggercmds/-thread.md) command to view threads. Use [**.thread**](../debuggercmds/-thread--set-register-context-.md) to set the current threads.
 
 To explore threads associated with the media player, play the media clip again. If the breakpoint described in the previous section is still in place, you will stop in the context of audiodg.exe.
 
@@ -1623,7 +1623,7 @@ Use the !thread -1 0 to display brief information for the current thread. This s
 THREAD ffffe001d3a27040  Cid 10f0.17f4  Teb: 000000ee6cf9d000 Win32Thread: 0000000000000000 RUNNING on processor 0
 ```
 
-To view more information about the thread that is running, type [**!thread**](-thread.md). Information similar to the following should be displayed.
+To view more information about the thread that is running, type [**!thread**](../debuggercmds/-thread.md). Information similar to the following should be displayed.
 
 ```dbgcmd
 0: kd> !thread
@@ -1750,7 +1750,7 @@ For more information about threads and processes, see the following references:
 
 **&lt;- On the host system**
 
-The interrupt request level (IRQL) is used to manage the priority of interrupt servicing. Each processor has an IRQL setting that threads can raise or lower. Interrupts that occur at or below the processor's IRQL setting are masked and will not interfere with the current operation. Interrupts that occur above the processor's IRQL setting take precedence over the current operation. The [**!irql**](-irql.md) extension displays the interrupt request level (IRQL) on the current processor of the target computer before the debugger break occurred. When the target computer breaks into the debugger, the IRQL changes, but the IRQL that was effective just before the debugger break is saved and is displayed by !irql.
+The interrupt request level (IRQL) is used to manage the priority of interrupt servicing. Each processor has an IRQL setting that threads can raise or lower. Interrupts that occur at or below the processor's IRQL setting are masked and will not interfere with the current operation. Interrupts that occur above the processor's IRQL setting take precedence over the current operation. The [**!irql**](../debuggercmds/-irql.md) extension displays the interrupt request level (IRQL) on the current processor of the target computer before the debugger break occurred. When the target computer breaks into the debugger, the IRQL changes, but the IRQL that was effective just before the debugger break is saved and is displayed by !irql.
 
 ```dbgcmd
 0: kd> !irql
@@ -1761,7 +1761,7 @@ Debugger saved IRQL for processor 0x0 -- 2 (DISPATCH_LEVEL)
 
 **View the registers**
 
-Display the contents of the registers for the current thread on the current processor by using the [**r (Registers)**](r--registers-.md) command.
+Display the contents of the registers for the current thread on the current processor by using the [**r (Registers)**](../debuggercmds/r--registers-.md) command.
 
 ```dbgcmd
 0: kd> r
@@ -1779,9 +1779,9 @@ fffff803`bb757020 cc              int     3
 
 Alternatively, you can display the contents of the registers by selecting **View** &gt; **Registers**.
 
-![windbg registers window showing about 12 registers.](images/sysvad-lab-audio-display-registers.png)
+:::image type="content" source="images/sysvad-lab-audio-display-registers.png" alt-text="Screenshot of WinDbg registers window displaying approximately 12 registers.":::
 
-Viewing the contents of the registers can be helpful when stepping through assembly language code execution and in other scenarios. For more information see [**r (Registers)**](r--registers-.md).
+Viewing the contents of the registers can be helpful when stepping through assembly language code execution and in other scenarios. For more information see [**r (Registers)**](../debuggercmds/r--registers-.md).
 
 For information about contents of the register, see [x86 Architecture](x86-architecture.md) and [x64 Architecture](x64-architecture.md).
 
@@ -1789,7 +1789,7 @@ For information about contents of the register, see [x86 Architecture](x86-archi
 
 You can disassemble the code that is under execution to view the assembly language code that is being run by selecting **View** &gt; **Disassembly**.
 
-![windbg disassembly window.](images/sysvad-lab-audio-disassembly-window.png)
+:::image type="content" source="images/sysvad-lab-audio-disassembly-window.png" alt-text="Screenshot of WinDbg disassembly window showing assembly language code.":::
 
 For more information about assembly language disassembly, see [Annotated x86 Disassembly](annotated-x86-disassembly.md) and [Annotated x64 Disassembly](annotated-x64-disassembly.md).
 
@@ -1836,7 +1836,7 @@ If you attempt to display an invalid address, its contents are shown as question
 
 Alternatively, you can view the memory by selecting **View** &gt; **Memory**. Use the **Display format** pull down to change how the memory is displayed.
 
-![windbg view memory window.](images/sysvad-lab-audio-memory-display.png)
+:::image type="content" source="images/sysvad-lab-audio-memory-display.png" alt-text="Screenshot of WinDbg view memory window with various display format options.":::
 
 1.  To view data associated with the volume control, set a breakpoint to fire on the PropertyHandlerAudioEngineVolumeLevel routine using the bm command. Before we set the new breakpoint, we will clear all of the previous breakpoints using bc \*.
 
@@ -1899,7 +1899,7 @@ Alternatively, you can view the memory by selecting **View** &gt; **Memory**. Us
     }
     ```
 
-8.  Attempt to display the value at the memory location of IVolume by using the [**dt (Display Type)**](dt--display-type-.md) command.
+8.  Attempt to display the value at the memory location of IVolume by using the [**dt (Display Type)**](../debuggercmds/dt--display-type-.md) command.
 
     ```dbgcmd
     kd> dt dt lVolume
@@ -1915,7 +1915,7 @@ Alternatively, you can view the memory by selecting **View** &gt; **Memory**. Us
         return ntStatus;
     ```
 
-10. Display the value at the memory location of IVolume by using the [**dt (Display Type)**](dt--display-type-.md) command.
+10. Display the value at the memory location of IVolume by using the [**dt (Display Type)**](../debuggercmds/dt--display-type-.md) command.
 
     ```dbgcmd
     kd> dt lVolume
@@ -1925,7 +1925,7 @@ Alternatively, you can view the memory by selecting **View** &gt; **Memory**. Us
 
     Now that the variable is active, a value of 6291456 is displayed in this example.
 
-11. You can also display the memory location of IVolume by using the [**? (Evaluate Expression)**](---evaluate-expression-.md) command.
+11. You can also display the memory location of IVolume by using the [**? (Evaluate Expression)**](../debuggercmds/---evaluate-expression-.md) command.
 
     ```dbgcmd
     kd> ? lVolume

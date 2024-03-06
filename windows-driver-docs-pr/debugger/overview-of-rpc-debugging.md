@@ -28,8 +28,3 @@ If you want to explore the mechanics of how this information is stored, or if yo
  
 
  
-
-
-
-
-

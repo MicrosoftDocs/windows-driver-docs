@@ -81,7 +81,7 @@ An attempt to access an invalid stack occurred. As a kernel stack is limited in 
 
 Using a full kernel dump or an attached debugger, the following commands may be useful to gather information and track down the code that is incorrectly accessing memory.
 
-First use the [!analyze](-analyze.md) command to gather information, in particular the bug check parameters. Also examine the faulting source line and module name, if available.
+First use the [!analyze](../debuggercmds/-analyze.md) command to gather information, in particular the bug check parameters. Also examine the faulting source line and module name, if available.
 
 ```dbgcmd
 Arguments:
@@ -91,7 +91,7 @@ Arg3: ffffe301c8db2900
 Arg4: ffffdc0e9ee665d8
 ```
 
-Use the provided [.trap](-trap.md) command link in the !analyze output to set the context to the trap frame.
+Use the provided [.trap](../debuggercmds/-trap.md) command link in the !analyze output to set the context to the trap frame.
 
 ```dbgcmd
 2: kd> .trap 0xffffdc0e9ee66680
@@ -108,7 +108,7 @@ dxgmms2!RemoveHeadList+0xd [inlined in dxgmms2!VidSchiSignalRegisteredSyncObject
 fffff800`2b7f8933 48395808        cmp     qword ptr [rax+8],rbx ds:003f8b81`3f20b6e8=????????????????
 ```
 
-Use the [!vm](-vm.md) command to examine memory usage, for example of to see how much of the Kernel Stacks memory is in use.
+Use the [!vm](../debuggercmds/-vm.md) command to examine memory usage, for example of to see how much of the Kernel Stacks memory is in use.
 
 ```dbgcmd
 0: kd> !vm
@@ -124,7 +124,7 @@ Kernel Stacks:              13686 (      54744 Kb)
 
 This amount of memory used is less then available in this example.
 
-Use the [!thread](-thread.md) command to gather information on what is running. In this example it looks like a video scheduler worker thread is running. 
+Use the [!thread](../debuggercmds/-thread.md) command to gather information on what is running. In this example it looks like a video scheduler worker thread is running. 
 
 ```dbgcmd
 2: kd> !thread
@@ -144,7 +144,7 @@ Priority 8 BasePriority 8 PriorityDecrement 0 IoPriority 2 PagePriority 5
 ...
 ```
 
-Then use [kb (Display Stack Backtrace)](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) with the f option to display the stack and the memory usage to see if there is a large memory user. 
+Then use [kb (Display Stack Backtrace)](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) with the f option to display the stack and the memory usage to see if there is a large memory user. 
 
 ```dbgcmd
 2: kd> kf
@@ -153,7 +153,7 @@ Then use [kb (Display Stack Backtrace)](k--kb--kc--kd--kp--kp--kv--display-stack
 ...
 ```
 
-If a specific part of the code looks suspicious, use the [u, ub, uu (Unassemble)](u--unassemble-.md) command to examine the associated assemble language code.
+If a specific part of the code looks suspicious, use the [u, ub, uu (Unassemble)](../debuggercmds/u--unassemble-.md) command to examine the associated assemble language code.
 
 ```dbgcmd
 2: kd> u ffffdc0e`9ee66850 l10
@@ -176,7 +176,7 @@ ffffdc0e`9ee66871 301c51          xor     byte ptr [rcx+rdx*2],bl
 
 ```
 
-Use the [.cxr (Display Context Record)](-cxr.md) command to display the context record, using the parameter 3 value provided by !analyze.
+Use the [.cxr (Display Context Record)](../debuggercmds/-cxr.md) command to display the context record, using the parameter 3 value provided by !analyze.
 
 ```dbgcmd
 2: kd> .cxr ffffe301c8db2900
@@ -192,7 +192,7 @@ dxgmms2!RemoveHeadList+0xd [inlined in dxgmms2!VidSchiSignalRegisteredSyncObject
 fffff800`2b7f8933 48395808        cmp     qword ptr [rax+8],rbx ds:002b:003f8b81`3f20b6e8=????????????????
 ```
 
-Use the [.exr (Display Exception Record)](-exr--display-exception-record-.md) command to display the exception record, using the parameter 4 value provided by !analyze.
+Use the [.exr (Display Exception Record)](../debuggercmds/-exr--display-exception-record-.md) command to display the exception record, using the parameter 4 value provided by !analyze.
 
 ```dbgcmd
 2: kd> .exr ffffdc0e9ee665d8

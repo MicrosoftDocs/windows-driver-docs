@@ -1,7 +1,7 @@
 ---
-title: Overview of Microsoft USB Test Tool (MUTT) devices
+title: Overview of Microsoft USB Test Tool (MUTT) Devices
 description: The Microsoft USB Test Tool (MUTT) is collection of devices for testing interoperability of your USB hardware with the Microsoft USB driver stack.
-ms.date: 02/28/2023
+ms.date: 01/17/2024
 ---
 
 # Overview of Microsoft USB Test Tool (MUTT) devices

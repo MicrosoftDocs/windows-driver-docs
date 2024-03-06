@@ -20,7 +20,7 @@ A Wi-Fi access point (AP) is networking hardware that allows other Wi-Fi enabled
 | **Measurement criteria** | Device / AP pair aggregation |
 | **Minimum instances** | 1,000 |
 | **Passing criteria** | <= 6% of Instances have connection failures to APs |
-| **Measure ID** | 32321149 (Legacy), 40722983 |
+| **Measure ID** | 40722983 |
 
 ## Calculation
 

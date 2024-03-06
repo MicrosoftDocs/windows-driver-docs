@@ -1,7 +1,7 @@
 ---
-title: How to implement function suspend in a composite driver
+title: How to Implement Function Suspend in a Composite Driver
 description: This article provides an overview of function suspend and function remote wake-up features for Universal Serial Bus (USB) 3.0 multi-function devices (composite devices).
-ms.date: 01/20/2023
+ms.date: 01/16/2024
 ---
 
 # How to implement function suspend in a composite driver
@@ -28,9 +28,7 @@ A composite driver creates a physical device object (PDO) for each function in t
 
 In Windows 8, the USB driver stack for USB 3.0 devices supports those features. In addition, function suspend and function remote wake-up implementation has been added to the Microsoft-provided [USB generic parent driver](usb-common-class-generic-parent-driver.md) (Usbccgp.sys), which is the Windows default composite driver. If you're writing a custom composite driver, your driver must handle requests related to function suspend and remote wake-up requests, as per the following procedure.
 
-## Instructions
-
-### Step 1: Determine whether the USB driver stack supports function suspend
+## Step 1: Determine whether the USB driver stack supports function suspend
 
 In the start-device routine (**[IRP_MN_START_DEVICE](../kernel/irp-mn-start-device.md)**) of your composite driver, perform the following steps:
 
@@ -44,7 +42,7 @@ In the start-device routine (**[IRP_MN_START_DEVICE](../kernel/irp-mn-start-devi
 
 For code example that shows how to determine whether the USB driver stack supports function suspend, see **[USBD_QueryUsbCapability](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_queryusbcapability)**.
 
-### Step 2: Handle the idle IRP
+## Step 2: Handle the idle IRP
 
 The client driver can send an idle IRP (see **[IOCTL_INTERNAL_USB_SUBMIT_IDLE_NOTIFICATION](/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_internal_usb_submit_idle_notification)**). The request is sent after the client driver has detected an idle state for the function. The IRP contains a pointer to callback completion routine (called *idle callback*) that is implemented by the client driver. Within the idle callback, the client performs tasks, such as canceling pending I/O transfers, just before sending the function to suspend state.
 
@@ -53,7 +51,7 @@ The client driver can send an idle IRP (see **[IOCTL_INTERNAL_USB_SUBMIT_IDLE_NO
 
 Upon receiving the idle IRP from the client driver, the composite driver must immediately invoke the idle callback to notify the client driver that the client driver may send the function to suspend state.
 
-### Step 3: Send a request for remote wake-up notification
+## Step 3: Send a request for remote wake-up notification
 
 The client driver can submit a request to arm its function for remote wake-up by submitting an **[IRP_MJ_POWER](../kernel/irp-mj-power.md)** IRP with minor function code set to **[IRP_MN_WAIT_WAKE](../kernel/irp-mn-wait-wake.md)** (wait-wake IRP). The client driver submits this request only if the driver wants to enter working state as a result of a user event.
 
@@ -66,16 +64,16 @@ The following example code shows how to send a remote wake-up request.
 ```cpp
 /*++
 
-Description: 
+Description:
     This routine sends a IOCTL_INTERNAL_USB_REQUEST_REMOTE_WAKE_NOTIFICATION request
-    to the USB driver stack. The IOCTL is completed by the USB driver stack 
+    to the USB driver stack. The IOCTL is completed by the USB driver stack
     when the function wakes up from sleep.
 
     Parameters:
     parentFdoExt: The device context associated with the FDO for the
     composite driver.
 
-    functionPdoExt: The device context associated with the PDO (created by 
+    functionPdoExt: The device context associated with the PDO (created by
     the composite driver) for the client driver.
 --*/
 
@@ -92,11 +90,11 @@ SendRequestForRemoteWakeNotification(
     NTSTATUS                            status;
 
     // Allocate an IRP
-    irp =  IoAllocateIrp(parentFdoExt->topDevObj->StackSize, FALSE); 
+    irp =  IoAllocateIrp(parentFdoExt->topDevObj->StackSize, FALSE);
 
     if (irp)
     {
- 
+
         //Initialize the USBDEVICE_REMOTE_WAKE_NOTIFICATION structure
         remoteWake.Version = 0;
         remoteWake.Size = sizeof(REQUEST_REMOTE_WAKE_NOTIFICATION);
@@ -105,18 +103,18 @@ SendRequestForRemoteWakeNotification(
 
         nextStack = IoGetNextIrpStackLocation(irp);
 
-        nextStack->MajorFunction = IRP_MJ_INTERNAL_DEVICE_CONTROL;   
+        nextStack->MajorFunction = IRP_MJ_INTERNAL_DEVICE_CONTROL;
         nextStack->Parameters.DeviceIoControl.IoControlCode = IOCTL_INTERNAL_USB_REQUEST_REMOTE_WAKE_NOTIFICATION;
 
         nextStack->Parameters.Others.Argument1 = &remoteWake;
-        
+
         // Caller's completion routine will free the IRP when it completes.
- 
+
         SetCompletionRoutine(functionPdoExt->debugLog,
                              parentFdoExt->fdo,
-                             irp, 
-                             CompletionRemoteWakeNotication, 
-                             (PVOID)functionPdoExt, 
+                             irp,
+                             CompletionRemoteWakeNotication,
+                             (PVOID)functionPdoExt,
                              TRUE, TRUE, TRUE);
 
         // Pass the IRP
@@ -132,7 +130,7 @@ The **[IOCTL_INTERNAL_USB_REQUEST_REMOTE_WAKE_NOTIFICATION](/windows-hardware/dr
 
 The composite driver must keep the wait-wake IRP pending and queue it for later processing. The composite driver must complete that IRP when the driver's remote wake-up completion routine gets invoked by the USB driver stack.
 
-### Step 4: Send a request to arm the function for remote wake-up
+## Step 4: Send a request to arm the function for remote wake-up
 
 To send the function to a low-power state, the client driver submits an **[IRP_MN_SET_POWER](../kernel/irp-mn-set-power.md)** IRP with the request to change the Windows Driver Model (WDM) device power state to **D2** or **D3**. Typically, the client driver sends **D2** IRP if the driver sent a wait-wake IRP earlier to request remote wake-up. Otherwise, the client driver sends **D3** IRP.
 
@@ -151,7 +149,7 @@ Parameters:
 parentFdoExt: The device context associated with the FDO for the
 composite driver.
 
-functionPdoExt: The device context associated with the PDO (created by 
+functionPdoExt: The device context associated with the PDO (created by
 the composite driver) for the client driver.
 
 Returns:
@@ -174,7 +172,7 @@ VOID
     status = USBD_UrbAllocate(parentFdoExt->usbdHandle, &urb);
 
     if (!NT_SUCCESS(status))
-    {    
+    {
         //USBD_UrbAllocate failed.
         goto Exit;
     }
@@ -187,7 +185,7 @@ VOID
         functionPdoExt->firstInterface,           // first interface of the function
         NULL);
 
-    irp =  IoAllocateIrp(parentFdoExt->topDevObj->StackSize, FALSE); 
+    irp =  IoAllocateIrp(parentFdoExt->topDevObj->StackSize, FALSE);
 
     if (!irp)
     {
@@ -199,9 +197,9 @@ VOID
 
     nextStack = IoGetNextIrpStackLocation(irp);
 
-    nextStack->MajorFunction = IRP_MJ_INTERNAL_DEVICE_CONTROL;  
+    nextStack->MajorFunction = IRP_MJ_INTERNAL_DEVICE_CONTROL;
 
-    nextStack->Parameters.DeviceIoControl.IoControlCode = IOCTL_INTERNAL_USB_SUBMIT_URB;  
+    nextStack->Parameters.DeviceIoControl.IoControlCode = IOCTL_INTERNAL_USB_SUBMIT_URB;
 
     //  Attach the URB to the IRP.
     USBD_AssignUrbToIoStackLocation(nextStack, (PURB)urb);
@@ -209,9 +207,9 @@ VOID
     // Caller's completion routine will free the IRP when it completes.
     SetCompletionRoutine(functionPdoExt->debugLog,
         parentFdoExt->fdo,
-        irp, 
-        CompletionForSuspendControlRequest, 
-        (PVOID)functionPdoExt, 
+        irp,
+        CompletionForSuspendControlRequest,
+        (PVOID)functionPdoExt,
         TRUE, TRUE, TRUE);
 
 
@@ -222,7 +220,7 @@ VOID
 Exit:
     if (urb)
     {
-        USBD_UrbFree( parentFdoExt->usbdHandle, urb); 
+        USBD_UrbFree( parentFdoExt->usbdHandle, urb);
     }
 
     return status;
@@ -244,5 +242,5 @@ The worker thread completes the wait-wake IRP and invokes the client driver's co
 
 ## Related topics
 
-- [USB Power Management](usb-power-management.md)  
+- [USB Power Management](usb-power-management.md)
 - [USB Selective Suspend](usb-selective-suspend.md)

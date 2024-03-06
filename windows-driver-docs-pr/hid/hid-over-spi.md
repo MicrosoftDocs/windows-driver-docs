@@ -1,5 +1,5 @@
 ---
-title: Introduction to HID over SPI
+title: Introduction to HID Over SPI
 description: How to use Human Interface Device (HID) class devices over a Serial Peripheral Interface (SPI).
 keywords:
 - HID
@@ -9,7 +9,7 @@ keywords:
 - SPI
 - Serial Peripheral Interface
 - Simple Peripheral Bus
-ms.date: 08/22/2022
+ms.date: 01/11/2024
 ---
 
 # Introduction to HID over SPI

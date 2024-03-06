@@ -438,6 +438,8 @@
           href: stornvme-feature-support.md
         - name: "StorNVMe SCSI translation support"
           href: stornvme-scsi-translation-support.md
+      - name: "StorUFS feature support"
+        href: storufs-feature-support.md
     - name: "IDE Controller Minidrivers"
 # Auto-expanded node
       items: 

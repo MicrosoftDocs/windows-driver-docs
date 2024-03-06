@@ -1,7 +1,7 @@
 ---
-title: Marshalling helper functions
+title: Marshalling Helper Functions
 description: This topic provides information about the marshaling helper functions in the sensorsutils.h header file.
-ms.date: 07/20/2018
+ms.date: 01/11/2024
 ---
 
 # Marshalling helper functions
@@ -24,4 +24,6 @@ If you implement your own marshaling helper functions, remember that helper func
 
 ## Requirements
 
-**Header:** Sensorsutils.h
+| &nbsp; | &nbsp; |
+| ------ | ------ |
+| **Header** | Sensorsutils.h |

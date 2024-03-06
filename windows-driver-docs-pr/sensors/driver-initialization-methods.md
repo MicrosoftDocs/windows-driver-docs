@@ -1,7 +1,7 @@
 ---
-title: Driver initialization methods
+title: Driver Initialization Methods
 description: Methods supported by the sensor driver to initialize a device.
-ms.date: 04/20/2017
+ms.date: 01/11/2024
 ---
 
 # Driver initialization methods
@@ -51,6 +51,5 @@ DriverClientInitialize(sensorID)
 
 ## Related topics
 
-[Introduction to the Sensor and Location Platform in Windows](./index.md)
-
-[Sensor Driver Logic](./driver-logic--pseudo-code-.md)
+- [Introduction to the Sensor and Location Platform in Windows](./index.md)
+- [Sensor Driver Logic](./driver-logic--pseudo-code-.md)

@@ -1520,3 +1520,23 @@
     href: zwcurrentprocess.md
   - name: "ZwCurrentThread macro"
     href: zwcurrentthread.md
+- name: "Bulk memory volatile accessor functions (v3)"
+  items:
+  - name: "Bulk memory volatile accessor functions (v3) overview"
+    href: bulk-memory-volatile-accessor-functions-v3.md
+  - name: "RtlCopyDeviceMemory"
+    href: nf-wdm-rtlcopydevicememory.md
+  - name: "RtlCopyVolatileMemory"
+    href: nf-wdm-rtlcopyvolatilememory.md
+  - name: "RtlFillDeviceMemory"
+    href: nf-wdm-rtlfilldevicememory.md
+  - name: "RtlFillVolatileMemory"
+    href: nf-wdm-rtlfillvolatilememory.md
+  - name: "RtlMoveVolatileMemory"
+    href: nf-wdm-rtlmovevolatilememory.md
+  - name: "RtlSecureZeroMemory2"
+    href: nf-wdm-rtlsecurezeromemory2.md
+  - name: "RtlZeroDeviceMemory"
+    href: nf-wdm-rtlzerodevicememory.md
+  - name: "RtlZeroVolatileMemory"
+    href: nf-wdm-rtlzerovolatilememory.md

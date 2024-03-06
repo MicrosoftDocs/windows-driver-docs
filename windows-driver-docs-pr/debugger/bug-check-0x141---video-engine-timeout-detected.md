@@ -37,9 +37,9 @@ The VIDEO\_ENGINE\_TIMEOUT\_DETECTED live dump has a value of 0x00000141. This i
 
 ## Remarks
 
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
-Secondary data of tag {270A33FD-3DA6-460D-BA89-3C1BAE21E39B} contains additional TDR related data. Use [**.enumtag**](-enumtag--enumerate-secondary-callback-data-.md) to view the data.
+Secondary data of tag {270A33FD-3DA6-460D-BA89-3C1BAE21E39B} contains additional TDR related data. Use [**.enumtag**](../debuggercmds/-enumtag--enumerate-secondary-callback-data-.md) to view the data.
 
  
 

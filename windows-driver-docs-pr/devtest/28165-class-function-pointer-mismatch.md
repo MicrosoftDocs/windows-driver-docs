@@ -1,5 +1,5 @@
 ---
-title: C28165 warning
+title: C28165 Warning
 description: Warning C28165 The function pointer of class does not match the function class.
 keywords:
 - warnings listed WDK PREfast for Drivers
@@ -29,12 +29,4 @@ The following code example avoids this warning.
 ```
 IoSetCancelRoutine(MyCancelRoutine);
 ```
-
- 
-
- 
-
-
-
-
 

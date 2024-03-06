@@ -17,7 +17,7 @@ ms.date: 04/20/2017
 
 The following figure illustrates a basic send operation, which involves a protocol driver, NDIS, and a miniport driver.
 
-![diagram illustrating a basic ndis send operation.](images/netbuffersend.png)
+:::image type="content" source="images/netbuffersend.png" alt-text="Diagram showing a basic NDIS send operation with a protocol driver, NDIS, and a miniport driver.":::
 
 Protocol drivers call the [**NdisSendNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndissendnetbufferlists) function to send [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structures on a binding. NDIS calls the miniport driver's [*MiniportSendNetBufferLists*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_send_net_buffer_lists) function to forward the NET\_BUFFER\_LIST structures to an underlying miniport driver.
 

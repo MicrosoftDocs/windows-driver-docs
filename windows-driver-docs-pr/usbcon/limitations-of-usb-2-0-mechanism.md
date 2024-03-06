@@ -1,7 +1,7 @@
 ---
+title: Limitations of USB 2.0 Mechanism
 description: Describes the limitations of the Universal Serial Bus (USB) 2.0 Selective Suspend mechanism.
-title: Limitations of USB 2.0 mechanism
-ms.date: 04/20/2017
+ms.date: 01/17/2024
 ---
 
 # Limitations of USB 2.0 mechanism

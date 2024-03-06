@@ -24,11 +24,3 @@ This section includes:
 
 [Static Driver Verifier Report Panes](static-driver-verifier-report-panes.md)
 
- 
-
- 
-
-
-
-
-

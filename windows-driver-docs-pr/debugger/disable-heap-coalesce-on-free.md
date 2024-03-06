@@ -1,5 +1,5 @@
 ---
-title: Disable heap coalesce on free
+title: Disable Heap Coalesce on Free
 description: Disable heap coalesce on free
 keywords: ["Disable heap coalesce on free (global flag)"]
 ms.date: 05/23/2017
@@ -49,8 +49,3 @@ This flag is used for maintaining compatibility with old applications.
  
 
  
-
-
-
-
-

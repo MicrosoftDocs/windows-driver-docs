@@ -1,7 +1,7 @@
 ---
 title: Kernel Live Dump Code Reference
 description: This section contains descriptions of the common kernel live dumps, and describes how they are different from traditional bug checks.
-ms.date: 11/01/2022
+ms.date: 12/20/2023
 ---
 
 # Kernel Live Dump Code Reference
@@ -53,7 +53,7 @@ Additional domain specific data, for example USB specific data for USB failures,
 
 ## Partial kernel live dump file
 
-A partial kernel live dump file may be generated in situations when live dump cannot reliably capture all intended memory pages. The information that is captured in a partial dump is filtered and prioritized, by capturing pages that contain important data required to generate a valid dump before other pages. For instance, the kernel pages are prioritized over user pages, when the live dump includes user pages.  In some situations there are not enough resources available to capture all intended optional memory pages, so memory may be missing from the dump file. The dump file should still be recognized by the WinDbg debugger but may show errors when trying to dump memory.  If the debugger shows an error when attempting to dump memory at an address, you can use the [!pte](-pte.md) extension to check whether the PTE for an address is valid or not. This can help to determine if the memory address is really invalid, or if the page is valid but just not available in the dump file.
+A partial kernel live dump file may be generated in situations when live dump cannot reliably capture all intended memory pages. The information that is captured in a partial dump is filtered and prioritized, by capturing pages that contain important data required to generate a valid dump before other pages. For instance, the kernel pages are prioritized over user pages, when the live dump includes user pages.  In some situations there are not enough resources available to capture all intended optional memory pages, so memory may be missing from the dump file. The dump file should still be recognized by the WinDbg debugger but may show errors when trying to dump memory.  If the debugger shows an error when attempting to dump memory at an address, you can use the [!pte](../debuggercmds/-pte.md) extension to check whether the PTE for an address is valid or not. This can help to determine if the memory address is really invalid, or if the page is valid but just not available in the dump file.
 
 ## Analyzing live dump files
 
@@ -63,13 +63,13 @@ For more information, see:
 
 - [Analyzing a Kernel-Mode Dump File with WinDbg](analyzing-a-kernel-mode-dump-file-with-windbg.md)
 
-- [!analyze](-analyze.md)
+- [!analyze](../debuggercmds/-analyze.md)
 
 - [Processor Architecture](processor-architecture.md)
 
 ## Using WinDbg to display live dump stop code information
 
-If a specific live dump code does not appear in this topic, use the [**!analyze**](-analyze.md) extension in the Windows Debugger (WinDbg) with the following syntax (in kernel mode), replacing `<code>` with a live dump code:
+If a specific live dump code does not appear in this topic, use the [**!analyze**](../debuggercmds/-analyze.md) extension in the Windows Debugger (WinDbg) with the following syntax (in kernel mode), replacing `<code>` with a live dump code:
 
 `!analyze -show <code>`
 
@@ -152,7 +152,7 @@ Running
  -a----         5/5/2016   1:08 PM      867135488 LiveDump.dmp
 ```
 
-6. Using the debugger to run [!analyze](-analyze.md) on the dump file will indicate that this is a live dump code of [LIVE_SYSTEM_DUMP (161)](bug-check-0x161--live-system-dump.md).
+6. Using the debugger to run [!analyze](../debuggercmds/-analyze.md) on the dump file will indicate that this is a live dump code of [LIVE_SYSTEM_DUMP (161)](bug-check-0x161--live-system-dump.md).
 
 ## Kernel live dump codes
 
@@ -216,3 +216,13 @@ These stop codes can be used for live dumps or to bug check the device.
 | 0x00000124 | [**WHEA\_UNCORRECTABLE\_ERROR**](bug-check-0x124---whea-uncorrectable-error.md) |
 | 0x00000144 | [**BUGCODE\_USB3\_DRIVER**](bug-check-0x144--bugcode-usb3-driver.md)            |
 | 0x00000164 | [**WIN32K\_CRITICAL\_FAILURE**](bug-check-0x164--win32k-critical-failure.md)    |
+
+## See also
+
+[Bug Check Code Reference](bug-check-code-reference2.md)
+
+[!analyze](../debuggercmds/-analyze.md)
+
+[General Tips for Blue Screens](general-troubleshooting-tips.md)
+
+[Blue Screen Data](blue-screen-data.md)

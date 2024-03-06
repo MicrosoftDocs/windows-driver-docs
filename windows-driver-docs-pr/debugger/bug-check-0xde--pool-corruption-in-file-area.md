@@ -31,6 +31,10 @@ None
 When the Memory Manager dereferenced the file, it discovered this corruption in pool memory.
 
  
+## Resolution
+
+The [!analyze](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+
 
  
 

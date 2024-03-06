@@ -9,12 +9,11 @@ ms.date: 04/20/2017
 
 # Devices Using WDF Tab
 
-
 This topic discusses WDF Verifier's **Devices using WDF** page. This page lists all devices that are using WDF drivers. When you highlight a device, you see the WDF driver stack for the highlighted device. You can also change verification settings from this screen.
 
 At the top of this page, you'll find a summary of installed runtimes and drivers. Below is a list of device instances that are associated with WDF drivers.
 
-![screen grab of devices using wdf tab.](images/wdfverifier-tab2.png)
+:::image type="content" source="images/wdfverifier-tab2.png" alt-text="Screenshot of the Devices using WDF tab in WDF Verifier.":::
 
 In the **Devices with WDF drivers** box, devices that have WDF-related settings are preceded by a +. To change settings, right-click the device ID or the individual settings within the node.
 
@@ -27,12 +26,3 @@ If UMDF drivers are used, they are also shown in stack order at the correct loca
 Similarly, you can click the + in the driver stack to open the node, and then right-click to change values for each driver.
 
 If you make changes on the **Devices using WDF** page, you'll see those changes reflected on the **WDF Drivers** page.
-
- 
-
- 
-
-
-
-
-

@@ -15,7 +15,7 @@ For an introduction and overview of crash dump files, see [Crash Dump Files](cra
 
 ### <span id="Opening_Dump_Files"></span><span id="opening_dump_files"></span><span id="OPENING_DUMP_FILES"></span>Opening Dump Files
 
-To open a crash dump file for use as a debugger target, use [**OpenDumpFile**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-opendumpfile) or [**OpenDumpfileWide**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-opendumpfilewide). These methods are similar to the [**.opendump**](-opendump--open-dump-file-.md) debugger command.
+To open a crash dump file for use as a debugger target, use [**OpenDumpFile**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-opendumpfile) or [**OpenDumpfileWide**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-opendumpfilewide). These methods are similar to the [**.opendump**](../debuggercmds/-opendump--open-dump-file-.md) debugger command.
 
 **Note**   The engine doesn't completely attach to the dump file until the [**WaitForEvent**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-waitforevent) method has been called. When a dump file is created from a process or kernel, information about the last event is stored in the dump file. After the dump file is opened, the next time execution is attempted, the engine will generate this event for the event callbacks. Only then does the dump file become available in the debugging session. See [Debugging Session and Execution Model](debugging-session-and-execution-model.md) for more details.
 
@@ -27,7 +27,7 @@ User-mode minidump files contain several streams of information. These streams c
 
 ### <span id="Creating_Dump_Files"></span><span id="creating_dump_files"></span><span id="CREATING_DUMP_FILES"></span>Creating Dump Files
 
-To create a crash dump file of the current target -- user-mode or kernel-mode -- use [**WriteDumpFile2**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-writedumpfile2). This method is similar to the [**.dump**](-dump--create-dump-file-.md) debugger command.
+To create a crash dump file of the current target -- user-mode or kernel-mode -- use [**WriteDumpFile2**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-writedumpfile2). This method is similar to the [**.dump**](../debuggercmds/-dump--create-dump-file-.md) debugger command.
 
  
 

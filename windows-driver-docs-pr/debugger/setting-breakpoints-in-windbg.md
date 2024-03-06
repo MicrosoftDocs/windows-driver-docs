@@ -29,8 +29,3 @@ If you set the cursor on a specific line in the Disassembly window or in a Sourc
  
 
  
-
-
-
-
-

@@ -1,5 +1,5 @@
 ---
-title: WIA driver services library
+title: WIA Driver Services Library
 description: Describes the WIA driver services library that contains functions a WIA minidriver can call for assistance in performing specific tasks.
 ms.date: 05/11/2023
 ---

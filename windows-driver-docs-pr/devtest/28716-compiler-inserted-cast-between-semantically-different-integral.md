@@ -1,5 +1,5 @@
 ---
-title: C28716 warning
+title: C28716 Warning
 description: Warning C28716 Compiler-inserted cast between semantically different integral types.
 ms.date: 04/20/2017
 f1_keywords: 
@@ -34,12 +34,4 @@ if (SomeMemAllocFunction(&MyPtr) == true) {
  return STATUS_NO_MEMORY;
 }
 ```
-
- 
-
- 
-
-
-
-
 

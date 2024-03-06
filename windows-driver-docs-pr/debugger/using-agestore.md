@@ -66,8 +66,3 @@ The FAT32 file system always stores LAT information (although only the date, and
  
 
  
-
-
-
-
-

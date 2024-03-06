@@ -112,10 +112,10 @@ For more information on this type of extension, see [Forwarding Extensions](./fo
 
 The following figure shows the components of the extensible switch interface for NDIS 6.40 (Windows Server 2012 R2) and later.
 
-![diagram illustrating hyper\-v extensible switch architecture for ndis 6.40 and later.](images/vswitcharchitecture-ndis640.png)
+:::image type="content" source="images/vswitcharchitecture-ndis640.png" alt-text="Diagram illustrating Hyper-V Extensible Switch architecture for NDIS 6.40 and later.":::
 
 The following figure shows the components of the extensible switch interface for NDIS 6.30 (Windows Server 2012).
 
-![diagram illustrating the synthetic device data paths with sr-iov.](images/vswitcharchitecture.png)
+:::image type="content" source="images/vswitcharchitecture.png" alt-text="Diagram illustrating the synthetic device data paths with SR-IOV.":::
 
 For more information about the components for the extensible switch interface, see [Hyper-V Extensible Switch Architecture](./hyper-v-extensible-switch-architecture.md).

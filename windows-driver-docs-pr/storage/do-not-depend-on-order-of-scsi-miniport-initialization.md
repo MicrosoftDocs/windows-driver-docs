@@ -1,5 +1,5 @@
 ---
-title: Do Not Depend on Order of SCSI Miniport Initialization
+title: Do not Depend on Order of SCSI Miniport Initialization
 description: Do Not Depend on Order of SCSI Miniport Initialization
 keywords:
 - SCSI miniport drivers WDK storage , PnP

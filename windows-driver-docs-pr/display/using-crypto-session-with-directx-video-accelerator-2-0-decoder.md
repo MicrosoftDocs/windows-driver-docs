@@ -15,7 +15,6 @@ keywords:
 - crypto session WDK Windows 7 display , associating with a DXVA 2.0 decoder
 - crypto session WDK Windows Server 2008 R2 display , associating with a DXVA 2.0 decoder
 ms.date: 12/06/2018
-ms.custom: seodec18
 ---
 
 # Using Crypto Session with DirectX Video Accelerator 2.0 Decoder
@@ -58,4 +57,3 @@ D3DDDIARG_DECODEEXTENSIONEXECUTE.pPrivateOutput->DataSize = 0;
 ```
 
  
-

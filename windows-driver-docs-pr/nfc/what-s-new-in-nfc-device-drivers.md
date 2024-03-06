@@ -1,5 +1,5 @@
 ---
-title: Near-field communication (NFC) device drivers in Windows 10
+title: Near-Field Communication (NFC) Device Drivers in Windows 10
 description: This topic summarizes the new features and improvements for near-field communication (NFC) device drivers in Windows 10.
 keywords:
 - NFC
@@ -7,7 +7,7 @@ keywords:
 - proximity
 - near field proximity
 - NFP
-ms.date: 03/28/2022
+ms.date: 01/11/2024
 ---
 
 # Near-field communication (NFC) device drivers in Windows 10

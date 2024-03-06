@@ -39,11 +39,3 @@ The following text colors are used in the **Source Code** pane:
 
 -   **Blue:** (Rule source file (\*.slic) only.) Indicates code that is not executed in the path to the rule violation.
 
- 
-
- 
-
-
-
-
-

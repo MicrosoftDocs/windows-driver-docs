@@ -18,6 +18,7 @@ sections:
         answer: |
           You can run UMDF drivers on the following operating systems:
           
+          -   Windows 11
           -   Windows 10
           -   Windows 8.1
           -   Windows 8
@@ -28,7 +29,7 @@ sections:
       - question: |
           What is the most recent version of UMDF?
         answer: |
-          UMDF version 2 (both 2.0 and 2.1) is included in Windows 10 and later.
+          UMDF version 2.33 is included in Windows 11, version 21H2 and later.
 
       - question: |
           What is the difference between UMDF version 2 and the previous version, 1.11 (one dot eleven)?

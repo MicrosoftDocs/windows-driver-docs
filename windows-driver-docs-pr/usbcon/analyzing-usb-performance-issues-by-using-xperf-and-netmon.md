@@ -1,10 +1,10 @@
 ---
-description: This topic provides information about how to view the timeline of events captured in a USB ETW log.
 title: Analyzing USB Performance Issues by Using Xperf and Netmon
-ms.date: 09/16/2021
+description: This topic provides information about how to view the timeline of events captured in a USB ETW log.
+ms.date: 01/12/2024
 ---
 
-# Analyzing USB Performance Issues by Using Xperf and Netmon
+# Analyzing USB performance issues by using Xperf and Netmon
 
 This topic provides information about how to view the timeline of events captured in a USB ETW log.
 
@@ -65,8 +65,8 @@ To analyze the timing of USB events, you can look at the time difference between
 1. Write a filter that displays only the events whose timing you would like to see. For example, to view the delays between non-overlapping bulk-transfer dispatch and complete events, add the following filter:
 
     ```syntax
-    Description == "USBPort_MicrosoftWindowsUSBUSBPORT:Dispatch URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER" 
-    OR Description == "USBPort_MicrosoftWindowsUSBUSBPORT:Complete URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER" 
+    Description == "USBPort_MicrosoftWindowsUSBUSBPORT:Dispatch URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER"
+    OR Description == "USBPort_MicrosoftWindowsUSBUSBPORT:Complete URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER"
     OR Description == "USBPort_MicrosoftWindowsUSBUSBPORT:Complete URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER with Data"
     ```
 
@@ -75,5 +75,5 @@ To analyze the timing of USB events, you can look at the time difference between
 
 ## Related topics
 
-* [USB Event Tracing for Windows](usb-event-tracing-for-windows.md)
-* [Using Xperf with USB ETW](using-xperf-with-usb-etw.md)
+- [USB Event Tracing for Windows](usb-event-tracing-for-windows.md)
+- [Using Xperf with USB ETW](using-xperf-with-usb-etw.md)

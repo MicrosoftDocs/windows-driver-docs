@@ -1,5 +1,5 @@
 ---
-title: ACPI namespace hierarchy
+title: ACPI Namespace Hierarchy
 description: The ACPI namespace hierarchy must accurately model the platform's hardware topology, starting with the processor's system bus.
 ms.date: 03/22/2023
 ---

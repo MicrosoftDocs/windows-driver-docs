@@ -1,5 +1,5 @@
 ---
-title: EDID extension for head-mounted and specialized monitors
+title: EDID Extension for Head-Mounted and Specialized Monitors
 description: EDID extension for head-mounted and specialized monitors
 keywords:
 - display devices WDK
@@ -36,7 +36,7 @@ The party responsible for writing the firmware code that contains the EDID must 
 
 The VSDB structure must have the format and values that are outlined in the following table.
 
-![VSDB Specification.](images/specialized-displays-vsdb.png)
+:::image type="content" source="images/specialized-displays-vsdb.png" alt-text="Table showing the VSDB structure and values for specialized displays.":::
 
 ### Vendor specific tag code [3 bits]
 

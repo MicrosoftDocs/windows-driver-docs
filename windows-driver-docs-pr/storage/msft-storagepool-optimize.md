@@ -1,5 +1,5 @@
 ---
-title: Optimize method of the MSFT\_StoragePool class
+title: Optimize Method of the MSFT_StoragePool Class
 description: Optimizes the storage pool.
 ms.assetid: 61B3D59A-FDA6-4447-AED5-180484839DBE
 keywords:

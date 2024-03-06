@@ -1,14 +1,11 @@
 ---
-title: ACX multi stack cross driver communications
+title: ACX Multi Stack Cross Driver Communications
 description: This topic provides a high level summary of the multi stack cross driver communications.
-ms.date: 04/19/2023
+ms.date: 09/29/2023
 ms.localizationpriority: medium
 ---
 
 # ACX multi stack cross driver communications
-
->[!IMPORTANT]
-> Some information relates to a prerelease product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 This topic provides a summary of the Audio Class eXtensions (ACX) multi stack cross driver communications.
 
@@ -16,6 +13,9 @@ For general information about the ACX, see [ACX audio class extensions overview
 ](acx-audio-class-extensions-overview.md) and [Summary of ACX Objects](acx-summary-of-objects.md).
 
 For basic information on ACX targets, see [ACX targets and driver synchronization](acx-targets.md) and [ACX IO request packet IRPs](acx-irps.md).
+
+>[!NOTE]
+> The ACX headers and libraries are not included in the  WDK 10.0.22621.2428 (released October 24, 2023), but are available in previous versions, as well as the latest (25000 series builds) Insider Preview of the WDK. For more information about preview versions of the WDK, see [Installing preview versions of the Windows Driver Kit (WDK)](../installing-preview-versions-wdk.md).
 
 ## Single-Stack audio drivers
 
@@ -27,13 +27,13 @@ ACX fully supports single-stack audio drivers. Audio developers can replace thei
 
 It is very common for the audio path to go through multiple hardware components handled by different driver stacks to create a complete audio experience.  It is typical for a system to have the DSP, CODEC and AMP functionality implemented by different audio technology vendors as shown in the following diagram.
 
-![diagram illustrating three boxes with arrows to the left of a DSP, CODEC and AMP](images/audio-acx-multi-stack-multiple-hw.png)
+:::image type="content" source="images/audio-acx-multi-stack-multiple-hw.png" alt-text="Diagram showing the relationship between DSP, CODEC, and AMP in a multi-stack audio system.":::
 
 In a multi-stack architecture without a well-defined standard, each vendor is forced to define its own proprietary interface and communications protocol. It is a goal of ACX to facilitate the development of multi-stack audio drivers by taking ownership of the synchronization between these stacks and providing a simple re-usable pattern for drivers communicate with each other.
 
 Using ACX, the example system DSP, CODEC and AMP hardware design can be supported with the following software architecture.
 
-![diagram illustrating the acx architecture showing three drivers each with an acx stack for a  DSP, CODEC and AMP](images/audio-acx-multi-stack-multiple-hw-three-drivers.png)
+:::image type="content" source="images/audio-acx-multi-stack-multiple-hw-three-drivers.png" alt-text="Diagram depicting the ACX architecture with separate drivers and ACX stacks for DSP, CODEC, and AMP components.":::
 
 Note that any type of component type instead of the shown DSP, CODEC and AMP, could be used, as ACX does not depend on any specific component type, or specific arrangements of components.
   

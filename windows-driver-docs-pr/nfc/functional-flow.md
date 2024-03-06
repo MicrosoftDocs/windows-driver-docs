@@ -1,5 +1,5 @@
 ---
-title: Functional flow for Smart Card
+title: Functional Flow for Smart Card
 description: A flowchart and short description of the hierarchical reading and writing of NDEF messages upon smart card discovery.
 keywords:
 - NFC
@@ -7,7 +7,7 @@ keywords:
 - proximity
 - near field proximity
 - NFP
-ms.date: 04/20/2017
+ms.date: 01/11/2024
 ---
 
 # Functional flow for Smart Card
@@ -18,5 +18,5 @@ Because the Smart Card is sharing the driver with NFP, when a smart card approac
 
 ## Related topics
 
-[NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/_nfpdrivers)  
-[Smart card DDI and command reference](/previous-versions/dn905601(v=vs.85))
+- [NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/_nfpdrivers)
+- [Smart card DDI and command reference](/previous-versions/dn905601(v=vs.85))

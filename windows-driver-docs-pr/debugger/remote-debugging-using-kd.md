@@ -15,7 +15,7 @@ The code that is being debugged could be running on the same computer that is ru
 
 The following diagram illustrates a remote session where the debugging server, running on a host computer, is performing kernel-mode debugging of code that is running on a separate target computer.
 
-![diagram that shows remote, host, and target computers connected with cables.](images/clientservertarget.png)
+:::image type="content" source="images/clientservertarget.png" alt-text="Diagram illustrating remote, host, and target computers connected for kernel-mode debugging.":::
 
 There are several transport protocols you can use for a remote debugging connection: TCP, NPIPE, SPIPE, SSL, and COM Port. Suppose you have chosen to use TCP as the protocol and you have chosen to use KD as both the debugging client and the debugging server. You can use the following procedure to establish a remote kernel-mode debugging session:
 
@@ -50,8 +50,3 @@ For complete information about launching KD (and establishing remote debugging) 
  
 
  
-
-
-
-
-

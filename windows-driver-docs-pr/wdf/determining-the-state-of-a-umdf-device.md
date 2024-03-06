@@ -71,14 +71,14 @@ To determine device state, use the following steps:
             **!thread &lt;thread-addr&gt;**
 
 2.  In the debugger, use the **.chain** command to see if the wudfext.dll (UMDF 1) or wdfkd.dll (UMDF 2) debugger extension library is loaded.
-3.  If the library you need is not present, use the [**.load**](../debugger/-load---loadby--load-extension-dll-.md) command to load the extension DLL into the debugger. Then enter **.reload** to reload symbol information.
-4.  Use [**!wudfext.umdevstacks**](../debugger/-wudfext-umdevstacks.md) (UMDF 1) or [**!wdfkd.wdfumdevstacks**](../debugger/-wdfkd-wdfumdevstacks.md) (UMDF 2) to see all device stacks loaded in the host process.
+3.  If the library you need is not present, use the [**.load**](../debuggercmds/-load---loadby--load-extension-dll-.md) command to load the extension DLL into the debugger. Then enter **.reload** to reload symbol information.
+4.  Use [**!wudfext.umdevstacks**](../debuggercmds/-wudfext-umdevstacks.md) (UMDF 1) or [**!wdfkd.wdfumdevstacks**](../debuggercmds/-wdfkd-wdfumdevstacks.md) (UMDF 2) to see all device stacks loaded in the host process.
 
-    Then use [**!wudfext.umdevstack**](../debugger/-wudfext-umdevstack.md) (UMDF 1) or [**!wdfkd.wdfumdevstack**](../debugger/-wdfkd-wdfumdevstack.md) (UMDF 2) to get detailed information about the device stack.
+    Then use [**!wudfext.umdevstack**](../debuggercmds/-wudfext-umdevstack.md) (UMDF 1) or [**!wdfkd.wdfumdevstack**](../debuggercmds/-wdfkd-wdfumdevstack.md) (UMDF 2) to get detailed information about the device stack.
 
-5.  Use [**!wudfext.wudfdevice**](../debugger/-wudfext-wudfdevice.md) (UMDF 1) or [**!wdfkd.wdfdevice**](../debugger/-wdfkd-wdfdevice.md) (UMDF 2) to obtain information about the Plug and Play (PnP) and power-management state of the device.
+5.  Use [**!wudfext.wudfdevice**](../debuggercmds/-wudfext-wudfdevice.md) (UMDF 1) or [**!wdfkd.wdfdevice**](../debuggercmds/-wdfkd-wdfdevice.md) (UMDF 2) to obtain information about the Plug and Play (PnP) and power-management state of the device.
 
-6.  Use [**!wudfext.wudfdriverinfo**](../debugger/-wudfext-wudfdriverinfo.md) (UMDF 1) or [**!wdfkd.wdfdriverinfo**](../debugger/-wdfkd-wdfdriverinfo.md) (UMDF 2) to display additional information about the driver, including its device tree.
+6.  Use [**!wudfext.wudfdriverinfo**](../debuggercmds/-wudfext-wudfdriverinfo.md) (UMDF 1) or [**!wdfkd.wdfdriverinfo**](../debuggercmds/-wdfkd-wdfdriverinfo.md) (UMDF 2) to display additional information about the driver, including its device tree.
 
  
 

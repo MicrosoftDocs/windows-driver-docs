@@ -23,11 +23,3 @@ This section includes:
 
 When evaluating the results of a SDV verification, you must examine all of the output carefully and investigate any errors.
 
- 
-
- 
-
-
-
-
-

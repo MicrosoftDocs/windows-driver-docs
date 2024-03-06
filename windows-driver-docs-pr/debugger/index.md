@@ -3,7 +3,7 @@ title: Install WinDbg
 description: Start here for an overview on the Windows debugger and installing WinDbg.
 ms.assetid: 938ef180-84de-442f-9b6c-1138c2fc8d5a
 keywords: ["Debugging Tools for Windows", "Windows debugging", "Windows Debugger", "Kernel debugging", "Kernel debugger", "WinDbg"]
-ms.date: 04/10/2023
+ms.date: 12/20/2023
 ms.topic: article
 ---
 
@@ -11,18 +11,18 @@ ms.topic: article
 
 WinDbg is a debugger that can be used to analyze crash dumps, debug live user-mode and kernel-mode code, and examine CPU registers and memory.
 
-## ![Small WinDbg logo](images/windbg-logo-35px.png) Install WinDbg
+## :::image type="content" source="images/windbg-logo-35px.png" alt-text="WinDbg logo.":::
 
-This latest version features a more modern user experience with an updated interface, fully fledged scripting capabilities, an extensible debugging data model, built-in Time Travel Debugging (TTD) support, and many additional features.
+This latest version features a more modern user experience with an updated interface, fully-fledged scripting capabilities, an extensible debugging data model, built-in Time Travel Debugging (TTD) support, and many additional features.
 
-For more information, see [WinDbg Overview](windbg-overview.md).
+For more information, see [WinDbg Overview](../debuggercmds/windbg-overview.md).
 
 > [!div class="nextstepaction"]
 > [Download WinDbg](https://aka.ms/windbg/download)
 
 Select *Install* and the debugger will download and install.
 
-WinDbg will also periodically check for new versions in the background and autoupdate if necessary.
+WinDbg will also periodically check for new versions in the background and auto-update if necessary.
 
 > [!NOTE]
 > Formerly released as *WinDbg Preview* in the Microsoft Store, this version leverages the same underlying engine as *WinDbg (classic)* and supports all the same commands, extensions, and workflows.

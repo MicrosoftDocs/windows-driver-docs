@@ -10,7 +10,6 @@ api_name:
 - BCDEdit /set
 api_type:
 - NA
-ms.custom: contperf-fy21q2 
 ---
 
 # BCDEdit /set

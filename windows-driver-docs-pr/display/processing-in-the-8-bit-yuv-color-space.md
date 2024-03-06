@@ -1,5 +1,5 @@
 ---
-title: Processing in the 8-bit YUV Color Space
+title: Processing in the 8-Bit YUV Color Space
 description: Processing in the 8-bit YUV Color Space
 keywords:
 - ProcAmp WDK DirectX VA , YUV color space

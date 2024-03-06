@@ -1,5 +1,5 @@
 ---
-title: Attributes for simulated fonts
+title: Attributes for Simulated Fonts
 description: Provides information about attributes for simulated fonts.
 keywords:
 - simulated font attributes WDK Unidrv

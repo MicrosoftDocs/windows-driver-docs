@@ -1,7 +1,7 @@
 ---
-title: Driver interface methods
+title: Driver Interface Methods
 description: Interface methods supported by the sensor driver.
-ms.date: 04/20/2017
+ms.date: 01/11/2024
 ---
 
 # Driver interface methods
@@ -76,7 +76,7 @@ DDIOnClientDisconnect(sensorID, clientID)
     {
         // A client has NOT specified a CRI if
         // - the CRI has never been set by that client since having been connected
-        // - the client has specified a CRI of ‘0’, which means to use the default
+        // - the client has specified a CRI of '0', which means to use the default
         if (no remaining client has specified CRI)
         {
             flagCRI = false
@@ -167,7 +167,7 @@ DDIOnSetCRI(sensorID, clientID, requestedCRI) //OnSetProperties
         }
         // A client has NOT specified a CRI if
         // - the CRI has never been set by that client since having been connected
-        // - the client has specified a CRI of ‘0’, which means to use the default
+        // - the client has specified a CRI of '0', which means to use the default
         if (no remaining client has specified CRI)
         {
             flagCRI = false
@@ -207,7 +207,7 @@ DDIOnSetCS(sensorID, clientID, requestedCS[]) //OnSetProperties
             }
             // A client has NOT specified a CS for datafield n if
             // - the CS[n] has never been set by that client since having been connected
-            // - the client has specified a CS[n] of type ‘VT_NULL’, which means to use the default
+            // - the client has specified a CS[n] of type 'VT_NULL', which means to use the default
             if (no remaining client has specified CRI)
             {
                 flagCS = false
@@ -328,6 +328,5 @@ DDIHandleAsyncDataEvent(sensorID, buffer)
 
 ## Related topics
 
-[Introduction to the Sensor and Location Platform in Windows](./index.md)
-
-[Sensor Driver Logic](./driver-logic--pseudo-code-.md)
+- [Introduction to the Sensor and Location Platform in Windows](./index.md)
+- [Sensor Driver Logic](./driver-logic--pseudo-code-.md)

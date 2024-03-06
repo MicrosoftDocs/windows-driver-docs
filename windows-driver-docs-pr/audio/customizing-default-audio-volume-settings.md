@@ -23,7 +23,7 @@ The HD Audio class function driver, which is referred to here as the Audio Class
 
 The Audio Class driver has been redesigned to allow you to override the hard-coded default values. The mechanism for overriding the Audio Class driver's hard-coded values involves writing an INF file that wraps the Audio Class driver's inbox INF file (hdaudio.inf), and using this wrapper INF to specify the desired values.
 
-The following diagram shows a sample HD Audio codec topology. There are IDs for the individual nodes, and IDs for the pin complexes.![sample audio codec topology showing pin complexes that represent the physical connectors. the mic and line input nodes, and the speaker output node show pin complex ids.](images/pin-complexid2.png)
+The following diagram shows a sample HD Audio codec topology. There are IDs for the individual nodes, and IDs for the pin complexes.:::image type="content" source="images/pin-complexid2.png" alt-text="Diagram of a sample audio codec topology with pin complexes representing physical connectors, including mic and line input nodes, and speaker output node with pin complex IDs.":::
 
 The pin complexes represent the physical connectors for the associated device (for example, speaker, mic, or line).
 

@@ -1,18 +1,18 @@
 ---
-title: ACX targets and driver synchronization
+title: ACX Targets and Driver Synchronization
 description: This topic provides a high level summary of the ACX targets and driver synchronization.
-ms.date: 04/19/2023
+ms.date: 09/29/2023
 ms.localizationpriority: medium
 ---
 
 # ACX targets and driver synchronization
 
->[!IMPORTANT]
-> Some information relates to a prerelease product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
 This topic provides a summary of the Audio Class eXtensions (ACX) targets and driver synchronization.
 
 For general information about the ACX, see [ACX audio class extensions overview](acx-audio-class-extensions-overview.md) and [Summary of ACX Objects](acx-summary-of-objects.md). For information about IRPs, see [ACX IO request packet IRPs](acx-irps.md).
+
+>[!NOTE]
+> The ACX headers and libraries are not included in the  WDK 10.0.22621.2428 (released October 24, 2023), but are available in previous versions, as well as the latest (25000 series builds) Insider Preview of the WDK. For more information about preview versions of the WDK, see [Installing preview versions of the Windows Driver Kit (WDK)](../installing-preview-versions-wdk.md).
 
 ## ACX targets
 
@@ -38,7 +38,7 @@ All these types are built on top of the [WdfIoTarget](/windows-hardware/drivers/
 
 This diagram shows the ACX target architecture and the inheritance from the WDF Driver and Device objects.  
 
-![diagram illustrating the acx target architecture showing WDFDRIVER, WDFDEVICE, and under that ACXTARGET, ACXSTREAM ACXSTREAMFACTORY with the lowest layer showing ACXTARGETELEMENT and ACXTARGETPIN](images/audio-acx-multi-stack-acxtarget-objects.png)
+:::image type="content" source="images/audio-acx-multi-stack-acxtarget-objects.png" alt-text="Diagram illustrating the ACX target architecture with WDFDRIVER, WDFDEVICE, ACXTARGET, ACXSTREAM, ACXSTREAMFACTORY, ACXTARGETELEMENT, and ACXTARGETPIN.":::
 
 ## ACX driver synchronization and serialization
 

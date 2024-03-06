@@ -1,5 +1,5 @@
 ---
-title: Cancel pending I/O operations
+title: Cancel Pending I/O Operations
 description: Cancel pending I/O operations
 ms.date: 04/20/2017
 ---

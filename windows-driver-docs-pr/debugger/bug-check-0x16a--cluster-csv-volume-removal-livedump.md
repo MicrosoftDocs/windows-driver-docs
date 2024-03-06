@@ -44,8 +44,3 @@ The system generated a live dump for analysis of the delay.
 [Kernel Live Dump Code Reference](bug-check-code-reference-live-dump.md)
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
-
-
-
-
-

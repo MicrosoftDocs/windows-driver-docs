@@ -1,5 +1,5 @@
 ---
-title: Windows driver-specific property files
+title: Windows Driver-Specific Property Files
 description: The driver property sheets have default settings for all of the tools that MSBuild uses to build any driver project.
 ms.date: 04/20/2017
 ---
@@ -64,12 +64,4 @@ These property settings are the common settings that are required to build any u
 
 <span id="WindowsDriver.UserMode.UMDF"></span><span id="windowsdriver.usermode.umdf"></span><span id="WINDOWSDRIVER.USERMODE.UMDF"></span>**WindowsDriver.UserMode.UMDF**  
 These property settings are the special settings that you must apply when you build a UMDF driver. MSBuild uses the **$(DriverType)** property to specify the driver type as **UMDF**, as in the following example: *&lt;DriverType&gt;UMDF&lt;/DriverType&gt;*.
-
- 
-
- 
-
-
-
-
 

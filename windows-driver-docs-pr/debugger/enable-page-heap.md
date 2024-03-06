@@ -1,5 +1,5 @@
 ---
-title: Enable page heap
+title: Enable Page Heap
 description: Enable page heap
 keywords: ["Enable page heap (global flag)"]
 ms.date: 05/23/2017
@@ -53,8 +53,3 @@ Setting this flag for an image file is the same as typing **gflags /p /enable** 
  
 
  
-
-
-
-
-

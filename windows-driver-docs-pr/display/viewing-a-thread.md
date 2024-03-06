@@ -6,47 +6,47 @@ ms.date: 05/10/2022
 
 # Viewing a Thread
 
-Understanding the thread execution display of GPUView is critical to see where threads are active and where they perform video-specific functionality. 
+Understanding the thread execution display of GPUView is critical to see where threads are active and where they perform video-specific functionality.
 
 The following diagram is a screen shot of a fraction of a millisecond worth of time showing only the active threads that span two processes—the System process and the GPUView idle process. In this view, there are three threads shown.
 
-![GPUView idle process](images/viewing-a-thread01.png) 
+:::image type="content" source="images/viewing-a-thread01.png" alt-text="Screenshot of GPUView idle process with active threads.":::
 
 With each thread, the name is on the left-hand side, and a gray rectangular area on the right-hand side is where the Execution Intervals are shown. This entire area is known as the Thread Area.
 
 ## Thread Name
 
-![Thread Name](images/viewing-a-thread02.png)
+:::image type="content" source="images/viewing-a-thread02.png" alt-text="Screenshot showing a thread name with ID, module, and function.":::
 
-In the red ellipse in the preceding graphic, the thread ID appears in the parentheses followed by the module and function that spawned the thread. In this case, thread 432 created by dxgmms1.sys at offset 0x37DC0. If symbols are loaded, GPUView shows the symbolic name rather than the offset number. 
+In the red ellipse in the preceding graphic, the thread ID appears in the parentheses followed by the module and function that spawned the thread. In this case, thread 432 created by dxgmms1.sys at offset 0x37DC0. If symbols are loaded, GPUView shows the symbolic name rather than the offset number.
 
 ## Thread Execution Area
 
-![Thread Execution Area](images/viewing-a-thread03.png)
+:::image type="content" source="images/viewing-a-thread03.png" alt-text="Screenshot of the Thread Execution Area in GPUView.":::
 
 The gray area to the right of the name, the Thread Execution Area, represents time when a thread could run. In this case, the thread did run twice during this time period.
 
 ## Thread Execution Interval
 
-![Thread Execution Interval](images/viewing-a-thread04.png)
+:::image type="content" source="images/viewing-a-thread04.png" alt-text="Screenshot of Thread Execution Intervals in GPUView.":::
 
 In this case, the white rectangles represent when the thread actually ran. This diagram shows two Thread Execution Intervals.
 
 ## Details Text
 
-![Details Text](images/viewing-a-thread05.png)
+:::image type="content" source="images/viewing-a-thread05.png" alt-text="Screenshot of Details Text above the Thread Execution Area.":::
 
 On the right-hand side just above the Thread Execution Area, details are provided regarding the thread's execution. The first number is the number of Execution Intervals during this time period. The second number, labeled iTime, is the amount of time DPCs ran on this thread. The third item is the total Execution Interval time, and the last item is the percentage of the viewport time that the thread ran.
 
 ## Details of the Execution Interval
 
-![Details of the Execution Interval](images/viewing-a-thread06.png)
+:::image type="content" source="images/viewing-a-thread06.png" alt-text="Screenshot showing details of a Thread Execution Interval.":::
 
 ## Background Color
 
-GPUView color-codes the background color of the Execution Interval to show the processor relationship. In the case of the preceding diagram, the Idle process has two threads, indicating that it is a dual-core machine. One processor was assigned the color white and the other bright green. As thread switches occur, GPUView paints the background with the processor information showing that when the system thread ran, it ran on the first processor. 
+GPUView color-codes the background color of the Execution Interval to show the processor relationship. In the case of the preceding diagram, the Idle process has two threads, indicating that it is a dual-core machine. One processor was assigned the color white and the other bright green. As thread switches occur, GPUView paints the background with the processor information showing that when the system thread ran, it ran on the first processor.
 
-GPUView currently displays eight unique processor colors and supports up to 32 unique processors. 
+GPUView currently displays eight unique processor colors and supports up to 32 unique processors.
 
 ## Thread Priority
 
@@ -56,7 +56,7 @@ The number displayed at the start of every Execution Interval is the thread's pr
 
 Hardware Interrupts or Deferred Procedure Calls can run on any thread at any point in time. GPUView displays this information as crosshatched time in the Execution Interval. Hardware interruptions are shown in red crosshatches and DPCs are shown in blue.
 
-![Hardware or DPC Interruptions](images/viewing-a-thread07.png)
+:::image type="content" source="images/viewing-a-thread07.png" alt-text="Screenshot of Hardware and DPC Interruptions in GPUView.":::
 
 In the preceding diagram, a DPC ran on the first idle core and, shortly thereafter, a hardware interruption occurred on the second idle core.
 
@@ -64,13 +64,13 @@ In the preceding diagram, a DPC ran on the first idle core and, shortly thereaft
 
 With some APIs, GPUView will show time spent in particular functions. This is known as Nested Execution in the Execution Interval. A significant portion of the video kernel logs events that denote when the thread has entered or left a particular routine.
 
-![Nested Execution Profiling](images/viewing-a-thread08.png)
+:::image type="content" source="images/viewing-a-thread08.png" alt-text="Screenshot of Nested Execution Profiling in GPUView.":::
 
-In the preceding diagram, the leftmost arrow points to Nested Execution time that is blue. Blue is a reserved color that denotes video kernel code. The second arrow points to Nested Execution time that is red. Red is reserved as video driver kernel code time. 
+In the preceding diagram, the leftmost arrow points to Nested Execution time that is blue. Blue is a reserved color that denotes video kernel code. The second arrow points to Nested Execution time that is red. Red is reserved as video driver kernel code time.
 
 ## Stack Walk Dots
 
-![Stack Walk Dots](images/viewing-a-thread09.png)
+:::image type="content" source="images/viewing-a-thread09.png" alt-text="Screenshot of Stack Walk Dots below Execution Intervals.":::
 
 If stack walking is enabled for the trace, GPUView shows them as dots just below the Execution Interval. In the preceding diagram, there are three Stack Walk dots for the two intervals.
 
@@ -78,4 +78,4 @@ If stack walking is enabled for the trace, GPUView shows them as dots just below
 
 If a thread is created or destroyed within the viewport time, GPUView will show the non-existence via a horizontal line. In the following diagram, the Viewport start time is represented by the vertical line just to the right of the thread name. The horizontal line, referenced by the red arrow, between it and the Execution Area represents time when the thread did not exist.
 
-![Non-Execution Time](images/viewing-a-thread10.png)
+:::image type="content" source="images/viewing-a-thread10.png" alt-text="Screenshot of Non-Execution Time in GPUView.":::

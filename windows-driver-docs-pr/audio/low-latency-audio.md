@@ -40,7 +40,7 @@ This article covers:
 
 The following diagram shows a simplified version of the Windows audio stack.
 
-:::image type="content" source="images/low-latency-audio-stack-diagram-1.png" alt-text="Diagram of the low latency audio stack showing apps, audio engine driver, and hardware.":::
+:::image type="content" source="images/low-latency-audio-stack-diagram-1.png" alt-text="Diagram showing the low latency audio stack with apps, audio engine driver, and hardware.":::
 
 Here's a summary of the latencies in the render path:
 audio processing objects
@@ -541,7 +541,7 @@ In order to measure the roundtrip latency for different buffer sizes, users need
 - If you're asked to reboot the system, select **Yes** to reboot.
 - After rebooting, the system will be using the inbox Microsoft HDAudio driver and not the third-party codec driver. Remember which driver you were using before so that you can fall back to that driver if you want to use the optimal settings for your audio codec.
 
-:::image type="content" source="images/low-latency-audio-roundtrip-latency.png" alt-text="Graph showing the differences in the roundtrip latency between WASAPI and AudioGraph with different buffer sizes.":::
+:::image type="content" source="images/low-latency-audio-roundtrip-latency.png" alt-text="Graph illustrating roundtrip latency differences between WASAPI and AudioGraph for various buffer sizes.":::
 
 The differences in the latency between WASAPI and AudioGraph are due to the following reasons:
 

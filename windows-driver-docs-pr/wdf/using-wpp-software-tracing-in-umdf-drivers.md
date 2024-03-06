@@ -66,12 +66,12 @@ You can view the UMDF log file by using either [TraceView](../devtest/traceview.
 
 [WDF Verifier](../devtest/wdf-verifier-control-application.md) enables you to send trace messages to both the UMDF trace log and your kernel debugger. (You shouldn't send trace messages to your kernel debugger by using the **-kd** option in [Tracelog](../devtest/tracelog.md), because **Tracelog** can disrupt trace logging within UMDF.)
 
-You can also use the [**!wmitrace**](../debugger/wmi-tracing-extensions--wmitrace-dll-.md) debugger extension to [view the trace messages](../devtest/how-do-i-send-trace-messages-to-a-kernel-debugger-.md) in the debugger:
+You can also use the [**!wmitrace**](../debuggercmds/wmi-tracing-extensions--wmitrace-dll-.md) debugger extension to [view the trace messages](../devtest/how-do-i-send-trace-messages-to-a-kernel-debugger-.md) in the debugger:
 
 1.  In WinDbg, attach to the instance of WUDFHost that hosts the driver. For more information, see [How to Enable Debugging of a UMDF Driver](enabling-a-debugger.md).
-2.  If your driver uses version 1.11 or later, and you're using the kernel debugger from Windows 8 or later, you can skip this step. If your driver uses a version of UMDF earlier than 1.11, use [**!wmitrace.tmffile**](../debugger/-wmitrace-tmffile.md) or [**!wmitrace.searchpath**](../debugger/-wmitrace-searchpath.md) to specify a platform-specific trace message format (.tmf) file, or a path to a .tmf file. The .tmf files are located in platform-specific subdirectories in the WDK.
+2.  If your driver uses version 1.11 or later, and you're using the kernel debugger from Windows 8 or later, you can skip this step. If your driver uses a version of UMDF earlier than 1.11, use [**!wmitrace.tmffile**](../debuggercmds/-wmitrace-tmffile.md) or [**!wmitrace.searchpath**](../debuggercmds/-wmitrace-searchpath.md) to specify a platform-specific trace message format (.tmf) file, or a path to a .tmf file. The .tmf files are located in platform-specific subdirectories in the WDK.
 
-3.  Use the [**!wmitrace.logdump**](../debugger/-wmitrace-logdump.md) command to display the contents of the trace buffers:
+3.  Use the [**!wmitrace.logdump**](../debuggercmds/-wmitrace-logdump.md) command to display the contents of the trace buffers:
 
     ```cpp
     !wmitrace.logdump WudfTrace

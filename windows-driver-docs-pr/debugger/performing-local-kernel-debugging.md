@@ -63,7 +63,7 @@ Local kernel debugging is a very delicate operation. Be careful that you do not 
 
 One of the most difficult aspects of local kernel debugging is that the machine state is constantly changing. Memory is paged in and out, the active process constantly changes, and virtual address contexts do not remain constant. However, under these conditions, you can effectively analyze things that change slowly, such as certain device states.
 
-Kernel-mode drivers and the Windows operating system frequently send messages to the kernel debugger by using **DbgPrint** and related functions. These messages are not automatically displayed during local kernel debugging. You can display them by using the [**!dbgprint**](-dbgprint.md) extension.
+Kernel-mode drivers and the Windows operating system frequently send messages to the kernel debugger by using **DbgPrint** and related functions. These messages are not automatically displayed during local kernel debugging. You can display them by using the [**!dbgprint**](../debuggercmds/-dbgprint.md) extension.
 
 ## <span id="livekd"></span><span id="LIVEKD"></span>LiveKD
 

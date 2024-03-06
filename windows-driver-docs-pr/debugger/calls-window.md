@@ -15,16 +15,16 @@ In WinDbg, you can view the call stack by entering commands or by using the Call
 ## <span id="Debugger_Command_Window"></span><span id="debugger_command_window"></span><span id="DEBUGGER_COMMAND_WINDOW"></span>Debugger Command Window
 
 
-You can view the call stack by entering one of the [**k (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) commands in the Debugger Command window.
+You can view the call stack by entering one of the [**k (Display Stack Backtrace)**](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) commands in the Debugger Command window.
 
 ## <span id="Calls_Window"></span><span id="calls_window"></span><span id="CALLS_WINDOW"></span>Calls Window
 
 
-As an alternative to the [**k**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command, you can view the call stack in the Calls window. To open the Calls window, choose **Call Stack** from the **View** menu.
+As an alternative to the [**k**](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command, you can view the call stack in the Calls window. To open the Calls window, choose **Call Stack** from the **View** menu.
 
 The following screen shot shows an example of a Calls window.
 
-![screen shot of the calls window.](images/window-calls.png)
+:::image type="content" source="images/window-calls.png" alt-text="Screenshot of the Calls window in WinDbg.":::
 
 ## <span id="ddk_calls_window_dbg"></span><span id="DDK_CALLS_WINDOW_DBG"></span>
 
@@ -35,7 +35,7 @@ In user mode, the stack trace is based on the stack of the current thread. For m
 
 In kernel mode, the stack trace is based on the current register context. You can set the register context to match a specific thread, context record, or trap frame. For more information about setting the register context, see [Register Context](changing-contexts.md#register-context).
 
-The Calls window has a toolbar that contains several buttons and has a shortcut menu with additional commands. To access this menu, select and hold (or right-click) the title bar or select the icon near the upper-right corner of the window (![screen shot of the button that displays the calls window toolbar shortcut menu.](images/tbcall.png)). The toolbar and menu contain the following buttons and commands:
+The Calls window has a toolbar that contains several buttons and has a shortcut menu with additional commands. To access this menu, select and hold (or right-click) the title bar or select the icon near the upper-right corner of the window (:::image type="content" source="images/tbcall.png" alt-text="Screenshot of the button displaying the Calls window toolbar shortcut menu in WinDbg.":::
 
 -   **Raw args** displays the first three parameters that are passed to the function. On an x86-based processor, this display includes the first three parameters that are passed to the function ("Args to Child").
 
@@ -60,8 +60,3 @@ For more information about the register context and the local context, see [Chan
  
 
  
-
-
-
-
-

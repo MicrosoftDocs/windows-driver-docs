@@ -1,5 +1,5 @@
 ---
-title: Implementation requirements for various form factors
+title: Implementation Requirements for Various Form Factors
 description: This topic describes implementation requirements for various form factors.
 ms.date: 10/17/2018
 ---

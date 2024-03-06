@@ -1,5 +1,5 @@
 ---
-title: C28153 warning
+title: C28153 Warning
 description: Warning C28153 The value for an IRQL from annotation could not be evaluated in this context.
 keywords:
 - warnings listed WDK PREfast for Drivers
@@ -33,12 +33,4 @@ warning C28153: The value for an IRQL from annotation could not be evaluated in 
 This warning indicates that the Code Analysis tool cannot interpret the function annotation because the annotation is not coded correctly. As a result, the Code Analysis tool cannot determine the specified IRQL value.
 
 This warning can occur with any of the driver-specific annotations that mention an IRQL when the Code Analysis tool cannot evaluate the expression for the IRQL.
-
- 
-
- 
-
-
-
-
 

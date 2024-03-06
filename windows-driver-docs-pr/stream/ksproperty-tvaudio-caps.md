@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_TVAUDIO\_CAPS
+title: KSPROPERTY_TVAUDIO_CAPS
 description: The KSPROPERTY\_TVAUDIO\_CAPS property retrieves the capabilities of the TV audio device. This property must be implemented.
 keywords: ["KSPROPERTY_TVAUDIO_CAPS Streaming Media Devices"]
 topic_type:

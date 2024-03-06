@@ -1,5 +1,5 @@
 ---
-title: MSFT\_TargetPortToTargetPortal class
+title: MSFT_TargetPortToTargetPortal Class
 description: Association between TargetPort and TargetPortal.
 ms.assetid: 83174B58-7A06-4431-8453-CA948CD900D4
 keywords:

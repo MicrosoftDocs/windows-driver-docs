@@ -1,5 +1,5 @@
 ---
-title: SetAttributes method of the MSFT\_StorageTier class
+title: SetAttributes Method of the MSFT_StorageTier Class
 description: Updates or sets various attributes on the storage tier.
 ms.assetid: C949619B-0197-45C0-B3A1-9E7ECCE6D272
 keywords:

@@ -78,7 +78,7 @@ Some specific filters take arguments that restrict which events the filter match
  
 
 **Note**  
-1.  The argument uses the [string wildcard syntax](string-wildcard-syntax.md) and is compared with the image name (ignoring path) when the event occurs. If the name of the module or process is not available, it is considered a match.
+1.  The argument uses the [string wildcard syntax](../debuggercmds/string-wildcard-syntax.md) and is compared with the image name (ignoring path) when the event occurs. If the name of the module or process is not available, it is considered a match.
 
 2.  The argument is an expression that is evaluated by the engine when the argument is set.
 

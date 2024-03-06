@@ -20,7 +20,7 @@ Once a device successfully connects to Wi-Fi, it must maintain that connection, 
 | **Measurement criteria** | Device / AP pair aggregation |
 | **Minimum instances** | 1,000 instances |
 | **Passing criteria** | <= 26% of Instances don't end in an unexpected disconnect |
-| **Measure ID** | 32321753 (Legacy), 40408290 |
+| **Measure ID** | 40408290 |
 
 ## Calculation
 

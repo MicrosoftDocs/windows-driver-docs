@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_BDA\_SIGNAL\_LOCK\_CAPS
+title: KSPROPERTY_BDA_SIGNAL_LOCK_CAPS
 description: Clients use KSPROPERTY\_BDA\_SIGNAL\_LOCK\_CAPS to determine the lock types that the driver can support for a signal.
 keywords: ["KSPROPERTY_BDA_SIGNAL_LOCK_CAPS Streaming Media Devices"]
 topic_type:

@@ -19,7 +19,7 @@ A [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_li
 
 The following figure shows the fields in a NET\_BUFFER\_LIST structure.
 
-![diagram illustrating the fields in a net\-buffer\-list structure.](images/netbufferlist.png)
+:::image type="content" source="images/netbufferlist.png" alt-text="Diagram illustrating the fields in a NET_BUFFER_LIST structure.":::
 
 The NET\_BUFFER\_LIST structure includes a [**NET\_BUFFER\_LIST\_HEADER**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list_header) structure in the **NetBufferListHeader** member. The NET\_BUFFER\_LIST\_HEADER structure includes a [**NET\_BUFFER\_LIST\_DATA**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list_data) structure in the **NetBufferListData** member. You should use NDIS macros to access NET\_BUFFER\_LIST structure members. For more information about these macros, see the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure reference page.
 

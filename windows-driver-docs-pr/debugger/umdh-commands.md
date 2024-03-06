@@ -20,8 +20,3 @@ UMDH has two different modes, each with its own command syntax and parameters:
  
 
  
-
-
-
-
-

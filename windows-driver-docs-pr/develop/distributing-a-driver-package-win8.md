@@ -1,5 +1,5 @@
 ---
-title: Distributing a driver package
+title: Distributing a Driver Package
 description: Distributing a driver package
 ms.date: 04/20/2017
 ---

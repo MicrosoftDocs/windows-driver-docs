@@ -26,8 +26,3 @@ If your symbol store was created by using SymStore, you can find the full path t
  
 
  
-
-
-
-
-

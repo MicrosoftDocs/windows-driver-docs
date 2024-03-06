@@ -140,11 +140,3 @@ Entries for the certificate specification are case-sensitive but can be specifie
 
 For more information about how to create a certificate to import to an IEEE 1667-compliant USB storage device, see the **-New** parameter of the [**/Add**](enhstor-add-switch.md) and [**/Replace**](-replace-switch.md) switches of the Enhanced Storage Certificate Management tool.
 
- 
-
- 
-
-
-
-
-

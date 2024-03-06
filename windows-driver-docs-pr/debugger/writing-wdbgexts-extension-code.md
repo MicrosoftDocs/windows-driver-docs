@@ -40,8 +40,3 @@ For a full list of these functions, see [WdbgExts Functions](wdbgexts-functions.
  
 
  
-
-
-
-
-

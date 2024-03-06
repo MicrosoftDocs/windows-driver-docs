@@ -46,7 +46,7 @@ You can manually enable UMDF Verifier by setting **VerifierOn** to a nonzero val
 
  
 
-To determine whether UMDF Verifier is enabled, set a breakpoint at a location after your driver calls [**WdfDriverCreate**](/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdrivercreate) and use the [**!wdfdriverinfo**](../debugger/-wdfkd-wdfdriverinfo.md) debugger extension command:
+To determine whether UMDF Verifier is enabled, set a breakpoint at a location after your driver calls [**WdfDriverCreate**](/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdrivercreate) and use the [**!wdfdriverinfo**](../debuggercmds/-wdfkd-wdfdriverinfo.md) debugger extension command:
 
 **!wdfkd.wdfdriverinfo** *&lt;your drivername&gt;* **** **0x1**
 

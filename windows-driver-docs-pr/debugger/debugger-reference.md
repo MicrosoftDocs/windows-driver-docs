@@ -17,7 +17,7 @@ This reference section includes:
 
 [Environment Variables](environment-variables.md)
 
-[Debugger Commands](debugger-commands.md)
+[Debugger Commands](../debuggercmds/debugger-commands.md)
 
 [Debugger-Related APIs](debugger-related-apis.md)
 
@@ -27,8 +27,3 @@ This reference section includes:
  
 
  
-
-
-
-
-

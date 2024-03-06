@@ -32,8 +32,3 @@ For additional information on working with the 64 bit pointers see [Using the DE
  
 
  
-
-
-
-
-

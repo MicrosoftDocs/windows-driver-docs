@@ -45,7 +45,7 @@ In version 10.0.25310.1001 and later of the debugger engine, ambiguous breakpoin
 
 [Breakpoint Syntax](breakpoint-syntax.md)
 
-[bp, bu, bm (Set Breakpoint)](bp--bu--bm--set-breakpoint-.md)
+[bp, bu, bm (Set Breakpoint)](../debuggercmds/bp--bu--bm--set-breakpoint-.md)
 
 [Ambiguous breakpoint resolution](ambiguous-breakpoint-resolution.md)
 

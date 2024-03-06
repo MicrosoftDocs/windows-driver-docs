@@ -1,5 +1,5 @@
 ---
-title: Windows kernel obsolete routines
+title: Windows Kernel Obsolete Routines
 description: Windows kernel obsolete routines
 ms.date: 10/17/2018
 ---
