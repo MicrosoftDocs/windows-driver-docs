@@ -36,7 +36,15 @@ Starting in Windows 11, version 24H2, [bind links](/windows/win32/bindlink/) can
 
 ## Network drivers
 
-UDP Receive Segment Coalescing Offload (URO) is a new hardware offload feature that enables network interface cards (NICs) to coalesce UDP receive segments.  For more information, see [UDP Receive Segment Coalescing Offload (URO)](./network/udp-rsc-offload.md) and [NetAdapterCx URO](./netcx/rsc-offload.md).
+* [WiFiCx Wi-Fi 7](./netcx/wificx-wi-fi-7.md) introduces support for Wi-Fi 7 features, providing faster connectivity speeds, lower latency, and improved security. WiFiCx Wi-Fi 7 enables: 
+  * Multi-Link Operation (MLO) with roaming differentiation to leverage multiple simultaneous channels to the Wi-Fi access point (AP). 
+  * Enhanced capabilities for WPA3-SAE authentication and Opportunistic Wireless Encryption (OWE) with GCMP-256 cipher.
+
+* [WiFiCx WPA3 SoftAP](./netcx/wificx-wpa3-softap.md) enables devices to set up a Soft Access Point (SoftAP) using the Wi-Fi Protected Access 3 - Simultaneous Authentication of Equals (WPA3-SAE) security protocol.
+
+* [WiFiCx QoS R1](./netcx/qos-r1.md) introduces advanced traffic management capabilities for WiFiCx devices. QoS R1 enables prioritization of Wi-Fi data packets through Mirrored Stream Classification Service (MSCS) and QoS Mapping (DSCP-to-UP Mapping).
+
+* [UDP Receive Segment Coalescing Offload (URO)](./network/udp-rsc-offload.md) is a new hardware offload feature that enables network interface cards (NICs) to coalesce UDP receive segments. URO is available to NDIS and [NetAdapterCx](./netcx/rsc-offload.md) drivers. 
 
 ## Print devices
 

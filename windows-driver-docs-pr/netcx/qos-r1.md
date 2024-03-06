@@ -1,12 +1,12 @@
 ---
-title: QoS R1
+title: WiFiCx QoS R1
 description: This article specifies the WiFiCx driver modifications required for QoS R1 features, including MSCS and QoS Mapping.
 ms.date: 03/01/2024
 ---
 
-# QoS R1
+# WiFiCx QoS R1
 
-Quality of Service Revision 1 (QoS R1) introduces advanced traffic management capabilities for devices. QoS R1 enables prioritization of Wi-Fi data packets through Mirrored Stream Classification Service (MSCS) and QoS Mapping (DSCP-to-UP Mapping). These features enhance network efficiency and user experience by applying appropriate QoS policies to different types of traffic. 
+QoS R1 introduces advanced traffic management capabilities for WiFiCx devices. QoS R1 enables prioritization of Wi-Fi data packets through Mirrored Stream Classification Service (MSCS) and QoS Mapping (DSCP-to-UP Mapping). These features enhance network efficiency and user experience by applying appropriate QoS policies to different types of traffic. 
 
 QoS R1 functionality encompasses sections 3.1 and 3.2 in the [WFA Wi-Fi QoS Management Specification](https://www.wi-fi.org/file/wi-fi-qos-management-specification).
 
