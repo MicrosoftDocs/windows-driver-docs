@@ -59,7 +59,7 @@ For successful associations in which QoS Mapping support is indicated, the drive
 1. Include the [WDI_TLV_ASSOCIATION_RESPONSE_FRAME](wdi-tlv-association-response-frame.md) in the [WDI_TLV_ASSOCIATION_RESULT](wdi-tlv-association-result.md). 
 1. Indicate incoming QoS Map Configure Action Frames to the OS via  [NDIS_STATUS_WDI_INDICATION_ACTION_FRAME_RECEIVED](ndis-status-wdi-indication-action-frame-received.md).
 
-When QoS Mapping support is indicated, the driver must support [Wake on Incoming Action Frame](#wake-on-incoming-action-frame) for DSCP. When going to Dx with QoS Mapping established, the OS will configure the driver to wake on receipt of a QoS Map Configure Action Frame.
+When QoS Mapping support is indicated, the driver must support [Wake on Incoming Action Frame](#wake-on-incoming-action-frame-support) for DSCP. When going to Dx with QoS Mapping established, the OS will configure the driver to wake on receipt of a QoS Map Configure Action Frame.
 
 ## Wake on Incoming Action Frame support
 
