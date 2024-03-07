@@ -98,7 +98,7 @@ Minidump USBPORT DEBUG_LOG buffer size 32768, entries 1024, index 400
 ...
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)

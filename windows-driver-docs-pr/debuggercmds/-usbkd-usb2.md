@@ -60,7 +60,7 @@ dt usbport!_HCD_ENDPOINT ffffe0000212d970  !usbep ffffe0000212d970
     Period,offset,Ordinal(32,0,0)   smask,cmask(00,00  ........ , ........) maxpkt 1
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)

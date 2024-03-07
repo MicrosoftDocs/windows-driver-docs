@@ -80,7 +80,7 @@ LOG@: ffffe000023201a0 (usbhub!_DEVICE_EXTENSION_HUB)
 [ 009] ffffe00002321dc0 pqDP 0000000000000000 ffffe000021c11d8 0000000000000006
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)

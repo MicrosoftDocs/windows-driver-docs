@@ -107,7 +107,7 @@ fffff806`d24992b8 HdAudio!CAzMixertopoMiniport::`vftable' = <no type information
 ...
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**dt (Display Type)**](dt--display-type-.md)

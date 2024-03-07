@@ -85,7 +85,7 @@ EventCallbacks:
     EvtUsbDeviceEndpointAdd: (0xfffff880044edfc8) USBXHCI!Endpoint_UcxEvtUsbDeviceEndpointAdd
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [USB 3.0 Extensions](usb-3-extensions.md)

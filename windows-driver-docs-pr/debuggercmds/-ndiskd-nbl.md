@@ -91,7 +91,7 @@ By clicking on the "Dump data payload" link from the previous example or by ente
 NET_BUFFER ffffdf8014952610
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [Network Driver Design Guide](../network/index.md)

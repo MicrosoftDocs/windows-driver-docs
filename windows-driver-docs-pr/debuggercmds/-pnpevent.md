@@ -52,7 +52,7 @@ Specifies the address of a device event to display. If this is zero or omitted, 
 
 See [Plug and Play Debugging](../debugger/plug-and-play-debugging.md) for applications of this extension command. For information about Plug and Play drivers, see the Windows Driver Kit (WDK) documentation.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [Plug and Play and Power Debugger Commands](../debugger/plug-and-play-and-power-debugger-commands.md)

@@ -49,7 +49,7 @@ In WinDbg, the **.enable\_unicode** command also affects the display in the [Loc
 
 You can also select or clear **Display 16-bit values** as Unicode on the shortcut menu of the Locals or Watch window to specify the display for USHORT arrays and pointers.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ds, dS (Display String)**](ds--ds--display-string-.md)

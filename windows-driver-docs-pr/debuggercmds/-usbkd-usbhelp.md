@@ -22,7 +22,7 @@ The **!usbkd.usbhelp** command displays help for the USB 2.0 debugger extension 
 
 Usbkd.dll
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)

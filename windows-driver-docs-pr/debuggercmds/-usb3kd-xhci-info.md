@@ -78,7 +78,7 @@ Now you can pass the address of the device extension to the **!xhci\_info** comm
     !pci 100 0x30 0x0 0x0
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [USB 3.0 Extensions](usb-3-extensions.md)

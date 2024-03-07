@@ -154,7 +154,7 @@ STATE
 
 This shows that the WFP 802.3 MAC Layer LightWeight Filter sits above the QoS Packet Scheudler filter in the network interface stack. You can confirm this by running the [**!ndiskd.netreport**](-ndiskd-netreport.md) extension, which shows you the network stack visually.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [Network Driver Design Guide](../network/index.md)

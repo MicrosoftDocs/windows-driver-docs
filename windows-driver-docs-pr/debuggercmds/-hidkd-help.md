@@ -22,7 +22,7 @@ The **!hidkd.help** command displays help for the HID debugger extension command
 
 Hidkd.dll
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [HID Extensions](hid-extensions.md)

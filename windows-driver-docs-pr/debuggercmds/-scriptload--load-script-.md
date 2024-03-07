@@ -76,7 +76,7 @@ Available Script Providers:
     JavaScript (extension '.js')
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**.scriptunload (Unload Script)**](-scriptunload--unload-script-.md)

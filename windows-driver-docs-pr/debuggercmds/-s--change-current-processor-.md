@@ -73,7 +73,7 @@ Use the following command to switch between processors:
 
 Now the second processor in the computer that is being debugged.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [Multiprocessor Syntax](multiprocessor-syntax.md)

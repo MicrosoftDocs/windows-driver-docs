@@ -37,7 +37,7 @@ You can use the !bthinfo command to display the address of USB transfer context.
 
 Bthkd.dll
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [Bluetooth Extensions (Bthkd.dll)](bluetooh-extensions--bthkd-dll-.md)

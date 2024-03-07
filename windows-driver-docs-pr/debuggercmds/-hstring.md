@@ -31,7 +31,7 @@ The address of an **HSTRING**.
 
 The **HSTRING** data type supports strings that have embedded NULL characters. However, the **!hstring** extension displays the string only up to the first NULL character. To see the entire string including the embedded NULL characters, use the [**!hstring2**](-hstring2.md) extension.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [Windows Runtime Debugger Commands](../debugger/windows-runtime-debugger-commands.md)

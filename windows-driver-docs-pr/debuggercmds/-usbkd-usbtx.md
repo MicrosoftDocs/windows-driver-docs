@@ -89,7 +89,7 @@ NumberOfElements = 1
      :phys 00000000'ded90000 len 0x00001000(4096)
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)

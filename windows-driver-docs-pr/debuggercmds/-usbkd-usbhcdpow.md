@@ -107,7 +107,7 @@ dt USBPORT!_FDO_EXTENSION ffffe0000213c5a0
 ...
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)

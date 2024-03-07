@@ -88,7 +88,7 @@ EventCallbacks:
     EvtEndpointReset: (0xfffff880044bb854) USBXHCI!Endpoint_UcxEvtEndpointReset
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [USB 3.0 Extensions](usb-3-extensions.md)

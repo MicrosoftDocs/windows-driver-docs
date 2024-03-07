@@ -89,7 +89,7 @@ Hub Event History:
     ...
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [USB 3.0 Extensions](usb-3-extensions.md)

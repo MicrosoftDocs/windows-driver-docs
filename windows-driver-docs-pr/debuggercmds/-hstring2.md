@@ -27,7 +27,7 @@ The **!hstring2** extension displays an entire **HSTRING** including any embedde
 <span id="Address"></span><span id="address"></span><span id="ADDRESS"></span>*Address*  
 The address of an **HSTRING**.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [Windows Runtime Debugger Commands](../debugger/windows-runtime-debugger-commands.md)

@@ -26,7 +26,7 @@ The **!bthkd.sdpinterface** command displays information about the SDP interface
 
 Bthkd.dll
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [Bluetooth Extensions (Bthkd.dll)](bluetooh-extensions--bthkd-dll-.md)

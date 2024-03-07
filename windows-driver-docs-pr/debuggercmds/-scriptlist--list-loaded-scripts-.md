@@ -53,7 +53,7 @@ Command Loaded Scripts:
 
 Before using any of the .script commands, a scripting provider needs to be loaded.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [JavaScript Debugger Scripting](../debugger/javascript-debugger-scripting.md)

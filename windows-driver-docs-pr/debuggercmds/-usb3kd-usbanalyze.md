@@ -32,7 +32,7 @@ The display is verbose.
 
 Usb3kd.dll
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [USB 3.0 Extensions](usb-3-extensions.md)

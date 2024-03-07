@@ -501,7 +501,7 @@ The SCSI minor function codes are as follows:
 
  
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**IRP**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp)

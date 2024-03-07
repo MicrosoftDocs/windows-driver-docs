@@ -35,7 +35,7 @@ The name of the file (not including the .etl extension) in which to save the rec
 
 Rcdrkd.dll
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [RCDRKD Extensions](rcdrkd-extensions.md)

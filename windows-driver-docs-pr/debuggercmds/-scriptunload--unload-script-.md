@@ -58,7 +58,7 @@ Before using any of the .script commands, a scripting provider needs to be loade
 0:000> .load C:\ScriptProviders\jsprovider.dll
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**.scriptload (Load Script)**](-scriptload--load-script-.md)

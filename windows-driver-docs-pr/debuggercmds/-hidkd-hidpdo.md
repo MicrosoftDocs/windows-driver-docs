@@ -68,7 +68,7 @@ FDO  VendorID:0x045E(Microsoft Corporation) ProductID:0x0745 Version:0x0634
   Wait Wake IRP : !irp 0xffffe00004fc57d0 (pending on \Driver\HidUsb)
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [HID Extensions](hid-extensions.md)

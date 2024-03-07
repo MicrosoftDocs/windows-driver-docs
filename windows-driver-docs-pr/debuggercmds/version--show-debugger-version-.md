@@ -34,7 +34,7 @@ Do not confuse this command with the [**!version (Show DLL Version)**](-version.
 
  
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**CTRL+W (Show Debugger Version)**](../debugger/ctrl-w--show-debugger-version-.md)

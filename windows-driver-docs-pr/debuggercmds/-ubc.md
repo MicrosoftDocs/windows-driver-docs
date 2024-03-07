@@ -37,7 +37,7 @@ Kdexts.dll
 
 This will permanently delete a breakpoint set with [**!ubp**](-ubp.md).
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**!ubd**](-ubd.md)

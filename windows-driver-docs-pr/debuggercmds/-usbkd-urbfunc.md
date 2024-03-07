@@ -42,7 +42,7 @@ Here is an example of the output of **!urbfunc**.
 URB_FUNCTION_ISOCH_TRANSFER (0xA)
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)

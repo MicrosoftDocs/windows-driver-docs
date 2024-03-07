@@ -22,7 +22,7 @@ The **!gpiokd.help** command displays help for the [GPIO debugger extension comm
 
 Gpiokd.dll
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [GPIO Extensions](gpio-extensions.md)

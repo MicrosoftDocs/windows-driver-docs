@@ -26,7 +26,7 @@ The [**!usb3kd.dsf**](-usb3kd-device-info.md) extension is a toggle command that
 
 Usb3kd.dll
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [USB 3.0 Extensions](usb-3-extensions.md)

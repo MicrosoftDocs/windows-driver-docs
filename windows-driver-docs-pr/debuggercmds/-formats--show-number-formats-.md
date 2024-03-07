@@ -58,7 +58,7 @@ Evaluate expression:
 
 The **Time** field displays a 32-bit value in CRT time stamp format and displays a 64-bit value in FILETIME format. You can distinguish these formats because the FILETIME format includes milliseconds and the CRT format does not.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**? (Evaluate Expression)**](---evaluate-expression-.md)

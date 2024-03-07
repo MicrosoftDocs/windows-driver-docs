@@ -25,7 +25,7 @@ The **.urestart** command unregisters the debugging session for restart in case 
 
 This command does not work for elevated debugger sessions.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**.rrestart**](-rrestart--register-for-restart-.md)

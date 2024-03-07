@@ -101,7 +101,7 @@ On Host Controller (0x8086, 0x2937)
 ...
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)

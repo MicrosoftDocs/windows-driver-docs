@@ -69,7 +69,7 @@ You can also use the **j** command inside other commands. For example, you can u
 
 This style of conditional breakpoint is no longer recommended, as a simpler form is now available in the debugger. For more information about the syntax of conditional breakpoints, see [Setting a Conditional Breakpoint](../debugger/setting-a-conditional-breakpoint.md).
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**z (Execute While)**](z--execute-while-.md)

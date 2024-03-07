@@ -56,7 +56,7 @@ Log dump command                           Log ID                   Size
 !rcdrlogdump  usbxhci -a fffffa8005311780  03 1033 0194             1024
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [RCDRKD Extensions](rcdrkd-extensions.md)

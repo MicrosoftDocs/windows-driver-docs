@@ -76,7 +76,7 @@ ExceptionList: !usblist ffffe000011f8498, EL [Empty]
 In the preceding output, `ffffe000011f8498` is the address of the exception list. If the exception list is not empty, it will contain addresses of **\_HUB\_EXCEPTION\_RECORD** structures.
 
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)

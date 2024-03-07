@@ -48,7 +48,7 @@ In CDB or KD, you can view source files in the [Debugger Command window](../debu
 
 For more information about source files, source paths, and other ways to load source files, see [Source Path](../debugger/source-path.md).
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ls, lsa (List Source Lines)**](ls--lsa--list-source-lines-.md)

@@ -14,40 +14,19 @@ api_type:
 
 # .ecxr (Display Exception Context Record)
 
-
 The **.ecxr** command displays the context record that is associated with the current exception.
 
 ```dbgcmd
 .ecxr
 ```
 
-## <span id="ddk_meta_display_exception_context_record_dbg"></span><span id="DDK_META_DISPLAY_EXCEPTION_CONTEXT_RECORD_DBG"></span>
+## Environment
 
-
-### Environment
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Modes</strong></p></td>
-<td align="left"><p>User mode only</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Targets</strong></p></td>
-<td align="left"><p>Crash dump only (minidumps only)</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Platforms</strong></p></td>
-<td align="left"><p>All</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Item      | Description                      |
+|-----------|----------------------------------|
+| Modes     | User mode                        |
+| Targets   | Crash dump only (minidumps only) |
+| Platforms | All                              |
 
 ### Additional Information
 
@@ -61,17 +40,10 @@ This command also instructs the debugger to use the context record that is assoc
 
 The [**.excr**](-excr--display-exception-context-record-.md) command is a synonym command and has identical functionality.
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**.excr**](-excr--display-exception-context-record-.md)
 
- 
+[Changing Contexts](../debugger/changing-contexts.md)
 
- 
-
-
-
-
-
-
+[Register Context](../debugger/changing-contexts.md#register-context)

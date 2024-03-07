@@ -40,7 +40,7 @@ Here is an example of the output of **!usbkd.usbver**.
 USBD VER 600 USB stack is VISTA
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)

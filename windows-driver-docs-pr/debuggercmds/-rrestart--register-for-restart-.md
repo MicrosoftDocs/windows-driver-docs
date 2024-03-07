@@ -25,7 +25,7 @@ The **.rrestart** command registers the debugging session for restart in case of
 
 This command does not work for elevated debugger sessions.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**.urestart**](-urestart--unregister-for-restart-.md)

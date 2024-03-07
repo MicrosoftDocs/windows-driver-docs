@@ -50,7 +50,7 @@ kd> !ubl
 
 Each line in this listing contains the breakpoint number, the status (**e** for enabled or **d** for disabled), the virtual address used to set the breakpoint, the physical address of the actual breakpoint, the byte position, and the contents of this memory location at the time the breakpoint was set.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**!ubc**](-ubc.md)

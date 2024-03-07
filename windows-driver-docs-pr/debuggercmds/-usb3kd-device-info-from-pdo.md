@@ -128,7 +128,7 @@ Topology
     !ucx_device 0xfffffa8005992840 !xhci_deviceslots 0xfffffa80051d1940 1
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [USB 3.0 Extensions](usb-3-extensions.md)

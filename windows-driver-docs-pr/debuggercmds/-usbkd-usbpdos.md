@@ -76,7 +76,7 @@ PDO Times:
 ##     Stat: PDO Set_D0 time: 0x0(0) ms
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)

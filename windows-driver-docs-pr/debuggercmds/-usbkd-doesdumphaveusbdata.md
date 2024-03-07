@@ -61,7 +61,7 @@ Checking for GuidUsbPortExt information...
 GuidUsbPortExt Exists (DEVICE_EXTENSION + DeviceDataSize ) = 2250
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)

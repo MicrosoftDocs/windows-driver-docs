@@ -34,7 +34,7 @@ lsc
 
  
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ls, lsa (List Source Lines)**](ls--lsa--list-source-lines-.md)

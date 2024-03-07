@@ -63,7 +63,7 @@ The **ob** command writes a single byte, the **ow** command writes a word, and t
 
 Make sure that you do not send a word or a double-word to a port that does not support this size.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ib, id, iw (Input from Port)**](ib--iw--id--input-from-port-.md)

@@ -26,7 +26,7 @@ The **!bthkd.l2capinterface** command displays information about the L2CAP inter
 
 Bthkd.dll
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [Bluetooth Extensions (Bthkd.dll)](bluetooh-extensions--bthkd-dll-.md)

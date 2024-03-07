@@ -26,7 +26,7 @@ The **!bthkd.hciinterface** command displays the bthport!\_HCI\_INTERFACE struct
 
 Bthkd.dll
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [Bluetooth Extensions (Bthkd.dll)](bluetooh-extensions--bthkd-dll-.md)

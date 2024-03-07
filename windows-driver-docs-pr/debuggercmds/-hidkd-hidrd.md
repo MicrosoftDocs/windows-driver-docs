@@ -71,7 +71,7 @@ Collection (Application).................................0x0004: A1 01
 End Collection ()........................................0x0126: C0
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [HID Extensions](hid-extensions.md)

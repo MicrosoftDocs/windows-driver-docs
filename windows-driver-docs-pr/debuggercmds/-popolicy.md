@@ -74,7 +74,7 @@ SYSTEM_POWER_POLICY (R.1) @ 0x80164d58
   MinThrottle:             0%
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [Plug and Play and Power Debugger Commands](../debugger/plug-and-play-and-power-debugger-commands.md)
