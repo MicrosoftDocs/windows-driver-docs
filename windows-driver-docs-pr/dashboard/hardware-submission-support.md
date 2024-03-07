@@ -1,11 +1,11 @@
 ---
-title: Get support for Partner Center dashboard issues
-description: Get support for Partner Center dashboard issues
+title: Get support for Partner Center dashboard and HLK issues
+description: Get support for Partner Center dashboard and HLK issues
 ms.topic: article
 ms.date: 03/07/2024
 ---
 
-# Contract technical support for Partner Center dashboard issues
+# Contact technical support for dashboard and HLK issues
 
 If your issue is technical and you can't find answers in the documentation, you can contact Windows developer support.
 
