@@ -70,7 +70,7 @@ Preparsed Data at 0xffffe000029d1010
   ...
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [HID Extensions](hid-extensions.md)

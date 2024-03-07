@@ -37,7 +37,7 @@ Kdexts.dll
 
 This is used to re-enable a breakpoint that was disabled by [**!ubd**](-ubd.md).
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**!ubc**](-ubc.md)

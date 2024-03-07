@@ -110,7 +110,7 @@ PortChangelist: !usblist ffffe000021bf1c8, CL [Empty]
 ...
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)

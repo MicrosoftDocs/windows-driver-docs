@@ -36,7 +36,7 @@ The name of the driver. The driver name can be used instead of the trace provide
 
 Rcdrkd.dll
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [RCDRKD Extensions](rcdrkd-extensions.md)

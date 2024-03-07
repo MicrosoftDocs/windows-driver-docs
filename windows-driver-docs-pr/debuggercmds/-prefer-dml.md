@@ -31,7 +31,7 @@ By default, all commands will provide plain text output.
 <span id="_______1"></span> 1  
 By default, commands that are capable of providing DML output will provide DML output.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [Debugger Markup Language Commands](../debugger/debugger-markup-language-commands.md)

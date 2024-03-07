@@ -56,7 +56,7 @@ Specifies the address of the MSR.
 
 The **rdmsr** command can display MSR's on x86-based and x64-based platforms. The MSR definitions are platform-specific.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**wrmsr (Write MSR)**](wrmsr--write-msr-.md)

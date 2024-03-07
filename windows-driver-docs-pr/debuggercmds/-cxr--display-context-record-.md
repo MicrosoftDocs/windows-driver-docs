@@ -2,7 +2,7 @@
 title: .cxr (Display Context Record)
 description: The .cxr command displays the context record saved at the specified address. It also sets the register context.
 keywords: ["Display Context Record (.cxr) command", "context record", ".cxr (Display Context Record) Windows Debugging"]
-ms.date: 05/23/2017
+ms.date: 11/02/2023
 topic_type:
 - apiref
 ms.topic: reference
@@ -14,41 +14,33 @@ api_type:
 
 # .cxr (Display Context Record)
 
-
 The **.cxr** command displays the context record saved at the specified address. It also sets the register context.
 
 ```dbgsyntax
 .cxr [Options] [Address]  
 ```
 
-## <span id="ddk_meta_display_context_record_dbg"></span><span id="DDK_META_DISPLAY_CONTEXT_RECORD_DBG"></span>Parameters
+## Parameters
 
+*Options* - Can be any combination of the following options.
 
-*Options*
-Can be any combination of the following options:
-
-<span id="_f_Size"></span><span id="_f_size"></span><span id="_F_SIZE"></span>**/f** **** *Size*  
+<span id="_f_Size"></span><span id="_f_size"></span><span id="_F_SIZE"></span>**/f** *Size*  
 Forces the context size to equal the value of *Size*, in bytes. This can be useful when the context does not match the actual target -- for example, when using an x86 context on a 64-bit target during *WOW64* debugging. If an invalid or inconsistent size is specified, the error "Unable to convert context to canonical form" will be displayed.
 
 <span id="_w"></span><span id="_W"></span>**/w**  
 Writes the current context to memory, and displays the address of the location where it was written.
 
-<span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
-Address of the system context record.
+<span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address* - Address of the system context record (CONTEXT structure) to be read/written. An address of -1, causes the CONTEXT structure to be read from the dump file. This is the same behavior as [.ecxr](-ecxr--display-exception-context-record-.md). An address of 0 is not supported. When debugging a dump file, omitting the address resets the register context to the default context for that thread (User Mode) or processor (Kernel Mode).
 
-Omitting the address does not display any context record information, but it does reset the register context.
+## Environment
 
-### Environment
+| Item      | Description            |
+|-----------|------------------------|
+| Modes     | User mode, kernel mode |
+| Targets   | Live, crash dump       |
+| Platforms | All                    |
 
-|  Item  | Description          |
-|--------|----------------------|
-|Modes   |User mode, kernel mode|
-|Targets |Live, crash dump      |
-|Platforms|All                  |
-
- 
-
-### Additional Information
+## Additional Information
 
 For more information about the register context and other context settings, see [Changing Contexts](../debugger/changing-contexts.md).
 
@@ -62,11 +54,14 @@ The **.cxr** command is often used to debug bug check 0x1E. For more information
 
 The **.cxr /w** command writes the context to memory and displays the address where it has been stored. This address can be passed to [**.apply\_dbp (Apply Data Breakpoint to Context)**](-apply-dbp--apply-data-breakpoint-to-context-.md) if you need to apply data breakpoints to this context.
 
- 
+## See also
 
- 
+[Changing Contexts](../debugger/changing-contexts.md)
 
+[Register Context](../debugger/changing-contexts.md#register-context)
 
+[.exr (Display Exception Record)](-exr--display-exception-record-.md)
 
+[.ecxr](-ecxr--display-exception-context-record-.md)
 
-
+[.trap](-trap--display-trap-frame-.md)

@@ -95,7 +95,7 @@ After you have enabled NBL tracking on the target debugee machine, enter the **!
 
 For a more detailed description of how to interpret the results of **!ndiskd.nbllog**, see [!ndiskd.nbl -log](/archive/blogs/ndis/ndiskd-nbl-log) on the NDIS blog.
 
-## <span id="see_also"></span>See also
+## See also
 
 [Network Driver Design Guide](../network/index.md)
 

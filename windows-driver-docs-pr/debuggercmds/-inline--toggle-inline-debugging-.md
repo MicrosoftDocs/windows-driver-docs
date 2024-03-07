@@ -31,7 +31,7 @@ Disables inline function debugging.
 <span id="_______1______"></span> **1**   
 Enables inline function debugging.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [Debugging Optimized Code and Inline Functions](../debugger/debugging-optimized-code-and-inline-functions-external.md)

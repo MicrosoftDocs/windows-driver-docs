@@ -163,7 +163,7 @@ Object: ffffc00b07628fb0  Type: (ffffe0083b769450) SymbolicLink
 
 For information about objects and the object manager, see the Microsoft Windows SDK documentation, the Windows Driver Kit (WDK) documentation, and *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [Object Reference Tracing](../debugger/object-reference-tracing.md)

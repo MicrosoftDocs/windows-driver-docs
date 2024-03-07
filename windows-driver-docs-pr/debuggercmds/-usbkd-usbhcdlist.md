@@ -56,7 +56,7 @@ MINIPORT List @ fffff80001e5bbd0
     Pending IRP's: 0, Transfers: 0 (Periodic(0), Async(0))
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)

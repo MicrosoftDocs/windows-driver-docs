@@ -59,7 +59,7 @@ The following table describes the possible values for *Mode*.
 
 If *Mode* is omitted, **!winrterr** displays the current reporting mode. If the debugger has broken in as a result of a Windows Runtime error, the error and related text are also displayed.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [Windows Runtime Debugger Commands](../debugger/windows-runtime-debugger-commands.md)

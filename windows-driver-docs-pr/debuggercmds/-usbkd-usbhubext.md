@@ -216,7 +216,7 @@ ProductId:Cruzer
     [EMPTY]
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)

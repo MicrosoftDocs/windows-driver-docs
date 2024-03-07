@@ -86,7 +86,7 @@ Power caps (0 = not reported)
      PortPower_HubStatus : 500
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)

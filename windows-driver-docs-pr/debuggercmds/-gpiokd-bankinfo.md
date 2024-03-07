@@ -64,7 +64,7 @@ Flags that specify which information is displayed. This parameter is a bitwise O
 
 Gpiokd.dll
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [GPIO Extensions](gpio-extensions.md)

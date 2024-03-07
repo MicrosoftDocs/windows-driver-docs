@@ -97,7 +97,7 @@ Now you can pass the address of the device extension to the **!xhci\_registers**
         dt -a4 -r2 USBXHCI!_PORT_REGISTER_SET 0xfffff880046a8420
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [USB 3.0 Extensions](usb-3-extensions.md)

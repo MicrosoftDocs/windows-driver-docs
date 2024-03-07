@@ -35,7 +35,7 @@ Turns TracePrt diagnostic mode off.
 
 Rcdrkd.dll
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [RCDRKD Extensions](rcdrkd-extensions.md)

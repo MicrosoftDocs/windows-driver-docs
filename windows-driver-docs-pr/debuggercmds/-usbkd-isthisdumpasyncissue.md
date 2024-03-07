@@ -43,7 +43,7 @@ BUGCODE_USB_DRIVER (fe)
 This is *NOT* Async on Advance Issue because the EndPointData is NULL
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)

@@ -103,7 +103,7 @@ Now you can pass the address of the device extension to the **!xhci\_capability*
         DisableIdlePowerManagement
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [USB 3.0 Extensions](usb-3-extensions.md)

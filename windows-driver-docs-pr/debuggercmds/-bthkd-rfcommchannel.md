@@ -32,7 +32,7 @@ The address of a rfcomm!\_CHANNEL\_CB structure.
 
 Bthkd.dll
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [Bluetooth Extensions (Bthkd.dll)](bluetooh-extensions--bthkd-dll-.md)

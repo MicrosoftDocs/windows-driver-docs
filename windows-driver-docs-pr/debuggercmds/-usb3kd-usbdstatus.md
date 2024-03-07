@@ -45,7 +45,7 @@ The following example passes the numeric value 0x80000200 to the **!usbdstatus**
 USBD_STATUS_INVALID_URB_FUNCTION (0x80000200)
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [USB 3.0 Extensions](usb-3-extensions.md)

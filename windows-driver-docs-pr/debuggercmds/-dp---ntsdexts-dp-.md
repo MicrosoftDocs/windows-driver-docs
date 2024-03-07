@@ -62,7 +62,7 @@ This extension displays the process address, process ID, sequence number, flags,
 
 If no process is specified, all processes are displayed.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**!dt**](-dt.md)

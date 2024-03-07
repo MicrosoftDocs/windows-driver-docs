@@ -32,7 +32,7 @@ The value of \_DEVICE\_INFO\_BLOCK.DibFlags Dumps Flags set in \_DEVICE\_INFO\_B
 
 Bthkd.dll
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [Bluetooth Extensions (Bthkd.dll)](bluetooh-extensions--bthkd-dll-.md)

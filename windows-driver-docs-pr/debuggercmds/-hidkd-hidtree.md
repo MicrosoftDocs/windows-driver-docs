@@ -42,7 +42,7 @@ When you are debugging a HID issue, the **!hidtree** is a good place to start, b
 
 Hidkd.dll
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [HID Extensions](hid-extensions.md)

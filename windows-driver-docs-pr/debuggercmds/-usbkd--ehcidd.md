@@ -72,7 +72,7 @@ AsyncQueueHead ffffd00021cf5000 !_ehciqh ffffd00021cf5000
     PrevQh: ffffd00021cf5000
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)

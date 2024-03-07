@@ -37,7 +37,7 @@ Kdexts.dll
 
 Disabled breakpoints will be ignored. Use [**!ube**](-ube.md) to re-enable the breakpoint.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**!ubc**](-ubc.md)

@@ -32,7 +32,7 @@ The name of the TMF file. If this parameter is not specified, the filename is cl
 
 Rcdrkd.dll
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [RCDRKD Extensions](rcdrkd-extensions.md)
