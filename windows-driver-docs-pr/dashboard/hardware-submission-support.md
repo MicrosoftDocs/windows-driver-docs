@@ -5,7 +5,7 @@ ms.topic: article
 ms.date: 03/07/2024
 ---
 
-# Get technical support for Partner Center dashboard issues
+# Contract technical support for Partner Center dashboard issues
 
 If your issue is technical and you can't find answers in the documentation, you can contact Windows developer support.
 
