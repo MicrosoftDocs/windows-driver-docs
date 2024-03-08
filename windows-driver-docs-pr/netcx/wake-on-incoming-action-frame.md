@@ -4,7 +4,7 @@ description: Wake on Incoming Action Frame wakes a WiFiCx device from a low powe
 ms.date: 03/07/2024
 ---
 
-## Wake on Incoming Action Frame
+# Wake on Incoming Action Frame
 
 The Wake on Incoming Action Frame feature wakes a WiFiCx device from a low power state when it receives specific action frames from the AP. WiFiCx drivers must support Wake on Incoming Action Frame to support [QoS R1](qos-r1.md) features, including Mirrored Stream Classification Service (MSCS) and QoS Mapping (DSCP-to-UP Mapping).
 
