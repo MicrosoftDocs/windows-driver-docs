@@ -1,7 +1,7 @@
 ---
 title: ACX Power Management
 description: This topic provides a summary of the ACX power management
-ms.date: 09/29/2023
+ms.date: 03/07/2024
 ms.localizationpriority: medium
 ---
 
@@ -11,12 +11,10 @@ This topic discusses ACX power management. For information about ACX  device enu
 
 ACX leverages the WDF KMDF PnP power behavior. For more  information about KMDF power management sequences, see [PnP and Power Management Callback Sequences](../wdf/pnp-and-power-management-callback-sequences.md).
 
+It is recommended that ACX drivers fully implement WDF Power Management, for example by implementing the [WDF_PNPPOWER_EVENT_CALLBACKS structure](/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_pnppower_event_callbacks). For more information, see [Supporting PnP and Power Management in Your Driver](/windows-hardware/drivers/wdf/supporting-pnp-and-power-management-in-your-driver).
+
 >[!NOTE]
 > The ACX headers and libraries are not included in the  WDK 10.0.22621.2428 (released October 24, 2023), but are available in previous versions, as well as the latest (25000 series builds) Insider Preview of the WDK. For more information about preview versions of the WDK, see [Installing preview versions of the Windows Driver Kit (WDK)](../installing-preview-versions-wdk.md).
-
-## ACX device enumeration and startup for static audio devices
-
-To learn about how ACX startup works, the following scenario will be described.
 
 ## ACX device surprise removal
 
@@ -36,7 +34,7 @@ A "dynamic" AcxCircuit can be added at any time. The driver creates a new child 
 
 A "static" AcxCircuit can only be added when the driver is handling the WDF PrepareHardware callback for its FDO device. The lifetime of a "static" circuit is bound to the lifetime of the FDO.
 
-An ACX driver can also create AcxFactoryCircuit objects (circuit providers) during power up sequence. An AcxFactoryCircuit object uses dynamic circuit creation for adding ACXCIRCUITS when requested by ACX. This feature is very useful when building composite endpoints, i.e., audio endpoint made up of two or more ACXCIRCUITs linked together.
+An ACX driver can also create AcxFactoryCircuit objects (circuit providers) during power up sequence using the [AcxFactoryCircuitCreate function](/windows-hardware/drivers/ddi/acxcircuit/nf-acxcircuit-acxfactorycircuitcreate). An AcxFactoryCircuit object uses dynamic circuit creation for adding ACXCIRCUITS when requested by ACX. This feature is very useful when building composite endpoints, i.e., audio endpoint made up of two or more ACXCIRCUITs linked together.
 
 The ACX Circuit defines the following callbacks which are invoked during the AcxCircuit / Audio Endpoint initialization:
 

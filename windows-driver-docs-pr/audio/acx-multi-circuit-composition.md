@@ -1,35 +1,18 @@
 ---
 title: ACX Multi Circuit Composition
 description: This topic provides a summary of multi circuit composition 
-ms.date: 09/29/2023
+ms.date: 02/09/2024
 ms.localizationpriority: medium
 ---
 
-# ACX multicircuit composition
+# ACX multi circuit composition
 
 This topic discusses ACX multi circuit composition. For a general overview of ACX and list of ACX terms, see [ACX audio class extensions overview](acx-audio-class-extensions-overview.md).
 
-As described in [Summary of ACX objects](acx-summary-of-objects.md), an AcxCircuit represents a partial or full audio path to a user perceived audio device (speakers, mic, etc.). An AcxCircuit has at least one input pin and one output pin (ACXPIN), and it may aggregate one or more AcxElements-like objects.
+As described in [Summary of ACX objects](acx-summary-of-objects.md), an AcxCircuit represents a partial or full audio path to a user perceived audio device (speakers, mic, etc.). An AcxCircuit has at least one input pin and one output pin (ACXPIN), and it may aggregate one or more AcxElements-like objects. For general information, see [ACX Circuits](acx-circuits.md).
 
 >[!NOTE]
 > The ACX headers and libraries are not included in the  WDK 10.0.22621.2428 (released October 24, 2023), but are available in previous versions, as well as the latest (25000 series builds) Insider Preview of the WDK. For more information about preview versions of the WDK, see [Installing preview versions of the Windows Driver Kit (WDK)](../installing-preview-versions-wdk.md).
-
-
-## ACX circuit identification
-
-Every ACX circuit has a circuit identifier. ACX defines the following:
-
-- *Name (str)*, uniquely identifies this circuit audio device type. It is used to locate INF’s setting, and it is part of the symbolic link used to access this circuit from a remote device. Example: “Render0”, “Render1” or “Capture0”.
-
-- *Symbolic link*. A symbolic link is associated with all the exposed circuits. Clients use this symbolic link to open a communication path with the device/circuit.
-
-- *Circuit’s component ID (guid)*. Uniquely identifies the circuit instance (vendor specific). It cannot be used in the AcxCircuitTemplate bindings if the Circuit URI was specified.
-
-- *Circuit’s component URI (str)*. Uniquely identifies the circuit instance (vendor specific). It cannot be used in the AcxCircuitTemplate bindings if the Circuit ID was specified.
-
-- *Circuit Factory’s component ID (guid)*. Uniquely identifies the circuit factory instance (vendor specific). It cannot be used in the AcxCircuitTemplate bindings if the Circuit Factory URI was specified.
-
-- *Circuit Factory’s component URI (str)*. Uniquely identifies the circuit factory instance (vendor specific). It cannot be used in the AcxCircuitTemplate bindings if the Circuit Factory ID was specified.
 
 ## ACX circuit composition
 
@@ -223,6 +206,8 @@ Drivers have an option to reverse this order via a config setting.
 > It is a requirement for a driver/circuit/stream to always succeed stream transitions from run to stop. On the other hand, it is allowed for a driver to fail the reverse, i.e., from stop to run.
 
 ## See also
+
+ [ACX circuits](acx-circuits.md)
 
 [ACX audio class extensions overview](acx-audio-class-extensions-overview.md)
 

@@ -1,7 +1,7 @@
 ---
 title: ACX Device Enumeration
 description: This topic provides a summary of the ACX device enumeration, startup and shutdown, and device rebalance.
-ms.date: 02/05/2024
+ms.date: 02/08/2024
 ms.localizationpriority: medium
 ---
 
@@ -23,45 +23,45 @@ To learn about how ACX startup works, the following scenario will be described.
 
 The sequence of start up is:
 
-- WDM DriverEntry. Driver-scoped.
+- WDM DriverEntry. Driver-scoped. [DriverEntry for WDF Drivers routine](../wdf/driverentry-for-kmdf-drivers.md)
+
     - Init tracing.
     - Optionally register for unload.
     - Create WDFDRIVER.
     - Call ACX to do any post driver init.
     - Optionally do any post driver init.
-    - For more information, see [DriverEntry for WDF Drivers routine](../wdf/driverentry-for-kmdf-drivers.md).
 
-- WDF DeviceAdd. Device-scoped.
-    - Call ACX to init the device init context.
-    - Create device.
+- WDF DeviceAdd. Device-scoped. [EVT_WDF_DRIVER_DEVICE_ADD callback function](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add)
+
+    - Call ACX to init the device init context - `ACX_DEVICEINIT_CONFIG_INIT(&devInitCfg)` [ACX_DEVICEINIT_CONFIG_INIT function](/windows-hardware/drivers/ddi/acxdevice/nf-acxdevice-acx_deviceinit_config_init)
+    - Register WDF PnP Power call backs - `WDF_PNPPOWER_EVENT_CALLBACKS_INIT(&pnpPowerCallbacks);`
+    - Create device using [AcxDeviceInitialize](/windows-hardware/drivers/ddi/acxdevice/nf-acxdevice-acxdeviceinitialize)
     - Call ACX to do any post device init.
     - Optionally do any post device init.
-    - For more information, see [EVT_WDF_DRIVER_DEVICE_ADD callback function](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add).
 
-- WDF PrepareHardware. Device-scoped.
+- WDF PrepareHardware. Device-scoped. [EVT_WDF_DEVICE_PREPARE_HARDWARE callback function](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware).
+
     - Create and init hardware resources (for interrupts and threads, register them with ACX).
+
     - Create one or more circuits (one time creation).
         - Create an AcxCircuitInit Context.
         - Add callbacks.
         - Create an AcxCircuit.
         - Optionally do any post circuit init.
         - Register the circuit with [AcxDeviceAddCircuitDevice](/windows-hardware/drivers/ddi/acxdevice/nf-acxdevice-acxdeviceaddcircuitdevice).
-.
-    - For more information, see [EVT_WDF_DEVICE_PREPARE_HARDWARE callback function](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware).
 
-- WDF Device D0 Entry callback. Device-scoped.
-   - For more information, see [EVT_WDF_DEVICE_D0_ENTRY callback function](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_entry).
+- WDF Device D0 Entry callback. Device-scoped. [EVT_WDF_DEVICE_D0_ENTRY callback function](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_entry).
 
 - ACX invokes the [EvtAcxCircuitPowerUp callback](/windows-hardware/drivers/ddi/acxcircuit/nc-acxcircuit-evt_acx_circuit_power_up) on all the circuits. Circuit-scoped.
 - ACX Moves the streams (if any) to their previous state before the device was powered down. Stream Instance-scoped.
 - WDF Queues are restarted.
-- WDF DeviceSelfManagedIoInit. Device-scoped.
-   - For more information, see [EVT_WDF_DEVICE_SELF_MANAGED_IO_INIT callback function](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_self_managed_io_init).
-- WDF DeviceSelfManagedIoRestart. Device-scoped.
-    - Init after each power up from Dx.
-    - For more information, see [EVT_WDF_DEVICE_SELF_MANAGED_IO_RESTART callback function](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_self_managed_io_restart).
+- [EVT_WDF_DEVICE_SELF_MANAGED_IO_INIT callback function](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_self_managed_io_init). Device-scoped.
+- [EVT_WDF_DEVICE_SELF_MANAGED_IO_RESTART callback function](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_self_managed_io_restart). Device-scoped.
+      - Init after each power up from Dx.
 
-- ACX StreamAdd (instance) on ACX Circuit (ACX callback on ACX circuits) – invoked at any time after the WDF self-managed I/O Init or Restart has been invoked and device is in D0.  Circuit-scoped.
+### ACX Stream Add
+
+- ACX Stream Add (instance) on ACX Circuit (ACX callback on ACX circuits) – invoked at any time after the WDF self-managed I/O Init or Restart has been invoked and device is in D0.  Circuit-scoped.
     - Input: AcxStreamInit context, ACXCIRCUIT.
     - Add callbacks.
     - Create an AcxStream (instance).
@@ -115,32 +115,17 @@ The sequence of start up for this scenario is:
 - Driver instantiates the new device/circuit by calling [AcxDeviceAddCircuitDevice](/windows-hardware/drivers/ddi/acxdevice/nf-acxdevice-acxdeviceaddcircuitdevice).
 - WDF/PnP takes over and the simple enum/startup pattern described in the previous section takes place.
 
-## ACX circuit dynamic removal
+### AcxFactoryCircuit
 
-The driver invokes [AcxDeviceRemoveCircuitDevice](/windows-hardware/drivers/ddi/acxdevice/nf-acxdevice-acxdeviceremovecircuitdevice) to remove the audio device from the device list. This triggers the power down sequence on the ACX circuit device/circuit entity. The circuit device/circuit is deleted asynchronously.
+An ACX driver can also create AcxFactoryCircuit objects (circuit providers) during power up sequence using the [AcxFactoryCircuitCreate function](/windows-hardware/drivers/ddi/acxcircuit/nf-acxcircuit-acxfactorycircuitcreate) and the [AcxDeviceAddFactoryCircuit function](/windows-hardware/drivers/ddi/acxdevice/nf-acxdevice-acxdeviceaddfactorycircuit).
 
-- Circuit Providers (AcxFactoryCircuit):
-    - ACX invokes a driver callback to let the driver know when to create dynamic circuits.
+Because the ACX driver registered itself with ACX as circuit factory, the ACX framework uses the registered factory to ask the driver to create a new circuit.
 
-### AcxDeviceRemoveCircuit and AcxDeviceDetachCircuit
+```cpp
+AcxFactoryCircuitCreate(Device, &attributes, &factoryInit, &factory);
 
-There are two common ways to manage circuit termination. [AcxDeviceDetachCircuit](/windows-hardware/drivers/ddi/acxdevice/nf-acxdevice-acxdevicedetachcircuit) or [AcxDeviceRemoveCircuit](/windows-hardware/drivers/ddi/acxdevice/nf-acxdevice-acxdeviceremovecircuit).
-
-If the caller invokes the [AcxDeviceDetachCircuit](/windows-hardware/drivers/ddi/acxdevice/nf-acxdevice-acxdevicedetachcircuit) it must not call [AcxDeviceRemoveCircuit](/windows-hardware/drivers/ddi/acxdevice/nf-acxdevice-acxdeviceremovecircuit). If the calling driver wants to delete the circuit after AcxDeviceDetachCircuit it should use [WdfObjectDelete](/windows-hardware/drivers/ddi/wdfobject/nf-wdfobject-wdfobjectdelete).
-
-By calling [AcxDeviceRemoveCircuit](/windows-hardware/drivers/ddi/acxdevice/nf-acxdevice-acxdeviceremovecircuit) the calling driver tells ACX to remove this circuit and remove/delete it from the device. In this case there is no need to call WdfObjectDelete on the circuit.
-
-In summary, [AcxDeviceDetachCircuit](/windows-hardware/drivers/ddi/acxdevice/nf-acxdevice-acxdevicedetachcircuit)  means that the driver owns the management of the circuit objects lifetime, [AcxDeviceRemoveCircuit](/windows-hardware/drivers/ddi/acxdevice/nf-acxdevice-acxdeviceremovecircuit) means that the circuit will be removed and deleted.
-
-For general information about WDF object lifetime management, see [Framework Object Life Cycle](/windows-hardware/drivers/wdf/framework-object-life-cycle).
-
-#### AcxDeviceRemoveCircuitDevice
-
-Different from the circuit termination discussed above, [AcxDeviceRemoveCircuitDevice](/windows-hardware/drivers/ddi/acxdevice/nf-acxdevice-acxdeviceremovecircuitdevice) is used by the audio driver to remove an existing audio endpoint and can be called at any time during the driver's life cycle.
-
-#### WDF object reference lifetime management
-
-WDF uses reference counts to help track the lifetime of objects. It may be appropriate in a cleanup call back function, to dereference object references. The the framework call this cleanup call back function, so that the driver can call WdfObjectDereference if it had previously called WdfObjectReference for the object that is being deleted. For more information, see [WdfObjectReference](/windows-hardware/drivers/wdf/wdfobjectreference) and [WdfObjectDereference](/windows-hardware/drivers/wdf/wdfobjectdereference).
+AcxDeviceAddFactoryCircuit(Device, factory);
+```
 
 ## ACX device rebalance
 
@@ -154,13 +139,15 @@ ACX supports device rebalance as follows:
 
 - In the power up WDF/ACX sequence, the driver makes sure the new resources are compatible with the current ones, and it makes any allowed adjustments to its settings. If the resources are not compatible with the current device/circuit initialization, the driver must delete the current circuits and create new ones. See below more information.
 
-- In the power up sequence, WDF invokes its EvtDevicePrepareHardware and EvtDeviceD0 entry, and ACX invokes the corresponding EvtAcxCircuitPrepareHardware and EvtAcxCircuitPowerUp, and it moves all streams into its pre-existing states.
+- In the power up sequence, WDF invokes its [EvtDevicePrepareHardware](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) and EvtDeviceD0 entry, and ACX invokes the corresponding EvtAcxCircuitPrepareHardware and EvtAcxCircuitPowerUp, and it moves all streams into its pre-existing states.
 
 - As soon as the queues move to power up/run state, the I/O flow again.
 
 ACX doesn't allow remove (fails query-remove) or rebalance (fails query-stop) to take place if there are streams in active (RUN) state.
 
 Drivers may also opt to always destroy and recreate audio devices on rebalance. This is the same scenario above when the device detects that the new settings are not compatible with the old ones. The deletion of the circuit must be done in EvtDevicePrepareHardware/EvtDeviceReleaseHardware callbacks, and the new circuit is re-created in EvtDevicePrepareHardware. The driver deletes a circuit by un-registering the circuit (using [AcxDeviceRemoveCircuit](/windows-hardware/drivers/ddi/acxdevice/nf-acxdevice-acxdeviceremovecircuit)).
+
+### User mode file handles
 
 ACX doesn’t wait for the user mode file handles to be closed before re-creating new circuits. The lifetime of the files system handles is not tied to the lifetime of the hardware resources used by the device/circuits. It is the responsibility of clients to listen for interface arrival/removal and close and re-open file handles.
 
