@@ -824,6 +824,8 @@
     href: wificx-wi-fi-7.md
   - name: "QOS R1"
     href: qos-r1.md
+  - name: "Wake on Incoming Action Frame"
+    href: wake-on-incoming-action-frame
   - name: "WPA3 SoftAP"
     href: wificx-wpa3-softap.md
 
