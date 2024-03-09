@@ -6,7 +6,7 @@ ms.date: 03/08/2024
 
 # Introduction to NDIS 6.88
 
-This topic introduces Network Driver Interface Specification (NDIS) 6.88 and describes its major design additions. NDIS 6.88 is included in Windows Server 2022 23H2 and Windows Server 2022 and later.
+This topic introduces Network Driver Interface Specification (NDIS) 6.88 and describes its major design additions. NDIS 6.88 is included in Windows Server 2022 23H2 and later.
 
 NDIS 6.88 is a minor version update to NDIS 6.87. For more information about porting NDIS 6.x drivers to NDIS 6.88, see [Porting NDIS 6.x drivers to NDIS 6.88](porting-ndis-6-x-drivers-to-ndis-6-88.md).
 
@@ -30,7 +30,7 @@ In addition, an NDIS 6.88 driver must be compliant with the following requiremen
 
   * Protocol drivers must set the **Header** member of [**NDIS_PROTOCOL_DRIVER_CHARACTERISTICS**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_protocol_driver_characteristics): Set **Revision** to NDIS_PROTOCOL_CHARACTERISTICS_REVISION_2 and **Size** to NDIS_SIZEOF_PROTOCOL _DRIVER_CHARACTERISTICS_REVISION_2.
 
-- NDIS 6.88 miniport drivers for Windows Server 2022 23H2 and Windows Server 2022 and later must use the NDIS 6.88 versions of data structures.
+- NDIS 6.88 miniport drivers for Windows Server 2022 23H2 and later must use the NDIS 6.88 versions of data structures.
 
 ## Compiling an NDIS 6.88 driver
 

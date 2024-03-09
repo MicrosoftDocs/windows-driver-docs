@@ -6,7 +6,7 @@ ms.date: 03/08/2024
 
 # Porting NDIS 6.x drivers to NDIS 6.89
 
-NDIS 6.89 is substantially the same as NDIS 6.88. For detailed information about new features for NDIS 6.89, including implementation and compilation details specific to this version of NDIS, see [Introduction to NDIS 6.89](introduction-to-ndis-6-88.md).
+NDIS 6.89 is substantially the same as NDIS 6.88. For detailed information about new features for NDIS 6.89, including implementation and compilation details specific to this version of NDIS, see [Introduction to NDIS 6.89](introduction-to-ndis-6-89.md).
 
 If you are porting an NDIS 6.x driver to NDIS 6.89, you should be familiar with the changes to each version between your driver's version and 6.89. For more information about previous NDIS 6.x versions, see the following topics:
 
