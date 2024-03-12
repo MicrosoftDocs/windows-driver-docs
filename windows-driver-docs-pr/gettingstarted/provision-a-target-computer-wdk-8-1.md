@@ -18,7 +18,7 @@ Make sure that the host and target computers can ping each other by name. This p
 We recommend that both the host and target run the same version of Windows.
 
 > [!TIP]
-> For the latest information on the WDK and known issues, see the [WDK support forum](https://social.msdn.microsoft.com/Forums/en-US/home?forum=wdk) and the [Windows Hardware Q&A Forum](/answers/topics/windows-hardware.html).
+> For community support on the WDK, see the [Windows Hardware Performance Forum](/answers/tags/384/windows-hardware-performance) on Microsoft Q&A.
 
 ## Prepare the target computer for provisioning
 
@@ -28,7 +28,14 @@ We recommend that both the host and target run the same version of Windows.
 
 1. If Secure Boot is enabled on an x86 or x64 target computer, disable it. For information about Unified Extensible Firmware Interface (UEFI) and Secure Boot, see [UEFI Firmware](/previous-versions/windows/it-pro/windows-8.1-and-8/hh824898(v=win.10)).
 
-    If the target computer uses an Arm processor, install the Windows Debug Policy. Only Microsoft or the manufacturer of the target computer can do this. You don't need to disable Secure Boot.
+1. If the target computer uses an Arm processor, install the Windows Debug Policy. Only Microsoft or the manufacturer of the target computer can do this. You don't need to disable Secure Boot.
+
+1. The target computer should be started in non-enhanced mode, for disabling VM enhanced mode configuration, see [share devices with you virtual machine](/virtualization/hyper-v-on-windows/user-guide/enhanced-session-mode)
+
+1. If you will be deploying a test driver on the target machine, enable test signing from an elevated command from with  **bcdedit /set testsigning on**
+
+1. If you will be testing the driver with WDTF, make sure to enable Driver Verifier using the properties page and restart the target machine after the deployment
+   - On the host computer, in Visual Studio, right click on the driver project go to **Properties &gt; Configuration Properties &gt; Driver Install &gt; Driver Verification &gt; Enable Driver Verification**
 
 1. On the target computer, run the WDK Test Target Setup MSI that matches the platform of the target computer. You can find the MSI in the Windows Driver Kit (WDK) installation directory under Remote.
 
