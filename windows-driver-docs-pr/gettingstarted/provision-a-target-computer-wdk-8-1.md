@@ -1,6 +1,6 @@
 ---
 title: Provision a Computer for Driver Deployment and Testing (WDK 10)
-ms.date: 12/15/2023
+ms.date: 03/12/2024
 description: This guide provides instructions on how to configure a computer for automatic driver deployment, testing, and debugging using Microsoft Visual Studio.
 ---
 
@@ -32,7 +32,7 @@ We recommend that both the host and target run the same version of Windows.
 
 1. The target computer should be started in non-enhanced mode, for disabling VM enhanced mode configuration, see [share devices with you virtual machine](/virtualization/hyper-v-on-windows/user-guide/enhanced-session-mode)
 
-1. If you will be deploying a test driver on the target machine, enable test signing from an elevated command from with  **bcdedit /set testsigning on**
+1. If you will be deploying a test driver on the target machine, enable test signing from an elevated command with  **bcdedit /set testsigning on**
 
 1. If you will be testing the driver with WDTF, make sure to enable Driver Verifier using the properties page and restart the target machine after the deployment
    - On the host computer, in Visual Studio, right click on the driver project go to **Properties &gt; Configuration Properties &gt; Driver Install &gt; Driver Verification &gt; Enable Driver Verification**
