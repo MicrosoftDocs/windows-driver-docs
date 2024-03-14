@@ -2,7 +2,7 @@
 title: Time Travel Debugging - Replay a trace
 description: This section describes how to replay time travel traces.
 keywords: ["Replay a trace", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
-ms.date: 01/22/2020
+ms.date: 03/13/2024
 ---
 
 # Time Travel Debugging - Replay a trace
@@ -121,7 +121,6 @@ Provide a time position in any of the following formats to travel to that point 
 - If {position} is #:#, where # are a hexadecimal numbers, it travels to that position. For example, `!tt 1A0:12F` travels to position 1A0:12F in the trace.
 
 For more information, see [Time Travel Debugging - !tt (time travel)](time-travel-debugging-extension-tt.md).
-
 
 ## !positions
 
