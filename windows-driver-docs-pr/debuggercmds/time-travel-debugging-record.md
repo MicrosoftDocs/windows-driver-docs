@@ -9,7 +9,7 @@ ms.date: 12/09/2022
 
 :::image type="content" source="images/ttd-time-travel-debugging-logo.png" alt-text="Time travel debugging logo featuring a clock.":::
 
-This section describes how to record time travel debugging (TTD) traces. There are two ways to record a Trace in WinDbg, *Launch Executable (advanced)* and *Attach to a process*. 
+This section describes how to record time travel debugging (TTD) traces. There are two ways to record a Trace in WinDbg, *Launch Executable (advanced)* and *Attach to a process*.
 
 ## Launch executable (advanced)
 
@@ -45,8 +45,7 @@ To attach to a process and record a TTD trace, follow these steps.
 
     :::image type="content" source="images/ttd-start-recording-attach-to-process.png" alt-text="Screenshot of WinDbg displaying start recording checkbox in Attach to Process screen.":::
 
-
-3. Check the **Record Process with Time Travel Debugging** box to create a trace when the executable is launched. 
+3. Check the **Record Process with Time Travel Debugging** box to create a trace when the executable is launched.
 
 4. Select **Attach** to start recording.
 
@@ -62,8 +61,8 @@ To attach to a process and record a TTD trace, follow these steps.
 
 2. While the recording dialog box is being displayed you can:
 
-    - **Stop and debug** - Choosing this will stop the recording, create the trace file and open the trace file so you can start debugging. 
-    - **Cancel** - Choosing this will stop the recording and create the trace file. You can open the trace file at a later time. 
+    - **Stop and debug** - Choosing this will stop the recording, create the trace file and open the trace file so you can start debugging.
+    - **Cancel** - Choosing this will stop the recording and create the trace file. You can open the trace file at a later time.
 
 3. Once your recording is complete, close your app or hit **Stop and debug**.
 
@@ -107,4 +106,3 @@ Now that you have a recorded a TTD trace, you can replay the trace back or work 
 ## See Also
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
-

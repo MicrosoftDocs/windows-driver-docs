@@ -2,7 +2,7 @@
 title: Time Travel Debugging - Overview
 description: This section describes time travel debugging.
 keywords: ["Overview", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
-ms.date: 07/06/2023
+ms.date: 03/13/2024
 ---
 
 # Time Travel Debugging - Overview
@@ -30,6 +30,11 @@ TTD includes a set of debugger data model objects to allow you to query the trac
 Time Travel Debugging is integrated with [WinDbg](https://aka.ms/windbg), providing seamless recording and replay experience.
 
 To use TTD, you need to run the debugger elevated. Install WinDbg using an account that has administrator privileges and use that account when recording in the debugger. In order to run the debugger elevated, select and hold (or right-click) the WinDbg icon in the Start menu, and then select More > Run as Administrator.
+
+### The recording may contain personally identifiable or security related information
+
+The created trace file that contains the recording may contain personally identifiable or security related information, including but not necessarily limited to file paths, registry, memory or file contents. Exact
+information depends on target process activity while it was recorded. Be aware of this when sharing recording files with other people.
 
 ## TTD.exe command line recording utility
 
