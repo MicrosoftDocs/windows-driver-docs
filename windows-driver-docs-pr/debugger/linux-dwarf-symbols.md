@@ -2,7 +2,7 @@
 title: Linux symbols and sources
 description: Linux symbols and sources
 keywords: ["symbols, linux, process"]
-ms.date: 03/05/2024
+ms.date: 03/18/2024
 ---
 
 # Linux symbols and sources
@@ -17,7 +17,7 @@ General information on DebugInfoD is available here:
 
 - [DebugInfoD servers](https://sourceware.org/elfutils/Debuginfod.html)
 
-- [Ubuntu Debuginfod - FAQ](https://ubuntu.com/server/docs/service-debuginfod-faq)
+- [Ubuntu Debuginfod](https://ubuntu.com/server/docs/debuginfod)
 
 The `DebugInfoD*` tag can point to one or more DebugInfoD servers with each server URL formatted as `https://domain.com` and separated by `*`. The servers will be searched in the same order as listed in the source path and the files will be retrieved from the first matching URL.
 
