@@ -1,22 +1,35 @@
 ---
 title: Creating a Driver Verification Log
 description: Learn why the Windows Server Hardware Certification Program requires a Driver Verification Log (DVL) for all applicable driver submissions.
-ms.date: 04/20/2017
+ms.date: 03/19/2024
 ---
 
 # Creating a Driver Verification Log
 
-Certain programs of the [Windows Hardware Certification Program](/windows-hardware/design/compatibility/) require a Driver Verification Log (DVL) for all driver submissions. The DVL contains a summary of the results from the Code Analysis (CA), Static Driver Verifier (SDV), and [CodeQL](../devtest/static-tools-and-codeql.md) log files. The DVL does not contain any source information. You must run the Code Analysis tool and Static Driver Verifier prior to creating a DVL for your driver.
+The [Windows Hardware Certification Program](/windows-hardware/design/compatibility/) requires a Driver Verification Log (DVL) for driver submissions. The DVL can contain a summary of the results from Code Analysis (CA), Static Driver Verifier (SDV), and [CodeQL](../devtest/static-tools-and-codeql.md). The DVL does not contain any source code information. You must run CodeQL, the Code Analysis tool and Static Driver Verifier as required, prior to creating a DVL for your driver. For additional details, see [Static Tools Logo Test](/windows-hardware/test/hlk/testref/6ab6df93-423c-4af6-ad48-8ea1049155ae) and [CodeQL and the Static Tools Logo Test](../devtest/static-tools-and-codeql.md).
 
-**To create a driver verification log**
+## To create a driver verification log
 
-1.  Before running the Code Analysis tools, be sure that you can build and link your driver using the latest Windows Driver Kit (WDK).
-2.  For the Driver Solution, make sure that you have selected a Release configuration as the Solution Configuration and x64 as the Solution Platform.
-3.  Run [Static Driver Verifier](../devtest/static-driver-verifier.md). For information about creating the log file, see [Creating a log file for Static Driver Verifier](creating-a-log-file-for-static-driver-verifier.md) and [Using Static Driver Verifier to find defects in drivers](../devtest/using-static-driver-verifier-to-find-defects-in-drivers.md).
-4.  Run the Code Analysis tool for drivers. Address and fix any defects that are found. See [Creating a log file for the code analysis tool](creating-a-log-file-for-the-code-analysis-tool.md) and [How to run Code Analysis for Drivers](../devtest/how-to-run-code-analysis-for-drivers.md). For more information about code analysis, see [Analyzing C/C++ Code Quality by Using Code Analysis](/previous-versions/visualstudio/visual-studio-2013/dd264897(v=vs.120)).
-5.  Run CodeQL.  Address and fix defects that are found.  Certification will fail if defects that are deemed "Must-Fix" are not corrected.  For more information about CodeQL and the Static Tools Logo Test, see [CodeQL and the Static Tools Logo Test](../devtest/static-tools-and-codeql.md).
-5.  Create the Driver Verification Log. From the **Driver** menu, select **Create Driver Verification Log...**.
-6.  Verify that the Code Analysis Log, Static Driver Verifier Log, and CodeQL Log files are detected. Select **Create**.
+### Prepare the driver
+
+1. Before running the code analysis tools, be sure that you can build and link your driver using the latest Windows Driver Kit (WDK).
+2. For the Driver Solution, make sure that you have selected a Release configuration as the Solution Configuration and x64 as the Solution Platform.
+
+### Determine and run the required tests
+
+1. Refer to the [Static Tools Logo Test](/windows-hardware/test/hlk/testref/6ab6df93-423c-4af6-ad48-8ea1049155ae) to determine what tests are required for the version of Windows you wish to certify for.
+
+Run the following tests as required.
+
+- Run CodeQL.  Address and fix defects that are found.  Certification will fail if defects that are deemed "Must-Fix" are not corrected.  For more information about CodeQL and the Static Tools Logo Test, see [CodeQL and the Static Tools Logo Test](../devtest/static-tools-and-codeql.md).
+- Run [Static Driver Verifier](../devtest/static-driver-verifier.md). For information about creating the log file, see [Creating a log file for Static Driver Verifier](creating-a-log-file-for-static-driver-verifier.md) and [Using Static Driver Verifier to find defects in drivers](../devtest/using-static-driver-verifier-to-find-defects-in-drivers.md).
+- Run Code Analysis tool for drivers. Address and fix any defects that are found. See [Creating a log file for the code analysis tool](creating-a-log-file-for-the-code-analysis-tool.md) and [How to run Code Analysis for Drivers](../devtest/how-to-run-code-analysis-for-drivers.md). For more information about code analysis, see [Analyzing C/C++ Code Quality by Using Code Analysis](/previous-versions/visualstudio/visual-studio-2013/dd264897(v=vs.120)).
+
+### Create the driver verification log
+
+1. Create the Driver Verification Log. From the **Driver** menu, select **Create Driver Verification Log...**.
+
+2. Verify that the Code Analysis Log, Static Driver Verifier Log, and CodeQL Log files are detected. Select **Create**.
 
 The driver verification log has the file name extension .DVL.XML. The log is created in the project folder, for example, \\*myDriverProject*\\*myDriverName*.DVL.XML.
 
@@ -24,14 +37,16 @@ The driver verification log has the file name extension .DVL.XML. The log is cre
 
 **Note**  When you are ready to test your driver using the [Windows Hardware Lab Kit](/windows-hardware/test/hlk/), you need to copy the driver verification log to the %systemdrive%\\DVL directory on the test computer. Be sure to delete the contents of the directory on the test computer before you copy the new driver verification log.
 
- 
-## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
+## Remarks
 
 For the most up-to-date information about the Code Analysis tool, Static Driver Verifier, and the Driver Verification Log, refer to the WDK Release Notes. The Release Notes are available on the [Windows Driver Kit (WDK) download page](https://go.microsoft.com/fwlink/p/?linkid=254897).
 
-**Important**   Timeouts, spaceouts, and other non-successful results in the DVL file are acceptable for certification submission. This will not cause the Static Tools test in HLK to fail. 
- 
-You can also create the driver verification log from a Visual Studio Command Prompt window, either by the Visual Studio Native Tools Command Prompt installed with Visual Studio or via the Enterprise Windows Driver Kit (EWDK):
+>[!IMPORTANT]
+> Timeouts, spaceouts, and other non-successful results in the DVL file are acceptable for certification submission. This will not cause the Static Tools test in HLK to fail.
+
+### Visual Studio Command Prompt window
+
+You can also create the driver verification log from a Visual Studio Command Prompt window, either by the Visual Studio Native Tools Command Prompt installed with Visual Studio or via the Enterprise Windows Driver Kit (EWDK). 
 
 ```cpp
 msbuild.exe <vcxprojectfile> /target:dvl /p:Configuration="Release" /P:Platform=x64
@@ -48,7 +63,7 @@ Microsoft ships as part of the [Windows Driver Kit (WDK)](../download-the-wdk.md
 5. Call dvl.exe by passing the /manualCreate flag, a driver name, and a desired architecture. For example:
 
 ```cmd
-"C:\Program Files (x86)\Windows Kits\10\Tools\dvl\dvl.exe" /manualCreate driverName driverArchitecture
+"C:\Program Files (x86)\Windows Kits\10\Tools\dvl\dvl.exe" /manualCreate <driverName> <driverArchitecture>
 ```
 
 One of the following strings should be used for your driverArchitecture string:
@@ -60,14 +75,11 @@ One of the following strings should be used for your driverArchitecture string:
 
 **Do not include ".sys" as part of your driverName string**
 
-
 6. Inspect the generated DVL to ensure that it was generated correctly
 
 This usage is primarily intended for generating DVLs with CodeQL results, but can also be used for SDV and CA results.  
 
-## <span id="related_topics"></span>Related topics
-
-
+## Related topics
 
 * [Creating a log file for Static Driver Verifier](creating-a-log-file-for-static-driver-verifier.md)
 * [Creating a log file for the code analysis tool](creating-a-log-file-for-the-code-analysis-tool.md)
