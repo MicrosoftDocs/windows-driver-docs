@@ -4,7 +4,7 @@ description: Using Static tools and CodeQL on Windows driver source code to disc
 keywords:
 - dynamic verification tools WDK
 - static verification tools WDK
-ms.date: 03/12/2024
+ms.date: 03/19/2024
 ---
 
 # CodeQL and the Static Tools Logo Test
@@ -266,7 +266,11 @@ These instructions only apply when using both Visual Studio 17.7 or earlier, alo
 
     `git clone https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools.git --recurse-submodules`
 
-    Now you should have:
+3. Refer to the *Windows Hardware Compatibility Program Release Version Matrix* to identify the correct branch for the version of Windows you wish to certify for.
+
+4. Use the `git checkout` command to checkout the identified branch.
+
+5. Confirm that the submodules are present in the codeql-home directory.
 
    ```text
     D:/codeql-home
@@ -274,7 +278,7 @@ These instructions only apply when using both Visual Studio 17.7 or earlier, alo
         |--- Windows-Driver-Developer-Supplemental-Tools
    ```
 
-3. Analyze your CodeQL database.
+6. Analyze your CodeQL database.
 
    Update this example command to match your environment. Set the parameters, path to new database, format, output sarif file, path to CodeQL query or query suite to use in analysis.
 
@@ -286,7 +290,7 @@ These instructions only apply when using both Visual Studio 17.7 or earlier, alo
 
    Be sure to check the path to the suite or query you want to run, not every branch has the same file structure.
 
-4. Refer to other guidance in this document for next steps, such as reviewing and submitting test results.
+7. Refer to other guidance in this document for next steps, such as reviewing and submitting test results.
 
 ## 4. View and Interpret Results
 
