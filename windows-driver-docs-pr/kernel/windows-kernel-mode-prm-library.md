@@ -1,11 +1,11 @@
 ---
-title: Using Platform Runtime Mechanism (PRM)
+title: Windows Kernel-Mode Platform Runtime Mechanism (PRM) Library
 description: Describes the steps required to use the PRM interface
 ms.author: tedhudek
 ms.date: 03/19/2024
 ---
 
-# Using Platform Runtime Mechanism (PRM)
+# Windows Kernel-Mode Platform Runtime Mechanism (PRM) Library
 
 PRM is an architectural UEFI (Unified Extensible Firmware Interface) interface callable by any kernel-mode component during OS runtime. PRM replaces SMM (Secure Management Mode) calls with a GUID-defined interface.
 
