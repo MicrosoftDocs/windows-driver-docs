@@ -1,6 +1,6 @@
 ---
-title: .detach (Detach from Process)
-description: The .detach command ends the debugging session, but leaves any user-mode target application running.
+title: ".detach (Detach from Process)"
+description: "The .detach command ends the debugging session, but leaves any user-mode target application running."
 keywords: [".detach (Detach from Process) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -59,6 +59,7 @@ If you are [debugging multiple targets](../debugger/debugging-multiple-targets.m
  
 
  
+
 
 
 

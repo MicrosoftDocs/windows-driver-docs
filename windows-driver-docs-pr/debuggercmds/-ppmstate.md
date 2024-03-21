@@ -1,6 +1,6 @@
 ---
-title: ppmstate (WinDbg)
-description: The ppmstate command
+title: "ppmstate (WinDbg)"
+description: "The ppmstate command"
 keywords: ["ppmstate Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -32,6 +32,7 @@ Kdexts.dll
 
 **NOTE:** This command is not supported on all versions of Windows, such as Windows 10, Version 1703.
  
+
 
 
 

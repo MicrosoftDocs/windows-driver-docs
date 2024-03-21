@@ -1,6 +1,6 @@
 ---
-title: minipkd.lun
-description: The minipkd.lun extension displays detailed information about the specified Logical Unit Extension (LUN).
+title: "minipkd.lun"
+description: "The minipkd.lun extension displays detailed information about the specified Logical Unit Extension (LUN)."
 keywords: ["minipkd.lun Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -65,6 +65,7 @@ The LUN can be specified either by its address (which can be found in the **LUN*
  
 
  
+
 
 
 

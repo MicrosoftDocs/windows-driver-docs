@@ -1,6 +1,6 @@
 ---
-title: wdfkd.wdffindobjects
-description: The wdfkd.wdffindobjects extension searches memory for WDF objects.
+title: "wdfkd.wdffindobjects"
+description: "The wdfkd.wdffindobjects extension searches memory for WDF objects."
 keywords: ["wdfkd.wdffindobjects Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -97,6 +97,7 @@ The following examples show the output of the **!wdfkd.wdffindobjects** extensio
  
 
  
+
 
 
 

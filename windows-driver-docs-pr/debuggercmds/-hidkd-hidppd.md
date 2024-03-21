@@ -1,6 +1,6 @@
 ---
-title: hidkd.hidppd HID extension
-description: The hidkd.hidppd command displays HID preparsed data.
+title: "hidkd.hidppd HID extension"
+description: "The hidkd.hidppd command displays HID preparsed data."
 keywords: ["hidkd.hidppd Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -78,6 +78,7 @@ Preparsed Data at 0xffffe000029d1010
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: kb, kv (WinDbg)
-description: kb, kv
+title: "kb, kv (WinDbg)"
+description: "kb, kv"
 keywords: ["kb extension (obsolete)", "kv extension (obsolete)"]
 ms.date: 05/23/2017
 ---
@@ -16,6 +16,7 @@ The !kb and !kv extension commands are obsolete. Use the [**kb (Display Stack Ba
  
 
  
+
 
 
 

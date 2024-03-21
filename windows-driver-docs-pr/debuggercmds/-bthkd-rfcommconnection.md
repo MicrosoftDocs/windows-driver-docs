@@ -1,6 +1,6 @@
 ---
-title: bthkd.rfcommconnection
-description: The bthkd.rfcommconnection command displays information about a given RFCOMM connection object.
+title: "bthkd.rfcommconnection"
+description: "The bthkd.rfcommconnection command displays information about a given RFCOMM connection object."
 keywords: ["bthkd.rfcommconnection Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -40,6 +40,7 @@ Bthkd.dll
  
 
  
+
 
 
 

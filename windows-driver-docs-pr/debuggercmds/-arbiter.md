@@ -1,6 +1,6 @@
 ---
-title: arbiter (WinDbg)
-description: The arbiter extension displays the current system resource arbiters and arbitrated ranges.
+title: "arbiter (WinDbg)"
+description: "The arbiter extension displays the current system resource arbiters and arbitrated ranges."
 keywords: ["arbiter Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
@@ -140,6 +140,7 @@ Device queue is not busy.
  
 
  
+
 
 
 

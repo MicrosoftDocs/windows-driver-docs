@@ -1,6 +1,6 @@
 ---
-title: minipkd.srb
-description: The minipkd.srb extension displays the specified SCSI request block (SRB) data structure.
+title: "minipkd.srb"
+description: "The minipkd.srb extension displays the specified SCSI request block (SRB) data structure."
 keywords: ["minipkd.srb Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -61,6 +61,7 @@ This extension displays the status of the SRB, the driver it is addressed to, th
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: wdfkd.wdfhelp
-description: The wdfkd.wdfhelp extension displays help information about all Wdfkd.dll extension commands.
+title: "wdfkd.wdfhelp"
+description: "The wdfkd.wdfhelp extension displays help information about all Wdfkd.dll extension commands."
 keywords: ["wdfkd.wdfhelp Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -36,6 +36,7 @@ The **!wdfkd.wdfhelp** extension is equivalent to the [**!wdfkd.help**](-wdfkd-h
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: rcdrkd.rcdrloglist
-description: The rcdrkd.rcdrloglist extension displays a list of the recorder logs owned by a driver or a set of drivers.
+title: "rcdrkd.rcdrloglist"
+description: "The rcdrkd.rcdrloglist extension displays a list of the recorder logs owned by a driver or a set of drivers."
 keywords: ["rcdrkd.rcdrloglist Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -64,6 +64,7 @@ Log dump command                           Log ID                   Size
  
 
  
+
 
 
 

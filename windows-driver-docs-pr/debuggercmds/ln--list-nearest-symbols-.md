@@ -1,6 +1,6 @@
 ---
-title: ln (List Nearest Symbols)
-description: The ln command displays the symbols at or near the given address.
+title: "ln (List Nearest Symbols)"
+description: "The ln command displays the symbols at or near the given address."
 keywords: ["ln (List Nearest Symbols) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -52,6 +52,7 @@ If you are using a [source server](../debugger/using-a-source-server.md), the **
  
 
  
+
 
 
 

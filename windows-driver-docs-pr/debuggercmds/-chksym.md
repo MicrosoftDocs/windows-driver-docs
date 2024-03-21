@@ -1,6 +1,6 @@
 ---
-title: chksym (WinDbg)
-description: The chksym extension tests the validity of a module against a symbol file.
+title: "chksym (WinDbg)"
+description: "The chksym extension tests the validity of a module against a symbol file."
 keywords: ["chksym Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -62,6 +62,7 @@ If you do not specify a symbol filed, the loaded symbol is tested. Otherwise, if
  
 
  
+
 
 
 

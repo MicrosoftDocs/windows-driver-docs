@@ -1,6 +1,6 @@
 ---
-title: bthkd.scointerface
-description: The bthkd.scointerface command displays information about the SCO interface.
+title: "bthkd.scointerface"
+description: "The bthkd.scointerface command displays information about the SCO interface."
 keywords: ["bthkd.scointerface Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -34,6 +34,7 @@ Bthkd.dll
  
 
  
+
 
 
 

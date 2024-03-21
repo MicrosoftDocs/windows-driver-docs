@@ -1,6 +1,6 @@
 ---
-title: devobj (WinDbg)
-description: The devobj extension displays detailed information about a DEVICE_OBJECT structure.
+title: "devobj (WinDbg)"
+description: "The devobj extension displays detailed information about a DEVICE_OBJECT structure."
 keywords: ["devobj Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -79,6 +79,7 @@ Device queue is not busy.
  
 
  
+
 
 
 

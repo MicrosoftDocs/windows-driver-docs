@@ -1,6 +1,6 @@
 ---
-title: .shell (Command Shell)
-description: The .shell command launches a shell process and redirects its output to the debugger, or to a specified file.
+title: ".shell (Command Shell)"
+description: "The .shell command launches a shell process and redirects its output to the debugger, or to a specified file."
 keywords: ["Command Shell (.shell) command", "MS-DOS Shell (.shell) command", "DOS Shell (.shell) command", "shell commands, Command Shell (.shell) command", ".shell (Command Shell) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -83,6 +83,7 @@ You can use the -ci flag to run one or more debugger commands and then pass thei
  
 
  
+
 
 
 

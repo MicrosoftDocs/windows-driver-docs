@@ -1,6 +1,6 @@
 ---
-title: ks.dumplog
-description: The ks.dumplog extension displays the internal kernel streaming debug log.
+title: "ks.dumplog"
+description: "The ks.dumplog extension displays the internal kernel streaming debug log."
 keywords: ["ks.dumplog Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -61,6 +61,7 @@ This extension requires that the target computer be running a checked (debug) ve
  
 
  
+
 
 
 

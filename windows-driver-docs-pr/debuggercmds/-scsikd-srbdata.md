@@ -1,6 +1,6 @@
 ---
-title: scsikd.srbdata
-description: The scsikd.srbdata extension displays the specified SRB_DATA tracking block.
+title: "scsikd.srbdata"
+description: "The scsikd.srbdata extension displays the specified SRB_DATA tracking block."
 keywords: ["scsikd.srbdata Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -55,6 +55,7 @@ For more information, see [SCSI Miniport Debugging](../debugger/scsi-miniport-de
  
 
  
+
 
 
 

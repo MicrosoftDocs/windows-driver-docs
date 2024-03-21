@@ -1,6 +1,6 @@
 ---
-title: wdfkd.wdflogdump
-description: The wdfkd.wdflogdump extension displays the WDF In-flight Recorder log records, if available, for a KMDF driver or a UMDF 2 driver. 
+title: "wdfkd.wdflogdump"
+description: "The wdfkd.wdflogdump extension displays the WDF In-flight Recorder log records, if available, for a KMDF driver or a UMDF 2 driver. "
 keywords: ["wdfkd.wdflogdump Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -87,4 +87,5 @@ For information about enabling the inflight trace recorder for your driver, see 
 [**!wdfkd.wdfcrashdump**](-wdfkd-wdfcrashdump.md)
 
 [**!wdfkd.wdfsettraceprefix**](-wdfkd-wdfsettraceprefix.md)
+
 

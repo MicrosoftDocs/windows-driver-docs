@@ -1,6 +1,6 @@
 ---
-title: usbkd.usbtt
-description: The usbkd.usbtt command displays information from a USBPORT _TRANSACTION_TRANSLATOR structure.
+title: "usbkd.usbtt"
+description: "The usbkd.usbtt command displays information from a USBPORT _TRANSACTION_TRANSLATOR structure."
 keywords: ["usbkd.usbtt Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -55,4 +55,5 @@ Either click the DML command or pass the address of the device extension to [**!
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
+
 

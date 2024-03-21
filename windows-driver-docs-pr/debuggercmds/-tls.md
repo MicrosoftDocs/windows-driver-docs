@@ -1,6 +1,6 @@
 ---
-title: tls (WinDbg)
-description: The tls extension displays a thread local storage (TLS) slot.
+title: "tls (WinDbg)"
+description: "The tls extension displays a thread local storage (TLS) slot."
 keywords: ["TLS (thread local storage)", "thread local storage (TLS)", "tls Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -67,6 +67,7 @@ c08.f54: 00000000
  
 
  
+
 
 
 

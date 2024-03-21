@@ -1,6 +1,6 @@
 ---
-title: rcdrkd.rcdrsettraceprefix
-description: The rcdrkd.rcdrsettraceprefix extension sets the trace message prefix.
+title: "rcdrkd.rcdrsettraceprefix"
+description: "The rcdrkd.rcdrsettraceprefix extension sets the trace message prefix."
 keywords: ["rcdrkd.rcdrsettraceprefix Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -72,4 +72,5 @@ Trying to extract TMF information from - C:\ProgramData\dbg\sym\usbxhci.pdb\D4C8
 [RCDRKD Extensions](rcdrkd-extensions.md)
 
  
+
 

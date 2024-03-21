@@ -1,6 +1,6 @@
 ---
-title: loadermemorylist
-description: The loadermemorylist extension displays the memory allocation list that the Windows boot loader passes to Windows.
+title: "loadermemorylist"
+description: "The loadermemorylist extension displays the memory allocation list that the Windows boot loader passes to Windows."
 keywords: ["OSLOADER", "loadermemorylist Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -62,6 +62,7 @@ You can stop execution at any point by pressing CTRL+BREAK (in WinDbg) or CTRL+C
  
 
  
+
 
 
 

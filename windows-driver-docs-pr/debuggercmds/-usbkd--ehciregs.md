@@ -1,6 +1,6 @@
 ---
-title: usbkd._ehciregs
-description: The usbkd._ehciregs command displays the operational and root hub port status registers of a USB EHCI host controller.
+title: "usbkd._ehciregs"
+description: "The usbkd._ehciregs command displays the operational and root hub port status registers of a USB EHCI host controller."
 keywords: ["usbkd._ehciregs Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -141,4 +141,5 @@ Now pass the structure address to **!\_ehciregs**. In this example, the second a
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
+
 

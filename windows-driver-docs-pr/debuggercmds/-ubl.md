@@ -1,6 +1,6 @@
 ---
-title: ubl (WinDbg)
-description: The ubl extension lists all user-space breakpoints and their current status.
+title: "ubl (WinDbg)"
+description: "The ubl extension lists all user-space breakpoints and their current status."
 keywords: ["breakpoints, user-space breakpoints", "ubl Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -66,6 +66,7 @@ Each line in this listing contains the breakpoint number, the status (**e** for 
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: wsle (WinDbg)
-description: The wsle extension displays all working set list entries (WSLEs).
+title: "wsle (WinDbg)"
+description: "The wsle extension displays all working set list entries (WSLEs)."
 keywords: ["wsle Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -87,6 +87,7 @@ found end @ wsle index 0x259
  
 
  
+
 
 
 

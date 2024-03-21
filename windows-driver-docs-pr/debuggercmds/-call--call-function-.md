@@ -1,6 +1,6 @@
 ---
-title: .call (Call Function)
-description: The .call command causes the target process to execute a function.
+title: ".call (Call Function)"
+description: "The .call command causes the target process to execute a function."
 keywords: [".call (Call Function) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -101,6 +101,7 @@ In this example, you have private symbols for **KnownFunction**, which takes an 
  
 
  
+
 
 
 

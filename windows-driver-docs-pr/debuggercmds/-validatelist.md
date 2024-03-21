@@ -1,6 +1,6 @@
 ---
-title: validatelist
-description: The validatelist extension verifies that the backward and forward links in a doubly-linked list are valid.
+title: "validatelist"
+description: "The validatelist extension verifies that the backward and forward links in a doubly-linked list are valid."
 keywords: ["doubly-linked list", "validatelist Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -40,6 +40,7 @@ To stop execution, press Ctrl+Break (in WinDbg) or Ctrl+C (in KD).
  
 
  
+
 
 
 

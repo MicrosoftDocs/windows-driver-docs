@@ -1,6 +1,6 @@
 ---
-title: rcdrkd.rcdrlogsave
-description: The rcdrkd.rcdrlogsave extension saves the recorder buffers of a driver.
+title: "rcdrkd.rcdrlogsave"
+description: "The rcdrkd.rcdrlogsave extension saves the recorder buffers of a driver."
 keywords: ["rcdrkd.rcdrlogsave Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -43,6 +43,7 @@ Rcdrkd.dll
  
 
  
+
 
 
 

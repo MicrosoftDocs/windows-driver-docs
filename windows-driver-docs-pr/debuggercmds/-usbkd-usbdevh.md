@@ -1,6 +1,6 @@
 ---
-title: usbkd.usbdevh
-description: The usbkd.usbdevh command displays information about a USB device handle.
+title: "usbkd.usbdevh"
+description: "The usbkd.usbdevh command displays information about a USB device handle."
 keywords: ["usbkd.usbdevh Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -123,4 +123,5 @@ Config Information: dt USBPORT!_USBD_CONFIG_HANDLE ffffe000023cd0b0
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
+
 

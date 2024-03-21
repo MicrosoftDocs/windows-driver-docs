@@ -1,6 +1,6 @@
 ---
-title: dp ( ntsdexts.dp)
-description: The dp extension in Ntsdexts.dll displays a CSR process.
+title: "dp ( ntsdexts.dp)"
+description: "The dp extension in Ntsdexts.dll displays a CSR process."
 keywords: ["dp ( ntsdexts.dp) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -70,6 +70,7 @@ If no process is specified, all processes are displayed.
  
 
  
+
 
 
 

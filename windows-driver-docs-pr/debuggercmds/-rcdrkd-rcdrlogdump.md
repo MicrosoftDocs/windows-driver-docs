@@ -1,6 +1,6 @@
 ---
-title: rcdrkd.rcdrlogdump
-description: The rcdrkd.rcdrlogdump extension displays the trace messages from all recorder buffers of a driver or set of drivers.
+title: "rcdrkd.rcdrlogdump"
+description: "The rcdrkd.rcdrlogdump extension displays the trace messages from all recorder buffers of a driver or set of drivers."
 keywords: ["rcdrkd.rcdrlogdump Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -104,6 +104,7 @@ Trying to extract TMF information from - C:\ProgramData\dbg\sym\usbxhci.pdb\D4C8
  
 
  
+
 
 
 

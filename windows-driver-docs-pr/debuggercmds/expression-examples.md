@@ -1,6 +1,6 @@
 ---
-title: Mixed Expression Examples
-description: Mixed Expression Examples
+title: "Mixed Expression Examples"
+description: "Mixed Expression Examples"
 keywords: ["expressions, examples", "MASM expressions, examples", "C++ expressions, examples"]
 ms.date: 03/31/2021
 ---
@@ -80,3 +80,4 @@ If **myInt** is a ULONG64 value and if you know that this value is followed in m
 [MASM Expressions vs. C++ Expressions](masm-expressions-vs--c---expressions.md)
 
 [Sign Extension](sign-extension.md) 
+

@@ -1,6 +1,6 @@
 ---
-title: ndiskd.wdiminidriver
-description: The ndiskd.wdiminidriver extension displays information about one or more CMiniportDriver structures. 
+title: "ndiskd.wdiminidriver"
+description: "The ndiskd.wdiminidriver extension displays information about one or more CMiniportDriver structures. "
 keywords: ["ndiskd.wdiminidriver Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -130,3 +130,4 @@ HANDLERS
 [WDI Miniport Driver Design Guide](../network/wdi-miniport-driver-design-guide.md)
 
 [WDI Miniport Driver Reference](/windows-hardware/drivers/ddi/_netvista/)
+

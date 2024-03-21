@@ -1,6 +1,6 @@
 ---
-title: gpiokd.bankinfo
-description: The gpiokd.bankinfo command displays information about a GPIO bank.
+title: "gpiokd.bankinfo"
+description: "The gpiokd.bankinfo command displays information about a GPIO bank."
 keywords: ["gpiokd.bankinfo Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -72,6 +72,7 @@ Gpiokd.dll
  
 
  
+
 
 
 

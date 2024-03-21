@@ -1,6 +1,6 @@
 ---
-title: .cxr (Display Context Record)
-description: The .cxr command displays the context record saved at the specified address. It also sets the register context.
+title: ".cxr (Display Context Record)"
+description: "The .cxr command displays the context record saved at the specified address. It also sets the register context."
 keywords: ["Display Context Record (.cxr) command", "context record", ".cxr (Display Context Record) Windows Debugging"]
 ms.date: 11/02/2023
 topic_type:
@@ -65,3 +65,4 @@ The **.cxr /w** command writes the context to memory and displays the address wh
 [.ecxr](-ecxr--display-exception-context-record-.md)
 
 [.trap](-trap--display-trap-frame-.md)
+

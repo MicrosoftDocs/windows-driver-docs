@@ -1,6 +1,6 @@
 ---
-title: usbkd.usbhubinfo
-description: The usbkd.hubinfo command displays information about a USB hub.
+title: "usbkd.usbhubinfo"
+description: "The usbkd.hubinfo command displays information about a USB hub."
 keywords: ["usbkd.usbhubinfo Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -94,4 +94,5 @@ Power caps (0 = not reported)
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
+
 

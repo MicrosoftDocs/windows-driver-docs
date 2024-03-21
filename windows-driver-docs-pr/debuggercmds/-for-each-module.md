@@ -1,6 +1,6 @@
 ---
-title: for_each_module
-description: The for_each_module extension executes a debugger command one time for each loaded module.
+title: "for_each_module"
+description: "The for_each_module extension executes a debugger command one time for each loaded module."
 keywords: ["for_each_module Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -240,6 +240,7 @@ COMDLG32 fver = 6.0.6000.16386 (vista_rtm.061101-2205) pver = 6.0.6000.16386
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: gflag (WinDbg)
-description: The gflag extension sets or displays the global flags.
+title: "gflag (WinDbg)"
+description: "The gflag extension sets or displays the global flags."
 keywords: ["gflag Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -251,6 +251,7 @@ The following table contains the abbreviations that you can use for the *Abbrevi
  
 
  
+
 
 
 

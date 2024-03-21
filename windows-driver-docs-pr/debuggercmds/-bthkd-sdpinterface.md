@@ -1,6 +1,6 @@
 ---
-title: bthkd.sdpinterface
-description: The bthkd.sdpinterface command displays information about the SDP interface.
+title: "bthkd.sdpinterface"
+description: "The bthkd.sdpinterface command displays information about the SDP interface."
 keywords: ["bthkd.sdpinterface Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -34,6 +34,7 @@ Bthkd.dll
  
 
  
+
 
 
 

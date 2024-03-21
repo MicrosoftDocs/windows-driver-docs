@@ -1,6 +1,6 @@
 ---
-title: .enumtag (Enumerate Secondary Callback Data)
-description: The .enumtag command displays secondary bug check callback data and all data tags.
+title: ".enumtag (Enumerate Secondary Callback Data)"
+description: "The .enumtag command displays secondary bug check callback data and all data tags."
 keywords: [".enumtag (Enumerate Secondary Callback Data) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -84,6 +84,7 @@ In this example, the first batch of secondary data has a GUID ){87654321-0000-00
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: wt (Trace and Watch Data)
-description: The wt command runs through the whole function and then displays statistics, when you execute this command at the beginning of a function call.
+title: "wt (Trace and Watch Data)"
+description: "The wt command runs through the whole function and then displays statistics, when you execute this command at the beginning of a function call."
 keywords: ["wt (Trace and Watch Data) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -208,6 +208,7 @@ If any system calls are made, they appear in the counter and are listed again at
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: devext (WinDbg)
-description: The devext extension displays bus-specific device extension information for devices on a variety of buses.
+title: "devext (WinDbg)"
+description: "The devext extension displays bus-specific device extension information for devices on a variety of buses."
 keywords: ["usbhub extension (obsolete)", "hidfdo extension (obsolete)", "hidpdo extension (obsolete)", "device extension", "bus", "devext Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -92,6 +92,7 @@ PDO Extension, Bus 0x0, Device 0, Function 0.
  
 
  
+
 
 
 

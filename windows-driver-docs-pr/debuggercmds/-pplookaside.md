@@ -1,6 +1,6 @@
 ---
-title: pplookaside
-description: The pplookaside command displays Lookaside Lists for processors in the target computer.
+title: "pplookaside"
+description: "The pplookaside command displays Lookaside Lists for processors in the target computer."
 keywords: ["pplookaside Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -30,4 +30,5 @@ The address of the processor.
 ## DLL
 
  
+
 

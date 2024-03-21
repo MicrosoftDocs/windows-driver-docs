@@ -1,6 +1,6 @@
 ---
-title: .show_sym_failures
-description: The .show_sym_failures command enables or disables the display of symbol lookup failures and type lookup failures.
+title: ".show_sym_failures"
+description: "The .show_sym_failures command enables or disables the display of symbol lookup failures and type lookup failures."
 keywords: [".show_sym_failures Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -53,6 +53,7 @@ Disables the display of type lookup failures.
  
 
  
+
 
 
 

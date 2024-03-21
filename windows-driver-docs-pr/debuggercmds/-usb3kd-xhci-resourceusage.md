@@ -1,6 +1,6 @@
 ---
-title: usb3kd.xhci_resourceusage
-description: The usb3kd.xhci_resourceusage extension displays the resources used by a USB 3.0 host controller.
+title: "usb3kd.xhci_resourceusage"
+description: "The usb3kd.xhci_resourceusage extension displays the resources used by a USB 3.0 host controller."
 keywords: ["usb3kd.xhci_resourceusage Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -88,4 +88,5 @@ Now you can pass the address of the device extension to the **!xhci\_resourceusa
 [**!xhci\_dumpall**](-usb3kd-xhci-dumpall.md)
 
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
+
 

@@ -1,6 +1,6 @@
 ---
-title: gbl (WinDbg)
-description: The gbl extension displays header information from the ACPI BIOS Root System Description (RSDT) table of the target computer.
+title: "gbl (WinDbg)"
+description: "The gbl extension displays header information from the ACPI BIOS Root System Description (RSDT) table of the target computer."
 keywords: ["ACPI (Advanced Configuration and Power Interface), RSDT header information", "global lock", "gbl Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -40,6 +40,7 @@ For information about the ACPI and ACPI tables, see [Other ACPI Debugging Extens
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: facs (WinDbg)
-description: The facs extension displays a Firmware ACPI Control Structure (FACS).
+title: "facs (WinDbg)"
+description: "The facs extension displays a Firmware ACPI Control Structure (FACS)."
 keywords: ["facs Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -40,6 +40,7 @@ For more information, see [ACPI Debugging](../debugger/acpi-debugging.md).
  
 
  
+
 
 
 

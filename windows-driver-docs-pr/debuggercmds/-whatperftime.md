@@ -1,6 +1,6 @@
 ---
-title: whatperftime
-description: The whatperftime extension converts a high-resolution performance counter value into a standard time value.
+title: "whatperftime"
+description: "The whatperftime extension converts a high-resolution performance counter value into a standard time value."
 keywords: ["performance count", "whatperftime Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -47,6 +47,7 @@ kd> !whatperftime 304589
  
 
  
+
 
 
 

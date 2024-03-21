@@ -1,6 +1,6 @@
 ---
-title: .logclose (Close Log File)
-description: The .logclose command closes any open log file.
+title: ".logclose (Close Log File)"
+description: "The .logclose command closes any open log file."
 keywords: [".logclose (Close Log File) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -37,6 +37,7 @@ The **.logclose** command closes any open log file.
  
 
  
+
 
 
 

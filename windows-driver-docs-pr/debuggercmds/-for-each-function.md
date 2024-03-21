@@ -1,6 +1,6 @@
 ---
-title: for_each_function
-description: The for_each_function extension executes a debugger command for each function, in a specified module, whose name matches a specified pattern.
+title: "for_each_function"
+description: "The for_each_function extension executes a debugger command for each function, in a specified module, whose name matches a specified pattern."
 keywords: ["for_each_function Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -161,6 +161,7 @@ fffff880`00f7c044 48895c2408      mov     qword ptr [rsp+8],rbx
  
 
  
+
 
 
 

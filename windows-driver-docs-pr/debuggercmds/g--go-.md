@@ -1,6 +1,6 @@
 ---
-title: g (Go)
-description: The g command starts executing the given process or thread. Execution will halt at the end of the program, when BreakAddress is hit, or when another event causes the debugger to stop.
+title: "g (Go)"
+description: "The g command starts executing the given process or thread. Execution will halt at the end of the program, when BreakAddress is hit, or when another event causes the debugger to stop."
 keywords: ["g (Go) Windows Debugging"]
 ms.date: 08/29/2023
 topic_type:
@@ -73,3 +73,4 @@ If *Thread* is specified, then the **g** command is executed with the specified 
 [gu (Go Up)](gu--go-up-.md)
 
 [gh (Go with Exception Handled)](gh--go-with-exception-handled-.md)
+

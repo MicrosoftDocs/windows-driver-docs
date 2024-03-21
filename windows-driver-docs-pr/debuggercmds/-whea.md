@@ -1,6 +1,6 @@
 ---
-title: whea (WinDbg)
-description: The whea extension displays top-level Windows Hardware Error Architecture (WHEA) information.
+title: "whea (WinDbg)"
+description: "The whea extension displays top-level Windows Hardware Error Architecture (WHEA) information."
 keywords: ["whea Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -158,4 +158,5 @@ Error Source 3 @ fffffa8007d0dbc0
 ```
 
  
+
 

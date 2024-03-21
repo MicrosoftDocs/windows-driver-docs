@@ -1,6 +1,6 @@
 ---
-title: dpa (WinDbg)
-description: The dpa extension displays pool allocation information.
+title: "dpa (WinDbg)"
+description: "The dpa extension displays pool allocation information."
 keywords: ["pool allocation", "dpa Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -62,6 +62,7 @@ Pool instrumentation must be enabled in Win32k.sys in order for this extension t
  
 
  
+
 
 
 

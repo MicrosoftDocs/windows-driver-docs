@@ -1,6 +1,6 @@
 ---
-title: .ofilter (Filter Target Output)
-description: The .ofilter command filters the output from the target application or target computer.
+title: ".ofilter (Filter Target Output)"
+description: "The .ofilter command filters the output from the target application or target computer."
 keywords: ["Filter Target Output (.ofilter) command", ".ofilter (Filter Target Output) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -57,4 +57,5 @@ To clear the existing filter, use **.ofilter ""**. This command filters any data
 The **DbgPrintEx** and **KdPrintEx** routines supply another method of filtering debugging messages that you do not want.
 
  
+
 

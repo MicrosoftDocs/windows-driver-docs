@@ -1,6 +1,6 @@
 ---
-title: envvar (WinDbg)
-description: The envvar extension displays the value of the specified environment variable.
+title: "envvar (WinDbg)"
+description: "The envvar extension displays the value of the specified environment variable."
 keywords: ["envvar Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -64,6 +64,7 @@ The **!envvar** extension works both in user mode and in kernel mode. However, i
  
 
  
+
 
 
 

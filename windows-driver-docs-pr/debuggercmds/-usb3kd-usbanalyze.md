@@ -1,6 +1,6 @@
 ---
-title: usb3kd.usbanalyze
-description: The usb3kd.usbanalyze extension analyzes a USB 3.0 bug check.
+title: "usb3kd.usbanalyze"
+description: "The usb3kd.usbanalyze extension analyzes a USB 3.0 bug check."
 keywords: ["usb3kd.usbanalyze Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -42,4 +42,5 @@ Usb3kd.dll
 [**BUGCODE\_USB3\_DRIVER**](../debugger/bug-check-0x144--bugcode-usb3-driver.md)
 
  
+
 

@@ -1,6 +1,6 @@
 ---
-title: WinDbg Release notes
-description: This topic provides information on what's new in WinDbg.
+title: "WinDbg Release notes"
+description: "This topic provides information on what's new in WinDbg."
 keywords: ["Release notes", "WinDbg", "Windows Debugging"]
 ms.date: 03/05/2024
 ms.topic: article
@@ -495,3 +495,4 @@ This version was the first release of WinDbg Preview. For general information on
 [WinDbg – Installation](index.md)
 
 [WinDbg – Command line startup options](windbg-command-line-preview.md)
+

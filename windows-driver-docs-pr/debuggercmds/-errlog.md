@@ -1,6 +1,6 @@
 ---
-title: errlog (WinDbg)
-description: The errlog extension displays the contents of any pending entries in the I/O system's error log.
+title: "errlog (WinDbg)"
+description: "The errlog extension displays the contents of any pending entries in the I/O system's error log."
 keywords: ["errlog Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -43,4 +43,5 @@ Only entries that were queued by [**IoWriteErrorLogEntry**](/windows-hardware/dr
 This command can be used as a diagnostic aid after a system crash because it reveals pending error information that was unable to be committed to the error log before the system halted.
 
  
+
 

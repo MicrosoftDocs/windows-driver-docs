@@ -1,6 +1,6 @@
 ---
-title: WinDbg - Data Model Menu
-description: This section describes how to work with the data model menu in the WinDbg debugger.
+title: "WinDbg - Data Model Menu"
+description: "This section describes how to work with the data model menu in the WinDbg debugger."
 keywords: ["Data Model Menu", "WinDbg", "Menu", "Windows Debugging"]
 ms.date: 01/10/2020
 ---
@@ -62,3 +62,4 @@ Use change query to change the query that is used in the active data model windo
 [dx (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md)
 
 [WinDbg Features](../debugger/debugging-using-windbg-preview.md)
+

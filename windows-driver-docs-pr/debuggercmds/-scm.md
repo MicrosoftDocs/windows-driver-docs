@@ -1,6 +1,6 @@
 ---
-title: scm (WinDbg)
-description: The scm extension displays the specified shared cache map.
+title: "scm (WinDbg)"
+description: "The scm extension displays the specified shared cache map."
 keywords: ["shared cache map", "cache manager", "scm Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -61,6 +61,7 @@ In Windows XP and later versions of Windows, use the [**dt nt!\_SHARED\_CACHE\_M
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: .kdtargetmac (Display Target MAC Address)
-description: Display Target MAC Address.
+title: ".kdtargetmac (Display Target MAC Address)"
+description: "Display Target MAC Address."
 keywords: [".kdtargetmac (Display Target MAC Address) Windows Debugging"]
 ms.date: 05/21/2018
 topic_type:
@@ -80,6 +80,7 @@ Knowing the MAC address of the target system can be useful for network tracing a
  
 
  
+
 
 
 

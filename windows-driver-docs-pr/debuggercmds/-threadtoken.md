@@ -1,6 +1,6 @@
 ---
-title: threadtoken
-description: The threadtoken extension displays the impersonation state of the current thread.
+title: "threadtoken"
+description: "The threadtoken extension displays the impersonation state of the current thread."
 keywords: ["threadtoken Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -129,6 +129,7 @@ Here is an example:
  
 
  
+
 
 
 

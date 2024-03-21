@@ -1,6 +1,6 @@
 ---
-title: ndiskd.netreport
-description: The ndiskd.netreport extension generates a visual report of the entire network stack.
+title: "ndiskd.netreport"
+description: "The ndiskd.netreport extension generates a visual report of the entire network stack."
 keywords: ["ndiskd.netreport Windows Debugging"]
 ms.date: 06/23/2020
 topic_type:
@@ -87,3 +87,4 @@ The Data flows tab, which appears if NBL tracking was enabled on the target syst
 [**!ndiskd.nbllog**](-ndiskd-nbllog.md)
 
 [Using NIC Teaming for Network Subsystem Performance](/previous-versions/dn567652(v=vs.85))
+

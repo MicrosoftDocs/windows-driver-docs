@@ -1,6 +1,6 @@
 ---
-title: .writemem (Write Memory to File)
-description: The .writemem command writes a section of memory to a file.
+title: ".writemem (Write Memory to File)"
+description: "The .writemem command writes a section of memory to a file."
 keywords: [".writemem (Write Memory to File) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -49,6 +49,7 @@ The **.writemem** command is the opposite of the [**.readmem (Read Memory from F
  
 
  
+
 
 
 

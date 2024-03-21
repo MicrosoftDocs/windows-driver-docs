@@ -1,6 +1,6 @@
 ---
-title: usb3kd.ucx_controller
-description: The usb3kd.ucx_controller command displays information about a USB 3.0 host controller. The display is based on data structures maintained by UcxVersion.sys.
+title: "usb3kd.ucx_controller"
+description: "The usb3kd.ucx_controller command displays information about a USB 3.0 host controller. The display is based on data structures maintained by UcxVersion.sys."
 keywords: ["usb3kd.ucx_controller Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -107,4 +107,5 @@ Device Tree:
 [**!usb3kd.ucx\_controller\_list**](-usb3kd-ucx-controller-list.md)
 
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
+
 

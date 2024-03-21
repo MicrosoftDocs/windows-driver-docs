@@ -1,6 +1,6 @@
 ---
-title: wudfext.wudfusbpipe
-description: The wudfext.wudfusbpipe extension displays information about a USB pipe object.
+title: "wudfext.wudfusbpipe"
+description: "The wudfext.wudfusbpipe extension displays information about a USB pipe object."
 keywords: ["wudfext.wudfusbpipe Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -58,6 +58,7 @@ For more information, see [User-Mode Driver Framework Debugging](../debugger/use
  
 
  
+
 
 
 

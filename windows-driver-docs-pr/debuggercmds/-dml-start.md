@@ -1,6 +1,6 @@
 ---
-title: .dml_start (Display DML Starting Point)
-description: The .dml_start command displays output that serves as a starting point for exploration using commands that support Debugger Markup Language (DML).
+title: ".dml_start (Display DML Starting Point)"
+description: "The .dml_start command displays output that serves as a starting point for exploration using commands that support Debugger Markup Language (DML)."
 keywords: [".dml_start (Display DML Starting Point) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -68,3 +68,4 @@ DML output often works well in the [Command Browser window](../debugger/command-
 [Debugger Markup Language Commands](../debugger/debugger-markup-language-commands.md)
 
 [**.browse**](-browse--display-command-in-browser-.md)
+

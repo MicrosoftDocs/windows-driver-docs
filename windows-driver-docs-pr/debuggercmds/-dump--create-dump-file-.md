@@ -1,6 +1,6 @@
 ---
-title: .dump (Create Dump File)
-description: The .dump command creates a user-mode or kernel-mode crash dump file.
+title: ".dump (Create Dump File)"
+description: "The .dump command creates a user-mode or kernel-mode crash dump file."
 keywords: ["Create Dump File (.dump) command", "dump file, Create Dump File (.dump) command", ".dump (Create Dump File) Windows Debugging"]
 ms.date: 08/29/2023
 topic_type:
@@ -125,3 +125,4 @@ Handle information can be read by using the [**!handle**](-handle.md) extension 
 [Varieties of Kernel-Mode Dump Files](../debugger/varieties-of-kernel-mode-dump-files.md)
 
 [.ecxr](-ecxr--display-exception-context-record-.md)
+

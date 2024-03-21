@@ -1,6 +1,6 @@
 ---
-title: object (WinDbg)
-description: The object extension displays information about a system object.
+title: "object (WinDbg)"
+description: "The object extension displays information about a system object."
 keywords: ["object Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -179,6 +179,7 @@ For information about objects and the object manager, see the Microsoft Windows 
  
 
  
+
 
 
 

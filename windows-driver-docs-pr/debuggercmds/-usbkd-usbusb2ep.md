@@ -1,6 +1,6 @@
 ---
-title: usbkd.usbusb2ep
-description: The usbkd.usbusb2ep command displays information from a usbport _USB2_EP structure.
+title: "usbkd.usbusb2ep"
+description: "The usbkd.usbusb2ep command displays information from a usbport _USB2_EP structure."
 keywords: ["usbkd.usbusb2ep Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -40,4 +40,5 @@ Usbkd.dll
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
+
 

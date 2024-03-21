@@ -1,6 +1,6 @@
 ---
-title: .force_tb (Forcibly Allow Branch Tracing)
-description: The .force_tb command forces the processor to trace branches early in the boot process.
+title: ".force_tb (Forcibly Allow Branch Tracing)"
+description: "The .force_tb command forces the processor to trace branches early in the boot process."
 keywords: [".force_tb (Forcibly Allow Branch Tracing) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -43,6 +43,7 @@ However, if you have to use the [**tb (Trace to Next Branch)**](tb--trace-to-nex
  
 
  
+
 
 
 

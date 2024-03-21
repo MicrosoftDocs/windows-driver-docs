@@ -1,6 +1,6 @@
 ---
-title: wmitrace.disable
-description: The wmitrace.disable extension disables a provider for the specified Event Tracing for Windows (ETW) trace session.
+title: "wmitrace.disable"
+description: "The wmitrace.disable extension disables a provider for the specified Event Tracing for Windows (ETW) trace session."
 keywords: ["wmitrace.disable Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -52,6 +52,7 @@ To enable a provider, use [**!wmitrace.enable**](-wmitrace-enable.md).
  
 
  
+
 
 
 

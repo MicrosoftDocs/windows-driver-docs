@@ -1,6 +1,6 @@
 ---
-title: usbkd._ehcistq
-description: The usbkd._ehcistq command displays a usbehci _HCD_QUEUEHEAD_DESCRIPTOR structure.
+title: "usbkd._ehcistq"
+description: "The usbkd._ehcistq command displays a usbehci _HCD_QUEUEHEAD_DESCRIPTOR structure."
 keywords: ["usbkd._ehcistq Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -40,4 +40,5 @@ Usbkd.dll
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
+
 

@@ -1,6 +1,6 @@
 ---
-title: usb3kd.dsf
-description: The usb3kd.dsf extension is a toggle command that sets the debugger context to debug the DSF host driver.
+title: "usb3kd.dsf"
+description: "The usb3kd.dsf extension is a toggle command that sets the debugger context to debug the DSF host driver."
 keywords: ["usb3kd.dsf Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -34,4 +34,5 @@ Usb3kd.dll
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
+
 

@@ -1,6 +1,6 @@
 ---
-title: owner (WinDbg)
-description: The owner extension displays the owner of a module or function.
+title: "owner (WinDbg)"
+description: "The owner extension displays the owner of a module or function."
 keywords: ["owner Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -64,6 +64,7 @@ For details on the triage.ini file and an example of the **!owner** extension, s
  
 
  
+
 
 
 

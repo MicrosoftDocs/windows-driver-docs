@@ -1,6 +1,6 @@
 ---
-title: storagekd.storclass
-description: The storagekd.storclass extension displays information about the specified classpnp device.
+title: "storagekd.storclass"
+description: "The storagekd.storclass extension displays information about the specified classpnp device."
 keywords: ["storagekd.storclass Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -100,6 +100,7 @@ Classpnp External Information at fffffa80043dc1b0
  
 
  
+
 
 
 

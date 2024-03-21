@@ -1,6 +1,6 @@
 ---
-title: storagekd.storloglist
-description: The storagekd.storloglist extension displays the Storport adapter’s internal log entries.
+title: "storagekd.storloglist"
+description: "The storagekd.storloglist extension displays the Storport adapter’s internal log entries."
 keywords: ["storagekd.storloglist Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -78,6 +78,7 @@ Storport RaidLogList
  
 
  
+
 
 
 

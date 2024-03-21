@@ -1,6 +1,6 @@
 ---
-title: .imgscan (Find Image Headers)
-description: The .imgscan command scans virtual memory for image headers.
+title: ".imgscan (Find Image Headers)"
+description: "The .imgscan command scans virtual memory for image headers."
 keywords: ["Find Image Headers (.imgscan) command", ".imgscan (Find Image Headers) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -66,6 +66,7 @@ MZ at 7c570000, prot 00000002, type 01000000 - size b8000
  
 
  
+
 
 
 

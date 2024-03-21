@@ -1,6 +1,6 @@
 ---
-title: pocaps (WinDbg)
-description: The pocaps extension displays the power capabilities of the target computer.
+title: "pocaps (WinDbg)"
+description: "The pocaps extension displays the power capabilities of the target computer."
 keywords: ["pocaps Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -56,6 +56,7 @@ PopCapabilities @ 0x8016b100
  
 
  
+
 
 
 

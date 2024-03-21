@@ -1,6 +1,6 @@
 ---
-title: wdfkd.wdfdmaenabler
-description: The wdfkd.wdfdmaenabler extension displays information about a WDF direct memory access (DMA) object, and its transaction and common buffer objects.
+title: "wdfkd.wdfdmaenabler"
+description: "The wdfkd.wdfdmaenabler extension displays information about a WDF direct memory access (DMA) object, and its transaction and common buffer objects."
 keywords: ["wdfkd.wdfdmaenabler Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -42,6 +42,7 @@ For more information, see [Kernel-Mode Driver Framework Debugging](../debugger/k
  
 
  
+
 
 
 

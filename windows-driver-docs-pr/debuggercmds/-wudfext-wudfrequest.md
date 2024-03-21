@@ -1,6 +1,6 @@
 ---
-title: wudfext.wudfrequest
-description: The wudfext.wudfrequest extension displays information about an I/O request.
+title: "wudfext.wudfrequest"
+description: "The wudfext.wudfrequest extension displays information about an I/O request."
 keywords: ["wudfext.wudfrequest Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -77,6 +77,7 @@ UM IRP: 0x00429108  UniqueId: 0xf4  Kernel Irp: 0x0x936ef160
  
 
  
+
 
 
 

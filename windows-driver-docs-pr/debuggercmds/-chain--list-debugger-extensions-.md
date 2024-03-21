@@ -1,6 +1,6 @@
 ---
-title: .chain (List Debugger Extensions)
-description: The .chain command lists all loaded debugger extensions in their default search order.
+title: ".chain (List Debugger Extensions)"
+description: "The .chain command lists all loaded debugger extensions in their default search order."
 keywords: [".chain (List Debugger Extensions) Windows Debugging"]
 ms.date: 08/30/2023
 topic_type:
@@ -38,3 +38,4 @@ Displays the output using [Debugger Markup Language](../debugger/debugger-markup
 ### Additional Information
 
 For details on loading, unloading, and controlling extensions, see [Loading Debugger Extension DLLs](loading-debugger-extension-dlls.md). For details on executing extension commands and an explanation of the default search order, see [Using Debugger Extension Commands](using-debugger-extension-commands.md).
+

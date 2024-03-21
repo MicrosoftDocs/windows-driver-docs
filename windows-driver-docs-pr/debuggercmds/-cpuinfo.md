@@ -1,6 +1,6 @@
 ---
-title: cpuinfo (WinDbg)
-description: The cpuinfo extension displays detailed information about the target computer's CPU.
+title: "cpuinfo (WinDbg)"
+description: "The cpuinfo extension displays detailed information about the target computer's CPU."
 keywords: ["cpuinfo Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -60,6 +60,7 @@ For details on how to interpret specific values for each entry, as well as any a
  
 
  
+
 
 
 

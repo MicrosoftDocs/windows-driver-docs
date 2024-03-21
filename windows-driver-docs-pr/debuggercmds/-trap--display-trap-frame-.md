@@ -1,6 +1,6 @@
 ---
-title: .trap (Display Trap Frame)
-description: The .trap command displays the trap frame register state and also sets the register context.
+title: ".trap (Display Trap Frame)"
+description: "The .trap command displays the trap frame register state and also sets the register context."
 keywords: ["Display Trap Frame (.trap) command", "trap frame", ".trap (Display Trap Frame) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -67,6 +67,7 @@ This extension is commonly used when debugging bug check 0xA and 0x7F. For detai
  
 
  
+
 
 
 

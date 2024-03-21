@@ -1,6 +1,6 @@
 ---
-title: wdfkd.wdfumirp
-description: The wdfkd.wdfumirp extension displays information about a user-mode I/O request packet (UM IRP).
+title: "wdfkd.wdfumirp"
+description: "The wdfkd.wdfumirp extension displays information about a user-mode I/O request packet (UM IRP)."
 keywords: ["wdfkd.wdfumirp Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -82,6 +82,7 @@ UM IRP: 0x0000001ab9eae370  UniqueId: 0x0  Kernel Irp: 0xffffe00000c53010
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: .bpcmds (Display Breakpoint Commands)
-description: The .bpcmds command displays the commands that were used to set each of the current breakpoints.
+title: ".bpcmds (Display Breakpoint Commands)"
+description: "The .bpcmds command displays the commands that were used to set each of the current breakpoints."
 keywords: [".bpcmds (Display Breakpoint Commands) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -99,6 +99,7 @@ Notice also that breakpoints 3, 4, and 5, which were created by the **bm** comma
  
 
  
+
 
 
 

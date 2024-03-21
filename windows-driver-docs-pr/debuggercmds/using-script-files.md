@@ -1,6 +1,6 @@
 ---
-title: Using Script Files
-description: Using Script Files
+title: "Using Script Files"
+description: "Using Script Files"
 keywords: ["script file", "script file, overview"]
 ms.date: 05/23/2017
 ---
@@ -30,6 +30,7 @@ WinDbg supports the same scripts as KD and CDB, with one minor exception. You ca
  
 
  
+
 
 
 

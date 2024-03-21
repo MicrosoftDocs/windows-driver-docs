@@ -1,6 +1,6 @@
 ---
-title: Time Travel Debugging - TTD.exe command line utility
-description: This section describes when and how to use work with the TTD.exe command line utility
+title: "Time Travel Debugging - TTD.exe command line utility"
+description: "This section describes when and how to use work with the TTD.exe command line utility"
 keywords: ["TTD.exe command line utility", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
 ms.date: 03/15/2024
 ---
@@ -717,3 +717,4 @@ Most of the .out file content is used internally by the time travel debugging te
 [Time Travel Debugging - Record a trace](time-travel-debugging-record.md)
 
 [Time Travel Debugging - Replay a trace](time-travel-debugging-replay.md)
+

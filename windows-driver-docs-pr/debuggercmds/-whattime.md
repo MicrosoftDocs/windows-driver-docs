@@ -1,6 +1,6 @@
 ---
-title: whattime (WinDbg)
-description: The whattime extension converts a tick count into a standard time value.
+title: "whattime (WinDbg)"
+description: "The whattime extension converts a tick count into a standard time value."
 keywords: ["tick count", "whattime Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -45,6 +45,7 @@ kd> !whattime 29857ae4
  
 
  
+
 
 
 

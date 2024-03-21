@@ -1,6 +1,6 @@
 ---
-title: exca (WinDbg)
-description: The exca extension displays PC-Card Interrupt Controller (PCIC) Exchangable Card Architecture (ExCA) registers.
+title: "exca (WinDbg)"
+description: "The exca extension displays PC-Card Interrupt Controller (PCIC) Exchangable Card Architecture (ExCA) registers."
 keywords: ["PCIC (PC Card Interrupt Controller)", "ExCA registers", "exca Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -62,6 +62,7 @@ The [**!cbreg**](-cbreg.md) extension can be used to display CardBus Socket regi
  
 
  
+
 
 
 

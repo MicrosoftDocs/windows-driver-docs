@@ -1,6 +1,6 @@
 ---
-title: ppmsettings
-description: The ppmsettings command
+title: "ppmsettings"
+description: "The ppmsettings command"
 keywords: ["ppmsettings Windows Debugging"]
 ms.date: 06/08/2017
 topic_type:
@@ -36,6 +36,7 @@ This command is supported on the following versions of Windows:
 Kdexts.dll 
 
  
+
 
 
 

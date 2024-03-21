@@ -1,6 +1,6 @@
 ---
-title: wdfkd.wdfusbdevice
-description: The wdfkd.wdfusbdevice extension displays information about a specified KMDF USB device object, incuding all USB interfaces and the pipes that are configured.
+title: "wdfkd.wdfusbdevice"
+description: "The wdfkd.wdfusbdevice extension displays information about a specified KMDF USB device object, incuding all USB interfaces and the pipes that are configured."
 keywords: ["wdfkd.wdfusbdevice Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -51,6 +51,7 @@ For more information, see [Kernel-Mode Driver Framework Debugging](../debugger/k
  
 
  
+
 
 
 

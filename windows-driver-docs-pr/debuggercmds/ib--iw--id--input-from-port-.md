@@ -1,6 +1,6 @@
 ---
-title: ib, iw, id (Input from Port)
-description: The ib, iw, and id commands read and display a byte, word, or double word from the selected port.
+title: "ib, iw, id (Input from Port)"
+description: "The ib, iw, and id commands read and display a byte, word, or double word from the selected port."
 keywords: ["ib, iw, id (Input from Port) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -68,6 +68,7 @@ Make sure that reading an I/O port does not affect the behavior of the device th
  
 
  
+
 
 
 

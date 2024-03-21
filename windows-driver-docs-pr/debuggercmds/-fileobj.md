@@ -1,6 +1,6 @@
 ---
-title: fileobj (WinDbg)
-description: The fileobj extension displays detailed information about a FILE_OBJECT structure.
+title: "fileobj (WinDbg)"
+description: "The fileobj extension displays detailed information about a FILE_OBJECT structure."
 keywords: ["FILE_OBJECT", "fileobj Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -42,4 +42,5 @@ For information about file objects, see the Microsoft Windows SDK documentation,
 If the FILE\_OBJECT structure has an associated cache, **!fileobj** tries to parse and display cache information..
 
  
+
 

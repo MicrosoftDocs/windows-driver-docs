@@ -1,6 +1,6 @@
 ---
-title: ~n (Suspend Thread)
-description: The ~n command suspends execution of the specified thread.Do not confuse this command with the n (Set Number Base) command.
+title: "~n (Suspend Thread)"
+description: "The ~n command suspends execution of the specified thread.Do not confuse this command with the n (Set Number Base) command."
 keywords: ["~n (Suspend Thread) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -53,6 +53,7 @@ The thread's start address is displayed when you use this command.
  
 
  
+
 
 
 

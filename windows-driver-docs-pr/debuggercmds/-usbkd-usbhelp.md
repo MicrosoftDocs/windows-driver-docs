@@ -1,6 +1,6 @@
 ---
-title: usbkd.usbhelp
-description: The usbkd.usbhelp command displays help for the USB 2.0 debugger extension commands.
+title: "usbkd.usbhelp"
+description: "The usbkd.usbhelp command displays help for the USB 2.0 debugger extension commands."
 keywords: ["usbkd.usbhelp Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -30,4 +30,5 @@ Usbkd.dll
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
+
 

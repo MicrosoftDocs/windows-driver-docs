@@ -1,6 +1,6 @@
 ---
-title: Time Travel Debugging - Introduction to Time Travel Debugging objects
-description: This section describes how to use the data model to query time travel traces. 
+title: "Time Travel Debugging - Introduction to Time Travel Debugging objects"
+description: "This section describes how to use the data model to query time travel traces. "
 keywords: ["Introduction to Time Travel Debugging objects", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
 ms.date: 04/17/2019
 ---
@@ -473,3 +473,4 @@ There can be a several reasons that a query does not return anything for calls t
 [Time Travel Debugging - JavaScript Automation](time-travel-debugging-javascript-automation.md)
 
 ---
+

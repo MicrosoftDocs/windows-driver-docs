@@ -1,6 +1,6 @@
 ---
-title: WinDbg Basics 
-description: This section describes the basic capabilities of WinDbg debugger.
+title: "WinDbg Basics "
+description: "This section describes the basic capabilities of WinDbg debugger."
 keywords: ["Summary", "WinDbg", "basic capabilities of WinDbg", "Windows Debugging"]
 ms.date: 03/21/2022
 ---
@@ -64,3 +64,4 @@ Watch these episodes of [Defrag Tools](/shows/defrag-tools) to see WinDbg in act
 | [WinDbg – Installation](index.md)                                     | Installation directions |
 | [WinDbg – Start a user-mode session](windbg-user-mode-preview.md)     | User Mode               |
 | [WinDbg – Start a kernel mode session](windbg-kernel-mode-preview.md) | Kernel Mode             |
+

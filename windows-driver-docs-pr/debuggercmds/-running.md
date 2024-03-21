@@ -1,6 +1,6 @@
 ---
-title: running (WinDbg)
-description: The running extension displays a list of running threads on all processors of the target computer.
+title: "running (WinDbg)"
+description: "The running extension displays a list of running threads on all processors of the target computer."
 keywords: ["running Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -95,6 +95,7 @@ f8800980 f8800980 nt!KiIdleLoop+0x14
  
 
  
+
 
 
 

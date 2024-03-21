@@ -1,6 +1,6 @@
 ---
-title: gpiokd.pinisrvec
-description: The gpiokd.pinisrvec command displays Interrupt Service Routine (ISR) vector information for a specified pin.
+title: "gpiokd.pinisrvec"
+description: "The gpiokd.pinisrvec command displays Interrupt Service Routine (ISR) vector information for a specified pin."
 keywords: ["gpiokd.pinisrvec Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -40,6 +40,7 @@ Gpiokd.dll
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: ob, ow, od (Output to Port)
-description: The ob, ow, and od commands send a byte, word, or double word to the selected port.
+title: "ob, ow, od (Output to Port)"
+description: "The ob, ow, and od commands send a byte, word, or double word to the selected port."
 keywords: ["ob, ow, od (Output to Port) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -71,6 +71,7 @@ Make sure that you do not send a word or a double-word to a port that does not s
  
 
  
+
 
 
 

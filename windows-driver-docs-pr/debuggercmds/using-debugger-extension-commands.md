@@ -1,6 +1,6 @@
 ---
-title: Using Debugger Extension Commands
-description: Using Debugger Extension Commands
+title: "Using Debugger Extension Commands"
+description: "Using Debugger Extension Commands"
 keywords: ["extension commands ( commands), using", "extension commands ( commands), default search order"]
 ms.date: 05/23/2017
 ---
@@ -42,3 +42,4 @@ When an extension module is unloaded, it is removed from the search chain. When 
 Use the [**.chain (List Debugger Extensions)**](-chain--list-debugger-extensions-.md) command to display a list of all loaded extension modules in their current search order.
 
 If you attempt to execute an extension command that is not in any of the loaded extension modules, you will get an Export Not Found error message.
+

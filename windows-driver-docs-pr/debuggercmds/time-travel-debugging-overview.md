@@ -1,6 +1,6 @@
 ---
-title: Time Travel Debugging - Overview
-description: This section describes time travel debugging.
+title: "Time Travel Debugging - Overview"
+description: "This section describes time travel debugging."
 keywords: ["Overview", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
 ms.date: 03/13/2024
 ---
@@ -166,3 +166,4 @@ These topics describe additional advanced functionality in time travel debugging
 
 - [Time Travel Debugging - Introduction to Time Travel Debugging objects](time-travel-debugging-object-model.md)
 - [Time Travel Debugging - JavaScript Automation](time-travel-debugging-javascript-automation.md)
+

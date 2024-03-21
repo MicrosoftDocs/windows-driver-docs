@@ -1,6 +1,6 @@
 ---
-title: wdfkd.wdfsettraceprefix
-description: The wdfkd.wdfsettraceprefix extension sets the trace prefix format string.
+title: "wdfkd.wdfsettraceprefix"
+description: "The wdfkd.wdfsettraceprefix extension sets the trace prefix format string."
 keywords: ["wdfkd.wdfsettraceprefix Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -48,6 +48,7 @@ The format of the trace prefix string is defined by the Microsoft Windows tracin
  
 
  
+
 
 
 

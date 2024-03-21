@@ -1,6 +1,6 @@
 ---
-title: runaway (WinDbg)
-description: The runaway extension displays information about the time consumed by each thread.
+title: "runaway (WinDbg)"
+description: "The runaway extension displays information about the time consumed by each thread."
 keywords: ["runaway Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -97,6 +97,7 @@ Here is an example:
  
 
  
+
 
 
 

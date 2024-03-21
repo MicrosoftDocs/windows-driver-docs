@@ -1,6 +1,6 @@
 ---
-title: critsec (WinDbg)
-description: The critsec extension displays a critical section.
+title: "critsec (WinDbg)"
+description: "The critsec extension displays a critical section."
 keywords: ["critsec Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -60,3 +60,4 @@ ContentionCount    1
 [Critical Section Time Outs](../debugger/critical-section-time-outs.md) (user mode)
 
 [!cs ](-cs.md)
+

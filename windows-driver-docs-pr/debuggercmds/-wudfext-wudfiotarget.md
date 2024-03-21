@@ -1,6 +1,6 @@
 ---
-title: wudfext.wudfiotarget
-description: The wudfext.wudfiotarget extension displays information about an I/O target including the target's state and list of sent requests.
+title: "wudfext.wudfiotarget"
+description: "The wudfext.wudfiotarget extension displays information about an I/O target including the target's state and list of sent requests."
 keywords: ["wudfext.wudfiotarget Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -58,6 +58,7 @@ For more information, see [User-Mode Driver Framework Debugging](../debugger/use
  
 
  
+
 
 
 

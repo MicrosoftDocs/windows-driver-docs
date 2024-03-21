@@ -1,6 +1,6 @@
 ---
-title: exchain (WinDbg)
-description: The exchain extension displays the current exception handler chain.
+title: "exchain (WinDbg)"
+description: "The exchain extension displays the current exception handler chain."
 keywords: ["exchain Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -79,6 +79,7 @@ The list begins with the first handler on the chain (the one that is given the f
  
 
  
+
 
 
 

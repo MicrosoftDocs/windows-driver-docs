@@ -1,6 +1,6 @@
 ---
-title: ndiskd.rcvqueue
-description: The ndiskd.rcvqueue command displays information about a receive queue.
+title: "ndiskd.rcvqueue"
+description: "The ndiskd.rcvqueue command displays information about a receive queue."
 keywords: ["ndiskd.rcvqueue Windows Debugging"]
 ms.date: 06/26/2020
 topic_type:
@@ -111,3 +111,4 @@ RECEIVE QUEUE
 [**!ndiskd.help**](-ndiskd-help.md)
 
 [**!ndiskd.netadapter**](-ndiskd-netadapter.md)
+

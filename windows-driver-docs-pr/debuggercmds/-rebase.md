@@ -1,6 +1,6 @@
 ---
-title: rebase (WinDbg)
-description: The rebase extension searches in a rebase.log file for a specified address or symbol.
+title: "rebase (WinDbg)"
+description: "The rebase extension searches in a rebase.log file for a specified address or symbol."
 keywords: ["rebase Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -69,6 +69,7 @@ Displays a brief help text for this extension in the Debugger Command window.
  
 
  
+
 
 
 

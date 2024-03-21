@@ -1,6 +1,6 @@
 ---
-title: .excr (Display Exception Context Record)
-description: The .excr command displays the context record that is associated with the current exception.
+title: ".excr (Display Exception Context Record)"
+description: "The .excr command displays the context record that is associated with the current exception."
 keywords: [".excr (Display Exception Context Record) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -45,4 +45,5 @@ The [**.ecxr**](-ecxr--display-exception-context-record-.md) command is a synony
 [Register Context](../debugger/changing-contexts.md#register-context)
 
 [**.ecxr**](-ecxr--display-exception-context-record-.md)
+
 

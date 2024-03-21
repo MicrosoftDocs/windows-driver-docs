@@ -1,6 +1,6 @@
 ---
-title: ks.automation
-description: The ks.automation extension displays any automation items associated with the given object.
+title: "ks.automation"
+description: "The ks.automation extension displays any automation items associated with the given object."
 keywords: ["ks.automation Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -160,6 +160,7 @@ Filter 829493c4 has the following automation items:
  
 
  
+
 
 
 

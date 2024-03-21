@@ -1,6 +1,6 @@
 ---
-title: avrf (WinDbg)
-description: The avrf extension controls the settings of Application Verifier and displays a variety of output produced by Application Verifier.
+title: "avrf (WinDbg)"
+description: "The avrf extension controls the settings of Application Verifier and displays a variety of output produced by Application Verifier."
 keywords: ["avrf Windows Debugging"]
 ms.date: 06/24/2022
 topic_type:
@@ -128,3 +128,4 @@ When the **!avrf** extension is used with no parameters, it displays the current
 If an Application Verifier Stop has occurred, the **!avrf** extension with no parameters will reveal the nature of the stop and its cause. For some examples, see [Debugging Application Verifier Stops](../devtest/application-verifier-debugging-application-verifier-stops.md).
 
 If symbols for ntdll.dll and verifier.dll are missing, the **!avrf** extension generates an error message. For information about how to address this problem, see "Debugger install and setup" in [Debugging Application Verifier Stops](../devtest/application-verifier-debugging-application-verifier-stops.md).
+

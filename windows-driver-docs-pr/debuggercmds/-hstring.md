@@ -1,6 +1,6 @@
 ---
-title: hstring (WinDbg)
-description: The hstring extension displays the fields of an HSTRING. The last item in the display is the string itself.
+title: "hstring (WinDbg)"
+description: "The hstring extension displays the fields of an HSTRING. The last item in the display is the string itself."
 keywords: ["hstring Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -43,6 +43,7 @@ The **HSTRING** data type supports strings that have embedded NULL characters. H
  
 
  
+
 
 
 

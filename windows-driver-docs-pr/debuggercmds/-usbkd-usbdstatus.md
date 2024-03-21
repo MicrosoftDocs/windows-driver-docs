@@ -1,6 +1,6 @@
 ---
-title: usbkd.usbdstatus
-description: The usbkd.usbdstatus command displays the name of a USBD status code.
+title: "usbkd.usbdstatus"
+description: "The usbkd.usbdstatus command displays the name of a USBD status code."
 keywords: ["usbkd.usbdstatus Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -50,4 +50,5 @@ USBD_STATUS_DATA_OVERRUN (0xC0000008)
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
+
 

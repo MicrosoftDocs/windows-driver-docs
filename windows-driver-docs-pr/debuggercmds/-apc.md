@@ -1,6 +1,6 @@
 ---
-title: apc (WinDbg)
-description: The apc extension formats and displays the contents of one or more asynchronous procedure calls (APCs).
+title: "apc (WinDbg)"
+description: "The apc extension formats and displays the contents of one or more asynchronous procedure calls (APCs)."
 keywords: ["apc Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
@@ -81,6 +81,7 @@ Process e000000085489c30 userinit.exe
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: ate (WinDbg)
-description: The ate extension displays the alternate page table entry (ATE) for the specified address.
+title: "ate (WinDbg)"
+description: "The ate extension displays the alternate page table entry (ATE) for the specified address."
 keywords: ["ate Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
@@ -119,6 +119,7 @@ The status flags for the ATE are shown in the following table. The **!ate** disp
  
 
  
+
 
 
 

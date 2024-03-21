@@ -1,6 +1,6 @@
 ---
-title: storagekd.storadapter
-description: The storagekd.storadapter extension displays information about the specified Storport adapter.
+title: "storagekd.storadapter"
+description: "The storagekd.storadapter extension displays information about the specified Storport adapter."
 keywords: ["storagekd.storadapter Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -88,6 +88,7 @@ Normal Logical Units:
  
 
  
+
 
 
 

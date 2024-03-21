@@ -1,6 +1,6 @@
 ---
-title: .echo (Echo Comment)
-description: The .echo command displays a comment string.
+title: ".echo (Echo Comment)"
+description: "The .echo command displays a comment string."
 keywords: [".echo (Echo Comment) Windows Debugging"]
 ms.date: 11/19/2021
 topic_type:
@@ -55,6 +55,7 @@ The **.echo** command differs from the [**$$ (Comment Specifier)**](-----comment
  
 
  
+
 
 
 

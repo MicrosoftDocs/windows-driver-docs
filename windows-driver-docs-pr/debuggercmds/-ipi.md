@@ -1,6 +1,6 @@
 ---
-title: ipi (WinDbg)
-description: The ipi extension displays the interprocessor interrupt (IPI) state for a specified processor.
+title: "ipi (WinDbg)"
+description: "The ipi extension displays the interprocessor interrupt (IPI) state for a specified processor."
 keywords: ["IPI (interprocessor interrupt)", "ipi Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -73,6 +73,7 @@ IPI State for Processor 1
  
 
  
+
 
 
 

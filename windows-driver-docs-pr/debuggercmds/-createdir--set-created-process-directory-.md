@@ -1,6 +1,6 @@
 ---
-title: .createdir (Set Created Process Directory)
-description: The .createdir command controls the starting directory and handle inheritance for any processes created by the debugger.
+title: ".createdir (Set Created Process Directory)"
+description: "The .createdir command controls the starting directory and handle inheritance for any processes created by the debugger."
 keywords: [".createdir (Set Created Process Directory) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -53,6 +53,7 @@ The **.createdir** setting affects all processes created by [**.create (Create P
  
 
  
+
 
 
 

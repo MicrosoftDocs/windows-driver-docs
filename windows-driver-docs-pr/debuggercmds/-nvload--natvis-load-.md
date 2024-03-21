@@ -1,6 +1,6 @@
 ---
-title: .nvload (NatVis Load)
-description: The .nvload command loads a NatVis file into the debugger environment. After the visualization is loaded, it will be used to render data defined in the visualization.
+title: ".nvload (NatVis Load)"
+description: "The .nvload command loads a NatVis file into the debugger environment. After the visualization is loaded, it will be used to render data defined in the visualization."
 keywords: [".nvload (NatVis Load) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -46,3 +46,4 @@ For more information, see [Create Custom Views of Native Objects](/visualstudio/
 ## See also
 
 [**dx (Display NatVis Expression)**](dx--display-visualizer-variables-.md)
+

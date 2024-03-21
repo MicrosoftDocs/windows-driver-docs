@@ -1,6 +1,6 @@
 ---
-title: dskheap (WinDbg)
-description: The dskheap extension displays desktop heap information for a specified session.
+title: "dskheap (WinDbg)"
+description: "The dskheap extension displays desktop heap information for a specified session."
 keywords: ["desktops", "dskheap Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -72,6 +72,7 @@ kd> !dskheap
                 Total Desktop: (    5312 KB -   7 desktops)
 #                 Session ID:  0
 ```
+
 
 
 

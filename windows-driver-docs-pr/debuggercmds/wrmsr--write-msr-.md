@@ -1,6 +1,6 @@
 ---
-title: wrmsr (Write MSR)
-description: The wrmsr command writes a value to a Model-Specific Register (MSR) at the specified address.
+title: "wrmsr (Write MSR)"
+description: "The wrmsr command writes a value to a Model-Specific Register (MSR) at the specified address."
 keywords: ["wrmsr (Write MSR) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -64,6 +64,7 @@ The **wrmsr** command can display MSR's on x86-based and x64-based platforms. Th
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: bthkd.bthdevinfo
-description: The bthkd.bthdevinfo command displays the information about a given BTHENUM created device PDO.
+title: "bthkd.bthdevinfo"
+description: "The bthkd.bthdevinfo command displays the information about a given BTHENUM created device PDO."
 keywords: ["bthkd.bthdevinfo Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -40,6 +40,7 @@ Bthkd.dll
  
 
  
+
 
 
 

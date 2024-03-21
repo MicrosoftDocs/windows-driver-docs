@@ -1,6 +1,6 @@
 ---
-title: bl (Breakpoint List)
-description: The bl command lists information about existing breakpoints.
+title: "bl (Breakpoint List)"
+description: "The bl command lists information about existing breakpoints."
 keywords: ["bl (Breakpoint List) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -96,6 +96,7 @@ This output contains the following information:
  
 
  
+
 
 
 

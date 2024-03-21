@@ -1,6 +1,6 @@
 ---
-title: gpiokd.clientlist
-description: The gpiokd.clientlist command displays all registered GPIO controllers.
+title: "gpiokd.clientlist"
+description: "The gpiokd.clientlist command displays all registered GPIO controllers."
 keywords: ["gpiokd.clientlist Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -69,6 +69,7 @@ Gpiokd.dll
  
 
  
+
 
 
 

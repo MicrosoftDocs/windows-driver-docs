@@ -1,6 +1,6 @@
 ---
-title: dlls (WinDbg)
-description: The dlls extension displays the table entries of all loaded modules or all modules that a specified thread or process are using.
+title: "dlls (WinDbg)"
+description: "The dlls extension displays the table entries of all loaded modules or all modules that a specified thread or process are using."
 keywords: ["DLL table entry", "dlls Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -223,6 +223,7 @@ SECTION HEADER #3
  
 
  
+
 
 
 

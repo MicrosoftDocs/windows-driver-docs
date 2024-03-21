@@ -1,6 +1,6 @@
 ---
-title: dt (Display Type)
-description: The dt command displays information about a local variable, global variable or data type. This can display information about simple data types, as well as structures and unions.
+title: "dt (Display Type)"
+description: "The dt command displays information about a local variable, global variable or data type. This can display information about simple data types, as well as structures and unions."
 keywords: ["dt (Display Type) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -438,6 +438,7 @@ Finally, the **dt -h** command will display a short help text summarizing the **
  
 
  
+
 
 
 

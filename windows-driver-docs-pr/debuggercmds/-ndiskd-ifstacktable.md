@@ -1,6 +1,6 @@
 ---
-title: ndiskd.ifstacktable
-description: The ndiskd.ifstacktable extension displays the network interface stack table (ifStackTable).
+title: "ndiskd.ifstacktable"
+description: "The ndiskd.ifstacktable extension displays the network interface stack table (ifStackTable)."
 keywords: ["ndiskd.ifstacktable Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -174,4 +174,5 @@ This shows that the WFP 802.3 MAC Layer LightWeight Filter sits above the QoS Pa
 [**!ndiskd.netreport**](-ndiskd-netreport.md)
 
  
+
 

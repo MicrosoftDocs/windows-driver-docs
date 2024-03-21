@@ -1,6 +1,6 @@
 ---
-title: hidkd.hidtree
-description: The hidkd.hidtree command displays a list of all device nodes that have a HID function driver along with their child nodes. 
+title: "hidkd.hidtree"
+description: "The hidkd.hidtree command displays a list of all device nodes that have a HID function driver along with their child nodes. "
 keywords: ["hidkd.hidtree Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -50,6 +50,7 @@ Hidkd.dll
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: ~u (Unfreeze Thread)
-description: The ~u command unfreezes the specified thread.Do not confuse this command with the U (Unassemble) command.
+title: "~u (Unfreeze Thread)"
+description: "The ~u command unfreezes the specified thread.Do not confuse this command with the U (Unassemble) command."
 keywords: ["~u (Unfreeze Thread) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -76,6 +76,7 @@ The following command unfreezes thread number 123.
  
 
  
+
 
 
 

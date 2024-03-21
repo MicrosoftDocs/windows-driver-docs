@@ -1,6 +1,6 @@
 ---
-title: .attach (Attach to Process)
-description: The .attach command attaches to a new target application.
+title: ".attach (Attach to Process)"
+description: "The .attach command attaches to a new target application."
 keywords: ["Attach to Process (.attach) command", "process, Attach to Process (.attach) command", ".attach (Attach to Process) Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
@@ -78,6 +78,7 @@ If the **-premote** option is used, the new process will be part of a new system
  
 
  
+
 
 
 

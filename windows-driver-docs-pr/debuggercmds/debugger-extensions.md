@@ -1,6 +1,6 @@
 ---
-title: Using Debugger Extensions
-description: This topic describes using debugger extensions
+title: "Using Debugger Extensions"
+description: "This topic describes using debugger extensions"
 keywords: extension commands, debugger extensions
 ms.date: 10/13/2023
 ---
@@ -20,3 +20,4 @@ This section includes:
 [Using Debugger Extension Commands](using-debugger-extension-commands.md)
 
 [Writing New Debugger Extensions](writing-new-debugger-extensions.md)
+

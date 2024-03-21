@@ -1,6 +1,6 @@
 ---
-title: hstring2 (WinDbg)
-description: The hstring2 extension displays an entire HSTRING including any embedded NULL characters in the string itself.
+title: "hstring2 (WinDbg)"
+description: "The hstring2 extension displays an entire HSTRING including any embedded NULL characters in the string itself."
 keywords: ["hstring2 Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -39,6 +39,7 @@ The address of an **HSTRING**.
  
 
  
+
 
 
 

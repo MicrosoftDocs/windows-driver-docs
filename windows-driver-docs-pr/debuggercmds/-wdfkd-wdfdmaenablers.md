@@ -1,6 +1,6 @@
 ---
-title: wdfkd.wdfdmaenablers
-description: The wdfkd.wdfdmaenablers extension displays all WDF direct memory access (DMA) objects associated with a specified device object. 
+title: "wdfkd.wdfdmaenablers"
+description: "The wdfkd.wdfdmaenablers extension displays all WDF direct memory access (DMA) objects associated with a specified device object. "
 keywords: ["wdfkd.wdfdmaenablers Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -42,6 +42,7 @@ For more information, see [Kernel-Mode Driver Framework Debugging](../debugger/k
  
 
  
+
 
 
 

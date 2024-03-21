@@ -1,6 +1,6 @@
 ---
-title: .exr (Display Exception Record)
-description: The .exr command displays the contents of an exception record.
+title: ".exr (Display Exception Record)"
+description: "The .exr command displays the contents of an exception record."
 keywords: ["Display Exception Record (.exr) command", "exception record", ".exr (Display Exception Record) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -50,3 +50,4 @@ The **.exr** command is often used to debug bug check 0x1E. For more information
 [.ecxr (Display Exception Context Record)](-ecxr--display-exception-context-record-.md)
 
 [.trap](-trap--display-trap-frame-.md)
+

@@ -1,6 +1,6 @@
 ---
-title: wdfkd.wdfchildlist
-description: The wdfkd.wdfchildlist extension displays a child list's state and information about all of the device identification descriptions that are in the child list.
+title: "wdfkd.wdfchildlist"
+description: "The wdfkd.wdfchildlist extension displays a child list's state and information about all of the device identification descriptions that are in the child list."
 keywords: ["wdfkd.wdfchildlist Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -72,6 +72,7 @@ Callbacks:
  
 
  
+
 
 
 

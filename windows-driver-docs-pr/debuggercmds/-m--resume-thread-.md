@@ -1,6 +1,6 @@
 ---
-title: ~m (Resume Thread)
-description: The ~m command resumes execution of the specified thread.Do not confuse this command with the m (Move Memory) command.
+title: "~m (Resume Thread)"
+description: "The ~m command resumes execution of the specified thread.Do not confuse this command with the m (Move Memory) command."
 keywords: ["~m (Resume Thread) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -51,6 +51,7 @@ Every time that you use the **~m** command, the thread's suspend count is decrea
  
 
  
+
 
 
 

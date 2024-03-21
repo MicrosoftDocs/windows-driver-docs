@@ -1,6 +1,6 @@
 ---
-title: minipkd.help
-description: The minipkd.help extension displays help text for the Minipkd.dll extension commands.
+title: "minipkd.help"
+description: "The minipkd.help extension displays help text for the Minipkd.dll extension commands."
 keywords: ["minipkd.help Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -59,6 +59,7 @@ Use the [**.sympath (Set Symbol Path)**](-sympath--set-symbol-path-.md) command 
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: tct (Trace to Next Call or Return)
-description: The tct command executes the program until it reaches a call instruction or return instruction.
+title: "tct (Trace to Next Call or Return)"
+description: "The tct command executes the program until it reaches a call instruction or return instruction."
 keywords: ["tct (Trace to Next Call or Return) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -71,6 +71,7 @@ In source mode, you can associate one source line with multiple assembly instruc
  
 
  
+
 
 
 

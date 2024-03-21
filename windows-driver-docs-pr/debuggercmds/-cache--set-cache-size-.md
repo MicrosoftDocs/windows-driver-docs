@@ -1,6 +1,6 @@
 ---
-title: .cache (Set Cache Size)
-description: The .cache command sets the size of the cache used to hold data obtained from the target. Also sets a number of cache and memory options.
+title: ".cache (Set Cache Size)"
+description: "The .cache command sets the size of the cache used to hold data obtained from the target. Also sets a number of cache and memory options."
 keywords: [".cache (Set Cache Size) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -100,6 +100,7 @@ The **.cache forcedecodeuser** or **.cache forcedecodeptes** option will only la
  
 
  
+
 
 
 

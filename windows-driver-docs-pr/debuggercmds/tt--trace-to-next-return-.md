@@ -1,6 +1,6 @@
 ---
-title: tt (Trace to Next Return)
-description: The tt command executes the program until a return instruction is reached.
+title: "tt (Trace to Next Return)"
+description: "The tt command executes the program until a return instruction is reached."
 keywords: ["tt (Trace to Next Return) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -71,6 +71,7 @@ In source mode, you can associate one source line with multiple assembly instruc
  
 
  
+
 
 
 

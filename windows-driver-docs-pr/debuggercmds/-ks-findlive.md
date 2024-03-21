@@ -1,6 +1,6 @@
 ---
-title: ks.findlive
-description: The ks.findlive extension searches the internal Ks.sys debug log to attempt to find live objects of a specified type.
+title: "ks.findlive"
+description: "The ks.findlive extension searches the internal Ks.sys debug log to attempt to find live objects of a specified type."
 keywords: ["ks.findlive Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -67,6 +67,7 @@ This extension requires that the target computer be running a checked (debug) ve
  
 
  
+
 
 
 

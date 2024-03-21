@@ -1,6 +1,6 @@
 ---
-title: logexts.help
-description: The logexts.help extension displays a Help text in the Command Prompt window showing all Logexts.dll extension commands.
+title: "logexts.help"
+description: "The logexts.help extension displays a Help text in the Command Prompt window showing all Logexts.dll extension commands."
 keywords: ["logexts.help Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -52,6 +52,7 @@ For more information, see [Logger and LogViewer](../debugger/logger-and-logviewe
  
 
  
+
 
 
 

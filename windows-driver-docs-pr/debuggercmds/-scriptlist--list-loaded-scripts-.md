@@ -1,6 +1,6 @@
 ---
-title: .scriptlist (List Loaded Scripts)
-description: The .scriptlist command lists the loaded scripts.
+title: ".scriptlist (List Loaded Scripts)"
+description: "The .scriptlist command lists the loaded scripts."
 keywords: [".scriptlist (List Loaded Scripts) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -63,6 +63,7 @@ Before using any of the .script commands, a scripting provider needs to be loade
  
 
  
+
 
 
 

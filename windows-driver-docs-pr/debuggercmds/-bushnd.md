@@ -1,6 +1,6 @@
 ---
-title: bushnd (WinDbg)
-description: The bushnd extension displays a HAL BUS_HANDLER structure.
+title: "bushnd (WinDbg)"
+description: "The bushnd extension displays a HAL BUS_HANDLER structure."
 keywords: ["bushnd Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -36,6 +36,7 @@ Kdexts.dll
  
 
  
+
 
 
 

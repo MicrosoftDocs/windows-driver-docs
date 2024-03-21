@@ -1,6 +1,6 @@
 ---
-title: ppmidle (WinDbg)
-description: The ppmidle command
+title: "ppmidle (WinDbg)"
+description: "The ppmidle command"
 keywords: ["ppmidle Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -39,6 +39,7 @@ This command is supported on the following versions of Windows:
 Kdexts.dll 
 
  
+
 
 
 

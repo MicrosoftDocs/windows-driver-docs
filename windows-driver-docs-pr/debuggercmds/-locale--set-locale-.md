@@ -1,6 +1,6 @@
 ---
-title: .locale (Set Locale)
-description: The .locale command sets the locale or displays the current locale.
+title: ".locale (Set Locale)"
+description: "The .locale command sets the locale or displays the current locale."
 keywords: [".locale (Set Locale) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -64,6 +64,7 @@ Locale: C
  
 
  
+
 
 
 

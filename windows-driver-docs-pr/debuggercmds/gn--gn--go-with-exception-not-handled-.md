@@ -1,6 +1,6 @@
 ---
-title: gn, gN (Go with Exception Not Handled)
-description: The gn and gN commands continue execution of the given thread without marking the exception as having been handled. This allows the application's exception handler to handle the exception.
+title: "gn, gN (Go with Exception Not Handled)"
+description: "The gn and gN commands continue execution of the given thread without marking the exception as having been handled. This allows the application's exception handler to handle the exception."
 keywords: ["gn, gN (Go with Exception Not Handled) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -78,6 +78,7 @@ If *Thread* is specified, then the **gn** command is executed with the specified
  
 
  
+
 
 
 

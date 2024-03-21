@@ -1,6 +1,6 @@
 ---
-title: ivt (WinDbg)
-description: The ivt extension displays the Itanium interrupt vector table.
+title: "ivt (WinDbg)"
+description: "The ivt extension displays the Itanium interrupt vector table."
 keywords: ["interrupt vector table", "ivt Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -89,6 +89,7 @@ fe:e000000083576830 hal!HalpPCIISALine2Pin
  
 
  
+
 
 
 

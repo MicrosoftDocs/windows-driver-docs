@@ -1,6 +1,6 @@
 ---
-title: for_each_register
-description: The for_each_register extension executes a specified command for each register.
+title: "for_each_register"
+description: "The for_each_register extension executes a specified command for each register."
 keywords: ["for_each_register Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -77,6 +77,7 @@ For more information about how to define and use aliases as shortcuts for enteri
  
 
  
+
 
 
 

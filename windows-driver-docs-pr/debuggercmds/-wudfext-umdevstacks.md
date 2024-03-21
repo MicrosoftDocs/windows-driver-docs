@@ -1,6 +1,6 @@
 ---
-title: wudfext.umdevstacks
-description: The wudfext.umdevstacks extension displays information about all device stacks in the current host process.
+title: "wudfext.umdevstacks"
+description: "The wudfext.umdevstacks extension displays information about all device stacks in the current host process."
 keywords: ["wudfext.umdevstacks Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -73,6 +73,7 @@ For more information, see [User-Mode Driver Framework Debugging](../debugger/use
  
 
  
+
 
 
 

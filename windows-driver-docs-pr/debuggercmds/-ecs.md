@@ -1,6 +1,6 @@
 ---
-title: ecs (WinDbg)
-description: ecs
+title: "ecs (WinDbg)"
+description: "ecs"
 keywords: ["ecs extension (obsolete)"]
 ms.date: 05/23/2017
 ---
@@ -16,6 +16,7 @@ The **!ecs** extension is obsolete. To edit the PCI configuration space, use [**
  
 
  
+
 
 
 

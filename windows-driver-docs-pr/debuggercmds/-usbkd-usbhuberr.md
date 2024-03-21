@@ -1,6 +1,6 @@
 ---
-title: usbkd.usbhuberr
-description: The usbkd.usbhuberr command displays a USB hub error record.
+title: "usbkd.usbhuberr"
+description: "The usbkd.usbhuberr command displays a USB hub error record."
 keywords: ["usbkd.usbhuberr Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -84,4 +84,5 @@ In the preceding output, `ffffe000011f8498` is the address of the exception list
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
+
 

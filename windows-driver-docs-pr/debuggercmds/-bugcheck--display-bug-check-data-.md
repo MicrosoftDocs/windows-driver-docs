@@ -1,6 +1,6 @@
 ---
-title: .bugcheck (Display Bug Check Data)
-description: The .bugcheck command displays the data from a bug check on the target computer.
+title: ".bugcheck (Display Bug Check Data)"
+description: "The .bugcheck command displays the data from a bug check on the target computer."
 keywords: [".bugcheck (Display Bug Check Data) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -64,6 +64,7 @@ The [**!analyze**](-analyze.md) extension command is also useful after a bug che
  
 
  
+
 
 
 

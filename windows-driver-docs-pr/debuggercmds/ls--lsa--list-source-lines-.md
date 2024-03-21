@@ -1,6 +1,6 @@
 ---
-title: ls, lsa (List Source Lines)
-description: The ls and lsa commands display a series of lines from the current source file and advance the current source line number.
+title: "ls, lsa (List Source Lines)"
+description: "The ls and lsa commands display a series of lines from the current source file and advance the current source line number."
 keywords: ["ls, lsa (List Source Lines) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -63,6 +63,7 @@ After you run the **ls** or **lsa** command, the current line is redefined as th
  
 
  
+
 
 
 
