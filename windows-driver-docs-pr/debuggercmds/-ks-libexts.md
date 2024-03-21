@@ -1,6 +1,6 @@
 ---
-title: ks.libexts
-description: The ks.libexts extension provides access to Microsoft-supplied library extensions that are statically linked to the extension module.
+title: "ks.libexts"
+description: "The ks.libexts extension provides access to Microsoft-supplied library extensions that are statically linked to the extension module."
 keywords: ["ks.libexts Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -79,6 +79,7 @@ The **!ks.libexts** command allows viewing of statistics about those library ext
  
 
  
+
 
 
 

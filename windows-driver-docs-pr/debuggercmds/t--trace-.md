@@ -1,6 +1,6 @@
 ---
-title: t (Trace)
-description: The t command executes a single instruction or source line and optionally displays the resulting values of all registers and flags. 
+title: "t (Trace)"
+description: "The t command executes a single instruction or source line and optionally displays the resulting values of all registers and flags. "
 keywords: ["t (Trace) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -78,6 +78,7 @@ When you are quickly tracing many times in WinDbg, the debugging information win
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: ndiskd.cxadapter
-description: The ndiskd.cxadapter extension displays information about a NETADAPTER object.
+title: "ndiskd.cxadapter"
+description: "The ndiskd.cxadapter extension displays information about a NETADAPTER object."
 keywords: ["ndiskd.cxadapter Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -199,4 +199,5 @@ DATAPATH QUEUES
 [**!wdfkd.wdfhandle**](-wdfkd-wdfhandle.md)
 
  
+
 

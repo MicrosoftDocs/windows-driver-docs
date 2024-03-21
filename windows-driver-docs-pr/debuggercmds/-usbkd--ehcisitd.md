@@ -1,6 +1,6 @@
 ---
-title: usbkd._ehcisitd
-description: The usbkd._ehcisitd command displays information from a usbehci _HCD_SI_TRANSFER_DESCRIPTOR
+title: "usbkd._ehcisitd"
+description: "The usbkd._ehcisitd command displays information from a usbehci _HCD_SI_TRANSFER_DESCRIPTOR"
 keywords: ["usbkd._ehcisitd Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -40,4 +40,5 @@ Usbkd.dll
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
+
 

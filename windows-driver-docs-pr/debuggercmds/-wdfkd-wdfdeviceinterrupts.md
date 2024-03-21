@@ -1,6 +1,6 @@
 ---
-title: wdfkd.wdfdeviceinterrupts
-description: The wdfkd.wdfdeviceinterrupts extension displays all the interrupt objects for a specified device handle.
+title: "wdfkd.wdfdeviceinterrupts"
+description: "The wdfkd.wdfdeviceinterrupts extension displays all the interrupt objects for a specified device handle."
 keywords: ["wdfkd.wdfdeviceinterrupts Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -45,6 +45,7 @@ For more information, see [Kernel-Mode Driver Framework Debugging](../debugger/k
  
 
  
+
 
 
 

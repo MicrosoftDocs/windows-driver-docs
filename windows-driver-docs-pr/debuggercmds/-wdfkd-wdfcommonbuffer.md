@@ -1,6 +1,6 @@
 ---
-title: wdfkd.wdfcommonbuffer
-description: The wdfkd.wdfcommonbuffer extension displays information about a WDF common buffer object.
+title: "wdfkd.wdfcommonbuffer"
+description: "The wdfkd.wdfcommonbuffer extension displays information about a WDF common buffer object."
 keywords: ["wdfkd.wdfcommonbuffer Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -42,6 +42,7 @@ For more information, see [Kernel-Mode Driver Framework Debugging](../debugger/k
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: Time Travel Debugging - Replay a trace
-description: This section describes how to replay time travel traces.
+title: "Time Travel Debugging - Replay a trace"
+description: "This section describes how to replay time travel traces."
 keywords: ["Replay a trace", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
 ms.date: 03/13/2024
 ---
@@ -205,3 +205,4 @@ For information on the `!tt`, `!positions` and the `!index` commands see [Time T
 [Time Travel Debugging - Working with trace files](time-travel-debugging-trace-file-information.md)
 
 [Time Travel Debugging - Sample App Walkthrough](time-travel-debugging-walkthrough.md)
+

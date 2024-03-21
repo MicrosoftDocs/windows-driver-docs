@@ -1,6 +1,6 @@
 ---
-title: fpsearch (WinDbg)
-description: The fpsearch extension searches the freed special pool for a specified address.
+title: "fpsearch (WinDbg)"
+description: "The fpsearch extension searches the freed special pool for a specified address."
 keywords: ["special pool", "fpsearch Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -101,6 +101,7 @@ You can stop execution at any point by pressing CTRL+BREAK (in WinDbg) or CTRL+C
  
 
  
+
 
 
 

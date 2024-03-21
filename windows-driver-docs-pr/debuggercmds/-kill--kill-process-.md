@@ -1,6 +1,6 @@
 ---
-title: .kill (Kill Process)
-description: In user mode, the .kill command ends a process that is being debugged.
+title: ".kill (Kill Process)"
+description: "In user mode, the .kill command ends a process that is being debugged."
 keywords: [".kill (Kill Process) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -141,6 +141,7 @@ For more information, see [**WinDbg Command-Line Options**](../debugger/windbg-c
  
 
  
+
 
 
 

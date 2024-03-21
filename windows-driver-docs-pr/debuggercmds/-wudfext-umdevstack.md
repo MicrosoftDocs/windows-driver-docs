@@ -1,6 +1,6 @@
 ---
-title: wudfext.umdevstack
-description: The wudfext.umdevstack extension displays detailed information about a device stack in the host process.
+title: "wudfext.umdevstack"
+description: "The wudfext.umdevstack extension displays detailed information about a device stack in the host process."
 keywords: ["wudfext.umdevstack Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -80,6 +80,7 @@ Device Stack: 0x0034e4e0  Pdo Name: \Device\00000057
  
 
  
+
 
 
 

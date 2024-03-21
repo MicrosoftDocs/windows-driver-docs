@@ -1,6 +1,6 @@
 ---
-title: rpcexts.thread
-description: The rpcexts.thread extension displays the per-thread RPC information.This extension command should not be confused with the .thread command.
+title: "rpcexts.thread"
+description: "The rpcexts.thread extension displays the per-thread RPC information.This extension command should not be confused with the .thread command."
 keywords: ["rpcexts.thread Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -82,6 +82,7 @@ fAsync - 0x0
  
 
  
+
 
 
 

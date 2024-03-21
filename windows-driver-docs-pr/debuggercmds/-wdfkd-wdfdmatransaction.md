@@ -1,6 +1,6 @@
 ---
-title: wdfkd.wdfdmatransaction
-description: The wdfkd.wdfdmatransaction extension displays information about a WDF direct memory access (DMA) transaction object.
+title: "wdfkd.wdfdmatransaction"
+description: "The wdfkd.wdfdmatransaction extension displays information about a WDF direct memory access (DMA) transaction object."
 keywords: ["wdfkd.wdfdmatransaction Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -42,6 +42,7 @@ For more information, see [Kernel-Mode Driver Framework Debugging](../debugger/k
  
 
  
+
 
 
 

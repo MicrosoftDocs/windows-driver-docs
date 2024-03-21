@@ -1,6 +1,6 @@
 ---
-title: zombies (WinDbg)
-description: The zombies extension displays all dead ("zombie") processes or threads.
+title: "!zombies (WinDbg)"
+description: "The zombies extension displays all dead (zombie) processes or threads."
 keywords: ["zombies Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -13,7 +13,6 @@ api_type:
 ---
 
 # !zombies
-
 
 The **!zombies** extension displays all dead ("zombie") processes or threads.
 
@@ -72,6 +71,7 @@ This extension is available only for Windows 2000.
  
 
  
+
 
 
 

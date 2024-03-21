@@ -1,6 +1,6 @@
 ---
-title: so (Set Kernel Debugging Options)
-description: The so command sets or displays the kernel debugging options.
+title: "so (Set Kernel Debugging Options)"
+description: "The so command sets or displays the kernel debugging options."
 keywords: ["so (Set Kernel Debugging Options) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -67,6 +67,7 @@ You can also set kernel debugging options using the \_NT\_DEBUG\_OPTIONS [enviro
  
 
  
+
 
 
 

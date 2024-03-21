@@ -1,6 +1,6 @@
 ---
-title: irp extension command
-description: The irp extension displays information about an I/O request packet (IRP).
+title: "irp extension command"
+description: "The irp extension displays information about an I/O request packet (IRP)."
 keywords: ["IRP", "IRP", "IO Request Packet", "irp Windows Debugging"]
 ms.date: 08/23/2018
 topic_type:
@@ -511,4 +511,5 @@ The SCSI minor function codes are as follows:
 [**!ioctldecode**](-ioctldecode.md)
 
  
+
 

@@ -1,6 +1,6 @@
 ---
-title: .servers (List Debugging Servers)
-description: The .servers command lists all debugging servers that have been established by this debugger.
+title: ".servers (List Debugging Servers)"
+description: "The .servers command lists all debugging servers that have been established by this debugger."
 keywords: ["List Debugging Servers (.servers) command", "remote debugging through the debugger, List Debugging Servers (.servers) command", ".servers (List Debugging Servers) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -49,6 +49,7 @@ The **.servers** command does not list debugging servers started on this compute
  
 
  
+
 
 
 

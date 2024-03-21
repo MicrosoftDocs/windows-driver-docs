@@ -1,6 +1,6 @@
 ---
-title: qd (Quit and Detach)
-description: The qd command ends the debugging session and leaves any user-mode target application running.
+title: "qd (Quit and Detach)"
+description: "The qd command ends the debugging session and leaves any user-mode target application running."
 keywords: ["qd (Quit and Detach) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -42,6 +42,7 @@ When you are performing remote debugging through the debugger, you cannot use th
  
 
  
+
 
 
 

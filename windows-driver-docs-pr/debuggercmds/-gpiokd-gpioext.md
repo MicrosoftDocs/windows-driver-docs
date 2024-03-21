@@ -1,6 +1,6 @@
 ---
-title: gpiokd.gpioext
-description: The gpiokd.gpioext command displays information about a GPIO controller.
+title: "gpiokd.gpioext"
+description: "The gpiokd.gpioext command displays information about a GPIO controller."
 keywords: ["gpiokd.gpioext Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -72,6 +72,7 @@ Gpiokd.dll
  
 
  
+
 
 
 

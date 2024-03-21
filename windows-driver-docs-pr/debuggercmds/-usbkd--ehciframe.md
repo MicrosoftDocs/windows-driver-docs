@@ -1,6 +1,6 @@
 ---
-title: usbkd._ehciframe
-description: The usbkd._ehciframe command displays an EHCI miniport FrameListBaseAddress periodic list entry chain indexed by a frame number.
+title: "usbkd._ehciframe"
+description: "The usbkd._ehciframe command displays an EHCI miniport FrameListBaseAddress periodic list entry chain indexed by a frame number."
 keywords: ["usbkd._ehciframe Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -43,4 +43,5 @@ Usbkd.dll
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
+
 

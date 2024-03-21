@@ -1,6 +1,6 @@
 ---
-title: wdfkd.wdfcrashdump
-description: The wdfkd.wdfcrashdump extension displays error log information and other crash dump information from a minidump file, if the data is present.
+title: "wdfkd.wdfcrashdump"
+description: "The wdfkd.wdfcrashdump extension displays error log information and other crash dump information from a minidump file, if the data is present."
 keywords: ["wdfkd.wdfcrashdump Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -127,4 +127,5 @@ For information about enabling the inflight trace recorder for your driver, see 
 [**!wdfkd.wdflogdump**](-wdfkd-wdflogdump.md)
 
 [**!wdfkd.wdfsettraceprefix**](-wdfkd-wdfsettraceprefix.md)
+
 

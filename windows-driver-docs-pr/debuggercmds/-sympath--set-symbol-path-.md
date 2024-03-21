@@ -1,6 +1,6 @@
 ---
-title: .sympath (Set Symbol Path)
-description: The .sympath command sets or alters the symbol path. The symbol path specifies locations where the debugger looks for symbol files.
+title: ".sympath (Set Symbol Path)"
+description: "The .sympath command sets or alters the symbol path. The symbol path specifies locations where the debugger looks for symbol files."
 keywords: ["Set Symbol Path (.sympath) command", "symbol files and paths, Set Symbol Path (.sympath) command", ".sympath (Set Symbol Path) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -51,6 +51,7 @@ New symbol information will not be loaded when the symbol path is changed. You c
  
 
  
+
 
 
 

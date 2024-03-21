@@ -1,6 +1,6 @@
 ---
-title: lockedpages
-description: The lockedpages extension displays driver-locked pages for a specified process.
+title: "lockedpages"
+description: "The lockedpages extension displays driver-locked pages for a specified process."
 keywords: ["driver-locked pages", "lockedpages Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -40,6 +40,7 @@ You can stop execution at any point by pressing CTRL+BREAK (in WinDbg) or CTRL+C
  
 
  
+
 
 
 

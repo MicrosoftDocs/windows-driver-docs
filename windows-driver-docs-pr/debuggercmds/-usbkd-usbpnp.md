@@ -1,6 +1,6 @@
 ---
-title: usbkd.usbpnp
-description: The usbkd.usbpnp command displays state context information about a USB hub.
+title: "usbkd.usbpnp"
+description: "The usbkd.usbpnp command displays state context information about a USB hub."
 keywords: ["usbkd.usbpnp Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -40,4 +40,5 @@ Usbkd.dll
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
+
 

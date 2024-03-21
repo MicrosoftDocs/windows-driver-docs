@@ -1,6 +1,6 @@
 ---
-title: deadlock (WinDbg)
-description: The deadlock extension displays information about deadlocks collected by the Deadlock Detection option of Driver Verifier.
+title: "deadlock (WinDbg)"
+description: "The deadlock extension displays information about deadlocks collected by the Deadlock Detection option of Driver Verifier."
 keywords: ["Deadlock Detection (Driver Verifier)", "deadlock Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -148,6 +148,7 @@ At this point, the deadlock becomes entirely clear.
  
 
  
+
 
 
 

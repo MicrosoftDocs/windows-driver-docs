@@ -1,6 +1,6 @@
 ---
-title: .hh (Open HTML Help File)
-description: The .hh command opens the Debugging Tools for Windows documentation.
+title: ".hh (Open HTML Help File)"
+description: "The .hh command opens the Debugging Tools for Windows documentation."
 keywords: [".hh (Open HTML Help File) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -50,6 +50,7 @@ The **.hh** command opens the Debugging Tools for Windows documentation (Debugge
  
 
  
+
 
 
 

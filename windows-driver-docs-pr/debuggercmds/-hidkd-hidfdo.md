@@ -1,6 +1,6 @@
 ---
-title: hidkd.hidfdo
-description: The hidkd.hidfdo command displays HID information associated with a functional device object (FDO).
+title: "hidkd.hidfdo"
+description: "The hidkd.hidfdo command displays HID information associated with a functional device object (FDO)."
 keywords: ["hidkd.hidfdo Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -67,6 +67,7 @@ FDO  VendorID:0x045E(Microsoft Corporation) ProductID:0x0745 Version:0x0634
  
 
  
+
 
 
 

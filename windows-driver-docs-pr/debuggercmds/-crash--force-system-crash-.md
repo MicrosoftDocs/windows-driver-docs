@@ -1,6 +1,6 @@
 ---
-title: .crash (Force System Crash)
-description: The .crash command causes the target computer to issue a bug check.
+title: ".crash (Force System Crash)"
+description: "The .crash command causes the target computer to issue a bug check."
 keywords: [".crash (Force System Crash) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -64,6 +64,7 @@ A kernel-mode dump file will be written if crash dumps have been enabled. See [C
  
 
  
+
 
 
 

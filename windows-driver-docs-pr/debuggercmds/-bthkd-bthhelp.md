@@ -1,6 +1,6 @@
 ---
-title: bthkd.bthhelp
-description: The bthkd.bthhelp command displays help for the Bluetooth debug extension commands.
+title: "bthkd.bthhelp"
+description: "The bthkd.bthhelp command displays help for the Bluetooth debug extension commands."
 keywords: ["bthkd.bthhelp Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -34,6 +34,7 @@ Bthkd.dll
  
 
  
+
 
 
 

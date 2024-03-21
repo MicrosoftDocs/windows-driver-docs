@@ -1,6 +1,6 @@
 ---
-title: usbkd.usbhubmdpd
-description: The usbkd.usbhubmdpd command displays a usbhub _HUB_PORT_DATA structure if one is present in a crash dump that was generated as a result of Bug Check 0xFE.
+title: "usbkd.usbhubmdpd"
+description: "The usbkd.usbhubmdpd command displays a usbhub _HUB_PORT_DATA structure if one is present in a crash dump that was generated as a result of Bug Check 0xFE."
 keywords: ["usbkd.usbhubmdpd Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -44,4 +44,5 @@ Use this command only when you are debugging a crash dump file that was generate
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
+
 

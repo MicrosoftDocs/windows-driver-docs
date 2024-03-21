@@ -1,6 +1,6 @@
 ---
-title: usbkd.usbep
-description: The usbkd.usbep command displays information about a USB endpoint.
+title: "usbkd.usbep"
+description: "The usbkd.usbep command displays information about a USB endpoint."
 keywords: ["usbkd.usbep Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -103,4 +103,5 @@ RootHub Endpoint
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
+
 

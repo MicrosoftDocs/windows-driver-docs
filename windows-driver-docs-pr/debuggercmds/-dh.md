@@ -1,6 +1,6 @@
 ---
-title: dh (WinDbg)
-description: The dh extension displays the headers for the specified image.
+title: "dh (WinDbg)"
+description: "The dh extension displays the headers for the specified image."
 keywords: ["NTFS file object", "dh Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -74,6 +74,7 @@ The [**!lmi**](-lmi.md) extension extracts the most important information from t
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: .noshell (Prohibit Shell Commands)
-description: The .noshell command prevents you from using .shell commands.
+title: ".noshell (Prohibit Shell Commands)"
+description: "The .noshell command prevents you from using .shell commands."
 keywords: [".noshell (Prohibit Shell Commands) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -47,6 +47,7 @@ If you are performing remote debugging, this command is useful for security purp
  
 
  
+
 
 
 

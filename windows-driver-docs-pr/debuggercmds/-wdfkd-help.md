@@ -1,6 +1,6 @@
 ---
-title: wdfkd.help
-description: The wdfkd.help extension displays help information about all Wdfkd.dll extension commands.
+title: "wdfkd.help"
+description: "The wdfkd.help extension displays help information about all Wdfkd.dll extension commands."
 keywords: ["wdfkd.help Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -34,6 +34,7 @@ For more information about debugging framework-based drivers, see [Kernel-Mode D
  
 
  
+
 
 
 

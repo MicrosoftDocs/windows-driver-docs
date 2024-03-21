@@ -1,6 +1,6 @@
 ---
-title: tc (Trace to Next Call)
-description: The tc command executes the program until a call instruction is reached.
+title: "tc (Trace to Next Call)"
+description: "The tc command executes the program until a call instruction is reached."
 keywords: ["tc (Trace to Next Call) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -71,6 +71,7 @@ In source mode, you can associate one source line with multiple assembly instruc
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: .scriptrun (Run Script)
-description: The .scriptrun command will load and run a JavaScript.
+title: ".scriptrun (Run Script)"
+description: "The .scriptrun command will load and run a JavaScript."
 keywords: [".scriptrun (Run Script) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -132,6 +132,7 @@ Before using any of the .script commands, a scripting provider needs to be loade
 [**.scriptload (Load Script)**](-scriptload--load-script-.md)
 
 [JavaScript Debugger Scripting](../debugger/javascript-debugger-scripting.md)
+
 
 
 

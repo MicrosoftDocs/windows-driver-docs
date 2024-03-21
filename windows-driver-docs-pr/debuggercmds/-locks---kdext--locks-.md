@@ -1,6 +1,6 @@
 ---
-title: locks kdext
-description: The locks extension in Kdextx86.dll and Kdexts.dll displays information about kernel ERESOURCE locks.
+title: "locks kdext"
+description: "The locks extension in Kdextx86.dll and Kdexts.dll displays information about kernel ERESOURCE locks."
 keywords: ["kdext locks extension", "ERESOURCE locks", "deadlocks", "locks  kdext .locks Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -109,6 +109,7 @@ fafa3ddc 8050ec72 nt!PspSystemThreadStartup+0x2e (FPO: [Non-Fpo]) (CONV: stdcall
  
 
  
+
 
 
 

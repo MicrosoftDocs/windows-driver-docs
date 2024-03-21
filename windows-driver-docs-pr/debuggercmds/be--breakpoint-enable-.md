@@ -1,6 +1,6 @@
 ---
-title: be (Breakpoint Enable)
-description: The be command restores one or more breakpoints that were previously disabled.
+title: "be (Breakpoint Enable)"
+description: "The be command restores one or more breakpoints that were previously disabled."
 keywords: ["be (Breakpoint Enable) Windows Debugging"]
 ms.date: 09/18/2019
 topic_type:
@@ -42,3 +42,4 @@ For more information about and examples of how to use breakpoints, other breakpo
 Use the [**bl (Breakpoint List)**](bl--breakpoint-list-.md) command to list all existing breakpoints, their ID numbers, and their status.
 
 Use the [**.bpcmds (Display Breakpoint Commands)**](-bpcmds--display-breakpoint-commands-.md) command to list all existing breakpoints, their ID numbers, and the commands that were used to create them.
+

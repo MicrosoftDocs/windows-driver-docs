@@ -1,6 +1,6 @@
 ---
-title: ba (Break on Access)
-description: The ba command sets a processor breakpoint (often called, less accurately, a data breakpoint). This breakpoint is triggered when the specified memory is accessed.
+title: "ba (Break on Access)"
+description: "The ba command sets a processor breakpoint (often called, less accurately, a data breakpoint). This breakpoint is triggered when the specified memory is accessed."
 keywords: ["ba (Break on Access) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -183,6 +183,7 @@ kd> ba i4 3f8
  
 
  
+
 
 
 

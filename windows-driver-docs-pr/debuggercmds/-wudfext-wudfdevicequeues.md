@@ -1,6 +1,6 @@
 ---
-title: wudfext.wudfdevicequeues
-description: The wudfext.wudfdevicequeues extension displays information about all the I/O queues for a device.
+title: "wudfext.wudfdevicequeues"
+description: "The wudfext.wudfdevicequeues extension displays information about all the I/O queues for a device."
 keywords: ["wudfext.wudfdevicequeues Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -77,6 +77,7 @@ Queue: 1 (!wudfqueue 0x000f3500)
  
 
  
+
 
 
 

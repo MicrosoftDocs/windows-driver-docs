@@ -1,6 +1,6 @@
 ---
-title: .scriptload (Load Script)
-description: The .scriptload command will load and execute the specified script file.
+title: ".scriptload (Load Script)"
+description: "The .scriptload command will load and execute the specified script file."
 keywords: [".scriptload (Load Script) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -86,6 +86,7 @@ Available Script Providers:
  
 
  
+
 
 
 

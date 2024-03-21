@@ -1,6 +1,6 @@
 ---
-title: rpcexts.getcallinfo
-description: The rpcexts.getcallinfo extension searches the system's RPC state information for server-side call (SCALL) information.
+title: "rpcexts.getcallinfo"
+description: "The rpcexts.getcallinfo extension searches the system's RPC state information for server-side call (SCALL) information."
 keywords: ["rpcexts.getcallinfo Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -131,6 +131,7 @@ For a similar example using the DbgRpc tool, see [Get RPC Call Information](../d
  
 
  
+
 
 
 

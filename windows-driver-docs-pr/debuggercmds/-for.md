@@ -1,6 +1,6 @@
 ---
-title: .for (WinDbg)
-description: The .for token behaves like the for keyword in C, except that multiple increment commands must be separated by semicolons, not by commas.
+title: ".for (WinDbg)"
+description: "The .for token behaves like the for keyword in C, except that multiple increment commands must be separated by semicolons, not by commas."
 keywords: [".for Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -53,4 +53,5 @@ Here is an example of a **.for** statement with multiple increment commands:
 The [**.break**](https://support.microsoft.com/help/833721/available-switch-options-for-the-windows-xp-and-the-windows-server-200) and [**.continue**](-continue.md) tokens can be used to exit or restart the *Commands* block.
 
  
+
 

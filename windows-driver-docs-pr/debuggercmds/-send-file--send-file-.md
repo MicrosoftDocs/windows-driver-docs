@@ -1,6 +1,6 @@
 ---
-title: .send_file (Send File)
-description: The .send_file command copies files. If you are performing remote debugging through a process server, it sends a file from the smart client's computer to the process server's computer.
+title: ".send_file (Send File)"
+description: "The .send_file command copies files. If you are performing remote debugging through a process server, it sends a file from the smart client's computer to the process server's computer."
 keywords: [".send_file (Send File) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -54,6 +54,7 @@ This command is particularly useful when you have been performing remote debuggi
  
 
  
+
 
 
 

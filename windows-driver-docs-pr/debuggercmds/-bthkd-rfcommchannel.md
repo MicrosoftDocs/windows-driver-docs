@@ -1,6 +1,6 @@
 ---
-title: bthkd.rfcommchannel
-description: The bthkd.rfcommchannel command displays information about a given RFCOMM channel CB.
+title: "bthkd.rfcommchannel"
+description: "The bthkd.rfcommchannel command displays information about a given RFCOMM channel CB."
 keywords: ["bthkd.rfcommchannel Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -40,6 +40,7 @@ Bthkd.dll
  
 
  
+
 
 
 

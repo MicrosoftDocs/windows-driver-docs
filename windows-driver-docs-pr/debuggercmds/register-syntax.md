@@ -1,6 +1,6 @@
 ---
-title: Register Syntax
-description: Register Syntax
+title: "Register Syntax"
+description: "Register Syntax"
 keywords: ["expressions, registers", "registers, command syntax", "(register prefix)", "syntax rules for commands, (register prefix)", "syntax rules for commands, registers"]
 ms.date: 05/23/2017
 ---
@@ -42,6 +42,7 @@ In kernel mode, any reference to a register is interpreted as the register that 
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: s (Set Current Process)
-description: The s command sets or displays the current process number.
+title: "s (Set Current Process)"
+description: "The s command sets or displays the current process number."
 keywords: ["s (Set Current Process) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -55,6 +55,7 @@ This command also disassembles the current instruction for the current system, p
  
 
  
+
 
 
 

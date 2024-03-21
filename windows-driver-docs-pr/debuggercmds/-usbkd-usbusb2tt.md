@@ -1,6 +1,6 @@
 ---
-title: usbkd.usbusb2tt
-description: The usbkd.usbusb2tt command displays information from a usbport _TT structure.
+title: "usbkd.usbusb2tt"
+description: "The usbkd.usbusb2tt command displays information from a usbport _TT structure."
 keywords: ["usbkd.usbusb2tt Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -40,4 +40,5 @@ Usbkd.dll
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
+
 

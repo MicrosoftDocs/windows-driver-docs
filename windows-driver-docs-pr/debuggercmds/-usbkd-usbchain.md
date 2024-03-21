@@ -1,6 +1,6 @@
 ---
-title: usbkd.usbchain
-description: The usbkd.usbchain command displays a USB device chain starting at a specified PDO, and going back to the root hub.
+title: "usbkd.usbchain"
+description: "The usbkd.usbchain command displays a USB device chain starting at a specified PDO, and going back to the root hub."
 keywords: ["usbkd.usbchain Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -69,4 +69,5 @@ VID Xxxx PID Xxxx REV 0100  Xxxx Corporation
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
+
 

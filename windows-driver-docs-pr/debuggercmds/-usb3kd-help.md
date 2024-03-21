@@ -1,6 +1,6 @@
 ---
-title: usb3kd.help
-description: The usb3kd.help command displays help for the USB 3 debugger extension commands.
+title: "usb3kd.help"
+description: "The usb3kd.help command displays help for the USB 3 debugger extension commands."
 keywords: ["usb3kd.help Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -30,6 +30,7 @@ Usb3kd.dll
  
 
  
+
 
 
 

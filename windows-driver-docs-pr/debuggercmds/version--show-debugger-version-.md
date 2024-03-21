@@ -1,6 +1,6 @@
 ---
-title: version (Show Debugger Version)
-description: The version command displays version information about the debugger and all loaded extension DLLs.
+title: "version (Show Debugger Version)"
+description: "The version command displays version information about the debugger and all loaded extension DLLs."
 keywords: ["version (Show Debugger Version) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -44,6 +44,7 @@ Do not confuse this command with the [**!version (Show DLL Version)**](-version.
  
 
  
+
 
 
 

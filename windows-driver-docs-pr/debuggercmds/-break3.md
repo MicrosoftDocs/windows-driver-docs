@@ -1,6 +1,6 @@
 ---
-title: .break (WinDbg)
-description: The .break token behaves like the break keyword in C.
+title: ".break (WinDbg)"
+description: "The .break token behaves like the break keyword in C."
 keywords: [".break Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -41,6 +41,7 @@ Since there is no control flow token equivalent to the C **goto** statement, you
  
 
  
+
 
 
 

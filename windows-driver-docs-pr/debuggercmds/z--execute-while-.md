@@ -1,6 +1,6 @@
 ---
-title: z (Execute While)
-description: The z command executes a command while a given condition is true.
+title: "z (Execute While)"
+description: "The z command executes a command while a given condition is true."
 keywords: ["z (Execute While) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -89,3 +89,4 @@ Current expression evaluator: C++ - C++ source expressions
 [**j (Execute If-Else)**](j--execute-if---else-.md)
 
  
+

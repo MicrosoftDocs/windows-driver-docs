@@ -1,6 +1,6 @@
 ---
-title: obtrace (WinDbg)
-description: The obtrace extension displays object reference tracing data for the specified object.
+title: "obtrace (WinDbg)"
+description: "The obtrace extension displays object reference tracing data for the specified object."
 keywords: ["obtrace Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -131,6 +131,7 @@ You can stop execution at any time by pressing CTRL+BREAK (in WinDbg) or CTRL+C 
  
 
  
+
 
 
 

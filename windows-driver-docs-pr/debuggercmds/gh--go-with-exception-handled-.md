@@ -1,6 +1,6 @@
 ---
-title: gh (Go with Exception Handled)
-description: The gh command marks the given thread's exception as having been handled and allows the thread to restart execution at the instruction that caused the exception.
+title: "gh (Go with Exception Handled)"
+description: "The gh command marks the given thread's exception as having been handled and allows the thread to restart execution at the instruction that caused the exception."
 keywords: ["gh (Go with Exception Handled) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -74,6 +74,7 @@ If *Thread* is specified, then the **gh** command is executed with the specified
  
 
  
+
 
 
 

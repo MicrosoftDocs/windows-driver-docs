@@ -1,6 +1,6 @@
 ---
-title: tokenfields
-description: The tokenfields extension displays the names and offsets of the fields within the access token object (the TOKEN structure).
+title: "tokenfields"
+description: "The tokenfields extension displays the names and offsets of the fields within the access token object (the TOKEN structure)."
 keywords: ["token", "tokenfields Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -87,6 +87,7 @@ kd> !tokenfields
  
 
  
+
 
 
 

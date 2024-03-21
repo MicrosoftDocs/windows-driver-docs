@@ -1,6 +1,6 @@
 ---
-title: sx, sxd, sxe, sxi, sxn, sxr, sx- (Set exceptions)
-description: Learn about the sx* commands, which control the action that the debugger takes when an exception occurs in the application that is being debugged.
+title: "sx, sxd, sxe, sxi, sxn, sxr, sx- (Set exceptions)"
+description: "Learn about the sx* commands, which control the action that the debugger takes when an exception occurs in the application that is being debugged."
 keywords: ["sx, sxd, sxe, sxi, sxn, sxr, sx- (Set Exceptions) Windows Debugging"]
 ms.date: 12/13/2022
 topic_type:
@@ -110,3 +110,4 @@ In the following example, the **sxe** command is used to set the break status of
 - [Conditional breakpoints in WinDbg](../debugger/setting-a-conditional-breakpoint.md)
 
 - [Executing until a specified state is reached](../debugger/executing-until-a-specified-state-is-reached.md)
+

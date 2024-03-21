@@ -1,6 +1,6 @@
 ---
-title: wdfkd.wdfumdevstacks
-description: The wdfkd.wdfumdevstacks extension displays information about all UMDF device stacks in the implicit process.
+title: "wdfkd.wdfumdevstacks"
+description: "The wdfkd.wdfumdevstacks extension displays information about all UMDF device stacks in the implicit process."
 keywords: ["wdfkd.wdfumdevstacks Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -97,6 +97,7 @@ The preceding output shows that there is one UMDF device stack in the implicit p
  
 
  
+
 
 
 

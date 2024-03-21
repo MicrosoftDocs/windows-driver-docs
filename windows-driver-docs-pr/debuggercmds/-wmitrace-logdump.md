@@ -1,6 +1,6 @@
 ---
-title: wmitrace.logdump
-description: The wmitrace.logdump extension displays the contents of the trace buffers for a trace session. You can limit the display to trace messages from specified providers.
+title: "wmitrace.logdump"
+description: "The wmitrace.logdump extension displays the contents of the trace buffers for a trace session. You can limit the display to trace messages from specified providers."
 keywords: ["wmitrace.logdump Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -69,4 +69,5 @@ This extension is similar to the [**!wmitrace.eventlogdump**](-wmitrace-eventlog
 For information about how to view the UMDF trace log, see [Using WPP Software Tracing in UMDF-based Drivers](../wdf/using-wpp-software-tracing-in-umdf-drivers.md#viewing-the-umdf-trace-log).
 
  
+
 

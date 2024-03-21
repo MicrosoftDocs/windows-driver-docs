@@ -1,6 +1,6 @@
 ---
-title: findfilelockowner
-description: The findfilelockowner extension attempts to find the owner of a file object lock by examining all threads for a thread that is blocked.
+title: "findfilelockowner"
+description: "The findfilelockowner extension attempts to find the owner of a file object lock by examining all threads for a thread that is blocked."
 keywords: ["findfilelockowner Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -45,3 +45,4 @@ The extension takes some time to complete because it walks the stack of all thre
 [Displaying a Critical Section](../debugger/displaying-a-critical-section.md)
 
 [Critical Section Time Outs](../debugger/critical-section-time-outs.md) (user mode)
+

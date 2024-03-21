@@ -1,6 +1,6 @@
 ---
-title: .context (Set User-Mode Address Context)
-description: The .context command specifies which page directory of a process will be used for the user-mode address context, or displays the current user-mode address context.
+title: ".context (Set User-Mode Address Context)"
+description: "The .context command specifies which page directory of a process will be used for the user-mode address context, or displays the current user-mode address context."
 keywords: ["Set User-Mode Address Context (.context) command", "addresses, Set User-Mode Address Context (.context) command", "context, Set User-Mode Address Context (.context) command", ".context (Set User-Mode Address Context) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -112,7 +112,7 @@ PEB at 7FFDF000
     SubSystemData:     0
     ProcessHeap:       70000
     ProcessParameters: 20000
-        WindowTitle:  'C:\WINNT\system32\regsvc.exe'
+        WindowTitle: "'C:\WINNT\system32\regsvc.exe'"
         ImageFile:    'C:\WINNT\system32\regsvc.exe'
         CommandLine:  'C:\WINNT\system32\regsvc.exe'
         DllPath:     'C:\WINNT\system32;.;C:\WINNT\System32;C:\WINNT\system;C:\WINNT;C:\WINNT\system32;C:\WINNT;C:\WINNT\System32\Wbem;C:\PROGRA~1\COMMON~1\AUTODE~1'
@@ -122,6 +122,7 @@ PEB at 7FFDF000
  
 
  
+
 
 
 

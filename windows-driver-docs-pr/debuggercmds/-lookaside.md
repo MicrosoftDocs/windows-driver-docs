@@ -1,6 +1,6 @@
 ---
-title: lookaside (WinDbg)
-description: The lookaside extension displays information about look-aside lists, resets the counters of look-aside lists, or modifies the depth of a look-aside list.
+title: "lookaside (WinDbg)"
+description: "The lookaside extension displays information about look-aside lists, resets the counters of look-aside lists, or modifies the depth of a look-aside list."
 keywords: ["lookaside list", "lookaside Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -92,4 +92,5 @@ Lookaside "" @ 0xfffff88001294f80  Tag(hex): 0x7366744e "Ntfs"
 </table>
 
  
+
 

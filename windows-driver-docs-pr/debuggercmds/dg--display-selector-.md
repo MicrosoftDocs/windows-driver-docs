@@ -1,6 +1,6 @@
 ---
-title: dg (Display Selector)
-description: The dg command shows the segment descriptor for the specified selector.
+title: "dg (Display Selector)"
+description: "The dg command shows the segment descriptor for the specified selector."
 keywords: ["dg (Display Selector) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -143,6 +143,7 @@ Common selector values are:
  
 
  
+
 
 
 

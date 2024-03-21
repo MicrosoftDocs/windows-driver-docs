@@ -1,6 +1,6 @@
 ---
-title: e, ea, eb, ed, eD, ef, ep, eq, eu, ew, eza (Enter Values)
-description: The e* commands enter into memory the values that you specify.This command should not be confused with the ~E (Thread-Specific Command) qualifier.
+title: "e, ea, eb, ed, eD, ef, ep, eq, eu, ew, eza (Enter Values)"
+description: "The e* commands enter into memory the values that you specify.This command should not be confused with the ~E (Thread-Specific Command) qualifier."
 keywords: ["e, ea, eb, ed, eD, ef, ep, eq, eu, ew, eza (Enter Values) Windows Debugging"]
 ms.date: 03/05/2024
 topic_type:
@@ -162,3 +162,4 @@ In WinDbg version 1.2402.24001.0 and later, the `e` (Enter Memory) commands supp
 [d, da, db, dc, dd, dD, df, dp, dq, du, dw, dW, dyb, dyd (Display Memory)](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md)
 
 [Evaluating Expressions](evaluating-expressions.md)
+

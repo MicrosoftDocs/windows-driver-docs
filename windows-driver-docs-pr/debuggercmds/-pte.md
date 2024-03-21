@@ -1,6 +1,6 @@
 ---
-title: pte (WinDbg)
-description: The pte extension displays the page table entry (PTE) and page directory entry (PDE) for the specified address.
+title: "pte (WinDbg)"
+description: "The pte extension displays the page table entry (PTE) and page directory entry (PDE) for the specified address."
 keywords: ["page table entry (PTE)", "PTE (page table entry)", "page directory entry (PDE)", "PDE (page directory entry)", "pte Windows Debugging"]
 ms.date: 05/13/2020
 topic_type:
@@ -159,3 +159,4 @@ On an x86 or x64 target computer, the status bits for the PDE and the PTE are sh
 </tr>
 </tbody>
 </table>
+

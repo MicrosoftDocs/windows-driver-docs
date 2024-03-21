@@ -1,6 +1,6 @@
 ---
-title: ndiskd.netring
-description: The ndiskd.netring extension displays information about a NET_PACKET_FRAGMENT structure.
+title: "ndiskd.netring"
+description: "The ndiskd.netring extension displays information about a NET_PACKET_FRAGMENT structure."
 keywords: ["ndiskd.netring Windows Debugging"]
 ms.date: 10/11/2021
 topic_type:
@@ -100,3 +100,4 @@ Owned by Client        0x2
 [**!ndiskd.netrb**](-ndiskd-netrb.md)
 
 [**!ndiskd.netpacket**](-ndiskd-netpacket.md)
+

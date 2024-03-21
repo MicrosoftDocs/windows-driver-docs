@@ -1,6 +1,6 @@
 ---
-title: usbkd._ehciep
-description: The usbkd._ehciep command displays information from a usbehci _ENDPOINT_DATA structure. Use this command to display information about asynchronous endpoints (that is, control and bulk endpoints).
+title: "usbkd._ehciep"
+description: "The usbkd._ehciep command displays information from a usbehci _ENDPOINT_DATA structure. Use this command to display information about asynchronous endpoints (that is, control and bulk endpoints)."
 keywords: ["usbkd._ehciep Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -117,4 +117,5 @@ slot[0] dt usbehci!_ENDPOINT_SLOT ffffe000026dcdb8 - slot_NotBusy
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
+
 

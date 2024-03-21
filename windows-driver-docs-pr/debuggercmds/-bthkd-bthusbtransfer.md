@@ -1,6 +1,6 @@
 ---
-title: bthkd.bthusbtransfer
-description: The bthkd.bthusbtransfer command displays the Bluetooth usb transfer context including Irp, Bip and transfer buffer information.
+title: "bthkd.bthusbtransfer"
+description: "The bthkd.bthusbtransfer command displays the Bluetooth usb transfer context including Irp, Bip and transfer buffer information."
 keywords: ["bthkd.bthusbtransfer Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -45,6 +45,7 @@ Bthkd.dll
  
 
  
+
 
 
 

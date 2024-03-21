@@ -1,6 +1,6 @@
 ---
-title: wmitrace.eventlogdump
-description: The wmitrace.eventlogdump extension displays the contents of the specified logger. The display is formatted like an event log.
+title: "wmitrace.eventlogdump"
+description: "The wmitrace.eventlogdump extension displays the contents of the specified logger. The display is formatted like an event log."
 keywords: ["wmitrace.eventlogdump Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -49,6 +49,7 @@ To find the logger ID of a trace session, use the [**!wmitrace.strdump**](-wmitr
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: gle (WinDbg)
-description: The gle extension displays the last error value for the current thread.
+title: "gle (WinDbg)"
+description: "The gle extension displays the last error value for the current thread."
 keywords: ["thread, error value", "error value", "gle Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -61,4 +61,5 @@ The **!gle** extension displays the value of [**GetLastError**](/windows/win32/a
 In kernel mode, the **!gle** extension work only if the debugger can read the thread environment block (TEB).
 
  
+
 

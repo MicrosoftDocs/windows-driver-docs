@@ -1,6 +1,6 @@
 ---
-title: prcb (WinDbg)
-description: The prcb extension displays the processor control block (PRCB).
+title: "prcb (WinDbg)"
+description: "The prcb extension displays the processor control block (PRCB)."
 keywords: ["processor control block", "prcb Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -56,6 +56,7 @@ Times -- Dpc    00000028 Interrupt 000003ff
  
 
  
+
 
 
 

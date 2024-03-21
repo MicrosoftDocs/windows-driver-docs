@@ -1,6 +1,6 @@
 ---
-title: .nvunload (NatVis Unload)
-description: The .nvunload command unloads a NatVis file from the debugger environment.
+title: ".nvunload (NatVis Unload)"
+description: "The .nvunload command unloads a NatVis file from the debugger environment."
 keywords: [".nvunload (NatVis Unload) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -43,3 +43,4 @@ For more information, see [Create Custom Views of Native Objects](/visualstudio/
 ## See also
 
 [**dx (Display NatVis Expression)**](dx--display-visualizer-variables-.md)
+

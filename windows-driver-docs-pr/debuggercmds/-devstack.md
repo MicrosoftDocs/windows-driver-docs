@@ -1,6 +1,6 @@
 ---
-title: devstack (WinDbg)
-description: The devstack extension displays a formatted view of the device stack associated with a device object.
+title: "devstack (WinDbg)"
+description: "The devstack extension displays a formatted view of the device stack associated with a device object."
 keywords: ["devstack Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -56,6 +56,7 @@ kd> !devstack e000000085007b50
  
 
  
+
 
 
 

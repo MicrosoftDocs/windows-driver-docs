@@ -1,6 +1,6 @@
 ---
-title: ib, id, iw
-description: ib, id, iw
+title: "ib, id, iw"
+description: "ib, id, iw"
 keywords: ["ib extension (obsolete)", "id extension (obsolete)", "iw extension (obsolete)"]
 ms.date: 05/23/2017
 ---
@@ -16,6 +16,7 @@ The **!ib**, **!id**, and **!iw** extension commands are obsolete. Use the [**ib
  
 
  
+
 
 
 

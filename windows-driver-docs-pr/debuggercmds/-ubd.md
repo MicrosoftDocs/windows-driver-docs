@@ -1,6 +1,6 @@
 ---
-title: ubd (WinDbg)
-description: The ubd extension temporarily disables a user-space breakpoint.
+title: "ubd (WinDbg)"
+description: "The ubd extension temporarily disables a user-space breakpoint."
 keywords: ["ubd Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -53,6 +53,7 @@ Disabled breakpoints will be ignored. Use [**!ube**](-ube.md) to re-enable the b
  
 
  
+
 
 
 

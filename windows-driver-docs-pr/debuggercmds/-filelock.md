@@ -1,6 +1,6 @@
 ---
-title: filelock (WinDbg)
-description: The filelock extension displays a file lock structure.
+title: "filelock (WinDbg)"
+description: "The filelock extension displays a file lock structure."
 keywords: ["filelock Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -44,6 +44,7 @@ For information about file objects, see the Windows Driver Kit (WDK) documentati
  
 
  
+
 
 
 

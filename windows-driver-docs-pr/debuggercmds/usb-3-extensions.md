@@ -1,6 +1,6 @@
 ---
-title: USB 3.0 Extensions
-description: This section describes the USB 3.0 debugger extension commands.
+title: "USB 3.0 Extensions"
+description: "This section describes the USB 3.0 debugger extension commands."
 keywords: ["USB 3.0 Extensions", "extensions", "WinDbg", "Windows Debugging"]
 ms.date: 11/28/2017
 ---
@@ -70,3 +70,4 @@ The following extension commands display information from data structures mainta
 ## <span id="related_topics"></span>See also
 
 [RCDRKD Extensions](rcdrkd-extensions.md)
+

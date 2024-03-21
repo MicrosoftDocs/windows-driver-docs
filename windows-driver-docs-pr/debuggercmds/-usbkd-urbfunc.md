@@ -1,6 +1,6 @@
 ---
-title: usbkd.urbfunc
-description: The usbkd.urbfunc command displays the name of a URB function code.
+title: "usbkd.urbfunc"
+description: "The usbkd.urbfunc command displays the name of a URB function code."
 keywords: ["usbkd.urbfunc Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -50,4 +50,5 @@ URB_FUNCTION_ISOCH_TRANSFER (0xA)
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
+
 

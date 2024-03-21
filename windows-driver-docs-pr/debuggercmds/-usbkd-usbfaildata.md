@@ -1,6 +1,6 @@
 ---
-title: usbkd.usbfaildata
-description: The usbkd.usbfaildata command displays the failure data (if any) stored for a USB device.
+title: "usbkd.usbfaildata"
+description: "The usbkd.usbfaildata command displays the failure data (if any) stored for a USB device."
 keywords: ["usbkd.usbfaildata Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -59,4 +59,5 @@ Now pass the address of the PDO to **!usbkd.usbfaildata**.
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
+
 

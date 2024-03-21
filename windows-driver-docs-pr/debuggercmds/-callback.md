@@ -1,6 +1,6 @@
 ---
-title: callback (WinDbg)
-description: The callback extension displays the callback data related to the trap for the specified thread.
+title: "callback (WinDbg)"
+description: "The callback extension displays the callback data related to the trap for the specified thread."
 keywords: ["callback data for system traps", "callback Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -49,6 +49,7 @@ If the system has not experienced a system trap, this extension will not produce
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: Time Travel Debugging - Record a trace 
-description: This section describes how to record time travel traces.
+title: "Time Travel Debugging - Record a trace "
+description: "This section describes how to record time travel traces."
 keywords: ["Record a trace", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
 ms.date: 03/15/2024
 ---
@@ -111,3 +111,4 @@ Now that you have a recorded a TTD trace, you can replay the trace back or work 
 ## See Also
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
+

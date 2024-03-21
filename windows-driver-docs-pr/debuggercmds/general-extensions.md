@@ -1,6 +1,6 @@
 ---
-title: General Extensions
-description: General Extensions
+title: "General Extensions"
+description: "General Extensions"
 keywords: ["extension commands ( commands), general extensions", "exts.dll (general extensions)", "dbghelp.dll (general extensions)", "general extensions (exts.dll - dbghelp.dll)"]
 ms.date: 05/23/2017
 ---
@@ -22,6 +22,7 @@ Each extension command reference topics lists the DLLs that expose that command.
  
 
  
+
 
 
 

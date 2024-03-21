@@ -1,6 +1,6 @@
 ---
-title: ppmidlepolicy
-description: The ppmidlepolicy command
+title: "ppmidlepolicy"
+description: "The ppmidlepolicy command"
 keywords: ["ppmidlepolicy Windows Debugging"]
 ms.date: 06/08/2017
 topic_type:
@@ -33,6 +33,7 @@ This command is supported on the following versions of Windows:
 Kdexts.dll 
 
  
+
 
 
 

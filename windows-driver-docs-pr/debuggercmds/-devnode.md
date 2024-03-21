@@ -1,6 +1,6 @@
 ---
-title: devnode (WinDbg)
-description: The devnode extension displays information about a node in the device tree.
+title: "devnode (WinDbg)"
+description: "The devnode extension displays information about a node in the device tree."
 keywords: ["device node", "device tree", "devnode Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -74,6 +74,7 @@ You can use **!devnode 0 1** to see the entire device tree.
  
 
  
+
 
 
 

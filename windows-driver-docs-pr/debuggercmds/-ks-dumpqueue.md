@@ -1,6 +1,6 @@
 ---
-title: ks.dumpqueue
-description: The ks.dumpqueue extension displays information about the queues associated with a given AVStream object, or the stream associated with a port class object.
+title: "ks.dumpqueue"
+description: "The ks.dumpqueue extension displays information about the queues associated with a given AVStream object, or the stream associated with a port class object."
 keywords: ["ks.dumpqueue Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -88,6 +88,7 @@ Filter 829493c4: Output Queue 82990e20:
  
 
  
+
 
 
 

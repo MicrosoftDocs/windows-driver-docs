@@ -1,6 +1,6 @@
 ---
-title: tss (WinDbg)
-description: tss
+title: "tss (WinDbg)"
+description: "tss"
 keywords: ["tss extension (obsolete)"]
 ms.date: 05/23/2017
 ---
@@ -16,6 +16,7 @@ The **!tss** extension command is obsolete. Use the [**.tss (Display Task State 
  
 
  
+
 
 
 

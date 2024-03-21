@@ -1,6 +1,6 @@
 ---
-title: ready (WinDbg)
-description: The ready extension displays summary information about each thread in the system in a READY state.
+title: "ready (WinDbg)"
+description: "The ready extension displays summary information about each thread in the system in a READY state."
 keywords: ["thread, ready threads", "ready Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -56,6 +56,7 @@ The output from this extension is similar to that of [**!thread**](-thread.md), 
  
 
  
+
 
 
 

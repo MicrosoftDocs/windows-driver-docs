@@ -1,6 +1,6 @@
 ---
-title: ndiskd.nbllog
-description: The ndiskd.nbllog extension displays the log of all NBL (NET_BUFFER_LIST) activity on the system.
+title: "ndiskd.nbllog"
+description: "The ndiskd.nbllog extension displays the log of all NBL (NET_BUFFER_LIST) activity on the system."
 keywords: ["ndiskd.nbllog Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -112,4 +112,5 @@ For a more detailed description of how to interpret the results of **!ndiskd.nbl
 [!ndiskd.nbl -log](/archive/blogs/ndis/ndiskd-nbl-log)
 
  
+
 

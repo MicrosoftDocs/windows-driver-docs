@@ -1,6 +1,6 @@
 ---
-title: storagekd.storlogirp
-description: The storagekd.storlogirp extension displays the Storport’s internal log entries for the adapter filtered for the IRP provided.
+title: "storagekd.storlogirp"
+description: "The storagekd.storlogirp extension displays the Storport’s internal log entries for the adapter filtered for the IRP provided."
 keywords: ["storagekd.storlogirp Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -59,6 +59,7 @@ Count of entries to be displayed. If not specified, a value of 50 is used.
  
 
  
+
 
 
 

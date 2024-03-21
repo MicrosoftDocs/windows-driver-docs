@@ -1,6 +1,6 @@
 ---
-title: usbkd.usbportmddevext
-description: The usbkd.usbportmddevext command displays a usbport _DEVICE_EXTENSION structure if one is present in a crash dump that was generated as a result Bug Check 0xFE.
+title: "usbkd.usbportmddevext"
+description: "The usbkd.usbportmddevext command displays a usbport _DEVICE_EXTENSION structure if one is present in a crash dump that was generated as a result Bug Check 0xFE."
 keywords: ["usbkd.usbportmddevext Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -107,4 +107,5 @@ Ev_Xdpc_Worker       XDPC_DpcQueued          XDPC_Running
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
+
 

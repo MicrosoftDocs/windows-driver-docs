@@ -1,6 +1,6 @@
 ---
-title: logexts.logm
-description: The logexts.logm extension creates or displays a module inclusion list or a module exclusion list.
+title: "logexts.logm"
+description: "The logexts.logm extension creates or displays a module inclusion list or a module exclusion list."
 keywords: ["logexts.logm Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -101,6 +101,7 @@ Included modules:
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: rpcexts.getendpointinfo
-description: The rpcexts.getendpointinfo extension searches the system's RPC state information for endpoint information.
+title: "rpcexts.getendpointinfo"
+description: "The rpcexts.getendpointinfo extension searches the system's RPC state information for endpoint information."
 keywords: ["rpcexts.getendpointinfo Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -110,6 +110,7 @@ For a similar example using the DbgRpc tool, see [Get RPC Endpoint Information](
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: .dumpcab (Create Dump File CAB)
-description: The .dumpcab command creates a CAB file containing the current dump file.
+title: ".dumpcab (Create Dump File CAB)"
+description: "The .dumpcab command creates a CAB file containing the current dump file."
 keywords: [".dumpcab (Create Dump File CAB) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -70,6 +70,7 @@ The **.dumpcab** command cannot be used to place multiple dump files into one CA
  
 
  
+
 
 
 

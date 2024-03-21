@@ -1,6 +1,6 @@
 ---
-title: dl (Display Linked List)
-description: The dl command displays a LIST_ENTRY or SINGLE_LIST_ENTRY linked list.
+title: "dl (Display Linked List)"
+description: "The dl command displays a LIST_ENTRY or SINGLE_LIST_ENTRY linked list."
 keywords: ["dl (Display Linked List) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -65,6 +65,7 @@ If you want to execute some command for each element of the list, use the [**!li
  
 
  
+
 
 
 

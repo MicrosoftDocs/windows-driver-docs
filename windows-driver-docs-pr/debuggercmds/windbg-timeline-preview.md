@@ -1,6 +1,6 @@
 ---
-title: WinDbg - Time Travel Timelines 
-description: This section describes how work with the time travel timelines feature in WinDbg.
+title: "WinDbg - Time Travel Timelines "
+description: "This section describes how work with the time travel timelines feature in WinDbg."
 keywords: ["Time Travel Timelines", "WinDbg", "Menu", "Windows Debugging"]
 ms.date: 03/14/2024
 ---
@@ -258,3 +258,4 @@ You can right click the bookmark to travel to that position, rename or delete th
 [WinDbg Features](../debugger/debugging-using-windbg-preview.md)
 
 [Time Travel Debugging Walkthrough](time-travel-debugging-walkthrough.md)
+

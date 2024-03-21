@@ -1,6 +1,6 @@
 ---
-title: winrterr (WinDbg)
-description: The winrterr sets the debugger reporting mode for Windows Runtime errors.
+title: "winrterr (WinDbg)"
+description: "The winrterr sets the debugger reporting mode for Windows Runtime errors."
 keywords: ["winrterr Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -71,6 +71,7 @@ If *Mode* is omitted, **!winrterr** displays the current reporting mode. If the 
  
 
  
+
 
 
 

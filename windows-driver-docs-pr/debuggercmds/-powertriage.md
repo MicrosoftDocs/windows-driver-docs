@@ -1,6 +1,6 @@
 ---
-title: powertriage
-description: The powertriage extension displays summary information about the system and device power related components.
+title: "powertriage"
+description: "The powertriage extension displays summary information about the system and device power related components."
 keywords: ["powertriage Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -133,4 +133,5 @@ The !powertriage extension can be useful in examining system crashes related to 
 Dumping all device stacks with power IRPs can help in debugging cases where !analyze has not been able to correctly identify the IRP associated with the crash.
 
  
+
 

@@ -1,6 +1,6 @@
 ---
-title: vprot (WinDbg)
-description: The vprot extension displays virtual memory protection information.
+title: "vprot (WinDbg)"
+description: "The vprot extension displays virtual memory protection information."
 keywords: ["memory, memory protection", "vprot Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -80,6 +80,7 @@ The Type line shows the memory type. The possible values are MEM\_IMAGE, MEM\_MA
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: ks.objhdr (WinDbg)
-description: The ks.objhdr extension displays the kernel streaming object header associated with the specified file object.
+title: "ks.objhdr (WinDbg)"
+description: "The ks.objhdr extension displays the kernel streaming object header associated with the specified file object."
 keywords: ["ks.objhdr Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -130,6 +130,7 @@ Object Header 81BC1008
  
 
  
+
 
 
 

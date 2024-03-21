@@ -1,6 +1,6 @@
 ---
-title: teb (WinDbg)
-description: The teb extension displays a formatted view of the information in the thread environment block (TEB).
+title: "teb (WinDbg)"
+description: "The teb extension displays a formatted view of the information in the thread environment block (TEB)."
 keywords: ["teb Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -74,6 +74,7 @@ The similar [**!peb**](-peb.md) extension displays the process environment block
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: .holdmem (Hold and Compare Memory)
-description: The .holdmem command saves memory ranges and compares them to other memory ranges.
+title: ".holdmem (Hold and Compare Memory)"
+description: "The .holdmem command saves memory ranges and compares them to other memory ranges."
 keywords: ["Hold and Compare Memory (.holdmem) command", "memory, Hold and Compare Memory (.holdmem) command", ".holdmem (Hold and Compare Memory) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -66,6 +66,7 @@ If any of the specified memory locations do not exist in the virtual address spa
  
 
  
+
 
 
 

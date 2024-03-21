@@ -1,6 +1,6 @@
 ---
-title: gentable (WinDbg)
-description: The gentable extension displays an RTL_GENERIC_TABLE.
+title: "gentable (WinDbg)"
+description: "The gentable extension displays an RTL_GENERIC_TABLE."
 keywords: ["gentable Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -39,6 +39,7 @@ Kdexts.dll
  
 
  
+
 
 
 

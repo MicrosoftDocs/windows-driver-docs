@@ -1,6 +1,6 @@
 ---
-title: processfields
-description: The processfields extension displays the names and offsets of the fields within the executive process (EPROCESS) block.
+title: "processfields"
+description: "The processfields extension displays the names and offsets of the fields within the executive process (EPROCESS) block."
 keywords: ["processfields Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -126,6 +126,7 @@ kd> !processfields
  
 
  
+
 
 
 

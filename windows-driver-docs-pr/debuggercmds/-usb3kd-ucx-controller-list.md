@@ -1,6 +1,6 @@
 ---
-title: usb3kd.ucx_controller_list
-description: The usb3kd.ucx_controller_list command displays information about all USB 3.0 host controllers on the computer. The display is based on data structures maintained by UcxVersion.sys.
+title: "usb3kd.ucx_controller_list"
+description: "The usb3kd.ucx_controller_list command displays information about all USB 3.0 host controllers on the computer. The display is based on data structures maintained by UcxVersion.sys."
 keywords: ["usb3kd.ucx_controller_list Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -59,4 +59,5 @@ The USB host controller extension driver (Ucx*Version*.sys) provides a layer of 
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
+
 

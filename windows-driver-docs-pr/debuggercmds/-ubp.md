@@ -1,6 +1,6 @@
 ---
-title: ubp (WinDbg)
-description: The ubp extension sets a breakpoint in user space.
+title: "ubp (WinDbg)"
+description: "The ubp extension sets a breakpoint in user space."
 keywords: ["ubp Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -61,6 +61,7 @@ Each breakpoint is assigned a *breakpoint number*. To find out the breakpoint nu
  
 
  
+
 
 
 

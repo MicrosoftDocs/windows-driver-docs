@@ -1,6 +1,6 @@
 ---
-title: .if (WinDbg)
-description: The .if token behaves like the if keyword in C.
+title: ".if (WinDbg)"
+description: "The .if token behaves like the if keyword in C."
 keywords: [".if Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -43,6 +43,7 @@ For information about other control flow tokens and their use in debugger comman
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: storagekd.storsrb
-description: The storagekd.storsrb extension displays information about the specified Storage (or SCSI) Request Block (SRB).
+title: "storagekd.storsrb"
+description: "The storagekd.storsrb extension displays information about the specified Storage (or SCSI) Request Block (SRB)."
 keywords: ["storagekd.storsrb Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -63,6 +63,7 @@ Here is an example of the **!storagekd.storsrb** display:
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: WinDbg - Restricted Mode
-description: Restricted Mode limits the types of debugging sessions WinDbg can start to remote debugging sessions and dump files only. 
+title: "WinDbg - Restricted Mode"
+description: "Restricted Mode limits the types of debugging sessions WinDbg can start to remote debugging sessions and dump files only. "
 keywords: ["Restricted Mode", "WinDbg", "Menu", "Windows Debugging"]
 ms.date: 08/09/2021
 ---
@@ -48,3 +48,4 @@ The operation completed successfully.
 [WinDbg Features](../debugger/debugging-using-windbg-preview.md)
 
 [WinDbg – Command line startup options](windbg-command-line-preview.md)
+

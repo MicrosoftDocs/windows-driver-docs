@@ -1,6 +1,6 @@
 ---
-title: Time Travel Debugging - Sample App Walkthrough
-description: This section contains a walk through of a small C++ app. 
+title: "Time Travel Debugging - Sample App Walkthrough"
+description: "This section contains a walk through of a small C++ app. "
 keywords: ["Sample App Walkthrough", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
 ms.date: 01/23/2020
 ---
@@ -701,3 +701,4 @@ Once a trace is recorded, the trace and repro steps can be shared, and the issue
 [Time Travel Debugging - Replay a trace](time-travel-debugging-replay.md)
 
 [Time Travel Debugging - Working with trace files](time-travel-debugging-trace-file-information.md)
+

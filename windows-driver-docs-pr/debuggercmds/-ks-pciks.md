@@ -1,6 +1,6 @@
 ---
-title: ks.pciks (WinDbg)
-description: The ks.pciks extension lists functional devices for kernel streaming devices that are attached to the PCI bus. Optionally, it can display information about active streams on those functional devices.
+title: "ks.pciks (WinDbg)"
+description: "The ks.pciks extension lists functional devices for kernel streaming devices that are attached to the PCI bus. Optionally, it can display information about active streams on those functional devices."
 keywords: ["ks.pciks Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -88,6 +88,7 @@ kd> !pciks
  
 
  
+
 
 
 
