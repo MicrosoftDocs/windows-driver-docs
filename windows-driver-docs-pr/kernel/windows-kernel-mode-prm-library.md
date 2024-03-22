@@ -23,9 +23,9 @@ Use the following procedure to query for the availability of a specific handler 
 
 1. If the query was successful, the driver can now call the [**PRM_INVOKE_HANDLER**](/windows-hardware/drivers/ddi/prminterface/nc-prminterface-prm_invoke_handler) routine.
 
-    This call invokes the PRM handler for the given GUID. The driver should pass the GUID and the parameter buffer to the PRM_INVOKE_HANDLER routine. The parameter buffer should contain the parameters that the driver wants to pass to the PRM handler. The *EfiStatus* (Extensible Firmware Interface) parameter is an output parameter that contains the status of the PRM handler invocation.
+    This call invokes the PRM handler for the given GUID. The driver should pass the GUID and the parameter buffer to the PRM_INVOKE_HANDLER routine. The parameter buffer should contain the parameters to pass to the PRM handler. The *EfiStatus* (Extensible Firmware Interface) parameter is an output parameter that contains the status of the PRM handler invocation.
 
-1. If it called **PRM_LOCK_MODULE**, the driver calls the [**PRM_UNLOCK_MODULE**](/windows-hardware/drivers/ddi/prminterface/nc-prminterface-prm_unlock_module) routine to release the PRM interface object.
+1. If it called **PRM_LOCK_MODULE** previously, the driver now calls the [**PRM_UNLOCK_MODULE**](/windows-hardware/drivers/ddi/prminterface/nc-prminterface-prm_unlock_module) routine to release the PRM interface object.
 
 ## See also
 
