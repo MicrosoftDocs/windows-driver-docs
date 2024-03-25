@@ -68,6 +68,12 @@
       }
     },
     "fileMetadata": {
+      "feedback_help_link_url": {       
+        "**/dashboard/*": "https://learn.microsoft.com/windows-hardware/drivers/dashboard/hardware-submission-support"
+      },
+      "feedback_help_link_type": {       
+        "**/dashboard/*": "get-product-support"
+      },
       "ms.subservice": {
         "*": "whats-new-and-downloads",
         "**/3dprint/*": "3dprint",
