@@ -39,6 +39,7 @@ When your UMDF driver advertises its hardware data buffer capabilities using the
 
 - Set [**NET_RX_FRAGMENT_BUFFER_ALLOCATION_MODE**](/windows-hardware/drivers/ddi/netadapter/ne-netadapter-_net_rx_fragment_buffer_allocation_mode) to **NetRxFragmentBufferAllocationModeSystem**. 
 - Set [**NET_RX_FRAGMENT_BUFFER_ATTACHMENT_MODE**](/windows-hardware/drivers/ddi/netadapter/ne-netadapter-_net_rx_fragment_buffer_attachment_mode) to **NetRxFragmentBufferAttachmentModeSystem**. 
+- Set [**NET_MEMORY_MAPPING_REQUIREMENT**](/windows-hardware/drivers/ddi/netadapter/ne-netadapter-_net_memory_mapping_requirement) to **NetMemoryMappingRequirementNone**.
 
 ## Convert a KMDF NetAdapterCx driver to UMDF
 
