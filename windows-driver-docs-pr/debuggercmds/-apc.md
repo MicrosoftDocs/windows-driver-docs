@@ -1,6 +1,6 @@
 ---
-title: apc (WinDbg)
-description: The apc extension formats and displays the contents of one or more asynchronous procedure calls (APCs).
+title: "apc (WinDbg)"
+description: "The apc extension formats and displays the contents of one or more asynchronous procedure calls (APCs)."
 keywords: ["apc Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
@@ -24,7 +24,7 @@ The **!apc** extension formats and displays the contents of one or more asynchro
     !apc KAPC
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="Process"></span><span id="process"></span><span id="PROCESS"></span>*Process*  
@@ -39,22 +39,7 @@ Specifies the address of the kernel APC to be displayed.
 ## <span id="DLL"></span><span id="dll"></span>DLL
 
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Unavailable</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Kdexts.dll</p></td>
-</tr>
-</tbody>
-</table>
+Windows XP and later - Kdexts.dll
 
  
 
@@ -96,6 +81,7 @@ Process e000000085489c30 userinit.exe
  
 
  
+
 
 
 

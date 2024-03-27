@@ -1,6 +1,6 @@
 ---
-title: dreg (WinDbg)
-description: The dreg extension displays registry information.
+title: "dreg (WinDbg)"
+description: "The dreg extension displays registry information."
 keywords: ["dreg Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -51,7 +51,7 @@ If no abbreviation is used, HKEY\_LOCAL\_MACHINE is assumed.
 <span id="_______Value______"></span><span id="_______value______"></span><span id="_______VALUE______"></span> *Value*   
 Specifies the name of the registry value to be displayed. If an asterisk (\*) is used, all values are displayed. If *Value* is omitted, all subkeys are displayed.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -109,6 +109,7 @@ Typing **!dreg** without any arguments will display some brief Help text for thi
  
 
  
+
 
 
 

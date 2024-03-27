@@ -1,6 +1,6 @@
 ---
-title: exchain (WinDbg)
-description: The exchain extension displays the current exception handler chain.
+title: "exchain (WinDbg)"
+description: "The exchain extension displays the current exception handler chain."
 keywords: ["exchain Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -36,7 +36,7 @@ Displays information that is relevant for debugging a C++ **try**/**catch** exce
 <span id="_f"></span><span id="_F"></span>**/f**  
 Displays information that is obtained by walking the CRT function tables, even if a CRT exception handler was not detected.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -79,6 +79,7 @@ The list begins with the first handler on the chain (the one that is given the f
  
 
  
+
 
 
 

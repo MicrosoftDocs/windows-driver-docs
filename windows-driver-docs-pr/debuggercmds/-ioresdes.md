@@ -1,6 +1,6 @@
 ---
-title: ioresdes (WinDbg)
-description: The ioresdes extension displays the IO_RESOURCE_DESCRIPTOR structure at the specified address.
+title: "ioresdes (WinDbg)"
+description: "The ioresdes extension displays the IO_RESOURCE_DESCRIPTOR structure at the specified address."
 keywords: ["ioresdes Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -40,6 +40,7 @@ See [Plug and Play Debugging](../debugger/plug-and-play-debugging.md) for applic
  
 
  
+
 
 
 

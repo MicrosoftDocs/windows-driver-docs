@@ -1,6 +1,6 @@
 ---
-title: bitcount (WinDbg)
-description: The !bitcount extension counts the number of "1" bits in a memory range.
+title: "!bitcount (WinDbg)"
+description: "The !bitcount extension counts the number of 1 bits in a memory range."
 keywords: ["bitcount Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -14,14 +14,13 @@ api_type:
 
 # !bitcount
 
-
 The **!bitcount** extension counts the number of "1" bits in a memory range.
 
 ```dbgcmd
 !bitcount StartAddress TotalBits
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______StartAddress______"></span><span id="_______startaddress______"></span><span id="_______STARTADDRESS______"></span> *StartAddress*   
@@ -33,7 +32,7 @@ Specifies the size of the memory range, in bits.
 <span id="_______-_______"></span> **-?**   
 Displays some Help text for this extension in the [Debugger Command window](../debugger/debugger-command-window.md).
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -57,6 +56,7 @@ Displays some Help text for this extension in the [Debugger Command window](../d
  
 
  
+
 
 
 

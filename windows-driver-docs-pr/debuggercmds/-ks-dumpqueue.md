@@ -1,6 +1,6 @@
 ---
-title: ks.dumpqueue
-description: The ks.dumpqueue extension displays information about the queues associated with a given AVStream object, or the stream associated with a port class object.
+title: "ks.dumpqueue"
+description: "The ks.dumpqueue extension displays information about the queues associated with a given AVStream object, or the stream associated with a port class object."
 keywords: ["ks.dumpqueue Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,7 +21,7 @@ The **!ks.dumpqueue** extension displays information about the queues associated
 !ks.dumpqueue Object [Level] 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Object______"></span><span id="_______object______"></span><span id="_______OBJECT______"></span> *Object*   
@@ -30,7 +30,7 @@ Specifies a pointer to the object for which to display the queue. *Object* must 
 <span id="_______Level______"></span><span id="_______level______"></span><span id="_______LEVEL______"></span> *Level*   
 Optional. Specifies the level of detail to display on a 0-7 scale with progressively more information displayed for higher values. To display all available details, supply a value of 7.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -88,6 +88,7 @@ Filter 829493c4: Output Queue 82990e20:
  
 
  
+
 
 
 

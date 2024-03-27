@@ -1,6 +1,6 @@
 ---
-title: vad (WinDbg)
-description: The vad extension displays details of a virtual address descriptor (VAD) or a tree of VADs.
+title: "vad (WinDbg)"
+description: "The vad extension displays details of a virtual address descriptor (VAD) or a tree of VADs."
 keywords: ["virtual address descriptor (VAD)", "VAD (virtual address descriptor)", "addresses, virtual address descriptor (VAD)", "vad Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -44,7 +44,7 @@ Only the VAD specified by *VAD-Root* is displayed. The display will include a mo
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Address in the virtual address range of a user-mode module.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -102,6 +102,7 @@ SecNoChange
  
 
  
+
 
 
 

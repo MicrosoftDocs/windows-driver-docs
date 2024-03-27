@@ -1,6 +1,6 @@
 ---
-title: .opendump (Open Dump File)
-description: The .opendump command opens a dump file for debugging.
+title: ".opendump (Open Dump File)"
+description: "The .opendump command opens a dump file for debugging."
 keywords: [".opendump (Open Dump File) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -70,6 +70,7 @@ You can use **.opendump** even if a debugging session is already in progress. Th
  
 **Note**   There are complications, when you debug live targets and dump targets together, because commands behave differently for each type of debugging. For example, if you use the **g (Go)** command when the current system is a dump file, the debugger begins executing, but you cannot break back into the debugger, because the break command is not recognized as valid for dump file debugging.
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: wmitrace.start
-description: The wmitrace.start extension starts the Event Tracing for Windows (ETW) logger on the target computer.
+title: "wmitrace.start"
+description: "The wmitrace.start extension starts the Event Tracing for Windows (ETW) logger on the target computer."
 keywords: ["wmitrace.start Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -55,7 +55,7 @@ Specifies the duration of the flush timer, in seconds. Starting in Windows 8, y
 
  
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 This extension is exported by Wmitrace.dll.
 
@@ -74,4 +74,5 @@ When the trace session is started, the system assigns it an ordinal number (the 
 To stop the ETW logger, use [**!wmitrace.stop**](-wmitrace-stop.md).
 
  
+
 

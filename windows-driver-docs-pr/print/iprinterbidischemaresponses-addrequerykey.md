@@ -1,5 +1,5 @@
 ---
-title: IPrinterBidiSchemaResponses AddRequeryKey method
+title: IPrinterBidiSchemaResponses AddRequeryKey Method
 description: The AddRequeryKey method adds a new QueryKey to re-query upon return from the getSchemas call.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

@@ -1,6 +1,6 @@
 ---
-title: wudfext.wudfdevicequeues
-description: The wudfext.wudfdevicequeues extension displays information about all the I/O queues for a device.
+title: "wudfext.wudfdevicequeues"
+description: "The wudfext.wudfdevicequeues extension displays information about all the I/O queues for a device."
 keywords: ["wudfext.wudfdevicequeues Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,13 +21,13 @@ The **!wudfext.wudfdevicequeues** extension displays information about all the I
 !wudfext.wudfdevicequeues pWDFDevice
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______pWDFDevice______"></span><span id="_______pwdfdevice______"></span><span id="_______PWDFDEVICE______"></span> *pWDFDevice*   
 Specifies the address of the **IWDFDevice** interface for which to display information about all of its associated I/O queues. The [**!wudfext.wudfdriverinfo**](-wudfext-wudfdriverinfo.md) extension command determines the address of **IWDFDevice**.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -77,6 +77,7 @@ Queue: 1 (!wudfqueue 0x000f3500)
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: scsikd.scsiext
-description: The scsikd.scsiext extension displays detailed information about the specified SCSI port extension.
+title: "scsikd.scsiext"
+description: "The scsikd.scsiext extension displays detailed information about the specified SCSI port extension."
 keywords: ["scsikd.scsiext Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,13 +21,13 @@ The **!scsikd.scsiext** extension displays detailed information about the specif
 !scsikd.scsiext Device 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Device______"></span><span id="_______device______"></span><span id="_______DEVICE______"></span> *Device*   
 Specifies the device object or device extension of a SCSI port extension.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -121,6 +121,7 @@ Logical Unit Extension:
  
 
  
+
 
 
 

@@ -1,6 +1,7 @@
 ---
-title: WinDbg - Command line startup options
-description: This section covers the command line startup options for the WinDbg debugger.
+title: "WinDbg - Command line startup options"
+description: "This section covers the command line startup options for the WinDbg debugger."
+keywords: ["Command line startup options", "WinDbg", "Menu", "Windows Debugging"]
 ms.date: 09/11/2019
 ms.topic: article
 ---
@@ -135,3 +136,4 @@ You can use -? to list the supported command line options.
 ## See Also
 
 [WinDbg Features](../debugger/debugging-using-windbg-preview.md)
+

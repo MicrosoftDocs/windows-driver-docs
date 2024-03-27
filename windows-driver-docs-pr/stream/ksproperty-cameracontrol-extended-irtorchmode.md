@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_IRTORCHMODE
+title: KSPROPERTY_CAMERACONTROL_EXTENDED_IRTORCHMODE
 description: This extended property control is used by the client to control an IR camera's infrared torch's power level and duty cycle.
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_IRTORCHMODE Streaming Media Devices"]
 topic_type:

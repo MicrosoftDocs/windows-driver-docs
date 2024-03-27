@@ -1,7 +1,7 @@
 ---
-title: amli dh (WinDbg)
-description: The amli dh extension displays the AML interpreter's internal heap block.
-keywords: ["amli dh Windows Debugging"]
+title: "!amli dh (WinDbg)"
+description: "The !amli dh extension displays the AML interpreter's internal heap block."
+keywords: ["!amli dh Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !amli dh
 
-
 The **!amli dh** extension displays the AML interpreter's internal heap block.
 
 Syntax
@@ -23,25 +22,15 @@ Syntax
 !amli dh [HeapAddress]
 ```
 
-## <span id="ddk__amli_dh_dbg"></span><span id="DDK__AMLI_DH_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______HeapAddress______"></span><span id="_______heapaddress______"></span><span id="_______HEAPADDRESS______"></span> *HeapAddress*   
 Specifies the address of the heap block. If this is omitted, the global heap is displayed.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Kdexts.dll
 
 ### Additional Information
 
 For information about related commands and their uses, see [The AMLI Debugger](../debugger/the-amli-debugger.md).
-
- 
-
- 
-
-
-
-
-

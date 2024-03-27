@@ -1,6 +1,6 @@
 ---
-title: ks.enumdevobj
-description: The ks.enumdevobj extension displays the KSDEVICE associated with a given WDM device object, and lists the filter types and filters currently instantiated on this device.
+title: "ks.enumdevobj"
+description: "The ks.enumdevobj extension displays the KSDEVICE associated with a given WDM device object, and lists the filter types and filters currently instantiated on this device."
 keywords: ["ks.enumdevobj Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,13 +21,13 @@ The **!ks.enumdevobj** extension displays the KSDEVICE associated with a given W
 !ks.enumdevobj DeviceObject 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______DeviceObject______"></span><span id="_______deviceobject______"></span><span id="_______DEVICEOBJECT______"></span> *DeviceObject*   
 Specifies a pointer to a WDM device object.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -69,6 +69,7 @@ WDM device object 8241c020:
  
 
  
+
 
 
 

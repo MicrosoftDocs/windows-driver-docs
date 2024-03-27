@@ -1,6 +1,6 @@
 ---
-title: thread (WinDbg)
-description: The thread extension displays summary information about a thread on the target system, including the ETHREAD block. This command can be used only during kernel-mode debugging.
+title: "thread (WinDbg)"
+description: "The thread extension displays summary information about a thread on the target system, including the ETHREAD block. This command can be used only during kernel-mode debugging."
 keywords: ["thread Windows Debugging"]
 ms.date: 07/19/2021
 topic_type:
@@ -52,7 +52,7 @@ Adds the return address, the stack pointer, and (on Itanium systems) the **bsp**
 <span id="Bit_4__0x10_"></span><span id="bit_4__0x10_"></span><span id="BIT_4__0X10_"></span>Bit 4 (0x10)  
 Sets the process context equal to the process that owns the specified thread for the duration of this command. This results in more accurate display of thread stacks.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Kdexts.dll
 
@@ -149,6 +149,7 @@ The useful information in the **!thread** display is explained in the following 
  
 
  
+
 
 
 

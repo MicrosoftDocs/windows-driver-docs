@@ -2,7 +2,6 @@
 title: Thin Provisioning
 description: Thin Provisioning
 ms.date: 04/03/2023
-ms.custom: contperf-fy22q1
 ---
 
 # Thin Provisioning

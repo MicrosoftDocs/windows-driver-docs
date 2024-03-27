@@ -1,5 +1,5 @@
 ---
-title: AddPhysicalDisk method of the MSFT\_StoragePool class
+title: AddPhysicalDisk Method of the MSFT_StoragePool Class
 description: Adds one or more physical disks from the primordial storage pool to an existing concrete storage pool.
 ms.assetid: 5b6c5566-7a3f-4bc4-b69e-53664920c9b2
 keywords:

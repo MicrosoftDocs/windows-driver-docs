@@ -1,6 +1,7 @@
 ---
-title: WinDbg Overview
-description: This section is an overview of WinDbg's major features.
+title: "WinDbg Overview"
+description: "This section is an overview of WinDbg's major features."
+keywords: ["Overview of WinDbg's major features", "WinDbg", "Overview", "Windows Debugging"]
 ms.date: 04/10/2023
 ---
 
@@ -114,3 +115,4 @@ To report any bugs or suggest a new feature, you can follow the feedback button 
   - [Defrag Tools #186](/shows/defrag-tools/186-time-travel-debugging-advanced) - James and JCAB covers advanced Time Travel Debugging.
 
 - Additional tips and tricks can be found in the [WinDbg blog archive](/archive/blogs/windbg/).
+

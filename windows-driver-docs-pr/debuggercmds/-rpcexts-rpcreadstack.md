@@ -1,6 +1,6 @@
 ---
-title: rpcexts.rpcreadstack
-description: The rpcexts.rpcreadstack extension reads an RPC client-side stack and retrieves the call information.
+title: "rpcexts.rpcreadstack"
+description: "The rpcexts.rpcreadstack extension reads an RPC client-side stack and retrieves the call information."
 keywords: ["rpcexts.rpcreadstack Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -27,7 +27,7 @@ The **!rpcexts.rpcreadstack** extension reads an RPC client-side stack and retri
 <span id="_______ThreadStackPointer______"></span><span id="_______threadstackpointer______"></span><span id="_______THREADSTACKPOINTER______"></span> *ThreadStackPointer*   
 Specifies the pointer to the thread stack.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -71,6 +71,7 @@ ProcNum: 0
  
 
  
+
 
 
 

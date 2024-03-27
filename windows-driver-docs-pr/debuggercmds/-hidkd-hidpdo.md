@@ -1,6 +1,6 @@
 ---
-title: hidkd.hidpdo
-description: The hidkd.hidpdo command displays HID information associated with a physical device object (PDO).
+title: "hidkd.hidpdo"
+description: "The hidkd.hidpdo command displays HID information associated with a physical device object (PDO)."
 keywords: ["hidkd.hidpdo Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -68,7 +68,7 @@ FDO  VendorID:0x045E(Microsoft Corporation) ProductID:0x0745 Version:0x0634
   Wait Wake IRP : !irp 0xffffe00004fc57d0 (pending on \Driver\HidUsb)
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [HID Extensions](hid-extensions.md)
@@ -76,6 +76,7 @@ FDO  VendorID:0x045E(Microsoft Corporation) ProductID:0x0745 Version:0x0634
  
 
  
+
 
 
 

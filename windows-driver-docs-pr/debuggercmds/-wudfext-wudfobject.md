@@ -1,6 +1,6 @@
 ---
-title: wudfext.wudfobject
-description: The wudfext.wudfobject extension displays information about a WDF object, as well as its parent and child relationships.
+title: "wudfext.wudfobject"
+description: "The wudfext.wudfobject extension displays information about a WDF object, as well as its parent and child relationships."
 keywords: ["wudfext.wudfobject Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,7 +21,7 @@ The **!wudfext.wudfobject** extension displays information about a WDF object, a
 !wudfext.wudfobject pWDFObject Flags TypeName
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______pWDFObject______"></span><span id="_______pwdfobject______"></span><span id="_______PWDFOBJECT______"></span> *pWDFObject*   
@@ -42,7 +42,7 @@ Steps recursively through the object hierarchy, and displays details about the i
 <span id="_______TypeName______"></span><span id="_______typename______"></span><span id="_______TYPENAME______"></span> *TypeName*   
 Optional. Specifies the type of the interface (for example, **IWDFDevice**). If a value for *TypeName* is supplied, the extension uses the value as the type of the interface. If an asterisk (\*) is supplied as *TypeName*, or if *TypeName* is omitted, the extension attempts to automatically determine the type of the supplied interface.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -164,6 +164,7 @@ IWDFDriver 0xf2db8 Fx: 0xf2d40 [Ref 2]
  
 
  
+
 
 
 

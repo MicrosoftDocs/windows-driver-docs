@@ -1,6 +1,6 @@
 ---
-title: .srcnoisy (Noisy Source Loading)
-description: The .srcnoisy command controls the verbosity level for source file loading.
+title: ".srcnoisy (Noisy Source Loading)"
+description: "The .srcnoisy command controls the verbosity level for source file loading."
 keywords: [".srcnoisy (Noisy Source Loading) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -58,6 +58,7 @@ Noisy source loading should not be confused with noisy symbol loading -- that is
  
 
  
+
 
 
 

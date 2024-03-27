@@ -1,5 +1,5 @@
 ---
-title: Notifying about DirectX Version
+title: Notifying About DirectX Version
 description: Notifying about DirectX Version
 keywords:
 - version numbers WDK DirectX 9.0

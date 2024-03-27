@@ -1,6 +1,6 @@
 ---
-title: usb3kd.xhci_trb
-description: The usb3kd.xhci_trb extension displays one or more transfer request blocks (TRBs) used by a USB 3.0 host controller
+title: "usb3kd.xhci_trb"
+description: "The usb3kd.xhci_trb extension displays one or more transfer request blocks (TRBs) used by a USB 3.0 host controller"
 keywords: ["usb3kd.xhci_trb Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -67,7 +67,7 @@ In the following example, **0x0dced7c00** is the physical address of a TRB. The 
         [  3] NORMAL       0xdced7c30 CycleBit 1 IOC 0 CH 1 BEI 0 InterrupterTarget 1 TransferLength  1336 TDSize  0
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [USB 3.0 Extensions](usb-3-extensions.md)
@@ -77,4 +77,5 @@ In the following example, **0x0dced7c00** is the physical address of a TRB. The 
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
+
 

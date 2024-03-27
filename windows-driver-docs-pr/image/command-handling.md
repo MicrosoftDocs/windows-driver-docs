@@ -1,5 +1,5 @@
 ---
-title: Command handling
+title: Command Handling
 description: Command handling
 ms.date: 03/29/2023
 ---

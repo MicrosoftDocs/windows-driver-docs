@@ -1,5 +1,5 @@
 ---
-title: Implementing a Storport virtual miniport driver
+title: Implementing a Storport Virtual Miniport Driver
 description: Implementing a Storport virtual miniport driver
 keywords:
 - storage virtual miniport drivers WDK , initialization

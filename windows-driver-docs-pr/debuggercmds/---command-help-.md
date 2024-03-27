@@ -1,6 +1,6 @@
 ---
-title: (Command Help)
-description: The question mark ( ) character displays a list of all commands and operators.Note  A question mark by itself displays command help.
+title: "? (Command Help)"
+description: "The question mark (?) character displays a list of all commands and operators.Note  A question mark by itself displays command help."
 keywords: ["(Command Help) Windows Debugging"]
 ms.date: 08/30/2023
 topic_type:

@@ -1,6 +1,6 @@
 ---
-title: reg (WinDbg)
-description: The reg extension displays and searches through registry data.
+title: "reg (WinDbg)"
+description: "The reg extension displays and searches through registry data."
 keywords: ["reg Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -140,7 +140,7 @@ Displays ownership of an intent lock. *LockAddress* specifies the address of the
 <span id="_______dumppool_sr"></span><span id="_______DUMPPOOL_SR"></span> **dumppool** \[**s**|**r**\]  
 Displays registry-allocated paged pool. If **s** is specified, the list of registry pages is saved to a temporary file. If **r** is specified, the registry page list is restored from the previously saved temporary file.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Kdexts.dll
 
@@ -254,6 +254,7 @@ Index 7a1:  48a30288 kcb=e13a3738 cell=00000020 f=002c0004 \REGISTRY\USER\S-1-5-
 ```
 
 To display formatted registry key information, use the [**!dreg**](-dreg.md) extension instead.
+
 
 
 

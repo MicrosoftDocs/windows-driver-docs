@@ -1,5 +1,5 @@
 ---
-title: SRB\_PROPOSE\_DATA\_FORMAT
+title: SRB_PROPOSE_DATA_FORMAT
 description: SRB\_PROPOSE\_DATA\_FORMAT
 keywords: ["SRB_PROPOSE_DATA_FORMAT Streaming Media Devices"]
 topic_type:

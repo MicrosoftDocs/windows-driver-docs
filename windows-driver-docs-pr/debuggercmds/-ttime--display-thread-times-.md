@@ -1,6 +1,6 @@
 ---
-title: .ttime (Display Thread Times)
-description: The .ttime command displays the running times for a thread.
+title: ".ttime (Display Thread Times)"
+description: "The .ttime command displays the running times for a thread."
 keywords: [".ttime (Display Thread Times) Windows Debugging"]
 ms.date: 08/01/2018
 topic_type:
@@ -67,6 +67,7 @@ User:    0 days 0:00:02.109
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: pci (WinDbg)
-description: The pci extension displays the current status of the peripheral component interconnect (PCI) buses, as well as any devices attached to those buses.
+title: "pci (WinDbg)"
+description: "The pci extension displays the current status of the peripheral component interconnect (PCI) buses, as well as any devices attached to those buses."
 keywords: ["PCI bus", "PCI device", "PCI configuration space", "pci Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -78,7 +78,7 @@ Specifies the first address from which raw bytes or DWORDs are to be displayed. 
 <span id="_______MaxAddress______"></span><span id="_______maxaddress______"></span><span id="_______MAXADDRESS______"></span> *MaxAddress*   
 Specifies the last address from which raw bytes or DWORDs are to be displayed. This must be between 0 and 0xFF, and not less than *MinAddress*.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -229,6 +229,7 @@ PCI Segment 0x1 Bus 0xc6
 PCI Segment 0x1 Bus 0xe3
 00:0  103c:403b.00  Cmd[0547:imb.ps]  Sts[0010:c....]  HP PCI-PCI Bridge 0xe3->0xe4-0xe4
 ```
+
 
 
 

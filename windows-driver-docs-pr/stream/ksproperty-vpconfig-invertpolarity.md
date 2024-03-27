@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_VPCONFIG\_INVERTPOLARITY
+title: KSPROPERTY_VPCONFIG_INVERTPOLARITY
 description: The KSPROPERTY\_VPCONFIG\_INVERTPOLARITY property toggles the global polarity flag, forcing the video port to be inverted.
 keywords: ["KSPROPERTY_VPCONFIG_INVERTPOLARITY Streaming Media Devices"]
 topic_type:

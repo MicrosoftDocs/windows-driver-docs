@@ -1,6 +1,6 @@
 ---
-title: handle (WinDbg)
-description: The handle extension displays information about a handle or handles that one or all processes in the target system own.
+title: "handle (WinDbg)"
+description: "The handle extension displays information about a handle or handles that one or all processes in the target system own."
 keywords: ["handle", "handle, handle extension", "handle Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -78,7 +78,7 @@ Specifies the type of handle that you want to examine. Only handles that match t
 <span id="_______-_______"></span> **-?**   
 (User mode only) Displays some Help text for this extension in the [Debugger Command window](../debugger/debugger-command-window.md).
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -220,6 +220,7 @@ Object: fffff8a000633f00  Type: (fffffa80035fef20) Section
  
 
  
+
 
 
 

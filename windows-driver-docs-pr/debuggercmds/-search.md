@@ -1,6 +1,6 @@
 ---
-title: search (WinDbg)
-description: The search extension searches pages in physical memory for pointer-sized data that matches the specified criteria.
+title: "search (WinDbg)"
+description: "The search extension searches pages in physical memory for pointer-sized data that matches the specified criteria."
 keywords: ["search Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -24,7 +24,7 @@ Syntax
 !search -?
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______-s______"></span><span id="_______-S______"></span> **-s**   
@@ -48,7 +48,7 @@ Specifies the page frame number (PFN) of the end of the range to be searched. If
 <span id="_______-_______"></span> **-?**   
 Displays help for this extension in the Debugger Command window.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Kdexts.dll
 
@@ -107,6 +107,7 @@ To calculate the physical address, shift the PFN left three hexadecimal digits (
  
 
  
+
 
 
 

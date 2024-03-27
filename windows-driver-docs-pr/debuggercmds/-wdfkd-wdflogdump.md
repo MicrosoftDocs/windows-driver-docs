@@ -1,6 +1,6 @@
 ---
-title: wdfkd.wdflogdump
-description: The wdfkd.wdflogdump extension displays the WDF In-flight Recorder log records, if available, for a KMDF driver or a UMDF 2 driver. 
+title: "wdfkd.wdflogdump"
+description: "The wdfkd.wdflogdump extension displays the WDF In-flight Recorder log records, if available, for a KMDF driver or a UMDF 2 driver. "
 keywords: ["wdfkd.wdflogdump Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -29,7 +29,7 @@ UMDF
 !wdfkd.wdflogdump  [DriverName.dll][HostProcessId][-d | -f | -m]
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______DriverName______"></span><span id="_______drivername______"></span><span id="_______DRIVERNAME______"></span> *DriverName*   
@@ -61,7 +61,7 @@ UMDF:
 
 **-m** Merges framework and driver logs in their recorded order.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Wdfkd.dll
 
@@ -81,10 +81,11 @@ For information about setting information that the debugger needs to format WPP 
 
 For information about enabling the inflight trace recorder for your driver, see [Using Inflight Trace Recorder (IFR) in KMDF and UMDF 2 Drivers](../wdf/using-wpp-software-tracing-in-kmdf-and-umdf-2-drivers.md). For more information about debugging WDF drivers, see [Debugging WDF Drivers](../debugger/debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md). For information about KMDF debugging, see [Kernel-Mode Driver Framework Debugging](../debugger/kernel-mode-driver-framework-debugging.md).
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**!wdfkd.wdfcrashdump**](-wdfkd-wdfcrashdump.md)
 
 [**!wdfkd.wdfsettraceprefix**](-wdfkd-wdfsettraceprefix.md)
+
 

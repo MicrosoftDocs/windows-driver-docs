@@ -1,5 +1,5 @@
 ---
-title: Time element
+title: Time Element
 description: The required Time element specifies the time at which a condition occurred.
 keywords: ["Time element Imaging Devices"]
 topic_type:

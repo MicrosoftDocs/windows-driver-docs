@@ -1,6 +1,6 @@
 ---
-title: rpcexts.eeinfo
-description: The rpcexts.eeinfo extension displays the extended error information chain.
+title: "rpcexts.eeinfo"
+description: "The rpcexts.eeinfo extension displays the extended error information chain."
 keywords: ["rpcexts.eeinfo Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -27,7 +27,7 @@ The **!rpcexts.eeinfo** extension displays the extended error information chain.
 <span id="_______EEInfoAddress______"></span><span id="_______eeinfoaddress______"></span><span id="_______EEINFOADDRESS______"></span> *EEInfoAddress*   
 Specifies the address of the extended error information.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -78,6 +78,7 @@ If the chain is very long and you wish to see only one record, use [**!rpcexts.e
  
 
  
+
 
 
 

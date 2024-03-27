@@ -1,5 +1,5 @@
 ---
-title: Head-mounted and specialized monitors
+title: Head-mounted and Specialized Monitors
 description: Head-mounted and specialized monitors
 keywords:
 - display devices WDK

@@ -1,6 +1,6 @@
 ---
-title: .bpsync (Synchronize Threads at Breakpoint)
-description: When a thread reaches a breakpoint, the .bpsync command freezes all other threads, until the thread to which the breakpoint applies has stepped through the breakpoint.
+title: ".bpsync (Synchronize Threads at Breakpoint)"
+description: "When a thread reaches a breakpoint, the .bpsync command freezes all other threads, until the thread to which the breakpoint applies has stepped through the breakpoint."
 keywords: [".bpsync (Synchronize Threads at Breakpoint) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -23,7 +23,7 @@ When a thread reaches a breakpoint, the **.bpsync** command freezes all other th
 .bpsync 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______1______"></span> **1**   
@@ -57,6 +57,7 @@ Note that if you use **.bpsync 1**, there is a risk of deadlocks among the threa
  
 
  
+
 
 
 

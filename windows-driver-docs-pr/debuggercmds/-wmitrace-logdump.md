@@ -1,6 +1,6 @@
 ---
-title: wmitrace.logdump
-description: The wmitrace.logdump extension displays the contents of the trace buffers for a trace session. You can limit the display to trace messages from specified providers.
+title: "wmitrace.logdump"
+description: "The wmitrace.logdump extension displays the contents of the trace buffers for a trace session. You can limit the display to trace messages from specified providers."
 keywords: ["wmitrace.logdump Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -36,7 +36,7 @@ Specifies the trace session. *LoggerName* is the text name that was specified wh
 <span id="_______GUIDFile______"></span><span id="_______guidfile______"></span><span id="_______GUIDFILE______"></span> *GUIDFile*   
 Displays only trace messages from providers specified in the *GUIDFile* file. *GUIDFile* represents the path (optional) and file name of a text file that contains the control GUIDs of one or more trace providers, such as a .guid or .ctl file.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 This extension is exported by Wmitrace.dll.
 
@@ -69,4 +69,5 @@ This extension is similar to the [**!wmitrace.eventlogdump**](-wmitrace-eventlog
 For information about how to view the UMDF trace log, see [Using WPP Software Tracing in UMDF-based Drivers](../wdf/using-wpp-software-tracing-in-umdf-drivers.md#viewing-the-umdf-trace-log).
 
  
+
 

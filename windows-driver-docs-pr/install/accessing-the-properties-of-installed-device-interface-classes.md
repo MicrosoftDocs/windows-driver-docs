@@ -1,5 +1,5 @@
 ---
-title: Access the properties of installed device interfaces
+title: Access the Properties of Installed Device Interfaces
 description: Provides information about how to access the properties of installed device interfaces.
 keywords:
 - device interfaces WDK device installations, access properties

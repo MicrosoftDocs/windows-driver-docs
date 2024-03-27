@@ -1,6 +1,6 @@
 ---
-title: bthkd.hcicmd
-description: The bthkd.hcicmd command displays a list of the currently pending commands.
+title: "bthkd.hcicmd"
+description: "The bthkd.hcicmd command displays a list of the currently pending commands."
 keywords: ["bthkd.hcicmd Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -26,7 +26,7 @@ The **!bthkd.hcicmd** command displays a list of the currently pending commands.
 
 Bthkd.dll
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [Bluetooth Extensions (Bthkd.dll)](bluetooh-extensions--bthkd-dll-.md)
@@ -34,6 +34,7 @@ Bthkd.dll
  
 
  
+
 
 
 

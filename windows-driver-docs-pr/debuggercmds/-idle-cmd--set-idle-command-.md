@@ -1,6 +1,6 @@
 ---
-title: .idle_cmd (Set Idle Command)
-description: The .idle_cmd command sets the idle command. This is a command that is executed whenever control returns from the target to the debugger. 
+title: ".idle_cmd (Set Idle Command)"
+description: "The .idle_cmd command sets the idle command. This is a command that is executed whenever control returns from the target to the debugger. "
 keywords: [".idle_cmd (Set Idle Command) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -23,7 +23,7 @@ The **.idle\_cmd** command sets the *idle command*. This is a command that is ex
 .idle_cmd /d
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______String______"></span><span id="_______string______"></span><span id="_______STRING______"></span> *String*   
@@ -61,6 +61,7 @@ eax=003b0de8
  
 
  
+
 
 
 

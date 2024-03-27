@@ -1,6 +1,6 @@
 ---
-title: vm (WinDbg)
-description: The vm extension displays summary information about virtual memory use statistics on the target system.
+title: "vm (WinDbg)"
+description: "The vm extension displays summary information about virtual memory use statistics on the target system."
 keywords: ["vm Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -131,6 +131,7 @@ All memory use is listed in pages and in kilobytes. The most useful information 
  
 
  
+
 
 
 

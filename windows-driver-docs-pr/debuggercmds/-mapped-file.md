@@ -1,6 +1,6 @@
 ---
-title: mapped_file
-description: The mapped_file extension displays the name of the file that backs the file mapping that contains a specified address.
+title: "mapped_file"
+description: "The mapped_file extension displays the name of the file that backs the file mapping that contains a specified address."
 keywords: ["mapped_file Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,13 +21,13 @@ The **!mapped\_file** extension displays the name of the file that backs the fil
 !mapped_file Address
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the address of the file mapping. If *Address* is not in a mapping, the command fails.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -70,4 +70,5 @@ No information found for 80310000: error 87
 ```
 
  
+
 

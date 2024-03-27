@@ -1,5 +1,5 @@
 ---
-title: SetPhysicalDisk method of the PS\_StorageCmdlets class
+title: SetPhysicalDisk Method of the PS_StorageCmdlets Class
 description: SetPhysicalDisk method of the PS\_StorageCmdlets class
 ms.assetid: 39E0EE10-0584-4009-9C13-3BFAE7351D86
 keywords:

@@ -1,6 +1,6 @@
 ---
-title: sprocess (WinDbg)
-description: The sprocess extension displays information about the specified session process, or about all processes in the specified session.
+title: "sprocess (WinDbg)"
+description: "The sprocess extension displays information about the specified session process, or about all processes in the specified session."
 keywords: ["sprocess Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -97,24 +97,9 @@ Specifies the name of the process to be displayed. All processes whose executabl
 <span id="_______-_______"></span> **-?**   
 Displays help for this extension in the Debugger Command window. This help text has some omissions.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Unavailable</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Kdexts.dll</p></td>
-</tr>
-</tbody>
-</table>
+Windows XP and later - Kdexts.dll
 
  
 
@@ -129,6 +114,7 @@ The output of this extension is similar to that of [**!process**](-process.md), 
  
 
  
+
 
 
 

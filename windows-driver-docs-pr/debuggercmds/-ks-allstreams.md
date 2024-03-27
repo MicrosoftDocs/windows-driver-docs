@@ -1,6 +1,6 @@
 ---
-title: ks.allstreams
-description: The ks.allstreams extension walks the entire device tree and finds every kernel streaming device in the system.
+title: "ks.allstreams"
+description: "The ks.allstreams extension walks the entire device tree and finds every kernel streaming device in the system."
 keywords: ["ks.allstreams Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,7 +21,7 @@ The **!ks.allstreams** extension walks the entire device tree and finds every ke
 !ks.allstreams [Flags] [Level] 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Flags______"></span><span id="_______flags______"></span><span id="_______FLAGS______"></span> *Flags*   
@@ -45,7 +45,7 @@ Causes the display to include an unformatted display of all stream formats.
 <span id="_______Level______"></span><span id="_______level______"></span><span id="_______LEVEL______"></span> *Level*   
 Optional. Specifies the level of detail to display on a 0-7 scale with progressively more information displayed for higher values. To display all available details, supply a value of 7.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -90,6 +90,7 @@ kd> !allstreams
  
 
  
+
 
 
 

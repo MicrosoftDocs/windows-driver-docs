@@ -1,6 +1,6 @@
 ---
-title: usbkd.usb2
-description: The usbkd.usb2 command displays a list of USB endpoints that have USB 2.0 scheduling information.
+title: "usbkd.usb2"
+description: "The usbkd.usb2 command displays a list of USB endpoints that have USB 2.0 scheduling information."
 keywords: ["usbkd.usb2 Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -60,7 +60,7 @@ dt usbport!_HCD_ENDPOINT ffffe0000212d970  !usbep ffffe0000212d970
     Period,offset,Ordinal(32,0,0)   smask,cmask(00,00  ........ , ........) maxpkt 1
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
@@ -68,4 +68,5 @@ dt usbport!_HCD_ENDPOINT ffffe0000212d970  !usbep ffffe0000212d970
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
+
 

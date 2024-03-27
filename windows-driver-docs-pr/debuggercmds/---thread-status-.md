@@ -1,6 +1,6 @@
 ---
-title: ~ (Thread Status)
-description: The tilde (~) command displays status for the specified thread or for all threads in the current process.
+title: "~ (Thread Status)"
+description: "The tilde (~) command displays status for the specified thread or for all threads in the current process."
 keywords: ["~ (Thread Status) Windows Debugging"]
 ms.date: 08/30/2023
 topic_type:

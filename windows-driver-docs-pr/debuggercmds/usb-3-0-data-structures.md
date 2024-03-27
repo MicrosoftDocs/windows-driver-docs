@@ -1,6 +1,7 @@
 ---
-title: USB 3.0 Data Structures
-description: This topic describes the data structures used by the USB 3.0 host controller driver.
+title: "USB 3.0 Data Structures"
+description: "This topic describes the data structures used by the USB 3.0 host controller driver."
+keywords: ["USB 3.0 Data Structures", "extensions", "WinDbg", "Windows Debugging"]
 ms.date: 11/28/2017
 ---
 
@@ -53,3 +54,4 @@ An Endpoint Context structure holds context information for a single endpoint. I
 ## See also
 
 [USB Debugging Innovations in Windows 8](/events/build-build2011/hw-258p)
+

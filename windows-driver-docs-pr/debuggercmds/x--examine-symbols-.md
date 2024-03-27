@@ -1,6 +1,6 @@
 ---
-title: x (Examine Symbols)
-description: The x command displays the symbols in all contexts that match the specified pattern.
+title: "x (Examine Symbols)"
+description: "The x command displays the symbols in all contexts that match the specified pattern."
 keywords: ["x (Examine Symbols) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -252,7 +252,7 @@ Consider using the [**dt (Display Type)**](dt--display-type-.md) command when wo
    +0x038 key_             : std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [Verifying Symbols](../debugger/verifying-symbols.md)
@@ -262,6 +262,7 @@ Consider using the [**dt (Display Type)**](dt--display-type-.md) command when wo
  
 
  
+
 
 
 

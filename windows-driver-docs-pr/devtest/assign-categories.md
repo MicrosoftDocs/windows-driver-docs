@@ -1,5 +1,5 @@
 ---
-title: Assign categories in the Device Metadata Authoring Wizard
+title: Assign Categories in the Device Metadata Authoring Wizard
 description: Assign categories in the Device Metadata Authoring Wizard
 keywords:
 - Assign categories in the Device Metadata Authoring Wizard

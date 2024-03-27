@@ -1,5 +1,5 @@
 ---
-title: MSiSCSI\_LUNMappingInformation WMI Class
+title: MSiSCSI_LUNMappingInformation WMI Class
 description: MSiSCSI\_LUNMappingInformation WMI Class
 ms.date: 10/17/2018
 ---

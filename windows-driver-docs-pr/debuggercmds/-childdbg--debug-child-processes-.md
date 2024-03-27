@@ -1,6 +1,6 @@
 ---
-title: .childdbg (Debug Child Processes)
-description: The .childdbg command controls the debugging of child processes.
+title: ".childdbg (Debug Child Processes)"
+description: "The .childdbg command controls the debugging of child processes."
 keywords: [".childdbg (Debug Child Processes) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -68,6 +68,7 @@ With no parameters, **.childdbg** will display the current status of child-proce
  
 
  
+
 
 
 

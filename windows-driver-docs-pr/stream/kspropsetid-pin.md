@@ -1,5 +1,5 @@
 ---
-title: KSPROPSETID\_Pin
+title: KSPROPSETID_Pin
 description: KSPROPSETID\_Pin
 ms.date: 06/26/2020
 ---

@@ -1,6 +1,6 @@
 ---
-title: dp ( ntsdexts.dp)
-description: The dp extension in Ntsdexts.dll displays a CSR process.
+title: "dp ( ntsdexts.dp)"
+description: "The dp extension in Ntsdexts.dll displays a CSR process."
 keywords: ["dp ( ntsdexts.dp) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -35,7 +35,7 @@ Specifies the process ID of the CSR process.
 <span id="_______CSR-Process______"></span><span id="_______csr-process______"></span><span id="_______CSR-PROCESS______"></span> *CSR-Process*   
 Specifies the hexadecimal address of the CSR process.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -62,7 +62,7 @@ This extension displays the process address, process ID, sequence number, flags,
 
 If no process is specified, all processes are displayed.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**!dt**](-dt.md)
@@ -70,6 +70,7 @@ If no process is specified, all processes are displayed.
  
 
  
+
 
 
 

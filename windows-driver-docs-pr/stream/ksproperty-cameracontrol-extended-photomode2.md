@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PHOTOMODE (submode)
+title: KSPROPERTY_CAMERACONTROL_EXTENDED_PHOTOMODE (Submode)
 description: The KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PHOTOMODE property allows a submode to be configured.
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_PHOTOMODE Streaming Media Devices"]
 topic_type:

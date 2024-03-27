@@ -1,6 +1,6 @@
 ---
-title: sym (WinDbg)
-description: The sym extension controls noisy symbol loading and symbol prompts.
+title: "sym (WinDbg)"
+description: "The sym extension controls noisy symbol loading and symbol prompts."
 keywords: ["symbols, noisy symbol loading", "symbols, prompts", "sym Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -40,7 +40,7 @@ Allows authentication dialog boxes to appear when SymSrv receives an authenticat
 <span id="_______prompts_off______"></span><span id="_______PROMPTS_OFF______"></span> **prompts off**   
 Suppresses all authentication dialog boxes when SymSrv receives an authentication request. This may result in SymSrv being unable to access symbols over the internet.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -76,6 +76,7 @@ The **!sym prompts** and **!sym prompts off** extensions control whether authent
  
 
  
+
 
 
 

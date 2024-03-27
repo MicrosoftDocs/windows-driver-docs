@@ -1,6 +1,6 @@
 ---
-title: zombies (WinDbg)
-description: The zombies extension displays all dead ("zombie") processes or threads.
+title: "!zombies (WinDbg)"
+description: "The zombies extension displays all dead (zombie) processes or threads."
 keywords: ["zombies Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -13,7 +13,6 @@ api_type:
 ---
 
 # !zombies
-
 
 The **!zombies** extension displays all dead ("zombie") processes or threads.
 
@@ -36,7 +35,7 @@ Displays all zombie threads.
 <span id="_______RestartAddress______"></span><span id="_______restartaddress______"></span><span id="_______RESTARTADDRESS______"></span> *RestartAddress*   
 Specifies the hexadecimal address at which to begin the search. This is useful if the previous search was terminated prematurely. The default is zero.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -72,6 +71,7 @@ This extension is available only for Windows 2000.
  
 
  
+
 
 
 

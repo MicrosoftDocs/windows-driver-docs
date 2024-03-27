@@ -1,6 +1,6 @@
 ---
-title: usbkd.usbhcdpnp
-description: The usbkd.usbhcdpnp command displays the Plug and Play (PnP) state history for a USB host controller or root hub.
+title: "usbkd.usbhcdpnp"
+description: "The usbkd.usbhcdpnp command displays the Plug and Play (PnP) state history for a USB host controller or root hub."
 keywords: ["usbkd.usbhcdpnp Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -93,7 +93,7 @@ Now pass the address of the device extension to the **!usbhcdpnp** command.
 [01] EvPDO_IRP_MN_START_DEVICE      PnpNotStarted       PnpStarted          
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
@@ -101,4 +101,5 @@ Now pass the address of the device extension to the **!usbhcdpnp** command.
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
+
 

@@ -19,6 +19,7 @@ Behavior in such cases is undefined and in practice may have unintended conseque
 Set pointers to NULL immediately after they are freed.
 
 ## Example
+
 In the following example, `pSomePointer` is freed only if `Status` value was not zero, and before dereferencing `pSomePointer` to call `Method`, `Status` is checked again.  Unfortunately `Status` was changed between the two references to `pSomePointer`, which allows for the possiblity that the call to `pSomePointer->Method()` is being performed over a previously freed pointer.
 
 ```c

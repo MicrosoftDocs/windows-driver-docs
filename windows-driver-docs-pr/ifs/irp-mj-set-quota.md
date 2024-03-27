@@ -1,5 +1,5 @@
 ---
-title: IRP_MJ_SET_QUOTA (FS and filter drivers)
+title: IRP_MJ_SET_QUOTA (FS and Filter Drivers)
 description: IRP_MJ_SET_QUOTA
 keywords: ["IRP_MJ_SET_QUOTA Installable File System Drivers"]
 topic_type:

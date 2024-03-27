@@ -1,6 +1,6 @@
 ---
-title: wdfkd.wdfdevext
-description: The wdfkd.wdfdevext extension displays information that is associated with the DeviceExtension member of a Microsoft Windows Driver Model (WDM) DEVICE_OBJECT structure.
+title: "wdfkd.wdfdevext"
+description: "The wdfkd.wdfdevext extension displays information that is associated with the DeviceExtension member of a Microsoft Windows Driver Model (WDM) DEVICE_OBJECT structure."
 keywords: ["wdfkd.wdfdevext Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,13 +21,13 @@ The **!wdfkd.wdfdevext** extension displays information that is associated with 
 !wdfkd.wdfdevext DeviceExtension
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______DeviceExtension______"></span><span id="_______deviceextension______"></span><span id="_______DEVICEEXTENSION______"></span> *DeviceExtension*   
 A pointer to a device extension.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Wdfkd.dll
 
@@ -98,6 +98,7 @@ DevNode 0xffffe00000a1e530 for PDO 0xffffe00000b15b00
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: Sign Extension
-description: Sign Extension
+title: "Sign Extension"
+description: "Sign Extension"
 keywords: ["sign extension of numbers", "sign extension of registers", "MASM expressions, sign extension", "registers, sign extension"]
 ms.date: 05/23/2017
 ---
@@ -63,4 +63,5 @@ Because of these display rules, when a number is displayed as a 32-bit number fr
 [Mixed Expression Examples](expression-examples.md)
 
 [Sign Extension](sign-extension.md) 
+
 

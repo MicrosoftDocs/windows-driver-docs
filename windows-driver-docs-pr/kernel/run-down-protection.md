@@ -1,7 +1,8 @@
 ---
 title: Run-Down Protection
 description: Starting with Windows XP, run-down protection is available to kernel-mode drivers. Drivers can use run-down protection to safely access objects in shared system memory that are created and deleted by another kernel-mode driver.
-ms.date: 10/17/2018
+ai-usage: ai-assisted
+ms.date: 02/23/2024
 ---
 
 # Run-Down Protection
@@ -60,5 +61,26 @@ The [**ExRundownCompleted**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exrundownc
 
 The [**ExAcquireRundownProtectionEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exacquirerundownprotectionex) and [**ExReleaseRundownProtectionEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exreleaserundownprotectionex) routines are similar to [**ExAcquireRundownProtection**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exacquirerundownprotection) and [**ExReleaseRundownProtection**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exreleaserundownprotection). These four routines increment or decrement the count of the instances of run-down protection that are in effect on a shared object. Whereas **ExAcquireRundownProtection** and **ExReleaseRundownProtection** increment and decrement this count by one, **ExAcquireRundownProtectionEx** and **ExReleaseRundownProtectionEx** increment and decrement the count by arbitrary amounts.
 
- 
+## Cache-aware run-down protection
 
+A rundown reference is a compact and fast data structure, but it can cause cache contention when many processors try to acquire the reference at the same time. This can affect the performance and scalability of your driver.
+
+To avoid this problem, you can use a cache-aware rundown reference to distribute the reference tracking across multiple cache lines. This reduces the cache contention and improves the performance of your driver on multiprocessor computers.
+
+To use a cache-aware rundown reference, follow these steps:
+
+1. Create an **EX_RUNDOWN_REF_CACHE_AWARE** object by doing one of the following:
+    * Call [**ExAllocateCacheAwareRundownProtection**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatecacheawarerundownprotection). Note that this takes care of initialization.
+    * Alternatively, to control the memory allocation, call [**ExSizeOfRundownProtectionCacheAware**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exsizeofrundownprotectioncacheaware), allocate a buffer of the size returned, then pass that buffer and size to [**ExInitializeRundownProtectionCacheAware**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exinitializerundownprotectioncacheaware).
+1. Request rundown protection on the object before accessing it by calling the [**ExAcquireRundownProtectionCacheAware**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exacquirerundownprotectioncacheaware) routine. This routine returns TRUE if the request is granted, or FALSE if the object is being run down.
+1. Release rundown protection on the object after accessing it by calling the [**ExReleaseRundownProtectionCacheAware**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exreleaserundownprotectioncacheaware) routine.
+1. Wait for the object to run down before deleting it by calling the [**ExWaitForRundownProtectionReleaseCacheAware**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exwaitforrundownprotectionreleasecacheaware) routine. This routine blocks the current thread until all instances of rundown protection on the object are released.
+1. If the driver called  [**ExAllocateCacheAwareRundownProtection**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatecacheawarerundownprotection) earlier, it should call [**ExFreeCacheAwareRundownProtection**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exfreecacheawarerundownprotection) to free the rundown reference.
+
+To reuse a cache-aware rundown reference, follow these steps:
+
+1. After calling **ExWaitForRundownProtectionReleaseCacheAware**, call [**ExRundownCompletedCacheAware**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exrundowncompletedcacheaware) to indicate that the run down of the old object has completed.
+1. Call [**ExReInitializeRundownProtectionCacheAware**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exreinitializerundownprotectioncacheaware) to reinitialize the reference after the associated object is run down.
+1. Now the driver can again call [**ExAcquireRundownProtectionCacheAware**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exacquirerundownprotectioncacheaware).
+
+A cache-aware rundown reference has the advantage of better performance and scalability in specific situations, but it consumes more memory than a regular rundown reference. You should consider this trade-off when choosing between the two types of rundown references.

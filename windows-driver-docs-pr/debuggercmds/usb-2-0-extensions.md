@@ -1,6 +1,7 @@
 ---
-title: USB 2.0 Extensions
-description: This section describes the USB 2.0 debugger extension commands. These commands display information from data structures maintained by drivers in the USB 2.0 driver stack.
+title: "USB 2.0 Extensions"
+description: "This section describes the USB 2.0 debugger extension commands. These commands display information from data structures maintained by drivers in the USB 2.0 driver stack."
+keywords: ["USB 2.0 Extensions", "extensions", "WinDbg", "Windows Debugging"]
 ms.date: 11/28/2017
 ---
 
@@ -90,3 +91,4 @@ To start debugging a USB 2.0 issue, enter the [**!usb2tree**](-usbkd-usb2tree.md
 [USB 3.0 Extensions](usb-3-extensions.md)
 
 [RCDRKD Extensions](rcdrkd-extensions.md)
+

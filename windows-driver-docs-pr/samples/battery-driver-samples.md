@@ -1,5 +1,5 @@
 ---
-title: Battery driver samples
+title: Battery Driver Samples
 description: The battery driver sample in this directory provides a starting point for writing a custom driver for your device.
 ms.date: 03/22/2023
 ---

@@ -1,6 +1,6 @@
 ---
-title: usbkd.usbtx
-description: The usbkd.usbtx command displays information from a usbport _HCD_TRANSFER_CONTEXT structure.
+title: "usbkd.usbtx"
+description: "The usbkd.usbtx command displays information from a usbport _HCD_TRANSFER_CONTEXT structure."
 keywords: ["usbkd.usbtx Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -89,7 +89,7 @@ NumberOfElements = 1
      :phys 00000000'ded90000 len 0x00001000(4096)
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
@@ -97,4 +97,5 @@ NumberOfElements = 1
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
+
 

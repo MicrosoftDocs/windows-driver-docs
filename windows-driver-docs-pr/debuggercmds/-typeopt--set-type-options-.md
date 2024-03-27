@@ -1,6 +1,6 @@
 ---
-title: .typeopt (Set Type Options)
-description: The .typeopt command sets or displays the type options.
+title: ".typeopt (Set Type Options)"
+description: "The .typeopt command sets or displays the type options."
 keywords: [".typeopt (Set Type Options) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -25,7 +25,7 @@ The **.typeopt** command sets or displays the type options.
 .typeopt 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="______________"></span> **+**   
@@ -81,6 +81,7 @@ Without any arguments, **.typeopt** displays the current symbol options.
 To change the default radix, use the [**n (Set Number Base)**](n--set-number-base-.md) command.
 
  
+
 
 
 

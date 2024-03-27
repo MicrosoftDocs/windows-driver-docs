@@ -1,6 +1,6 @@
 ---
-title: ppmperfpolicy
-description: The ppmperfpolicy command
+title: "ppmperfpolicy"
+description: "The ppmperfpolicy command"
 keywords: ["ppmperfpolicy Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,16 +21,17 @@ The **!ppmperfpolicy** command is no longer supported, use the [!ppmsettings](-p
 !ppmperfpolicy
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 None
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Kdexts.dll
   
 
  
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: IPrintCorePS2 COM interface
+title: IPrintCorePS2 COM Interface
 description: IPrintCorePS2 COM interface
 keywords:
 - IPrintCorePS2

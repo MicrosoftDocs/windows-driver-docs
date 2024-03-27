@@ -1,6 +1,6 @@
 ---
-title: bcb (WinDbg)
-description: The bcb extension displays the specified buffer control block.
+title: "bcb (WinDbg)"
+description: "The bcb extension displays the specified buffer control block."
 keywords: ["cache manager", "bcb Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,13 +21,13 @@ The **!bcb** extension displays the specified buffer control block.
 !bcb Address
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the address of the buffer control block.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -61,6 +61,7 @@ This extension is available for Windows 2000 only. In Windows XP or later, use t
  
 
  
+
 
 
 

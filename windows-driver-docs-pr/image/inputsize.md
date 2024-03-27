@@ -1,5 +1,5 @@
 ---
-title: InputSize element
+title: InputSize Element
 description: The optional InputSize element specifies the size of the original scan media.
 keywords: ["InputSize element Imaging Devices"]
 topic_type:

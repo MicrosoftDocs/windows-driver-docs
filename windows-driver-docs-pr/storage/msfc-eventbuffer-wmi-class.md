@@ -1,5 +1,5 @@
 ---
-title: MSFC\_EventBuffer WMI Class
+title: MSFC_EventBuffer WMI Class
 description: MSFC\_EventBuffer WMI Class
 ms.date: 10/17/2018
 ---

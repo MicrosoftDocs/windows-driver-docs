@@ -1,6 +1,6 @@
 ---
-title: usb3kd.usb_tree
-description: The usb3kd.usb_tree extension displays information, in tree format, about all USB 3.0 controllers, hubs, and devices on the computer.
+title: "usb3kd.usb_tree"
+description: "The usb3kd.usb_tree extension displays information, in tree format, about all USB 3.0 controllers, hubs, and devices on the computer."
 keywords: ["usb3kd.usb_tree Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -59,7 +59,7 @@ The [**!usb\_tree**](-usb3kd-device-info.md) command is the parent command for t
 
 The information displayed by the [**!usb\_tree**](-usb3kd-device-info.md) family of commands is based on data structures maintained by the USB 3.0 hub driver. For information about the USB 3.0 hub driver and other drivers in the USB 3.0 stack, see [USB Driver Stack Architecture](../usbcon/usb-3-0-driver-stack-architecture.md). For an explanation of the data structures used by the drivers in the USB 3.0 stack, see Part 2 of the [USB Debugging Innovations in Windows 8](/events/build-build2011/hw-258p) video.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [USB 3.0 Extensions](usb-3-extensions.md)
@@ -67,4 +67,5 @@ The information displayed by the [**!usb\_tree**](-usb3kd-device-info.md) family
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
+
 

@@ -1,6 +1,6 @@
 ---
-title: .show_read_failures
-description: The .show_read_failures command enables or disables the display of read failures.
+title: ".show_read_failures"
+description: "The .show_read_failures command enables or disables the display of read failures."
 keywords: [".show_read_failures Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -22,7 +22,7 @@ The **.show\_read\_failures** command enables or disables the display of read fa
 .show_sym_failures /V
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="________v______"></span><span id="________V______"></span> **/v**   
@@ -45,6 +45,7 @@ Disables the display of read failures.
  
 
  
+
 
 
 

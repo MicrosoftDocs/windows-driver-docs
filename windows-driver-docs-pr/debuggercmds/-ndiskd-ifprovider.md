@@ -1,6 +1,6 @@
 ---
-title: ndiskd.ifprovider
-description: The ndiskd.ifprovider extension displays information about an NDIS interface provider (IfProvider). 
+title: "ndiskd.ifprovider"
+description: "The ndiskd.ifprovider extension displays information about an NDIS interface provider (IfProvider). "
 keywords: ["ndiskd.ifprovider Windows Debugging"]
 ms.date: 06/15/2020
 topic_type:
@@ -20,7 +20,7 @@ The **!ndiskd.ifprovider** extension displays information about an [NDIS interfa
 !ndiskd.ifprovider [-handle <x>]
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 <span id="_______-handle______"></span><span id="_______-HANDLE______"></span> *-handle*   
 Optional handle of an IfProvider.
@@ -84,3 +84,4 @@ HANDLERS
 [**!ndiskd.help**](-ndiskd-help.md)
 
 [Registering as an Interface Provider](../network/registering-as-an-interface-provider.md)
+

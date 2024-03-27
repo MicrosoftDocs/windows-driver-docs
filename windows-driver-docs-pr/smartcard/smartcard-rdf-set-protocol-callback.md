@@ -1,5 +1,5 @@
 ---
-title: RDF_SET_PROTOCOL callback function
+title: RDF_SET_PROTOCOL Callback Function
 description: RDF_SET_PROTOCOL callback function
 keywords:
 - vendor-supplied drivers RDF callback functions

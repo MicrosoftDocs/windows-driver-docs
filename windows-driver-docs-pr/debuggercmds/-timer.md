@@ -1,6 +1,6 @@
 ---
-title: timer (WinDbg)
-description: The timer extension displays a detailed listing of all system timer use.
+title: "timer (WinDbg)"
+description: "The timer extension displays a detailed listing of all system timer use."
 keywords: ["timer Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -75,6 +75,7 @@ Wakeable timers:
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: wdfkd.wdfumdevstack
-description: The wdfkd.wdfumdevstack extension displays detailed information about a UMDF device stack in the implicit process.
+title: "wdfkd.wdfumdevstack"
+description: "The wdfkd.wdfumdevstack extension displays detailed information about a UMDF device stack in the implicit process."
 keywords: ["wdfkd.wdfumdevstack Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,7 +21,7 @@ The **!wdfkd.wdfumdevstack** extension displays detailed information about a UMD
 !wdfkd.wdfumdevstack DevstackAddress [Flags] 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______DevstackAddress______"></span><span id="_______devstackaddress______"></span><span id="_______DEVSTACKADDRESS______"></span> *DevstackAddress*   
@@ -106,6 +106,7 @@ The preceding output displays the address of a device stack (0x000000a5a3ab5f70)
  
 
  
+
 
 
 

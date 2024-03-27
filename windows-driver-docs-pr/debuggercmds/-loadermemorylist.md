@@ -1,6 +1,6 @@
 ---
-title: loadermemorylist
-description: The loadermemorylist extension displays the memory allocation list that the Windows boot loader passes to Windows.
+title: "loadermemorylist"
+description: "The loadermemorylist extension displays the memory allocation list that the Windows boot loader passes to Windows."
 keywords: ["OSLOADER", "loadermemorylist Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,13 +21,13 @@ The **!loadermemorylist** extension displays the memory allocation list that the
 !loadermemorylist ListHeadAddress
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______ListHeadAddress______"></span><span id="_______listheadaddress______"></span><span id="_______LISTHEADADDRESS______"></span> *ListHeadAddress*   
 Specifies the address of a list header.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -62,6 +62,7 @@ You can stop execution at any point by pressing CTRL+BREAK (in WinDbg) or CTRL+C
  
 
  
+
 
 
 

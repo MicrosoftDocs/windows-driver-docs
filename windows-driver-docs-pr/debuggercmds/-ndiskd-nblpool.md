@@ -1,6 +1,6 @@
 ---
-title: ndiskd.nblpool
-description: The ndiskd.nblpool extension displays information about a NET_BUFFER_LIST (NBL) pool. If you run this extension with no parameters, ndiskd will display a list of all allocated NBL pools in the system.
+title: "ndiskd.nblpool"
+description: "The ndiskd.nblpool extension displays information about a NET_BUFFER_LIST (NBL) pool. If you run this extension with no parameters, ndiskd will display a list of all allocated NBL pools in the system."
 keywords: ["ndiskd.nblpool Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -22,7 +22,7 @@ The **!ndiskd.nblpool** extension displays information about a [**NET\_BUFFER\_L
     [-findctx <str>] [-findctxtype <str>] [-findva <x>] [-findpa <x>]
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______-handle______"></span><span id="_______-HANDLE______"></span> *-handle*   
@@ -52,7 +52,7 @@ Find NBLs that contain an NB that straddles the given virtual address.
 <span id="_______-findpa______"></span><span id="_______-FINDPA______"></span> *-findpa*   
 Find NBLs that contain an NB that straddles the given physical address.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Ndiskd.dll
 
@@ -150,7 +150,7 @@ ALL ALLOCATED NBLs
     to bypass this limit.]
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [Network Driver Design Guide](../network/index.md)
@@ -168,4 +168,5 @@ ALL ALLOCATED NBLs
 [**NET\_BUFFER**](../network/net-buffer-structure.md)
 
  
+
 

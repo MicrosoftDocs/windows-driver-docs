@@ -1,6 +1,6 @@
 ---
-title: vtop (WinDbg)
-description: The vtop extension converts a virtual address to the corresponding physical address, and displays other page table and page directory information.
+title: "vtop (WinDbg)"
+description: "The vtop extension converts a virtual address to the corresponding physical address, and displays other page table and page directory information."
 keywords: ["vtop Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -39,7 +39,7 @@ Causes **!vtop** to use the current [process context](../debugger/changing-conte
 <span id="_______VirtualAddress______"></span><span id="_______virtualaddress______"></span><span id="_______VIRTUALADDRESS______"></span> *VirtualAddress*   
 Specifies the virtual address whose page is desired.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Kdexts.dll
 
@@ -91,6 +91,7 @@ However, it is better to always use the PFN, because some directory base values 
  
 
  
+
 
 
 

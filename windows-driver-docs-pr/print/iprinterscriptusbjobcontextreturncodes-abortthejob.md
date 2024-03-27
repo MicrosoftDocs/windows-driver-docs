@@ -1,5 +1,5 @@
 ---
-title: IPrinterScriptUsbJobContextReturnCodes AbortTheJob method
+title: IPrinterScriptUsbJobContextReturnCodes AbortTheJob Method
 description: Returns a value of '4' to inform USBMon that the print job must be aborted.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

@@ -1,5 +1,5 @@
 ---
-title: Access control entry (ACE)
+title: Access Control Entry (ACE)
 description: ACE
 keywords: ["access control entry WDK file systems", "ACE WDK file systems"]
 ms.date: 03/13/2023

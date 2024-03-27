@@ -1,6 +1,6 @@
 ---
-title: wdfkd.wdfsearchpath
-description: The wdfkd.wdfsearchpath extension sets the search path to formatting files for Kernel-Mode Driver Framework (KMDF) error log records.
+title: "wdfkd.wdfsearchpath"
+description: "The wdfkd.wdfsearchpath extension sets the search path to formatting files for Kernel-Mode Driver Framework (KMDF) error log records."
 keywords: ["wdfkd.wdfsearchpath Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -23,7 +23,7 @@ The **!wdfkd.wdfsearchpath** extension sets the search path to formatting files 
 !wdfkd.wdfsearchpath Path
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Path______"></span><span id="_______path______"></span><span id="_______PATH______"></span> *Path*   
@@ -72,6 +72,7 @@ The TRACE\_FORMAT\_SEARCH\_PATH environment variable also controls the search pa
  
 
  
+
 
 
 

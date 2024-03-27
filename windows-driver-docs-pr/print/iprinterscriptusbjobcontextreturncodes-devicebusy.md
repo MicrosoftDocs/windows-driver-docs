@@ -1,5 +1,5 @@
 ---
-title: IPrinterScriptUsbJobContextReturnCodes DeviceBusy method
+title: IPrinterScriptUsbJobContextReturnCodes DeviceBusy Method
 description: Returns a value of '3' to inform USBMon that the device communication channel isn't accepting data at this time.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

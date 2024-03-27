@@ -1,5 +1,5 @@
 ---
-title: Print driver samples
+title: Print Driver Samples
 description: The driver samples in this directory provide a starting point for writing a custom print driver for your device.
 ms.date: 03/22/2023
 ---

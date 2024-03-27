@@ -1,7 +1,7 @@
 ---
-title: Porting an INF to follow driver package isolation
+title: Porting an INF to Follow Driver Package Isolation
 description: This article provides tips on how to port an INF from old syntax to conform to driver package isolation
-ms.date: 01/05/2024
+ms.date: 03/26/2024
 ---
 
 # Porting an INF to follow driver package isolation
@@ -186,7 +186,11 @@ HKR,,ExampleValue,%REG_DWORD%,0x00000040
 HKR,CustomSubkey,ExampleValue,%REG_DWORD%,0x00000040
 ```
 
-To be driver package isolation compliant, an AddReg directive supplying service registry keys and values can only modify keys and values under the service's Parameters subkey.  The settings need to be moved under the service's Parameters subkey and the Parameters subkey can be accessed at runtime with [IoOpenDriverRegistryKey](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioopendriverregistrykey) using a RegKeyType of DriverRegKeyParameters. IoOpenDriverRegistryKey is supported on Windows 10 1803 and later versions of Windows.
+To be driver package isolation compliant, an AddReg directive supplying service registry keys and values can only modify keys and values under the service's Parameters subkey.  
+
+If your INF is modifying intrinsic service state such as the Load Order Group, service triggers, etc, then you need to use the built in INF directives for specifying that state as described at [AddService directive](../install/inf-addservice-directive.md).
+
+If your INF is creating or modifying other state under the root of the service, the settings need to be moved under the service's Parameters subkey and the Parameters subkey can be accessed at runtime with [IoOpenDriverRegistryKey](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioopendriverregistrykey) using a RegKeyType of DriverRegKeyParameters. IoOpenDriverRegistryKey is supported on Windows 10 1803 and later versions of Windows.
 
 ## Using HKCR AddReg to register an APO
 

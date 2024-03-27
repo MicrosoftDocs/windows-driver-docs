@@ -1,6 +1,6 @@
 ---
-title: ube (WinDbg)
-description: The ube extension re-enables a user-space breakpoint.
+title: "ube (WinDbg)"
+description: "The ube extension re-enables a user-space breakpoint."
 keywords: ["ube Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -37,7 +37,7 @@ Kdexts.dll
 
 This is used to re-enable a breakpoint that was disabled by [**!ubd**](-ubd.md).
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**!ubc**](-ubc.md)
@@ -53,6 +53,7 @@ This is used to re-enable a breakpoint that was disabled by [**!ubd**](-ubd.md).
  
 
  
+
 
 
 

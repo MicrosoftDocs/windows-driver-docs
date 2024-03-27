@@ -1,5 +1,5 @@
 ---
-title: MSiSCSI\_MMIPSECStats WMI Class
+title: MSiSCSI_MMIPSECStats WMI Class
 description: MSiSCSI\_MMIPSECStats WMI Class
 ms.date: 10/17/2018
 ---

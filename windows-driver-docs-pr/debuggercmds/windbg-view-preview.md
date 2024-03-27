@@ -1,6 +1,7 @@
 ---
-title: WinDbg - View Menu 
-description: This section describes how work with the view menu.
+title: "WinDbg - View Menu "
+description: "This section describes how work with the view menu."
+keywords: ["View Menu", "WinDbg", "Menu", "Windows Debugging"]
 ms.date: 07/02/2020
 ---
 
@@ -98,3 +99,4 @@ Use the pull down menu to set the accent color for the debugger.
 ## See Also
 
 [WinDbg Features](../debugger/debugging-using-windbg-preview.md)
+

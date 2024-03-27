@@ -1,6 +1,6 @@
 ---
-title: diskspace (WinDbg)
-description: The diskspace extension displays the amount of free space on a hard disk of the target computer.
+title: "diskspace (WinDbg)"
+description: "The diskspace extension displays the amount of free space on a hard disk of the target computer."
 keywords: ["diskspace Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -27,7 +27,7 @@ The **!diskspace** extension displays the amount of free space on a hard disk of
 <span id="_______Drive______"></span><span id="_______drive______"></span><span id="_______DRIVE______"></span> *Drive*   
 Specifies the drive letter of the disk. The colon (:) after *Drive* is optional.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -69,6 +69,7 @@ f: is a CDROM drive. This function is not supported!
  
 
  
+
 
 
 

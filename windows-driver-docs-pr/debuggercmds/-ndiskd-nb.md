@@ -1,6 +1,6 @@
 ---
-title: ndiskd.nb (WinDbg)
-description: The ndiskd.nb extension displays information about a NET_BUFFER (NB) structure.
+title: "ndiskd.nb (WinDbg)"
+description: "The ndiskd.nb extension displays information about a NET_BUFFER (NB) structure."
 keywords: ["ndiskd.nb Windows Debugging"]
 ms.date: 06/15/2020
 topic_type:
@@ -20,7 +20,7 @@ The **!ndiskd.nb** extension displays information about a [**NET\_BUFFER**](../n
 !ndiskd.nb [-handle <x>] [-verbosity <x>] [-basic] [-chain] [-data]
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 <span id="_______-handle______"></span><span id="_______-HANDLE______"></span> *-handle*   
 Required. Address of a **NET\_BUFFER** structure.
@@ -92,3 +92,4 @@ Use the **!ndiskd.nb -chain** command to see this **NET\_BUFFER**'s MDL chain in
 [**NET\_BUFFER\_LIST**](../network/net-buffer-list-structure.md)
 
 [**!ndiskd.nbl**](-ndiskd-nbl.md)
+

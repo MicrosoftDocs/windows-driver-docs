@@ -1,6 +1,6 @@
 ---
-title: wudfext.umdevstacks
-description: The wudfext.umdevstacks extension displays information about all device stacks in the current host process.
+title: "wudfext.umdevstacks"
+description: "The wudfext.umdevstacks extension displays information about all device stacks in the current host process."
 keywords: ["wudfext.umdevstacks Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,7 +21,7 @@ The **!wudfext.umdevstacks** extension displays information about all device sta
 !wudfext.umdevstacks [Flags] 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Flags______"></span><span id="_______flags______"></span><span id="_______FLAGS______"></span> *Flags*   
@@ -33,7 +33,7 @@ Displays detailed information about each device stack.
 <span id="Bit_8__0x80_"></span><span id="bit_8__0x80_"></span><span id="BIT_8__0X80_"></span>Bit 8 (0x80)  
 Displays information about the internal framework.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Wudfext.dll
 
@@ -73,6 +73,7 @@ For more information, see [User-Mode Driver Framework Debugging](../debugger/use
  
 
  
+
 
 
 

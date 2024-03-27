@@ -1,5 +1,5 @@
 ---
-title: V4 driver setup concepts
+title: V4 Driver Setup Concepts
 description: The v4 print driver model uses a new setup model to improve the user experience and reduce support costs.
 ms.date: 01/25/2023
 ---

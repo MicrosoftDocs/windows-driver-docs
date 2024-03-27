@@ -1,5 +1,5 @@
 ---
-title: INF RegisterDlls directive
+title: INF RegisterDlls Directive
 description: A RegisterDlls directive references one or more INF sections used to specify files that are OLE controls and require self-registration.
 keywords:
 - INF RegisterDlls Directive Device and Driver Installation

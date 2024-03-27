@@ -1,6 +1,6 @@
 ---
-title: sysptes (WinDbg)
-description: The sysptes extension displays a formatted view of the system page table entries (PTEs).
+title: "sysptes (WinDbg)"
+description: "The sysptes extension displays a formatted view of the system page table entries (PTEs)."
 keywords: ["sysptes Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -85,6 +85,7 @@ System PTE Information
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: errpkt (WinDbg)
-description: The errpkt extension displays the contents of a Windows Hardware Error Architecture (WHEA) hardware error packet.
+title: "errpkt (WinDbg)"
+description: "The errpkt extension displays the contents of a Windows Hardware Error Architecture (WHEA) hardware error packet."
 keywords: ["errpkt Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -27,7 +27,7 @@ The **!errpkt** extension displays the contents of a Windows Hardware Error Arch
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the address of the hardware error packet.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -95,4 +95,5 @@ Bank Number      : 0
 ```
 
  
+
 

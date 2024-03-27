@@ -1,5 +1,5 @@
 ---
-title: ImagesToTransfer element
+title: ImagesToTransfer Element
 description: The optional ImagesToTransfer element specifies the number of images to scan for the current job.
 keywords: ["ImagesToTransfer element Imaging Devices"]
 topic_type:

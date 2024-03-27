@@ -1,6 +1,6 @@
 ---
-title: for_each_local
-description: The for_each_local extension executes a debugger command one time for each local variable in the current frame.
+title: "for_each_local"
+description: "The for_each_local extension executes a debugger command one time for each local variable in the current frame."
 keywords: ["for_each_local Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -35,7 +35,7 @@ This alias is available only during the lifetime of the call to **!for\_each\_lo
 <span id="_______-_______"></span> **-?**   
 Displays some Help text for this extension in the [Debugger Command window](../debugger/debugger-command-window.md).
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -69,6 +69,7 @@ If you enable verbose debugger output, the display includes the total number of 
  
 
  
+
 
 
 

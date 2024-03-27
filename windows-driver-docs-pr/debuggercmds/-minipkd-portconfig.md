@@ -1,6 +1,6 @@
 ---
-title: minipkd.portconfig
-description: The minipkd.portconfig extension displays information about the specified PORT_CONFIGURATION_INFORMATION data structure.
+title: "minipkd.portconfig"
+description: "The minipkd.portconfig extension displays information about the specified PORT_CONFIGURATION_INFORMATION data structure."
 keywords: ["minipkd.portconfig Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,13 +21,13 @@ The **!minipkd.portconfig** extension displays information about the specified P
 !minipkd.portconfig PortConfig 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______PortConfig______"></span><span id="_______portconfig______"></span><span id="_______PORTCONFIG______"></span> *PortConfig*   
 Specifies the address of a PORT\_CONFIGURATION\_INFORMATION data structure.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -59,6 +59,7 @@ The *PortConfig* address can be found in the **Port Config Info** field of the [
  
 
  
+
 
 
 

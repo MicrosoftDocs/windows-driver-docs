@@ -1,6 +1,6 @@
 ---
-title: homedir (WinDbg)
-description: The homedir extension sets the default directory used by the symbol server and the source server.
+title: "homedir (WinDbg)"
+description: "The homedir extension sets the default directory used by the symbol server and the source server."
 keywords: ["homedir Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -22,13 +22,13 @@ The **!homedir** extension sets the default directory used by the symbol server 
 !homedir
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Directory______"></span><span id="_______directory______"></span><span id="_______DIRECTORY______"></span> *Directory*   
 Specifies the new directory to use as the home directory.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -60,6 +60,7 @@ When WinDbg is started, the home directory is the directory where Debugging Tool
  
 
  
+
 
 
 

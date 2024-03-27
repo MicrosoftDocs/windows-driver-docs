@@ -35,6 +35,12 @@
       href: what-s-new-for-windows-8-display-drivers.md
     - name: "What's new for Windows 7 display drivers (WDDM 1.1)"
       href: what-s-new-for-windows-7-display-drivers--wddm-1-1-.md
+  - name: "WDDM 3.2 features"
+    items:
+    - name: "Querying feature support and enablement"
+      href: querying-wddm-feature-support-and-enablement.md
+    - name: "Native GPU fence objects"
+      href: native-gpu-fence-objects.md
   - name: "WDDM 3.1 features"
     items:
     - name: "Sharing the backing store with KMD"
@@ -268,6 +274,8 @@
       href: seamless-state-transitions-in-wddm-1-2-and-later.md
     - name: "Standby hibernate optimizations"
       href: standby-hibernate-optimizations.md
+    - name: "DriverEntry of Display Miniport Driver"
+      href: driverentry-of-display-miniport-driver.md
     - name: "Initializing the Display Miniport Driver"
       href: initializing-the-display-miniport-driver.md
     - name: "Initializing Communication with the Direct3D User-Mode Display Driver"
@@ -1337,7 +1345,7 @@
         href: dxgiddi-h---reserved.md
       - name: "DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_CAPS"
         href: dxgi-ddi-multiplane-overlay-stereo-caps.md
-- name: "Legacy: Windows 2000 Display Driver Model (WDDM) design guide"
+- name: "Legacy: Windows 2000 Display Driver Model (XDDM) design guide"
 # Auto-expanded node
   items: 
   - name: "XDDM overview"
@@ -2836,8 +2844,6 @@
           href: copp-video-miniport-driver-close-template-code.md
       - name: "DriverEntry of Video Miniport Driver"
         href: driverentry-of-video-miniport-driver.md
-      - name: "DriverEntry of Display Miniport Driver"
-        href: driverentry-of-display-miniport-driver.md
     - name: "DirectX VA Data Flow Management"
 # Auto-expanded node
       items: 

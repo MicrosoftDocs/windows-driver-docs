@@ -1,6 +1,6 @@
 ---
-title: rpcexts.getendpointinfo
-description: The rpcexts.getendpointinfo extension searches the system's RPC state information for endpoint information.
+title: "rpcexts.getendpointinfo"
+description: "The rpcexts.getendpointinfo extension searches the system's RPC state information for endpoint information."
 keywords: ["rpcexts.getendpointinfo Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -31,7 +31,7 @@ Specifies the number of the endpoint to be displayed. If omitted, the endpoints 
 <span id="_______-_______"></span> **-?**   
 Displays some brief Help text for this extension in the Command Prompt window.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -110,6 +110,7 @@ For a similar example using the DbgRpc tool, see [Get RPC Endpoint Information](
  
 
  
+
 
 
 

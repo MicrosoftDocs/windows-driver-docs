@@ -1,6 +1,6 @@
 ---
-title: runaway (WinDbg)
-description: The runaway extension displays information about the time consumed by each thread.
+title: "runaway (WinDbg)"
+description: "The runaway extension displays information about the time consumed by each thread."
 keywords: ["runaway Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -36,7 +36,7 @@ Causes the debugger to show the amount of kernel time consumed by each thread.
 <span id="Bit_2__0x4_"></span><span id="bit_2__0x4_"></span><span id="BIT_2__0X4_"></span>Bit 2 (0x4)  
 Causes the debugger to show the amount of time that has elapsed since each thread was created.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -97,6 +97,7 @@ Here is an example:
  
 
  
+
 
 
 

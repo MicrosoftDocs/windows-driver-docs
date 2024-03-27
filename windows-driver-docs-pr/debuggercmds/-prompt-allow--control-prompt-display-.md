@@ -1,6 +1,6 @@
 ---
-title: .prompt_allow (Control Prompt Display)
-description: The .prompt_allow command controls what information is displayed during stepping and tracing and whenever the target's execution stops.
+title: ".prompt_allow (Control Prompt Display)"
+description: "The .prompt_allow command controls what information is displayed during stepping and tracing and whenever the target's execution stops."
 keywords: [".prompt_allow (Control Prompt Display) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -22,7 +22,7 @@ The **.prompt\_allow** command controls what information is displayed during ste
 .prompt_allow 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="______________"></span> **+**   
@@ -90,6 +90,7 @@ Do not allow the following information to be displayed at the prompt:
  
 
  
+
 
 
 

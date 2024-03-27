@@ -1,6 +1,6 @@
 ---
-title: btb (WinDbg)
-description: The btb extension displays the Itanium-based processor, branch traces buffer (BTB) configuration and trace registers for the current processor.
+title: "btb (WinDbg)"
+description: "The btb extension displays the Itanium-based processor, branch traces buffer (BTB) configuration and trace registers for the current processor."
 keywords: ["branch tree buffer", "btb Windows Debugging"]
 ms.date: 12/17/2019
 topic_type:
@@ -25,9 +25,10 @@ The **!btb** extension displays the Itanium-based processor, branch traces buffe
 
  
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <p><strong>Windows XP and later</strong></p>
 <p>Kdexts.dll</p></td>
 
 This extension command can only be used with an Itanium-based target computer.
+

@@ -1,5 +1,5 @@
 ---
-title: RDF_ATR_PARSE callback function
+title: RDF_ATR_PARSE Callback Function
 description: RDF_ATR_PARSE callback function
 keywords:
 - vendor-supplied drivers RDF callback functions

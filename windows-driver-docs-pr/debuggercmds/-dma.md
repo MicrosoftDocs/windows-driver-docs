@@ -1,6 +1,6 @@
 ---
-title: dma (WinDbg)
-description: The dma extension displays information about the Direct Memory Access (DMA) subsystem, and the DMA Verifier option of Driver Verifier.
+title: "dma (WinDbg)"
+description: "The dma extension displays information about the Direct Memory Access (DMA) subsystem, and the DMA Verifier option of Driver Verifier."
 keywords: ["DMA Verification (Driver Verifier)", "dma Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -49,24 +49,9 @@ Causes the display to include the device description for the hardware device. (O
 <span id="Bit_5__0x20_"></span><span id="bit_5__0x20_"></span><span id="BIT_5__0X20_"></span>Bit 5 (0x20)  
 Causes the display to include Wait context block information.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Unavailable</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Kdexts.dll</p></td>
-</tr>
-</tbody>
-</table>
+Windows XP and later - Kdexts.dll
 
  
 
@@ -178,6 +163,7 @@ This is fairly straightforward; there are four common buffers of varying lengths
  
 
  
+
 
 
 

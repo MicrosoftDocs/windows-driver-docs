@@ -1,6 +1,6 @@
 ---
-title: ruleinfo (WinDbg)
-description: The ruleinfo command displays information about a Driver Verifier rule.
+title: "ruleinfo (WinDbg)"
+description: "The ruleinfo command displays information about a Driver Verifier rule."
 keywords: ["ruleinfo Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -33,7 +33,7 @@ Additional state information about the violation. This is the third argument of 
 <span id="_______SubState______"></span><span id="_______substate______"></span><span id="_______SUBSTATE______"></span> *SubState*   
 Sub-state information about the violation. This is the fourth argument of the **DRIVER\_VERIFIER\_DETECTED\_VIOLATION** bug check.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 ext.dll
 
@@ -85,7 +85,7 @@ RULE_ID: 0x91001
 
 RULE_NAME: NdisOidComplete
 
-RULE_DESCRIPTION:
+RULE_DESCRIPTION: ""
 This rule verifies if an NDIS miniport driver completes an OID correctly.
 Check RULE_STATE for Oid ( use !ndiskd.oid ), which can be one of the following:
 1) NULL,
@@ -104,3 +104,4 @@ RULE_STATE: 0xFFFFE000027B83F8
  
 
  
+

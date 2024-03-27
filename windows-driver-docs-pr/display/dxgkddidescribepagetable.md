@@ -1,5 +1,5 @@
 ---
-title: DXGKDDI\_DESCRIBEPAGETABLE callback function
+title: DXGKDDI_DESCRIBEPAGETABLE Callback Function
 description: The DxgkDdiDescribePageTable function is reserved for system use. Do not implement it in your driver.
 keywords: ["DxgkDdiDescribePageTable callback function Display Devices", "DXGKDDI_DESCRIBEPAGETABLE"]
 topic_type:

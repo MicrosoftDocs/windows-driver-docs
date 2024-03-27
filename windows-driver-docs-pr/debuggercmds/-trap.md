@@ -1,6 +1,6 @@
 ---
-title: trap (WinDbg)
-description: trap
+title: "trap (WinDbg)"
+description: "trap"
 keywords: ["trap extension (obsolete)"]
 ms.date: 05/23/2017
 ---
@@ -16,6 +16,7 @@ The **!trap** extension command is obsolete. Use the [**.trap (Display Trap Fram
  
 
  
+
 
 
 

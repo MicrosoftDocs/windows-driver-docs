@@ -1,6 +1,6 @@
 ---
-title: memusage (WinDbg)
-description: The memusage extension displays summary statistics about physical memory use.
+title: "memusage (WinDbg)"
+description: "The memusage extension displays summary statistics about physical memory use."
 keywords: ["memusage Windows Debugging"]
 ms.date: 12/11/2023
 topic_type:
@@ -42,7 +42,7 @@ Displays only general summary information about memory use.
 
 **Modes**: kernel mode only
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Kdexts.dll
 
@@ -110,3 +110,4 @@ You can use the [**!vm**](-vm.md) extension command to analyze virtual memory us
 The [**!pfn**](-pfn.md) extension command can be used to display a particular page frame entry in the PFN database.
 
 The [**!pool**](-pool.md) extension displays information about a specific pool allocation or about the entire system-wide pool.
+

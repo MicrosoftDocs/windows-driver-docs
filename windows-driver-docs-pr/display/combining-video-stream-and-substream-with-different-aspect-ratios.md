@@ -8,7 +8,6 @@ keywords:
 - aspect ratios WDK DirectX VA
 - streams combined WDK DirectX VA
 ms.date: 12/06/2018
-ms.custom: seodec18
 ---
 
 # Combining Video Stream and Substream with Different Aspect Ratios

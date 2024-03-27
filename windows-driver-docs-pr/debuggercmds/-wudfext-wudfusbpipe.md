@@ -1,6 +1,6 @@
 ---
-title: wudfext.wudfusbpipe
-description: The wudfext.wudfusbpipe extension displays information about a USB pipe object.
+title: "wudfext.wudfusbpipe"
+description: "The wudfext.wudfusbpipe extension displays information about a USB pipe object."
 keywords: ["wudfext.wudfusbpipe Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,7 +21,7 @@ The **!wudfext.wudfusbpipe** extension displays information about a USB pipe obj
 !wudfext.wudfusbpipe pWDFUSBPipe TypeName
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______pWDFUSBPipe______"></span><span id="_______pwdfusbpipe______"></span><span id="_______PWDFUSBPIPE______"></span> *pWDFUSBPipe*   
@@ -30,7 +30,7 @@ Specifies the address of the **IWDFUsbTargetPipe** interface to display informat
 <span id="_______TypeName______"></span><span id="_______typename______"></span><span id="_______TYPENAME______"></span> *TypeName*   
 Optional. Specifies the type of the interface (for example, **IWDFDevice**). If a value for *TypeName* is supplied, the extension uses the value as the type of the interface. If an asterisk (\*) is supplied as *TypeName*, or if *TypeName* is omitted, the extension attempts to automatically determine the type of the supplied interface.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -58,6 +58,7 @@ For more information, see [User-Mode Driver Framework Debugging](../debugger/use
  
 
  
+
 
 
 

@@ -1,6 +1,7 @@
 ---
-title: GPIO Extensions
-description: The General Purpose Input/Output (GPIO) extension commands display the software state of GPIO controllers.
+title: "GPIO Extensions"
+description: "The General Purpose Input/Output (GPIO) extension commands display the software state of GPIO controllers."
+keywords: ["General Purpose Input/Output (GPIO) extension", "extensions", "WinDbg", "Windows Debugging"]
 ms.date: 11/28/2017
 ---
 
@@ -86,4 +87,5 @@ To start debugging a GPIO issue, enter the [**!gpiokd.clientlist**](-gpiokd-clie
 [Specialized Extension Commands](specialized-extensions.md)
 
  
+
 

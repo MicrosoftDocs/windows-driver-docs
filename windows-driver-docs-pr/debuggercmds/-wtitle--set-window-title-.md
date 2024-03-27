@@ -1,6 +1,6 @@
 ---
-title: .wtitle (Set Window Title)
-description: The .wtitle command sets the title in the main WinDbg window or in the NTSD, CDB, or KD window.
+title: ".wtitle (Set Window Title)"
+description: "The .wtitle command sets the title in the main WinDbg window or in the NTSD, CDB, or KD window."
 keywords: [".wtitle (Set Window Title) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -52,6 +52,7 @@ The WinDbg version number is always displayed in the window title bar, regardles
  
 
  
+
 
 
 

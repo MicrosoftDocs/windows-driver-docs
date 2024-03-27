@@ -1,6 +1,6 @@
 ---
-title: ks.automation
-description: The ks.automation extension displays any automation items associated with the given object.
+title: "ks.automation"
+description: "The ks.automation extension displays any automation items associated with the given object."
 keywords: ["ks.automation Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,13 +21,13 @@ The **!ks.automation** extension displays any automation items associated with t
 !ks.automation Object
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Object______"></span><span id="_______object______"></span><span id="_______OBJECT______"></span> *Object*   
 Specifies a pointer to the object for which to display automation items. (Automation items are properties, methods, and events.) *Object* must be one of the following types: PKSPIN, PKSFILTER, CKsPin\*, CKsFilter\*, PIRP. If *Object* is a pointer to an automation IRP, the command returns property information and handlers.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -160,6 +160,7 @@ Filter 829493c4 has the following automation items:
  
 
  
+
 
 
 

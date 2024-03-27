@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StorageEnclosure class
+title: MSFT_StorageEnclosure Class
 description: Represents a storage enclosure.
 ms.assetid: 617DA7A7-E594-42C0-AD69-F95E55BC0D4B
 keywords:

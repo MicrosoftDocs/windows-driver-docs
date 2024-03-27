@@ -1,6 +1,6 @@
 ---
-title: wmitrace.logsave
-description: The wmitrace.logsave extension writes the current contents of the trace buffers for a trace session to a file.
+title: "wmitrace.logsave"
+description: "The wmitrace.logsave extension writes the current contents of the trace buffers for a trace session to a file."
 keywords: ["wmitrace.logsave Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -33,7 +33,7 @@ Specifies the trace session. *LoggerName* is the text name that was specified wh
 <span id="_______Filename______"></span><span id="_______filename______"></span><span id="_______FILENAME______"></span> *Filename*   
 Specifies a path (optional) and file name for the output file.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 This extension is exported by Wmitrace.dll.
 
@@ -58,6 +58,7 @@ To find the logger ID of a trace session, use the [**!wmitrace.strdump**](-wmitr
  
 
  
+
 
 
 

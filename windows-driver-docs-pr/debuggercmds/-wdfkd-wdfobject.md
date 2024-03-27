@@ -1,6 +1,6 @@
 ---
-title: wdfkd.wdfobject
-description: The wdfkd.wdfobject extension displays information about a specified framework object.
+title: "wdfkd.wdfobject"
+description: "The wdfkd.wdfobject extension displays information about a specified framework object."
 keywords: ["wdfkd.wdfobject Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,13 +21,13 @@ The **!wdfkd.wdfobject** extension displays information about a specified framew
 !wdfkd.wdfobject FrameworkObject
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______FrameworkObject______"></span><span id="_______frameworkobject______"></span><span id="_______FRAMEWORKOBJECT______"></span> *FrameworkObject*   
 A pointer to a framework object.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Wdfkd.dll
 
@@ -67,6 +67,7 @@ Object debug extension 83584e20
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: usb3kd.hub_info
-description: The usb3kd.device_info command displays information about a hub in the USB 3.0 tree.
+title: "usb3kd.hub_info"
+description: "The usb3kd.device_info command displays information about a hub in the USB 3.0 tree."
 keywords: ["usb3kd.hub_info Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -89,7 +89,7 @@ Hub Event History:
     ...
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [USB 3.0 Extensions](usb-3-extensions.md)
@@ -99,4 +99,5 @@ Hub Event History:
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
+
 

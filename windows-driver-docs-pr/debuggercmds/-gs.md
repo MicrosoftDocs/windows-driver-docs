@@ -1,6 +1,6 @@
 ---
-title: gs (WinDbg)
-description: The gs extension analyzes a /GS stack overflow.
+title: "gs (WinDbg)"
+description: "The gs extension analyzes a /GS stack overflow."
 keywords: ["gs Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,7 +21,7 @@ The **!gs** extension analyzes a /GS stack overflow.
 !gs
 ```
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -87,6 +87,7 @@ Candidate buffer : ps 0013e268 to 0013e2a7
  
 
  
+
 
 
 

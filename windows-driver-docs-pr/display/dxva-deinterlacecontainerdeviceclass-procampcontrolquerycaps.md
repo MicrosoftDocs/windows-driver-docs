@@ -1,5 +1,5 @@
 ---
-title: ProcAmpControlQueryCaps method
+title: ProcAmpControlQueryCaps Method
 description: The sample DXVA\_DeinterlaceContainerDeviceClass::ProcAmpControlQueryCaps function allows the VMR to query the driver to determine input requirements of the ProcAmp control device and additional video processing operations that might be supported.
 keywords: ["ProcAmpControlQueryCaps method Display Devices", "ProcAmpControlQueryCaps method Display Devices , DXVA_DeinterlaceContainerDeviceClass interface", "DXVA_DeinterlaceContainerDeviceClass interface Display Devices , ProcAmpControlQueryCaps method"]
 topic_type:
@@ -12,7 +12,6 @@ api_location:
 api_type:
 - COM
 ms.date: 12/06/2018
-ms.custom: seodec18
 ---
 
 # DXVA\_DeinterlaceContainerDeviceClass::ProcAmpControlQueryCaps method
@@ -143,4 +142,3 @@ DXVA_DeinterlaceContainerDeviceClass::ProcAmpControlQueryCaps(
 [**DD\_MOTIONCOMPCALLBACKS**](/windows/win32/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks)
 
 [**DD\_RENDERMOCOMPDATA**](/windows/win32/api/ddrawint/ns-ddrawint-dd_rendermocompdata)
-

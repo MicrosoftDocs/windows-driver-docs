@@ -1,5 +1,5 @@
 ---
-title: Windows ACPI design guide for SoC platforms
+title: Windows ACPI Design Guide for SoC Platforms
 description: ACPI 5.0 defines new features to support low-power, mobile devices based on SoC ICs that implement the connected standby power model.
 ms.date: 03/23/2023
 ---

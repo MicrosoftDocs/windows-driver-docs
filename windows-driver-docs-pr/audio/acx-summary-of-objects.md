@@ -1,5 +1,5 @@
 ---
-title: Summary of ACX objects
+title: Summary of ACX Objects
 description: This topic provides a high level summary of ACX objects that form the base of an ACX audio driver.
 ms.date: 09/29/2023
 ms.localizationpriority: medium
@@ -76,7 +76,7 @@ The following diagram illustrates an ACX circuit. The host and offload pins are 
 
 :::image type="content" source="images/audio-acx-elements-1.png" alt-text="Diagram illustrating an ACX circuit with host, offload, and loopback pins on the left, and a bridge pin on the right, routed through an audio engine node.":::
 
-Note that driver doesn't need to perform the step of explicitly connecting when circuit/elements are connected in the  same order as they were added to the circuit. 
+Note that driver doesn't need to perform the step of explicitly connecting when circuit/elements are connected in the  same order as they were added to the circuit.
 
 By default ACX connects the elements starting from the circuit's ACX request sink pin and ending with the circuit's device bridge pin for both render and capture devices.
 
@@ -129,7 +129,7 @@ The following table lists all of the ACX objects and provides some basic informa
 
 The following ACX objects are used to store circuit, stream and circuit factory information.
 
-| Handle                 | Purpose                                                    | 
+| Handle                 | Purpose                                                    |
 |------------------------|------------------------------------------------------------|
 | ACXCIRCUIT_INIT        | Stores ACX circuit initialization data                     |
 | ACXSTREAM_INIT         | Stores ACX stream initialization data                      |  

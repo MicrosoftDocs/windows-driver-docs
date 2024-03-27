@@ -1,5 +1,5 @@
 ---
-title: SRB\_SET\_DATA\_FORMAT
+title: SRB_SET_DATA_FORMAT
 description: SRB\_SET\_DATA\_FORMAT
 keywords: ["SRB_SET_DATA_FORMAT Streaming Media Devices"]
 topic_type:

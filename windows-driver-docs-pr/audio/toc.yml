@@ -23,12 +23,18 @@
     href: acx-irps.md
   - name: "ACX device enumeration"
     href: acx-device-enumeration.md
+  - name: "ACX WDF driver lifetime management"
+    href: acx-wdf-driver-lifetime-management.md    
   - name: "ACX power management"
     href: acx-power-management.md
+  - name: "ACX circuits"
+    href: acx-circuits.md    
   - name: "ACX multi circuit composition"
     href: acx-multi-circuit-composition.md
   - name: "ACX multi stack cross driver communications"
     href: acx-multi-stack.md
+  - name: "ACX audio data formats"
+    href: acx-data-formats.md       
   - name: "ACX logging and debugging"
     href: acx-logging-and-debugging.md
 - name: "WDM Audio Drivers Overview"
@@ -932,6 +938,8 @@
       href: kspropsetid-audioengine.md
     - name: "KSPROPSETID_AudioGfx"
       href: kspropsetid-audiogfx.md
+    - name: "KSPROPSETID_AudioLoopback"
+      href: kspropsetid-audioloopback.md      
     - name: "KSPROPSETID_AudioModule"
 # Auto-expanded node
       items: 
@@ -964,7 +972,7 @@
       href: kspropsetid-fmrxtopology.md
     - name: "KSPROPSETID_Hrtf3d"
       href: kspropsetid-hrtf3d.md
-    - name: "KSPROPSETID_INTERLEAVEDAUDIO_FORMATINFORMATION"
+    - name: "KSPROPSETID_InterleavedAudio"
       href: kspropsetid-interleavedaudio.md
     - name: "KSPROPSETID_Itd3d"
       href: kspropsetid-itd3d.md
@@ -1210,6 +1218,8 @@
       href: pkey-compositefx-offload-streameffectclsid.md
     - name: "PKEY_CompositeFX_StreamEffectClsid"
       href: pkey-compositefx-streameffectclsid.md
+    - name: "PKEY_Devices_AudioDevice_Microphone_EqCoefficientsDb"
+      href: pkey-devices-audiodevice-microphone-eqcoefficientsdb.md
     - name: "PKEY_Devices_AudioDevice_Microphone_IsFarField"
       href: pkey-devices-audiodevice-microphone-isfarfield.md
     - name: "PKEY_FX_KeywordDetector_StreamEffectClsid"
@@ -1458,6 +1468,8 @@
       href: ksproperty-audiogfx-capturetargetdeviceid.md
     - name: "KSPROPERTY_AUDIOGFX_RENDERTARGETDEVICEID"
       href: ksproperty-audiogfx-rendertargetdeviceid.md
+    - name: "KSPROPERTY_AUDIOLOOPBACK"
+      href: ksproperty-audioloopback.md
     - name: "KSPROPERTY_AUDIOMODULE"
       href: ksproperty-audiomodule.md
     - name: "KSPROPERTY_AUDIOSIGNALPROCESSING"

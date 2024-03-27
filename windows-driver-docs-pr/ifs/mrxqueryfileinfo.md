@@ -1,5 +1,5 @@
 ---
-title: MRxQueryFileInfo routine
+title: MRxQueryFileInfo Routine
 description: TheMRxQueryFileInfo routine is called by RDBSS to request that a network mini-redirector query file information on a file system object.
 keywords: ["MRxQueryFileInfo routine Installable File System Drivers", "PMRX_CALLDOWN"]
 topic_type:

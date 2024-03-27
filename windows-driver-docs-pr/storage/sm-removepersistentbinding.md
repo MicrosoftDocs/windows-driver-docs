@@ -1,5 +1,5 @@
 ---
-title: SM\_RemovePersistentBinding function
+title: SM_RemovePersistentBinding Function
 description: The SM\_RemovePersistentBinding method removes one or more persistent bindings to the specified SCSI IDs for the specified adapter port.
 keywords: ["SM_RemovePersistentBinding function Storage Devices"]
 topic_type:

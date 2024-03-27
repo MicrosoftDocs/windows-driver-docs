@@ -1,6 +1,6 @@
 ---
-title: .extmatch (Display All Matching Extensions)
-description: The .extmatch command displays extension commands exported by the currently loaded extension DLLs that match the specified pattern.
+title: ".extmatch (Display All Matching Extensions)"
+description: "The .extmatch command displays extension commands exported by the currently loaded extension DLLs that match the specified pattern."
 keywords: [".extmatch (Display All Matching Extensions) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,7 +21,7 @@ The **.extmatch** command displays extension commands exported by the currently 
 .extmatch [Options] Pattern 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 *Options*
@@ -80,6 +80,7 @@ The following example lists all extension commands, so we can see which ones sup
  
 
  
+
 
 
 

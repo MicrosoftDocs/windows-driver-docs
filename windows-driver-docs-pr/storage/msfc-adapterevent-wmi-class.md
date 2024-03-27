@@ -1,5 +1,5 @@
 ---
-title: MSFC\_AdapterEvent WMI Class
+title: MSFC_AdapterEvent WMI Class
 description: MSFC\_AdapterEvent WMI Class
 ms.date: 10/17/2018
 ---

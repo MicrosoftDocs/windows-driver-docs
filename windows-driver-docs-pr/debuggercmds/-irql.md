@@ -1,6 +1,6 @@
 ---
-title: irql extension command
-description: The irql extension displays the interrupt request level (IRQL) of a processor on the target computer before the debugger break.
+title: "irql extension command"
+description: "The irql extension displays the interrupt request level (IRQL) of a processor on the target computer before the debugger break."
 keywords: ["IRQL", "Interrupt Request Level", "irql Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -27,7 +27,7 @@ The **!irql** extension displays the interrupt request level (IRQL) of a process
 <span id="_______Processor______"></span><span id="_______processor______"></span><span id="_______PROCESSOR______"></span> *Processor*   
 Specifies the processor. Enter the processor number. If this parameter is omitted, the debugger displays the IRQL of the current processor.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 The **!irql** extension is only available in Windows Server 2003 and later versions of Windows.
 
@@ -90,4 +90,5 @@ Debugger saved IRQL for processor 0x0 -- 12 (SYNCH_LEVEL) [Synchronization level
 ```
 
  
+
 

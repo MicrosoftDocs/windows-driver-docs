@@ -1,6 +1,6 @@
 ---
-title: ndiskd.nbl
-description: The ndiskd.nbl extension displays information about a NET_BUFFER_LIST (NBL) structure.
+title: "ndiskd.nbl"
+description: "The ndiskd.nbl extension displays information about a NET_BUFFER_LIST (NBL) structure."
 keywords: ["ndiskd.nbl Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -23,7 +23,7 @@ The **!ndiskd.nbl** extension displays information about a [**NET\_BUFFER\_LIST*
     [-stacks] [-NblCurrentOwner]
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______-handle______"></span><span id="_______-HANDLE______"></span> *-handle*   
@@ -62,7 +62,7 @@ Includes callstacks with NBL log (use with -log).
 <span id="_______-NblCurrentOwner______"></span><span id="_______-nblcurrentowner______"></span><span id="_______-NBLCURRENTOWNER______"></span> *-NblCurrentOwner*   
 Shows the current owner of the NBL.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Ndiskd.dll
 
@@ -91,7 +91,7 @@ By clicking on the "Dump data payload" link from the previous example or by ente
 NET_BUFFER ffffdf8014952610
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [Network Driver Design Guide](../network/index.md)
@@ -113,4 +113,5 @@ NET_BUFFER ffffdf8014952610
 [**!ndiskd.nb**](-ndiskd-nb.md)
 
  
+
 

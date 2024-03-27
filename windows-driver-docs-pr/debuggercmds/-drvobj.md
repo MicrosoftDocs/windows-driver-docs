@@ -1,6 +1,6 @@
 ---
-title: drvobj (WinDbg)
-description: The drvobj extension displays detailed information about a DRIVER_OBJECT.
+title: "drvobj (WinDbg)"
+description: "The drvobj extension displays detailed information about a DRIVER_OBJECT."
 keywords: ["drvobj Windows Debugging"]
 ms.date: 11/16/2018
 topic_type:
@@ -39,7 +39,7 @@ Causes the display to include entry points for the driver's dispatch routines.
 <span id="Bit_2__0x4_"></span><span id="bit_2__0x4_"></span><span id="BIT_2__0X4_"></span>Bit 2 (0x4)  
 Lists with detailed information the device objects owned by the driver (requires bit 0 (0x1)).
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Kdexts.dll
 
@@ -80,6 +80,7 @@ You can also use [**!devobj 809d50d0**](-devobj.md) to get information about the
  
 
  
+
 
 
 

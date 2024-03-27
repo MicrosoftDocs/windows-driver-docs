@@ -1,6 +1,6 @@
 ---
-title: igrep (WinDbg)
-description: The igrep extension searches for a pattern in disassembly.
+title: "igrep (WinDbg)"
+description: "The igrep extension searches for a pattern in disassembly."
 keywords: ["igrep Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -30,7 +30,7 @@ Specifies the pattern to search for. If omitted, the last *Pattern* is used.
 <span id="_______StartAddress______"></span><span id="_______startaddress______"></span><span id="_______STARTADDRESS______"></span> *StartAddress*   
 Specifies the hexadecimal address at which to begin searching. If omitted, the current program counter is used.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -54,6 +54,7 @@ Specifies the hexadecimal address at which to begin searching. If omitted, the c
  
 
  
+
 
 
 

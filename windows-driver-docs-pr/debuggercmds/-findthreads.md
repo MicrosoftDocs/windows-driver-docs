@@ -1,6 +1,6 @@
 ---
-title: findthreads
-description: The findthreads extension displays summary information about one or more threads on the target system based on supplied search criteria.
+title: "findthreads"
+description: "The findthreads extension displays summary information about one or more threads on the target system based on supplied search criteria."
 keywords: ["findthreads Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -47,7 +47,7 @@ Specifies the end address of the memory range specified with -a.
 <span id="_______-l_Range_Length______"></span><span id="_______-l_range_length______"></span><span id="_______-L_RANGE_LENGTH______"></span> **-l** **** *Range Length*   
 Specifies the length of the memory range specified with -a.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -106,6 +106,7 @@ Found 6 criteria matches for THREAD 0xffffe0016a383740, PROCESS 0xffffe0016a2202
  
 
  
+
 
 
 

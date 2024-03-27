@@ -1,6 +1,6 @@
 ---
-title: wdfkd.wdfumirps
-description: The wdfkd.wdfumirps extension displays the list of pending user-mode I/O request packets (UM IRPs) in the implicit process.
+title: "wdfkd.wdfumirps"
+description: "The wdfkd.wdfumirps extension displays the list of pending user-mode I/O request packets (UM IRPs) in the implicit process."
 keywords: ["wdfkd.wdfumirps Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,7 +21,7 @@ The **!wdfkd.wdfumirps** extension displays the list of pending user-mode I/O re
 !wdfkd.wdfumirps NumberOfIrps Flags
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______NumberOfIrps______"></span><span id="_______numberofirps______"></span><span id="_______NUMBEROFIRPS______"></span> *NumberOfIrps*   
@@ -72,6 +72,7 @@ Number of pending IRPS: 0x4
  
 
  
+
 
 
 

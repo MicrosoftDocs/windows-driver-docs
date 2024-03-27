@@ -1,5 +1,5 @@
 ---
-title: RetrieveImageRequest element
+title: RetrieveImageRequest Element
 description: The required RetrieveImageRequest operation element contains the client's request to retrieve scan data from the device after a scan job has been created.
 keywords: ["RetrieveImageRequest element Imaging Devices"]
 topic_type:

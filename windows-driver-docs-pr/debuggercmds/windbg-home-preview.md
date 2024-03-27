@@ -1,6 +1,7 @@
 ---
-title: WinDbg - Home Menu
-description: This section describes how to use the home menu in the WinDbg debugger.
+title: "WinDbg - Home Menu"
+description: "This section describes how to use the home menu in the WinDbg debugger."
+keywords: ["Home Menu", "WinDbg", "Menu", "Windows Debugging"]
 ms.date: 04/13/2023
 ---
 
@@ -41,3 +42,4 @@ Use *Help* buttons to do the following:
 ## See Also
 
 [WinDbg Features](../debugger/debugging-using-windbg-preview.md)
+

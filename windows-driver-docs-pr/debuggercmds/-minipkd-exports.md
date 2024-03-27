@@ -1,6 +1,6 @@
 ---
-title: minipkd.exports
-description: The minipkd.exports extension displays the addresses of the miniport exports for the specified adapter.
+title: "minipkd.exports"
+description: "The minipkd.exports extension displays the addresses of the miniport exports for the specified adapter."
 keywords: ["minipkd.exports Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,13 +21,13 @@ The **!minipkd.exports** extension displays the addresses of the miniport export
 !minipkd.exports Adapter 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Adapter______"></span><span id="_______adapter______"></span><span id="_______ADAPTER______"></span> *Adapter*   
 Specifies the address of an adapter.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -55,6 +55,7 @@ For more information, see [SCSI Miniport Debugging](../debugger/scsi-miniport-de
  
 
  
+
 
 
 

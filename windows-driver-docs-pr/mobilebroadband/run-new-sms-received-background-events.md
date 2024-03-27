@@ -1,5 +1,5 @@
 ---
-title: Run new SMS received background events
+title: Run New SMS Received Background Events
 description: Run new SMS received background events
 ms.date: 04/20/2017
 ---

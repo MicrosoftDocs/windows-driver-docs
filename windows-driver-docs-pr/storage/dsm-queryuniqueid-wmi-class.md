@@ -1,5 +1,5 @@
 ---
-title: DSM\_QueryUniqueId WMI Class
+title: DSM_QueryUniqueId WMI Class
 description: DSM\_QueryUniqueId WMI Class
 ms.date: 10/17/2018
 ---

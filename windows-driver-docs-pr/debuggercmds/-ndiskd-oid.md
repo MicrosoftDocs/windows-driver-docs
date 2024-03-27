@@ -1,6 +1,6 @@
 ---
-title: ndiskd.oid
-description: The ndiskd.oid extension displays information about an NDIS OID request.
+title: "ndiskd.oid"
+description: "The ndiskd.oid extension displays information about an NDIS OID request."
 keywords: ["ndiskd.oid Windows Debugging"]
 ms.date: 06/26/2020
 topic_type:
@@ -135,3 +135,4 @@ In this example, the OID pending is [OID\_GEN\_STATISTICS](../network/oid-gen-st
 [NDIS OIDs](/windows-hardware/drivers/ddi/_netvista/)
 
 [NDIS OID Request Interface](/windows-hardware/drivers/ddi/_netvista/)
+

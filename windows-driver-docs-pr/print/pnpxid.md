@@ -1,5 +1,5 @@
 ---
-title: PnPXID command
+title: PnPXID Command
 description: The PnPXID command returns the Plug and Play (PnP) identifier in the form of the function discovery key.
 keywords:
 - WSDMON port monitors WDK , PnPXID command

@@ -1,6 +1,6 @@
 ---
-title: (System Status)
-description: The double vertical bar ( ) command prints status for the specified system or for all systems that you are currently debugging.Do not confuse this command with the (Process Status) command.
+title: "|| (System Status)"
+description: "The double vertical bar (||) command prints status for the specified system or for all systems that you are currently debugging. Do not confuse this command with the (Process Status) command."
 keywords: ["(System Status) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

@@ -1,6 +1,6 @@
 ---
-title: ndiskd.ndisstack
-description: The !ndiskd.ndisstack extension displays a debug stack trace.
+title: "ndiskd.ndisstack"
+description: "The !ndiskd.ndisstack extension displays a debug stack trace."
 keywords: ["ndiskd.ndisstack Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -25,7 +25,7 @@ The **!ndiskd.ndisstack** extension displays a debug stack trace.
 !ndiskd.ndisstack -handle <x> [-statistics]
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______-handle______"></span><span id="_______-HANDLE______"></span> *-handle*   
@@ -34,11 +34,11 @@ Required. Handle of the stack block.
 <span id="_______-statistics______"></span><span id="_______-STATISTICS______"></span> *-statistics*   
 Shows debugging statistics.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Ndiskd.dll
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [Network Driver Design Guide](../network/index.md)
@@ -52,4 +52,5 @@ Ndiskd.dll
 [**!ndiskd.help**](-ndiskd-help.md)
 
  
+
 

@@ -1,6 +1,6 @@
 ---
-title: logexts.logm
-description: The logexts.logm extension creates or displays a module inclusion list or a module exclusion list.
+title: "logexts.logm"
+description: "The logexts.logm extension creates or displays a module inclusion list or a module exclusion list."
 keywords: ["logexts.logm Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -35,7 +35,7 @@ Causes Logger to use a module exclusion list. It will consist of Logexts.dll, ke
 <span id="_______Modules______"></span><span id="_______modules______"></span><span id="_______MODULES______"></span> *Modules*   
 Specifies the modules to be included or excluded. This list is not cumulative; each use of this command creates an entirely new list. If multiple modules are listed, separate them with spaces. An asterisk (\*) can be used to indicate all modules.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -101,6 +101,7 @@ Included modules:
  
 
  
+
 
 
 

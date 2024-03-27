@@ -1,6 +1,6 @@
 ---
-title: vadump (WinDbg)
-description: The vadump extension displays all virtual memory ranges and their corresponding protection information.
+title: "vadump (WinDbg)"
+description: "The vadump extension displays all virtual memory ranges and their corresponding protection information."
 keywords: ["vadump Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -27,7 +27,7 @@ The **!vadump** extension displays all virtual memory ranges and their correspon
 <span id="_______-v______"></span><span id="_______-V______"></span> **-v**   
 Causes the display to include information about each original allocation region as well. Because individual addresses within a region can have their protection altered after memory is allocated (by **VirtualProtect**, for example), the original protection status for this larger region may not be the same as that of each range within the region.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -102,6 +102,7 @@ When **-v** is used, the AllocationProtect line shows the default protection tha
  
 
  
+
 
 
 

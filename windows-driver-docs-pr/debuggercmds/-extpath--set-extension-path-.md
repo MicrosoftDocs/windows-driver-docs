@@ -1,6 +1,6 @@
 ---
-title: .extpath (Set Extension Path)
-description: The .extpath command sets or displays the extension DLL search path.
+title: ".extpath (Set Extension Path)"
+description: "The .extpath command sets or displays the extension DLL search path."
 keywords: [".extpath (Set Extension Path) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,7 +21,7 @@ The **.extpath** command sets or displays the extension DLL search path.
 .extpath[+] [Directory[;...]]
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="______________"></span> +   
@@ -63,6 +63,7 @@ Windows (x64)\winext\arcade;C:\Windows\system32;C:\Windows
  
 
  
+
 
 
 

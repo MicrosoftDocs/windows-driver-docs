@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_TIMECODE\_READER
+title: KSPROPERTY_TIMECODE_READER
 description: The KSPROPERTY\_TIMECODE\_READER property retrieves the timecode for the current tape position.
 keywords: ["KSPROPERTY_TIMECODE_READER Streaming Media Devices"]
 topic_type:

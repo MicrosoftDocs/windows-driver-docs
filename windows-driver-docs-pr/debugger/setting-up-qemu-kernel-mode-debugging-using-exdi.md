@@ -1,5 +1,5 @@
 ---
-title: Setting Up QEMU Kernel-Mode Debugging using EXDI
+title: Setting Up QEMU Kernel-Mode Debugging Using EXDI
 description: Debugging Tools for Windows supports debugging QEMU using EXDI. This topic describes how to setup QEMU kernel debugging using EXDI.
 ms.date: 04/22/2022
 ms.localizationpriority: medium
@@ -37,7 +37,7 @@ In this topic, we will describe the process to attach to a QEMU Virtual Windows 
 1. Start the gdbserver on QEMU.
 1. Check network connectivity and locate and record the target image IP address. (HOST IP default address of 1.2.3.4).
 1. Download and install the Windows debugging tools on the host system.
-1. Download, build, register and configure the EXDI server for QEMU located on Github.
+1. Download, build, register and configure the EXDI server for QEMU located on GitHub.
 1. Configure the debugger host (WinDbg) by editing the EXDI configuration XML files.
 1. Launch WinDbg using the command line to connect to the EXDI server.
 1. Use WinDbg to debug the target QEMU Windows image.

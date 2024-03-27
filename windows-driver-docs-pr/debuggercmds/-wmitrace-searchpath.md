@@ -1,6 +1,6 @@
 ---
-title: wmitrace.searchpath
-description: The wmitrace.searchpath extension specifies the location of the trace message format files for messages in the trace buffers.
+title: "wmitrace.searchpath"
+description: "The wmitrace.searchpath extension specifies the location of the trace message format files for messages in the trace buffers."
 keywords: ["wmitrace.searchpath Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -33,7 +33,7 @@ The path to the directory where the debugger should look for the trace message f
 
 <span id="_____________"></span>   
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 This extension is exported by Wmitrace.dll.
 
@@ -58,6 +58,7 @@ If you do not use either **!wmitrace.searchpath** or [**!wmitrace.tmffile**](-wm
  
 
  
+
 
 
 

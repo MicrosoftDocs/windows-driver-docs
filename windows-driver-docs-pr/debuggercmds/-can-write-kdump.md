@@ -1,6 +1,6 @@
 ---
-title: can_write_kdump
-description: The can_write_kdump extension verifies that there is enough disk space on the target computer to write a kernel dump file of the specified type.
+title: "can_write_kdump"
+description: "The can_write_kdump extension verifies that there is enough disk space on the target computer to write a kernel dump file of the specified type."
 keywords: ["kernel dump", "can_write_kdump Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,7 +21,7 @@ The **!can\_write\_kdump** extension verifies that there is enough disk space on
 !can_write_kdump [-dn] [Options]
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______-dn______"></span><span id="_______-DN______"></span> **-dn**   
@@ -39,7 +39,7 @@ Specifies that the extension should determine if there is enough space for a sum
 <span id="-f"></span><span id="-F"></span>**-f**  
 Specifies that the extension should determine if there is enough space for a full kernel dump.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -78,6 +78,7 @@ NO: Page file too small
  
 
  
+
 
 
 

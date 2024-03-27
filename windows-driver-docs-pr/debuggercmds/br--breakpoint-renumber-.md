@@ -1,6 +1,6 @@
 ---
-title: br (Breakpoint Renumber)
-description: The br command renumbers one or more breakpoints.
+title: "br (Breakpoint Renumber)"
+description: "The br command renumbers one or more breakpoints."
 keywords: ["br (Breakpoint Renumber) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -53,6 +53,7 @@ If there is already a breakpoint with an ID equal to *NewID*, the command fails 
  
 
  
+
 
 
 

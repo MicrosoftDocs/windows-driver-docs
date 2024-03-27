@@ -1,5 +1,5 @@
 ---
-title: BrightnessSupported element
+title: BrightnessSupported Element
 description: The required BrightnessSupported element specifies whether the scan device supports user control of the scan brightness setting.
 keywords: ["BrightnessSupported element Imaging Devices"]
 topic_type:

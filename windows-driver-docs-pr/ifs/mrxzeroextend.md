@@ -1,5 +1,5 @@
 ---
-title: MRxZeroExtend routine
+title: MRxZeroExtend Routine
 description: The MRxZeroExtend routine is called by RDBSS to request that a network mini-redirector truncate the contents of a file system object.
 keywords: ["MRxZeroExtend routine Installable File System Drivers", "PMRX_CALLDOWN"]
 topic_type:

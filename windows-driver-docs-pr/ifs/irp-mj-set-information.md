@@ -1,5 +1,5 @@
 ---
-title: IRP_MJ_SET_INFORMATION (FS and filter drivers)
+title: IRP_MJ_SET_INFORMATION (FS and Filter Drivers)
 description: IRP_MJ_SET_INFORMATION
 keywords: ["IRP_MJ_SET_INFORMATION Installable File System Drivers"]
 topic_type:

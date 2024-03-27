@@ -1,6 +1,6 @@
 ---
-title: logexts.logd
-description: The logexts.logd extension disables logging.
+title: "logexts.logd"
+description: "The logexts.logd extension disables logging."
 keywords: ["logexts.logd Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -24,7 +24,7 @@ The **!logexts.logd** extension disables logging.
 ## <span id="ddk__logexts_logd_dbg"></span><span id="DDK__LOGEXTS_LOGD_DBG"></span>
 
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -56,6 +56,7 @@ This will cause all API hooks to be removed in an effort to allow the program to
  
 
  
+
 
 
 

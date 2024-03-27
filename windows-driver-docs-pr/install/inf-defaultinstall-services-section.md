@@ -1,5 +1,5 @@
 ---
-title: INF DefaultInstall.Services section
+title: INF DefaultInstall.Services Section
 description: A DefaultInstall.Services section contains one or more AddService directives referencing additional INF-writer-defined sections in an INF file.
 keywords:
 - INF DefaultInstall.Services Section Device and Driver Installation

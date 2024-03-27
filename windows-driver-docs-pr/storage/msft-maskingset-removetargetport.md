@@ -1,5 +1,5 @@
 ---
-title: RemoveTargetPort method of the MSFT\_MaskingSet class
+title: RemoveTargetPort Method of the MSFT_MaskingSet Class
 description: Removes one or more target ports from the masking set.
 ms.assetid: 6CE2B48B-3C53-4F91-8866-9F2513A9FE2D
 keywords:

@@ -1,6 +1,6 @@
 ---
-title: rtlavl (WinDbg)
-description: The rtlavl extension displays the entries of an RTL_AVL_TABLE structure.
+title: "rtlavl (WinDbg)"
+description: "The rtlavl extension displays the entries of an RTL_AVL_TABLE structure."
 keywords: ["avl tables", "rtlavl Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -22,7 +22,7 @@ The **!rtlavl** extension displays the entries of an RTL\_AVL\_TABLE structure.
 !rtlavl -?
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
@@ -37,7 +37,7 @@ Specifies the name of a data structure.
 <span id="_______-_______"></span> **-?**   
 Displays some brief Help text for this extension in the Debugger Command window.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -71,6 +71,7 @@ The display can be interrupted at any time by pressing CTRL+BREAK (in WinDbg) or
  
 
  
+
 
 
 

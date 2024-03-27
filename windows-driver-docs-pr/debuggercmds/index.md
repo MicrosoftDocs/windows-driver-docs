@@ -1,6 +1,6 @@
 ---
-title: Using WinDbg and the debugger commands
-description: Start here for an overview on using the Windows debugger and the debugger commands.
+title: "Using WinDbg and the debugger commands"
+description: "Start here for an overview on using the Windows debugger and the debugger commands."
 keywords: ["Debugging Tools for Windows", "Windows debugging", "Windows Debugger", "Kernel debugging", "Kernel debugger", "WinDbg"]
 ms.date: 10/05/2023
 ms.topic: article
@@ -23,3 +23,4 @@ To get started with WinDbg, see [Getting Started with Windows Debugging](../debu
 ## Debugger commands
 
 To learn more about the debugger commands, see [Using Debugger Commands](using-debugger-extension-commands.md).
+

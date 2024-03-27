@@ -1,6 +1,6 @@
 ---
-title: rpcexts.getthreadinfo
-description: The rpcexts.getthreadinfo extension searches the system's RPC state information for thread information.
+title: "rpcexts.getthreadinfo"
+description: "The rpcexts.getthreadinfo extension searches the system's RPC state information for thread information."
 keywords: ["rpcexts.getthreadinfo Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -34,7 +34,7 @@ Specifies the thread ID of the thread to be displayed. If omitted, all threads i
 <span id="_______-_______"></span> **-?**   
 Displays some brief Help text for this extension in the Command Prompt window.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -79,6 +79,7 @@ For a similar example using the DbgRpc tool, see [Get RPC Thread Information](..
  
 
  
+
 
 
 

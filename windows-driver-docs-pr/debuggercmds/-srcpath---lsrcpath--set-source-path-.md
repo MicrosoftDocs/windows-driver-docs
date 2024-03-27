@@ -1,6 +1,6 @@
 ---
-title: .srcpath, .lsrcpath (Set Source Path)
-description: The .srcpath and .lsrcpath commands set or display the source file search path.
+title: ".srcpath, .lsrcpath (Set Source Path)"
+description: "The .srcpath and .lsrcpath commands set or display the source file search path."
 keywords: [".srcpath, .lsrcpath (Set Source Path) Windows Debugging"]
 ms.date: 11/05/2020
 topic_type:
@@ -59,6 +59,7 @@ When this command is issued from a debugging client, **.srcpath** sets the sourc
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: rpcexts.eerecord
-description: The rpcexts.eerecord extension displays the contents of an extended error information record.
+title: "rpcexts.eerecord"
+description: "The rpcexts.eerecord extension displays the contents of an extended error information record."
 keywords: ["rpcexts.eerecord Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -27,7 +27,7 @@ The **!rpcexts.eerecord** extension displays the contents of an extended error i
 <span id="_______EERecordAddress______"></span><span id="_______eerecordaddress______"></span><span id="_______EERECORDADDRESS______"></span> *EERecordAddress*   
 Specifies the address of the extended error record.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -74,6 +74,7 @@ Parameter 1:(Long value) : 16777343 (0x100007F)
  
 
  
+
 
 
 

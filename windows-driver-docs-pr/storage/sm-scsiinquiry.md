@@ -1,5 +1,5 @@
 ---
-title: SM\_ScsiInquiry function
+title: SM_ScsiInquiry Function
 description: The SM\_ScsiInquiry WMI method sends a SCSI inquiry command to the indicated device.
 keywords: ["SM_ScsiInquiry function Storage Devices"]
 topic_type:

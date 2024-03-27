@@ -1,5 +1,5 @@
 ---
-title: C28714 warning
+title: C28714 Warning
 description: Warning C28714 Cast between semantically different integer types.
 ms.date: 04/20/2017
 f1_keywords: 

@@ -1,5 +1,5 @@
 ---
-title: MSiSCSI\_PersistentLogins WMI Class
+title: MSiSCSI_PersistentLogins WMI Class
 description: MSiSCSI\_PersistentLogins WMI Class
 ms.date: 10/17/2018
 ---

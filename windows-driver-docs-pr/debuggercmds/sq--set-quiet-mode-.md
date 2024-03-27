@@ -1,6 +1,6 @@
 ---
-title: sq (Set Quiet Mode)
-description: The sq command turns quiet mode on or off.
+title: "sq (Set Quiet Mode)"
+description: "The sq command turns quiet mode on or off."
 keywords: ["sq (Set Quiet Mode) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -54,6 +54,7 @@ Do not confuse quiet mode with the effects of the **-myob** [command-line option
  
 
  
+
 
 
 

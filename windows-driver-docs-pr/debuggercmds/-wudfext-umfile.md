@@ -1,6 +1,6 @@
 ---
-title: wudfext.umfile
-description: The wudfext.umfile extension displays information about a UMDF intra-stack file.
+title: "wudfext.umfile"
+description: "The wudfext.umfile extension displays information about a UMDF intra-stack file."
 keywords: ["wudfext.umfile Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,13 +21,13 @@ The **!wudfext.umfile** extension displays information about a UMDF intra-stack 
 !wudfext.umfile Address
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the address of the UMDF intra-stack file to display information about.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -55,6 +55,7 @@ For more information, see [User-Mode Driver Framework Debugging](../debugger/use
  
 
  
+
 
 
 

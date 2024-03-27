@@ -1,6 +1,6 @@
 ---
-title: l+, l- (Set Source Options)
-description: The l+and l- commands set the source line options that control source display and program stepping options.
+title: "l+, l- (Set Source Options)"
+description: "The l+and l- commands set the source line options that control source display and program stepping options."
 keywords: ["l+, l- (Set Source Options) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -70,3 +70,4 @@ You can include only one *Option* every time that you issue this command. If you
 When you specify the **s** option, source lines and line numbers are displayed when you step through code, regardless of whether you specified the **l** option. The **o** option has no effect unless you specify the **s** option.
 
 Source line options do not take effect unless you enable line number loading by using the [**.lines (Toggle Source Line Support)**](-lines--toggle-source-line-support-.md) command or the [-lines command-line option](../debugger/command-line-options.md). By default, if you have not used these commands, WinDbg turns on source line support and CDB turns it off.
+

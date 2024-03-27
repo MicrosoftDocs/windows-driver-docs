@@ -1,6 +1,6 @@
 ---
-title: wdfkd.wdfsetdriver
-description: The wdfkd.wdfsetdriver extension sets the name of the default Kernel-Mode Driver Framework (KMDF) driver to which debugger extension commands apply.
+title: "wdfkd.wdfsetdriver"
+description: "The wdfkd.wdfsetdriver extension sets the name of the default Kernel-Mode Driver Framework (KMDF) driver to which debugger extension commands apply."
 keywords: ["wdfkd.wdfsetdriver Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,13 +21,13 @@ The **!wdfkd.wdfsetdriver** extension sets the name of the default Kernel-Mode D
 !wdfkd.wdfsetdriver DriverName
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______DriverName______"></span><span id="_______drivername______"></span><span id="_______DRIVERNAME______"></span> *DriverName*   
 The name of a driver. *DriverName* must not include the .sys file name extension.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Wdfkd.dll
 
@@ -48,6 +48,7 @@ To obtain the name of the current default KMDF driver, use the [**!wdfkd.wdfgetd
  
 
  
+
 
 
 

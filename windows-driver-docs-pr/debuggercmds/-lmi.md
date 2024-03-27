@@ -1,6 +1,6 @@
 ---
-title: lmi (WinDbg)
-description: The lmi extension displays detailed information about a module.
+title: "lmi (WinDbg)"
+description: "The lmi extension displays detailed information about a module."
 keywords: ["lmi Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -27,7 +27,7 @@ The **!lmi** extension displays detailed information about a module.
 <span id="_______Module______"></span><span id="_______module______"></span><span id="_______MODULE______"></span> *Module*   
 Specifies a loaded module, either by name or by base address.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -94,6 +94,7 @@ For an explanation of the abbreviations shown on the **Characteristics** line of
  
 
  
+
 
 
 

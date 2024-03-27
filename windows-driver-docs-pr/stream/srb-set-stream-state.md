@@ -1,5 +1,5 @@
 ---
-title: SRB\_SET\_STREAM\_STATE
+title: SRB_SET_STREAM_STATE
 description: SRB\_SET\_STREAM\_STATE
 keywords: ["SRB_SET_STREAM_STATE Streaming Media Devices"]
 topic_type:

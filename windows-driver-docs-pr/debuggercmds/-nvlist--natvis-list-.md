@@ -1,6 +1,6 @@
 ---
-title: .nvlist (NatVis List)
-description: The .nvllist command lists the NatVis files loaded into the debugger environment.
+title: ".nvlist (NatVis List)"
+description: "The .nvllist command lists the NatVis files loaded into the debugger environment."
 keywords: [".nvlist (NatVis List) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -35,3 +35,4 @@ For more information, see [Create Custom Views of Native Objects](/visualstudio/
 ## See also
 
 [**dx (Display NatVis Expression)**](dx--display-visualizer-variables-.md)
+

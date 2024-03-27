@@ -1,5 +1,5 @@
 ---
-title: RDF_CARD_TRACKING callback function
+title: RDF_CARD_TRACKING Callback Function
 description: RDF_CARD_TRACKING callback function
 keywords:
 - vendor-supplied drivers RDF callback functions

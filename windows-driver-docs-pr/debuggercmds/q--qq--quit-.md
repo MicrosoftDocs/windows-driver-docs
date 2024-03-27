@@ -1,6 +1,6 @@
 ---
-title: q, qq (Quit)
-description: The q and qq commands end the debugging session.
+title: "q, qq (Quit)"
+description: "The q and qq commands end the debugging session."
 keywords: ["q, qq (Quit) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -48,6 +48,7 @@ The **qq** command behaves exactly like the **q** command, unless you are perfor
  
 
  
+
 
 
 

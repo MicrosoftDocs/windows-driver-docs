@@ -1,6 +1,6 @@
 ---
-title: gpiokd.pintable
-description: The gpiokd.pintable command displays information about an array of GPIO pins.
+title: "gpiokd.pintable"
+description: "The gpiokd.pintable command displays information about an array of GPIO pins."
 keywords: ["gpiokd.pintable Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -67,7 +67,7 @@ Flags that specify which information is displayed. This parameter is a bitwise O
 
 Gpiokd.dll
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [GPIO Extensions](gpio-extensions.md)
@@ -75,6 +75,7 @@ Gpiokd.dll
  
 
  
+
 
 
 

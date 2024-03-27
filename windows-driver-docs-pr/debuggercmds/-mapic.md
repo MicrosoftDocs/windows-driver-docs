@@ -1,6 +1,6 @@
 ---
-title: mapic (WinDbg)
-description: The mapic extension displays an ACPI Multiple APIC table.
+title: "mapic (WinDbg)"
+description: "The mapic extension displays an ACPI Multiple APIC table."
 keywords: ["mapic Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -29,7 +29,7 @@ Syntax
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the address of the Multiple APIC Table.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Kdexts.dll
 
@@ -40,6 +40,7 @@ For more information, see [ACPI Debugging](../debugger/acpi-debugging.md).
  
 
  
+
 
 
 

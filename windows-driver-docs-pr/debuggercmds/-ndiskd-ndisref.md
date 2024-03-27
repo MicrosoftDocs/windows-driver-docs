@@ -1,6 +1,6 @@
 ---
-title: ndiskd.ndisref
-description: The ndiskd.ndisref extension displays a debug log of a tracked reference count.
+title: "ndiskd.ndisref"
+description: "The ndiskd.ndisref extension displays a debug log of a tracked reference count."
 keywords: ["ndiskd.ndisref Windows Debugging"]
 ms.date: 06/18/2020
 topic_type:
@@ -20,7 +20,7 @@ The **!ndiskd.ndisref** extension displays a debug log of a tracked reference co
 !ndiskd.ndisref -handle <x> [-tagtype <str>] [-stacks] [-tag <str>] [-refdebug] 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 <span id="_______-handle______"></span><span id="_______-HANDLE______"></span> *-handle*   
 Required. Handle of the refcount block.
@@ -100,3 +100,4 @@ REFCOUNT BLOCK
 [**!ndiskd.help**](-ndiskd-help.md)
 
 [**!ndiskd.minidriver**](-ndiskd-minidriver.md)
+

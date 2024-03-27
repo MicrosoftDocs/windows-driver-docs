@@ -1,6 +1,6 @@
 ---
-title: .scriptload (Load Script)
-description: The .scriptload command will load and execute the specified script file.
+title: ".scriptload (Load Script)"
+description: "The .scriptload command will load and execute the specified script file."
 keywords: [".scriptload (Load Script) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,7 +21,7 @@ The **.scriptload** command will load and execute the specified script file.
 .scriptload ScriptFile
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______ScriptFile______"></span><span id="_______scriptfile______"></span><span id="_______SCRIPTFILE______"></span> *ScriptFile*   
@@ -76,7 +76,7 @@ Available Script Providers:
     JavaScript (extension '.js')
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**.scriptunload (Unload Script)**](-scriptunload--unload-script-.md)
@@ -86,6 +86,7 @@ Available Script Providers:
  
 
  
+
 
 
 

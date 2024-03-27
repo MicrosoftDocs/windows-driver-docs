@@ -1,6 +1,6 @@
 ---
-title: .step_filter (Set Step Filter)
-description: The .step_filter command creates a list of functions that are skipped (stepped over) when tracing.
+title: ".step_filter (Set Step Filter)"
+description: "The .step_filter command creates a list of functions that are skipped (stepped over) when tracing."
 keywords: [".step_filter (Set Step Filter) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -23,7 +23,7 @@ The **.step\_filter** command creates a list of functions that are skipped (step
 .step_filter 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_FilterList_"></span><span id="_filterlist_"></span><span id="_FILTERLIST_"></span>**"**<em>FilterList</em>**"**  
@@ -73,6 +73,7 @@ When debugging in assembly mode, each call is on a different line, so you can ch
  
 
  
+
 
 
 

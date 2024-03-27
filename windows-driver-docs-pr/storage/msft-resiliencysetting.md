@@ -1,5 +1,5 @@
 ---
-title: MSFT\_ResiliencySetting class
+title: MSFT_ResiliencySetting Class
 description: Represents a storage pool's resiliency settings.
 ms.assetid: 8F8981DB-50D7-424D-BD5B-C646FD8E434F
 keywords:

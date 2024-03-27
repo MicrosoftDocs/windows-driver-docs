@@ -1,5 +1,5 @@
 ---
-title: SetUsage method of the MSFT\_PhysicalDisk class
+title: SetUsage Method of the MSFT_PhysicalDisk Class
 description: Set or changes the intended usage for the physical disk within a concrete pool.
 ms.assetid: E35C3D17-73E1-4319-A993-30BCE01B9B87
 keywords:

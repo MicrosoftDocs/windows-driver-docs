@@ -1,6 +1,6 @@
 ---
-title: lpc (WinDbg)
-description: The lpc extension displays information about all local procedure call (LPC) ports and messages in the target system.
+title: "lpc (WinDbg)"
+description: "The lpc extension displays information about all local procedure call (LPC) ports and messages in the target system."
 keywords: ["LPC (local/light-weight procedure call)", "lpc Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -57,7 +57,7 @@ The **!lpc** extension displays information about all local procedure call (LPC)
 <span id="_______PoolSearch______"></span><span id="_______poolsearch______"></span><span id="_______POOLSEARCH______"></span> **PoolSearch**   
 (Windows Server 2003 and Windows XP only) Determines whether the **!lpc message** command searches for messages in the kernel pool. Each time **!lpc PoolSearch** is used, this setting toggles on or off (the initial setting is to not search the kernel pool). This only affects **!lpc message** commands that specify a nonzero value for *MessageID*.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -204,6 +204,7 @@ Scanning 3 objects
  
 
  
+
 
 
 

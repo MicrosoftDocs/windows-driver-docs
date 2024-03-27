@@ -1,5 +1,5 @@
 ---
-title: XR_BIAS color channel conversion rules
+title: XR_BIAS Color Channel Conversion Rules
 description: Describes XR_BIAS color channel conversion rules
 ms.date: 10/17/2018
 ---

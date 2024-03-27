@@ -1,5 +1,5 @@
 ---
-title: Identifiers for High Definition Audio (HDAUDIO) devices
+title: Identifiers for High Definition Audio (HDAUDIO) Devices
 description: Describes the device identification string formats that are used to  report High Definition Audio HDAUDIO hardware device IDs.
 keywords:
 - device identification strings WDK , Audio devices

@@ -1,6 +1,6 @@
 ---
-title: .lastevent (Display Last Event)
-description: The .lastevent command displays the most recent exception or event that occurred.
+title: ".lastevent (Display Last Event)"
+description: "The .lastevent command displays the most recent exception or event that occurred."
 keywords: [".lastevent (Display Last Event) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -45,6 +45,7 @@ Breaking into the debugger always creates an exception. There is always a *last 
  
 
  
+
 
 
 

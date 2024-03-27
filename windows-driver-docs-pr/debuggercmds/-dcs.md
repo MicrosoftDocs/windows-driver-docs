@@ -1,6 +1,6 @@
 ---
-title: dcs (WinDbg)
-description: dcs
+title: "dcs (WinDbg)"
+description: "dcs"
 keywords: ["dcs extension (obsolete)"]
 ms.date: 05/23/2017
 ---
@@ -16,6 +16,7 @@ The **!dcs** extension is obsolete. To display the PCI configuration space, use 
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: ndiskd.ndis
-description: The ndiskd.ndis extension displays build information about ndis.sys.
+title: "ndiskd.ndis"
+description: "The ndiskd.ndis extension displays build information about ndis.sys."
 keywords: ["ndiskd.ndis Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,12 +21,12 @@ The **!ndiskd.ndis** extension displays build information about ndis.sys.
 !ndiskd.ndis 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 This extension has no parameters.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Ndiskd.dll
 
@@ -42,6 +42,7 @@ Checked Ndis
  
 
  
+
 
 
 

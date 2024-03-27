@@ -1,6 +1,6 @@
 ---
-title: .thread (Set Register Context)
-description: The .thread command specifies which thread will be used for the register context.
+title: ".thread (Set Register Context)"
+description: "The .thread command specifies which thread will be used for the register context."
 keywords: ["Set Register Context (.thread) command", "context, Set Register Context (.thread) command", "registers, Set Register Context (.thread) command", "call stack, Set Register Context (.thread) command", ".thread (Set Register Context) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -138,6 +138,7 @@ fd581c38 8042d61c ntoskrnl!KiSwapThread+0xc5
  
 
  
+
 
 
 

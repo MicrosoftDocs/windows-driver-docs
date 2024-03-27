@@ -1,6 +1,6 @@
 ---
-title: .suspend_ui (Suspend WinDbg Interface)
-description: The .suspend_ui command suspends the refresh of WinDbg debugging information windows.
+title: ".suspend_ui (Suspend WinDbg Interface)"
+description: "The .suspend_ui command suspends the refresh of WinDbg debugging information windows."
 keywords: [".suspend_ui (Suspend WinDbg Interface) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -23,7 +23,7 @@ The **.suspend\_ui** command suspends the refresh of WinDbg debugging informatio
 .suspend_ui 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______0______"></span> **0**   
@@ -72,6 +72,7 @@ Suspending the refresh of these windows can speed up WinDbg during a sequence of
  
 
  
+
 
 
 

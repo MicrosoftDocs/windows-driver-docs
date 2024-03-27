@@ -1,6 +1,6 @@
 ---
-title: ubp (WinDbg)
-description: The ubp extension sets a breakpoint in user space.
+title: "ubp (WinDbg)"
+description: "The ubp extension sets a breakpoint in user space."
 keywords: ["ubp Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -45,7 +45,7 @@ It is not possible to set a breakpoint inside a page table or a page directory.
 
 Each breakpoint is assigned a *breakpoint number*. To find out the breakpoint number assigned, use [**!ubl**](-ubl.md). Breakpoints are enabled upon creation. To step over a breakpoint, you must first disable it by using [**!ubd**](-ubd.md). To clear a breakpoint, use [**!ubc**](-ubc.md).
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**!ubc**](-ubc.md)
@@ -61,6 +61,7 @@ Each breakpoint is assigned a *breakpoint number*. To find out the breakpoint nu
  
 
  
+
 
 
 

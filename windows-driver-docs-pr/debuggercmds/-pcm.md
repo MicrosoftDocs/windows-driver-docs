@@ -1,6 +1,6 @@
 ---
-title: pcm (WinDbg)
-description: The pcm extension displays the specified private cache map. This extension is only available in Windows 2000.
+title: "pcm (WinDbg)"
+description: "The pcm extension displays the specified private cache map. This extension is only available in Windows 2000."
 keywords: ["private cache map", "cache manager", "pcm Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,13 +21,13 @@ The **!pcm** extension displays the specified private cache map. This extension 
 !pcm Address
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the address of the private cache map.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -61,6 +61,7 @@ This extension is supported only in Windows 2000. In Windows XP and later versio
  
 
  
+
 
 
 

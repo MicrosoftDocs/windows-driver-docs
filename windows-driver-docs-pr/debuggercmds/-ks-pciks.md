@@ -1,6 +1,6 @@
 ---
-title: ks.pciks (WinDbg)
-description: The ks.pciks extension lists functional devices for kernel streaming devices that are attached to the PCI bus. Optionally, it can display information about active streams on those functional devices.
+title: "ks.pciks (WinDbg)"
+description: "The ks.pciks extension lists functional devices for kernel streaming devices that are attached to the PCI bus. Optionally, it can display information about active streams on those functional devices."
 keywords: ["ks.pciks Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,7 +21,7 @@ The **!ks.pciks** extension lists functional devices for kernel streaming device
 !ks.pciks [Flags] [Level] 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Flags______"></span><span id="_______flags______"></span><span id="_______FLAGS______"></span> *Flags*   
@@ -48,7 +48,7 @@ Display active stream formats.
 <span id="_______Level______"></span><span id="_______level______"></span><span id="_______LEVEL______"></span> *Level*   
 Optional, and applicable only to flag combinations that cause data to be displayed. Levels are the same as those for [**!ks.dump**](-ks-dump.md).
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -88,6 +88,7 @@ kd> !pciks
  
 
  
+
 
 
 

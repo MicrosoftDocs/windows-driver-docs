@@ -1,6 +1,6 @@
 ---
-title: storagekd.storloglist
-description: The storagekd.storloglist extension displays the Storport adapter’s internal log entries.
+title: "storagekd.storloglist"
+description: "The storagekd.storloglist extension displays the Storport adapter’s internal log entries."
 keywords: ["storagekd.storloglist Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,7 +21,7 @@ The **!storagekd.storloglist** extension displays the Storport adapter’s inter
 !storagekd.storloglist <Address> [<starting_entry> [<ending_entry>]] [L <count>] 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
@@ -36,7 +36,7 @@ The ending entry in the range to display. If not specified, *count* entries will
 <span id="_______count______"></span><span id="_______COUNT______"></span> *count*   
 Count of entries to be displayed. If not specified, a value of 50 is used.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -78,6 +78,7 @@ Storport RaidLogList
  
 
  
+
 
 
 

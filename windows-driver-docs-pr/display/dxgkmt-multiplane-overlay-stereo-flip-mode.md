@@ -1,5 +1,5 @@
 ---
-title: DXGKMT\_MULTIPLANE\_OVERLAY\_STEREO\_FLIP\_MODE enumeration
+title: DXGKMT_MULTIPLANE_OVERLAY_STEREO_FLIP_MODE Enumeration
 description: Learn about the DXGKMT\_MULTIPLANE\_OVERLAY\_STEREO\_FLIP\_MODE enumeration, which is reserved for system use. Do not use it in your driver.
 keywords: ["DXGKMT_MULTIPLANE_OVERLAY_STEREO_FLIP_MODE enumeration Display Devices"]
 topic_type:

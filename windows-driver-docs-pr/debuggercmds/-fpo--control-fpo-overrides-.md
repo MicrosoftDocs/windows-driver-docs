@@ -1,6 +1,6 @@
 ---
-title: .fpo (Control FPO Overrides)
-description: The .fpo command controls the frame pointer omission (FPO) overrides.
+title: ".fpo (Control FPO Overrides)"
+description: "The .fpo command controls the frame pointer omission (FPO) overrides."
 keywords: [".fpo (Control FPO Overrides) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -120,6 +120,7 @@ Some compilers (including Microsoft Visual Studio 6.0 and earlier versions) gene
  
 
  
+
 
 
 

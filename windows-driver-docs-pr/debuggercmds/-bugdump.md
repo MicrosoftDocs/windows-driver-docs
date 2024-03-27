@@ -1,6 +1,6 @@
 ---
-title: bugdump (WinDbg)
-description: The bugdump extension formats and displays the information contained in the bug check callback buffers.
+title: "bugdump (WinDbg)"
+description: "The bugdump extension formats and displays the information contained in the bug check callback buffers."
 keywords: ["bugdump Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -48,4 +48,5 @@ The buffers that hold callback data are not available in a Small Memory Dump. Th
 If you are performing live debugging of a crashed system, all callback data will be present.
 
  
+
 

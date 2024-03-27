@@ -1,5 +1,5 @@
 ---
-title: Initialize a print monitor
+title: Initialize a Print Monitor
 description: Provides information about how to initialize a print monitor.
 keywords:
 - print monitors WDK, initializing

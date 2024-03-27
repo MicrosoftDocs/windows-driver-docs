@@ -1,6 +1,6 @@
 ---
-title: rpcexts.getclientcallinfo
-description: The rpcexts.getclientcallinfo extension searches the system's RPC state information for client call (CCALL) information.
+title: "rpcexts.getclientcallinfo"
+description: "The rpcexts.getclientcallinfo extension searches the system's RPC state information for client call (CCALL) information."
 keywords: ["rpcexts.getclientcallinfo Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -40,7 +40,7 @@ Specifies the process ID (PID) of the client process that owns the calls you wan
 <span id="_______-_______"></span> **-?**   
 Displays some brief Help text for this extension in the Command Prompt window.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -84,6 +84,7 @@ For a similar example using the DbgRpc tool, see [Get RPC Client Call Informatio
  
 
  
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: Option selection command
+title: Option Selection Command
 description: Option selection command
 keywords:
 - printer commands WDK Unidrv , option selections

@@ -1,5 +1,5 @@
 ---
-title: ISNMP Get method
+title: ISNMP Get Method
 description: The Get method enables an ASP Web page to obtain the value identified by an SNMP OID.
 MS-HAID:
 - 'webfnc_e3167766-cd60-4ae7-9c06-9a1ccb5ac3b9.xml'

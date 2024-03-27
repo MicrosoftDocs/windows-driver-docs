@@ -1,6 +1,6 @@
 ---
-title: m (Move Memory)
-description: The m command copies the contents of memory from one location to another. Do not confuse this command with the ~m (Resume Thread) command.
+title: "m (Move Memory)"
+description: "The m command copies the contents of memory from one location to another. Do not confuse this command with the ~m (Resume Thread) command."
 keywords: ["m (Move Memory) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -53,6 +53,7 @@ The memory area that *Address* specifies can be part of the memory area that *Ra
  
 
  
+
 
 
 

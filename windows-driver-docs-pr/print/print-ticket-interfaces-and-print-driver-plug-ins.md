@@ -1,5 +1,5 @@
 ---
-title: Print ticket interfaces and print driver plug-ins
+title: Print Ticket Interfaces and Print Driver Plug-Ins
 description: Provides information about print ticket interfaces and print driver plug-ins.
 keywords:
 - IPrintTicketProvider

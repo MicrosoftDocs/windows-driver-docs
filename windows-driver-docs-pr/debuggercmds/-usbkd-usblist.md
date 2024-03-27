@@ -1,6 +1,6 @@
 ---
-title: usbkd.usblist
-description: The usbkd.usblist command displays a linked list of structures of a specified type.
+title: "usbkd.usblist"
+description: "The usbkd.usblist command displays a linked list of structures of a specified type."
 keywords: ["usbkd.usblist Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -100,7 +100,7 @@ DriverName :\Driver\USBSTOR      !devstack ffffe000053ef2a0
 ----------
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
@@ -108,4 +108,5 @@ DriverName :\Driver\USBSTOR      !devstack ffffe000053ef2a0
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
+
 

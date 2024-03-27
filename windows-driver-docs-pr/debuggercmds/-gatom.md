@@ -1,6 +1,6 @@
 ---
-title: gatom (WinDbg)
-description: The gatom extension displays the global atom table.
+title: "gatom (WinDbg)"
+description: "The gatom extension displays the global atom table."
 keywords: ["gatom Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -24,7 +24,7 @@ The **!gatom** extension displays the global atom table.
 ## <span id="ddk__gatom_dbg"></span><span id="DDK__GATOM_DBG"></span>
 
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -52,6 +52,7 @@ For information about the global atom table, see the Microsoft Windows SDK docum
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: wudfext.wudfdumpobjects
-description: The wudfext.wudfdumpobjects extension displays outstanding UMDF objects.
+title: "wudfext.wudfdumpobjects"
+description: "The wudfext.wudfdumpobjects extension displays outstanding UMDF objects."
 keywords: ["wudfext.wudfdumpobjects Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,13 +21,13 @@ The **!wudfext.wudfdumpobjects** extension displays outstanding UMDF objects.
 !wudfext.wudfdumpobjects ObjTrackerAddress
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______ObjTrackerAddress______"></span><span id="_______objtrackeraddress______"></span><span id="_______OBJTRACKERADDRESS______"></span> *ObjTrackerAddress*   
 Specifies the address to track leaked objects. This address is displayed in the driver-stop message in the debugger when a leak occurs.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -110,6 +110,7 @@ WdfTypeMemoryObject    Object: 0x030eefb0, Interface: 0x030eeff0
  
 
  
+
 
 
 

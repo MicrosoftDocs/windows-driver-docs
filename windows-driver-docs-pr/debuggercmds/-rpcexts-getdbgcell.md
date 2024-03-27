@@ -1,6 +1,6 @@
 ---
-title: rpcexts.getdbgcell
-description: The rpcexts.getdbgcell extension displays RPC state information for the specified cell.
+title: "rpcexts.getdbgcell"
+description: "The rpcexts.getdbgcell extension displays RPC state information for the specified cell."
 keywords: ["rpcexts.getdbgcell Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -34,7 +34,7 @@ Specifies the number of the cell to be displayed.
 <span id="_______-_______"></span> **-?**   
 Displays some brief Help text for this extension in the Command Prompt window.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -84,6 +84,7 @@ For a similar example using the DbgRpc tool, see [Get RPC Cell Information](../d
  
 
  
+
 
 
 

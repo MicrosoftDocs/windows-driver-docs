@@ -1,6 +1,6 @@
 ---
-title: gflag (WinDbg)
-description: The gflag extension sets or displays the global flags.
+title: "gflag (WinDbg)"
+description: "The gflag extension sets or displays the global flags."
 keywords: ["gflag Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -36,7 +36,7 @@ Specifies a single global flag. *Abbreviation* is a three-letter abbreviation fo
 <span id="_______-_______"></span> **-?**   
 Displays some Help text for this extension, including a list of global flag abbreviations, in the [Debugger Command window](../debugger/debugger-command-window.md).
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -251,6 +251,7 @@ The following table contains the abbreviations that you can use for the *Abbrevi
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: .scriptproviders (List Script Providers)
-description: The .scriptproviders command lists the active script providers.
+title: ".scriptproviders (List Script Providers)"
+description: "The .scriptproviders command lists the active script providers."
 keywords: [".scriptproviders (List Script Providers) Windows Debugging"]
 ms.date: 02/02/2021
 topic_type:
@@ -21,7 +21,7 @@ The **.scriptproviders** command lists the active script providers.
 .scriptproviders 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______________"></span>    
@@ -59,3 +59,4 @@ Before using any of the .script commands, a scripting provider needs to be loade
 [JavaScript Debugger Scripting](../debugger/javascript-debugger-scripting.md)
 
 [**.scriptload (Load Script)**](-scriptload--load-script-.md)
+

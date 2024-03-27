@@ -1,6 +1,6 @@
 ---
-title: session (WinDbg)
-description: The session extension controls the session context. It can also display a list of all user sessions.
+title: "session (WinDbg)"
+description: "The session extension controls the session context. It can also display a list of all user sessions."
 keywords: ["session Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -34,7 +34,7 @@ Sets the [session context](../debugger/changing-contexts.md#session-context) to 
 <span id="_______-_______"></span> **-?**   
 Displays help for this extension in the Debugger Command window.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Kdexts.dll
 
@@ -53,6 +53,7 @@ For more details and a list of all the session-related extensions that are affec
  
 
  
+
 
 
 

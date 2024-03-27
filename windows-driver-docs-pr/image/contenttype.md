@@ -1,5 +1,5 @@
 ---
-title: ContentType element
+title: ContentType Element
 description: The optional ContentType element specifies the main characteristics of the original document.
 keywords: ["ContentType element Imaging Devices"]
 topic_type:

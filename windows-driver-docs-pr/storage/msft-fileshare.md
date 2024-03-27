@@ -1,5 +1,5 @@
 ---
-title: MSFT\_FileShare class
+title: MSFT_FileShare Class
 description: Models the Windows operating system's concept of a file share.
 ms.assetid: 064B4DA4-5879-4758-A7D1-683DB77F909D
 keywords:

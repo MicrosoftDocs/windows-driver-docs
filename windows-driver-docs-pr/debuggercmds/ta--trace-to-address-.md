@@ -1,6 +1,6 @@
 ---
-title: ta (Trace to Address)
-description: The ta command executes the program until the specified address is reached, displaying each step (including steps within called functions).
+title: "ta (Trace to Address)"
+description: "The ta command executes the program until the specified address is reached, displaying each step (including steps within called functions)."
 keywords: ["ta (Trace to Address) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -79,6 +79,7 @@ For example, the following command explicitly traces through the target code unt
  
 
  
+
 
 
 

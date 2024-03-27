@@ -1,6 +1,6 @@
 ---
-title: defwrites (WinDbg)
-description: The defwrites extension displays the values of the kernel variables used by the cache manager.
+title: "defwrites (WinDbg)"
+description: "The defwrites extension displays the values of the kernel variables used by the cache manager."
 keywords: ["cache manager", "defwrites Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -24,7 +24,7 @@ The **!defwrites** extension displays the values of the kernel variables used by
 ## <span id="ddk__defwrites_dbg"></span><span id="DDK__DEFWRITES_DBG"></span>
 
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Kdexts.dll
  
@@ -60,6 +60,7 @@ In this case, there are no dirty pages. If **CcTotalDirtyPages** reaches 1538 (t
  
 
  
+
 
 
 

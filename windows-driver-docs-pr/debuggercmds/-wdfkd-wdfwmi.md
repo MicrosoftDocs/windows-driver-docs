@@ -1,6 +1,6 @@
 ---
-title: wdfkd.wdfwmi
-description: The wdfkd.wdfwmi extension displays the Microsoft Windows Management Instrumentation (WMI) information for a specified framework device object. 
+title: "wdfkd.wdfwmi"
+description: "The wdfkd.wdfwmi extension displays the Microsoft Windows Management Instrumentation (WMI) information for a specified framework device object. "
 keywords: ["wdfkd.wdfwmi Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,13 +21,13 @@ The **!wdfkd.wdfwmi** extension displays the Microsoft Windows Management Instru
 !wdfkd.wdfwmi Handle
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Handle______"></span><span id="_______handle______"></span><span id="_______HANDLE______"></span> *Handle*   
 A handle to a framework device object.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Wdfkd.dll
 
@@ -46,6 +46,7 @@ The output of the **!wdfkd.wdfwmi** extension includes information about the WMI
  
 
  
+
 
 
 

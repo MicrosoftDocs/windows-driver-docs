@@ -1,6 +1,6 @@
 ---
-title: rpcexts.help
-description: The rpcexts.help extension displays a Help text in the Command Prompt window showing all Rpcexts.dll extension commands.
+title: "rpcexts.help"
+description: "The rpcexts.help extension displays a Help text in the Command Prompt window showing all Rpcexts.dll extension commands."
 keywords: ["rpcexts.help Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -24,7 +24,7 @@ The **!rpcexts.help** extension displays a Help text in the Command Prompt windo
 ## <span id="ddk__rpcexts_help_dbg"></span><span id="DDK__RPCEXTS_HELP_DBG"></span>
 
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -48,6 +48,7 @@ The **!rpcexts.help** extension displays a Help text in the Command Prompt windo
  
 
  
+
 
 
 

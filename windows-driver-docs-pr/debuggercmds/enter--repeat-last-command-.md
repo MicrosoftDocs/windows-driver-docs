@@ -1,6 +1,6 @@
 ---
-title: ENTER (Repeat Last Command)
-description: The ENTER key repeats the last command that you typed.
+title: "ENTER (Repeat Last Command)"
+description: "The ENTER key repeats the last command that you typed."
 keywords: ["ENTER (Repeat Last Command) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -45,6 +45,7 @@ If you set ENTER to repeat the last command, but you want to create white space 
  
 
  
+
 
 
 

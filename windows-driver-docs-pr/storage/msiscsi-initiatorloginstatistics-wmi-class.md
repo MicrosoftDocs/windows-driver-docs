@@ -1,5 +1,5 @@
 ---
-title: MSiSCSI\_InitiatorLoginStatistics WMI Class
+title: MSiSCSI_InitiatorLoginStatistics WMI Class
 description: MSiSCSI\_InitiatorLoginStatistics WMI Class
 ms.date: 10/17/2018
 ---

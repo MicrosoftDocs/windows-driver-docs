@@ -1,6 +1,6 @@
 ---
-title: irpzone (WinDbg)
-description: irpzone
+title: "irpzone (WinDbg)"
+description: "irpzone"
 keywords: ["irpzone extension (obsolete)"]
 ms.date: 05/23/2017
 ---
@@ -16,6 +16,7 @@ The **!irpzone** extension command is obsolete. Use [**!irpfind**](-irpfind.md) 
  
 
  
+
 
 
 

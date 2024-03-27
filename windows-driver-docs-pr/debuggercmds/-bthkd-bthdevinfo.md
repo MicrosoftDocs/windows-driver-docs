@@ -1,6 +1,6 @@
 ---
-title: bthkd.bthdevinfo
-description: The bthkd.bthdevinfo command displays the information about a given BTHENUM created device PDO.
+title: "bthkd.bthdevinfo"
+description: "The bthkd.bthdevinfo command displays the information about a given BTHENUM created device PDO."
 keywords: ["bthkd.bthdevinfo Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -32,7 +32,7 @@ The address of a BTHENUM created device PDO extension.
 
 Bthkd.dll
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [Bluetooth Extensions (Bthkd.dll)](bluetooh-extensions--bthkd-dll-.md)
@@ -40,6 +40,7 @@ Bthkd.dll
  
 
  
+
 
 
 

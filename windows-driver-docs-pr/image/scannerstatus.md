@@ -1,5 +1,5 @@
 ---
-title: ScannerStatus element
+title: ScannerStatus Element
 description: The required ScannerStatus element contains the current status of the scanner-related information that automata (such as time and changing conditions in the scanner) control.
 keywords: ["ScannerStatus element Imaging Devices"]
 topic_type:

@@ -1,5 +1,5 @@
 ---
-title: IPrinterBidiSchemaResponses AddText method
+title: IPrinterBidiSchemaResponses AddText Method
 description: The AddText method adds a new response of type BIDI_TEXT to the collection.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

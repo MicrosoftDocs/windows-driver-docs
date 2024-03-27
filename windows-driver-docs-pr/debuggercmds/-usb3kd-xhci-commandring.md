@@ -1,6 +1,6 @@
 ---
-title: usb3kd.xhci_commandring
-description: The usb3kd.xhci_commandring extension displays information about the command ring data structure associated with a USB 3.0 host controller.
+title: "usb3kd.xhci_commandring"
+description: "The usb3kd.xhci_commandring extension displays information about the command ring data structure associated with a USB 3.0 host controller."
 keywords: ["usb3kd.xhci_commandring Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -84,7 +84,7 @@ DequeueIndex: 24 EnqueueIndex: 24 CycleState: 0
         Empty List
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [USB 3.0 Extensions](usb-3-extensions.md)
@@ -94,4 +94,5 @@ DequeueIndex: 24 EnqueueIndex: 24 CycleState: 0
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
+
 

@@ -1,5 +1,5 @@
 ---
-title: Option attributes for the ColorMode feature
+title: Option Attributes for the ColorMode Feature
 description: Option attributes for the ColorMode feature
 keywords:
 - ColorMode Feature

@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StorageSubSystemToPhysicalDisk class
+title: MSFT_StorageSubSystemToPhysicalDisk Class
 description: Association between StorageSubSystem and PhysicalDisk.
 ms.assetid: a5340475-0b88-4f74-b721-bf32dc7ab398
 keywords:

@@ -1,5 +1,5 @@
 ---
-title: EXT\_TDOP\_OUTPUT\_TYPE\_DEFINITION
+title: EXT_TDOP_OUTPUT_TYPE_DEFINITION
 description: The EXT\_TDOP\_OUTPUT\_TYPE\_DEFINITION sub-operation of the DEBUG\_REQUEST\_EXT\_TYPED\_DATA\_ANSI Request operation prints the definition of the type for the specified typed data.
 keywords: ["EXT_TDOP_OUTPUT_TYPE_DEFINITION Windows Debugging"]
 topic_type:

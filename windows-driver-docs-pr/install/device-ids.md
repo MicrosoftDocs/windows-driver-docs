@@ -1,5 +1,5 @@
 ---
-title: Device ID string
+title: Device ID String
 description: A device ID is a string reported by a device's enumerator. A device has only one device ID. A device ID has the same format as a hardware ID.
 ms.date: 04/08/2022
 ---

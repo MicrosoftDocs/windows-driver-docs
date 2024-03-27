@@ -1,6 +1,6 @@
 ---
-title: for_each_function
-description: The for_each_function extension executes a debugger command for each function, in a specified module, whose name matches a specified pattern.
+title: "for_each_function"
+description: "The for_each_function extension executes a debugger command for each function, in a specified module, whose name matches a specified pattern."
 keywords: ["for_each_function Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -78,7 +78,7 @@ You can use the following aliases in *CommandString*.
 <span id="_______-_______"></span> -?   
 Displays help for this extension.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Ext.dll
 
@@ -153,7 +153,7 @@ fffff880`00f7c044 48895c2408      mov     qword ptr [rsp+8],rbx
 ...
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**!for\_each\_module**](-for-each-module.md)
@@ -161,6 +161,7 @@ fffff880`00f7c044 48895c2408      mov     qword ptr [rsp+8],rbx
  
 
  
+
 
 
 

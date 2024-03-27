@@ -1,5 +1,5 @@
 ---
-title: D3D12 enhanced barriers
+title: D3D12 Enhanced Barriers
 description: Learn about D3D12 enhanced barriers
 keywords:
 - D3D12 enhanced barriers
@@ -8,7 +8,6 @@ keywords:
 - Agility SDK Preview , enhanced barriers
 ms.date: 10/19/2022
 ms.localizationpriority: medium
-prerelease: true
 ---
 
 # D3D12 enhanced barriers

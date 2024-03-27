@@ -1,6 +1,6 @@
 ---
-title: filecache (WinDbg)
-description: The filecache extension displays information regarding the system file cache memory and PTE use.
+title: "filecache (WinDbg)"
+description: "The filecache extension displays information regarding the system file cache memory and PTE use."
 keywords: ["file cache", "filecache Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -30,7 +30,7 @@ Optional. Default value is 0x0. Set *Flags* to 0x1 to sort the output by shared 
 ## <span id="ddk__filecache_dbg"></span><span id="DDK__FILECACHE_DBG"></span>
 
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Kdexts.dll
 
@@ -158,6 +158,7 @@ Control Valid Standby/Dirty Shared Locked Name
  
 
  
+
 
 
 

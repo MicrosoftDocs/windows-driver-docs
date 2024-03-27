@@ -1,6 +1,6 @@
 ---
-title: logexts.logb
-description: The logexts.logb extension displays or flushes the output buffer.
+title: "logexts.logb"
+description: "The logexts.logb extension displays or flushes the output buffer."
 keywords: ["logexts.logb Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -31,7 +31,7 @@ Causes the contents of the output buffer to be displayed in the debugger.
 <span id="_______f"></span><span id="_______F"></span> **f**  
 Flushes the output buffer to the disk.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -67,6 +67,7 @@ The **!logexts.logb f** extension flushes the buffer to the log files. Because t
  
 
  
+
 
 
 

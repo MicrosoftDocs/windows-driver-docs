@@ -1,5 +1,5 @@
 ---
-title: RxNewMapUserBuffer function
+title: RxNewMapUserBuffer Function
 description: RxNewMapUserBuffer returns the user buffer address used for low I/O.
 keywords: ["RxNewMapUserBuffer function Installable File System Drivers"]
 topic_type:

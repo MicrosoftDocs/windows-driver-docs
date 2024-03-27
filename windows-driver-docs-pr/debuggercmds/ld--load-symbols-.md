@@ -1,6 +1,6 @@
 ---
-title: ld (Load Symbols)
-description: The ld command loads symbols for the specified module and updates all module information.
+title: "ld (Load Symbols)"
+description: "The ld command loads symbols for the specified module and updates all module information."
 keywords: ["ld (Load Symbols) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -53,6 +53,7 @@ For more information about deferred (lazy) symbol loading, see [Deferred Symbol 
  
 
  
+
 
 
 

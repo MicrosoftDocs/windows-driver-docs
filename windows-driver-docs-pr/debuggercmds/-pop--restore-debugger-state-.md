@@ -1,6 +1,6 @@
 ---
-title: .pop (Restore Debugger State)
-description: The .pop command restores the state of the debugger to a state that has previously been saved by using the .push (Save Debugger State) command.
+title: ".pop (Restore Debugger State)"
+description: "The .pop command restores the state of the debugger to a state that has previously been saved by using the .push (Save Debugger State) command."
 keywords: ["Restore Debugger State (.pop) command", ".pop (Restore Debugger State) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -23,7 +23,7 @@ The **.pop** command restores the state of the debugger to a state that has prev
 .pop /r /q
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="________r______"></span><span id="________R______"></span> **/r**   
@@ -49,6 +49,7 @@ This command is most useful when used with [scripts](using-script-files.md) and 
  
 
  
+
 
 
 

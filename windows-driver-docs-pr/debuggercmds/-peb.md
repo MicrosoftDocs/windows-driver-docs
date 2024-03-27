@@ -1,6 +1,6 @@
 ---
-title: peb (WinDbg)
-description: The peb extension displays a formatted view of the information in the process environment block (PEB).
+title: "peb (WinDbg)"
+description: "The peb extension displays a formatted view of the information in the process environment block (PEB)."
 keywords: ["PEB (process environment block)", "process, process environment block (PEB)", "peb Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -27,7 +27,7 @@ The **!peb** extension displays a formatted view of the information in the proce
 <span id="_______PEB-Address______"></span><span id="_______peb-address______"></span><span id="_______PEB-ADDRESS______"></span> *PEB-Address*   
 The hexadecimal address of the process whose PEB you want to examine. (This is not the address of the PEB as derived from the kernel process block for the process.) If *PEB-Address* is omitted in user mode, the PEB for the current process is used. If it is omitted in kernel mode, the PEB corresponding to the current [process context](../debugger/changing-contexts.md#process-context) is displayed.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -82,7 +82,7 @@ PEB at 7ffdf000
     SubSystemData:     00000000
     ProcessHeap:       00140000
     ProcessParameters: 00020000
-    WindowTitle:  'D:\Documents and Settings\Administrator\Desktop\Debuggers.lnk'
+    WindowTitle: "'D:\Documents and Settings\Administrator\Desktop\Debuggers.lnk'"
     ImageFile:    'D:\WINDOWS\system32\cmd.exe'
     CommandLine:  '"D:\WINDOWS\system32\cmd.exe" '
     DllPath:      'D:\WINDOWS\system32;D:\WINDOWS\system32;....
@@ -99,6 +99,7 @@ The similar [**!teb**](-teb.md) extension displays the thread environment block.
  
 
  
+
 
 
 

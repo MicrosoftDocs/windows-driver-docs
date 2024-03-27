@@ -1,6 +1,6 @@
 ---
-title: .scroll_prefs (Control Source Scrolling Preferences)
-description: The .scroll_prefs command controls the positioning of the source in a Source window when scrolling to a line.
+title: ".scroll_prefs (Control Source Scrolling Preferences)"
+description: "The .scroll_prefs command controls the positioning of the source in a Source window when scrolling to a line."
 keywords: [".scroll_prefs (Control Source Scrolling Preferences) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -22,7 +22,7 @@ The **.scroll\_prefs** command controls the positioning of the source in a Sourc
 .scroll_prefs 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Before______"></span><span id="_______before______"></span><span id="_______BEFORE______"></span> *Before*   
@@ -50,6 +50,7 @@ When this command is used with no parameters, the current source scrolling prefe
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: irpfind (WinDbg)
-description: The irpfind extension displays information about all I/O request packets (IRP) currently allocated in the target system, or about those IRPs matching the specified search criteria.
+title: "irpfind (WinDbg)"
+description: "The irpfind extension displays information about all I/O request packets (IRP) currently allocated in the target system, or about those IRPs matching the specified search criteria."
 keywords: ["irpfind Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -94,7 +94,7 @@ Specifies the criteria for the search. Only those IRPs that satisfy the given ma
 <span id="_______Data______"></span><span id="_______data______"></span><span id="_______DATA______"></span> *Data*   
 Specifies the data to be matched in the search.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Kdexts.dll
 
@@ -126,6 +126,7 @@ Searching NonPaged pool (8090c000 : 8131e000) for Tag: Irp
  
 
  
+
 
 
 

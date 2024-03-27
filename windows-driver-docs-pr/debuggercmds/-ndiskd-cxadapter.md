@@ -1,6 +1,6 @@
 ---
-title: ndiskd.cxadapter
-description: The ndiskd.cxadapter extension displays information about a NETADAPTER object.
+title: "ndiskd.cxadapter"
+description: "The ndiskd.cxadapter extension displays information about a NETADAPTER object."
 keywords: ["ndiskd.cxadapter Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -23,7 +23,7 @@ For more information about the Network Adapter WDF Class Extension (NetAdapterCx
 !ndiskd.cxadapter [-handle <x>] [-basic] [-power] [-datapath] 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______-handle______"></span><span id="_______-HANDLE______"></span> *-handle*   
@@ -38,7 +38,7 @@ Displays information about the NETPOWERSETTINGS object of the NETADAPTER.
 <span id="_______-datapath______"></span><span id="_______-DATAPATH______"></span> *-datapath*   
 Displays information about the datapath queues.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Ndiskd.dll
 
@@ -179,7 +179,7 @@ DATAPATH QUEUES
     NETRXQUEUE         ffffd1022cc7b0d0
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [Network Driver Design Guide](../network/index.md)
@@ -199,4 +199,5 @@ DATAPATH QUEUES
 [**!wdfkd.wdfhandle**](-wdfkd-wdfhandle.md)
 
  
+
 

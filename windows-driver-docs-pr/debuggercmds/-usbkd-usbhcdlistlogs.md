@@ -1,6 +1,6 @@
 ---
-title: usbkd.usbhcdlistlogs
-description: The usbkd.usbhcdlistlogs command displays a list of all functional device objects (FDOs) associated with the USB port driver (Usbport.sys) and debug logs.
+title: "usbkd.usbhcdlistlogs"
+description: "The usbkd.usbhcdlistlogs command displays a list of all functional device objects (FDOs) associated with the USB port driver (Usbport.sys) and debug logs."
 keywords: ["usbkd.usbhcdlistlogs Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -63,7 +63,7 @@ LOG@: ffffe00001ca11b8
 
 The command output shows two FDOs that represent UHCI host controlers and one FDO that represents an EHCI host controller. Then the output shows the debug log for the one EHCI host controller.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
@@ -71,4 +71,5 @@ The command output shows two FDOs that represent UHCI host controlers and one FD
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
+
 

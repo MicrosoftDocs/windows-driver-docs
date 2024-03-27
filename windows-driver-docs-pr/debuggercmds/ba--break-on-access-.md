@@ -1,6 +1,6 @@
 ---
-title: ba (Break on Access)
-description: The ba command sets a processor breakpoint (often called, less accurately, a data breakpoint). This breakpoint is triggered when the specified memory is accessed.
+title: "ba (Break on Access)"
+description: "The ba command sets a processor breakpoint (often called, less accurately, a data breakpoint). This breakpoint is triggered when the specified memory is accessed."
 keywords: ["ba (Break on Access) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -97,6 +97,26 @@ Causes the breakpoint to be active only when the call stack depth is less than *
 <span id="_C_MinCallStackDepth"></span><span id="_c_mincallstackdepth"></span><span id="_C_MINCALLSTACKDEPTH"></span>**/C** *MinCallStackDepth*  
 Causes the breakpoint to be active only when the call stack depth is larger than *MinCallStackDepth*. You cannot combine this option together with **/c**.
 
+<span id="_______dxObjectExpression______"></span><span id="_______dxObjectExpression______"></span><span id="_______DXOBJECTEXPRESSION______"></span> **/w dx object expression**
+Sets a conditional breakpoint based on the boolean value returned by dx object expression. The argument is a data model (dx) expression which evaluates to true (matches condition – break) or false (does not match condition – do not break).
+
+This example sets a conditional breakpoint based on the value of globalVariable. This allows an access breakpoint, for instance, to check the value that was written when determining if the debugger should break in.
+
+```dbgcmd
+ba w 4 /w "mymodule!globalVariable == 4" mymodule!globalVariable
+```
+
+This example shows how to set a breakpoint using JavaScript.
+
+```dbgcmd
+ba w 4 /w "@$scriptContents.myFunc(mymodule!globalVariable)" mymodule!globalVariable
+```
+
+For more information on debugger objects, see [dx (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md).
+
+For more information about conditional breakpoints, see [Setting a Conditional Breakpoint](../debugger/setting-a-conditional-breakpoint.md).
+
+
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies any valid address. If the application accesses memory at this address, the debugger stops execution and displays the current values of all registers and flags. This address must be an offset and suitably aligned to match the *Size* parameter. (For example, if *Size* is 4, *Address* must be a multiple of 4.) If you omit *Address*, the current instruction pointer is used. For more information about the syntax, see [Address and Address Range Syntax](address-and-address-range-syntax.md).
 
@@ -163,6 +183,7 @@ kd> ba i4 3f8
  
 
  
+
 
 
 

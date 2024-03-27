@@ -1,5 +1,5 @@
 ---
-title: Testing and debugging TDR during driver development
+title: Testing and Debugging TDR During Driver Development
 description: TDR testing and debugging information for developers
 keywords:
 - TDR debugging, driver development
@@ -12,7 +12,6 @@ keywords:
 - TDR tests, WHLK
 - TDR tests, Windows Hardware Lab Kit
 ms.date: 12/06/2023
-ms.custom: contperf-fy21q3
 ---
 
 # Testing and debugging TDR during driver development

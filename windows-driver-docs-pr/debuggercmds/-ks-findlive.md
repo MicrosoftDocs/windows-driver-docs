@@ -1,6 +1,6 @@
 ---
-title: ks.findlive
-description: The ks.findlive extension searches the internal Ks.sys debug log to attempt to find live objects of a specified type.
+title: "ks.findlive"
+description: "The ks.findlive extension searches the internal Ks.sys debug log to attempt to find live objects of a specified type."
 keywords: ["ks.findlive Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,7 +21,7 @@ The **!ks.findlive** extension searches the internal Ks.sys debug log to attempt
 !ks.findlive Type [Entries] [Level] 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Type______"></span><span id="_______type______"></span><span id="_______TYPE______"></span> *Type*   
@@ -33,7 +33,7 @@ If this parameter is zero or omitted, the entire log is searched.
 <span id="_______Level______"></span><span id="_______level______"></span><span id="_______LEVEL______"></span> *Level*   
 Optional. Specifies the level of detail to display on a 0-7 scale with progressively more information displayed for higher values. To display all available details, supply a value of 7.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -67,6 +67,7 @@ This extension requires that the target computer be running a checked (debug) ve
  
 
  
+
 
 
 

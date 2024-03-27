@@ -1,5 +1,5 @@
 ---
-title: GetExtendedStatus method of the MSFT\_StorageJob class
+title: GetExtendedStatus Method of the MSFT_StorageJob Class
 description: Retrieves extended status information for an unsuccessful storage job.
 ms.assetid: 75B8C19E-F25D-4201-B895-24B8B0587E4A
 keywords:

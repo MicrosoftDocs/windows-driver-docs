@@ -1,5 +1,5 @@
 ---
-title: XDDM overview
+title: XDDM Overview
 description: Windows 2000 Display Driver Model (XDDM) Design Guide
 keywords:
 - display devices WDK

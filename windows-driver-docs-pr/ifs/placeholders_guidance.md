@@ -1,11 +1,10 @@
 ---
-title: Handling placeholders
+title: Handling Placeholders
 description: Describes how to implement placeholders and how to handle placeholders
 keywords:
 - filter drivers file system , implementing placeholders
 - filter drivers file system, handling placeholders
 ms.date: 02/22/2023
-prerelease: false
 ---
 
 # Handling placeholders

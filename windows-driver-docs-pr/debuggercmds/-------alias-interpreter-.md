@@ -1,7 +1,7 @@
 ---
-title: $ (Alias Interpreter)
-description: A dollar sign followed by a pair of braces ( $ ) evaluates to a variety of values related to the specified user-named alias.
-keywords: ["$ (Alias Interpreter) Windows Debugging"]
+title: "${ } (Alias Interpreter)"
+description: "A dollar sign followed by a pair of braces ( ${ } ) evaluates to a variety of values related to the specified user-named alias."
+keywords: ["${ } (Alias Interpreter) Windows Debugging"]
 ms.date: 08/30/2023
 topic_type:
 - apiref

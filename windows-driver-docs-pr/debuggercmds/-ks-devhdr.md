@@ -1,6 +1,6 @@
 ---
-title: ks.devhdr (WinDbg)
-description: The ks.devhdr extension displays the kernel streaming device header associated with the given WDM object.
+title: "ks.devhdr (WinDbg)"
+description: "The ks.devhdr extension displays the kernel streaming device header associated with the given WDM object."
 keywords: ["ks.devhdr Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,13 +21,13 @@ The **!ks.devhdr** extension displays the kernel streaming device header associa
 !ks.devhdr DeviceObject 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______DeviceObject______"></span><span id="_______deviceobject______"></span><span id="_______DEVICEOBJECT______"></span> *DeviceObject*   
 This parameter specifies a pointer to a WDM device object. If *DeviceObject* is not valid, the command returns an error.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -71,6 +71,7 @@ Device Header 824ca1e0
  
 
  
+
 
 
 

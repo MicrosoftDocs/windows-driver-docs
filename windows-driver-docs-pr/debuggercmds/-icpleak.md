@@ -1,6 +1,6 @@
 ---
-title: icpleak (WinDbg)
-description: The icpleak extension examines all I/O completion objects in the system for the object with the largest number of queued entries.
+title: "icpleak (WinDbg)"
+description: "The icpleak extension examines all I/O completion objects in the system for the object with the largest number of queued entries."
 keywords: ["I/O completion", "icpleak Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,30 +21,15 @@ The **!icpleak** extension examines all I/O completion objects in the system for
 !icpleak [HandleFlag]
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______HandleFlag______"></span><span id="_______handleflag______"></span><span id="_______HANDLEFLAG______"></span> *HandleFlag*   
 If this flag is set, the display also includes all processes that have a handle to the object with the largest number of queued entries.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Unavailable</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Kdexts.dll</p></td>
-</tr>
-</tbody>
-</table>
+Windows XP and later - Kdexts.dll
 
  
 
@@ -61,4 +46,5 @@ This extension works only if the system maintains type lists. If the *HandleFlag
 You can stop at any point by pressing CTRL+BREAK (in WinDbg) or CTRL+C (in KD).
 
  
+
 

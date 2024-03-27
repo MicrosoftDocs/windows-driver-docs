@@ -1,6 +1,6 @@
 ---
-title: scm (WinDbg)
-description: The scm extension displays the specified shared cache map.
+title: "scm (WinDbg)"
+description: "The scm extension displays the specified shared cache map."
 keywords: ["shared cache map", "cache manager", "scm Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,13 +21,13 @@ The **!scm** extension displays the specified shared cache map.
 !scm Address
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the address of the shared cache map.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -61,6 +61,7 @@ In Windows XP and later versions of Windows, use the [**dt nt!\_SHARED\_CACHE\_M
  
 
  
+
 
 
 

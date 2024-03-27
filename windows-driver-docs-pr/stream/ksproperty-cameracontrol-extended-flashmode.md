@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FLASHMODE (normal and sequence)
+title: KSPROPERTY_CAMERACONTROL_EXTENDED_FLASHMODE (Normal and Sequence)
 description: The flash property control sets flash mode operation for both normal and sequence photo mode of the camera.
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_FLASHMODE Streaming Media Devices"]
 topic_type:

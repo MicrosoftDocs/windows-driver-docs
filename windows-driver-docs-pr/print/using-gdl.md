@@ -1,5 +1,5 @@
 ---
-title: Use GDL to create configurations and snapshots
+title: Use GDL to Create Configurations and Snapshots
 description: The following sections show how to use GDL to create configurations and snapshots.
 keywords:
 - GDL WDK , programming with GDL

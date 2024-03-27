@@ -1,6 +1,6 @@
 ---
-title: wdfkd.wdfhandle
-description: The wdfkd.wdfhandle extension displays information about a specified framework object handle, such as the handle type, object context pointers, and the underlying framework object pointer.
+title: "wdfkd.wdfhandle"
+description: "The wdfkd.wdfhandle extension displays information about a specified framework object handle, such as the handle type, object context pointers, and the underlying framework object pointer."
 keywords: ["wdfkd.wdfhandle Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,7 +21,7 @@ The **!wdfkd.wdfhandle** extension displays information about a specified framew
 !wdfkd.wdfhandle Handle [Flags]
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Handle______"></span><span id="_______handle______"></span><span id="_______HANDLE______"></span> *Handle*   
@@ -45,7 +45,7 @@ The handle information will be displayed in a more compact format.
 <span id="Bit_8__0x100_"></span><span id="bit_8__0x100_"></span><span id="BIT_8__0X100_"></span>Bit 8 (0x100)  
 The display will left align internal type information. This flag is valid only when bit 4 (0x10) is set.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Wdfkd.dll
 
@@ -86,6 +86,7 @@ In the preceding example, the input handle refers to a WDFDEVICE object. This pa
  
 
  
+
 
 
 

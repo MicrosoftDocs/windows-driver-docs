@@ -1,6 +1,6 @@
 ---
-title: avrf (WinDbg)
-description: The avrf extension controls the settings of Application Verifier and displays a variety of output produced by Application Verifier.
+title: "avrf (WinDbg)"
+description: "The avrf extension controls the settings of Application Verifier and displays a variety of output produced by Application Verifier."
 keywords: ["avrf Windows Debugging"]
 ms.date: 06/24/2022
 topic_type:
@@ -113,7 +113,7 @@ Specifies a target range. *Start* is the beginning address of the target range. 
 <span id="-skp___Start_End___dll_Module___all___Time____"></span><span id="-skp___start_end___dll_module___all___time____"></span><span id="-SKP___START_END___DLL_MODULE___ALL___TIME____"></span>**-skp \[** *Start End* **\| dll** *Module* **\| all \|** *Time* **\]**
 Specifies an exclusion range. *Start* is the beginning address of the exclusion range. *End* is the ending address of the exclusion range. Module specifies the name of a module to be targeted or excluded. *Module* specifies the name (including the .exe or .dll extension, but not including the path) of a module to be excluded. If you enter **-skp all**, all target ranges or exclusion ranges are reset. If you enter a*Time* value, all faults are suppressed for *Time* milliseconds after execution resumes.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 exts.dll
 
@@ -128,3 +128,4 @@ When the **!avrf** extension is used with no parameters, it displays the current
 If an Application Verifier Stop has occurred, the **!avrf** extension with no parameters will reveal the nature of the stop and its cause. For some examples, see [Debugging Application Verifier Stops](../devtest/application-verifier-debugging-application-verifier-stops.md).
 
 If symbols for ntdll.dll and verifier.dll are missing, the **!avrf** extension generates an error message. For information about how to address this problem, see "Debugger install and setup" in [Debugging Application Verifier Stops](../devtest/application-verifier-debugging-application-verifier-stops.md).
+

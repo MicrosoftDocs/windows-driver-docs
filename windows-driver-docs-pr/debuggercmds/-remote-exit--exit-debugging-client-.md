@@ -1,6 +1,6 @@
 ---
-title: .remote_exit (Exit Debugging Client)
-description: The .remote_exit command exits the debugging client but does not end the debugging session.
+title: ".remote_exit (Exit Debugging Client)"
+description: "The .remote_exit command exits the debugging client but does not end the debugging session."
 keywords: ["Exit Debugging Client (.remote_exit) command", "remote debugging through the debugger, Exit Debugging Client (.remote_exit) command", ".remote_exit (Exit Debugging Client) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -52,6 +52,7 @@ You cannot exit from a debugging client through a script that is executed in Win
  
 
  
+
 
 
 

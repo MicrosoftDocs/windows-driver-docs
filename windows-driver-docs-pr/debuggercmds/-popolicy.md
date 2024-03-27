@@ -1,6 +1,6 @@
 ---
-title: popolicy (WinDbg)
-description: The popolicy extension displays the power policy of the target computer.
+title: "popolicy (WinDbg)"
+description: "The popolicy extension displays the power policy of the target computer."
 keywords: ["popolicy Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -27,7 +27,7 @@ The **!popolicy** extension displays the power policy of the target computer.
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the address of the power policy structure to display. If this is omitted, then nt!PopPolicy is displayed.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -74,7 +74,7 @@ SYSTEM_POWER_POLICY (R.1) @ 0x80164d58
   MinThrottle:             0%
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [Plug and Play and Power Debugger Commands](../debugger/plug-and-play-and-power-debugger-commands.md)
@@ -82,6 +82,7 @@ SYSTEM_POWER_POLICY (R.1) @ 0x80164d58
  
 
  
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: SetDescription method of the MSFT\_StorageSubSystem class
+title: SetDescription Method of the MSFT_StorageSubSystem Class
 description: Sets the Description property of the storage subsystem object instance.
 ms.assetid: F0EDAB49-15C0-442C-A8A7-37567060FC5F
 keywords:

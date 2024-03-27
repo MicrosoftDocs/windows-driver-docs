@@ -1,5 +1,5 @@
 ---
-title: Flush method of the MSFT\_Volume class
+title: Flush Method of the MSFT_Volume Class
 description: Flushes the cached data in the volume's file system to disk.
 ms.assetid: 25E48B8F-65C7-46D5-BFFE-6573133148EB
 keywords:

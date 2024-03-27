@@ -1,6 +1,6 @@
 ---
-title: cbreg (WinDbg)
-description: The cbreg extension displays CardBus Socket registers and CardBus Exchangable Card Architecture (ExCA) registers.
+title: "cbreg (WinDbg)"
+description: "The cbreg extension displays CardBus Socket registers and CardBus Exchangable Card Architecture (ExCA) registers."
 keywords: ["CardBus", "ExCA registers", "cbreg Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -30,7 +30,7 @@ Indicates that *Address* is a physical address rather than a virtual address.
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the address of the register to be displayed.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -62,6 +62,7 @@ The [**!exca**](-exca.md) extension can be used to display PCIC ExCA registers b
  
 
  
+
 
 
 

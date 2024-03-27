@@ -1,6 +1,6 @@
 ---
-title: openmaps (WinDbg)
-description: The openmaps extension displays the referenced buffer control blocks (BCBs) and virtual address control blocks (VACBs) for the specified shared cache map.
+title: "openmaps (WinDbg)"
+description: "The openmaps extension displays the referenced buffer control blocks (BCBs) and virtual address control blocks (VACBs) for the specified shared cache map."
 keywords: ["BCB (buffer control block)", "VACB (virtual address control block)", "shared cache map", "cache manager", "openmaps Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,7 +21,7 @@ The **!openmaps** extension displays the referenced buffer control blocks (BCBs)
 !openmaps Address [Flag]
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
@@ -45,6 +45,7 @@ For information about other cache management extensions, see the [**!cchelp**](-
  
 
  
+
 
 
 

@@ -4,7 +4,6 @@ description: Video Miniport Drivers on Multiple Windows Versions (Windows 2000 M
 keywords:
 - video miniport drivers WDK Windows 2000 , multiple Windows versions
 ms.date: 12/06/2018
-ms.custom: seodec18
 ---
 
 # Video Miniport Drivers on Multiple Windows Versions (Windows 2000 Model)
@@ -14,8 +13,3 @@ If you plan to modify a video miniport driver written for Windows NT 4.0 to run 
  
 
  
-
-
-
-
-

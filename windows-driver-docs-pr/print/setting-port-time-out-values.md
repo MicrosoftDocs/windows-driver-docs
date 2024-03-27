@@ -1,5 +1,5 @@
 ---
-title: Set port time-out values
+title: Set Port Time-Out Values
 description: Provides information about how to set port time-out values.
 keywords:
 - port management WDK print , time-out values

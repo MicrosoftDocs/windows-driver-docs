@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StorageSetting class
+title: MSFT_StorageSetting Class
 description: Represents various operating system-wide settings related to storage management.
 ms.assetid: 5F956BBF-8FAB-44B2-A2C0-F234813D979B
 keywords:

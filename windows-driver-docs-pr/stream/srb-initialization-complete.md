@@ -1,5 +1,5 @@
 ---
-title: SRB\_INITIALIZATION\_COMPLETE
+title: SRB_INITIALIZATION_COMPLETE
 description: SRB\_INITIALIZATION\_COMPLETE
 keywords: ["SRB_INITIALIZATION_COMPLETE Streaming Media Devices"]
 topic_type:

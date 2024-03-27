@@ -1,5 +1,5 @@
 ---
-title: MSFT\_DiskImage class
+title: MSFT_DiskImage Class
 description: Represents a disk image.
 ms.assetid: A895A5DB-39C7-4633-9C8C-3DA8AE8BD81A
 keywords:

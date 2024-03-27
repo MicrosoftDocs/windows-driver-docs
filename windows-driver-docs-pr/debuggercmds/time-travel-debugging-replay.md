@@ -1,7 +1,8 @@
 ---
-title: Time Travel Debugging - Replay a trace
-description: This section describes how to replay time travel traces.
-ms.date: 01/22/2020
+title: "Time Travel Debugging - Replay a trace"
+description: "This section describes how to replay time travel traces."
+keywords: ["Replay a trace", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
+ms.date: 03/13/2024
 ---
 
 # Time Travel Debugging - Replay a trace
@@ -121,7 +122,6 @@ Provide a time position in any of the following formats to travel to that point 
 
 For more information, see [Time Travel Debugging - !tt (time travel)](time-travel-debugging-extension-tt.md).
 
-
 ## !positions
 
 Use `!positions` to display all the active threads, including their position in the trace. For more information, see [Time Travel Debugging - !positions (time travel)](time-travel-debugging-extension-positions.md).
@@ -205,3 +205,4 @@ For information on the `!tt`, `!positions` and the `!index` commands see [Time T
 [Time Travel Debugging - Working with trace files](time-travel-debugging-trace-file-information.md)
 
 [Time Travel Debugging - Sample App Walkthrough](time-travel-debugging-walkthrough.md)
+

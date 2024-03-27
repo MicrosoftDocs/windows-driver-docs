@@ -1,6 +1,6 @@
 ---
-title: wdfkd.wdfmemory
-description: The wdfkd.wdfmemory extension displays the address and size of the buffer that is associated with a framework memory object.
+title: "wdfkd.wdfmemory"
+description: "The wdfkd.wdfmemory extension displays the address and size of the buffer that is associated with a framework memory object."
 keywords: ["wdfkd.wdfmemory Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,13 +21,13 @@ The **!wdfkd.wdfmemory** extension displays the address and size of the buffer t
 !wdfkd.wdfmemory Handle
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Handle______"></span><span id="_______handle______"></span><span id="_______HANDLE______"></span> *Handle*   
 A handle to a framework memory object.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Wdfkd.dll
 
@@ -42,6 +42,7 @@ For more information, see [Kernel-Mode Driver Framework Debugging](../debugger/k
  
 
  
+
 
 
 

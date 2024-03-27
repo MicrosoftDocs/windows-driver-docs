@@ -1,11 +1,10 @@
 ---
-title: About placeholders
+title: About Placeholders
 description: Defines file system placeholders
 keywords:
 - filter drivers file system , placeholders
 - minifilter, file system placeholders
 ms.date: 02/22/2023
-prerelease: false
 ---
 
 # About placeholders

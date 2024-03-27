@@ -1,6 +1,6 @@
 ---
-title: pat (WinDbg)
-description: The pat extension displays the Page Attribute Table (PAT) registers for the target processor.
+title: "pat (WinDbg)"
+description: "The pat extension displays the Page Attribute Table (PAT) registers for the target processor."
 keywords: ["PAT", "pat Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -22,7 +22,7 @@ The **!pat** extension displays the Page Attribute Table (PAT) registers for the
 !pat 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Flag______"></span><span id="_______flag______"></span><span id="_______FLAG______"></span> *Flag*   
@@ -39,6 +39,7 @@ This extension command can only be used with an x86-based target computer.
  
 
  
+
 
 
 

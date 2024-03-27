@@ -1,6 +1,6 @@
 ---
-title: n (Set Number Base)
-description: The n command sets the default number base (radix) to the specified value or displays the current number base.Do not confuse this command with the ~n (Suspend Thread) command.
+title: "n (Set Number Base)"
+description: "The n command sets the default number base (radix) to the specified value or displays the current number base.Do not confuse this command with the ~n (Suspend Thread) command."
 keywords: ["n (Set Number Base) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -81,6 +81,7 @@ In all MASM expressions, numeric values are interpreted as numbers in the curren
  
 
  
+
 
 
 

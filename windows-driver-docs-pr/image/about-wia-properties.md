@@ -1,5 +1,5 @@
 ---
-title: About WIA properties
+title: About WIA Properties
 description: About WIA properties
 ms.date: 03/27/2023
 ---

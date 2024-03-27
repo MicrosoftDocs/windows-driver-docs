@@ -1,5 +1,5 @@
 ---
-title: FLT_PARAMETERS for IRP_MJ_QUERY_INFORMATION union
+title: FLT_PARAMETERS for IRP_MJ_QUERY_INFORMATION Union
 description: Union component used when the MajorFunction field of the FLT_IO_PARAMETER_BLOCK structure for the operation is IRP_MJ_QUERY_INFORMATION.
 keywords: ["FLT_PARAMETERS for IRP_MJ_QUERY_INFORMATION union Installable File System Drivers", "FLT_PARAMETERS union Installable File System Drivers", "PFLT_PARAMETERS union pointer Installable File System Drivers"]
 topic_type:

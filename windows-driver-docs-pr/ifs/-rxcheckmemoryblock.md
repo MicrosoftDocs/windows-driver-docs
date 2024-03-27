@@ -1,5 +1,5 @@
 ---
-title: \_RxCheckMemoryBlock routine
+title: _RxCheckMemoryBlock Routine
 description: \_RxCheckMemoryBlock checks a memory block for a special RX\_POOL\_HEADER header signature.
 keywords: ["_RxCheckMemoryBlock routine Installable File System Drivers"]
 topic_type:

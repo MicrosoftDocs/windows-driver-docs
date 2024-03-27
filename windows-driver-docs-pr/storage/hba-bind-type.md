@@ -1,5 +1,5 @@
 ---
-title: HBA\_BIND\_TYPE
+title: HBA_BIND_TYPE
 description: HBA\_BIND\_TYPE
 ms.date: 10/17/2018
 ---

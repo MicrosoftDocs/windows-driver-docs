@@ -1,5 +1,5 @@
 ---
-title: InputBins property
+title: InputBins Property
 description: Contains all of the information about the device input bins.
 ms.date: 09/07/2021
 ---

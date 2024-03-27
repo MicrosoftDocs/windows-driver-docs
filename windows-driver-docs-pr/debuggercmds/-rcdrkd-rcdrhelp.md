@@ -1,6 +1,6 @@
 ---
-title: rcdrkd.rcdrhelp
-description: The rcdrkd.rcdrhelp command displays help for the RCDRKD debugger extension commands.
+title: "rcdrkd.rcdrhelp"
+description: "The rcdrkd.rcdrhelp command displays help for the RCDRKD debugger extension commands."
 keywords: ["rcdrkd.rcdrhelp Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -22,7 +22,7 @@ The **!rcdrkd.rcdrhelp** command displays help for the RCDRKD debugger extension
 
 Rcdrkd.dll
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [RCDRKD Extensions](rcdrkd-extensions.md)
@@ -30,6 +30,7 @@ Rcdrkd.dll
  
 
  
+
 
 
 

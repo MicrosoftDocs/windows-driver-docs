@@ -1,6 +1,6 @@
 ---
-title: cppexr (WinDbg)
-description: The cppexr extension displays the contents of a C++ exception record.
+title: "cppexr (WinDbg)"
+description: "The cppexr extension displays the contents of a C++ exception record."
 keywords: ["exception records", "cppexr Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,13 +21,13 @@ The **!cppexr** extension displays the contents of a C++ exception record.
     !cppexr Address 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the address of the C++ exception record to display.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -63,6 +63,7 @@ The **!cppexr** extension is useful for determining the type of a C++ exception.
  
 
  
+
 
 
 

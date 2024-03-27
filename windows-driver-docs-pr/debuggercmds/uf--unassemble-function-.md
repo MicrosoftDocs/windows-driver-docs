@@ -1,6 +1,6 @@
 ---
-title: uf (Unassemble Function)
-description: The uf command displays an assembly translation of the specified function in memory.
+title: "uf (Unassemble Function)"
+description: "The uf command displays an assembly translation of the specified function in memory."
 keywords: ["uf (Unassemble Function) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -69,6 +69,7 @@ The display shows the whole function, according to the function order.
  
 
  
+
 
 
 

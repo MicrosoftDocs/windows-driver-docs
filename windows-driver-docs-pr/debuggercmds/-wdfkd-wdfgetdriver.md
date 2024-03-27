@@ -1,6 +1,6 @@
 ---
-title: wdfkd.wdfgetdriver
-description: The wdfkd.wdfgetdriver extension displays the name of the current default driver.
+title: "wdfkd.wdfgetdriver"
+description: "The wdfkd.wdfgetdriver extension displays the name of the current default driver."
 keywords: ["wdfkd.wdfgetdriver Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,7 +21,7 @@ The **!wdfkd.wdfgetdriver** extension displays the name of the current default d
 !wdfkd.wdfgetdriver
 ```
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Wdfkd.dll
 
@@ -36,6 +36,7 @@ For more information, see [Kernel-Mode Driver Framework Debugging](../debugger/k
  
 
  
+
 
 
 

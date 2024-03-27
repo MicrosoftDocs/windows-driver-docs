@@ -1,6 +1,6 @@
 ---
-title: dds, dps, dqs (Display Words and Symbols)
-description: The dds, dps, and dqs commands display the contents of memory in the given range. This memory is assumed to be a series of addresses in the symbol table. 
+title: "dds, dps, dqs (Display Words and Symbols)"
+description: "The dds, dps, and dqs commands display the contents of memory in the given range. This memory is assumed to be a series of addresses in the symbol table. "
 keywords: ["dds, dps, dqs (Display Words and Symbols) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -76,6 +76,7 @@ If line number information has been enabled, source file names and line numbers 
  
 
  
+
 
 
 

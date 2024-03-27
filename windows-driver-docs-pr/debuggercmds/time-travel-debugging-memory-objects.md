@@ -1,12 +1,14 @@
 ---
-title: TTD Memory Objects
-description: This section describes the memory model objects associated with time travel debugging.
+title: "TTD Memory Objects"
+description: "This section describes the memory model objects associated with time travel debugging."
+keywords: ["TTD Memory Objects", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
 ms.date: 01/16/2018
 ---
 
 # TTD Memory Objects
 
 ## Description
+
 *TTD Memory* is a method that takes beginAddress, endAddress and dataAccessMask parameters and returns a collection of memory objects that contain memory access information.
 
 ## Parameters
@@ -16,7 +18,6 @@ ms.date: 01/16/2018
 | beginAddress | The beginning address of the memory object prefaced with 0x.|
 | endAddress| The ending address of the memory object prefaced with 0x.|
 | dataAccessMask |The data access mask contained in double quotes. This can be r for read, w for write, e for execute and c for change. |
-
 
 ## Children
 
@@ -114,4 +115,5 @@ In this example all of the postions in the trace where the four bytes of memory 
 [Time Travel Debugging - Introduction to Time Travel Debugging objects](time-travel-debugging-object-model.md)
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
+
 

@@ -1,6 +1,6 @@
 ---
-title: htrace (WinDbg)
-description: The htrace extension displays stack trace information for one or more handles.
+title: "htrace (WinDbg)"
+description: "The htrace extension displays stack trace information for one or more handles."
 keywords: ["handle, htrace extension", "htrace Windows Debugging"]
 ms.date: 08/29/2023
 topic_type:
@@ -130,3 +130,4 @@ Handle 0x7DC - OPEN:
 Parsed 0x6 stack traces.
 Dumped 0x5 stack traces.
 ```
+

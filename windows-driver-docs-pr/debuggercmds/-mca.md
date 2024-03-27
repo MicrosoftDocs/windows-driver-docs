@@ -1,6 +1,6 @@
 ---
-title: mca (WinDbg)
-description: On an x86 target computer, the mca extension displays the machine check architecture (MCA) registers.
+title: "mca (WinDbg)"
+description: "On an x86 target computer, the mca extension displays the machine check architecture (MCA) registers."
 keywords: ["machine check architecture (MCA)", "MCA (machine check architecture)", "mca Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -100,6 +100,7 @@ CP F/M/S Manufacturer  MHz Update Signature Features
  
 
  
+
 
 
 

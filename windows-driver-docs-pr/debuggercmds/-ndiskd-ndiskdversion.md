@@ -1,6 +1,6 @@
 ---
-title: ndiskd.ndiskdversion
-description: The ndiskd.ndiskdversion extension displays information about ndiskd itself.
+title: "ndiskd.ndiskdversion"
+description: "The ndiskd.ndiskdversion extension displays information about ndiskd itself."
 keywords: ["ndiskd.ndiskdversion Windows Debugging"]
 ms.date: 06/11/2020
 topic_type:
@@ -53,3 +53,4 @@ The following example shows output for **!ndiskd.ndiskdversion**.
 [**NDIS extensions (Ndiskd.dll)**](ndis-extensions--ndiskd-dll-.md)
 
 [**!ndiskd.help**](-ndiskd-help.md)
+

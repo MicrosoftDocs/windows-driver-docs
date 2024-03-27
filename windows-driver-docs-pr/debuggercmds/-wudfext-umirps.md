@@ -1,6 +1,6 @@
 ---
-title: wudfext.umirps
-description: The wudfext.umirps extension displays the list of pending user-mode I/O request packets (UM IRPs) in the host process.
+title: "wudfext.umirps"
+description: "The wudfext.umirps extension displays the list of pending user-mode I/O request packets (UM IRPs) in the host process."
 keywords: ["wudfext.umirps Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,7 +21,7 @@ The **!wudfext.umirps** extension displays the list of pending user-mode I/O req
 !wudfext.umirps NumberOfIrps Flags
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______NumberOfIrps______"></span><span id="_______numberofirps______"></span><span id="_______NUMBEROFIRPS______"></span> *NumberOfIrps*   
@@ -33,7 +33,7 @@ Optional. Specifies the type of information to be displayed. *Flags* can be any 
 <span id="Bit_0__0x01_"></span><span id="bit_0__0x01_"></span><span id="BIT_0__0X01_"></span>Bit 0 (0x01)  
 Displays details about the pending IRPs.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -88,6 +88,7 @@ To determine the corresponding kernel-mode IRP, use the [**!wudfext.wudfdownkmir
  
 
  
+
 
 
 

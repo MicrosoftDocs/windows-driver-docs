@@ -1,6 +1,6 @@
 ---
-title: ndiskd.pendingnbls
-description: The ndiskd.pendingnbls extension displays pending NBLs (NET_BUFFER_LISTs) that are in transit.
+title: "ndiskd.pendingnbls"
+description: "The ndiskd.pendingnbls extension displays pending NBLs (NET_BUFFER_LISTs) that are in transit."
 keywords: ["ndiskd.pendingnbls Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -20,7 +20,7 @@ The **!ndiskd.pendingnbls** extension displays pending NBLs ([**NET\_BUFFER\_LIS
 !ndiskd.pendingnbls [-handle <x>] [-fullstack] [-verbosity <x>] 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 <span id="_______-handle______"></span><span id="_______-HANDLE______"></span> *-handle*   
 Handle of an NDIS miniport, filter, or open.
@@ -126,3 +126,4 @@ Search complete.
 [**!ndiskd.minidriver**](-ndiskd-minidriver.md)
 
 [**bp, bu, bm (Set Breakpoint)**](bp--bu--bm--set-breakpoint-.md)
+

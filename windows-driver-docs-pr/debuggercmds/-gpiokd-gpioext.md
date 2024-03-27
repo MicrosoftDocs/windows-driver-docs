@@ -1,6 +1,6 @@
 ---
-title: gpiokd.gpioext
-description: The gpiokd.gpioext command displays information about a GPIO controller.
+title: "gpiokd.gpioext"
+description: "The gpiokd.gpioext command displays information about a GPIO controller."
 keywords: ["gpiokd.gpioext Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -64,7 +64,7 @@ Flags that specify which information is displayed. This parameter is a bitwise O
 
 Gpiokd.dll
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [GPIO Extensions](gpio-extensions.md)
@@ -72,6 +72,7 @@ Gpiokd.dll
  
 
  
+
 
 
 

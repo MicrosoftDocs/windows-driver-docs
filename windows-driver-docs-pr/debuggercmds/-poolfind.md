@@ -1,6 +1,6 @@
 ---
-title: poolfind (WinDbg)
-description: The poolfind extension finds all instances of a specific pool tag in either nonpaged or paged memory pools.
+title: "poolfind (WinDbg)"
+description: "The poolfind extension finds all instances of a specific pool tag in either nonpaged or paged memory pools."
 keywords: ["poolfind Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -112,6 +112,7 @@ kd>
  
 
  
+
 
 
 

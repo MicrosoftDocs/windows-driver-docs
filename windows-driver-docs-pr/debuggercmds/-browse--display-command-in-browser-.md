@@ -1,6 +1,6 @@
 ---
-title: .browse (Display Command in Browser)
-description: The .browse command displays the output of a specified command in a new Command Browser window.
+title: ".browse (Display Command in Browser)"
+description: "The .browse command displays the output of a specified command in a new Command Browser window."
 keywords: [".browse (Display Command in Browser) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,7 +21,7 @@ The **.browse** command displays the output of a specified command in a new [Com
 .browse Command
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="Command"></span><span id="command"></span><span id="COMMAND"></span>*Command*  
@@ -38,6 +38,7 @@ The following example uses the **.browse** command to display the output of the 
  
 
  
+
 
 
 

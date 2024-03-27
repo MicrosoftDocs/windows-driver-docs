@@ -1,6 +1,6 @@
 ---
-title: .show_sym_failures
-description: The .show_sym_failures command enables or disables the display of symbol lookup failures and type lookup failures.
+title: ".show_sym_failures"
+description: "The .show_sym_failures command enables or disables the display of symbol lookup failures and type lookup failures."
 keywords: [".show_sym_failures Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -24,7 +24,7 @@ The **.show\_sym\_failures** command enables or disables the display of symbol l
 .show_sym_failures /T
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="________s______"></span><span id="________S______"></span> **/s**   
@@ -53,6 +53,7 @@ Disables the display of type lookup failures.
  
 
  
+
 
 
 

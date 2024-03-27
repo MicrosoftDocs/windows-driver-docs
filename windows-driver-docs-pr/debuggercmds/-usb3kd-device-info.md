@@ -1,6 +1,6 @@
 ---
-title: usb3kd.device_info
-description: The usb3kd.device_info command displays information about a USB device in the USB 3.0 tree.
+title: "usb3kd.device_info"
+description: "The usb3kd.device_info command displays information about a USB device in the USB 3.0 tree."
 keywords: ["usb3kd.device_info Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -99,7 +99,7 @@ Device Event History:
     ...
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [USB 3.0 Extensions](usb-3-extensions.md)
@@ -109,4 +109,5 @@ Device Event History:
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
+
 

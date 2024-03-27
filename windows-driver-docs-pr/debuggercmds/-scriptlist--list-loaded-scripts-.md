@@ -1,6 +1,6 @@
 ---
-title: .scriptlist (List Loaded Scripts)
-description: The .scriptlist command lists the loaded scripts.
+title: ".scriptlist (List Loaded Scripts)"
+description: "The .scriptlist command lists the loaded scripts."
 keywords: [".scriptlist (List Loaded Scripts) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,7 +21,7 @@ The **.scriptlist** command lists the loaded scripts.
 .scriptlist 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______________"></span>    
@@ -53,7 +53,7 @@ Command Loaded Scripts:
 
 Before using any of the .script commands, a scripting provider needs to be loaded.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [JavaScript Debugger Scripting](../debugger/javascript-debugger-scripting.md)
@@ -63,6 +63,7 @@ Before using any of the .script commands, a scripting provider needs to be loade
  
 
  
+
 
 
 

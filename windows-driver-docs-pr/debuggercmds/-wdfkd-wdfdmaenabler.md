@@ -1,6 +1,6 @@
 ---
-title: wdfkd.wdfdmaenabler
-description: The wdfkd.wdfdmaenabler extension displays information about a WDF direct memory access (DMA) object, and its transaction and common buffer objects.
+title: "wdfkd.wdfdmaenabler"
+description: "The wdfkd.wdfdmaenabler extension displays information about a WDF direct memory access (DMA) object, and its transaction and common buffer objects."
 keywords: ["wdfkd.wdfdmaenabler Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,13 +21,13 @@ The **!wdfkd.wdfdmaenabler** extension displays information about a WDF direct m
 !wdfkd.wdfdmaenabler Handle
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Handle______"></span><span id="_______handle______"></span><span id="_______HANDLE______"></span> *Handle*   
 A handle to a framework DMA enabler object (WDFDMAENABLER).
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Wdfkd.dll
 
@@ -42,6 +42,7 @@ For more information, see [Kernel-Mode Driver Framework Debugging](../debugger/k
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: Multiprocessor Syntax
-description: This topic covers Multiprocessor Syntax
+title: "Multiprocessor Syntax"
+description: "This topic covers Multiprocessor Syntax"
 keywords: multiprocessor computer, multiprocessor, command syntax, dual-processor computer, syntax rules for commands, processor identifier
 ms.date: 05/23/2017
 ---
@@ -101,6 +101,7 @@ You can use the [**!cpuinfo**](-cpuinfo.md) and [**!cpuid**](-cpuid.md) extensio
  
 
  
+
 
 
 

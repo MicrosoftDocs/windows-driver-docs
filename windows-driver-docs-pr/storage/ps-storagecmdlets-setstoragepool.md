@@ -1,5 +1,5 @@
 ---
-title: SetStoragePool method of the PS\_StorageCmdlets class
+title: SetStoragePool Method of the PS_StorageCmdlets Class
 description: SetStoragePool method of the PS\_StorageCmdlets class
 ms.assetid: 15ECC709-AE50-422F-8CF2-FD3F213C6BFF
 keywords:

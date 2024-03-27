@@ -1,6 +1,6 @@
 ---
-title: object (WinDbg)
-description: The object extension displays information about a system object.
+title: "object (WinDbg)"
+description: "The object extension displays information about a system object."
 keywords: ["object Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -65,7 +65,7 @@ Display private object name spaces.
 <span id="-h-_"></span><span id="-H-_"></span>{**-h**|**-?**}  
 Display help for this command.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Kdexts.dll
 
@@ -163,7 +163,7 @@ Object: ffffc00b07628fb0  Type: (ffffe0083b769450) SymbolicLink
 
 For information about objects and the object manager, see the Microsoft Windows SDK documentation, the Windows Driver Kit (WDK) documentation, and *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [Object Reference Tracing](../debugger/object-reference-tracing.md)
@@ -179,6 +179,7 @@ For information about objects and the object manager, see the Microsoft Windows 
  
 
  
+
 
 
 

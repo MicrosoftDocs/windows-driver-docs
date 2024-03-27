@@ -1,6 +1,6 @@
 ---
-title: heap (WinDbg)
-description: The heap extension displays heap usage information, controls breakpoints in the heap manager, detects leaked heap blocks, searches for heap blocks, or displays page heap information.
+title: "heap (WinDbg)"
+description: "The heap extension displays heap usage information, controls breakpoints in the heap manager, detects leaked heap blocks, searches for heap blocks, or displays page heap information."
 keywords: ["heap usage", "GFlags, enabling page heap", "heap Windows Debugging"]
 ms.date: 08/23/2019
 topic_type:
@@ -395,7 +395,7 @@ Reorders the display as specified by *GroupBy*. The options for *GroupBy* can be
 <span id="_______MaxDisplay______"></span><span id="_______maxdisplay______"></span><span id="_______MAXDISPLAY______"></span> *MaxDisplay*   
 Limits the output to only *MaxDisplay* number of lines.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -712,3 +712,4 @@ Full page heap block -- freed:
 ```
 
 To see the stack trace of the allocation or the freeing of a heap block or full page heap block, use [**dt DPH\_BLOCK\_INFORMATION**](dt--display-type-.md) with the header address, followed by [**dds**](dds--dps--dqs--display-words-and-symbols-.md) with the block's **StackTrace** field.
+

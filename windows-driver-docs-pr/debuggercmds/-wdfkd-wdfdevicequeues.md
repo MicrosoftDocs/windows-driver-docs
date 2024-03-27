@@ -1,6 +1,6 @@
 ---
-title: wdfkd.wdfdevicequeues
-description: The wdfkd.wdfdevicequeues extension displays information about all of the framework queue objects that belong to a specified device.
+title: "wdfkd.wdfdevicequeues"
+description: "The wdfkd.wdfdevicequeues extension displays information about all of the framework queue objects that belong to a specified device."
 keywords: ["wdfkd.wdfdevicequeues Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,13 +21,13 @@ The **!wdfkd.wdfdevicequeues** extension displays information about all of the f
 !wdfkd.wdfdevicequeues Handle
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Handle______"></span><span id="_______handle______"></span><span id="_______HANDLE______"></span> *Handle*   
 A handle to a WDFDEVICE-typed object.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Wdfkd.dll
 
@@ -78,6 +78,7 @@ Queue: 3 (!wdfqueue 0x7cd671e8)
  
 
  
+
 
 
 

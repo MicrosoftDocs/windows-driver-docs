@@ -1,6 +1,6 @@
 ---
-title: ph (Step to Next Branching Instruction)
-description: The ph command executes the program until any kind of branching instruction is reached, including conditional or unconditional branches, calls, returns, and system calls.
+title: "ph (Step to Next Branching Instruction)"
+description: "The ph command executes the program until any kind of branching instruction is reached, including conditional or unconditional branches, calls, returns, and system calls."
 keywords: ["ph (Step to Next Branching Instruction) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -29,7 +29,7 @@ Kernel-Mode
 ph [r] [= StartAddress] [Count] 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Thread______"></span><span id="_______thread______"></span><span id="_______THREAD______"></span> *Thread*   
@@ -71,6 +71,7 @@ In source mode, you can associate one source line with multiple assembly instruc
  
 
  
+
 
 
 

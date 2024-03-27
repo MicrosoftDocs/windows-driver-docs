@@ -1,6 +1,6 @@
 ---
-title: wudfext.umdevstack
-description: The wudfext.umdevstack extension displays detailed information about a device stack in the host process.
+title: "wudfext.umdevstack"
+description: "The wudfext.umdevstack extension displays detailed information about a device stack in the host process."
 keywords: ["wudfext.umdevstack Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,7 +21,7 @@ The **!wudfext.umdevstack** extension displays detailed information about a devi
 !wudfext.umdevstack DevstackAddress [Flags] 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______DevstackAddress______"></span><span id="_______devstackaddress______"></span><span id="_______DEVSTACKADDRESS______"></span> *DevstackAddress*   
@@ -36,7 +36,7 @@ Displays detailed information about the device stack.
 <span id="Bit_8__0x80_"></span><span id="bit_8__0x80_"></span><span id="BIT_8__0X80_"></span>Bit 8 (0x80)  
 Displays information about the internal framework.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -80,6 +80,7 @@ Device Stack: 0x0034e4e0  Pdo Name: \Device\00000057
  
 
  
+
 
 
 

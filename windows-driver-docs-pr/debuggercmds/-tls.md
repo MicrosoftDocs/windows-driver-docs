@@ -1,6 +1,6 @@
 ---
-title: tls (WinDbg)
-description: The tls extension displays a thread local storage (TLS) slot.
+title: "tls (WinDbg)"
+description: "The tls extension displays a thread local storage (TLS) slot."
 keywords: ["TLS (thread local storage)", "thread local storage (TLS)", "tls Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -30,7 +30,7 @@ Specifies the TLS slot. This can be any value between 0 and 1088 (decimal). If *
 <span id="_______TEB______"></span><span id="_______teb______"></span> *TEB*   
 Specifies the thread environment block (TEB). If this is 0 or omitted, the current thread is used.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -67,6 +67,7 @@ c08.f54: 00000000
  
 
  
+
 
 
 

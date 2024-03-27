@@ -1,6 +1,6 @@
 ---
-title: dtx (Display Type - Extended Debugger Object Model Information)
-description: The dtx command displays extended symbolic type information using the debugger object model. The dtx command is similar to the dt (Display Type) command.
+title: "dtx (Display Type - Extended Debugger Object Model Information)"
+description: "The dtx command displays extended symbolic type information using the debugger object model. The dtx command is similar to the dt (Display Type) command."
 keywords: ["dtx (Display Type - Extended Debugger Object Model Information) Windows Debugging"]
 ms.date: 09/17/2017
 topic_type:
@@ -21,7 +21,7 @@ The dtx command displays extended symbolic type information using the debugger o
 dtx -DisplayOpts [Module!]Name Address
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="________DisplayOpts_______"></span><span id="________displayopts_______"></span><span id="________DISPLAYOPTS_______"></span> **DisplayOpts**   
@@ -107,7 +107,7 @@ fffff806`d24992b8 HdAudio!CAzMixertopoMiniport::`vftable' = <no type information
 ...
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**dt (Display Type)**](dt--display-type-.md)
@@ -115,6 +115,7 @@ fffff806`d24992b8 HdAudio!CAzMixertopoMiniport::`vftable' = <no type information
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: .restart (Restart Kernel Connection)
-description: The .restart command restarts the kernel connection.Do not confuse this command with the .restart (Restart Target Application) command, which works only in user mode.
+title: ".restart (Restart Kernel Connection)"
+description: "The .restart command restarts the kernel connection.Do not confuse this command with the .restart (Restart Target Application) command, which works only in user mode."
 keywords: [".restart (Restart Kernel Connection) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -66,6 +66,7 @@ The **.restart** command is most useful when you are performing [remote debuggin
  
 
  
+
 
 
 

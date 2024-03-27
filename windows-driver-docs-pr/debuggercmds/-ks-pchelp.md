@@ -1,6 +1,6 @@
 ---
-title: ks.pchelp (WinDbg)
-description: The ks.pchelp extension displays a help text showing PortCls-specific Ks.dll extension commands.
+title: "ks.pchelp (WinDbg)"
+description: "The ks.pchelp extension displays a help text showing PortCls-specific Ks.dll extension commands."
 keywords: ["ks.pchelp Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,7 +21,7 @@ The **!ks.pchelp** extension displays a help text showing PortCls-specific Ks.dl
 !ks.pchelp 
 ```
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -49,6 +49,7 @@ For more information, see [Kernel Streaming Debugging](../debugger/kernel-stream
  
 
  
+
 
 
 

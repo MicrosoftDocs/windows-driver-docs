@@ -1,6 +1,6 @@
 ---
-title: wmitrace.tmffile
-description: The wmitrace.tmffile extension specifies a trace message format (TMF) file. The file specified by this extension is used to format trace messages displayed or written by other WMI tracing extensions.
+title: "wmitrace.tmffile"
+description: "The wmitrace.tmffile extension specifies a trace message format (TMF) file. The file specified by this extension is used to format trace messages displayed or written by other WMI tracing extensions."
 keywords: ["wmitrace.tmffile Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -27,7 +27,7 @@ The **!wmitrace.tmffile** extension specifies a trace message format (TMF) file.
 <span id="_______TMFFile______"></span><span id="_______tmffile______"></span><span id="_______TMFFILE______"></span> *TMFFile*   
 Specifies a trace message format file.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 This extension is exported by Wmitrace.dll.
 
@@ -58,6 +58,7 @@ This extension is only useful during WPP software tracing, and earlier (legacy) 
  
 
  
+
 
 
 

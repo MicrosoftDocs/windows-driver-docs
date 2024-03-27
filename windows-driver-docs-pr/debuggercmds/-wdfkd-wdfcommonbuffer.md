@@ -1,6 +1,6 @@
 ---
-title: wdfkd.wdfcommonbuffer
-description: The wdfkd.wdfcommonbuffer extension displays information about a WDF common buffer object.
+title: "wdfkd.wdfcommonbuffer"
+description: "The wdfkd.wdfcommonbuffer extension displays information about a WDF common buffer object."
 keywords: ["wdfkd.wdfcommonbuffer Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,13 +21,13 @@ The **!wdfkd.wdfcommonbuffer** extension displays information about a WDF common
 !wdfkd.wdfcommonbuffer Handle
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Handle______"></span><span id="_______handle______"></span><span id="_______HANDLE______"></span> *Handle*   
 A handle to a framework common buffer object (WDFCOMMONBUFFER).
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Wdfkd.dll
 
@@ -42,6 +42,7 @@ For more information, see [Kernel-Mode Driver Framework Debugging](../debugger/k
  
 
  
+
 
 
 

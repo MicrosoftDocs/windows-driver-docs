@@ -1,6 +1,6 @@
 ---
-title: cpuinfo (WinDbg)
-description: The cpuinfo extension displays detailed information about the target computer's CPU.
+title: "cpuinfo (WinDbg)"
+description: "The cpuinfo extension displays detailed information about the target computer's CPU."
 keywords: ["cpuinfo Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -29,7 +29,7 @@ Syntax
 <span id="_______Processor______"></span><span id="_______processor______"></span><span id="_______PROCESSOR______"></span> *Processor*   
 Specifies the processor to be displayed. If this is omitted, all processors are displayed.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Kdexts.dll
 
@@ -60,6 +60,7 @@ For details on how to interpret specific values for each entry, as well as any a
  
 
  
+
 
 
 

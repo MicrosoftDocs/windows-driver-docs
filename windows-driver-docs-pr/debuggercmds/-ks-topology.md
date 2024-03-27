@@ -1,6 +1,6 @@
 ---
-title: ks.topology
-description: The ks.topology extension displays a sorted graph of the internal topology of the filter closest to Object.
+title: "ks.topology"
+description: "The ks.topology extension displays a sorted graph of the internal topology of the filter closest to Object."
 keywords: ["ks.topology Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,7 +21,7 @@ The **!ks.topology** extension displays a sorted graph of the internal topology 
 !ks.topology Object [Level] [Flags] 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Object______"></span><span id="_______object______"></span><span id="_______OBJECT______"></span> *Object*   
@@ -33,7 +33,7 @@ Optional. Specifies the level of detail to display on a 0-7 scale with progressi
 <span id="_______Flags______"></span><span id="_______flags______"></span><span id="_______FLAGS______"></span> *Flags*   
 Not currently available.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -67,6 +67,7 @@ Note that this command may take a few moments to execute.
  
 
  
+
 
 
 

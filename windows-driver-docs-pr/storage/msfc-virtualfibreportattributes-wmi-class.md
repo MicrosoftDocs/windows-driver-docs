@@ -1,5 +1,5 @@
 ---
-title: MSFC\_VirtualFibrePortAttributes WMI Class
+title: MSFC_VirtualFibrePortAttributes WMI Class
 description: MSFC\_VirtualFibrePortAttributes WMI Class
 ms.date: 10/17/2018
 ---

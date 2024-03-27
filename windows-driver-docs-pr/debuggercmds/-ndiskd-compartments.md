@@ -1,6 +1,6 @@
 ---
-title: ndiskd.compartments
-description: The ndiskd.compartments extension displays all network compartments.
+title: "ndiskd.compartments"
+description: "The ndiskd.compartments extension displays all network compartments."
 keywords: ["ndiskd.compartments Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,12 +21,12 @@ The **!ndiskd.compartments** extension displays all network compartments.
 !ndiskd.compartments 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 This extension has no parameters.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Ndiskd.dll
 
@@ -48,7 +48,7 @@ Run the **!ndiskd.compartments** extension to see a list of all network compartm
                        ffffdf80139b8900    [Unnamed network]
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [Network Driver Design Guide](../network/index.md)
@@ -64,4 +64,5 @@ Run the **!ndiskd.compartments** extension to see a list of all network compartm
 [**NDIS\_BIND\_PARAMETERS**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_bind_parameters)
 
  
+
 

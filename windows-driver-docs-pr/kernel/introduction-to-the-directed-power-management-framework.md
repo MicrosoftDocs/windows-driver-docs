@@ -19,7 +19,7 @@ DFx does not power down paging or debug devices.
 
 ## Requirements for WDF (non-miniport) drivers
 
-A WDF driver that specifies **SystemManagedIdleTimeout** or **SystemManagedIdleTimeoutWithHint** in the [WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS](/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_device_power_policy_idle_settings) structure can opt into DFx by adding the following registry key to the INF's [AddReg directive section](../install/inf-addreg-directive.md) within the [DDInstall.HW section](../install/inf-ddinstall-hw-section.md):
+A WDF driver that is a power policy owner must implement an appropriate S0-Idle policy by specifying  **SystemManagedIdleTimeout** or **SystemManagedIdleTimeoutWithHint** in the [WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS](/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_device_power_policy_idle_settings) structure. This will allow the device to power down when it is idle. As an added resiliency measure, the driver can opt into DFx by adding the following registry key to the INF's [AddReg directive section](../install/inf-addreg-directive.md) within the [DDInstall.HW section](../install/inf-ddinstall-hw-section.md):
 
 `HKR,"WDF","WdfDirectedPowerTransitionEnable",0x00010001,1`
 
@@ -34,7 +34,7 @@ A WDF driver targeting version 33 and above can alternatively opt out of DFx by 
 
 Because requesting system-managed idle timeout causes WDF to register with PoFx on the driver's behalf, the driver does not need to register with PoFx in this scenario.
 
-If the driver specifies **DriverManagedIdleTimeout**, consider switching to system-managed idle timeout.  If that is not feasible, use the guidelines in the WDM section below to opt into DFx.
+If the driver specifies **DriverManagedIdleTimeout**, consider switching to system-managed idle timeout. If that is not feasible, use the guidelines in the WDM section below to opt into DFx.
 
 If the WDF driver does not use runtime power management, add support for it and use system-managed idle timeout.  To do so, provide an [WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS](/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_device_power_policy_idle_settings) structure as input to [**WdfDeviceAssignS0IdleSettings**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceassigns0idlesettings).
 

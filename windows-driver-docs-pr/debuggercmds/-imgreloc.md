@@ -1,6 +1,6 @@
 ---
-title: imgreloc (WinDbg)
-description: The imgreloc extension displays the addresses of each loaded module and indicates their former addresses before they were relocated.
+title: "imgreloc (WinDbg)"
+description: "The imgreloc extension displays the addresses of each loaded module and indicates their former addresses before they were relocated."
 keywords: ["imgreloc Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -27,7 +27,7 @@ The **!imgreloc** extension displays the addresses of each loaded module and ind
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the base address of the image.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -63,6 +63,7 @@ Here is an example:
  
 
  
+
 
 
 

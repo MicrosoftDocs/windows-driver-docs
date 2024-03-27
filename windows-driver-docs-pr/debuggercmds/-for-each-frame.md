@@ -1,6 +1,6 @@
 ---
-title: for_each_frame
-description: The for_each_frame extension executes a debugger command one time for each frame in the stack of the current thread.
+title: "for_each_frame"
+description: "The for_each_frame extension executes a debugger command one time for each frame in the stack of the current thread."
 keywords: ["for_each_frame Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -31,7 +31,7 @@ Specifies the debugger commands to execute one time for each frame. If *CommandS
 <span id="_______-_______"></span> **-?**   
 Displays some Help text for this extension in the [Debugger Command window](../debugger/debugger-command-window.md).
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -73,6 +73,7 @@ The following command displays all local variables for the current stack.
  
 
  
+
 
 
 

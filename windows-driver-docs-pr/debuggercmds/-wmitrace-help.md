@@ -1,6 +1,6 @@
 ---
-title: wmitrace.help
-description: The wmitrace.help extension displays the extension commands in Wmitrace.dll.
+title: "wmitrace.help"
+description: "The wmitrace.help extension displays the extension commands in Wmitrace.dll."
 keywords: ["wmitrace.help Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -24,11 +24,9 @@ The **!wmitrace.help** extension displays the extension commands in Wmitrace.dll
 ## <span id="ddk__wmitrace_help_dbg"></span><span id="DDK__WMITRACE_HELP_DBG"></span>
 
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 This extension is exported by Wmitrace.dll.
-
-This extension is available in Windows 2000 and later versions of Windows. If you want to use this extension with Windows 2000, you must first copy the Wmitrace.dll file from the winxp subdirectory of the Debugging Tools for Windows installation directory to the w2kfre subdirectory.
 
 ### Additional Information
 
@@ -37,6 +35,7 @@ For a conceptual overview of event tracing, see the Microsoft Windows SDK. For i
  
 
  
+
 
 
 

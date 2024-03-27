@@ -1,6 +1,6 @@
 ---
-title: usbkd.usbhubs
-description: The usbkd.usbhubs command displays information about USB hubs.
+title: "usbkd.usbhubs"
+description: "The usbkd.usbhubs command displays information about USB hubs."
 keywords: ["usbkd.usbhubs Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -101,7 +101,7 @@ On Host Controller (0x8086, 0x2937)
 ...
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
@@ -109,4 +109,5 @@ On Host Controller (0x8086, 0x2937)
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
+
 

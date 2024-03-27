@@ -1,6 +1,6 @@
 ---
-title: ~e (Thread-Specific Command)
-description: The ~e command executes one or more commands for a specific thread or for all threads in the target process.Do not confuse this command with the e (Enter Values) command.
+title: "~e (Thread-Specific Command)"
+description: "The ~e command executes one or more commands for a specific thread or for all threads in the target process.Do not confuse this command with the e (Enter Values) command."
 keywords: ["Thread-Specific Command (~e) command", "thread, Thread-Specific Command (~e) command", "~e (Thread-Specific Command) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -75,6 +75,7 @@ If you are debugging more than one process, you cannot use the **~e** command to
  
 
  
+
 
 
 

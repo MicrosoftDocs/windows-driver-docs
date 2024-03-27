@@ -1,5 +1,5 @@
 ---
-title: MRxLowIOSubmit\ LOWIO\_OP\_NOTIFY\_CHANGE\_DIRECTORY\ routine
+title: MRxLowIOSubmit[LOWIO_OP_NOTIFY_CHANGE_DIRECTORY] Routine
 description: The MRxLowIOSubmit\ LOWIO\_OP\_NOTIFY\_CHANGE\_DIRECTORY\ routine is called by RDBSS to issue a request to the network mini-redirector for a directory change notification operation.
 keywords: ["MRxLowIOSubmit LOWIO_OP_NOTIFY_CHANGE_DIRECTORY routine Installable File System Drivers", "PMRX_CALLDOWN"]
 topic_type:

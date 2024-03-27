@@ -1,6 +1,6 @@
 ---
-title: dlls (WinDbg)
-description: The dlls extension displays the table entries of all loaded modules or all modules that a specified thread or process are using.
+title: "dlls (WinDbg)"
+description: "The dlls extension displays the table entries of all loaded modules or all modules that a specified thread or process are using."
 keywords: ["DLL table entry", "dlls Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -58,7 +58,7 @@ Specifies the address of the loader entry for a module. If you include this para
 <span id="_______-h______"></span><span id="_______-H______"></span> **-h**   
 Displays some Help text for this extension in the [Debugger Command window](../debugger/debugger-command-window.md).
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -223,6 +223,7 @@ SECTION HEADER #3
  
 
  
+
 
 
 

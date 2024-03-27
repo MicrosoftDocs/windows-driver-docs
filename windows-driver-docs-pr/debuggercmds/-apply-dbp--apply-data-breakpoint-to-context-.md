@@ -1,6 +1,6 @@
 ---
-title: .apply_dbp (Apply Data Breakpoint to Context)
-description: The .apply_dbp command applies the current process' existing data breakpoints to the specified register context.
+title: ".apply_dbp (Apply Data Breakpoint to Context)"
+description: "The .apply_dbp command applies the current process' existing data breakpoints to the specified register context."
 keywords: [".apply_dbp (Apply Data Breakpoint to Context) Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
@@ -21,7 +21,7 @@ The **.apply\_dbp** command applies the current process' existing data breakpoin
     .apply_dbp [/m Context] 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="________m_______Context______"></span><span id="________m_______context______"></span><span id="________M_______CONTEXT______"></span> **/m** *Context*   
@@ -71,6 +71,7 @@ One example of a time this command is useful is when you are in an exception fil
  
 
  
+
 
 
 

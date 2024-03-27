@@ -1,6 +1,6 @@
 ---
-title: logexts.logo
-description: The logexts.logo extension sets or displays the Logger output options.
+title: "logexts.logo"
+description: "The logexts.logo extension sets or displays the Logger output options."
 keywords: ["logexts.logo Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -31,7 +31,7 @@ Specifies whether to enable (e) or disable (d) the indicated output type.
 <span id="_______d_t_v"></span><span id="_______D_T_V"></span> **d|t|v**  
 Specifies the output type. Three types of Logger output are possible: messages sent directly to the debugger (d), a text file (t), or a verbose .lgv file (v).
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -88,6 +88,7 @@ Text file and .lgv files will be placed in the current output directory. To read
  
 
  
+
 
 
 

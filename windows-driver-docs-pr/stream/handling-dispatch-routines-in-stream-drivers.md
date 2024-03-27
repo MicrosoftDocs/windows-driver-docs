@@ -1,5 +1,5 @@
 ---
-title: Handling dispatch routines in stream drivers
+title: Handling Dispatch Routines in Stream Drivers
 description: Provides guidance for handling driver dispatch routines.
 ms.date: 05/17/2018
 ---

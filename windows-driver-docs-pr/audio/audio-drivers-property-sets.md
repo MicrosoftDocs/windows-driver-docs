@@ -67,11 +67,19 @@ The following property sets are defined for audio drivers:
 
 [KSPROPSETID\_AudioGfx](kspropsetid-audiogfx.md)
 
+[KSPROPSETID\_AudioLoopback](kspropsetid-audioloopback.md)
+
+[KSPROPSETID\_AudioModule](kspropsetid-audiomodule.md)
+
+[KSPROPSETID\_BtAudioModule](kspropsetid-btaudio.md)
+
 [KSPROPSETID\_DirectSound3DBuffer](kspropsetid-directsound3dbuffer.md)
 
 [KSPROPSETID\_DirectSound3DListener](kspropsetid-directsound3dlistener.md)
 
 [KSPROPSETID\_DrmAudioStream](kspropsetid-drmaudiostream.md)
+
+[KSPROPSETID\_FMRXControl](kspropsetid-fmrxcontrol.md)
 
 [KSPROPSETID\_FMRXTopology](kspropsetid-fmrxtopology.md)
 
@@ -84,6 +92,8 @@ The following property sets are defined for audio drivers:
 [KSPROPSETID\_RTAudio](kspropsetid-rtaudio.md)
 
 [KSPROPSETID\_SoundDetector](kspropsetid-sounddetector.md)
+
+[KSPROPSETID\_SoundDetector2](kspropsetid-sounddetector2.md)
 
 [KSPROPSETID\_Synth](kspropsetid-synth.md)
 

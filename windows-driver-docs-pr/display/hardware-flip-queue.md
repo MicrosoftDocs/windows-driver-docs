@@ -1,5 +1,5 @@
 ---
-title: Hardware flip queue
+title: Hardware Flip Queue
 description: Hardware flip queue
 keywords:
 - Direct3D, hardware flip queue

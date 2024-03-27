@@ -1,6 +1,6 @@
 ---
-title: .copysym (Copy Symbol Files)
-description: The .copysym command copies the current symbol files to the specified directory.
+title: ".copysym (Copy Symbol Files)"
+description: "The .copysym command copies the current symbol files to the specified directory."
 keywords: [".copysym (Copy Symbol Files) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,7 +21,7 @@ The **.copysym** command copies the current symbol files to the specified direct
     .copysym [/l] Path
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="________l______"></span><span id="________L______"></span> **/l**   
@@ -47,6 +47,7 @@ Many times, symbols are stored on a network. The symbol access can often be slow
  
 
  
+
 
 
 

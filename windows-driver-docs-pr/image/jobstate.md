@@ -1,5 +1,5 @@
 ---
-title: JobState element
+title: JobState Element
 description: The required JobState element specifies the current state of the job.
 keywords: ["JobState element Imaging Devices"]
 topic_type:

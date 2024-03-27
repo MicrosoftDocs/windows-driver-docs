@@ -1,5 +1,5 @@
 ---
-title: MS\_SMHBA\_SCSIENTRY WMI Class
+title: MS_SMHBA_SCSIENTRY WMI Class
 description: MS\_SMHBA\_SCSIENTRY WMI Class
 ms.date: 10/17/2018
 ---

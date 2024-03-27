@@ -1,5 +1,5 @@
 ---
-title: Biometrics driver samples
+title: Biometrics Driver Samples
 description: The driver sample in this directory provide a starting point for writing a custom biometrics driver for your device.
 ms.date: 03/22/2023
 ---

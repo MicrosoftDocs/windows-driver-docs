@@ -1,7 +1,7 @@
 ---
-title: Time Travel Debugging Extension !positions Command 
-description: The !positions extension displays all the active threads, including their current positions.
-keywords: ["positions Windows Debugging"]
+title: "Time Travel Debugging Extension !positions Command "
+description: "The !positions extension displays all the active threads, including their current positions."
+keywords: ["positions", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
 ms.date: 01/22/2020
 ---
 
@@ -33,7 +33,7 @@ This output shows five threads. Thread 1660 is the current thread indicated by *
 * indicates an actively running thread
 ```
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 ttdext.dll
 
@@ -44,3 +44,4 @@ This extension only works with time travel traces. For more information about ti
 ## See Also
 
 [Time Travel Debugging - Extension Commands](time-travel-debugging-extension-commands.md)
+

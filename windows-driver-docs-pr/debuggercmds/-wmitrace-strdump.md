@@ -1,6 +1,6 @@
 ---
-title: wmitrace.strdump
-description: The wmitrace.strdump extension displays the WMI event trace structures. You can limit the display to the structures for a particular trace session.
+title: "wmitrace.strdump"
+description: "The wmitrace.strdump extension displays the WMI event trace structures. You can limit the display to the structures for a particular trace session."
 keywords: ["wmitrace.strdump Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -30,7 +30,7 @@ Limits the display to the event trace structures for the specified trace session
 <span id="_______LoggerName______"></span><span id="_______loggername______"></span><span id="_______LOGGERNAME______"></span> *LoggerName*   
 Limits the display to the event trace structures for the specified trace session. *LoggerName* is the text name that was specified when the trace session was started. If no parameter is specified, all trace sessions are displayed.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 This extension is exported by Wmitrace.dll.
 
@@ -47,6 +47,7 @@ To find the logger ID of a trace session, use the **!wmitrace.strdump** extensio
  
 
  
+
 
 
 

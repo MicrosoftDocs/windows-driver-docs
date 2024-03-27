@@ -1,6 +1,6 @@
 ---
-title: ndiskd.netpacket
-description: The ndiskd.netpacket extension displays information about a NET_PACKET structure.
+title: "ndiskd.netpacket"
+description: "The ndiskd.netpacket extension displays information about a NET_PACKET structure."
 keywords: ["ndiskd.netpacket Windows Debugging"]
 ms.date: 06/17/2020
 topic_type:
@@ -22,7 +22,7 @@ For more information about the Network Adapter WDF Class Extension (NetAdapterCx
 !ndiskd.netpacket -handle <x> [-basic] [-layout] [-checksum] [-data]
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______-handle______"></span><span id="_______-HANDLE______"></span> *-handle*   
@@ -159,3 +159,4 @@ You can now combine the basic description with any of the other **!ndiskd.netpac
 [**!ndiskd.netqueue**](-ndiskd-netqueue.md)
 
 [**!ndiskd.netrb**](-ndiskd-netrb.md)
+

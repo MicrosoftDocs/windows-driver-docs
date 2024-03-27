@@ -1,5 +1,5 @@
 ---
-title: Job element
+title: Job Element
 description: The required Job element contains all elements that are associated with a scan job.
 keywords: ["Job element Imaging Devices"]
 topic_type:

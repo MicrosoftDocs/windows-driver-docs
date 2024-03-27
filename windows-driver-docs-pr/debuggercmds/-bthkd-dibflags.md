@@ -1,6 +1,6 @@
 ---
-title: bthkd.dibflags
-description: The bthkd.dibflags command displays DEVICE_INFO_BLOCK.DibFlags dumps flags set in _DEVICE_INFO_BLOCK.DibFlags.
+title: "bthkd.dibflags"
+description: "The bthkd.dibflags command displays DEVICE_INFO_BLOCK.DibFlags dumps flags set in _DEVICE_INFO_BLOCK.DibFlags."
 keywords: ["bthkd.dibflags Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -32,7 +32,7 @@ The value of \_DEVICE\_INFO\_BLOCK.DibFlags Dumps Flags set in \_DEVICE\_INFO\_B
 
 Bthkd.dll
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [Bluetooth Extensions (Bthkd.dll)](bluetooh-extensions--bthkd-dll-.md)
@@ -40,6 +40,7 @@ Bthkd.dll
  
 
  
+
 
 
 

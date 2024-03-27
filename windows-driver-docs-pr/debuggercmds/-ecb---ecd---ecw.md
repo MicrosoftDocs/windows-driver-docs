@@ -1,6 +1,6 @@
 ---
-title: ecb, ecd, ecw
-description: The ecb, ecd, and ecw extensions write to the PCI configuration space.
+title: "ecb, ecd, ecw"
+description: "The ecb, ecd, and ecw extensions write to the PCI configuration space."
 keywords: ["ecb, ecd, ecw Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -39,7 +39,7 @@ Specifies the address at which to write.
 <span id="_______Data______"></span><span id="_______data______"></span><span id="_______DATA______"></span> *Data*   
 Specifies the value to be written. For the **!ecb** extension, *Data* must be 1 byte (two hexadecimal digits). For the **!ecw** extension, *Data* must be one WORD (four hexadecimal digits). For the **!ecd** extension, *Data* must be one DWORD (eight hexadecimal digits).
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -75,6 +75,7 @@ To display the PCI configuration space, use [**!pci 100**](-pci.md)*Bus Device F
  
 
  
+
 
 
 

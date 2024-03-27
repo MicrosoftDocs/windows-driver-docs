@@ -1,5 +1,5 @@
 ---
-title: SetPartition method of the PS\_StorageCmdlets class
+title: SetPartition Method of the PS_StorageCmdlets Class
 description: SetPartition method of the PS\_StorageCmdlets class
 ms.assetid: 7F7B2496-6257-49A6-99F5-341CDC6A3955
 keywords:

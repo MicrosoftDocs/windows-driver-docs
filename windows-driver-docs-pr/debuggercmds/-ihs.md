@@ -1,6 +1,6 @@
 ---
-title: ihs (WinDbg)
-description: The ihs extension displays the interrupt history record for the specified processor, using program counter symbols.
+title: "ihs (WinDbg)"
+description: "The ihs extension displays the interrupt history record for the specified processor, using program counter symbols."
 keywords: ["interrupt history record", "ihs Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -25,30 +25,15 @@ The **!ihs** extension displays the interrupt history record for the specified p
 
  
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Processor______"></span><span id="_______processor______"></span><span id="_______PROCESSOR______"></span> *Processor*   
 Specifies a processor. If *Processor* is omitted, the current processor is used.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Unavailable</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Kdexts.dll</p></td>
-</tr>
-</tbody>
-</table>
+Windows XP and later - Kdexts.dll
 
  
 
@@ -96,6 +81,7 @@ EXTERNAL INTERRUPT  e0000000830623b0      1010092a6018  IVR=               d0 nt
  
 
  
+
 
 
 

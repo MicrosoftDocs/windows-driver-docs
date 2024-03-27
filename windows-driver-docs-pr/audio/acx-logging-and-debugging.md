@@ -1,5 +1,5 @@
 ---
-title: ACX logging and debugging
+title: ACX Logging and Debugging
 description: This topic provides information on logging, tracing and debugging of the ACX Audio Class Extensions.
 ms.date: 09/29/2023
 ms.localizationpriority: medium
@@ -11,7 +11,6 @@ This topic provides information on logging, tracing and debugging of the ACX Aud
 
 >[!NOTE]
 > The ACX headers and libraries are not included in the  WDK 10.0.22621.2428 (released October 24, 2023), but are available in previous versions, as well as the latest (25000 series builds) Insider Preview of the WDK. For more information about preview versions of the WDK, see [Installing preview versions of the Windows Driver Kit (WDK)](../installing-preview-versions-wdk.md).
-
 
 ## ACX Driver Logging
 

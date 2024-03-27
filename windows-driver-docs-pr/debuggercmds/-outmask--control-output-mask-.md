@@ -1,6 +1,6 @@
 ---
-title: .outmask (Control Output Mask)
-description: The .outmask command controls the current output mask.
+title: ".outmask (Control Output Mask)"
+description: "The .outmask command controls the current output mask."
 keywords: ["Control Output Mask (.outmask) command", ".outmask (Control Output Mask) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -23,7 +23,7 @@ The **.outmask** command controls the current output mask.
 .outmask /d
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Expression______"></span><span id="_______expression______"></span><span id="_______EXPRESSION______"></span> *Expression*   
@@ -131,6 +131,7 @@ The following flag values exist.
  
 
  
+
 
 
 

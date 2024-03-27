@@ -1,6 +1,6 @@
 ---
-title: wudfext.umirp
-description: The wudfext.umirp extension displays information about a host user-mode I/O request packet (UM IRP).
+title: "wudfext.umirp"
+description: "The wudfext.umirp extension displays information about a host user-mode I/O request packet (UM IRP)."
 keywords: ["wudfext.umirp Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,13 +21,13 @@ The **!wudfext.umirp** extension displays information about a host user-mode I/O
 !wudfext.umirp Address
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the address of the UM IRP to display information about.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -96,6 +96,7 @@ UM IRP: 0x003dd480  UniqueId: 0xde  Kernel Irp: 0x0x85377850
  
 
  
+
 
 
 

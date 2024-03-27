@@ -50,7 +50,7 @@ Drivers for serial ports register instances of this device interface class to no
 
 The system-supplied function driver for serial ports registers an instance of this device interface class for a [serial port](../serports/using-serial-sys-and-serenum-sys.md).
 
-The following samples (on Github) register an instance of this class for a serial port:
+The following samples (on GitHub) register an instance of this class for a serial port:
 
 -   [The Serial sample](https://go.microsoft.com/fwlink/p/?LinkId=617962)
 -   [The Virtual serial driver sample](../wdf/user-mode-driver-framework-design-guide.md) (UMDF 1.0)

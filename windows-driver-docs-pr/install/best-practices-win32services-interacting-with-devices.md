@@ -1,5 +1,5 @@
 ---
-title: Win32 services interacting with devices
+title: Win32 Services Interacting with Devices
 description: Provides information about how Win32 services interact with devices.
 ms.date: 08/31/2022
 ---

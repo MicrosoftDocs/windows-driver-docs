@@ -1,5 +1,5 @@
 ---
-title: GetPathConfiguration function
+title: GetPathConfiguration Function
 description: The GetPathConfiguration method is used to retrieve the device information for each path.
 keywords: ["GetPathConfiguration function Storage Devices"]
 topic_type:

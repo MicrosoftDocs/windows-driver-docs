@@ -1,6 +1,6 @@
 ---
-title: ppmidleaccounting
-description: The ppmidleaccounting command
+title: "ppmidleaccounting"
+description: "The ppmidleaccounting command"
 keywords: ["ppmidleaccounting Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,7 +21,7 @@ The **!ppmidleaccounting** command displays processor idle state accounting info
 !ppmidleaccounting
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 None
 
 This command is supported on the following versions of Windows:
@@ -33,11 +33,12 @@ This command is supported on the following versions of Windows:
 - Windows 10, Version 1607
 - Windows 10, Version 1703
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
  Kdexts.dll 
 
  
+
 
 
 

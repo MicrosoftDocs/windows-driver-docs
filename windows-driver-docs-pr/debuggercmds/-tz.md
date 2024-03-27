@@ -1,6 +1,6 @@
 ---
-title: tz (WinDbg)
-description: The tz extension displays the specified power thermal zone structure.
+title: "tz (WinDbg)"
+description: "The tz extension displays the specified power thermal zone structure."
 keywords: ["thermal zone", "tz Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,7 +21,7 @@ The **!tz** extension displays the specified power thermal zone structure.
 !tz [Address]
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
@@ -44,6 +44,7 @@ To stop execution at any time, press CTRL+BREAK (in WinDbg) or CTRL+C (in KD).
  
 
  
+
 
 
 

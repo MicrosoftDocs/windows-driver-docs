@@ -1,5 +1,5 @@
 ---
-title: InputSource element
+title: InputSource Element
 description: The optional InputSource element specifies the source of the original document on the scanning device.
 keywords: ["InputSource element Imaging Devices"]
 topic_type:

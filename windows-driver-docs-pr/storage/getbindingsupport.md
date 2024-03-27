@@ -1,5 +1,5 @@
 ---
-title: GetBindingSupport function
+title: GetBindingSupport Function
 description: The GetBindingSupport method retrieves the binding capabilities that are currently enabled for the indicated port.
 keywords: ["GetBindingSupport function Storage Devices"]
 topic_type:

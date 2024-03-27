@@ -1,5 +1,5 @@
 ---
-title: JobStatusEvent element
+title: JobStatusEvent Element
 description: The required JobStatusEvent element informs the client that a job's status has changed.
 keywords: ["JobStatusEvent element Imaging Devices"]
 topic_type:

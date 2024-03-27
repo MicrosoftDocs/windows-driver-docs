@@ -1,5 +1,5 @@
 ---
-title: ClearAllMpioDiskHealthCounters function
+title: ClearAllMpioDiskHealthCounters Function
 description: The ClearAllMpioDiskHealthCounters method is used to clear all gathered MPIO multipath disk statistics.
 keywords: ["ClearAllMpioDiskHealthCounters function Storage Devices"]
 topic_type:

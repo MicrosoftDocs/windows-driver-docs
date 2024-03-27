@@ -1,6 +1,6 @@
 ---
-title: .restart (Restart Target Application)
-description: The .restart command restarts the target application.Do not confuse this command with the .restart (Restart Kernel Connection) command, which works only in kernel mode.
+title: ".restart (Restart Target Application)"
+description: "The .restart command restarts the target application.Do not confuse this command with the .restart (Restart Kernel Connection) command, which works only in kernel mode."
 keywords: [".restart (Restart Target Application) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -52,6 +52,7 @@ In WinDbg, use the **View | WinDbg Command Line** command if you started your ta
  
 
  
+
 
 
 

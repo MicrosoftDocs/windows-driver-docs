@@ -1,6 +1,6 @@
 ---
-title: wdfkd.wdfchildlist
-description: The wdfkd.wdfchildlist extension displays a child list's state and information about all of the device identification descriptions that are in the child list.
+title: "wdfkd.wdfchildlist"
+description: "The wdfkd.wdfchildlist extension displays a child list's state and information about all of the device identification descriptions that are in the child list."
 keywords: ["wdfkd.wdfchildlist Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,13 +21,13 @@ The **!wdfkd.wdfchildlist** extension displays a child list's state and informat
 !wdfkd.wdfchildlist Handle 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Handle______"></span><span id="_______handle______"></span><span id="_______HANDLE______"></span> *Handle*   
 A WDFCHILDLIST-typed handle to the child list.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Wdfkd.dll
 
@@ -72,6 +72,7 @@ Callbacks:
  
 
  
+
 
 
 

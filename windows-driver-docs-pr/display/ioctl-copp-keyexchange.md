@@ -1,5 +1,5 @@
 ---
-title: IOCTL\_COPP\_KeyExchange control code
+title: IOCTL_COPP_KeyExchange Control Code
 description: Returns the digital certificate used by the graphics hardware.
 keywords: ["IOCTL_COPP_KeyExchange control code Display Devices"]
 topic_type:

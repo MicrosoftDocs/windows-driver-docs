@@ -1,5 +1,5 @@
 ---
-title: SetFileSystemLabel method of the MSFT\_Volume class
+title: SetFileSystemLabel Method of the MSFT_Volume Class
 description: Sets the file system label for the volume.
 ms.assetid: BD93DE04-A779-49DC-8764-75A98F8B8AF8
 keywords:

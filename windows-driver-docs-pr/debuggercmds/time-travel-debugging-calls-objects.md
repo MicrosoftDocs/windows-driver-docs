@@ -1,6 +1,7 @@
 ---
-title: TTD Calls Objects
-description: This section describes the calls model objects associated with time travel debugging.
+title: "TTD Calls Objects"
+description: "This section describes the calls model objects associated with time travel debugging."
+keywords: ["TTD Calls Objects", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
 ms.date: 09/25/2017
 ---
 
@@ -68,3 +69,4 @@ This example shows the calls object for ucrtbase!initterm.
 [Time Travel Debugging - Introduction to Time Travel Debugging objects](time-travel-debugging-object-model.md)
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
+

@@ -1,6 +1,6 @@
 ---
-title: wudfext.wudfqueue
-description: The wudfext.wudfqueue extension displays information about an I/O queue.
+title: "wudfext.wudfqueue"
+description: "The wudfext.wudfqueue extension displays information about an I/O queue."
 keywords: ["wudfext.wudfqueue Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,13 +21,13 @@ The **!wudfext.wudfqueue** extension displays information about an I/O queue.
 !wudfext.wudfqueue pWDFQueue
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______pWDFQueue______"></span><span id="_______pwdfqueue______"></span><span id="_______PWDFQUEUE______"></span> *pWDFQueue*   
 Specifies the address of the **IWDFIoQueue** interface to display information about. The [**!wudfext.wudfdevicequeues**](-wudfext-wudfdevicequeues.md) extension command determines the address of **IWDFIoQueue**.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -77,6 +77,7 @@ kd> !wudfqueue 0x000f3500
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: wdfkd.wdfcollection
-description: The wdfkd.wdfcollection extension displays all of the objects that are stored in a WDFCOLLECTION structure.
+title: "wdfkd.wdfcollection"
+description: "The wdfkd.wdfcollection extension displays all of the objects that are stored in a WDFCOLLECTION structure."
 keywords: ["wdfkd.wdfcollection Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,13 +21,13 @@ The **!wdfkd.wdfcollection** extension displays all of the objects that are stor
 !wdfkd.wdfcollection Handle
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Handle______"></span><span id="_______handle______"></span><span id="_______HANDLE______"></span> *Handle*   
 A WDFCOLLECTION-typed handle to the structure.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Wdfkd.dll
 
@@ -42,6 +42,7 @@ For more information, see [Kernel-Mode Driver Framework Debugging](../debugger/k
  
 
  
+
 
 
 

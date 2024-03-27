@@ -1,5 +1,5 @@
 ---
-title: customUI element
+title: customUI Element
 description: The optional customUI element specifies a custom user interface to be displayed on a client computer.
 keywords: ["customUI element Print Devices"]
 topic_type:

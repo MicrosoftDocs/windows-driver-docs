@@ -1,6 +1,6 @@
 ---
-title: pct (Step to Next Call or Return)
-description: The pct command executes the program until it reaches a call instruction or a return instruction.
+title: "pct (Step to Next Call or Return)"
+description: "The pct command executes the program until it reaches a call instruction or a return instruction."
 keywords: ["pct (Step to Next Call or Return) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -29,7 +29,7 @@ Kernel-Mode
 pct [r] [= StartAddress] [Count] 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Parameters
 
 
 <span id="_______Thread______"></span><span id="_______thread______"></span><span id="_______THREAD______"></span> *Thread*   
@@ -71,6 +71,7 @@ In source mode, you can associate one source line with multiple assembly instruc
  
 
  
+
 
 
 

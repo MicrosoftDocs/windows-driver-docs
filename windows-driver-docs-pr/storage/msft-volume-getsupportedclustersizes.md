@@ -1,5 +1,5 @@
 ---
-title: GetSupportedClusterSizes method of the MSFT\_Volume class
+title: GetSupportedClusterSizes Method of the MSFT_Volume Class
 description: Retrieves the supported cluster sizes for the volume.
 ms.assetid: 5D1AE94F-37BB-4B0C-B98E-F19D95D69143
 keywords:

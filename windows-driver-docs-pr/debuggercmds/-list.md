@@ -1,6 +1,6 @@
 ---
-title: list (WinDbg)
-description: The list extension executes the specified debugger commands repeatedly, once for every element in a linked list.
+title: "list (WinDbg)"
+description: "The list extension executes the specified debugger commands repeatedly, once for every element in a linked list."
 keywords: ["list Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -56,7 +56,7 @@ Specifies the address of the first data structure. This is the address at the to
 <span id="_______-h______"></span><span id="_______-H______"></span> **-h**   
 Displays some brief Help text for this extension in the Debugger Command window.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -123,6 +123,7 @@ dd @$extret l4; dt ntdll!_RTL_CRITICAL_SECTION_DEBUG @$extret-0x8
  
 
  
+
 
 
 

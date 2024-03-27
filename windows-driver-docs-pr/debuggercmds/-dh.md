@@ -1,6 +1,6 @@
 ---
-title: dh (WinDbg)
-description: The dh extension displays the headers for the specified image.
+title: "dh (WinDbg)"
+description: "The dh extension displays the headers for the specified image."
 keywords: ["NTFS file object", "dh Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -43,7 +43,7 @@ Specifies the hexadecimal address of the image.
 <span id="_______-h______"></span><span id="_______-H______"></span> **-h**   
 Displays some Help text for this extension in the [Debugger Command window](../debugger/debugger-command-window.md).
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -74,6 +74,7 @@ The [**!lmi**](-lmi.md) extension extracts the most important information from t
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: .create (Create Process)
-description: The .create command creates a new target application.
+title: ".create (Create Process)"
+description: "The .create command creates a new target application."
 keywords: [".create (Create Process) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -57,6 +57,7 @@ If the **-premote** option is used, the new process will be part of a new system
  
 
  
+
 
 
 

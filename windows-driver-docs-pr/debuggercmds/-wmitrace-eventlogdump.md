@@ -1,6 +1,6 @@
 ---
-title: wmitrace.eventlogdump
-description: The wmitrace.eventlogdump extension displays the contents of the specified logger. The display is formatted like an event log.
+title: "wmitrace.eventlogdump"
+description: "The wmitrace.eventlogdump extension displays the contents of the specified logger. The display is formatted like an event log."
 keywords: ["wmitrace.eventlogdump Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -30,7 +30,7 @@ Specifies the trace session. *LoggerID* is an ordinal number that the system ass
 <span id="_______LoggerName______"></span><span id="_______loggername______"></span><span id="_______LOGGERNAME______"></span> *LoggerName*   
 Specifies the trace session. *LoggerName* is the text name that was specified when the trace session was started.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 This extension is exported by Wmitrace.dll.
 
@@ -49,6 +49,7 @@ To find the logger ID of a trace session, use the [**!wmitrace.strdump**](-wmitr
  
 
  
+
 
 
 

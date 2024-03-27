@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_CAMERACONTROL\_FOCAL\_LENGTH
+title: KSPROPERTY_CAMERACONTROL_FOCAL_LENGTH
 description: The KSPROPERTY\_CAMERACONTROL\_FOCAL\_LENGTH property retrieves focal length information for a camera.
 keywords: ["KSPROPERTY_CAMERACONTROL_FOCAL_LENGTH Streaming Media Devices"]
 topic_type:

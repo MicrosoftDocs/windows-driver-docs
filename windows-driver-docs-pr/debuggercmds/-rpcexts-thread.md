@@ -1,6 +1,6 @@
 ---
-title: rpcexts.thread
-description: The rpcexts.thread extension displays the per-thread RPC information.This extension command should not be confused with the .thread command.
+title: "rpcexts.thread"
+description: "The rpcexts.thread extension displays the per-thread RPC information.This extension command should not be confused with the .thread command."
 keywords: ["rpcexts.thread Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -29,7 +29,7 @@ This extension command should not be confused with the [**.thread (Set Register 
 <span id="_______TEB______"></span><span id="_______teb______"></span> *TEB*   
 Specifies the address of the thread environment block (TEB).
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 <table>
 <colgroup>
@@ -82,6 +82,7 @@ fAsync - 0x0
  
 
  
+
 
 
 

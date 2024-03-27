@@ -1,6 +1,6 @@
 ---
-title: version (WinDbg)
-description: The version extension displays the version information for the extension DLL.This extension command should not be confused with the version (Show Debugger Version) command.
+title: "version (WinDbg)"
+description: "The version extension displays the version information for the extension DLL.This extension command should not be confused with the version (Show Debugger Version) command."
 keywords: ["version Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -29,7 +29,7 @@ This extension command should not be confused with the [**version (Show Debugger
 <span id="_______ExtensionDLL______"></span><span id="_______extensiondll______"></span><span id="_______EXTENSIONDLL______"></span> *ExtensionDLL*   
 Specifies the extension DLL whose version number is to be displayed.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 This extension is available in most extension DLLs.
 
@@ -44,6 +44,7 @@ The original purpose of this extension was to ensure that the DLL version matche
  
 
  
+
 
 
 

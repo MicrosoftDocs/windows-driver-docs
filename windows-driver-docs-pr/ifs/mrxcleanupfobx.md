@@ -1,5 +1,5 @@
 ---
-title: MRxCleanupFobx routine (Windows Drivers)
+title: MRxCleanupFobx Routine (Windows Drivers)
 description: Learn more about the MRxCleanupFobx routine.
 keywords:
 - mrx/MRxCleanupFobx
