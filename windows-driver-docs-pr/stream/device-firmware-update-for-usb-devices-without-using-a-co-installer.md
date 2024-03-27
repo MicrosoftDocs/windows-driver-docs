@@ -154,9 +154,9 @@ ContosoFirmware.bin=1
 1 = %MediaDescription%
 
 [DestinationDirs]
-UMDriverCopy=12,UMDF ; copy to drivers\UMDF
-ContosoFirmwareCopy=12,ContosoFirmware ; copy to drivers\ContosoFirmware
-DefaultDestDir = 12
+UMDriverCopy=13,UMDF ; copy to driverstore\UMDF
+ContosoFirmwareCopy=13,ContosoFirmware ; copy to driverstore\ContosoFirmware
+DefaultDestDir = 13
 
 [UMDriverCopy]
 ContosoFirmwareUpdateFilterDriver.dll
@@ -165,24 +165,37 @@ ContosoFirmwareUpdateFilterDriver.dll
 ContosoFirmware.bin
 
 [Manufacturer]
-%CONTOSO% = ContosoFirmwareUpdateFilterDriver,ntamd64
+%CONTOSO% = ContosoFirmwareUpdateFilterDriver,NT$ARCH$.6.1,NT$ARCH$.10.0...22000
 
-[ContosoFirmwareUpdateFilterDriver.ntamd64]
+[ContosoFirmwareUpdateFilterDriver.NT$ARCH$.6.1]
 ; replace with your camera device VID PID
-%ContosoCamera.DeviceDesc% = ContosoFirmwareUpdateFilterDriver_Install, USB\VID_1234&PID_1234&REV_1234
+%ContosoCamera.DeviceDesc% = ContosoFirmwareUpdateFilterDriver_Win7Install, USB\VID_1234&PID_1234&REV_1234
 
-[ContosoFirmwareUpdateFilterDriver_Install]
+[ContosoFirmwareUpdateFilterDriver_Win7Install]
 CopyFiles=UMDriverCopy, ContosoFirmwareCopy
 
-[ContosoFirmwareUpdateFilterDriver_Install.HW]
+[ContosoFirmwareUpdateFilterDriver_Win7Install.HW]
 AddReg = ContosoFirmwareUpdateFilterDriver.AddReg
+
+[ContosoFirmwareUpdateFilterDriver.NT$ARCH$.10.0...22000]
+; replace with your camera device VID PID
+%ContosoCamera.DeviceDesc% = ContosoFirmwareUpdateFilterDriver_Win11Install, USB\VID_1234&PID_1234&REV_1234
+
+[ContosoFirmwareUpdateFilterDriver_Win11Install]
+Include=wudfrd.inf
+Needs=wudfrd.NT
+CopyFiles=UMDriverCopy, ContosoFirmwareCopy
+
+[ContosoFirmwareUpdateFilterDriver_Win11Install.HW]
+Include=wudfrd.inf
+Needs=wudfrd.NT.HW
 
 [ContosoFirmwareUpdateFilterDriver.AddReg]
 ; Load the redirector as an lower filter on this specific device.
 ; 0x00010008 - FLG_ADDREG_TYPE_MULTI_SZ | FLG_ADDREG_APPEND
 HKR,,"LowerFilters",0x00010008,"WUDFRd"
 
-[ContosoFirmwareUpdateFilterDriver_Install.Services]
+[ContosoFirmwareUpdateFilterDriver_Win7Install.Services]
 AddService=WUDFRd,0x000001f8,WUDFRD_ServiceInstall
 
 [WUDFRD_ServiceInstall]
@@ -192,13 +205,22 @@ StartType = 3
 ErrorControl = 1
 ServiceBinary = %12%\WUDFRd.sys
 
-[ContosoFirmwareUpdateFilterDriver_Install.Wdf]
+
+[ContosoFirmwareUpdateFilterDriver_Win7Install.Services]
+Include=wudfrd.inf
+Needs=WUDFRD.NT.Services
+
+[ContosoFirmwareUpdateFilterDriver_Win7Install.Wdf]
+UmdfService=ContosoFirmwareUpdateFilterDriver, ContosoFirmwareUpdateFilterDriver.UmdfFilter
+UmdfServiceOrder=ContosoFirmwareUpdateFilterDriver
+
+[ContosoFirmwareUpdateFilterDriver_Win11Install.Wdf]
 UmdfService=ContosoFirmwareUpdateFilterDriver, ContosoFirmwareUpdateFilterDriver.UmdfFilter
 UmdfServiceOrder=ContosoFirmwareUpdateFilterDriver
 
 [ContosoFirmwareUpdateFilterDriver.UmdfFilter]
 UmdfLibraryVersion=2.0.0
-ServiceBinary= "%12%\UMDF\ContosoFirmwareUpdateFilterDriver.dll"
+ServiceBinary= "%13%\UMDF\ContosoFirmwareUpdateFilterDriver.dll"
 
 [Strings]
 CONTOSO = "Contoso Inc."
