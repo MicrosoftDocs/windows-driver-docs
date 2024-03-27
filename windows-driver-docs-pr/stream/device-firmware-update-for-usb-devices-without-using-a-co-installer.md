@@ -206,7 +206,7 @@ ErrorControl = 1
 ServiceBinary = %12%\WUDFRd.sys
 
 
-[ContosoFirmwareUpdateFilterDriver_Win7Install.Services]
+[ContosoFirmwareUpdateFilterDriver_Win11Install.Services]
 Include=wudfrd.inf
 Needs=WUDFRD.NT.Services
 
