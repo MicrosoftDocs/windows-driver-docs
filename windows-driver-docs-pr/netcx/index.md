@@ -13,7 +13,7 @@ ms.custom: 19H1
 
 ## Overview
 
-Starting in Windows 10, version 2004, the Windows Driver Kit (WDK) includes a Network Adapter WDF Class Extension module (NetAdapterCx) that enables you to write a KMDF-based client driver for a Network Interface Controller (NIC). NetAdapterCx gives you the power and flexibility of WDF and the networking performance of NDIS, and makes it easy to write a driver for your NIC.
+Starting in Windows 10, version 2004, the Windows Driver Kit (WDK) includes a Network Adapter WDF Class Extension module (NetAdapterCx) that enables you to write a KMDF-based client driver for a Network Interface Controller (NIC). Starting in Windows 11, version 24H2, the [UMDF version of NetAdapterCx](user-mode-netcx.md) enables NIC drivers to operate in user-mode. NetAdapterCx gives you the power and flexibility of WDF and the networking performance of NDIS, and makes it easy to write a driver for your NIC.
 
 In previous versions of Windows, WDF and NDIS had individual advantages, but did not interoperate well. The only way to write a NIC driver was to write an NDIS miniport driver. To use WDF in an NDIS miniport driver, you had to write extra code in your driver, and even then, you only had access to a small subset of WDF functionality.
 
@@ -46,6 +46,7 @@ This section contains the following topics:
 * [Porting NDIS miniport drivers to NetAdapterCx](porting-ndis-miniport-drivers-to-netadaptercx.md)
 * [Building a NetAdapterCx client driver](building-a-netadaptercx-client-driver.md)
 * [INF files for NetAdapterCx client drivers](inf-files-for-netadaptercx-client-drivers.md)
+* [User-mode NetAdapterCx](user-mode-netcx.md)
 * [Managing the lifetime of objects in NetAdapterCx](summary-of-netadaptercx-objects.md)
 * [Accessing configuration information](accessing-configuration-information.md)
 * [Debugging a NetAdapterCx client driver](debugging-a-netadaptercx-client-driver.md)
