@@ -44,7 +44,9 @@ Starting in Windows 11, version 24H2, [bind links](/windows/win32/bindlink/) can
 
 ## Network drivers
 
-UDP Receive Segment Coalescing Offload (URO) is a new hardware offload feature that enables network interface cards (NICs) to coalesce UDP receive segments.  For more information, see [UDP Receive Segment Coalescing Offload (URO)](./network/udp-rsc-offload.md) and [NetAdapterCx URO](./netcx/rsc-offload.md).
+Starting in Windows 11, version 24H2, you can write a [User-Mode Driver Framework (UMDF) NetAdapterCx](netcx/user-mode-netcx.md) driver. The UMDF APIs in NetAdapterCx align with the KMDF versions, so you can convert your KMDF-based client driver to UMDF with little to no code changes.
+
+UDP Receive Segment Coalescing Offload (URO) is a new hardware offload feature that enables network interface cards (NICs) to coalesce UDP receive segments.  For more information, see [UDP Receive Segment Coalescing Offload (URO)](network/udp-rsc-offload.md) and [NetAdapterCx URO](netcx/rsc-offload.md).
 
 ## Kernel
 
