@@ -191,7 +191,7 @@ UmdfServiceOrder=SimpleMediaSource
 
 [SimpleMediaSource_Install]
 UmdfLibraryVersion=$UMDFVERSION$
-ServiceBinary=%13%\UMDF\SimpleMediaSourceDriver.dll
+ServiceBinary=%13%\SimpleMediaSourceDriver.dll
 
 [Strings]
 ProviderString = "Microsoft Corporation"
