@@ -94,13 +94,13 @@ ClassGUID={e2f84ce7-8efa-411c-aa69-97454ca4cb57}
 Provider=%CONTOSO%
 ExtensionId = {E4FE3A00-68CF-45A3-83C8-8347A6A38069} ; replace with your own GUID
 CatalogFile.NT = SampleExtensionInfForDmftInstallation.cat
-DriverVer=08/28/2017,10.0.17000.2000
+DriverVer=03/28/2024,10.0.22000.2000
 PnpLockdown=1
 
 [Manufacturer]
-%CONTOSO% = ContosoSampleDeviceMFT,ntamd64
+%CONTOSO% = ContosoSampleDeviceMFT,ntamd64.10.0...22000
 
-[ContosoSampleDeviceMFT.ntamd64]
+[ContosoSampleDeviceMFT.ntamd64.10.0...22000]
 %ContosoCamera.DeviceDesc% = ContosoSampleDeviceMFT_Install, usb\vid_xxxx&pid_xxxx&mi_xx  ; replace with your camera device VID PID
 
 [ContosoSampleDeviceMFT_Install]
