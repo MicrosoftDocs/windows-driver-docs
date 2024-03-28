@@ -1,6 +1,6 @@
 ---
-title: pcrs (WinDbg)
-description: The pcrs extension displays the Intel Itanium-specific processor control registers.
+title: "pcrs (WinDbg)"
+description: "The pcrs extension displays the Intel Itanium-specific processor control registers."
 keywords: ["processor control register (PCR)", "PCR (processor control register)", "pcrs Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -46,6 +46,7 @@ Do not confuse the **!pcrs** extension with the [**!pcr**](-pcr.md) extension, w
  
 
  
+
 
 
 

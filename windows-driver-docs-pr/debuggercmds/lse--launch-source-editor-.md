@@ -1,6 +1,6 @@
 ---
-title: lse (Launch Source Editor)
-description: The lse command opens an editor for the current source file.
+title: "lse (Launch Source Editor)"
+description: "The lse command opens an editor for the current source file."
 keywords: ["lse (Launch Source Editor) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -63,6 +63,7 @@ This value indicates that Myeditor.exe opens to the one-based line number of the
  
 
  
+
 
 
 

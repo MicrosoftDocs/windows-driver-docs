@@ -6,7 +6,7 @@ keywords:
 - WDK
 - Download
 - drivers
-ms.date: 01/18/2024
+ms.date: 03/06/2024
 ---
 
 # Download the Windows Driver Kit (WDK)
@@ -20,7 +20,7 @@ To target Windows 8.1, Windows 8, and Windows 7, install an older WDK and an old
 
 [Join the Windows Insider Program](https://insider.windows.com/) to get [WDK Insider Preview builds](https://aka.ms/wipwdk). For installation instructions for the Windows Insider Preview builds, see [Installing preview versions of the Windows Driver Kit (WDK)](./installing-preview-versions-wdk.md).
 
-## ![download icon.](images/download-install.png) Step 1: Install Visual Studio 2022
+## ![download icon for Visual Studio](images/download-install.png) Step 1: Install Visual Studio 2022
 
 The WDK requires Visual Studio. For more information about system requirements for Visual Studio, see [Visual Studio 2022 System Requirements](/visualstudio/releases/2022/system-requirements).
 
@@ -39,11 +39,13 @@ When you install Visual Studio 2022, select the **Desktop development with C++**
 * C++ MFC for latest v143 build tools with Spectre Mitigations (ARM64/ARM64EC)</br>
 * C++ MFC for latest v143 build tools with Spectre Mitigations (x86 & x64)</br>
 
-Hint: Use the Search box to look for "64 latest spectre" to quickly see these components.</br>
+Hint: Use the Search box to look for "64 latest spectre" (in English installations) or "64 latest" (in non-English installations) to quickly see these components.</br>
+
+![Image showing the six components listed above with checkboxes set](images/installing-VS-components-64-latest-spectre.png)
 
 Note: The **Desktop development with C++** workload selected above also installs the Windows SDK 10.0.22621.
 
-## ![download icon.](images/download-install.png) Step 2: Install SDK
+## ![download icon for SDK](images/download-install.png) Step 2: Install SDK
 
 Installing Visual Studio should automatically download the Windows SDK 10.0.22621. In the event that it does not, use the following link:
 
@@ -51,7 +53,7 @@ Installing Visual Studio should automatically download the Windows SDK 10.0.2262
 
 The provided links for the SDK and the WDK have matching build numbers, which is always required for the kits to work together. If you decide to install your own SDK/WDK pair, perhaps for a different Windows version, ensure that the build numbers match. For more details, see [Kit versioning](#kit-versioning).
 
-## ![download icon.](images/download-install.png) Step 3: Install WDK
+## ![download icon for WDK](images/download-install.png) Step 3: Install WDK
 
 * [Download WDK 10.0.22621](https://go.microsoft.com/fwlink/?linkid=2249371)
 
@@ -60,7 +62,7 @@ The WDK Visual Studio extension is included in the default WDK installation.
 > [!TIP]
 > If you can't find driver project templates in Visual Studio, the WDK Visual Studio extension didn't install properly. To resolve this, run the WDK.vsix file from this location: C:\Program Files (x86)\Windows Kits\10\Vsix\VS2022\10.0.22621.2428\WDK.vsix.
 
-## ![download icon.](images/download-install.png) Enterprise WDK (EWDK)
+## ![download icon for EWDK](images/download-install.png) Enterprise WDK (EWDK)
 
 As an alternative to downloading Visual Studio, the SDK, and the WDK, you can download the EWDK, which is a standalone, self-contained command-line environment for building drivers. It includes Visual Studio Build Tools, the SDK, and the WDK.
 

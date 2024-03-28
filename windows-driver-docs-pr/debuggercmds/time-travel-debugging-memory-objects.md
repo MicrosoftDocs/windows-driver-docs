@@ -1,6 +1,6 @@
 ---
-title: TTD Memory Objects
-description: This section describes the memory model objects associated with time travel debugging.
+title: "TTD Memory Objects"
+description: "This section describes the memory model objects associated with time travel debugging."
 keywords: ["TTD Memory Objects", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
 ms.date: 01/16/2018
 ---
@@ -115,4 +115,5 @@ In this example all of the postions in the trace where the four bytes of memory 
 [Time Travel Debugging - Introduction to Time Travel Debugging objects](time-travel-debugging-object-model.md)
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
+
 

@@ -1,6 +1,6 @@
 ---
-title: chkimg (WinDbg)
-description: The chkimg extension detects corruption in the images of executable files by comparing them to the copy on a symbol store or other file repository.
+title: "chkimg (WinDbg)"
+description: "The chkimg extension detects corruption in the images of executable files by comparing them to the copy on a symbol store or other file repository."
 keywords: ["executable files and paths, corruption", "chkimg Windows Debugging"]
 ms.date: 05/07/2021
 topic_type:
@@ -282,6 +282,7 @@ Random file and memory corruption can be difficult to investigate. One tool to c
 For testing physical memory use the Windows Memory Diagnostics tool. It's use and other general techniques are described in [Blue Screen Data](../debugger/blue-screen-data.md).
 
 Use the scan disk utility to identify file system errors. Select and hold (or right-click) on the drive you want to scan and select **Properties**. Select **Tools**. Select the **Check now** button.
+
 
 
 

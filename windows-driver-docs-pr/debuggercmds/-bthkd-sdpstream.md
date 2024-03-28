@@ -1,6 +1,6 @@
 ---
-title: bthkd.sdpstream
-description: The bthkd.sdpstream command displays the contents of a SDP stream.
+title: "bthkd.sdpstream"
+description: "The bthkd.sdpstream command displays the contents of a SDP stream."
 keywords: ["bthkd.sdpstream Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -35,7 +35,7 @@ The length of SDP stream in bytes to display.
 
 Bthkd.dll
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [Bluetooth Extensions (Bthkd.dll)](bluetooh-extensions--bthkd-dll-.md)
@@ -43,6 +43,7 @@ Bthkd.dll
  
 
  
+
 
 
 

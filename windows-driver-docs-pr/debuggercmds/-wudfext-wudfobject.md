@@ -1,6 +1,6 @@
 ---
-title: wudfext.wudfobject
-description: The wudfext.wudfobject extension displays information about a WDF object, as well as its parent and child relationships.
+title: "wudfext.wudfobject"
+description: "The wudfext.wudfobject extension displays information about a WDF object, as well as its parent and child relationships."
 keywords: ["wudfext.wudfobject Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -164,6 +164,7 @@ IWDFDriver 0xf2db8 Fx: 0xf2d40 [Ref 2]
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: rpcexts.getclientcallinfo
-description: The rpcexts.getclientcallinfo extension searches the system's RPC state information for client call (CCALL) information.
+title: "rpcexts.getclientcallinfo"
+description: "The rpcexts.getclientcallinfo extension searches the system's RPC state information for client call (CCALL) information."
 keywords: ["rpcexts.getclientcallinfo Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -84,6 +84,7 @@ For a similar example using the DbgRpc tool, see [Get RPC Client Call Informatio
  
 
  
+
 
 
 

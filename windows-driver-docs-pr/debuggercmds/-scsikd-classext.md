@@ -1,6 +1,6 @@
 ---
-title: scsikd.classext
-description: The scsikd.classext extension displays the specified class Plug and Play (PnP) device.
+title: "scsikd.classext"
+description: "The scsikd.classext extension displays the specified class Plug and Play (PnP) device."
 keywords: ["scsikd.classext Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -72,6 +72,7 @@ Here is an example of the **!scsikd.classext** display:
  
 
  
+
 
 
 

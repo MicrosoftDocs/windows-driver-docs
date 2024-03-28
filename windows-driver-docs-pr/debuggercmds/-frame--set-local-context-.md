@@ -1,6 +1,6 @@
 ---
-title: .frame (Set Local Context)
-description: The .frame command specifies which local context (scope) is used to interpret local variables or displays the current local context.
+title: ".frame (Set Local Context)"
+description: "The .frame command specifies which local context (scope) is used to interpret local variables or displays the current local context."
 keywords: ["Set Local Context (.frame) command", "memory, Set Local Context (.frame) command", "context, Set Local Context (.frame) command", ".frame (Set Local Context) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -80,6 +80,7 @@ The local context is reset to the scope of the program counter if any applicatio
  
 
  
+
 
 
 

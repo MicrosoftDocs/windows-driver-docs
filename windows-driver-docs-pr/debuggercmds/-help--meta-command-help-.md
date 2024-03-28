@@ -1,6 +1,6 @@
 ---
-title: .help (Meta-Command Help)
-description: The .help command displays a list of all meta-commands.
+title: ".help (Meta-Command Help)"
+description: "The .help command displays a list of all meta-commands."
 keywords: [".help (Meta-Command Help) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -48,6 +48,7 @@ For more information about meta-commands, use the **.help** command. For more in
  
 
  
+
 
 
 

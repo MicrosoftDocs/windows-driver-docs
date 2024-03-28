@@ -1,6 +1,6 @@
 ---
-title: usb3kd.ucx_endpoint
-description: The usb3kd.ucx_endpoint command displays information about an endpoint on a USB device in the USB 3.0 tree. The display is based on data maintained by UcxVersion.sys.
+title: "usb3kd.ucx_endpoint"
+description: "The usb3kd.ucx_endpoint command displays information about an endpoint on a USB device in the USB 3.0 tree. The display is based on data maintained by UcxVersion.sys."
 keywords: ["usb3kd.ucx_endpoint Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -88,7 +88,7 @@ EventCallbacks:
     EvtEndpointReset: (0xfffff880044bb854) USBXHCI!Endpoint_UcxEvtEndpointReset
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [USB 3.0 Extensions](usb-3-extensions.md)
@@ -96,4 +96,5 @@ EventCallbacks:
 [**!usb3kd.ucx\_controller\_list**](-usb3kd-ucx-controller-list.md)
 
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
+
 

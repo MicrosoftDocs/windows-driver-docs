@@ -1,6 +1,6 @@
 ---
-title: ndiskd.interfaces
-description: The ndiskd.interfaces extension displays information about a network interface.
+title: "ndiskd.interfaces"
+description: "The ndiskd.interfaces extension displays information about a network interface."
 keywords: ["ndiskd.interfaces Windows Debugging"]
 ms.date: 06/15/2020
 topic_type:
@@ -125,3 +125,4 @@ STATE
 [NDIS Network Interfaces](../network/ndis-network-interfaces2.md)
 
 [NET\_LUID Value](../network/net-luid-value.md)
+

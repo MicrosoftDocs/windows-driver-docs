@@ -1,6 +1,6 @@
 ---
-title: .sleep (Pause Debugger)
-description: The .sleep command causes the user-mode debugger to pause and the target computer to become active. This command is only used when you are controlling the user-mode debugger from the kernel debugger.
+title: ".sleep (Pause Debugger)"
+description: "The .sleep command causes the user-mode debugger to pause and the target computer to become active. This command is only used when you are controlling the user-mode debugger from the kernel debugger."
 keywords: ["Pause Debugger (.sleep) command", "controlling the user-mode debugger from the kernel debugger, Pause Debugger (.sleep) command", ".sleep (Pause Debugger) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -71,6 +71,7 @@ The sleep time is in milliseconds and interpreted according to the default radix
  
 
  
+
 
 
 

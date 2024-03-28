@@ -1,6 +1,6 @@
 ---
-title: ks.dumpbag
-description: The ks.dumpbag extension displays the contents of the object bag for the specified object.
+title: "ks.dumpbag"
+description: "The ks.dumpbag extension displays the contents of the object bag for the specified object."
 keywords: ["ks.dumpbag Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -71,6 +71,7 @@ Filter 829493c4 [CKsFilter = 82949350]:
  
 
  
+
 
 
 

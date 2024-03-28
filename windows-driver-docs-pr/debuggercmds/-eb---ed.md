@@ -1,6 +1,6 @@
 ---
-title: eb, ed (WinDbg)
-description: The eb and ed extensions write a sequence of values into a specified physical address. These extension commands should not be confused with the e\\ (Enter Values) command.
+title: "eb, ed (WinDbg)"
+description: "The eb and ed extensions write a sequence of values into a specified physical address. These extension commands should not be confused with the e\\ (Enter Values) command."
 keywords: ["eb extension", "ed extension", "memory, Write Physical ( e ) extensions", "eb, ed Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -75,6 +75,7 @@ To read physical memory, use the [**!d\\***](-db---dc---dd---dp---dq---du---dw.m
  
 
  
+
 
 
 

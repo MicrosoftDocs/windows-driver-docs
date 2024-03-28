@@ -1,6 +1,6 @@
 ---
-title: usb3kd.urb
-description: The usb3kd.urb extension displays information about a USB request block (URB).
+title: "usb3kd.urb"
+description: "The usb3kd.urb extension displays information about a USB request block (URB)."
 keywords: ["usb3kd.urb Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -75,7 +75,7 @@ TransferBuffer:        0xfffffa8005a2cc88
 TransferBufferMDL:     0xfffffa8005848930
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [USB 3.0 Extensions](usb-3-extensions.md)
@@ -83,4 +83,5 @@ TransferBufferMDL:     0xfffffa8005848930
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
+
 

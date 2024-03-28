@@ -1,6 +1,6 @@
 ---
-title: .breakin (Break to the Kernel Debugger)
-description: The .breakin command switches from user-mode debugging to kernel-mode debugging. This command is particularly useful when you are controlling the user-mode debugger from the kernel debugger.
+title: ".breakin (Break to the Kernel Debugger)"
+description: "The .breakin command switches from user-mode debugging to kernel-mode debugging. This command is particularly useful when you are controlling the user-mode debugger from the kernel debugger."
 keywords: [".breakin (Break to the Kernel Debugger) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -52,6 +52,7 @@ If the **.breakin** command is used on a system that was not booted with debuggi
  
 
  
+
 
 
 

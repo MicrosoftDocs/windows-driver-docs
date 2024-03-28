@@ -1,6 +1,6 @@
 ---
-title: usb3kd.xhci_eventring
-description: The usb3kd.xhci_eventring extension displays information about the event ring data structure associated with a USB 3.0 host controller.
+title: "usb3kd.xhci_eventring"
+description: "The usb3kd.xhci_eventring extension displays information about the event ring data structure associated with a USB 3.0 host controller."
 keywords: ["usb3kd.xhci_eventring Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -91,7 +91,7 @@ Now you can pass the address of the device extension to the **!xhci\_eventring**
         [216] TRANSFER_EVENT      0xfffffa8005373d80 CycleBit 0 SlotId  2 EndpointID  3 EventData 1 Pointer 0xfffffa8005a3d850 CC_SHORT_PACKET
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [USB 3.0 Extensions](usb-3-extensions.md)
@@ -101,4 +101,5 @@ Now you can pass the address of the device extension to the **!xhci\_eventring**
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
+
 

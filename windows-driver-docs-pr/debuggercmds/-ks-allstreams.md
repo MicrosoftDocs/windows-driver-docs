@@ -1,6 +1,6 @@
 ---
-title: ks.allstreams
-description: The ks.allstreams extension walks the entire device tree and finds every kernel streaming device in the system.
+title: "ks.allstreams"
+description: "The ks.allstreams extension walks the entire device tree and finds every kernel streaming device in the system."
 keywords: ["ks.allstreams Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -90,6 +90,7 @@ kd> !allstreams
  
 
  
+
 
 
 

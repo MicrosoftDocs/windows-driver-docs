@@ -1,6 +1,6 @@
 ---
-title: ihs (WinDbg)
-description: The ihs extension displays the interrupt history record for the specified processor, using program counter symbols.
+title: "ihs (WinDbg)"
+description: "The ihs extension displays the interrupt history record for the specified processor, using program counter symbols."
 keywords: ["interrupt history record", "ihs Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -81,6 +81,7 @@ EXTERNAL INTERRUPT  e0000000830623b0      1010092a6018  IVR=               d0 nt
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: ndiskd.ndisrwlock
-description: The ndiskd.ndisrwlock extension displays information about an NDIS_RW_LOCK_EX lock structure.
+title: "ndiskd.ndisrwlock"
+description: "The ndiskd.ndisrwlock extension displays information about an NDIS_RW_LOCK_EX lock structure."
 keywords: ["ndiskd.ndisrwlock Windows Debugging"]
 ms.date: 06/18/2020
 topic_type:
@@ -84,3 +84,4 @@ NDIS READ-WRITE LOCK
 [**!ndiskd.help**](-ndiskd-help.md)
 
 [**NDIS\_RW\_LOCK\_EX**](/previous-versions/windows/hardware/drivers/ff567279(v=vs.85))
+

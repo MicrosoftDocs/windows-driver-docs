@@ -1,6 +1,6 @@
 ---
-title: .kdfiles (Set Driver Replacement Map)
-description: The .kdfiles command reads a file and uses its contents as the driver replacement map.
+title: ".kdfiles (Set Driver Replacement Map)"
+description: "The .kdfiles command reads a file and uses its contents as the driver replacement map."
 keywords: ["Set Driver Replacement Map (.kdfiles) command", "driver replacement map, Set Driver Replacement Map (.kdfiles) command", ".kdfiles (Set Driver Replacement Map) Windows Debugging"]
 ms.date: 08/11/2020
 topic_type:
@@ -132,4 +132,5 @@ The use of the high speed/low latency KD transport KDNET is recommended to minim
 </table>
 
  
+
 

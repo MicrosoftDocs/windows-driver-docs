@@ -1,6 +1,6 @@
 ---
-title: pfn (WinDbg)
-description: The pfn extension displays information about a specific page frame or the entire page frame database.
+title: "pfn (WinDbg)"
+description: "The pfn extension displays information about a specific page frame or the entire page frame database."
 keywords: ["page frame", "pfn Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -67,6 +67,7 @@ kd> !pfn 154
  
 
  
+
 
 
 

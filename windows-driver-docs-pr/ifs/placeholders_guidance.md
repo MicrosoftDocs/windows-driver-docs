@@ -5,7 +5,6 @@ keywords:
 - filter drivers file system , implementing placeholders
 - filter drivers file system, handling placeholders
 ms.date: 02/22/2023
-prerelease: false
 ---
 
 # Handling placeholders

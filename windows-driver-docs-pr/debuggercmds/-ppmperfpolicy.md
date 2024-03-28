@@ -1,6 +1,6 @@
 ---
-title: ppmperfpolicy
-description: The ppmperfpolicy command
+title: "ppmperfpolicy"
+description: "The ppmperfpolicy command"
 keywords: ["ppmperfpolicy Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -31,6 +31,7 @@ Kdexts.dll
   
 
  
+
 
 
 

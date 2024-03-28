@@ -1,6 +1,6 @@
 ---
-title: filecache (WinDbg)
-description: The filecache extension displays information regarding the system file cache memory and PTE use.
+title: "filecache (WinDbg)"
+description: "The filecache extension displays information regarding the system file cache memory and PTE use."
 keywords: ["file cache", "filecache Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -158,6 +158,7 @@ Control Valid Standby/Dirty Shared Locked Name
  
 
  
+
 
 
 

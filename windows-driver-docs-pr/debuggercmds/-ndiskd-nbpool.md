@@ -1,6 +1,6 @@
 ---
-title: ndiskd.nbpool
-description: The ndiskd.nbpool extension displays information about a NET_BUFFER (NB) pool. 
+title: "ndiskd.nbpool"
+description: "The ndiskd.nbpool extension displays information about a NET_BUFFER (NB) pool. "
 keywords: ["ndiskd.nbpool Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -127,7 +127,7 @@ ALL ALLOCATED NBs
     to bypass this limit.]
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [Network Driver Design Guide](../network/index.md)
@@ -143,4 +143,5 @@ ALL ALLOCATED NBs
 [**NET\_BUFFER**](../network/net-buffer-structure.md)
 
  
+
 

@@ -1,6 +1,6 @@
 ---
-title: hidkd.hidtree
-description: The hidkd.hidtree command displays a list of all device nodes that have a HID function driver along with their child nodes. 
+title: "hidkd.hidtree"
+description: "The hidkd.hidtree command displays a list of all device nodes that have a HID function driver along with their child nodes. "
 keywords: ["hidkd.hidtree Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -42,7 +42,7 @@ When you are debugging a HID issue, the **!hidtree** is a good place to start, b
 
 Hidkd.dll
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [HID Extensions](hid-extensions.md)
@@ -50,6 +50,7 @@ Hidkd.dll
  
 
  
+
 
 
 

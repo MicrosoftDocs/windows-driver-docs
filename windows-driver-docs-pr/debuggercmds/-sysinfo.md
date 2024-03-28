@@ -1,6 +1,6 @@
 ---
-title: sysinfo (WinDbg)
-description: The sysinfo extension reads and displays specified SMBIOS, Advanced Configuration and Power Interface (ACPI), and CPU information from a dump file or live system.
+title: "sysinfo (WinDbg)"
+description: "The sysinfo extension reads and displays specified SMBIOS, Advanced Configuration and Power Interface (ACPI), and CPU information from a dump file or live system."
 keywords: ["sysinfo Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -122,3 +122,4 @@ The following parameters are supported only on particular systems:
 Microsoft makes every effort to remove personally identifiable information (PII) from these records. All PII is removed from dump files. However, on a live system, some PII may not yet be removed. As a result, PII fields will be reported as 0 or blank, even if they actually contain information.
 
 To stop execution of commands that include the **cpuinfo**, **gbl**, **registers**, or **smbios** parameters at any time, press CTRL+BREAK (in WinDbg) or CTRL+C (in KD).
+

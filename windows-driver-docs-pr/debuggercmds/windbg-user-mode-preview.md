@@ -1,6 +1,6 @@
 ---
-title: WinDbg - Start a user mode session
-description: This section describes how to start a user mode session with the WinDbg debugger.
+title: "WinDbg - Start a user mode session"
+description: "This section describes how to start a user mode session with the WinDbg debugger."
 keywords: ["Start a user mode session", "WinDbg", "Menu", "Windows Debugging"]
 ms.date: 11/23/2022
 ---
@@ -66,3 +66,4 @@ Use this option to launch and attach to an app package using either the Applicat
 ## See Also
 
 [WinDbg Features](../debugger/debugging-using-windbg-preview.md)
+

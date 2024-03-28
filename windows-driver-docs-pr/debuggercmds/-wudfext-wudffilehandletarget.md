@@ -1,6 +1,6 @@
 ---
-title: wudfext.wudffilehandletarget
-description: The wudfext.wudffilehandletarget extension displays information about a file-handle-based I/O target.
+title: "wudfext.wudffilehandletarget"
+description: "The wudfext.wudffilehandletarget extension displays information about a file-handle-based I/O target."
 keywords: ["wudfext.wudffilehandletarget Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -58,6 +58,7 @@ For more information, see [User-Mode Driver Framework Debugging](../debugger/use
  
 
  
+
 
 
 

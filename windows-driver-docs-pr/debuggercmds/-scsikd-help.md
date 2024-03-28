@@ -1,6 +1,6 @@
 ---
-title: scsikd.help
-description: The scsikd.help extension displays help text for Scsikd.dll extension commands.
+title: "scsikd.help"
+description: "The scsikd.help extension displays help text for Scsikd.dll extension commands."
 keywords: ["scsikd.help Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -49,6 +49,7 @@ For more information, see [SCSI Miniport Debugging](../debugger/scsi-miniport-de
  
 
  
+
 
 
 

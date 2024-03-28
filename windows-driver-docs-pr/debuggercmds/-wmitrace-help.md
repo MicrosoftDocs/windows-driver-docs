@@ -1,6 +1,6 @@
 ---
-title: wmitrace.help
-description: The wmitrace.help extension displays the extension commands in Wmitrace.dll.
+title: "wmitrace.help"
+description: "The wmitrace.help extension displays the extension commands in Wmitrace.dll."
 keywords: ["wmitrace.help Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -35,6 +35,7 @@ For a conceptual overview of event tracing, see the Microsoft Windows SDK. For i
  
 
  
+
 
 
 

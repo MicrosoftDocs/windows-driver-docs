@@ -1,6 +1,6 @@
 ---
-title: ndiskd.minidriver
-description: The ndiskd.minidriver command displays information about an NDIS miniport driver. 
+title: "ndiskd.minidriver"
+description: "The ndiskd.minidriver command displays information about an NDIS miniport driver. "
 keywords: ["ndiskd.minidriver Windows Debugging"]
 ms.date: 06/15/2020
 topic_type:
@@ -90,3 +90,4 @@ MINIPORTS
 [**NDIS extensions (Ndiskd.dll)**](ndis-extensions--ndiskd-dll-.md)
 
 [**!ndiskd.help**](-ndiskd-help.md)
+

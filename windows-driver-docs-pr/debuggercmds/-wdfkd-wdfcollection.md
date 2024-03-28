@@ -1,6 +1,6 @@
 ---
-title: wdfkd.wdfcollection
-description: The wdfkd.wdfcollection extension displays all of the objects that are stored in a WDFCOLLECTION structure.
+title: "wdfkd.wdfcollection"
+description: "The wdfkd.wdfcollection extension displays all of the objects that are stored in a WDFCOLLECTION structure."
 keywords: ["wdfkd.wdfcollection Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -42,6 +42,7 @@ For more information, see [Kernel-Mode Driver Framework Debugging](../debugger/k
  
 
  
+
 
 
 

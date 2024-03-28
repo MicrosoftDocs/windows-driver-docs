@@ -1,6 +1,6 @@
 ---
-title: filetime (WinDbg)
-description: The filetime extension converts a 64-bit FILETIME structure into a human-readable time.
+title: "filetime (WinDbg)"
+description: "The filetime extension converts a 64-bit FILETIME structure into a human-readable time."
 keywords: ["FILETIME", "filetime Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -45,6 +45,7 @@ kd> !filetime 1c4730984712348
  
 
  
+
 
 
 

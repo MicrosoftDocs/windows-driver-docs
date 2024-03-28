@@ -1,6 +1,6 @@
 ---
-title: .echotimestamps (Show Time Stamps)
-description: The .echotimestamps command turns on or turns off the display of time stamp information.
+title: ".echotimestamps (Show Time Stamps)"
+description: "The .echotimestamps command turns on or turns off the display of time stamp information."
 keywords: ["Show Time Stamps (.echotimestamps) command", "time stamps", "DbgPrint time stamps", ".echotimestamps (Show Time Stamps) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -59,6 +59,7 @@ When you use **.echotimestamps** to turn on the display of time stamps, the time
  
 
  
+
 
 
 

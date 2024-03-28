@@ -1,6 +1,6 @@
 ---
-title: pci (WinDbg)
-description: The pci extension displays the current status of the peripheral component interconnect (PCI) buses, as well as any devices attached to those buses.
+title: "pci (WinDbg)"
+description: "The pci extension displays the current status of the peripheral component interconnect (PCI) buses, as well as any devices attached to those buses."
 keywords: ["PCI bus", "PCI device", "PCI configuration space", "pci Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -229,6 +229,7 @@ PCI Segment 0x1 Bus 0xc6
 PCI Segment 0x1 Bus 0xe3
 00:0  103c:403b.00  Cmd[0547:imb.ps]  Sts[0010:c....]  HP PCI-PCI Bridge 0xe3->0xe4-0xe4
 ```
+
 
 
 

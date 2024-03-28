@@ -1,6 +1,6 @@
 ---
-title: .outmask (Control Output Mask)
-description: The .outmask command controls the current output mask.
+title: ".outmask (Control Output Mask)"
+description: "The .outmask command controls the current output mask."
 keywords: ["Control Output Mask (.outmask) command", ".outmask (Control Output Mask) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -131,6 +131,7 @@ The following flag values exist.
  
 
  
+
 
 
 

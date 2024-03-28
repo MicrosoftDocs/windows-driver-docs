@@ -1,6 +1,6 @@
 ---
-title: Specialized Extensions
-description: Specialized Extensions
+title: "Specialized Extensions"
+description: "Specialized Extensions"
 keywords: ["extension commands ( commands), specialized extensions", "extension commands ( commands), specialized extensions, Also see individual extension types"]
 ms.date: 06/05/2020
 ---
@@ -26,3 +26,4 @@ This section of the reference discusses extension commands in the extension DLLs
 - [Windows Driver Framework Extensions (Wdfkd.dll)](kernel-mode-driver-framework-extensions--wdfkd-dll-.md)
 - [User-Mode Driver Framework Extensions (Wudfext.dll)](user-mode-driver-framework-extensions--wudfext-dll-.md)
 - [WMI Tracing Extensions (Wmitrace.dll)](wmi-tracing-extensions--wmitrace-dll-.md)
+

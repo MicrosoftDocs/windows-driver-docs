@@ -1,6 +1,6 @@
 ---
-title: finddata (WinDbg)
-description: The finddata extension displays the cached data at a given offset within a specified file object.
+title: "finddata (WinDbg)"
+description: "The finddata extension displays the cached data at a given offset within a specified file object."
 keywords: ["cache manager", "finddata Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -45,6 +45,7 @@ For information about other cache management extensions, see the [**!cchelp**](-
  
 
  
+
 
 
 

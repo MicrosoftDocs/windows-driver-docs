@@ -1,6 +1,6 @@
 ---
-title: usbkd._ehciqh
-description: The usbkd._ehciqh command displays information from a usbehci _HCD_QUEUEHEAD_DESCRIPTOR structure. 
+title: "usbkd._ehciqh"
+description: "The usbkd._ehciqh command displays information from a usbehci _HCD_QUEUEHEAD_DESCRIPTOR structure. "
 keywords: ["usbkd._ehciqh Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -32,7 +32,7 @@ Address of a **usbehci!\_HCD\_QUEUEHEAD\_DESCRIPTOR** structure.
 
 Usbkd.dll
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
@@ -40,4 +40,5 @@ Usbkd.dll
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
+
 

@@ -1,6 +1,6 @@
 ---
-title: Using Aliases
-description: Using Aliases
+title: "Using Aliases"
+description: "Using Aliases"
 keywords: ["Using Aliases", "WinDbg", "Windows Debugging"]
 ms.date: 11/28/2017
 ---
@@ -299,3 +299,4 @@ User-name aliases are easier to use than fixed-named aliases. Their definition s
 Fixed-named aliases are replaced if they are used next to other text. To make a user-named alias be replaced when it is next to other text, enclose it in the [**${ } (Alias Interpreter)**](-------alias-interpreter-.md) token.
 
 Fixed-name alias replacement occurs before user-named alias replacement.
+

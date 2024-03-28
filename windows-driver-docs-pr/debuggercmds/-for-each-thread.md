@@ -1,6 +1,6 @@
 ---
-title: for_each_thread
-description: The for_each_thread extension executes the specified debugger command once for each thread in the target.
+title: "for_each_thread"
+description: "The for_each_thread extension executes the specified debugger command once for each thread in the target."
 keywords: ["for_each_thread Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -67,6 +67,7 @@ You can terminate execution at any point by pressing CTRL+BREAK (in WinDbg) or C
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: srb (WinDbg)
-description: The srb extension displays information about a SCSI Request Block (SRB).
+title: "srb (WinDbg)"
+description: "The srb extension displays information about a SCSI Request Block (SRB)."
 keywords: ["srb Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -44,6 +44,7 @@ An SRB is a system-defined structure used to communicate I/O requests from a SCS
  
 
  
+
 
 
 

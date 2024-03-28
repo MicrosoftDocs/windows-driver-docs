@@ -1,6 +1,6 @@
 ---
-title: .ocommand (Expect Commands from Target)
-description: The .ocommand command enables the target application to send commands to the debugger.
+title: ".ocommand (Expect Commands from Target)"
+description: "The .ocommand command enables the target application to send commands to the debugger."
 keywords: ["Expect Commands from Target (.ocommand) command", ".ocommand (Expect Commands from Target) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -84,4 +84,5 @@ There are no commands executed from the preceding example because the command st
  
 
  
+
 

@@ -2,12 +2,12 @@
 title: Linux symbols and sources
 description: Linux symbols and sources
 keywords: ["symbols, linux, process"]
-ms.date: 03/05/2024
+ms.date: 03/18/2024
 ---
 
 # Linux symbols and sources
 
-This article describes how WinDbg supports standard Linux symbols and sources. Support for debugging on Linux requires WinDbg version TBD 1.2303.30001.1 or above.
+This article describes how WinDbg supports standard Linux symbols and sources. Support for debugging on Linux requires WinDbg version 1.2402.24001.0 or above.
 
 ## DebugInfoD symbol servers
 
@@ -17,7 +17,7 @@ General information on DebugInfoD is available here:
 
 - [DebugInfoD servers](https://sourceware.org/elfutils/Debuginfod.html)
 
-- [Ubuntu Debuginfod - FAQ](https://ubuntu.com/server/docs/service-debuginfod-faq)
+- [Ubuntu Debuginfod](https://ubuntu.com/server/docs/debuginfod)
 
 The `DebugInfoD*` tag can point to one or more DebugInfoD servers with each server URL formatted as `https://domain.com` and separated by `*`. The servers will be searched in the same order as listed in the source path and the files will be retrieved from the first matching URL.
 
@@ -376,7 +376,7 @@ DW_FRAME_SAME_VAL: 0('rax'), 1('rdx'), 2('rcx'), 3('rbx'), 4('rsi'), 5('rdi'), 6
 16('<Return Address>'): DW_EXPR_OFFSET 12290('CFA') + -8
 ```
 
-This displays the unwind stack for the instruction pointer register. TBD - Valid example?
+This displays the unwind stack for the instruction pointer register.
 
 ```dbgcmd
 0:000> !dwunwind @rip

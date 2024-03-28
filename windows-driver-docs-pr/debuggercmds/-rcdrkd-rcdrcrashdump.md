@@ -1,6 +1,6 @@
 ---
-title: rcdrkd.rcdrcrashdump
-description: The rcdrkd.rcdrcrashdump extension is used with a minidump file to display the recorder log (if the log is present in the minidump).
+title: "rcdrkd.rcdrcrashdump"
+description: "The rcdrkd.rcdrcrashdump extension is used with a minidump file to display the recorder log (if the log is present in the minidump)."
 keywords: ["rcdrkd.rcdrcrashdump Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -36,7 +36,7 @@ The name of the driver. The driver name can be used instead of the trace provide
 
 Rcdrkd.dll
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [RCDRKD Extensions](rcdrkd-extensions.md)
@@ -44,6 +44,7 @@ Rcdrkd.dll
  
 
  
+
 
 
 

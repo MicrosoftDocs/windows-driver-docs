@@ -1,6 +1,6 @@
 ---
-title: wmitrace.traceoperation
-description: The wmitrace.traceoperation extension displays the progress messages from the tracing components in Windows.
+title: "wmitrace.traceoperation"
+description: "The wmitrace.traceoperation extension displays the progress messages from the tracing components in Windows."
 keywords: ["wmitrace.traceoperation Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -49,6 +49,7 @@ This extension causes the tracing components to display verbose output. This fea
  
 
  
+
 
 
 

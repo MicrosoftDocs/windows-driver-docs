@@ -1,6 +1,6 @@
 ---
-title: ndiskd.nrc
-description: The ndiskd.nrc extension displays information about a NET_PACKET_FRAGMENT structure.
+title: "ndiskd.nrc"
+description: "The ndiskd.nrc extension displays information about a NET_PACKET_FRAGMENT structure."
 keywords: ["ndiskd.nrc Windows Debugging"]
 ms.date: 10/11/2021
 topic_type:
@@ -103,3 +103,4 @@ List all elements
 [**!ndiskd.netrb**](-ndiskd-netrb.md)
 
 [**!ndiskd.netpacket**](-ndiskd-netpacket.md)
+

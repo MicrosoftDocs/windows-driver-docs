@@ -1,6 +1,6 @@
 ---
-title: wmitrace.setprefix
-description: The wmitrace.setprefix extension specifies the trace message prefix that is prepended to the trace messages from this session. 
+title: "wmitrace.setprefix"
+description: "The wmitrace.setprefix extension specifies the trace message prefix that is prepended to the trace messages from this session. "
 keywords: ["wmitrace.setprefix Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -189,6 +189,7 @@ This extension is only useful during WPP software tracing, and earlier (legacy) 
  
 
  
+
 
 
 

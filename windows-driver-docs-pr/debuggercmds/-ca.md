@@ -1,6 +1,6 @@
 ---
-title: ca (WinDbg)
-description: The ca extension displays information about a control area.
+title: "ca (WinDbg)"
+description: "The ca extension displays information about a control area."
 keywords: ["control area", "ca Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -173,6 +173,7 @@ Subsection 5. @ ff8637a0
  
 
  
+
 
 
 

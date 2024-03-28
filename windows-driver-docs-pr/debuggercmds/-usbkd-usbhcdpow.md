@@ -1,6 +1,6 @@
 ---
-title: usbkd.usbhcdpow
-description: The usbkd.usbhcdpow command displays the power state history for a USB host controller or root hub.
+title: "usbkd.usbhcdpow"
+description: "The usbkd.usbhcdpow command displays the power state history for a USB host controller or root hub."
 keywords: ["usbkd.usbhcdpow Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -107,7 +107,7 @@ dt USBPORT!_FDO_EXTENSION ffffe0000213c5a0
 ...
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
@@ -115,4 +115,5 @@ dt USBPORT!_FDO_EXTENSION ffffe0000213c5a0
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
+
 

@@ -1,6 +1,6 @@
 ---
-title: wudfext.wudfdumpobjects
-description: The wudfext.wudfdumpobjects extension displays outstanding UMDF objects.
+title: "wudfext.wudfdumpobjects"
+description: "The wudfext.wudfdumpobjects extension displays outstanding UMDF objects."
 keywords: ["wudfext.wudfdumpobjects Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -110,6 +110,7 @@ WdfTypeMemoryObject    Object: 0x030eefb0, Interface: 0x030eeff0
  
 
  
+
 
 
 

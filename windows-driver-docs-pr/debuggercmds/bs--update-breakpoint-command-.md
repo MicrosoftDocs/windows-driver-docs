@@ -1,6 +1,6 @@
 ---
-title: bs (Update Breakpoint Command)
-description: The bs command changes the command executed when the specified breakpoint is encountered.
+title: "bs (Update Breakpoint Command)"
+description: "The bs command changes the command executed when the specified breakpoint is encountered."
 keywords: ["bs (Update Breakpoint Command) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -57,6 +57,7 @@ If the *CommandString* is not specified, any commands already set on the breakpo
  
 
  
+
 
 
 

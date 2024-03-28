@@ -1,6 +1,6 @@
 ---
-title: pool extension command
-description: The pool extension displays information about a specific pool allocation or about the entire system-wide pool.
+title: "pool extension command"
+description: "The pool extension displays information about a specific pool allocation or about the entire system-wide pool."
 keywords: ["pool", "pooltag.txt file", "pool tag", "memory, pool tag", "pool Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -103,6 +103,7 @@ kd> !pool e1001050 1
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: .write_cmd_hist (Write Command History)
-description: The .write_cmd_hist command writes the entire history of the Debugger Command window to a file.
+title: ".write_cmd_hist (Write Command History)"
+description: "The .write_cmd_hist command writes the entire history of the Debugger Command window to a file."
 keywords: [".write_cmd_hist (Write Command History) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -42,6 +42,7 @@ This command is available only in WinDbg and cannot be used in script files.
  
 
  
+
 
 
 

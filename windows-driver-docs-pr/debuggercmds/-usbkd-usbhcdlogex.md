@@ -1,6 +1,6 @@
 ---
-title: usbkd.usbhcdlogex
-description: The usbkd.usbhcdlogex command displays an annotated debug log for a USB host controller.
+title: "usbkd.usbhcdlogex"
+description: "The usbkd.usbhcdlogex command displays an annotated debug log for a USB host controller."
 keywords: ["usbkd.usbhcdlogex Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -95,7 +95,7 @@ LOG@: ffffe00001ca11b8
 [ 019] ffffe00002019500 chgZ 0000000000000000 0000000000b73e26 0000000000000000 
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
@@ -103,4 +103,5 @@ LOG@: ffffe00001ca11b8
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
+
 

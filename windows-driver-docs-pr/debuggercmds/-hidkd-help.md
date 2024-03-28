@@ -1,6 +1,6 @@
 ---
-title: hidkd.help
-description: The hidkd.help command displays help for the HID debugger extension commands.
+title: "hidkd.help"
+description: "The hidkd.help command displays help for the HID debugger extension commands."
 keywords: ["hidkd.help Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -22,7 +22,7 @@ The **!hidkd.help** command displays help for the HID debugger extension command
 
 Hidkd.dll
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [HID Extensions](hid-extensions.md)
@@ -30,6 +30,7 @@ Hidkd.dll
  
 
  
+
 
 
 

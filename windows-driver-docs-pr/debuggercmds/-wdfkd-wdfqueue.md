@@ -1,6 +1,6 @@
 ---
-title: wdfkd.wdfqueue
-description: The wdfkd.wdfqueue extension displays information about a specified framework queue object and the framework request objects that are in the queue.
+title: "wdfkd.wdfqueue"
+description: "The wdfkd.wdfqueue extension displays information about a specified framework queue object and the framework request objects that are in the queue."
 keywords: ["wdfkd.wdfqueue Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -61,6 +61,7 @@ The queue in the preceding example is configured for parallel dispatching, is po
  
 
  
+
 
 
 

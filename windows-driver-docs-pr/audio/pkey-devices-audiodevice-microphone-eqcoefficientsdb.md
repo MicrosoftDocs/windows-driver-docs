@@ -1,6 +1,6 @@
 ---
 title: PKEY_Devices_AudioDevice_Microphone_EqCoefficientsDb
-description: In Windows 11 version TBD and later, PKEY_Devices_AudioDevice_Microphone_EqCoefficientsDb property key communicates the equalization curve for Windows Studio to flatten the frequency response of a microphone device.
+description: In Windows 11 version 24H2 and later, PKEY_Devices_AudioDevice_Microphone_EqCoefficientsDb property key communicates the equalization curve for Windows Studio to flatten the frequency response of a microphone device.
 ms.date: 02/27/2024
 ms.topic: reference
 ---

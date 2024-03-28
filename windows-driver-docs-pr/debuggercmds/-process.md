@@ -1,6 +1,6 @@
 ---
-title: process (WinDbg)
-description: The process extension displays information about the specified process, or about all processes, including the EPROCESS block.
+title: "process (WinDbg)"
+description: "The process extension displays information about the specified process, or about all processes, including the EPROCESS block."
 keywords: ["process Windows Debugging"]
 ms.date: 08/02/2018
 topic_type:
@@ -244,6 +244,7 @@ The [**!stacks**](-stacks.md) extension gives a brief summary of the state of ev
  
 
  
+
 
 
 

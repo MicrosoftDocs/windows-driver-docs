@@ -1,6 +1,6 @@
 ---
-title: ib, iw, id (Input from Port)
-description: The ib, iw, and id commands read and display a byte, word, or double word from the selected port.
+title: "ib, iw, id (Input from Port)"
+description: "The ib, iw, and id commands read and display a byte, word, or double word from the selected port."
 keywords: ["ib, iw, id (Input from Port) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -60,7 +60,7 @@ The **ib** command reads a single byte, the **iw** command reads a word, and the
 
 Make sure that reading an I/O port does not affect the behavior of the device that you are reading from. Some devices change state after a read-only port has been read. You should also not try to read a word or double-word from a port that does not allow values of this length.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ob, od, ow (Output to Port)**](ob--ow--od--output-to-port-.md)
@@ -68,6 +68,7 @@ Make sure that reading an I/O port does not affect the behavior of the device th
  
 
  
+
 
 
 

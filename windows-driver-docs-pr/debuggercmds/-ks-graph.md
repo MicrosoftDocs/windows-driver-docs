@@ -1,6 +1,6 @@
 ---
-title: ks.graph (WinDbg)
-description: The ks.graph extension command displays a textual description of the kernel mode graph in topologically sorted order.
+title: "ks.graph (WinDbg)"
+description: "The ks.graph extension command displays a textual description of the kernel mode graph in topologically sorted order."
 keywords: ["ks.graph Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -89,6 +89,7 @@ Graph With Starting Point 829493c4:
  
 
  
+
 
 
 

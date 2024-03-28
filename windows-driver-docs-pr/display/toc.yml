@@ -1337,7 +1337,7 @@
         href: dxgiddi-h---reserved.md
       - name: "DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_CAPS"
         href: dxgi-ddi-multiplane-overlay-stereo-caps.md
-- name: "Legacy: Windows 2000 Display Driver Model (WDDM) design guide"
+- name: "Legacy: Windows 2000 Display Driver Model (XDDM) design guide"
 # Auto-expanded node
   items: 
   - name: "XDDM overview"

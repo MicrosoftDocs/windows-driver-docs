@@ -1,6 +1,6 @@
 ---
-title: .srcfix, .lsrcfix (Use Source Server)
-description: The .srcfix and .lsrcfix commands automatically set the source path to indicate that a source server will be used.
+title: ".srcfix, .lsrcfix (Use Source Server)"
+description: "The .srcfix and .lsrcfix commands automatically set the source path to indicate that a source server will be used."
 keywords: [".srcfix, .lsrcfix (Use Source Server) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -64,3 +64,4 @@ Similarly, the following two commands are equivalent:
 .lsrcfix[+] [Paths] 
 .lsrcpath[+] srv*[;Paths] 
 ```
+

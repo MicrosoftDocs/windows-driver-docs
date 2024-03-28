@@ -1,6 +1,6 @@
 ---
-title: Evaluating Expressions
-description: Evaluating Expressions
+title: "Evaluating Expressions"
+description: "Evaluating Expressions"
 keywords: ["expressions, overview", "expressions, different types", "MASM expressions, when to use", "C++ expressions, when to use", "MASM expressions, overview", "C++ expressions, overview"]
 ms.date: 05/23/2017
 ---
@@ -84,6 +84,7 @@ For some examples of the different syntaxes, see [Mixed Expression Examples](exp
  
 
  
+
 
 
 

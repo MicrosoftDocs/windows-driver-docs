@@ -1,6 +1,6 @@
 ---
-title: usb3kd.device_info_from_pdo
-description: The usb3kd.device_info_from_pdo command displays information about a USB device in the USB 3.0 tree.
+title: "usb3kd.device_info_from_pdo"
+description: "The usb3kd.device_info_from_pdo command displays information about a USB device in the USB 3.0 tree."
 keywords: ["usb3kd.device_info_from_pdo Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -128,7 +128,7 @@ Topology
     !ucx_device 0xfffffa8005992840 !xhci_deviceslots 0xfffffa80051d1940 1
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [USB 3.0 Extensions](usb-3-extensions.md)
@@ -138,4 +138,5 @@ Topology
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
+
 

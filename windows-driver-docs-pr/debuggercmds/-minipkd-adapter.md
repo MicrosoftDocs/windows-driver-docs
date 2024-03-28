@@ -1,6 +1,6 @@
 ---
-title: minipkd.adapter
-description: The minipkd.adapter extension displays information about the specified adapter.
+title: "minipkd.adapter"
+description: "The minipkd.adapter extension displays information about the specified adapter."
 keywords: ["minipkd.adapter Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -59,6 +59,7 @@ The address of an adapter can be found in the **DevExt** field of the [**!minipk
  
 
  
+
 
 
 

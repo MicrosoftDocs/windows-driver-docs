@@ -1,6 +1,6 @@
 ---
-title: wdfkd.wdfusbinterface
-description: The wdfkd.wdfusbinterface extension displays information about a specified Kernel-Mode Driver Framework (KMDF) USB interface object, including its possible and current settings.
+title: "wdfkd.wdfusbinterface"
+description: "The wdfkd.wdfusbinterface extension displays information about a specified Kernel-Mode Driver Framework (KMDF) USB interface object, including its possible and current settings."
 keywords: ["wdfkd.wdfusbinterface Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -48,6 +48,7 @@ For more information, see [Kernel-Mode Driver Framework Debugging](../debugger/k
  
 
  
+
 
 
 

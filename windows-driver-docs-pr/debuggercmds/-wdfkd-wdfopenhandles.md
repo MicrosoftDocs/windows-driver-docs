@@ -1,6 +1,6 @@
 ---
-title: wdfkd.wdfopenhandles
-description: The wdfkd.wdfopenhandles extension displays information about all the handles that are open on the specified WDF device.
+title: "wdfkd.wdfopenhandles"
+description: "The wdfkd.wdfopenhandles extension displays information about all the handles that are open on the specified WDF device."
 keywords: ["wdfkd.wdfopenhandles Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -48,6 +48,7 @@ For more information, see [Kernel-Mode Driver Framework Debugging](../debugger/k
  
 
  
+
 
 
 

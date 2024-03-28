@@ -1,6 +1,6 @@
 ---
-title: smt (WinDbg)
-description: The smt extension displays a summary of the simultaneous multithreaded processor information.
+title: "smt (WinDbg)"
+description: "The smt extension displays a summary of the simultaneous multithreaded processor information."
 keywords: ["smt Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -58,6 +58,7 @@ The **IAID** column lists the initial Advanced Programmable Interrupt Controller
  
 
  
+
 
 
 

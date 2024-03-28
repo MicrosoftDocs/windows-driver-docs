@@ -1,6 +1,6 @@
 ---
-title: Commands
-description: Commands
+title: "Commands"
+description: "Commands"
 keywords: ["commands, reference"]
 ms.date: 05/23/2017
 ---
@@ -109,3 +109,4 @@ This section of the reference discusses the various debugger commands that you c
 - [wt (Trace and Watch Data)](wt--trace-and-watch-data-.md)
 - [x (Examine Symbols)](x--examine-symbols-.md)
 - [z (Execute While)](z--execute-while-.md)
+

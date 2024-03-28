@@ -1,6 +1,6 @@
 ---
-title: bd (Breakpoint Disable)
-description: The bd command disables, but does not delete, previously set breakpoints.
+title: "bd (Breakpoint Disable)"
+description: "The bd command disables, but does not delete, previously set breakpoints."
 keywords: ["bd (Breakpoint Disable) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -54,6 +54,7 @@ Use the [**.bpcmds (Display Breakpoint Commands)**](-bpcmds--display-breakpoint-
  
 
  
+
 
 
 

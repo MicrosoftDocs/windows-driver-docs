@@ -1,6 +1,6 @@
 ---
-title: .dbgdbg (Debug Current Debugger)
-description: The .dbgdbg command launches a new instance of CDB; this new debugger takes the current debugger as its target.
+title: ".dbgdbg (Debug Current Debugger)"
+description: "The .dbgdbg command launches a new instance of CDB; this new debugger takes the current debugger as its target."
 keywords: [".dbgdbg (Debug Current Debugger) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -41,6 +41,7 @@ The **.dbgdbg** command is similar to the [**CTRL+P (Debug Current Debugger)**](
  
 
  
+
 
 
 

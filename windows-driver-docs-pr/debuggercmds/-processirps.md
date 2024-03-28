@@ -1,6 +1,6 @@
 ---
-title: processirps
-description: The processirps extension displays information about I/O request packets (IRPs) associated with processes.
+title: "processirps"
+description: "The processirps extension displays information about I/O request packets (IRPs) associated with processes."
 keywords: ["processirps Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -95,6 +95,7 @@ Checking file objects for IRPs.
  
 
  
+
 
 
 

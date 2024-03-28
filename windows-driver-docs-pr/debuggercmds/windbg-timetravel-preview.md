@@ -1,6 +1,6 @@
 ---
-title: WinDbg - Time Travel 
-description: This section describes how work with the time travel menu.
+title: "WinDbg - Time Travel "
+description: "This section describes how work with the time travel menu."
 keywords: ["Time Travel", "WinDbg", "Menu", "Windows Debugging"]
 ms.date: 01/10/2020
 ---
@@ -48,3 +48,4 @@ Use the to Timelines option to access debugger timelines. For more information s
 ## See Also
 
 [WinDbg Features](../debugger/debugging-using-windbg-preview.md)
+

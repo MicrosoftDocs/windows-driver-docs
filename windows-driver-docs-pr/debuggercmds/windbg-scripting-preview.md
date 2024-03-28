@@ -1,6 +1,6 @@
 ---
-title: WinDbg - Scripting Menu
-description: This section describes how to use scripting in the WinDbg debugger.
+title: "WinDbg - Scripting Menu"
+description: "This section describes how to use scripting in the WinDbg debugger."
 keywords: ["Scripting Menu", "WinDbg", "Menu", "Windows Debugging"]
 ms.date: 01/20/2020
 ---
@@ -57,3 +57,4 @@ For more information about working with NatVis, see [Debugger Objects in NatVis]
 ## See Also
 
 [WinDbg Features](../debugger/debugging-using-windbg-preview.md)
+

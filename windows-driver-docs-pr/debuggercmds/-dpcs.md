@@ -1,6 +1,6 @@
 ---
-title: dpcs (WinDbg)
-description: The dpcs extension displays the deferred procedure call (DPC) queues for a specified processor.
+title: "dpcs (WinDbg)"
+description: "The dpcs extension displays the deferred procedure call (DPC) queues for a specified processor."
 keywords: ["DPC (deferred procedure call)", "dpcs Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -59,6 +59,7 @@ For information about DPCs, see the Windows Driver Kit (WDK) documentation and *
  
 
  
+
 
 
 

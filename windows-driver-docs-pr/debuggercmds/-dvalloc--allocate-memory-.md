@@ -1,6 +1,6 @@
 ---
-title: .dvalloc (Allocate Memory)
-description: The .dvalloc command causes Windows to allocate additional memory to the target process.
+title: ".dvalloc (Allocate Memory)"
+description: "The .dvalloc command causes Windows to allocate additional memory to the target process."
 keywords: [".dvalloc (Allocate Memory) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -54,6 +54,7 @@ To free this memory, use [**.dvfree (Free Memory)**](-dvfree--free-memory-.md).
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: pars (WinDbg)
-description: The pars extension displays a specified processor application registers file.
+title: "pars (WinDbg)"
+description: "The pars extension displays a specified processor application registers file."
 keywords: ["processor application register", "pars Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -42,6 +42,7 @@ This extension command can only be used with an Itanium-based target computer.
  
 
  
+
 
 
 

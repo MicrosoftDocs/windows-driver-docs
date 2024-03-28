@@ -1,6 +1,6 @@
 ---
-title: c (Compare Memory)
-description: The c command compares the values held in two memory areas.
+title: "c (Compare Memory)"
+description: "The c command compares the values held in two memory areas."
 keywords: ["c (Compare Memory) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -74,6 +74,7 @@ To compare **rgBuf1** and **rgBuf2**, use either of the following commands:
  
 
  
+
 
 
 

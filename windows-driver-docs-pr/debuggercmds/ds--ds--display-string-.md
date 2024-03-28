@@ -1,6 +1,6 @@
 ---
-title: ds, dS (Display String)
-description: The ds and dS commands display a STRING, ANSI_STRING, or UNICODE_STRING structure.
+title: "ds, dS (Display String)"
+description: "The ds and dS commands display a STRING, ANSI_STRING, or UNICODE_STRING structure."
 keywords: ["ds, dS (Display String) Windows Debugging"]
 ms.date: 05/03/2018
 topic_type:
@@ -61,4 +61,5 @@ For an overview of memory manipulation and a description of other memory-related
 If you want to display Unicode strings in the Locals window or Watch window of WinDbg, you need to use the [**.enable\_unicode (Enable Unicode Display)**](-enable-unicode--enable-unicode-display-.md) command first.
 
  
+
 

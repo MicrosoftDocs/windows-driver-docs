@@ -1,6 +1,6 @@
 ---
-title: usbkd._ehcitd
-description: The usbkd._ehcitd command displays information from a usbehci _TRANSFER_CONTEXT structure. 
+title: "usbkd._ehcitd"
+description: "The usbkd._ehcitd command displays information from a usbehci _TRANSFER_CONTEXT structure. "
 keywords: ["usbkd._ehcitd Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -98,7 +98,7 @@ AltNextHcdTD: 21e65180
 SlotNextHcdTD: 21e65200
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
@@ -106,4 +106,5 @@ SlotNextHcdTD: 21e65200
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
+
 

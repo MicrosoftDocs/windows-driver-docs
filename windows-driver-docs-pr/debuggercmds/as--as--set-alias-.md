@@ -1,6 +1,6 @@
 ---
-title: as, aS (Set Alias)
-description: The as and aS commands define a new alias or redefine an existing one.
+title: "as, aS (Set Alias)"
+description: "The as and aS commands define a new alias or redefine an existing one."
 keywords: ["as, aS (Set Alias) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -129,6 +129,7 @@ You can use the **/ma**, **/mu**, **/msa**, **/msu**, **/f**, and **/c** switche
  
 
  
+
 
 
 

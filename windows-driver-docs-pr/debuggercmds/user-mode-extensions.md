@@ -1,6 +1,6 @@
 ---
-title: User-Mode Extensions
-description: User-Mode Extensions
+title: "User-Mode Extensions"
+description: "User-Mode Extensions"
 keywords: ["extension commands ( commands), user-mode extensions", "ntsdexts.dll (user-mode extensions)", "uext.dll (user-mode extensions)", "user-mode extensions (ntsdexts.dll and uext.dll)"]
 ms.date: 05/23/2017
 ---
@@ -24,6 +24,7 @@ In addition, user-mode extensions that are not specific to any single operating 
  
 
  
+
 
 
 

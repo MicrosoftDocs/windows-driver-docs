@@ -1,6 +1,6 @@
 ---
-title: .block (WinDbg)
-description: The .block token performs no action; it is used solely to introduce a block of statements.
+title: ".block (WinDbg)"
+description: "The .block token performs no action; it is used solely to introduce a block of statements."
 keywords: [".block Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -39,6 +39,7 @@ Each block must begin with a control flow token. If you wish to create a block f
  
 
  
+
 
 
 

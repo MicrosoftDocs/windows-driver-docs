@@ -1,6 +1,6 @@
 ---
-title: .hideinjectedcode (Hide Injected Code)
-description: The .hideinjectedcode command turns on, or off, the hiding of injected code.
+title: ".hideinjectedcode (Hide Injected Code)"
+description: "The .hideinjectedcode command turns on, or off, the hiding of injected code."
 keywords: [".hideinjectedcode (Hide Injected Code) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -42,6 +42,7 @@ If you enter this command with no parameter, it displays help for the command.
  
 
  
+
 
 
 

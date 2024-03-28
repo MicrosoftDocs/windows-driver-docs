@@ -1,6 +1,6 @@
 ---
-title: bthkd.sdpnode
-description: The bthkd.sdpnode command displays information about a node in an sdp tree.
+title: "bthkd.sdpnode"
+description: "The bthkd.sdpnode command displays information about a node in an sdp tree."
 keywords: ["bthkd.sdpnode Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -39,7 +39,7 @@ default is 0x0
 
 Bthkd.dll
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [Bluetooth Extensions (Bthkd.dll)](bluetooh-extensions--bthkd-dll-.md)
@@ -47,6 +47,7 @@ Bthkd.dll
  
 
  
+
 
 
 

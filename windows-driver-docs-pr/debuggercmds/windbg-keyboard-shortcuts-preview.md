@@ -1,6 +1,6 @@
 ---
-title: WinDbg - keyboard shortcuts
-description: This section provides the keyboard shortcuts for the WinDbg debugger.
+title: "WinDbg - keyboard shortcuts"
+description: "This section provides the keyboard shortcuts for the WinDbg debugger."
 keywords: ["keyboard shortcuts", "WinDbg", "Menu", "Windows Debugging"]
 ms.date: 01/09/2019
 ---
@@ -96,3 +96,4 @@ Ctrl+Alt+V      |       Toggle Verbose Mode
 ## See Also
 
 [WinDbg Features](../debugger/debugging-using-windbg-preview.md)
+

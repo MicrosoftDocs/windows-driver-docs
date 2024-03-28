@@ -1,6 +1,6 @@
 ---
-title: th (Trace to Next Branching Instruction)
-description: The th command executes the program until it reaches any kind of branching instruction, including conditional or unconditional branches, calls, returns, and system calls.
+title: "th (Trace to Next Branching Instruction)"
+description: "The th command executes the program until it reaches any kind of branching instruction, including conditional or unconditional branches, calls, returns, and system calls."
 keywords: ["th (Trace to Next Branching Instruction) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -73,6 +73,7 @@ In source mode, you can associate one source line with multiple assembly instruc
  
 
  
+
 
 
 

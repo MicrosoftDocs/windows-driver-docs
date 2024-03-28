@@ -1,6 +1,6 @@
 ---
-title: ndiskd.netpacket
-description: The ndiskd.netpacket extension displays information about a NET_PACKET structure.
+title: "ndiskd.netpacket"
+description: "The ndiskd.netpacket extension displays information about a NET_PACKET structure."
 keywords: ["ndiskd.netpacket Windows Debugging"]
 ms.date: 06/17/2020
 topic_type:
@@ -159,3 +159,4 @@ You can now combine the basic description with any of the other **!ndiskd.netpac
 [**!ndiskd.netqueue**](-ndiskd-netqueue.md)
 
 [**!ndiskd.netrb**](-ndiskd-netrb.md)
+

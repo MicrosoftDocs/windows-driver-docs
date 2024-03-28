@@ -1,6 +1,6 @@
 ---
-title: dx (Display Debugger Object Model Expression)
-description: The dx command displays a C++ expression using the NatVis extension model. The dx command works with debugger objects.
+title: "dx (Display Debugger Object Model Expression)"
+description: "The dx command displays a C++ expression using the NatVis extension model. The dx command works with debugger objects."
 keywords: ["dx (Display Debugger Object Model Expression) Windows Debugging"]
 ms.date: 08/29/2023
 topic_type:
@@ -358,3 +358,4 @@ For information about using debugger objects with JavaScript, see [Native Debugg
 [Native Debugger Objects in JavaScript Extensions](../debugger/native-objects-in-javascript-extensions.md) 
 
 ---
+

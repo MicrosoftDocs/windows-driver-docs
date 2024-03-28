@@ -1,6 +1,6 @@
 ---
-title: .clients (List Debugging Clients)
-description: The .clients command lists all debugging clients currently connected to the debugging session.
+title: ".clients (List Debugging Clients)"
+description: "The .clients command lists all debugging clients currently connected to the debugging session."
 keywords: [".clients (List Debugging Clients) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -41,6 +41,7 @@ For more details and other commands that can be used while performing remote deb
  
 
  
+
 
 
 

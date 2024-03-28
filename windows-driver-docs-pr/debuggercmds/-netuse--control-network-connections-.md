@@ -1,6 +1,6 @@
 ---
-title: .netuse (Control Network Connections)
-description: The .netuse command adds a connection to a network share.
+title: ".netuse (Control Network Connections)"
+description: "The .netuse command adds a connection to a network share."
 keywords: [".netuse (Control Network Connections) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -64,6 +64,7 @@ The following example shows this command.
  
 
  
+
 
 
 

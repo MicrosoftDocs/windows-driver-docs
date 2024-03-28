@@ -1,6 +1,6 @@
 ---
-title: r (Registers)
-description: The r command displays or modifies registers, floating-point registers, flags, pseudo-registers, and fixed-name aliases.
+title: "r (Registers)"
+description: "The r command displays or modifies registers, floating-point registers, flags, pseudo-registers, and fixed-name aliases."
 keywords: ["r (Registers) Windows Debugging"]
 ms.date: 07/11/2018
 topic_type:
@@ -324,6 +324,7 @@ ebp=0006ffc0  esp=0006ff7c
  
 
  
+
 
 
 

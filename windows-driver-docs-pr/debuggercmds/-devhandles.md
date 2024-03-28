@@ -1,6 +1,6 @@
 ---
-title: devhandles
-description: The devhandles extension displays the open handles for the specified device.
+title: "devhandles"
+description: "The devhandles extension displays the open handles for the specified device."
 keywords: ["devhandles Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -62,6 +62,7 @@ Checking handle table for process 0x87e6f4f0
  
 
  
+
 
 
 

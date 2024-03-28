@@ -1,6 +1,6 @@
 ---
-title: regkcb (WinDbg)
-description: The regkcb extension displays a registry key control block.
+title: "regkcb (WinDbg)"
+description: "The regkcb extension displays a registry key control block."
 keywords: ["regkcb Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -63,6 +63,7 @@ Every registry key has a control block that contains properties, such as its per
  
 
  
+
 
 
 

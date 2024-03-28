@@ -1,6 +1,6 @@
 ---
-title: usbkd.usbhcdext
-description: The usbkd.usbhcdext command displays information from the device extension of a USB host controller or a USB root hub.
+title: "usbkd.usbhcdext"
+description: "The usbkd.usbhcdext command displays information from the device extension of a USB host controller or a USB root hub."
 keywords: ["usbkd.usbhcdext Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -133,7 +133,7 @@ dt USBPORT!_PDO_EXTENSION ffffe0000213c5a0
 [01] EvPDO_IRP_MN_START_DEVICE      PnpNotStarted       PnpStarted 
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
@@ -141,4 +141,5 @@ dt USBPORT!_PDO_EXTENSION ffffe0000213c5a0
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
+
 

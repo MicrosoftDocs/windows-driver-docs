@@ -1,6 +1,6 @@
 ---
-title: pciir (WinDbg)
-description: The pciir extension displays the contents of the hardware routing of peripheral component interconnect (PCI) devices to interrupt controller inputs.
+title: "pciir (WinDbg)"
+description: "The pciir extension displays the contents of the hardware routing of peripheral component interconnect (PCI) devices to interrupt controller inputs."
 keywords: ["PCI IRQ routing table", "peripheral component interconnect (PCI)", "pciir Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -58,6 +58,7 @@ For information about PCI buses, see the Windows Driver Kit (WDK) documentation.
  
 
  
+
 
 
 

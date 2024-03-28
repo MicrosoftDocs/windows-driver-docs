@@ -1,6 +1,6 @@
 ---
-title: fxdevice (WinDbg)
-description: The fxdevice extension displays summary information about all Power Management Framework (PoFx) registered devices. This command can be used only during kernel-mode debugging.
+title: "fxdevice (WinDbg)"
+description: "The fxdevice extension displays summary information about all Power Management Framework (PoFx) registered devices. This command can be used only during kernel-mode debugging."
 keywords: ["fxdevice Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -131,4 +131,5 @@ Dumping idle D0 PoFx devices
 ```
 
  
+
 

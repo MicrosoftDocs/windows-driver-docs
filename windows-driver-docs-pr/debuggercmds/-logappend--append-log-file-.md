@@ -1,6 +1,6 @@
 ---
-title: .logappend (Append Log File)
-description: The .logappend command appends a copy of the events and commands from the Debugger Command window to the specified log file.
+title: ".logappend (Append Log File)"
+description: "The .logappend command appends a copy of the events and commands from the Debugger Command window to the specified log file."
 keywords: ["Append Log File (.logappend) command", "log file, Append Log File (.logappend) command", ".logappend (Append Log File) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -51,6 +51,7 @@ If you already have a log file open when you run the **.logappend** command, the
  
 
  
+
 
 
 

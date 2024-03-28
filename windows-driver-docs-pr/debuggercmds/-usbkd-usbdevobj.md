@@ -1,6 +1,6 @@
 ---
-title: usbkd.usbdevobj
-description: The usbkd.usbdevobj command displays information from a USB device object.
+title: "usbkd.usbdevobj"
+description: "The usbkd.usbdevobj command displays information from a USB device object."
 keywords: ["usbkd.usbdevobj Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -32,7 +32,7 @@ Address of a **\_DEVICE\_OBJECT** structure.
 
 Usbkd.dll
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
@@ -40,4 +40,5 @@ Usbkd.dll
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
+
 

@@ -1,6 +1,6 @@
 ---
-title: wdfkd.wdftraceprtdebug
-description: The wdfkd.wdftraceprtdebug extension enables and disables the Traceprt.dll diagnostic mode, which generates verbose debugging information.
+title: "wdfkd.wdftraceprtdebug"
+description: "The wdfkd.wdftraceprtdebug extension enables and disables the Traceprt.dll diagnostic mode, which generates verbose debugging information."
 keywords: ["wdfkd.wdftraceprtdebug Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -49,6 +49,7 @@ You should use the !wdfkd.wdftraceprtdebug extension only at the direction of te
  
 
  
+
 
 
 

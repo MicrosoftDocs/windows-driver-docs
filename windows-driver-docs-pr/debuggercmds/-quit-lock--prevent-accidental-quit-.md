@@ -1,6 +1,6 @@
 ---
-title: .quit_lock (Prevent Accidental Quit)
-description: The .quit_lock command sets a password to prevent you from accidentally ending the debugging session.
+title: ".quit_lock (Prevent Accidental Quit)"
+description: "The .quit_lock command sets a password to prevent you from accidentally ending the debugging session."
 keywords: [".quit_lock (Prevent Accidental Quit) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -59,6 +59,7 @@ You cannot use the **.quit\_lock /s** command in [Secure Mode](../debugger/activ
  
 
  
+
 
 
 

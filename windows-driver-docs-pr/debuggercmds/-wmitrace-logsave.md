@@ -1,6 +1,6 @@
 ---
-title: wmitrace.logsave
-description: The wmitrace.logsave extension writes the current contents of the trace buffers for a trace session to a file.
+title: "wmitrace.logsave"
+description: "The wmitrace.logsave extension writes the current contents of the trace buffers for a trace session to a file."
 keywords: ["wmitrace.logsave Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -58,6 +58,7 @@ To find the logger ID of a trace session, use the [**!wmitrace.strdump**](-wmitr
  
 
  
+
 
 
 

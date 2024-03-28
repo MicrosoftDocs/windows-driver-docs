@@ -1,6 +1,6 @@
 ---
-title: poolused (WinDbg)
-description: The poolused extension displays memory use summaries, based on the tag used for each pool allocation.
+title: "poolused (WinDbg)"
+description: "The poolused extension displays memory use summaries, based on the tag used for each pool allocation."
 keywords: ["poolused Windows Debugging"]
 ms.date: 08/29/2023
 topic_type:
@@ -113,3 +113,4 @@ Here is a partial example of the output from this extension:
  vPrt        0        0        18    68160UNKNOWN pooltag 'vPrt', please update pooltag.txt
  TOTAL     3570214 209120008     38769 13066104
 ```
+

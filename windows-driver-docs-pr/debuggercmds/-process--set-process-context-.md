@@ -1,6 +1,6 @@
 ---
-title: .process (Set Process Context)
-description: The .process command specifies which process is used for the process context.
+title: ".process (Set Process Context)"
+description: "The .process command specifies which process is used for the process context."
 keywords: ["Set Process Context (.process) command", "addresses, Set Process Context (.process) command", "context, Set Process Context (.process) command", "Process, Set Process Context (.process) command", ".process (Set Process Context) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -142,7 +142,7 @@ PEB at 7FFDF000
     SubSystemData:     0
     ProcessHeap:       70000
     ProcessParameters: 20000
-        WindowTitle:  'C:\WINNT\system32\regsvc.exe'
+        WindowTitle: "'C:\WINNT\system32\regsvc.exe'"
         ImageFile:    'C:\WINNT\system32\regsvc.exe'
         CommandLine:  'C:\WINNT\system32\regsvc.exe'
         DllPath:     'C:\WINNT\system32;.;C:\WINNT\System32;C:\WINNT\system;C:\WINNT;C:\WINNT\system32;C:\WINNT;C:\WINNT\System32\Wbem;C:\PROGRA~1\COMMON~1\AUTODE~1'
@@ -152,6 +152,7 @@ PEB at 7FFDF000
  
 
  
+
 
 
 

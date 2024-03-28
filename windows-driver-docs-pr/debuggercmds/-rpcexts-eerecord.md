@@ -1,6 +1,6 @@
 ---
-title: rpcexts.eerecord
-description: The rpcexts.eerecord extension displays the contents of an extended error information record.
+title: "rpcexts.eerecord"
+description: "The rpcexts.eerecord extension displays the contents of an extended error information record."
 keywords: ["rpcexts.eerecord Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -74,6 +74,7 @@ Parameter 1:(Long value) : 16777343 (0x100007F)
  
 
  
+
 
 
 

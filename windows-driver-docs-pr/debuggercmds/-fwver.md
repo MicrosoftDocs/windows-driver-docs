@@ -1,6 +1,6 @@
 ---
 title: "!fwver (WinDbg)"
-description: The fwver extension displays the Itanium firmware version.
+description: "The fwver extension displays the Itanium firmware version."
 keywords: ["fwver Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -52,6 +52,7 @@ Firmware Version
  
 
  
+
 
 
 

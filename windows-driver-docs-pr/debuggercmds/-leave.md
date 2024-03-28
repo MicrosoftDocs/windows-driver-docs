@@ -1,6 +1,6 @@
 ---
-title: .leave (WinDbg)
-description: The .leave token is used to exit from a .catch block.
+title: ".leave (WinDbg)"
+description: "The .leave token is used to exit from a .catch block."
 keywords: [".leave Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -37,6 +37,7 @@ Since there is no control flow token equivalent to the C **goto** statement, you
  
 
  
+
 
 
 

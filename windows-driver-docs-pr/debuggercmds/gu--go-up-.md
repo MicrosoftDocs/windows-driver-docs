@@ -1,6 +1,6 @@
 ---
-title: gu (Go Up)
-description: The gu command causes the target to execute until the current function is complete.
+title: "gu (Go Up)"
+description: "The gu command causes the target to execute until the current function is complete."
 keywords: ["gu (Go Up) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -64,6 +64,7 @@ If *Thread* is specified, then the **gu** command is executed with the specified
  
 
  
+
 
 
 

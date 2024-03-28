@@ -1,8 +1,8 @@
 ---
-title: WinDbg Release notes
-description: This topic provides information on what's new in WinDbg.
+title: "WinDbg Release notes"
+description: "This topic provides information on what's new in WinDbg."
 keywords: ["Release notes", "WinDbg", "Windows Debugging"]
-ms.date: 06/26/2023
+ms.date: 03/05/2024
 ms.topic: article
 ---
 
@@ -11,6 +11,70 @@ ms.topic: article
 :::image type="content" source="images/windbgx-preview-logo.png" alt-text="WinDbg logo with a magnifying glass inspecting bits.":::
 
 This topic provides information on what's new in WinDbg. Earlier versions were released as *WinDbg Preview*.
+
+## 1.2402.24001.0
+
+### New Features
+
+#### Live Linux debugging
+
+You can now live debug a Linux process. For more information, see these topics:
+
+[Linux live remote process debugging](../debugger/linux-live-remote-process-debugging.md)
+
+[Linux symbols and sources](../debugger/linux-dwarf-symbols.md)
+
+The WinDbg client for the foreseeable future will still require Windows, as WinDbg does not run on Linux.
+
+#### Record a subset of execution with Time Travel Debugging
+
+You can now specify a list of modules to record to focus TTD on the modules you care about. This can substantially reduce recording overhead. To use this simply check "Record subset of execution" in the "Configure and Record" dialog box, then specify the module(s) you want recorded. (see [known issues](#known-issues) below).
+
+For finer control, you can precisely record your program using a new in-process recording API. See how with our [sample code](https://github.com/microsoft/WinDbg-Samples/tree/master/TTD/LiveRecorderApiSample) and [documentation](https://github.com/microsoft/WinDbg-Samples/tree/master/TTD/docs).
+
+#### Compact register window
+
+The new register window looks just like the output from the `r` command. Note that editing from the new register window is not yet supported.
+
+#### New parameters for `e` (Enter Values) into memory commands
+
+The `e` (Enter Values) into memory commands now support physical addresses just like the `d` (Display Memory) commands. Note these options are only supported in kernel mode:
+
+| Option   | Description                                                                                                                                 |
+|----------|---------------------------------------------------------------------------------------------------------------------------------------------|
+| `/p`     | Uses physical memory addresses for the display. The range specified by Range will be taken from physical memory rather than virtual memory. |
+| `/p[c]`  | Same as `/p`, except that cached memory will be read. The brackets around c must be included.                                               |
+| `/p[uc]` | Same as `/p`, except that uncached memory will be read. The brackets around uc must be included.                                            |
+| `/p[wc]` | Same as `/p`, except that write-combined memory will be read. The brackets around wc must be included.                                      |
+
+For more information, see [e, ea, eb, ed, eD, ef, ep, eq, eu, ew, eza (Enter Values)](e--ea--eb--ed--ed--ef--ep--eq--eu--ew--eza--ezu--enter-values-.md).
+
+### Bug Fixes
+
+* Support for Rust name demangling in Linux debugging
+* Improvements to CLR debugging
+  - Add the ability to force mixed mode stack walking CLR frames
+    - Added `ForceMixedModeStackWalker` setting added to `config.xml` or `DbgX.xml`.
+    - Added `!forceclrmixedmodeunwind` command for one-off investigations or if you can't change the config setting.
+* General improvements of CLR debugging on Linux
+* Fix a number of issues with respect to LinuxKernel.js and per-cpu variables
+  - Added `!runq` command to LinuxKernel.js to be able to dump the per-cpu kernel scheduler run queues (similar in form to the Linux crash utility's `runq` command)
+  - Fixed various commands in LinuxKernel.js to correspond to kernel changes: in more recent kernels, timer tree uses cached RB nodes instead of raw RB nodes; in more recent kernels, the all_bdevs list is gone, so block devices are now walked from the superblock instead (blockdev_superblock)
+* Various natvis fixes to work more like recent versions of Visual Studio
+* Prefer sourcelink vs legacy sourceinfo
+  - Added `!lmsourcesinfo <module>` command to display sourcelink streams from pdb (to aid debugging issues with sourcelink).
+
+### Known issues
+
+When specifying a list of modules to record with TTD, specifying more than one module doesn't work in this release.
+
+## 1.2308.2002.0
+
+Many bug fixes and small improvements.
+
+## 1.2306.12001.0
+
+Many bug fixes and small improvements.
 
 ## 1.2303.30001.0
 
@@ -29,7 +93,7 @@ Overall TTD performance has also been improved, with recording overhead substant
 
 Ambiguous breakpoints allow for the debugger to set breakpoints in certain scenarios where a breakpoint expression resolves to multiple locations. For more information, see [Ambiguous breakpoint resolution](../debugger/ambiguous-breakpoint-resolution.md).
 
-## 1.2107.13001.0 - WinDbg Preview
+## 1.2107.13001.0
 
 ### Regex search
 
@@ -109,7 +173,7 @@ Time Travel Debugger (TTD) now provides an “Overwrite” data access type. Mem
 
 **Timeline Bookmarks**
 
-Bookmark important Time Travel positions in WinDbg instead of manually copy pasting the position to notepad. Bookmarks make it easier to view at a glance different positions in the trace relative to other events, and to annotate them. 
+Bookmark important Time Travel positions in WinDbg instead of manually copy pasting the position to notepad. Bookmarks make it easier to view at a glance different positions in the trace relative to other events, and to annotate them.
 
 You can provide a descriptive name for bookmarks.
 
@@ -431,3 +495,4 @@ This version was the first release of WinDbg Preview. For general information on
 [WinDbg – Installation](index.md)
 
 [WinDbg – Command line startup options](windbg-command-line-preview.md)
+

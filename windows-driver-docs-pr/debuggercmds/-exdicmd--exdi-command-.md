@@ -1,6 +1,6 @@
 ---
-title: .exdicmd (EXDI Command)
-description: The .exdicmd sends an Extended Debugging Interface (EXDI) command to the target system using the active EXDI debugging connection.
+title: ".exdicmd (EXDI Command)"
+description: "The .exdicmd sends an Extended Debugging Interface (EXDI) command to the target system using the active EXDI debugging connection."
 keywords: ["EXDI", "command", ".exdicmd (EXDI Command) Windows Debugging"]
 ms.date: 04/29/2022
 topic_type:
@@ -101,3 +101,4 @@ Target command response: unknown command: 'Foo'
 ## Remarks
 
 For more information on setting up ane EXDI debugger connection, see [Configuring the EXDI Debugger Transport](../debugger/configuring-the-exdi-debugger-transport.md).
+

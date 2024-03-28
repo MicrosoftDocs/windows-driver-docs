@@ -1,6 +1,6 @@
 ---
-title: gpiokd.pininfo
-description: The gpiokd.pininfo command displays information about a specified GPIO pin.
+title: "gpiokd.pininfo"
+description: "The gpiokd.pininfo command displays information about a specified GPIO pin."
 keywords: ["gpiokd.pininfo Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -32,7 +32,7 @@ Address of the [\_GPIO\_PIN\_INFORMATION\_ENTRY](gpio-extensions.md#data-structu
 
 Gpiokd.dll
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [GPIO Extensions](gpio-extensions.md)
@@ -40,6 +40,7 @@ Gpiokd.dll
  
 
  
+
 
 
 

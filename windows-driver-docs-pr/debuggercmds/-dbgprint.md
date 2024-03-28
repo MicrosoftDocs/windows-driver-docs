@@ -1,6 +1,6 @@
 ---
-title: dbgprint (WinDbg)
-description: The dbgprint extension displays a string that was previously sent to the DbgPrint buffer.
+title: "dbgprint (WinDbg)"
+description: "The dbgprint extension displays a string that was previously sent to the DbgPrint buffer."
 keywords: ["dbgprint Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -45,6 +45,7 @@ The **!dbgprint** extension causes the contents of this buffer to be displayed (
  
 
  
+
 
 
 

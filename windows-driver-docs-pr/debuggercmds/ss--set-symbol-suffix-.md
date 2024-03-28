@@ -1,6 +1,6 @@
 ---
-title: ss (Set Symbol Suffix)
-description: The ss command sets or displays the current suffix value that is used for symbol matching in numeric expressions.
+title: "ss (Set Symbol Suffix)"
+description: "The ss command sets or displays the current suffix value that is used for symbol matching in numeric expressions."
 keywords: ["ss (Set Symbol Suffix) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -54,6 +54,7 @@ If you specify the **ss** command together with no parameters, the current state
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: .open (Open Source File)
-description: The .open command searches the source path for a source file and opens this file.
+title: ".open (Open Source File)"
+description: "The .open command searches the source path for a source file and opens this file."
 keywords: [".open (Open Source File) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -55,6 +55,7 @@ For more information about source files and source paths and for other ways to l
  
 
  
+
 
 
 
