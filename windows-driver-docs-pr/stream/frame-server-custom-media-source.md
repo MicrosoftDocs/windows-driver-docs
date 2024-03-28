@@ -118,7 +118,7 @@ PnpLockdown=1
 
 [DestinationDirs]
 DefaultDestDir = 13
-UMDriverCopy=13,UMDF ; copy to DriverStore\Umdf
+UMDriverCopy=13 ; copy to DriverStore
 CustomCaptureSourceCopy=13
 
 ; ================= Class section =====================
@@ -142,31 +142,18 @@ SimpleMediaSource.dll = 1,,
 ;*****************************************
 
 [Manufacturer]
-%StdMfg%=Standard,NT$ARCH$.6.1,NT$ARCH$.10.0...22000
+%StdMfg%=Standard,NTamd64.10.0...22000
 
-[Standard.NT$ARCH$.6.1]
-%SimpleMediaSource.DeviceDesc%=SimpleMediaSourceWin7, root\SimpleMediaSource
-
-[Standard.NT$ARCH$.10.0...22000]
+[Standard.NTamd64.10.0...22000]
 %SimpleMediaSource.DeviceDesc%=SimpleMediaSourceWin11, root\SimpleMediaSource
 
 
 ;---------------- copy files
-
-[SimpleMediaSourceWin7.NT]
-CopyFiles=UMDriverCopy, CustomCaptureSourceCopy
-AddReg = CustomCaptureSource.ComRegistration
-
 [SimpleMediaSourceWin11.NT]
 Include=wudfrd.inf
 Needs=WUDFRR.NT
 CopyFiles=UMDriverCopy, CustomCaptureSourceCopy
 AddReg = CustomCaptureSource.ComRegistration
-
-[SimpleMediaSourceWin7.NT.Interfaces]
-AddInterface = %KSCATEGORY_VIDEO_CAMERA%, %CustomCaptureSource.ReferenceString%, CustomCaptureSourceInterface
-AddInterface = %KSCATEGORY_VIDEO%, %CustomCaptureSource.ReferenceString%, CustomCaptureSourceInterface
-AddInterface = %KSCATEGORY_CAPTURE%, %CustomCaptureSource.ReferenceString%, CustomCaptureSourceInterface
 
 [SimpleMediaSourceWin11.NT.Interfaces]
 AddInterface = %KSCATEGORY_VIDEO_CAMERA%, %CustomCaptureSource.ReferenceString%, CustomCaptureSourceInterface
@@ -193,25 +180,11 @@ SimpleMediaSourceDriver.dll,,,0x00004000 ; COPYFLG_IN_USE_RENAME
 SimpleMediaSource.dll,,,0x00004000 ; COPYFLG_IN_USE_RENAME
 
 ;-------------- Service installation
-[SimpleMediaSourceWin7.NT.Services]
-AddService=WUDFRd,0x000001fa,WUDFRD_ServiceInstall
-
-[WUDFRD_ServiceInstall]
-DisplayName = %WudfRdDisplayName%
-ServiceType = 1
-StartType = 3
-ErrorControl = 1
-ServiceBinary = %12%\WUDFRd.sys
-
 [SimpleMediaSourceWin11.NT.Services]
 Include=wudfrd.inf
 Needs=WUDFRR.NT.Services
 
 ;-------------- WDF specific section -------------
-[SimpleMediaSourceWin7.NT.Wdf]
-UmdfService=SimpleMediaSource, SimpleMediaSource_Install
-UmdfServiceOrder=SimpleMediaSource
-
 [SimpleMediaSourceWin11.NT.Wdf]
 UmdfService=SimpleMediaSource, SimpleMediaSource_Install
 UmdfServiceOrder=SimpleMediaSource
