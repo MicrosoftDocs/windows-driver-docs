@@ -1,6 +1,6 @@
 ---
-title: ih (WinDbg)
-description: The ih extension displays the interrupt history record for the specified processor.
+title: "ih (WinDbg)"
+description: "The ih extension displays the interrupt history record for the specified processor."
 keywords: ["interrupt history record", "ih Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -81,6 +81,7 @@ EXTERNAL INTERRUPT  e0000000830623b0      1010092a6018  IVR=               d0
  
 
  
+
 
 
 

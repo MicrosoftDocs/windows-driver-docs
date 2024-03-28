@@ -1,6 +1,6 @@
 ---
-title: wdfkd.wdfumfile
-description: The wdfkd.wdfumfile extension displays information about a UMDF intra-stack file.
+title: "wdfkd.wdfumfile"
+description: "The wdfkd.wdfumfile extension displays information about a UMDF intra-stack file."
 keywords: ["wdfkd.wdfumfile Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -51,6 +51,7 @@ This command displays the same information as the user-mode command [**!wudfext.
  
 
  
+
 
 
 

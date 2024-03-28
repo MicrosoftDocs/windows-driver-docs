@@ -1,6 +1,6 @@
 ---
-title: usb3kd.xhci_registers
-description: The usb3kd.xhci_registers extension displays the registers of a USB 3.0 host controller.
+title: "usb3kd.xhci_registers"
+description: "The usb3kd.xhci_registers extension displays the registers of a USB 3.0 host controller."
 keywords: ["usb3kd.xhci_registers Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -97,7 +97,7 @@ Now you can pass the address of the device extension to the **!xhci\_registers**
         dt -a4 -r2 USBXHCI!_PORT_REGISTER_SET 0xfffff880046a8420
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [USB 3.0 Extensions](usb-3-extensions.md)
@@ -107,4 +107,5 @@ Now you can pass the address of the device extension to the **!xhci\_registers**
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
+
 

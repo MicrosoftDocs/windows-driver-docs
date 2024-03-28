@@ -1,6 +1,6 @@
 ---
-title: wdfkd.wdfmemory
-description: The wdfkd.wdfmemory extension displays the address and size of the buffer that is associated with a framework memory object.
+title: "wdfkd.wdfmemory"
+description: "The wdfkd.wdfmemory extension displays the address and size of the buffer that is associated with a framework memory object."
 keywords: ["wdfkd.wdfmemory Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -42,6 +42,7 @@ For more information, see [Kernel-Mode Driver Framework Debugging](../debugger/k
  
 
  
+
 
 
 

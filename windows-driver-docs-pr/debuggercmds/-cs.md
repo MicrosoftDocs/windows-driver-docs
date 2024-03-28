@@ -1,6 +1,6 @@
 ---
-title: !cs (WinDbg)
-description: The cs extension displays one or more critical sections or the whole critical section tree.
+title: "!cs (WinDbg)"
+description: "The cs extension displays one or more critical sections or the whole critical section tree."
 keywords: ["cs Windows Debugging"]
 ms.date: 11/15/2018
 topic_type:
@@ -169,3 +169,4 @@ The following items appear in this **!cs -t** display:
 [Displaying a Critical Section](../debugger/displaying-a-critical-section.md)
 
 [Critical Section Time Outs](../debugger/critical-section-time-outs.md) (user mode)
+

@@ -1,6 +1,6 @@
 ---
-title: up (Unassemble from Physical Memory)
-description: The up command displays an assembly translation of the specified program code in physical memory.
+title: "up (Unassemble from Physical Memory)"
+description: "The up command displays an assembly translation of the specified program code in physical memory."
 keywords: ["up (Unassemble from Physical Memory) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -55,6 +55,7 @@ Do not confuse this command with the [**u (Unassemble)**](u--unassemble-.md). Th
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: C++ numbers and operators
-description: Learn how to use C++ numbers, operators, and other expression syntax with the Windows debugging tools.
+title: "C++ numbers and operators"
+description: "Learn how to use C++ numbers, operators, and other expression syntax with the Windows debugging tools."
 keywords: ["expressions, C++ expression syntax", "C++ expressions, numbers", "C++ expressions, operators", "numerical expressions, C++", "operators, C++", "precedence rules (C++)", "methods", "methods, syntax", "members of classes"]
 ms.date: 12/16/2022
 ---
@@ -295,3 +295,4 @@ long 0n2
 [Sign extension](sign-extension.md)
 
 [Mixed expression examples](expression-examples.md)
+

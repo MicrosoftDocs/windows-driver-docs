@@ -1,6 +1,6 @@
 ---
-title: vad_reload
-description: The vad_reload extension reloads the user-mode modules for a specified process by using the virtual address descriptors (VADs) of that process.
+title: "vad_reload"
+description: "The vad_reload extension reloads the user-mode modules for a specified process by using the virtual address descriptors (VADs) of that process."
 keywords: ["vad_reload Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -64,7 +64,7 @@ fffffa80`04fd2e70: VAD maps 00000000`72a50000 - 00000000`72a6cfff, file userenv.
 
 Kdexts.dll
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**!process**](-process.md)
@@ -74,6 +74,7 @@ Kdexts.dll
  
 
  
+
 
 
 

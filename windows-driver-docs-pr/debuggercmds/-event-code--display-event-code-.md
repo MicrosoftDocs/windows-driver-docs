@@ -1,6 +1,6 @@
 ---
-title: .event_code (Display Event Code)
-description: The .event_code command displays the current event instructions.
+title: ".event_code (Display Event Code)"
+description: "The .event_code command displays the current event instructions."
 keywords: [".event_code (Display Event Code) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -38,6 +38,7 @@ The **.event\_code** command displays the hexadecimal instructions at the curren
  
 
  
+
 
 
 

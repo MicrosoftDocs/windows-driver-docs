@@ -1,6 +1,6 @@
 ---
-title: .remote (Create Remote.exe Server)
-description: The .remote command starts a Remote.exe Server, enabling a remote connection to the current debugging session.
+title: ".remote (Create Remote.exe Server)"
+description: "The .remote command starts a Remote.exe Server, enabling a remote connection to the current debugging session."
 keywords: ["Create Remote.exe Server (.remote) command", "remote debugging through remote.exe, Create Remote.exe Server (.remote) command", ".remote (Create Remote.exe Server) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -50,6 +50,7 @@ The **.remote** command creates a Remote.exe process and turns the current debug
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: .record_branches (Enable Branch Recording)
-description: The .record_branches command enables the recording of branches that the target's code executed.
+title: ".record_branches (Enable Branch Recording)"
+description: "The .record_branches command enables the recording of branches that the target's code executed."
 keywords: ["Enable Branch Recording (.record_branches) command", ".record_branches (Enable Branch Recording) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -59,6 +59,7 @@ Without parameters, **.record\_branches** displays the current status of this se
  
 
  
+
 
 
 

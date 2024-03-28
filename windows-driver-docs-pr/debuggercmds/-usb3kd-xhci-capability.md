@@ -1,6 +1,6 @@
 ---
-title: usb3kd.xhci_capability
-description: The usb3kd.xhci_capability extension displays the capabilities of a USB 3.0 host controller.
+title: "usb3kd.xhci_capability"
+description: "The usb3kd.xhci_capability extension displays the capabilities of a USB 3.0 host controller."
 keywords: ["usb3kd.xhci_capability Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -103,7 +103,7 @@ Now you can pass the address of the device extension to the **!xhci\_capability*
         DisableIdlePowerManagement
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [USB 3.0 Extensions](usb-3-extensions.md)
@@ -111,4 +111,5 @@ Now you can pass the address of the device extension to the **!xhci\_capability*
 [**!xhci\_dumpall**](-usb3kd-xhci-dumpall.md)
 
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
+
 

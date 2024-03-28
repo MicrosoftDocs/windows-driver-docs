@@ -1,6 +1,6 @@
 ---
-title: .symopt (Set Symbol Options)
-description: The .symopt command sets or displays the symbol options.
+title: ".symopt (Set Symbol Options)"
+description: "The .symopt command sets or displays the symbol options."
 keywords: [".symopt (Set Symbol Options) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -56,6 +56,7 @@ Without any arguments, **.symopt** displays the current symbol options.
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: ks.devhdr (WinDbg)
-description: The ks.devhdr extension displays the kernel streaming device header associated with the given WDM object.
+title: "ks.devhdr (WinDbg)"
+description: "The ks.devhdr extension displays the kernel streaming device header associated with the given WDM object."
 keywords: ["ks.devhdr Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -71,6 +71,7 @@ Device Header 824ca1e0
  
 
  
+
 
 
 

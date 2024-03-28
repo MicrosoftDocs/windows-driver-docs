@@ -1,6 +1,6 @@
 ---
-title: .enable_unicode (Enable Unicode Display)
-description: The .enable_unicode command specifies whether the debugger displays USHORT pointers and arrays as Unicode strings.
+title: ".enable_unicode (Enable Unicode Display)"
+description: "The .enable_unicode command specifies whether the debugger displays USHORT pointers and arrays as Unicode strings."
 keywords: ["Enable Unicode Display (.enable_unicode) command", "UNICODE_STRING structure", ".enable_unicode (Enable Unicode Display) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -49,7 +49,7 @@ In WinDbg, the **.enable\_unicode** command also affects the display in the [Loc
 
 You can also select or clear **Display 16-bit values** as Unicode on the shortcut menu of the Locals or Watch window to specify the display for USHORT arrays and pointers.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ds, dS (Display String)**](ds--ds--display-string-.md)
@@ -57,6 +57,7 @@ You can also select or clear **Display 16-bit values** as Unicode on the shortcu
  
 
  
+
 
 
 

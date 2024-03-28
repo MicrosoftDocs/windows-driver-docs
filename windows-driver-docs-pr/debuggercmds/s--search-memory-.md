@@ -1,6 +1,6 @@
 ---
-title: s (Search Memory)
-description: The s command searches through memory to find a specific byte pattern.
+title: "s (Search Memory)"
+description: "The s command searches through memory to find a specific byte pattern."
 keywords: ["s (Search Memory) Windows Debugging"]
 ms.date: 02/21/2019
 topic_type:
@@ -224,6 +224,7 @@ On little-endian computers, 'VUTS' is the same as the byte pattern 'S' 'T' 'U' '
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: pmssa (WinDbg)
-description: The pmssa extension displays a specified processor Minimal State Save Area (also known as Min-StateSave Area).
+title: "pmssa (WinDbg)"
+description: "The pmssa extension displays a specified processor Minimal State Save Area (also known as Min-StateSave Area)."
 keywords: ["processor minstate save area", "pmssa Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -42,6 +42,7 @@ Windows XP and later - Kdexts.dll
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: searchpte (WinDbg)
-description: The searchpte extension searches physical memory for the specified page frame number (PFN).
+title: "searchpte (WinDbg)"
+description: "The searchpte extension searches physical memory for the specified page frame number (PFN)."
 keywords: ["searchpte Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -48,6 +48,7 @@ To stop execution at any time, press CTRL+BREAK (in WinDbg) or CTRL+C (in KD).
  
 
  
+
 
 
 

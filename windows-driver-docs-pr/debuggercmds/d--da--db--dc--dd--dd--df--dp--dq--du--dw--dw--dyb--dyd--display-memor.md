@@ -1,6 +1,6 @@
 ---
-title: d, da, db, dc, dd, dD, df, dp, dq, du, dw (Display Memory)
-description: Learn about the d* commands, which display the contents of memory in the given range. You can specify several options.
+title: "d, da, db, dc, dd, dD, df, dp, dq, du, dw (Display Memory)"
+description: "Learn about the d* commands, which display the contents of memory in the given range. You can specify several options."
 keywords: ["d, da, db, dc, dd, dD, df, dp, dq, du, dw (Display Memory) Windows Debugging"]
 ms.date: 1/06/2023
 topic_type:
@@ -90,3 +90,4 @@ This command exists in the following forms. The second characters of the **dd**,
 | dyd | Binary values and double-word values (4 bytes). The default count is 8 DWORDs (32 bytes). |
 
 If you attempt to display an invalid address, its contents are shown as question marks (**?**).
+

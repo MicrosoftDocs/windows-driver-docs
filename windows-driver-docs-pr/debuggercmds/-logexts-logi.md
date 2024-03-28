@@ -1,6 +1,6 @@
 ---
-title: logexts.logi
-description: The logexts.logi extension initializes logging by injecting Logger into the target application.
+title: "logexts.logi"
+description: "The logexts.logi extension initializes logging by injecting Logger into the target application."
 keywords: ["logexts.logi Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -59,6 +59,7 @@ This command initializes logging, but does not actually enable it. Logging can b
  
 
  
+
 
 
 

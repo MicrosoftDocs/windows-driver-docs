@@ -1,6 +1,6 @@
 ---
-title: apicerr (WinDbg)
-description: The apicerr extension displays the local Advanced Programmable Interrupt Controller (APIC) error log.
+title: "apicerr (WinDbg)"
+description: "The apicerr extension displays the local Advanced Programmable Interrupt Controller (APIC) error log."
 keywords: ["APIC (Advanced Programmable Interrupt Controller)", "apicerr Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
@@ -48,6 +48,7 @@ For information about APICs, see *Microsoft Windows Internals* by Mark Russinovi
  
 
  
+
 
 
 

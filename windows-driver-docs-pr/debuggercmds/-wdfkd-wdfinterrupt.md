@@ -1,6 +1,6 @@
 ---
-title: wdfkd.wdfinterrupt
-description: The wdfkd.wdfinterrupt extension displays information about a WDFINTERRUPT object.
+title: "wdfkd.wdfinterrupt"
+description: "The wdfkd.wdfinterrupt extension displays information about a WDFINTERRUPT object."
 keywords: ["wdfkd.wdfinterrupt Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -86,6 +86,7 @@ In the preceding example, the display concludes with two suggested [**dt (Displa
  
 
  
+
 
 
 

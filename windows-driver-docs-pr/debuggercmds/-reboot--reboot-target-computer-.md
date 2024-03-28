@@ -1,6 +1,6 @@
 ---
-title: .reboot (Reboot Target Computer)
-description: The .reboot command restarts the target computer.
+title: ".reboot (Reboot Target Computer)"
+description: "The .reboot command restarts the target computer."
 keywords: ["Reboot Target Computer (.reboot) command", "controlling the target, Reboot Target Computer (.reboot) command", ".reboot (Reboot Target Computer) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -56,6 +56,7 @@ For more information about related commands and an explanation of how the restar
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: cpuid (WinDbg)
-description: The cpuid extension displays information about the processors on the system.
+title: "cpuid (WinDbg)"
+description: "The cpuid extension displays information about the processors on the system."
 keywords: ["cpuid Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -70,5 +70,6 @@ CP  F/M/S  Manufacturer        MHz
 The **CP** column gives the processor number. (These numbers are always sequential, starting with zero). The **Manufacturer** column specifies the processor manufacturer. The **MHz** column specifies the processor speed, if it is available.
 
 For an x86-based processor or an x64-based processor, the **F** column displays the processor family number, the **M** column displays the processor model number, and the **S** column displays the stepping size.
+
 
 

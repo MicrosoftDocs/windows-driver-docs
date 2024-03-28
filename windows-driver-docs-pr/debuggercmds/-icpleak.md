@@ -1,6 +1,6 @@
 ---
-title: icpleak (WinDbg)
-description: The icpleak extension examines all I/O completion objects in the system for the object with the largest number of queued entries.
+title: "icpleak (WinDbg)"
+description: "The icpleak extension examines all I/O completion objects in the system for the object with the largest number of queued entries."
 keywords: ["I/O completion", "icpleak Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -46,4 +46,5 @@ This extension works only if the system maintains type lists. If the *HandleFlag
 You can stop at any point by pressing CTRL+BREAK (in WinDbg) or CTRL+C (in KD).
 
  
+
 

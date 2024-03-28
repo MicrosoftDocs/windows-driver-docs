@@ -1,6 +1,6 @@
 ---
-title: peb (WinDbg)
-description: The peb extension displays a formatted view of the information in the process environment block (PEB).
+title: "peb (WinDbg)"
+description: "The peb extension displays a formatted view of the information in the process environment block (PEB)."
 keywords: ["PEB (process environment block)", "process, process environment block (PEB)", "peb Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -82,7 +82,7 @@ PEB at 7ffdf000
     SubSystemData:     00000000
     ProcessHeap:       00140000
     ProcessParameters: 00020000
-    WindowTitle:  'D:\Documents and Settings\Administrator\Desktop\Debuggers.lnk'
+    WindowTitle: "'D:\Documents and Settings\Administrator\Desktop\Debuggers.lnk'"
     ImageFile:    'D:\WINDOWS\system32\cmd.exe'
     CommandLine:  '"D:\WINDOWS\system32\cmd.exe" '
     DllPath:      'D:\WINDOWS\system32;D:\WINDOWS\system32;....
@@ -99,6 +99,7 @@ The similar [**!teb**](-teb.md) extension displays the thread environment block.
  
 
  
+
 
 
 

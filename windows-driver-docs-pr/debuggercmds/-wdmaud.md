@@ -1,6 +1,6 @@
 ---
-title: wdmaud (WinDbg)
-description: Displays a variety of WDM Audio (WDMAud) structures.
+title: "wdmaud (WinDbg)"
+description: "Displays a variety of WDM Audio (WDMAud) structures."
 keywords: ["wdmaud Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -77,6 +77,7 @@ The contexts attached to wdmaud.sys (**pContext**) contain most of the state dat
  
 
  
+
 
 
 

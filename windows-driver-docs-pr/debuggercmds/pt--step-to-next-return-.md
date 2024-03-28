@@ -1,6 +1,6 @@
 ---
-title: pt (Step to Next Return)
-description: The pt command executes the program until a return instruction is reached.
+title: "pt (Step to Next Return)"
+description: "The pt command executes the program until a return instruction is reached."
 keywords: ["pt (Step to Next Return) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -80,6 +80,7 @@ The following example demonstrates using the **pt** command along with the **kb*
  
 
  
+
 
 
 

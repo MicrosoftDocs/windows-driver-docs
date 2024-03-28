@@ -1,6 +1,6 @@
 ---
-title: rpcexts.rpcreadstack
-description: The rpcexts.rpcreadstack extension reads an RPC client-side stack and retrieves the call information.
+title: "rpcexts.rpcreadstack"
+description: "The rpcexts.rpcreadstack extension reads an RPC client-side stack and retrieves the call information."
 keywords: ["rpcexts.rpcreadstack Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -71,6 +71,7 @@ ProcNum: 0
  
 
  
+
 
 
 

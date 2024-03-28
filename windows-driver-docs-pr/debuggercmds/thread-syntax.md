@@ -1,6 +1,6 @@
 ---
-title: Thread Syntax
-description: Thread Syntax
+title: "Thread Syntax"
+description: "Thread Syntax"
 keywords: ["thread, command syntax", "~ (thread identifier)", "thread, thread identifier ( ~ )", "thread, thread ID", "~ (thread identifier)", "syntax rules for commands, ~ (thread identifier)", "syntax rules for commands, ~ (thread identifier)", "syntax rules for commands, threads"]
 ms.date: 05/23/2017
 ---
@@ -75,6 +75,7 @@ In kernel mode, you cannot control threads by using thread identifiers. For more
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: obja (WinDbg)
-description: The obja extension displays the attributes of an object in the object manager.
+title: "obja (WinDbg)"
+description: "The obja extension displays the attributes of an object in the object manager."
 keywords: ["object manager", "obja Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -81,6 +81,7 @@ Obja +80967768 at 80967768:
  
 
  
+
 
 
 

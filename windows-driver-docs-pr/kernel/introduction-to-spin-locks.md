@@ -2,20 +2,19 @@
 title: Introduction to Spin Locks
 description: Introduction to Spin Locks
 keywords: ["KSPIN_LOCK", "executive spin locks WDK kernel", "interrupt spin locks WDK kernel", "queued spin locks WDK kernel", "spin locks WDK kernel"]
-ms.date: 06/16/2017
+ms.date: 03/04/2024
 ---
 
 # Introduction to Spin Locks
 
+Spin locks are kernel-defined, kernel-mode-only synchronization mechanisms, exported as an opaque type: KSPIN_LOCK. A spin lock can be used to protect shared data or resources from simultaneous access.
+When running at IRQL <= DISPATCH_LEVEL, a driver can use [**KeAcquireInStackQueuedSpinLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keacquireinstackqueuedspinlock) and [**KeReleaseInStackQueuedSpinLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kereleaseinstackqueuedspinlock) to acquire and release the spin lock as a *queued spin lock*.
 
-
-
-
-Spin locks are kernel-defined, kernel-mode-only synchronization mechanisms, exported as an opaque type: KSPIN\_LOCK. A spin lock can be used to protect shared data or resources from simultaneous access by routines that can execute concurrently and at IRQL &gt;= DISPATCH\_LEVEL in SMP machines.
+Alternatively, callers running at IRQL >= DISPATCH_LEVEL can call [**KeAcquireSpinLockAtDpcLevel**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keacquirespinlockatdpclevel) and [**KeReleaseSpinLockFromDpcLevel**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kereleasespinlockfromdpclevel) for better driver performance.
 
 Many components use spin locks, including drivers. Any kind of driver might use one or more *executive spin locks*. For example, most file systems use an interlocked work queue in the file system driver's (FSD's) device extension to store IRPs that are processed both by the file system's worker-thread callback routines and by the FSD. An interlocked work queue is protected by an executive spin lock, which resolves contention among the FSD trying to insert IRPs into the queue and any threads simultaneously trying to remove IRPs. As another example, the system floppy controller driver uses two executive spin locks. One executive spin lock protects an interlocked work queue shared with this driver's device-dedicated thread; the other protects a timer object shared by three driver routines.
 
-Drivers for Microsoft Windows XP and later versions of Windows can use [**KeAcquireInStackQueuedSpinLock**](/previous-versions/windows/hardware/drivers/ff551899(v=vs.85)) and [**KeReleaseInStackQueuedSpinLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kereleaseinstackqueuedspinlock) to acquire and release the spin lock as a *queued spin lock*. Queued spin locks provide better performance than ordinary spin locks for high contention locks on multiprocessor machines. For more information, see [Queued Spin Locks](queued-spin-locks.md). Drivers for Windows 2000 can use [**KeAcquireSpinLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keacquirespinlock) and [**KeReleaseSpinLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kereleasespinlock) to acquire and release a spin lock as an ordinary spin lock.
+Queued spin locks provide better performance than ordinary spin locks for high contention locks on multiprocessor machines. For more information, see [Queued Spin Locks](queued-spin-locks.md). Drivers can also use [**KeAcquireSpinLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keacquirespinlock) and [**KeReleaseSpinLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kereleasespinlock) to acquire and release a spin lock as an ordinary spin lock.
 
 To synchronize access to simple data structures, drivers can use any of the **ExInterlocked*Xxx*** routines to ensure atomic access to the data structure. Drivers that use these routines do not need to acquire or release the spin lock explicitly.
 

@@ -1,6 +1,6 @@
 ---
-title: .exepath (Set Executable Path)
-description: The .exepath command sets or displays the executable file search path.
+title: ".exepath (Set Executable Path)"
+description: "The .exepath command sets or displays the executable file search path."
 keywords: [".exepath (Set Executable Path) Windows Debugging"]
 ms.date: 05/05/2021
 topic_type:
@@ -59,6 +59,7 @@ The executable file search path can also be set using the `_NT_EXECUTABLE_IMAGE_
  
 
  
+
 
 
 

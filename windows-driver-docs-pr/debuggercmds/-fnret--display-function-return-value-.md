@@ -1,6 +1,6 @@
 ---
-title: .fnret (Display Function Return Value)
-description: The .fnret command displays information about a function's return value.
+title: ".fnret (Display Function Return Value)"
+description: "The .fnret command displays information about a function's return value."
 keywords: [".fnret (Display Function Return Value) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -52,6 +52,7 @@ If you omit *Value*, the debugger uses the return value registers to determine t
  
 
  
+
 
 
 

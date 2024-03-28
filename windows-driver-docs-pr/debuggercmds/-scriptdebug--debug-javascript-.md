@@ -1,6 +1,6 @@
 ---
-title: .scriptdebug (Debug JavaScript)
-description: Use the .scriptdebug command to debug JavaScript scripts.
+title: ".scriptdebug (Debug JavaScript)"
+description: "Use the .scriptdebug command to debug JavaScript scripts."
 keywords: [".scriptdebug Debug JavaScript Windows Debugging"]
 ms.date: 02/02/2021
 topic_type:
@@ -236,4 +236,5 @@ Use the **q** command to quit the JavaScript debugger.
 >>> Debug [<NONE> ] >q                                      
 q                                                           
 ```
+
 

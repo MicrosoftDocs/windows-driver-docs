@@ -1,6 +1,6 @@
 ---
-title: dreg (WinDbg)
-description: The dreg extension displays registry information.
+title: "dreg (WinDbg)"
+description: "The dreg extension displays registry information."
 keywords: ["dreg Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -109,6 +109,7 @@ Typing **!dreg** without any arguments will display some brief Help text for thi
  
 
  
+
 
 
 

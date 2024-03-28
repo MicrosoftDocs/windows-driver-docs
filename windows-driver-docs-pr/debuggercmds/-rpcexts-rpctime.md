@@ -1,6 +1,6 @@
 ---
-title: rpcexts.rpctime
-description: The rpcexts.rpctime extension displays the current system time.
+title: "rpcexts.rpctime"
+description: "The rpcexts.rpctime extension displays the current system time."
 keywords: ["rpcexts.rpctime Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -59,6 +59,7 @@ Current time is: 059931.126  (0x00ea1b.07e)
  
 
  
+
 
 
 

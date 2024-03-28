@@ -1,6 +1,6 @@
 ---
-title: ux (Unassemble x86 BIOS)
-description: The ux command displays the instruction set of the x86-based BIOS code.
+title: "ux (Unassemble x86 BIOS)"
+description: "The ux command displays the instruction set of the x86-based BIOS code."
 keywords: ["ux (Unassemble x86 BIOS) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -63,6 +63,7 @@ To make the **ux** command work correctly, HAL symbols must be available to the 
  
 
  
+
 
 
 

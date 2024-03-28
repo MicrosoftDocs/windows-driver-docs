@@ -1,6 +1,6 @@
 ---
-title: wmitrace.dumpminievent
-description: The wmitrace.dumpminievent extension displays the system event log trace fragment, which is stored in a dump file.
+title: "wmitrace.dumpminievent"
+description: "The wmitrace.dumpminievent extension displays the system event log trace fragment, which is stored in a dump file."
 keywords: ["wmitrace.dumpminievent Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -43,6 +43,7 @@ The *system event log trace fragment* is a copy of the contents of the last buff
  
 
  
+
 
 
 

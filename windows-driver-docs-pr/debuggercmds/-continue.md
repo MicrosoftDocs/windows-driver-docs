@@ -1,6 +1,6 @@
 ---
-title: .continue (WinDbg)
-description: The .continue token behaves like the continue keyword in C.
+title: ".continue (WinDbg)"
+description: "The .continue token behaves like the continue keyword in C."
 keywords: [".continue Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -41,6 +41,7 @@ Since there is no control flow token equivalent to the C goto statement, you wil
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: .server (Create Debugging Server)
-description: The .server command starts a debugging server, allowing a remote connection to the current debugging session.
+title: ".server (Create Debugging Server)"
+description: "The .server command starts a debugging server, allowing a remote connection to the current debugging session."
 keywords: ["Create Debugging Server (.server) command", "remote debugging through the debugger, Create Debugging Server (.server) command", ".server (Create Debugging Server) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -93,6 +93,7 @@ This permits a debugging client to connect to the current debugging session. Not
  
 
  
+
 
 
 

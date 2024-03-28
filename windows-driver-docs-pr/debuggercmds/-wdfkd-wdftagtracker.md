@@ -1,6 +1,6 @@
 ---
-title: wdfkd.wdftagtracker
-description: The wdfkd.wdftagtracker extension displays all available tag information (including tag value, line, file, and time) for a specified tag tracker.
+title: "wdfkd.wdftagtracker"
+description: "The wdfkd.wdftagtracker extension displays all available tag information (including tag value, line, file, and time) for a specified tag tracker."
 keywords: ["wdfkd.wdftagtracker Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -67,6 +67,7 @@ When you enable handle tracking for an object type, the framework tracks the ref
  
 
  
+
 
 
 

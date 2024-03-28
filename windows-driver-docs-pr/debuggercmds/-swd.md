@@ -1,6 +1,6 @@
 ---
-title: swd (WinDbg)
-description: The swd extension displays the software watchdog timer states for the specified processor, including the deferred procedure call (DPC) and the watchdog timer states for threads.
+title: "swd (WinDbg)"
+description: "The swd extension displays the software watchdog timer states for the specified processor, including the deferred procedure call (DPC) and the watchdog timer states for threads."
 keywords: ["watchdog timer", "swd Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -40,6 +40,7 @@ The watchdog timer shuts down or restarts Windows if Windows stops responding. T
  
 
  
+
 
 
 

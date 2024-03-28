@@ -1,6 +1,6 @@
 ---
-title: psp (WinDbg)
-description: The psp extension displays the processor state parameter (PSP) register at the specified address.
+title: "psp (WinDbg)"
+description: "The psp extension displays the processor state parameter (PSP) register at the specified address."
 keywords: ["processor state parameter (PSP)", "PSP register", "psp Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -54,6 +54,7 @@ Windows XP and later - Kdexts.dll
  
 
  
+
 
 
 

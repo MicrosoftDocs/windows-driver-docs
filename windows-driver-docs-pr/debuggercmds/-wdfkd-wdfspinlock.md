@@ -1,6 +1,6 @@
 ---
-title: wdfkd.wdfspinlock
-description: The wdfkd.wdfspinlock extension displays information about a framework spin-lock object. This information includes the spin lock's acquisition history and the length of time that the lock was held.
+title: "wdfkd.wdfspinlock"
+description: "The wdfkd.wdfspinlock extension displays information about a framework spin-lock object. This information includes the spin lock's acquisition history and the length of time that the lock was held."
 keywords: ["wdfkd.wdfspinlock Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -42,6 +42,7 @@ For more information, see [Kernel-Mode Driver Framework Debugging](../debugger/k
  
 
  
+
 
 
 

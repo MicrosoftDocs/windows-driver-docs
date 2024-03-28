@@ -1,6 +1,6 @@
 ---
-title: minipkd.req
-description: The minipkd.req extension displays information about all of the currently active requests on the specified adapter or device.
+title: "minipkd.req"
+description: "The minipkd.req extension displays information about all of the currently active requests on the specified adapter or device."
 keywords: ["minipkd.req Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -63,6 +63,7 @@ The PDO for a LUN can be found in the **DevObj** field of the [**!minipkd.adapte
  
 
  
+
 
 
 

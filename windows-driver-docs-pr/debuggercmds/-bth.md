@@ -1,6 +1,6 @@
 ---
-title: bth (WinDbg)
-description: The bth extension displays the Itanium-based branch traces history for the specified processor.
+title: "bth (WinDbg)"
+description: "The bth extension displays the Itanium-based branch traces history for the specified processor."
 keywords: ["branch trace history", "bth Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -42,6 +42,7 @@ This extension command can only be used with an Itanium-based target computer.
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: ppmperf (WinDbg)
-description: The ppmperf command
+title: "ppmperf (WinDbg)"
+description: "The ppmperf command"
 keywords: ["ppmperf Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -31,6 +31,7 @@ None
 
 **NOTE:** This command is not supported on all versions of Windows, such as Windows 10, Version 1703.
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: usb3kd.port_info
-description: The usb3kd.port_info command displays information about a USB port in the USB 3.0 tree.
+title: "usb3kd.port_info"
+description: "The usb3kd.port_info command displays information about a USB port in the USB 3.0 tree."
 keywords: ["usb3kd.port_info Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -78,7 +78,7 @@ Port Event History:
     ...  
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [USB 3.0 Extensions](usb-3-extensions.md)
@@ -86,4 +86,5 @@ Port Event History:
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
+
 

@@ -1,6 +1,6 @@
 ---
-title: .load, .loadby (Load Extension DLL)
-description: The .load and .loadby commands load a new extension DLL into the debugger.
+title: ".load, .loadby (Load Extension DLL)"
+description: "The .load and .loadby commands load a new extension DLL into the debugger."
 keywords: [".load (Load Extension DLL) command", "loadby (Load Extension DLL) command", "Load Extension DLL (.load - .loadby) command", "extension commands ( commands), Load Extension DLL (.load - .loadby) command", ".load, .loadby (Load Extension DLL) Windows Debugging"]
 ms.date: 01/30/2020
 topic_type:
@@ -72,3 +72,4 @@ For example, the managed code SOS.dll is not in search path for DLLs shown above
 ```dbgcmd
 0:000> .load C:\Windows\Microsoft.NET\Framework64\v4.0.30319\SOS.dll
 ```
+

@@ -1,6 +1,6 @@
 ---
-title: findthreads
-description: The findthreads extension displays summary information about one or more threads on the target system based on supplied search criteria.
+title: "findthreads"
+description: "The findthreads extension displays summary information about one or more threads on the target system based on supplied search criteria."
 keywords: ["findthreads Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -106,6 +106,7 @@ Found 6 criteria matches for THREAD 0xffffe0016a383740, PROCESS 0xffffe0016a2202
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: .f+, .f- (Shift Local Context)
-description: The .f+ command shifts the frame index to the next frame in the current stack. The .f- command shifts the frame index to the previous frame in the current stack.
+title: ".f+, .f- (Shift Local Context)"
+description: "The .f+ command shifts the frame index to the next frame in the current stack. The .f- command shifts the frame index to the previous frame in the current stack."
 keywords: [".f+, .f- (Shift Local Context) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -59,6 +59,7 @@ The debugger resets the local context to the scope of the program counter if any
  
 
  
+
 
 
 

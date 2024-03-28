@@ -11,13 +11,12 @@ api_location:
 - NtosKrnl.exe
 api_type:
 - DllExport
-ms.date: 10/17/2018
+ms.date: 03/13/2024
 ---
 
 # DriverEntry of IDE Controller Minidriver function
 
-
-**DriverEntry** initializes the minidriver.
+An IDE controller minidriver's **DriverEntry** initializes driver-wide data structures and resources.
 
 ## Syntax
 
@@ -30,15 +29,13 @@ NTSTATUS DriverEntry(
 
 ## Parameters
 
-*DriverObject* \[in\]  
-Contains a pointer to the IDE controller minidriver's driver object.
+**DriverObject** contains a pointer to the IDE controller minidriver's driver object.
 
-*RegistryPath* \[in\]  
-Specifies a string indicating the registry path to the driver's configuration information in the registry.
+**RegistryPath** specifies a string indicating the path to the driver's configuration information in the registry.
 
 ## Return value
 
-**DriverEntry** returns STATUS\_SUCCESS if successful; otherwise it returns the error code received from the [**PciIdeXInitialize**](/previous-versions/windows/hardware/drivers/ff563788(v=vs.85)) library routine.
+**DriverEntry** returns STATUS_SUCCESS if successful; otherwise it returns the NTSTATUS code received from the [**PciIdeXInitialize**](/previous-versions/windows/hardware/drivers/ff563788(v=vs.85)) library routine.
 
 ## Remarks
 
@@ -48,39 +45,17 @@ An IDE controller minidriver's **DriverEntry** routine must call the [**PciIdeXI
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Target platform</p></td>
-<td align="left">Desktop</td>
-</tr>
-<tr class="even">
-<td align="left"><p>Header</p></td>
-<td align="left">Ide.h (include Ide.h)</td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Library</p></td>
-<td align="left">NtosKrnl.lib</td>
-</tr>
-<tr class="even">
-<td align="left"><p>DLL</p></td>
-<td align="left">NtosKrnl.exe</td>
-</tr>
-</tbody>
-</table>
+| Category | Requirement |
+| -------- | ----------- |
+| Target platform | Desktop |
+| Header          | *Ide.h* (include *Ide.h*) |
+| Library         | *NtosKrnl.lib* |
+| DLL             | *NtosKrnl.exe* |
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**HwIdeXGetControllerProperties**](/previous-versions/windows/hardware/drivers/ff557254(v=vs.85))
 
-[**IDE\_CONTROLLER\_PROPERTIES**](/previous-versions/windows/hardware/drivers/ff559076(v=vs.85))
+[**IDE_CONTROLLER_PROPERTIES**](/previous-versions/windows/hardware/drivers/ff559076(v=vs.85))
 
 [**PciIdeXInitialize**](/previous-versions/windows/hardware/drivers/ff563788(v=vs.85))
-
- 
-

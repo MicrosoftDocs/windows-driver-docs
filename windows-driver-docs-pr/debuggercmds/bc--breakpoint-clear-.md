@@ -1,6 +1,6 @@
 ---
-title: bc (Breakpoint Clear)
-description: The bc command permanently removes previously set breakpoints from the system.
+title: "bc (Breakpoint Clear)"
+description: "The bc command permanently removes previously set breakpoints from the system."
 keywords: ["bc (Breakpoint Clear) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -50,6 +50,7 @@ Use the [**.bpcmds (Display Breakpoint Commands)**](-bpcmds--display-breakpoint-
  
 
  
+
 
 
 

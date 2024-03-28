@@ -1,6 +1,6 @@
 ---
-title: wmitrace.logger
-description: The wmitrace.logger extension displays data about the trace session, including the session configuration data. This extension does not display trace messages generated during the session.
+title: "wmitrace.logger"
+description: "The wmitrace.logger extension displays data about the trace session, including the session configuration data. This extension does not display trace messages generated during the session."
 keywords: ["wmitrace.logger Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -49,6 +49,7 @@ To find the logger ID of a trace session, use the [**!wmitrace.strdump**](-wmitr
  
 
  
+
 
 
 

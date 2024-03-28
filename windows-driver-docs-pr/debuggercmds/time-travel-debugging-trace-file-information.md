@@ -1,6 +1,6 @@
 ---
-title: Time Travel Debugging - Working with Trace Files 
-description: This section describes how to work with time travel trace files 
+title: "Time Travel Debugging - Working with Trace Files "
+description: "This section describes how to work with time travel trace files "
 keywords: ["Working with Trace Files", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
 ms.date: 01/22/2020
 ---
@@ -141,3 +141,4 @@ Workaround:  Close the debugger and delete any index file (.idx) that may exist 
 ## See Also
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
+

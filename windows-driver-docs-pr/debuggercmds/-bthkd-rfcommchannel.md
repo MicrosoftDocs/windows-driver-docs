@@ -1,6 +1,6 @@
 ---
-title: bthkd.rfcommchannel
-description: The bthkd.rfcommchannel command displays information about a given RFCOMM channel CB.
+title: "bthkd.rfcommchannel"
+description: "The bthkd.rfcommchannel command displays information about a given RFCOMM channel CB."
 keywords: ["bthkd.rfcommchannel Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -32,7 +32,7 @@ The address of a rfcomm!\_CHANNEL\_CB structure.
 
 Bthkd.dll
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [Bluetooth Extensions (Bthkd.dll)](bluetooh-extensions--bthkd-dll-.md)
@@ -40,6 +40,7 @@ Bthkd.dll
  
 
  
+
 
 
 

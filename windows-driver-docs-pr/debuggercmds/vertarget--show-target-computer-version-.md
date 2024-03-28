@@ -1,6 +1,6 @@
 ---
-title: vertarget (Show Target Computer Version)
-description: The vertarget command displays the current version of the Microsoft Windows operating system of the target computer.
+title: "vertarget (Show Target Computer Version)"
+description: "The vertarget command displays the current version of the Microsoft Windows operating system of the target computer."
 keywords: ["vertarget (Show Target Computer Version) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -32,7 +32,7 @@ The **vertarget** command displays the current version of the Microsoft Windows 
 
  
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**CTRL+W (Show Debugger Version)**](../debugger/ctrl-w--show-debugger-version-.md)
@@ -42,6 +42,7 @@ The **vertarget** command displays the current version of the Microsoft Windows 
  
 
  
+
 
 
 

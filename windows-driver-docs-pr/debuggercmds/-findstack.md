@@ -1,6 +1,6 @@
 ---
-title: findstack (WinDbg)
-description: The findstack extension locates all of the stacks that contain a specified symbol or module.
+title: "findstack (WinDbg)"
+description: "The findstack extension locates all of the stacks that contain a specified symbol or module."
 keywords: ["findstack Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -111,6 +111,7 @@ Thread 023, 3 frame(s) match
 Thread 020, 3 frame(s) match
 Thread 023, 5 frame(s) match
 ```
+
 
 
 

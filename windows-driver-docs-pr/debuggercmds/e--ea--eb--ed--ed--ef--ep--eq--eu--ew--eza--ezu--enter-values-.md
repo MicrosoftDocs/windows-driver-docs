@@ -1,8 +1,8 @@
 ---
-title: e, ea, eb, ed, eD, ef, ep, eq, eu, ew, eza (Enter Values)
-description: The e* commands enter into memory the values that you specify.This command should not be confused with the ~E (Thread-Specific Command) qualifier.
+title: "e, ea, eb, ed, eD, ef, ep, eq, eu, ew, eza (Enter Values)"
+description: "The e* commands enter into memory the values that you specify.This command should not be confused with the ~E (Thread-Specific Command) qualifier."
 keywords: ["e, ea, eb, ed, eD, ef, ep, eq, eu, ew, eza (Enter Values) Windows Debugging"]
-ms.date: 05/23/2017
+ms.date: 03/05/2024
 topic_type:
 - apiref
 ms.topic: reference
@@ -14,8 +14,7 @@ api_type:
 
 # e, ea, eb, ed, eD, ef, ep, eq, eu, ew, eza (Enter Values)
 
-
-The **e\\*** commands enter into memory the values that you specify.
+The `*e*` commands enter into memory the values that you specify.
 
 This command should not be confused with the [**~E (Thread-Specific Command)**](-e--thread-specific-command-.md) qualifier.
 
@@ -25,10 +24,17 @@ e{a|u|za|zu} Address "String"
 e Address [Values]
 ```
 
-## <span id="ddk_cmd_enter_values_dbg"></span><span id="DDK_CMD_ENTER_VALUES_DBG"></span>Parameters
+Kernel Mode only - physical address
 
+```dbgcmd
+/p {[c]|[uc]|[wc]}
+```
 
-### <span id="syntax__ed_ef"></span><span id="SYNTAX__ED_EF"></span>Syntax eD ef
+For more information, see [Kernel mode physical addresses](#kernel-mode-physical-addresses) later in this topic.
+
+## Parameters
+
+### Syntax
 
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the starting address where to enter values. The debugger replaces the value at *Address* and each subsequent memory location until all *Values* have been used.
@@ -46,8 +52,6 @@ Specifies a string to be entered into memory. The **ea** and **eza** commands wi
 |Modes   |User mode, kernel mode|
 |Targets |Live, crash dump      |
 |Platforms|All                  |
-
- 
 
 ### Additional Information
 
@@ -120,13 +124,9 @@ This command exists in the following forms. The second characters of the **ed** 
 </tbody>
 </table>
 
- 
-
 Numeric values will be interpreted as numbers in the current radix (16, 10, or 8). To change the default radix, use the [**n (Set Number Base)**](n--set-number-base-.md) command. The default radix can be overridden by specifying the **0x** prefix (hexadecimal), the **0n** prefix (decimal), the **0t** prefix (octal), or the **0y** prefix (binary).
 
 **Note**   The default radix behaves differently when C++ expressions are being used. See [Evaluating Expressions](evaluating-expressions.md) for details.
-
- 
 
 When entering byte values with the **eb** command, you can use single straight quotation marks to specify characters. If you want to include multiple characters, each must be surrounded with its own quotation marks. This allows you to enter a character string that is not terminated by a null character. For example:
 
@@ -134,21 +134,32 @@ When entering byte values with the **eb** command, you can use single straight q
 eb 'h' 'e' 'l' 'l' 'o'
 ```
 
-C-style escape characters (such as '\\0' or '\\n') may not be used with these commands.
+C-style escape characters (such as `\\0` or `\\n`) may not be used with these commands.
 
 If you omit the *Values* parameter, you will be prompted for input. The address and its current contents will be displayed, and an **Input&gt;** prompt will appear. You can then do any of the following:
 
--   Enter a new value, by typing the value and pressing ENTER.
+- Enter a new value, by typing the value and pressing ENTER.
 
--   Preserve the current value in memory by pressing SPACE followed by ENTER.
+- Preserve the current value in memory by pressing SPACE followed by ENTER.
 
--   Exit from the command by pressing ENTER.
+- Exit from the command by pressing ENTER.
 
- 
+## Kernel mode physical addresses
 
- 
+In WinDbg version 1.2402.24001.0 and later, the `e` (Enter Memory) commands supports physical addresses just like [d, da, db, dc, dd, dD, df, dp, dq, du, dw, dW, dyb, dyd (Display Memory)](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md). These options are only supported in kernel mode.
 
+| Option   | Description                                                                                                                                 |
+|----------|---------------------------------------------------------------------------------------------------------------------------------------------|
+| `/p`     | Uses physical memory addresses for the display. The range specified by Range will be taken from physical memory rather than virtual memory. |
+| `/p[c]`  | Same as `/p`, except that cached memory will be read. The brackets around c must be included.                                               |
+| `/p[uc]` | Same as `/p`, except that uncached memory will be read. The brackets around uc must be included.                                            |
+| `/p[wc]` | Same as `/p`, except that write-combined memory will be read. The brackets around wc must be included.
 
+### See also
 
+[Reading and Writing Memory](../debugger/reading-and-writing-memory.md)
 
+[d, da, db, dc, dd, dD, df, dp, dq, du, dw, dW, dyb, dyd (Display Memory)](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md)
+
+[Evaluating Expressions](evaluating-expressions.md)
 

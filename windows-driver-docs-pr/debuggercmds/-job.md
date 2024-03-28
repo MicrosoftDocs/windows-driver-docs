@@ -1,6 +1,6 @@
 ---
-title: job (WinDbg)
-description: The job extension displays a job object.
+title: "job (WinDbg)"
+description: "The job extension displays a job object."
 keywords: ["job Windows Debugging"]
 ms.date: 08/29/2023
 topic_type:
@@ -83,6 +83,7 @@ Job at ffffffff8256e1f0
  
 
  
+
 
 
 

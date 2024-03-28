@@ -1,6 +1,6 @@
 ---
-title: mapped_file
-description: The mapped_file extension displays the name of the file that backs the file mapping that contains a specified address.
+title: "mapped_file"
+description: "The mapped_file extension displays the name of the file that backs the file mapping that contains a specified address."
 keywords: ["mapped_file Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -70,4 +70,5 @@ No information found for 80310000: error 87
 ```
 
  
+
 

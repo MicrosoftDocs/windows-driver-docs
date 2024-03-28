@@ -1,6 +1,6 @@
 ---
-title: wdfkd.wdfhandle
-description: The wdfkd.wdfhandle extension displays information about a specified framework object handle, such as the handle type, object context pointers, and the underlying framework object pointer.
+title: "wdfkd.wdfhandle"
+description: "The wdfkd.wdfhandle extension displays information about a specified framework object handle, such as the handle type, object context pointers, and the underlying framework object pointer."
 keywords: ["wdfkd.wdfhandle Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -86,6 +86,7 @@ In the preceding example, the input handle refers to a WDFDEVICE object. This pa
  
 
  
+
 
 
 

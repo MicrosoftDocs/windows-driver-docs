@@ -1,6 +1,6 @@
 ---
-title: logexts.loge
-description: The logexts.loge extension enables logging. If logging has not been initialized, it will be initialized and enabled.
+title: "logexts.loge"
+description: "The logexts.loge extension enables logging. If logging has not been initialized, it will be initialized and enabled."
 keywords: ["logexts.loge Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -61,6 +61,7 @@ If [**!logexts.logi**](-logexts-logi.md) has already been run, you cannot includ
  
 
  
+
 
 
 

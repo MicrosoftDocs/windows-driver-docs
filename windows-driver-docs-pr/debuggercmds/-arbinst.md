@@ -1,6 +1,6 @@
 ---
-title: arbinst (WinDbg)
-description: The arbinst extension displays information about a specified arbiter.
+title: "arbinst (WinDbg)"
+description: "The arbinst extension displays information about a specified arbiter."
 keywords: ["arbiter", "arbinst Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
@@ -71,6 +71,7 @@ Memory Arbiter "PCI Memory (b=02)" at e0000106002ec458
  
 
  
+
 
 
 

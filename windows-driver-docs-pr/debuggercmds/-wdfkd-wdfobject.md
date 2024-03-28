@@ -1,6 +1,6 @@
 ---
-title: wdfkd.wdfobject
-description: The wdfkd.wdfobject extension displays information about a specified framework object.
+title: "wdfkd.wdfobject"
+description: "The wdfkd.wdfobject extension displays information about a specified framework object."
 keywords: ["wdfkd.wdfobject Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -67,6 +67,7 @@ Object debug extension 83584e20
  
 
  
+
 
 
 

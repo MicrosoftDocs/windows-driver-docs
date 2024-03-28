@@ -1,6 +1,6 @@
 ---
-title: ls, lsa (List Source Lines)
-description: The ls and lsa commands display a series of lines from the current source file and advance the current source line number.
+title: "ls, lsa (List Source Lines)"
+description: "The ls and lsa commands display a series of lines from the current source file and advance the current source line number."
 keywords: ["ls, lsa (List Source Lines) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -53,7 +53,7 @@ Specifies the quantity of lines to display. The default value is 20 (0x14), unle
 
 After you run the **ls** or **lsa** command, the current line is redefined as the final line that is displayed plus one. The current line is used in future **ls**, **lsa**, and [**lsc**](lsc--list-current-source-.md) commands.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**lsc (List Current Source)**](lsc--list-current-source-.md)
@@ -63,6 +63,7 @@ After you run the **ls** or **lsa** command, the current line is redefined as th
  
 
  
+
 
 
 

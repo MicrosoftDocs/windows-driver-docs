@@ -1,6 +1,6 @@
 ---
-title: usbkd.usbhublog
-description: The usbkd.usbhublog command displays the debug log for a USB hub.
+title: "usbkd.usbhublog"
+description: "The usbkd.usbhublog command displays the debug log for a USB hub."
 keywords: ["usbkd.usbhublog Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -80,7 +80,7 @@ LOG@: ffffe000023201a0 (usbhub!_DEVICE_EXTENSION_HUB)
 [ 009] ffffe00002321dc0 pqDP 0000000000000000 ffffe000021c11d8 0000000000000006
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
@@ -88,4 +88,5 @@ LOG@: ffffe000023201a0 (usbhub!_DEVICE_EXTENSION_HUB)
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
+
 

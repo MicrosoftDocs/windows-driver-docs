@@ -1,6 +1,6 @@
 ---
-title: bpid (WinDbg)
-description: The bpid extension requests that a process on the target computer break into the debugger or requests that a user-mode debugger be attached to a process on the target computer.
+title: "bpid (WinDbg)"
+description: "The bpid extension requests that a process on the target computer break into the debugger or requests that a user-mode debugger be attached to a process on the target computer."
 keywords: ["bpid Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -84,6 +84,7 @@ Note that there are ways in which this extension can fail to execute:
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: .fiximports (Fix Target Module Imports)
-description: The .fiximports command validates and corrects all static import links for a target module.
+title: ".fiximports (Fix Target Module Imports)"
+description: "The .fiximports command validates and corrects all static import links for a target module."
 keywords: ["Fix Target Module Imports (.fiximports) command", ".fiximports (Fix Target Module Imports) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -61,6 +61,7 @@ When the debugger maps images for use as memory, the debugger does not automatic
  
 
  
+
 
 
 

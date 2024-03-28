@@ -1,6 +1,6 @@
 ---
-title: sid (WinDbg)
-description: The sid extension displays the security identifier (SID) at the specified address.
+title: "sid (WinDbg)"
+description: "The sid extension displays the security identifier (SID) at the specified address."
 keywords: ["sid Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -57,6 +57,7 @@ SID is: S-1-5-21-518066528-515770016-299552555-513 (Group: MYGROUP\Domain Users)
  
 
  
+
 
 
 

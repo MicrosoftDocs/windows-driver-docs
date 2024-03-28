@@ -23,12 +23,18 @@
     href: acx-irps.md
   - name: "ACX device enumeration"
     href: acx-device-enumeration.md
+  - name: "ACX WDF driver lifetime management"
+    href: acx-wdf-driver-lifetime-management.md    
   - name: "ACX power management"
     href: acx-power-management.md
+  - name: "ACX circuits"
+    href: acx-circuits.md    
   - name: "ACX multi circuit composition"
     href: acx-multi-circuit-composition.md
   - name: "ACX multi stack cross driver communications"
     href: acx-multi-stack.md
+  - name: "ACX audio data formats"
+    href: acx-data-formats.md       
   - name: "ACX logging and debugging"
     href: acx-logging-and-debugging.md
 - name: "WDM Audio Drivers Overview"

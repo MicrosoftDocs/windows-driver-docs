@@ -1,6 +1,6 @@
 ---
-title: wudfext.wudfdevice
-description: The wudfext.wudfdevice extension displays the Plug and Play (PnP) and power-management state systems for a device.
+title: "wudfext.wudfdevice"
+description: "The wudfext.wudfdevice extension displays the Plug and Play (PnP) and power-management state systems for a device."
 keywords: ["wudfext.wudfdevice Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -117,6 +117,7 @@ Power Policy State Machine:
  
 
  
+
 
 
 

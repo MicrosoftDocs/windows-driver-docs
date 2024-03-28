@@ -1,6 +1,6 @@
 ---
-title: pte2va (WinDbg)
-description: The pte2va extension displays the virtual address that corresponds to the specified page table entry (PTE).
+title: "pte2va (WinDbg)"
+description: "The pte2va extension displays the virtual address that corresponds to the specified page table entry (PTE)."
 keywords: ["pte2va Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -51,6 +51,7 @@ kd> !pte2va 9230
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: threadfields
-description: The threadfields extension displays the names and offsets of the fields within the executive thread (ETHREAD) block.
+title: "threadfields"
+description: "The threadfields extension displays the names and offsets of the fields within the executive thread (ETHREAD) block."
 keywords: ["threadfields Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -94,6 +94,7 @@ kd> !threadfields
  
 
  
+
 
 
 

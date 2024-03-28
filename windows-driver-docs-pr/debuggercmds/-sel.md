@@ -1,6 +1,6 @@
 ---
-title: sel (WinDbg)
-description: sel
+title: "sel (WinDbg)"
+description: "sel"
 keywords: ["sel extension (obsolete)"]
 ms.date: 05/23/2017
 ---
@@ -16,6 +16,7 @@ The **!sel** extension command is obsolete. Use the [**dg (Display Selector)**](
  
 
  
+
 
 
 

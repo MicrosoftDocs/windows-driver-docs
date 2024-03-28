@@ -1,6 +1,6 @@
 ---
-title: MASM Expressions vs. C++ Expressions
-description: MASM Expressions vs.
+title: "MASM Expressions vs. C++ Expressions"
+description: "MASM Expressions vs."
 keywords: ["expressions, MASM and C++", "MASM expressions, MASM vs. C++", "C++ expressions, C++ vs. MASM"]
 ms.date: 05/23/2017
 ---
@@ -33,6 +33,7 @@ The most significant differences between MASM expression evaluation and C++ expr
 [Mixed Expression Examples](expression-examples.md)
 
 [Sign Extension](sign-extension.md) 
+
 
 
 

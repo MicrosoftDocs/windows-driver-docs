@@ -1,6 +1,6 @@
 ---
-title: ks.topology
-description: The ks.topology extension displays a sorted graph of the internal topology of the filter closest to Object.
+title: "ks.topology"
+description: "The ks.topology extension displays a sorted graph of the internal topology of the filter closest to Object."
 keywords: ["ks.topology Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -67,6 +67,7 @@ Note that this command may take a few moments to execute.
  
 
  
+
 
 
 

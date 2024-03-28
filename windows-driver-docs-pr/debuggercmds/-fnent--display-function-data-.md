@@ -1,6 +1,6 @@
 ---
-title: .fnent (Display Function Data)
-description: The .fnent command displays information about the function table entry for a specified function.
+title: ".fnent (Display Function Data)"
+description: "The .fnent command displays information about the function table entry for a specified function."
 keywords: ["Display Function Data (.fnent) command", ".fnent (Display Function Data) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -67,6 +67,7 @@ No function entry for 01005a60
  
 
  
+
 
 
 

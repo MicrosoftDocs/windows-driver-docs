@@ -464,6 +464,8 @@ This example code shows the use of AcxTargetElement to communicate with a circui
 
 ## See also
 
+[ACX circuits](acx-circuits.md)
+
 [ACX audio class extensions overview](acx-audio-class-extensions-overview.md)
 
 [Summary of ACX Objects](acx-summary-of-objects.md)

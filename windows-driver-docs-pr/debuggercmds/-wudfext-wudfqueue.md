@@ -1,6 +1,6 @@
 ---
-title: wudfext.wudfqueue
-description: The wudfext.wudfqueue extension displays information about an I/O queue.
+title: "wudfext.wudfqueue"
+description: "The wudfext.wudfqueue extension displays information about an I/O queue."
 keywords: ["wudfext.wudfqueue Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -77,6 +77,7 @@ kd> !wudfqueue 0x000f3500
  
 
  
+
 
 
 

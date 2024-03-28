@@ -1,6 +1,6 @@
 ---
-title: stacks (WinDbg)
-description: The stacks extension displays information about the kernel stacks.
+title: "stacks (WinDbg)"
+description: "The stacks extension displays information about the kernel stacks."
 keywords: ["stacks Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -135,6 +135,7 @@ Proc.Thread  .Thread  ThreadState  Blocker
  
 
  
+
 
 
 

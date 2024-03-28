@@ -1,6 +1,6 @@
 ---
-title: poolval (WinDbg)
-description: The poolval extension analyzes the headers for a pool page and diagnoses any possible corruption. 
+title: "poolval (WinDbg)"
+description: "The poolval extension analyzes the headers for a pool page and diagnoses any possible corruption. "
 keywords: ["poolval Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -55,6 +55,7 @@ For information about memory pools, see the Windows Driver Kit (WDK) documentati
  
 
  
+
 
 
 

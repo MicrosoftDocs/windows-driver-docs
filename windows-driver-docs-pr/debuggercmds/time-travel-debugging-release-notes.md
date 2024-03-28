@@ -1,6 +1,6 @@
 ---
-title: Time travel debugging release notes
-description: This topic provides information on what's new in Time Travel Debugging.
+title: "Time travel debugging release notes"
+description: "This topic provides information on what's new in Time Travel Debugging."
 keywords: ["release notes", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
 ms.date: 02/12/2024
 ---
@@ -161,3 +161,4 @@ recording many instances of the same process, and want to minimize recording sta
 [Time Travel Debugging – Overview](time-travel-debugging-overview.md)
 
 [Time Travel Debugging – Command line recorder](time-travel-debugging-ttd-exe-command-line-util.md)
+

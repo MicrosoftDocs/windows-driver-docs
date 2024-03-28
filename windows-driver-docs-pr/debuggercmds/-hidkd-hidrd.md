@@ -1,6 +1,6 @@
 ---
-title: hidkd.hidrd
-description: The hidkd.hidrd command displays a HID report descriptor in both raw and parsed format.
+title: "hidkd.hidrd"
+description: "The hidkd.hidrd command displays a HID report descriptor in both raw and parsed format."
 keywords: ["hidkd.hidrd Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -71,7 +71,7 @@ Collection (Application).................................0x0004: A1 01
 End Collection ()........................................0x0126: C0
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [HID Extensions](hid-extensions.md)
@@ -79,6 +79,7 @@ End Collection ()........................................0x0126: C0
  
 
  
+
 
 
 

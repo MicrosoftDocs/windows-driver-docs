@@ -1,6 +1,6 @@
 ---
-title: error (WinDbg)
-description: The error extension decodes and displays information about an error value.
+title: "error (WinDbg)"
+description: "The error extension decodes and displays information about an error value."
 keywords: ["error codes", "Win32 error codes", "WinSock error codes", "error Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -73,6 +73,7 @@ Error code: (NTSTATUS) 0x2 - STATUS_WAIT_2
  
 
  
+
 
 
 

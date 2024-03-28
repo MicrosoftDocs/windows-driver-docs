@@ -1,6 +1,6 @@
 ---
-title: hidppd (WinDbg)
-description: The hidppd extension displays the contents of the HIDP_PREPARSED_DATA structure.
+title: "hidppd (WinDbg)"
+description: "The hidppd extension displays the contents of the HIDP_PREPARSED_DATA structure."
 keywords: ["HIDP_PREPARSED_DATA", "hidppd Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -40,6 +40,7 @@ For information about human input devices (HID), see the Windows Driver Kit (WDK
  
 
  
+
 
 
 

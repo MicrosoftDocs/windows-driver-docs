@@ -1,6 +1,6 @@
 ---
-title: dv (Display Local Variables)
-description: The dv command displays the names and values of all local variables in the current scope.
+title: "dv (Display Local Variables)"
+description: "The dv command displays the names and values of all local variables in the current scope."
 keywords: ["dv (Display Local Variables) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -88,6 +88,7 @@ The *local context* determines which set of local variables will be displayed. B
  
 
  
+
 
 
 

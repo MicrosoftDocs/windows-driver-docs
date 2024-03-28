@@ -1,6 +1,6 @@
 ---
-title: .scriptunload (Unload Script)
-description: The .scriptunload command unloads the specified script.
+title: ".scriptunload (Unload Script)"
+description: "The .scriptunload command unloads the specified script."
 keywords: [".scriptunload (Unload Script) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -58,7 +58,7 @@ Before using any of the .script commands, a scripting provider needs to be loade
 0:000> .load C:\ScriptProviders\jsprovider.dll
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**.scriptload (Load Script)**](-scriptload--load-script-.md)
@@ -68,6 +68,7 @@ Before using any of the .script commands, a scripting provider needs to be loade
  
 
  
+
 
 
 

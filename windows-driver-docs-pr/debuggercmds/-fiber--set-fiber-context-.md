@@ -1,6 +1,6 @@
 ---
-title: .fiber (Set Fiber Context)
-description: The .fiber command specifies which fiber is used for the fiber context.
+title: ".fiber (Set Fiber Context)"
+description: "The .fiber command specifies which fiber is used for the fiber context."
 keywords: ["Set Fiber Context (.fiber) command", "context, Set Fiber Context (.fiber) command", "fibers", ".fiber (Set Fiber Context) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -44,6 +44,7 @@ For more information about the process context, the register context, and the lo
  
 
  
+
 
 
 

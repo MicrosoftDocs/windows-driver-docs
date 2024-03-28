@@ -1,6 +1,6 @@
 ---
-title: logonsession
-description: The logonsession extension displays information about a specified logon session.
+title: "logonsession"
+description: "The logonsession extension displays information about a specified logon session."
 keywords: ["logon session", "logonsession Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -109,6 +109,7 @@ You can stop execution at any point by pressing CTRL+BREAK (in WinDbg) or CTRL+C
  
 
  
+
 
 
 

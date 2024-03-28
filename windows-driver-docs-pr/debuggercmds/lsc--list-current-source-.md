@@ -1,6 +1,6 @@
 ---
-title: lsc (List Current Source)
-description: The lsc command displays the current source file name and line number.
+title: "lsc (List Current Source)"
+description: "The lsc command displays the current source file name and line number."
 keywords: ["lsc (List Current Source) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -34,7 +34,7 @@ lsc
 
  
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ls, lsa (List Source Lines)**](ls--lsa--list-source-lines-.md)
@@ -44,6 +44,7 @@ lsc
  
 
  
+
 
 
 

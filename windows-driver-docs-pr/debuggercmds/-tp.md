@@ -1,6 +1,6 @@
 ---
-title: tp (WinDbg)
-description: The tp extension displays thread pool information.
+title: "tp (WinDbg)"
+description: "The tp extension displays thread pool information."
 keywords: ["thread pool", "tp Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -131,6 +131,7 @@ For information about thread pooling, see the Microsoft Windows SDK documentatio
  
 
  
+
 
 
 

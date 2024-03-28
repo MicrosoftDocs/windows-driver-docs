@@ -1,6 +1,6 @@
 ---
-title: .time (Display System Time)
-description: The .time command displays information about the system time variables.
+title: ".time (Display System Time)"
+description: "The .time command displays information about the system time variables."
 keywords: ["Display System Time (.time) command", ".time (Display System Time) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -65,6 +65,7 @@ Process Uptime: 0 days 0:00:08.750
  
 
  
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: .readmem (Read Memory from File)
-description: The .readmem command reads raw binary data from the specified file and copies the data to the target computer's memory.
+title: ".readmem (Read Memory from File)"
+description: "The .readmem command reads raw binary data from the specified file and copies the data to the target computer's memory."
 keywords: [".readmem (Read Memory from File) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -49,6 +49,7 @@ The **.readmem** command is the opposite of the [**.writemem (Write Memory to Fi
  
 
  
+
 
 
 

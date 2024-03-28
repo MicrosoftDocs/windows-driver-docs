@@ -1,6 +1,6 @@
 ---
-title: .secure (Activate Secure Mode)
-description: The .secure command activates or displays the status of Secure Mode.
+title: ".secure (Activate Secure Mode)"
+description: "The .secure command activates or displays the status of Secure Mode."
 keywords: [".secure (Activate Secure Mode) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -65,6 +65,7 @@ The command **.secure** will show whether Secure Mode is currently active.
  
 
  
+
 
 
 

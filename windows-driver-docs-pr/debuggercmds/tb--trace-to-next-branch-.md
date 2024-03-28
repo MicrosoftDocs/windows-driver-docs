@@ -1,6 +1,6 @@
 ---
-title: tb (Trace to Next Branch)
-description: The tb command executes the program until a branch instruction is reached.
+title: "tb (Trace to Next Branch)"
+description: "The tb command executes the program until a branch instruction is reached."
 keywords: ["tb (Trace to Next Branch) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -83,6 +83,7 @@ Usually, branch tracing is enabled after the processor control block (PRCB) has 
  
 
  
+
 
 
 

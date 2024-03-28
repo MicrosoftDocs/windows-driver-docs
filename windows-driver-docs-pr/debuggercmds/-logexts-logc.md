@@ -1,6 +1,6 @@
 ---
-title: logexts.logc
-description: The logexts.logc extension displays all API categories, displays all APIs in a specific category, or enables and disables the logging of APIs in one or more categories.
+title: "logexts.logc"
+description: "The logexts.logc extension displays all API categories, displays all APIs in a specific category, or enables and disables the logging of APIs in one or more categories."
 keywords: ["logexts.logc Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -102,6 +102,7 @@ The following command will display all APIs belonging to category 3:
  
 
  
+
 
 
 

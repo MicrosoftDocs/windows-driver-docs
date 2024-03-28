@@ -1,6 +1,6 @@
 ---
-title: .catch (WinDbg)
-description: The .catch token is used to prevent a program from terminating if an error occurs.It does not behave like the catch keyword in C++.
+title: ".catch (WinDbg)"
+description: "The .catch token is used to prevent a program from terminating if an error occurs.It does not behave like the catch keyword in C++."
 keywords: [".catch Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -43,6 +43,7 @@ You can use [**.leave**](-leave.md) to exit from a **.catch** block.
  
 
  
+
 
 
 

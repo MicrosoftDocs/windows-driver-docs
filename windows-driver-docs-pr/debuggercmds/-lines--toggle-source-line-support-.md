@@ -1,6 +1,6 @@
 ---
-title: .lines (Toggle Source Line Support)
-description: The .lines command enables or disables support for source-line information.
+title: ".lines (Toggle Source Line Support)"
+description: "The .lines command enables or disables support for source-line information."
 keywords: [".lines (Toggle Source Line Support) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -58,6 +58,7 @@ By default, if you do not use the **.lines** command, WinDbg turns on source lin
  
 
  
+
 
 
 
