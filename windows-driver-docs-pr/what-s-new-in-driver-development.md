@@ -1,7 +1,7 @@
 ---
 title: What's New in Driver Development for Windows 11, Version 24H2
 description: This section describes new features for driver development in Windows 11, version 24H2.
-ms.date: 03/04/2024
+ms.date: 03/28/2024
 ---
 
 # <a name="top"></a>What's new in driver development for Windows 11, version 24H2
@@ -16,21 +16,27 @@ This section describes new features and updates for driver development in Window
 
 ## Display and graphics drivers
 
-* A [GPU native fence synchronization object] is added as an extension to the monitored fence object, supporting the following additional features:
+GPUs are increasingly used in artificial intelligence and machine learning scenarios due to their computational power, parallel processing capabilities, and efficient handling of large datasets. Several new features are added to Windows Display Driver Model (WDDM) version 3.2 as optimizations to GPU/NPU usage, especially in cloud-based scenarios.
+
+* [Dirty bit tracking](./display/dirty-bit-tracking.md) enhances the performance of VRAM data transfer between physical hosts during the live migration of virtual machines.
+
+* [Live migration of heterogeneous GPU-P compute devices](.display/live-migration-on-gpup-devices.md) has been added. Significant content can now be transferred while virtualized resources are still active, reducing the pause time needed to complete a migration.
+
+* A [GPU native fence synchronization object](.display/gpu-fence-synchronization-object.md) is added as an extension to the monitored fence object, supporting the following additional features:
 
   * GPU wait on monitored fence value, which allows for high performance engine-to-engine synchronization without requiring CPU round trips.
   * Conditional interrupt notification only for GPU fence signals that have CPU waiters, enabling substantial power savings.
   * Fence value storage in the GPU's local memory.
 
-* WDDM 3.2 supports the live migration of heterogenous compute devices virtualized through single root I/O virtualization partitioning. For more information, see [Live migration on GPU-P devices].
-
-* The method that a user-mode or kernel-mode graphics driver uses to determine whether a particular WDDM feature is enabled has been updated. For more information, see [Determining WDDM feature support].
+Additionally, the method that a user-mode or kernel-mode graphics driver uses to determine whether a particular WDDM feature is enabled has been updated. For more information, see [Querying WDDM feature support and enablement](./display/querying-wddm-feature-support-and-enablement.md).
 
 ## Dynamic lighting
 
 ## File system and filter drivers
 
-Starting in Windows 11, version 24H2, [bind links](/windows/win32/bindlink/) can be used to bind a file system namespace to a local "virtual path" through the Bind Filter (*bindflt.sys*). Minifilters can choose to veto such bind links on the system's boot partition. For more information, see [Vetoing a bind link].
+* Starting in Windows 11, version 24H2, [bind links](/windows/win32/bindlink/) can be used to bind a file system namespace to a local "virtual path" through the Bind Filter (*bindflt.sys*). Minifilters can choose to veto such bind links on the system's boot partition. For more information, see [Vetoing a bind link](./ifs/vetoing-a-bind-link.md).
+
+* *FltMgr* now provides [Query on Create support for USN and file security information](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltrequestsecurityinfooncreatecompletion).
 
 ## Human presence sensors
 

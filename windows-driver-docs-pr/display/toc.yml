@@ -37,8 +37,12 @@
       href: what-s-new-for-windows-7-display-drivers--wddm-1-1-.md
   - name: "WDDM 3.2 features"
     items:
-    - name: "Querying feature support and enablement"
+    - name: "Querying WDDM feature support and enablement"
       href: querying-wddm-feature-support-and-enablement.md
+    - name: "Dirty bit tracking"
+      href: dirty-bit-tracking.md
+    - name: "Live migration on GPU-P devices"
+      href: live-migration-on-gpup-devices.md
     - name: "Native GPU fence objects"
       href: native-gpu-fence-objects.md
   - name: "WDDM 3.1 features"
