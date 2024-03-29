@@ -25,7 +25,7 @@ When provisioning systems for driver deployment, the host and the target machine
 
 1. If Secure Boot is enabled on the target computer, disable it. For information about Unified Extensible Firmware Interface (UEFI) and Secure Boot, see [UEFI Firmware](/previous-versions/windows/it-pro/windows-8.1-and-8/hh824898(v=win.10)).
 
-1. If the target computer is a VM, it should be started in non-enhanced mode, for disabling VM enhanced mode configuration, see [share devices with you virtual machine](/virtualization/hyper-v-on-windows/user-guide/enhanced-session-mode)
+1. If the target computer is a VM, it should be started in non-enhanced mode, for disabling VM enhanced mode configuration, see [share devices with your virtual machine](/virtualization/hyper-v-on-windows/user-guide/enhanced-session-mode)
 
 1. If you will be deploying a test driver on the target machine, enable test signing from an elevated command with  **bcdedit /set testsigning on**
 
