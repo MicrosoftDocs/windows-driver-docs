@@ -2801,6 +2801,8 @@
         href: infverif.md
       - name: "Running InfVerif from the command line"
         href: running-infverif-from-the-command-line.md
+      - name: "InfVerif /h"
+        href: infverif_h.md
       - name: "INF Validation Errors and Warnings"
 # Auto-expanded node
         items: 
