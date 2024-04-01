@@ -56,7 +56,7 @@ infverif.exe /h /rulever vnext <INF file>
 ```
 
 ## Requirements
-The InfVerif /h rulesets are aligned with the requirements of the WHCP program. The requirements are defined as the full [driver package isolation](driver-isolation.md) requirements, with some set of exceptions applied to the requirements. Some exceptions will be removed each release until InfVerif /h enforces all driver package isolation requirements.
+The InfVerif /h rulesets are aligned with the requirements of the WHCP program. The requirements are defined as the full [driver package isolation](../develop/driver-isolation.md) requirements, with some set of exceptions applied to the requirements. Some exceptions will be removed each release until InfVerif /h enforces all driver package isolation requirements.
 
 > [!NOTE]
 Any exceptions listed below should not be used, as the usage of them will no longer be allowed in an upcoming release.

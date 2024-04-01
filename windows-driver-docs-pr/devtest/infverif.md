@@ -56,5 +56,5 @@ InfVerif reports errors and warnings based on the mode and rules supplied by the
 
 [Using a Universal INF File](../install/using-a-universal-inf-file.md)
 
-[Driver Package Isolation](driver-isolation.md) 
+[Driver Package Isolation](../develop/driver-isolation.md) 
 
