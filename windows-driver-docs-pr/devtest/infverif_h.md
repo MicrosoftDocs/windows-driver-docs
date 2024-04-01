@@ -106,10 +106,7 @@ Any exceptions listed below should not be used, as the usage of them will no lon
 <br/>
 
 **File Paths**
-
-<br/>
-
-DIRID 13 must be specified in the INF as the destination location for all entries in the [[DestinationDirs] section](../install/inf-destinationdirs-section.md). The following values are exceptions to this requirement:
+<br/>DIRID 13 must be specified in the INF as the destination location for all entries in the [[DestinationDirs] section](../install/inf-destinationdirs-section.md). The following values are exceptions to this requirement:
 
 |DIRID Value|
 |-----------|
