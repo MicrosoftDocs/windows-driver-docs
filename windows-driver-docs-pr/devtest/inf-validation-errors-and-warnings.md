@@ -38,7 +38,7 @@ Warnings are typically related to:
 
 ## Error Codes
 
-The new InfVerif.exe command (as of Windows 10, version 24H2) 'infverif.exe /code' has the same information as the below table.
+The new InfVerif.exe command (starting in Windows Insider Preview build 26080) 'infverif.exe /code' has the same information as the below table.
 
 | Error Code and Description | Error Levels &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --- | :--- |

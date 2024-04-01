@@ -100,7 +100,7 @@ infverif.exe /w test*.inf
 
 *New for Windows 10, version 1809:*  If you are developing a *Windows Driver*, use `infverif /w` (ideally with `/v`) to determine compatibility with the **declarative (D)** principle of [DCH Design Principles](../develop/dch-principles-best-practices.md).  The `/w` flag also checks if the INF complies with the [driver package isolation](../develop/driver-isolation.md) requirement of [Getting Started with Windows Drivers](../develop/getting-started-with-windows-drivers.md).
 
-*New for Windows 11, version 24H2:* The new '/code' argument was introduced to provide expanded details about an error code. The new mode 'infverif /h' is introduced to determine whether the INF file meets the requirements for Hardware Dev Center to WHQL sign a driver package. For additional details about 'infverif /h', see [InfVerif /h](infverif_h.md).
+*New starting in Windows Insider Preview build 26080:* The new '/code' argument was introduced to provide expanded details about an error code. The new mode 'infverif /h' is introduced to determine whether the INF file meets the requirements for Hardware Dev Center to WHQL sign a driver package. For additional details about 'infverif /h', see [InfVerif /h](infverif_h.md).
 
 ## InfVerif and MSBuild tasks
 
