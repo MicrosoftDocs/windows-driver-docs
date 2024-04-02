@@ -5,8 +5,9 @@ ms.date: 03/27/2024
 ---
 
 # InfVerif /h
+
 > [!NOTE]
-InfVerif /h was introduced in Windows Insider Preview build 26080.
+> InfVerif /h was introduced in Windows Insider Preview build 26080.
 
 InfVerif /h is new mode of [InfVerif](infverif.md) that validates using a set of INF requirements that change with each release to align with the requirements for a WHQL signature from Hardware Dev Center. Over time, the requirements will become stricter and eventually align with [driver package isolation](../develop/driver-isolation.md) requirements.
 
@@ -59,7 +60,7 @@ infverif.exe /h /rulever vnext <INF file>
 The InfVerif /h rulesets are aligned with the requirements of the WHCP program. The requirements are defined as the full [driver package isolation](../develop/driver-isolation.md) requirements, with some set of exceptions applied to the requirements. Some exceptions will be removed each release until InfVerif /h enforces all driver package isolation requirements.
 
 > [!NOTE]
-Any exceptions listed below should not be used, as the usage of them will no longer be allowed in an upcoming release.
+> Any exceptions listed below should not be used, as the usage of them will no longer be allowed in an upcoming release.
 
 ### Current Requirements as of April 2024
 
@@ -106,10 +107,7 @@ Any exceptions listed below should not be used, as the usage of them will no lon
 <br/>
 
 **File Paths**
-
-<br/>
-
-DIRID 13 must be specified in the INF as the destination location for all entries in the [[DestinationDirs] section](../install/inf-destinationdirs-section.md). The following values are exceptions to this requirement:
+<br/>DIRID 13 must be specified in the INF as the destination location for all entries in the [[DestinationDirs] section](../install/inf-destinationdirs-section.md). The following values are exceptions to this requirement:
 
 |DIRID Value|
 |-----------|
