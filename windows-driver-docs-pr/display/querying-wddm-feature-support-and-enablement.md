@@ -170,7 +170,7 @@ If **MaxVersion** is specified, **MinVersion** must also be specified.
 | ---- | ---- | ----- | ----------- |
 | AllowExperimental | DWORD | 0 (experimental support isn't allowed) or 1 (supported). Default is branch-defined. | Forces the OS to allow experimental versions of this feature to be loaded, even if the build doesn't allow it by default. |
 
-The OS typically defines experimental support. By default, experimental support is defined on a feature-by-feature basis, with a global override available on development builds (for example, GRFX_DEV builds always allow experimental support for all features, whereas prerelease builds might only allow support for specific features).
+The OS typically defines experimental support. By default, experimental support is defined on a feature-by-feature basis, with a global override available on development builds (for example, internal developer builds always allow experimental support for all features, whereas prerelease builds might only allow support for specific features).
 
 This value allows the OS definition to be overridden for a specific feature ID. It can even be used on release builds to bring up experimental driver support on an OS that supports the feature, but keep the feature disabled in a retail environment.
 
