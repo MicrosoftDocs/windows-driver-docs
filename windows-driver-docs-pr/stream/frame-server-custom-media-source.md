@@ -151,7 +151,7 @@ SimpleMediaSource.dll = 1,,
 ;---------------- copy files
 [SimpleMediaSourceWin11.NT]
 Include=wudfrd.inf
-Needs=WUDFRR.NT
+Needs=WUDFRD.NT
 CopyFiles=UMDriverCopy, CustomCaptureSourceCopy
 AddReg = CustomCaptureSource.ComRegistration
 
@@ -182,7 +182,7 @@ SimpleMediaSource.dll,,,0x00004000 ; COPYFLG_IN_USE_RENAME
 ;-------------- Service installation
 [SimpleMediaSourceWin11.NT.Services]
 Include=wudfrd.inf
-Needs=WUDFRR.NT.Services
+Needs=WUDFRD.NT.Services
 
 ;-------------- WDF specific section -------------
 [SimpleMediaSourceWin11.NT.Wdf]
