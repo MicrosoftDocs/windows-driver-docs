@@ -50,6 +50,9 @@ Drivers for serial ports register instances of this device interface class to no
 
 The system-supplied function driver for serial ports registers an instance of this device interface class for a [serial port](../serports/using-serial-sys-and-serenum-sys.md).
 
+Using the device interface (GUID_DEVINTERFACE_COMPORT) is the recommended way to discover and access a COM port. Using legacy COM port names is prone to name collisions and doesn't provide state change notifications to a client. 
+Refer to [the code here](https://learn.microsoft.com/en-us/windows-hardware/drivers/serports/device-interface-publication-sercx#accessing-the-serial-port-device-interface) that illustrates how to access a device using this device interface.
+
 The following samples (on GitHub) register an instance of this class for a serial port:
 
 -   [The Serial sample](https://go.microsoft.com/fwlink/p/?LinkId=617962)
