@@ -1,7 +1,7 @@
 ---
 title: What's New in Driver Development for Windows 11, Version 24H2
 description: This section describes new features for driver development in Windows 11, version 24H2.
-ms.date: 03/28/2024
+ms.date: 04/03/2024
 ---
 
 # <a name="top"></a>What's new in driver development for Windows 11, version 24H2
@@ -62,15 +62,19 @@ UDP Receive Segment Coalescing Offload (URO) is a new hardware offload feature t
 
 Four new *wdm.h* power management DDIs for Windows 11, version 24H2:
 
-- [PO_EFFECTIVE_POWER_MODE_CALLBACK](/windows-hardware/drivers/ddi/wdm/nc-wdm-po_effective_power_mode_callback) callback function - Invoked with the current value of the power setting immediately after registration.
+- **[PO_EFFECTIVE_POWER_MODE_CALLBACK](/windows-hardware/drivers/ddi/wdm/nc-wdm-po_effective_power_mode_callback)** callback function - Invoked with the current value of the power setting immediately after registration.
 
-- [**PO_EFFECTIVE_POWER_MODE**](/windows-hardware/drivers/ddi/wdm/ne-wdm-po_effective_power_mode) enumeration - Enumerates the effective power modes.
+- **[PO_EFFECTIVE_POWER_MODE](/windows-hardware/drivers/ddi/wdm/ne-wdm-po_effective_power_mode)** enumeration - Enumerates the effective power modes.
 
-- [PoRegisterForEffectivePowerModeNotifications](/windows-hardware/drivers/ddi/wdm/nf-wdm-poregisterforeffectivepowermodenotifications) function - Registers a callback to receive effective power mode change notifications.
+- **[PoRegisterForEffectivePowerModeNotifications](/windows-hardware/drivers/ddi/wdm/nf-wdm-poregisterforeffectivepowermodenotifications)** function - Registers a callback to receive effective power mode change notifications.
 
-- [PoUnregisterFromEffectivePowerModeNotifications](/windows-hardware/drivers/ddi/wdm/nf-wdm-pounregisterfromeffectivepowermodenotifications) function - Unregisters from effective power mode change notifications.
+- **[PoUnregisterFromEffectivePowerModeNotifications](/windows-hardware/drivers/ddi/wdm/nf-wdm-pounregisterfromeffectivepowermodenotifications)** function - Unregisters from effective power mode change notifications.
 
 ## Storage drivers
+
+A storport miniport driver can now read configuration data from more locations within the registry. For more information, see **[StorPortReadRegistryKey](/windows-hardware/drivers/ddi/storport/nf-storport-storportreadregistrykey)** and **[StorPortReadDriverRegistry](/windows-hardware/drivers/ddi/storport/nf-storport-storportreaddriverregistry)**.
+
+Stornvme supports more vendor-specific NVMe features and log pages. For more information, see the *[StorageAdapterProtocolSpecificPropertyEx](/windows-hardware/drivers/ddi/ntddstor/ne-ntddstor-storage_property_id)*, *[StorageDeviceProtocolSpecificPropertyEx](/windows-hardware/drivers/ddi/ntddstor/ne-ntddstor-storage_property_id)*, *[NVMeDataTypeLogPageEx](/windows-hardware/drivers/ddi/ntddstor/ne-ntddstor-_storage_protocol_nvme_data_type)*, and *[NVMeDataTypeFeatureEx](/windows-hardware/drivers/ddi/ntddstor/ne-ntddstor-_storage_protocol_nvme_data_type)* enum values. The [ntddstor.h](/windows-hardware/drivers/ddi/ntddstor/) header file contains usage guidance for these new property identifiers and data types as well as their associated input and output structures.
 
 ## USB
 
