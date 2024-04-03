@@ -28,7 +28,7 @@ bp module!myFunction ".echo myFunction executed; gc"
 
 If a normal "g" command were used instead, the program would continue execution when stepping over "myFunction", instead of simply printing the message and continuing the step operation.
 
-### Environment
+## Environment
 
 |  Item       | Description               |
 |-----------|------------------------|
@@ -36,7 +36,7 @@ If a normal "g" command were used instead, the program would continue execution 
 | Targets   | live debugging only    |
 | Platforms | all                    |
 
-### Additional Information
+## Additional Information
 
 For an overview of related commands, see [Controlling the Target](../debugger/controlling-the-target.md).
 

@@ -34,7 +34,7 @@ Specifies the string to match in the target's output. *String* can include space
 
 You can enclose *String* in quotation marks. However, if *String* includes a semicolon, leading spaces, or trailing spaces, you must use quotation marks. Alphanumeric characters in *String* are converted to uppercase letters, but the actual pattern matching is case insensitive.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -44,7 +44,7 @@ You can enclose *String* in quotation marks. However, if *String* includes a sem
 
  
 
-### Additional Information
+## Additional Information
 
 For more information about [**OutputDebugString**](/windows/win32/api/debugapi/nf-debugapi-outputdebugstringw) and other user-mode routines, see the Microsoft Windows SDK documentation. For more information about **DbgPrint**, **DbgPrintEx**, and other kernel-mode routines, see the Windows Driver Kit (WDK).
 

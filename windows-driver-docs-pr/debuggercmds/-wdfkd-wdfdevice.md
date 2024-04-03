@@ -1,7 +1,7 @@
 ---
-title: "wdfkd.wdfdevice"
-description: "The wdfkd.wdfdevice extension displays information that is associated with a WDFDEVICE-typed object handle."
-keywords: ["wdfkd.wdfdevice Windows Debugging"]
+title: "!wdfkd.wdfdevice"
+description: "The !wdfkd.wdfdevice extension displays information that is associated with a WDFDEVICE-typed object handle."
+keywords: ["!wdfkd.wdfdevice Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !wdfkd.wdfdevice
 
-
 The **!wdfkd.wdfdevice** extension displays information that is associated with a WDFDEVICE-typed object handle.
 
 ```dbgcmd
@@ -22,7 +21,6 @@ The **!wdfkd.wdfdevice** extension displays information that is associated with 
 ```
 
 ## Parameters
-
 
 <span id="_______Handle______"></span><span id="_______handle______"></span><span id="_______HANDLE______"></span> *Handle*   
 A handle to a WDFDEVICE-typed object.
@@ -49,11 +47,11 @@ The display will include the device object's callback functions.
 
 Wdfkd.dll
 
-### <span id="Frameworks"></span><span id="frameworks"></span><span id="FRAMEWORKS"></span>Frameworks
+### Frameworks
 
 KMDF 1, UMDF 2
 
-### Additional Information
+## Additional Information
 
 For more information, see [Kernel-Mode Driver Framework Debugging](../debugger/kernel-mode-driver-framework-debugging.md).
 
@@ -140,13 +138,3 @@ WDFCHILDLIST Handles:
 SyncronizationScope is WdfSynchronizationScopeNone
 ExecutionLevel is WdfExecutionLevelDispatch
 ```
-
- 
-
- 
-
-
-
-
-
-

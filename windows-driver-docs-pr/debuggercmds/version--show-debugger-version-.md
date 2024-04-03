@@ -24,7 +24,7 @@ Do not confuse this command with the [**!version (Show DLL Version)**](-version.
 ## <span id="ddk_cmd_show_debugger_version_dbg"></span><span id="DDK_CMD_SHOW_DEBUGGER_VERSION_DBG"></span>
 
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -40,14 +40,5 @@ Do not confuse this command with the [**!version (Show DLL Version)**](-version.
 [**CTRL+W (Show Debugger Version)**](../debugger/ctrl-w--show-debugger-version-.md)
 
 [**vertarget (Show Target Computer Version)**](vertarget--show-target-computer-version-.md)
-
- 
-
- 
-
-
-
-
-
 
 

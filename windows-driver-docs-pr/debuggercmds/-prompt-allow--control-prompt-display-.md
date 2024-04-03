@@ -14,7 +14,6 @@ api_type:
 
 # .prompt\_allow (Control Prompt Display)
 
-
 The **.prompt\_allow** command controls what information is displayed during stepping and tracing and whenever the target's execution stops.
 
 ```dbgcmd
@@ -23,7 +22,6 @@ The **.prompt\_allow** command controls what information is displayed during ste
 ```
 
 ## Parameters
-
 
 <span id="______________"></span> **+**   
 Displays the specified item at the stepping, tracing, and execution prompt. You must add a space before the plus sign (+), but you cannot add a space after it.
@@ -51,7 +49,7 @@ The source line that corresponds to the current instruction. You can disable sou
 <span id="sym"></span><span id="SYM"></span>**sym**  
 The symbol for the current instruction. This symbol includes the current module, function name, and offset.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -59,9 +57,7 @@ The symbol for the current instruction. This symbol includes the current module,
 |Targets |Live, crash dump      |
 |Platforms|All                  |
 
- 
-
-### Additional Information
+## Additional Information
 
 For more information about commands that affect execution, see [Controlling the Target](../debugger/controlling-the-target.md).
 
@@ -86,13 +82,4 @@ Do not allow the following information to be displayed at the prompt:
    dis - Disassembly of current instruction
    reg - Register state
 ```
-
- 
-
- 
-
-
-
-
-
 

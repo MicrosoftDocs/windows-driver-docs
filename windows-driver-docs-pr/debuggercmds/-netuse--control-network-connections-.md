@@ -39,7 +39,7 @@ Specifies the user name of an account that is authorized to establish the connec
 <span id="_______Password______"></span><span id="_______password______"></span><span id="_______PASSWORD______"></span> *Password*   
 Specifies the password that is associated with the *User* account. You must enclose *Password* in quotation marks. If you omit this parameter, you must include an empty pair of quotation marks as the parameter.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -60,13 +60,4 @@ The following example shows this command.
 ```dbgcmd
 0:000> .netuse "m:" "\\myserver\myshare" "" "" 
 ```
-
- 
-
- 
-
-
-
-
-
 

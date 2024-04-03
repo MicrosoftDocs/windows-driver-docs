@@ -1,7 +1,7 @@
 ---
-title: "dreg (WinDbg)"
-description: "The dreg extension displays registry information."
-keywords: ["dreg Windows Debugging"]
+title: "!dreg (WinDbg)"
+description: "The !dreg extension displays registry information."
+keywords: ["!dreg Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -53,26 +53,14 @@ Specifies the name of the registry value to be displayed. If an asterisk (\*) is
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Ntsdexts.dll</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Ntsdexts.dll</p></td>
-</tr>
-</tbody>
-</table>
+
+Ntsdexts.dll
+
+
 
  
 
-### Additional Information
+## Additional Information
 
 For information about the registry, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
@@ -105,13 +93,4 @@ The following will display the value Start in the specified registry key:
 ```
 
 Typing **!dreg** without any arguments will display some brief Help text for this extension in the Debugger Command window.
-
- 
-
- 
-
-
-
-
-
 

@@ -1,7 +1,7 @@
 ---
-title: "teb (WinDbg)"
-description: "The teb extension displays a formatted view of the information in the thread environment block (TEB)."
-keywords: ["teb Windows Debugging"]
+title: "!teb (WinDbg)"
+description: "The !teb extension displays a formatted view of the information in the thread environment block (TEB)."
+keywords: ["!teb Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,15 +14,13 @@ api_type:
 
 # !teb
 
-
 The **!teb** extension displays a formatted view of the information in the thread environment block (TEB).
 
 ```dbgcmd
 !teb [TEB-Address] 
 ```
 
-## <span id="ddk__teb_dbg"></span><span id="DDK__TEB_DBG"></span>Parameters
-
+## \Parameters
 
 <span id="_______TEB-Address______"></span><span id="_______teb-address______"></span><span id="_______TEB-ADDRESS______"></span> *TEB-Address*   
 The hexadecimal address of the thread whose TEB you want to examine. (This is not the address of the TEB as derived from the kernel thread block for the thread.) If *TEB-Address* is omitted in user mode, the TEB for the current thread is used. If it is omitted in kernel mode, the TEB corresponding to the current [register context](../debugger/changing-contexts.md#register-context) is displayed.
@@ -31,7 +29,7 @@ The hexadecimal address of the thread whose TEB you want to examine. (This is no
 
 Exts.dll
 
-### Additional Information
+## Additional Information
 
 For information about thread environment blocks, see *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
@@ -70,13 +68,3 @@ TEB at 7FFDD000
 ```
 
 The similar [**!peb**](-peb.md) extension displays the process environment block.
-
- 
-
- 
-
-
-
-
-
-

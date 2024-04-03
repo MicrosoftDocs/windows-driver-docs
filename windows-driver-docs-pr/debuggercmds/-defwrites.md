@@ -1,7 +1,7 @@
 ---
-title: "defwrites (WinDbg)"
-description: "The defwrites extension displays the values of the kernel variables used by the cache manager."
-keywords: ["cache manager", "defwrites Windows Debugging"]
+title: "!defwrites (WinDbg)"
+description: "The !defwrites extension displays the values of the kernel variables used by the cache manager."
+keywords: ["cache manager", "!defwrites Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -29,7 +29,7 @@ The **!defwrites** extension displays the values of the kernel variables used by
 Kdexts.dll
  
 
-### Additional Information
+## Additional Information
 
 For information about write throttling, see *Microsoft Windows Internals* by Mark Russinovich and David Solomon. 
 
@@ -56,13 +56,4 @@ Write throttles not engaged
 ```
 
 In this case, there are no dirty pages. If **CcTotalDirtyPages** reaches 1538 (the value of **CcDirtyPageThreshold**), writing will be delayed until the number of dirty pages is reduced.
-
- 
-
- 
-
-
-
-
-
 

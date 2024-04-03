@@ -1,7 +1,7 @@
 ---
-title: "wdfkd.wdfsearchpath"
-description: "The wdfkd.wdfsearchpath extension sets the search path to formatting files for Kernel-Mode Driver Framework (KMDF) error log records."
-keywords: ["wdfkd.wdfsearchpath Windows Debugging"]
+title: "!wdfkd.wdfsearchpath"
+description: "The !wdfkd.wdfsearchpath extension sets the search path to formatting files for Kernel-Mode Driver Framework (KMDF) error log records."
+keywords: ["!wdfkd.wdfsearchpath Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -16,7 +16,6 @@ api_type:
 
 # !wdfkd.wdfsearchpath
 
-
 The **!wdfkd.wdfsearchpath** extension sets the search path to formatting files for Kernel-Mode Driver Framework (KMDF) error log records.
 
 ```dbgcmd
@@ -25,22 +24,18 @@ The **!wdfkd.wdfsearchpath** extension sets the search path to formatting files 
 
 ## Parameters
 
-
 <span id="_______Path______"></span><span id="_______path______"></span><span id="_______PATH______"></span> *Path*   
 The path of a directory that contains KMDF formatting files.
 
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Wdfkd.dll
 
-## <span id="Frameworks"></span><span id="frameworks"></span><span id="FRAMEWORKS"></span>Frameworks
-
+## Frameworks
 
 KMDF 1, UMDF 2
 
-## <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
-
+## Additional Information
 
 For more information, see [Kernel-Mode Driver Framework Debugging](../debugger/kernel-mode-driver-framework-debugging.md).
 
@@ -53,28 +48,3 @@ kd> !wdfsearchpath C:\WinDDK\7600\tools\tracing\amd64
 ```
 
 The TRACE\_FORMAT\_SEARCH\_PATH environment variable also controls the search path, but the **!wdfkd.wdfsearchpath** extension takes precedence over the search path that TRACE\_FORMAT\_SEARCH\_PATH specifies.
-
-## Requirements
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>DLL</p></td>
-<td align="left">Wdfkd.dll</td>
-</tr>
-</tbody>
-</table>
-
- 
-
- 
-
-
-
-
-
-

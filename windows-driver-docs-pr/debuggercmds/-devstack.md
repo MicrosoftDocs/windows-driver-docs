@@ -1,7 +1,7 @@
 ---
-title: "devstack (WinDbg)"
-description: "The devstack extension displays a formatted view of the device stack associated with a device object."
-keywords: ["devstack Windows Debugging"]
+title: "!devstack (WinDbg)"
+description: "The !devstack extension displays a formatted view of the device stack associated with a device object."
+keywords: ["!devstack Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -33,7 +33,7 @@ Kdexts.dll
 
  
 
-### Additional Information
+## Additional Information
 
 For information about device stacks, see the Windows Driver Kit (WDK) documentation.
 
@@ -52,13 +52,4 @@ kd> !devstack e000000085007b50
   DeviceInst is "SW\{b7eafdc0-a680-11d0-96d8-00aa0051e51d}\{9B365890-165F-11D0-A195-0020AFD156E4}"
  ServiceName is "kmixer"
 ```
-
- 
-
- 
-
-
-
-
-
 

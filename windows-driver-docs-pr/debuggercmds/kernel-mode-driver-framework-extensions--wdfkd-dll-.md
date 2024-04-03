@@ -18,12 +18,3 @@ These extensions can be used on Microsoft Windows XP and later operating systems
 
 For more information about how to use these extensions, see [Kernel-Mode Driver Framework Debugging](../debugger/kernel-mode-driver-framework-debugging.md).
 
- 
-
- 
-
-
-
-
-
-

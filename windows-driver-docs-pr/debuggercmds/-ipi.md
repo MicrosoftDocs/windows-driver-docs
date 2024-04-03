@@ -1,7 +1,7 @@
 ---
-title: "ipi (WinDbg)"
-description: "The ipi extension displays the interprocessor interrupt (IPI) state for a specified processor."
-keywords: ["IPI (interprocessor interrupt)", "ipi Windows Debugging"]
+title: "!ipi (WinDbg)"
+description: "The !ipi extension displays the interprocessor interrupt (IPI) state for a specified processor."
+keywords: ["IPI (interprocessor interrupt)", "!ipi Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !ipi
 
-
 The **!ipi** extension displays the interprocessor interrupt (IPI) state for a specified processor.
 
 ```dbgcmd
@@ -23,19 +22,16 @@ The **!ipi** extension displays the interprocessor interrupt (IPI) state for a s
 
 ## Parameters
 
-
 <span id="_______Processor______"></span><span id="_______processor______"></span><span id="_______PROCESSOR______"></span> *Processor*   
 Specifies a processor. If *Processor* is omitted, the IPI state for every processor is displayed.
 
 ## DLL
 
-Windows XP and later - Kdexts.dll
-
- 
+Kdexts.dll
 
 This extension command can only be used with an x86-based target computer.
 
-### Additional Information
+## Additional Information
 
 For information about IPIs, see *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
@@ -69,13 +65,4 @@ IPI State for Processor 1
   Target Set:      0
   Packet Barrier:  0
 ```
-
- 
-
- 
-
-
-
-
-
 

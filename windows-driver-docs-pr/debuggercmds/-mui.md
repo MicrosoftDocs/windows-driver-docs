@@ -1,7 +1,7 @@
 ---
-title: "mui (WinDbg)"
-description: "The mui extension displays the Multilingual User Interface (MUI) cache information. The implementation of MUI was improved in Windows Vista. "
-keywords: ["multi-language user interface", "mui Windows Debugging"]
+title: "!mui (WinDbg)"
+description: "The !mui extension displays the Multilingual User Interface (MUI) cache information. The implementation of MUI was improved in Windows Vista. "
+keywords: ["multi-language user interface", "!mui Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -84,16 +84,7 @@ Displays some brief Help text for this extension in the Debugger Command window.
 
  
 
-### Additional Information
+## Additional Information
 
 For information about MUI and resource configuration data format, see the Microsoft Windows SDK documentation.
-
- 
-
- 
-
-
-
-
-
 

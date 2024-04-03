@@ -1,7 +1,7 @@
 ---
-title: "db, dc, dd, dp, dq, du, dw"
-description: "The db, dc, dd, dp, dq, du, and dw extensions display data at the specified physical address on the target computer."
-keywords: ["db extension", "dc extension", "dd extension", "dp extension", "dq extension", "du extension", "dw extension", "memory, Display Physical ( d ) extensions", "db, dc, dd, dp, dq, du, dw Windows Debugging"]
+title: "!db, !dc, !dd, !dp, !dq, !du, !dw"
+description: "The !db, !dc, !dd, !dp, !dq, !du, and !dw extensions display data at the specified physical address on the target computer."
+keywords: ["!db extension", "!dc extension", "!dd extension", "!dp extension", "!dq extension", "!du extension", "!dw extension", "memory, Display Physical ( d ) extensions", "!db, !dc, !dd, !dp, !dq, !du, !dw Windows Debugging"]
 ms.date: 01/18/2017
 topic_type:
 - apiref
@@ -13,7 +13,6 @@ api_type:
 ---
 
 # !db, !dc, !dd, !dp, !dq, !du, !dw
-
 
 The **!db**, **!dc**, **!dd**, **!dp**, **!dq**, **!du**, and **!dw** extensions display data at the specified physical address on the target computer.
 
@@ -53,7 +52,7 @@ Specifies the first physical address to be displayed, in hexadecimal format. If 
 <span id="_______L_______Size______"></span><span id="_______l_______size______"></span><span id="_______L_______SIZE______"></span> **L** **** *Size*   
 Specifies the number of chunks of memory to display. The size of a chunk is determined by the precise extension used.
 
-### <span id="DLL"></span><span id="dll"></span>Environment
+## Environment
 
 <table>
 <colgroup>
@@ -68,24 +67,11 @@ Specifies the number of chunks of memory to display. The size of a chunk is dete
 </tbody>
 </table>
 
-
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Kext.dll</p></td>
-</tr>
-</tbody>
-</table>
+Kext.dll
 
- 
-
-### Additional Information
+## Additional Information
 
 To write to physical memory, use the [**!e\\***](-eb---ed.md) extensions. For an overview of memory manipulation and a description of other memory-related commands, see [Reading and Writing Memory](../debugger/reading-and-writing-memory.md).
 
@@ -125,13 +111,4 @@ kd> !dc [c] e9000
 #   e9000 000ea002 000ea002 000ea002 000ea002 ................
 #   e9010 000ea002 000ea002 000ea002 000ea002 ................
 ```
-
- 
-
- 
-
-
-
-
-
 

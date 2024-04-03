@@ -1,7 +1,7 @@
 ---
-title: "help (WinDbg)"
-description: "The help extension displays help text that describes the extension commands exported from the extension DLL."
-keywords: ["help Windows Debugging"]
+title: "!help (WinDbg)"
+description: "The !help extension displays help text that describes the extension commands exported from the extension DLL."
+keywords: ["!help Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -13,7 +13,6 @@ api_type:
 ---
 
 # !help
-
 
 The **!help** extension displays help text that describes the extension commands exported from the extension DLL.
 
@@ -44,13 +43,4 @@ This extension is supported by most extension DLLs.
 ## Remarks
 
 Some individual commands will also display a help text if you use the **/?** or **-?** parameter with the command name.
-
- 
-
- 
-
-
-
-
-
 

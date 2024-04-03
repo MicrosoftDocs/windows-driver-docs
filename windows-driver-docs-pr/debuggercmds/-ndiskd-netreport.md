@@ -1,7 +1,7 @@
 ---
-title: "ndiskd.netreport"
-description: "The ndiskd.netreport extension generates a visual report of the entire network stack."
-keywords: ["ndiskd.netreport Windows Debugging"]
+title: "!ndiskd.netreport"
+description: "The !ndiskd.netreport extension generates a visual report of the entire network stack."
+keywords: ["!ndiskd.netreport Windows Debugging"]
 ms.date: 06/23/2020
 topic_type:
 - apiref

@@ -33,7 +33,7 @@ Specifies that the symbol suffix should be "W", matching many Unicode symbols.
 <span id="_______n______"></span><span id="_______N______"></span> **n**   
 Specifies that the debugger should not use a symbol suffix. (This parameter is the default behavior.)
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -43,20 +43,11 @@ Specifies that the debugger should not use a symbol suffix. (This parameter is t
 
  
 
-### Additional Information
+## Additional Information
 
 For more information about symbol matching, see [Symbol Syntax and Symbol Matching](../debugger/symbol-syntax-and-symbol-matching.md).
 
 ## Remarks
 
 If you specify the **ss** command together with no parameters, the current state of the suffix value is displayed.
-
- 
-
- 
-
-
-
-
-
 

@@ -1,7 +1,7 @@
 ---
-title: "usbkd._ehcidd"
-description: "The usbkd._ehcidd command displays information from a usbehci _DEVICE_DATA structure."
-keywords: ["usbkd._ehcidd Windows Debugging"]
+title: "!usbkd._ehcidd"
+description: "The !usbkd._ehcidd command displays information from a usbehci _DEVICE_DATA structure."
+keywords: ["!usbkd._ehcidd Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,24 +14,20 @@ api_type:
 
 # !usbkd.\_ehcidd
 
-
 The **!usbkd.\_ehcidd** command displays information from a **usbehci!\_DEVICE\_DATA** structure.
 
 ```dbgcmd
 !usbkd._ehcidd StructAddr
 ```
 
-## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______StructAddr______"></span><span id="_______structaddr______"></span><span id="_______STRUCTADDR______"></span> *StructAddr*   
 Address of a **usbehci!\_DEVICE\_DATA** structure. To find addresses of **usbehci!\_DEVICE\_DATA** structures, use [**!usbhcdext**](-usbkd-usbhcdext.md) or [**!usbhcdlist**](-usbkd-usbhcdlist.md).
 
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Usbkd.dll
-
 ## Examples
 
 Here is one way to get the address of a **usbehci!\_DEVICE\_DATA** structure. First enter [**!usbkd.usbhcdlist**](-usbkd-usbhcdlist.md).
@@ -74,11 +70,6 @@ AsyncQueueHead ffffd00021cf5000 !_ehciqh ffffd00021cf5000
 
 ## See also
 
-
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
-
- 
-
-

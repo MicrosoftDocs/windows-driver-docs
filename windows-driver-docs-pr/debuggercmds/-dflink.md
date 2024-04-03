@@ -1,7 +1,7 @@
 ---
-title: "dflink (WinDbg)"
-description: "The dflink extension displays a linked list in the forward direction."
-keywords: ["dflink Windows Debugging"]
+title: "!dflink (WinDbg)"
+description: "The !dflink extension displays a linked list in the forward direction."
+keywords: ["!dflink Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -13,7 +13,6 @@ api_type:
 ---
 
 # !dflink
-
 
 The **!dflink** extension displays a linked list in the forward direction.
 
@@ -44,13 +43,4 @@ Kdexts.dll
 The **!dflink** extension traverses the **Flink** fields of the LIST\_ENTRY structure and displays up to four ULONGs at each address. To go in the other direction, use [**!dblink**](-dblink.md).
 
 The [**dl (Display Linked List)**](dl--display-linked-list-.md) command is more versatile than [**!dblink**](-dblink.md) and **!dflink**.
-
- 
-
- 
-
-
-
-
-
 

@@ -36,7 +36,7 @@ Reserves the memory in the virtual address space but does not actually allocate 
 <span id="_______Size______"></span><span id="_______size______"></span><span id="_______SIZE______"></span> *Size*   
 Specifies the amount of memory to be allocated, in bytes. The amount of memory available to the program will equal *Size*. The amount of memory actually used may be slightly larger, since it is always a whole number of pages.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -50,13 +50,4 @@ Specifies the amount of memory to be allocated, in bytes. The amount of memory a
 The **.dvalloc** command calls **VirtualAllocEx** to allocate new memory for the target process. The allocated memory permits reading, writing, and execution.
 
 To free this memory, use [**.dvfree (Free Memory)**](-dvfree--free-memory-.md).
-
- 
-
- 
-
-
-
-
-
 

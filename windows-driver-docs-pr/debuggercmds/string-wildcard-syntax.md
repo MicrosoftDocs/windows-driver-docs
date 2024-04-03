@@ -29,12 +29,3 @@ These kinds of parameters support the following syntax features:
 
 Parameters that specify symbols also support some additional features. In addition to the standard string wildcard characters, you can use an underscore (\_) before a text expression that you use to specify a symbol. When matching this expression to a symbol, the debugger treats the underscore as any quantity of underscores, even zero. This feature applies only when you are matching symbols. It does not apply to string wildcard expressions in general. For more information about symbol syntax, see [Symbol Syntax and Symbol Matching](../debugger/symbol-syntax-and-symbol-matching.md).
 
- 
-
- 
-
-
-
-
-
-

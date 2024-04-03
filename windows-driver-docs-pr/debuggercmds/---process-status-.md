@@ -28,7 +28,7 @@ Do not confuse this command with the [**|| (System Status)**](----system-status-
 
 Specifies the process to display. If you omit this parameter, all processes that you are debugging are displayed. For more information about the syntax, see [Process Syntax](process-syntax.md).
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -36,7 +36,7 @@ Specifies the process to display. If you omit this parameter, all processes that
 |Targets|Live, crash dump|
 |Platforms|All|
 
-### Additional Information
+## Additional Information
 
 For more information and other methods of displaying or controlling processes and threads, see [Controlling Processes and Threads](../debugger/controlling-processes-and-threads.md).
 

@@ -1,7 +1,7 @@
 ---
-title: "avrf (WinDbg)"
-description: "The avrf extension controls the settings of Application Verifier and displays a variety of output produced by Application Verifier."
-keywords: ["avrf Windows Debugging"]
+title: "!avrf (WinDbg)"
+description: "The !avrf extension controls the settings of Application Verifier and displays a variety of output produced by Application Verifier."
+keywords: ["!avrf Windows Debugging"]
 ms.date: 06/24/2022
 topic_type:
 - apiref
@@ -117,7 +117,7 @@ Specifies an exclusion range. *Start* is the beginning address of the exclusion 
 
 exts.dll
 
-### Additional Information
+## Additional Information
 
 For information about how to download and install Application Verifier and its documentation, see [Application Verifier](../devtest/application-verifier.md).
 

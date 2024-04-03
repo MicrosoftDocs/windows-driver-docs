@@ -1,7 +1,7 @@
 ---
-title: "usbkd.usbhubinfo"
-description: "The usbkd.hubinfo command displays information about a USB hub."
-keywords: ["usbkd.usbhubinfo Windows Debugging"]
+title: "!usbkd.usbhubinfo"
+description: "The !usbkd.hubinfo command displays information about a USB hub."
+keywords: ["!usbkd.usbhubinfo Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,21 +14,18 @@ api_type:
 
 # !usbkd.usbhubinfo
 
-
 The **!usbkd.hubinfo** command displays information about a USB hub.
 
 ```dbgcmd
 !usbkd.hubinfo FDO
 ```
 
-## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______FDO______"></span><span id="_______fdo______"></span> *FDO*   
 Address of the functional device object (FDO) for a USB hub.
 
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Usbkd.dll
 
@@ -88,11 +85,6 @@ Power caps (0 = not reported)
 
 ## See also
 
-
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
-
- 
-
-

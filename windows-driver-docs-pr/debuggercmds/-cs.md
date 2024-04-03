@@ -1,7 +1,7 @@
 ---
 title: "!cs (WinDbg)"
-description: "The cs extension displays one or more critical sections or the whole critical section tree."
-keywords: ["cs Windows Debugging"]
+description: "The !cs extension displays one or more critical sections or the whole critical section tree."
+keywords: ["!cs Windows Debugging"]
 ms.date: 11/15/2018
 topic_type:
 - apiref
@@ -45,7 +45,7 @@ Parameter | Description
 
 Exts.dll
 
-### Additional Information
+## Additional Information
 
 For other commands and extensions that can display critical section information, see [Displaying a Critical Section](../debugger/displaying-a-critical-section.md). For more information about critical sections, see the Microsoft Windows SDK documentation, the Windows Driver Kit (WDK) documentation, and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 

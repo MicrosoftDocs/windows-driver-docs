@@ -1,7 +1,7 @@
 ---
-title: "gpiokd.help"
-description: "The gpiokd.help command displays help for the GPIO debugger extension commands."
-keywords: ["gpiokd.help Windows Debugging"]
+title: "!gpiokd.help"
+description: "The !gpiokd.help extension displays help for the GPIO debugger extension commands."
+keywords: ["!gpiokd.help Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,26 +14,12 @@ api_type:
 
 # !gpiokd.help
 
+The **!gpiokd.help** extension displays help for the [GPIO debugger extension commands](gpio-extensions.md).
 
-The **!gpiokd.help** command displays help for the [GPIO debugger extension commands](gpio-extensions.md).
-
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Gpiokd.dll
 
 ## See also
 
-
 [GPIO Extensions](gpio-extensions.md)
-
- 
-
- 
-
-
-
-
-
-
-

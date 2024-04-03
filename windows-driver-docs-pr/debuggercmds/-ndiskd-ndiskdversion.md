@@ -1,7 +1,7 @@
 ---
-title: "ndiskd.ndiskdversion"
-description: "The ndiskd.ndiskdversion extension displays information about ndiskd itself."
-keywords: ["ndiskd.ndiskdversion Windows Debugging"]
+title: "!ndiskd.ndiskdversion"
+description: "The !ndiskd.ndiskdversion extension displays information about ndiskd itself."
+keywords: ["!ndiskd.ndiskdversion Windows Debugging"]
 ms.date: 06/11/2020
 topic_type:
 - apiref

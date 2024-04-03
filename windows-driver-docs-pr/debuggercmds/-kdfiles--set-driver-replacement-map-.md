@@ -48,7 +48,7 @@ Specifies the name of the file to create.
 <span id="_______-c______"></span><span id="_______-C______"></span> **-c**   
 Deletes the existing driver replacement map. (This option does not alter the map file itself. Instead, this option clears the debugger's current map settings.)
 
-### Environment
+## Environment
 
 <table>
 <colgroup>
@@ -71,7 +71,7 @@ Deletes the existing driver replacement map. (This option does not alter the map
 </tbody>
 </table>
 
-### Additional Information
+## Additional Information
 
 For more information about and examples of driver replacement and the replacement of other kernel-mode modules, a description of the format for driver replacement map files, and restrictions for using this feature, see [Mapping Driver Files](../debugger/mapping-driver-files.md).
 

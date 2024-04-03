@@ -43,7 +43,7 @@ Displays all saved memory ranges.
 <span id="_______-c_______Range______"></span><span id="_______-c_______range______"></span><span id="_______-C_______RANGE______"></span> **-c** *Range*   
 Compares the specified range to all saved memory ranges. For more information about the syntax, see [Address and Address Range Syntax](address-and-address-range-syntax.md).
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -53,7 +53,7 @@ Compares the specified range to all saved memory ranges. For more information ab
 
  
 
-### Additional Information
+## Additional Information
 
 For more information about how to manipulate memory and a description of other memory-related commands, see [Reading and Writing Memory](../debugger/reading-and-writing-memory.md).
 
@@ -62,13 +62,4 @@ For more information about how to manipulate memory and a description of other m
 The **.holdmem** command compares memory ranges byte-for-byte.
 
 If any of the specified memory locations do not exist in the virtual address space, the command returns an error.
-
- 
-
- 
-
-
-
-
-
 

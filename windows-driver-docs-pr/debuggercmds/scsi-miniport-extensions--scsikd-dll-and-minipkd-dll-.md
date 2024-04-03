@@ -14,12 +14,3 @@ You can use the Scsikd.dll extension commands with any version of Windows. Howev
 
 For more information, see [SCSI Miniport Debugging](../debugger/scsi-miniport-debugging.md).
 
- 
-
- 
-
-
-
-
-
-

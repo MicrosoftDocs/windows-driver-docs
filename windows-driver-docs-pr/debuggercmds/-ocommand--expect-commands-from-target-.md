@@ -32,7 +32,7 @@ Specifies the command prefix string. *String* can include spaces, but you cannot
 <span id="_______-d______"></span><span id="_______-D______"></span> **-d**   
 Deletes the command prefix string.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -41,7 +41,7 @@ Deletes the command prefix string.
 |Platforms | all  |
  
 
-### Additional Information
+## Additional Information
 
 For more information about [**OutputDebugString**](/windows/win32/api/debugapi/nf-debugapi-outputdebugstringw) and other user-mode functions that communicate with a debugger, see the Microsoft Windows SDK documentation.
 

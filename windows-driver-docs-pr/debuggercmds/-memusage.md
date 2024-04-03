@@ -1,7 +1,7 @@
 ---
-title: "memusage (WinDbg)"
-description: "The memusage extension displays summary statistics about physical memory use."
-keywords: ["memusage Windows Debugging"]
+title: "!memusage (WinDbg)"
+description: "The !memusage extension displays summary statistics about physical memory use."
+keywords: ["!memusage Windows Debugging"]
 ms.date: 12/11/2023
 topic_type:
 - apiref
@@ -38,7 +38,7 @@ Displays only detailed information about the modified no-write pages in the PFN 
 <span id="0x8"></span><span id="0X8"></span>0x8  
 Displays only general summary information about memory use.
 
-### Environment
+## Environment
 
 **Modes**: kernel mode only
 
@@ -46,7 +46,7 @@ Displays only general summary information about memory use.
 
 Kdexts.dll
 
-### Additional Information
+## Additional Information
 
 Physical memory statistics are collected from the Memory Manager's page frame number (PFN) database table.
 

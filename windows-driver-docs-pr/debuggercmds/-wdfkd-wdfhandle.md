@@ -1,7 +1,7 @@
 ---
-title: "wdfkd.wdfhandle"
-description: "The wdfkd.wdfhandle extension displays information about a specified framework object handle, such as the handle type, object context pointers, and the underlying framework object pointer."
-keywords: ["wdfkd.wdfhandle Windows Debugging"]
+title: "!wdfkd.wdfhandle"
+description: "The !wdfkd.wdfhandle extension displays information about a specified framework object handle, such as the handle type, object context pointers, and the underlying framework object pointer."
+keywords: ["!wdfkd.wdfhandle Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !wdfkd.wdfhandle
 
-
 The **!wdfkd.wdfhandle** extension displays information about a specified framework object handle, such as the handle type, object context pointers, and the underlying framework object pointer.
 
 ```dbgcmd
@@ -22,7 +21,6 @@ The **!wdfkd.wdfhandle** extension displays information about a specified framew
 ```
 
 ## Parameters
-
 
 <span id="_______Handle______"></span><span id="_______handle______"></span><span id="_______HANDLE______"></span> *Handle*   
 A handle to a framework object.
@@ -49,11 +47,11 @@ The display will left align internal type information. This flag is valid only w
 
 Wdfkd.dll
 
-### <span id="Frameworks"></span><span id="frameworks"></span><span id="FRAMEWORKS"></span>Frameworks
+### Frameworks
 
 KMDF 1, UMDF 2
 
-### Additional Information
+## Additional Information
 
 For more information, see [Kernel-Mode Driver Framework Debugging](../debugger/kernel-mode-driver-framework-debugging.md).
 
@@ -82,13 +80,3 @@ Child WDFHANDLEs of 0x7ca7b1c0:
 ```
 
 In the preceding example, the input handle refers to a WDFDEVICE object. This particular device object has five child objects--two WDFCMRESLIST objects, two WDFCHILDLIST objects, and one WDFIOTARGET object.
-
- 
-
- 
-
-
-
-
-
-

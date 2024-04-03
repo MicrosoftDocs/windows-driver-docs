@@ -24,7 +24,7 @@ The **.cls** command clears the Debugger Command window display.
 ## <span id="ddk_meta_clear_screen_dbg"></span><span id="DDK_META_CLEAR_SCREEN_DBG"></span>
 
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -33,13 +33,4 @@ The **.cls** command clears the Debugger Command window display.
 |Platforms|All                  |
 
  
-
- 
-
- 
-
-
-
-
-
 

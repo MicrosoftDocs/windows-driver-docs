@@ -1,8 +1,8 @@
 ---
-title: "tokenfields"
-description: "The tokenfields extension displays the names and offsets of the fields within the access token object (the TOKEN structure)."
-keywords: ["token", "tokenfields Windows Debugging"]
-ms.date: 05/23/2017
+title: "!tokenfields"
+description: "The **!tokenfields** extension is obsolete. Instead, use the dt (Display Type) command."
+keywords: ["token", "!tokenfields Windows Debugging"]
+ms.date: 04/01/2024
 topic_type:
 - apiref
 ms.topic: reference
@@ -14,38 +14,17 @@ api_type:
 
 # !tokenfields
 
-
-The **!tokenfields** extension displays the names and offsets of the fields within the access token object (the TOKEN structure).
+The **!tokenfields** extension is obsolete. Instead, use the dt (Display Type) command.
 
 ```dbgcmd
 !tokenfields
 ```
 
-## <span id="ddk__tokenfields_dbg"></span><span id="DDK__TOKENFIELDS_DBG"></span>
-
-
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Kdextx86.dll</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Unavailable (see the Remarks section)</p></td>
-</tr>
-</tbody>
-</table>
+Unavailable (see the Remarks section)
 
- 
-
-### Additional Information
+## Additional Information
 
 For information about the TOKEN structure, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon. This book may not be available in some languages and countries.(The user-mode token structures described in the Microsoft Windows SDK documentation are slightly different.)
 
@@ -83,13 +62,4 @@ kd> !tokenfields
     AuditData:             0x80
     VariablePart:          0x84
 ```
-
- 
-
- 
-
-
-
-
-
 

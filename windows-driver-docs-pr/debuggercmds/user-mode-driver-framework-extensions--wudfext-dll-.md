@@ -18,12 +18,3 @@ Some extensions have additional restrictions on the Windows version or UMDF vers
 
 For ways to use these extensions, see [User-Mode Driver Framework Debugging](../debugger/user-mode-driver-framework-debugging.md).
 
- 
-
- 
-
-
-
-
-
-

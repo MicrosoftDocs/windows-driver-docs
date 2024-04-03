@@ -1,7 +1,7 @@
 ---
-title: "ndiskd.minidriver"
-description: "The ndiskd.minidriver command displays information about an NDIS miniport driver. "
-keywords: ["ndiskd.minidriver Windows Debugging"]
+title: "!ndiskd.minidriver"
+description: "The !ndiskd.minidriver command displays information about an NDIS miniport driver. "
+keywords: ["!ndiskd.minidriver Windows Debugging"]
 ms.date: 06/15/2020
 topic_type:
 - apiref
@@ -20,7 +20,7 @@ The **!ndiskd.minidriver** command displays information about an NDIS miniport d
 !ndiskd.minidriver [-handle <x>] [-basic] [-miniports] [-devices] [-handlers]
 ```
 
-## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
+## Parameters
 
 <span id="_______-handle______"></span><span id="_______-HANDLE______"></span> *-handle*   
 Optional handle of an NDIS miniport driver.

@@ -1,7 +1,7 @@
 ---
-title: "wudfext.umfile"
-description: "The wudfext.umfile extension displays information about a UMDF intra-stack file."
-keywords: ["wudfext.umfile Windows Debugging"]
+title: "!wudfext.umfile"
+description: "The !wudfext.umfile extension displays information about a UMDF intra-stack file."
+keywords: ["!wudfext.umfile Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !wudfext.umfile
 
-
 The **!wudfext.umfile** extension displays information about a UMDF intra-stack file.
 
 ```dbgcmd
@@ -23,41 +22,13 @@ The **!wudfext.umfile** extension displays information about a UMDF intra-stack 
 
 ## Parameters
 
-
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the address of the UMDF intra-stack file to display information about.
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Unavailable</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP with UMDF version 1.7 and later</strong></p></td>
-<td align="left"><p>Wudfext.dll</p></td>
-</tr>
-</tbody>
-</table>
+Wudfext.dll
 
- 
-
-### Additional Information
+## Additional Information
 
 For more information, see [User-Mode Driver Framework Debugging](../debugger/user-mode-driver-framework-debugging.md).
-
- 
-
- 
-
-
-
-
-
-

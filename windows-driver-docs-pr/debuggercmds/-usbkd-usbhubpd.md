@@ -1,7 +1,7 @@
 ---
-title: "usbkd.usbhubpd"
-description: "The usbkd.usbhubpd command displays information about a USB port."
-keywords: ["usbkd.usbhubpd Windows Debugging"]
+title: "!usbkd.usbhubpd"
+description: "The !usbkd.usbhubpd command displays information about a USB port."
+keywords: ["!usbkd.usbhubpd Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,21 +14,18 @@ api_type:
 
 # !usbkd.usbhubpd
 
-
 The **!usbkd.usbhubpd** command displays information about a USB port.
 
 ```dbgcmd
 !usbkd.usbhubpd StructAddr
 ```
 
-## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______StructAddr______"></span><span id="_______structaddr______"></span><span id="_______STRUCTADDR______"></span> *StructAddr*   
 Address of a **usbhub!\_HUB\_PORT\_DATA** structure. To get the addresses of these structures, use [**!usbhubext**](-usbkd-usbhubext.md).
 
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Usbkd.dll
 
@@ -112,11 +109,6 @@ PortChangelist: !usblist ffffe000021bf1c8, CL [Empty]
 
 ## See also
 
-
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
-
- 
-
-

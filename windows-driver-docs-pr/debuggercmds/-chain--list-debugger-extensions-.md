@@ -27,7 +27,7 @@ The **.chain** command lists all loaded debugger extensions in their default sea
 
 Displays the output using [Debugger Markup Language](../debugger/debugger-markup-language-commands.md). In the output, each listed module is a link that you can click to get information about the extensions that are implemented by the module.
 
-### Environment
+## Environment
 
 | Item      | Description            |
 |-----------|------------------------|
@@ -35,7 +35,7 @@ Displays the output using [Debugger Markup Language](../debugger/debugger-markup
 | Targets   | Live, crash dump       |
 | Platforms | All                    |
 
-### Additional Information
+## Additional Information
 
 For details on loading, unloading, and controlling extensions, see [Loading Debugger Extension DLLs](loading-debugger-extension-dlls.md). For details on executing extension commands and an explanation of the default search order, see [Using Debugger Extension Commands](using-debugger-extension-commands.md).
 

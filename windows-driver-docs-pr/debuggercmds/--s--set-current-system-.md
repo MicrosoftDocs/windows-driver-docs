@@ -29,7 +29,7 @@ Do not confuse this command with the [**s (Search Memory)**](s--search-memory-.m
 
 Specifies the system number to activate. For more information about the syntax, see [System Syntax](system-syntax.md).
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|

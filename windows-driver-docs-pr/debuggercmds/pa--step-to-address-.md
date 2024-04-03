@@ -49,7 +49,7 @@ Specifies the address where execution will stop. This address must match the exa
 <span id="_______Command______"></span><span id="_______command______"></span><span id="_______COMMAND______"></span> *Command*   
 Specifies a debugger command to execute after the step is performed. This command is executed before the standard **pa** results are displayed. If you also use *StopAddress*, the specified command is executed after *StopAddress* is reached (but before the results from the final step are displayed).
 
-### Environment
+## Environment
 
 |  Item       | Description               |
 |-----------|------------------------|
@@ -59,7 +59,7 @@ Specifies a debugger command to execute after the step is performed. This comman
 
  
 
-### Additional Information
+## Additional Information
 
 For more information about related commands, see [Controlling the Target](../debugger/controlling-the-target.md).
 
@@ -84,13 +84,4 @@ The following example demonstrates using the **pa** command along with the **kb*
 ```dbgcmd
 0:000> pa 70b5d2f1 "kb"
 ```
-
- 
-
- 
-
-
-
-
-
 

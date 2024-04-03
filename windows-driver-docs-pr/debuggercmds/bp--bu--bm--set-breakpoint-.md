@@ -122,7 +122,7 @@ Specifies a pattern. The debugger tries to match this pattern to existing symbol
 
 
 
-### Environment
+## Environment
 
 |  Item       | Description               |
 |-----------|------------------------|
@@ -132,7 +132,7 @@ Specifies a pattern. The debugger tries to match this pattern to existing symbol
 
  
 
-### Additional Information
+## Additional Information
 
 For more information about and examples of how to use breakpoints, other breakpoint commands and methods of controlling breakpoints, and how to set breakpoints in user space from a kernel debugger, see [Using Breakpoints](../debugger/using-breakpoints.md). For more information about conditional breakpoints, see [Setting a Conditional Breakpoint](../debugger/setting-a-conditional-breakpoint.md).
 
@@ -208,13 +208,4 @@ bu0 @!"myprog!openFile";
 bu1 @!"myprog!openFilter";
 bp2 0x00421600 ;
 ```
-
- 
-
- 
-
-
-
-
-
 

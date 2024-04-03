@@ -1,7 +1,7 @@
 ---
-title: "whatperftime"
-description: "The whatperftime extension converts a high-resolution performance counter value into a standard time value."
-keywords: ["performance count", "whatperftime Windows Debugging"]
+title: "!whatperftime"
+description: "The !whatperftime extension converts a high-resolution performance counter value into a standard time value."
+keywords: ["performance count", "!whatperftime Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !whatperftime
 
-
 The **!whatperftime** extension converts a high-resolution performance counter value into a standard time value.
 
 ```dbgcmd
@@ -23,15 +22,12 @@ The **!whatperftime** extension converts a high-resolution performance counter v
 
 ## Parameters
 
-
 <span id="_______Count______"></span><span id="_______count______"></span><span id="_______COUNT______"></span> *Count*   
 The performance counter clock value.
 
 ## DLL
 
-Windows XP and later - Kdexts.dll
-
- 
+Kdexts.dll
 
 ## Remarks
 
@@ -43,13 +39,3 @@ The output is displayed as *HH:MM:SS.mmm*. Here is an example:
 kd> !whatperftime 304589
 3163529 Performance Counter in Standard Time: .004.313s
 ```
-
- 
-
- 
-
-
-
-
-
-

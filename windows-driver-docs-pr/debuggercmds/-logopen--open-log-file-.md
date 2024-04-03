@@ -40,7 +40,7 @@ Specifies the name of the log file. You can specify a full path or only the file
 <span id="________d______"></span><span id="________D______"></span> **/d**   
 Automatically chooses a file name based on the name of the target process or target computer and the state of the target. The file always has the .log file name extension.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -60,13 +60,4 @@ The **.logopen /t** command appends the process ID, date, and time to the log fi
 0:000> .logopen /t c:\logs\mylogfile.txt
 Opened log file 'c:\logs\mylogfile_02BC_2005-02-28_09-05-50-935.txt'
 ```
-
- 
-
- 
-
-
-
-
-
 

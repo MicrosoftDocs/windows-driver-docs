@@ -56,12 +56,3 @@ The executable file search path can also be set using the `_NT_EXECUTABLE_IMAGE_
 
  
 
- 
-
- 
-
-
-
-
-
-

@@ -43,12 +43,3 @@ If you write your own debugger extensions, you can place them in any directory. 
 
 There can be as many as 32 extension DLLs loaded.
 
- 
-
- 
-
-
-
-
-
-

@@ -38,7 +38,7 @@ Specifies the number of lines to show after the current line.
 <span id="_______TotalLines______"></span><span id="_______totallines______"></span><span id="_______TOTALLINES______"></span> *TotalLines*   
 Specifies the total number of lines to show. This number is divided evenly between leading and trailing lines. (If this number is odd, more trailing lines are displayed.)
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -54,16 +54,7 @@ When you use the **lsp** command together with no parameters, **lsp** displays t
 
 When you step through a program or break in after program execution, the previous **lsp** command determines the number of leading and trailing lines that are displayed. When you use **lsa**, the previous **lsp -a** command determines the number of leading and trailing lines that are displayed. When you use **ls**, all lines appear as a single block, so the previous **lsp -a** command determines the total number of lines that are displayed.
 
-### Additional Information
+## Additional Information
 
 For more information about source debugging and related commands, see [Debugging in Source Mode](../debugger/debugging-in-source-mode.md).
-
- 
-
- 
-
-
-
-
-
 

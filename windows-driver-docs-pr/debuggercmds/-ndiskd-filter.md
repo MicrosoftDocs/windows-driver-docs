@@ -1,7 +1,7 @@
 ---
-title: "ndiskd.filter"
-description: "The ndiskd.filter extension displays information about an NDIS light-weight filter (LWF). If you run this extension with no parameters, ndiskd will display a list of all LWFs."
-keywords: ["ndiskd.filter Windows Debugging"]
+title: "!ndiskd.filter"
+description: "The !ndiskd.filter extension displays information about an NDIS light-weight filter (LWF). If you run this extension with no parameters, ndiskd will display a list of all LWFs."
+keywords: ["!ndiskd.filter Windows Debugging"]
 ms.date: 06/15/2020
 topic_type:
 - apiref

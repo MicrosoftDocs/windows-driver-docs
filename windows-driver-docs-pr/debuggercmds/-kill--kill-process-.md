@@ -14,7 +14,6 @@ api_type:
 
 # .kill (Kill Process)
 
-
 In user mode, the **.kill** command ends a process that is being debugged.
 
 In kernel mode, the **.kill** command ends a process on the target computer.
@@ -31,8 +30,7 @@ Kernel-Mode Syntax
 .kill Process 
 ```
 
-## <span id="ddk_meta_kill_process_dbg"></span><span id="DDK_META_KILL_PROCESS_DBG"></span>Parameters
-
+## Parameters
 
 <span id="________h______"></span><span id="________H______"></span> **/h**   
 (User mode only) Any outstanding debug event will be continued and marked as handled. This is the default.
@@ -43,7 +41,7 @@ Kernel-Mode Syntax
 <span id="_______Process______"></span><span id="_______process______"></span><span id="_______PROCESS______"></span> *Process*   
 Specifies the address of the process to be terminated. If *Process* is omitted or zero, the default process for the current system state will be terminated.
 
-### Environment
+## Environment
 
 In kernel mode, this command is supported on Microsoft Windows Server 2003 and later versions of Windows.
 
@@ -68,8 +66,6 @@ In kernel mode, this command is supported on Microsoft Windows Server 2003 and l
 </tbody>
 </table>
 
- 
-
 ## Remarks
 
 In user mode, this command ends a process that is being debugged. If the debugger is attached to a child process, you can use **.kill** to end the child process without ending the parent process. For more information, see Examples.
@@ -80,7 +76,7 @@ You cannot use this command during local kernel debugging.
 
 ## Examples
 
-**Using .childdbg**
+### Using .childdbg
 
 Suppose you attach a debugger to parent process (Parent.exe) before it creates a child process. You can enter the command [**.childdbg 1**](-childdbg--debug-child-processes-.md) to tell the debugger to attach to any child process that the parent creates.
 
@@ -115,7 +111,7 @@ Terminated.  Exit thread and process events will occur.
 1:001> g
 ```
 
-**Using the -o parameter**
+### Using the -o parameter
 
 When you start WinDbg or CDB, you can use the **-o** parameter to tell the debugger that it should attach to child processes. For example, the following command starts WinDbg, which starts and attaches to Parent.exe. When Parent.exe creates a child process, WinDbg attaches to the child process.
 
@@ -137,13 +133,3 @@ For more information, see [**WinDbg Command-Line Options**](../debugger/windbg-c
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-
-
-

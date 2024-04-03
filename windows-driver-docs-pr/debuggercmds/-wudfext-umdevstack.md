@@ -1,7 +1,7 @@
 ---
-title: "wudfext.umdevstack"
-description: "The wudfext.umdevstack extension displays detailed information about a device stack in the host process."
-keywords: ["wudfext.umdevstack Windows Debugging"]
+title: "!wudfext.umdevstack"
+description: "The !wudfext.umdevstack extension displays detailed information about a device stack in the host process."
+keywords: ["!wudfext.umdevstack Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !wudfext.umdevstack
 
-
 The **!wudfext.umdevstack** extension displays detailed information about a device stack in the host process.
 
 ```dbgcmd
@@ -22,7 +21,6 @@ The **!wudfext.umdevstack** extension displays detailed information about a devi
 ```
 
 ## Parameters
-
 
 <span id="_______DevstackAddress______"></span><span id="_______devstackaddress______"></span><span id="_______DEVSTACKADDRESS______"></span> *DevstackAddress*   
 Specifies the address of the device stack to display information about.
@@ -38,26 +36,9 @@ Displays information about the internal framework.
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Unavailable</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Wudfext.dll</p></td>
-</tr>
-</tbody>
-</table>
+Wudfext.dll
 
- 
-
-### <span id="additional_information1"></span><span id="ADDITIONAL_INFORMATION1"></span>Additional Information
+## Additional Information
 
 For more information, see [User-Mode Driver Framework Debugging](../debugger/user-mode-driver-framework-debugging.md).
 
@@ -76,13 +57,3 @@ Device Stack: 0x0034e4e0  Pdo Name: \Device\00000057
     Fx Device: IWDFDevice 0xf2f80
         IDriverEntry: WUDFEchoDriver!CMyDriver 0x000f2c70
 ```
-
- 
-
- 
-
-
-
-
-
-

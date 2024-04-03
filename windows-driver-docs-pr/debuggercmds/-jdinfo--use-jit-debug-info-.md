@@ -29,7 +29,7 @@ For more information about the registry keys used, see [Enabling Postmortem Debu
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the address of the JIT\_DEBUG\_INFO structure. The address to the structure is passed to the **.jdinfo** command using the %p parameter that is specified in the AeDebug registry entry.
 
-### Environment
+## Environment
 
 <table>
 <colgroup>
@@ -209,13 +209,4 @@ Attempt to write to address 0000000000000000
 Last event: 153c.5d0: Break instruction exception - code 80000003 (first chance)
   debugger time: Thu Sep  8 12:55:08.968 2016 (UTC - 7:00)
 ```
-
- 
-
- 
-
-
-
-
-
 

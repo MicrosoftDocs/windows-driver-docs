@@ -1,7 +1,7 @@
 ---
-title: "ndiskd.ndisslot"
+title: "!ndiskd.ndisslot"
 description: "The **!ndiskd.ndisslot** extension displays the contents of an NDIS per-processor variable."
-keywords: ["ndiskd.ndisslot Windows Debugging"]
+keywords: ["!ndiskd.ndisslot Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref

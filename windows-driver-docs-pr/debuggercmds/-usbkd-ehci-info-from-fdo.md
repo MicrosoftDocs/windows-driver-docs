@@ -1,7 +1,7 @@
 ---
-title: "usbkd.ehci_info_from_fdo"
-description: "The usbkd.ehci_info_from_fdo command displays information about a USB host controller."
-keywords: ["usbkd.ehci_info_from_fdo Windows Debugging"]
+title: "!usbkd.ehci_info_from_fdo"
+description: "The !usbkd.ehci_info_from_fdo command displays information about a USB host controller."
+keywords: ["!usbkd.ehci_info_from_fdo Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,21 +14,18 @@ api_type:
 
 # !usbkd.ehci\_info\_from\_fdo
 
-
 The [**!usbkd.ehci\_info\_from\_fdo**](-usbkd-ehci-info-from-fdo.md) command displays information about a USB host controller.
 
 ```dbgcmd
 !usbkd.ehci_info_from_fdo fdo
 ```
 
-## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______fdo______"></span><span id="_______FDO______"></span> *fdo*   
 Address of the functional device object (FDO) of a UHCI or EHCI USB host controller. You can get the address of the FDO from the output of the [**!usb2tree**](-usbkd-usb2tree.md) command.
 
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Usbkd.dll
 
@@ -84,11 +81,6 @@ BusContextHead: !usblist ffffe00001ca16b0, BC
 
 ## See also
 
-
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
-
- 
-
-

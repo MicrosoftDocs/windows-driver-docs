@@ -51,7 +51,7 @@ Specifies one or more commands to be automatically executed when the breakpoint 
 
  
 
-### Environment
+## Environment
 
 |  Item       | Description               |
 |-----------|------------------------|
@@ -61,7 +61,7 @@ Specifies one or more commands to be automatically executed when the breakpoint 
 
  
 
-### Additional Information
+## Additional Information
 
 For other methods of issuing this command and an overview of related commands, see [Controlling the Target](../debugger/controlling-the-target.md).
 
@@ -70,13 +70,4 @@ For other methods of issuing this command and an overview of related commands, s
 If you use the *BreakAddress* parameter to set a breakpoint, this new breakpoint will only be triggered by the current thread. Other threads that execute the code at that location will not be stopped.
 
 If *Thread* is specified, then the **gh** command is executed with the specified thread unfrozen and all others frozen. For example, if the **~123gh**, **~\#gh**, or **~\*gh** command is specified, the specified threads are unfrozen and all others are frozen.
-
- 
-
- 
-
-
-
-
-
 

@@ -1,7 +1,7 @@
 ---
-title: "ndiskd.netpacket"
-description: "The ndiskd.netpacket extension displays information about a NET_PACKET structure."
-keywords: ["ndiskd.netpacket Windows Debugging"]
+title: "!ndiskd.netpacket"
+description: "The !ndiskd.netpacket extension displays information about a NET_PACKET structure."
+keywords: ["!ndiskd.netpacket Windows Debugging"]
 ms.date: 06/17/2020
 topic_type:
 - apiref

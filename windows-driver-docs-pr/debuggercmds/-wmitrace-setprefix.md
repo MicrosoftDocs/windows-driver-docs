@@ -1,7 +1,7 @@
 ---
-title: "wmitrace.setprefix"
-description: "The wmitrace.setprefix extension specifies the trace message prefix that is prepended to the trace messages from this session. "
-keywords: ["wmitrace.setprefix Windows Debugging"]
+title: "!wmitrace.setprefix"
+description: "The !wmitrace.setprefix extension specifies the trace message prefix that is prepended to the trace messages from this session. "
+keywords: ["!wmitrace.setprefix Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !wmitrace.setprefix
 
-
 The **!wmitrace.setprefix** extension specifies the trace message prefix that is prepended to the trace messages from this session. This extension allows you to change the prefix during the debugging session.
 
 ```dbgcmd
@@ -23,7 +22,6 @@ The **!wmitrace.setprefix** extension specifies the trace message prefix that is
 ```
 
 ## Parameters
-
 
 <span id="______________"></span> **+**   
 Causes *PrefixVariables* to be appended to the trace message prefix. If the **+** token is not used, *PrefixVariables* replaces the existing trace message prefix.
@@ -132,13 +130,11 @@ Each %n variable represents a parameter that is described in the following table
 </tbody>
 </table>
 
- 
-
 The symbol within exclamation marks is a conversion character that specifies the format and precision of the variable. For example, %8!04X! specifies the process ID formatted as a four-digit, unsigned, hexadecimal number.
 
 ## DLL
 
-This extension is exported by Wmitrace.dll.
+Wmitrace.dll
 
 This extension is available in Windows 2000 and later versions of Windows. If you want to use this extension with Windows 2000, you must first copy the Wmitrace.dll file from the winxp subdirectory of the Debugging Tools for Windows installation directory to the w2kfre subdirectory.
 
@@ -158,7 +154,7 @@ As a result, the trace messages are prepended with the specified information in 
 tracedrv_c258: TracedrvDispatchDeviceControl: 0af4.0c64: 07/25/2003-13:55:39.998:  IOCTL = 1
 ```
 
-### Additional Information
+## Additional Information
 
 For a conceptual overview of event tracing, see the Microsoft Windows SDK documentation. For information about trace message format files, see the "Trace Message Prefix" topic in the WDK documentation.
 
@@ -185,13 +181,3 @@ You can change the format and data in the trace message prefix outside of the de
 The prefix that you set by using this extension command affects only the debugger output. The trace message prefix that appears in the trace log is determined by the default value and the value of the %TRACE\_FORMAT\_PREFIX% environment variable.
 
 This extension is only useful during WPP software tracing, and earlier (legacy) methods of Event Tracing for Windows. Trace events that are produced by other manifested providers do not use trace message format (TMF) files, and therefore this extension does not affect them.
-
- 
-
- 
-
-
-
-
-
-

@@ -26,7 +26,7 @@ The **.kframes** command sets the default length of a stack trace display.
 
 Specifies the number of stack frames to display when a stack trace command is used.
 
-### Environment
+## Environment
 
 | Environment | &nbsp;                 |
 |-------------|------------------------|

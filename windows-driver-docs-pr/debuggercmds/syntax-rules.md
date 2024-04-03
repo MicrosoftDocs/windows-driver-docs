@@ -55,12 +55,3 @@ The following topics describe the syntax that the following parameter types use:
 
 Syntax also plays an important role in using symbols. For further details, see [Symbol Syntax and Symbol Matching](../debugger/symbol-syntax-and-symbol-matching.md).
 
- 
-
- 
-
-
-
-
-
-

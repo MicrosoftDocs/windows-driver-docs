@@ -1,7 +1,7 @@
 ---
-title: "tp (WinDbg)"
-description: "The tp extension displays thread pool information."
-keywords: ["thread pool", "tp Windows Debugging"]
+title: "!tp (WinDbg)"
+description: "The !tp extension displays thread pool information."
+keywords: ["thread pool", "!tp Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -13,7 +13,6 @@ api_type:
 ---
 
 # !tp
-
 
 The **!tp** extension displays thread pool information.
 
@@ -29,7 +28,6 @@ The **!tp** extension displays thread pool information.
 ```
 
 ## Parameters
-
 
 <span id="_______pool_Address_____________"></span><span id="_______pool_address_____________"></span><span id="_______POOL_ADDRESS_____________"></span> **pool** **** *Address*   
 Causes the entire thread pool at *Address* to be displayed. If *Address* is 0, then all thread pools will be displayed.
@@ -105,35 +103,9 @@ Displays a brief help text for this extension in the Debugger Command window.
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Unavailable</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Exts.dll</p></td>
-</tr>
-</tbody>
-</table>
+Exts.dll
 
- 
 
-### Additional Information
+## Additional Information
 
 For information about thread pooling, see the Microsoft Windows SDK documentation.
-
- 
-
- 
-
-
-
-
-
-

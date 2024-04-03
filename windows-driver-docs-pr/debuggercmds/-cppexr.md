@@ -1,7 +1,7 @@
 ---
-title: "cppexr (WinDbg)"
-description: "The cppexr extension displays the contents of a C++ exception record."
-keywords: ["exception records", "cppexr Windows Debugging"]
+title: "!cppexr (WinDbg)"
+description: "The !cppexr extension displays the contents of a C++ exception record."
+keywords: ["exception records", "!cppexr Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -29,26 +29,14 @@ Specifies the address of the C++ exception record to display.
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Ext.dll</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Ext.dll</p></td>
-</tr>
-</tbody>
-</table>
+
+Ext.dll
+
+
 
  
 
-### Additional Information
+## Additional Information
 
 For more information about exceptions, see [Controlling Exceptions and Events](../debugger/controlling-exceptions-and-events.md), the Windows Driver Kit (WDK) documentation, the Windows SDK documentation, and *Microsoft Windows Internals* by Mark Russinovich and David Solomon. Use the [**.exr**](-exr--display-exception-record-.md) command to display other exception records.
 
@@ -59,13 +47,4 @@ The **!cppexr** extension displays information that is related to a C++ exceptio
 You can typically obtain the *Address* parameter by using the [**!analyze -v**](-analyze.md) command.
 
 The **!cppexr** extension is useful for determining the type of a C++ exception.
-
- 
-
- 
-
-
-
-
-
 
