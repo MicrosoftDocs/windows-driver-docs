@@ -1,7 +1,7 @@
 ---
 title: What's New in Driver Development for Windows 11, Version 24H2
 description: This section describes new features for driver development in Windows 11, version 24H2.
-ms.date: 04/02/2024
+ms.date: 04/03/2024
 ---
 
 # <a name="top"></a>What's new in driver development for Windows 11, version 24H2
@@ -30,11 +30,7 @@ GPUs are increasingly used in artificial intelligence and machine learning scena
 
 - [Live migration of heterogeneous GPU-P compute devices](./display/live-migration-on-gpup-devices.md) has been added. Significant content can now be transferred while virtualized resources are still active, reducing the pause time needed to complete a migration.
 
-<<<<<<< HEAD
-- A [GPU native fence synchronization object](./display/gpu-fence-synchronization-object.md) is added as an extension to the monitored fence object, supporting the following additional features:
-=======
 - A [GPU native fence synchronization object](./display/native-gpu-fence-objects.md) is added as an extension to the monitored fence object, supporting the following additional features:
->>>>>>> release-copper
 
   - GPU wait on monitored fence value, which allows for high performance engine-to-engine synchronization without requiring CPU round trips.
   - Conditional interrupt notification only for GPU fence signals that have CPU waiters, enabling substantial power savings.
