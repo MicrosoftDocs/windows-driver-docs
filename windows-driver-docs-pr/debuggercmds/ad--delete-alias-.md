@@ -31,7 +31,7 @@ Specifies quiet mode. This mode hides the error message if the alias that *Name*
 <span id="_______Name______"></span><span id="_______name______"></span><span id="_______NAME______"></span> *Name*   
 Specifies the name of the alias to delete. If you specify an asterisk (\*), all aliases are deleted (even if there is an alias whose name is "\*").
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -41,7 +41,7 @@ Specifies the name of the alias to delete. If you specify an asterisk (\*), all 
 
  
 
-### Additional Information
+## Additional Information
 
 For more information about how to use aliases, see [Using Aliases](using-aliases.md).
 

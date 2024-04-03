@@ -46,7 +46,7 @@ Specifies the address where the debugger begins execution. Otherwise, the debugg
 <span id="_______Count______"></span><span id="_______count______"></span><span id="_______COUNT______"></span> *Count*   
 Specifies the number of branching instructions that must be encountered for this command to stop. The default value is one.
 
-### Environment
+## Environment
 
 |  Item       | Description               |
 |-----------|------------------------|
@@ -56,7 +56,7 @@ Specifies the number of branching instructions that must be encountered for this
 
  
 
-### Additional Information
+## Additional Information
 
 For more information about related commands, see [Controlling the Target](../debugger/controlling-the-target.md).
 
@@ -67,13 +67,4 @@ The **ph** command causes the target to begin executing. This execution continue
 If the program counter is already on a branching instruction, the entire branching instruction is executed. After this branching instruction is returned, execution continues until another branching instruction is reached. This execution, rather than tracing, of the call is the only difference between **ph** and [**th (Trace to Next Branching Instruction)**](th--trace-to-next-branching-instruction-.md).
 
 In source mode, you can associate one source line with multiple assembly instructions. The **ph** command does not stop at a branching instruction that is associated with the current source line.
-
- 
-
- 
-
-
-
-
-
 

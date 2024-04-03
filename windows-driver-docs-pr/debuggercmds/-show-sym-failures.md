@@ -39,7 +39,7 @@ Enables the display of type lookup failures.
 <span id="________T______"></span><span id="________t______"></span> **/T**   
 Disables the display of type lookup failures.
 
-## <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+## Environment
 
 
 |  Item  | Description          |
@@ -49,13 +49,4 @@ Disables the display of type lookup failures.
 |Platforms|All                  |
 
  
-
- 
-
- 
-
-
-
-
-
 

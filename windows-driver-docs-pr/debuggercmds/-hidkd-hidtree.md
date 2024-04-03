@@ -1,7 +1,7 @@
 ---
-title: "hidkd.hidtree"
-description: "The hidkd.hidtree command displays a list of all device nodes that have a HID function driver along with their child nodes. "
-keywords: ["hidkd.hidtree Windows Debugging"]
+title: "!hidkd.hidtree"
+description: "The !hidkd.hidtree extension command displays a list of all device nodes that have a HID function driver along with their child nodes. "
+keywords: ["!hidkd.hidtree Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,8 +14,7 @@ api_type:
 
 # !hidkd.hidtree
 
-
-The **!hidkd.hidtree** command displays a list of all device nodes that have a HID function driver along with their child nodes. The child nodes have a physical device object (PDO) that was created by the parent node's HID function driver.
+The **!hidkd.hidtree** extension command displays a list of all device nodes that have a HID function driver along with their child nodes. The child nodes have a physical device object (PDO) that was created by the parent node's HID function driver.
 
 ```dbgcmd
 !hidkd.hidtree
@@ -37,7 +36,7 @@ When you are debugging a HID issue, the **!hidtree** is a good place to start, b
 
  
 
-## <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 
 Hidkd.dll
@@ -46,14 +45,5 @@ Hidkd.dll
 
 
 [HID Extensions](hid-extensions.md)
-
- 
-
- 
-
-
-
-
-
 
 

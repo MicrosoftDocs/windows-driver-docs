@@ -14,54 +14,25 @@ api_type:
 
 # .tss (Display Task State Segment)
 
-
 The **.tss** command displays a formatted view of the saved Task State Segment (TSS) information for the current processor.
 
 ```dbgcmd
 .tss [Address]
 ```
 
-## <span id="ddk_meta_display_task_state_segment_dbg"></span><span id="DDK_META_DISPLAY_TASK_STATE_SEGMENT_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Address of the TSS.
 
-### Environment
+## Environment
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Modes</strong></p></td>
-<td align="left"><p>kernel mode only</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Targets</strong></p></td>
-<td align="left"><p>live, crash dump</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Platforms</strong></p></td>
-<td align="left"><p>x86 only</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Item      | Description      |
+|-----------|------------------|
+| Modes     | kernel mode only |
+| Targets   | live, crash dump |
+| Platforms | x86 only         |
 
 ## Remarks
 
 The address of the TSS can be found by examining the output of the [**!pcr**](-pcr.md) extension.
-
- 
-
- 
-
-
-
-
-
-

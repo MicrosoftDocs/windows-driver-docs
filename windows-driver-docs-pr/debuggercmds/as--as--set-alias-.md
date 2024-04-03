@@ -84,7 +84,7 @@ Sets the alias equivalent equal to the output of the commands that *CommandStrin
 <span id="_______CommandString______"></span><span id="_______commandstring______"></span><span id="_______COMMANDSTRING______"></span> *CommandString*   
 Specifies the commands whose outputs become the alias equivalent. This string can include any number of commands that are separated by semicolons.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -94,7 +94,7 @@ Specifies the commands whose outputs become the alias equivalent. This string ca
 
  
 
-### Additional Information
+## Additional Information
 
 For more information about how to use aliases, see [Using Aliases](using-aliases.md).
 
@@ -125,13 +125,4 @@ If *Name* is already the name of an existing alias, that alias is redefined.
 You can use the **as** or **aS** command to create or change any user-named alias. But you cannot use the command to control a fixed-name alias ($u0 to $u9).
 
 You can use the **/ma**, **/mu**, **/msa**, **/msu**, **/f**, and **/c** switches to create an alias that contains carriage returns. However, you cannot use an alias that contains carriage returns to execute multiple commands in sequence. Instead, you must use semicolons.
-
- 
-
- 
-
-
-
-
-
 

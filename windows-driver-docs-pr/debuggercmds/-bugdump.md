@@ -1,7 +1,7 @@
 ---
-title: "bugdump (WinDbg)"
-description: "The bugdump extension formats and displays the information contained in the bug check callback buffers."
-keywords: ["bugdump Windows Debugging"]
+title: "!bugdump (WinDbg)"
+description: "The !bugdump extension formats and displays the information contained in the bug check callback buffers."
+keywords: ["!bugdump Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !bugdump
 
-
 The **!bugdump** extension formats and displays the information contained in the bug check callback buffers.
 
 ```dbgsyntax
@@ -23,19 +22,12 @@ The **!bugdump** extension formats and displays the information contained in the
 
 ## <span id="ddk__bugdump_dbg"></span><span id="DDK__BUGDUMP_DBG"></span>Parameters
 
-
 <span id="_______Component______"></span><span id="_______component______"></span><span id="_______COMPONENT______"></span> *Component*   
 Specifies the component whose callback data is to be examined. If omitted, all bug check callback data is displayed.
 
 ### DLL
 
 Kdexts.dll
-
- 
-
-### Additional Information
-
-For more information, see [Reading Bug Check Callback Data](../debugger/reading-bug-check-callback-data.md).
 
 ## Remarks
 
@@ -47,6 +39,6 @@ The buffers that hold callback data are not available in a Small Memory Dump. Th
 
 If you are performing live debugging of a crashed system, all callback data will be present.
 
- 
+## Additional Information
 
-
+For more information, see [Reading Bug Check Callback Data](../debugger/reading-bug-check-callback-data.md).

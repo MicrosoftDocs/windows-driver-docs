@@ -14,7 +14,6 @@ api_type:
 
 # .unload (Unload Extension DLL)
 
-
 The **.unload** command unloads an extension DLL from the debugger.
 
 ```dbgcmd
@@ -22,13 +21,12 @@ The **.unload** command unloads an extension DLL from the debugger.
 !DLLName.unload
 ```
 
-## <span id="ddk_meta_unload_extension_dll_dbg"></span><span id="DDK_META_UNLOAD_EXTENSION_DLL_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______DLLName______"></span><span id="_______dllname______"></span><span id="_______DLLNAME______"></span> *DLLName*   
 Specifies the file name of the debugger extension DLL to be unloaded. If the full path was specified when the DLL was loaded, it needs to be given in full here as well. If *DLLName* is omitted, the current extension DLL is unloaded.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -36,22 +34,10 @@ Specifies the file name of the debugger extension DLL to be unloaded. If the ful
 |Targets |Live, crash dump      |
 |Platforms|All                  |
 
- 
-
-### Additional Information
+## Additional Information
 
 For more details on loading, unloading, and controlling extensions, see [Loading Debugger Extension DLLs](loading-debugger-extension-dlls.md).
 
 ## Remarks
 
 This command is useful when testing an extension you are creating. When the extension is recompiled, you must unload and then load the new DLL.
-
- 
-
- 
-
-
-
-
-
-

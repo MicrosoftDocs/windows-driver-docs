@@ -36,7 +36,7 @@ The **-m** parameter is required if you are using a [source server](../debugger/
 <span id="_______-a_______Address______"></span><span id="_______-a_______address______"></span><span id="_______-A_______ADDRESS______"></span> **-a** *Address*   
 Specifies an address within the source file. This address must be contained in a known module. If the debugger can find the source file, the debugger loads and opens the file, and the line that corresponds to the specified address is highlighted. If the debugger cannot find the source file, the address is displayed in the [Disassembly window](../debugger/disassembly-window.md). For more information about the syntax, see [Address and Address Range Syntax](address-and-address-range-syntax.md).
 
-### Environment
+## Environment
 
 You can use the **.open** command only in WinDbg, and you cannot use it in script files.
 
@@ -48,16 +48,7 @@ You can use the **.open** command only in WinDbg, and you cannot use it in scrip
 
  
 
-### Additional Information
+## Additional Information
 
 For more information about source files and source paths and for other ways to load source files, see [Source Path](../debugger/source-path.md).
-
- 
-
- 
-
-
-
-
-
 

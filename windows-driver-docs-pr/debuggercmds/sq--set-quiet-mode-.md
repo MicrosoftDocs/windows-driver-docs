@@ -25,7 +25,7 @@ sq{e|d}
 ## <span id="ddk_cmd_set_quiet_mode_dbg"></span><span id="DDK_CMD_SET_QUIET_MODE_DBG"></span>
 
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -50,13 +50,4 @@ You can set quiet mode in KD or kernel-mode WinDbg by using the KDQUIET [environ
 -   When you break into a target computer while kernel debugging, the long warning message is suppressed.
 
 Do not confuse quiet mode with the effects of the **-myob** [command-line option](../debugger/command-line-options.md) (in CDB and KD) or the **-Q** [**command-line option**](../debugger/windbg-command-line-options.md) (in WinDbg).
-
- 
-
- 
-
-
-
-
-
 

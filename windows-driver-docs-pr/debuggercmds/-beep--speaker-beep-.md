@@ -21,7 +21,7 @@ The **.beep** command makes noise on the computer speaker.
     .beep
 ```
 
-### Environment
+## Environment
 
 This command cannot be used in script files.
 
@@ -32,13 +32,4 @@ This command cannot be used in script files.
 |Platforms|All                  |
 
  
-
- 
-
- 
-
-
-
-
-
 

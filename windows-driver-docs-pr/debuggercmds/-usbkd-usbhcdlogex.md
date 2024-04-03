@@ -1,7 +1,7 @@
 ---
-title: "usbkd.usbhcdlogex"
-description: "The usbkd.usbhcdlogex command displays an annotated debug log for a USB host controller."
-keywords: ["usbkd.usbhcdlogex Windows Debugging"]
+title: "!usbkd.usbhcdlogex"
+description: "The !usbkd.usbhcdlogex command displays an annotated debug log for a USB host controller."
+keywords: ["!usbkd.usbhcdlogex Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,15 +14,13 @@ api_type:
 
 # !usbkd.usbhcdlogex
 
-
 The **!usbkd.usbhcdlogex** command displays an annotated debug log for a USB host controller.
 
 ```dbgcmd
 !usbkd.usbhcdlogex DeviceExtension[, NumberOfEntries]
 ```
 
-## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______DeviceExtension______"></span><span id="_______deviceextension______"></span><span id="_______DEVICEEXTENSION______"></span> *DeviceExtension*   
 Address of the device extension for the functional device object (FDO) of a UHCI or EHCI USB host controller.
@@ -30,10 +28,10 @@ Address of the device extension for the functional device object (FDO) of a UHCI
 <span id="_______NumberOfEntries______"></span><span id="_______numberofentries______"></span><span id="_______NUMBEROFENTRIES______"></span> *NumberOfEntries*   
 The number of log entries to display. To display the entire log, set this parameter to -1.
 
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Usbkd.dll
+
 
 ## Examples
 
@@ -97,11 +95,6 @@ LOG@: ffffe00001ca11b8
 
 ## See also
 
-
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
-
- 
-
-

@@ -1,7 +1,7 @@
 ---
-title: "rpcexts.getdbgcell"
-description: "The rpcexts.getdbgcell extension displays RPC state information for the specified cell."
-keywords: ["rpcexts.getdbgcell Windows Debugging"]
+title: "!rpcexts.getdbgcell"
+description: "The !rpcexts.getdbgcell extension displays RPC state information for the specified cell."
+keywords: ["!rpcexts.getdbgcell Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !rpcexts.getdbgcell
 
-
 The **!rpcexts.getdbgcell** extension displays RPC state information for the specified cell.
 
 ```dbgcmd
@@ -22,8 +21,7 @@ The **!rpcexts.getdbgcell** extension displays RPC state information for the spe
 !rpcexts.getdbgcell -?
 ```
 
-## <span id="ddk__rpcexts_getdbgcell_dbg"></span><span id="DDK__RPCEXTS_GETDBGCELL_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______ProcessID______"></span><span id="_______processid______"></span><span id="_______PROCESSID______"></span> *ProcessID*   
 Specifies the process ID (PID) of the process whose server contains the desired cell.
@@ -36,26 +34,9 @@ Displays some brief Help text for this extension in the Command Prompt window.
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Unavailable</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Rpcexts.dll</p></td>
-</tr>
-</tbody>
-</table>
+Rpcexts.dll
 
- 
-
-### Additional Information
+## Additional Information
 
 For more information about debugging Microsoft Remote Procedure Call (RPC), see [RPC Debugging](../debugger/rpc-debugging.md).
 
@@ -80,13 +61,3 @@ Caller (PID/TID) is: d0.1ac (208.428)
 ```
 
 For a similar example using the DbgRpc tool, see [Get RPC Cell Information](../debugger/get-rpc-cell-information.md).
-
- 
-
- 
-
-
-
-
-
-

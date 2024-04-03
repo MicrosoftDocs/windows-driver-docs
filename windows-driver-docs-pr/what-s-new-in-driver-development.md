@@ -30,13 +30,21 @@ GPUs are increasingly used in artificial intelligence and machine learning scena
 
 - [Live migration of heterogeneous GPU-P compute devices](./display/live-migration-on-gpup-devices.md) has been added. Significant content can now be transferred while virtualized resources are still active, reducing the pause time needed to complete a migration.
 
+<<<<<<< HEAD
 - A [GPU native fence synchronization object](./display/gpu-fence-synchronization-object.md) is added as an extension to the monitored fence object, supporting the following additional features:
+=======
+- A [GPU native fence synchronization object](./display/native-gpu-fence-objects.md) is added as an extension to the monitored fence object, supporting the following additional features:
+>>>>>>> release-copper
 
   - GPU wait on monitored fence value, which allows for high performance engine-to-engine synchronization without requiring CPU round trips.
   - Conditional interrupt notification only for GPU fence signals that have CPU waiters, enabling substantial power savings.
   - Fence value storage in the GPU's local memory.
 
-Additionally, the method that a user-mode or kernel-mode graphics driver uses to determine whether a particular WDDM feature is enabled has been updated. For more information, see [Querying WDDM feature support and enablement](./display/querying-wddm-feature-support-and-enablement.md).
+Other added WDDM 3.2 features:
+
+- The method that a user-mode or kernel-mode graphics driver uses to determine whether a particular WDDM feature is enabled has been updated. For more information, see [Querying WDDM feature support and enablement](./display/querying-wddm-feature-support-and-enablement.md).
+
+- TDR (timeout detection and recovery) debugging has been enhanced to provide more information about the cause of a TDR event. For more information, see [TDR debuggability improvements](./display/tdr-debuggability-improvements.md).
 
 ## Dynamic lighting
 

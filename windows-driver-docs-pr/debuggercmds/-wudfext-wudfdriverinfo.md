@@ -1,7 +1,7 @@
 ---
-title: "wudfext.wudfdriverinfo"
-description: "The wudfext.wudfdriverinfo extension displays information about a UMDF driver within the current host process."
-keywords: ["wudfext.wudfdriverinfo Windows Debugging"]
+title: "!wudfext.wudfdriverinfo"
+description: "The !wudfext.wudfdriverinfo extension displays information about a UMDF driver within the current host process."
+keywords: ["!wudfext.wudfdriverinfo Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !wudfext.wudfdriverinfo
 
-
 The **!wudfext.wudfdriverinfo** extension displays information about a UMDF driver within the current host process.
 
 ```dbgcmd
@@ -23,32 +22,14 @@ The **!wudfext.wudfdriverinfo** extension displays information about a UMDF driv
 
 ## Parameters
 
-
 <span id="_______Name______"></span><span id="_______name______"></span><span id="_______NAME______"></span> *Name*   
 Specifies the name of the UMDF driver to display information about.
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Unavailable</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Wudfext.dll</p></td>
-</tr>
-</tbody>
-</table>
+Wudfext.dll
 
- 
-
-### Additional Information
+## Additional Information
 
 For more information, see [User-Mode Driver Framework Debugging](../debugger/user-mode-driver-framework-debugging.md).
 
@@ -66,13 +47,3 @@ IWDFDriver: 0xf2db8
   !WDFDEVICE 0xf2f80
     !devstack 0x34e4e0 @ level 0
 ```
-
- 
-
- 
-
-
-
-
-
-

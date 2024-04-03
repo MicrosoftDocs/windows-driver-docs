@@ -1,7 +1,7 @@
 ---
-title: "thread (WinDbg)"
-description: "The thread extension displays summary information about a thread on the target system, including the ETHREAD block. This command can be used only during kernel-mode debugging."
-keywords: ["thread Windows Debugging"]
+title: "!thread (WinDbg)"
+description: "The !thread extension displays summary information about a thread on the target system, including the ETHREAD block. This command can be used only during kernel-mode debugging."
+keywords: ["!thread Windows Debugging"]
 ms.date: 07/19/2021
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !thread
 
-
 The **!thread** extension displays summary information about a thread on the target system, including the ETHREAD block. This command can be used only during kernel-mode debugging.
 
 This extension command is not the same as the [**.thread (Set Register Context)**](-thread--set-register-context-.md) command.
@@ -25,8 +24,7 @@ Syntax
 !thread [-p] [-t] [Address [Flags]]
 ```
 
-## <span id="ddk__thread_dbg"></span><span id="DDK__THREAD_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______-p______"></span><span id="_______-P______"></span> **-p**   
 Displays summary information about the process that owns the thread.
@@ -56,7 +54,7 @@ Sets the process context equal to the process that owns the specified thread for
 
 Kdexts.dll
 
-### Additional Information
+## Additional Information
 
 For information about threads in kernel mode, see [Changing Contexts](../debugger/changing-contexts.md) and [Controlling Processes and Threads](../debugger/controlling-processes-and-threads.md). For more information about analyzing processes and threads, see *Microsoft Windows Internals*, by Mark Russinovich, Alex Ionescu and David Solomon.
 
@@ -143,15 +141,3 @@ The useful information in the **!thread** display is explained in the following 
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
- 
-
-
-
-
-
-

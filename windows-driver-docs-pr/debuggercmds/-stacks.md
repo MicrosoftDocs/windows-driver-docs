@@ -1,7 +1,7 @@
 ---
-title: "stacks (WinDbg)"
-description: "The stacks extension displays information about the kernel stacks."
-keywords: ["stacks Windows Debugging"]
+title: "!stacks (WinDbg)"
+description: "The !stacks extension displays information about the kernel stacks."
+keywords: ["!stacks Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !stacks
 
-
 The **!stacks** extension displays information about the kernel stacks.
 
 Syntax
@@ -23,8 +22,7 @@ Syntax
 !stacks [Detail [FilterString]] 
 ```
 
-## <span id="ddk__stacks_dbg"></span><span id="DDK__STACKS_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______Detail______"></span><span id="_______detail______"></span><span id="_______DETAIL______"></span> *Detail*   
 Specifies the level of detail to use in the display. The following table lists the valid values for *Detail*.
@@ -50,7 +48,6 @@ Specifies the level of detail to use in the display. The following table lists t
 </tbody>
 </table>
 
- 
 
 <span id="_______FilterString______"></span><span id="_______filterstring______"></span><span id="_______FILTERSTRING______"></span> *FilterString*   
 Displays only threads that contain the specified substring in a symbol.
@@ -59,9 +56,9 @@ Displays only threads that contain the specified substring in a symbol.
 
 Kdexts.dll
 
-### Additional Information
+## Additional Information
 
-For information about kernel stacks, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon. 
+For information about kernel stacks, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
 
 ## Remarks
 
@@ -131,13 +128,3 @@ Proc.Thread  .Thread  ThreadState  Blocker
                                   ntoskrnl!KeRemoveQueue+0x191
 .....
 ```
-
- 
-
- 
-
-
-
-
-
-

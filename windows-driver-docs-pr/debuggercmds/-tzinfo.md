@@ -1,7 +1,7 @@
 ---
-title: "tzinfo (WinDbg)"
-description: "The tzinfo extension displays the contents of the specified thermal zone information structure."
-keywords: ["thermal zone information", "tzinfo Windows Debugging"]
+title: "!tzinfo (WinDbg)"
+description: "The !tzinfo extension displays the contents of the specified thermal zone information structure."
+keywords: ["thermal zone information", "!tzinfo Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !tzinfo
 
-
 The **!tzinfo** extension displays the contents of the specified thermal zone information structure.
 
 ```dbgcmd
@@ -23,7 +22,6 @@ The **!tzinfo** extension displays the contents of the specified thermal zone in
 
 ## Parameters
 
-
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 The address of a thermal zone information structure that you want to display.
 
@@ -31,18 +29,6 @@ The address of a thermal zone information structure that you want to display.
 
 Kdexts.dll
 
- 
-
-### Additional Information
+## Additional Information
 
 To view the system's power capabilities, use the [**!pocaps**](-pocaps.md) extension command. To view the system's power policy, use the [**!popolicy**](-popolicy.md) extension command. For information about power capabilities and power policy, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
-
- 
-
- 
-
-
-
-
-
-

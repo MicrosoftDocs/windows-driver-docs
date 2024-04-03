@@ -1,7 +1,7 @@
 ---
-title: "wdfkd.wdffindobjects"
-description: "The wdfkd.wdffindobjects extension searches memory for WDF objects."
-keywords: ["wdfkd.wdffindobjects Windows Debugging"]
+title: "!wdfkd.wdffindobjects"
+description: "The !wdfkd.wdffindobjects extension searches memory for WDF objects."
+keywords: ["!wdfkd.wdffindobjects Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !wdfkd.wdffindobjects
 
-
 The **!wdfkd.wdffindobjects** extension searches memory for WDF objects.
 
 ```dbgcmd
@@ -22,7 +21,6 @@ The **!wdfkd.wdffindobjects** extension searches memory for WDF objects.
 ```
 
 ## Parameters
-
 
 <span id="_______StartAddress______"></span><span id="_______startaddress______"></span><span id="_______STARTADDRESS______"></span> *StartAddress*   
 Optional. Specifies the address at which the search must begin. If this is omitted, the search will begin from where the most recent **!wdfkd.wdffindobjects** search ended.
@@ -40,11 +38,11 @@ Displays internal type information for each handle.
 
 Wdfkd.dll
 
-### <span id="Frameworks"></span><span id="frameworks"></span><span id="FRAMEWORKS"></span>Frameworks
+### Frameworks
 
 KMDF 1, UMDF 2
 
-### Additional Information
+## Additional Information
 
 For more information, see [Kernel-Mode Driver Framework Debugging](../debugger/kernel-mode-driver-framework-debugging.md).
 
@@ -93,13 +91,3 @@ The following examples show the output of the **!wdfkd.wdffindobjects** extensio
   0xfffffa600211b6d8  0x0000057ffc51ea18  Handle  !WDFMEMORY 0x0000057ffc51ea18
   0xfffffa600211b6e0  0x0000000000000000  
 ```
-
- 
-
- 
-
-
-
-
-
-

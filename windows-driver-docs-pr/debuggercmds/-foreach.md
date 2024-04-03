@@ -56,7 +56,7 @@ Specifies one or more commands which will be executed for each token. Whenever t
 
  
 
-### Additional Information
+## Additional Information
 
 For information about other control flow tokens and their use in debugger command programs, see [Using Debugger Command Programs](../debugger/using-debugger-command-programs.md).
 
@@ -77,13 +77,4 @@ The **/pS** and **/ps** flags can be used to pass only certain tokens to the spe
 ```
 
 For more examples that use the **.foreach** token, see [Debugger Command Program Examples](../debugger/debugger-command-program-examples.md).
-
- 
-
- 
-
-
-
-
-
 

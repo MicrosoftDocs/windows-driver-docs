@@ -1,7 +1,7 @@
 ---
-title: "wudfext.umirp"
-description: "The wudfext.umirp extension displays information about a host user-mode I/O request packet (UM IRP)."
-keywords: ["wudfext.umirp Windows Debugging"]
+title: "!wudfext.umirp"
+description: "The !wudfext.umirp extension displays information about a host user-mode I/O request packet (UM IRP)."
+keywords: ["!wudfext.umirp Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !wudfext.umirp
 
-
 The **!wudfext.umirp** extension displays information about a host user-mode I/O request packet (UM IRP).
 
 ```dbgcmd
@@ -23,32 +22,14 @@ The **!wudfext.umirp** extension displays information about a host user-mode I/O
 
 ## Parameters
 
-
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the address of the UM IRP to display information about.
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Unavailable</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Wudfext.dll</p></td>
-</tr>
-</tbody>
-</table>
+Wudfext.dll
 
- 
-
-### Additional Information
+## Additional Information
 
 For more information, see [User-Mode Driver Framework Debugging](../debugger/user-mode-driver-framework-debugging.md).
 
@@ -92,13 +73,4 @@ UM IRP: 0x003dd480  UniqueId: 0xde  Kernel Irp: 0x0x85377850
         Key:                  0x00000000
         Offset:               0x0
 ```
-
- 
-
- 
-
-
-
-
-
 

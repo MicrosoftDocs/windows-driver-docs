@@ -1,7 +1,7 @@
 ---
-title: "wdfkd.wdfdevext"
-description: "The wdfkd.wdfdevext extension displays information that is associated with the DeviceExtension member of a Microsoft Windows Driver Model (WDM) DEVICE_OBJECT structure."
-keywords: ["wdfkd.wdfdevext Windows Debugging"]
+title: "!wdfkd.wdfdevext"
+description: "The !wdfkd.wdfdevext extension displays information that is associated with the DeviceExtension member of a Microsoft Windows Driver Model (WDM) DEVICE_OBJECT structure."
+keywords: ["!wdfkd.wdfdevext Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !wdfkd.wdfdevext
 
-
 The **!wdfkd.wdfdevext** extension displays information that is associated with the **DeviceExtension** member of a Microsoft Windows Driver Model (WDM) DEVICE\_OBJECT structure.
 
 ```dbgcmd
@@ -23,7 +22,6 @@ The **!wdfkd.wdfdevext** extension displays information that is associated with 
 
 ## Parameters
 
-
 <span id="_______DeviceExtension______"></span><span id="_______deviceextension______"></span><span id="_______DEVICEEXTENSION______"></span> *DeviceExtension*   
 A pointer to a device extension.
 
@@ -31,11 +29,11 @@ A pointer to a device extension.
 
 Wdfkd.dll
 
-### <span id="Frameworks"></span><span id="frameworks"></span><span id="FRAMEWORKS"></span>Frameworks
+### Frameworks
 
 KMDF 1, UMDF 1, UMDF 2
 
-### Additional Information
+## Additional Information
 
 For more information, see [Kernel-Mode Driver Framework Debugging](../debugger/kernel-mode-driver-framework-debugging.md).
 
@@ -94,13 +92,3 @@ DevNode 0xffffe00000a1e530 for PDO 0xffffe00000b15b00
   ImageName              Ver   DevStack           HostProcess        DeviceID      
   MyUmdf2Driver.dll      v2.0  0x000000a5a3ab5f70 0xffffe00000c32900  \Device\00000052
 ```
-
- 
-
- 
-
-
-
-
-
-

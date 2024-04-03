@@ -32,7 +32,7 @@ Specifies the address of the port.
 <span id="_______Value______"></span><span id="_______value______"></span><span id="_______VALUE______"></span> *Value*   
 Specifies the hexadecimal value to write to the port.
 
-### Environment
+## Environment
 
 <table>
 <colgroup>
@@ -67,14 +67,5 @@ Make sure that you do not send a word or a double-word to a port that does not s
 
 
 [**ib, id, iw (Input from Port)**](ib--iw--id--input-from-port-.md)
-
- 
-
- 
-
-
-
-
-
 
 

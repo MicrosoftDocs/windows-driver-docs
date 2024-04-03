@@ -27,7 +27,7 @@ The **.endsrv** command causes the debugger to cancel an active debugging server
 <span id="_______ServerID______"></span><span id="_______serverid______"></span><span id="_______SERVERID______"></span> *ServerID*   
 Specifies the ID of the debugging server.
 
-### Environment
+## Environment
 
 You can use this command only when you are performing remote debugging through the debugger.
 
@@ -39,7 +39,7 @@ You can use this command only when you are performing remote debugging through t
 
  
 
-### Additional Information
+## Additional Information
 
 For more information about remote debugging, see [Remote Debugging Through the Debugger](../debugger/remote-debugging-through-the-debugger.md).
 

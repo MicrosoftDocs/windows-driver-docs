@@ -42,7 +42,7 @@ A type name or a global symbol.
 <span id="________Address_______"></span><span id="________address_______"></span><span id="________ADDRESS_______"></span> **Address**   
 Memory address containing the type.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -52,7 +52,7 @@ Memory address containing the type.
 
  
 
-### Additional Information
+## Additional Information
 
 The following examples show how to use the dtx command.
 
@@ -111,14 +111,5 @@ fffff806`d24992b8 HdAudio!CAzMixertopoMiniport::`vftable' = <no type information
 
 
 [**dt (Display Type)**](dt--display-type-.md)
-
- 
-
- 
-
-
-
-
-
 
 

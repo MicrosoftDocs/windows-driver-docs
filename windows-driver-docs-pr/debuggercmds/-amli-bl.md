@@ -29,7 +29,7 @@ Syntax
 
 Kdexts.dll
 
-### Additional Information
+## Additional Information
 
 For information about related commands and their uses, see [The amli Debugger](../debugger/the-amli-debugger.md).
 

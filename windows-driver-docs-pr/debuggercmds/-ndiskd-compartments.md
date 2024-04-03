@@ -1,7 +1,7 @@
 ---
-title: "ndiskd.compartments"
-description: "The ndiskd.compartments extension displays all network compartments."
-keywords: ["ndiskd.compartments Windows Debugging"]
+title: "!ndiskd.compartments"
+description: "The !ndiskd.compartments extension displays all network compartments."
+keywords: ["!ndiskd.compartments Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref

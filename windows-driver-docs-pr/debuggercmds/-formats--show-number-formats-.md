@@ -27,7 +27,7 @@ The **.formats** command evaluates an expression or symbol in the context of the
 <span id="_______expression______"></span><span id="_______EXPRESSION______"></span> *expression*   
 Specifies the expression to evaluate. For more information about the syntax, see [Numerical Expression Syntax](numerical-expression-syntax.md).
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -64,14 +64,5 @@ The **Time** field displays a 32-bit value in CRT time stamp format and displays
 [**? (Evaluate Expression)**](---evaluate-expression-.md)
 
 [**?? (Evaluate C++ Expression)**](----evaluate-c---expression-.md)
-
- 
-
- 
-
-
-
-
-
 
 

@@ -1,7 +1,7 @@
 ---
-title: "wdfkd.wdfdevicequeues"
-description: "The wdfkd.wdfdevicequeues extension displays information about all of the framework queue objects that belong to a specified device."
-keywords: ["wdfkd.wdfdevicequeues Windows Debugging"]
+title: "!wdfkd.wdfdevicequeues"
+description: "The !wdfkd.wdfdevicequeues extension displays information about all of the framework queue objects that belong to a specified device."
+keywords: ["!wdfkd.wdfdevicequeues Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !wdfkd.wdfdevicequeues
 
-
 The **!wdfkd.wdfdevicequeues** extension displays information about all of the framework queue objects that belong to a specified device.
 
 ```dbgcmd
@@ -23,7 +22,6 @@ The **!wdfkd.wdfdevicequeues** extension displays information about all of the f
 
 ## Parameters
 
-
 <span id="_______Handle______"></span><span id="_______handle______"></span><span id="_______HANDLE______"></span> *Handle*   
 A handle to a WDFDEVICE-typed object.
 
@@ -31,11 +29,11 @@ A handle to a WDFDEVICE-typed object.
 
 Wdfkd.dll
 
-### <span id="Frameworks"></span><span id="frameworks"></span><span id="FRAMEWORKS"></span>Frameworks
+### Frameworks
 
 KMDF 1, UMDF 2
 
-### Additional Information
+## Additional Information
 
 For more information, see [Kernel-Mode Driver Framework Debugging](../debugger/kernel-mode-driver-framework-debugging.md) and [**!wdfkd.wdfqueue**](-wdfkd-wdfqueue.md).
 
@@ -74,13 +72,3 @@ Queue: 3 (!wdfqueue 0x7cd671e8)
 
     EvtIoDeviceControl: (0xf2226ac0) wdfrawbusenumtest!RawBus_RawPdo_EvtDeviceControl
 ```
-
- 
-
- 
-
-
-
-
-
-

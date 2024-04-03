@@ -1,7 +1,7 @@
 ---
-title: "errlog (WinDbg)"
-description: "The errlog extension displays the contents of any pending entries in the I/O system's error log."
-keywords: ["errlog Windows Debugging"]
+title: "!errlog (WinDbg)"
+description: "The !errlog extension displays the contents of any pending entries in the I/O system's error log."
+keywords: ["!errlog Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -30,7 +30,7 @@ Kdexts.dll
 
  
 
-### Additional Information
+## Additional Information
 
 For information about [**IoWriteErrorLogEntry**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iowriteerrorlogentry), see the Windows Driver Kit (WDK) documentation.
 

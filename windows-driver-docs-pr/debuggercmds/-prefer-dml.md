@@ -14,7 +14,6 @@ api_type:
 
 # .prefer\_dml (Prefer Debugger Markup Language)
 
-
 The **.prefer\_dml** command sets the default behavior for commands that are capable of providing output in the Debugger Markup Language (DML) format.
 
 ```dbgcmd
@@ -24,7 +23,6 @@ The **.prefer\_dml** command sets the default behavior for commands that are cap
 
 ## Parameters
 
-
 <span id="_______0"></span> 0  
 By default, all commands will provide plain text output.
 
@@ -33,16 +31,5 @@ By default, commands that are capable of providing DML output will provide DML o
 
 ## See also
 
-
 [Debugger Markup Language Commands](../debugger/debugger-markup-language-commands.md)
-
- 
-
- 
-
-
-
-
-
-
 

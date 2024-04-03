@@ -14,7 +14,6 @@ api_type:
 
 # .show\_read\_failures
 
-
 The **.show\_read\_failures** command enables or disables the display of read failures.
 
 ```dbgcmd
@@ -24,30 +23,16 @@ The **.show\_read\_failures** command enables or disables the display of read fa
 
 ## Parameters
 
-
 <span id="________v______"></span><span id="________V______"></span> **/v**   
 Enables the display of read failures.
 
 <span id="________V______"></span><span id="________v______"></span> **/V**   
 Disables the display of read failures.
 
-## <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
-
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
 |Modes   |User mode, kernel mode|
 |Targets |Live, crash dump      |
 |Platforms|All                  |
-
- 
-
- 
-
- 
-
-
-
-
-
-

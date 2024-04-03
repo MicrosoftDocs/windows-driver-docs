@@ -21,7 +21,7 @@ The **.event\_code** command displays the current event instructions.
 .event_code 
 ```
 
-### Environment
+## Environment
 
 |  Item       | Description               |
 |-----------|------------------------|
@@ -34,13 +34,4 @@ The **.event\_code** command displays the current event instructions.
 ## Remarks
 
 The **.event\_code** command displays the hexadecimal instructions at the current event's instruction pointer. The display includes up to 64 bytes of instructions if they are available.
-
- 
-
- 
-
-
-
-
-
 

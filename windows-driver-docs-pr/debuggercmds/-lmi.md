@@ -1,7 +1,7 @@
 ---
-title: "lmi (WinDbg)"
-description: "The lmi extension displays detailed information about a module."
-keywords: ["lmi Windows Debugging"]
+title: "!lmi (WinDbg)"
+description: "The !lmi extension displays detailed information about a module."
+keywords: ["!lmi Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -13,7 +13,6 @@ api_type:
 ---
 
 # !lmi
-
 
 The **!lmi** extension displays detailed information about a module.
 
@@ -29,24 +28,7 @@ Specifies a loaded module, either by name or by base address.
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Dbghelp.dll</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Dbghelp.dll</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+Dbghelp.dll
 
 ## Remarks
 
@@ -90,13 +72,4 @@ Debug Data Dirs: Type Size     VA  Pointer
 ```
 
 For an explanation of the abbreviations shown on the **Characteristics** line of this example, see [Symbol Status Abbreviations](../debugger/symbol-status-abbreviations.md).
-
- 
-
- 
-
-
-
-
-
 

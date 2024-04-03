@@ -21,7 +21,7 @@ The **.bpcmds** command displays the commands that were used to set each of the 
     .bpcmds
 ```
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -31,7 +31,7 @@ The **.bpcmds** command displays the commands that were used to set each of the 
 
  
 
-### Additional Information
+## Additional Information
 
 For more information about and examples of how to use breakpoints, other breakpoint commands and methods of controlling breakpoints, see [Using Breakpoints](../debugger/using-breakpoints.md).
 
@@ -95,13 +95,4 @@ In this example, notice that the output of **.bpcmds** begins with the relevant 
 Notice that because breakpoint number 0 was originally set using **bp**, and then was redefined using **bu**, the display shows its type as "bu".
 
 Notice also that breakpoints 3, 4, and 5, which were created by the **bm** commands shown in this example, are displayed as either type "bp" or type "bu", depending on whether the **/d** switch was included when **bm** was used.
-
- 
-
- 
-
-
-
-
-
 

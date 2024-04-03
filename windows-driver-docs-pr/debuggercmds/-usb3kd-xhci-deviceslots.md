@@ -1,7 +1,7 @@
 ---
-title: "usb3kd.xhci_deviceslots"
-description: "The usb3kd.xhci_deviceslots extension displays information about the devices connected to a USB 3.0 host controller."
-keywords: ["usb3kd.xhci_deviceslots Windows Debugging"]
+title: "!usb3kd.xhci_deviceslots"
+description: "The !usb3kd.xhci_deviceslots extension displays information about the devices connected to a USB 3.0 host controller."
+keywords: ["!usb3kd.xhci_deviceslots Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,15 +14,13 @@ api_type:
 
 # !usb3kd.xhci\_deviceslots
 
-
 The [**!usb3kd.xhci\_deviceslots**](-usb3kd-device-info.md) extension displays information about the devices connected to a USB 3.0 host controller.
 
 ```dbgcmd
 !usb3kd.xhci_deviceslots DeviceExtension [SlotNumber] [verbose]
 ```
 
-## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______DeviceExtension______"></span><span id="_______deviceextension______"></span><span id="_______DEVICEEXTENSION______"></span> *DeviceExtension*   
 Address of the device extension for the host controller's functional device object (FDO).
@@ -33,8 +31,7 @@ Slot number of the device to be displayed. If this parameter is omitted, all dev
 <span id="_______verbose______"></span><span id="_______VERBOSE______"></span> **verbose**   
 The display is verbose.
 
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Usb3kd.dll
 
@@ -115,13 +112,8 @@ DeviceContextBase: VA 0xfffffa8005ab9000 LA 0x1168b9000 !wdfcommonbuffer 0x57ffa
 
 ## See also
 
-
 [USB 3.0 Extensions](usb-3-extensions.md)
 
 [**!xhci\_dumpall**](-usb3kd-xhci-dumpall.md)
 
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
-
- 
-
-

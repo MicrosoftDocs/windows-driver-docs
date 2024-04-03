@@ -1,7 +1,7 @@
 ---
-title: "gpiokd.pintable"
-description: "The gpiokd.pintable command displays information about an array of GPIO pins."
-keywords: ["gpiokd.pintable Windows Debugging"]
+title: "!gpiokd.pintable"
+description: "The !gpiokd.pintable extension displays information about an array of GPIO pins."
+keywords: ["!gpiokd.pintable Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -15,13 +15,13 @@ api_type:
 # !gpiokd.pintable
 
 
-The **!gpiokd.pintable** command displays information about an array of GPIO pins.
+The **!gpiokd.pintable** extension displays information about an array of GPIO pins.
 
 ```dbgcmd
 !gpiokd.pintable PinBase PinCount [Flags]
 ```
 
-## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
+## Parameters
 
 
 <span id="_______PinBase______"></span><span id="_______pinbase______"></span><span id="_______PINBASE______"></span> *PinBase*   
@@ -60,25 +60,10 @@ Flags that specify which information is displayed. This parameter is a bitwise O
 </tbody>
 </table>
 
- 
-
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Gpiokd.dll
 
 ## See also
 
-
 [GPIO Extensions](gpio-extensions.md)
-
- 
-
- 
-
-
-
-
-
-
-

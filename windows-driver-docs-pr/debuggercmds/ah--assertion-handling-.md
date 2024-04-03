@@ -49,7 +49,7 @@ Deletes all assertion-handling information for the current process.
 
 Displays the current assertion-handling settings.
 
-### Environment
+## Environment
 
 |  Item     | Description            |
 |-----------|------------------------|
@@ -57,7 +57,7 @@ Displays the current assertion-handling settings.
 | Targets   | live debugging only    |
 | Platforms | all                    |
 
-### Additional Information
+## Additional Information
 
 For more information about break status and handling status, descriptions of all event codes, a list of the default status for all events, and details about other methods of controlling this status, see [Controlling Exceptions and Events](../debugger/controlling-exceptions-and-events.md).
 

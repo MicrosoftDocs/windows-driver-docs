@@ -1,7 +1,7 @@
 ---
-title: "wdfkd.wdfwmi"
-description: "The wdfkd.wdfwmi extension displays the Microsoft Windows Management Instrumentation (WMI) information for a specified framework device object. "
-keywords: ["wdfkd.wdfwmi Windows Debugging"]
+title: "!wdfkd.wdfwmi"
+description: "The !wdfkd.wdfwmi extension displays the Microsoft Windows Management Instrumentation (WMI) information for a specified framework device object. "
+keywords: ["!wdfkd.wdfwmi Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !wdfkd.wdfwmi
 
-
 The **!wdfkd.wdfwmi** extension displays the Microsoft Windows Management Instrumentation (WMI) information for a specified framework device object. This information includes all WMI provider objects and their associated WMI instance objects.
 
 ```dbgcmd
@@ -23,7 +22,6 @@ The **!wdfkd.wdfwmi** extension displays the Microsoft Windows Management Instru
 
 ## Parameters
 
-
 <span id="_______Handle______"></span><span id="_______handle______"></span><span id="_______HANDLE______"></span> *Handle*   
 A handle to a framework device object.
 
@@ -31,24 +29,14 @@ A handle to a framework device object.
 
 Wdfkd.dll
 
-### <span id="Frameworks"></span><span id="frameworks"></span><span id="FRAMEWORKS"></span>Frameworks
+### Frameworks
 
 KMDF 1
 
-### Additional Information
+## Additional Information
 
 For more information, see [Kernel-Mode Driver Framework Debugging](../debugger/kernel-mode-driver-framework-debugging.md).
 
 ## Remarks
 
 The output of the **!wdfkd.wdfwmi** extension includes information about the WMI registration, provider, and instances.
-
- 
-
- 
-
-
-
-
-
-

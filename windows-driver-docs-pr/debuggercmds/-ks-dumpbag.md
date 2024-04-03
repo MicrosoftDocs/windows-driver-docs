@@ -1,7 +1,7 @@
 ---
-title: "ks.dumpbag"
-description: "The ks.dumpbag extension displays the contents of the object bag for the specified object."
-keywords: ["ks.dumpbag Windows Debugging"]
+title: "!ks.dumpbag"
+description: "The !ks.dumpbag extension displays the contents of the object bag for the specified object."
+keywords: ["!ks.dumpbag Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -51,7 +51,7 @@ Optional. Specifies the level of detail to display on a 0-7 scale with progressi
 
  
 
-### Additional Information
+## Additional Information
 
 For more information, see [Kernel Streaming Debugging](../debugger/kernel-streaming-debugging.md).
 
@@ -67,13 +67,4 @@ Filter 829493c4 [CKsFilter = 82949350]:
             Reference Count        : 1
             Item Cleanup Handler   : f7a21730
 ```
-
- 
-
- 
-
-
-
-
-
 

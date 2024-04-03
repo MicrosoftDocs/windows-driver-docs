@@ -1,7 +1,7 @@
 ---
-title: "ndiskd.af (WinDbg)"
-description: "The ndiskd.af extension displays a Connection-Oriented NDIS (CoNDIS) address family (AF)."
-keywords: ["ndiskd.af Windows Debugging"]
+title: "!ndiskd.af (WinDbg)"
+description: "The !ndiskd.af extension displays a Connection-Oriented NDIS (CoNDIS) address family (AF)."
+keywords: ["!ndiskd.af Windows Debugging"]
 ms.date: 06/15/2020
 topic_type:
 - apiref

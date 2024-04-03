@@ -1,7 +1,7 @@
 ---
-title: "wdfkd.wdflogdump"
-description: "The wdfkd.wdflogdump extension displays the WDF In-flight Recorder log records, if available, for a KMDF driver or a UMDF 2 driver. "
-keywords: ["wdfkd.wdflogdump Windows Debugging"]
+title: "!wdfkd.wdflogdump"
+description: "The !wdfkd.wdflogdump extension displays the WDF In-flight Recorder log records, if available, for a KMDF driver or a UMDF 2 driver. "
+keywords: ["!wdfkd.wdflogdump Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -13,7 +13,6 @@ api_type:
 ---
 
 # !wdfkd.wdflogdump
-
 
 The **!wdfkd.wdflogdump** extension displays the WDF In-flight Recorder log records, if available, for a KMDF driver or a UMDF 2 driver. You can use this command with a [complete memory dump](../debugger/complete-memory-dump.md), a [kernel memory dump](../debugger/kernel-memory-dump.md), or a [live kernel-mode target](../debugger/live-kernel-mode-targets.md).
 
@@ -65,7 +64,7 @@ UMDF:
 
 Wdfkd.dll
 
-### <span id="Frameworks"></span><span id="frameworks"></span><span id="FRAMEWORKS"></span>Frameworks
+### Frameworks
 
 KMDF 1, UMDF 2
 
@@ -83,9 +82,6 @@ For information about enabling the inflight trace recorder for your driver, see 
 
 ## See also
 
-
 [**!wdfkd.wdfcrashdump**](-wdfkd-wdfcrashdump.md)
 
 [**!wdfkd.wdfsettraceprefix**](-wdfkd-wdfsettraceprefix.md)
-
-

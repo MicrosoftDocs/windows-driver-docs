@@ -39,7 +39,7 @@ Specifies the first line to display. The default value is the current line.
 <span id="_______count______"></span><span id="_______COUNT______"></span> *count*   
 Specifies the quantity of lines to display. The default value is 20 (0x14), unless you have changed the default value by using the [**lsp -a**](lsp--set-number-of-source-lines-.md) command.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -59,14 +59,5 @@ After you run the **ls** or **lsa** command, the current line is redefined as th
 [**lsc (List Current Source)**](lsc--list-current-source-.md)
 
 [**lsf, lsf- (Load or Unload Source File)**](lsf--lsf---load-or-unload-source-file-.md)
-
- 
-
- 
-
-
-
-
-
 
 

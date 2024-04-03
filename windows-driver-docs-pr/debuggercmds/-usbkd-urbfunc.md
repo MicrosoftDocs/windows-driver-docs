@@ -1,7 +1,7 @@
 ---
-title: "usbkd.urbfunc"
-description: "The usbkd.urbfunc command displays the name of a URB function code."
-keywords: ["usbkd.urbfunc Windows Debugging"]
+title: "!usbkd.urbfunc"
+description: "The !usbkd.urbfunc command displays the name of a URB function code."
+keywords: ["!usbkd.urbfunc Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,21 +14,18 @@ api_type:
 
 # !usbkd.urbfunc
 
-
 The **!usbkd.urbfunc** command displays the name of a URB function code.
 
 ```dbgcmd
 !usbkd.urbfunc FunctionCode
 ```
 
-## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______FunctionCode______"></span><span id="_______functioncode______"></span><span id="_______FUNCTIONCODE______"></span> *FunctionCode*   
 The hexadecimal value of a URB function code. These codes are defined in usb.h.
 
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Usbkd.dll
 
@@ -44,11 +41,6 @@ URB_FUNCTION_ISOCH_TRANSFER (0xA)
 
 ## See also
 
-
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
-
- 
-
-

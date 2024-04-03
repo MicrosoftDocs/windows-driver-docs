@@ -1,7 +1,7 @@
 ---
-title: "wudfext.wudfusbinterface"
-description: "The wudfext.wudfusbinterface extension displays information about a USB interface object."
-keywords: ["wudfext.wudfusbinterface Windows Debugging"]
+title: "!wudfext.wudfusbinterface"
+description: "The !wudfext.wudfusbinterface extension displays information about a USB interface object."
+keywords: ["!wudfext.wudfusbinterface Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !wudfext.wudfusbinterface
 
-
 The **!wudfext.wudfusbinterface** extension displays information about a USB interface object.
 
 ```dbgcmd
@@ -22,7 +21,6 @@ The **!wudfext.wudfusbinterface** extension displays information about a USB int
 ```
 
 ## Parameters
-
 
 <span id="_______pWDFUSBInterface______"></span><span id="_______pwdfusbinterface______"></span><span id="_______PWDFUSBINTERFACE______"></span> *pWDFUSBInterface*   
 Specifies the address of the **IWDFUsbInterface** interface to display information about. The [**!wudfext.wudfobject**](-wudfext-wudfobject.md) extension command determines the address of **IWDFUsbInterface**.
@@ -32,35 +30,8 @@ Optional. Specifies the type of the interface (for example, **IWDFDevice**). If 
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Unavailable</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP with UMDF version 1.7 and later</strong></p></td>
-<td align="left"><p>Wudfext.dll</p></td>
-</tr>
-</tbody>
-</table>
+Wudfext.dll
 
- 
-
-### Additional Information
+## Additional Information
 
 For more information, see [User-Mode Driver Framework Debugging](../debugger/user-mode-driver-framework-debugging.md).
-
- 
-
- 
-
-
-
-
-
-

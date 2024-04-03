@@ -68,13 +68,4 @@ To start debugging a HID issue, enter the [**!hidtree**](-hidkd-hidtree.md) comm
 
 [Specialized Extension Commands](specialized-extensions.md)
 
- 
-
- 
-
-
-
-
-
-
 

@@ -1,7 +1,7 @@
 ---
-title: "usb3kd.port_info"
-description: "The usb3kd.port_info command displays information about a USB port in the USB 3.0 tree."
-keywords: ["usb3kd.port_info Windows Debugging"]
+title: "!usb3kd.port_info"
+description: "The !usb3kd.port_info command displays information about a USB port in the USB 3.0 tree."
+keywords: ["!usb3kd.port_info Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,21 +14,18 @@ api_type:
 
 # !usb3kd.port\_info
 
-
 The [**!usb3kd.port\_info**](-usb3kd-device-info.md) command displays information about a USB port in the [USB 3.0 tree](usb-3-extensions.md#usb-3-tree).
 
 ```dbgcmd
 !usb3kd.port_info PortContext
 ```
 
-## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______PortContext______"></span><span id="_______portcontext______"></span><span id="_______PORTCONTEXT______"></span> *PortContext*   
 Address of a \_PORT\_CONTEXT structure.
 
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Usb3kd.dll
 
@@ -80,11 +77,6 @@ Port Event History:
 
 ## See also
 
-
 [USB 3.0 Extensions](usb-3-extensions.md)
 
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
-
- 
-
-

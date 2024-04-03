@@ -36,7 +36,7 @@ Displays the friendly name of the ACL, if the value of *Flags* is 1. This friend
 
 Exts.dll
 
-### Additional Information
+## Additional Information
 
 For more information about access control lists, see [**!sid**](-sid.md), [**!sd**](-sd.md), and [Determining the ACL of an Object](../debugger/determining-the-acl-of-an-object.md). Also, see *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 

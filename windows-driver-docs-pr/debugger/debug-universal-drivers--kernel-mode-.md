@@ -151,6 +151,8 @@ Key=2steg4fzbj2sz.23418vzkd4ko3.1g34ou07z4pev.1sp3yo9yz874p
 > [!IMPORTANT]
 > Before using BCDEdit to change boot information you may need to temporarily suspend Windows security features such as BitLocker and Secure Boot on the test PC.
 > Re-enable these security features when testing is complete and appropriately manage the test PC, when the security features are disabled.
+> Secure boot is typically disabled in UEFI. To access UEFI setting, Use System, Recovery, Advanced start-up. On restart, select Troubleshoot, Advanced options, UEFI Firmware settings.
+> Use caution, as incorrectly setting UEFI options or disabling BitLocker, may make the system inoperable.
 >
 
 5. Type this command to confirm that the dbgsettings are set properly.

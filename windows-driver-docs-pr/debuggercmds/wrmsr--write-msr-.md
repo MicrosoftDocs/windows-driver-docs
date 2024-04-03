@@ -27,7 +27,7 @@ Specifies the address of the MSR.
 <span id="_______Value______"></span><span id="_______value______"></span><span id="_______VALUE______"></span> *Value*   
 Specifies the 64-bit hexadecimal value to write to the MSR.
 
-### Environment
+## Environment
 
 <table>
 <colgroup>
@@ -60,14 +60,5 @@ The **wrmsr** command can set MSR's on x86-based and x64-based platforms. The MS
 
 
 [**rdmsr (Read MSR)**](rdmsr--read-msr-.md)
-
- 
-
- 
-
-
-
-
-
 
 

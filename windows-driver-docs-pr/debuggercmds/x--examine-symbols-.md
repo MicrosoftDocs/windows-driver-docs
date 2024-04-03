@@ -87,7 +87,7 @@ Specifies a pattern that the symbol must contain. *Symbol* can contain a variety
 
 Because this pattern is matched to a symbol, the match is not case sensitive, and a single leading underscore (\_) represents any quantity of leading underscores. You can add spaces within *Symbol*, so that you can specify symbol names that contain spaces (such as "operator new" or "Template&lt;A, B&gt;") without using wildcard characters.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -258,14 +258,5 @@ Consider using the [**dt (Display Type)**](dt--display-type-.md) command when wo
 [Verifying Symbols](../debugger/verifying-symbols.md)
 
 [**dv (Display Local Variables)**](dv--display-local-variables-.md)
-
- 
-
- 
-
-
-
-
-
 
 

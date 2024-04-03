@@ -1,7 +1,7 @@
 ---
-title: "heap (WinDbg)"
-description: "The heap extension displays heap usage information, controls breakpoints in the heap manager, detects leaked heap blocks, searches for heap blocks, or displays page heap information."
-keywords: ["heap usage", "GFlags, enabling page heap", "heap Windows Debugging"]
+title: "!heap (WinDbg)"
+description: "The !heap extension displays heap usage information, controls breakpoints in the heap manager, detects leaked heap blocks, searches for heap blocks, or displays page heap information."
+keywords: ["heap usage", "GFlags, enabling page heap", "!heap Windows Debugging"]
 ms.date: 08/23/2019
 topic_type:
 - apiref
@@ -13,7 +13,6 @@ api_type:
 ---
 
 # !heap
-
 
 The **!heap** extension displays heap usage information, controls breakpoints in the heap manager, detects leaked heap blocks, searches for heap blocks, or displays page heap information.
 
@@ -412,7 +411,7 @@ Exts.dll</td>
 </tbody>
 </table>
 
-### Additional Information
+## Additional Information
 
 For information about heaps, see the following resources:
 

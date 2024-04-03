@@ -1,7 +1,7 @@
 ---
-title: "usbkd.usbhublog"
-description: "The usbkd.usbhublog command displays the debug log for a USB hub."
-keywords: ["usbkd.usbhublog Windows Debugging"]
+title: "!usbkd.usbhublog"
+description: "The !usbkd.usbhublog command displays the debug log for a USB hub."
+keywords: ["!usbkd.usbhublog Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,15 +14,13 @@ api_type:
 
 # !usbkd.usbhublog
 
-
 The **!usbkd.usbhublog** command displays the debug log for a USB hub.
 
 ```dbgcmd
 !usbkd.usbhublog DeviceExtension[, NumberOfEntries]
 ```
 
-## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______DeviceExtension______"></span><span id="_______deviceextension______"></span><span id="_______DEVICEEXTENSION______"></span> *DeviceExtension*   
 Address of the device extension for the functional device object (FDO) of a USB hub.
@@ -30,8 +28,7 @@ Address of the device extension for the functional device object (FDO) of a USB 
 <span id="_______NumberOfEntries______"></span><span id="_______numberofentries______"></span><span id="_______NUMBEROFENTRIES______"></span> *NumberOfEntries*   
 The number of log entries to display. To display the entire log, set this parameter to -1.
 
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Usbkd.dll
 
@@ -82,11 +79,6 @@ LOG@: ffffe000023201a0 (usbhub!_DEVICE_EXTENSION_HUB)
 
 ## See also
 
-
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
-
- 
-
-

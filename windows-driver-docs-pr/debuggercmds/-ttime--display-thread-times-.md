@@ -14,40 +14,19 @@ api_type:
 
 # .ttime (Display Thread Times)
 
-
 The **.ttime** command displays the running times for a thread.
 
 ```dbgcmd
 .ttime 
 ```
 
-## <span id="ddk_meta_display_thread_times_dbg"></span><span id="DDK_META_DISPLAY_THREAD_TIMES_DBG"></span>
+## Environment
 
-
-### Environment
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Modes</strong></p></td>
-<td align="left"><p>user mode only</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Targets</strong></p></td>
-<td align="left"><p>live, crash dump</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Platforms</strong></p></td>
-<td align="left"><p>x86 only</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Item      | Description      |
+|-----------|------------------|
+| Modes     | user mode only   |
+| Targets   | live, crash dump |
+| Platforms | x86 only         |
 
 ## Remarks
 
@@ -63,13 +42,3 @@ Created: Sat Jun 28 17:58:42 2003
 Kernel:  0 days 0:00:00.131
 User:    0 days 0:00:02.109
 ```
-
- 
-
- 
-
-
-
-
-
-

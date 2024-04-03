@@ -1,7 +1,7 @@
 ---
-title: "ks.allstreams"
-description: "The ks.allstreams extension walks the entire device tree and finds every kernel streaming device in the system."
-keywords: ["ks.allstreams Windows Debugging"]
+title: "!ks.allstreams"
+description: "The !ks.allstreams extension walks the entire device tree and finds every kernel streaming device in the system."
+keywords: ["!ks.allstreams Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !ks.allstreams
 
-
 The **!ks.allstreams** extension walks the entire device tree and finds every kernel streaming device in the system.
 
 ```dbgcmd
@@ -22,7 +21,6 @@ The **!ks.allstreams** extension walks the entire device tree and finds every ke
 ```
 
 ## Parameters
-
 
 <span id="_______Flags______"></span><span id="_______flags______"></span><span id="_______FLAGS______"></span> *Flags*   
 Optional. Specifies the kind of information to be displayed. *Flags* can be any combination of the following bits. The default value is 0x1:
@@ -66,7 +64,7 @@ Optional. Specifies the level of detail to display on a 0-7 scale with progressi
 
  
 
-### Additional Information
+## Additional Information
 
 For more information, see [Kernel Streaming Debugging](../debugger/kernel-streaming-debugging.md).
 
@@ -86,13 +84,4 @@ kd> !allstreams
     Functional Device 824661b8 [\Driver\MSPCLOCK]
     Functional Device 8241c020 [\Driver\avssamp]
 ```
-
- 
-
- 
-
-
-
-
-
 

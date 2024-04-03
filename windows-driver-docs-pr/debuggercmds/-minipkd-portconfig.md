@@ -1,6 +1,6 @@
 ---
-title: "minipkd.portconfig"
-description: "The minipkd.portconfig extension displays information about the specified PORT_CONFIGURATION_INFORMATION data structure."
+title: "!minipkd.portconfig"
+description: "The !minipkd.portconfig extension displays information about the specified PORT_CONFIGURATION_INFORMATION data structure."
 keywords: ["minipkd.portconfig Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -29,39 +29,15 @@ Specifies the address of a PORT\_CONFIGURATION\_INFORMATION data structure.
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Unavailable</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Minipkd.dll</p></td>
-</tr>
-</tbody>
-</table>
+Minipkd.dll
 
  
 
-### Additional Information
+## Additional Information
 
 For more information, see [SCSI Miniport Debugging](../debugger/scsi-miniport-debugging.md).
 
 ## Remarks
 
 The *PortConfig* address can be found in the **Port Config Info** field of the [**!minipkd.adapter**](-minipkd-adapter.md) display.
-
- 
-
- 
-
-
-
-
-
 

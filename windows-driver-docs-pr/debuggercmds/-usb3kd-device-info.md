@@ -1,7 +1,7 @@
 ---
-title: "usb3kd.device_info"
-description: "The usb3kd.device_info command displays information about a USB device in the USB 3.0 tree."
-keywords: ["usb3kd.device_info Windows Debugging"]
+title: "!usb3kd.device_info"
+description: "The !usb3kd.device_info command displays information about a USB device in the USB 3.0 tree."
+keywords: ["!usb3kd.device_info Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,21 +14,18 @@ api_type:
 
 # !usb3kd.device\_info
 
-
 The **!usb3kd.device\_info** command displays information about a USB device in the [USB 3.0 tree](usb-3-extensions.md#usb-3-tree).
 
 ```dbgcmd
 !usb3kd.device_info DeviceContext
 ```
 
-## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______DeviceContext______"></span><span id="_______devicecontext______"></span><span id="_______DEVICECONTEXT______"></span> *DeviceContext*   
 Address of the \_DEVICE\_CONTEXT structure that represents the device.
 
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Usb3kd.dll
 
@@ -101,13 +98,8 @@ Device Event History:
 
 ## See also
 
-
 [USB 3.0 Extensions](usb-3-extensions.md)
 
 [**!usb3kd.device\_info\_from\_pdo**](-usb3kd-device-info-from-pdo.md)
 
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
-
- 
-
-

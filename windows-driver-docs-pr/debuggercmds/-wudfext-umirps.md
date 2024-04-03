@@ -1,7 +1,7 @@
 ---
-title: "wudfext.umirps"
-description: "The wudfext.umirps extension displays the list of pending user-mode I/O request packets (UM IRPs) in the host process."
-keywords: ["wudfext.umirps Windows Debugging"]
+title: "!wudfext.umirps"
+description: "The !wudfext.umirps extension displays the list of pending user-mode I/O request packets (UM IRPs) in the host process."
+keywords: ["!wudfext.umirps Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !wudfext.umirps
 
-
 The **!wudfext.umirps** extension displays the list of pending user-mode I/O request packets (UM IRPs) in the host process.
 
 ```dbgcmd
@@ -22,7 +21,6 @@ The **!wudfext.umirps** extension displays the list of pending user-mode I/O req
 ```
 
 ## Parameters
-
 
 <span id="_______NumberOfIrps______"></span><span id="_______numberofirps______"></span><span id="_______NUMBEROFIRPS______"></span> *NumberOfIrps*   
 Optional. Specifies the number of pending UM IRPs to display information about. If *NumberOfIrps* is an asterisk (\*) or is omitted, all UM all UM IRPs will be displayed.
@@ -35,26 +33,9 @@ Displays details about the pending IRPs.
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Unavailable</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Wudfext.dll</p></td>
-</tr>
-</tbody>
-</table>
+Wudfext.dll
 
- 
-
-### Additional Information
+## Additional Information
 
 For more information, see [User-Mode Driver Framework Debugging](../debugger/user-mode-driver-framework-debugging.md).
 
@@ -84,13 +65,4 @@ Number of pending IRPS: 0xc8
 ```
 
 To determine the corresponding kernel-mode IRP, use the [**!wudfext.wudfdownkmirp**](-wudfext-wudfdownkmirp.md) extension. Alternatively, you can use the values in the **UniqueId** and **KernelIrp** columns to match a UMDF IRP (or UM IRP) to a corresponding kernel IRP. You can pass the values in the **CWudfIrp** column to the [**!wudfext.umirp**](-wudfext-umirp.md) extension to determine the framework **IWDFRequest** objects that each layer in the device stack can access.
-
- 
-
- 
-
-
-
-
-
 

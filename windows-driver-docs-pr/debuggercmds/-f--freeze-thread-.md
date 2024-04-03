@@ -29,7 +29,7 @@ Do not confuse this command with the [**f (Fill Memory)**](f--fp--fill-memory-.m
 <span id="_______Thread______"></span><span id="_______thread______"></span><span id="_______THREAD______"></span> *Thread*   
 Specifies the thread to freeze. For more information about the syntax, see [Thread Syntax](thread-syntax.md).
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -39,7 +39,7 @@ Specifies the thread to freeze. For more information about the syntax, see [Thre
 
  
 
-### Additional Information
+## Additional Information
 
 For more information about how frozen threads behave and a list of other commands that control the freezing and suspending of threads, see [Controlling Processes and Threads](../debugger/controlling-processes-and-threads.md).
 
@@ -72,13 +72,4 @@ The following command unfreezes thread number 123.
 ```dbgcmd
 0:000> ~123 u
 ```
-
- 
-
- 
-
-
-
-
-
 

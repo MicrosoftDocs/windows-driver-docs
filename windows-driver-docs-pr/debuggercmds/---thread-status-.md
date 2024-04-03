@@ -26,7 +26,7 @@ The tilde (**~**) command displays status for the specified thread or for all th
 
 Specifies the thread to display. If you omit this parameter, all threads are displayed. For more information about the syntax, see [Thread Syntax](thread-syntax.md).
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -34,7 +34,7 @@ Specifies the thread to display. If you omit this parameter, all threads are dis
 |Targets|Live, crash dump|
 |Platforms|All|
 
-### Additional Information
+## Additional Information
 
 For more information and other methods of displaying or controlling processes and threads, see [Controlling Processes and Threads](../debugger/controlling-processes-and-threads.md).
 

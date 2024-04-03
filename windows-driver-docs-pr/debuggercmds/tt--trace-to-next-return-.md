@@ -46,7 +46,7 @@ Specifies the address where the debugger begins execution. If you do not use *St
 <span id="_______Count______"></span><span id="_______count______"></span><span id="_______COUNT______"></span> *Count*   
 Specifies the number of **return** instructions that the debugger must encounter for the **th** command to end. The default value is one.
 
-### Environment
+## Environment
 
 |  Item       | Description               |
 |-----------|------------------------|
@@ -56,7 +56,7 @@ Specifies the number of **return** instructions that the debugger must encounter
 
  
 
-### Additional Information
+## Additional Information
 
 For more information about related commands, see [Controlling the Target](../debugger/controlling-the-target.md).
 
@@ -67,13 +67,4 @@ The **tt** command causes the target to begin executing. This execution continue
 If the program counter is already on a **return** instruction, the debugger traces into the return and continues executing until another **return** is reached. This tracing, rather than execution, of the call is the only difference between **tt** and [**pt (Step to Next Return)**](pt--step-to-next-return-.md).
 
 In source mode, you can associate one source line with multiple assembly instructions. This command does not stop at a **return** instruction that is associated with the current source line.
-
- 
-
- 
-
-
-
-
-
 

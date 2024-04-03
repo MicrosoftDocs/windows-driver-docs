@@ -1,7 +1,7 @@
 ---
-title: "wdfkd.wdfumdevstacks"
-description: "The wdfkd.wdfumdevstacks extension displays information about all UMDF device stacks in the implicit process."
-keywords: ["wdfkd.wdfumdevstacks Windows Debugging"]
+title: "!wdfkd.wdfumdevstacks"
+description: "The !wdfkd.wdfumdevstacks extension displays information about all UMDF device stacks in the implicit process."
+keywords: ["!wdfkd.wdfumdevstacks Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !wdfkd.wdfumdevstacks
 
-
 The **!wdfkd.wdfumdevstacks** extension displays information about all UMDF device stacks in the [implicit process](../debugger/controlling-threads-and-processes.md).
 
 ```dbgcmd
@@ -22,7 +21,6 @@ The **!wdfkd.wdfumdevstacks** extension displays information about all UMDF devi
 ```
 
 ## Parameters
-
 
 <span id="_______Flags______"></span><span id="_______flags______"></span><span id="_______FLAGS______"></span> *Flags*   
 Optional. Specifies the type of information to be displayed. *Flags* can be any combination of the following bits. The default value is 0x01.
@@ -33,18 +31,15 @@ Displays detailed information about each device stack.
 <span id="Bit_7__0x80_"></span><span id="bit_7__0x80_"></span><span id="BIT_7__0X80_"></span>Bit 7 (0x80)  
 Displays information about the internal framework.
 
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Wdfkd.dll
 
-## <span id="Frameworks"></span><span id="frameworks"></span><span id="FRAMEWORKS"></span>Frameworks
-
+## Frameworks
 
 UMDF 2
 
-## <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
-
+## Additional Information
 
 For more information, see [Kernel-Mode Driver Framework Debugging](../debugger/kernel-mode-driver-framework-debugging.md).
 
@@ -93,13 +88,3 @@ Number of device stacks: 1
 ```
 
 The preceding output shows that there is one UMDF device stack in the implicit process. You can also see that the device stack has one device object (Number of UM devices: 1).
-
- 
-
- 
-
-
-
-
-
-

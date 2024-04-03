@@ -1,7 +1,7 @@
 ---
-title: "dblink (WinDbg)"
-description: "The dblink extension displays a linked list in the backward direction."
-keywords: ["dblink Windows Debugging"]
+title: "!dblink (WinDbg)"
+description: "The !dblink extension displays a linked list in the backward direction."
+keywords: ["!dblink Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -44,13 +44,4 @@ Kdexts.dll
 The **!dblink** extension traverses the **Blink** fields of the LIST\_ENTRY structure and displays up to four ULONGs at each address. To go in the other direction, use [**!dflink**](-dflink.md).
 
 The [**dl (Display Linked List)**](dl--display-linked-list-.md) command is more versatile than **!dblink** and [**!dflink**](-dflink.md).
-
- 
-
- 
-
-
-
-
-
 

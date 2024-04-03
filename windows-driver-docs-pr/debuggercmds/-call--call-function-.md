@@ -45,7 +45,7 @@ Clears any existing call on the current thread.
 <span id="________C______"></span><span id="________c______"></span> **/C**   
 Clears any existing call on the current thread, and resets the context of the current thread to the context stored by the outstanding call.
 
-### Environment
+## Environment
 
 <table>
 <colgroup>
@@ -97,13 +97,4 @@ The following code example shows how the **.call /s** command is used.
 ```
 
 In this example, you have private symbols for **KnownFunction**, which takes an integer as its only argument and returns, for example, a pointer to an array. You do not have symbols, or possibly you only have public symbols for **UnknownFunction**, but you do know that it takes an integer as its only argument and returns a pointer to an array. By using the **/s** option, you can specify that **UnknownFunction** will work the same way that **KnownFunction** does. Thus, you can successfully generate a call to **UnknownFunction**.
-
- 
-
- 
-
-
-
-
-
 

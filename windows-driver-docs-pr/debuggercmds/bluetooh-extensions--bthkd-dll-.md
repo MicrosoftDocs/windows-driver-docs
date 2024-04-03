@@ -102,12 +102,3 @@ The Bluetooth debugger extensions display information about the current Bluetoot
 
  
 
- 
-
- 
-
-
-
-
-
-

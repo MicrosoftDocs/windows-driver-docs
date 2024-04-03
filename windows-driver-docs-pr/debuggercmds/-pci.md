@@ -1,7 +1,7 @@
 ---
-title: "pci (WinDbg)"
-description: "The pci extension displays the current status of the peripheral component interconnect (PCI) buses, as well as any devices attached to those buses."
-keywords: ["PCI bus", "PCI device", "PCI configuration space", "pci Windows Debugging"]
+title: "!pci (WinDbg)"
+description: "The !pci extension displays the current status of the peripheral component interconnect (PCI) buses, as well as any devices attached to those buses."
+keywords: ["PCI bus", "PCI device", "PCI configuration space", "!pci Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -13,7 +13,6 @@ api_type:
 ---
 
 # !pci
-
 
 The **!pci** extension displays the current status of the peripheral component interconnect (PCI) buses, as well as any devices attached to those buses.
 
@@ -80,30 +79,11 @@ Specifies the last address from which raw bytes or DWORDs are to be displayed. T
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p></p>
 Kext.dll
-Kdextx86.dll</td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Kext.dll</p></td>
-</tr>
-</tbody>
-</table>
-
-
 
 This extension command can only be used with an x86-based target computer.
 
-### Additional Information
+## Additional Information
 
 See [Plug and Play Debugging](../debugger/plug-and-play-debugging.md) for applications of this extension command and additional examples. For information about PCI buses, see the Windows Driver Kit (WDK) documentation.
 
@@ -229,13 +209,3 @@ PCI Segment 0x1 Bus 0xc6
 PCI Segment 0x1 Bus 0xe3
 00:0  103c:403b.00  Cmd[0547:imb.ps]  Sts[0010:c....]  HP PCI-PCI Bridge 0xe3->0xe4-0xe4
 ```
-
-
-
-
-
-
-
-
-
-
