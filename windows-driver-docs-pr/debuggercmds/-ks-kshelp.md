@@ -1,7 +1,7 @@
 ---
-title: "ks.kshelp (WinDbg)"
-description: "The ks.kshelp extension displays a help text showing original KS 1.0-specific Ks.dll extension commands."
-keywords: ["ks.kshelp Windows Debugging"]
+title: "!ks.kshelp (WinDbg)"
+description: "The !ks.kshelp extension displays a help text showing original KS 1.0-specific Ks.dll extension commands."
+keywords: ["!ks.kshelp Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -42,16 +42,7 @@ The **!ks.kshelp** extension displays a help text showing original KS 1.0-specif
 
  
 
-### Additional Information
+## Additional Information
 
 For more information, see [Kernel Streaming Debugging](../debugger/kernel-streaming-debugging.md).
-
- 
-
- 
-
-
-
-
-
 

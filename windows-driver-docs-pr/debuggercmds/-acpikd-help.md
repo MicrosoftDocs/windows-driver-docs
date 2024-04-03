@@ -24,6 +24,6 @@ The **!acpikd.help** extension displays help text in the Debugger Command window
 
 Acpikd.dll
 
-### Additional Information
+## Additional Information
 
 For more information, see [ACPI Debugging](../debugger/acpi-debugging.md).

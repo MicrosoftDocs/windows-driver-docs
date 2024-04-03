@@ -1,7 +1,7 @@
 ---
-title: "ppmstate (WinDbg)"
-description: "The ppmstate command"
-keywords: ["ppmstate Windows Debugging"]
+title: "!ppmstate (WinDbg)"
+description: "The !ppmstate extension command displays power state information."
+keywords: ["!ppmstate Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,7 @@ api_type:
 
 # !ppmstate
 
-The **!ppmstate** command displays power state information.
+The **!ppmstate** extension command displays power state information.
 
 ```dbgcmd
 !ppmstate
@@ -24,17 +24,8 @@ The **!ppmstate** command displays power state information.
 
 None
 
-
 ## DLL
 
-Kdexts.dll 
-
+Kdexts.dll
 
 **NOTE:** This command is not supported on all versions of Windows, such as Windows 10, Version 1703.
- 
-
-
-
-
-
-

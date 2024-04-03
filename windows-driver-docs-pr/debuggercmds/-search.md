@@ -1,7 +1,7 @@
 ---
-title: "search (WinDbg)"
-description: "The search extension searches pages in physical memory for pointer-sized data that matches the specified criteria."
-keywords: ["search Windows Debugging"]
+title: "!search (WinDbg)"
+description: "The !search extension searches pages in physical memory for pointer-sized data that matches the specified criteria."
+keywords: ["!search Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !search
 
-
 The **!search** extension searches pages in physical memory for pointer-sized data that matches the specified criteria.
 
 Syntax
@@ -25,7 +24,6 @@ Syntax
 ```
 
 ## Parameters
-
 
 <span id="_______-s______"></span><span id="_______-S______"></span> **-s**   
 Causes symbol check errors to be ignored during the search. This is useful if you are getting too many "incorrect symbols for kernel" errors.
@@ -52,7 +50,7 @@ Displays help for this extension in the Debugger Command window.
 
 Kdexts.dll
 
-### Additional Information
+## Additional Information
 
 For more ways to display and search physical memory, see [Reading and Writing Memory](../debugger/reading-and-writing-memory.md).
 
@@ -103,13 +101,3 @@ Search done.
 The columns in the display are as follows: **Pfn** is the page frame number (PFN) of the page; **Offset** is the offset on that page; **Hit** is the value at that address; **Va** is the virtual address mapped to this physical address (if this exists and can be determined); **Pte** is the page table entry (PTE).
 
 To calculate the physical address, shift the PFN left three hexadecimal digits (12 bits) and add the offset. For example, the last line in the table is virtual address 0x0237D000 + 0x428 = 0x0237D428.
-
- 
-
- 
-
-
-
-
-
-

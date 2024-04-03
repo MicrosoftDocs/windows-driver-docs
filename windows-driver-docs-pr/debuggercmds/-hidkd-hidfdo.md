@@ -1,7 +1,7 @@
 ---
-title: "hidkd.hidfdo"
-description: "The hidkd.hidfdo command displays HID information associated with a functional device object (FDO)."
-keywords: ["hidkd.hidfdo Windows Debugging"]
+title: "!hidkd.hidfdo"
+description: "The !hidkd.hidfdo extension command displays HID information associated with a functional device object (FDO)."
+keywords: ["!hidkd.hidfdo Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -15,20 +15,19 @@ api_type:
 # !hidkd.hidfdo
 
 
-The **!hidkd.hidfdo** command displays HID information associated with a functional device object (FDO).
+The **!hidkd.hidfdo** extension command displays HID information associated with a functional device object (FDO).
 
 ```dbgcmd
 !hidkd.hidfdo fdo
 ```
 
-## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
+## Parameters
 
 
 <span id="_______fdo______"></span><span id="_______FDO______"></span> *fdo*   
 Address of an FDO. To get the addresses of FDOs that are associated with HID drivers, use the [**!usbhid.hidtree**](-hidkd-hidtree.md) command.
 
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Hidkd.dll
 
@@ -61,16 +60,4 @@ FDO  VendorID:0x045E(Microsoft Corporation) ProductID:0x0745 Version:0x0634
 
 ## See also
 
-
 [HID Extensions](hid-extensions.md)
-
- 
-
- 
-
-
-
-
-
-
-

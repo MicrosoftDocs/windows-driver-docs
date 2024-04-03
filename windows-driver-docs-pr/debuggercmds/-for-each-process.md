@@ -1,7 +1,7 @@
 ---
-title: "for_each_process"
-description: "The for_each_process extension executes the specified debugger command once for each process in the target."
-keywords: ["for_each_process Windows Debugging"]
+title: "!for_each_process"
+description: "The !for_each_process extension executes the specified debugger command once for each process in the target."
+keywords: ["!for_each_process Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -37,26 +37,14 @@ Displays help for this extension in the Debugger Command window.
 
 This extension works only in kernel mode, even though it resides in Ext.dll.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Ext.dll</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Ext.dll</p></td>
-</tr>
-</tbody>
-</table>
+
+Ext.dll
+
+
 
  
 
-### Additional Information
+## Additional Information
 
 For general information about processes, see [Threads and Processes](../debugger/controlling-threads-and-processes.md). For information about manipulating or obtaining information about processes, see [Controlling Processes and Threads](../debugger/controlling-processes-and-threads.md).
 
@@ -65,13 +53,4 @@ For general information about processes, see [Threads and Processes](../debugger
 If no arguments are supplied, the debugger displays a list of all processes, along with time and priority statistics. This is equivalent to entering [**!process @\#Process 0**](-process.md) as the *CommandString* value.
 
 To terminate execution at any point, press CTRL+BREAK (in WinDbg) or CTRL+C (in KD).
-
- 
-
- 
-
-
-
-
-
 

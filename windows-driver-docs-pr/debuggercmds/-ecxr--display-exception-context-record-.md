@@ -28,7 +28,7 @@ The **.ecxr** command displays the context record that is associated with the cu
 | Targets   | Crash dump only (minidumps only) |
 | Platforms | All                              |
 
-### Additional Information
+## Additional Information
 
 For more information about the register context and other context settings, see [Changing Contexts](../debugger/changing-contexts.md).
 

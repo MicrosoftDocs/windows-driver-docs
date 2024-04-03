@@ -1,7 +1,7 @@
 ---
-title: "processfields"
-description: "The processfields extension displays the names and offsets of the fields within the executive process (EPROCESS) block."
-keywords: ["processfields Windows Debugging"]
+title: "!processfields"
+description: "The !processfields extension displays the names and offsets of the fields within the executive process (EPROCESS) block."
+keywords: ["!processfields Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,15 +14,11 @@ api_type:
 
 # !processfields
 
-
 The **!processfields** extension displays the names and offsets of the fields within the executive process (EPROCESS) block.
 
 ```dbgcmd
 !processfields
 ```
-
-## <span id="ddk__processfields_dbg"></span><span id="DDK__PROCESSFIELDS_DBG"></span>
-
 
 ## DLL
 
@@ -43,9 +39,8 @@ The **!processfields** extension displays the names and offsets of the fields wi
 </tbody>
 </table>
 
- 
 
-### Additional Information
+## Additional Information
 
 For information about the EPROCESS block, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
 
@@ -122,13 +117,3 @@ kd> !processfields
     Win32Process:                      0x214
     Win32WindowStation:                0x1c4
 ```
-
- 
-
- 
-
-
-
-
-
-

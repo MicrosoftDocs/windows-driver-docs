@@ -1,7 +1,7 @@
 ---
-title: "ks.topology"
-description: "The ks.topology extension displays a sorted graph of the internal topology of the filter closest to Object."
-keywords: ["ks.topology Windows Debugging"]
+title: "!ks.topology"
+description: "The !ks.topology extension displays a sorted graph of the internal topology of the filter closest to Object."
+keywords: ["!ks.topology Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -54,7 +54,7 @@ Not currently available.
 
  
 
-### Additional Information
+## Additional Information
 
 For more information, see [Kernel Streaming Debugging](../debugger/kernel-streaming-debugging.md).
 
@@ -63,13 +63,4 @@ For more information, see [Kernel Streaming Debugging](../debugger/kernel-stream
 For help, issue a **!ks.topology** command with no arguments.
 
 Note that this command may take a few moments to execute.
-
- 
-
- 
-
-
-
-
-
 

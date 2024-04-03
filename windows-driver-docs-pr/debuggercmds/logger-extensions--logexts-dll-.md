@@ -15,12 +15,3 @@ Extension commands related to the Logger and LogViewer tools can be found in Log
 
 This DLL appears in the winext directory. It can be used with all Windows operating systems.
 
- 
-
- 
-
-
-
-
-
-

@@ -70,11 +70,3 @@ To work with multiple systems, you can use the [.opendump](-opendump--open-dump-
 
 **Note**   There are complications, when you debug live targets and dump targets together, because commands behave differently for each type of debugging. For example, if you use the **g (Go)** command when the current system is a dump file, the debugger begins executing, but you cannot break back into the debugger, because the break command is not recognized as valid for dump file debugging.
 
-
-
-
-
-
-
-
-

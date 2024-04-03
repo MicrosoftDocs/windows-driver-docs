@@ -30,7 +30,7 @@ Prevents execution commands from being used.
 <span id="_______1______"></span> **1**   
 Allows execution commands to be used.
 
-### Environment
+## Environment
 
 <table>
 <colgroup>
@@ -53,7 +53,7 @@ Allows execution commands to be used.
 </tbody>
 </table>
 
-### Additional Information
+## Additional Information
 
 For a complete list of execution commands, see [Controlling the Target](../debugger/controlling-the-target.md).
 

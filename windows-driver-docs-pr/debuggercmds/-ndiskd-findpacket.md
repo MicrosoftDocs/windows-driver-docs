@@ -1,7 +1,7 @@
 ---
-title: "ndiskd.findpacket"
+title: "!ndiskd.findpacket"
 description: "Warning  This extension is for legacy NDIS 5.x drivers. The NDIS_PACKET structure and its associated architecture have been deprecated. The ndiskd.findpacket extension finds the specified packets."
-keywords: ["ndiskd.findpacket Windows Debugging"]
+keywords: ["!ndiskd.findpacket Windows Debugging"]
 ms.date: 06/15/2020
 topic_type:
 - apiref

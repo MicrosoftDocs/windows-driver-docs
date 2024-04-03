@@ -31,7 +31,7 @@ Displays output using [Debugger Markup Language](../debugger/debugger-markup-lan
 ## <span id="ddk_meta_meta_command_help_dbg"></span><span id="DDK_META_META_COMMAND_HELP_DBG"></span>
 
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -44,13 +44,4 @@ Displays output using [Debugger Markup Language](../debugger/debugger-markup-lan
 ## Remarks
 
 For more information about meta-commands, use the **.help** command. For more information about standard commands, use the [**?**](---command-help-.md) command. For more information about extension commands, use the [**!help**](-help.md) extension.
-
- 
-
- 
-
-
-
-
-
 

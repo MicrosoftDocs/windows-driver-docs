@@ -1,7 +1,7 @@
 ---
-title: "htrace (WinDbg)"
-description: "The htrace extension displays stack trace information for one or more handles."
-keywords: ["handle, htrace extension", "htrace Windows Debugging"]
+title: "!htrace (WinDbg)"
+description: "The !htrace extension displays stack trace information for one or more handles."
+keywords: ["handle, htrace extension", "!htrace Windows Debugging"]
 ms.date: 08/29/2023
 topic_type:
 - apiref
@@ -62,7 +62,7 @@ Windows XP and later
 Kdexts.dll
 Ntsdexts.dll
 
-### Additional Information
+## Additional Information
 
 To display further information about a specific handle, use the [**!handle**](-handle.md) extension.
 

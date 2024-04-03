@@ -1,7 +1,7 @@
 ---
-title: "storagekd.storhelp"
-description: "The storagekd.storhelp extension displays help text for Storagekd.dll extension commands."
-keywords: ["storagekd.storhelp Windows Debugging"]
+title: "!storagekd.storhelp"
+description: "The !storagekd.storhelp extension displays help text for Storagekd.dll extension commands."
+keywords: ["!storagekd.storhelp Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,30 +14,15 @@ api_type:
 
 # !storagekd.storhelp
 
-
 The **!storagekd.storhelp** extension displays help text for Storagekd.dll extension commands.
 
 ```dbgcmd
 !storagekd.storhelp 
 ```
 
-## <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 8 and later</strong></p></td>
-<td align="left"><p>Storagekd.dll</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+Storagekd.dll
 
 ## Remarks
 
@@ -64,13 +49,3 @@ Here is an example of the **!storagekd.storhelp** display:
                          See '!storhelp storlogsrb' for details.
 !storsrb <address>     - display details for the specified SCSI or STORAGE request block
 ```
-
- 
-
- 
-
-
-
-
-
-

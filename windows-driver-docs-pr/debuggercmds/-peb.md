@@ -1,7 +1,7 @@
 ---
-title: "peb (WinDbg)"
-description: "The peb extension displays a formatted view of the information in the process environment block (PEB)."
-keywords: ["PEB (process environment block)", "process, process environment block (PEB)", "peb Windows Debugging"]
+title: "!peb (WinDbg)"
+description: "The !peb extension displays a formatted view of the information in the process environment block (PEB)."
+keywords: ["PEB (process environment block)", "process, process environment block (PEB)", "!peb Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,43 +14,23 @@ api_type:
 
 # !peb
 
-
 The **!peb** extension displays a formatted view of the information in the process environment block (PEB).
 
 ```dbgcmd
 !peb [PEB-Address]
 ```
 
-## <span id="ddk__peb_dbg"></span><span id="DDK__PEB_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______PEB-Address______"></span><span id="_______peb-address______"></span><span id="_______PEB-ADDRESS______"></span> *PEB-Address*   
 The hexadecimal address of the process whose PEB you want to examine. (This is not the address of the PEB as derived from the kernel process block for the process.) If *PEB-Address* is omitted in user mode, the PEB for the current process is used. If it is omitted in kernel mode, the PEB corresponding to the current [process context](../debugger/changing-contexts.md#process-context) is displayed.
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p></p>
-Kdextx86.dll
-Ntsdexts.dll</td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Exts.dll</p></td>
-</tr>
-</tbody>
-</table>
+Exts.dll
 
- 
 
-### Additional Information
+## Additional Information
 
 For information about process environment blocks, see *Microsoft Windows Internals* by Mark Russinovich and David Solomon. 
 
@@ -95,13 +75,3 @@ PEB at 7ffdf000
 ```
 
 The similar [**!teb**](-teb.md) extension displays the thread environment block.
-
- 
-
- 
-
-
-
-
-
-

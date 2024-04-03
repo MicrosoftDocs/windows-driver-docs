@@ -1,7 +1,7 @@
 ---
-title: "pfn (WinDbg)"
-description: "The pfn extension displays information about a specific page frame or the entire page frame database."
-keywords: ["page frame", "pfn Windows Debugging"]
+title: "!pfn (WinDbg)"
+description: "The !pfn extension displays information about a specific page frame or the entire page frame database."
+keywords: ["page frame", "!pfn Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,15 +14,13 @@ api_type:
 
 # !pfn
 
-
 The **!pfn** extension displays information about a specific page frame or the entire page frame database.
 
 ```dbgcmd
 !pfn PageFrame
 ```
 
-## <span id="ddk__pfn_dbg"></span><span id="DDK__PFN_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______PageFrame______"></span><span id="_______pageframe______"></span><span id="_______PAGEFRAME______"></span> *PageFrame*   
 Specifies the hexadecimal number of the page frame to be displayed.
@@ -31,11 +29,9 @@ Specifies the hexadecimal number of the page frame to be displayed.
 
 Kdexts.dll
 
- 
+## Additional Information
 
-### Additional Information
-
-For information about page tables, page directories, and page frames, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon. 
+For information about page tables, page directories, and page frames, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
 
 ## Remarks
 
@@ -63,13 +59,3 @@ kd> !pfn 154
     restore pte 00000060  containing page        00003B  Active     M     
     Modified          
 ```
-
- 
-
- 
-
-
-
-
-
-

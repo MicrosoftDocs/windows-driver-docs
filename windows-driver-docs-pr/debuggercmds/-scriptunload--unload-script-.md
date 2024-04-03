@@ -27,7 +27,7 @@ The **.scriptunload** command unloads the specified script.
 <span id="_______ScriptFile______"></span><span id="_______scriptfile______"></span><span id="_______SCRIPTFILE______"></span> *ScriptFile*   
 Specifies the name of the script file to unload. *ScriptFile* should include the .js file name extension. Absolute or relative paths can be used. Relative paths are relative to the directory that you started the debugger in. File paths containing spaces are not supported.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -37,7 +37,7 @@ Specifies the name of the script file to unload. *ScriptFile* should include the
 
  
 
-### Additional Information
+## Additional Information
 
 The .scriptunload command unloads a loaded script. Use the following command syntax to unload a script
 
@@ -50,7 +50,7 @@ If there are outstanding references to objects in a script, the contents of the 
 
 For more information about working with JavaScript, see [JavaScript Debugger Scripting](../debugger/javascript-debugger-scripting.md). For more information about the debugger objects, see [Native Objects in JavaScript Extensions](../debugger/native-objects-in-javascript-extensions.md).
 
-**Requirements**
+### Requirements
 
 Before using any of the .script commands, a scripting provider needs to be loaded. Use the [**.load (Load Extension DLL)**](-load---loadby--load-extension-dll-.md) command to load the JavaScript provider dll.
 
@@ -64,14 +64,5 @@ Before using any of the .script commands, a scripting provider needs to be loade
 [**.scriptload (Load Script)**](-scriptload--load-script-.md)
 
 [JavaScript Debugger Scripting](../debugger/javascript-debugger-scripting.md)
-
- 
-
- 
-
-
-
-
-
 
 

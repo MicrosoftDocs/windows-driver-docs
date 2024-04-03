@@ -1,7 +1,7 @@
 ---
-title: "logexts.logo"
-description: "The logexts.logo extension sets or displays the Logger output options."
-keywords: ["logexts.logo Windows Debugging"]
+title: "!logexts.logo"
+description: "The !logexts.logo extension sets or displays the Logger output options."
+keywords: ["!logexts.logo Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -22,8 +22,7 @@ The **!logexts.logo** extension sets or displays the Logger output options.
 !logexts.logo 
 ```
 
-## <span id="ddk__logexts_logo_dbg"></span><span id="DDK__LOGEXTS_LOGO_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______e_d"></span><span id="_______E_D"></span> **e|d**  
 Specifies whether to enable (e) or disable (d) the indicated output type.
@@ -33,26 +32,11 @@ Specifies the output type. Three types of Logger output are possible: messages s
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Logexts.dll</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Logexts.dll</p></td>
-</tr>
-</tbody>
-</table>
+Logexts.dll
 
  
 
-### Additional Information
+## Additional Information
 
 For more information, see [Logger and LogViewer](../debugger/logger-and-logviewer.md).
 
@@ -84,13 +68,4 @@ To disable verbose logging, you would use the following command:
 ```
 
 Text file and .lgv files will be placed in the current output directory. To read an .lgv file, use LogViewer.
-
- 
-
- 
-
-
-
-
-
 

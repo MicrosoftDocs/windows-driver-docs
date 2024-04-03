@@ -33,7 +33,7 @@ Disables source line support.
 <span id="_______-t______"></span><span id="_______-T______"></span> **-t**   
 Turns source line support on or off. If you do not specify parameters for **.lines**, the default behavior of the **.lines** command is this switching of source line support.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -43,7 +43,7 @@ Turns source line support on or off. If you do not specify parameters for **.lin
 
  
 
-### Additional Information
+## Additional Information
 
 For more information about source debugging and related commands, see [Debugging in Source Mode](../debugger/debugging-in-source-mode.md).
 
@@ -54,13 +54,4 @@ You must enable source line support before you can perform source-level debuggin
 You can enable source line support by using the **.lines** command or the [-lines command-line option](../debugger/command-line-options.md). If source line support is already enabled, using the **.lines** command disables this support.
 
 By default, if you do not use the **.lines** command, WinDbg turns on source line support, and console debuggers (KD, CDB, NTSD) turn off the support. For more information about how to change this setting, see [Setting Symbol Options](../debugger/symbol-options.md).
-
- 
-
- 
-
-
-
-
-
 

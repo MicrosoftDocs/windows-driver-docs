@@ -1,7 +1,7 @@
 ---
-title: "ks.pciks (WinDbg)"
-description: "The ks.pciks extension lists functional devices for kernel streaming devices that are attached to the PCI bus. Optionally, it can display information about active streams on those functional devices."
-keywords: ["ks.pciks Windows Debugging"]
+title: "!ks.pciks (WinDbg)"
+description: "The !ks.pciks extension lists functional devices for kernel streaming devices that are attached to the PCI bus. Optionally, it can display information about active streams on those functional devices."
+keywords: ["!ks.pciks Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -69,7 +69,7 @@ Optional, and applicable only to flag combinations that cause data to be display
 
  
 
-### Additional Information
+## Additional Information
 
 For more information, see [Kernel Streaming Debugging](../debugger/kernel-streaming-debugging.md).
 
@@ -84,13 +84,4 @@ kd> !pciks
 1 Kernel Streaming FDOs found:
     Functional Device 82a17690 [\Driver\smwdm]
 ```
-
- 
-
- 
-
-
-
-
-
 

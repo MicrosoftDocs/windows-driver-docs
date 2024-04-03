@@ -1,7 +1,7 @@
 ---
-title: "lpc (WinDbg)"
-description: "The lpc extension displays information about all local procedure call (LPC) ports and messages in the target system."
-keywords: ["LPC (local/light-weight procedure call)", "lpc Windows Debugging"]
+title: "!lpc (WinDbg)"
+description: "The !lpc extension displays information about all local procedure call (LPC) ports and messages in the target system."
+keywords: ["LPC (local/light-weight procedure call)", "!lpc Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,11 +14,9 @@ api_type:
 
 # !lpc
 
-
 **Important**  
 Lpc is now emulated in alpc, use the !alpc extension instead.
 
- 
 The **!lpc** extension displays information about all local procedure call (LPC) ports and messages in the target system.
 
 ```dbgcmd
@@ -30,8 +28,7 @@ The **!lpc** extension displays information about all local procedure call (LPC)
 !lpc
 ```
 
-## <span id="ddk__lpc_dbg"></span><span id="DDK__LPC_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______message______"></span><span id="_______MESSAGE______"></span> **message**   
 (Windows Server 2003, Windows XP, and Windows 2000 only) Displays information about a message, such as the server port that contains the message in the queue, and the thread waiting for this message, if any.
@@ -59,27 +56,9 @@ The **!lpc** extension displays information about all local procedure call (LPC)
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Kdextx86.dll</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP</strong></p>
-<p><strong>Windows Server 2003</strong></p></td>
-<td align="left"><p>Kdexts.dll</p></td>
-</tr>
-</tbody>
-</table>
+Kdexts.dll
 
- 
-
-### Additional Information
+## Additional Information
 
 For information about LPCs, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
@@ -200,13 +179,4 @@ Scanning 225 objects
 80000004  Port: 0xe13d8910 Connection: 0xe141ef50  Communication: 0xe13d8830  ' 
 Scanning 3 objects
 ```
-
- 
-
- 
-
-
-
-
-
 

@@ -1,7 +1,7 @@
 ---
-title: "powertriage"
-description: "The powertriage extension displays summary information about the system and device power related components."
-keywords: ["powertriage Windows Debugging"]
+title: "!powertriage"
+description: "The !powertriage extension displays summary information about the system and device power related components."
+keywords: ["!powertriage Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !powertriage
 
-
 The !powertriage extension displays summary information about the system and device power related components. It also provides links to related commands that can be used to gather additional information. The !powertriage command has no parameters. This command can be used with both live kernel-mode debugging and for crash dump file analysis.
 
 Syntax
@@ -23,27 +22,13 @@ Syntax
 !powertriage
 ```
 
-## <span id="ddk__thread_dbg"></span><span id="DDK__THREAD_DBG"></span>Parameters
-
+## Parameters
 
 None
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 10 and later</strong></p></td>
-<td align="left"><p>Kdexts.dll</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+Windows 10 and later - Kdexts.dll
 
 ## Remarks
 
@@ -124,14 +109,10 @@ Links:
 !pnptriage
 ```
 
-**Dump File Power Failure Analysis**
+### Dump File Power Failure Analysis
 
 The !powertriage extension can be useful in examining system crashes related to incorrect power state information. For example, in the case of [**Bug Check 0x9F: DRIVER\_POWER\_STATE\_FAILURE**](../debugger/bug-check-0x9f--driver-power-state-failure.md), the extension will display all the allocated power IRPs, the associated device stacks along with:
 
 1. Links to the [**!irp**](-irp.md) command for the related IRPs.
 2. Links to the [**!findthreads**](-findthreads.md) command with the related IRP. The IRP is added as part of the search criteria and displays the threads starting with higher correlation to the search criteria threads listed first.
 Dumping all device stacks with power IRPs can help in debugging cases where !analyze has not been able to correctly identify the IRP associated with the crash.
-
- 
-
-

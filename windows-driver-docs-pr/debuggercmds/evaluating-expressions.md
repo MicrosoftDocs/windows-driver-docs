@@ -81,12 +81,3 @@ Remember that MASM operations are always byte-based, and C++ operations follow C
 
 For some examples of the different syntaxes, see [Mixed Expression Examples](expression-examples.md).
 
- 
-
- 
-
-
-
-
-
-

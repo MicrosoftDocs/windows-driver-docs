@@ -46,7 +46,7 @@ Specifies the address where the debugger begins execution. If you do not use *St
 <span id="_______Count______"></span><span id="_______count______"></span><span id="_______COUNT______"></span> *Count*   
 Specifies the number of branching instructions that the debugger must encounter for the **th** command to end. The default value is one.
 
-### Environment
+## Environment
 
 |  Item       | Description               |
 |-----------|------------------------|
@@ -56,7 +56,7 @@ Specifies the number of branching instructions that the debugger must encounter 
 
  
 
-### Additional Information
+## Additional Information
 
 For more information about related commands, see [Controlling the Target](../debugger/controlling-the-target.md).
 
@@ -69,13 +69,4 @@ If the program counter is already on a branching instruction, the debugger trace
 **th** is available for all live sessions. This availability is the primary difference between **th** and [**tb (Trace to Next Branch)**](tb--trace-to-next-branch-.md).
 
 In source mode, you can associate one source line with multiple assembly instructions. This command does not stop at a branching instruction that is associated with the current source line.
-
- 
-
- 
-
-
-
-
-
 

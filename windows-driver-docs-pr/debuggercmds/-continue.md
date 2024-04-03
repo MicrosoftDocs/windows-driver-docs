@@ -28,7 +28,7 @@ The **.continue** token behaves like the **continue** keyword in C.
 ## <span id="ddk_token_continue_dbg"></span><span id="DDK_TOKEN_CONTINUE_DBG"></span>
 
 
-### Additional Information
+## Additional Information
 
 For information about other control flow tokens and their use in debugger command programs, see [Using Debugger Command Programs](../debugger/using-debugger-command-programs.md).
 
@@ -37,13 +37,4 @@ For information about other control flow tokens and their use in debugger comman
 The **.continue** token can be used within any [**.for**](-for.md), [**.while**](-while.md), or [**.do**](-do.md) loop.
 
 Since there is no control flow token equivalent to the C goto statement, you will usually use the **.continue** token within an [**.if**](-if.md) conditional, as shown in the syntax examples above. However, this is not actually required.
-
- 
-
- 
-
-
-
-
-
 

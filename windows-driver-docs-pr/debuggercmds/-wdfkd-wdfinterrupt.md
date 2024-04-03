@@ -1,7 +1,7 @@
 ---
-title: "wdfkd.wdfinterrupt"
-description: "The wdfkd.wdfinterrupt extension displays information about a WDFINTERRUPT object."
-keywords: ["wdfkd.wdfinterrupt Windows Debugging"]
+title: "!wdfkd.wdfinterrupt"
+description: "The !wdfkd.wdfinterrupt extension displays information about a WDFINTERRUPT object."
+keywords: ["!wdfkd.wdfinterrupt Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !wdfkd.wdfinterrupt
 
-
 The **!wdfkd.wdfinterrupt** extension displays information about a WDFINTERRUPT object.
 
 ```dbgcmd
@@ -22,7 +21,6 @@ The **!wdfkd.wdfinterrupt** extension displays information about a WDFINTERRUPT 
 ```
 
 ## Parameters
-
 
 <span id="_______Handle______"></span><span id="_______handle______"></span><span id="_______HANDLE______"></span> *Handle*   
 A handle to a WDFINTERRUPT object.
@@ -37,11 +35,11 @@ Displays the interrupt service routines (ISRs) for the interrupt dispatch table 
 
 Wdfkd.dll
 
-### <span id="Frameworks"></span><span id="frameworks"></span><span id="FRAMEWORKS"></span>Frameworks
+### Frameworks
 
 KMDF 1, UMDF 2
 
-### Additional Information
+## Additional Information
 
 For more information, see [Kernel-Mode Driver Framework Debugging](../debugger/kernel-mode-driver-framework-debugging.md).
 
@@ -82,13 +80,3 @@ To get ISR from KINTERRUPT:
 ```
 
 In the preceding example, the display concludes with two suggested [**dt (Display Type)**](dt--display-type-.md) commands that can be used to display additional data.
-
- 
-
- 
-
-
-
-
-
-

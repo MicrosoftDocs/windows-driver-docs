@@ -1,7 +1,7 @@
 ---
-title: "logexts.logm"
-description: "The logexts.logm extension creates or displays a module inclusion list or a module exclusion list."
-keywords: ["logexts.logm Windows Debugging"]
+title: "!logexts.logm"
+description: "The !logexts.logm extension creates or displays a module inclusion list or a module exclusion list."
+keywords: ["!logexts.logm Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -23,7 +23,7 @@ The **!logexts.logm** extension creates or displays a module inclusion list or a
 !logexts.logm 
 ```
 
-## <span id="ddk__logexts_logm_dbg"></span><span id="DDK__LOGEXTS_LOGM_DBG"></span>Parameters
+## Parameters
 
 
 <span id="_______i______"></span><span id="_______I______"></span> **i**   
@@ -37,26 +37,11 @@ Specifies the modules to be included or excluded. This list is not cumulative; e
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Logexts.dll</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Logexts.dll</p></td>
-</tr>
-</tbody>
-</table>
+Logexts.dll
 
  
 
-### Additional Information
+## Additional Information
 
 For more information, see [Logger and LogViewer](../debugger/logger-and-logviewer.md).
 
@@ -97,13 +82,4 @@ Included modules:
   winmine.exe
   mymodule2.dll
 ```
-
- 
-
- 
-
-
-
-
-
 

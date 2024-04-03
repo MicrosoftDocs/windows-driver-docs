@@ -14,7 +14,6 @@ api_type:
 
 # .pcmd (Set Prompt Command)
 
-
 The **.pcmd** command causes the debugger to issue a command whenever the target stops executing and to display a prompt in the [Debugger Command window](../debugger/debugger-command-window.md) with register or target state information.
 
 ```dbgcmd
@@ -23,8 +22,7 @@ The **.pcmd** command causes the debugger to issue a command whenever the target
 .pcmd 
 ```
 
-## <span id="ddk_meta_set_prompt_command_dbg"></span><span id="DDK_META_SET_PROMPT_COMMAND_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______-s_______CommandString______"></span><span id="_______-s_______commandstring______"></span><span id="_______-S_______COMMANDSTRING______"></span> **-s** **** *CommandString*   
 Specifies a new prompt command string. Whenever the target stops executing, the debugger issues and immediately runs the *CommandString* command. If *CommandString* contains spaces or semicolons, you must enclose it in quotation marks.
@@ -32,7 +30,7 @@ Specifies a new prompt command string. Whenever the target stops executing, the 
 <span id="_______-c______"></span><span id="_______-C______"></span> **-c**   
 Deletes any existing prompt command string.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -88,13 +86,4 @@ Prymes!isPrime+0x9f:
 0040168f 8b55fc           mov     edx,[ebp-0x4]     ss:0023:0012fea8=00000005
 $tpid=0000080c $tid=00000514
 ```
-
- 
-
- 
-
-
-
-
-
 

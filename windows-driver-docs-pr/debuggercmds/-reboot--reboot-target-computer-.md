@@ -14,17 +14,13 @@ api_type:
 
 # .reboot (Reboot Target Computer)
 
-
 The **.reboot** command restarts the target computer.
 
 ```dbgcmd
 .reboot
 ```
 
-## <span id="ddk_meta_reboot_target_computer_dbg"></span><span id="DDK_META_REBOOT_TARGET_COMPUTER_DBG"></span>
-
-
-### Environment
+## Environment
 
 <table>
 <colgroup>
@@ -47,18 +43,6 @@ The **.reboot** command restarts the target computer.
 </tbody>
 </table>
 
- 
-
-### Additional Information
+## Additional Information
 
 For more information about related commands and an explanation of how the restart process affects the debugger, see [Crashing and Rebooting the Target Computer](../debugger/crashing-and-rebooting-the-target-computer.md).
-
- 
-
- 
-
-
-
-
-
-

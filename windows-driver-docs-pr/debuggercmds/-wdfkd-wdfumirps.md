@@ -1,7 +1,7 @@
 ---
-title: "wdfkd.wdfumirps"
-description: "The wdfkd.wdfumirps extension displays the list of pending user-mode I/O request packets (UM IRPs) in the implicit process."
-keywords: ["wdfkd.wdfumirps Windows Debugging"]
+title: "!wdfkd.wdfumirps"
+description: "The !wdfkd.wdfumirps extension displays the list of pending user-mode I/O request packets (UM IRPs) in the implicit process."
+keywords: ["!wdfkd.wdfumirps Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !wdfkd.wdfumirps
 
-
 The **!wdfkd.wdfumirps** extension displays the list of pending user-mode I/O request packets (UM IRPs) in the [implicit process](../debugger/controlling-threads-and-processes.md).
 
 ```dbgcmd
@@ -22,7 +21,6 @@ The **!wdfkd.wdfumirps** extension displays the list of pending user-mode I/O re
 ```
 
 ## Parameters
-
 
 <span id="_______NumberOfIrps______"></span><span id="_______numberofirps______"></span><span id="_______NUMBEROFIRPS______"></span> *NumberOfIrps*   
 Optional. Specifies the number of pending UM IRPs to display information about. If *NumberOfIrps* is an asterisk (\*) or is omitted, all UM IRPs will be displayed.
@@ -33,18 +31,15 @@ Optional. Specifies the type of information to be displayed. *Flags* can be any 
 <span id="Bit_0__0x01_"></span><span id="bit_0__0x01_"></span><span id="BIT_0__0X01_"></span>Bit 0 (0x01)  
 Displays details about the pending IRPs.
 
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Wdfkd.dll
 
-## <span id="Frameworks"></span><span id="frameworks"></span><span id="FRAMEWORKS"></span>Frameworks
-
+## Frameworks
 
 UMDF 2
 
-## <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
-
+## Additional Information
 
 For more information, see [Kernel-Mode Driver Framework Debugging](../debugger/kernel-mode-driver-framework-debugging.md).
 
@@ -68,13 +63,3 @@ Number of pending IRPS: 0x4
 0002  1ab9ebfd10   WdfRequestInternalIoctl    0     0                 1ab9eaa6d0
 0003  1ab9eae370   Power (WAIT_WAKE)          0     ffffe00000c53010  1ab9eaa6d0
 ```
-
- 
-
- 
-
-
-
-
-
-

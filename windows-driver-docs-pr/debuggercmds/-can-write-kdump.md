@@ -1,7 +1,7 @@
 ---
-title: "can_write_kdump"
-description: "The can_write_kdump extension verifies that there is enough disk space on the target computer to write a kernel dump file of the specified type."
-keywords: ["kernel dump", "can_write_kdump Windows Debugging"]
+title: "!can_write_kdump"
+description: "The !can_write_kdump extension verifies that there is enough disk space on the target computer to write a kernel dump file of the specified type."
+keywords: ["kernel dump", "!can_write_kdump Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -74,13 +74,4 @@ Physical memory: 285560 KB
 Page file size: 1572864 KB
 NO: Page file too small
 ```
-
- 
-
- 
-
-
-
-
-
 

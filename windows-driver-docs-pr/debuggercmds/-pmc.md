@@ -1,7 +1,7 @@
 ---
-title: "pmc (WinDbg)"
-description: "The pmc extension displays the Performance Monitor Counter (PMC) register at the specified address."
-keywords: ["Performance Monitor Counter (PMC)", "pmc Windows Debugging"]
+title: "!pmc (WinDbg)"
+description: "The !pmc extension displays the Performance Monitor Counter (PMC) register at the specified address."
+keywords: ["Performance Monitor Counter (PMC)", "!pmc Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !pmc
 
-
 The **!pmc** extension displays the Performance Monitor Counter (PMC) register at the specified address.
 
 This extension is supported only on an Itanium-based target computer.
@@ -25,10 +24,7 @@ This extension is supported only on an Itanium-based target computer.
 
 **Important**  This command has been deprecated in the Windows Debugger Version 10.0.14257 and later, and is no longer available.
 
- 
-
 ## Parameters
-
 
 <span id="_______Option______"></span><span id="_______option______"></span><span id="_______OPTION______"></span> *Option*   
 Can be any one of the following values:
@@ -60,16 +56,4 @@ Displays detailed information about all PMC register fields, including those tha
 
 ## DLL
 
-Windows XP and later - Kdexts.dll
-
- 
-
- 
-
- 
-
-
-
-
-
-
+Kdexts.dll

@@ -1,7 +1,7 @@
 ---
-title: "wudfext.wudfusbpipe"
-description: "The wudfext.wudfusbpipe extension displays information about a USB pipe object."
-keywords: ["wudfext.wudfusbpipe Windows Debugging"]
+title: "!wudfext.wudfusbpipe"
+description: "The !wudfext.wudfusbpipe extension displays information about a USB pipe object."
+keywords: ["!wudfext.wudfusbpipe Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !wudfext.wudfusbpipe
 
-
 The **!wudfext.wudfusbpipe** extension displays information about a USB pipe object.
 
 ```dbgcmd
@@ -22,7 +21,6 @@ The **!wudfext.wudfusbpipe** extension displays information about a USB pipe obj
 ```
 
 ## Parameters
-
 
 <span id="_______pWDFUSBPipe______"></span><span id="_______pwdfusbpipe______"></span><span id="_______PWDFUSBPIPE______"></span> *pWDFUSBPipe*   
 Specifies the address of the **IWDFUsbTargetPipe** interface to display information about. The [**!wudfext.wudfobject**](-wudfext-wudfobject.md) extension command determines the address of **IWDFUsbTargetPipe**.
@@ -32,35 +30,8 @@ Optional. Specifies the type of the interface (for example, **IWDFDevice**). If 
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Unavailable</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP with UMDF version 1.7 and later</strong></p></td>
-<td align="left"><p>Wudfext.dll</p></td>
-</tr>
-</tbody>
-</table>
+Wudfext.dll
 
- 
-
-### Additional Information
+## Additional Information
 
 For more information, see [User-Mode Driver Framework Debugging](../debugger/user-mode-driver-framework-debugging.md).
-
- 
-
- 
-
-
-
-
-
-

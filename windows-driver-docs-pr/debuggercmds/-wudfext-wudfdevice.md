@@ -1,7 +1,7 @@
 ---
-title: "wudfext.wudfdevice"
-description: "The wudfext.wudfdevice extension displays the Plug and Play (PnP) and power-management state systems for a device."
-keywords: ["wudfext.wudfdevice Windows Debugging"]
+title: "!wudfext.wudfdevice"
+description: "The !wudfext.wudfdevice extension displays the Plug and Play (PnP) and power-management state systems for a device."
+keywords: ["!wudfext.wudfdevice Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !wudfext.wudfdevice
 
-
 The **!wudfext.wudfdevice** extension displays the Plug and Play (PnP) and power-management state systems for a device.
 
 ```dbgcmd
@@ -23,32 +22,14 @@ The **!wudfext.wudfdevice** extension displays the Plug and Play (PnP) and power
 
 ## Parameters
 
-
 <span id="_______pWDFDevice______"></span><span id="_______pwdfdevice______"></span><span id="_______PWDFDEVICE______"></span> *pWDFDevice*   
 Specifies the address of the **IWDFDevice** interface to display PnP or power-management state about.
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Unavailable</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Wudfext.dll</p></td>
-</tr>
-</tbody>
-</table>
+Wudfext.dll
 
- 
-
-### Additional Information
+## Additional Information
 
 For more information, see [User-Mode Driver Framework Debugging](../debugger/user-mode-driver-framework-debugging.md).
 
@@ -113,13 +94,3 @@ Power Policy State Machine:
       WdfDevStatePwrPolStarted
       WdfDevStatePwrPolStartingSucceeded
 ```
-
- 
-
- 
-
-
-
-
-
-

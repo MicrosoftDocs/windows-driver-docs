@@ -1,7 +1,7 @@
 ---
-title: "ubl (WinDbg)"
-description: "The ubl extension lists all user-space breakpoints and their current status."
-keywords: ["breakpoints, user-space breakpoints", "ubl Windows Debugging"]
+title: "!ubl (WinDbg)"
+description: "The !ubl extension lists all user-space breakpoints and their current status."
+keywords: ["breakpoints, user-space breakpoints", "!ubl Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,21 +14,15 @@ api_type:
 
 # !ubl
 
-
 The **!ubl** extension lists all user-space breakpoints and their current status.
 
 ```dbgcmd
 !ubl
 ```
 
-## <span id="ddk__ubl_dbg"></span><span id="DDK__UBL_DBG"></span>
-
-
-### DLL
+## DLL
 
 Kdexts.dll
-
- 
 
 ## Remarks
 
@@ -52,7 +46,6 @@ Each line in this listing contains the breakpoint number, the status (**e** for 
 
 ## See also
 
-
 [**!ubc**](-ubc.md)
 
 [**!ubd**](-ubd.md)
@@ -62,14 +55,3 @@ Each line in this listing contains the breakpoint number, the status (**e** for 
 [**!ubp**](-ubp.md)
 
 [User Space and System Space](../debugger/user-space-and-system-space.md)
-
- 
-
- 
-
-
-
-
-
-
-

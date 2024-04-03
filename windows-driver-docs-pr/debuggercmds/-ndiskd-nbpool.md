@@ -1,7 +1,7 @@
 ---
-title: "ndiskd.nbpool"
-description: "The ndiskd.nbpool extension displays information about a NET_BUFFER (NB) pool. "
-keywords: ["ndiskd.nbpool Windows Debugging"]
+title: "!ndiskd.nbpool"
+description: "The !ndiskd.nbpool extension displays information about a NET_BUFFER (NB) pool. "
+keywords: ["!ndiskd.nbpool Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref

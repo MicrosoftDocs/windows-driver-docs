@@ -1,7 +1,7 @@
 ---
-title: "ndiskd.pktpools"
+title: "!ndiskd.pktpools"
 description: "Warning  This extension is for legacy NDIS 5.x drivers. The ndiskd.pktpools extension displays a list of all allocated packet pools."
-keywords: ["ndiskd.pktpools Windows Debugging"]
+keywords: ["!ndiskd.pktpools Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref

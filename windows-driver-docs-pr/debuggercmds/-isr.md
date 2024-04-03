@@ -1,7 +1,7 @@
 ---
-title: "isr (WinDbg)"
-description: "The isr extension displays the Itanium Interruption Status Register (ISR) at the specified address."
-keywords: ["ISR (Interruption Status Register)", "Interruption Status Register (ISR)", "isr Windows Debugging"]
+title: "!isr (WinDbg)"
+description: "The !isr extension displays the Itanium Interruption Status Register (ISR) at the specified address."
+keywords: ["ISR (Interruption Status Register)", "Interruption Status Register (ISR)", "!isr Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !isr
 
-
 The !isr extension displays the Itanium Interruption Status Register (ISR) at the specified address.
 
 ```dbgcmd
@@ -22,9 +21,7 @@ The !isr extension displays the Itanium Interruption Status Register (ISR) at th
 ```
 
 **Important**  This command has been deprecated in the Windows Debugger Version 10.0.14257 and later, and is no longer available.
-
  
-
 ## Parameters
 
 
@@ -45,9 +42,7 @@ Displays details about all ISR fields, including those that are ignored or reser
 
 ## DLL
 
-Windows XP and later - Kdexts.dll
-
- 
+Kdexts.dll
 
 This extension command can only be used with an Itanium target computer.
 
@@ -78,13 +73,4 @@ kd> !isr @isr 2
   ed : 0 : Exception Deferral
   rv : 0 : reserved1
 ```
-
- 
-
- 
-
-
-
-
-
 

@@ -1,7 +1,7 @@
 ---
-title: "ube (WinDbg)"
-description: "The ube extension re-enables a user-space breakpoint."
-keywords: ["ube Windows Debugging"]
+title: "!ube (WinDbg)"
+description: "The !ube extension re-enables a user-space breakpoint."
+keywords: ["!ube Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,15 +14,13 @@ api_type:
 
 # !ube
 
-
 The **!ube** extension re-enables a user-space breakpoint.
 
 ```dbgcmd
 !ube BreakpointNumber 
 ```
 
-## <span id="ddk__ube_dbg"></span><span id="DDK__UBE_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______BreakpointNumber______"></span><span id="_______breakpointnumber______"></span><span id="_______BREAKPOINTNUMBER______"></span> *BreakpointNumber*   
 Specifies the number of the breakpoint to be enabled. An asterisk (\*) indicates all breakpoints.
@@ -31,14 +29,11 @@ Specifies the number of the breakpoint to be enabled. An asterisk (\*) indicates
 
 Kdexts.dll
 
- 
-
 ## Remarks
 
 This is used to re-enable a breakpoint that was disabled by [**!ubd**](-ubd.md).
 
 ## See also
-
 
 [**!ubc**](-ubc.md)
 
@@ -49,14 +44,3 @@ This is used to re-enable a breakpoint that was disabled by [**!ubd**](-ubd.md).
 [**!ubp**](-ubp.md)
 
 [User Space and System Space](../debugger/user-space-and-system-space.md)
-
- 
-
- 
-
-
-
-
-
-
-

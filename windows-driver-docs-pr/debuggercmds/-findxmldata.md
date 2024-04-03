@@ -1,7 +1,7 @@
 ---
-title: "findxmldata"
-description: "The findxmldata extension retrieves XML data from a CAB file that contains a kernel-mode Small Memory Dump file."
-keywords: ["XML data in CAB files", "sysdata.xml", "findxmldata Windows Debugging"]
+title: "!findxmldata"
+description: "The !findxmldata extension retrieves XML data from a CAB file that contains a kernel-mode Small Memory Dump file."
+keywords: ["XML data in CAB files", "sysdata.xml", "!findxmldata Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !findxmldata
 
-
 The **!findxmldata** extension retrieves XML data from a CAB file that contains a kernel-mode Small Memory Dump file.
 
 ```dbgcmd
@@ -24,8 +23,7 @@ The **!findxmldata** extension retrieves XML data from a CAB file that contains 
 !findxmldata -v 
 ```
 
-## <span id="ddk__findxmldata_dbg"></span><span id="DDK__FINDXMLDATA_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______-d_______DeviceName______"></span><span id="_______-d_______devicename______"></span><span id="_______-D_______DEVICENAME______"></span> **-d** *DeviceName*   
 Displays all devices whose device name contains the string that *DeviceName* specifies.
@@ -47,28 +45,11 @@ Displays system version information.
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Ext.dll</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Ext.dll</p></td>
-</tr>
-</tbody>
-</table>
+Ext.dll
 
- 
+## Additional Information
 
 The **!findxmldata** extension works only on a kernel-mode Small Memory Dump file that is stored in a CAB file.
-
-### Additional Information
 
 For more information about how to put dump files into CAB files, see [**.dumpcab (Create Dump File CAB)**](-dumpcab--create-dump-file-cab-.md). For information more about how to debug a kernel-mode dump file, including dump files that are stored inside CAB files, see [Analyzing a Kernel-Mode Dump File](../debugger/analyzing-a-kernel-mode-dump-file.md).
 
@@ -125,13 +106,3 @@ Node DEVICE
         SERVICE        : ms_mpu401
         DRIVER         : msmpu401.sys
 ```
-
- 
-
- 
-
-
-
-
-
-

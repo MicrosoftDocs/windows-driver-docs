@@ -41,7 +41,7 @@ Activates all mask flags. This parameter is equivalent to **.outmask 0xFFFFFFFF*
 <span id="________d______"></span><span id="________D______"></span> **/d**   
 Restores the output mask to the default value. This parameter is equivalent to **.outmask 0x3F7**.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -127,13 +127,4 @@ The following flag values exist.
 </table>
 
  
-
- 
-
- 
-
-
-
-
-
 

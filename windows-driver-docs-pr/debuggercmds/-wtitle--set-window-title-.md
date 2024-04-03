@@ -14,7 +14,6 @@ api_type:
 
 # .wtitle (Set Window Title)
 
-
 The **.wtitle** command sets the title in the main WinDbg window or in the NTSD, CDB, or KD window.
 
 ```dbgcmd
@@ -23,11 +22,10 @@ The **.wtitle** command sets the title in the main WinDbg window or in the NTSD,
 
 ## <span id="ddk_meta_set_window_title_dbg"></span><span id="DDK_META_SET_WINDOW_TITLE_DBG"></span>Parameters
 
-
 <span id="_______Title______"></span><span id="_______title______"></span><span id="_______TITLE______"></span> *Title*   
 The title to use for the window.
 
-### Environment
+## Environment
 
 This command cannot be used in script files.
 
@@ -36,8 +34,6 @@ This command cannot be used in script files.
 |Modes   |User mode, kernel mode|
 |Targets |Live, crash dump      |
 |Platforms|All                  |
-
- 
 
 ## Remarks
 
@@ -48,13 +44,3 @@ For WinDbg, if **.wtitle** has not been used, the main window title includes the
 When **.wtitle** is used, *Title* replaces all this information. Even if a debugging server is started later, *Title* will not change.
 
 The WinDbg version number is always displayed in the window title bar, regardless of whether this command is used.
-
- 
-
- 
-
-
-
-
-
-

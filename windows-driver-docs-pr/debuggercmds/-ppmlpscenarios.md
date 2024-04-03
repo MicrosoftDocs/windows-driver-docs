@@ -1,7 +1,7 @@
 ---
-title: "ppmlpscenarios"
-description: "The ppmlpscenarios command"
-keywords: ["ppmlpscenarios Windows Debugging"]
+title: "!ppmlpscenarios"
+description: "The !ppmlpscenarios extension command displays per-scenario policy overrides."
+keywords: ["!ppmlpscenarios Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,8 +14,7 @@ api_type:
 
 # !ppmlpscenarios
 
-
-The **!ppmlpscenarios** command displays per-scenario policy overrides.
+The **!ppmlpscenarios** extension command displays per-scenario policy overrides.
 
 ```dbgcmd
 !ppmlpscenarios
@@ -31,12 +30,4 @@ This command is supported on the following versions of Windows:
 
 ## DLL
 
-Kdexts.dll 
-
- 
-
-
-
-
-
-
+Kdexts.dll

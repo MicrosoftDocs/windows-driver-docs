@@ -1,7 +1,7 @@
 ---
-title: "rellist (WinDbg)"
-description: "The rellist extension displays a Plug and Play relation list."
-keywords: ["rellist Windows Debugging"]
+title: "!rellist (WinDbg)"
+description: "The !rellist extension displays a Plug and Play relation list."
+keywords: ["!rellist Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,15 +14,13 @@ api_type:
 
 # !rellist
 
-
 The **!rellist** extension displays a Plug and Play relation list.
 
 ```dbgcmd
 !rellist Address [Flags] 
 ```
 
-## <span id="ddk__rellist_dbg"></span><span id="DDK__RELLIST_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the address of the relation list.
@@ -43,18 +41,6 @@ Causes the display to include the translated CM\_RESOURCE\_LIST.
 
 Kdexts.dll
 
- 
-
-### Additional Information
+## Additional Information
 
 See [Plug and Play Debugging](../debugger/plug-and-play-debugging.md) for applications of this extension command. For information about these list structures, see the Windows Driver Kit (WDK) documentation.
-
- 
-
- 
-
-
-
-
-
-

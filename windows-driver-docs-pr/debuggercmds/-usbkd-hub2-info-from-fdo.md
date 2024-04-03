@@ -1,7 +1,7 @@
 ---
-title: "usbkd.hub2_info_from_fdo"
-description: "The usbkd.hub2_info_from_fdo command displays information about a USB hub."
-keywords: ["usbkd.hub2_info_from_fdo Windows Debugging"]
+title: "!usbkd.hub2_info_from_fdo"
+description: "The !usbkd.hub2_info_from_fdo command displays information about a USB hub."
+keywords: ["!usbkd.hub2_info_from_fdo Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,21 +14,18 @@ api_type:
 
 # !usbkd.hub2\_info\_from\_fdo
 
-
 The **!usbkd.hub2\_info\_from\_fdo** command displays information about a USB hub.
 
 ```dbgcmd
 !usbkd.hub2_info_from_fdo FDO
 ```
 
-## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______FDO______"></span><span id="_______fdo______"></span> *FDO*   
 Address of the functional device object (FDO) for a USB hub.
 
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Usbkd.dll
 
@@ -125,11 +122,7 @@ PortData 1: !port2_info ffffe000021bf000 Port State = PS_WAIT_CONNECT PortChange
 
 ## See also
 
-
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
-
- 
-
 

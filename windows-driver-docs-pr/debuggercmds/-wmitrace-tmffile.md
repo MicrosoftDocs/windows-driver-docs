@@ -1,7 +1,7 @@
 ---
-title: "wmitrace.tmffile"
-description: "The wmitrace.tmffile extension specifies a trace message format (TMF) file. The file specified by this extension is used to format trace messages displayed or written by other WMI tracing extensions."
-keywords: ["wmitrace.tmffile Windows Debugging"]
+title: "!wmitrace.tmffile"
+description: "The !wmitrace.tmffile extension specifies a trace message format (TMF) file. The file specified by this extension is used to format trace messages displayed or written by other WMI tracing extensions."
+keywords: ["!wmitrace.tmffile Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,26 +14,23 @@ api_type:
 
 # !wmitrace.tmffile
 
-
 The **!wmitrace.tmffile** extension specifies a trace message format (TMF) file. The file specified by this extension is used to format trace messages displayed or written by other WMI tracing extensions.
 
 ```dbgcmd
 !wmitrace.tmffile TMFFile 
 ```
 
-## <span id="ddk__wmitrace_tmffile_dbg"></span><span id="DDK__WMITRACE_TMFFILE_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______TMFFile______"></span><span id="_______tmffile______"></span><span id="_______TMFFILE______"></span> *TMFFile*   
 Specifies a trace message format file.
 
 ## DLL
 
-This extension is exported by Wmitrace.dll.
+Wmitrace.dll
 
-This extension is available in Windows 2000 and later versions of Windows. If you want to use this extension with Windows 2000, you must first copy the Wmitrace.dll file from the winxp subdirectory of the Debugging Tools for Windows installation directory to the w2kfre subdirectory.
 
-### Additional Information
+## Additional Information
 
 For a conceptual overview of event tracing, see the Microsoft Windows SDK. For information about trace message format files, see the "Trace Message Format File" topic in the Windows Driver Kit (WDK).
 
@@ -51,16 +48,4 @@ If you do not use either [**!wmitrace.searchpath**](-wmitrace-searchpath.md) or 
 
 **Note**  If your driver uses UMDF version 1.11 or later, you do not need to use [**!wmitrace.searchpath**](-wmitrace-searchpath.md) or **!wmitrace.tmffile**.
 
- 
-
 This extension is only useful during WPP software tracing, and earlier (legacy) methods of Event Tracing for Windows. Trace events that are produced by other manifested providers do not use trace message format (TMF) files, and therefore this extension cannot be used with them.
-
- 
-
- 
-
-
-
-
-
-

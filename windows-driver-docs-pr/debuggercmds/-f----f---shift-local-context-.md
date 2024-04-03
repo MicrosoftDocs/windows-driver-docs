@@ -22,7 +22,7 @@ The **.f+** command shifts the frame index to the next frame in the current stac
 .f-  
 ```
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -32,7 +32,7 @@ The **.f+** command shifts the frame index to the next frame in the current stac
 
  
 
-### Additional Information
+## Additional Information
 
 For more information about the local context and other context settings, see [Changing Contexts](../debugger/changing-contexts.md). For more information about how to display local variables and other memory-related commands, see [Reading and Writing Memory](../debugger/reading-and-writing-memory.md).
 
@@ -55,13 +55,4 @@ The *frame number* is the position of the stack frame within the stack trace. Yo
 You can set the local context to a different stack frame to view new local variable information. However, the actual variables that are available depend on the code that is executed.
 
 The debugger resets the local context to the scope of the program counter if any program execution occurs. The local context is reset to the top stack frame if the register context is changed.
-
- 
-
- 
-
-
-
-
-
 

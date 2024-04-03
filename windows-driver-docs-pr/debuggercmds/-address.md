@@ -326,26 +326,14 @@ Displays minimal Help text for this extension in the [Debugger Command window](.
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Ext.dll</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Ext.dll</p></td>
-</tr>
-</tbody>
-</table>
+
+Ext.dll
+
+
 
  
 
-### Additional Information
+## Additional Information
 
 For more information about how to display and search memory, see [Reading and Writing Memory](../debugger/reading-and-writing-memory.md). For additional extensions that display memory properties, see [**!vm**](-vm.md) (kernel mode) and [**!vprot**](-vprot.md) (user mode).
 

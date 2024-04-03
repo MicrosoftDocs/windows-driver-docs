@@ -1,7 +1,7 @@
 ---
-title: "envvar (WinDbg)"
-description: "The envvar extension displays the value of the specified environment variable."
-keywords: ["envvar Windows Debugging"]
+title: "!envvar (WinDbg)"
+description: "The !envvar extension displays the value of the specified environment variable."
+keywords: ["!envvar Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -29,26 +29,11 @@ Specifies the environment variable whose value is displayed. *Variable* is not c
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Unavailable</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Exts.dll</p></td>
-</tr>
-</tbody>
-</table>
+Exts.dll
 
  
 
-### Additional Information
+## Additional Information
 
 For more information about environment variables, see [Environment Variables](../debugger/environment-variables.md) and the Microsoft Windows SDK documentation.
 
@@ -60,13 +45,4 @@ The **!envvar** extension works both in user mode and in kernel mode. However, i
 0:000> !envvar _nt_symbol_path
         _nt_symbol_path = srv*C:\mysyms*https://msdl.microsoft.com/download/symbols
 ```
-
- 
-
- 
-
-
-
-
-
 

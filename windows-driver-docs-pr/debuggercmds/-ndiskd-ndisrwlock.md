@@ -1,7 +1,7 @@
 ---
-title: "ndiskd.ndisrwlock"
-description: "The ndiskd.ndisrwlock extension displays information about an NDIS_RW_LOCK_EX lock structure."
-keywords: ["ndiskd.ndisrwlock Windows Debugging"]
+title: "!ndiskd.ndisrwlock"
+description: "The !ndiskd.ndisrwlock extension displays information about an NDIS_RW_LOCK_EX lock structure."
+keywords: ["!ndiskd.ndisrwlock Windows Debugging"]
 ms.date: 06/18/2020
 topic_type:
 - apiref

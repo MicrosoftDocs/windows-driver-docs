@@ -1,7 +1,7 @@
 ---
-title: "usb3kd.xhci_resourceusage"
-description: "The usb3kd.xhci_resourceusage extension displays the resources used by a USB 3.0 host controller."
-keywords: ["usb3kd.xhci_resourceusage Windows Debugging"]
+title: "!usb3kd.xhci_resourceusage"
+description: "The !usb3kd.xhci_resourceusage extension displays the resources used by a USB 3.0 host controller."
+keywords: ["!usb3kd.xhci_resourceusage Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,21 +14,18 @@ api_type:
 
 # !usb3kd.xhci\_resourceusage
 
-
 The [**!usb3kd.xhci\_resourceusage**](-usb3kd-device-info.md) extension displays the resources used by a USB 3.0 host controller.
 
 ```dbgcmd
 !usb3kd.xhci_resourceusage DeviceExtension
 ```
 
-## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______DeviceExtension______"></span><span id="_______deviceextension______"></span><span id="_______DEVICEEXTENSION______"></span> *DeviceExtension*   
 Address of the device extension for the host controller's functional device object (FDO).
 
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Usb3kd.dll
 
@@ -82,11 +79,8 @@ Now you can pass the address of the device extension to the **!xhci\_resourceusa
 
 ## See also
 
-
 [USB 3.0 Extensions](usb-3-extensions.md)
 
 [**!xhci\_dumpall**](-usb3kd-xhci-dumpall.md)
 
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
-
-

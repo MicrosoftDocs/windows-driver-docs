@@ -21,7 +21,7 @@ The **.eventlog** command displays the recent Microsoft Win32 debug events, such
 .eventlog 
 ```
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -54,13 +54,4 @@ The following example shows the **.eventlog** command.
 0904.1014: Load module C:\Windows\system32\OLEAUT32.dll at 000007fe`feeb0000
 Last event: Break instruction exception - code 80000003 (first chance)
 ```
-
- 
-
- 
-
-
-
-
-
 

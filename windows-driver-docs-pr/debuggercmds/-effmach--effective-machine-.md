@@ -74,7 +74,7 @@ You can enter one of the following machine types.
 
  
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -93,13 +93,4 @@ The processor mode influences many debugger features:
 -   Whether the process uses 32-bit or 64-bit pointers.
 
 -   Which processor's register set is active.
-
- 
-
- 
-
-
-
-
-
 

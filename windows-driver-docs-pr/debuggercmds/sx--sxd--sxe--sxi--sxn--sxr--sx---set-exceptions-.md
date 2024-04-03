@@ -46,7 +46,7 @@ Specifies the event that the command acts on. These events are identified by sho
 **\***  
 Affects all exceptions that aren't otherwise explicitly named for **sx**. For a list of explicitly named exceptions, see [Controlling exceptions and events](../debugger/controlling-exceptions-and-events.md).
 
-### Environment
+## Environment
 
 |&nbsp;         |&nbsp;                  |
 |---------------|------------------------|
@@ -54,7 +54,7 @@ Affects all exceptions that aren't otherwise explicitly named for **sx**. For a 
 | **Targets**   | Live debugging only    |
 | **Platforms** | All                    |
 
-### Additional Information
+## Additional Information
 
 For more information about break status and handling status, descriptions of all event codes, a list of the default status for all events, and other methods of controlling this status, see [Controlling exceptions and events](../debugger/controlling-exceptions-and-events.md).
 

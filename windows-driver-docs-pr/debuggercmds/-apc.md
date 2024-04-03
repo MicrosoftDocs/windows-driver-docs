@@ -1,7 +1,7 @@
 ---
-title: "apc (WinDbg)"
-description: "The apc extension formats and displays the contents of one or more asynchronous procedure calls (APCs)."
-keywords: ["apc Windows Debugging"]
+title: "!apc (WinDbg)"
+description: "!The apc extension formats and displays the contents of one or more asynchronous procedure calls (APCs)."
+keywords: ["!apc Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
 - apiref
@@ -13,7 +13,6 @@ api_type:
 ---
 
 # !apc
-
 
 The **!apc** extension formats and displays the contents of one or more asynchronous procedure calls (APCs).
 
@@ -36,14 +35,14 @@ Specifies the address of the thread whose APCs are to be displayed.
 <span id="_______KAPC______"></span><span id="_______kapc______"></span> *KAPC*   
 Specifies the address of the kernel APC to be displayed.
 
-## <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 
-Windows XP and later - Kdexts.dll
+Kdexts.dll
 
  
 
-## <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+## Additional Information
 
 
 For information about APCs, see the Windows Driver Kit (WDK) documentation and Microsoft Windows Internals by Mark Russinovich and David Solomon.
@@ -77,13 +76,4 @@ Process e0000165fff51600 conime.exe
 Process e000000085496340 taskmgr.exe
 Process e000000085489c30 userinit.exe
 ```
-
- 
-
- 
-
-
-
-
-
 

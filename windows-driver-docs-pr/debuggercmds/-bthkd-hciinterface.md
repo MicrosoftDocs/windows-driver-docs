@@ -1,7 +1,7 @@
 ---
-title: "bthkd.hciinterface"
-description: "The bthkd.hciinterface command displays the bthport _HCI_INTERFACE structure."
-keywords: ["bthkd.hciinterface Windows Debugging"]
+title: "!bthkd.hciinterface"
+description: "The !bthkd.hciinterface command displays the bthport _HCI_INTERFACE structure."
+keywords: ["!bthkd.hciinterface Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -21,7 +21,7 @@ The **!bthkd.hciinterface** command displays the bthport!\_HCI\_INTERFACE struct
 !bthkd.hciinterface
 ```
 
-## <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 
 Bthkd.dll
@@ -30,14 +30,5 @@ Bthkd.dll
 
 
 [Bluetooth Extensions (Bthkd.dll)](bluetooh-extensions--bthkd-dll-.md)
-
- 
-
- 
-
-
-
-
-
 
 

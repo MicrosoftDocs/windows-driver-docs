@@ -1,7 +1,7 @@
 ---
-title: "dh (WinDbg)"
-description: "The dh extension displays the headers for the specified image."
-keywords: ["NTFS file object", "dh Windows Debugging"]
+title: "!dh (WinDbg)"
+description: "The !dh extension displays the headers for the specified image."
+keywords: ["NTFS file object", "!dh Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -70,13 +70,4 @@ Ntsdexts.dll</td>
 ## Remarks
 
 The [**!lmi**](-lmi.md) extension extracts the most important information from the image header and displays it in a concise summary format. That extension is frequently more useful than **!dh**.
-
- 
-
- 
-
-
-
-
-
 

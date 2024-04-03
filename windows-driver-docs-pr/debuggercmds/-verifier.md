@@ -1,7 +1,7 @@
 ---
-title: "verifier (WinDbg)"
-description: "The verifier extension displays the status of Driver Verifier and its actions."
-keywords: ["Driver Verifier", "verifier Windows Debugging"]
+title: "!verifier (WinDbg)"
+description: "The !verifier extension displays the status of Driver Verifier and its actions."
+keywords: ["Driver Verifier", "!verifier Windows Debugging"]
 ms.date: 05/03/2018
 topic_type:
 - apiref
@@ -13,7 +13,6 @@ api_type:
 ---
 
 # !verifier
-
 
 The **!verifier** extension displays the status of Driver Verifier and its actions.
 
@@ -36,8 +35,7 @@ Syntax
 !verifier ?
 ```
 
-## <span id="ddk__verifier_dbg"></span><span id="DDK__VERIFIER_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______Flags______"></span><span id="_______flags______"></span><span id="_______FLAGS______"></span> *Flags*   
 Specifies what information is displayed in the output from this command. If *Flags* is equal to the value 4, 8, 0x20, 0x40, 0x80, or 0x100, then the remaining arguments to **!verifier** are interpreted based on the specific arguments associated with those values. If *Flags* is equal to any other value, even if one or more of these bits are set, only the *Flags* and *Image* arguments are permitted. *Flags* can be any sum of the following bits; the default is 0:
@@ -106,10 +104,9 @@ Displays some brief Help text for this extension in the Debugger Command window.
 
 Kdexts.dll
 
-### Additional Information
+## Additional Information
 
-For information about [Driver Verifier](../devtest/driver-verifier.md), see the Windows Driver Kit (WDK) documentation.
-
+For information see [Driver Verifier](../devtest/driver-verifier.md).
 
 ## Remarks
 
@@ -311,7 +308,3 @@ Pool block a2b1ce98, Size 00000164, Thread a2b1ce98
 821797a1 nt!NtDeviceIoControlFile+0x2a
 8204d16a nt!KiFastCallEntry+0x127
 ```
-
- 
-
-

@@ -14,7 +14,6 @@ api_type:
 
 # .typeopt (Set Type Options)
 
-
 The **.typeopt** command sets or displays the type options.
 
 ```dbgcmd
@@ -26,7 +25,6 @@ The **.typeopt** command sets or displays the type options.
 ```
 
 ## Parameters
-
 
 <span id="______________"></span> **+**   
 Causes the type option(s) specified by *Flags* or *FlagName* to be set.
@@ -64,7 +62,7 @@ Displays signed integers of all sizes in all Watch windows and the Locals window
 <span id="size"></span><span id="SIZE"></span>**size**  
 Causes the debugger to choose the matching symbol with the largest size when the Locals window or Watch window references a symbol by name but there is more than one symbol that matches this name. The size of a symbol is defined as follows: if the symbol is the name of a function, its size is the size of the function in memory. Otherwise, the size of the symbol is the size of the data type that it represents. (This has the same effect as **0x8**.)
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -72,18 +70,8 @@ Causes the debugger to choose the matching symbol with the largest size when the
 |Targets |Live, crash dump      |
 |Platforms|All                  |
 
- 
-
 ## Remarks
 
 Without any arguments, **.typeopt** displays the current symbol options.
 
 To change the default radix, use the [**n (Set Number Base)**](n--set-number-base-.md) command.
-
- 
-
-
-
-
-
-

@@ -1,7 +1,7 @@
 ---
-title: "for_each_function"
-description: "The for_each_function extension executes a debugger command for each function, in a specified module, whose name matches a specified pattern."
-keywords: ["for_each_function Windows Debugging"]
+title: "!for_each_function"
+description: "The !for_each_function extension executes a debugger command for each function, in a specified module, whose name matches a specified pattern."
+keywords: ["!for_each_function Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -12,8 +12,7 @@ api_type:
 - NA
 ---
 
-# !for\_each\_function
-
+# !for_each_function
 
 The **!for\_each\_function** extension executes a debugger command for each function, in a specified module, whose name matches a specified pattern.
 
@@ -22,8 +21,7 @@ The **!for\_each\_function** extension executes a debugger command for each func
 !for_each_function -?
 ```
 
-## <span id="ddk__vad_dbg"></span><span id="DDK__VAD_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______-m_ModuleName______"></span><span id="_______-m_modulename______"></span><span id="_______-M_MODULENAME______"></span> -m:*ModuleName*   
 Specifies the module name. This name is typically the file name without the file name extension. In some cases, the module name differs significantly from the file name.
@@ -73,7 +71,6 @@ You can use the following aliases in *CommandString*.
 </tbody>
 </table>
 
- 
 
 <span id="_______-_______"></span> -?   
 Displays help for this extension.
@@ -109,7 +106,6 @@ The following example shows how to list all symbols, in all modules, whose funct
 
 **Note**  Do not confuse the @\#ModuleName alias with the @\#ModName alias. The @\#ModuleName alias belongs to the [**!for\_each\_module**](-for-each-module.md) extension, and the @\#ModName alias belongs to the **!for\_each\_function** extension.
 
- 
 
 ```dbgcmd
 1: kd> !for_each_module !for_each_function -m:${@#ModuleName} -p:*CreateFile* -c:.echo @#SymbolName
@@ -155,16 +151,4 @@ fffff880`00f7c044 48895c2408      mov     qword ptr [rsp+8],rbx
 
 ## See also
 
-
 [**!for\_each\_module**](-for-each-module.md)
-
- 
-
- 
-
-
-
-
-
-
-

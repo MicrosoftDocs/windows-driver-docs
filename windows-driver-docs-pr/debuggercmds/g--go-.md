@@ -52,7 +52,7 @@ Specifies one or more commands to be automatically executed when the breakpoint 
 
 **Note**   The *BreakCommands* parameter is only available when you are embedding this command within a command string used by another command -- for example, within another breakpoint command or within an except or event setting. On a command line, the semicolon will terminate the **g** command, and any additional commands listed after the semicolon will be executed immediately after the **g** command is done.
 
-### Environment
+## Environment
 
 |  Item       | Description               |
 |-----------|------------------------|
@@ -60,7 +60,7 @@ Specifies one or more commands to be automatically executed when the breakpoint 
 | Targets   | live debugging only    |
 | Platforms | all                    |
 
-### Additional Information
+## Additional Information
 
 For other methods of issuing this command and an overview of related commands, see [Controlling the Target](../debugger/controlling-the-target.md).
 

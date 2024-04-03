@@ -14,7 +14,6 @@ api_type:
 
 # .printf
 
-
 The **.printf** token behaves like the **printf** statement in C.
 
 ```dbgcmd
@@ -94,8 +93,6 @@ The following options are available.
 </tbody>
 </table>
 
- 
-
 <span id="_______FormatString______"></span><span id="_______formatstring______"></span><span id="_______FORMATSTRING______"></span> *FormatString*   
 Specifies the format string, as in **printf**. In general, conversion characters work exactly as in C. For the floating-point conversion characters, the 64-bit argument is interpreted as a 32-bit floating-point number unless the **l** modifier is used.
 
@@ -170,12 +167,11 @@ The %p conversion character is supported, but it represents a pointer in the tar
 </tbody>
 </table>
 
- 
 
 <span id="_______Arguments______"></span><span id="_______arguments______"></span><span id="_______ARGUMENTS______"></span> *Arguments*   
 Specifies arguments for the format string, as in **printf**. The number of arguments that are specified should match the number of conversion characters in *FormatString*. Each argument is an expression that will be evaluated by the default expression evaluator (MASM or C++). For details, see [Numerical Expression Syntax](numerical-expression-syntax.md).
 
-### Additional Information
+## Additional Information
 
 For information about other control flow tokens and their use in debugger command programs, see [Using Debugger Command Programs](../debugger/using-debugger-command-programs.md).
 
@@ -196,13 +192,4 @@ The output shown in the preceding image has a link that you can click to execute
 :::image type="content" source="images/printf02.png" alt-text="Screenshot of DML output in command browser window.":::
 
 For information about DML tags, see dml.doc in the installation folder for Debugging Tools for Windows.
-
- 
-
- 
-
-
-
-
-
 

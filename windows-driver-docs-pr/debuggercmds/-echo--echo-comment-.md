@@ -28,7 +28,7 @@ The **.echo** command displays a comment string.
 <span id="_______String______"></span><span id="_______string______"></span><span id="_______STRING______"></span> *String*   
 Specifies the text to display. You can also enclose *String* in quotation marks ("). Regardless of whether you use quotation marks, *String* can contain any number of spaces, commas, and single quotation marks ('). If you enclose *String* in quotation marks, it can include semicolons, but not additional quotation marks. If you do not enclose *String* in quotation marks, it can include quotation marks in any location except the first character, but it cannot include semicolons.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -51,13 +51,4 @@ An **.echo** command is ended if the debugger encounters a semicolon (unless the
 The **.echo** command also provides an easy way for users of debugging servers and debugging clients to communicate with one another. For more information about this situation, see [Controlling a Remote Debugging Session](../debugger/controlling-a-remote-debugging-session.md).
 
 The **.echo** command differs from the [**$$ (Comment Specifier)**](-----comment-specifier-.md) token and the [**\* (Comment Line Specifier)**](----comment-line-specifier-.md) token, because these tokens cause the debugger to ignore the input text without displaying it.
-
- 
-
- 
-
-
-
-
-
 

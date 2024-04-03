@@ -1,7 +1,7 @@
 ---
-title: "dskheap (WinDbg)"
-description: "The dskheap extension displays desktop heap information for a specified session."
-keywords: ["desktops", "dskheap Windows Debugging"]
+title: "!dskheap (WinDbg)"
+description: "The !dskheap extension displays desktop heap information for a specified session."
+keywords: ["desktops", "!dskheap Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -32,11 +32,11 @@ Specifies a session. If this parameter is omitted, then the desktop heap informa
 
 ## DLL
 
-Windows XP and later - Kdexts.dll
+Kdexts.dll
 
 
 
-### Additional Information
+## Additional Information
 
 For information about desktops or desktop heaps, see the Microsoft Windows SDK documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
@@ -72,13 +72,5 @@ kd> !dskheap
                 Total Desktop: (    5312 KB -   7 desktops)
 #                 Session ID:  0
 ```
-
-
-
-
-
-
-
-
 
 

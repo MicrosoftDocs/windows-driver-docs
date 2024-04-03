@@ -24,7 +24,7 @@ The **.dbgdbg** command launches a new instance of CDB; this new debugger takes 
 ## <span id="ddk_meta_debug_current_debugger_dbg"></span><span id="DDK_META_DEBUG_CURRENT_DEBUGGER_DBG"></span>
 
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -37,13 +37,4 @@ The **.dbgdbg** command launches a new instance of CDB; this new debugger takes 
 ## Remarks
 
 The **.dbgdbg** command is similar to the [**CTRL+P (Debug Current Debugger)**](../debugger/ctrl-p--debug-current-debugger-.md) control key. However, **.dbgdbg** is more versatile, because it can be used from WinDbg as well as KD and CDB, and it can be used to debug a debugging server on a remote computer.
-
- 
-
- 
-
-
-
-
-
 

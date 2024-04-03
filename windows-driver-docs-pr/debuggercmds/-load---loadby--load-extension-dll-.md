@@ -22,7 +22,7 @@ The **.load** and **.loadby** commands load a new extension DLL into the debugge
 .loadby DLLName ModuleName
 ```
 
-## <span id="ddk_meta_load_extension_dll_dbg"></span><span id="DDK_META_LOAD_EXTENSION_DLL_DBG"></span>Parameters
+## Parameters
 
 
 <span id="_______DLLName______"></span><span id="_______dllname______"></span><span id="_______DLLNAME______"></span> *DLLName*   
@@ -31,7 +31,7 @@ Specifies the debugger extension DLL to load. If you use the **.load** command, 
 <span id="_______ModuleName______"></span><span id="_______modulename______"></span><span id="_______MODULENAME______"></span> *ModuleName*   
 Specifies the module name of a module that is located in the same directory as the extension DLL that *DLLName* specifies.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -39,7 +39,7 @@ Specifies the module name of a module that is located in the same directory as t
 |Targets |Live, crash dump      |
 |Platforms|All                  |
 
-### Additional Information
+## Additional Information
 
 For more information about how to load, unload, and control extensions, see [Loading Debugger Extension DLLs](loading-debugger-extension-dlls.md).
 
