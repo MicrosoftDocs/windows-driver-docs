@@ -142,9 +142,9 @@ SimpleMediaSource.dll = 1,,
 ;*****************************************
 
 [Manufacturer]
-%StdMfg%=Standard,NTamd64.10.0...22000
+%StdMfg%=Standard,NTamd64.10.0...25326
 
-[Standard.NTamd64.10.0...22000]
+[Standard.NTamd64.10.0...25326]
 %SimpleMediaSource.DeviceDesc%=SimpleMediaSourceWin11, root\SimpleMediaSource
 
 
