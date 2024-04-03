@@ -122,6 +122,9 @@ Enable kernel-mode debugging on the target system by completing the following st
 > [!IMPORTANT]
 > Before you use BCDEdit to change boot information, you might need to temporarily suspend Windows security features such as BitLocker and Secure Boot on the test computer.
 > Re-enable these security features when testing is complete. Appropriately manage the test computer when the security features are disabled.
+> Secure boot is typically disabled in UEFI. To access UEFI setting, Use System, Recovery, Advanced start-up. On restart, select Troubleshoot, Advanced options, UEFI Firmware settings.
+> Use caution, as incorrectly setting UEFI options or disabling BitLocker, may make the system inoperable.
+>
 
 1. On the target computer, open a Command Prompt window as Administrator. Enter this command to enable debugging:
 
