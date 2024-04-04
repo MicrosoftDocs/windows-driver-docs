@@ -1,7 +1,7 @@
 ---
-title: "wdfkd.wdfumdevstack"
-description: "The wdfkd.wdfumdevstack extension displays detailed information about a UMDF device stack in the implicit process."
-keywords: ["wdfkd.wdfumdevstack Windows Debugging"]
+title: "!wdfkd.wdfumdevstack"
+description: "The !wdfkd.wdfumdevstack extension displays detailed information about a UMDF device stack in the implicit process."
+keywords: ["!wdfkd.wdfumdevstack Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !wdfkd.wdfumdevstack
 
-
 The **!wdfkd.wdfumdevstack** extension displays detailed information about a UMDF device stack in the [implicit process](../debugger/controlling-threads-and-processes.md).
 
 ```dbgcmd
@@ -22,7 +21,6 @@ The **!wdfkd.wdfumdevstack** extension displays detailed information about a UMD
 ```
 
 ## Parameters
-
 
 <span id="_______DevstackAddress______"></span><span id="_______devstackaddress______"></span><span id="_______DEVSTACKADDRESS______"></span> *DevstackAddress*   
 Specifies the address of the device stack to display information about. You can use [**!wdfkd.wdfumdevstacks**](-wdfkd-wdfumdevstacks.md) to get the addresses of UMDF device stacks in the implicit process.
@@ -36,18 +34,15 @@ Displays detailed information about the device stack.
 <span id="Bit_7__0x80_"></span><span id="bit_7__0x80_"></span><span id="BIT_7__0X80_"></span>Bit 7 (0x80)  
 Displays information about the internal framework.
 
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Wdfkd.dll
 
-## <span id="Frameworks"></span><span id="frameworks"></span><span id="FRAMEWORKS"></span>Frameworks
-
+## Frameworks
 
 UMDF 2
 
-## <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
-
+## Additional Information
 
 For more information, see [Kernel-Mode Driver Framework Debugging](../debugger/kernel-mode-driver-framework-debugging.md).
 
@@ -102,13 +97,3 @@ The preceding output displays the address of a device stack (0x000000a5a3ab5f70)
           wudfx02000!FxDriver: 0x000000a5a3acaaa0
       DevStack XFerMode: Deferred RW: Buffered CTL: Buffered
 ```
-
- 
-
- 
-
-
-
-
-
-

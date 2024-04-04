@@ -1,8 +1,8 @@
 ---
 title: "!zombies (WinDbg)"
-description: "The zombies extension displays all dead (zombie) processes or threads."
-keywords: ["zombies Windows Debugging"]
-ms.date: 05/23/2017
+description: "The !zombies extension is obsolete."
+keywords: ["!zombies Windows Debugging"]
+ms.date: 04/02/2024
 topic_type:
 - apiref
 ms.topic: reference
@@ -20,8 +20,7 @@ The **!zombies** extension displays all dead ("zombie") processes or threads.
 !zombies [Flags [RestartAddress]]
 ```
 
-## <span id="ddk__zombies_dbg"></span><span id="DDK__ZOMBIES_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______Flags______"></span><span id="_______flags______"></span><span id="_______FLAGS______"></span> *Flags*   
 Specifies what will be displayed. Possible values include:
@@ -37,43 +36,16 @@ Specifies the hexadecimal address at which to begin the search. This is useful i
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Kdextx86.dll</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Unavailable</p></td>
-</tr>
-</tbody>
-</table>
+Windows XP and later - Unavailable
 
- 
+## Additional Information
 
-### Additional Information
+This extension is obsolete.
 
 To see a list of all processes and threads, use the [**!process**](-process.md) extension.
 
-For general information about processes and threads in kernel mode, see [Changing Contexts](../debugger/changing-contexts.md). For more information about analyzing processes and threads, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon. 
+For general information about processes and threads in kernel mode, see [Changing Contexts](../debugger/changing-contexts.md). For more information about analyzing processes and threads, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
 
 ## Remarks
 
 Zombie processes are dead processes that have not yet been removed from the process list. Zombie threads are analogous.
-
-This extension is available only for Windows 2000.
-
- 
-
- 
-
-
-
-
-
-

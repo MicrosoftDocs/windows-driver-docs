@@ -1,7 +1,7 @@
 ---
-title: "usb3kd.ucx_controller_list"
-description: "The usb3kd.ucx_controller_list command displays information about all USB 3.0 host controllers on the computer. The display is based on data structures maintained by UcxVersion.sys."
-keywords: ["usb3kd.ucx_controller_list Windows Debugging"]
+title: "!usb3kd.ucx_controller_list"
+description: "The !usb3kd.ucx_controller_list command displays information about all USB 3.0 host controllers on the computer. The display is based on data structures maintained by UcxVersion.sys."
+keywords: ["!usb3kd.ucx_controller_list Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,15 +14,13 @@ api_type:
 
 # !usb3kd.ucx\_controller\_list
 
-
 The [**!usb3kd.ucx\_controller\_list**](-usb3kd-device-info.md) command displays information about all USB 3.0 host controllers on the computer. The display is based on data structures maintained by the USB host controller extension driver (Ucx*Version*.sys).
 
 ```dbgcmd
 !usb3kd.ucx_controller_list
 ```
 
-## <span id="Examples"></span><span id="examples"></span><span id="EXAMPLES"></span>Examples
-
+## Examples
 
 The following screen shot show the output of the [**!ucx\_controller\_list**](-usb3kd-device-info.md) command.
 
@@ -33,11 +31,7 @@ The output shows that there is one USB 3.0 host controller, which is represented
 The output uses [Using Debugger Markup Language (DML)](../debugger/debugger-markup-language-commands.md) to provide links. The links execute commands that give detailed information about individual devices or endpoints. For example, you could get detailed information about an endpoint by clicking one of the [**!ucx\_endpoint**](-usb3kd-ucx-endpoint.md) links. As an alternative to clicking a link, you can enter a command. For example, to see information about the first endpoint of the second device, you could enter the command **!ucx\_endpoint 0xfffffa8003694860**.
 
 **Note**  The DML feature is available in WinDbg, but not in Visual Studio or KD.
-
- 
-
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Usb3kd.dll
 
@@ -53,11 +47,6 @@ The USB host controller extension driver (Ucx*Version*.sys) provides a layer of 
 
 ## See also
 
-
 [USB 3.0 Extensions](usb-3-extensions.md)
 
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
-
- 
-
-

@@ -1,7 +1,7 @@
 ---
 title: "usb3kd-xhci_findowner"
-description: "The usb3kd.xhci_findowner command finds the owner a common buffer."
-keywords: ["usb3kd.xhci_findowner Windows Debugging"]
+description: "The !usb3kd.xhci_findowner command finds the owner a common buffer."
+keywords: ["!usb3kd.xhci_findowner Windows Debugging"]
 ms.date: 10/18/2018
 topic_type:
 - apiref
@@ -14,21 +14,18 @@ api_type:
 
 # !usb3kd.xhci\_findowner
 
-
 The **!usb3kd.xhci\_findowner** command finds the owner a common buffer.
 
 ```dbgcmd
 !usb3kd.xhci_findowner Address
 ```
 
-## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Virtual or physical address of a common buffer.
 
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Usb3kd.dll
 
@@ -115,13 +112,8 @@ The **!xhci\_findowner** command is especially useful when you have an address i
 
 ## See also
 
-
 [USB 3.0 Extensions](usb-3-extensions.md)
 
 [**!xhci\_dumpall**](-usb3kd-xhci-dumpall.md)
 
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
-
- 
-
-

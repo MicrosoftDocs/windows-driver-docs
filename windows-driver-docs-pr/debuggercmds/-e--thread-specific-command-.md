@@ -32,7 +32,7 @@ Specifies the thread or threads that the debugger will execute *CommandString* f
 <span id="_______CommandString______"></span><span id="_______commandstring______"></span><span id="_______COMMANDSTRING______"></span> *CommandString*   
 Specifies one or more commands to execute. You should separate multiple commands by using semicolons. *CommandString* includes the rest of the input line. All of the text that follows the letter "e" is interpreted as part of this string. Do not enclose *CommandString* in quotation marks.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -42,7 +42,7 @@ Specifies one or more commands to execute. You should separate multiple commands
 
  
 
-### Additional Information
+## Additional Information
 
 For more information about other commands that control threads, see [Controlling Processes and Threads](../debugger/controlling-processes-and-threads.md).
 
@@ -71,13 +71,4 @@ You cannot use the **~e** qualifier together with execution commands ([**g**](g-
 You cannot use the **~e** qualifier together with the [**j (Execute If-Else)**](j--execute-if---else-.md) or [**z (Execute While)**](z--execute-while-.md) conditional commands.
 
 If you are debugging more than one process, you cannot use the **~e** command to access the virtual memory space for a inactive process.
-
- 
-
- 
-
-
-
-
-
 

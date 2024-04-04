@@ -1,7 +1,7 @@
 ---
-title: "rcdrkd.rcdrlogdump"
-description: "The rcdrkd.rcdrlogdump extension displays the trace messages from all recorder buffers of a driver or set of drivers."
-keywords: ["rcdrkd.rcdrlogdump Windows Debugging"]
+title: "!rcdrkd.rcdrlogdump"
+description: "The !rcdrkd.rcdrlogdump extension displays the trace messages from all recorder buffers of a driver or set of drivers."
+keywords: ["!rcdrkd.rcdrlogdump Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !rcdrkd.rcdrlogdump
 
-
 The **!rcdrkd.rcdrlogdump** extension displays the trace messages from all recorder buffers of a driver or set of drivers.
 
 ```dbgcmd
@@ -22,8 +21,7 @@ The **!rcdrkd.rcdrlogdump** extension displays the trace messages from all recor
 !rcdrkd.rcdrlogdump DriverName -a Address
 ```
 
-## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______DriverName______"></span><span id="_______drivername______"></span><span id="_______DRIVERNAME______"></span> *DriverName*   
 The name of a driver, not including the .sys extension.
@@ -31,8 +29,7 @@ The name of a driver, not including the .sys extension.
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 If Address is specified, this command displays the trace messages from the log buffer at the specified address.
 
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Rcdrkd.dll
 
@@ -98,16 +95,4 @@ Trying to extract TMF information from - C:\ProgramData\dbg\sym\usbxhci.pdb\D4C8
 
 ## See also
 
-
 [RCDRKD Extensions](rcdrkd-extensions.md)
-
- 
-
- 
-
-
-
-
-
-
-

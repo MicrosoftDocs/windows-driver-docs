@@ -98,12 +98,3 @@ You can use the [**!running**](-running.md) extension to display the status of e
 
 You can use the [**!cpuinfo**](-cpuinfo.md) and [**!cpuid**](-cpuid.md) extensions to display information about the processors themselves.
 
- 
-
- 
-
-
-
-
-
-

@@ -130,7 +130,7 @@ You must enclose this command string in quotation marks, and you should separate
 
 This parameter is optional.
 
-### Environment
+## Environment
 
 |  Item       | Description               |
 |-----------|------------------------|
@@ -140,7 +140,7 @@ This parameter is optional.
 
  
 
-### Additional Information
+## Additional Information
 
 For more information on processor breakpoints, see [Processor Breakpoints (ba Breakpoints)](../debugger/processor-breakpoints---ba-breakpoints-.md). For more information about and examples of using breakpoints, other breakpoint commands and methods of controlling breakpoints, and information about how to set breakpoints in user space from a kernel debugger, see [Using Breakpoints](../debugger/using-breakpoints.md). For more information about conditional breakpoints, see [Setting a Conditional Breakpoint](../debugger/setting-a-conditional-breakpoint.md).
 
@@ -179,13 +179,4 @@ The following command adds a breakpoint on all serial ports with addresses from 
 ```dbgcmd
 kd> ba i4 3f8
 ```
-
- 
-
- 
-
-
-
-
-
 

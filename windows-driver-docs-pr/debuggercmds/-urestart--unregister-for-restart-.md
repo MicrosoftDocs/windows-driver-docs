@@ -14,7 +14,6 @@ api_type:
 
 # .urestart (Unregister for Restart)
 
-
 The **.urestart** command unregisters the debugging session for restart in case of a reboot or an application failure.
 
 ```dbgcmd
@@ -27,16 +26,4 @@ This command does not work for elevated debugger sessions.
 
 ## See also
 
-
 [**.rrestart**](-rrestart--register-for-restart-.md)
-
- 
-
- 
-
-
-
-
-
-
-

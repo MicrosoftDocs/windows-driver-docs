@@ -1,7 +1,7 @@
 ---
-title: "exchain (WinDbg)"
-description: "The exchain extension displays the current exception handler chain."
-keywords: ["exchain Windows Debugging"]
+title: "!exchain (WinDbg)"
+description: "The !exchain extension displays the current exception handler chain."
+keywords: ["!exchain Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -38,22 +38,10 @@ Displays information that is obtained by walking the CRT function tables, even i
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Ext.dll</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Ext.dll</p></td>
-</tr>
-</tbody>
-</table>
+
+Ext.dll
+
+
 
  
 
@@ -75,13 +63,4 @@ The list begins with the first handler on the chain (the one that is given the f
                 func:   Prymes!mainCRTStartup+113 (004021d3)
 0012ffe0: KERNEL32!GetThreadContext+1c (77ea1856)
 ```
-
- 
-
- 
-
-
-
-
-
 

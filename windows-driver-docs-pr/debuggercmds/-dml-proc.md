@@ -1,7 +1,7 @@
 ---
-title: "dml_proc (WinDbg)"
-description: "The dml_proc extension displays a list of processes and provides links for obtaining more detailed information about processes."
-keywords: ["dml_proc Windows Debugging"]
+title: "!dml_proc (WinDbg)"
+description: "The !dml_proc extension displays a list of processes and provides links for obtaining more detailed information about processes."
+keywords: ["!dml_proc Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -37,14 +37,5 @@ The preceding output, which describes an individual process, contains links that
 
 
 [Debugger Markup Language Commands](../debugger/debugger-markup-language-commands.md)
-
- 
-
- 
-
-
-
-
-
 
 

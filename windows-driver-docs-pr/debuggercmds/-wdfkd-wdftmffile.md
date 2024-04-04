@@ -1,7 +1,7 @@
 ---
-title: "wdfkd.wdftmffile"
-description: "The wdfkd.wdftmffile extension sets the trace message format (.tmf) file to use when the debugger is formatting KMDF error logs for the wdfkd.wdflogdump or wdfkd.wdfcrashdump."
-keywords: ["wdfkd.wdftmffile Windows Debugging"]
+title: "!wdfkd.wdftmffile"
+description: "The !wdfkd.wdftmffile extension sets the trace message format (.tmf) file to use when the debugger is formatting KMDF error logs for the wdfkd.wdflogdump or wdfkd.wdfcrashdump."
+keywords: ["!wdfkd.wdftmffile Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -23,7 +23,6 @@ The **!wdfkd.wdftmffile** extension sets the trace message format (.tmf) file to
 
 ## Parameters
 
-
 <span id="_______TMFpath______"></span><span id="_______tmfpath______"></span><span id="_______TMFPATH______"></span> *TMFpath*   
 A path that contains the .tmf file.
 
@@ -31,11 +30,11 @@ A path that contains the .tmf file.
 
 Wdfkd.dll
 
-### <span id="Frameworks"></span><span id="frameworks"></span><span id="FRAMEWORKS"></span>Frameworks
+### Frameworks
 
 KMDF 1, UMDF 2
 
-### Additional Information
+## Additional Information
 
 For more information, see [Kernel-Mode Driver Framework Debugging](../debugger/kernel-mode-driver-framework-debugging.md).
 
@@ -54,7 +53,3 @@ kd> !wdftmffile tools\tracing\<platform>\wdf1005.tmf
 Note that the path might be different for the version of the Windows Driver Kit (WDK) that you are using. Also note that the .tmf file's name represents the version of KMDF that you are using. For example, Wdf1005.tmf is the .tmf file for KMDF version 1.5.
 
 For information about how to view the KMDF log during a debugging session, see [Using the Framework's Event Logger](../wdf/using-the-framework-s-event-logger.md).
-
- 
-
-

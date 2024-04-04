@@ -1,7 +1,7 @@
 ---
-title: "usbkd.usbfaildata"
-description: "The usbkd.usbfaildata command displays the failure data (if any) stored for a USB device."
-keywords: ["usbkd.usbfaildata Windows Debugging"]
+title: "!usbkd.usbfaildata"
+description: "The !usbkd.usbfaildata command displays the failure data (if any) stored for a USB device."
+keywords: ["!usbkd.usbfaildata Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,21 +14,18 @@ api_type:
 
 # !usbkd.usbfaildata
 
-
 The **!usbkd.usbfaildata** command displays the failure data (if any) stored for a USB device.
 
 ```dbgcmd
 !usbkd.usbfaildata PDO
 ```
 
-## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______PDO______"></span><span id="_______pdo______"></span> *PDO*   
 Address of the physical device object (PDO) of a device that is connected to a USB hub.
 
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Usbkd.dll
 
@@ -53,11 +50,6 @@ Now pass the address of the PDO to **!usbkd.usbfaildata**.
 
 ## See also
 
-
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
-
- 
-
-

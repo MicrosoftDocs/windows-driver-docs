@@ -1,7 +1,7 @@
 ---
-title: "cpuinfo (WinDbg)"
-description: "The cpuinfo extension displays detailed information about the target computer's CPU."
-keywords: ["cpuinfo Windows Debugging"]
+title: "!cpuinfo (WinDbg)"
+description: "The !cpuinfo extension displays detailed information about the target computer's CPU."
+keywords: ["!cpuinfo Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -33,7 +33,7 @@ Specifies the processor to be displayed. If this is omitted, all processors are 
 
 Kdexts.dll
 
-### Additional Information
+## Additional Information
 
 For more information about debugging multiprocessor computers, see [Multiprocessor Syntax](multiprocessor-syntax.md).
 
@@ -56,13 +56,4 @@ For an x86-based processor or an x64-based processor, the **F** column displays 
 Other columns will also appear, depending on your machine's specific architecture.
 
 For details on how to interpret specific values for each entry, as well as any additional columns, consult the processor manual.
-
- 
-
- 
-
-
-
-
-
 

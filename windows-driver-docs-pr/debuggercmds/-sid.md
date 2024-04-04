@@ -1,7 +1,7 @@
 ---
-title: "sid (WinDbg)"
-description: "The sid extension displays the security identifier (SID) at the specified address."
-keywords: ["sid Windows Debugging"]
+title: "!sid (WinDbg)"
+description: "The !sid extension displays the security identifier (SID) at the specified address."
+keywords: ["!sid Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !sid
 
-
 The **!sid** extension displays the security identifier (SID) at the specified address.
 
 Syntax
@@ -23,8 +22,7 @@ Syntax
 !sid Address [Flags] 
 ```
 
-## <span id="ddk__sid_dbg"></span><span id="DDK__SID_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the address of the SID structure.
@@ -38,7 +36,7 @@ If this is set to 1, the friendly name is displayed. This includes the SID type,
 
 Exts.dll
 
-### Additional Information
+## Additional Information
 
 For information about SIDs, see the Microsoft Windows SDK documentation, the Windows Driver Kit (WDK) documentation, or *Microsoft Windows Internals* by Mark Russinovich and David Solomon. Also see [**!sd**](-sd.md) and [**!acl**](-acl.md).
 
@@ -53,13 +51,3 @@ SID is: S-1-5-21-518066528-515770016-299552555-513
 kd> !sid 0xe1bf35b8 1
 SID is: S-1-5-21-518066528-515770016-299552555-513 (Group: MYGROUP\Domain Users)
 ```
-
- 
-
- 
-
-
-
-
-
-

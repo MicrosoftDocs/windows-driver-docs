@@ -14,15 +14,13 @@ api_type:
 
 # .tlist (List Process IDs)
 
-
 The **.tlist** command lists all processes running on the system.
 
 ```dbgcmd
 .tlist [Options][FileNamePattern]
 ```
 
-## <span id="ddk_meta_list_process_ids_dbg"></span><span id="DDK_META_LIST_PROCESS_IDS_DBG"></span>Parameters
-
+## Parameters
 
 *Options*
 Can be any number of the following options:
@@ -36,29 +34,18 @@ Limits the display to just the current process.
 <span id="_______FileNamePattern______"></span><span id="_______filenamepattern______"></span><span id="_______FILENAMEPATTERN______"></span> *FileNamePattern*   
 Specifies the file name to be displayed, or a pattern that the file name of the process must match. Only those processes whose file names match this pattern will be displayed. *FileNamePattern* may contain a variety of wildcards and specifiers; see [String Wildcard Syntax](string-wildcard-syntax.md) for details. This match is made only against the actual file name, not the path.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
 |Modes | user mode only |
 |Targets | live debugging only |
 |Platforms | all  |
- 
 
-### Additional Information
+## Additional Information
 
 For other methods of displaying processes, see [Finding the Process ID](../debugger/finding-the-process-id.md).
 
 ## Remarks
 
 Each process ID is displayed with an **0n** prefix, to emphasize that the PID is a decimal number.
-
- 
-
- 
-
-
-
-
-
-

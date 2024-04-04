@@ -31,7 +31,7 @@ Displays all 16-bit (USHORT) arrays and pointers as short integers. This is the 
 <span id="_______1______"></span> **1**   
 Displays all 16-bit (USHORT) arrays and pointers as Unicode strings.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -53,14 +53,5 @@ You can also select or clear **Display 16-bit values** as Unicode on the shortcu
 
 
 [**ds, dS (Display String)**](ds--ds--display-string-.md)
-
- 
-
- 
-
-
-
-
-
 
 

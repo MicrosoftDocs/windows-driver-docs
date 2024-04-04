@@ -1,7 +1,7 @@
 ---
-title: "rpcexts.getcallinfo"
-description: "The rpcexts.getcallinfo extension searches the system's RPC state information for server-side call (SCALL) information."
-keywords: ["rpcexts.getcallinfo Windows Debugging"]
+title: "!rpcexts.getcallinfo"
+description: "The !rpcexts.getcallinfo extension searches the system's RPC state information for server-side call (SCALL) information."
+keywords: ["!rpcexts.getcallinfo Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !rpcexts.getcallinfo
 
-
 The **!rpcexts.getcallinfo** extension searches the system's RPC state information for server-side call (SCALL) information.
 
 ```dbgcmd
@@ -22,8 +21,7 @@ The **!rpcexts.getcallinfo** extension searches the system's RPC state informati
 !rpcexts.getcallinfo -? 
 ```
 
-## <span id="ddk__rpcexts_getcallinfo_dbg"></span><span id="DDK__RPCEXTS_GETCALLINFO_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______CallID______"></span><span id="_______callid______"></span><span id="_______CALLID______"></span> *CallID*   
 Specifies the call ID. This parameter is optional; include it if you only want to display calls matching a specific *CallID* value.
@@ -42,26 +40,9 @@ Displays some brief Help text for this extension in the Command Prompt window.
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Unavailable</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Rpcexts.dll</p></td>
-</tr>
-</tbody>
-</table>
+Rpcexts.dll
 
- 
-
-### Additional Information
+## Additional Information
 
 For more information about debugging Microsoft Remote Procedure Call (RPC), see [RPC Debugging](../debugger/rpc-debugging.md).
 
@@ -127,13 +108,3 @@ Searching for call info ...
 ```
 
 For a similar example using the DbgRpc tool, see [Get RPC Call Information](../debugger/get-rpc-call-information.md).
-
- 
-
- 
-
-
-
-
-
-

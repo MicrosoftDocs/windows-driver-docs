@@ -1,7 +1,7 @@
 ---
-title: "bpid (WinDbg)"
-description: "The bpid extension requests that a process on the target computer break into the debugger or requests that a user-mode debugger be attached to a process on the target computer."
-keywords: ["bpid Windows Debugging"]
+title: "!bpid (WinDbg)"
+description: "The !bpid extension requests that a process on the target computer break into the debugger or requests that a user-mode debugger be attached to a process on the target computer."
+keywords: ["!bpid Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -57,7 +57,7 @@ Specifies the process ID of the desired process on the target computer. If you a
 
 ## DLL
 
-Windows XP and later - Kdexts.dll
+Kdexts.dll
 
  
 
@@ -80,13 +80,4 @@ Note that there are ways in which this extension can fail to execute:
 -   Lack of permission. The operation of the !bpid extension requires permission sufficient for WinLogon to create a remote thread and attach a debugger to a given process.
 
 -   No access to ntsd.exe. If ntsd.exe is not found in a commonly known path, !bpid will fail to set an appropriate PID. Note that ntsd.exe is not included by default with Windows Vista.
-
- 
-
- 
-
-
-
-
-
 

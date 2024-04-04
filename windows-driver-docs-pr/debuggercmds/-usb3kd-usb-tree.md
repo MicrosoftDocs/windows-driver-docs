@@ -1,7 +1,7 @@
 ---
-title: "usb3kd.usb_tree"
-description: "The usb3kd.usb_tree extension displays information, in tree format, about all USB 3.0 controllers, hubs, and devices on the computer."
-keywords: ["usb3kd.usb_tree Windows Debugging"]
+title: "!usb3kd.usb_tree"
+description: "The !usb3kd.usb_tree extension displays information, in tree format, about all USB 3.0 controllers, hubs, and devices on the computer."
+keywords: ["!usb3kd.usb_tree Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,21 +14,18 @@ api_type:
 
 # !usb3kd.usb\_tree
 
-
 The [**!usb3kd.usb\_tree**](-usb3kd-device-info.md) extension displays information, in tree format, about all USB 3.0 controllers, hubs, and devices on the computer.
 
 ```dbgcmd
 !usb3kd.usb_tree [1]
 ```
 
-## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______1______"></span> **1**   
 The display includes status information for hubs and ports.
 
-## <span id="Examples"></span><span id="examples"></span><span id="EXAMPLES"></span>Examples
-
+## Examples
 
 The following screen shot shows the output of the [**!usb\_tree**](-usb3kd-device-info.md) command.
 
@@ -40,10 +37,7 @@ The output uses [Using Debugger Markup Language (DML)](../debugger/debugger-mark
 
 **Note**  The DML feature is available in WinDbg, but not in Visual Studio or KD.
 
- 
-
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Usb3kd.dll
 
@@ -61,11 +55,6 @@ The information displayed by the [**!usb\_tree**](-usb3kd-device-info.md) family
 
 ## See also
 
-
 [USB 3.0 Extensions](usb-3-extensions.md)
 
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
-
- 
-
-

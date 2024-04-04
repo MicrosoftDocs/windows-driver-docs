@@ -1,7 +1,7 @@
 ---
-title: "ih (WinDbg)"
-description: "The ih extension displays the interrupt history record for the specified processor."
-keywords: ["interrupt history record", "ih Windows Debugging"]
+title: "!ih (WinDbg)"
+description: "The !ih extension displays the interrupt history record for the specified processor."
+keywords: ["interrupt history record", "!ih Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -23,19 +23,15 @@ The **!ih** extension displays the interrupt history record for the specified pr
 
 **Important**  This command has been deprecated in the Windows Debugger Version 10.0.14257 and later, and is no longer available.
 
- 
 
 ## Parameters
-
 
 <span id="_______Processor______"></span><span id="_______processor______"></span><span id="_______PROCESSOR______"></span> *Processor*   
 Specifies a processor. If *Processor* is omitted, the current processor is used.
 
 ## DLL
 
-Windows XP and later - Kdexts.dll
-
- 
+Kdexts.dll
 
 This extension command can only be used with an Itanium-based target computer.
 
@@ -77,13 +73,4 @@ EXTERNAL INTERRUPT  e0000000830623b0      1010092a6018  IVR=               d0
  VHPT FAULT  e00000008344dc20      1010092a6018  IFA= e000010600703784 
 ...
 ```
-
- 
-
- 
-
-
-
-
-
 

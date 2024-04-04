@@ -32,7 +32,7 @@ Causes all threads to freeze when one thread has reached a breakpoint. After the
 <span id="_______0______"></span> **0**   
 Allows other threads to continue executing when one thread has reached a breakpoint. This is the default behavior.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -53,13 +53,4 @@ If there is a possibility of multiple threads running through the same code, the
 The temporary removal of breakpoints is a normal aspect of debugger operation. When the target reaches a breakpoint and is resumed, the debugger has to remove the breakpoint temporarily so that the target can execute the real code. After the real instruction has been executed, the debugger reinserts the break. To do this, the debugger restores the code (or turns off data breaks), does a single-step, and then puts the break back.
 
 Note that if you use **.bpsync 1**, there is a risk of deadlocks among the threads that have been frozen.
-
- 
-
- 
-
-
-
-
-
 

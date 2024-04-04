@@ -1,7 +1,7 @@
 ---
-title: "wsle (WinDbg)"
-description: "The wsle extension displays all working set list entries (WSLEs)."
-keywords: ["wsle Windows Debugging"]
+title: "!wsle (WinDbg)"
+description: "The !wsle extension displays all working set list entries (WSLEs)."
+keywords: ["!wsle Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,17 +14,15 @@ api_type:
 
 # !wsle
 
-
 The **!wsle** extension displays all working set list entries (WSLEs).
 
 Syntax
 
 ```dbgcmd
 !wsle [Flags [Address]] 
-```dbgcmd
+```
 
-## <span id="ddk__wsle_dbg"></span><span id="DDK__WSLE_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______Flags______"></span><span id="_______flags______"></span><span id="_______FLAGS______"></span> *Flags*   
 Specifies the information to include in the display. This can be any combination of the following bits. The default is zero. If this is used, only basic information about the working set is displayed.
@@ -45,9 +43,9 @@ Specifies the address of the working set list. If this is omitted, the default w
 
 Kdexts.dll
 
-### Additional Information
+## Additional Information
 
-For information about working sets, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
+For information about working sets, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
 
 ## Remarks
 
@@ -83,13 +81,3 @@ found end @ wsle index 0x259
 
 .....
 ```
-
- 
-
- 
-
-
-
-
-
-

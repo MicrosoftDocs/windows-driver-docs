@@ -1,7 +1,7 @@
 ---
-title: "ndiskd.pkt"
+title: "!ndiskd.pkt"
 description: "Warning  This extension is for legacy NDIS 5.x drivers. The ndiskd.pkt extension displays information about an NDIS_PACKET structure."
-keywords: ["ndiskd.pkt Windows Debugging"]
+keywords: ["!ndiskd.pkt Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref

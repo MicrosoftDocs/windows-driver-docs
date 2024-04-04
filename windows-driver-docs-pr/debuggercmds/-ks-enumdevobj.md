@@ -1,7 +1,7 @@
 ---
-title: "ks.enumdevobj"
-description: "The ks.enumdevobj extension displays the KSDEVICE associated with a given WDM device object, and lists the filter types and filters currently instantiated on this device."
-keywords: ["ks.enumdevobj Windows Debugging"]
+title: "!ks.enumdevobj"
+description: "The !ks.enumdevobj extension displays the KSDEVICE associated with a given WDM device object, and lists the filter types and filters currently instantiated on this device."
+keywords: ["!ks.enumdevobj Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -48,7 +48,7 @@ Specifies a pointer to a WDM device object.
 
  
 
-### Additional Information
+## Additional Information
 
 For more information, see [Kernel Streaming Debugging](../debugger/kernel-streaming-debugging.md).
 
@@ -65,13 +65,4 @@ WDM device object 8241c020:
     Factory 829782dc [Descriptor f7a233c8] instances:
         829493c4 
 ```
-
- 
-
- 
-
-
-
-
-
 

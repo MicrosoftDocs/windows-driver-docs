@@ -1,7 +1,7 @@
 ---
-title: "usb3kd.device_info_from_pdo"
-description: "The usb3kd.device_info_from_pdo command displays information about a USB device in the USB 3.0 tree."
-keywords: ["usb3kd.device_info_from_pdo Windows Debugging"]
+title: "!usb3kd.device_info_from_pdo"
+description: "The !usb3kd.device_info_from_pdo command displays information about a USB device in the USB 3.0 tree."
+keywords: ["!usb3kd.device_info_from_pdo Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,21 +14,18 @@ api_type:
 
 # !usb3kd.device\_info\_from\_pdo
 
-
 The **!usb3kd.device\_info\_from\_pdo** command displays information about a USB device in the [USB 3.0 tree](usb-3-extensions.md#usb-3-tree).
 
 ```dbgcmd
 !usb3kd.device_info_from_pdo DeviceObject
 ```
 
-## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______DeviceObject______"></span><span id="_______deviceobject______"></span><span id="_______DEVICEOBJECT______"></span> *DeviceObject*   
 Address of the physical device object (PDO) of a USB device or hub.
 
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Usb3kd.dll
 
@@ -130,13 +127,8 @@ Topology
 
 ## See also
 
-
 [USB 3.0 Extensions](usb-3-extensions.md)
 
 [**!usb3kd.device\_info**](-usb3kd-device-info.md)
 
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
-
- 
-
-

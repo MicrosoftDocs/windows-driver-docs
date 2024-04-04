@@ -1,7 +1,7 @@
 ---
-title: "sprocess (WinDbg)"
-description: "The sprocess extension displays information about the specified session process, or about all processes in the specified session."
-keywords: ["sprocess Windows Debugging"]
+title: "!sprocess (WinDbg)"
+description: "The !sprocess extension displays information about the specified session process, or about all processes in the specified session."
+keywords: ["!sprocess Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !sprocess
 
-
 The **!sprocess** extension displays information about the specified session process, or about all processes in the specified session.
 
 ```dbgcmd
@@ -22,8 +21,7 @@ The **!sprocess** extension displays information about the specified session pro
 !sprocess -?
 ```
 
-## <span id="ddk__sprocess_dbg"></span><span id="DDK__SPROCESS_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______Session______"></span><span id="_______session______"></span><span id="_______SESSION______"></span> *Session*   
 Specifies the session that owns the desired process. *Session* is always interpreted as a decimal number.
@@ -51,7 +49,6 @@ Specifies the session that owns the desired process. *Session* is always interpr
 </tbody>
 </table>
 
- 
 
 <span id="_______Flags______"></span><span id="_______flags______"></span><span id="_______FLAGS______"></span> *Flags*   
 Specifies the level of detail in the display. *Flags* can be any combination of the following bits. The default is 0.
@@ -89,8 +86,6 @@ Specifies the level of detail in the display. *Flags* can be any combination of 
 </tbody>
 </table>
 
- 
-
 <span id="_______ImageName______"></span><span id="_______imagename______"></span><span id="_______IMAGENAME______"></span> *ImageName*   
 Specifies the name of the process to be displayed. All processes whose executable image names match *ImageName* are displayed. The image name must match that in the EPROCESS block. In general, this is the executable name that was invoked to start the process, including the file extension (usually .exe), and truncated after the fifteenth character. There is no way to specify an image name that contains a space.
 
@@ -99,24 +94,13 @@ Displays help for this extension in the Debugger Command window. This help text 
 
 ## DLL
 
-Windows XP and later - Kdexts.dll
+Kdexts.dll
 
- 
-
-### Additional Information
+## Additional Information
 
 For information about sessions and processes in kernel mode, see [Changing Contexts](../debugger/changing-contexts.md). For more information about analyzing processes and threads, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon. 
 
 ## Remarks
 
 The output of this extension is similar to that of [**!process**](-process.md), except that the addresses of \_MM\_SESSION\_SPACE and \_MMSESSION are displayed as well.
-
- 
-
- 
-
-
-
-
-
 

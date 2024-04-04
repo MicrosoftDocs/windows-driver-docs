@@ -136,7 +136,7 @@ Searches for objects of the same type as the specified *Object*.
 <span id="_______Object______"></span><span id="_______object______"></span><span id="_______OBJECT______"></span> *Object*   
 Specifies the address of an object or the address of a pointer to an object. The debugger then searches for objects of the same type as the object that *Object* specifies.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -146,7 +146,7 @@ Specifies the address of an object or the address of a pointer to an object. The
 
  
 
-### Additional Information
+## Additional Information
 
 For more information about memory manipulation and a description of other memory-related commands, see [Reading and Writing Memory](../debugger/reading-and-writing-memory.md).
 
@@ -220,13 +220,4 @@ The following example shows a search that uses the *Type* parameter. This comman
 ```
 
 On little-endian computers, 'VUTS' is the same as the byte pattern 'S' 'T' 'U' 'V'. However, searches for WORDs, DWORDs, and QWORDs return only results that are correctly byte-aligned.
-
- 
-
- 
-
-
-
-
-
 

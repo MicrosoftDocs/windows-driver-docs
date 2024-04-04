@@ -1,7 +1,7 @@
 ---
-title: "wdfkd.wdfiotarget"
-description: "The wdfkd.wdfiotarget extension displays information about a specified I/O target object."
-keywords: ["wdfkd.wdfiotarget Windows Debugging"]
+title: "!wdfkd.wdfiotarget"
+description: "The !wdfkd.wdfiotarget extension displays information about a specified I/O target object."
+keywords: ["!wdfkd.wdfiotarget Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !wdfkd.wdfiotarget
 
-
 The **!wdfkd.wdfiotarget** extension displays information about a specified I/O target object.
 
 ```dbgcmd
@@ -22,7 +21,6 @@ The **!wdfkd.wdfiotarget** extension displays information about a specified I/O 
 ```
 
 ## Parameters
-
 
 <span id="_______Handle______"></span><span id="_______handle______"></span><span id="_______HANDLE______"></span> *Handle*   
 A handle to an I/O target object.
@@ -37,11 +35,11 @@ The display will include details for each of the I/O target's pending request ob
 
 Wdfkd.dll
 
-### <span id="Frameworks"></span><span id="frameworks"></span><span id="FRAMEWORKS"></span>Frameworks
+### Frameworks
 
 KMDF 1, UMDF 2
 
-### Additional Information
+## Additional Information
 
 For more information, see [Kernel-Mode Driver Framework Debugging](../debugger/kernel-mode-driver-framework-debugging.md).
 
@@ -69,13 +67,3 @@ Requests sent with ignore-target-state: 0
 ```
 
 The output in the preceding example includes the address of the I/O target's parent framework device object, along with the addresses of the WDM DEVICE\_OBJECT structures that represent the target driver's device object and the target device's physical device object (PDO).
-
- 
-
- 
-
-
-
-
-
-

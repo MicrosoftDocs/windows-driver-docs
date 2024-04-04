@@ -14,15 +14,13 @@ api_type:
 
 # .srcnoisy (Noisy Source Loading)
 
-
 The **.srcnoisy** command controls the verbosity level for source file loading.
 
 ```dbgcmd
 .srcnoisy [Options]
 ```
 
-## <span id="ddk_meta_noisy_source_loading_dbg"></span><span id="DDK_META_NOISY_SOURCE_LOADING_DBG"></span>Parameters
-
+## Parameters
 
 *Options*
 Can be any one of the following options:
@@ -39,7 +37,7 @@ Displays information about the progress of symbol file loading and unloading.
 <span id="3"></span>3  
 Displays all information displayed by options 1 and 2.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -47,20 +45,9 @@ Displays all information displayed by options 1 and 2.
 |Targets |Live, crash dump      |
 |Platforms|All                  |
 
- 
-
 ## Remarks
 
 With no parameters, **.srcnoisy** will display the current status of noisy source loading.
 
 Noisy source loading should not be confused with noisy symbol loading -- that is controlled by the [**!sym noisy**](-sym.md) extension and by other means of controlling the [SYMOPT\_DEBUG](../debugger/symbol-options.md#symopt-debug) setting.
-
- 
-
- 
-
-
-
-
-
 

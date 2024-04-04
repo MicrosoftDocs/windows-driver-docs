@@ -1,7 +1,7 @@
 ---
-title: "wdfkd.wdfforwardprogress"
-description: "The wdfkd.wdfforwardprogress extension displays information about the forward progress of a specified framework queue object."
-keywords: ["wdfkd.wdfforwardprogress Windows Debugging"]
+title: "!wdfkd.wdfforwardprogress"
+description: "The !wdfkd.wdfforwardprogress extension displays information about the forward progress of a specified framework queue object."
+keywords: ["!wdfkd.wdfforwardprogress Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !wdfkd.wdfforwardprogress
 
-
 The **!wdfkd.wdfforwardprogress** extension displays information about the forward progress of a specified framework queue object.
 
 ```dbgcmd
@@ -23,7 +22,6 @@ The **!wdfkd.wdfforwardprogress** extension displays information about the forwa
 
 ## Parameters
 
-
 <span id="_______Handle______"></span><span id="_______handle______"></span><span id="_______HANDLE______"></span> *Handle*   
 A handle to a framework queue object.
 
@@ -31,11 +29,11 @@ A handle to a framework queue object.
 
 Wdfkd.dll
 
-### <span id="Frameworks"></span><span id="frameworks"></span><span id="FRAMEWORKS"></span>Frameworks
+### Frameworks
 
 KMDF 1
 
-### Additional Information
+## Additional Information
 
 For more information about how to debug Kernel-Mode Driver Framework (KMDF) drivers, see [Kernel-Mode Driver Framework Debugging](../debugger/kernel-mode-driver-framework-debugging.md).
 
@@ -107,13 +105,4 @@ kd> !wdfkd.wdfforwardprogress 0x79af3250
     EvtIoReservedResourcesAllocate: (0x9a3f1b70) mqueue!EvtIoAllocateResourcesForReservedRequest
     EvtIoExamineIrp: (0x9a3f19d0) mqueue!EvtIoWdmIrpForForwardProgress
 ```
-
- 
-
- 
-
-
-
-
-
 

@@ -52,7 +52,7 @@ Causes the specified process to be debugged noninvasively.
 <span id="_______PID______"></span><span id="_______pid______"></span> *PID*   
 Specifies the process ID of the new target application.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -74,13 +74,4 @@ Multiple target processes will always be executed together, unless some of their
 If you wish to attach to a new process and freeze all your existing targets, use the **-f** option. For example, you might be debugging a crash in a client application and want to attach to the server process without letting the client application continue running.
 
 If the **-premote** option is used, the new process will be part of a new system. For details, see [Debugging Multiple Targets](../debugger/debugging-multiple-targets.md).
-
- 
-
- 
-
-
-
-
-
 

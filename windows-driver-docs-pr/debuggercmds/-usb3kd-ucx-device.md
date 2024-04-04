@@ -1,7 +1,7 @@
 ---
-title: "usb3kd.ucx_device"
-description: "The usb3kd.ucx_device extension displays information about a USB device in the USB 3.0 tree. The display is based on data structures maintained by UcxVersion.sys."
-keywords: ["usb3kd.ucx_device Windows Debugging"]
+title: "!usb3kd.ucx_device"
+description: "The !usb3kd.ucx_device extension displays information about a USB device in the USB 3.0 tree. The display is based on data structures maintained by UcxVersion.sys."
+keywords: ["!usb3kd.ucx_device Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,21 +14,18 @@ api_type:
 
 # !usb3kd.ucx\_device
 
-
 The [**!usb3kd.ucx\_device**](-usb3kd-device-info.md) extension displays information about a USB device in the [USB 3.0 tree](usb-3-extensions.md#usb-3-tree). The display is based on data structures maintained by the USB host controller extension driver (Ucx*Version*.sys).
 
 ```dbgcmd
 !usb3kd.ucx_device UcxUsbDevicePrivContext
 ```
 
-## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______UcxUsbDevicePrivContext______"></span><span id="_______ucxusbdeviceprivcontext______"></span><span id="_______UCXUSBDEVICEPRIVCONTEXT______"></span> *UcxUsbDevicePrivContext*   
 Address of the \_UCXUSBDEVICE\_PRIVCONTEXT structure that represents the device.
 
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Usb3kd.dll
 
@@ -87,11 +84,8 @@ EventCallbacks:
 
 ## See also
 
-
 [USB 3.0 Extensions](usb-3-extensions.md)
 
 [**!usb3kd.ucx\_controller\_list**](-usb3kd-ucx-controller-list.md)
 
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
-
-

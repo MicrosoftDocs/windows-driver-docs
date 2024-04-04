@@ -1,7 +1,7 @@
 ---
-title: "process (WinDbg)"
-description: "The process extension displays information about the specified process, or about all processes, including the EPROCESS block."
-keywords: ["process Windows Debugging"]
+title: "!process (WinDbg)"
+description: "The !process extension displays information about the specified process, or about all processes, including the EPROCESS block."
+keywords: ["!process Windows Debugging"]
 ms.date: 08/02/2018
 topic_type:
 - apiref
@@ -13,7 +13,6 @@ api_type:
 ---
 
 # !process
-
 
 The !process extension displays information about the specified process, or about all processes, including the EPROCESS block.
 
@@ -27,7 +26,6 @@ Syntax
 ```
 
 ## Parameters
-
 
 <span id="_s_Session"></span><span id="_s_session"></span><span id="_S_SESSION"></span>**/s** **** *Session*  
 Specifies the session that owns the desired process.
@@ -61,13 +59,11 @@ Displays a list of threads associated with the process. If this is included with
 <span id="ImageName"></span><span id="imagename"></span><span id="IMAGENAME"></span>*ImageName*  
 Specifies the name of the process to be displayed. The debugger displays all processes whose executable image names match *ImageName*. The image name must match that in the EPROCESS block. In general, this is the executable name that was invoked to start the process, including the file extension (usually .exe), and truncated after the fifteenth character. There is no way to specify an image name that contains a space. When *ImageName* is specified, *Process* must be zero.
 
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Kdexts.dll
 
-## <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
-
+## Additional Information
 
 For information about processes in kernel mode, see [Changing Contexts](../debugger/changing-contexts.md). For more information about analyzing processes and threads, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
 
@@ -240,13 +236,4 @@ The following table describes some of the elements in the previous example.
 In addition to the process list information, the thread information contains a list of the resources on which the thread has locks. This information is listed in the third line of output after the thread header. In this example, the thread has a lock on one resource, a SynchronizationEvent with an address of 80144fc0. By comparing this address to the list of locks shown by the [**!kdext\*.locks**](-locks---kdext--locks-.md) extension, you can determine which threads have exclusive locks on resources.
 
 The [**!stacks**](-stacks.md) extension gives a brief summary of the state of every thread. This can be used instead of the !process extension to get a quick overview of the system, especially when debugging multithread issues, such as resource conflicts or deadlocks.
-
- 
-
- 
-
-
-
-
-
 

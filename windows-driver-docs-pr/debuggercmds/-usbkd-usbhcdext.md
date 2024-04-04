@@ -1,7 +1,7 @@
 ---
-title: "usbkd.usbhcdext"
-description: "The usbkd.usbhcdext command displays information from the device extension of a USB host controller or a USB root hub."
-keywords: ["usbkd.usbhcdext Windows Debugging"]
+title: "!usbkd.usbhcdext"
+description: "The !usbkd.usbhcdext command displays information from the device extension of a USB host controller or a USB root hub."
+keywords: ["!usbkd.usbhcdext Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,15 +14,13 @@ api_type:
 
 # !usbkd.usbhcdext
 
-
 The [**!usbkd.usbhcdext**](-usbkd-usbhcdext.md) command displays information from the device extension of a USB host controller or a USB root hub.
 
 ```dbgcmd
 !usbkd.usbhcdext DeviceExtension
 ```
 
-## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______DeviceExtension______"></span><span id="_______deviceextension______"></span><span id="_______DEVICEEXTENSION______"></span> *DeviceExtension*   
 Address of one of the following:
@@ -30,8 +28,7 @@ Address of one of the following:
 -   The device extension for the functional device object (FDO) of a USB host controller.
 -   The device extension for the physical device object (PDO) a USB root hub.
 
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Usbkd.dll
 
@@ -135,11 +132,6 @@ dt USBPORT!_PDO_EXTENSION ffffe0000213c5a0
 
 ## See also
 
-
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
-
- 
-
-

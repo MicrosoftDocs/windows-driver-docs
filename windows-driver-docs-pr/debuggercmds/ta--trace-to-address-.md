@@ -46,7 +46,7 @@ Specifies the address where the debugger begins execution. If you do not use *St
 <span id="_______StopAddress______"></span><span id="_______stopaddress______"></span><span id="_______STOPADDRESS______"></span> *StopAddress*   
 Specifies the address at which execution stops. This address must match the exact address of an instruction.
 
-### Environment
+## Environment
 
 |  Item       | Description               |
 |-----------|------------------------|
@@ -56,7 +56,7 @@ Specifies the address at which execution stops. This address must match the exac
 
  
 
-### Additional Information
+## Additional Information
 
 For more information about related commands, see [Controlling the Target](../debugger/controlling-the-target.md).
 
@@ -75,13 +75,4 @@ For example, the following command explicitly traces through the target code unt
 ```dbgcmd
 0:000> ta @$ra 
 ```
-
- 
-
- 
-
-
-
-
-
 

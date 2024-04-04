@@ -1,7 +1,7 @@
 ---
-title: "deadlock (WinDbg)"
-description: "The deadlock extension displays information about deadlocks collected by the Deadlock Detection option of Driver Verifier."
-keywords: ["Deadlock Detection (Driver Verifier)", "deadlock Windows Debugging"]
+title: "!deadlock (WinDbg)"
+description: "The !deadlock extension displays information about deadlocks collected by the Deadlock Detection option of Driver Verifier."
+keywords: ["Deadlock Detection (Driver Verifier)", "!deadlock Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !deadlock
 
-
 The **!deadlock** extension displays information about deadlocks collected by the **Deadlock Detection** option of Driver Verifier.
 
 ```dbgcmd
@@ -22,16 +21,11 @@ The **!deadlock** extension displays information about deadlocks collected by th
 !deadlock 1
 ```
 
-## <span id="ddk__deadlock_dbg"></span><span id="DDK__DEADLOCK_DBG"></span>
-
-
 ## DLL
 
-Windows XP and later - Kdexts.dll
+Kdexts.dll
 
- 
-
-### Additional Information
+## Additional Information
 
 For information about Driver Verifier, see the Windows Driver Kit (WDK) documentation.
 
@@ -144,13 +138,4 @@ Now you know the name of the source file and the line number where the acquisiti
 -   Thread 2: **dummyRxInterruptOnCompletion** took the global lock. Then, a few lines later, it took the miniport lock.
 
 At this point, the deadlock becomes entirely clear.
-
- 
-
- 
-
-
-
-
-
 

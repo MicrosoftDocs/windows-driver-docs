@@ -1,7 +1,7 @@
 ---
-title: "pte (WinDbg)"
-description: "The pte extension displays the page table entry (PTE) and page directory entry (PDE) for the specified address."
-keywords: ["page table entry (PTE)", "PTE (page table entry)", "page directory entry (PDE)", "PDE (page directory entry)", "pte Windows Debugging"]
+title: "!pte (WinDbg)"
+description: "The !pte extension displays the page table entry (PTE) and page directory entry (PDE) for the specified address."
+keywords: ["page table entry (PTE)", "PTE (page table entry)", "page directory entry (PDE)", "PDE (page directory entry)", "!pte Windows Debugging"]
 ms.date: 05/13/2020
 topic_type:
 - apiref
@@ -24,8 +24,7 @@ Syntax
 !pte LiteralAddress 1 
 ```
 
-## <span id="ddk__pte_dbg"></span><span id="DDK__PTE_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______VirtualAddress______"></span><span id="_______virtualaddress______"></span><span id="_______VIRTUALADDRESS______"></span> *VirtualAddress*   
 Specifies the virtual address whose page table is desired.
@@ -40,9 +39,9 @@ Specifies the address of an actual PTE or PDE.
 
 Kdexts.dll
 
-### Additional Information
+## Additional Information
 
-For information about page tables, page directories, and an explanation of the status bits, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon. 
+For information about page tables, page directories, and an explanation of the status bits, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
 
 ## Remarks
 
@@ -159,4 +158,3 @@ On an x86 or x64 target computer, the status bits for the PDE and the PTE are sh
 </tr>
 </tbody>
 </table>
-

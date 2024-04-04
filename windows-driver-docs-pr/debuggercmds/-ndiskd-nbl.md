@@ -1,7 +1,7 @@
 ---
-title: "ndiskd.nbl"
-description: "The ndiskd.nbl extension displays information about a NET_BUFFER_LIST (NBL) structure."
-keywords: ["ndiskd.nbl Windows Debugging"]
+title: "!ndiskd.nbl"
+description: "The !ndiskd.nbl extension displays information about a NET_BUFFER_LIST (NBL) structure."
+keywords: ["!ndiskd.nbl Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref

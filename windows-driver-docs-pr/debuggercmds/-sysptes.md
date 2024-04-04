@@ -1,7 +1,7 @@
 ---
-title: "sysptes (WinDbg)"
-description: "The sysptes extension displays a formatted view of the system page table entries (PTEs)."
-keywords: ["sysptes Windows Debugging"]
+title: "!sysptes (WinDbg)"
+description: "The !sysptes extension displays a formatted view of the system page table entries (PTEs)."
+keywords: ["!sysptes Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,15 +14,13 @@ api_type:
 
 # !sysptes
 
-
 The **!sysptes** extension displays a formatted view of the system page table entries (PTEs).
 
 ```dbgcmd
 !sysptes [Flags]
 ```
 
-## <span id="ddk__sysptes_dbg"></span><span id="DDK__SYSPTES_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______Flags______"></span><span id="_______flags______"></span><span id="_______FLAGS______"></span> *Flags*   
 Specifies the level of detail to display. *Flags* can be any combination of the following bits. The default is zero:
@@ -48,9 +46,7 @@ Displays detailed information about any system PTEs that are allocated to mappin
 
 Kdexts.dll
 
- 
-
-### Additional Information
+## Additional Information
 
 For information about page tables and PTEs, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon. 
 
@@ -81,13 +77,3 @@ System PTE Information
 
   free blocks: 3   total free: 552337    largest free block: 551557
 ```
-
- 
-
- 
-
-
-
-
-
-

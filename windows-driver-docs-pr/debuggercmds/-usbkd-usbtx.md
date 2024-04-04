@@ -1,7 +1,7 @@
 ---
-title: "usbkd.usbtx"
-description: "The usbkd.usbtx command displays information from a usbport _HCD_TRANSFER_CONTEXT structure."
-keywords: ["usbkd.usbtx Windows Debugging"]
+title: "!usbkd.usbtx"
+description: "The !usbkd.usbtx command displays information from a usbport _HCD_TRANSFER_CONTEXT structure."
+keywords: ["!usbkd.usbtx Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,21 +14,18 @@ api_type:
 
 # !usbkd.usbtx
 
-
 The **!usbkd.usbtx** command displays information from a **usbport!\_HCD\_TRANSFER\_CONTEXT** structure.
 
 ```dbgcmd
 !usbkd.usbtx StructAddr
 ```
 
-## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______StructAddr______"></span><span id="_______structaddr______"></span><span id="_______STRUCTADDR______"></span> *StructAddr*   
 Address of a **usbport!\_HCD\_TRANSFER\_CONTEXT** structure. To get the transfer list for a USB host controller, use the [**!usbkd.usbhcdext**](-usbkd-usbhcdext.md) command.
 
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Usbkd.dll
 
@@ -91,11 +88,6 @@ NumberOfElements = 1
 
 ## See also
 
-
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
-
- 
-
-

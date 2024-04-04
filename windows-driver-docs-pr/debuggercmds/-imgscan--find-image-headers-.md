@@ -14,15 +14,13 @@ api_type:
 
 # .imgscan (Find Image Headers)
 
-
 The **.imgscan** command scans virtual memory for image headers.
 
 ```dbgcmd
 .imgscan [Options] 
 ```
 
-## <span id="ddk_meta_find_image_headers_dbg"></span><span id="DDK_META_FIND_IMAGE_HEADERS_DBG"></span>Parameters
-
+## Parameters
 
 *Options*
 Any of the following options:
@@ -36,7 +34,7 @@ Loads module information for any image header that is found.
 <span id="_v"></span><span id="_V"></span>**/v**  
 Displays verbose information.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -44,7 +42,6 @@ Displays verbose information.
 |Targets |Live, crash dump      |
 |Platforms|All                  |
 
- 
 
 ## Remarks
 
@@ -62,13 +59,3 @@ MZ at 77f80000, prot 00000002, type 01000000 - size 7d000
 MZ at 7c570000, prot 00000002, type 01000000 - size b8000
   Name: KERNEL32.dll
 ```
-
- 
-
- 
-
-
-
-
-
-

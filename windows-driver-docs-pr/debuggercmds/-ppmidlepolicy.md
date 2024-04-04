@@ -1,7 +1,7 @@
 ---
-title: "ppmidlepolicy"
-description: "The ppmidlepolicy command"
-keywords: ["ppmidlepolicy Windows Debugging"]
+title: "!ppmidlepolicy"
+description: "The !ppmidlepolicy extension command displays C-state policy."
+keywords: ["!ppmidlepolicy Windows Debugging"]
 ms.date: 06/08/2017
 topic_type:
 - apiref
@@ -14,7 +14,7 @@ api_type:
 
 # !ppmidlepolicy
 
-The **!ppmidlepolicy** command displays C-state policy.
+The **!ppmidlepolicy** extension command displays C-state policy.
 
 ```dbgcmd
 !ppmidlepolicy
@@ -30,12 +30,4 @@ This command is supported on the following versions of Windows:
 
 ## DLL
 
-Kdexts.dll 
-
- 
-
-
-
-
-
-
+Kdexts.dll

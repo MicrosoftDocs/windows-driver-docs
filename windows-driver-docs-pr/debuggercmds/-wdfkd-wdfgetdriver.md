@@ -1,7 +1,7 @@
 ---
-title: "wdfkd.wdfgetdriver"
-description: "The wdfkd.wdfgetdriver extension displays the name of the current default driver."
-keywords: ["wdfkd.wdfgetdriver Windows Debugging"]
+title: "!wdfkd.wdfgetdriver"
+description: "The !wdfkd.wdfgetdriver extension displays the name of the current default driver."
+keywords: ["!wdfkd.wdfgetdriver Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !wdfkd.wdfgetdriver
 
-
 The **!wdfkd.wdfgetdriver** extension displays the name of the current default driver.
 
 ```dbgcmd
@@ -25,20 +24,11 @@ The **!wdfkd.wdfgetdriver** extension displays the name of the current default d
 
 Wdfkd.dll
 
-### <span id="Frameworks"></span><span id="frameworks"></span><span id="FRAMEWORKS"></span>Frameworks
+### Frameworks
 
 KMDF 1, UMDF 2
 
-### Additional Information
+## Additional Information
 
 For more information, see [Kernel-Mode Driver Framework Debugging](../debugger/kernel-mode-driver-framework-debugging.md).
-
- 
-
- 
-
-
-
-
-
 

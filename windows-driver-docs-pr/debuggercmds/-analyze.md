@@ -100,7 +100,7 @@ Writes the analysis to the specified `OutputXmlFile` in XML format. The file wil
 
 ext.dll
 
-### Additional Information
+## Additional Information
 
 For sample analysis of a user-mode exception and of a kernel-mode stop error (that is, crash), and for more information about how **!analyze** uses the triage.ini file, see [Using the !analyze extension](../debugger/using-the--analyze-extension.md).
 

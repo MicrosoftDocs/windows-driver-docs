@@ -1,7 +1,7 @@
 ---
-title: "filetime (WinDbg)"
-description: "The filetime extension converts a 64-bit FILETIME structure into a human-readable time."
-keywords: ["FILETIME", "filetime Windows Debugging"]
+title: "!filetime (WinDbg)"
+description: "The !filetime extension converts a 64-bit FILETIME structure into a human-readable time."
+keywords: ["FILETIME", "!filetime Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !filetime
 
-
 The **!filetime** extension converts a 64-bit FILETIME structure into a human-readable time.
 
 ```dbgcmd
@@ -23,15 +22,12 @@ The **!filetime** extension converts a 64-bit FILETIME structure into a human-re
 
 ## Parameters
 
-
 <span id="_______Time______"></span><span id="_______time______"></span><span id="_______TIME______"></span> *Time*   
 Specifies a 64-bit FILETIME structure.
 
 ### DLL
 
 Kdexts.dll
-
- 
 
 ## Remarks
 
@@ -41,13 +37,3 @@ Here is an example of the output from this extension:
 kd> !filetime 1c4730984712348
  7/26/2004 04:10:18.712 (Pacific Standard Time)
 ```
-
- 
-
- 
-
-
-
-
-
-

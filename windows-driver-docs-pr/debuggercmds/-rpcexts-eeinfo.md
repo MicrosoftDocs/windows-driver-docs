@@ -1,7 +1,7 @@
 ---
-title: "rpcexts.eeinfo"
-description: "The rpcexts.eeinfo extension displays the extended error information chain."
-keywords: ["rpcexts.eeinfo Windows Debugging"]
+title: "!rpcexts.eeinfo"
+description: "The !rpcexts.eeinfo extension displays the extended error information chain."
+keywords: ["!rpcexts.eeinfo Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,41 +14,22 @@ api_type:
 
 # !rpcexts.eeinfo
 
-
 The **!rpcexts.eeinfo** extension displays the extended error information chain.
 
 ```dbgcmd
 !rpcexts.eeinfo EEInfoAddress
 ```
 
-## <span id="ddk__rpcexts_eeinfo_dbg"></span><span id="DDK__RPCEXTS_EEINFO_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______EEInfoAddress______"></span><span id="_______eeinfoaddress______"></span><span id="_______EEINFOADDRESS______"></span> *EEInfoAddress*   
 Specifies the address of the extended error information.
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Unavailable</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Rpcexts.dll</p></td>
-</tr>
-</tbody>
-</table>
+Rpcexts.dll
 
- 
-
-### Additional Information
+## Additional Information
 
 For more information about debugging Microsoft Remote Procedure Call (RPC), see [RPC Debugging](../debugger/rpc-debugging.md).
 
@@ -74,13 +55,3 @@ Parameter 1:(Long value) : 16777343 (0x100007F)
 ```
 
 If the chain is very long and you wish to see only one record, use [**!rpcexts.eerecord**](-rpcexts-eerecord.md) instead.
-
- 
-
- 
-
-
-
-
-
-

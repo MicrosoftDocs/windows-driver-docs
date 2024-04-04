@@ -1,7 +1,7 @@
 ---
-title: "gentable (WinDbg)"
-description: "The gentable extension displays an RTL_GENERIC_TABLE."
-keywords: ["gentable Windows Debugging"]
+title: "!gentable (WinDbg)"
+description: "The !gentable extension displays an RTL_GENERIC_TABLE."
+keywords: ["!gentable Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !gentable
 
-
 The **!gentable** extension displays an RTL\_GENERIC\_TABLE.
 
 Syntax
@@ -23,8 +22,7 @@ Syntax
 !gentable Address[Flag]
 ```
 
-## <span id="ddk__gentable_dbg"></span><span id="DDK__GENTABLE_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the address of the RTL\_GENERIC\_TABLE.
@@ -35,13 +33,3 @@ Specifies the table source. If *Flag* is 1, the AVL table is used. If *Flag* is 
 ## DLL
 
 Kdexts.dll
-
- 
-
- 
-
-
-
-
-
-

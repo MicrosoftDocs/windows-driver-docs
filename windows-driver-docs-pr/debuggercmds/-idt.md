@@ -1,7 +1,7 @@
 ---
-title: "idt (WinDbg)"
-description: "The idt extension displays the interrupt service routines (ISRs) for a specified interrupt dispatch table (IDT)."
-keywords: ["ISR (interrupt service routine)", "IDT (interrupt dispatch table)", "idt Windows Debugging"]
+title: "!idt (WinDbg)"
+description: "The !idt extension displays the interrupt service routines (ISRs) for a specified interrupt dispatch table (IDT)."
+keywords: ["ISR (interrupt service routine)", "IDT (interrupt dispatch table)", "!idt Windows Debugging"]
 ms.date: 05/13/2020
 topic_type:
 - apiref
@@ -37,11 +37,11 @@ Displays help for this extension in the Debugger Command window.
 
 ## DLL
 
-Windows XP and later - Kdexts.dll
+Kdexts.dll
 
 This extension command can only be used with an x64-based or x86-based target computer.
 
-### Additional Information
+## Additional Information
 
 For information about ISRs and IDTs, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
@@ -76,13 +76,4 @@ e1:806baf30 hal!HalpIpiHandler
 e3:806baca8 hal!HalpLocalApicErrorService
 fd:806bb460 hal!HalpProfileInterrupt
 ```
-
- 
-
- 
-
-
-
-
-
 

@@ -1,7 +1,7 @@
 ---
 title: "!frozen (WinDbg)"
-description: "The frozen extension displays the state of each processor."
-keywords: ["processor states", "frozen Windows Debugging"]
+description: "The !frozen extension displays the state of each processor."
+keywords: ["processor states", "!frozen Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -22,9 +22,7 @@ The **!frozen** extension displays the state of each processor.
 
 ## DLL
 
-Windows XP and later - Kdexts.dll
-
- 
+Kdexts.dll
 
 ## Remarks
 
@@ -36,13 +34,4 @@ Processor states:
        0 : Current
        1 : Frozen
 ```
-
- 
-
- 
-
-
-
-
-
 

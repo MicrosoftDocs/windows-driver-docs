@@ -1,7 +1,7 @@
 ---
-title: "pcr (WinDbg)"
-description: "The pcr extension displays the current status of the Processor Control Region (PCR) on a specific processor."
-keywords: ["processor control region (PCR)", "pcr Windows Debugging"]
+title: "!pcr (WinDbg)"
+description: "The !pcr extension displays the current status of the Processor Control Region (PCR) on a specific processor."
+keywords: ["processor control region (PCR)", "!pcr Windows Debugging"]
 ms.date: 10/07/2019
 topic_type:
 - apiref
@@ -14,15 +14,13 @@ api_type:
 
 # !pcr
 
-
 The **!pcr** extension displays the current status of the Processor Control Region (PCR) on a specific processor.
 
 ```dbgcmd
 !pcr [Processor]
 ```
 
-## <span id="ddk__pcr_dbg"></span><span id="DDK__PCR_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______Processor______"></span><span id="_______processor______"></span><span id="_______PROCESSOR______"></span> *Processor*   
 Specifies the processor to retrieve the PCR information from. If *Processor* is omitted, the current processor is used.
@@ -35,9 +33,7 @@ Specifies the processor to retrieve the PCR information from. If *Processor* is 
 
 Kdexts.dll
 
-
-
-### Additional Information
+## Additional Information
 
 For information about the PCR and the PRCB, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
 
@@ -77,13 +73,3 @@ KPCR for Processor 0 at ffdff000:
 ```
 
 One of the entries in this display shows the interrupt request level (IRQL). The **!pcr** extension shows the current IRQL, but the current IRQL is usually not of much interest. The IRQL that existed just before the bug check or debugger connection is more interesting. This is displayed by [**!irql**](-irql.md), which is only available on computers running Windows Server 2003 or later versions of Windows.
-
-
-
-
-
-
-
-
-
-

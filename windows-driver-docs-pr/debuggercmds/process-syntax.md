@@ -68,12 +68,3 @@ An example of the |\[*Expression*\] syntax would be |\[@$t0\]. In this example, 
 
 In kernel mode, you cannot control processes by using process identifiers. For more information about how to access process-specific information in kernel mode, see [Changing Contexts](../debugger/changing-contexts.md).
 
- 
-
- 
-
-
-
-
-
-

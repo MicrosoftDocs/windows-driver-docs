@@ -28,7 +28,7 @@ Do not confuse this command with the [**| (Process Status)**](---process-status-
 
 Specifies the system to display. If you omit this parameter, all systems that you are debugging are displayed. For more information about the syntax, see [System Syntax](system-syntax.md).
 
-### Environment
+## Environment
 
 | Item      | Description               |
 |-----------|---------------------------|

@@ -1,7 +1,7 @@
 ---
-title: "logexts.logb"
-description: "The logexts.logb extension displays or flushes the output buffer."
-keywords: ["logexts.logb Windows Debugging"]
+title: "!logexts.logb"
+description: "The !logexts.logb extension displays or flushes the output buffer."
+keywords: ["!logexts.logb Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -22,8 +22,7 @@ The **!logexts.logb** extension displays or flushes the output buffer.
 !logexts.logb f 
 ```
 
-## <span id="ddk__logexts_logb_dbg"></span><span id="DDK__LOGEXTS_LOGB_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______p______"></span><span id="_______P______"></span> **p**   
 Causes the contents of the output buffer to be displayed in the debugger.
@@ -33,26 +32,9 @@ Flushes the output buffer to the disk.
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Logexts.dll</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Logexts.dll</p></td>
-</tr>
-</tbody>
-</table>
+Logexts.dll
 
- 
-
-### Additional Information
+## Additional Information
 
 For more information, see [Logger and LogViewer](../debugger/logger-and-logviewer.md).
 
@@ -63,13 +45,4 @@ As a performance consideration, log output is flushed to disk only when the outp
 The **!logexts.logb p** extension displays the contents of the buffer in the debugger.
 
 The **!logexts.logb f** extension flushes the buffer to the log files. Because the buffer memory is managed by the target application, the automatic writing of the buffer to disk will not occur if there is an access violation or some other nonrecoverable error in the target application. In such cases, you should use this command to manually flush the buffer to the disk. Otherwise, the most recently-logged APIs might not appear in the log files.
-
- 
-
- 
-
-
-
-
-
 

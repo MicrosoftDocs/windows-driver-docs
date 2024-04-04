@@ -1,7 +1,7 @@
 ---
-title: "rsdt (WinDbg)"
-description: "The rsdt extension displays the ACPI Root System Description Table."
-keywords: ["rsdt Windows Debugging"]
+title: "!rsdt (WinDbg)"
+description: "The !rsdt extension displays the ACPI Root System Description Table."
+keywords: ["!rsdt Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !rsdt
 
-
 The **!rsdt** extension displays the ACPI Root System Description Table.
 
 Syntax
@@ -23,23 +22,10 @@ Syntax
 !rsdt 
 ```
 
-## <span id="ddk__rsdt_dbg"></span><span id="DDK__RSDT_DBG"></span>
-
-
 ## DLL
 
 Kdexts.dll
 
-### Additional Information
+## Additional Information
 
 For more information, see [ACPI Debugging](../debugger/acpi-debugging.md).
-
- 
-
- 
-
-
-
-
-
-

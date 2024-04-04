@@ -30,7 +30,7 @@ Causes each symbol file to be loaded as it is copied.
 <span id="_______Path______"></span><span id="_______path______"></span><span id="_______PATH______"></span> *Path*   
 Specifies the directory to which the symbol files should be copied. Copies do not overwrite existing files.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -43,13 +43,4 @@ Specifies the directory to which the symbol files should be copied. Copies do no
 ## Remarks
 
 Many times, symbols are stored on a network. The symbol access can often be slow, or you may need to transport your debugging session to another computer where you no longer have network access. In such scenarios, the **.copysym** command can be used to copy the symbols you need for your session to a local directory.
-
- 
-
- 
-
-
-
-
-
 

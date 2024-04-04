@@ -1,7 +1,7 @@
 ---
-title: "arbinst (WinDbg)"
-description: "The arbinst extension displays information about a specified arbiter."
-keywords: ["arbiter", "arbinst Windows Debugging"]
+title: "!arbinst (WinDbg)"
+description: "The !arbinst extension displays information about a specified arbiter."
+keywords: ["arbiter", "!arbinst Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
 - apiref
@@ -30,14 +30,14 @@ Specifies the hexadecimal address of the arbiter to be displayed.
 <span id="Flags"></span><span id="flags"></span><span id="FLAGS"></span>*Flags*  
 Specifies how much information to display for each arbiter. At present, the only flag is 0x100. If this flag is set, then the aliases are displayed.
 
-## <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 
-Windows XP and later - Kdexts.dll
+Kdexts.dll
 
  
 
-## <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+## Additional Information
 
 
 See also the [**!arbiter**](-arbiter.md) extension.
@@ -67,13 +67,4 @@ Memory Arbiter "PCI Memory (b=02)" at e0000106002ec458
   Possible allocation:
     < none >
 ```
-
- 
-
- 
-
-
-
-
-
 

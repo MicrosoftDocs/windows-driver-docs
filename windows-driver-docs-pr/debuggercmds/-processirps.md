@@ -1,7 +1,7 @@
 ---
-title: "processirps"
-description: "The processirps extension displays information about I/O request packets (IRPs) associated with processes."
-keywords: ["processirps Windows Debugging"]
+title: "!processirps"
+description: "The !processirps extension displays information about I/O request packets (IRPs) associated with processes."
+keywords: ["!processirps Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !processirps
 
-
 The **!processirps** extension displays information about I/O request packets (IRPs) associated with processes.
 
 ```dbgcmd
@@ -23,7 +22,6 @@ The **!processirps** extension displays information about I/O request packets (I
 ```
 
 ## Parameters
-
 
 <span id="_ProcessAddress"></span><span id="_processaddress"></span><span id="_PROCESSADDRESS"></span> **** *ProcessAddress*  
 The address of a process. If you specify *ProcessAddress*, only IRPs associated with that process are displayed. If you do not specify *ProcessAddress*, IRPs for all processes are displayed.
@@ -38,9 +36,6 @@ Display IRPs queued to threads.
 Display IRPs queued to file objects.
 
 If you specify *Flags*, you must also specify *ProcessAddress*. If you do not specify *Flags*, IRPs queued to both threads and file objects are displayed.
-
-## <span id="ddk__processfields_dbg"></span><span id="DDK__PROCESSFIELDS_DBG"></span>
-
 
 ## DLL
 
@@ -91,13 +86,3 @@ Checking file objects for IRPs.
 
     IRP fffffa8006659010 - Owned by \Driver\DeviceApi for device DeviceApi (fffffa800363ae40)
 ```
-
- 
-
- 
-
-
-
-
-
-

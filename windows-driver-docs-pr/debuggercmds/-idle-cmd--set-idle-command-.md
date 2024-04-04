@@ -32,7 +32,7 @@ Specifies the string to which the idle command should be set.
 <span id="________d______"></span><span id="________D______"></span> **/d**   
 Clears the idle command.
 
-### Environment
+## Environment
 
 This command cannot be used in script files.
 
@@ -57,13 +57,4 @@ windbg> .idle_cmd r eax
 Execute when idle: r eax
 eax=003b0de8
 ```
-
- 
-
- 
-
-
-
-
-
 

@@ -1,7 +1,7 @@
 ---
-title: "vadump (WinDbg)"
-description: "The vadump extension displays all virtual memory ranges and their corresponding protection information."
-keywords: ["vadump Windows Debugging"]
+title: "!vadump (WinDbg)"
+description: "The !vadump extension displays all virtual memory ranges and their corresponding protection information."
+keywords: ["!vadump Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,41 +14,22 @@ api_type:
 
 # !vadump
 
-
 The **!vadump** extension displays all virtual memory ranges and their corresponding protection information.
 
 ```dbgcmd
-    !vadump [-v] 
+!vadump [-v] 
 ```
 
-## <span id="ddk__vadump_dbg"></span><span id="DDK__VADUMP_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______-v______"></span><span id="_______-V______"></span> **-v**   
 Causes the display to include information about each original allocation region as well. Because individual addresses within a region can have their protection altered after memory is allocated (by **VirtualProtect**, for example), the original protection status for this larger region may not be the same as that of each range within the region.
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Uext.dll</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Uext.dll</p></td>
-</tr>
-</tbody>
-</table>
+Uext.dll
 
- 
-
-### Additional Information
+## Additional Information
 
 To view memory protection information for a single virtual address, use [**!vprot**](-vprot.md). For information about memory protection, see *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
@@ -98,13 +79,3 @@ Type:              00020000  MEM_PRIVATE
 ```
 
 When **-v** is used, the AllocationProtect line shows the default protection that the entire region was created with. The Protect line shows the actual protection for this specific address.
-
- 
-
- 
-
-
-
-
-
-

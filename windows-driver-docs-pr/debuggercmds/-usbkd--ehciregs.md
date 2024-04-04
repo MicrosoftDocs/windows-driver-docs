@@ -1,7 +1,7 @@
 ---
-title: "usbkd._ehciregs"
-description: "The usbkd._ehciregs command displays the operational and root hub port status registers of a USB EHCI host controller."
-keywords: ["usbkd._ehciregs Windows Debugging"]
+title: "!usbkd._ehciregs"
+description: "The !usbkd._ehciregs command displays the operational and root hub port status registers of a USB EHCI host controller."
+keywords: ["!usbkd._ehciregs Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,15 +14,13 @@ api_type:
 
 # !usbkd.\_ehciregs
 
-
 The **!usbkd.\_ehciregs** command displays the operational and root hub port status registers of a USB EHCI host controller.
 
 ```dbgcmd
 !usbkd._ehciregs StructAddr[, NumPorts]
 ```
 
-## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______StructAddr______"></span><span id="_______structaddr______"></span><span id="_______STRUCTADDR______"></span> *StructAddr*   
 Address of a **usbehci!\_HC\_OPERATIONAL\_REGISTER** structure. To find the address of a **usbehci!\_HC\_OPERATIONAL\_REGISTER** structure, use [**!usbkd.usbhcdlist**](-usbkd-usbhcdlist.md).
@@ -30,8 +28,7 @@ Address of a **usbehci!\_HC\_OPERATIONAL\_REGISTER** structure. To find the addr
 <span id="_______NumPorts______"></span><span id="_______numports______"></span><span id="_______NUMPORTS______"></span> *NumPorts*   
 The number of root hub port status registers to display.
 
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Usbkd.dll
 
@@ -135,11 +132,6 @@ Now pass the structure address to **!\_ehciregs**. In this example, the second a
 
 ## See also
 
-
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
-
- 
-
-

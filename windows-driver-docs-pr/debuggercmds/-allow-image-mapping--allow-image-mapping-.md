@@ -33,7 +33,7 @@ Prevents image files from being mapped.
 <span id="_______1______"></span> **1**   
 Allows image files to be mapped.
 
-### Environment
+## Environment
 
 <table>
 <colgroup>

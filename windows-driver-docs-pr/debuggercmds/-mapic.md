@@ -1,7 +1,7 @@
 ---
-title: "mapic (WinDbg)"
-description: "The mapic extension displays an ACPI Multiple APIC table."
-keywords: ["mapic Windows Debugging"]
+title: "!mapic (WinDbg)"
+description: "The !mapic extension displays an ACPI Multiple APIC table."
+keywords: ["!mapic Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !mapic
 
-
 The **!mapic** extension displays an ACPI Multiple APIC table.
 
 Syntax
@@ -25,7 +24,6 @@ Syntax
 
 ## <span id="ddk__mapic_dbg"></span><span id="DDK__MAPIC_DBG"></span>Parameters
 
-
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the address of the Multiple APIC Table.
 
@@ -33,16 +31,6 @@ Specifies the address of the Multiple APIC Table.
 
 Kdexts.dll
 
-### Additional Information
+## Additional Information
 
 For more information, see [ACPI Debugging](../debugger/acpi-debugging.md).
-
- 
-
- 
-
-
-
-
-
-

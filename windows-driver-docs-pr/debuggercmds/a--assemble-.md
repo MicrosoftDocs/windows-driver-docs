@@ -14,20 +14,18 @@ api_type:
 
 # a (Assemble)
 
-
 The **a** command assembles 32-bit x86 instruction mnemonics and puts the resulting instruction codes into memory.
 
 ```dbgcmd
 a [Address]
 ```
 
-## <span id="DDK_CMD_ASSEMBLE_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the beginning of the block in memory where the resulting codes are put. For more information about the syntax, see [Address and Address Range Syntax](address-and-address-range-syntax.md).
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -35,9 +33,7 @@ Specifies the beginning of the block in memory where the resulting codes are put
 |Targets |Live, crash dump      |
 |Platforms|All                  |
 
- 
-
-### Additional Information
+## Additional Information
 
 For more information about assembly debugging and related commands, see [Debugging in Assembly Mode](../debugger/debugging-in-assembly-mode.md).
 
@@ -48,12 +44,3 @@ The **a** command does not support 64-bit instruction mnemonics. However, the **
 If you do not specify an address, the assembly starts at the address that the current value of the instruction pointer specifies. To assemble a new instruction, type the desired mnemonic and press ENTER. To end assembly, press only ENTER.
 
 Because the assembler searches for all of the symbols that are referred to in the code, this command might take time to complete. During this time, you cannot press [**CTRL+C**](../debugger/ctrl-c--break-.md)to end the **a** command.
-
- 
-
- 
-
-
-
-
-

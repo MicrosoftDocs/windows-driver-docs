@@ -1,7 +1,7 @@
 ---
-title: "usbkd._ehciep"
-description: "The usbkd._ehciep command displays information from a usbehci _ENDPOINT_DATA structure. Use this command to display information about asynchronous endpoints (that is, control and bulk endpoints)."
-keywords: ["usbkd._ehciep Windows Debugging"]
+title: "!usbkd._ehciep"
+description: "The !usbkd._ehciep command displays information from a usbehci _ENDPOINT_DATA structure. Use this command to display information about asynchronous endpoints (that is, control and bulk endpoints)."
+keywords: ["!usbkd._ehciep Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,21 +14,18 @@ api_type:
 
 # !usbkd.\_ehciep
 
-
 The **!usbkd.\_ehciep** command displays information from a **usbehci!\_ENDPOINT\_DATA** structure. Use this command to display information about asynchronous endpoints (that is, control and bulk endpoints).
 
 ```dbgcmd
 !usbkd._ehciep StructAddr
 ```
 
-## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______StructAddr______"></span><span id="_______structaddr______"></span><span id="_______STRUCTADDR______"></span> *StructAddr*   
 Address of a **usbehci!\_ENDPOINT\_DATA** structure. To find addresses of **usbehci!\_ENDPOINT\_DATA** structures, use [**!usbhcdext**](-usbkd-usbhcdext.md) and [**!usblist**](-usbkd-usblist.md).
 
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Usbkd.dll
 
@@ -111,11 +108,6 @@ slot[0] dt usbehci!_ENDPOINT_SLOT ffffe000026dcdb8 - slot_NotBusy
 
 ## See also
 
-
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
-
- 
-
-

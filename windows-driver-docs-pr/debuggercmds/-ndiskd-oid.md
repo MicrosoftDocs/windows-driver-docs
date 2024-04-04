@@ -1,7 +1,7 @@
 ---
-title: "ndiskd.oid"
-description: "The ndiskd.oid extension displays information about an NDIS OID request."
-keywords: ["ndiskd.oid Windows Debugging"]
+title: "!ndiskd.oid"
+description: "The !ndiskd.oid extension displays information about an NDIS OID request."
+keywords: ["!ndiskd.oid Windows Debugging"]
 ms.date: 06/26/2020
 topic_type:
 - apiref

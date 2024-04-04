@@ -101,7 +101,7 @@ M *Pattern*
 
 Specifies a pattern that the image path must match. Pattern can contain a variety of wildcard characters and specifiers. For more information about the syntax of this information, see [String Wildcard Syntax](string-wildcard-syntax.md).
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|

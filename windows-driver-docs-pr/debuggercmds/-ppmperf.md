@@ -1,7 +1,7 @@
 ---
-title: "ppmperf (WinDbg)"
-description: "The ppmperf command"
-keywords: ["ppmperf Windows Debugging"]
+title: "!ppmperf (WinDbg)"
+description: "The !ppmperf extension command"
+keywords: ["!ppmperf Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,8 +14,7 @@ api_type:
 
 # !ppmperf
 
-The **!ppmperf** command displays power and performance constraint information. 
-
+The **!ppmperf** extension command displays power and performance constraint information.
 
 ```dbgcmd
 !ppmperf
@@ -27,13 +26,6 @@ None
 
 ## DLL
 
- kedexts.dll
+kedexts.dll
 
 **NOTE:** This command is not supported on all versions of Windows, such as Windows 10, Version 1703.
- 
-
-
-
-
-
-

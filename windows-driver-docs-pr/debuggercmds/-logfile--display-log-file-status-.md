@@ -21,25 +21,10 @@ The **.logfile** command determines whether a log file exists and displays the f
     .logfile 
 ```
 
-## <span id="ddk_meta_display_log_file_status_dbg"></span><span id="DDK_META_DISPLAY_LOG_FILE_STATUS_DBG"></span>
-
-
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
 |Modes   |User mode, kernel mode|
 |Targets |Live, crash dump      |
 |Platforms|All                  |
-
- 
-
- 
-
- 
-
-
-
-
-
-

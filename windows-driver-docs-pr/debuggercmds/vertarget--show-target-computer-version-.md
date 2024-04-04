@@ -22,7 +22,7 @@ The **vertarget** command displays the current version of the Microsoft Windows 
 ## <span id="ddk_cmd_show_target_computer_version_dbg"></span><span id="DDK_CMD_SHOW_TARGET_COMPUTER_VERSION_DBG"></span>
 
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -38,14 +38,5 @@ The **vertarget** command displays the current version of the Microsoft Windows 
 [**CTRL+W (Show Debugger Version)**](../debugger/ctrl-w--show-debugger-version-.md)
 
 [**version (Show Debugger Version)**](version--show-debugger-version-.md)
-
- 
-
- 
-
-
-
-
-
 
 

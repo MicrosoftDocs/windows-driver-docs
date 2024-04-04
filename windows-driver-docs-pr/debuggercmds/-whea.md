@@ -1,7 +1,7 @@
 ---
-title: "whea (WinDbg)"
-description: "The whea extension displays top-level Windows Hardware Error Architecture (WHEA) information."
-keywords: ["whea Windows Debugging"]
+title: "!whea (WinDbg)"
+description: "The !whea extension displays top-level Windows Hardware Error Architecture (WHEA) information."
+keywords: ["!whea Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,48 +14,17 @@ api_type:
 
 # !whea
 
-
 The **!whea** extension displays top-level Windows Hardware Error Architecture (WHEA) information.
 
 ```dbgcmd
 !whea 
 ```
 
-## <span id="ddk__ubp_dbg"></span><span id="DDK__UBP_DBG"></span>
-
-
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Unavailable</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP</strong></p></td>
-<td align="left"><p>Unavailable</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Windows Server 2003</strong></p></td>
-<td align="left"><p>Unavailable</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows Vista and later</strong></p></td>
-<td align="left"><p>Kdexts.dll</p></td>
-</tr>
-</tbody>
-</table>
+Windows Vista and later - Kdexts.dll
 
- 
-
-This extension can be used only in Windows Vista and later versions of Windows.
-
-### Additional Information
+## Additional Information
 
 The [**!errrec**](-errrec.md) and [**!errpkt**](-errpkt.md) extensions can be used to display additional WHEA information. For general information about WHEA, see [Windows Hardware Error Architecture (WHEA)](../whea/index.md) in the Windows Driver Kit (WDK) documentation.
 
@@ -156,7 +125,3 @@ Error Source 3 @ fffffa8007d0dbc0
 
 . . . . 
 ```
-
- 
-
-

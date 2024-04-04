@@ -1,7 +1,7 @@
 ---
-title: "pool extension command"
-description: "The pool extension displays information about a specific pool allocation or about the entire system-wide pool."
-keywords: ["pool", "pooltag.txt file", "pool tag", "memory, pool tag", "pool Windows Debugging"]
+title: "!pool extension command"
+description: "The !pool extension displays information about a specific pool allocation or about the entire system-wide pool."
+keywords: ["pool", "pooltag.txt file", "pool tag", "memory, pool tag", "!pool Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -13,7 +13,6 @@ api_type:
 ---
 
 # !pool
-
 
 The **!pool** extension displays information about a specific pool allocation or about the entire system-wide pool.
 
@@ -41,13 +40,11 @@ Causes the display to suppress pool header information for all pools, except the
 <span id="Bit_31__0x80000000_"></span><span id="bit_31__0x80000000_"></span><span id="BIT_31__0X80000000_"></span>Bit 31 (0x80000000)  
 Suppresses the description of the pool type and pool tag in the display.
 
-### DLL
+## DLL
 
 Kdexts.dll
 
- 
-
-### Additional Information
+## Additional Information
 
 For information about memory pools, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
 
@@ -56,8 +53,6 @@ For information about memory pools, see the Windows Driver Kit (WDK) documentati
 In Windows XP and later versions of Windows, the **!pool** extension displays the pool tag associated with each allocation. The owner of that pool tag is also displayed. This display is based on the contents of the pooltag.txt file. This file is located in the triage subdirectory of your Debugging Tools for Windows installation. If you want , you can edit this file to add additional pool tags relevant to your project.
 
 **Warning**   If you install an updated version of Debugging Tools for Windows in the same directory as the current version, it overwrites all of the files in that directory, including pooltag.txt. If you modify or replace the sample pooltag.txt file, be sure to save a copy of it to a different directory. After reinstalling the debuggers, you can copy the saved pooltag.txt over the default version.
-
- 
 
 If the **!pool** extension reports pool corruption, you should use [**!poolval**](-poolval.md) to investigate.
 
@@ -99,13 +94,3 @@ kd> !pool e1001050 1
 
 ......
 ```
-
- 
-
- 
-
-
-
-
-
-

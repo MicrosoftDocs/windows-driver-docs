@@ -1,7 +1,7 @@
 ---
-title: "timer (WinDbg)"
-description: "The timer extension displays a detailed listing of all system timer use."
-keywords: ["timer Windows Debugging"]
+title: "!timer (WinDbg)"
+description: "The !timer extension displays a detailed listing of all system timer use."
+keywords: ["!timer Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,23 +14,17 @@ api_type:
 
 # !timer
 
-
 The **!timer** extension displays a detailed listing of all system timer use.
 
 ```dbgcmd
 !timer 
 ```
 
-## <span id="ddk__timer_dbg"></span><span id="DDK__TIMER_DBG"></span>
-
-
-### DLL
+## DLL
 
 Kdexts.dll
 
- 
-
-### Additional Information
+## Additional Information
 
 For information about timer objects, see the Windows Driver Kit (WDK) documentation.
 
@@ -71,13 +65,3 @@ Current Hand: 226, Maximum Search: 0
 
 Wakeable timers:
 ```
-
- 
-
- 
-
-
-
-
-
-

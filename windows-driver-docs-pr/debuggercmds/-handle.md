@@ -1,7 +1,7 @@
 ---
-title: "handle (WinDbg)"
-description: "The handle extension displays information about a handle or handles that one or all processes in the target system own."
-keywords: ["handle", "handle, handle extension", "handle Windows Debugging"]
+title: "!handle (WinDbg)"
+description: "The !handle extension displays information about a handle or handles that one or all processes in the target system own."
+keywords: ["handle", "!handle, !handle extension", "!handle Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -13,7 +13,6 @@ api_type:
 ---
 
 # !handle
-
 
 The **!handle** extension displays information about a handle or handles that one or all processes in the target system own.
 
@@ -27,7 +26,7 @@ User-Mode
 Kernel-Mode
 
 ```dbgcmd
-    !handle [Handle [KMFlags [Process [TypeName]]]] 
+!handle [Handle [KMFlags [Process [TypeName]]]] 
 ```
 
 ## <span id="ddk__handle_dbg"></span><span id="DDK__HANDLE_DBG"></span>Parameters
@@ -103,9 +102,7 @@ Ntsdexts.dll</td>
 </tbody>
 </table>
 
- 
-
-### Additional Information
+## Additional Information
 
 For more information about handles, see the [**!htrace**](-htrace.md) extension, the Microsoft Windows SDK documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
@@ -216,13 +213,3 @@ Object: fffff8a000633f00  Type: (fffffa80035fef20) Section
         HandleCount: 1  PointerCount: 262144
 ...
 ```
-
- 
-
- 
-
-
-
-
-
-

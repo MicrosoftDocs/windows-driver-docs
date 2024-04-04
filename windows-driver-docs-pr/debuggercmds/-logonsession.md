@@ -1,7 +1,7 @@
 ---
-title: "logonsession"
-description: "The logonsession extension displays information about a specified logon session."
-keywords: ["logon session", "logonsession Windows Debugging"]
+title: "!logonsession"
+description: "The !logonsession extension displays information about a specified logon session."
+keywords: ["logon session", "!logonsession Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -13,7 +13,6 @@ api_type:
 ---
 
 # !logonsession
-
 
 The **!logonsession** extension displays information about a specified logon session.
 
@@ -42,11 +41,11 @@ To display information about the system session and all system tokens in a check
 
 ## DLL
 
-Windows XP and later - Kdexts.dll
+Kdexts.dll
 
  
 
-### Additional Information
+## Additional Information
 
 For information about logon sessions, see the Microsoft Windows SDK documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon. 
 
@@ -105,13 +104,4 @@ Dumping all logon sessions.
 ```
 
 You can stop execution at any point by pressing CTRL+BREAK (in WinDbg) or CTRL+C (in KD).
-
- 
-
- 
-
-
-
-
-
 
