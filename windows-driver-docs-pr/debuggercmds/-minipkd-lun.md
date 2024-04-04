@@ -1,6 +1,6 @@
 ---
-title: "minipkd.lun"
-description: "The minipkd.lun extension displays detailed information about the specified Logical Unit Extension (LUN)."
+title: "!minipkd.lun"
+description: "The !minipkd.lun extension displays detailed information about the specified Logical Unit Extension (LUN)."
 keywords: ["minipkd.lun Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -33,26 +33,11 @@ Specifies the physical device object (PDO) for the LUN.
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Unavailable</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Minipkd.dll</p></td>
-</tr>
-</tbody>
-</table>
+Minipkd.dll
 
  
 
-### Additional Information
+## Additional Information
 
 For more information, see [SCSI Miniport Debugging](../debugger/scsi-miniport-debugging.md).
 
@@ -61,13 +46,4 @@ For more information, see [SCSI Miniport Debugging](../debugger/scsi-miniport-de
 A LUN is typically referred to as a *device*. Thus, this extension displays information about a device on an adapter.
 
 The LUN can be specified either by its address (which can be found in the **LUN** field of the [**!minipkd.adapters**](-minipkd-adapters.md) display), or by its physical device object (which can be found in the **DevObj** field of the **!minipkd.adapters** display).
-
- 
-
- 
-
-
-
-
-
 

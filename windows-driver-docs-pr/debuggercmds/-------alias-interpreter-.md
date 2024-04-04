@@ -46,7 +46,7 @@ Evaluates to the alias name if the alias is currently defined. If the alias is d
 
 Prevents any alias evaluation. Regardless of whether *Alias* is defined, `${/v:Alias}` always retains its literal value of `${/v:Alias}`.
 
-### Additional Information
+## Additional Information
 
 For an explanation of how to use aliases, see [Using Aliases](using-aliases.md).
 

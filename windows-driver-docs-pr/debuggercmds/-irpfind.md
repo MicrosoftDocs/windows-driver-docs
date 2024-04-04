@@ -1,7 +1,7 @@
 ---
-title: "irpfind (WinDbg)"
-description: "The irpfind extension displays information about all I/O request packets (IRP) currently allocated in the target system, or about those IRPs matching the specified search criteria."
-keywords: ["irpfind Windows Debugging"]
+title: "!irpfind (WinDbg)"
+description: "The !irpfind extension displays information about all I/O request packets (IRP) currently allocated in the target system, or about those IRPs matching the specified search criteria."
+keywords: ["!irpfind Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !irpfind
 
-
 The **!irpfind** extension displays information about all I/O request packets (IRP) currently allocated in the target system, or about those IRPs matching the specified search criteria.
 
 Syntax
@@ -23,8 +22,7 @@ Syntax
 !irpfind [-v][PoolType[RestartAddress[CriteriaData]]]
 ```
 
-## <span id="ddk__irpfind_dbg"></span><span id="DDK__IRPFIND_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______-v______"></span><span id="_______-V______"></span> **-v**   
 Displays verbose information.
@@ -89,7 +87,6 @@ Specifies the criteria for the search. Only those IRPs that satisfy the given ma
 </tbody>
 </table>
 
- 
 
 <span id="_______Data______"></span><span id="_______data______"></span><span id="_______DATA______"></span> *Data*   
 Specifies the data to be matched in the search.
@@ -98,7 +95,7 @@ Specifies the data to be matched in the search.
 
 Kdexts.dll
 
-### Additional Information
+## Additional Information
 
 See [Plug and Play Debugging](../debugger/plug-and-play-debugging.md) for applications of this extension command. For information about IRPs, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
@@ -122,13 +119,3 @@ Searching NonPaged pool (8090c000 : 8131e000) for Tag: Irp
 80986608 Thread 80951ba0 current stack belongs to  \Driver\Kbdclass
 80986728 Thread 8094dda0 current stack belongs to  \Driver\symc810
 ```
-
- 
-
- 
-
-
-
-
-
-

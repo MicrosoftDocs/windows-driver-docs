@@ -1,7 +1,7 @@
 ---
-title: "locks kdext"
-description: "The locks extension in Kdextx86.dll and Kdexts.dll displays information about kernel ERESOURCE locks."
-keywords: ["kdext locks extension", "ERESOURCE locks", "deadlocks", "locks  kdext .locks Windows Debugging"]
+title: "!locks kdext"
+description: "The !locks extension in Kdextx86.dll and Kdexts.dll displays information about kernel ERESOURCE locks."
+keywords: ["!kdext locks extension", "ERESOURCE locks", "deadlocks", "locks  !kdext .locks Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !locks (!kdext\*.locks)
 
-
 The **!locks** extension in Kdextx86.dll and Kdexts.dll displays information about kernel ERESOURCE locks.
 
 This extension command should not be confused with the [**!ntsdexts.locks**](-locks---ntsdexts-locks-.md) extension command.
@@ -23,8 +22,7 @@ This extension command should not be confused with the [**!ntsdexts.locks**](-lo
 !locks [Options] [Address]
 ```
 
-## <span id="ddk__kdext__locks_dbg"></span><span id="DDK__KDEXT__LOCKS_DBG"></span>Parameters
-
+## Parameters
 
 *Options*
 Specifies the amount of information to be displayed. Any combination of the following options can be used:
@@ -105,13 +103,4 @@ fafa3ddc 8050ec72 nt!PspSystemThreadStartup+0x2e (FPO: [Non-Fpo]) (CONV: stdcall
 
 1 total locks, 1 locks currently held
 ```
-
- 
-
- 
-
-
-
-
-
 

@@ -1,7 +1,7 @@
 ---
-title: "poolused (WinDbg)"
-description: "The poolused extension displays memory use summaries, based on the tag used for each pool allocation."
-keywords: ["poolused Windows Debugging"]
+title: "!poolused (WinDbg)"
+description: "The !poolused extension displays memory use summaries, based on the tag used for each pool allocation."
+keywords: ["!poolused Windows Debugging"]
 ms.date: 08/29/2023
 topic_type:
 - apiref
@@ -42,17 +42,15 @@ Bit 3 (0x8)
 
 Displays the session pool instead of the standard pool. You can use the [**!session**](-session.md) command to switch between sessions.
 
-
 *TagString*
 
 Specifies the pool tag. *TagString* is a case-sensitive ASCII string. The asterisk (\*) can be used to represent any number of characters; the question mark (?) can be used to represent exactly one character. Unless an asterisk is used, *TagString* must be exactly four characters in length.
 
-### DLL
+## DLL
 
 Kdexts.dll
 
-
-### Additional Information
+## Additional Information
 
 For information about memory pools and pool tags, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
 

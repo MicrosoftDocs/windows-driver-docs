@@ -1,7 +1,7 @@
 ---
-title: "eb, ed (WinDbg)"
-description: "The eb and ed extensions write a sequence of values into a specified physical address. These extension commands should not be confused with the e\\ (Enter Values) command."
-keywords: ["eb extension", "ed extension", "memory, Write Physical ( e ) extensions", "eb, ed Windows Debugging"]
+title: "!eb, !ed (WinDbg)"
+description: "The !eb and !ed extensions write a sequence of values into a specified physical address. These extension commands should not be confused with the e\\ (Enter Values) command."
+keywords: ["eb extension", "!ed extension", "memory, Write Physical ( e ) extensions", "!eb, !ed Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -47,37 +47,11 @@ Specifies one or more values to be written sequentially into physical memory. En
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p></p>
 Kext.dll
-Kdextx86.dll</td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Kext.dll</p></td>
-</tr>
-</tbody>
-</table>
 
  
 
-### Additional Information
+## Additional Information
 
 To read physical memory, use the [**!d\\***](-db---dc---dd---dp---dq---du---dw.md) extensions. For an overview of memory manipulation and a description of other memory-related commands, see [Reading and Writing Memory](../debugger/reading-and-writing-memory.md).
-
- 
-
- 
-
-
-
-
-
 

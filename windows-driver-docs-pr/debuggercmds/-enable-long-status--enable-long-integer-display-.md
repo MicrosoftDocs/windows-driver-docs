@@ -31,7 +31,7 @@ Displays all long integers in decimal format. This is the default behavior of th
 <span id="_______1______"></span> **1**   
 Displays all long integers in the default radix.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -56,13 +56,4 @@ This command affects only the display of long integers. To control whether stand
  
 
 To change the default radix, use the [**n (Set Number Base)**](n--set-number-base-.md) command.
-
- 
-
- 
-
-
-
-
-
 

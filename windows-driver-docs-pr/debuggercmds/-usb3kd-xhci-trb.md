@@ -1,7 +1,7 @@
 ---
-title: "usb3kd.xhci_trb"
-description: "The usb3kd.xhci_trb extension displays one or more transfer request blocks (TRBs) used by a USB 3.0 host controller"
-keywords: ["usb3kd.xhci_trb Windows Debugging"]
+title: "!usb3kd.xhci_trb"
+description: "The !usb3kd.xhci_trb extension displays one or more transfer request blocks (TRBs) used by a USB 3.0 host controller"
+keywords: ["!usb3kd.xhci_trb Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !usb3kd.xhci\_trb
 
-
 The [**!usb3kd.xhci\_trb**](-usb3kd-device-info.md) extension displays one or more transfer request blocks (TRBs) used by a USB 3.0 host controller
 
 ```dbgcmd
@@ -22,8 +21,7 @@ The [**!usb3kd.xhci\_trb**](-usb3kd-device-info.md) extension displays one or mo
 !usb3kd.xhci_trb PhysicalAddress Count 1
 ```
 
-## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______VirtualAddress______"></span><span id="_______virtualaddress______"></span><span id="_______VIRTUALADDRESS______"></span> *VirtualAddress*   
 Virtual address of a TRB.
@@ -37,8 +35,7 @@ The number of consecutive TRBs to display, starting at *VirtualAddress* or *Phys
 <span id="_______1______"></span> 1   
 Specifies that the address is a physical address.
 
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Usb3kd.dll
 
@@ -69,13 +66,8 @@ In the following example, **0x0dced7c00** is the physical address of a TRB. The 
 
 ## See also
 
-
 [USB 3.0 Extensions](usb-3-extensions.md)
 
 [**!xhci\_dumpall**](-usb3kd-xhci-dumpall.md)
 
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
-
- 
-
-

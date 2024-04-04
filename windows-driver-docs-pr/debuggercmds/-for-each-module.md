@@ -1,7 +1,7 @@
 ---
-title: "for_each_module"
-description: "The for_each_module extension executes a debugger command one time for each loaded module."
-keywords: ["for_each_module Windows Debugging"]
+title: "!for_each_module"
+description: "The !for_each_module extension executes a debugger command one time for each loaded module."
+keywords: ["!for_each_module Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !for\_each\_module
 
-
 The **!for\_each\_module** extension executes a debugger command one time for each loaded module.
 
 ```dbgcmd
@@ -22,7 +21,7 @@ The **!for\_each\_module** extension executes a debugger command one time for ea
 !for_each_module -?
 ```
 
-## <span id="ddk__for_each_module_dbg"></span><span id="DDK__FOR_EACH_MODULE_DBG"></span>Parameters
+## <Parameters
 
 
 <span id="_______CommandString______"></span><span id="_______commandstring______"></span><span id="_______COMMANDSTRING______"></span> *CommandString*   
@@ -163,26 +162,9 @@ Displays some Help text for this extension in the [Debugger Command window](../d
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Windows 2000</p></td>
-<td align="left"><p>Ext.dll</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Windows XP and later</p></td>
-<td align="left"><p>Ext.dll</p></td>
-</tr>
-</tbody>
-</table>
+Ext.dll
 
- 
-
-### Additional Information
+## Additional Information
 
 For more information about how to define and use aliases as shortcuts for entering character strings (including use of the ${ } token), see [Using Aliases](using-aliases.md).
 
@@ -236,13 +218,4 @@ ole32 fver = 6.0.6000.16386 (vista_rtm.061101-2205) pver = 6.0.6000.16386
 ADVAPI32 fver = 6.0.6000.16386 (vista_rtm.061101-2205) pver = 6.0.6000.16386
 COMDLG32 fver = 6.0.6000.16386 (vista_rtm.061101-2205) pver = 6.0.6000.16386
 ```
-
- 
-
- 
-
-
-
-
-
 

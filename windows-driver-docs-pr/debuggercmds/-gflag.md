@@ -1,7 +1,7 @@
 ---
-title: "gflag (WinDbg)"
-description: "The gflag extension sets or displays the global flags."
-keywords: ["gflag Windows Debugging"]
+title: "!gflag (WinDbg)"
+description: "The !gflag extension sets or displays the global flags."
+keywords: ["!gflag Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !gflag
 
-
 The **!gflag** extension sets or displays the global flags.
 
 ```dbgcmd
@@ -24,8 +23,7 @@ The **!gflag** extension sets or displays the global flags.
 !gflag 
 ```
 
-## <span id="ddk__gflag_dbg"></span><span id="DDK__GFLAG_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______Value______"></span><span id="_______value______"></span><span id="_______VALUE______"></span> *Value*   
 Specifies a 32-bit hexadecimal number. If you do not use a plus sign (**+**) or minus sign (**-**), this number becomes the new value of the global flag bit field. If you add a plus sign (**+**) before this number, the number specifies one or more global flag bits to set to 1. If you add a minus sign (**-**) before this number, the number specifies one or more global flag bits to set to zero.
@@ -38,28 +36,9 @@ Displays some Help text for this extension, including a list of global flag abbr
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p></p>
-Kdextx86.dll
-Ntsdexts.dll</td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Exts.dll</p></td>
-</tr>
-</tbody>
-</table>
+Exts.dll
 
- 
-
-### Additional Information
+## Additional Information
 
 You can also set these flags by using the Global Flags utility (Gflags.exe).
 
@@ -245,15 +224,3 @@ The following table contains the abbreviations that you can use for the *Abbrevi
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
- 
-
-
-
-
-
-

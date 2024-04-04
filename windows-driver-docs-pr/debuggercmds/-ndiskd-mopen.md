@@ -1,7 +1,7 @@
 ---
-title: "ndiskd.mopen"
-description: "The ndiskd.mopen extension displays information about bindings between miniports and protocols. "
-keywords: ["ndiskd.mopen Windows Debugging"]
+title: "!ndiskd.mopen"
+description: "The !ndiskd.mopen extension displays information about bindings between miniports and protocols. "
+keywords: ["!ndiskd.mopen Windows Debugging"]
 ms.date: 06/15/2020
 topic_type:
 - apiref

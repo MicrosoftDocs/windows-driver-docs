@@ -24,7 +24,7 @@ The **.logclose** command closes any open log file.
 ## <span id="ddk_meta_close_log_file_dbg"></span><span id="DDK_META_CLOSE_LOG_FILE_DBG"></span>
 
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -33,13 +33,4 @@ The **.logclose** command closes any open log file.
 |Platforms|All                  |
 
  
-
- 
-
- 
-
-
-
-
-
 

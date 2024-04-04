@@ -31,7 +31,7 @@ Specifies the address where the debugger should start to search for symbols. The
 <span id="_D"></span><span id="_d"></span>**/D**  
 Specifies that the output is displayed using [Debugger Markup Language (DML)](../debugger/debugger-markup-language-commands.md). The DML output includes a link that you can use to explore the module that contains the nearest symbol. It also includes a link that you can use to set a breakpoint.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -48,13 +48,4 @@ You can use the **ln** command to help determine what a pointer is pointing to. 
 If source line information is available, the **ln** display also includes the source file name and line number information.
 
 If you are using a [source server](../debugger/using-a-source-server.md), the **ln** command displays information that is related to the source server.
-
- 
-
- 
-
-
-
-
-
 

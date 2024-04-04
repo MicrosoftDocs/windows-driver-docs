@@ -1,7 +1,7 @@
 ---
-title: "isainfo (WinDbg)"
-description: "The isainfo extension displays information about PNPISA cards or devices present in the system.."
-keywords: ["I/O Bus", "CARD_INFORMATION", "isainfo Windows Debugging"]
+title: "!isainfo (WinDbg)"
+description: "The !isainfo extension displays information about PNPISA cards or devices present in the system."
+keywords: ["I/O Bus", "CARD_INFORMATION", "!isainfo Windows Debugging"]
 ms.date: 08/29/2023
 topic_type:
 - apiref

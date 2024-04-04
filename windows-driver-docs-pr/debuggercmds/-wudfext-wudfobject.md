@@ -1,7 +1,7 @@
 ---
-title: "wudfext.wudfobject"
-description: "The wudfext.wudfobject extension displays information about a WDF object, as well as its parent and child relationships."
-keywords: ["wudfext.wudfobject Windows Debugging"]
+title: "!wudfext.wudfobject"
+description: "The !wudfext.wudfobject extension displays information about a WDF object, as well as its parent and child relationships."
+keywords: ["!wudfext.wudfobject Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !wudfext.wudfobject
 
-
 The **!wudfext.wudfobject** extension displays information about a WDF object, as well as its parent and child relationships.
 
 ```dbgcmd
@@ -22,7 +21,6 @@ The **!wudfext.wudfobject** extension displays information about a WDF object, a
 ```
 
 ## Parameters
-
 
 <span id="_______pWDFObject______"></span><span id="_______pwdfobject______"></span><span id="_______PWDFOBJECT______"></span> *pWDFObject*   
 Specifies the address of the WDF interface to display information about.
@@ -44,26 +42,9 @@ Optional. Specifies the type of the interface (for example, **IWDFDevice**). If 
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Unavailable</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Wudfext.dll</p></td>
-</tr>
-</tbody>
-</table>
+Wudfext.dll
 
- 
-
-### Additional Information
+## Additional Information
 
 For more information, see [User-Mode Driver Framework Debugging](../debugger/user-mode-driver-framework-debugging.md).
 
@@ -160,13 +141,3 @@ IWDFDriver 0xf2db8 Fx: 0xf2d40 [Ref 2]
               State: Created   Parent: 0xf2f80
               No Children
 ```
-
- 
-
- 
-
-
-
-
-
-

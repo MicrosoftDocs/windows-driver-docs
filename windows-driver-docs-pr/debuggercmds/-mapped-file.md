@@ -1,7 +1,7 @@
 ---
-title: "mapped_file"
-description: "The mapped_file extension displays the name of the file that backs the file mapping that contains a specified address."
-keywords: ["mapped_file Windows Debugging"]
+title: "!mapped_file"
+description: "The !mapped_file extension displays the name of the file that backs the file mapping that contains a specified address."
+keywords: ["!mapped_file Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !mapped\_file
 
-
 The **!mapped\_file** extension displays the name of the file that backs the file mapping that contains a specified address.
 
 ```dbgcmd
@@ -23,34 +22,16 @@ The **!mapped\_file** extension displays the name of the file that backs the fil
 
 ## Parameters
 
-
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the address of the file mapping. If *Address* is not in a mapping, the command fails.
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Uext.dll</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Uext.dll</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+Uext.dll
 
 The **!mapped\_file** extension can only be used during live, nonremote debugging.
 
-### Additional Information
+## Additional Information
 
 For more information about file mapping, see [MapViewOfFile](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffile) in the Windows SDK.
 

@@ -30,7 +30,7 @@ Any outstanding debug event will be continued and marked as handled. This is the
 <span id="________n______"></span><span id="________N______"></span> **/n**   
 Any outstanding debug event will be continued without being marked as handled.
 
-### Environment
+## Environment
 
 For live user-mode debugging, this command is only supported in Windows XP and later versions of Windows.
 
@@ -55,13 +55,4 @@ This command will end the debugging session in any of the following scenarios:
 If you are only debugging a single target, the debugger will return to dormant mode after it detaches.
 
 If you are [debugging multiple targets](../debugger/debugging-multiple-targets.md), the debugging session will continue with the remaining targets.
-
- 
-
- 
-
-
-
-
-
 

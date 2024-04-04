@@ -1,7 +1,7 @@
 ---
-title: "kuser (WinDbg)"
-description: "The kuser extension displays the shared user-mode page (KUSER_SHARED_DATA)."
-keywords: ["kuser Windows Debugging"]
+title: "!kuser (WinDbg)"
+description: "The !kuser extension displays the shared user-mode page (KUSER_SHARED_DATA)."
+keywords: ["!kuser Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,38 +14,15 @@ api_type:
 
 # !kuser
 
-
 The **!kuser** extension displays the shared user-mode page (KUSER\_SHARED\_DATA).
 
 ```dbgcmd
 !kuser 
 ```
 
-## <span id="ddk__kuser_dbg"></span><span id="DDK__KUSER_DBG"></span>
-
-
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p></p>
-Kdextx86.dll
-Ntsdexts.dll</td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Exts.dll</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+Exts.dll
 
 ## Remarks
 
@@ -62,13 +39,3 @@ ImageNumber Range: [14c .. 14c]
 Crypto Exponent: 0
 SystemRoot: 'F:\WINDOWS'
 ```
-
- 
-
- 
-
-
-
-
-
-

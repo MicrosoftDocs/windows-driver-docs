@@ -27,7 +27,7 @@ rdmsr Address
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the address of the MSR.
 
-### Environment
+## Environment
 
 <table>
 <colgroup>
@@ -60,14 +60,5 @@ The **rdmsr** command can display MSR's on x86-based and x64-based platforms. Th
 
 
 [**wrmsr (Write MSR)**](wrmsr--write-msr-.md)
-
- 
-
- 
-
-
-
-
-
 
 

@@ -1,7 +1,7 @@
 ---
-title: "imgreloc (WinDbg)"
-description: "The imgreloc extension displays the addresses of each loaded module and indicates their former addresses before they were relocated."
-keywords: ["imgreloc Windows Debugging"]
+title: "!imgreloc (WinDbg)"
+description: "The !imgreloc extension displays the addresses of each loaded module and indicates their former addresses before they were relocated."
+keywords: ["!imgreloc Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !imgreloc
 
-
 The **!imgreloc** extension displays the addresses of each loaded module and indicates their former addresses before they were relocated.
 
 ```dbgcmd
@@ -23,30 +22,12 @@ The **!imgreloc** extension displays the addresses of each loaded module and ind
 
 ## <span id="ddk__imgreloc_dbg"></span><span id="DDK__IMGRELOC_DBG"></span>Parameters
 
-
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the base address of the image.
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Ext.dll</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Ext.dll</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+Ext.dll
 
 ## Remarks
 
@@ -59,13 +40,3 @@ Here is an example:
 5b2f0000 verifier - at preferred address
 5d160000 ShimEng - at preferred address
 ```
-
- 
-
- 
-
-
-
-
-
-

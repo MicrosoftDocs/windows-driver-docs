@@ -1,7 +1,7 @@
 ---
-title: "wdfkd.wdfopenhandles"
-description: "The wdfkd.wdfopenhandles extension displays information about all the handles that are open on the specified WDF device."
-keywords: ["wdfkd.wdfopenhandles Windows Debugging"]
+title: "!wdfkd.wdfopenhandles"
+description: "The !wdfkd.wdfopenhandles extension displays information about all the handles that are open on the specified WDF device."
+keywords: ["!wdfkd.wdfopenhandles Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !wdfkd.wdfopenhandles
 
-
 The **!wdfkd.wdfopenhandles** extension displays information about all the handles that are open on the specified WDF device.
 
 ```dbgcmd
@@ -22,7 +21,6 @@ The **!wdfkd.wdfopenhandles** extension displays information about all the handl
 ```
 
 ## Parameters
-
 
 <span id="_______Handle______"></span><span id="_______handle______"></span><span id="_______HANDLE______"></span> *Handle*   
 A handle to a framework device object (WDFDEVICE).
@@ -37,20 +35,11 @@ Displays file object context information.
 
 Wdfkd.dll
 
-### <span id="Frameworks"></span><span id="frameworks"></span><span id="FRAMEWORKS"></span>Frameworks
+### Frameworks
 
 KMDF 1, UMDF 2
 
-### Additional Information
+## Additional Information
 
 For more information, see [Kernel-Mode Driver Framework Debugging](../debugger/kernel-mode-driver-framework-debugging.md).
-
- 
-
- 
-
-
-
-
-
 

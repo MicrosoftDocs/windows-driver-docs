@@ -14,7 +14,6 @@ api_type:
 
 # .step\_filter (Set Step Filter)
 
-
 The **.step\_filter** command creates a list of functions that are skipped (stepped over) when tracing. This allows you to trace through code and skip only certain functions. It can also be used in source mode to control stepping when there are multiple function calls on one line.
 
 ```dbgcmd
@@ -25,22 +24,19 @@ The **.step\_filter** command creates a list of functions that are skipped (step
 
 ## Parameters
 
-
 <span id="_FilterList_"></span><span id="_filterlist_"></span><span id="_FILTERLIST_"></span>**"**<em>FilterList</em>**"**  
 Specifies the symbols associated with functions to be stepped over. *FilterList* can contain any number of text patterns separated by semicolons. Each of these patterns may contain a variety of wildcards and specifiers; see [String Wildcard Syntax](string-wildcard-syntax.md) for details. A function whose symbol matches at least one of these patterns will be stepped over during tracing. Each time **"**<em>FilterList</em>**"** is used, any previous filter list is discarded and completely replaced with the new list.
 
 <span id="________c______"></span><span id="________C______"></span> **/c**   
 Clears the filter list.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
 |Modes   |User mode, kernel mode|
 |Targets |Live, crash dump      |
 |Platforms|All                  |
-
- 
 
 ## Remarks
 
@@ -69,13 +65,3 @@ The **.step\_filter** command allows you to filter out one of these calls while 
 Because the functions are identified by symbol, a single filter can include an entire module. This lets you filter out framework functions -- for example, Microsoft Foundation Classes (MFC) or Active Template Library (ATL) calls.
 
 When debugging in assembly mode, each call is on a different line, so you can choose whether to step or trace line-by-line. So **.step\_filter** is not very useful in assembly mode.
-
- 
-
- 
-
-
-
-
-
-

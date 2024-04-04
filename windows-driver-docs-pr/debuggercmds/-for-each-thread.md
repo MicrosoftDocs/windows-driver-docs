@@ -1,7 +1,7 @@
 ---
-title: "for_each_thread"
-description: "The for_each_thread extension executes the specified debugger command once for each thread in the target."
-keywords: ["for_each_thread Windows Debugging"]
+title: "!for_each_thread"
+description: "The !for_each_thread extension executes the specified debugger command once for each thread in the target."
+keywords: ["!for_each_thread Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -35,26 +35,14 @@ Displays help for this extension in the Debugger Command window.
 
 This extension works only in kernel mode, even though it resides in Ext.dll.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Ext.dll</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Ext.dll</p></td>
-</tr>
-</tbody>
-</table>
+
+Ext.dll
+
+
 
  
 
-### Additional Information
+## Additional Information
 
 For more general information about threads, see [Threads and Processes](../debugger/controlling-threads-and-processes.md). For more information about manipulating or obtaining information about threads, see [Controlling Processes and Threads](../debugger/controlling-processes-and-threads.md).
 
@@ -63,13 +51,4 @@ For more general information about threads, see [Threads and Processes](../debug
 If no arguments are supplied, the debugger displays a list of all threads, along with thread wait states. This is equivalent to entering [**!thread @\#Thread 2**](-process.md) as the *CommandString* value.
 
 You can terminate execution at any point by pressing CTRL+BREAK (in WinDbg) or CTRL+C (in KD).
-
- 
-
- 
-
-
-
-
-
 

@@ -14,17 +14,13 @@ api_type:
 
 # .servers (List Debugging Servers)
 
-
 The **.servers** command lists all debugging servers that have been established by this debugger.
 
 ```dbgcmd
 .servers 
 ```
 
-## <span id="ddk_meta_list_debugging_servers_dbg"></span><span id="DDK_META_LIST_DEBUGGING_SERVERS_DBG"></span>
-
-
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -32,9 +28,7 @@ The **.servers** command lists all debugging servers that have been established 
 |Targets |Live, crash dump      |
 |Platforms|All                  |
 
- 
-
-### Additional Information
+## Additional Information
 
 For full details on debugging servers, see [Remote Debugging Through the Debugger](../debugger/remote-debugging-through-the-debugger.md).
 
@@ -45,13 +39,3 @@ The output of the **.servers** command lists all the debugging servers started b
 Each debugging server is identified by a unique ID. This ID can be used as the argument for the [**.endsrv (End Debugging Server)**](-endsrv--end-debugging-server-.md) command, if you wish to terminate the debugging server.
 
 The **.servers** command does not list debugging servers started on this computer by different instances of the debugger, nor does it list process servers or KD connection servers.
-
- 
-
- 
-
-
-
-
-
-

@@ -1,7 +1,7 @@
 ---
-title: "ks.dumpcircuit"
-description: "The ks.dumpcircuit extension lists details of the transport circuit associated with the given object."
-keywords: ["ks.dumpcircuit Windows Debugging"]
+title: "!ks.dumpcircuit"
+description: "The !ks.dumpcircuit extension lists details of the transport circuit associated with the given object."
+keywords: ["!ks.dumpcircuit Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -53,7 +53,7 @@ Optional. Specifies the level of detail to display on a 0-7 scale with progressi
 
  
 
-### Additional Information
+## Additional Information
 
 For more information, see [Kernel Streaming Debugging](../debugger/kernel-streaming-debugging.md).
 
@@ -70,13 +70,4 @@ kd> !dumpcircuit 8293f4f0
 Pin8293f4f0 0 (snk, out)
 Queue82990e20 r/w/c=2489/2/0
 ```
-
- 
-
- 
-
-
-
-
-
 

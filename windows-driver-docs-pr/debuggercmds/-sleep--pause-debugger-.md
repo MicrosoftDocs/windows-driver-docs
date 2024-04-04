@@ -14,45 +14,26 @@ api_type:
 
 # .sleep (Pause Debugger)
 
-
 The **.sleep** command causes the user-mode debugger to pause and the target computer to become active. This command is only used when you are controlling the user-mode debugger from the kernel debugger.
 
 ```dbgcmd
 .sleep milliseconds
 ```
 
-## <span id="ddk_meta_pause_debugger_dbg"></span><span id="DDK_META_PAUSE_DEBUGGER_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______milliseconds______"></span><span id="_______MILLISECONDS______"></span> *milliseconds*   
 Specifies the length of the pause, in milliseconds.
 
-### Environment
+## Environment
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Modes</strong></p></td>
-<td align="left"><p>controlling the user-mode debugger from the kernel debugger</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Targets</strong></p></td>
-<td align="left"><p>live debugging only</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Platforms</strong></p></td>
-<td align="left"><p>all</p></td>
-</tr>
-</tbody>
-</table>
+|  Item       | Description               |
+|--- |--- |
+|Modes|controlling the user-mode debugger from the kernel debugger|
+|Targets|live debugging only|
+|Platforms|all|
 
- 
-
-### Additional Information
+## Additional Information
 
 For details and information about how to wake up a debugger in sleep mode, see [Controlling the User-Mode Debugger from the Kernel Debugger](../debugger/controlling-the-user-mode-debugger-from-the-kernel-debugger.md).
 
@@ -67,13 +48,3 @@ The sleep time is in milliseconds and interpreted according to the default radix
 ```dbgcmd
 0:000> .sleep 10000
 ```
-
- 
-
- 
-
-
-
-
-
-

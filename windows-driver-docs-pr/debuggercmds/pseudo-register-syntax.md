@@ -376,12 +376,3 @@ t "$<eaxstep"
 
 The debugger performs a step and then runs your command. In this case, the debugger runs the script, which either displays **1234** or repeats the process.
 
- 
-
- 
-
-
-
-
-
-

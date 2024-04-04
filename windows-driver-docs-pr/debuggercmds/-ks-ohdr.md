@@ -1,7 +1,7 @@
 ---
-title: "ks.ohdr (WinDbg)"
-description: "The ks.ohdr extension displays details of a kernel streaming object header."
-keywords: ["ks.ohdr Windows Debugging"]
+title: "!ks.ohdr (WinDbg)"
+description: "The !ks.ohdr extension displays details of a kernel streaming object header."
+keywords: ["!ks.ohdr Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -54,7 +54,7 @@ Optional. Values are the same as those for [**!ks.dump**](-ks-dump.md).
 
  
 
-### Additional Information
+## Additional Information
 
 For more information, see [Kernel Streaming Debugging](../debugger/kernel-streaming-debugging.md).
 
@@ -65,13 +65,4 @@ The **!ks.ohdr** command works similarly to [**!ks.objhdr**](-ks-objhdr.md) in t
 Levels and flags for **!ks.ohdr** are identical to those described in [**!ks.dump**](-ks-dump.md).
 
 If the data you are querying is not paged out, consider using [**!ks.dump**](-ks-dump.md) instead of **!ks.ohdr**.
-
- 
-
- 
-
-
-
-
-
 

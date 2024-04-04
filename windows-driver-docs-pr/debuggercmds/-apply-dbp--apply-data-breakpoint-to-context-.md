@@ -14,7 +14,6 @@ api_type:
 
 # .apply\_dbp (Apply Data Breakpoint to Context)
 
-
 The **.apply\_dbp** command applies the current process' existing data breakpoints to the specified register context.
 
 ```dbgcmd
@@ -27,7 +26,7 @@ The **.apply\_dbp** command applies the current process' existing data breakpoin
 <span id="________m_______Context______"></span><span id="________m_______context______"></span><span id="________M_______CONTEXT______"></span> **/m** *Context*   
 Specifies the address of a register context (CONTEXT structure) in memory to which to apply the current process' data breakpoints.
 
-### Environment
+## Environment
 
 <table>
 <colgroup>
@@ -52,7 +51,7 @@ Specifies the address of a register context (CONTEXT structure) in memory to whi
 
  
 
-### Additional Information
+## Additional Information
 
 For more information about breakpoints controlled by the processor, see [Processor Breakpoints (ba Breakpoints)](../debugger/processor-breakpoints---ba-breakpoints-.md). For more information about the register context (thread context), see [Register Context](../debugger/changing-contexts.md#register-context).
 
@@ -67,13 +66,4 @@ If the **/m** *Address* parameter is not used, data breakpoints will be applied 
 This command can only be used if the target is in native machine mode. For example, if the target is running on a 64-bit machine emulating an x86 processor using *WOW64*, this command cannot be used.
 
 One example of a time this command is useful is when you are in an exception filter. The **.apply\_dbp** command can update the exception filter's stored context. Data breakpoints will then be applied when the exception filter exits and the stored context is resumed. Without such a modification it is possible that data breakpoints would be lost.
-
- 
-
- 
-
-
-
-
-
 

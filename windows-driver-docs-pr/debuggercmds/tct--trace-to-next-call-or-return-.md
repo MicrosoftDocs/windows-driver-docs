@@ -46,7 +46,7 @@ Specifies the address where the debugger begins execution. If you do not use *St
 <span id="_______Count______"></span><span id="_______count______"></span><span id="_______COUNT______"></span> *Count*   
 Specifies the number of **call** or **return** instructions that the debugger must encounter for the **tct** command to end. The default value is one.
 
-### Environment
+## Environment
 
 |  Item       | Description               |
 |-----------|------------------------|
@@ -56,7 +56,7 @@ Specifies the number of **call** or **return** instructions that the debugger mu
 
  
 
-### Additional Information
+## Additional Information
 
 For more information about related commands, see [Controlling the Target](../debugger/controlling-the-target.md).
 
@@ -67,13 +67,4 @@ The **tct** command causes the target to begin executing. This execution continu
 If the program counter is already on a **call** or **return** instruction, the debugger traces into the call or return and continues executing until it encounters another **call** or **return**. This tracing, rather than execution, of the call is the only difference between **tct** and [**pct (Step to Next Call or Return)**](pct--step-to-next-call-or-return-.md).
 
 In source mode, you can associate one source line with multiple assembly instructions. This command does not stop at a **call** or **return** instruction that is associated with the current source line.
-
- 
-
- 
-
-
-
-
-
 

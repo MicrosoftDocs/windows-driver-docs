@@ -1,7 +1,7 @@
 ---
-title: "hstring2 (WinDbg)"
-description: "The hstring2 extension displays an entire HSTRING including any embedded NULL characters in the string itself."
-keywords: ["hstring2 Windows Debugging"]
+title: "!hstring2 (WinDbg)"
+description: "The !hstring2 extension displays an entire HSTRING including any embedded NULL characters in the string itself."
+keywords: ["!hstring2 Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !hstring2
 
-
 The **!hstring2** extension displays an entire **HSTRING** including any embedded NULL characters in the string itself.
 
 ```dbgcmd
@@ -22,7 +21,6 @@ The **!hstring2** extension displays an entire **HSTRING** including any embedde
 ```
 
 ## Parameters
-
 
 <span id="Address"></span><span id="address"></span><span id="ADDRESS"></span>*Address*  
 The address of an **HSTRING**.
@@ -35,14 +33,5 @@ The address of an **HSTRING**.
 [**!hstring**](-hstring.md)
 
 [**!winrterr**](-winrterr.md)
-
- 
-
- 
-
-
-
-
-
 
 

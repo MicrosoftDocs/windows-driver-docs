@@ -46,7 +46,7 @@ Specifies the address where the debugger begins execution. Otherwise, the debugg
 <span id="_______Count______"></span><span id="_______count______"></span><span id="_______COUNT______"></span> *Count*   
 Specifies the number of **call** instructions that the debugger must encounter for this command to stop. The default value is one.
 
-### Environment
+## Environment
 
 |  Item       | Description               |
 |-----------|------------------------|
@@ -56,7 +56,7 @@ Specifies the number of **call** instructions that the debugger must encounter f
 
  
 
-### Additional Information
+## Additional Information
 
 For more information about related commands, see [Controlling the Target](../debugger/controlling-the-target.md).
 
@@ -67,13 +67,4 @@ The **pc** command causes the target to begin executing. This execution continue
 If the program counter is already on a **call** instruction, the entire call is executed. After this call is returned, execution continues until another **call** is reached. This execution, rather than tracing, of the call is the only difference between **pc** and [**tc (Trace to Next Call)**](tc--trace-to-next-call-.md).
 
 In source mode, you can associate one source line with multiple assembly instructions. The **pc** command does not stop at a **call** instruction that is associated with the current source line.
-
- 
-
- 
-
-
-
-
-
 

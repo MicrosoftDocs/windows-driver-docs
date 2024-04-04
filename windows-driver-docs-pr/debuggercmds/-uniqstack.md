@@ -1,7 +1,7 @@
 ---
-title: "uniqstack (WinDbg)"
-description: "The uniqstack extension displays all of the stacks for all of the threads in the current process, excluding stacks that appear to have duplicates."
-keywords: ["uniqstack Windows Debugging"]
+title: "!uniqstack (WinDbg)"
+description: "The !uniqstack extension displays all of the stacks for all of the threads in the current process, excluding stacks that appear to have duplicates."
+keywords: ["!uniqstack Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !uniqstack
 
-
 The **!uniqstack** extension displays all of the stacks for all of the threads in the current process, excluding stacks that appear to have duplicates.
 
 ```dbgcmd
@@ -22,7 +21,6 @@ The **!uniqstack** extension displays all of the stacks for all of the threads i
 ```
 
 ## Parameters
-
 
 <span id="_______-b______"></span><span id="_______-B______"></span> **-b**   
 Causes the display to include the first three parameters passed to each function.
@@ -38,24 +36,7 @@ Causes frame numbers to be displayed.
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Uext.dll</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Uext.dll</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+Uext.dll
 
 ## Remarks
 
@@ -106,13 +87,3 @@ Total threads: 14
 Duplicate callstacks: 11 (windbg thread #s follow):
 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
 ```
-
- 
-
- 
-
-
-
-
-
-

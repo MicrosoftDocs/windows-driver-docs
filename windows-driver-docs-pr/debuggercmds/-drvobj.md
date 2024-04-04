@@ -1,7 +1,7 @@
 ---
-title: "drvobj (WinDbg)"
-description: "The drvobj extension displays detailed information about a DRIVER_OBJECT."
-keywords: ["drvobj Windows Debugging"]
+title: "!drvobj (WinDbg)"
+description: "The !drvobj extension displays detailed information about a DRIVER_OBJECT."
+keywords: ["!drvobj Windows Debugging"]
 ms.date: 11/16/2018
 topic_type:
 - apiref
@@ -44,7 +44,7 @@ Lists with detailed information the device objects owned by the driver (requires
 Kdexts.dll
 
 
-### Additional Information
+## Additional Information
 
 See [Plug and Play Debugging](../debugger/plug-and-play-debugging.md) for examples and applications of this extension command. For information about driver objects, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
@@ -76,13 +76,4 @@ Device Object list:
 ```
 
 You can also use [**!devobj 809d50d0**](-devobj.md) to get information about the device object.
-
- 
-
- 
-
-
-
-
-
 

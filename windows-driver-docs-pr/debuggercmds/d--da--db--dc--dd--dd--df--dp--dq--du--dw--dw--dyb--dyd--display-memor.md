@@ -52,7 +52,7 @@ Specifies one or more display options. You can include any of the following opti
 
 Specifies the memory area to display. For more syntax details, see [Address and address range syntax](address-and-address-range-syntax.md). If you omit **Range**, the command displays memory starting at the ending location of the last display command. If you omit **Range** and there's no previous display command, the display begins at the current instruction pointer.
 
-### Environment
+## Environment
 
 **Modes**: user mode, kernel mode
 
@@ -60,7 +60,7 @@ Specifies the memory area to display. For more syntax details, see [Address and 
 
 **Platforms**: all
 
-### Additional information
+## Additional Information
 
 For an overview of memory manipulation and a description of other memory-related commands, see [Reading and writing memory](../debugger/reading-and-writing-memory.md).
 

@@ -24,7 +24,7 @@ The **.clients** command lists all debugging clients currently connected to the 
 ## <span id="ddk_meta_list_debugging_clients_dbg"></span><span id="DDK_META_LIST_DEBUGGING_CLIENTS_DBG"></span>
 
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -34,16 +34,7 @@ The **.clients** command lists all debugging clients currently connected to the 
 
  
 
-### Additional Information
+## Additional Information
 
 For more details and other commands that can be used while performing remote debugging through the debugger, see [Controlling a Remote Debugging Session](../debugger/controlling-a-remote-debugging-session.md).
-
- 
-
- 
-
-
-
-
-
 

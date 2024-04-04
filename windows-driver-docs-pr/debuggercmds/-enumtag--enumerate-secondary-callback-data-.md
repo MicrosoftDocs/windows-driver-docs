@@ -24,32 +24,17 @@ The **.enumtag** command displays secondary bug check callback data and all data
 ## <span id="ddk_meta_enumerate_secondary_callback_data_dbg"></span><span id="DDK_META_ENUMERATE_SECONDARY_CALLBACK_DATA_DBG"></span>
 
 
-### Environment
+## Environment
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Modes</strong></p></td>
-<td align="left"><p>Kernel mode only</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Targets</strong></p></td>
-<td align="left"><p>Live, crash dump</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Platforms</strong></p></td>
-<td align="left"><p>All</p></td>
-</tr>
-</tbody>
-</table>
+|  Item       | Description       |
+|-----------|------------------|
+| Modes     | kernel mode only |
+| Targets   | live, crash dump |
+| Platforms | all              |
 
  
 
-### Additional Information
+## Additional Information
 
 For more information and for other ways of displaying this data, see [Reading Bug Check Callback Data](../debugger/reading-bug-check-callback-data.md).
 
@@ -80,13 +65,4 @@ kd> .enumtag
 ```
 
 In this example, the first batch of secondary data has a GUID ){87654321-0000-0000-0000000000000000}) as its tag, and the second batch of data has a GUID ({12345678-0000-0000-0000000000000000}) as its tag. However, the data is not in a useful format.
-
- 
-
- 
-
-
-
-
-
 

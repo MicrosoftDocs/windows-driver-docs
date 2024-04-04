@@ -29,7 +29,7 @@ id Address
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 The address of the port.
 
-### Environment
+## Environment
 
 <table>
 <colgroup>
@@ -64,14 +64,5 @@ Make sure that reading an I/O port does not affect the behavior of the device th
 
 
 [**ob, od, ow (Output to Port)**](ob--ow--od--output-to-port-.md)
-
- 
-
- 
-
-
-
-
-
 
 

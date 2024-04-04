@@ -1,7 +1,7 @@
 ---
-title: "storagekd.storadapter"
-description: "The storagekd.storadapter extension displays information about the specified Storport adapter."
-keywords: ["storagekd.storadapter Windows Debugging"]
+title: "!storagekd.storadapter"
+description: "The !storagekd.storadapter extension displays information about the specified Storport adapter."
+keywords: ["!storagekd.storadapter Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !storagekd.storadapter
 
-
 The **!storagekd.storadapter** extension displays information about the specified Storport adapter.
 
 ```dbgcmd
@@ -23,26 +22,13 @@ The **!storagekd.storadapter** extension displays information about the specifie
 
 ## Parameters
 
-
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the address of a Storport adapter device object. If *Address* is omitted, a list of all Storport adapters is displayed.
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 8 and later</strong></p></td>
-<td align="left"><p>Storagekd.dll</p></td>
-</tr>
-</tbody>
-</table>
+Storagekd.dll
 
- 
 
 ## Remarks
 
@@ -84,13 +70,4 @@ Normal Logical Units:
    Product                 SCSI ID  Object            Extension          Pnd Out Ct State
    --------------------------------------------------------------------------------------
 ```
-
- 
-
- 
-
-
-
-
-
 

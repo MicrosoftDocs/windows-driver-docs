@@ -1,7 +1,7 @@
 ---
-title: "usbkd.doesdumphaveusbdata"
-description: "The usbkd.doesdumphaveusbdata command checks to see which types of USB data are in a crash dump file that was generated as a result of Bug Check 0xFE."
-keywords: ["usbkd.doesdumphaveusbdata Windows Debugging"]
+title: "!usbkd.doesdumphaveusbdata"
+description: "The !usbkd.doesdumphaveusbdata command checks to see which types of USB data are in a crash dump file that was generated as a result of Bug Check 0xFE."
+keywords: ["!usbkd.doesdumphaveusbdata Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,15 +14,13 @@ api_type:
 
 # !usbkd.doesdumphaveusbdata
 
-
 The **!usbkd.doesdumphaveusbdata** command checks to see which types of USB data are in a crash dump file that was generated as a result of [**Bug Check 0xFE**](../debugger/bug-check-0xfe--bugcode-usb-driver.md).
 
 ```dbgcmd
 !usbkd.doesdumphaveusbdata
 ```
 
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Usbkd.dll
 
@@ -63,11 +61,6 @@ GuidUsbPortExt Exists (DEVICE_EXTENSION + DeviceDataSize ) = 2250
 
 ## See also
 
-
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
-
- 
-
-

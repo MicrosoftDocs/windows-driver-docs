@@ -1,7 +1,7 @@
 ---
-title: "dpa (WinDbg)"
-description: "The dpa extension displays pool allocation information."
-keywords: ["pool allocation", "dpa Windows Debugging"]
+title: "!dpa (WinDbg)"
+description: "The !dpa extension displays pool allocation information."
+keywords: ["pool allocation", "!dpa Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -51,20 +51,11 @@ Displays some brief Help text for this extension in the Debugger Command window.
 
 ## DLL
 
-Windows XP and later - Kdexts.dll
+Kdexts.dll
 
  
 
 ## Remarks
 
 Pool instrumentation must be enabled in Win32k.sys in order for this extension to work.
-
- 
-
- 
-
-
-
-
-
 

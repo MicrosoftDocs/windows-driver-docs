@@ -1,7 +1,7 @@
 ---
-title: "sd (WinDbg)"
-description: "The sd extension displays the security descriptor at the specified address."
-keywords: ["sd Windows Debugging"]
+title: "!sd (WinDbg)"
+description: "The !sd extension displays the security descriptor at the specified address."
+keywords: ["!sd Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !sd
 
-
 The **!sd** extension displays the security descriptor at the specified address.
 
 Syntax
@@ -23,8 +22,7 @@ Syntax
 !sd Address [Flags] 
 ```
 
-## <span id="ddk__sd_dbg"></span><span id="DDK__SD_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the hexadecimal address of the SECURITY\_DESCRIPTOR structure.
@@ -36,7 +34,7 @@ If this is set to 1, the friendly name is displayed. This includes the security 
 
 Exts.dll
 
-### Additional Information
+## Additional Information
 
 For an application and an example of this command, see [Determining the ACL of an Object](../debugger/determining-the-acl-of-an-object.md). For information about security descriptors, see the Microsoft Windows SDK documentation, the Windows Driver Kit (WDK) documentation, and *Microsoft Windows Internals* by Mark Russinovich and David Solomon. Also see [**!sid**](-sid.md) and [**!acl**](-acl.md).
 
@@ -73,13 +71,3 @@ kd> !sd e1a96a80 1
 
 ->Sacl    :  is NULL
 ```
-
- 
-
- 
-
-
-
-
-
-

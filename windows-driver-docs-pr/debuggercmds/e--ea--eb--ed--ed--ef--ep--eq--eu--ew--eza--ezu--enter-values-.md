@@ -45,7 +45,7 @@ Specifies one or more values to enter into memory. Multiple numeric values shoul
 <span id="_______String______"></span><span id="_______string______"></span><span id="_______STRING______"></span> *String*   
 Specifies a string to be entered into memory. The **ea** and **eza** commands will write this to memory as an ASCII string; the **eu** and **ezu** commands will write this to memory as a Unicode string. The **eza** and **ezu** commands write a terminal **NULL**; the **ea** and **eu** commands do not. *String* must be enclosed in quotation marks.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -53,7 +53,7 @@ Specifies a string to be entered into memory. The **ea** and **eza** commands wi
 |Targets |Live, crash dump      |
 |Platforms|All                  |
 
-### Additional Information
+## Additional Information
 
 For an overview of memory manipulation and a description of other memory-related commands, see [Reading and Writing Memory](../debugger/reading-and-writing-memory.md).
 

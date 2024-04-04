@@ -7,10 +7,6 @@ ms.date: 05/23/2017
 
 # Thread Syntax
 
-
-## <span id="ddk_thread_syntax_dbg"></span><span id="DDK_THREAD_SYNTAX_DBG"></span>
-
-
 Many debugger commands have thread identifiers as their parameters. A tilde ( ~ ) appears before the thread identifier.
 
 The thread identifier can be one of the following values.
@@ -71,13 +67,4 @@ In kernel mode, you cannot control threads by using thread identifiers. For more
 **Note**  You can use the tilde character ( ~ ) to specify threads during user-mode debugging. In kernel-mode debugging, you can use the tilde to specify processors. For more information about how to specify processors, see [Multiprocessor Syntax](multiprocessor-syntax.md).
 
  
-
- 
-
- 
-
-
-
-
-
 

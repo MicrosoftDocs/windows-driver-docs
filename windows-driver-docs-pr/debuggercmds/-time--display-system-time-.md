@@ -14,30 +14,24 @@ api_type:
 
 # .time (Display System Time)
 
-
 The **.time** command displays information about the system time variables.
 
 ```dbgcmd
 .time [-h Hours]
 ```
 
-## <span id="ddk_meta_display_system_time_dbg"></span><span id="DDK_META_DISPLAY_SYSTEM_TIME_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______-h________Hours______"></span><span id="_______-h________hours______"></span><span id="_______-H________HOURS______"></span> **-h** **** *Hours*   
 Specifies the offset from Greenwich Mean Time, in hours. A negative value of *Hours* must be enclosed in parentheses.
 
-<span></span>  
+## Environment
 
-### Environment
-
-|  Item  | Description          |
-|--------|----------------------|
-|Modes|User mode, kernel mode|
-|Targets|Live, crash dump|
-|Platforms|All|
-
- 
+| Item      | Description            |
+|-----------|------------------------|
+| Modes     | User mode, kernel mode |
+| Targets   | Live, crash dump       |
+| Platforms | All                    |
 
 ## Remarks
 
@@ -61,13 +55,3 @@ Process Uptime: 0 days 0:00:08.750
   Kernel time: 0 days 0:00:00.015
   User time: 0 days 0:00:00.015
 ```
-
- 
-
- 
-
-
-
-
-
-

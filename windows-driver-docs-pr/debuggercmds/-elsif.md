@@ -32,16 +32,7 @@ Specifies a condition. If this evaluates to zero, it is treated as false; otherw
 <span id="_______Commands______"></span><span id="_______commands______"></span><span id="_______COMMANDS______"></span> *Commands*   
 Specifies one or more commands that will be executed conditionally. This block of commands needs to be enclosed in braces, even if it consists of a single command. Multiple commands should be separated by semicolons, but the final command before the closing brace does not need to be followed by a semicolon.
 
-### Additional Information
+## Additional Information
 
 For information about other control flow tokens and their use in debugger command programs, see [Using Debugger Command Programs](../debugger/using-debugger-command-programs.md).
-
- 
-
- 
-
-
-
-
-
 

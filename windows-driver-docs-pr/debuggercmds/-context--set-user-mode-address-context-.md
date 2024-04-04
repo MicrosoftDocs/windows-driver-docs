@@ -27,32 +27,17 @@ The **.context** command specifies which page directory of a process will be use
 <span id="_______PageDirectoryBase______"></span><span id="_______pagedirectorybase______"></span><span id="_______PAGEDIRECTORYBASE______"></span> *PageDirectoryBase*   
 Specifies the base address for a page directory of a desired process. The user-mode address context will be set to this page directory. If *PageDirectoryBase* is zero, the user-mode address context will be set to the page directory for the current system state. If *PageDirectoryBase* is omitted, the current user-mode address context is displayed.
 
-### Environment
+## Environment
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Modes</strong></p></td>
-<td align="left"><p>kernel mode only</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Targets</strong></p></td>
-<td align="left"><p>live, crash dump</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Platforms</strong></p></td>
-<td align="left"><p>all</p></td>
-</tr>
-</tbody>
-</table>
+|  Item       | Description       |
+|-----------|------------------|
+| Modes     | kernel mode only |
+| Targets   | live, crash dump |
+| Platforms | all              |
 
  
 
-### Additional Information
+## Additional Information
 
 For more information about the user-mode address context and other context settings, see [Changing Contexts](../debugger/changing-contexts.md).
 
@@ -118,13 +103,4 @@ PEB at 7FFDF000
         DllPath:     'C:\WINNT\system32;.;C:\WINNT\System32;C:\WINNT\system;C:\WINNT;C:\WINNT\system32;C:\WINNT;C:\WINNT\System32\Wbem;C:\PROGRA~1\COMMON~1\AUTODE~1'
         Environment:  0x10000
 ```
-
- 
-
- 
-
-
-
-
-
 

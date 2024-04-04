@@ -1,7 +1,7 @@
 ---
-title: "ndiskd.interfaces"
-description: "The ndiskd.interfaces extension displays information about a network interface."
-keywords: ["ndiskd.interfaces Windows Debugging"]
+title: "!ndiskd.interfaces"
+description: "The !ndiskd.interfaces extension displays information about a network interface."
+keywords: ["!ndiskd.interfaces Windows Debugging"]
 ms.date: 06/15/2020
 topic_type:
 - apiref

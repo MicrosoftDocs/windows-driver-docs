@@ -20,13 +20,13 @@ Use the **.scriptdebug** command to debug JavaScript scripts.
 .scriptdebug FileName
 ```
 
-### Parameters
+## Parameters
 
 *FileName*
 
 Specifies the name of the debugger JavaScript script to debug.
 
-### <span id="Environment"></span>Environment
+## Environment
 
 <table>
 <colgroup>
@@ -49,16 +49,13 @@ Specifies the name of the debugger JavaScript script to debug.
 </tbody>
 </table>
 
-
-
-## <span id="Additional_Information"></span>Additional Information
+## Additional Information
 
 For an overview of JavaScript debugging, see  [JavaScript Debugger Scripting - JavaScript Debugging](../debugger/javascript-debugger-scripting.md#DEBUGGING).
 
->[!NOTE] 
+>[!NOTE]
 > To use JavaScript Debugging with WinDbg, run the debugger as Administrator.
 >
-
 
 ## Remarks
 
@@ -118,7 +115,6 @@ Script Debugger Commands (*NOTE* IDs are **PER SCRIPT**):
     .help  ............................. Get help
 ```
 
-
 ### Events
 
 Use the **sx** script debugger command to see the list of events that can be trapped.
@@ -142,7 +138,7 @@ Event filter 'en' is now active
 
 Use the **sxd** script debugger command to disable any of the breakpoint behaviors.
 
-```dbgcmd                                                                                                                      
+```dbgcmd
 >>> Debug [DebuggableSample 34:5] >sxd en                                                                              
 sxd en                                                                                                                 
 Event filter 'en' is now inactive                                                                                      
@@ -174,11 +170,9 @@ someObj          : {...}
     b                : {...}                                
 ```
 
-
 ### Breakpoints
 
 Use the following breakpoint commands to work with additional breakpoints.
-
 
 **bp \<bpid\>**: Set a breakpoint
 
@@ -192,7 +186,6 @@ Use the following breakpoint commands to work with additional breakpoints.
 
 **bl**: List the breakpoint(s)
 
-
 ### Flow control - navigation
 
 Use the following commands to move forward in the script.
@@ -205,13 +198,9 @@ Use the following commands to move forward in the script.
 
 **gu**: Step out
 
-
-
-
 ### Frames
 
 Use the following commands to work with frames.
-
 
 **.frame \<index\>**: Switch to frame number \<index\>
 
@@ -219,10 +208,9 @@ Use the following commands to work with frames.
 
 **.f+**: Switch to previous stack frame
 
-
 ### Quiting
 
-Use the **.detach** command to detach the JavaScript debugger. 
+Use the **.detach** command to detach the JavaScript debugger.
 
 ```dbgcmd
 >>> Debug [DebuggableSample 34:5] >.detach                  
@@ -236,5 +224,3 @@ Use the **q** command to quit the JavaScript debugger.
 >>> Debug [<NONE> ] >q                                      
 q                                                           
 ```
-
-

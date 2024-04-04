@@ -4,7 +4,7 @@ description: Using Static tools and CodeQL on Windows driver source code to disc
 keywords:
 - dynamic verification tools WDK
 - static verification tools WDK
-ms.date: 03/19/2024
+ms.date: 04/03/2024
 ---
 
 # CodeQL and the Static Tools Logo Test
@@ -176,7 +176,7 @@ Locate and copy to the local PC the two primary query files.
 - *windows-driver-recommended.qls*
 - *windows-driver-mustfix.qls*
 
-Their contents is shown below in [Queries and Suites](#queries-and-suites) and the two files are located at [https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/suites](https://github.com/microsoft/Windows-Driver-Dev.eloper-Supplemental-Tools/tree/main/suites)
+Their contents is shown below in [Queries and Suites](#queries-and-suites) and the two files are located at [https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/suites](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/suites).
 
 ## 2. Build the CodeQL Database
 

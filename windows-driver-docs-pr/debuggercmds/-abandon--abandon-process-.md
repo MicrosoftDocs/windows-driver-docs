@@ -30,7 +30,7 @@ Any outstanding debug event will be continued and marked as handled. This is the
 
 Any outstanding debug event will be continued unhandled.
 
-### Environment
+## Environment
 
 This command is only supported in Windows XP and later versions of Windows.
 
@@ -40,6 +40,6 @@ This command is only supported in Windows XP and later versions of Windows.
 |Targets | live debugging only |
 |Platforms | all  |
 
-### Additional Information
+## Additional Information
 
 If the target is left in a debugging state, a new debugger can be attached to it. See [Re-attaching to the Target Application](../debugger/reattaching-to-the-target-application.md) for details. However, after a process has been abandoned once, it can never be restored to a running state without a debugger attached.

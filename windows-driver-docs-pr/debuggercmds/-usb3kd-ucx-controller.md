@@ -1,7 +1,7 @@
 ---
-title: "usb3kd.ucx_controller"
-description: "The usb3kd.ucx_controller command displays information about a USB 3.0 host controller. The display is based on data structures maintained by UcxVersion.sys."
-keywords: ["usb3kd.ucx_controller Windows Debugging"]
+title: "!usb3kd.ucx_controller"
+description: "The !usb3kd.ucx_controller command displays information about a USB 3.0 host controller. The display is based on data structures maintained by UcxVersion.sys."
+keywords: ["!usb3kd.ucx_controller Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,21 +14,18 @@ api_type:
 
 # !usb3kd.ucx\_controller
 
-
 The [**!usb3kd.ucx\_controller**](-usb3kd-device-info.md) command displays information about a USB 3.0 host controller. The display is based on data structures maintained by the USB host controller extension driver (Ucx*Version*.sys).
 
 ```dbgcmd
 !usb3kd.ucx_controller UcxControllerPrivContext
 ```
 
-## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______UcxControllerPrivContext______"></span><span id="_______ucxcontrollerprivcontext______"></span><span id="_______UCXCONTROLLERPRIVCONTEXT______"></span> *UcxControllerPrivContext*   
 Address of the \_UCXCONTROLLER\_PRIVCONTEXT structure that represents the controller.
 
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Usb3kd.dll
 
@@ -101,11 +98,8 @@ Device Tree:
 
 ## See also
 
-
 [USB 3.0 Extensions](usb-3-extensions.md)
 
 [**!usb3kd.ucx\_controller\_list**](-usb3kd-ucx-controller-list.md)
 
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
-
-

@@ -1,7 +1,7 @@
 ---
-title: "ndiskd.pendingnbls"
-description: "The ndiskd.pendingnbls extension displays pending NBLs (NET_BUFFER_LISTs) that are in transit."
-keywords: ["ndiskd.pendingnbls Windows Debugging"]
+title: "!ndiskd.pendingnbls"
+description: "The !ndiskd.pendingnbls extension displays pending NBLs (NET_BUFFER_LISTs) that are in transit."
+keywords: ["!ndiskd.pendingnbls Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref

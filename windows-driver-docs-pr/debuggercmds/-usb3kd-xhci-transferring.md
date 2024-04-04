@@ -1,7 +1,7 @@
 ---
-title: "usb3kd.xhci_transferring"
-description: "The usb3kd.xhci_transferring extension displays a transfer ring (used by a USB 3.0 host controller) until it detects a cycle bit change."
-keywords: ["usb3kd.xhci_transferring Windows Debugging"]
+title: "!usb3kd.xhci_transferring"
+description: "The !usb3kd.xhci_transferring extension displays a transfer ring (used by a USB 3.0 host controller) until it detects a cycle bit change."
+keywords: ["!usb3kd.xhci_transferring Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !usb3kd.xhci\_transferring
 
-
 The [**!usb3kd.xhci\_transferring**](-usb3kd-device-info.md) extension displays a transfer ring (used by a USB 3.0 host controller) until it detects a cycle bit change.
 
 ```dbgcmd
@@ -22,8 +21,7 @@ The [**!usb3kd.xhci\_transferring**](-usb3kd-device-info.md) extension displays 
 !usb3kd.xhci_transferring PhysicalAddress 1
 ```
 
-## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______VirtualAddress______"></span><span id="_______virtualaddress______"></span><span id="_______VIRTUALADDRESS______"></span> *VirtualAddress*   
 Virtual address of the transfer ring.
@@ -34,8 +32,7 @@ Physical address of the transfer ring.
 <span id="_______1______"></span> 1   
 Specifies that the address is a physical address.
 
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Usb3kd.dll
 
@@ -90,13 +87,8 @@ kd> !xhci_transferring 0xfffffa8005b2fe00
 
 ## See also
 
-
 [USB 3.0 Extensions](usb-3-extensions.md)
 
 [**!xhci\_dumpall**](-usb3kd-xhci-dumpall.md)
 
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
-
- 
-
-

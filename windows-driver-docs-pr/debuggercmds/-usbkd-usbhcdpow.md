@@ -1,7 +1,7 @@
 ---
-title: "usbkd.usbhcdpow"
-description: "The usbkd.usbhcdpow command displays the power state history for a USB host controller or root hub."
-keywords: ["usbkd.usbhcdpow Windows Debugging"]
+title: "!usbkd.usbhcdpow"
+description: "The !usbkd.usbhcdpow command displays the power state history for a USB host controller or root hub."
+keywords: ["!usbkd.usbhcdpow Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,15 +14,13 @@ api_type:
 
 # !usbkd.usbhcdpow
 
-
 The **!usbkd.usbhcdpow** command displays the power state history for a USB host controller or root hub.
 
 ```dbgcmd
 !usbkd.usbhcdpow DeviceExtension
 ```
 
-## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______DeviceExtension______"></span><span id="_______deviceextension______"></span><span id="_______DEVICEEXTENSION______"></span> *DeviceExtension*   
 Address of one of the following:
@@ -30,8 +28,7 @@ Address of one of the following:
 -   The device extension for the functional device object (FDO) of a USB host controller.
 -   The device extension for the physical device object (PDO) a USB root hub.
 
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Usbkd.dll
 
@@ -109,11 +106,6 @@ dt USBPORT!_FDO_EXTENSION ffffe0000213c5a0
 
 ## See also
 
-
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
-
- 
-
-

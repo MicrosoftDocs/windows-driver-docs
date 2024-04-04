@@ -1,7 +1,7 @@
 ---
-title: "wudfext.wudfrequest"
-description: "The wudfext.wudfrequest extension displays information about an I/O request."
-keywords: ["wudfext.wudfrequest Windows Debugging"]
+title: "!wudfext.wudfrequest"
+description: "The !wudfext.wudfrequest extension displays information about an I/O request."
+keywords: ["!wudfext.wudfrequest Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -28,9 +28,8 @@ Specifies the address of the **WDFIoRequest** interface to display information a
 ## DLL
 
 Wudfext.dll
- 
 
-### Additional Information
+## Additional Information
 
 For more information, see [User-Mode Driver Framework Debugging](../debugger/user-mode-driver-framework-debugging.md).
 
@@ -73,13 +72,3 @@ UM IRP: 0x00429108  UniqueId: 0xf4  Kernel Irp: 0x0x936ef160
         Key:                  0x00000000
         Offset:               0x0
 ```
-
- 
-
- 
-
-
-
-
-
-

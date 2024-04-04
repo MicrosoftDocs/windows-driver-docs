@@ -52,7 +52,7 @@ The purpose for this command is primarily to be able to execute/test EXDI COM se
 
 Note that there are commands that can be acted on internally by the EXDI COM server without it needing to send it on to the JTAG target entity. For example, it is possible to collect telemetry from the EXDI COM server to validate it's correct operation.
 
-### Environment
+## Environment
 
 | Descriptor | Value               |
 |------------|---------------------|

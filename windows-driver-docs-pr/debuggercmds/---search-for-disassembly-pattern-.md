@@ -12,7 +12,7 @@ api_type:
 - NA
 ---
 
-# \# (Search for Disassembly Pattern)
+# # (Search for Disassembly Pattern)
 
 The number sign (**\#**) command searches for the specified pattern in the disassembly code.
 
@@ -34,7 +34,7 @@ Specifies the address where the search begins. For more information about the sy
 
 Specifies the number of instructions to search. If you omit *Size*, the search continues until the first match occurs.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -43,7 +43,7 @@ Specifies the number of instructions to search. If you omit *Size*, the search c
 |Platforms|All                  |
 
 
-### Additional Information
+## Additional Information
 
 For more information about assembly debugging and related commands, see [Debugging in Assembly Mode](../debugger/debugging-in-assembly-mode.md).
 

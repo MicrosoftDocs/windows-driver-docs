@@ -1,7 +1,7 @@
 ---
-title: "apicerr (WinDbg)"
-description: "The apicerr extension displays the local Advanced Programmable Interrupt Controller (APIC) error log."
-keywords: ["APIC (Advanced Programmable Interrupt Controller)", "apicerr Windows Debugging"]
+title: "!apicerr (WinDbg)"
+description: "The !apicerr extension displays the local Advanced Programmable Interrupt Controller (APIC) error log."
+keywords: ["APIC (Advanced Programmable Interrupt Controller)", "!apicerr Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
 - apiref
@@ -13,7 +13,6 @@ api_type:
 ---
 
 # !apicerr
-
 
 The **!apicerr** extension displays the local Advanced Programmable Interrupt Controller (APIC) error log.
 
@@ -35,22 +34,10 @@ Displays the error log according to processor.
 
 ## DLL
 
-Windows XP and later - Kdexts.dll
-
- 
+Kdexts.dll
 
 This extension command can only be used with an x86-based or an x64-based target computer.
 
-### Additional Information
+## Additional Information
 
 For information about APICs, see *Microsoft Windows Internals* by Mark Russinovich and David Solomon. 
-
- 
-
- 
-
-
-
-
-
-

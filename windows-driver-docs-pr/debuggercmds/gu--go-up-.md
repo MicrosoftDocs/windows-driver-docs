@@ -35,7 +35,7 @@ gu
 <span id="_______Thread______"></span><span id="_______thread______"></span><span id="_______THREAD______"></span> *Thread*   
 (User mode only) Specifies the thread to execute. This thread must have been stopped by an exception. For syntax details, see [Thread Syntax](thread-syntax.md).
 
-### Environment
+## Environment
 
 |  Item       | Description               |
 |-----------|------------------------|
@@ -45,7 +45,7 @@ gu
 
  
 
-### Additional Information
+## Additional Information
 
 For other methods of issuing this command and an overview of related commands, see [Controlling the Target](../debugger/controlling-the-target.md).
 
@@ -60,13 +60,4 @@ If the current function is called recursively, the **gu** command will not halt 
  
 
 If *Thread* is specified, then the **gu** command is executed with the specified thread unfrozen and all others frozen. For example, if the **~123gu**, **~\#gu**, or **~\*gu** command is specified, the specified threads are unfrozen and all others are frozen.
-
- 
-
- 
-
-
-
-
-
 

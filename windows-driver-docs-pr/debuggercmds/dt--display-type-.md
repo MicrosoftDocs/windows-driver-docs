@@ -152,7 +152,7 @@ Specifies the address of the structure to be displayed. If *Name* is omitted, *A
 <span id="_______List______"></span><span id="_______list______"></span><span id="_______LIST______"></span> *List*   
 Specifies the field name that links a linked list. The *Address* parameter must be included.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -162,7 +162,7 @@ Specifies the field name that links a linked list. The *Address* parameter must 
 
  
 
-### Additional Information
+## Additional Information
 
 For an overview of memory manipulation and a description of other memory-related commands, see [Reading and Writing Memory](../debugger/reading-and-writing-memory.md).
 
@@ -434,13 +434,4 @@ ImageFileName : [16] "winlogon.exe"
 If you want to execute a command for each element of the list, use the [**!list**](-list.md) extension.
 
 Finally, the **dt -h** command will display a short help text summarizing the **dt** syntax.
-
- 
-
- 
-
-
-
-
-
 

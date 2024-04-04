@@ -1,7 +1,7 @@
 ---
-title: "gpiokd.pininfo"
-description: "The gpiokd.pininfo command displays information about a specified GPIO pin."
-keywords: ["gpiokd.pininfo Windows Debugging"]
+title: "!gpiokd.pininfo"
+description: "The !gpiokd.pininfo extension displays information about a specified GPIO pin."
+keywords: ["!gpiokd.pininfo Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,36 +14,21 @@ api_type:
 
 # !gpiokd.pininfo
 
-
-The **!gpiokd.pininfo** command displays information about a specified GPIO pin.
+The **!gpiokd.pininfo** extension displays information about a specified GPIO pin.
 
 ```dbgcmd
 !gpiokd.pininfo PinAddress
 ```
 
-## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______PinAddress______"></span><span id="_______pinaddress______"></span><span id="_______PINADDRESS______"></span> *PinAddress*   
 Address of the [\_GPIO\_PIN\_INFORMATION\_ENTRY](gpio-extensions.md#data-structures-used-by-the-gpio-commands) data structure that represents the pin.
 
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Gpiokd.dll
 
 ## See also
 
-
 [GPIO Extensions](gpio-extensions.md)
-
- 
-
- 
-
-
-
-
-
-
-

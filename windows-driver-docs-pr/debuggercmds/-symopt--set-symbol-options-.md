@@ -14,7 +14,6 @@ api_type:
 
 # .symopt (Set Symbol Options)
 
-
 The **.symopt** command sets or displays the symbol options.
 
 ```dbgcmd
@@ -23,8 +22,7 @@ The **.symopt** command sets or displays the symbol options.
 .symopt 
 ```
 
-## <span id="ddk_meta_set_symbol_options_dbg"></span><span id="DDK_META_SET_SYMBOL_OPTIONS_DBG"></span>Parameters
-
+## Parameters
 
 <span id="______________"></span> **+**   
 Causes the symbol options specified by *Flags* to be set. If **.symopt** is used with *Flags* but no plus or minus sign, a plus sign is assumed.
@@ -35,7 +33,7 @@ Causes the symbol options specified by *Flags* to be cleared.
 <span id="_______Flags______"></span><span id="_______flags______"></span><span id="_______FLAGS______"></span> *Flags*   
 Specifies the symbol options to be changed. *Flags* must be the sum of the bit flags of these symbol options.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -43,22 +41,10 @@ Specifies the symbol options to be changed. *Flags* must be the sum of the bit f
 |Targets |Live, crash dump      |
 |Platforms|All                  |
 
- 
-
-### Additional Information
+## Additional Information
 
 For a list and description of each symbol option, its bit flag, and other methods of setting and clearing these options, see [Setting Symbol Options](../debugger/symbol-options.md).
 
 ## Remarks
 
 Without any arguments, **.symopt** displays the current symbol options.
-
- 
-
- 
-
-
-
-
-
-

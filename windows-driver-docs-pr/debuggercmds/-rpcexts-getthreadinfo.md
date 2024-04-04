@@ -1,7 +1,7 @@
 ---
-title: "rpcexts.getthreadinfo"
-description: "The rpcexts.getthreadinfo extension searches the system's RPC state information for thread information."
-keywords: ["rpcexts.getthreadinfo Windows Debugging"]
+title: "!rpcexts.getthreadinfo"
+description: "The !rpcexts.getthreadinfo extension searches the system's RPC state information for thread information."
+keywords: ["!rpcexts.getthreadinfo Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !rpcexts.getthreadinfo
 
-
 The **!rpcexts.getthreadinfo** extension searches the system's RPC state information for thread information.
 
 ```dbgcmd
@@ -22,8 +21,7 @@ The **!rpcexts.getthreadinfo** extension searches the system's RPC state informa
 !rpcexts.getthreadinfo -? 
 ```
 
-## <span id="ddk__rpcexts_getthreadinfo_dbg"></span><span id="DDK__RPCEXTS_GETTHREADINFO_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______ProcessID______"></span><span id="_______processid______"></span><span id="_______PROCESSID______"></span> *ProcessID*   
 Specifies the process ID (PID) of the process containing the desired thread.
@@ -36,26 +34,9 @@ Displays some brief Help text for this extension in the Command Prompt window.
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Unavailable</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Rpcexts.dll</p></td>
-</tr>
-</tbody>
-</table>
+Rpcexts.dll
 
- 
-
-### Additional Information
+## Additional Information
 
 For more information about debugging Microsoft Remote Procedure Call (RPC), see [RPC Debugging](../debugger/rpc-debugging.md).
 
@@ -75,13 +56,3 @@ Searching for thread info ...
 ```
 
 For a similar example using the DbgRpc tool, see [Get RPC Thread Information](../debugger/get-rpc-thread-information.md).
-
- 
-
- 
-
-
-
-
-
-
