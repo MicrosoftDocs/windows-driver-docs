@@ -27,14 +27,14 @@ The VIDEO\_DXGKRNL\_BLACK\_SCREEN\_LIVEDUMP live dump has a value of 0x000001A8.
 
 **Source Values**
 
-
-0x1: Black screen hotkey generated DXGKRNL black screen live dump
-
-0x2: Volume combo key generated DXGKRNL black screen live dump
-
-0x4: Internal generated DXGKRNL black screen live dump
-
-0x8: Long Power Button Hold (LPBH) generated DXGKRNL black screen live dump
+|Source|Description|
+|--- |--- |
+| 0x1 | Black screen hotkey generated DXGKRNL black screen live dump |
+| 0x2 | Volume combo key generated DXGKRNL black screen live dump |
+| 0x4 | Internal generated DXGKRNL black screen live dump |
+| 0x8 | Long Power Button Hold (LPBH) generated DXGKRNL black screen live dump
+| 0x9 | Reserved for internal testing |
+| 0xA | Automatically triggered when a physical monitor is connected but the system failed to perform a mode set to enable at least 1 path |
 
 ## Cause
 
