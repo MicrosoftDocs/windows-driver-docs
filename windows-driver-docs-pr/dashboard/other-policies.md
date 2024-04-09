@@ -18,3 +18,4 @@ Some existing policies that lead to the driver submission being rejected include
 * [Driver Release Cadence](./driver-release-cadence.md)
 * [Establish HWID or CHID targeting relationship](./establish-relationship-for-chid-targeting.md)
 * [Extension INF Targeting Rules](./extension-inf-targeting-rules.md)
+* [Driver Pacakge Executable Rules](./driver-package-executable-rules.md)
