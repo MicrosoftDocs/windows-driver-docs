@@ -98,9 +98,9 @@ DriverVer=03/28/2024,10.0.22000.2000
 PnpLockdown=1
 
 [Manufacturer]
-%CONTOSO% = ContosoSampleDeviceMFT,ntamd64.10.0...22000
+%CONTOSO% = ContosoSampleDeviceMFT,ntamd64.10.0...25326
 
-[ContosoSampleDeviceMFT.ntamd64.10.0...22000]
+[ContosoSampleDeviceMFT.ntamd64.10.0...25326]
 %ContosoCamera.DeviceDesc% = ContosoSampleDeviceMFT_Install, usb\vid_xxxx&pid_xxxx&mi_xx  ; replace with your camera device VID PID
 
 [ContosoSampleDeviceMFT_Install]
