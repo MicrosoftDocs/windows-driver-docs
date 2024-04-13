@@ -9,7 +9,7 @@ api_name:
 - DCIDraw
 api_type:
 - NA
-ms.date: 01/05/2018
+ms.date: 04/14/2024
 ---
 
 # DCIDraw
@@ -20,7 +20,7 @@ ms.date: 01/05/2018
 
 Do not use this function; use the latest DirectX Graphics interfaces to communicate with your DirectDraw-supported driver instead.
 
-The **DCIDraw** function draws on the offsceen surface.
+The **DCIDraw** function draws on the offscreen surface.
 
  
 
