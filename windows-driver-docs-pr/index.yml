@@ -1,0 +1,125 @@
+### YamlMime:Hub
+title: Windows hardware developer documentation
+summary: Learn how to design, develop, and deploy hardware and device drivers for Windows PCs and other devices.
+brand: windows
+metadata:
+   title: Windows developer documentation
+   description: Design, develop, and deploy hardware and device drivers for Windows PCs and other devices.
+   author: tedhudek
+   ms.author: tedhudek
+   ms.topic: hub-page
+   ms.date: 12/20/2023
+   ms.localizationpriority: medium
+   uhfHeaderId: "MSDocsHeader-WinHW"
+   
+highlightedContent:
+  # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+   items:
+   - title: Get the Windows Driver Kit
+     itemType: download
+     url: ./download-the-wdk.md
+   - title: Device and driver installation
+     itemType: overview
+     url: ./install/overview-of-device-and-driver-installation.md
+   - title: Join the Insider Program
+     itemType: overview
+     url: /windows-insider
+   - title: Online training for Windows developers
+     itemType: learn
+     url: /training/browse/?products=windows
+
+conceptualContent:
+  # title: Get started
+  items:
+    - title: Get the tools
+      links:
+        - text: Visual Studio
+          url: https://go.microsoft.com/fwlink/p/?LinkId=698539
+          itemType: download
+        - text: Debugging Tools for Windows
+          url: ./debugger/index.md
+          itemType: download
+        - text: Windows driver samples
+          url: /samples/browse/?products=windows-wdk
+          itemType: download
+        - text: Installing preview versions of the WDK
+          url: ./installing-preview-versions-wdk.md
+          itemType: overview
+    - title: Debugging
+      links:
+        - text: Getting started with WinDbg
+          url: ./debugger/getting-started-with-windbg.md
+          itemType: get-started
+        - text: Setting up KDNET debugging
+          url: ./debugger/setting-up-a-network-debugging-connection-automatically.md
+          itemType: overview
+        - text: Download Debugging Tools for Windows - WinDbg
+          url: ./debugger/debugger-download-tools.md
+          itemType: download
+        - text: Debug Windows drivers
+          url: ./debugger/debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md
+          itemType: tutorial
+        - text: Debugger commands
+          url: ./debuggercmds/index.md
+          itemType: tutorial          
+    - title: API reference
+      links:
+        - text: Windows driver API reference
+          url: /windows-hardware/drivers/ddi/
+          itemType: reference
+        - text: WDF API reference
+          url: /windows-hardware/drivers/ddi/_wdf
+          itemType: reference
+        - text: Core kernel API reference
+          url: /windows-hardware/drivers/ddi/_kernel
+          itemType: reference
+    - title: Build devices
+      links:
+        - text: Get started with Windows 11
+          url: /windows-hardware/get-started
+          itemType: overview
+        - text: Design Windows 11 devices
+          url: /windows-hardware/design
+          itemType: overview
+        - text: Customize
+          url: /windows-hardware/customize
+          itemType: overview
+        - text: Manufacture
+          url: /windows-hardware/manufacture
+          itemType: overview
+        - text: Test for performance and compatibility
+          url: /windows-hardware/test
+          itemType: overview
+        - text: Test with the Hardware Lab Kit (HLK)
+          url: /windows-hardware/test/hlk
+          itemType: overview
+
+tools:
+  title: Driver platforms and frameworks
+  items:
+    - title: Kernel/Windows Driver Model
+      imageSrc: /media/logos/logo_windows.svg
+      url: ./kernel/index.md
+    - title: Windows Driver Frameworks
+      imageSrc: /media/logos/logo_windows.svg
+      url: ./wdf/index.md
+
+additionalContent:
+  sections:
+    # Section
+    - title: Tasks
+      items:
+        - title: Write a Hello World Windows Driver
+          summary: Learn how to write a very small Windows Driver using KMDF.
+          url: ./gettingstarted/writing-a-very-small-kmdf--driver.md
+        - title: Get started with Windows drivers
+          summary: Write a single driver package that runs across multiple device types.
+          url: ./develop/getting-started-with-windows-drivers.md
+        - title: Add boot entries
+          summary: A boot entry is a set of options that define a load configuration for an operating system or bootable program.
+          url: ./devtest/adding-boot-entries.md
+        - title: Edit boot options
+          summary: Learn how to customize boot options.
+          url: ./devtest/editing-boot-options.md
+    # Section
+  footer: "[@WindowsDocs on Twitter](https://twitter.com/WindowsDocs) - [OneDevMinute on YouTube](/shows/One-Dev-Minute/?WT.mc_id=odm-c9-niner) - [Windows developer support](https://developer.microsoft.com/windows/support) - [Stack Overflow](https://stackoverflow.com/questions/tagged/windows)"

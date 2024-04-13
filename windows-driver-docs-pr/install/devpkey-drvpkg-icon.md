@@ -1,0 +1,83 @@
+---
+title: DEVPKEY_DrvPkg_Icon
+description: The DEVPKEY_DrvPkg_Icon device property represents a list of device icons that Windows uses to visually represent a device instance.
+keywords: ["DEVPKEY_DrvPkg_Icon Device and Driver Installation"]
+topic_type:
+- apiref
+api_name:
+- DEVPKEY_DrvPkg_Icon
+api_location:
+- Devpkey.h
+api_type:
+- HeaderDef
+ms.date: 06/24/2022
+ms.topic: reference
+---
+
+# DEVPKEY_DrvPkg_Icon
+
+The DEVPKEY_DrvPkg_Icon device property represents a list of device icons that Windows uses to visually represent a device instance.
+
+| Attribute | Value |
+|--|--|
+| Property key | DEVPKEY_DrvPkg_Icon |
+| Property-data-type identifier | [**DEVPROP_TYPE_STRING_LIST**](devprop-type-string-list.md) |
+| Property access | Read-only access by installation applications and installers |
+| Localized | Yes |
+
+## Remarks
+
+Each icon in the list is specified by a path of an icon file (\*.ico) or a reference to an icon resource in an executable file.
+
+The first icon in the list is used as the default. Additional icons can be supplied that provide different visual representations of a device. Windows includes a user interface that allows a user to select which icon Windows displays. For example, the Microsoft DiscoveryCam 530 is available in blue, green, and red. Microsoft supplies an icon for each color. Windows uses the blue icon by default because it is the first one in the list. However, Windows users can also choose the green icon or the red icon.
+
+The icon list is a NULL-separated list of icon specifiers. An icon specifier is either a path of an icon file (\*.ico) or an icon-resource specifier, as follows:
+
+- The format of the path to an icon file is *DirectoryPath\\filename.ico.*
+
+- An icon-resource specifier has the following entries:
+
+    ```cpp
+    @executable-file-path,resource-identifier
+    ```
+
+    The first character of icon-resource specifier is the at sign (@) followed by the path of an executable file (an *\*.exe* or a *\*.dll* file), followed by a comma separator (,), and then the *resource-identifier* entry.
+
+For example, the icon specifier"@shell32.dll,-30" represents the executable file "shell32.dll" and the resource identifier "-30".
+
+A resource identifier must be an integer value, which corresponds to a resource within the executable file, as follows:
+
+- If the supplied identifier is negative, Windows uses the resource in the executable file whose identifier is equal to the absolute value of the supplied identifier.
+
+- If the supplied identifier is zero, Windows uses the resource in the executable file whose identifier has the lowest value in the executable file.
+
+- If the supplied identifier is positive, for example, the value *n*, Windows uses the resource in the executable file whose identifier is the n+1 lowest value in the executable file. For example, if the value of *n* is 1, Windows uses the resource whose identifier has the second lowest value in the executable file.
+
+You can set the value of DEVPKEY_DrvPkg_Icon by an [**INF AddProperty directive**](./inf-addproperty-directive.md) that is included in the [**INF *DDInstall* section**](./inf-ddinstall-section.md) of the INF file that installs the device. You can retrieve the value of DEVPKEY_DrvPkg_Icon by calling [**CM_Get_DevNode_Property**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_devnode_propertyw) or [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw).
+
+The following is an example of how to use an INF **AddProperty** directive to set DEVPKEY_DrvPkg_Icon for a device that is installed by an INF *DDInstall* section "SampleDDInstallSection":
+
+```cpp
+[SampleDDinstallSection]
+...
+AddProperty=SampleAddPropertySection
+...
+
+[SampleAddPropertySection] 
+DeviceIcon,,,,"SomeResource.dll,-2","SomeIcon.icon"
+...
+```
+
+## Requirements
+
+**Version**: Windows Vista and later versions of Windows
+
+**Header**: Devpkey.h (include Devpkey.h)
+
+## See also
+
+[**INF AddProperty Directive**](./inf-addproperty-directive.md)
+
+[**INF *DDInstall* Section**](./inf-ddinstall-section.md)
+
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)

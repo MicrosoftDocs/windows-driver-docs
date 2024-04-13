@@ -1,0 +1,505 @@
+- name: "Mobile broadband"
+  href: index.md
+- name: "Overview"
+  items: 
+  - name: "Overview of mobile broadband"
+    href: overview-of-mobile-broadband.md
+  - name: "Mobile broadband WinRT API overview"
+    items: 
+    - name: "Overview of mobile broadband Windows Runtime APIs"
+      items: 
+      - name: "Overview of mobile broadband Windows Runtime APIs"
+        href: list-of-mobile-broadband-windows-runtime-apis.md
+      - name: "Connection Profile API"
+        href: connection-profile-api.md
+      - name: "Device Services Extension API"
+        href: device-services-extension-api.md
+      - name: "Provisioning API"
+        href: provisioning-api.md
+      - name: "SIM PIN API"
+        href: sim-pin-api.md
+      - name: "SMS API"
+        href: sms-api.md
+      - name: "Subscriber and Device Information API"
+        href: subscriber-and-device-information-api.md
+      - name: "USSD API"
+        href: ussd-api.md
+    - name: "Common tasks for mobile broadband Windows Runtime APIs"
+      items: 
+      - name: "Create a MobileBroadbandAccount object"
+        href: create-a-mobilebroadbandaccount-object.md
+      - name: "Create a MobileBroadbandDeviceInformation object"
+        href: create-a-mobilebroadbanddeviceinformation-object.md
+      - name: "Create a MobileBroadbandNetwork object"
+        href: create-a-mobilebroadbandnetwork-object.md
+      - name: "Determine if a device is PIN-locked"
+        href: determine-if-a-device-is-pin-locked.md
+      - name: "Determine which mobile broadband network is currently connected"
+        href: determine-which-mobile-broadband-network-is-currently-connected.md
+      - name: "Determine which Windows device is being used to connect to the network"
+        href: determine-which-windows-device-is-being-used-to-connect-to-the-network.md
+      - name: "Discover whether the network device radio is turned on"
+        href: discover-whether-the-network-device-radio-is-turned-on.md
+      - name: "Enumerate available mobile broadband accounts"
+        href: enumerate-available-mobile-broadband-accounts.md
+      - name: "Establish temporary network connectivity"
+        href: establish-temporary-network-connectivity.md
+      - name: "Get information about the currently registered network"
+        href: get-information-about-the-currently-registered-network.md
+      - name: "Get the IMEI, ICCID, IMSI and telephone numbers for the mobile broadband device"
+        href: get-the-imei-iccid-imsi-and-telephone-numbers-for-the-mobile-broadband-device.md
+      - name: "Know when network connectivity changes"
+        href: know-when-network-connectivity-changes.md
+      - name: "Open the networks list"
+        href: open-the-networks-list.md
+      - name: "Receive notification for device information account changes"
+        href: receive-notification-for-device-information-account-changes.md
+      - name: "Receive notification when mobile broadband accounts are added or removed"
+        href: receive-notification-when-mobile-broadband-accounts-are-added-or-removed.md
+      - name: "Retrieve ConnectionProfile objects for a MobileBroadbandAccount"
+        href: retrieve-connectionprofile-objects-for-a-mobilebroadbandaccount.md
+      - name: "Unlock a device"
+        href: unlock-a-device.md
+    - name: "Best practices for using Mobile Broadband Windows Runtime API"
+      items: 
+      - name: "Best practices for handling account arrival and removal events"
+        href: best-practices-for-handling-account-arrival-and-removal-events.md
+      - name: "Best practices for connecting to the mobile broadband network"
+        href: best-practices-for-connecting-to-the-mobile-broadband-network.md
+  - name: "Mobile operator hardware overview"
+    href: mobile-operator-hardware-overview.md
+- name: "Using metadata to configure mobile broadband experiences"
+  items: 
+  - name: "Overview of using metadata to configure mobile broadband experiences"
+    href: using-metadata-to-configure-mobile-broadband-experiences.md
+  - name: "Account provisioning"
+    href: account-provisioning.md
+  - name: "COSA/APN database"
+    items: 
+    - name: "Introduction to COSA/APN database"
+      href: cosa-apn-database.md
+    - name: "APN schema definition"
+      href: apn-schema-definition.md
+    - name: "APN elements"
+      items: 
+      - name: "APN elements overview"
+        href: apn-elements.md
+        items:
+        - name: "OperatorList"
+          href: operatorlist.md
+        - name: "Operator"
+          href: operator.md
+        - name: "HardwareIdList (APN element)"
+          href: hardwareidlist-apnxml.md
+        - name: "HardwareId (APN element)"
+          href: hardwareid-apnxml.md
+        - name: "ConnectionInfoList"
+          href: connectioninfolist.md
+        - name: "ConnectionInfo"
+          href: connectioninfo.md
+        - name: "TrustedCertificateList"
+          href: trustedcertificatelist.md
+        - name: "TrustedCertificate (APN element)"
+          href: trustedcertificate-apnxml.md
+      - name: "APN example"
+        href: apn-example.md
+    - name: "COSA overview"
+      href: cosa-overview.md
+    - name: "APN database overview"
+      href: apn-database-overview.md
+    - name: "COSA/APN database submission"
+      items: 
+      - name: "Planning your desktop COSA/APN database submission"
+        href: planning-your-desktop-cosa-apn-database-submission.md
+      - name: "Desktop COSA/APN database settings"
+        href: desktop-cosa-apn-database-settings.md
+      - name: "Testing your desktop COSA/APN database submission"
+        href: testing-your-desktop-cosa-apn-database-submission.md
+      - name: "Submitting the desktop COSA/APN database update"
+        href: submitting-the-desktop-cosa-apn-database-update.md
+  - name: "Service metadata"
+    items: 
+    - name: "Service metadata overview"
+      href: service-metadata.md
+    - name: "Delivering experiences for MVNOs"
+      href: delivering-experiences-for-mvnos.md
+    - name: "Developer guide for creating service metadata"
+      href: developer-guide-for-creating-service-metadata.md
+    - name: "Service identifier ownership updates"
+      href: service-identifier-ownership-updates.md
+    - name: "Service metadata package schema reference"
+      items: 
+      - name: "MobileBroadbandInfo XML schema"
+        items: 
+        - name: "MobileBroadbandInfo XML schema overview"
+          href: mobilebroadbandinfo-xml-schema.md
+        - name: "MobileBroadbandInfo XML schema definition"
+          href: mobilebroadbandinfo-xml-schema-definition.md
+        - name: "MobileBroadbandInfo XML elements"
+          items: 
+          - name: "MobileBroadbandInfo XML elements list"
+            href: mobilebroadbandinfo-xml-elements.md
+          - name: "MobileBroadbandInfo"
+            href: mobilebroadbandinfo.md
+          - name: "NetworkConfiguration"
+            href: networkconfiguration.md
+          - name: "MobileBroadbandProfiles"
+            href: mobilebroadbandprofiles.md
+          - name: "Purchase"
+            href: purchase.md
+          - name: "Internet"
+            href: internet.md
+          - name: "AllowStandardUserPinUnlock"
+            href: allowstandarduserpinunlock.md
+          - name: "AllowTethering"
+            href: allowtethering.md
+        - name: "ProvisioningEngine element"
+          items: 
+          - name: "ProvisioningEngine"
+            href: provisioningengine.md
+          - name: "TrustedCertificates"
+            href: trustedcertificates.md
+          - name: "TrustedCertificate (MobileBroadbandInfo)"
+            href: trustedcertificate.md
+          - name: "SubjectName"
+            href: subjectname.md
+          - name: "IssuerName"
+            href: issuername.md
+        - name: "MobileBroadbandInfo XML example"
+          href: mobilebroadbandinfo-xml-example.md
+      - name: "PackageInfo XML schema"
+        items: 
+        - name: "PackageInfo XML schema overview"
+          href: packageinfo-xml-schema.md
+        - name: "PackageInfo XML schema definition"
+          href: packageinfo-xml-schema-definition.md
+        - name: "PackageInfo XML elements"
+          items: 
+          - name: "PackageInfo XML elements list"
+            href: packageinfo-xml-elements.md
+          - name: "PackageInfo"
+            href: packageinfo.md
+          - name: "MetadataKey"
+            href: metadatakey.md
+          - name: "ModelIDList"
+            href: modelidlist.md
+          - name: "ModelID"
+            href: modelid.md
+          - name: "HardwareIdList (PackageInfo)"
+            href: hardwareidlist.md
+          - name: "HardwareId (PackageInfo)"
+            href: hardwareid.md
+          - name: "Locale"
+            href: locale.md
+          - name: "LastModifiedDate"
+            href: lastmodifieddate.md
+          - name: "MultipleLocale"
+            href: multiplelocale.md
+          - name: "PackageStructure"
+            href: packagestructure.md
+          - name: "Metadata"
+            href: metadata-service-schema.md
+          - name: "Relationships"
+            href: relationships.md
+          - name: "ExperienceID"
+            href: experienceid.md
+          - name: "LanguageNeutralIdentifier"
+            href: languageneutralidentifier.md
+          - name: "MetadataBuilderInformation"
+            href: metadatabuilderinformation.md
+          - name: "Application"
+            href: application-service-schema.md
+          - name: "Version"
+            href: version.md
+        - name: "PackageInfo XML data types"
+          items: 
+          - name: "GUIDType"
+            href: guidtype-packageinfo.md
+        - name: "PackageInfo XML Example"
+          href: packageinfo-xml-example.md
+      - name: "ServiceInfo XML schema"
+        items: 
+        - name: "ServiceInfo XML schema overview"
+          href: serviceinfo-xml-schema.md
+        - name: "ServiceInfo XML Schema Definition"
+          href: serviceinfo-xml-schema-definition.md
+        - name: "ServiceInfo XML elements"
+          items: 
+          - name: "ServiceInfo XML elements list"
+            href: serviceinfo-xml-elements.md
+          - name: "ServiceInfo"
+            href: serviceinfo.md
+          - name: "ServiceCategoryList"
+            href: servicecategorylist.md
+          - name: "ServiceCategory"
+            href: servicecategory.md
+          - name: "ServiceName"
+            href: servicename.md
+          - name: "ServiceDescription1"
+            href: servicedescription1.md
+          - name: "ServiceDescription2"
+            href: servicedescription2.md
+          - name: "ServiceNumber"
+            href: servicenumber.md
+          - name: "ServiceProvider"
+            href: serviceprovider.md
+          - name: "ServiceIconFile"
+            href: serviceiconfile.md
+          - name: "ServiceSpecificExtension"
+            href: servicespecificextension.md
+        - name: "ServiceInfo XML Data Types"
+          items: 
+          - name: "GUIDType"
+            href: guidtype-serviceinfo.md
+        - name: "ServiceInfo XML Example"
+          href: serviceinfo-xml-example.md
+      - name: "SoftwareInfo XML schema"
+        items: 
+        - name: "SoftwareInfo XML schema overview"
+          href: softwareinfo-xml-schema.md
+        - name: "SoftwareInfo XML Schema Definition"
+          href: softwareinfo-xml-schema-definition.md
+        - name: "SoftwareInfo XML elements"
+          items: 
+          - name: "SoftwareInfo XML elements list"
+            href: softwareinfo-xml-elements.md
+          - name: "SoftwareInfo"
+            href: softwareinfo.md
+          - name: "DeviceCompanionApplications"
+            href: devicecompanionapplications.md
+          - name: "Package (SoftwareInfo)"
+            href: package.md
+          - name: "Identity (SoftwareInfo)"
+            href: identity.md
+          - name: "Applications"
+            href: applications.md
+          - name: "Application"
+            href: application-softwareinfo-schema.md
+          - name: "DeviceNotificationHandlers"
+            href: devicenotificationhandlers.md
+          - name: "DeviceNotificationHandler"
+            href: devicenotificationhandler.md
+          - name: "PrivilegedApplications"
+            href: privilegedapplications.md
+          - name: "Package (SoftwareInfo - priviliged applications)"
+            href: package-privapps.md
+          - name: "Identity (SoftwareInfo - priviliged applications)"
+            href: identity-privapps.md
+        - name: "SoftwareInfo XML Example"
+          href: softwareinfo-xml-example.md
+      - name: "WindowsInfo XML schema"
+        items: 
+        - name: "WindowsInfo XML schema overview"
+          href: windowsinfo-xml-schema.md
+        - name: "WindowsInfo XML Schema Definition"
+          href: windowsinfo-xml-schema-definition.md
+        - name: "WindowsInfo XML elements"
+          items: 
+          - name: "WindowsInfo XML elements list"
+            href: windowsinfo-xml-elements.md
+          - name: "WindowsInfo"
+            href: windowsinfo.md
+          - name: "ShowDeviceInDisconnectedState"
+            href: showdeviceindisconnectedstate.md
+          - name: "LaunchDeviceStageOnDeviceConnect"
+            href: launchdevicestageondeviceconnect.md
+          - name: "LaunchDeviceStageFromExplorer"
+            href: launchdevicestagefromexplorer.md
+          - name: "LaunchApplicationOnDeviceConnect"
+            href: launchapplicationondeviceconnect.md
+          - name: "AutoplayHandler"
+            href: autoplayhandler.md
+          - name: "PackageIdentity"
+            href: packageidentity.md
+          - name: "Application"
+            href: application-windowsinfo-v2.md
+          - name: "Verb"
+            href: verb.md
+          - name: "AutoplayType"
+            href: autoplaytype.md
+          - name: "EnableAutoPlayForRegisteredApps"
+            href: enableautoplayforregisteredapps.md
+          - name: "DesktopAutoplayHandler"
+            href: desktopautoplayhandler.md
+        - name: "WindowsInfo XML Example"
+          href: windowsinfo-xml-example.md
+    - name: "Using mbidgenerator.exe to generate hardware IDs"
+      href: using-mbidgeneratorexe-to-generate-hardware-ids.md
+- name: "Mobile operator scenarios"
+  items: 
+  - name: "Mobile Plans"
+    items:
+    - name: "Mobile Plans description"
+      items:
+      - name: "Mobile Plans overview"
+        href: mobile-plans.md
+      - name: "Mobile Plans sytem architecture"
+        href: mobile-plans-system-architecture.md
+      - name: "Mobile Plans scenarios"
+        href: mobile-plans-scenarios.md
+    - name: "Mobile Plans features"
+      items:
+      - name: "Mobile Plans catalog"
+        href: mobile-plans-catalog.md
+      - name: "Mobile operator gateway page"
+        href: mobile-plans-gateway.md
+      - name: "Mobile operator web portal"
+        href: mobile-plans-web-portal.md
+      - name: "Callback notifications"
+        href: mobile-plans-callback-notifications.md
+      - name: "eSIM download error handling"
+        href: mobile-plans-eSIM-error-handling.md
+      - name: "Account management"
+        href: mobile-plans-account-management.md
+      - name: "Walled garden"
+        href: mobile-plans-walled-garden.md
+      - name: "Toast notifications"
+        href: mobile-plans-notifications.md
+    - name: "Mobile Plans onboarding"
+      items:
+      - name: "Onboarding overview"
+        href: mobile-plans-onboarding-overview.md
+      - name: "Development"
+        href: mobile-plans-service-configuration.md
+      - name: "Integration"
+        href: mobile-plans-integration.md
+      - name: "Launch"
+        href: mobile-plans-launch.md
+    - name: "Appendix"
+      items:
+      - name: "General appendix"
+        href: mobile-plans-appendix.md
+      - name: "Legacy callback notifications"
+        href: mobile-plans-legacy-callback-notifications.md
+  - name: "eSIM management on Windows for mobile operators and OEMs"
+    href: esim-management-on-windows-for-mobile-operators-and-oems.md
+  - name: "Creating and configuring Internet Sharing experiences"
+    href: creating-and-configuring-internet-sharing-experiences.md
+  - name: "Developing apps using multiple PDP contexts"
+    href: developing-apps-using-multiple-pdp-contexts.md
+  - name: "Developing SMS apps"
+    items: 
+    - name: "Introduction to developing SMS apps"
+      href: developing-sms-apps.md
+    - name: "SMS device storage limits"
+      href: sms-device-storage-limits.md
+    - name: "Enumerate SMS devices"
+      href: enumerate-sms-devices.md
+    - name: "Get SMS device information"
+      href: get-sms-device-information.md
+    - name: "Read received SMS by using the text-mode interface"
+      href: read-received-sms-by-using-the-text-mode-interface.md
+    - name: "Run new SMS received background events"
+      href: run-new-sms-received-background-events.md
+    - name: "Send SMS by using custom character sets"
+      href: send-sms-by-using-custom-character-sets.md
+    - name: "Send SMS by using the text-mode interface"
+      items: 
+      - name: "Calculate characters and segments of a draft SMS"
+        href: calculate-characters-and-segments-of-a-draft-sms.md
+      - name: "Specify mobile telephone numbers"
+        href: specify-mobile-telephone-numbers.md
+      - name: "Windows automatically segments long messages"
+        href: windows-automatically-segments-long-messages.md
+      - name: "Windows automatically selects optimal character encoding"
+        href: windows-automatically-selects-optimal-character-encoding.md
+    - name: "Set SMS declarations"
+      href: set-sms-declarations.md
+  - name: "Enabling mobile broadband experiences using portable hotspot devices"
+    items: 
+    - name: "Introduction to enabling mobile broadband experiences using portable hotspot devices"
+      href: enabling-mobile-broadband-experiences-using-portable-hotspot-devices.md
+    - name: "Communication channels"
+      items: 
+      - name: "Personal hotspot communication channels"
+        href: communication-channels.md
+      - name: "Network cost information element"
+        href: network-cost-information-element.md
+      - name: "PnP-X for mobile broadband apps"
+        href: pnp-x-for-mobile-broadband-apps.md
+  - name: "Enabling mobile operator notifications and system events"
+    items: 
+    - name: "Introduction to enabling mobile operator notifications and system events"
+      href: enabling-mobile-operator-notifications-and-system-events.md
+    - name: "Develop an app to handle the MobileOperatorNotification event"
+      href: develop-an-app-to-handle-the-mobileoperatornotification-event.md
+    - name: "Mobile operator notification event technical details"
+      href: mobile-operator-notification-event-technical-details.md
+    - name: "Mobile operator notification scenarios"
+      href: mobile-operator-notification-scenarios.md
+  - name: "Integrating Windows with wireless hotspots"
+    items: 
+    - name: "Introduction to integrating Windows with wireless hotspots"
+      href: integrating-windows-with-wireless-hotspots.md
+    - name: "Get started with a hotspot authentication app"
+      items: 
+      - name: "Review the hotspot authentication sample"
+        href: review-the-hotspot-authentication-sample.md
+      - name: "Update the hotspot authentication sample"
+        href: update-the-hotspot-authentication-sample.md
+      - name: "Verify background events"
+        href: verify-background-events.md
+    - name: "Hotspot authentication methods"
+      items: 
+      - name: "Captive portals"
+        href: captive-portals.md
+      - name: "WISPr authentication"
+        items: 
+        - name: "WISPr authentication overview"
+          href: wispr-authentication.md
+        - name: "Provisioning for hotspot authentication"
+          href: provisioning-for-hotspot-authentication.md
+        - name: "Handling large numbers of SSIDs"
+          href: handling-large-numbers-of-ssids.md
+        - name: "Handling the hotspot authentication event"
+          href: handling-the-hotspot-authentication-event.md
+      - name: "Passpoint (Hotspot 2.0)"
+        href: passpoint.md
+  - name: "Provisioning Windows using a website"
+    href: provisioning-windows-using-a-website.md
+  - name: "Understanding and configuring Windows Connection Manager"
+    href: understanding-and-configuring-windows-connection-manager.md
+  - name: "UWP mobile broadband apps"
+    items: 
+    - name: "UWP mobile broadband apps overview"
+      href: UWP-mobile-broadband-apps.md
+    - name: "Mobile broadband app scenarios"
+      items: 
+      - name: "Account management"
+        href: account-management.md
+      - name: "App startup"
+        href: app-startup.md
+      - name: "Help and support"
+        href: help-and-support-mb-winrt-api.md
+      - name: "Hot spot authentication"
+        href: hot-spot-authentication.md
+      - name: "Live tile updates"
+        href: live-tile-updates.md
+      - name: "Notifications"
+        href: notifications.md
+      - name: "Plan purchase"
+        href: plan-purchase.md
+      - name: "Premium services"
+        href: premium-services.md
+    - name: "Designing the user experience of a mobile broadband app"
+      items: 
+      - name: "Introduction to designing the user experience of a mobile broadband app"
+        href: designing-the-user-experience-of-a-mobile-broadband-app.md
+      - name: "Design the landing page of a mobile broadband app"
+        href: design-the-landing-page-of-a-mobile-broadband-app.md
+      - name: "Design branding in a mobile broadband app"
+        href: design-branding-in-a-mobile-broadband-app.md
+      - name: "Design account balance and usage info in a mobile broadband app"
+        href: design-account-balance-and-usage-info-in-a-mobile-broadband-app.md
+      - name: "Design messages in a mobile broadband app"
+        href: design-messages-in-a-mobile-broadband-app.md
+      - name: "Design billing pages in a mobile broadband app"
+        href: design-billing-pages-in-a-mobile-broadband-app.md
+      - name: "Design purchase flows in a mobile broadband app"
+        href: design-purchase-flows-in-a-mobile-broadband-app.md
+      - name: "Design help and support pages in a mobile broadband app"
+        href: design-help-and-support-pages-in-a-mobile-broadband-app.md
+      - name: "Design services and goods pages in a mobile broadband app"
+        href: design-services-and-goods-pages-in-a-mobile-broadband-app.md
+      - name: "Integrate a mobile broadband app with other Windows components"
+        href: integrate-a-mobile-broadband-app-with-other-windows-components.md

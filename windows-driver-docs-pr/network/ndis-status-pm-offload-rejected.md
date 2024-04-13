@@ -1,0 +1,60 @@
+---
+title: NDIS_STATUS_PM_OFFLOAD_REJECTED
+ms.topic: reference
+description: The NDIS_STATUS_PM_OFFLOAD_REJECTED status indicates to overlying drivers that a power management protocol offload was rejected.
+ms.date: 03/02/2023
+keywords:
+ - NDIS_STATUS_PM_OFFLOAD_REJECTED Network Drivers Starting with Windows Vista
+---
+
+# NDIS\_STATUS\_PM\_OFFLOAD\_REJECTED
+
+
+The NDIS\_STATUS\_PM\_OFFLOAD\_REJECTED status indicates to overlying drivers that a power management protocol offload was rejected.
+
+## Remarks
+
+NDIS or miniport drivers can generate the NDIS\_STATUS\_PM\_OFFLOAD\_REJECTED status indication when either of them removes an offloaded protocol. The **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication) structure contains a ULONG for the protocol offload identifier of the rejected protocol offload. NDIS provided the protocol offload identifier in the **ProtocolOffloadId** member of the [**NDIS\_PM\_PROTOCOL\_OFFLOAD**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_protocol_offload) structure.
+
+NDIS generates an NDIS\_STATUS\_PM\_OFFLOAD\_REJECTED status indication when it has to remove a previously offloaded protocol from a network adapter. For example, NDIS might remove the protocol offload to free resources for a higher priority protocol offload. NDIS sends the status indication to the binding that offloaded the rejected protocol offload, but does not send it to other bindings.
+
+Miniport drivers report this status indication to reject a previously accepted protocol offload. For example, for a WiFi WOL case, the miniport driver must make an NDIS\_STATUS\_PM\_OFFLOAD\_REJECTED status indication when PTK/GTK rotation is not required to support WOL (due to vendor specific infrastructure support).
+
+For wireless network adapters that use infrastructure elements to offload protocols and roam across the infrastructure, it is possible that a new infrastructure element might not support the same capabilities as the previous one. In this case, the miniport driver can issue a status indication to NDIS, and NDIS will issue NDIS\_STATUS\_PM\_OFFLOAD\_REJECTED with a specific error code.
+
+A WiFi driver might cache protocol offload requests locally. When the driver processes an OID for adding or deleting a protocol offload, the driver can choose to only update its local cache. The driver can defer the update of the infrastructure until it receives the [OID\_PM\_PARAMETERS](./oid-pm-parameters.md) OID.
+
+The infrastructure might not have enough resources to accommodate all of the protocol offloads. In this case, the infrastructure can accept a partial list of the protocol offloads. When the miniport driver completes the OID\_PM\_PARAMETERS set request, the miniport driver must make NDIS\_STATUS\_PM\_OFFLOAD\_REJECTED status indications for each of the protocol offloads that the AP rejects.
+
+For example, a network adapter can use the AP's proxy ARP to support ARP offload.
+
+## Requirements
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><p>Version</p></td>
+<td><p>Supported in NDIS 6.20 and later.</p></td>
+</tr>
+<tr class="even">
+<td><p>Header</p></td>
+<td>Ndis.h (include Ndis.h)</td>
+</tr>
+</tbody>
+</table>
+
+## See also
+
+
+[**NDIS\_PM\_PROTOCOL\_OFFLOAD**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_protocol_offload)
+
+[**NDIS\_STATUS\_INDICATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication)
+
+[OID\_PM\_PARAMETERS](./oid-pm-parameters.md)
+
+ 
+

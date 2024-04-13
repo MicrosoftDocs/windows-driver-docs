@@ -1,0 +1,44 @@
+---
+title: Power and State Changes in AVStream
+description: Power and State Changes in AVStream
+keywords:
+- AVStream WDK , power and state changes
+- power changes WDK , AVStream
+- state changes WDK , AVStream
+ms.date: 04/20/2017
+---
+
+# Power and State Changes in AVStream
+
+
+When AVStream receives an [**IRP\_MN\_SET\_POWER**](../kernel/irp-mn-set-power.md) request, it calls a minidriver's [*AVStrMiniDeviceSetPower*](/windows-hardware/drivers/ddi/ks/nc-ks-pfnksdevicesetpower) callback routine, if the minidriver has provided one.
+
+When AVStream receives a set request of the [**KSPROPERTY\_CONNECTION\_STATE**](./ksproperty-connection-state.md) property, it calls a minidriver's [*AVStrMiniPinSetDeviceState*](/windows-hardware/drivers/ddi/ks/nc-ks-pfnkspinsetdevicestate) callback routine, if the minidriver has provided one.
+
+When the system wakes from a sleep state, AVStream may call a minidriver's *AVStrMiniPinSetDeviceState* and *AVStrMiniDeviceSetPower* callback routines in the reverse of the expected order. For example, *AVStrMiniPinSetDeviceState* may be called *beforeAVStrMiniDeviceSetPower*.
+
+As a result, the driver *must be prepared to handle such a reversal of the expected callback order*.
+
+This reversal does not happen when the system is powered down into a sleep state. On power down, these two callback routines always occur in the expected order. For example, *AVStrMiniPinSetDeviceState* is always called before *AVStrMiniDeviceSetPower*.
+
+If this reversal occurs, the entire sequence looks like this:
+
+First, the power down sequence occurs:
+
+1.  *AVStrMiniPinSetDeviceState* is called with a request to change device state from **KSSTATE\_RUN** to KSSTATE\_PAUSE.
+
+2.  *AVStrMiniDeviceSetPower* is called with a request to change power state from D0 to D2/D3.
+
+3.  At this point, the system is in a sleep state.
+
+4.  Next, the power up sequence occurs:
+
+5.  *AVStrMiniDeviceSetPower* is called with a request to change power state from D2/D3 to D0.
+
+6.  *AVStrMiniPinSetDeviceState* is called with a request to change device state from **KSSTATE\_PAUSE** to KSSTATE\_RUN.
+
+In this scenario, steps 5 and 6 are the steps that are reversed from the expected order.
+
+Additionally, when an application is streaming and the system initiates a power down sequence, a capture graph that is running is always placed in a pause state. If the graph was already stopped, it remains stopped.
+
+

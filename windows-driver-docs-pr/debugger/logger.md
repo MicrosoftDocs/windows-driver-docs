@@ -1,0 +1,28 @@
+---
+title: Logger
+description: Logger
+keywords: ["Logger, overview"]
+ms.date: 05/23/2017
+---
+
+# Logger
+
+
+## <span id="ddk_logger_dtoolq"></span><span id="DDK_LOGGER_DTOOLQ"></span>
+
+
+The Logger tool can be activated through two different vehicles. One way is to use the stand-alone Logger.exe program. The other is to start CDB or WinDbg, and use the Logexts.dll debugger extensions. Both of these methods will produce the same type of log output. However, the best vehicle to use on any NT-based operating system is CDB or WinDbg with the Logexts.dll extension commands.
+
+The Logger vehicle works as well, but using the debugger gives you the full power of the debugger along with the power of Logger.
+
+This section includes:
+
+[Using the Debugger and Logexts.dll](using-the-debugger-and-logexts-dll.md)
+
+[Using Logger.exe](using-logger-exe.md)
+
+[Logger Restrictions and Limitations](logger-restrictions-and-limitations.md)
+
+ 
+
+ 

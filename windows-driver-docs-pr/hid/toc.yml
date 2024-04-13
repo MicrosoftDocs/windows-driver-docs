@@ -1,0 +1,184 @@
+- name: "Introduction to Human Interface Devices (HID)"
+  href: index.md
+- name: "HID Architecture"
+  href: hid-architecture.md
+- name: "HID Application Programming Interface (API)"
+  href: introduction-to-hid-concepts.md
+- name: "HID Clients"
+  items: 
+  - name: "HID Clients Overview"
+    href: hid-clients.md
+  - name: "HID Usages"
+    href: hid-usages.md
+  - name: "HID Collections"
+    items: 
+    - name: "HID Collections Overview"
+      href: hid-collections.md
+    - name: "Top-Level Collections"
+      href: top-level-collections.md
+    - name: "Top-Level Collections Opened by Windows for System Use"
+      href: top-level-collections-opened-by-windows-for-system-use.md
+    - name: "Preparsed Data"
+      href: preparsed-data.md
+    - name: "Link Collections"
+      href: link-collections.md
+    - name: "Collection Capability"
+      href: collection-capability.md
+    - name: "Button Capability Arrays"
+      href: button-capability-arrays.md
+    - name: "Value Capability Arrays"
+      href: value-capability-arrays.md
+    - name: "Data Indices"
+      href: data-indices.md
+  - name: "Opening and Reading HID collections"
+    items: 
+    - name: "Opening HID collections"
+      href: opening-hid-collections.md
+    - name: "Finding and Opening a HID Collection"
+      href: finding-and-opening-a-hid-collection.md
+    - name: "HID client drivers"
+      href: hid-client-drivers.md
+    - name: "Enforcing a Secure Read For a HID Collection"
+      href: enforcing-a-secure-read-for-a-hid-collection.md
+    - name: "Obtaining Preparsed Data"
+      href: obtaining-preparsed-data.md
+    - name: "Obtaining Collection Information"
+      href: obtaining-collection-information.md
+  - name: "Handling HID Reports"
+    items: 
+    - name: "Handling HID Reports Topics"
+      href: handling-hid-reports.md
+    - name: "Initializing HID Reports"
+      href: initializing-hid-reports.md
+    - name: "Obtaining HID Reports"
+      href: obtaining-hid-reports.md
+    - name: "Sending HID Reports"
+      href: sending-hid-reports.md
+    - name: "Interpreting HID Reports"
+      href: interpreting-hid-reports.md
+    - name: "Troubleshooting HID Reports"
+      href: troubleshooting-hid-reports.md
+  - name: "Freeing Resources"
+    href: freeing-resources.md
+  - name: "Installing HID clients"
+    href: installing-hid-clients.md
+  - name: "HIDClass Hardware IDs for Top-Level Collections"
+    href: hidclass-hardware-ids-for-top-level-collections.md
+  - name: "Keyboard and mouse HID client drivers"
+    href: keyboard-and-mouse-hid-client-drivers.md
+  - name: "Sensor HID class driver"
+    href: sensor-hid-class-driver.md
+  - name: "Airplane mode radio management"
+    href: airplane-mode-radio-management.md
+  - name: "Display brightness control"
+    href: display-brightness-control.md
+- name: "HID Transports"
+  items: 
+  - name: "HID Transport Overview"
+    href: hid-transports.md
+  - name: "ACPI button device"
+    href: acpi-button-device.md
+  - name: "HID button drivers"
+    href: buttons.md
+  - name: "Virtual HID Framework (VHF)"
+    href: virtual-hid-framework--vhf-.md
+  - name: "Transport Minidrivers"
+    items: 
+    - name: "Transport Minidriver Overview"
+      href: transport-minidrivers.md
+    - name: "Binding minidrivers to the HID class"
+      href: binding-minidrivers-to-the-hid-class.md
+    - name: "Minidrivers and the HID class driver"
+      href: minidriver-operations.md
+    - name: "Minidriver requirements for tablet PCs"
+      href: minidriver-requirements-for-tablet-pcs-running-on-earlier-versions-of-windows.md
+  - name: "HID over USB"
+    items: 
+    - name: "HID over USB Overview"
+      href: hid-over-usb.md
+    - name: "Architecture of HID over USB"
+      href: architecture-and-overview-for-usb.md
+    - name: "Plug and play support"
+      href: plug-and-play-support.md
+    - name: "Power management"
+      href: power-management.md
+    - name: "Selective suspend for HID over USB devices"
+      href: selective-suspend-for-hid-over-usb-devices.md
+  - name: "HID over I2C"
+    items: 
+    - name: "Introduction to HID over I2C"
+      href: hid-over-i2c-guide.md
+    - name: "Architecture and overview"
+      href: architecture-and-overview.md
+    - name: "Plug and play support and power management"
+      href: plug-and-play-support-and-power-management.md
+    - name: "Power management for I²C transport"
+      href: power-management-over-i2c.md
+    - name: "Troubleshooting common errors"
+      href: troubleshooting-common-errors.md
+    - name: "Event tracing"
+      href: event-tracing.md
+  - name: "HID over SPI"
+    items: 
+    - name: "Introduction to HID over SPI"
+      href: hid-over-spi.md
+    - name: "Architecture and overview"
+      href: architecture-and-overview-for-spi.md
+    - name: "Plug and Play support"
+      href: plug-and-play-for-spi.md
+    - name: "Power management"
+      href: power-management-over-spi.md
+    - name: "Error handling"
+      href: error-handling-for-spi.md
+    - name: "D3Hot Support for HidSpiCx devices"
+      href: d3hot-support-for-hidspicx.md
+- name: "Non-HID legacy devices and drivers"
+  items: 
+  - name: "Non-HID legacy devices"
+    href: non-hid-legacy-devices.md
+  - name: "Configuration of keyboard and mouse class drivers"
+    href: keyboard-and-mouse-class-drivers.md
+  - name: "PS/2 (i8042prt) driver"
+    href: ps-2--i8042prt--driver.md
+  - name: "3rd party filter drivers"
+    href: 3rd-party-filter-drivers.md
+  - name: "Installing OS Drivers"
+    items: 
+    - name: "OS Driver installation"
+      href: os-driver-installation.md
+    - name: "INF DDInstall.MigrateToDevNode Section"
+      href: inf-ddinstall-migratetodevnode-section.md
+    - name: "INF SharedDriver Entry"
+      href: inf-shareddriver-entry.md
+    - name: "INF PS2_Inst.NoInterruptInit.Bioses Section"
+      href: inf-ps2-inst-nointerruptinit-bioses-section.md
+    - name: "INF PS2_Inst.NoInterruptInit Section"
+      href: inf-ps2-inst-nointerruptinit-section.md
+  - name: "DirectInput"
+    items: 
+    - name: "DirectInput Overview"
+      href: directinput.md
+    - name: "Joystick Support"
+      items: 
+      - name: "Joystick Support Overview"
+        href: joystick-support.md
+      - name: "Original Interface"
+        href: original-interface.md
+      - name: "DirectX 5.0 Interface"
+        href: directx-5-0-interface.md
+      - name: "Creating an INF File"
+        href: creating-an-inf-file.md
+      - name: "Registry Settings"
+        href: registry-settings2.md
+      - name: "VJoyD Minidriver Override"
+        href: vjoyd-minidriver-override.md
+      - name: "Axis Selection"
+        href: axis-selection.md
+    - name: "Force Feedback Device Driver Interface"
+      href: force-feedback-device-driver-interface.md
+    - name: "Extending the DirectInput Game Controller Control Panel"
+      href: extending-the-directinput-game-controller-control-panel.md
+    - name: "DirectInput Kernel-Mode Service Macros"
+      href: directinput-kernel-mode-service-macros.md
+    - name: "DirectInput Messages"
+      href: directinput-messages.md

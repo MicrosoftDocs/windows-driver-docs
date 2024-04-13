@@ -1,0 +1,138 @@
+- name: "What's new in driver development for Windows 11, version 23H2"
+  href: what-s-new-in-driver-development.md
+- name: "New in previous releases"
+  items: 
+  - name: "What's new in driver development for Windows 11, version 22H2"
+    href: driver-changes-for-windows-11-version-22h2.md
+  - name: "What's new in driver development for Windows 11, version 21H2"
+    href: driver-changes-for-windows-11-version-21h2.md
+  - name: "What's new in driver development for Windows Server 2022"
+    href: driver-changes-for-windows-server-2022.md
+  - name: "What's new in driver development for Windows 10, version 2004"
+    href: driver-changes-for-windows-10-version-2004.md
+- name: "Installation and Downloads"
+  items: 
+  - name: "Download the Windows Driver Kit (WDK)"
+    href: download-the-wdk.md
+  - name: "Install the WDK using WinGet"
+    href: install-the-wdk-using-winget.md
+  - name: "Installing preview versions of the WDK"
+    href: installing-preview-versions-wdk.md
+  - name: "Other WDK downloads"
+    href: other-wdk-downloads.md
+  - name: "WDK known issues"
+    href: wdk-known-issues.md
+- name: "Bring up guide"
+  href: bringup/index.md
+- name: "Developing, Testing, and Deploying Drivers"
+  href: develop/index.md
+- name: "Windows Hardware Dev Center Dashboard"
+  href: dashboard/index.yml
+- name: "Device and Driver Installation"
+  href: install/index.md
+- name: "Kernel-Mode Driver Architecture Design Guide"
+  href: kernel/index.md
+- name: "Windows Driver Frameworks"
+  href: wdf/index.md
+- name: "Windows Driver Security"
+  href: driversecurity/index.md
+- name: "Windows Debugging Tools"
+  href: debugger/index.md
+- name: "Debugger commands"
+  href: debuggercmds/index.md  
+- name: "Windows Store Device Apps"
+  href: devapps/index.md
+- name: "Driver Technologies"
+  items: 
+  - name: "Overview of Driver Technologies"
+    href: device-and-driver-technologies.md
+  - name: "3D print devices"
+    href: 3dprint/index.md
+  - name: "ACPI"
+    href: acpi/index.md
+  - name: "Audio"
+    href: audio/index.md
+  - name: "Battery Drivers"
+    href: battery/index.md
+  - name: "Biometric Drivers"
+    href: biometric/index.md
+  - name: "Bluetooth Drivers"
+    href: bluetooth/index.md
+  - name: "Component Firmware Update (CFU)"
+    href: cfu/index.md
+  - name: "Display and graphics drivers"
+    href: display/index.md
+  - name: "Driver Development Tools"
+    href: devtest/index.md
+  - name: "File systems and minifilter drivers"
+    href: ifs/index.md
+  - name: "Getting started with Windows drivers"
+    href: gettingstarted/index.md
+  - name: "GNSS drivers"
+    href: gnss/index.md
+  - name: "GPIO drivers"
+    href: gpio/index.md
+  - name: "Hardware notifications"
+    href: gpiobtn/index.md
+  - name: "HID Drivers"
+    href: hid/index.md
+  - name: "IEEE Drivers"
+    href: ieee/index.md
+  - name: "Imaging device drivers"
+    href: image/index.md
+  - name: "Kernel-mode driver technology"
+    href: kernel/index.md
+  - name: "Mobile broadband"
+    href: mobilebroadband/index.md
+  - name: "Multifunction device drivers"
+    href: multifunction/index.md
+  - name: "NetAdapterCx"
+    href: netcx/index.md
+  - name: "Network drivers"
+    href: network/index.md
+  - name: "NFC device drivers"
+    href: nfc/index.md
+  - name: "Parallel port drivers"
+    href: parports/index.md
+  - name: "Partner application development"
+    href: partnerapps/index.md
+  - name: "PCI drivers"
+    href: pci/index.md
+  - name: "PCMCIA drivers"
+    href: pcmcia/index.md
+  - name: "Point of Service device drivers"
+    href: pos/index.md
+  - name: "Power management technologies"
+    href: powermeter/index.md
+  - name: "Print device drivers"
+    href: print/index.md
+  - name: "SD card bus drivers"
+    href: sd/index.md
+  - name: "Sensor drivers"
+    href: sensors/index.md
+  - name: "Serial port drivers"
+    href: serports/index.md
+  - name: "Smartcard device drivers"
+    href: smartcard/index.md
+  - name: "SPB drivers"
+    href: spb/index.md
+  - name: "Storage device drivers"
+    href: storage/index.md
+  - name: "Storage Firmware Update (SFU)"
+    href: sfu/index.md
+  - name: "Streaming media device drivers"
+    href: stream/index.md
+  - name: "Test Authoring and Execution Framework (TAEF)"
+    href: taef/index.md
+  - name: "Universal Serial Bus (USB)"
+    href: usbcon/index.md
+  - name: "Windows Device Testing Framework (WDTF)"
+    href: wdtf/index.md
+  - name: "Windows Hardware Error Architecture (WHEA)"
+    href: whea/index.md
+  - name: "Windows portable device drivers"
+    href: portable/index.md
+- name: "Windows driver API reference"
+  href: /windows-hardware/drivers/ddi
+- name: "Windows driver samples"
+  href: samples/index.md

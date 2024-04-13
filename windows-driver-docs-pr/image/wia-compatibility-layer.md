@@ -1,0 +1,30 @@
+---
+title: WIA Compatibility Layer
+description: WIA Compatibility Layer
+ms.date: 04/20/2017
+---
+
+# WIA Compatibility Layer
+
+
+The WIA compatibility layer allows the use of legacy applications and devices with Windows Vista.
+
+There are two functions of the WIA compatibility layer:
+
+1.  Mapping of different item tree architectures and properties between legacy applications and Windows Vista drivers and Windows Vista applications and legacy drivers.
+
+2.  Mapping between the Windows Vista, stream-based data transfer model and the legacy TYMED-based model.
+
+This section contains information on the following topics:
+
+[WIA Property Mapping](wia-property-mapping.md)
+
+[WIA Compatibility Layer Data Transfers](wia-compatibility-layer-data-transfers.md)
+
+ 
+
+ 
+
+
+
+

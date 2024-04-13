@@ -1,0 +1,74 @@
+- name: "Simple Peripheral Bus (SPB) Driver"
+# Auto-expanded node
+  items: 
+  - name: "Simple Peripheral Bus (SPB) Driver Design Guide"
+    href: index.md
+  - name: "SPB controller drivers"
+# Auto-expanded node
+    items: 
+    - name: "Overview of SPB controller drivers"
+      href: spb-controller-drivers.md
+    - name: "SPB Framework Extension (SpbCx)"
+      href: spb-framework-extension.md
+    - name: "SpbCx Interfaces"
+      href: spbcx-interfaces.md
+    - name: "SPB I/O Requests"
+      href: spb-ioctls.md
+    - name: "I/O Transfer Sequences"
+      href: i-o-transfer-sequences.md
+    - name: "Handling Client-Implemented Sequences"
+      href: handling-client-implemented-sequences.md
+    - name: "Using the SPB_TRANSFER_LIST Structure for Custom IOCTLs"
+      href: using-the-spb-transfer-list-structure.md
+    - name: "Handling IOCTL_SPB_FULL_DUPLEX Requests"
+      href: handling-ioctl-spb-full-duplex-requests.md
+    - name: "How to Get the Connection Settings for a Device"
+      href: how-to-get-the-connection-settings-for-a-device.md
+    - name: "SpbCx Object Handles"
+      href: spbcx-object-handles.md
+  - name: "SPB peripheral device drivers"
+# Auto-expanded node
+    items: 
+    - name: "Overview of SPB peripheral device drivers"
+      href: spb-peripheral-device-drivers.md
+    - name: "Using the SPB I/O Request Interface"
+      href: using-the-spb-i-o-request-interface.md
+    - name: "Connection IDs for SPB-Connected Peripheral Devices"
+      href: connection-ids-for-spb-connected-peripheral-devices.md
+    - name: "SPB Device Stacks"
+      href: spb-device-stacks.md
+    - name: "Interrupts from SPB-Connected Peripheral Devices"
+      href: interrupts-from-spb-connected-peripheral-devices.md
+    - name: "Hardware Resources for Kernel-Mode SPB Peripheral Drivers"
+      href: hardware-resources-for-kernel-mode-spb-peripheral-drivers.md
+    - name: "Hardware Resources for User-Mode SPB Peripheral Drivers"
+      href: hardware-resources-for-user-mode-spb-peripheral-drivers.md
+    - name: "Full-Duplex I/O Requests"
+      href: full-duplex-i-o-requests.md
+    - name: "Atomic Bus Operations"
+      href: atomic-bus-operations.md
+    - name: "SPB Connection Locks"
+      href: spb-connection-locks.md
+  - name: "Test with Multi Interface Test Tool (MITT)"
+# Auto-expanded node
+    items: 
+    - name: "Buy hardware for using MITT"
+      href: multi-interface-test-tool--mitt--.md
+    - name: "Download the MITT software package"
+      href: download-the-mitt-software-package.md
+    - name: "Get started with MITT"
+      href: get-started-with-mitt---.md
+    - name: "Audio playback fidelity tests in MITT"
+      href: audio-playback-fidelity-tests-in-mitt.md
+    - name: "Capacitive touch tests in MITT"
+      href: capacitive-touch-tests-in-mitt.md
+    - name: "GPIO tests in MITT"
+      href: gpio-tests-in-mitt.md
+    - name: "I2C controller tests in MITT"
+      href: run-mitt-tests-for-an-i2c-controller-.md
+    - name: "SPI tests in MITT"
+      href: spi-tests-in-mitt.md
+    - name: "UART tests in MITT"
+      href: uart-tests-in-mitt.md
+- name: "PWM driver for an on-SoC PWM module"
+  href: pulse-width-controller-driver.md
