@@ -1,38 +1,36 @@
 ---
 title: INF DDInstall.COM section
 description: The DDInstall.COM section contains one or more INF AddComServer directives that reference additional INF-writer-defined sections in an INF file.
-ms.date: 06/05/2023
+ms.date: 04/15/2024
 ---
 
 # INF DDInstall.COM section
 
-Each per-Models DDInstall.COM section contains one or more [INF AddComServer directives](inf-addcomserver-directive.md) that reference additional INF-writer-defined sections in an INF file. This section is supported for Windows 11 version `<TBD>` and later.
+Each per-Models DDInstall.COM section contains one or more [INF AddComServer directives](inf-addcomserver-directive.md) that reference additional INF-writer-defined sections in an INF file. This section is supported for Windows 11 version 24H2 and later.
 
 ```inf
 [install-section-name.COM] |
 [install-section-name.nt.COM] |
-[install-section-name.ntarm.COM] |
-[install-section-name.ntarm64.COM] |
 [install-section-name.ntamd64.COM]
 
-AddComServer = [com-server-name], [flags], com-server-install-section
+AddComServer = com-server-name, [flags], com-server-install-section
 [Include=filename.inf[,filename2.inf]...]
-[Needs=inf-section-name[,inf-section-name]...] 
+[Needs=inf-section-name[,inf-section-name]...]
 ```
 
 At least one *AddComServer* directive is required to register COM servers.
 
 ## Entries
 
-**AddComServer**=*com-server-name,flags,com-server-install-section*
+**AddComServer**=com-server-name,flags,*com-server-install-section*
 
 This directive references an INF-writer-defined com-server-install-section elsewhere in the INF file. This can be used one or more times to register multiple COM servers. For more information see, [INF AddComServer directive](inf-addcomserver-directive.md) and for COM servers in general, see [COM Clients and Servers](/windows/win32/com/com-clients-and-servers)
 
-**Include**=*filename.inf[,filename2.inf]*
+**Include**=filename.inf[,filename2.inf]...
 
 This optional entry specifies one or more additional system-supplied INF files that contain sections needed to install this device. If this entry is specified, a **Needs** entry is also usually required.
 
-**Needs**=*inf-section-name[,inf-section-name]*
+**Needs**=inf-section-name[,inf-section-name]...
 
 This optional entry specifies the section that must be processed during the installation of this device. Typically, the section is a DDInstall.COM section within a system-supplied INF file that is listed in an Include entry. However, it can be any section that is referenced within a DDInstall.COM section.
 
@@ -50,19 +48,19 @@ For more information about how to use the system-defined .nt, .ntia64, .ntamd64,
 
 ```inf
 [Device_Install.COM]
-AddComServer   = VendorComServer,, VendorComServer_Inst
+AddComServer   = VendorComServer,, VendorComServer_Inst
 
 [VendorComServer_Inst]
-ServerType     = 1 ; in-proc
-ServerBinary   = %13%\Vendor_ComServer.dll
-Description    = %Vendor_ComServer_Desc%
-AddComClass    = VendorComClass, {bb2b85ab-9473-42e5-8d1a-0f01d3879879},, Vendor_ComClass_Inst
+ServerType     = 1 ; in-proc
+ServerBinary   = %13%\Vendor_ComServer.dll
+AddComClass    = {bb2b85ab-9473-42e5-8d1a-0f01d3879879},, Vendor_ComClass_Inst
 
 [Vendor_ComClass_Inst]
+Description    = %Vendor_ComClass_Desc%
 ThreadingModel = Neutral
 
 [Strings]
-%Vendor_ComServer_Desc%="Vendor Com Server"
+%Vendor_ComClass_Desc%="Vendor Com Server"
 ```
 
 ## See also
