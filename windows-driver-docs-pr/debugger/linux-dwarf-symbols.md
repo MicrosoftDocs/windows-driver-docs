@@ -17,7 +17,7 @@ General information on DebugInfoD is available here:
 
 - [DebugInfoD servers](https://sourceware.org/elfutils/Debuginfod.html)
 
-- [Ubuntu Debuginfod](https://ubuntu.com/server/docs/debuginfod)
+- [Ubuntu About debuginfod](https://ubuntu.com/server/docs/about-debuginfod)
 
 The `DebugInfoD*` tag can point to one or more DebugInfoD servers with each server URL formatted as `https://domain.com` and separated by `*`. The servers will be searched in the same order as listed in the source path and the files will be retrieved from the first matching URL.
 

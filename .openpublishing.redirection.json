@@ -14845,6 +14845,11 @@
             "source_path":  "windows-driver-docs-pr/debuggercmds/-ks-dhdr.md",
             "redirect_URL":  "/windows-hardware/drivers/debuggercmds/kernel-mode-extensions",
             "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/audio/legacy-audio-interfaces.md",
+            "redirect_URL":  "/windows-hardware/audio/driver-support-for-legacy-audio-interfaces",
+            "redirect_document_id":  false
         }
     ]
 }
