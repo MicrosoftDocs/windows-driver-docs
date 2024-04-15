@@ -1,17 +1,17 @@
 ---
 title: INF AddComClass directive
 description: An AddComClass directive is used within a com-server-install-section and registers a COM class.
-ms.date: 06/05/2023
+ms.date: 04/15/2024
 ---
 
 # INF AddComClass directive
 
-An AddComClass is used within a com-server-install-section and registers a COM class. A COM server must define one or more classes. This section is supported for Windows 11 version `<TBD>` and later.
+An AddComClass is used within a com-server-install-section and registers a COM class. A COM server must define one or more classes. This section is supported for Windows 11 version 24H2 and later.
 
 ```inf
 [com-server-install-section]
 
-AddComClass = [com-class-name], {clsid-guid}[, flags[, com-class-install-section]]
+AddComClass = {clsid-guid}[, flags[, com-class-install-section]]
 ```
 
 ## Entries
@@ -22,7 +22,7 @@ Specifies the name of the COM class being installed. If this value is not passed
 
 ### clsid-guid
 
-Specifies the GUID value that identifies the COM class. This can be expressed as an explicit GUID value of the form {nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn} or as a %strkey% token defined to {nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn} in a Strings section of the INF file. 
+Specifies the GUID value that identifies the COM class. This can be expressed as an explicit GUID value of the form {nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn} or as a %strkey% token defined to {nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn} in a Strings section of the INF file.
 
 ### flags
 
@@ -43,6 +43,7 @@ An AddComClass directive can refer a named com-class-install-section elsewhere i
 ```inf
 [com-class-install-section]
 
+[Description    = COM-class-description]
 [ThreadingModel = threading-model-enum]
 ```
 
@@ -58,26 +59,26 @@ Threading model is optional and defines what threading model COM server supports
 | Neutral | Neutral apartment |
 
 > [!NOTE]
-> If threading model is not specified, the server is loaded into the first apartment that was initialized in the process.  For more information see, InProcServer32
+> If threading model is not specified, the server is loaded into the first apartment that was initialized in the process.  For more information see, [InProcServer32](/windows/win32/com/inprocserver32).
 
 ## Example
 
 ```inf
 [Device_Install.COM]
-AddComServer   = VendorComServer,, VendorComServer_Inst
+AddComServer   = VendorComServer,, VendorComServer_Inst
 
 [VendorComServer_Inst]
-ServerType     = 1 ; in-proc
-ServerBinary   = %13%\Vendor_ComServer.dll
-Description    = %Vendor_ComServer_Desc%
-AddComClass    = VendorComClass, {bb2b85ab-9473-42e5-8d1a-0f01d3879879}
-AddComClass    = VendorComClassWithThreadingModel, {f1baf99b-d28a-4ea3-b652-355da082d260}, Vendor_ComClass_WithThreadingModel_Inst
+ServerType     = 1 ; in-proc
+ServerBinary   = %13%\Vendor_ComServer.dll
+AddComClass    = {bb2b85ab-9473-42e5-8d1a-0f01d3879879}
+AddComClass    = {f1baf99b-d28a-4ea3-b652-355da082d260}, 0, Vendor_ComClass_WithThreadingModel_Inst
 
 [Vendor_ComClass_WithThreadingModel_Inst]
+Description    = %Vendor_ComClass_Desc%
 ThreadingModel = Both
 
 [Strings]
-%Vendor_ComServer_Desc%="Vendor COM server"
+%Vendor_ComClass_Desc%="Vendor COM class"
 ```
 
 ## See also

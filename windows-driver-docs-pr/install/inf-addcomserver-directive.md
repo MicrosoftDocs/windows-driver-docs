@@ -1,17 +1,17 @@
 ---
 title: INF AddComServer directive
 description: An AddComServer directive is used within a DDInstall.COM section and registers a COM server.
-ms.date: 06/05/2023
+ms.date: 04/15/2024
 ---
 
 # INF AddComServer directive
 
-An AddComServer directive is used within a DDInstall.COM section and registers a COM server. One or more COM servers must be defined in a DDInstall.COM section. This section is supported for Windows 11 version `<TBD>` and later.
+An AddComServer directive is used within a DDInstall.COM section and registers a COM server. One or more COM servers must be defined in a DDInstall.COM section. This section is supported for Windows 11 version 24H2 and later.
 
 ```inf
 [DDInstall.COM]
 
-AddComServer = [com-server-name], [flags], com-server-install-section
+AddComServer = com-server-name, [flags], com-server-install-section
 ```
 
 ## Entries
@@ -43,12 +43,10 @@ An *AddComServer* directive must reference a named com-server-install-section el
 ```inf
 [com-server-install-section]
 
-ServerType            = server-type-enum
-ServerBinary          = binary-path
-[ServerBinaryWow64    = wow64-binary-path]
-[ServerBinaryArmWow64 = wow64-arm-binary-path]
-[Description          = description]
-AddComClass           = com-class-name, {clsid-guid}[, flags[, com-class-install-section]]
+ServerType            = 0x1
+ServerBinary          = binary-path
+[ServerBinaryWow64    = wow64-binary-path]
+AddComClass           = {clsid-guid}[, flags[, com-class-install-section]]
 ```
 
 Each *com-server-install-section* must provide **ServerType**, **ServerBinary** and one or more **AddComClass**, each on a separate line.
@@ -82,26 +80,26 @@ Description of the COM server. The description is optional and is not used by th
 **AddComClass**=*com-class-name, {clsid-guid}, flags, com-class-install-section*
 This required directive can be used one or more times to register COM classes with optional install sections.
 
-For more information on how to register COM classes, see INF AddComClass Directive
+For more information on how to register COM classes, see [INF AddComClass Directive](inf-addcomclass-directive.md)
 
 ## Example
 
 ```inf
 [ContosoEncoderServer.NT.COM]
-AddComServer   = ContosoEncoderServer,, ContosoEncoder_ComServer_Inst
+AddComServer   = ContosoEncoderServer,, ContosoEncoder_ComServer_Inst
 
 [ContosoEncoder_ComServer_Inst]
-ServerType     = 1 ; in-proc
-ServerBinary   = %13%\contoso_encoder.dll
-Description    = %ContosoEncoder_ComServer_Desc%
-AddComClass    = ContosoEncoderClass, {bb2b85ab-9473-42e5-8d1a-0f01d3879879}
-AddComClass    = ContosoEncoderControl, {f1baf99b-d28a-4ea3-b652-355da082d260}, 0, ContosoEncoderControl_ComClass_Inst
+ServerType     = 1 ; in-proc
+ServerBinary   = %13%\contoso_encoder.dll
+AddComClass    = {bb2b85ab-9473-42e5-8d1a-0f01d3879879}
+AddComClass    = {f1baf99b-d28a-4ea3-b652-355da082d260}, 0, ContosoEncoderControl_ComClass_Inst
 
 [ContosoEncoderControl_ComClass_Inst]
+Description    = %ContosoEncoder_Comclass_Desc%
 ThreadingModel = Apartment
 
 [Strings]
-%ContosoEncoder_ComServer_Desc%="Contoso H.264 Encoder"
+%ContosoEncoder_Comclass_Desc%="Contoso H.264 Encoder"
 ```
 
 ## See also
