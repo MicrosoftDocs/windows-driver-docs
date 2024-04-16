@@ -59,7 +59,7 @@ Specifies type of COM server that is being registered. Each COM server type has 
 
 | server-type-enum | Server type | Required directives | Optional directives |
 |---|---|---|---|
-| 0x1 | In-proc | <ul><li>ServerBinary</li><li>AddComClass</li></ul> | <ul><li>Description</li><li>ServerBinaryWow64</li><li>ServerBinaryArmWow64</li><li>ThreadingModel</li></ul> |
+| 0x1 | In-proc | <ul><li>ServerBinary</li><li>AddComClass</li></ul> | <ul><li>ServerBinaryWow64</li><li>ThreadingModel</li></ul> |
 
 **ServerBinary**
 
