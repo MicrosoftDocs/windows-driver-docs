@@ -1,7 +1,7 @@
 ---
 title: INF AddComClass directive
 description: An AddComClass directive is used within a com-server-install-section and registers a COM class.
-ms.date: 04/15/2024
+ms.date: 04/16/2024
 ---
 
 # INF AddComClass directive
@@ -22,7 +22,7 @@ Specifies the GUID value that identifies the COM class. This can be expressed as
 
 ### flags
 
-Specifies extra flags for the AddComClass directive. The flags are reserved for future use and should be left blank or set to 0
+Specifies extra flags for the AddComClass directive. The flags are reserved for future use and should be left blank or set to zero.
 
 ### com-class-install-section
 
@@ -30,7 +30,7 @@ References an INF-writer-defined section that contains information for registeri
 
 ## Remarks
 
-The system setup code registers a COM class specified by clsid-guid
+The system setup code registers a COM class specified by clsid-guid.
 
 Each AddComClass directive in an INF-writer-defined COM server install section can reference an INF-writer-defined com-class-install-section elsewhere in the INF file. Each INF-writer-defined section name must be unique within the INF file and must follow the general rules for defining section names. For more information about these rules, see [General Syntax Rules for INF Files](general-syntax-rules-for-inf-files.md).
 
