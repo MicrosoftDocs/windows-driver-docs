@@ -47,7 +47,7 @@ Supplementary CodeQL CLI documentation can be found at [CodeQL Getting Started](
 
 Use this matrix to determine the versions to be downloaded.
 
-| Windows Release          | CodeQL CLI version                                    | microsoft/windows-drivers qlpack version| codeql/cpp-queries version  | Branch to use|
+| Windows Release          | CodeQL CLI version                                    | microsoft/windows-drivers QL pack version| codeql/cpp-queries QL pack version  | Branch to use|
 |--------------------------|-------------------------------------------------------|-----------------------------------------|-----------------------------|--------------|
 | Windows Server 2022      | [2.4.6](https://github.com/github/codeql-cli-binaries/releases/tag/v2.4.6) or [2.15.4](https://github.com/github/codeql-cli-binaries/releases/tag/v2.15.4)|  1.0.13 (If using codeql 2.15.4) | 0.9.0 (If using codeql 2.15.4) | WHCP_21H2 |
 | Windows 11               | [2.4.6](https://github.com/github/codeql-cli-binaries/releases/tag/v2.4.6) or [2.15.4](https://github.com/github/codeql-cli-binaries/releases/tag/v2.15.4)|  1.0.13 (If using codeql 2.15.4) | 0.9.0 (If using codeql 2.15.4) | WHCP_21H2 |
@@ -55,11 +55,11 @@ Use this matrix to determine the versions to be downloaded.
 | Windows 11, version 23H2 | [2.6.3](https://github.com/github/codeql-cli-binaries/releases/tag/v2.6.3) or [2.15.4](https://github.com/github/codeql-cli-binaries/releases/tag/v2.15.4)|  1.0.13 (If using codeql 2.15.4) | 0.9.0 (If using codeql 2.15.4) | WHCP_22H2 |
 | Windows 11, version 24H2 | [2.15.4](https://github.com/github/codeql-cli-binaries/releases/tag/v2.15.4)  |  1.1.0          |        0.9.0                 |  WHCP_24H2  |
 
-A version of the qlpack is not specified for CodeQL CLI 2.4.6 and 2.6.3 because only newer versions of CodeQL support their use.
+A version of the QL pack is not specified for CodeQL CLI 2.4.6 and 2.6.3 because only newer versions of CodeQL support QL packs.
 
 ### For General Use
 
-For general use of CodeQL with other versions of Windows outside of the WHCP program this branch and version would be recommended.
+For general use of CodeQL with other versions of Windows outside of the WHCP program, or for developing and testing queries, we currently recommend the following version and branch:
 
 | CodeQL CLI version                                                           | microsoft/windows-drivers qlpack version | codeql/cpp-queries version | Branch to use |
 |------------------------------------------------------------------------------|------------------------------------------|----------------------------|---------------|
@@ -141,7 +141,7 @@ If using Visual Studio version 17.7 or below **AND** either WHCP_21H2 or WHCP_22
 
 ##### Download the CodeQL query packages
 
-It is no longer necessary to clone the Windows-Driver-Developer-Supplemental-Tools repo to use the queries for certification, CodeQL packages are now used.
+It is no longer necessary to clone the Windows-Driver-Developer-Supplemental-Tools repo to use the queries for certification. CodeQL packages ("QL packs" or "query packs") are now used.
 
 1. Download the correct version of the microsoft/windows-drivers pack from the *Windows Hardware Compatibility Program Release Version Matrix*. Specify the `@<version>` in the command below.
 
@@ -169,14 +169,14 @@ CodeQL will install the downloaded query packs to the default directory:
 
 Do not change this directory or move the installed pack.
 
-##### Download the Windows driver query files
+##### Download the Windows driver query suites
 
-Locate and copy to the local PC the two primary query files.
+Locate and copy to the local PC the two primary query suite files.
 
 - *windows-driver-recommended.qls*
 - *windows-driver-mustfix.qls*
 
-Their contents is shown below in [Queries and Suites](#queries-and-suites) and the two files are located at [https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/suites](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/suites).
+Their contents are shown below in [Queries and Suites](#queries-and-suites); the two files are located at [https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/suites](https://github.com/microsoft/Windows-Driver-Dev.eloper-Supplemental-Tools/tree/main/suites)
 
 ## 2. Build the CodeQL Database
 
@@ -362,7 +362,7 @@ The Static Tools Logo Test parses a [Driver Verification Log (DVL)](../develop/c
 
 Further instructions for the Static Tools Logo HLK Test and guidance on where to place the DVL file can be found in [Running the test](/windows-hardware/test/hlk/testref/6ab6df93-423c-4af6-ad48-8ea1049155ae#running-the-test).
 
-## 6. Visual Studio Post-Build Event (Optional)
+## 7. Visual Studio Post-Build Event (Optional)
 
 If you are building the driver using Visual Studio, you can configure CodeQL queries to run as a post build event.
 
@@ -409,7 +409,7 @@ In this example, a small batch file is created in the target location and called
 
 ## Troubleshooting
 
-If you are certifying with WHCP, the most common issue is version mismatch between HLK version and Windows Release version. Ensure you are using the HLK version associated with the Windows release you are targeting, the associated branch in the Windows Driver Developer Supplemental Tools repository, and the subsequent CodeQL CLI version. For HLK/Windows Release compatibility matrix, see [Windows Hardware Lab Kit](/windows-hardware/test/hlk/) and for Windows Release/Windows Driver Developer Supplemental Tools repo branch/CodeQL CLI version, see the WHCP table in the [CodeQL Setup](#1-codeql-setup) section.
+If you are certifying with WHCP, first ensure you are using the HLK version associated with the Windows release you are targeting, the associated branch in the Windows Driver Developer Supplemental Tools repository, and the subsequent CodeQL CLI version. For HLK/Windows Release compatibility matrix, see [Windows Hardware Lab Kit](/windows-hardware/test/hlk/) and for Windows Release/Windows Driver Developer Supplemental Tools repo branch/CodeQL CLI version, see the WHCP table in the [CodeQL Setup](#1-codeql-setup) section.
 
 ### Errors and Workarounds
 
@@ -431,7 +431,7 @@ The database upgrade command will update a database. Be aware that this is a one
 
 ## Queries and Suites
 
-As part of the [Microsoft CodeQL GitHub repository](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools), we provide two query suites to simplify the end-to-end driver developer workflow. The *windows_driver_recommended.qls* query suite is a superset of all the queries Microsoft has deemed valuable for driver developers. The *windows_driver_mustfix.qls* query suite contains queries deemed **"Must-Fix"** for WHCP certification. Both the Mist-Fix and Recommended query suites are updated regularly.
+As part of the [Microsoft CodeQL GitHub repository](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools), we provide two query suites to simplify the end-to-end driver developer workflow. The *windows_driver_recommended.qls* query suite is a superset of all the queries Microsoft has deemed valuable for driver developers. The *windows_driver_mustfix.qls* query suite contains queries deemed **"Must-Fix"** for WHCP certification, which must be run and passed in order to pass the Static Tools Logo Test. Both the Must-Fix and Recommended query suites are updated regularly.
 
 ### Must-Fix Queries
 
@@ -664,6 +664,12 @@ The motivation for requiring CodeQL to be run on driver source code can be summa
 1. Security of Windows is paramount and requiring CodeQL to be run on driver source code is one step in helping improve the security of components which get certified by Microsoft.
 1. CodeQL queries are actively developed by security engineers at Microsoft, as Microsoft is committed to ensuring that it's hardware ecosystem benefits from the same high-quality tooling that is used at Microsoft.
 
+### What types of drivers do CodeQL and the Static Tools Logo test apply to?
+
+At present, the Static Tools Logo test requires that CodeQL be run and the "Must-Fix" set of queries passed for all kernel-mode drivers excluding graphics drivers.  Note that running CodeQL on graphics drivers is **highly recommended** even though it is not currently required.  Some queries may also find useful defects in user-mode components.
+
+We anticipate extending the test and its queries to require results for graphics drivers, user-mode drivers and driver components, and other driver package components in the future.  If you encounter unexpected behavior or false positives running CodeQL on graphics drivers or user-mode drivers, please file an issue on the [Windows-Driver-Developer-Supplemental-Tools repo](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools).
+
 ### Which license governs the usage of CodeQL for driver developers?
 
 Usage of CodeQL for the purpose of WHCP testing is acceptable under the **[Hardware Lab Kit (HLK)](/windows-hardware/test/hlk/) End User License Agreement**. For WHCP participants, the HLK's EULA overwrites GitHub's CodeQL Terms and Conditions. The HLK EULA states that CodeQL **can be used** during automated analysis, CI or CD, as part of normal engineering processes for the purposes of analyzing drivers to be submitted and certified as part of the WHCP.
@@ -678,7 +684,7 @@ The Static Tools Logo Test in the HLK is the test that enforces this requirement
 
 ### Are all defects reported by CodeQL true defects?
 
-Every CodeQL query has varying levels of precision. Our goal is to minimize false positives, but occasionally they will occur. Our suite of "Must-Fix" queries have been developed and hand-picked for use with the WHCP program because our extensive testing results in nearly 0 false positives. If you are seeing false positives from a query in the set of "Must-Fix" queries, email `stlogohelp@microsoft.com` immediately and we will work to get it resolved as soon as possible.
+Every CodeQL query has varying levels of precision. Our goal is to minimize false positives, but occasionally they will occur. Our suite of "Must-Fix" queries have been developed and hand-picked for use with the WHCP program because our extensive testing results in nearly 0 false positives. If you are seeing false positives from a query in the set of "Must-Fix" queries, email `stlogohelp@microsoft.com` immediately or file an issue on the [Windows-Driver-Developer-Supplemental-Tools repo](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/issues), and we will work to get it resolved as soon as possible.
 
 ### Does a query's classification of either "warning" or "error" matter for the purposes of the Static Tools Logo Test?
 
@@ -694,4 +700,4 @@ As part of the Windows Driver Kit (WDK) and Enterprise WDK (eWDK), Microsoft shi
 
 ### I have comments or questions around how to use CodeQL on my driver, where do I send feedback?
 
-Send feedback and questions to [stlogohelp@microsoft.com](mailto:stlogohelp@microsoft.com).
+Send feedback and questions to [stlogohelp@microsoft.com](mailto:stlogohelp@microsoft.com).  
