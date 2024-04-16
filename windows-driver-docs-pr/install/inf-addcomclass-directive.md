@@ -16,10 +16,6 @@ AddComClass = {clsid-guid}[, flags[, com-class-install-section]]
 
 ## Entries
 
-### com-class-name
-
-Specifies the name of the COM class being installed. If this value is not passed and COM server's description is available, it will be used. This is optional and is not used by the COM runtime.
-
 ### clsid-guid
 
 Specifies the GUID value that identifies the COM class. This can be expressed as an explicit GUID value of the form {nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn} or as a %strkey% token defined to {nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn} in a Strings section of the INF file.
@@ -46,6 +42,10 @@ An AddComClass directive can refer a named com-class-install-section elsewhere i
 [Description    = COM-class-description]
 [ThreadingModel = threading-model-enum]
 ```
+
+### Description
+
+Description is an optional value describing the COM class.
 
 ### ThreadingModel
 
