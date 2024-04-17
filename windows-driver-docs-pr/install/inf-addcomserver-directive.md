@@ -1,7 +1,7 @@
 ---
 title: INF AddComServer directive
 description: An AddComServer directive is used within a DDInstall.COM section and registers a COM server.
-ms.date: 04/16/2024
+ms.date: 04/17/2024
 ---
 
 # INF AddComServer directive
@@ -18,11 +18,11 @@ AddComServer = com-server-name, [flags], com-server-install-section
 
 ### com-server-name
 
-Specifies the name of the COM server being installed. The name is generally the name or description of the COM component being registered. The COM server name must be unique within INF and will be used as the description when the COM class description is missing.
+Specifies the name of the COM server being installed. The name is generally the name or description of the COM component being registered. The COM server name must be unique within the INF and will be used as the description when the COM class description is missing.
 
 ### flags
 
-Specifies extra flags for the AddComServer directive. The flags field is reserved for future use and should left blank or set to zero.
+Specifies extra flags for the AddComServer directive. The flags field is reserved for future use and should be left blank or set to zero.
 
 ### com-server-install-section
 
@@ -43,7 +43,7 @@ An *AddComServer* directive must reference a named com-server-install-section el
 ```inf
 [com-server-install-section]
 
-ServerType            = 0x1
+ServerType            = server-type
 ServerBinary          = binary-path
 [ServerBinaryWow64    = wow64-binary-path]
 AddComClass           = {clsid-guid}[, flags[, com-class-install-section]]

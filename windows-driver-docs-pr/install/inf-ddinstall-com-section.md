@@ -1,7 +1,7 @@
 ---
 title: INF DDInstall.COM section
 description: The DDInstall.COM section contains one or more INF AddComServer directives that reference additional INF-writer-defined sections in an INF file.
-ms.date: 04/15/2024
+ms.date: 04/17/2024
 ---
 
 # INF DDInstall.COM section
@@ -42,7 +42,7 @@ Clients must call **[CoRegisterDeviceCatalog](/windows/win32/api/combaseapi/nf-c
 
 DDInstall.COM section should have the same platform and operating system decorations as their related DDInstall sections. For example, an install-section-name.ntamd64 section would have a corresponding install-section-name.ntamd64.COM section. The specified DDInstall section must be referenced in a device/models-specific entry under the per-manufacturer Models section of the INF file. The case-insensitive extensions to the install-section-name shown in the formal syntax statement can be inserted into such a DDInstall.COM section name in cross-platform INF files.
 
-For more information about how to use the system-defined .nt, .ntia64, .ntamd64, .ntarm, and .ntarm64 extensions, see [Creating INF Files for Multiple Platforms and Operating Systems](creating-inf-files-for-multiple-platforms-and-operating-systems.md).
+For more information about how to use the system-defined .nt, .ntamd64, and .ntarm64 extensions, see [Creating INF Files for Multiple Platforms and Operating Systems](creating-inf-files-for-multiple-platforms-and-operating-systems.md).
 
 ## Examples
 
