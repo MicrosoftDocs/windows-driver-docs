@@ -94,13 +94,13 @@ ClassGUID={e2f84ce7-8efa-411c-aa69-97454ca4cb57}
 Provider=%CONTOSO%
 ExtensionId = {E4FE3A00-68CF-45A3-83C8-8347A6A38069} ; replace with your own GUID
 CatalogFile.NT = SampleExtensionInfForDmftInstallation.cat
-DriverVer=08/28/2017,10.0.17000.2000
+DriverVer=03/28/2024,10.0.25326.2000
 PnpLockdown=1
 
 [Manufacturer]
-%CONTOSO% = ContosoSampleDeviceMFT,ntamd64
+%CONTOSO% = ContosoSampleDeviceMFT,ntamd64.10.0...25326
 
-[ContosoSampleDeviceMFT.ntamd64]
+[ContosoSampleDeviceMFT.ntamd64.10.0...25326]
 %ContosoCamera.DeviceDesc% = ContosoSampleDeviceMFT_Install, usb\vid_xxxx&pid_xxxx&mi_xx  ; replace with your camera device VID PID
 
 [ContosoSampleDeviceMFT_Install]
@@ -114,9 +114,9 @@ AddReg=ContosoSampleDeviceMFT_COM.AddReg
 ;-----------------------------------------------------------------------------------
 
 [ContosoSampleDeviceMFT_COM.AddReg]
-HKCR,CLSID\%SampleDeviceMFT.CLSID%,,,%SampleDeviceMFT.FriendlyName%
-HKCR,CLSID\%SampleDeviceMFT.CLSID%InProcServer32\,,,%%SystemRoot%%\ContosoSampleDeviceMFT.dll
-HKCR,CLSID\%SampleDeviceMFT.CLSID%InProcServer32\,ThreadingModel,,"Both"
+HKR,Classes\CLSID\%SampleDeviceMFT.CLSID%,,,%SampleDeviceMFT.FriendlyName%
+HKR,Classes\CLSID\%SampleDeviceMFT.CLSID%\InProcServer32\,,%REG_EXPAND_SZ%,"%13%\ContosoSampleDeviceMFT.dll"
+HKR,Classes\CLSID\%SampleDeviceMFT.CLSID%\InProcServer32\,ThreadingModel,,"Both"
 
 [ContosoSampleDeviceMFT_Install.Interfaces]
 AddInterface=%KSCATEGORY_VIDEO_CAMERA%,,ContosoSampleDeviceMFT.Interfaces,
@@ -146,8 +146,8 @@ ContosoSampleDeviceMFT.dll=1
 1 = %MediaDescription%
 
 [DestinationDirs]
-ContosoSampleDeviceMFTCopy=11
-DefaultDestDir = 11
+ContosoSampleDeviceMFTCopy=13
+DefaultDestDir = 13
 
 [ContosoSampleDeviceMFTCopy]
 ContosoSampleDeviceMFT.dll
@@ -159,6 +159,7 @@ MediaDescription="Contoso Camera Sample Device MFT Installation Media"
 SampleDeviceMFT.CLSID = "{zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz}" ; replace with your Device MFT COM object's CoClass ID
 SampleDeviceMFT.FriendlyName = "Contoso Camera Device MFT"
 KSCATEGORY_VIDEO_CAMERA="{E5323777-F976-4f5b-9B55-B94699C46E44}"
+REG_EXPAND_SZ=0x00020000
 ```
 
 ## Example frame flow with a UVC device
