@@ -12,6 +12,7 @@ Each per-Models DDInstall.COM section contains one or more [INF AddComServer dir
 [install-section-name.COM] |
 [install-section-name.nt.COM] |
 [install-section-name.ntamd64.COM]
+[install-section-name.ntarm64.COM]
 
 AddComServer = com-server-name, [flags], com-server-install-section
 [Include=filename.inf[,filename2.inf]...]
