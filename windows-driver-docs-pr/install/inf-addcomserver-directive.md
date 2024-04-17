@@ -18,7 +18,7 @@ AddComServer = com-server-name, [flags], com-server-install-section
 
 ### com-server-name
 
-Specifies the name of the COM server being installed. The name is generally the name or description of the COM component being registered. The COM server name must be unique within the INF and will be used as the description when the COM class description is missing.
+Specifies the name of the COM server being installed. The name is generally the name or description of the COM component being registered. The COM server name must be unique within the INF and is used as the description when the COM class description is missing.
 
 ### flags
 
@@ -34,7 +34,7 @@ For more information on the COM server install section, see the following Remark
 
 The *AddComServer* directive causes system setup to register a COM server implemented by a server binary in a driver package's [driver store relative path](../develop/run-from-driver-store.md).
 
-**[CoRegisterDeviceCatalog](/windows/win32/api/combaseapi/nf-combaseapi-coregisterdevicecatalog)** must be called in every process before calling **[CoCreateInstance](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance)** on the COM class. This makes the COM server registrations available in the process for the COM runtime to use.
+**[CoRegisterDeviceCatalog](/windows/win32/api/combaseapi/nf-combaseapi-coregisterdevicecatalog)** must be called in every process before calling **[CoCreateInstance](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance)** on the COM class. Calling **CoRegisterDeviceCatalog** makes the COM server registrations available in the process for the COM runtime to use.
 
 Each *AddComServer* directive in an INF DDInstall.COM section can reference an INF-writer-defined com-server-install-section elsewhere in the INF file. Each INF-writer-defined section name must be unique within the INF file and must follow the general rules for defining section names. For more information about these rules, see [General Syntax Rules for INF Files](general-syntax-rules-for-inf-files.md).
 
@@ -73,7 +73,7 @@ Path to COM server WOW64 binary for non-native x86 architecture support on AMD64
 
 This required directive can be used one or more times to register COM classes with optional install sections.
 
-For more information on how to register COM classes, see [INF AddComClass Directive](inf-addcomclass-directive.md)
+For more information on how to register COM classes, see [INF AddComClass Directive](inf-addcomclass-directive.md).
 
 ## Example
 

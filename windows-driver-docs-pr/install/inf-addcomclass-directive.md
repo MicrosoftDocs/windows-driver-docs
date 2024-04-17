@@ -18,7 +18,7 @@ AddComClass = {clsid-guid}[, flags[, com-class-install-section]]
 
 ### clsid-guid
 
-Specifies the GUID value that identifies the COM class. This can be expressed as an explicit GUID value of the form {nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn} or as a %strkey% token defined to {nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn} in a Strings section of the INF file.
+Specifies the GUID value that identifies the COM class. Use an explicit GUID value of the form {nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn} or a %strkey% token defined to {nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn} in a Strings section of the INF file.
 
 ### flags
 
@@ -26,7 +26,7 @@ Specifies extra flags for the AddComClass directive. The flags are reserved for 
 
 ### com-class-install-section
 
-References an INF-writer-defined section that contains information for registering the COM class. This is an optional field. For more information, see the following Remarks section, and for more information on COM classes in general, see [COM Clients and Servers](/windows/win32/com/com-clients-and-servers).
+References an INF-writer-defined section that contains information for registering the COM class. The *com-class-install-section* field is optional. For more information, see the following Remarks section, and for more information on COM classes in general, see [COM Clients and Servers](/windows/win32/com/com-clients-and-servers).
 
 ## Remarks
 
@@ -59,7 +59,7 @@ Threading model is optional and defines what threading model COM server supports
 | Neutral | Neutral apartment |
 
 > [!NOTE]
-> If threading model is not specified, the server is loaded into the first apartment that was initialized in the process.  For more information see, [InProcServer32](/windows/win32/com/inprocserver32).
+> If threading model is not specified, the server is loaded into the first apartment that was initialized in the process.  For more information, see [InProcServer32](/windows/win32/com/inprocserver32).
 
 ## Example
 
