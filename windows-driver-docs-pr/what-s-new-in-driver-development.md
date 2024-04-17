@@ -1,104 +1,88 @@
 ---
-title: What's new in driver development
-description: This section describes new features for driver development in Windows 11, version 23H2.
-ms.date: 10/24/2023
+title: What's New in Driver Development for Windows 11, Version 24H2
+description: This section describes new features for driver development in Windows 11, version 24H2.
+ms.date: 04/03/2024
 ---
 
-# <a name="top"></a>What's new in driver development for Windows 11, version 23H2
+# <a name="top"></a>What's new in driver development for Windows 11, version 24H2
 
-This section describes new features and updates for driver development in Windows 11, version 23H2. To target this version of Windows, you can use [WDK 10.0.22621.2428](./download-the-wdk.md) (released October 24, 2023).
+This section describes new features and updates for driver development in Windows 11, version 24H2. To target this version of Windows, you can use [WDK xx.x.xxxxx.xxxx](./download-the-wdk.md) (released April 8, 2024).
 
 ## Audio
 
-To allow audio drivers to be more reliable and offer the best possible experience for PC users, the Audio Class eXtension (ACX) is now available. For more information, see [ACX audio class extensions overview](./audio/acx-audio-class-extensions-overview.md)
-
-[Windows 11 APIs for Audio Processing Objects](./audio/windows-11-apis-for-audio-processing-objects.md) provides information on new features designed to improve the quality and reliability of Windows Audio Processing Objects (APOs).
-
 ## Bluetooth Low Energy (LE) Audio
-
-Bluetooth LE Audio enables streaming unicast or broadcast audio to Bluetooth LE devices over an isochronous transport. As of version 5.3 of the Bluetooth core specification, there's no standard defined host controller interface (HCI) for host platforms to send and receive isochronous data to and from the Bluetooth controller. The Windows Bluetooth vendor specific audio path (VSAP) allows platforms to use vendor-specific solutions to enable Bluetooth LE Audio streaming. The VSAP software interface uses Windows audio class extensions (ACX) and more interface properties defined in this document. For more information, see [Bluetooth Low Energy (LE) Audio](./bluetooth/bluetooth-low-energy-audio.md).
 
 ## Camera and streaming media
 
-The camera driver documentation has been updated with information about the camera profile v2 developer specification.
+Three new camera articles for Windows 11, version 24H2 (also applies to Windows 11, version 23H2):
 
-[Camera Profile V2 developer specification](./stream/camera-profile-v2-specification.md)
+- [Camera settings page](./stream/camera-settings-page.md) - Describes the features and operation of the camera settings page in Windows 11, and the default values framework that allows configuration of the camera configuration applied when an application starts the camera.
+
+- [Camera companion apps](./stream/camera-companion-apps.md)
+
+- [Network cameras](./stream/network-cameras.md)
 
 ## Display and graphics drivers
 
-* Windows 11, version 23H2 includes version 1.10 of the Indirect Display Driver (IDD) model. This latest IddCx version adds HDR10 (high dynamic range) and SDR (standard dynamic range) Wide Color Gamut (WCG) support for indirect displays.
+GPUs are increasingly used in artificial intelligence and machine learning scenarios due to their computational power, parallel processing capabilities, and efficient handling of large datasets. Several new features are added to Windows Display Driver Model (WDDM) version 3.2 as optimizations to GPU/NPU usage, especially in cloud-based scenarios.
 
-  [Updates for IddCx versions 1.10 and later](./display/iddcx1.10-updates.md)
+- [Dirty bit tracking](./display/dirty-bit-tracking.md) enhances the performance of VRAM data transfer between physical hosts during the live migration of virtual machines.
 
-* WDDM 3.0 and later drivers can support DisplayPort monitors connected over USB4.
+- [Live migration of heterogeneous GPU-P compute devices](./display/live-migration-on-gpup-devices.md) has been added. Significant content can now be transferred while virtualized resources are still active, reducing the pause time needed to complete a migration.
 
-  [WDDM support for DisplayPort monitors over USB4](./display/supporting-usb4.md)
+- A [GPU native fence synchronization object](./display/native-gpu-fence-objects.md) is added as an extension to the monitored fence object, supporting the following additional features:
 
-* WDDM 3.0 and later drivers can support the Hardware flip queue feature.
+  - GPU wait on monitored fence value, which allows for high performance engine-to-engine synchronization without requiring CPU round trips.
+  - Conditional interrupt notification only for GPU fence signals that have CPU waiters, enabling substantial power savings.
+  - Fence value storage in the GPU's local memory.
 
-  [Hardware flip queue](./display/hardware-flip-queue.md)
+Other added WDDM 3.2 features:
+
+- The method that a user-mode or kernel-mode graphics driver uses to determine whether a particular WDDM feature is enabled has been updated. For more information, see [Querying WDDM feature support and enablement](./display/querying-wddm-feature-support-and-enablement.md).
+
+- TDR (timeout detection and recovery) debugging has been enhanced to provide more information about the cause of a TDR event. For more information, see [TDR debuggability improvements](./display/tdr-debuggability-improvements.md).
 
 ## Dynamic lighting
 
-Dynamic Lighting provides Windows users and developers with native control of lighting devices implementing the open HID LampArray standard. By adopting an open standard, and by working with our OEM and ODM partners, Microsoft seeks to improve the RGB device and software ecosystem for users by increasing interoperability of devices and apps. Device manufacturers can use standardized firmware for the first time, enabling new native experiences across the Windows OS and apps without the high costs of proprietary firmware and software development.
-
-Examples of experiences include synchronizing devices from different brands together in Windows Settings, applying effects intelligently across available devices, and leveraging app integrations to drive device lighting. For the first time, device manufacturers are empowered to focus purely on innovation and differentiation because their devices will be able to take advantage of a myriad of OS and app experiences. For more information, see [Dynamic Lighting devices](/windows-hardware/design/component-guidelines/dynamic-lighting-devices)
-
 ## File system and filter drivers
 
-* Flags were added to support [Dev Drive](/windows/dev-drive/). A minifilter driver receives these flags via its [**PFLT_INSTANCE_SETUP_CALLBACK**](/windows-hardware/drivers/ddi/fltkernel/nc-fltkernel-pflt_instance_setup_callback) routine.
+- Starting in Windows 11, version 24H2, [bind links](/windows/win32/bindlink/) can be used to bind a file system namespace to a local "virtual path" through the Bind Filter (*bindflt.sys*). Minifilters can choose to veto such bind links on the system's boot partition. For more information, see [Vetoing a bind link](./ifs/vetoing-a-bind-link.md).
 
-* [Minifilter guidance for file system placeholders](./ifs/placeholders_guidance.md) was added.
+- *FltMgr* now provides [Query on Create support for USN and file security information](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltrequestsecurityinfooncreatecompletion).
 
 ## Human presence sensors
 
-With the release of Windows 11, Microsoft now natively supports the presence sensing feature set in Windows. For Windows 11 PCs that have a presence sensor built in, users can have their screen turn off automatically when they leave (see [Lock on leave](/windows-hardware/design/device-experiences/sensors-presence-lock-on-leave)), and then have their device wake up quickly when they approach (see [Wake on approach](/windows-hardware/design/device-experiences/sensors-presence-wake-on-approach)). This can help keep their PC more secure, help save battery power, and help users get back to work more quickly. For more information, see [Presence Sensing](/windows-hardware/design/device-experiences/sensors-presence-sensing).
+## Network drivers
 
-## Print devices
+Starting in Windows 11, version 24H2, you can write a [User-Mode Driver Framework (UMDF) NetAdapterCx](netcx/user-mode-netcx.md) driver. The UMDF APIs in NetAdapterCx align with the KMDF versions, so you can convert your KMDF-based client driver to UMDF with little to no code changes.
 
-The print driver documentation has been updated with information on the end of servicing plan for third-party printer drivers on Windows.
+UDP Receive Segment Coalescing Offload (URO) is a new hardware offload feature that enables network interface cards (NICs) to coalesce UDP receive segments.  For more information, see [UDP Receive Segment Coalescing Offload (URO)](network/udp-rsc-offload.md) and [NetAdapterCx URO](netcx/rsc-offload.md).
 
-[End of servicing plan for third-party printer drivers on Windows](./print/end-of-servicing-plan-for-third-party-printer-drivers-on-windows.md)
+## Kernel
+
+Four new *wdm.h* power management DDIs for Windows 11, version 24H2:
+
+- **[PO_EFFECTIVE_POWER_MODE_CALLBACK](/windows-hardware/drivers/ddi/wdm/nc-wdm-po_effective_power_mode_callback)** callback function - Invoked with the current value of the power setting immediately after registration.
+
+- **[PO_EFFECTIVE_POWER_MODE](/windows-hardware/drivers/ddi/wdm/ne-wdm-po_effective_power_mode)** enumeration - Enumerates the effective power modes.
+
+- **[PoRegisterForEffectivePowerModeNotifications](/windows-hardware/drivers/ddi/wdm/nf-wdm-poregisterforeffectivepowermodenotifications)** function - Registers a callback to receive effective power mode change notifications.
+
+- **[PoUnregisterFromEffectivePowerModeNotifications](/windows-hardware/drivers/ddi/wdm/nf-wdm-pounregisterfromeffectivepowermodenotifications)** function - Unregisters from effective power mode change notifications.
 
 ## Storage drivers
 
-* StorNVMe [command set support](./storage/stornvme-command-set-support.md) and [feature support](./storage/stornvme-feature-support.md) has been updated.
+A storport miniport driver can now read configuration data from more locations within the registry. For more information, see **[StorPortReadRegistryKey](/windows-hardware/drivers/ddi/storport/nf-storport-storportreadregistrykey)** and **[StorPortReadDriverRegistry](/windows-hardware/drivers/ddi/storport/nf-storport-storportreaddriverregistry)**.
 
-* StorPort miniport drivers can now [acquire and release](/windows-hardware/drivers/ddi/storport/nf-storport-storportacquirespinlockex) spin locks.
+Stornvme supports more vendor-specific NVMe features and log pages. For more information, see the *[StorageAdapterProtocolSpecificPropertyEx](/windows-hardware/drivers/ddi/ntddstor/ne-ntddstor-storage_property_id)*, *[StorageDeviceProtocolSpecificPropertyEx](/windows-hardware/drivers/ddi/ntddstor/ne-ntddstor-storage_property_id)*, *[NVMeDataTypeLogPageEx](/windows-hardware/drivers/ddi/ntddstor/ne-ntddstor-_storage_protocol_nvme_data_type)*, and *[NVMeDataTypeFeatureEx](/windows-hardware/drivers/ddi/ntddstor/ne-ntddstor-_storage_protocol_nvme_data_type)* enum values. The [ntddstor.h](/windows-hardware/drivers/ddi/ntddstor/) header file contains usage guidance for these new property identifiers and data types as well as their associated input and output structures.
 
 ## USB
 
-Starting in Windows 11 build 22621.1778 (KB5026446), the Windows Settings app now lists attached USB4 hubs and devices and their capabilities. For USB4-capable systems, navigate in the Settings app to **Bluetooth & devices** > **USB** > **USB4 Hubs and Devices**. For more information, see [Universal Serial Bus 4 (USB4™) settings enablement](/windows-hardware/design/component-guidelines/usb4-settings-enablement).
-
-Starting in Windows 11, version 22H2 September Update, the Windows UCM-UCSI ACPI device drivers support UCSI specification version 2.0 and 2.1. The UCSI specification 2.0 has breaking changes in the memory mapping of its data structures as defined in [UCSI specification Table 3-1 Data Structures](https://www.intel.com/content/www/us/en/products/docs/io/universal-serial-bus/usb-type-c-ucsi-spec.html). To maintain backward compatibility, Windows requires the UCSI PPM of specification version 2.0 or greater to implement a _DSM function under the UCM-UCSI ACPI device in ACPI firmware and return a nonzero value to indicate that UCSI OPM should follow the reported UCSI specification version. For more information, see [UCM-UCSI ACPI device for UCSI 2.0 and greater](usbcon/ucsi.md#ucm-ucsi-acpi-device-for-ucsi-20-and-greater).
-
 ## Getting started
-
-[From Sample Code to Production Driver - What to Change in the Samples](./gettingstarted/from-sample-code-to-production-driver.md) describes changes that need to be made to the WDK sample drivers before releasing device drivers based on the sample code.
 
 ## Driver security  
 
-A new topic provides important driver security guidance – [Windows drivers security best practices for driver developers](./driversecurity/driver-security-dev-best-practices.md). Updates to the Semmle CodeQL rules and new information on the Microsoft Vulnerable and Malicious Driver Reporting Center as well as an updated [Driver security checklist](./driversecurity/driver-security-checklist.md).
-
 ## Windows debugging tools
-
-Formerly released as WinDbg Preview in the Microsoft Store, WinDbg leverages the same underlying engine as WinDbg (Classic) and supports all the same commands, extensions, and workflows. For more information, see [What is WinDbg?](./debuggercmds/windbg-overview.md)
-
-Expanded bug check information including new bug checks described in [Bug Check Code Reference](./debugger/bug-check-code-reference2.md) such as [Bug Check 0x1DE: BUGCODE_WIFIADAPTER_DRIVER](./debugger/bug-check-0x1de--bugcode-wifiadapter-driver.md).
-
-Use the new [Time Travel Debugging - TTD.exe command line utility](./debuggercmds/time-travel-debugging-ttd-exe-command-line-util.md) to capture time travel code execution traces.
-
-The new TaskManager live dump feature built into Windows, is described in [Task Manager live memory dump](./debugger/task-manager-live-dump.md)
-
-New [Source Code Extended Access](./debugger/source-code-extended-access.md) DebugInfoD topic that is now available in the debugger. This supports file retrieval from DebugInfoD servers through the `DebugInfoD*` tag.
-
-[Debugger 2PF KDNET Support](./network/debugger-2pf-kdnet-support.md) describes how to enable your miniport NDIS driver for 2PF debugger support to allow increased performance for high speed adapters, often used in data centers.
-
-Three new EXDI debugging topics including [Setting Up QEMU Kernel-Mode Debugging using EXDI](./debugger/setting-up-qemu-kernel-mode-debugging-using-exdi.md).
-
-Published [Supported Ethernet NICs for Network Kernel Debugging in Windows 11](./debugger/supported-ethernet-nics-for-network-kernel-debugging-in-windows-11.md) with updated information on NICs.
-
-The AppVerifier docs formerly only available in a local “CHM” file are now available online. [Application Verifier](./devtest/application-verifier.md) (AppVerifier) is a runtime verification tool for unmanaged code that assists in finding subtle programming errors, security issues and limited user account privilege problems that can be difficult to identify with normal application testing techniques.
 
 ## Related Topics
 
