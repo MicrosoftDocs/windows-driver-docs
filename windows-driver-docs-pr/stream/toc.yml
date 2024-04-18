@@ -1659,8 +1659,6 @@
       href: ksproperty-cameracontrol-perframesetting-clear.md
     - name: "KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_SET"
       href: ksproperty-cameracontrol-perframesetting-set.md
-    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_FRAMERATE_THROTTLE"
-      href: ksproperty-cameracontrol-extended-framerate-throttle.md
   - name: "PROPSETID_VIDCAP_CROSSBAR"
 # Auto-expanded node
     items: 
