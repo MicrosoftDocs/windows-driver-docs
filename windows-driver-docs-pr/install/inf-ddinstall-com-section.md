@@ -1,7 +1,7 @@
 ---
 title: INF DDInstall.COM section
 description: The DDInstall.COM section contains one or more INF AddComServer directives that reference other INF-writer-defined sections in an INF file.
-ms.date: 04/17/2024
+ms.date: 04/18/2024
 ---
 
 # INF DDInstall.COM section
@@ -11,7 +11,7 @@ Each per-Models DDInstall.COM section contains one or more [INF AddComServer dir
 ```inf
 [install-section-name.COM] |
 [install-section-name.nt.COM] |
-[install-section-name.ntamd64.COM]
+[install-section-name.ntamd64.COM] |
 [install-section-name.ntarm64.COM]
 
 AddComServer = com-server-name, [flags], com-server-install-section

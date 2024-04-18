@@ -1,7 +1,7 @@
 ---
 title: Reg2inf
 description: Reg2inf is a tool that converts registry keys to make a driver package universal.
-ms.date: 04/17/2024
+ms.date: 04/18/2024
 ---
 
 # Reg2inf
@@ -22,7 +22,7 @@ reg2inf.exe [/downlevel]  [/key <path> | /dll <filename>] [/targetkey <path>]
 
 - `/downlevel`
 
-  Ignores DDInstall.COM syntax style and prints the output only through AddReg directives. Should be used only for Windows 11 versions older than Windows 11 version 24H2.
+  Ignores DDInstall.COM syntax style and prints the output only through AddReg directives. This option should be used only for INF sections that target OS versions older than Windows 11 version 24H2.
 
 - `/key <registry key path>`
 
@@ -30,7 +30,7 @@ reg2inf.exe [/downlevel]  [/key <path> | /dll <filename>] [/targetkey <path>]
 
 - `/dll <module filename>`
 
-  Process a COM DLL module that implements DllRegisterServer entrypoint, typically called by regsvr32 or legacy INF RegisterDlls directive in order to register COM class under HKEY_CLASSES_ROOT, for example: reg2inf /dll %SystemRoot%\System32\fabkobj.dll
+  Process a COM DLL module that implements the DllRegisterServer entrypoint, typically called by regsvr32.exe or a legacy INF RegisterDlls directive in order to register a COM class under HKEY_CLASSES_ROOT, for example: reg2inf /dll %SystemRoot%\System32\fabkobj.dll
 
 - `/targetkey <registry key path>`
 
