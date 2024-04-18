@@ -7,7 +7,7 @@ ms.date: 04/09/2024
 
 # Driver Package Executable Evaluation Rules
 
-In the interest of ensuring quality and reliablility of auido drivers shipped to Windows users, there are policies for evaluating executables in driver packages.
+In the interest of ensuring quality and reliability of audio drivers shipped to Windows users, there are policies for evaluating executables in driver packages.
 
 Executable files (.sys, .exe, .dll, .cpl) that are included as part of a driver package model need to include version numbering so that bugs and fixes and be tracked and verfied.
 
