@@ -17,21 +17,24 @@ While Reg2inf attempts to generate a COM registration, it may not capture the fu
 This section lists the command line options for Reg2inf.
 
 ``` cmd
-USAGE: reg2inf.exe [/downlevel]  [/key <path> | /dll <filename>] [/targetkey <path>]
-
-/downlevel
-    Ignores DDInstall.COM syntax style and prints the output only through AddReg directives. Should be used only for Windows 11 versions older than Windows 11 version 24H2.
-
-/key <registry key path>
-    Process a specific registry key, for example: reg2inf /key HKEY_LOCAL_MACHINE\SOFTWARE\Fabrikam
-
-/dll <module filename>
-    Process a COM DLL module that implements DllRegisterServer entrypoint, typically called by regsvr32 or legacy INF RegisterDlls directive in order to register COM class under HKEY_CLASSES_ROOT, for example: reg2inf /dll %SystemRoot%\System32\fabkobj.dll
-
-/targetkey <registry key path>
-    Remap target registry key to be under a different base key path, for example: reg2inf /key HKLM\SYSTEM\Temp /targetkey HKR\Parameters
-
+reg2inf.exe [/downlevel]  [/key <path> | /dll <filename>] [/targetkey <path>]
 ```
+
+- `/downlevel`
+
+  Ignores DDInstall.COM syntax style and prints the output only through AddReg directives. Should be used only for Windows 11 versions older than Windows 11 version 24H2.
+
+- `/key <registry key path>`
+
+  Process a specific registry key, for example: reg2inf /key HKEY_LOCAL_MACHINE\SOFTWARE\Fabrikam
+
+- `/dll <module filename>`
+
+  Process a COM DLL module that implements DllRegisterServer entrypoint, typically called by regsvr32 or legacy INF RegisterDlls directive in order to register COM class under HKEY_CLASSES_ROOT, for example: reg2inf /dll %SystemRoot%\System32\fabkobj.dll
+
+- `/targetkey <registry key path>`
+
+  Remap target registry key to be under a different base key path, for example: reg2inf /key HKLM\SYSTEM\Temp /targetkey HKR\Parameters
 
 > [!NOTE]
 > Reg2inf requires that the full path length must not exceed 259 characters.
@@ -40,7 +43,7 @@ USAGE: reg2inf.exe [/downlevel]  [/key <path> | /dll <filename>] [/targetkey <pa
 
 The following snippet shows how to register a simple COM class using INF DDInstall.COM syntax, as produced by Reg2inf *without* the `/downlevel` parameter:
 
-``` inf
+```inf
 [SimpleCom.COM]
 AddComServer = COM_Server,,SimpleCom_Install
 
