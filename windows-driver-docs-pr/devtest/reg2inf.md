@@ -1,7 +1,7 @@
 ---
 title: Reg2inf
 description: Reg2inf is a tool that converts registry keys to make a driver package universal.
-ms.date: 07/25/2023
+ms.date: 04/17/2024
 ---
 
 # Reg2inf
@@ -20,7 +20,7 @@ This section lists the command line options for Reg2inf.
 USAGE: reg2inf.exe [/downlevel]  [/key <path> | /dll <filename>] [/targetkey <path>]
 
 /downlevel
-    Ignores DDInstall.COM syntax style and prints the output only through AddReg directives. Should be used only for Windows 11 version older than <TBD>
+    Ignores DDInstall.COM syntax style and prints the output only through AddReg directives. Should be used only for Windows 11 versions older than Windows 11 version 24H2.
 
 /key <registry key path>
     Process a specific registry key, for example: reg2inf /key HKEY_LOCAL_MACHINE\SOFTWARE\Fabrikam
