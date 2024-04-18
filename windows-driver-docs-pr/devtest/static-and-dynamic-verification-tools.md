@@ -11,13 +11,17 @@ ms.date: 02/17/2022
 
 There are two basic types of verification tools:
 
--   **Static verification tools** examine the driver code without running the driver. Because these tools do not rely on tests that exercise the code, they can be extremely thorough. Theoretically, static verification tools can examine all of the driver code, including code paths that are rarely executed in practice. However, because the driver is not actually running, they could generate false-positive results. That is, they might report an error in a code path that might not occur in practice.
+- **Static verification tools** examine the driver code without running the driver. Because these tools do not rely on tests that exercise the code, they can be extremely thorough. Theoretically, static verification tools can examine all of the driver code, including code paths that are rarely executed in practice. However, because the driver is not actually running, they could generate false-positive results. That is, they might report an error in a code path that might not occur in practice.
 
--   **Dynamic verification tools** examine the driver code while the driver is running, typically by intercepting calls to commonly used driver support routines and substituting calls to their own error-checking versions of the same routines. Because the driver is actually running while the dynamic tools are doing the verification, false-positive results are rare. However, because the dynamic tools detect only the actions that occur while they are monitoring the driver, the tools can miss certain driver defects if the driver test coverage is not adequate. At the same time, by using information available at run time, for example, information that is harder to extract statically from the source code, dynamic verification tools can detect certain classes of driver errors that are harder to detect with static analysis tools.
+-  **Dynamic verification tools** examine the driver code while the driver is running, typically by intercepting calls to commonly used driver support routines and substituting calls to their own error-checking versions of the same routines. Because the driver is actually running while the dynamic tools are doing the verification, false-positive results are rare. However, because the dynamic tools detect only the actions that occur while they are monitoring the driver, the tools can miss certain driver defects if the driver test coverage is not adequate. At the same time, by using information available at run time, for example, information that is harder to extract statically from the source code, dynamic verification tools can detect certain classes of driver errors that are harder to detect with static analysis tools.
 
 The best practice is to use a combination of static and dynamic verification tools. Static tools allow you to check code paths that are difficult to exercise in practice, while the dynamic tools find serious errors that are occurring in the driver.
 
- ## Survey of Verification Tools
+> [!IMPORTANT]
+> Windows Hardware Compatibility Program requires CodeQL for Static Tool Logo (STL) Tests on our Client and Server Operating Systems. We will continue to maintain support for SDV and CA on older products.  Partners are highly encouraged to review the CodeQL requirements for the [Static Tool Logo Test](/windows-hardware/test/hlk/testref/6ab6df93-423c-4af6-ad48-8ea1049155ae).
+> For more information about using CodeQL, see [CodeQL and the Static Tools Logo Test](static-tools-and-codeql.md).
+
+## Survey of Verification Tools
 
 The following verification tools are described in the WDK and recommended for use by driver developers and testers. They are listed in the order in which they are typically used.
 
@@ -52,5 +56,3 @@ Use the following dynamic verification tools as soon as the driver is built and 
   - **DDI Compliance Checking.** (Available starting with Windows 8) Driver Verifier applies a set of device driver interface (DDI) rules that check for the proper interaction between a driver and the kernel interface of the operating system. These rules correspond to rules that Static Driver Verifier uses in analyzing driver source code. If Driver Verifier finds an error when DDI Compliance Checking is enabled, run [Static Driver Verifier](static-driver-verifier.md) and select the same rule that caused the error. Static Driver Verifier can help you locate the cause of the defect in the driver source code.
 
 - [Application Verifier](application-verifier.md) is a dynamic verification tool for user-mode applications and drivers written in C/C++. It does not verify managed code.
-
-
