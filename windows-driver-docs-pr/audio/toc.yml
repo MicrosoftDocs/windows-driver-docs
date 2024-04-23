@@ -707,8 +707,6 @@
 - name: "Legacy Audio Interfaces"
 # Auto-expanded node
   items: 
-  - name: "Legacy Audio Interfaces"
-    href: legacy-audio-interfaces.md
   - name: "WavePci Port Driver"
     href: wavepci-port-driver.md
   - name: "WavePci Miniport Driver"

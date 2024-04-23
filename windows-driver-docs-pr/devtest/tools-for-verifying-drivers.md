@@ -17,6 +17,10 @@ These verification tools are described in the WDK documentation and recommended 
 
 For best results, use all of the tools that can run on your driver. If you omit any of these tools, you might miss a serious bug in your driver.
 
+> [!IMPORTANT]
+> Windows Hardware Compatibility Program requires CodeQL for Static Tool Logo (STL) Tests on our Client and Server Operating Systems. We will continue to maintain support for SDV and CA on older products.  Partners are highly encouraged to review the CodeQL requirements for the [Static Tool Logo Test](/windows-hardware/test/hlk/testref/6ab6df93-423c-4af6-ad48-8ea1049155ae).
+> For more information about using CodeQL, see [CodeQL and the Static Tools Logo Test](static-tools-and-codeql.md).
+
 This section begins with a brief discussion of the characteristics of code verification tools and a survey of the tools included in the WDK and in Windows or available from Microsoft.
 
 This section includes:

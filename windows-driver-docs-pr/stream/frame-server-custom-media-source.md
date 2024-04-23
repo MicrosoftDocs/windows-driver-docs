@@ -117,9 +117,9 @@ CatalogFile=SimpleMediaSourceDriver.cat
 PnpLockdown=1
 
 [DestinationDirs]
-DefaultDestDir = 12
-UMDriverCopy=12,UMDF ; copy to drivers\Umdf
-CustomCaptureSourceCopy=11
+DefaultDestDir = 13
+UMDriverCopy=13 ; copy to DriverStore
+CustomCaptureSourceCopy=13
 
 ; ================= Class section =====================
 
@@ -127,7 +127,6 @@ CustomCaptureSourceCopy=11
 Addreg=SimpleMediaSourceClassReg
 
 [SimpleMediaSourceClassReg]
-
 HKR,,,0,%ClassName%
 HKR,,Icon,,-24
 
@@ -143,18 +142,20 @@ SimpleMediaSource.dll = 1,,
 ;*****************************************
 
 [Manufacturer]
-%StdMfg%=Standard,NT$ARCH$
+%StdMfg%=Standard,NTamd64.10.0...25326
 
-[Standard.NT$ARCH$]
-%SimpleMediaSource.DeviceDesc%=SimpleMediaSource, root\SimpleMediaSource
+[Standard.NTamd64.10.0...25326]
+%SimpleMediaSource.DeviceDesc%=SimpleMediaSourceWin11, root\SimpleMediaSource
+
 
 ;---------------- copy files
-
-[SimpleMediaSource.NT]
+[SimpleMediaSourceWin11.NT]
+Include=wudfrd.inf
+Needs=WUDFRD.NT
 CopyFiles=UMDriverCopy, CustomCaptureSourceCopy
 AddReg = CustomCaptureSource.ComRegistration
 
-[SimpleMediaSource.NT.Interfaces]
+[SimpleMediaSourceWin11.NT.Interfaces]
 AddInterface = %KSCATEGORY_VIDEO_CAMERA%, %CustomCaptureSource.ReferenceString%, CustomCaptureSourceInterface
 AddInterface = %KSCATEGORY_VIDEO%, %CustomCaptureSource.ReferenceString%, CustomCaptureSourceInterface
 AddInterface = %KSCATEGORY_CAPTURE%, %CustomCaptureSource.ReferenceString%, CustomCaptureSourceInterface
@@ -168,9 +169,9 @@ HKR,,CustomCaptureSourceClsid,,%CustomCaptureSource.CLSID%
 HKR,,FriendlyName,,%CustomCaptureSource.Desc%
 
 [CustomCaptureSource.ComRegistration]
-HKCR,CLSID\%CustomCaptureSource.CLSID%,,,%CustomCaptureSource.Desc%
-HKCR,CLSID\%CustomCaptureSource.CLSID%\InprocServer32,,%REG_EXPAND_SZ%,%CustomCaptureSource.Location%
-HKCR,CLSID\%CustomCaptureSource.CLSID%\InprocServer32,ThreadingModel,,Both
+HKR,Classes\CLSID\%CustomCaptureSource.CLSID%,,,%CustomCaptureSource.Desc%
+HKR,Classes\CLSID\%CustomCaptureSource.CLSID%\InprocServer32,,%REG_EXPAND_SZ%,%CustomCaptureSource.Location%
+HKR,Classes\CLSID\%CustomCaptureSource.CLSID%\InprocServer32,ThreadingModel,,Both
 
 [UMDriverCopy]
 SimpleMediaSourceDriver.dll,,,0x00004000 ; COPYFLG_IN_USE_RENAME
@@ -179,24 +180,18 @@ SimpleMediaSourceDriver.dll,,,0x00004000 ; COPYFLG_IN_USE_RENAME
 SimpleMediaSource.dll,,,0x00004000 ; COPYFLG_IN_USE_RENAME
 
 ;-------------- Service installation
-[SimpleMediaSource.NT.Services]
-AddService=WUDFRd,0x000001fa,WUDFRD_ServiceInstall
-
-[WUDFRD_ServiceInstall]
-DisplayName = %WudfRdDisplayName%
-ServiceType = 1
-StartType = 3
-ErrorControl = 1
-ServiceBinary = %12%\WUDFRd.sys
+[SimpleMediaSourceWin11.NT.Services]
+Include=wudfrd.inf
+Needs=WUDFRD.NT.Services
 
 ;-------------- WDF specific section -------------
-[SimpleMediaSource.NT.Wdf]
+[SimpleMediaSourceWin11.NT.Wdf]
 UmdfService=SimpleMediaSource, SimpleMediaSource_Install
 UmdfServiceOrder=SimpleMediaSource
 
 [SimpleMediaSource_Install]
 UmdfLibraryVersion=$UMDFVERSION$
-ServiceBinary=%12%\UMDF\SimpleMediaSourceDriver.dll
+ServiceBinary=%13%\SimpleMediaSourceDriver.dll
 
 [Strings]
 ProviderString = "Microsoft Corporation"
@@ -212,7 +207,7 @@ ProxyVCap.CLSID="{17CCA71B-ECD7-11D0-B908-00A0C9223196}"
 CustomCaptureSource.Desc = "SimpleMediaSource Source"
 CustomCaptureSource.ReferenceString = "CustomCameraSource"
 CustomCaptureSource.CLSID = "{9812588D-5CE9-4E4C-ABC1-049138D10DCE}"
-CustomCaptureSource.Location = "%SystemRoot%\System32\SimpleMediaSource.dll"
+CustomCaptureSource.Location = "%13%\SimpleMediaSource.dll"
 CustomCaptureSource.Binary = "SimpleMediaSource.dll"
 REG_EXPAND_SZ = 0x00020000
 ```

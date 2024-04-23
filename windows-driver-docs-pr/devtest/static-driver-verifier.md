@@ -16,6 +16,10 @@ ms.date: 06/14/2019
 
 Static Driver Verifier (also known as "StaticDV" or "SDV") is a static verification tool that systematically analyzes the source code of Windows kernel-mode drivers. SDV is a compile time tool that is capable of discovering defects and design issues in a driver. Based on a set of interface rules and a model of the operating system, SDV determines whether the driver correctly interacts with the Windows operating system kernel.
 
+> [!IMPORTANT]
+> Windows Hardware Compatibility Program requires CodeQL for Static Tool Logo (STL) Tests on our Client and Server Operating Systems. We will continue to maintain support for SDV and CA on older products.  Partners are highly encouraged to review the CodeQL requirements for the [Static Tool Logo Test](/windows-hardware/test/hlk/testref/6ab6df93-423c-4af6-ad48-8ea1049155ae).
+> For more information about using CodeQL, see [CodeQL and the Static Tools Logo Test](static-tools-and-codeql.md).
+
 ## Installing Static Driver Verifier
 
 Static Driver Verifier is available as part of the [Windows Driver Kit (WDK)](../download-the-wdk.md) in both the full WDK experience and in the standalone Enterprise WDK.  In addition, the Visual C++ Redistributable Packages for Visual Studio are required for SDV to run. See the following:
