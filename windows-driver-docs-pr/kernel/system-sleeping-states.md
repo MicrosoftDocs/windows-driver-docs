@@ -7,6 +7,9 @@ ms.date: 03/18/2022
 
 # System Sleeping States
 
+> [!NOTE]
+> For information about Modern Standby, see [What is Modern Standby](/windows-hardware/design/device-experiences/modern-standby).
+
 States S1, S2, S3, and S4 are the sleeping states. A system in one of these states is not performing any computational tasks and appears to be off. Unlike a system in the shutdown state (S5), however, a sleeping system retains memory state, either in RAM or on disk, as specified for each power state below in **System hardware context** sections. The operating system need not be rebooted to return the computer to the working state.
 
 Some devices can wake the system from a sleeping state when certain events occur. In addition, on some computers, an external indicator tells the user that the system is merely sleeping.
