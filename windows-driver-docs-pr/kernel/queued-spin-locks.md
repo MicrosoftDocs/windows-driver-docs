@@ -25,7 +25,7 @@ Benefits of using a queued spin lock include:
 
 Below is a simplified code snippet demonstrating the described operations with a queued spin lock in a Windows Kernel Mode Driver. This example shows how to declare and initialize a spin lock using [**KeInitializeSpinLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keinitializespinlock), then acquire and release the lock using [**KeAcquireInStackQueuedSpinLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keacquireinstackqueuedspinlock) and [**KeReleaseInStackQueuedSpinLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kereleaseinstackqueuedspinlock), respectively.
 
-'''cpp
+```cpp
 KSPIN_LOCK SpinLock;  
 KLOCK_QUEUE_HANDLE LockHandle;  
 
@@ -45,7 +45,7 @@ KeAcquireInStackQueuedSpinLock(&SpinLock, &LockHandle);
 
 // Release the queued spin lock  
 KeReleaseInStackQueuedSpinLock(&LockHandle);  
-'''
+```
 
 The driver allocates a [**KLOCK\_QUEUE\_HANDLE**](./eprocess.md) structure that it passes by pointer to **KeAcquireInStackQueuedSpinLock**. The driver passes the same structure by pointer to **KeReleaseInStackQueuedSpinLock** when it releases the spin lock.
 
