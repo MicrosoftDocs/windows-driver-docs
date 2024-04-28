@@ -18,7 +18,7 @@ class MS_SM_AdapterInformationQuery
     string  InstanceName;
     boolean Active;
 
-    [Description ("Unique identifier for the adapter. This idenitifer must "
+    [Description ("Unique identifier for the adapter. This identifier must "
                   "be unique among all adapters. The same "
                   "value for the identifier must be used for the same adapter "
                   "in other classes that expose adapter information"),

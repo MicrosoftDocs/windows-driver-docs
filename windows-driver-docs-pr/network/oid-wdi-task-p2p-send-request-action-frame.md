@@ -80,7 +80,7 @@ The WDI interface itself is unchanged and continues to use units of milliseconds
 <td><a href="/windows-hardware/drivers/network/wdi-tlv-p2p-provision-discovery-request-info" data-raw-source="[&lt;strong&gt;WDI_TLV_P2P_PROVISION_ DISCOVERY_REQUEST_INFO&lt;/strong&gt;](./wdi-tlv-p2p-provision-discovery-request-info.md)"><strong>WDI_TLV_P2P_PROVISION_ DISCOVERY_REQUEST_INFO</strong></a></td>
 <td></td>
 <td>X</td>
-<td>Provision Discovery Request Parameters. The port shall only examine this structure if wfdRequestFrameType is an Provision Discovery request.</td>
+<td>Provision Discovery Request Parameters. The port shall only examine this structure if wfdRequestFrameType is a Provision Discovery request.</td>
 </tr>
 <tr class="odd">
 <td><a href="/windows-hardware/drivers/network/wdi-tlv-bss-entry" data-raw-source="[&lt;strong&gt;WDI_TLV_BSS_ENTRY&lt;/strong&gt;](./wdi-tlv-bss-entry.md)"><strong>WDI_TLV_BSS_ENTRY</strong></a></td>

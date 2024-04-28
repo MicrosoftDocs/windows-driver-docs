@@ -21,7 +21,7 @@ The Physical Function (PF) is a PCI Express (PCIe) function of a network adapter
 
 The PF supports the SR-IOV Extended Capability structure in its PCIe configuration space. This structure is defined in the [PCI-SIG Single Root I/O Virtualization and Sharing 1.1 specification](https://pcisig.com/specifications/iov/single_root/).
 
-The debugger transport will take advantage of multiple or 2PF enabled miniport drivers. To allow debugging of systems of high speed servers, it is recommended that NIC vendors enable 2PF in all NICs that support multiple PF in the the network card firmware.
+The debugger transport will take advantage of multiple or 2PF enabled miniport drivers. To allow debugging of systems of high speed servers, it is recommended that NIC vendors enable 2PF in all NICs that support multiple PF in the network card firmware.
 
 For information on configuring 2PF support to test a connection, see [Setting Up 2PF Kernel-Mode Debugging using KDNET](../debugger/setting-up-kernel-mode-debugging-using-2pf.md).
 

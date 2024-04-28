@@ -24,7 +24,7 @@ Consider a device that has the following lists of [device identification strings
 
 The first hardware ID in a list of hardware IDs is the most specific identifier for the device. In this example, that is HwID_1.
 
-Also assume there is an [driver package](driver-packages.md) INF file that has an [**INF *Models* section**](inf-models-section.md) that has the following entry, where the INF_*XXX_N* names are placeholders for actual hardware IDs and compatible IDs:
+Also assume there is a [driver package](driver-packages.md) INF file that has an [**INF *Models* section**](inf-models-section.md) that has the following entry, where the INF_*XXX_N* names are placeholders for actual hardware IDs and compatible IDs:
 
 ```cpp
 DeviceDesc1 = InstallSection1, INF_HwID_1, INF_CID_1, INF_CID_2

@@ -17,7 +17,7 @@ Choosing between WMI v1 and WMI v2:
 - Providers can utilize better Error/Eventing in WMI v2.
 - Providers can utilize PowerShell extensions and integration in WMI v2.
 
-Although you could write a SMP using WMI v1, it is highly recommended to write a WMI v2 provider using C/C++. We do not recommend using .NET Frameworkfor SMP development because some important functionality may not be available through the .NET platform.
+Although you could write a SMP using WMI v1, it is highly recommended to write a WMI v2 provider using C/C++. We do not recommend using .NET Framework for SMP development because some important functionality may not be available through the .NET platform.
 
 ## Development Resource Checklist
 

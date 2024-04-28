@@ -105,7 +105,7 @@ The following is a list of TX operations and offloads.
 </tr>
 <tr class="even">
 <td align="left"><p>Retry</p></td>
-<td align="left"><p>Retransmit MPDUs that are nacked or not acked by the recipient.</p></td>
+<td align="left"><p>Retransmit MPDUs that are acked or not acked by the recipient.</p></td>
 <td align="left"><p>Target</p></td>
 <td align="left"></td>
 </tr>

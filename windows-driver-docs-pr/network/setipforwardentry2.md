@@ -73,7 +73,7 @@ The route metric offset that is specified in the **Metric** member of the MIB\_I
 
 **SetIpForwardEntry2** ignores the **Age** and **Origin** members of the MIB\_IPFORWARD\_ROW2 structure that the *Row* parameter points to. These members are set by the network stack and cannot be changed by using the **SetIpForwardEntry2** function.
 
-The **SetIpForwardEntry2** function fails if the **DestinationPrefix** and **NextHop** members of the MIB\_IPFORWARD\_ROW2 structure that the *Route* parameter points to do not match an an IP route entry on the specified interface.
+The **SetIpForwardEntry2** function fails if the **DestinationPrefix** and **NextHop** members of the MIB\_IPFORWARD\_ROW2 structure that the *Route* parameter points to do not match an IP route entry on the specified interface.
 
 ## Requirements
 

@@ -35,7 +35,7 @@ Once the modem writes any logs to the newly created data channel, the modem call
 
 ## Modem logging data path
 
-Moddem logging uses the MBIM Data Service Stream (DSS) to transfer the data for logging payloads. For more information about DSS, see Section 10.5.38 of the [MBIM 1.0 specification](https://www.usb.org/sites/default/files/MBIM10Errata1_073013.zip). 
+Modem logging uses the MBIM Data Service Stream (DSS) to transfer the data for logging payloads. For more information about DSS, see Section 10.5.38 of the [MBIM 1.0 specification](https://www.usb.org/sites/default/files/MBIM10Errata1_073013.zip). 
 
 When connecting or disconnecting from DSS, the following GUID is used for modem logging:
 

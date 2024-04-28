@@ -1,6 +1,6 @@
 ---
 title: RemoveLockForwardRead2 Rule (WDM)
-description: The RemoveLockForwardRead2 rule verifies that calls to IoAcquireRemoveLock and IoReleaseRemoveLock are used correctly when forwarding a IRP using IoCallDriver to a another device.
+description: The RemoveLockForwardRead2 rule verifies that calls to IoAcquireRemoveLock and IoReleaseRemoveLock are used correctly when forwarding an IRP using IoCallDriver to another device.
 ms.date: 05/21/2018
 keywords: ["RemoveLockForwardRead2 rule (wdm)"]
 topic_type:
@@ -15,7 +15,7 @@ api_type:
 # RemoveLockForwardRead2 rule (wdm)
 
 
-The **RemoveLockForwardRead2** rule verifies that calls to [**IoAcquireRemoveLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioacquireremovelock) and [**IoReleaseRemoveLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioreleaseremovelock) are used correctly when forwarding a IRP using [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) to a another device.
+The **RemoveLockForwardRead2** rule verifies that calls to [**IoAcquireRemoveLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioacquireremovelock) and [**IoReleaseRemoveLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioreleaseremovelock) are used correctly when forwarding an IRP using [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) to another device.
 
 **Driver model: WDM**
 

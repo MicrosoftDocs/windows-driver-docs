@@ -58,7 +58,7 @@ A "dynamic" AcxCircuit can be removed at any time by invalidating and removing t
 
 A "static" AcxCircuit can only be removed when the driver is handling the WDF PrepareHardware/ReleaseHardware callbacks for its FDO device. The lifetime of a "static" circuit is bound to the lifetime of the FDO.
 
-The driver can remove an AcxFactoryCircuit (circuit provider) in its the WDF PrepareHardware/ReleaseHardware callbacks. Removing an AcxFactoryCircuit has the effect of removing all its associated "dynamic" AcxCircuit(s). AcxCircuit(s) can also be removed when the ACX manager tells a circuit factory to remove a specific circuit, or when the ACX manager closes its AcxFactoryCircuit handles - in this scenario ACX closes all the circuits associated with that handle.
+The driver can remove an AcxFactoryCircuit (circuit provider) in its WDF PrepareHardware/ReleaseHardware callbacks. Removing an AcxFactoryCircuit has the effect of removing all its associated "dynamic" AcxCircuit(s). AcxCircuit(s) can also be removed when the ACX manager tells a circuit factory to remove a specific circuit, or when the ACX manager closes its AcxFactoryCircuit handles - in this scenario ACX closes all the circuits associated with that handle.
 
 The [ACX_CIRCUIT_PNPPOWER_CALLBACKS structure](/windows-hardware/drivers/ddi/acxcircuit/ns-acxcircuit-acx_circuit_pnppower_callbacks) describes the following callbacks that can be used by an ACX driver.
 

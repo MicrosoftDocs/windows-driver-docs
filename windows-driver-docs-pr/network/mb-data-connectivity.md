@@ -158,7 +158,7 @@ If one round of attempts has multiple MBB profiles, the order is:
 	-  Slow-pace: 300 seconds
 	-  Glacier-pace: 24 hours (practically no retry)
 
-#### Back-off cancelation or back-off timer expiration
+#### Back-off cancellation or back-off timer expiration
 - Back-off can be cancelled and retry commenced immediately in these situations:
     - Auto-connect hint from WCM
 	- Auto-connect MBB profiles are added or updated

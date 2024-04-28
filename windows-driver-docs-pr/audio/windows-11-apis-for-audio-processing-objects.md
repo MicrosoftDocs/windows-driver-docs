@@ -661,7 +661,7 @@ HRESULT PropertyChangeNotificationClient::StartListeningForPropertyStoreChanges(
     return S_OK;
 }
 
-// Unsubscrbe to event callbacks. Since IAudioSystemEffectsPropertyStore takes a reference on our
+// Unsubscribe to event callbacks. Since IAudioSystemEffectsPropertyStore takes a reference on our
 // PropertyChangeNotificationClient class, it is important that this method is invoked prior to cleanup,
 // to break the circular reference.
 HRESULT PropertyChangeNotificationClient::StopListeningForPropertyStoreChanges()
@@ -1066,7 +1066,7 @@ STDMETHODIMP SampleApo::Initialize(UINT32 cbDataSize, BYTE* pbyData)
 
     if (m_apoLoggingService != nullptr)
     {
-        m_apoLoggingService->ApoLog(APO_LOG_LEVEL_INFO, L"APO Initializion completed");
+        m_apoLoggingService->ApoLog(APO_LOG_LEVEL_INFO, L"APO Initialization completed");
     }
     return S_OK;
 }
@@ -1343,7 +1343,7 @@ SFX (Stream) and MFX (Mode) were referred in Windows 8.1 to LFX (local) and MFX 
 
 Device-specific registration uses HKR instead of HKCR.
    
-The INF file  will need to have the following enties added.
+The INF file  will need to have the following entries added.
 
 ```inf
   HKR,"FX\\0\\%WMALFXGFXAPO_Context%",%PKEY_FX_Association%,,%KSNODETYPE_ANY%

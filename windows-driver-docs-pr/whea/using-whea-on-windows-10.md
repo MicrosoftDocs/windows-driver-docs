@@ -19,7 +19,7 @@ To register with WHEA as an error source using WHEA v2, the driver should do the
 
     To remove an error source at a later time, call [**WheaRemoveErrorSourceDeviceDriver**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-whearemoveerrorsourcedevicedriver).
 
-3. WHEA calls the the driver's [*WHEA_ERROR_SOURCE_INITIALIZE_DEVICE_DRIVER*](/windows-hardware/drivers/ddi/ntddk/nc-ntddk-_whea_error_source_initialize_device_driver) event callback function when the error source is ready to report errors. The driver receives an *ErrorSourceId* as a parameter to the callback.
+3. WHEA calls the driver's [*WHEA_ERROR_SOURCE_INITIALIZE_DEVICE_DRIVER*](/windows-hardware/drivers/ddi/ntddk/nc-ntddk-_whea_error_source_initialize_device_driver) event callback function when the error source is ready to report errors. The driver receives an *ErrorSourceId* as a parameter to the callback.
 
 ## Reporting an Error
 

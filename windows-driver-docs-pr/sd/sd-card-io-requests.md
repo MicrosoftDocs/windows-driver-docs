@@ -6,7 +6,7 @@ ms.date: 03/03/2023
 
 # SD Card I/O Requests
 
-The IOCTLs in this section allow user-mode applications to operate devices in the Secure Digial (SD) card stack. To use the IOCTLs, the caller must first use [**CreateFile**](/windows/win32/api/fileapi/nf-fileapi-createfilea) to get a handle to a device in the SD stack, as shown here, where szDevice points to a NULL-terminated string that references the device.
+The IOCTLs in this section allow user-mode applications to operate devices in the Secure Digital (SD) card stack. To use the IOCTLs, the caller must first use [**CreateFile**](/windows/win32/api/fileapi/nf-fileapi-createfilea) to get a handle to a device in the SD stack, as shown here, where szDevice points to a NULL-terminated string that references the device.
 
 ```cpp
     hVol = CreateFile (szDevice,

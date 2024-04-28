@@ -41,7 +41,7 @@ This diagram illustrates the ACX architecture showing existing user mode apps an
 
 :::image type="content" source="images/audio-acx-architecture-overview.png" alt-text="Diagram illustrating the ACX architecture, showing user and kernel mode with WDF and ACX objects in kernel mode, and audio hardware at the bottom of the stack.":::
 
-### ACX coexistance with existing audio drivers
+### ACX coexistence with existing audio drivers
 
 ACX is designed to co-exist with existing audio drivers, to allow for a flexible migration to new ACX drivers.
 
