@@ -1,7 +1,7 @@
 ---
 title: Microcontroller Commands for MALT
 description: Defines commands between the PC and the microcontroller (Arduino) that is controlling the sensors in the MALT.
-ms.date: 01/11/2024
+ms.date: 04/29/2024
 ---
 
 # Microcontroller commands for MALT
@@ -18,7 +18,7 @@ Adjusts the light level based on the given input.
 
 The [light panel](https://www.superbrightleds.com/catalog/product/view/id/102447/s/12v-led-panel-light-for-vehicles-trailers-1-x1-2-500-lumens-35w-even-glowr-light-fixture-natural-white) used in the reference supports between .25 and 1.3 volts of input.
 
-Using the data sheet for the reference DAC [Microchip MCP4821](https://www.microchip.com/wwwproducts/en/MCP4821), we can solve for the maximum *Vout* to send to the light panel.
+Using the data sheet for the reference DAC [Microchip MCP4821](https://www.microchip.com/en-us/product/MCP4821), we can solve for the maximum *Vout* to send to the light panel.
 
 `1.3 = 2.048 * 1 * (D/(2^12))`
 
