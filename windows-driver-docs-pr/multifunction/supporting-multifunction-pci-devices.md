@@ -25,7 +25,7 @@ Vendors of a PCI multifunction device on an NT-based platform must do the follow
 
 - Provide an INF file for each function of the device.
 
-    The INF files can be the same files that would be used if the functions were packaged as an individual devices. The INF files do not need any special multifunction semantics.
+    The INF files can be the same files that would be used if the functions were packaged as individual devices. The INF files do not need any special multifunction semantics.
 
 For example, the following figure shows the sample device stacks that might be created for a multifunction PCI device with ISDN and modem functions.
 
