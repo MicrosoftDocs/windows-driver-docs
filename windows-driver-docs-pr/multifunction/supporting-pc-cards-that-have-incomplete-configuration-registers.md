@@ -32,7 +32,7 @@ The vendor of such a device must provide the following:
 
 - An INF file for each function of the device. (vendor-supplied)
 
-    The INF files can be the same files that are used when the functions are packaged as an individual devices. The INF files do not need any special multifunction semantics.
+    The INF files can be the same files that are used when the functions are packaged as individual devices. The INF files do not need any special multifunction semantics.
 
 The vendor-supplied custom INF for such a device must specify:
 
