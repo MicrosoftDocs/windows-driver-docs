@@ -39,7 +39,7 @@ Key portions of the device background task in [Custom USB device sample](https:/
 
 1. The `IoSyncBackgroundTask` class implements the `IBackgroundTask` interface required by the Windows background task infrastructure.
 
-1. The `IoSyncBackgroundTask` class obtains the `DeviceUseDetails` instance passed to the class in the `IoSyncBackgroundTask` class's Run method and uses this instance to report progress back to the Microsoft Store app and to register for cancelation events.
+1. The `IoSyncBackgroundTask` class obtains the `DeviceUseDetails` instance passed to the class in the `IoSyncBackgroundTask` class's Run method and uses this instance to report progress back to the Microsoft Store app and to register for cancellation events.
 
 1. The `IoSyncBackgroundTask` class's Run method also calls the private `OpenDevice` and `WriteToDeviceAsync` methods that implement the background device sync code.
 

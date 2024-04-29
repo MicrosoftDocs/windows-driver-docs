@@ -12,7 +12,7 @@ ms.custom: 19H1
 
 Miniport drivers use the **NDIS_STATUS_WWAN_NITZ_INFO** notification to inform the mobile broadband (MB) service about the completion of a previous [OID_WWAN_NITZ](oid-wwan-nitz.md) Query request.
 
-Miniport drivers send this notification as an unsolicited event to provide the current network time and time zone intformation.
+Miniport drivers send this notification as an unsolicited event to provide the current network time and time zone information.
 
 This notification uses the [**NDIS_WWAN_NITZ_INFO**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_nitz_info) structure.
 

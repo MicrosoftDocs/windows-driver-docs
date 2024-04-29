@@ -1,6 +1,6 @@
 ---
 title: Bug Check 0x1EA SECURE_PCI_CONFIG_SPACE_ACCESS_VIOLATION
-description: The SECURE_PCI_CONFIG_SPACE_ACCESS_VIOLATION bug check has a value of 0x000001EA. This indicates that the the access to the PCI config space region from VTL0 by directly mapping the PCI MCFG range is prohibited because secure PCI is enabled.
+description: The SECURE_PCI_CONFIG_SPACE_ACCESS_VIOLATION bug check has a value of 0x000001EA. This indicates that the access to the PCI config space region from VTL0 by directly mapping the PCI MCFG range is prohibited because secure PCI is enabled.
 keywords: ["Bug Check 0x1EA SECURE_PCI_CONFIG_SPACE_ACCESS_VIOLATION", "SECURE_PCI_CONFIG_SPACE_ACCESS_VIOLATION"]
 ms.date: 08/03/2022
 topic_type:

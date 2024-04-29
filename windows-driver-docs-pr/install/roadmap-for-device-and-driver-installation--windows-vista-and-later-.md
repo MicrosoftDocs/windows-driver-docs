@@ -59,6 +59,6 @@ To install a device and driver in the Windows operating system, follow these st
 
 -   Step 7: Distribute your driver package.
 
-    The final step is to distribute the [driver package](driver-packages.md). If your driver package meets the quality standards that are defined in the the [Windows Hardware Compatibility Program](/windows-hardware/design/compatibility/) (for Windows 10/11), or the [Windows Hardware Certification Program](/previous-versions/windows/hardware/hck/jj124227(v=vs.85)) (for Windows 8/8.1 and older operating systems), you can distribute it through Microsoft Windows Update program. For more information, see [Publishing a driver to Windows Update](../dashboard/publish-a-driver-to-windows-update.md).
+    The final step is to distribute the [driver package](driver-packages.md). If your driver package meets the quality standards that are defined in the [Windows Hardware Compatibility Program](/windows-hardware/design/compatibility/) (for Windows 10/11), or the [Windows Hardware Certification Program](/previous-versions/windows/hardware/hck/jj124227(v=vs.85)) (for Windows 8/8.1 and older operating systems), you can distribute it through Microsoft Windows Update program. For more information, see [Publishing a driver to Windows Update](../dashboard/publish-a-driver-to-windows-update.md).
 
 These are the basic steps. Additional steps might be necessary based on the installation needs of your individual device and driver.

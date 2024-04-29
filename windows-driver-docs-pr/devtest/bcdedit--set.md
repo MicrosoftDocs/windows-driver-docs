@@ -359,7 +359,7 @@ Use the **BCDEdit / hypervisorsettings** option to set or display the hypervisor
 Controls whether the hypervisor debugger is enabled.
 
 **hypervisordebugtype** \[ **SERIAL** | **1394** | **NET** \] 
-Can be SERIAL, 1394, or NET. For more infomation, see [BCDEdit /hypervisorsettings](bcdedit--hypervisorsettings.md).
+Can be SERIAL, 1394, or NET. For more information, see [BCDEdit /hypervisorsettings](bcdedit--hypervisorsettings.md).
 
 ## Hypervisor Settings
 

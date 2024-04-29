@@ -66,7 +66,7 @@ If it is set, remove the **WdfDriverInitNoDispatchOverride** flag from the call 
 
 ## Device initialization
 
-Next, you'll distribute code from *MiniportInitializeEx* into the appropriate WDF event callback handlers, several of which are optional. For details on the callback sequence, see [Power-Up Sequence for an Network Adapter WDF Client Driver](power-up-sequence-for-a-netadaptercx-client-driver.md).
+Next, you'll distribute code from *MiniportInitializeEx* into the appropriate WDF event callback handlers, several of which are optional. For details on the callback sequence, see [Power-Up Sequence for a Network Adapter WDF Client Driver](power-up-sequence-for-a-netadaptercx-client-driver.md).
 
 You'll call the methods equivalent to [**NdisMSetMiniportAttributes**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes) when you're starting your net adapter, but before you call [**NetAdapterStart**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapterstart). However, instead of calling one routine with a generic [**NDIS_MINIPORT_ADAPTER_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_attributes) structure, the client driver calls different functions to set different types of capabilities.
 

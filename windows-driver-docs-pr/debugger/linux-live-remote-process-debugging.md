@@ -78,7 +78,7 @@ In this walkthrough, we will connect to WSL running on the same PC, and will use
 
 ### Attach GDBServer to the selected process
 
-On the WSL linux console, enter `gdbserver localhost:1234 python3` to start the gdbserver on port 1234, and attach it to the the python3 process.
+On the WSL linux console, enter `gdbserver localhost:1234 python3` to start the gdbserver on port 1234, and attach it to the python3 process.
 
 ```linux
 USER1@USER1:/mnt/c/Users/USER1$ gdbserver localhost:1234 python3

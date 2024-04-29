@@ -38,7 +38,7 @@ Requested stall state on the specified endpoint. Setting this parameter to **TRU
 
 ## Return values
 
-The function returns one of the the following values:
+The function returns one of the following values:
 
 | Return code | Description |
 |--|--|

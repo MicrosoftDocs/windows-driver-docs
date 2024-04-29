@@ -38,7 +38,7 @@ Use these rules to verify that your driver correctly processes SRB requests.
 </tr>
 <tr class="even">
 <td align="left"><p><a href="storportallocatepool.md" data-raw-source="[&lt;strong&gt;StorPortAllocatePool&lt;/strong&gt;](storportallocatepool.md)"><strong>StorPortAllocatePool</strong></a></p></td>
-<td align="left"><p>This rule verifies that the miniport must not attempt to call <a href="/windows-hardware/drivers/ddi/storport/nf-storport-storportfreepool" data-raw-source="[&lt;strong&gt;StorPortFreePool&lt;/strong&gt;](/windows-hardware/drivers/ddi/storport/nf-storport-storportfreepool)"><strong>StorPortFreePool</strong></a> on an deallocated buffer.</p></td>
+<td align="left"><p>This rule verifies that the miniport must not attempt to call <a href="/windows-hardware/drivers/ddi/storport/nf-storport-storportfreepool" data-raw-source="[&lt;strong&gt;StorPortFreePool&lt;/strong&gt;](/windows-hardware/drivers/ddi/storport/nf-storport-storportfreepool)"><strong>StorPortFreePool</strong></a> on a deallocated buffer.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="storport-storportallocatepool2.md" data-raw-source="[&lt;strong&gt;StorPortAllocatePool2&lt;/strong&gt;](storport-storportallocatepool2.md)"><strong>StorPortAllocatePool2</strong></a></p></td>

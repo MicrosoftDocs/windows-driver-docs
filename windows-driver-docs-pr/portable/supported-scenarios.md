@@ -7,7 +7,7 @@ ms.date: 03/03/2023
 # Supported Scenarios
 
 
-The Windows Portable Devices (WPD) DDI allows you to transfer content to or from a device, browse device contents, control device behavior, and enabe vertical solutions. This section describes each of these scenarios.
+The Windows Portable Devices (WPD) DDI allows you to transfer content to or from a device, browse device contents, control device behavior, and enable vertical solutions. This section describes each of these scenarios.
 
 ## <span id="Content_Transfer"></span><span id="content_transfer"></span><span id="CONTENT_TRANSFER"></span>Content Transfer
 

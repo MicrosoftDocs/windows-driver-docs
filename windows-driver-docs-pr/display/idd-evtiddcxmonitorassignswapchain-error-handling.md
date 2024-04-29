@@ -54,7 +54,7 @@ The simplest way to handle DirectX errors is to propagate them back to the OS so
 This simple approach handles errors triggered by external events, as the OS will stabilize and create a new swapchain (possibly on a new Dxgi adapter). If the driver’s use of DirectX is limited, then this approach works well.
 
 For more complex drivers that might hit DirectX errors caused by bugs in the IDD or for drivers running on old/buggy DirectX drivers, this approach could end in an endless loop of ID swapchain failures. To avoid an endless loop, the IDD could monitor the frequency of these errors and move through stages of recovery when a given stage has hit enough error cycles. If DirectX errors are encountered, it is important that the driver destroy that DX device and create a new one, because once a DX device
-is in a error state it will never recover and needs to be recreated.
+is in an error state it will never recover and needs to be recreated.
 
 | Current stage | Driver action if it detects too many consecutive swapchain DirectX errors |
 | ------------- | ------------------------------------------------------------------------- |
