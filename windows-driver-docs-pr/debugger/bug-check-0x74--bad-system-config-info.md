@@ -98,7 +98,7 @@ Use the [!error](../debuggercmds/-error.md) extension to display information abo
 Error code: (NTSTATUS) 0xc000014c (3221225804) - {The Registry Is Corrupt}  The structure of one of the files that contains Registry data is corrupt, or the image of the file in memory is corrupt, or the file could not be recovered because the alternate copy or log was absent or corrupt.
 ```
 
-Use the [!reg](../debuggercmds/-reg.md) extenstion to display information about the registry, for example the hives present in the registry.
+Use the [!reg](../debuggercmds/-reg.md) extension to display information about the registry, for example the hives present in the registry.
 
 ```dbgcmd
 !reg hivelist

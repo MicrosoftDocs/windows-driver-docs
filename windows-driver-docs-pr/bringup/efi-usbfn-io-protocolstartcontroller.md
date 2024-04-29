@@ -26,7 +26,7 @@ A pointer to the EFI_USBFN_IO_PROTOCOL instance.
 
 ## Return values
 
-The function returns one of the the following values:
+The function returns one of the following values:
 
 | Return code | Description |
 |--|--|

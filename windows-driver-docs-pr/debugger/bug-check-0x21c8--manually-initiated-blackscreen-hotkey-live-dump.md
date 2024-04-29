@@ -1,6 +1,6 @@
 ---
 title: Bug Check 0x21C8 MANUALLY_INITIATED_BLACKSCREEN_HOTKEY_LIVE_DUMP
-description: The MANUALLY_INITIATED_BLACKSCREEN_HOTKEY_LIVE_DUMP live dump has a value of 0x0000021C8. This indicates that the system was configured to capture a live dump and the the user had pressed the black screen hotkey (CTRL + SHIFT + WIN + B).
+description: The MANUALLY_INITIATED_BLACKSCREEN_HOTKEY_LIVE_DUMP live dump has a value of 0x0000021C8. This indicates that the system was configured to capture a live dump and the user had pressed the black screen hotkey (CTRL + SHIFT + WIN + B).
 keywords: ["Bug Check 0x21C8 MANUALLY_INITIATED_BLACKSCREEN_HOTKEY_LIVE_DUMP", "MANUALLY_INITIATED_BLACKSCREEN_HOTKEY_LIVE_DUMP"]
 ms.date: 11/01/2022
 topic_type:

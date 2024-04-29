@@ -1,6 +1,6 @@
 ---
 title: CancelJobResponse Element
-description: The required CancelJobResponse operation element acknowledges a client's job cancelation request.
+description: The required CancelJobResponse operation element acknowledges a client's job cancellation request.
 keywords: ["CancelJobResponse element Imaging Devices"]
 topic_type:
 - apiref
@@ -14,7 +14,7 @@ ms.date: 03/28/2023
 
 # CancelJobResponse element
 
-The required **CancelJobResponse** operation element acknowledges a client's job cancelation request.
+The required **CancelJobResponse** operation element acknowledges a client's job cancellation request.
 
 ## Usage
 

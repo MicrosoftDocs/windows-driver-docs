@@ -26,4 +26,4 @@ Vendors of this type of multifunction device must do the following:
 
 - Provide an INF file for each function of the device.
 
-    The INF files can be the same files that are used when the functions are packaged as a individual devices. The INF files do not need any special multifunction semantics.
+    The INF files can be the same files that are used when the functions are packaged as individual devices. The INF files do not need any special multifunction semantics.

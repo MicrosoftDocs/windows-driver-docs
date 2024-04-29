@@ -14,7 +14,7 @@ When Audio APOs crash at least 10 times consecutively, the Audio service disable
 
 |Attribute|Value|
 |----|----|
-|**Audience**|Windows machiens that have an audio APO|
+|**Audience**|Windows machines that have an audio APO|
 |**Time period**|Each day's failure rate includes APO disablements from the past 7 days|
 |**Machine vs. Instance**|Machine|
 |**Passing criteria**|<=0.1 % of machines have an APO disablement in the past 7 days|

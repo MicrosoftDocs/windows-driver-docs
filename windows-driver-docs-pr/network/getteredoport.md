@@ -60,7 +60,7 @@ If the function fails, **GetTeredoPort** returns one of the following error code
 
 ## Remarks
 
-The **GetTeredoPort** function retrieves the current UDP port number that the Teredo client usesfor the Teredo service port. The Teredo port is dynamic and can change any time that the Teredo client is restarted on the local computer. A driver can register to be notified when the Teredo service port changes by calling the [**NotifyTeredoPortChange**](notifyteredoportchange.md) function.
+The **GetTeredoPort** function retrieves the current UDP port number that the Teredo client uses for the Teredo service port. The Teredo port is dynamic and can change any time that the Teredo client is restarted on the local computer. A driver can register to be notified when the Teredo service port changes by calling the [**NotifyTeredoPortChange**](notifyteredoportchange.md) function.
 
 The Teredo client also uses static UDP port 3544 for listening to multicast traffic that is sent on multicast IPv4 address 224.0.0.253 as defined in RFC 4380. For more information, see [Teredo: Tunneling IPv6 over UDPthrough Network Address Translations (NATs)](https://go.microsoft.com/fwlink/p/?linkid=84066).
 

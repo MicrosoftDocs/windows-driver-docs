@@ -16,7 +16,7 @@ This topic discusses error handling requirements for NFC clients.
 
 - The NFC client driver is responsible for notifying the NFC CX if it encounters errors when performing write requests to the controller. The NFC CX upon receiving the error status will either perform retries, recovery, or enter an error state.
 
-- The NFC client driver can report an error when completing a sequence call. Depending on the current state, the NFC CX will enter recovery or a enter an error state.
+- The NFC client driver can report an error when completing a sequence call. Depending on the current state, the NFC CX will enter recovery or enter an error state.
 
 - When the NFCC encounters a crash, it is expected that it sends a CORE_RESET_NTF to the host. The NFC CX upon receiving the CORE_RESET_NTF will perform the appropriate recovery.
 

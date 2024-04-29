@@ -64,7 +64,7 @@ If a client app uses the KSPROPERTY\_TYPE\_BASICSUPPORT flag when it sends a KSP
 
 When a client app performs the very last write operation to the audio buffer to be processed by the audio driver of an offloaded stream, the audio driver calls the [**SetStreamCurrentWritePositionForLastBuffer**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportstreamaudioenginenode2-setstreamcurrentwritepositionforlastbuffer) method. The **SetStreamCurrentWritePositionForLastBuffer** method indicates the “write position” of the very last buffer in a stream. Note that this last buffer could be only partially filled.
 
-If you develop an audio driver that was not designed to work with the audio port class driver (Portcls), then you have to implement your own property handler for the this new KS property.
+If you develop an audio driver that was not designed to work with the audio port class driver (Portcls), then you have to implement your own property handler for this new KS property.
 
 ## Requirements
 

@@ -556,7 +556,7 @@ HRESULT CDeviceCallback::QueryInterface(REFIID riid, LPVOID* ppvObject)
 }
 ```
 
-The following example code shows how to get data from the buffer returned by **[IUsbTargetPipeContinuousReaderCallbackReadComplete::OnReaderCompletion](/windows-hardware/drivers/ddi/wudfusb/nf-wudfusb-iusbtargetpipecontinuousreadercallbackreadcomplete-onreadercompletion)**. Each time the target pipe object completes a read request successfully, the framework calls **OnReaderCompletion**. The example gets the buffer that containsng data and prints the contents on the debugger output.
+The following example code shows how to get data from the buffer returned by **[IUsbTargetPipeContinuousReaderCallbackReadComplete::OnReaderCompletion](/windows-hardware/drivers/ddi/wudfusb/nf-wudfusb-iusbtargetpipecontinuousreadercallbackreadcomplete-onreadercompletion)**. Each time the target pipe object completes a read request successfully, the framework calls **OnReaderCompletion**. The example gets the buffer that containing data and prints the contents on the debugger output.
 
 ```cpp
  VOID CDeviceCallback::OnReaderCompletion(

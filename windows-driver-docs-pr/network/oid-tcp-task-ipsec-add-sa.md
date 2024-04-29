@@ -23,7 +23,7 @@ The TCP/IP transport can specify an IP protocol in the **Protocol** member to in
 
 An [OFFLOAD_SECURITY_ASSOCIATION](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_offload_security_association) structure specifies a single security association (SA). The OFFLOAD_SECURITY_ASSOCIATION structure is an element in the **SecAssoc** variable-length array. **SecAssoc** contains one or two OFFLOAD_SECURITY_ASSOCIATION structures.
 
-An SA specified for use in processing authentication headers (AH) will have an operation type of **AUTHENTICATE** and will have an **IntegrityAlgo** (integrity algorithm). The SA will not have an a **ConfAlgo** (confidentiality algorithm). In this case, **ConfAlgo** will contain zeros.
+An SA specified for use in processing authentication headers (AH) will have an operation type of **AUTHENTICATE** and will have an **IntegrityAlgo** (integrity algorithm). The SA will not have a **ConfAlgo** (confidentiality algorithm). In this case, **ConfAlgo** will contain zeros.
 
 An SA specified for use in processing encapsulating security payloads (ESPs) will have an operation type of **ENCRYPT** and may have an **IntegrityAlgo** (integrity algorithm) and/or a **ConfAlgo** (confidentiality algorithm).
 

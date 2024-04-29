@@ -29,7 +29,7 @@ NTSTATUS (*ReaderFunction[RDF_CARD_TRACKING])(
 
 ## Return value
 
-This function returnsone of the following NTSTATUS values:
+This function returns one of the following NTSTATUS values:
 
 <table>
 <thead>

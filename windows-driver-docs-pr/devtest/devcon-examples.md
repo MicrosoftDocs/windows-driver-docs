@@ -1206,7 +1206,7 @@ Scanning completed.
 
 ### Example 38: Restart a device
 
-The following command uses the **[DevCon Restart](devcon-restart.md)** operation to restart the loopback adapter on the local computer. The command limits the search to the Net setup class and, within that class, specifies the device instance ID of the loopback adapter, @\'**ROOT\\\*MSLOOP\\0000**. The at character (**@**) identifies the string as an device instance ID. The single quote character (**'**), which requests a literal search, prevents DevCon from interpreting the asterisk in the ID as a wildcard character.
+The following command uses the **[DevCon Restart](devcon-restart.md)** operation to restart the loopback adapter on the local computer. The command limits the search to the Net setup class and, within that class, specifies the device instance ID of the loopback adapter, @\'**ROOT\\\*MSLOOP\\0000**. The at character (**@**) identifies the string as a device instance ID. The single quote character (**'**), which requests a literal search, prevents DevCon from interpreting the asterisk in the ID as a wildcard character.
 
 ```console
 devcon restart =net @'ROOT\*MSLOOP\0000

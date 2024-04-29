@@ -42,7 +42,7 @@ namespace WEX { namespace TestExecution
 } /*namespace TestExecution*/ } /*namespace WEX*/
 ```
 
-In our example, class MyTestResource implements ITestResource COM Interface. In ITestResource.h, you will also find a list of "must-have" properties defined. It should be possible to obtain the GUID for the test resource using GetGuid(..) and the Name, Id and Type of the resource using GetValue(...). If any of this are missing in a TestResource, TAEF will consisder it to be invalid and not maintain it's information.(See "Building the resource list" section that follows).
+In our example, class MyTestResource implements ITestResource COM Interface. In ITestResource.h, you will also find a list of "must-have" properties defined. It should be possible to obtain the GUID for the test resource using GetGuid(..) and the Name, Id and Type of the resource using GetValue(...). If any of this are missing in a TestResource, TAEF will consider it to be invalid and not maintain it's information.(See "Building the resource list" section that follows).
 
 ## <span id="Authoring_for_device_support_-_Specifying_resource_dependent_metadata"></span><span id="authoring_for_device_support_-_specifying_resource_dependent_metadata"></span><span id="AUTHORING_FOR_DEVICE_SUPPORT_-_SPECIFYING_RESOURCE_DEPENDENT_METADATA"></span>Authoring for device support - Specifying resource dependent metadata
 

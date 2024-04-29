@@ -24,7 +24,7 @@ The driver specified a **ContextSizeOverride** value in WDF\_OBJECT\_ATTRIBUTES 
 
 The driver specified an **ExecutionLevel** value in WDF\_OBJECT\_ATTRIBUTES that is not within the valid range of values.
 
-The driver specified an **SynchronizationScope** value in WDF\_OBJECT\_ATTRIBUTES that is not within the valid range of values.
+The driver specified a **SynchronizationScope** value in WDF\_OBJECT\_ATTRIBUTES that is not within the valid range of values.
 
 <a href="" id="status-wdf-parent-assignment-not-allowed"></a>STATUS\_WDF\_PARENT\_ASSIGNMENT\_NOT\_ALLOWED  
 The driver attempted to assign a parent to the object, but the framework does not allow drivers to assign parents to the object type.

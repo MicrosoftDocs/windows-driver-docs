@@ -44,7 +44,7 @@ If the function fails, **CreateUnicastIpAddressEntry** returns one of the follow
 <td><p>An invalid parameter was passed to the function. This error is returned if a <strong>NULL</strong> pointer is passed in the <em>Row</em> parameter, the <strong>Address</strong> member of the <a href="mib-unicastipaddress-row.md"><strong>MIB_UNICASTIPADDRESS_ROW</strong></a> structure that the <em>Row</em> parameter points to was not set to a valid unicast IPv4 or IPv6 address, or both <strong>InterfaceLuid</strong> and <strong>InterfaceIndex</strong> members of the MIB_UNICASTIPADDRESS_ROW structure were unspecified.</p>
 <p>This error is also returned for other errors in the values that are set for members in the MIB_UNICASTIPADDRESS_ROW structure. These errors include the following situations:</p>
 <ul>
-<li><p>The <strong>ValidLifetime</strong> member is less than than the <strong>PreferredLifetime</strong> member.</p></li>
+<li><p>The <strong>ValidLifetime</strong> member is less than the <strong>PreferredLifetime</strong> member.</p></li>
 <li><p>The <strong>PrefixOrigin</strong> member is set to <strong>IpPrefixOriginUnchanged</strong> and the <strong>SuffixOrigin</strong> is not set to IpSuffixOriginUnchanged.</p></li>
 <li><p>The <strong>PrefixOrigin</strong> member is not set to <strong>IpPrefixOriginUnchanged</strong> and the <strong>SuffixOrigin</strong> is set to IpSuffixOriginUnchanged.</p></li>
 <li><p>The <strong>PrefixOrigin</strong> member is not set to a value from the <a href="nl-prefix-origin.md"><strong>NL_PREFIX_ORIGIN</strong></a> enumeration.</p></li>

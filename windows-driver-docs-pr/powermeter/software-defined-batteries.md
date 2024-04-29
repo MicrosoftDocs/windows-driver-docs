@@ -366,7 +366,7 @@ Windows issues this IOCTL with HPMI_BATTERY_UTILIZATION_HINT. Version is set to 
 
 PreserveNonHotSwappableBatteries is set to one of the following values:
 
-- HpmiBoolUnavailable: Set when no battery utilization hint can be provided. As a response, HPMI/Fimware should generally engage the defacto discharge policies.
+- HpmiBoolUnavailable: Set when no battery utilization hint can be provided. As a response, HPMI/Fimware should generally engage the de facto discharge policies.
 - HpmiBoolFalse: Set when Windows determines an opportune time for battery age balancing to occur.
 - HpmiBoolTrue: Set when Windows determines need to conserve the energy stored in the internal batteries.
 

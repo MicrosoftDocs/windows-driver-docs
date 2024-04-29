@@ -82,7 +82,7 @@ The [CopyInf Directive](../install/inf-copyinf-directive.md) can be used to also
 
 Driver packages support a type of driver package INF called an extension INF. This is an INF file that is specifically designed to augment and extend the functionality of a "base" driver package INF. An extension may not supply the function driver for the device, but may otherwise use any other directives or write other settings for a device. During a driver installation, a single base driver package INF is selected using [driver ranking](../install/how-setup-ranks-drivers--windows-vista-and-later-.md) to provide the functionality for the device, then any extension INFs are selected for the device. For more info, see [Using an extension INF file](../install/using-an-extension-inf-file.md).
   
-A common paradigm for utilizing extension driver package INFs is for the the hardware manufacturer to supply the base driver package INF, and for an OEM shipping that part inside a system to create an extension driver package INF that customizes it for that system.
+A common paradigm for utilizing extension driver package INFs is for the hardware manufacturer to supply the base driver package INF, and for an OEM shipping that part inside a system to create an extension driver package INF that customizes it for that system.
 
 ## Installing/orchestrating firmware updates
 
