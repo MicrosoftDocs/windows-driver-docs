@@ -41,7 +41,7 @@ Where:
 - s(4) is the four-character subsystem identifier, as defined by the PCI SIG.
 
 - n(4) is the four-character subsystem vendor identifier, as assigned by PCI-SIG. As specified in [Publishing restrictions](../dashboard/publishing-restrictions.md), 0000 and FFFF are invalid codes for this identifier.
-    - o	(Note: subsystem device identifier defined by PCI-SIG is not used as part of PCI hardware IDs).
+    - (Note: subsystem device identifier defined by PCI-SIG is not used as part of PCI hardware IDs).
 
 - r(2) is the two-character revision number.
 
