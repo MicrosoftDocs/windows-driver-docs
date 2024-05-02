@@ -2,7 +2,7 @@
 title: Linux live remote process debugging
 description: Linux live remote process debugging
 keywords: ["remote debugging, linux, process"]
-ms.date: 03/05/2024
+ms.date: 05/02/2024
 ---
 
 # Linux live remote process debugging
@@ -46,6 +46,7 @@ The examples here use WSL (Windows Subsystem for Linux), but other Linux impleme
 - [How to install Linux on Windows with WSL](/windows/wsl/install)
 - [Set up a WSL development environment](/windows/wsl/setup/environment)
 - [Accessing network applications with WSL](/windows/wsl/networking)
+- [Intune settings for WSL](/windows/wsl/intune)
 
 ### Select the desired process
 
