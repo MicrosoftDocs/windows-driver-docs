@@ -9,6 +9,8 @@ jobs:
   - checkout: self
     persistCredentials: true
   - script: |
+      git config --global user.name "Ted Hudek"
+      git config --global user.email "tedhudek@users.noreply.github.com"
       git checkout main
       git checkout release-copper
       git merge main --no-ff --no-commit
