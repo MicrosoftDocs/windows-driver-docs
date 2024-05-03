@@ -7,7 +7,7 @@ jobs:
     vmImage: 'ubuntu-latest'
   steps:
   - checkout: self
-  - persistCredentials: true
+    persistCredentials: true
   - script: |
       git checkout main
       git checkout release-copper
