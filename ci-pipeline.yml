@@ -1,0 +1,29 @@
+trigger:
+- main
+
+jobs:
+- job: MergeBranches
+  pool:
+    vmImage: 'ubuntu-latest'
+  steps:
+  - checkout: self
+  - script: |
+      git checkout release
+      git merge main --no-ff --no-commit
+      if [ $? -eq 0 ]; then
+        git commit -m "Merged main into release"
+        git push origin release
+        git checkout live
+        git merge main --no-ff --no-commit
+        if [ $? -eq 0 ]; then
+          git commit -m "Merged main into live"
+          git push origin live
+        else
+          echo "Merge conflict when merging main to live"
+          exit 1
+        fi
+      else
+        echo "Merge conflict when merging main to release"
+        exit 1
+      fi
+    displayName: 'Merge main to release, then to live'
