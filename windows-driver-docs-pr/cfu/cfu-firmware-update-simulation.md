@@ -121,11 +121,11 @@ This section provides an example of installing a firmware update on the sample [
 
     ![cfu virtual hid device firmware update installed.](images/install-cfu-virtual-device-firmware-update-3.png)
 
-1. Select the the **CfuVirtualHidDevice Firmware Update** node, then open the **CfuVirtualHidDevice Firmware Update Properties** window, as shown here:
+1. Select the **CfuVirtualHidDevice Firmware Update** node, then open the **CfuVirtualHidDevice Firmware Update Properties** window, as shown here:
 
     ![cfu virtual hid device firmware update properties window.](images/install-cfu-virtual-device-firmware-update-4.png)
 
-1. In the the **CfuVirtualHidDevice Firmware Update Properties** window, select the **Details** tab, then select **Hardware Ids** in the **Property** drop-down list, as shown here:
+1. In the **CfuVirtualHidDevice Firmware Update Properties** window, select the **Details** tab, then select **Hardware Ids** in the **Property** drop-down list, as shown here:
 
     ![hardware ids in property drop down list.](images/install-cfu-virtual-device-firmware-update-5.png)
 

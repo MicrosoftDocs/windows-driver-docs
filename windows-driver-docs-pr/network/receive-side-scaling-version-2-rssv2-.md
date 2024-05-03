@@ -25,7 +25,7 @@ This topic uses the following terms:
 | RSSv2 | The second generation receive side scaling mechanism supported in Windows 10, version 1803 and later, described in this topic. |
 | Scaling entity| The miniport adapter itself in Native RSS mode, or a VPort in RSSv2 mode. |
 | ITE | An indirection table entry (ITE) of a given scaling entity. The total number of ITEs per VPort cannot exceed **NumberOfIndirectionTableEntriesPerNonDefaultPFVPort** or **NumberOfIndirectionTableEntriesForDefaultVPort** in VMQ mode or 128 in the Native RSS case. **NumberOfIndirectionTableEntriesPerNonDefaultPFVPort** and **NumberOfIndirectionTableEntriesForDefaultVPort** are members of the [NDIS_NIC_SWITCH_CAPABILITIES](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_capabilities) structure. |
-| Scaling mode | The per-VPort vmswitch policy that controls how its ITEs are handled at runtime. This can be static (no ITE moves due to load changes) or dyanmic (expansion and coalescing depending on current traffic load). |
+| Scaling mode | The per-VPort vmswitch policy that controls how its ITEs are handled at runtime. This can be static (no ITE moves due to load changes) or dynamic (expansion and coalescing depending on current traffic load). |
 | Queue | An underlying hardware object (queue) that backs an ITE. Depending on the hardware and indirection table, the configuration queue may back multiple ITEs. The total number of queues, including one that is used by the default queue, cannot exceed the preconfigured limit typically set by an administrator. |
 | Default processor | A processor that receives packets for which the hash cannot be calculated. Each VPort has a default processor.
 | Primary processor | A processor specified as the **ProcessorAffinity** member of the [NDIS_NIC_SWITCH_VPORT_PARAMETERS](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_vport_parameters) structure during VPort creation. This processor can be updated at runtime and specifies where VMQ traffic is directed. |
@@ -68,7 +68,7 @@ Each type of NDIS driver, miniport, filter, and protocol, have entry points to s
 
 ### Steering parameters
 
-In RSSv2, different parameters are used to steer traffic to the correct CPU depending on the RSS state (enabled or disabled). When RSS is disabled, only the primary processor is used for directing traffic. When RSS is enabled, both the default processor and all ITEs are used for directing traffic. These *steering parameters* are labele as "active" or "inactive", summarized in the following table:
+In RSSv2, different parameters are used to steer traffic to the correct CPU depending on the RSS state (enabled or disabled). When RSS is disabled, only the primary processor is used for directing traffic. When RSS is enabled, both the default processor and all ITEs are used for directing traffic. These *steering parameters* are labeled as "active" or "inactive", summarized in the following table:
 
 | Steering parameter | RSS disabled | RSS enabled |
 | --- | --- | --- |
@@ -80,7 +80,7 @@ When a steering parameter is in the *active* state, it directs the traffic. From
 
 For example, consider the scenario when software vRSS is already enabled. In this case, the indirection table already exists in the upper layer protocol and is actively used by the upper layer's software spreading code. If, during hardware RSS enablement, all entries start pointing to the primary processor before the updates to *move* the indirection table entries are issued to and executed by the hardware, the primary processor might experience a short jam. If the miniport driver has tracked default processor and ITE information, it can direct traffic to where it is already expected by the upper layer.
 
-Note that while miniport drivers must track all updates to inactive steering parameters, they should defer validation of those parameters until the RSS state change attempts to make these parameters *active*. For example, in the case of software spreading while hardware RSS is disabled, upper layer protocols can use any processor for spreading (including outside the adapter's RSS set). The upper layers ensure that, at the moment of RSS state transition, all *inactive* parameters are valid for the new RSS state. However, the miniport dirver should still validate the parameters and fail the RSS state transition if it discovers that any tracked *inactive* steering parameters are invalid.
+Note that while miniport drivers must track all updates to inactive steering parameters, they should defer validation of those parameters until the RSS state change attempts to make these parameters *active*. For example, in the case of software spreading while hardware RSS is disabled, upper layer protocols can use any processor for spreading (including outside the adapter's RSS set). The upper layers ensure that, at the moment of RSS state transition, all *inactive* parameters are valid for the new RSS state. However, the miniport driver should still validate the parameters and fail the RSS state transition if it discovers that any tracked *inactive* steering parameters are invalid.
 
 ### Initial state and updates to steering parameters
 

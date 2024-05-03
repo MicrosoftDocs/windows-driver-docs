@@ -118,9 +118,9 @@ The following table provides a high-level overview of the *Mobile Plans* project
 |             | Provide ICCIDs to be used for `GetBalance` load test | MO |  |
 |             | Enable mobile operator Production Environment environment in *Mobile Plans* Staging Environment | MSFT | Configuration updates occur on the 1st and 3rd Friday of every month |
 |             | End-to-end experience is functional in MO Production Environment (checkpoint) | MO |  |
-| Validaton | Exit criteria test cases complete | MO |  |
-|           | Verify test case results | MSFT |  |
-|           | Test sign-off (checkpoint) | MSFT |  |
+| Validation | Exit criteria test cases complete | MO |  |
+|            | Verify test case results | MSFT |  |
+|            | Test sign-off (checkpoint) | MSFT |  |
 | Rollout | `GetBalance` API load test | MSFT and MO | 1 week |
 |         | Monitoring and escalation paths in place | MSFT | 1 week |
 |         | Customer support in place | MSFT and MO |  |

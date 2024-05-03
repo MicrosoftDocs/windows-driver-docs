@@ -590,7 +590,7 @@ dtrace:::END
 }
 ```
 
-Save the file as comparequid.d and use the -s option to run the test script, providing the paramter shown below.
+Save the file as comparequid.d and use the -s option to run the test script, providing the parameter shown below.
 
 ```dtrace
 C:\Windows\system32>dtrace -s compareguid.d -c "powercfg /qh scheme_current sub_sleep standbyidle"

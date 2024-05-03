@@ -12,7 +12,7 @@ This topic provides suggestions for how to test your universal sensor driver.
 
 After you successfully [connect your sensor to the Sharks Cove board](connect-your-sensor-to-the-sharks-cove-board.md), and you [write and deploy your universal sensor driver](write-and-deploy-your-universal-sensor-driver.md), you can use the following tool for testing/debugging the universal sensor driver.
 
-- **MALT (Microsoft Ambent Light Tool)**
+- **MALT (Microsoft Ambient Light Tool)**
 
     You can use the MALT tool as a light testing solution. For more info, see [Building a Light Testing Tool](testing-MALT-building-a-light-testing-tool.md).
 

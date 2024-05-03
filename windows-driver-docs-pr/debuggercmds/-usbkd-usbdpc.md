@@ -65,7 +65,7 @@ In the preceding output, `ffffe00001c7df18` is the address of an **\_XDPC\_CONTE
 
 dt USBPORT!_XDPC_CONTEXT ffffe00001c7df18
 
-## XDPC HISTORY (latest at boottom)
+## XDPC HISTORY (latest at bottom)
 
 ##      EVENT                STATE                   NEXT
 

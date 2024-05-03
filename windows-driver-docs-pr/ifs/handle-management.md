@@ -29,7 +29,7 @@ For drivers that use handles created by an application program, the use of these
 
 -   The best practice is to convert the handle to an object pointer by calling [**ObReferenceObjectByHandle**](/windows-hardware/drivers/ddi/wdm/nf-wdm-obreferenceobjectbyhandle), specifying the correct *AccessMode* (usually from Irp-&gt;RequestorMode), *DesiredAccess*, and *ObjectType* parameters, such as IoFileObjectType or ExEventObjectType.
 
--   If a handle must be used directly within a call, it is best to use the Nt variants of functions rather than the Zw variants of functions. This will enforce parameter checking and handle validation by the operating system since the previous mode will be **UserMode** and hence untrusted. Note that parameters passed to Nt functions that are pointers may fail validation if the previous mode is **UserMode**. The Nt and Zw routines return an *IoStatusBlock* parameterwith error information that you should check for errors.
+-   If a handle must be used directly within a call, it is best to use the Nt variants of functions rather than the Zw variants of functions. This will enforce parameter checking and handle validation by the operating system since the previous mode will be **UserMode** and hence untrusted. Note that parameters passed to Nt functions that are pointers may fail validation if the previous mode is **UserMode**. The Nt and Zw routines return an *IoStatusBlock* parameter with error information that you should check for errors.
 
 -   Errors must be appropriately trapped as well using \_\_try and \_\_except as necessary. Many of the cache manager (Cc), memory manager (Mm), and file system runtime library routines (FsRtl) raise an exception when an error occurs.
 

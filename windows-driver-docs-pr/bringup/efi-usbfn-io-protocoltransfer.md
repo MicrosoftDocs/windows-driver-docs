@@ -49,7 +49,7 @@ This buffer is allocated and freed by using the AllocateTransferBuffer and FreeT
 
 ## Return values
 
-The function returns one of the the following values:
+The function returns one of the following values:
 
 | Return code | Description |
 |--|--|

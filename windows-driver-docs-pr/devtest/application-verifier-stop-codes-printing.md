@@ -769,7 +769,7 @@ This verifier stop was caused by a software component that called the print subs
 </ul>
 <p></p>
 <h3>Race detected during closing of IPrintAsyncNotifyChannel</h3>
-<p></p><i>Probable cause</i><p>*** Please report this stop to Microsoft. *** This stop indicates that a notification arrives _during_ the call to CloseChannel. If this condition occurs, it may be imposible for the consumer to correctly release the channel. This stop should not be frequently encountered. It can be prevented by always ensuring a listener is available before a bidirectional channel is created, AND/OR ensuring that no listener can be started before attempting closing a channel that has already sent a notification but not recieved the callback.</p>
+<p></p><i>Probable cause</i><p>*** Please report this stop to Microsoft. *** This stop indicates that a notification arrives _during_ the call to CloseChannel. If this condition occurs, it may be imposible for the consumer to correctly release the channel. This stop should not be frequently encountered. It can be prevented by always ensuring a listener is available before a bidirectional channel is created, AND/OR ensuring that no listener can be started before attempting closing a channel that has already sent a notification but not received the callback.</p>
 <p></p><I>Information displayed by Application Verifier</I><ul>
   <li><b>Format:</b>&nbsp;-&nbsp;In function %s, a call is already in progress on a different thread.  See help for more info.</li>
   <li><b>Parameter 1</b>&nbsp;-&nbsp;IPrintAsyncNotifyChannel interface pointer.</li>

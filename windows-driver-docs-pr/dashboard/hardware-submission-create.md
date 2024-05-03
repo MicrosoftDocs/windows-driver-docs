@@ -34,14 +34,14 @@ All hardware submissions to the dashboard will be processed within 5 business da
 
 1. Select **Submit new hardware**.
 
-    :::image type="content" source="./images/hardware-submission-create/hardware-list.png" alt-text="Screenshot of the the list of submitted hardware list.":::
+    :::image type="content" source="./images/hardware-submission-create/hardware-list.png" alt-text="Screenshot of the list of submitted hardware list.":::
 
 1. In the **Packages and signing properties** section, enter a product name for your driver submission. This name can be used to search for and organize your driver submissions.
 
     >[!NOTE]
     >If you share your driver with another company, they will see this name.
 
-1. Either drag or browse to the **.hlkx/.hckx** file that you want to submit. If you're submitting WLK hardware, you must submit a *.cab* file. To learn how to create a WLK *.cab* file submission, see see [Create a WLK hardware submission package](hardware-submission-wlk.md).
+1. Either drag or browse to the **.hlkx/.hckx** file that you want to submit. If you're submitting WLK hardware, you must submit a *.cab* file. To learn how to create a WLK *.cab* file submission, see [Create a WLK hardware submission package](hardware-submission-wlk.md).
 
    :::image type="content" source="./images/hardware-submission-create/hardware-submit.png" alt-text="Screenshot that shows the new hardware submission form.":::
 

@@ -404,7 +404,7 @@ Windows 10 ranks the enum values for general location in the following priority 
 - Internal
 - Others (treated with the same lowest priority; that is, _nRankGenLoc_ is equal to zero)
 
-Audio drivers report the general location infomation of their endpoints through the KSPROPERTY\_JACK\_DESCRIPTION property. For more information, see [Jack Description Property](jack-description-property.md).
+Audio drivers report the general location information of their endpoints through the KSPROPERTY\_JACK\_DESCRIPTION property. For more information, see [Jack Description Property](jack-description-property.md).
 
 #### Geometric Location
 

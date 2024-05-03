@@ -17,7 +17,7 @@ An I/O status block, which consists of an [**IO\_STATUS\_BLOCK**](/windows-hardw
 
 -   It provides more information about why the service either worked or did not work.
 
-Upon completion of a IRP, the **Status** field indicates whether the drivers that processed the IRP actually satisfied the request or failed the IRP with an error status. The **Information** field supplies the caller with more information about what actually occurred. For example, it contains the number of bytes actually transferred after a read or write operation.
+Upon completion of an IRP, the **Status** field indicates whether the drivers that processed the IRP actually satisfied the request or failed the IRP with an error status. The **Information** field supplies the caller with more information about what actually occurred. For example, it contains the number of bytes actually transferred after a read or write operation.
 
 For more information, see [Setting the I/O Status Block in an IRP](processing-irps-in-a-lowest-level-driver.md#ddk-setting-the-i-o-status-block-in-an-irp-kg).
 

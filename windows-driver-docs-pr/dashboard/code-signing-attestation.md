@@ -136,7 +136,7 @@ To create the CAB file:
 
 1. Select **Submit new hardware**.
 
-    :::image type="content" source="./images/code-signing-attestation/hardware-list.png" alt-text="Screenshot of the the list of submitted hardware.":::
+    :::image type="content" source="./images/code-signing-attestation/hardware-list.png" alt-text="Screenshot of the list of submitted hardware.":::
 
 1. In the **Packages and signing properties** section, enter a product name for your driver submission. This name can be used to search for and organize your driver submissions.
 

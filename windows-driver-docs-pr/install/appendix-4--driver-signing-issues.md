@@ -35,7 +35,7 @@ Where XX...XX is the hash of the certificate you are using for the secondary sig
 
  
 
-Use of SHA1 certificate will be deprecated by Microsoft starting from January 1, 2016. All CA vendors must to issue signing certificates with the SHA256 hash algorithm.
+Use of SHA1 certificate will be deprecated by Microsoft starting from January 1, 2016. All CA vendors must issue signing certificates with the SHA256 hash algorithm.
 
 Windows will stop accepting SHA1 code signing certificates without time stamps after 1 January 2016.
 
