@@ -8,11 +8,11 @@ jobs:
   steps:
   - checkout: self
   - script: |
-      git checkout release
+      git checkout release-copper
       git merge main --no-ff --no-commit
       if [ $? -eq 0 ]; then
         git commit -m "Merged main into release"
-        git push origin release
+        git push origin release-copper
         git checkout live
         git merge main --no-ff --no-commit
         if [ $? -eq 0 ]; then
