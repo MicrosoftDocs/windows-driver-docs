@@ -8,6 +8,7 @@ jobs:
   steps:
   - checkout: self
   - script: |
+      git checkout main
       git checkout release-copper
       git merge main --no-ff --no-commit
       if [ $? -eq 0 ]; then
