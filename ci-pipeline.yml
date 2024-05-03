@@ -8,6 +8,8 @@ jobs:
   steps:
   - checkout: self
   - script: |
+      git config --global user.email "$(Build.RequestedForEmail)"
+      git config --global user.name "$(Build.RequestedFor)"
       git checkout main
       git checkout release-copper
       git merge main --no-ff --no-commit
