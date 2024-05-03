@@ -7,9 +7,8 @@ jobs:
     vmImage: 'ubuntu-latest'
   steps:
   - checkout: self
+  - persistCredentials: true
   - script: |
-      git config --global user.name "Ted Hudek"
-      git config --global user.email "tedhudek@gmail.com"
       git checkout main
       git checkout release-copper
       git merge main --no-ff --no-commit
