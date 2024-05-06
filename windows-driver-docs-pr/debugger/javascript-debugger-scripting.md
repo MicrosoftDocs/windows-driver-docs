@@ -813,7 +813,7 @@ This method is also available.
 This section describes how to use the script debugging capabilities of the debugger. The debugger has integrated support for debugging JavaScript scripts using the [.scriptdebug (Debug JavaScript)](../debuggercmds/-scriptdebug--debug-javascript-.md) command.
 
 >[!NOTE]
-> To use JavaScript Debugging with WinDb, run the debugger as Administrator.
+> To use JavaScript Debugging with WinDbg, run the debugger as Administrator.
 >
 
 Use this sample code to explore debugging a JavaScript. For this walkthrough, we will name it DebuggableSample.js and save it in the C:\MyScripts directory.
