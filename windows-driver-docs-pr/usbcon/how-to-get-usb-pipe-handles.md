@@ -125,7 +125,7 @@ NTSTATUS
 
     pDeviceContext = GetDeviceContext(Device);
 
-    // Get the number of pipes in the current altenrate setting.
+    // Get the number of pipes in the current alternate setting.
     pDeviceContext->NumberConfiguredPipes = WdfUsbInterfaceGetNumConfiguredPipes(
         pDeviceContext->UsbInterface);
 

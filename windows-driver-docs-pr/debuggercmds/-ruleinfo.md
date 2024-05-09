@@ -1,7 +1,7 @@
 ---
-title: ruleinfo (WinDbg)
-description: The ruleinfo command displays information about a Driver Verifier rule.
-keywords: ["ruleinfo Windows Debugging"]
+title: "!ruleinfo (WinDbg)"
+description: "The !ruleinfo command displays information about a Driver Verifier rule."
+keywords: ["!ruleinfo Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,15 +14,13 @@ api_type:
 
 # !ruleinfo
 
-
 The **!ruleinfo** command displays information about a Driver Verifier rule.
 
 ```dbgcmd
 !ruleinfo RuleId [RuleState [SubState]]
 ```
 
-## <span id="ddk__ptov_dbg"></span><span id="DDK__PTOV_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______RuleId______"></span><span id="_______ruleid______"></span><span id="_______RULEID______"></span> *RuleId*   
 The ID of the verifier rule. This is the first argument of the [**DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md) bug check.
@@ -85,7 +83,7 @@ RULE_ID: 0x91001
 
 RULE_NAME: NdisOidComplete
 
-RULE_DESCRIPTION:
+RULE_DESCRIPTION: ""
 This rule verifies if an NDIS miniport driver completes an OID correctly.
 Check RULE_STATE for Oid ( use !ndiskd.oid ), which can be one of the following:
 1) NULL,
@@ -100,7 +98,3 @@ CURRENT_TIME (Timed Rules): 142 seconds
 
 RULE_STATE: 0xFFFFE000027B83F8
 ```
-
- 
-
- 

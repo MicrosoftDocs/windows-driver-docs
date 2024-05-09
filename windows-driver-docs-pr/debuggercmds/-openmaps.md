@@ -1,7 +1,7 @@
 ---
-title: openmaps (WinDbg)
-description: The openmaps extension displays the referenced buffer control blocks (BCBs) and virtual address control blocks (VACBs) for the specified shared cache map.
-keywords: ["BCB (buffer control block)", "VACB (virtual address control block)", "shared cache map", "cache manager", "openmaps Windows Debugging"]
+title: "!openmaps (WinDbg)"
+description: "The !openmaps extension displays the referenced buffer control blocks (BCBs) and virtual address control blocks (VACBs) for the specified shared cache map."
+keywords: ["BCB (buffer control block)", "VACB (virtual address control block)", "shared cache map", "cache manager", "!openmaps Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -13,7 +13,6 @@ api_type:
 ---
 
 # !openmaps
-
 
 The **!openmaps** extension displays the referenced buffer control blocks (BCBs) and virtual address control blocks (VACBs) for the specified shared cache map.
 
@@ -36,17 +35,9 @@ Kdexts.dll
 
  
 
-### Additional Information
+## Additional Information
 
 For information about cache management, see the Microsoft Windows SDK documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
 For information about other cache management extensions, see the [**!cchelp**](-cchelp.md) extension.
-
- 
-
- 
-
-
-
-
 

@@ -1,7 +1,7 @@
 ---
-title: usbkd.usblist
-description: The usbkd.usblist command displays a linked list of structures of a specified type.
-keywords: ["usbkd.usblist Windows Debugging"]
+title: "!usbkd.usblist"
+description: "The !usbkd.usblist command displays a linked list of structures of a specified type."
+keywords: ["!usbkd.usblist Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,15 +14,13 @@ api_type:
 
 # !usbkd.usblist
 
-
 The **!usbkd.usblist** command displays a linked list of structures of a specified type.
 
 ```dbgcmd
 !usbkd.usblist ListAddr, ListType
 ```
 
-## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______ListAddr______"></span><span id="_______listaddr______"></span><span id="_______LISTADDR______"></span> *ListAddr*   
 Address of a linked list of structures. To find addresses of linked lists maintained by the USB port driver, use [**!usbhcdext**](-usbkd-usbhcdext.md). To find addresses of linked list maintained by the USB hub driver, use [**!usbhubext**](-usbkd-usbhubext.md).
@@ -46,10 +44,8 @@ One of the following list types.
 | **CL**    | **usbhub!\_PORT\_CHANGE\_CONTEXT**       |
 | **BL**    | **usbhub!\_SSP\_BUSY\_HANDLE**           |
 
- 
 
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Usbkd.dll
 
@@ -100,12 +96,8 @@ DriverName :\Driver\USBSTOR      !devstack ffffe000053ef2a0
 ----------
 ```
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
-
- 
-

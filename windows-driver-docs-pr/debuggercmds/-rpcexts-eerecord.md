@@ -1,7 +1,7 @@
 ---
-title: rpcexts.eerecord
-description: The rpcexts.eerecord extension displays the contents of an extended error information record.
-keywords: ["rpcexts.eerecord Windows Debugging"]
+title: "!rpcexts.eerecord"
+description: "The !rpcexts.eerecord extension displays the contents of an extended error information record."
+keywords: ["!rpcexts.eerecord Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,41 +14,22 @@ api_type:
 
 # !rpcexts.eerecord
 
-
 The **!rpcexts.eerecord** extension displays the contents of an extended error information record.
 
 ```dbgcmd
 !rpcexts.eerecord EERecordAddress
 ```
 
-## <span id="ddk__rpcexts_eerecord_dbg"></span><span id="DDK__RPCEXTS_EERECORD_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______EERecordAddress______"></span><span id="_______eerecordaddress______"></span><span id="_______EERECORDADDRESS______"></span> *EERecordAddress*   
 Specifies the address of the extended error record.
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Unavailable</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Rpcexts.dll</p></td>
-</tr>
-</tbody>
-</table>
+Rpcexts.dll
 
- 
-
-### Additional Information
+## Additional Information
 
 For more information about debugging Microsoft Remote Procedure Call (RPC), see [RPC Debugging](../debugger/rpc-debugging.md).
 
@@ -70,12 +51,3 @@ Flags:
 Parameter 0:(Long value) : -30976 (0xFFFF8700)
 Parameter 1:(Long value) : 16777343 (0x100007F)
 ```
-
- 
-
- 
-
-
-
-
-

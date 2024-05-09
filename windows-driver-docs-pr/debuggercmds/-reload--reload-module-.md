@@ -1,6 +1,6 @@
 ---
-title: .reload (Reload Module)
-description: The .reload command deletes all symbol information for the specified module and reloads these symbols as needed. In some cases, this command also reloads or unloads the module itself.
+title: ".reload (Reload Module)"
+description: "The .reload command deletes all symbol information for the specified module and reloads these symbols as needed. In some cases, this command also reloads or unloads the module itself."
 keywords: ["Reload Module (.reload) command", "symbols, Reload Module (.reload) command", ".reload (Reload Module) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -14,7 +14,6 @@ api_type:
 
 # .reload (Reload Module)
 
-
 The **.reload** command deletes all symbol information for the specified module and reloads these symbols as needed. In some cases, this command also reloads or unloads the module itself.
 
 ```dbgcmd
@@ -22,8 +21,7 @@ The **.reload** command deletes all symbol information for the specified module 
 .reload -?
 ```
 
-## <span id="ddk_meta_reload_module_dbg"></span><span id="DDK_META_RELOAD_MODULE_DBG"></span>Parameters
-
+## Parameters
 
 *Options*
 Any of the following options:
@@ -82,12 +80,10 @@ Specifies the timestamp of the module image. In many situations, the debugger kn
 
 **Note**   There must be no blank space between the *Address*, *Size*, and *Timestamp* parameters.
 
- 
-
 <span id="_______-_______"></span> **-?**   
 Displays a short help text for this command.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -95,9 +91,7 @@ Displays a short help text for this command.
 |Targets |Live, crash dump      |
 |Platforms|All                  |
 
- 
-
-### Additional Information
+## Additional Information
 
 For more information about deferred (lazy) symbol loading, see [Deferred Symbol Loading](../debugger/deferred-symbol-loading.md). For more information about other symbol options, see [Setting Symbol Options](../debugger/symbol-options.md).
 
@@ -127,12 +121,3 @@ Unloaded ntdll.dll
 
 0:000> .reload /s /f ntdll.dll
 ```
-
- 
-
- 
-
-
-
-
-

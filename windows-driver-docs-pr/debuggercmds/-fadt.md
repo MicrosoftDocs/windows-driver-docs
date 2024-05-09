@@ -1,7 +1,7 @@
 ---
-title: fadt (WinDbg)
-description: The fadt extension displays a Fixed ACPI Description Table (FADT).
-keywords: ["fadt Windows Debugging"]
+title: "!fadt (WinDbg)"
+description: "The !fadt extension displays a Fixed ACPI Description Table (FADT)."
+keywords: ["!fadt Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -33,15 +33,7 @@ Specifies the address of the FADT.
 
 Kdexts.dll
 
-### Additional Information
+## Additional Information
 
 For more information, see [ACPI Debugging](../debugger/acpi-debugging.md).
-
- 
-
- 
-
-
-
-
 

@@ -1,7 +1,7 @@
 ---
-title: wudfext.wudfqueue
-description: The wudfext.wudfqueue extension displays information about an I/O queue.
-keywords: ["wudfext.wudfqueue Windows Debugging"]
+title: "!wudfext.wudfqueue"
+description: "The !wudfext.wudfqueue extension displays information about an I/O queue."
+keywords: ["!wudfext.wudfqueue Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !wudfext.wudfqueue
 
-
 The **!wudfext.wudfqueue** extension displays information about an I/O queue.
 
 ```dbgcmd
@@ -23,32 +22,14 @@ The **!wudfext.wudfqueue** extension displays information about an I/O queue.
 
 ## Parameters
 
-
 <span id="_______pWDFQueue______"></span><span id="_______pwdfqueue______"></span><span id="_______PWDFQUEUE______"></span> *pWDFQueue*   
 Specifies the address of the **IWDFIoQueue** interface to display information about. The [**!wudfext.wudfdevicequeues**](-wudfext-wudfdevicequeues.md) extension command determines the address of **IWDFIoQueue**.
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Unavailable</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Wudfext.dll</p></td>
-</tr>
-</tbody>
-</table>
+Wudfext.dll
 
- 
-
-### Additional Information
+## Additional Information
 
 For more information, see [User-Mode Driver Framework Debugging](../debugger/user-mode-driver-framework-debugging.md).
 
@@ -73,12 +54,3 @@ kd> !wudfqueue 0x000f3500
       IQueueCallbackDeviceIoControl 0x000f3438
       IQueueCallbackWrite 0x000f3440
 ```
-
- 
-
- 
-
-
-
-
-

@@ -17,7 +17,7 @@ class ISCSI_PortalInfo
 {
     [read,
      WmiDataId(1),
-     description("An integer used to uniquely identify a paticular port"),
+     description("An integer used to uniquely identify a particular port"),
      WmiVersion(1)] uint32 Index;
 
     [read,

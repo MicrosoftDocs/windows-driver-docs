@@ -1,6 +1,6 @@
 ---
-title: User-Mode Driver Framework Extensions (Wudfext.dll)
-description: User-Mode Driver Framework Extensions (Wudfext.dll)
+title: "User-Mode Driver Framework Extensions (Wudfext.dll)"
+description: "User-Mode Driver Framework Extensions (Wudfext.dll)"
 keywords: ["user-mode driver framework extensions (wudfext.dll)", "user-mode driver framework debugging, extensions (wudfext.dll)", "wudfext.dll (user-mode driver framework extensions)", "extensions, user-mode driver framework"]
 ms.date: 05/23/2017
 ---
@@ -17,12 +17,4 @@ Some extensions have additional restrictions on the Windows version or UMDF vers
  
 
 For ways to use these extensions, see [User-Mode Driver Framework Debugging](../debugger/user-mode-driver-framework-debugging.md).
-
- 
-
- 
-
-
-
-
 

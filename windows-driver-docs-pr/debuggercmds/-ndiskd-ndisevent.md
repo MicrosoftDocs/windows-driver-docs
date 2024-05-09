@@ -1,7 +1,7 @@
 ---
-title: ndiskd.ndisevent
-description: The !ndiskd.ndisevent extension displays an NDIS debug event log.
-keywords: ["ndiskd.ndisevent Windows Debugging"]
+title: "!ndiskd.ndisevent"
+description: "The !ndiskd.ndisevent extension displays an NDIS debug event log."
+keywords: ["!ndiskd.ndisevent Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -160,3 +160,4 @@ MINIPORT PM & PNP EVENTS
 [**!ndiskd.help**](-ndiskd-help.md)
 
 [**!ndiskd.netadapter**](-ndiskd-netadapter.md)
+

@@ -1,6 +1,6 @@
 ---
-title: .do (WinDbg)
-description: The .do token behaves like the do keyword in C, except that the word "while" is not used before the condition.
+title: ".do (WinDbg)"
+description: "The .do token behaves like the do keyword in C, except that the word while is not used before the condition."
 keywords: [".do Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -13,7 +13,6 @@ api_type:
 ---
 
 # .do
-
 
 The **.do** token behaves like the **do** keyword in C, except that the word "while" is not used before the condition.
 
@@ -30,7 +29,7 @@ Specifies one or more commands that will be executed repeatedly as long as the c
 <span id="_______Condition______"></span><span id="_______condition______"></span><span id="_______CONDITION______"></span> *Condition*   
 Specifies a condition. If this evaluates to zero, it is treated as false; otherwise it is true. Enclosing *Condition* in parentheses is optional. *Condition* must be an expression, not a debugger command. It will be evaluated by the default expression evaluator (MASM or C++). For details, see [Numerical Expression Syntax](numerical-expression-syntax.md).
 
-### Additional Information
+## Additional Information
 
 For information about other control flow tokens and their use in debugger command programs, see [Using Debugger Command Programs](../debugger/using-debugger-command-programs.md).
 
@@ -39,4 +38,5 @@ For information about other control flow tokens and their use in debugger comman
 The [**.break**](https://support.microsoft.com/help/833721/available-switch-options-for-the-windows-xp-and-the-windows-server-200) and [**.continue**](-continue.md) tokens can be used to exit or restart the *Commands* block.
 
  
+
 

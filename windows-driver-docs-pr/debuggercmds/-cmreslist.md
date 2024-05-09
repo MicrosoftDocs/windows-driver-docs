@@ -1,7 +1,7 @@
 ---
-title: cmreslist (WinDbg)
-description: The cmreslist extension displays the CM_RESOURCE_LIST structure for the specified device object.
-keywords: ["CM_RESOURCE_LIST", "cmreslist Windows Debugging"]
+title: "!cmreslist (WinDbg)"
+description: "The !cmreslist extension displays the CM_RESOURCE_LIST structure for the specified device object."
+keywords: ["CM_RESOURCE_LIST", "!cmreslist Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -33,15 +33,7 @@ Kdexts.dll
 
  
 
-### Additional Information
+## Additional Information
 
 See [Plug and Play Debugging](../debugger/plug-and-play-debugging.md) for applications of this extension command. For information about the CM\_RESOURCE\_LIST structure, see the Windows Driver Kit (WDK) documentation.
-
- 
-
- 
-
-
-
-
 

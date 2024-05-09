@@ -1,7 +1,7 @@
 ---
-title: usbkd.usb2tree
-description: The usbkd.usb2tree command displays USB 2.0 tree.
-keywords: ["usbkd.usb2tree Windows Debugging"]
+title: "!usbkd.usb2tree"
+description: "The !usbkd.usb2tree command displays USB 2.0 tree."
+keywords: ["!usbkd.usb2tree Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,15 +14,13 @@ api_type:
 
 # !usbkd.usb2tree
 
-
 The **!usbkd.usb2tree** command displays [USB 2.0 tree](usb-2-0-extensions.md#usb-2-tree).
 
 ```dbgcmd
 !usbkd.usb2tree
 ```
 
-## <span id="Examples"></span><span id="examples"></span><span id="EXAMPLES"></span>Examples
-
+## Examples
 
 This screen shot shows and example of the output of the **!usb2tree** command.
 
@@ -34,10 +32,7 @@ The output uses [Using Debugger Markup Language (DML)](../debugger/debugger-mark
 
 **Note**  The DML feature is available in WinDbg, but not in Visual Studio or KD.
 
- 
-
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Usb3kd.dll
 
@@ -52,12 +47,8 @@ The **!usb2tree** command is the parent command for many of the [USB 2.0 debugge
 
 For more information about these drivers, see [USB host-side drivers in Windows](../usbcon/usb-3-0-driver-stack-architecture.md).
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
-
- 
-

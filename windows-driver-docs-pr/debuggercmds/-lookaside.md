@@ -1,7 +1,7 @@
 ---
-title: lookaside (WinDbg)
-description: The lookaside extension displays information about look-aside lists, resets the counters of look-aside lists, or modifies the depth of a look-aside list.
-keywords: ["lookaside list", "lookaside Windows Debugging"]
+title: "!lookaside (WinDbg)"
+description: "The !lookaside extension displays information about look-aside lists, resets the counters of look-aside lists, or modifies the depth of a look-aside list."
+keywords: ["lookaside list", "!lookaside Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -16,7 +16,6 @@ api_type:
 
 # !lookaside
 
-
 The **!lookaside** extension displays information about look-aside lists, resets the counters of look-aside lists, or modifies the depth of a look-aside list.
 
 ```dbgcmd
@@ -25,7 +24,7 @@ The **!lookaside** extension displays information about look-aside lists, resets
 !lookaside 0 [-all]
 ```
 
-## <span id="ddk__lookaside_dbg"></span><span id="DDK__LOOKASIDE_DBG"></span>Parameters
+## Parameters
 
 
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
@@ -50,7 +49,7 @@ Modifies the depth of the specified look-aside list. This option can only be use
 <span id="_______Depth______"></span><span id="_______depth______"></span><span id="_______DEPTH______"></span> *Depth*   
 Specifies the new maximum depth of the specified look-aside list. This parameter is permitted only if *Address* is nonzero and *Options* is equal to 2.
 
-### Additional Information
+## Additional Information
 
 For information about look-aside lists, see the [Using Lookaside Lists](../kernel/using-lookaside-lists.md) and *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
 
@@ -92,4 +91,5 @@ Lookaside "" @ 0xfffff88001294f80  Tag(hex): 0x7366744e "Ntfs"
 </table>
 
  
+
 

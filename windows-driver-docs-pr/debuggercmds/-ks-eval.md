@@ -1,7 +1,7 @@
 ---
-title: ks.eval (WinDbg)
-description: The ks.eval extension evaluates an expression using an extension-specific expression evaluator.
-keywords: ["ks.eval Windows Debugging"]
+title: "!ks.eval (WinDbg)"
+description: "The !ks.eval extension evaluates an expression using an extension-specific expression evaluator."
+keywords: ["!ks.eval Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -47,7 +47,7 @@ Specifies the expression to evaluate. *Expression* can include any MASM operator
 
  
 
-### Additional Information
+## Additional Information
 
 For more information, see [Kernel Streaming Debugging](../debugger/kernel-streaming-debugging.md).
 
@@ -80,12 +80,4 @@ kd> !allstreams
     Functional Device 824661b8 [\Driver\MSPCLOCK]
     Functional Device 8241c020 [\Driver\avssamp]
 ```
-
- 
-
- 
-
-
-
-
 

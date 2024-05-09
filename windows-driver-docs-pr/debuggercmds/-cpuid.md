@@ -1,7 +1,7 @@
 ---
-title: cpuid (WinDbg)
-description: The cpuid extension displays information about the processors on the system.
-keywords: ["cpuid Windows Debugging"]
+title: "!cpuid (WinDbg)"
+description: "The !cpuid extension displays information about the processors on the system."
+keywords: ["!cpuid Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -29,26 +29,14 @@ Specifies the processor whose information will be displayed. If you omit this pa
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Ext.dll</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Ext.dll</p></td>
-</tr>
-</tbody>
-</table>
+
+Ext.dll
+
+
 
  
 
-### Additional Information
+## Additional Information
 
 For more information about how to debug multiprocessor computers, see [Multiprocessor Syntax](multiprocessor-syntax.md).
 
@@ -70,5 +58,6 @@ CP  F/M/S  Manufacturer        MHz
 The **CP** column gives the processor number. (These numbers are always sequential, starting with zero). The **Manufacturer** column specifies the processor manufacturer. The **MHz** column specifies the processor speed, if it is available.
 
 For an x86-based processor or an x64-based processor, the **F** column displays the processor family number, the **M** column displays the processor model number, and the **S** column displays the stepping size.
+
 
 

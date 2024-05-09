@@ -1,7 +1,7 @@
 ---
-title: iovirp (WinDbg)
-description: The iovirp extension displays detailed information for a specified I/O Verifier IRP.
-keywords: ["I/O Verifier", "iovirp Windows Debugging"]
+title: "!iovirp (WinDbg)"
+description: "The !iovirp extension displays detailed information for a specified I/O Verifier IRP."
+keywords: ["I/O Verifier", "!iovirp Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -13,7 +13,6 @@ api_type:
 ---
 
 # !iovirp
-
 
 The **!iovirp** extension displays detailed information for a specified I/O Verifier IRP.
 
@@ -29,7 +28,7 @@ Specifies the address of an IRP tracked by the Driver Verifier. If *IRP* is 0 or
 
 ## DLL
 
-Windows XP and later - Kdexts.dll
+Kdexts.dll
 
  
 
@@ -75,12 +74,4 @@ Allocation Stack:
 ```
 
 You can stop execution at any point by pressing CTRL+BREAK (in WinDbg) or CTRL+C (in KD).
-
- 
-
- 
-
-
-
-
 

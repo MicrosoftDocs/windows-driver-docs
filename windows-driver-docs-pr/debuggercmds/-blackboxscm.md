@@ -1,7 +1,7 @@
 ---
-title: blackboxscm
-description: The blackboxscmextension displays service control manager (scm) secondary boot data.
-keywords: ["blackboxscm Windows Debugging"]
+title: "!blackboxscm"
+description: "The !blackboxscm extension displays service control manager (scm) secondary boot data."
+keywords: ["!blackboxscm Windows Debugging"]
 ms.date: 01/02/2019
 topic_type:
 - apiref
@@ -28,7 +28,7 @@ Syntax
 *None*   
 
 
-## <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 ext.dll
 
@@ -64,8 +64,9 @@ When multiple services are listed,  only the first service that is listed is typ
 For more information about SCM, see [Service Control Manager](/windows/desktop/Services/service-control-manager).
 
 
-### <span id="Additional_Information"></span>Additional Information
+## Additional Information
 
 dwControl values are defined in winsvc.h and documented as parameters to [LPHANDLER_FUNCTION_EX callback function](/windows/win32/api/winsvc/nc-winsvc-lphandler_function_ex#parameters).
 
  
+

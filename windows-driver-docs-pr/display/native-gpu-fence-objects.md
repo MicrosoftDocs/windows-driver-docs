@@ -5,7 +5,7 @@ keywords:
 - WDDM, native GPU fence object
 - WDDM, GPU fence synchronization object
 - WDDM, hardware scheduling
-ms.date: 03/21/2024
+ms.date: 03/29/2024
 ---
 
 # Native GPU fence object
@@ -135,9 +135,9 @@ The following interfaces are introduced for a KMD to query whether the OS enable
 * [**DXGKARGCB_FEATURE_NATIVEFENCE_CAPS_1**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgkargcb_feature_nativefence_caps_1)
 * [**DXGKCBINT_FEATURE_NATIVEFENCE_1**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgkcbint_feature_nativefence_1)
 
-Like the hardware scheduling stage 1 and hardware flip queue features, drivers must query whether the native fence feature is enabled in the OS during driver initialization. However, unlike before, the OS uses the added [**IsFeatureEnabled**]() interface to control whether the feature is enabled. As a result, drivers must implement this interface. For more information, see [Detecting whether a feature is enabled]().
+Like the hardware scheduling stage 1 and hardware flip queue features, drivers must query whether the native fence feature is enabled in the OS during driver initialization. However, starting in WDDM 3.2, the OS uses the added [WDDM feature support and enablement feature](querying-wddm-feature-support-and-enablement.md) to control whether the feature is enabled. As a result, drivers must implement this interface.
 
-Before KMD advertises native fence support in [**DXGK_VIDSCHCAPS**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_vidschcaps), KMD is expected to implement the [**IsFeatureEnabled**]() interface and query whether the OS enabled the [**DXGK_FEATURE_NATIVE_FENCE**](/windows-hardware/drivers/ddi/d3dukmdt/ne-d3dukmdt-dxgk_feature_id) feature. The OS fails adapter initialization if KMD advertises native fence support if the OS didn't enable the feature.
+Before KMD advertises native fence support in [**DXGK_VIDSCHCAPS**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_vidschcaps), KMD is expected to implement the [**DXGKDDI_FEATURE_INTERFACE**](/windows-hardware/drivers/ddi/dispmprt/ns-dispmprt-dxgkddi_feature_interface) interface and query whether the OS enabled the [**DXGK_FEATURE_NATIVE_FENCE**](/windows-hardware/drivers/ddi/d3dukmdt/ne-d3dukmdt-dxgk_feature_id) feature. The OS fails adapter initialization if KMD advertises native fence support if the OS didn't enable the feature.
 
 The OS implements the added [**DXGKCB_FEATURE_NATIVEFENCE_CAPS_1**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkcb_feature_nativefence_caps_1) interface table dedicated to version 1 of **DXGK_FEATURE_NATIVE_FENCE**. KMD must query this feature interface table to determine the OS's capabilities. In future OS releases, the OS might introduce future versions of this interface table, detailing support for new capabilities.
 

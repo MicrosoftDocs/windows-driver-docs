@@ -4,7 +4,6 @@ description: About BypassIO
 keywords:
 - filter drivers WDK file system , BypassIO
 ms.date: 11/09/2023
-prerelease: false
 ---
 
 # BypassIO for filter drivers

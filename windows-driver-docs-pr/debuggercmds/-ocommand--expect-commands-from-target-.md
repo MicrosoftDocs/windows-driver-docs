@@ -1,6 +1,6 @@
 ---
-title: .ocommand (Expect Commands from Target)
-description: The .ocommand command enables the target application to send commands to the debugger.
+title: ".ocommand (Expect Commands from Target)"
+description: "The .ocommand command enables the target application to send commands to the debugger."
 keywords: ["Expect Commands from Target (.ocommand) command", ".ocommand (Expect Commands from Target) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -32,7 +32,7 @@ Specifies the command prefix string. *String* can include spaces, but you cannot
 <span id="_______-d______"></span><span id="_______-D______"></span> **-d**   
 Deletes the command prefix string.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -41,7 +41,7 @@ Deletes the command prefix string.
 |Platforms | all  |
  
 
-### Additional Information
+## Additional Information
 
 For more information about [**OutputDebugString**](/windows/win32/api/debugapi/nf-debugapi-outputdebugstringw) and other user-mode functions that communicate with a debugger, see the Microsoft Windows SDK documentation.
 
@@ -84,4 +84,5 @@ There are no commands executed from the preceding example because the command st
  
 
  
+
 

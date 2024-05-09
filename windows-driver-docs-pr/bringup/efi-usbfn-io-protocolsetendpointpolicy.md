@@ -46,7 +46,7 @@ A pointer to the buffer that contains the new endpoint policy value. For more in
 
 ## Return values
 
-The function returns one of the the following values:
+The function returns one of the following values:
 
 | Return code | Description |
 |--|--|

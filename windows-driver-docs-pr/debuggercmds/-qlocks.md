@@ -1,7 +1,7 @@
 ---
-title: qlocks (WinDbg)
-description: The qlocks extension displays the state of all queued spin locks.
-keywords: ["qlocks Windows Debugging"]
+title: "!qlocks (WinDbg)"
+description: "The !qlocks extension displays the state of all queued spin locks."
+keywords: ["!qlocks Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,23 +14,17 @@ api_type:
 
 # !qlocks
 
-
 The **!qlocks** extension displays the state of all queued spin locks.
 
 ```dbgcmd
 !qlocks 
 ```
 
-## <span id="ddk__qlocks_dbg"></span><span id="DDK__QLOCKS_DBG"></span>
-
-
-### DLL
+## DLL
 
 Kdexts.dll
 
- 
-
-### Additional Information
+## Additional Information
 
 For information about spin locks, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
 
@@ -64,12 +58,3 @@ AFD  - WorkQueue
 CC   - Bcb                      
 MM   - MM NonPagedPool             
 ```
-
- 
-
- 
-
-
-
-
-

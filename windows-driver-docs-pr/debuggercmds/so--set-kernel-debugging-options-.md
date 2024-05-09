@@ -1,6 +1,6 @@
 ---
-title: so (Set Kernel Debugging Options)
-description: The so command sets or displays the kernel debugging options.
+title: "so (Set Kernel Debugging Options)"
+description: "The so command sets or displays the kernel debugging options."
 keywords: ["so (Set Kernel Debugging Options) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -35,40 +35,17 @@ Does not check the version of debugger extension DLLs.
 
 If you omit *Options*, the current options are displayed.
 
-### Environment
+## Environment
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Modes</strong></p></td>
-<td align="left"><p>Kernel mode only</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Targets</strong></p></td>
-<td align="left"><p>Live, crash dump</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Platforms</strong></p></td>
-<td align="left"><p>All</p></td>
-</tr>
-</tbody>
-</table>
+|  Item       | Description       |
+|-----------|------------------|
+| Modes     | kernel mode only |
+| Targets   | live, crash dump |
+| Platforms | all              |
 
  
 
 ## Remarks
 
 You can also set kernel debugging options using the \_NT\_DEBUG\_OPTIONS [environment variable](../debugger/kernel-mode-environment-variables.md).
-
- 
-
- 
-
-
-
-
 

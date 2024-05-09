@@ -1,7 +1,7 @@
 ---
-title: gs (WinDbg)
-description: The gs extension analyzes a /GS stack overflow.
-keywords: ["gs Windows Debugging"]
+title: "!gs (WinDbg)"
+description: "The !gs extension analyzes a /GS stack overflow."
+keywords: ["!gs Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !gs
 
-
 The **!gs** extension analyzes a /GS stack overflow.
 
 ```dbgcmd
@@ -23,24 +22,7 @@ The **!gs** extension analyzes a /GS stack overflow.
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Ext.dll</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Ext.dll</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+Ext.dll
 
 ## Remarks
 
@@ -83,12 +65,3 @@ Candidate buffer : ps 0013e268 to 0013e2a7
  0013e2bc 80 fa 03 00 0d 00 00 00-10 08 19 00 00 00 00 00 ................
 0:000>
 ```
-
- 
-
- 
-
-
-
-
-

@@ -1,6 +1,6 @@
 ---
-title: .locale (Set Locale)
-description: The .locale command sets the locale or displays the current locale.
+title: ".locale (Set Locale)"
+description: "The .locale command sets the locale or displays the current locale."
 keywords: [".locale (Set Locale) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -27,7 +27,7 @@ The **.locale** command sets the locale or displays the current locale.
 <span id="_______Locale______"></span><span id="_______locale______"></span><span id="_______LOCALE______"></span> *Locale*   
 Specifies the locale that you want. If you omit this parameter, the debugger displays the current locale.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -37,7 +37,7 @@ Specifies the locale that you want. If you omit this parameter, the debugger dis
 
  
 
-### Additional Information
+## Additional Information
 
 For more information about locale, see the **setlocale** routine reference page.
 
@@ -60,12 +60,4 @@ Locale: Catalan_Spain.1252
 kd> .locale C
 Locale: C
 ```
-
- 
-
- 
-
-
-
-
 

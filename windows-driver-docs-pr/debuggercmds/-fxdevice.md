@@ -1,7 +1,7 @@
 ---
-title: fxdevice (WinDbg)
-description: The fxdevice extension displays summary information about all Power Management Framework (PoFx) registered devices. This command can be used only during kernel-mode debugging.
-keywords: ["fxdevice Windows Debugging"]
+title: "!fxdevice (WinDbg)"
+description: "The !fxdevice extension displays summary information about all Power Management Framework (PoFx) registered devices. This command can be used only during kernel-mode debugging."
+keywords: ["!fxdevice Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !fxdevice
 
-
 The !fxdevice extension displays summary information about all Power Management Framework (PoFx) registered devices. This command can be used only during kernel-mode debugging.
 
 For more information about PoFX, see [Overview of the Power Management Framework](../kernel/overview-of-the-power-management-framework.md).
@@ -25,37 +24,23 @@ Syntax
 !fxdevice[<FxDevice Address>]
 ```
 
-## <span id="ddk__thread_dbg"></span><span id="DDK__THREAD_DBG"></span>Parameters
+## Parameters
 
 
 <span id="___________FxDevice__Address_______"></span><span id="___________fxdevice__address_______"></span><span id="___________FXDEVICE__ADDRESS_______"></span> **&lt; FxDevice Address&gt;**   
 Provides the address of the FxDevice to display.
 
-## <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 10 and later</strong></p></td>
-<td align="left"><p>Kdexts.dll</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+Kdexts.dll
 
 ## Remarks
 
 The !fxdevice extension displays the following information when it is present on the target system.
 
--   Non-idle PoFx devices
--   Idle D0 PoFx devices
--   Idle non-D0 PoFx devices
+- Non-idle PoFx devices
+- Idle D0 PoFx devices
+- Idle non-D0 PoFx devices
 
 The following is example out from the !fxdevice extension with a supplied device address.
 
@@ -129,6 +114,3 @@ Dumping idle D0 PoFx devices
 
 ...
 ```
-
- 
-

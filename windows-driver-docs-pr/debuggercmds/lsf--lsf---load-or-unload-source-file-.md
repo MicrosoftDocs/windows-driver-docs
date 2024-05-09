@@ -1,6 +1,6 @@
 ---
-title: lsf, lsf- (Load or Unload Source File)
-description: The lsf and lsf- commands load or unload a source file.
+title: "lsf, lsf- (Load or Unload Source File)"
+description: "The lsf and lsf- commands load or unload a source file."
 keywords: ["lsf, lsf- (Load or Unload Source File) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -28,7 +28,7 @@ lsf- Filename
 <span id="_______Filename______"></span><span id="_______filename______"></span><span id="_______FILENAME______"></span> *Filename*   
 Specifies the file to load or unload. If this file is not located in the directory where the debugger was opened from, you must include an absolute or relative path. The file name must follow Microsoft Windows file name conventions.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -48,19 +48,11 @@ In CDB or KD, you can view source files in the [Debugger Command window](../debu
 
 For more information about source files, source paths, and other ways to load source files, see [Source Path](../debugger/source-path.md).
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ls, lsa (List Source Lines)**](ls--lsa--list-source-lines-.md)
 
 [**lsc (List Current Source)**](lsc--list-current-source-.md)
-
- 
-
- 
-
-
-
-
 
 

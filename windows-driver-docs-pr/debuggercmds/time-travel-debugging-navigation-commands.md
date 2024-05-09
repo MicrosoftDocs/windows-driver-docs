@@ -1,6 +1,6 @@
 ---
-title: Time travel navigation commands
-description: This section describes the time travel navigation commands.
+title: "Time travel navigation commands"
+description: "This section describes the time travel navigation commands."
 keywords: ["Time travel navigation commands", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
 ms.date: 09/23/2017
 ---
@@ -32,3 +32,4 @@ The time travel navigation commands only work with time travel traces. For more 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
 
 [Time Travel Debugging - Replay a trace](time-travel-debugging-replay.md)
+

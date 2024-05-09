@@ -1,7 +1,7 @@
 ---
-title: mtrr (WinDbg)
-description: The mtrr extension displays the contents of the MTRR register.
-keywords: ["MTRR register", "registers, MTRR register", "mtrr Windows Debugging"]
+title: "!mtrr (WinDbg)"
+description: "The !mtrr extension displays the contents of the MTRR register."
+keywords: ["MTRR register", "registers, MTRR register", "!mtrr Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -13,7 +13,6 @@ api_type:
 ---
 
 # !mtrr
-
 
 The **!mtrr** extension displays the contents of the MTRR register.
 
@@ -31,12 +30,4 @@ Kdexts.dll
  
 
 This extension command can only be used with an x86-based target computer.
-
- 
-
- 
-
-
-
-
 

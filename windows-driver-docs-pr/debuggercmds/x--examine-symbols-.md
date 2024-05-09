@@ -1,6 +1,6 @@
 ---
-title: x (Examine Symbols)
-description: The x command displays the symbols in all contexts that match the specified pattern.
+title: "x (Examine Symbols)"
+description: "The x command displays the symbols in all contexts that match the specified pattern."
 keywords: ["x (Examine Symbols) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -87,7 +87,7 @@ Specifies a pattern that the symbol must contain. *Symbol* can contain a variety
 
 Because this pattern is matched to a symbol, the match is not case sensitive, and a single leading underscore (\_) represents any quantity of leading underscores. You can add spaces within *Symbol*, so that you can specify symbol names that contain spaces (such as "operator new" or "Template&lt;A, B&gt;") without using wildcard characters.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -252,19 +252,11 @@ Consider using the [**dt (Display Type)**](dt--display-type-.md) command when wo
    +0x038 key_             : std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [Verifying Symbols](../debugger/verifying-symbols.md)
 
 [**dv (Display Local Variables)**](dv--display-local-variables-.md)
-
- 
-
- 
-
-
-
-
 
 

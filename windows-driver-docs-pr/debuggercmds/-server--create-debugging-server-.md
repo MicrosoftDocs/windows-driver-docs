@@ -1,6 +1,6 @@
 ---
-title: .server (Create Debugging Server)
-description: The .server command starts a debugging server, allowing a remote connection to the current debugging session.
+title: ".server (Create Debugging Server)"
+description: "The .server command starts a debugging server, allowing a remote connection to the current debugging session."
 keywords: ["Create Debugging Server (.server) command", "remote debugging through the debugger, Create Debugging Server (.server) command", ".server (Create Debugging Server) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -14,7 +14,6 @@ api_type:
 
 # .server (Create Debugging Server)
 
-
 The **.server** command starts a debugging server, allowing a remote connection to the current debugging session.
 
 ```dbgcmd
@@ -27,8 +26,7 @@ The **.server** command starts a debugging server, allowing a remote connection 
 .server ssl:proto=Protocol,{certuser=Cert|machuser=Cert},port=Socket,clicon=Client[,password=Password] 
 ```
 
-## <span id="ddk_meta_create_debugging_server_dbg"></span><span id="DDK_META_CREATE_DEBUGGING_SERVER_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______PipeName______"></span><span id="_______pipename______"></span><span id="_______PIPENAME______"></span> *PipeName*   
 When NPIPE or SPIPE protocol is used, *PipeName* is a string that will serve as the name of the pipe. Each pipe name should identify a unique debugging server. If you attempt to reuse a pipe name, you will receive an error message. *PipeName* must not contain spaces or quotation marks. *PipeName* can include a numerical **printf**-style format code, such as %x or %d. The debugger will replace this with the process ID of the debugger. A second such code will be replaced with the thread ID of the debugger.
@@ -70,7 +68,7 @@ Requires a debugging client to supply the specified password in order to connect
 <span id="_______IcfEnable______"></span><span id="_______icfenable______"></span><span id="_______ICFENABLE______"></span> **IcfEnable**   
 Causes the debugger to enable the necessary port connections for TCP or named pipe communication when the Internet Connection Firewall is active. By default, the Internet Connection Firewall disables the ports used by these protocols. When **IcfEnable** is used with a TCP connection, the debugger causes Windows to open the port specified by the Socket parameter. When **IcfEnable** is used with a named pipe connection, the debugger causes Windows to open the ports used for named pipes (ports 139 and 445). The debugger does not close these ports after the connection terminates.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -78,9 +76,7 @@ Causes the debugger to enable the necessary port connections for TCP or named pi
 |Targets |Live, crash dump      |
 |Platforms|All                  |
 
- 
-
-### Additional Information
+## Additional Information
 
 For full details on how to start a debugging server, see [**Activating a Debugging Server**](../debugger/activating-a-debugging-server.md). For examples, see [Client and Server Examples](../debugger/client-and-server-examples.md).
 
@@ -89,12 +85,3 @@ For full details on how to start a debugging server, see [**Activating a Debuggi
 This command turns the current debugger into a debugging server. This allows you to start the server after the debugger is already running, whereas the -server [command-line option](../debugger/command-line-options.md) can only be issued when the debugger is started.
 
 This permits a debugging client to connect to the current debugging session. Note that it is possible to start multiple servers using different options, allowing different kinds of debugging clients to join the session.
-
- 
-
- 
-
-
-
-
-

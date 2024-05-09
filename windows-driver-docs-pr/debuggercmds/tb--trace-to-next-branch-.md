@@ -1,6 +1,6 @@
 ---
-title: tb (Trace to Next Branch)
-description: The tb command executes the program until a branch instruction is reached.
+title: "tb (Trace to Next Branch)"
+description: "The tb command executes the program until a branch instruction is reached."
 keywords: ["tb (Trace to Next Branch) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -35,7 +35,7 @@ Specifies the address where the debugger starts execution. If you do not use *St
 <span id="_______Count______"></span><span id="_______count______"></span><span id="_______COUNT______"></span> *Count*   
 Specifies the number of branches to allow. Every time that a branch is encountered, the instruction address and the instruction are displayed. If you omit *Count*, the default number is 1.
 
-### Environment
+## Environment
 
 <table>
 <colgroup>
@@ -62,7 +62,7 @@ Specifies the number of branches to allow. Every time that a branch is encounter
 
  
 
-### Additional Information
+## Additional Information
 
 For more information about related commands, see [Controlling the Target](../debugger/controlling-the-target.md).
 
@@ -79,12 +79,4 @@ When execution stops, the address of the branch instruction and any associated s
 The **tb** command works only on the current processor. If you use **tb** on a multiprocessor system, execution stops when a branch command is reached or when another processor's event occurs, whichever comes first.
 
 Usually, branch tracing is enabled after the processor control block (PRCB) has been initialized. (The PRCB is initialized early in the boot process.) However, if you have to use the **tb** command before this point, you can use [**.force\_tb (Forcibly Allow Branch Tracing)**](-force-tb--forcibly-allow-branch-tracing-.md) to enable branch tracing earlier. Use the **.force\_tb** command cautiously, because it can corrupt your processor state.
-
- 
-
- 
-
-
-
-
 

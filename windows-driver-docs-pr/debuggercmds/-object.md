@@ -1,7 +1,7 @@
 ---
-title: object (WinDbg)
-description: The object extension displays information about a system object.
-keywords: ["object Windows Debugging"]
+title: "!object (WinDbg)"
+description: "The !object extension displays information about a system object."
+keywords: ["!object Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -13,7 +13,6 @@ api_type:
 ---
 
 # !object
-
 
 The **!object** extension displays information about a system object.
 
@@ -69,7 +68,7 @@ Display help for this command.
 
 Kdexts.dll
 
-### <span id="Examples"></span><span id="examples"></span><span id="EXAMPLES"></span>Examples
+### Examples
 
 This example passes the path of the \\Device directory to **!object**. The output lists all objects in the \\Device directory.
 
@@ -159,11 +158,11 @@ Object: ffffc00b07628fb0  Type: (ffffe0083b769450) SymbolicLink
     Target String is '\Device\Tdx'
 ```
 
-### Additional Information
+## Additional Information
 
 For information about objects and the object manager, see the Microsoft Windows SDK documentation, the Windows Driver Kit (WDK) documentation, and *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [Object Reference Tracing](../debugger/object-reference-tracing.md)
@@ -175,13 +174,5 @@ For information about objects and the object manager, see the Microsoft Windows 
 [Determining the ACL of an Object](../debugger/determining-the-acl-of-an-object.md)
 
 [Kernel-Mode Extension Commands](kernel-mode-extensions.md)
-
- 
-
- 
-
-
-
-
 
 

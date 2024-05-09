@@ -1,7 +1,7 @@
 ---
-title: vm (WinDbg)
-description: The vm extension displays summary information about virtual memory use statistics on the target system.
-keywords: ["vm Windows Debugging"]
+title: "!vm (WinDbg)"
+description: "The !vm extension displays summary information about virtual memory use statistics on the target system."
+keywords: ["!vm Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,15 +14,13 @@ api_type:
 
 # !vm
 
-
 The **!vm** extension displays summary information about virtual memory use statistics on the target system.
 
 ```dbgcmd
 !vm [Flags]
 ```
 
-## <span id="ddk__vm_dbg"></span><span id="DDK__VM_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______Flags______"></span><span id="_______flags______"></span><span id="_______FLAGS______"></span> *Flags*   
 Specifies what information will be displayed in the output from this command. This can be any sum of the following bits. The default is 0, which causes the display to include system-wide virtual memory statistics as well as memory statistics for each process.
@@ -45,20 +43,15 @@ Causes the display to include working set owner thread stacks.
 <span id="Bit_5__0x20_"></span><span id="bit_5__0x20_"></span><span id="BIT_5__0X20_"></span>Bit 5 (0x20)  
 (Windows Vista and later) Causes the display to include kernel virtual address usage.
 
-### Environment
+## Environment
 
 **Modes**: kernel mode only
-
-
- 
 
 ### DLL
 
 Kdexts.dll
 
- 
-
-### Additional Information
+## Additional Information
 
 The [**!memusage**](-memusage.md) extension command can be used to analyze physical memory usage. For more information about memory management, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
 
@@ -99,40 +92,8 @@ kd> !vm 1
 
 All memory use is listed in pages and in kilobytes. The most useful information in this display is the following:
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>physical memory</strong></p></td>
-<td align="left"><p>Total physical memory in the system.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>available pages</strong></p></td>
-<td align="left"><p>Number of pages of memory available on the system, both virtual and physical.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>nonpaged pool usage</strong></p></td>
-<td align="left"><p>The amount of pages allocated to the nonpaged pool. The nonpaged pool is memory that cannot be swapped out to the paging file, so it must always occupy physical memory. If this number is too large, this is usually an indication that there is a memory leak somewhere in the system.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
- 
-
- 
-
-
-
-
-
+|Parameter|Meaning|
+|-------- |------ |
+|physical memory|Total physical memory in the system.|
+|available pages|Number of pages of memory available on the system, both virtual and physical.|
+|nonpaged pool usage|The amount of pages allocated to the nonpaged pool. The nonpaged pool is memory that cannot be swapped out to the paging file, so it must always occupy physical memory. If this number is too large, this is usually an indication that there is a memory leak somewhere in the system.|

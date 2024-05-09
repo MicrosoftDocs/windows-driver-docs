@@ -1,7 +1,7 @@
 ---
 title: "!fwver (WinDbg)"
-description: The fwver extension displays the Itanium firmware version.
-keywords: ["fwver Windows Debugging"]
+description: "The !fwver extension displays the Itanium firmware version."
+keywords: ["!fwver Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -24,11 +24,11 @@ The **!fwver** extension displays the Itanium firmware version.
 
 ## DLL
 
-Windows XP and later - Kdexts.dll
+Kdexts.dll
 
 This extension command can only be used with an Itanium target computer.
 
-### Additional Information
+## Additional Information
 
 For more information, consult an Intel architecture manual.
 
@@ -48,12 +48,4 @@ Firmware Version
    PAL_B_VERSION:       6625
    smbiosString:        W460GXBS2.86E.0117A.P08.200107261041
 ```
-
- 
-
- 
-
-
-
-
 

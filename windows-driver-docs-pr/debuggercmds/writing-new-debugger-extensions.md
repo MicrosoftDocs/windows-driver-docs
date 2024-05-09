@@ -1,6 +1,6 @@
 ---
-title: Writing New Debugger Extensions
-description: Writing New Debugger Extensions
+title: "Writing New Debugger Extensions"
+description: "Writing New Debugger Extensions"
 keywords: ["extension commands ( commands), writing extensions", "writing extension commands", "dbgeng.h header file, writing extension commands", "wdbgexts.h header file, writing extension commands"]
 ms.date: 05/23/2017
 ---
@@ -16,3 +16,4 @@ There are two different types of debugger extensions:
 - *WdbgExts extensions*. These are based on the prototypes in the wdbgexts.h header file alone.
 
 For information about how to write debugger extensions, see [Writing DbgEng Extensions](../debugger/writing-dbgeng-extensions.md) and [Writing WdbgExts Extensions](../debugger/writing-wdbgexts-extensions.md).
+

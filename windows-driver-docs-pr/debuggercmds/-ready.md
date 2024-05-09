@@ -1,7 +1,7 @@
 ---
-title: ready (WinDbg)
-description: The ready extension displays summary information about each thread in the system in a READY state.
-keywords: ["thread, ready threads", "ready Windows Debugging"]
+title: "!ready (WinDbg)"
+description: "!The ready extension displays summary information about each thread in the system in a READY state."
+keywords: ["thread, ready threads", "!ready Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,15 +14,13 @@ api_type:
 
 # !ready
 
-
 The **!ready** extension displays summary information about each thread in the system in a READY state.
 
 ```dbgcmd
 !ready [Flags]
 ```
 
-## <span id="ddk__ready_dbg"></span><span id="DDK__READY_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______Flags______"></span><span id="_______flags______"></span><span id="_______FLAGS______"></span> *Flags*   
 Specifies the level of detail to display. *Flags* can be any combination of the following bits. If *Flags* is 0, only a minimal amount of information is displayed. The default is 0x6.
@@ -39,25 +37,14 @@ Causes the display of each function to include the return address and the stack 
 <span id="Bit_4__0x10_"></span><span id="bit_4__0x10_"></span><span id="BIT_4__0X10_"></span>Bit 4 (0x10)  
 Causes the display of each function to include only the return address; arguments and stack pointers are suppressed.
 
-### DLL
+## DLL
 
 Kdexts.dll
-
- 
-
-### Additional Information
-
-For information about thread scheduling and the READY state, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon. 
 
 ## Remarks
 
 The output from this extension is similar to that of [**!thread**](-thread.md), except that only ready threads are displayed, and they are sorted in order of decreasing priority.
 
- 
+## Additional Information
 
- 
-
-
-
-
-
+For information about thread scheduling and the READY state, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon. 

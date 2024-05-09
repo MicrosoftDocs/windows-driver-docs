@@ -1,7 +1,7 @@
 ---
-title: sysinfo (WinDbg)
-description: The sysinfo extension reads and displays specified SMBIOS, Advanced Configuration and Power Interface (ACPI), and CPU information from a dump file or live system.
-keywords: ["sysinfo Windows Debugging"]
+title: "!sysinfo (WinDbg)"
+description: "The !sysinfo extension reads and displays specified SMBIOS, Advanced Configuration and Power Interface (ACPI), and CPU information from a dump file or live system."
+keywords: ["!sysinfo Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -13,7 +13,6 @@ api_type:
 ---
 
 # !sysinfo
-
 
 The **!sysinfo** extension reads and displays specified SMBIOS, Advanced Configuration and Power Interface (ACPI), and CPU information from a dump file or live system.
 
@@ -29,7 +28,6 @@ The **!sysinfo** extension reads and displays specified SMBIOS, Advanced Configu
 ```
 
 ## Parameters
-
 
 <span id="_______cpuinfo______"></span><span id="_______CPUINFO______"></span> **cpuinfo**   
 Displays information about the processor.
@@ -84,28 +82,7 @@ Displays help for this extension in the Debugger Command window.
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Unavailable</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP base system</strong></p>
-<p><strong>Windows 2003 base system</strong></p></td>
-<td align="left"><p>Unavailable</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Windows XP, Service Pack 2 and later</strong></p>
-<p><strong>Windows 2003, Service Pack 1 and later</strong></p></td>
-<td align="left"><p>Kdexts.dll</p></td>
-</tr>
-</tbody>
-</table>
+Kdexts.dll
 
 ## Remarks
 

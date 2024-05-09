@@ -1,8 +1,8 @@
 ---
-title: threadtoken
-description: The threadtoken extension displays the impersonation state of the current thread.
-keywords: ["threadtoken Windows Debugging"]
-ms.date: 05/23/2017
+title: "!threadtoken"
+description: "The !threadtoken extension  extension is obsolete."
+keywords: ["!threadtoken Windows Debugging"]
+ms.date: 04/01/2024
 topic_type:
 - apiref
 ms.topic: reference
@@ -14,38 +14,17 @@ api_type:
 
 # !threadtoken
 
-
-The **!threadtoken** extension displays the impersonation state of the current thread.
+The **!threadtoken** extension  extension is obsolete.
 
 ```dbgcmd
 !threadtoken
 ```
 
-## <span id="ddk__threadtoken_dbg"></span><span id="DDK__THREADTOKEN_DBG"></span>
-
-
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Ntsdexts.dll</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Unavailable</p></td>
-</tr>
-</tbody>
-</table>
+Unavailable
 
- 
-
-### Additional Information
+## Additional Information
 
 For information about threads and impersonation, see the Microsoft Windows SDK documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
@@ -125,12 +104,3 @@ Here is an example:
                SeMachineAccountPrivilege ( )
                SeEnableDelegationPrivilege ( Enabled )
 ```
-
- 
-
- 
-
-
-
-
-

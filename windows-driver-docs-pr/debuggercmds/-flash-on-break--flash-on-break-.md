@@ -1,6 +1,6 @@
 ---
-title: .flash_on_break (Flash on Break)
-description: The .flash_on_break command specifies whether the WinDbg taskbar entry flashes when WinDbg is minimized and the target breaks.
+title: ".flash_on_break (Flash on Break)"
+description: "The .flash_on_break command specifies whether the WinDbg taskbar entry flashes when WinDbg is minimized and the target breaks."
 keywords: [".flash_on_break (Flash on Break) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -32,7 +32,7 @@ Causes the WinDbg taskbar entry to flash if WinDbg is minimized and the target b
 <span id="_______off______"></span><span id="_______OFF______"></span> **off**   
 Prevents the WinDbg taskbar entry from flashing.
 
-### Environment
+## Environment
 
 The **.flash\_on\_break** command is available only in WinDbg. You cannot use this command in script files.
 
@@ -47,12 +47,4 @@ The **.flash\_on\_break** command is available only in WinDbg. You cannot use th
 ## Remarks
 
 If you use the **.flash\_on\_break** command without parameters, the debugger displays the current flash setting.
-
- 
-
- 
-
-
-
-
 

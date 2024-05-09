@@ -1,7 +1,7 @@
 ---
-title: ppmsettings
-description: The ppmsettings command
-keywords: ["ppmsettings Windows Debugging"]
+title: "!ppmsettings"
+description: "The !ppmsettings extension command displays currently active ppm settings for the processor."
+keywords: ["!ppmsettings Windows Debugging"]
 ms.date: 06/08/2017
 topic_type:
 - apiref
@@ -14,8 +14,7 @@ api_type:
 
 # !ppmsettings
 
-
-The **!ppmsettings** command displays currently active ppm settings for the processor.
+The **!ppmsettings** extension command displays currently active ppm settings for the processor.
 
 ```dbgcmd
 !ppmsettings
@@ -25,6 +24,8 @@ The **!ppmsettings** command displays currently active ppm settings for the proc
 
 None
 
+## Remarks
+
 This command is supported on the following versions of Windows:
 
 - Windows 10, Version 1511
@@ -33,11 +34,4 @@ This command is supported on the following versions of Windows:
 
 ## DLL
 
-Kdexts.dll 
-
- 
-
-
-
-
-
+Kdexts.dll

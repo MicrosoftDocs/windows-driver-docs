@@ -1,7 +1,7 @@
 ---
-title: devobj (WinDbg)
-description: The devobj extension displays detailed information about a DEVICE_OBJECT structure.
-keywords: ["devobj Windows Debugging"]
+title: "!devobj (WinDbg)"
+description: "The !devobj extension displays detailed information about a DEVICE_OBJECT structure."
+keywords: ["!devobj Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,14 +14,13 @@ api_type:
 
 # !devobj
 
-
 The **!devobj** extension displays detailed information about a DEVICE\_OBJECT structure.
 
 ```dbgcmd
 !devobj DeviceObject 
 ```
 
-## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
+## Parameters
 
 
 <span id="_______DeviceObject______"></span><span id="_______deviceobject______"></span><span id="_______DEVICEOBJECT______"></span> *DeviceObject*   
@@ -33,7 +32,7 @@ Kdexts.dll
 
  
 
-### Additional Information
+## Additional Information
 
 See [Plug and Play Debugging](../debugger/plug-and-play-debugging.md) for examples and applications of this extension command. For information about device objects, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
@@ -75,12 +74,4 @@ DevExt 80e205b0 DevObjExt 80e205b8 DevNode 80e203b8
 ExtensionFlags (0000000000)  
 Device queue is not busy.
 ```
-
- 
-
- 
-
-
-
-
 

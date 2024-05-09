@@ -1,6 +1,6 @@
 ---
-title: .fpo (Control FPO Overrides)
-description: The .fpo command controls the frame pointer omission (FPO) overrides.
+title: ".fpo (Control FPO Overrides)"
+description: "The .fpo command controls the frame pointer omission (FPO) overrides."
 keywords: [".fpo (Control FPO Overrides) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -101,7 +101,7 @@ Removes all FPO overrides within the module that contains the *Address* address.
 <span id="_______-o______"></span><span id="_______-O______"></span> **-o**   
 Displays all FPO overrides within the module that contains the *Address* address.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -116,12 +116,4 @@ Displays all FPO overrides within the module that contains the *Address* address
 Without parameters, the **.fpo** command displays the FPO overrides for the specified address.
 
 Some compilers (including Microsoft Visual Studio 6.0 and earlier versions) generate FPO information to indicate how the stack frame is set up. During stack walking, the debugger uses these FPO records to understand the stack. If the compiler generated incorrect FPO information, you can use the **.fpo** command to fix this problem.
-
- 
-
- 
-
-
-
-
 

@@ -1,7 +1,7 @@
 ---
-title: ndiskd.netqueue
-description: The ndiskd.netqueue extension displays information about a NETTXQUEUE or NETRXQUEUE object.
-keywords: ["ndiskd.netqueue Windows Debugging"]
+title: "!ndiskd.netqueue"
+description: "The !ndiskd.netqueue extension displays information about a NETTXQUEUE or NETRXQUEUE object."
+keywords: ["!ndiskd.netqueue Windows Debugging"]
 ms.date: 06/17/2020
 topic_type:
 - apiref
@@ -104,3 +104,4 @@ By clicking on the NETTXQUEUE's handle or entering the **!ndiskd.netqueue -handl
 [**!ndiskd.netadapter**](-ndiskd-netadapter.md)
 
 [**!ndiskd.cxadapter**](-ndiskd-cxadapter.md)
+

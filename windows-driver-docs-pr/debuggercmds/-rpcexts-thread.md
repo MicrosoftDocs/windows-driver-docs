@@ -1,7 +1,7 @@
 ---
-title: rpcexts.thread
-description: The rpcexts.thread extension displays the per-thread RPC information.This extension command should not be confused with the .thread command.
-keywords: ["rpcexts.thread Windows Debugging"]
+title: "!rpcexts.thread"
+description: "The !rpcexts.thread extension displays the per-thread RPC information.This extension command should not be confused with the .thread command."
+keywords: ["!rpcexts.thread Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !rpcexts.thread
 
-
 The **!rpcexts.thread** extension displays the per-thread RPC information.
 
 This extension command should not be confused with the [**.thread (Set Register Context)**](-thread--set-register-context-.md) command or the [**!thread**](-thread.md) (!kdextx86.thread and !kdexts.thread) extension.
@@ -23,34 +22,16 @@ This extension command should not be confused with the [**.thread (Set Register 
 !rpcexts.thread TEB
 ```
 
-## <span id="ddk__rpcexts_thread_dbg"></span><span id="DDK__RPCEXTS_THREAD_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______TEB______"></span><span id="_______teb______"></span> *TEB*   
 Specifies the address of the thread environment block (TEB).
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Rpcexts.dll</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Rpcexts.dll</p></td>
-</tr>
-</tbody>
-</table>
+Rpcexts.dll
 
- 
-
-### Additional Information
+## Additional Information
 
 For more information about debugging Microsoft Remote Procedure Call (RPC), see [RPC Debugging](../debugger/rpc-debugging.md).
 
@@ -78,12 +59,3 @@ fCallCancelled - 0x0
 buffer cache array at - 0x00692E84
 fAsync - 0x0
 ```
-
- 
-
- 
-
-
-
-
-

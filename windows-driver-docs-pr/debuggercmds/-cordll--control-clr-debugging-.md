@@ -1,6 +1,6 @@
 ---
-title: .cordll (Control CLR Debugging)
-description: The .cordll command controls managed code debugging and the Microsoft .NET common language runtime (CLR).
+title: ".cordll (Control CLR Debugging)"
+description: "The .cordll command controls managed code debugging and the Microsoft .NET common language runtime (CLR)."
 keywords: ["Control CLR Debugging (.cordll) command", "CLR (common language runtime)", ".cordll (Control CLR Debugging) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -61,7 +61,7 @@ Turns on verbose mode for CLR module loading.
 <span id="-vd"></span><span id="-VD"></span>**-vd**  
 Turns off verbose mode for CLR module loading.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -95,3 +95,4 @@ The **.cordll** command is supported in kernel-mode debugging. However, this com
 [Debugging Managed Code Using the Windows Debugger](../debugger/debugging-managed-code.md)
 
 [SOS Debugging Extension](/dotnet/framework/tools/sos-dll-sos-debugging-extension)
+

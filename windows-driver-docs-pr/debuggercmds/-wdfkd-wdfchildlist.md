@@ -1,7 +1,7 @@
 ---
-title: wdfkd.wdfchildlist
-description: The wdfkd.wdfchildlist extension displays a child list's state and information about all of the device identification descriptions that are in the child list.
-keywords: ["wdfkd.wdfchildlist Windows Debugging"]
+title: "!wdfkd.wdfchildlist"
+description: "The !wdfkd.wdfchildlist extension displays a child list's state and information about all of the device identification descriptions that are in the child list."
+keywords: ["!wdfkd.wdfchildlist Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !wdfkd.wdfchildlist
 
-
 The **!wdfkd.wdfchildlist** extension displays a child list's state and information about all of the device identification descriptions that are in the child list.
 
 ```dbgcmd
@@ -23,7 +22,6 @@ The **!wdfkd.wdfchildlist** extension displays a child list's state and informat
 
 ## Parameters
 
-
 <span id="_______Handle______"></span><span id="_______handle______"></span><span id="_______HANDLE______"></span> *Handle*   
 A WDFCHILDLIST-typed handle to the child list.
 
@@ -31,11 +29,11 @@ A WDFCHILDLIST-typed handle to the child list.
 
 Wdfkd.dll
 
-### <span id="Frameworks"></span><span id="frameworks"></span><span id="FRAMEWORKS"></span>Frameworks
+### Frameworks
 
 KMDF 1
 
-### Additional Information
+## Additional Information
 
 For more information, see [Kernel-Mode Driver Framework Debugging](../debugger/kernel-mode-driver-framework-debugging.md).
 
@@ -68,12 +66,3 @@ Callbacks:
 ---------
  EvtChildListCreateDevice:  wdfrawbusenumtest!RawBus_RawPdo_Create (f22263b0)
 ```
-
- 
-
- 
-
-
-
-
-

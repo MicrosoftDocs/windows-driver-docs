@@ -1,6 +1,6 @@
 ---
-title: ux (Unassemble x86 BIOS)
-description: The ux command displays the instruction set of the x86-based BIOS code.
+title: "ux (Unassemble x86 BIOS)"
+description: "The ux command displays the instruction set of the x86-based BIOS code."
 keywords: ["ux (Unassemble x86 BIOS) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -25,7 +25,7 @@ The **ux** command displays the instruction set of the x86-based BIOS code.
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the memory offset within the x86-based BIOS code. If you omit this parameter or specify zero, the default offset is the beginning of the BIOS.
 
-### Environment
+## Environment
 
 <table>
 <colgroup>
@@ -50,7 +50,7 @@ Specifies the memory offset within the x86-based BIOS code. If you omit this par
 
  
 
-### Additional Information
+## Additional Information
 
 For more information about how to debug BIOS code, see [Debugging BIOS Code](../debugger/debugging-bios-code.md).
 
@@ -59,12 +59,4 @@ For more information about how to debug BIOS code, see [Debugging BIOS Code](../
 The debugger displays the instructions that are generated from the first eight lines of code, beginning at the *Address* offset.
 
 To make the **ux** command work correctly, HAL symbols must be available to the debugger. If the debugger cannot find these symbols, the debugger displays a "couldn't resolve" error.
-
- 
-
- 
-
-
-
-
 

@@ -1,7 +1,7 @@
 ---
-title: errrec (WinDbg)
-description: The errrec extension displays the contents of a Windows Hardware Error Architecture (WHEA) error record.
-keywords: ["errrec Windows Debugging"]
+title: "!errrec (WinDbg)"
+description: "The !errrec extension displays the contents of a Windows Hardware Error Architecture (WHEA) error record."
+keywords: ["!errrec Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -58,7 +58,7 @@ Specifies the address of the error record.
 
 This extension can be used only in Windows Vista and later versions of Windows.
 
-### Additional Information
+## Additional Information
 
 The [**!whea**](-whea.md) and [**!errpkt**](-errpkt.md) extensions can be used to display additional WHEA information. For general information about WHEA, see [Windows Hardware Error Architecture (WHEA)](../whea/index.md) in the Windows Driver Kit (WDK) documentation.
 
@@ -154,4 +154,5 @@ Bank Number      : 0
 ```
 
  
+
 

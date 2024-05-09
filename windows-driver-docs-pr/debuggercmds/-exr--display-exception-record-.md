@@ -1,6 +1,6 @@
 ---
-title: .exr (Display Exception Record)
-description: The .exr command displays the contents of an exception record.
+title: ".exr (Display Exception Record)"
+description: "The .exr command displays the contents of an exception record."
 keywords: ["Display Exception Record (.exr) command", "exception record", ".exr (Display Exception Record) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -14,7 +14,6 @@ api_type:
 
 # .exr (Display Exception Record)
 
-
 The **.exr** command displays the contents of an exception record.
 
 ```dbgcmd
@@ -22,21 +21,17 @@ The **.exr** command displays the contents of an exception record.
 .exr -1
 ```
 
-## <span id="ddk_meta_display_exception_record_dbg"></span><span id="DDK_META_DISPLAY_EXCEPTION_RECORD_DBG"></span>Parameters
+## Parameters
 
+<span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address* - Specifies the address of the exception record. If you specify **-1** as the address, the debugger displays the most recent exception.
 
-<span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
-Specifies the address of the exception record. If you specify **-1** as the address, the debugger displays the most recent exception.
-
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
 |Modes   |User mode, kernel mode|
 |Targets |Live, crash dump      |
 |Platforms|All                  |
-
- 
 
 ## Remarks
 
@@ -46,11 +41,13 @@ You can usually obtain the *Address* by using the [**!pcr**](-pcr.md) extension.
 
 The **.exr** command is often used to debug bug check 0x1E. For more information and an example, see [**Bug Check 0x1E**](../debugger/bug-check-0x1e--kmode-exception-not-handled.md) (KMODE\_EXCEPTION\_NOT\_HANDLED).
 
- 
+## See also
 
- 
+[Changing Contexts](../debugger/changing-contexts.md)
 
+[Register Context](../debugger/changing-contexts.md#register-context)
 
+[.ecxr (Display Exception Context Record)](-ecxr--display-exception-context-record-.md)
 
-
+[.trap](-trap--display-trap-frame-.md)
 

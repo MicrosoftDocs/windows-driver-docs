@@ -1,6 +1,6 @@
 ---
-title: rdmsr (Read MSR)
-description: The rdmsr command reads a Model-Specific Register (MSR) value from the specified address.
+title: "rdmsr (Read MSR)"
+description: "The rdmsr command reads a Model-Specific Register (MSR) value from the specified address."
 keywords: ["rdmsr (Read MSR) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -27,7 +27,7 @@ rdmsr Address
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the address of the MSR.
 
-### Environment
+## Environment
 
 <table>
 <colgroup>
@@ -56,17 +56,9 @@ Specifies the address of the MSR.
 
 The **rdmsr** command can display MSR's on x86-based and x64-based platforms. The MSR definitions are platform-specific.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**wrmsr (Write MSR)**](wrmsr--write-msr-.md)
-
- 
-
- 
-
-
-
-
 
 

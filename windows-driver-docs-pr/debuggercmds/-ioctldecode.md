@@ -1,7 +1,7 @@
 ---
-title: ioctldecode
-description: The ioctldecode extension displays the Device Type, Required Access, Function Code and Transfer Type as specified by the given IOCTL code. 
-keywords: ["ioctldecode Windows Debugging"]
+title: "!ioctldecode"
+description: "The !ioctldecode extension displays the Device Type, Required Access, Function Code and Transfer Type as specified by the given IOCTL code. "
+keywords: ["!ioctldecode Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -30,7 +30,7 @@ Specifies the hexadecimal IOCTL Code. The [**!irp**](-irp.md) command displays t
 
 Kdexts.dll
 
-### Additional Information
+## Additional Information
 
 To see information on the IOCTL, we first locate an IRP of interest. You can use the [**!irpfind**](-irpfind.md) command to locate an irp of interest.
 

@@ -1,7 +1,7 @@
 ---
-title: wdfkd.wdfqueue
-description: The wdfkd.wdfqueue extension displays information about a specified framework queue object and the framework request objects that are in the queue.
-keywords: ["wdfkd.wdfqueue Windows Debugging"]
+title: "!wdfkd.wdfqueue"
+description: "The !wdfkd.wdfqueue extension displays information about a specified framework queue object and the framework request objects that are in the queue."
+keywords: ["!wdfkd.wdfqueue Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !wdfkd.wdfqueue
 
-
 The **!wdfkd.wdfqueue** extension displays information about a specified framework queue object and the framework request objects that are in the queue.
 
 ```dbgcmd
@@ -23,7 +22,6 @@ The **!wdfkd.wdfqueue** extension displays information about a specified framewo
 
 ## Parameters
 
-
 <span id="_______Handle______"></span><span id="_______handle______"></span><span id="_______HANDLE______"></span> *Handle*   
 A handle to a framework queue object.
 
@@ -31,11 +29,11 @@ A handle to a framework queue object.
 
 Wdfkd.dll
 
-### <span id="Frameworks"></span><span id="frameworks"></span><span id="FRAMEWORKS"></span>Frameworks
+### Frameworks
 
 KMDF 1, UMDF 2
 
-### Additional Information
+## Additional Information
 
 For more information, see [Kernel-Mode Driver Framework Debugging](../debugger/kernel-mode-driver-framework-debugging.md).
 
@@ -57,12 +55,3 @@ Parallel, Power-managed, PowerOff, Can accept, Can dispatch, ExecutionLevelDispa
 ```
 
 The queue in the preceding example is configured for parallel dispatching, is power-managed but is currently in the Off state, and can both accept and dispatch requests.
-
- 
-
- 
-
-
-
-
-

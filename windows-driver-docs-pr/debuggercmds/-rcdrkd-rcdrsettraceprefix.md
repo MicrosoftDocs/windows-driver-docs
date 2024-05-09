@@ -1,7 +1,7 @@
 ---
-title: rcdrkd.rcdrsettraceprefix
-description: The rcdrkd.rcdrsettraceprefix extension sets the trace message prefix.
-keywords: ["rcdrkd.rcdrsettraceprefix Windows Debugging"]
+title: "!rcdrkd.rcdrsettraceprefix"
+description: "The !rcdrkd.rcdrsettraceprefix extension sets the trace message prefix."
+keywords: ["!rcdrkd.rcdrsettraceprefix Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -21,14 +21,12 @@ The **!rcdrkd.rcdrsettraceprefix** extension sets the trace message prefix.
 !rcdrkd.rcdrsettraceprefix TracePrefixString 
 ```
 
-## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______TracePrefixString______"></span><span id="_______traceprefixstring______"></span><span id="_______TRACEPREFIXSTRING______"></span> *TracePrefixString*   
 The trace message prefix string.
 
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Rcdrkd.dll
 
@@ -66,10 +64,6 @@ Trying to extract TMF information from - C:\ProgramData\dbg\sym\usbxhci.pdb\D4C8
 ---- end of log ----
 ```
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [RCDRKD Extensions](rcdrkd-extensions.md)
-
- 
-

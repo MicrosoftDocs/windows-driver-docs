@@ -1,6 +1,6 @@
 ---
-title: .record_branches (Enable Branch Recording)
-description: The .record_branches command enables the recording of branches that the target's code executed.
+title: ".record_branches (Enable Branch Recording)"
+description: "The .record_branches command enables the recording of branches that the target's code executed."
 keywords: ["Enable Branch Recording (.record_branches) command", ".record_branches (Enable Branch Recording) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -14,7 +14,6 @@ api_type:
 
 # .record\_branches (Enable Branch Recording)
 
-
 The **.record\_branches** command enables the recording of branches that the target's code executed.
 
 ```dbgcmd
@@ -22,10 +21,7 @@ The **.record\_branches** command enables the recording of branches that the tar
 .record_branches
 ```
 
-## <span id="ddk_meta_enable_branch_recording_dbg"></span><span id="DDK_META_ENABLE_BRANCH_RECORDING_DBG"></span>
-
-
-### Environment
+## Environment
 
 <table>
 <colgroup>
@@ -48,19 +44,8 @@ The **.record\_branches** command enables the recording of branches that the tar
 </tbody>
 </table>
 
- 
-
 ## Remarks
 
 The **.record\_branches 1** command enables the recording of branches in the target's code. The **.record\_branches 0** command disables this recording.
 
 Without parameters, **.record\_branches** displays the current status of this setting.
-
- 
-
- 
-
-
-
-
-

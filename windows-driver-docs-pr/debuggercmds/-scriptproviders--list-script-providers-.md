@@ -1,6 +1,6 @@
 ---
-title: .scriptproviders (List Script Providers)
-description: The .scriptproviders command lists the active script providers.
+title: ".scriptproviders (List Script Providers)"
+description: "The .scriptproviders command lists the active script providers."
 keywords: [".scriptproviders (List Script Providers) Windows Debugging"]
 ms.date: 02/02/2021
 topic_type:
@@ -27,7 +27,7 @@ The **.scriptproviders** command lists the active script providers.
 <span id="_______________"></span>    
 None
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -37,7 +37,7 @@ None
 
  
 
-### Additional Information
+## Additional Information
 
 The .scriptproviders command will list all the script languages which are presently understood by the debugger and the extension under which they are registered. Any file ending in ".NatVis" is understood as a NatVis script and any file ending in ".js" is understood as a JavaScript script. Either type of script can be loaded with the .scriptload command.
 
@@ -50,7 +50,7 @@ Available Script Providers:
     JavaScript (extension '.js')
 ```
 
-**Requirements**
+### Requirements
 
 Before using any of the .script commands, a scripting provider needs to be loaded.
 
@@ -59,3 +59,4 @@ Before using any of the .script commands, a scripting provider needs to be loade
 [JavaScript Debugger Scripting](../debugger/javascript-debugger-scripting.md)
 
 [**.scriptload (Load Script)**](-scriptload--load-script-.md)
+

@@ -1,7 +1,7 @@
 ---
-title: usbkd.usbdpc
-description: The usbkd.usbdpc command displays information stored in an _XDPC_CONTEXT structure.
-keywords: ["usbkd.usbdpc Windows Debugging"]
+title: "!usbkd.usbdpc"
+description: "The !usbkd.usbdpc command displays information stored in an _XDPC_CONTEXT structure."
+keywords: ["!usbkd.usbdpc Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,21 +14,18 @@ api_type:
 
 # !usbkd.usbdpc
 
-
 The **!usbkd.usbdpc** command displays information stored in an **\_XDPC\_CONTEXT** structure.
 
 ```dbgcmd
 !usbkd.usbdpc StructAddr
 ```
 
-## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______StructAddr______"></span><span id="_______structaddr______"></span><span id="_______STRUCTADDR______"></span> *StructAddr*   
 Address of a **usbport!\_XDPC\_CONTEXT** structure. To get the XDPC list for a USB host controller, use the [**!usbkd.usbhcdext**](-usbkd-usbhcdext.md) command.
 
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Usbkd.dll
 
@@ -68,7 +65,7 @@ In the preceding output, `ffffe00001c7df18` is the address of an **\_XDPC\_CONTE
 
 dt USBPORT!_XDPC_CONTEXT ffffe00001c7df18
 
-## XDPC HISTORY (latest at boottom)
+## XDPC HISTORY (latest at bottom)
 
 ##      EVENT                STATE                   NEXT
 
@@ -82,12 +79,8 @@ dt USBPORT!_XDPC_CONTEXT ffffe00001c7df18
 [08] Ev_Xdpc_End          XDPC_Running            XDPC_Enabled
 ```
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
-
- 
-

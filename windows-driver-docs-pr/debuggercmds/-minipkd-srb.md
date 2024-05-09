@@ -1,6 +1,6 @@
 ---
-title: minipkd.srb
-description: The minipkd.srb extension displays the specified SCSI request block (SRB) data structure.
+title: "!minipkd.srb"
+description: "The !minipkd.srb extension displays the specified SCSI request block (SRB) data structure."
 keywords: ["minipkd.srb Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -29,26 +29,11 @@ Specifies the address of an SRB.
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Unavailable</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Minipkd.dll</p></td>
-</tr>
-</tbody>
-</table>
+Minipkd.dll
 
  
 
-### Additional Information
+## Additional Information
 
 For more information, see [SCSI Miniport Debugging](../debugger/scsi-miniport-debugging.md).
 
@@ -57,12 +42,4 @@ For more information, see [SCSI Miniport Debugging](../debugger/scsi-miniport-de
 The addresses of all currently active requests can be found in the *SRB* fields of the output from the [**!minipkd.req**](-minipkd-req.md) command.
 
 This extension displays the status of the SRB, the driver it is addressed to, the SCSI that issued the SRB and its address, and a hexadecimal flag value. If 0x10000 is set in the flag value, this request is currently in the miniport.
-
- 
-
- 
-
-
-
-
 

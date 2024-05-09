@@ -1,7 +1,7 @@
 ---
-title: ndiskd.ndisslot
-description: The **!ndiskd.ndisslot** extension displays the contents of an NDIS per-processor variable.
-keywords: ["ndiskd.ndisslot Windows Debugging"]
+title: "!ndiskd.ndisslot"
+description: "The **!ndiskd.ndisslot** extension displays the contents of an NDIS per-processor variable."
+keywords: ["!ndiskd.ndisslot Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -88,7 +88,7 @@ Clicking on one of the handles for the per-processor slot variables will show yo
     03                 00000006
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [Network Driver Design Guide](../network/index.md)
@@ -102,4 +102,5 @@ Clicking on one of the handles for the per-processor slot variables will show yo
 [**!ndiskd.help**](-ndiskd-help.md)
 
  
+
 

@@ -110,7 +110,7 @@ Stacks | Each Windows application thread starts with a stack reserve and a stack
 
 ## LuaPriv
 
-Limited User Account Privilege Predictor (LuaPriv) tests are both Predictive and diagnostic an work to surface issues related to running an application with administrative privilege, and whether that application would work as well if run with less privilege (generally, as a normal user).
+Limited User Account Privilege Predictor (LuaPriv) tests are both Predictive and diagnostic and work to surface issues related to running an application with administrative privilege, and whether that application would work as well if run with less privilege (generally, as a normal user).
 
 Also known as UAC checks, the Limited User Account Privilege Predictor (LuaPriv) has two primary goals:
 
@@ -411,7 +411,7 @@ Target names can be specified in three different formats, each of which is can b
 
  o specify a target name for an application running in the context of the server operating system (e.g. localsystem, network service or localservice) client applications can use the automatically-registered “host” SPN or one of its aliases. To authenticate to an application running in the context of a domain user account you must register an SPN for that account. 
 
-For user accounts you can also use the implicit UPN form that built from the user account name tha and the domain that the account resides in: useraccountname@domain.dom. Although you can create additional UPNs for user account (using the UPN suffixes that can be created for each domain) these will not work as Kerberos targetnames – only the UPN corresponding to the actual logon account name and actual domain where the account lives can be used. 
+For user accounts you can also use the implicit UPN form that built from the user account name and the domain that the account resides in: useraccountname@domain.dom. Although you can create additional UPNs for user account (using the UPN suffixes that can be created for each domain) these will not work as Kerberos targetnames – only the UPN corresponding to the actual logon account name and actual domain where the account lives can be used. 
 
 Finally you can still use the NT4-style domain\username (or domain\computername in the case of services running as localsystem, networkservice or localservice). This works for targets that are running in the context of domain user account or computer accounts. 
 

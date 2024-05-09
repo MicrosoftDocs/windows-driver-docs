@@ -32,7 +32,7 @@ Specifies the **!amli** command whose help is to be displayed. For example, **!a
 
 Kdexts.dll
 
-### Additional Information
+## Additional Information
 
 For information about related commands and their uses, see [The AMLI Debugger](../debugger/the-amli-debugger.md).
 

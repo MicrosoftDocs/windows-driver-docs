@@ -1,7 +1,7 @@
 ---
-title: ubp (WinDbg)
-description: The ubp extension sets a breakpoint in user space.
-keywords: ["ubp Windows Debugging"]
+title: "!ubp (WinDbg)"
+description: "The !ubp extension sets a breakpoint in user space."
+keywords: ["!ubp Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,15 +14,13 @@ api_type:
 
 # !ubp
 
-
 The **!ubp** extension sets a breakpoint in user space.
 
 ```dbgcmd
 !ubp Address 
 ```
 
-## <span id="ddk__ubp_dbg"></span><span id="DDK__UBP_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the hexadecimal virtual address of the location in user space where the breakpoint is to be set.
@@ -30,8 +28,6 @@ Specifies the hexadecimal virtual address of the location in user space where th
 ### DLL
 
 Kdexts.dll
-
- 
 
 ## Remarks
 
@@ -45,8 +41,7 @@ It is not possible to set a breakpoint inside a page table or a page directory.
 
 Each breakpoint is assigned a *breakpoint number*. To find out the breakpoint number assigned, use [**!ubl**](-ubl.md). Breakpoints are enabled upon creation. To step over a breakpoint, you must first disable it by using [**!ubd**](-ubd.md). To clear a breakpoint, use [**!ubc**](-ubc.md).
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**!ubc**](-ubc.md)
 
@@ -57,13 +52,3 @@ Each breakpoint is assigned a *breakpoint number*. To find out the breakpoint nu
 [**!ubl**](-ubl.md)
 
 [User Space and System Space](../debugger/user-space-and-system-space.md)
-
- 
-
- 
-
-
-
-
-
-

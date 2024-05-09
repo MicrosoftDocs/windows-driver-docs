@@ -1,6 +1,6 @@
 ---
-title: User-Mode Extensions
-description: User-Mode Extensions
+title: "User-Mode Extensions"
+description: "User-Mode Extensions"
 keywords: ["extension commands ( commands), user-mode extensions", "ntsdexts.dll (user-mode extensions)", "uext.dll (user-mode extensions)", "user-mode extensions (ntsdexts.dll and uext.dll)"]
 ms.date: 05/23/2017
 ---
@@ -20,12 +20,4 @@ Each extension command reference page lists the DLLs that expose that command. U
 -   If your target application is running on Windows XP or a later version of Windows, use winxp\\Ntsdexts.dll.
 
 In addition, user-mode extensions that are not specific to any single operating system can be found in winext\\Uext.dll.
-
- 
-
- 
-
-
-
-
 

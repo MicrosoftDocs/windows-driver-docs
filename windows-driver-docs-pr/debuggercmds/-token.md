@@ -1,7 +1,7 @@
 ---
-title: token (WinDbg)
-description: The token extension displays a formatted view of a security token object.
-keywords: ["token", "security token", "token Windows Debugging"]
+title: "!token (WinDbg)"
+description: "The !token extension displays a formatted view of a security token object."
+keywords: ["token", "security token", "!token Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -13,7 +13,6 @@ api_type:
 ---
 
 # !token
-
 
 The **!token** extension displays a formatted view of a security token object.
 
@@ -31,8 +30,7 @@ User-Mode Syntax:
 !token -?
 ```
 
-## <span id="ddk__token_dbg"></span><span id="DDK__TOKEN_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 (Kernel mode only) Specifies the address of the token to be displayed. If this is 0 or omitted, the token for the active thread is displayed.
@@ -52,7 +50,7 @@ Exts.dll
 
 The **!token** command is available in kernel-mode and live user-mode debugging. It cannot be used on user-mode dump files.
 
-### Additional Information
+## Additional Information
 
 For information about the kernel-mode TOKEN structure, see *Microsoft Windows Internals* by Mark Russinovich and David Solomon. For information about the user-mode TOKEN structure, see the Microsoft Windows SDK documentation.
 
@@ -166,12 +164,3 @@ Token ID: 18296            ParentToken ID: 0
 Modified ID:               (0, 18298)
 RestrictedSidCount: 0      RestrictedSids: 00000000
 ```
-
- 
-
- 
-
-
-
-
-

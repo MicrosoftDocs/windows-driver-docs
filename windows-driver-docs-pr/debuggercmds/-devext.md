@@ -1,7 +1,7 @@
 ---
-title: devext (WinDbg)
-description: The devext extension displays bus-specific device extension information for devices on a variety of buses.
-keywords: ["usbhub extension (obsolete)", "hidfdo extension (obsolete)", "hidpdo extension (obsolete)", "device extension", "bus", "devext Windows Debugging"]
+title: "!devext (WinDbg)"
+description: "The !devext extension displays bus-specific device extension information for devices on a variety of buses."
+keywords: ["usbhub extension (obsolete)", "hidfdo extension (obsolete)", "hidpdo extension (obsolete)", "device extension", "bus", "!devext Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -41,7 +41,7 @@ Specifies the type of object that owns the device extension to be displayed. Typ
 Kdexts.dll
  
 
-### Additional Information
+## Additional Information
 
 See [Plug and Play Debugging](../debugger/plug-and-play-debugging.md) for applications of this extension command. For more information about device extensions, see the Windows Driver Kit (WDK) documentation.
 
@@ -88,12 +88,4 @@ PDO Extension, Bus 0x0, Device 0, Function 0.
   WakeLevel:             System Unspecified,  Device Unspecified
   Requirements: <none>
 ```
-
- 
-
- 
-
-
-
-
 

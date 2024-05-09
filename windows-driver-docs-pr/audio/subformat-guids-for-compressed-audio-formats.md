@@ -66,7 +66,7 @@ The GUIDs for the available compressed audio formats are listed in the following
 <td align="left"><p>0x05</p></td>
 <td align="left"><p>00000004-0cea-0010-8000-00aa00389b71</p>
 <p>KSDATAFORMAT_SUBTYPE_IEC61937_MPEG2</p></td>
-<td align="left"><p>MPEG-2 (Multichanel)</p></td>
+<td align="left"><p>MPEG-2 (Multichannel)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x06</p></td>

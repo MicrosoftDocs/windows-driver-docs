@@ -1,7 +1,7 @@
 ---
-title: prcb (WinDbg)
-description: The prcb extension displays the processor control block (PRCB).
-keywords: ["processor control block", "prcb Windows Debugging"]
+title: "!prcb (WinDbg)"
+description: "The !prcb extension displays the processor control block (PRCB)."
+keywords: ["processor control block", "!prcb Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -13,7 +13,6 @@ api_type:
 ---
 
 # !prcb
-
 
 The **!prcb** extension displays the processor control block (PRCB).
 
@@ -29,11 +28,9 @@ Specifies the processor to retrieve the PRCB information from. If *Processor* is
 
 ## DLL
 
-Windows XP and later - Kdexts.dll
+Kdexts.dll
 
- 
-
-### Additional Information
+## Additional Information
 
 For information about the PCR and the PRCB, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
 
@@ -52,12 +49,3 @@ Interrupt Count -- 0000b81f
 Times -- Dpc    00000028 Interrupt 000003ff 
          Kernel 00005ef4 User      00000385 
 ```
-
- 
-
- 
-
-
-
-
-

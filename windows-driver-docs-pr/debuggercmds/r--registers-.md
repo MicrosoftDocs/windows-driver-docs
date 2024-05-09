@@ -1,6 +1,6 @@
 ---
-title: r (Registers)
-description: The r command displays or modifies registers, floating-point registers, flags, pseudo-registers, and fixed-name aliases.
+title: "r (Registers)"
+description: "The r command displays or modifies registers, floating-point registers, flags, pseudo-registers, and fixed-name aliases."
 keywords: ["r (Registers) Windows Debugging"]
 ms.date: 07/11/2018
 topic_type:
@@ -141,7 +141,7 @@ Specifies the value to assign to the register. For more information about the sy
  **.**   
 Displays the registers used in the current instruction. If no registers are used, no output is displayed.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -151,7 +151,7 @@ Displays the registers used in the current instruction. If no registers are used
 
  
 
-### Additional Information
+## Additional Information
 
 For more information about the register context and other context settings, see [Changing Contexts](../debugger/changing-contexts.md).
 
@@ -319,13 +319,5 @@ Here is an example of the **r.** command on an x86-based processor. The last ent
 0:000> r.
 ebp=0006ffc0  esp=0006ff7c
 ```
-
-
- 
-
- 
-
-
-
 
 

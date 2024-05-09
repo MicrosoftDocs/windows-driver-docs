@@ -1,7 +1,7 @@
 ---
-title: mps (WinDbg)
-description: The mps extension displays BIOS information for the Intel Multiprocessor Specification (MPS) of the target computer.
-keywords: ["mps Windows Debugging"]
+title: "!mps (WinDbg)"
+description: "The !mps extension displays BIOS information for the Intel Multiprocessor Specification (MPS) of the target computer."
+keywords: ["!mps Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -13,7 +13,6 @@ api_type:
 ---
 
 # !mps
-
 
 The **!mps** extension displays BIOS information for the Intel Multiprocessor Specification (MPS) of the target computer.
 
@@ -35,15 +34,7 @@ Kdexts.dll
 
 This extension command can only be used with an x86-based target computer.
 
-### Additional Information
+## Additional Information
 
 For more information about BIOS debugging, see [Debugging BIOS Code](../debugger/debugging-bios-code.md). For more information about the MPS, refer to the appropriate version of the Intel MultiProcessor Specification.
-
- 
-
- 
-
-
-
-
 

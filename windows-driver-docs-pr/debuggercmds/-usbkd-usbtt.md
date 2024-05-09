@@ -1,7 +1,7 @@
 ---
-title: usbkd.usbtt
-description: The usbkd.usbtt command displays information from a USBPORT _TRANSACTION_TRANSLATOR structure.
-keywords: ["usbkd.usbtt Windows Debugging"]
+title: "!usbkd.usbtt"
+description: "The !usbkd.usbtt command displays information from a USBPORT _TRANSACTION_TRANSLATOR structure."
+keywords: ["!usbkd.usbtt Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,21 +14,18 @@ api_type:
 
 # !usbkd.usbtt
 
-
 The **!usbkd.usbtt** command displays information from a **USBPORT!\_TRANSACTION\_TRANSLATOR** structure.
 
 ```dbgcmd
 !usbkd.usbtt StructAddr
 ```
 
-## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______StructAddr______"></span><span id="_______structaddr______"></span><span id="_______STRUCTADDR______"></span> *StructAddr*   
 Address of a **usbport!\_TRANSACTION\_TRANSLATOR** structure. To get the transaction translator list for a USB host controller, use the [**!usbkd.usbhcdext**](-usbkd-usbhcdext.md) command.
 
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Usbkd.dll
 
@@ -47,12 +44,8 @@ In the preceding output, the address of the device extension of the FDO is displ
 
 Either click the DML command or pass the address of the device extension to [**!usbhcdext**](-usbkd-usbhcdext.md) to get the address of `GlobalTtListHead`. Pass that address to [**!usbkd.usblist**](-usbkd-usblist.md), which will display addresses of **\_TRANSACTION\_TRANSLATOR** structures.
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
-
- 
-

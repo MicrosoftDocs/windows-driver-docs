@@ -1,6 +1,6 @@
 ---
-title: .endsrv (End Debugging Server)
-description: The .endsrv command causes the debugger to cancel an active debugging server.
+title: ".endsrv (End Debugging Server)"
+description: "The .endsrv command causes the debugger to cancel an active debugging server."
 keywords: [".endsrv (End Debugging Server) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -27,7 +27,7 @@ The **.endsrv** command causes the debugger to cancel an active debugging server
 <span id="_______ServerID______"></span><span id="_______serverid______"></span><span id="_______SERVERID______"></span> *ServerID*   
 Specifies the ID of the debugging server.
 
-### Environment
+## Environment
 
 You can use this command only when you are performing remote debugging through the debugger.
 
@@ -39,7 +39,7 @@ You can use this command only when you are performing remote debugging through t
 
  
 
-### Additional Information
+## Additional Information
 
 For more information about remote debugging, see [Remote Debugging Through the Debugger](../debugger/remote-debugging-through-the-debugger.md).
 
@@ -100,4 +100,5 @@ HotMachine\HostUser, last active Mon Mar 04 16:05:21 2002
  
 
  
+
 

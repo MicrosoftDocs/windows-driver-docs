@@ -1,7 +1,7 @@
 ---
-title: error (WinDbg)
-description: The error extension decodes and displays information about an error value.
-keywords: ["error codes", "Win32 error codes", "WinSock error codes", "error Windows Debugging"]
+title: "!error (WinDbg)"
+description: "The !error extension decodes and displays information about an error value."
+keywords: ["error codes", "Win32 error codes", "WinSock error codes", "!error Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -40,22 +40,10 @@ If *Flags* is set to 1, the error code is read as an NTSTATUS code.
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Ext.dll</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Ext.dll</p></td>
-</tr>
-</tbody>
-</table>
+
+Ext.dll
+
+
 
  
 
@@ -69,12 +57,4 @@ Error code: (Win32) 0x2 (2) - The system cannot find the file specified.
 0:000> !error 2 1
 Error code: (NTSTATUS) 0x2 - STATUS_WAIT_2
 ```
-
- 
-
- 
-
-
-
-
 

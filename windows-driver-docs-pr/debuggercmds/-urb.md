@@ -1,20 +1,10 @@
 ---
-title: urb (WinDbg)
-description: urb
-keywords: ["urb extension (obsolete)"]
-ms.date: 05/23/2017
+title: "!urb (WinDbg)"
+description: "The !urb extension command is obsolete."
+keywords: ["!urb extension (obsolete)"]
+ms.date: 04/02/2024
 ---
 
 # !urb
 
-
 The **!urb** extension command is obsolete. Use the [**dt URB**](dt--display-type-.md) command instead.
-
- 
-
- 
-
-
-
-
-

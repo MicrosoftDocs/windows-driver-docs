@@ -1,6 +1,6 @@
 ---
-title: Register Syntax
-description: Register Syntax
+title: "Register Syntax"
+description: "Register Syntax"
 keywords: ["expressions, registers", "registers, command syntax", "(register prefix)", "syntax rules for commands, (register prefix)", "syntax rules for commands, registers"]
 ms.date: 05/23/2017
 ---
@@ -38,12 +38,4 @@ Each thread has its own register values. These values are stored in the CPU regi
 In user mode, any reference to a register is interpreted as the register that is associated with the current thread. For more information about the current thread, see [Controlling Processes and Threads](../debugger/controlling-processes-and-threads.md).
 
 In kernel mode, any reference to a register is interpreted as the register that is associated with the current register context. You can set the register context to match a specific thread, context record, or trap frame. You can display only the most important registers for the specified register context, and you cannot change their values.
-
- 
-
- 
-
-
-
-
 

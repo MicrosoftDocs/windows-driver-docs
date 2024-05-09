@@ -1,7 +1,7 @@
 ---
-title: igrep (WinDbg)
-description: The igrep extension searches for a pattern in disassembly.
-keywords: ["igrep Windows Debugging"]
+title: "!igrep (WinDbg)"
+description: "The !igrep extension searches for a pattern in disassembly."
+keywords: ["!igrep Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -13,7 +13,6 @@ api_type:
 ---
 
 # !igrep
-
 
 The **!igrep** extension searches for a pattern in disassembly.
 
@@ -48,14 +47,3 @@ Specifies the hexadecimal address at which to begin searching. If omitted, the c
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
- 
-
-
-
-
-

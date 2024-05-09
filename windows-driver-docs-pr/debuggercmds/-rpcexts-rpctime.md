@@ -1,7 +1,7 @@
 ---
-title: rpcexts.rpctime
-description: The rpcexts.rpctime extension displays the current system time.
-keywords: ["rpcexts.rpctime Windows Debugging"]
+title: "!rpcexts.rpctime"
+description: "The !rpcexts.rpctime extension displays the current system time."
+keywords: ["!rpcexts.rpctime Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,36 +14,15 @@ api_type:
 
 # !rpcexts.rpctime
 
-
 The **!rpcexts.rpctime** extension displays the current system time.
 
 ```dbgcmd
 !rpcexts.rpctime 
 ```
 
-## <span id="ddk__rpcexts_rpctime_dbg"></span><span id="DDK__RPCEXTS_RPCTIME_DBG"></span>
-
-
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Rpcexts.dll</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Rpcexts.dll</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+Rpcexts.dll
 
 ## Remarks
 
@@ -55,12 +34,3 @@ Here is an example:
 0:001> !rpcexts.rpctime
 Current time is: 059931.126  (0x00ea1b.07e)
 ```
-
- 
-
- 
-
-
-
-
-

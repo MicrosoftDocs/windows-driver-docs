@@ -1,7 +1,7 @@
 ---
-title: poolfind (WinDbg)
-description: The poolfind extension finds all instances of a specific pool tag in either nonpaged or paged memory pools.
-keywords: ["poolfind Windows Debugging"]
+title: "!poolfind (WinDbg)"
+description: "The !poolfind extension finds all instances of a specific pool tag in either nonpaged or paged memory pools."
+keywords: ["!poolfind Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !poolfind
 
-
 The **!poolfind** extension finds all instances of a specific pool tag in either nonpaged or paged memory pools.
 
 ```dbgcmd
@@ -22,8 +21,7 @@ The **!poolfind** extension finds all instances of a specific pool tag in either
 !poolfind TagValue [PoolType] 
 ```
 
-## <span id="ddk__poolfind_dbg"></span><span id="DDK__POOLFIND_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______TagString______"></span><span id="_______tagstring______"></span><span id="_______TAGSTRING______"></span> *TagString*   
 Specifies the pool tag. *TagString* is a case-sensitive ASCII string. The asterisk (\*) can be used to represent any number of characters; the question mark (?) can be used to represent exactly one character. Unless an asterisk is used, *TagString* must be exactly four characters in length.
@@ -46,13 +44,11 @@ Specifies the special pool.
 <span id="4"></span>4  
 Specifies the session pool.
 
-### DLL
+## DLL
 
 Kdexts.dll
 
- 
-
-### Additional Information
+## Additional Information
 
 For information about memory pools and pool tags, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
 
@@ -108,12 +104,3 @@ e1224250 size:   a0 previous size:   30  (Allocated) SeSd
 ...terminating - searched pool to e1224000
 kd> 
 ```
-
- 
-
- 
-
-
-
-
-

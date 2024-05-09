@@ -1,6 +1,6 @@
 ---
-title: .srcfix, .lsrcfix (Use Source Server)
-description: The .srcfix and .lsrcfix commands automatically set the source path to indicate that a source server will be used.
+title: ".srcfix, .lsrcfix (Use Source Server)"
+description: "The .srcfix and .lsrcfix commands automatically set the source path to indicate that a source server will be used."
 keywords: [".srcfix, .lsrcfix (Use Source Server) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -14,7 +14,6 @@ api_type:
 
 # .srcfix, .lsrcfix (Use Source Server)
 
-
 The **.srcfix** and **.lsrcfix** commands automatically set the source path to indicate that a source server will be used.
 
 ```dbgcmd
@@ -22,8 +21,7 @@ The **.srcfix** and **.lsrcfix** commands automatically set the source path to i
 .lsrcfix[+] [Paths] 
 ```
 
-## <span id="ddk_meta_use_source_server_dbg"></span><span id="DDK_META_USE_SOURCE_SERVER_DBG"></span>Parameters
-
+## Parameters
 
 <span id="______________"></span> **+**   
 Causes the existing source path to be preserved, and **; srv\\*** to be appended to the end. If the **+** is not used, the existing source path is replaced.
@@ -31,7 +29,7 @@ Causes the existing source path to be preserved, and **; srv\\*** to be appended
 <span id="_______Paths______"></span><span id="_______paths______"></span><span id="_______PATHS______"></span> *Paths*   
 Specifies one or more additional paths to append to the end of the new source path.
 
-### Environment
+## Environment
 
 The **.srcfix** command is available on all debuggers. The **.lsrcfix** command is available only in WinDbg and cannot be used in script files.
 
@@ -41,7 +39,7 @@ The **.srcfix** command is available on all debuggers. The **.lsrcfix** command 
 |Targets |Live, crash dump      |
 |Platforms|All                  |
 
-### Additional Information
+## Additional Information
 
 For more information on setting the local source path for a remote client, see [**WinDbg Command-Line Options**](../debugger/windbg-command-line-options.md). For details about [SrcSrv](../debugger/srcsrv.md), see [Using a Source Server](../debugger/using-a-source-server.md). For details on the source path and the local source path, see [Source Path](../debugger/source-path.md). For more information about commands that can be used while performing remote debugging through the debugger, see [Controlling a Remote Debugging Session](../debugger/controlling-a-remote-debugging-session.md).
 

@@ -1,6 +1,6 @@
 ---
-title: TTD Thread Objects
-description: This section describes the thread model objects associated with time travel debugging.
+title: "TTD Thread Objects"
+description: "This section describes the thread model objects associated with time travel debugging."
 keywords: ["TTD Thread Objects", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
 ms.date: 10/12/2018
 ---
@@ -80,3 +80,4 @@ ntdll!NtTestAlert+0x14:
 [Time Travel Debugging - Introduction to Time Travel Debugging objects](time-travel-debugging-object-model.md)
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
+

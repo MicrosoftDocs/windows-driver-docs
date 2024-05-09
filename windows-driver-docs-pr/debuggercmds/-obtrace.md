@@ -1,7 +1,7 @@
 ---
-title: obtrace (WinDbg)
-description: The obtrace extension displays object reference tracing data for the specified object.
-keywords: ["obtrace Windows Debugging"]
+title: "!obtrace (WinDbg)"
+description: "The !obtrace extension displays object reference tracing data for the specified object."
+keywords: ["!obtrace Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -29,11 +29,11 @@ A pointer to the object or a path.
 
 ## DLL
 
-Windows XP and later - Kdexts.dll
+Kdexts.dll
 
  
 
-### Additional Information
+## Additional Information
 
 For more information about the Global Flags utility (GFlags), see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
@@ -127,12 +127,4 @@ The primary indicators in the **!obtrace 0xfa96f700** display are listed in the 
 The object reference traces on x64-based target computers might be incomplete because it is not always possible to acquire stack traces at IRQL levels higher than PASSIVE\_LEVEL.
 
 You can stop execution at any time by pressing CTRL+BREAK (in WinDbg) or CTRL+C (in KD).
-
- 
-
- 
-
-
-
-
 

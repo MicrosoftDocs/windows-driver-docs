@@ -1,6 +1,6 @@
 ---
-title: Bluetooth Extensions (Bthkd.dll)
-description: The Bluetooth debugger extensions display information about the current Bluetooth environment on the target system.
+title: "Bluetooth Extensions (Bthkd.dll)"
+description: "The Bluetooth debugger extensions display information about the current Bluetooth environment on the target system."
 keywords: ["Bluetooth Extensions (Bthkd.dll)", "extensions", "WinDbg", "Windows Debugging"]
 ms.date: 11/28/2017
 ---
@@ -101,12 +101,4 @@ The Bluetooth debugger extensions display information about the current Bluetoot
 </table>
 
  
-
- 
-
- 
-
-
-
-
 

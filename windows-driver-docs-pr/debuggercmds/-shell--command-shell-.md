@@ -1,6 +1,6 @@
 ---
-title: .shell (Command Shell)
-description: The .shell command launches a shell process and redirects its output to the debugger, or to a specified file.
+title: ".shell (Command Shell)"
+description: "The .shell command launches a shell process and redirects its output to the debugger, or to a specified file."
 keywords: ["Command Shell (.shell) command", "MS-DOS Shell (.shell) command", "DOS Shell (.shell) command", "shell commands, Command Shell (.shell) command", ".shell (Command Shell) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -14,7 +14,6 @@ api_type:
 
 # .shell (Command Shell)
 
-
 The **.shell** command launches a shell process and redirects its output to the debugger, or to a specified file.
 
 ```dbgcmd
@@ -22,8 +21,7 @@ The **.shell** command launches a shell process and redirects its output to the 
 .shell -i InFile [-o OutFile [-e ErrFile]] [Options] ShellCommand
 ```
 
-## <span id="ddk_meta_command_shell_dbg"></span><span id="DDK_META_COMMAND_SHELL_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______InFile______"></span><span id="_______infile______"></span><span id="_______INFILE______"></span> *InFile*   
 Specifies the path and file name of a file to be used for input. If you intend to offer no input after the initial command, you can specify a single hyphen (-) instead of *InFile*, with no space before the hyphen.
@@ -46,7 +44,7 @@ Causes any process being spawned to be completely detached from the debugger. Th
 <span id="_______ShellCommand______"></span><span id="_______shellcommand______"></span><span id="_______SHELLCOMMAND______"></span> *ShellCommand*   
 Specifies the application command line or Microsoft MS-DOS command to be executed.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -54,9 +52,7 @@ Specifies the application command line or Microsoft MS-DOS command to be execute
 |Targets |Live, crash dump      |
 |Platforms|All                  |
 
- 
-
-### Additional Information
+## Additional Information
 
 For other ways of accessing the command shell, see [Using Shell Commands](using-shell-commands.md).
 
@@ -79,12 +75,3 @@ You can use the -ci flag to run one or more debugger commands and then pass thei
 ```dbgcmd
 0:000> .shell -ci "!process 0 7" perl.exe parsemyoutput.pl 
 ```
-
- 
-
- 
-
-
-
-
-

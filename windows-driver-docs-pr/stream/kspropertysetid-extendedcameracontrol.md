@@ -121,3 +121,9 @@ The following camera driver controls are new for Windows 11.
 [**KSPROPERTY_CAMERACONTROL_EXTENDED_DIGITALWINDOW_CONFIGCAPS**](ksproperty-cameracontrol-extended-digitalwindow-configcaps.md)
 
 [**KSPROPERTY_CAMERACONTROL_EXTENDED_DIGITALWINDOW**](ksproperty-cameracontrol-extended-digitalwindow.md)
+
+The following camera driver controls are new for Windows 11, version 24H2.
+
+[**KSPROPERTY_CAMERACONTROL_EXTENDED_FIELDOFVIEW2**](ksproperty-cameracontrol-extended-fieldofview2.md)
+
+[**KSPROPERTY_CAMERACONTROL_EXTENDED_FIELDOFVIEW2_CONFIGCAPS**](ksproperty-cameracontrol-extended-fieldofview2-configcaps.md)

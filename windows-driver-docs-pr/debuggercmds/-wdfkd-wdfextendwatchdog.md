@@ -1,7 +1,7 @@
 ---
-title: wdfkd.wdfextendwatchdog
-description: The wdfkd.wdfextendwatchdog extension extends the time-out period (from 10 minutes to 24 hours) of the framework's watchdog timer during power transitions.
-keywords: ["wdfkd.wdfextendwatchdog Windows Debugging"]
+title: "!wdfkd.wdfextendwatchdog"
+description: "The !wdfkd.wdfextendwatchdog extension extends the time-out period (from 10 minutes to 24 hours) of the framework's watchdog timer during power transitions."
+keywords: ["!wdfkd.wdfextendwatchdog Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !wdfkd.wdfextendwatchdog
 
-
 The **!wdfkd.wdfextendwatchdog** extension extends the time-out period (from 10 minutes to 24 hours) of the framework's watchdog timer during power transitions.
 
 ```dbgcmd
@@ -22,7 +21,6 @@ The **!wdfkd.wdfextendwatchdog** extension extends the time-out period (from 10 
 ```
 
 ## Parameters
-
 
 <span id="_______Handle______"></span><span id="_______handle______"></span><span id="_______HANDLE______"></span> *Handle*   
 A handle to a WDFDEVICE-typed object.
@@ -34,11 +32,11 @@ Optional. A value that indicates whether to enable or disable extension of the t
 
 Wdfkd.dll
 
-### <span id="Frameworks"></span><span id="frameworks"></span><span id="FRAMEWORKS"></span>Frameworks
+### Frameworks
 
 KMDF 1
 
-### Additional Information
+## Additional Information
 
 For more information, see [Kernel-Mode Driver Framework Debugging](../debugger/kernel-mode-driver-framework-debugging.md).
 
@@ -47,12 +45,3 @@ For more information, see [Kernel-Mode Driver Framework Debugging](../debugger/k
 The framework starts an internal watchdog timer every time it calls a power policy or power event callback function for a driver that is not power pageable (that is, the DO\_POWER\_PAGABLE bit is clear). If the callback function causes paging I/O and therefore blocks, the operating system hangs because no paging device is available to service the request.
 
 If the time-out period elapses, the framework issues bug check 0x10D (WDF\_VIOLATION). For details, see [**Bug Check 0x10D**](../debugger/bug-check-0x10d---wdf-violation.md).
-
- 
-
- 
-
-
-
-
-

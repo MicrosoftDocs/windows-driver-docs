@@ -1,6 +1,6 @@
 ---
-title: dg (Display Selector)
-description: The dg command shows the segment descriptor for the specified selector.
+title: "dg (Display Selector)"
+description: "The dg command shows the segment descriptor for the specified selector."
 keywords: ["dg (Display Selector) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -30,7 +30,7 @@ Specifies the hexadecimal selector value of the first selector to be displayed.
 <span id="_______LastSelector______"></span><span id="_______lastselector______"></span><span id="_______LASTSELECTOR______"></span> *LastSelector*   
 Specifies the hexadecimal selector value of the last selector to be displayed. If this is omitted, only one selector will be displayed.
 
-### Environment
+## Environment
 
 <table>
 <colgroup>
@@ -139,12 +139,4 @@ Common selector values are:
 </table>
 
  
-
- 
-
- 
-
-
-
-
 

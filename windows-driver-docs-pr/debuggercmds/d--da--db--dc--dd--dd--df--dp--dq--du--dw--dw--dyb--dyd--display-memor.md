@@ -1,6 +1,6 @@
 ---
-title: d, da, db, dc, dd, dD, df, dp, dq, du, dw (Display Memory)
-description: Learn about the d* commands, which display the contents of memory in the given range. You can specify several options.
+title: "d, da, db, dc, dd, dD, df, dp, dq, du, dw (Display Memory)"
+description: "Learn about the d* commands, which display the contents of memory in the given range. You can specify several options."
 keywords: ["d, da, db, dc, dd, dD, df, dp, dq, du, dw (Display Memory) Windows Debugging"]
 ms.date: 1/06/2023
 topic_type:
@@ -52,7 +52,7 @@ Specifies one or more display options. You can include any of the following opti
 
 Specifies the memory area to display. For more syntax details, see [Address and address range syntax](address-and-address-range-syntax.md). If you omit **Range**, the command displays memory starting at the ending location of the last display command. If you omit **Range** and there's no previous display command, the display begins at the current instruction pointer.
 
-### Environment
+## Environment
 
 **Modes**: user mode, kernel mode
 
@@ -60,7 +60,7 @@ Specifies the memory area to display. For more syntax details, see [Address and 
 
 **Platforms**: all
 
-### Additional information
+## Additional Information
 
 For an overview of memory manipulation and a description of other memory-related commands, see [Reading and writing memory](../debugger/reading-and-writing-memory.md).
 
@@ -90,3 +90,4 @@ This command exists in the following forms. The second characters of the **dd**,
 | dyd | Binary values and double-word values (4 bytes). The default count is 8 DWORDs (32 bytes). |
 
 If you attempt to display an invalid address, its contents are shown as question marks (**?**).
+

@@ -1,7 +1,7 @@
 ---
-title: usbkd.usbdevh
-description: The usbkd.usbdevh command displays information about a USB device handle.
-keywords: ["usbkd.usbdevh Windows Debugging"]
+title: "!usbkd.usbdevh"
+description: "The !usbkd.usbdevh command displays information about a USB device handle."
+keywords: ["!usbkd.usbdevh Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,23 +14,21 @@ api_type:
 
 # !usbkd.usbdevh
 
-
 The **!usbkd.usbdevh** command displays information about a USB device handle.
 
 ```dbgcmd
 !usbkd.usbdevh StructAddr
 ```
 
-## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______StructAddr______"></span><span id="_______structaddr______"></span><span id="_______STRUCTADDR______"></span> *StructAddr*   
 Address of a **usbport!\_USBD\_DEVICE\_HANDLE** structure. To get the device handle list for a USB host controller, use the [**!usbkd.usbhcdext**](-usbkd-usbhcdext.md) command.
 
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Usbkd.dll
+
 
 ## Examples
 
@@ -115,12 +113,8 @@ Config Information: dt USBPORT!_USBD_CONFIG_HANDLE ffffe000023cd0b0
 [00] dt USBPORT!_USBD_INTERFACE_HANDLE_I ffffe000023bd250
 ```
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
-
- 
-

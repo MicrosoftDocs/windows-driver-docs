@@ -1,6 +1,6 @@
 ---
-title: Using Shell Commands
-description: Using Shell Commands
+title: "Using Shell Commands"
+description: "Using Shell Commands"
 keywords: ["shell commands", "shell commands, overview"]
 ms.date: 05/23/2017
 ---
@@ -22,12 +22,4 @@ If you are running a debugging server,you might want to disable shell commands. 
 ### <span id="network_drive_control"></span><span id="NETWORK_DRIVE_CONTROL"></span>Network Drive Control
 
 In WinDbg, you can use the **File | Map Network Drive** and **File | Disconnect Network Drive** commands to control the network drive mappings. These changes always occur on the computer that WinDbg is running on, never on any computer that is remotely connected to WinDbg.
-
- 
-
- 
-
-
-
-
 

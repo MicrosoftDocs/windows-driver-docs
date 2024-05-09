@@ -1,7 +1,7 @@
 ---
-title: list (WinDbg)
-description: The list extension executes the specified debugger commands repeatedly, once for every element in a linked list.
-keywords: ["list Windows Debugging"]
+title: "!list (WinDbg)"
+description: "The !list extension executes the specified debugger commands repeatedly, once for every element in a linked list."
+keywords: ["!list Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !list
 
-
 The **!list** extension executes the specified debugger commands repeatedly, once for every element in a linked list.
 
 ```dbgcmd
@@ -23,8 +22,7 @@ The **!list** extension executes the specified debugger commands repeatedly, onc
 !list -h 
 ```
 
-## <span id="ddk__list_dbg"></span><span id="DDK__LIST_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______Module______"></span><span id="_______module______"></span><span id="_______MODULE______"></span> *Module*   
 An optional parameter specifying the module that defines this structure. If there is a chance that *Type* may match a valid symbol in a different module, you should include *Module* to eliminate the ambiguity.
@@ -58,24 +56,7 @@ Displays some brief Help text for this extension in the Debugger Command window.
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Ext.dll</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Ext.dll</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+Ext.dll
 
 ## Remarks
 
@@ -119,12 +100,3 @@ dd @$extret l4; dt ntdll!_RTL_CRITICAL_SECTION_DEBUG @$extret-0x8
    +0x014 ContentionCount  : 0
    +0x018 Spare            : [2] 0
 ```
-
- 
-
- 
-
-
-
-
-

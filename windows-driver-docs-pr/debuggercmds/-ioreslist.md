@@ -1,7 +1,7 @@
 ---
-title: ioreslist (WinDbg)
-description: The ioreslist extension displays an IO_RESOURCE_REQUIREMENTS_LIST structure.
-keywords: ["ioreslist Windows Debugging"]
+title: "!ioreslist (WinDbg)"
+description: "The !ioreslist extension displays an IO_RESOURCE_REQUIREMENTS_LIST structure."
+keywords: ["!ioreslist Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,15 +14,13 @@ api_type:
 
 # !ioreslist
 
-
 The **!ioreslist** extension displays an IO\_RESOURCE\_REQUIREMENTS\_LIST structure.
 
 ```dbgcmd
 !ioreslist Address 
 ```
 
-## <span id="ddk__ioreslist_dbg"></span><span id="DDK__IORESLIST_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the hexadecimal address of the IO\_RESOURCE\_REQUIREMENTS\_LIST structure.
@@ -31,9 +29,8 @@ Specifies the hexadecimal address of the IO\_RESOURCE\_REQUIREMENTS\_LIST struct
 
 Kdexts.dll
 
- 
 
-### Additional Information
+## Additional Information
 
 See [Plug and Play Debugging](../debugger/plug-and-play-debugging.md) for applications of this extension command. For information about the IO\_RESOURCE\_REQUIREMENTS\_LIST structure, see the Windows Driver Kit (WDK) documentation.
 
@@ -98,12 +95,3 @@ This resource list contains the following requests:
     Must use IRQ 0xB.
 
 Interrupts and DMA channels are represented as ranges with the same beginning and end.
-
- 
-
- 
-
-
-
-
-

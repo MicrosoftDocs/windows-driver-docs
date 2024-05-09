@@ -1,7 +1,7 @@
 ---
-title: rpcexts.getendpointinfo
-description: The rpcexts.getendpointinfo extension searches the system's RPC state information for endpoint information.
-keywords: ["rpcexts.getendpointinfo Windows Debugging"]
+title: "!rpcexts.getendpointinfo"
+description: "The !rpcexts.getendpointinfo extension searches the system's RPC state information for endpoint information."
+keywords: ["!rpcexts.getendpointinfo Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !rpcexts.getendpointinfo
 
-
 The **!rpcexts.getendpointinfo** extension searches the system's RPC state information for endpoint information.
 
 ```dbgcmd
@@ -22,8 +21,7 @@ The **!rpcexts.getendpointinfo** extension searches the system's RPC state infor
 !rpcexts.getendpointinfo -? 
 ```
 
-## <span id="ddk__rpcexts_getendpointinfo_dbg"></span><span id="DDK__RPCEXTS_GETENDPOINTINFO_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______EndpointName______"></span><span id="_______endpointname______"></span><span id="_______ENDPOINTNAME______"></span> *EndpointName*   
 Specifies the number of the endpoint to be displayed. If omitted, the endpoints for all processes on the system are displayed.
@@ -33,26 +31,9 @@ Displays some brief Help text for this extension in the Command Prompt window.
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Unavailable</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Rpcexts.dll</p></td>
-</tr>
-</tbody>
-</table>
+Rpcexts.dll
 
- 
-
-### Additional Information
+## Additional Information
 
 For more information about debugging Microsoft Remote Procedure Call (RPC), see [RPC Debugging](../debugger/rpc-debugging.md).
 
@@ -106,12 +87,3 @@ Searching for endpoint info ...
 ```
 
 For a similar example using the DbgRpc tool, see [Get RPC Endpoint Information](../debugger/get-rpc-endpoint-information.md).
-
- 
-
- 
-
-
-
-
-

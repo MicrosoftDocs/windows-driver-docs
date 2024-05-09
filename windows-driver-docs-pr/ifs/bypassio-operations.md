@@ -5,7 +5,6 @@ keywords:
 - filter drivers WDK file system , BypassIO
 - filter drivers WDK file system , BypassIO operations
 ms.date: 12/04/2023
-prerelease: false
 ---
 
 # Supporting BypassIO operations

@@ -1,6 +1,6 @@
 ---
-title: ur (Unassemble Real Mode BIOS)
-description: The ur command displays an assembly translation of the specified 16-bit real-mode code.
+title: "ur (Unassemble Real Mode BIOS)"
+description: "The ur command displays an assembly translation of the specified 16-bit real-mode code."
 keywords: ["ur (Unassemble Real Mode BIOS) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -32,7 +32,7 @@ Specifies the memory range that contains the instructions to disassemble. For mo
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the beginning of the memory range to disassemble. Eight instructions on an x86-based processorare unassembled. For more information about the syntax, see [Address and Address Range Syntax](address-and-address-range-syntax.md).
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -42,7 +42,7 @@ Specifies the beginning of the memory range to disassemble. Eight instructions o
 
  
 
-### Additional Information
+## Additional Information
 
 For more information about how to debug BIOS code, see [Debugging BIOS Code](../debugger/debugging-bios-code.md).
 
@@ -55,12 +55,4 @@ If you are examining 16-bit real-mode code on an x86-based processor, both the *
 However, if real-mode code exists in a location where the debugger is not expecting it (for example, a non-x86 computer that is running or emulating x86-based BIOS code from a plug-in card), you must use **ur** to correctly disassemble this code.
 
 If you use **ur** on 32-bit or 64-bit code, the command tries to disassemble the code as if it were 16-bit code. This situation produces meaningless results.
-
- 
-
- 
-
-
-
-
 

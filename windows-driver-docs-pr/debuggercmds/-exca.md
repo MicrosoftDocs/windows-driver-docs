@@ -1,7 +1,7 @@
 ---
-title: exca (WinDbg)
-description: The exca extension displays PC-Card Interrupt Controller (PCIC) Exchangable Card Architecture (ExCA) registers.
-keywords: ["PCIC (PC Card Interrupt Controller)", "ExCA registers", "exca Windows Debugging"]
+title: "!exca (WinDbg)"
+description: "The !exca extension displays PC-Card Interrupt Controller (PCIC) Exchangable Card Architecture (ExCA) registers."
+keywords: ["PCIC (PC Card Interrupt Controller)", "ExCA registers", "!exca Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -13,7 +13,6 @@ api_type:
 ---
 
 # !exca
-
 
 The **!exca** extension displays PC-Card Interrupt Controller (PCIC) Exchangable Card Architecture (ExCA) registers.
 
@@ -32,38 +31,13 @@ Specifies the socket number of the ExCA register on the PCIC.
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p></p>
 Kext.dll
-Kdextx86.dll</td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Kext.dll</p></td>
-</tr>
-</tbody>
-</table>
 
  
 
 The **!exca** extension is only available for an x86-based target computer.
 
-### Additional Information
+## Additional Information
 
 The [**!cbreg**](-cbreg.md) extension can be used to display CardBus Socket registers and CardBus ExCA registers by address.
-
- 
-
- 
-
-
-
-
 

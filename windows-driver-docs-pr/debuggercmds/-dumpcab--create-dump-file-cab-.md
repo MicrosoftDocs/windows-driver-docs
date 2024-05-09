@@ -1,6 +1,6 @@
 ---
-title: .dumpcab (Create Dump File CAB)
-description: The .dumpcab command creates a CAB file containing the current dump file.
+title: ".dumpcab (Create Dump File CAB)"
+description: "The .dumpcab command creates a CAB file containing the current dump file."
 keywords: [".dumpcab (Create Dump File CAB) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -30,7 +30,7 @@ Causes all currently loaded symbols to be included in the CAB file. For minidump
 <span id="_______CabName______"></span><span id="_______cabname______"></span><span id="_______CABNAME______"></span> *CabName*   
 The CAB file name, including extension. *CabName* can include an absolute or relative path; relative paths are relative to the directory in which the debugger was started. It is recommended that you choose the extension .cab.
 
-### Environment
+## Environment
 
 <table>
 <colgroup>
@@ -55,7 +55,7 @@ The CAB file name, including extension. *CabName* can include an absolute or rel
 
  
 
-### Additional Information
+## Additional Information
 
 For more details on crash dumps, see [Crash Dump Files](../debugger/crash-dump-files.md).
 
@@ -66,12 +66,4 @@ This command can only be used if you are already debugging a dump file.
 If you are debugging a live target and want to create a dump file and place it in a CAB, you should use the [**.dump (Create Dump File)**](-dump--create-dump-file-.md) command. Next, start a new debugging session with the dump file as its target, and use **.dumpcab**.
 
 The **.dumpcab** command cannot be used to place multiple dump files into one CAB file.
-
- 
-
- 
-
-
-
-
 

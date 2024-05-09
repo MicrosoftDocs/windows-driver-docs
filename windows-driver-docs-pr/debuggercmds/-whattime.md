@@ -1,7 +1,7 @@
 ---
-title: whattime (WinDbg)
-description: The whattime extension converts a tick count into a standard time value.
-keywords: ["tick count", "whattime Windows Debugging"]
+title: "!whattime (WinDbg)"
+description: "The !whattime extension converts a tick count into a standard time value."
+keywords: ["tick count", "!whattime Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !whattime
 
-
 The **!whattime** extension converts a tick count into a standard time value.
 
 ```dbgcmd
@@ -23,15 +22,12 @@ The **!whattime** extension converts a tick count into a standard time value.
 
 ## Parameters
 
-
 <span id="_______Ticks______"></span><span id="_______ticks______"></span><span id="_______TICKS______"></span> *Ticks*   
 The number of ticks.
 
 ## DLL
 
-Windows XP and later - Kdexts.dll
-
- 
+Kdexts.dll
 
 ## Remarks
 
@@ -41,12 +37,3 @@ The output is displayed as *HH:MM:SS.mmm*. Here is an example:
 kd> !whattime 29857ae4
 696613604 Ticks in Standard Time:  15:02:16.040s
 ```
-
- 
-
- 
-
-
-
-
-

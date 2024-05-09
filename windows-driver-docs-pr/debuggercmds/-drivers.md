@@ -1,7 +1,7 @@
 ---
-title: drivers (WinDbg)
-description: In Windows XP and later versions of Windows, the drivers extension is obsolete. Instead use the lm command.
-keywords: ["drivers Windows Debugging"]
+title: "!drivers (WinDbg)"
+description: "In Windows XP and later versions of Windows, the drivers extension is obsolete. Instead use the lm command."
+keywords: ["!drivers Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -60,7 +60,7 @@ Causes the display to be a much longer and more detailed list of the driver imag
 
  
 
-### Additional Information
+## Additional Information
 
 See [Plug and Play Debugging](../debugger/plug-and-play-debugging.md) for applications of this extension command. For information about drivers and their memory use, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
@@ -132,12 +132,4 @@ Base     Code Size      Data Size      Driver Name  Creation Time
 80654000 3f00  ( 15 kb) 1060   ( 4 kb) ncrc810.sys  Fri May 05 20:07:04
 8065a000 a460  ( 41 kb) 1e80   ( 7 kb) SCSIPORT.SYS Fri May 05 20:08:05
 ```
-
- 
-
- 
-
-
-
-
 

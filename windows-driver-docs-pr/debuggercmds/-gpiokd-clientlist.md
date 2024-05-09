@@ -1,7 +1,7 @@
 ---
-title: gpiokd.clientlist
-description: The gpiokd.clientlist command displays all registered GPIO controllers.
-keywords: ["gpiokd.clientlist Windows Debugging"]
+title: "!gpiokd.clientlist"
+description: "The !gpiokd.clientlist extension displays all registered GPIO controllers."
+keywords: ["!gpiokd.clientlist Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,14 +14,13 @@ api_type:
 
 # !gpiokd.clientlist
 
-
-The **!gpiokd.clientlist** command displays all registered GPIO controllers.
+The **!gpiokd.clientlist** extension displays all registered GPIO controllers.
 
 ```dbgcmd
 !gpiokd.clientlist [Flags] 
 ```
 
-## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
+## Parameters
 
 
 <span id="_______Flags______"></span><span id="_______flags______"></span><span id="_______FLAGS______"></span> *Flags*   
@@ -54,24 +53,10 @@ Flags that specify which information is displayed. This parameter is a bitwise O
 </tbody>
 </table>
 
- 
-
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Gpiokd.dll
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [GPIO Extensions](gpio-extensions.md)
-
- 
-
- 
-
-
-
-
-
-

@@ -1,6 +1,6 @@
 ---
-title: ~n (Suspend Thread)
-description: The ~n command suspends execution of the specified thread.Do not confuse this command with the n (Set Number Base) command.
+title: "~n (Suspend Thread)"
+description: "The ~n command suspends execution of the specified thread.Do not confuse this command with the n (Set Number Base) command."
 keywords: ["~n (Suspend Thread) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -29,7 +29,7 @@ Do not confuse this command with the [**n (Set Number Base)**](n--set-number-bas
 <span id="_______Thread______"></span><span id="_______thread______"></span><span id="_______THREAD______"></span> *Thread*   
 Specifies the thread or threads to suspend. For more information about the syntax, see [Thread Syntax](thread-syntax.md).
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -38,7 +38,7 @@ Specifies the thread or threads to suspend. For more information about the synta
 |Platforms | all  |
  
 
-### Additional Information
+## Additional Information
 
 For more information about the suspend count and how suspended threads behave and for a list of other commands that control the suspending and freezing of threads, see [Controlling Processes and Threads](../debugger/controlling-processes-and-threads.md).
 
@@ -49,12 +49,4 @@ You can specify threads only in user mode. In kernel mode, the tilde (~) refers 
 Every time that you use the **~n** command, the thread's suspend count is increased by one.
 
 The thread's start address is displayed when you use this command.
-
- 
-
- 
-
-
-
-
 

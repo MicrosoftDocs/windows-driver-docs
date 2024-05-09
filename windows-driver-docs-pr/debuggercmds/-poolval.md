@@ -1,7 +1,7 @@
 ---
-title: poolval (WinDbg)
-description: The poolval extension analyzes the headers for a pool page and diagnoses any possible corruption. 
-keywords: ["poolval Windows Debugging"]
+title: "!poolval (WinDbg)"
+description: "The !poolval extension analyzes the headers for a pool page and diagnoses any possible corruption. "
+keywords: ["!poolval Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,15 +14,13 @@ api_type:
 
 # !poolval
 
-
 The **!poolval** extension analyzes the headers for a pool page and diagnoses any possible corruption.
 
 ```dbgcmd
 !poolval Address [DisplayLevel]
 ```
 
-## <span id="ddk__poolval_dbg"></span><span id="DDK__POOLVAL_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the address of the pool whose header is to be analyzed.
@@ -44,19 +42,8 @@ Causes basic information, linked header lists, and full header information to be
 
 ## DLL
 
-Windows XP and later - Kdexts.dll
+Kdexts.dll
 
- 
-
-### Additional Information
+## Additional Information
 
 For information about memory pools, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
-
- 
-
- 
-
-
-
-
-

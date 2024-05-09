@@ -1,7 +1,7 @@
 ---
-title: reg (WinDbg)
-description: The reg extension displays and searches through registry data.
-keywords: ["reg Windows Debugging"]
+title: "!reg (WinDbg)"
+description: "The !reg extension displays and searches through registry data."
+keywords: ["!reg Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -13,7 +13,6 @@ api_type:
 ---
 
 # !reg
-
 
 The **!reg** extension displays and searches through registry data.
 
@@ -49,8 +48,7 @@ The **!reg** extension displays and searches through registry data.
 !reg dumppool [s|r]
 ```
 
-## <span id="ddk__reg_dbg"></span><span id="DDK__REG_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______querykeyq_FullKeyPath______"></span><span id="_______querykeyq_fullkeypath______"></span><span id="_______QUERYKEYQ_FULLKEYPATH______"></span> {**querykey**|**q**} **** *FullKeyPath*   
 Displays subkeys and values of a key if the key is cached. *FullKeyPath* specifies the full key path.
@@ -86,8 +84,6 @@ Displays the security cache for a hive. *HiveAddress* specifies the address of t
 Computes the hash index entry for a hash key. *HiveAddress* specifies the address of the hive. *HashKey* specifies the key.
 
 **Note** *HiveAddress* is required if the target computer is running Windows 7 or later.
-
-
 
 <span id="_______openkeys_HiveAddress0_"></span><span id="_______openkeys_hiveaddress0_"></span><span id="_______OPENKEYS_HIVEADDRESS0_"></span> **openkeys** {*HiveAddress*|**0**}   
 Displays all open keys in a hive. *HiveAddress* specifies the address of the hive. If zero is used instead, the entire registry hash table is displayed; this table contains all open keys in the registry.
@@ -144,7 +140,7 @@ Displays registry-allocated paged pool. If **s** is specified, the list of regis
 
 Kdexts.dll
 
-### Additional Information
+## Additional Information
 
 For information about the registry and its components, see *Microsoft Windows Internals* by Mark Russinovich and David Solomon. 
 
@@ -254,12 +250,3 @@ Index 7a1:  48a30288 kcb=e13a3738 cell=00000020 f=002c0004 \REGISTRY\USER\S-1-5-
 ```
 
 To display formatted registry key information, use the [**!dreg**](-dreg.md) extension instead.
-
-
-
-
-
-
-
-
-

@@ -1,7 +1,7 @@
 ---
-title: pcitree (WinDbg)
-description: The pcitree extension displays information about PCI device objects, including child PCI buses and CardBus buses, and the devices attached to them.
-keywords: ["PCI bus", "PCI device", "pcitree Windows Debugging"]
+title: "!pcitree (WinDbg)"
+description: "The !pcitree extension displays information about PCI device objects, including child PCI buses and CardBus buses, and the devices attached to them."
+keywords: ["PCI bus", "PCI device", "!pcitree Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,23 +14,17 @@ api_type:
 
 # !pcitree
 
-
 The **!pcitree** extension displays information about PCI device objects, including child PCI buses and CardBus buses, and the devices attached to them.
 
 ```dbgcmd
 !pcitree
 ```
 
-## <span id="ddk__pcitree_dbg"></span><span id="DDK__PCITREE_DBG"></span>
-
-
-### DLL
+## DLL
 
 Kdexts.dll
 
- 
-
-### Additional Information
+## Additional Information
 
 See [Plug and Play Debugging](../debugger/plug-and-play-debugging.md) for applications of this extension command. For information about PCI buses and PCI device objects, see the Windows Driver Kit (WDK) documentation.
 
@@ -66,12 +60,3 @@ kd> !devext fe4f4428 pci
 ```
 
 If the **!pcitree** extension generates an error, this often means that your PCI symbols were not loaded properly. Use [**.reload pci.sys**](-reload--reload-module-.md) to fix this problem.
-
- 
-
- 
-
-
-
-
-

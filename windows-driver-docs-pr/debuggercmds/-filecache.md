@@ -1,7 +1,7 @@
 ---
-title: filecache (WinDbg)
-description: The filecache extension displays information regarding the system file cache memory and PTE use.
-keywords: ["file cache", "filecache Windows Debugging"]
+title: "!filecache (WinDbg)"
+description: "The !filecache extension displays information regarding the system file cache memory and PTE use."
+keywords: ["file cache", "f!ilecache Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -34,7 +34,7 @@ Optional. Default value is 0x0. Set *Flags* to 0x1 to sort the output by shared 
 
 Kdexts.dll
 
-### Additional Information
+## Additional Information
 
 For information about file system drivers, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
@@ -154,12 +154,4 @@ Control Valid Standby/Dirty Shared Locked Name
 ...
 8158cf10     4      0     0     0  $Directory
 ```
-
- 
-
- 
-
-
-
-
 

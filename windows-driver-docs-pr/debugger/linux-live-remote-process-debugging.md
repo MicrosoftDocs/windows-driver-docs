@@ -2,7 +2,7 @@
 title: Linux live remote process debugging
 description: Linux live remote process debugging
 keywords: ["remote debugging, linux, process"]
-ms.date: 03/05/2024
+ms.date: 05/02/2024
 ---
 
 # Linux live remote process debugging
@@ -46,6 +46,7 @@ The examples here use WSL (Windows Subsystem for Linux), but other Linux impleme
 - [How to install Linux on Windows with WSL](/windows/wsl/install)
 - [Set up a WSL development environment](/windows/wsl/setup/environment)
 - [Accessing network applications with WSL](/windows/wsl/networking)
+- [Intune settings for WSL](/windows/wsl/intune)
 
 ### Select the desired process
 
@@ -78,7 +79,7 @@ In this walkthrough, we will connect to WSL running on the same PC, and will use
 
 ### Attach GDBServer to the selected process
 
-On the WSL linux console, enter `gdbserver localhost:1234 python3` to start the gdbserver on port 1234, and attach it to the the python3 process.
+On the WSL linux console, enter `gdbserver localhost:1234 python3` to start the gdbserver on port 1234, and attach it to the python3 process.
 
 ```linux
 USER1@USER1:/mnt/c/Users/USER1$ gdbserver localhost:1234 python3

@@ -1,6 +1,6 @@
 ---
-title: .noversion (Disable Version Checking)
-description: The .noversion command disables all version checking of extension DLLs.
+title: ".noversion (Disable Version Checking)"
+description: "The .noversion command disables all version checking of extension DLLs."
 keywords: ["Disable Version Checking (.noversion) command", ".noversion (Disable Version Checking) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -24,7 +24,7 @@ The **.noversion** command disables all version checking of extension DLLs.
 ## <span id="ddk_meta_disable_version_checking_dbg"></span><span id="DDK_META_DISABLE_VERSION_CHECKING_DBG"></span>
 
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -41,12 +41,4 @@ The build number of extension DLLs should match the build number of the computer
 ```console
 *** Extension DLL(1367 Free) does not match target system(1552 Free) 
 ```
-
- 
-
- 
-
-
-
-
 

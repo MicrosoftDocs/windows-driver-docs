@@ -1,6 +1,6 @@
 ---
-title: bl (Breakpoint List)
-description: The bl command lists information about existing breakpoints.
+title: "bl (Breakpoint List)"
+description: "The bl command lists information about existing breakpoints."
 keywords: ["bl (Breakpoint List) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -30,7 +30,7 @@ Forces **bl** to always display breakpoint addresses instead of showing source f
 <span id="_______Breakpoints______"></span><span id="_______breakpoints______"></span><span id="_______BREAKPOINTS______"></span> *Breakpoints*   
 Specifies the ID numbers of the breakpoints to list. If you omit *Breakpoints*, the debugger lists all breakpoints. You can specify any number of breakpoints. You must separate multiple IDs by spaces or commas. You can specify a range of breakpoint IDs by using a hyphen (-). You can use an asterisk (\*) to indicate all breakpoints. If you want to use a [numeric expression](numerical-expression-syntax.md) for an ID, enclose it in brackets (\[\]). If you want to use a [string with wildcard characters](string-wildcard-syntax.md) to match a breakpoint's symbolic name, enclose it in quotation marks (\"\").
 
-### Environment
+## Environment
 
 |  Item       | Description               |
 |-----------|------------------------|
@@ -40,7 +40,7 @@ Specifies the ID numbers of the breakpoints to list. If you omit *Breakpoints*, 
 
  
 
-### Additional Information
+## Additional Information
 
 For more information about and examples of how to use breakpoints, other breakpoint commands and methods of controlling breakpoints, and how to set breakpoints in user space from a kernel debugger, see [Using Breakpoints](../debugger/using-breakpoints.md). For more information about conditional breakpoints, see [Setting a Conditional Breakpoint](../debugger/setting-a-conditional-breakpoint.md).
 
@@ -92,12 +92,4 @@ This output contains the following information:
 - This breakpoint is not a thread-specific breakpoint (\*\*\*).
 
 - The breakpoint is set on **main** in the **stst** module.
-
- 
-
- 
-
-
-
-
 

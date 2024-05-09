@@ -1,7 +1,7 @@
 ---
-title: scsikd.classext
-description: The scsikd.classext extension displays the specified class Plug and Play (PnP) device.
-keywords: ["scsikd.classext Windows Debugging"]
+title: "!scsikd.classext"
+description: "The !scsikd.classext extension displays the specified class Plug and Play (PnP) device."
+keywords: ["!scsikd.classext Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !scsikd.classext
 
-
 The **!scsikd.classext** extension displays the specified class Plug and Play (PnP) device.
 
 ```dbgcmd
@@ -22,7 +21,6 @@ The **!scsikd.classext** extension displays the specified class Plug and Play (P
 ```
 
 ## Parameters
-
 
 <span id="_______Device______"></span><span id="_______device______"></span><span id="_______DEVICE______"></span> *Device*   
 Specifies the device object or device extension of a class PnP device. If *Device* is omitted, a list of all class PnP extensions is displayed.
@@ -49,9 +47,7 @@ Specifies the amount of detail to display. This parameter can take 0, 1, or 2 as
 </tbody>
 </table>
 
- 
-
-### Additional Information
+## Additional Information
 
 For more information, see [SCSI Miniport Debugging](../debugger/scsi-miniport-debugging.md).
 
@@ -68,12 +64,3 @@ Here is an example of the **!scsikd.classext** display:
 
  usage: !classext <class fdo> <level [0-2]> 
 ```
-
- 
-
- 
-
-
-
-
-

@@ -1,6 +1,6 @@
 ---
-title: String Wildcard Syntax
-description: This topic covers string wildcard syntax. Some debugger commands have string parameters that accept a variety of wildcard characters.
+title: "String Wildcard Syntax"
+description: "This topic covers string wildcard syntax. Some debugger commands have string parameters that accept a variety of wildcard characters."
 keywords: string wildcards, expressions, regular expressions, syntax rules for commands
 ms.date: 05/23/2017
 ---
@@ -28,12 +28,4 @@ These kinds of parameters support the following syntax features:
 - If you have to specify a literal number sign (\#), question mark (?), opening bracket (\[), closing bracket (\]), asterisk (\*), or plus sign (+) character, you must add a backslash ( \\ ) in front of the character. Hyphens are always literal when you do not enclose them in brackets. But you cannot specify a literal hyphen within a bracketed list.
 
 Parameters that specify symbols also support some additional features. In addition to the standard string wildcard characters, you can use an underscore (\_) before a text expression that you use to specify a symbol. When matching this expression to a symbol, the debugger treats the underscore as any quantity of underscores, even zero. This feature applies only when you are matching symbols. It does not apply to string wildcard expressions in general. For more information about symbol syntax, see [Symbol Syntax and Symbol Matching](../debugger/symbol-syntax-and-symbol-matching.md).
-
- 
-
- 
-
-
-
-
 

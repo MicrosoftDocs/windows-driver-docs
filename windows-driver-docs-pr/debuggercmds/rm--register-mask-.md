@@ -1,6 +1,6 @@
 ---
-title: rm (Register Mask)
-description: The rm command modifies or displays the register display mask. This mask controls how registers are displayed by the r (Registers) command.
+title: "rm (Register Mask)"
+description: "The rm command modifies or displays the register display mask. This mask controls how registers are displayed by the r (Registers) command."
 keywords: ["rm (Register Mask) Windows Debugging"]
 ms.date: 07/12/2018
 topic_type:
@@ -32,7 +32,7 @@ Displays a list of possible *Mask* bits.
 <span id="_______Mask______"></span><span id="_______mask______"></span><span id="_______MASK______"></span> *Mask*   
 Specifies the mask to use when the debugger displays the registers. *Mask* is a sum of bits that indicate something about the register display. The meaning of the bits depends on the processor and the mode. For more information; see the tables in the following Remarks section.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -206,6 +206,7 @@ Register output mask is a:
       2 - Integer state (64-bit)
        8 - Segment registers
 ```
+
 
 
 

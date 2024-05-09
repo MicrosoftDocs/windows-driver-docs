@@ -13,7 +13,7 @@ ms.date: 04/20/2017
 
  
 
-If the Native 802.11 IHV Extensions DLL supports proprietary 802.1X-based security extensions, the Native 802.11 IHV UI Extensions DLL can extend the Network Configuration user interface's (UI's) **Security** tab to allow user configuration of the these extensions. For more information about extending the Native 802.11 802.1X module, see [Interface to the Native 802.11 802.1X Module](interface-to-the-native-802-11-802-1x-module.md).
+If the Native 802.11 IHV Extensions DLL supports proprietary 802.1X-based security extensions, the Native 802.11 IHV UI Extensions DLL can extend the Network Configuration user interface's (UI's) **Security** tab to allow user configuration of these extensions. For more information about extending the Native 802.11 802.1X module, see [Interface to the Native 802.11 802.1X Module](interface-to-the-native-802-11-802-1x-module.md).
 
 For more information about the Network Configuration UI and other Native 802.11 components, see [Native 802.11 Software Architecture](/previous-versions/windows/hardware/wireless/native-802-11-software-architecture).
 

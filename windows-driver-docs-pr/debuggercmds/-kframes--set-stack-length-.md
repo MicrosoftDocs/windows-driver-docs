@@ -1,6 +1,6 @@
 ---
-title: .kframes (Set Stack Length)
-description: The .kframes command sets the default length of a stack trace display.
+title: ".kframes (Set Stack Length)"
+description: "The .kframes command sets the default length of a stack trace display."
 keywords: ["Set Stack Length (.kframes) command", ".kframes (Set Stack Length) Windows Debugging"]
 ms.date: 07/13/2023
 topic_type:
@@ -26,7 +26,7 @@ The **.kframes** command sets the default length of a stack trace display.
 
 Specifies the number of stack frames to display when a stack trace command is used.
 
-### Environment
+## Environment
 
 | Environment | &nbsp;                 |
 |-------------|------------------------|
@@ -87,3 +87,4 @@ kd 5
 ## See also
 
 [**k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md)
+

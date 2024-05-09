@@ -1,6 +1,6 @@
 ---
-title: .settings (Set Debug Settings)
-description: The .settings command sets, modifies, displays, loads and saves settings in the Debugger.Settings namespace.
+title: ".settings (Set Debug Settings)"
+description: "The .settings command sets, modifies, displays, loads and saves settings in the Debugger.Settings namespace."
 keywords: [".settings (Set Debug Settings) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -14,7 +14,6 @@ api_type:
 
 # .settings (Set Debug Settings)
 
-
 The **.settings** command sets, modifies, displays, loads and saves settings in the Debugger.Settings namespace.
 
 ```dbgcmd
@@ -26,8 +25,7 @@ The **.settings** command sets, modifies, displays, loads and saves settings in 
 .settings help   
 ```
 
-## <span id="ddk_meta_set_symbol_path_dbg"></span><span id="DDK_META_SET_SYMBOL_PATH_DBG"></span>Parameters
-
+## Parameters
 
 **.settings set parameters**
 
@@ -78,7 +76,7 @@ Lists all of the settings in the Debugger namespace and their description.
 <span id="_______Namespace______"></span><span id="_______namespace______"></span><span id="_______NAMESPACE______"></span> **Namespace**   
 Lists all settings in the given namespace and their description.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -86,9 +84,7 @@ Lists all settings in the given namespace and their description.
 |Targets |Live, crash dump      |
 |Platforms|All                  |
 
- 
-
-### Additional Information
+## Additional Information
 
 On launch, the debugger will load all the settings from config.xml in the directory the debugger executable is in. Throughout your debugging session you can modify settings using the previous settings command (like .sympath or .prefer\_dml) or the new .settings commands. You can use ‘.settings save’ to save your settings to your settings configuration file. You can use the following command to enable AutoSave.
 
@@ -99,12 +95,3 @@ When auto save is enabled, the settings in the Debugger.Settings namespace will 
 ## Remarks
 
 You can exchange debug xml settings files with others to duplicate their debug settings.
-
- 
-
- 
-
-
-
-
-

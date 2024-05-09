@@ -1,6 +1,6 @@
 ---
-title: sx, sxd, sxe, sxi, sxn, sxr, sx- (Set exceptions)
-description: Learn about the sx* commands, which control the action that the debugger takes when an exception occurs in the application that is being debugged.
+title: "sx, sxd, sxe, sxi, sxn, sxr, sx- (Set exceptions)"
+description: "Learn about the sx* commands, which control the action that the debugger takes when an exception occurs in the application that is being debugged."
 keywords: ["sx, sxd, sxe, sxi, sxn, sxr, sx- (Set Exceptions) Windows Debugging"]
 ms.date: 12/13/2022
 topic_type:
@@ -46,7 +46,7 @@ Specifies the event that the command acts on. These events are identified by sho
 **\***  
 Affects all exceptions that aren't otherwise explicitly named for **sx**. For a list of explicitly named exceptions, see [Controlling exceptions and events](../debugger/controlling-exceptions-and-events.md).
 
-### Environment
+## Environment
 
 |&nbsp;         |&nbsp;                  |
 |---------------|------------------------|
@@ -54,7 +54,7 @@ Affects all exceptions that aren't otherwise explicitly named for **sx**. For a 
 | **Targets**   | Live debugging only    |
 | **Platforms** | All                    |
 
-### Additional Information
+## Additional Information
 
 For more information about break status and handling status, descriptions of all event codes, a list of the default status for all events, and other methods of controlling this status, see [Controlling exceptions and events](../debugger/controlling-exceptions-and-events.md).
 
@@ -110,3 +110,4 @@ In the following example, the **sxe** command is used to set the break status of
 - [Conditional breakpoints in WinDbg](../debugger/setting-a-conditional-breakpoint.md)
 
 - [Executing until a specified state is reached](../debugger/executing-until-a-specified-state-is-reached.md)
+

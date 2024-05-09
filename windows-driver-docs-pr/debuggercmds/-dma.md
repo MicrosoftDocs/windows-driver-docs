@@ -1,7 +1,7 @@
 ---
-title: dma (WinDbg)
-description: The dma extension displays information about the Direct Memory Access (DMA) subsystem, and the DMA Verifier option of Driver Verifier.
-keywords: ["DMA Verification (Driver Verifier)", "dma Windows Debugging"]
+title: "!dma (WinDbg)"
+description: "The !dma extension displays information about the Direct Memory Access (DMA) subsystem, and the DMA Verifier option of Driver Verifier."
+keywords: ["DMA Verification (Driver Verifier)", "!dma Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -51,11 +51,11 @@ Causes the display to include Wait context block information.
 
 ## DLL
 
-Windows XP and later - Kdexts.dll
+Kdexts.dll
 
  
 
-### Additional Information
+## Additional Information
 
 For information about Driver Verifier, see the Windows Driver Kit (WDK) documentation. For information about DMA, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals* by Mark Russinovich David Solomon.
 
@@ -159,12 +159,4 @@ Adapter: 82f06cd0     Owner: NDIS!NdisMAllocateMapRegisters
 ```
 
 This is fairly straightforward; there are four common buffers of varying lengths. The physical and virtual addresses are all given.
-
- 
-
- 
-
-
-
-
 

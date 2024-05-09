@@ -1,7 +1,7 @@
 ---
-title: scsikd.scsiext
-description: The scsikd.scsiext extension displays detailed information about the specified SCSI port extension.
-keywords: ["scsikd.scsiext Windows Debugging"]
+title: "!scsikd.scsiext"
+description: "The !scsikd.scsiext extension displays detailed information about the specified SCSI port extension."
+keywords: ["!scsikd.scsiext Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !scsikd.scsiext
 
-
 The **!scsikd.scsiext** extension displays detailed information about the specified SCSI port extension.
 
 ```dbgcmd
@@ -23,32 +22,14 @@ The **!scsikd.scsiext** extension displays detailed information about the specif
 
 ## Parameters
 
-
 <span id="_______Device______"></span><span id="_______device______"></span><span id="_______DEVICE______"></span> *Device*   
 Specifies the device object or device extension of a SCSI port extension.
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Scsikd.dll</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Scsikd.dll</p></td>
-</tr>
-</tbody>
-</table>
+Scsikd.dll
 
- 
-
-### Additional Information
+## Additional Information
 
 For more information, see [SCSI Miniport Debugging](../debugger/scsi-miniport-debugging.md).
 
@@ -117,12 +98,3 @@ Logical Unit Extension:
   RS Irp 8177dd80  Srb @ 816eaa0c   MDL @ 816eaa4c
   Request List @0x816ea1f0 is empty
 ```
-
- 
-
- 
-
-
-
-
-

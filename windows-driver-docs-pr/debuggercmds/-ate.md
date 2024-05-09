@@ -1,7 +1,7 @@
 ---
-title: ate (WinDbg)
-description: The ate extension displays the alternate page table entry (ATE) for the specified address.
-keywords: ["ate Windows Debugging"]
+title: "!ate (WinDbg)"
+description: "The !ate extension displays the alternate page table entry (ATE) for the specified address."
+keywords: ["!ate Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
 - apiref
@@ -33,11 +33,11 @@ Specifies the ATE to display.
 
 ## DLL
 
-Windows XP and later - Kdexts.dll
+Kdexts.dll
 
  
 
-### Additional Information
+## Additional Information
 
 For information about page tables and page directories, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon. 
 
@@ -115,12 +115,4 @@ The status flags for the ATE are shown in the following table. The **!ate** disp
 </table>
 
  
-
- 
-
- 
-
-
-
-
 

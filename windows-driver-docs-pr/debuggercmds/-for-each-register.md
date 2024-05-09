@@ -1,7 +1,7 @@
 ---
-title: for_each_register
-description: The for_each_register extension executes a specified command for each register.
-keywords: ["for_each_register Windows Debugging"]
+title: "!for_each_register"
+description: "The !for_each_register extension executes a specified command for each register."
+keywords: ["!for_each_register Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -31,12 +31,12 @@ Specifies the command to be executed for each register. The aliases @\#RegisterN
 <span id="_______-_______"></span> **-?**   
 Displays help for the **!for\_each\_register** extension.
 
-## <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 
 Ext.dll
 
-## <span id="Examples"></span><span id="examples"></span><span id="EXAMPLES"></span>Examples
+## Examples
 
 
 This example lists the name of each register.
@@ -73,12 +73,4 @@ More info:              ~0k
 When an alias is an argument to a debugger extension (for example, [**!address**](-address.md)), use the alias interpreter [**${} (Alias Interpreter)**](-------alias-interpreter-.md) token so that the alias is resolved correctly.
 
 For more information about how to define and use aliases as shortcuts for entering character strings (including use of the [**${}**](-------alias-interpreter-.md) token), see [Using Aliases](using-aliases.md).
-
- 
-
- 
-
-
-
-
 

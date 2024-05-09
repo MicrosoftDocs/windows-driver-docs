@@ -1,7 +1,7 @@
 ---
-title: ivt (WinDbg)
-description: The ivt extension displays the Itanium interrupt vector table.
-keywords: ["interrupt vector table", "ivt Windows Debugging"]
+title: "!ivt (WinDbg)"
+description: "The !ivt extension displays the Itanium interrupt vector table."
+keywords: ["interrupt vector table", "!ivt Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !ivt
 
-
 The !ivt extension displays the Itanium interrupt vector table.
 
 ```dbgcmd
@@ -23,8 +22,6 @@ The !ivt extension displays the Itanium interrupt vector table.
 ```
 
 **Important**  This command has been deprecated in the Windows Debugger Version 10.0.14257 and later, and is no longer available.
-
- 
 
 ## Parameters
 
@@ -43,13 +40,11 @@ Displays help for this extension in the Debugger Command window.
 
 ## DLL
 
-Windows XP and later - Kdexts.dll
-
- 
+Kdexts.dll
 
 This extension command can only be used with an Itanium target computer.
 
-### Additional Information
+## Additional Information
 
 For more information about how to display the interrupt dispatch tables on an x64 or x86 target computer, see [**!idt**](-idt.md).
 
@@ -85,12 +80,4 @@ f1:e000000083576830 hal!HalpPCIISALine2Pin
 fd:e000000083576b10 hal!HalpMcRzHandler
 fe:e000000083576830 hal!HalpPCIISALine2Pin
 ```
-
- 
-
- 
-
-
-
-
 

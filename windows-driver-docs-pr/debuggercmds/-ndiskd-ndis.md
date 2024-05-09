@@ -1,7 +1,7 @@
 ---
-title: ndiskd.ndis
-description: The ndiskd.ndis extension displays build information about ndis.sys.
-keywords: ["ndiskd.ndis Windows Debugging"]
+title: "!ndiskd.ndis"
+description: "The !ndiskd.ndis extension displays build information about ndis.sys."
+keywords: ["!ndiskd.ndis Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -38,12 +38,4 @@ The following example shows that the debugee machine has a Checked Ndis build.
 0: kd> !ndiskd.ndis
 Checked Ndis
 ```
-
- 
-
- 
-
-
-
-
 

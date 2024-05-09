@@ -1,7 +1,7 @@
 ---
-title: for_each_local
-description: The for_each_local extension executes a debugger command one time for each local variable in the current frame.
-keywords: ["for_each_local Windows Debugging"]
+title: "!for_each_local"
+description: "The !for_each_local extension executes a debugger command one time for each local variable in the current frame."
+keywords: ["!for_each_local Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !for\_each\_local
 
-
 The **!for\_each\_local** extension executes a debugger command one time for each local variable in the current frame.
 
 ```dbgcmd
@@ -23,7 +22,6 @@ The **!for\_each\_local** extension executes a debugger command one time for eac
 ```
 
 ## <span id="ddk__for_each_local_dbg"></span><span id="DDK__FOR_EACH_LOCAL_DBG"></span>Parameters
-
 
 <span id="_______CommandString______"></span><span id="_______commandstring______"></span><span id="_______COMMANDSTRING______"></span> *CommandString*   
 Specifies the debugger commands to execute one time for each local variable in the current stack frame. If *CommandString* includes multiple commands, you must separate them with semicolons and enclose *CommandString* in quotation marks. If you include multiple commands, the individual commands in *CommandString* cannot contain quotation marks.
@@ -37,26 +35,9 @@ Displays some Help text for this extension in the [Debugger Command window](../d
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Ext.dll</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Ext.dll</p></td>
-</tr>
-</tbody>
-</table>
+Ext.dll
 
- 
-
-### Additional Information
+## Additional Information
 
 For more information about how to display and change local variables and a description of other memory-related commands, see [Reading and Writing Memory](../debugger/reading-and-writing-memory.md).
 
@@ -65,12 +46,3 @@ For more information about how to display and change local variables and a descr
 If you do not specify any arguments, the **!for\_each\_local** extension lists local variables. For more information about the local variables, use the [**dv (Display Local Variables)**](dv--display-local-variables-.md) command.
 
 If you enable verbose debugger output, the display includes the total number of local variables when the extension is called, and every time that *CommandString* is executed for a local variable, that variable and the text of *CommandString* are echoed.
-
- 
-
- 
-
-
-
-
-

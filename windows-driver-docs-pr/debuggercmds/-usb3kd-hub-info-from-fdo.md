@@ -1,7 +1,7 @@
 ---
-title: usb3kd.hub_info_from_fdo
-description: The usb3kd.hub_info_from_fdo command displays information about a hub in the USB 3.0 tree.
-keywords: ["usb3kd.hub_info_from_fdo Windows Debugging"]
+title: "!usb3kd.hub_info_from_fdo"
+description: "The !usb3kd.hub_info_from_fdo command displays information about a hub in the USB 3.0 tree."
+keywords: ["!usb3kd.hub_info_from_fdo Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,21 +14,18 @@ api_type:
 
 # !usb3kd.hub\_info\_from\_fdo
 
-
 The **!usb3kd.hub\_info\_from\_fdo** command displays information about a hub in the [USB 3.0 tree](usb-3-extensions.md#usb-3-tree).
 
 ```dbgcmd
 !usb3kd.hub_info_from_fdo DeviceObject
 ```
 
-## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______DeviceObject______"></span><span id="_______deviceobject______"></span><span id="_______DEVICEOBJECT______"></span> *DeviceObject*   
 Address of the functional device object (FDO) that represents the hub.
 
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Usb3kd.dll
 
@@ -89,14 +86,10 @@ Hub Event History:
     ...
 ```
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [USB 3.0 Extensions](usb-3-extensions.md)
 
 [**!usb3kd.hub\_info**](-usb3kd-hub-info.md)
 
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
-
- 
-

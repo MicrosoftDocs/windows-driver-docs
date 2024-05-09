@@ -1,7 +1,7 @@
 ---
-title: wdmaud (WinDbg)
-description: Displays a variety of WDM Audio (WDMAud) structures.
-keywords: ["wdmaud Windows Debugging"]
+title: "!wdmaud (WinDbg)"
+description: "!wdmaud is obsolete."
+keywords: ["!wdmaud Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,15 +14,13 @@ api_type:
 
 # !wdmaud
 
-
-Displays a variety of WDM Audio (WDMAud) structures.
+!wdmaud is obsolete.
 
 ```dbgcmd
 !wdmaud Address Flags
 ```
 
-## <span id="ddk__wdmaud_dbg"></span><span id="DDK__WDMAUD_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the address of the structure to be displayed.
@@ -47,38 +45,12 @@ Causes the display to include verbose information.
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Kdextx86.dll</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Unavailable</p></td>
-</tr>
-</tbody>
-</table>
+Windows XP and later - Unavailable
 
- 
-
-### Additional Information
+## Additional Information
 
 For information about WDM audio architecture and audio drivers, see the Windows Driver Kit (WDK) documentation.
 
 ## Remarks
 
 The contexts attached to wdmaud.sys (**pContext**) contain most of the state data for each device. Whenever wdmaud.drv is loaded into a new process, wdmaud.sys is notified of its arrival. Whenever wdmaud.drv is unloaded, wdmaud.sys cleans up any allocations made in that context.
-
- 
-
- 
-
-
-
-
-

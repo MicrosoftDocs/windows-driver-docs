@@ -1,6 +1,6 @@
 ---
-title: .nvlist (NatVis List)
-description: The .nvllist command lists the NatVis files loaded into the debugger environment.
+title: ".nvlist (NatVis List)"
+description: "The .nvlist command lists the NatVis files loaded into the debugger environment."
 keywords: [".nvlist (NatVis List) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -14,7 +14,7 @@ api_type:
 
 # .nvlist (NatVis List)
 
-The .nvllist command lists the NatVis files loaded into the debugger environment.
+The .nvlist command lists the NatVis files loaded into the debugger environment.
 
 ```dbgcmd
 .nvlist

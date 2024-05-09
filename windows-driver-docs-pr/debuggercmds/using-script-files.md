@@ -1,6 +1,6 @@
 ---
-title: Using Script Files
-description: Using Script Files
+title: "Using Script Files"
+description: "Using Script Files"
 keywords: ["script file", "script file, overview"]
 ms.date: 05/23/2017
 ---
@@ -26,12 +26,4 @@ The **$&gt;&lt;** and **$$&gt;&lt;** commands differ from the other methods of r
 You cannot use commands that are available only in WinDbg (such as [**.lsrcfix (Use Local Source Server)**](-srcfix---lsrcfix--use-source-server-.md), [**.lsrcpath (Set Local Source Path)**](-srcpath---lsrcpath--set-source-path-.md), [**.open (Open Source File)**](-open--open-source-file-.md), and [**.write\_cmd\_hist (Write Command History)**](-write-cmd-hist--write-command-history-.md)) in script files, even if the script file is executed in WinDbg. In addition, you cannot use the [**.beep (Speaker Beep)**](-beep--speaker-beep-.md), [**.cls (Clear Screen)**](-cls--clear-screen-.md), [**.hh (Open HTML Help File)**](-hh--open-html-help-file-.md), [**.idle\_cmd (Set Idle Command)**](-idle-cmd--set-idle-command-.md), [**.remote (Create Remote.exe Server)**](-remote--create-remote-exe-server-.md), kernel-mode [**.restart (Restart Kernel Connection)**](-restart--restart-kernel-connection-.md), user-mode [**.restart (Restart Target Application)**](-restart--restart-target-application-.md), or [**.wtitle (Set Window Title)**](-wtitle--set-window-title-.md) commands in a script file.
 
 WinDbg supports the same scripts as KD and CDB, with one minor exception. You can use the [**.remote\_exit (Exit Debugging Client)**](-remote-exit--exit-debugging-client-.md) command only in a script file that KD or CDB uses. You cannot exit from a debugging client though a script that is executed in WinDbg.
-
- 
-
- 
-
-
-
-
 

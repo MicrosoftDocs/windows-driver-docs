@@ -1,7 +1,7 @@
 ---
-title: ndiskd.protocol
-description: The ndiskd.protocol command displays information about an NDIS protocol driver. 
-keywords: ["ndiskd.protocol Windows Debugging"]
+title: "!ndiskd.protocol"
+description: "The !ndiskd.protocol command displays information about an NDIS protocol driver. "
+keywords: ["!ndiskd.protocol Windows Debugging"]
 ms.date: 06/26/2020
 topic_type:
 - apiref
@@ -120,3 +120,4 @@ HANDLERS
 [**NDIS extensions (Ndiskd.dll)**](ndis-extensions--ndiskd-dll-.md)
 
 [**!ndiskd.help**](-ndiskd-help.md)
+

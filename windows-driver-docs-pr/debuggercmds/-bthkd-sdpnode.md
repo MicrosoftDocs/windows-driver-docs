@@ -1,7 +1,7 @@
 ---
-title: bthkd.sdpnode
-description: The bthkd.sdpnode command displays information about a node in an sdp tree.
-keywords: ["bthkd.sdpnode Windows Debugging"]
+title: "!bthkd.sdpnode"
+description: "The !bthkd.sdpnode command displays information about a node in an sdp tree."
+keywords: ["!bthkd.sdpnode Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -21,7 +21,7 @@ The **!bthkd.sdpnode** command displays information about a node in an sdp tree.
 !bthkd.sdpnode addr [flags]
 ```
 
-## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
+## Parameters
 
 
 <span id="_______addr______"></span><span id="_______ADDR______"></span> *addr*   
@@ -34,22 +34,14 @@ Address of the sdp tree node to display.
 
 default is 0x0
 
-## <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 
 Bthkd.dll
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [Bluetooth Extensions (Bthkd.dll)](bluetooh-extensions--bthkd-dll-.md)
-
- 
-
- 
-
-
-
-
 
 

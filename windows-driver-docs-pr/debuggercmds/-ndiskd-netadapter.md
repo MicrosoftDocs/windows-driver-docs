@@ -1,7 +1,7 @@
 ---
-title: ndiskd.netadapter
-description: The ndiskd.netadapter extension displays information about NDIS miniports, or network adapters, that are active on the system. 
-keywords: ["ndiskd.netadapter Windows Debugging"]
+title: "!ndiskd.netadapter"
+description: "The !ndiskd.netadapter extension displays information about NDIS miniports, or network adapters, that are active on the system. "
+keywords: ["!ndiskd.netadapter Windows Debugging"]
 ms.date: 06/23/2020
 topic_type:
 - apiref
@@ -273,3 +273,4 @@ You can now click the "bp" link to the right of each handler to set a breakpoint
 [Kernel debugging over the network](/archive/blogs/ndis/kernel-debugging-over-the-network)
 
 [**!ndiskd.minidriver**](-ndiskd-minidriver.md)
+

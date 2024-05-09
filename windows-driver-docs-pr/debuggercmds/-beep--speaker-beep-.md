@@ -1,6 +1,6 @@
 ---
-title: .beep (Speaker Beep)
-description: The .beep command makes noise on the computer speaker.
+title: ".beep (Speaker Beep)"
+description: "The .beep command makes noise on the computer speaker."
 keywords: [".beep (Speaker Beep) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -21,7 +21,7 @@ The **.beep** command makes noise on the computer speaker.
     .beep
 ```
 
-### Environment
+## Environment
 
 This command cannot be used in script files.
 
@@ -32,12 +32,4 @@ This command cannot be used in script files.
 |Platforms|All                  |
 
  
-
- 
-
- 
-
-
-
-
 

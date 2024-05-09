@@ -1,6 +1,6 @@
 ---
-title: .scriptrun (Run Script)
-description: The .scriptrun command will load and run a JavaScript.
+title: ".scriptrun (Run Script)"
+description: "The .scriptrun command will load and run a JavaScript."
 keywords: [".scriptrun (Run Script) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -27,7 +27,7 @@ The .scriptrun command will load and run a JavaScript.
 <span id="_______ScriptFile______"></span><span id="_______scriptfile______"></span><span id="_______SCRIPTFILE______"></span> *ScriptFile*   
 Specifies the name of the script file to load and execute. *ScriptFile* should include the .js file name extension. Absolute or relative paths can be used. Relative paths are relative to the directory that you started the debugger in. File paths containing spaces are not supported.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -37,7 +37,7 @@ Specifies the name of the script file to load and execute. *ScriptFile* should i
 
 
 
-### Additional Information
+## Additional Information
 
 The .scriptrun command will load a script and, execute the following code.
 
@@ -118,7 +118,7 @@ function invokeScript()
 
 For more information about working with JavaScript, see [JavaScript Debugger Scripting](../debugger/javascript-debugger-scripting.md). For more information about the debugger objects, see [Native Objects in JavaScript Extensions](../debugger/native-objects-in-javascript-extensions.md).
 
-**Requirements**
+### Requirements
 
 Before using any of the .script commands, a scripting provider needs to be loaded. Use the [**.load (Load Extension DLL)**](-load---loadby--load-extension-dll-.md) command to load the JavaScript provider dll.
 
@@ -126,19 +126,12 @@ Before using any of the .script commands, a scripting provider needs to be loade
 0:000> .load C:\ScriptProviders\jsprovider.dll
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**.scriptload (Load Script)**](-scriptload--load-script-.md)
 
 [JavaScript Debugger Scripting](../debugger/javascript-debugger-scripting.md)
-
-
-
-
-
-
-
 
 
 

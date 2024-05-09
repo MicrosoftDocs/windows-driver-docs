@@ -1,7 +1,7 @@
 ---
-title: vad_reload
-description: The vad_reload extension reloads the user-mode modules for a specified process by using the virtual address descriptors (VADs) of that process.
-keywords: ["vad_reload Windows Debugging"]
+title: "!vad_reload"
+description: "The !vad_reload extension reloads the user-mode modules for a specified process by using the virtual address descriptors (VADs) of that process."
+keywords: ["!vad_reload Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -17,20 +17,18 @@ api_type:
 
 # !vad\_reload
 
-
 The **!vad\_reload** extension reloads the user-mode modules for a specified process by using the virtual address descriptors (VADs) of that process.
 
 ```dbgcmd
 !vad_reload Process
 ```
 
-## <span id="ddk__vad_dbg"></span><span id="DDK__VAD_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______Process______"></span><span id="_______process______"></span><span id="_______PROCESS______"></span> *Process*   
 Specifies the hexadecimal address of the process for which the modules will be loaded.
 
-### Additional Information
+## Additional Information
 
 For information about VADs, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon. 
 
@@ -58,25 +56,12 @@ fffffa80`04fd2e70: VAD maps 00000000`72a50000 - 00000000`72a6cfff, file userenv.
 . . .
 ```
 
-## Requirements
-
-**DLL**
+## DLL
 
 Kdexts.dll
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**!process**](-process.md)
 
 [**!vad**](-vad.md)
-
- 
-
- 
-
-
-
-
-
-

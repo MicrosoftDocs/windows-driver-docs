@@ -1,6 +1,6 @@
 ---
-title: vad (WinDbg)
-description: The vad extension displays details of a virtual address descriptor (VAD) or a tree of VADs.
+title: "!vad (WinDbg)"
+description: "The !vad extension displays details of a virtual address descriptor (VAD) or a tree of VADs."
 keywords: ["virtual address descriptor (VAD)", "VAD (virtual address descriptor)", "addresses, virtual address descriptor (VAD)", "vad Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -14,7 +14,6 @@ api_type:
 
 # !vad
 
-
 The **!vad** extension displays details of a virtual address descriptor (VAD) or a tree of VADs.
 
 -   Displays details of one virtual address descriptor (VAD)
@@ -27,7 +26,6 @@ The **!vad** extension displays details of a virtual address descriptor (VAD) or
 ```
 
 ## <span id="ddk__vad_dbg"></span><span id="DDK__VAD_DBG"></span>Parameters
-
 
 <span id="_______VAD-Root______"></span><span id="_______vad-root______"></span><span id="_______VAD-ROOT______"></span> *VAD-Root*   
 Address of the root of the VAD tree to be displayed.
@@ -46,26 +44,9 @@ Address in the virtual address range of a user-mode module.
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Windows 2000</p></td>
-<td align="left"><p>Kdextx86.dll</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Windows XP and later</p></td>
-<td align="left"><p>Kdexts.dll</p></td>
-</tr>
-</tbody>
-</table>
+Kdexts.dll
 
- 
-
-### Additional Information
+## Additional Information
 
 For information about virtual address descriptors, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon. 
 
@@ -98,12 +79,3 @@ VAD @ 824bc2f8
 
 SecNoChange 
 ```
-
- 
-
- 
-
-
-
-
-

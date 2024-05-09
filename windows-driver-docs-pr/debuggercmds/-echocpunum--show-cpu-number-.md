@@ -1,6 +1,6 @@
 ---
-title: .echocpunum (Show CPU Number)
-description: The .echocpunum command turns on or turns off the display of the processor number when you are debugging a multiprocessor target computer.
+title: ".echocpunum (Show CPU Number)"
+description: "The .echocpunum command turns on or turns off the display of the processor number when you are debugging a multiprocessor target computer."
 keywords: ["Show CPU Number (.echocpunum) command", "multiprocessor computer, Show CPU Number (.echocpunum) command", ".echocpunum (Show CPU Number) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -32,7 +32,7 @@ Turns off the display of the processor number.
 <span id="_______1______"></span> **1**   
 Turns on the display of the processor number.
 
-### Environment
+## Environment
 
 <table>
 <colgroup>
@@ -57,7 +57,7 @@ Turns on the display of the processor number.
 
  
 
-### Additional Information
+## Additional Information
 
 For more information about how to debug multiprocessor computers, see [Multiprocessor Syntax](multiprocessor-syntax.md).
 
@@ -66,12 +66,4 @@ For more information about how to debug multiprocessor computers, see [Multiproc
 If you use the **.echocpunum** command without any arguments, the display of processor numbers is turned on or off, and the new state is displayed.
 
 By default, the display is turned off.
-
- 
-
- 
-
-
-
-
 

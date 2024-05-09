@@ -15,421 +15,230 @@ Starting in Visual Studio 2015 with WDK 10, when you build your driver, the foll
 InfVerif follows a general rule that the lower the error number, the more severe the issue.
 Most error codes can be either a warning or an error depending on the arguments supplied to InfVerif.
 
+Errors should be considered "must fix".
+
+Warnings can be ignored if they are fully understood, but they are often symptoms of another problem. For instance, a warning about a section being unused could be a symptom of an INF directive being invoked incorrectly.
+
 ### Handling Errors
 
-You must fix all errors in order to pass driver tests on the Hardware Dev Center dashboard. Errors are related to the following conditions:
+You must fix all errors in order to pass driver tests in Hardware Dev Center.
+
+Errors are related to the following conditions:
 
 - The INF parser is unable to successfully interpret your INF
 - The INF parser is able to interpret the INF only by making a default value assumption (ambiguous syntax)
-- The arguments to InfVerif indicate that a rule set should be applied to the INF (such as Universal)
+- The arguments to InfVerif indicate that a rule set should be applied to the INF (such as [InfVerif /h](infverif_h.md))
 
 While you don't need to fix warnings before submitting your driver on the Dev Center, we recommend taking the time to understand the issue being reported. If you don't understand a given warning, your INF might not always behave as you expect.
 
 Warnings are typically related to:
 
-- Syntax that may be incorrect, but has valid scenarios where it is appropriate
-- Syntax that is valid for the given InfVerif parameters but is an error in other modes, such as Universal
-
-Issues related to the Universal setting appear as errors if:
-
-- In Visual Studio, you build your driver with target platform set to **Universal** or **Mobile**.
-- You run InfVerif.exe from the command line and specify the /u flag.
-
-Issues related to the Universal setting appear as warnings if:
-
-- In Visual Studio, you build your driver with target platform set to **Desktop**.
-- You run InfVerif.exe from the command line and do not specify the /u flag.
+- Syntax that may be incorrect but has valid scenarios where it is appropriate
+- Syntax that is valid for the given InfVerif parameters but is an error in other modes, such as Driver Isolation mode
 
 ## Error Codes
 
-Error codes come in the following classifications:
+The new (starting in Windows Insider Preview build 26080) InfVerif.exe command 'infverif.exe /code' has the same information as the below table.
 
-- [Syntax in the INF file (1100-1299)](#syntax-in-the-inf-file-1100-1299)
-- [Universal INF (1300-1319)](#universal-inf-1300-1319)
-- [Windows Driver (1320-1329)](#windows-driver-1320-1329)
-- [Installation (2000-2999)](#installation-2000-2999)
-
-Not all error codes are listed below, as many have self-evident meanings. Errors in the 1000-1099 range are considered self-evident, as they are basic syntax errors.
-
-## Syntax in the INF file (1100-1299)
-
-While InfVerif failure means driver submission failure, driver installation may still succeed.
-This is because when you install a driver, if errors are present in the INF file, Windows also tries the default value for the setting.
-Windows does not fail driver installation due to errors in this range, but errors in this range indicate that the behavior may change depending on OS version or SKU.
-In cases where the driver installs successfully, these errors indicate that there *are* circumstances where the driver may not install properly.
-
-<table>
-<thead>
-<tr>
-<th>Error Code</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>1100: DriverStore Copyfile name mismatch</strong></td>
-<td>This error occurs when a file is copied or renamed from its original driver store name and location to a different name and location in the driver store.  For example:
-<pre>
-[SourceDisksFiles]
-DriverFile.sys=1,x64  
-
-[DestinationDirs]
-CopyFileSection=13,SubDirectory  
-  
-[CopyFileSection]
-DriverFile.sys
-</pre>
-The driver store maintains the original driver package directory structure.  In the code above, the original location of DriverFile.sys is <i>INF location</i>\x64, but the CopyFiles directive places it in <i>INF location</i>\SubDirectory.  The same error would be shown if the file was renamed as part of the copy.</td>
-</tr>
-<tr>
-<td><strong>1203: Section not found</strong></td>
-<td>For example, the following INF syntax causes error 1203:
-<pre>
-[MyInstallSection]
-CopyFiles=driverFile.sys
-</pre>
-This error is reported because the <strong>CopyFiles</strong> directive expects a section name (that specifies the list of files to copy). However, the <strong>CopyFiles</strong> directive can specify a file name. To differentiate between a section name and a file name, preface a file name with the @ token as shown here:
-<pre>
-[MyInstallSection]
-CopyFiles=@driverFile.sys
-</pre>
-</td>
-</tr>
-<tr>
-<td><strong>1204: Provider cannot be Microsoft</strong></td>
-<td>The Provider field in the [Version] section cannot specify Microsoft.
-<pre>
-[Version]
-Signature="$Windows NT$"
-Class=Sample
-ClassGuid={78A1C341-4539-11d3-B88D-00C04FAD5171}
-Provider="Microsoft"
-</pre>
-</td>
-</tr>
-<tr>
-<td><strong>1205: Section [Driver_files] referenced from [Directive1] and [Directive2] directive</td>
-<td>This warning is generated whenever two different directives point to the same section.
-  <p>Note that while in most cases this is, indeed, an error, in some cases 1205 is reported even though the condition is on purpose.</td>
-</tr>
-<tr>
-<td><strong>1212: Cannot have both [DefaultInstall] and [Manufacturer]</strong></td>
-<td>A single INF cannot contain both [DefaultInstall] and [Manufacturer].  INFs authored with both should remove one of the two sections.
-</td>
-</tr>
-<tr>
-<td><strong>1220: Cannot directly reference a section defined in an included INF</strong></td>
-<td>If your INF file references a <a href="/windows-hardware/drivers/install/inf-ddinstall-section">DDInstall</a> section in an included INF, you must use the <strong>Needs</strong> directive. Any other directive that references a section from an included INF causes error 1220.
-<p>In this example, the install section of A.INF references an equivalent install section in B.INF.</p>
-<p>A.INF contains:</p>
-<div class="code">
-<pre>
-A.INF
-[InstallSectionA]
-Include = B.INF
-Needs = InstallSectionB
-AddReg = AddRegB ; WARNING 1220
-
-[InstallSectionA.Services]
-Include = B.INF
-Needs = InstallSectionB.Services
-</pre>
-<p>B.INF contains:</p>
-<pre>
-B.INF
-[InstallSectionB]
-AddReg = AddRegB
-[InstallSectionB.Services]
-...
-
-[AddRegB]
-...
-</pre>
-</div>
-<p>The <strong>Needs</strong> directive must reference an equivalent install section to process in the current install section. For example, a Needs directive in [InstallSectionA.Services] should point to the .Services of another install section. The <strong>Needs</strong> directive may also be used to include the behavior of another DDInstall section of the same INF. Using the <strong>Needs</strong> directive on other types of sections may result in undesired behavior.</p></td>
-</tr>
-<tr>
-<td><strong>1221: Cannot modify services regkey, must use HKR</strong></td>
-<td>This error indicates that the INF file references a location in the services registry key, for example <strong>HKLM\SYSTEM\CurrentControlSet\Services&lt;em&gt;Service Name</em></strong>. When accessing the services key, you should instead use the relative root (<strong>HKR</strong>) to associate the registry value with the device or driver instance.
-<p>When you use <strong>HKR</strong>, the registry value will not be present until the device is installed.</p></td>
-</tr>
-<tr>
-<td><strong>1230: Missing file 'xxxx' under [SourceDisksFiles] section.</strong></td>
-<td>This indicates that a file was specified as part of the driver package, but the source location of the file relative to the INF was not specified in a [SourceDisksFiles] section.
-<pre>
-[SourceDisksFiles]
-filename=disk id
-</pre>
-Note that this error frequently occurs if architecture-decorated versions of [SourceDisksFiles] are specified (such as [SourceDisksFiles.amd64], but not all architectures supported by the INF have a [SourceDisksFiles] section.</td>
-</tr>
-<tr>
-<td><strong>1233: Missing directive required for signature</strong></td>
-<td>In the [Version] section, you must specify a CatalogFile directive (and associated catalog file) to receive a signature on a driver package.
-<pre>
-CatalogFile=wudf.cat
-</pre>
-</td>
-</tr>
-<tr>
-<td><strong>1235: String token not defined in [Strings]</strong></td>
-<td>A specified string token has no definition in the [Strings] section. For example, the INF file specifies <em>%REG_DWORD%</em> in an <em>add-registry section</em> specified by an <a href="/windows-hardware/drivers/install/inf-addreg-directive"><strong>AddReg</strong></a> directive, but there is no corresponding REG_DWORD = 0x00010001 in the <a href="/windows-hardware/drivers/install/inf-strings-section">[Strings]</a> section.
-<p>This error frequently occurs if your INF file specifies a registry value that contains an environment variable. For example:</p>
-<pre>
-[MyAddReg]
-HKR,,DllPath,%SystemRoot%\System32\myDll.sys
-</pre>
-This line causes the INF parser to attempt to locate the token "SystemRoot" from the [Strings] section, rather than the intended behavior of storing the literal "%SystemRoot%" in the registry.  To use the literal value %SystemRoot% rather than perform a string replacement, use the escape sequence %%.
-<pre>
-[MyAddReg]
-HKR,,DllPath,%%SystemRoot%%\System32\myDll.sys
-</pre>
-</td>
-</tr>
-<tr>
-<td><strong>1280/1281: Class name and ClassGuid mismatch</strong></td>
-<td>These errors indicate that your INF uses a well-known Class or ClassGuid, but one of these values is inconsistent.  For example, given the following well-known Class/ClassGuid pair:
-<pre>
-Class = Sample
-ClassGuid = {78A1C341-4539-11d3-B88D-00C04FAD5171}
-</pre>
-  
-The following generates a 1280 error because the ClassGuid is well-known but the Class does not match:
-<pre>
-Class = ContosoDevices
-ClassGuid = {78A1C341-4539-11d3-B88D-00C04FAD5171}
-</pre>
-  
-The following generates a 1281 error because the Class is well-known but the ClassGuid does not match:
-<pre>
-Class = Sample
-ClassGuid = {99f58d4a-8093-4968-a93e-f74b26bb7f0a}
-</pre>
-  
-</td>
-</tr>
-<tr>
-<td><strong>1285: Cannot specify [ClassInstall32] section for Microsoft-defined class.</strong></td>
-<td>As of Windows 10, IHV-supplied INFs are not allowed to use a [ClassInstall32] in an INF of any Microsoft-defined class.
-</td>
-</tr>
-<tr>
-<td><strong>1296: Specified service not associated with hardware</strong></td>
-<td>Starting in Windows 10, version 1809, this has changed from a Warning to an Error.  The .Services sections are required for each defined target OS.  This is good practice and applies to all INFs and not just 1809.  
-
-If you were previously not including this section because you had no services, and were relying on Inbox driver services, then you may need to create a .Services section that references the Inbox INF’s service using a NEEDS and INCLUDES statement.  
-
-For example:  An INF file would have the following .Services section for each OS target to resolve this error.
-
-<pre>
-[XXXXXXXX.Install.NTx86.Services]
-Include=filename.inf
-Needs=inf-section-name.Services
-</pre>
-
-For devices that do not require a function driver, the NULL driver can be specified as follows:
-<pre>
-AddService = ,2
-</pre>
-
-<b>Only use this in the case where the INF is installing a non-functional device to specify it does not need a driver.</b>
-
-For example: A device that requires only a filter driver, and not a function driver would have two AddService directives:
-<pre>
-AddService = MyFilterDriver,, My-Service-Install-Section 
-AddService = ,2
-</pre>
-
-</td>
-</tr>
-<tr>
-<td><strong>1297: Device driver does not install on any devices, use primitive driver if this is intended.</strong></td>
-<td>This indicates that the INF file is a device driver, but it is not being used as a device driver. This may cause issues in how the driver is treated by the driver store. If this is unintentional, check your INF to make sure that hardware IDs are correctly specified. If the driver is not intended to install on devices, convert it to a primitive driver.  For more info, see <a href="/windows-hardware/drivers/develop/creating-a-primitive-driver#converting-from-a-device-driver-inf">Converting from a device driver INF</a>.
-</td>
-</tr>
-</tbody>
-</table>
-
-## Universal INF (1300-1319)
-
->[!IMPORTANT]
->Your driver INF file is universal if you do not get any errors or warnings with error number in the range 13*00*-13*19*.
-
-The following errors and warnings are related to INF configurability:
-
-<table>
-<thead>
-<tr>
-<th>Error/Warning Code</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>1300: Found legacy</strong><em>Xxx</em></td>
-<td>You will see this error if you use deprecated sections or directives such as <a href="/windows-hardware/drivers/install/inf-logconfig-directive"><strong>LogConfig</strong></a> or <a href="/windows-hardware/drivers/install/inf-ddinstall-coinstallers-section"><strong>DDInstall.CoInstallers</strong></a>.</td>
-</tr>
-<tr>
-<td><strong>1301: Found legacy</strong><em>Xxx</em><strong>operation</strong><em>Xxx</em></td>
-<td>You will see this error if you use deprecated sections or directives such as <a href="/windows-hardware/drivers/install/inf-logconfig-directive"><strong>LogConfig</strong></a> or <a href="/windows-hardware/drivers/install/inf-ddinstall-coinstallers-section"><strong>DDInstall.CoInstallers</strong></a>.</td>
-</tr>
-<tr>
-<td><strong>1302: Found legacy</strong><em>Xxx</em><strong>operation for</strong><em>Xxx</em></td>
-<td>This error occurs when the operation affects something external to the driver package, like deleting a service or deleting a file.</td>
-</tr>
-<tr>
-<td><strong>1303: Found legacy operation defining co-installers</strong></td>
-<td>Error 1303 indicates that an AddReg operation is specifying a coinstaller. For example:
-<pre>
-AddReg = HKR,,CoInstallers32,0x00010000,"MyCoinstaller.dll"
-</pre>
-</td>
-</tr>
-<tr>
-<td><strong>1304: Found legacy operation using non-relative key</strong></td>
-<td>Error 1304 indicates that a registry operation uses a registry root other than HKR.</td>
-</tr>
-<tr>
-<td><strong>1305: Found legacy operation using appendable multi-sz value</strong></td>
-<td>Error 1305 indicates that the INF deletes a value from a <strong>REG_MULTI_SZ</strong> or appends a value to an existing <strong>REG_MULTI_SZ</strong>.</td>
-</tr>
-<tr>
-<td><strong>1306: Found legacy operation with non-system target path</strong></td>
-<td>Error 1306 indicates that a file copy specifies a target that is not under %SystemRoot%.</td>
-</tr>
-<tr>
-<td><strong>1310-1312: Incorrect section extension for a Needs directive</strong></td>
-<td>Needs directives effectively do a copy/paste of the needed section into the referencing section.  As a baseline validation, InfVerif compares the extension of the section.  This means that a [DDInstall.Services] can only use the Needs directive on other [DDInstall.Services] sections.</td>
-</tr>
-<tr>
-<td><strong>1313-1314: Missing includes directive</strong></td>
-<td>In each section that uses a Needs directive, there must be a corresponding Includes directive to reference the INF that contains the target section.  Previously the Needs directive would be valid if the Include directive was in another INF section.</td>
-</tr>
-<tr>
-<td><strong>133x: Functional errors</strong></td>
-<td>Multiple registry sections write to a single global key. For example, different sections could have a service set to different service configurations, a global registry key set to different data values, or a destination file pointing to different source files.</td>
-</tr>
-</tbody>
-</table>
-
-## Windows Driver (1320-1329)
-
->[!IMPORTANT]
->Your driver INF file complies with Windows Driver requirements if you do not get any errors or warnings with error number in the range 13*2x*. These requirements are described in detail in the <a href="/windows-hardware/drivers/develop/driver-isolation"><strong>Driver Isolation Requirements</strong></a> documentation.
-
-The following errors and warnings are related to Windows Driver requirements:
-
-<table>
-<thead>
-<tr>
-<th>Error/Warning Code</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>1320: Registry root <em>Xxx</em> is not isolated to HKR</strong></td>
-<td>Error 1320 indicates that a registry key operation is not compliant with registry requirements defined in <a href="/windows-hardware/drivers/develop/driver-isolation#reading-and-writing-state"><strong>Reading and Writing State</strong></a>.
-</td>
-</tr>
-<tr>
-<td><strong>1321: Registry root <em>Xxx</em> of value <em>Xxx</em> is not isolated to HKR</strong></td>
-<td>Error 1321 indicates that a registry value operation is not compliant with registry requirements defined in <a href="/windows-hardware/drivers/develop/driver-isolation#reading-and-writing-state"><strong>Reading and Writing State</strong></a>.
-</td>
-</tr>
-<tr>
-<td><strong>1322: Destination file path <em>Xxx</em> for file <em>Xxx</em> is not isolated to DIRID 13</strong></td>
-<td>Error 1322 indicates that a file is copied to a an invalid destination, per requirements defined in <a href="/windows-hardware/drivers/develop/driver-isolation#run-from-driver-store"><strong>Run from Driver Store</strong></a>.
-</td>
-</tr>
-<tr>
-<td><strong>1323: Service registry key <em>Xxx</em> must be under the Parameters subkey</strong></td>
-<td>Error 1323 indicates that a service registry value is not set as an HKR under the parameters subkey, per requirements defined in <a href="/windows-hardware/drivers/develop/driver-isolation#service-registry-state"><strong>Service Registry State</strong></a>.
-</td>
-</tr>
-<tr>
-<td><strong>1324: [Version] section should specify PnpLockdown=1</strong></td>
-<td>Error 1324 indicates that PnpLockdown was not specified in the version section. This specification causes PNP to add additional security to binary files in the driver package to prevent tampering and should always be specified in driver packages.
-</td>
-</tr>
-</tbody>
-</table>
-
-## Installation (2000-2999)
-
-Issues in the 2000-2999 range are issues that depend on the context, such as directives that do not work on certain product SKUs or versions, or a directive that is not allowed in the specified device class.
-
-<table>
-<thead>
-<tr>
-<th>Error Code</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>2083: Section not referenced or used</strong></td>
-<td>This warning indicates that the INF file provides a section that is not referenced. When the driver is installed, the contents of the section referenced in the warning are not evaluated.</td>
-</tr>
-<tr>
-<td><strong>2084: Replaced legacy pattern in section</strong></td>
-<td><p>This warning indicates that the INF provides a legacy mechanism that will be automatically replaced with an up-to-date one during parse. When the driver is installed, the contents of the section will be replaced by the applicable Include/Needs directives.</p>
-<p> To address, use Include/Needs directives in the <a href="/windows-hardware/drivers/install/inf-ddinstall-section">DDInstall</a> section and for each possible DDInstall.* section to reference the corresponding Inbox INF DDInstall.* sections as shown below:</p>
-<pre>
-[DDInstall]
-Include=umpass.inf
-Needs=UmPass
-; also include any existing DDInstall directives
-
-[DDInstall.HW]
-Include=umpass.inf
-Needs=UmPass.HW
-; also include any existing DDInstall.HW directives
-
-[DDInstall.Interfaces]
-Include=umpass.inf
-Needs=UmPass.Interfaces
-; also include any existing DDInstall.Interfaces directives
-
-[DDInstall.Services]
-Include=umpass.inf
-Needs=UmPass.Services
-; also include any existing any DDInstall.Services directives
-</pre>
-</td>
-</tr>
-<tr>
-<td><strong>2222: Legacy directive will be ignored.</strong></td>
-<td>This warning indicates that the INF specifies a deprecated directive. When the driver is installed, the directive referencing the section is not evaluated. For example, the <a href="/windows-hardware/drivers/install/inf-logconfig-directive"><strong>INF LogConfig Directive</strong></a> directive is no longer supported, so the following section results in this warning.
-<pre>
-[InstallSection.LogConfigOverride]
-LogConfig=LogConfigSection
-...
-</pre>
-For information about which INF directives are deprecated, see <a href="/windows-hardware/drivers/install/inf-directives">INF Directives</a>.</td>
-</tr>
-<tr>
-<td><strong>2223: Section should have an architecture decoration</strong></td>
-<td>This warning indicates that the INF file contains an <a href="/windows-hardware/drivers/install/inf-manufacturer-section"><strong>INF Manufacturer Section</strong></a> that specifies a <a href="/windows-hardware/drivers/install/inf-models-section"><strong>model section</strong></a> with no architecture decoration. For example, the following INF syntax would result in warning 2223:
-<pre>
-[Manufacturer]
-%MfgName% = InstallSection
-
-[InstallSection]
-...
-</pre>
-When you install the driver, the preceding INF syntax defaults to x86.
-<p>Instead, declare all supported architectures and provide a corresponding install section for each:</p>
-<pre>
-[Manufacturer]
-%MfgName% = InstallSection, NTX86, NTAMD64
-
-[InstallSection.NTAMD64]
-...
-
-[InstallSection.NTX86]
-...
-</pre>
-If the INF file specifies a decorated section for x86 and an undecorated section, the undecorated section is ignored when you install your driver.</td>
-</tr>
-</tbody>
-</table>
+| Error Code and Description | Error Levels &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| --- | :--- |
+| **Code 1000**<a name="1000"></a><br><br>**Message**<br>INF '&lt;value&gt;' could not be found.<br><br>**Details**<br>The INF file could not be located in the specified file path. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1001**<a name="1001"></a><br><br>**Message**<br>Invalid INF '&lt;value&gt;', must contain [Version] section and have signature "\$Windows NT\$".<br><br>**Details**<br>Driver INFs require a top-level [Version] section with metadata about the file format. This section was missing or<br>indicated that the INF was in an unsupported format. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1002**<a name="1002"></a><br><br>**Message**<br>Invalid INF '&lt;value&gt;', parsing error on line &lt;value&gt;. The parser returned error 0x&lt;value&gt;.<br><br>**Details**<br>The INF contained a syntax error on the specified line that prevented parsing from continuing. Typically,<br>additional error messages will indicate the manner of the failure, or the error code will indicate the problem. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1003**<a name="1003"></a><br><br>**Message**<br>INF has invalid or unknown file encoding, must be ANSI or UTF-16 LE.<br><br>**Details**<br>The encoding of the INF is not supported and may lead to a failure to parse the INF. The INF should be converted to<br>UTF-16 LE. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1005**<a name="1005"></a><br><br>**Message**<br>Section name required for &lt;value&gt; directive.<br><br>**Details**<br>The indicated directive requires an argument specifying a section that contains more data, but this section was omitted. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1006**<a name="1006"></a><br><br>**Message**<br>Missing value for &lt;value&gt;.<br><br>**Details**<br>A required argument for the specified directive has been omitted. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1007**<a name="1007"></a><br><br>**Message**<br>Missing &lt;value&gt; for source file "&lt;value&gt;" in section [&lt;value&gt;].<br><br>**Details**<br>A disk or file path was specified with an invalid subdirectory value. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1008**<a name="1008"></a><br><br>**Message**<br>Missing or invalid disk ID for '&lt;value&gt;' under [&lt;value&gt;] section.<br><br>**Details**<br>A disk or file path was specified with an invalid ID value. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1010**<a name="1010"></a><br><br>**Message**<br>Invalid ClassGuid "&lt;value&gt;", expecting {XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}.<br><br>**Details**<br>The ClassGuid value is in an incorrect format. It should follow the standard GUID format, including braces and dashes. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1011**<a name="1011"></a><br><br>**Message**<br>Missing models section name in [Manufacturer] section.<br><br>**Details**<br>An entry in the [Manufacturer] section is missing the section name of the [Models] section. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1013**<a name="1013"></a><br><br>**Message**<br>Missing &lt;value&gt; &lt;value&gt; key in section &lt;value&gt;.<br><br>**Details**<br>A required key in the INF section is not specified. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1014**<a name="1014"></a><br><br>**Message**<br>Invalid &lt;value&gt; &lt;value&gt; key in section &lt;value&gt;.<br><br>**Details**<br>A required key in the INF section was found but was supplied with invalid data. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1015**<a name="1015"></a><br><br>**Message**<br>Invalid &lt;value&gt; path "&lt;value&gt;" in section &lt;value&gt;.<br><br>**Details**<br>The specified path had an incorrect format. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1016**<a name="1016"></a><br><br>**Message**<br>Failed to get &lt;value&gt; path for &lt;value&gt; file "&lt;value&gt;".<br><br>**Details**<br>The full path to the file could not be generated. The path is assembled using [SourceDisksFiles] and<br>[SourceDisksNames] and may be missing or incorrectly listed in those sections. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1017**<a name="1017"></a><br><br>**Message**<br>Service name &lt;value&gt; is reserved for internal use only.<br><br>**Details**<br>This service name is reserved and must be changed. All names used in sample drivers are reserved. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1019**<a name="1019"></a><br><br>**Message**<br>Invalid &lt;value&gt; &lt;value&gt; GUID "&lt;value&gt;", expecting {XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}.<br><br>**Details**<br>The GUID is in an incorrect format. It should follow the standard GUID format, including braces and dashes. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1020**<a name="1020"></a><br><br>**Message**<br>Filter level name "&lt;value&gt;" is reserved.<br><br>**Details**<br>The name of the filter level is reserved for use by internal state and may not be used as a filter level. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1021**<a name="1021"></a><br><br>**Message**<br>Service '&lt;value&gt;' exceeds maximum name length (&lt;value&gt;) when made unique.<br><br>**Details**<br>The name of the service exceeds the maximum service name length when made unique by appending the unique token to the name. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1022**<a name="1022"></a><br><br>**Message**<br>Service name '&lt;value&gt;' must utilize the unique names feature across all declarations.<br><br>**Details**<br>Multiple install sections within the INF use the same service name, but only a subset of them are utilizing the unique<br>names capability. They must be consistent with the usage of the unique names capability. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1078**<a name="1078"></a><br><br>**Message**<br>Skipping &lt;value&gt; "&lt;value&gt;" specified under &lt;value&gt; directive.<br><br>**Details**<br>The specified entry is not valid in the context it is used. It may be valid in other contexts. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1080**<a name="1080"></a><br><br>**Message**<br>&lt;value&gt; directive missing &lt;value&gt;.<br><br>**Details**<br>An argument to the specified directive is missing. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1081**<a name="1081"></a><br><br>**Message**<br>&lt;value&gt; directive has invalid &lt;value&gt; "&lt;value&gt;".<br><br>**Details**<br>An invalid argument was specified for the directive. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1082**<a name="1082"></a><br><br>**Message**<br>&lt;value&gt; directive has invalid &lt;value&gt;.<br><br>**Details**<br>An invalid argument was specified for the directive. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1083**<a name="1083"></a><br><br>**Message**<br>&lt;value&gt; directive has invalid &lt;value&gt; on &lt;value&gt;.<br><br>**Details**<br>An invalid flag was specified for the directive. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1084**<a name="1084"></a><br><br>**Message**<br>Missing '&lt;value&gt;' directive for '&lt;value&gt;' directive with &lt;value&gt; "&lt;value&gt;" in section [&lt;value&gt;].<br><br>**Details**<br>The directive requires an additional directive to be specified elsewhere and could not be found. For example, the<br>UmdfService directive requires a corresponding UmdfLibraryVersion directive. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1085**<a name="1085"></a><br><br>**Message**<br>&lt;value&gt; directive incomplete.<br><br>**Details**<br>The directive requires additional arguments. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1086**<a name="1086"></a><br><br>**Message**<br>Duplicate &lt;value&gt; '&lt;value&gt;' may be skipped.<br><br>**Details**<br>The same piece of data was defined multiple times unnecessarily, such as multiple AddComponents specifying the same<br>component name. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1087**<a name="1087"></a><br><br>**Message**<br>Cannot have both &lt;value&gt; and &lt;value&gt; directives, &lt;value&gt; will be ignored.<br><br>**Details**<br>Some definitions support only one directive or another and cannot both be used. For example, AddFilter supports<br>specifying a filter level or position, but not both. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1088**<a name="1088"></a><br><br>**Message**<br>Duplicate &lt;value&gt; directive not allowed.<br><br>**Details**<br>A directive was specified multiple times, but only one can take effect. This may lead to non-deterministic behavior. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1100**<a name="1100"></a><br><br>**Message**<br>Source and destination &lt;value&gt; must match for file '&lt;value&gt;' when using CopyFiles with DIRID &lt;value&gt;.<br><br>**Details**<br>This error occurs when a file is copied or renamed from its original driver store name and location to a different<br>name and location in the driver store. <br><pre>[SourceDisksFiles]<br>DriverFile.sys=1,x64<br>[DestinationDirs]<br>CopyFileSection=13,SubDirectory</pre><br><pre>[CopyFileSection]<br>DriverFile.sys</pre><br>The driver store maintains the original driver package directory structure. In the code above, the original<br>location of DriverFile.sys is &lt;INF location&gt;\x64, but the CopyFiles directive places it in &lt;INF location&gt;\SubDirectory.<br>The same error would be shown if the file was renamed as part of the copy. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1101**<a name="1101"></a><br><br>**Message**<br>Security descriptors cannot be used with DIRID &lt;value&gt;.<br><br>**Details**<br>Security descriptors cannot be used with any file that has a destination directory of the specified DIRID. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1102**<a name="1102"></a><br><br>**Message**<br>Invalid directive &lt;value&gt;, cannot be used with DIRID &lt;value&gt;.<br><br>**Details**<br>The specified directive cannot be used on a file that has a destination directory of the specified DIRID. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1103**<a name="1103"></a><br><br>**Message**<br>Invalid flag 0x&lt;value&gt;, cannot be used with DIRID &lt;value&gt;.<br><br>**Details**<br>The specified flag cannot be used on a file that has a destination directory of the specified DIRID. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1110**<a name="1110"></a><br><br>**Message**<br>Cannot specify file '&lt;value&gt;' in a CopyINF directive.<br><br>**Details**<br>Only other INF files can be specified in a CopyINF directive. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1141**<a name="1141"></a><br><br>**Message**<br>Invalid device software binary '&lt;value&gt;', path must be relative to referencing driver package.<br><br>**Details**<br>An absolute path was specified to the software binary, but it must be a relative path. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1142**<a name="1142"></a><br><br>**Message**<br>Invalid device software in section [&lt;value&gt;], SoftwareType is &lt;value&gt; but &lt;value&gt; is missing.<br><br>**Details**<br>The specified software type requires the specified directive that was not specified. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1144**<a name="1144"></a><br><br>**Message**<br>Device software with SoftwareType &lt;value&gt; may not execute on all product types.<br><br>**Details**<br>The specified software type is only functional on Windows Desktop OS products and will not work with other product types. | **/k:** Warning<br>**/u:** Error<br>**/w:** Warning<br><br><br> |
+| **Code 1150**<a name="1150"></a><br><br>**Message**<br>Invalid directive &lt;value&gt; in section [&lt;value&gt;], cannot contain characters '\' or ','.<br><br>**Details**<br>An invalid character was specified in the component ID. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1160**<a name="1160"></a><br><br>**Message**<br>Unknown threading model '&lt;value&gt;' specified for COM class '&lt;value&gt;', expecting 'Apartment', 'Free', 'Both', or 'Neutral'.<br><br>**Details**<br>The specified threading model value is not recognized. Supported types include 'Apartment', 'Free', 'Both', or 'Neutral'. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1180**<a name="1180"></a><br><br>**Message**<br>Invalid event channel in section [&lt;value&gt;], cannot have duplicate value (&lt;value&gt;) across multiple channels under section [&lt;value&gt;].<br><br>**Details**<br>Multiple event channels have the same channel ID within a single provider. The channel IDs should be unique.<br><br>For full details on event channels, see: [ChannelType](/windows/win32/wes/eventmanifestschema-channeltype-complextype) | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1181**<a name="1181"></a><br><br>**Message**<br>Invalid event channel &lt;value&gt; value '&lt;value&gt;' in section [&lt;value&gt;], cannot be used with &lt;value&gt; &lt;value&gt;.<br><br>**Details**<br>The event channel specifies a value that is invalid with the channel type.<br><br>For full details on event channels, see: [ChannelType](/windows/win32/wes/eventmanifestschema-channeltype-complextype) | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1182**<a name="1182"></a><br><br>**Message**<br>Event channel &lt;value&gt; and &lt;value&gt; mismatch in section [&lt;value&gt;], expecting &lt;value&gt;=&lt;value&gt; for &lt;value&gt;=&lt;value&gt;.<br><br>**Details**<br>The event channel specifies a value that requires an additional parameter. This additional parameter is missing.<br><br>For full details on event channels, see: [ChannelType](/windows/win32/wes/eventmanifestschema-channeltype-complextype) | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1199**<a name="1199"></a><br><br>**Message**<br>The syntax '&lt;value&gt;' was introduced in OS version &lt;value&gt;.&lt;value&gt;.&lt;value&gt;, but DDInstall sections utilizing the syntax will install on earlier OS versions. Those DDInstall sections should be restricted to only install on &lt;value&gt;.&lt;value&gt;.&lt;value&gt; or higher using a TargetOSVersion decoration.<br><br>**Details**<br>The impacted DDInstall section will install on product versions that do not support the specified syntax. A build<br>number should be added to the Models section to limit applicability of the DDInstall to only supported product<br>versions. This will prevent the driver from installing on product versions where it will not function properly.<br><br>For additional information, see: [INF Manufacturer Section](/windows-hardware/drivers/install/inf-manufacturer-section) and [Combining platform extensions and operating system versions](/windows-hardware/drivers/install/combining-platform-extensions-with-operating-system-versions) | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1201**<a name="1201"></a><br><br>**Message**<br>&lt;value&gt; entry has an extra value '&lt;value&gt;' and will be ignored.<br><br>**Details**<br>The specified directive has more arguments specified than are allowed. The extra values will be ignored. | **/k:** Warning<br>**/u:** Warning<br>**/w:** Warning<br><br><br> |
+| **Code 1202**<a name="1202"></a><br><br>**Message**<br>Included INF '&lt;value&gt;' not found. Only system provided INFs may be included.<br><br>**Details**<br>The Include directive has specified an INF that cannot be found. Only Microsoft-supplied Inbox INFs may be referenced with the Include directive. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1203**<a name="1203"></a><br><br>**Message**<br>Section [&lt;value&gt;] not found.<br><br>**Details**<br>A directive has referred to a section that does not exist, this may be a typo or an error in syntax.<br>Verify the section name exists and is spelled correctly, or refer to the full documentation on the specified directive<br>for additional details. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1204**<a name="1204"></a><br><br>**Message**<br>Provider cannot be "Microsoft", must be organization who authored INF.<br><br>**Details**<br>Only Microsoft is permitted to specify the provider as Microsoft. Provider names that begin with Microsoft are also not permitted. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1205**<a name="1205"></a><br><br>**Message**<br>Section [&lt;value&gt;] referenced from &lt;value&gt; and &lt;value&gt; directive.<br><br>**Details**<br>The same section was referenced from two different directives. For example:<br><br>CopyFiles = FileSection<br>DelFiles = FileSection | **/k:** Warning<br>**/u:** Warning<br>**/w:** Warning<br><br><br> |
+| **Code 1206**<a name="1206"></a><br><br>**Message**<br>Invalid reference of non-&lt;value&gt; section [&lt;value&gt;] from &lt;value&gt; directive.<br><br>**Details**<br>The same section was referenced from two different directives. For example:<br><br>CopyFiles = FileSection<br>AddFilter = FileSection | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1207**<a name="1207"></a><br><br>**Message**<br>Directive '&lt;value&gt;' not allowed in MSFT INFs.<br><br>**Details**<br>Microsoft INFs are not permitted to use the specified directive. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1208**<a name="1208"></a><br><br>**Message**<br>Directive '&lt;value&gt;' not allowed.<br><br>**Details**<br>This directive is only allowed in Microsoft-supplied Inbox INF files and may not be used by third parties. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1209**<a name="1209"></a><br><br>**Message**<br>Section [&lt;value&gt;] is defined multiple times.<br><br>**Details**<br>Multiple sections with the same name are defined, the contents of them can be combined into one section. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1210**<a name="1210"></a><br><br>**Message**<br>Provider cannot be "&lt;value&gt;", must be set to "&lt;value&gt;".<br><br>**Details**<br>Provider name must match the /provider switch.<br><br> | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1211**<a name="1211"></a><br><br>**Message**<br>Cannot have multiple associated services under [&lt;value&gt;], "&lt;value&gt;" and "&lt;value&gt;". Only one service may use SPSVCINST_ASSOCSERVICE.<br><br>**Details**<br>The SPSVCINST_ASSOCSERVICE flag indicates that the service is the function driver for the device. A device can only<br>have one associated function driver service. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1212**<a name="1212"></a><br><br>**Message**<br>Cannot have both [&lt;value&gt;] and [&lt;value&gt;] sections.<br><br>**Details**<br>The two specified section names cannot both be in the same INF file. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1213**<a name="1213"></a><br><br>**Message**<br>Cannot list CAT files under [SourceDisksFiles].<br><br>**Details**<br>Catalog files should only be referenced from the CatalogFile directive within the [Version] section. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1214**<a name="1214"></a><br><br>**Message**<br>Invalid catalog file '&lt;value&gt;', expecting 'filename.cat'.<br><br>**Details**<br>The file names of catalog files must follow the format 'filename.cat'. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1217**<a name="1217"></a><br><br>**Message**<br>Invalid version '&lt;value&gt;' in &lt;value&gt; directive, expecting w.x.y.z, where each segment is between 0-65536.<br><br>**Details**<br>The version value in the specified directive must follow the format w.x.y.z, where each segment is between 0-65536. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1218**<a name="1218"></a><br><br>**Message**<br>Invalid driver date value &lt;value&gt; in &lt;value&gt;, expecting MM/DD/YYYY.<br><br>**Details**<br>The date in the DriverVer directive must follow the format MM/DD/YYYY. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1220**<a name="1220"></a><br><br>**Message**<br>Cannot directly reference a section defined in an included INF (&lt;value&gt;).<br><br>**Details**<br>Sections in included INFs can only be referenced using the Needs directive under the corresponding DDInstall sections. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1222**<a name="1222"></a><br><br>**Message**<br>Cannot modify &lt;value&gt;\\&lt;value&gt; registry keys, although HKLM\SYSTEM\CurrentControlSet is allowed.<br><br>**Details**<br>The specified registry key is not allowed to be written to. Registry state should be written using an AddReg directive<br>with a reg-root of HKR. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1223**<a name="1223"></a><br><br>**Message**<br>Cannot modify &lt;value&gt;\\&lt;value&gt; registry key.<br><br>**Details**<br>The specified registry key is not allowed to be written to. Registry state should be written using an AddReg directive<br>with a reg-root of HKR. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1224**<a name="1224"></a><br><br>**Message**<br>Invalid registry root "&lt;value&gt;".<br><br>**Details**<br>The specified registry root is invalid. For additional information, see [INF AddReg Directive](/windows-hardware/drivers/install/inf-addreg-directive) | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1225**<a name="1225"></a><br><br>**Message**<br>Registry value '&lt;value&gt;' must be type '&lt;value&gt;'.<br><br>**Details**<br>The specified registry value is not of the required type. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1226**<a name="1226"></a><br><br>**Message**<br>Security descriptor not allowed for registry value '&lt;value&gt;' directly under &lt;value&gt;.<br><br>**Details**<br>The specified registry value has a security descriptor that cannot be set. Registry values directly under HKR<br>cannot have alternative security descriptors set on them. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1229**<a name="1229"></a><br><br>**Message**<br>Missing &lt;value&gt; filename on &lt;value&gt; entry.<br><br>**Details**<br>The specified file operation required a name to be specified, but it was not specified. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1230**<a name="1230"></a><br><br>**Message**<br>Missing file '&lt;value&gt;' under [SourceDisksFiles] section.<br><br>**Details**<br>A file was specified in a CopyFiles or similar directive but could not be found in the [SourceDisksFiles] section,<br>or the listing in [SourceDisksFiles] was invalid.<br><br>This error frequently occurs when architecture-decorated versions of [SourceDisksFiles] are specified<br>(such as [SourceDisksFiles.amd64]), but not all architectures supported by the INF have a [SourceDisksFiles] section. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1231**<a name="1231"></a><br><br>**Message**<br>Invalid compressed filename '&lt;value&gt;' specified under [SourceDisksFiles] section, expecting uncompressed filename '&lt;value&gt;'.<br><br>**Details**<br>Files specified within [SourceDisksFiles] must use the uncompressed filename and not the compressed version (myfile.sys not myfile.sy_). | **/k:** Warning<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1233**<a name="1233"></a><br><br>**Message**<br>Missing directive &lt;value&gt; required for digital signature.<br><br>**Details**<br>The specified directive is required for the driver package to be signed but it is not present. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1234**<a name="1234"></a><br><br>**Message**<br>Required directive &lt;value&gt; missing, empty, or invalid in [&lt;value&gt;] section.<br><br>**Details**<br>The specified section requires that specified directive and it was not found. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1235**<a name="1235"></a><br><br>**Message**<br>String token '&lt;value&gt;' not defined in [&lt;value&gt;] section - if intending to use a literal '&lt;value&gt;' in a string, use '&lt;value&gt;' instead.<br><br>**Details**<br>A specified string token has no definition in the [Strings] section. For example, the INF file specifies %REG_DWORD%<br>in an add-registry section specified by an AddReg directive, but there is no corresponding REG_DWORD = 0x00010001<br>in the [Strings] section.<br><br>This error frequently occurs if your INF file specifies a registry value that contains an environment variable. For example:<br><pre>[MyAddReg]<br>HKR,,DllPath,%SystemRoot%\System32\binary.dll</pre><br>The %SystemRoot% path component is interpreted as the "SystemRoot" string substitution token from under the<br>[Strings] section, rather than the intended behavior of storing the literal "%SystemRoot%" in the registry. To<br>use the literal value %SystemRoot% rather than perform a string substitution, use the escape sequence %%.<br><pre>[MyAddReg]<br>HKR,,DllPath,%%SystemRoot%%\System32\binary.dll</pre> | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1241**<a name="1241"></a><br><br>**Message**<br>Unresolvable user-defined DIRID (&lt;value&gt;) for source file "&lt;value&gt;" in section [&lt;value&gt;].<br><br>**Details**<br>The user-defined DIRID could not be resolved. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1242**<a name="1242"></a><br><br>**Message**<br>Unresolvable DIRID (&lt;value&gt;) for source file "&lt;value&gt;" in section [&lt;value&gt;].<br><br>**Details**<br>The specified DIRID value could not be resolved. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1243**<a name="1243"></a><br><br>**Message**<br>Invalid DIRID value (&lt;value&gt;) for source file "&lt;value&gt;" in section [&lt;value&gt;].<br><br>**Details**<br>The specified DIRID value is not supported. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1245**<a name="1245"></a><br><br>**Message**<br>Invalid feature score '&lt;value&gt;'.<br><br>**Details**<br>The specified feature score was invalid. It should be specified as a single byte hex value within the range 00-FF. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1250**<a name="1250"></a><br><br>**Message**<br>Invalid EventLogType '&lt;value&gt;', expecting 'System', 'Application', or 'Security'.<br><br>**Details**<br>The specified event log type is not recognized. Supported types include 'System', 'Application', or 'Security'. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1251**<a name="1251"></a><br><br>**Message**<br>Cannot add disabled (StartType=4) service '&lt;value&gt;' with SPSVCINST_ASSOCSERVICE flag.<br><br>**Details**<br>The associated service cannot be created as a disabled service. | **/k:** Warning<br>**/u:** Warning<br>**/w:** Warning<br><br><br> |
+| **Code 1252**<a name="1252"></a><br><br>**Message**<br>Cannot add service '&lt;value&gt;' with &lt;value&gt;=&lt;value&gt; and ServiceType=&lt;value&gt;.<br><br>**Details**<br>The service configuration is conflicting or not supported for the specified service type. | **/k:** Warning<br>**/u:** Warning<br>**/w:** Warning<br><br><br> |
+| **Code 1253**<a name="1253"></a><br><br>**Message**<br>Skipping directive '&lt;value&gt;' without a service name in section [&lt;value&gt;].<br><br>**Details**<br>The specified directive cannot be used as-is without a service name. If no service name is intentional, this may be<br>due to incorrect flag usage. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1254**<a name="1254"></a><br><br>**Message**<br>Invalid service image path for service '&lt;value&gt;' with ServiceBinary='&lt;value&gt;'.<br><br>**Details**<br>The service image path could not be properly parsed. This may be due to incorrect or missing usage of quotation marks. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1256**<a name="1256"></a><br><br>**Message**<br>Invalid WMI interface flags '&lt;value&gt;'.<br><br>**Details**<br>The specified WMI interface flags have invalid flags set. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1257**<a name="1257"></a><br><br>**Message**<br>Registry operation value may be incorrect in some contexts, use &lt;value&gt; instead of Windows directory.<br><br>**Details**<br>A path was specified that can be changed to an environment variable. Use the environment variable instead to make<br>the driver more robust against environment changes. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1258**<a name="1258"></a><br><br>**Message**<br>File path "&lt;value&gt;" in &lt;value&gt; may be incorrect in some device installation scenarios or contexts, use &lt;value&gt;\\&lt;subdirectory&gt; instead.<br><br>**Details**<br>Use a runtime-resolvable path such as %SystemRoot% for values stored in the registry. DIRID values may be fully<br>resolved at the time the driver is added to the image. When the driver INF is processed under different deployment<br>scenarios (such as offline imaging or OS upgrade), an incorrect value may be stored. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1260**<a name="1260"></a><br><br>**Message**<br>Invalid &lt;value&gt; directive due to invalid &lt;value&gt;.<br><br>**Details**<br>The specified directive could not be parsed to the appropriate type. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1261**<a name="1261"></a><br><br>**Message**<br>Undefined device "&lt;value&gt;" with section [&lt;value&gt;].<br><br>**Details**<br>The device install section for the specified device could not be found. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1262**<a name="1262"></a><br><br>**Message**<br>Invalid &lt;value&gt; entry due to non-byte bitmask '0x&lt;value&gt;.<br><br>**Details**<br>A registry value bitmask must be one byte in size. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1263**<a name="1263"></a><br><br>**Message**<br>Invalid &lt;value&gt; entry due to conflicting custom and known value types.<br><br>**Details**<br>A custom value type cannot be REG_NONE, REG_SZ, REG_EXPAND_SZ, or REG_MULTI_SZ. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1264**<a name="1264"></a><br><br>**Message**<br>Invalid &lt;value&gt; entry due to missing value type flag on custom value type.<br><br>**Details**<br>A custom value type must specify FLG_ADDREG_BINVALUETYPE. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1265**<a name="1265"></a><br><br>**Message**<br>Invalid &lt;value&gt; entry due to append flag on non multi-sz value.<br><br>**Details**<br>Append was specified on the registry value, but the value was not of a type that can be appended to. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1266**<a name="1266"></a><br><br>**Message**<br>Invalid &lt;value&gt; entry due to no value on a multi-sz delete.<br><br>**Details**<br>A value is being deleted from a multi-sz, but no value was specified to delete. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1267**<a name="1267"></a><br><br>**Message**<br>Invalid binary data in &lt;value&gt; entry, expecting one or more bytes between 00-FF.<br><br>**Details**<br>The specified field has an invalid value. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1268**<a name="1268"></a><br><br>**Message**<br>Invalid numeric value in &lt;value&gt; entry, expecting &lt;value&gt;-bit decimal (0+) or hexadecimal (0x0+) value.<br><br>**Details**<br>The specified field has an invalid value. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1270**<a name="1270"></a><br><br>**Message**<br>INF does not install a driver for any hardware IDs created in [DeviceInstall32] section.<br><br>**Details**<br>Devices created with a [DeviceInstall32] section should be installed using the same INF, but the install section was not specified. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1271**<a name="1271"></a><br><br>**Message**<br>Missing model install section name.<br><br>**Details**<br>The models section specified an applicable hardware ID but no install section to use for that hardware ID. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1272**<a name="1272"></a><br><br>**Message**<br>Ignoring service section [&lt;value&gt;] for unnamed service.<br><br>**Details**<br>The service was unnamed (no service) but specified a service install section. The service install section was ignored. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1273**<a name="1273"></a><br><br>**Message**<br>Source file "&lt;value&gt;" uses disk id &lt;value&gt;, which is not listed under [&lt;value&gt;].<br><br>**Details**<br>The specified disk ID does not appear in the [SourceDisksNames] section. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1274**<a name="1274"></a><br><br>**Message**<br>Unresolved \$ARCH\$ token for section [&lt;value&gt;]. Must run stampinf tool to resolve case sensitive \$ARCH\$ tokens.<br><br>**Details**<br>The INF file uses tokens that stampinf would resolve but stampinf was not run. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1275**<a name="1275"></a><br><br>**Message**<br>&lt;value&gt; '&lt;value&gt;' is not listed in [DestinationDirs].<br><br>**Details**<br>The specified file does not have a copy destination specified. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1280**<a name="1280"></a><br><br>**Message**<br>Class name and ClassGuid mismatch, expecting Class "&lt;value&gt;" for ClassGuid "&lt;value&gt;".<br><br>**Details**<br>The specified ClassGuid is a well-known class, but the Class value does not match the expected name of the class. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1281**<a name="1281"></a><br><br>**Message**<br>Class name and ClassGuid mismatch, expecting ClassGuid "&lt;value&gt;" for Class "&lt;value&gt;".<br><br>**Details**<br>The specified Class is a well-known class, but the ClassGuid value does not match the expected ClassGuid of the class. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1284**<a name="1284"></a><br><br>**Message**<br>Class "&lt;value&gt;" is reserved for use by Microsoft.<br><br>**Details**<br>The specified device class may not be used on any shipping drivers or products. Sample drivers will return this error<br>if the sample is designed in a way that requires the author to specify an appropriate device class. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1285**<a name="1285"></a><br><br>**Message**<br>Cannot specify [ClassInstall32] section for Microsoft-defined class.<br><br>**Details**<br>As of Windows 10, IHV-supplied INFs are not allowed to use a [ClassInstall32] in an INF of any system-defined device setup class. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1286**<a name="1286"></a><br><br>**Message**<br>Invalid &lt;value&gt; value "&lt;value&gt;" exceeds max length of &lt;value&gt;.<br><br>**Details**<br>Class names cannot exceed 31 characters in length. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1287**<a name="1287"></a><br><br>**Message**<br>Invalid target OS version decoration '&lt;value&gt;' for model section name '&lt;value&gt;' under [&lt;value&gt;] section.<br><br>**Details**<br>The target OS version decoration could not be parsed, verify that it is correctly formed.<br><br>For full details on the format specification, see: [INF Manufacturer Section](/windows-hardware/drivers/install/inf-manufacturer-section) | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1288**<a name="1288"></a><br><br>**Message**<br>Invalid target OS version '&lt;value&gt;.&lt;value&gt;.&lt;value&gt;', must be '&lt;value&gt;.&lt;value&gt;.&lt;value&gt;' or greater if specifying build number.<br><br>**Details**<br>Build number targeting was introduced with Windows 10, version 1607 (Build 14310 or later), so the build number<br>specified must be greater or equal to 14310. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1289**<a name="1289"></a><br><br>**Message**<br>Missing directive '&lt;value&gt;' under [&lt;value&gt;] section.<br><br>**Details**<br>The specified directive is required by the specified section, but could not be found. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1290**<a name="1290"></a><br><br>**Message**<br>Invalid directive '&lt;value&gt;' for [&lt;value&gt;] section.<br><br>**Details**<br>The specified directive is invalid within the specified section. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1292**<a name="1292"></a><br><br>**Message**<br>&lt;value&gt; directive requires an indirect string in [Strings] section and referenced as &lt;value&gt;.<br><br>**Details**<br>The directive must be specified as an indirect string that can be resolved by the reader at runtime. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1293**<a name="1293"></a><br><br>**Message**<br>Service name '&lt;value&gt;' is reserved.<br><br>**Details**<br>The specified service name is reserved and may not be used by any drivers. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1294**<a name="1294"></a><br><br>**Message**<br>Duplicate &lt;value&gt; '&lt;value&gt;' in section [&lt;value&gt;].<br><br>**Details**<br>The same value is specified multiple times in the same section. Remove the extraneous ones. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1295**<a name="1295"></a><br><br>**Message**<br>Section [&lt;value&gt;] contains a different number of strings than section [&lt;value&gt;].<br><br>**Details**<br>The [Strings] section for every language must contain the same values. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1296**<a name="1296"></a><br><br>**Message**<br>Hardware '&lt;value&gt;' does not have an associated service using install section '&lt;value&gt;'.<br><br>**Details**<br>Starting in Windows 10, version 1809, this has changed from a Warning to an Error. The .Services sections are<br>required for each defined target OS. This is good practice even prior to 1809.<br><br>If an INF previously did not include this section because it relied on Microsoft-supplied Inbox driver services,<br>then a .Services section that references a .Services section from a Microsoft-supplied Inbox INF using Needs<br>and Include directives should be created. For example:<br><pre>[DDInstall.Services]<br>Include=filename.inf<br>Needs=inf-section-name.Services</pre><br>For devices that do not require a function driver, this can be specified as follows:<br><pre>AddService = ,2</pre><br>Only use this in the case where the INF is installing a device that does not need a function driver. For example,<br>a device that requires only a filter driver, but not a function driver would have two AddService directives:<br><pre>AddService = MyFilterDriver,, My-Service-Install-Section<br>AddService = ,2</pre> | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1297**<a name="1297"></a><br><br>**Message**<br>Device driver does not install on any devices, use primitive driver if this is intended.<br><br>**Details**<br>This indicates that the INF file is a device driver, but it is not being used as a device driver. This may cause<br>issues in how the driver is treated by the driver store. If this is unintentional, check your INF to make sure<br>that hardware IDs are correctly specified. If the driver is not intended to install on devices, convert it to a<br>primitive driver. A primitive driver is a driver that installs on the whole system instead of on specific devices.<br><br>For more information, see [Converting to a primitive driver](/windows-hardware/drivers/develop/creating-a-primitive-driver#converting-from-a-device-driver-inf) | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1299**<a name="1299"></a><br><br>**Message**<br>Additional validation checks skipped due to parsing errors.<br><br>**Details**<br>The INF encountered parsing problems that prevented the parse from completing. There should be additional errors<br>that point to the cause of the problem. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1300**<a name="1300"></a><br><br>**Message**<br>Found legacy &lt;value&gt; &lt;value&gt;.<br><br>**Details**<br>The INF performs a deprecated legacy operation that is not valid with modern Windows OS products. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1301**<a name="1301"></a><br><br>**Message**<br>Found legacy &lt;value&gt; operation&lt;value&gt;.<br><br>**Details**<br>The INF performs a deprecated legacy operation that is not valid with modern Windows OS products. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1302**<a name="1302"></a><br><br>**Message**<br>Found legacy &lt;value&gt; operation for '&lt;value&gt;'&lt;value&gt;.<br><br>**Details**<br>The INF performs a deprecated legacy operation that is not valid with modern Windows OS products. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1303**<a name="1303"></a><br><br>**Message**<br>Found legacy &lt;value&gt; operation defining &lt;value&gt; (&lt;value&gt;)&lt;value&gt;.<br><br>**Details**<br>The INF defines a co-installer or class installer, which are no longer supported in modern Windows OS products and should not be used. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1304**<a name="1304"></a><br><br>**Message**<br>Found legacy &lt;value&gt; operation using non-relative key (&lt;value&gt;\\&lt;value&gt;)&lt;value&gt;.<br><br>**Details**<br>Registry operations should be done using a relative key (HKR). This will store the value in an appropriate location<br>relative to the type of INF section where it is used. | **/k:** Warning<br>**/u:** Error<br>**/w:** None<br><br><br> |
+| **Code 1305**<a name="1305"></a><br><br>**Message**<br>Found legacy &lt;value&gt; operation using appendable multi-sz value (&lt;value&gt;\\&lt;value&gt;)&lt;value&gt;.<br><br>**Details**<br>This INF deletes a value from a REG_MULTI_SZ or appends to an existing REG_MULTI_SZ. This leads to non-<br>deterministic outcomes and should not be done. | **/k:** Warning<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1306**<a name="1306"></a><br><br>**Message**<br>Found legacy &lt;value&gt; operation with non-system target path (&lt;value&gt;) for '&lt;value&gt;'&lt;value&gt;.<br><br>**Details**<br>The INF specifies a file copy with a destination that is outside the system path. | **/k:** Warning<br>**/u:** Error<br>**/w:** None<br><br><br> |
+| **Code 1307**<a name="1307"></a><br><br>**Message**<br>Found legacy &lt;value&gt; &lt;value&gt;.<br><br>**Details**<br>The INF performs a legacy operation that is only valid on desktop Windows OS products. | **/k:** Warning<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1308**<a name="1308"></a><br><br>**Message**<br>Found legacy &lt;value&gt; operation&lt;value&gt;.<br><br>**Details**<br>INF files should only perform the additive operations required to configure the device. When a driver is deleted<br>from the system, the appropriate operations to clean up the driver will be automatically performed. | **/k:** Warning<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1309**<a name="1309"></a><br><br>**Message**<br>Found legacy &lt;value&gt; operation for '&lt;value&gt;'&lt;value&gt;.<br><br>**Details**<br>INF files should only perform the additive operations required to configure the device. When a driver is deleted<br>from the system, the appropriate operations to clean up the driver will be automatically performed. | **/k:** Warning<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1310**<a name="1310"></a><br><br>**Message**<br>Needed section [&lt;value&gt;] with suffix '.&lt;value&gt;' does not match suffix of first referencing section [&lt;value&gt;.&lt;value&gt;].<br><br>**Details**<br>When using the Needs directive, the sections being referenced should have a suffix that matches the suffix of the<br>referencing section. For example:<br><pre>[DDInstall.Services]<br>Needs=TargetInstall.Services</pre><br>Note that both sections have a .Services suffix.<br><br>This error indicates that the specified section is being incorrectly parsed as if it was a section with a<br>different suffix. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1311**<a name="1311"></a><br><br>**Message**<br>Needed section [&lt;value&gt;] must have suffix '.&lt;value&gt;' to match the first referencing section [&lt;value&gt;.&lt;value&gt;].<br><br>**Details**<br>When using the Needs directive, the sections being referenced should have a suffix that matches the suffix of the<br>referencing section. For example:<br><pre>[DDInstall.Services]<br>Needs=TargetInstall.Services</pre>Note that both sections have a .Services suffix.<br><br>This error indicates that the specified section is being incorrectly parsed as if it was a section with a<br>different suffix. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1312**<a name="1312"></a><br><br>**Message**<br>Needed section [&lt;value&gt;] with suffix '.&lt;value&gt;' does not match the suffix of the parent section [&lt;value&gt;].<br><br>**Details**<br>When using the Needs directive, the sections being referenced should have a suffix that matches the suffix of the<br>referencing section. For example:<br><pre>[DDInstall.Services]<br>Needs=TargetInstall.Services</pre>Note that both sections have a .Services suffix.<br><br>This error indicates that the suffix of a needed section does not match the referencing section. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1313**<a name="1313"></a><br><br>**Message**<br>Needed section [&lt;value&gt;] must have suffix '.&lt;value&gt;' to match the suffix of the parent section [&lt;value&gt;].<br><br>**Details**<br>When using the Needs directive, the sections being referenced should have a suffix that matches the suffix of the<br>referencing section. For example:<br><pre>[DDInstall.Services]<br>Needs=TargetInstall.Services</pre>Note that both sections have a .Services suffix.<br><br>This error indicates that the suffix of a needed section does not match the referencing section. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1314**<a name="1314"></a><br><br>**Message**<br>Needed section [&lt;value&gt;] found in included INF "&lt;value&gt;", not referenced from [&lt;value&gt;].<br><br>**Details**<br>A section located in another INF was specified using the Needs directive. The INF containing the section must be<br>referenced with the Include directive in the same section as the Needs directive. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1315**<a name="1315"></a><br><br>**Message**<br>Needed section [&lt;value&gt;] not found.<br><br>**Details**<br>A section specified using the Needs directive could not be located. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1316**<a name="1316"></a><br><br>**Message**<br>Needed decorated section [&lt;value&gt;.&lt;value&gt;] not found.<br><br>**Details**<br>A section specified using the Needs directive could not be located. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1317**<a name="1317"></a><br><br>**Message**<br>Needed undecorated section [&lt;value&gt;] is not part of the target OS platform.<br><br>**Details**<br>A section specified using the Needs directive could not be located using the supplied IAS file for the target OS. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1318**<a name="1318"></a><br><br>**Message**<br>Included INF "&lt;value&gt;" is not part of the target OS platform.<br><br>**Details**<br>An INF specified using the Include directive could not be located using the supplied IAS file for the target OS. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1319**<a name="1319"></a><br><br>**Message**<br>Section [&lt;value&gt;] must include file "&lt;value&gt;" to use the Needs directive on [&lt;value&gt;].<br><br>**Details**<br>The specified section uses the Needs directive to reference a section but does not have an Include directive specifying<br>the INF that contains the section. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1320**<a name="1320"></a><br><br>**Message**<br>Registry root '&lt;value&gt;\\&lt;value&gt;' is not isolated to HKR.<br><br>**Details**<br>Registry keys must be under isolated HKR relative root locations.<br><br>For full details, see [Driver Package Isolation](/windows-hardware/drivers/develop/driver-isolation) | **/k:** None<br>**/u:** None<br>**/w:** Error<br><br><br> |
+| **Code 1321**<a name="1321"></a><br><br>**Message**<br>Registry root (&lt;value&gt;\\&lt;value&gt;) of value '&lt;value&gt;' is not isolated to HKR.<br><br>**Details**<br>Registry values must be under isolated HKR relative root locations.<br><br>For full details, see [Driver Package Isolation](/windows-hardware/drivers/develop/driver-isolation) | **/k:** None<br>**/u:** None<br>**/w:** Error<br><br><br> |
+| **Code 1322**<a name="1322"></a><br><br>**Message**<br>Destination file path '&lt;value&gt;' for file '&lt;value&gt;' is not isolated to DIRID &lt;value&gt;.<br><br>**Details**<br>Files must specify their copy destination as DIRID 13. This keeps the files isolated under the driver store.<br><br>For full details, see [Driver Package Isolation](/windows-hardware/drivers/develop/driver-isolation) | **/k:** None<br>**/u:** None<br>**/w:** Error<br><br><br> |
+| **Code 1323**<a name="1323"></a><br><br>**Message**<br>Service registry key '&lt;value&gt;' must be under the Parameters subkey.<br><br>**Details**<br>Registry values using a service-relative HKR root must be written under the Parameters subkey.<br><br>For full details, see [Driver Package Isolation](/windows-hardware/drivers/develop/driver-isolation) | **/k:** None<br>**/u:** None<br>**/w:** Error<br><br><br> |
+| **Code 1324**<a name="1324"></a><br><br>**Message**<br>[Version] section should specify PnpLockdown=1 to prevent external apps from modifying installed driver files.<br><br>**Details**<br>PnpLockdown=1 must be specified in the [Version] section. This adds an additional level of security to driver package<br>files to prevent tampering. | **/k:** Warning<br>**/u:** Warning<br>**/w:** Error<br><br><br> |
+| **Code 1325**<a name="1325"></a><br><br>**Message**<br>Unsupported COM class registration '&lt;value&gt;', only InprocServer32 supported.<br><br>**Details**<br>The specified type of COM class is not supported. | **/k:** Warning<br>**/u:** Warning<br>**/w:** Error<br><br><br> |
+| **Code 1326**<a name="1326"></a><br><br>**Message**<br>Unisolated file path '&lt;value&gt;', expecting FileName under &lt;value&gt;.<br><br>**Details**<br>The data file path specified must be a path relative to %%DriverData%%. | **/k:** Warning<br>**/u:** Warning<br>**/w:** Error<br><br><br> |
+| **Code 1328**<a name="1328"></a><br><br>**Message**<br>Unsupported file path '&lt;value&gt;' replaced with '&lt;value&gt;'.<br><br>**Details**<br>The specified file path could not be resolved. | **/k:** None<br>**/u:** None<br>**/w:** Warning<br><br><br> |
+| **Code 1329**<a name="1329"></a><br><br>**Message**<br>Cannot add filters with registry or property, use [DDInstall.Filters] section.<br><br>**Details**<br>Filter drivers cannot be added with a registry or property value. Filters should be added using a [DDInstall.Filters] section. | **/k:** None<br>**/u:** None<br>**/w:** Error<br><br><br> |
+| **Code 1330**<a name="1330"></a><br><br>**Message**<br>Cannot copy multiple different sources files ('&lt;value&gt;' and '&lt;value&gt;') to destination file '&lt;value&gt;'.<br><br>**Details**<br>Different files are being copied to a single location within the INF. In scenarios where the OS must perform all file<br>copies in advance of a device being connected, the resulting state becomes non-deterministic.<br><br>For full details, see [InfVerif Error 1330](/windows-hardware/drivers/devtest/inf-verif-error-1330) | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1331**<a name="1331"></a><br><br>**Message**<br>Cannot set registry value '&lt;value&gt;\\&lt;value&gt;\\&lt;value&gt;' differently between sections [&lt;value&gt;] and [&lt;value&gt;].<br><br>**Details**<br>The specified registry value is set differently between two different install section. In scenarios where the OS must<br>perform all registry operations in advance of a device being connected, the resulting state becomes non-deterministic.<br><br>For full details, see [InfVerif Error 1330](/windows-hardware/drivers/devtest/inf-verif-error-1330) | **/k:** Warning<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1332**<a name="1332"></a><br><br>**Message**<br>Cannot set registry value '&lt;value&gt;\\&lt;value&gt;\\&lt;value&gt;' differently between sections [&lt;value&gt;] and [&lt;value&gt;] for service '&lt;value&gt;'.<br><br>**Details**<br>The specified registry value is set differently between two different service install section. In scenarios where the<br>OS must perform all service operations in advance of a device being connected, the resulting state becomes non-deterministic.<br><br>For full details, see [InfVerif Error 1330](/windows-hardware/drivers/devtest/inf-verif-error-1330) | **/k:** Warning<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1333**<a name="1333"></a><br><br>**Message**<br>Cannot configure service '&lt;value&gt;' differently between sections [&lt;value&gt;] and [&lt;value&gt;].<br><br>**Details**<br>The specified service is installed differently between two different install section. In scenarios where the OS must<br>perform all service operations in advance of a device being connected, the resulting state becomes non-deterministic.<br><br>For full details, see [InfVerif Error 1330](/windows-hardware/drivers/devtest/inf-verif-error-1330) | **/k:** Warning<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1340**<a name="1340"></a><br><br>**Message**<br>Specified DIRID '&lt;value&gt;' not allowed.<br><br>**Details**<br>The specified DIRID has been deprecated and can no longer be used. | **/k:** None<br>**/u:** None<br>**/w:** Error<br><br><br> |
+| **Code 1380**<a name="1380"></a><br><br>**Message**<br>Invalid ExtensionId "&lt;value&gt;" specified in [Version] section.<br><br>**Details**<br>The ExtensionId value is in an incorrect format. It should follow the standard GUID format, including braces and dashes. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1381**<a name="1381"></a><br><br>**Message**<br>Missing ExtensionId directive in [Version] section.<br><br>**Details**<br>Extension INFs require an ExtensionId to be specified. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1382**<a name="1382"></a><br><br>**Message**<br>Cannot specify '&lt;value&gt;' directive in Extension INFs.<br><br>**Details**<br>Extension INFs do not support the specified directive. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1383**<a name="1383"></a><br><br>**Message**<br>Cannot specify '&lt;value&gt;' flag for services defined in extension INFs.<br><br>**Details**<br>Extension INFs do not support the specified service flag. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1384**<a name="1384"></a><br><br>**Message**<br>Use of filters with registry or property in extension INFs not recommended, use [DDInstall.Filters] section.<br><br>**Details**<br>Extension INFs may be installed on top of the base INF in any order. Using a registry or property directives to<br>install filters may lead to non-deterministic stack ordering. | **/k:** Warning<br>**/u:** Warning<br>**/w:** Warning<br><br><br> |
+| **Code 1400**<a name="1400"></a><br><br>**Message**<br>Service '&lt;value&gt;' not specified in a UMDF service directive.<br><br>**Details**<br>The UMDF service is created, but it is not specified in any UMDF directive such as UmdfServiceOrder. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1401**<a name="1401"></a><br><br>**Message**<br>Directive '&lt;value&gt;' not supported in &lt;value&gt; version &lt;value&gt;.&lt;value&gt;.<br><br>**Details**<br>The specified WDF directive has been deprecated in the version of WDF utilized by the INF. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1402**<a name="1402"></a><br><br>**Message**<br>&lt;value&gt; version &lt;value&gt;.&lt;value&gt; has been deprecated, driver should be ported to use version &lt;value&gt; &lt;value&gt; driver model.<br><br>**Details**<br>The specified WDF version has been deprecated. The driver should be updated to use a newer version.<br><br>For additional information, see [Converting from UMDF1 to UMDF2](/windows-hardware/drivers/wdf/porting-a-driver-from-umdf-1-to-umdf-2) | **/k:** None<br>**/u:** None<br>**/w:** Error<br><br><br> |
+| **Code 1420**<a name="1420"></a><br><br>**Message**<br>[DefaultInstall]-based INF cannot be processed as Primitive.<br><br>**Details**<br>The INF uses a [DefaultInstall] section, but it does not meet the requirements to be processed as a Primitive INF. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1421**<a name="1421"></a><br><br>**Message**<br>Section [&lt;value&gt;] missing an architecture decoration.<br><br>**Details**<br>All [DefaultInstall] sections should have an architecture decoration. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1422**<a name="1422"></a><br><br>**Message**<br>[DefaultUninstall.NT*] section should set LegacyUninstall=1 to support both Primitive INF and downlevel install compatibility.<br><br>**Details**<br>A primitive INF should not specify any uninstall behavior. To support legacy platforms, the uninstall section may<br>specify LegacyUninstall=1 to utilize the uninstall section only on legacy platforms. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1423**<a name="1423"></a><br><br>**Message**<br>Primitive drivers require an architecture-decorated [&lt;value&gt;] section.<br><br>**Details**<br>Primitive drivers require at least one architecture-decorated [DefaultInstall] section. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1430**<a name="1430"></a><br><br>**Message**<br>Registry value '&lt;value&gt;' not allowed under '&lt;value&gt;\\&lt;value&gt;'.<br><br>**Details**<br>The specified registry value is not allowed. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1431**<a name="1431"></a><br><br>**Message**<br>Well-known registry value '&lt;value&gt;' has incorrect type, expecting value type &lt;value&gt;.<br><br>**Details**<br>The specified registry value is a well-known value and must have a specific type, otherwise it may not be interpreted correctly<br>by the OS or other applications. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 1450**<a name="1450"></a><br><br>**Message**<br>Legacy unisolated directive '&lt;value&gt;' may be ignored.<br><br>**Details**<br>The specified directive may have no effect on some OS versions or product types. | **/k:** None<br>**/u:** None<br>**/w:** Warning<br><br><br> |
+| **Code 2004**<a name="2004"></a><br><br>**Message**<br>Use of &lt;value&gt; directive not recommended.<br><br>**Details**<br>The specified directive is valid, however it is not recommended. | **/k:** Warning<br>**/u:** Warning<br>**/w:** Warning<br><br><br> |
+| **Code 2006**<a name="2006"></a><br><br>**Message**<br>Undefined service '&lt;value&gt;' under [&lt;value&gt;] section.<br><br>**Details**<br>The specified service was declared with an AddService directive, but the corresponding service install section could<br>not be located. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 2008**<a name="2008"></a><br><br>**Message**<br>Section name [&lt;value&gt;] is also used by an included INF.<br><br>**Details**<br>The same section name is used both in this INF as well as an INF specified with an Include directive. This may lead<br>to incorrect parsing results. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 2009**<a name="2009"></a><br><br>**Message**<br>Legacy directive '&lt;value&gt;' will be ignored.<br><br>**Details**<br>The specified directive has been deprecated and will be ignored in most parsing scenarios. | **/k:** Warning<br>**/u:** Warning<br>**/w:** Warning<br><br><br> |
+| **Code 2010**<a name="2010"></a><br><br>**Message**<br>Section [&lt;value&gt;] should have '.&lt;value&gt;' decoration.<br><br>**Details**<br>The specified section does not have an architecture decoration and will be implicitly treated as the x86 architecture.<br>The architecture should be explictly declared. | **/k:** Warning<br>**/u:** Warning<br>**/w:** Warning<br><br><br> |
+| **Code 2083**<a name="2083"></a><br><br>**Message**<br>Section [&lt;value&gt;] not referenced or used.<br><br>**Details**<br>The specified section will not be used during device installation. If this is unintentional there may be another<br>error that prevents the usage. | **/k:** Warning<br>**/u:** Warning<br>**/w:** Warning<br><br><br> |
+| **Code 2084**<a name="2084"></a><br><br>**Message**<br>Service binary '&lt;value&gt;' should reference a CopyFiles destination file.<br><br>**Details**<br>The service is registered using a service binary that is not part of the driver package. This error may occur in<br>some cases because the service binary was specified incorrectly, such as missing quotes around a path with spaces. | **/k:** Warning<br>**/u:** Warning<br>**/w:** Error<br><br><br> |
+| **Code 2085**<a name="2085"></a><br><br>**Message**<br>Service binary '&lt;value&gt;' should be specified as a path under a DIRID.<br><br>**Details**<br>The service binary path is required to be specified as a path under a DIRID value, such as %%13%%\binary.sys.<br><br>For additional information about DIRIDs, see [Using DIRIDs](/windows-hardware/drivers/install/using-dirids) | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 2090**<a name="2090"></a><br><br>**Message**<br>Replaced legacy pattern in section '&lt;value&gt;' using '&lt;value&gt;'. Updated syntax support begins in OS version '&lt;value&gt;.&lt;value&gt;.&lt;value&gt;'.<br><br>**Details**<br>A legacy mechanism was identified and automatically replaced with an up-to-date alternative during parsing. The INF<br>should be updated to use the up-to-date mechanism.<br><br>For full details, see [INF Shims](https://aka.ms/infshims) | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 2091**<a name="2091"></a><br><br>**Message**<br>Unable to replace legacy pattern in section '&lt;value&gt;' using '&lt;value&gt;'.<br><br>**Details**<br>A legacy mechanism was identified in the INF but could not be automatically replaced with an up-to-date alternative.<br>The INF should be updated to use the up-to-date mechanism.<br><br>For full details, see [INF Shims](https://aka.ms/infshims) | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 2092**<a name="2092"></a><br><br>**Message**<br>Replaced legacy pattern in section '&lt;value&gt;' using '&lt;value&gt;' to follow best practices. Updated syntax support begins in OS version '&lt;value&gt;.&lt;value&gt;.&lt;value&gt;'.<br><br>**Details**<br>A legacy mechanism was identified and automatically replaced with an up-to-date alternative during parsing. The INF<br>should be updated to use the up-to-date mechanism.<br><br>For full details, see [INF Shims](https://aka.ms/infshims) | **/k:** None<br>**/u:** None<br>**/w:** Error<br><br><br> |
+| **Code 2093**<a name="2093"></a><br><br>**Message**<br>Unable to apply shim '&lt;value&gt;'.<br><br>**Details**<br>An INF shim failed to apply correctly. This is not a critical error. An INF shim is an adjustment of the INF that<br>happens automatically to improve the install behavior of certain patterns within an INF.<br><br>For full details, see [INF Shims](https://aka.ms/infshims) | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 2400**<a name="2400"></a><br><br>**Message**<br>&lt;value&gt; directive requires two fields: &lt;component id&gt;,&lt;component section&gt;<br><br>**Details**<br>The specified directive does not contain the required fields. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 2402**<a name="2402"></a><br><br>**Message**<br>Section [&lt;value&gt;] does not permit &lt;value&gt; directive.<br><br>**Details**<br>The specified directive is not allowed in the specified section. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 2403**<a name="2403"></a><br><br>**Message**<br>&lt;value&gt; directive must have exactly 1 field. &lt;value&gt; were provided.<br><br>**Details**<br>The directive contains the wrong number of fields. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 2405**<a name="2405"></a><br><br>**Message**<br>Only INFs with Class name "NetDriver" can use [DefaultInstall.NetDrivers] section.<br><br>**Details**<br>The specified section cannot be used except by the "NetDriver" class. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 2411**<a name="2411"></a><br><br>**Message**<br>Invalid &lt;value&gt; GUID "&lt;value&gt;", expecting {XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}. Run guidgen.exe to generate a new GUID.<br><br>**Details**<br>The specified GUID value is in an incorrect format. It should follow the standard GUID format, including braces and dashes. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 2412**<a name="2412"></a><br><br>**Message**<br>Invalid Component Identifier value '&lt;value&gt;', expecting a valid identifier matching '[a-z0-9_]+'.<br><br>**Details**<br>The specified component identifier value was invalid. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 2413**<a name="2413"></a><br><br>**Message**<br>Invalid &lt;value&gt; value '&lt;value&gt;', expecting case-sensitive values 'true' and 'false'.<br><br>**Details**<br>The specified value was invalid, expecting 'true' or 'false'. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 2414**<a name="2414"></a><br><br>**Message**<br>Invalid &lt;value&gt; value '&lt;value&gt;', expecting a valid filter class matching '[a-z0-9_]+'.<br><br>**Details**<br>The specified filter class had an invalid format. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 2415**<a name="2415"></a><br><br>**Message**<br>Invalid value '&lt;value&gt;', only OS components may use identifiers starting with 'ms_' or 'vms_'.<br><br>**Details**<br>Third party INFs may not use identifiers beginning with 'ms_' or 'vms_'. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 2416**<a name="2416"></a><br><br>**Message**<br>Invalid &lt;value&gt; value '&lt;value&gt;', expecting a comma-separated list of valid bind tokens matching '[a-z0-9_\.]+'.<br><br>**Details**<br>The specified list of bind tokens was invalid. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 2417**<a name="2417"></a><br><br>**Message**<br>Invalid &lt;value&gt; value '&lt;value&gt;', expecting a valid bind name matching regex '[a-zA-Z0-9_]+'.<br><br>**Details**<br>The specified bind name was invalid. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 2418**<a name="2418"></a><br><br>**Message**<br>Modifying Filter Drivers require a 'FilterClass'.<br><br>**Details**<br>Network filter drivers require a filter class to be specified. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 2419**<a name="2419"></a><br><br>**Message**<br>Bind token '&lt;value&gt;' and all non-standard tokens beginning with 'ms_' or 'ndis' are reserved.<br><br>**Details**<br>The specified token is reserved and should not be used. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 2420**<a name="2420"></a><br><br>**Message**<br>NetDriver INFs require a [&lt;value&gt;] section with at least one AddNetFilter or AddNetProtocol directive.<br><br>**Details**<br>NetDriver INFs require the specified section and directives. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 2500**<a name="2500"></a><br><br>**Message**<br>Legacy bind token '&lt;value&gt;' is obsolete and no longer supported.<br><br>**Details**<br>The specified token is no longer supported and should not be used. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 2501**<a name="2501"></a><br><br>**Message**<br>Referenced service '&lt;value&gt;' is not present in this INF.<br><br>**Details**<br>The INF references a service that is not created by this INF. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 2600**<a name="2600"></a><br><br>**Message**<br>&lt;value&gt; '&lt;value&gt;' must point to a path under DIRID &lt;value&gt;.<br><br>**Details**<br>Display drivers must use the specified DIRID for file paths. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 2601**<a name="2601"></a><br><br>**Message**<br>&lt;value&gt; '&lt;value&gt;' must point to a path under DIRID &lt;value&gt;.<br><br>**Details**<br>Display drivers must use the specified DIRID for file paths. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 2602**<a name="2602"></a><br><br>**Message**<br>Service '&lt;value&gt;' must have a &lt;value&gt; value of &lt;value&gt;.<br><br>**Details**<br>A display service must set the specified value appropriately. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 2603**<a name="2603"></a><br><br>**Message**<br>Directive '&lt;value&gt;' is invalid for display drivers.<br><br>**Details**<br>Display drivers may not use the specified directive. | **/k:** Warning<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 2650**<a name="2650"></a><br><br>**Message**<br>Direct use of '&lt;value&gt;' is not allowed, instead Include [&lt;value&gt;].<br><br>**Details**<br>The INF should use Include/Needs directives to reference Microsoft-supplied INF file sections instead of directly<br>referencing its driver binaries. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 2651**<a name="2651"></a><br><br>**Message**<br>Needs indicates [&lt;value&gt;], but '&lt;value&gt;' not included.<br><br>**Details**<br>The Needs directive was used to reference a section, but the Include directive was not used to specify the<br>Microsoft-supplied INF containing that section. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 2652**<a name="2652"></a><br><br>**Message**<br>Section [&lt;value&gt;] must use Needs directive to reference [&lt;value&gt;].<br><br>**Details**<br>Camera INFs must use the Needs directives to reference the specified Microsoft-provided sections. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 2660**<a name="2660"></a><br><br>**Message**<br>Cannot modify HKCR\\&lt;value&gt; registry subkey. It must be under HKR.<br><br>**Details**<br>The specified registry subkey is not allowed to be written to. Registry state should be written using an AddReg<br>directive with a reg-root of HKR. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
+| **Code 2661**<a name="2661"></a><br><br>**Message**<br>Only a device with AudioProcessingObject class is allowed to write to &lt;value&gt; registry subkey.<br><br>**Details**<br>The specified registry subkey is not allowed to be written to for the current class. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |

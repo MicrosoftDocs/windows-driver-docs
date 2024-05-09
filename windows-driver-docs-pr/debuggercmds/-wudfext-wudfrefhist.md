@@ -1,7 +1,7 @@
 ---
-title: wudfext.wudfrefhist
-description: The wudfext.wudfrefhist extension displays the reference count stack history for a UMDF object.
-keywords: ["wudfext.wudfrefhist Windows Debugging"]
+title: "!wudfext.wudfrefhist"
+description: "The !wudfext.wudfrefhist extension displays the reference count stack history for a UMDF object."
+keywords: ["!wudfext.wudfrefhist Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !wudfext.wudfrefhist
 
-
 The **!wudfext.wudfrefhist** extension displays the reference count stack history for a UMDF object.
 
 ```dbgcmd
@@ -23,7 +22,6 @@ The **!wudfext.wudfrefhist** extension displays the reference count stack histor
 
 ## Parameters
 
-
 <span id="_______ObjectAddress______"></span><span id="_______objectaddress______"></span><span id="_______OBJECTADDRESS______"></span> *ObjectAddress*   
 Specifies the address of the UMDF object whose reference count stack history is to be displayed. Note that this is the address of the object itself, not of the interface.
 
@@ -31,9 +29,8 @@ Specifies the address of the UMDF object whose reference count stack history is 
 
 Wudfext.dll
 
- 
 
-### Additional Information
+## Additional Information
 
 For more information, see [User-Mode Driver Framework Debugging](../debugger/user-mode-driver-framework-debugging.md).
 
@@ -82,12 +79,3 @@ WUDFPlatform!WdfLpcPort::ProcessMessage+0x140
 WUDFPlatform!WdfLpcCommPort::ProcessMessage+0x92
 WUDFPlatform!WdfLpc::RetrieveMessage+0x20c
 ```
-
- 
-
- 
-
-
-
-
-

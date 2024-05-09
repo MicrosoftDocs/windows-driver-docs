@@ -1,7 +1,7 @@
 ---
-title: wdfkd.wdfldr
-description: The wdfkd.wdfldr extension displays information about the KMDF and UMDF drivers that are currently dynamically bound to the Windows Driver Frameworks. 
-keywords: ["wdfkd.wdfldr Windows Debugging"]
+title: "!wdfkd.wdfldr"
+description: "The !wdfkd.wdfldr extension displays information about the KMDF and UMDF drivers that are currently dynamically bound to the Windows Driver Frameworks. "
+keywords: ["!wdfkd.wdfldr Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !wdfkd.wdfldr
 
-
 The **!wdfkd.wdfldr** extension displays information about the drivers that are currently dynamically bound to the Windows Driver Frameworks. This includes both the Kernel-Mode Driver Framework (KMDF) and the User-Mode Driver Framework (UMDF).
 
 ```dbgcmd
@@ -23,7 +22,6 @@ The **!wdfkd.wdfldr** extension displays information about the drivers that are 
 
 ## Parameters
 
-
 <span id="_______DriverName______"></span><span id="_______drivername______"></span><span id="_______DRIVERNAME______"></span> *DriverName*   
 The name of a driver, including the filename extension. If you supply a driver name, this command displays detailed information about the one driver. If you do not supply a drive name, this command displays information about all drivers that are bound to the Windows Driver Frameworks.
 
@@ -31,11 +29,11 @@ The name of a driver, including the filename extension. If you supply a driver n
 
 Wdfkd.dll
 
-### <span id="Frameworks"></span><span id="frameworks"></span><span id="FRAMEWORKS"></span>Frameworks
+### Frameworks
 
 KMDF 1, UMDF 1, UMDF 2
 
-### Additional Information
+## Additional Information
 
 For more information, see [Kernel-Mode Driver Framework Debugging](../debugger/kernel-mode-driver-framework-debugging.md).
 
@@ -91,12 +89,3 @@ Service    \Registry\Machine\System\CurrentControlSet\Services\MyUmdf2Driver
 Process             DevStack           DeviceId
 0xffffe00000c32900  a5a3ab5f70         \Device\00000052 !wdfdriverinfo
 ```
-
- 
-
- 
-
-
-
-
-

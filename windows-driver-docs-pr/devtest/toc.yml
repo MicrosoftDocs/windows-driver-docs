@@ -2000,7 +2000,11 @@
       - name: "BadOverflowGuard (Windows Driver CodeQL Query)"
         href: codeql-windows-driver-badoverflowguard.md 
       - name: "HardcodedIVCNG (Windows Driver CodeQL Query)"
-        href: codeql-windows-driver-hardcodedivcng.md 
+        href: codeql-windows-driver-hardcodedivcng.md
+      - name: "KeSetEventPageable (Windows Driver CodeQL Query)"
+        href: codeql-windows-driver-keseteventpageable.md
+      - name: "RoleTypeCorrectlyUsed (Windows Driver CodeQL Query)"
+        href: codeql-windows-driver-roletypecorrectlyused.md 
 - name: "Additional Driver Verification Tools"
 # Auto-expanded node
   items: 
@@ -2797,12 +2801,14 @@
         href: infverif.md
       - name: "Running InfVerif from the command line"
         href: running-infverif-from-the-command-line.md
+      - name: "InfVerif /h"
+        href: infverif_h.md
       - name: "INF Validation Errors and Warnings"
 # Auto-expanded node
         items: 
         - name: "INF Validation Errors and Warnings"
           href: inf-validation-errors-and-warnings.md
-        - name: "InfVerif Error 1330" 
+        - name: "InfVerif Error 1330 - 1333" 
           href: inf-verif-error-1330.md
     - name: "Reg2inf"
       href: reg2inf.md

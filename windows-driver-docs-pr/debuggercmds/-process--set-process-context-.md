@@ -1,6 +1,6 @@
 ---
-title: .process (Set Process Context)
-description: The .process command specifies which process is used for the process context.
+title: ".process (Set Process Context)"
+description: "The .process command specifies which process is used for the process context."
 keywords: ["Set Process Context (.process) command", "addresses, Set Process Context (.process) command", "context, Set Process Context (.process) command", "Process, Set Process Context (.process) command", ".process (Set Process Context) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -14,14 +14,13 @@ api_type:
 
 # .process (Set Process Context)
 
-
 The **.process** command specifies which process is used for the process context.
 
 ```dbgcmd
 .process [/i] [/p [/r]] [/P] [Process]
 ```
 
-## <span id="ddk_meta_set_process_context_dbg"></span><span id="DDK_META_SET_PROCESS_CONTEXT_DBG"></span>Parameters
+## Parameters
 
 
 <span id="________i______"></span><span id="________I______"></span> **/i**   
@@ -41,32 +40,15 @@ Reloads user-mode symbols after the process context has been set, if you use the
 <span id="_______Process______"></span><span id="_______process______"></span><span id="_______PROCESS______"></span> *Process*   
 Specifies the address of the process that you want. (More precisely, this parameter specifies the address of the EPROCESS block for this process). The process context is set to this process. If you omit *Process* or specify zero, the process context is reset to the default process for the current system state. (If you used the **/i** option to set process context, you must use the **/i** option to reset the process context.)
 
-### Environment
+## Environment
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Modes</strong></p></td>
-<td align="left"><p>Kernel mode only</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Targets</strong></p></td>
-<td align="left"><p>Live, crash dump</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Platforms</strong></p></td>
-<td align="left"><p>All</p></td>
-</tr>
-</tbody>
-</table>
+|  Item       | Description       |
+|-----------|------------------|
+| Modes     | kernel mode only |
+| Targets   | live, crash dump |
+| Platforms | all              |
 
- 
-
-### Additional Information
+## Additional Information
 
 For more information about the process context and other context settings, see [Changing Contexts](../debugger/changing-contexts.md).
 
@@ -79,8 +61,6 @@ The **.process** command instructs the kernel debugger to use a specific user-mo
 The [**.context (Set User-Mode Address Context)**](-context--set-user-mode-address-context-.md) command has a similar effect. However, the **.context** command sets the *user-mode address context* to a specific page directory, while the **.process** command sets the process context to a specific process. On an x86-based processor, **.context** and **.process** have almost the same effect. However, on an Itanium-based processor, a single process might have more than one page directory. In this situation, the **.process** command is more powerful, because it enables access to all of the page directories that are associated with a process. For more information about the process context, see [Process Context](../debugger/changing-contexts.md#process-context).
 
 **Note**   If you are performing live debugging, you should use the **/i** or the **/p** parameter. Without one of these parameters, you cannot correctly display user-mode or session memory.
-
- 
 
 The **/i** parameter activates the target process. When you use this option, you must execute the target once for this command to take effect. If you execute again, the process context is lost.
 
@@ -142,18 +122,10 @@ PEB at 7FFDF000
     SubSystemData:     0
     ProcessHeap:       70000
     ProcessParameters: 20000
-        WindowTitle:  'C:\WINNT\system32\regsvc.exe'
+        WindowTitle: "'C:\WINNT\system32\regsvc.exe'"
         ImageFile:    'C:\WINNT\system32\regsvc.exe'
         CommandLine:  'C:\WINNT\system32\regsvc.exe'
         DllPath:     'C:\WINNT\system32;.;C:\WINNT\System32;C:\WINNT\system;C:\WINNT;C:\WINNT\system32;C:\WINNT;C:\WINNT\System32\Wbem;C:\PROGRA~1\COMMON~1\AUTODE~1'
         Environment:  0x10000
 ```
-
- 
-
- 
-
-
-
-
 

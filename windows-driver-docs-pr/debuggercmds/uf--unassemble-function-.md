@@ -1,6 +1,6 @@
 ---
-title: uf (Unassemble Function)
-description: The uf command displays an assembly translation of the specified function in memory.
+title: "uf (Unassemble Function)"
+description: "The uf command displays an assembly translation of the specified function in memory."
 keywords: ["uf (Unassemble Function) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -48,7 +48,7 @@ Displays the number of instructions in a routine.
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the address of the function to disassemble. For more information about the syntax, see [Address and Address Range Syntax](address-and-address-range-syntax.md).
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -58,19 +58,11 @@ Specifies the address of the function to disassemble. For more information about
 
  
 
-### Additional Information
+## Additional Information
 
 For more information about assembly debugging and related commands, see [Debugging in Assembly Mode](../debugger/debugging-in-assembly-mode.md).
 
 ## Remarks
 
 The display shows the whole function, according to the function order.
-
- 
-
- 
-
-
-
-
 

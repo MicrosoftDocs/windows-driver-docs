@@ -1,7 +1,7 @@
 ---
-title: diskspace (WinDbg)
-description: The diskspace extension displays the amount of free space on a hard disk of the target computer.
-keywords: ["diskspace Windows Debugging"]
+title: "!diskspace (WinDbg)"
+description: "The !diskspace extension displays the amount of free space on a hard disk of the target computer."
+keywords: ["!diskspace Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -65,12 +65,4 @@ kd> !diskspace f:
 Checking Free Space for f: 
 f: is a CDROM drive. This function is not supported!
 ```
-
- 
-
- 
-
-
-
-
 

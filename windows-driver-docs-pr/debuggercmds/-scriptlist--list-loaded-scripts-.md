@@ -1,6 +1,6 @@
 ---
-title: .scriptlist (List Loaded Scripts)
-description: The .scriptlist command lists the loaded scripts.
+title: ".scriptlist (List Loaded Scripts)"
+description: "The .scriptlist command lists the loaded scripts."
 keywords: [".scriptlist (List Loaded Scripts) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -14,7 +14,6 @@ api_type:
 
 # .scriptlist (List Loaded Scripts)
 
-
 The **.scriptlist** command lists the loaded scripts.
 
 ```dbgcmd
@@ -23,11 +22,10 @@ The **.scriptlist** command lists the loaded scripts.
 
 ## Parameters
 
-
 <span id="_______________"></span>    
 None
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -35,9 +33,7 @@ None
 |Targets |Live, crash dump      |
 |Platforms|All                  |
 
- 
-
-### Additional Information
+## Additional Information
 
 The .scriptlist command will list any scripts which have been loaded via the .scriptload command.
 
@@ -49,23 +45,12 @@ Command Loaded Scripts:
     JavaScript script from 'C:\WinDbg\Scripts\TestScript.js'
 ```
 
-**Requirements**
+### Requirements
 
 Before using any of the .script commands, a scripting provider needs to be loaded.
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [JavaScript Debugger Scripting](../debugger/javascript-debugger-scripting.md)
 
 [**.scriptload (Load Script)**](-scriptload--load-script-.md)
-
- 
-
- 
-
-
-
-
-
-

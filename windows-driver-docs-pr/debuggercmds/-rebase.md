@@ -1,7 +1,7 @@
 ---
-title: rebase (WinDbg)
-description: The rebase extension searches in a rebase.log file for a specified address or symbol.
-keywords: ["rebase Windows Debugging"]
+title: "!rebase (WinDbg)"
+description: "The !rebase extension searches in a rebase.log file for a specified address or symbol."
+keywords: ["!rebase Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !rebase
 
-
 The **!rebase** extension searches in a rebase.log file for a specified address or symbol.
 
 ```dbgcmd
@@ -25,7 +24,6 @@ The **!rebase** extension searches in a rebase.log file for a specified address 
 ```
 
 ## Parameters
-
 
 <span id="_______-r______"></span><span id="_______-R______"></span> **-r**   
 Attempts to load any module found in rebase.log.
@@ -47,30 +45,4 @@ Displays a brief help text for this extension in the Debugger Command window.
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Unavailable</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Ext.dll</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
- 
-
- 
-
-
-
-
-
+Ext.dll

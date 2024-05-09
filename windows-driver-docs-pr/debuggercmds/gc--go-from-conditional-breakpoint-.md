@@ -1,6 +1,6 @@
 ---
-title: gc (Go from Conditional Breakpoint)
-description: The gc command resumes execution from a conditional breakpoint in the same fashion that was used to hit the breakpoint (stepping, tracing, or freely executing).
+title: "gc (Go from Conditional Breakpoint)"
+description: "The gc command resumes execution from a conditional breakpoint in the same fashion that was used to hit the breakpoint (stepping, tracing, or freely executing)."
 keywords: ["gc (Go from Conditional Breakpoint) Windows Debugging"]
 ms.date: 08/29/2023
 topic_type:
@@ -28,7 +28,7 @@ bp module!myFunction ".echo myFunction executed; gc"
 
 If a normal "g" command were used instead, the program would continue execution when stepping over "myFunction", instead of simply printing the message and continuing the step operation.
 
-### Environment
+## Environment
 
 |  Item       | Description               |
 |-----------|------------------------|
@@ -36,7 +36,7 @@ If a normal "g" command were used instead, the program would continue execution 
 | Targets   | live debugging only    |
 | Platforms | all                    |
 
-### Additional Information
+## Additional Information
 
 For an overview of related commands, see [Controlling the Target](../debugger/controlling-the-target.md).
 
@@ -57,3 +57,4 @@ On the other hand, the following is an improper breakpoint formulation, since ex
 ```dbgcmd
 0:000> bp Address "j (Condition) 'OptionalCommands'; 'g' " 
 ```
+

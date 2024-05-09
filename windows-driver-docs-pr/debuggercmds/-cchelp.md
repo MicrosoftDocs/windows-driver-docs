@@ -1,7 +1,7 @@
 ---
-title: cchelp (WinDbg)
-description: The cchelp extension displays some brief Help text in the Debugger command window for some of the cache management extensions.
-keywords: ["cache manager", "cchelp Windows Debugging"]
+title: "!cchelp (WinDbg)"
+description: "The !cchelp extension displays some brief Help text in the Debugger command window for some of the cache management extensions."
+keywords: ["cache manager", "!cchelp Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -27,17 +27,9 @@ Kdexts.dll
 
  
 
-### Additional Information
+## Additional Information
 
 For information about cache management, see the Microsoft Windows SDK documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
 The **!cchelp** extension displays help for the [**!bcb**](-bcb.md), [**!defwrites**](-defwrites.md), [**!finddata**](-finddata.md), and [**!scm**](-scm.md) cache management extensions. Other cache management extensions include [**!openmaps**](-openmaps.md) and [**!pcm**](-pcm.md).
-
- 
-
- 
-
-
-
-
 

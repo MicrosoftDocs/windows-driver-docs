@@ -1,7 +1,7 @@
 ---
-title: ppmperfpolicy
-description: The ppmperfpolicy command
-keywords: ["ppmperfpolicy Windows Debugging"]
+title: "!ppmperfpolicy"
+description: "The !ppmperfpolicy extension command is no longer supported"
+keywords: ["!ppmperfpolicy Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,8 +14,7 @@ api_type:
 
 # !ppmperfpolicy
 
-
-The **!ppmperfpolicy** command is no longer supported, use the [!ppmsettings](-ppmsettings.md) command instead.
+The **!ppmperfpolicy** extension command is no longer supported, use the [!ppmsettings](-ppmsettings.md) command instead.
 
 ```dbgcmd
 !ppmperfpolicy
@@ -28,11 +27,3 @@ None
 ## DLL
 
 Kdexts.dll
-  
-
- 
-
-
-
-
-

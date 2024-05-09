@@ -1,7 +1,7 @@
 ---
-title: usb3kd.ucx_endpoint
-description: The usb3kd.ucx_endpoint command displays information about an endpoint on a USB device in the USB 3.0 tree. The display is based on data maintained by UcxVersion.sys.
-keywords: ["usb3kd.ucx_endpoint Windows Debugging"]
+title: "!usb3kd.ucx_endpoint"
+description: "The !usb3kd.ucx_endpoint command displays information about an endpoint on a USB device in the USB 3.0 tree. The display is based on data maintained by UcxVersion.sys."
+keywords: ["!usb3kd.ucx_endpoint Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,21 +14,18 @@ api_type:
 
 # !usb3kd.ucx\_endpoint
 
-
 The [**!usb3kd.ucx\_endpoint**](-usb3kd-device-info.md) command displays information about an endpoint on a USB device in the [USB 3.0 tree](usb-3-extensions.md#usb-3-tree). The display is based on data structures maintained by the USB host controller extension driver (Ucx*Version*.sys).
 
 ```dbgcmd
 !usb3kd.ucx_endpoint UcxEndpointPrivContext
 ```
 
-## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______UcxEndpointPrivContext______"></span><span id="_______ucxendpointprivcontext______"></span><span id="_______UCXENDPOINTPRIVCONTEXT______"></span> *UcxEndpointPrivContext*   
 Address of the \_UCXENDPOINT\_PRIVCONTEXT structure that represents the endpoint.
 
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Usb3kd.dll
 
@@ -88,12 +85,10 @@ EventCallbacks:
     EvtEndpointReset: (0xfffff880044bb854) USBXHCI!Endpoint_UcxEvtEndpointReset
 ```
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [USB 3.0 Extensions](usb-3-extensions.md)
 
 [**!usb3kd.ucx\_controller\_list**](-usb3kd-ucx-controller-list.md)
 
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
-

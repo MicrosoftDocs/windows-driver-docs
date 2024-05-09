@@ -1,7 +1,7 @@
 ---
-title: usbkd.usbhubs
-description: The usbkd.usbhubs command displays information about USB hubs.
-keywords: ["usbkd.usbhubs Windows Debugging"]
+title: "!usbkd.usbhubs"
+description: "The !usbkd.usbhubs command displays information about USB hubs."
+keywords: ["!usbkd.usbhubs Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !usbkd.usbhubs
 
-
 The **!usbkd.usbhubs** command displays information about USB hubs.
 
 ```dbgcmd
@@ -23,8 +22,7 @@ The **!usbkd.usbhubs** command displays information about USB hubs.
 !usbkd.usbhubs r[v]
 ```
 
-## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_____________a"></span><span id="_____________A"></span> **a**  
 Display all hubs.
@@ -38,8 +36,7 @@ Display external hubs.
 <span id="_____________v"></span><span id="_____________V"></span> **v**  
 The output is verbose. For example, **!usbhubs rv** displays verbose output about all root hubs.
 
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Usbkd.dll
 
@@ -101,12 +98,8 @@ On Host Controller (0x8086, 0x2937)
 ...
 ```
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
-
- 
-

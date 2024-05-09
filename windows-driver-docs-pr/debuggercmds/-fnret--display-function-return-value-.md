@@ -1,6 +1,6 @@
 ---
-title: .fnret (Display Function Return Value)
-description: The .fnret command displays information about a function's return value.
+title: ".fnret (Display Function Return Value)"
+description: "The .fnret command displays information about a function's return value."
 keywords: [".fnret (Display Function Return Value) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -33,7 +33,7 @@ Specifies the address of the function.
 <span id="_______Value______"></span><span id="_______value______"></span><span id="_______VALUE______"></span> *Value*   
 Specifies the return value to display. If you include *Value*, **.fnret** casts *Value* to the return type of the specified function and displays it in the format of the return type. If you omit *Value*, the debugger obtains the return value of the function from the return value registers.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -48,12 +48,4 @@ Specifies the return value to display. If you include *Value*, **.fnret** casts 
 If you include the *Value* parameter, the **.fnret** command only casts this value to the proper type and displays the results.
 
 If you omit *Value*, the debugger uses the return value registers to determine this value. If a function has returned more recently than the function that the *Address* parameter specifies, the value that is displayed will probably not be a value that this function returned.
-
- 
-
- 
-
-
-
-
 

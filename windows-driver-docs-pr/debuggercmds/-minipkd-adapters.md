@@ -1,6 +1,6 @@
 ---
-title: minipkd.adapters
-description: The minipkd.adapters extension displays all of the adapters that work with the SCSI Port driver that have been identified in the system, and the individual devices associated with each adapter.
+title: "!minipkd.adapters"
+description: "The !minipkd.adapters extension displays all of the adapters that work with the SCSI Port driver that have been identified in the system, and the individual devices associated with each adapter."
 keywords: ["minipkd.adapters Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -23,26 +23,11 @@ The **!minipkd.adapters** extension displays all of the adapters that work with 
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Unavailable</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Minipkd.dll</p></td>
-</tr>
-</tbody>
-</table>
+Minipkd.dll
 
  
 
-### Additional Information
+## Additional Information
 
 For more information, see [SCSI Miniport Debugging](../debugger/scsi-miniport-debugging.md).
 
@@ -117,12 +102,4 @@ minipkd error (0) <path> ... \minipkd\minipkd.c @ line 435
 ```
 
 If the [**!minipkd.help**](-minipkd-help.md) extension command returns help information successfully, the SCSI Port symbols are correct.
-
- 
-
- 
-
-
-
-
 

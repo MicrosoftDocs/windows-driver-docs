@@ -1,6 +1,6 @@
 ---
-title: dv (Display Local Variables)
-description: The dv command displays the names and values of all local variables in the current scope.
+title: "dv (Display Local Variables)"
+description: "The dv command displays the names and values of all local variables in the current scope."
 keywords: ["dv (Display Local Variables) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -63,7 +63,7 @@ Sorts the output by size, in descending order.
 <span id="_______Pattern______"></span><span id="_______pattern______"></span><span id="_______PATTERN______"></span> *Pattern*   
 Causes the command to only display local variables that match the specified *Pattern*. The pattern may contain a variety of wildcards and specifiers; see [String Wildcard Syntax](string-wildcard-syntax.md) for details. If *Pattern* contains spaces, it must be enclosed in quotation marks. If *Pattern* is omitted, all local variables will be displayed.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -73,7 +73,7 @@ Causes the command to only display local variables that match the specified *Pat
 
  
 
-### Additional Information
+## Additional Information
 
 For details on displaying and changing local variables and a description of other memory-related commands, see [Reading and Writing Memory](../debugger/reading-and-writing-memory.md).
 
@@ -84,12 +84,4 @@ In verbose mode, the addresses of the variables are displayed as well. (This can
 Data structures and unfamiliar data types are not displayed in full; rather, their type name is displayed. To display the entire structure, or display a particular member of the structure, use the [**dt (Display Type)**](dt--display-type-.md) command.
 
 The *local context* determines which set of local variables will be displayed. By default, this context matches the current position of the program counter. For information about how this can be changed, see [Local Context](../debugger/changing-contexts.md#local-context).
-
- 
-
- 
-
-
-
-
 

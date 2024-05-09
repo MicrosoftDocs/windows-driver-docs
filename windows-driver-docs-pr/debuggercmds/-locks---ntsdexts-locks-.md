@@ -1,7 +1,7 @@
 ---
-title: locks ntsdexts.locks
-description: The locks extension in Ntsdexts.dll displays a list of critical sections associated with the current process.This extension command should not be confused with the kdext*.locks extension command.
-keywords: ["locks ( ntsdexts.locks) Windows Debugging"]
+title: "!locks ntsdexts.locks"
+description: "The !locks extension in Ntsdexts.dll displays a list of critical sections associated with the current process. This extension command should not be confused with the kdext*.locks extension command."
+keywords: ["!locks ( ntsdexts.locks) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -38,7 +38,7 @@ Causes the display to only include orphaned information (pointers that do not ac
 
 Ntsdexts.dll
 
-### Additional Information
+## Additional Information
 
 For other commands and extensions that can display critical section information, see [Displaying a Critical Section](../debugger/displaying-a-critical-section.md). For information about critical sections, see the Microsoft Windows SDK documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
@@ -73,3 +73,4 @@ ContentionCount    0
 [Displaying a Critical Section](../debugger/displaying-a-critical-section.md)
 
 [Critical Section Time Outs](../debugger/critical-section-time-outs.md) (user mode)
+

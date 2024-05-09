@@ -1,7 +1,7 @@
 ---
-title: ptov (WinDbg)
-description: The ptov extension displays the entire physical-to-virtual map for a given process.
-keywords: ["ptov Windows Debugging"]
+title: "!ptov (WinDbg)"
+description: "The !ptov extension displays the entire physical-to-virtual map for a given process."
+keywords: ["!ptov Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,24 +14,21 @@ api_type:
 
 # !ptov
 
-
 The **!ptov** extension displays the entire physical-to-virtual map for a given process.
 
 ```dbgcmd
 !ptov DirBase
 ```
 
-## <span id="ddk__ptov_dbg"></span><span id="DDK__PTOV_DBG"></span>Parameters
+## Parameters
 
 
 <span id="_______DirBase______"></span><span id="_______dirbase______"></span><span id="_______DIRBASE______"></span> *DirBase*   
 Specifies the directory base for the process. To determine the directory base, use the [**!process**](-process.md) command, and look at the value displayed for DirBase.
 
-### DLL
+## DLL
 
 Kdexts.dll
-
- 
 
 ## Remarks
 
@@ -98,12 +95,3 @@ The directory base is the physical address of the first table that is used in vi
 For 64-bit Windows, the directory base is the physical address of the Page Map Level 4 (PML4) table. For 32-bit Windows with PAE enabled, the directory base is the physical address of the Page Directory Pointers (PDP) table. For 32-bit Windows with PAE disabled, the directory bas is the physical address of the Page Directory (PD) table.
 
 For related topics, see [**!vtop**](-vtop.md) and [Converting Virtual Addresses to Physical Addresses](../debugger/converting-virtual-addresses-to-physical-addresses.md). For information about virtual address translation, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
-
- 
-
- 
-
-
-
-
-

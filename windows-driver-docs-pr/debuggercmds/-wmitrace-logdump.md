@@ -1,7 +1,7 @@
 ---
-title: wmitrace.logdump
-description: The wmitrace.logdump extension displays the contents of the trace buffers for a trace session. You can limit the display to trace messages from specified providers.
-keywords: ["wmitrace.logdump Windows Debugging"]
+title: "!wmitrace.logdump"
+description: "The !wmitrace.logdump extension displays the contents of the trace buffers for a trace session. You can limit the display to trace messages from specified providers."
+keywords: ["!wmitrace.logdump Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,15 +14,13 @@ api_type:
 
 # !wmitrace.logdump
 
-
 The **!wmitrace.logdump** extension displays the contents of the trace buffers for a trace session. You can limit the display to trace messages from specified providers.
 
 ```dbgcmd
 !wmitrace.logdump [-t Count] [{LoggerID|LoggerName} [GUIDFile]] 
 ```
 
-## <span id="ddk__wmitrace_logdump_dbg"></span><span id="DDK__WMITRACE_LOGDUMP_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______-t_______Count______"></span><span id="_______-t_______count______"></span><span id="_______-T_______COUNT______"></span> **-t** *Count*   
 Limits the output to the most recent messages. *Count* specifies the number of messages to display.
@@ -38,11 +36,11 @@ Displays only trace messages from providers specified in the *GUIDFile* file. *G
 
 ## DLL
 
-This extension is exported by Wmitrace.dll.
+Wmitrace.dll
 
 This extension is available in Windows 2000 and later versions of Windows. If you want to use this extension with Windows 2000, you must first copy the Wmitrace.dll file from the winxp subdirectory of the Debugging Tools for Windows installation directory to the w2kfre subdirectory.
 
-### Additional Information
+## Additional Information
 
 For a conceptual overview of event tracing, see the Microsoft Windows SDK. For information about Tracelog, see "Tracelog" in the Windows Driver Kit (WDK).
 
@@ -56,8 +54,6 @@ Before you use this extension, use [**!wmitrace.searchpath**](-wmitrace-searchpa
 
 **Note**  If your driver uses UMDF version 1.11 or later, you do not need to use [**!wmitrace.searchpath**](-wmitrace-searchpath.md) or [**!wmitrace.tmffile**](-wmitrace-tmffile.md).
 
- 
-
 When you use Tracelog to start a trace session with circular buffering (-buffering), use this extension to display the buffer contents.
 
 To find the logger ID of a trace session, use the [**!wmitrace.strdump**](-wmitrace-strdump.md) extension. Alternatively, you can use the Tracelog command tracelog -l to list the trace sessions and their basic properties, including the logger ID.
@@ -67,6 +63,4 @@ This extension is only useful during WPP software tracing, and earlier (legacy) 
 This extension is similar to the [**!wmitrace.eventlogdump**](-wmitrace-eventlogdump.md) extension, except that the output of **!wmitrace.logdump** is formatted in WPP style, and the output of **!wmitrace.eventlogdump** is formatted in event log style. You should choose the extension whose format is appropriate for the data you want to display.
 
 For information about how to view the UMDF trace log, see [Using WPP Software Tracing in UMDF-based Drivers](../wdf/using-wpp-software-tracing-in-umdf-drivers.md#viewing-the-umdf-trace-log).
-
- 
 

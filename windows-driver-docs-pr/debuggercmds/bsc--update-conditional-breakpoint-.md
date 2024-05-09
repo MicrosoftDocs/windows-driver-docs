@@ -1,6 +1,6 @@
 ---
-title: bsc (Update Conditional Breakpoint)
-description: The bsc command changes the condition under which a breakpoint occurs or changes the command executed when the specified conditional breakpoint is encountered.
+title: "bsc (Update Conditional Breakpoint)"
+description: "The bsc command changes the condition under which a breakpoint occurs or changes the command executed when the specified conditional breakpoint is encountered."
 keywords: ["bsc (Update Conditional Breakpoint) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -39,7 +39,7 @@ The CommandString commands are executed only if the breakpoint is reached while 
 
 Any command that resumes program execution after a breakpoint (such as **g** or **t**) ends the execution of the command list.
 
-### Environment
+## Environment
 
 <table>
 <colgroup>
@@ -64,7 +64,7 @@ Any command that resumes program execution after a breakpoint (such as **g** or 
 
  
 
-### Additional Information
+## Additional Information
 
 For more information about and examples of how to use breakpoints, other breakpoint commands and methods of controlling breakpoints, and how to set breakpoints in user space from a kernel debugger, see [Using Breakpoints](../debugger/using-breakpoints.md). For more information about conditional breakpoints, see [Setting a Conditional Breakpoint](../debugger/setting-a-conditional-breakpoint.md).
 
@@ -77,12 +77,4 @@ The same effect can be achieved by using the [**bs (Update Breakpoint Command)**
 ```dbgcmd
 bs ID "j Condition 'CommandString'; 'gc'"
 ```
-
- 
-
- 
-
-
-
-
 

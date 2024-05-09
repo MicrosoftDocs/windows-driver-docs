@@ -7,7 +7,7 @@ ms.date: 01/18/2023
 
 # Register for the Microsoft Windows Hardware Developer Program
 
-This article shows you how to register for the Microsoft Windows Hardware Developer Program. When you register for the the Hardware Developer Program, you will be prompted to accept the following agreements
+This article shows you how to register for the Microsoft Windows Hardware Developer Program. When you register for the Hardware Developer Program, you will be prompted to accept the following agreements
 
 - Code Signing Agreement
 
@@ -31,7 +31,7 @@ This article shows you how to register for the Microsoft Windows Hardware Develo
 
 To register for the Hardware Developer Program:
 
-1. Go to the [Hardware Developer Program registration](./index.yml).
+1. Go to the [Hardware Developer Program registration](https://partner.microsoft.com/dashboard/Registration/Hardware).
 
 1. Read the prerequisites to make sure you have what you need, and then select **Next**.
 

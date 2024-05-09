@@ -1,6 +1,6 @@
 ---
-title: Time Travel Debugging - Troubleshooting
-description: This section describes how to troubleshoot time travel traces.
+title: "Time Travel Debugging - Troubleshooting"
+description: "This section describes how to troubleshoot time travel traces."
 keywords: ["Troubleshooting", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
 ms.date: 10/18/2017
 ---
@@ -105,9 +105,3 @@ In most cases this failure message indicates that the .RUN trace file will have 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
 
 ---
-
-
-
-
-
-

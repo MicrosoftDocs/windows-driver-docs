@@ -1,6 +1,6 @@
 ---
-title: .kdtargetmac (Display Target MAC Address)
-description: Display Target MAC Address.
+title: ".kdtargetmac (Display Target MAC Address)"
+description: "Display Target MAC Address."
 keywords: [".kdtargetmac (Display Target MAC Address) Windows Debugging"]
 ms.date: 05/21/2018
 topic_type:
@@ -14,7 +14,6 @@ api_type:
 
 # .kdtargetmac (Display Target MAC Address)
 
-
 Display Target MAC Address
 
 ```dbgcmd
@@ -23,8 +22,7 @@ Display Target MAC Address
 
 ## Parameters
 
-
-### Environment
+## Environment
 
 <table>
 <colgroup>
@@ -49,7 +47,7 @@ Display Target MAC Address
 
  
 
-### Additional Information
+## Additional Information
 
 Use the .kdtargetmac command to display the MAC (media access control) address of the target system.
 
@@ -76,12 +74,4 @@ For more information, see [Setting Up KDNET Network Kernel Debugging Manually](.
 ## Remarks
 
 Knowing the MAC address of the target system can be useful for network tracing and other utilities.
-
- 
-
- 
-
-
-
-
 

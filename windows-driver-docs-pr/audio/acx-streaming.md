@@ -1,13 +1,13 @@
 ---
 title: ACX Streaming
 description: This topic provides a summary of the ACX streaming and the associated buffering, which is critical to a glitch free audio experience.
-ms.date: 09/29/2023
+ms.date: 03/08/2024
 ms.localizationpriority: medium
 ---
 
 # ACX streaming
 
-This topic discusses ACX streaming and the associated buffering, which is critical to a glitch free audio experience. It describes the the mechanisms used by the driver to communicate about the stream state and manage the buffer for the stream. For a list of common ACX audio terms and an introduction to ACX, see [ACX audio class extensions overview](acx-audio-class-extensions-overview.md).
+This topic discusses ACX streaming and the associated buffering, which is critical to a glitch free audio experience. It describes the mechanisms used by the driver to communicate about the stream state and manage the buffer for the stream. For a list of common ACX audio terms and an introduction to ACX, see [ACX audio class extensions overview](acx-audio-class-extensions-overview.md).
 
 >[!NOTE]
 > The ACX headers and libraries are not included in the  WDK 10.0.22621.2428 (released October 24, 2023), but are available in previous versions, as well as the latest (25000 series builds) Insider Preview of the WDK. For more information about preview versions of the WDK, see [Installing preview versions of the Windows Driver Kit (WDK)](../installing-preview-versions-wdk.md).
@@ -457,19 +457,65 @@ Packet allocation with EvtAcxStreamAllocateRtPackets will normally happen before
 
 The AcxStreamStateAcquire state is not used. ACX removes the need for the driver to have the acquire state, as this state is implicit with the prepare hardware ([EvtAcxStreamPrepareHardware](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_prepare_hardware)) and release hardware ([EvtAcxStreamReleaseHardware](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_release_hardware)) callbacks.
 
-#### Stream close
-
-When the client closes the stream, the driver will receive EvtAcxStreamPause and EvtAcxStreamReleaseHardware before the ACXSTREAM object is deleted by the ACX Framework. The driver can supply the standard WDF EvtCleanupCallback entry in the [WDF_OBJECT_ATTRIBUTES structure](/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes) when calling AcxStreamCreate to perform final cleanup for the ACXSTREAM. WDF will call EvtCleanupCallback when the framework attempts to delete the object. Do not use EvtDestroyCallback, which is only called once all references to the object have been released which is indeterminant.
-
-The driver should clean up system memory resources associated with the ACXSTREAM object in EvtCleanupCallback if the resources haven't already been cleaned up in EvtAcxStreamReleaseHardware.
-
-#### Stream surprise removal and invalidation  
-
-If the driver determines the stream has become invalid (e.g. the jack goes unplugged), the circuit will shut down all streams.  
-  
 ### Large buffer streams and offload engine support  
 
 ACX uses the ACXAUDIOENGINE element to designate an ACXPIN that will handle Offload stream creation and the different elements required for offload stream volume, mute, and peak meter state. This is similar to the existing audio engine node in WaveRT drivers.
+
+## Stream close process
+
+When the client closes the stream, the driver will receive EvtAcxStreamPause and EvtAcxStreamReleaseHardware before the ACXSTREAM object is deleted by the ACX Framework. The driver can supply the standard WDF EvtCleanupCallback entry in the [WDF_OBJECT_ATTRIBUTES structure](/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes) when calling AcxStreamCreate to perform final cleanup for the ACXSTREAM. WDF will call EvtCleanupCallback when the framework attempts to delete the object. Do not use EvtDestroyCallback, which is only called once all references to the object have been released which is indeterminant.
+
+The driver should clean up system memory resources associated with the ACXSTREAM object in EvtCleanupCallback, if the resources haven't already been cleaned up in EvtAcxStreamReleaseHardware.
+
+It is important that the driver does not clean up resources that support the stream, until requested to by the client.
+
+The AcxStreamStateAcquire state is not used. ACX removes the need for the driver to have the acquire state, as this state is implicit with the prepare hardware (EvtAcxStreamPrepareHardware) and release hardware (EvtAcxStreamReleaseHardware) callbacks.
+
+### Stream surprise removal and invalidation  
+
+If the driver determines the stream has become invalid (e.g. the jack goes unplugged), the circuit will shut down all streams.  
+
+### Stream memory cleanup
+
+The disposal of the stream's resources can be done in the driver's stream context cleanup (not destroy). Never put the disposal of anything that is shared in an object's context destroy callback. This guidance applies to all the ACX objects.
+
+The destroy callback is invoked after the last ref is gone, when it is unknown.
+
+In general, the stream's cleanup callback is called when the handle is closed. One exception to this is when the driver created the stream in its callback. If ACX failed to add this stream to its stream-bridge just before returning from the stream-create operation, the stream is cancelled async, and the current thread returns an error to the create-stream client. The stream should not have any mem allocations allocated at this point. For more information, see [EVT_ACX_STREAM_RELEASE_HARDWARE callback](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_release_hardware).
+
+### Stream memory clean up sequence
+
+The stream buffer is a system resource and it should be released only when the user mode client closes the stream’s handle. The buffer (which is different from the device’s hardware resources) has the same lifetime as the stream’s handle. When the client closes the handle ACX invokes the stream objects cleanup callback and then the stream obj’s delete callback when the ref on the object goes to zero.
+
+It is possible for ACX to defer a STREAM obj deletion to a work-item when the driver created a stream-obj and then it failed the create-stream callback. To prevent a deadlock with a shutdown WDF thread, ACX defers the deletion to a different thread. To avoid any possible side-effects of this behavior (deferred release of resources), the driver can release the allocated stream resources before it returns an error from the stream-create.
+
+The driver must free the audio buffers when ACX invokes the [EVT_ACX_STREAM_FREE_RTPACKETS callback](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_free_rtpackets). This callback is called when the user closes the stream handles.
+
+Because RT buffers are mapped in user-mode, the buffer lifetime is the same as the handle lifetime. The driver should not attempt to release/free the audio buffers before ACX invokes this callback.
+
+[EVT_ACX_STREAM_FREE_RTPACKETS callback](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_free_rtpackets) should be call after [EVT_ACX_STREAM_RELEASE_HARDWARE callback](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_release_hardware) and end before EvtDeviceReleaseHardware.
+
+This callback may happen after the driver processed the WDF release hardware callback, because the user-mode client can hold on to its handles for long time. The driver should not attempt to wait for these handles to go away, this will just create a 0x9f  DRIVER_POWER_STATE_FAILURE bug check. See [EVT_WDF_DEVICE_RELEASE_HARDWARE callback function](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_release_hardware)for more information.
+
+This EvtDeviceReleaseHardware code from the sample ACX driver, shows an example of calling [AcxDeviceRemoveCircuit](/windows-hardware/drivers/ddi/acxdevice/nf-acxdevice-acxdeviceremovecircuit)  and then releasing the streaming h/w memory.
+
+```cpp
+    RETURN_NTSTATUS_IF_FAILED(AcxDeviceRemoveCircuit(Device, devCtx->Render));
+    RETURN_NTSTATUS_IF_FAILED(AcxDeviceRemoveCircuit(Device, devCtx->Capture));
+
+    // NOTE: Release streaming h/w resources here.
+
+    CSaveData::DestroyWorkItems();
+    CWaveReader::DestroyWorkItems();
+```
+
+In summary:
+
+*wdf device release hardware -> release device’s h/w resources*
+
+[AcxStreamFreeRtPackets](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_free_rtpackets) -> release/free audio buffer associated with handle
+
+For more information on managing WDF and circuit objects, see [ACX WDF Driver Lifetime Management](acx-wdf-driver-lifetime-management.md).
 
 ## Streaming DDIs
 

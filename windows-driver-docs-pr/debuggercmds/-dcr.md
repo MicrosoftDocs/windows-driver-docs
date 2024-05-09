@@ -1,7 +1,7 @@
 ---
-title: dcr (WinDbg)
-description: The dcr extension displays the default control register (DCR) at the specified address.
-keywords: ["DCR (default control register)", "dcr Windows Debugging"]
+title: "!dcr (WinDbg)"
+description: "The !dcr extension displays the default control register (DCR) at the specified address."
+keywords: ["DCR (default control register)", "!dcr Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -45,7 +45,7 @@ Causes the display to include more in-depth information about all of the DCR fie
 
 ## DLL
 
-Windows XP and later - Kdexts.dll
+Kdexts.dll
 
  
 
@@ -77,12 +77,4 @@ kd> !dcr @dcr 2
   dd : 0 : Defer Debug faults only
   rv : 0 : reserved2
 ```
-
- 
-
- 
-
-
-
-
 

@@ -1,6 +1,6 @@
 ---
-title: .thread (Set Register Context)
-description: The .thread command specifies which thread will be used for the register context.
+title: ".thread (Set Register Context)"
+description: "The .thread command specifies which thread will be used for the register context."
 keywords: ["Set Register Context (.thread) command", "context, Set Register Context (.thread) command", "registers, Set Register Context (.thread) command", "call stack, Set Register Context (.thread) command", ".thread (Set Register Context) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -14,15 +14,13 @@ api_type:
 
 # .thread (Set Register Context)
 
-
 The **.thread** command specifies which thread will be used for the register context.
 
 ```dbgcmd
 .thread [/p [/r] ] [/P] [/w] [Thread]
 ```
 
-## <span id="ddk_meta_set_register_context_dbg"></span><span id="DDK_META_SET_REGISTER_CONTEXT_DBG"></span>Parameters
-
+## Parameters
 
 <span id="________p______"></span><span id="________P______"></span> **/p**   
 (Live debugging only) If this option is included and *Thread* is nonzero, all transition page table entries (PTEs) for the process owning this thread will be automatically translated into physical addresses before access. This may cause slowdowns, because the debugger will have to look up the physical addresses for all the memory used by this process, and a significant amount of data may need to be transferred across the debug cable. (This behavior is the same as that of [**.cache forcedecodeuser**](-cache--set-cache-size-.md).)
@@ -41,32 +39,15 @@ If the **/p** option is included and *Thread* is zero or omitted, this translati
 <span id="_______Thread______"></span><span id="_______thread______"></span><span id="_______THREAD______"></span> *Thread*   
 The address of the thread. If this is omitted or zero, the thread context is reset to the current thread.
 
-### Environment
+## Environment
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Modes</strong></p></td>
-<td align="left"><p>kernel mode only</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Targets</strong></p></td>
-<td align="left"><p>live, crash dump</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Platforms</strong></p></td>
-<td align="left"><p>all</p></td>
-</tr>
-</tbody>
-</table>
+| Item      | Description      |
+|-----------|------------------|
+| Modes     | kernel mode only |
+| Targets   | live, crash dump |
+| Platforms | all              |
 
- 
-
-### Additional Information
+## Additional Information
 
 For more information about the register context and other context settings, see [Changing Contexts](../debugger/changing-contexts.md).
 
@@ -134,12 +115,4 @@ ChildEBP RetAddr
 fd581c38 8042d61c ntoskrnl!KiSwapThread+0xc5
 00001c60 00000000 ntoskrnl!KeWaitForSingleObject+0x1a1
 ```
-
- 
-
- 
-
-
-
-
 

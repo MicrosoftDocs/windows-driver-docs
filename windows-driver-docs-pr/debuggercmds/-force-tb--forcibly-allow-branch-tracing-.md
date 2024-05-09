@@ -1,6 +1,6 @@
 ---
-title: .force_tb (Forcibly Allow Branch Tracing)
-description: The .force_tb command forces the processor to trace branches early in the boot process.
+title: ".force_tb (Forcibly Allow Branch Tracing)"
+description: "The .force_tb command forces the processor to trace branches early in the boot process."
 keywords: [".force_tb (Forcibly Allow Branch Tracing) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -24,7 +24,7 @@ The **.force\_tb** command forces the processor to trace branches early in the b
 ## <span id="ddk_meta_forcibly_allow_branch_tracing_dbg"></span><span id="DDK_META_FORCIBLY_ALLOW_BRANCH_TRACING_DBG"></span>
 
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -39,12 +39,4 @@ The **.force\_tb** command forces the processor to trace branches early in the b
 Typically, branch tracing is enabled after the debugger initializes the processor control block (PRCB). This initialization occurs early in the boot process.
 
 However, if you have to use the [**tb (Trace to Next Branch)**](tb--trace-to-next-branch-.md) command before this initialization, you can use the **.force\_tb** command to enable branch tracing earlier. Use this command carefully because it can corrupt your processor state.
-
- 
-
- 
-
-
-
-
 

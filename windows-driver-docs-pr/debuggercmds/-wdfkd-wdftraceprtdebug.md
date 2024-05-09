@@ -1,7 +1,7 @@
 ---
-title: wdfkd.wdftraceprtdebug
-description: The wdfkd.wdftraceprtdebug extension enables and disables the Traceprt.dll diagnostic mode, which generates verbose debugging information.
-keywords: ["wdfkd.wdftraceprtdebug Windows Debugging"]
+title: "!wdfkd.wdftraceprtdebug"
+description: "The !wdfkd.wdftraceprtdebug extension enables and disables the Traceprt.dll diagnostic mode, which generates verbose debugging information."
+keywords: ["!wdfkd.wdftraceprtdebug Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !wdfkd.wdftraceprtdebug
 
-
 The **!wdfkd.wdftraceprtdebug** extension enables and disables the Traceprt.dll diagnostic mode, which generates verbose debugging information.
 
 ```dbgcmd
@@ -22,7 +21,6 @@ The **!wdfkd.wdftraceprtdebug** extension enables and disables the Traceprt.dll 
 ```
 
 ## Parameters
-
 
 <span id="_______on______"></span><span id="_______ON______"></span> **on**   
 Enables the Traceprt.dll diagnostic mode.
@@ -34,23 +32,14 @@ Disables the Traceprt.dll diagnostic mode.
 
 Wdfkd.dll
 
-### <span id="Frameworks"></span><span id="frameworks"></span><span id="FRAMEWORKS"></span>Frameworks
+### Frameworks
 
 KMDF 1, UMDF 2
 
-### Additional Information
+## Additional Information
 
 For more information, see [Kernel-Mode Driver Framework Debugging](../debugger/kernel-mode-driver-framework-debugging.md).
 
 ## Remarks
 
 You should use the !wdfkd.wdftraceprtdebug extension only at the direction of technical support.
-
- 
-
- 
-
-
-
-
-

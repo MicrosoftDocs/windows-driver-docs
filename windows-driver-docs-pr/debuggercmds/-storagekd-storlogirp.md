@@ -1,7 +1,7 @@
 ---
-title: storagekd.storlogirp
-description: The storagekd.storlogirp extension displays the Storport’s internal log entries for the adapter filtered for the IRP provided.
-keywords: ["storagekd.storlogirp Windows Debugging"]
+title: "!storagekd.storlogirp"
+description: "The !storagekd.storlogirp extension displays the Storport’s internal log entries for the adapter filtered for the IRP provided."
+keywords: ["!storagekd.storlogirp Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !storagekd.storlogirp
 
-
 The **!storagekd.storlogirp** extension displays the Storport’s internal log entries for the adapter filtered for the IRP provided.
 
 ```dbgcmd
@@ -22,7 +21,6 @@ The **!storagekd.storlogirp** extension displays the Storport’s internal log e
 ```
 
 ## Parameters
-
 
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the address of a Storport adapter device extension or device object.
@@ -41,26 +39,4 @@ Count of entries to be displayed. If not specified, a value of 50 is used.
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 8 and later</strong></p></td>
-<td align="left"><p>Storagekd.dll</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
- 
-
- 
-
-
-
-
-
+Storagekd.dll

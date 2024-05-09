@@ -12,27 +12,30 @@ Use the InfVerif, Driver Verifier Driver Isolation Checks, and ApiValidator tool
 
 [InfVerif](../devtest/infverif.md) is a tool that validates INF syntax and checks that the INF conforms to requirements and restrictions.
 
-Use InfVerif with `/w` and `/v` to verify that a Windows Driver:
+Use InfVerif with `/w` to verify that a Windows Driver:
 
 * Meets the **declarative (D)** principle of [DCH Design Principles](dch-principles-best-practices.md)
 * Complies with the [driver package isolation](driver-isolation.md) requirement of [Getting Started with Windows Drivers](getting-started-with-windows-drivers.md)
 
 For more details, see [Running InfVerif from the command line](../devtest/running-infverif-from-the-command-line.md).
 
-### Targeting current and earlier versions of Windows
-
-Each run of InfVerif tests a single ruleset, for example `/w` (Windows driver compatibility) or `/k` (Hardware Dev Center submission).  If your INF contains syntax introduced in a more recent version of Windows and you also want to target previous Windows versions, use [INF decorations](../install/inf-manufacturer-section.md) to mark version-specific INF entries and then run InfVerif multiple times, for example:
+InfVerif validates Driver Isolation requirements with the '/w' argument, as shown here:
 
 ```inf
-infverif /k <INF file>
-infverif /w /wbuild NTAMD64.10.0.0.<build number where w is a requirement> <INF file>
+infverif.exe /w <INF file> [<INF file>]
 ```
 
-If there are no errors, the INF meets the [Driver Package Isolation](driver-isolation.md) requirement of Windows Drivers.
+If InfVerif reports no errors when validating with /w, the INF meets the [Driver Package Isolation](driver-isolation.md) requirement of Windows Drivers.
 
-For example, the [INF AddEventProvider Directive](../install/inf-addeventprovider-directive.md) is available starting in Windows 10, version 1809. To use this directive in an INF targeting an OS version before Windows 10, version 1809, decorate both the install section using legacy INF syntax for registering ETW event providers as well as the install section using the updated syntax.
+### Targeting current and earlier versions of Windows
 
-For sample code showing how to use OS decorations, see [Combining Platform Extensions with Operating System Versions](../install/combining-platform-extensions-with-operating-system-versions.md).
+If your INF contains syntax introduced in a recent version of Windows, such as the [INF AddEventProvider Directive](../install/inf-addeventprovider-directive.md) which is available starting in Windows 10 version 1809 and you also want to target previous Windows versions, use [INF decorations](../install/inf-manufacturer-section.md) to mark version-specific INF entries. For sample code showing how to use OS version decorations, see [Combining Platform Extensions with Operating System Versions](../install/combining-platform-extensions-with-operating-system-versions.md).
+
+INF files using OS version decorations may fail InfVerif because Driver Isolation requirements may not be supported on the previous Windows versions. To validate such an INF, you may specify the minimum Windows version where Driver Isolation checks should be applied, using the '/wbuild' argument. For example, an INF file that uses the AddEventProvider directive might use the following to only apply Driver Isolation checks to Windows 10 version 1809 and later:
+
+```inf
+infverif.exe /w /wbuild NTAMD64.10.0.0.17763 <INF file> [<INF file>]
+```
 
 ## Driver Verifier Driver Isolation Checks
 

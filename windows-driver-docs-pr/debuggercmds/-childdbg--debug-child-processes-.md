@@ -1,6 +1,6 @@
 ---
-title: .childdbg (Debug Child Processes)
-description: The .childdbg command controls the debugging of child processes.
+title: ".childdbg (Debug Child Processes)"
+description: "The .childdbg command controls the debugging of child processes."
 keywords: [".childdbg (Debug Child Processes) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -32,7 +32,7 @@ Prevents the debugger from debugging child processes.
 <span id="_______1______"></span> **1**   
 Causes the debugger to debug child processes.
 
-### Environment
+## Environment
 
 This command is only supported in Windows XP and later versions of Windows.
 
@@ -64,12 +64,4 @@ This command is only supported in Windows XP and later versions of Windows.
 **Child processes** are additional processes launched by the original target application.
 
 With no parameters, **.childdbg** will display the current status of child-process debugging.
-
- 
-
- 
-
-
-
-
 

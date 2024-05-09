@@ -1,7 +1,7 @@
 ---
-title: wmitrace.enable
-description: The wmitrace.enable extension enables a provider for the specified Event Tracing for Windows (ETW) trace session.
-keywords: ["wmitrace.enable Windows Debugging"]
+title: "!wmitrace.enable"
+description: "The !wmitrace.enable extension enables a provider for the specified Event Tracing for Windows (ETW) trace session."
+keywords: ["!wmitrace.enable Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,15 +14,13 @@ api_type:
 
 # !wmitrace.enable
 
-
 The **!wmitrace.enable** extension enables a provider for the specified Event Tracing for Windows (ETW) trace session.
 
 ```dbgcmd
 !wmitrace.enable { LoggerID | LoggerName } GUID [-level Num] [-matchallkw Num] [-matchanykw Num] [-enableproperty Num] [-flag Num] 
 ```
 
-## <span id="ddk__wmitrace_strdump_dbg"></span><span id="DDK__WMITRACE_STRDUMP_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______LoggerID______"></span><span id="_______loggerid______"></span><span id="_______LOGGERID______"></span> *LoggerID*   
 Specifies the trace session. *LoggerID* is an ordinal number that the system assigns to each trace session on the computer.
@@ -50,11 +48,11 @@ Specifies one or more flags. *Num* can be any integer. The effects of this param
 
 ## DLL
 
-This extension is exported by Wmitrace.dll.
+Wmitrace.dll
 
 This extension is available in Windows 7 and later versions of Windows.
 
-### Additional Information
+## Additional Information
 
 For a conceptual overview of event tracing, see the Microsoft Windows SDK. For information about tracing tools, see the Windows Driver Kit (WDK).
 
@@ -63,12 +61,3 @@ For a conceptual overview of event tracing, see the Microsoft Windows SDK. For i
 After using this extension, you must resume program execution (for example, by using the [**g (Go)**](g--go-.md) command) in order for it to take effect. After a brief time, the target computer automatically breaks into the debugger again.
 
 To disable a provider, use [**!wmitrace.disable**](-wmitrace-disable.md).
-
- 
-
- 
-
-
-
-
-

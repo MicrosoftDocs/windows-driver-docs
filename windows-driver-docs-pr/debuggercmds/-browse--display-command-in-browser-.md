@@ -1,6 +1,6 @@
 ---
-title: .browse (Display Command in Browser)
-description: The .browse command displays the output of a specified command in a new Command Browser window.
+title: ".browse (Display Command in Browser)"
+description: "The .browse command displays the output of a specified command in a new Command Browser window."
 keywords: [".browse (Display Command in Browser) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -34,12 +34,4 @@ The following example uses the **.browse** command to display the output of the 
 ```dbgcmd
 .browse .chain /D
 ```
-
- 
-
- 
-
-
-
-
 

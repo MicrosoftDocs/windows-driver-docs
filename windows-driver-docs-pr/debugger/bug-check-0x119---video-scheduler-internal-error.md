@@ -31,7 +31,7 @@ Parameter 1 is the only parameter of interest. It identifies the exact violation
 |0x5| Driver failed a system or a paging command. (DRIVER_FAULTED_SYSTEM_COMMAND)|
 |0x6| Driver reports NULL PhysicalAdapterMask for interrupt raised on multi-adapter GPU. (DRIVER_INVALID_ADAPTER_MASK)|
 |0x7| Driver reports display VSync on render only adapter. (REPORT_VSYNC_ON_RENDER_ONLY_ADAPTER) |
-|0x8| Driver node that is causing the reset did not have have its corresponding bit set. (INVALID_NODE_MASK) |
+|0x8| Driver node that is causing the reset did not have its corresponding bit set. (INVALID_NODE_MASK) |
 |0x9| Driver failed on a cancel command. (FAILED_CANCEL_COMMAND) |
 |0xA| Driver reported and invalid out of range aborted fence. (REPORTED_INVALID_ABORTED_FENCE) |
 |0xB| Driver failed the SetVidPnSourceAddressWithMultiPlaneOverlay command. (FAILED_SETVIDPNSOURCEMPO_COMMAND)|

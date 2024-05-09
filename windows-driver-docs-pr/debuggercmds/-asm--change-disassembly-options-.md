@@ -1,6 +1,6 @@
 ---
-title: .asm (Change Disassembly Options)
-description: The .asm command controls how disassembly code will be displayed.
+title: ".asm (Change Disassembly Options)"
+description: "The .asm command controls how disassembly code will be displayed."
 keywords: ["Change Disassembly Options (.asm) command", "assembly debugging, Change Disassembly Options (.asm) command", ".asm (Change Disassembly Options) Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
@@ -43,7 +43,7 @@ Prefixes each line of disassembly with the line number of the source code.
 <span id="verbose"></span><span id="VERBOSE"></span>**verbose**  
 (Itanium target only) Causes bundle-type information to be displayed along with the standard disassembly information.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -53,7 +53,7 @@ Prefixes each line of disassembly with the line number of the source code.
 
  
 
-### Additional Information
+## Additional Information
 
 For a description of assembly debugging and related commands, see [Debugging in Assembly Mode](../debugger/debugging-in-assembly-mode.md).
 
@@ -62,12 +62,4 @@ For a description of assembly debugging and related commands, see [Debugging in 
 Using **.asm** by itself displays the current state of the options.
 
 This command affects the display of any disassembly instructions in the Debugger Command window. In WinDbg it also changes the contents of the Disassembly window.
-
- 
-
- 
-
-
-
-
 

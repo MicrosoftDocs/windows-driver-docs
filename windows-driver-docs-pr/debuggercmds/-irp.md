@@ -1,7 +1,7 @@
 ---
-title: irp extension command
-description: The irp extension displays information about an I/O request packet (IRP).
-keywords: ["IRP", "IRP", "IO Request Packet", "irp Windows Debugging"]
+title: "!irp extension command"
+description: "The !irp extension displays information about an I/O request packet (IRP)."
+keywords: ["IRP", "IRP", "IO Request Packet", "!irp Windows Debugging"]
 ms.date: 08/23/2018
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !irp
 
-
 The **!irp** extension displays information about an I/O request packet (IRP).
 
 ```dbgcmd
@@ -22,7 +21,6 @@ The **!irp** extension displays information about an I/O request packet (IRP).
 ```
 
 ## <span id="ddk__irp_dbg"></span><span id="DDK__IRP_DBG"></span>Parameters
-
 
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the hexadecimal address of the IRP.
@@ -32,22 +30,9 @@ If this parameter is included with any value, such as 1, the output includes the
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Kdexts.dll</p></td>
-</tr>
-</tbody>
-</table>
+Kdexts.dll
 
- 
-
-### Additional Information
+## Additional Information
 
 See [Plug and Play Debugging](../debugger/plug-and-play-debugging.md) and [Debugging Interrupt Storms](../debugger/debugging-an-interrupt-storm.md) for applications of this extension command. For information about IRPs, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon. For further information on the major and minor function codes, see the Windows Driver Kit (WDK) documentation.
 
@@ -57,7 +42,6 @@ For detailed information on decoding the IRP structure including the returned Ar
 
 - Windows Internals by Mark E. Russinovich, David A. Solomon and Alex Ionescu
 - Developing Drivers with the Windows Driver Foundation Guy Smith and Penny Orwick
-
 
 ## Remarks
 
@@ -499,16 +483,10 @@ The SCSI minor function codes are as follows:
 </tbody>
 </table>
 
- 
-
-## <span id="see_also"></span>See also
-
+## See also
 
 [**IRP**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp)
 
 [**!irpfind**](-irpfind.md)
 
 [**!ioctldecode**](-ioctldecode.md)
-
- 
-

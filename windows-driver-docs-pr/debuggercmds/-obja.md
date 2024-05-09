@@ -1,7 +1,7 @@
 ---
-title: obja (WinDbg)
-description: The obja extension displays the attributes of an object in the object manager.
-keywords: ["object manager", "obja Windows Debugging"]
+title: "!obja (WinDbg)"
+description: "The !obja extension displays the attributes of an object in the object manager."
+keywords: ["object manager", "!obja Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !obja
 
-
 The **!obja** extension displays the attributes of an object in the object manager.
 
 ```dbgcmd
@@ -23,34 +22,14 @@ The **!obja** extension displays the attributes of an object in the object manag
 
 ## <span id="ddk__obja_dbg"></span><span id="DDK__OBJA_DBG"></span>Parameters
 
-
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the hexadecimal address of the object header you want to examine.
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p></p>
 Ext.dll
-Kdextx86.dll</td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Ext.dll</p></td>
-</tr>
-</tbody>
-</table>
 
- 
-
-### Additional Information
+## Additional Information
 
 For information about objects and the object manager, see the Microsoft Windows SDK documentation, the Windows Driver Kit (WDK) documentation, and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
@@ -77,12 +56,3 @@ Obja +80967768 at 80967768:
         OBJ_PERMANENT
         OBJ_EXCLUSIVE
 ```
-
- 
-
- 
-
-
-
-
-

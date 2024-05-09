@@ -1,7 +1,7 @@
 ---
-title: runaway (WinDbg)
-description: The runaway extension displays information about the time consumed by each thread.
-keywords: ["runaway Windows Debugging"]
+title: "!runaway (WinDbg)"
+description: "The !runaway extension displays information about the time consumed by each thread."
+keywords: ["!runaway Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,15 +14,13 @@ api_type:
 
 # !runaway
 
-
 The **!runaway** extension displays information about the time consumed by each thread.
 
 ```dbgcmd
 !runaway [Flags]
 ```
 
-## <span id="ddk__runaway_dbg"></span><span id="DDK__RUNAWAY_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______Flags______"></span><span id="_______flags______"></span><span id="_______FLAGS______"></span> *Flags*   
 Specifies the kind of information to be displayed. *Flags* can be any combination of the following bits. The default value is 0x1.
@@ -38,32 +36,14 @@ Causes the debugger to show the amount of time that has elapsed since each threa
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p></p>
 Uext.dll
-Ntsdexts.dll</td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p></p>
-Uext.dll
-Ntsdexts.dll</td>
-</tr>
-</tbody>
-</table>
 
- 
+Ntsdexts.dll
+
+## Additional Information
 
 The **!runaway** extension can only be used during live debugging or when debugging crash dump files created by [**.dump /mt**](-dump--create-dump-file-.md) or **.dump /ma**.
 
-### Additional Information
 
 For information about threads in user mode, see [Controlling Processes and Threads](../debugger/controlling-processes-and-threads.md). For more information about analyzing processes and threads, see *Microsoft Windows Internals* by Mark Russinovich and David Solomon. 
 
@@ -93,12 +73,3 @@ Here is an example:
  0:55c        0:00:43.0533
  1:1a4        0:00:25.0876
 ```
-
- 
-
- 
-
-
-
-
-

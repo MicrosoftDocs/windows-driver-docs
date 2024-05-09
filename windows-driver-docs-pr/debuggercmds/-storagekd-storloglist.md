@@ -1,7 +1,7 @@
 ---
-title: storagekd.storloglist
-description: The storagekd.storloglist extension displays the Storport adapter’s internal log entries.
-keywords: ["storagekd.storloglist Windows Debugging"]
+title: "!storagekd.storloglist"
+description: "The !storagekd.storloglist extension displays the Storport adapter’s internal log entries."
+keywords: ["!storagekd.storloglist Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !storagekd.storloglist
 
-
 The **!storagekd.storloglist** extension displays the Storport adapter’s internal log entries.
 
 ```dbgcmd
@@ -22,7 +21,6 @@ The **!storagekd.storloglist** extension displays the Storport adapter’s inter
 ```
 
 ## Parameters
-
 
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the address of a Storport adapter device extension or device object.
@@ -38,20 +36,7 @@ Count of entries to be displayed. If not specified, a value of 50 is used.
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 8 and later</strong></p></td>
-<td align="left"><p>Storagekd.dll</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+Storagekd.dll
 
 ## Remarks
 
@@ -74,12 +59,3 @@ Storport RaidLogList
     [6]_[23:04:20.646] SpPauseDevice......... Caller: iaStorAV!RpiPauseDevice+0x67 (fffff800`fb70554f), P/T/L: 3/0/0, Timeout: 180, Adapter: 0xffffe0010f5e01a0
     [7]_[23:04:20.646] PauseDevice........... Caller: storport!StorPortPauseDevice+0x2f6 (fffff800`fb4b52d6), P/P/T/L: 0/3/0/0, Pause count: 1
 ```
-
- 
-
- 
-
-
-
-
-

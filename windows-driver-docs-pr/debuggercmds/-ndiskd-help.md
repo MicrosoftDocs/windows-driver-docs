@@ -1,7 +1,7 @@
 ---
-title: ndiskd.help
-description: The ndiskd.help command displays a list of available ndiskd commands with a brief description of each one.
-keywords: ["ndiskd.help Windows Debugging"]
+title: "!ndiskd.help"
+description: "The !ndiskd.help command displays a list of available ndiskd commands with a brief description of each one."
+keywords: ["!ndiskd.help Windows Debugging"]
 ms.date: 06/15/2020
 topic_type:
 - apiref
@@ -125,3 +125,4 @@ NDIS KD EXTENSIONS
 [Debugging the Network Stack](/shows/defrag-tools/175-debugging-network-stack)
 
 [**NDIS extensions (Ndiskd.dll)**](ndis-extensions--ndiskd-dll-.md)
+

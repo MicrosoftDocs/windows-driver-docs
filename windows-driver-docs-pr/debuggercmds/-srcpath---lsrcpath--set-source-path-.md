@@ -1,6 +1,6 @@
 ---
-title: .srcpath, .lsrcpath (Set Source Path)
-description: The .srcpath and .lsrcpath commands set or display the source file search path.
+title: ".srcpath, .lsrcpath (Set Source Path)"
+description: "The .srcpath and .lsrcpath commands set or display the source file search path."
 keywords: [".srcpath, .lsrcpath (Set Source Path) Windows Debugging"]
 ms.date: 11/05/2020
 topic_type:
@@ -14,7 +14,6 @@ api_type:
 
 # .srcpath, .lsrcpath (Set Source Path)
 
-
 The **.srcpath** and **.lsrcpath** commands set or display the source file search path.
 
 ```dbgcmd
@@ -22,8 +21,7 @@ The **.srcpath** and **.lsrcpath** commands set or display the source file searc
 .lsrcpath[+] [Directory [; ...]] 
 ```
 
-## <span id="ddk_meta_set_source_path_dbg"></span><span id="DDK_META_SET_SOURCE_PATH_DBG"></span>Parameters
-
+## Parameters
 
 <span id="______________"></span> **+**   
 Specifies that the new directories will be appended to (rather than replacing) the previous source file search path.
@@ -31,7 +29,7 @@ Specifies that the new directories will be appended to (rather than replacing) t
 <span id="_______Directory______"></span><span id="_______directory______"></span><span id="_______DIRECTORY______"></span> *Directory*   
 Specifies one or more directories to put in the search path. If *Directory* is not specified, the current path is displayed. Separate multiple directories with semicolons.
 
-### Environment
+## Environment
 
 The **.srcpath** command is available on all debuggers. The **.lsrcpath** command is available only in WinDbg and cannot be used in script files.
 
@@ -41,9 +39,7 @@ The **.srcpath** command is available on all debuggers. The **.lsrcpath** comman
 |Targets |Live, crash dump      |
 |Platforms|All                  |
 
- 
-
-### Additional Information
+## Additional Information
 
 For details and other ways to change this path, see [Source Path](../debugger/source-path.md). For more information about commands that can be used while performing remote debugging through the debugger, see [Controlling a Remote Debugging Session](../debugger/controlling-a-remote-debugging-session.md).
 
@@ -55,12 +51,3 @@ For details and other ways to change this path, see [Source Path](../debugger/so
 If you include `srv*` in your source path, the debugger uses [SrcSrv](../debugger/srcsrv.md) to retrieve source files from locations specified in the target modules' symbol files. For more information about using srv\* in a source path, see [Using a Source Server](../debugger/using-a-source-server.md) and [**.srcfix**](-srcfix---lsrcfix--use-source-server-.md).
 
 When this command is issued from a debugging client, **.srcpath** sets the source path on the debugging server, while **.lsrcpath** sets the source path on the local machine.
-
- 
-
- 
-
-
-
-
-

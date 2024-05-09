@@ -1,6 +1,6 @@
 ---
-title: General Extensions
-description: General Extensions
+title: "General Extensions"
+description: "General Extensions"
 keywords: ["extension commands ( commands), general extensions", "exts.dll (general extensions)", "dbghelp.dll (general extensions)", "general extensions (exts.dll - dbghelp.dll)"]
 ms.date: 05/23/2017
 ---
@@ -18,12 +18,4 @@ The debugger automatically loads the proper version of these extension commands.
 Each extension command reference topics lists the DLLs that expose that command. Use the following rules to determine the proper directory to load this extension DLL from:
 
 -   If your target computer is running Microsoft Windows XP or a later version of Windows, use winxp\\kdexts.dll, winxp\\ntsdexts.dll, winxp\\exts.dll, winext\\ext.dll, or dbghelp.dll.
-
- 
-
- 
-
-
-
-
 

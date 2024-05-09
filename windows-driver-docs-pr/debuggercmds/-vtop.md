@@ -1,7 +1,7 @@
 ---
-title: vtop (WinDbg)
-description: The vtop extension converts a virtual address to the corresponding physical address, and displays other page table and page directory information.
-keywords: ["vtop Windows Debugging"]
+title: "!vtop (WinDbg)"
+description: "The !vtop extension converts a virtual address to the corresponding physical address, and displays other page table and page directory information."
+keywords: ["!vtop Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !vtop
 
-
 The **!vtop** extension converts a virtual address to the corresponding physical address, and displays other page table and page directory information.
 
 Syntax
@@ -24,8 +23,7 @@ Syntax
 !vtop 0 VirtualAddress 
 ```
 
-## <span id="ddk__vtop_dbg"></span><span id="DDK__VTOP_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______DirBase______"></span><span id="_______dirbase______"></span><span id="_______DIRBASE______"></span> *DirBase*   
 Specifies the directory base for the process. Each process has its own virtual address space. Use the [**!process**](-process.md) extension to determine the directory base for a process.
@@ -43,7 +41,7 @@ Specifies the virtual address whose page is desired.
 
 Kdexts.dll
 
-### Additional Information
+## Additional Information
 
 For other methods of achieving these results, see [Converting Virtual Addresses to Physical Addresses](../debugger/converting-virtual-addresses-to-physical-addresses.md). Also see [**!ptov**](-ptov.md). For information about page tables and page directories, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
 
@@ -87,12 +85,3 @@ Pdi 0 Pti 12f
 ```
 
 However, it is better to always use the PFN, because some directory base values will not be converted in this manner.
-
- 
-
- 
-
-
-
-
-

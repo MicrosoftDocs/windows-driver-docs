@@ -1,7 +1,7 @@
 ---
-title: ndiskd.nbllog
-description: The ndiskd.nbllog extension displays the log of all NBL (NET_BUFFER_LIST) activity on the system.
-keywords: ["ndiskd.nbllog Windows Debugging"]
+title: "!ndiskd.nbllog"
+description: "The !ndiskd.nbllog extension displays the log of all NBL (NET_BUFFER_LIST) activity on the system."
+keywords: ["!ndiskd.nbllog Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -95,7 +95,7 @@ After you have enabled NBL tracking on the target debugee machine, enter the **!
 
 For a more detailed description of how to interpret the results of **!ndiskd.nbllog**, see [!ndiskd.nbl -log](/archive/blogs/ndis/ndiskd-nbl-log) on the NDIS blog.
 
-## <span id="see_also"></span>See also
+## See also
 
 [Network Driver Design Guide](../network/index.md)
 
@@ -112,4 +112,5 @@ For a more detailed description of how to interpret the results of **!ndiskd.nbl
 [!ndiskd.nbl -log](/archive/blogs/ndis/ndiskd-nbl-log)
 
  
+
 

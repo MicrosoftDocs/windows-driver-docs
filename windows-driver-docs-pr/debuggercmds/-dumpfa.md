@@ -1,7 +1,7 @@
 ---
-title: dumpfa (WinDbg)
-description: The dumpfa extension displays the contents of a failure analysis entry.
-keywords: ["failure analysis entries, display", "failure analysis entries", "dumpfa Windows Debugging"]
+title: "!dumpfa (WinDbg)"
+description: "The !dumpfa extension displays the contents of a failure analysis entry."
+keywords: ["failure analysis entries, display", "failure analysis entries", "!dumpfa Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -29,22 +29,10 @@ Specifies the address of the failure analysis entry that is displayed.
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Ext.dll</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Ext.dll</p></td>
-</tr>
-</tbody>
-</table>
+
+Ext.dll
+
+
 
  
 
@@ -77,12 +65,4 @@ Type =      DEBUG_FLR_IMAGE_TIMESTAMP 80000002 - Size = 8
 ```
 
 You can also use the [**!asd**](-asd.md) extension to debug the [**!analyze**](-analyze.md) extension.
-
- 
-
- 
-
-
-
-
 

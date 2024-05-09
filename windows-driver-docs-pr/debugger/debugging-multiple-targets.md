@@ -58,7 +58,7 @@ To  work with three dump files at the same time, you can use the -z option to lo
 windbg -z c:\notepad.dmp -z c:\paint.dmp -z c:\calc.dmp
 ```
 
-For more infomation see [WinDbg Command-Line Options](windbg-command-line-options.md). You can also use the [.opendump](../debuggercmds/-opendump--open-dump-file-.md)  and the [**g (Go)**](../debuggercmds/g--go-.md) commands to load additional dump files in the debugger. 
+For more information see [WinDbg Command-Line Options](windbg-command-line-options.md). You can also use the [.opendump](../debuggercmds/-opendump--open-dump-file-.md)  and the [**g (Go)**](../debuggercmds/g--go-.md) commands to load additional dump files in the debugger. 
 
 Use the  [|| (System Status)](../debuggercmds/----system-status-.md) command to confirm that all three systems are present.
 

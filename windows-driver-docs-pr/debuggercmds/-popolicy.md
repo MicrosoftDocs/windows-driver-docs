@@ -1,7 +1,7 @@
 ---
-title: popolicy (WinDbg)
-description: The popolicy extension displays the power policy of the target computer.
-keywords: ["popolicy Windows Debugging"]
+title: "!popolicy (WinDbg)"
+description: "The !popolicy extension displays the power policy of the target computer."
+keywords: ["!popolicy Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,41 +14,22 @@ api_type:
 
 # !popolicy
 
-
 The **!popolicy** extension displays the power policy of the target computer.
 
 ```dbgcmd
 !popolicy [Address]
 ```
 
-## <span id="ddk__popolicy_dbg"></span><span id="DDK__POPOLICY_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the address of the power policy structure to display. If this is omitted, then nt!PopPolicy is displayed.
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Windows 2000</p></td>
-<td align="left"><p>Kdextx86.dll</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Windows XP and later</p></td>
-<td align="left"><p>Kdexts.dll</p></td>
-</tr>
-</tbody>
-</table>
+Kdexts.dll
 
- 
-
-### Additional Information
+## Additional Information
 
 To view the system's power capabilities, use the [**!pocaps**](-pocaps.md) extension command. For information about power capabilities and power policy, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
 
@@ -74,17 +55,6 @@ SYSTEM_POWER_POLICY (R.1) @ 0x80164d58
   MinThrottle:             0%
 ```
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [Plug and Play and Power Debugger Commands](../debugger/plug-and-play-and-power-debugger-commands.md)
-
- 
-
- 
-
-
-
-
-
-

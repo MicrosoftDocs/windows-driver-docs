@@ -1,7 +1,7 @@
 ---
-title: usb3kd.xhci_eventring
-description: The usb3kd.xhci_eventring extension displays information about the event ring data structure associated with a USB 3.0 host controller.
-keywords: ["usb3kd.xhci_eventring Windows Debugging"]
+title: "!usb3kd.xhci_eventring"
+description: "The !usb3kd.xhci_eventring extension displays information about the event ring data structure associated with a USB 3.0 host controller."
+keywords: ["!usb3kd.xhci_eventring Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,21 +14,18 @@ api_type:
 
 # !usb3kd.xhci\_eventring
 
-
 The [**!usb3kd.xhci\_eventring**](-usb3kd-device-info.md) extension displays information about the event ring data structure associated with a USB 3.0 host controller.
 
 ```dbgcmd
 !usb3kd.xhci_eventring DeviceExtension
 ```
 
-## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______DeviceExtension______"></span><span id="_______deviceextension______"></span><span id="_______DEVICEEXTENSION______"></span> *DeviceExtension*   
 Address of the device extension for the host controller's functional device object (FDO).
 
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Usb3kd.dll
 
@@ -91,14 +88,10 @@ Now you can pass the address of the device extension to the **!xhci\_eventring**
         [216] TRANSFER_EVENT      0xfffffa8005373d80 CycleBit 0 SlotId  2 EndpointID  3 EventData 1 Pointer 0xfffffa8005a3d850 CC_SHORT_PACKET
 ```
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [USB 3.0 Extensions](usb-3-extensions.md)
 
 [**!xhci\_dumpall**](-usb3kd-xhci-dumpall.md)
 
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
-
- 
-

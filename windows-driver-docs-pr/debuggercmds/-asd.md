@@ -1,7 +1,7 @@
 ---
-title: asd (WinDbg)
-description: The asd extension displays a specified number of failure analysis entries from the data cache, starting at the specified address.
-keywords: ["failure analysis entries, display from data cache", "asd Windows Debugging"]
+title: "!asd (WinDbg)"
+description: "The !asd extension displays a specified number of failure analysis entries from the data cache, starting at the specified address."
+keywords: ["failure analysis entries, display from data cache", "!asd Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
 - apiref
@@ -32,38 +32,18 @@ Determines the number of tokens to display.
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Ext.dll</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Ext.dll</p></td>
-</tr>
-</tbody>
-</table>
+
+Ext.dll
+
+
 
  
 
-### Additional Information
+## Additional Information
 
 You can use the [**!dumpfa**](-dumpfa.md) extension to debug the [**!analyze**](-analyze.md) extension.
 
 ## Remarks
 
 The **!asd** extension is useful only when you are debugging the [**!analyze**](-analyze.md) extension.
-
- 
-
- 
-
-
-
-
 

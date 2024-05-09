@@ -1,20 +1,15 @@
 ---
-title: time (WinDbg)
-description: time
-keywords: ["time extension (obsolete)"]
+title: "!time (WinDbg)"
+description: "!time"
+keywords: ["!time extension (obsolete)"]
 ms.date: 06/11/2021
 ---
 
 # !time
 
-
-## <span id="ddk__time_dbg"></span><span id="DDK__TIME_DBG"></span>
-
-
 The **!time** extension command displays information about the system time and interrupt time and can operate on explicit time stamps and the current time.
 
-### Environment
-
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -42,11 +37,3 @@ Interrupt:            0000020e`22112c46 (2 days, 14:46:12.434)
 [.echotimestamps (Show Time Stamps)](-echotimestamps--show-time-stamps-.md)
 
 [!runaway](-runaway.md)
- 
-
- 
-
-
-
-
-

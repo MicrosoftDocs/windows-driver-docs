@@ -1,7 +1,7 @@
 ---
-title: wudfext.wudffile
-description: The wudfext.wudffile extension displays information about a framework file.
-keywords: ["wudfext.wudffile Windows Debugging"]
+title: "!wudfext.wudffile"
+description: "The !wudfext.wudffile extension displays information about a framework file."
+keywords: ["!wudfext.wudffile Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !wudfext.wudffile
 
-
 The **!wudfext.wudffile** extension displays information about a framework file.
 
 ```dbgcmd
@@ -22,7 +21,6 @@ The **!wudfext.wudffile** extension displays information about a framework file.
 ```
 
 ## Parameters
-
 
 <span id="_______pWDFFile______"></span><span id="_______pwdffile______"></span><span id="_______PWDFFILE______"></span> *pWDFFile*   
 Specifies the address of the **IWDFFile** interface to display information about.
@@ -32,34 +30,8 @@ Optional. Specifies the type of the interface (for example, **IWDFDevice**). If 
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Unavailable</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP with UMDF version 1.7 and later</strong></p></td>
-<td align="left"><p>Wudfext.dll</p></td>
-</tr>
-</tbody>
-</table>
+Wudfext.dll
 
- 
-
-### Additional Information
+## Additional Information
 
 For more information, see [User-Mode Driver Framework Debugging](../debugger/user-mode-driver-framework-debugging.md).
-
- 
-
- 
-
-
-
-
-

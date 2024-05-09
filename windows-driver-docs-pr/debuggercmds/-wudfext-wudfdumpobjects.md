@@ -1,7 +1,7 @@
 ---
-title: wudfext.wudfdumpobjects
-description: The wudfext.wudfdumpobjects extension displays outstanding UMDF objects.
-keywords: ["wudfext.wudfdumpobjects Windows Debugging"]
+title: "!wudfext.wudfdumpobjects"
+description: "The !wudfext.wudfdumpobjects extension displays outstanding UMDF objects."
+keywords: ["!wudfext.wudfdumpobjects Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !wudfext.wudfdumpobjects
 
-
 The **!wudfext.wudfdumpobjects** extension displays outstanding UMDF objects.
 
 ```dbgcmd
@@ -23,32 +22,14 @@ The **!wudfext.wudfdumpobjects** extension displays outstanding UMDF objects.
 
 ## Parameters
 
-
 <span id="_______ObjTrackerAddress______"></span><span id="_______objtrackeraddress______"></span><span id="_______OBJTRACKERADDRESS______"></span> *ObjTrackerAddress*   
 Specifies the address to track leaked objects. This address is displayed in the driver-stop message in the debugger when a leak occurs.
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Unavailable</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP with UMDF version 1.7 and later</strong></p></td>
-<td align="left"><p>Wudfext.dll</p></td>
-</tr>
-</tbody>
-</table>
+Wudfext.dll
 
- 
-
-### Additional Information
+## Additional Information
 
 For more information, see [User-Mode Driver Framework Debugging](../debugger/user-mode-driver-framework-debugging.md).
 
@@ -106,12 +87,3 @@ WdfTypeRequest Object: 0x030eaef8, Interface: 0x030eaf38
 WdfTypeMemoryObject    Object: 0x030ecfb0, Interface: 0x030ecff0
 WdfTypeMemoryObject    Object: 0x030eefb0, Interface: 0x030eeff0
 ```
-
- 
-
- 
-
-
-
-
-

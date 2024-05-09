@@ -1,7 +1,7 @@
 ---
-title: bthkd.bthinfo
-description: The bthkd.bthinfo command displays details about the BTHPORT FDO. This command is a good starting point for Bluetooth investigations.
-keywords: ["bthkd.bthinfo Windows Debugging"]
+title: "!bthkd.bthinfo"
+description: "The !bthkd.bthinfo command displays details about the BTHPORT FDO. This command is a good starting point for Bluetooth investigations."
+keywords: ["!bthkd.bthinfo Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -21,22 +21,14 @@ The **!bthkd.bthinfo** command displays details about the BTHPORT FDO. This comm
 !bthkd.bthinfo 
 ```
 
-## <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 
 Bthkd.dll
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [Bluetooth Extensions (Bthkd.dll)](bluetooh-extensions--bthkd-dll-.md)
-
- 
-
- 
-
-
-
-
 
 

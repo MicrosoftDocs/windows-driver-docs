@@ -1,7 +1,7 @@
 ---
-title: ndiskd.netrb
-description: The ndiskd.netrb extension displays information about a NET_RING structure.
-keywords: ["ndiskd.netrb Windows Debugging"]
+title: "!ndiskd.netrb"
+description: "The !ndiskd.netrb extension displays information about a NET_RING structure."
+keywords: ["!ndiskd.netrb Windows Debugging"]
 ms.date: 06/17/2020
 topic_type:
 - apiref
@@ -132,3 +132,4 @@ To see this NET\_RING\_BUFFER's elements, either click the "List all elements" l
 [**!ndiskd.cxadapter**](-ndiskd-cxadapter.md)
 
 [**!ndiskd.netqueue**](-ndiskd-netqueue.md)
+

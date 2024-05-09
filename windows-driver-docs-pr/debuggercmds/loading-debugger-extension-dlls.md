@@ -1,6 +1,6 @@
 ---
-title: Loading Debugger Extension DLLs
-description: Loading Debugger Extension DLLs
+title: "Loading Debugger Extension DLLs"
+description: "Loading Debugger Extension DLLs"
 keywords: ["extension commands ( commands), loading", "loading extension commands", "nt4fre directory", "nt4chk directory", "w2kfre directory", "w2kchk directory", "winxp directory", "winext directory"]
 ms.date: 05/23/2017
 ---
@@ -42,12 +42,4 @@ The extension DLLs that you are using must match the operating system of the tar
 If you write your own debugger extensions, you can place them in any directory. However, it is advised that you place them in a new directory and add that directory to the debugger extension path.
 
 There can be as many as 32 extension DLLs loaded.
-
- 
-
- 
-
-
-
-
 

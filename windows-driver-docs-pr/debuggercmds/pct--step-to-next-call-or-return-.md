@@ -1,6 +1,6 @@
 ---
-title: pct (Step to Next Call or Return)
-description: The pct command executes the program until it reaches a call instruction or a return instruction.
+title: "pct (Step to Next Call or Return)"
+description: "The pct command executes the program until it reaches a call instruction or a return instruction."
 keywords: ["pct (Step to Next Call or Return) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -46,7 +46,7 @@ Specifies the address where the debugger begins execution. Otherwise, the debugg
 <span id="_______Count______"></span><span id="_______count______"></span><span id="_______COUNT______"></span> *Count*   
 Specifies the number of **call** or **return** instructions that must be encountered for this command to stop. The default value is one.
 
-### Environment
+## Environment
 
 |  Item       | Description               |
 |-----------|------------------------|
@@ -56,7 +56,7 @@ Specifies the number of **call** or **return** instructions that must be encount
 
  
 
-### Additional Information
+## Additional Information
 
 For more information about related commands, see [Controlling the Target](../debugger/controlling-the-target.md).
 
@@ -67,12 +67,4 @@ The **pct** command causes the target to begin executing. This execution continu
 If the program counter is already on a **call** or **return** instruction, the entire call or return is executed. After this call or return is returned, execution continues until another **call** or **return** is reached. This execution, rather than tracing, of the call is the only difference between **pct** and [**tct (Trace to Next Call or Return)**](tct--trace-to-next-call-or-return-.md).
 
 In source mode, you can associate one source line with multiple assembly instructions. The **pct** command does not stop at a **call** or **return** instruction that is associated with the current source line.
-
- 
-
- 
-
-
-
-
 

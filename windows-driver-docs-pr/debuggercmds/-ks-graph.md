@@ -1,7 +1,7 @@
 ---
-title: ks.graph (WinDbg)
-description: The ks.graph extension command displays a textual description of the kernel mode graph in topologically sorted order.
-keywords: ["ks.graph Windows Debugging"]
+title: "!ks.graph (WinDbg)"
+description: "The !ks.graph extension command displays a textual description of the kernel mode graph in topologically sorted order."
+keywords: ["!ks.graph Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -63,7 +63,7 @@ Analyze a stalled graph for suspect filters.
 
  
 
-### Additional Information
+## Additional Information
 
 For more information, see [Kernel Streaming Debugging](../debugger/kernel-streaming-debugging.md).
 
@@ -85,12 +85,4 @@ Graph With Starting Point 829493c4:
     Output Factory 0 [Video/General Capture]:
         Pin 8293f4f0 (File 82503498) Irps(q/p) = 2, 0
 ```
-
- 
-
- 
-
-
-
-
 

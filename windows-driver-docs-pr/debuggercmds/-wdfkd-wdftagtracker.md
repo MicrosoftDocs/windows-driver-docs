@@ -1,7 +1,7 @@
 ---
-title: wdfkd.wdftagtracker
-description: The wdfkd.wdftagtracker extension displays all available tag information (including tag value, line, file, and time) for a specified tag tracker.
-keywords: ["wdfkd.wdftagtracker Windows Debugging"]
+title: "!wdfkd.wdftagtracker"
+description: "The !wdfkd.wdftagtracker extension displays all available tag information (including tag value, line, file, and time) for a specified tag tracker."
+keywords: ["!wdfkd.wdftagtracker Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !wdfkd.wdftagtracker
 
-
 The **!wdfkd.wdftagtracker** extension displays all available tag information (including tag value, line, file, and time) for a specified tag tracker.
 
 ```dbgcmd
@@ -22,7 +21,6 @@ The **!wdfkd.wdftagtracker** extension displays all available tag information (i
 ```
 
 ## Parameters
-
 
 <span id="_______TagObjectPointer______"></span><span id="_______tagobjectpointer______"></span><span id="_______TAGOBJECTPOINTER______"></span> *TagObjectPointer*   
 A pointer to a tag tracker.
@@ -40,11 +38,11 @@ Displays the line number of the object in hexadecimal instead of decimal.
 
 Wdfkd.dll
 
-### <span id="Frameworks"></span><span id="frameworks"></span><span id="FRAMEWORKS"></span>Frameworks
+### Frameworks
 
 KMDF 1, UMDF 2
 
-### Additional Information
+## Additional Information
 
 For more information, see [Kernel-Mode Driver Framework Debugging](../debugger/kernel-mode-driver-framework-debugging.md).
 
@@ -63,12 +61,3 @@ TrackHandles: MULTI_SZ: WDFDEVICE WDFQUEUE
 ```
 
 When you enable handle tracking for an object type, the framework tracks the references that are taken on any object of that type. This setting is useful in finding driver memory leaks that unreleased references cause. **TrackHandles** works only if the KMDF verifier is enabled.
-
- 
-
- 
-
-
-
-
-

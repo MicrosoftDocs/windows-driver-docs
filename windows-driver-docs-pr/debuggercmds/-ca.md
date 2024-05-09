@@ -1,7 +1,7 @@
 ---
-title: ca (WinDbg)
-description: The ca extension displays information about a control area.
-keywords: ["control area", "ca Windows Debugging"]
+title: "!ca (WinDbg)"
+description: "The !ca extension displays information about a control area."
+keywords: ["control area", "!ca Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -83,7 +83,7 @@ Kdexts.dll
 
  
 
-### Additional Information
+## Additional Information
 
 For information about control areas, see *Microsoft Windows Internals* by Mark Russinovich and David Solomon. 
 
@@ -169,12 +169,4 @@ Subsection 5. @ ff8637a0
    Flags              15  Sector Offset          0 Protection           1
     ReadOnly CopyOnWrite 
 ```
-
- 
-
- 
-
-
-
-
 

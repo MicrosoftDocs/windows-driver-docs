@@ -1,7 +1,7 @@
 ---
-title: wdfkd.wdfdmatransaction
-description: The wdfkd.wdfdmatransaction extension displays information about a WDF direct memory access (DMA) transaction object.
-keywords: ["wdfkd.wdfdmatransaction Windows Debugging"]
+title: "!wdfkd.wdfdmatransaction"
+description: "The !wdfkd.wdfdmatransaction extension displays information about a WDF direct memory access (DMA) transaction object."
+keywords: ["!wdfkd.wdfdmatransaction Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !wdfkd.wdfdmatransaction
 
-
 The **!wdfkd.wdfdmatransaction** extension displays information about a WDF direct memory access (DMA) transaction object.
 
 ```dbgcmd
@@ -23,7 +22,6 @@ The **!wdfkd.wdfdmatransaction** extension displays information about a WDF dire
 
 ## Parameters
 
-
 <span id="_______Handle______"></span><span id="_______handle______"></span><span id="_______HANDLE______"></span> *Handle*   
 A handle to a framework DMA transaction object (WDFDMATRANSACTION).
 
@@ -31,19 +29,10 @@ A handle to a framework DMA transaction object (WDFDMATRANSACTION).
 
 Wdfkd.dll
 
-### <span id="Frameworks"></span><span id="frameworks"></span><span id="FRAMEWORKS"></span>Frameworks
+### Frameworks
 
 KMDF 1
 
-### Additional Information
+## Additional Information
 
 For more information, see [Kernel-Mode Driver Framework Debugging](../debugger/kernel-mode-driver-framework-debugging.md).
-
- 
-
- 
-
-
-
-
-

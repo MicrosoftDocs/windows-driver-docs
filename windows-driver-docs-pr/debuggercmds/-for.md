@@ -1,6 +1,6 @@
 ---
-title: .for (WinDbg)
-description: The .for token behaves like the for keyword in C, except that multiple increment commands must be separated by semicolons, not by commas.
+title: ".for (WinDbg)"
+description: "The .for token behaves like the for keyword in C, except that multiple increment commands must be separated by semicolons, not by commas."
 keywords: [".for Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -36,7 +36,7 @@ Specifies one or more commands that will be executed at the conclusion of each l
 <span id="_______Commands______"></span><span id="_______commands______"></span><span id="_______COMMANDS______"></span> *Commands*   
 Specifies one or more commands that will be executed repeatedly as long as the condition is true. This block of commands needs to be enclosed in braces, even if it consists of a single command. Multiple commands should be separated by semicolons, but the final command before the closing brace does not need to be followed by a semicolon.
 
-### Additional Information
+## Additional Information
 
 For information about other control flow tokens and their use in debugger command programs, see [Using Debugger Command Programs](../debugger/using-debugger-command-programs.md).
 
@@ -53,4 +53,5 @@ Here is an example of a **.for** statement with multiple increment commands:
 The [**.break**](https://support.microsoft.com/help/833721/available-switch-options-for-the-windows-xp-and-the-windows-server-200) and [**.continue**](-continue.md) tokens can be used to exit or restart the *Commands* block.
 
  
+
 

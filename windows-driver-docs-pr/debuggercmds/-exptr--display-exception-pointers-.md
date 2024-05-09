@@ -1,6 +1,6 @@
 ---
-title: .exptr (Display Exception Pointers)
-description: The .exptr command displays an EXCEPTION_POINTERS structure.
+title: ".exptr (Display Exception Pointers)"
+description: "The .exptr command displays an EXCEPTION_POINTERS structure."
 keywords: [".exptr (Display Exception Pointers) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -27,7 +27,7 @@ The **.exptr** command displays an EXCEPTION\_POINTERS structure.
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the address of the EXCEPTION\_POINTERS structure.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -36,12 +36,4 @@ Specifies the address of the EXCEPTION\_POINTERS structure.
 |Platforms|All                  |
 
  
-
- 
-
- 
-
-
-
-
 

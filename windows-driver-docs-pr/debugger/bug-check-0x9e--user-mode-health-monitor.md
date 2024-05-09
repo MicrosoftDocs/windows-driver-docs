@@ -64,7 +64,7 @@ The USER\_MODE\_HEALTH\_MONITOR bug check has a value of 0x0000009E. This bug ch
       User mode watchdog has expired and created netft watchdog
       to bugchecked the node.
        0xA : WatchdogSourceClussvcIsAlive
-      Cluster service sends heartbeat to netft every 500 millseconds.
+      Cluster service sends heartbeat to netft every 500 milliseconds.
       By default, netft expects at least 1 heartbeat per second.
       If this watchdog was triggered that means clussvc is not getting
       CPU to send heartbeats.

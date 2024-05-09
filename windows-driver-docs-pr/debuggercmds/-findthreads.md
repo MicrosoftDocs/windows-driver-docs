@@ -1,7 +1,7 @@
 ---
-title: findthreads
-description: The findthreads extension displays summary information about one or more threads on the target system based on supplied search criteria.
-keywords: ["findthreads Windows Debugging"]
+title: "!findthreads"
+description: "The !findthreads extension displays summary information about one or more threads on the target system based on supplied search criteria."
+keywords: ["!findthreads Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,17 +14,15 @@ api_type:
 
 # !findthreads
 
-
 The !findthreads extension displays summary information about one or more threads on the target system based on supplied search criteria. Thread information will be displayed when the associated stack(s) reference the supplied object. This command can be used only during kernel-mode debugging.
 
-Syntax
+## Syntax
 
 ```dbgcmd
 !findthreads [-v][-t  <Thread Address>|-i <IRP Address>|-d <Device Address>|( -a <Pointer Address> -e <End Address> | -l <Range Length>)] 
 ```
 
-## <span id="ddk__thread_dbg"></span><span id="DDK__THREAD_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______-v______"></span><span id="_______-V______"></span> **-v**   
 Displays verbose information on all criteria matches.
@@ -49,22 +47,11 @@ Specifies the length of the memory range specified with -a.
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 10 and later</strong></p></td>
-<td align="left"><p>Kdexts.dll</p></td>
-</tr>
-</tbody>
-</table>
+Windows 10 and later
 
- 
+Kdexts.dll
 
-### Additional Information
+## Additional Information
 
 For information about threads in kernel mode, see [Changing Contexts](../debugger/changing-contexts.md). For more information about analyzing processes and threads, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon. 
 
@@ -102,12 +89,3 @@ Found 6 criteria matches for THREAD 0xffffe0016a383740, PROCESS 0xffffe0016a2202
     000000c8d220fa98 ntdll!ZwWaitForMultipleObjects+a
 ... 
 ```
-
- 
-
- 
-
-
-
-
-

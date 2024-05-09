@@ -1,7 +1,7 @@
 ---
-title: owner (WinDbg)
-description: The owner extension displays the owner of a module or function.
-keywords: ["owner Windows Debugging"]
+title: "!owner (WinDbg)"
+description: "The !owner extension displays the owner of a module or function."
+keywords: ["!owner Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -32,22 +32,10 @@ Specifies the symbol within *Module* whose owner is desired. An asterisk (\*) at
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Ext.dll</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Ext.dll</p></td>
-</tr>
-</tbody>
-</table>
+
+Ext.dll
+
+
 
  
 
@@ -60,12 +48,4 @@ When you pass a module or function name to the **!owner** extension, the debugge
 For this extension to display useful information, you must first create a triage.ini file containing the names of the module and function owners.
 
 For details on the triage.ini file and an example of the **!owner** extension, see [Specifying Module and Function Owners](../debugger/specifying-module-and-function-owners.md).
-
- 
-
- 
-
-
-
-
 

@@ -26,7 +26,7 @@ During a user's session, a crash in the graphics driver binary may cause the mac
 
 The measure aggregates telemetry from a 7-day sliding window into a myriad of distinct machines with discrete GPU that experienced a TDR caused by a crash in the graphics driver binary.
 
-1. Machines that experieced a TDR = count(machines having discrete GPU with the driver that experienced a TDR)
+1. Machines that experienced a TDR = count(machines having discrete GPU with the driver that experienced a TDR)
 1. Total machines = count(machines with discrete GPU having the driver)
 1. Ratio of machines that experienced a TDR = Machines that experienced a TDR / Total machines
 

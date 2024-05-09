@@ -1,7 +1,7 @@
 ---
-title: wdfkd.wdfpoolusage
-description: The wdfkd.wdfpoolusage extension displays pool usage information for a specified driver, if the Kernel-Mode Driver Framework (KMDF) verifier is enabled for the driver.
-keywords: ["wdfkd.wdfpoolusage Windows Debugging"]
+title: "!wdfkd.wdfpoolusage"
+description: "The !wdfkd.wdfpoolusage extension displays pool usage information for a specified driver, if the Kernel-Mode Driver Framework (KMDF) verifier is enabled for the driver."
+keywords: ["!wdfkd.wdfpoolusage Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !wdfkd.wdfpoolusage
 
-
 The **!wdfkd.wdfpoolusage** extension displays pool usage information for a specified driver, if the Kernel-Mode Driver Framework (KMDF) verifier is enabled for the driver.
 
 ```dbgcmd
@@ -22,7 +21,6 @@ The **!wdfkd.wdfpoolusage** extension displays pool usage information for a spec
 ```
 
 ## Parameters
-
 
 <span id="_______DriverName______"></span><span id="_______drivername______"></span><span id="_______DRIVERNAME______"></span> *DriverName*   
 Optional. The name of a driver. *DriverName* must not include the .sys file name extension.
@@ -46,11 +44,11 @@ Displays the caller of each pool entry.
 
 Wdfkd.dll
 
-### <span id="Frameworks"></span><span id="frameworks"></span><span id="FRAMEWORKS"></span>Frameworks
+### Frameworks
 
 KMDF 1, UMDF 2
 
-### Additional Information
+## Additional Information
 
 For more information, see [Kernel-Mode Driver Framework Debugging](../debugger/kernel-mode-driver-framework-debugging.md).
 
@@ -86,12 +84,4 @@ Size  512 Tag 'RawB'
 NonPaged (0x0)
 Caller:  Wdf01000!FxVerifierLock::AllocateThreadTable+5d
 ```
-
- 
-
- 
-
-
-
-
 

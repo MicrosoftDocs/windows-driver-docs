@@ -1,7 +1,7 @@
 ---
-title: wdfkd.wdfsettraceprefix
-description: The wdfkd.wdfsettraceprefix extension sets the trace prefix format string.
-keywords: ["wdfkd.wdfsettraceprefix Windows Debugging"]
+title: "!wdfkd.wdfsettraceprefix"
+description: "The !wdfkd.wdfsettraceprefix extension sets the trace prefix format string."
+keywords: ["!wdfkd.wdfsettraceprefix Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !wdfkd.wdfsettraceprefix
 
-
 The **!wdfkd.wdfsettraceprefix** extension sets the trace prefix format string.
 
 ```dbgcmd
@@ -23,7 +22,6 @@ The **!wdfkd.wdfsettraceprefix** extension sets the trace prefix format string.
 
 ## Parameters
 
-
 <span id="_______String______"></span><span id="_______string______"></span><span id="_______STRING______"></span> *String*   
 A trace prefix string.
 
@@ -31,11 +29,11 @@ A trace prefix string.
 
 Wdfkd.dll
 
-### <span id="Frameworks"></span><span id="frameworks"></span><span id="FRAMEWORKS"></span>Frameworks
+### Frameworks
 
 KMDF 1, UMDF 2
 
-### Additional Information
+## Additional Information
 
 For more information, see [Kernel-Mode Driver Framework Debugging](../debugger/kernel-mode-driver-framework-debugging.md).
 
@@ -44,12 +42,4 @@ For more information, see [Kernel-Mode Driver Framework Debugging](../debugger/k
 The trace prefix string is prepended to each trace message in the Kernel-Mode Driver Framework (KMDF) error log. The TRACE\_FORMAT\_PREFIX environment variable also controls the trace prefix string.
 
 The format of the trace prefix string is defined by the Microsoft Windows tracing tools. For more information about the format of this string and how to customize it, see the "Trace Message Prefix" topic in the Driver Development Tools section of the Windows Driver Kit (WDK).
-
- 
-
- 
-
-
-
-
 

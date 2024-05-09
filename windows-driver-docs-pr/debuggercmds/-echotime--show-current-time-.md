@@ -1,6 +1,6 @@
 ---
-title: .echotime (Show Current Time)
-description: The .echotime command displays the current time.
+title: ".echotime (Show Current Time)"
+description: "The .echotime command displays the current time."
 keywords: [".echotime (Show Current Time) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -24,7 +24,7 @@ The **.echotime** command displays the current time.
 ## <span id="ddk_meta_show_current_time_dbg"></span><span id="DDK_META_SHOW_CURRENT_TIME_DBG"></span>
 
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -48,6 +48,7 @@ The **.echotime** command displays the time to the computer that the debugger is
 [!runaway](-runaway.md)
  
  
+
 
 
 

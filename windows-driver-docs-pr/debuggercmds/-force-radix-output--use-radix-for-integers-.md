@@ -1,6 +1,6 @@
 ---
-title: .force_radix_output (Use Radix for Integers)
-description: The .force_radix_output command specifies whether integers are displayed in decimal format or in the default radix.
+title: ".force_radix_output (Use Radix for Integers)"
+description: "The .force_radix_output command specifies whether integers are displayed in decimal format or in the default radix."
 keywords: ["Use Radix for Integers (.force_radix_output) command", ".force_radix_output (Use Radix for Integers) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -31,7 +31,7 @@ Displays all integers (except for long integers) in decimal format. This is the 
 <span id="_______1______"></span> **1**   
 Displays all integers (except for long integers) in the default radix.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -50,12 +50,4 @@ In WinDbg, **.force\_radix\_output** also affects the display in the [Locals win
 The **.force\_radix\_output** command affects only the display of standard integers. To specify whether long integers are displayed in decimal format or the default radix, use the [**.enable\_long\_status (Enable Long Integer Display)**](-enable-long-status--enable-long-integer-display-.md) command.
 
 To change the default radix, use the [**n (Set Number Base)**](n--set-number-base-.md) command.
-
- 
-
- 
-
-
-
-
 

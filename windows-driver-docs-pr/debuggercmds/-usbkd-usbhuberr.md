@@ -1,7 +1,7 @@
 ---
-title: usbkd.usbhuberr
-description: The usbkd.usbhuberr command displays a USB hub error record.
-keywords: ["usbkd.usbhuberr Windows Debugging"]
+title: "!usbkd.usbhuberr"
+description: "The !usbkd.usbhuberr command displays a USB hub error record."
+keywords: ["!usbkd.usbhuberr Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,21 +14,18 @@ api_type:
 
 # !usbkd.usbhuberr
 
-
 The **!usbkd.usbhuberr** command displays a USB hub error record.
 
 ```dbgcmd
 !usbkd.usbhuberr StructAddr
 ```
 
-## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______StructAddr______"></span><span id="_______structaddr______"></span><span id="_______STRUCTADDR______"></span> *StructAddr*   
 Address of a **usbhub!\_HUB\_EXCEPTION\_RECORD** structure.
 
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Usbkd.dll
 
@@ -76,12 +73,8 @@ ExceptionList: !usblist ffffe000011f8498, EL [Empty]
 In the preceding output, `ffffe000011f8498` is the address of the exception list. If the exception list is not empty, it will contain addresses of **\_HUB\_EXCEPTION\_RECORD** structures.
 
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
-
- 
-

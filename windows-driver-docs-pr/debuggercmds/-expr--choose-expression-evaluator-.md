@@ -1,6 +1,6 @@
 ---
-title: .expr (Choose Expression Evaluator)
-description: The .expr command specifies the default expression evaluator.
+title: ".expr (Choose Expression Evaluator)"
+description: "The .expr command specifies the default expression evaluator."
 keywords: [".expr (Choose Expression Evaluator) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -36,7 +36,7 @@ Changes the default expression type to the C++ expression evaluator.
 <span id="________q______"></span><span id="________Q______"></span> **/q**   
 Displays the list of possible expression types.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -62,11 +62,4 @@ For more information about how to control which syntax is used, see [Evaluating 
 [MASM Numbers and Operators](masm-numbers-and-operators.md)
 
 [C++ Numbers and Operators](c---numbers-and-operators.md)
-
-
-
-
-
-
-
 

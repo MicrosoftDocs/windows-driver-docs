@@ -1,7 +1,7 @@
 ---
-title: ks.dump (WinDbg)
-description: The ks.dump extension displays the specified object.
-keywords: ["ks.dump Windows Debugging"]
+title: "!ks.dump (WinDbg)"
+description: "The !ks.dump extension displays the specified object."
+keywords: ["!ks.dump Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -66,7 +66,7 @@ Show all pin states.
 
  
 
-### Additional Information
+## Additional Information
 
 For more information, see [Kernel Streaming Debugging](../debugger/kernel-streaming-debugging.md).
 
@@ -192,12 +192,4 @@ Note that the sizes are listed both in hexadecimal numbers, and then, parentheti
 </table>
 
  
-
- 
-
- 
-
-
-
-
 

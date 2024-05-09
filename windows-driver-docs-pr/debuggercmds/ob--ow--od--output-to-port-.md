@@ -1,6 +1,6 @@
 ---
-title: ob, ow, od (Output to Port)
-description: The ob, ow, and od commands send a byte, word, or double word to the selected port.
+title: "ob, ow, od (Output to Port)"
+description: "The ob, ow, and od commands send a byte, word, or double word to the selected port."
 keywords: ["ob, ow, od (Output to Port) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -32,7 +32,7 @@ Specifies the address of the port.
 <span id="_______Value______"></span><span id="_______value______"></span><span id="_______VALUE______"></span> *Value*   
 Specifies the hexadecimal value to write to the port.
 
-### Environment
+## Environment
 
 <table>
 <colgroup>
@@ -63,17 +63,9 @@ The **ob** command writes a single byte, the **ow** command writes a word, and t
 
 Make sure that you do not send a word or a double-word to a port that does not support this size.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ib, id, iw (Input from Port)**](ib--iw--id--input-from-port-.md)
-
- 
-
- 
-
-
-
-
 
 

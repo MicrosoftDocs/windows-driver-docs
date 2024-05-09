@@ -1,6 +1,6 @@
 ---
-title: .cache (Set Cache Size)
-description: The .cache command sets the size of the cache used to hold data obtained from the target. Also sets a number of cache and memory options.
+title: ".cache (Set Cache Size)"
+description: "The .cache command sets the size of the cache used to hold data obtained from the target. Also sets a number of cache and memory options."
 keywords: [".cache (Set Cache Size) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -66,7 +66,7 @@ Deletes all entries of ranges with errors from the cache, as well as all user-mo
 <span id="flush_Address"></span><span id="flush_address"></span><span id="FLUSH_ADDRESS"></span>**flush** *Address*  
 Deletes a 4096-byte block of the cache, beginning at *Address*.
 
-### Environment
+## Environment
 
 <table>
 <colgroup>
@@ -96,12 +96,4 @@ Deletes a 4096-byte block of the cache, beginning at *Address*.
 If **.cache** is used with no arguments, the current cache size, status, and options are displayed.
 
 The **.cache forcedecodeuser** or **.cache forcedecodeptes** option will only last as long as the debugger remains broken into the target computer. If any stepping or execution of the target takes place, the **noforcedecodeptes** state will again take effect. This prevents the debugger from interfering with execution or a reboot in an unproductive manner.
-
- 
-
- 
-
-
-
-
 

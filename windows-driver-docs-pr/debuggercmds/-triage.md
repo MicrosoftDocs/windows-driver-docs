@@ -1,23 +1,10 @@
 ---
-title: triage (WinDbg)
-description: triage
+title: "!triage (WinDbg)"
+description: "The !triage extension command is obsolete. Use !analyze* instead."
 keywords: ["triage extension (obsolete)"]
-ms.date: 05/23/2017
+ms.date: 04/01/2024
 ---
 
 # !triage
 
-
-## <span id="ddk__triage_dbg"></span><span id="DDK__TRIAGE_DBG"></span>
-
-
 The **!triage** extension command is obsolete. Use [**!analyze**](-analyze.md) instead.
-
- 
-
- 
-
-
-
-
-

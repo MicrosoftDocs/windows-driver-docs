@@ -1,7 +1,7 @@
 ---
-title: wdfkd.wdfusbpipe
-description: The wdfkd.wdfusbpipe extension displays information about a Kernel-Mode Driver Framework (KMDF) USB pipe object's I/O target.
-keywords: ["wdfkd.wdfusbpipe Windows Debugging"]
+title: "!wdfkd.wdfusbpipe"
+description: "The !wdfkd.wdfusbpipe extension displays information about a Kernel-Mode Driver Framework (KMDF) USB pipe object's I/O target."
+keywords: ["!wdfkd.wdfusbpipe Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !wdfkd.wdfusbpipe
 
-
 The **!wdfkd.wdfusbpipe** extension displays information about a Kernel-Mode Driver Framework (KMDF) USB pipe object's I/O target.
 
 ```dbgcmd
@@ -22,7 +21,6 @@ The **!wdfkd.wdfusbpipe** extension displays information about a Kernel-Mode Dri
 ```
 
 ## Parameters
-
 
 <span id="_______Handle______"></span><span id="_______handle______"></span><span id="_______HANDLE______"></span> *Handle*   
 A handle to a WDFUSBPIPE-typed USB pipe object.
@@ -37,19 +35,10 @@ The display will include the properties of the I/O target.
 
 Wdfkd.dll
 
-### <span id="Frameworks"></span><span id="frameworks"></span><span id="FRAMEWORKS"></span>Frameworks
+### Frameworks
 
 KMDF 1, UMDF 2
 
-### Additional Information
+## Additional Information
 
 For more information, see [Kernel-Mode Driver Framework Debugging](../debugger/kernel-mode-driver-framework-debugging.md).
-
- 
-
- 
-
-
-
-
-

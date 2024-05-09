@@ -1,8 +1,8 @@
 ---
-title: WinDbg - Time Travel Timelines 
-description: This section describes how work with the time travel timelines feature in WinDbg.
+title: "WinDbg - Time Travel Timelines "
+description: "This section describes how work with the time travel timelines feature in WinDbg."
 keywords: ["Time Travel Timelines", "WinDbg", "Menu", "Windows Debugging"]
-ms.date: 07/02/2020
+ms.date: 03/14/2024
 ---
 
 # WinDbg - Timelines
@@ -250,8 +250,12 @@ You can right click the bookmark to travel to that position, rename or delete th
 
 :::image type="content" source="images/windbgx-timeline-bookmark-edit.png" alt-text="Bookmark right-click popup menu displaying options to travel to position, edit, and remove.":::
 
+>[!NOTE]
+> In version 1.2402.24001.0 of the debugger the bookmark feature is not available.
+
 ### See Also
 
 [WinDbg Features](../debugger/debugging-using-windbg-preview.md)
 
 [Time Travel Debugging Walkthrough](time-travel-debugging-walkthrough.md)
+

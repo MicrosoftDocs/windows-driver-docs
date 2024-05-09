@@ -1,7 +1,7 @@
 ---
-title: rtlavl (WinDbg)
-description: The rtlavl extension displays the entries of an RTL_AVL_TABLE structure.
-keywords: ["avl tables", "rtlavl Windows Debugging"]
+title: "!rtlavl (WinDbg)"
+description: "The !rtlavl extension displays the entries of an RTL_AVL_TABLE structure."
+keywords: ["avl tables", "!rtlavl Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !rtlavl
 
-
 The **!rtlavl** extension displays the entries of an RTL\_AVL\_TABLE structure.
 
 ```dbgcmd
@@ -23,7 +22,6 @@ The **!rtlavl** extension displays the entries of an RTL\_AVL\_TABLE structure.
 ```
 
 ## Parameters
-
 
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the address of the RTL\_AVL\_TABLE to display.
@@ -39,26 +37,9 @@ Displays some brief Help text for this extension in the Debugger Command window.
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Ext.dll</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Ext.dll</p></td>
-</tr>
-</tbody>
-</table>
+Ext.dll
 
- 
-
-### Additional Information
+## Additional Information
 
 Use the [**!gentable**](-gentable.md) extension to display AVL tables.
 
@@ -67,12 +48,3 @@ Use the [**!gentable**](-gentable.md) extension to display AVL tables.
 Including the <em>Module</em>**!**<em>Type</em> option causes each entry in the table to be interpreted as having the given type.
 
 The display can be interrupted at any time by pressing CTRL+BREAK (in WinDbg) or CTRL+C (in KD or CDB).
-
- 
-
- 
-
-
-
-
-

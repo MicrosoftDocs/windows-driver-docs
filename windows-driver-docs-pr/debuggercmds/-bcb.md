@@ -1,7 +1,7 @@
 ---
-title: bcb (WinDbg)
-description: The bcb extension displays the specified buffer control block.
-keywords: ["cache manager", "bcb Windows Debugging"]
+title: "!bcb (WinDbg)"
+description: "The !bcb extension displays the specified buffer control block."
+keywords: ["cache manager", "!bcb Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -48,7 +48,7 @@ Specifies the address of the buffer control block.
 
  
 
-### Additional Information
+## Additional Information
 
 For information about cache management, see the Microsoft Windows SDK documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
@@ -57,12 +57,4 @@ For information about other cache management extensions, use the [**!cchelp**](-
 ## Remarks
 
 This extension is available for Windows 2000 only. In Windows XP or later, use the [**dt nt!\_BCB Address**](dt--display-type-.md) command to display the buffer control block directly.
-
- 
-
- 
-
-
-
-
 

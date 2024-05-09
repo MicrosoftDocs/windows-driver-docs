@@ -1,6 +1,6 @@
 ---
-title: Syntax Rules
-description: This section describes the syntax rules that you must follow to use debugger commands.
+title: "Syntax Rules"
+description: "This section describes the syntax rules that you must follow to use debugger commands."
 keywords: commands, syntax rules, meta-commands 
 ms.date: 05/23/2017
 ---
@@ -54,12 +54,4 @@ The following topics describe the syntax that the following parameter types use:
 [Multiprocessor Syntax](multiprocessor-syntax.md)
 
 Syntax also plays an important role in using symbols. For further details, see [Symbol Syntax and Symbol Matching](../debugger/symbol-syntax-and-symbol-matching.md).
-
- 
-
- 
-
-
-
-
 

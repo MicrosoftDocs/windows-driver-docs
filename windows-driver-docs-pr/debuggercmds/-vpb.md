@@ -1,7 +1,7 @@
 ---
-title: vpb (WinDbg)
-description: The vpb extension displays a volume parameter block (VPB).
-keywords: ["vpb Windows Debugging"]
+title: "!vpb (WinDbg)"
+description: "The !vpb extension displays a volume parameter block (VPB)."
+keywords: ["!vpb Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,15 +14,13 @@ api_type:
 
 # !vpb
 
-
 The **!vpb** extension displays a volume parameter block (VPB).
 
 ```dbgcmd
 !vpb Address
 ```
 
-## <span id="ddk__vpb_dbg"></span><span id="DDK__VPB_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the hexadecimal address of the VPB.
@@ -31,9 +29,7 @@ Specifies the hexadecimal address of the VPB.
 
 Kdexts.dll
 
- 
-
-### Additional Information
+## Additional Information
 
 For information about VPBs, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
 
@@ -91,12 +87,3 @@ RealDevice:   0x80e15cb8
 RefCount: 14
 Volume Label:           MY-DISK-C
 ```
-
- 
-
- 
-
-
-
-
-

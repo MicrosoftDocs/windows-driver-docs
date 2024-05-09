@@ -1,7 +1,7 @@
 ---
-title: ks.objhdr (WinDbg)
-description: The ks.objhdr extension displays the kernel streaming object header associated with the specified file object.
-keywords: ["ks.objhdr Windows Debugging"]
+title: "!ks.objhdr (WinDbg)"
+description: "The !ks.objhdr extension displays the kernel streaming object header associated with the specified file object."
+keywords: ["!ks.objhdr Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -54,7 +54,7 @@ Optional. Values are the same as those for [**!ks.dump**](-ks-dump.md).
 
  
 
-### Additional Information
+## Additional Information
 
 For more information, see [Kernel Streaming Debugging](../debugger/kernel-streaming-debugging.md).
 
@@ -126,12 +126,4 @@ Object Header 81BC1008
     Stack Depth : 1
     Corresponding AVStream object = 81A971B0
 ```
-
- 
-
- 
-
-
-
-
 

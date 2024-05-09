@@ -32,7 +32,7 @@ These two topics provide additional information about working with JavaScript in
 
 ## <span id="Provider"></span><span id="provider"></span><span id="PROVIDER"></span>The Debugger JavaScript Provider
 
-The JavaScript provider included with the debugger takes full advantage of the latest ECMAScript6 object and class enhancements. For more information, see [ECMAScript 6 — New Features: Overview & Comparison](http://es6-features.org/).
+The JavaScript provider included with the debugger takes full advantage of the latest ECMAScript6 object and class enhancements. For more information, see [ECMAScript 6 — New Features: Overview & Comparison](https://github.com/rse/es6-features).
 
 **JsProvider.dll**
 
@@ -813,7 +813,7 @@ This method is also available.
 This section describes how to use the script debugging capabilities of the debugger. The debugger has integrated support for debugging JavaScript scripts using the [.scriptdebug (Debug JavaScript)](../debuggercmds/-scriptdebug--debug-javascript-.md) command.
 
 >[!NOTE]
-> To use JavaScript Debugging with WinDb, run the debugger as Administrator.
+> To use JavaScript Debugging with WinDbg, run the debugger as Administrator.
 >
 
 Use this sample code to explore debugging a JavaScript. For this walkthrough, we will name it DebuggableSample.js and save it in the C:\MyScripts directory.
@@ -1171,7 +1171,7 @@ The following are JavaScript resources that may be useful as you develop JavaScr
 
 -   [WinJS: The Windows library for JavaScript](https://github.com/winjs/winjs)
 
--   [ECMAScript 6 — New Features: Overview & Comparison](http://es6-features.org/)
+-   [ECMAScript 6 — New Features: Overview & Comparison](https://github.com/rse/es6-features)
 
 ## <span id="related_topics"></span>See also
 

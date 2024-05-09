@@ -1,7 +1,7 @@
 ---
-title: wudfext.wudffilehandletarget
-description: The wudfext.wudffilehandletarget extension displays information about a file-handle-based I/O target.
-keywords: ["wudfext.wudffilehandletarget Windows Debugging"]
+title: "!wudfext.wudffilehandletarget"
+description: "The !wudfext.wudffilehandletarget extension displays information about a file-handle-based I/O target."
+keywords: ["!wudfext.wudffilehandletarget Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !wudfext.wudffilehandletarget
 
-
 The **!wudfext.wudffilehandletarget** extension displays information about a file-handle-based I/O target.
 
 ```dbgcmd
@@ -22,7 +21,6 @@ The **!wudfext.wudffilehandletarget** extension displays information about a fil
 ```
 
 ## Parameters
-
 
 <span id="_______pWDFFileHandleTarget______"></span><span id="_______pwdffilehandletarget______"></span><span id="_______PWDFFILEHANDLETARGET______"></span> *pWDFFileHandleTarget*   
 Specifies the address of the **IWDFIoTarget** interface to display information about. The [**!wudfext.wudfobject**](-wudfext-wudfobject.md) extension command determines the address of **IWDFIoTarget**.
@@ -32,34 +30,9 @@ Optional. Specifies the type of the interface (for example, **IWDFDevice**). If 
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Unavailable</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP with UMDF version 1.7 and later</strong></p></td>
-<td align="left"><p>Wudfext.dll</p></td>
-</tr>
-</tbody>
-</table>
+Wudfext.dll
 
- 
 
-### Additional Information
+## Additional Information
 
 For more information, see [User-Mode Driver Framework Debugging](../debugger/user-mode-driver-framework-debugging.md).
-
- 
-
- 
-
-
-
-
-

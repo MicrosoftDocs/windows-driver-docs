@@ -1,6 +1,6 @@
 ---
-title: .show_sym_failures
-description: The .show_sym_failures command enables or disables the display of symbol lookup failures and type lookup failures.
+title: ".show_sym_failures"
+description: "The .show_sym_failures command enables or disables the display of symbol lookup failures and type lookup failures."
 keywords: [".show_sym_failures Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -39,7 +39,7 @@ Enables the display of type lookup failures.
 <span id="________T______"></span><span id="________t______"></span> **/T**   
 Disables the display of type lookup failures.
 
-## <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+## Environment
 
 
 |  Item  | Description          |
@@ -49,12 +49,4 @@ Disables the display of type lookup failures.
 |Platforms|All                  |
 
  
-
- 
-
- 
-
-
-
-
 

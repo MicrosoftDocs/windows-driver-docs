@@ -1,6 +1,6 @@
 ---
-title: finddata (WinDbg)
-description: The finddata extension displays the cached data at a given offset within a specified file object.
+title: "!finddata (WinDbg)"
+description: "The !finddata extension displays the cached data at a given offset within a specified file object."
 keywords: ["cache manager", "finddata Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -14,7 +14,6 @@ api_type:
 
 # !finddata
 
-
 The **!finddata** extension displays the cached data at a given offset within a specified file object.
 
 ```dbgcmd
@@ -22,7 +21,6 @@ The **!finddata** extension displays the cached data at a given offset within a 
 ```
 
 ## Parameters
-
 
 <span id="_______FileObject______"></span><span id="_______fileobject______"></span><span id="_______FILEOBJECT______"></span> *FileObject*   
 Specifies the address of the file object.
@@ -34,19 +32,8 @@ Specifies the offset.
 
 Kdexts.dll
 
- 
-
-### Additional Information
+## Additional Information
 
 For information about cache management, see the Microsoft Windows SDK documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
 For information about other cache management extensions, see the [**!cchelp**](-cchelp.md) extension.
-
- 
-
- 
-
-
-
-
-

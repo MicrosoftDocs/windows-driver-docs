@@ -1,6 +1,6 @@
 ---
-title: .formats (Show Number Formats)
-description: The .formats command evaluates an expression or symbol in the context of the current thread and process and displays it in multiple numeric formats.
+title: ".formats (Show Number Formats)"
+description: "The .formats command evaluates an expression or symbol in the context of the current thread and process and displays it in multiple numeric formats."
 keywords: [".formats (Show Number Formats) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -27,7 +27,7 @@ The **.formats** command evaluates an expression or symbol in the context of the
 <span id="_______expression______"></span><span id="_______EXPRESSION______"></span> *expression*   
 Specifies the expression to evaluate. For more information about the syntax, see [Numerical Expression Syntax](numerical-expression-syntax.md).
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -58,19 +58,11 @@ Evaluate expression:
 
 The **Time** field displays a 32-bit value in CRT time stamp format and displays a 64-bit value in FILETIME format. You can distinguish these formats because the FILETIME format includes milliseconds and the CRT format does not.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**? (Evaluate Expression)**](---evaluate-expression-.md)
 
 [**?? (Evaluate C++ Expression)**](----evaluate-c---expression-.md)
-
- 
-
- 
-
-
-
-
 
 

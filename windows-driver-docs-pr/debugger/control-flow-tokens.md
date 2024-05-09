@@ -21,7 +21,7 @@ Control flow tokens behave like their counterparts in C and C++, with the follow
     0:000> .if (ebx>0) { r ebx }
     ```
 
--   Each condition must be a expression. Commands are not permitted. For example, the following example produces a syntax error.
+-   Each condition must be an expression. Commands are not permitted. For example, the following example produces a syntax error.
 
     ```dbgcmd
     0:000> .while (r ebx) { .... }

@@ -1,6 +1,6 @@
 ---
-title: dds, dps, dqs (Display Words and Symbols)
-description: The dds, dps, and dqs commands display the contents of memory in the given range. This memory is assumed to be a series of addresses in the symbol table. 
+title: "dds, dps, dqs (Display Words and Symbols)"
+description: "The dds, dps, and dqs commands display the contents of memory in the given range. This memory is assumed to be a series of addresses in the symbol table. "
 keywords: ["dds, dps, dqs (Display Words and Symbols) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -47,7 +47,7 @@ Specifies the number of columns to use in the display. If this is omitted, the d
 <span id="_______Range______"></span><span id="_______range______"></span><span id="_______RANGE______"></span> *Range*   
 Specifies the memory area to display. For more syntax details, see [Address and Address Range Syntax](address-and-address-range-syntax.md). If you omit *Range*, the command will display memory starting at the ending location of the last display command. If *Range* is omitted and no previous display command has been used, the display begins at the current instruction pointer. If a simple address is given, the default range length is 128 bytes.
 
-### Environment
+## Environment
 
 **Modes**: user mode, kernel mode
 
@@ -59,7 +59,7 @@ Specifies the memory area to display. For more syntax details, see [Address and 
 
  
 
-### Additional Information
+## Additional Information
 
 For an overview of memory manipulation and a description of other memory-related commands, see [Reading and Writing Memory](../debugger/reading-and-writing-memory.md).
 
@@ -72,12 +72,4 @@ The **dds** command displays double-word (4 byte) values like the [**dd**](d--da
 Each of these words is treated as an address in the symbol table. The corresponding symbol information is displayed for each word.
 
 If line number information has been enabled, source file names and line numbers will be displayed when available.
-
- 
-
- 
-
-
-
-
 

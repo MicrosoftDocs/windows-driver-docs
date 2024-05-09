@@ -1,7 +1,7 @@
 ---
-title: icpleak (WinDbg)
-description: The icpleak extension examines all I/O completion objects in the system for the object with the largest number of queued entries.
-keywords: ["I/O completion", "icpleak Windows Debugging"]
+title: "!icpleak (WinDbg)"
+description: "The !icpleak extension examines all I/O completion objects in the system for the object with the largest number of queued entries."
+keywords: ["I/O completion", "!icpleak Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !icpleak
 
-
 The **!icpleak** extension examines all I/O completion objects in the system for the object with the largest number of queued entries.
 
 ```dbgcmd
@@ -23,19 +22,16 @@ The **!icpleak** extension examines all I/O completion objects in the system for
 
 ## Parameters
 
-
 <span id="_______HandleFlag______"></span><span id="_______handleflag______"></span><span id="_______HANDLEFLAG______"></span> *HandleFlag*   
 If this flag is set, the display also includes all processes that have a handle to the object with the largest number of queued entries.
 
 ## DLL
 
-Windows XP and later - Kdexts.dll
+Kdexts.dll
 
- 
+## Additional Information
 
-### Additional Information
-
-For information about I/O completion ports, see *Microsoft Windows Internals* by Mark Russinovich and David Solomon. 
+For information about I/O completion ports, see *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
 ## Remarks
 
@@ -44,6 +40,3 @@ This extension is useful when there is a leak in the I/O completion pool. I/O co
 This extension works only if the system maintains type lists. If the *HandleFlag* is set and the system has many processes, this extension will take a long time to run.
 
 You can stop at any point by pressing CTRL+BREAK (in WinDbg) or CTRL+C (in KD).
-
- 
-

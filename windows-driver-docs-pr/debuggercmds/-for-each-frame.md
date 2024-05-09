@@ -1,7 +1,7 @@
 ---
-title: for_each_frame
-description: The for_each_frame extension executes a debugger command one time for each frame in the stack of the current thread.
-keywords: ["for_each_frame Windows Debugging"]
+title: "!for_each_frame"
+description: "The !for_each_frame extension executes a debugger command one time for each frame in the stack of the current thread."
+keywords: ["!for_each_frame Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -12,8 +12,7 @@ api_type:
 - NA
 ---
 
-# !for\_each\_frame
-
+# !for_each_frame
 
 The **!for\_each\_frame** extension executes a debugger command one time for each frame in the stack of the current thread.
 
@@ -22,8 +21,7 @@ The **!for\_each\_frame** extension executes a debugger command one time for eac
 !for_each_frame -?
 ```
 
-## <span id="ddk__for_each_frame_dbg"></span><span id="DDK__FOR_EACH_FRAME_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______CommandString______"></span><span id="_______commandstring______"></span><span id="_______COMMANDSTRING______"></span> *CommandString*   
 Specifies the debugger commands to execute one time for each frame. If *CommandString* includes multiple commands, you must separate them with semicolons and enclose *CommandString* in quotation marks. If you include multiple commands, the individual commands within *CommandString* cannot contain quotation marks. If you want to refer to the index of the current frame within *CommandString*, use the @$frame pseudoregister.
@@ -33,26 +31,9 @@ Displays some Help text for this extension in the [Debugger Command window](../d
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Ext.dll</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Ext.dll</p></td>
-</tr>
-</tbody>
-</table>
+Ext.dll
 
- 
-
-### Additional Information
+## Additional Information
 
 For more information about the local context, see [Changing Contexts](../debugger/changing-contexts.md).
 
@@ -69,12 +50,3 @@ The following command displays all local variables for the current stack.
 ```dbgcmd
 !for_each_frame !for_each_local dt @#Local
 ```
-
- 
-
- 
-
-
-
-
-

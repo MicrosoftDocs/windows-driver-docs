@@ -1,7 +1,7 @@
 ---
-title: ks.findlive
-description: The ks.findlive extension searches the internal Ks.sys debug log to attempt to find live objects of a specified type.
-keywords: ["ks.findlive Windows Debugging"]
+title: "!ks.findlive"
+description: "The !ks.findlive extension searches the internal Ks.sys debug log to attempt to find live objects of a specified type."
+keywords: ["!ks.findlive Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -54,7 +54,7 @@ Optional. Specifies the level of detail to display on a 0-7 scale with progressi
 
  
 
-### Additional Information
+## Additional Information
 
 For more information, see [Kernel Streaming Debugging](../debugger/kernel-streaming-debugging.md).
 
@@ -63,12 +63,4 @@ For more information, see [Kernel Streaming Debugging](../debugger/kernel-stream
 The **!ks.findlive** command may not find all possible specified live objects.
 
 This extension requires that the target computer be running a checked (debug) version of Ks.sys.
-
- 
-
- 
-
-
-
-
 

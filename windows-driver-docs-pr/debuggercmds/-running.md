@@ -1,7 +1,7 @@
 ---
-title: running (WinDbg)
-description: The running extension displays a list of running threads on all processors of the target computer.
-keywords: ["running Windows Debugging"]
+title: "!running (WinDbg)"
+description: "The !running extension displays a list of running threads on all processors of the target computer."
+keywords: ["!running Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,15 +14,13 @@ api_type:
 
 # !running
 
-
 The **!running** extension displays a list of running threads on all processors of the target computer.
 
 ```dbgcmd
 !running [-i] [-t]
 ```
 
-## <span id="ddk__running_dbg"></span><span id="DDK__RUNNING_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______-i______"></span><span id="_______-I______"></span> **-i**   
 Causes the display to include idle processors as well.
@@ -32,11 +30,9 @@ Causes a stack trace to be displayed for each processor.
 
 ## DLL
 
-Windows XP and later - Kdexts.dll
+Kdexts.dll
 
- 
-
-### Additional Information
+## Additional Information
 
 For more information about debugging multiprocessor computers, see [Multiprocessor Syntax](multiprocessor-syntax.md).
 
@@ -91,12 +87,3 @@ f87f0980 f87f0980 nt!KiIdleLoop+0x14
 ChildEBP RetAddr
 f8800980 f8800980 nt!KiIdleLoop+0x14
 ```
-
- 
-
- 
-
-
-
-
-

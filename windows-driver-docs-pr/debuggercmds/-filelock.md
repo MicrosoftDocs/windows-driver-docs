@@ -1,7 +1,7 @@
 ---
-title: filelock (WinDbg)
-description: The filelock extension displays a file lock structure.
-keywords: ["filelock Windows Debugging"]
+title: "!filelock (WinDbg)"
+description: "The !filelock extension displays a file lock structure."
+keywords: ["!filelock Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -37,15 +37,7 @@ Specifies the hexadecimal address of a file object that owns the file lock.
 
 Kdexts.dll
 
-### Additional Information
+## Additional Information
 
 For information about file objects, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
-
- 
-
- 
-
-
-
-
 

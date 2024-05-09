@@ -1,7 +1,7 @@
 ---
-title: ks.automation
-description: The ks.automation extension displays any automation items associated with the given object.
-keywords: ["ks.automation Windows Debugging"]
+title: "!ks.automation"
+description: "The !ks.automation extension displays any automation items associated with the given object."
+keywords: ["!ks.automation Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -48,7 +48,7 @@ Specifies a pointer to the object for which to display automation items. (Automa
 
  
 
-### Additional Information
+## Additional Information
 
 For more information, see [Kernel Streaming Debugging](../debugger/kernel-streaming-debugging.md).
 
@@ -156,12 +156,4 @@ Filter 829493c4 has the following automation items:
     Event Items:
         NO SETS FOUND!
 ```
-
- 
-
- 
-
-
-
-
 

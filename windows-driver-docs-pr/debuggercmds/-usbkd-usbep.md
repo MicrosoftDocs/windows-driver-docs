@@ -1,7 +1,7 @@
 ---
-title: usbkd.usbep
-description: The usbkd.usbep command displays information about a USB endpoint.
-keywords: ["usbkd.usbep Windows Debugging"]
+title: "!usbkd.usbep"
+description: "The !usbkd.usbep command displays information about a USB endpoint."
+keywords: ["!usbkd.usbep Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,21 +14,18 @@ api_type:
 
 # !usbkd.usbep
 
-
 The **!usbkd.usbep** command displays information about a USB endpoint.
 
 ```dbgcmd
 !usbkd.usbep StructAddr
 ```
 
-## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______StructAddr______"></span><span id="_______structaddr______"></span><span id="_______STRUCTADDR______"></span> *StructAddr*   
 Address of a **usbport!\_HCD\_ENDPOINT** structure. To get the endpoint list for a USB host controller, use the [**!usbkd.usbhcdext**](-usbkd-usbhcdext.md) command.
 
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Usbkd.dll
 
@@ -95,12 +92,8 @@ RootHub Endpoint
 [02] Ev_gEp_ReqActive        GEp_Paused                GEp_Active                ENDPOINT_ACTIVE
 ```
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
-
- 
-

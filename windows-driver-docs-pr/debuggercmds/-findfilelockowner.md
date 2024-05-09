@@ -1,7 +1,7 @@
 ---
-title: findfilelockowner
-description: The findfilelockowner extension attempts to find the owner of a file object lock by examining all threads for a thread that is blocked.
-keywords: ["findfilelockowner Windows Debugging"]
+title: "!findfilelockowner"
+description: "The !findfilelockowner extension attempts to find the owner of a file object lock by examining all threads for a thread that is blocked."
+keywords: ["!findfilelockowner Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -30,7 +30,7 @@ Specifies the address of a file object. If *FileObject* is omitted, the extensio
 
 Kdexts.dll
 
-### Additional Information
+## Additional Information
 
 For information about file objects, see the Microsoft Windows SDK documentation, the Windows Driver Kit (WDK) documentation, and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
@@ -45,3 +45,4 @@ The extension takes some time to complete because it walks the stack of all thre
 [Displaying a Critical Section](../debugger/displaying-a-critical-section.md)
 
 [Critical Section Time Outs](../debugger/critical-section-time-outs.md) (user mode)
+

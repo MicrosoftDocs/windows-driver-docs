@@ -1,6 +1,6 @@
 ---
-title: WinDbg - File Menu
-description: This section describes how to use the file menu in the WinDbg debugger.
+title: "WinDbg - File Menu"
+description: "This section describes how to use the file menu in the WinDbg debugger."
 keywords: ["File Menu", "WinDbg", "Menu", "Windows Debugging"]
 ms.date: 01/10/2020
 ---
@@ -65,3 +65,4 @@ Use *Exit* to exit the debugger.
 ## See Also
 
 [WinDbg Features](../debugger/debugging-using-windbg-preview.md)
+

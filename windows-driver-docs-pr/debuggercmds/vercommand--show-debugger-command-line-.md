@@ -1,6 +1,6 @@
 ---
-title: vercommand (Show Debugger Command Line)
-description: The vercommand command displays the command that opened the debugger.
+title: "vercommand (Show Debugger Command Line)"
+description: "The vercommand command displays the command that opened the debugger."
 keywords: ["vercommand (Show Debugger Command Line) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -22,7 +22,7 @@ The **vercommand** command displays the command that opened the debugger.
 ## <span id="ddk_cmd_show_debugger_command_line_dbg"></span><span id="DDK_CMD_SHOW_DEBUGGER_COMMAND_LINE_DBG"></span>
 
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -31,12 +31,4 @@ The **vercommand** command displays the command that opened the debugger.
 |Platforms|All                  |
 
  
-
- 
-
- 
-
-
-
-
 

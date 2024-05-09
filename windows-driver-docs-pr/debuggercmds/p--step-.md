@@ -1,6 +1,6 @@
 ---
-title: p (Step)
-description: The p command executes a single instruction or source line and optionally displays the resulting values of all registers and flags. 
+title: "p (Step)"
+description: "The p command executes a single instruction or source line and optionally displays the resulting values of all registers and flags. "
 keywords: ["p (Step) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -49,7 +49,7 @@ Specifies the number of instructions or source lines to step through before stop
 <span id="_______Command______"></span><span id="_______command______"></span><span id="_______COMMAND______"></span> *Command*   
 Specifies a debugger command to execute after the step is performed. This command is executed before the standard **p** results are displayed. If you also use *Count*, the specified command is executed after all stepping is complete (but before the results from the final step are displayed).
 
-### Environment
+## Environment
 
 |  Item       | Description               |
 |-----------|------------------------|
@@ -59,7 +59,7 @@ Specifies a debugger command to execute after the step is performed. This comman
 
  
 
-### Additional Information
+## Additional Information
 
 For more information about issuing the **p** command and an overview of related commands, see [Controlling the Target](../debugger/controlling-the-target.md).
 
@@ -72,12 +72,4 @@ If the debugger encounters a **call** instruction or interrupt while stepping, t
 Each step executes a single assembly instruction or a single source line, depending on whether the debugger is in assembly mode or source mode. Use the [**l+t**](l---l---set-source-options-.md) and l-t commands or the buttons on the WinDbg toolbar to switch between these modes.
 
 When you are quickly stepping many times in WinDbg, the debugging information windows are updated after each step. If this update causes slower response time, use [**.suspend\_ui (Suspend WinDbg Interface)**](-suspend-ui--suspend-windbg-interface-.md) to temporarily suspend the refreshing of these windows.
-
- 
-
- 
-
-
-
-
 

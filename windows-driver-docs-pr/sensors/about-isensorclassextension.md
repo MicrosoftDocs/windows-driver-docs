@@ -7,7 +7,7 @@ ms.date: 07/20/2018
 # About ISensorClassExtension
 
 
-A sensor driver uses ISensorClassExtension to initialize and unitialize the sensor class extension, raise events, process WPD input/output control codes (IOCTLs), and correctly close UMDF file handles.
+A sensor driver uses ISensorClassExtension to initialize and uninitialize the sensor class extension, raise events, process WPD input/output control codes (IOCTLs), and correctly close UMDF file handles.
 
 ## Methods to Manage Object Lifetime
 

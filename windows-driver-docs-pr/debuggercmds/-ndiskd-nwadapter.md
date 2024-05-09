@@ -1,7 +1,7 @@
 ---
-title: ndiskd.nwadapter
-description: The ndiskd.nwadapter extension displays information about one or more nwifi ADAPT structures. If you run this extension with no parameters, ndiskd will display a list of all nwifi ADAPT structures.
-keywords: ["ndiskd.nwadapter Windows Debugging"]
+title: "!ndiskd.nwadapter"
+description: "The !ndiskd.nwadapter extension displays information about one or more nwifi ADAPT structures. If you run this extension with no parameters, ndiskd will display a list of all nwifi ADAPT structures."
+keywords: ["!ndiskd.nwadapter Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -40,3 +40,4 @@ Ndiskd.dll
 [**NDIS extensions (Ndiskd.dll)**](ndis-extensions--ndiskd-dll-.md)
 
 [**!ndiskd.help**](-ndiskd-help.md)
+

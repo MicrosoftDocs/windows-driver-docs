@@ -1,6 +1,6 @@
 ---
-title: .extpath (Set Extension Path)
-description: The .extpath command sets or displays the extension DLL search path.
+title: ".extpath (Set Extension Path)"
+description: "The .extpath command sets or displays the extension DLL search path."
 keywords: [".extpath (Set Extension Path) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -14,7 +14,6 @@ api_type:
 
 # .extpath (Set Extension Path)
 
-
 The **.extpath** command sets or displays the extension DLL search path.
 
 ```dbgcmd
@@ -23,14 +22,13 @@ The **.extpath** command sets or displays the extension DLL search path.
 
 ## Parameters
 
-
 <span id="______________"></span> +   
 Signifies that the debugger should append new directories to the previous extension DLL search path (instead of replacing the path).
 
 <span id="_______Directory______"></span><span id="_______directory______"></span><span id="_______DIRECTORY______"></span> *Directory*   
 Specifies one or more directories to put in the search path. If you do not specify *Directory*, the current path is displayed. You can separate multiple directories with semicolons.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -38,9 +36,7 @@ Specifies one or more directories to put in the search path. If you do not speci
 |Targets|Live, crash dump|
 |Platforms|All|
 
- 
-
-### Additional Information
+## Additional Information
 
 For more information about the extension search path and loading extension DLLs, see [Loading Debugger Extension DLLs](loading-debugger-extension-dlls.md).
 
@@ -59,12 +55,3 @@ Debugging Tools for Windows (x64)\winext;C:\Program Files\Debugging Tools for Wi
 arcade;C:\Program Files\Debugging Tools for Windows (x64);C:\Program Files\Debugging Tools for 
 Windows (x64)\winext\arcade;C:\Windows\system32;C:\Windows
 ```
-
- 
-
- 
-
-
-
-
-

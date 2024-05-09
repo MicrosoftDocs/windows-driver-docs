@@ -1,6 +1,6 @@
 ---
-title: .enable_long_status (Enable Long Integer Display)
-description: The .enable_long_status command specifies whether the debugger displays long integers in decimal format or in the default radix.
+title: ".enable_long_status (Enable Long Integer Display)"
+description: "The .enable_long_status command specifies whether the debugger displays long integers in decimal format or in the default radix."
 keywords: ["Enable Long Integer Display (.enable_long_status) command", ".enable_long_status (Enable Long Integer Display) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -31,7 +31,7 @@ Displays all long integers in decimal format. This is the default behavior of th
 <span id="_______1______"></span> **1**   
 Displays all long integers in the default radix.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -56,12 +56,4 @@ This command affects only the display of long integers. To control whether stand
  
 
 To change the default radix, use the [**n (Set Number Base)**](n--set-number-base-.md) command.
-
- 
-
- 
-
-
-
-
 

@@ -1,7 +1,7 @@
 ---
-title: wdfkd.wdfusbinterface
-description: The wdfkd.wdfusbinterface extension displays information about a specified Kernel-Mode Driver Framework (KMDF) USB interface object, including its possible and current settings.
-keywords: ["wdfkd.wdfusbinterface Windows Debugging"]
+title: "!wdfkd.wdfusbinterface"
+description: "The !wdfkd.wdfusbinterface extension displays information about a specified Kernel-Mode Driver Framework (KMDF) USB interface object, including its possible and current settings."
+keywords: ["!wdfkd.wdfusbinterface Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !wdfkd.wdfusbinterface
 
-
 The **!wdfkd.wdfusbinterface** extension displays information about a specified Kernel-Mode Driver Framework (KMDF) USB interface object, including its possible and current settings.
 
 ```dbgcmd
@@ -22,7 +21,6 @@ The **!wdfkd.wdfusbinterface** extension displays information about a specified 
 ```
 
 ## Parameters
-
 
 <span id="_______Handle______"></span><span id="_______handle______"></span><span id="_______HANDLE______"></span> *Handle*   
 A handle to a WDFUSBINTERFACE-typed USB interface object.
@@ -37,19 +35,10 @@ The display will include the properties of the I/O target for each KMDF USB pipe
 
 Wdfkd.dll
 
-### <span id="Frameworks"></span><span id="frameworks"></span><span id="FRAMEWORKS"></span>Frameworks
+### Frameworks
 
 KMDF 1, UMDF 2
 
-### Additional Information
+## Additional Information
 
 For more information, see [Kernel-Mode Driver Framework Debugging](../debugger/kernel-mode-driver-framework-debugging.md).
-
- 
-
- 
-
-
-
-
-

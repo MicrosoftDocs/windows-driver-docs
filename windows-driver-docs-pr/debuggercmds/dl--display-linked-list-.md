@@ -1,6 +1,6 @@
 ---
-title: dl (Display Linked List)
-description: The dl command displays a LIST_ENTRY or SINGLE_LIST_ENTRY linked list.
+title: "dl (Display Linked List)"
+description: "The dl command displays a LIST_ENTRY or SINGLE_LIST_ENTRY linked list."
 keywords: ["dl (Display Linked List) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -36,7 +36,7 @@ Maximum number of elements to dump.
 <span id="_______Size______"></span><span id="_______size______"></span><span id="_______SIZE______"></span> *Size*   
 Size of each element. This is the number of consecutive ULONG\_PTRs that will be displayed for each element in the list.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -46,7 +46,7 @@ Size of each element. This is the number of consecutive ULONG\_PTRs that will be
 
  
 
-### Additional Information
+## Additional Information
 
 For an overview of memory manipulation and a description of other memory-related commands, see [Reading and Writing Memory](../debugger/reading-and-writing-memory.md).
 
@@ -61,12 +61,4 @@ The *Address*, *MaxCount*, and *Size* parameters are in the current default radi
 If the list loops back on itself, the dump will stop. If a null pointer is encountered, the dump will stop.
 
 If you want to execute some command for each element of the list, use the [**!list**](-list.md) extension.
-
- 
-
- 
-
-
-
-
 

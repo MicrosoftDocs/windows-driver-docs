@@ -1,7 +1,7 @@
 ---
-title: storagekd.storunit
-description: The storagekd.storunit extension displays information about the specified Storport logical unit.
-keywords: ["storagekd.storunit Windows Debugging"]
+title: "!storagekd.storunit"
+description: "The !storagekd.storunit extension displays information about the specified Storport logical unit."
+keywords: ["!storagekd.storunit Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !storagekd.storunit
 
-
 The **!storagekd.storunit** extension displays information about the specified Storport logical unit.
 
 ```dbgcmd
@@ -23,26 +22,12 @@ The **!storagekd.storunit** extension displays information about the specified S
 
 ## Parameters
 
-
 <span id="_______Address"></span><span id="_______address"></span><span id="_______ADDRESS"></span> *Address*  
 Specifies the address of a Storport unit device object. If *Address* is omitted, a list of all Storport units are displayed.
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 8 and later</strong></p></td>
-<td align="left"><p>Storagekd.dll</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+Storagekd.dll
 
 ## Remarks
 
@@ -94,12 +79,3 @@ Msft       Virtual Di   0  0  1  fffffa800658a060  fffffa800658a1b0    0   0  0 
 IRP               SRB Type   SRB               XRB               Command           MDL               SGList            Timeout
 -----------------------------------------------------------------------------------------------------------------------------------
 ```
-
- 
-
- 
-
-
-
-
-

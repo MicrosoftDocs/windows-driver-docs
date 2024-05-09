@@ -1,7 +1,7 @@
 ---
-title: memlist (WinDbg)
-description: The memlist extension scans physical memory lists from the page frame number (PFN) database in order to check them for consistency.
-keywords: ["PFN database", "memlist Windows Debugging"]
+title: "!memlist (WinDbg)"
+description: "The !memlist extension scans physical memory lists from the page frame number (PFN) database in order to check them for consistency."
+keywords: ["PFN database", "!memlist Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -22,7 +22,6 @@ Syntax
 
 ## Parameters
 
-
 <span id="_______Flags______"></span><span id="_______flags______"></span><span id="_______FLAGS______"></span> *Flags*   
 Specifies which memory lists to verify. At present, only one value has been implemented:
 
@@ -31,7 +30,7 @@ Causes the zeroed pages list to be verified.
 
 ## DLL
 
-Windows XP and later - Kdexts.dll
+Kdexts.dll
 
 ## Remarks
 

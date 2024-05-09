@@ -1,7 +1,7 @@
 ---
-title: ecb, ecd, ecw
-description: The ecb, ecd, and ecw extensions write to the PCI configuration space.
-keywords: ["ecb, ecd, ecw Windows Debugging"]
+title: "!ecb, !ecd, !ecw"
+description: "The !ecb, !ecd, and !ecw extensions write to the PCI configuration space."
+keywords: ["!ecb, !ecd, !ecw Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -62,7 +62,7 @@ Specifies the value to be written. For the **!ecb** extension, *Data* must be 1 
 
 These extension commands can only be used with an x86-based target computer.
 
-### Additional Information
+## Additional Information
 
 See [Plug and Play Debugging](../debugger/plug-and-play-debugging.md) for applications of this extension command, and some additional examples. For information about PCI buses, see the Windows Driver Kit (WDK) documentation.
 
@@ -71,12 +71,4 @@ See [Plug and Play Debugging](../debugger/plug-and-play-debugging.md) for applic
 You cannot use these extension commands to write a sequence of *Data* values. This can only be done by repeated use of this extension.
 
 To display the PCI configuration space, use [**!pci 100**](-pci.md)*Bus Device Function*.
-
- 
-
- 
-
-
-
-
 

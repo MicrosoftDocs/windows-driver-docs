@@ -1,7 +1,7 @@
 ---
-title: arbiter (WinDbg)
-description: The arbiter extension displays the current system resource arbiters and arbitrated ranges.
-keywords: ["arbiter Windows Debugging"]
+title: "!arbiter (WinDbg)"
+description: "The !arbiter extension displays the current system resource arbiters and arbitrated ranges."
+keywords: ["!arbiter Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
 - apiref
@@ -51,7 +51,7 @@ Kdexts.dll
 
  
 
-### Additional Information
+## Additional Information
 
 See [Plug and Play Debugging](../debugger/plug-and-play-debugging.md) for applications of this extension command.
 
@@ -136,12 +136,4 @@ ExtensionFlags (0000000000)
 AttachedDevice (Upper) 80d78b28 \Driver\i8042prt
 Device queue is not busy.
 ```
-
- 
-
- 
-
-
-
-
 

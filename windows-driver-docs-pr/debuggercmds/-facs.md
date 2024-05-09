@@ -1,7 +1,7 @@
 ---
-title: facs (WinDbg)
-description: The facs extension displays a Firmware ACPI Control Structure (FACS).
-keywords: ["facs Windows Debugging"]
+title: "!facs (WinDbg)"
+description: "The !facs extension displays a Firmware ACPI Control Structure (FACS)."
+keywords: ["!facs Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -33,15 +33,7 @@ Specifies the address of the FACS.
 
 Kdexts.dll
 
-### Additional Information
+## Additional Information
 
 For more information, see [ACPI Debugging](../debugger/acpi-debugging.md).
-
- 
-
- 
-
-
-
-
 

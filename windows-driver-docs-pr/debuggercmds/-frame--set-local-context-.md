@@ -1,6 +1,6 @@
 ---
-title: .frame (Set Local Context)
-description: The .frame command specifies which local context (scope) is used to interpret local variables or displays the current local context.
+title: ".frame (Set Local Context)"
+description: "The .frame command specifies which local context (scope) is used to interpret local variables or displays the current local context."
 keywords: ["Set Local Context (.frame) command", "memory, Set Local Context (.frame) command", "context, Set Local Context (.frame) command", ".frame (Set Local Context) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -49,7 +49,7 @@ Specifies an additional quantity of frames past the base pointer. For example, i
 <span id="_______InstructionPtr______"></span><span id="_______instructionptr______"></span><span id="_______INSTRUCTIONPTR______"></span> *InstructionPtr*   
 (x86-based processor only) Specifies the instruction pointer for the stack trace that is used to determine the frame. If you omit *StackPtr* and *InstructionPtr*, the debugger uses the stack pointer that the **esp** register specifies and the instruction pointer that the **eip** register specifies.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -59,7 +59,7 @@ Specifies an additional quantity of frames past the base pointer. For example, i
 
  
 
-### Additional Information
+## Additional Information
 
 For more information about the local context and other context settings, see [Changing Contexts](../debugger/changing-contexts.md). For more information about how to display local variables and other memory-related commands, see [Reading and Writing Memory](../debugger/reading-and-writing-memory.md).
 
@@ -76,12 +76,4 @@ If you use the **n** parameter with the [**k**](k--kb--kc--kd--kp--kp--kv--displ
 You can set the local context to a different stack frame to enable you to view new local variable information. However, the actual variables that are available depend on the code that is being executed.
 
 The local context is reset to the scope of the program counter if any application execution occurs. The local context is reset to the top stack frame if the register context is changed.
-
- 
-
- 
-
-
-
-
 

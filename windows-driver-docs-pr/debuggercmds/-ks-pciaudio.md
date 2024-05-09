@@ -1,7 +1,7 @@
 ---
-title: ks.pciaudio
-description: The ks.pciaudio extension displays a list of FDOs currently attached to PortCls.
-keywords: ["ks.pciaudio Windows Debugging"]
+title: "!ks.pciaudio"
+description: "The !ks.pciaudio extension displays a list of FDOs currently attached to PortCls."
+keywords: ["!ks.pciaudio Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -60,7 +60,7 @@ Optional, and applicable only if Bit 3 is set in *Options*. Levels are the same 
 
  
 
-### Additional Information
+## Additional Information
 
 For more information, see [Kernel Streaming Debugging](../debugger/kernel-streaming-debugging.md).
 
@@ -73,12 +73,4 @@ kd> !ks.pciaudio
 1 Audio FDOs found:
  Functional Device 8299be18 [\Driver\smwdm]
 ```
-
- 
-
- 
-
-
-
-
 

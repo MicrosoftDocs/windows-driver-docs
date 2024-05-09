@@ -1,6 +1,6 @@
 ---
-title: .noshell (Prohibit Shell Commands)
-description: The .noshell command prevents you from using .shell commands.
+title: ".noshell (Prohibit Shell Commands)"
+description: "The .noshell command prevents you from using .shell commands."
 keywords: [".noshell (Prohibit Shell Commands) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -24,7 +24,7 @@ The **.noshell** command prevents you from using [**.shell**](-shell--command-sh
 ## <span id="ddk_meta_prohibit_shell_commands_dbg"></span><span id="DDK_META_PROHIBIT_SHELL_COMMANDS_DBG"></span>
 
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -34,7 +34,7 @@ The **.noshell** command prevents you from using [**.shell**](-shell--command-sh
 
  
 
-### Additional Information
+## Additional Information
 
 For more information about the command shell and for other ways to disable shell commands, see [Using Shell Commands](using-shell-commands.md).
 
@@ -43,12 +43,4 @@ For more information about the command shell and for other ways to disable shell
 If you use the **.noshell** command, you cannot use [**.shell (Command Shell)**](-shell--command-shell-.md) commands as long as the debugger is running, even if you start a new debugging session.
 
 If you are performing remote debugging, this command is useful for security purposes.
-
- 
-
- 
-
-
-
-
 

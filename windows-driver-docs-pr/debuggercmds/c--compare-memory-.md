@@ -1,6 +1,6 @@
 ---
-title: c (Compare Memory)
-description: The c command compares the values held in two memory areas.
+title: "c (Compare Memory)"
+description: "The c command compares the values held in two memory areas."
 keywords: ["c (Compare Memory) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -30,7 +30,7 @@ The first of the two memory ranges to be compared. For more syntax details, see 
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 The starting address of the second memory range to be compared. The size of this range will be the same as that specified for the first range. For more syntax details, see [Address and Address Range Syntax](address-and-address-range-syntax.md).
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -40,7 +40,7 @@ The starting address of the second memory range to be compared. The size of this
 
  
 
-### Additional Information
+## Additional Information
 
 For an overview of memory manipulation and a description of other memory-related commands, see [Reading and Writing Memory](../debugger/reading-and-writing-memory.md).
 
@@ -70,12 +70,4 @@ To compare **rgBuf1** and **rgBuf2**, use either of the following commands:
 
 0:000> c rgBuf1 L 0n100 rgBuf2
 ```
-
- 
-
- 
-
-
-
-
 

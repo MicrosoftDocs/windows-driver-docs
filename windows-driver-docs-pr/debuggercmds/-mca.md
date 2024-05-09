@@ -1,7 +1,7 @@
 ---
-title: mca (WinDbg)
-description: On an x86 target computer, the mca extension displays the machine check architecture (MCA) registers.
-keywords: ["machine check architecture (MCA)", "MCA (machine check architecture)", "mca Windows Debugging"]
+title: "!mca (WinDbg)"
+description: "On an x86 target computer, the !mca extension displays the machine check architecture (MCA) registers."
+keywords: ["machine check architecture (MCA)", "MCA (machine check architecture)", "!mca Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -20,9 +20,7 @@ The !mca extension displays the machine check architecture (MCA) registers.
 !mca
 ```
 
-
-## <span id="ddk__mca_dbg"></span><span id="DDK__MCA_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 (Itanium target only) Specifies the address of the MCA error record.
@@ -58,9 +56,7 @@ Displays to include the platform bus section.
 
 Kdexts.dll
 
- 
-
-This extension command can only be used with an x86-based target computer.
+ This extension command can only be used with an x86-based target computer.
 
 ## Remarks
 
@@ -96,12 +92,3 @@ HalpFeatureBits not found
 CP F/M/S Manufacturer  MHz Update Signature Features
  0 6,5,1 GenuineIntel  334 0000004000000000 00001fff
 ```
-
- 
-
- 
-
-
-
-
-

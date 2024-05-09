@@ -1,7 +1,7 @@
 ---
-title: critsec (WinDbg)
-description: The critsec extension displays a critical section.
-keywords: ["critsec Windows Debugging"]
+title: "!critsec (WinDbg)"
+description: "The !critsec extension displays a critical section."
+keywords: ["!critsec Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -31,7 +31,7 @@ Specifies the hexadecimal address of the critical section.
 
 Ntsdexts.dll
 
-### dditional Information
+## Additional Information
 
 For other commands and extensions that can display critical section information, see [Displaying a Critical Section](../debugger/displaying-a-critical-section.md). For information about critical sections, see the Microsoft Windows SDK documentation, the Windows Driver Kit (WDK) documentation, and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
@@ -60,3 +60,4 @@ ContentionCount    1
 [Critical Section Time Outs](../debugger/critical-section-time-outs.md) (user mode)
 
 [!cs ](-cs.md)
+

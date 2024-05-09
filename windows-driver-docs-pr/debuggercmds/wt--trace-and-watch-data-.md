@@ -1,6 +1,6 @@
 ---
-title: wt (Trace and Watch Data)
-description: The wt command runs through the whole function and then displays statistics, when you execute this command at the beginning of a function call.
+title: "wt (Trace and Watch Data)"
+description: "The wt command runs through the whole function and then displays statistics, when you execute this command at the beginning of a function call."
 keywords: ["wt (Trace and Watch Data) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -90,7 +90,7 @@ Specifies the address where the debugger begins execution. If you do not use *St
 <span id="_______EndAddress______"></span><span id="_______endaddress______"></span><span id="_______ENDADDRESS______"></span> *EndAddress*   
 Specifies the address where tracing ends. If you do not use *EndAddress*, a single instruction or function call is executed.
 
-### Environment
+## Environment
 
 <table>
 <colgroup>
@@ -117,7 +117,7 @@ Specifies the address where tracing ends. If you do not use *EndAddress*, a sing
 
  
 
-### Additional Information
+## Additional Information
 
 For more information about issuing the **wt** command and an overview of related commands, see [Controlling the Target](../debugger/controlling-the-target.md).
 
@@ -204,12 +204,4 @@ In the preceding example, **MyModule!myFunction** executes 105 instructions befo
 In the preceding example, note also that **ILT+1440 (\_\_isatty)** is called 21 times. In the final count, the summary of this function's behavior shows the number of times that it was called, the smallest number of instructions in any single execution, the largest number of instructions in any single execution, and the average number of instructions per execution.
 
 If any system calls are made, they appear in the counter and are listed again at the end of the command output.
-
- 
-
- 
-
-
-
-
 

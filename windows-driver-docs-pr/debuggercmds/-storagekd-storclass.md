@@ -1,7 +1,7 @@
 ---
-title: storagekd.storclass
-description: The storagekd.storclass extension displays information about the specified classpnp device.
-keywords: ["storagekd.storclass Windows Debugging"]
+title: "!storagekd.storclass"
+description: "The !storagekd.storclass extension displays information about the specified classpnp device."
+keywords: ["!storagekd.storclass Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -32,18 +32,7 @@ Specifies the amount of detail to display. This parameter can be set to 0, 1, or
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 8 and later</strong></p></td>
-<td align="left"><p>Storagekd.dll</p></td>
-</tr>
-</tbody>
-</table>
+Storagekd.dll
 
  
 
@@ -96,12 +85,4 @@ Classpnp External Information at fffffa80043dc1b0
 
     -- dt classpnp!_FUNCTIONAL_DEVICE_EXTENSION fffffa80043dc1b0 --
 ```
-
- 
-
- 
-
-
-
-
 

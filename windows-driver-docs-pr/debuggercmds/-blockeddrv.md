@@ -1,7 +1,7 @@
 ---
-title: blockeddrv
-description: The blockeddrv extension displays the list of blocked drivers on the target computer.
-keywords: ["blocked drivers", "blockeddrv Windows Debugging"]
+title: "!blockeddrv"
+description: "The !blockeddrv extension displays the list of blocked drivers on the target computer."
+keywords: ["blocked drivers", "!blockeddrv Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -26,7 +26,7 @@ The **!blockeddrv** extension displays the list of blocked drivers on the target
 
 ## DLL
 
-Windows XP and later - Kdexts.dll
+Kdexts.dll
 
  
 
@@ -45,12 +45,4 @@ Beep.SYS     0:        {0000005C-B04A-E12E-5600-000020885580}
 Cdfs.SYS     0:        {00000008-0206-0001-0000-000008F036E1}
 .....
 ```
-
- 
-
- 
-
-
-
-
 

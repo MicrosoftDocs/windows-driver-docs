@@ -1,6 +1,6 @@
 ---
-title: .create (Create Process)
-description: The .create command creates a new target application.
+title: ".create (Create Process)"
+description: "The .create command creates a new target application."
 keywords: [".create (Create Process) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -33,7 +33,7 @@ Freezes all threads in all target applications, except in the new target being c
 <span id="_______CommandLine______"></span><span id="_______commandline______"></span><span id="_______COMMANDLINE______"></span> *CommandLine*   
 Specifies the complete command line for the new process. *CommandLine* may contain spaces, and must not be surrounded with quotes. All text after the **.create** command is taken as part of *CommandLine*; this command cannot be followed with a semicolon and additional debugger commands.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -53,12 +53,4 @@ Multiple target processes will always be executed together, unless some of their
 If you wish to create a new process and freeze all your existing targets, use the -f option.
 
 If the **-premote** option is used, the new process will be part of a new system. For details, see [Debugging Multiple Targets](../debugger/debugging-multiple-targets.md).
-
- 
-
- 
-
-
-
-
 

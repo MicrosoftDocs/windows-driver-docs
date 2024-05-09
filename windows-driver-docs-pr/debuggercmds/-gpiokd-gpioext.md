@@ -1,7 +1,7 @@
 ---
-title: gpiokd.gpioext
-description: The gpiokd.gpioext command displays information about a GPIO controller.
-keywords: ["gpiokd.gpioext Windows Debugging"]
+title: "!gpiokd.gpioext"
+description: "The !gpiokd.gpioext extension displays information about a GPIO controller."
+keywords: ["!gpiokd.gpioext Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -15,13 +15,13 @@ api_type:
 # !gpiokd.gpioext
 
 
-The **!gpiokd.gpioext** command displays information about a GPIO controller.
+The **!gpiokd.gpioext** extension displays information about a GPIO controller.
 
 ```dbgcmd
 !gpiokd.gpioext ExtensionAddress [Flags]
 ```
 
-## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
+## Parameters
 
 
 <span id="_______ExtensionAddress______"></span><span id="_______extensionaddress______"></span><span id="_______EXTENSIONADDRESS______"></span> *ExtensionAddress*   
@@ -59,22 +59,14 @@ Flags that specify which information is displayed. This parameter is a bitwise O
 
  
 
-## <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 
 Gpiokd.dll
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [GPIO Extensions](gpio-extensions.md)
-
- 
-
- 
-
-
-
-
 
 

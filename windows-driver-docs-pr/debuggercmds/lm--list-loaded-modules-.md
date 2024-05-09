@@ -1,6 +1,6 @@
 ---
-title: lm (List Loaded Modules)
-description: The lm command displays the specified loaded modules. The output includes the status and the path of the module.
+title: "lm (List Loaded Modules)"
+description: "The lm command displays the specified loaded modules. The output includes the status and the path of the module."
 keywords: ["lm (List Loaded Modules) Windows Debugging"]
 ms.date: 08/29/2023
 topic_type:
@@ -101,7 +101,7 @@ M *Pattern*
 
 Specifies a pattern that the image path must match. Pattern can contain a variety of wildcard characters and specifiers. For more information about the syntax of this information, see [String Wildcard Syntax](string-wildcard-syntax.md).
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -185,3 +185,4 @@ start    end        module name
 - [Controlling Processes and Threads](../debugger/controlling-processes-and-threads.md).
 - [Standard debugging techniques](../debugger/standard-debugging-techniques.md)
 - [Get started with Windows Debugging](../debugger/getting-started-with-windows-debugging.md)
+

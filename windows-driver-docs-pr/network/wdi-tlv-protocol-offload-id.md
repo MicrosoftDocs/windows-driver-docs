@@ -25,7 +25,7 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 
 | Type | Description |
 | --- | --- |
-| UINT8\[\] | Specifies the the protocol offload identifier. |
+| UINT8\[\] | Specifies the protocol offload identifier. |
 
 ## Requirements
 

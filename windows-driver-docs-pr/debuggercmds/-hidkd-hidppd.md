@@ -1,7 +1,7 @@
 ---
-title: hidkd.hidppd HID extension
-description: The hidkd.hidppd command displays HID preparsed data.
-keywords: ["hidkd.hidppd Windows Debugging"]
+title: "!hidkd.hidppd HID extension"
+description: "The !hidkd.hidppd extension command displays HID preparsed data."
+keywords: ["!hidkd.hidppd Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,21 +14,18 @@ api_type:
 
 # !hidkd.hidppd
 
-
-The **!hidkd.hidppd** command displays HID preparsed data.
+The **!hidkd.hidppd** extension command displays HID preparsed data.
 
 ```dbgcmd
 !hidkd.hidppd ppd
 ```
 
-## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______ppd______"></span><span id="_______PPD______"></span> *ppd*   
 Address of a **HIDP\_PREPARSED\_DATA** structure. To get the address of a **HIDP\_PREPARSED\_DATA** structure, use [**!hidfdo**](-hidkd-hidfdo.md) or [**!hidpdo**](-hidkd-hidpdo.md).
 
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Hidkd.dll
 
@@ -70,17 +67,6 @@ Preparsed Data at 0xffffe000029d1010
   ...
 ```
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [HID Extensions](hid-extensions.md)
-
- 
-
- 
-
-
-
-
-
-

@@ -1,7 +1,7 @@
 ---
-title: usbkd.usbver
-description: The usbkd.usbver command displays the USBD interface version of the USB driver stack.
-keywords: ["usbkd.usbver Windows Debugging"]
+title: "!usbkd.usbver"
+description: "The !usbkd.usbver command displays the USBD interface version of the USB driver stack."
+keywords: ["!usbkd.usbver Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,15 +14,13 @@ api_type:
 
 # !usbkd.usbver
 
-
 The **!usbkd.usbver** command displays the USBD interface version of the USB driver stack.
 
 ```dbgcmd
 !usbkd.usbver
 ```
 
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Usbkd.dll
 
@@ -40,13 +38,10 @@ Here is an example of the output of **!usbkd.usbver**.
 USBD VER 600 USB stack is VISTA
 ```
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
 **USBD\_IsInterfaceVersionSupported**
- 
-

@@ -1,7 +1,7 @@
 ---
-title: hidkd.hidrd
-description: The hidkd.hidrd command displays a HID report descriptor in both raw and parsed format.
-keywords: ["hidkd.hidrd Windows Debugging"]
+title: "!hidkd.hidrd"
+description: "The !hidkd.hidrd extension command displays a HID report descriptor in both raw and parsed format."
+keywords: ["!hidkd.hidrd Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,14 +14,13 @@ api_type:
 
 # !hidkd.hidrd
 
-
-The **!hidkd.hidrd** command displays a HID report descriptor in both raw and parsed format.
+The **!hidkd.hidrd** extension command displays a HID report descriptor in both raw and parsed format.
 
 ```dbgcmd
 !hidkd.hidrd rd Length
 ```
 
-## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
+## Parameters
 
 
 <span id="_______rd______"></span><span id="_______RD______"></span> *rd*   
@@ -30,7 +29,7 @@ Address of the raw report descriptor data. To get the address of the descriptor 
 <span id="_______Length______"></span><span id="_______length______"></span><span id="_______LENGTH______"></span> *Length*   
 The length, in bytes, of the raw report descriptor data. To get the length, use the [**!hidfdo**](-hidkd-hidfdo.md) command.
 
-## <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 
 Hidkd.dll
@@ -71,17 +70,9 @@ Collection (Application).................................0x0004: A1 01
 End Collection ()........................................0x0126: C0
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [HID Extensions](hid-extensions.md)
-
- 
-
- 
-
-
-
-
 
 

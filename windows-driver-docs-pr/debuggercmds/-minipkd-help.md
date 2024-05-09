@@ -1,6 +1,6 @@
 ---
-title: minipkd.help
-description: The minipkd.help extension displays help text for the Minipkd.dll extension commands.
+title: "!minipkd.help"
+description: "The !minipkd.help extension displays help text for the Minipkd.dll extension commands."
 keywords: ["minipkd.help Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -23,26 +23,10 @@ The **!minipkd.help** extension displays help text for the Minipkd.dll extension
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Unavailable</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Minipkd.dll</p></td>
-</tr>
-</tbody>
-</table>
+Minipkd.dll
 
  
-
-### Additional Information
+## Additional Information
 
 For more information, see [SCSI Miniport Debugging](../debugger/scsi-miniport-debugging.md).
 
@@ -55,12 +39,4 @@ minipkd error (0) <path> ... \minipkd\minipkd.c @ line 435
 ```
 
 Use the [**.sympath (Set Symbol Path)**](-sympath--set-symbol-path-.md) command to display the current path and change the path. Use the [**.reload (Reload Module)**](-reload--reload-module-.md) command to reload symbols from the current path.
-
- 
-
- 
-
-
-
-
 

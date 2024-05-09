@@ -1,7 +1,7 @@
 ---
-title: usbkd._ehcitd
-description: The usbkd._ehcitd command displays information from a usbehci _TRANSFER_CONTEXT structure. 
-keywords: ["usbkd._ehcitd Windows Debugging"]
+title: "!usbkd._ehcitd"
+description: "The !usbkd._ehcitd command displays information from a usbehci _TRANSFER_CONTEXT structure. "
+keywords: ["!usbkd._ehcitd Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,21 +14,18 @@ api_type:
 
 # !usbkd.\_ehcitd
 
-
 The **!usbkd.\_ehcitd** command displays information from a **usbehci!\_TRANSFER\_CONTEXT** structure. Use this command to display information about asynchronous endpoints (that is, control and bulk endpoints).
 
 ```dbgcmd
 !usbkd._ehcitd StructAddr
 ```
 
-## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______StructAddr______"></span><span id="_______structaddr______"></span><span id="_______STRUCTADDR______"></span> *StructAddr*   
 Address of a **usbehci!\_TRANSFER\_CONTEXT** structure.
 
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Usbkd.dll
 
@@ -98,12 +95,12 @@ AltNextHcdTD: 21e65180
 SlotNextHcdTD: 21e65200
 ```
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
+
 

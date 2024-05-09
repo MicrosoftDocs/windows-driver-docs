@@ -1,7 +1,7 @@
 ---
-title: slist (WinDbg)
-description: The slist extension displays a singly-linked list (SList).
-keywords: ["SList (singly-linked list)", "slist Windows Debugging"]
+title: "!slist (WinDbg)"
+description: "The !slist extension displays a singly-linked list (SList)."
+keywords: ["SList (singly-linked list)", "!slist Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,7 +14,6 @@ api_type:
 
 # !slist
 
-
 The **!slist** extension displays a singly-linked list (SList).
 
 ```dbgcmd
@@ -22,8 +21,7 @@ The **!slist** extension displays a singly-linked list (SList).
 !slist -?
 ```
 
-## <span id="ddk__slist_dbg"></span><span id="DDK__SLIST_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the address of the SLIST\_HEADER.
@@ -39,24 +37,7 @@ Displays some brief Help text for this extension in the Debugger Command window.
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Unavailable</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Exts.dll</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+Exts.dll
 
 ## Remarks
 
@@ -133,12 +114,3 @@ SLIST CONTENTS:
    +0x004 Signature        : 1
    +0x008 Description      : [260]  "Signature is: 1"
 ```
-
- 
-
- 
-
-
-
-
-

@@ -1,7 +1,7 @@
 ---
-title: usb3kd.urb
-description: The usb3kd.urb extension displays information about a USB request block (URB).
-keywords: ["usb3kd.urb Windows Debugging"]
+title: "!usb3kd.urb"
+description: "The !usb3kd.urb extension displays information about a USB request block (URB)."
+keywords: ["!usb3kd.urb Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,21 +14,18 @@ api_type:
 
 # !usb3kd.urb
 
-
 The [**!usb3kd.urb**](-usb3kd-device-info.md) extension displays information about a USB request block (URB).
 
 ```dbgcmd
 !usb3kd.urb UrbAddress
 ```
 
-## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______UrbAddress______"></span><span id="_______urbaddress______"></span><span id="_______URBADDRESS______"></span> *UrbAddress*   
 Address of the URB.
 
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Usb3kd.dll
 
@@ -75,12 +72,8 @@ TransferBuffer:        0xfffffa8005a2cc88
 TransferBufferMDL:     0xfffffa8005848930
 ```
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [USB 3.0 Extensions](usb-3-extensions.md)
 
 [Universal Serial Bus (USB) Drivers](../usbcon/index.md)
-
- 
-

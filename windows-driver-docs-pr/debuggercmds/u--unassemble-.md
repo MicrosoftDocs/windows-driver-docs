@@ -1,6 +1,6 @@
 ---
-title: u, ub, uu (Unassemble)
-description: The u* commands display an assembly translation of the specified program code in memory. This command should not be confused with the ~u (Unfreeze Thread) command.
+title: "u, ub, uu (Unassemble)"
+description: "The u* commands display an assembly translation of the specified program code in memory. This command should not be confused with the ~u (Unfreeze Thread) command."
 keywords: ["u, ub, uu (Unassemble) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -40,7 +40,7 @@ Determines the memory range to disassemble by counting backward. If **ub** *Addr
 <span id="_______u______"></span><span id="_______U______"></span> **u**   
 Specifies that the disassembly will continue even if there is a memory read error.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -50,7 +50,7 @@ Specifies that the disassembly will continue even if there is a memory read erro
 
  
 
-### Additional Information
+## Additional Information
 
 For more information about assembly debugging and related commands, see [Debugging in Assembly Mode](../debugger/debugging-in-assembly-mode.md).
 
@@ -59,12 +59,4 @@ For more information about assembly debugging and related commands, see [Debuggi
 If you do not specify a parameter for the **u** command, the disassembly begins at the current address and extends eight instructions on an x86-based or x64-based processor. When you use **ub** without a parameter, the disassembly includes the eight or nine instructions before the current address.
 
 Do not confuse this command with the [**up (Unassemble from Physical Memory)**](up--unassemble-from-physical-memory-.md). The **u** command disassembles only virtual memory, while the **up** command disassembles only physical memory.
-
- 
-
- 
-
-
-
-
 

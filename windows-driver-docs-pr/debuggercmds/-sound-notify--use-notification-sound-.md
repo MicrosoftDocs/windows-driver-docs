@@ -1,6 +1,6 @@
 ---
-title: .sound_notify (Use Notification Sound)
-description: The .sound_notify command causes a sound to be played when WinDbg enters the wait-for-command state.
+title: ".sound_notify (Use Notification Sound)"
+description: "The .sound_notify command causes a sound to be played when WinDbg enters the wait-for-command state."
 keywords: [".sound_notify (Use Notification Sound) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -14,7 +14,6 @@ api_type:
 
 # .sound\_notify (Use Notification Sound)
 
-
 The **.sound\_notify** command causes a sound to be played when WinDbg enters the wait-for-command state.
 
 ```dbgcmd
@@ -25,7 +24,6 @@ The **.sound\_notify** command causes a sound to be played when WinDbg enters th
 
 ## Parameters
 
-
 <span id="________ed______"></span><span id="________ED______"></span> **/ed**   
 Causes the default Windows alert sound to be played when WinDbg enters the wait-for-command state.
 
@@ -35,38 +33,12 @@ Causes the sound contained in the specified file to be played when WinDbg enters
 <span id="________d"></span><span id="________D"></span> **/d**  
 Disables the playing of sounds.
 
-### Environment
+## Environment
 
 This command is available only in WinDbg and cannot be used in script files.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Modes</strong></p></td>
-<td align="left"><p>user mode, kernel mode</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Targets</strong></p></td>
-<td align="left"><p>live, crash dump</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Targets</strong></p></td>
-<td align="left"><p>all</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
- 
-
- 
-
-
-
-
-
+| Item      | Description               |
+|-----------|---------------------------|
+| Modes     | User mode, kernel mode    |
+| Targets   | Live, crash dump          |
+| Platforms | All                       |

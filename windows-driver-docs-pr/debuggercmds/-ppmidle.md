@@ -1,7 +1,7 @@
 ---
-title: ppmidle (WinDbg)
-description: The ppmidle command
-keywords: ["ppmidle Windows Debugging"]
+title: "!ppmidle (WinDbg)"
+description: "The !ppmidle extension command displays processor idle states."
+keywords: ["!ppmidle Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,8 +14,7 @@ api_type:
 
 # !ppmidle
 
-
-The **!ppmidle** command displays processor idle states.
+The **!ppmidle** extension command displays processor idle states.
 
 ```dbgcmd
 !ppmidle
@@ -36,11 +35,4 @@ This command is supported on the following versions of Windows:
 
 ## DLL
 
-Kdexts.dll 
-
- 
-
-
-
-
-
+Kdexts.dll

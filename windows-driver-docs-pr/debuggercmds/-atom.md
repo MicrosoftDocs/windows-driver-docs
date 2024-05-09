@@ -1,7 +1,7 @@
 ---
-title: atom (WinDbg)
-description: The atom extension displays the formatted atom table for the specified atom or for all atoms of the current process.
-keywords: ["atom Windows Debugging"]
+title: "!atom (WinDbg)"
+description: "The !atom extension displays the formatted atom table for the specified atom or for all atoms of the current process."
+keywords: ["!atom Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
 - apiref
@@ -32,15 +32,7 @@ Specifies the hexadecimal virtual address of the atom to display. If you omit th
 <p>Exts.dll</p>
  
 
-### Additional Information
+## Additional Information
 
 For more information about atoms and atom tables, see the Microsoft Windows SDK documentation.
-
- 
-
- 
-
-
-
-
 

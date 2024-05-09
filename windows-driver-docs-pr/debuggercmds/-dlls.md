@@ -1,7 +1,7 @@
 ---
-title: dlls (WinDbg)
-description: The dlls extension displays the table entries of all loaded modules or all modules that a specified thread or process are using.
-keywords: ["DLL table entry", "dlls Windows Debugging"]
+title: "!dlls (WinDbg)"
+description: "The !dlls extension displays the table entries of all loaded modules or all modules that a specified thread or process are using."
+keywords: ["DLL table entry", "!dlls Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -60,24 +60,10 @@ Displays some Help text for this extension in the [Debugger Command window](../d
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p></p>
-Kdextx86.dll
-Ntsdexts.dll</td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Exts.dll</p></td>
-</tr>
-</tbody>
-</table>
+
+Exts.dll
+
+
 
  
 
@@ -219,12 +205,4 @@ SECTION HEADER #3
          (no align specified)
          Read Only
 ```
-
- 
-
- 
-
-
-
-
 

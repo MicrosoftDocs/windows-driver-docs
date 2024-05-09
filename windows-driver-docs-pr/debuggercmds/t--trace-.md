@@ -1,6 +1,6 @@
 ---
-title: t (Trace)
-description: The t command executes a single instruction or source line and optionally displays the resulting values of all registers and flags. 
+title: "t (Trace)"
+description: "The t command executes a single instruction or source line and optionally displays the resulting values of all registers and flags. "
 keywords: ["t (Trace) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -49,7 +49,7 @@ Specifies the number of instructions or source lines to trace through before sto
 <span id="_______Command______"></span><span id="_______command______"></span><span id="_______COMMAND______"></span> *Command*   
 Specifies a debugger command to execute after the trace is performed. This command is executed before the standard **t** results are displayed. If you also use *Count*, this command is executed after all tracing is complete (but before the results from the final trace are displayed).
 
-### Environment
+## Environment
 
 |  Item       | Description               |
 |-----------|------------------------|
@@ -59,7 +59,7 @@ Specifies a debugger command to execute after the trace is performed. This comma
 
  
 
-### Additional Information
+## Additional Information
 
 For more information about how to issue the **t** command and an overview of related commands, see [Controlling the Target](../debugger/controlling-the-target.md).
 
@@ -74,12 +74,4 @@ If you want to trace most function calls but skip certain calls, you can use [**
 You can use the **t** command to trace instructions in ROM.
 
 When you are quickly tracing many times in WinDbg, the debugging information windows are updated after each trace. If this update causes slower response time, use [**.suspend\_ui (Suspend WinDbg Interface)**](-suspend-ui--suspend-windbg-interface-.md) to temporarily suspend the updating of these windows.
-
- 
-
- 
-
-
-
-
 

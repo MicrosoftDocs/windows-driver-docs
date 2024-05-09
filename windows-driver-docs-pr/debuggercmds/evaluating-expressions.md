@@ -1,6 +1,6 @@
 ---
-title: Evaluating Expressions
-description: Evaluating Expressions
+title: "Evaluating Expressions"
+description: "Evaluating Expressions"
 keywords: ["expressions, overview", "expressions, different types", "MASM expressions, when to use", "C++ expressions, when to use", "MASM expressions, overview", "C++ expressions, overview"]
 ms.date: 05/23/2017
 ---
@@ -80,12 +80,4 @@ For more information about the operators that you can use in C++ expressions and
 Remember that MASM operations are always byte-based, and C++ operations follow C++ type rules (including the scaling of pointer arithmetic).
 
 For some examples of the different syntaxes, see [Mixed Expression Examples](expression-examples.md).
-
- 
-
- 
-
-
-
-
 

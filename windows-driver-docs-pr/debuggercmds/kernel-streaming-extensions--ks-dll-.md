@@ -1,6 +1,6 @@
 ---
-title: Kernel Streaming Extensions (Ks.dll)
-description: Kernel Streaming Extensions (Ks.dll)
+title: "Kernel Streaming Extensions (Ks.dll)"
+description: "Kernel Streaming Extensions (Ks.dll)"
 keywords: ["kernel streaming debugging, extensions (ks.dll)", "ks.dll (kernel streaming extensions)", "extensions, kernel streaming"]
 ms.date: 05/23/2017
 ---
@@ -17,12 +17,4 @@ You need special symbols to use this extension.
 You can get additional information for many of the extension commands in this section simply by entering the command into the debugger with no arguments.
 
 For more information, see [Kernel Streaming Debugging](../debugger/kernel-streaming-debugging.md).
-
- 
-
- 
-
-
-
-
 

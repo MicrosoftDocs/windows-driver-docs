@@ -1,6 +1,6 @@
 ---
-title: k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)
-description: Learn how the k* commands display the stack frame of the given thread, together with related information.
+title: "k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)"
+description: "Learn how the k* commands display the stack frame of the given thread, together with related information."
 keywords: ["k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace) Windows Debugging"]
 ms.date: 07/05/2023
 topic_type:
@@ -161,3 +161,4 @@ In kernel mode, the stack trace is based on the current [register context](../de
 ## Additional information
 
 For more information about the Register context and other context settings, see [Changing contexts](../debugger/changing-contexts.md).
+

@@ -1,6 +1,6 @@
 ---
-title: Windows Driver Framework Extensions (Wdfkd.dll)
-description: Windows Driver Framework Extensions (Wdfkd.dll)
+title: "Windows Driver Framework Extensions (Wdfkd.dll)"
+description: "Windows Driver Framework Extensions (Wdfkd.dll)"
 keywords: ["Kernel-Mode Driver Framework debugging, extensions (wdfkd.dll)", "Kernel-Mode Driver Framework extensions (wdfkd.dll)", "wdfkd.dll (Kernel-Mode Driver Framework extensions)", "extensions, Kernel-Mode Driver Framework"]
 ms.date: 05/23/2017
 ---
@@ -17,12 +17,4 @@ These extensions can be used on Microsoft Windows XP and later operating systems
  
 
 For more information about how to use these extensions, see [Kernel-Mode Driver Framework Debugging](../debugger/kernel-mode-driver-framework-debugging.md).
-
- 
-
- 
-
-
-
-
 

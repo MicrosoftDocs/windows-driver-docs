@@ -1,7 +1,7 @@
 ---
-title: logexts.logc
-description: The logexts.logc extension displays all API categories, displays all APIs in a specific category, or enables and disables the logging of APIs in one or more categories.
-keywords: ["logexts.logc Windows Debugging"]
+title: "!logexts.logc"
+description: "The !logexts.logc extension displays all API categories, displays all APIs in a specific category, or enables and disables the logging of APIs in one or more categories."
+keywords: ["!logexts.logc Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -24,7 +24,7 @@ The **!logexts.logc** extension displays all API categories, displays all APIs i
 !logexts.logc 
 ```
 
-## <span id="ddk__logexts_logc_dbg"></span><span id="DDK__LOGEXTS_LOGC_DBG"></span>Parameters
+## Parameters
 
 
 <span id="_______e______"></span><span id="_______E______"></span> **e**   
@@ -44,26 +44,11 @@ Specifies the category whose APIs will be displayed. Only one category can be sp
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Logexts.dll</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Logexts.dll</p></td>
-</tr>
-</tbody>
-</table>
+Logexts.dll
 
  
 
-### Additional Information
+## Additional Information
 
 For more information, see [Logger and LogViewer](../debugger/logger-and-logviewer.md).
 
@@ -98,12 +83,4 @@ The following command will display all APIs belonging to category 3:
 ```dbgcmd
 0:000> !logexts.logc p 3
 ```
-
- 
-
- 
-
-
-
-
 

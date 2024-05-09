@@ -1,6 +1,6 @@
 ---
-title: Debugger Commands
-description: Debugger Commands
+title: "Debugger Commands"
+description: "Debugger Commands"
 keywords: ["debugger commands, reference", "debugger commands, complete listing"]
 ms.date: 05/23/2017
 ---
@@ -22,12 +22,4 @@ This section includes the following topics:
 [Meta-Commands](meta-commands.md)
 
 [Control Keys](../debugger/control-keys.md)
-
- 
-
- 
-
-
-
-
 

@@ -1,6 +1,6 @@
 ---
-title: TTD Position Objects
-description: This section describes the position model objects associated with time travel debugging.
+title: "TTD Position Objects"
+description: "This section describes the position model objects associated with time travel debugging."
 keywords: ["TTD Position Objects", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
 ms.date: 12/19/2017
 ---
@@ -37,3 +37,4 @@ A position of FFFFFFFFFFFFFFFE:0 indicates the end of the trace.
 [Time Travel Debugging - Introduction to Time Travel Debugging objects](time-travel-debugging-object-model.md)
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
+

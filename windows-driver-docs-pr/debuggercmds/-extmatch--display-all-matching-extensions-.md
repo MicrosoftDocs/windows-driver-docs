@@ -1,6 +1,6 @@
 ---
-title: .extmatch (Display All Matching Extensions)
-description: The .extmatch command displays extension commands exported by the currently loaded extension DLLs that match the specified pattern.
+title: ".extmatch (Display All Matching Extensions)"
+description: "The .extmatch command displays extension commands exported by the currently loaded extension DLLs that match the specified pattern."
 keywords: [".extmatch (Display All Matching Extensions) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -14,7 +14,6 @@ api_type:
 
 # .extmatch (Display All Matching Extensions)
 
-
 The **.extmatch** command displays extension commands exported by the currently loaded extension DLLs that match the specified pattern.
 
 ```dbgcmd
@@ -22,7 +21,6 @@ The **.extmatch** command displays extension commands exported by the currently 
 ```
 
 ## Parameters
-
 
 *Options*
 Specifies the searching options. You can use one or more of the following options:
@@ -39,7 +37,7 @@ Displays the output using [Debugger Markup Language (DML)](../debugger/debugger-
 <span id="_______Pattern______"></span><span id="_______pattern______"></span><span id="_______PATTERN______"></span> *Pattern*   
 Specifies a pattern that the extension must contain. *Pattern*can contain a variety of wildcard characters and specifiers. For more information about the syntax, see [String Wildcard Syntax](string-wildcard-syntax.md).
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -76,12 +74,4 @@ The following example lists all extension commands beginning with the string "he
 The following example lists all extension commands, so we can see which ones support DML.
 
 :::image type="content" source="images/extmatch01.png" alt-text="Screenshot of .extmatch /d command output.":::
-
- 
-
- 
-
-
-
-
 

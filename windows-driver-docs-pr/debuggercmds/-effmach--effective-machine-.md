@@ -1,6 +1,6 @@
 ---
-title: .effmach (Effective Machine)
-description: The .effmach command displays or changes the processor mode that the debugger uses.
+title: ".effmach (Effective Machine)"
+description: "The .effmach command displays or changes the processor mode that the debugger uses."
 keywords: ["Effective Machine (.effmach) command", ".effmach (Effective Machine) Windows Debugging"]
 ms.date: 01/24/2018
 topic_type:
@@ -74,7 +74,7 @@ You can enter one of the following machine types.
 
  
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -93,12 +93,4 @@ The processor mode influences many debugger features:
 -   Whether the process uses 32-bit or 64-bit pointers.
 
 -   Which processor's register set is active.
-
- 
-
- 
-
-
-
-
 

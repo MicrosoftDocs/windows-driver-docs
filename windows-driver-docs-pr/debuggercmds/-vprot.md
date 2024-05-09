@@ -1,7 +1,7 @@
 ---
-title: vprot (WinDbg)
-description: The vprot extension displays virtual memory protection information.
-keywords: ["memory, memory protection", "vprot Windows Debugging"]
+title: "!vprot (WinDbg)"
+description: "The !vprot extension displays virtual memory protection information."
+keywords: ["memory, memory protection", "!vprot Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -14,45 +14,24 @@ api_type:
 
 # !vprot
 
-
 The **!vprot** extension displays virtual memory protection information.
 
 ```dbgcmd
 !vprot [Address]
 ```
 
-## <span id="ddk__vprot_dbg"></span><span id="DDK__VPROT_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the hexadecimal address whose memory protection status is to be displayed.
 
 ## DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p></p>
 Uext.dll
-Ntsdexts.dll</td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Uext.dll</p></td>
-</tr>
-</tbody>
-</table>
 
- 
+## Additional Information
 
-### Additional Information
-
-To view memory protection information for all memory ranges owned by the target process, use [**!vadump**](-vadump.md). For information about memory protection, see *Microsoft Windows Internals* by Mark Russinovich and David Solomon. 
+To view memory protection information for all memory ranges owned by the target process, use [**!vadump**](-vadump.md). For information about memory protection, see *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
 ## Remarks
 
@@ -76,12 +55,3 @@ In this display, the AllocationProtect line shows the default protection that th
 The State line also applies to the specific virtual address passed to **!vprot**. The possible state values are MEM\_COMMIT, MEM\_FREE, and MEM\_RESERVE.
 
 The Type line shows the memory type. The possible values are MEM\_IMAGE, MEM\_MAPPED, and MEM\_PRIVATE.
-
- 
-
- 
-
-
-
-
-

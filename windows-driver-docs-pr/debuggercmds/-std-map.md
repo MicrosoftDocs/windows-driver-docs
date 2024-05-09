@@ -1,8 +1,8 @@
 ---
-title: std_map (WinDbg)
-description: The std_map extension displays the entries of a std map tree.
-keywords: ["std_map Windows Debugging"]
-ms.date: 09/12/2022
+title: "!std_map (WinDbg)"
+description: "The !std_map extension is obsolete and is no longer being supported."
+keywords: ["!std_map Windows Debugging"]
+ms.date: 04/01/2024
 topic_type:
 - apiref
 ms.topic: reference
@@ -14,4 +14,4 @@ api_type:
 
 # !std\_map
 
-The !std\_map extension command is obsolete and is no longer being supported. 
+The !std\_map extension command is obsolete and is no longer being supported.

@@ -1,6 +1,6 @@
 ---
-title: Multiprocessor Syntax
-description: This topic covers Multiprocessor Syntax
+title: "Multiprocessor Syntax"
+description: "This topic covers Multiprocessor Syntax"
 keywords: multiprocessor computer, multiprocessor, command syntax, dual-processor computer, syntax rules for commands, processor identifier
 ms.date: 05/23/2017
 ---
@@ -97,12 +97,4 @@ Then, any processor (not only processor one) that executes at that address cause
 You can use the [**!running**](-running.md) extension to display the status of each processor on the target computer. For each processor, **!running** can also display the current and next thread fields from the process control block (PRCB), the state of the 16 built-in queued spinlocks, and a stack trace.
 
 You can use the [**!cpuinfo**](-cpuinfo.md) and [**!cpuid**](-cpuid.md) extensions to display information about the processors themselves.
-
- 
-
- 
-
-
-
-
 

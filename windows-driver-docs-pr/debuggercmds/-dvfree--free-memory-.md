@@ -1,6 +1,6 @@
 ---
-title: .dvfree (Free Memory)
-description: The .dvfree command frees a memory allocation owned by the target process.
+title: ".dvfree (Free Memory)"
+description: "The .dvfree command frees a memory allocation owned by the target process."
 keywords: [".dvfree (Free Memory) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -33,7 +33,7 @@ Specifies the virtual address of the beginning of the allocation.
 <span id="_______Size______"></span><span id="_______size______"></span><span id="_______SIZE______"></span> *Size*   
 Specifies the amount of memory to be freed, in bytes. The actual memory freed will always be a whole number of memory pages.
 
-### Environment
+## Environment
 
 |  Item  | Description          |
 |--------|----------------------|
@@ -47,12 +47,4 @@ Specifies the amount of memory to be freed, in bytes. The actual memory freed wi
 The **.dvfree** command calls **VirtualFreeEx** to free an existing memory allocation. Unless the **/d** option is specified, the pages containing this memory are released.
 
 This command can be used to free an allocation made by [**.dvalloc (Allocate Memory)**](-dvalloc--allocate-memory-.md). It can also be used to free any block of memory owned by the target process, but freeing memory that was not acquired through **.dvalloc** will naturally pose risks to the stability of the target process.
-
- 
-
- 
-
-
-
-
 
