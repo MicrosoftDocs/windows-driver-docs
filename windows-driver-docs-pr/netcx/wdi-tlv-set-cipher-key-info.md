@@ -2,7 +2,7 @@
 title: WDI_TLV_SET_CIPHER_KEY_INFO (dot11wificxtypes.hpp)
 ms.topic: reference
 description: WDI_TLV_SET_CIPHER_KEY_INFO is a WiFiCx TLV that contains cipher key mapping key information for OID_WDI_SET_ADD_CIPHER_KEYS.
-ms.date: 07/31/2021
+ms.date: 08/22/2023
 keywords:
  - WDI_TLV_SET_CIPHER_KEY_INFO Network Drivers Starting with Windows Vista
 ---
@@ -36,6 +36,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 | [**WDI_TLV_CIPHER_KEY_BIP_GMAC_256_KEY**](wdi-tlv-cipher-key-bip-gmac-256-key.md) | | X | Contains GMAC\_256 cipher algorithm key data. This is only present if cipher algorithm is WDI\_CIPHER\_ALGO\_BIP\_GMAC\_256. |
 | [**WDI\_TLV\_CIPHER\_KEY\_WEP\_KEY**](wdi-tlv-cipher-key-wep-key.md) | | X | Specifies the WEP key. This is only present if the cipher algorithm is WDI\_CIPHER\_ALGO\_WEP40, WDI\_CIPHER\_ALGO\_WEP104, or WDI\_CIPHER\_ALGO\_WEP |
 | [**WDI\_TLV\_CIPHER\_KEY\_IHV\_KEY**](wdi-tlv-cipher-key-ihv-key.md) | | X | Specifies the IHV cipher key. This is only present if [**WDI\_TLV\_CIPHER\_KEY\_TYPE\_INFO**](wdi-tlv-cipher-key-type-info.md) is in the range WDI\_CIPHER\_ALGO\_IHV\_START to WDI\_CIPHER\_ALGO\_IHV\_END. |
+| [**WDI_TLV_LINK_ID**](wdi-tlv-link-id.md) | | X | Specifies the AP's link Id. This will be present when setting or querying the link-specific keys on a multi-link connection. |
 
 ## Requirements
 

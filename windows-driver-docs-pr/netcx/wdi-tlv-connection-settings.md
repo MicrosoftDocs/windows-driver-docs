@@ -2,7 +2,7 @@
 title: WDI_TLV_CONNECTION_SETTINGS (dot11wificxtypes.hpp)
 ms.topic: reference
 description: WDI_TLV_CONNECTION_SETTINGS is a WiFiCx TLV that contains connection settings for OID_WDI_TASK_CONNECT.
-ms.date: 06/30/2021
+ms.date: 03/01/2024
 keywords:
  - WDI_TLV_CONNECTION_SETTINGS Network Drivers Starting with Windows Vista
 ---
@@ -37,6 +37,10 @@ The sum (in bytes) of the sizes of all contained elements.
 | [**WDI\_ASSOC\_STATUS**](/windows-hardware/drivers/ddi/dot11wificxtypes/ne-dot11wificxtypes-wdi_assoc_status) (UINT32) | Specifies the roaming needed reason. If this is triggered due to [NDIS\_STATUS\_WDI\_INDICATION\_ROAMING\_NEEDED](./ndis-status-wdi-indication-roaming-needed.md), this contains the reason from the roam indication. |
 | [**WDI\_ROAM\_TRIGGER**](/windows-hardware/drivers/ddi/dot11wificxtypes/ne-dot11wificxtypes-wdi_roam_trigger) (UINT32) | Specifies whether this roam is a critical roam because the AP has set the Disassociation Imminent bit in its BSS Transition Request action frame.                                                                         |
 | UINT8                                                        | Specifies if 802.11v BSS transition is supported. If this bit is set to 1, the Station must set the BSS Transition field of the Extended capabilities element (Bit 19) to 1 in the association request.                   |
+| UINT8 | The **MloConnectionSupported** flag that specifies if Multi-Link Operation (MLO) connection is supported. |
+| UINT8 | Specifies if this is a FIPS mode connection.  The station must use only certified cipher algorithms if HostFIPSModeEnabled is false (for example, when hardware FIPS support is used). |
+| UINT8 | The **MSCSSupported** flag specifies if the OS supports MSCS for this connection. If set to 1, the IHV driver must set the Mirrored SCS field of the Extended Capabilities element (Bit 85) to 1 in the association request. |
+| UINT8 | The **DSCPToUPMappingSupported** flag specifies if the OS supports QOS Mapping for this connection. If set to 1, the IHV driver must set the QoS Map field of the Extended Capabilities element (Bit 32) to 1 in the association request. |
 
  
 
