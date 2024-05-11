@@ -67,7 +67,7 @@ The audio miniport also has a way to notify and pass information to Audio Module
 
 ### Enable, Disable and General Topology Information
 
-The Audio Modules APIs define how to enumerate and send commands to the modules. However, the APIs do not explicitly define how Audio Module clients can enable or disable specific modules. Also, it does not establish a way for clients to find topology information or the placement of modules in relation to one another. IHVs and ISVs can determine if this functionality is needed an decide how to implement it.
+The Audio Modules APIs define how to enumerate and send commands to the modules. However, the APIs do not explicitly define how Audio Module clients can enable or disable specific modules. Also, it does not establish a way for clients to find topology information or the placement of modules in relation to one another. IHVs and ISVs can determine if this functionality is needed and decide how to implement it.
 
 The recommended approach is exposing a global driver module. The global driver module would handle custom commands for these topology specific requests.
 

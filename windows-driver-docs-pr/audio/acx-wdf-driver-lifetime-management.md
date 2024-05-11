@@ -40,7 +40,7 @@ PnP Power events can cause object creation and destruction. For more information
 
 ### WDF object reference lifetime management
 
-WDF uses reference counts to help track the lifetime of objects. It may be appropriate in a cleanup call back function, to dereference object references. The the framework call this cleanup call back function, so that the driver can call WdfObjectDereference if it had previously called WdfObjectReference for the object that is being deleted. For more information, see [WdfObjectReference](/windows-hardware/drivers/wdf/wdfobjectreference) and [WdfObjectDereference](/windows-hardware/drivers/wdf/wdfobjectdereference).
+WDF uses reference counts to help track the lifetime of objects. It may be appropriate in a cleanup call back function, to dereference object references. The framework call this cleanup call back function, so that the driver can call WdfObjectDereference if it had previously called WdfObjectReference for the object that is being deleted. For more information, see [WdfObjectReference](/windows-hardware/drivers/wdf/wdfobjectreference) and [WdfObjectDereference](/windows-hardware/drivers/wdf/wdfobjectdereference).
 
 ### Surface Team driver development best practices
 
