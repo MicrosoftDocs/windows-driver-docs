@@ -6,7 +6,7 @@ ms.date: 07/27/2023
 
 # HFP device removal
 
-This article discusses what how the audio driver should respond when when a Bluetooth hands-free profile (HFP) device is removed from (leaves) the audio system.
+This article discusses what how the audio driver should respond when a Bluetooth hands-free profile (HFP) device is removed from (leaves) the audio system.
 
 To remove the registered device interface for a paired HFP device, follow these steps:
 

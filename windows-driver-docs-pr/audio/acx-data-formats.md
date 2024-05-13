@@ -14,7 +14,7 @@ This topic describes how ACX format types are used by a driver to track, manage 
 Two ACX objects are used to work with data formats.
 
 - ACXDATAFORMAT which represents a data format supported by the audio device.
-- ACXDATAFORMATLIST which is a a list of audio data formats available for use.
+- ACXDATAFORMATLIST which is a list of audio data formats available for use.
 
 For more information about working with ACX objects, see [Summary of ACX Objects](acx-summary-of-objects.md).
 

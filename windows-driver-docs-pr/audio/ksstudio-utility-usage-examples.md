@@ -44,7 +44,7 @@ Audio device is installed. One or more expected mixer lines is missing from SndV
 
 **Troubleshooting:** 
 
-1) *Does the filter's topology look correct in KSStudio?* Lauch KSStudio and enumerate KSCATEGORY_AUDIO. Instantiate your Topology filter and choose the View Nodes option in the Object Topology View. Does the filter topology look correct? If so repeat for the corresponding KSCATEGORY_AUDIO_DEVICE filter. If this topology looks reasonable go to (2), else there is some problem in your topology filter that prevents expression of the topology to components higher in the audio stack. For more information on how filter topology is translated into mixer lines, see the DDK documentation. 
+1) *Does the filter's topology look correct in KSStudio?* Launch KSStudio and enumerate KSCATEGORY_AUDIO. Instantiate your Topology filter and choose the View Nodes option in the Object Topology View. Does the filter topology look correct? If so repeat for the corresponding KSCATEGORY_AUDIO_DEVICE filter. If this topology looks reasonable go to (2), else there is some problem in your topology filter that prevents expression of the topology to components higher in the audio stack. For more information on how filter topology is translated into mixer lines, see the DDK documentation. 
 
 2) *Do the mixer lines show up as expected in MixApp?* MixApp is a very simple but useful Windows SDK sample app. If the mixer lines look correct in MixApp, but not in the problematic mixer application cited earlier, then it is likely an app bug. 
 
