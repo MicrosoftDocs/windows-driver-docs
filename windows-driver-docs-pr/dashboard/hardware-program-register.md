@@ -13,7 +13,7 @@ This article shows you how to register for the Microsoft Windows Hardware Develo
 
 - Windows Hardware Compatibility Agreement
 
-- Windows Logo License Agreement (LLA) (ver. 2021)
+- Microsoft Marks License Agreement (MMLA) (ver. 2024)
 
 - Windows Analytics Agreement (ver. 2.0)
 
