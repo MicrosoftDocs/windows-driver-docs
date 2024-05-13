@@ -66,7 +66,7 @@ The DDIs for targets are defined in the [acxtargets.h](/windows-hardware/drivers
 
 ## ACX Stream Bridge
 
-The AcxStreamBridge object is used by a circuit to propagate a stream creation, stream’s states transitions and DRM settings between circuit segments. This object is only used in a multi circuit (audio composite) scenario. A driver may associate one or more ACXSTREAMBRIDGE objects to a bridge pin. A bridge pin is the ACXPIN that logically connects to the correspoinding ACXPIN on the other circuit.
+The AcxStreamBridge object is used by a circuit to propagate a stream creation, stream’s states transitions and DRM settings between circuit segments. This object is only used in a multi circuit (audio composite) scenario. A driver may associate one or more ACXSTREAMBRIDGE objects to a bridge pin. A bridge pin is the ACXPIN that logically connects to the corresponding ACXPIN on the other circuit.
 
 The DDIs for Stream are described in the [acxstreams.h](/windows-hardware/drivers/ddi/acxstreams) header.
 

@@ -71,7 +71,7 @@ The OS can query the audio driver for loopback tapping point capabilities. The c
 
 The stream created on the loopback pin collects DSP-mixed output and provides it as a capture stream back to the OS. One way for the driver to get options from OS is through stream attributes. If no attributes are applied to the loopback stream, then loopback should be collected before volume and mute is applied on the mixer output.
 
-For a user mode client, the switch between pre volume loopback and post volume loopback is done via AUDCLNT_STREAMOPTIONS_POST_VOLUME_LOOPBACK, passed in as a [AUDCLNT_STREAMOPTIONS (audioclient.h)](/windows/win32/api/audioclient/ne-audioclient-audclnt_streamoptions) when calling SetClientProperties.
+For a user mode client, the switch between pre volume loopback and post volume loopback is done via AUDCLNT_STREAMOPTIONS_POST_VOLUME_LOOPBACK, passed in as an [AUDCLNT_STREAMOPTIONS (audioclient.h)](/windows/win32/api/audioclient/ne-audioclient-audclnt_streamoptions) when calling SetClientProperties.
 
 ### KSNODETYPE_AUDIO_LOOPBACK
 

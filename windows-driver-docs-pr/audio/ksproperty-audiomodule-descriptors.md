@@ -57,7 +57,7 @@ The property value is a structure, followed by zero (0) or more [**KSAUDIOMODULE
 
 **KSPROPERTY\_AUDIOMODULE\_DESCRIPTORS** returns an array of these descriptors is returned in response to this request.
 
-If the driver support this property but it doesn’t have any audio modules, it returns an ksmultiple\_item with zero element count.
+If the driver support this property but it doesn’t have any audio modules, it returns a ksmultiple\_item with zero element count.
 
 For more information about audio modules, see [Implementing Audio Module Discovery](./implementing-audio-module-communication.md).
 

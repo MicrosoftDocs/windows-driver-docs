@@ -99,7 +99,7 @@ The following code is from the [Aec APO MFX sample - AecApoMfx.cpp](https://gith
 The  [IApoAcousticEchoCancellation interface](/windows/win32/api/audioenginebaseapo/nn-audioenginebaseapo-iapoacousticechocancellation) has no explicit methods on it. Its purpose is to identify an AEC APO to the audio engine. This interface may only be implemented by mode effects (MFX) on capture endpoints. Implementing this interface on any other APO will lead to a failure in loading that APO. For general information about MFX, see [Audio Processing Objects Architecture](./audio-processing-object-architecture.md).
 
 If the mode effect on a capture endpoint is implemented as a series of chained APOs, only the APO closest to the device may implement this interface.
-APOs that implement this interface will be offered the APO_CONNECTION_PROPERTY_V2 structure in its call to [IAudioProcessingobjectRT::APOProcess](/windows/win32/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobjectrt-apoprocess). The APO can check for a APO_CONNECTION_PROPERTY_V2_SIGNATURE signature on the connection property and typecast the incoming APO_CONNECTION_PROPERTY structure to a APO_CONNECTION_PROPERTY_V2 structure. 
+APOs that implement this interface will be offered the APO_CONNECTION_PROPERTY_V2 structure in its call to [IAudioProcessingobjectRT::APOProcess](/windows/win32/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobjectrt-apoprocess). The APO can check for an APO_CONNECTION_PROPERTY_V2_SIGNATURE signature on the connection property and typecast the incoming APO_CONNECTION_PROPERTY structure to an APO_CONNECTION_PROPERTY_V2 structure. 
 
 In recognition of the fact that AEC APOs usually run their algorithms at a specific sampling rate/channel count, the audio engine provides resampling support to APOs that implement the IApoAcousticEchoCancellation interface.
 
@@ -357,7 +357,7 @@ The way to think about user versus default is whether you want the properties to
 
 #### APO Contexts
 
-The CAPX settings framwork allows an APO author to group APO properties by *contexts*. Each APO can define its own context and update properties relative to its own context. The effects property store for an audio endpoint may have zero or more contexts. Vendors are free to create contexts however they choose, whether that is by SFX/MFX/EFX or by mode. A vendor could also choose to have a single context for all APOs shipped by that vendor.
+The CAPX settings framework allows an APO author to group APO properties by *contexts*. Each APO can define its own context and update properties relative to its own context. The effects property store for an audio endpoint may have zero or more contexts. Vendors are free to create contexts however they choose, whether that is by SFX/MFX/EFX or by mode. A vendor could also choose to have a single context for all APOs shipped by that vendor.
 
 ### Settings Restricted Capability
 
@@ -550,7 +550,7 @@ private:
     wil::com_ptr_nothrow<IPropertyStore> m_userStore;
     wil::com_ptr_nothrow<IPropertyStore> m_volatileStore;
 
-    // Each APO has its own private collection of properties. The collection is dentified through a
+    // Each APO has its own private collection of properties. The collection is identified through a
     // a property store context GUID, which is defined below and in the audio driver INF file.
     const GUID m_propertyStoreContext = ...;
 };
@@ -850,7 +850,7 @@ STDMETHODIMP SampleApo::GetApoNotificationRegistrationInfo(
     (void)m_device.query_to(&apoNotificationDescriptors[0].audioSystemEffectsPropertyChange.device);
     apoNotificationDescriptors[0].audioSystemEffectsPropertyChange.propertyStoreContext =   m_propertyStoreContext;
 
-    // Our APO wants to get notified when a endpoint property changes on the audio endpoint.
+    // Our APO wants to get notified when an endpoint property changes on the audio endpoint.
     apoNotificationDescriptors[1].type = APO_NOTIFICATION_TYPE_ENDPOINT_PROPERTY_CHANGE;
     (void)m_device.query_to(&apoNotificationDescriptors[1].audioEndpointPropertyChange.device);
 
@@ -893,7 +893,7 @@ STDMETHODIMP_(void) SampleApo::HandleNotification(_In_ APO_NOTIFICATION* apoNoti
         && apoNotification->audioSystemEffectsPropertyChange.propertyStoreType == AUDIO_SYSTEMEFFECTS_PROPERTYSTORE_TYPE_USER)
     {
         // Check if one of the properties that we are interested in has changed.
-        // As an example, we check for "PKEY_Endpoint_Enable_Channel_Swap_SFX" which is a ficticious
+        // As an example, we check for "PKEY_Endpoint_Enable_Channel_Swap_SFX" which is a fictitious
         // PROPERTYKEY that could be set on our user property store.
         if (apoNotification->audioSystemEffectsPropertyChange.propertyKey ==
             PKEY_Endpoint_Enable_Channel_Swap_SFX)

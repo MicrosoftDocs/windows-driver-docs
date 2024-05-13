@@ -60,7 +60,7 @@ Applications do not have the option to change the mapping between an audio categ
 The following WASAPI code from the WASAPIAudio sample shows how to set different audio categories.
 
 ```cpp
-// The ActivateAudioInterfaceAsync is a replacment for IMMDevice::Activate
+// The ActivateAudioInterfaceAsync is a replacement for IMMDevice::Activate
 IActivateAudioInterfaceAsyncOperation *asyncOp = nullptr;
 HRESULT hr = S_OK;
 

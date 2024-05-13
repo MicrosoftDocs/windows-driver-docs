@@ -26,7 +26,7 @@ Represents the wave stream that flows through a pin on a WaveCyclic filter. Impl
 
 Represents the wave stream that flows through a pin on a WavePci filter. Implemented by a WavePci miniport driver.
 
-Represents the wave stream that flows through a pin on a WaveRT filter. Implemented by a WaveRT miniport dirver.
+Represents the wave stream that flows through a pin on a WaveRT filter. Implemented by a WaveRT miniport driver.
 
 Augments the **IMiniportWaveRTStream** interface, providing additional methods for DMA driver event notifications.
 
