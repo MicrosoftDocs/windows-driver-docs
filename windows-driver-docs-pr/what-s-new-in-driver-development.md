@@ -8,9 +8,6 @@ ms.date: 04/03/2024
 
 This section describes new features and updates for driver development in Windows 11, version 24H2. To target this version of Windows, you can use [WDK 10.0.26100.6100](./download-the-wdk.md) (released May 22, 2024).
 
-## Audio
-
-## Bluetooth Low Energy (LE) Audio
 
 ## Camera and streaming media
 
@@ -42,15 +39,12 @@ Other added WDDM 3.2 features:
 
 - TDR (timeout detection and recovery) debugging has been enhanced to provide more information about the cause of a TDR event. For more information, see [TDR debuggability improvements](./display/tdr-debuggability-improvements.md).
 
-## Dynamic lighting
 
 ## File system and filter drivers
 
 - Starting in Windows 11, version 24H2, [bind links](/windows/win32/bindlink/) can be used to bind a file system namespace to a local "virtual path" through the Bind Filter (*bindflt.sys*). Minifilters can choose to veto such bind links on the system's boot partition. For more information, see [Vetoing a bind link](./ifs/vetoing-a-bind-link.md).
 
 - *FltMgr* now provides [Query on Create support for USN and file security information](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltrequestsecurityinfooncreatecompletion).
-
-## Human presence sensors
 
 ## Network drivers
 
@@ -84,13 +78,6 @@ A storport miniport driver can now read configuration data from more locations w
 
 Stornvme supports more vendor-specific NVMe features and log pages. For more information, see the *[StorageAdapterProtocolSpecificPropertyEx](/windows-hardware/drivers/ddi/ntddstor/ne-ntddstor-storage_property_id)*, *[StorageDeviceProtocolSpecificPropertyEx](/windows-hardware/drivers/ddi/ntddstor/ne-ntddstor-storage_property_id)*, *[NVMeDataTypeLogPageEx](/windows-hardware/drivers/ddi/ntddstor/ne-ntddstor-_storage_protocol_nvme_data_type)*, and *[NVMeDataTypeFeatureEx](/windows-hardware/drivers/ddi/ntddstor/ne-ntddstor-_storage_protocol_nvme_data_type)* enum values. The [ntddstor.h](/windows-hardware/drivers/ddi/ntddstor/) header file contains usage guidance for these new property identifiers and data types as well as their associated input and output structures.
 
-## USB
-
-## Getting started
-
-## Driver security  
-
-## Windows debugging tools
 
 ## Related Topics
 
