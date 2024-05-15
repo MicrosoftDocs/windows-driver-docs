@@ -37,5 +37,5 @@ The sum (in bytes) of the sizes of all contained elements.
 
 |Requirement|Value|
 |--- |--- |
-|Minimum supported client|WIN11_NEXT|
+|Minimum supported client|Windows 11, version 24H2|
 |Header|dot11wificxtypes.hpp|
