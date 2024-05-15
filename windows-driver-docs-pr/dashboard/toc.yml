@@ -82,6 +82,8 @@
       href: driver-release-cadence.md
     - name: "Establish HWID or CHID targeting relationship"
       href: establish-relationship-for-chid-targeting.md
+    - name: "Executable version numbers for audio drivers"
+      href: executable-version-numbers-audio-drivers.md
     - name: "Extension INF Targeting Rules"
       href: extension-inf-targeting-rules.md
   - name: "Microsoft driver measures"
