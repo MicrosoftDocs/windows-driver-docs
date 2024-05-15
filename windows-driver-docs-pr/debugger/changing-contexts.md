@@ -11,7 +11,7 @@ ms.date: 08/02/2018
 ## <span id="ddk-changing-contexts_dbg"></span><span id="DDK_CHANGING_CONTEXTS_DBG"></span>
 
 
-In kernel-mode debugging, there are many processes, threads, and sometimes user sessions that are executing at the same time. Therfore, phrases such as "virtual address 0x80002000" or "the **eax** register" are ambiguous. You must specify the *context* in which such phrases can be understood.
+In kernel-mode debugging, there are many processes, threads, and sometimes user sessions that are executing at the same time. Therefore, phrases such as "virtual address 0x80002000" or "the **eax** register" are ambiguous. You must specify the *context* in which such phrases can be understood.
 
 The debugger has five different contexts that you can set while you are debugging:
 

@@ -122,7 +122,7 @@ ResAvail Pages:           1279680 (    5118720 Kb)
 Kernel Stacks:              13686 (      54744 Kb)
 ```
 
-This amount of memory used is less then available in this example.
+This amount of memory used is less than available in this example.
 
 Use the [!thread](../debuggercmds/-thread.md) command to gather information on what is running. In this example it looks like a video scheduler worker thread is running. 
 

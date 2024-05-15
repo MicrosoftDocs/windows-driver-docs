@@ -51,7 +51,7 @@ Internet Information Services (IIS) must be configured to serve the symbols by c
 
 6.  Click **OK** to finish the adding the virtual directory.
 
-Perform the subdirectory configuration process once for the server. Note that this is a global setting and will effect applications not hosted in the root folder of a site.
+Perform the subdirectory configuration process once for the server. Note that this is a global setting and will affect applications not hosted in the root folder of a site.
 
 **Subdirectory Configuration**
 

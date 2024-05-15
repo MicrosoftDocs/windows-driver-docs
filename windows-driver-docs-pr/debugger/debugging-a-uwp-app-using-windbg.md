@@ -179,7 +179,7 @@ Background Task Id: {ee4438ee-22db-4cdd-85e4-8ad8a1063523}
 
 If you know the full package name you can use .querypackage to display the *Background Task Id* field.
 
-You can also locate the BackgroundTaskId by using the enumerateBgTasks option of the PLMDebug. For more information about the PMLDebug utiltity, see [**PLMDebug**](plmdebug.md).
+You can also locate the BackgroundTaskId by using the enumerateBgTasks option of the PLMDebug. For more information about the PMLDebug utility, see [**PLMDebug**](plmdebug.md).
 
 ```console
 C:\Program Files\Debugging Tools for Windows (x64)>PLMDebug /enumerateBgTasks Microsoft.SDKSamples.BackgroundTask.CPP_1.0.0.0_x64__8wekyb3d8bbwe

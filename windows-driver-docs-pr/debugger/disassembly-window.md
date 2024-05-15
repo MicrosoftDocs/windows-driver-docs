@@ -13,7 +13,7 @@ In WinDbg, you can view assembly code by entering commands or by using the Disas
 
 You can view assembly code by entering the one of the [**u, ub, uu (Unassemble)**](../debuggercmds/u--unassemble-.md) commands in the Debugger Command window.
 
-## Dissasembly Window
+## Disasembly Window
 
 To open or switch to the Disassembly window, choose **Dissasembly** from the **View** menu. (You can also press ALT+7 or select the **Disassembly** button on the toolbar. ALT+SHIFT+7 will close the Disassembly Window.)
 
