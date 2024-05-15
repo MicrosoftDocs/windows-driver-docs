@@ -34,7 +34,7 @@ The size (in bytes) of the array of [**WDI\_MAC\_ADDRESS**](/windows-hardware/dr
 
 |Requirement|Value|
 |--- |--- |
-|Minimum supported client|WIN11_NEXT|
+|Minimum supported client|Windows 11, version 24H2|
 |Header|dot11wificxtypes.hpp|
 
  

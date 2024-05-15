@@ -29,5 +29,5 @@ The size (in bytes) of a [**WDI_MAC_ADDRESS**](/windows-hardware/drivers/ddi/dot
 
 |Requirement|Value|
 |--- |--- |
-|Minimum supported client|WIN11_NEXT|
+|Minimum supported client|Windows 11, version 24H2|
 |Header|dot11wificxtypes.hpp|
