@@ -76,7 +76,7 @@ If the BIOS incompatibility is related to Plug and Play (PnP) or power managemen
 <tr class="odd">
 <td align="left"><p>0x05</p></td>
 <td align="left"><p>The ACPI extension that _PRW belongs to</p></td>
-<td align="left"><p>Aointer to the _PRW</p></td>
+<td align="left"><p>A pointer to the _PRW</p></td>
 <td align="left"><p>The number of elements in the _PRW</p></td>
 <td align="left"><p>ACPI evaluated a _PRW, and the package that came back failed to contain at least two elements. The ACPI specification requires that two elements always be present in a _PRW.</p></td>
 </tr>
