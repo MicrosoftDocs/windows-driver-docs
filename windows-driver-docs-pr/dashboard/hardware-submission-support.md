@@ -5,7 +5,7 @@ ms.topic: article
 ms.date: 03/07/2024
 ---
 
-# Contact technical support for dashboard and HLK issues
+# Contact technical support for dashboard and Windows Hardware Lab Kit (HLK) issues
 
 If your issue is technical and you can't find answers in the documentation, you can contact Windows developer support.
 
