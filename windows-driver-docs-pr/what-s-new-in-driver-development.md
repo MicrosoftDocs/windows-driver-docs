@@ -6,7 +6,7 @@ ms.date: 04/03/2024
 
 # <a name="top"></a>What's new in driver development for Windows 11, version 24H2
 
-This section describes new features and updates for driver development in Windows 11, version 24H2. To target this version of Windows, you can use [WDK xx.x.xxxxx.xxxx](./download-the-wdk.md) (released April 8, 2024).
+This section describes new features and updates for driver development in Windows 11, version 24H2. To target this version of Windows, you can use [WDK 10.0.26100.6100](./download-the-wdk.md) (released May 22, 2024).
 
 ## Audio
 
@@ -96,6 +96,7 @@ Stornvme supports more vendor-specific NVMe features and log pages. For more inf
 
 For information on what was new for drivers in past Windows releases, see the following pages:
 
+- [Driver development changes for Windows 11, version 23H2](driver-changes-for-windows-11-version-23h2.md)
 - [Driver development changes for Windows 11, version 22H2](driver-changes-for-windows-11-version-22h2.md)
 - [Driver development changes for Windows 11, version 21H2](driver-changes-for-windows-11-version-21h2.md)
 - [Driver development changes for Windows Server 2022](driver-changes-for-windows-server-2022.md)
