@@ -17,4 +17,5 @@ Some existing policies that lead to the driver submission being rejected include
 * [Deploying Audio Processing Objects](./deploying-audio-processing-objects.md)
 * [Driver Release Cadence](./driver-release-cadence.md)
 * [Establish HWID or CHID targeting relationship](./establish-relationship-for-chid-targeting.md)
+* [Executable version numbers for audio drivers](./executable-version-numbers-audio-drivers.md)
 * [Extension INF Targeting Rules](./extension-inf-targeting-rules.md)
