@@ -174,7 +174,7 @@ The GetIntrinsicValue method returns the thing which is boxed inside an IModelOb
 
 [IsEqualTo](/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-imodelobject-isequalto)
 
-The IsEqualTo method compares two model objects and returns whether they are equal in value. For object which have an ordering, this method returning true is equivalent to the Compare method returning 0. For objects that have no ordering but are equatable, the Compare method will fail, but this will not. The meaning of a value based comparison is defined by the type of object. At present, this is only defined for intrinsic types and error objects. There is no current data model concept for equatability. 
+The IsEqualTo method compares two model objects and returns whether they are equal in value. For object which have an ordering, this method returning true is equivalent to the Compare method returning 0. For objects that have no ordering but are equatable, the Compare method will fail, but this will not. The meaning of a value based comparison is defined by the type of object. At present, this is only defined for intrinsic types and error objects. There is no current data model concept for equability. 
 
 [Dereference](/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-imodelobject-dereference)
 

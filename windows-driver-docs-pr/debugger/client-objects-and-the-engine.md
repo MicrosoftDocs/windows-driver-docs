@@ -58,7 +58,7 @@ An EngExtCpp extension interacts with the [debugger engine](introduction.md#debu
 
  
 
-The following members provide access to later versions of the engine API interfaces. These interfaces may not be available in all versions of the debugger engine. If they are not available, any attempt to use them will result in a exception being thrown.
+The following members provide access to later versions of the engine API interfaces. These interfaces may not be available in all versions of the debugger engine. If they are not available, any attempt to use them will result in an exception being thrown.
 
 <table>
 <colgroup>
