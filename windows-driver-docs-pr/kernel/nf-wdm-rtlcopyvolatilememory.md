@@ -99,7 +99,7 @@ if (MyHeader.Size < 100) {
 
 ## Requirements
 
-**Minimum supported client:** Windows 11 Insider Preview
+**Minimum supported client:** Windows 11, version 24H2
 
 **Header:** wdm.h (include Wdm.h)
 
