@@ -44,7 +44,7 @@ When User-Mode Error Handling is enabled, some user-mode events will cause the t
 
 Specifically, all **int 3** interrupts -- such as breakpoints inserted into the code by a debugger or calls to **DbgBreakPoint** -- will cause a break into the kernel debugger. However, standard exceptions -- such as access violations and division by zero -- will usually not be sent to the kernel debugger.
 
-If a user-mode debugger is already attached to the process, this debugger will capture all user-mode errors, and the kernel debugger will not be alterted. For the precedence ranking of the various user-mode error handlers, see [Enabling Postmortem Debugging](enabling-postmortem-debugging.md).
+If a user-mode debugger is already attached to the process, this debugger will capture all user-mode errors, and the kernel debugger will not be altered. For the precedence ranking of the various user-mode error handlers, see [Enabling Postmortem Debugging](enabling-postmortem-debugging.md).
 
 For User-Mode Error Handling to function, either Full Kernel Debugging or Automatic Kernel Debugging must be enabled as well.
 

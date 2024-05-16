@@ -75,7 +75,7 @@ a. You can use GitHub tools to work with the samples. You can also download the 
 
 b. Download the master.zip file to your local hard drive.
 
-c. Selecct and hold (or right-click) *Windows-driver-samples-master.zip*, and choose **Extract All**. Specify a new folder, or browse to an existing one that will store the extracted files. For example, you could specify *C:\\DriverSamples\\* as the new folder into which the files will be extracted.
+c. Select and hold (or right-click) *Windows-driver-samples-master.zip*, and choose **Extract All**. Specify a new folder, or browse to an existing one that will store the extracted files. For example, you could specify *C:\\DriverSamples\\* as the new folder into which the files will be extracted.
 
 d. After the files are extracted, navigate to the following subfolder: *C:\\DriverSamples\\Audio\\Sysvad*
 

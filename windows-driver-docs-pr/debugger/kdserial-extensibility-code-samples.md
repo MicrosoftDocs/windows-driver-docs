@@ -16,7 +16,7 @@ The following three code samples are available in the WDK install directory and 
 
 ### KDNET Serial 16550 Sample
 
-The KDNET serial interface, shows the use of 16550 serial interface hardware. It is located in the this directory.
+The KDNET serial interface, shows the use of 16550 serial interface hardware. It is located in this directory.
 
 `C:\Program Files (x86)\Windows Kits\10\Debuggers\ddk\samples\kdnet\serial\16550`
 
@@ -25,7 +25,7 @@ When testing the KDNET Serial 16550 sample code, the serial cable should be wire
 
 ### KDNET Serial siig Sample
 
-The siig sample implements KDNET over serial with RS-232 hardware handshaking. It is located in the this directory.
+The siig sample implements KDNET over serial with RS-232 hardware handshaking. It is located in this directory.
 
 `C:\Program Files (x86)\Windows Kits\10\Debuggers\ddk\samples\kdnet\serial\siig`
 
