@@ -79,7 +79,7 @@ Four new *wdm.h* power management DDIs for Windows 11, version 24H2:
 - **INF AddComClass directive**: An *AddComClass* directive is used within a `com-server-install-section` and registers a COM class.
 - **INF AddComServer directive**: An *AddComServer* directive is used within a `DDInstall.COM` section and registers a COM server.
 - **INF DDInstall.COM section**: The `DDInstall.COM` section contains one or more INF *AddComServer* directives that reference other INF-writer-defined sections in an INF file.
-- The driver package INF registry conversion tool (`reg2inf.exe`) converts a registry key and its values or a COM .dll implementing a **[DllRegisterServer](/windows/win32/api/olectl/nf-olectl-dllregisterserver)** routine into a set of [INF AddReg directives](../install/inf-addreg-directive.md) or [INF DDInstall.COM section](../install/inf-ddinstall-com-section.md) for in-proc COM servers for inclusion into a driver package INF file.
+- The driver package INF registry conversion tool (`reg2inf.exe`) converts a registry key and its values or a COM .dll implementing a **[DllRegisterServer](/windows/win32/api/olectl/nf-olectl-dllregisterserver)** routine into a set of [INF AddReg directives](./install/inf-addreg-directive.md) or [INF DDInstall.COM section](./install/inf-ddinstall-com-section.md) for in-proc COM servers for inclusion into a driver package INF file.
 
 ## USB
 
