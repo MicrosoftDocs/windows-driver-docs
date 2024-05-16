@@ -13,8 +13,22 @@ This section describes new features and updates for driver development in Window
 Three new camera articles for Windows 11, version 24H2 (also applies to Windows 11, version 23H2):
 
 - [Camera settings page](./stream/camera-settings-page.md) - Describes the features and operation of the camera settings page in Windows 11, and the default values framework that allows configuration of the camera configuration applied when an application starts the camera.
-- [Camera companion apps](./stream/camera-companion-apps.md)
-- [Network cameras](./stream/network-cameras.md)
+
+- [Camera companion apps](./stream/camera-companion-apps.md) - Describes companion apps, an extensibility feature for manufacturers of cameras to build custom applications that can configure the camera and adjust default image settings.
+
+- [Network cameras](./stream/network-cameras.md) - Describes compatibility with ONVIF network cameras in Windows.
+
+New camera KS Properties and DDIs:
+
+- [KSPROPERTY_CAMERACONTROL_EXTENDED_FRAMERATE_THROTTLE](./stream/ksproperty-cameracontrol-extended-framerate-throttle.md)
+
+- [KSPROPERTY_CAMERACONTROL_EXTENDED_FIELDOFVIEW2](./stream/ksproperty-cameracontrol-extended-fieldofview2.md)
+
+- [KSPROPERTY_CAMERACONTROL_EXTENDED_FIELDOFVIEW2_CONFIGCAPS](./stream/ksproperty-cameracontrol-extended-fieldofview2-configcaps.md)
+
+- [**KSCAMERA_EXTENDEDPROP_FIELDOFVIEW2_CONFIGCAPS**](/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-kscamera_extendedprop_fieldofview2_configcaps)
+
+Updated UVC MSXUs for framerate throttle and FoV2 additions. For more information, see [Microsoft extensions to USB Video Class 1.5 specification](./stream/uvc-extensions-1-5.md).
 
 ## Display and graphics drivers
 
