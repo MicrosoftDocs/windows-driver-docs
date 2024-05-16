@@ -66,7 +66,7 @@ The WDK Visual Studio extension is included in the default WDK installation.
 
 As an alternative to downloading Visual Studio, the SDK, and the WDK, you can download the EWDK, which is a standalone, self-contained command-line environment for building drivers. It includes Visual Studio Build Tools, the SDK, and the WDK.
 
-The latest public version of the EWDK contains Visual Studio 2022 Build Tools 17.8.6 and MSVC toolset v143.
+The latest public version of the EWDK contains Visual Studio 2022 Build Tools 17.8.6 and MSVC toolset v14.38
 
 The EWDK also requires the .NET Framework version 4.7.2. For more information about other requirements for the .NET Framework, see [.NET Framework system requirements](/dotnet/framework/get-started/system-requirements).
 
