@@ -179,7 +179,7 @@ Locate and copy to the local PC the two primary query suite files.
 - *windows-driver-recommended.qls*
 - *windows-driver-mustfix.qls*
 
-Their contents are shown below in [Queries and Suites](#queries-and-suites); the two files are located at [https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/suites](https://github.com/microsoft/Windows-Driver-Dev.eloper-Supplemental-Tools/tree/main/suites)
+Their contents are shown below in [Queries and Suites](#queries-and-suites); the two files are located at [https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/suites](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/suites)
 
 ## 2. Build the CodeQL Database
 
