@@ -1,22 +1,19 @@
 ---
 title: What's New in Driver Development for Windows 11, Version 24H2
 description: This section describes new features for driver development in Windows 11, version 24H2.
-ms.date: 04/03/2024
+ms.date: 05/16/2024
 ---
 
 # <a name="top"></a>What's new in driver development for Windows 11, version 24H2
 
 This section describes new features and updates for driver development in Windows 11, version 24H2. To target this version of Windows, you can use [WDK 10.0.26100.6100](./download-the-wdk.md) (released May 22, 2024).
 
-
 ## Camera and streaming media
 
 Three new camera articles for Windows 11, version 24H2 (also applies to Windows 11, version 23H2):
 
 - [Camera settings page](./stream/camera-settings-page.md) - Describes the features and operation of the camera settings page in Windows 11, and the default values framework that allows configuration of the camera configuration applied when an application starts the camera.
-
 - [Camera companion apps](./stream/camera-companion-apps.md)
-
 - [Network cameras](./stream/network-cameras.md)
 
 ## Display and graphics drivers
@@ -39,7 +36,6 @@ Other added WDDM 3.2 features:
 
 - TDR (timeout detection and recovery) debugging has been enhanced to provide more information about the cause of a TDR event. For more information, see [TDR debuggability improvements](./display/tdr-debuggability-improvements.md).
 
-
 ## File system and filter drivers
 
 - Starting in Windows 11, version 24H2, [bind links](/windows/win32/bindlink/) can be used to bind a file system namespace to a local "virtual path" through the Bind Filter (*bindflt.sys*). Minifilters can choose to veto such bind links on the system's boot partition. For more information, see [Vetoing a bind link](./ifs/vetoing-a-bind-link.md).
@@ -48,17 +44,17 @@ Other added WDDM 3.2 features:
 
 ## Network drivers
 
-* Starting in Windows 11, version 24H2, you can write a [User-Mode Driver Framework (UMDF) NetAdapterCx](netcx/user-mode-netcx.md) driver. The UMDF APIs in NetAdapterCx align with the KMDF versions, so you can convert your KMDF-based client driver to UMDF with little to no code changes.
+- Starting in Windows 11, version 24H2, you can write a [User-Mode Driver Framework (UMDF) NetAdapterCx](netcx/user-mode-netcx.md) driver. The UMDF APIs in NetAdapterCx align with the KMDF versions, so you can convert your KMDF-based client driver to UMDF with little to no code changes.
 
-* UDP Receive Segment Coalescing Offload (URO) is a new hardware offload feature that enables network interface cards (NICs) to coalesce UDP receive segments.  For more information, see [UDP Receive Segment Coalescing Offload (URO)](network/udp-rsc-offload.md) and [NetAdapterCx URO](netcx/rsc-offload.md).
+- UDP Receive Segment Coalescing Offload (URO) is a new hardware offload feature that enables network interface cards (NICs) to coalesce UDP receive segments.  For more information, see [UDP Receive Segment Coalescing Offload (URO)](network/udp-rsc-offload.md) and [NetAdapterCx URO](netcx/rsc-offload.md).
 
-* [WiFiCx Wi-Fi 7](./netcx/wificx-wi-fi-7.md) introduces support for Wi-Fi 7 features, providing faster connectivity speeds, lower latency, and improved security. WiFiCx Wi-Fi 7 enables: 
-  * Multi-Link Operation (MLO) with roaming differentiation to leverage multiple simultaneous channels to the Wi-Fi access point (AP). 
-  * Enhanced capabilities for WPA3-SAE authentication and Opportunistic Wireless Encryption (OWE) with GCMP-256 cipher.
+- [WiFiCx Wi-Fi 7](./netcx/wificx-wi-fi-7.md) introduces support for Wi-Fi 7 features, providing faster connectivity speeds, lower latency, and improved security. WiFiCx Wi-Fi 7 enables:
+  - Multi-Link Operation (MLO) with roaming differentiation to leverage multiple simultaneous channels to the Wi-Fi access point (AP).
+  - Enhanced capabilities for WPA3-SAE authentication and Opportunistic Wireless Encryption (OWE) with GCMP-256 cipher.
 
-* [WiFiCx WPA3 SoftAP](./netcx/wificx-wpa3-softap.md) enables devices to set up a Soft Access Point (SoftAP) using the Wi-Fi Protected Access 3 - Simultaneous Authentication of Equals (WPA3-SAE) security protocol.
+- [WiFiCx WPA3 SoftAP](./netcx/wificx-wpa3-softap.md) enables devices to set up a Soft Access Point (SoftAP) using the Wi-Fi Protected Access 3 - Simultaneous Authentication of Equals (WPA3-SAE) security protocol.
 
-* [WiFiCx QoS R1](./netcx/qos-r1.md) introduces advanced traffic management capabilities for WiFiCx devices. QoS R1 enables prioritization of Wi-Fi data packets through Mirrored Stream Classification Service (MSCS) and QoS Mapping (DSCP-to-UP Mapping).
+- [WiFiCx QoS R1](./netcx/qos-r1.md) introduces advanced traffic management capabilities for WiFiCx devices. QoS R1 enables prioritization of Wi-Fi data packets through Mirrored Stream Classification Service (MSCS) and QoS Mapping (DSCP-to-UP Mapping).
 
 ## Kernel
 
@@ -74,10 +70,25 @@ Four new *wdm.h* power management DDIs for Windows 11, version 24H2:
 
 ## Storage drivers
 
-A storport miniport driver can now read configuration data from more locations within the registry. For more information, see **[StorPortReadRegistryKey](/windows-hardware/drivers/ddi/storport/nf-storport-storportreadregistrykey)** and **[StorPortReadDriverRegistry](/windows-hardware/drivers/ddi/storport/nf-storport-storportreaddriverregistry)**.
+- A storport miniport driver can now read configuration data from more locations within the registry. For more information, see **[StorPortReadRegistryKey](/windows-hardware/drivers/ddi/storport/nf-storport-storportreadregistrykey)** and **[StorPortReadDriverRegistry](/windows-hardware/drivers/ddi/storport/nf-storport-storportreaddriverregistry)**.
 
-Stornvme supports more vendor-specific NVMe features and log pages. For more information, see the *[StorageAdapterProtocolSpecificPropertyEx](/windows-hardware/drivers/ddi/ntddstor/ne-ntddstor-storage_property_id)*, *[StorageDeviceProtocolSpecificPropertyEx](/windows-hardware/drivers/ddi/ntddstor/ne-ntddstor-storage_property_id)*, *[NVMeDataTypeLogPageEx](/windows-hardware/drivers/ddi/ntddstor/ne-ntddstor-_storage_protocol_nvme_data_type)*, and *[NVMeDataTypeFeatureEx](/windows-hardware/drivers/ddi/ntddstor/ne-ntddstor-_storage_protocol_nvme_data_type)* enum values. The [ntddstor.h](/windows-hardware/drivers/ddi/ntddstor/) header file contains usage guidance for these new property identifiers and data types as well as their associated input and output structures.
+- Stornvme supports more vendor-specific NVMe features and log pages. For more information, see the *[StorageAdapterProtocolSpecificPropertyEx](/windows-hardware/drivers/ddi/ntddstor/ne-ntddstor-storage_property_id)*, *[StorageDeviceProtocolSpecificPropertyEx](/windows-hardware/drivers/ddi/ntddstor/ne-ntddstor-storage_property_id)*, *[NVMeDataTypeLogPageEx](/windows-hardware/drivers/ddi/ntddstor/ne-ntddstor-_storage_protocol_nvme_data_type)*, and *[NVMeDataTypeFeatureEx](/windows-hardware/drivers/ddi/ntddstor/ne-ntddstor-_storage_protocol_nvme_data_type)* enum values. The [ntddstor.h](/windows-hardware/drivers/ddi/ntddstor/) header file contains usage guidance for these new property identifiers and data types as well as their associated input and output structures.
 
+## Install
+
+- **INF AddComClass directive**: An *AddComClass* directive is used within a `com-server-install-section` and registers a COM class.
+- **INF AddComServer directive**: An *AddComServer* directive is used within a `DDInstall.COM` section and registers a COM server.
+- **INF DDInstall.COM section**: The `DDInstall.COM` section contains one or more INF *AddComServer* directives that reference other INF-writer-defined sections in an INF file.
+- The driver package INF registry conversion tool (`reg2inf.exe`) converts a registry key and its values or a COM .dll implementing a **[DllRegisterServer](/windows/win32/api/olectl/nf-olectl-dllregisterserver)** routine into a set of [INF AddReg directives](./install/inf-addreg-directive.md) or [INF DDInstall.COM section](./install/inf-ddinstall-com-section.md) for in-proc COM servers for inclusion into a driver package INF file.
+
+## USB
+
+- Support for USB superspeed information through **[IOCTL_USB_GET_NODE_CONNECTION_SUPERSPEEDPLUS_INFORMATION](/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_usb_get_node_connection_superspeedplus_information)** and **[USB_NODE_CONNECTION_SUPERSPEEDPLUS_INFORMATION](/windows-hardware/drivers/ddi/usbioctl/ns-usbioctl-usb_node_connection_superspeedplus_information)**.
+
+## Sensors
+
+- Support for new human presence fields in proximity sensors through **[HUMAN_PRESENCE_DETECTION_TYPE](/windows-hardware/drivers/ddi/sensorsdef/ne-sensorsdef-human_presence_detection_type)** and **[PROXIMITY_SENSOR_CAPABILITIES](/windows-hardware/drivers/ddi/sensorsdef/ne-sensorsdef-proximity_sensor_capabilities)**.
+- Humans presence updates include support for tracking multiple humans.
 
 ## Related Topics
 
