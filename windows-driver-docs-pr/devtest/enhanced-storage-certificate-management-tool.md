@@ -18,7 +18,7 @@ The Enhanced Storage Certificate Management tool (EhStorCertMgrCmd.exe) manages 
 
 -   IT administrators to provide and manage the certificate stores of IEEE 1667-compliant USB storage devices that are used within corporate environments.
 
-This section inlcludes the following topics:
+This section includes the following topics:
 
 [Overview of the Enhanced Storage Certificate Management Tool](overview-of-the-enhanced-storage-certificate-management-tool.md)
 

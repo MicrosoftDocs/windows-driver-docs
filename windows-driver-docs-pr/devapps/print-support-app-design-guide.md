@@ -410,7 +410,7 @@ private void OnPdcChanged(PrintSupportExtensionSession session, PrintSupportPrin
     {
         var pdc = args.GetCurrentPrintDeviceCapabilities();
 
-        // Check current PDC and make changes according to printer device capabilites
+        // Check current PDC and make changes according to printer device capabilities
         XmlDocument newPdc = this.CheckAndUpdatePrintDeviceCapabilities(pdc);
         args.UpdatePrintDeviceCapabilities(newPdc);
     }

@@ -46,7 +46,7 @@ The actions taken by bus driver depend on the device power level that the power 
 
     The bus driver performs the following tasks:
 
-    1.  Ensures that all upsteam USB hubs are powered and ready to receive requests.
+    1.  Ensures that all upstream USB hubs are powered and ready to receive requests.
     2.  Resumes the port by clearing the PORT\_SUSPEND feature, if the device's USB port is suspended.
     3.  Completes the device's idle IRP with STATUS\_SUCCESS, if one is pending.
     4.  Disarm the device for remote wake if it was armed.
