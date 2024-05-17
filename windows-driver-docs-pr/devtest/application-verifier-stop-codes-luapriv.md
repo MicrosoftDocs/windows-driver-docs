@@ -717,7 +717,7 @@ The following stop codes are contained in this set of tests.
 <h3>The application requested MAXIMUM_ALLOWED access.</h3>
 <p></p><i>Probable cause</i><p>The application requested MAXIMUM_ALLOWED access to an object (such as a file or registry key). Because of this, the open function will always succeed, even if no permission is actually granted to the user. This is unacceptable programming practice. In addition, the Verifier cannot authoritatively determine what rights the application actually needs in order to operate. The Verifier has attempted to determine what rights might have been granted to the application by the object, but failed to do so.</p>
 <p></p><I>Information displayed by Application Verifier</I><ul>
-  <li><b>Format:</b>&nbsp;-&nbsp;%hs: Openned (%ws) with '%hs' for 0x%x (%hsMAXIMUM_ALLOWED), but granted access could not be determined due to error 0x%x.  The object should be checked manually</li>
+  <li><b>Format:</b>&nbsp;-&nbsp;%hs: Opened (%ws) with '%hs' for 0x%x (%hsMAXIMUM_ALLOWED), but granted access could not be determined due to error 0x%x.  The object should be checked manually</li>
   <li><b>Parameter 1</b>&nbsp;-&nbsp;Object Type</li>
   <li><b>Parameter 2</b>&nbsp;-&nbsp;Object Name</li>
   <li><b>Parameter 3</b>&nbsp;-&nbsp;Requested Access</li>

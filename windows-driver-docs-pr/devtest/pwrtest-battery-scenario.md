@@ -41,7 +41,7 @@ pwrtest /battery /c:4 /i:1000
   </SystemInformation>
   <BatteryScenario>
     <Batteries>
-      <Battery id="" shortterm="" rechargable="" >
+      <Battery id="" shortterm="" rechargeable="" >
         <Name></Name>
         <UniqueID></UniqueID>
         <Chemistry></Chemistry>

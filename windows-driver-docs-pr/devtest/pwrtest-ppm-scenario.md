@@ -23,7 +23,7 @@ Specifies the number of cycles (100 is the default). Press **q** to quit).
 Specifies the polling interval in milliseconds (ms) for C-state and processor utilization (5000 ms is default).
 
 <span id="_c_yn"></span><span id="_C_YN"></span>**/c:**{**y**|**n**}  
-Specifies the whether C-state information should be captured. The options are yes (**y**) or no (**n**). The default is yes (**y**).
+Specifies whether C-state information should be captured. The options are yes (**y**) or no (**n**). The default is yes (**y**).
 
 <span id="_p_yn"></span><span id="_P_YN"></span>**/p:**{**y**|**n**}  
 Specifies whether performance or throttle state information should be captured. The options are yes (**y**) or no (**n**). Yes (**y**) is the default.
@@ -128,7 +128,7 @@ The following table describes the XML elements that appear in the log file.
 </tr>
 <tr class="even">
 <td align="left"><strong>&lt;TransitionLatency&gt;</strong></td>
-<td align="left"><p>Indicates the latency when switching performance states. Includes an units attribute, typically microseconds (µs)</p></td>
+<td align="left"><p>Indicates the latency when switching performance states. Includes a units attribute, typically microseconds (µs)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><strong>&lt;ProcessorTraces&gt;</strong></td>

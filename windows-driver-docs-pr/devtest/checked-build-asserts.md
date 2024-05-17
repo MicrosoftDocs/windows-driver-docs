@@ -81,7 +81,7 @@ The routine listed in the "Routine Called" column is the most common routine tha
 <tr class="odd">
 <td align="left"><p><strong>IoCompleteRequest</strong></p></td>
 <td align="left"><p>ASSERT( Irp-&gt;Tail.Overlay.AuxiliaryBuffer != <strong>NULL</strong> )</p></td>
-<td align="left"><p>An IRP is being completed with STATUS_REPARSE, IO_REPARSE_TAG_MOUNT_POINT, and the auxillary buffer is <strong>NULL</strong>.</p></td>
+<td align="left"><p>An IRP is being completed with STATUS_REPARSE, IO_REPARSE_TAG_MOUNT_POINT, and the auxiliary buffer is <strong>NULL</strong>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iocreatedevice" data-raw-source="[&lt;strong&gt;IoCreateDevice&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocreatedevice)"><strong>IoCreateDevice</strong></a></p></td>
