@@ -13,7 +13,7 @@ ms.date: 04/22/2019
 
 Many of the bcdedit commands require identifiers. An identifier uniquely identifies entries contained in the boot setting store. 
 
-Use bcdedit /enum to display the identifers.
+Use bcdedit /enum to display the identifiers.
 
 ```console
 C:\>bcdedit /enum

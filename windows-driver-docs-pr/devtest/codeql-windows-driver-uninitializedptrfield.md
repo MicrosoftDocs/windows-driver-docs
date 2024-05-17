@@ -16,7 +16,7 @@ Make sure to initialize all pointer fields before usage.
 
 ## Example
 
-The following example shows a scenario where the field *ptr_* is not initialzied and later dereferenced:
+The following example shows a scenario where the field *ptr_* is not initialized and later dereferenced:
 
 ```cpp
 template <typename T>
