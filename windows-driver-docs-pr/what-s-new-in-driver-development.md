@@ -1,7 +1,7 @@
 ---
 title: What's New in Driver Development for Windows 11, Version 24H2
 description: This section describes new features for driver development in Windows 11, version 24H2.
-ms.date: 04/03/2024
+ms.date: 05/22/2024
 ---
 
 # <a name="top"></a>What's new in driver development for Windows 11, version 24H2
@@ -38,11 +38,11 @@ GPUs are increasingly used in artificial intelligence and machine learning scena
 
 Other added WDDM 3.2 features:
 
-- The method that a user-mode or kernel-mode graphics driver uses to determine whether a particular WDDM feature is enabled has been updated. For more information, see [Querying WDDM feature support and enablement](./display/querying-wddm-feature-support-and-enablement.md).
+- The D3D12 video encoding DDI has been extended to [support AV1 encoding](./display/video-encoding-d3d12-av1.md).
 
-- TDR (timeout detection and recovery) debugging has been enhanced to provide more information about the cause of a TDR event. For more information, see [TDR debuggability improvements](./display/tdr-debuggability-improvements.md).
+- The method that a user-mode or kernel-mode graphics driver uses to determine whether a particular [WDDM feature is supported and enabled](./display/querying-wddm-feature-support-and-enablement.md)
 
-## Dynamic lighting
+- [TDR (timeout detection and recovery) debugging has been enhanced](./display/tdr-debuggability-improvements.md) to provide more information about the cause of a TDR event.
 
 ## File system and filter drivers
 
