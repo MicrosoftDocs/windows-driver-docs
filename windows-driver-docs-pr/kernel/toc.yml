@@ -60,6 +60,8 @@
     href: windows-kernel-mode-hal-library.md
   - name: "Windows Kernel-Mode CLFS Library"
     href: windows-kernel-mode-clfs-library.md
+  - name: "Windows Kernel-Mode PRM Library"
+    href: windows-kernel-mode-prm-library.md
   - name: "Windows Kernel-Mode WMI Library"
     href: windows-kernel-mode-wmi-library.md
   - name: "Writing WDM Drivers"

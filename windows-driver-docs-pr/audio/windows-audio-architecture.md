@@ -78,7 +78,7 @@ Audio drivers:
 
 - Follow the port-miniport model. For more information, see [WDM Audio Terminology](wdm-audio-terminology.md) and [Developing a WaveRT Miniport Driver](developing-a-wavert-miniport-driver.md).
 - Allow the audio stack to render and capture audio from several audio devices, including: integrated speakers and microphones, headsets/headphones, USB devices, Bluetooth devices, HDMI, etc.
-- The port-minport model corresponds to the Advanced Linux Sound Architecture  ALSA
+- The port-miniport model corresponds to the Advanced Linux Sound Architecture  ALSA
 - For information on sample driver code, see [Sample Audio Drivers](sample-audio-drivers.md).
 
 ## Hardware

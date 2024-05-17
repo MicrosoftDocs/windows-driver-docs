@@ -463,7 +463,7 @@ ACX uses the ACXAUDIOENGINE element to designate an ACXPIN that will handle Offl
 
 ## Stream close process
 
-When the client closes the stream, the driver will receive EvtAcxStreamPause and EvtAcxStreamReleaseHardware before the ACXSTREAM object is deleted by the ACX Framework. The driver can supply the standard WDF EvtCleanupCallback entry in the [WDF_OBJECT_ATTRIBUTES structure](/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes) when calling AcxStreamCreate to perform final cleanup for the ACXSTREAM. WDF will call EvtCleanupCallback when the framework attempts to delete the object. Do not use EvtDestroyCallback, which is only called once all references to the object have been released which is indeterminant.
+When the client closes the stream, the driver will receive EvtAcxStreamPause and EvtAcxStreamReleaseHardware before the ACXSTREAM object is deleted by the ACX Framework. The driver can supply the standard WDF EvtCleanupCallback entry in the [WDF_OBJECT_ATTRIBUTES structure](/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes) when calling AcxStreamCreate to perform final cleanup for the ACXSTREAM. WDF will call EvtCleanupCallback when the framework attempts to delete the object. Do not use EvtDestroyCallback, which is only called once all references to the object have been released which is indeterminate.
 
 The driver should clean up system memory resources associated with the ACXSTREAM object in EvtCleanupCallback, if the resources haven't already been cleaned up in EvtAcxStreamReleaseHardware.
 

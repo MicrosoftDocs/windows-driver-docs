@@ -17,7 +17,7 @@ To download  and use USBView, complete the following steps:
 
 1. During the installation, select only the **Debugging Tools for Windows** box and clear all other boxes.
 
-1. By default, on a x64 PC the SDK will install USBView to the following directory.
+1. By default, on an x64 PC the SDK will install USBView to the following directory.
 
    `C:\Program Files (x86)\Windows Kits\10\Debuggers\x64`
 

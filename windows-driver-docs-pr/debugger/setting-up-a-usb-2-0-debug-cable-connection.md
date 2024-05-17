@@ -119,7 +119,7 @@ Also, when you use USBView to look at the individual port, it is listed as debug
 
 ```console
 [Port 2]
-Is Port User Connectiable: Yes
+Is Port User Connectable: Yes
 Is Port Debug Capable: Yes
 ...
 Protocols Supported

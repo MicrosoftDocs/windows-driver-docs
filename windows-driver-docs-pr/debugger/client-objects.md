@@ -25,7 +25,7 @@ Callback objects can be registered with each client. There are three types of ca
 
 2.  **Output Callback Objects** (or *output callbacks*): the engine calls output callbacks to display output. For example, a debugger with a console window could register an output callback to present the debugger's output to the user, or a debugger might register an output callback to send the output to a log file.
 
-3.  **Event Callback Objects** (or *event callbacks*): the engine calls event callbacks whenever an event occurs in a target (or there is a change in the engine's state). For example, a debugger extension library could register an event callback to monitor certain events or perform automated actions when an particular event occurs.
+3.  **Event Callback Objects** (or *event callbacks*): the engine calls event callbacks whenever an event occurs in a target (or there is a change in the engine's state). For example, a debugger extension library could register an event callback to monitor certain events or perform automated actions when a particular event occurs.
 
 ### <span id="remote-debugging"></span><span id="REMOTE_DEBUGGING"></span>Remote Debugging
 

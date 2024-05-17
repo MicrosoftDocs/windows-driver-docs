@@ -9,7 +9,7 @@ ms.date: 01/04/2024
 > [!IMPORTANT]
 > Some information relates to a prerelease product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-The following bulk memory volatile accessor functions (v3) are available starting in Windows 11 Insider Preview.
+The following bulk memory volatile accessor functions (v3) are available starting in Windows 11, version 24H2.
 
 [**RtlCopyDeviceMemory**](nf-wdm-rtlcopydevicememory.md)
 

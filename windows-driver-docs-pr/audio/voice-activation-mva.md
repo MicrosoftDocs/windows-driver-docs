@@ -45,7 +45,7 @@ This glossary summarizes terms related to voice activation.
 | KWS | Keyword spotter – the algorithm that provides the detection of "Hey Contoso". |
 | SW KWS | Software keyword spotter – an implementation of KWS that runs on the host (CPU). For "Hey Cortana", SW KWS is included as part of Windows. |
 | HW KWS | Hardware keyword spotter – an implementation of KWS that runs offloaded on hardware. |
-| Burst buffer | A circular buffer used to store PCM data that can be bursted up in the event of a KWS detection, so that all audio that triggered a KWS detection is included. |
+| Burst buffer | A circular buffer used to store PCM data that can burst up in the event of a KWS detection, so that all audio that triggered a KWS detection is included. |
 | Event detector OEM Adapter | A user mode component that acts as an intermediary between the Windows voice assistant stack and driver. |
 | Model | The acoustic model data file used by the KWS algorithm. The data file is static. Models are localized, one per locale.|
 | MVA | Multiple Voice Agent - HWKWS DDI which supports multiple agents. |

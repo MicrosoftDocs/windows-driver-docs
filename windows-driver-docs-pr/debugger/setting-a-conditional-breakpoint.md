@@ -41,7 +41,7 @@ Beyond natvis, you can also invoke a JavaScript function. If you load a script u
 
 For more information about writing JavaScript functions and extensions in the debugger, see [JavaScript Debugger Scripting](javascript-debugger-scripting.md)
 
-While higher level expressions are typically the most useful, it's also possible to evaluate registers using these expresions. For instance, you could create a breakpoint that only triggers when the stack pointer reaches some threshold:
+While higher level expressions are typically the most useful, it's also possible to evaluate registers using these expressions. For instance, you could create a breakpoint that only triggers when the stack pointer reaches some threshold:
 
 ```dbgcmd
 0:000> bp /w "@esp < 0x6ff9f8" `mysource.cpp:143`

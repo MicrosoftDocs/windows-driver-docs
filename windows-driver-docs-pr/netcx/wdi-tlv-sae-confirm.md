@@ -13,7 +13,7 @@ keywords:
 
 **WDI_TLV_SAE_CONFIRM** is a TLV that contains the Confirm field for a Simultaneous Authentication of Equals (SAE) Confirm request.
 
-This TLV is used in [WDI_TLV_SAE_CONFIRM_REQUEST](wdi-tlv-sae-confirm-request.md).
+This TLV is used in [WDI_TLV_SAE_CONFIRM_PARAMS](wdi-tlv-sae-confirm-params.md).
 
 ## TLV Type
 

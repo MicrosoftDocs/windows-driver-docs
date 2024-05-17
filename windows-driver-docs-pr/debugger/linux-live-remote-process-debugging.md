@@ -9,7 +9,7 @@ ms.date: 05/02/2024
 
 This article describes how to establish a live WinDbg connection to Linux. Live remote process debugging on Linux requires WinDbg version 1.2402.24001.0  or above.
 
-The GNU Debugger - GDBServer, is is used on Linux to support the WinDbg connection. For more information about GDBServer, see [https://en.wikipedia.org/wiki/Gdbserver](https://en.wikipedia.org/wiki/Gdbserver). One place to view the documentation for remote gdb debugging is here - https://sourceware.org/gdb/current/onlinedocs/gdb#Remote-Debugging
+The GNU Debugger - GDBServer, is used on Linux to support the WinDbg connection. For more information about GDBServer, see [https://en.wikipedia.org/wiki/Gdbserver](https://en.wikipedia.org/wiki/Gdbserver). One place to view the documentation for remote gdb debugging is here - https://sourceware.org/gdb/current/onlinedocs/gdb#Remote-Debugging
 
 The examples here use the Windows Subsystem for Linux (WSL), but other Linux implementations can also be used.
 

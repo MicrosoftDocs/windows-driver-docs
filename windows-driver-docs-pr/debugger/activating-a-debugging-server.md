@@ -15,7 +15,7 @@ api_type:
 # Activating a Debugging Server
 
 
-There are two ways to activate the debugging server. It can be activated when the debugger is started by using the **-server** command-line option in a elevated Command Prompt window (Run as Administrator). It can also be activated after the debugger is running. Start the debugger with elevated privileges (Run as Administrator), and enter the [**.server**](../debuggercmds/-server--create-debugging-server-.md) command.
+There are two ways to activate the debugging server. It can be activated when the debugger is started by using the **-server** command-line option in an elevated Command Prompt window (Run as Administrator). It can also be activated after the debugger is running. Start the debugger with elevated privileges (Run as Administrator), and enter the [**.server**](../debuggercmds/-server--create-debugging-server-.md) command.
 
 **Note**  You can activate a debugging server without having elevated privileges, and debugging clients will be able to connect to the server. However, clients will not be able to discover a debugging server unless it was activated with elevated privileges. For information about how to discover debugging servers, see [Searching for Debugging Servers](searching-for-debugging-servers.md).
 
