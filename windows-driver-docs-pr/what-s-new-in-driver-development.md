@@ -44,6 +44,8 @@ GPUs are increasingly used in artificial intelligence and machine learning scena
   - Conditional interrupt notification only for GPU fence signals that have CPU waiters, enabling substantial power savings.
   - Fence value storage in the GPU's local memory.
 
+- [User-mode work submission](./display/user-mode-work-submission.md) is an in-progress feature that is not yet enabled for final use. This feature allows user-mode drivers to submit work directly to the GPU without kernel-mode intervention.
+
 Other added WDDM 3.2 features:
 
 - The D3D12 video encoding DDI has been extended to [support AV1 encoding](./display/video-encoding-d3d12-av1.md).
