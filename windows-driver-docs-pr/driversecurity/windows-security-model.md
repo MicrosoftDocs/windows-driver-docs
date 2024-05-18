@@ -121,7 +121,7 @@ Group Legal (S-1-5-23…)
 
 Group Everyone (S-1-1-0)
 
-When comparing a file ACL to an access token, the system first looks for an ACE for user Jim in the file’s ACL. None appears, so next it looks for an ACE for the Accounting group. As shown in the previous table, an ACE for the Accounting group appears as the first entry in the file’s ACL, so Jim'’s process is granted the right to write or delete the file and the comparison stops. If the ACE for the Legal group instead preceded the ACE for the Accounting group in the ACL, the process would be denied write, append, and delete access to the file.
+When comparing a file ACL to an access token, the system first looks for an ACE for user Jim in the file’s ACL. None appears, so next it looks for an ACE for the Accounting group. As shown in the previous table, an ACE for the Accounting group appears as the first entry in the file’s ACL, so Jim’s process is granted the right to write or delete the file and the comparison stops. If the ACE for the Legal group instead preceded the ACE for the Accounting group in the ACL, the process would be denied write, append, and delete access to the file.
 
 **Example 2: Comparing an ACL to a restricted token**
 
@@ -145,7 +145,7 @@ A privilege is the right for a user to perform a system-related operation on the
 
 Privileges are different from access rights because they apply to system-related tasks and resources rather than objects, and because they are assigned to a user or group by a system administrator, rather than by the operating system.
 
-The access token for each process contains a list of the privileges granted to the process. Privileges must be specifically enabled before use. For more information on privilges, see [Privileges](../kernel/privileges.md) in the kernel driver documentation.
+The access token for each process contains a list of the privileges granted to the process. Privileges must be specifically enabled before use. For more information on privileges, see [Privileges](../kernel/privileges.md) in the kernel driver documentation.
 
 ## Windows security model scenario: Creating a file
 

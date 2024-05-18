@@ -25,7 +25,7 @@ If the call to **NdisIfRegisterProvider** succeeds, **NdisIfRegisterProvider** r
 
 For more information about interface provider query and set handlers, see [Handling OID Query and Set Requests in an NDIS Interface Provider](handling-oid-query-and-set-requests-in-an-ndis-interface-provider.md).
 
-NDIS drivers can call the [**NdisIfDeregisterProvider**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisifderegisterprovider) function to deregister as a network interface provider. For example, NDIS drivers should deregister as a interface providers when they are unloaded. An interface provider must ensure that it does not have any interfaces registered before it calls **NdisIfDeregisterProvider**. The provider must not use the provider handle that it passed at the *NdisProviderHandle* parameter of **NdisIfDeregisterProvider** after it calls **NdisIfDeregisterProvider**.
+NDIS drivers can call the [**NdisIfDeregisterProvider**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisifderegisterprovider) function to deregister as a network interface provider. For example, NDIS drivers should deregister as an interface providers when they are unloaded. An interface provider must ensure that it does not have any interfaces registered before it calls **NdisIfDeregisterProvider**. The provider must not use the provider handle that it passed at the *NdisProviderHandle* parameter of **NdisIfDeregisterProvider** after it calls **NdisIfDeregisterProvider**.
 
  
 

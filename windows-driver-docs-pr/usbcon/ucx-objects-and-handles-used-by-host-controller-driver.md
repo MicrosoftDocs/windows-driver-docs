@@ -103,7 +103,7 @@ After the object is created, the lifetime of the object is managed by UCX, and t
 
 ## UCXENDPOINT: Endpoint object
 
-Represents an endpoint on a USB device object. Endpoint objects are created by the host controller during either an *[EVT_UCX_USBDEVICE_DEFAULT_ENDPOINT_ADD](/windows-hardware/drivers/ddi/ucxusbdevice/nc-ucxusbdevice-evt_ucx_usbdevice_default_endpoint_add)* or an *[EVT_UCX_USBDEVICE_ENDPOINT_ADD](/windows-hardware/drivers/ddi/ucxusbdevice/nc-ucxusbdevice-evt_ucx_usbdevice_endpoint_add)* callback. When a endpoint object is created, the driver registers its callback functions.
+Represents an endpoint on a USB device object. Endpoint objects are created by the host controller during either an *[EVT_UCX_USBDEVICE_DEFAULT_ENDPOINT_ADD](/windows-hardware/drivers/ddi/ucxusbdevice/nc-ucxusbdevice-evt_ucx_usbdevice_default_endpoint_add)* or an *[EVT_UCX_USBDEVICE_ENDPOINT_ADD](/windows-hardware/drivers/ddi/ucxusbdevice/nc-ucxusbdevice-evt_ucx_usbdevice_endpoint_add)* callback. When an endpoint object is created, the driver registers its callback functions.
 
 The driver also creates a framework queue object for each endpoint, and passes the WDFQUEUE for that queue to UCX by calling **[UcxEndpointSetWdfIoQueue](/windows-hardware/drivers/ddi/ucxendpoint/nf-ucxendpoint-ucxendpointsetwdfioqueue)**. After the endpoint is created, the lifetime of the object and its associated queues is managed by UCX, and the driver must not delete these objects itself.
 

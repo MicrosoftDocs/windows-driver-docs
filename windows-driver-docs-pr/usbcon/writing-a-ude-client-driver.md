@@ -675,7 +675,7 @@ The client driver creates a dynamic endpoint.
 The client driver changes the configuration by selecting an alternate setting, disabling current endpoints, or adding dynamic endpoints.
 
 The client driver registered the preceding callback during its call to **[UdecxUsbDeviceInitSetStateChangeCallbacks](/windows-hardware/drivers/ddi/udecxusbdevice/nf-udecxusbdevice-udecxusbdeviceinitsetstatechangecallbacks)**. See Create [virtual USB device](#create-a-virtual-usb-device).
-This mechanism allows the client driver to dynamically change the USB configuration and interface settings on the device. For example, when a endpoint object is needed or an existing endpoint object must be released, the class extension calls the *[EVT_UDECX_USB_DEVICE_ENDPOINTS_CONFIGURE](/windows-hardware/drivers/ddi/udecxusbdevice/nc-udecxusbdevice-evt_udecx_usb_device_endpoints_configure)*.
+This mechanism allows the client driver to dynamically change the USB configuration and interface settings on the device. For example, when an endpoint object is needed or an existing endpoint object must be released, the class extension calls the *[EVT_UDECX_USB_DEVICE_ENDPOINTS_CONFIGURE](/windows-hardware/drivers/ddi/udecxusbdevice/nc-udecxusbdevice-evt_udecx_usb_device_endpoints_configure)*.
 
 Here is the summary of the sequence in which the client driver creates a UDECXUSBENDPOINT handle for an endpoint object in its implementation of the callback function.
 

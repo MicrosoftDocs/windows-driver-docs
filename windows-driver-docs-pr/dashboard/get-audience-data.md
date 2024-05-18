@@ -96,7 +96,7 @@ The following example demonstrates the JSON response body returned by a successf
     {
       "id": "10415bba-3572-421b-a3de-d0d347bace5f",
       "name": "Test Audience 2",
-      "description": "Additional Audeince",
+      "description": "Additional Audience",
       "audienceName": "Test_Audeince_2"
     }
   ],

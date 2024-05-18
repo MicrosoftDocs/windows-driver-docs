@@ -30,7 +30,7 @@ ur
 Specifies the memory range that contains the instructions to disassemble. For more information about the syntax, see [Address and Address Range Syntax](address-and-address-range-syntax.md).
 
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
-Specifies the beginning of the memory range to disassemble. Eight instructions on an x86-based processorare unassembled. For more information about the syntax, see [Address and Address Range Syntax](address-and-address-range-syntax.md).
+Specifies the beginning of the memory range to disassemble. Eight instructions on an x86-based processor are unassembled. For more information about the syntax, see [Address and Address Range Syntax](address-and-address-range-syntax.md).
 
 ## Environment
 

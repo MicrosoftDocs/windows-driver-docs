@@ -172,7 +172,7 @@ The following MBIM_MS_PROVISIONED_CONTEXT_INFO_V2 structure shall be used in the
 | --- | --- | --- | --- | --- |
 | 0 | 4 | ElementCount (EC) | UINT32 | Count of MBIM_MS_CONTEXT_V2 structures that follow in the DataBuffer. |
 | 4 | 8 * EC | MsProvisionedContextV2RefList | OL_PAIR_LIST | The first element of the pair is a 4 byte Offset in bytes, calculated from the beginning (offset 0) of this MBIM_MS_PROVISIONED_CONTEXTS_INFO_V2 structure, to an MBIM_MS_CONTEXT_V2 structure (for more information, see the MBIM_MS_CONTEXT_V2 table). The second element of the pair is a 4-byte size of a pointer to the corresponding MBIM_MS_CONTEXT_V2 structure. |
-| 4 + 8 * EC |  | DataBuffer | DATABUFFER | Array of MBIM_MS_CONTEXT_V2 structuers. |
+| 4 + 8 * EC |  | DataBuffer | DATABUFFER | Array of MBIM_MS_CONTEXT_V2 structures. |
 
 MBIM_MS_CONTEXT_V2, used in the preceding table, provides information about a given context.
 

@@ -1,6 +1,6 @@
 ---
 title: "!ndiskd.dbgsystems"
-description: "The !ndiskd.dbgsystems extension displays and optionally changes the NDIS subsystems that have debug traces enabled.  ndiskd.dbgsystems has been superceded by WPP and Driver Verifier."
+description: "The !ndiskd.dbgsystems extension displays and optionally changes the NDIS subsystems that have debug traces enabled.  ndiskd.dbgsystems has been superseded by WPP and Driver Verifier."
 keywords: ["!ndiskd.dbgsystems Windows Debugging"]
 ms.date: 06/15/2020
 topic_type:

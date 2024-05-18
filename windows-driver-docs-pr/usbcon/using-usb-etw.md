@@ -86,7 +86,7 @@ Routine Description:
 
     DeviceIoControl dispatch routine
 
-Aruments:
+Arguments:
 
     FxQueue - Framework Queue instance
     FxRequest - Framework Request  instance

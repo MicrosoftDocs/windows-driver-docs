@@ -41,7 +41,7 @@ The following is required:
 
 - EXDI Hardware debugging must be configured manually using XML files and there is no related UI in the Windows debuggers.
 
-- As described above, because EXDI does not make use of the KDNET protocol, the connected debugger has less information about the target system and the use of the debugger is different. Without access to private symbols for the target code, many commands that use symbols to understand the state of the target system will not work. In this case, it is possible to view memory and register contents and disassemble code. Determining the location of running code, or performing other common debugger tasks, can be very difficult and time consuming with out private symbols.
+- As described above, because EXDI does not make use of the KDNET protocol, the connected debugger has less information about the target system and the use of the debugger is different. Without access to private symbols for the target code, many commands that use symbols to understand the state of the target system will not work. In this case, it is possible to view memory and register contents and disassemble code. Determining the location of running code, or performing other common debugger tasks, can be very difficult and time consuming without private symbols.
 
 ### COM GDB Server client
 
@@ -626,7 +626,7 @@ You can also specify the built files if necessary.
 PS>.\Start-ExdiDebugger.ps1 -ExdiTarget "QEMU" -GdbPort 1234 -Architecture x64 -ExdiDropPath "C:\path\to\built\exdi\files"
 ```
 
-The Start-ExdiDebugger.ps1 has the following setttings options.
+The Start-ExdiDebugger.ps1 has the following settings options.
 
 | Parameter                            | Description                      |
 |--------------------------------------|----------------------------------|

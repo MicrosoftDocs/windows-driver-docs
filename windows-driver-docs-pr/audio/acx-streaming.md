@@ -495,7 +495,7 @@ Because RT buffers are mapped in user-mode, the buffer lifetime is the same as t
 
 [EVT_ACX_STREAM_FREE_RTPACKETS callback](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_free_rtpackets) should be call after [EVT_ACX_STREAM_RELEASE_HARDWARE callback](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_release_hardware) and end before EvtDeviceReleaseHardware.
 
-This callback may happen after the driver processed the WDF release hardware callback, because the user-mode client can hold on to its handles for long time. The driver should not attempt to wait for these handles to go away, this will just create a 0x9f  DRIVER_POWER_STATE_FAILURE bug check. See [EVT_WDF_DEVICE_RELEASE_HARDWARE callback function](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_release_hardware)for more information.
+This callback may happen after the driver processed the WDF release hardware callback, because the user-mode client can hold on to its handles for long time. The driver should not attempt to wait for these handles to go away, this will just create a 0x9f  DRIVER_POWER_STATE_FAILURE bug check. See [EVT_WDF_DEVICE_RELEASE_HARDWARE callback function](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_release_hardware) for more information.
 
 This EvtDeviceReleaseHardware code from the sample ACX driver, shows an example of calling [AcxDeviceRemoveCircuit](/windows-hardware/drivers/ddi/acxdevice/nf-acxdevice-acxdeviceremovecircuit)  and then releasing the streaming h/w memory.
 
