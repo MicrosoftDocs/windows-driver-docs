@@ -8,6 +8,16 @@ ms.date: 05/22/2024
 
 This section describes new features and updates for driver development in Windows 11, version 24H2. To target this version of Windows, you can use [WDK 10.0.26100.6100](./download-the-wdk.md) (released May 22, 2024).
 
+## Audio
+
+Updates to the [ACX audio class extensions overview](./audio/acx-audio-class-extensions-overview.md) and the [Windows 11 APIs for Audio Processing Objects](./audio/windows-11-apis-for-audio-processing-objects.md) topics including new information on the following:
+
+- [ACX multi circuit composition](./audio/acx-multi-circuit-composition.md)
+- [ACX multi stack cross driver communications](./audio/acx-multi-stack.md)
+- [ACX audio data formats and data format lists](./audio/acx-data-formats.md)
+- [ACX power management](./audio/acx-power-management.md)
+- [ACX WDF driver lifetime management](./audio/acx-wdf-driver-lifetime-management.md)
+
 ## Camera and streaming media
 
 Three new camera articles for Windows 11, version 24H2 (also applies to Windows 11, version 23H2):
@@ -114,7 +124,7 @@ Updates to the [Windows CodeQL rules](./devtest/codeql-windows-driver-rules.md) 
 
 ## Windows debugging tools - WinDbg
 
-For full details on the updates to Windows Debugging tools including, WinDbg see [WinDbg Release Notes](./debuggercmds/windbg-release-notes.md). Major new features are listed here. For general information about the debugging tools, see [What is WinDbg?](./debuggercmds/windbg-overview.md).
+Major new WinDbg features are listed here. For full details on the updates to WinDbg see [WinDbg Release Notes](./debuggercmds/windbg-release-notes.md). For general information about the debugging tools, see [What is WinDbg?](./debuggercmds/windbg-overview.md).
 
 ### Live Linux debugging
 
@@ -124,20 +134,18 @@ You can now live debug a Linux process. For more information, see these topics:
 
 [Linux symbols and sources](./debugger/linux-dwarf-symbols.md)
 
-The WinDbg client for the foreseeable future will still require Windows, as WinDbg does not run on Linux.
+### Other WinDbg updates and new features
 
-### Other udpates and new features
-
-- [Source Code Extended Access](../debugger/source-code-extended-access.md)
-- [Open Enclave debugging](../debugger/open-enclave-debugging.md)
-- [Ambiguous breakpoint resolution](../debugger/ambiguous-breakpoint-resolution.md)
-- [WinDbg - Restricted Mode](windbg-restricted-mode-preview.md)
+- [Source Code Extended Access](./debugger/source-code-extended-access.md)
+- [Open Enclave debugging](./debugger/open-enclave-debugging.md)
+- [Ambiguous breakpoint resolution](./debugger/ambiguous-breakpoint-resolution.md)
+- [WinDbg - Restricted Mode](./debugger/windbg-restricted-mode-preview.md)
 - Improved [JavaScript Debugger Scripting - JavaScript Debugging](./debugger/javascript-debugger-scripting.md#javascript-debugging)
 - Accessibility improvements
 - Time Travel Debugging on ARM64
 - Smart number selection and search
 - New disassembly window
-- Updates to [Supported Ethernet NICs for Network Kernel Debugging in Windows 11](./debugger/supported-ethernet-nics-for-network-kernel-debugging-in-windows-11.md).
+- Updates to [Supported Ethernet NICs for Network Kernel Debugging in Windows 11](./debugger/supported-ethernet-nics-for-network-kernel-debugging-in-windows-11.md)
 - Expanded bug check information including new bug checks described in [Bug Check Code Reference](./debugger/bug-check-code-reference2.md)
 
 ## Related Topics
