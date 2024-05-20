@@ -1,14 +1,14 @@
 ---
 title: Microsoft Bluetooth Test Platform - RN42
 description: Bluetooth Test Platform (BTP) supported hardware (RN42).
-ms.date: 01/10/2024
+ms.date: 05/20/2024
 ---
 
 # RN42 (PMOD BT2)
 
 ## Overview
 
-The RN42 is a Basic Rate (BR) radio from Roving Networks capable of behaving as a HID peripheral such as a keyboard or mouse. More info can be found at [Digilent](https://store.digilentinc.com/pmod-bt2-bluetooth-interface/) and through the [Microchip](https://www.microchip.com/product/RN42) RN42 reference.
+The RN42 is a Basic Rate (BR) radio from Roving Networks capable of behaving as a HID peripheral such as a keyboard or mouse. More info can be found at [Digilent](https://store.digilentinc.com/pmod-bt2-bluetooth-interface/) and through the [Microchip](https://www.microchip.com/en-us/product/RN42) RN42 reference.
 
 | Device Name | Parameter | Usage Example |
 | --- | --- | --- |
