@@ -54,7 +54,7 @@ The miniport driver follows these steps when it issues the [**NDIS\_STATUS\_QOS\
 
     When the miniport driver initializes the **Header** member, it sets the **Type** member of **Header** to NDIS\_OBJECT\_TYPE\_QOS\_PARAMETERS. The miniport driver sets the **Revision** member of **Header** to NDIS\_QOS\_PARAMETERS\_REVISION\_1 and the **Size** member to NDIS\_SIZEOF\_QOS\_PARAMETERS\_REVISION\_1.
 
-    The miniport driver sets the appropriate **NDIS\_QOS\_PARAMETERS\_*Xxx*\_CHANGED** flags in the **Flags** member if the corresponding members contain data that has changed since the miniport driverissued an [**NDIS\_STATUS\_QOS\_OPERATIONAL\_PARAMETERS\_CHANGE**](./ndis-status-qos-operational-parameters-change.md) status indication.
+    The miniport driver sets the appropriate **NDIS\_QOS\_PARAMETERS\_*Xxx*\_CHANGED** flags in the **Flags** member if the corresponding members contain data that has changed since the miniport driver issued an [**NDIS\_STATUS\_QOS\_OPERATIONAL\_PARAMETERS\_CHANGE**](./ndis-status-qos-operational-parameters-change.md) status indication.
 
     **Note**   Setting the **NDIS\_QOS\_PARAMETERS\_*Xxx*\_CHANGED** flags is optional. NDIS always assumes that the members of the [**NDIS\_QOS\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_qos_parameters) are current even if they have not changed from the previous [**NDIS\_STATUS\_QOS\_OPERATIONAL\_PARAMETERS\_CHANGE**](./ndis-status-qos-operational-parameters-change.md) status indication.
 

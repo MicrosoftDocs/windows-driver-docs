@@ -179,7 +179,7 @@ Locate and copy to the local PC the two primary query suite files.
 - *windows-driver-recommended.qls*
 - *windows-driver-mustfix.qls*
 
-Their contents are shown below in [Queries and Suites](#queries-and-suites); the two files are located at [https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/suites](https://github.com/microsoft/Windows-Driver-Dev.eloper-Supplemental-Tools/tree/main/suites)
+Their contents are shown below in [Queries and Suites](#queries-and-suites); the two files are located at [https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/suites](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/suites)
 
 ## 2. Build the CodeQL Database
 
@@ -679,7 +679,7 @@ Usage of CodeQL for the purpose of WHCP testing is acceptable under the **[Hardw
 
 ### Do I need to use Visual Studio or msbuild to run CodeQL?
 
-CodeQL **does not require MSBuild or Visual Studio to be used**. See [supported languges and frameworks](https://codeql.github.com/docs/codeql-overview/supported-languages-and-frameworks/) for a list of which compilers are supported.
+CodeQL **does not require MSBuild or Visual Studio to be used**. See [supported languages and frameworks](https://codeql.github.com/docs/codeql-overview/supported-languages-and-frameworks/) for a list of which compilers are supported.
 
 ### How does the HLK verify that my driver was scanned by CodeQL?
 

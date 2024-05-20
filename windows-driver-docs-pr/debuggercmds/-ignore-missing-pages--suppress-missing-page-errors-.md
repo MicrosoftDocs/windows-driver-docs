@@ -27,7 +27,7 @@ The **.ignore\_missing\_pages** command suppresses the error messages when a Ker
 
 
 <span id="_______0______"></span> **0**   
-Displays all missing page errors while debugging a Kernel Memory Dump. This is the default behavoir of the debugger.
+Displays all missing page errors while debugging a Kernel Memory Dump. This is the default behavior of the debugger.
 
 <span id="_______1"></span> **1**  
 Suppresses the display of missing page errors while debugging a Kernel Memory Dump.

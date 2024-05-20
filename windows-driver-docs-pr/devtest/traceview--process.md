@@ -53,7 +53,7 @@ Formats the trace log as a comma-separated, variable length (.csv) file.
 Displays the trace messages in the Command Prompt window, in addition to writing them to the output file.
 
 <span id="_______-displayonly______"></span><span id="_______-DISPLAYONLY______"></span> **-displayonly**   
-Displays the trace messages only in the Command Prompt window. TraceView does not create an text file of trace messages.
+Displays the trace messages only in the Command Prompt window. TraceView does not create a text file of trace messages.
 
 <span id="_______-nosummary______"></span><span id="_______-NOSUMMARY______"></span> **-nosummary**   
 Does not create a [summary message file](summary-message-file.md).

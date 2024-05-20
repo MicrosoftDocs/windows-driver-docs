@@ -32,4 +32,4 @@ The Mobile Plans app enables users to see and choose from a list of mobile opera
 
 ## Device filtering
 
-- If a device (including the modem and/or eSIM hardware or firwmare) is found to be incompatible with a mobile operator's nework, the mobile operator can request to be filtered from the list of mobile operators shown on that device. This is to prevent an end user from attempting to acquire a data plan from an operator which cannot be used on their device. The make and model of the device (as found in the Windows System Info dialog), or the eID of the eSIM, must be supplied by the mobile operator to enable the filtering.
+- If a device (including the modem and/or eSIM hardware or firmware) is found to be incompatible with a mobile operator's network, the mobile operator can request to be filtered from the list of mobile operators shown on that device. This is to prevent an end user from attempting to acquire a data plan from an operator which cannot be used on their device. The make and model of the device (as found in the Windows System Info dialog), or the eID of the eSIM, must be supplied by the mobile operator to enable the filtering.

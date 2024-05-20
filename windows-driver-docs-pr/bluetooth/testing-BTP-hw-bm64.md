@@ -1,7 +1,7 @@
 ---
 title: Microsoft Bluetooth Test Platform - BM-64-EVB Board
 description: Bluetooth Test Platform (BTP) supported hardware (BM64).
-ms.date: 05/03/2024
+ms.date: 05/20/2024
 ---
 
 # BM-64-EVB board
@@ -145,7 +145,7 @@ This section explains how to upload new firmware for the on-board PIC microcontr
 > - The steps were accomplished with the [**MPLAB Snap**](https://www.microchip.com/developmenttools/ProductDetails/PartNO/PG164100), but other
 > ICSP compatible programmers may work.
 
-1. Download the [**MPLAB X IDE/IPE**](https://www.microchip.com/tools-resources/develop/mplab-x-ide) from Microchip.
+1. Download the [**MPLAB X IDE/IPE**](https://www.microchip.com/en-us/tools-resources/develop/mplab-x-ide) from Microchip.
 1. Connect a jumper on JP33. Set SW9 positions 1 and 2 to both OFF, SW46 should have all positions switched to ON expect for #2, and SW47 should have all positions switched to ON.
 1. Plug the 15V DC power adapter into the P2 jack for supplying power to MCU.
 1. Plug the MPLAB Snap into the ICSP J5 header and the USB cable to the Snap.

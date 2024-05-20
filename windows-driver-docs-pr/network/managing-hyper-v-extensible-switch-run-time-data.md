@@ -18,7 +18,7 @@ When a Hyper-V child partition with a network adapter connection to an extensibl
 
 The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure for the [OID\_SWITCH\_NIC\_SAVE](./oid-switch-nic-save.md) request contains a pointer to an [**NDIS\_SWITCH\_NIC\_SAVE\_STATE**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_nic_save_state) structure. This structure is allocated by the protocol edge of the extensible switch and initialized in the following way:
 
--   The **Header** member is initialized to contain the current type, revisionof the [**NDIS\_SWITCH\_NIC\_SAVE\_STATE**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_nic_save_state) structure. Size is set to the full buffer size.
+-   The **Header** member is initialized to contain the current type, revision of the [**NDIS\_SWITCH\_NIC\_SAVE\_STATE**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_nic_save_state) structure. Size is set to the full buffer size.
 
 -   The **PortId** member contains the unique identifier of the extensible switch port for which the save operation is being performed.
 
@@ -94,7 +94,7 @@ If the OID set request of [OID\_SWITCH\_NIC\_RESTORE](./oid-switch-nic-restore.m
 -   If it does not own the run-time data in the new OID request, the extension calls [**NdisFOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfoidrequest) to forward this OID set request to underlying drivers.
 
 <a href="" id="oid-switch-nic-restore-complete"></a>[OID\_SWITCH\_NIC\_RESTORE\_COMPLETE](./oid-switch-nic-restore-complete.md)  
-The extensible switch interface signals the protocol edge of the extensible switch to issue this OID at the completion of the restore operation of run-time data for an extensible switchnetwork adapter.
+The extensible switch interface signals the protocol edge of the extensible switch to issue this OID at the completion of the restore operation of run-time data for an extensible switch network adapter.
 
 This OID request notifies the extension that the restore operation has completed only for a specified extensible switch NIC.
 

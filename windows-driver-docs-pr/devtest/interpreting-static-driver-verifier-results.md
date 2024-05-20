@@ -20,7 +20,7 @@ When you launch Static Driver Verifier from Visual Studio and run an analysis of
 
 ### <span id="Statistics"></span><span id="statistics"></span><span id="STATISTICS"></span>Statistics
 
-**Entrypoints** Reports the number of entry points found in the driver source code. Entry points are the driver-supplied callback or dispatch routines. You define the entry points using function role type declarations. To perform analysis, SDV must fiind at least one entry point. For more information see, [Using Function Role Type Declarations](using-function-role-type-declarations.md).
+**Entrypoints** Reports the number of entry points found in the driver source code. Entry points are the driver-supplied callback or dispatch routines. You define the entry points using function role type declarations. To perform analysis, SDV must find at least one entry point. For more information see, [Using Function Role Type Declarations](using-function-role-type-declarations.md).
 
 **Defects found** Reports the number of defects found during the analysis. A defect is a violation of a DDI Compliance Rule.
 

@@ -69,7 +69,7 @@ There are thirteen different types of tests that AppVerifier can perform.
 
 **Low Resource Simulation** - Low resource simulation tries to simulate an environment under low resources, such as out of memory. This simulation will identify bugs that occur in low memory conditions. This is also referred to as Fault Injection.For more details, see [Application Verifier- Tests within Application Verifier](application-verifier-tests-within-application-verifier.md#low-resource-simulation)
 
-**LuaPriv** - Limited User Account Privilege Predictor (LuaPriv) tests are both Predictive and diagnostic an work to surface issues related to running an application with administrative privilege, and whether that application would work as well if run with less privilege (generally, as a normal user).For more details, see [Application Verifier- Tests within Application Verifier](application-verifier-tests-within-application-verifier.md#luapriv)
+**LuaPriv** - Limited User Account Privilege Predictor (LuaPriv) tests are both Predictive and diagnostic and work to surface issues related to running an application with administrative privilege, and whether that application would work as well if run with less privilege (generally, as a normal user).For more details, see [Application Verifier- Tests within Application Verifier](application-verifier-tests-within-application-verifier.md#luapriv)
 
 **Miscellaneous** - Miscellaneous consists of tests for an assortment of tests such as for dangerous APIs that take unsafe actions.
 For more details, see [Application Verifier- Tests within Application Verifier](application-verifier-tests-within-application-verifier.md#miscellaneous)

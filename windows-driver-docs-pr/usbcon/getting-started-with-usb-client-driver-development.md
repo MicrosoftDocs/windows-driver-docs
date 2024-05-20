@@ -6,7 +6,7 @@ ms.date: 01/12/2024
 
 # First steps for USB client driver development
 
-This section introduces USB driver development concepts and tools. The section applies to devlopers new to driver development that wish to implement a driver for a USB device that Microsoft does not provide an in-box driver for. These drivers are called a *USB client driver* in this documentation. The topics in this section describe high-level USB concepts and provide step-by-step instructions about performing common tasks of a USB client driver. For detailed information about those concepts see USB specifications at [USB Documents](https://usb.org/documents).
+This section introduces USB driver development concepts and tools. The section applies to developers new to driver development that wish to implement a driver for a USB device that Microsoft does not provide an in-box driver for. These drivers are called a *USB client driver* in this documentation. The topics in this section describe high-level USB concepts and provide step-by-step instructions about performing common tasks of a USB client driver. For detailed information about those concepts see USB specifications at [USB Documents](https://usb.org/documents).
 
 Driver developers must have coding experience in the C++ programming language and understand the concepts of *function pointers*, *callback functions*, and *event handlers*. If writing a driver based on the User-Mode Driver Framework the developer must be familiar with C++ and COM.
 
