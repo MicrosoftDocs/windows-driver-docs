@@ -40,7 +40,7 @@ The object supports these methods:
 |--|--|
 | **CAccelerometerDevice::InitializeDevice** | Retrieves the device configuration settings from ACPI, and then, retrieves the resource-hub connection IDs. This method is invoked by the **CSensorDdi::Initialize** method after the latter has initialized the sensor driver interface, the client manager, and the report manager. |
 | **CAccelerometerDevice::ConfigureHardware** | Allocates the read and write buffers and sets the read and writer registers. |
-| **CAccelerometerDevice::ConnectInterrupt** | Sreates a WUDF device interrupt. It does this by configuring a WUDF\_INTERRUPT\_CONFIG data structure and then invoking the **IWDFDevice3::CreateInterrupt** method. |
+| **CAccelerometerDevice::ConnectInterrupt** | Creates a WUDF device interrupt. It does this by configuring a WUDF\_INTERRUPT\_CONFIG data structure and then invoking the **IWDFDevice3::CreateInterrupt** method. |
 
 For the complete sequence of initialization methods, refer to the [Driver initialization](driver-initialization.md) section in this guide.
 

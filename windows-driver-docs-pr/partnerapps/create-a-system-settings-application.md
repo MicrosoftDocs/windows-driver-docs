@@ -34,7 +34,7 @@ You can find a list of all level two pages in the [Launch the Windows Settings a
 
 Additionally, you are able to add up to five search terms on each page, which must be relevant to the content on the page. For the best search experience, use specific phrases. Using general and one-word terms may cause your links to not appear in relevant searches.  
 
-For example, if you have a "Fabricam multipen" device, create a search phrase such as "set up fabricam mulitipen" instead of a generic search term such as "pen".
+For example, if you have a "Fabricam multipen" device, create a search phrase such as "set up fabricam multipen" instead of a generic search term such as "pen".
 
 ## Characteristics of partner settings app
 

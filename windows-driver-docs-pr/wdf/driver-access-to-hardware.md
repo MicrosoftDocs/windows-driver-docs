@@ -26,7 +26,7 @@ The following table lists all of the event callback functions that the framework
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left">Event callbacks functionsfor framework device objects</th>
+<th align="left">Event callbacks functions for framework device objects</th>
 <th align="left">Is hardware accessible?</th>
 </tr>
 </thead>

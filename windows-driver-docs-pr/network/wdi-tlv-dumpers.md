@@ -43,7 +43,7 @@ The parser generator library has routines to decode TLV byte arrays into trace s
 
 If you only need WPP tracing, use the Trace APIs as they are optimized to have the smallest impact to code size as well as log size (fewer strings in the ETL file). If you need a more general purpose dumper, use the Dump APIs as they include WPP tracing and also include a callback routine. The stub driver has an example of using this callback routine to redirect the output to the kernel debugger via DebugPrint APIs.
 
-Unlike the Parse and Generate APIs, the dumper is very permissive. It attempts to make sense of the TLV bytes as best as it can, regardless of the canonical form for a given message or TLV. This means the dumper might correctly decode and dump something that the parser rejects.
+Unlike the Parse and Generate APIs, the dumper is very permissive. It attempts to make sense of the TLV bytes as best it can, regardless of the canonical form for a given message or TLV. This means the dumper might correctly decode and dump something that the parser rejects.
 
 **Warning**  If the dumper successfully decodes the bytes into a human readable format, it does not mean the bytes are a well-formed TLV.
 

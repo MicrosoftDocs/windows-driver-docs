@@ -100,7 +100,7 @@ The following table describes the possible INF entries for the **\*IdleRestricti
 The following power management keywords are for traditional NDIS miniport driver use only. They must not be used by NetAdapterCx client drivers.
 
 **\*ModernStandbyWoLMagicPacket**  
-A value that describes whether the device should be enabled to wake the computer when the device receives a *magic paket* and the system is in the *S0ix* power state. This does not apply when the system is in the *S4* power state.
+A value that describes whether the device should be enabled to wake the computer when the device receives a *magic packet* and the system is in the *S0ix* power state. This does not apply when the system is in the *S4* power state.
 
 > [!NOTE]
 > **\*ModernStandbyWoLMagicPacket** is supported in NDIS 6.60 and later, or Windows 10, version 1607 and later. 
