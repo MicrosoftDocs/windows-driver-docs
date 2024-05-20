@@ -1,7 +1,7 @@
 ---
 title: Microsoft Bluetooth Test Platform - Model 2433 ESP32
 description: Bluetooth Test Platform (BTP) supported hardware (ESP32).
-ms.date: 01/10/2024
+ms.date: 05/20/2024
 ---
 
 # Microsoft Bluetooth Test Platform - Model 2433 ESP32
