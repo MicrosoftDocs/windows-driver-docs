@@ -24,10 +24,10 @@ See "Audio user-mode reliability" on [Audio measures](audio-measures.md)
 
 ## Calculation
 
-1. The measure aggregates telemtry from a 30-day sliding window into a percentage of Machines that had a capture stream initialization failure.
-2. *Capture stream initilzation failures = Count(machines with capture stream init failure*)
+1. The measure aggregates telemetry from a 30-day sliding window into a percentage of Machines that had a capture stream initialization failure.
+2. *Capture stream initialization failures = Count(machines with capture stream init failure*)
 3. *Total machines that played audio = Count(machines that had a capture audio stream init event*)
 
 ### Final calculation
 
-*Measure failure rate* = # of machines with atleast *one capture init failure / Total* # *machines with atleast one capture stream init event*
+*Measure failure rate* = # of machines with at least *one capture init failure / Total* # *machines with at least one capture stream init event*

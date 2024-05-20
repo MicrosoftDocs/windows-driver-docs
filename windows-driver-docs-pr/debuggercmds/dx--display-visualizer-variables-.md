@@ -64,7 +64,7 @@ Use any of the following format specifiers to modify the default rendering.
 
 | Format specifier | Description                    |
 |------------------|--------------------------------|
-| ,x | Display ordinals in hexidecimal|
+| ,x | Display ordinals in hexadecimal|
 | ,d | Display ordinals in decimal |
 |,o  | Display ordinals in octal |
 | ,b |Display ordinals in binary |

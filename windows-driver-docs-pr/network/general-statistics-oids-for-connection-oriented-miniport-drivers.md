@@ -31,7 +31,7 @@ In this table, M indicates an OID is mandatory, while O indicates it is optional
 
 ## Miniport driver support for 64-bit counters
 
-All one-Gbps and faster connection-oriented miniport drivers must support 64-bit counters for the following statistics OIDs. In addition, Microsoft recommends that all 100Mbps and faster connection-oriented miiniport drivers support 64-bit counters for the following statistics OIDs:
+All one-Gbps and faster connection-oriented miniport drivers must support 64-bit counters for the following statistics OIDs. In addition, Microsoft recommends that all 100Mbps and faster connection-oriented miniport drivers support 64-bit counters for the following statistics OIDs:
 
 [OID_GEN_CO_XMIT_PDUS_OK](oid-gen-co-xmit-pdus-ok.md)
 

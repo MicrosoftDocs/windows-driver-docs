@@ -16,7 +16,7 @@ api_type:
 
 The SECURE\_FAULT\_UNHANDLED bug check has a value of 0x0000018D.
 
-This bug check indidates that a secure fault originated by the secure kernel could not be handled.
+This bug check indicates that a secure fault originated by the secure kernel could not be handled.
 
 > [!IMPORTANT]
 > This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
