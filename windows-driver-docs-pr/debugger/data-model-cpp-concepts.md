@@ -93,7 +93,7 @@ IIterableConcept's [GetDefaultIndexDimensionality](/windows-hardware/drivers/ddi
 The GetDefaultIndexDimensionality method returns the number of dimensions to the default index. If an object is not indexable, this method should return 0 and succeed (S_OK). Any object which returns a non-zero value from this method is declaring support for a protocol contract which states: 
 - The object supports the indexable concept via support of IIndexableConcept
 - The GetNext method of the IModelIterator returned from the GetIterator method of the iterable concept will return a unique default index for each produced element. Such index will have the number of dimensions as indicated here.
-- Passing the indicies returned from the GetNext method of the IModelIterator to the GetAt method on the indexable concept (IIndexableConcept) will refer to the same object that GetNext produced. The same value is returned.
+- Passing the indices returned from the GetNext method of the IModelIterator to the GetAt method on the indexable concept (IIndexableConcept) will refer to the same object that GetNext produced. The same value is returned.
 
 IIterableConcept's [GetIterator](/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-iiterableconcept-getiterator)
 
@@ -106,7 +106,7 @@ The Reset method on an iterator returned from the iterable concept will restore 
 
 IModelIterator's [GetNext](/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-imodeliterator-getnext)
 
-The GetNext method moves the iterator forward and fetches the next iterated element. If the object is indexable in addition to being iterable and this is indicated by the GetDefaultIndexDimensionality argument returning a non-zero value, this method may optionally return the default indicies to get back to the produced value from the indexer. Note that a caller may choose to pass 0/nullptr and not retrieve any indicies. It is considered illegal for the caller to request partial indicies (e.g.: less than the number produced by GetDefaultIndexDimensionality). 
+The GetNext method moves the iterator forward and fetches the next iterated element. If the object is indexable in addition to being iterable and this is indicated by the GetDefaultIndexDimensionality argument returning a non-zero value, this method may optionally return the default indices to get back to the produced value from the indexer. Note that a caller may choose to pass 0/nullptr and not retrieve any indices. It is considered illegal for the caller to request partial indices (e.g.: less than the number produced by GetDefaultIndexDimensionality). 
 
 If the iterator moved forward successfully but there was an error in reading the value of the iterated element, the method may return an error *AND* fill "object" with an error object. 
 At the end of iteration of the contained elements, the iterator will return E_BOUNDS from the GetNext method. Any subsequent call (unless there has been an intervening Reset call) will also return E_BOUNDS. 
@@ -161,7 +161,7 @@ if (SUCCEEDED(spObject->GetConcept(__uuidof(IIterableConcept), &spIterable, null
             ComPtr<IKeyStore> spContainedMetadata;
 
             //
-            // When we fetch the value from the iterator, it will pass back the default indicies.
+            // When we fetch the value from the iterator, it will pass back the default indices.
             //
             HRESULT hr = spIterable->GetNext(&spContainedStruct, dimensions, reinterpret_cast<IModelObject **>(spIndexers.get()), &spContainedMetadata);
             if (hr == E_BOUNDS || hr == E_ABORT)

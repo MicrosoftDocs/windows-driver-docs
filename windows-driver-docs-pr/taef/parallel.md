@@ -43,7 +43,7 @@ BEGIN_MODULE()
 END_MODULE()
 ```
 
-This wider-scope can then be overriden at smaller scopes to disable parallelism for particular test cases or classes as follows:
+This wider-scope can then be overridden at smaller scopes to disable parallelism for particular test cases or classes as follows:
 
 ```cpp
 class MyTests

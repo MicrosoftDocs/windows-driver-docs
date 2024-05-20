@@ -954,7 +954,7 @@ HRESULT CSwapAPOMFX::GetApoNotificationRegistrationInfo(_Out_writes_(*count) APO
         CoTaskMemAlloc(sizeof(APO_NOTIFICATION_DESCRIPTOR) * numDescriptors)));
     RETURN_IF_NULL_ALLOC(apoNotificationDescriptors);
 
-    // Our APO wants to get notified when a endpoint property changes on the audio endpoint.
+    // Our APO wants to get notified when an endpoint property changes on the audio endpoint.
     apoNotificationDescriptors[0].type = APO_NOTIFICATION_TYPE_ENDPOINT_PROPERTY_CHANGE;
     (void)m_device.query_to(&apoNotificationDescriptors[0].audioEndpointPropertyChange.device);
 

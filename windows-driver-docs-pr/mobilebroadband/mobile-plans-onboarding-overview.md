@@ -22,7 +22,7 @@ Mobile Plans onboarding is a project composed of four phases:
 
 ## Project schedule
 
-A typical project schedule is divided into the following phases, with milestones defining the exit/entrance criteria for each phase. The actual length of the devlopment phase will depend on multiple factors including the scope of the project.
+A typical project schedule is divided into the following phases, with milestones defining the exit/entrance criteria for each phase. The actual length of the development phase will depend on multiple factors including the scope of the project.
 
 :::image type="content" source="images/mobile_plans_project_schedule.png" alt-text="Gantt chart showing the phases and milestones of a typical Mobile Plans project schedule.":::
 

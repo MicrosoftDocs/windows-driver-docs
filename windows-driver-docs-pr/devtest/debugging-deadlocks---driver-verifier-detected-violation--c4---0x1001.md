@@ -1,6 +1,6 @@
 ---
 title: Debugging Deadlocks - DRIVER_VERIFIER_DETECTED_VIOLATION (C4) 0x1001
-description: When Driver Verifier detects a spin lock hierarchy violation, Driver Verifiergenerates Bug Check 0xC4 DRIVER_VERIFIER_DETECTED_VIOLATION with a parameter 1 value of 0x1001.
+description: When Driver Verifier detects a spin lock hierarchy violation, Driver Verifier generates Bug Check 0xC4 DRIVER_VERIFIER_DETECTED_VIOLATION with a parameter 1 value of 0x1001.
 ms.date: 04/20/2017
 ---
 
