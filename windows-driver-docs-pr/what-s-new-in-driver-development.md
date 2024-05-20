@@ -108,6 +108,38 @@ Four new *wdm.h* power management DDIs for Windows 11, version 24H2:
 - Support for new human presence fields in proximity sensors through **[HUMAN_PRESENCE_DETECTION_TYPE](/windows-hardware/drivers/ddi/sensorsdef/ne-sensorsdef-human_presence_detection_type)** and **[PROXIMITY_SENSOR_CAPABILITIES](/windows-hardware/drivers/ddi/sensorsdef/ne-sensorsdef-proximity_sensor_capabilities)**.
 - Humans presence updates include support for tracking multiple humans.
 
+## Driver security  
+
+Updates to the [Windows CodeQL rules](./devtest/codeql-windows-driver-rules.md) and updates to the [Driver security checklist](./driversecurity/driver-security-checklist.md).
+
+## Windows debugging tools - WinDbg
+
+For full details on the updates to Windows Debugging tools including, WinDbg see [WinDbg Release Notes](./debuggercmds/windbg-release-notes.md). Major new features are listed here. For general information about the debugging tools, see [What is WinDbg?](./debuggercmds/windbg-overview.md).
+
+### Live Linux debugging
+
+You can now live debug a Linux process. For more information, see these topics:
+
+[Linux live remote process debugging](./debugger/linux-live-remote-process-debugging.md)
+
+[Linux symbols and sources](./debugger/linux-dwarf-symbols.md)
+
+The WinDbg client for the foreseeable future will still require Windows, as WinDbg does not run on Linux.
+
+### Other udpates and new features
+
+- [Source Code Extended Access](../debugger/source-code-extended-access.md)
+- [Open Enclave debugging](../debugger/open-enclave-debugging.md)
+- [Ambiguous breakpoint resolution](../debugger/ambiguous-breakpoint-resolution.md)
+- [WinDbg - Restricted Mode](windbg-restricted-mode-preview.md)
+- Improved [JavaScript Debugger Scripting - JavaScript Debugging](./debugger/javascript-debugger-scripting.md#javascript-debugging)
+- Accessibility improvements
+- Time Travel Debugging on ARM64
+- Smart number selection and search
+- New disassembly window
+- Updates to [Supported Ethernet NICs for Network Kernel Debugging in Windows 11](./debugger/supported-ethernet-nics-for-network-kernel-debugging-in-windows-11.md).
+- Expanded bug check information including new bug checks described in [Bug Check Code Reference](./debugger/bug-check-code-reference2.md)
+
 ## Related Topics
 
 For information on what was new for drivers in past Windows releases, see the following pages:
