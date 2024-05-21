@@ -192,7 +192,7 @@ This section demonstrates how to change an *MCC, MNC* value pair, add or change 
 1. Look for the Connection you want to modify, then modify any of the values there.
 1. Select **Save draft**, add a note, then select **Save**.
 
-## Creating a test package
+## Create a test package
 
 Test packages are generated from the server. You must save all changes before you download a test package. If the settings are not saved as a draft, your test package will not have your latest settings.
 
