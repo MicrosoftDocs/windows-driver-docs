@@ -18,14 +18,10 @@ If you don't yet have a mobile operator configuration portal account, follow the
 
 1. Navigate to the [Microsoft mobile operator configuration portal](https://aka.ms/moconfig) (MO portal).
 1. Select **Sign up now** below the **Sign in** button.
-    :::image type="content" source="images/mo-portal-sign-in.png" alt-text="Screenshot of the sign-in screen on the Microsoft mobile operator configuration portal.":::
 1. Enter your email address and select **Send verification code**.
-    :::image type="content" source="images/mo-portal-verify.png" alt-text="Screenshot of the create email verification screen on the Microsoft mobile operator configuration portal.":::
 1. After you receive the verification code in your email, enter it and select **Verify**.
 1. Enter a temporary password and select **Create** to send your request to the mobile operator configuration portal team.
-    :::image type="content" source="images/mo-portal-create-account.png" alt-text="Screenshot of the Microsoft mobile operator configuration portal account creation page.":::
 1. Send an email to your Microsoft representative to get your account approved for portal access.
-    :::image type="content" source="images/mo-portal-account-queue.png" alt-text="Screenshot of the Microsoft mobile operator configuration portal account creation queue message.":::
 1. After getting confirmation from your Microsoft representative, navigate back to the [mobile operator configuration portal](https://aka.ms/moconfig) and select **Sign Up** again.
 1. Verify your email, then enter a new non-temporary password and select **Create**. This is your login password going forward.
 
@@ -49,35 +45,23 @@ This section demonstrates how to add a new *MCC, MNC* pair to your COSA profile.
 
 1. Open the correct profile you want to modify. If you have more than one profile, ensure you are modifying the right profile.
 
-    :::image type="content" source="images/mobile-operator-portal-select-profile.png" alt-text="Screenshot of the mobile operator configuration portal select profile screen.":::
-
     - Check your profile APN values (optional)
         1. Open **Connections > Cellular > Connection**
         1. Make sure it's the right APN. You can have multiple connections if you have more than one APN value for this COSA profile.
-
-        :::image type="content" source="images/mobile-operator-portal-check-apn-values.png" alt-text="Screenshot of the mobile operator configuration portal connection screen.":::
 
     - Check that your *MCC, MNC* pair does not exist in the current target list (optional)
         1. Open **Targets**
         1. Check each target to ensure there's no duplicate of what you want to create. If you see more than one target, check each of them one by one.
 
-        :::image type="content" source="images/mobile-operator-portal-target.png" alt-text="Screenshot of the mobile operator configuration portal targets screen.":::
-
 1. Select **+** to add a new target to your profile, and go to the new target added to your list. This is usually the last one in the **Targets** list. If you do not see any new targets, make sure you have clicked on the drop down beside the **Targets**.
 
-    :::image type="content" source="images/mobile-operator-portal-add-new-target.png" alt-text="Screenshot of the mobile operator configuration portal add new target form.":::
-
 1. Select **Save draft**, add a note, then select **Save**.
-
-    :::image type="content" source="images/mobile-operator-portal-save-draft.png" alt-text="Screenshot of the mobile operator configuration portal save draft dialog box.":::
 
 ## Modify an existing target
 
 This section demonstrates how to change an *MCC, MNC* value pair, add or change SPN, PNN, GID1, ICCID, or IMSI range.
 
 1. Open the correct profile you want to modify. If you have more than one profile, make sure you are modifying the correct profile.
-
-    :::image type="content" source="images/mobile-operator-portal-select-profile.png" alt-text="Screenshot of the mobile operator configuration portal select profile screen.":::
 
     - Check your profile APN values. (optional)
     - Check that your *MCC, MNC* pair does not exist in the current target list. (optional)
@@ -90,13 +74,9 @@ This section demonstrates how to change an *MCC, MNC* value pair, add or change 
 
 1. Select **Save draft**, add a note, then select **Save**.
 
-:::image type="content" source="images/mobile-operator-portal-add-spn-on-target.png" alt-text="Screenshot of the mobile operator configuration portal save draft window.":::
-
 ## Modify SIM branding
 
 1. Open the correct profile you want to modify. If you have more than one profile, make sure you are modifying the correct profile.
-
-    :::image type="content" source="images/mobile-operator-portal-select-profile.png" alt-text="Screenshot of the mobile operator configuration portal select profile screen.":::
 
     - Check your profiles' APN values. (optional)
     - Check that your *MCC, MNC* pair does not exist in the current target list. (optional)
@@ -107,8 +87,6 @@ This section demonstrates how to change an *MCC, MNC* value pair, add or change 
     - Define the **AccountExperienceURL** or add an **AppID** to automatically install applications.
     - Change the **BrandingName** associated with your SIM card and when this will be used.
     - Specify when **BrandingName** will also be used.
-
-    :::image type="content" source="images/mobile-operator-portal-modify-sim-branding.png" alt-text="Screenshot of the mobile operator configuration portal settings for SIM screen.":::
 
     Here is the list of possible settings:
 
@@ -148,13 +126,9 @@ This section demonstrates how to change an *MCC, MNC* value pair, add or change 
 
 1. Select **Save draft**, add a note, then select **Save**.
 
-:::image type="content" source="images/mobile-operator-portal-modify-sim-branding-save-draft.png" alt-text="Screenshot of the mobile operator configuration portal save draft for modified SIM branding.":::
-
 ## Add a new APN
 
 1. Open the correct profile you want to modify. If you have more than one profile, make sure you are modifying the correct profile.
-
-    :::image type="content" source="images/mobile-operator-portal-select-profile.png" alt-text="Screenshot of the mobile operator configuration portal select profile screen.":::
 
     - Check your profiles' APN values. (optional)
     - Check that your *MCC, MNC* pair does not exist in the current target list. (optional)
@@ -162,8 +136,6 @@ This section demonstrates how to change an *MCC, MNC* value pair, add or change 
 1. Select **+** beside **Cellular** and look for the new **Connection** added to your list. This is usually the last one in the **Targets** list.
 
     - Add the APN values. If you do not see a new **Connection**, make sure you have clicked on the drop down next to **Cellular**.
-
-    :::image type="content" source="images/mobile-operator-portal-add-new-apn.png" alt-text="Screenshot of the mobile operator configuration portal APN values screen.":::
 
     Common APN settings:
 
@@ -210,21 +182,15 @@ This section demonstrates how to change an *MCC, MNC* value pair, add or change 
 
 1. Select **Save draft**, add a note, then select **Save**.
 
-    :::image type="content" source="images/mobile-operator-portal-save-draft.png" alt-text="Screenshot of the mobile operator configuration portal save draft dialog.":::
-
 ## Update APN, other connection settings
 
 1. Open the correct profile you want to modify. If you have more than one profile, make sure you are modifying the correct profile.
-
-    :::image type="content" source="images/mobile-operator-portal-select-profile.png" alt-text="Screenshot of the mobile operator configuration portal select profile screen.":::
 
     - Check your profiles' APN values. (optional)
     - Check that your *MCC, MNC* pair does not exist in the current target list. (optional)
 
 1. Look for the Connection you want to modify, then modify any of the values there.
 1. Select **Save draft**, add a note, then select **Save**.
-
-    :::image type="content" source="images/mobile-operator-portal-update-apn-save-draft.png" alt-text="Screenshot of the mobile operator configuration portal update APN save draft dialog.":::
 
 ## Creating a test package
 
@@ -235,8 +201,6 @@ Test packages are generated from the server. You must save all changes before yo
     - Run **winver** on the PC you want to test to check your Windows version.
 
 1. Choose the test package to download.
-
-    :::image type="content" source="images/mobile-operator-portal-get-test-ppkg.png" alt-text="Screenshot of the mobile operator configuration portal get test package screen.":::
 
 1. Follow the steps in [Test your submission for desktop COSA](testing-your-desktop-cosa-database-submission.md#test-your-submission-for-desktop-cosa) to test your COSA package file.
 

@@ -1,7 +1,7 @@
 ---
 title: Planning your Desktop COSA Database Submission
 description: Use this article plan for adding a new APN to the baseline COSA database that ships with Windows desktop devices, or to update an existing APN.
-ms.date: 02/08/2024
+ms.date: 05/21/2024
 author: mhopkins-msft
 ms.author: mhopkins
 ---
@@ -9,7 +9,7 @@ ms.author: mhopkins
 # Planning your desktop COSA database submission
 
 > [!IMPORTANT]
-> Starting in Windows 10, version 1703, the APN database is replaced by a new format called COSA. Windows 8, Windows 8.1, and versions of Windows 10 before version 1703 will continue to use the APN database while Windows 10, version 1703 and later use COSA. For more information about COSA, see [COSA overview](cosa-overview.md).
+> Starting in Windows 10, version 1703, the APN spreadsheet (apndatabase.xml) is replaced by the Country and Operator Settings Asset (COSA) database. Windows 8, Windows 8.1, and versions of Windows 10 before version 1703 will continue to use the APN database while Windows 10, version 1703 and later use COSA. For more information about COSA, see [COSA overview](cosa-overview.md).
 
 Use this article plan for adding a new APN to the baseline COSA database that ships with Windows desktop devices, or to update an existing APN.
 
@@ -21,9 +21,7 @@ To connect to a mobile broadband network, the user provides the following inform
 - On CDMA networks, an access string that includes a special dial code such as "\#777" or a Network Access Identifier such as "somebody@contoso.com".
 - A username and password for the network connection.
 
-The COSA connectivity database is updated by using Windows Update. The figure below shows the overall submission process.
-
-:::image type="content" source="images/COSA_and_APN_database_submission_process_diagram.png" alt-text="Flowchart that shows the COSA database submission process.":::
+The COSA connectivity database is updated by using Windows Update.
 
 ## Use the Microsoft mobile operator portal
 

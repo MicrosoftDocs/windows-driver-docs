@@ -1,7 +1,7 @@
 ---
 title: Introduction to the COSA Database
 description: This article contains information about the COSA database. COSA is a newer format used in Windows 10, version 1703 and later.
-ms.date: 01/02/2024
+ms.date: 05/21/2024
 author: mhopkins-msft
 ms.author: mhopkins
 ---
