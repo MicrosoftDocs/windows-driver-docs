@@ -1,7 +1,7 @@
 ---
 title: Submitting a Desktop COSA Database Update
 description: Submit a desktop COSA database update by following the steps in this topic.
-ms.date: 02/08/2024
+ms.date: 05/21/2024
 author: mhopkins-msft
 ms.author: mhopkins
 ---
@@ -15,7 +15,7 @@ Now that you've tested the APN entries, it's now time to submit them to Microsof
 
 ## Fill out the APN testing questionnaire
 
-Once you have tested your APN values, you must fill out the following questionnaire. This will be sent to your TAM as part of your submission.
+Once you have tested your APN values, you must fill out the following questionnaire. This will be sent to your technical account manager (TAM) as part of your submission.
 
 The purpose of this questionnaire is to make sure you have completed testing and to help the team at Microsoft understand how thoroughly you tested the incoming APNs.
 
