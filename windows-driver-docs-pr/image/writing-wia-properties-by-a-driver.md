@@ -52,7 +52,7 @@ Free the allocated context memory that was created by [**wiasCreatePropContext**
 
 The [**IWiaMiniDrv::drvValidateItemProperties**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvvalidateitemproperties) method is called when changes are made to an item's WIA properties. The WIA minidriver should not only check that the values are valid, but must update any valid values that change.
 
-If a WIA property is invalid, andthe application is not writing to it, the invalid value and any dependent values must be changed to valid values, or else fail validation (because the application is setting the property to an invalid value).
+If a WIA property is invalid, and the application is not writing to it, the invalid value and any dependent values must be changed to valid values, or else fail validation (because the application is setting the property to an invalid value).
 
 The following example shows an implementation of the **IWiaMiniDrv::drvValidateItemProperties** method:
 

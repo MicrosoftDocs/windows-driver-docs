@@ -93,7 +93,7 @@ With both versions of kits installed on the same PC the ‘Deploy driver’ feat
 
 In WDK for Windows 10, version 1809, changes were made to WDTF in order to support this version of Windows 10, version 1809. The effect of this is that WDTF will no longer run on down-level OS. The change continues with WDK for Windows 10, version 2004.
 
-#### Alterative for down-level testing
+#### Alternative for down-level testing
 
 The WDTF tests in WDK for Windows 10, version 1803 can be run on previous Windows versions.
 

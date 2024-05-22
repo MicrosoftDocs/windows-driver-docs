@@ -22,7 +22,7 @@ As the preceding figure shows, you can stack any number of filter modules over a
 
 Protocol drivers bind to miniport adapters. Therefore, underlying filter modules in a driver stack are transparent to protocol drivers. To obtain information about underlying filter modules, protocol drivers can enumerate the filter modules in a driver stack.
 
-If more than one protocol driver binds to an miniport adapter, the filter modules are the same for both protocol drivers. Based upon the binding, NDIS routes requests to the correct protocol driver.
+If more than one protocol driver binds to a miniport adapter, the filter modules are the same for both protocol drivers. Based upon the binding, NDIS routes requests to the correct protocol driver.
 
 ### <a href="" id="ndis-6-0-stack-with-intermediate-driver"></a>NDIS 6.0 Stack with Intermediate Driver
 

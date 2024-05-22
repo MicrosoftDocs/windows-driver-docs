@@ -54,7 +54,7 @@ Also notice that the setup class is set to "USBDevice". Vendors can use the "USB
 
 If you are installing WinUSB as the function driver for one of the functions in a USB composite device, you must provide the hardware ID that is associated with the function, in the INF. You can obtain the hardware ID for the function from the properties of the devnode in **Device Manager**. The hardware ID string format is "USB\\VID_vvvv&PID_pppp".
 
-The following INF installs WinUSB as the OSR USB FX2 board's function driver on a x64-based system.
+The following INF installs WinUSB as the OSR USB FX2 board's function driver on an x64-based system.
 
 > Starting in Windows 10, version 1709, the Windows Driver Kit provides [InfVerif.exe](../devtest/infverif.md) that you can use to test a driver INF file to make sure there are no syntax issues and the INF file is universal. We recommend that you provide a universal INF. For more information, see [Using a Universal INF File](../install/using-a-universal-inf-file.md).
 
@@ -137,7 +137,7 @@ Except for device-specific values and several issues that are noted in the follo
 
     **Note**  User-mode software must call [**SetupDiGetClassDevs**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclassdevsw) to enumerate the registered device interfaces that are associated with one of the device interface classes specified under the DeviceInterfaceGUIDs key. **SetupDiGetClassDevs** returns the device handle for the device that the user-mode software must then pass to the [**WinUsb_Initialize**](/windows/win32/api/winusb/nf-winusb-winusb_initialize) routine to obtain a WinUSB handle for the device interface. For more info about these routines, see [How to Access a USB Device by Using WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md).
 
-The following INF installs WinUSB as the OSR USB FX2 board's function driver on a x64-based system. The example shows INF with WDF co-installers.
+The following INF installs WinUSB as the OSR USB FX2 board's function driver on an x64-based system. The example shows INF with WDF co-installers.
 
 ```inf
 ;

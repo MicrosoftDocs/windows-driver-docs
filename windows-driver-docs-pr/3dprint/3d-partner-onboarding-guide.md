@@ -59,7 +59,7 @@ A plug-and-play 3D printer on Windows 10 is implemented through a pair of driver
 
 1. Build the Fabrikam driver (slicer template only)
 
-    - Build and obtain the driver package. This creates a x64 folder with the slicer part.
+    - Build and obtain the driver package. This creates an x64 folder with the slicer part.
 
 1. Adding the custom slicer
 

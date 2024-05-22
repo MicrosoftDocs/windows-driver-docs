@@ -84,7 +84,7 @@ PCI\VEN_8086&DEV_293C  Intel Corporation
 Root Hub
 DriverName :  
 
-## DEVICE HANDLE HISTORY (latest at boottom)
+## DEVICE HANDLE HISTORY (latest at bottom)
 
 ##      EVENT                        STATE                        NEXT
 

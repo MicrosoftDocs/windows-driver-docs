@@ -20,7 +20,7 @@ Two render states of the D3DRENDERSTATETYPE enumeration control multisample rend
 
 ### <span id="d3drs_multisampleantialias"></span><span id="D3DRS_MULTISAMPLEANTIALIAS"></span>D3DRS\_MULTISAMPLEANTIALIAS
 
-A BOOL value that determines how individual samples are computed when using a multisample render target buffer. When set to **TRUE**, the multiple samples are computed so that full-scene anti-aliasing is performed by sampling at different sample positions for each multiple sample. When set to **FALSE**, the multiple samples are all written with the same sample value (sampled at the pixel center), which allows nonantialiased rendering to a multisample buffer. This render state has no effect when rendering to a single sample buffer. The default value is **TRUE**.
+A BOOL value that determines how individual samples are computed when using a multisample render target buffer. When set to **TRUE**, the multiple samples are computed so that full-scene anti-aliasing is performed by sampling at different sample positions for each multiple sample. When set to **FALSE**, the multiple samples are all written with the same sample value (sampled at the pixel center), which allows aliased rendering to a multisample buffer. This render state has no effect when rendering to a single sample buffer. The default value is **TRUE**.
 
 ### <span id="d3drs_multisamplemask"></span><span id="D3DRS_MULTISAMPLEMASK"></span>D3DRS\_MULTISAMPLEMASK
 

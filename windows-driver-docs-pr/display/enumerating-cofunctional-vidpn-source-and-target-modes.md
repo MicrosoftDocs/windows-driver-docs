@@ -121,7 +121,7 @@ If the display adapter has one or more video output codecs that are capable of a
 -   Create an array of [D3DDDI\_MULTISAMPLINGMETHOD](/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_multisamplingmethod) structures
 -   Pass the array to the [**pfnAssignMultisamplingMethodSet**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_vidpn_assignmultisamplingmethodset) function of the [VidPN interface](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_vidpn_interface).
 
-The [D3DDDI\_MULTISAMPLINGMETHOD](/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_multisamplingmethod) structure has two members, which you must set, that characterize a multisampling method. The **NumSamples** member indicates the number of subpixels that are sampled. The **NumQualityLevels** member indicates the number of quality levels at which the method can operate. You can specify any number of quality levels as long as each increase in level noticably improves the quality of the presented image.
+The [D3DDDI\_MULTISAMPLINGMETHOD](/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_multisamplingmethod) structure has two members, which you must set, that characterize a multisampling method. The **NumSamples** member indicates the number of subpixels that are sampled. The **NumQualityLevels** member indicates the number of quality levels at which the method can operate. You can specify any number of quality levels as long as each increase in level noticeably improves the quality of the presented image.
 
 ### <span id="enumeration_pivots"></span><span id="ENUMERATION_PIVOTS"></span>Enumeration Pivots
 

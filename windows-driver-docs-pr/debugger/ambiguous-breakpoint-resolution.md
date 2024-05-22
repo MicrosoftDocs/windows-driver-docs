@@ -23,7 +23,7 @@ For general information about using breakpoints, see [Using Breakpoints](using-b
 
 ## Enabling ambiguous breakpoint resolution
 
-By default, ambiguous breakpoints are disabled. To enable this in a debugger session, run the this command in the WinDbg console:
+By default, ambiguous breakpoints are disabled. To enable this in a debugger session, run this command in the WinDbg console:
 
 ```dbgcmd
 dx @$debuggerRootNamespace.Debugger.Settings.EngineInitialization.ResolveAmbiguousBreakpoints = true;

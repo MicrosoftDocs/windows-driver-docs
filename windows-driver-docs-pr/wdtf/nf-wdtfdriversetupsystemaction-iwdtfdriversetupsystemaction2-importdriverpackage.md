@@ -1,7 +1,7 @@
 ---
 UID: NF:wdtfdriversetupsystemaction.IWDTFDriverSetupSystemAction2.ImportDriverPackage
 title: IWDTFDriverSetupSystemAction2::ImportDriverPackage (wdtfdriversetupsystemaction.h)
-description: Imports a driver packge to the system driver store.
+description: Imports a driver package to the system driver store.
 old-location: dtf\iwdtfdriversetupsystemaction2_importdriverpackage.htm
 tech.root: dtf
 ms.date: 04/04/2018
@@ -46,7 +46,7 @@ req.typenames:
 ## -description
 
 
-Imports a driver packge to the system driver store.
+Imports a driver package to the system driver store.
 
 
 ## -parameters

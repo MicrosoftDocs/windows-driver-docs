@@ -42,7 +42,7 @@ This section is applicable only for systems with two levels of page tables. When
 
 When the user mode driver requests GPU virtual addresses, the video memory manager grows the size of the address space of a process to accommodate the request. This is accomplished by growing the size of the current root page table (if necessary) as well as allocating new page tables for the new range.
 
-To grow a root page table the video memory manager creates another root page table allocation, makes it resident, and initializes its entires using [*UpdatePageTable*](./dxgkddiupdatepagetable.md) operations, and destroys the old allocation. The [*DxgkDdiGetRootPageTableSize*](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_getrootpagetablesize) function is used to get the size of the new page table in bytes.
+To grow a root page table the video memory manager creates another root page table allocation, makes it resident, and initializes its entries using [*UpdatePageTable*](./dxgkddiupdatepagetable.md) operations, and destroys the old allocation. The [*DxgkDdiGetRootPageTableSize*](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_getrootpagetablesize) function is used to get the size of the new page table in bytes.
 
 To shrink a root page table, the video memory manager creates a new page table allocation, makes it resident, copies a portion of the old page table to the new one using the *CopyRootPageTable* paging operation and destroys the old allocation.
 

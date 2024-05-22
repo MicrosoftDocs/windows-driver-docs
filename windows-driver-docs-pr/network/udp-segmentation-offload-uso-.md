@@ -36,7 +36,7 @@ The TCP/IP transport offloads only those UDP packets that meet the following cri
 Before offloading a large UDP packet for segmentation, the TCP/IP transport does the following:
 
 - Updates the large packet segmentation information that is associated with the [**NET_BUFFER_LIST**](/windows-hardware/drivers/ddi/content/nbl/ns-nbl-net_buffer_list) structure. This information is an [**NDIS_UDP_SEGMENTATION_OFFLOAD_NET_BUFFER_LIST_INFO**](/windows-hardware/drivers/ddi/content/nbluso/ns-nbluso-ndis_udp_segmentation_offload_net_buffer_list_info) structure that is part of the **NET_BUFFER_LIST** structure's OOB information. The TCP/IP transport sets the MSS value to the desired MSS.
-- Calculates a one's complement sum for the UDP pseudoheader and writes this sum to the **Checksum** field of the UDP header. The TCP/IP transport calculates the one's complements sum over the following fields in the pseudoheader: Source IP Address, Destination IP Address, and Protocol.  
+- Calculates one's complement sum for the UDP pseudoheader and writes this sum to the **Checksum** field of the UDP header. The TCP/IP transport calculates the one's complements sum over the following fields in the pseudoheader: Source IP Address, Destination IP Address, and Protocol.  
 
 The one's complement sum for the pseudoheader provided by the TCP/IP transport gives the NIC an early start in calculating the real UDP checksum for each packet that the NIC derives from the large UDP packet, without having to examine the IP header. 
 
@@ -61,7 +61,7 @@ An intermediate driver that independently issues status indications that report 
 
 A miniport-intermediate driver that responds to [OID_TCP_OFFLOAD_PARAMETERS](oid-tcp-offload-parameters.md) to turn off USO services must be prepared for a small window of time where USO requests could still reach the miniport driver.
 
-The number of segmentation packets that were dervied from the large UDP packet must be equal to or greater than the **MinSegmentCount** value that is specified by the miniport driver.
+The number of segmentation packets that were derived from the large UDP packet must be equal to or greater than the **MinSegmentCount** value that is specified by the miniport driver.
 
 When processing a large UDP packet, the miniport driver is responsible only for segmenting the packet and affixing MAC, IP, and UDP headers to the packets that are derived from the large UDP packet. If the miniport fails to send at least one segmented packet, the NBL must eventually be completed with a failure status. The miniport can continue sending subsequent packets but is not required to do so. The NBL cannot be completed back to NDIS until all segmented packets have transmitted or failed.
 

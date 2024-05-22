@@ -9,7 +9,7 @@ ms.date: 05/23/2017
 
 The most significant differences between MASM expression evaluation and C++ expression evaluation are as follows:
 
--   In an MASM expression, the numeric value of any symbol is its memory address. In a C++ expression, the numeric value of a variable is its actual value, not its address. Data structures do not have numeric values. Instead, they are treated as actual structures and you must use them accordingly. The value of a function name or any other entry point is the memory address and is treated as a function pointer. If you use a symbol that does not correspond to a C++ data type (such as an unmodified module name), a syntax error occurs.
+-   In a MASM expression, the numeric value of any symbol is its memory address. In a C++ expression, the numeric value of a variable is its actual value, not its address. Data structures do not have numeric values. Instead, they are treated as actual structures and you must use them accordingly. The value of a function name or any other entry point is the memory address and is treated as a function pointer. If you use a symbol that does not correspond to a C++ data type (such as an unmodified module name), a syntax error occurs.
 
 -   The MASM expression evaluator treats all numbers as ULONG64 values. The C++ expression evaluator casts numbers to ULONG64 and preserves type information of all data types.
 
@@ -19,7 +19,7 @@ The most significant differences between MASM expression evaluation and C++ expr
 
 -   An MASM expression can use two underscores ( **\_\_** ) or two colons ( **::** ) to indicate members of a class. The C++ expression evaluator uses only the two-colon syntax. Debugger *output* always uses two colons.
 
--   In an MASM expression, you should add an at sign (**@**) before all except the most common registers. If you omit this at sign, the register name might be interpreted as a hexadecimal number or as a symbol. In a C++ expression, this prefix is required for all registers.
+-   In a MASM expression, you should add an at sign (**@**) before all except the most common registers. If you omit this at sign, the register name might be interpreted as a hexadecimal number or as a symbol. In a C++ expression, this prefix is required for all registers.
 
 -   MASM expressions might contain references to source lines. These references are indicated by grave accents ( **\`** ). You cannot reference source line numbers in a C++ expression.
 

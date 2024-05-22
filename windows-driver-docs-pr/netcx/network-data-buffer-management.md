@@ -21,7 +21,7 @@ Consider a typical DMA-capable NIC, for example. There are serval benefits to th
 2. The system makes sure that the allocated data buffers are DMA-ready for the NIC hardware based on the capabilities declared by the client driver. Then, the client driver can simply program the data buffers into their hardware as-is without performing any additional DMA mapping operations.
 3. The system can take the needs of upper layer applications into consideration when allocating the data buffers, so it can decide to optimize for global end-to-end performance instead of only local end-to-end performance.
 
-For non-DMA capabile NICs like a USB-based network dongle, or for other advanced/software NICs, the buffer management model also provides an option to leave data buffer management completely to the client driver. 
+For non-DMA capable NICs like a USB-based network dongle, or for other advanced/software NICs, the buffer management model also provides an option to leave data buffer management completely to the client driver. 
 
 ## How to leverage buffer management
 

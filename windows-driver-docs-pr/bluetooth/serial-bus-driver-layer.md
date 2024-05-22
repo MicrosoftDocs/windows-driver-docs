@@ -145,7 +145,7 @@ After Bluetooth driver stack resumes to D0, the serial bus driver can then compl
 Some events need to be synchronized in the serial bus driver, such as:
 
 - While entering D2, there should already be a pending W/W Irp. This is when arming for wake to receive the wake signal should take place instead of when receiving a W/W Irp. The wake signal is only actionable while in D2 state.
-- If data is arriving (to form a packet) while entering D2 and there's no pending read request in the queue, the bus driver can cache the incoming data and enter D2. It can then complete the W/W Irp (with success) to wake the system back to D0 to repend and complete the read request.
+- If data is arriving (to form a packet) while entering D2 and there's no pending read request in the queue, the bus driver can cache the incoming data and enter D2. It can then complete the W/W Irp (with success) to wake the system back to D0 to resend and complete the read request.
 - Bthport cancels all pending read requests and waits for their completion before entering D2. At the same time, the serial bus driver may have received a complete HCI packet and has dequeued a read request to return this HCI packet. The serial bus driver should complete this request, and will then be initiated to enter D2.
 
 An action initiated by a Bluetooth application on the host side can also wake the stack from idle. In this case, only the device power state transition is required, and this action is initiated by the Bluetooth core driver.
