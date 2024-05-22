@@ -12,11 +12,11 @@ jobs:
       git config --global user.name "Ted Hudek"
       git config --global user.email "tedhudek@users.noreply.github.com"
       git checkout main
-      git checkout release-copper
+      git checkout release-amethyst
       git merge main --no-ff --no-commit
       if [ $? -eq 0 ]; then
         git commit -m "Merged main into release"
-        git push origin release-copper
+        git push origin release-amethyst
         git checkout live
         git merge main --no-ff --no-commit
         if [ $? -eq 0 ]; then
