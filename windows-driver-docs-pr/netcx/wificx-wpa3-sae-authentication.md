@@ -37,20 +37,20 @@ SAE connections are initiated with [OID_WDI_TASK_CONNECT](oid-wdi-task-connect.m
 
 The driver first selects a BSS to which to connect or roam and, if WDI did not provide the PMKID for that BSS, the driver requests Commit parameters from WDI with [NDIS_STATUS_WDI_INDICATION_SAE_AUTH_PARAMS_NEEDED](ndis-status-wdi-indication-sae-auth-params-needed.md). In this initial indication, the driver sets the indication type to **WDI_SAE_INDICATION_TYPE_COMMIT_REQUEST_PARAMS_NEEDED**. In response, WDI sends [OID_WDI_SET_SAE_AUTH_PARAMS](oid-wdi-set-sae-auth-params.md) to the driver with one of the following options.
 
-- Send Commit request (**WDI_SAE_REQUEST_TYPE_COMMIT_REQUEST**)
+- Send Commit request (**WDI_SAE_REQUEST_TYPE_COMMIT_PARAMS**)
 - Fail SAE authentication (**WDI_SAE_REQUEST_TYPE_FAILURE**)
 
 #### Upon receiving a Commit response
 
-On receiving a Commit response, the driver sends [NDIS_STATUS_WDI_INDICATION_SAE_AUTH_PARAMS_NEEDED](ndis-status-wdi-indication-sae-auth-params-needed.md) with the type set to **WDI_SAE_INDICATION_TYPE_COMMIT_RESPONSE**. In response, WDI sends [OID_WDI_SET_SAE_AUTH_PARAMS](oid-wdi-set-sae-auth-params.md) with one of the following requests:
+On receiving a Commit response, the driver sends [NDIS_STATUS_WDI_INDICATION_SAE_AUTH_PARAMS_NEEDED](ndis-status-wdi-indication-sae-auth-params-needed.md) with the type set to **WDI_SAE_INDICATION_TYPE_COMMIT_FRAME**. In response, WDI sends [OID_WDI_SET_SAE_AUTH_PARAMS](oid-wdi-set-sae-auth-params.md) with one of the following requests:
 
-- Send Commit request (**WDI_SAE_REQUEST_TYPE_COMMIT_REQUEST**)
-- Send Confirm request (**WDI_SAE_REQUEST_TYPE_CONFIRM_REQUEST**)
+- Send Commit request (**WDI_SAE_REQUEST_TYPE_COMMIT_PARAMS**)
+- Send Confirm request (**WDI_SAE_REQUEST_TYPE_CONFIRM_PARAMS**)
 - Fail SAE authentication (**WDI_SAE_REQUEST_TYPE_FAILURE**)
 
 #### Upon receiving a Confirm response
 
-On receiving a Confirm response, the driver sends [NDIS_STATUS_WDI_INDICATION_SAE_AUTH_PARAMS_NEEDED](ndis-status-wdi-indication-sae-auth-params-needed.md) with the type set to **WDI_SAE_INDICATION_TYPE_CONFIRM_RESPONSE**. WDI then sends [OID_WDI_SET_SAE_AUTH_PARAMS](oid-wdi-set-sae-auth-params.md) with the SAE status field set to success or failure. If SAE authentication fails in the driver due to timeouts or other reasons, the driver sends an [NDIS_STATUS_WDI_INDICATION_SAE_AUTH_PARAMS_NEEDED](ndis-status-wdi-indication-sae-auth-params-needed.md) indication with the type se to **WDI_SAE_INDICATION_TYPE_ERROR** and the failure reason specified in [WDI_TLV_SAE_STATUS](wdi-tlv-sae-status.md).
+On receiving a Confirm response, the driver sends [NDIS_STATUS_WDI_INDICATION_SAE_AUTH_PARAMS_NEEDED](ndis-status-wdi-indication-sae-auth-params-needed.md) with the type set to **WDI_SAE_INDICATION_TYPE_CONFIRM_FRAME**. WDI then sends [OID_WDI_SET_SAE_AUTH_PARAMS](oid-wdi-set-sae-auth-params.md) with the SAE status field set to success or failure. If SAE authentication fails in the driver due to timeouts or other reasons, the driver sends an [NDIS_STATUS_WDI_INDICATION_SAE_AUTH_PARAMS_NEEDED](ndis-status-wdi-indication-sae-auth-params-needed.md) indication with the type set to **WDI_SAE_INDICATION_TYPE_ERROR** and the failure reason specified in [WDI_TLV_SAE_STATUS](wdi-tlv-sae-status.md).
 
 ### Timeouts and retransmissions
 
@@ -85,3 +85,7 @@ If the driver needs to resend a Commit frame due to a timeout, it can either res
 ### Resending the SAE Confirm response frame
 
 If the driver needs to resend a Confirm frame due to a timeout, it should request a new set of **SendConfirm** and **Confirm** values from WDI with an [NDIS_STATUS_WDI_INDICATION_SAE_AUTH_PARAMS_NEEDED](ndis-status-wdi-indication-sae-auth-params-needed.md) indication, setting the type to **WDI_SAE_INDICATION_TYPE_CONFIRM_REQUEST_RESEND_REQUEST**.
+
+## Wi-Fi 7 SAE authentication changes
+
+For Wi-Fi 7 SAE authentication updates, see [WiFiCx Wi-Fi 7 feature requirements](wificx-wi-fi-7.md).

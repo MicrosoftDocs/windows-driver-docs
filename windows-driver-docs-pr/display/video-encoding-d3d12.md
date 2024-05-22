@@ -10,15 +10,17 @@ ms.localizationpriority: medium
 
 # D3D12 video encoding
 
-This page provides general information for driver developers regarding the Direct3D12 video encoding feature. For additional information, including application-level specifics, see the [D3D Video Encoding Specification](https://microsoft.github.io/DirectX-Specs/d3d/D3D12VideoEncoding.html).
+This article provides general information for driver developers regarding the Direct3D12 video encoding feature. For additional information, including application-level specifics, see the [D3D Video Encoding Specification](https://microsoft.github.io/DirectX-Specs/d3d/D3D12VideoEncoding.html).
 
 ## About Direct3D 12 video encoding
 
 Prior to Windows 11 (WDDM 3.0), DirectX 12 provided application- and driver-level interfaces (APIs and DDIs) to support GPU acceleration for several video applications, including video decoding, video processing, and motion estimation.
 
-Starting in Windows 11, D3D12 added a video encoding feature to the existing video API/DDI family. This feature provides a coherent set of encoding APIs/DDIs that are consistent with the existing D3D12 framework, and allows developers to perform video encoding using GPU-accelerated video engines.
+Starting in Windows 11, D3D12 adds a video encoding feature to the existing video API/DDI family. This feature provides a coherent set of encoding APIs/DDIs that are consistent with the existing D3D12 framework, and allows developers to perform video encoding using GPU-accelerated video engines.
 
 The video encode framework provides access to the video encode hardware acceleration capabilities for different scenarios such as Internet of Things (IoT), cloud, media APIs, machine learning and game streaming.
+
+Support for AV1 Encode is added in Windows 11, version 24H2 (WDDM 3.2). See [D3D12 AV1 Video Encoding](video-encoding-d3d12-av1.md) for more information.
 
 ## Supported codecs
 

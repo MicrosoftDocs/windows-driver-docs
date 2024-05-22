@@ -81,7 +81,7 @@ RtlFillVolatileMemory(&SensitiveData, sizeof(SensitiveData), 0);
 
 ## Requirements
 
-**Minimum supported client:** Windows 11 Insider Preview
+**Minimum supported client:** Windows 11, version 24H2
 
 **Header:** wdm.h (include Wdm.h)
 

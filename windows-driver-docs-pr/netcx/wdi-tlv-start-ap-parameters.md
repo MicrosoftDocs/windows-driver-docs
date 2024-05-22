@@ -2,7 +2,7 @@
 title: WDI_TLV_START_AP_PARAMETERS (dot11wificxtypes.hpp)
 ms.topic: reference
 description: WDI_TLV_START_AP_PARAMETERS is a WiFiCx TLV that contains the parameters for OID_WDI_TASK_START_AP.
-ms.date: 07/31/2021
+ms.date: 02/20/2024
 keywords:
  - WDI_TLV_START_AP_PARAMETERS Network Drivers Starting with Windows Vista
 ---
@@ -35,8 +35,7 @@ The sum (in bytes) of the sizes of all contained elements.
 |UINT8|This parameter specifies if the device supports 802.11b speeds. Valid values are 0 (not supported) and 1 (supported). When this value is set to 1, the access point should allow clients using 11b rates to connect to it.|
 |UINT8|This parameter specifies whether to allow legacy SoftAP clients to connect. Valid values are 0 (not allowed) and 1 (allowed).|
 |UINT8|MustUseSpecifiedChannels. This parameter specifies whether the AP can only be started on the channels specified in [OID_WDI_TASK_START_AP](./oid-wdi-task-start-ap.md) task parameters with [**WDI_TLV_AP_BAND_CHANNEL**](wdi-tlv-ap-band-channel.md). Valid values are 0 and 1. If it is set to 1, the AP can only be started from the specified list. If it is not set, the list is meant to be a recommendation of channels that the firmware can pick from, and it may pick another channel if it is not possible to start the AP on any of the specified channels.|
-
- 
+|UINT8|PreferOverStation. This parameter specifies whether the driver should favor the SoftAP link over the STA link and roam the STA connection if needed to improve SoftAP performances. Valid values are 0 and 1.|
 
 ## Requirements
 

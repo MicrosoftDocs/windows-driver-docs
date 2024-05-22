@@ -13,9 +13,6 @@ ACX leverages the WDF KMDF PnP power behavior. For more  information about KMDF 
 
 It is recommended that ACX drivers fully implement WDF Power Management, for example by implementing the [WDF_PNPPOWER_EVENT_CALLBACKS structure](/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_pnppower_event_callbacks). For more information, see [Supporting PnP and Power Management in Your Driver](/windows-hardware/drivers/wdf/supporting-pnp-and-power-management-in-your-driver).
 
->[!NOTE]
-> The ACX headers and libraries are not included in the  WDK 10.0.22621.2428 (released October 24, 2023), but are available in previous versions, as well as the latest (25000 series builds) Insider Preview of the WDK. For more information about preview versions of the WDK, see [Installing preview versions of the Windows Driver Kit (WDK)](../installing-preview-versions-wdk.md).
-
 ## ACX device surprise removal
 
 The WDF framework can call the [EvtDeviceSurpriseRemoval](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_surprise_removal) at any time, i.e., this callback is not serialized with the power down sequence. The WDF driver should not take any action on receiving this callback except for taking note that the device was surprise removed.
