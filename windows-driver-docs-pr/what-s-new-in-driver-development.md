@@ -6,7 +6,7 @@ ms.date: 05/22/2024
 
 # <a name="top"></a>What's new in driver development for Windows 11, version 24H2
 
-This section describes new features and updates for driver development in Windows 11, version 24H2. To target this version of Windows, you can use [WDK 10.0.26100.6100](./download-the-wdk.md) (released May 22, 2024).
+This section describes new features and updates for driver development in Windows 11, version 24H2. To target this version of Windows, you can use [WDK 10.0.26100.1](./download-the-wdk.md) (released May 22, 2024).
 
 ## Audio
 
