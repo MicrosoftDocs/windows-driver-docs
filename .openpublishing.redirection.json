@@ -14870,6 +14870,11 @@
             "source_path":  "windows-driver-docs-pr/audio/legacy-audio-interfaces.md",
             "redirect_URL":  "/windows-hardware/audio/driver-support-for-legacy-audio-interfaces",
             "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/audio/iaudiosystemeffects2.md",
+            "redirect_URL":  "/windows-hardware/audio/iaudiosystemeffects",
+            "redirect_document_id":  false
         }
     ]
 }
