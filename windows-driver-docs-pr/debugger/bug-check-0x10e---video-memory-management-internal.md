@@ -238,7 +238,7 @@ Parameter 1 describes the type of video memory error. Values for Parameter 1 tha
 </tr>
 <tr class="even">
 <td align="left"><p>0x2B</p></td>
-<td align="left"><p>VidMm is trying to free the an invalid Cpu Host Aperture page range.</p></td>
+<td align="left"><p>VidMm is trying to free an invalid Cpu Host Aperture page range.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x2C</p></td>

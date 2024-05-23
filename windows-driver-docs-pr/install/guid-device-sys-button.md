@@ -17,7 +17,7 @@ ms.topic: reference
 # GUID_DEVICE_SYS_BUTTON
 
 
-The GUID_DEVICE_SYS_BUTTON [device interface class](./overview-of-device-interface-classes.md)is defined for Advanced Configuration and Power Interface (ACPI) system power button devices.
+The GUID_DEVICE_SYS_BUTTON [device interface class](./overview-of-device-interface-classes.md) is defined for Advanced Configuration and Power Interface (ACPI) system power button devices.
 
 <table>
 <colgroup>

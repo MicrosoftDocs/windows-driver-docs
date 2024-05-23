@@ -16,7 +16,7 @@ ms.date: 04/20/2017
 
 The system port driver always sends its own reset-bus requests directly to the miniport driver's [*HwScsiResetBus*](/previous-versions/windows/hardware/drivers/ff557318(v=vs.85)) routine, described in [SCSI Miniport Driver's HwScsiResetBus Routine](scsi-miniport-driver-s-hwscsiresetbus-routine.md).
 
-However, it is possible for the [**HwScsiStartIo**](/previous-versions/windows/hardware/drivers/ff557323(v=vs.85)) routine to be called with an SRB in which the **Function** member is set to SRB\_FUNCTION\_RESET\_BUS if a NT-based operating system storage class driver requests this operation. The *HwScsiStartIo* routine can simply call the *HwScsiResetBus* routine to satisfy an incoming bus-reset request.
+However, it is possible for the [**HwScsiStartIo**](/previous-versions/windows/hardware/drivers/ff557323(v=vs.85)) routine to be called with an SRB in which the **Function** member is set to SRB\_FUNCTION\_RESET\_BUS if an NT-based operating system storage class driver requests this operation. The *HwScsiStartIo* routine can simply call the *HwScsiResetBus* routine to satisfy an incoming bus-reset request.
 
  
 

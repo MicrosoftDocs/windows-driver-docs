@@ -73,7 +73,7 @@ You can modify any component of an expression by using a unary operator. You can
 
 You can always use parentheses to override precedence rules.
 
-If part of an MASM expression is enclosed in parentheses and two at signs (@@) appear before the expression, the expression is interpreted according to [C++ expression rules](c---numbers-and-operators.md). You cannot add a space between the two at signs and the opening parenthesis. You can also specify the [expression evaluator](evaluating-expressions.md) by using **@@c++( ... )** or **@@masm( ... )**.
+If part of a MASM expression is enclosed in parentheses and two at signs (@@) appear before the expression, the expression is interpreted according to [C++ expression rules](c---numbers-and-operators.md). You cannot add a space between the two at signs and the opening parenthesis. You can also specify the [expression evaluator](evaluating-expressions.md) by using **@@c++( ... )** or **@@masm( ... )**.
 
 When you perform arithmetic computations, the MASM expression evaluator treats all numbers and symbols as ULONG64 types.
 

@@ -17,7 +17,7 @@ This property is an optional enumeration property.
 
 ## Human Proximity Detection Types
 
-For sensors reporting HumanProximity the sensor must report the detection techology used by the sensor using the `DEVPKEY_Sensor_HumanPresenceDetectionType` based on the definitions below.
+For sensors reporting HumanProximity the sensor must report the detection technology used by the sensor using the `DEVPKEY_Sensor_HumanPresenceDetectionType` based on the definitions below.
 
 | HumanPresenceDetectionType | Description |
 |---|---|

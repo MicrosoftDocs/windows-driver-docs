@@ -34,7 +34,7 @@ MyWebView.AllowedScriptNotifyUris = allowedUris;
 MyWebView.Navigate(“https://moportal.com?market=US&location=US&transactionId=%2F7RBTuSJt02OZbX8.4&eid=89033023422130000000000199055797&imei=001102000315468&iccids=8988247000101867183,8988247000103824828”);
 ```
 
-In order to provide backwards compatibility with app updates, the portal must disregard any additional parameters that might also be passed in the requst. This ensures flexibility and ability to introduce new features in the app without disrupting the mobile operator's integration.
+In order to provide backwards compatibility with app updates, the portal must disregard any additional parameters that might also be passed in the request. This ensures flexibility and ability to introduce new features in the app without disrupting the mobile operator's integration.
 
 The following table describes the launch parameters available for eSIM.
 

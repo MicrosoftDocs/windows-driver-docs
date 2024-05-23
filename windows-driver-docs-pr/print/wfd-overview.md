@@ -144,7 +144,7 @@ Steps
 
 Postconditions
 
-- User’s print system is returned to a its state before pairing attempt
+- User’s print system is returned to its state before pairing attempt
 
 Alternate flows
 

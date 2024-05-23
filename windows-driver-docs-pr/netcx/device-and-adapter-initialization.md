@@ -32,7 +32,7 @@ In [*EVT_WDF_DRIVER_DEVICE_ADD*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfd
     > [!TIP]
     > If your device supports more than one NETADAPTER, we recommend storing pointers to each adapter in your device context.
 
-3. Create the NETADAPTER object. To do so, the client calls [**NetAdapterInitAllocate**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapterinitallocate), followed by optional **NetAdapterInitSetXxx** methods to initailize the adapter's attributes. Finally, the client calls [**NetAdapterCreate**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadaptercreate). 
+3. Create the NETADAPTER object. To do so, the client calls [**NetAdapterInitAllocate**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapterinitallocate), followed by optional **NetAdapterInitSetXxx** methods to initialize the adapter's attributes. Finally, the client calls [**NetAdapterCreate**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadaptercreate). 
 
     The following example shows how a client driver might initialize a NETADAPTER object. Note that error handling is simplified in this example.
 

@@ -196,7 +196,7 @@ Use the -h option to display information about objects.
 kd>  dx -h Debugger.State
 Debugger.State   [State pertaining to the current execution of the debugger (e.g.: user variables)]
     DebuggerVariables [Debugger variables which are owned by the debugger and can be referenced by a pseudo-register prefix of @$]
-    PseudoRegisters   [Categorizied debugger managed pseudo-registers which can be referenced by a pseudo-register prefix of @$]
+    PseudoRegisters   [Categorized debugger managed pseudo-registers which can be referenced by a pseudo-register prefix of @$]
     UserVariables     [User variables which are maintained by the debugger and can be referenced by a pseudo-register prefix of @$]
 ```
 

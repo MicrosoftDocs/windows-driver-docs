@@ -53,7 +53,7 @@ DUA submissions can only be created off of an initial submission. DUA submission
 
     :::image type="content" source="./images/hardware-submission-update/hardware-download-dua.png" alt-text="Screenshot that shows the DUA download button for a driver submission":::
 
-1. Create a DUA submission from a DUA Shell. For information on how to create a DUA submission, see see [Create a driver only update package](/windows-hardware/test/hlk/user/create-a-driver-only-update-package).
+1. Create a DUA submission from a DUA Shell. For information on how to create a DUA submission, see [Create a driver only update package](/windows-hardware/test/hlk/user/create-a-driver-only-update-package).
 
 1. On the driver details page, in the **Packages and signing properties** section, select **Upload new**.
 

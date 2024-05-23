@@ -68,7 +68,7 @@ private async void OnInterruptDataReceivedEvent(UsbInterruptInPipe sender, UsbIn
     // The data from the interrupt
     IBuffer buffer = eventArgs.InterruptData;
 
-    // Create a DispatchedHandler for the because we are interracting with the UI directly and the
+    // Create a DispatchedHandler for the because we are interacting with the UI directly and the
     // thread that this function is running on may not be the UI thread; if a non-UI thread modifies
     // the UI, an exception is thrown
 
@@ -158,7 +158,7 @@ After the event handler is registered, it is invoked each time data is received 
 
 After you are finished receiving data, unregister the event handler.
 
-This example code shows how to unregister the event handler. In this example, if the app has an previously registered event handler, the method gets the tracked event handler, and unregisters it on the interrupt pipe.
+This example code shows how to unregister the event handler. In this example, if the app has a previously registered event handler, the method gets the tracked event handler, and unregisters it on the interrupt pipe.
 
 ```csharp
 private void UnregisterInterruptEventHandler()

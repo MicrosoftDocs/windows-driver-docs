@@ -64,7 +64,7 @@ wevtutil.exe install-manifest %windir%\System32\inetsrv\symproxy.man
 regedit.exe /s symproxy.reg
 
 ::
-::  Web server Configuraiton
+::  Web server Configuration
 ::
 
 IF not exist %VirDirectory% mkdir %VirDirectory%

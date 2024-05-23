@@ -116,7 +116,7 @@ See [Steps for installing HLK](https://microsoft.sharepoint.com/teams/HWKits/Sit
 In HLK Studio connect to the device Cellular modem driver and run the test: [Win6_4.MB.GSM.Data.TestUssd](/windows-hardware/test/hlk/testref/17ae6fea-6244-442d-b977-6367d1ae441e).
 
 ## MB USSD Troubleshooting Guide
-- Collect and decod the logs using the instructions in [MB Collecting Logs](mb-collecting-logs.md).
+- Collect and decode the logs using the instructions in [MB Collecting Logs](mb-collecting-logs.md).
 
 - Keywords for filtering
   1. OID_WWAN_USSD 

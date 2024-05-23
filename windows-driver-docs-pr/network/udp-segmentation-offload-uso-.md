@@ -61,7 +61,7 @@ An intermediate driver that independently issues status indications that report 
 
 A miniport-intermediate driver that responds to [OID_TCP_OFFLOAD_PARAMETERS](oid-tcp-offload-parameters.md) to turn off USO services must be prepared for a small window of time where USO requests could still reach the miniport driver.
 
-The number of segmentation packets that were dervied from the large UDP packet must be equal to or greater than the **MinSegmentCount** value that is specified by the miniport driver.
+The number of segmentation packets that were derived from the large UDP packet must be equal to or greater than the **MinSegmentCount** value that is specified by the miniport driver.
 
 When processing a large UDP packet, the miniport driver is responsible only for segmenting the packet and affixing MAC, IP, and UDP headers to the packets that are derived from the large UDP packet. If the miniport fails to send at least one segmented packet, the NBL must eventually be completed with a failure status. The miniport can continue sending subsequent packets but is not required to do so. The NBL cannot be completed back to NDIS until all segmented packets have transmitted or failed.
 

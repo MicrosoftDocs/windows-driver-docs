@@ -51,7 +51,7 @@ In C++ syntax, the **@** sign indicates a register, a double equal sign (==) is 
 ```
 ## MASM and C++ Mixed Expression Examples
 
-You cannot use source-line expressions in a C++ expression. The following example uses the **@@( )** alternative evaluator syntax to nest an MASM expression within a C++ expression. This example sets **MyPtr** equal to the address of line 43 of the Myfile.c file.
+You cannot use source-line expressions in a C++ expression. The following example uses the **@@( )** alternative evaluator syntax to nest a MASM expression within a C++ expression. This example sets **MyPtr** equal to the address of line 43 of the Myfile.c file.
 
 ```dbgcmd
 0:000> ?? MyPtr = @@( `myfile.c:43` )

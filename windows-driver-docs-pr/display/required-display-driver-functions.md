@@ -20,7 +20,7 @@ At a minimum, every display driver must:
 
 3.  Enable the drawing surface.
 
-The following table lists the functions that all display drivers must implement. Following **DrvEnableDriver**, the remaining functions are listed alphabetically. Note that except for **DrvEnableDriver**, which GDI calls by name, all other display driver functions do not have fixed names, and are listed with pseudonames.
+The following table lists the functions that all display drivers must implement. Following **DrvEnableDriver**, the remaining functions are listed alphabetically. Note that except for **DrvEnableDriver**, which GDI calls by name, all other display driver functions do not have fixed names, and are listed with pseudonyms.
 
 <table>
 <colgroup>

@@ -30,7 +30,7 @@ When a someone tries to use an application that accesses the machine’s camera 
 
 2. Types of Instances:
 
-   a. *Successful inialization event = 0% failure*
+   a. *Successful initialization event = 0% failure*
 
 ```cpp
 MF_CAPTURE_ENGINE_INITIALIZED with an HRESULT == 0

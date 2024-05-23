@@ -29,7 +29,7 @@ The overlying driver calls [**NdisOidRequest**](/windows-hardware/drivers/ddi/nd
 
 -   The driver must detach the specified VPort from the PF or a PCIe Virtual Function (VF).
 
-    If the VPort is attached to a VF, the virtualization stack ensures that the VF miniport driver that runs in the guest operating system has been previously paused and halted. As a result, all previouslyindicated receive packets from the VPort should have been returned to the VF miniport driver.
+    If the VPort is attached to a VF, the virtualization stack ensures that the VF miniport driver that runs in the guest operating system has been previously paused and halted. As a result, all previously indicated receive packets from the VPort should have been returned to the VF miniport driver.
 
     If the VPort is attached to the PF, the PF miniport driver must stop any additional DMA to the shared memory associated with the VPort. The PF miniport driver must make sure that all previouslyindicated receive packets from the VPort are returned to the miniport. The PF miniport driver must not make any additional receive indications to NDIS that specify the VPort's identifier in the packet's [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure. After all of the indicated receive packets from the VPort are returned to the PF miniport driver, it must free the shared memory associated with the VPort by calling [**NdisFreeSharedMemory**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfreesharedmemory).
 
