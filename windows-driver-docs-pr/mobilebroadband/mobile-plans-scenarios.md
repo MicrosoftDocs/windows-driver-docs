@@ -26,7 +26,7 @@ This section describes the steps a mobile operator should take to download, inst
 
 ## Activate a warm SIM in a Windows device
 
-This section describes the steps to allow users to activate a warm psychical SIM in a Windows device. The term 'warm' refers to a SIM which has been preactivated and can connect to the mobile operator network, but has not been associated with an active subscription.
+This section describes the steps to allow users to activate a warm physical SIM in a Windows device. The term 'warm' refers to a SIM which has been preactivated and can connect to the mobile operator network, but has not been associated with an active subscription.
 
 1. Implement the [mobile operator web portal](mobile-plans-web-portal.md#web-portal-interface-for-physical-sims) that will walk the user through the sign in and activation steps.
 2. Implement the callback method for [adding balance](mobile-plans-callback-notifications.md#adding-balance).
