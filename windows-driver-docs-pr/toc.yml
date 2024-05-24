@@ -16,6 +16,8 @@
   items: 
   - name: "Download the Windows Driver Kit (WDK)"
     href: download-the-wdk.md
+  - name: "Install the WDK using NuGet"
+    href: install-the-wdk-using-nuget.md    
   - name: "Install the WDK using WinGet"
     href: install-the-wdk-using-winget.md
   - name: "Installing preview versions of the WDK"
