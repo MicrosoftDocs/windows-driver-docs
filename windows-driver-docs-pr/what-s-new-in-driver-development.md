@@ -10,7 +10,7 @@ This section describes new features and updates for driver development in Window
 
 ## Audio
 
-Updates to the [ACX audio class extensions overview](./audio/acx-audio-class-extensions-overview.md) and the [Windows 11 APIs for Audio Processing Objects](./audio/windows-11-apis-for-audio-processing-objects.md) topics including new information on the following:
+Updates to the [ACX audio class extensions overview](./audio/acx-audio-class-extensions-overview.md) and the [Windows 11 APIs for Audio Processing Objects](./audio/windows-11-apis-for-audio-processing-objects.md) articles including new information on the following:
 
 - [ACX multi circuit composition](./audio/acx-multi-circuit-composition.md)
 - [ACX multi stack cross driver communications](./audio/acx-multi-stack.md)
@@ -46,35 +46,39 @@ GPUs are increasingly used in artificial intelligence and machine learning scena
 
 - [Dirty bit tracking](./display/dirty-bit-tracking.md) enhances the performance of VRAM data transfer between physical hosts during the live migration of virtual machines.
 
-- [Live migration of heterogeneous GPU-P compute devices](./display/live-migration-on-gpup-devices.md) has been added. Significant content can now be transferred while virtualized resources are still active, reducing the pause time needed to complete a migration.
+- [Live migration of heterogeneous GPU-P compute devices](./display/live-migration-on-gpup-devices.md) is added. Significant content can now be transferred while virtualized resources are still active, reducing the pause time needed to complete a migration.
 
-- A [GPU native fence synchronization object](./display/native-gpu-fence-objects.md) is added as an extension to the monitored fence object, supporting the following additional features:
+- A [GPU native fence synchronization object](./display/native-gpu-fence-objects.md) is added as an extension to the monitored fence object, supporting the following extra features:
 
   - GPU wait on monitored fence value, which allows for high performance engine-to-engine synchronization without requiring CPU round trips.
   - Conditional interrupt notification only for GPU fence signals that have CPU waiters, enabling substantial power savings.
   - Fence value storage in the GPU's local memory.
 
-- [User-mode work submission](./display/user-mode-work-submission.md) is an in-progress feature that is not yet enabled for final use. This feature allows user-mode drivers to submit work directly to the GPU without kernel-mode intervention.
+- [User-mode work submission](./display/user-mode-work-submission.md) is an in-progress feature that isn't yet enabled for final use. This feature allows user-mode drivers to submit work directly to the GPU without kernel-mode intervention.
 
-Other added WDDM 3.2 features:
+Other added WDDM 3.2 features include:
 
-- The D3D12 video encoding DDI has been extended to [support AV1 encoding](./display/video-encoding-d3d12-av1.md).
+- The D3D12 video encoding DDI is extended to [support AV1 encoding](./display/video-encoding-d3d12-av1.md).
 
 - The method that a user-mode or kernel-mode graphics driver uses to determine whether a particular [WDDM feature is supported and enabled](./display/querying-wddm-feature-support-and-enablement.md)
 
-- [TDR (timeout detection and recovery) debugging has been enhanced](./display/tdr-debuggability-improvements.md) to provide more information about the cause of a TDR event.
+- [TDR (timeout detection and recovery) debugging is enhanced](./display/tdr-debuggability-improvements.md) to provide more information about the cause of a TDR event.
 
 ## File system and filter drivers
 
-- Starting in Windows 11, version 24H2, [bind links](/windows/win32/bindlink/) can be used to bind a file system namespace to a local "virtual path" through the Bind Filter (*bindflt.sys*). Minifilters can choose to veto such bind links on the system's boot partition. For more information, see [Vetoing a bind link](./ifs/vetoing-a-bind-link.md).
+Starting in Windows 11, version 24H2:
 
-- *FltMgr* now provides [Query on Create support for USN and file security information](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltrequestsecurityinfooncreatecompletion).
+- [Bind links](/windows/win32/bindlink/) can be used to bind a file system namespace to a local "virtual path" through the Bind Filter (*bindflt.sys*). Minifilters can choose to veto such bind links on the system's boot partition. For more information, see [Vetoing a bind link](./ifs/vetoing-a-bind-link.md).
+
+- When opening a $INDEX_ALLOCATION attribute, [**NtCreateFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntcreatefile) now honors the state of the **FILE_NON_DIRECTORY_FILE** flag, whereas it previously didn't.
+
+- *FltMgr* provides [Query on Create support for USN and file security information](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltrequestsecurityinfooncreatecompletion).
 
 ## Network drivers
 
 - Starting in Windows 11, version 24H2, you can write a [User-Mode Driver Framework (UMDF) NetAdapterCx](netcx/user-mode-netcx.md) driver. The UMDF APIs in NetAdapterCx align with the KMDF versions, so you can convert your KMDF-based client driver to UMDF with little to no code changes.
 
-- UDP Receive Segment Coalescing Offload (URO) is a new hardware offload feature that enables network interface cards (NICs) to coalesce UDP receive segments.  For more information, see [UDP Receive Segment Coalescing Offload (URO)](network/udp-rsc-offload.md) and [NetAdapterCx URO](netcx/rsc-offload.md).
+- UDP Receive Segment Coalescing Offload (URO) is a new hardware offload feature that enables network interface cards (NICs) to coalesce UDP receive segments. For more information, see [UDP Receive Segment Coalescing Offload (URO)](network/udp-rsc-offload.md) and [NetAdapterCx URO](netcx/rsc-offload.md).
 
 - [WiFiCx Wi-Fi 7](./netcx/wificx-wi-fi-7.md) introduces support for Wi-Fi 7 features, providing faster connectivity speeds, lower latency, and improved security. WiFiCx Wi-Fi 7 enables:
   - Multi-Link Operation (MLO) with roaming differentiation to leverage multiple simultaneous channels to the Wi-Fi access point (AP).
@@ -128,7 +132,7 @@ Major new WinDbg features are listed here. For full details on the updates to Wi
 
 ### Live Linux debugging
 
-You can now live debug a Linux process. For more information, see these topics:
+You can now live debug a Linux process. For more information, see these articles:
 
 [Linux live remote process debugging](./debugger/linux-live-remote-process-debugging.md)
 
@@ -148,7 +152,7 @@ You can now live debug a Linux process. For more information, see these topics:
 - Updates to [Supported Ethernet NICs for Network Kernel Debugging in Windows 11](./debugger/supported-ethernet-nics-for-network-kernel-debugging-in-windows-11.md)
 - Expanded bug check information including new bug checks described in [Bug Check Code Reference](./debugger/bug-check-code-reference2.md)
 
-## Related Topics
+## Related articles
 
 For information on what was new for drivers in past Windows releases, see the following pages:
 
