@@ -82,6 +82,12 @@ Once you have downloaded the ISO, use these steps to set up your build environme
 
 You can optionally use the Visual Studio interface with the build tools provided in the EWDK. To do this, ensure that the Visual Studio major version matches the version of the Visual Studio Build Tools in the EWDK. For example, Visual Studio 2022 works with the EWDK that contain VS17.X build tools. For a list of Visual Studio 2022 version numbers, see [Visual Studio 2022 Releases](/visualstudio/releases/2022/release-history).
 
+## WDK NuGet Package
+The WDK NuGet package consists of essential libraries, headers, DLL, tools and metadata used for building Windows drivers that can be shared and supported by modern CI/CD pipelines. Users can access and consume the NuGet packages directly from nuget.org within Visual Studio. Using NuGet with the WDK provides a lightweight solution for WDK acquisition for developers who need always up to date tools for building modern hardware drivers. For more information, see Install and manage packages in Visual Studio using the NuGet Package Manager.  The official release of the WDK NuGet package is now available on nuget.org. The x64 package link is x64: https://www.nuget.org/packages/Microsoft.Windows.WDK.x64/ and the ARM64 package link is https://www.nuget.org/packages/Microsoft.Windows.WDK.ARM64. Visit https://learn.microsoft.com/en-us/windows-hardware/drivers/install-the-wdk-using-nuget#install-the-latest-wdk-using-nuget---step-by-step for setup details
+
+## ARM64 Support
+Starting from WDK version 10.0.26100.1, WDK now support development, testing and deployment of drivers on ARM64 machines. The WDK/EWDK can be installed and run natively on ARM64 hardware, in addition to the previouly supported emulation of x86 KMDF/UMDF2 drivers on ARM64 hardware. There is also support for debugging and deployment drivers on ARM64 machine from ARM64 and x64 host machines. The process of installing WDK/EWDK on ARM64 machines will automatically identify and install all the necessary dependencies including build tools, binaries and libraries.
+
 ## Kit versioning
 
 A full kit build string includes as its last two components, the build number and a QFE (Quick Fix Engineering) value. For example, 10.0.22621.2428 has a build number of 22621, and a QFE value of 2428.
