@@ -7,6 +7,8 @@
     href: camera-privacy-controls.md
   - name: "Privacy shutter/switch notification"
     href: privacy-shutter-notification.md
+  - name: "Privacy shutter replacement image"
+    href: privacy-shutter-replacement-image.md
 - name: "Background segmentation portrait mode and eye gaze stare mode driver sample"
 # Auto-expanded node
   items: 
