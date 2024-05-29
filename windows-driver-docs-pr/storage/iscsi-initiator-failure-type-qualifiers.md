@@ -21,7 +21,7 @@ The following table describes the ISCSI\_INITIATOR\_FAILURE\_TYPE\_QUALIFIERS va
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left">Initiator failure falue</th>
+<th align="left">Initiator failure value</th>
 <th align="left">Meaning</th>
 </tr>
 </thead>

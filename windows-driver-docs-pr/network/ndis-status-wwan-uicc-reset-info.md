@@ -9,7 +9,7 @@ ms.date: 03/02/2023
 
 # NDIS_STATUS_WWAN_UICC_RESET_INFO
 
-The NDIS_STATUS_WWAN_UICC_RESET_INFO status notification is sent by a modem miniport adapter to inform the MB host of the current passthrough status to a UICC smart card. This notification is sent in the folloiwng two scenarios:
+The NDIS_STATUS_WWAN_UICC_RESET_INFO status notification is sent by a modem miniport adapter to inform the MB host of the current passthrough status to a UICC smart card. This notification is sent in the followng two scenarios:
 
 1. After an [OID_WWAN_UICC_RESET](oid-wwan-uicc-reset.md) query request.
 2. After UICC reset is complete following an OID_WWAN_UICC_RESET set request, to inform the MB host of the passthrough status of the UICC card post-reset.

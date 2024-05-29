@@ -7,7 +7,7 @@ ms.date: 04/20/2017
 # Authoring Tests in C#
 
 
-The example below shows a C# .cs file with a simple single test class that demostrates C# tests markup. (Please note that this example is for demonstrational purpose only, so it will not compile or run.)
+The example below shows a C# .cs file with a simple single test class that demonstrates C# tests markup. (Please note that this example is for demonstrational purpose only, so it will not compile or run.)
 
 ```csharp
 1    using Microsoft.VisualStudio.TestTools.UnitTesting;

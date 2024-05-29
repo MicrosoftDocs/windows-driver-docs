@@ -23,7 +23,7 @@ This article shows you how to register for the Microsoft Windows Hardware Develo
 
 - You must have an Extended Validation (EV) code signing certificate. Check whether your organization already has a code signing certificate. If your company already has a certificate, have the certificate available. If your organization doesn't have a certificate, you'll need to [purchase an EV certificate](code-signing-reqs.md#ev-certificate-signed-drivers). You only need the certificate to register for the Hardware Developer Program. You don't need to sign your driver with it.
 
-- You'll need to sign in with your organization’s Microsoft Entra ID [Global administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) account. If you don’t know whether your organization has an Microsoft Entra ID directory, contact your IT department. If your organization doesn’t have an Microsoft Entra ID directory, you'll be able to create one for free during the registration process.
+- You'll need to sign in with your organization’s Microsoft Entra ID [Global administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) account. If you don’t know whether your organization has a Microsoft Entra ID directory, contact your IT department. If your organization doesn’t have a Microsoft Entra ID directory, you'll be able to create one for free during the registration process.
 
 - You must have the authority to sign legal agreements on behalf of your organization.
 
@@ -37,7 +37,7 @@ To register for the Hardware Developer Program:
 
     :::image type="content" source="./images/hardware-program-register/registration-start.png" alt-text="Screenshot of the first page of the Hardware Developer Program registration process. The 'Next' button is selected.":::
 
-1. If your organization has an Microsoft Entra ID global administrator account, select **Sign in to Microsoft Entra ID**. If your organization doesn't have an Microsoft Entra ID directory, select **Create a new directory for free**. Follow the directions to create an account and sign in with your new global administrator user name and password.
+1. If your organization has a Microsoft Entra ID global administrator account, select **Sign in to Microsoft Entra ID**. If your organization doesn't have a Microsoft Entra ID directory, select **Create a new directory for free**. Follow the directions to create an account and sign in with your new global administrator user name and password.
 
     :::image type="content" source="./images/hardware-program-register/registration-work-account.png" alt-text="Screenshot of the Microsoft Entra ID page of the Hardware Developer Program registration process. The 'Sign in to Microsoft Entra ID' button is selected.":::
 

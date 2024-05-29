@@ -14,7 +14,7 @@ The following steps describe the end-to-end process of using the Microsoft Hardw
 
 2. Make sure that you have completed the prerequisites below.
 
-3. Before you call a method in the Microsoft Hardware API, obtain an Microsoft Entra ID access token, as illustrated below. After you obtain a token, you have 60 minutes to use this token in calls to the Microsoft Store submission API before the token expires. After the token expires, you can generate a new token.
+3. Before you call a method in the Microsoft Hardware API, obtain a Microsoft Entra ID access token, as illustrated below. After you obtain a token, you have 60 minutes to use this token in calls to the Microsoft Store submission API before the token expires. After the token expires, you can generate a new token.
 
 4. Call the Microsoft Hardware API.
 
@@ -22,11 +22,11 @@ The following steps describe the end-to-end process of using the Microsoft Hardw
 
 Before you start writing code to call the Microsoft Hardware API, make sure that you have completed the following required prerequisites.
 
-* You (or your organization) must have an Microsoft Entra ID directory and you must have [Global administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)  permission for the directory. If you already use Microsoft 365 or other business services from Microsoft, you already have Microsoft Entra ID directory. Otherwise, you can [create a new Microsoft Entra ID in Partner Center](/windows/uwp/publish/associate-azure-ad-with-partner-center#create-a-brand-new-azure-ad-to-associate-with-your-partner-center-account) for no additional charge.
+* You (or your organization) must have a Microsoft Entra ID directory and you must have [Global administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)  permission for the directory. If you already use Microsoft 365 or other business services from Microsoft, you already have Microsoft Entra ID directory. Otherwise, you can [create a new Microsoft Entra ID in Partner Center](/windows/uwp/publish/associate-azure-ad-with-partner-center#create-a-brand-new-azure-ad-to-associate-with-your-partner-center-account) for no additional charge.
 
-* If an Microsoft Entra ID application does not already exist, [you must create one](/windows/uwp/publish/add-users-groups-and-azure-ad-applications#create-a-new-azure-ad-application-account-in-your-organizations-directory-and-add-it-to-your-partner-center-account).
+* If a Microsoft Entra ID application does not already exist, [you must create one](/windows/uwp/publish/add-users-groups-and-azure-ad-applications#create-a-new-azure-ad-application-account-in-your-organizations-directory-and-add-it-to-your-partner-center-account).
 
-* You must [associate an Microsoft Entra ID application with your Partner Center account](/windows/uwp/publish/associate-azure-ad-with-partner-center) and assign it the **Manager** role.
+* You must [associate a Microsoft Entra ID application with your Partner Center account](/windows/uwp/publish/associate-azure-ad-with-partner-center) and assign it the **Manager** role.
 
 * Gather your [Microsoft Entra ID application tenant ID, client ID, and key](/windows/uwp/publish/add-users-groups-and-azure-ad-applications#manage-keys-for-an-azure-ad-application).  **Be sure to print or copy this key info, as you won't be able to access it again after you leave the key creation page.** 
 
@@ -47,7 +47,7 @@ After you have completed the above prerequisites we must now assign the appropri
 
 ## Obtain a Microsoft Entra ID access token
 
-Before you call any of the methods in the Microsoft Hardware API, you must first obtain an Microsoft Entra ID access token that you pass to the **Authorization** header of each method in the API. After you obtain an access token, you have 60 minutes to use it before it expires. After the token expires, you can refresh the token, so you can continue to use it in further calls to the API. To obtain the access token, follow the instructions in [Service to Service Calls Using Client Credentials](/azure/active-directory/azuread-dev/v1-oauth2-client-creds-grant-flow) to send an HTTP POST to the `https://login.microsoftonline.com/<tenant_id>/oauth2/token` endpoint. Here is a sample request.
+Before you call any of the methods in the Microsoft Hardware API, you must first obtain a Microsoft Entra ID access token that you pass to the **Authorization** header of each method in the API. After you obtain an access token, you have 60 minutes to use it before it expires. After the token expires, you can refresh the token, so you can continue to use it in further calls to the API. To obtain the access token, follow the instructions in [Service to Service Calls Using Client Credentials](/azure/active-directory/azuread-dev/v1-oauth2-client-creds-grant-flow) to send an HTTP POST to the `https://login.microsoftonline.com/<tenant_id>/oauth2/token` endpoint. Here is a sample request.
 
 ```cpp
 POST https://login.microsoftonline.com/<tenant_id>/oauth2/token HTTP/1.1
@@ -66,7 +66,7 @@ After your access token expires, you can refresh it by following the instruction
 
 ## Use the Microsoft Hardware API
 
-After you have an Microsoft Entra ID access token, you can call methods in the Microsoft Hardware API. The API includes many methods that are grouped into scenarios. To create or update submissions, you typically call multiple methods in the Microsoft Hardware API in a specific order. For information about each scenario and the syntax of each method, see the articles in the following table.
+After you have a Microsoft Entra ID access token, you can call methods in the Microsoft Hardware API. The API includes many methods that are grouped into scenarios. To create or update submissions, you typically call multiple methods in the Microsoft Hardware API in a specific order. For information about each scenario and the syntax of each method, see the articles in the following table.
 
 | Scenario | Description |
 |:--|:--|

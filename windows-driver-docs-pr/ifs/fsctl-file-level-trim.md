@@ -57,7 +57,7 @@ Performing trim on certain storage devices can significantly improve their futur
 
 The **FSCTL_FILE_LEVEL_TRIM** control code will attempt to trim the selected byte ranges of a file from a storage device. The byte ranges are contained in the **Ranges** array in the [**FILE_LEVEL_TRIM**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_level_trim) structure. Included in the **Ranges** array are one or more [**FILE_LEVEL_TRIM_RANGE**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_level_trim_range) structures.
 
-Including overlapping ranges in the range array is not necessarily an error condition. This is dependant on how extent processing is handled by the underlying storage.
+Including overlapping ranges in the range array is not necessarily an error condition. This is dependent on how extent processing is handled by the underlying storage.
 
 Trimmed ranges are purged as pages from the file system cache. In order to match the cache page size, a trim range's length is adjusted down to a multiple of **PAGE_SIZE**. Also, if a trim range offset does not begin at a page boundary, it is aligned to the next page boundary. With these constraints, trim range lengths will reduce when their offsets are not page aligned or lengths are not a page size multiple. A trim range length may reduce to 0 if the original length is less than two pages and the offset is not page aligned.
 

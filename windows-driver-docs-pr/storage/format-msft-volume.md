@@ -169,7 +169,7 @@ This parameter allows the storage provider to return extended (implementation-sp
 **Access Denied** (40001)
  
 
-**An unexpected I/O error has occured** (40004)
+**An unexpected I/O error has occurred** (40004)
  
 
 **The specified object is managed by the Microsoft Failover Clustering component. The disk must be in cluster maintenance mode and the cluster resource status must be online to perform this operation.** (40018)

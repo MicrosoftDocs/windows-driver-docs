@@ -152,7 +152,7 @@ The following example from the Osrusbfx2 KMDF sample shows how to call this meth
 ```cpp
     WDF_USB_DEVICE_INFORMATION          deviceInfo;
 // Retrieve USBD version information, port driver capabilities and device
-// capabilites such as speed, power, etc.
+// capabilities such as speed, power, etc.
 //
 
 WDF_USB_DEVICE_INFORMATION_INIT(&deviceInfo);

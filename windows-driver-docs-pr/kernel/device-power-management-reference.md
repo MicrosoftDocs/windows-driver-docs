@@ -54,7 +54,7 @@ These callback routines are required by the power management framework (PoFx) to
 
 ## Device Power Management Structures
 
-The the power management framework (PoFx) defines these structures to support device power management.
+The power management framework (PoFx) defines these structures to support device power management.
 
 |Topic|Description|
 |----|----|

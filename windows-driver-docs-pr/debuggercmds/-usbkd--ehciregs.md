@@ -78,7 +78,7 @@ Now pass the structure address to **!\_ehciregs**. In this example, the second a
     .IntOnAsyncAdvance: 0
     ----
     .HcHalted: 0
-    .Reclimation: 1
+    .Reclamation: 1
     .PeriodicScheduleStatus: 0
     .AsyncScheduleStatus: 0
 

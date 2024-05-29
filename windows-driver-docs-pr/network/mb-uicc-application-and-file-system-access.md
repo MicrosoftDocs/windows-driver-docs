@@ -304,7 +304,7 @@ The following MBIM_UICC_RESPONSE structure is used in the InformationBuffer.
 
 | Offset | Size | Field | Type | Description |
 | --- | --- | --- | --- | --- |
-| 0 | 4 | Version | UINT32 | The version number of the structurethat follows. This field must be **1** for version 1 of this structure. |
+| 0 | 4 | Version | UINT32 | The version number of the structure that follows. This field must be **1** for version 1 of this structure. |
 | 4 | 4 | StatusWord1 | UINT32(0..256) | A return parameter specific to the UICC command. |
 | 8 | 4 | StatusWord2 | UINT32(0..256) | A return parameter specific to the UICC command. |
 | 12 | 4 | ResponseDataOffset | OFFSET | The offset, in bytes, calculated from the beginning of this structure to the buffer containing the response data. The response data is only used for QUERY operations. |
