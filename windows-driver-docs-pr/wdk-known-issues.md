@@ -13,6 +13,17 @@ ms.date: 12/16/2020
 
 This topic details known issues concerning the WDK.
 
+## WDK for Windows 11, version 24H2
+
+### Restart after provisioning
+
+When performing a provisioning and deployment, the target machines fails to restart after the deployment steps. 
+
+## ARM64 WDK Driver SxS Support
+
+When there is a side by side installation of Ge and Ni WDK on ARM64 machine, you will get an failure with :WdfDriverEntry.lib(stub.obj) : error LNK2001: unresolved external symbol when building KMDF driver for ARM64 and the TargetPlatformVersion is set to Ni.
+
+
 ## WDK for Windows 11, version 22H2
 
 ### Service error at startup
