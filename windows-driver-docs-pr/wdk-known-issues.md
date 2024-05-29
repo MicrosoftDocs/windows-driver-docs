@@ -21,7 +21,7 @@ When performing a provisioning and deployment, the target machine fails to resta
 
 ## ARM64 WDK Driver SxS Support
 
-When there is a side by side installation of Ge and Ni WDK on ARM64 machine, you will get an failure with :WdfDriverEntry.lib(stub.obj) : error LNK2001: unresolved external symbol when building KMDF driver for ARM64 and the TargetPlatformVersion is set to Ni.
+When there is a side by side installation of Windows 11 24H2 and Windows 11 22H2 WDK on ARM64 machine, you will get a build failure with *WdfDriverEntry.lib(stub.obj) : error LNK2001: unresolved external symbol* when building a KMDF driver for ARM64 and the TargetPlatformVersion is set to Windows 11 22H2.
 
 
 ## WDK for Windows 11, version 22H2
