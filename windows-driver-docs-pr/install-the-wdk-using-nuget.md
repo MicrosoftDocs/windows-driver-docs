@@ -8,7 +8,7 @@ keywords:
 - NuGet
 - install
 - download
-ms.date: 05/24/2024
+ms.date: 05/28/2024
 ---
 
 # Install the WDK using NuGet
@@ -34,6 +34,10 @@ The WDK NuGet packages are also available on the NuGet website.
 x64: <https://www.nuget.org/packages/Microsoft.Windows.WDK.x64/>
 
 ARM64: <https://www.nuget.org/packages/Microsoft.Windows.WDK.ARM64>
+
+### Directions for building drivers in automated build systems
+
+For directions on building drivers in large automated system, see [Building Locally](https://github.com/microsoft/Windows-driver-samples/blob/main/Building-Locally.md).
 
 ## Install the latest WDK using NuGet - Step by Step
 
@@ -105,6 +109,30 @@ Follow the following steps to acquire and install WDK NuGet package in Visual St
 
 > [!NOTE]
 > Use of the dotnet command line doesn't work with WDK, and its use is not recommended.
+
+## Updating NuGet Packages in existing driver projects
+
+To update NuGet Packages in existing driver projects, follow these steps.
+
+1. Open the existing driver project in Visual Studio.
+
+2. Right Click the driver project solution file, and select **Manage NuGet packages**.
+
+3. Click on the **Updates** tab.
+
+4. Click on the Include prerelease box, if you wish to use prerelease WDK packages.
+
+5. Select the packages you wish to update in the list.
+
+![screenshot of Visual Studio NuGet packages update with WDK and WDK packages](images/visual-studio-nuget-packages-update-dialog-solution.png)
+
+6. Select **Install**.
+ 
+7. Select **Apply**.
+
+![screenshot of Visual Studio NuGet packages update apply dialog](images/visual-studio-nuget-packages-update-dialog-solution-apply.png)
+
+8. Review and accept the license terms to complete the installation.
 
 ## See also
 
