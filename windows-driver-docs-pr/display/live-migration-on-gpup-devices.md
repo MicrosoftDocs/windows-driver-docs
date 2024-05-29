@@ -101,7 +101,7 @@ On the target side, the VM is constructed starting as if it were a new VM. The V
 
 ### Live migration receive
 
-::::image type="content" source="images/TargetTransfer.png" alt-text="Diagram illustrating live migration send.":::
+::::image type="content" source="images/TargetTransfer.png" alt-text="A diagram illustrating live migration send.":::
 
  Receiving dirty page data is similar to the stage on the source except the paging direction is from CPU buffers to VRAM. All transfers are made while the VF is paused, so the entire transfer can be done within the VF budget.
 
