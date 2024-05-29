@@ -8,7 +8,7 @@ keywords:
 - winget
 - install
 - download
-ms.date: 02/02/2024
+ms.date: 05/28/2024
 ---
 
 # Install the WDK using WinGet
@@ -19,7 +19,7 @@ Refer to the [WinGet install documentation](/windows/package-manager/winget/#ins
 
 ## Install the latest WDK step by step using WinGet
 
-The latest version of the WDK is 10.0.22621. It requires Visual Studio 2022 and Windows SDK 10.0.22621. For more info, see [Kit versioning](./download-the-wdk.md#kit-versioning).
+The latest version of the WDK is 10.0.26100. It requires Visual Studio 2022 and Windows SDK 10.0.26100. For more info, see [Kit versioning](./download-the-wdk.md#kit-versioning).
 
 ### Step 1: Install Visual Studio 2022
 
@@ -88,27 +88,27 @@ You can install both the Windows SDK and WDK from WinGet by running the followin
 
 **Windows SDK**:
 ```cmd
-winget install --source winget --exact --id Microsoft.WindowsSDK.10.0.22621 --log $env:USERPROFILE/Desktop/sdk-install.log
+winget install --source winget --exact --id Microsoft.WindowsSDK.10.0.26100 --log $env:USERPROFILE/Desktop/sdk-install.log
 ```
 **Windows WDK**:
 ```cmd
-winget install --source winget --exact --id Microsoft.WindowsWDK.10.0.22621 --log $env:USERPROFILE/Desktop/wdk-install.log
+winget install --source winget --exact --id Microsoft.WindowsWDK.10.0.26100 --log $env:USERPROFILE/Desktop/wdk-install.log
 ```
 
 ### Step 3: Install WDK Visual Studio extension
 
-After installing the WDK from command line, you will need to install the Windows Driver Kit Visual Studio extension separately to be able to build and test drivers. By default, the extension is located under `%ProgramFiles(x86)%\Windows Kits\10\Vsix\VS2022\10.0.22621.0\WDK.vsix`.
+After installing the WDK from command line, you will need to install the Windows Driver Kit Visual Studio extension separately to be able to build and test drivers. By default, the extension is located under `%ProgramFiles(x86)%\Windows Kits\10\Vsix\VS2022\10.0.26100.0\WDK.vsix`.
 
 Using Command Prompt:
 ```cmd
 for /f "usebackq tokens=*" %i in (`"%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vswhere.exe" -nologo -latest -products * -property enginePath`) do (
-  "%i\VSIXInstaller.exe" "%ProgramFiles(x86)%\Windows Kits\10\Vsix\VS2022\10.0.22621.0\WDK.vsix"
+  "%i\VSIXInstaller.exe" "%ProgramFiles(x86)%\Windows Kits\10\Vsix\VS2022\10.0.26100.0\WDK.vsix"
 )
 ```
 
 Using PowerShell:
 ```powershell
-& $(& "${env:ProgramFiles(x86)}\Microsoft Visual Studio\Installer\vswhere.exe" -nologo -latest -products * -property enginePath | Join-Path -ChildPath 'VSIXInstaller.exe') "${env:ProgramFiles(x86)}\Windows Kits\10\Vsix\VS2022\10.0.22621.0\WDK.vsix"
+& $(& "${env:ProgramFiles(x86)}\Microsoft Visual Studio\Installer\vswhere.exe" -nologo -latest -products * -property enginePath | Join-Path -ChildPath 'VSIXInstaller.exe') "${env:ProgramFiles(x86)}\Windows Kits\10\Vsix\VS2022\10.0.26100.0\WDK.vsix"
 ```
 
 ## Install other WDK versions using WinGet
@@ -133,9 +133,10 @@ Each command will return a table with all the available SDK/WDK versions in WinG
 ```
 Name                                        Id                              Version        Source
 --------------------------------------------------------------------------------------------------
-Windows Driver Kit - Windows 10.1.22000.1   Microsoft.WindowsWDK.10.0.22000 10.1.22000.1   winget
-Windows Driver Kit                          Microsoft.WindowsWDK.10.0.19041 10.1.19041.685 winget
-Windows Driver Kit - Windows 10.0.22621.382 Microsoft.WindowsWDK.10.0.22621 10.1.22621.382 winget
+Windows Driver Kit - Windows 10.0.22621.2428 Microsoft.WindowsWDK.10.0.22621 10.1.22621.2428 winget
+Windows Driver Kit - Windows 10.1.22000.1    Microsoft.WindowsWDK.10.0.22000 10.1.22000.1    winget
+Windows Driver Kit                           Microsoft.WindowsWDK.10.0.19041 10.1.19041.685  winget
+Windows Driver Kit - Windows 10.0.26100.1    Microsoft.WindowsWDK.10.0.26100 10.1.26100.1    winget
 ```
 
 You can then install your required combination of kits for a specific `<kit-version>` using `winget install`:
@@ -172,12 +173,12 @@ Using PowerShell:
 
 By [using a WinGet Configuration file](/windows/package-manager/configuration/#use-a-winget-configuration-file-to-configure-your-machine), you can set up a new machine for driver development with minimal manual intervention.
 
-A [configuration file](https://aka.ms/wdk_winget_config_22621) for installing the Windows 11, version 22H2 WDK and its dependencies is provided for your convenience. This configuration will set up the following components:
+A [configuration file](https://aka.ms/wdk_winget_config_26100) for installing the Windows 11, version 24H2 WDK and its dependencies is provided for your convenience. This configuration will set up the following components:
 
 * Visual Studio 2022 Community.
 * Visual Studio required workflows and components for driver development.
-* Windows 11, version 22H2 SDK.
-* Windows 11, version 22H2 WDK.
+* Windows 11, version 24H2 SDK.
+* Windows 11, version 24H2 WDK.
 * WDK Visual Studio Extension.
 
 Although using a configuration description file works better for provisioning a new machine, you can use it even if you have some of the components installed already and WinGet will attempt to only install the missing components.
@@ -190,7 +191,7 @@ Although using a configuration description file works better for provisioning a 
 powershell
 
 # Download configuration file to install WDK with VS 2022 Community
-Invoke-WebRequest -Uri 'https://aka.ms/wdk_winget_config_22621' -OutFile configuration.dsc.yaml
+Invoke-WebRequest -Uri 'https://aka.ms/wdk_winget_config_26100' -OutFile configuration.dsc.yaml
 
 # Install VS, SDK, WDK and WDK VS extension using the configuration file
 winget configure -f configuration.dsc.yaml
@@ -202,7 +203,7 @@ Make sure that you have WinGet version 1.6 or higher installed on the machine yo
 
 ### Step 2: Download the WDK Configuration file
 
-The configuration description file can be downloaded from [here](https://aka.ms/wdk_winget_config_22621). Save this file as `configuration.dsc.yml` and take note of its location.
+The configuration description file can be downloaded from [here](https://aka.ms/wdk_winget_config_26100). Save this file as `configuration.dsc.yml` and take note of its location.
 
 > [!TIP]
 > The provided configuration file will install the Community edition of Visual Studio 2022. If you need a different edition, you can edit `Microsoft.VisualStudio.2022.Community` and `Microsoft.VisualStudio.Product.Community` product IDs with different IDs for the edition you would like to install (for Professional: `Microsoft.VisualStudio.2022.Professional` and `Microsoft.VisualStudio.Product.Professional`; for Enterprise: `Microsoft.VisualStudio.2022.Enterprise` and `Microsoft.VisualStudio.Product.Enterprise`).
