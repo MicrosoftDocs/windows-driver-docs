@@ -6,7 +6,7 @@ keywords:
 - WDK
 - Download
 - drivers
-ms.date: 03/06/2024
+ms.date: 05/28/2024
 ---
 
 # Download the Windows Driver Kit (WDK)
@@ -43,11 +43,11 @@ Hint: Use the Search box to look for "64 latest spectre" (in English installatio
 
 ![Image showing the six components listed above with checkboxes set](images/installing-VS-components-64-latest-spectre.png)
 
-Note: The **Desktop development with C++** workload selected above also installs the Windows SDK 10.0.26100.1.
+Note: The **Desktop development with C++** workload selected above does not install the Windows SDK 10.0.26100.1.
 
 ## ![download icon for SDK](images/download-install.png) Step 2: Install SDK
 
-Installing Visual Studio should automatically download the Windows SDK 10.0.26100.1. In the event that it does not, use the following link:
+Installing Visual Studio will not download the Windows SDK 10.0.26100.1, use the following link:
 
 * [Download Windows SDK 10.0.26100.1](https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/)
 
