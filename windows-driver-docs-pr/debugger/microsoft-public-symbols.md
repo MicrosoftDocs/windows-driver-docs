@@ -16,6 +16,8 @@ Report any known issues to [windbgfb@microsoft.com](mailto:windbgfb@microsoft.co
 
 The Microsoft symbol server makes Windows debugger symbols publicly available.
 
+## How to access
+
 You can refer directly to the public symbol server in your symbol path in a number of different ways, described in [Symbol path for Windows debuggers](symbol-path.md). For example to set the _NT_SYMBOL_PATH environment value, use this command.
 
 ```console
@@ -43,9 +45,7 @@ Expanded Symbol search path is: cache*c:\MyCache;SRV*https://msdl.microsoft.com/
 
 For more information about working with symbols, see [Using a Symbol Server](using-a-symbol-server.md) and [Symbol path for Windows debuggers](./symbol-path.md).
 
-## Symbol file compression
-
-The Microsoft symbol server provides compressed versions of the symbol files. The files have an underscore at the end of the filename’s extension to indicate that they're compressed. For example, the PDB for **ntdll.dll** is available as **ntdll.pd_**. When SymProxy downloads a compressed file, it stores the file decompressed in the local file system. The `DontUncompress` registry key can be set to disable this behavior in SymProxy.
+The public symbol server only supports TLS 1.2+ for https connections.
 
 ## Microsoft license terms - Microsoft symbol server
 
