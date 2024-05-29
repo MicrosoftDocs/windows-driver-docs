@@ -60,7 +60,7 @@ Now pass the structure address to **!\_ehcidd**
 ** dt usbehci!_DEVICE_DATA ffffe0000781bda0 
 
 get_field_ulong ffffe0000781bda0 usbehci!_DEVICE_DATA Flags
-*All Enpoints list:
+*All Endpoints list:
 head @ ffffe0000781bdb0 f_link ffffe0000781bdb0 b_link ffffe0000781bdb0
 AsyncQueueHead ffffd00021cf5000 !_ehciqh ffffd00021cf5000
     PhysicalAddress: 0xde79a000

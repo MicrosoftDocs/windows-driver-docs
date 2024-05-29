@@ -102,7 +102,7 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 <td align="left"><p>Status code</p></td>
 <td align="left"><p>Mirroring phase</p></td>
 <td align="left"><p>Reserved</p></td>
-<td align="left"><p>A fatal error occured while preparing the hibernate file.</p></td>
+<td align="left"><p>A fatal error occurred while preparing the hibernate file.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0xA</p></td>
@@ -188,7 +188,7 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 <td align="left"><p>Reserved</p></td>
 <td align="left"><p>Exception pointer.</p></td>
 <td align="left"><p>Reserved</p></td>
-<td align="left"><p>An unhandled exception occured while processing a system power event. For more information, see <a href="#parameter-1-equals-0x101" data-raw-source="[Debugging bug check 0xA0 when parameter 1 equals 0x101](#parameter-1-equals-0x101)">Debugging bug check 0xA0 when parameter 1 equals 0x101</a>.</p></td>
+<td align="left"><p>An unhandled exception occurred while processing a system power event. For more information, see <a href="#parameter-1-equals-0x101" data-raw-source="[Debugging bug check 0xA0 when parameter 1 equals 0x101](#parameter-1-equals-0x101)">Debugging bug check 0xA0 when parameter 1 equals 0x101</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x102</p></td>
@@ -290,7 +290,7 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 <p>2 : Another piece of code in the system is executing an EFI runtime service.</p>
 </td>
 <td align="left"><p>Reserved</p></td>
-<td align="left"><p>An internal error occured while checkpointing system sleep progress.</p></td>
+<td align="left"><p>An internal error occurred while checkpointing system sleep progress.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x110</p></td>
@@ -775,7 +775,7 @@ interrupt line.</p>
 <p>0x104 : (INTERNAL_POWER_ERROR_KE_ARCH_NOT_SUPPORTED) Unsupported processor architecture.</p></td>
 <td align="left"><p>Reserved</p></td>
 <td align="left"><p>Reserved</p></td>
-<td align="left"><p>(INTERNAL_POWER_ERROR_KE_SUBCODE) An internal failure has occured in kernel executive during a power operation.</p></td>
+<td align="left"><p>(INTERNAL_POWER_ERROR_KE_SUBCODE) An internal failure has occurred in kernel executive during a power operation.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0xAA64</p></td>

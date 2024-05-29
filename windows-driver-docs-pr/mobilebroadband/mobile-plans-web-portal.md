@@ -47,7 +47,7 @@ The following table describes the launch parameters available for eSIM.
 | transactionId  | The Transaction ID used for debugging the session. Providers should log this and send it in the notification payload. Maximum size is 64 characters.                                     | `transactionId=waoigFfX00yGH3Vb.1`               |
 | market         | The two-letter ISO code of the region settings in the PC.                                                                                                                                | `market=us`                                      |
 
-The user’s language preference is sent using the Accept-Language header, described in the following table. Additionally, if there were any errors that occured during a profile download, they are passed as headers in the next request. 
+The user’s language preference is sent using the Accept-Language header, described in the following table. Additionally, if there were any errors that occurred during a profile download, they are passed as headers in the next request. 
 
 | Header name     | Description  | Example |
 | --- | --- | --- |

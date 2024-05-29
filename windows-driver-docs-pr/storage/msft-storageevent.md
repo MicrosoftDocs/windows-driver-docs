@@ -108,7 +108,7 @@ One of the following values.
 |  **Minor** 4                                                              | Action is needed, but the situation is not serious at this time.  |
 |  **Major** 5                                                              | Immediate action is needed.                                       |
 |  **Critical** 6                                                  | Immediate action is needed and the scope of the issue is broad.   |
-|  **Fatal/NonRecoverable** 7  | An error has occured, but it is too late to take remedial action. |
+|  **Fatal/NonRecoverable** 7  | An error has occurred, but it is too late to take remedial action. |
 |  **Microsoft Reserved** ..         | This value is reserved for system use.                            |
 
 

@@ -27,7 +27,7 @@ With the new stream-based data transfer model, the WIA service will no longer di
 
 WIA will not support the memory bitmap format **WiaImgFmt\_MEMORYBMP** in Windows Vista drivers.
 
-Windows Vista drivers can send update messages to transfer data in bands rather then having the driver cache the entire image during a transfer. This form of transfer is useful for transferring data during scans where it is not immediately possible to determine the size of the image being transferred, for example, a scan with a scroll-feed scanner. In order to transfer image data in bands, the driver must call **IStream::Seek** on the stream passed to it in [**IWiaTransferCallback::GetNextStream**](/windows-hardware/drivers/ddi/wia_lh/nf-wia_lh-iwiatransfercallback-getnextstream).
+Windows Vista drivers can send update messages to transfer data in bands rather than having the driver cache the entire image during a transfer. This form of transfer is useful for transferring data during scans where it is not immediately possible to determine the size of the image being transferred, for example, a scan with a scroll-feed scanner. In order to transfer image data in bands, the driver must call **IStream::Seek** on the stream passed to it in [**IWiaTransferCallback::GetNextStream**](/windows-hardware/drivers/ddi/wia_lh/nf-wia_lh-iwiatransfercallback-getnextstream).
 
 For additional information on TYMED and stream-based transfers see [Data Transfers](data-transfers.md).
 

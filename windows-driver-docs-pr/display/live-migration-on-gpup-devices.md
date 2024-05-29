@@ -13,11 +13,11 @@ ms.date: 03/28/2024
 
 # Live migration on GPU-P devices
 
-This article describes the functional design of the *live migration* of heterogenous compute devices (GPUs, NPUs, etc.) virtualized through SR-IOV (single root I/O virtualization) partitioning. Devices that support partitioning through the WDDM and MCDM driver models are now an integral part of our virtualization offerings. Thus, it's important to support live migration and help our virtualization abstractions become maximally reliable to the impact on customers when resource assignments must change. This article also describes the *quick migration* of these devices as well.
+This article describes the functional design of the *live migration* of heterogeneous compute devices (GPUs, NPUs, etc.) virtualized through SR-IOV (single root I/O virtualization) partitioning. Devices that support partitioning through the WDDM and MCDM driver models are now an integral part of our virtualization offerings. Thus, it's important to support live migration and help our virtualization abstractions become maximally reliable to the impact on customers when resource assignments must change. This article also describes the *quick migration* of these devices as well.
 
 Live migration is supported starting in Windows 11, version 24H2 (WDDM 3.2). It's more generally an extension of the GPU paravirtualization (GPU-P) DDIs for drivers that expose the capability. MCDM drivers that implement the GPU-P virtualization interfaces can optionally also implement these live migration interfaces, including their extension with triage events.
 
- In this article, "GPU" simply refers to devices that implement the GPU-P virtualization framework, whether WDDM or MCDM, and whether a GPU, NPU, or other heterogenous compute device.
+ In this article, "GPU" simply refers to devices that implement the GPU-P virtualization framework, whether WDDM or MCDM, and whether a GPU, NPU, or other heterogeneous compute device.
 
 ## Kinds and Purpose of Resource Migration
 
@@ -101,7 +101,7 @@ On the target side, the VM is constructed starting as if it were a new VM. The V
 
 ### Live migration receive
 
-::::image type="content" source="images/TargetTransfer.png" alt-text="Diagram illustrating live migration send.":::
+::::image type="content" source="images/TargetTransfer.png" alt-text="A diagram illustrating live migration send.":::
 
  Receiving dirty page data is similar to the stage on the source except the paging direction is from CPU buffers to VRAM. All transfers are made while the VF is paused, so the entire transfer can be done within the VF budget.
 

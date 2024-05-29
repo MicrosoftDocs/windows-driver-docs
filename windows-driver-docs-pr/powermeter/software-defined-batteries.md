@@ -105,7 +105,7 @@ This section depicts the full battery discharge control logic implemented in the
 Note that this is not a prescription of how the SDB algorithm should be implemented by the OEMs, but rather a comprehensive example for the simplistic, hypothetical, multi-battery device described in this section that is used to illustrate SDB behavior.
 
 
-*Full Firmware Implemenation of Simple Age Balancing SDB Algorithm*
+*Full Firmware Implementation of Simple Age Balancing SDB Algorithm*
 
 :::image type="content" source="images/powermeter-firmware-age-balancing-algorithm-hot-swap.png" alt-text="Diagram of full firmware implementation of Simple Age Balancing SDB Algorithm.":::
 

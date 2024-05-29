@@ -136,10 +136,10 @@ api_location:
 | 43006       | Cannot perform the requested operation when the drive is read only                                                                |
 | 43007       | The repair failed                                                                                                                 |
 | 43008       | The scan failed                                                                                                                   |
-| 43009       | A snapshot error occured while scanning this drive. You can try again, but if this problem persists, run an offline scan and fix. |
+| 43009       | A snapshot error occurred while scanning this drive. You can try again, but if this problem persists, run an offline scan and fix. |
 | 43010       | A scan is already running on this drive. Chkdsk can not run more than one scan on a drive at a time.                              |
-| 43011       | A snapshot error occured while scanning this drive. You can try again, but if this problem persists, run an offline scan and fix. |
-| 43012       | A snapshot error occured while scanning this drive. Run an offline scan and fix.                                                  |
+| 43011       | A snapshot error occurred while scanning this drive. You can try again, but if this problem persists, run an offline scan and fix. |
+| 43012       | A snapshot error occurred while scanning this drive. Run an offline scan and fix.                                                  |
 | 43013       | Cannot open drive for direct access                                                                                               |
 | 43014       | Cannot determine the file system of the drive                                                                                     |
 | 43015       | This setting may not be changed due to the group policy setting                                                                   |

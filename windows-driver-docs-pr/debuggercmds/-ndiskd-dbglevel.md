@@ -1,6 +1,6 @@
 ---
 title: "!ndiskd.dbglevel"
-description: "The !ndiskd.dbglevel extension displays and optionally changes the current NDIS debug level. Warning ndiskd.dbglevel has been superceded by WPP and Driver Verifier."
+description: "The !ndiskd.dbglevel extension displays and optionally changes the current NDIS debug level. Warning ndiskd.dbglevel has been superseded by WPP and Driver Verifier."
 keywords: ["!ndiskd.dbglevel Windows Debugging"]
 ms.date: 06/15/2020
 topic_type:
@@ -17,7 +17,7 @@ api_type:
 The **!ndiskd.dbglevel** extension displays and optionally changes the current NDIS debug level.
 
 **Warning**  
-**!ndiskd.dbglevel** has been superceded by WPP (Windows software trace preprocessor) and Driver Verifier. !ndiskd will give you the following warning if your target system does not support **!ndiskd.dbglevel**.
+**!ndiskd.dbglevel** has been superseded by WPP (Windows software trace preprocessor) and Driver Verifier. !ndiskd will give you the following warning if your target system does not support **!ndiskd.dbglevel**.
 
 ```console
 0: kd> !ndiskd.dbglevel

@@ -49,7 +49,7 @@ For specific information about managing the elements in net rings, see [Net ring
 
 ## Sending and receiving network data with net rings
 
-See the following topics for more information and code samples about sending and receving network data in net rings.
+See the following topics for more information and code samples about sending and receiving network data in net rings.
 
 [Sending network data with net rings](sending-network-data-with-net-rings.md)
 

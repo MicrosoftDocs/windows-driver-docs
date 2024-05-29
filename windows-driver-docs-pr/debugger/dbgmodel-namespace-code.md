@@ -12,7 +12,7 @@ ms.date: 12/12/2018
 
 ## Summary
 
-The Code namespace contains attributes of code and disassembly. It enables creations of Disassembler objects that can disassemble given addresses or functions and provide detailed information about the assembly there and any variable or source information if availabe.
+The Code namespace contains attributes of code and disassembly. It enables creations of Disassembler objects that can disassemble given addresses or functions and provide detailed information about the assembly there and any variable or source information if available.
 
 ## Sample
 

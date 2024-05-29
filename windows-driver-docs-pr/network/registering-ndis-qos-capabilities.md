@@ -7,7 +7,7 @@ ms.date: 03/02/2023
 # Registering NDIS QoS Capabilities
 
 
-Miniport drivers regsiter the following Quality of Service (QoS) capabilities with NDIS during network adapter initialization:
+Miniport drivers register the following Quality of Service (QoS) capabilities with NDIS during network adapter initialization:
 
 - The NDIS QoS hardware capabilities that the network adapter supports.
 

@@ -16,7 +16,7 @@ To install the print driver included in the 3D printing SDK, selecting the drive
 
 Start by installing Microsoft Visual Studio 2013 (Professional or Ultimate) and applying any required service packs or updates.
 
-The sample implementation consists of an Microsoft Internet Information Services (IIS) web service implemented in ASP.NET with a http handler that responds to the WS-Print protocol requests.
+The sample implementation consists of a Microsoft Internet Information Services (IIS) web service implemented in ASP.NET with a http handler that responds to the WS-Print protocol requests.
 
 Directed discovery can operate with the web service running as it works off the http protocol without UDP discovery.
 

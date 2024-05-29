@@ -24,7 +24,7 @@ An intermediate driver should handle queries and sets as follows:
 
 -   [OID\_PNP\_CAPABILITIES](./oid-pnp-capabilities.md)
 
-    In response to this OID query, intermediate drivers must report the PnP capabilites of the underlying physical miniport adapters. Note that miniport adapters for physical devices do not receive this OID query.
+    In response to this OID query, intermediate drivers must report the PnP capabilities of the underlying physical miniport adapters. Note that miniport adapters for physical devices do not receive this OID query.
 
     The intermediate driver receives the PnP capabilities of the underlying miniport adapters in the bind parameters. It should pass them to overlying drivers as appropriate for the intermediate driver's intended use. Intermediate drivers and miniport drivers report PnP capabilities in miniport adapter attributes. The intermediate driver does not issue OID\_PNP\_CAPABILITIES requests to the underlying miniport driver. If the underlying miniport adapter is power management-aware, in the NDIS\_PM\_WAKE\_UP\_CAPABILITIES structure in the virtual miniport attributes, the intermediate driver must specify a device power state of **NdisDeviceStateUnspecified** for each wake-up capability:
 
