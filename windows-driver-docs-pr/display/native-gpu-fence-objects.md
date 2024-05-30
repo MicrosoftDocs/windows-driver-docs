@@ -230,7 +230,7 @@ The following interfaces are updated or introduced to query native fence caps:
 
 * **DXGKQAITYPE_NATIVE_FENCE_CAPS** is added to [**DXGK_QUERYADAPTERINFOTYPE**](/windows-hardware/drivers/ddi/d3dkmddi/ne-d3dkmddi-_dxgk_queryadapterinfotype).
 
-* *Dxgkrnl* exposes this feature to user mode via the added corresponding [**D3DKMT_WDDM_3_1_CAPS::NativeGpuFenceSupported**](/windows-hardware/drivers/ddi/d3dkmdt/ns-d3dkmdt-_d3dkmt_wddm_3_1_caps) structure/bit.
+* *Dxgkrnl* exposes this feature to user mode via the added corresponding [**D3DKMT_WDDM_3_1_CAPS::NativeGpuFenceSupported**](/windows-hardware/drivers/ddi/d3dkmdt/ns-d3dkmdt-d3dkmt_wddm_3_1_caps) structure/bit.
 
 * **KMTQAITYPE_WDDM_3_1_CAPS** is added to [**KMTQUERYADAPTERINFOTYPE**](/windows-hardware/drivers/ddi/d3dkmthk/ne-d3dkmthk-_kmtqueryadapterinfotype).
 
@@ -282,8 +282,8 @@ The KMD sets the [**DXGK_NATIVE_FENCE_CAPS::MapToGpuSystemProcess**](/windows-ha
 
 The following *D3DKMT* kernel-mode APIs are introduced to create and open a native fence object.
 
-* [**D3DKMTCreateNativeFence**](/windows-hardware/drivers/ddi/d3dkmthk/nc-d3dkmthk-d3dkmtcreatenativefence) / [**D3DKMT_CREATENATIVEFENCE**](/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-d3dkmt_createnativefence)
-* [**D3DKMTOpenNativeFenceFromNTHandle**](/windows-hardware/drivers/ddi/d3dkmthk/nc-d3dkmthk-d3dkmtopennativefencefromnthandle) / [**D3DKMT_OPENNATIVEFENCEFROMNTHANDLE**](/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-d3dkmt_opennativefencefromnthandle)
+* [**D3DKMTCreateNativeFence**](/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtcreatenativefence) / [**D3DKMT_CREATENATIVEFENCE**](/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-d3dkmt_createnativefence)
+* [**D3DKMTOpenNativeFenceFromNTHandle**](/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtopennativefencefromnthandle) / [**D3DKMT_OPENNATIVEFENCEFROMNTHANDLE**](/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-d3dkmt_opennativefencefromnthandle)
 
 *Dxgkrnl* calls the existing [**D3DKMTDestroySynchronizationObject**](/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtdestroysynchronizationobject) function to close and destroy (free) an existing native fence object.
 
@@ -308,7 +308,7 @@ The following changes are made to the interrupt mechanism to support a native fe
 
 * The [**DXGK_INTERRUPT_TYPE**](/windows-hardware/drivers/ddi/d3dkmddi/ne-d3dkmddi-_dxgk_interrupt_type) enum is updated to have a **DXGK_INTERRUPT_NATIVE_FENCE_SIGNALED** interrupt type.
 * The [**DXGKARGCB_NOTIFY_INTERRUPT_DATA**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkargcb_notify_interrupt_data) structure is updated to include a **NativeFenceSignaled** structure to denote a native fence signaled interrupt. **NativeFenceSignaled** is used to inform the OS that a set of native fence GPU objects monitored by the CPU were signaled on a GPU engine. If the GPU is able to determine the exact subset of objects with active CPU waiters, it passes this subset via **pSignaledNativeFenceArray**. The handles in this array must be valid **hGlobalNativeFence** handles that *Dxgkrnl* passed to KMD in [**DxgkDdiCreateNativeFence**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_createnativefence). Passing a handle to a destroyed native fence object causes a bug check.
-* The [**DXGKCB_NOTIFY_INTERRUPT_DATA_FLAGS**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgkcb_notify_interrupt_data_flags) structure is updated to include an **EvaluateLegacyMonitoredFences** member.
+* The [**DXGKCB_NOTIFY_INTERRUPT_DATA_FLAGS**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkcb_notify_interrupt_data_flags) structure is updated to include an **EvaluateLegacyMonitoredFences** member.
 
 The GPU can pass a NULL **pSignaledNativeFenceArray** under the following conditions:
 
@@ -336,7 +336,7 @@ The following interfaced are introduced to instruct KMD to update a batch of cur
 
 * The OS must support creating cross-adapter native fences because existing DX12 apps create and use cross-adapter monitored fences. If underlying queues and scheduling for these apps is switched to user-mode submission, then their monitored fences must also be switched to native fences (user-mode queues can't support monitored fences).
 
-* A cross-adapter fence must be created with type **D3DDDI_NATIVEFENCE_TYPE_DEFAULT**. Otherwise, [**D3DKMTCreateNativeFence**](/windows-hardware/drivers/ddi/d3dkmthk/nc-d3dkmthk-d3dkmtcreatenativefence) fails.
+* A cross-adapter fence must be created with type **D3DDDI_NATIVEFENCE_TYPE_DEFAULT**. Otherwise, [**D3DKMTCreateNativeFence**](/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtcreatenativefence) fails.
 
 * All GPUs share the same copy of *CurrentValue* storage, which is always allocated in system memory. When the runtime creates a cross-adapter native fence on GPU1 and opens it on GPU2, the GPU VA mappings on both GPUs point to the same *CurrentValue* physical storage.
 
@@ -438,7 +438,7 @@ So, at a high level, the per HWQueue conditions required to be logged are:
 The following DDI, structures, and enums are introduced to support native fence log buffers:
 
 * [**DxgkDdiSetNativeFenceLogBuffer**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_setnativefencelogbuffer) / [**DXGKARG_SETNATIVEFENCELOGBUFFER**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgkarg_setnativefencelogbuffer)
-* [**DxgkDdiUpdateNativeFenceLogs**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_updatenativefencelogs) / [**DXGKARG_UPDATENATIVEFENCELOGBUFFER**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgkarg_updatenativefencelogbuffer)
+* [**DxgkDdiUpdateNativeFenceLogs**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_updatenativefencelogs) / [**DXGKARG_UPDATENATIVEFENCELOGS**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgkarg_updatenativefencelogs)
 * A log buffer that contains a header and array of log entries. The header identifies whether the entries are for a wait or signal, and each entry identifies the type of operation (executed or unblocked):
   * [**DXGK_NATIVE_FENCE_LOG_BUFFER**](/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-dxgk_native_fence_log_buffer)
     * [**DXGK_NATIVE_FENCE_LOG_HEADER**](/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-dxgk_native_fence_log_header)

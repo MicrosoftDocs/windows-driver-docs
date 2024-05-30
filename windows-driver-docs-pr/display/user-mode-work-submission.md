@@ -69,7 +69,7 @@ The following user-mode APIs are added to support user-mode work submission.
 * UMD manages the lifetime of the ring buffer and ring buffer control allocations. *Dxgkrnl* won't destroy these allocations implicitly even if the corresponding doorbell is destroyed. UMD is responsible for allocating and destroying these allocations. However, to prevent a malicious user-mode program from destroying these allocations while the doorbell is alive, *Dxgkrnl* does take a reference on them during the lifetime of the doorbell.
 * The only scenario in which *Dxgkrnl* destroys ring buffer allocations is during device termination. *Dxgkrnl* destroys all HWQueues, doorbells, and ring buffer allocations associated with the device.
 * As long as the ring buffer allocations are alive, the ring buffer CPUVA is always valid and available for UMD to access, irrespective of the doorbell connections status. That is, ring buffer residency isn't tied to the doorbell.
-* When KMD makes the DXG callback to disconnect a doorbell (that is, calls [**DxgkCbDisconnectDoorbell**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkcb_disconnectdoorbell.md) with status D3DDDI_DOORBELL_STATUS_DISCONNECTED_RETRY), *Dxgkrnl* rotates the doorbell CPUVA to a dummy page. It doesn't evict or unmap the ring buffer allocations.
+* When KMD makes the DXG callback to disconnect a doorbell (that is, calls [**DxgkCbDisconnectDoorbell**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkcb_disconnectdoorbell) with status D3DDDI_DOORBELL_STATUS_DISCONNECTED_RETRY), *Dxgkrnl* rotates the doorbell CPUVA to a dummy page. It doesn't evict or unmap the ring buffer allocations.
 * In the event of any device-lost scenarios (TDR/GPU Stop/Page, etc.), *Dxgkrnl* disconnects the doorbell and marks the status as D3DDDI_DOORBELL_STATUS_DISCONNECTED_ABORT. User mode is responsible for destroying the HWQueue, doorbell, ring buffer, and for re-creating them. This requirement is similar to how other device resources are destroyed and re-created in this scenario.
 
 ## Hardware context suspension
@@ -104,7 +104,7 @@ The following changes were made to facilitate this approach:
 
 * The **EngineStateChange** interrupt data structure is added to [**DXGKARGCB_NOTIFY_INTERRUPT_DATA**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkargcb_notify_interrupt_data).
 
-* The [**DXGK_ENGINE_STATE**](/windows-hardware/drivers/ddi/d3dukmdt/ne-d3dukmdt-_dxgk_engine_state) enum is added to represent the engine state transitions for **EngineStateChange**.
+* The [**DXGK_ENGINE_STATE**](/windows-hardware/drivers/ddi/d3dkmddi/ne-d3dkmddi-dxgk_engine_state) enum is added to represent the engine state transitions for **EngineStateChange**.
 
 When KMD raises a **DXGK_INTERRUPT_GPU_ENGINE_STATE_CHANGE** interrupt with **EngineStateChange.NewState** set to **DXGK_ENGINE_STATE_TRANSITION_TO_F1**, *Dxgkrnl* disconnects all doorbells of HWQueues on this engine and then initiates an F0 to F1 power component transition.
 

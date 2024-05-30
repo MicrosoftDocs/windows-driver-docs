@@ -22,11 +22,11 @@ The following existing enumerations are updated with extensions to rate control 
 
 * The following extended (*Extension 1*) **D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_*XXX1*** structures are added and [**D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_CONFIGURATION_PARAMS**](/windows-hardware/drivers/ddi/d3d12umddi/ns-d3d12umddi-d3d12ddi_video_encoder_rate_control_configuration_params_0080_2) is updated to include them. **QualityVsSpeed** is added to all modes and **VBVCapacity** and **InitialVBVFullness** are added to ***_QVBR1*** in addition.
 
-  * [**D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_CQP1**](/windows-hardware/drivers/ddi/d3d12umddi/ns-d3d12umddi-d3d12ddi_video_encoder_rate_control_cqp1_0096)
-  * [**D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_CBR1**](/windows-hardware/drivers/ddi/d3d12umddi/ns-d3d12umddi-d3d12ddi_video_encoder_rate_control_cbr1_0096)
-  * [**D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_VBR1**](/windows-hardware/drivers/ddi/d3d12umddi/ns-d3d12umddi-d3d12ddi_video_encoder_rate_control_vbr1_0096)
-  * [**D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_QVBR1**](/windows-hardware/drivers/ddi/d3d12umddi/ns-d3d12umddi-d3d12ddi_video_encoder_rate_control_qvbr1_0096)
-  * [**D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_ABSOLUTE_QP_MAP**](/windows-hardware/drivers/ddi/d3d12umddi/ns-d3d12umddi-d3d12ddi_video_encoder_rate_control_absolute_qp_map)
+  * [**D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_CQP1_0096**](/windows-hardware/drivers/ddi/d3d12umddi/ns-d3d12umddi-d3d12ddi_video_encoder_rate_control_cqp1_0096)
+  * [**D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_CBR1_0096**](/windows-hardware/drivers/ddi/d3d12umddi/ns-d3d12umddi-d3d12ddi_video_encoder_rate_control_cbr1_0096)
+  * [**D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_VBR1_0096**](/windows-hardware/drivers/ddi/d3d12umddi/ns-d3d12umddi-d3d12ddi_video_encoder_rate_control_vbr1_0096)
+  * [**D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_QVBR1_0096**](/windows-hardware/drivers/ddi/d3d12umddi/ns-d3d12umddi-d3d12ddi_video_encoder_rate_control_qvbr1_0096)
+  * [**D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_ABSOLUTE_QP_MAP_0096**](/windows-hardware/drivers/ddi/d3d12umddi/ns-d3d12umddi-d3d12ddi_video_encoder_rate_control_absolute_qp_map_0096)
 
 When **D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_FLAG_0096_ENABLE_EXTENSION1_SUPPORT** is enabled, the extended rate control structures are used in [**D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_CONFIGURATION_PARAMS_0080_2.pConfiguration_*XXX***](/windows-hardware/drivers/ddi/d3d12umddi/ns-d3d12umddi-d3d12ddi_video_encoder_rate_control_configuration_params_0080_2); otherwise the legacy structures are used when disabled per the table documented on the **D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_FLAGS_0080** reference page.
 
@@ -41,7 +41,7 @@ The existing video-related framework is extended to allow drivers to report AV1 
   * D3D12DDICAPS_TYPE_VIDEO_0095_ENCODER_FRAME_SUBREGION_LAYOUT_CONFIG
   * D3D12DDICAPS_TYPE_VIDEO_0096_ENCODER_SUPPORT1
 
-* **D3D12DDI_VIDEO_ENCODER_CODEC_0095_AV1** is added to [**D3D12DDI_VIDEO_ENCODER_CODEC_0080**](/windows-hardware/drivers/ddi/d3d12umddi/ne-d3d12umddi-d3d12ddi-video_encoder_codec_0080)
+* **D3D12DDI_VIDEO_ENCODER_CODEC_0095_AV1** is added to [**D3D12DDI_VIDEO_ENCODER_CODEC_0080**](/windows-hardware/drivers/ddi/d3d12umddi/ne-d3d12umddi-d3d12ddi_video_encoder_codec_0080)
 
 * The [**D3D12DDI_VIDEO_ENCODER_AV1_PROFILE_0095**](/windows-hardware/drivers/ddi/d3d12umddi/ne-d3d12umddi-d3d12ddi_video_encoder_av1_profile_0095) enumeration was added to define the AV1 profiles supported by the driver. The driver uses [**D3D12DDICAPS_VIDEO_ENCODER_INPUT_FORMAT_DATA_0080_2**](/windows-hardware/drivers/ddi/d3d12umddi/ns-d3d12umddi-d3d12ddicaps_video_encoder_input_format_data_0080_2) to report optionally supported formats for a given **D3D12DDI_VIDEO_ENCODER_AV1_PROFILE_0095** input to the query.
 
@@ -53,45 +53,45 @@ The existing video-related framework is extended to allow drivers to report AV1 
 
   * [**D3D12DDI_VIDEO_ENCODER_AV1_TIER_0095**](/windows-hardware/drivers/ddi/d3d12umddi/ne-d3d12umddi-d3d12ddi_video_encoder_av1_tier_0095)
 
-  * [**D3D12DDI_VIDEO_ENCODER_AV1_TIER_CONSTRAINTS_0095**](/windows-hardware/drivers/ddi/d3d12umddi/ns-d3d12umddi-d3d12ddi_video_encoder_av1_tier_constraints_0095) (**pAV1LevelSetting** is added to [**D3D12DDI_VIDEO_ENCODER_LEVEL_SETTING_0080**](/windows-hardware/drivers/ddi/d3d12umddi/ns-d3d12umddi-d3d12ddi-video_encoder_level_setting_0080))
+  * [**D3D12DDI_VIDEO_ENCODER_AV1_LEVEL_TIER_CONSTRAINTS_0095**](/windows-hardware/drivers/ddi/d3d12umddi/ns-d3d12umddi-d3d12ddi_video_encoder_av1_level_tier_constraints_0095) (**pAV1LevelSetting** is added to [**D3D12DDI_VIDEO_ENCODER_LEVEL_SETTING_0080**](/windows-hardware/drivers/ddi/d3d12umddi/ns-d3d12umddi-d3d12ddi_video_encoder_level_setting_0080))
 
-  * [**D3D12DDI_VIDEO_ENCODER_AV1_FRAME_SUBREGION_LAYOUT_MODE_0095**](/windows-hardware/drivers/ddi/d3d12umddi/ne-d3d12umddi-d3d12ddi_video_encoder_av1_frame_subregion_layout_mode_0095)
+  * [**D3D12DDI_VIDEO_ENCODER_FRAME_SUBREGION_LAYOUT_MODE_0080**](/windows-hardware/drivers/ddi/d3d12umddi/ne-d3d12umddi-d3d12ddi_video_encoder_frame_subregion_layout_mode_0080) is extended to include D3D12DDI_VIDEO_ENCODER_FRAME_SUBREGION_LAYOUT_MODE_0095_UNIFORM_GRID_PARTITION and D3D12DDI_VIDEO_ENCODER_FRAME_SUBREGION_LAYOUT_MODE_0095_CONFIGURABLE_GRID_PARTITION.
 
-  * **D3D12DDI_VIDEO_ENCODER_MOTION_ESTIMATION_PRECISION_MODE_EIGHTH_PIXEL_0095** is added to [**D3D12DDI_VIDEO_ENCODER_MOTION_ESTIMATION_PRECISION_MODE_0080**](/windows-hardware/drivers/ddi/d3d12umddi/ne-d3d12umddi-d3d12ddi-video_encoder_motion_estimation_precision_mode_0080)
+  * **D3D12DDI_VIDEO_ENCODER_MOTION_ESTIMATION_PRECISION_MODE_EIGHTH_PIXEL_0095** is added to [**D3D12DDI_VIDEO_ENCODER_MOTION_ESTIMATION_PRECISION_MODE_0080**](/windows-hardware/drivers/ddi/d3d12umddi/ne-d3d12umddi-d3d12ddi_video_encoder_motion_estimation_precision_mode_0080)
 
-  * [**D3D12DDI_VIDEO_ENCODER_AV1_FEATURE_FLAGS_0095**](/windows-hardware/drivers/ddi/d3d12umddi/ne-d3d12umddi-d3d12ddi_video_encoder_av1_feature_flags_0095)
+  * [**D3D12DDI_VIDEO_ENCODER_AV1_FEATURE_0095_FLAGS**](/windows-hardware/drivers/ddi/d3d12umddi/ne-d3d12umddi-d3d12ddi_video_encoder_av1_feature_0095_flags)
 
-  * [**D3D12DDI_VIDEO_ENCODER_AV1_TX_MODE_0095**](/windows-hardware/drivers/ddi/d3d12umddi/ne-d3d12umddi-d3d12ddi_video_encoder_av1_tx_mode_0095) and [**D3D12DDI_VIDEO_ENCODER_AV1_TX_MODE_FLAGS_0095**](/windows-hardware/drivers/ddi/d3d12umddi/ne-d3d12umddi-d3d12ddi_video_encoder_av1_tx_mode_flags_0095)
+  * [**D3D12DDI_VIDEO_ENCODER_AV1_TX_MODE_0095**](/windows-hardware/drivers/ddi/d3d12umddi/ne-d3d12umddi-d3d12ddi_video_encoder_av1_tx_mode_0095) and [**D3D12DDI_VIDEO_ENCODER_AV1_TX_MODE_0095_FLAGS**](/windows-hardware/drivers/ddi/d3d12umddi/ne-d3d12umddi-d3d12ddi_video_encoder_av1_tx_mode_0095_flags)
 
-  * [**D3D12DDI_VIDEO_ENCODER_AV1_INTERPOLATION_FILTERS_0095**](/windows-hardware/drivers/ddi/d3d12umddi/ne-d3d12umddi-d3d12ddi_video_encoder_av1_interpolation_filters_0095) and [**D3D12DDI_VIDEO_ENCODER_AV1_INTERPOLATION_FILTERS_FLAGS_0095**](/windows-hardware/drivers/ddi/d3d12umddi/ne-d3d12umddi-d3d12ddi_video_encoder_av1_interpolation_filters_flags_0095)
+  * [**D3D12DDI_VIDEO_ENCODER_AV1_INTERPOLATION_FILTERS_0095**](/windows-hardware/drivers/ddi/d3d12umddi/ne-d3d12umddi-d3d12ddi_video_encoder_av1_interpolation_filters_0095) and [**D3D12DDI_VIDEO_ENCODER_AV1_INTERPOLATION_FILTERS_0095_FLAGS**](/windows-hardware/drivers/ddi/d3d12umddi/ne-d3d12umddi-d3d12ddi_video_encoder_av1_interpolation_filters_0095_flags)
 
   * [**D3D12DDI_VIDEO_ENCODER_AV1_SEGMENTATION_BLOCK_SIZE_0095**](/windows-hardware/drivers/ddi/d3d12umddi/ne-d3d12umddi-d3d12ddi_video_encoder_av1_segmentation_block_size_0095)
 
-  * [**D3D12DDI_VIDEO_ENCODER_AV1_SEGMENTATION_MODE_0095**](/windows-hardware/drivers/ddi/d3d12umddi/ne-d3d12umddi-d3d12ddi_video_encoder_av1_segmentation_mode_0095) and [**D3D12DDI_VIDEO_ENCODER_AV1_SEGMENTATION_MODE_FLAGS_0095**](/windows-hardware/drivers/ddi/d3d12umddi/ne-d3d12umddi-d3d12ddi_video_encoder_av1_segmentation_mode_flags_0095)
+  * [**D3D12DDI_VIDEO_ENCODER_AV1_SEGMENTATION_MODE_0095**](/windows-hardware/drivers/ddi/d3d12umddi/ne-d3d12umddi-d3d12ddi_video_encoder_av1_segmentation_mode_0095) and [**D3D12DDI_VIDEO_ENCODER_AV1_SEGMENTATION_MODE_0095_FLAGS**](/windows-hardware/drivers/ddi/d3d12umddi/ne-d3d12umddi-d3d12ddi_video_encoder_av1_segmentation_mode_0095_flags)
 
   * [**D3D12DDI_VIDEO_ENCODER_AV1_RESTORATION_TYPE_0095**](/windows-hardware/drivers/ddi/d3d12umddi/ne-d3d12umddi-d3d12ddi_video_encoder_av1_restoration_type_0095)
 
   * [**D3D12DDI_VIDEO_ENCODER_AV1_RESTORATION_TILESIZE_0095**](/windows-hardware/drivers/ddi/d3d12umddi/ne-d3d12umddi-d3d12ddi_video_encoder_av1_restoration_tilesize_0095)
 
-  * [**D3D12DDI_VIDEO_ENCODER_AV1_REFERENCE_WARPED_MOTION_TRANSFORMATION_0095**](/windows-hardware/drivers/ddi/d3d12umddi/ne-d3d12umddi-d3d12ddi_video_encoder_av1_reference_warped_motion_transformation_0095) and [**D3D12DDI_VIDEO_ENCODER_AV1_REFERENCE_WARPED_MOTION_TRANSFORMATION_FLAGS_0095**](/windows-hardware/drivers/ddi/d3d12umddi/ne-d3d12umddi-d3d12ddi_video_encoder_av1_reference_warped_motion_transformation_flags_0095)
+  * [**D3D12DDI_VIDEO_ENCODER_AV1_REFERENCE_WARPED_MOTION_TRANSFORMATION_0095**](/windows-hardware/drivers/ddi/d3d12umddi/ne-d3d12umddi-d3d12ddi_video_encoder_av1_reference_warped_motion_transformation_0095) and [**D3D12DDI_VIDEO_ENCODER_AV1_REFERENCE_WARPED_MOTION_TRANSFORMATION_0095_FLAGS**](/windows-hardware/drivers/ddi/d3d12umddi/ne-d3d12umddi-d3d12ddi_video_encoder_av1_reference_warped_motion_transformation_0095_flags)
 
-  * [**D3D12DDI_VIDEO_ENCODER_AV1_POST_ENCODE_VALUES_FLAGS_0095**](/windows-hardware/drivers/ddi/d3d12umddi/ne-d3d12umddi-d3d12ddi_video_encoder_av1_post_encode_values_flags_0095)
+  * [**D3D12DDI_VIDEO_ENCODER_AV1_POST_ENCODE_VALUES_0095_FLAGS**](/windows-hardware/drivers/ddi/d3d12umddi/ne-d3d12umddi-d3d12ddi_video_encoder_av1_post_encode_values_0095_flags)
 
-  * [**D3D12DDI_VIDEO_ENCODER_AV1_CODEC_CONFIGURATION_SUPPORT**](/windows-hardware/drivers/ddi/d3d12umddi/ns-d3d12umddi-d3d12ddi_video_encoder_av1_codec_configuration_support_0095), with **pAV1Support** added to [**D3D12DDI_VIDEO_ENCODER_CODEC_CONFIGURATION_SUPPORT_0080**](/windows-hardware/drivers/ddi/d3d12umddi/ns-d3d12umddi-d3d12ddi-video_encoder_codec_configuration_support_0080)
+  * [**D3D12DDI_VIDEO_ENCODER_AV1_CODEC_CONFIGURATION_SUPPORT**](/windows-hardware/drivers/ddi/d3d12umddi/ns-d3d12umddi-d3d12ddi_video_encoder_av1_codec_configuration_support_0095), with **pAV1Support** added to [**D3D12DDI_VIDEO_ENCODER_CODEC_CONFIGURATION_SUPPORT_0080**](/windows-hardware/drivers/ddi/d3d12umddi/ns-d3d12umddi-d3d12ddi_video_encoder_codec_configuration_support_0080)
 
-  * [**D3D12DDI_VIDEO_ENCODER_AV1_FRAME_TYPE**](/windows-hardware/drivers/ddi/d3d12umddi/ne-d3d12umddi-d3d12ddi_video_encoder_av1_frame_type) and [**D3D12DDI_VIDEO_ENCODER_AV1_FRAME_TYPE_FLAGS**](/windows-hardware/drivers/ddi/d3d12umddi/ne-d3d12umddi-d3d12ddi_video_encoder_av1_frame_type_flags)
+  * [**D3D12DDI_VIDEO_ENCODER_AV1_FRAME_TYPE_0095**](/windows-hardware/drivers/ddi/d3d12umddi/ne-d3d12umddi-_0095_) and [**D3D12DDI_VIDEO_ENCODER_AV1_FRAME_TYPE_0095_FLAGS**](/windows-hardware/drivers/ddi/d3d12umddi/ne-d3d12umddi-d3d12ddi_video_encoder_av1_frame_type_0095_flags)
 
   * [**D3D12DDI_VIDEO_ENCODER_AV1_COMP_PREDICTION_TYPE_0095**](/windows-hardware/drivers/ddi/d3d12umddi/ne-d3d12umddi-d3d12ddi_video_encoder_av1_comp_prediction_type_0095)
 
-  * [**D3D12DDI_VIDEO_ENCODER_CODEC_AV1_PICTURE_CONTROL_SUPPORT_0095**](/windows-hardware/drivers/ddi/d3d12umddi/ns-d3d12umddi-d3d12ddi_video_encoder_codec_av1_picture_control_support_0095), with **pAV1Support** added to [**D3D12DDI_VIDEO_ENCODER_CODEC_PICTURE_CONTROL_SUPPORT_0080**](/windows-hardware/drivers/ddi/d3d12umddi/ns-d3d12umddi-d3d12ddi-video_encoder_codec_picture_control_support_0080)
+  * [**D3D12DDI_VIDEO_ENCODER_CODEC_AV1_PICTURE_CONTROL_SUPPORT_0095**](/windows-hardware/drivers/ddi/d3d12umddi/ns-d3d12umddi-d3d12ddi_video_encoder_codec_av1_picture_control_support_0095), with **pAV1Support** added to [**D3D12DDI_VIDEO_ENCODER_CODEC_PICTURE_CONTROL_SUPPORT_0080**](/windows-hardware/drivers/ddi/d3d12umddi/ns-d3d12umddi-d3d12ddi_video_encoder_codec_picture_control_support_0080)
 
   * [**D3D12DDI_VIDEO_ENCODER_AV1_CODEC_CONFIGURATION_0095**](/windows-hardware/drivers/ddi/d3d12umddi/ns-d3d12umddi-d3d12ddi_video_encoder_av1_codec_configuration_0095)
 
-  * [**D3D12DDI_VIDEO_ENCODER_AV1_FRAME_SUBREGION_LAYOUT_CONFIG_SUPPORT_0095**](/windows-hardware/drivers/ddi/d3d12umddi/ns-d3d12umddi-d3d12ddi_video_encoder_av1_frame_subregion_layout_config_support_0095) and [**D3D12DDI_VIDEO_ENCODER_AV1_FRAME_SUBREGION_LAYOUT_CONFIG_VALIDATION_FLAGS_0095**](/windows-hardware/drivers/ddi/d3d12umddi/ne-d3d12umddi-d3d12ddi_video_encoder_av1_frame_subregion_layout_config_validation_flags_0095)
+  * [**D3D12DDI_VIDEO_ENCODER_AV1_FRAME_SUBREGION_LAYOUT_CONFIG_SUPPORT_0095**](/windows-hardware/drivers/ddi/d3d12umddi/ns-d3d12umddi-d3d12ddi_video_encoder_av1_frame_subregion_layout_config_support_0095) and [**D3D12DDI_VIDEO_ENCODER_AV1_FRAME_SUBREGION_LAYOUT_CONFIG_VALIDATION_0095_FLAGS**](/windows-hardware/drivers/ddi/d3d12umddi/ne-d3d12umddi-d3d12ddi_video_encoder_av1_frame_subregion_layout_config_validation_0095_flags)
 
-  * [**D3D12DDI_FEATURE_DATA_VIDEO_ENCODER_FRAME_SUBREGION_LAYOUT_CONFIG_0095**](/windows-hardware/drivers/ddi/d3d12umddi/ns-d3d12umddi-d3d12ddi_feature_data_video_encoder_frame_subregion_layout_config_0095), with **pAV1Support** added to [**D3D12DDI_VIDEO_ENCODER_FRAME_SUBREGION_LAYOUT_CONFIG_SUPPORT_0080**](/windows-hardware/drivers/ddi/d3d12umddi/ns-d3d12umddi-d3d12ddi_feature_data_video_encoder_frame_subregion_layout_config_0080)
+  * [**D3D12DDI_FEATURE_DATA_VIDEO_ENCODER_FRAME_SUBREGION_LAYOUT_CONFIG_0095**](/windows-hardware/drivers/ddi/d3d12umddi/ns-d3d12umddi-d3d12ddi_feature_data_video_encoder_frame_subregion_layout_config_0095) and [**D3D12DDI_VIDEO_ENCODER_FRAME_SUBREGION_LAYOUT_CONFIG_SUPPORT_0095**](/windows-hardware/drivers/ddi/d3d12umddi/ns-d3d12umddi-d3d12ddi_feature_data_video_encoder_frame_subregion_layout_config_support_0095)
 
-  * **pAV1Config** is added to [**D3D12DDI_VIDEO_ENCODER_CODEC_CONFIGURATION_0080**](/windows-hardware/drivers/ddi/d3d12umddi/ns-d3d12umddi-d3d12ddi-video_encoder_codec_configuration_0080)
+  * **pAV1Config** is added to [**D3D12DDI_VIDEO_ENCODER_CODEC_CONFIGURATION_0080**](/windows-hardware/drivers/ddi/d3d12umddi/ns-d3d12umddi-d3d12ddi_video_encoder_codec_configuration_0080)
 
   * The **D3D12DDI_VIDEO_ENCODER_VALIDATION_FLAG_0080_SUBREGION_LAYOUT_MODE_NOT_SUPPORTED** flag is added to [**D3D12DDI_VIDEO_ENCODER_VALIDATION_FLAGS_0080**](/windows-hardware/drivers/ddi/d3d12umddi/ne-d3d12umddi-d3d12ddi_video_encoder_validation_flags_0080) to use with the extended [**D3D12DDICAPS_TYPE_VIDEO_0096_ENCODER_SUPPORT1**](/windows-hardware/drivers/ddi/d3d12umddi/ne-d3d12umddi-d3d12ddicaps_type_video_0020) query cap.
 
@@ -99,7 +99,7 @@ The existing video-related framework is extended to allow drivers to report AV1 
 
   * The semantics for the **MaxSubregionsNumber**, **SubregionBlockPixelsSize**, and **QPMapRegionPixelsSize** members of [**D3D12DDI_VIDEO_ENCODER_RESOLUTION_SUPPORT_LIMITS_0080_2**](/windows-hardware/drivers/ddi/d3d12umddi/ns-d3d12umddi-d3d12ddi_video_encoder_resolution_support_limits_0080_2) are updated for AV1.
 
-  * [**_D3D12DDI_VIDEO_ENCODER_AV1_SEQUENCE_STRUCTURE_0095**](/windows-hardware/drivers/ddi/d3d12umddi/ns-d3d12umddi-d3d12ddi_video_encoder_av1_sequence_structure_0095) is added, and **pAV1SequenceStructure** is added to [**D3D12DDI_VIDEO_ENCODER_SEQUENCE_GOP_STRUCTURE_0080**](/windows-hardware/drivers/ddi/d3d12umddi/ns-d3d12umddi-d3d12ddi_video_encoder_sequence_gop_structure_0080).
+  * [**_D3D12DDI_VIDEO_ENCODER_AV1_SEQUENCE_STRUCTURE_0095**](/windows-hardware/drivers/ddi/d3d12umddi/ns-d3d12umddi-d3d12ddi_video_encoder_av1_sequence_structure_0095) is added, and **pAV1SequenceStructure** is added to [**D3D12DDI_VIDEO_ENCODER_SEQUENCE_GOP_STRUCTURE_0082_0**](/windows-hardware/drivers/ddi/d3d12umddi/ns-d3d12umddi-d3d12ddi_video_encoder_sequence_gop_structure_0082_0).
 
 ## Encoding operation
 
@@ -139,7 +139,7 @@ The following structures and enumerations are added or updated with extensions t
 
 * [**D3D12DDI_VIDEO_ENCODER_AV1_REFERENCE_PICTURE_DESCRIPTOR_0095**](/windows-hardware/drivers/ddi/d3d12umddi/ns-d3d12umddi-d3d12ddi_video_encoder_av1_reference_picture_descriptor_0095)
 
-* [**D3D12DD1_VIDEO_ENCODER_AV1_PICTURE_CONTROL_FLAGS_0095**](/windows-hardware/drivers/ddi/d3d12umddi/ne-d3d12umddi-d3d12ddi_video_encoder_av1_picture_control_0095_flags)
+* [**D3D12DD1_VIDEO_ENCODER_AV1_PICTURE_CONTROL_0095_FLAGS**](/windows-hardware/drivers/ddi/d3d12umddi/ne-d3d12umddi-d3d12ddi_video_encoder_av1_picture_control_0095_flags)
 
 * [**D3D12DDI_VIDEO_ENCODER_AV1_RESTORATION_CONFIG_0095**](/windows-hardware/drivers/ddi/d3d12umddi/ns-d3d12umddi-d3d12ddi_video_encoder_av1_restoration_config_0095)
 

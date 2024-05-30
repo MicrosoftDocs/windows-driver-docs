@@ -101,7 +101,7 @@ On the target side, the VM is constructed starting as if it were a new VM. The V
 
 ### Live migration receive
 
-::::image type="content" source="images/TargetTransfer.png" alt-text="A diagram illustrating live migration send.":::
+::::image type="content" source="images/TargetTransfer.png" alt-text="A diagram illustrating live migration receive.":::
 
  Receiving dirty page data is similar to the stage on the source except the paging direction is from CPU buffers to VRAM. All transfers are made while the VF is paused, so the entire transfer can be done within the VF budget.
 
@@ -162,7 +162,7 @@ In particular, the [**TransferVirtual**](/windows-hardware/drivers/ddi/d3dkmddi/
 
 When the system starts the live component of the migration, it needs to call the added [**DxgkDdiPrepareLiveMigration**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_preparelivemigration) DDI. This call notifies the driver that this epoch has started and allows it to configure the VF scheduling policy for the migration, which should apportion some of the free and migrating-VF budget for PF paging.
 
-*Dxgkrnl* then calls KMD's [**DxgkDdiSaveImmutableMigrationData**](/windows-hardware/drivers/ddi/d3dkmddi/nc-n3dkmddi-dxgkddi_saveimmutablemigrationdata) DDI to gather information about the device to restore on the target side.
+*Dxgkrnl* then calls KMD's [**DxgkDdiSaveImmutableMigrationData**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_saveimmutablemigrationdata) DDI to gather information about the device to restore on the target side.
 
 After the system gathers and sends the immutable data and validation data, the main iterative loop of dirty send begins.
 
@@ -174,7 +174,7 @@ For the virtual transfer, the primary updated behavior is that the mapping isn't
 
 ### Live migration end send-side
 
-At the end of the migration, the system needs to collect all device and driver state needed to finish rebuilding state and tracking that hasn't yet transferred. This data couldn't be transferred because it didn't fit the immutability requirements of the earlier migration data and wasn't VRAM dirty content. *Dxgkrnl* calls the added [**DxgkDdiSaveMmutableMigrationData**](/windows-hardware/drivers/ddi/d3dkmddi/nc-n3dkmddi-dxgkddi_savemutablemigrationdata) DDI to do so. This DDI's usage is similar to [**DxgkDdiSaveImmutableMigrationData**](/windows-hardware/drivers/ddi/d3dkmddi/nc-n3dkmddi-dxgkddi_saveimmutablemigrationdata).
+At the end of the migration, the system needs to collect all device and driver state needed to finish rebuilding state and tracking that hasn't yet transferred. This data couldn't be transferred because it didn't fit the immutability requirements of the earlier migration data and wasn't VRAM dirty content. *Dxgkrnl* calls the added [**DxgkDdiSaveMutableMigrationData**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_savemutablemigrationdata) DDI to do so. This DDI's usage is similar to [**DxgkDdiSaveImmutableMigrationData**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_saveimmutablemigrationdata).
 
 Eventually, when there's no more need for migration configuration on this VF, [**DxgkDdiEndLiveMigration**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_endlivemigration) is called. All scheduling and state should return to a nonmigrating configuration.
 
