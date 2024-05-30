@@ -8,7 +8,7 @@ api_name:
 - IRP_MJ_READ
 api_type:
 - NA
-ms.date: 03/13/2023
+ms.date: 05/29/2024
 ms.topic: reference
 ---
 
@@ -54,7 +54,7 @@ A file system or filter driver calls [**IoGetCurrentIrpStackLocation**](/windows
 
 - **Irp->MdlAddress** is the address of a memory descriptor list (MDL) describing the pages that contain the data to be read.
 
-- **Irp->UserBuffer* points to a caller-supplied output buffer that receives the data that is read from the file.
+- **Irp->UserBuffer** points to a caller-supplied output buffer that receives the data that is read from the file.
 
 - **IrpSp->FileObject** points to the file object that is associated with **DeviceObject**. If the FO_SYNCHRONOUS_IO flag is set in **IrpSp->FileObject->Flags**, the file object was opened for synchronous I/O.
 
@@ -62,16 +62,18 @@ A file system or filter driver calls [**IoGetCurrentIrpStackLocation**](/windows
 
 - **IrpSp->MajorFunction** is set to IRP_MJ_READ.
 
-- **IrpSp->MinorFunction** specifies the operation being requested and contains one of the following values:
+- **IrpSp->MinorFunction** specifies the operation being requested and contains one of the following values. If a minor function code isn't specified, the operation is a standard read (equivalent to IRP_MN_NORMAL).
 
-- IRP_MN_COMPLETE
-- IRP_MN_COMPLETE_MDL
-- IRP_MN_COMPLETE_MDL_DPC
-- IRP_MN_COMPRESSED
-- IRP_MN_DPC
-- IRP_MN_MDL
-- IRP_MN_MDL_DPC
-- IRP_MN_NORMAL
+  | MinorFunction | Description |
+  |---------------|-------------|
+  | IRP_MN_NORMAL | The read request is for a standard read operation |
+  | IRP_MN_DPC    | The read request is from a DPC routine |
+  | IRP_MN_MDL    | Returns an MDL that describes the file's cached data in **Irp->MdlAddress**; the caller uses this MDL to read data directly to the cache |
+  | IRP_MN_COMPLETE | Indicates completion of a standard read operation |
+  | IRP_MN_COMPRESSED | The read request is for a compressed file |
+  | IRP_MN_MDL_DPC | The read request is from a DPC routine and returns an MDL that describes the file's cached data in **Irp->MdlAddress** |
+  | IRP_MN_COMPLETE_MDL | Indicates that the caller, who used the MDL to read data directly to the cache, has finished using the MDL |
+  | IRP_MN_COMPLETE_MDL_DPC | Indicates that the caller, who used the MDL to read data directly to the cache, has finished using the MDL; the read request is from a DPC routine |
 
 - **IrpSp->Parameters.Read.ByteOffset** is a LARGE_INTEGER variable that specifies the starting byte offset within the file of the data to be read.
 
