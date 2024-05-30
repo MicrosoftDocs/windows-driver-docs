@@ -1,7 +1,7 @@
 ---
 title: INF Validation Errors and Warnings
 description: Driver installation errors and warnings can appear as a result of the automatic INF verification that Microsoft Visual Studio performs.
-ms.date: 03/04/2021
+ms.date: 05/30/2024
 ---
 
 # INF Validation Errors and Warnings
@@ -38,7 +38,7 @@ Warnings are typically related to:
 
 ## Error Codes
 
-The new (starting in Windows Insider Preview build 26080) InfVerif.exe command 'infverif.exe /code' has the same information as the below table.
+In WDK 10.0.26100.1 (Windows 11, version 24H2), InfVerif.exe command 'infverif.exe /code' has the same information as the below table.
 
 | Error Code and Description | Error Levels &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --- | :--- |

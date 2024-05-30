@@ -1,13 +1,13 @@
 ---
 title: InfVerif /h
 description: This topic describes the functionality and usage of InfVerif with '/h' mode.
-ms.date: 03/27/2024
+ms.date: 05/30/2024
 ---
 
 # InfVerif /h
 
 > [!NOTE]
-> InfVerif /h was introduced in Windows Insider Preview build 26080.
+> InfVerif /h was introduced in Windows 11, version 24H2.
 
 InfVerif /h is new mode of [InfVerif](infverif.md) that validates using a set of INF requirements that change with each release to align with the requirements for a WHQL signature from Hardware Dev Center. Over time, the requirements will become stricter and eventually align with [driver package isolation](../develop/driver-isolation.md) requirements.
 
