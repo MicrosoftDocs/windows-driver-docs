@@ -191,7 +191,7 @@ Although using a configuration description file works better for provisioning a 
 powershell
 
 # Download configuration file to install WDK with VS 2022 Community
-Invoke-WebRequest -Uri 'https://aka.ms/wdk_winget_config_26100' -OutFile configuration.dsc.yaml
+Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/microsoft/Windows-driver-samples/main/configuration.dsc.yaml' -OutFile configuration.dsc.yaml
 
 # Install VS, SDK, WDK and WDK VS extension using the configuration file
 winget configure -f configuration.dsc.yaml
