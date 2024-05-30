@@ -1,7 +1,7 @@
 ---
 title: Building a Driver with the WDK
 description: This topic describes how to build a driver with the Windows Driver Kit (WDK).
-ms.date: 03/27/2024
+ms.date: 05/30/2024
 ---
 
 # Using Visual Studio or MSBuild to build a driver
@@ -43,7 +43,7 @@ There are 3 classifications for the Windows target platform, *Universal Drivers*
 2. *Desktop Drivers* must:
    - Meet all Universal Drivers requirements.
    - Be compliant with [Windows Hardware Compatibility Program (WHCP) requirements](/windows-hardware/design/compatibility/whcp-specifications-policies).
-   - Pass `InfVerif /h`.
+   - Pass `InfVerif /h`. For more info, see [InfVerif /h](../devtest/infverif_h.md).
 
     Drivers that meet the Desktop Driver criteria are Windows Logo Certified and can be added to the Windows Update program.
 
@@ -180,3 +180,4 @@ Starting in Windows Driver Kit (WDK) 8, MSBuild replaced the Windows Build Util
 - [WDK and the Visual Studio build environment](../devtest/wdk-and-visual-studio-build-environment.md)
 - [Signing a Driver](signing-a-driver.md)
 - [Deploying a Driver to a Test Computer](deploying-a-driver-to-a-test-computer.md)
+- [InfVerif /h](../devtest/infverif_h.md)
