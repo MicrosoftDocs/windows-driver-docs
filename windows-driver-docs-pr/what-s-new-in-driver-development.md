@@ -1,12 +1,20 @@
 ---
 title: What's New in Driver Development for Windows 11, Version 24H2
 description: This section describes new features for driver development in Windows 11, version 24H2.
-ms.date: 05/22/2024
+ms.date: 05/30/2024
 ---
 
 # <a name="top"></a>What's new in driver development for Windows 11, version 24H2
 
 This section describes new features and updates for driver development in Windows 11, version 24H2. To target this version of Windows, you can use [WDK 10.0.26100.1](./download-the-wdk.md) (released May 22, 2024).
+
+## WDK NuGet package support
+
+The WDK NuGet package consists of essential libraries, headers, DLL, tools and metadata used for building Windows drivers that can be shared and supported by modern CI/CD pipelines. Users can access and consume the NuGet packages directly from nuget.org within Visual Studio. Using NuGet with the WDK provides a convenient solution for WDK acquisition and updates. It manages dependencies such as the SDK, to help keep the driver development tool chain up to date. For more information, see [Install the latest WDK using NuGet - Step by Step](install-the-wdk-using-nuget.md#install-the-latest-wdk-using-nuget---step-by-step). 
+
+## ARM64 support
+
+Starting from WDK version 10.0.26100.1, WDK now supports development, testing and deployment of drivers on ARM64 machines. The WDK/EWDK can be installed and run natively on ARM64 hardware, in addition to the previously supported emulation of x86 KMDF/UMDF2 drivers on ARM64 hardware. There is also support for debugging and deployment of drivers to an ARM64 target machine from both ARM64 and x64 host machines. The process of installing WDK/EWDK on ARM64 machines will automatically identify and install all the necessary dependencies including build tools, binaries and libraries.
 
 ## Audio
 

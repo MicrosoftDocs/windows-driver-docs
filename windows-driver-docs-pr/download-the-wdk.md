@@ -20,6 +20,14 @@ To target Windows 8.1, Windows 8, and Windows 7, install an older WDK and an old
 
 [Join the Windows Insider Program](https://insider.windows.com/) to get [WDK Insider Preview builds](https://aka.ms/wipwdk). For installation instructions for the Windows Insider Preview builds, see [Installing preview versions of the Windows Driver Kit (WDK)](./installing-preview-versions-wdk.md).
 
+## WDK NuGet package support - New in version 10.0.26100.1
+
+The WDK NuGet package consists of essential libraries, headers, DLL, tools, and metadata used for building Windows drivers that can be shared and supported by modern CI/CD pipelines. Users can access and consume the NuGet packages directly from nuget.org within Visual Studio. Using NuGet with the WDK provides a convenient solution for WDK acquisition and updates. It manages dependencies such as the SDK, to help keep the driver development tool chain up to date. For more information, see [Install the latest WDK using NuGet - Step by Step](install-the-wdk-using-nuget.md#install-the-latest-wdk-using-nuget---step-by-step). 
+
+## ARM64 support - New in version 10.0.26100.1
+
+Starting with WDK version 10.0.26100.1, the WDK now supports development, testing and deployment of drivers on ARM64 machines. The WDK/EWDK can be installed and run natively on ARM64 hardware, in addition to the previously supported emulation of x86 KMDF/UMDF2 drivers on ARM64 hardware. There is also support for debugging and deployment of drivers to an ARM64 target machine from both ARM64 and x64 host machines. The process of installing WDK/EWDK on ARM64 machines will automatically identify and install all the necessary dependencies including build tools, binaries, and libraries.
+
 ## ![download icon for Visual Studio](images/download-install.png) Step 1: Install Visual Studio 2022
 
 The WDK requires Visual Studio. For more information about system requirements for Visual Studio, see [Visual Studio 2022 System Requirements](/visualstudio/releases/2022/system-requirements).
