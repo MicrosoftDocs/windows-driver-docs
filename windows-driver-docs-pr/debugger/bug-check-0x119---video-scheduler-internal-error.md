@@ -33,7 +33,7 @@ Parameter 1 is the only parameter of interest. It identifies the exact violation
 |0x7| Driver reports display VSync on render only adapter. (REPORT_VSYNC_ON_RENDER_ONLY_ADAPTER) |
 |0x8| Driver node that is causing the reset did not have its corresponding bit set. (INVALID_NODE_MASK) |
 |0x9| Driver failed on a cancel command. (FAILED_CANCEL_COMMAND) |
-|0xA| Driver reported and invalid out of range aborted fence. (REPORTED_INVALID_ABORTED_FENCE) |
+|0xA| Driver reported an invalid out of range aborted fence. (REPORTED_INVALID_ABORTED_FENCE) |
 |0xB| Driver failed the SetVidPnSourceAddressWithMultiPlaneOverlay command. (FAILED_SETVIDPNSOURCEMPO_COMMAND)|
 |0xC| Driver PageFaultFlags indicate a fatal hardware fault. (FATAL_PAGE_FAULT)  |
 |0xD| Driver reported incorrect PageFaultFlags in DMA Page Faulted interrupt. (INVALID_DMA_FAULT_PARAMETERS)  |
