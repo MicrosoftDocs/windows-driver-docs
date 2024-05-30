@@ -14,16 +14,14 @@ api_type:
 
 # !driveinfo
 
-
 The **!driveinfo** extension displays volume information for the specified drive.
 
 ```dbgcmd
 !driveinfo Drive[:] 
 !driveinfo 
-```dbgcmd
+```
 
 ## Parameters
-
 
 <span id="_______Drive______"></span><span id="_______drive______"></span><span id="_______DRIVE______"></span> *Drive*   
 Specifies a drive. The colon at the end of the drive name is optional.
@@ -34,8 +32,6 @@ Displays some brief Help text for this extension in the Debugger Command window.
 ## DLL
 
 Kdexts.dll
-
- 
 
 ## Remarks
 
@@ -53,4 +49,3 @@ Drive c:, DriveObject e136cd88
     Volume has 0x229236 (free) / 0x2ee1a7 (total) clusters of size 0x1000
     8850.21 of 12001.7 MB free
 ```
-
