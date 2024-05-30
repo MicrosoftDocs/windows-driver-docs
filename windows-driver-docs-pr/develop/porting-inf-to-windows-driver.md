@@ -292,4 +292,4 @@ AddReg=DmaSecurityRegistration
 HKLM,SYSTEM\CurrentControlSet\Control\DmaSecurity\AllowedBuses,"Example Friendly Name Description",0,PCI\VEN_ABCD&DEV_0123
 ```
 
-Starting with Windows 11 version 24H2, this value is not used and should be removed from the INF. Please see [BitLocker automatic device encryption hardware requirements](/windows-hardware/design/device-experiences/oem-bitlocker#bitlocker-automatic-device-encryption-hardware-requirements) for more information.
+Starting with Windows 11, version 24H2, this value is not used and should be removed from the INF. Please see [BitLocker automatic device encryption hardware requirements](/windows-hardware/design/device-experiences/oem-bitlocker#bitlocker-automatic-device-encryption-hardware-requirements) for more information.
