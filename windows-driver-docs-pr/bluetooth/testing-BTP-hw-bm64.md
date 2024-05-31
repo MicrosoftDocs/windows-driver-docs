@@ -1,12 +1,12 @@
 ---
 title: Microsoft Bluetooth Test Platform - BM-64-EVB Board
 description: Bluetooth Test Platform (BTP) supported hardware (BM64).
-ms.date: 05/20/2024
+ms.date: 05/31/2024
 ---
 
 # BM-64-EVB board
 
-The BM64 is a dual-mode Bluetooth v5.0 radio designed for use in headsets, speakers, or multi-speaker peripherals. More information can be found via the BM64 page from [**Microchip Technology Incorporated**](https://www.microchip.com/wwwproducts/en/BM64). The BM-64-EVB allows the BM64 to be utilized as a stand-alone device, allowing for connection to a test machine without the need for a Traduci. More information can be found via the BM-64-EVB page from [**Microchip**](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/BM-64-EVB-C2).
+The BM64 is a dual-mode Bluetooth v5.0 radio designed for use in headsets, speakers, or multi-speaker peripherals. More information can be found via the BM64 page from **[Microchip Technology Incorporated](https://www.microchip.com/wwwproducts/en/BM64)**. The BM-64-EVB allows the BM64 to be utilized as a stand-alone device, allowing for connection to a test machine without the need for a Traduci. More information can be found via the BM-64-EVB page from **[Microchip](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/BM-64-EVB-C2)**.
 
 | Device Name | Parameter | Usage Example |
 | --- | --- | --- |
@@ -37,7 +37,7 @@ The BM-64-EVB-C2 can be purchased via [DigiKey](https://www.digikey.com/en/produ
 
 In order to use the BM-64-EVB with BTP, the firmware and EEPROM settings for the BM64 must be updated from the factory default. Additionally, the PIC microcontroller should also be updated to ensure stability.
 
-Download and extract the newest BM64 software kit from [**Microchip**](https://www.microchip.com/wwwproducts/en/BM64) on the *Documents/Software Libraries/Firmware* tab (DSPK v2.1.3 was used for this development).
+Download and extract the newest BM64 software kit from **[Microchip](https://www.microchip.com/wwwproducts/en/BM64)** on the *Documents/Software Libraries/Firmware* tab (DSPK v2.1.3 was used for this development).
 
 Some configuration notes before starting:
 
@@ -88,7 +88,7 @@ tool (found at `DSPK v2.x.y Package\Tools\UI Tool`) to make a user interface fil
 After a UI and DSP file are generated, the process utilizes the `MPET.exe` tool (found at `DSPK v2.x.y Package\Tools\MP_V2.x.y`) to combine for the full EEPROM *.ipf* file. Using
 the generated *.ipf* tool, the actual upload of the EEPROM to the BM64 occurs with the `EEPROM_Tool.exe` tool (found at `DSPK v2.x.y Package\Tools\EEPROM_Tool`).
 
-Follow the [**guide**](http://ww1.microchip.com/downloads/en/DeviceDoc/50002514B.pdf) provided by Microchip for updating the BM64 EEPROM,
+Follow the **[guide](http://ww1.microchip.com/downloads/en/DeviceDoc/50002514B.pdf)** provided by Microchip for updating the BM64 EEPROM,
 specifically sections 3.4 - "CONFIGURING BM64 MODULE" and 3.5 - "UPDATING EEPROM PARAMETERS". Here are some important modifications to the guide:
 
 - Section 3.4.1 - "UI Tool Configuration" Modifications:
@@ -142,10 +142,10 @@ This section explains how to upload new firmware for the on-board PIC microcontr
 > [!NOTE]
 >
 > - Use the same DSPK version for the PIC Microcontroller firmware as was used for the firmware and EEPROM of the BM64 for compatibility
-> - The steps were accomplished with the [**MPLAB Snap**](https://www.microchip.com/developmenttools/ProductDetails/PartNO/PG164100), but other
+> - The steps were accomplished with the **[MPLAB Snap](https://www.microchip.com/en-us/development-tool/pg164100)**, but other
 > ICSP compatible programmers may work.
 
-1. Download the [**MPLAB X IDE/IPE**](https://www.microchip.com/en-us/tools-resources/develop/mplab-x-ide) from Microchip.
+1. Download the **[MPLAB X IDE/IPE](https://www.microchip.com/en-us/tools-resources/develop/mplab-x-ide)** from Microchip.
 1. Connect a jumper on JP33. Set SW9 positions 1 and 2 to both OFF, SW46 should have all positions switched to ON expect for #2, and SW47 should have all positions switched to ON.
 1. Plug the 15V DC power adapter into the P2 jack for supplying power to MCU.
 1. Plug the MPLAB Snap into the ICSP J5 header and the USB cable to the Snap.
@@ -183,7 +183,7 @@ After these switches, ports, and jumpers are verified, unplug, wait at least 10 
 
 ### Using MSPK SPKCommand
 
-Another solution is using a different version of the SPKCommand. To do so, download and extract the MSPK v1.35 BM64 software kit from [**Microchip**](https://www.microchip.com/wwwproducts/en/BM64) on the *Documents/Software Libraries/Firmware* tab. Inside the MSPK v1.35 kit, locate the `SPKCommandSetTool v192.006.exe` tool (found at `BM64 Software & Tools (MSPKv1.35)\Tools\SPK CommandSet Tool`). Run through the same instructions in the [verifying installation with SPKCommand](#verifying-installation-with-spkcommand) using the MSPK v1.35 version of the SPKCommand tool. If BM-64-EVB correctly responds using the MSPK v1.35 tool, then the board can be used with BTP.
+Another solution is using a different version of the SPKCommand. To do so, download and extract the MSPK v1.35 BM64 software kit from **[Microchip](https://www.microchip.com/wwwproducts/en/BM64)** on the *Documents/Software Libraries/Firmware* tab. Inside the MSPK v1.35 kit, locate the `SPKCommandSetTool v192.006.exe` tool (found at `BM64 Software & Tools (MSPKv1.35)\Tools\SPK CommandSet Tool`). Run through the same instructions in the [verifying installation with SPKCommand](#verifying-installation-with-spkcommand) using the MSPK v1.35 version of the SPKCommand tool. If BM-64-EVB correctly responds using the MSPK v1.35 tool, then the board can be used with BTP.
 
 ## Features
 
