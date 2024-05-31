@@ -17,7 +17,7 @@ This topic details known issues concerning the WDK.
 
 ### Restart after provisioning
 
-When performing a provisioning and deployment, the target machine fails to restart after the deployment steps. 
+After provisioning and deployment, the target machine fails to restart after the deployment steps. 
 
 ### ARM64 WDK Driver SxS Support
 
