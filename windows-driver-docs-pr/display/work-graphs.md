@@ -16,7 +16,7 @@ This article describes the DDIs that are added for a user-mode graphics driver (
 
 The following interfaces are updated or introduced for a UMD to report its support for work graphs:
 
-* The **D3D12DDICAPS_TYPE_OPTIONS_0109** capability-reporting entry is added to the[**D3D12DDICAPS_TYPE**](/windows-hardware/drivers/ddi/d3d12umddi/ne-d3dumddi-d3dddicaps_type) enum used by [**PFND3D12DDI_GETCAPS**](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_getcaps).
+* The **D3D12DDICAPS_TYPE_OPTIONS_0109** capability-reporting entry is added to the[**D3D12DDICAPS_TYPE**](/windows-hardware/drivers/ddi/d3d12umddi/ne-d3d12umddi-d3d12ddicaps_type) enum used by [**PFND3D12DDI_GETCAPS**](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_getcaps).
 
 * This caps entry corresponds to the [**D3D12DDI_OPTIONS_DATA_0103**](/windows-hardware/drivers/ddi/d3d12umddi/ns-d3d12umddi-d3d12ddi_options_data_0103) caps structure, whose [**WorkGraphsTier**](/windows-hardware/drivers/ddi/d3d12umddi/ne-d3d12umddi-d3d12ddi_work_graphs_tier) member indicates the level of work graph support that the driver supports.
 
