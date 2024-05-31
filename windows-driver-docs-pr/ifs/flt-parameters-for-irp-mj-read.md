@@ -56,9 +56,9 @@ If both a **ReadBuffer** and **MdlAddress** buffer are provided, it is recommend
 
 If a minifilter changes the value of **MdlAddress**, then after its post operation callback, Filter Manager will free the MDL currently stored in **MdlAddress** and restore the previous value of **MdlAddress**.
 
-If the IRP_MN_COMPLETE bit is set in Iopb->MinorFunction then **MdlAddress** is the address to send to [CcMdlReadComplete](windows-hardware/drivers/ddi/ntifs/nf-ntifs-ccmdlreadcomplete).
+If the IRP_MN_COMPLETE bit is set in Iopb->MinorFunction then **MdlAddress** is the address to send to [CcMdlReadComplete](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ccmdlreadcomplete).
 
-If the IRP_MN_MDL bit (and not the IRP_MN_COMPLETE bit) is set in Iopb->MinorFunction then **MdlAddress** is the address to send to [CcMdlRead](windows-hardware/drivers/ddi/ntifs/nf-ntifs-ccmdlread).  
+If the IRP_MN_MDL bit (and not the IRP_MN_COMPLETE bit) is set in Iopb->MinorFunction then **MdlAddress** is the address to send to [CcMdlRead](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ccmdlread).  
 
 IRP_MJ_READ can be an IRP-based operation or a fast I/O operation.
 
