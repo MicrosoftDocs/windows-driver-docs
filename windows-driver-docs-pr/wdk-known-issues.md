@@ -13,6 +13,16 @@ ms.date: 12/16/2020
 
 This topic details known issues concerning the WDK.
 
+## WDK for Windows 11, version 24H2
+
+### Restart after provisioning
+
+After provisioning and deployment, the target machine fails to restart after the deployment steps. 
+
+### ARM64 WDK Driver SxS Support
+
+When both the Windows 11, version 24H2 kit and the Windows 11, version 22H2 kit are installed on an ARM64 machine, building a KMDF driver for ARM64 with **TargetPlatformVersion** set to Windows 11, version 22H2 fails with `WdfDriverEntry.lib(stub.obj) : error LNK2001: unresolved external symbol`.
+
 ## WDK for Windows 11, version 22H2
 
 ### Service error at startup
