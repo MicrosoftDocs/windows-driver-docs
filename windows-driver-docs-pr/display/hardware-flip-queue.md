@@ -57,7 +57,7 @@ The following DDIs were added to support the hardware flip queue feature.
 
 ### Checking for feature availability
 
-Hardware flip queue requires OS enable/disable negotiation. A KMD that supports hardware flip queue must first call [**DXGKCB_QUERYFEATURESUPPORT**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkcb_queryfeaturesupport) during device start time with a [**FeatureId**](/windows-hardware/drivers/ddi/d3dkmddi/ne-d3dkmddi-_dxgk_feature_id) of **DXGK_FEATURE_HWFLIPQUEUE** to determine whether the OS allows hardware flip queue to be enabled.
+Hardware flip queue requires OS enable/disable negotiation. A KMD that supports hardware flip queue must first call [**DXGKCB_QUERYFEATURESUPPORT**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkcb_queryfeaturesupport) during device start time with a [**FeatureId**](/windows-hardware/drivers/ddi/d3dukmdt/ne-d3dukmdt-dxgk_feature_id) of **DXGK_FEATURE_HWFLIPQUEUE** to determine whether the OS allows hardware flip queue to be enabled.
 
 Hardware flip queue can only be used if the callback succeeds and **Enable** is set to TRUE.
 

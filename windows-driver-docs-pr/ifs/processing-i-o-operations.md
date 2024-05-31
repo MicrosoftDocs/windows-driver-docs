@@ -73,7 +73,7 @@ The following routines provide oplock support:
 * [**FltCheckOplock**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltcheckoplock)
 
 * [**FltCurrentOplock**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltcurrentoplock)
-* [**FltCurrentOplockH**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltcurrenthoplockh)
+* [**FltCurrentOplockH**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltcurrentoplockh)
 * [**FltCurrentBatchOplock**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltcurrentbatchoplock)
 
 * [**FltOplockFsctrl**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltoplockfsctrl)

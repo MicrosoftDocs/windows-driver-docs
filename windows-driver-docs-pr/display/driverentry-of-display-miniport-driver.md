@@ -69,8 +69,8 @@ The following structures and enumeration are also used with KMDODs:
 
 ## Requirements
 
-|     | Requirement |
-| --- | ----------- |
+| Requirement | Detail |
+| ----------- | ------ |
 | Target platform | Desktop |
 | Minimum supported client | Windows Vista  |
 | Library | *NtosKrnl.lib* |
