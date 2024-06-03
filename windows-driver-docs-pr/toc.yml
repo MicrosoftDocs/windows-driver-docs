@@ -1,7 +1,9 @@
-- name: "What's new in driver development for Windows 11, version 23H2"
+- name: "What's new in driver development for Windows 11, version 24H2"
   href: what-s-new-in-driver-development.md
 - name: "New in previous releases"
-  items: 
+  items:
+  - name: "What's new in driver development for Windows 11, version 23H2"
+    href: driver-changes-for-windows-11-version-23h2.md
   - name: "What's new in driver development for Windows 11, version 22H2"
     href: driver-changes-for-windows-11-version-22h2.md
   - name: "What's new in driver development for Windows 11, version 21H2"
@@ -14,6 +16,8 @@
   items: 
   - name: "Download the Windows Driver Kit (WDK)"
     href: download-the-wdk.md
+  - name: "Install the WDK using NuGet"
+    href: install-the-wdk-using-nuget.md    
   - name: "Install the WDK using WinGet"
     href: install-the-wdk-using-winget.md
   - name: "Installing preview versions of the WDK"

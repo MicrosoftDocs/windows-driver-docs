@@ -1,7 +1,7 @@
 ---  
 title: System-Defined Device Setup Classes Available to Vendors  
 description: System-Defined Device Setup Classes Available to Vendors 
-ms.date: 12/20/2023
+ms.date: 05/31/2024
 ---  
 
 # System-Defined Device Setup Classes Available to Vendors  
@@ -269,7 +269,7 @@ This class includes tape drives, including all tape miniclass drivers.
 **USB Device**  
 Class = USBDevice  
 ClassGuid = {88BAE032-5A81-49f0-BC3D-A4FF138216D6}  
-USBDevice includes all USB devices that do not belong to another class. This class is not used for USB host controllers and hubs.  
+USBDevice includes all USB devices that do not belong to another class. This class is not used for USB host controllers and hubs; drivers for these devices are provided by the operating system and should use the **USB** class described in [System-Defined Device Setup Classes Reserved for System Use](./system-defined-device-setup-classes-reserved-for-system-use.md). 
   
 **Windows CE USB ActiveSync Devices**  
 Class = WCEUSBS  

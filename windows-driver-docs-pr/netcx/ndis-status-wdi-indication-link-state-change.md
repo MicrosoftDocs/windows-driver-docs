@@ -2,7 +2,7 @@
 title: NDIS_STATUS_WDI_INDICATION_LINK_STATE_CHANGE  (dot11wificxintf.h)
 ms.topic: reference
 description: WiFiCx drivers use NDIS_STATUS_WDI_INDICATION_LINK_STATE_CHANGE to indicate link speed or quality changes.
-ms.date: 08/30/2021
+ms.date: 08/23/2023
 keywords:
  - NDIS_STATUS_WDI_INDICATION_LINK_STATE_CHANGE Network Drivers Starting with Windows Vista
 ---
@@ -27,12 +27,15 @@ This information from this indication is used by the host to keep track of metad
 
 In Station and P2P Client cases, the Peer MAC Address is set to the BSSID of the connected network. In AP/P2P GO cases, the Peer MAC Address is set to the MAC address of a given connected device.
 
+For MLO connections, the link state indication will provide information for each link. For non-MLO connections, it will provide information for a single link.
+
 ## Payload data
 
 
 | Type                                                                                           | Multiple TLV instances allowed | Optional | Description                       |
 |------------------------------------------------------------------------------------------------|--------------------------------|----------|-----------------------------------|
 | [**WDI\_TLV\_LINK\_STATE\_CHANGE\_PARAMETERS**](./wdi-tlv-link-state-change-parameters.md) | | |The link state change parameters. |
+| [**WDI_TLV_LINK_INFO**](wdi-tlv-link-info.md) |                   X             |         |  Link information parameters. |
 | [**WDI_TLV_BSS_ENTRY_CHANNEL_INFO**](wdi-tlv-bss-entry-channel-info.md) |                                |     X     | Channel number and Band ID of the current connection. |
 
  

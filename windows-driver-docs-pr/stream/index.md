@@ -5,7 +5,7 @@ keywords:
 - streaming media WDK
 - media streaming WDK
 - data streaming WDK
-ms.date: 02/14/2024
+ms.date: 04/25/2024
 ---
 
 # Streaming media device driver design guide
@@ -27,6 +27,8 @@ Use the guidance in this section to design and implement drivers for devices tha
 [KSPROPERTY_CAMERACONTROL_EXTENDED_EYEGAZECORRECTION](ksproperty-cameracontrol-extended-eyegazecorrection.md)
 
 [USB Video Class (UVC) camera implementation guide](uvc-camera-implementation-guide.md)
+
+[Privacy shutter replacement image](privacy-shutter-replacement-image.md)
 
 ## New and updated content for Windows 11
 

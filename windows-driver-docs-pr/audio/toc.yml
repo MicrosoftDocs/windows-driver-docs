@@ -1104,8 +1104,6 @@
       href: audio-drivers-interfaces.md
     - name: "IAudioSystemEffects"
       href: iaudiosystemeffects.md
-    - name: "IAudioSystemEffects2"
-      href: iaudiosystemeffects2.md
     - name: "IKeywordDetectorOemAdapter"
       href: ikeyworddetectoroemadapter.md
   - name: "Bluetooth HFP DDI Reference"

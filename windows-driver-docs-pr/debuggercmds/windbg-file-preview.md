@@ -17,7 +17,7 @@ When you first open the file menu, you'll see *Start debugging* and your recent 
 
 #### Recent
 
-The recent list contains a list of your recent workspaces and debugger connections. For more information on working settings an workspaces see [WinDbg Setup – Settings and workspaces](windbg-setup-preview.md).
+The recent list contains a list of your recent workspaces and debugger connections. For more information on working settings workspaces, see [WinDbg Setup – Settings and workspaces](windbg-setup-preview.md).
 
 You can use the right click menu to manage your workspaces, like pinning, renaming and moving them. As well as editing them in notepad.
 

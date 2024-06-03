@@ -1,7 +1,7 @@
 ---
 title: INF Validation Errors and Warnings
 description: Driver installation errors and warnings can appear as a result of the automatic INF verification that Microsoft Visual Studio performs.
-ms.date: 03/04/2021
+ms.date: 05/30/2024
 ---
 
 # INF Validation Errors and Warnings
@@ -38,7 +38,7 @@ Warnings are typically related to:
 
 ## Error Codes
 
-The new (starting in Windows Insider Preview build 26080) InfVerif.exe command 'infverif.exe /code' has the same information as the below table.
+In WDK 10.0.26100.1 (Windows 11, version 24H2), InfVerif.exe command 'infverif.exe /code' has the same information as the below table.
 
 | Error Code and Description | Error Levels &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --- | :--- |
@@ -209,7 +209,7 @@ The new (starting in Windows Insider Preview build 26080) InfVerif.exe command '
 | **Code 2006**<a name="2006"></a><br><br>**Message**<br>Undefined service '&lt;value&gt;' under [&lt;value&gt;] section.<br><br>**Details**<br>The specified service was declared with an AddService directive, but the corresponding service install section could<br>not be located. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
 | **Code 2008**<a name="2008"></a><br><br>**Message**<br>Section name [&lt;value&gt;] is also used by an included INF.<br><br>**Details**<br>The same section name is used both in this INF as well as an INF specified with an Include directive. This may lead<br>to incorrect parsing results. | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |
 | **Code 2009**<a name="2009"></a><br><br>**Message**<br>Legacy directive '&lt;value&gt;' will be ignored.<br><br>**Details**<br>The specified directive has been deprecated and will be ignored in most parsing scenarios. | **/k:** Warning<br>**/u:** Warning<br>**/w:** Warning<br><br><br> |
-| **Code 2010**<a name="2010"></a><br><br>**Message**<br>Section [&lt;value&gt;] should have '.&lt;value&gt;' decoration.<br><br>**Details**<br>The specified section does not have an architecture decoration and will be implicitly treated as the x86 architecture.<br>The architecture should be explictly declared. | **/k:** Warning<br>**/u:** Warning<br>**/w:** Warning<br><br><br> |
+| **Code 2010**<a name="2010"></a><br><br>**Message**<br>Section [&lt;value&gt;] should have '.&lt;value&gt;' decoration.<br><br>**Details**<br>The specified section does not have an architecture decoration and will be implicitly treated as the x86 architecture.<br>The architecture should be explicitly declared. | **/k:** Warning<br>**/u:** Warning<br>**/w:** Warning<br><br><br> |
 | **Code 2083**<a name="2083"></a><br><br>**Message**<br>Section [&lt;value&gt;] not referenced or used.<br><br>**Details**<br>The specified section will not be used during device installation. If this is unintentional there may be another<br>error that prevents the usage. | **/k:** Warning<br>**/u:** Warning<br>**/w:** Warning<br><br><br> |
 | **Code 2084**<a name="2084"></a><br><br>**Message**<br>Service binary '&lt;value&gt;' should reference a CopyFiles destination file.<br><br>**Details**<br>The service is registered using a service binary that is not part of the driver package. This error may occur in<br>some cases because the service binary was specified incorrectly, such as missing quotes around a path with spaces. | **/k:** Warning<br>**/u:** Warning<br>**/w:** Error<br><br><br> |
 | **Code 2085**<a name="2085"></a><br><br>**Message**<br>Service binary '&lt;value&gt;' should be specified as a path under a DIRID.<br><br>**Details**<br>The service binary path is required to be specified as a path under a DIRID value, such as %%13%%\binary.sys.<br><br>For additional information about DIRIDs, see [Using DIRIDs](/windows-hardware/drivers/install/using-dirids) | **/k:** Error<br>**/u:** Error<br>**/w:** Error<br><br><br> |

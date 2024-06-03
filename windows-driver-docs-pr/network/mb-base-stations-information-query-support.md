@@ -38,7 +38,7 @@ Service UUID: **3d01dcc5-fef5-4d05-0d3a-bef7058e9aaf**
 
 ### Query
 
-The InformationBuffer of MBIM_COMMAND_MSG contains an MBIM_BASE_STATIONS_INFO_REQ struture. The InformationBuffer of MBIM_COMMAND_DONE contains an MBIM_BASE_STATIONS_INFO structure.
+The InformationBuffer of MBIM_COMMAND_MSG contains an MBIM_BASE_STATIONS_INFO_REQ structure. The InformationBuffer of MBIM_COMMAND_DONE contains an MBIM_BASE_STATIONS_INFO structure.
 
 #### <a name="mbim_base_stations_info_req"></a>MBIM_BASE_STATIONS_INFO_REQ
 
@@ -321,7 +321,7 @@ Service UUID: **3d01dcc5-fef5-4d05-0d3a-bef7058e9aaf**
 | Type | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | Not applicable | Not applicable | Not applicable |
-| Response | Not appliable | MBIM_LOCATION_INFO | MBIM_LOCATION_INFO |
+| Response | Not applicable | MBIM_LOCATION_INFO | MBIM_LOCATION_INFO |
 
 ### Query
 

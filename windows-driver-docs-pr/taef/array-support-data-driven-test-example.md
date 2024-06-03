@@ -24,7 +24,7 @@ The parameter types that are supported are listed in [Parameter Types in Table D
 
 If any other data type is specified, the test throws a warning and considers it to be a String. In the case of arrays, the data type would be considered to be of type String\[\].
 
-The following example shows how to specify that the parameter is an array of one of the basic types. It is important to note that there are no default types allowed in the case of arrays - you must explictly specify the type and set the **Array** attribute for the parameter to be true.
+The following example shows how to specify that the parameter is an array of one of the basic types. It is important to note that there are no default types allowed in the case of arrays - you must explicitly specify the type and set the **Array** attribute for the parameter to be true.
 
 ```cpp
 1  <?xml version="1.0"?>

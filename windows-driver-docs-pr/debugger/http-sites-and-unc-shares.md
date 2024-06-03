@@ -19,7 +19,7 @@ This section includes:
 
 [Using UNC Shares](using-unc-shares.md)
 
-[Using HTTP Sites and UNC Shares in Conjuction with Regular Version Control](using-http-sites-and-unc-shares-in-conjuction-with-regular-version-con.md)
+[Using HTTP Sites and UNC Shares in Conjunction with Regular Version Control](using-http-sites-and-unc-shares-in-conjuction-with-regular-version-con.md)
 
  
 

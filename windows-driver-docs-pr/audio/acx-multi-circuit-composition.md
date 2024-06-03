@@ -11,9 +11,6 @@ This topic discusses ACX multi circuit composition. For a general overview of AC
 
 As described in [Summary of ACX objects](acx-summary-of-objects.md), an AcxCircuit represents a partial or full audio path to a user perceived audio device (speakers, mic, etc.). An AcxCircuit has at least one input pin and one output pin (ACXPIN), and it may aggregate one or more AcxElements-like objects. For general information, see [ACX Circuits](acx-circuits.md).
 
->[!NOTE]
-> The ACX headers and libraries are not included in the  WDK 10.0.22621.2428 (released October 24, 2023), but are available in previous versions, as well as the latest (25000 series builds) Insider Preview of the WDK. For more information about preview versions of the WDK, see [Installing preview versions of the Windows Driver Kit (WDK)](../installing-preview-versions-wdk.md).
-
 ## ACX circuit composition
 
 ACX binds circuits together until they form a complete audio path. ACX uses audio bindings to connect audio circuits together. At the same time, each ACX circuit is converted into a KS filter, these KS filters are then detected by the Audio Endpoint Builder (AEB) which runs as user-mode service. AEB scans the detected KS filter graph and creates the software audio endpoint representing the underline audio infrastructure when it detects a complete audio path.  

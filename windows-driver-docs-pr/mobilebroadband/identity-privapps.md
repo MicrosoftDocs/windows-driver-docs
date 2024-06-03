@@ -1,10 +1,10 @@
 ---
-title: Identity (SoftwareInfo - Priviliged Applications)
-description: Identity (SoftwareInfo - priviliged applications)
+title: Identity (SoftwareInfo - Privileged Applications)
+description: Identity (SoftwareInfo - privileged applications)
 ms.date: 04/20/2017
 ---
 
-# Identity (SoftwareInfo - priviliged applications)
+# Identity (SoftwareInfo - privileged applications)
 
 [!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 

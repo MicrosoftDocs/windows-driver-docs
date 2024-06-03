@@ -3,7 +3,7 @@ title: Kernel-Mode Driver Architecture Design Guide
 description: Kernel-Mode Driver Architecture Design Guide
 ms.assetid: 21c199f3-abc3-4607-a674-eb84b6c3c25a
 keywords: ["kernel-mode drivers WDK , architecture", "kernel-mode drivers WDK"]
-ms.date: 03/18/2022
+ms.date: 05/30/2024
 ms.topic: article
 ---
 
@@ -73,5 +73,3 @@ This section contains conceptual information that describes and helps you build 
 - [**Windows Management Instrumentation (WMI)**](implementing-wmi.md) are extensions to your kernel-mode driver, which enable your driver to become a WMI provider. A WMI provider makes measurement and instrumentation data available to WMI consumers, such as user-mode applications.
 
 - [**Driver Programming Techniques**](using-nt-and-zw-versions-of-the-native-system-services-routines.md) Programming drivers in the kernel mode of Windows requires techniques that sometimes differ significantly from those of ordinary user-mode programming.
-
-- [**Bulk memory volatile accessor functions (v3)**](bulk-memory-volatile-accessor-functions-v3.md) describes prerelease bulk memory volatile accessor functions that are available starting in Windows 11 Insider Preview.

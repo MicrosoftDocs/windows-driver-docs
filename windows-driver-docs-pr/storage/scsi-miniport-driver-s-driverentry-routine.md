@@ -28,6 +28,6 @@ A **DriverEntry** routine is the initial entry point for most Microsoft Windows 
   - [*HwScsiAdapterState*](/previous-versions/windows/hardware/drivers/ff557278(v=vs.85)) (**NULL** if the miniport driver runs only on NT-based operating system platforms or if it is designed to also run on x86-only Windows platforms but the HBA has neither a BIOS nor x86-real-mode driver)
   - [*HwScsiAdapterControl*](/previous-versions/windows/hardware/drivers/ff557274(v=vs.85)) (**NULL** if the miniport driver does not support Plug and Play)
 
-4. In an a legacy miniport driver, set up any driver-determined context data that the miniport driver's *HwScsiFindAdapter* routine will use.
+4. In a legacy miniport driver, set up any driver-determined context data that the miniport driver's *HwScsiFindAdapter* routine will use.
 
 5. Call [**ScsiPortInitialize**](/windows-hardware/drivers/ddi/srb/nf-srb-scsiportinitialize) with the pointers that were input to the **DriverEntry** routine, the address of the filled-in HW_INITIALIZATION_DATA, and the address of the context data, if any.

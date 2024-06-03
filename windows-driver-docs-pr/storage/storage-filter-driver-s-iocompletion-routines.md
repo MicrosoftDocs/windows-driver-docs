@@ -11,7 +11,7 @@ ms.date: 04/20/2017
 
 # Storage Filter Driver's IoCompletion Routines
 
-A storage filter driver's [*IoCompletion*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine is called when lower-level drivers (port, class, and additional filter drivers, if any) have called [**IoCompleteRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest). The *IoCompletion* routine of an storage filter driver (SFD) should return **STATUS_MORE_PROCESSING_REQUIRED** to prevent completion processing of a driver-allocated IRP, or to retain an original IRP if the SFD will reuse the IRP before completing it.
+A storage filter driver's [*IoCompletion*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine is called when lower-level drivers (port, class, and additional filter drivers, if any) have called [**IoCompleteRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest). The *IoCompletion* routine of a storage filter driver (SFD) should return **STATUS_MORE_PROCESSING_REQUIRED** to prevent completion processing of a driver-allocated IRP, or to retain an original IRP if the SFD will reuse the IRP before completing it.
 
 Like any other higher-level driver, the [*IoCompletion*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine of an SFD is responsible for calling [**IoFreeIrp**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iofreeirp) to release any IRP the driver's *Dispatch* routines created with [**IoAllocateIrp**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocateirp) or [**IoBuildAsynchronousFsdRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuildasynchronousfsdrequest).
 

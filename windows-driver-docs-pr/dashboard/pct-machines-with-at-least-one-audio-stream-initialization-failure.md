@@ -25,8 +25,8 @@ See the "Audio stream initialization" section at [Audio measures](audio-measures
 ## Calculation
 
 1. The measure aggregates telemetry from a 7-day sliding window into a **percentage of machines that have at least one unexpected initialization failure**
-2. *Machines with itialization failure = Count(machines with at least one unexpected initialization failure)*
-3. *Total machines = Count(machines that attempted to initalizate an audio stream)*
+2. *Machines with initialization failure = Count(machines with at least one unexpected initialization failure)*
+3. *Total machines = Count(machines that attempted to initialize an audio stream)*
 
 ### Final calculation
 

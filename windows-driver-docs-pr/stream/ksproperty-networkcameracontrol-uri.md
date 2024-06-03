@@ -1,12 +1,12 @@
 ---
 title: KSPROPERTY_NETWORKCAMERACONTROL_URI
-description: Enables aquiring the stream URI payload from a Onvif protocol camera.
+description: Enables acquiring the stream URI payload from a Onvif protocol camera.
 ms.date: 10/05/2020
 ---
 
 # KSPROPERTY_NETWORKCAMERACONTROL_URI
 
-The KSPROPERTY_NETWORKCAMERACONTROL_URI property enables aquiring the stream URI payload from a Onvif protocol camera. The payload is a wide character null-terminated string representing the streaming URI (RSTP/HTTP URI).
+The KSPROPERTY_NETWORKCAMERACONTROL_URI property enables acquiring the stream URI payload from a Onvif protocol camera. The payload is a wide character null-terminated string representing the streaming URI (RSTP/HTTP URI).
 
 ## Usage summary table
 

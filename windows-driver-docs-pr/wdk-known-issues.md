@@ -13,6 +13,16 @@ ms.date: 12/16/2020
 
 This topic details known issues concerning the WDK.
 
+## WDK for Windows 11, version 24H2
+
+### Restart after provisioning
+
+After provisioning and deployment, the target machine fails to restart after the deployment steps. 
+
+### ARM64 WDK Driver SxS Support
+
+When both the Windows 11, version 24H2 kit and the Windows 11, version 22H2 kit are installed on an ARM64 machine, building a KMDF driver for ARM64 with **TargetPlatformVersion** set to Windows 11, version 22H2 fails with `WdfDriverEntry.lib(stub.obj) : error LNK2001: unresolved external symbol`.
+
 ## WDK for Windows 11, version 22H2
 
 ### Service error at startup
@@ -93,7 +103,7 @@ With both versions of kits installed on the same PC the ‘Deploy driver’ feat
 
 In WDK for Windows 10, version 1809, changes were made to WDTF in order to support this version of Windows 10, version 1809. The effect of this is that WDTF will no longer run on down-level OS. The change continues with WDK for Windows 10, version 2004.
 
-#### Alterative for down-level testing
+#### Alternative for down-level testing
 
 The WDTF tests in WDK for Windows 10, version 1803 can be run on previous Windows versions.
 

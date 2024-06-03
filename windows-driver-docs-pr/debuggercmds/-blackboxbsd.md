@@ -46,7 +46,7 @@ Auto advanced boot: FALSE
 Advanced boot menu timeout: 30
 Last boot succeeded: TRUE
 Last boot shutdown: FALSE
-Sleep in progrees: FALSE
+Sleep in progress: FALSE
 
 Power button timestamp: 0
 System running: TRUE

@@ -35,6 +35,24 @@
       href: what-s-new-for-windows-8-display-drivers.md
     - name: "What's new for Windows 7 display drivers (WDDM 1.1)"
       href: what-s-new-for-windows-7-display-drivers--wddm-1-1-.md
+  - name: "WDDM 3.2 features"
+    items:
+    - name: "Querying WDDM feature support and enablement"
+      href: querying-wddm-feature-support-and-enablement.md
+    - name: "Dirty bit tracking"
+      href: dirty-bit-tracking.md
+    - name: "Live migration on GPU-P devices"
+      href: live-migration-on-gpup-devices.md
+    - name: "Native GPU fence objects"
+      href: native-gpu-fence-objects.md
+    - name: "User-mode work submission"
+      href: user-mode-work-submission.md
+    - name: "TDR debuggability improvements"
+      href: tdr-debuggability-improvements.md
+    - name: "D3D12 AV1 video encoding"
+      href: video-encoding-d3d12-av1.md
+    - name: "Work graphs"
+      href: work-graphs.md
   - name: "WDDM 3.1 features"
     items:
     - name: "Sharing the backing store with KMD"
@@ -268,6 +286,8 @@
       href: seamless-state-transitions-in-wddm-1-2-and-later.md
     - name: "Standby hibernate optimizations"
       href: standby-hibernate-optimizations.md
+    - name: "DriverEntry of Display Miniport Driver"
+      href: driverentry-of-display-miniport-driver.md
     - name: "Initializing the Display Miniport Driver"
       href: initializing-the-display-miniport-driver.md
     - name: "Initializing Communication with the Direct3D User-Mode Display Driver"
@@ -2836,8 +2856,6 @@
           href: copp-video-miniport-driver-close-template-code.md
       - name: "DriverEntry of Video Miniport Driver"
         href: driverentry-of-video-miniport-driver.md
-      - name: "DriverEntry of Display Miniport Driver"
-        href: driverentry-of-display-miniport-driver.md
     - name: "DirectX VA Data Flow Management"
 # Auto-expanded node
       items: 

@@ -7,7 +7,7 @@ ms.date: 05/23/2017
 
 # Source Line Syntax
 
-You can specify source file line numbers as all or part of an MASM expression. These numbers evaluate to the offset of the executable code that corresponds to this source line.
+You can specify source file line numbers as all or part of a MASM expression. These numbers evaluate to the offset of the executable code that corresponds to this source line.
 
 **Note**   You cannot use source line numbers as part of a C++ expression. For more information about when MASM and C++ expression syntax is used, see [Evaluating Expressions](evaluating-expressions.md).
 

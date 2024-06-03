@@ -37,7 +37,7 @@ A miniport driver must support the following OIDs directly or in attributes for 
 
 -   [OID\_PNP\_SET\_POWER](./oid-pnp-set-power.md)
 
-    This OID indicates that the network adapter must transition to the indicated device power state. A miniport driver must set the network adapter to the specified state before the driver returns NDIS\_STATUS\_SUCCESS. A miniport driver must always return NDIS\_STATUS\_SUCCESS in response to this OID. If OID\_PNP\_SET\_POWER sets a network adapter to working power state and the miniport driver fails this OID, NDIS assumes that the device is in a unrecoverable state.
+    This OID indicates that the network adapter must transition to the indicated device power state. A miniport driver must set the network adapter to the specified state before the driver returns NDIS\_STATUS\_SUCCESS. A miniport driver must always return NDIS\_STATUS\_SUCCESS in response to this OID. If OID\_PNP\_SET\_POWER sets a network adapter to working power state and the miniport driver fails this OID, NDIS assumes that the device is in an unrecoverable state.
 
 To support network wake-up events, a miniport driver must also support the [OID\_PNP\_ENABLE\_WAKE\_UP](./oid-pnp-enable-wake-up.md) OID. Both protocol drivers and NDIS use this OID to enable a network adapter's wake-up capabilities. For more information, see [Enabling Wake-Up Events](enabling-wake-up-events.md).
 

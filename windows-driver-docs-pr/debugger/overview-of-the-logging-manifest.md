@@ -15,7 +15,7 @@ The logging manifest is the group of "header" files that define the functions an
 
 For example, the manifest format facilitates the following features:
 
--   Designation of OUT parameters. These are parameters that should be logged both on their way into an function and also on their way out.
+-   Designation of OUT parameters. These are parameters that should be logged both on their way into a function and also on their way out.
 
 -   Definition of flag masks. This feature allows LogViewer to break a DWORD flag into its constituent bit labels for easier reading.
 

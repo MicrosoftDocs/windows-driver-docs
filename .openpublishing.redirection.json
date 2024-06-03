@@ -4473,6 +4473,26 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "windows-driver-docs-pr/netcx/wdi-tlv-sae-commit-response.md",
+            "redirect_URL": "/windows-hardware/drivers/netcx/wdi-tlv-sae-commit-frame",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/netcx/wdi-tlv-sae-commit-request.md",
+            "redirect_URL": "/windows-hardware/drivers/netcx/wdi-tlv-sae-commit-params",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/netcx/wdi-tlv-sae-confirm-request.md",
+            "redirect_URL": "/windows-hardware/drivers/netcx/wdi-tlv-sae-confirm-params",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/netcx/wdi-tlv-sae-confirm-response.md",
+            "redirect_URL": "/windows-hardware/drivers/netcx/wdi-tlv-sae-confirm-frame",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/network/-ndis-status-dot11-wfd-group-operating-channel.md",
             "redirect_URL": "/previous-versions/windows/hardware/wireless/-ndis-status-dot11-wfd-group-operating-channel",
             "redirect_document_id": false
@@ -14939,6 +14959,56 @@
         {
             "source_path":  "windows-driver-docs-pr/audio/legacy-audio-interfaces.md",
             "redirect_URL":  "/windows-hardware/audio/driver-support-for-legacy-audio-interfaces",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/audio/iaudiosystemeffects2.md",
+            "redirect_URL":  "/windows-hardware/audio/iaudiosystemeffects",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/kernel/bulk-memory-volatile-accessor-functions-v3.md",
+            "redirect_URL":  "/windows-hardware/drivers/ddi/wdm/",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/kernel/nf-wdm-rtlcopydevicememory.md",
+            "redirect_URL":  "/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlcopydevicememory",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/kernel/nf-wdm-rtlcopyvolatilememory.md",
+            "redirect_URL":  "/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlcopyvolatilememory",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/kernel/nf-wdm-rtlfilldevicememory.md",
+            "redirect_URL":  "/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlfilldevicememory",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/kernel/nf-wdm-rtlfillvolatilememory.md",
+            "redirect_URL":  "/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlfillvolatilememory",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/kernel/nf-wdm-rtlmovevolatilememory.md",
+            "redirect_URL":  "/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlmovevolatilememory",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/kernel/nf-wdm-rtlsecurezeromemory2.md",
+            "redirect_URL":  "/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlsecurezeromemory2",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/kernel/nf-wdm-rtlzerodevicememory.md",
+            "redirect_URL":  "/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlzerodevicememory",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/kernel/nf-wdm-rtlzerovolatilememory.md",
+            "redirect_URL":  "/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlzerovolatilememory",
             "redirect_document_id":  false
         }
     ]

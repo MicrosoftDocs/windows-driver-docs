@@ -38,7 +38,7 @@ The security descriptor of the device is left as the OS or device class default.
 
 ## Reserved and Vendor IOCTL Codes
 
-The following table describes the reserved and vender specific control code ranges.
+The following table describes the reserved and vendor specific control code ranges.
 
 | Type            | Range Start                               | Range End                                 |
 |-----------------|-------------------------------------------|-------------------------------------------|

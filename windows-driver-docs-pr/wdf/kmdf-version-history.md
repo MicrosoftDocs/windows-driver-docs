@@ -16,7 +16,7 @@ The following table shows the release history of the KMDF library. You can use t
 
 | KMDF version | Initial release               | Included in                        | Drivers using this KMDF version run on                                 |
 |--------------|------------------------------|--------------------------------------------------------------|---------------------------------------------------------|
-| 1.33         | Windows 11, version 21H2 WDK; WDK for Windows Server 2022 | Windows 11, version 23H2; Windows 11, version 22H2; Windows 11, version 21H2; Windows Server 2022 | Windows 11, version 21H2 and later; Windows Server 2022 and later  |
+| 1.33         | Windows 11, version 21H2 WDK; WDK for Windows Server 2022 | Windows 11, version 24H2; Windows 11, version 23H2; Windows 11, version 22H2; Windows 11, version 21H2; Windows Server 2022 | Windows 11, version 21H2 and later; Windows Server 2022 and later  |
 | 1.31         | Windows 10, version 2004 WDK | Windows 10, version 2004                                     | Windows 10, version 2004 and later                      |
 | 1.29         | Not released in WDK          | Windows 10, version 1903                                     | Windows 10, version 1903 and later                      |
 | 1.27         | Windows 10, version 1809 WDK | Windows 10, version 1809                                     | Windows 10, version 1809 and later                      |

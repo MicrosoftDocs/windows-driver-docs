@@ -1,15 +1,26 @@
 ---
 title: Code Integrity Event Log Messages
 description: Code Integrity Event Log Messages
-ms.date: 06/07/2021
+ms.date: 05/21/2024
+ai-usage: ai-assisted
 ---
 
 # Code Integrity Event Log Messages
 
+Code Integrity enforces the requirement that kernel-mode drivers must be signed in order to load. Specifically, Code Integrity runs during the driver loading process in Windows.
+Whenever a kernel-mode driver is loaded, Code Integrity checks its digital signature to ensure it's valid and signed by an authorized entity.
+
+This page describes the various events that Code Integrity generates to report on the status of driver signing.
+
+You can use the **Event Viewer** to view Code Integrity events:
+
+1. Access the Event Viewer through Computer Management or by running `Eventvwr.exe` from the command line.
+1. Navigate to the following subfolders: `Applications and Services Logs->Microsoft->Windows->CodeIntegrity`.
+1. Right-click an entry to view event properties and get more information about specific Code Integrity events.
+
 > [!NOTE]
 > For a full list of Code Integrity event identifiers, see [Understanding Application Control events](/windows/security/threat-protection/windows-defender-application-control/event-id-explanations).
 > 
-
 
 The following are warning events that are logged to the Code Integrity operational log:
 

@@ -39,7 +39,7 @@ Each persistent symbolic link name in the database appears as the name of a regi
 
 For instance, a single volume with a unique volume name of <strong>"\\\\?\\Volume{</strong>7603f260-142a-11d4-ac67-806d6172696f **}\\"** might have an accompanying drive letter "\\DosDevices\\D:" and two mount points "\\DosDevices\\C:\\mymount" and "\\DosDevices\\E:\\FilesysD\\mnt". This would produce four entries in mount manager's persistent symbolic link name database: one for the unique volume name, one for the drive letter, and two for the two mount point names. All four entries would share the same unique id. Thus someone viewing the **MountedDevices** registry key would be able to detect that all four persistent names point to the same volume.
 
-The following acreen shot illustrates how persistent names appear in the **MountedDevices** registry key.
+The following screen shot illustrates how persistent names appear in the **MountedDevices** registry key.
 
 ![screen shot illustrating how persistent names appear in the mounteddevices registry key.](images/mntmgr.png)
 

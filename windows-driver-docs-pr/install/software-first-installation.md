@@ -8,13 +8,13 @@ keywords:
 - software-first installations WDK device installations
 - AutoRun-enabled installation applications WDK
 - device installations WDK , types
-ms.date: 04/20/2017
+ms.date: 05/31/2024
 ---
 
 # Software-First Installation
 
 
-A software-first installation involves the staging and preinstallation of your [driver package](driver-packages.md) on the system before the hardware device is plugged in. After the device is plugged in, the driver from the driver package is installed.
+A software-first installation involves copying a driver package to the [Driver Store](./driver-store.md) ("staging") and preinstallation of your [driver package](driver-packages.md) on the system before the hardware device is plugged in. After the device is plugged in, the driver from the driver package is installed.
 
 If the user inserts your distribution medium before plugging in the device, an AutoRun-enabled installation application can:
 

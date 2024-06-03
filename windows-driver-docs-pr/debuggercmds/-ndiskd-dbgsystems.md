@@ -17,7 +17,7 @@ api_type:
 The **!ndiskd.dbgsystems** extension displays and optionally changes the NDIS subsystems that have debug traces enabled.
 
 **Warning**  
-**!ndiskd.dbgsystems** has been superceded by WPP (Windows software trace preprocessor) and Driver Verifier. !ndiskd will give you the following warning if your target system does not support **!ndiskd.dbgsystems**.
+**!ndiskd.dbgsystems** has been superseded by WPP (Windows software trace preprocessor) and Driver Verifier. !ndiskd will give you the following warning if your target system does not support **!ndiskd.dbgsystems**.
 
 ```console
 0: kd> !ndiskd.dbgsystems

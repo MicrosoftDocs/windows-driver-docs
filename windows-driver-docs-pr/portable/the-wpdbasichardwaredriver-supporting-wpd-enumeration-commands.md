@@ -43,7 +43,7 @@ VOID WpdObjectEnumerator::InitializeEnumerationContext(
 
     // Our sample driver has a very simple object structure where we know
     // how many children are under each parent.
-    // The eumeration context is initialized below with this information.
+    // The enumeration context is initialized below with this information.
     if (strParentObjectID.CompareNoCase(L"") == 0)
     {
         // Clients passing an 'empty' string for the parent are asking for the

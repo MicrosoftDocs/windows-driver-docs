@@ -6,12 +6,12 @@ keywords:
 - WDK
 - Download
 - drivers
-ms.date: 03/06/2024
+ms.date: 05/28/2024
 ---
 
 # Download the Windows Driver Kit (WDK)
 
-The WDK is used to develop, test, and deploy drivers for Windows. The most recent public release is WDK 10.0.22621.
+The WDK is used to develop, test, and deploy drivers for Windows. The most recent public release is WDK 10.0.26100.1
 
 * You can install and run this WDK on Windows 7 and later.
 * You can use this kit to build drivers for Windows 10, Windows Server 2016 and later client and server versions.
@@ -19,6 +19,14 @@ The WDK is used to develop, test, and deploy drivers for Windows. The most recen
 To target Windows 8.1, Windows 8, and Windows 7, install an older WDK and an older version of Visual Studio either on the same machine or on a separate machine. For links to older kits, see [Other WDK downloads](./other-wdk-downloads.md).
 
 [Join the Windows Insider Program](https://insider.windows.com/) to get [WDK Insider Preview builds](https://aka.ms/wipwdk). For installation instructions for the Windows Insider Preview builds, see [Installing preview versions of the Windows Driver Kit (WDK)](./installing-preview-versions-wdk.md).
+
+## WDK NuGet package support - New in version 10.0.26100.1
+
+The WDK NuGet package consists of essential libraries, headers, DLL, tools, and metadata used for building Windows drivers that can be shared and supported by modern CI/CD pipelines. Users can access and consume the NuGet packages directly from nuget.org within Visual Studio. Using NuGet with the WDK provides a convenient solution for WDK acquisition and updates. It manages dependencies such as the SDK, to help keep the driver development tool chain up to date. For more information, see [Install the latest WDK using NuGet - Step by Step](install-the-wdk-using-nuget.md#install-the-latest-wdk-using-nuget---step-by-step). 
+
+## ARM64 support - New in version 10.0.26100.1
+
+Starting with WDK version 10.0.26100.1, the WDK now supports development, testing and deployment of drivers on ARM64 machines. The WDK/EWDK can be installed and run natively on ARM64 hardware, in addition to the previously supported emulation of x86 KMDF/UMDF2 drivers on ARM64 hardware. There is also support for debugging and deployment of drivers to an ARM64 target machine from both ARM64 and x64 host machines. The process of installing WDK/EWDK on ARM64 machines will automatically identify and install all the necessary dependencies including build tools, binaries, and libraries.
 
 ## ![download icon for Visual Studio](images/download-install.png) Step 1: Install Visual Studio 2022
 
@@ -43,34 +51,34 @@ Hint: Use the Search box to look for "64 latest spectre" (in English installatio
 
 ![Image showing the six components listed above with checkboxes set](images/installing-VS-components-64-latest-spectre.png)
 
-Note: The **Desktop development with C++** workload selected above also installs the Windows SDK 10.0.22621.
+Note: The **Desktop development with C++** workload selected above does not install the Windows SDK 10.0.26100.1.
 
 ## ![download icon for SDK](images/download-install.png) Step 2: Install SDK
 
-Installing Visual Studio should automatically download the Windows SDK 10.0.22621. In the event that it does not, use the following link:
+Installing Visual Studio will not download the Windows SDK 10.0.26100.1, use the following link:
 
-* [Download Windows SDK 10.0.22621](https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/)
+* [Download Windows SDK 10.0.26100.1](https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/)
 
 The provided links for the SDK and the WDK have matching build numbers, which is always required for the kits to work together. If you decide to install your own SDK/WDK pair, perhaps for a different Windows version, ensure that the build numbers match. For more details, see [Kit versioning](#kit-versioning).
 
 ## ![download icon for WDK](images/download-install.png) Step 3: Install WDK
 
-* [Download WDK 10.0.22621](https://go.microsoft.com/fwlink/?linkid=2249371)
+* [Download WDK 10.0.26100.1](https://go.microsoft.com/fwlink/?linkid=2272234)
 
 The WDK Visual Studio extension is included in the default WDK installation.
 
 > [!TIP]
-> If you can't find driver project templates in Visual Studio, the WDK Visual Studio extension didn't install properly. To resolve this, run the WDK.vsix file from this location: C:\Program Files (x86)\Windows Kits\10\Vsix\VS2022\10.0.22621.2428\WDK.vsix.
+> If you can't find driver project templates in Visual Studio, the WDK Visual Studio extension didn't install properly. To resolve this, run the WDK.vsix file from this location: C:\Program Files (x86)\Windows Kits\10\Vsix\VS2022\10.0.26100.1\WDK.vsix.
 
 ## ![download icon for EWDK](images/download-install.png) Enterprise WDK (EWDK)
 
 As an alternative to downloading Visual Studio, the SDK, and the WDK, you can download the EWDK, which is a standalone, self-contained command-line environment for building drivers. It includes Visual Studio Build Tools, the SDK, and the WDK.
 
-The latest public version of the EWDK contains Visual Studio 2022 Build Tools 17.1.5 and MSVC toolset v14.31.
+The latest public version of the EWDK contains Visual Studio 2022 Build Tools 17.8.6 and MSVC toolset v14.38
 
 The EWDK also requires the .NET Framework version 4.7.2. For more information about other requirements for the .NET Framework, see [.NET Framework system requirements](/dotnet/framework/get-started/system-requirements).
 
-* [Download EWDK 10.0.22621 with Visual Studio Build Tools](/legal/windows/hardware/enterprise-wdk-license-2022)
+* [Download EWDK 10.0.26100.1 with Visual Studio Build Tools](/legal/windows/hardware/enterprise-wdk-license-2022)
 
 Once you have downloaded the ISO, use these steps to set up your build environment:
 

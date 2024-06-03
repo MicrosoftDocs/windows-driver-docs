@@ -115,7 +115,7 @@ This parameter allows the storage provider to return extended (implementation-sp
 **Access Denied** (40001)
  
 
-**An unexpected I/O error has occured** (40004)
+**An unexpected I/O error has occurred** (40004)
  
 
 **The specified file system is not supported** (43001)
@@ -130,16 +130,16 @@ This parameter allows the storage provider to return extended (implementation-sp
 **The scan failed** (43008)
  
 
-**A snapshot error occured while scanning this drive. You can try again, but if this problem persists, run an offline scan and fix.** (43009)
+**A snapshot error occurred while scanning this drive. You can try again, but if this problem persists, run an offline scan and fix.** (43009)
  
 
 **A scan is already running on this drive. Chkdsk can not run more than one scan on a drive at a time.** (43010)
  
 
-**A snapshot error occured while scanning this drive. You can try again, but if this problem persists, run an offline scan and fix.** (43011)
+**A snapshot error occurred while scanning this drive. You can try again, but if this problem persists, run an offline scan and fix.** (43011)
  
 
-**A snapshot error occured while scanning this drive. Run an offline scan and fix.** (43012)
+**A snapshot error occurred while scanning this drive. Run an offline scan and fix.** (43012)
  
 
 **Cannot open drive for direct access** (43013)

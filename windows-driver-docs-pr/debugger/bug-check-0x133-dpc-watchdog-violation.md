@@ -82,7 +82,7 @@ Use the following debugger commands to gather more information for failures with
 
 [**k (Display Stack Backtrace)**](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) to look at what code was running when the stop code occurred.
 
-You may want to use the u, ub, uu (Unassemble) command to look deeper into the specifics of a the code that was running.
+You may want to use the u, ub, uu (Unassemble) command to look deeper into the specifics of the code that was running.
 
 The [**!pcr**](../debuggercmds/-pcr.md) extension displays the current status of the Processor Control Region (PCR) on a specific processor. In the output will be the address of the Prcb
 

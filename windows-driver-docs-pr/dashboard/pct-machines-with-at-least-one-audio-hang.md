@@ -26,7 +26,7 @@ See "Audio user-mode reliability" on [Audio measures](audio-measures.md)
 
 1. The measure aggregates telemetry from a 7-day sliding window into a **percentage of machines that have at least one audio hang in AudioSrv.dll or AudioDG.exe**.
 2. *Hanging machines = count (machines with at least 1 hang in AudioSrv.dll or AudioDG.exe)*
-3. *Total machines = count (machines that successfully initialzed at least one audio stream)*
+3. *Total machines = count (machines that successfully initialized at least one audio stream)*
 
 ### Final calculation
 

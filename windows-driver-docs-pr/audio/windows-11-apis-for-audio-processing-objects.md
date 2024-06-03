@@ -810,7 +810,7 @@ public:
 private:
     wil::com_ptr_nothrow<IMMDevice> m_device;
 
-    // Each APO has its own private collection of properties. The collection is dentified through a
+    // Each APO has its own private collection of properties. The collection is identified through a
     // a property store context GUID, which is defined below and in the audio driver INF file.
     const GUID m_propertyStoreContext = ...;
 

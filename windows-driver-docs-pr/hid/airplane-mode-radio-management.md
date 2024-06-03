@@ -16,7 +16,7 @@ Windows provides support for the following HID Usages on the Generic Desktop usa
 
 | Usage ID | Usage Name                   | Usage Type                 |
 |----------|------------------------------|----------------------------|
-| 0x000C   | Wireless Radio Controlls     | CollectionApplication (CA) |
+| 0x000C   | Wireless Radio Controls      | CollectionApplication (CA) |
 | 0x00C6   | Wireless Radio Button        | On/Off Control (OOC)       |
 | 0x00C7   | Wireless Radio LED           | On/Off Control (OOC)       |
 | 0x00C8   | Wireless Radio Slider Switch | On/Off Control (OOC)       |

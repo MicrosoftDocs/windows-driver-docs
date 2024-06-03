@@ -16,7 +16,7 @@ ms.date: 07/13/2021
 
 # KSPROPERTY_CAMERACONTROL_EXTENDED_EXPOSUREMODE
 
-The exposure control property specifies the whether auto processing occurs for exposure or a manual time value is used instead.
+The exposure control property specifies whether the auto processing occurs for exposure or a manual time value is used instead.
 
 ## Usage Summary Table
 

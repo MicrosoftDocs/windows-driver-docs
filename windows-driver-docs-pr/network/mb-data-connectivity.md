@@ -20,7 +20,7 @@ ms.custom: UpdateFrequency3
 - [MB data connectivity troubleshooting guide](#mb-data-connectivity-troubleshooting-guide)
 
 ## Cellular Architecture in Windows
-The main componment of the cellular stack in the OS is **WWAN Service (WwanSvc)** which controls and sets up all the data connection, states, and events.
+The main component of the cellular stack in the OS is **WWAN Service (WwanSvc)** which controls and sets up all the data connection, states, and events.
 It interacts with a couple of client drivers to enable activities across the OS.
 
 :::image type="content" source="images/mb-wwansvc-external-interaction-diag.png" alt-text="Diagram of WWAN Service external interactions with components.":::
@@ -265,7 +265,7 @@ The file showing the HLK test results should have been generated in the director
 ## MB data connectivity troubleshooting guide
 1. Logs can be collected and decoded using these instructions: [MB Collecting Logs](mb-collecting-logs.md)
 1. Open the .txt file in [TextAnalysisTool](mb-analyzing-logs.md)
-1. Load the [Bacis Connectivity filter](mb-basic-connectivity-tat.md)
+1. Load the [Basic Connectivity filter](mb-basic-connectivity-tat.md)
 
 ### Sample log for disconnect success:
 ```
@@ -319,7 +319,7 @@ TraceLog	Microsoft-Windows-WWAN-SVC-EVENTS	25:16.1	"FunctionCall: 	CWwanDefaultC
 TraceLog	Microsoft-Windows-WWAN-SVC-EVENTS	25:16.1	"FunctionCall: 	CWwanDefaultContextController::IsAllowedByRoamingPolicies Message: 	return TRUE"
 TraceLog	Microsoft-Windows-WWAN-SVC-EVENTS	25:16.1	"FunctionCall: 	CWwanDataExecutor::DisconnectMatchingAdditionalPdpContexts Message: 	""Looking for APN: microsoft.com, IPType: 0"""
 TraceLog	Microsoft-Windows-WWAN-SVC-EVENTS	25:16.1	"FunctionCall: 	CWwanDataResourceManager::CheckResourceMaxContextCountByOEM Message: 	non-CDMA"
-TraceLog	Microsoft-Windows-WWAN-SVC-EVENTS	25:16.1	"FunctionCall: 	CWwanDataResourceManager::CheckResourceMaxContextCountByOEM Message: 	""per IMSI OEM configred MaxNumberOfPDPContexts not found, trying device settings."""
+TraceLog	Microsoft-Windows-WWAN-SVC-EVENTS	25:16.1	"FunctionCall: 	CWwanDataResourceManager::CheckResourceMaxContextCountByOEM Message: 	""per IMSI OEM configured MaxNumberOfPDPContexts not found, trying device settings."""
 TraceLog	Microsoft-Windows-WWAN-SVC-EVENTS	25:16.1	"FunctionCall: 	CWwanDataResourceManager::CheckResourceMaxContextCountByOEM Message: 	""device OEM configred MaxNumberOfPDPContexts not found, using default settings."""
 TraceLog	Microsoft-Windows-WWAN-SVC-EVENTS	25:16.1	"FunctionCall: 	CWwanDataResourceManager::SetPdpContextsOEMConfigured Message: 	OEMConfig using 8"
 TraceLog	Microsoft-Windows-WWAN-SVC-EVENTS	25:16.1	"FunctionCall: 	CWwanDataResourceManager::UpdatePdpContexts Message: 	""OEMConfiged 8, Modem supports 17, using 8"""

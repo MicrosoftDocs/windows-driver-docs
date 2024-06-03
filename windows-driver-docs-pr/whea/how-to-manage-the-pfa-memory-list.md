@@ -56,7 +56,7 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WHEA
     BadPages    REG_BINARY    000000000000000058140280000000005C1B0280000000007C30038000000000E2BBFC8000000000AF52188000F00F00
 ```
 
-You can use PowerShell to parse the registry data and ouput a list using the following script:
+You can use PowerShell to parse the registry data and output a list using the following script:
 
 ```powershell
 $whea = Get-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\WHEA"

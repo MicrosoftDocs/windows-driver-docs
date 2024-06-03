@@ -331,7 +331,7 @@ SystemRegisterDecoding | if “yes”, then the GDB client accepts decoding the 
 ExdiGdbServerRegisters | Specifies the specific architecture register core set.
 Architecture | CPU architecture of the defined registers set.
 FeatureNameSupported | This is the name of the system register group as it’s provided by the xml system register description file. It’s needed to identify the system register xml group that is part of the xml file as it’s sent by the GDB server.
-SystemRegistersStart | This is to identify the first system register (low register number/order) that is reported as part of the core register set (e.g. on X64, QEMU does not report the x64 system register set as a separated xml target desciption file, so system regs are part of the core registers).
+SystemRegistersStart | This is to identify the first system register (low register number/order) that is reported as part of the core register set (e.g. on X64, QEMU does not report the x64 system register set as a separated xml target description file, so system regs are part of the core registers).
 SystemRegistersEnd | This is to identify the last system register (high register number/order) that that is reported as part of the core register set.
 Name | Name of the register.
 Order | This is a number that identifies the index in the array of registers. This number will be used by the GDB client and server set/query (`p<number>”/”q<number>`) register packets.

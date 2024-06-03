@@ -8,7 +8,7 @@ api_name:
 - IRP_MJ_WRITE
 api_type:
 - NA
-ms.date: 03/13/2023
+ms.date: 05/29/2024
 ms.topic: reference
 ---
 
@@ -62,16 +62,18 @@ A file system or filter driver calls [**IoGetCurrentIrpStackLocation**](/windows
 
 - **IrpSp->MajorFunction** is set to IRP_MJ_WRITE.
 
-- **IrpSp->MinorFunction** specifies the operation being requested and contains one of the following:
+- **IrpSp->MinorFunction** specifies the operation being requested and contains one of the following values. If a minor function code isn't specified, the operation is a standard write (equivalent to IRP_MN_NORMAL).
 
-  - IRP_MN_COMPLETE
-  - IRP_MN_COMPLETE_MDL
-  - IRP_MN_COMPLETE_MDL_DPC
-  - IRP_MN_COMPRESSED
-  - IRP_MN_DPC
-  - IRP_MN_MDL
-  - IRP_MN_MDL_DPC
-  - IRP_MN_NORMAL
+  | MinorFunction | Description |
+  |---------------|-------------|
+  | IRP_MN_NORMAL | The write request is for a standard write operation |
+  | IRP_MN_DPC    | The write request is from a DPC routine |
+  | IRP_MN_MDL    | Returns an MDL that describes the file's cached data in **Irp->MdlAddress**; the caller uses this MDL to write data directly to the cache |
+  | IRP_MN_COMPLETE | Indicates completion of a standard write operation |
+  | IRP_MN_COMPRESSED | The write request is for a compressed file |
+  | IRP_MN_MDL_DPC | The write request is from a DPC routine and returns an MDL that describes the file's cached data in **Irp->MdlAddress** |
+  | IRP_MN_COMPLETE_MDL | Indicates that the caller, who used the MDL to write data directly to the cache, has finished using the MDL |
+  | IRP_MN_COMPLETE_MDL_DPC | Indicates that the caller, who used the MDL to write data directly to the cache, has finished using the MDL; the write request is from a DPC routine |
 
 - **IrpSp->Parameters.Write.ByteOffset** is a LARGE_INTEGER variable that specifies the starting byte offset within the file of the data to be written.
 

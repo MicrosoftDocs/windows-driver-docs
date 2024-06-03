@@ -34,7 +34,7 @@ The **Device Metadata Authoring Wizard** is used to create new device metadata.
 
 1. On the **Specify the locales** page, select at least one locale that should be associated with the device metadata package. You can also set a default locale that is used when a locale-specific package is not available on the computer. Click **Next**.
 
-1. On the **Describe the device** page, enter the info that is shown to end users that plug in your device. A model name and manufacturer is required for a each locale.
+1. On the **Describe the device** page, enter the info that is shown to end users that plug in your device. A model name and manufacturer is required for each locale.
 
 1. On the **Specify the hardware information** page, add at least one hardware ID and one model ID. The hardware ID should include the vendor ID for your company. The model ID is a GUID and is the recommended way to associate device metadata with devices that support a model ID. Click **Next**.
 

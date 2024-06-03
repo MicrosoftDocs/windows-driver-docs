@@ -7,6 +7,8 @@
     href: camera-privacy-controls.md
   - name: "Privacy shutter/switch notification"
     href: privacy-shutter-notification.md
+  - name: "Privacy shutter replacement image"
+    href: privacy-shutter-replacement-image.md
 - name: "Background segmentation portrait mode and eye gaze stare mode driver sample"
 # Auto-expanded node
   items: 
@@ -1645,6 +1647,12 @@
       href: ksproperty-cameracontrol-extended-videotemporaldenoising.md
     - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_ZOOM"
       href: ksproperty-cameracontrol-extended-zoom.md
+    - name: "KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_CAPABILITY"
+      href: ksproperty-cameracontrol-perframesetting-capability.md
+    - name: "KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_CLEAR"
+      href: ksproperty-cameracontrol-perframesetting-clear.md
+    - name: "KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_SET"
+      href: ksproperty-cameracontrol-perframesetting-set.md
     - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_BACKGROUNDSEGMENTATION"
       href: ksproperty-cameracontrol-extended-backgroundsegmentation.md
     - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_EYEGAZECORRECTION"
@@ -1653,12 +1661,10 @@
       href: ksproperty-cameracontrol-extended-digitalwindow.md
     - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_DIGITALWINDOW_CONFIGCAPS"
       href: ksproperty-cameracontrol-extended-digitalwindow-configcaps.md
-    - name: "KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_CAPABILITY"
-      href: ksproperty-cameracontrol-perframesetting-capability.md
-    - name: "KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_CLEAR"
-      href: ksproperty-cameracontrol-perframesetting-clear.md
-    - name: "KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_SET"
-      href: ksproperty-cameracontrol-perframesetting-set.md
+    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_FIELDOFVIEW2"
+      href: ksproperty-cameracontrol-extended-fieldofview2.md
+    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_FIELDOFVIEW2_CONFIGCAPS"
+      href: ksproperty-cameracontrol-extended-fieldofview2-configcaps.md
   - name: "PROPSETID_VIDCAP_CROSSBAR"
 # Auto-expanded node
     items: 

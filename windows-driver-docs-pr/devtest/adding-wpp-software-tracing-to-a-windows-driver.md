@@ -158,7 +158,7 @@ You can also convert existing debug print statements to trace messages statement
 ```cpp
 //
 // This comment block is scanned by the trace preprocessor to define the
-// TraceEvents function and conversion for KdPrint. Note the double parentheses for the KdPrint message, for compatiblility with the KdPrint function.
+// TraceEvents function and conversion for KdPrint. Note the double parentheses for the KdPrint message, for compatibility with the KdPrint function.
 //
 // begin_wpp config
 // FUNC TraceEvents(LEVEL, FLAGS, MSG, ...);

@@ -1,7 +1,7 @@
 ---
 title: Audio Signal Processing Modes
 description: Drivers declare the supported audio signal processing modes for each device.
-ms.date: 05/14/2018
+ms.date: 05/22/2024
 ---
 
 # Audio Signal Processing Modes
@@ -18,8 +18,8 @@ Audio categories (selected by applications) are mapped to audio modes (defined b
 |Default|Both|This mode defines the default audio processing.|
 |Movies*|Render|Movie audio playback|
 |Media*|Both|Music audio playback (default for most media streams)|
-|Speech*|Capture|Human voice capture (e.g. input to Cortana)|
-|Communications*|Both|VOIP render and capture (e.g. Skype, Lync)|
+|Speech*|Capture|Human voice capture (e.g. input to personal assistant)|
+|Communications*|Both|VOIP render and capture (e.g. Teams, Skype, Lync)|
 |Notification*|Render|Ringtones, alarms, alerts, etc.|
 
 \* New in Windows 10.
@@ -36,7 +36,7 @@ The following diagram shows a system that supports multiple modes:
 
 ## Windows Audio Stream Categories
 
-In order to inform the system about the usage of an audio stream, applications have the option to tag the stream with a specific audio stream category. Applications can set the audio category, using any of the audio APIs, just after creating the audio stream. In Windows 10 there are nine audio stream categories.
+In order to inform the system about the usage of an audio stream, applications have the option to tag the stream with a specific audio stream category. Applications can set the audio category, using any of the audio APIs, just after creating the audio stream. In Windows, there are nine audio stream categories.
 
 |Category|Description|
 |----|----|
@@ -46,7 +46,7 @@ In order to inform the system about the usage of an audio stream, applications h
 | Speech         | Speech input (e.g. personal assistant) and output (e.g. navigation apps) (New category in Windows 10) |
 | Communications | VOIP, real-time chat                                                                                  |
 | Alerts         | Alarm, ring tone, notifications                                                                       |
-| Sound Effects  | Beeps, dings, etc                                                                                     |
+| Sound Effects  | Beeps, dings, etc.                                                                                    |
 | Game Media     | In game music                                                                                         |
 | Game Effects   | Balls bouncing, car engine sounds, bullets, etc.                                                      |
 | Other          | Uncategorized streams                                                                                 |
@@ -118,7 +118,7 @@ For more information about the static audio stream categories, see [AudioCategor
 
 ### FX\_DISCOVER\_EFFECTS\_APO\_CLSID
 
-This is the CLSID for the MsApoFxProxy.dll “proxy effect” which queries the driver to get the list of active effects;
+This is the CLSID for the MsApoFxProxy.dll "proxy effect", which queries the driver to get the list of active effects;
 
 ```cpp
 FX_DISCOVER_EFFECTS_APO_CLSID  = "{889C03C8-ABAD-4004-BF0A-BC7BB825E166}"
@@ -136,7 +136,7 @@ DEFINE_GUIDSTRUCT("E1F89EB5-5F46-419B-967B-FF6770B98401", KSATTRIBUTEID_AUDIOSIG
 #define KSATTRIBUTEID_AUDIOSIGNALPROCESSING_MODE DEFINE_GUIDNAMED(KSATTRIBUTEID_AUDIOSIGNALPROCESSING_MODE)
 ```
 
-KSATTRIBUTEID\_AUDIOSIGNALPROCESSING\_MODE is used to by mode aware drivers with a [**KSDATARANGE**](/previous-versions/ff561658(v=vs.85)) structure which contain a [**KSATTRIBUTE\_LIST**](/windows-hardware/drivers/ddi/ks/ns-ks-ksattribute_list). This list has a single element in it which is a [**KSATTRIBUTE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksattribute). The Attribute member of the **KSATTRIBUTE** structure is set to KSATTRIBUTEID\_AUDIOSIGNALPROCESSING\_MODE.
+KSATTRIBUTEID\_AUDIOSIGNALPROCESSING\_MODE is used to by mode aware drivers with a [**KSDATARANGE**](/previous-versions/ff561658(v=vs.85)) structure which contain a [**KSATTRIBUTE\_LIST**](/windows-hardware/drivers/ddi/ks/ns-ks-ksattribute_list). This list has a single element in it, which is a [**KSATTRIBUTE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksattribute). The Attribute member of the **KSATTRIBUTE** structure is set to KSATTRIBUTEID\_AUDIOSIGNALPROCESSING\_MODE.
 
 ## Audio Effects
 
@@ -145,7 +145,8 @@ The following audio effects are available for use in Windows 10.
 |Audio effect|Description|
 |----|----|
 |Acoustic Echo Cancellation (AEC)|Acoustic Echo Cancellation (AEC) improves audio quality by removing echo, after it after it is already present in the audio stream.|
-|Noise Suppression (NS)|Noise Suppression (NS) suppresses noise such as humming and buzzing, when it is present in the audio stream.|
+|Noise Suppression (NS)|Simple Noise Suppression (NS) suppresses noise such as humming and buzzing, when it is present in the audio stream.|
+|Deep Noise Suppression| Deep Noise Suppression uses advanced AI / machine learning techniques to suppress noise particularly in voice calls.|
 |Automatic Gain Control (AGC)|Automatic Gain Control (AGC) - is designed to provide a controlled signal amplitude at its output, despite variation of the amplitude in the input signal. The average or peak output signal level is used to dynamically adjust the input-to-output gain to a suitable value, enabling a stable level of output, even with a wide range of input signal levels.|
 |Beam Forming (BF)|Beam Forming (BF) is a signal processing technique used for directional signal transmission or reception. This is achieved by combining elements in a phased array in such a way that signals at particular angles experience constructive interference while others experience destructive interference. The improvement compared with omnidirectional reception/transmission is known as the receive/transmit gain (or loss).|
 |Constant Tone Removal|Constant tone removal is used to attenuate constant background noise such as tape hiss, electric fans or hums.|
@@ -307,3 +308,21 @@ DYNAMIC RANGE COMPRESSION
 DEFINE_GUIDSTRUCT("6f64adce-8211-11e2-8c70-2c27d7f001fa", AUDIO_EFFECT_TYPE_DYNAMIC_RANGE_COMPRESSION);
 #define AUDIO_EFFECT_TYPE_DYNAMIC_RANGE_COMPRESSION DEFINE_GUIDNAMED(AUDIO_EFFECT_TYPE_DYNAMIC_RANGE_COMPRESSION)
 ```
+
+## Deep Noise Suppression
+
+Starting in Windows 11, version 24H2, a new GUID is available to enable Deep Noise Suppression.
+
+There are two identifiers for noise suppression effects. There is an existing identifier for Noise Suppression and the new identifier that is added for Deep Noise Suppression. The former is for ‘low’ (simple) noise suppression while the latter is ‘high’ and is implemented as an AI/machine learning solution. As with all the audio effects available, it is up to the application to choose which one they might want to use, depending on their needs and particular scenarios.
+
+```cpp
+#define STATIC_AUDIO_EFFECT_TYPE_DEEP_NOISE_SUPPRESSION 0x6f64add0, 0x8211, 0x11e2, 0x8c, 0x70, 0x2c, 0x27, 0xd7, 0xf0, 0x01, 0xfa
+
+DEFINE_GUIDSTRUCT("6f64add0-8211-11e2-8c70-2c27d7f001fa", AUDIO_EFFECT_TYPE_DEEP_NOISE_SUPPRESSION);
+
+#define AUDIO_EFFECT_TYPE_DEEP_NOISE_SUPPRESSION DEFINE_GUIDNAMED(AUDIO_EFFECT_TYPE_DEEP_NOISE_SUPPRESSION)
+```
+
+Audio effects, such as Deep Noise Suppression, are implemented as an Audio Processing Object - APO. For more information, see [Windows Audio Processing Objects](windows-audio-processing-objects.md).
+
+The APO needs to implement the `IAudioSystemEffects3` interface if it is going to expose effects whose state can be dynamically turned on or off. For more information, see [IAudioSystemEffects3 interface (audioengineextensionapo.h)](/windows/win32/api/audioengineextensionapo/nn-audioengineextensionapo-iaudiosystemeffects3).
