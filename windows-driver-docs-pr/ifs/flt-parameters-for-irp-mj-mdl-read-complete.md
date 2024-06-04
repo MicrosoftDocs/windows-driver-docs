@@ -45,7 +45,7 @@ IRP_MJ_MDL_READ_COMPLETE is a fast I/O operation. It does the same thing as [IRP
 
 The [**FLT_PARAMETERS**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters) structure for IRP_MJ_MDL_READ_COMPLETE operations contains the parameters for a fast I/O [**MdlReadComplete**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_fast_io_dispatch) operation. The operation is represented by a ([**FLT_CALLBACK_DATA**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)) structure, with the operation's parameters in the [**FLT_IO_PARAMETER_BLOCK**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block) structure that **Iopb** points to.
 
-If a fast I/O IRP_MJ_MDL_READ_COMPLETE request fails, the issuer of the I/O determines how to reissue the request. A minifilter might not always get an IRP-based IRP_MJ_MDL_READ_COMPLETE. For instance, the IRP request could be reissued as [IRP_MJ_READ](irp-mj-read.md) + IRP_MN_COMPLETE_MDL.
+If a fast I/O IRP_MJ_MDL_READ_COMPLETE request fails, the issuer of the I/O determines how to reissue the request. For instance, the request could be reissued as an IRP-based operation using [IRP_MJ_READ](irp-mj-read.md) + IRP_MN_COMPLETE_MDL.
 
 ## Requirements
 

@@ -16,7 +16,7 @@ ms.topic: reference
 
 ## When Sent
 
-The I/O Manager or a file system driver sends the IRP_MJ_WRITE request. This request can be sent, for example, when a user-mode application has called a Win32 function such as **WriteFile** or when a kernel-mode component has called [**ZwWriteFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntwritefile).
+The I/O Manager or a file system driver sends the IRP_MJ_WRITE request. This request can be sent, for example, when a user-mode application calls a Win32 function such as **WriteFile** or when a kernel-mode component calls [**ZwWriteFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntwritefile).
 
 ## Operation: File System Drivers
 
@@ -69,11 +69,11 @@ A file system or filter driver calls [**IoGetCurrentIrpStackLocation**](/windows
   | IRP_MN_NORMAL | The write request is for a standard write operation |
   | IRP_MN_DPC    | The write request is from a DPC routine |
   | IRP_MN_MDL    | Returns an MDL that describes the file's cached data in **Irp->MdlAddress**; the caller uses this MDL to write data directly to the cache |
-  | IRP_MN_COMPLETE | Indicates completion of a standard write operation |
+  | IRP_MN_COMPLETE | Not used by itself; only occurs in combination with at least IRP_MN_MDL. See Remarks. |
   | IRP_MN_COMPRESSED | The write request is for a compressed file |
   | IRP_MN_MDL_DPC | The write request is from a DPC routine and returns an MDL that describes the file's cached data in **Irp->MdlAddress** |
-  | IRP_MN_COMPLETE_MDL | Indicates that the caller, who used the MDL to write data directly to the cache, has finished using the MDL |
-  | IRP_MN_COMPLETE_MDL_DPC | Indicates that the caller, who used the MDL to write data directly to the cache, has finished using the MDL; the write request is from a DPC routine |
+  | IRP_MN_COMPLETE_MDL | Indicates that the caller, who used the MDL to write data directly to the cache, finished using the MDL |
+  | IRP_MN_COMPLETE_MDL_DPC | Indicates that the caller, who used the MDL to write data directly to the cache, finished using the MDL; the write request is from a DPC routine |
 
 - **IrpSp->Parameters.Write.ByteOffset** is a LARGE_INTEGER variable that specifies the starting byte offset within the file of the data to be written.
 
@@ -85,7 +85,21 @@ A file system or filter driver calls [**IoGetCurrentIrpStackLocation**](/windows
 
 ## Remarks
 
-File systems round write and read operations at end of file up to a multiple of the sector size of the underlying file storage device. When filters process pre-read or pre-write operations, those filters that allocate and swap buffers need to round up the size of an allocated buffer to a multiple of the sector size of the associated device. If they don't, the length of data transferred from the underlying file system will exceed the allocated length of the buffer. For more information about swapping buffers, see [swapBuffers Minifilter Sample](/samples/browse/).
+File systems round write and read operations at end of file up to a multiple of the sector size of the underlying file storage device. When filters process preread or prewrite operations, those filters that allocate and swap buffers need to round up the size of an allocated buffer to a multiple of the sector size of the associated device. If they don't, the length of data transferred from the underlying file system exceeds the allocated length of the buffer. For more information about swapping buffers, see [swapBuffers Minifilter Sample](/samples/browse/).
+
+The following bullets describe a standard write versus an IRP-based MDL write:
+
+- To perform a standard write:
+
+  1. The issuer constructs an IRP with **MajorFunction** = IRP_MJ_WRITE, **MinorFunction** = IRP_MN_NORMAL (that is, 0) and provides the data to write in **Irp->AssociatedIrp.SystemBuffer**.
+  2. When they send the IRP to the file system, the data to write is already in the IRP. So the write is complete when the file system finishes processing the IRP; for example, by copying the data from the buffer to the cache for a cached write.
+
+- To perform an IRP-based MDL write:
+  1. The issuer constructs an IRP with **MajorFunction** = IRP_MJ_WRITE, **MinorFunction** = IRP_MN_MDL, but doesn't provide a data buffer. They send this IRP to the file system.
+  2. The file system constructs an MDL, places it in the IRP, and completes the IRP.
+  3. The issuer uses that MDL to copy data directly into the file’s cache.
+  4. When the issuer is done copying data into the cache, they construct another IRP with **MajorFunction** = IRP_MJ_WRITE, **MinorFunction** = (IRP_MN_MDL | IRP_MN_COMPLETE) and send that to the file system.
+  5. The file system frees the MDL, and the write operation is now complete.
 
 ## See also
 

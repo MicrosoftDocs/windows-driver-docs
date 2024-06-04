@@ -48,7 +48,7 @@ IRP_MJ_MDL_WRITE_COMPLETE is a fast I/O operation. It does the same thing as [IR
 
 The [**FLT_PARAMETERS**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters) structure for IRP_MJ_MDL_WRITE_COMPLETE operations contains the parameters for a fast I/O **MdlWriteComplete** operation. This operation is represented by a callback data ([**FLT_CALLBACK_DATA**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)) structure, with the operation's parameters in the [**FLT_IO_PARAMETER_BLOCK**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block) structure that **Iopb** points to.
 
-If a fast I/O IRP_MJ_MDL_WRITE_COMPLETE request fails, the issuer of the I/O determines how to reissue the request. A minifilter might not always get an IRP-based IRP_MJ_MDL_WRITE_COMPLETE. For instance, the IRP request could be reissued as [IRP_MJ_WRITE](irp-mj-write.md) + IRP_MN_COMPLETE_MDL.
+If a fast I/O IRP_MJ_MDL_WRITE_COMPLETE request fails, the issuer of the I/O determines how to reissue the request. For instance, the request could be reissued as an IRP-based operation using [IRP_MJ_WRITE](irp-mj-write.md) + IRP_MN_COMPLETE_MDL.
 
 ## Requirements
 
