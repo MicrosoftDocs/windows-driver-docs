@@ -24,7 +24,7 @@ For info on how an end user can uninstall a device, see  [Using Device Manager t
 
 ## Deleting a Driver Package from the Driver Store
 
-To delete a [driver package](driver-packages.md) from the [driver store](driver-store.md), you must 
+To delete a [driver package](driver-packages.md) from the [driver store](driver-store.md), you must:
 * Ensure no devices are installed with the driver package. 
 * Remove the driver package from the driver store.
 
