@@ -14,9 +14,9 @@ ms.date: 04/20/2017
 ## <span id="ddk_notify_callback_functions_in_a_video_capture_driver_gg"></span><span id="DDK_NOTIFY_CALLBACK_FUNCTIONS_IN_A_VIDEO_CAPTURE_DRIVER_GG"></span>
 
 
-The video capture driver supplies notify callback functions to the DirectDraw runtime when the video capture driver calls the runtime's [**DxApi**](/windows-hardware/drivers/ddi/dxapi/nf-dxapi-dxapi) function for certain operations. For example, the video capture driver supplies a [*NotifyCallback*](/windows/win32/api/ddkmapi/nc-ddkmapi-lpdd_notifycallback) function when the driver calls **DxApi** with the [**DD\_DXAPI\_OPENVIDEOPORT**](/previous-versions/windows/hardware/drivers/ff551498(v=vs.85)) function identifier to open a video port. After the video port closes, the DirectDraw runtime is notified and calls *NotifyCallback*. The video capture driver can then perform necessary operations that are related to the video port closing.
+The video capture driver supplies notify callback functions to the DirectDraw runtime when the video capture driver calls the runtime's [**DxApi**](nf-dxapi-dxapi.md) function for certain operations. For example, the video capture driver supplies a [*NotifyCallback*](/windows/win32/api/ddkmapi/nc-ddkmapi-lpdd_notifycallback) function when the driver calls **DxApi** with the [**DD\_DXAPI\_OPENVIDEOPORT**](/previous-versions/windows/hardware/drivers/ff551498(v=vs.85)) function identifier to open a video port. After the video port closes, the DirectDraw runtime is notified and calls *NotifyCallback*. The video capture driver can then perform necessary operations that are related to the video port closing.
 
-The video capture driver supplies a *NotifyCallback* function to the DirectDraw runtime when the video capture driver calls the [**DxApi**](/windows-hardware/drivers/ddi/dxapi/nf-dxapi-dxapi) function and specifies any one of the following function identifiers:
+The video capture driver supplies a *NotifyCallback* function to the DirectDraw runtime when the video capture driver calls the [**DxApi**](nf-dxapi-dxapi.md) function and specifies any one of the following function identifiers:
 
 -   [**DD\_DXAPI\_OPENDIRECTDRAW**](/previous-versions/windows/hardware/drivers/ff550702(v=vs.85))
 

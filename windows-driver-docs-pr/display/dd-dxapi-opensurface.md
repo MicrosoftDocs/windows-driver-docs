@@ -9,7 +9,7 @@ ms.date: 10/12/2022
 
 # DD\_DXAPI\_OPENSURFACE control code
 
-A video capture driver passes DD\_DXAPI\_OPENSURFACE in the *dwFunctionNum* parameter of the [**DxApi**](/windows-hardware/drivers/ddi/dxapi/nf-dxapi-dxapi) function to notify the kernel-mode video transport that the driver requires a surface object.
+A video capture driver passes DD\_DXAPI\_OPENSURFACE in the *dwFunctionNum* parameter of the [**DxApi**](nf-dxapi-dxapi.md) function to notify the kernel-mode video transport that the driver requires a surface object.
 
 ## Input Parameters
 
@@ -31,14 +31,7 @@ This function identifier can only be called from PASSIVE\_LEVEL.
 
 ## Requirements
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Ddkmapi.h (include Ddkmapi.h)</td>
-</tr>
-</tbody>
-</table>
+Header file: *Ddkmapi.h* (include *Ddkmapi.h*)
 
 ## See also
 
