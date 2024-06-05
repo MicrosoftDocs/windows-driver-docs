@@ -54,7 +54,7 @@ IRP_MJ_PREPARE_MDL_WRITE is a fast I/O operation. It does the same thing as [IRP
 
 The [**FLT_PARAMETERS**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters) structure for IRP_MJ_PREPARE_MDL_WRITE operations contains the parameters for a fast I/O **PrepareMdlWrite** operation. The operation is represented by a callback data ([**FLT_CALLBACK_DATA**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)) structure. It is contained in an FLT_IO_PARAMETER_BLOCK structure, with the operation's parameters in the [**FLT_IO_PARAMETER_BLOCK**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block) structure that **Iopb** points to.
 
-If a fast I/O IRP_MJ_PREPARE_MDL_WRITE request fails, the issuer of the I/O determines how to reissue the request. A minifilter might not always get an IRP-based IRP_MJ_MDL_WRITE. For instance, the IRP request could be reissued as [IRP_MJ_WRITE](irp-mj-write.md) + IRP_MN_MDL.
+If a fast I/O IRP_MJ_PREPARE_MDL_WRITE request fails, the issuer of the I/O determines how to reissue the request. For instance, the request could be reissued as an IRP-based operation using [IRP_MJ_WRITE](irp-mj-write.md) + IRP_MN_MDL.
 
 ## Requirements
 
