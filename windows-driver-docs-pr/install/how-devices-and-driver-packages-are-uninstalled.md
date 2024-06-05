@@ -1,7 +1,7 @@
 ---
 title: How Devices and Driver Packages are Uninstalled
 description: How Devices and Driver Packages are Uninstalled
-ms.date: 03/18/2022
+ms.date: 06/04/2024
 ---
 
 # How Devices and Driver Packages are Uninstalled
@@ -24,14 +24,19 @@ For info on how an end user can uninstall a device, see  [Using Device Manager t
 
 ## Deleting a Driver Package from the Driver Store
 
-To delete a [driver package](driver-packages.md) from the [driver store](driver-store.md), do one of the following:
+To delete a [driver package](driver-packages.md) from the [driver store](driver-store.md), you must 
+* Ensure no devices are installed with the driver package. 
+* Remove the driver package from the driver store.
+
+To perform both of these steps with one action, you can do:
 
 * From the command prompt, use `pnputil /delete-driver <example.inf> /uninstall`. For info on PnPUtil commands, see [PnPUtil Command Syntax](../devtest/pnputil-command-syntax.md).
 * Starting in Windows 10, version 1703, a device installation application can call [**DiUninstallDriverW**](/windows/win32/api/newdev/nf-newdev-diuninstalldriverw).
-* On earlier versions of Windows, a device installation application should first issue a [**DIF_REMOVE**](./dif-remove.md) request or call the [**DiUninstallDevice**](/windows/win32/api/newdev/nf-newdev-diuninstalldevice) function to uninstall all devices and then call [**SetupUninstallOEMInf**](/windows/win32/api/setupapi/nf-setupapi-setupuninstalloeminfa) to remove the driver.
+
+On earlier versions of Windows that do not support the above methods, you would have to identify all devices currently installed with the driver package and then update them to not depend on the driver package. You could install a different driver package on the device, use [DiInstallDevice](/windows/win32/api/newdev/nf-newdev-diinstalldevice) with the `DIIDFLAG_INSTALLNULLDRIVER` flag to install the null driver on the device, or uninstall the device. To uninstall the device, a device installation application should first issue a [**DIF_REMOVE**](./dif-remove.md) request or call the [**DiUninstallDevice**](/windows/win32/api/newdev/nf-newdev-diuninstalldevice) function to uninstall all devices. After that, the device installation application can call [**SetupUninstallOEMInf**](/windows/win32/api/setupapi/nf-setupapi-setupuninstalloeminfa) to remove the driver package.
 
 Deleting a driver package from the driver store removes associated metadata from the PnP manager's internal database and deletes related INF files from the system INF directory.
 
-After the driver package has been removed, it is no longer available to be installed on a device. To reinstall, download the driver again from the original source, such as Windows Update.
+After the driver package has been removed, it is no longer available to be installed on a device. To reinstall, download the driver package again from the original source, such as Windows Update.
 
 Manually deleting the [driver package](driver-packages.md) from the [driver store](driver-store.md) may result in unpredictable behavior.
