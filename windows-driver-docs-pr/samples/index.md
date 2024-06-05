@@ -26,8 +26,6 @@ For more information about the Windows 10 driver samples available for a specifi
 
 - [Battery driver samples](battery-driver-samples.md)
 
-- [Biometrics driver samples](biometrics-driver-samples.md)
-
 - [Bluetooth driver samples](bluetooth-driver-samples.md)
 
 - [File system driver samples](file-system-driver-samples.md)
@@ -51,8 +49,6 @@ For more information about the Windows 10 driver samples available for a specifi
 - [Power framework (PoFx) driver samples](power-framework--pofx--driver-samples.md)
 
 - [Point of service (POS) driver samples](point-of-service--pos--driver-samples.md)
-
-- [Print driver samples](print-driver-samples.md)
 
 - [Secure Digital (SD) driver samples](secure-digital--sd--driver-samples.md)
 
@@ -83,5 +79,3 @@ For more information about the Windows 10 driver samples available for a specifi
 - [Windows Image Acquisition (WIA) driver samples](wia-driver-samples.md)
 
 - [Windows Management Instrumentation (WMI) driver samples](windows-management-instrumentation--wmi--driver-samples.md)
-
-- [Windows Portable Device (WPD) driver samples](windows-portable-device--wpd--driver-samples.md)

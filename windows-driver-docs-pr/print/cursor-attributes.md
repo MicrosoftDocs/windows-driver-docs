@@ -29,5 +29,3 @@ The following table lists the cursor attributes.
 | **YMoveAttributes** | LIST of values indicating y-movement attributes. Can be one or more of:<br><br>FAV_LF (favor LF spacing)<br><br>SEND_CR_FIRST | Optional. If not specified, no attributes are assumed. |
 | **YMoveThreshold** | Numeric value, in y-master units, representing the movement threshold beyond which **CmdYMoveAbsolute** should be used instead of **CmdYMoveRelLeft** or **CmdYMoveRelRight**. | Optional. If not specified, the default value is zero, meaning **CmdYMoveAbsolute** should always be used. Only applicable if all three y-movement commands are specified. |
 | **YMoveUnit** | Numeric value, in dots per inch, representing the smallest vertical movement the printer is capable of. For example, if the movement unit is 1/600th of an inch, the specified value is 600. | Required if the printer supports vertical movement [cursor commands](cursor-commands.md). If specified, include this value when calculating [master units](master-units.md). |
-
-For examples, see the [sample GPD files](sample-gpd-files.md).

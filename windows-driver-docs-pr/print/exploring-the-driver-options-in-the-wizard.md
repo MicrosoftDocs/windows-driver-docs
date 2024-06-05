@@ -96,7 +96,7 @@ This template provides the method headers for all supported JavaScript constrain
 
 ### Autoconfiguration GDL
 
-This provides a basic autoconfiguration file for a v4 print driver. For information about GDL syntax for autoconfiguration, and to explore an example file, see the [Print Auto Configuration Sample](/samples/microsoft/windows-driver-samples/print-auto-configuration-sample).
+This provides a basic autoconfiguration file for a v4 print driver.
 
 ### TCPMon Bidi extension XML
 

@@ -33,18 +33,6 @@ XPS filters make the printing subsystem more robust, because the filters run in 
 
 For maximum flexibility and reuse, each filter should perform a specific print processing function. For example, one filter would only apply a watermark, while another would only perform accounting.
 
-The following [XPS driver and filter samples](/samples/microsoft/windows-driver-samples/xpsdrv-driver-and-filter-sample/) are available on GitHub:
-
-- Booklet
-
-- Color conversion
-
-- Nup
-
-- Page scaling
-
-- Watermark
-
 For more information about the filter pipeline manager, see [XPSDrv Render Module](xpsdrv-render-module.md).
 
 For more information about implementing filters, see [Implementing XPS Filters](implementing-xps-filters.md).

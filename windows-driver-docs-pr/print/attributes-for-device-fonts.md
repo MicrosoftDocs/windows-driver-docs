@@ -22,8 +22,6 @@ The following table lists attributes describing the printer's support for device
 | ***MaxFontUsePerPage*** | Numeric value representing the maximum number of fonts the printer can use per page. | Optional. If not specified, there is no limit. |
 | **TextYOffset** | Numeric value representing the vertical distance, in *y* master units, by which resident fonts must be repositioned to align with bitmap font baselines. | Optional. If not specified, the default value is 0. (Used with some dot-matrix printers.) |
 
-For examples, see the [sample GPD files](sample-gpd-files.md).
-
 To determine the size of the lookahead region, the printer driver must perform an addition based on the current scan line and the value of the **\*LookAheadRegion** attribute. Because the scan line is in units of pixels while **\*LookAheadRegion** is in vertical master units, the driver must convert the attribute value into pixels.
 
 For example, if the value of the **\*LookAheadRegion** attribute is 600, and there are 1200 vertical master units per inch, then the size of the lookahead region one-half inch. If the current resolution is 300 dpi, one-half inch corresponds to 150 pixels (vertical), or 150 scan lines. If the printer is currently on scan line 100, the driver must look for text baselines between scan lines 100 and 250.

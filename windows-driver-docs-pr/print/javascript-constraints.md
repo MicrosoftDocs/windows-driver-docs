@@ -207,5 +207,3 @@ The Windows 8 print dialog and the print preferences experience support only a 
 For example, if the PageMediaType option called Photo is constrained to only work with a PageResolution value of 1200dpi, then users will never be able to choose the Photo media type. In cases like this, it is better to match the user's intent (Photo media) and adjust any settings necessary to make this occur. These adjustments can be made in JavaScript constraint code.
 
 If a driver does not utilize JavaScript constraints, there is no requirement that a file is provided. If a driver utilizes JavaScript constraints for only a subset of the entry points (for example, validatePrintTicket), the other entry points should be entirely omitted from the JavaScript file.
-
-For more information about how to use JavaScript constraints, see the [Print driver constraints sample](/samples/microsoft/windows-driver-samples/print-driver-constraints-sample).

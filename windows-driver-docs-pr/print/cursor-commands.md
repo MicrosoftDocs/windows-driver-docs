@@ -32,5 +32,3 @@ The [printer commands](printer-commands.md) in the following table control curso
 | **CmdYMoveAbsolute** | Command to move the cursor to an absolute y-position. | Optional. The command string can include only one standard variable, which is used to specify the distance. |
 | **CmdYMoveRelDown** | Command to move the cursor down from the current y-position, by the specified amount. | Optional. The command string can include only one standard variable, which is used to specify the distance. |
 | **CmdYMoveRelUp** | Command to move the cursor up from the current y-position, by the specified amount. | Optional. The command string can include only one standard variable, which is used to specify the distance. |
-
-For examples, see the [sample GPD files](sample-gpd-files.md).

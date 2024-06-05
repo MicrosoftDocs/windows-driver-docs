@@ -31,5 +31,3 @@ When the **\*ChangeColorModeOnDoc?** color attribute is set to **TRUE**, color o
 If you're creating a Unidrv rendering plug-in to generate color watermarks, color optimization causes color watermarks to be printed in black and white when they're printed on black-and-white documents. To ensure that color watermarks print correctly with color and black-and-white documents, disable color optimization.
 
 The color optimization controlled by the **\*ChangeColorModeOnDoc?** color attribute can also be controlled by setting the **dwColorOptimization** member of the [**ATTRIBUTE_INFO_2**](/windows-hardware/drivers/ddi/winddiui/ns-winddiui-_attribute_info_2) or [**ATTRIBUTE_INFO_3**](/windows-hardware/drivers/ddi/winddiui/ns-winddiui-_attribute_info_3) structures. Color optimization also can be controlled by using the [**GdiEndPageEMF**](/windows-hardware/drivers/ddi/winppi/nf-winppi-gdiendpageemf) function.
-
-For examples of the color attributes listed on this page, see the [sample GPD files](sample-gpd-files.md).

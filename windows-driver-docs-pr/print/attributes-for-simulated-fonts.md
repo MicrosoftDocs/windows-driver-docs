@@ -16,5 +16,3 @@ The following table lists attributes describing the printer's support for simula
 | Attribute name | Attribute parameter | Comments |
 |--|--|--|
 | **\*DiffFontsPerByteMode?** | **TRUE** or **FALSE**. For printers supporting both single-byte and double-byte modes, this indicates whether the printer maintains separate fonts and font characteristics for each mode. | Optional. If not specified, the default value is **FALSE**. |
-
-For examples, see the [sample GPD files](sample-gpd-files.md).

@@ -22,8 +22,6 @@ The following table lists the attributes associated with the Resolution feature.
 | \***SpotDiameter** | Numeric value representing the spot diameter size, as a percentage of the pixel size, for the resolution specified by \***DPI**. | Required.<br><br>Examples:<br><br>100 means the spot diameter equals the pixel size.<br><br>200 means the spot diameter is twice the pixel size.<br><br>50 means the spot diameter is half the pixel size. |
 | \***TextDPI** | PAIR or numeric values representing the x and y values for the printer's text resolution, in dots per inch. | Required. See \***DPI** comments. This resolution is used for drawing fonts and vector graphics. |
 
-For GPD examples, see the [sample GPD files](sample-gpd-files.md).
-
 For information about additional option attributes, see [Option Attributes for All Features](option-attributes-for-all-features.md).
 
 Also, see [Controlling Image Quality](controlling-image-quality.md).

@@ -26,8 +26,6 @@ Printer capability attributes are [general printing attributes](general-printing
 | **RotateRaster?** | **TRUE** or **FALSE**, indicating whether the printer automatically rotates raster data to match the page orientation. | Optional. If not specified, the default value is **FALSE**. If **TRUE**, then **RotateCoordinate?** must also be **TRUE**. Can't be placed in a Case entry. |
 | **TextCaps** | LIST of constants indicating the printer's text capabilities. Can consist of one or more of the TC_xxx flags described in [**GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps). | Optional. If not specified, Unidrv assumes no text capabilities are supported. |
 
-For examples, see the [sample GPD files](sample-gpd-files.md).
-
 ## Additional information about ReverseBandOrderForEvenPages?
 
 A side effect of the autoduplex capability is that the bottom edge of a page that has been printed is fed back into the printer, to become the top edge of the next page. To maintain the orientation of the second page relative to the first, the raster image of the second page must be sent to the printer in reverse order. In other words, if the printer printed the front side by sending the top scan line first, it must print the back side bottom scan line first.

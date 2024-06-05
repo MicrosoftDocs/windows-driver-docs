@@ -30,5 +30,3 @@ The following table lists attributes describing the printer's support for raster
 | **UseExpColorSelectCmd?** | **TRUE** or **FALSE**, indicating whether the printer requires explicit color selection commands, separate from color raster data. | Optional. If not specified, the default value is **FALSE**. Dot-matrix printers require a value of **TRUE**. |
 
 For information about commands associated with raster data emission, see [Raster data emission commands](raster-data-emission-commands.md).
-
-For GPD examples, see [Sample GPD files](sample-gpd-files.md).

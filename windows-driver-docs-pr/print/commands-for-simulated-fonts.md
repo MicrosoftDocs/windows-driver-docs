@@ -31,5 +31,3 @@ The following table lists the commands for controlling simulated fonts. All comm
 | **CmdVerticalPrintingOn** | Command to enable vertical printing. | Optional. Must be specified if the printer supports vertical printing. |
 | **CmdWhiteTextOff** | Command to disable printing white text. | Optional. Must be specified if **CmdWhiteTextOn** is specified. |
 | **CmdWhiteTextOn** | Command to enable printing white text. | Optional. If specified, Unidrv sends this command to enable printing white text and sends **CmdWhiteTextOff** to disable printing white text. (This command is provided for backwards compatibility with GPC 3.0.) |
-
-For examples, see the [sample GPD files](sample-gpd-files.md).

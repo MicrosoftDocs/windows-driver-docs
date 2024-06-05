@@ -21,5 +21,3 @@ The following table lists attributes describing the printer's support for fillin
 | MinGrayFill | Numeric value representing the minimum gray fill percentage allowed as an argument to the CmdRectGrayFill command. | Optional. If not specified, the default value is 1 (percent). |
 
 For information about commands associated with a printer's rectangle area fill capabilities, see [Rectangle area fill commands](rectangle-area-fill-commands.md).
-
-For GPD examples, see [Sample GPD files](sample-gpd-files.md).

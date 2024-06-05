@@ -19,6 +19,4 @@ The following table lists the attributes associated with the Halftone feature. F
 | \***HTPatternSize** | [Pair](pairs.md) of numeric values representing the width and height, in pixels, of the pattern specified by \***rcHTPatternID**. | Required if \***rcHTPatternID** is specified. The maximum pattern size is PAIR (256, 256). Width and height, multiplied together, must be divisible by 4 for storage as DWORDs |
 | \***rcHTPatternID** | Resource identifier for an RC_HTPATTERN resource representing halftone pattern data. | Required if a halftone pattern is provided in a resource DLL. For more information, see [Halftoning with Unidrv](halftoning-with-unidrv.md). |
 
-For examples, see the [sample GPD files](sample-gpd-files.md).
-
 For more information about using these attributes, see [Halftoning with Unidrv](halftoning-with-unidrv.md). These attributes are not used with [minidriver-supplied halftoning](minidriver-supplied-halftoning.md).
