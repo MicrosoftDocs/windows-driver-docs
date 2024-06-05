@@ -279,11 +279,20 @@ This object provides additional attributes about the product if it is of type RA
 
 A product can be of the following types. This information is used along with the Operating system to identify applicability.
 
+* 3D Printer
+* Accelerometer Sensor
 * All In One
 * All In One with Touch
 * Audio Device
+* Audio Processing Objects
 * Bluetooth Controller
 * Bluetooth Controller Non USB
+* Camera
+* Camera Sensor
+* Cluster
+* Compute Accelerator MCDM 2.7
+* Compute Accelerator MCDM 3.1
+* Compute Accelerator MCDM 3.2
 * Convertible Tablet
 * Desktop
 * Digital Media Renderer
@@ -296,13 +305,70 @@ A product can be of the following types. This information is used along with the
 * Game Controller
 * Generic Controller
 * Generic Portable Device
+* Graphics Adapter MCDM2.7
+* Graphics Adapter MCDM2.8
+* Graphics Adapter MCDM2.9
+* Graphics Adapter MCDM3.0
 * Graphics Adapter WDDM1.0
 * Graphics Adapter WDDM1.1
 * Graphics Adapter WDDM1.2
 * Graphics Adapter WDDM1.2 DisplayOnly
 * Graphics Adapter WDDM1.2 RenderOnly
+* Graphics Adapter WDDM1.3
+* Graphics Adapter WDDM1.3 DisplayOnly
+* Graphics Adapter WDDM1.3 RenderOnly
+* Graphics Adapter WDDM2.0
+* Graphics Adapter WDDM2.0 Display Only
+* Graphics Adapter WDDM2.0 Render Only
+* Graphics Adapter WDDM2.1
+* Graphics Adapter WDDM2.1 Display Only
+* Graphics Adapter WDDM2.1 Render Only
+* Graphics Adapter WDDM2.2
+* Graphics Adapter WDDM2.2 Display Only
+* Graphics Adapter WDDM2.2 Render Only
+* Graphics Adapter WDDM2.3
+* Graphics Adapter WDDM2.3 Display Only
+* Graphics Adapter WDDM2.3 Render Only
+* Graphics Adapter WDDM2.4
+* Graphics Adapter WDDM2.4 Display Only
+* Graphics Adapter WDDM2.4 Render Only
+* Graphics Adapter WDDM2.4 VM
+* Graphics Adapter WDDM2.5
+* Graphics Adapter WDDM2.5 Display Only
+* Graphics Adapter WDDM2.5 Render Only
+* Graphics Adapter WDDM2.5 VM
+* Graphics Adapter WDDM2.6
+* Graphics Adapter WDDM2.6 Display Only
+* Graphics Adapter WDDM2.6 Render Only
+* Graphics Adapter WDDM2.6 VM
+* Graphics Adapter WDDM2.7
+* Graphics Adapter WDDM2.7 Display Only
+* Graphics Adapter WDDM2.7 Render Only
+* Graphics Adapter WDDM2.7 VM
+* Graphics Adapter WDDM2.8
+* Graphics Adapter WDDM2.8 Display Only
+* Graphics Adapter WDDM2.8 Render Only
+* Graphics Adapter WDDM2.8 VM
+* Graphics Adapter WDDM2.9
+* Graphics Adapter WDDM2.9 Display Only
+* Graphics Adapter WDDM2.9 Render Only
+* Graphics Adapter WDDM2.9 VM
+* Graphics Adapter WDDM3.0
+* Graphics Adapter WDDM3.0 Display Only
+* Graphics Adapter WDDM3.0 Render Only
+* Graphics Adapter WDDM3.0 VM
+* Graphics Adapter WDDM3.1
+* Graphics Adapter WDDM3.1 Display Only
+* Graphics Adapter WDDM3.1 Render Only
+* Graphics Adapter WDDM3.1 VM
+* Graphics Adapter WDDM3.2
+* Graphics Adapter WDDM3.2 Display Only
+* Graphics Adapter WDDM3.2 Render Only
+* Graphics Adapter WDDM3.2 VM
 * Graphics Tablet
+* Gyroscope Sensor
 * Hard Drive
+* Hardware Multifunction Transforms
 * Keyboard
 * Keyboard Video Mouse Switch
 * LAN
@@ -324,9 +390,12 @@ A product can be of the following types. This information is used along with the
 * Multi-Function Printer
 * Near Field Proximity
 * Network Media Device
+* NFC
+* NFC Smart Card Reader
 * Optical Drive
 * Pen Digitizer
 * Pointing Drawing
+* PrecisionTouchpad
 * Presence Sensor
 * Printer
 * Projector
@@ -346,6 +415,7 @@ A product can be of the following types. This information is used along with the
 * Tablet
 * Touch
 * Touch Monitor
+* TPM20
 * Ultra-Mobile PC
 * Ultra-Mobile PC with Touch
 * USB Controller
@@ -396,6 +466,8 @@ The following table lists Operating system Family Codes and their descriptions.
 | Windows_v100Server_FE | Windows - Server, version 21H2 |
 | Windows_v100_CO | Windows - Client, version 21H2 |
 | Windows_v100_NI | Windows 11 Client, version 22H2 |
+| Windows_v100_GE |  Windows 11 Client, version 24H2 |
+| Windows_v100Server_GE | Windows Server 2025 |
 
 ### List of Operating System Codes
 
@@ -465,6 +537,11 @@ The following table lists Operating System Codes and their descriptions.
 |WINDOWS_v100_ARM64_CO_FULL | Windows - Client, version 21H2 Arm64 |
 |WINDOWS_v100_X64_NI_FULL | Windows 11 Client, version 22H2 x64 |
 |WINDOWS_v100_ARM64_NI_FULL | Windows 11 Client, version 22H2 Arm64 |
+|WINDOWS_v100_X64_GE_FULL | Windows 11 Client, version 24H2 x64 |
+|WINDOWS_v100_ARM64_GE_FULL | Windows 11 Client, version 24H2 ARM64 |
+|WINDOWS_v100_SERVER_X64_GE_FULL | Windows Server 2025 x64 |
+|WINDOWS_v100_SERVER_ARM64_GE_FULL | Windows Server 2025 ARM64 |
+
 
 ## Error codes
 
@@ -478,6 +555,7 @@ The error codes are applicable to all web methods of the API. If the request can
 | 404 – Not Found | Entity requested for is not found. |
 | 415 - Unsupported Media Type | Payload is in a format not supported by this method on the target resource. |
 | 422 - Unprocessable Entity | Validation failures. |
+| 429 - Too Many Requests | Too many requests are being sent. Calls are throttled and the backoff time is provided in the response.|
 | 500 - Internal Server Error | Unrecoverable error occurred at the API server. |
 
 If there are functional validation failures, the response body will contain one of the following functional error codes.
