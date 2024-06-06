@@ -6,7 +6,7 @@ keywords:
 - UMDF WDK , version information
 - revision history WDK UMDF
 - version information WDK UMDF
-ms.date: 10/31/2023
+ms.date: 06/06/2024
 ---
 
 # UMDF Version History
@@ -33,7 +33,7 @@ The following table shows the release history of the UMDF library.  You can use 
 | 1.7          | Windows Server 2008 WDK      | Windows Vista with Service Pack 1 (SP1), Windows Server 2008 | Windows XP and later                                    |
 | 1.5          | Windows Vista WDK            | Windows Vista                                                | Windows XP and later                                    |
 
-You can use the Windows Driver Kit (WDK) with Microsoft Visual Studio 2019 to build drivers that run on Windows 10 and later.
+You can use the Windows Driver Kit (WDK) with Microsoft Visual Studio 2022 to build drivers that run on Windows 10 and later.
 
 For help determining what version of WDF to use, see [Which framework version should I use?](building-and-loading-a-kmdf-driver.md#which-framework-version-should-i-use).
 
