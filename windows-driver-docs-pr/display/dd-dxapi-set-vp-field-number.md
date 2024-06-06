@@ -9,7 +9,7 @@ ms.date: 10/12/2022
 
 # DD\_DXAPI\_SET\_VP\_FIELD\_NUMBER control code
 
-A video capture driver passes DD\_DXAPI\_SET\_VP\_FIELD\_NUMBER in the *dwFunctionNum* parameter of the [**DxApi**](/windows-hardware/drivers/ddi/dxapi/nf-dxapi-dxapi) function to set the internal field number for the specified [*VPE*](vpe-callback-functions.md) object to the specified value.
+A video capture driver passes DD\_DXAPI\_SET\_VP\_FIELD\_NUMBER in the *dwFunctionNum* parameter of the [**DxApi**](nf-dxapi-dxapi.md) function to set the internal field number for the specified [*VPE*](vpe-callback-functions.md) object to the specified value.
 
 ## Input Parameters
 
@@ -29,14 +29,7 @@ This function identifier can be called at raised IRQL.
 
 ## Requirements
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Ddkmapi.h (include Ddkmapi.h)</td>
-</tr>
-</tbody>
-</table>
+Header file: *Ddkmapi.h* (include *Ddkmapi.h*)
 
 ## See also
 

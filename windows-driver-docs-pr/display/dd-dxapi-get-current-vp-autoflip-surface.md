@@ -9,7 +9,7 @@ ms.date: 10/12/2022
 
 # DD\_DXAPI\_GET\_CURRENT\_VP\_AUTOFLIP\_SURFACE control code
 
-A video capture driver passes DD\_DXAPI\_GET\_CURRENT\_VP\_AUTOFLIP\_SURFACE in the *dwFunctionNum* parameter of the [**DxApi**](/windows-hardware/drivers/ddi/dxapi/nf-dxapi-dxapi) function to return the surface handles that are receiving the current video and [*VBI*](video-vbi-capture.md) data from the hardware video port.
+A video capture driver passes DD\_DXAPI\_GET\_CURRENT\_VP\_AUTOFLIP\_SURFACE in the *dwFunctionNum* parameter of the [**DxApi**](nf-dxapi-dxapi.md) function to return the surface handles that are receiving the current video and [*VBI*](video-vbi-capture.md) data from the hardware video port.
 
 ## Input Parameters
 
@@ -29,14 +29,7 @@ This function identifier can be called at raised IRQL.
 
 ## Requirements
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Ddkmapi.h (include Ddkmapi.h)</td>
-</tr>
-</tbody>
-</table>
+Header file: *Ddkmapi.h* (include *Ddkmapi.h*)
 
 ## See also
 

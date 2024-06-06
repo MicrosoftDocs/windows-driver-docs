@@ -1779,9 +1779,11 @@
             href: notify-callback-functions-in-a-video-capture-driver.md
           - name: "Video VBI Capture"
             href: video-vbi-capture.md
-        - name: "DxApi Function Identifiers"
+        - name: "DxApi Function and Function Identifiers"
 # Auto-expanded node
-          items: 
+          items:
+          - name: "DxApi function"
+            href: nf-dxapi-dxapi.md
           - name: "DD_DXAPI_ADDVPCAPTUREBUFFER"
             href: dd-dxapi-addvpcapturebuffer.md
           - name: "DD_DXAPI_CLOSEHANDLE"

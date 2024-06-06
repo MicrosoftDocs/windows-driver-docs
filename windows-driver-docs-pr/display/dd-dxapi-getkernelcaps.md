@@ -9,7 +9,7 @@ ms.date: 10/12/2022
 
 # DD\_DXAPI\_GETKERNELCAPS control code
 
-A video capture driver passes DD\_DXAPI\_GETKERNELCAPS in the *dwFunctionNum* parameter of the [**DxApi**](/windows-hardware/drivers/ddi/dxapi/nf-dxapi-dxapi) function to return the capabilities of this kernel-mode device.
+A video capture driver passes DD\_DXAPI\_GETKERNELCAPS in the *dwFunctionNum* parameter of the [**DxApi**](nf-dxapi-dxapi.md) function to return the capabilities of this kernel-mode device.
 
 ## Input Parameters
 
@@ -29,14 +29,7 @@ This function identifier can only be called at PASSIVE\_LEVEL.
 
 ## Requirements
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Ddkmapi.h (include Ddkmapi.h)</td>
-</tr>
-</tbody>
-</table>
+Header file: *Ddkmapi.h* (include *Ddkmapi.h*)
 
 ## See also
 

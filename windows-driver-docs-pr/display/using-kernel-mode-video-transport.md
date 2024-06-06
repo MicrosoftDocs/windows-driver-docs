@@ -18,7 +18,7 @@ ms.date: 04/20/2017
 
 Kernel-mode video transport functionality is accessed by the [video capture driver](../stream/video-capture-devices.md) linking with *dxapi.lib*, which allows it to later call *dxapi.sys*. This functionality is available only when DirectDraw is loaded.
 
-A video capture driver (for a hardware decoder) uses the [**DxApi**](/windows-hardware/drivers/ddi/dxapi/nf-dxapi-dxapi) function supplied with kernel-mode DirectDraw to access the DxApi interface callback functions. The **DxApi** function is a single entry point that accepts a function identifier, an input buffer and size, and an output buffer and size. The behavior of this function and the size and format of the input and output buffers depend on the specified function identifier. The **DxApi** function and its function identifiers are defined in *ddkmapi.h*.
+A video capture driver (for a hardware decoder) uses the [**DxApi**](nf-dxapi-dxapi.md) function supplied with kernel-mode DirectDraw to access the DxApi interface callback functions. The **DxApi** function is a single entry point that accepts a function identifier, an input buffer and size, and an output buffer and size. The behavior of this function and the size and format of the input and output buffers depend on the specified function identifier. The **DxApi** function and its function identifiers are defined in *ddkmapi.h*.
 
 DirectShow or another client accesses the DxApi interface callback functions supplied by the video miniport driver through DirectDraw. The DxApi interface callback functions are defined in *dxmini.h*.
 

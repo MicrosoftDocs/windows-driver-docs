@@ -9,7 +9,7 @@ ms.date: 10/12/2022
 
 # DD\_DXAPI\_GET\_SURFACE\_STATE control code
 
-A video capture driver passes DD\_DXAPI\_GET\_SURFACE\_STATE in the *dwFunctionNum* parameter of the [**DxApi**](/windows-hardware/drivers/ddi/dxapi/nf-dxapi-dxapi) function to indicate whether the overlay surface is in bob or weave mode and whether it can be put into bob or weave mode.
+A video capture driver passes DD\_DXAPI\_GET\_SURFACE\_STATE in the *dwFunctionNum* parameter of the [**DxApi**](nf-dxapi-dxapi.md) function to indicate whether the overlay surface is in bob or weave mode and whether it can be put into bob or weave mode.
 
 ## Input Parameters
 
@@ -29,14 +29,7 @@ This function identifier can be called at raised IRQL.
 
 ## Requirements
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Ddkmapi.h (include Ddkmapi.h)</td>
-</tr>
-</tbody>
-</table>
+Header file: *Ddkmapi.h* (include *Ddkmapi.h*)
 
 ## See also
 
