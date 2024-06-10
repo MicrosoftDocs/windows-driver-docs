@@ -251,8 +251,9 @@ SetupTriageDataCallback(VOID)
                                                 (PUCHAR)"Example"); 
 
     if ( !bSuccess ) {
-         ExFreePoolWithTag(gTriageDumpDataArray, 'Xmpl');
-         gTriageDumpDataArray = NULL;
+        ExFreePoolWithTag(pBuffer, 'Xmpl');
+        gTriageDumpDataArray = NULL;
+        gBugcheckTriageCallbackRecord = NULL;
          return STATUS_UNSUCCESSFUL;
     }
 
