@@ -44,7 +44,7 @@ Microsoft provides in-box function client drivers (UfxChipidea.sys, Ufxsynopsys.
 
 ## USB lower filter driver
 
-A USB lower filter driver supports detection of chargers if the function controller uses the in-box Synopsys and ChipIdea drivers. The filter driver manages USB charging starting from USB port detection. t must publish a GUID for each charger type it supports, and a list of that charger's properties. If a specific charger is configurable, the lower USB filter driver defines a list of supported PropertyIDs and their corresponding value types that can be sent to it, to configure the charger. The driver also notifies the battery stack when it can begin charging and the maximum amount of current the device can draw. For client drivers other than Synopsys and ChipIdea drivers, charging logic can be implemented in the client driver.
+A USB lower filter driver supports detection of chargers if the function controller uses the in-box Synopsys and ChipIdea drivers. The filter driver manages USB charging starting from USB port detection. It must publish a GUID for each charger type it supports, and a list of that charger's properties. If a specific charger is configurable, the lower USB filter driver defines a list of supported PropertyIDs and their corresponding value types that can be sent to it, to configure the charger. The driver also notifies the battery stack when it can begin charging and the maximum amount of current the device can draw. For client drivers other than Synopsys and ChipIdea drivers, charging logic can be implemented in the client driver.
 
 A function class driver sends request to UFX by using [Programming interfaces for supporting proprietary chargers](/previous-versions/windows/hardware/drivers/mt188012(v=vs.85)).
 
