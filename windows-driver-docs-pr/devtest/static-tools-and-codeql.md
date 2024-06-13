@@ -26,7 +26,7 @@ This topic describes how to:
 - Determine which **"Must-Fix"** [queries](#must-fix-queries) must be run for WHCP certification.
 
 > [!IMPORTANT]
-> Windows Hardware Compatibility Program requires CodeQL for Static Tool Logo (STL) Tests on our Client and Server Operating Systems. We will continue to maintain support for SDV and CA on older products.  Partners are highly encouraged to review the CodeQL requirements for the [Static Tool Logo Test](/windows-hardware/test/hlk/testref/6ab6df93-423c-4af6-ad48-8ea1049155ae).
+> Windows Hardware Compatibility Program requires CodeQL for Static Tool Logo (STL) Tests on our Client and Server Operating Systems. We will continue to maintain support for SDV and CA on older products. Partners are highly encouraged to review the CodeQL requirements for the [Static Tool Logo Test](/windows-hardware/test/hlk/testref/6ab6df93-423c-4af6-ad48-8ea1049155ae).
 
 ### HLK EULA and CodeQL
 
@@ -75,7 +75,7 @@ For general use of CodeQL with other versions of Windows outside of the WHCP pro
 > For the WHCP Program, use the CodeQL CLI version in accordance with the table above and Windows release you are certifying for - version 2.4.6, version 2.6.3, or version 2.15.4.
 > For general use with the main branch, use CodeQL CLI version 2.15.4.
 
-1. Create a directory to contain CodeQL. This example will use C:\codeql-home\
+1. Create a directory to contain CodeQL. This example uses `C:\codeql-home\`
 
    ```console
    C:\> mkdir C:\codeql-home
@@ -83,7 +83,7 @@ For general use of CodeQL with other versions of Windows outside of the WHCP pro
 
 1. Refer to the tables above to select which version of CodeQL CLI to use in accordance with the desired branch of Microsoft's driver queries. If you are performing analysis as part of the WHCP program, refer to the table **For Windows Hardware Compatibility Program Use** otherwise use Main branch and [2.15.4](https://github.com/github/codeql-cli-binaries/releases/tag/v2.15.4). Using a different version may result in a database incompatible with the libraries.
 
-1. Navigate to the CodeQL CLI binaries release associated with the tables above, and download the zip file in accordance with your project's architecture. For example for 64 bit Windows "codeql-win64.zip".
+1. Navigate to the CodeQL CLI binaries release associated with the tables above, and download the zip file in accordance with your project's architecture. For example, for 64 bit Windows "codeql-win64.zip".
 
 1. Extract Codeql CLI directory to the one you just created, for example: C:\codeql-home\codeql\.
 
@@ -134,9 +134,9 @@ For general use of CodeQL with other versions of Windows outside of the WHCP pro
 If using Visual Studio 2022 17.8 or greater with WHCP_21H2 or WHCP_22H2 and CodeQL CLI version 2.15.4:
 
 - Follow the steps for "ALL OTHER BRANCHES."
-- **Make sure to remove the CodeQL submodule if you still have an old version of the repo cloned.** CodeQL might try to use the queries in the submodule by default which will cause errors because of mismatched versions.
+- **Make sure to remove the CodeQL submodule if you still have an old version of the repo cloned.** CodeQL might try to use the queries in the submodule by default, which will cause errors because of mismatched versions.
 
-If using Visual Studio version 17.7 or below **AND** either WHCP_21H2 or WHCP_22H2 AND CodeQL VLI version 2.4.6 or 2.6.3:
+If using Visual Studio version 17.7 or below **AND** either WHCP_21H2 or WHCP_22H2 AND CodeQL CLI version 2.4.6 or 2.6.3:
 
 - Follow *Special instructions for WHCP_21H2 and WHCP_22H2 using VS17.7 or earlier* below.
 
@@ -164,9 +164,9 @@ Use this command to download version 0.9.0 of the CodeQL cpp-queries query pack.
 C:\codeql-home\> codeql pack download codeql/cpp-queries@0.9.0
 ```
 
-(Note that it is possible to skip the above step, as the `--download` option will download needed queries later in the analysis process.)
+(It is possible to skip the above step, as the `--download` option will download needed queries later in the analysis process.)
 
-CodeQL will install the downloaded query packs to the default directory:
+CodeQL installs the downloaded query packs to the default directory:
 
 `C:\Users\<current user>\.codeql\packages\microsoft\windows-drivers\<downloaded version>\`
 
@@ -299,7 +299,7 @@ These instructions only apply when using both Visual Studio 17.7 or earlier, alo
 
 We will be focusing on SARIF format for this section as it is what is required for the following steps, though you are welcome to use CSV format if it suits your needs better.
 
-Static Analysis Results Interchange Format (SARIF) is a JSON type format used for sharing static analysis results. Read more about the standard at [OASIS Static Analysis Results Interchange Format (SARIF)](https://github.com/oasis-tcs/sarif-spec), how CodeQL uses [SARIF Output](https://codeql.github.com/docs/codeql-cli/sarif-output/#sarif-output), and [an example of raw SARIF output](https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json).
+Static Analysis Results Interchange Format (SARIF) is a JSON type format used for sharing static analysis results. Read more about the standard at [OASIS Static Analysis Results Interchange Format (SARIF)](https://github.com/oasis-tcs/sarif-spec), how CodeQL uses [SARIF Output](https://codeql.github.com/docs/codeql-cli/sarif-output/#sarif-output), and [the schema json](https://github.com/oasis-tcs/sarif-spec/blob/main/sarif-2.1/schema/sarif-schema-2.1.0.json).
 
 There are several methods for interpreting the analysis results, including manually sorting through the objects. Here are a few that we use:
 
@@ -315,7 +315,7 @@ Queries are classified using statuses such as "error" "warning" and "problem" bu
 
 ## 5. Suppressing CodeQL Results (Optional)
 
-CodeQL for drivers supports suppressing results. Suppressions are currently provided as a convenience to help developers triage issues and reduce noise, not as a way to bypass the must-fix checks. They have no impact on generating a Driver Verification Log or passing the Static Tools Logo test at this time. To use suppressions, you must run the DriverAlertSuppression.ql query at the same time as the other queries or suites you wish to run.  By default, this query is enabled when running our suites from our githubs main/development branch.
+CodeQL for drivers supports suppressing results. Suppressions are currently provided as a convenience to help developers triage issues and reduce noise, not as a way to bypass the must-fix checks. They have no impact on generating a Driver Verification Log or passing the Static Tools Logo test at this time. To use suppressions, you must run the DriverAlertSuppression.ql query at the same time as the other queries or suites you wish to run. By default, this query is enabled when running our suites from our githubs main/development branch.
 
 For checks that have been ported from Code Analysis, existing Code Analysis suppressions will be honored. For more information, see [C++ warning pragma](/cpp/preprocessor/warning).
 
@@ -323,11 +323,11 @@ For checks that have been ported from Code Analysis, existing Code Analysis supp
 
 For checks that are new to CodeQL, you can suppress them by doing one of two things:
 
-- Write a “#pragma(suppress:the-rule-id-here)” annotation (minus quotes) on the line above the violation, as you would for Code Analysis.  “the-rule-id-here” can be replaced by the @id value in a given query’s metadata, viewable at the top of the file.
+- Write a “#pragma(suppress:the-rule-id-here)” annotation (minus quotes) on the line above the violation, as you would for Code Analysis. “the-rule-id-here” can be replaced by the @id value in a given query’s metadata, viewable at the top of the file.
 
-- Write a comment on the line above comprised of the text “lgtm[the-rule-id-here]” (minus quotes).  You will need to run the standard [C/C++ alert suppression query](https://github.com/github/codeql/blob/main/cpp/ql/src/AlertSuppression.ql) instead of the driver alert suppression query.  
+- Write a comment on the line above comprised of the text “lgtm[the-rule-id-here]” (minus quotes). You will need to run the standard [C/C++ alert suppression query](https://github.com/github/codeql/blob/main/cpp/ql/src/AlertSuppression.ql) instead of the driver alert suppression query. 
 
-Once a suppression is present and recognized, the resulting SARIF file will include data that a result was suppressed, and most result viewers will not show the result by default
+Once a suppression is present and recognized, the resulting SARIF file will include data that a result was suppressed, and most result viewers will not show the result by default.
 
 ## 6. Convert SARIF to Driver Verification Log Format (DVL)
 
@@ -665,13 +665,13 @@ See the [Windows Hardware Compatibility Program Certification Process](/windows-
 The motivation for requiring CodeQL to be run on driver source code can be summarized by two main reasons:
 
 1. Security of Windows is paramount and requiring CodeQL to be run on driver source code is one step in helping improve the security of components which get certified by Microsoft.
-1. CodeQL queries are actively developed by security engineers at Microsoft, as Microsoft is committed to ensuring that it's hardware ecosystem benefits from the same high-quality tooling that is used at Microsoft.
+1. CodeQL queries are actively developed by security engineers at Microsoft, as Microsoft is committed to ensuring that its hardware ecosystem benefits from the same high-quality tooling that is used at Microsoft.
 
 ### What types of drivers do CodeQL and the Static Tools Logo test apply to?
 
-At present, the Static Tools Logo test requires that CodeQL be run and the "Must-Fix" set of queries passed for all kernel-mode drivers excluding graphics drivers.  Note that running CodeQL on graphics drivers is **highly recommended** even though it is not currently required.  Some queries may also find useful defects in user-mode components.
+At present, the Static Tools Logo test requires that CodeQL be run and the "Must-Fix" set of queries passed for all kernel-mode drivers excluding graphics drivers. Note that running CodeQL on graphics drivers is **highly recommended** even though it is not currently required. Some queries may also find useful defects in user-mode components.
 
-We anticipate extending the test and its queries to require results for graphics drivers, user-mode drivers and driver components, and other driver package components in the future.  If you encounter unexpected behavior or false positives running CodeQL on graphics drivers or user-mode drivers, please file an issue on the [Windows-Driver-Developer-Supplemental-Tools repo](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools).
+We anticipate extending the test and its queries to require results for graphics drivers, user-mode drivers and driver components, and other driver package components in the future. If you encounter unexpected behavior or false positives running CodeQL on graphics drivers or user-mode drivers, please file an issue on the [Windows-Driver-Developer-Supplemental-Tools repo](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools).
 
 ### Which license governs the usage of CodeQL for driver developers?
 
@@ -687,7 +687,7 @@ The Static Tools Logo Test in the HLK is the test that enforces this requirement
 
 ### Are all defects reported by CodeQL true defects?
 
-Every CodeQL query has varying levels of precision. Our goal is to minimize false positives, but occasionally they will occur. Our suite of "Must-Fix" queries have been developed and hand-picked for use with the WHCP program because our extensive testing results in nearly 0 false positives. If you are seeing false positives from a query in the set of "Must-Fix" queries, email `stlogohelp@microsoft.com` immediately or file an issue on the [Windows-Driver-Developer-Supplemental-Tools repo](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/issues), and we will work to get it resolved as soon as possible.
+Every CodeQL query has varying levels of precision. Our goal is to minimize false positives, but occasionally they will occur. Our suite of "Must-Fix" queries have been developed and hand-picked for use with the WHCP program because our extensive testing results in nearly zero false positives. If you are seeing false positives from a query in the set of "Must-Fix" queries, email `stlogohelp@microsoft.com` immediately or file an issue on the [Windows-Driver-Developer-Supplemental-Tools repo](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/issues), and we will work to get it resolved as soon as possible.
 
 ### Does a query's classification of either "warning" or "error" matter for the purposes of the Static Tools Logo Test?
 
@@ -703,4 +703,4 @@ As part of the Windows Driver Kit (WDK) and Enterprise WDK (eWDK), Microsoft shi
 
 ### I have comments or questions around how to use CodeQL on my driver, where do I send feedback?
 
-Send feedback and questions to [stlogohelp@microsoft.com](mailto:stlogohelp@microsoft.com).  
+Send feedback and questions to [stlogohelp@microsoft.com](mailto:stlogohelp@microsoft.com). 
