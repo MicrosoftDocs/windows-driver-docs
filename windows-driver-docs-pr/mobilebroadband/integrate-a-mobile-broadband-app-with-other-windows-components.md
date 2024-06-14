@@ -1,7 +1,7 @@
 ---
 title: Integrate a Mobile Broadband App with Other Windows Components
 description: Integrate a mobile broadband app with other Windows components
-ms.date: 10/06/2023
+ms.date: 10/10/2023
 ---
 
 # Integrate a mobile broadband app with other Windows components
@@ -13,56 +13,41 @@ For additional user experience design guidelines for layout, navigation, command
 This topic contains the following sections:
 
 - [App settings](#app-settings)
-
-- [Error user experience](#errorux)
-
-- [App views](#appviews)
-
-- [Launch points](#launchpts)
-
-- [Tile and toast notifications](#tileandtoast)
-
-- [Splash screen](#splash)
-
-- [Quick summary](#qusum)
-
-- [Additional resources](#resources)
+- [Error user experience](#error-user-experience)
+- [App views](#app-views)
+- [Launch points](#launch-points)
+- [Tile and toast notifications](#tile-and-toast-notifications)
+- [Splash screen](#splash-screen)
+- [Quick summary](#quick-summary)
+- [Additional resources](#additional-resources)
 
 ## App settings
 
 You can use [App settings](/windows/uwp/app-settings/guidelines-for-app-settings) to include settings for your apps configuration. Some examples of these are as follows:
 
 - Sign in and sign out
-
 - View and edit the user profile
-
 - Change billing address
-
 - View and edit payment options
-
 - View and set marketing preferences
 
-## <span id="errorux"></span><span id="ERRORUX"></span>Error user experience
+## Error user experience
 
-### <span id="General"></span><span id="general"></span><span id="GENERAL"></span>General
+### General
 
 Your mobile broadband app can have a number of error cases that should be dealt with gracefully. Some common examples are as follows:
 
 - **Device is missing or unplugged** Appears when a device such as a SIM or a dongle is missing or unplugged.
-
 - **Locked device** Appears when a connected device is locked to the user.
-
 - **Internet connectivity lost** Appears when no network connection is detected.
-
 - **Multiple devices are plugged in** Appears when a built-in adaptor and an external dongle are plugged in. A notification bar error is recommended for such cases.
-
 - **Form field validation errors** Appears when a user enters incorrect information into a form. Validation errors should be shown inline so that the user knows the field with which the error is associated.
 
 For guidance on how to present errors, see [Laying out your UI](/previous-versions/windows/apps/hh465304(v=win.10)). In the example below, a notification bar is displayed at the top of the page.
 
 :::image type="content" source="images/mb-fig1-notificationbarerrors.png" alt-text="Screenshot of a notification bar displaying errors.":::
 
-### <span id="Errors_in_data_usage"></span><span id="errors_in_data_usage"></span><span id="ERRORS_IN_DATA_USAGE"></span>Errors in data usage
+### Errors in data usage
 
 The following error cases should be shown on the overview page in the following ways:
 
@@ -74,7 +59,7 @@ The following error cases should be shown on the overview page in the following 
 
 - **International roaming**: Indicate roaming at the bottom of the summary section.
 
-## <span id="appviews"></span><span id="APPVIEWS"></span>App views
+## App views
 
 Your app should be adaptive and be able to fit a number of layouts, including:
 
@@ -88,8 +73,8 @@ Your app should be adaptive and be able to fit a number of layouts, including:
 
 - Keyboard up
 
-    **Note**  
-    When the touch keyboard is up, make sure that elements such as form fields scroll appropriately.
+    > [!NOTE]
+    > When the touch keyboard is up, make sure that elements such as form fields scroll appropriately.
 
 The following examples show how some pages look when side by side with another app.
 
@@ -99,13 +84,13 @@ The following examples show how some pages look when side by side with another a
 
 Make sure that your app is accessible through app views, including high-contrast mode and screen reader readiness. For more information about how to make your app accessible, see [Accessibility in UWP apps using JavaScript](/previous-versions/windows/apps/hh452681(v=win.10)).
 
-## <span id="launchpts"></span><span id="LAUNCHPTS"></span>Launch points
+## Launch points
 
 Your mobile broadband app is available to users in the **All Apps** view, in Windows Connection Manager, or through a toast notification.
 
 :::image type="content" source="images/mb-fig4-entrypoints.png" alt-text="Diagram showing various entry points to launch a mobile broadband app.":::
 
-### <span id="Launch_from_Windows_Connection_Manager"></span><span id="launch_from_windows_connection_manager"></span><span id="LAUNCH_FROM_WINDOWS_CONNECTION_MANAGER"></span>Launch from Windows Connection Manager
+### Launch from Windows Connection Manager
 
 :::image type="content" source="images/mb-fig5-startfromwcm.png" alt-text="Screenshot of starting a mobile broadband app using Windows Connection Manager.":::
 
@@ -113,17 +98,17 @@ You can connect to the mobile broadband app by using Windows Connection Manager.
 
 :::image type="content" source="images/mb-fig6-wcmaccountinfo.png" alt-text="Screenshot of Windows Connection Manager displaying account and data usage information.":::
 
-**Automatic launch from connection manager during a captive portal purchase flow**
+#### Automatic launch from connection manager during a captive portal purchase flow
 
 When the user is connected to a captive portal network where web traffic is redirected, Windows provides you the option to automatically launch their app if it’s installed. The app should open to the Plans page that provides information on how to purchase Internet access.
 
-### <span id="Launch_app_from_tile_in_All_Apps_view"></span><span id="launch_app_from_tile_in_all_apps_view"></span><span id="LAUNCH_APP_FROM_TILE_IN_ALL_APPS_VIEW"></span>Launch app from tile in All Apps view
+### Launch app from tile in All Apps view
 
 Your app should support users who have multiple simultaneous accounts (for example, using two external USB mobile broadband adapters). When your app is launched from a tile, your app should let users select the account that they want to use.
 
 If your app was suspended or already running, it should show the last page used. If your app wasn’t already running or suspend information is not available, your app should open to the landing page.
 
-### <span id="tileandtoast"></span><span id="TILEANDTOAST"></span>Tile and toast notifications
+### Tile and toast notifications
 
 In the **Start** menu, tiles are the primary representation of an app. Users launch their apps through those tiles, which can display new, relevant, and tailored content through notifications. This makes the **Start** menu feel vibrant, and allows the user to see what's new at a glance. An app can also communicate time-critical events to the user through toast notifications, whether the user is in another app, on the **Start** screen, or on the Desktop. The methodology to design and deliver toast closely parallels that of tiles, thereby lowering the learning curve.
 
@@ -135,13 +120,13 @@ A toast notification can contain text and images but do not support secondary ac
 
 A toast notification should be used only for information of high interest to the user and typically involves some form of user opt-in. It is a good choice for incoming email alerts, IM chat requests, and breaking news. However, it is very important that when you consider using a toast notification, you realize that, due to its transient nature, the user might never see it. When using toast notifications for data usage overage or roaming alerts, consider showing the information on your tile and within your app views in case the end user misses the toast notification.
 
-### <span id="splash"></span><span id="SPLASH"></span>Splash screen
+### Splash screen
 
 You can use splash screen to promote branding. For more info about the splash screen, see [Adding a splash screen](/previous-versions/windows/apps/hh465332(v=win.10)).
 
 :::image type="content" source="images/mb-fig4-splash-screen.png" alt-text="Screenshot of a mobile broadband app's splash screen promoting branding.":::
 
-### <span id="qusum"></span><span id="QUSUM"></span>Quick summary
+### Quick summary
 
 Appropriate design for operator notifications:
 
@@ -157,12 +142,12 @@ Inappropriate design for operator notifications:
 
 - Don’t show user-to-user chat messages and promotions and advertisements mixed together with operator notifications and alerts, because end users can miss important operator notifications.
 
-### <span id="resources"></span><span id="RESOURCES"></span>Additional resources
+### Additional resources
 
 - [Working with tiles, badges, and toast notifications](/previous-versions/windows/apps/hh868259(v=win.10))
 
 - [Guidelines and checklist for toast notifications](/windows/uwp/controls-and-patterns/tiles-badges-notifications)
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 [Designing the user experience of a mobile broadband app](designing-the-user-experience-of-a-mobile-broadband-app.md)

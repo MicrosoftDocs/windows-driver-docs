@@ -23,7 +23,7 @@ Telecommunication applications cannot initiate long-term connections. However, i
 
 The results of the connect attempt are returned by using the [**IMbnConnectionEvents::OnConnectComplete**](/windows/win32/api/mbnapi/nf-mbnapi-imbnconnectionevents-onconnectcomplete) method. To disconnect when you are finished, invoke the [**IMbnConnection::Disconnect**](/windows/win32/api/mbnapi/nf-mbnapi-imbnconnection-disconnect) method. Status is returned by using [**IMbnConnectionEvents::OnDisconnectComplete**](/windows/win32/api/mbnapi/nf-mbnapi-imbnconnectionevents-ondisconnectcomplete).
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [Common tasks for mobile broadband Windows Runtime APIs](./create-a-mobilebroadbandaccount-object.md)

@@ -15,7 +15,7 @@ For example:
 account.currentNetwork.accessPointName
 ```
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [Common tasks for mobile broadband Windows Runtime APIs](./create-a-mobilebroadbandaccount-object.md)

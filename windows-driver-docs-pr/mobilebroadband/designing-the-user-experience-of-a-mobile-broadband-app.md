@@ -10,13 +10,11 @@ This topic provides information about how to design UWP mobile broadband apps fo
 
 The following sections are available in this topic:
 
-- [Key scenarios](#keyui)
+- [Key scenarios](#key-scenarios)
+- [App organization](#app-organization)
+- [Additional resources](#additional-resources)
 
-- [App organization](#apporg)
-
-- [Additional resources](#resources)
-
-## <span id="keyui"></span><span id="KEYUI"></span>Key scenarios
+## Key scenarios
 
 The mobile broadband app should include the following key scenarios:
 
@@ -38,7 +36,7 @@ The mobile broadband app should include the following key scenarios:
 
 - **Help and Support** Display troubleshooting and customer support contact information.
 
-## <span id="apporg"></span><span id="APPORG"></span>App organization
+## App organization
 
 The following shows how different pages in the app can be organized:
 
@@ -73,7 +71,7 @@ For more information about how to design these pages, see the following topics:
 
 - [Integrate a mobile broadband app with other Windows components](integrate-a-mobile-broadband-app-with-other-windows-components.md)
 
-## <span id="resources"></span><span id="RESOURCES"></span>Additional resources
+## Additional resources
 
 - [Index of UX guidelines for UWP apps](https://developer.microsoft.com/windows/apps/design)
 

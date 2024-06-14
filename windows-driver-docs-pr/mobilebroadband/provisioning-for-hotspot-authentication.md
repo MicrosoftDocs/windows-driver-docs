@@ -48,7 +48,7 @@ Because provisioning modifies system settings that persist after the user has ex
 |SIM present|Provisioning source|Signature requirement|User confirmation requirement|
 |----|----|----|----|
 |Yes, MB provider|Mobile broadband app|None|None|
-|Yes, MB provider|Operator web site|Certificate must:</br>- Chain back to trusted root CA</br>- Be associated with mobile broadband hardware in APN database or experience metadata|None|
+|Yes, MB provider|Operator web site|Certificate must:</br>- Chain back to trusted root CA</br>- Be associated with mobile broadband hardware in COSA database or experience metadata|None|
 |No, Wi-Fi provider|Mobile broadband app or web site|Certificate must:</br>- Chain back to trusted root CA</br>- Be marked for Extended Validation|User is prompted to confirm the first time the certificate is used; none thereafter.|
 
 ## Related topics

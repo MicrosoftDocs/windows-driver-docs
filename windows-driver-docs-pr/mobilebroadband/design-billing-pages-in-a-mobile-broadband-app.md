@@ -14,7 +14,7 @@ The **Make a payment** form should adhere to form guidelines that are described 
 
 :::image type="content" source="images/mb-fig2-makepaymentform.png" alt-text="Screenshot of the make payment form in a mobile broadband app.":::
 
-## <span id="Quick_summary"></span><span id="quick_summary"></span><span id="QUICK_SUMMARY"></span>Quick summary
+## Quick summary
 
 Appropriate design for the billing page:
 
@@ -36,7 +36,7 @@ Inappropriate design for the billing page:
 
 - Don’t link to external sites outside of the app.
 
-## <span id="Additional_resources"></span><span id="additional_resources"></span><span id="ADDITIONAL_RESOURCES"></span>Additional resources
+## Additional resources
 
 - For more information about views and layouts: see [Choosing a layout](/previous-versions/windows/apps/hh465327(v=win.10)).
 
@@ -50,6 +50,6 @@ Inappropriate design for the billing page:
 
 - For touch input guidelines, see [Quickstart: Touch input](/previous-versions/windows/apps/hh465387(v=win.10)).
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 [Designing the user experience of a mobile broadband app](designing-the-user-experience-of-a-mobile-broadband-app.md)

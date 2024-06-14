@@ -11,7 +11,7 @@ The Mobile Broadband SMS platform automatically segments long messages that are 
 
 Mobile network operators charge users per message segment. SMS platform automatically creates a maximum of 10 segments and truncates text above the limit.
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [Send SMS by using the text-mode interface](calculate-characters-and-segments-of-a-draft-sms.md)

@@ -18,7 +18,7 @@ The following topics are available in this section:
 
 -   [Communication channels](communication-channels.md)
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [Overview of mobile broadband](overview-of-mobile-broadband.md)

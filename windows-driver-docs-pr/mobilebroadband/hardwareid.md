@@ -18,7 +18,7 @@ For service metadata packages, the HardwareID values represent the mobile networ
 
 -   CDMA networks: Provider ID value (also known as a SID)
 
-## <span id="Usage"></span><span id="usage"></span><span id="USAGE"></span>Usage
+## Usage
 
 
 ``` syntax
@@ -27,22 +27,22 @@ For service metadata packages, the HardwareID values represent the mobile networ
 </HardwareID>
 ```
 
-## <span id="Attributes"></span><span id="attributes"></span><span id="ATTRIBUTES"></span>Attributes
+## Attributes
 
 
 There are no attributes.
 
-## <span id="Text_value"></span><span id="text_value"></span><span id="TEXT_VALUE"></span>Text value
+## Text value
 
 
 Generating the proper hardware ID values as part of metadata creation involves a complex algorithm. You should generate hardware ID values by using MBIDGenerator.exe included in the Windows Driver Kit (WDK).
 
-## <span id="Child_elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Child elements
+## Child elements
 
 
 There are no child elements.
 
-## <span id="Parent_elements"></span><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Parent elements
+## Parent elements
 
 
 <table>
@@ -66,7 +66,7 @@ There are no child elements.
 
  
 
-## <span id="XSD"></span><span id="xsd"></span>XSD
+## XSD
 
 
 ``` syntax
@@ -81,7 +81,7 @@ There are no child elements.
 </xs:simpleType>
 ```
 
-## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
+## Remarks
 
 
 -   Hardware IDs that are included in PackageInfo.xml must have the “DOID:” prefix added to them. For example: DOID:MBAE:0:*hashednumber1*

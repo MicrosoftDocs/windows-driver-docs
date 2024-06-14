@@ -36,7 +36,7 @@ Relevant account information for prepaid accounts includes the following:
 
 - Plan expiration date (if it exists)
 
-## <span id="Quick_summary"></span><span id="quick_summary"></span><span id="QUICK_SUMMARY"></span>Quick summary
+## Quick summary
 
 Appropriate design for displaying account info:
 
@@ -55,6 +55,6 @@ Inappropriate design for displaying account information:
 
 - Don’t show a long paragraph of legal disclaimers next to data usage. This can distract users from the main focus of the account usage section. Instead, show a link to a separate section of the app that has the full legal disclaimers.
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 [Designing the user experience of a mobile broadband app](designing-the-user-experience-of-a-mobile-broadband-app.md)

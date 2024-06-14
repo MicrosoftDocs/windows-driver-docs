@@ -1,15 +1,15 @@
 ---
 title: Design Purchase Flows in a Mobile Broadband App
 description: Design purchase flows in a mobile broadband app
-ms.date: 10/05/2023
+ms.date: 10/10/2023
 ---
 
 # Design purchase flows in a mobile broadband app
 
 Your mobile broadband app can include a purchase flow for users to use to purchase plans. For first-time purchases, support your purchase flow over the web. Here are some standard recommendations for the purchase flow.
 
-**Note**  
-Do not use an iframe to host these flows in your app.
+> [!NOTE]
+> Do not use an iframe to host these flows in your app.
 
 1. Show users a data breakdown for users to estimate the data that they will require. This can help the user select the best plan to purchase.
 
@@ -39,7 +39,7 @@ Do not use an iframe to host these flows in your app.
 
 4. After the user enters their information, allow them to review the order before completing the purchase. If the order is placed and activation is quick, continue with activation and redirect the app to the landing page. If activation is expected to take longer, you can include a placeholder page for activation progress and use a progress control to show that activation is happening. For more info about progress controls, see [Quickstart: adding progress controls](/previous-versions/windows/apps/hh465487(v=win.10)).
 
-## <span id="Quick_summary"></span><span id="quick_summary"></span><span id="QUICK_SUMMARY"></span>Quick summary
+## Quick summary
 
 Appropriate design for purchase pages:
 
@@ -65,7 +65,7 @@ Inappropriate design for the purchase, recharge, refill, and billing pages:
 
 - Don’t link to websites outside of the app.
 
-## <span id="Additional_resources"></span><span id="additional_resources"></span><span id="ADDITIONAL_RESOURCES"></span>Additional resources
+## Additional resources
 
 - For more information about views and layouts: see [Choosing a layout](/previous-versions/windows/apps/hh465327(v=win.10)).
 
@@ -79,6 +79,6 @@ Inappropriate design for the purchase, recharge, refill, and billing pages:
 
 - For touch input guidelines, see [Quickstart: Touch input](/previous-versions/windows/apps/hh465387(v=win.10)).
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 [Designing the user experience of a mobile broadband app](designing-the-user-experience-of-a-mobile-broadband-app.md)

@@ -103,7 +103,7 @@ function smsMessageReadSuccess(smsMessage)
 }
 ```
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [Developing SMS apps](developing-sms-apps.md)

@@ -1,7 +1,7 @@
 ---
 title: Design Branding in a Mobile Broadband App
 description: Design branding in a mobile broadband app
-ms.date: 10/05/2023
+ms.date: 10/10/2023
 ---
 
 # Design branding in a mobile broadband app
@@ -52,7 +52,7 @@ You can use branding in the following places in your mobile broadband app:
 
 For more info about Windows 10 branding guidance, see [UWP app marketing guidelines](/windows/uwp/publish/app-marketing-guidelines).
 
-## <span id="Quick_summary"></span><span id="quick_summary"></span><span id="QUICK_SUMMARY"></span>Quick summary
+## Quick summary
 
 Appropriate design for operator branding:
 
@@ -64,14 +64,12 @@ Inappropriate design for operator branding:
 
 - Don’t fill up white space with icons and images.
 
-## <span id="Additional_resources"></span><span id="additional_resources"></span><span id="ADDITIONAL_RESOURCES"></span>Additional resources
+## Additional resources
 
-- [Integrate a mobile broadband app with other Windows components](integrate-a-mobile-broadband-app-with-other-windows-components.md#splash)
-
+- [Integrate a mobile broadband app with other Windows components](integrate-a-mobile-broadband-app-with-other-windows-components.md#splash-screen)
 - [Integrate a mobile broadband app with other Windows components](integrate-a-mobile-broadband-app-with-other-windows-components.md#app-settings)
+- [Integrate a mobile broadband app with other Windows components](integrate-a-mobile-broadband-app-with-other-windows-components.md#tile-and-toast-notifications)
 
-- [Integrate a mobile broadband app with other Windows components](integrate-a-mobile-broadband-app-with-other-windows-components.md#tileandtoast)
+## Related topics
 
-## <span id="related_topics"></span>Related topics
-
-[Designing the user experience of a mobile broadband app](designing-the-user-experience-of-a-mobile-broadband-app.md)
+- [Designing the user experience of a mobile broadband app](designing-the-user-experience-of-a-mobile-broadband-app.md)

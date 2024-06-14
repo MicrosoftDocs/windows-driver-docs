@@ -19,7 +19,7 @@ The *View my account* link could be configured to:
 - Launch a web browser and open a defined web page.
 - Launch the Mobile Plans app and open the mobile operator web portal.
 
- Once you have decided on one of these options, please request a COSA database update to implement the right behavior. For more info, please see [Planning your desktop COSA/APN database submission](planning-your-desktop-cosa-apn-database-submission.md).
+ Once you have decided on one of these options, please request a COSA database update to implement the right behavior. For more info, please see [Planning your desktop COSA database submission](planning-your-desktop-cosa-database-submission.md).
 
 The following settings apply for the above options:
 
@@ -228,6 +228,6 @@ The following COSA settings are required:
 - DataMarketplaceRoamingUIEnabled
 - SIM ICCID range (ICCID Range – Start and ICCID Range – End)
 
-For more info about all supported fields, see the Desktop COSA-only settings on [Desktop COSA/APN database settings](desktop-cosa-apn-database-settings.md).
+For more info about all supported fields, see the Desktop COSA-only settings on [Desktop COSA database settings](desktop-cosa-database-settings.md).
 
 Download the [COSA/APN update spreadsheet](https://go.microsoft.com/fwlink/p/?linkid=851213).

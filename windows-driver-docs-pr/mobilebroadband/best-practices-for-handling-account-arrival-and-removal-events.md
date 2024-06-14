@@ -17,7 +17,7 @@ Mobile broadband accounts can be added or removed during the lifetime of the mob
 
 -   Remember that account watcher objects automatically stop when the app gets suspended by Windows, and restart when the app resumes. This is the same result as if your app had called [**Stop**](/uwp/api/Windows.Networking.NetworkOperators.MobileBroadbandAccountWatcher#Windows_Networking_NetworkOperators_MobileBroadbandAccountWatcher_Stop) and [**Start**](/uwp/api/Windows.Networking.NetworkOperators.MobileBroadbandAccountWatcher#Windows_Networking_NetworkOperators_MobileBroadbandAccountWatcher_Start), and results in the same events. Use these events to bring the app up-to-date with anything significant that occurred during the time that it was suspended.
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [Best practices for using Mobile Broadband Windows Runtime API](best-practices-for-handling-account-arrival-and-removal-events.md)

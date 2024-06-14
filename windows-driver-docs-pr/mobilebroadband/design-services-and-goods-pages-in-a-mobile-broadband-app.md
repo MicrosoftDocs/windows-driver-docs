@@ -10,7 +10,7 @@ You can use your mobile broadband app to publicize other related services. Use t
 
 :::image type="content" source="images/mb-fig1-services-and-goods-page.png" alt-text="Screenshot of a mobile app displaying categorized services and goods.":::
 
-## <span id="Quick_summary"></span><span id="quick_summary"></span><span id="QUICK_SUMMARY"></span>Quick summary
+## Quick summary
 
 Appropriate design for the Services and Goods page:
 
@@ -26,10 +26,10 @@ Inappropriate design for the services page:
 
 - Don’t link to external sites outside of the app.
 
-## <span id="Additional_resources"></span><span id="additional_resources"></span><span id="ADDITIONAL_RESOURCES"></span>Additional resources
+## Additional resources
 
 [Quickstart: Adding a ListView](/previous-versions/windows/apps/hh465496(v=win.10))
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 [Designing the user experience of a mobile broadband app](designing-the-user-experience-of-a-mobile-broadband-app.md)

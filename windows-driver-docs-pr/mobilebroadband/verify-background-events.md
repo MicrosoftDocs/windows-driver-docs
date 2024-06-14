@@ -25,7 +25,7 @@ Next, check that you can successfully authenticate to the network. In particular
 
 -   **Access denied** In certain cases, your app will receive the background event, but might not be able to retrieve the details of the authentication attempt. In this case, your background event should stop cleanly as soon as possible.
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [Get started with a hotspot authentication app](review-the-hotspot-authentication-sample.md)

@@ -58,7 +58,7 @@ This app does not provide connection management functionality, but instead provi
 
 Mobile broadband app experience apps, or MBAE apps, are replaced in Windows 10, version 1803 and later by MO UWP apps. MO UWP apps are now part of COSA and don't require creating service metadata on the Windows Dev Center Hardware dashboard (Sysdev). Windows 8, Windows 8.1, and versions of Windows 10 before 1803 continue to use MBAE apps via service metadata published on Sysdev. 
 
-In Windows 10, version 1803, MBAE apps work without having to migrate to COSA. However, we strongly recommend that mobile operators migrate to an MO UWP app and COSA. For details about COSA, see [COSA overview](cosa-overview.md). For more information about COSA settings, see [Desktop COSA/APN database settings](desktop-cosa-apn-database-settings.md).
+In Windows 10, version 1803, MBAE apps work without having to migrate to COSA. However, we strongly recommend that mobile operators migrate to an MO UWP app and COSA. For details about COSA, see [COSA overview](cosa-overview.md). For more information about COSA settings, see [Desktop COSA database settings](desktop-cosa-database-settings.md).
 
 If the **AppID** setting is filled out in COSA, Windows will not check for a matching Sysdev metadata package to download your app. If **AppID** is not filled out, then Windows will check for a matching Sysdev metadata package to download your app.
 

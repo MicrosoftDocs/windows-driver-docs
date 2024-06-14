@@ -20,6 +20,6 @@ The following topics are available in this section:
 
 - [PnP-X for mobile broadband apps](pnp-x-for-mobile-broadband-apps.md)
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 [Enabling mobile broadband experiences using portable hotspot devices](enabling-mobile-broadband-experiences-using-portable-hotspot-devices.md)

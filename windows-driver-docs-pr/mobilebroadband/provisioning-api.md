@@ -13,7 +13,7 @@ You can also call the Provisioning API at any time to update the information tha
 
 For more information about the Provisioning API, see [**ProvisioningAgent class**](/uwp/api/Windows.Networking.NetworkOperators.ProvisioningAgent).
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [List of mobile broadband Windows Runtime APIs](list-of-mobile-broadband-windows-runtime-apis.md)

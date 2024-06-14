@@ -20,7 +20,7 @@ Your app can receive background events to process SMS or USSD notifications. For
 - [NetworkOperatorNotificationTrigger](/uwp/api/windows.applicationmodel.background.networkoperatornotificationtrigger)
 - [SmsMessageReceivedTrigger](/uwp/api/windows.applicationmodel.background.smsmessagereceivedtrigger)
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [Mobile broadband app scenarios](./account-management.md)
