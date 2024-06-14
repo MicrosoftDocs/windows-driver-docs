@@ -58,7 +58,7 @@ If a minifilter changes the value of **MdlAddress**, then after its post operati
 
 If the IRP_MN_COMPLETE bit is set in Iopb->MinorFunction then **MdlAddress** is the address to send to [CcMdlReadComplete](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ccmdlreadcomplete).
 
-If the IRP_MN_MDL bit (and not the IRP_MN_COMPLETE bit) is set in Iopb->MinorFunction then **MdlAddress** is the address to send to [CcMdlRead](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ccmdlread).  
+If the IRP_MN_MDL bit (and not the IRP_MN_COMPLETE bit) is set in Iopb->MinorFunction then **MdlAddress** is the address to send to [CcMdlRead](/previous-versions/ff539159(v=vs.85)).  
 
 IRP_MJ_READ can be an IRP-based operation or a fast I/O operation.
 

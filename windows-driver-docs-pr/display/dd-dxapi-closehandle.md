@@ -9,7 +9,7 @@ ms.date: 10/12/2022
 
 # DD\_DXAPI\_CLOSEHANDLE control code
 
-A video capture driver passes DD\_DXAPI\_CLOSEHANDLE in the *dwFunctionNum* parameter of the [**DxApi**](/windows-hardware/drivers/ddi/dxapi/nf-dxapi-dxapi) function to close the kernel-mode handle to the DirectDraw object, surface, VPE object, or VPE capture object.
+A video capture driver passes DD\_DXAPI\_CLOSEHANDLE in the *dwFunctionNum* parameter of the [**DxApi**](nf-dxapi-dxapi.md) function to close the kernel-mode handle to the DirectDraw object, surface, VPE object, or VPE capture object.
 
 ## Input Parameters
 
@@ -29,14 +29,7 @@ This function identifier can only be called at PASSIVE\_LEVEL.
 
 ## Requirements
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Ddkmapi.h (include Ddkmapi.h)</td>
-</tr>
-</tbody>
-</table>
+Header file: *Ddkmapi.h* (include *Ddkmapi.h*)
 
 ## See also
 

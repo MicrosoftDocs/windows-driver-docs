@@ -1344,6 +1344,11 @@
           href: -bthkd-sdpnode.md
         - name: "!bthkd.sdpstream"
           href: -bthkd-sdpstream.md
+      - name: "Audio Class Extensions (Acxkd.dll)"
+# Auto-expanded node
+        items: 
+        - name: "Audio Class Extensions (Acxkd.dll)"
+          href: -acxkd.md
       - name: "GPIO Extensions"
 # Auto-expanded node
         items: 
@@ -1837,6 +1842,11 @@
           href: -ks-pciks.md
         - name: "!ks.topology"
           href: -ks-topology.md
+      - name: "ACX KD Audio Class Extension (AcxKd.dll)"
+# Auto-expanded node
+        items: 
+        - name: "ACX KD Audio Class Extension (AcxKd.dll)"
+          href: -acxkd.md          
       - name: "SCSI Miniport Extensions (Scsikd.dll and Minipkd.dll)"
 # Auto-expanded node
         items: 

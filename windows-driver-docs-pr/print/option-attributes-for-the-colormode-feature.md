@@ -24,8 +24,6 @@ The following table lists the attributes associated with the ColorMode feature. 
 | \***PaletteSize** | Numeric value representing the number of entries in the color palette used with the specified option. | Optional. If not specified, the default value is 2. |
 | \***RasterMode** | DIRECT or INDEXED, indicating whether the raster data is sent directly to the printer or is indexed through a color palette. | Optional. If not specified, the default value is INDEXED. |
 
-For examples, see the [sample GPD files](sample-gpd-files.md).
-
 For information about additional option attributes, see [Option Attributes for All Features](option-attributes-for-all-features.md).
 
 Also see [Controlling Image Quality](controlling-image-quality.md).

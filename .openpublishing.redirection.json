@@ -15010,6 +15010,26 @@
             "source_path":  "windows-driver-docs-pr/kernel/nf-wdm-rtlzerovolatilememory.md",
             "redirect_URL":  "/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlzerovolatilememory",
             "redirect_document_id":  false
+        },  
+        {
+            "source_path":  "windows-driver-docs-pr/print/sample-gpd-files.md",
+            "redirect_URL":  "/windows-hardware/samples",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/samples/biometrics-driver-samples.md",
+            "redirect_URL":  "/windows-hardware/samples",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/samples/print-driver-samples.md",
+            "redirect_URL":  "/windows-hardware/samples",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/samples/windows-portable-device--wpd--driver-samples.md",
+            "redirect_URL":  "/windows-hardware/samples",
+            "redirect_document_id":  false
         }
     ]
 }

@@ -18,10 +18,6 @@ And if an enterprise chooses to block printer extensions altogether, this can be
 
 ## Building a printer extension
 
-The [Printer Extension Sample](/samples/microsoft/windows-driver-samples/printer-extension-sample/) on GitHub shows how to build a printer extension using C#. In order to allow code sharing between UWP device apps and printer extensions, this sample uses two projects: PrinterExtensionLibrary (a C) and ExtensionSample (a printer extension that is dependent on the PrinterExtensionLibrary).
-
-The code snippets shown in this article are all taken from the PrinterExtensionSample solution. If you're building a printer extension in C, C++ or some other COM-based language, the concepts are similar but the APIs must instead match those specified in *PrinterExtension.IDL*, which is included in the Windows Driver Kit. The code comments in the PrinterExtensionLibrary from the sample document also include code comments that indicate the underlying COM interface that a particular object corresponds to.
-
 When you're developing a printer extension, there are six main areas of focus that you must be aware of. These focus areas are shown in the following list.
 
 - Registration
@@ -200,7 +196,7 @@ Print preferences are driven by the PrintSchemaEventArgs.Ticket object. This obj
 
 Inside each [**IPrintSchemaTicket**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintschematicket) or [**IPrintSchemaCapabilities**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintschemacapabilities) object there are features ([**IPrintSchemaFeature**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintschemafeature)) and options ([**IPrintSchemaOption**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintschemaoption)). While the interfaces used for features and options are the same regardless of the origin, the behavior varies slightly as a result of the underlying XML. For example, PrintCapabilities documents specify many options per feature, while PrintTicket documents specify only the selected (or default) option. Similarly, PrintCapabilities documents specify localized display strings, whereas PrintTicket documents don't.
 
-The [Printer Extension Sample](/samples/microsoft/windows-driver-samples/printer-extension-sample/) uses data binding to create ComboBox controls for printer preferences. Microsoft recommends using data binding as it makes the code easier to maintain by reducing scattering. For more information on data binding in WPF, see [Data Binding Overview](/dotnet/desktop/wpf/data/?view=netdesktop-6.0&preserve-view=true).
+For more information on data binding in WPF, see [Data Binding Overview](/dotnet/desktop/wpf/data/?view=netdesktop-6.0&preserve-view=true).
 
 In order to maximize performance, Microsoft recommends that calls to GetPrintCapabilities should only be done when it's necessary to update the PrintCapabilities document.
 
@@ -254,7 +250,7 @@ private void OnBidiResponseReceived(object sender, PrinterQueueEventArgs e)
 
 Printer notifications are invoked in precisely the same way as print preferences. In the OnDriverEvent handler, if IPrinterExtensionEventArgs indicates that a ReasonID matches the DriverEvents GUID, then we can build an experience to handle this event.
 
-The [Printer Extension Sample](/samples/microsoft/windows-driver-samples/printer-extension-sample/) project doesn't demonstrate a functional printer notifications experience, but the following variables are most helpful in handling this.
+The following variables are most helpful in handling a functional printer notifications experience.
 
 - PrinterExtensionEventArgs.BidiNotification – This carries the Bidi XML that caused the event to be triggered.
 
@@ -322,7 +318,5 @@ The Printer Extension Sample demonstrates how to create a UI that is generally l
 [Native Image Generator](/dotnet/framework/tools/ngen-exe-native-image-generator)
 
 [Print Schema Interfaces](/windows-hardware/drivers/ddi/_print/index)
-
-[Printer Extension Sample](/samples/microsoft/windows-driver-samples/printer-extension-sample/)
 
 [Windows Performance Analysis Tools](/windows-hardware/test/wpt/)

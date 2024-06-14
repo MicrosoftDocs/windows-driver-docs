@@ -239,8 +239,6 @@
       href: unidrv-user-interface.md
     - name: "Unidrv Renderer"
       href: unidrv-renderer.md
-    - name: "Sample GPD Files"
-      href: sample-gpd-files.md
   - name: "Introduction to GPD Files"
 # Auto-expanded node
     items: 

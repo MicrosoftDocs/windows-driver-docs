@@ -20,5 +20,3 @@ The following table lists the rectangle area fill commands. All commands are spe
 | CmdRectWhiteFill | Command to white fill a rectangle (erases the background). | Optional. If not specified, Unidrv assumes no erasing white fill. In that case, Unidrv returns failure if an application requests white fill, because gray fill cannot erase the background. |
 | CmdSetRectHeight | Command to set the rectangle height. | Optional. Must be specified if CmdSetRectWidth is specified. |
 | CmdSetRectWidth | Command to set the rectangle width. | Optional. Must be specified if CmdSetRectHeight is specified. |
-
-For GPD examples, see [Sample GPD files](sample-gpd-files.md).

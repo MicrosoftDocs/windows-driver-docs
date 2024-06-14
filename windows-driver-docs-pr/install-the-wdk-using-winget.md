@@ -97,18 +97,18 @@ winget install --source winget --exact --id Microsoft.WindowsWDK.10.0.26100 --lo
 
 ### Step 3: Install WDK Visual Studio extension
 
-After installing the WDK from command line, you will need to install the Windows Driver Kit Visual Studio extension separately to be able to build and test drivers. By default, the extension is located under `%ProgramFiles(x86)%\Windows Kits\10\Vsix\VS2022\10.0.26100.0\WDK.vsix`.
+After installing the WDK from command line, you will need to install the Windows Driver Kit Visual Studio extension separately to be able to build and test drivers. By default, the extension is located under `%ProgramFiles(x86)%\Windows Kits\10\Vsix\VS2022\10.0.26100.0\%PROCESSOR_ARCHITECTURE%\WDK.vsix`.
 
 Using Command Prompt:
 ```cmd
 for /f "usebackq tokens=*" %i in (`"%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vswhere.exe" -nologo -latest -products * -property enginePath`) do (
-  "%i\VSIXInstaller.exe" "%ProgramFiles(x86)%\Windows Kits\10\Vsix\VS2022\10.0.26100.0\WDK.vsix"
+  "%i\VSIXInstaller.exe" "%ProgramFiles(x86)%\Windows Kits\10\Vsix\VS2022\10.0.26100.0\%PROCESSOR_ARCHITECTURE%\WDK.vsix"
 )
 ```
 
 Using PowerShell:
 ```powershell
-& $(& "${env:ProgramFiles(x86)}\Microsoft Visual Studio\Installer\vswhere.exe" -nologo -latest -products * -property enginePath | Join-Path -ChildPath 'VSIXInstaller.exe') "${env:ProgramFiles(x86)}\Windows Kits\10\Vsix\VS2022\10.0.26100.0\WDK.vsix"
+& $(& "${env:ProgramFiles(x86)}\Microsoft Visual Studio\Installer\vswhere.exe" -nologo -latest -products * -property enginePath | Join-Path -ChildPath 'VSIXInstaller.exe') "${env:ProgramFiles(x86)}\Windows Kits\10\Vsix\VS2022\10.0.26100.0\${env:PROCESSOR_ARCHITECTURE}\WDK.vsix"
 ```
 
 ## Install other WDK versions using WinGet
@@ -173,7 +173,7 @@ Using PowerShell:
 
 By [using a WinGet Configuration file](/windows/package-manager/configuration/#use-a-winget-configuration-file-to-configure-your-machine), you can set up a new machine for driver development with minimal manual intervention.
 
-A [configuration file](https://aka.ms/wdk_winget_config_26100) for installing the Windows 11, version 24H2 WDK and its dependencies is provided for your convenience. This configuration will set up the following components:
+A [configuration file](https://raw.githubusercontent.com/microsoft/Windows-driver-samples/main/configuration.dsc.yaml) for installing the Windows 11, version 24H2 WDK and its dependencies is provided for your convenience. This configuration will set up the following components:
 
 * Visual Studio 2022 Community.
 * Visual Studio required workflows and components for driver development.
@@ -203,7 +203,7 @@ Make sure that you have WinGet version 1.6 or higher installed on the machine yo
 
 ### Step 2: Download the WDK Configuration file
 
-The configuration description file can be downloaded from [here](https://aka.ms/wdk_winget_config_26100). Save this file as `configuration.dsc.yml` and take note of its location.
+The configuration description file can be downloaded from [here](https://raw.githubusercontent.com/microsoft/Windows-driver-samples/main/configuration.dsc.yaml). Save this file as `configuration.dsc.yml` and take note of its location.
 
 > [!TIP]
 > The provided configuration file will install the Community edition of Visual Studio 2022. If you need a different edition, you can edit `Microsoft.VisualStudio.2022.Community` and `Microsoft.VisualStudio.Product.Community` product IDs with different IDs for the edition you would like to install (for Professional: `Microsoft.VisualStudio.2022.Professional` and `Microsoft.VisualStudio.Product.Professional`; for Enterprise: `Microsoft.VisualStudio.2022.Enterprise` and `Microsoft.VisualStudio.Product.Enterprise`).

@@ -6,8 +6,6 @@
   href: avstream-driver-samples.md
 - name: "Battery driver samples"
   href: battery-driver-samples.md
-- name: "Biometrics driver samples"
-  href: biometrics-driver-samples.md
 - name: "Bluetooth driver samples"
   href: bluetooth-driver-samples.md
 - name: "File system driver samples"
@@ -32,8 +30,6 @@
   href: power-framework--pofx--driver-samples.md
 - name: "Point of service (POS) driver samples"
   href: point-of-service--pos--driver-samples.md
-- name: "Print driver samples"
-  href: print-driver-samples.md
 - name: "Secure Digital (SD) driver samples"
   href: secure-digital--sd--driver-samples.md
 - name: "Security driver samples"
@@ -64,5 +60,3 @@
   href: wia-driver-samples.md
 - name: "Windows Management Instrumentation (WMI) driver samples"
   href: windows-management-instrumentation--wmi--driver-samples.md
-- name: "Windows Portable Device (WPD) driver samples"
-  href: windows-portable-device--wpd--driver-samples.md

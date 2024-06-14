@@ -5,7 +5,7 @@ keywords:
 - kernel-mode drivers WDK KMDF , revision history
 - KMDF WDK , revision history
 - Kernel-Mode Driver Framework WDK , revision history
-ms.date: 10/31/2023
+ms.date: 06/06/2024
 ---
 
 # KMDF Version History
@@ -34,7 +34,7 @@ The following table shows the release history of the KMDF library. You can use t
 | 1.1          | Download only                | None                                                         | Windows 2000 and later                                  |
 | 1.0          | Download only                | None                                                         | Windows XP and later                                    |
 
-You can use the Windows Driver Kit (WDK) with Microsoft Visual Studio 2019 to build drivers that run on Windows 10 and later.
+You can use the Windows Driver Kit (WDK) with Microsoft Visual Studio 2022 to build drivers that run on Windows 10 and later.
 
 For help determining what version of WDF to use, see [Which framework version should I use?](building-and-loading-a-kmdf-driver.md#which-framework-version-should-i-use).
 

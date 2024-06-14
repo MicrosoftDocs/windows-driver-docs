@@ -19,5 +19,3 @@ The Universal Printer Driver (Unidrv) is the Microsoft Corporation's standard pr
 [Unidrv User Interface](unidrv-user-interface.md)
 
 [Unidrv Renderer](unidrv-renderer.md)
-
-[Sample GPD Files](sample-gpd-files.md)

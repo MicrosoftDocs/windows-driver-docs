@@ -36,8 +36,6 @@ All paper size specifications for the following attributes must be expressed rel
 | \***RotateSize?** | **TRUE** or **FALSE**, indicating whether Unidrv should rotate the page dimensions because the paper (typically envelopes) is fed in sideways. | Optional. If not specified, the default value is **FALSE**. Can be used with any standard option for the PaperSize feature, except CUSTOMSIZE. |
 | \***TopMargin** | Numeric value representing the minimum allowable top margin, in y master units, for user-specified paper sizes associated with the CUSTOMSIZE option. Value is relative to the top of the physical page. | Optional. If not specified, the default value is 0. Used only with the CUSTOMSIZE option. Portrait orientation is assumed. For more information, see [Specifying Paper Sizes](specifying-paper-sizes.md). |
 
-For examples, see the [sample GPD files](sample-gpd-files.md).
-
 ## CUSTOMSIZE Parameter Expressions
 
 CUSTOMIZE parameter expressions are a restricted form of the [command string format](command-string-format.md). Text strings are not allowed.

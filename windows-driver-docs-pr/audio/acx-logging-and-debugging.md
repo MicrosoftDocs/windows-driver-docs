@@ -1,7 +1,7 @@
 ---
 title: ACX Logging and Debugging
 description: This topic provides information on logging, tracing and debugging of the ACX Audio Class Extensions.
-ms.date: 09/29/2023
+ms.date: 05/03/2024
 ms.localizationpriority: medium
 ---
 
@@ -87,8 +87,7 @@ ACX drivers are WDF drivers, so the debugging techniques described for WDF drive
 
 To aid debugging, ACX has a companion kernel debugger extension library (AcxKd.dll). This library aids developers in tracking down issue on single and multi-stack audio paths. The kd extension allows developer to look inside ACX structures.
 
->[!NOTE]
-> This debugger extension is under development and information will be provided here when it is available.
+For more information about debugging ACX drivers and working with the AcxKd.dll debugger extension, see [!acxkd](../debuggercmds/-acxkd.md).
 
 ## See also
 

@@ -22,5 +22,3 @@ For more information about raster data compression commands, see [Compressing Ra
 | CmdEnableFE_RLE | Command to enable the printer's acceptance of FE-RLE-compressed data. | Optional. If not specified, Unidrv does not use FE-RLE compression. |
 | CmdEnableOEMComp | Command to enable the printer's acceptance of a customized compressed data type. | Optional. If not specified, Unidrv does not use customized data compression. |
 | CmdEnableTIFF4 | Command to enable the printer's acceptance of TIFF 4.0-compressed data. | Optional. If not specified, Unidrv does not use TIFF4.0 compression. |
-
-For GPD examples, see [Sample GPD files](sample-gpd-files.md).

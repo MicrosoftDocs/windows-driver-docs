@@ -34,10 +34,6 @@ The following table lists all of the standard features, in alphabetical order, a
 | N-Up | NUp | Number of pages to print on each sheet | No standard options. All options are customized. | Optional. |
 | Passcode | JobPasscode | Job passcode | See [Driver support for protected printing](driver-support-for-protected-printing.md). Customized options are not allowed. | Optional. If not specified, the default value is OFF. |
 
-For GPD examples, see [Sample GPD files](sample-gpd-files.md).
-
 ## Related topics
-
-[Sample GPD files](sample-gpd-files.md)
 
 [V4 printer driver localization](v4-driver-localization.md)

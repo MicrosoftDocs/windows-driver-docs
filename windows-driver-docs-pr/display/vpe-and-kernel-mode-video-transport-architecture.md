@@ -12,7 +12,7 @@ ms.date: 04/20/2017
 
 # VPE and Kernel-Mode Video Transport Architecture
 
-This section provides some details about the Windows 2000 and later architecture for the video port extensions (VPE) and kernel-mode video transport in DirectX 5.0 and later versions. The architecture for kernel-mode video transport is based on new functions that Microsoft added as device-independent code. Kernel-mode video transport consists of a [**DxApi**](/windows-hardware/drivers/ddi/dxapi/nf-dxapi-dxapi) function that is supplied as part of DirectDraw, the [video miniport driver](video-miniport-drivers-in-the-windows-2000-display-driver-model.md), and the COM interface methods supplied as part of DirectDraw.
+This section provides some details about the Windows 2000 and later architecture for the video port extensions (VPE) and kernel-mode video transport in DirectX 5.0 and later versions. The architecture for kernel-mode video transport is based on new functions that Microsoft added as device-independent code. Kernel-mode video transport consists of a [**DxApi**](nf-dxapi-dxapi.md) function that is supplied as part of DirectDraw, the [video miniport driver](video-miniport-drivers-in-the-windows-2000-display-driver-model.md), and the COM interface methods supplied as part of DirectDraw.
 
 ## Windows 2000 and Later
 

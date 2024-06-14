@@ -44,6 +44,4 @@ The following table lists the root-level-only attributes.
 | **rcPrinterIconID** | Resource ID of an RC_ICON resource representing an icon associated with the printer. | Optional. If not specified, a default printer icon is displayed. It is recommended that all RC_ICON resource IDs be numbered contiguously starting with 1. |
 | **ResourceDLL** | Quoted string containing the name, without path information, of a resource DLL. | Optional. See [Using resource DLLs in a minidriver](using-resource-dlls-in-a-minidriver.md). |
 
-For examples, see the [Sample GPD files](sample-gpd-files.md).
-
 For information about new root-level-only attributes for Windows Vista, see [New root-level-only GPD attributes for Windows Vista](new-root-level-only-gpd-attributes-for-windows-vista.md) and [New root-level-only PPD attributes for Windows Vista](new-root-level-only-ppd-attributes-for-windows-vista.md).

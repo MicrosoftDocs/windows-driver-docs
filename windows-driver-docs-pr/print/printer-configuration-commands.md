@@ -23,5 +23,3 @@ The following table lists the printer configuration commands. All commands are s
 | CmdEndJob | Command to complete a print job. | Optional. [Command execution order](command-execution-order.md) must be specified. |
 | CmdCopies | Command to specify the number of copies to print. | Optional. [Command execution order](command-execution-order.md) must be specified. |
 | CmdSleepTimeOut | Command to specify the number of minutes for the printer to wait before entering power-save mode. | Optional. [Command execution order](command-execution-order.md) must be specified. |
-
-For examples, see the [sample GPD files](sample-gpd-files.md).

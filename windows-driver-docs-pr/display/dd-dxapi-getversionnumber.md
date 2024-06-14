@@ -9,7 +9,7 @@ ms.date: 10/12/2022
 
 # DD\_DXAPI\_GETVERSIONNUMBER control code
 
-A video capture driver passes DD\_DXAPI\_GETVERSIONNUMBER in the *dwFunctionNum* parameter of the [**DxApi**](/windows-hardware/drivers/ddi/dxapi/nf-dxapi-dxapi) function to return the version of the kernel-mode video transport (*dxapi.sys*) that is supported by the [video miniport driver](video-miniport-drivers-in-the-windows-2000-display-driver-model.md)'s [DxApi interface](/windows/win32/api/dxmini/ns-dxmini-dxapi_interface).
+A video capture driver passes DD\_DXAPI\_GETVERSIONNUMBER in the *dwFunctionNum* parameter of the [**DxApi**](nf-dxapi-dxapi.md) function to return the version of the kernel-mode video transport (*dxapi.sys*) that is supported by the [video miniport driver](video-miniport-drivers-in-the-windows-2000-display-driver-model.md)'s [DxApi interface](/windows/win32/api/dxmini/ns-dxmini-dxapi_interface).
 
 ## Input Parameters
 
@@ -27,14 +27,7 @@ This function identifier can only be called at PASSIVE\_LEVEL.
 
 ## Requirements
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Ddkmapi.h (include Ddkmapi.h)</td>
-</tr>
-</tbody>
-</table>
+Header file: *Ddkmapi.h* (include *Ddkmapi.h*)
 
 ## See also
 

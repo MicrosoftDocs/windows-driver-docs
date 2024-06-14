@@ -30,5 +30,3 @@ The following table lists the raster data emission commands. All commands are sp
 | CmdSendMagentaData | Command to deliver magenta plane data to the printer. | Required if **UseExpColorSelectCmd?** attribute is **FALSE**. |
 | CmdSendRedData | Command to deliver red plane data to the printer. | Required if **UseExpColorSelectCmd?** attribute is **FALSE**. |
 | CmdSendYellowData | Command to deliver yellow plane data to the printer. | Required if **UseExpColorSelectCmd?** attribute is **FALSE**. |
-
-For GPD examples, see [Sample GPD files](sample-gpd-files.md).

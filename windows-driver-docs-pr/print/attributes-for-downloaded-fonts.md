@@ -23,5 +23,3 @@ The following table lists attributes describing the printer's support for downlo
 | ***MinFontID*** | Numeric value representing the minimum identifier for soft fonts. | Optional. If not specified, the default value is one. |
 | **MinGlyphID** | Numeric value representing the minimum identifier for downloaded font glyphs. | Optional. If not specified and **\*DLSymbolSet** is not specified, the default value is 32. Ignored if **\*DLSymbolSet** is specified. |
 | **TextHalftoneThreshold** | Numeric value that determines whether Unidrv performs text halftoning for TrueType fonts. If the driver's resolution is greater than or equal to the value specified in this attribute, Unidrv halftones text. | Optional. The default value is 600. |
-
-For examples, see the [sample GPD files](sample-gpd-files.md).
