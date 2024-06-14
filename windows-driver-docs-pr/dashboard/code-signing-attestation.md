@@ -124,7 +124,7 @@ To create the CAB file:
 1. Use the process recommended by the EV certificate provider to sign the CAB file with your EV certificate. For example, to sign your CAB file with a SHA256 Certificate/Digest Algorithm/Timestamp, enter the following command: 
 
    ```cmd
-   C:\Echo> SignTool sign /ac "C:\MyEVCert.cer" /s MY /n "Company Name" /fd sha256 /tr http://sha256timestamp.ws.symantec.com/sha256/timestamp /td sha256 /v "C:\Echo\Disk1\Echo.cab"
+   C:\Echo> SignTool sign /s MY /n "Company Name" /fd sha256 /tr http://sha256timestamp.ws.symantec.com/sha256/timestamp /td sha256 /v "C:\Echo\Disk1\Echo.cab"
    ```
 
    > [!IMPORTANT]
