@@ -1,7 +1,7 @@
 ---
 title: Bluetooth Host Radio Support
 description: Provides a list of questions and answers about Bluetooth host radio support in Windows
-ms.date: 01/10/2024
+ms.date: 06/17/2024
 ---
 
 # Bluetooth Host Radio Support
@@ -88,7 +88,7 @@ The following table lists the profiles in Bth.inf that Windows supports.
 
 ### Windows Bluetooth Profiles
 
-For a Bluetooth-enabled device or accessory to work with your PC that's running Windows 10, the device needs to use one of the supported Bluetooth profiles. See the most current list at [Supported Bluetooth profiles](https://support.microsoft.com/help/10568/windows-10-supported-bluetooth-profiles).
+For a Bluetooth-enabled device or accessory to work with your PC that's running Windows 10, the device needs to use one of the supported Bluetooth profiles. See the most current list at [Supported Bluetooth profiles](https://support.microsoft.com/windows/supported-bluetooth-profiles-8900e50f-318e-4283-2beb-c8325bfc9515).
 
 If IHVs do not want Windows to automatically generate a PDO for their device, they can add the service GUID to the list of unsupported services. For examples, see Bth.inf.
 

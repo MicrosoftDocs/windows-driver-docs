@@ -6,13 +6,13 @@ keywords:
 - client-side profile drivers WDK Bluetooth
 - server-side profile drivers WDK Bluetooth
 - INF files WDK Bluetooth
-ms.date: 12/05/2023
+ms.date: 06/17/2024
 ---
 
 # Installing a Bluetooth device
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer experiencing Bluetooth device installation issues see [Pair a Bluetooth device in Windows](https://support.microsoft.com/help/15290/windows-connect-bluetooth-device)
+> This topic is for programmers. If you are a customer experiencing Bluetooth device installation issues see [Pair a Bluetooth device in Windows](https://support.microsoft.com/windows/pair-a-bluetooth-device-in-windows-2be7b51f-6ae9-b757-a3b9-95ee40c3e242)
 
 There are two installation types for Bluetooth profile drivers:
 

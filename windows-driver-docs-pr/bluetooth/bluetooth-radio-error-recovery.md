@@ -2,7 +2,7 @@
 title: Bluetooth Radio Reset and Recovery
 description: Bluetooth radio automated error recovery mechanisms
 keywords: ["Bluetooth Radio Error Recovery", "Bluetooth PLDR"]
-ms.date: 01/10/2024
+ms.date: 06/17/2024
 ---
 
 # Bluetooth Radio Reset and Recovery
@@ -12,7 +12,7 @@ Bluetooth Radio Reset and Recovery is a technology in Windows 10, version 1803 a
 Bluetooth radio reset and recovery can be implemented with or without firmware dependencies. IHV or OEM partners can extend the software-based reset mechanisms available on all Windows PCs with supported device- or firmware-level reset mechanisms to increase the likelihood of successful recovery.
 
 > [!IMPORTANT]
-> **This topic is for developers.** If you are a customer experiencing bluetooth problems see [Fix Bluetooth problems in Windows 10](https://support.microsoft.com/help/14169/windows-10-fix-bluetooth-problems).
+> **This topic is for developers.** If you are a customer experiencing bluetooth problems see [Fix Bluetooth problems in Windows 10](https://support.microsoft.com/windows/fix-bluetooth-problems-in-windows-723e092f-03fa-858b-5c80-131ec3fba75c).
 
 ## Bluetooth Reset and Recovery Scenarios
 
