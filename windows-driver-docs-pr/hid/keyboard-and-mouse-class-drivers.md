@@ -9,8 +9,8 @@ ms.date: 06/17/2024
 > [!NOTE]
 > This topic is for developers who are configuring keyboard and mouse class drivers. If you are looking to fix a mouse or keyboard, see:
 >
-> - [Mouse, touchpad, and keyboard problems in Windows](https://support.microsoft.com/en-us/windows/mouse-and-keyboard-problems-in-windows-94b4ca7b-4f2f-077e-4eb4-f7b4ecdf4f61)
-> - [Troubleshoot a wireless mouse that does not function correctly](https://support.microsoft.com/en-us/topic/troubleshoot-problems-with-your-microsoft-mouse-or-keyboard-5afe478d-6402-d72b-93b9-e4235fd5c4cd)
+> - [Mouse, touchpad, and keyboard problems in Windows](https://support.microsoft.com/windows/mouse-and-keyboard-problems-in-windows-94b4ca7b-4f2f-077e-4eb4-f7b4ecdf4f61)
+> - [Troubleshoot a wireless mouse that does not function correctly](https://support.microsoft.com/topic/troubleshoot-problems-with-your-microsoft-mouse-or-keyboard-5afe478d-6402-d72b-93b9-e4235fd5c4cd)
 
 Non-HID keyboards and mice can connect over multiple legacy buses but still use the same class driver. This section contains details on the class drivers themselves. The following sections goes into details on the controllers.
 
