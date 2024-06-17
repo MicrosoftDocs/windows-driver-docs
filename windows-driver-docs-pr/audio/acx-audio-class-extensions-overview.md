@@ -1,7 +1,7 @@
 ---
 title: ACX Audio Class Extensions Overview
 description: This topic provides a high level overview of the ACX Audio Class Extensions.
-ms.date: 09/29/2023
+ms.date: 06/14/2024
 ms.localizationpriority: medium
 ---
 
@@ -11,7 +11,7 @@ This topic provides a high level summary of the ACX Audio Class Extensions.
 
 ### ACX framework is built on top of the Windows Driver Framework
 
-To allow audio drivers to be more reliable and offer the best possible experience for PC users, Audio Class eXtension (ACX) is now available in early preview. ACX defines a new Windows Driver Framework (WDF) class extension for the audio domain. For more information about WDF see [Introduction to Framework Objects](../wdf/introduction-to-framework-objects.md). Many WDF concepts such as WDF IO targets, are available in ACX. For more information about WDF IO targets, see [Introduction to I/O Targets](../wdf/introduction-to-i-o-targets.md).
+To allow audio drivers to be more reliable and offer the best possible experience for PC users, Audio Class eXtension (ACX) is now available in. ACX defines a Windows Driver Framework (WDF) class extension for the audio domain. For more information about WDF see [Introduction to Framework Objects](../wdf/introduction-to-framework-objects.md). Many WDF concepts such as WDF IO targets, are available in ACX. For more information about WDF IO targets, see [Introduction to I/O Targets](../wdf/introduction-to-i-o-targets.md).
 
 ACX is built using the Kernel Mode Driver Framework (KMDF) and not the User Mode Driver Framework (UMDF) to avoid any latency associated with task-switching multiple times from User to Kernel mode while streaming. Portcls audio drivers, the current legacy model, are WDM, kernel mode based drivers.
 

@@ -1,7 +1,7 @@
 ---
 title: Summary of ACX Objects
 description: This topic provides a high level summary of ACX objects that form the base of an ACX audio driver.
-ms.date: 09/29/2023
+ms.date: 06/14/2024
 ms.localizationpriority: medium
 ---
 
@@ -16,6 +16,10 @@ ACX objects are Windows Driver Framework (WDF) objects - WDFOBJECT. For more inf
 In ACX (as in WDF), the driver object is the root object, and all other objects are its children/descendants. All ACX objects are children of the driver object directly or indirectly via other ACX or WDF objects. An ACX driver can specify the parent of an ACX object during creation time. If the parent is not specified, ACX uses a default parent as described in these sections.
 
 :::image type="content" source="images/audio-acx-object-hierarchy.png" alt-text="Diagram illustrating the hierarchy of ACX objects, with WDFDEVICE at the top and major ACX objects like circuit and stream below.":::
+
+### Creating non ACX WDF objects
+
+In addition to ACX objects, an audio driver can create and use other WDF objects as required. If a driver is planning to create other non-ACX children, it should do so by using a different child list than the default ACX object list that is created when the ACX device is created. A driver can create a new WDF child-list using [WdfChildListCreate](/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistcreate) as described in [Creating Device Objects in a Function Driver](../wdf/creating-device-objects-in-a-function-driver.md).  For general information on WDF objects, see [Introduction to Framework Objects](../wdf/introduction-to-framework-objects.md), [WDF Architecture](../wdf/kernel-mode-driver-framework-architecture.md) and [Developing Drivers with the Windows Driver Foundation](../wdf/developing-drivers-with-wdf.md). For information on initializing an ACX device, see [AcxDeviceInitialize](/windows-hardware/drivers/ddi/acxdevice/nf-acxdevice-acxdeviceinitialize).
 
 ## ACX Circuit
 
@@ -33,13 +37,13 @@ The DDIs for ACX circuits are described in the [acxcircuit.h](/windows-hardware/
 
 ## ACX Pin
 
-Just as in WDM Portcls audio drivers, and AcxPin object represent the logical connections (not physical connections) through which data streams enter the adapter from the system communications bus or enter the system communications bus from the adapter. 
+Just as in WDM Portcls audio drivers, and AcxPin object represent the logical connections (not physical connections) through which data streams enter the adapter from the system communications bus or enter the system communications bus from the adapter.
 
 The DDIs for Pin are described in the [acxpin.h](/windows-hardware/drivers/ddi/acxpin/) header.
 
 ## ACX Stream
 
-An AcxStream represents an audio stream on a specific circuit’s hardware.  An AcxStream may aggregate one or more AcxElements-like objects. By default, AcxElements are ‘connected’ in the same order of assembly. An AcxStream is associated with only one ACX circuit. 
+An AcxStream represents an audio stream on a specific circuit’s hardware.  An AcxStream may aggregate one or more AcxElements-like objects. By default, AcxElements are ‘connected’ in the same order of assembly. An AcxStream is associated with only one ACX circuit.
 
 - An AcxStream has a dedicated WDF queue.  For more information about WDF queues, see [Framework Queue Objects](../wdf/creating-i-o-queues.md)
 - An AcxStream support different states. These states indicate when audio is flowing (RUN state) or not flowing (PAUSE or STOP state).
@@ -49,7 +53,7 @@ The DDIs for stream are defined in the [acxstreams.h](/windows-hardware/drivers/
 
 ## ACX Targets
 
-WdfIoTarget is a WDF abstraction to facilitate the communication between two different stacks. For more information about WDF IO targets, see [Introduction to I/O Targets](../wdf/introduction-to-i-o-targets.md). 
+WdfIoTarget is a WDF abstraction to facilitate the communication between two different stacks. For more information about WDF IO targets, see [Introduction to I/O Targets](../wdf/introduction-to-i-o-targets.md).
 
 - Drivers use AcxTargetCircuit to communicate with a remote circuit exposed by a different stack. AcxTargetCircuit is implemented using a WdfIoTarget.
 - Drivers use AcxTargetPin to communicate with a remote circuit’s pin exposed by a different stack. AcxTargetPin is implemented using a WdfIoTarget to send messages to the remote pin entity.
@@ -87,7 +91,7 @@ The ACX Object Bag is used to store various data types. ACXOBJECTBAG can be pass
 
 ## ACX object summary  
 
-The following table lists all of the ACX objects and provides some basic information about each object. 
+The following table lists all of the ACX objects and provides some basic information about each object.
 
 | Handle                  | Name                   | Purpose                                                                                                           |
 |-------------------------|------------------------|-------------------------------------------------------------------------------------------------------------------|
