@@ -8,7 +8,7 @@ keywords:
 - HID mouse driver
 - mouse drivers, HID
 - HID mouse driver for Windows
-ms.date: 01/11/2024
+ms.date: 06/17/2024
 ---
 
 # Keyboard and mouse HID client drivers
@@ -16,8 +16,8 @@ ms.date: 01/11/2024
 > [!NOTE]
 > This topic is for developers who are creating drivers for keyboard and mouse HID clients. If you are looking to fix a mouse or keyboard, see:
 >
-> - [Mouse, touchpad, and keyboard problems in Windows](https://support.microsoft.com/help/17417/windows-mouse-touchpad-keyboard-problems)
-> - [Troubleshoot a wireless mouse that does not function correctly](https://support.microsoft.com/help/321122/troubleshoot-a-wireless-mouse-that-does-not-function-correctly)
+> - [Mouse, touchpad, and keyboard problems in Windows](https://support.microsoft.com/windows/mouse-and-keyboard-problems-in-windows-94b4ca7b-4f2f-077e-4eb4-f7b4ecdf4f61)
+> - [Troubleshoot a wireless mouse that does not function correctly](https://support.microsoft.com/topic/troubleshoot-problems-with-your-microsoft-mouse-or-keyboard-5afe478d-6402-d72b-93b9-e4235fd5c4cd)
 
 This article discusses keyboard and mouse HID client drivers. Keyboards and mice represent the first set of HID clients that were standardized in the HID usage tables and implemented in Windows operating systems.
 
@@ -72,7 +72,7 @@ Microsoft provides this guidance for IHVs writing drivers:
 
         - Only load on the specific vendor's hardware
 
-    1. Transport drivers: Windows team doesn't recommend creating more HID transport minidrivers. They're complex drivers to write and maintain. If a partner is creating a new HID transport minidriver, especially on SoC systems, we recommend a detailed architectural review to understand the reasoning and ensure that the driver is developed correctly.
+    1. Transport drivers: Windows team doesn't recommend creating more HID transport minidrivers they're complex to write and maintain. If a partner is creating a new HID transport minidriver, especially on SoC systems, we recommend a detailed architectural review to understand the reasoning and ensure that the driver is developed correctly.
 
 1. Driver developers should use driver frameworks (KMDF or UMDF) and not rely on WDM for their filter drivers.
 1. Driver developers should reduce the number of kernel-user transitions between their service and the driver stack.
@@ -112,7 +112,7 @@ The method used by Windows to activate the new four and five-button and wheel mo
 
 - The mouse is set to the three-button wheel mode by setting the report rate to 200 reports per second, then to 100 reports per second, then to 80 reports per second. Then, reading the ID from the mouse. The mouse should report an ID of 3 when this sequence is completed.
 
-- Next, the mouse is set to the five-button wheel mode by setting the report rate to 200 reports per second, then to 200 reports per second again, then to 80 reports per second. Then, reading the ID from the mouse. Once the sequence is completed, a five-button wheel mouse should report an ID of 4 (whereas an IntelliMouse-compatible three-button wheel mouse would still report an ID of 3).
+- The mouse is then set to the five-button wheel mode by setting the report rate to 200 reports per second, then to 200 reports per second again, then to 80 reports per second. Then, reading the ID from the mouse. Once the sequence is completed, a five-button wheel mouse should report an ID of 4 (whereas an IntelliMouse-compatible three-button wheel mouse would still report an ID of 3).
 
 This method is applicable to PS/2 mice only, not HID mice. HID mice must report accurate usages in their report descriptor.
 
@@ -373,7 +373,7 @@ For all other requests, Moufiltr skips the current IRP stack and sends the reque
 
 ### Moufiltr Callback Routines
 
-The following callback routines are implemented by  MouFiltr.
+MouFiltr implements the following callback routines.
 
 #### MouFilter_IsrHook
 
