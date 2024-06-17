@@ -7,30 +7,30 @@ ms.date: 06/17/2024
 # Configuration of keyboard and mouse class drivers
 
 > [!NOTE]
-> This topic is for developers who are configuring keyboard and mouse class drivers. If you are looking to fix a mouse or keyboard, see:
+> This article is for developers who are configuring keyboard and mouse class drivers. If you are looking to fix a mouse or keyboard, see:
 >
 > - [Mouse, touchpad, and keyboard problems in Windows](https://support.microsoft.com/windows/mouse-and-keyboard-problems-in-windows-94b4ca7b-4f2f-077e-4eb4-f7b4ecdf4f61)
 > - [Troubleshoot a wireless mouse that does not function correctly](https://support.microsoft.com/topic/troubleshoot-problems-with-your-microsoft-mouse-or-keyboard-5afe478d-6402-d72b-93b9-e4235fd5c4cd)
 
-Non-HID keyboards and mice can connect over multiple legacy buses but still use the same class driver. This section contains details on the class drivers themselves. The following sections goes into details on the controllers.
+Non-HID keyboards and mice can connect over multiple legacy buses but still use the same class driver. This section contains details on the class drivers themselves. The following sections go into details on the controllers.
 
-This topic describes the typical physical configuration of keyboard and mouse devices in Microsoft Windows 2000 and later.
+This article describes the typical physical configuration of keyboard and mouse devices in Microsoft Windows 2000 and later.
 
 The following figures show two common configurations that employ a single keyboard and a single mouse.
 
 ![Diagram illustrating two configurations that employ a single keyboard and a single mouse.](images/kemocfg1.png)
 
-The figure on the left shows a keyboard and a mouse connected to a system bus through independent controllers. A typical configuration consists of a PS/2-style keyboard operated through an i8042 controller, and a serial-style mouse operated through a serial port controller.
+The figure shows a keyboard and a mouse connected to a system bus through independent controllers. A typical configuration consists of a POWERSHELL/2-style keyboard operated through an i8042 controller, and a serial-style mouse operated through a serial port controller.
 
 The following additional information is important for keyboard and mouse manufacturers:
 
-- Keyboards are opened in exclusive mode by the operating system stack for security reasons
+- The operating system opens keyboards in exclusive mode for security reasons
 - Windows supports the simultaneous connection of more than one keyboard and mouse device.
-- Windows does not support independent access by a client to each device.
+- Windows doesn't support independent access by a client to each device.
 
 ## Class driver features
 
-This topic describes the features of the following Microsoft Windows 2000 and later system class drivers:
+This article describes the features of the following Microsoft Windows 2000 and later system class drivers:
 
 - **Kbdclass**, the class driver for devices of GUID\_CLASS\_KEYBOARD device class
 
@@ -63,7 +63,7 @@ The following figure shows the configuration of device objects for a Plug and Pl
 The keyboard driver stack consists of the following.
 
 - **Kbdclass**, the upper-level keyboard class filter driver
-- One or more optional upper-level keyboard filter driver
+- One or more optional upper-level keyboard filter drivers
 - **I8042prt**, the function driver
 
 ### PS/2 Mouse
@@ -71,16 +71,16 @@ The keyboard driver stack consists of the following.
 The mouse driver stack consists of the following.
 
 - **Mouclass**, the upper-level mouse class filter driver
-- One or more optional upper-level mouse filter driver
+- One or more optional upper-level mouse filter drivers
 - **I8042prt**, the function driver
 
 **Kbdclass** and **Mouclass** can support more than one device in two different modes. In the *one-to-one mode*, each device has an independent device stack. The class driver creates and attaches an independent class DO to each device stack. Each device stack has its own control state and input buffer. The Microsoft Win32 subsystem accesses input from each device through a unique file object.
 
 In the *grandmaster mode*, the class driver operates all the devices in the following way:
 
-- The class driver creates both a *grandmaster class DO* that represents all of the devices and a *subordinate class DO* for each device.
+- The class driver creates both a *grandmaster class DO* representing all of the devices and a *subordinate class DO* for each device.
 
-    The class driver attaches a subordinate class DO to each device stack. Below the subordinate class DO, the device stack is same as that created in the one-to-one mode.
+    The class driver attaches a subordinate class DO to each device stack. Below the subordinate class DO, the device stack is same as the stack created in the one-to-one mode.
 
 - The grandmaster class DO controls the operation of all the subordinate DOs.
 
@@ -94,15 +94,15 @@ Kbdclass and Mouclass operate in the one-to-one mode if their registry entry val
 
 ## Open and close via the class driver
 
-The Microsoft Win32 subsystem opens all keyboard and mouse devices for its exclusive use. For each device class, the Win32 subsystem treats input from all the devices as if the input came from a single input device. An application cannot request to receive input from only one particular device.
+The Microsoft Win32 subsystem opens all keyboard and mouse devices for its exclusive use. For each device class, the Win32 subsystem treats input from all the devices as if the input came from a single input device. An application can't request to receive input from only one particular device.
 
-The Win32 subsystem dynamically opens Plug and Play input devices after it receives notification from the Plug and Play manager that a GUID\_CLASS\_KEYBOARD or GUID\_CLASS\_MOUSE device interface is enabled. The Win32 subsystem closes Plug and Play devices after it receives notification that an opened interface is disabled. The Win32 subsystem also opens legacy devices by name (for example, "\\Device\\KeyboardLegacyClass0"). Note that once the Win32 subsystem successfully opens a legacy device, it cannot determine if the device is later physically removed.
+The Win32 subsystem dynamically opens Plug and Play input devices after it receives notification from the Plug and Play manager that a GUID\_CLASS\_KEYBOARD or GUID\_CLASS\_MOUSE device interface is enabled. The Win32 subsystem closes Plug and Play devices after it receives notification that an opened interface is disabled. The Win32 subsystem also opens legacy devices by name (for example, "\\Device\\KeyboardLegacyClass0"). Once the Win32 subsystem successfully opens a legacy device, it can't determine if the device is later physically removed.
 
-After Kbdclass and Mouclass receive a create request they do the following for Plug and Play and legacy operation:
+After Kbdclass and Mouclass receive a create request, they do the following for Plug and Play and legacy operation:
 
 - **Plug and Play Operation**
 
-    If the device is in the Plug and Play started state, the class driver sends the IRP\_MJ\_CREATE request down the driver stack. Otherwise the class driver completes the request without sending the request down the driver stack. The class driver sets the trusted file that has read access to the device. If there is a grandmaster device, the class driver sends a create request to all the ports that are associated with the subordinate class devices.
+    If the device is in the Plug and Play started state, the class driver sends the IRP\_MJ\_CREATE request down the driver stack. Otherwise the class driver completes the request without sending the request down the driver stack. The class driver sets the trusted file with read access to the device. If there's a grandmaster device, the class driver sends a create request to all the ports that are associated with the subordinate class devices.
 
 - **Legacy Operation**
 
@@ -146,7 +146,7 @@ For more information about all keyboard device control requests, see [Human Inte
 
 ## Scan code mapper for keyboards
 
-In Microsoft Windows operating systems, PS/2-compatible scan codes provided by an input device are converted into virtual keys, which are propagated through the system in the form of Windows messages. If a device produces an incorrect scan code for a certain key, the wrong virtual key message will be sent. This can be fixed by writing a filter driver that analyzes the scan codes generated by firmware and modifies the incorrect scan code to one understood by the system. However, this is a tedious process and can sometimes lead to severe problems, if errors exist in the kernel-level filter driver.
+In Microsoft Windows operating systems, PS/2-compatible scan codes provided by an input device are converted into virtual keys, which are propagated through the system in the form of Windows messages. If a device produces an incorrect scan code for a certain key, the wrong virtual key message is sent. This issue can be fixed by writing a filter driver that analyzes the scan codes generated by firmware and modifies the incorrect scan code to one understood by the system. However, this is a tedious process and can sometimes lead to severe problems, if errors exist in the kernel-level filter driver.
 
 Windows 2000 and Windows XP include a new Scan Code Mapper, which provides a method that allows for mapping of scan codes. The scan code mappings for Windows are stored in the following registry key:
 
@@ -154,28 +154,29 @@ Windows 2000 and Windows XP include a new Scan Code Mapper, which provides a met
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout
 ```
 
-**Note**  There is also a **Keyboard Layouts** key (notice the plural form) under the Control key, but that key should not be modified.
+> [!NOTE]
+> There's also a **Keyboard Layouts** key under the Control key, but that key shouldn't be modified.
 
 In the **Keyboard Layout** key, the **Scancode Map** value must be added. This value is of type REG\_BINARY (little Endian format) and has the data format specified in the following table.
 
-| Start offset (in bytes) | Size (in bytes) | Data                         |
-|-------------------------|-----------------|------------------------------|
-| 0                       | 4               | Header: Version Information  |
-| 4                       | 4               | Header: Flags                |
-| 8                       | 4               | Header: Number of Mappings   |
-| 12                      | 4               | Individual Mapping           |
-| ...                     | ...             | ...                          |
-| Last 4 bytes            | 4               | Null Terminator (0x00000000) |
+| Start offset (in bytes) | Size (in bytes) | Data |
+|--|--|--|
+| 0 | 4 | Header: Version Information |
+| 4 | 4 | Header: Flags |
+| 8 | 4 | Header: Number of Mappings |
+| 12 | 4 | Individual Mapping |
+| ... | ... | ... |
+| Last 4 bytes | 4 | Null Terminator (0x00000000) |
 
 The first and second DWORDS store header information and should be set to all zeroes for the current version of the Scan Code Mapper. The third DWORD entry holds a count of the total number of mappings that follow, including the null terminating mapping. The minimum count would therefore be 1 (no mappings specified). The individual mappings follow the header. Each mapping is one DWORD in length and is divided into two WORD length fields. Each WORD field stores the scan code for a key to be mapped.
 
-Once the map is stored in the registry, the system must be rebooted for the mappings to take effect. Note that if the mapping of a scan code is necessary on a keypress, the step is performed in user mode just before the scan code is converted to a virtual key. Doing this conversion in user mode can present certain limitations, such as mapping not working correctly when running under Terminal Services.
+Once the map is stored in the registry, the system must be rebooted for the mappings to take effect. If the mapping of a scan code is necessary on a keypress, the step is performed in user mode just before the scan code is converted to a virtual key. Doing this conversion in user mode can present certain limitations, such as mapping not working correctly when running under Terminal Services.
 
 To remove these mappings, remove the Scancode Map registry value and reboot.
 
 ### Example 1
 
-The following presents an example. To swap the left CTRL key with the CAPS LOCK key, use a registry editor (preferably Regedt32.exe) to modify the Scancode Map key with the following value:
+To swap the left CTRL key with the CAPS LOCK key, use a registry editor (preferably Regedt32.exe) to modify the Scancode Map key with the following value:
 
 ``` syntax
 00000000 00000000 03000000 3A001D00 1D003A00 00000000
@@ -199,7 +200,7 @@ The following table contains these entries broken into DWORD fields and the byte
 
 ### Example 2
 
-It is also possible to add a key not generally available on a keyboard or to remove a key that is never used. The following example shows the value stored in **Scancode Map** to remove the right CTRL key and change the functionality of the right ALT key to work as a mute key:
+It's also possible to add a key not generally available on a keyboard or to remove a key that is never used. The following example shows the value stored in **Scancode Map** to remove the right CTRL key and change the functionality of the right ALT key to work as a mute key:
 
 ``` syntax
 00000000 00000000 03000000 00001DE0 20E038E0 00000000
@@ -238,8 +239,8 @@ The advantages include:
 The following disadvantages are recognized:
 
 - Once the map is stored in the registry, a system reboot is required to activate it.
-- The mappings stored in the registry work at system level and apply to all users. These mappings cannot be set to work differently depending on the current user.
-- The current implementation restricts the functionality of the map such that mappings always apply to all keyboards connected to the system. It is not currently possible to create a map on a per-keyboard basis.
+- The mappings stored in the registry work at system level and apply to all users. These mappings can't be set to work differently depending on the current user.
+- The current implementation restricts the functionality of the map such that mappings always apply to all keyboards connected to the system. It isn't currently possible to create a map on a per-keyboard basis.
 
 ## Query a mouse device
 
@@ -251,13 +252,13 @@ For more information about all mouse device control requests, see [Human Interfa
 
 ## Registry settings associated with mouse class driver
 
-The following is a list of registry keys associated with the mouse class driver.
+Here's a list of registry keys associated with the mouse class driver.
 
 \[Key: HKLM\\SYSTEM\\CurrentControlSet\\Services\\Mouclass\\Parameters\]
 
 - **MaximumPortsServiced** – Not used on Windows XP and later. Only for Windows NT4.
 - **PointerDeviceBaseName** – Specifies the base name for the device objects created by the mouse class device driver
-- **ConnectMultiplePorts** – Determines whether there is one or more than one port device object for each class device object. This entry is used primarily by device drivers.
+- **ConnectMultiplePorts** – Determines whether there's one or more than one port device object for each class device object. This entry is used primarily by device drivers.
 - **MouseDataQueueSize** - Specifies the number of mouse events buffered by the mouse driver. It also is used in calculating the size of the mouse driver's internal buffer in the nonpaged memory pool.
 
 ## Absolute pointing devices
@@ -281,9 +282,9 @@ For an absolute pointing device, the device's function driver must set the **Las
 
 - The driver sets the MOUSE\_MOVE\_ABSOLUTE flag in **Flags**.
 
-- If the input should be mapped by Window Manager to an entire virtual desktop, the driver sets the MOUSE\_VIRTUAL\_DESKTOP flag in **Flags**. If the MOUSE\_VIRTUAL\_DESKTOP flag is not set, Window Manager maps the input to only the primary monitor.
+- If the input should be mapped by Window Manager to an entire virtual desktop, the driver sets the MOUSE\_VIRTUAL\_DESKTOP flag in **Flags**. If the MOUSE\_VIRTUAL\_DESKTOP flag isn't set, Window Manager maps the input to only the primary monitor.
 
-The following specifies, by type of device, how these special requirements for an absolute pointing device are implemented:
+The following list specifies how these special requirements for an absolute pointing device are implemented, by type of device:
 
 - HID devices:
 
@@ -293,7 +294,7 @@ The following specifies, by type of device, how these special requirements for a
 
     An upper-level filter driver is required. The filter driver supplies an IsrHook callback and a class service callback. I8042prt calls the IsrHook to handle raw device input, and calls the filter class service callback to filter the input. The filter class service callback, in turn, calls **MouseClassServiceCallback**. The combination of the IsrHook callback and the class service callback handles device-specific input, creates the required MOUSE\_INPUT\_DATA structures, scales the device input data, and sets the MOUSE\_MOVE\_ABSOLUTE flag.
 
-- Plug and Play COM port devices that are enumerated by Serenum:
+- Plug and Play COM port devices enumerated by Serenum:
 
     A Plug and Play function driver is required. The function driver creates the required MOUSE\_INPUT\_DATA structures, scales the device input data, and sets the MOUSE\_MOVE\_ABSOLUTE flag before it calls **MouseClassServiceCallback**.
 
