@@ -1,7 +1,7 @@
 ---
 title: Summary of ACX Objects
 description: This topic provides a high level summary of ACX objects that form the base of an ACX audio driver.
-ms.date: 06/14/2024
+ms.date: 06/17/2024
 ms.localizationpriority: medium
 ---
 
@@ -19,7 +19,7 @@ In ACX (as in WDF), the driver object is the root object, and all other objects 
 
 ### Creating non ACX WDF objects
 
-In addition to ACX objects, an audio driver can create and use other WDF objects as required. If a driver is planning to create other non-ACX children, it should do so by using a different child list than the default ACX object list that is created when the ACX device is created. A driver can create a new WDF child-list using [WdfChildListCreate](/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistcreate) as described in [Creating Device Objects in a Function Driver](../wdf/creating-device-objects-in-a-function-driver.md).  For general information on WDF objects, see [Introduction to Framework Objects](../wdf/introduction-to-framework-objects.md), [WDF Architecture](../wdf/kernel-mode-driver-framework-architecture.md) and [Developing Drivers with the Windows Driver Foundation](../wdf/developing-drivers-with-wdf.md). For information on initializing an ACX device, see [AcxDeviceInitialize](/windows-hardware/drivers/ddi/acxdevice/nf-acxdevice-acxdeviceinitialize).
+In addition to ACX objects, an audio driver can create and use other WDF objects as required. If a driver is planning to enumerate non-ACX devices, it should do so by using a different child list than the default WDF child list created when an ACX/WDF device is created. A driver can create a new WDF child-list using [WdfChildListCreate](/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistcreate) as described in [Creating Device Objects in a Function Driver](../wdf/creating-device-objects-in-a-function-driver.md).  For general information on WDF objects, see [Introduction to Framework Objects](../wdf/introduction-to-framework-objects.md), [WDF Architecture](../wdf/kernel-mode-driver-framework-architecture.md) and [Developing Drivers with the Windows Driver Foundation](../wdf/developing-drivers-with-wdf.md). For information on initializing an ACX device, see [AcxDeviceInitialize](/windows-hardware/drivers/ddi/acxdevice/nf-acxdevice-acxdeviceinitialize).
 
 ## ACX Circuit
 
