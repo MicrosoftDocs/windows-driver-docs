@@ -1,7 +1,7 @@
 ---
 title: Driver Packages
 description: Driver Packages
-ms.date: 12/20/2023
+ms.date: 06/19/2024
 ---
 
 # Driver Packages
@@ -15,5 +15,4 @@ This section explains what components you need to include in your driver package
 ## In this section
 
 -   [Components of a Driver Package](components-of-a-driver-package.md)
--   [Installation Component Overview](installation-component-overview.md)
 -   [Sample Device Installation Files](sample-device-installation-files.md)
