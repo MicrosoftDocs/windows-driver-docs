@@ -3,7 +3,7 @@ title: WDFDEVICE_INIT Structure
 description: The WDFDEVICE_INIT structure is an opaque structure that is defined and allocated by the framework.
 keywords:
  - WDFDEVICE_INIT structure
-ms.date: 02/23/2018
+ms.date: 06/19/2024
 ---
 
 # WDFDEVICE_INIT structure
@@ -15,13 +15,13 @@ The **WDFDEVICE_INIT** structure is an opaque structure that is defined and allo
 
 ## Syntax
 
-```ManagedCPlusPlus
+```cpp
 struct WDFDEVICE_INIT {
   ;      // Reserved.
 };
 ```
 
-## Members---
+## Members
 
 Function and filter drivers receive a pointer to this structure as input to a [*EvtDriverDeviceAdd*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback function or as a return value from [**WdfControlDeviceInitAllocate**](/windows-hardware/drivers/ddi/wdfcontrol/nf-wdfcontrol-wdfcontroldeviceinitallocate).
 
