@@ -56,8 +56,6 @@
       href: driver-packages.md
     - name: "Components of a Driver Package"
       href: components-of-a-driver-package.md
-    - name: "Installation Component Overview"
-      href: installation-component-overview.md
     - name: "Sample Device Installation Files"
       href: sample-device-installation-files.md
   - name: "INF Files"

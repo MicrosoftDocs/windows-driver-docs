@@ -11,7 +11,7 @@ keywords:
 - .sys files
 - SYS files
 - .cat files
-ms.date: 12/09/2021
+ms.date: 06/19/2024
 ---
 
 # Components of a Driver Package
@@ -39,9 +39,27 @@ The exact contents and format of the INF file depend on the [device setup class]
 
 The [InfVerif](../devtest/infverif.md) tool, which is provided in the *\\tools* directory of the Microsoft Windows Driver Kit (WDK), checks the syntax and structure of all cross-class INF sections and directives, together with the class-specific extensions for all setup classes except for Printers.
 
-Starting with Windows 2000, you can use a single INF file for installation on all versions of the Windows operating system. For more information, see [Creating INF Files for Multiple Platforms and Operating Systems](creating-inf-files-for-multiple-platforms-and-operating-systems.md). If your device will be sold in the international market, you should [create an international INF file](creating-international-inf-files.md). Depending on the localities involved, an international INF file might have to be a Unicode (UTF-16) file instead of ASCII.
+You can use a single INF file for installation on all versions of the Windows operating system. For more information, see [Creating INF Files for Multiple Platforms and Operating Systems](creating-inf-files-for-multiple-platforms-and-operating-systems.md). If your device will be sold in the international market, you should [create an international INF file](creating-international-inf-files.md). Depending on the localities involved, an international INF file might have to be a Unicode (UTF-16) file instead of ASCII.
 
 A good way to create an INF file for your driver is to modify one of the samples that the WDK provides. Most of the WDK sample drivers include INF files in the same directory as the sample driver.
+
+The INF file for the device must contain the following information at minimum:
+
+-   Information about what versions of the operating system the driver package is supported on
+
+-   The setup class GUID and setup class for the driver package
+
+-   Driver package version information
+
+-   The names of the driver files together with their source and destination locations
+
+-   Device-specific information, including [hardware ID](hardware-ids.md) and [compatible IDs](compatible-ids.md), that determines applicability of the driver package
+
+-   The name of a [catalog (.cat) file](catalog-files.md)
+
+-   Information about how and when to load the services that are provided by each driver package
+
+If your device is involved in booting the system, installation requirements differ. See [Installing a Boot Driver](installing-a-boot-start-driver.md).
 
 For more information about INF files, see [Creating an INF File](overview-of-inf-files.md), the documentation for [InfVerif](../devtest/infverif.md), the device-specific documentation in the WDK, and the INF files that are supplied with sample drivers for devices similar to yours.
 
