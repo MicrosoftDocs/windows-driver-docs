@@ -1,7 +1,7 @@
 ---
 title: Using Device Manager to Uninstall Devices and Driver Packages
 description: Using Device Manager to Uninstall Devices and Driver Packages
-ms.date: 06/06/2024
+ms.date: 06/19/2024
 ---
 
 # Using Device Manager to Uninstall Devices and Driver Packages
@@ -15,7 +15,7 @@ If your device or driver package does not appear in the list, you'll need to use
 Then follow these steps:
 
 1. Select the View menu and turn on **Show Hidden Devices**.
-1. Expand the node that represents the type of device that you want to uninstall, right-select the device entry for the device you want to uninstall, and select **Uninstall**.
+1. Expand the node that represents the type of device that you want to uninstall, right-select the device entry for the device you want to uninstall, and select **Uninstall device**.
 1. On the **Confirm Device Removal** dialog box, if you wish to remove the driver package in addition to uninstalling the device, select the **Delete the driver software for this device** option. When ready to complete the operation, select **OK**. If this option does not appear, see [Deleting a Driver Package from the Driver Store](./how-devices-and-driver-packages-are-uninstalled.md#deleting-a-driver-package-from-the-driver-store) for additional information.
 
 You may also need to restart the computer.
