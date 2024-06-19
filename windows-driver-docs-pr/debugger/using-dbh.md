@@ -7,8 +7,7 @@ ms.date: 05/23/2017
 
 # Using DBH
 
-
-DBH is a command-line tool that exposes many of the functions in the DbgHelp API (dbghelp.dll). It can display information about the contents of a symbol file, display specific details of the symbols in the file, and search through the file for symbols matching various criteria.
+DBH is a command-line tool that exposes many of the functions in the DbgHelp API (dbghelp.dll). It can display information about the contents of a symbol file, display specific details of the symbols in the file, and search through the file for symbols matching various criteria. For more information, see [Debug Help Library](/windows/win32/debug/debug-help-library).
 
 The functionality provided by DBH is similar to that provided within WinDbg, KD, and CDB by commands such as [**x (Examine Symbols)**](../debuggercmds/x--examine-symbols-.md).
 

@@ -14,7 +14,6 @@ api_type:
 
 # DBH Command-Line Options
 
-
 The DBH command line uses the following syntax.
 
 ```console
@@ -29,8 +28,7 @@ dbh -?
 dbh -??  
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
-
+## Parameters
 
 <span id="-p_PID"></span><span id="-p_pid"></span><span id="-P_PID"></span>**-p:**<em>PID</em>  
 Specifies the process ID of the process whose symbols are to be loaded.
@@ -65,7 +63,3 @@ Displays help text for the DBH command line, and displays a list of all DBH comm
 ### Additional Information
 
 For more information about the DBH tool, see [Using DBH](using-dbh.md).
-
- 
-
- 

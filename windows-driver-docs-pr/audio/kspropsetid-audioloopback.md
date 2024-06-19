@@ -1,7 +1,7 @@
 ---
 title: KSPROPSETID_AudioLoopback
 description: The KSPROPSETID_AudioLoopback property set is used by the audio driver to indicate the loopback tap point pre and post volume and mute.
-ms.date: 02/06/2024
+ms.date: 06/18/2024
 ms.topic: reference
 ---
 
@@ -39,7 +39,7 @@ A driver which only supports `AUDIOLOOPBACK_TAPPOINT_CAPS_POSTVOLUMEMUTE` will f
 
 ## AUDIOLOOPBACK_TAPPOINT_TYPE enum
 
-The AUDIOLOOPBACK_TAPPOINT_TYPE enum contains the  pre and post tap point definitions. For more information, see [AUDIOLOOPBACK_TAPPOINT_TYPE enum](ne-ksmedia-audioloopback_tappoint_type.md).
+The AUDIOLOOPBACK_TAPPOINT_TYPE enum contains the  pre and post tap point definitions. For more information, see [AUDIOLOOPBACK_TAPPOINT_TYPE enum](/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-audioloopback_tappoint_type).
 
 ### See also
 
@@ -47,6 +47,6 @@ The AUDIOLOOPBACK_TAPPOINT_TYPE enum contains the  pre and post tap point defini
 
 [KSPROPERTY structure](/windows-hardware/drivers/stream/ksproperty-structure)
 
-[AUDIOLOOPBACK_TAPPOINT_TYPE enum](ne-ksmedia-audioloopback_tappoint_type.md)
+[AUDIOLOOPBACK_TAPPOINT_TYPE enum](/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-audioloopback_tappoint_type)
 
-[KSATTRIBUTE_AUDIOLOOPBACK_TAPPOINT structure](ns-ksmedia-ksattribute_audioloopback_tappoint.md)
+[KSATTRIBUTE_AUDIOLOOPBACK_TAPPOINT structure](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksattribute_audioloopback_tappoint)

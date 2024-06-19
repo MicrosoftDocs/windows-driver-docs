@@ -15030,6 +15030,16 @@
             "source_path":  "windows-driver-docs-pr/samples/windows-portable-device--wpd--driver-samples.md",
             "redirect_URL":  "/windows-hardware/samples",
             "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/audio/ne-ksmedia-audioloopback_tappoint_type.md",
+            "redirect_URL":  "/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-audioloopback_tappoint_type",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/audio/ns-ksmedia-ksattribute_audioloopback_tappoint.md",
+            "redirect_URL":  "/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksattribute_audioloopback_tappoint",
+            "redirect_document_id":  false
         }
     ]
 }

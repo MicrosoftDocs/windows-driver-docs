@@ -7,7 +7,6 @@ ms.date: 05/23/2017
 
 # DBH Commands
 
-
 From the DBH command line, you can use a variety of commands to analyze symbols and symbol files.
 
 The following table lists the commands that control the DBH options and perform other basic tasks.
@@ -50,8 +49,6 @@ The following table lists the commands that control the DBH options and perform 
 </tbody>
 </table>
 
- 
-
 The following table lists the commands that load, unload, and rebase the target module. These commands cannot be used if DBH was started by specifying a process ID on the command line.
 
 <table>
@@ -80,8 +77,6 @@ The following table lists the commands that load, unload, and rebase the target 
 </tr>
 </tbody>
 </table>
-
- 
 
 The following table lists the commands that search for files and display directory information.
 
@@ -120,7 +115,6 @@ The following table lists the commands that search for files and display directo
 </tbody>
 </table>
 
- 
 
 The following table lists the commands that parse the module list and control the default module. The default module and its base address are displayed on the DBH prompt.
 
@@ -170,8 +164,6 @@ The following table lists the commands that parse the module list and control th
 </tr>
 </tbody>
 </table>
-
- 
 
 The following table lists the commands that display and search for symbols.
 
@@ -277,8 +269,6 @@ The following table lists the commands that display and search for symbols.
 </tbody>
 </table>
 
- 
-
 The following table lists the commands that relate to symbol servers and symbol stores.
 
 <table>
@@ -324,8 +314,6 @@ The following table lists the commands that relate to symbol servers and symbol 
 </tbody>
 </table>
 
- 
-
 The following table lists the DBH commands that apply to real and imaginary symbols.
 
 <table>
@@ -358,6 +346,5 @@ The following table lists the DBH commands that apply to real and imaginary symb
 
  
 
- 
 
  
