@@ -52,7 +52,9 @@
     - name: "D3D12 AV1 video encoding"
       href: video-encoding-d3d12-av1.md
     - name: "Work graphs"
-      href: work-graphs.md
+      href: work-graphs.
+    - name: "Kernel-mode testing of WDDM features"
+      href: kernel-mode-testing-of-wddm-features.md
   - name: "WDDM 3.1 features"
     items:
     - name: "Sharing the backing store with KMD"
