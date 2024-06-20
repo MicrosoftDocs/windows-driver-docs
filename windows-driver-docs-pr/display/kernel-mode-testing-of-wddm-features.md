@@ -9,13 +9,13 @@ ms.date: 06/17/2024
 
 # Kernel-mode testing of WDDM features
 
-This article describes the design of the kernel-mode testing infrastructure in WDDM that was added in Windows 11 version 24H2 (WDDM 3.2).
+This article describes the design of the kernel-mode testing infrastructure in WDDM that was added in Windows 11 version 24H2 (WDDM 3.2). This infrastructure allows testing and validation of drivers that don't support D3D runtimes, such as drivers for some NPU devices. It can also be used to validate drivers that do support D3D runtimes without involving the D3D runtime.
 
 ## Overview
 
 There are scenarios where new compute devices based on WDDM or [MCDM](mcdm.md) are introduced and drivers for these devices don't support D3D runtimes. To help validate such drivers, functionality is added to *Dxgkrnl* to do validation using kernel-mode thunks only; that is, without involving the D3D runtime and user-mode driver (UMD).
 
-This infrastructure also allows testing of the WDDM feature using precise settings without having to go through a D3D runtime or a UMD, which might complicate things.
+This infrastructure also allows testing of the WDDM feature using precise settings without having to go through a D3D runtime or a UMD, which can complicate things.
 
 DDIs are introduced to build a command buffer in kernel mode for a given set of commands. The commands are simple, so almost any execution node should be able to execute them using precompiled shaders or other means.
 
@@ -24,7 +24,7 @@ To support this functionality, the kernel-mode driver (KMD) must provide the fol
 * Report that the [**DXGK_FEATURE_KERNEL_MODE_TESTING**](/windows-hardware/drivers/ddi/d3dukmdt/ne-d3dukmdt-dxgk_feature_id) feature is enabled.
 * Implement the [**DXGKDDI_KERNELMODETESTINGINTERFACE**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgkddi_kernelmodetestinginterface) feature interface.
 * Provide information about which execution node supports building and execution of the test command buffers.
-* Support creation of a context/hardware queue without private driver data.
+* Support creation of a context/hardware queue without private driver data. Usually the format of private driver commands is needed to submit a workload to a device. The test interface allows workload submission without private driver data.
 * Support execution of command buffers built by [**pfnBuildTestCommandBuffer**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_buildtestcommandbuffer) on any node of the device that supports the feature.
 * Support a NULL allocation handle in paging DDIs (TRANSFER, FILL, etc.).
 
@@ -43,8 +43,6 @@ The following DDIs were updated to support kernel-mode testing:
 * **TestContext** is added to the [**DXGK_CREATECONTEXTFLAGS**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_createcontextflags) structure.
 
 * **TestQueue** is added to the [**D3DDDI_CREATEHWQUEUEFLAGS**](/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_createhwqueueflags) structure.
-
-* **D3DDDI_DRIVERESCAPETYPE_BUILDTESTCOMMANDBUFFER** is added to the [**D3DDDI_DRIVERESCAPETYPE**](/windows-hardware/drivers/ddi/d3dukmdt/ne-d3dukmdt-d3dddi_driverescapetype) enumeration.
 
 The following DDIs are added to support kernel-mode testing:
 
@@ -101,7 +99,7 @@ The generated command buffer and private data are returned back to user mode. Wh
 
 The generated command buffer shouldn't contain privileged instructions.
 
-UMD submits the generated command buffer for execution using [**D3DKMTSubmitCommand**](/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtsubmitcommand) or [**D3DKMTSubmitCommandToHwQueue**](/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtsubmitpresentblttohwqueue). In the future, the buffer content will be submitted as part of user-mode submission.
+A user-mode client driver (for example, Cuda) submits the generated command buffer for execution using [**D3DKMTSubmitCommand**](/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtsubmitcommand) or [**D3DKMTSubmitCommandToHwQueue**](/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtsubmitpresentblttohwqueue). In the future, the buffer content will be submitted as part of user-mode submission.
 
 When a generated command buffer is submitted for execution, it's guaranteed that the command buffer contains device instructions for a single test command.
 
