@@ -8,7 +8,7 @@ ms.date: 10/26/2022
 
 This article describes how to update a removable or in-chassis device's firmware using the Windows Update (WU) service.  For information about updating system firmware, see [Windows UEFI firmware update platform](../bringup/windows-uefi-firmware-update-platform.md).
 
-To do this, you'll provide an update mechanism, implemented as a device driver that includes the firmware payload.  If your device uses a vendor-supplied driver, you have the option of adding the firmware update logic and payload to your existing function driver, or providing a separate firmware update driver package.  If your device uses a Microsoft-supplied driver, you must provide a separate firmware update driver package.  In both cases, the firmware update driver package must be universal.  
+To do this, you'll provide a device driver that includes the firmware payload.  If you provide a function driver for your device, you can add the firmware update logic and payload to the existing driver, or you can provide a separate firmware update driver package.  If your device uses a Microsoft-supplied driver, you must provide a separate firmware update driver package.  In both cases, the firmware update driver package must be universal.
 
 For more info about universal drivers, see [Getting started with Windows drivers](../develop/getting-started-with-windows-drivers.md).  The driver binary can use [KMDF](../wdf/index.md), [UMDF 2](../wdf/getting-started-with-umdf-version-2.md) or the [Windows Driver Model](../kernel/writing-wdm-drivers.md).
 
