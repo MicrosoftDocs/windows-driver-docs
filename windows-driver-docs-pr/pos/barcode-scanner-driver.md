@@ -1,12 +1,12 @@
 ---
 title: Barcode Scanner Driver Sample
-description: The barcode scanner driver sample demonstrates how to create a universal driver for a barcode scanner and is intended to be used as a template for creating a new barcode scanner driver.
-ms.date: 03/17/2023
+description: The barcode scanner driver sample demonstrates how to create a Universal driver for a barcode scanner and is intended to be used as a template for creating a new barcode scanner driver.
+ms.date: 06/20/2024
 ---
 
 # Barcode scanner driver sample
 
-The barcode scanner driver sample demonstrates how to create a universal driver for a barcode scanner and is intended to be used as a template for creating a new barcode scanner driver. The sample uses the User-Mode Driver Framework (UMDF) 2.0 and demonstrates basic functionality such as claiming the device for exclusive access. The sample driver can be compiled and deployed on x86, amd64, and Arm platforms. For more information on universal drivers, go to [Getting Started with Universal Windows drivers](../develop/getting-started-with-windows-drivers.md).
+The barcode scanner driver sample demonstrates how to create a Universal driver for a barcode scanner and is intended to be used as a template for creating a new barcode scanner driver. The sample uses the User-Mode Driver Framework (UMDF) 2.0 and demonstrates basic functionality such as claiming the device for exclusive access. The sample driver can be compiled and deployed on x86, amd64, and Arm platforms. For more information on Universal drivers, go to [Using a Universal INF File](../install/using-a-universal-inf-file.md).
 
 ## Requirements
 

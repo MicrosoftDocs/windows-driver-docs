@@ -1,10 +1,10 @@
 ---
-title: Printer Driver Isolation
+title: Printer driver isolation
 description: Printer driver isolation improves the reliability of the Windows print service, by enabling printer drivers to run in processes that are separate from the process in which the print spooler runs.
-ms.date: 01/30/2023
+ms.date: 06/21/2024
 ---
 
-# Printer Driver Isolation
+# Printer driver isolation
 
 [!include[Print Support Apps](../includes/print-support-apps.md)]
 
@@ -139,7 +139,7 @@ The following functions are exported by spoolss.dll and are available to spooler
 
 - [**WritePrinter**](/windows/win32/printdocs/writeprinter)
 
-## WinSpool.drv Functions
+## WinSpool.drv functions
 
 The following functions are exported by winspool.drv and are available to spooler plugins by linking to Winspool.h.
 
@@ -179,4 +179,4 @@ The following functions are exported by winspool.drv and are available to spoole
 
 ## See also
 
-[Spooler Component Functions and Structures](/windows-hardware/drivers/ddi/_print/index)
+[Spooler component functions and structures](/windows-hardware/drivers/ddi/_print/index)

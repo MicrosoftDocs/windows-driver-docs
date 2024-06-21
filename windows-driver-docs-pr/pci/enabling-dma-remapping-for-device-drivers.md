@@ -1,8 +1,7 @@
 ---
-title: Enabling DMA Remapping for Device Drivers
+title: Enabling DMA remapping for device drivers
 description: Enable and opt-into Direct Memory Access (DMA) remapping to ensure compatibility with Kernel DMA Protection and DMAGuard policies
-ms.date: 03/03/2023
-ms.custom: 19H1
+ms.date: 06/21/2024
 ---
 
 # Enabling DMA remapping for device drivers
@@ -11,22 +10,24 @@ To ensure compatibility with [Kernel DMA Protection](/windows/security/informati
 
 DMA remapping for device drivers protects against memory corruption and malicious DMA attacks, and provides a higher level of compatibility for devices. Also, devices with DMA remapping-compatible drivers can start and perform DMA regardless of lock screen status.
 
-On Kernel DMA Protection enabled systems, DMAGuard Policy may block devices, with DMA remapping-incompatible drivers, connected to [external](./dsd-for-pcie-root-ports.md#identifying-externally-exposed-pcie-root-ports)/[exposed](./dsd-for-pcie-root-ports.md#identifying-internal-pcie-ports-accessible-to-users-and-requiring-dma-protection) PCIe ports (e.g. M.2, Thunderbolt™), depending on the policy value set by the system administrator.
+On Kernel DMA Protection enabled systems, DMAGuard Policy may block devices, with DMA remapping-incompatible drivers, connected to [external](./dsd-for-pcie-root-ports.md#identifying-externally-exposed-pcie-root-ports)/[exposed](./dsd-for-pcie-root-ports.md#identifying-internal-pcie-ports-accessible-to-users-and-requiring-dma-protection) PCIe ports (e.g. M.2, Thunderbolt&trade;), depending on the policy value set by the system administrator.
 
 ## Driver requirements for enabling and opting into DMA remapping
 
 Drivers perform DMA using the following interfaces:
 
-* [WDF DMA interfaces](../wdf/introduction-to-dma-in-windows-driver-framework.md)
-* [WDM interfaces](/windows-hardware/drivers/ddi/wdm/)
-* [NDIS interfaces](/windows-hardware/drivers/ddi/_netvista/)
+- [WDF DMA interfaces](../wdf/introduction-to-dma-in-windows-driver-framework.md)
+
+- [WDM interfaces](/windows-hardware/drivers/ddi/wdm/)
+
+- [NDIS interfaces](/windows-hardware/drivers/ddi/_netvista/)
 
 To adjust the DMA remapping policy for your driver, add an INF directive such as the following to the service installation section:
 
-  ```inf
-    [MyServiceInstall_AddReg]
-    HKR,Parameters,DmaRemappingCompatible,0x00010001,1    ; where 1 = opt-in
-  ```
+```inf
+  [MyServiceInstall_AddReg]
+  HKR,Parameters,DmaRemappingCompatible,0x00010001,1    ; where 1 = opt-in
+```
   
 Valid values for **DmaRemappingCompatible** are:
 
@@ -43,7 +44,7 @@ Use the latest Windows 10 build with VT-d/AMD-Vi enabled to test driver function
 
 > [!WARNING]
 > DMA remapping is not supported for graphics device drivers.
-> 
+>
 > Support for version 3 is only available on Windows 11.  On Windows 10, if you specify 3 in the INF, the system falls back to a value of 2.
 
 ## Validating that DMA remapping is enabled for a specific device driver instance

@@ -1,10 +1,10 @@
 ---
-title: PCI Power Management and Device Drivers
+title: PCI power management and device drivers
 description: Clarifies how hardware that complies with PCI Power Management (PCI-PM) interacts with device drivers.
-ms.date: 03/03/2023
+ms.date: 06/21/2024
 ---
 
-# PCI Power Management and Device Drivers
+# PCI power management and device drivers
 
 This article clarifies some confusion that vendors have experienced about how hardware that complies with PCI Power Management (PCI-PM) interacts with device drivers in the operating system and about how PCI-PM integrates with ACPI. For more information, see [https://www.uefi.org/specifications](https://www.uefi.org/specifications)
 
@@ -27,35 +27,46 @@ Some devices, particularly motherboard video devices in portables, may require b
 The OnNow architecture is a layered architecture, handling the integration of the device driver, PCI driver, and ACPI driver (and ASL) naturally. The following scenarios show the order in which drivers are called to handle these devices.
 
 >[!NOTE]
->For the above scenarios to work as described, a WDM driver must forward POWER IRPs correctly as described in the current version of the Microsoft Windows DDK.
+>For the above scenarios to work as described, a WDM driver must forward POWER IRPs correctly as described in the current version of the Microsoft WDK.
 
 ## Scenario 1: Turning off a device
 
 1. **Device driver**: Saves proprietary device state.
-2. **PCI driver**: Saves Plug and Play configuration, disables the device (interrupts and BARs), and puts the device in D3 using PCI-PM registers.
-3. **ACPI driver**: Runs ASL code (\_PS3 and \_OFF for power resources no longer in use) to control the state external to the chip.
+
+1. **PCI driver**: Saves Plug and Play configuration, disables the device (interrupts and BARs), and puts the device in D3 using PCI-PM registers.
+
+1. **ACPI driver**: Runs ASL code (\_PS3 and \_OFF for power resources no longer in use) to control the state external to the chip.
 
 ## Scenario 2: PCI power management and device drivers
 
 1. **ACPI driver**: Runs ASL code (\_PS0 and \_ON for any OnNow required power resources) to control the state external to the chip.
-2. **PCI driver**: Puts the device in D0 using PCI-PM registers and restores Plug and Play configuration (interrupts and BARs--these might be different from what the device was previously on).
-3. **Device driver**: Restores proprietary context in the device.
+
+1. **PCI driver**: Puts the device in D0 using PCI-PM registers and restores Plug and Play configuration (interrupts and BARs--these might be different from what the device was previously on).
+
+1. **Device driver**: Restores proprietary context in the device.
 
 ## Scenario 3: Enabling wake-up
 
 1. **Device driver**: Sets proprietary registers in the chip to enable wake-up. For example, in pattern matching network wake-up, this is when the patterns would be programmed into the adapter.
-2. **PCI driver**: Sets the wake-up enable bits in the PCI PM registers to allow the device to assert PME.
-3. **ACPI driver**: Enables the GPE in the chip set associated with PME (as described by the \_PRW object listed under the root PCI bus).
+
+1. **PCI driver**: Sets the wake-up enable bits in the PCI PM registers to allow the device to assert PME.
+
+1. **ACPI driver**: Enables the GPE in the chip set associated with PME (as described by the \_PRW object listed under the root PCI bus).
 
 ## Scenario 4: Wake-up
 
 1. **ACPI driver**: Wakes and scans the GPE status bits for wake-up events, disabling GPEs for set GPE status bits, and running any \_Lxx or \_Exx methods associated with set GPE bits. In response to a wake-up notification on the PCI bus, the ACPI driver will complete the PCI driver's WAIT\_WAKE IRP to notify the PCI driver that it is waking the system.
-2. **PCI driver**: Scans configuration space looking for any devices with a set PME status bit. For each device, it disables PME and completes the WAIT\_WAKE IRP for that device to inform the driver that it is asserting wake-up. The PCI driver stops scanning for wake devices when it has made a complete pass through all PCI devices having not found any asserting PME and when PME stops being asserted.
-3. **Device driver**: Requests the device be put in D0 (see scenario 2) and sets any proprietary registers in the chip required to handle the wake-up event.
+
+1. **PCI driver**: Scans configuration space looking for any devices with a set PME status bit. For each device, it disables PME and completes the WAIT\_WAKE IRP for that device to inform the driver that it is asserting wake-up. The PCI driver stops scanning for wake devices when it has made a complete pass through all PCI devices having not found any asserting PME and when PME stops being asserted.
+
+1. **Device driver**: Requests the device be put in D0 (see scenario 2) and sets any proprietary registers in the chip required to handle the wake-up event.
 
 ## Call to action on PCI power management and device drivers
 
 - Integrate ACPI and PCI-PM capabilities into your devices as described in this article.
+
 - The PCI Power Management specification is available on the PCI-SIG website.
+
 - ACPI Specification available at <https://www.uefi.org/specifications>. This link leaves the Microsoft.com site.
+
 - The ACPI Component Architecture (ACPICA) compiler can be found at [https://acpica.org/downloads/binary-tools](https://acpica.org/downloads/binary-tools).

@@ -1,7 +1,7 @@
 ---
-title: Device Firmware Update for USB Devices Without Using a Co-Installer
+title: Device firmware update for USB devices without using a co-installer
 description: Outlines a recommended method to update USB device firmware without a co-installer.
-ms.date: 05/08/2023
+ms.date: 06/21/2024
 ---
 
 # Device firmware update For USB devices without using a co-installer
@@ -10,7 +10,7 @@ ms.date: 05/08/2023
 > Starting with the WDK for Windows 11, version 22H2, WDF redistributable co-installers are no longer supported.
 > To learn how to work around this change, see [WDF redistributable co-installers don't work](/windows-hardware/drivers/wdk-known-issues#wdf-redistributable-co-installers-dont-work) in the *WDK known issues* article.
 
-USB Device vendors use co-installers to update device firmware for devices that use inbox USB device drivers. However, co-installers aren't supported by the new "Universal INF" standard, which is a requirement on Windows 10. This poses a challenge to existing USB device firmware update process. This article outlines a recommended method to update USB device firmware without a co-installer.
+USB device vendors use co-installers to update device firmware for devices that use inbox USB device drivers. However, co-installers aren't supported by the new "Universal INF" standard, which is a requirement on Windows 10. This poses a challenge to existing USB device firmware update process. This article outlines a recommended method to update USB device firmware without a co-installer.
 
 ## Requirements
 
@@ -40,13 +40,13 @@ There are two ways the firmware could be updated:
 
 1. Firmware Update Device Driver
 
-    1. A vendor supplied lower filter driver that puts the device in "firmware update mode".
+    1. A vendor supplied lower filter driver that puts the device in firmware update mode.
 
     1. The device enumerates as a firmware update device.
 
     1. Vendor supplied firmware update driver loads against this device and updates the firmware.
 
-## Method 1: Firmware Update Filter Driver
+## Method 1: Firmware update filter driver
 
 In this method, a lower filter driver to the USB device driver installs as part of driver update process. This filter driver performs the firmware update.
 
@@ -60,7 +60,7 @@ The driver update package on the Windows Update server contains:
 
 ![Firmware update UMDF lower filter driver method.](images/fw-update-umdf-lower-filter-driver-method.png)
 
-While installing the driver update package, the firmware update WDF filter driver's [**AddDevice**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine is called. From this routine, the WDF filter driver gets for the device firmware version from the device HW registry key. The device firmware should have placed the firmware version using the MSOS descriptor onto the device HW registry key.
+While installing the driver update package, the firmware update WDF filter driver's [**AddDevice**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine is called. From this routine, the WDF filter driver gets for the device firmware version from the device HW registry key. The device firmware should place the firmware version using the MSOS descriptor onto the device HW registry key.
 
 1. If the device firmware version and the filter driver expected firmware version are different, or
 
@@ -82,9 +82,9 @@ On completion of flashing the firmware, the device must disconnect and reconnect
 
 The method of using a "firmware update filter driver", is recommended for devices that have enough resources to hold two full firmware images (the update image and a backup image) on the device memory. The reason is if there were failures during downloading the updated firmware, the device can abandon the update and boot into its original firmware. Thus, not bricking the device.
 
-## Method 2: Firmware Update Device Driver
+## Method 2: Firmware update device driver
 
-In this method, a lower filter driver to the USB device will be installed as part of the driver update process. This filter driver sends a command to the device to restart in firmware update mode, where the device exposes a firmware update interface. The driver for the firmware update interface will load and perform the firmware update.
+In this method, a lower filter driver to the USB device is installed as part of the driver update process. This filter driver sends a command to the device to restart in firmware update mode, where the device exposes a firmware update interface. The driver for the firmware update interface loads and performs the firmware update.
 
 The driver update package on Windows Update server for the device contains:
 
@@ -110,7 +110,7 @@ While installing the driver update package, the WDF lower filter driver's AddDev
 
 1. Else, the WDF filter driver won't insert itself into the device stack
 
-When the [EVT_WDF_DEVICE_D0_ENTRY](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_entry) callback of the WDF filter driver is called at a later point, the filter driver issues a vendor specific command to the device that will place it in firmware update mode. that is The device will disconnect and reconnect, exposing the firmware update interface.
+When the [EVT_WDF_DEVICE_D0_ENTRY](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_entry) callback of the WDF filter driver is called at a later point, the filter driver issues a vendor specific command to the device that places it in firmware update mode. The device will disconnect and reconnect, exposing the firmware update interface.
 
 The system enumerates the firmware update device interface. A custom firmware update WDF driver supplied by the vendor, in the firmware update package, will be load for this firmware update interface. This driver updates the firmware.
 
@@ -122,7 +122,7 @@ This method is recommended for devices that can't hold the updated and original 
 
 ## Recovery
 
-The firmware update process can fail for various reasons. If that happens, when the device is enumerated again, the firmware update driver may try to update the firmware again and may fail again and this update process could end up in a loop. The firmware update driver must put an upper limit to the number of retries it can perform. When the firmware update retries gets beyond a threshold (for example, 3 retries) then the filter driver shouldn't attempt to update the firmware again, until a new version of the driver is downloaded from WU. The firmware update driver may use the registry to persist the retry states.
+The firmware update process can fail for various reasons. If that happens, when the device is enumerated again, the firmware update driver may try to update the firmware again and may fail again and this update process could end up in a loop. The firmware update driver must put an upper limit to the number of retries it can perform. When the firmware update retries gets beyond a threshold (for example, three retries) then the filter driver shouldn't attempt to update the firmware again, until a new version of the driver is downloaded from WU. The firmware update driver may use the registry to persist the retry states.
 
 At the end of device firmware update, we recommend that the device reset itself and re-enumerate.
 
