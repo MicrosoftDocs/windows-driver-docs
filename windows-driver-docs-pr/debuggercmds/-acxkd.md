@@ -2,7 +2,7 @@
 title: "!acxkd"
 description: "The !acxkd extension displays information about audio class extension ACX drivers."
 keywords: ["acxkd Windows Debugging"]
-ms.date: 06/19/2024
+ms.date: 06/21/2024
 topic_type:
 - apiref
 ms.topic: reference
@@ -197,7 +197,33 @@ CLASS_MODULE    0xffff820525b3dc90
 
 ### !acxkd.acxmanager
 
-Use the `!acxmanager` command to display information about the ACXMANAGER object.
+Use the `!acxmanager` command to display information about the ACXMANAGER object. This provides a good starting point to investigate ACX drivers.
+
+This example shows the first part of the extensive `!acxmanager` output provided for a mulitcircuit ACX configuration.
+
+```dbgcmd
+10: kd> !acxmanager
+Dumping info for ACXMANAGER 0x000054f94d1d4378
+
+    Delete pending: No
+
+    # singleton composites: 8
+        ----------------------------------
+
+        [Composite 0]
+
+        State: AfxCompositeStateActive
+        !acxobjbag 000054f94c8e61c8
+        !acxtemplate 000054f94c014d28
+        !acxobject 000054f94c0141c8
+
+        # circuits: 3
+            ----------------------------------
+            [Circuit 0 CORE]
+…
+```
+
+This example output shows a single ACX circuit.
 
 ```dbgcmd
 0: kd> !acxmanager
@@ -210,8 +236,6 @@ Dumping info for ACXMANAGER 0x000049f6c3c769f8
     !wdfhandle 000049f6c3c769f8
     dt Acx01000!Acx::AfxManager ffffb6093c3896b0
 ```
-
-This output shows a single circuit. With an ACX multicircuit addtional information will be displayed.
 
 ### !acxkd.acxobject
 
