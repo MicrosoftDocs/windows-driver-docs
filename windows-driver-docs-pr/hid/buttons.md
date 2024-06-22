@@ -1,7 +1,7 @@
 ---
 title: HID Button Drivers
 description: Use the Microsoft-provided button driver for GPIO buttons; otherwise, implement your driver that injects HID data to the operating system.
-ms.date: 01/11/2024
+ms.date: 06/20/2024
 ---
 
 # HID button drivers
@@ -59,7 +59,7 @@ If you are implementing a non-GPIO button, instead of using preceding model of w
 
 Starting with Windows 10, the HID driver programming interfaces are part of OneCoreUAP-based editions of Windows. By using that common set of interfaces, you can write a button driver by using [Virtual HID Framework](/windows-hardware/drivers/ddi/_hid) or [Transport Minidrivers](transport-minidrivers.md) interfaces. Those drivers will run on both Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) and Windows 10 Mobile, as well as other Windows 10 versions.
 
-For step-by-step guidance, see [Getting Started with Universal Windows drivers](/windows-hardware/drivers).
+For step-by-step guidance, see [Using a Universal INF File](/windows-hardware/drivers/install/using-a-universal-inf-file).
 
 ## Related topics
 

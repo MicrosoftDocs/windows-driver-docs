@@ -1,7 +1,7 @@
 ---
 title: InfVerif
 description: Learn about the InfVerif (InfVerif.exe) tool. You can use this tool to test a driver INF file or find out if the INF file is universal.
-ms.date: 04/20/2017
+ms.date: 06/20/2024
 ---
 
 # InfVerif
@@ -52,7 +52,7 @@ InfVerif reports errors and warnings based on the mode and rules supplied by the
 ## <span id="related_topics"></span>Related topics
 
 
-[Getting Started with Universal Windows drivers](../develop/getting-started-with-windows-drivers.md)
+[Getting Started with Windows Drivers](../develop/getting-started-with-windows-drivers.md)
 
 [Using a Universal INF File](../install/using-a-universal-inf-file.md)
 

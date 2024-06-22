@@ -1,12 +1,12 @@
 ---
 title: Bluetooth Driver Model for Windows
-description: The Bluetooth transport driver interface uses the 'Windows Driver' model. 'Windows Driver' extends and replaces the older 'Universal Driver' classification.
-ms.date: 01/10/2024
+description: The Bluetooth transport driver interface uses the 'Windows Driver' model. 'Windows Driver' extends the older 'Universal Driver' classification.
+ms.date: 06/20/2024
 ---
 
 # Bluetooth driver model for Windows
 
-The Bluetooth transport driver interface uses the *Windows Driver* model. The *Windows Driver* classification extends and replaces the older *Universal Driver* classification.
+The Bluetooth transport driver interface uses the *Windows Driver* model. The *Windows Driver* classification extends the older [*Universal Driver*](/windows-hardware/drivers/install/using-a-universal-inf-file) classification.
 
 ## How to write a Bluetooth Windows driver
 

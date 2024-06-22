@@ -1,16 +1,16 @@
 ---
 title: Update Device Firmware Using Windows Update
 description: This article describes how to update your device's firmware using the Windows Update (WU) service.
-ms.date: 10/26/2022
+ms.date: 06/20/2024
 ---
 
 # Update device firmware using Windows Update
 
 This article describes how to update a removable or in-chassis device's firmware using the Windows Update (WU) service.  For information about updating system firmware, see [Windows UEFI firmware update platform](../bringup/windows-uefi-firmware-update-platform.md).
 
-To do this, you'll provide a device driver that includes the firmware payload.  If you provide a function driver for your device, you can add the firmware update logic and payload to the existing driver, or you can provide a separate firmware update driver package.  If your device uses a Microsoft-supplied driver, you must provide a separate firmware update driver package.  In both cases, the firmware update driver package must be universal.
+To do this, you'll provide a device driver that includes the firmware payload.  If you provide a function driver for your device, you can add the firmware update logic and payload to the existing driver, or you can provide a separate firmware update driver package.  If your device uses a Microsoft-supplied driver, you must provide a separate firmware update driver package.  In both cases, the firmware update driver package must be Universal.
 
-For more info about universal drivers, see [Getting started with Windows drivers](../develop/getting-started-with-windows-drivers.md).  The driver binary can use [KMDF](../wdf/index.md), [UMDF 2](../wdf/getting-started-with-umdf-version-2.md) or the [Windows Driver Model](../kernel/writing-wdm-drivers.md).
+For more info about Universal drivers, see [Using a Universal INF File](../install/using-a-universal-inf-file.md).  The driver binary can use [KMDF](../wdf/index.md), [UMDF 2](../wdf/getting-started-with-umdf-version-2.md) or the [Windows Driver Model](../kernel/writing-wdm-drivers.md).
 
 Because WU can't execute software, the firmware update driver must hand the firmware to Plug and Play (PnP) for installation.
 

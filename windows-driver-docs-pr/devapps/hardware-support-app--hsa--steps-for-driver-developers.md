@@ -7,7 +7,7 @@ keywords:
 - custom capabilities
 - UWP
 - Hardware
-ms.date: 03/17/2023
+ms.date: 06/20/2024
 ---
 
 # Hardware Support App (HSA): Steps for Driver Developers
@@ -18,7 +18,7 @@ To associate a Store app with a driver, first reserve a special value called a c
 
 The steps for the app developer are described in [Hardware Support App (HSA): Steps for App Developers](hardware-support-app--hsa--steps-for-app-developers.md).
 
-HSA is one of the three ("DCH") design principles of [Windows Drivers](../develop/getting-started-with-windows-drivers.md).
+HSA is one of the three ["DCH" design principles](../develop/dch-principles-best-practices.md).
 
 ## Reserving a custom capability
 

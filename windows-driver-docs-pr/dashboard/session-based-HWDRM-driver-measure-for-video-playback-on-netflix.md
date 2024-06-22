@@ -2,7 +2,7 @@
 title: Session based HWDRM Driver measure for Video playback on Netflix 
 description: This session-based Hardware DRM Driver measure is used to capture the percentage of sessions that have an error during video playback on Netflix while using hardware DRM.
 ms.topic: article
-ms.date: 05/09/2023
+ms.date: 06/20/2024
 ---
 
 #  Percentage of devices with HWDRM playback that triggered the Catalog reload event
@@ -11,7 +11,7 @@ ms.date: 05/09/2023
 
 This session-based hardware DRM Driver measure is used to capture the percentage of sessions that have an error during video playback on Netflix while using hardware DRM. DRM (Digital Rights Management) techniques (Software or Hardware) are used during Video Playback on windows devices. 
 
-More information about DRM can be found at [Digital Rights Management - Windows drivers | Microsoft Docs](/windows-hardware/drivers/audio/digital-rights-management).
+More information about DRM can be found at [Digital Rights Management](/windows-hardware/drivers/audio/digital-rights-management).
 
 ## Measure attributes
 

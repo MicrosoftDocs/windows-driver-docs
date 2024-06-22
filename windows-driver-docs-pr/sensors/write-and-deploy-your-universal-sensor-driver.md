@@ -1,16 +1,16 @@
 ---
 title: Write and Deploy Your Universal Sensor Driver
-description: This topic provides guidance on how to write and deploy your universal sensor driver, using the user mode driver framework (UMDF) version 2.
-ms.date: 01/11/2024
+description: This topic provides guidance on how to write and deploy your Universal sensor driver, using the user mode driver framework (UMDF) version 2.
+ms.date: 06/20/2024
 ---
 
-# Write and deploy your universal sensor driver
+# Write and deploy your Universal sensor driver
 
-This topic provides guidance on how to write and deploy your universal sensor driver, using the user mode driver framework (UMDF) version 2.
+This topic provides guidance on how to write and deploy your Universal sensor driver, using the user mode driver framework (UMDF) version 2.
 
 ## Write a generic UMDF 2.0 driver
 
-To build a generic UMDF 2.0 driver, see [Getting Started with Universal Windows Drivers](../develop/getting-started-with-windows-drivers.md), and follow the steps in the section titled [Building a Universal Windows driver](../develop/building-a-windows-driver.md), to build a Universal Windows driver using the **User Mode Driver (UMDF V2)** template.
+To build a generic UMDF 2.0 driver, see [Using a Universal INF File](../install/using-a-universal-inf-file.md), and follow the steps in the section titled [Building a Windows driver](../develop/building-a-windows-driver.md), to build a Universal Windows driver using the **User Mode Driver (UMDF V2)** template.
 
 ## Customize the generic UMDF 2.0 driver files
 

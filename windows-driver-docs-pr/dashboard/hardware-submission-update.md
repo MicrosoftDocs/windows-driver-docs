@@ -2,7 +2,7 @@
 title: Update a hardware submission
 description: Learn how to update hardware submission details, including status, packages, certification info, and shipping labels.
 ms.topic: article
-ms.date: 04/24/2022
+ms.date: 06/20/2024
 ---
 
 # Update a hardware submission
@@ -87,7 +87,7 @@ In the submission details page, you can download signed files, the initial packa
 
     |Field|Description|
     |----|----|
-    | DCHU Compliance |Indicates whether or not your driver meets the Universal Windows Platform requirements. For more information, see [Getting Started with Universal Windows drivers](https://techcommunity.microsoft.com/t5/Hardware-Dev-Center/Upcoming-Hardware-Dev-Center-changes-that-enable-support-for/ba-p/504574). |
+    | DCHU Compliance |Indicates whether or not your driver meets the [Universal Windows Platform](/windows-hardware/drivers/install/using-a-universal-inf-file) and [ApiValidator](validating-windows-drivers#apivalidator) requirements. |
     |What type of device?|Indicates that your device is an *internal component* (part of a system and connects inside the PC), *external component* (an external device (peripheral) that connects to a PC), or *both*.|
     | firmware version | The firmware version of your driver. |
     |Announcement date| The date when you want your product included on the Windows Server Catalog, the Windows Certified Product List, and the Universal Driver List. The default setting is **Today**.|

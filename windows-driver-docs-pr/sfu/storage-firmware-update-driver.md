@@ -1,7 +1,7 @@
 ---
 title: Storage Firmware Update (SFU) Driver
 description: Provides implementation details for the Storage Firmware Update (SFU) driver.
-ms.date: 05/08/2023
+ms.date: 06/20/2024
 ---
 
 # Storage Firmware Update (SFU) driver
@@ -13,7 +13,7 @@ Additionally, devices running [Windows 10 in S mode](https://www.microsoft.com/w
 > [!NOTE]
 > Windows 10 in S mode works exclusively with apps from the Microsoft Store within Windows and accessories that are compatible with Windows 10 in S mode. A one-way switch out of S mode is available. Learn more at [windows.com/SmodeFAQ](https://support.microsoft.com/help/4020089).
 
-[Updating device firmware using Windows Update (WU)](../install/updating-device-firmware-using-windows-update.md) service using a driver-based solution is available to hardware vendors and requires them to either add firmware update logic and payload to an existing function driver or provide a separate firmware update driver and package. This results in duplicative work across hardware partners and increases the overall servicing costs of storage drives. For more information about universal drivers, see [Getting Started with Universal Windows drivers](../develop/getting-started-with-windows-drivers.md).
+[Updating device firmware using Windows Update (WU)](../install/updating-device-firmware-using-windows-update.md) service using a driver-based solution is available to hardware vendors and requires them to either add firmware update logic and payload to an existing function driver or provide a separate firmware update driver and package. This results in duplicative work across hardware partners and increases the overall servicing costs of storage drives. For more information about Universal drivers, see [Using a Universal INF File](../install/using-a-universal-inf-file.md).
 
 Utilizing the Windows 10, version 2004 (OS build 19041.488 or higher) it's possible to update NVMe drive firmware using a Microsoft-supplied driver and a hardware vendor supplied firmware update package. This solution can be distributed via Windows Update to targeted drives and devices using [Computer Hardware IDs (CHIDs)](../install/specifying-hardware-ids-for-a-computer.md).
 
