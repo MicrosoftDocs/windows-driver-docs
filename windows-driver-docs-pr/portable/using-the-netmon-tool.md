@@ -1,7 +1,7 @@
 ---
 description: The Network Monitor tool (NetMon.exe) is a Windows-based application that you can use to view traces from WPD components.
 title: Using the Network Monitor Tool
-ms.date: 03/03/2023
+ms.date: 06/20/2024
 ---
 
 # Using the Network Monitor Tool
@@ -16,7 +16,7 @@ To install and configure the Network Monitor tool, complete the following steps.
 2. Download and install [the Windows Driver Kit](../download-the-wdk.md).
 3. Install the WPD parsers on your development machine by starting an instance of *Powershell.exe* with *Administrator* permissions and running the following sequence of commands.
    1. PowerShell -ExecutionPolicy RemoteSigned
-   2. cd “C:\\Program Files (x86)\\Windows Kits\\10\\Tools\\10.0.22621.0\\x86\\Network Monitor Parsers\\usb”
+   2. `cd C:\Program Files (x86)\Windows Kits\10\Tools\10.0.22621.0\x86\Network Monitor Parsers\usb`
    3. ..\\NplAutoProfile.ps1
    4. cd ..\\wpd
    5. ..\\NplAutoProfile.ps1
@@ -24,7 +24,7 @@ To install and configure the Network Monitor tool, complete the following steps.
 
 4. Configure the *NetMon.exe* options by using the Tools/Options dialog:
    1. In the **General** tab, select the **Use fixed width font in Frame Summary** box.
-   2. In the **Color Rules** tab, select **Open** and then select `Program Files (x86)\Windows Kits\8.0\Tools\x86\Network Monitor Parsers\wpd\wpd.nmcr`. Select **Open**, followed by **OK.**
+   2. In the **Color Rules** tab, select **Open** and then select `C:\Program Files (x86)\Windows Kits\10\Tools\10.0.22621.0\x86\Network Monitor Parsers\wpd\wpd.nmcr`. Select **Open**, followed by **OK.**
 
 After you complete these steps, *NetMon.exe* is ready to examine WPD trace files. To begin collecting traces, follow the instructions in the next section, Collecting Traces.
 

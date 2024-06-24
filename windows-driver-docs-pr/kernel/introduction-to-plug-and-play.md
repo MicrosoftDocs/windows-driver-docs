@@ -2,18 +2,10 @@
 title: Introduction to Plug and Play
 description: Introduction to Plug and Play
 keywords: ["PnP WDK kernel , about Plug and Play", "Plug and Play WDK kernel , about Plug and Play"]
-ms.date: 03/10/2021
+ms.date: 06/20/2024
 ---
 
 # Introduction to Plug and Play
-
-This section contains the following additional topics:
-
-[PnP Components](pnp-components.md)
-
-[PnP Driver Design Guidelines](pnp-driver-design-guidelines.md)
-
-[Hardware Resources](hardware-resources.md)
 
 Plug and Play (PnP) is the part of Windows that enables a computer system to adapt to hardware changes with minimal intervention by the user. A user can add and remove devices without having to do manual configuration, and without knowledge of computer hardware. For example, a user can dock a portable computer and use the docking station keyboard, mouse, and monitor without making manual configuration changes.
 
@@ -39,4 +31,4 @@ The system software support for PnP, together with PnP drivers provides the foll
 
     PnP enables drivers and user-mode code to register for, and be notified of, certain hardware events.
 
-For a driver to qualify as PnP it must provide the required PnP entry points, handle the required PnP IRPs, and follow PnP guidelines.
+For a driver to qualify for PnP it must provide the required PnP entry points, handle the required PnP IRPs, and follow PnP guidelines.

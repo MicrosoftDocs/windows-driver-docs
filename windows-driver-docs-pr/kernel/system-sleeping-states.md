@@ -2,7 +2,7 @@
 title: System Sleeping States
 description: System Sleeping States
 keywords: ["system power states WDK kernel , sleeping states", "system sleeping states WDK power management", "sleeping states WDK power management", "S1 WDK power management", "S2 WDK power management", "S3 WDK power management", "S4 WDK power management", "software resumption WDK power management", "resumption WDK power management", "hardware latency WDK power management", "system hardware context WDK power management", "hardware context WDK power management", "context WDK power management", "latency WDK power management"]
-ms.date: 03/18/2022
+ms.date: 06/20/2024
 ---
 
 # System Sleeping States
@@ -50,7 +50,7 @@ All context retained and maintained by hardware.
 
 ### System Power State S2
 
-System power state S2 is similar to S1 except that the CPU context and contents of the system cache are lost because the processor loses power. State S2 has the following characteristics:
+System power state S2 is similar to S1 except that the CPU context and contents of the system cache are lost because the processor loses power. :::no-loc text="State S2"::: has the following characteristics:
 
 **Power consumption**
 <ul>
@@ -102,7 +102,7 @@ System power state S4, the hibernate state, is the lowest-powered sleeping state
 
 If a computer in state S1, S2, or S3 loses all AC or battery power, it loses system hardware context and therefore must reboot to return to S0. A computer in state S4, however, can restart from its previous location even after it loses battery or AC power because operating system context is retained in the hibernate file. A computer in the hibernate state uses no power (with the possible exception of trickle current).
 
-State S4 has the following characteristics:
+:::no-loc text="State S4"::: has the following characteristics:
 
 **Power consumption**
 <ul>

@@ -2,7 +2,8 @@
 title: Acpi.sys (Windows ACPI Driver)
 description: The Windows ACPI driver, Acpi.sys, is an inbox component of the Windows operating system.
 keywords: ["ACPI drivers WDK power management", "enumerators WDK power management", "PDOs WDK power management", "filter DOs WDK power management", "physical device objects WDK power management"]
-ms.date: 10/19/2022
+ms.date: 06/20/2024
+ms.author: bagold
 ---
 
 # Acpi.sys (Windows ACPI driver)
@@ -45,9 +46,9 @@ To invoke a control method, the kernel-mode driver for an ACPI device initiates 
 
 ## ACPI specification
 
-The *Advanced Configuration and Power Interface Specification* ([ACPI 5.0 specification](https://uefi.org/specifications)) is available from the Unified Extensible Firmware Interface Forum website.
+The *Advanced Configuration and Power Interface Specification* ([ACPI 6.4 specification](https://uefi.org/specifications)) is available from the Unified Extensible Firmware Interface Forum website.
 
-Revision 5.0 of the ACPI specification introduces a set of features to support low-power, mobile PCs that are based on System on Chip (SoC) integrated circuits and that implement the [connected standby](/windows-hardware/design/device-experiences/modern-standby) power model. Starting with Windows 8 and later versions, the Windows ACPI driver, Acpi.sys, supports the new features in the ACPI 5.0 specification. For more information, see [Windows ACPI design guide for SoC platforms](../bringup/windows-acpi-design-guide-for-soc-platforms.md).
+Revision 5.0 of the ACPI specification introduces a set of features to support low-power, mobile PCs that are based on System on Chip (SoC) integrated circuits and that implement the [connected standby](/windows-hardware/design/device-experiences/modern-standby) power model. Starting in Windows 8, the Windows ACPI driver, Acpi.sys, supports the new features in the ACPI 5.0 specification. For more information, see [Windows ACPI design guide for SoC platforms](../bringup/windows-acpi-design-guide-for-soc-platforms.md).
 
 ## ACPI debugging
 
@@ -63,4 +64,4 @@ Version 5.0 of the Microsoft ASL compiler supports features in the [ACPI 5.0 spe
 
 The ASL compiler is distributed with the [Windows Driver Kit (WDK)](../download-the-wdk.md).
 
-The ASL compiler (asl.exe) is located in the Tools\\arm\\ACPIVerify, Tools\\arm64\\ACPIVerify, Tools\\x86\\ACPIVerify, and Tools\\x64\\ACPIVerify directories of the installed WDK, for example, C:\Program Files (x86)\Windows Kits\10\Tools\x86\ACPIVerify.
+The ASL compiler (asl.exe) is located in the `Tools\<build>\<architecture>\ACPIVerify` folder of the installed WDK, for example, `C:\Program Files (x86)\Windows Kits\10\Tools\10.0.22631.0\x64`.

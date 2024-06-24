@@ -1,7 +1,7 @@
 ---
 title: Loading Test Signed Code
 description: Describes how to enable loading of test signed drivers using the TESTSIGNING option with BCDEdit tool
-ms.date: 06/12/2024
+ms.date: 06/20/2024
 ---
 
 # Enable Loading of Test Signed Drivers
@@ -9,7 +9,7 @@ ms.date: 06/12/2024
 By default, Windows does not load test-signed kernel-mode drivers. To change this behavior and enable test-signed drivers to load, use the boot configuration data editor, BCDEdit.exe, to enable or disable TESTSIGNING, a boot configuration option. You must have Administrator rights to enable this option.
 
 > [!Note]
-> For 64-bit versions of Windows Vista and later versions of Windows, the kernel-mode code signing policy requires that all kernel-mode code have a digital signature. However, in most cases, an unsigned driver can be installed and loaded on 32-bit versions of Windows Vista and later versions of Windows. For more information, see [Driver Signing Policy](kernel-mode-code-signing-policy--windows-vista-and-later-.md).
+> Starting in Windows Vista, the kernel-mode code signing policy requires that all kernel-mode code have a digital signature to load on 64-bit versions of Windows. However, in most cases, an unsigned driver can be installed and loaded on 32-bit versions of Windows. For more information, see [Driver Signing Policy](kernel-mode-code-signing-policy--windows-vista-and-later-.md).
 
 
 ## Administrator rights required

@@ -15,13 +15,13 @@ The power manager is responsible for managing power usage for the system. It adm
 
 The power manager requests power operations by sending [**IRP\_MJ\_POWER**](./irp-mj-power.md) requests to drivers. A request can specify a new power state or can query whether a change in power state is feasible.
 
-When :::no-loc text="sleep, hibernation, or shutdown"::: is required, the power manager requests the appropriate power action by sending an **IRP\_MJ\_POWER** request to each leaf node in the device tree. The power manager considers the following in determining whether the system should :::no-loc text="sleep, hibernate, or shut down"::::
+When :::no-loc text="sleep, hibernation":::, or :::no-loc text="shut down"::: is required, the power manager requests the appropriate power action by sending an **IRP\_MJ\_POWER** request to each leaf node in the device tree. The power manager considers the following:
 
 -   System activity level
 
 -   System battery level
 
--   Shutdown, hibernate, or sleep requests from applications
+-   :::no-loc text="Sleep, hibernation":::, or :::no-loc text="shut down"::: requests from applications
 
 -   User actions, such as pressing the power button
 

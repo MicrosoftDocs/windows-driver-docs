@@ -9,7 +9,7 @@ keywords:
 - framework-based drivers WDK KMDF , about framework-based drivers
 - objects WDK KMDF
 - framework objects WDK KMDF
-ms.date: 02/07/2023
+ms.date: 06/20/2024
 ms.topic: article
 ---
 
