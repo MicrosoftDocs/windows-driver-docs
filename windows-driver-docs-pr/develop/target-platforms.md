@@ -4,7 +4,19 @@ description: In the Requirements block at the bottom of Microsoft driver referen
 ms.date: 06/21/2024
 ---
 
-# Target platform on driver reference pages
+# Target platforms
+
+Set the target platform to the  type of driver that you wish to develop. For more information, see [Building a Driver with the WDK](building-a-driver.md).
+
+Here are the values for **Target Platform**, and what they mean:
+
+|Term|Description|
+|--- |--- |
+|Universal|A driver binary in a Windows Driver can call this device driver interface (DDI). For more info, see [Getting Started with Windows drivers](getting-started-with-windows-drivers.md).|
+|Desktop|A driver binary for Windows 10 for desktop editions or Windows Server 2016 can call this DDI.|
+|Windows Driver | A *Windows Driver* runs on the following Universal Windows Platform (UWP)-based editions of Windows: <p> Windows 11 <p> Windows Server 2022 <p> Windows Server 2019 <p> Windows 10 for desktop editions (Home, Pro, and Enterprise) <p> Windows 10 in S-Mode <p> Windows 10 IoT Core <p> Windows Server 2016 <p>|
+
+## Target platform on driver reference pages
 
 In the Requirements block at the bottom of Microsoft driver reference documentation pages, you'll see an entry called **Target Platform**. This line lists editions of Windows to which the page applies.
 
