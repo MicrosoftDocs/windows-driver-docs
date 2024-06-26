@@ -1,12 +1,12 @@
 ---
 title: What's New in Driver Development for Windows 11, Version 23H2
 description: This section describes new features for driver development in Windows 11, version 23H2.
-ms.date: 10/24/2023
+ms.date: 06/26/2024
 ---
 
 # <a name="top"></a>What's new in driver development for Windows 11, version 23H2
 
-This section describes new features and updates for driver development in Windows 11, version 23H2. To target this version of Windows, you can use [WDK 10.0.22621.2428](./download-the-wdk.md) (released October 24, 2023).
+This section describes new features and updates for driver development in Windows 11, version 23H2. To target this version of Windows, you can use [WDK 10.1.22621.2428](./download-the-wdk.md) (released October 24, 2023).
 
 ## Audio
 
