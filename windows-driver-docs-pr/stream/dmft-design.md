@@ -398,6 +398,27 @@ Upon device driver installation, the INF must now make all COM object and MFT re
 |Registry Location: <br><br> HKLM\SOFTWARE\Classes\MediaFoundation\Transforms\\{clsid}\\... |Registry Locations: <br><br> **software key**\MediaFoundation\Transforms\\{clsid}\\... |
 
 ##### COM Registrations:
+
+In Windows 26100 and later, all COM registration for Device MFTs must use AddComServer/AddComClass directives in the INF. A syntax example cam be seen below:
+
+
+```
+[AvsCamera.COM]
+AddComServer = AvsCameraMFT,,AvsCamera.COMInstall
+
+[AvsCamera.COMInstall]
+ServerType = 1; in-proc
+ServerBinary = %13%\AvsCameraDMFT.dll
+AddComClass = %DMFT.CLSID%,, AvsCamera.COMClassInstall
+
+
+[AvsCamera.COMClassInstall]
+ThreadingModel = Both
+Description = %AvsCamera.ComServerDescription%
+
+```
+
+Previous versions of Device MFT Com Registration would use AddReg to manually install the COM class.
 | Before | After |
 |---|---|
 |INF AddReg: <br><br> HKLM,Software\\Classes\\CLSID\\{clsid}\\... <br> HKCR,CLSID\\{clsid}\\... <br> HKCR,Wow6432Node\CLSID\\{clsid}\\... <br> HKCR,WowAA32Node\CLSID\\{clsid}\\... |Per-Instance device software INF AddReg: <br><br> HKR,Classes\CLSID\\{clsid}\\... <br> HKR,Classes\CLSID\\{clsid}\\... <br> HKR,Classes\Wow6432Node\CLSID\\{clsid}\\... <br> HKR,Classes\WowAA32Node\CLSID\\{clsid}\\... |
