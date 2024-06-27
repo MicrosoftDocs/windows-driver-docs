@@ -1,6 +1,7 @@
 ---
 title: HID Application Programming Interface (API)
 description: Introduction to Human Interface Devices (HID) API.
+ms.date: 06/26/2024
 keywords:
 - Human Interface Devices
 - HID
@@ -9,74 +10,85 @@ keywords:
 - sensory data
 - accelerometers
 - gyroscope
-ms.date: 02/28/2020
 ---
 
-# HID Application Programming Interface (API)
+# HID application programming interface (API)
 
-There are three categories of HID APIs: device discovery and setup, data movement, and report creation/interpretation.
+There are three categories of HID APIs:
 
-## Device Discovery and Setup
+1. Device discovery and setup
+1. Data movement
+1. Report creation and interpretation
 
-These HID APIs are used to identify the properties of a HID device and to establish communication with that device. Applications use these APIs to identify a Top Level Collection.
+## Device discovery and setup
 
-- [HidD\_GetAttributes](/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_getattributes)
-- [HidD\_GetHidGuid](/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_gethidguid)
-- [HidD\_GetIndexedString](/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_getindexedstring)
-- [HidD\_GetManufacturerString](/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_getmanufacturerstring)
-- [HidD\_GetPhysicalDescriptor](/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_getphysicaldescriptor)
-- [HidD\_GetPreparsedData](/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_getpreparseddata)
-- [HidD\_GetProductString](/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_getproductstring)
-- [HidD\_GetSerialNumberString](/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_getserialnumberstring)
-- [HidD\_GetNumInputBuffers](/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_getnuminputbuffers)
-- [HidD\_SetNumInputBuffers](/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_setnuminputbuffers)
+These HID APIs are used to identify the properties of a HID device and to establish communication with that device. Applications use these APIs to identify a top level collection.
 
-## Data Movement
+- [HidD_GetAttributes](/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_getattributes)
+- [HidD_GetHidGuid](/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_gethidguid)
+- [HidD_GetIndexedString](/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_getindexedstring)
+- [HidD_GetManufacturerString](/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_getmanufacturerstring)
+- [HidD_GetPhysicalDescriptor](/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_getphysicaldescriptor)
+- [HidD_GetPreparsedData](/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_getpreparseddata)
+- [HidD_GetProductString](/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_getproductstring)
+- [HidD_GetSerialNumberString](/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_getserialnumberstring)
+- [HidD_GetNumInputBuffers](/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_getnuminputbuffers)
+- [HidD_SetNumInputBuffers](/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_setnuminputbuffers)
 
-These HID APIs are used to move data between an application and a selected device.
+## Data movement
 
-- [HidD\_GetInputReport](/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_getinputreport)
-- [HidD\_SetFeature](/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_setfeature)
-- [HidD\_SetOutputReport](/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_setoutputreport)
+The following HID APIs are used to move data between an application and a selected device.
+
+- [HidD_GetInputReport](/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_getinputreport)
+- [HidD_SetFeature](/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_setfeature)
+- [HidD_SetOutputReport](/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_setoutputreport)
 - [ReadFile](/windows/win32/api/fileapi/nf-fileapi-readfile)
 - [WriteFile](/windows/win32/api/fileapi/nf-fileapi-writefile)
 
-## Report Creation and Interpretation
+## Report creation and interpretation
 
-Developers of custom hardware know the size and format of each Report issued by their device. In this case the application can cast the input and output Report buffers to structs and consume the data.
+Developers of custom hardware know the size and format of each report issued by their device. In this case, the application can cast the input and output report buffers as structs and consume the data.
 
-Developers of HID applications intended to communicate with all devices that expose common functionality (for example a music application that must detect when a play button is pressed) may not know the size and format of the HID Reports. This category of application understands certain Top Level Collections and certain usages.
+Developers of HID applications intended to communicate with all devices that expose common functionality might not know the size and format of the HID reports. This category of application understands certain top level collections and certain usages.
 
-To interpret the Reports received from a device or to create Reports to be sent the application must leverage the Report Descriptor to determine if and where a particular Usage is located in the Reports and (potentially) the units of values in the Reports. In these cases HID parsing is required. Windows provides a HID parser for use by drivers and applications via APIs (HidP\_\*) that can be used to discover the types of usages supported by a device, determine the state of such usages in a Report, or to build a Report to change the state of a usage in the device.
+To interpret the reports received from a device or to create reports to be sent the application must use the report descriptor to determine if and where a particular usage is located in the reports and the units of values in the reports. In these cases, HID parsing is required. Windows provides a HID parser for use by drivers and applications via APIs (HidP_*) that can be used to discover the types of usages supported by a device, determine the state of such usages in a report, or to build a report to change the state of a usage in the device.
 
-These are the HID parser APIs.
+Here's the list of HID parser APIs:
 
-- [HidP\_GetButtonCaps](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getbuttoncaps)
-- [HidP\_GetButtons](/windows-hardware/drivers/ddi/hidpi/#functionsfunctions)
-- [HidP\_GetButtonsEx](/windows-hardware/drivers/ddi/hidpi/#functionsfunctions)
-- [HidP\_GetCaps](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getcaps)
-- [HidP\_GetData](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getdata)
-- [HidP\_GetExtendedAttributes](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getextendedattributes)
-- [HidP\_GetLinkCollectionNodes](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getlinkcollectionnodes)
-- [HidP\_GetScaledUsageValue](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getscaledusagevalue)
-- [HidP\_GetSpecificButtonCaps](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getspecificbuttoncaps)
-- [HidP\_GetSpecificValueCaps](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getspecificvaluecaps)
-- [HidP\_GetUsages](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getusages)
-- [HidP\_GetUsagesEx](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getusagesex)
-- [HidP\_GetUsageValue](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getusagevalue)
-- [HidP\_GetUsageValueArray](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getusagevaluearray)
-- [HidP\_GetValueCaps](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getvaluecaps)
-- [HidP\_InitializeReportForID](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_initializereportforid)
-- [HidP\_IsSameUsageAndPage](/windows-hardware/drivers/ddi/hidpi/ns-hidpi-_usage_and_page)
-- [HidP\_MaxDataListLength](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_maxdatalistlength)
-- [HidP\_MaxUsageListLength](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_maxusagelistlength)
-- [HidP\_SetButtons](/windows-hardware/drivers/ddi/hidpi/#functionsfunctions)
-- [HidP\_SetData](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_setdata)
-- [HidP\_SetScaledUsageValue](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_setscaledusagevalue)
-- [HidP\_SetUsages](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_setusages)
-- [HidP\_SetUsageValue](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_setusagevalue)
-- [HidP\_SetUsageValueArray](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_setusagevaluearray)
-- [HidP\_UnsetButtons](/windows-hardware/drivers/ddi/hidpi/#functionsfunctions)
-- [HidP\_UnsetUsages](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_unsetusages)
-- [HidP\_UsageAndPageListDifference](/previous-versions/windows/hardware/drivers/ff539824(v=vs.85))
-- [HidP\_UsageListDifference](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_usagelistdifference)
+- [HidP_GetButtonArray](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getbuttonarray)
+- [HidP_GetButtonCaps](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getbuttoncaps)
+- [HidP_GetButtons](/windows-hardware/drivers/ddi/hidpi/#functionsfunctions)
+- [HidP_GetButtonsEx](/windows-hardware/drivers/ddi/hidpi/#functionsfunctions)
+- [HidP_GetCaps](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getcaps)
+- [HidP_GetData](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getdata)
+- [HidP_GetExtendedAttributes](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getextendedattributes)
+- [HidP_GetLinkCollectionNodes](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getlinkcollectionnodes)
+- [HidP_GetScaledUsageValue](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getscaledusagevalue)
+- [HidP_GetSpecificButtonCaps](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getspecificbuttoncaps)
+- [HidP_GetSpecificValueCaps](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getspecificvaluecaps)
+- [HidP_GetUsages](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getusages)
+- [HidP_GetUsagesEx](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getusagesex)
+- [HidP_GetUsageValue](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getusagevalue)
+- [HidP_GetUsageValueArray](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getusagevaluearray)
+- [HidP_GetValueCaps](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getvaluecaps)
+- [HidP_GetVersion](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getversion)
+- [HidP_InitializeReportForID](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_initializereportforid)
+- [HidP_MaxDataListLength](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_maxdatalistlength)
+- [HidP_MaxUsageListLength](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_maxusagelistlength)
+- [HidP_SetButtonArray](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_setbuttonarray)
+- [HidP_SetButtons](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_setbuttons)
+- [HidP_SetData](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_setdata)
+- [HidP_SetScaledUsageValue](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_setscaledusagevalue)
+- [HidP_SetUsages](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_setusages)
+- [HidP_SetUsageValue](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_setusagevalue)
+- [HidP_SetUsageValueArray](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_setusagevaluearray)
+- [HidP_TranslateUsagesToI8042ScanCodes](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_translateusagestoi8042scancodes)
+- [HidP_UnsetButtons](/windows-hardware/drivers/ddi/hidpi/#functionsfunctions)
+- [HidP_UnsetUsages](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_unsetusages)
+- [HidP_UsageAndPageListDifference](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_usageandpagelistdifference)
+- [HidP_UsageListDifference](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_usagelistdifference)
+
+## Related topics
+
+- [hidpi.h header](/windows-hardware/drivers/ddi/hidpi/)
+- [hidsdi.h header](/windows-hardware/drivers/ddi/hidsdi/)
