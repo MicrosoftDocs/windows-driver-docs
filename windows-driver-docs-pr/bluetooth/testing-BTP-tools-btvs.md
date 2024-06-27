@@ -1,12 +1,12 @@
 ---
-title: Microsoft Bluetooth Test Platform - BTVS
+title: Microsoft Bluetooth Test Platform - Bluetooth Virtual Sniffer (BTVS)
 description: Bluetooth Test Platform (BTP) Bluetooth Virtual Sniffer.
 ms.date: 06/26/2024
 ---
 
 # Bluetooth Virtual Sniffer (btvs.exe)
 
-The Bluetooth Virtual Sniffer allows the user to view live HCI traces in the Frontline Protocol Analysis System, in the Ellisys Bluetooth Analyzer, or in Wireshark. Wireshark is recommended.
+The Bluetooth Virtual Sniffer (BTVS) allows the user to view live HCI traces in the Frontline Protocol Analysis System, in the Ellisys Bluetooth Analyzer, or in Wireshark. Wireshark is recommended.
 
 ## Command line options
 
@@ -30,7 +30,7 @@ btvs.exe [-Address 127.0.0.1] [-Mode Frontline|Ellisys|Wireshark]  [-Port 24352]
                     1: Primary. 2: Secondary. 3: Tertiary. (Default: 1)
 ```
 
-All of these usages require opening a command prompt or Powershell console and navigating to btvs application inside the extracted BTP folder.
+All of these usages require opening a command prompt or PowerShell console and navigating to the BTVS application inside the extracted BTP folder.
 
 ## User interface
 
@@ -54,7 +54,7 @@ Assumes Wireshark is installed.
 
     `btvs.exe -Mode Wireshark`
 
-1. If Wireshark is installed, Wireshark will automatically open.
+1. If Wireshark is installed, Wireshark opens automatically.
 
     Otherwise, manually start Wireshark and provide the default TCP pipe as the interface:
 
@@ -62,11 +62,11 @@ Assumes Wireshark is installed.
 
 ### Usage for Wireshark on separate machine
 
-1. Run btvs.exe using the command prompt\Powershell console:
+1. Run btvs.exe using the command prompt\PowerShell console:
 
     `btvs.exe -Mode Wireshark -Remote on`
 
-1. Run wireshark and pass in the ip address of the first machine and chosen port via command line parameters:
+1. Run `wireshark` and pass in the IP address of the first machine and chosen port via command line parameters:
 
     `wireshark -k -i TCP@<ip address>:<port>`
 
@@ -94,7 +94,7 @@ Assumes Ellisys is installed.
 
     `btvs.exe -Mode Ellisys`
 
-    a. Optionally, if the Ellisys Bluetooth Analyzer is running on a different machine, or if the listen port in Ellisys was changed, provide the Address or Port on the command line (see [Command line options](#command-line-options) above).
+    a. Optionally, if the Ellisys Bluetooth Analyzer is running on a different machine, or if the listened port in Ellisys was changed, provide the Address or Port on the command line (see [Command line options](#command-line-options)).
 
 ## Frontline Protocol Analysis System operation
 
@@ -102,7 +102,7 @@ Assumes Frontline is installed.
 
 ### Frontline Protocol Analysis System usage
 
-1. Run `btvs.exe -Mode Frontline` on the same machine using the command prompt\Powershell console.
+1. Run `btvs.exe -Mode Frontline` on the same machine using the command prompt\PowerShell console.
 
 1. Select the **Start Capture** button (Red button on the tool bar).
 

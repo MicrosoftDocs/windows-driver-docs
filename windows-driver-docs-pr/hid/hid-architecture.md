@@ -14,7 +14,7 @@ The architecture of the HID driver stack in Windows is built on the class driver
 
 ## The HID class driver
 
-The system-supplied HID class driver is the WDM function driver and bus driver for the HID device setup class (HIDClass). The executable component of the HID class driver is *hidclass.sys*. The HID class driver is the glue between HID clients and various transports. This allows a HID client to be written in an independent way from transports. This level of abstraction allows clients to continue to work (with little to no modifications) when a new standard, or a third-party transport is introduced.
+The system-supplied HID class driver is the WDM function driver and bus driver for the HID device setup class (HIDClass). The executable component of the HID class driver is *hidclass.sys*. The HID class driver is the glue between HID clients and various transports, allowing a HID client to be written in an independent way from transports. This level of abstraction allows clients to continue to work (with little to no modifications) when a new standard, or a third-party transport is introduced.
 
 The following diagram is a representation of the HID architecture.
 
@@ -26,24 +26,24 @@ The preceding diagram includes:
 - HID class driver - The *hidclass.sys* executable.
 - HID transport minidriver - Identifies the Windows and third-party transports and their interfaces.
 
-Here is the device stack diagram of a generic HID client and transport.
+Here's the device stack diagram of a generic HID client and transport.
 
 ![Diagram of a HID device stack for a generic HID client and transport.](images/hid-device-stacks-generic.png)
 
-Here is another device stack diagram showing HID keyboard and mouse collections over USB.
+Here's another device stack diagram showing HID keyboard and mouse collections over USB.
 
 ![Diagram of a HID device stack for a keyboard and mouse over USB.](images/hid-device-stacks.png)
 
 ## HID clients
 
-The HID Clients are drivers, services or applications that communicate with *HIDClass.sys* and often represent a specific type of device (E.g. sensor, keyboard, mouse, etc). They identify the device via a hardware ID or a specific HID Collection and communicate with the HID Collection via the following guidance.
+The HID Clients are drivers, services, or applications that communicate with *HIDClass.sys* and often represent a specific type of device (for example, sensor, keyboard, mouse, and so on). They identify the device via a hardware ID or a specific HID Collection and communicate with the HID Collection via the following guidance.
 
 User-mode drivers and applications, and kernel-mode drivers, do the following to operate HID collections:
 
 - User-mode drivers and applications use HIDClass support routines (HidD_Xxx) to obtain information about a HID collection.
-- Kernel-mode drivers, user-mode drivers and applications use HID parsing support routines (HidP_Xxx), and kernel-mode drivers use HID class driver IOCTLs to handle HID reports.
+- Kernel-mode drivers, user-mode drivers, and applications use HID parsing support routines (HidP_Xxx), and kernel-mode drivers use HID class driver IOCTLs to handle HID reports.
 
-The following table is a simplification of the information listed above.
+The following table simplifies the information.
 
 | Mode | Drivers | Applications |
 |--|--|--|
@@ -56,7 +56,7 @@ For more information, see [Opening HID collections](opening-hid-collections.md).
 
 Windows supports the following top-level collections:
 
-| Usage Page | Usage | Notes | Access Mode |
+| Usage page | Usage | Notes | Access mode |
 |--|--|--|--|
 | 0x0001 | 0x0001 - 0x0002 | [Mouse class driver and mapper driver](keyboard-and-mouse-class-drivers.md) | Exclusive |
 | 0x0001 | 0x0004 - 0x0005 | Game controllers | Shared |
@@ -72,13 +72,13 @@ Windows supports the following top-level collections:
 | 0x0084 | 0x0004 | HID UPS battery | Shared |
 | 0x008C | 0x0002 | Barcode scanner (hidscanner.dll) | Shared |
 
-In the preceding table, the access mode for input HID clients is *exclusive* to prevent other HID clients from intercepting or receiving global input state when they are not the target recipient of that input. For security reasons, Raw Input Manager (RIM) opens all such devices exclusively.
+In the preceding table, the access mode for input HID clients is *exclusive* to prevent other HID clients from intercepting or receiving global input state when they aren't the target recipient of that input. For security reasons, Raw Input Manager (RIM) opens all such devices exclusively.
 
-If a device is opened in *exclusive* mode by RIM, the user can still open a HID device interface without requesting read and write permissions and obtain HID device information via HIDClass support routines (HidD_GetXxx).
+If RIM opens a device in *exclusive* mode, the user can still open a HID device interface without requesting read and write permissions and obtain HID device information via HIDClass support routines (HidD_GetXxx).
 
-Sharing mode allows multiple applications to access a device. For example, multiple applications can access a barcode scanner to inquire about device capabilities and retrieve statistics. However, retrieving decoded data from a barcode scanner is done in *exclusive* mode. Usages are defined by the [USB-IF Usage Tables](https://usb.org/document-library/hid-usage-tables-121).
+Sharing mode allows multiple applications to access a device. For example, multiple applications can access a barcode scanner to inquire about device capabilities and retrieve statistics. However, retrieving decoded data from a barcode scanner is done in *exclusive* mode. Usages are defined in the [USB-IF Usage Tables](https://usb.org/document-library/hid-usage-tables-121).
 
-*Multiple: Sensors usages from 0x00 – 0xFF are segmented for different purposes. For example 0x10 indicates a biometric sensor; 0x40 indicates a light sensor. Those allocations are not contiguous. For the list of sensor usages, see [USB-IF Device Class Definitions for HID](https://www.usb.org/document-library/device-class-definition-hid-111). For information about sensors usages that are supported in Windows, see [HID Sensors Usages](/windows-hardware/design/whitepapers/hid-sensors-usages).
+*Multiple: Sensors usages from 0x00 – 0xFF are segmented for different purposes. For example, 0x10 indicates a biometric sensor; 0x40 indicates a light sensor. Those allocations aren't contiguous. For the list of sensor usages, see [USB-IF Device Class Definitions for HID](https://www.usb.org/document-library/device-class-definition-hid-111). For information about sensors usages that are supported in Windows, see [HID Sensors Usages](/windows-hardware/design/whitepapers/hid-sensors-usages).
 
 ## The HID transport driver
 
@@ -88,4 +88,4 @@ The HID class driver is designed to use HID minidrivers to access a hardware inp
 
 For a list of supported HID transports, see the [HID Transport Overview](hid-transports.md).
 
-[USB Generic HID Test](/windows-hardware/test/hlk/testref/f7949ab5-dd13-4c74-876f-6d54ff85e213) in the Windows Hardware Lab Kit (HLK) covers HidUsb and HidClass drivers. There is no HLK test for third-party HID minidrivers.
+[USB Generic HID Test](/windows-hardware/test/hlk/testref/f7949ab5-dd13-4c74-876f-6d54ff85e213) in the Windows Hardware Lab Kit (HLK) covers HidUsb and HidClass drivers. There's no HLK test for third-party HID minidrivers.
