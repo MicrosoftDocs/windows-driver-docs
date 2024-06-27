@@ -34,7 +34,7 @@ HLK tests that use this feature will be developed.
 
 ## DDI changes
 
-The following DDIs were updated to support kernel-mode testing:
+The following structures and enumeration were updated to support kernel-mode testing:
 
 * **DXGK_FEATURE_KERNEL_MODE_TESTING** is added to the [**DXGK_FEATURE_ID**](/windows-hardware/drivers/ddi/d3dukmdt/ne-d3dukmdt-dxgk_feature_id) enumeration.
 
@@ -44,15 +44,15 @@ The following DDIs were updated to support kernel-mode testing:
 
 * **TestQueue** is added to the [**D3DDDI_CREATEHWQUEUEFLAGS**](/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_createhwqueueflags) structure.
 
-The following DDIs are added to support kernel-mode testing:
+The following DDIs, structures, and enumeration are added to support kernel-mode testing:
 
 * The [**DXGKDDI_KERNELMODETESTINGINTERFACE**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgkddi_kernelmodetestinginterface) feature interface is added, with [**DXGKDDI_BUILDTESTCOMMANDBUFFER::pfnBuildTestCommandBuffer**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_buildtestcommandbuffer) as the only interface member.
 
-* [**DXGKARG_BUILDTESTCOMMANDBUFFER**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_buildtestcommandbuffer)
+* [**DXGKARG_BUILDTESTCOMMANDBUFFER**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgkarg_buildtestcommandbuffer)
 
 * [**D3DDDI_BUILDTESTCOMMANDBUFFERFLAGS**](/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-d3dddi_buildtestcommandbufferflags)
 
-* [**D3DDDI_TESTCOMMAND**](/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-d3dddi_testcommand)
+* [**D3DDDI_TESTCOMMANDBUFFER**](/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-d3dddi_testcommandbuffer)
 
 * [**D3DDDI_TESTCOMMANDBUFFEROP**](/windows-hardware/drivers/ddi/d3dukmdt/ne-d3dukmdt-d3dddi_testcommandbufferop)
 

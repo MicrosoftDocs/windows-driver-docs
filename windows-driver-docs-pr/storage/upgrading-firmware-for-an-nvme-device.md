@@ -166,7 +166,7 @@ Return Value:
 }
 ```
 
-Slot information is returned in an array of [**STORAGE_FIRMWARE_SLOT_INFO**](/windows-hardware/drivers/ddi/ntddscsi/ns-ntddscsi-storage_firmware_slot_info) structures. Each structure indicates the activation status and availability of the firmware slot. Conditions for availability are:
+Slot information is returned in an array of **STORAGE_FIRMWARE_SLOT_INFO** structures. Each structure indicates the activation status and availability of the firmware slot. Conditions for availability are:
 
 - The **ReadOnly** member is set to 0.
 - The slot isn't the active slot indicated by slot number in the **ActiveSlot** member of **STORAGE_FIRMWARE_INFO**.
