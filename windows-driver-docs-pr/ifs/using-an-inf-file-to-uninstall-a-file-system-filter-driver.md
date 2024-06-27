@@ -4,7 +4,7 @@ description: Describes various ways to uninstall a file system filter driver
 keywords:
 - INF files WDK file system , uninstalling filter drivers
 - uninstalling filter drivers WDK file system
-ms.date: 02/23/2023
+ms.date: 06/24/2024
 ---
 
 # Using an INF file to uninstall a file system filter driver
@@ -14,7 +14,7 @@ ms.date: 02/23/2023
 
 Starting with Windows 10 version 1903, the **DefaultUninstall** and **DefaultUninstall.Services** INF sections are prohibited [(with exception)](../develop/creating-a-primitive-driver.md#legacy-compatibility).
 
-In Windows 10 prior to version 1903, the **DefaultUninstall** and **DefaultUninstall.Services** sections were optional but recommended if the driver could be uninstalled. For these OS versions, you can uninstall your filter driver by using the command line, PowerShell, or a batch file to execute these INF file sections, or a user-mode uninstall application.
+Before Windows 10, version 1903, the **DefaultUninstall** and **DefaultUninstall.Services** sections were optional but recommended if the driver could be uninstalled. For these OS versions, you can uninstall your filter driver by using the command line, PowerShell, or a batch file to execute these INF file sections, or a user-mode uninstall application.
 
 There's no "right-click uninstall" option.
 
@@ -49,7 +49,7 @@ InstallHinfSection(NULL,NULL,TEXT("DefaultUninstall 132 path-to-uninstall-dir\in
 If you use an application to uninstall your driver, observe the following guidelines:
 
 * To prepare for eventual uninstall, a setup application should copy the driver INF file to an uninstall directory.
-* In the **DefaultUninstall.Services** section of the INF file, the **DelService** directive should always specify the 0x200 (SPSVCINST\_STOPSERVICE) flag to stop the service before it's deleted.
+* In the **DefaultUninstall.Services** section of the INF file, the **DelService** directive should always specify the 0x200 (SPSVCINST_STOPSERVICE) flag to stop the service before that service is deleted.
 * If a user-mode application was installed with the driver, this application should be listed in Add or Remove Programs in Control Panel so that the user can uninstall it if desired. Only one item should be listed, representing both the application and the driver. For more information about how to list your application in Add or Remove Programs, see "Removing an Application" in the Setup and System Administration section of the Microsoft Windows SDK documentation.
 * An uninstall application shouldn't delete the INF file (or its associated PNF file) from the Windows INF file directory (*%windir%\\INF*).
 * Some filter driver files can't safely be removed when the application is uninstalled. These files shouldn't be listed in the **DefaultUninstall.Services** section of the INF file.

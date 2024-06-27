@@ -1,17 +1,24 @@
 ---
 title: StorNVMe Command Set Support
-description: Describes the command set support provided by StoreNVMe
-ms.date: 01/06/2023
+description: Describes the command set support provided by StorNVMe
+keywords:
+- commands, opcodes, NVM Express, StorNVMe
+ms.date: 06/26/2024
 ---
 
 # StorNVMe command set support
 
-The tables below list commands and opcodes defined in the NVM Express specifications for the NVMe Admin Command Set and all I/O Commands (Base Specification), I/O Commands for the NVM Command Set, and I/O Commands for the Zoned Namespace Command Set.  The tables include the following information:
+The tables in this article list:
+
+* Commands and opcodes defined in the NVM Express specifications for the NVMe Admin Command Set.
+* All I/O Commands (Base Specification), I/O Commands for the NVM Command Set, and I/O Commands for the Zoned Namespace Command Set.
+
+The tables include the following information:
 
 * *Header Definition* – Indicates that an enumeration for the command is defined in the relevant Windows header file.
-* *StorNVMe Supported* – Indicates that the command is supported by the StorNVMe device driver on Windows 10 version 1903 and later.
+* *StorNVMe Supported* – Indicates that the StorNVMe device driver supports the command on Windows 10 version 1903 and later.
 * *Driver Int Use* (Driver Internal Use) – Indicates that the StorNVMe driver can internally generate/issue the command.
-* *Comments* – Any additional relevant information; for example, whether the command can be issued as part of an IOCTL operation. "WinPE Only" indicates that the command is supported only on WinPE editions of Windows.
+* *Comments* – Any other relevant information; for example, whether the command can be issued as part of an IOCTL operation. "WinPE Only" indicates that the command is supported only on WinPE editions of Windows.
 
 ## Admin commands
 
@@ -51,15 +58,15 @@ The tables below list commands and opcodes defined in the NVM Express specificat
 
 ## I/O commands
 
-In addition to the above, the table below includes the following information for NVM Express I/O commands:
+The next table includes the following information for NVM Express I/O commands:
 
-* *NVMe Spec*: indicates the NVM Express specification which defines the I/O command:
-  * A = All I/O Command Sets, NVM Express Base Specification 2.0a, July 23rd, 2021
-  * N = NVM Command Set, NVM Express NVM Command Set Specification 1.0a, July 23rd, 2021
-  * Z = Zoned Namespace Command Set I/O Commands, Zoned Namespace Command Set Specification 1.1a, July 23rd, 2021
+* *NVMe Spec*: indicates the NVM Express specification that defines the I/O command:
+  * A = All I/O Command Sets, NVM Express Base Specification 2.0a, July 23, 2021
+  * N = NVM Command Set, NVM Express NVM Command Set Specification 1.0a, July 23, 2021
+  * Z = Zoned Namespace Command Set I/O Commands, Zoned Namespace Command Set Specification 1.1a, July 23, 2021
 
 | Opcode | NVMe I/O Command | Header Definition | StorNVMe Supported | Driver Int Use | NVMe Spec | Comments |
-| -- | -- | -- | -- | -- | -- | -- |
+| ------ | ---------------- | ----------------- | ------------------ | -------------- | --------- | -------- |
 | 0h  | Flush  | Yes  | Yes  | Yes  | A,N,Z  | SCSIOP_SYNCHRONIZE_CACHE for [IOCTL_SCSI_PASS_THROUGH](/windows-hardware/drivers/ddi/ntddscsi/ni-ntddscsi-ioctl_scsi_pass_through) |
 | 1h  | Write  | Yes  | Yes  | Yes  | N,Z  | SCSIOP_WRITE/SCSIOP_WRITE16 for [IOCTL_SCSI_PASS_THROUGH](/windows-hardware/drivers/ddi/ntddscsi/ni-ntddscsi-ioctl_scsi_pass_through) |
 | 2h  | Read   | Yes  | Yes  | Yes  | N,Z  | SCSIOP_READ/SCSIOP_READ16 for [IOCTL_SCSI_PASS_THROUGH](/windows-hardware/drivers/ddi/ntddscsi/ni-ntddscsi-ioctl_scsi_pass_through) |
@@ -78,4 +85,4 @@ In addition to the above, the table below includes the following information for
 | 7Dh | Zone Append              | Yes  | Yes  |   | Z  | From Windows 11, Windows Server 2022. Reserved for Microsoft internal use. |
 | 80h-FFh | Vendor Specific  | N/A  | Yes  |   | A,N,Z  | [IOCTL_STORAGE_PROTOCOL_COMMAND](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_protocol_command). Vendor-specific pass-through commands require CSUPP=1 in corresponding Command Supported and Effects Log Page for each vendor-specific command opcode. |
 
-*Subject to change. See [Working with NVMe drives](/windows/win32/fileio/working-with-nvme-devices#protocol-specific-queries) for additional information.*
+*Subject to change. For more information, see [Working with NVMe drives](/windows/win32/fileio/working-with-nvme-devices#protocol-specific-queries).*
