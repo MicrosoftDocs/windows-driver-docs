@@ -7,12 +7,12 @@ keywords:
 - fltkd debugger extension WDK file system minifilter
 - Filter Verifier WDK file system minifilter
 - Verifier utility
-ms.date: 03/10/2022
+ms.date: 06/24/2024
 ---
 
 # Tools for minifilter development and testing
 
-This page lists a few tools that are specifically for developing a minifilter. Minifilter driver developers are also encouraged to use other [driver development tools](../devtest/index.md) available through the Windows Driver Kit (WDK).
+This page lists a few tools that are specifically for developing a file system minifilter. Minifilter driver developers are also encouraged to use other [driver development tools](../devtest/index.md) available through the Windows Driver Kit (WDK).
 
 ## Fltmc.exe Command
 
@@ -24,7 +24,7 @@ The [*Fsutil.exe*](/windows-server/administration/windows-commands/fsutil-file) 
 
 ## !fltkd Debugger Extension
 
-The !fltkd debugger extension is provided in the [Windows Debugging](../debugger/index.md) tools. Commonly used commands include the following:
+The !fltkd debugger extension is provided in the [Windows Debugging](../debugger/index.md) tools. Commonly used commands include:
 
 | Command | Description |
 | ------- | ----------- |
@@ -40,6 +40,6 @@ In WinDbg, type **!fltkd.help** for a full list of commands.
 
 ## Filter Verifier
 
-Filter Verifier is an option in [Driver Verifier](../devtest/driver-verifier.md) that validates minifilter driver usage of filter manager functions. Filter Verifier is installed with the filter manager. Developers are strongly recommended to always develop minifilter drivers with Filter Verifier enabled.
+Filter Verifier is an option in [Driver Verifier](../devtest/driver-verifier.md) that validates minifilter driver usage of filter manager functions. Filter Verifier is installed with the Filter Manager. Developers are recommended to always develop minifilter drivers with Filter Verifier enabled. You can activate the File System Filter Verification feature using the ```verifier.exe``` command on the command line.
 
-For information on how to enable Filter Verifier and what it validates, please see [File System Filter Verification](../devtest/file-system-filter-verification.md).
+For information on how to enable Filter Verifier and what it validates, see [File System Filter Verification](../devtest/file-system-filter-verification.md).

@@ -1,7 +1,7 @@
 ---
 title: Microsoft Compute Driver Model Overview
 description: Overview of Microsoft Compute Driver Model
-ms.date: 12/01/2022
+ms.date: 06/26/2024
 ---
 
 # Microsoft Compute Driver Model overview
@@ -12,11 +12,11 @@ An MCDM driver, or compute-only driver, is a scaled down subset of Windows Displ
 
 Unlike WDDM, MCDM requires the device to have a memory management unit (MMU). The engines of an MCDM device can't require [physical mode](gpu-virtual-memory-in-wddm-2-0.md). Instead, MCDM devices must use virtual address space protection to support multi-tasking in the presence of malicious applications.
 
-An exception exists to support prototype MCDM hardware without an MMU. Beginning with Windows 10, version 2004, prototype MCDM devices can only be used by a single process at a time, and they're recognized by the absence of supporting either IO-MMU or GPU-MMU.
+An exception exists to support prototype MCDM hardware without an MMU. Beginning with Windows 10, version 2004, prototype MCDM devices can only be used by a single process at a time. These devices are recognized by the absence of supporting either IOMMU or GPU-MMU.
 
 For more information, see the following articles:
 
 * [MCDM architecture](mcdm-architecture.md)
 * [MCDM KM driver implementation guidelines](mcdm-implementation-guidelines.md)
 
-For information about the subset of Direct3D 12 features that can be exposed by a compute-only driver in user mode, see [The Direct3D 12 Core 1.0 Feature Level](/windows/win32/direct3d12/core-feature-levels).
+For information about the subset of Direct3D 12 features that a compute-only driver can expose in user mode, see [The Direct3D 12 Core 1.0 Feature Level](/windows/win32/direct3d12/core-feature-levels).

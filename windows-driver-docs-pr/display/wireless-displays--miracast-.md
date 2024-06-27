@@ -6,7 +6,7 @@ keywords:
 - Miracast
 - Wireless display callback functions called by Miracast WDDM 1.3 user-mode drivers
 - Wireless display functions implemented by Miracast user-mode drivers
-ms.date: 03/24/2023
+ms.date: 06/26/2024
 ---
 
 # Supporting Miracast wireless display
@@ -25,7 +25,7 @@ Driver developers should no longer implement a custom Miracast stack. Microsoft 
 
 ## Supporting Miracast in Windows 8.1
 
-WDDM 1.3 drivers could optionally support Miracast through the Miracast DDIs provided in that release. The rest of this article and its related articles describe how to provide that support.
+WDDM 1.3 drivers could optionally support Miracast through the Miracast DDIs provided in Windows 8.1. The rest of this article and its related articles describe how to provide that support.
 
 ### User-mode device driver interfaces (DDIs)
 
@@ -52,7 +52,7 @@ In response to an operating system call to the [QueryMiracastDriverInterface](/w
 | [PFN_CREATE_MIRACAST_CONTEXT](/windows-hardware/drivers/ddi/netdispumdddi/nc-netdispumdddi-pfn_create_miracast_context)  | Called by the operating system to create a user-mode Miracast context.|
 | [PFN_DESTROY_MIRACAST_CONTEXT](/windows-hardware/drivers/ddi/netdispumdddi/nc-netdispumdddi-pfn_destroy_miracast_context)| Called by the operating system to destroy a user-mode Miracast context.|
 | [PFN_HANDLE_KMD_MESSAGE](/windows-hardware/drivers/ddi/netdispumdddi/nc-netdispumdddi-pfn_handle_kmd_message)            | Called by the operating system to handle the asynchronous kernel-mode message that the Miracast user-mode driver receives when the display miniport driver calls the [DxgkCbMiracastSendMessage](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkcb_miracast_send_message) function.|
-| [PFN_DATARATE_NOTIFICATION](/windows-hardware/drivers/ddi/netdispumdddi/nc-netdispumdddi-pfn_datarate_notification)      | Called by the operating system to notify the Miracast user-mode driver that the bit rate of the Miracast network link has changed. This function is registered with the operating system when the **RegisterForDataRateNotifications** function is called.|
+| [PFN_DATARATE_NOTIFICATION](/windows-hardware/drivers/ddi/netdispumdddi/nc-netdispumdddi-pfn_datarate_notification)      | Called by the operating system to notify the Miracast user-mode driver that the bit rate of the Miracast network link changed. This function is registered with the operating system when the **RegisterForDataRateNotifications** function is called.|
 | [QUERY_MIRACAST_DRIVER_INTERFACE](/windows-hardware/drivers/ddi/netdispumdddi/nc-netdispumdddi-query_miracast_driver_interface)| Called by the operating system to query the Miracast user-mode driver interface, **MIRACAST_DRIVER_INTERFACE**.|
 | [PFN_START_MIRACAST_SESSION](/windows-hardware/drivers/ddi/netdispumdddi/nc-netdispumdddi-pfn_start_miracast_session)    | Called by the operating system to start a Miracast connected session.|
 | [PFN_STOP_MIRACAST_SESSION](/windows-hardware/drivers/ddi/netdispumdddi/nc-netdispumdddi-pfn_stop_miracast_session)      | Called by the operating system to start a Miracast connected session that was previously started by a call to the **StartMiracastSession** function.|
@@ -64,7 +64,7 @@ The following table lists the user-mode structures and enumerations that are use
 | Struct/Enum | Description |
 | ----------- | ----------- |
 | [MIRACAST_CALLBACKS](/windows-hardware/drivers/ddi/netdispumdddi/ns-netdispumdddi-_miracast_callbacks)         | Contains pointers to wireless display (Miracast) runtime callback functions that the Miracast user-mode driver can call.|
-| [MIRACAST_CHUNK_DATA](/windows-hardware/drivers/ddi/netdispumdddi/ns-netdispumdddi-miracast_chunk_data)        | Contains encode chunk data that is used when a user-mode driver calls the wireless display (Miracast) [GetNextChunkData](/windows-hardware/drivers/ddi/netdispumdddi/nc-netdispumdddi-pfn_get_next_chunk_data) function.|
+| [MIRACAST_CHUNK_DATA](/windows-hardware/drivers/ddi/netdispumdddi/ns-netdispumdddi-miracast_chunk_data)        | Contains encode chunk data to use when a user-mode driver calls the wireless display (Miracast) [GetNextChunkData](/windows-hardware/drivers/ddi/netdispumdddi/nc-netdispumdddi-pfn_get_next_chunk_data) function.|
 | [MIRACAST_CHUNK_ID](/windows-hardware/drivers/ddi/netdispumdddi/ns-netdispumdddi-miracast_chunk_id)            | Stores info that identifies a wireless display (Miracast) encode chunk.|
 | [MIRACAST_CHUNK_INFO](/windows-hardware/drivers/ddi/netdispumdddi/ns-netdispumdddi-miracast_chunk_info)        | Contains info about a specified wireless display (Miracast) encode chunk.|
 | [MIRACAST_CHUNK_TYPE](/windows-hardware/drivers/ddi/netdispumdddi/ne-netdispumdddi-miracast_chunk_type)        | Specifies the types of wireless display (Miracast) chunk info that is to be processed.|
@@ -87,7 +87,7 @@ The following user-mode structures and enumerations support Miracast displays an
 
 ### Kernel-mode DDIs
 
-#### Wireless display (Miracast) display callback interface
+#### Wireless display (Miracast) callback interface
 
 The Miracast display callback interface contains functions that the DirectX graphics kernel subsystem implements to support wireless (Miracast) displays in Windows 8.1.
 
@@ -96,7 +96,7 @@ The following table lists these kernel-mode functions, which are called by WDDM 
 | Function | Description |
 | -------- | ----------- |
 | [DXGKCB_MIRACAST_SEND_MESSAGE](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkcb_miracast_send_message)           | Sends an asynchronous message to the user-mode display driver.|
-| [DXGKCB_MIRACAST_SEND_MESSAGE_CALLBACK](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkcb_miracast_send_message_callback) | Called in kernel mode when the message that was sent to the user-mode driver with a call to the **DxgkCbMiracastSendMessage** function has completed or has been canceled.|
+| [DXGKCB_MIRACAST_SEND_MESSAGE_CALLBACK](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkcb_miracast_send_message_callback) | Called in kernel mode when the message that was sent to the user-mode driver with a call to the **DxgkCbMiracastSendMessage** function is completed or canceled.|
 | [DXGKCB_MIRACAST_REPORT_CHUNK_INFO](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkcb_miracast_report_chunk_info) | Called by the display miniport driver to report info about an encode chunk.|
 
 The display miniport driver must fill in pointers to these functions in the [DXGK_MIRACAST_DISPLAY_CALLBACKS](/windows-hardware/drivers/ddi/dispmprt/ns-dispmprt-_dxgk_miracast_display_callbacks) structure.
@@ -107,7 +107,7 @@ The following table lists the kernel-mode functions that display miniport driver
 
 | Function | Description |
 | -------- | ----------- |
-| [DXGKCB_MIRACAST_SEND_MESSAGE_CALLBACK](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkcb_miracast_send_message_callback) | Called in kernel mode when the message that was sent to the user-mode driver with a call to the DxgkCbMiracastSendMessage function has completed or has been canceled.|
+| [DXGKCB_MIRACAST_SEND_MESSAGE_CALLBACK](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkcb_miracast_send_message_callback) | Called in kernel mode when the message that was sent to the user-mode driver with a call to the **DxgkCbMiracastSendMessage** function is completed or canceled.|
 | [DXGKDDI_MIRACAST_CREATE_CONTEXT](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_miracast_create_context)             | Creates a kernel-mode context for a Miracast device.|
 | [DXGKDDI_MIRACAST_DESTROY_CONTEXT](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_miracast_destroy_context)           | Destroys an instance of a Miracast device.|
 | [DXGKDDI_MIRACAST_HANDLE_IO_CONTROL](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_miracast_handle_io_control)       | Called by the operating system to request that the display miniport driver process a synchronous I/O control request in response to a user-mode display driver call to the MiracastIoControl function.|
