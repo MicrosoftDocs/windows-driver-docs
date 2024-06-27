@@ -1,12 +1,16 @@
 ---
 title: Storport Idle Power Management Overview
 description: Storport Idle Power Management Overview
-ms.date: 04/20/2017
+keywords:
+- idle power management, storage devices, Windows
+ms.date: 06/27/2024
 ---
 
 # Storport Idle Power Management Overview
 
-Storport Idle Power Management (IPM) allows the classpnp and disk class drivers to send the SCSI Stop Unit command to the disk device when it has been idle for some period of time. The idle period is configurable by the system administrator. The Storport miniport driver is responsible for how the command is used by the Storport miniport driver to conserve power. The following sections describe IPM in more detail.
+Storport provides support for [idle power management](../kernel/detecting-an-idle-device.md) to allow storage devices to enter a low power state when not in use. Storport's idle power management (IPM) support includes handling idle power management for storage devices under its management, in coordination with the Power Manager in Windows.
+
+Storport IPM allows the *classpnp* and disk class drivers to send the **SCSI Stop Unit** command to the storage device when it's idle for some period of time. The idle period is configurable by the system administrator. The Storport miniport driver is responsible for how the command is used by the Storport miniport driver to conserve power. The following sections describe IPM in more detail.
 
 - [Scope](ipm-scope.md)
 

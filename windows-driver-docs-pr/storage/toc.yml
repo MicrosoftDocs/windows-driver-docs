@@ -236,7 +236,7 @@
           href: ipm-assumptions.md
         - name: "Configuration and Usage"
           href: ipm-configuration-and-usage.md
-        - name: "Hard Disk Drive Idle Timeout"
+        - name: "Idle Power Management Timeout"
           href: ipm-hard-disk-drive-idle-timeout.md
       - name: "ATA Command Support"
 # Auto-expanded node

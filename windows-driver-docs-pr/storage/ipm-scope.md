@@ -1,18 +1,18 @@
 ---
 title: Idle Power Management Scope
 description: Idle Power Management Scope
-ms.date: 04/20/2017
+ms.date: 06/27/2024
 ---
 
 # Idle Power Management Scope
 
-Storport Idle Power Management (IPM) provides idle power management for the LUN, not the adapter. Storport IPM does not attempt to place the adapter in a low power state if all its LUNs are in a low power state. The miniport driver is responsible for managing adapter power.
+Storport Idle Power Management (IPM) provides idle power management for the LUN, not the adapter. Storport IPM doesn't attempt to place the adapter in a low power state if all its LUNs are in a low power state. The miniport driver is responsible for managing adapter power.
 
 Storport IPM is supported in the following system configuration only:
 
 - Systems that use a SATA adapter with a single SATA disk drive attached
 
-Storport IPM is not supported in the following system configurations:
+Storport IPM isn't supported in the following system configurations:
 
 - Systems that have non-direct attached storage (FC, iSCSI, and others)
 
