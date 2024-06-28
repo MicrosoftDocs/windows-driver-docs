@@ -1,10 +1,7 @@
 ---
 title: Device Nodes and Device Stacks
 description: In Windows, devices are represented by device nodes in the Plug and Play (PnP) device tree.
-keywords:
-- device node
-- device stack
-ms.date: 03/16/2022
+ms.date: 06/28/2024
 ---
 
 # Device nodes and device stacks
@@ -12,7 +9,7 @@ ms.date: 03/16/2022
 
 In Windows, devices are represented by device nodes in the Plug and Play (PnP) device tree. Typically, when an I/O request is sent to a device, several drivers help handle the request. Each of these drivers is associated with a device object, and the device objects are arranged in a stack. The sequence of device objects along with their associated drivers is called a device stack. Each device node has its own device stack.
 
-## <span id="Device_nodes_and_the_Plug_and_Play_device_tree"></span><span id="device_nodes_and_the_plug_and_play_device_tree"></span><span id="DEVICE_NODES_AND_THE_PLUG_AND_PLAY_DEVICE_TREE"></span>Device nodes and the Plug and Play device tree
+## Device nodes and the Plug and Play device tree
 
 
 Windows organizes devices in a tree structure called the *Plug and Play device tree*, or simply the *device tree*. Typically, a node in the device tree represents either a device or an individual function on a composite device. However, some nodes represent software components that have no association with physical devices.
@@ -27,7 +24,7 @@ Some of the devices connected to the PCI bus are buses themselves. The PnP manag
 
 Whether you think of a node as representing a device or a bus depends on your point of view. For example, you can think of the display adapter as a device that plays a key role in preparing frames that appear on the screen. However, you can also think of the display adapter as a bus that is capable of detecting and enumerating connected monitors.
 
-## <span id="Device_objects_and_device_stacks"></span><span id="device_objects_and_device_stacks"></span><span id="DEVICE_OBJECTS_AND_DEVICE_STACKS"></span>Device objects and device stacks
+## Device objects and device stacks
 
 
 A *device object* is an instance of a [**DEVICE\_OBJECT**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object) structure. Each device node in the PnP device tree has an ordered list of device objects, and each of these device objects is associated with a driver. The ordered list of device objects, along with their associated drivers, is called the *device stack* for the device node.
@@ -40,7 +37,7 @@ In the following diagram, the Proseware Gizmo device node has a device stack tha
 
 ![diagram showing device objects ordered in device stacks in the proseware gizmo and pci device nodes.](images/prosewaredevicenode01.png)
 
-## <span id="How_does_a_device_stack_get_constructed_"></span><span id="how_does_a_device_stack_get_constructed_"></span><span id="HOW_DOES_A_DEVICE_STACK_GET_CONSTRUCTED_"></span>How does a device stack get constructed?
+## How does a device stack get constructed?
 
 
 During startup, the PnP manager asks the driver for each bus to enumerate child devices that are connected to the bus. For example, the PnP manager asks the PCI bus driver (Pci.sys) to enumerate the devices that are connected to the PCI bus. In response to this request, Pci.sys creates a device object for each device that is connected to the PCI bus. Each of these device objects is called a *physical device object* (PDO). Shortly after Pci.sys creates the set of PDOs, the device tree looks like the one shown in the following diagram.
@@ -60,14 +57,14 @@ When the drivers for a device are installed, the installer uses information in a
 
  
 
-## <span id="Bus_drivers"></span><span id="bus_drivers"></span><span id="BUS_DRIVERS"></span>Bus drivers
+## Bus drivers
 
 
 In the preceding diagram, you can see that the driver Pci.sys plays two roles. First, Pci.sys is associated with the FDO in the PCI Bus device node. In fact, it created the FDO in the PCI Bus device node. So Pci.sys is the function driver for the PCI bus. Second, Pci.sys is associated with the PDO in each child of the PCI Bus node. Recall that it created the PDOs for the child devices. The driver that creates the PDO for a device node is called the *bus driver* for the node.
 
 If your point of reference is the PCI bus, then Pci.sys is the function driver. But if your point of reference is the Proseware Gizmo device, then Pci.sys is the bus driver. This dual role is typical in the PnP device tree. A driver that serves as function driver for a bus also serves as bus driver for a child device of the bus.
 
-## <span id="User-mode_device_stacks"></span><span id="user-mode_device_stacks"></span><span id="USER-MODE_DEVICE_STACKS"></span>User-mode device stacks
+## User-mode device stacks
 
 
 So far we've been discussing kernel-mode device stacks. That is, the drivers in the stacks run in kernel mode, and the device objects are mapped into system space, which is the address space that is available only to code running in kernel mode. For information about the difference between kernel mode and user mode, see [User mode and kernel mode](user-mode-and-kernel-mode.md).
@@ -78,7 +75,7 @@ The following diagram shows the device node, kernel-mode device stack, and the u
 
 ![diagram showing user-mode and kernel-mode device stacks.](images/userandkerneldevicestacks01.png)
 
-## <span id="related_topics"></span>Related topics
+## Related articles
 
 
 [Concepts for all driver developers](concepts-and-knowledge-for-all-driver-developers.md)

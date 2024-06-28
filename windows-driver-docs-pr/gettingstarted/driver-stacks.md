@@ -1,7 +1,7 @@
 ---
 title: Driver Stacks
 description: Most of the requests that are sent to device drivers are packaged in I/O request packets (IRPs).
-ms.date: 04/20/2017
+ms.date: 06/28/2024
 ---
 
 # Driver stacks
@@ -9,7 +9,7 @@ ms.date: 04/20/2017
 
 Most of the requests that are sent to device drivers are packaged in [I/O request packets](i-o-request-packets.md) (IRPs). Each device is represented by a device node, and each device node has a device stack. For more information, see [Device nodes and device stacks](device-nodes-and-device-stacks.md). To send a read, write, or control request to a device, the I/O manager locates the device node for the device and then sends an IRP to the device stack of that node. Sometimes more than one device stack is involved in processing an I/O request. Regardless of how many device stacks are involved, the overall sequence of drivers that participate in an I/O request is called the *driver stack* for the request. We also use the term *driver stack* to refer to the layered set of drivers for a particular technology.
 
-## <span id="I_O_requests_that_are_processed_by_several_device_stacks"></span><span id="i_o_requests_that_are_processed_by_several_device_stacks"></span><span id="I_O_REQUESTS_THAT_ARE_PROCESSED_BY_SEVERAL_DEVICE_STACKS"></span>I/O requests that are processed by several device stacks
+## I/O requests that are processed by several device stacks
 
 
 In some cases, more than one device stack is involved in processing an IRP. The following diagram illustrates a case where four device stacks are involved in processing a single IRP.
@@ -27,7 +27,7 @@ Here is how the IRP is processed at each numbered stage in the diagram:
 
     Usbuhci.sys is a miniport driver, and Usbport.sys is a port driver. The (miniport, port) pair plays the role of a single driver. In this case, both the miniport driver and the port driver are written by Microsoft. The (Usbuhci.sys, Usbport.sys) pair is the PDO driver for the USB Root Hub node, and the (Usbuhci.sys, Usbport.sys) pair is also the FDO driver for the USB Host Controller node. The (Usbuhci.sys, Usbport.sys) pair does the actual communication with the host controller hardware, which in turn communicates with the physical USB storage device.
 
-## <span id="The_driver_stack_for_an_I_O_request"></span><span id="the_driver_stack_for_an_i_o_request"></span><span id="THE_DRIVER_STACK_FOR_AN_I_O_REQUEST"></span>The driver stack for an I/O request
+## The driver stack for an I/O request
 
 
 Consider the sequence of four drivers that participated in the I/O request illustrated in the preceding diagram. We can get another view of the sequence by focusing on the drivers rather than on the device nodes and their individual device stacks. The following diagram shows the drivers in sequence from top to bottom. Notice that Disk.sys is associated with one device object, but each of the other three drivers is associated with two device objects.
@@ -38,7 +38,7 @@ The sequence of drivers that participate in an I/O request is called the *driver
 
 Notice that the driver stack for an I/O request is quite different from the device stack for a device node. Also notice that the driver stack for an I/O request does not necessarily remain in one branch of the device tree.
 
-## <span id="Technology_driver_stacks"></span><span id="technology_driver_stacks"></span><span id="TECHNOLOGY_DRIVER_STACKS"></span>Technology driver stacks
+## Technology driver stacks
 
 
 Consider the driver stack for the I/O request shown in the preceding diagram. If we give each of the drivers a friendly name and make some slight changes to the diagram, we have a block diagram that is similar to many of those that appear in the Windows Driver Kit (WDK) documentation.
@@ -53,11 +53,11 @@ Consider the drivers in the third section. These drivers are a subset of a large
 
 A block diagram that shows all of the drivers for a particular technology or a particular component or portion of the operating system is called a *technology driver stack*. Typically, technology driver stacks are given names like the USB Core Driver Stack, the Storage Stack, the 1394 Driver Stack, and the Audio Driver Stack.
 
-**Note**  The USB core block diagram in this topic shows one of several possible ways to illustrate the technology driver stacks for USB 1.0 and 2.0. For the official diagrams of the USB 1.0, 2.0, and 3.0 driver stacks, see [USB Driver Stack Architecture](../usbcon/usb-3-0-driver-stack-architecture.md).
+**Note**: The USB core block diagram in this article shows one of several possible ways to illustrate the technology driver stacks for USB 1.0 and 2.0. For the official diagrams of the USB 1.0, 2.0, and 3.0 driver stacks, see [USB Driver Stack Architecture](../usbcon/usb-3-0-driver-stack-architecture.md).
 
  
 
-## <span id="related_topics"></span>Related topics
+## Related articles
 
 
 [Device nodes and device stacks](device-nodes-and-device-stacks.md)

@@ -1,7 +1,7 @@
 ---
 title: Fast Roaming with 802.11k, 802.11v, and 802.11r
 description: This section describes improved WLAN roaming experiences with 802.11k, 801.11v, and 802.11r.
-ms.date: 03/16/2022
+ms.date: 06/28/2024
 ---
 
 # Fast Roaming with 802.11k, 802.11v, and 802.11r

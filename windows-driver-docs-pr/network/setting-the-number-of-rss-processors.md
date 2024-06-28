@@ -1,10 +1,7 @@
 ---
 title: Setting the Number of RSS Processors
-description: Setting the Number of RSS Processors
-keywords:
-- processors WDK RSS
-- CPU configuration WDK RSS
-ms.date: 09/21/2020
+description: Administrators should set the number of receive side scaling (RSS) processors to improve overall performance.
+ms.date: 06/28/2024
 ---
 
 # Setting the Number of RSS Processors

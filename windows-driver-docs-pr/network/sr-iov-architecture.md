@@ -1,7 +1,7 @@
 ---
 title: SR-IOV Architecture
 description: Overview of the single root I/O virtualization (SR-IOV) interface and its components.
-ms.date: 03/16/2022
+ms.date: 06/28/2024
 ---
 
 # SR-IOV Architecture
