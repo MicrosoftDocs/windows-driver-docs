@@ -1,7 +1,7 @@
 ---
 title: Virtual Address Spaces
 description: Learn how processors use virtual addresses to read and write to memory locations.
-ms.date: 11/30/2021
+ms.date: 06/28/2024
 ---
 
 # Virtual address spaces

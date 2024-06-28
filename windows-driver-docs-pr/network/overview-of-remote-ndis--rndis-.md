@@ -1,17 +1,10 @@
 ---
 title: Overview of Remote NDIS (RNDIS)
 description: RNDIS eliminates the need for hardware vendors to write an NDIS miniport driver for a network device attached to the USB bus.
-keywords:
-- Remote NDIS WDK networking , architecture
-- Remote NDIS WDK networking , USB transport
-ms.date: 03/02/2023
+ms.date: 06/28/2024
 ---
 
 # Overview of Remote NDIS (RNDIS)
-
-
-
-
 
 Remote NDIS (RNDIS) eliminates the need for hardware vendors to write an NDIS miniport device driver for a network device attached to the USB bus. Remote NDIS accomplishes this by defining a bus-independent message set and a description of how this message set operates over the USB bus. Because this Remote NDIS interface is standardized, one set of host drivers can support any number of networking devices attached to the USB bus. This significantly reduces the development burden on device manufacturers, improves the overall stability of the system because no new drivers are required, and improves the end-user experience because there are no drivers to install to support a new USB bus-connected network device. Currently Microsoft Windows provides support for Remote NDIS over USB.
 
@@ -33,9 +26,9 @@ The following Remote NDIS message set mirrors the semantics of the NDIS miniport
 
 Microsoft also provides a USB bus transport driver that implements a mechanism for carrying the Remote NDIS messages across the USB bus. This driver transports standardized Remote NDIS messages between the Remote NDIS miniport driver and the bus-specific driver, such as USB. The bus-specific drivers are also required to map any bus-specific requirements, such as power management, into standardized Remote NDIS messages. The transport driver for USB 1.1 and 2.0 is implemented and maintained by Microsoft and distributed as part of Windows.
 
-This structure allows a single device driver to be used for any Remote NDIS device for which there is a bus-specific transport layer. In addition, only one bus transport layer is required for all network devices on a specific bus.
+This structure allows a single device driver to be used for any Remote NDIS device for which there's a bus-specific transport layer. In addition, only one bus transport layer is required for all network devices on a specific bus.
 
-This section includes the following additional topics:
+This section includes the following articles:
 
 [Benefits of Remote NDIS](benefits-of-remote-ndis.md)
 
@@ -51,8 +44,7 @@ This section includes the following additional topics:
 
 [Types of Remote NDIS Devices](types-of-remote-ndis-devices.md)
 
-## Related topics
-
+## Related article
 
 [USB class drivers included in Windows](../usbcon/supported-usb-classes.md)
 
