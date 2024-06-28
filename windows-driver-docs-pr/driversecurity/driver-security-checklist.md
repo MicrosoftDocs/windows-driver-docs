@@ -1,7 +1,7 @@
 ---
 title: Driver Security Checklist
 description: This article provides a driver security checklist for driver developers.
-ms.date: 12/11/2023
+ms.date: 06/27/2024
 ---
 
 # Driver security checklist
@@ -44,13 +44,15 @@ In addition to avoiding the issues associated with a driver being attacked, many
 
 :::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist."::: [Execute proper release driver signing](#execute-proper-release-driver-signing)
 
-:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist."::: [Use code analysis in Visual Studio to investigate driver security](#use-code-analysis-in-visual-studio-to-investigate-driver-security)
+:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist."::: [Use CodeQL to check your driver code](#use-codeql-to-check-your-driver-code)
 
-:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist."::: [Use Static Driver Verifier to check for vulnerabilities](#use-static-driver-verifier-to-check-for-vulnerabilities)
+:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist."::: [Add SAL annotations to your driver code](#add-sal-annotations-to-your-driver-code)
+
+:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist."::: [Use Driver Verifier to check for vulnerabilities](#use-driver-verifier-to-check-for-vulnerabilities)
 
 :::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist."::: [Check code with BinSkim Binary Analyzer](#check-code-with-the-binskim-binary-analyzer)
 
-:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist."::: [Use code validation tools](#use-additional-code-validation-tools)
+:::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist."::: [Check code with the hardware compatibility program tests](#check-code-with-the-hardware-compatibility-program-tests)
 
 :::image type="content" source="images/checkbox.png" alt-text="Unmarked checkbox representing an item in the security checklist."::: [Review debugger techniques and extensions](#review-debugger-techniques-and-extensions)
 
@@ -67,7 +69,7 @@ In addition to avoiding the issues associated with a driver being attacked, many
 Drivers live in the Windows kernel, and having an issue when executing in kernel exposes the entire operating system. If any other option is available, it likely will be lower cost and have less associated risk than creating a new kernel driver.
 For more information about using the built in Windows drivers, see [Do you need to write a driver?](../gettingstarted/do-you-need-to-write-a-driver-.md).
 
-For information on using background tasks, see  [Support your app with background tasks](/windows/uwp/launch-resume/support-your-app-with-background-tasks).
+For information on using background tasks, see [Support your app with background tasks](/windows/uwp/launch-resume/support-your-app-with-background-tasks).
 
 For information on using Windows Services, see [Services](/windows/desktop/Services/services).
 
@@ -75,7 +77,7 @@ For information on using Windows Services, see [Services](/windows/desktop/Servi
 
 **Security checklist item \#2:** *Use the driver frameworks to reduce the size of your code and increase its reliability and security.*
 
-Use the [Windows Driver Frameworks](../wdf/index.md) to reduce the size of your code and increase its reliability and security.  To get started, review [Using WDF to Develop a Driver](../wdf/using-the-framework-to-develop-a-driver.md). For information on using the lower risk user mode framework driver (UMDF), see [Choosing a driver model](../gettingstarted/choosing-a-driver-model.md).
+Use the [Windows Driver Frameworks](../wdf/index.md) to reduce the size of your code and increase its reliability and security. To get started, review [Using WDF to Develop a Driver](../wdf/using-the-framework-to-develop-a-driver.md). For information on using the lower risk user mode framework driver (UMDF), see [Choosing a driver model](../gettingstarted/choosing-a-driver-model.md).
 
 Writing an old fashion [Windows Driver Model (WDM)](../kernel/writing-wdm-drivers.md) driver is more time consuming, costly, and almost always involves recreating code that is available in the driver frameworks.
 
@@ -89,22 +91,22 @@ Software-only kernel drivers do not use plug-and-play (PnP) to become associated
 
 Because software-only kernel drivers contain additional risk, they must be limited to run on specific hardware (for example, by using a unique PnP ID to enable creation of a PnP driver, or by checking the SMBIOS table for the presence of specific hardware).
 
-For example, imagine OEM Fabrikam wants to distribute a driver that enables an overclocking utility for their systems.  If this software-only driver were to execute on a system from a different OEM, system instability or damage might result.  Fabrikam's systems should include a unique PnP ID to enable creation of a PnP driver that is also updatable through Windows Update.  If this is not possible, and Fabrikam authors a Legacy driver, that driver should find another method to verify that it is executing on a Fabrikam system (for example, by examination of the SMBIOS table prior to enabling any capabilities).
+For example, imagine OEM Fabrikam wants to distribute a driver that enables an overclocking utility for their systems. If this software-only driver were to execute on a system from a different OEM, system instability or damage might result. Fabrikam's systems should include a unique PnP ID to enable creation of a PnP driver that is also updatable through Windows Update. If this is not possible, and Fabrikam authors a Legacy driver, that driver should find another method to verify that it is executing on a Fabrikam system (for example, by examination of the SMBIOS table prior to enabling any capabilities).
 
 ## Do not production sign test code
 
 **Security checklist item \#4:** *Do not production code sign development, testing, and manufacturing kernel driver code.*
 
-Kernel driver code that is used for development, testing, or manufacturing might include dangerous capabilities that pose a security risk.  This dangerous code should never be signed with a certificate that is trusted by Windows.  The correct mechanism for executing dangerous driver code is to disable UEFI Secure Boot, enable the BCD "TESTSIGNING", and sign the development, test, and manufacturing code using an untrusted certificate (for example, one generated by makecert.exe).
+Kernel driver code that is used for development, testing, or manufacturing might include dangerous capabilities that pose a security risk. This dangerous code should never be signed with a certificate that is trusted by Windows. The correct mechanism for executing dangerous driver code is to disable UEFI Secure Boot, enable the BCD "TESTSIGNING", and sign the development, test, and manufacturing code using an untrusted certificate (for example, one generated by makecert.exe).
 
-Code signed by a trusted Software Publishers Certificate (SPC) or Windows Hardware Quality Labs (WHQL) signature must not facilitate bypass of Windows code integrity and security technologies.  Before code is signed by a trusted SPC or WHQL signature, first ensure it complies with guidance from [Creating Reliable Kernel-Mode Drivers](../kernel/creating-reliable-kernel-mode-drivers.md). In addition the code must not contain any dangerous behaviors, described below.  For more information about driver signing, see [Release driver signing](#execute-proper-release-driver-signing) later in this article.
+Code signed by a trusted Software Publishers Certificate (SPC) or Windows Hardware Quality Labs (WHQL) signature must not facilitate bypass of Windows code integrity and security technologies. Before code is signed by a trusted SPC or WHQL signature, first ensure it complies with guidance from [Creating Reliable Kernel-Mode Drivers](../kernel/creating-reliable-kernel-mode-drivers.md). In addition the code must not contain any dangerous behaviors, described below. For more information about driver signing, see [Release driver signing](#execute-proper-release-driver-signing) later in this article.
 
 Examples of dangerous behavior include the following:
 
 - Providing the ability to map arbitrary kernel, physical, or device memory to user mode.
 - Providing the ability to read or write arbitrary kernel, physical or device memory, including Port input/output (I/O).
 - Providing access to storage that bypasses Windows access control.
-- Providing the ability to modify hardware or firmware that the driver was not designed to manage.  
+- Providing the ability to modify hardware or firmware that the driver was not designed to manage.
 
 ## Perform threat analysis
 
@@ -116,7 +118,7 @@ This article provides driver specific guidance for creating a lightweight threat
 
 :::image type="content" source="images/sampledataflowdiagramkernelmodedriver.gif" alt-text="Sample data flow diagram illustrating a hypothetical kernel-mode driver.":::
 
-Security Development Lifecycle (SDL) best practices and associated tools can be used by IHVs and OEMs to improve the security of their products. For more information see [SDL recommendations for OEMs](../bringup/security-overview.md#sdl-recommendations-for-oems).
+Security Development Lifecycle (SDL) best practices and associated tools can be used by IHVs and OEMs to improve the security of their products. For more information, see [SDL recommendations for OEMs](../bringup/security-overview.md#sdl-recommendations-for-oems).
 
 ## Follow driver secure coding guidelines
 
@@ -124,7 +126,7 @@ Security Development Lifecycle (SDL) best practices and associated tools can be 
 
 The core activity of creating secure drivers is identifying areas in the code that need to be changed to avoid known software vulnerabilities. Many of these known software vulnerabilities deal with keeping strict track of the use of memory to avoid issues with others overwriting or otherwise comprising the memory locations that your driver uses.
 
-The [Code Validation Tools](#use-additional-code-validation-tools) section of this article describes software tools that can be used to help locate known software vulnerabilities.
+Code scanning tools such as CodeQL and driver specific tests, can be used to help locate, some, but not all, of these vulnerabilities. These tools and tests are described later in this topic.
 
 ### Memory buffers
 
@@ -134,7 +136,7 @@ The [Code Validation Tools](#use-additional-code-validation-tools) section of th
 
 - Validate variable-length buffers. For more information, see [Failure to Validate Variable-Length Buffers](../kernel/failure-to-validate-variable-length-buffers.md). For more information about working with buffers and using [**ProbeForRead**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforread) and [**ProbeForWrite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforwrite) to validate the address of a buffer, see [Buffer Handling](../ifs/buffer-handling.md).
 
-#### Use the appropriate method for accessing  data buffers with IOCTLs
+#### Use the appropriate method for accessing data buffers with IOCTLs
 
 One of the primary responsibilities of a Windows driver is transferring data between user-mode applications and a system's devices. The three methods for accessing data buffers are shown in the following table.
 
@@ -156,7 +158,7 @@ For more information about working with buffers in IOCTLs, see [Methods for Acce
 
 - Properly validate variable-length buffers. For more information, see [Failure to Validate Variable-Length Buffers](../kernel/failure-to-validate-variable-length-buffers.md).
 
-- When using buffered I/O, be sure and return the proper length for the OutputBuffer in the [IO_STATUS_BLOCK](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block) structure Information field.  Don't just directly return the length directly from a READ request.  For example, consider a situation where the returned data from the user space indicates that there is a 4K buffer.  If the driver actually should only return 200 bytes, but instead just returns 4K in the Information field an information disclosure vulnerability has occurred. This problem occurs because in earlier versions of Windows, the buffer the I/O Manager uses for Buffered I/O is not zeroed.  Thus, the user app gets back the original 200 bytes of data plus 4K-200 bytes of whatever was in the buffer (non-paged pool contents). This scenario can occur with all uses of Buffered I/O and not just with IOCTLs.
+- When using buffered I/O, be sure and return the proper length for the OutputBuffer in the [IO_STATUS_BLOCK](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block) structure Information field. Don't just directly return the length directly from a READ request. For example, consider a situation where the returned data from the user space indicates that there is a 4K buffer. If the driver actually should only return 200 bytes, but instead just returns 4K in the Information field an information disclosure vulnerability has occurred. This problem occurs because in earlier versions of Windows, the buffer the I/O Manager uses for Buffered I/O is not zeroed. Thus, the user app gets back the original 200 bytes of data plus 4K-200 bytes of whatever was in the buffer (non-paged pool contents). This scenario can occur with all uses of Buffered I/O and not just with IOCTLs.
 
 #### Errors in IOCTL direct I/O
 
@@ -176,9 +178,9 @@ For more information, and code examples, see [Providing the ability to read/writ
 
 #### TOCTOU vulnerabilities
 
-There is a [potential time of check to time of use](https://en.wikipedia.org/wiki/Time_of_check_to_time_of_use) (TOCTOU) vulnerability when using direct I/O (for IOCTLs or for Read/Write).  Be aware that the driver is accessing the user data buffer, the user can simultaneously be accessing it.
+There is a [potential time of check to time of use](https://en.wikipedia.org/wiki/Time_of_check_to_time_of_use) (TOCTOU) vulnerability when using direct I/O (for IOCTLs or for Read/Write). Be aware that the driver is accessing the user data buffer, the user can simultaneously be accessing it.
 
-To manage this risk, copy any parameters that need to be validated from the user data buffer to memory that is solely accessibly from kernel mode (such as the stack or pool).  Then once the data can not be accessed by the user application, validate and then operate on the data that was passed-in.
+To manage this risk, copy any parameters that need to be validated from the user data buffer to memory that is solely accessible from kernel mode (such as the stack or pool). Then once the data can not be accessed by the user application, validate and then operate on the data that was passed-in.
 
 ### Driver code must make correct use of memory
 
@@ -222,7 +224,7 @@ The following articles provide information about validating IRP input values:
 
 Consider validating values that are associated with an IRP, such as buffer addresses and lengths.
 
-If you chose to use Neither I/O, be aware that unlike Read and Write, and unlike Buffered I/O and Direct I/O, that when using Neither I/O IOCTL the buffer pointers and lengths are not validated by the I/O Manager.  
+If you chose to use Neither I/O, be aware that unlike Read and Write, and unlike Buffered I/O and Direct I/O, that when using Neither I/O IOCTL the buffer pointers and lengths are not validated by the I/O Manager.
 
 #### Handle IRP completion operations properly
 
@@ -280,7 +282,7 @@ For additional information about C and C++ secure coding, see [Secure coding res
 
 Drivers must work to prevent users from inappropriately accessing a computer's devices and files. To prevent unauthorized access to devices and files, you must:
 
-- Name device objects only when necessary. Named device objects are generally only necessary for legacy reasons, for example if you have an application that expects to open the device using a particular name or if you're using a non-PNP device/control device.  Note that WDF drivers do not need to name their PnP device FDO in order to create a symbolic link using [WdfDeviceCreateSymbolicLink](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreatesymboliclink).
+- Name device objects only when necessary. Named device objects are generally only necessary for legacy reasons, for example if you have an application that expects to open the device using a particular name or if you're using a non-PNP device/control device. Note that WDF drivers do not need to name their PnP device FDO in order to create a symbolic link using [WdfDeviceCreateSymbolicLink](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreatesymboliclink).
 
 - Secure access to device objects and interfaces.
 
@@ -352,7 +354,7 @@ To implement HVCI compatible code, make sure your driver code does the following
 - Does not attempt to directly modify executable system memory
 - Does not use dynamic code in kernel
 - Does not load data files as executable
-- Section alignment is a multiple of 0x1000 (PAGE\_SIZE). E.g. DRIVER\_ALIGNMENT=0x1000
+- Section alignment is a multiple of 0x1000 (PAGE\_SIZE). For example, DRIVER\_ALIGNMENT=0x1000
 
 For more information about using the tool and a list of incompatible memory calls, see [Implement HVCI compatible code](implement-hvci-compatible-code.md).
 
@@ -427,45 +429,30 @@ If you don't have suitable staff to review you code internally, consider engagin
 
 Before you release a driver package to the public, we recommend that you submit the package for certification. For more information, see [Test for performance and compatibility](/windows-hardware/test/index), [Get started with the Hardware program](../dashboard/get-started-dashboard-submissions.md), [Hardware Dashboard Services](../dashboard/index.yml), and [Attestation signing a kernel driver for public release](../dashboard/code-signing-attestation.md).
 
-## Use code analysis in Visual Studio to investigate driver security
+## Use CodeQL to check your driver code
 
-**Security checklist item \#13:** *Follow these steps to use the code analysis feature in Visual Studio to check for vulnerabilities in your driver code.*
+**Security checklist item \#13:** *Use CodeQL to check for vulnerabilities in your driver code.*
 
-Use the code analysis feature in Visual Studio to check for security vulnerabilities in your code. The Windows Driver Kit (WDK) installs rule sets that are designed to check for issues in native driver code.
+CodeQL, by GitHub, is a semantic code analysis engine, and the combination of an extensive suite of security queries along with a robust platform make it an invaluable tool for securing driver code. For more information, see [CodeQL and the Static Tools Logo Test](../devtest/static-tools-and-codeql.md).
 
-For more information, see [How to run Code Analysis for drivers](../devtest/how-to-run-code-analysis-for-drivers.md).
+## Add SAL annotations to your driver code
 
-For more information, see [Code Analysis for drivers overview](../devtest/code-analysis-for-drivers-overview.md). For additional background on code analysis, see [Visual Studio 2013 Static Code Analysis in depth](/archive/blogs/hkamel/visual-studio-2013-static-code-analysis-in-depth-what-when-and-how).
+**Security checklist item \#14:** *Add SAL annotations to in your driver code.*
 
-To become familiar with code analysis, you can use one of the sample drivers for example, the featured toaster sample, <https://github.com/Microsoft/Windows-driver-samples/tree/main/general/toaster/toastDrv/kmdf/func/featured> or the ELAM Early Launch Anti-Malware sample <https://github.com/Microsoft/Windows-driver-samples/tree/main/security/elam>.
-
-1. Open the driver solution in Visual Studio.
-
-2. In Visual Studio, for each project in the solution change the project properties to use the desired rule set. For example: Project &gt;&gt; Properties &gt;&gt; Code Analysis &gt;&gt; General, select *Recommended driver rules*. In addition to using the recommenced driver rules, use the *Recommended native rules* rule set.
-
-3. Select Build &gt;&gt; Run Code Analysis on Solution.
-
-4. View warnings in the **Error List** tab of the build output window in Visual Studio.
-
-Select the description for each warning to see the problematic area in your code.
-
-Select the linked warning code to see additional information.
-
-Determine whether your code needs to be changed, or whether an annotation needs to be added to allow the code analysis engine to properly follow the intent of your code. For more information on code annotation, see [Using SAL Annotations to Reduce C/C++ Code Defects](/visualstudio/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects) and [SAL 2.0 Annotations for Windows Drivers](../devtest/sal-2-annotations-for-windows-drivers.md).
+The source-code annotation language (SAL) provides a set of annotations that you can use to describe how a function uses its parameters, the assumptions that it makes about them, and the guarantees that it makes when it finishes. The annotations are defined in the header file `sal.h`. Visual Studio code analysis for C++ uses SAL annotations to modify its analysis of functions. For more information about SAL 2.0 for Windows driver development, see [SAL 2.0 Annotations for Windows Drivers](../devtest/sal-2-annotations-for-windows-drivers.md) and [Using SAL Annotations to Reduce C/C++ Code Defects](/visualstudio/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects).
 
 For general information on SAL, refer to this article available from OSR.
 [https://www.osr.com/blog/2015/02/23/sal-annotations-dont-hate-im-beautiful/](https://www.osr.com/blog/2015/02/23/sal-annotations-dont-hate-im-beautiful/)
 
-## Use Static Driver Verifier to check for vulnerabilities
+## Use Driver Verifier to check for vulnerabilities
 
-**Security checklist item \#14:** *Follow these steps to use Static Driver Verifier (SDV) in Visual Studio to check for vulnerabilities in your driver code.*
+**Security checklist item \#15:** *Use Driver Verifier to check for vulnerabilities in your driver code.*
 
-Static Driver Verifier (SDV) uses a set of interface rules and a model of the operating system to determine whether the driver interacts correctly with the Windows operating system. SDV finds defects in driver code that could point to potential bugs in drivers.
+Driver Verifier uses a set of interface rules and a model of the operating system to determine whether the driver interacts correctly with the Windows operating system. DV finds defects in driver code that could point to potential bugs in drivers.
 
-For more information, see [Introducing Static Driver Verifier](../devtest/introducing-static-driver-verifier.md)
- and [Static Driver Verifier](../devtest/static-driver-verifier.md).
+Driver Verifier allows for live testing of the driver. Driver Verifier monitors Windows kernel-mode drivers and graphics drivers to detect illegal function calls or actions that might corrupt the system. Driver Verifier can subject the Windows drivers to a variety of stresses and tests to find improper behavior. For more information, see [Driver Verifier](../devtest/driver-verifier.md).
 
-Note that only certain types of drivers are supported by SDV. For more information about the drivers that SDV can verify, see [Supported Drivers](../devtest/supported-drivers.md). Refer to the following pages for information on the SDV tests available for the driver type you are working with.
+Note that only certain types of drivers are supported by DV. For more information about the drivers that DV can verify, see [Supported Drivers](../devtest/supported-drivers.md). Refer to the following pages for information on the DV tests available for the driver type you are working with.
 
 - [Rules for WDM Drivers](../devtest/sdv-rules-for-wdm-drivers.md)
 - [Rules for KMDF Drivers](../devtest/sdv-rules-for-kmdf-drivers.md)
@@ -474,29 +461,11 @@ Note that only certain types of drivers are supported by SDV. For more informati
 - [Rules for Audio Drivers](../devtest/rules-for-audio-drivers.md)
 - [Rules for AVStream Drivers](../devtest/rules-for-avstream-drivers.md)
 
-To become familiar with SDV, you can use one of the sample drivers (for example, the featured toaster sample: <https://github.com/Microsoft/Windows-driver-samples/tree/main/general/toaster/toastDrv/kmdf/func/featured>).
-
-1. Open the targeted driver solution in Visual Studio.
-
-2. In Visual Studio, change the build type to *Release*. Static Driver Verifier requires that the build type is release, not debug.
-
-3. In Visual Studio, select Build &gt;&gt; Build Solution.
-
-4. In Visual Studio, select Driver &gt;&gt; Launch Static Driver Verifier.
-
-5. In SDV, on the *Rules* tab, select *Default* under *Rule Sets*.
-
-   Although the default rules find many common issues, consider running the more extensive *All driver rules* rule set as well.
-
-6. On the *Main* tab of SDV, select *Start*.
-
-7. When SDV is complete, review any warnings in the output. The *Main* tab displays the total number of defects found.
-
-8. Select each warning to load the SDV Report Page and examine the information associated with the possible code vulnerability. Use the report to investigate the verification result and to identify paths in your driver that fail a SDV verification. For more information, see [Static Driver Verifier Report](../devtest/static-driver-verifier-report.md).
+To become familiar with DV, you can use one of the sample drivers (for example, the featured toaster sample: <https://github.com/Microsoft/Windows-driver-samples/tree/main/general/toaster/toastDrv/kmdf/func/featured>).
 
 ## Check code with the BinSkim Binary Analyzer
 
-**Security checklist item \#15:** *Follow these steps to use BinSkim to double check that compile and build options are configured to minimize known security issues.*
+**Security checklist item \#16:** *Follow these steps to use BinSkim to double check that compile and build options are configured to minimize known security issues.*
 
 Use BinSkim to examine binary files to identify coding and building practices that can potentially render the binary vulnerable.
 
@@ -524,19 +493,19 @@ Follow these steps to validate that the security compile options are properly co
    C:\> Md \binskim-master
    ```
 
-5. Move to that directory that you just created.  
+5. Move to that directory that you just created.
 
    ```console
    C:\> Cd \binskim-master
    ```
 
-6. Use the git clone command to download all of the needed files.  
+6. Use the git clone command to download all of the needed files.
 
    ```console
    C:\binskim-master> git clone --recurse-submodules https://github.com/microsoft/binskim.git
    ```
 
-7. Move to the new `binskim` dirctory that the clone command created.  
+7. Move to the new `binskim` dirctory that the clone command created.
 
    ```console
    C:\> Cd \binskim-master\binskim
@@ -562,7 +531,7 @@ Follow these steps to validate that the security compile options are properly co
 
    ```
 
-9. The build process creates a set of directories with the BinSkim executables. Move to the win-x64 build output directory.  
+9. The build process creates a set of directories with the BinSkim executables. Move to the win-x64 build output directory.
 
    ```console
    C:\binskim-master\binskim> Cd \binskim-master\bld\bin\AnyCPU_Release\Publish\netcoreapp2.0\win-x64>
@@ -592,7 +561,7 @@ Follow these steps to validate that the security compile options are properly co
 ### Setting the symbol path
 
 If you are building all the code you are analyzing on the same machine you are running BinSkim on, you typically don't need to set the symbol path. This is because your symbol files are available on the local box where you compiled. If you are using a more complex build system, or redirecting your symbols to different location (not alongside the compiled binary), use `--local-symbol-directories` to add these locations to the symbol file search.
-If your code references a compiled binary that is not part of your code, the Window debugger sympath can be used to retrieve symbols in order to verify the security of these code dependencies. If you find an issue in these dependencies, you may not be able to fix them. But it can be useful to be aware of any possible  security risk you are accepting by taking on those dependencies.
+If your code references a compiled binary that is not part of your code, the Window debugger sympath can be used to retrieve symbols in order to verify the security of these code dependencies. If you find an issue in these dependencies, you may not be able to fix them. But it can be useful to be aware of any possible security risk you are accepting by taking on those dependencies.
 
 > [!TIP]
 >When adding a symbol path (that references a networked symbol server), add a local cache location to specify a local path to cache the symbols. Not doing this can greatly compromise the performance of BinSkim. The following example, specifies a local cache at d:\symbols.
@@ -605,14 +574,14 @@ For more information about sympath, see [Symbol path for Windows debuggers](../d
    C:\binskim-master\binskim\bld\bin\AnyCPU_Release\Publish\netcoreapp2.0\win-x64> BinSkim analyze "C:\Samples\KMDF_Echo_Driver\echo.sys"
    ```
 
-2. For additional information add the verbose option like this.
+2. For additional information, add the verbose option like this.
 
    ```console
    C:\binskim-master\binskim\bld\bin\AnyCPU_Release\Publish\netcoreapp2.0\win-x64> BinSkim analyze "C:\Samples\KMDF_Echo_Driver\osrusbfx2.sys" --verbose
    ```
 
    > [!NOTE]
-   >The --verbose option will produce explicit pass/fail results for every check. If you do not provide verbose, you will only see the defects that BinSkim detects. The --verbose option is typically not recommended for actual automation systems due to the increased size of log files and because it makes it more difficult to pick up individual failures when they occur, as they will be embedded in the midst of a large number of  'pass' results.
+   >The --verbose option will produce explicit pass/fail results for every check. If you do not provide verbose, you will only see the defects that BinSkim detects. The --verbose option is typically not recommended for actual automation systems due to the increased size of log files and because it makes it more difficult to pick up individual failures when they occur, as they will be embedded in the midst of a large number of 'pass' results.
 
 3. Review the command output to look for possible issues. This example output shows three tests that passed. Additional information on the rules, such as BA2002 is available in the [BinSkim User Guide](https://github.com/microsoft/binskim/blob/master/docs/UserGuide.md).
 
@@ -657,17 +626,9 @@ The default compile options in Visual Studio for driver projects can disable war
 
 For more information about the compiler warnings, see [Compiler Warnings by compiler version](/cpp/error-messages/compiler-warnings/compiler-warnings-by-compiler-version).
 
-## Use additional code validation tools
+## Check code with the hardware compatibility program tests
 
-**Security checklist item \#16:** *Use these additional tools to help validate that your code follows security recommendations and to probe for gaps that were missed in your development process.*
-
-In addition to [Visual Studio Code analysis](#use-code-analysis-in-visual-studio-to-investigate-driver-security), [Static Driver Verifier](#use-static-driver-verifier-to-check-for-vulnerabilities), and [Binskim](#check-code-with-the-binskim-binary-analyzer) discussed above, use the following tools to probe for gaps that were missed in your development process.
-
-### Driver Verifier
-
-Driver Verifier allows for live testing of the driver. Driver Verifier monitors Windows kernel-mode drivers and graphics drivers to detect illegal function calls or actions that might corrupt the system. Driver Verifier can subject the Windows drivers to a variety of stresses and tests to find improper behavior. For more information, see [Driver Verifier](../devtest/driver-verifier.md).
-
-### Hardware compatibility program tests
+**Security checklist item \#17:** *Use the security related hardware compatibility program tests to check for security issues.*
 
 The hardware compatibility program includes security related tests can be used to look for code vulnerabilities. The Windows Hardware Compatibility Program leverages the tests in the Windows Hardware Lab Kit (HLK). The HLK Device Fundamentals tests can be used on the command line to exercise driver code and probe for weakness. For general information about the device fundamentals tests and the hardware compatibility program, see [Windows Hardware Lab Kit](/windows-hardware/test/hlk/).
 
@@ -697,7 +658,7 @@ Consider the development of custom domain-specific security tests. To develop ad
 
 ## Review debugger techniques and extensions
 
-**Security checklist item \#17:** *Review these debugger tools and consider their use in your development debugging workflow.*
+**Security checklist item \#18:** *Review these debugger tools and consider their use in your development debugging workflow.*
 
 ### Security related debugger commands
 
@@ -713,13 +674,13 @@ The !sd extension displays the security descriptor at the specified address. For
 
 ## Microsoft Vulnerable and Malicious Driver Reporting Center
 
-Anyone can submit a questionable driver using the Microsoft Vulnerable and Malicious Driver Reporting Center. Refer to this blog entry for information on how  drivers are submitted for analysis - [Improve kernel security with the new Microsoft Vulnerable and Malicious Driver Reporting Center](https://www.microsoft.com/security/blog/2021/12/08/improve-kernel-security-with-the-new-microsoft-vulnerable-and-malicious-driver-reporting-center/)
+Anyone can submit a questionable driver using the Microsoft Vulnerable and Malicious Driver Reporting Center. Refer to this blog entry for information on how drivers are submitted for analysis - [Improve kernel security with the new Microsoft Vulnerable and Malicious Driver Reporting Center](https://www.microsoft.com/security/blog/2021/12/08/improve-kernel-security-with-the-new-microsoft-vulnerable-and-malicious-driver-reporting-center/)
 
-The Reporting Center can scan and analyze Windows drivers built for x86 and x64 architectures. Vulnerable and malicious scanned drivers are flagged for analysis and investigation by Microsoft’s Vulnerable Driver team. After vulernable drivers are confirmed, an appropriate notification occurs, they are added to the vulnerable driver blocklist. For more information about that, see [Microsoft recommended driver block rules](/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules). These rules are aplied by default to Hypervisor-protected code integrity (HVCI) enabled devices and Windows 10 in S mode.
+The Reporting Center can scan and analyze Windows drivers built for x86 and x64 architectures. Vulnerable and malicious scanned drivers are flagged for analysis and investigation by Microsoft’s Vulnerable Driver team. After vulnerable drivers are confirmed, an appropriate notification occurs, they are added to the vulnerable driver blocklist. For more information about that, see [Microsoft recommended driver block rules](/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules). These rules are applied by default to Hypervisor-protected code integrity (HVCI) enabled devices and Windows 10 in S mode.
 
 ## Review secure coding resources
 
-**Security checklist item \#18:** *Review these resources to expand your understanding of the secure coding best practices that are applicable to driver developers.*
+**Security checklist item \#19:** *Review these resources to expand your understanding of the secure coding best practices that are applicable to driver developers.*
 
 ### Review these resources to learn more about driver security
 
