@@ -1,13 +1,13 @@
 ---
 title: USB Selective Suspend
 description: This article provides information about choosing the correct mechanism for the selective suspend feature.
-ms.date: 01/17/2024
+ms.date: 07/01/2024
 ---
 
 # USB selective suspend
 
 > [!NOTE]
-> This article is for device driver developers. If you're experiencing difficulty with a USB device, please see [Troubleshoot common USB problems](https://support.microsoft.com/windows/troubleshoot-common-usb-problems-5e9a9b49-ad43-702e-083e-6107e95deb88)
+> This article is for device driver developers. If you're experiencing difficulty with a USB device, please see [Fix USB-C problems in Windows](https://support.microsoft.com/windows/fix-usb-c-problems-in-windows-f4e0e529-74f5-cdae-3194-43743f30eed2)
 
 The USB selective suspend feature allows the hub driver to suspend an individual port without affecting the operation of the other ports on the hub. Selective suspension of USB devices is especially useful in portable computers since it helps conserve battery power. Many devices, such as fingerprint readers and other kinds of biometric scanners, only require power intermittently. Suspending such devices, when the device isn't in use, reduces overall power consumption. More importantly, any device that isn't selectively suspended may prevent the USB host controller from disabling its transfer schedule, which resides in system memory. Direct memory access (DMA) transfers by the host controller to the scheduler can prevent the system's processors from entering deeper sleep states, such as C3.
 

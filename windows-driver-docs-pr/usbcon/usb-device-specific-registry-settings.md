@@ -1,7 +1,7 @@
 ---
 title: USB Device Registry Entries
 description: This article describes USB device-specific registry entries.
-ms.date: 01/17/2024
+ms.date: 07/01/2024
 ---
 
 # USB device registry entries
@@ -9,7 +9,7 @@ ms.date: 01/17/2024
 This article describes USB device-specific registry entries.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer experiencing USB problems, see [Troubleshoot common USB problems](https://support.microsoft.com/help/17614/windows-10-troubleshoot-common-usb-problems)
+> This topic is for programmers. If you are a customer experiencing USB problems, see [Fix USB-C problems in Windows](https://support.microsoft.com/windows/fix-usb-c-problems-in-windows-f4e0e529-74f5-cdae-3194-43743f30eed2)
 
 ## Registry settings for configuring USB driver stack behavior
 

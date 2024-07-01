@@ -1,13 +1,13 @@
 ---
 title: Bluetooth Version and Profile Support in Previous Windows Versions
 description: Bluetooth version and profile support in previous Windows versions
-ms.date: 01/10/2024
+ms.date: 07/01/2024
 ---
 
 # Bluetooth version and profile support in previous Windows versions
 
 > [!NOTE]
-> Looking for drivers for your Bluetooth audio device? See [Fix connections to Bluetooth audio devices and wireless displays](https://go.microsoft.com/fwlink/p/?LinkID=623629).
+> Looking for drivers for your Bluetooth audio device? See [Fix connections to Bluetooth audio devices and wireless displays](https://support.microsoft.com/windows/fix-connections-to-bluetooth-audio-devices-09ba2fb1-9472-9259-bd05-9306dd839f21).
 
 ## Which previous versions of Windows support Bluetooth wireless technology?
 
