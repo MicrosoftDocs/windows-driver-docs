@@ -85,6 +85,11 @@ To proceed, type one of four one-letter commands:
 
 You can activate the File System Filter Verification feature for one or more drivers by using the `verifier.exe` command line. For details, see [Selecting Driver Verifier Options](selecting-driver-verifier-options.md).
 
+> [!NOTE]
+> Prior to Windows build 25126 it is not supported to enable File System Filter Verification on one or minifilters at the same time that *ntoskrnl* is selected for verification. Doing so may result in spurious Verifier errors.
+>
+> To avoid this issue, either do not include *ntoskrnl* in the list of components to verify or upgrade to a version of Windows after build 25126.
+
 The recommended way to start Filter Verifier is with the **/standard** option of `verifier.exe`, since it provides additional useful features such as [special pool](special-pool.md) and [pool tracking](pool-tracking.md):
 
 ```
