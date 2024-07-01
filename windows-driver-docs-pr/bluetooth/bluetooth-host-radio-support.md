@@ -1,7 +1,7 @@
 ---
 title: Bluetooth Host Radio Support
 description: Provides a list of questions and answers about Bluetooth host radio support in Windows
-ms.date: 06/17/2024
+ms.date: 07/01/2024
 ---
 
 # Bluetooth Host Radio Support
