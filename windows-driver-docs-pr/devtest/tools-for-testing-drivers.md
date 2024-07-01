@@ -31,8 +31,6 @@ ms.date: 10/13/2023
 - [XpsAnalyzer](xpsanalyzer.md)
 - [XpsConverter](xpsconverter.md)
 - [IoSpy and IoAttack](iospy-and-ioattack.md)
-- [Driver Coverage Toolkit](driver-coverage-toolkit.md)
-- [Enhanced Storage Certificate Management Tool](enhanced-storage-certificate-management-tool.md)
 - [JSConstraintsDebug](jsconstraintsdebug.md)
 - [Bluetooth Inquiry Record Verifier](bluetooth-inquiry-record-verifier.md)
 

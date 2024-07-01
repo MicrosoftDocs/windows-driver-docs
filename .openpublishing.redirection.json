@@ -15045,6 +15045,224 @@
             "source_path":  "windows-driver-docs-pr/audio/ns-ksmedia-ksattribute_audioloopback_tappoint.md",
             "redirect_URL":  "/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksattribute_audioloopback_tappoint",
             "redirect_document_id":  false
-        }
+        },    
+        {
+            "source_path":  "windows-driver-docs-pr/devtest/nmake2msbuild.md",
+            "redirect_URL":  "/previous-versions/windows/hardware/nmake2msbuild/nmake2msbuild",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/devtest/converting-a-wdk-sources-file-to-a-visual-studio-project.md",
+            "redirect_URL":  "/previous-versions/windows/hardware/nmake2msbuild/converting-a-wdk-sources-file-to-a-visual-studio-project",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/devtest/driver-coverage-toolkit.md",
+            "redirect_URL":  "/previous-versions/windows/hardware/drivercoverage/driver-coverage-toolkit",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/devtest/overview-of-the-driver-coverage-toolkit.md",
+            "redirect_URL":  "/previous-versions/windows/hardware/drivercoverage/overview-of-the-driver-coverage-toolkit",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/devtest/driver-coverage-filter-driver.md",
+            "redirect_URL":  "/previous-versions/windows/hardware/drivercoverage/driver-coverage-filter-driver",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/devtest/how-to-collect-irp-coverage-data.md",
+            "redirect_URL":  "/previous-versions/windows/hardware/drivercoverage/how-to-collect-irp-coverage-data",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/devtest/how-to-analyze-irp-coverage-data.md",
+            "redirect_URL":  "/previous-versions/windows/hardware/drivercoverage/how-to-analyze-irp-coverage-data",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/devtest/enhanced-storage-certificate-management-tool.md",
+            "redirect_URL":  "/previous-versions/windows/hardware/ehstorcertmgrcmd/enhanced-storage-certificate-management-tool",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/devtest/overview-of-the-enhanced-storage-certificate-management-tool.md",
+            "redirect_URL":  "/previous-versions/windows/hardware/ehstorcertmgrcmd/overview-of-the-enhanced-storage-certificate-management-tool",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/devtest/importing-certificates-by-using-the-enhanced-storage-certificate-manag.md",
+            "redirect_URL":  "/previous-versions/windows/hardware/ehstorcertmgrcmd/importing-certificates-by-using-the-enhanced-storage-certificate-manag",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/devtest/importing-certificates-from-a-windows-certificate-store.md",
+            "redirect_URL":  "/previous-versions/windows/hardware/ehstorcertmgrcmd/importing-certificates-from-a-windows-certificate-store",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/devtest/importing-certificates-from-a-file.md",
+            "redirect_URL":  "/previous-versions/windows/hardware/ehstorcertmgrcmd/importing-certificates-from-a-file",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/devtest/creating-certificates-for-usb-storage-devices.md",
+            "redirect_URL":  "/previous-versions/windows/hardware/ehstorcertmgrcmd/creating-certificates-for-usb-storage-devices",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/devtest/installation-of-the-enhanced-storage-certificate-management-tool.md",
+            "redirect_URL":  "/previous-versions/windows/hardware/ehstorcertmgrcmd/installation-of-the-enhanced-storage-certificate-management-tool",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/devtest/enhanced-storage-certificate-management-tool-command-syntax.md",
+            "redirect_URL":  "/previous-versions/windows/hardware/ehstorcertmgrcmd/enhanced-storage-certificate-management-tool-command-syntax",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/devtest/enhstor-add-switch.md",
+            "redirect_URL":  "/previous-versions/windows/hardware/ehstorcertmgrcmd/enhstor-add-switch",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/devtest/-clear-switch.md",
+            "redirect_URL":  "/previous-versions/windows/hardware/ehstorcertmgrcmd/-clear-switch",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/devtest/-debug-switch.md",
+            "redirect_URL":  "/previous-versions/windows/hardware/ehstorcertmgrcmd/-debug-switch",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/devtest/-export-switch.md",
+            "redirect_URL":  "/previous-versions/windows/hardware/ehstorcertmgrcmd/-export-switch",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/devtest/-initialize-switch.md",
+            "redirect_URL":  "/previous-versions/windows/hardware/ehstorcertmgrcmd/-initialize-switch",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/devtest/-list-switch.md",
+            "redirect_URL":  "/previous-versions/windows/hardware/ehstorcertmgrcmd/-list-switch",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/devtest/-remove-switch.md",
+            "redirect_URL":  "/previous-versions/windows/hardware/ehstorcertmgrcmd/-remove-switch",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/devtest/-replace-switch.md",
+            "redirect_URL":  "/previous-versions/windows/hardware/ehstorcertmgrcmd/-replace-switch",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/devtest/tools-for-debugging-drivers.md",
+            "redirect_URL":  "windows-driver-docs-pr/debugger/",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/devtest/using-debugging-code-in-a-driver.md",
+            "redirect_URL":  "windows-driver-docs-pr/debugger/",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/devtest/debugging-code-overview.md",
+            "redirect_URL":  "windows-driver-docs-pr/debugger/",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/devtest/conditional-compilation-and-the-build-environment.md",
+            "redirect_URL":  "windows-driver-docs-pr/debugger/",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/devtest/interpreting-a-bug-check-code.md",
+            "redirect_URL":  "windows-driver-docs-pr/debugger/",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/devtest/using-a-debugger.md",
+            "redirect_URL":  "windows-driver-docs-pr/debugger/",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/devtest/checked-build-of-windows.md",
+            "redirect_URL":  "/previous-versions/windows/hardware/checkedbuild/checked-build-of-windows",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/devtest/checked-and-free-build-differences.md",
+            "redirect_URL":  "/previous-versions/windows/hardware/checkedbuild/checked-and-free-build-differences",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/devtest/using-the-checked-build.md",
+            "redirect_URL":  "/previous-versions/windows/hardware/checkedbuild/using-the-checked-build",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/devtest/what-the-checked-build-checks.md",
+            "redirect_URL":  "/previous-versions/windows/hardware/checkedbuild/what-the-checked-build-checks",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/devtest/how-the-checked-build-indicates-a-problem.md",
+            "redirect_URL":  "/previous-versions/windows/hardware/checkedbuild/how-the-checked-build-indicates-a-problem",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/devtest/side-effects-of-using-the-checked-build.md",
+            "redirect_URL":  "/previous-versions/windows/hardware/checkedbuild/side-effects-of-using-the-checked-build",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/devtest/the-checked-build-and-the-debugger.md",
+            "redirect_URL":  "/previous-versions/windows/hardware/checkedbuild/the-checked-build-and-the-debugger",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/devtest/the-checked-build-and-driver-verifier.md",
+            "redirect_URL":  "/previous-versions/windows/hardware/checkedbuild/the-checked-build-and-driver-verifier",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/devtest/installing-the-checked-build.md",
+            "redirect_URL":  "/previous-versions/windows/hardware/checkedbuild/installing-the-checked-build",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/devtest/installing-the-complete-checked-build.md",
+            "redirect_URL":  "/previous-versions/windows/hardware/checkedbuild/installing-the-complete-checked-build",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/devtest/installing-just-the-checked-operating-system-and-hal--for-windows-vist.md",
+            "redirect_URL":  "/previous-versions/windows/hardware/checkedbuild/installing-just-the-checked-operating-system-and-hal--for-windows-vist",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/devtest/installing-just-the-checked-operating-system-and-hal--for-windows-xp-a.md",
+            "redirect_URL":  "/previous-versions/windows/hardware/checkedbuild/installing-just-the-checked-operating-system-and-hal--for-windows-xp-a",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/devtest/checked-build-breakpoints-and-messages.md",
+            "redirect_URL":  "/previous-versions/windows/hardware/checkedbuild/checked-build-breakpoints-and-messages",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/devtest/checked-build-asserts.md",
+            "redirect_URL":  "/previous-versions/windows/hardware/checkedbuild/checked-build-asserts",
+            "redirect_document_id":  false
+        },
+
+
+
     ]
 }

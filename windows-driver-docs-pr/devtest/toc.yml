@@ -2,348 +2,6 @@
   href: index.md
 - name: "Index of Windows Driver Kit Tools"
   href: index-of-windows-driver-kit-tools.md
-- name: "Tools for Testing Drivers"
-# Auto-expanded node
-  items: 
-  - name: "Tools for Testing Drivers"
-    href: tools-for-testing-drivers.md
-  - name: "Device Fundamentals Tests"
-# Auto-expanded node
-    items: 
-    - name: "Device Fundamentals Tests"
-      href: device-fundamentals-tests.md
-    - name: "How to run the DevFund Tests via the command-line"
-      href: run-devfund-tests-via-the-command-line.md
-    - name: "CHAOS Tests (Device Fundamentals)"
-      href: chaos-tests--device-fundamentals-.md
-    - name: "Coverage Tests (Device Fundamentals)"
-      href: coverage-tests--device-fundamentals-.md
-    - name: "CPUStress Tests (Device Fundamentals)"
-      href: cpustress-tests--device-fundamentals-.md
-    - name: "DriverInstall Tests (Device Fundamentals)"
-      href: driverinstall-tests--device-fundamentals-.md
-    - name: "I/O Tests (Device Fundamentals)"
-      href: i-o-tests--device-fundamentals-.md
-    - name: "Penetration Tests (Device Fundamentals)"
-      href: penetration-tests--device-fundamentals-.md
-    - name: "PnP Tests (Device Fundamentals)"
-      href: pnp-tests--device-fundamentals-.md
-    - name: "Reboot Tests (Device Fundamentals)"
-      href: reboot-tests--device-fundamentals-.md
-    - name: "Sleep Tests (Device Fundamentals)"
-      href: sleep-tests--device-fundamentals-.md
-  - name: "Data-Driven System Fundamentals Tests"
-# Auto-expanded node
-    items: 
-    - name: "Data-Driven System Fundamentals Tests"
-      href: data-driven-system-fundamentals-tests.md
-    - name: "Configure the Machine for Testing"
-      href: configure-the-machine-for-testing.md
-    - name: "Run the Tests"
-      href: run-the-tests.md
-  - name: "PairTool"
-# Auto-expanded node
-    items: 
-    - name: "PairTool"
-      href: pairtool.md
-    - name: "PairTool command syntax"
-      href: pairtool-command-syntax.md
-    - name: "PairTool examples"
-      href: pairtool-examples.md
-  - name: "PnPUtil"
-# Auto-expanded node
-    items: 
-    - name: "PnPUtil"
-      href: pnputil.md
-    - name: "PnPUtil Command Syntax"
-      href: pnputil-command-syntax.md
-    - name: "PnPUtil Examples"
-      href: pnputil-examples.md
-    - name: "PnPUtil Return Values"
-      href: pnputil-return-values.md
-  - name: "DevGen"
-# Auto-expanded node
-    items: 
-    - name: "DevGen"
-      href: devgen.md
-    - name: "DevGen Command Syntax"
-      href: devgen-command-syntax.md
-    - name: "DevGen Examples"
-      href: devgen-examples.md
-  - name: "Windows Device Console (Devcon.exe)"
-# Auto-expanded node
-    items: 
-    - name: "Windows Device Console (Devcon.exe)"
-      href: devcon.md
-    - name: "Replacing Device Console"
-      href: devcon-migration.md
-    - name: "Device Console Examples"
-      href: devcon-examples.md
-    - name: "Device Console Commands"
-# Auto-expanded node
-      items: 
-      - name: "Device Console (DevCon.exe) Commands"
-        href: devcon-general-commands.md
-      - name: "DevCon Classes"
-        href: devcon-classes.md
-      - name: "DevCon ClassFilter"
-        href: devcon-classfilter.md
-      - name: "DevCon Disable"
-        href: devcon-disable.md
-      - name: "DevCon Dp_add"
-        href: devcon-dp-add.md
-      - name: "DevCon Dp_delete"
-        href: devcon-dp-delete.md
-      - name: "DevCon Dp_enum"
-        href: devcon-dp-enum.md
-      - name: "DevCon DriverFiles"
-        href: devcon-driverfiles.md
-      - name: "DevCon DriverNodes"
-        href: devcon-drivernodes.md
-      - name: "DevCon Enable"
-        href: devcon-enable.md
-      - name: "DevCon Find"
-        href: devcon-find.md
-      - name: "DevCon FindAll"
-        href: devcon-findall.md
-      - name: "DevCon HwIDs"
-        href: devcon-hwids.md
-      - name: "DevCon Install"
-        href: devcon-install.md
-      - name: "DevCon ListClass"
-        href: devcon-listclass.md
-      - name: "DevCon Reboot"
-        href: devcon-reboot.md
-      - name: "DevCon Remove"
-        href: devcon-remove.md
-      - name: "DevCon Rescan"
-        href: devcon-rescan.md
-      - name: "DevCon Resources"
-        href: devcon-resources.md
-      - name: "DevCon Restart"
-        href: devcon-restart.md
-      - name: "DevCon SetHwID"
-        href: devcon-sethwid.md
-      - name: "DevCon Stack"
-        href: devcon-stack.md
-      - name: "DevCon Status"
-        href: devcon-status.md
-      - name: "DevCon Update"
-        href: devcon-update.md
-      - name: "DevCon UpdateNI"
-        href: devcon-updateni.md
-  - name: "Additional Test Tools"
-# Auto-expanded node
-    items: 
-    - name: "Additional Test Tools"
-      href: 
-    - name: "PoolMon"
-# Auto-expanded node
-      items: 
-      - name: "PoolMon"
-        href: poolmon.md
-      - name: "PoolMon Overview"
-        href: poolmon-overview.md
-      - name: "PoolMon Requirements"
-        href: poolmon-requirements.md
-      - name: "PoolMon Commands"
-# Auto-expanded node
-        items: 
-        - name: "PoolMon Commands"
-          href: poolmon-commands.md
-        - name: "PoolMon Startup Command"
-          href: poolmon-startup-command.md
-        - name: "PoolMon Run-time Commands"
-          href: poolmon-run-time-commands.md
-      - name: "PoolMon Display"
-        href: poolmon-display.md
-      - name: "PoolMon Examples"
-        href: poolmon-examples.md
-    - name: "PwrTest"
-# Auto-expanded node
-      items: 
-      - name: "PwrTest"
-        href: pwrtest.md
-      - name: "PwrTest Syntax"
-        href: pwrtest-syntax.md
-      - name: "PwrTest Log File"
-# Auto-expanded node
-        items: 
-        - name: "PwrTest Log File"
-          href: pwrtest-log-file.md
-        - name: "PwrTest Scenarios"
-          href: pwrtest-scenarios.md
-        - name: "PwrTest Battery Scenario"
-          href: pwrtest-battery-scenario.md
-        - name: "PwrTest Connected Standby Scenario"
-          href: pwrtest-connected-standby--cs--scenario.md
-        - name: "PwrTest Device Scenario"
-          href: pwrtest-device-scenario.md
-        - name: "PwrTest DirectedFx Scenario"
-          href: pwrtest-directedfx-scenario.md
-        - name: "PwrTest Disk Scenario"
-          href: pwrtest-disk-scenario.md
-        - name: "PwrTest Execution State Scenario"
-          href: pwrtest-execution-state-scenario.md
-        - name: "PwrTest Idle Scenario"
-          href: pwrtest-idle-scenario.md
-        - name: "PwrTest Info Scenario"
-          href: pwrtest-info-scenario.md
-        - name: "PwrTest Monitor Scenario"
-          href: pwrtest-monitor-scenario.md
-        - name: "PwrTest Platform Idle Scenario"
-          href: pwrtest-platform-idle---platidle--scenario.md
-        - name: "PwrTest PPM Scenario"
-          href: pwrtest-ppm-scenario.md
-        - name: "PwrTest ProcessIdle Scenario"
-          href: pwrtest-processidle-scenario.md
-        - name: "PwrTest Requests Scenario"
-          href: pwrtest-requests-scenario.md
-        - name: "PwrTest Sleep Scenario"
-          href: pwrtest-sleep-scenario.md
-        - name: "PwrTest Thermal Scenario"
-          href: pwrtest-thermal-scenario.md
-        - name: "PwrTest Timer Scenario"
-          href: pwrtest-timer-scenario.md
-    - name: "PNPCPU"
-# Auto-expanded node
-      items: 
-      - name: "PNPCPU"
-        href: pnpcpu.md
-      - name: "PNPCPU Overview"
-        href: pnpcpu-overview.md
-      - name: "PNPCPU General Commands"
-        href: pnpcpu-general-commands.md
-      - name: "PNPCPU Typical Session"
-        href: pnpcpu-typical-session.md
-      - name: "PNPCPU General Notes"
-        href: pnpcpu-general-notes.md
-      - name: "PNPCPU Limitations"
-        href: pnpcpu-limitations.md
-    - name: "WSDAPI Basic Interoperability Tool"
-# Auto-expanded node
-      items: 
-      - name: "WSDAPI Basic Interoperability Tool"
-        href: wsdapi-basic-interoperability-tool.md
-      - name: "Introduction to WSDBIT"
-        href: introduction-to-wsdbit.md
-      - name: "Referenced Namespaces"
-        href: referenced-namespaces.md
-      - name: "WSDBIT Testing Environment"
-        href: wsdbit-testing-environment.md
-      - name: "Client Scenarios for WSDBIT"
-# Auto-expanded node
-        items: 
-        - name: "Client Scenarios for WSDBIT"
-          href: client-scenarios-for-wsdbit.md
-        - name: "Device and Service Inspection Scenarios"
-          href: device-and-service-inspection-scenarios.md
-        - name: "Device Control Scenarios"
-          href: device-control-scenarios.md
-        - name: "Attachments Scenarios"
-          href: attachments-scenarios.md
-        - name: "Eventing Scenarios"
-          href: eventing-scenarios.md
-        - name: "Secure Communication Scenarios"
-          href: secure-communication-scenarios.md
-      - name: "WSDBIT Reference"
-# Auto-expanded node
-        items: 
-        - name: "WSDBIT Reference"
-          href: wsdbit-reference.md
-        - name: "Sample Metadata Response Output"
-          href: sample-metadata-response-output.md
-        - name: "SimpleService WSDL"
-          href: simpleservice-wsdl.md
-        - name: "AttachmentService WSDL"
-          href: attachmentservice-wsdl.md
-        - name: "EventingService WSDL"
-          href: eventingservice-wsdl.md
-    - name: "XpsAnalyzer"
-# Auto-expanded node
-      items: 
-      - name: "XpsAnalyzer"
-        href: xpsanalyzer.md
-      - name: "XpsAnalyzer Command Syntax"
-        href: xpsanalyzer-command-syntax.md
-      - name: "XpsAnalyzer Rules"
-        href: xpsanalyzer-rules.md
-      - name: "XpsAnalyzer Output"
-        href: xpsanalyzer-output.md
-    - name: "XpsConverter"
-      href: xpsconverter.md
-    - name: "IoSpy and IoAttack"
-# Auto-expanded node
-      items: 
-      - name: "IoSpy and IoAttack"
-        href: iospy-and-ioattack.md
-      - name: "IoSpy"
-        href: iospy.md
-      - name: "IoAttack"
-        href: ioattack.md
-      - name: "How to Perform Fuzz Tests with IoSpy and IoAttack"
-        href: how-to-perform-fuzz-tests-with-iospy-and-ioattack.md
-    - name: "Driver Coverage Toolkit"
-# Auto-expanded node
-      items: 
-      - name: "Driver Coverage Toolkit"
-        href: driver-coverage-toolkit.md
-      - name: "Overview of the Driver Coverage Toolkit"
-        href: overview-of-the-driver-coverage-toolkit.md
-      - name: "Driver Coverage Filter Driver"
-        href: driver-coverage-filter-driver.md
-      - name: "How to Collect IRP Coverage Data"
-        href: how-to-collect-irp-coverage-data.md
-      - name: "How to Analyze IRP Coverage Data"
-        href: how-to-analyze-irp-coverage-data.md
-    - name: "Enhanced Storage Certificate Management Tool"
-# Auto-expanded node
-      items: 
-      - name: "Enhanced Storage Certificate Management Tool"
-        href: enhanced-storage-certificate-management-tool.md
-      - name: "Overview of the Enhanced Storage Certificate Management Tool"
-# Auto-expanded node
-        items: 
-        - name: "Overview of the Enhanced Storage Certificate Management Tool"
-          href: overview-of-the-enhanced-storage-certificate-management-tool.md
-        - name: "Importing Certificates by using the Enhanced Storage Certificate Management Tool"
-# Auto-expanded node
-          items: 
-          - name: "Importing Certificates by using the Enhanced Storage Certificate Management Tool"
-            href: importing-certificates-by-using-the-enhanced-storage-certificate-manag.md
-          - name: "Importing Certificates from a Windows Certificate Store"
-            href: importing-certificates-from-a-windows-certificate-store.md
-          - name: "Importing Certificates from a File"
-            href: importing-certificates-from-a-file.md
-          - name: "Creating Certificates for USB Storage Devices"
-            href: creating-certificates-for-usb-storage-devices.md
-      - name: "Installation of the Enhanced Storage Certificate Management Tool"
-        href: installation-of-the-enhanced-storage-certificate-management-tool.md
-      - name: "Enhanced Storage Certificate Management Tool Command Syntax"
-# Auto-expanded node
-        items: 
-        - name: "Enhanced Storage Certificate Management Tool Command Syntax"
-          href: enhanced-storage-certificate-management-tool-command-syntax.md
-        - name: "/Add Switch"
-          href: enhstor-add-switch.md
-        - name: "/Clear Switch"
-          href: -clear-switch.md
-        - name: "/Debug Switch"
-          href: -debug-switch.md
-        - name: "/Export Switch"
-          href: -export-switch.md
-        - name: "/Initialize Switch"
-          href: -initialize-switch.md
-        - name: "/List Switch"
-          href: -list-switch.md
-        - name: "/Remove Switch"
-          href: -remove-switch.md
-        - name: "/Replace Switch"
-          href: -replace-switch.md
-    - name: "JSConstraintsDebug"
-      href: jsconstraintsdebug.md
-    - name: "Bluetooth Inquiry Record Verifier"
-      href: bluetooth-inquiry-record-verifier.md
 - name: "Tools for Verifying Drivers"
 # Auto-expanded node
   items: 
@@ -351,241 +9,38 @@
     href: tools-for-verifying-drivers.md
   - name: "Static and Dynamic Verification Tools"
     href: static-and-dynamic-verification-tools.md
-  - name: "Code Analysis for Drivers"
+  - name: "CodeQL and the Static Tools Logo Test"
 # Auto-expanded node
     items: 
-    - name: "Code Analysis for Drivers"
-      href: code-analysis-for-drivers.md
-    - name: "Code Analysis for drivers overview"
-      href: code-analysis-for-drivers-overview.md
-    - name: "How to run Code Analysis for drivers"
-      href: how-to-run-code-analysis-for-drivers.md
-    - name: "SAL 2 annotations for Windows Drivers"
+    - name: "CodeQL and Static Tools Logo Test"
+      href: static-tools-and-codeql.md
+    - name: "Supplemental Windows Driver CodeQL Queries"
 # Auto-expanded node
       items: 
-      - name: "SAL 2 annotations for Windows Drivers"
-        href: sal-2-annotations-for-windows-drivers.md
-      - name: "IRQL annotations for drivers"
-        href: irql-annotations-for-drivers.md
-      - name: "Floating Point annotations for drivers"
-        href: floating-point-annotations-for-drivers.md
-      - name: "DO_DEVICE_INITIALIZING annotation for drivers"
-        href: do-device-initializing-annotation-for-drivers.md
-      - name: "DMA IO Misue _Kernel_IoGetDmaAdapter_ annotation for drivers"
-        href: -kernel-iogetdmaadapter--annotation-for-drivers.md
-      - name: "Driver annotations for interlocked operands"
-        href: driver-annotations-for-interlocked-operands.md
-      - name: "File System Minifilter _Flt_CompletionContext_Outptr_ annotation"
-        href: -flt-completioncontext-outptr--annotation.md
-    - name: "Code Analysis for Drivers Warnings"
-# Auto-expanded node
-      items: 
-      - name: "Code Analysis for Drivers Warnings"
-        href: prefast-for-drivers-warnings.md
-      - name: "C28101"
-        href: 28101-wrong-function-type.md
-      - name: "C28110"
-        href: 28110-floating-point-hardware-protect.md
-      - name: "C28111"
-        href: 28111-floating-point-irql-mismatch.md
-      - name: "C28114"
-        href: 28114-improper-irp-stack-copy.md
-      - name: "C28118"
-        href: 28118-irq-exceeds-caller.md
-      - name: "C28120"
-        href: 28120-irql-execution-too-low.md
-      - name: "C28121"
-        href: 28121-irq-execution-too-high.md
-      - name: "C28122"
-        href: 28122-inconsistent-irq-level-calls-low.md
-      - name: "C28123"
-        href: 28123-inconsistent-irq-level-calls-high.md
-      - name: "C28124"
-        href: 28124-call-below-minimum-irq-level.md
-      - name: "C28126"
-        href: 28126-accessmode-param-incorrect.md
-      - name: "C28127"
-        href: 28127-function-routine-mismatch.md
-      - name: "C28128"
-        href: 28128-structure-member-directly-accessed.md
-      - name: "C28129"
-        href: 28129-assignment-made-to-operand.md
-      - name: "C28131"
-        href: 28131-driverentry-saving-pointer-to-buffer.md
-      - name: "C28132"
-        href: 28132-driver-taking-the-size-of-pointer.md
-      - name: "C28133"
-        href: 28133-ioinitializetimer-is-best-called-from-add-device.md
-      - name: "C28134"
-        href: 28134-pool-tag-type-should-be-integral.md
-      - name: "C28135"
-        href: 28135-first-argument-to-kewaitforsingleobject.md
-      - name: "C28139"
-        href: 28139-argument-operand-should-exactly-match.md
-      - name: "C28141"
-        href: 28141-argument-lowers-irq-level.md
-      - name: "C28143"
-        href: 28143-iomarkirppending-must-return-statuspending.md
-      - name: "C28144"
-        href: 28144-cancelirql-should-be-current-irql.md
-      - name: "C28145"
-        href: 28145-opaque-mdl-structure-should-not-be-modified.md
-      - name: "C28146"
-        href: 28146-kernel-mode-drivers-should-use-ntstrsafe.md
-      - name: "C28147"
-        href: 28147-improper-use-of-default-pool-tag.md
-      - name: "C28150"
-        href: 28150-function-causes-irq-level-to-be-set-above-max.md
-      - name: "C28151"
-        href: 28151-illegal-irql-value.md
-      - name: "C28152"
-        href: 28152-do-device-initializing-flag-not-cleared.md
-      - name: "C28153"
-        href: 28153-irql-annotation-eval-context.md
-      - name: "C28156"
-        href: 28156-irql-inconsistent-with-required-irq-value.md
-      - name: "C28157"
-        href: 28157-function-irql-never-restored.md
-      - name: "C28158"
-        href: 28158-no-irql-was-saved.md
-      - name: "C28161"
-        href: 28161-exiting-without-right-to-use-floating-hardware.md
-      - name: "C28162"
-        href: 28162-exiting-while-holding-right-to-use-floating-hardware.md
-      - name: "C28165"
-        href: 28165-class-function-pointer-mismatch.md
-      - name: "C28166"
-        href: 28166-function-does-not-restore-irql-value.md
-      - name: "C28167"
-        href: 28167-function-changes-irql-without-restore.md
-      - name: "C28168"
-        href: 28168-dispatch-function-dispatch-annotation.md
-      - name: "C28169"
-        href: 28169-dispatch-function-does-not-have-proper-annotation.md
-      - name: "C28170"
-        href: 28170-pageable-code-macro-not-found.md
-      - name: "C28171"
-        href: 28171-function-has-more-than-one-page-macro-instance.md
-      - name: "C28172"
-        href: 28172-function-macros-not-in-paged-segment.md
-      - name: "C28173"
-        href: 28173-function-incorrectly-adapts-to-memory-above-4gb.md
-      - name: "C28175"
-        href: 28175struct-member-should-not-be-accessed-by-driver.md
-      - name: "C28176"
-        href: 28176-struct-member-should-not-be-modified-by-driver.md
-      - name: "C28177"
-        href: 28177-function-annotated-with-more-than-one-class.md
-      - name: "C28260"
-        href: 28260-syntax-error-in-function-property.md
-      - name: "C28266"
-        href: 28266-function-property-syntax-error.md
-      - name: "C28268"
-        href: 28268-function-class-does-not-match-typedef.md
-      - name: "C28601"
-        href: 28601-avoid-blocking-on-hwnd-broadcast.md
-      - name: "C28602"
-        href: 28602-avoid-calling-sendmessagetimeout-with-hwnd-broadcast.md
-      - name: "C28604"
-        href: 28604-smto-abortifhung-with-0-timeout-.md
-      - name: "C28615"
-        href: 28615-must-call-resetstkoflw-in-except-block.md
-      - name: "C28616"
-        href: 28616-multithreaded-av-condition.md
-      - name: "C28617"
-        href: 28617-avoid-using-the-return-value-of-beginthread.md
-      - name: "C28623"
-        href: 28623-unsigned-cast-of-getmessagepos-coordinates.md
-      - name: "C28624"
-        href: 28624-no-release-call-to-match-incremented-refcount.md
-      - name: "C28625"
-        href: 28625-sensitive-data-may-be-retained.md
-      - name: "C28636"
-        href: 28636-calling-localfree-on-non-allocated-pointer.md
-      - name: "C28637"
-        href: 28637-calling-function-in-a-global-initializer-is-unsafe.md
-      - name: "C28638"
-        href: 28638-function-delayload-stub-is-missing-declaration-.md
-      - name: "C28639"
-        href: 28639-calling-close-handle-with-string.md
-      - name: "C28640"
-        href: 28640-delayload-function-stub-should-be-a-static-function.md
-      - name: "C28644"
-        href: 28644-return-value-from-dpa-insertptr-not-checked.md
-      - name: "C28645"
-        href: 28645-messagebox-called-using-the-question-mark-symbol.md
-      - name: "C28648"
-        href: 28648-pulseevent-is-an-unreliable-function.md
-      - name: "C28649"
-        href: 28649-automatic-or-global-stack-arrays-are-never-null.md
-      - name: "C28650"
-        href: 28650-generic-value-is-not-treated-as-failure.md
-      - name: "C28651"
-        href: 28651-member-function-pointers-cause-write-pages-copy.md
-      - name: "C28652"
-        href: 28652-overloaded-bitwise-operators-cause-write-pages-copy.md
-      - name: "C28714"
-        href: 28714-ntstatus-cast-between-semantically-different-integer-types.md
-      - name: "C28715"
-        href: 28715-boolean-cast-between-semantically-different-integer-types.md
-      - name: "C28716"
-        href: 28716-compiler-inserted-cast-between-semantically-different-integral.md
-      - name: "C28717"
-        href: 28717-invalid-variant-type.md
-      - name: "C28718"
-        href: 28718-unannotated-buffer.md
-      - name: "C28719"
-        href: 28719-banned-api-usage-use-updated-function-replacement.md
-      - name: "C28720"
-        href: 28720-banned-api-usage-use-updated-function-replacement.md
-      - name: "C28721"
-        href: 28721-deprecated-performance-counter-architecture.md
-      - name: "C28722"
-        href: 28722-unannotated-function-declaration-buffer.md
-      - name: "C28723"
-        href: 28723-unannotated-buffer-without-declaration.md
-      - name: "C28725"
-        href: 28725-use-watson-instead.md
-      - name: "C28726"
-        href: 28726-banned-api-usage-use-updated-function-replacement.md
-      - name: "C28727"
-        href: 28727-banned-api-usage-use-updated-function-replacement.md
-      - name: "C28728"
-        href: 28728-banned-api-usage-use-updated-function-replacement.md
-      - name: "C28730"
-        href: 28730-possible-null-character-assignment.md
-      - name: "C28735"
-        href: 28735-banned-crimson-api-usage.md
-      - name: "C28736"
-        href: 28736-legacy-crimson-or-perflib-banned-argument-used.md
-      - name: "C28740"
-        href: 28740-unannotated-unsigned-buffer.md
-      - name: "C28741"
-        href: 28741-unannotated-non-constant-string-buffer-in-function.md
-      - name: "C28742"
-        href: 28742-unnanotated-non-constant-buffer-in-function.md
-      - name: "C28750"
-        href: 28750-banned-istrlen-usage.md
-      - name: "C28751"
-        href: 28751-banned-exallocatepool-usage.md
-      - name: "C28752"
-        href: 28752-banned-kernel32-advapi32-usage.md
-      - name: "C28753"
-        href: 28753-relying-on-undefined-order-of-evalutation-params.md
-      - name: "C30029"
-        href: 30029-memory-allocating-function-requests-executable-memory.md
-      - name: "C30030"
-        href: 30030-parameter-indicates-executable-memory.md
-      - name: "C30031"
-        href: 30031-pool-n-optin-called-before-entry-function.md
-      - name: "C30032"
-        href: 30032-forcing-request-of-executable-memory.md
-      - name: "C30033"
-        href: 30033-executable-allocation-detected-with-pool-nx-optin.md
-      - name: "C30034"
-        href: 30034-passing-flag-value-to-allocating-function.md
-      - name: "C30035"
-        href: 30035-function-call-must-be-made-inside-init-function.md
+      - name: "Supplemental Windows Driver CodeQL Queries"
+        href: codeql-windows-driver-rules.md
+      - name: "Probable UseAfterFree (Windows Driver CodeQL Query)"
+        href: codeql-windows-driver-probableuseafterfree.md
+      - name: "UseAfterFree (Windows Driver CodeQL Query)"
+        href: codeql-windows-driver-useafterfree.md
+      - name: "WdkDeprecatedApi (Windows Driver CodeQL Query)"
+        href: codeql-windows-driver-wdkdeprecatedapi.md
+      - name: "PaddingByteInformationDisclosure (Windows Driver CodeQL Query)"
+        href: codeql-windows-driver-padding-byte-information-disclosure.md
+      - name: "BadOverflowGuard (Windows Driver CodeQL Query)"
+        href: codeql-windows-driver-badoverflowguard.md
+      - name: "InfiniteLoop (Windows Driver CodeQL Query)"
+        href: codeql-windows-driver-infiniteloop.md 
+      - name: "UninitializedPtrField (Windows Driver CodeQL Query)"
+        href: codeql-windows-driver-uninitializedptrfield.md
+      - name: "BadOverflowGuard (Windows Driver CodeQL Query)"
+        href: codeql-windows-driver-badoverflowguard.md 
+      - name: "HardcodedIVCNG (Windows Driver CodeQL Query)"
+        href: codeql-windows-driver-hardcodedivcng.md
+      - name: "KeSetEventPageable (Windows Driver CodeQL Query)"
+        href: codeql-windows-driver-keseteventpageable.md
+      - name: "RoleTypeCorrectlyUsed (Windows Driver CodeQL Query)"
+        href: codeql-windows-driver-roletypecorrectlyused.md 
   - name: "Driver Verifier"
 # Auto-expanded node
     items: 
@@ -704,203 +159,6 @@
         href: debugging-ddi-compliance-bugs----driver-verifier-detected-violation--c4---0x000200--.md
       - name: "Debugging NDIS/WiFi time-out errors - DRIVER_VERIFIER_DETECTED_VIOLATION (C4)"
         href: debugging-ndis-wifi-timeouts---driver-verifier-detected-violation--c4---0x92003--etc-.md
-  - name: "Static Driver Verifier"
-# Auto-expanded node
-    items: 
-    - name: "Static Driver Verifier"
-      href: static-driver-verifier.md
-    - name: "Using Static Driver Verifier to Find Defects in Windows Drivers"
-      href: using-static-driver-verifier-to-find-defects-in-drivers.md
-    - name: "Static Driver Verifier commands (MSBuild)"
-      href: -static-driver-verifier-commands--msbuild-.md
-    - name: "Introducing Static Driver Verifier"
-      href: introducing-static-driver-verifier.md
-# Auto-expanded node
-      items: 
-      - name: "Introducing Static Driver Verifier"
-        href: introducing-static-driver-verifier.md
-      - name: "Understanding Static Driver Verifier"
-        href: understanding-static-driver-verifier.md
-      - name: "Static Driver Verifier Concepts"
-# Auto-expanded node
-        items: 
-        - name: "Static Driver Verifier Concepts"
-          href: static-driver-verifier-concepts.md
-        - name: "Static Driver Verifier Rule"
-          href: static-driver-verifier-rule.md
-        - name: "Operating System Model"
-          href: operating-system-model.md
-        - name: "Verification Engine"
-          href: verification-engine.md
-        - name: "Verification Process"
-          href: verification-process.md
-        - name: "Passing and Failing a Verification"
-          href: passing-and-failing-a-verification.md
-        - name: "Library Processing in Static Driver Verifier"
-# Auto-expanded node
-          items: 
-          - name: "Library Processing in Static Driver Verifier"
-            href: library-processing-in-static-driver-verifier.md
-          - name: "Processing a Library"
-            href: processing-a-library.md
-          - name: "Reprocessing a Library"
-            href: reprocessing-a-library.md
-      - name: "Supported Drivers"
-        href: supported-drivers.md
-      - name: "Static Driver Verifier Limitations"
-# Auto-expanded node
-        items: 
-        - name: "Static Driver Verifier Limitations"
-          href: static-driver-verifier-limitations.md
-        - name: "Determining if Static Driver Verifier supports your driver or library"
-          href: determining-if-static-driver-verifier-supports-your-driver-or-library.md
-        - name: "Static Driver Verifier General Tool and Technical Limitations"
-          href: static-driver-verifier-general-tool-and-technical-limitations.md
-        - name: "Using the _analysis_assume Function to Suppress False Defects"
-          href: using-the--analysis-assume-function-to-suppress-false-defects.md
-        - name: "Using __sdv_save_request and __sdv_retrieve_request for Deferred Procedure Calls"
-          href: using---sdv-save-request-and---sdv-retrieve-request-for-deferred-proce.md
-        - name: "Using __sdv_save_adapter_context to Track Adapter Context Fields"
-          href: using---sdv-save-adapter-context-to-track-adapter-context-fields.md
-    - name: "Using Static Driver Verifier"
-# Auto-expanded node
-      items: 
-      - name: "Using Static Driver Verifier"
-        href: using-static-driver-verifier.md
-      - name: "Using Function Role Type Declarations"
-# Auto-expanded node
-        items: 
-        - name: "Using Function Role Type Declarations"
-          href: using-function-role-type-declarations.md
-        - name: "Declaring Functions by Using Function Role Types for KMDF Drivers"
-          href: declaring-functions-by-using-function-role-types-for-kmdf-drivers.md
-        - name: "Declaring Functions Using Function Role Types for WDM Drivers"
-          href: declaring-functions-using-function-role-types-for-wdm-drivers.md
-        - name: "Declaring Functions by Using Function Role Types for NDIS Drivers"
-          href: declaring-functions-by-using-function-role-types-for-ndis-drivers.md
-        - name: "Declaring Functions by Using Function Role Types for Storport Drivers"
-          href: declaring-functions-by-using-function-role-types-for-storport-drivers.md
-      - name: "Scanning the Driver"
-        href: scanning-the-driver.md
-      - name: "Interpreting Static Driver Verifier Results"
-        href: interpreting-static-driver-verifier-results.md
-      - name: "Using the Static Driver Verifier Report"
-        href: using-the-static-driver-verifier-report.md
-      - name: "Recommendations for Troubleshooting Static Driver Verifier"
-        href: recommendations-for-troubleshooting-static-driver-verifier.md
-      - name: "Using SDV and the Sample Drivers"
-        href: using-sdv-and-the-sample-drivers.md
-    - name: "Static Driver Verifier Report"
-# Auto-expanded node
-      items: 
-      - name: "Static Driver Verifier Report"
-        href: static-driver-verifier-report.md
-      - name: "Trace Viewer"
-# Auto-expanded node
-        items: 
-        - name: "Trace Viewer"
-          href: defect-viewer.md
-        - name: "Understanding the Trace Viewer"
-          href: understanding-the-defect-viewer.md
-        - name: "Opening and Closing the Trace Viewer"
-          href: opening-and-closing-the-defect-viewer.md
-        - name: "Resizing the Defect Viewer Windows"
-          href: resizing-the-defect-viewer-windows.md
-        - name: "Changing the Text Size in the Defect Viewer"
-          href: changing-the-text-size-in-the-defect-viewer.md
-      - name: "Static Driver Verifier Report Panes"
-# Auto-expanded node
-        items: 
-        - name: "Static Driver Verifier Report Panes"
-          href: static-driver-verifier-report-panes.md
-        - name: "Trace Tree Pane"
-# Auto-expanded node
-          items: 
-          - name: "Trace Tree Pane"
-            href: trace-tree-pane.md
-          - name: "Understanding the Trace Tree Pane"
-            href: understanding-the-trace-tree-pane.md
-          - name: "Color Coding in the Trace Tree Pane"
-            href: color-coding-in-the-trace-tree-pane.md
-          - name: "Trace Tree Pane Actions"
-            href: trace-tree-pane-actions.md
-          - name: "Saving Defect Traces"
-            href: saving-defect-traces.md
-        - name: "Source Code Pane"
-# Auto-expanded node
-          items: 
-          - name: "Source Code Pane"
-            href: source-code-pane.md
-          - name: "Understanding the Source Code Pane"
-            href: understanding-the-source-code-pane.md
-          - name: "Using the Source Code Pane"
-            href: using-the-source-code-pane.md
-          - name: "Source Code Pane Actions"
-            href: source-code-pane-actions.md
-          - name: "Files in the Source Code Pane"
-            href: files-in-the-source-code-pane.md
-          - name: "Color Coding in the Source Code Pane"
-            href: color-coding-in-the-source-code-pane.md
-        - name: "State Pane"
-          href: state-pane.md
-    - name: "Static Driver Verifier Reference"
-# Auto-expanded node
-      items: 
-      - name: "Static Driver Verifier Reference"
-        href: static-driver-verifier-reference.md
-      - name: "Static Driver Verifier KMDF Function Declarations"
-        href: static-driver-verifier-kmdf-function-declarations.md
-      - name: "Static Driver Verifier NDIS Function Declarations"
-        href: static-driver-verifier-ndis-function-declarations.md
-      - name: "Static Driver Verifier Input Files"
-# Auto-expanded node
-        items: 
-        - name: "Static Driver Verifier Input Files"
-          href: static-driver-verifier-input-files.md
-        - name: "Static Driver Verifier Rule List File"
-          href: static-driver-verifier-rule-list-file.md
-        - name: "Static Driver Verifier Options File"
-# Auto-expanded node
-          items: 
-          - name: "Static Driver Verifier Options File"
-            href: static-driver-verifier-options-file.md
-          - name: "Global and Local Options Files"
-            href: global-and-local-options-files.md
-          - name: "Option File Fields"
-            href: option-file-fields.md
-          - name: "Option File Examples"
-            href: option-file-examples.md
-      - name: "Static Driver Verifier Output Files"
-# Auto-expanded node
-        items: 
-        - name: "Static Driver Verifier Output Files"
-          href: static-driver-verifier-output-files.md
-        - name: "Command-Line Output"
-          href: command-line-output.md
-        - name: "Sdv-map.h"
-# Auto-expanded node
-          items: 
-          - name: "Sdv-map.h"
-            href: sdv-map-h.md
-          - name: "Understanding the Sdv-map.h File"
-            href: understanding-the-sdv-map-h-file.md
-          - name: "Format of the Sdv-map.h File"
-            href: format-of-the-sdv-map-h-file.md
-          - name: "Approving the Sdv-map.h File"
-            href: approving-the-sdv-map-h-file.md
-          - name: "Duplicate Entry Points for a Function Role Type "
-            href: duplicate-entry-points-for-a-function-role-type.md
-      - name: "Static Driver Verifier Error Codes"
-        href: static-driver-verifier-error-codes.md
-      - name: "Static Driver Verifier Error Messages"
-# Auto-expanded node
-        items: 
-        - name: "Static Driver Verifier Error Messages"
-          href: static-driver-verifier-error-messages.md
-        - name: "The process cannot access the file <Path> because it is being used by another process"
-          href: the-process-cannot-access-the-file---path---because-it-is-being-used-b.md
-      - name: "Static Driver Verifier Diagnostics"
-        href: static-driver-verifier-diagnostics.md
   - name: "DDI Compliance Rules"
 # Auto-expanded node
     items: 
@@ -1973,43 +1231,443 @@
           href: storport-pagedcode.md
         - name: "StorPortStatusPending"
           href: storport-storportstatuspending.md  
-  - name: "CodeQL and the Static Tools Logo Test"
-# Auto-expanded node
-    items: 
-    - name: "CodeQL and Static Tools Logo Test"
-      href: static-tools-and-codeql.md
-    - name: "Supplemental Windows Driver CodeQL Queries"
-# Auto-expanded node
-      items: 
-      - name: "Supplemental Windows Driver CodeQL Queries"
-        href: codeql-windows-driver-rules.md
-      - name: "Probable UseAfterFree (Windows Driver CodeQL Query)"
-        href: codeql-windows-driver-probableuseafterfree.md
-      - name: "UseAfterFree (Windows Driver CodeQL Query)"
-        href: codeql-windows-driver-useafterfree.md
-      - name: "WdkDeprecatedApi (Windows Driver CodeQL Query)"
-        href: codeql-windows-driver-wdkdeprecatedapi.md
-      - name: "PaddingByteInformationDisclosure (Windows Driver CodeQL Query)"
-        href: codeql-windows-driver-padding-byte-information-disclosure.md
-      - name: "BadOverflowGuard (Windows Driver CodeQL Query)"
-        href: codeql-windows-driver-badoverflowguard.md
-      - name: "InfiniteLoop (Windows Driver CodeQL Query)"
-        href: codeql-windows-driver-infiniteloop.md 
-      - name: "UninitializedPtrField (Windows Driver CodeQL Query)"
-        href: codeql-windows-driver-uninitializedptrfield.md
-      - name: "BadOverflowGuard (Windows Driver CodeQL Query)"
-        href: codeql-windows-driver-badoverflowguard.md 
-      - name: "HardcodedIVCNG (Windows Driver CodeQL Query)"
-        href: codeql-windows-driver-hardcodedivcng.md
-      - name: "KeSetEventPageable (Windows Driver CodeQL Query)"
-        href: codeql-windows-driver-keseteventpageable.md
-      - name: "RoleTypeCorrectlyUsed (Windows Driver CodeQL Query)"
-        href: codeql-windows-driver-roletypecorrectlyused.md 
 - name: "Additional Driver Verification Tools"
 # Auto-expanded node
   items: 
   - name: "Additional Driver Verification Tools"
     href: additional-driver-verification-tools.md
+  - name: "Code Analysis for Drivers"
+# Auto-expanded node
+    items: 
+    - name: "Code Analysis for Drivers"
+      href: code-analysis-for-drivers.md
+    - name: "Code Analysis for drivers overview"
+      href: code-analysis-for-drivers-overview.md
+    - name: "How to run Code Analysis for drivers"
+      href: how-to-run-code-analysis-for-drivers.md
+    - name: "SAL 2 annotations for Windows Drivers"
+# Auto-expanded node
+      items: 
+      - name: "SAL 2 annotations for Windows Drivers"
+        href: sal-2-annotations-for-windows-drivers.md
+      - name: "IRQL annotations for drivers"
+        href: irql-annotations-for-drivers.md
+      - name: "Floating Point annotations for drivers"
+        href: floating-point-annotations-for-drivers.md
+      - name: "DO_DEVICE_INITIALIZING annotation for drivers"
+        href: do-device-initializing-annotation-for-drivers.md
+      - name: "DMA IO Misue _Kernel_IoGetDmaAdapter_ annotation for drivers"
+        href: -kernel-iogetdmaadapter--annotation-for-drivers.md
+      - name: "Driver annotations for interlocked operands"
+        href: driver-annotations-for-interlocked-operands.md
+      - name: "File System Minifilter _Flt_CompletionContext_Outptr_ annotation"
+        href: -flt-completioncontext-outptr--annotation.md
+    - name: "Code Analysis for Drivers Warnings"
+# Auto-expanded node
+      items: 
+      - name: "Code Analysis for Drivers Warnings"
+        href: prefast-for-drivers-warnings.md
+      - name: "C28101"
+        href: 28101-wrong-function-type.md
+      - name: "C28110"
+        href: 28110-floating-point-hardware-protect.md
+      - name: "C28111"
+        href: 28111-floating-point-irql-mismatch.md
+      - name: "C28114"
+        href: 28114-improper-irp-stack-copy.md
+      - name: "C28118"
+        href: 28118-irq-exceeds-caller.md
+      - name: "C28120"
+        href: 28120-irql-execution-too-low.md
+      - name: "C28121"
+        href: 28121-irq-execution-too-high.md
+      - name: "C28122"
+        href: 28122-inconsistent-irq-level-calls-low.md
+      - name: "C28123"
+        href: 28123-inconsistent-irq-level-calls-high.md
+      - name: "C28124"
+        href: 28124-call-below-minimum-irq-level.md
+      - name: "C28126"
+        href: 28126-accessmode-param-incorrect.md
+      - name: "C28127"
+        href: 28127-function-routine-mismatch.md
+      - name: "C28128"
+        href: 28128-structure-member-directly-accessed.md
+      - name: "C28129"
+        href: 28129-assignment-made-to-operand.md
+      - name: "C28131"
+        href: 28131-driverentry-saving-pointer-to-buffer.md
+      - name: "C28132"
+        href: 28132-driver-taking-the-size-of-pointer.md
+      - name: "C28133"
+        href: 28133-ioinitializetimer-is-best-called-from-add-device.md
+      - name: "C28134"
+        href: 28134-pool-tag-type-should-be-integral.md
+      - name: "C28135"
+        href: 28135-first-argument-to-kewaitforsingleobject.md
+      - name: "C28139"
+        href: 28139-argument-operand-should-exactly-match.md
+      - name: "C28141"
+        href: 28141-argument-lowers-irq-level.md
+      - name: "C28143"
+        href: 28143-iomarkirppending-must-return-statuspending.md
+      - name: "C28144"
+        href: 28144-cancelirql-should-be-current-irql.md
+      - name: "C28145"
+        href: 28145-opaque-mdl-structure-should-not-be-modified.md
+      - name: "C28146"
+        href: 28146-kernel-mode-drivers-should-use-ntstrsafe.md
+      - name: "C28147"
+        href: 28147-improper-use-of-default-pool-tag.md
+      - name: "C28150"
+        href: 28150-function-causes-irq-level-to-be-set-above-max.md
+      - name: "C28151"
+        href: 28151-illegal-irql-value.md
+      - name: "C28152"
+        href: 28152-do-device-initializing-flag-not-cleared.md
+      - name: "C28153"
+        href: 28153-irql-annotation-eval-context.md
+      - name: "C28156"
+        href: 28156-irql-inconsistent-with-required-irq-value.md
+      - name: "C28157"
+        href: 28157-function-irql-never-restored.md
+      - name: "C28158"
+        href: 28158-no-irql-was-saved.md
+      - name: "C28161"
+        href: 28161-exiting-without-right-to-use-floating-hardware.md
+      - name: "C28162"
+        href: 28162-exiting-while-holding-right-to-use-floating-hardware.md
+      - name: "C28165"
+        href: 28165-class-function-pointer-mismatch.md
+      - name: "C28166"
+        href: 28166-function-does-not-restore-irql-value.md
+      - name: "C28167"
+        href: 28167-function-changes-irql-without-restore.md
+      - name: "C28168"
+        href: 28168-dispatch-function-dispatch-annotation.md
+      - name: "C28169"
+        href: 28169-dispatch-function-does-not-have-proper-annotation.md
+      - name: "C28170"
+        href: 28170-pageable-code-macro-not-found.md
+      - name: "C28171"
+        href: 28171-function-has-more-than-one-page-macro-instance.md
+      - name: "C28172"
+        href: 28172-function-macros-not-in-paged-segment.md
+      - name: "C28173"
+        href: 28173-function-incorrectly-adapts-to-memory-above-4gb.md
+      - name: "C28175"
+        href: 28175struct-member-should-not-be-accessed-by-driver.md
+      - name: "C28176"
+        href: 28176-struct-member-should-not-be-modified-by-driver.md
+      - name: "C28177"
+        href: 28177-function-annotated-with-more-than-one-class.md
+      - name: "C28260"
+        href: 28260-syntax-error-in-function-property.md
+      - name: "C28266"
+        href: 28266-function-property-syntax-error.md
+      - name: "C28268"
+        href: 28268-function-class-does-not-match-typedef.md
+      - name: "C28601"
+        href: 28601-avoid-blocking-on-hwnd-broadcast.md
+      - name: "C28602"
+        href: 28602-avoid-calling-sendmessagetimeout-with-hwnd-broadcast.md
+      - name: "C28604"
+        href: 28604-smto-abortifhung-with-0-timeout-.md
+      - name: "C28615"
+        href: 28615-must-call-resetstkoflw-in-except-block.md
+      - name: "C28616"
+        href: 28616-multithreaded-av-condition.md
+      - name: "C28617"
+        href: 28617-avoid-using-the-return-value-of-beginthread.md
+      - name: "C28623"
+        href: 28623-unsigned-cast-of-getmessagepos-coordinates.md
+      - name: "C28624"
+        href: 28624-no-release-call-to-match-incremented-refcount.md
+      - name: "C28625"
+        href: 28625-sensitive-data-may-be-retained.md
+      - name: "C28636"
+        href: 28636-calling-localfree-on-non-allocated-pointer.md
+      - name: "C28637"
+        href: 28637-calling-function-in-a-global-initializer-is-unsafe.md
+      - name: "C28638"
+        href: 28638-function-delayload-stub-is-missing-declaration-.md
+      - name: "C28639"
+        href: 28639-calling-close-handle-with-string.md
+      - name: "C28640"
+        href: 28640-delayload-function-stub-should-be-a-static-function.md
+      - name: "C28644"
+        href: 28644-return-value-from-dpa-insertptr-not-checked.md
+      - name: "C28645"
+        href: 28645-messagebox-called-using-the-question-mark-symbol.md
+      - name: "C28648"
+        href: 28648-pulseevent-is-an-unreliable-function.md
+      - name: "C28649"
+        href: 28649-automatic-or-global-stack-arrays-are-never-null.md
+      - name: "C28650"
+        href: 28650-generic-value-is-not-treated-as-failure.md
+      - name: "C28651"
+        href: 28651-member-function-pointers-cause-write-pages-copy.md
+      - name: "C28652"
+        href: 28652-overloaded-bitwise-operators-cause-write-pages-copy.md
+      - name: "C28714"
+        href: 28714-ntstatus-cast-between-semantically-different-integer-types.md
+      - name: "C28715"
+        href: 28715-boolean-cast-between-semantically-different-integer-types.md
+      - name: "C28716"
+        href: 28716-compiler-inserted-cast-between-semantically-different-integral.md
+      - name: "C28717"
+        href: 28717-invalid-variant-type.md
+      - name: "C28718"
+        href: 28718-unannotated-buffer.md
+      - name: "C28719"
+        href: 28719-banned-api-usage-use-updated-function-replacement.md
+      - name: "C28720"
+        href: 28720-banned-api-usage-use-updated-function-replacement.md
+      - name: "C28721"
+        href: 28721-deprecated-performance-counter-architecture.md
+      - name: "C28722"
+        href: 28722-unannotated-function-declaration-buffer.md
+      - name: "C28723"
+        href: 28723-unannotated-buffer-without-declaration.md
+      - name: "C28725"
+        href: 28725-use-watson-instead.md
+      - name: "C28726"
+        href: 28726-banned-api-usage-use-updated-function-replacement.md
+      - name: "C28727"
+        href: 28727-banned-api-usage-use-updated-function-replacement.md
+      - name: "C28728"
+        href: 28728-banned-api-usage-use-updated-function-replacement.md
+      - name: "C28730"
+        href: 28730-possible-null-character-assignment.md
+      - name: "C28735"
+        href: 28735-banned-crimson-api-usage.md
+      - name: "C28736"
+        href: 28736-legacy-crimson-or-perflib-banned-argument-used.md
+      - name: "C28740"
+        href: 28740-unannotated-unsigned-buffer.md
+      - name: "C28741"
+        href: 28741-unannotated-non-constant-string-buffer-in-function.md
+      - name: "C28742"
+        href: 28742-unnanotated-non-constant-buffer-in-function.md
+      - name: "C28750"
+        href: 28750-banned-istrlen-usage.md
+      - name: "C28751"
+        href: 28751-banned-exallocatepool-usage.md
+      - name: "C28752"
+        href: 28752-banned-kernel32-advapi32-usage.md
+      - name: "C28753"
+        href: 28753-relying-on-undefined-order-of-evalutation-params.md
+      - name: "C30029"
+        href: 30029-memory-allocating-function-requests-executable-memory.md
+      - name: "C30030"
+        href: 30030-parameter-indicates-executable-memory.md
+      - name: "C30031"
+        href: 30031-pool-n-optin-called-before-entry-function.md
+      - name: "C30032"
+        href: 30032-forcing-request-of-executable-memory.md
+      - name: "C30033"
+        href: 30033-executable-allocation-detected-with-pool-nx-optin.md
+      - name: "C30034"
+        href: 30034-passing-flag-value-to-allocating-function.md
+      - name: "C30035"
+        href: 30035-function-call-must-be-made-inside-init-function.md
+  - name: "Static Driver Verifier"
+# Auto-expanded node
+    items: 
+    - name: "Static Driver Verifier"
+      href: static-driver-verifier.md
+    - name: "Using Static Driver Verifier to Find Defects in Windows Drivers"
+      href: using-static-driver-verifier-to-find-defects-in-drivers.md
+    - name: "Static Driver Verifier commands (MSBuild)"
+      href: -static-driver-verifier-commands--msbuild-.md
+    - name: "Introducing Static Driver Verifier"
+      href: introducing-static-driver-verifier.md
+# Auto-expanded node
+      items: 
+      - name: "Introducing Static Driver Verifier"
+        href: introducing-static-driver-verifier.md
+      - name: "Understanding Static Driver Verifier"
+        href: understanding-static-driver-verifier.md
+      - name: "Static Driver Verifier Concepts"
+# Auto-expanded node
+        items: 
+        - name: "Static Driver Verifier Concepts"
+          href: static-driver-verifier-concepts.md
+        - name: "Static Driver Verifier Rule"
+          href: static-driver-verifier-rule.md
+        - name: "Operating System Model"
+          href: operating-system-model.md
+        - name: "Verification Engine"
+          href: verification-engine.md
+        - name: "Verification Process"
+          href: verification-process.md
+        - name: "Passing and Failing a Verification"
+          href: passing-and-failing-a-verification.md
+        - name: "Library Processing in Static Driver Verifier"
+# Auto-expanded node
+          items: 
+          - name: "Library Processing in Static Driver Verifier"
+            href: library-processing-in-static-driver-verifier.md
+          - name: "Processing a Library"
+            href: processing-a-library.md
+          - name: "Reprocessing a Library"
+            href: reprocessing-a-library.md
+      - name: "Supported Drivers"
+        href: supported-drivers.md
+      - name: "Static Driver Verifier Limitations"
+# Auto-expanded node
+        items: 
+        - name: "Static Driver Verifier Limitations"
+          href: static-driver-verifier-limitations.md
+        - name: "Determining if Static Driver Verifier supports your driver or library"
+          href: determining-if-static-driver-verifier-supports-your-driver-or-library.md
+        - name: "Static Driver Verifier General Tool and Technical Limitations"
+          href: static-driver-verifier-general-tool-and-technical-limitations.md
+        - name: "Using the _analysis_assume Function to Suppress False Defects"
+          href: using-the--analysis-assume-function-to-suppress-false-defects.md
+        - name: "Using __sdv_save_request and __sdv_retrieve_request for Deferred Procedure Calls"
+          href: using---sdv-save-request-and---sdv-retrieve-request-for-deferred-proce.md
+        - name: "Using __sdv_save_adapter_context to Track Adapter Context Fields"
+          href: using---sdv-save-adapter-context-to-track-adapter-context-fields.md
+    - name: "Using Static Driver Verifier"
+# Auto-expanded node
+      items: 
+      - name: "Using Static Driver Verifier"
+        href: using-static-driver-verifier.md
+      - name: "Using Function Role Type Declarations"
+# Auto-expanded node
+        items: 
+        - name: "Using Function Role Type Declarations"
+          href: using-function-role-type-declarations.md
+        - name: "Declaring Functions by Using Function Role Types for KMDF Drivers"
+          href: declaring-functions-by-using-function-role-types-for-kmdf-drivers.md
+        - name: "Declaring Functions Using Function Role Types for WDM Drivers"
+          href: declaring-functions-using-function-role-types-for-wdm-drivers.md
+        - name: "Declaring Functions by Using Function Role Types for NDIS Drivers"
+          href: declaring-functions-by-using-function-role-types-for-ndis-drivers.md
+        - name: "Declaring Functions by Using Function Role Types for Storport Drivers"
+          href: declaring-functions-by-using-function-role-types-for-storport-drivers.md
+      - name: "Scanning the Driver"
+        href: scanning-the-driver.md
+      - name: "Interpreting Static Driver Verifier Results"
+        href: interpreting-static-driver-verifier-results.md
+      - name: "Using the Static Driver Verifier Report"
+        href: using-the-static-driver-verifier-report.md
+      - name: "Recommendations for Troubleshooting Static Driver Verifier"
+        href: recommendations-for-troubleshooting-static-driver-verifier.md
+      - name: "Using SDV and the Sample Drivers"
+        href: using-sdv-and-the-sample-drivers.md
+    - name: "Static Driver Verifier Report"
+# Auto-expanded node
+      items: 
+      - name: "Static Driver Verifier Report"
+        href: static-driver-verifier-report.md
+      - name: "Trace Viewer"
+# Auto-expanded node
+        items: 
+        - name: "Trace Viewer"
+          href: defect-viewer.md
+        - name: "Understanding the Trace Viewer"
+          href: understanding-the-defect-viewer.md
+        - name: "Opening and Closing the Trace Viewer"
+          href: opening-and-closing-the-defect-viewer.md
+        - name: "Resizing the Defect Viewer Windows"
+          href: resizing-the-defect-viewer-windows.md
+        - name: "Changing the Text Size in the Defect Viewer"
+          href: changing-the-text-size-in-the-defect-viewer.md
+      - name: "Static Driver Verifier Report Panes"
+# Auto-expanded node
+        items: 
+        - name: "Static Driver Verifier Report Panes"
+          href: static-driver-verifier-report-panes.md
+        - name: "Trace Tree Pane"
+# Auto-expanded node
+          items: 
+          - name: "Trace Tree Pane"
+            href: trace-tree-pane.md
+          - name: "Understanding the Trace Tree Pane"
+            href: understanding-the-trace-tree-pane.md
+          - name: "Color Coding in the Trace Tree Pane"
+            href: color-coding-in-the-trace-tree-pane.md
+          - name: "Trace Tree Pane Actions"
+            href: trace-tree-pane-actions.md
+          - name: "Saving Defect Traces"
+            href: saving-defect-traces.md
+        - name: "Source Code Pane"
+# Auto-expanded node
+          items: 
+          - name: "Source Code Pane"
+            href: source-code-pane.md
+          - name: "Understanding the Source Code Pane"
+            href: understanding-the-source-code-pane.md
+          - name: "Using the Source Code Pane"
+            href: using-the-source-code-pane.md
+          - name: "Source Code Pane Actions"
+            href: source-code-pane-actions.md
+          - name: "Files in the Source Code Pane"
+            href: files-in-the-source-code-pane.md
+          - name: "Color Coding in the Source Code Pane"
+            href: color-coding-in-the-source-code-pane.md
+        - name: "State Pane"
+          href: state-pane.md
+    - name: "Static Driver Verifier Reference"
+# Auto-expanded node
+      items: 
+      - name: "Static Driver Verifier Reference"
+        href: static-driver-verifier-reference.md
+      - name: "Static Driver Verifier KMDF Function Declarations"
+        href: static-driver-verifier-kmdf-function-declarations.md
+      - name: "Static Driver Verifier NDIS Function Declarations"
+        href: static-driver-verifier-ndis-function-declarations.md
+      - name: "Static Driver Verifier Input Files"
+# Auto-expanded node
+        items: 
+        - name: "Static Driver Verifier Input Files"
+          href: static-driver-verifier-input-files.md
+        - name: "Static Driver Verifier Rule List File"
+          href: static-driver-verifier-rule-list-file.md
+        - name: "Static Driver Verifier Options File"
+# Auto-expanded node
+          items: 
+          - name: "Static Driver Verifier Options File"
+            href: static-driver-verifier-options-file.md
+          - name: "Global and Local Options Files"
+            href: global-and-local-options-files.md
+          - name: "Option File Fields"
+            href: option-file-fields.md
+          - name: "Option File Examples"
+            href: option-file-examples.md
+      - name: "Static Driver Verifier Output Files"
+# Auto-expanded node
+        items: 
+        - name: "Static Driver Verifier Output Files"
+          href: static-driver-verifier-output-files.md
+        - name: "Command-Line Output"
+          href: command-line-output.md
+        - name: "Sdv-map.h"
+# Auto-expanded node
+          items: 
+          - name: "Sdv-map.h"
+            href: sdv-map-h.md
+          - name: "Understanding the Sdv-map.h File"
+            href: understanding-the-sdv-map-h-file.md
+          - name: "Format of the Sdv-map.h File"
+            href: format-of-the-sdv-map-h-file.md
+          - name: "Approving the Sdv-map.h File"
+            href: approving-the-sdv-map-h-file.md
+          - name: "Duplicate Entry Points for a Function Role Type "
+            href: duplicate-entry-points-for-a-function-role-type.md
+      - name: "Static Driver Verifier Error Codes"
+        href: static-driver-verifier-error-codes.md
+      - name: "Static Driver Verifier Error Messages"
+# Auto-expanded node
+        items: 
+        - name: "Static Driver Verifier Error Messages"
+          href: static-driver-verifier-error-messages.md
+        - name: "The process cannot access the file <Path> because it is being used by another process"
+          href: the-process-cannot-access-the-file---path---because-it-is-being-used-b.md
+      - name: "Static Driver Verifier Diagnostics"
+        href: static-driver-verifier-diagnostics.md
   - name: "Application Verifier"
     href: application-verifier.md
 # Auto-expanded node
@@ -2089,43 +1747,272 @@
       href: wdf-driver-call-tracer--wdfcalltracer-.md
     - name: "KMDF Functions that Return NSTATUS Codes"
       href: wdftester-functions-that-return-nstatus-codes.md
-  - name: "Checked Build of Windows"
-# Auto-expanded node
-    items: 
-    - name: "Checked Build of Windows"
-      href: checked-build-of-windows.md
-    - name: "Checked and Free Build Differences"
-      href: checked-and-free-build-differences.md
-    - name: "Using the Checked Build of Windows"
-# Auto-expanded node
-      items: 
-      - name: "Using the Checked Build of Windows"
-        href: using-the-checked-build.md
-      - name: "What the Checked Build Checks"
-        href: what-the-checked-build-checks.md
-      - name: "How the Checked Build Indicates a Problem"
-        href: how-the-checked-build-indicates-a-problem.md
-      - name: "Side Effects of Using the Checked Build"
-        href: side-effects-of-using-the-checked-build.md
-      - name: "The Checked Build and the Debugger"
-        href: the-checked-build-and-the-debugger.md
-      - name: "The Checked Build and Driver Verifier"
-        href: the-checked-build-and-driver-verifier.md
-    - name: "Installing the Checked Build of Windows"
-# Auto-expanded node
-      items: 
-      - name: "Installing the Checked Build of Windows"
-        href: installing-the-checked-build.md
-      - name: "Installing the Complete Checked Build"
-        href: installing-the-complete-checked-build.md
-      - name: "Installing Just the Checked Operating System and HAL (For Windows Vista and Later)"
-        href: installing-just-the-checked-operating-system-and-hal--for-windows-vist.md
-      - name: "Installing Just the Checked Operating System and HAL (For Windows XP and Windows Server 2003)"
-        href: installing-just-the-checked-operating-system-and-hal--for-windows-xp-a.md
-    - name: "Checked Build Breakpoints and Messages"
-      href: checked-build-breakpoints-and-messages.md
-    - name: "Checked Build ASSERTs"
-      href: checked-build-asserts.md
+- name: Tools for Testing Drivers
+  items:
+    - name: Tools for Testing Drivers
+      href: tools-for-testing-drivers.md
+    - name: Device Fundamentals Tests
+      items:
+        - name: Device Fundamentals Tests
+          href: device-fundamentals-tests.md
+        - name: How to run the DevFund Tests via the command-line
+          href: run-devfund-tests-via-the-command-line.md
+        - name: CHAOS Tests (Device Fundamentals)
+          href: chaos-tests--device-fundamentals-.md
+        - name: Coverage Tests (Device Fundamentals)
+          href: coverage-tests--device-fundamentals-.md
+        - name: CPUStress Tests (Device Fundamentals)
+          href: cpustress-tests--device-fundamentals-.md
+        - name: DriverInstall Tests (Device Fundamentals)
+          href: driverinstall-tests--device-fundamentals-.md
+        - name: I/O Tests (Device Fundamentals)
+          href: i-o-tests--device-fundamentals-.md
+        - name: Penetration Tests (Device Fundamentals)
+          href: penetration-tests--device-fundamentals-.md
+        - name: PnP Tests (Device Fundamentals)
+          href: pnp-tests--device-fundamentals-.md
+        - name: Reboot Tests (Device Fundamentals)
+          href: reboot-tests--device-fundamentals-.md
+        - name: Sleep Tests (Device Fundamentals)
+          href: sleep-tests--device-fundamentals-.md
+        - name: Data-Driven System Fundamentals Tests
+          items:
+            - name: Data-Driven System Fundamentals Tests
+              href: data-driven-system-fundamentals-tests.md
+            - name: Configure the Machine for Testing
+              href: configure-the-machine-for-testing.md
+            - name: Run the Tests
+              href: run-the-tests.md
+            - name: PairTool
+              items:
+                - name: PairTool
+                  href: pairtool.md
+                - name: PairTool command syntax
+                  href: pairtool-command-syntax.md
+                - name: PairTool examples
+                  href: pairtool-examples.md
+            - name: PnPUtil
+              items: null
+        - name: PnPUtil
+          href: pnputil.md
+        - name: PnPUtil Command Syntax
+          href: pnputil-command-syntax.md
+        - name: PnPUtil Examples
+          href: pnputil-examples.md
+        - name: PnPUtil Return Values
+          href: pnputil-return-values.md
+    - name: DevGen
+      items:
+        - name: DevGen
+          href: devgen.md
+        - name: DevGen Command Syntax
+          href: devgen-command-syntax.md
+        - name: DevGen Examples
+          href: devgen-examples.md
+    - name: Windows Device Console (Devcon.exe)
+      items:
+        - name: Windows Device Console (Devcon.exe)
+          href: devcon.md
+        - name: Replacing Device Console
+          href: devcon-migration.md
+        - name: Device Console Examples
+          href: devcon-examples.md
+    - name: Device Console Commands
+      items:
+        - name: Device Console (DevCon.exe) Commands
+          href: devcon-general-commands.md
+        - name: DevCon Classes
+          href: devcon-classes.md
+        - name: DevCon ClassFilter
+          href: devcon-classfilter.md
+        - name: DevCon Disable
+          href: devcon-disable.md
+        - name: DevCon Dp_add
+          href: devcon-dp-add.md
+        - name: DevCon Dp_delete
+          href: devcon-dp-delete.md
+        - name: DevCon Dp_enum
+          href: devcon-dp-enum.md
+        - name: DevCon DriverFiles
+          href: devcon-driverfiles.md
+        - name: DevCon DriverNodes
+          href: devcon-drivernodes.md
+        - name: DevCon Enable
+          href: devcon-enable.md
+        - name: DevCon Find
+          href: devcon-find.md
+        - name: DevCon FindAll
+          href: devcon-findall.md
+        - name: DevCon HwIDs
+          href: devcon-hwids.md
+        - name: DevCon Install
+          href: devcon-install.md
+        - name: DevCon ListClass
+          href: devcon-listclass.md
+        - name: DevCon Reboot
+          href: devcon-reboot.md
+        - name: DevCon Remove
+          href: devcon-remove.md
+        - name: DevCon Rescan
+          href: devcon-rescan.md
+        - name: DevCon Resources
+          href: devcon-resources.md
+        - name: DevCon Restart
+          href: devcon-restart.md
+        - name: DevCon SetHwID
+          href: devcon-sethwid.md
+        - name: DevCon Stack
+          href: devcon-stack.md
+        - name: DevCon Status
+          href: devcon-status.md
+        - name: DevCon Update
+          href: devcon-update.md
+        - name: DevCon UpdateNI
+          href: devcon-updateni.md
+    - name: Additional Test Tools
+      items:
+        - name: Additional Test Tools
+          href: null
+        - name: PoolMon
+          items:
+            - name: PoolMon
+              href: poolmon.md
+            - name: PoolMon Overview
+              href: poolmon-overview.md
+            - name: PoolMon Requirements
+              href: poolmon-requirements.md
+            - name: PoolMon Commands
+              items:
+                - name: PoolMon Commands
+                  href: poolmon-commands.md
+                - name: PoolMon Startup Command
+                  href: poolmon-startup-command.md
+                - name: PoolMon Run-time Commands
+                  href: poolmon-run-time-commands.md
+                - name: PoolMon Display
+                  href: poolmon-display.md
+                - name: PoolMon Examples
+                  href: poolmon-examples.md
+            - name: PwrTest
+              items:
+                - name: PwrTest
+                  href: pwrtest.md
+                - name: PwrTest Syntax
+                  href: pwrtest-syntax.md
+            - name: PwrTest Log File
+              items:
+                - name: PwrTest Log File
+                  href: pwrtest-log-file.md
+                - name: PwrTest Scenarios
+                  href: pwrtest-scenarios.md
+                - name: PwrTest Battery Scenario
+                  href: pwrtest-battery-scenario.md
+                - name: PwrTest Connected Standby Scenario
+                  href: pwrtest-connected-standby--cs--scenario.md
+                - name: PwrTest Device Scenario
+                  href: pwrtest-device-scenario.md
+                - name: PwrTest DirectedFx Scenario
+                  href: pwrtest-directedfx-scenario.md
+                - name: PwrTest Disk Scenario
+                  href: pwrtest-disk-scenario.md
+                - name: PwrTest Execution State Scenario
+                  href: pwrtest-execution-state-scenario.md
+                - name: PwrTest Idle Scenario
+                  href: pwrtest-idle-scenario.md
+                - name: PwrTest Info Scenario
+                  href: pwrtest-info-scenario.md
+                - name: PwrTest Monitor Scenario
+                  href: pwrtest-monitor-scenario.md
+                - name: PwrTest Platform Idle Scenario
+                  href: pwrtest-platform-idle---platidle--scenario.md
+                - name: PwrTest PPM Scenario
+                  href: pwrtest-ppm-scenario.md
+                - name: PwrTest ProcessIdle Scenario
+                  href: pwrtest-processidle-scenario.md
+                - name: PwrTest Requests Scenario
+                  href: pwrtest-requests-scenario.md
+                - name: PwrTest Sleep Scenario
+                  href: pwrtest-sleep-scenario.md
+                - name: PwrTest Thermal Scenario
+                  href: pwrtest-thermal-scenario.md
+                - name: PwrTest Timer Scenario
+                  href: pwrtest-timer-scenario.md
+                - name: PNPCPU
+                  items: null
+            - name: PNPCPU
+              href: pnpcpu.md
+            - name: PNPCPU Overview
+              href: pnpcpu-overview.md
+            - name: PNPCPU General Commands
+              href: pnpcpu-general-commands.md
+            - name: PNPCPU Typical Session
+              href: pnpcpu-typical-session.md
+            - name: PNPCPU General Notes
+              href: pnpcpu-general-notes.md
+            - name: PNPCPU Limitations
+              href: pnpcpu-limitations.md
+            - name: WSDAPI Basic Interoperability Tool
+              items: null
+            - name: WSDAPI Basic Interoperability Tool
+              href: wsdapi-basic-interoperability-tool.md
+            - name: Introduction to WSDBIT
+              href: introduction-to-wsdbit.md
+            - name: Referenced Namespaces
+              href: referenced-namespaces.md
+            - name: WSDBIT Testing Environment
+              href: wsdbit-testing-environment.md
+            - name: Client Scenarios for WSDBIT
+              items:
+                - name: Client Scenarios for WSDBIT
+                  href: client-scenarios-for-wsdbit.md
+                - name: Device and Service Inspection Scenarios
+                  href: device-and-service-inspection-scenarios.md
+                - name: Device Control Scenarios
+                  href: device-control-scenarios.md
+                - name: Attachments Scenarios
+                  href: attachments-scenarios.md
+                - name: Eventing Scenarios
+                  href: eventing-scenarios.md
+                - name: Secure Communication Scenarios
+                  href: secure-communication-scenarios.md
+            - name: WSDBIT Reference
+              items:
+                - name: WSDBIT Reference
+                  href: wsdbit-reference.md
+                - name: Sample Metadata Response Output
+                  href: sample-metadata-response-output.md
+                - name: SimpleService WSDL
+                  href: simpleservice-wsdl.md
+                - name: AttachmentService WSDL
+                  href: attachmentservice-wsdl.md
+                - name: EventingService WSDL
+                  href: eventingservice-wsdl.md
+                - name: XpsAnalyzer
+                  items: null
+            - name: XpsAnalyzer
+              href: xpsanalyzer.md
+            - name: XpsAnalyzer Command Syntax
+              href: xpsanalyzer-command-syntax.md
+            - name: XpsAnalyzer Rules
+              href: xpsanalyzer-rules.md
+            - name: XpsAnalyzer Output
+              href: xpsanalyzer-output.md
+            - name: XpsConverter
+              href: xpsconverter.md
+            - name: IoSpy and IoAttack
+              items: null
+            - name: IoSpy and IoAttack
+              href: iospy-and-ioattack.md
+            - name: IoSpy
+              href: iospy.md
+            - name: IoAttack
+              href: ioattack.md
+            - name: How to Perform Fuzz Tests with IoSpy and IoAttack
+              href: how-to-perform-fuzz-tests-with-iospy-and-ioattack.md
+            - name: JSConstraintsDebug
+              href: jsconstraintsdebug.md
+            - name: Bluetooth Inquiry Record Verifier
+              href: bluetooth-inquiry-record-verifier.md
 - name: "Tools for Software Tracing"
 # Auto-expanded node
   items: 
@@ -2756,15 +2643,8 @@
           href: binplace-examples.md
         - name: "Using BinPlace from the Command Line"
           href: using-binplace-from-the-command-line.md
-    - name: "Nmake2MsBuild"
-# Auto-expanded node
-      items: 
-      - name: "Nmake2MsBuild"
-        href: nmake2msbuild.md
-      - name: "Converting a WDK sources file to a Visual Studio project"
-        href: converting-a-wdk-sources-file-to-a-visual-studio-project.md
-    - name: "ProjectUpgradeTool"
-      href: projectupgradetool.md
+  - name: "ProjectUpgradeTool"
+    href: projectupgradetool.md
   - name: "Tools for Signing Drivers"
 # Auto-expanded node
     items: 
@@ -2926,27 +2806,6 @@
             href: identifying-backup-files-for-deleted-boot-entries.md
           - name: "Recognizing Unusable Boot Entry Backup Files"
             href: recognizing-unusable-boot-entry-backup-files.md
-  - name: "Tools for Debugging Drivers"
-# Auto-expanded node
-    items: 
-    - name: "Tools for Debugging Drivers"
-      href: tools-for-debugging-drivers.md
-    - name: "Using Debugging Code in a Driver"
-# Auto-expanded node
-      items: 
-      - name: "Using Debugging Code in a Driver"
-        href: using-debugging-code-in-a-driver.md
-      - name: "Debugging Code Overview"
-# Auto-expanded node
-        items: 
-        - name: "Debugging Code Overview"
-          href: debugging-code-overview.md
-        - name: "Conditional Compilation and the Build Environment"
-          href: conditional-compilation-and-the-build-environment.md
-      - name: "Interpreting a Bug Check Code"
-        href: interpreting-a-bug-check-code.md
-    - name: "Using a Debugger"
-      href: using-a-debugger.md
   - name: "Tools for Device Metadata Packages"
 # Auto-expanded node
     items: 

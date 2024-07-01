@@ -27,15 +27,11 @@ This section includes:
 
 [Static and Dynamic Verification Tools](static-and-dynamic-verification-tools.md)
 
-[Code Analysis for Drivers](code-analysis-for-drivers.md)
+[CodeQL and the Static Tools Logo Test](static-tools-and-codeql.md)
 
 [Driver Verifier](driver-verifier.md)
 
-[Static Driver Verifier](static-driver-verifier.md)
-
 [DDI Compliance Rules](./static-driver-verifier-rules.md)
-
-[CodeQL and the Static Tools Logo Test](static-tools-and-codeql.md)
 
 ## Other tools
 

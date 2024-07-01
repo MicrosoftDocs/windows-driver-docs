@@ -17,7 +17,7 @@ keywords:
 - GUIDGen WDK
 - GUID Generator WDK
 - GUIDGen.exe WDK
-ms.date: 03/19/2024
+ms.date: 06/25/2024
 ---
 
 # Index of Windows Driver Kit Tools
@@ -103,12 +103,10 @@ The information in the following tables describes the tools that are useful for 
 |ChkINF</br>**WDK tool:** Deprecated|Previous path:</br>%WindowsSdkDir%\tools\x86\Chkinf|ChkInf has been deprecated. Instead, use [InfVerif](infverif.md).</br>WDK Documentation:</br>[InfVerif](infverif.md)|
 |Computer Hardware Identification Tool (ComputerHardwareIds.exe)</br>**WDK tool:** Yes|**Windows Driver Kit (WDK) 8:**</br>%WindowsSdkDir%\tools\x64\ComputerHardwareIds.exe</br>%WindowsSdkDir%\tools\x86\ComputerHardwareIds.exe</br>WDKPath\tools\Other\ia64\ComputerHardwareIds.exe</br>**Windows Driver Kit (WDK) 8.1:**</br>%WindowsSdkDir%\bin\x64\ComputerHardwareIds.exe</br>%WindowsSdkDir%\bin\x86\ComputerHardwareIds.exe</br>%WindowsSdkDir%\bin\arm\ComputerHardwareIds.exe|Derives the computer hardware IDs from SMBIOS information.</br>WDK Documentation:</br>[ComputerHardwareIds](computerhardwareids.md)|
 |DC2WMIParser (DC2WMIParser.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\tools\x64\DC2WMIParser.exe</br>%WindowsSdkDir%\tools\x86\DC2WMIParser.exe|DC2WMIParser is a tool that collects the WMI IRP records created by Driver Verifier and converts this log to a text file.</br>Documentation:</br>[IRP Logging](./irp-logging.md)|
-|Dependency Walker (Depends.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\tools\x64\depends.exe</br>%WindowsSdkDir%\tools\x86\depends.exe|Displays the dependence patterns of the modules that are required by an application in a tree diagram. The display includes numerous details, including the functions exported by each module, the functions actually called by other modules, and the minimum set of files that are required for a module to load and run.</br>In the tool, from the **Dependency Walker** Help menu, select **Help Topics**.|
 |DevCon (Devcon.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\tools\x64\devcon.exe</br>%WindowsSdkDir%\tools\x86\devcon.exe|A command-line version of Device Manager. DevCon enables, disables, installs, configures, and removes devices on the local computer and displays detailed information about devices on local computers.</br>WDK Documentation:</br>[DevCon](devcon.md)|
 |Drivers (Drivers.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\tools\x64\drivers.exe</br>%WindowsSdkDir%\tools\x86\drivers.exe|Displays a list of all drivers that are installed on the computer.</br>WDK Documentation:</br>None|
 |Driver Verifier (Verifier.exe)</br>**WDK tool:** No|%Windir%\system32\verifier.exe|Monitors kernel-mode drivers and graphics drivers to detect illegal function calls or actions that might corrupt the system. It can subject the drivers to a variety of stresses and tests to find improper behavior.</br>WDK Documentation:</br>[Driver Verifier](driver-verifier.md)|
 |Driver Verification Log (DVL)</br>**WDK tool:** Yes|Requires Microsoft Visual Studio and the WDK. From the **Driver** menu, select **Create Driver Verification Log....**|The [Static Tools Logo Test](/windows-hardware/test/hlk/testref/6ab6df93-423c-4af6-ad48-8ea1049155ae) requires a Driver Verification Log (DVL) for all applicable driver submissions. The DVL contains a summary of the results from the analysis tools, such as CodeQL, Code Analysis and Static Driver Verifier. See [CodeQL and the Static Tools Logo Test](./static-tools-and-codeql.md) and [Creating a Driver Verification Log](../develop/creating-a-driver-verification-log.md).|
-|Enhanced Storage Certificate Management Tool (EhStorCertMgrCmd.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\tools\x64\ehstorcertmgrcmd.exe</br>%WindowsSdkDir%\tools\x86\ehstorcertmgrcmd.exe|Manages certificates on USB storage devices that are compliant with the IEEE 1667 standard.</br>WDK Documentation:</br>[Enhanced Storage Certificate Management Tool](enhanced-storage-certificate-management-tool.md)|
 |Inf2Cat (Inf2cat.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\bin\x64\inf2cat.exe</br>%WindowsSdkDir%\bin\x86\inf2cat.exe|Determines whether a [driver package's](../install/driver-packages.md) INF file can be digitally-signed for a specified list of Windows versions, and, if so, generates the unsigned [catalog files](../install/catalog-files.md) that apply to the specified Windows versions.</br>WDK Documentation:</br>[Inf2Cat](inf2cat.md)|
 |InfVerif (InfVerif.exe)</br>**WDK tool:** Yes|c:\Program Files(x86)\Windows Kits\10\tools\arm\infverif.exe</br>c:\Program Files(x86)\Windows Kits\10\tools\arm64\infverif.exe</br>c:\Program Files(x86)\Windows Kits\10\tools\x86\infverif.exe</br>c:\Program Files(x86)\Windows Kits\10\tools\x64\infverif.exe|Tests a driver INF file. In addition to reporting INF syntax problems, the tool reports if the INF file is universal.</br>WDK Documentation:</br>[InfVerif](infverif.md)|
 |MakeCat (MakeCat.exe)</br>**WDK tool:** Yes|WDKPath\bin\amd64\MakeCat.exe</br>WDKPath\bin\ia64\MakeCat.exe</br>WDKPath\bin\x86\MakeCat.exe|Creates a [catalog file](../install/catalog-files.md) for a [driver package](../install/driver-packages.md).</br>WDK Documentation:</br>[MakeCat](makecat.md)|
@@ -136,16 +134,3 @@ The information in the following tables describes the tools that are useful for 
 |WsdCodeGen (Wsdcodegen.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\bin\x64\wsdcodegen.exe</br>%WindowsSdkDir%\bin\x86\wsdcodegen.exe|Automatically generates proxies and stubs based on a Web Services contract. Primarily, you can use this tool to create client applications. However, you can use it for testing or for creating user-mode drivers.</br>Verifies that the classes, properties, methods and events specified in a binary MOF file (.bmf) are valid for WMI use. Generates MOF support files.</br>Windows SDK:</br>See the [Web Services on Devices](/windows/win32/wsdapi/wsd-portal) section|
 |WSDDebug_client and WSDDebug_host</br>**WDK tool:** Yes|**Debug Client:**</br>%WindowsSdkDir%\bin\x64\WSDDebug_client.exe</br>%WindowsSdkDir%\bin\x86\WSDDebug_client.exe</br>**Debug Host:**</br>%WindowsSdkDir%\bin\x64\WSDDebug_host.exe</br>
 %WindowsSdkDir%\bin\x86\WSDDebug_host.exe|These tools are a soft device and client that you can use to troubleshoot devices or applications.</br>Windows SDK:</br>[Web Services on Devices](/windows/win32/wsdapi/wsd-portal) section|
-
-### Supported platforms
-
-You can run the Windows 10 WDK on Windows 7 and later, and use it to develop drivers for these operating systems:
-
-RUNTIME REQUIREMENTS
-
-|Client OS|Server OS|
-|----|----|
-|Windows 10|Windows Server 2019, Windows Server 2016|
-|Windows 8.1|Windows Server 2012 R2|
-|Windows 8|Windows Server 2012|
-|Windows 7|Windows Server 2008 R2 SP1|

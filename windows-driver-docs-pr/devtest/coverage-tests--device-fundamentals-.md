@@ -6,10 +6,9 @@ ms.date: 04/20/2017
 
 # Coverage Tests (Device Fundamentals)
 
-
 The Device Fundamental Coverage tests monitor and report on the various I/O request packets (IRPs) that enter or leave a driver stack for specified devices. The data from the Coverage tests can help identify coverage weaknesses during driver test and verification.
 
-### <span id="coverage_tests"></span><span id="COVERAGE_TESTS"></span>Coverage tests
+## Coverage tests
 
 <table>
 <colgroup>
@@ -65,12 +64,11 @@ The Device Fundamental Coverage tests monitor and report on the various I/O requ
 
  
 
-### <span id="About_the_Coverage_tests"></span><span id="about_the_coverage_tests"></span><span id="ABOUT_THE_COVERAGE_TESTS"></span>About the Coverage tests
+### About the Coverage tests
 
-The Device Fundamentals coverage tests are based upon the Driver Coverage Toolkit, which was previously available as stand-alone tool in the WDK. For information about how the coverage tests are implemented, see [Driver Coverage Toolkit](driver-coverage-toolkit.md).
+The Device Fundamentals coverage tests are based upon the Driver Coverage Toolkit, which was previously available as stand-alone tool in the WDK.
 
-## <span id="related_topics"></span>Related topics
-
+## Related topics
 
 [How to How to test a driver at runtime using Visual Studio](/windows-hardware/drivers)
 
