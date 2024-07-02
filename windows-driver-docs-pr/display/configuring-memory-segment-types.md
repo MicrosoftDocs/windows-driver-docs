@@ -4,30 +4,25 @@ description: Configuring Memory Segment Types
 keywords:
 - memory segments WDK display , configuring
 - memory segments WDK display , types
-ms.date: 04/20/2017
+ms.date: 07/01/2024
 ---
 
 # Configuring Memory Segment Types
 
+The video memory manager (*VidMm*) and display hardware only support certain types of memory segments. The kernel-mode display miniport driver (KMD) can therefore only configure segments of those types.
 
-## <span id="ddk_configuring_memory_segment_types_gg"></span><span id="DDK_CONFIGURING_MEMORY_SEGMENT_TYPES_GG"></span>
+The KMD can configure memory-space segments and aperture-space segments, which are different in that:
 
+* A memory-space segment consists of a medium that holds the bits of an allocation.
 
-The video memory manager and display hardware only support certain types of memory segments, so the display miniport driver can only configure segments of those types. The display miniport driver can configure memory-space and aperture-space segments, which are different in that a memory-space segment consists of a medium that holds the bits of an allocation while an aperture-space segment is a virtual address space. When a range in a memory-space segment is allocated, actual memory is allocated. When a range in an aperture-space segment is allocated, the virtual address space is redirected to physical pages that are allocated independently from either a video memory pool or system memory.
+* An aperture-space segment is a virtual address space.
 
-The display miniport driver can configure the following types of memory segments:
+When a range in a memory-space segment is allocated, actual memory is allocated. When a range in an aperture-space segment is allocated, the virtual address space is redirected to physical pages that are allocated independently from either a video memory pool or system memory.
 
--   [Linear Memory-Space Segments](linear-memory-space-segments.md)
+The KMD can configure the following types of memory segments:
 
--   [Linear Aperture-Space Segments](linear-aperture-space-segments.md)
+* [Linear Memory-Space Segments](linear-memory-space-segments.md)
 
--   [AGP-Type Aperture-Space Segments](agp-type-aperture-space-segments.md)
+* [Linear Aperture-Space Segments](linear-aperture-space-segments.md)
 
- 
-
- 
-
-
-
-
-
+* [AGP-Type Aperture-Space Segments](agp-type-aperture-space-segments.md)
