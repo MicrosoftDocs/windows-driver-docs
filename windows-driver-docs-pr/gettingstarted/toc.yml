@@ -19,10 +19,6 @@
     href: writing-a-kmdf-driver-based-on-a-template.md
 - name: "From Sample Code to Production Driver"
   href: from-sample-code-to-production-driver.md
-- name: "Windows compatible hardware development boards"
-  href: windows-compatible-hardware-development-boards.md
-- name: "Sharks Cove hardware development board"
-  href: sharks-cove-hardware-development-board.md
 - name: "Provision a  computer for driver deployment and testing (WDK 10)"
   href: provision-a-target-computer-wdk-8-1.md
 - name: "Concepts for all driver developers"

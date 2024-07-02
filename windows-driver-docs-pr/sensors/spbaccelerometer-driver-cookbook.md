@@ -1,7 +1,7 @@
 ---
 title: SpbAccelerometer Driver Cookbook
 description: SpbAccelerometer driver cookbook
-ms.date: 01/11/2024
+ms.date: 06/28/2024
 ---
 
 # SpbAccelerometer driver cookbook
@@ -13,7 +13,7 @@ This guide shows you how to get started using a sample diver that was developed 
 >[!NOTE]
 > To evaluate the sensor driver sample for Windows 10 and later operating systems, see [Sensors sample driver](https://github.com/Microsoft/Windows-driver-samples/tree/main/sensors). For information about how to develop and build a sensor driver for Windows 10 and later operating systems, see [Write and deploy your universal sensor driver](write-and-deploy-your-universal-sensor-driver.md).
 
-You'll start by installing Windows on your Sharks Cove board. They you'll configure the accelerometer and attach it to the Sharks Cove board. Next, you'll install Microsoft Visual Studio Express and the Windows Driver Kit (WDK). Then, you'll install the sample driver. Once you've completed these tasks, you can start exploring the sample driver.
+You'll start by installing Windows on your development board. They you'll configure the accelerometer and attach it to the development board. Next, you'll install Microsoft Visual Studio Express and the Windows Driver Kit (WDK). Then, you'll install the sample driver. Once you've completed these tasks, you can start exploring the sample driver.
 
 ### Required hardware
 
@@ -26,6 +26,9 @@ Before you get started, make sure you have the following hardware:
 - USB mouse
 - USB network adapter
 - Monitor and HDMI cable (and possibly adapters)
+
+> [!WARNING]
+> The Sharks Cove hardware development board is no longer supported. For a list of currently supported boards, see [SoCs and custom boards](/windows/iot-core/learn-about-hardware/socsandcustomboards).
 
 ### Document conventions
 

@@ -1,19 +1,21 @@
 ---
 title: Install the Sample Device and Driver on Your Sharks Cove Board
 description: Follow these steps to install the sample driver and attach an ADXL345 accelerometer to the J1C1 header on your Sharks Cove board.
-ms.date: 01/11/2024
+ms.date: 06/28/2024
 ---
 
-# Install the sample device and driver on your Sharks Cove board
+# Install the sample device and driver on your development board
 
 Follow these steps to install the sample driver and attach an ADXL345 accelerometer to the J1C1 header on your Sharks Cove board.
 
 > [!WARNING]
 > The Sharks Cove hardware development board is no longer supported. For a list of currently supported boards, see [SoCs and custom boards](/windows/iot-core/learn-about-hardware/socsandcustomboards).
 
-## Install Windows on the Sharks Cove board
+## Install Windows on the development board
 
-For information about how to get a Sharks Cove board and how to install Windows on the board, see [Sharks Cove hardware development board](../gettingstarted/sharks-cove-hardware-development-board.md) and SharksCove.org.
+For one example of how to install Windows on a dev board, see [Sharks Cove hardware development board](/previous-versions/windows/hardware/devtest/devboards/sharks-cove-hardware-development-board).
+
+Note that the process will be different for other development boards.
 
 ## Modify the ADXL345 to work with the Sharks Cove
 
@@ -35,7 +37,7 @@ Attach the ADXL345 pins to the J1C1 header pins as shown here:
 
 A driver development environment has two computers: the *host computer* and the *target computer*. The target computer is also called the *test computer*. You develop and build your driver in Microsoft Visual Studio on the host computer. The debugger runs on the host computer and is available in the Visual Studio user interface. When you test and debug a driver, the driver runs on the target computer. In this case, the Sharks Cove board is the target computer.
 
-On your host computer, install kits and tools as described in [Sharks Cove hardware development board](../gettingstarted/sharks-cove-hardware-development-board.md).
+On your host computer, install kits and tools as described in [Sharks Cove hardware development board](/previous-versions/windows/hardware/devtest/devboards/sharks-cove-hardware-development-board).
 
 ## Download and extract the SpbAccelerometer sample
 

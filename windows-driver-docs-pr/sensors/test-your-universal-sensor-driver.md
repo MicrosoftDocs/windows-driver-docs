@@ -1,7 +1,7 @@
 ---
 title: Test Your Universal Sensor Driver
 description: This topic provides suggestions for how to test your universal sensor driver.
-ms.date: 01/11/2024
+ms.date: 06/28/2024
 ---
 
 # Test your universal sensor driver
@@ -10,7 +10,7 @@ This topic provides suggestions for how to test your universal sensor driver.
 
 ## Sensor driver-specific testing
 
-After you successfully [connect your sensor to the Sharks Cove board](connect-your-sensor-to-the-sharks-cove-board.md), and you [write and deploy your universal sensor driver](write-and-deploy-your-universal-sensor-driver.md), you can use the following tool for testing/debugging the universal sensor driver.
+After you successfully [connect your sensor to the development board](connect-your-sensor-to-the-sharks-cove-board.md), and you [write and deploy your universal sensor driver](write-and-deploy-your-universal-sensor-driver.md), you can use the following tool for testing/debugging the universal sensor driver.
 
 - **MALT (Microsoft Ambient Light Tool)**
 
@@ -22,7 +22,7 @@ After you successfully [connect your sensor to the Sharks Cove board](connect-yo
 
 - **The sensor diagnostic tool**
 
-    If you simply want to monitor data retrieval, event handling, report intervals etc., then install this tool on Sharks Cove to monitor these sensor values. The sensor diagnostic tool ships with the Windows driver kit (WDK) and can be found in the following folder: *&lt;Kit root&gt;\\Tools\\&lt;architecture&gt;\\sensordiagnostictool.exe*.
+    If you simply want to monitor data retrieval, event handling, report intervals etc., then install this tool on development board to monitor these sensor values. The sensor diagnostic tool ships with the Windows driver kit (WDK) and can be found in the following folder: *&lt;Kit root&gt;\\Tools\\&lt;architecture&gt;\\sensordiagnostictool.exe*.
 
     For example, if your driver development computer is an x64-based machine, and you installed the WDK to the default location, then you will find the sensor diagnostic tool in the following folder:
 

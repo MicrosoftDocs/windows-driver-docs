@@ -1,12 +1,15 @@
 ---
 title: Connect Your Sensor to the Sharks Cove Board
 description: This topic provides guidance on how to connect your sensor test board to the Sharks Cove board.
-ms.date: 01/11/2024
+ms.date: 06/28/2024
 ---
 
 # Connect your sensor to the Sharks Cove board
 
 This topic provides guidance on how to connect your sensor test board to the Sharks Cove board.
+
+> [!WARNING]
+> The Sharks Cove hardware development board is no longer supported. For a list of currently supported boards, see [SoCs and custom boards](/windows/iot-core/learn-about-hardware/socsandcustomboards).
 
 In the ADXL345 accelerometer scenario, and after making any necessary modifications, you would end up with the accelerometer test board connected to Sharks Cove as shown in the following diagram.
 

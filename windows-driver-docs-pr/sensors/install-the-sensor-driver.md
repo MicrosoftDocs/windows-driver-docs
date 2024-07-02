@@ -10,6 +10,9 @@ This topic shows you how to install the sensor driver on a development board, af
 
 This topic uses the Sharks Cove development board and an ADXL345 accelerometer as a case study, to help explain the process of installing a sensor driver on a development board. So if you want to perform the tasks presented in this topic, you must first install an operating system on the Sharks Cove. For more information about how to do that, see [Download kits and tools for Windows 10](/windows-hardware/get-started/adk-install), and follow the instructions to install Windows 10.
 
+> [!WARNING]
+> The Sharks Cove hardware development board is no longer supported. For a list of currently supported boards, see [SoCs and custom boards](/windows/iot-core/learn-about-hardware/socsandcustomboards).
+
 After you finish installing the operating system on the Sharks Cove, See [Build the sensor driver](build-the-sensor-driver.md) to learn how to build a driver in Microsoft Visual Studio. Then return here to continue.
 
 The accelerometer is attached to the Sharks Cove via the I2C bus. Peripherals that are connected to the I2C bus are enumerated via the Advanced Configuration and Power Interface (ACPI). So the sample driver for the accelerometer was developed to support ACPI instead of Plug and Play.

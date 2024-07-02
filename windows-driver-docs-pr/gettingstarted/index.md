@@ -17,8 +17,6 @@ You should already be familiar with the [C programming language](/cpp/c-language
 -   [Do you need to write a driver?](do-you-need-to-write-a-driver-.md)
 -   [Choosing a driver model](choosing-a-driver-model.md)
 -   [Write your first driver](writing-your-first-driver.md)
--   [Windows compatible hardware development boards](windows-compatible-hardware-development-boards.md)
--   [Sharks Cove hardware development board](sharks-cove-hardware-development-board.md)
 -   [Provision a computer for driver deployment and testing (WDK 10)](provision-a-target-computer-wdk-8-1.md)
 -   [Concepts for all driver developers](concepts-and-knowledge-for-all-driver-developers.md)
 

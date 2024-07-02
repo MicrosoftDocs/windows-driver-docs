@@ -6,13 +6,16 @@ ms.date: 01/11/2024
 
 # Prepare your sensor test board
 
-This topic shows you how to prepare your sensor test board for connection to the Sharks Cove board.
+This topic shows you how to prepare your sensor test board for connection to the development board.
 
-**Note**  This topic assumes that you're using a sensor test board (sometimes referred to as a sensor *breakout* board) that you purchased from an IHV, and that the sensor test board was not developed specifically for use with Sharks Cove.
+**Note**  This topic assumes that you're using a sensor test board (sometimes referred to as a sensor *breakout* board) that you purchased from an IHV, and that the sensor test board was not developed specifically for use with development board, such as a Sharks Cove.
 
-If you purchased your sensor test board from an IHV, and it was not developed specifically for use with Sharks Cove, it might be necessary to make some modifications to the test board. This topic shows you the kind of information that you must read to find out if you need to make modifications to your sensor test board. If you need to modify the sensor test board, then follow the guidance in this topic to prepare the test board for connection to Sharks Cove.
+> [!WARNING]
+> The Sharks Cove hardware development board is no longer supported. For a list of currently supported boards, see [SoCs and custom boards](/windows/iot-core/learn-about-hardware/socsandcustomboards).
 
-After you have chosen the sensor for which you would like to build a universal sensor driver, you must then obtain the manufacturer's data sheets for the sensor, and the technical specifications for the Sharks Cove.
+If you purchased your sensor test board from an IHV, and it was not developed specifically for use with your development board, it might be necessary to make some modifications to the test board. This topic shows you the kind of information that you must read to find out if you need to make modifications to your sensor test board. If you need to modify the sensor test board, then follow the guidance in this topic to prepare the test board for connection to the example Sharks Cove.
+
+After you have chosen the sensor for which you would like to build a universal sensor driver, you must then obtain the manufacturer's data sheets for the sensor, and the technical specifications for the development board, such as a Sharks Cove.
 
 The Sharks Cove board has a variety of headers to allow connections to external devices. A 20-pin male header, labeled J1C1 SENSOR HEADER, allows you to connect sensors to Sharks Cove. Sensors connected to J1C1, communicate with Sharks Cove using the I2C simple peripheral bus (SPB).
 
