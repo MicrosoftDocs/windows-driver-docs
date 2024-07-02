@@ -6,16 +6,14 @@ keywords:
 - segments WDK display
 - memory segments WDK display
 - address space WDK display
-ms.date: 04/20/2017
+ms.date: 07/01/2024
 ---
 
 # Handling Memory Segments
 
+A memory segment is a contiguous range of virtual addresses that is mapped to a contiguous range of physical addresses.
 
-## <span id="ddk_handling_memory_segments_gg"></span><span id="DDK_HANDLING_MEMORY_SEGMENTS_GG"></span>
-
-
-The following topics introduce memory segments and describe how they are used in the display driver model for Windows Vista:
+The following articles introduce memory segments and describe how they are used in WDDM starting in Windows Vista.
 
 [Using Memory Segments to Describe the GPU Address Space](using-memory-segments-to-describe-the-gpu-address-space.md)
 
@@ -30,12 +28,3 @@ The following topics introduce memory segments and describe how they are used in
 [Specifying Segments When Creating Allocations](specifying-segments-when-creating-allocations.md)
 
 [Reporting Graphics Memory](reporting-graphics-memory.md)
-
- 
-
- 
-
-
-
-
-
