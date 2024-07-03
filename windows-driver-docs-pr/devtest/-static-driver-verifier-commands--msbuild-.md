@@ -1,15 +1,18 @@
 ---
 title: Static Driver Verifier Commands (MSBuild)
 description: Commands used with Static Driver Verifier
-ms.date: 04/20/2017
+ms.date: 07/02/2024
 ---
 
 # Static Driver Verifier commands (MSBuild)
 
 You can run Static Driver Verifier (SDV) in a **Visual Studio Command Prompt** window, either through installing the Windows Driver Kit (WDK) or by running the Enterprise Windows Driver Kit (EWDK). Navigate to the directory where the driver's project file or the library's project file is stored. The parameters can appear in any order on the command line.
 
->[!NOTE]
->SDV is integrated into Visual Studio upon installation of the WDK and can also be run from the IDE via the "Driver" menu.
+> [!IMPORTANT]
+> SDV is no longer supported and SDV is not available in Windows 24H2 WDK or EWDK releases. It is not available in WDKs newer than build 26017, and is not included in the Windows 24H2 RTM WDK.
+> SDV can still be used by downloading the Windows 11, version 22H2 EWDK (released October 24, 2023) with Visual Studio build tools 17.1.5 from [Download the Windows Driver Kit (WDK)](../download-the-wdk.md). Only the use of the Enterprise WDK to run SDV is recommended. Using older versions of the standard WDK in conjunction with recent releases of Visual Studio is not recommended, as this will likely result in analysis failures. <br>
+> Going forward, CodeQL will be the primary static analysis tool for drivers. CodeQL provides a powerful query language that treats code as a database to be queried, making it simple to write queries for specific behaviors, patterns, and more.
+> For more information about using CodeQL, see [CodeQL and the Static Tools Logo Test](static-tools-and-codeql.md).
 
 ```command
 msbuild /t:sdv /p:Inputs="Parameters" ProjectFile /p:Configuration=configuration /p:Platform=platform
@@ -18,7 +21,7 @@ msbuild /t:sdv /p:Inputs="Parameters" ProjectFile /p:Configuration=configuration
 You must select a Release configuration (for example, **/p:Configuration="Windows 7 Release"**). For the list of supported Release Configurations, see [Building a Driver](../develop/building-a-driver.md). The Platform can be **Win32** (for x86) or **x64** (for example, **/p:Platform=Win32**).
 
 >[!NOTE]
->Be sure to check your computer's power management plan to ensure the computer will not go into a sleep state during the analysis.
+> Be sure to check your computer's power management plan to ensure the computer will not go into a sleep state during the analysis.
 
 ## Parameters
 

@@ -9,7 +9,7 @@ keywords:
 - SDV WDK
 - paths WDK SDV
 - compile-time static verification tool WDK
-ms.date: 06/14/2019
+ms.date: 07/02/2024
 ---
 
 # Static Driver Verifier
@@ -17,12 +17,14 @@ ms.date: 06/14/2019
 Static Driver Verifier (also known as "StaticDV" or "SDV") is a static verification tool that systematically analyzes the source code of Windows kernel-mode drivers. SDV is a compile time tool that is capable of discovering defects and design issues in a driver. Based on a set of interface rules and a model of the operating system, SDV determines whether the driver correctly interacts with the Windows operating system kernel.
 
 > [!IMPORTANT]
-> Windows Hardware Compatibility Program requires CodeQL for Static Tool Logo (STL) Tests on our Client and Server Operating Systems. We will continue to maintain support for SDV and CA on older products.  Partners are highly encouraged to review the CodeQL requirements for the [Static Tool Logo Test](/windows-hardware/test/hlk/testref/6ab6df93-423c-4af6-ad48-8ea1049155ae).
+> SDV is no longer supported and SDV is not available in Windows 24H2 WDK or EWDK releases. It is not available in WDKs newer than build 26017, and is not included in the Windows 24H2 RTM WDK.
+> SDV can still be used by downloading the Windows 11, version 22H2 EWDK (released October 24, 2023) with Visual Studio build tools 17.1.5 from [Download the Windows Driver Kit (WDK)](../download-the-wdk.md). Only the use of the Enterprise WDK to run SDV is recommended. Using older versions of the standard WDK in conjunction with recent releases of Visual Studio is not recommended, as this will likely result in analysis failures. <br>
+> Going forward, CodeQL will be the primary static analysis tool for drivers. CodeQL provides a powerful query language that treats code as a database to be queried, making it simple to write queries for specific behaviors, patterns, and more.
 > For more information about using CodeQL, see [CodeQL and the Static Tools Logo Test](static-tools-and-codeql.md).
 
 ## Installing Static Driver Verifier
 
-Static Driver Verifier is available as part of the [Windows Driver Kit (WDK)](../download-the-wdk.md) in both the full WDK experience and in the standalone Enterprise WDK.  In addition, the Visual C++ Redistributable Packages for Visual Studio are required for SDV to run. See the following:
+Static Driver Verifier is available as part of the Windows Driver Kit (WDK) in both the full WDK experience and in the standalone Enterprise WDK.  In addition, the Visual C++ Redistributable Packages for Visual Studio are required for SDV to run. See the following:
 
 * [Visual Studio 2019 Redistribution](/visualstudio/releases/2019/redistribution)
 * [Visual C++ Redistributable Packages for Visual Studio 2017](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads)

@@ -4,7 +4,7 @@ description: Static and Dynamic Verification Tools
 keywords:
 - dynamic verification tools WDK
 - static verification tools WDK
-ms.date: 06/26/2024
+ms.date: 07/02/2024
 ---
 
 # Static and Dynamic Verification Tools
@@ -40,6 +40,12 @@ Depending on what version of Windows you are building a driver from, other stati
 - [Static Driver Verifier](static-driver-verifier.md) (SDV) is a static verification tool that runs at compile time and verifies kernel-mode driver code written in C/C++. It is included in the WDK and can be started from Visual Studio Ultimate 2012 or from a Visual Studio Command prompt window using MSBuild.
 
   Based on a set of interface rules and a model of the operating system, Static Driver Verifier determines whether the driver properly interacts with the Windows operating system kernel. Static Driver Verifier is extremely thorough -- it explores all reachable paths in the driver source code and executes them symbolically. As such, it finds bugs that are not detected by using any other conventional method of driver testing.
+
+> [!IMPORTANT]
+> SDV is no longer supported and SDV is not available in Windows 24H2 WDK or EWDK releases. It is not available in WDKs newer than build 26017, and is not included in the Windows 24H2 RTM WDK.
+> SDV can still be used by downloading the Windows 11, version 22H2 EWDK (released October 24, 2023) with Visual Studio build tools 17.1.5 from [Download the Windows Driver Kit (WDK)](../download-the-wdk.md). Only the use of the Enterprise WDK to run SDV is recommended. Using older versions of the standard WDK in conjunction with recent releases of Visual Studio is not recommended, as this will likely result in analysis failures. <br>
+> Going forward, CodeQL will be the primary static analysis tool for drivers. CodeQL provides a powerful query language that treats code as a database to be queried, making it simple to write queries for specific behaviors, patterns, and more.
+> For more information about using CodeQL, see [CodeQL and the Static Tools Logo Test](static-tools-and-codeql.md).
 
 ## When the driver runs
 

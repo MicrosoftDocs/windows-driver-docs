@@ -6,7 +6,7 @@ keywords:
 - driver development tools WDK , verifying drivers
 - verifying drivers WDK
 - driver verification WDK
-ms.date: 02/18/2022
+ms.date: 07/02/2024
 ---
 
 # Tools for verifying drivers
@@ -35,4 +35,4 @@ This section includes:
 
 ## Other tools
 
-If you have access to other code or driver verification tools (from other sources), we encourage you to use them in addition to the tools in the WDK. Be sure to use [Code Analysis for Drivers](code-analysis-for-drivers.md), [Static Driver Verifier](static-driver-verifier.md), and [Driver Verifier](driver-verifier.md) because of their specific knowledge of Windows drivers, but every tool looks at the code in different ways and can therefore help you find and fix different types of problems.
+If you have access to other code or driver verification tools (from other sources), we encourage you to use them in addition to the tools in the WDK. Be sure to use tools such as [Driver Verifier](driver-verifier.md) because of their specific knowledge of Windows drivers, but every tool looks at the code in different ways and can therefore help you find and fix different types of problems.
