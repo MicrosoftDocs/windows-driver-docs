@@ -1,7 +1,7 @@
 ---
 title: Bluetooth Version and Profile Support in Windows 11
 description: Provides information about Bluetooth version and profile support in Windows 11
-ms.date: 01/10/2024
+ms.date: 07/08/2024
 content_well_notification: 
   - AI-contribution
 ai-usage: ai-assisted
@@ -10,7 +10,7 @@ ai-usage: ai-assisted
 # Bluetooth version and profile support in Windows 11
 
 > [!NOTE]
-> Looking for drivers for your Bluetooth audio device? See [Fix connections to Bluetooth audio devices and wireless displays](https://go.microsoft.com/fwlink/p/?LinkID=623629).
+> Looking for drivers for your Bluetooth audio device? See [Fix connections to Bluetooth audio devices and wireless displays](https://support.microsoft.com/windows/fix-connections-to-bluetooth-audio-devices-09ba2fb1-9472-9259-bd05-9306dd839f21).
 
 ## Which Bluetooth versions does Windows 11 support?
 
