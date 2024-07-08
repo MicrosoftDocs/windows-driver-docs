@@ -16,17 +16,13 @@ To create a Hyper-V Extensible Switch extension, follow these steps:
 
 1. Learn the extension architecture and programming model.
     -   Read the online documentation for NDIS-based extensions, beginning with [Hyper-V Extensible Switch](hyper-v-extensible-switch.md). Capture, filtering, and forwarding extensions use the standard NDIS filtering API. The NDIS interfaces have been enhanced to provide configuration, notifications, and identification of virtual switches and virtual machines.
-        [Hyper-V Extensible Switch Functions](/windows-hardware/drivers/ddi/_netvista/)
-        [Hyper-V Extensible Switch Enumerations](/windows-hardware/drivers/ddi/ntddndis/index)
-        [Hyper-V Extensible Switch Structures and Unions](/windows-hardware/drivers/ddi/_netvista/)
-        [Hyper-V Extensible Switch OIDs](./hyper-v-extensible-switch-oids.md)
-        [Hyper-V Extensible Switch Status Indications](./hyper-v-extensible-switch-status-indications.md)
-        [Hyper-V Extensible Switch Macros](/windows-hardware/drivers/ddi/ntddndis/)
+        - [Hyper-V Extensible Switch Functions](/windows-hardware/drivers/ddi/_netvista/)
+        - [Hyper-V Extensible Switch Enumerations](/windows-hardware/drivers/ddi/ntddndis/index)
+        - [Hyper-V Extensible Switch Structures and Unions](/windows-hardware/drivers/ddi/_netvista/)
+        - [Hyper-V Extensible Switch OIDs](./hyper-v-extensible-switch-oids.md)
+        - [Hyper-V Extensible Switch Status Indications](./hyper-v-extensible-switch-status-indications.md)
+        - [Hyper-V Extensible Switch Macros](/windows-hardware/drivers/ddi/ntddndis/)
     -   Read the online documentation for WFP-based extensions, beginning with [Using Virtual Switch Filtering](using-virtual-switch-filtering.md).
-    -   Watch the following instructional videos on extensions.  
-        -   [Hyper-V Extensible Switch, Part I—Introduction](https://channel9.msdn.com/posts/Hyper-V-Extensible-Switch-Part-I--Introduction)
-        -   [Hyper-V Extensible Switch, Part II—Understanding the Control Path](https://channel9.msdn.com/posts/Hyper-V-Extensible-Switch-Part-II--Understanding-the-Control-Path)
-        -   [Hyper-V Extensible Switch, Part III—The Ins and Outs of the Datapath for Capture and Filter Extensions](https://channel9.msdn.com/posts/Hyper-V-Extensible-Switch-Part-III--The-Ins-and-Outs-of-the-Data-Path-for-Capture-and-Filter-Extensi)
     -   There are several PowerShell commands that can be used to manage extensions. These are listed in [Managing Installed Hyper-V Extensible Switch Extensions](managing-installed-hyper-v-extensions.md).
 
 2.  Set up your development environment.
