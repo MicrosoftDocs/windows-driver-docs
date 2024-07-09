@@ -16,6 +16,7 @@ While it is expected that Windows drivers perform high privileged behavior in ke
 Examples of unsecure and dangerous behavior includes, but is not limited to, the following:
 
 - [Providing the ability to read and write to arbitrary machine specific registers (MSRs)](#providing-the-ability-to-read-and-write-msrs)
+- [Providing the ability to terminate arbitrary processes](#providing-the-ability-to-terminate-processes)
 - [Providing the ability to read and write to Port input and output](#providing-the-ability-to-read-and-write-to-port-input-and-output)
 - [Providing the ability to read and write kernel, physical, or device memory](#providing-the-ability-to-read-and-write-kernel-physical-or-device-memory)
 
@@ -114,6 +115,40 @@ Func ConstrainedWriteMSR(int dwMsrIdx)
 }
 
 ```
+
+## Providing the ability to terminate processes
+
+Extreme caution must be used when implementing functionality in your driver which allows for processes to be terminated. Protected processes and protected process light (PPL) processes, 
+like those used by anti-malware and anti-virus solutions, must not be terminated. Exposing this functionality allows for attackers to terminate security protections on the system. 
+
+If your scenario requires process termination, the following checks must be implemented to protect against arbitrary process termination:
+
+```c++
+Func ConstrainedProcessTermination(DWORD dwProcessId)
+{
+	// Function to check if a process is a Protected Process Light (PPL)
+    NTSTATUS status;
+    BOOLEAN isPPL = FALSE;
+    PEPROCESS process;
+    HANDLE hProcess;
+
+    // Open the process
+    status = PsLookupProcessByProcessId(processId, &process);
+    if (!NT_SUCCESS(status)) {
+        return FALSE;
+    }
+
+    // Check if the process is a PPL
+    if (PsIsProtectedProcess(process)) {
+        isPPL = TRUE;
+    }
+
+    // Dereference the process
+    ObDereferenceObject(process);
+    return isPPL;
+}
+```
+
 
 ## Providing the ability to read and write to Port input and output
 
