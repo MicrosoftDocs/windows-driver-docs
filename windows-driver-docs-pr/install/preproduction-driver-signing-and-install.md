@@ -69,18 +69,18 @@ Use of the EnableUefiSbTest tool is strongly recommended. Alternatively, you can
 
 1. Provision the Secure Boot test keys into the Secure Boot db and re-enable Secure Boot by running the following command in an elevated instance of PowerShell or Terminal:
 
-  ```PowerShell
-  EnableUefiSbTest.exe
-  ```
+    ```PowerShell
+    EnableUefiSbTest.exe
+    ```
 
-  >[!NOTE]
-  > EnableUefiSbTest.exe will not output/return anything after successfully running.
-  
-  Optionally, specify the `thirdparty` command to provision the Microsoft UEFI CA certificate alongside the default keys in the Secure Boot DB. This will allow trust for Microsoft UEFI CA-signed EFI executables like option ROMs and non-Windows bootloaders.
-  
-  ```PowerShell
+    >[!NOTE]
+    > EnableUefiSbTest.exe will not output/return anything after successfully running.
+
+    Optionally, specify the `thirdparty` command to provision the Microsoft UEFI CA certificate alongside the default keys in the Secure Boot DB. This will allow trust for Microsoft UEFI CA-signed EFI executables like option ROMs and non-Windows bootloaders.
+
+    ```PowerShell
     EnableUefiSbTest.exe /thirdparty
-  ```
+    ```
 
 1. For devices running Desktop-based Windows, mount the EFI partition of the system and copy over the Secure Boot policy (.p7b) file to **S:/EFI/Microsoft/Boot** by running the following command in an elevated instance of PowerShell or Terminal:
 
