@@ -15,16 +15,14 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
-ms.date: 05/31/2018
+ms.date: 07/11/2024
 ---
 
-# Repair method of the MSFT\_Volume class
+# Repair method of the MSFT_Volume class
 
-Repairs the volume.
+The **Repair** method of the **MSFT_Volume** class is a WMI method that can be used to check and repair issues on a volume.
 
 ## Syntax
-
 
 ```mof
 UInt32 Repair(
@@ -37,120 +35,59 @@ UInt32 Repair(
 );
 ```
 
-
-
 ## Parameters
 
- 
-
 *OfflineScanAndFix* \[in\]
- 
 
 Set to TRUE to perform an offline scan and fix.
 
- 
-
 *Scan* \[in\]
- 
 
 Set to TRUE to scan the volume.
 
- 
-
 *SpotFix* \[in\]
- 
 
 Set to TRUE to perform spot fixes on the volume.
 
- 
-
 *Output* \[out\]
- 
 
 The output of the repair operation.
 
- 
-
 *CreatedStorageJob* \[out\]
- 
 
 Returns a reference to the storage job object used to track the long-running operation.
 
- 
-
 *ExtendedStatus* \[out\]
- 
 
-A string that contains an embedded [**MSFT\_StorageExtendedStatus**](msft-storageextendedstatus.md) object.
+A string that contains an embedded [**MSFT_StorageExtendedStatus**](msft-storageextendedstatus.md) object.
 
 This parameter allows the storage provider to return extended (implementation-specific) error information.
 
- 
-
 ## Return value
 
- 
+**Repair** returns one of the following values:
 
-**Success** (0)
- 
-
-**Not Supported** (1)
- 
-
-**Unspecified Error** (2)
- 
-
-**Timeout** (3)
- 
-
-**Failed** (4)
- 
-
-**Invalid Parameter** (5)
- 
-
-**This command is not supported on x86 running in x64 environment.** (7)
- 
-
-**Access Denied** (40001)
- 
-
-**An unexpected I/O error has occurred** (40004)
- 
-
-**The specified file system is not supported** (43001)
- 
-
-**Cannot perform the requested operation when the drive is read only** (43006)
- 
-
-**The repair failed** (43007)
- 
-
-**The scan failed** (43008)
- 
-
-**A snapshot error occurred while scanning this drive. You can try again, but if this problem persists, run an offline scan and fix.** (43009)
- 
-
-**A scan is already running on this drive. Chkdsk can not run more than one scan on a drive at a time.** (43010)
- 
-
-**A snapshot error occurred while scanning this drive. You can try again, but if this problem persists, run an offline scan and fix.** (43011)
- 
-
-**A snapshot error occurred while scanning this drive. Run an offline scan and fix.** (43012)
- 
-
-**Cannot open drive for direct access** (43013)
- 
-
-**Cannot determine the file system of the drive** (43014)
- 
+* **Success** (0)
+* **Not Supported** (1)
+* **Unspecified Error** (2)
+* **Timeout** (3)
+* **Failed** (4)
+* **Invalid Parameter** (5)
+* **This command is not supported on x86 running in x64 environment.** (7)
+* **Access Denied** (40001)
+* **An unexpected I/O error has occurred** (40004)
+* **The specified file system is not supported** (43001)
+* **Cannot perform the requested operation when the drive is read only** (43006)
+* **The repair failed** (43007)
+* **The scan failed** (43008)
+* **A snapshot error occurred while scanning this drive. You can try again, but if this problem persists, run an offline scan and fix.** (43009)
+* **A scan is already running on this drive. Chkdsk can not run more than one scan on a drive at a time.** (43010)
+* **A snapshot error occurred while scanning this drive. You can try again, but if this problem persists, run an offline scan and fix.** (43011)
+* **A snapshot error occurred while scanning this drive. Run an offline scan and fix.** (43012)
+* **Cannot open drive for direct access** (43013)
+* **Cannot determine the file system of the drive** (43014)
 
 ## Requirements
-
-
 
 | Requirement | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
@@ -159,20 +96,6 @@ This parameter allows the storage provider to return extended (implementation-sp
 | Namespace                | Root\\Microsoft\\Windows\\Storage                                              |
 | MOF                      |  Storagewmi.mof  |
 
-
-
 ## See also
 
- 
-
 [**MSFT\_Volume**](msft-volume.md)
- 
-
- 
-
- 
-
-
-
-
-

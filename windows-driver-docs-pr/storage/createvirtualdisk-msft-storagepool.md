@@ -15,7 +15,6 @@ api_location:
 - vdssys.h
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

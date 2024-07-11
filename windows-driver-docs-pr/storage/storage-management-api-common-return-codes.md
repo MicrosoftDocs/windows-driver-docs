@@ -2,7 +2,6 @@
 title: Storage Management API Common Return Codes
 description: Storage Management API Common Return Codes
 ms.assetid: 44A9C959-EE2F-4A62-8D46-3C154F4104E1
-ms.author: windowssdkdev
 ms.topic: article
 ms.date: 05/31/2018
 topic_type: 
