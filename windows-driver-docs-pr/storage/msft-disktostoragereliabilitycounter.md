@@ -14,7 +14,6 @@ api_name:
 - MSFT_DiskToStorageReliabilityCounter.StorageReliabilityCounter
 api_type:
 - NA
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 api_location: 
 ---

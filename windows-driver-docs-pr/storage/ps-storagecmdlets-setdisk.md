@@ -6,7 +6,6 @@ keywords:
 - SetDisk method Windows Storage Management API
 - SetDisk method Windows Storage Management API , PS_StorageCmdlets class
 - PS_StorageCmdlets class Windows Storage Management API , SetDisk method
-ms.author: windowssdkdev
 ms.topic: article
 ms.date: 05/31/2018
 topic_type: 

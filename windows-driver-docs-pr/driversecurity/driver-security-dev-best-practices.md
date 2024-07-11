@@ -2,7 +2,6 @@
 title: Development Security Best Practices for Windows Driver Developers
 description: Follow these best practices to help ensure that your driver code is secure from abuse by bad actors.
 ms.date: 06/15/2022
-ms.author: jogeurte
 ---
 
 # Windows drivers security best practices for driver developers
