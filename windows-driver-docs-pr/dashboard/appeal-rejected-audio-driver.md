@@ -9,7 +9,7 @@ ms.date: 07/08/2024
 
 If your audio driver was rejected you can appeal the rejection as follows:
 
-1. Open a bug on <a href="/collaborate/">Collaborate</a>
+1. Open a bug on [Collaborate](/collaborate/)
 1. Add the keyword "AudioDriverAppeal" to the title of the bug
 1. In the body of the bug, include the following
     * The rejected shipping labels that you want to appeal
