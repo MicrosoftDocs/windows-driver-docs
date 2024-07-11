@@ -14,5 +14,6 @@ The driver submission is rejected if the executable version number is missing, b
 
 Learn more about how to add a version number to an executable file with [VERSIONINFO resource](/windows/desktop/menurc/versioninfo-resource).
 
-## What to Do If Your Shipping Label is Rejected
-If the Windows Audio Team has rejected your shipping label for any of the reasons mentioned, please get in touch with them at audio-partners@microsoft.com.
+## What to do if your shipping label is rejected
+
+See [Appeal a rejected audio driver](appeal-rejected-audio-driver.md)
