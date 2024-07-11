@@ -16,4 +16,4 @@ Learn more about how to add a version number to an executable file with [VERSION
 
 ## What to do if your shipping label is rejected
 
-See <a href="appeal-rejected-audio-driver.md">Appeal a rejected audio driver</a>
+See [Appeal a rejected audio driver](appeal-rejected-audio-driver.md)
