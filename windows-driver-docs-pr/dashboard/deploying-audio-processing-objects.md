@@ -24,4 +24,4 @@ For Windows 10, all audio processing objects must be marked as `Class=SoftwareCo
 
 ## What to do if your shipping label is rejected
 
-See <a href="appeal-rejected-audio-driver.md">Appeal a rejected audio driver</a>
+See [Appeal a rejected audio driver](appeal-rejected-audio-driver.md)
