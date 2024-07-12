@@ -1359,6 +1359,8 @@
         href: dxgiddi-h---reserved.md
       - name: "DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_CAPS"
         href: dxgi-ddi-multiplane-overlay-stereo-caps.md
+- name: "WDK Sample Code"
+  href: display-samples.md
 - name: "Legacy: Windows 2000 Display Driver Model (XDDM) design guide"
 # Auto-expanded node
   items: 
@@ -3410,5 +3412,3 @@
         href: gdi-data-types.md
       - name: "Obsolete GDI Functions, Structures, and Constants"
         href: obsolete-gdi-functions--structures--and-constants.md
-- name: "Display Samples"
-  href: display-samples.md
