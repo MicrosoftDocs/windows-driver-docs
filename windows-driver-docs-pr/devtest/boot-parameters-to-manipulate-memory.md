@@ -20,10 +20,6 @@ ms.date: 04/20/2017
 
 You can simulate a low-memory environment for testing without changing the amount of physical memory on the computer. Instead, you can limit the memory available to the operating system by using **truncatememory** or **removememory** options with the [**BCDedit /set**](./bcdedit--set.md) command.
 
-The **/maxmem** parameter specifies the maximum amount of memory available to Windows. It is calibrated in megabytes (MB). Set the value to any amount less than the actual physical memory on the computer.
-
-The **/maxmem** parameter actually determines the largest memory address available to Windows. Due to gaps in the mapping of physical memory, Windows might receive somewhat less memory than the value of **/maxmem**. For more precision, use **/burnmemory**.
-
 The **truncatememory** or **removememory** options are available in Windows 7 and later. The **truncatememory** option disregards all memory at or above the specified physical address. The **removememory** option reduces memory available to Windows by the specified amount (measured in MB). Both options reduce memory, but the **removememory** option is better at restricting the operating system to use the specified memory while accounting for memory gaps.
 
 ### <span id="boot_parameters_to_test_in_a_low_memory_environment_in_windows_vista_a"></span><span id="BOOT_PARAMETERS_TO_TEST_IN_A_LOW_MEMORY_ENVIRONMENT_IN_WINDOWS_VISTA_A"></span>Boot Parameters to Test in a Low-memory Environment in Windows
