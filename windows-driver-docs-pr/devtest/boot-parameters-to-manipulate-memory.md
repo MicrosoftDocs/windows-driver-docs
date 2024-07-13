@@ -46,12 +46,18 @@ When you are finished testing, you can remove the **removememory** and **truncat
 
 ### Verify the effect of `truncatememory`
 
-We take a Windows 11 machine(call it Lab11) for example. Lab11 has 4GB physical RAM, and we want to limit the OS to use only 3GB RAM.
+We take a Windows 11 machine for example, which has 4GB physical RAM, and we want to limit the OS to use only 3GB of RAM.
 	
 First, we make a new BCD entry for this experimental purpose:
 	
 ```
 bcdedit /copy {current} /d "Windows 11 with less RAM"
+```
+
+Assuming the GUID of the new entry is `{cc20a3d8-0000-0000-0000-f265c2917862}` by querying `bcdedit /enum`, the command line to apply **truncatememory** is:
+
+```
+bcdedit /set {cc20a3d8-0000-0000-0000-f265c2917862} truncatememory 3221225472
 ```
 
 Second, we enable legacy(text-mode) bootmgr menu, so that we can verify our modified boot options easily.
@@ -60,7 +66,7 @@ Second, we enable legacy(text-mode) bootmgr menu, so that we can verify our modi
 bcdedit /set {bootmgr} displaybootmenu yes
 ```
 
-Third, reboot Lab11, until it reaches the text-mode boot-menu. 
+Third, reboot the Windows machine, until it reaches bootmgr text-mode boot-menu. 
 
 ![Bootmgr text boot-menu](images/bootmgr-text-menu-win11.png)
 
