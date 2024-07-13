@@ -78,6 +78,6 @@ We see that, the value for bcdedit **truncatememory** option is represented as `
 
 Finally, we boot into that new entry, press `Win+Break` to show System -> About info page, and see Windows 11 reports that:
 	
-	Installed RAM 4.00GB (3.00GB usable)
+> Installed RAM 4.00GB (3.00GB usable)
 
 ![Win11 UI shows less memory usable](images/win11-system-about-4gb-3gb.png)
