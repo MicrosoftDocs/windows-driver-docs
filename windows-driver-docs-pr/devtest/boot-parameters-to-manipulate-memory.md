@@ -34,15 +34,44 @@ The following example shows a BCDEdit command used to remove 1536 MB of memory f
 bcdedit /set {18b123cd-2bf6-11db-bfae-00e018e2b8db} removememory 1536
 ```
 
-You can also use the **truncatememory** option with the **bcdedit /set** command to achieve the same result. When you use this option, Windows ignores all memory at or above the specified physical address. Specify the *address* in bytes. For example, the following command sets the physical address limit at 1 GB for the specified boot entry. You can specify the address in decimal (1073741824) or hexadecimal (0x40000000).
+You can also use the **truncatememory** option with the **bcdedit /set** command to achieve the same result. When you use this option, Windows ignores all memory at or above the specified physical address. Specify the *address* in bytes. For example, the following command sets the physical address limit at 3.0 GB for the specified boot entry. You can specify the address in decimal (3221225472) or hexadecimal (0xC0000000).
 
 ```
-bcdedit /set {18b123cd-2bf6-11db-bfae-00e018e2b8db} truncatememory 0x40000000
+bcdedit /set {18b123cd-2bf6-11db-bfae-00e018e2b8db} truncatememory 0xC0000000
 ```
 
 Because the **removememory** option makes more efficient use of system memory, its use is recommended instead of **truncatememory**.
 
 When you are finished testing, you can remove the **removememory** and **truncatememory** boot entry options using the [**BCDEdit /deletevalue**](./bcdedit--deletevalue.md) command.
 
- 
+### Verify the effect of `truncatememory`
 
+We take a Windows 11 machine(call it Lab11) for example. Lab11 has 4GB physical RAM, and we want to limit the OS to use only 3GB RAM.
+	
+First, we make a new BCD entry for this experimental purpose:
+	
+```
+bcdedit /copy {current} /d "Windows 11 with less RAM"
+```
+
+Second, we enable legacy(text-mode) bootmgr menu, so that we can verify our modified boot options easily.
+	
+```
+bcdedit /set {bootmgr} displaybootmenu yes
+```
+
+Third, reboot Lab11, until it reaches the text-mode boot-menu. 
+
+![Bootmgr text boot-menu](images/bootmgr-text-menu-win11.png)
+
+Press F10 on our new entry, and we will see boot options for this entry:
+
+![Bootmgr F10 show options](images/bootmgr-f10-option.png)
+
+We see that, the value for bcdedit **truncatememory** option is represented as `/MAXMEM` here.
+
+Finally, we boot into that new entry, press `Win+Break` to show System -> About info page, and see Windows 11 reports that:
+	
+	Installed RAM 4.00GB (3.00GB usable)
+
+![Win11 UI shows less memory usable](images/win11-system-about-4gb-3gb.png)
