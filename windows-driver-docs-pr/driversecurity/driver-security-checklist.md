@@ -180,7 +180,7 @@ For more information, and code examples, see [Providing the ability to read/writ
 
 There is a [potential time of check to time of use](https://en.wikipedia.org/wiki/Time_of_check_to_time_of_use) (TOCTOU) vulnerability when using direct I/O (for IOCTLs or for Read/Write). Be aware that the driver is accessing the user data buffer, the user can simultaneously be accessing it.
 
-To manage this risk, copy any parameters that need to be validated from the user data buffer to memory that is solely accessible from kernel mode (such as the stack or pool). Then once the data can not be accessed by the user application, validate and then operate on the data that was passed-in.
+To manage this risk, copy any parameters that need to be validated from the user data buffer to memory that is solely accessible from kernel mode (such as the stack or pool). Then once the data can't be accessed by the user application, validate and then operate on the data that was passed-in.
 
 ### Driver code must make correct use of memory
 

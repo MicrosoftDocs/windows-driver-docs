@@ -166,7 +166,7 @@ The same basic principle is followed in all test methods. Take a look at other t
 ## <span id="Executing_a_test_resource_dependent_test_module"></span><span id="executing_a_test_resource_dependent_test_module"></span><span id="EXECUTING_A_TEST_RESOURCE_DEPENDENT_TEST_MODULE"></span>Executing a test resource dependent test module
 
 
-With the test resource dependent tests now authored and built, you can now execute it using TAEF. The key point to note is that TestResourceDependent tests can only be executed inproc. This means that even if you don't explicitly specify **"/inproc"** switch, it will get added on as soon as TAEF discovers the test resource dependent test module. As you may know, tests from only one test module can be executed in a given TAEF execution when the "/inproc" switch is present. This means you can not specify more than one test module at the commandline if your test module is resource dependent.
+With the test resource dependent tests now authored and built, you can now execute it using TAEF. The key point to note is that TestResourceDependent tests can only be executed inproc. This means that even if you don't explicitly specify **"/inproc"** switch, it will get added on as soon as TAEF discovers the test resource dependent test module. As you may know, tests from only one test module can be executed in a given TAEF execution when the "/inproc" switch is present. This means you can't specify more than one test module at the commandline if your test module is resource dependent.
 
 To actually execute all the tests in our test module, you can simply run:
 

@@ -28,4 +28,4 @@ In the preceding example, the rectangles are as follows:
 
 - The Target Rectangle is also {0, 0,854,480}.
 
-As shown in the preceding example, the left and right edges of the destination surface contain no pixels from the video stream. The driver's **DeinterlaceBltEx** function should interpret pixels that fall outside the video stream's destination rectangle as backgound color because they are combined with the pixels from the subpicture stream.
+As shown in the preceding example, the left and right edges of the destination surface contain no pixels from the video stream. The driver's **DeinterlaceBltEx** function should interpret pixels that fall outside the video stream's destination rectangle as background color because they are combined with the pixels from the subpicture stream.

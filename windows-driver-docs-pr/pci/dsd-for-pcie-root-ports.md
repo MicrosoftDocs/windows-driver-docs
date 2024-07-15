@@ -29,7 +29,7 @@ Name (_DSD, Package () {
 
 ## Identifying PCIe Root Ports supporting hot plug in D3
 
-This ACPI object enables the operating system to identify and power manage PCIe Root ports that are capable of handling hot plug events while in D3 state. If this object is not implemented on the a PCIe hot plug capable port, then the system does not power manage this port if it has no children PCIe devices, causing the system to consume more power than necessary.
+This ACPI object enables the operating system to identify and power manage PCIe Root ports that are capable of handling hot plug events while in D3 state. If this object is not implemented on a PCIe hot plug capable port, then the system does not power manage this port if it has no children PCIe devices, causing the system to consume more power than necessary.
 
 This object must be implemented on all PCIe Root Ports of Thunderbolt hierarchies, on Runtime D3 (RTD3) capable systems, in the Root Port ACPI device scope.
 

@@ -39,7 +39,7 @@ Enables Full Kernel Debugging.
 Disables Full Kernel Debugging.
 
 <span id="_______-c______"></span><span id="_______-C______"></span> **-c**   
-Checks whether Full Kernel Debugging is enabled. Displays true if Full Kernel Deubugging is enabled, and displays false if Full Kernel Debugging is disabled.
+Checks whether Full Kernel Debugging is enabled. Displays true if Full Kernel Debugging is enabled, and displays false if Full Kernel Debugging is disabled.
 
 <span id="_______-ea______"></span><span id="_______-EA______"></span> **-ea**   
 Enables Automatic Kernel Debugging.
@@ -48,7 +48,7 @@ Enables Automatic Kernel Debugging.
 Disables Automatic Kernel Debugging.
 
 <span id="_______-ca______"></span><span id="_______-CA______"></span> **-ca**   
-Checks whether Automatic Kernel Debugging is enabled. Displays true if Automatic Kernel Deubugging is enabled, and displays false if Automatic Kernel Debugging is disabled.
+Checks whether Automatic Kernel Debugging is enabled. Displays true if Automatic Kernel Debugging is enabled, and displays false if Automatic Kernel Debugging is disabled.
 
 <span id="_______-eu______"></span><span id="_______-EU______"></span> **-eu**   
 Enables User-Mode Error Handling.

@@ -66,7 +66,7 @@ Causes the debug statistics of the current thread to be displayed. *Address* may
 (Windows 7 and later only) Causes the worker factory at *Address* to be displayed. The specified *Address* must be a valid nonzero address.
 
 <span id="_______wqueue_______Address______"></span><span id="_______wqueue_______address______"></span><span id="_______WQUEUE_______ADDRESS______"></span> **wqueue** **** *Address*   
-(Windows 7 and later only) Causes display of a work queue and NUMA node that matche the following: a specified priority, a specified NUMA node, and the pool, at a specified address, to which the NUMA node belongs. *Address* specifies the address of the pool. When the **wqueue** parameter is used, it must be followed by *Address*, *Priority*, and *Node*.
+(Windows 7 and later only) Causes display of a work queue and NUMA node that matches the following: a specified priority, a specified NUMA node, and the pool, at a specified address, to which the NUMA node belongs. *Address* specifies the address of the pool. When the **wqueue** parameter is used, it must be followed by *Address*, *Priority*, and *Node*.
 
 <span id="_______Priority______"></span><span id="_______priority______"></span><span id="_______PRIORITY______"></span> *Priority*   
 (Windows 7 and later only) Specifies the priority levels of the work queues to be displayed. *Priority* can be any of the following values:

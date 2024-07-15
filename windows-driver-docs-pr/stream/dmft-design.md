@@ -87,7 +87,7 @@ All the commands and controls going to the device are rerouted to Device MFT. De
 
 On initialization of the capture pipeline, if there's a Device MFT for the device, DeviceSource instantiates DTM. It passes an instance of Devproxy that represents the device to the DTM's initialization routine. DTM cocreates Device MFT and performs basic validations, for example, verifies the number of output pins of Devproxy is same as the number of input pins of Device MFT, support for mandatory interfaces, and so on.
 
-DeviceSource querys DTM to obtain the supported output mediatypes. DTM gets this from Device MFT's output pins. DeviceSource exposes the Presentation Descriptor and Stream Descriptor based on this information to the capture pipeline.
+DeviceSource queries DTM to obtain the supported output mediatypes. DTM gets this from Device MFT's output pins. DeviceSource exposes the Presentation Descriptor and Stream Descriptor based on this information to the capture pipeline.
 
 SourceReader uses the exposed mediatypes of the DeviceSource and sets the default mediatypes on each stream. In turn, DeviceSource sets the default mediatypes on the output streams of the DTM. DTM sets the mediatype on the output stream of the Device MFT using the [SetOutputStreamState](/windows/win32/api/mftransform/nf-mftransform-imfdevicetransform-setoutputstreamstate) method.
 

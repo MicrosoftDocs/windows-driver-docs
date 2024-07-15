@@ -68,7 +68,7 @@ The [Windows driver samples](https://github.com/Microsoft/Windows-driver-samples
 
     `<devcon_path>\devcon.exe install SampleBarcodeScannerDrv.inf Root\SampleBarcodeScannerDrv`
 
-1. You will see a **Windows Security** dialog informing you that the publisher of the driver can not be verified. This is because the driver was signed with a test certificate. Select **Install this driver software anyway**. In a moment, you will see confirmation that your driver was installed correctly.
+1. You will see a **Windows Security** dialog informing you that the publisher of the driver can't be verified. This is because the driver was signed with a test certificate. Select **Install this driver software anyway**. In a moment, you will see confirmation that your driver was installed correctly.
 
 If the Device Console utility was not able to install the driver, confirm that you were using the one that matches your current OS platform and the platform of the driver.
 
