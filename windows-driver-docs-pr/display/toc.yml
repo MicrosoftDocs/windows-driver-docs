@@ -1177,32 +1177,9 @@
       href: gpu-power-management-of-idle-and-active-power.md
   - name: "Reserved For System Use"
 # Auto-expanded node
-    items: 
-    - name: "Reserved For System Use"
-      href: reserved-for-system-use.md
+    items:
     - name: "D3dkmddi.h - Reserved"
-# Auto-expanded node
       items: 
-      - name: "D3dkmddi.h - Reserved"
-        href: d3dkmddi-h---reserved.md
-      - name: "_DXGK_ALLOCATIONGROUPDESCRIPTOR"
-        href: dxgk-allocationgroupdescriptor.md
-      - name: "_DXGK_ALLOCATIONGROUPOUT"
-        href: dxgk-allocationgroupout.md
-      - name: "_DXGK_ALLOCATIONINFO2"
-        href: dxgk-allocationinfo2.md
-      - name: "_DXGK_ALLOCATIONINFOFLAGS2"
-        href: dxgk-allocationinfoflags2.md
-      - name: "_DXGK_CREATEALLOCATIONFLAGS2"
-        href: dxgk-createallocationflags2.md
-      - name: "_DXGK_DMABUFFERCAPS"
-        href: dxgk-dmabuffercaps.md
-      - name: "DXGK_INTERFACESPECIFICDATA"
-        href: dxgk-interfacespecificdata.md
-      - name: "_DXGK_MULTIPLANE_OVERLAY_FILTER"
-        href: dxgk-multiplane-overlay-filter.md
-      - name: "_DXGK_PDE"
-        href: dxgk-pde.md
       - name: "DXGK_POWER_COMPONENT_P_FLAGS"
         href: dxgk-power-component-p-flags.md
       - name: "DXGK_POWER_P_COMPONENT"

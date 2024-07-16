@@ -1573,6 +1573,61 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "windows-driver-docs-pr/display/reserved-for-system-use.md",
+            "redirect_URL": "/windows-hardware/drivers/ddi/_display/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/display/d3dkmddi-h---reserved.md",
+            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmddi",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/display/dxgk-allocationgroupdescriptor.md",
+            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmddi",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/display/dxgk-allocationgroupout.md",
+            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmddi",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/display/dxgk-allocationinfo2.md",
+            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmddi",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/display/dxgk-allocationinfoflags2.md",
+            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmddi",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/display/dxgk-createallocationflags2.md",
+            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmddi",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/display/dxgk-dmabuffercaps.md",
+            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmddi",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/display/dxgk-interfacespecificdata.md",
+            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgk_interfacespecificdata",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/display/dxgk-multiplane-overlay-filter.md",
+            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmddi",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/display/dxgk-pde.md",
+            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmddi",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/driver-changes-for-windows-10-version-1709.md",
             "redirect_URL": "/windows-hardware/drivers/what-s-new-in-driver-development",
             "redirect_document_id": false
