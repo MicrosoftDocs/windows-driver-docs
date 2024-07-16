@@ -59,7 +59,7 @@ LOG@: ffffe00001ca11b8
 [1023] ffffe00002019180 xdB0 ffffe00001ca1b88 ffffe00001ca1050 0000000000000000 
 ```
 
-The command output shows two FDOs that represent UHCI host controlers and one FDO that represents an EHCI host controller. Then the output shows the debug log for the one EHCI host controller.
+The command output shows two FDOs that represent UHCI host controllers and one FDO that represents an EHCI host controller. Then the output shows the debug log for the one EHCI host controller.
 
 ## See also
 

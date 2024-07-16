@@ -108,7 +108,7 @@ These are tests that IR camera modules will need to pass to be enabled:
 
     - If multiple streams have the **MF\_DEVICESTREAM\_ATTRIBUTE\_FACEAUTH\_CAPABILITY** attribute defined, fail the test, as only one stream should be Windows Hello capable.
 
-    - If **MF\_DEVICESTREAM\_ATTRIBUTE\_FRAMESOURCE\_TYPES** is not set to IR for this stream, fail the test, as there can not be RGB media types on this stream.
+    - If **MF\_DEVICESTREAM\_ATTRIBUTE\_FRAMESOURCE\_TYPES** is not set to IR for this stream, fail the test, as there can't be RGB media types on this stream.
 
     - Select this stream and validate that the media type is Windows Hello-capable (MJPG/L8/NV12) and that the resolution is greater than or equal to 320 x 320 pixels:
 

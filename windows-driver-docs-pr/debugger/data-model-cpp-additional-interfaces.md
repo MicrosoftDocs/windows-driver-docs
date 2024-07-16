@@ -15,7 +15,7 @@ One of the core notions in the data model is that an object (particularly a synt
 In some senses, a metadata store is not all that different from the key/value/metadata tuples that are the essence of an object in the data model. It is, however, simplified from this view. A metadata store is represented by the IKeyStore interface. While also a collection of key/value/metadata tuples, there are limitations to what can be done with a metadata key store versus a model object: 
 
 - A key store can only have a single parent store -- it cannot have an arbitrary chain of parent models.
-- A key store has no concepts. It can only have the dictionary of key/value/metadata tuples. This means that the keys present in a key store are static. They can not be created on demand by a dynamic language system.
+- A key store has no concepts. It can only have the dictionary of key/value/metadata tuples. This means that the keys present in a key store are static. They can't be created on demand by a dynamic language system.
 - By convention only, the values in a metadata defined key store are restricted to basic values (intrinsics and property accessors)
 
 While a key store can have an arbitrary number (and arbitrary naming) of keys, there are certain names that have defined semantic values. Presently, those names are: 

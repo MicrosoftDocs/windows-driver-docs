@@ -74,7 +74,7 @@ If the **MaxPixelsPerSecond** value is not set, the video stabilization MFT will
 
 The default value is 62208000 pixels per second, which is 1920 pixels x 1080 pixels x 30 fps. When video stabilization attempts to stabilize but cannot maintain real time stabilization of the video frames, the internal logic will switch video stabilization to pass-through mode (turning off video stabilization) without dropping any frames.
 
-If video stabilization switched off in the previous session, the MFT will attempt to start video stabilization in regular mode for every new session, before deciding to switch to pass-through mode. This is because it can not rely on the previous mode to make future decisions, since the device may have been under stress when it was last operated.
+If video stabilization switched off in the previous session, the MFT will attempt to start video stabilization in regular mode for every new session, before deciding to switch to pass-through mode. This is because it can't rely on the previous mode to make future decisions, since the device may have been under stress when it was last operated.
 
 ## Video stabilization test requirements
 

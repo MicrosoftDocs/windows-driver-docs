@@ -227,7 +227,7 @@ Here is the script output if the indexing is successful.
 >>> Trace was successfully indexed in 1 ms
 ```
 
-If the trace can not be indexed, for example if the trace is not loaded in the debugger, the catch loop code is run.
+If the trace can't be indexed, for example if the trace is not loaded in the debugger, the catch loop code is run.
 
 ```dbgcmd
 0:007> dx Debugger.State.Scripts.TTDUtils.Contents.IndexTraceTry()

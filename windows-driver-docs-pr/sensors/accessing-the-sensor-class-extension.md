@@ -17,7 +17,7 @@ Microsoft supports two Sensor APIs. Both simplify accessing devices, retrieving 
 
 The sensor class extension (**ISensorClassExtension**) links your sensor driver and the Sensor APIs. Your driver uses it to accomplish the following:
 
-- Initialize and unitialize the sensor class extension
+- Initialize and uninitialize the sensor class extension
 - Raise events
 - Process WPD input/output control codes (IOCTLs)
 - Close UMDF file handles

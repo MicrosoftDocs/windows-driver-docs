@@ -107,7 +107,7 @@ The InformationBuffer in MBIM_COMMAND_DONE contains the following MBIM_UICC_APP_
 | MBIMUiccAppTypeMfSIM | 2 | Legacy SIM directories rooted at the DF_GSM. |
 | MBIMUiccAppTypeMfRUIM | 3 | Legacy SIM directories rooted at the DF_CDMA. |
 | MBIMUiccAppTypeUSIM | 4 | USIM application. |
-| MBIMUiccAppTypeCSIM | 5 | CSIM applicaton. |
+| MBIMUiccAppTypeCSIM | 5 | CSIM application. |
 | MBIMUiccAppTypeISIM | 6 | ISIM application. |
 
 #### Constants
@@ -158,7 +158,7 @@ The InformationBuffer of MBIM_COMMAND_MSG contains the target EF as an MBIM_UICC
 | 0 | 4 | Version | UINT32 | The version number of the structure that follows. This field must be **1** for version 1 of this structure. |
 | 4 | 4 | AppIdOffset | OFFSET | The offset, in bytes, calculated from the beginning of this structure to the buffer containing the application ID. |
 | 8 | 4 | AppIdSize | SIZE (0..16) | The size of the application ID, in bytes, as defined in Section 8.3 of the [ETSI TS 102 221 technical specification](https://go.microsoft.com/fwlink/p/?linkid=864594). For 2G cards, this field must be set to zero (0). |
-| 12 | 4 | FilePathOffset | OFFSET | The offset, in bytes, calculated from the beginning of this structure to the buffer containing the file path. The file path is an array of 16-bit file IDs. The first ID must be either **0x7FFF** or **0x3F00**. If the first ID is **0x7FFF**, then the path is relative to the ADF of the application desginated by **AppId**. Otherwise, it is an absolute path starting from the MF. |
+| 12 | 4 | FilePathOffset | OFFSET | The offset, in bytes, calculated from the beginning of this structure to the buffer containing the file path. The file path is an array of 16-bit file IDs. The first ID must be either **0x7FFF** or **0x3F00**. If the first ID is **0x7FFF**, then the path is relative to the ADF of the application designated by **AppId**. Otherwise, it is an absolute path starting from the MF. |
 | 16 | 4 | FilePathSize | SIZE (0..8) | The size of the file path, in bytes. |
 | 20 |   | DataBuffer | DATABUFFER | The data buffer containing AppId and FilePath. |
 
@@ -282,7 +282,7 @@ Reads a binary file. The InformationBuffer for MBIM_COMMAND_MSG contains an MBIM
 | 0 | 4 | Version | UINT32 | The version number of the structure that follows. This field must be set to **1** for version 1 of this structure. |
 | 4 | 4 | AppIdOffset | OFFSET | The offset, in bytes, from the beginning of this structure to the buffer containing the application ID. |
 | 8 | 4 | AppIdSize | SIZE (0..16) | The size of the application ID, in bytes, as defined in Section 8.3 of the [ETSI TS 102 221 technical specification](https://go.microsoft.com/fwlink/p/?linkid=864594). For 2G cards, this field must be set to zero (0). |
-| 12 | 4 | FilePathOffset | OFFSET | The offset, in bytes, calculated from the beginning of this structure to the buffer containing the file path. The file path is an array of 16-bit file IDs. The first ID must be either **0x7FFF** or **0x3F00**. If the first ID is **0x7FFF**, then the path is relative to the ADF of the application desginated by **AppId**. Otherwise, it is an absolute path starting from the MF. |
+| 12 | 4 | FilePathOffset | OFFSET | The offset, in bytes, calculated from the beginning of this structure to the buffer containing the file path. The file path is an array of 16-bit file IDs. The first ID must be either **0x7FFF** or **0x3F00**. If the first ID is **0x7FFF**, then the path is relative to the ADF of the application designated by **AppId**. Otherwise, it is an absolute path starting from the MF. |
 | 16 | 4 | FilePathSize | SIZE | The size of the file path, in bytes. |
 | 20 | 4 | FileOffset | UINT32 | The offset to be used when reading from the file. This field can be bigger than 256, and it combines both offset high and offset low as defined in the [ETSI TS 102 221 technical specification](https://go.microsoft.com/fwlink/p/?linkid=864594). |
 | 24 | 4 | NumberOfBytes | UINT32 | The number of bytes to be read. For example, a client driver could use this function to read a transparent (binary) file that is larger than 256 bytes, although the maximum amount that can be read or written in a single UICC operation is 256 bytes per the [ETSI TS 102 221 technical specification](https://go.microsoft.com/fwlink/p/?linkid=864594). It is the function's responsibility to split this into multiple APDUs and send back the result in a single response. |
@@ -350,7 +350,7 @@ Reads contents of a record. The InformationBuffer for MBIM_COMMAND_MSG contains 
 | 0 | 4 | Version | UINT32 | The version number of the structure that follows. This field must be set to **1** for version 1 of this structure. |
 | 4 | 4 | AppIdOffset | OFFSET | The offset, in bytes, from the beginning of this structure to the buffer containing the application ID. |
 | 8 | 4 | AppIdSize | SIZE (0..16) | The size of the application ID, in bytes, as defined in Section 8.3 of the [ETSI TS 102 221 technical specification](https://go.microsoft.com/fwlink/p/?linkid=864594). For 2G cards, this field must be set to zero (0). |
-| 12 | 4 | FilePathOffset | OFFSET | The offset, in bytes, calculated from the beginning of this structure to the buffer containing the file path. The file path is an array of 16-bit file IDs. The first ID must be either **0x7FFF** or **0x3F00**. If the first ID is **0x7FFF**, then the path is relative to the ADF of the application desginated by **AppId**. Otherwise, it is an absolute path starting from the MF. |
+| 12 | 4 | FilePathOffset | OFFSET | The offset, in bytes, calculated from the beginning of this structure to the buffer containing the file path. The file path is an array of 16-bit file IDs. The first ID must be either **0x7FFF** or **0x3F00**. If the first ID is **0x7FFF**, then the path is relative to the ADF of the application designated by **AppId**. Otherwise, it is an absolute path starting from the MF. |
 | 16 | 4 | FilePathSize | SIZE | The size of the file path, in bytes. |
 | 20 | 4 | RecordNumber | UINT32(0..256) | The record number. This represents the absolute record index at all times. Relative record access is not supported because the modem can perform multiple accesses on a file (NEXT, PREVIOUS). |
 | 24 | 4 | LocalPinOffset | OFFSET | The offset, in bytes, calculated from the beginning of this structure to the buffer containing the password. The lock password is a null-terminated UTF-8 string of decimal digits. | 

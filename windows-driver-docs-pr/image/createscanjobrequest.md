@@ -60,7 +60,7 @@ The **CreateScanJobRequest** operation is the main mechanism to prepare a scan d
 
 - The user starts an application on the client and acquires an image. In this method, the client sends **CreateScanJobRequest** with only the **ScanTicket** element.
 
-Certain elements within the **CreateScanJobRequest** hierarchy can contain the **MustHonor** Boolean attribute. If **MustHonor** is present and true, the WSD Scan Service must honor the requested element and its value or reject the scan job request. If an unsupported element does not have a **MustHonor** attribute, or if its **MustHonor** attribute is false, the WSD Scan Service must ignore it. If a supported element's **MustHonor** attribute is false, the WSD Scan Service must substitue the requested value with a supported one.
+Certain elements within the **CreateScanJobRequest** hierarchy can contain the **MustHonor** Boolean attribute. If **MustHonor** is present and true, the WSD Scan Service must honor the requested element and its value or reject the scan job request. If an unsupported element does not have a **MustHonor** attribute, or if its **MustHonor** attribute is false, the WSD Scan Service must ignore it. If a supported element's **MustHonor** attribute is false, the WSD Scan Service must substitute the requested value with a supported one.
 
 If the client supplies a conflicting combination of elements in the scan job request (such as [**InputSource**](inputsource.md) and [**Resolution**](resolution.md)), the WSD Scan Service must reject the scan job request if the conflicting elements have a **MustHonor** attribute value of true.
 
