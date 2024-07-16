@@ -2,7 +2,7 @@
 title: Manage code signing certificates
 description: Manage code signing certificates
 ms.topic: article
-ms.date: 02/28/2022
+ms.date: 07/15/2024
 ---
 
 # Manage code signing certificates
@@ -13,7 +13,7 @@ For more information on rules for driver signing, see [Driver Signing changes in
 
 ## Prerequisites
 
-Register for the Hardware Developer program. If you're not yet registered, follow the steps in [How to register for the Microsoft Windows Hardware Developer Program](hardware-program-register.md).
+Register for the Hardware Developer program. If you're not registered, follow the steps in [How to register for the Microsoft Windows Hardware Developer Program](hardware-program-register.md).
 
 ## Get or renew a code signing certificate
 
@@ -21,19 +21,19 @@ To get a new code signing certificate:
 
 1. Determine which certificate you need. To help you choose a certificate, see [Driver signing requirements](code-signing-reqs.md).
 
-1. If you're re-using a certificate, move on to step 5.
+1. If you're reusing a certificate, move on to step 5.
 
 1. Go to the page of one the following certificate authorities and follow their directions for purchase:
 
-    * [Certum EV code signing certificate](https://shop.certum.eu/data-safety/code-signing-certificates/certum-ev-code-sigining.html)
-    * [DigiCert EV code signing certificate](https://www.digicert.com/signing/code-signing-certificates)
-    * [Entrust EV code signing certificate](https://www.entrustdatacard.com/products/digital-signing-certificates/code-signing-certificates)
-    * [GlobalSign EV code signing certificate](https://go.microsoft.com/fwlink/p/?LinkId=620888)
-    * [IdenTrust EV code signing certificate](https://www.identrust.com/digital-certificates/trustid-ev-code-signing)
-    * [Sectigo (formerly Comodo) EV code signing certificate](https://sectigo.com/ssl-certificates-tls/code-signing)
-    * [SSL.com EV code signing certificate](https://www.ssl.com/certificates/ev-code-signing/)
+    - [Certum EV code signing certificate](https://shop.certum.eu/data-safety/code-signing-certificates/certum-ev-code-sigining.html)
+    - [DigiCert EV code signing certificate](https://www.digicert.com/signing/code-signing-certificates)
+    - [Entrust EV code signing certificate](https://www.entrust.com/products/digital-signing/code-signing-certificates)
+    - [GlobalSign EV code signing certificate](https://go.microsoft.com/fwlink/p/?LinkId=620888)
+    - [IdenTrust EV code signing certificate](https://www.identrust.com/digital-certificates/trustid-ev-code-signing)
+    - [Sectigo (formerly Comodo) EV code signing certificate](https://sectigo.com/ssl-certificates-tls/code-signing)
+    - [SSL.com EV code signing certificate](https://www.ssl.com/certificates/ev-code-signing/)
 
-1. Once the certificate authority has verified your contact information and your certificate purchase is approved, follow their directions to retrieve the certificate.
+1. Once the certificate authority verifies your contact information and your certificate purchase is approved, follow their directions to retrieve the certificate.
 
 1. Go to [Partner Center](https://partner.microsoft.com/dashboard) and sign in using administrator credentials.
 
@@ -54,5 +54,3 @@ To get a new code signing certificate:
 1. Move through the page to find the certificate you wish to remove.
 
 1. Under the **Action** column of the certificate, select **Remove**.
-
-
