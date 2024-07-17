@@ -6,7 +6,7 @@ keywords:
 - INF files WDK device installations , directory identifiers
 - directory identifiers WDK INF files
 - directories WDK INF files
-ms.date: 10/25/2022
+ms.date: 07/16/2024
 ---
 
 # Using Dirids
@@ -57,36 +57,44 @@ If you intend to use *dirids* in your INF file, consider the following two guide
 
 The following table shows several commonly used *dirids*, and the directories they represent. The values most commonly specified by device INF files and driver INF files are listed toward the top of the table.
 
+As part of [Driver Package Isolation](../develop/driver-isolation.md) requirements a driver must be [Run from Driver Store](../develop/run-from-driver-store.md) and use DIRID 13 to specify the location for driver package files on install. Starting with Windows 11, version 24H2 some of the commonly used *dirids* have been deprecated when submitting your INF for a **WHQL signature**. For more information, see [InfVerif /h](../devtest/infverif_h.md).
+
 <table>
 <colgroup>
+<col width="25%" />
 <col width="50%" />
-<col width="50%" />
+<col width="25%" />
 </colgroup>
 <thead>
 <tr class="header">
 <th align="left">Value</th>
 <th align="left">Destination Directory</th>
+<th align="left">Release Deprecated</th> 
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>01</strong></p></td>
 <td align="left"><p><em>SourceDrive</em><strong>:\</strong><em>pathname</em> (the directory from which the INF file was installed)</p></td>
+<td align="left"><p>Windows 11 24H2</p></td> 
 </tr>
 <tr class="even">
 <td align="left"><p><strong>10</strong></p></td>
 <td align="left"><p>Windows directory.</p>
 <p>This is equivalent to <em>%SystemRoot%</em>.</p></td>
+<td align="left"></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>11</strong></p></td>
 <td align="left"><p>System directory.</p>
 <p>This is equivalent to <em>%SystemRoot%</em><strong>\</strong><em>system32</em> for Windows 2000 and later versions of Windows..</p></td>
+<td align="left"></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>12</strong></p></td>
 <td align="left"><p>Drivers directory.</p>
 <p>This is equivalent to <em>%SystemRoot%</em><strong>\</strong><em>system32</em><strong>\</strong><em>drivers</em> for Windows 2000 and later versions of Windows.</p></td>
+<td align="left"></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>13</strong></p></td>
@@ -101,68 +109,84 @@ Don't use <a href="inf-copyfiles-directive.md" data-raw-source="[CopyFiles](inf-
 
 For more information on using <em>dirid</em> 13, see [Run from Driver Store](../develop/run-from-driver-store.md).
 </p></td>
+<td align="left"></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>17</strong></p></td>
 <td align="left"><p>INF file directory</p></td>
+<td align="left"><p>Windows 11 24H2</p></td> 
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>18</strong></p></td>
 <td align="left"><p>Help directory</p></td>
+<td align="left"><p>Windows 11 24H2</p></td> 
 </tr>
 <tr class="even">
 <td align="left"><p><strong>20</strong></p></td>
 <td align="left"><p>Fonts directory</p></td>
+<td align="left"><p>Windows 11 24H2</p></td> 
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>21</strong></p></td>
 <td align="left"><p>Viewers directory</p></td>
+<td align="left"><p>Windows 11 24H2</p></td> 
 </tr>
 <tr class="even">
 <td align="left"><p><strong>23</strong></p></td>
 <td align="left"><p>Color directory (ICM) (<em>not</em> used for installing printer drivers)</p></td>
+<td align="left"></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>24</strong></p></td>
 <td align="left"><p>Root directory of the system disk.</p>
 <p>This is the root directory of the disk on which Windows files are installed. For example, if <em>dirid</em> 10 is "<em>C:\winnt</em>", then <em>dirid</em> 24 is "<em>C:\</em>".</p></td>
+<td align="left"><p>Windows 11 24H2</p></td> 
 </tr>
 <tr class="even">
 <td align="left"><p><strong>25</strong></p></td>
 <td align="left"><p>Shared directory</p></td>
+<td align="left"><p>Windows 11 24H2</p></td> 
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>30</strong></p></td>
 <td align="left"><p>Root directory of the boot disk, also known as "ARC system partition". (This might or might not be the same directory as the one represented by <em>dirid</em> 24.)</p></td>
+<td align="left"><p>Windows 11 24H2</p></td> 
 </tr>
 <tr class="even">
 <td align="left"><p><strong>50</strong></p></td>
 <td align="left"><p>System directory</p>
 <p>This is equivalent to <em>%SystemRoot%</em><strong>\</strong><em>system</em>.</p></td>
+<td align="left"><p>Windows 11 24H2</p></td> 
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>51</strong></p></td>
 <td align="left"><p>Spool directory (<em>not</em> used for installing printer drivers − see <a href="/windows-hardware/drivers/print/printer-dirids">Printer Dirids</a>)</p></td>
+<td align="left"></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>52</strong></p></td>
 <td align="left"><p>Spool drivers directory (<em>not</em> used for installing printer drivers)</p></td>
+<td align="left"></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>53</strong></p></td>
 <td align="left"><p>User profile directory</p></td>
+<td align="left"><p>Windows 11 24H2</p></td> 
 </tr>
 <tr class="even">
 <td align="left"><p><strong>54</strong></p></td>
 <td align="left"><p>Directory where <em>Ntldr.exe</em> and <em>Osloader.exe</em> are located</p></td>
+<td align="left"><p>Windows 11 24H2</p></td> 
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>55</strong></p></td>
 <td align="left"><p>Print processors directory (<em>not</em> used for installing printer drivers)</p></td>
+<td align="left"></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>-1</strong></p></td>
 <td align="left"><p>Absolute path</p></td>
+<td align="left"><p>Windows 11 24H2</p></td> 
 </tr>
 </tbody>
 </table>
@@ -171,67 +195,82 @@ For more information on using <em>dirid</em> 13, see [Run from Driver Store](../
 
 <table>
 <colgroup>
+<col width="25%" />
 <col width="50%" />
-<col width="50%" />
+<col width="25%" />
 </colgroup>
 <thead>
 <tr class="header">
 <th align="left">Value</th>
 <th align="left">Shell Special Folder</th>
+<th align="left">Release Deprecated</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>16406</strong></p></td>
 <td align="left"><p><em>All Users\Start Menu</em></p></td>
+<td align="left"><p>Windows 11 24H2</p></td> 
 </tr>
 <tr class="even">
 <td align="left"><p><strong>16407</strong></p></td>
 <td align="left"><p><em>All Users\Start Menu\Programs</em></p></td>
+<td align="left"><p>Windows 11 24H2</p></td> 
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>16408</strong></p></td>
 <td align="left"><p><em>All Users\Start Menu\Programs\Startup</em></p></td>
+<td align="left"><p>Windows 11 24H2</p></td> 
 </tr>
 <tr class="even">
 <td align="left"><p><strong>16409</strong></p></td>
 <td align="left"><p><em>All Users\Desktop</em></p></td>
+<td align="left"><p>Windows 11 24H2</p></td> 
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>16415</strong></p></td>
 <td align="left"><p><em>All Users\Favorites</em></p></td>
+<td align="left"><p>Windows 11 24H2</p></td> 
 </tr>
 <tr class="even">
 <td align="left"><p><strong>16419</strong></p></td>
 <td align="left"><p><em>All Users\Application Data</em></p></td>
+<td align="left"><p>Windows 11 24H2</p></td> 
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>16422</strong></p></td>
 <td align="left"><p><em>Program Files</em></p></td>
+<td align="left"></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>16425</strong></p></td>
 <td align="left"><p><em>%SystemRoot%\SysWOW64</p></td>
+<td align="left"></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>16426</strong></p></td>
 <td align="left"><p><em>%ProgramFiles(x86)%</p></td>
+<td align="left"></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>16427</strong></p></td>
 <td align="left"><p><em>Program Files\Common</em></p></td>
+<td align="left"></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>16428</strong></p></td>
 <td align="left"><p><em>%ProgramFiles(x86)%\Common</p></td>
+<td align="left"></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>16429</strong></p></td>
 <td align="left"><p><em>All Users\Templates</em></p></td>
+<td align="left"><p>Windows 11 24H2</p></td> 
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>16430</strong></p></td>
 <td align="left"><p><em>All Users\Documents</em></p></td>
+<td align="left"><p>Windows 11 24H2</p></td> 
 </tr>
 </tbody>
 </table>
