@@ -25,7 +25,7 @@ To use a driver replacement map to replace driver files, do the following:
     \\myserver\myshare\new_drivers\videoprt.sys
     ```
 
-    For more information about the syntax of this file, see [Driver Replacement Map File Format](#Driver-Replacement-Map-File-Format).
+    For more information about the syntax of this file, see [Driver Replacement Map File Format](#driver-replacement-map-file-format).
 
 2.  Set up a kernel debugging connection to the target computer, and start the kernel debugger (KD or WinDbg) on your host computer. (You do not have to actually break in to the target computer.)
 
