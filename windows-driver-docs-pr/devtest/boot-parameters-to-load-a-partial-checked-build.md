@@ -6,12 +6,10 @@ keywords:
 - boot parameters WDK
 - boot entry parameters WDK
 - loading partial checked builds WDK boot options
-ms.date: 05/08/2020
+ms.date: 07/19/2024
 ---
 
-#  Boot Parameters to Load a Partial Checked Build
-
-## <span id="ddk_boot_parameters_to_load_a_partial_checked_build_tools"></span><span id="DDK_BOOT_PARAMETERS_TO_LOAD_A_PARTIAL_CHECKED_BUILD_TOOLS"></span>
+# Boot Parameters to Load a Partial Checked Build
 
 A *partial checked build* contains checked build versions of the kernel and HAL and a free build of the remainder of the operating system. For details, see [Installing Just the Checked Operating System and HAL (For Windows Vista and Later)](installing-just-the-checked-operating-system-and-hal--for-windows-vist.md).
 
@@ -19,8 +17,7 @@ A *partial checked build* contains checked build versions of the kernel and HAL 
 > Checked builds were available on older versions of Windows, before Windows 10 version 1803.
 > Use tools such as Driver Verifier and GFlags to check driver code.
 
-
-### <span id="configuring_a_partial_checked_build_in_windows_vista_and_later"></span><span id="CONFIGURING_A_PARTIAL_CHECKED_BUILD_IN_WINDOWS_VISTA_AND_LATER"></span>Configuring a Partial Checked Build in Windows
+## Configuring a Partial Checked Build in Windows
 
 To configure a partial checked build use the [**BCDedit /set**](./bcdedit--set.md) command and the **kernel** and **hal** options.
 

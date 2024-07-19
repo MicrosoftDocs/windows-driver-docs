@@ -12,11 +12,13 @@ keywords:
 - NVRAM boot options WDK , viewing
 - EFI NVRAM boot options WDK , viewing
 - boot options WDK , editing
-ms.date: 07/02/2018
+ms.date: 07/19/2024
 ---
 
 # Editing Boot Options in EFI
 
+> [!IMPORTANT]
+> This topic describes the boot options supported in Windows XP and Windows Server 2003. If you are changing boot options for modern versions of Windows, see [Overview of Boot Options in Windows](boot-options-in-windows.md).
 
 To edit boot options on computers with EFI NVRAM that are running Windows Server 2003 or earlier versions of NT-based Windows, use Bootcfg (bootcfg.exe), a tool that runs on Windows, or Nvrboot (nvrboot.efi), a tool that runs in the EFI environment. Both tools are included in the Windows XP 64-Bit Edition and the 64-bit version of Windows Server 2003.
 
@@ -44,16 +46,16 @@ Nvrboot displays boot options in a user-friendly format. For example, it display
 
 The following procedure explains how to start Nvrboot from the EFI shell, a tool provided with many Itanium-based systems. Because the EFI shell tools vary among manufacturers, the description in this section might not accurately describe the EFI shell interface on a particular computer.
 
-**To run Nvrboot**
+### To run Nvrboot
 
-1.  Reboot the computer.
+1. Reboot the computer.
 
-2.  From the **boot** menu, choose **EFI Shell**.
+2. From the **boot** menu, choose **EFI Shell**.
 
-3.  At the shell prompt, type the drive letter or file system number of the system partition, such as C: or **FS**n, where n is the file system number of the system partition.
+3. At the shell prompt, type the drive letter or file system number of the system partition, such as C: or **FS**n, where n is the file system number of the system partition.
 
-4.  Type **cd msutil** to navigate to the Msutil directory where nvrboot.efi is located.
+4. Type **cd msutil** to navigate to the Msutil directory where nvrboot.efi is located.
 
-5.  To start Nvrboot, type **nvrboot**.
+5. To start Nvrboot, type **nvrboot**.
 
 To find instructions for Nvrboot, type **h**.

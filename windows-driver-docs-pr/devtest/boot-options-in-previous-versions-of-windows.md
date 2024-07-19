@@ -7,15 +7,13 @@ keywords:
 - Windows XP
 - Old Windows
 - WDK boot options
-ms.date: 04/18/2019
+ms.date: 07/19/2024
 ---
 
 # Boot Options in Previous Versions of Windows
 
-
-> [!IMPORTANT] 
-> This topic describes the boot options supported in Windows XP and Windows Server 2003. If you are changing boot options for modern versions of Windows, see [Boot Options in Windows Vista and Later](./boot-options-in-windows.md).
-
+> [!IMPORTANT]
+> This topic describes the boot options supported in Windows XP and Windows Server 2003. If you are changing boot options for modern versions of Windows, see [Overview of Boot Options in Windows](boot-options-in-windows.md).
 
 This section includes:
 
