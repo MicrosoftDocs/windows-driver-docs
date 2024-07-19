@@ -1549,7 +1549,7 @@
         },
         {
             "source_path": "windows-driver-docs-pr/display/enabling-debug-output-for-the-video-memory-manager.md",
-            "redirect_URL": "windows-hardware/drivers/display/video-memory-management-and-gpu-scheduling",
+            "redirect_URL": "/windows-hardware/drivers/display/video-memory-management-and-gpu-scheduling",
             "redirect_document_id": false
         },
         {
@@ -1569,247 +1569,247 @@
         },
         {
             "source_path": "windows-driver-docs-pr/display/d3dkmddi-h---reserved.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmddi/",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dkmddi/",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/dxgk-allocationgroupdescriptor.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmddi/",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dkmddi/",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/dxgk-allocationgroupout.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmddi/",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dkmddi/",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/dxgk-allocationinfo2.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmddi",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dkmddi",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/dxgk-allocationinfoflags2.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmddi/",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dkmddi/",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/dxgk-createallocationflags2.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmddi/",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dkmddi/",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/dxgk-dmabuffercaps.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmddi/",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dkmddi/",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/dxgk-interfacespecificdata.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgk_interfacespecificdata",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgk_interfacespecificdata",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/dxgk-multiplane-overlay-filter.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmddi/",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dkmddi/",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/dxgk-pde.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmddi/",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dkmddi/",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/dxgk-power-component-p-flags.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgk_power_component_p_flags",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgk_power_component_p_flags",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/dxgk-power-p-component.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgk_power_p_component",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgk_power_p_component",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/dxgk-power-p-state.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgk_power_p_state",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgk_power_p_state",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/dxgk-presentallocationinfo.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgk_presentallocationinfo",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgk_presentallocationinfo",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/dxgk-querysegmentout2.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgk_querysegmentout2",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgk_querysegmentout2",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/dxgk-segmentdescriptor2.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgk_segmentdescriptor2",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgk_segmentdescriptor2",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/dxgk-segmentflags2.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgk_segmentflags2",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgk_segmentflags2",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/dxgk-transferflags2.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmddi/",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dkmddi/",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/dxgk-virtualaddresscaps.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmddi/",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dkmddi/",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/dxgkarg-createallocation2.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmddi/",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dkmddi/",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/dxgkarg-describepagetable.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmddi/",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dkmddi/",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/dxgkarg-movepagedirectory.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmddi/",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dkmddi/",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/dxgkarg-submitrender.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmddi/",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dkmddi/",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/dxgkarg-updatepagedirectory.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmddi/",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dkmddi/",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/dxgkarg-updatepagetable.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmddi/",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dkmddi/",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/dxgkarg-updatepagetableflags.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmddi/",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dkmddi/",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/dxgkddicreateallocation2.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmddi/",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dkmddi/",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/dxgkddidescribepagetable.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmddi/",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dkmddi/",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/dxgkddimovepagedirectory.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmddi/",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dkmddi/",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/dxgkddisubmitrender.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmddi/",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dkmddi/",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/dxgkddiupdatepagedirectory.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmddi/",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dkmddi/",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/dxgkddiupdatepagetable.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmddi/",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dkmddi/",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/dxgkcbcompletepstatetransition.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkcb_completepstatetransition",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkcb_completepstatetransition",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/dxgkcbpresentdisplayonlyprogress.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkcb_present_displayonly_progress",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkcb_present_displayonly_progress",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/dxgkddisetpowerpstate.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddisetpowerpstate",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddisetpowerpstate",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/d3dkmdt-h---reserved.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmdt/",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dkmdt/",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/d3dkmt-wddm-1-2-caps.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmdt/ns-d3dkmdt-d3dkmt_wddm_1_2_caps",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dkmdt/ns-d3dkmdt-d3dkmt_wddm_1_2_caps",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/d3dkmt-wddm-1-3-caps.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmdt/ns-d3dkmdt-d3dkmt_wddm_1_3_caps",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dkmdt/ns-d3dkmdt-d3dkmt_wddm_1_3_caps",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/d3dkmt-wddm-2-0-caps.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmdt/ns-d3dkmdt-d3dkmt_wddm_2_0_caps",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dkmdt/ns-d3dkmdt-d3dkmt_wddm_2_0_caps",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/dxgkmdt-opm-connector-type.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmdt/ne-d3dkmdt-dxgkmdt_opm_connector_type",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dkmdt/ne-d3dkmdt-dxgkmdt_opm_connector_type",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/d3dkmthk-h---reserved.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmthk/",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dkmthk/",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/d3dkmt-create-outputdupl.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_create_outputdupl",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_create_outputdupl",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/d3dkmt-destroy-outputdupl.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_destroy_outputdupl",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_destroy_outputdupl",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/d3dkmt-flipmodel-independent-flip-stage.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmthk/ne-d3dkmthk-_d3dkmt_flipmodel_independent_flip_stage",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dkmthk/ne-d3dkmthk-_d3dkmt_flipmodel_independent_flip_stage",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/d3dkmt-multiplane-overlay.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-d3dkmt_multiplane_overlay",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-d3dkmt_multiplane_overlay",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/d3dkmt-multiplane-overlay-attributes.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-d3dkmt_multiplane_overlay_attributes",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-d3dkmt_multiplane_overlay_attributes",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/d3dkmt-multiplane-overlay-blend.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmthk/ne-d3dkmthk-d3dkmt_multiplane_overlay_blend",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dkmthk/ne-d3dkmthk-d3dkmt_multiplane_overlay_blend",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/d3dkmt-multiplane-overlay-flags.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmthk/ne-d3dkmthk-d3dkmt_multiplane_overlay_flags",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dkmthk/ne-d3dkmthk-d3dkmt_multiplane_overlay_flags",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/d3dkmt-multiplane-overlay-stereo-format.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dkmthk/ne-d3dkmthk-d3dkmt_multiplane_overlay_stereo_format",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dkmthk/ne-d3dkmthk-d3dkmt_multiplane_overlay_stereo_format",
             "redirect_document_id": false
         },
         {
@@ -1909,17 +1909,17 @@
         },
         {
             "source_path": "windows-driver-docs-pr/display/d3dukmdt-h---reserved.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dukmdt/",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dukmdt/",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/d3dddi-openallocationinfo2.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_openallocationinfo2",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_openallocationinfo2",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/d3dumddi-h---reserved.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dumddi/",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dumddi/",
             "redirect_document_id": false
         },
         {
@@ -1929,37 +1929,37 @@
         },
         {
             "source_path": "windows-driver-docs-pr/display/d3dddi-multiplane-overlay-filter.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dumddi/",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dumddi/",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/d3dddi-multiplane-overlay-filter-range.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dumddi/",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dumddi/",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/d3dddi-multiplane-overlay-filter-type.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/d3dumddi/",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3dumddi/",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/dispmprt-h---reserved.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/dispmprt/",
+            "redirect_URL": "/windows-hardware/drivers/ddi/dispmprt/",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/dxgkarg-system-display-enable-flags.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/dispmprt/ns-dispmprt-dxgkarg_system_display_enable_flags",
+            "redirect_URL": "/windows-hardware/drivers/ddi/dispmprt/ns-dispmprt-dxgkarg_system_display_enable_flags",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/dxgiddi-h---reserved.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/dxgiddi/",
+            "redirect_URL": "/windows-hardware/drivers/ddi/dxgiddi/",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/display/dxgi-ddi-multiplane-overlay-stereo-caps.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/dxgiddi/",
+            "redirect_URL": "/windows-hardware/drivers/ddi/dxgiddi/",
             "redirect_document_id": false
         },
         {
