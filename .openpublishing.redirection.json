@@ -1983,6 +1983,46 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "windows-driver-docs-pr/hid/3rd-party-filter-drivers.md",
+            "redirect_URL": "/previous-versions/windows/hardware/hid/3rd-party-filter-drivers",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/hid/axis-selection.md",
+            "redirect_URL": "/previous-versions/windows/hardware/hid/axis-selection",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/hid/creating-an-inf-file.md",
+            "redirect_URL": "/previous-versions/windows/hardware/hid/creating-an-inf-file",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/hid/directinput.md",
+            "redirect_URL": "/previous-versions/windows/hardware/hid/directinput",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/hid/directinput-kernel-mode-service-macros.md",
+            "redirect_URL": "/previous-versions/windows/hardware/hid/directinput-kernel-mode-service-macros",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/hid/directinput-messages.md",
+            "redirect_URL": "/previous-versions/windows/hardware/hid/directinput-messages",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/hid/directx-5-0-interface.md",
+            "redirect_URL": "/previous-versions/windows/hardware/hid/directx-5-0-interface",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/hid/extending-the-directinput-game-controller-control-panel.md",
+            "redirect_URL": "/previous-versions/windows/hardware/hid/extending-the-directinput-game-controller-control-panel",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/hid/extracting-and-setting-control-data-by-data-indices.md",
             "redirect_URL": "/windows-hardware/drivers/hid/interpreting-hid-reports",
             "redirect_document_id": false
@@ -1998,18 +2038,63 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "windows-driver-docs-pr/hid/force-feedback-device-driver-interface.md",
+            "redirect_URL": "/previous-versions/windows/hardware/hid/force-feedback-device-driver-interface",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/hid/hdpi-h-macros.md",
             "redirect_url": "/windows-hardware/drivers/ddi/hidpi/#functions",
             "redirect_document_id": false
         },
         {
+            "source_path": "windows-driver-docs-pr/hid/inf-ddinstall-migratetodevnode-section.md",
+            "redirect_URL": "/previous-versions/windows/hardware/hid/inf-ddinstall-migratetodevnode-section",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/hid/inf-ps2-inst-nointerruptinit-bioses-section.md",
+            "redirect_URL": "/previous-versions/windows/hardware/hid/inf-ps2-inst-nointerruptinit-bioses-section",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/hid/inf-ps2-inst-nointerruptinit-section.md",
+            "redirect_URL": "/previous-versions/windows/hardware/hid/inf-ps2-inst-nointerruptinit-section",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/hid/inf-shareddriver-entry.md",
+            "redirect_URL": "/previous-versions/windows/hardware/hid/inf-shareddriver-entry",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/hid/joystick-driver-model.md",
-            "redirect_URL": "/windows-hardware/drivers/hid/joystick-support",
+            "redirect_URL": "/previous-versions/windows/hardware/hid/joystick-support",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/hid/joystick-support.md",
+            "redirect_URL": "/previous-versions/windows/hardware/hid/joystick-support",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/hid/keyboard-and-mouse-class-drivers.md",
+            "redirect_URL": "/previous-versions/windows/hardware/hid/keyboard-and-mouse-class-drivers",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/hid/minidriver-requirements-for-tablet-pcs-running-on-earlier-versions-of-windows.md",
+            "redirect_URL": "/previous-versions/windows/hardware/hid/minidriver-requirements-for-tablet-pcs-running-on-earlier-versions-of-windows",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/hid/minidriver-supplied-callbacks.md",
             "redirect_URL": "/windows-hardware/drivers/hid/joystick-support",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/hid/non-hid-legacy-devices.md",
+            "redirect_URL": "/previous-versions/windows/hardware/hid/non-hid-legacy-devices",
             "redirect_document_id": false
         },
         {
@@ -2020,6 +2105,26 @@
         {
             "source_path": "windows-driver-docs-pr/hid/obtaining-hid-reports-by-user-mode-applications.md",
             "redirect_URL": "/windows-hardware/drivers/hid/obtaining-hid-reports",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/hid/original-interface.md",
+            "redirect_URL": "/previous-versions/windows/hardware/hid/original-interface",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/hid/os-driver-installation.md",
+            "redirect_URL": "/previous-versions/windows/hardware/hid/os-driver-installation",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/hid/ps-2--i8042prt--driver.md",
+            "redirect_URL": "/previous-versions/windows/hardware/hid/ps-2--i8042prt--driver",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/hid/registry-settings2.md",
+            "redirect_URL": "/previous-versions/windows/hardware/hid/registry-settings2",
             "redirect_document_id": false
         },
         {
@@ -2040,6 +2145,11 @@
         {
             "source_path": "windows-driver-docs-pr/hid/setting-value-data-by-specifying-its-usage.md",
             "redirect_URL": "/windows-hardware/drivers/hid/interpreting-hid-reports",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/hid/vjoyd-minidriver-override.md",
+            "redirect_URL": "/previous-versions/windows/hardware/hid/vjoyd-minidriver-override",
             "redirect_document_id": false
         },
         {

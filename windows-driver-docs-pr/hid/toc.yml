@@ -90,8 +90,6 @@
       href: binding-minidrivers-to-the-hid-class.md
     - name: "Minidrivers and the HID class driver"
       href: minidriver-operations.md
-    - name: "Minidriver requirements for tablet PCs"
-      href: minidriver-requirements-for-tablet-pcs-running-on-earlier-versions-of-windows.md
   - name: "HID over USB"
     items: 
     - name: "HID over USB Overview"
@@ -132,53 +130,3 @@
       href: error-handling-for-spi.md
     - name: "D3Hot Support for HidSpiCx devices"
       href: d3hot-support-for-hidspicx.md
-- name: "Non-HID legacy devices and drivers"
-  items: 
-  - name: "Non-HID legacy devices"
-    href: non-hid-legacy-devices.md
-  - name: "Configuration of keyboard and mouse class drivers"
-    href: keyboard-and-mouse-class-drivers.md
-  - name: "PS/2 (i8042prt) driver"
-    href: ps-2--i8042prt--driver.md
-  - name: "3rd party filter drivers"
-    href: 3rd-party-filter-drivers.md
-  - name: "Installing OS Drivers"
-    items: 
-    - name: "OS Driver installation"
-      href: os-driver-installation.md
-    - name: "INF DDInstall.MigrateToDevNode Section"
-      href: inf-ddinstall-migratetodevnode-section.md
-    - name: "INF SharedDriver Entry"
-      href: inf-shareddriver-entry.md
-    - name: "INF PS2_Inst.NoInterruptInit.Bioses Section"
-      href: inf-ps2-inst-nointerruptinit-bioses-section.md
-    - name: "INF PS2_Inst.NoInterruptInit Section"
-      href: inf-ps2-inst-nointerruptinit-section.md
-  - name: "DirectInput"
-    items: 
-    - name: "DirectInput Overview"
-      href: directinput.md
-    - name: "Joystick Support"
-      items: 
-      - name: "Joystick Support Overview"
-        href: joystick-support.md
-      - name: "Original Interface"
-        href: original-interface.md
-      - name: "DirectX 5.0 Interface"
-        href: directx-5-0-interface.md
-      - name: "Creating an INF File"
-        href: creating-an-inf-file.md
-      - name: "Registry Settings"
-        href: registry-settings2.md
-      - name: "VJoyD Minidriver Override"
-        href: vjoyd-minidriver-override.md
-      - name: "Axis Selection"
-        href: axis-selection.md
-    - name: "Force Feedback Device Driver Interface"
-      href: force-feedback-device-driver-interface.md
-    - name: "Extending the DirectInput Game Controller Control Panel"
-      href: extending-the-directinput-game-controller-control-panel.md
-    - name: "DirectInput Kernel-Mode Service Macros"
-      href: directinput-kernel-mode-service-macros.md
-    - name: "DirectInput Messages"
-      href: directinput-messages.md
