@@ -1381,10 +1381,10 @@
         href: newdisp--dynamic-reload-of-a-display-driver.md
       - name: "Dynamic Change of Permitted Driver Accelerations"
         href: dynamic-change-of-permitted-driver-accelerations.md
-  - name: "DirectDraw"
+  - name: "DirectDraw (Windows 2000 Model)"
 # Auto-expanded node
     items: 
-    - name: "DirectDraw"
+    - name: "DirectDraw for XDDM"
       href: directdraw.md
     - name: "About DirectDraw"
 # Auto-expanded node
@@ -1696,10 +1696,10 @@
         href: motion-compensation.md
       - name: "Motion Compensation Callbacks"
         href: motion-compensation-callbacks.md
-  - name: "Direct3D DDI"
+  - name: "Direct3D DDI (Windows 2000 Model)"
 # Auto-expanded node
     items: 
-    - name: "Direct3D DDI"
+    - name: "Direct3D for XDDM"
       href: direct3d.md
     - name: "Cross Platform Direct3D Driver Development"
       href: cross-platform-direct3d-driver-development.md
@@ -2313,10 +2313,10 @@
           href: handling-color-values-for-pixel-formats.md
         - name: "Default Texture Coordinates in Vertex Declarations"
           href: supplying-default-values-for-texture-coordinates-in-vertex-declaration.md
-  - name: "DirectX Video Acceleration"
+  - name: "DirectX Video Acceleration (Windows 2000 Model)"
 # Auto-expanded node
     items: 
-    - name: "About DXVA Version 1.0"
+    - name: "DXVA Version 1.0 for XDDM"
       href: directx-video-acceleration.md
     - name: "DirectX VA Support"
 # Auto-expanded node
