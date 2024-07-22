@@ -1,7 +1,7 @@
 ---
 title: Microsoft-Defined Bluetooth HCI Commands and Events
 description: The Bluetooth Host-Controller Interface (HCI) specifies all interactions between a host and a Bluetooth radio controller.
-ms.date: 01/10/2024
+ms.date: 07/15/2024
 ---
 
 # Microsoft-defined Bluetooth HCI extensions
@@ -101,11 +101,11 @@ The controller shall always complete this command promptly with a Command Comple
 | 0x00000000&nbsp;00000010 | Controller supports verifying the validity of the public X and Y coordinates on the curve during the Secure Simple pairing process for P-192 and P-256. <br>For more information, see [Bluetooth Core Specification Erratum 10734](https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=447440). |
 | 0x00000000&nbsp;00000020 | Controller supports Continuous Advertising Monitoring of LE advertisements performed concurrently with other radio activities, using [HCI_VS_MSFT_LE_Monitor_Advertisement [v1]][ref_HCI_VS_MSFT_LE_Monitor_Advertisement]. |
 | 0x00000000&nbsp;00000040 | Reserved. |
-| 0x00000000&nbsp;00000080 | Reserved. |
+| 0x00000000&nbsp;00000080 | Controller supports AVDTP offload and the HCI_VS_MSFT_Avdtp_* commands described in this document. |
 | 0x00000000&nbsp;00000100 | Reserved. |
 | 0x00000000&nbsp;00000200 | Reserved. |
 | 0x00000000&nbsp;00000400 | Controller supports [HCI_VS_MSFT_LE_Monitor_Advertisement [v2]][ref_HCI_VS_MSFT_LE_Monitor_Advertisement]. Additionally, the Controller supports Continuous Advertising Monitoring of LE advertisements performed concurrently with other radio activities, using [HCI_VS_MSFT_LE_Monitor_Advertisement [v2]][ref_HCI_VS_MSFT_LE_Monitor_Advertisement]. |
-| 0xFFFFFFFF&nbsp;FFFFF800 | Bits reserved for future definition. Must be zero. |
+| 0xFFFFFFFF&nbsp;FFFFFF00 | Bits reserved for future definition. Must be zero. |
 
 **Microsoft_event_prefix_length** (1 octet):
 
@@ -850,10 +850,274 @@ Monitor_handle (1 octet):
 
 Monitor_state (1 octet):
 
-| Value | Parameter description |
-|--|--|
-| 0x00 | The controller stopped monitoring the device specified by *BD_ADDR* and *Monitor_handle*. |
-| 0x01 | The controller started monitoring the device specified by *BD_ADDR* and *Monitor_handle*. |
+|Value|Parameter description|
+|---|---|
+|0x00|The controller stopped monitoring the device specified by _BD_ADDR_ and _Monitor_handle_.|
+|0x01|The controller started monitoring the device specified by _BD_ADDR_ and _Monitor_handle_.|
+
+## Microsoft-defined AVDTP HCI commands
+
+The following AVDTP HCI commands provide support for the audio sideband A2DP offload. For more information, see [Audio Sideband A2DP Offload](../audio/audio-sideband-a2dp-offload.md).
+
+|HCI AVDTP Commands|Description|
+|------------------|-----------|
+|[HCI_VS_MSFT_Avdtp_Capabilities_Configuration](#hci_vs_msft_avdtp_capabilities_configuration) | Configures the audio transport interface and returns codec capabilities of the Bluetooth controller, which is a list of codec information blocks. |
+|[HCI_VS_MSFT_Avdtp_Open](#hci_vs_msft_avdtp_open) | Allocates and configures AVDTP offload resources within the controller. |
+|[HCI_VS_MSFT_Avdtp_Start](#hci_vs_msft_avdtp_start) | Begins audio streaming from the audio transport to transmitted AVDTP media packets.|
+|[HCI_VS_MSFT_Avdtp_Suspend](#hci_vs_msft_avdtp_suspend) | Stops the streaming activity initiated by HCI_VS_MSFT_Avdtp_Start. |
+|[HCI_VS_MSFT_Avdtp_Close](#hci_vs_msft_avdtp_close) | Releases the AVDTP offload resources allocated by HCI_VS_MSFT_Avdtp_Open. |
+
+### HCI_VS_MSFT_Avdtp_Capabilities_Configuration
+
+HCI_VS_MSFT_Avdtp_Capabilities_Configuration configures the audio transport interface and returns codec capabilities of the Bluetooth controller, which is a list of codec information blocks. Each codec information block describes one supported codec.
+
+Some parameters below are arrays of structures with variable length, so it is assumed that all these parameters will still fit into one HCI Command and into one corresponding HCI Event.
+
+#### Command_parameters
+
+External\_codec\_count (1 octet):
+
+| **Value** | **Parameter description**                          |
+|-----------|----------------------------------------------------|
+| 0x00-0xFF | The count of Codec\_capability blocks that follow. |
+
+External\_codec\_capability (variable length):
+
+| **Value** | **Parameter description** |
+| --- | --- |
+| Codec capability block | A codec capability information block as described in the Codec capabilities information. This describes a single codec supported by the device attached to the audio interface. |
+
+This data structure repeats _External\_codec\_count_ times.
+
+Audio\_interface\_parameter\_count (1 octet):
+
+| **Value** | **Parameter description**                              |
+|-----------|--------------------------------------------------------|
+| 0x00-0xFF | The count of Audio\_interface\_parameters that follow. |
+
+Audio\_interface\_parameter (variable length)
+
+| **Value** | **Parameter description** |
+|-----------|---------------------------|
+| Audio interface parameter | An audio interface parameter as described above, set by the device connected to the audio interface. |
+
+This data structure repeats _Audio\_interface\_parameter\_count_ times.
+
+#### Return_parameters
+
+Status (1 octet):
+
+| **Value** | **Parameter description**                                                            |
+|-----------|--------------------------------------------------------------------------------------|
+| 0x00      | The command succeeded.                                                               |
+| 0x01-0xFF | The command failed. See Error Codes in the Bluetooth Core specification for details. |
+
+Subcommand\_opcode _ (1 octet):
+
+| **Value** | **Parameter description**                                                    |
+|-----------|------------------------------------------------------------------------------|
+| 0x07     | The subcommand opcode for HCI\_VS\_MSFT\_Avdtp\_Capabilities\_Configuration. |
+
+Internal\_codec\_count (1 octet):
+
+| **Value** | **Parameter description**                                    |
+|-----------|--------------------------------------------------------------|
+| 0x00-0xFF | The count of Internal\_codec\_capability blocks that follow. |
+
+Internal\_codec\_capability (variable length):
+
+| **Value** | **Parameter description** |
+| --- | --- |
+| Codec capability block | A codec capability information block as described in [Audio Sideband A2DP Offload](../audio/audio-sideband-a2dp-offload.md). This describes a single codec supported by the Bluetooth controller. |
+
+This data structure repeats Internal\_codec\_count times.
+
+Audio\_interface\_parameter\_count (1 octet):
+
+| **Value** | **Parameter description**                              |
+|-----------|--------------------------------------------------------|
+| 0x00-0xFF | The count of Audio\_interface\_parameters that follow. |
+
+Audio\_interface\_parameter (variable length)
+
+| **Value** | **Parameter description** |
+|-----------|---------------------------|
+| Audio interface parameter | An audio interface parameter as described above. The host software passes this parameter to the device connected to the audio interface. |
+
+This data structure repeats Audio\_interface\_parameter\_count times.
+
+### HCI_VS_MSFT_Avdtp_Open
+
+Allocates and configures AVDTP offload resources within the controller.
+
+Some parameters below are arrays of structures with variable length, so it is assumed that all these parameters will still fit into one HCI Command and into one corresponding HCI Event.
+
+#### Command_parameters
+
+Connection_handle (2 octets)
+
+| **Value** | **Parameter description**                                                 |
+|-----------|---------------------------------------------------------------------------|
+| 0xXXXX    | IIdentifies the AVDTP media L2CAP channel connected to the remote device. |
+
+L2cap_destination_cid (2 octets)
+
+| **Value** | **Parameter description**                    |
+|-----------|----------------------------------------------|
+| 0xXXXX    | L2CAP destination CID of AVDTP media channel |
+
+L2cap_mtu (2 octets)
+
+| **Value** | **Parameter description**     |
+|-----------|-------------------------------|
+| 0xXXXX    | L2CAP AVDTP media channel MTU |
+
+Configured_codec_capability (variable length):
+
+| **Value** | **Parameter description** |
+| --- | --- |
+| Codec capability block | A codec capability information block as described in [Audio Sideband A2DP Offload](../audio/audio-sideband-a2dp-offload.md). This describes the codec configured for the AVDTP media. |
+
+Audio_interface_parameter_count (1 octet):
+
+| **Value** | **Parameter description**                              |
+|-----------|--------------------------------------------------------|
+| 0x00-0xFF | The count of Audio\_interface\_parameters that follow. |
+
+Audio_interface_parameter (variable length)
+
+| **Value** | **Parameter description** |
+| --- | --- |
+| Audio interface parameter | An audio interface parameter as described above. The device connected to the audio interface specifies these parameters for a particular stream instance. |
+
+This data structure repeats Audio\_interface\_parameter\_count times.
+
+#### Return_parameters
+
+Status (1 octet):
+
+| **Value** | **Parameter description** |
+|-----------|---------------------------|
+| 0x00      | The command succeeded.    |
+| 0x01-0xFF | The command failed. See Error Codes in the Bluetooth Core specification for details. |
+
+Subcommand\_opcode (1 octet):
+
+| **Value** | **Parameter description**                             |
+|-----------|-------------------------------------------------------|
+| 0x08      | The subcommand opcode for HCI\_VS\_MSFT\_Avdtp\_Open. |
+
+Avdtp\_offload\_handle (2 octets):
+
+| **Value** | **Parameter description**                                   |
+|-----------|-------------------------------------------------------------|
+| 0xXXXX    | Identifies the resource allocated for the offloaded stream. |
+
+Audio_interface_parameter_count (1 octet):
+
+| **Value** | **Parameter description**                              |
+|-----------|--------------------------------------------------------|
+| 0x00-0xFF | The count of Audio\_interface\_parameters that follow. |
+
+Audio_interface_parameter (variable length)
+
+| **Value** | **Parameter description** |
+| --- | --- |
+| Audio interface parameter | An audio interface parameter as described above. The host software passes this parameter to the device connected to the audio interface for the stream instance. |
+
+This data structure repeats Audio_interface_parameter_count times.
+
+### HCI_VS_MSFT_Avdtp_Start
+
+This command begins audio streaming from the audio transport to transmitted AVDTP media packets. Upon executing this command, the Bluetooth controller begins the following activity.
+
+- Receives audio data from the audio transport
+- If the encoder is in the Bluetooth controller, encodes the data received from the audio transport to produce encoded frames
+- If the encoder is in the audio DSP, extracts encoded frames from the audio transport
+- Assembles encoded frames into AVDTP media payloads
+- Constructs and transmits AVDTP media packets containing the media payloads
+
+#### Command_parameters
+
+Avdtp_offload_handle (2 octets):
+
+| **Value** | **Parameter description**                                   |
+|-----------|-------------------------------------------------------------|
+| 0xXXXX    | Identifies the resource allocated for the offloaded stream. |
+
+#### Return_parameters
+
+Status (1 octet):
+
+| **Value** | **Parameter description** |
+| --- | --- |
+| 0x00 | The command succeeded. |
+| 0x01-0xFF | The command failed. See Error Codes in the Bluetooth Core specification for details. |
+
+Subcommand\_opcode (1 octet):
+
+| **Value** | **Parameter description**                              |
+|-----------|--------------------------------------------------------|
+| 0x09      | The subcommand opcode for HCI\_VS\_MSFT\_Avdtp\_Start. |
+
+### HCI_VS_MSFT_Avdtp_Suspend
+
+Stops the streaming activity initiated by HCI\_VS\_MSFT\_Avdtp\_Start.
+
+#### Command_parameters
+
+Avdtp\_offload\_handle (2 octets):
+
+| **Value** | **Parameter description**                                  |
+|-----------|------------------------------------------------------------|
+| 0xXXXX    | Identifies the resource allocated for the offloaded stream |
+
+#### Return_parameters
+
+Status (1 octet):
+
+| **Value** | **Parameter description**                                                            |
+|-----------|--------------------------------------------------------------------------------------|
+| 0x00      | The command succeeded.                                                               |
+| 0x01-0xFF | The command failed. See Error Codes in the Bluetooth Core specification for details. |
+
+Subcommand\_opcode (1 octet):
+
+| **Value** | **Parameter description**                                |
+|-----------|----------------------------------------------------------|
+| 0x0A      | The subcommand opcode for HCI\_VS\_MSFT\_Avdtp\_Suspend. |
+
+### HCI_VS_MSFT_Avdtp_Close
+
+Releases the AVDTP offload resources allocated by HCI\_VS\_MSFT\_Avdtp\_Open.
+
+#### Command_parameters
+
+Avdtp\_offload\_handle (2 octets):
+
+| **Value** | **Parameter description**                                         |
+|-----------|-------------------------------------------------------------------|
+| 0xXXXX    | Note: This value is no longer valid after this command completes. |
+
+#### Return_parameters
+
+Status (1 octet):
+
+| **Value** | **Parameter description**                                                            |
+|-----------|--------------------------------------------------------------------------------------|
+| 0x00      | The command succeeded.                                                               |
+| 0x01-0xFF | The command failed. See Error Codes in the Bluetooth Core specification for details. |
+
+Subcommand\_opcode (1 octet):
+
+| **Value** | **Parameter description**                              |
+|-----------|--------------------------------------------------------|
+| 0x0B      | The subcommand opcode for HCI\_VS\_MSFT\_Avdtp\_Close. |
+  
+| Value | Parameter description                                                                     |
+|-------|-------------------------------------------------------------------------------------------|
+| 0x00  | |
+| 0x01  | The controller started monitoring the device specified by *BD_ADDR* and *Monitor_handle*. |
 
 ## Appendix
 

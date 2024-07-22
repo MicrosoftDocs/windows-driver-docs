@@ -382,6 +382,8 @@
     href: windows-11-apis-for-audio-processing-objects.md
   - name: "Audio Hardware Resource Management"
     href: audio-hardware-resource-management.md
+  - name: "Audio Sideband A2DP Offload"
+    href: audio-sideband-a2dp-offload.md
   - name: "Bluetooth HFP Bypass Guidelines for Audio Drivers"
 # Auto-expanded node
     items: 
