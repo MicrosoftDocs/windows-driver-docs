@@ -9323,6 +9323,16 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "windows-driver-docs-pr/usbcon/what-s-new-in-usb-in-windows-8.md",
+            "redirect_URL": "/previous-versions/windows/hardware/usb/windows-10--what-s-new-for-usb",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/usbcon/what-s-new-for-usb-in-windows-blue.md",
+            "redirect_URL": "/previous-versions/windows/hardware/usb/windows-10--what-s-new-for-usb",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/usbcon/why-is-my-usb-driver-getting-out-of-bandwidth-errors-.md",
             "redirect_URL": "/windows-hardware/drivers/usbcon/usb-bandwidth-allocation",
             "redirect_document_id": false
