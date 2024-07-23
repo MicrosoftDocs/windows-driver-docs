@@ -4,10 +4,6 @@
   items: 
   - name: "Windows 10: What's new for USB"
     href: windows-10--what-s-new-for-usb.md
-  - name: "Windows 8.1: What's new for USB"
-    href: what-s-new-for-usb-in-windows-blue.md
-  - name: "Windows 8: What's new for USB"
-    href: what-s-new-in-usb-in-windows-8.md
 - name: "Concepts for all USB developers"
   items: 
   - name: "Getting started with USB development"
