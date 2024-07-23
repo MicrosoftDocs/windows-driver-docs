@@ -2690,6 +2690,8 @@
           href: inf-validation-errors-and-warnings.md
         - name: "InfVerif Error 1330 - 1333" 
           href: inf-verif-error-1330.md
+        - name: "InfVerif Error 2084"
+          href: inf-verif-error-2084.md
     - name: "Reg2inf"
       href: reg2inf.md
   - name: "Tools for Changing Boot Options for Driver Testing and Debugging"
