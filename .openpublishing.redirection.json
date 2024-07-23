@@ -9324,12 +9324,12 @@
         },
         {
             "source_path": "windows-driver-docs-pr/usbcon/what-s-new-in-usb-in-windows-8.md",
-            "redirect_URL": "/previous-versions/windows/hardware/usb/windows-10--what-s-new-for-usb",
+            "redirect_URL": "/previous-versions/windows/hardware/usb/what-s-new-in-usb-in-windows-8",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/usbcon/what-s-new-for-usb-in-windows-blue.md",
-            "redirect_URL": "/previous-versions/windows/hardware/usb/windows-10--what-s-new-for-usb",
+            "redirect_URL": "/previous-versions/windows/hardware/usb/what-s-new-for-usb-in-windows-blue",
             "redirect_document_id": false
         },
         {
