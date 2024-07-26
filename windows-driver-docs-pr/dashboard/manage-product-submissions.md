@@ -43,16 +43,20 @@ Methods for managing product submissions
     https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/{productID}/submissions/
     ```
 
-    The response body contains a [Submission resource](get-product-data.md#submission-resource) which includes the ID of the submission, the shared access signature (SAS) URI for uploading the product (driver) package for the submission to Azure Blob Storage. [!NOTE] > A SAS URI provides access to a secure resource in Azure storage without requiring account keys. For background information about SAS URIs and their use with Azure Blob Storage, see [Shared Access Signatures, Part 1: Understanding the SAS model](/azure/storage/common/storage-sas-overview)  and [Shared Access Signatures, Part 2: Create and use a SAS with Blob storage](/azure/storage/common/storage-sas-overview) .
+    The response body contains a [Submission resource](get-product-data.md#submission-resource) which includes the ID of the submission, the shared access signature (SAS) URI for uploading the product (driver) package for the submission to Azure Blob Storage. [!NOTE] > A SAS URI provides access to a secure resource in Azure storage without requiring account keys. For background information about SAS URIs and their use with Azure Blob Storage, see [Grant limited access to Azure Storage resources using shared access signatures (SAS)](/azure/storage/common/storage-sas-overview).
 
 1. **Upload your package** to the Azure Blob Storage at the location specified by the SAS URI in the previous step.
-The following C# code example demonstrates how to upload a package to Azure Blob Storage using the [CloudBlockBlob](/dotnet/api/microsoft.azure.storage.blob.cloudblockblob/) class in the Azure Storage Client Library for .NET. This example assumes that the package has already been written to a stream object.
+The following C# code example demonstrates how to upload a package to Azure Blob Storage using the [BlockBlobClient](/dotnet/api/azure.storage.blobs.specialized.blockblobclient/) class in the Azure Storage Blobs Library for .NET. This example assumes that the package has already been written to a stream object.
 
     ```json
     string sasUrl = "<SAS URL from Hardware API>";
-    Microsoft.WindowsAzure.Storage.Blob.CloudBlockBlob blockBob =
-        new Microsoft.WindowsAzure.Storage.Blob.CloudBlockBlob(new System.Uri(sasUrl));
-    await blockBob.UploadFromStreamAsync(stream);
+    Azure.Storage.Blobs.Specialized.BlockBlobClient blockBlobClient =
+        new Azure.Storage.Blobs.Specialized.BlockBlobClient(new System.Uri(sasUrl));
+    string filePath = "<Path to HLK package>";
+    using (FileStream fileStream = File.OpenRead(filePath))
+    { 
+        await blockBlobClient.UploadAsync(fileStream);
+    }
     ```
 
 1. [Commit the product submission](commit-a-product-submission.md)  by executing the following method. This will alert Hardware Dev Center that you are done with your product submission and validation will be started for the submission.
