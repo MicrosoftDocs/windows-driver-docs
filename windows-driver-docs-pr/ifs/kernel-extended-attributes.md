@@ -30,7 +30,7 @@ This information, along with any other a given usage might need, is then set on 
 
 In order to set a Kernel EA, it must begin with the prefix ``"$Kernel."`` followed by a valid EA name string. An attempt to set a Kernel EA from user mode is silently ignored. The request returns **STATUS_SUCCESS** but no actual EA modification is made. Calling an API like [ZwSetEaFile](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwseteafile) or [FltSetEaFile](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltseteafile) to set a Kernel EA from kernel mode isn't sufficient because SMB supports the setting of EAs across the network and those requests are issued from kernel mode on the server.
 
-To set a Kernel EA, the caller must also set the **IRP_MN_KERNEL_CALL** value in the MinorFunction field of the IRP (I/O request packet). Since the only way to set this field is by generating a custom IRP, the routine [FsRtlSetKernelEaFile](/previous-versions/mt807493(v=vs.85)) has been exported from the FsRtl package as a support function to set up a Kernel EA.
+To set a Kernel EA, the caller must also set the **IRP_MN_KERNEL_CALL** value in the MinorFunction field of the IRP (I/O request packet). Since the only way to set this field is by generating a custom IRP, the routine [FsRtlSetKernelEaFile](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlsetkerneleafile) has been exported from the FsRtl package as a support function to set up a Kernel EA.
 
 Starting in Windows 10 version 1803, user EAs and kernel EAs can be intermixed. Setting a kernel EA doesn't generate a USN_REASON_EA_CHANGE record to the USN Journal. The system does generate USN_REASON_EA_CHANGE when any user EAs are set.
 
@@ -38,7 +38,7 @@ Starting in Windows 10 version 1803, user EAs and kernel EAs can be intermixed. 
 
 Querying the EAs on a file from user mode returns both normal and Kernel EAs. They're returned to user mode to minimize any application compatibility issues. The normal [ZwQueryEaFile](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwqueryeafile) and [FltQueryEaFile](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltqueryeafile) operations return both normal and kernel EAs from both user and kernel modes.
 
-When only a **FileObject** is available, using [FsRtlQueryKernelEaFile](/previous-versions/mt807492(v=vs.85)) may be more convenient for use to query for Kernel EAs from kernel mode.
+When only a **FileObject** is available, using [FsRtlQueryKernelEaFile](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlquerykerneleafile) may be more convenient for use to query for Kernel EAs from kernel mode.
 
 ## Querying Update Sequence Number Journal Information
 
@@ -68,7 +68,7 @@ User-mode components can't tamper with kernel EAs. Kernel EAs can exist in the s
 [FltQueryEaFile](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltqueryeafile)  
 [FltSetEaFile](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltseteafile)  
 [FSCTL_QUERY_USN_JOURNAL](/windows/win32/api/winioctl/ni-winioctl-fsctl_query_usn_journal)  
-[FsRtlQueryKernelEaFile](/previous-versions/mt807492(v=vs.85))
-[FsRtlSetKernelEaFile](/previous-versions/mt807493(v=vs.85))  
+[FsRtlQueryKernelEaFile](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlquerykerneleafile)
+[FsRtlSetKernelEaFile](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlsetkerneleafile)  
 [ZwQueryEaFile](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwqueryeafile)  
 [ZwSetEaFile](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwseteafile)
