@@ -1,13 +1,13 @@
 ---
 title: Introduction to WinUSB for Developers
 description: This section describes the generic WinUSB driver (Winusb.sys) and its user-mode component (Winusb.dll) provided by Microsoft for all USB devices.
-ms.date: 01/17/2024
+ms.date: 08/01/2024
 ---
 
 # Introduction to WinUSB for developers
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer experiencing USB problems, see [Troubleshoot common USB problems](https://support.microsoft.com/help/17614/windows-10-troubleshoot-common-usb-problems)
+> This topic is for programmers. If you are a customer experiencing USB problems, see [Fix USB-C problems in Windows](https://support.microsoft.com/windows/fix-usb-c-problems-in-windows-f4e0e529-74f5-cdae-3194-43743f30eed2)
 
 WinUSB is a generic driver for USB devices that is included with Windows.
 

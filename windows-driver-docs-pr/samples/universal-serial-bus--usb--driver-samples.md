@@ -1,7 +1,7 @@
 ---
 title: Universal Serial Bus (USB) Driver Samples
 description: The driver samples in this directory provide a starting point for writing a custom USB driver for your device.
-ms.date: 03/22/2023
+ms.date: 08/01/2024
 ---
 
 # Universal Serial Bus (USB) driver samples
@@ -11,7 +11,7 @@ The USB driver samples provide a starting point for writing a custom USB driver 
 > [!IMPORTANT]
 > This topic is for USB device driver developers.
 >
-> If you are a Windows user experiencing problems with a USB device, please see [Troubleshoot common USB problems](https://support.microsoft.com/help/17614/windows-10-troubleshoot-common-usb-problems).
+> If you are a Windows user experiencing problems with a USB device, please see [Fix USB-C problems in Windows](https://support.microsoft.com/windows/fix-usb-c-problems-in-windows-f4e0e529-74f5-cdae-3194-43743f30eed2).
 
 There are several ways you can use the Windows 10 USB driver samples:
 
