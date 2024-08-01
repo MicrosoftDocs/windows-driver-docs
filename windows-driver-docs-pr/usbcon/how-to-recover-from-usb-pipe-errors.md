@@ -1,13 +1,13 @@
 ---
 title: How to Recover From USB Pipe Errors
 description: This article provides information about steps you can try when a data transfer to a USB pipe fails. The mechanisms described in this article cover abort, reset, and cycle port operations on bulk, interrupt, and isochronous pipes.
-ms.date: 01/16/2024
+ms.date: 08/01/2024
 ---
 
 # How to recover from USB pipe errors
 
 > [!NOTE]
-> This article is for device driver developers. If you're experiencing difficulty with a USB device, please see [Troubleshoot common USB problems](https://support.microsoft.com/windows/troubleshoot-common-usb-problems-5e9a9b49-ad43-702e-083e-6107e95deb88)
+> This article is for device driver developers. If you're experiencing difficulty with a USB device, please see [Fix USB-C problems in Windows](https://support.microsoft.com/windows/fix-usb-c-problems-in-windows-f4e0e529-74f5-cdae-3194-43743f30eed2)
 
 This article provides information about steps you can try when a data transfer to a USB pipe fails. The mechanisms described in this article cover abort, reset, and cycle port operations on bulk, interrupt, and isochronous pipes.
 

@@ -1,13 +1,13 @@
 ---
 title: USB Device Class Drivers Included in Windows
 description: This article lists the Microsoft-provided drivers for the supported USB device classes.
-ms.date: 01/17/2024
+ms.date: 08/01/2024
 ---
 
 # USB device class drivers included in Windows
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer experiencing USB problems, see [Troubleshoot common USB problems](https://support.microsoft.com/help/17614/windows-10-troubleshoot-common-usb-problems)
+> This topic is for programmers. If you are a customer experiencing USB problems, see [Fix USB-C problems in Windows](https://support.microsoft.com/windows/fix-usb-c-problems-in-windows-f4e0e529-74f5-cdae-3194-43743f30eed2)
 
 This article lists the Microsoft-provided drivers for the supported USB device classes.
 
