@@ -12,7 +12,7 @@ ms.date: 08/02/2024
 >
 > If the update includes a KB article number, you can search for that number on the [Microsoft support](https://support.microsoft.com/) web site to find more information.
 >
-> If the update was for a non-Microsoft driver, you'll need to go to the web site for the hardware vendor and try to find more information.
+> If the update was for a non-Microsoft driver, go to the web site for the hardware vendor and try to find more information.
 >
 > If you're looking for technical support for the dashboard or Windows Hardware Lab Kit (HLK), please read on.
 
