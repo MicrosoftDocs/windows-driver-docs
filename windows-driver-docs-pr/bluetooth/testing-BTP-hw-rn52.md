@@ -8,7 +8,7 @@ ms.date: 08/05/2024
 
 ## Overview
 
-The RN52 is a Bluetooth Basic Rate (BR) radio from Roving Networks capable of behaving as an audio peripheral, such as a speaker or headset. More information can be found via the [MicroChip RN52](https://www.microchip.com/product/RN52) page. This sled breaks out the audio out data from the radio and routes it to an audio codec and audio processing FPGA on the Traduci, in order to aid with validation.
+The RN52 is a Bluetooth basic rate (BR) radio from Roving Networks capable of behaving as an audio peripheral, such as a speaker or headset. To aid with validation, this sled routes the audio out data from the radio to an audio codec and audio processing field-programmable gate array (FPGA) on the Traduci. For more information, see the [MicroChip RN52](https://www.microchip.com/product/RN52) web page.
 
 | Device Name | Parameter | Usage Example |
 | --- | --- | --- |
@@ -25,7 +25,7 @@ The RN52 is a Bluetooth Basic Rate (BR) radio from Roving Networks capable of be
 
 ## Hardware
 
-The PMOD + Audio header RN52 device can be purchased via [MCCI](https://store.mcci.com/collections/frontpage/products/rn52-sled)
+The peripheral module (PMOD) interface and audio header RN52 device can be purchased via [MCCI](https://store.mcci.com/collections/frontpage/products/rn52-sled)
 
 ### RN52 Device on BTP-compatible sled
 
@@ -37,7 +37,7 @@ The PMOD + Audio header RN52 device can be purchased via [MCCI](https://store.mc
 ## Features
 
 - UART data connection with AT commands to configure software
-- Supports SPP, A2DP, HFP, and AVRCP profiles
-- Version 3.0 audio module
+- SPP, A2DP, HFP, and AVRCP profiles
+- Audio module version 3.0
 - Fully certified Class 2 BR Bluetooth 2.1+EDR
 - Small form factor, low power, surface mount module
