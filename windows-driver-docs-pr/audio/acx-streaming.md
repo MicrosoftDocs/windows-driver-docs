@@ -1,7 +1,7 @@
 ---
 title: ACX Streaming
 description: This topic provides a summary of the ACX streaming and the associated buffering, which is critical to a glitch free audio experience.
-ms.date: 03/08/2024
+ms.date: 07/17/2024
 ms.localizationpriority: medium
 ---
 
@@ -544,7 +544,7 @@ The [EvtAcxStreamGetHwLatency](/windows-hardware/drivers/ddi/acxstreams/nc-acxst
 
 The [EvtAcxStreamSetRenderPacket](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_set_render_packet) event tells the driver which packet was just released by the client. If there are no glitches, this packet should be (CurrentRenderPacket + 1), where CurrentRenderPacket is the packet the driver is currently streaming from.
 
-Flags can be 0 or AcxStreamSetRenderPacketEndOfStream, indicating the Packet is the last packet in the stream, and EosPacketLength is a valid length in bytes for the packet.
+Flags can be 0 or `KSSTREAM_HEADER_OPTIONSF_ENDOFSTREAM = 0x200`, indicating the Packet is the last packet in the stream, and EosPacketLength is a valid length in bytes for the packet. For more information see _OptionsFlags_ in [KSSTREAM_HEADER structure (ks.h)](/windows-hardware/drivers/ddi/ks/ns-ks-ksstream_header).
 
 The driver should continue to increase the CurrentRenderPacket as packets are rendered instead of changing its CurrentRenderPacket to match this value.
 
