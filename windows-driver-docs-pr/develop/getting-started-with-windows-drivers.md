@@ -6,7 +6,7 @@ ms.date: 06/21/2024
 
 # Getting Started with 'Windows Drivers'
 
-When you write a driver to run on the Windows operating system, you have three choices. You can write a *Desktop driver*, which *only* runs on Windows Desktop editions. Or, if your driver passes `infverif /u` and [ApiValidator](validating-windows-drivers#apivalidator), you can write a [*Universal Driver*](../install/using-a-universal-inf-file.md). If your driver passes `infverif /w`, which adds [Driver Package Isolation](../develop/driver-isolation.md), you can write a *Windows Driver*, which runs on both Desktop and non-Desktop variants of Windows. For info on configuring your build settings, see [Target Platforms](./target-platforms.md).
+When you write a driver to run on the Windows operating system, you have three choices. You can write a *Desktop driver*, which *only* runs on Windows Desktop editions. Or, if your driver passes `infverif /u` and [ApiValidator](./validating-windows-drivers.md#apivalidator), you can write a [*Universal Driver*](../install/using-a-universal-inf-file.md). If your driver passes `infverif /w`, which adds [Driver Package Isolation](../develop/driver-isolation.md), you can write a *Windows Driver*, which runs on both Desktop and non-Desktop variants of Windows. For info on configuring your build settings, see [Target Platforms](./target-platforms.md).
 
 The following additional requirements apply to Windows Drivers:
 

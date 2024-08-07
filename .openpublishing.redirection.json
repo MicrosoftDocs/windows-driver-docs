@@ -15673,32 +15673,32 @@
         },
         {
             "source_path":  "windows-driver-docs-pr/devtest/tools-for-debugging-drivers.md",
-            "redirect_URL":  "windows-driver-docs-pr/debugger/",
+            "redirect_URL": "/windows-hardware/drivers/debugger/",
             "redirect_document_id":  false
         },
         {
             "source_path":  "windows-driver-docs-pr/devtest/using-debugging-code-in-a-driver.md",
-            "redirect_URL":  "windows-driver-docs-pr/debugger/",
+            "redirect_URL": "/windows-hardware/drivers/debugger/",
             "redirect_document_id":  false
         },
         {
             "source_path":  "windows-driver-docs-pr/devtest/debugging-code-overview.md",
-            "redirect_URL":  "windows-driver-docs-pr/debugger/",
+            "redirect_URL": "/windows-hardware/drivers/debugger/",
             "redirect_document_id":  false
         },
         {
             "source_path":  "windows-driver-docs-pr/devtest/conditional-compilation-and-the-build-environment.md",
-            "redirect_URL":  "windows-driver-docs-pr/debugger/",
+            "redirect_URL": "/windows-hardware/drivers/debugger/",
             "redirect_document_id":  false
         },
         {
             "source_path":  "windows-driver-docs-pr/devtest/interpreting-a-bug-check-code.md",
-            "redirect_URL":  "windows-driver-docs-pr/debugger/",
+            "redirect_URL": "/windows-hardware/drivers/debugger/",
             "redirect_document_id":  false
         },
         {
             "source_path":  "windows-driver-docs-pr/devtest/using-a-debugger.md",
-            "redirect_URL":  "windows-driver-docs-pr/debugger/",
+            "redirect_URL": "/windows-hardware/drivers/debugger/",
             "redirect_document_id":  false
         },
         {
