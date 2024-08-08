@@ -1,34 +1,34 @@
 ---
-title: hardware dashboard API
-description: The Microsoft Hardware APIs programmatically query and create submissions for hardware products within your organization's Partner Center account.
+title: Hardware dashboard API
+description: The Microsoft hardware dashboard APIs programmatically query and create submissions for hardware products within your organization's Partner Center account.
 ms.topic: article
-ms.date: 09/21/2018
+ms.date: 08/08/2024
 ---
 
-# hardware dashboard API
+# Hardware dashboard API
 
 Use the *Microsoft Hardware APIs* to programmatically query and create submissions for hardware products within your organization's Partner Center account. These APIs are useful if your account manages many products, and you want to automate and optimize the submission process for these assets. These APIs use Microsoft Entra ID (Microsoft Entra ID) to authenticate the calls from your app or service.
 The following steps describe the end-to-end process of using the Microsoft Hardware API:
 
 1. These APIs can only be used by accounts that belong to the Hardware [Partner Center program](./get-started-dashboard-submissions.md).
 
-2. Make sure that you have completed the prerequisites below.
+1. Make sure that you have completed the prerequisites below.
 
-3. Before you call a method in the Microsoft Hardware API, obtain a Microsoft Entra ID access token, as illustrated below. After you obtain a token, you have 60 minutes to use this token in calls to the Microsoft Store submission API before the token expires. After the token expires, you can generate a new token.
+1. Before you call a method in the Microsoft Hardware API, obtain a Microsoft Entra ID access token, as illustrated below. After you obtain a token, you have 60 minutes to use this token in calls to the Microsoft Store submission API before the token expires. After the token expires, you can generate a new token.
 
-4. Call the Microsoft Hardware API.
+1. Call the Microsoft Hardware API.
 
 ## Complete the prerequisites for using the Microsoft Hardware API
 
 Before you start writing code to call the Microsoft Hardware API, make sure that you have completed the following required prerequisites.
 
-* You (or your organization) must have a Microsoft Entra ID directory and you must have [Global administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)  permission for the directory. If you already use Microsoft 365 or other business services from Microsoft, you already have Microsoft Entra ID directory. Otherwise, you can [create a new Microsoft Entra ID in Partner Center](/windows/uwp/publish/associate-azure-ad-with-partner-center#create-a-brand-new-azure-ad-to-associate-with-your-partner-center-account) for no additional charge.
+- You (or your organization) must have a Microsoft Entra ID directory and you must have [Global administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)  permission for the directory. If you already use Microsoft 365 or other business services from Microsoft, you already have Microsoft Entra ID directory. Otherwise, you can [create a new Microsoft Entra ID in Partner Center](/windows/uwp/publish/associate-azure-ad-with-partner-center#create-a-brand-new-azure-ad-to-associate-with-your-partner-center-account) for no additional charge.
 
-* If a Microsoft Entra ID application does not already exist, [you must create one](/windows/uwp/publish/add-users-groups-and-azure-ad-applications#create-a-new-azure-ad-application-account-in-your-organizations-directory-and-add-it-to-your-partner-center-account).
+- If a Microsoft Entra ID application does not already exist, [you must create one](/windows/uwp/publish/add-users-groups-and-azure-ad-applications#create-a-new-azure-ad-application-account-in-your-organizations-directory-and-add-it-to-your-partner-center-account).
 
-* You must [associate a Microsoft Entra ID application with your Partner Center account](/windows/uwp/publish/associate-azure-ad-with-partner-center) and assign it the **Manager** role.
+- You must [associate a Microsoft Entra ID application with your Partner Center account](/windows/uwp/publish/associate-azure-ad-with-partner-center) and assign it the **Manager** role.
 
-* Gather your [Microsoft Entra ID application tenant ID, client ID, and key](/windows/uwp/publish/add-users-groups-and-azure-ad-applications#manage-keys-for-an-azure-ad-application).  **Be sure to print or copy this key info, as you won't be able to access it again after you leave the key creation page.** 
+- Gather your [Microsoft Entra ID application tenant ID, client ID, and key](/windows/uwp/publish/add-users-groups-and-azure-ad-applications#manage-keys-for-an-azure-ad-application).  **Be sure to print or copy this key info, as you won't be able to access it again after you leave the key creation page.**
 
 ## Assigning the appropriate Hardware roles to your Microsoft Entra ID application
 
@@ -36,14 +36,13 @@ After you have completed the above prerequisites we must now assign the appropri
 
 1. From Partner Center, select the gear icon (near the upper right corner of the dashboard) and then select **Developer settings**. In the **Settings** menu, select **Users**.
 
-2. On the **Users** page, select **Microsoft Entra ID applications** and the Microsoft Entra ID application that represents the app or service that you will use to access submissions for your Partner Center account.  
+1. On the **Users** page, select **Microsoft Entra ID applications** and the Microsoft Entra ID application that represents the app or service that you will use to access submissions for your Partner Center account.
 
-3. On this page, under **Roles**, select **Hardware**.
+1. On this page, under **Roles**, select **Hardware**.
 
-    ![an image showing the Hardware tab in the Roles section.](images/hardware-tab-in-roles-section.png)
+    ![A screenshot showing the Hardware tab in the Roles section.](images/hardware-tab-in-roles-section.png)
 
     Select **Driver Submitter**, **Shipping Label owner**, and if available, **Shipping Label promoter**.  [Learn more about these roles](./hardware-dashboard-users-manage.md)
-    
 
 ## Obtain a Microsoft Entra ID access token
 
@@ -76,11 +75,9 @@ After you have a Microsoft Entra ID access token, you can call methods in the Mi
 
 The following sample provides detailed code that demonstrate how to use the Microsoft Hardware API along with a complete end to end prebuilt solution created by the Microsoft Surface and Devices team:
 
-* [C# sample](https://download.microsoft.com/download/C/F/4/CF404E53-87A0-4204-BA13-A64B09A237C1/HardwareApiCSharpSample.zip)
-
-[hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)
-
-[Surface Dev Center Manager tool (GitHub)](https://github.com/Microsoft/SDCM)
+- [C# sample](https://download.microsoft.com/download/C/F/4/CF404E53-87A0-4204-BA13-A64B09A237C1/HardwareApiCSharpSample.zip)
+- [Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)
+- [Surface Dev Center Manager tool (GitHub)](https://github.com/Microsoft/SDCM)
 
 ## Additional help
 
@@ -88,4 +85,4 @@ If you have questions about the Microsoft Store submission API or need assistanc
 
 ## Related topics
 
-[What is Microsoft Entra ID?](/azure/active-directory/fundamentals/active-directory-whatis)
+- [What is Microsoft Entra ID?](/azure/active-directory/fundamentals/active-directory-whatis)
