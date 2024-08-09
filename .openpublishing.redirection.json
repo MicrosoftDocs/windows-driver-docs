@@ -5,6 +5,7 @@
             "redirect_URL": "/windows-hardware/drivers/dashboard/technical-support",
             "redirect_document_id": false
         },
+        {
             "source_path": "windows-driver-docs-pr/install/installation-component-overview.md",
             "redirect_URL": "/windows-hardware/drivers/install/components-of-a-driver-package",
             "redirect_document_id": false
