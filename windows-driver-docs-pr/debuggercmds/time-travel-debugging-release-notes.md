@@ -11,6 +11,43 @@ ms.date: 02/12/2024
 
 This topic provides information on what's new in Time Travel Debugging.
 
+## 1.11.410
+
+Improved accessibility: Progress UI now properly scales with Text Size changes.
+
+The ```@$cursession.TTD.Calls()``` command in the debugger now supports wildcards that match a large number of functions.
+It is now possible to query for large numbers of functions (i.e. ```@$cursession.TTD.Calls("kernel32!*")```).
+
+Automation: A new ```-onMonitorReadyEvent``` command-line option indicates when the recording monitor (```-monitor``` switch)
+is ready to record new processes.
+
+Fixes:
+- Fix some race conditions while initializing the recorder.
+- Fix how we record syscalls so that breakpoints work correctly.
+- Fix multiple issues related to module selective recording.
+
+ARM64 fixes:
+- Fixed a bug preventing TTD recording on plain ARM64v8.0 level CPUs.
+- Improved the messaging when attempting to use on ARM64 a trace of an x86 or x64 process.
+
+AMD/Intel fixes (includes some issues reported by Google):
+- Fixed incorrect emulation of LODS: Instead of zeroing out the unused bits of RAX they are now correctly preserved.
+- Fixed emulation of "pop ax" instruction in x86/x64 processes, which was incorrectly zeroing the upper bits
+  of the full register (e.g. "pop ax" cleared the upper bits of rax).
+- Direct emulation of the XGETBV instruction (faster).
+- Direct emulation of all AVX512 SIMD moves (faster).
+
+## 1.11.316
+
+Fixed a regression that was causing occasional crashes when recording programs with long uninterrupted data-heavy instruction sequences.
+
+ARM64 fixes:
+- Recording in ARM64 processes that have the PAC feature enabled is now supported.
+- Fixed the ANDS and TST instructions, which were failing to clear the carry and overflow flags.
+
+AMD/Intel fixes:
+- Fixed bug where TTD incorrectly emulated "xchg r8,rax" and "xchg r8w,ax" as NOP.
+
 ## 1.11.304
 
 TTD now implements and publishes publicly an API to control the recorder from within the live recorded process. Documentation and a sample can be found in [GitHub](https://github.com/microsoft/WinDbg-Samples/tree/HEAD/TTD).
