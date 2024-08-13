@@ -1,10 +1,9 @@
----
 title: COSA Database Overview and Frequently Asked Questions
 description: The Country and Operator Settings Asset (COSA) database is used by mobile operators to provision Windows devices for mobile broadband.
 ms.date: 05/21/2024
 author: mhopkins-msft
 ms.author: mhopkins
----
+-------------------
 
 # COSA database overview and frequently asked questions
 
@@ -16,19 +15,33 @@ Here are some frequently asked questions about COSA:
 
 ## What are the settings that mobile operators can specify in COSA?
 
-The settings are largely the same as what MOs configured in apndatabase.xml, with a few exceptions and new additions. For details, see the tables in [Planning your desktop COSA database submission](planning-your-desktop-cosa-database-submission.md).
+The settings are largely the same as what MOs configured in apndatabase.xml, with a few exceptions and new additions. For details, see the tables in [Desktop COSA database settings](desktop-cosa-database-settings.md).
 
 ## What events trigger the application of new mobile operator settings?
 
 These events trigger the Windows provisioning engine to look for a change in settings:
 
 1. The insertion or removal of a physical SIM (change in ICCID)
-1. Reconfiguration of an eSIM (change in ICCID)
-1. When the device boots
+2. Reconfiguration of an eSIM (change in ICCID)
+3. When the device boots
 
 ## What SIM information from modems does COSA use?
 
-For MO/MVNO discovery, Windows tries to make the best match for an available profile in the COSA database using SPN from the SIM in the modem.
+For MO/MVNO discovery, Windows tries to make the best match for an available profile in the COSA database using using identifiers such as MCC / MNC, ICCID, IMSI, SPN, GID1 from the SIM in the modem.
+
+## What is a COSA profile?
+
+The COSA database consists of profiles. Each profile contains a set of cellular provisioning rules applied to a device, like APN and MO branding information to be displayed in the Windows UX. Each profile also has a set of targets, matching a cellular device to a set of cellular provisioning rules. Each MO has their own COSA profile, but some MOs will have multiple profiles for specific use cases (like implementing a 5G private network or an eSIM provisioning profile).
+
+## How does a COSA profile get matched to a device?
+
+Each COSA profile contains a set of targets used by Windows to match the profile to the device. MOs can set which target identifiers they’d like to use. The target identifiers that can be used are as follows: MNC, MCC, SPN, PNN, GID1, ICCID, IMSI. Windows looks for the profile with the highest number of target identifiers to use. If for instance Windows detects that the device’s SIM matches with 1 identifier (SPN) from COSA profile A, but 2 identifiers from COSA profile B (SPN and ICCID), Windows will utilize the COSA profile A.
+
+## Can OEMs customize COSA?
+
+OEMs can extend COSA to meet their needs. Windows will prioritize the OEM customization. For more information on OEM customizations of COSA, see [Customize the Country and Operator Settings Asset](/windows-hardware/customize/desktop/customize-cosa).
+
+OEMs can, in some cases, make modifications to COSA on behalf of an MO. See the [Mobile operator configuration portal guide](mobile-operator-configuration-portal-guide.md).
 
 ## Is there an algorithm to make the best APN match?
 
