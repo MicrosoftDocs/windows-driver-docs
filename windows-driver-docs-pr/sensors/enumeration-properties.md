@@ -15,7 +15,7 @@ For more information about the data types shown in the **Type** column, see [PRO
 
 | Property key | Type | Required/Optional | Description |
 |---|---|---|---|
-| DEVPKEY_Sensor_Type | **VT_CLSID** | Required | A GUID that identifies the type of sensor. For more information about sensor types, see [Sensor type GUIDs](./about-sensor-constants.md). |
+| DEVPKEY_Sensor_Type | **VT_CLSID** | Required | A GUID that identifies the type of sensor. For more information about sensor types, see [Sensor type GUIDs](/previous-versions/windows/hardware/about-sensor-constants). |
 | DEVPKEY_Sensor_Category | **VT_CLSID** | Required | The sensor category. This key is for backwards compatibility with Desktop v1 stack, where it's a requirement. |
 | DEVPKEY_Sensor_ConnectionType | **VT_UI4** | Optional</br></br>Required for Ambient Light Sensor and Accelerometer | The sensor connection type. Sensor connection types can be integrated, attached, or external.</br></br>For more information, see the **[SensorConnectionType](/windows-hardware/drivers/ddi/sensorsclassextension/ne-sensorsclassextension-__midl___midl_itf_windowssensorclassextension_0000_0000_0002)** enumeration. |
 | DEVPKEY_Sensor_IsPrimary | **VT_BOOL** | Optional | An indication that this is the primary sensor. This key has a default value of false, if not set. |
@@ -33,4 +33,4 @@ For more information about the data types shown in the **Type** column, see [PRO
 - **[SensorConnectionType](/windows-hardware/drivers/ddi/sensorsclassextension/ne-sensorsclassextension-__midl___midl_itf_windowssensorclassextension_0000_0000_0002)**
 - **[SensorsCxSensorCreate](/windows-hardware/drivers/ddi/sensorscx/nf-sensorscx-sensorscxsensorcreate)**
 - [Sensor properties](./common-sensor-properties.md)
-- [Sensor type GUIDs](./about-sensor-constants.md)
+- [Sensor type GUIDs](/previous-versions/windows/hardware/about-sensor-constants)

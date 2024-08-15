@@ -10,7 +10,7 @@ You can define custom values for categories, sensor types, data fields, properti
 
 ## Guidelines for custom values
 
-Avoid defining new constants if an existing set of platform-defined constants will work. Study and understand the categories, types, data fields, properties, and events described in the [Constants](about-sensor-constants.md) section and decide whether your sensor driver fits into the platform framework.
+Avoid defining new constants if an existing set of platform-defined constants will work. Study and understand the categories, types, data fields, properties, and events described in the [Constants](/previous-versions/windows/hardware/about-sensor-constants) section and decide whether your sensor driver fits into the platform framework.
 
 If you choose to define custom values, follow these guidelines:
 

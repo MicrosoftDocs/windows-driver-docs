@@ -34,7 +34,7 @@ The following block diagram shows the layers of software and hardware that conne
 
 ![software and hardware layers for an spb-connected sensor device.](images/spblayers.png)
 
-The three blocks shown in gray are system-supplied modules. Starting with Windows 7, the [sensor class extension](../sensors/about-the-sensor-class-extension.md) is available as a sensor-specific extension to the UMDF. Starting with Windows 8, the [SPB framework extension](./spb-framework-extension.md) (SpbCx) and [GPIO framework extension](../gpio/gpio-driver-support-overview.md) (GpioClx) are available as extensions to KMDF that perform functions that are specific to SPB controllers and to GPIO controllers, respectively.
+The three blocks shown in gray are system-supplied modules. Starting with Windows 7, the [sensor class extension](/previous-versions/windows/hardware/sensors/about-the-sensor-class-extension) is available as a sensor-specific extension to the UMDF. Starting with Windows 8, the [SPB framework extension](./spb-framework-extension.md) (SpbCx) and [GPIO framework extension](../gpio/gpio-driver-support-overview.md) (GpioClx) are available as extensions to KMDF that perform functions that are specific to SPB controllers and to GPIO controllers, respectively.
 
 At the top of the preceding diagram, the application calls the methods in the [Sensor API](/windows/desktop/SensorsAPI/portal) or [Location API](/windows/desktop/LocationAPI/windows-location-api-portal) to communicate with the sensor device. Through these calls, the application can send I/O requests to the device, and receive event notifications from the device. For more information about these APIs, see [Introduction to the Sensor and Location Platform in Windows](../sensors/index.md).
 

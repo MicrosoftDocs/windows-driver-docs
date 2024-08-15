@@ -86,8 +86,6 @@
         href: activity-sensor-properties.md
       - name: "Pedometer sensor property"
         href: pedometer-sensor-property.md
-  - name: "Sensors Windows 10 Mobile ACPI entries"
-    href: sensors-acpi-entries.md
 - name: "Build and test a universal sensor driver"
   items: 
     - name: "Set up your Development Environment"

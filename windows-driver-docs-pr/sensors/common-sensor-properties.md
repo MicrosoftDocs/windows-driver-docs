@@ -13,7 +13,7 @@ The following table shows common properties. For more information about the type
 
 | Property key | Type | Access (R/O, R/W) | Required/Optional | Description |
 |---|---|---|---|---|
-| PKEY_Sensor_Type | **VT_CLSID** | R/O | Required | The type of sensor. The GUID will consist of the same format as a Windows sensor (for example, SENSOR_TYPE_ACCELEROMETER_3D). For more information about sensor types, see [Sensor type GUIDs](./about-sensor-constants.md). |
+| PKEY_Sensor_Type | **VT_CLSID** | R/O | Required | The type of sensor. The GUID will consist of the same format as a Windows sensor (for example, SENSOR_TYPE_ACCELEROMETER_3D). For more information about sensor types, see [Sensor type GUIDs](/previous-versions/windows/hardware/about-sensor-constants). |
 | PKEY_Sensor_State | **VT_UI4** | R/O | Required | The state of the sensor. For more information about sensor states, see **[SENSOR_STATE](/windows-hardware/drivers/ddi/sensorsdef/ne-sensorsdef-sensor_state)**. |
 | PKEY_Sensor_MinimumDataInterval_Ms | **VT_UI4** | R/O | Required | The minimum time interval (in milliseconds) that the hardware supports for sensor data report generation. |
 | PKEY_Sensor_MaximumDataFieldSize_Bytes | **VT_UI4** | R/O | Required | The maximum size returned in a ReadFile call. A ReadFile call allows the native API to allocate a buffer to hold any data field. |
@@ -51,4 +51,4 @@ When the client driver reports the following properties, the client driver must 
 - [EvtSensorSetBatchLatency](/windows-hardware/drivers/ddi/sensorscx/ns-sensorscx-_sensor_controller_config)
 - [PROPVARIANT structure](/windows/win32/api/propidlbase/ns-propidlbase-propvariant)
 - **[SENSOR_STATE](/windows-hardware/drivers/ddi/sensorsdef/ne-sensorsdef-sensor_state)**
-- [Sensor type GUIDs](./about-sensor-constants.md)
+- [Sensor type GUIDs](/previous-versions/windows/hardware/about-sensor-constants)
