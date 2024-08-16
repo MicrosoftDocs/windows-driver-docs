@@ -38,10 +38,6 @@ CertMgr Succeeded
 
 After the certificate is copied to the Trusted Root Certification Authorities certificate store (the local machine's root store, *not* the user store), you can view it through the Microsoft Management Console (MMC) Certificates snap-in, as described in [Viewing Test Certificates](viewing-test-certificates.md).
 
-The following screenshot shows the Contoso.com(Test) certificate in the Trusted Root Certification Authorities certificate store.
-
-![screen shot of the trusted root certification authorities certificate store in the mmc certificates snap-in.](images/certstore2.png)
-
 You can also view the certificate at the command prompt:
 
 ```cmd
