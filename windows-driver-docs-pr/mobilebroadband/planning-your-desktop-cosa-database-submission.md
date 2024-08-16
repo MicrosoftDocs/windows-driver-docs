@@ -1,7 +1,7 @@
 ---
 title: Planning your Desktop COSA Database Submission
 description: Use this article plan for adding a new APN to the baseline COSA database that ships with Windows desktop devices, or to update an existing APN.
-ms.date: 05/21/2024
+ms.date: 08/16/2024
 author: mhopkins-msft
 ms.author: mhopkins
 ---
@@ -12,7 +12,7 @@ ms.author: mhopkins
 > Starting in Windows 10, version 1703, the APN spreadsheet (apndatabase.xml) is replaced by the Country and Operator Settings Asset (COSA) database. Windows 8, Windows 8.1, and versions of Windows 10 before version 1703 will continue to use the APN database while Windows 10, version 1703 and later use COSA. For more information about COSA, see [COSA overview](cosa-overview.md).
 
 Use this article plan for adding a new APN to the baseline COSA database that ships with Windows desktop devices, or to update an existing APN.
- 
+
 ## The COSA update process
 
 :::image type="content" source="images/cosa_submission_process.png" alt-text="COSA update process":::
@@ -29,19 +29,20 @@ COSA is a database of mobile network device provisioning settings. These setting
 
 ## Mobile operators are responsible for validating their changes
 
-As part of the COSA update process, Microsoft does not test or validate the changes to COSA with the respective mobile network. Mobile operators must test and confirm the functionality of each change before submitting. 
+As part of the COSA update process, Microsoft does not test or validate the changes to COSA with the respective mobile network. Mobile operators must test and confirm the functionality of each change before submitting.
 
 ## COSA submission reviewal process
 
 On the last Friday of each month, Microsoft performs a review of every COSA change submitted through the MO Config Portal. At that time, Microsoft will evaluate the submission based on:
+
 - A visual inspection of the changes
 - Confirmation from the submitter that the changes have been tested and confirmed to work as expected
 - In cases where a non-MO has submitted a COSA change, Microsoft will look for written verification from the MO that the change is approved to be submitted by the submitter. Please work with your Microsoft contact (CSS, WE2, Surface, etc.) to provide this information.
 
-If Microsoft determines that the requested change is in good standing condition and ready to be serviced into Windows. Microsoft will approve the change and submit it to be serviced in the next possible “C” release. This is typically ~6 weeks before the release. For example, if a COSA change is submitted to the MOCP on June 15th, that submission will be reviewed by Microsoft on the last Friday of June. If approved, the submission will be submitted for the August “C” release. The submitter will see the submission in their MOCP account updated to show a status of “Approved”.
+If Microsoft determines that the requested change is in good standing condition and ready to be serviced into Windows. Microsoft will approve the change and submit it to be serviced in the next possible "C" release. This is typically ~6 weeks before the release. For example, if a COSA change is submitted to the MOCP on June 15th, that submission will be reviewed by Microsoft on the last Friday of June. If approved, the submission will be submitted for the August "C" release. The submitter will see the submission in their MOCP account updated to show a status of "Approved".
 
-If the requested change is not found to meet the above criteria, Microsoft will reject the submission. If rejected, the submitter will see the submission in their MOCP account updated to show a status of “Rejected”. The submission may also contain a message from the COSA review team containing an explanation for the rejection and recommended next steps. Microsoft will NOT send e-mail notifications to the submitter. Submitter must view status updates form the MOCP.
-f
+If the requested change is not found to meet the above criteria, Microsoft will reject the submission. If rejected, the submitter will see the submission in their MOCP account updated to show a status of "Rejected". The submission may also contain a message from the COSA review team containing an explanation for the rejection and recommended next steps. Microsoft will NOT send e-mail notifications to the submitter. Submitter must view status updates form the MOCP.
+
 ### COSA database considerations
 
 - The operator identification data is stored in the COSA database as encoded Hardware IDs.
@@ -76,4 +77,3 @@ For the next steps in testing your APN update, see [Mobile operator configuratio
 
 - [Microsoft mobile operator configuration portal](https://aka.ms/moconfig)
 - [Testing your desktop COSA database submission](testing-your-desktop-cosa-database-submission.md)
-- [Submitting a desktop COSA database update](submitting-a-desktop-cosa-database-update.md)

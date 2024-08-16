@@ -1,7 +1,7 @@
 ---
 title: Testing your Desktop COSA Database Submission
 description: Before submitting a COSA update request to Microsoft, test your desktop COSA database submission by following the steps in this topic.
-ms.date: 02/08/2024
+ms.date: 08/16/2024
 author: mhopkins-msft
 ms.author: mhopkins
 ---
@@ -56,4 +56,4 @@ To collect logs in the event of a failure during the testing process, follow the
 
 ## Submitting COSA changes
 
-Once you’ve finished validation of the PPKG, you can [submit your COSA changes in the MOCP](mobile-operator-configuration-portal-guide.md#making-a-submission).
+Once you've finished validation of the PPKG, you can [submit your COSA changes in the MOCP](mobile-operator-configuration-portal-guide.md#making-a-submission).

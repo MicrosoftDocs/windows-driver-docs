@@ -1,9 +1,10 @@
+---
 title: COSA Database Overview and Frequently Asked Questions
 description: The Country and Operator Settings Asset (COSA) database is used by mobile operators to provision Windows devices for mobile broadband.
-ms.date: 05/21/2024
+ms.date: 08/16/2024
 author: mhopkins-msft
 ms.author: mhopkins
--------------------
+---
 
 # COSA database overview and frequently asked questions
 
@@ -22,8 +23,8 @@ The settings are largely the same as what MOs configured in apndatabase.xml, wit
 These events trigger the Windows provisioning engine to look for a change in settings:
 
 1. The insertion or removal of a physical SIM (change in ICCID)
-2. Reconfiguration of an eSIM (change in ICCID)
-3. When the device boots
+1. Reconfiguration of an eSIM (change in ICCID)
+1. When the device boots
 
 ## What SIM information from modems does COSA use?
 
@@ -35,7 +36,7 @@ The COSA database consists of profiles. Each profile contains a set of cellular 
 
 ## How does a COSA profile get matched to a device?
 
-Each COSA profile contains a set of targets used by Windows to match the profile to the device. MOs can set which target identifiers they’d like to use. The target identifiers that can be used are as follows: MNC, MCC, SPN, PNN, GID1, ICCID, IMSI. Windows looks for the profile with the highest number of target identifiers to use. If for instance Windows detects that the device’s SIM matches with 1 identifier (SPN) from COSA profile A, but 2 identifiers from COSA profile B (SPN and ICCID), Windows will utilize the COSA profile A.
+Each COSA profile contains a set of targets used by Windows to match the profile to the device. MOs can set which target identifiers they'd like to use. The target identifiers that can be used are as follows: MNC, MCC, SPN, PNN, GID1, ICCID, IMSI. Windows looks for the profile with the highest number of target identifiers to use. If for instance Windows detects that the device's SIM matches with 1 identifier (SPN) from COSA profile A, but 2 identifiers from COSA profile B (SPN and ICCID), Windows will utilize the COSA profile A.
 
 ## Can OEMs customize COSA?
 

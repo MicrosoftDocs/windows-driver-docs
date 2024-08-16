@@ -1,10 +1,11 @@
 ---
 title: Microsoft Mobile Operator Configuration Portal Guide
 description: This article introduces the mobile operator configuration portal to create a COSA database submission.
-ms.date: 05/21/2024
+ms.date: 08/16/2024
 author: mhopkins-msft
 ms.author: mhopkins
 ---
+
 # Microsoft mobile operator configuration portal guide
 
 This article introduces the Microsoft mobile operator configuration portal to create COSA database submissions.
@@ -15,16 +16,16 @@ The mobile operator configuration portal has replaced the previous APN spreadshe
 
 If you don't yet have a mobile operator configuration portal account, follow these steps to create one.
 
-1. Start by reaching out to your Microsoft representative (Premier Support, Windows Ecosystem Enablement PM, Surface, etc.) and inform them you intend to onboard to the MO Configuration portal. You’ll need to work with them to complete your MOCP onboarding.
+1. Start by reaching out to your Microsoft representative (Premier Support, Windows Ecosystem Enablement PM, Surface, etc.) and inform them you intend to onboard to the MO Configuration portal. You'll need to work with them to complete your MOCP onboarding.
    If you do not have a Microsoft representative, contact Microsoft Support by calling (800) MICROSOFT (642-7676).
-2. Navigate to the [Microsoft mobile operator configuration portal](https://aka.ms/moconfig) (MO portal).
-3. Select **Sign up now** below the **Sign in** button.
-4. Enter your email address and select **Send verification code**.
-5. After you receive the verification code in your email, enter it and select **Verify**.
-6. Enter a temporary password and select **Create** to send your request to the mobile operator configuration portal team.
-7. Send an email to your Microsoft representative to get your account approved for portal access.
-8. After getting confirmation from your Microsoft representative, navigate back to the [mobile operator configuration portal](https://aka.ms/moconfig) and select **Sign Up** again.
-9. Verify your email, then enter a new non-temporary password and select **Create**. This is your sign-in password going forward.
+1. Navigate to the [Microsoft mobile operator configuration portal](https://aka.ms/moconfig) (MO portal).
+1. Select **Sign up now** below the **Sign in** button.
+1. Enter your email address and select **Send verification code**.
+1. After you receive the verification code in your email, enter it and select **Verify**.
+1. Enter a temporary password and select **Create** to send your request to the mobile operator configuration portal team.
+1. Send an email to your Microsoft representative to get your account approved for portal access.
+1. After getting confirmation from your Microsoft representative, navigate back to the [mobile operator configuration portal](https://aka.ms/moconfig) and select **Sign Up** again.
+1. Verify your email, then enter a new non-temporary password and select **Create**. This is your sign-in password going forward.
 
 ## Introduction to COSA
 
@@ -41,29 +42,29 @@ Each COSA entry is also called a COSA profile.
 
 For a given COSA profile, you can specify multiple targets (different *MCC, MNC* pair; different IMSI or ICCID range), and a list of APNs to try to connect to (5G APNs, Internet APN, IMS APN, and so on).
 
-For logo and branding, you can only specify one per COSA entry. If you need to add a second logo or branding, you’ll need to create a new COSA entry with a different target. For instance, if you’d like a specific range of ICCIDs to have a different logo and branding, please create a second COSA profile specifying the new target and updated logo and branding. Don’t forget to fill out the connection settings as well, even if the same APN is used.
+For logo and branding, you can only specify one per COSA entry. If you need to add a second logo or branding, you'll need to create a new COSA entry with a different target. For instance, if you'd like a specific range of ICCIDs to have a different logo and branding, please create a second COSA profile specifying the new target and updated logo and branding. Don't forget to fill out the connection settings as well, even if the same APN is used.
 
 ## Creating a new draft
 
 The MO Config Portal uses drafts to handle changes to COSA.
-After logging into the MOCP, you’ll find yourself on the draft management page.
+After logging into the MOCP, you'll find yourself on the draft management page.
 Here, you can create a new draft to start reviewing and modifying  COSA settings.
 
 1. Sign into the [Microsoft mobile operator configuration portal](https://aka.ms/moconfig).
-2. Select **New draft**.
-3. Fill out the fields labeled **Title**, **Description**, and **Background**. To the best of your knowledge at this time. You'll have an opportunity to update these fields again before submitting.
+1. Select **New draft**.
+1. Fill out the fields labeled **Title**, **Description**, and **Background**. To the best of your knowledge at this time. You'll have an opportunity to update these fields again before submitting.
 
 ## Modifying a draft
 
-Once a draft has been created, you can start editing. Select the draft you’d like to modify. On the right side of the page, the draft metadata is populated. Here, you can modify the drafts **Description** and **Background** fields. When you’re ready to make changes to COSA, select **Open draft** . This brings you to the COSA editing page.
+Once a draft has been created, you can start editing. Select the draft you'd like to modify. On the right side of the page, the draft metadata is populated. Here, you can modify the drafts **Description** and **Background** fields. When you're ready to make changes to COSA, select **Open draft** . This brings you to the COSA editing page.
 
 On the left side of the COSA editing page is the COSA profile menu. This menu should list the COSA profiles tied to your MO.  You can also create a new profile by selecting **New profile.** If you believe you should see a profile not currently listed, please reach out to [MOPortalSupport@microsoft.com](mailto:MOPortalSupport@microsoft.com).
 
 Selecting a profile from the left menu opens that profile for editing. The menu on the left shows the different types of settings available to be edited.
 
-To change the name of the profile, you can select the three dots to the right of the profile’s name.
+To change the name of the profile, you can select the three dots to the right of the profile's name.
 
-Remember to select **Save draft** periodically to save your changes. From this page, you can also Create a test package, to test your changes. When you’re ready to submit, you can submit your changes.
+Remember to select **Save draft** periodically to save your changes. From this page, you can also Create a test package, to test your changes. When you're ready to submit, you can submit your changes.
 
 ## Add a new target
 
@@ -74,13 +75,16 @@ This section demonstrates how to add a new *MCC, MNC* pair to your COSA profile.
    - Check your profile APN values (optional)
 
      1. Open **Connections > Cellular > Connection**
-     2. Make sure it's the right APN. You can have multiple connections if you have more than one APN value for this COSA profile.
+     1. Make sure it's the right APN. You can have multiple connections if you have more than one APN value for this COSA profile.
+
    - Check that your *MCC, MNC* pair doesn't exist in the current target list (optional)
 
      1. Open **Targets**
-     2. Check each target to ensure there's no duplicate of what you want to create. If you see more than one target, check each of them one by one.
-2. Select **+** to add a new target to your profile, and go to the new target added to your list. This is usually the last one in the **Targets** list. If you don't see any new targets, make sure you click on the drop-down beside the **Targets**.
-3. Select **Save draft**, add a note, then select **Save**.
+     1. Check each target to ensure there's no duplicate of what you want to create. If you see more than one target, check each of them one by one.
+
+1. Select **+** to add a new target to your profile, and go to the new target added to your list. This is usually the last one in the **Targets** list. If you don't see any new targets, make sure you click on the drop-down beside the **Targets**.
+
+1. Select **Save draft**, add a note, then select **Save**.
 
 ## Modify an existing target
 
@@ -90,12 +94,14 @@ This section demonstrates how to change an *MCC, MNC* value pair, add or change 
 
    - Check your profile APN values. (optional)
    - Check that your *MCC, MNC* pair doesn't exist in the current target list. (optional)
-2. Look for the target you want to modify, then either:
+
+1. Look for the target you want to modify, then either:
 
    - Modify the *MCC, MNC*.
    - Add SPN, PNN, GID1, ICCID range, IMSI range.
    - Modify SPN, PNN, GID1, ICCID range, IMSI range.
-3. Select **Save draft**, add a note, then select **Save**.
+
+1. Select **Save draft**, add a note, then select **Save**.
 
 ## Modify SIM branding
 
@@ -103,7 +109,8 @@ This section demonstrates how to change an *MCC, MNC* value pair, add or change 
 
    - Check your profiles' APN values. (optional)
    - Check that your *MCC, MNC* pair doesn't exist in the current target list. (optional)
-2. Navigate to **Cellular > PerSimSettings > SettingsForSim**, then either:
+
+1. Navigate to **Cellular > PerSimSettings > SettingsForSim**, then either:
 
    - Add or remove a mobile operator logo.
    - Define the **AccountExperienceURL** or add an **AppID** to automatically install applications.
@@ -141,7 +148,8 @@ This section demonstrates how to change an *MCC, MNC* value pair, add or change 
      - 16 x 16: 32-bit + Alpha
      - 16 x 16: 8-bit 256 color
      - 16 x 16: 4-bit 16 color
-3. Select **Save draft**, add a note, then select **Save**.
+
+1. Select **Save draft**, add a note, then select **Save**.
 
 ## Add a new APN
 
@@ -149,7 +157,8 @@ This section demonstrates how to change an *MCC, MNC* value pair, add or change 
 
    - Check your profiles' APN values. (optional)
    - Check that your *MCC, MNC* pair doesn't exist in the current target list. (optional)
-2. Select **+** beside **Cellular** and look for the new **Connection** added to your list. This is usually the last one in the **Targets** list.
+
+1. Select **+** beside **Cellular** and look for the new **Connection** added to your list. This is usually the last one in the **Targets** list.
 
    - Add the APN values. If you don't see a new **Connection**, make sure you have clicked on the drop-down next to **Cellular**.
 
@@ -162,9 +171,8 @@ This section demonstrates how to change an *MCC, MNC* value pair, add or change 
    - **IPType** – Which IP type is supported - IPv4, IPv6, IPv4v6.
    - **PurposeGroup** – How this APN is used.
 
-
      | Setting           | Description                                  | GUID                                 |
-     | ------------------- | ---------------------------------------------- | -------------------------------------- |
+     | ----------------- | -------------------------------------------- | ------------------------------------ |
      | Internet          | Used for general Internet traffic. (default) | 3E5545D2-1137-4DC8-A198-33F1C657515F |
      | MMS               |                                              | 53E2C5D3-D13C-4068-AA38-9C48FF2E55A8 |
      | IMS               | Used for IMS traffic. (LTE attach)           | 474D66ED-0E4B-476B-A455-19BB1239ED13 |
@@ -174,9 +182,8 @@ This section demonstrates how to change an *MCC, MNC* value pair, add or change 
      You can put more than one purpose in a comma delimited list.
    - **Roaming** – The roaming conditions under which the connection should be activated.
 
-
      | Setting                      | Description                               |
-     | ------------------------------ | ------------------------------------------- |
+     | ---------------------------- | ----------------------------------------- |
      | Disallowed                   | Home network only                         |
      | Allowed (default)            | All roaming conditions (home and roaming) |
      | DomesticRoaming              | Home and domestic roaming only            |
@@ -188,17 +195,18 @@ This section demonstrates how to change an *MCC, MNC* value pair, add or change 
 
    - **AuthType** - The Auth Protocol element specifies the authentication protocol to be used for activating a Packet Data Protocol (PDP) context.
 
-
      | Setting | Description                                                             |
-     | --------- | ------------------------------------------------------------------------- |
+     | ------- | ----------------------------------------------------------------------- |
      | None    | No authentication protocol is required. (default)                       |
      | PAP     | PAP authentication protocol is required.                                |
      | CHAP    | Challenge Handshake Authentication Protocol(CHAP) protocol is required. |
+
    - **Username** – The case sensitive user name to connect to your APN.
    - **Password** – APN connection password. Can be set to blank.
 
    The rest of the settings can be left blank or at their default value.
-3. Select **Save draft**, add a note, then select **Save**.
+
+1. Select **Save draft**, add a note, then select **Save**.
 
 ## Update APN, other connection settings
 
@@ -206,17 +214,18 @@ This section demonstrates how to change an *MCC, MNC* value pair, add or change 
 
    - Check your profiles' APN values. (optional)
    - Check that your *MCC, MNC* pair doesn't exist in the current target list. (optional)
-2. Look for the Connection you want to modify, then modify any of the values there.
-3. Select **Save draft**, add a note, then select **Save**.
+
+1. Look for the Connection you want to modify, then modify any of the values there.
+1. Select **Save draft**, add a note, then select **Save**.
 
 ## Specify an APN to be used for a hotspot connection
 
 1. Add a new connection and set its APN.
-2. Set the Purpose Group to the Internet GUID listed above.
-3. Set **AlwaysOn** to disabled.
-4. Fill in the **FriendlyName**, **IPType**, and any other relevant settings.
-5. Navigate to **HotSpot** on the left menu.
-6. Set **Enabled** to **True**.
+1. Set the Purpose Group to the Internet GUID listed above.
+1. Set **AlwaysOn** to disabled.
+1. Fill in the **FriendlyName**, **IPType**, and any other relevant settings.
+1. Navigate to **HotSpot** on the left menu.
+1. Set **Enabled** to **True**.
 
 ## Create a test package
 
@@ -225,16 +234,16 @@ Test packages are generated from the server. You must save all changes before yo
 1. Choose the Windows version.
 
    - Run **winver** on the PC you want to test to check your Windows version.
-2. Choose the test package to download.
-3. Follow the steps in [Test your submission for desktop COSA](testing-your-desktop-cosa-database-submission.md#test-your-submission-for-desktop-cosa) to test your COSA package file.
+
+1. Choose the test package to download.
+1. Follow the steps in [Test your submission for desktop COSA](testing-your-desktop-cosa-database-submission.md#test-your-submission-for-desktop-cosa) to test your COSA package file.
 
    > [!NOTE]
    > Open an administrator command prompt. If you are running in S-mode, you will need to switch out of S-mode first.
-   >
 
 ## Making a submission
 
-Once you’ve made your changes and tested your submission using the instructions above, you’re ready to submit your change.
+Once you've made your changes and tested your submission using the instructions above, you're ready to submit your change.
 
 Start by clicking on the **submit** button at the bottom of your draft. Remember, Microsoft won't test your
 changes with your network. The MO *must* confirm that the settings are accurate and work as expected.
@@ -264,4 +273,3 @@ submission with comments from the review team will display the comments with the
 - [Mobile operator portal](https://aka.ms/moconfig)
 - [Planning your desktop COSA database submission](planning-your-desktop-cosa-database-submission.md)
 - [Testing your desktop COSA database submission](testing-your-desktop-cosa-database-submission.md)
-- [Submitting a desktop COSA database update](submitting-a-desktop-cosa-database-update.md)
