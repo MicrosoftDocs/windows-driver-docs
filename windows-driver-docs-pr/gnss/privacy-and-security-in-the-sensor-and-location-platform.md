@@ -26,8 +26,8 @@ When you write a sensor driver, you must consider user privacy. You must make su
 
 ## Related topics
 
-[Architecture Overview](/previous-versions/windows/hardware/sensors/architecture-overview-for-sensor-drivers.md)  
+[Architecture Overview](/previous-versions/windows/hardware/sensors/architecture-overview-for-sensor-drivers)  
 
-[About the Sensor Class Extension](/previous-versions/windows/hardware/sensors/about-the-sensor-class-extension.md)  
+[About the Sensor Class Extension](/previous-versions/windows/hardware/sensors/about-the-sensor-class-extension)  
 
 [Location awareness](/uwp/api/Windows.Devices.Geolocation)

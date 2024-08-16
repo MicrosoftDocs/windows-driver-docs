@@ -80,4 +80,4 @@ So preparing your sensor test board for connection to Sharks Cove, could involve
 - Soldering a ribbon cable with a female insulation displacement connector (IDC) header to the sensor test board. This makes it easy and convenient to connect the two boards.
 - As an alternative to the preceding bullet, you can find a way to mount the sensor test board on a breadboard, then find a convenient way to connect the relevant rows of the breadboard to the matching pins of J1C1.
 
-After you've made all the necessary modifications to your sensor test board, follow the guidance in the next topic to [connect your sensor to the Sharks Cove board](/previous-versions/windows/hardware/connect-your-sensor-to-the-sharks-cove-board).
+After you've made all the necessary modifications to your sensor test board, follow the guidance in the next topic to [connect your sensor to the Sharks Cove board](connect-your-sensor-to-the-sharks-cove-board.md).

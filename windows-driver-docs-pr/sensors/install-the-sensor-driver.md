@@ -194,7 +194,7 @@ There are four main methods for installing a driver on the Sharks Cove board:
 
 For simplicity, we will use the last method in the preceding list. Perform the following steps to manually install the sensor driver via **Device Manager**.
 
-You must connect your sensor to the Sharks Cove before you install the sensor driver. For information about how to modify the ADXL345 accelerometer breakout board from SparkFun, to get it to work with the sample sensor driver, see [Prepare your sensor test board](prepare-your-sensor-test-board.md). And for information about how to connect the sensor breakout board to the Sharks Cove, see [Connect your sensor to the Sharks Cove board](/previous-versions/windows/hardware/connect-your-sensor-to-the-sharks-cove-board).
+You must connect your sensor to the Sharks Cove before you install the sensor driver. For information about how to modify the ADXL345 accelerometer breakout board from SparkFun, to get it to work with the sample sensor driver, see [Prepare your sensor test board](prepare-your-sensor-test-board.md). And for information about how to connect the sensor breakout board to the Sharks Cove, see [Connect your sensor to the Sharks Cove board](connect-your-sensor-to-the-sharks-cove-board.md).
 
 1. Make sure that the ADXL345 accelerometer is connected to the Sharks Cove J1C1 connector, then power up the Sharks Cove.
 

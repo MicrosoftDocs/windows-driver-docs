@@ -9173,6 +9173,296 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "windows-driver-docs-pr/sensors/about-isensorclassextension.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/about-isensorclassextension",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/about-isensordriver.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/about-isensordriver",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/about-sensor-constants.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/about-sensor-constants",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/about-sensor-driver-events.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/about-sensor-driver-events",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/about-the-parameter-types.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/about-the-parameter-types",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/about-the-sensor-class-extension.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/about-the-sensor-class-extension",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/accessing-the-sensor-class-extensionmd",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/accessing-the-sensor-class-extension",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/architecture-overview-for-sensor-drivers.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/architecture-overview-for-sensor-drivers",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/considerations-for-writing-a-sensor-driver.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/considerations-for-writing-a-sensor-driver",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/creating-a-persistent-unique-identifier.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/creating-a-persistent-unique-identifier",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/creating-the-driver.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/creating-the-driver",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/defining-custom-values-for-constants.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/defining-custom-values-for-constants",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/device-methods.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/device-methods",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/device-update-methods.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/device-update-methods",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/driver-initialization-methods.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/driver-initialization-methods",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/driver-initialization.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/driver-initialization",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/driver-interface-methods.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/driver-interface-methods",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/driver-logic--pseudo-code-.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/driver-logic--pseudo-code-",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/event-constants.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/event-constants",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/filtering-data.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/filtering-data",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/installing-the-sample-device-and-driver-on-your-sharks-cove-board.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/installing-the-sample-device-and-driver-on-your-sharks-cove-board",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/internal-driver-methods.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/internal-driver-methods",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/internal-helper-methods.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/internal-helper-methods",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/known-issues.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/known-issues",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/modifying-the-sample-to-support-another-sensor.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/modifying-the-sample-to-support-another-sensor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/new-sensor-features-and-improvements-for-windows-8-1.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/new-sensor-features-and-improvements-for-windows-8-1",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/raising-events.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/raising-events",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/sensor-category-all.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/sensor-category-all",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/sensor-category-biometric.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/sensor-category-biometric",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/sensor-category-electrical.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/sensor-category-electrical",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/sensor-category-environmental.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/sensor-category-environmental",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/sensor-category-light.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/sensor-category-light",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/sensor-category-loc.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/sensor-category-loc",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/sensor-category-mechanical.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/sensor-category-mechanical",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/sensor-category-motion.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/sensor-category-motion",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/sensor-category-orientation.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/sensor-category-orientation",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/sensor-category-scanner.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/sensor-category-scanner",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/sensor-driver-best-practices.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/sensor-driver-best-practices",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/sensor-icon-constants.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/sensor-icon-constants",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/sensor-properties.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/sensor-properties",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/sensors-acpi-entries.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/sensors-acpi-entries",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/spbaccelerometer-driver-cookbook.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/spbaccelerometer-driver-cookbook",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/spbaccelerometer-driver-overview.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/spbaccelerometer-driver-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/specifying-an-icon.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/specifying-an-icon",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/supporting-ambient-light-sensors.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/supporting-ambient-light-sensors",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/supporting-the-device--properties.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/supporting-the-device--properties",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/testing-and-logging-sensor-data.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/testing-and-logging-sensor-data",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/testing-location-functionality.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/testing-location-functionality",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/testing-sensor-events.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/testing-sensor-events",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/testing-sensor-functionality.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/testing-sensor-functionality",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/testing-sensor-properties.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/testing-sensor-properties",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/the-accelerometer-object.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/the-accelerometer-object",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/the-i2c-transport.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/the-i2c-transport",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/the-sample-driver-i-o-model.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/the-sample-driver-i-o-model",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/the-sensor-diagnostic-tool.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/the-sensor-diagnostic-tool",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/using-the-sensors-diagnostic-tool-to-test-your-driver-and-device.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/using-the-sensors-diagnostic-tool-to-test-your-driver-and-device",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/using-vector-types.md",
+            "redirect_url": "/previous-versions/windows/hardware/sensors/using-vector-types",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/sensors/introduction-to-the-sensor-and-location-platform-in-windows.md",
             "redirect_url": "/windows-hardware/drivers/sensors/index",
             "redirect_document_id": false
