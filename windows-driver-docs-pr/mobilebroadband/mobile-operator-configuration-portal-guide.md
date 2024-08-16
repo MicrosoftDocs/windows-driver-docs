@@ -242,7 +242,6 @@ tested. If you are *not* an MO, confirm that you have written approval from the 
 
 For non-MOs (OEMs, IHVs, vendors, etc.) please work with your Microsoft representative to provide written verification from the MO that you have approval to make COSA changes on their behalf.
 
-
 ## Viewing submission status
 
 Once a submission has been made, you can view the status of your submissions from the **Submissions** page. From this page you can see a table of both your active submissions and all previous submissions.
