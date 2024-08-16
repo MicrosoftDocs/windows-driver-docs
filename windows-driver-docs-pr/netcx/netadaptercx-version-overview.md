@@ -23,7 +23,7 @@ The following table describes Windows OS support for KMDF NetAdapterCx versions.
 | Windows Server 2022 23H2 | 1.33 | 2.4 | Supports [NetAdapterCx](index.md) (Ethernet), [MBBCx](mobile-broadband-mbb-wdf-class-extension-mbbcx.md) (Mobile Broadband), and [WiFiCx](wifi-wdf-class-extension-wificx.md) (Wi-Fi). |
 | Windows 11, version 22H2 | 1.33 | 2.3 | Supports [NetAdapterCx](index.md) (Ethernet), [MBBCx](mobile-broadband-mbb-wdf-class-extension-mbbcx.md) (Mobile Broadband), and [WiFiCx](wifi-wdf-class-extension-wificx.md) (Wi-Fi). |
 | Windows 11, version 21H2 | 1.33 | 2.2 | Supports [NetAdapterCx](index.md) (Ethernet), [MBBCx](mobile-broadband-mbb-wdf-class-extension-mbbcx.md) (Mobile Broadband), and [WiFiCx](wifi-wdf-class-extension-wificx.md) (Wi-Fi). |
-| Windows 10, version 2004 | 1.31 | 2.0 | Initial release. Supports [NetAdapterCx](index.md) (Ethernet) and [MBBCx](mobile-broadband-mbb-wdf-class-extension-mbbcx.md) (Mobile Broadband). |
+| Windows 10, version 2004 | 1.31 | 2.0 | Initial release. Supports [MBBCx](mobile-broadband-mbb-wdf-class-extension-mbbcx.md) (Mobile Broadband) only. |
 
 ## UMDF NetAdapaterCx
 
