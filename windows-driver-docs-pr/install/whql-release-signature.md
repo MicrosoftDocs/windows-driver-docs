@@ -1,7 +1,7 @@
 ---
 title: WHQL Release Signature
 description: Learn how to obtain a WHQL release signature for your driver package by testing it with the Windows Hardware Lab Kit (HLK).
-ms.date: 06/27/2024
+ms.date: 08/16/2024
 keywords:
 - driver signing WDK , WHQL digital signatures
 - signing drivers WDK , WHQL digital signatures
@@ -24,7 +24,4 @@ Obtaining a WHQL release signature consists of:
 
 - Submitting DTM test logs to the Windows Quality Online Services to obtain a WHQL release signature for the driver package. For more information, see the [Windows Hardware Lab Kit (HLK)](/windows-hardware/test/hlk/).
 
-For more information about WHQL, see the [Windows Hardware Quality Labs](/previous-versions/windows/hardware/hck/jj124227(v=vs.85)) website.
-
-> [!NOTE]
-> WHQL does not embed signatures in driver files. You can embed a signature in a driver file using a third-party commercial [release certificate](release-certificates.md). Embed the signature in the driver file before submitting the driver package to WHQL.
+You can embed a signature in a driver file by using WHQL. For more information about WHQL, see the [Windows Hardware Quality Labs](/previous-versions/windows/hardware/hck/jj124227(v=vs.85)) website.
