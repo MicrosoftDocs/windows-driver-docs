@@ -73,7 +73,7 @@ To support a civic address report, at least one of the following data fields is 
 
 - SENSOR_DATA_TYPE_COUNTRY_REGION
 
-To view the complete set of platform-defined location data fields, see [**SENSOR_CATEGORY_LOCATION**](../sensors/sensor-category-loc.md) in the [Windows Sensor Reference](/windows-hardware/drivers/ddi/_sensors/) section.
+To view the complete set of platform-defined location data fields, see [**SENSOR_CATEGORY_LOCATION**](/previous-versions/windows/hardware/sensors/sensor-category-loc) in the [Windows Sensor Reference](/windows-hardware/drivers/ddi/_sensors/) section.
 
 When they are called through [**ISensorDriver::OnGetSupportedDataFields**](/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensordriver-ongetsupporteddatafields), add the supported data field property key constants to the [IPortableDeviceKeyCollection](/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicekeycollection) that you return through the *ppSupportedDataFields* parameter. The following code example shows how to add the postal code data field to [IPortableDeviceKeyCollection](/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicekeycollection) through a variable named pKeyCollection.
 
@@ -83,7 +83,7 @@ pKeyCollection->Add(SENSOR_DATA_TYPE_POSTALCODE);
 
 ## Support the required properties
 
-Like other sensor drivers, location drivers provide information about the sensor itself through a set of properties. The Windows Hardware Certification Program specifies the minimum required set of properties that a location sensor must support. For more information about sensor properties, their meanings, and which properties are required for sensor drivers, see [**Sensor Properties**](../sensors/sensor-properties.md). The following list contains the required properties:
+Like other sensor drivers, location drivers provide information about the sensor itself through a set of properties. The Windows Hardware Certification Program specifies the minimum required set of properties that a location sensor must support. For more information about sensor properties, their meanings, and which properties are required for sensor drivers, see [**Sensor Properties**](/previous-versions/windows/hardware/sensors/sensor-properties). The following list contains the required properties:
 
 - WPD_FUNCTIONAL_OBJECT_CATEGORY
 
@@ -113,7 +113,7 @@ Location drivers provide data through the same mechanisms as other sensor driver
 
 The following requirements apply to providing data from a location sensor:
 
-- Provide data both through synchronous requests and by [raising events](../sensors/raising-events.md).
+- Provide data both through synchronous requests and by [raising events](/previous-versions/windows/hardware/sensors/raising-events).
 
 - Maintain a copy of your most recent data report. If new data is not available when you request it, return the cached report. Do not update the time stamp.
 
@@ -171,7 +171,7 @@ The following diagram shows how state transitions may occur in a location sensor
 
 ## Raising data-updated and state-changed events
 
-The Location API, requires location sensors, such as GPS sensors, to raise events that provide data and state-change information. For more information about raising sensor events, see [About Sensor Driver Events](../sensors/about-sensor-driver-events.md).
+The Location API, requires location sensors, such as GPS sensors, to raise events that provide data and state-change information. For more information about raising sensor events, see [About Sensor Driver Events](/previous-versions/windows/hardware/sensors/about-sensor-driver-events).
 
 When raising these events, location drivers must follow these rules:
 
@@ -191,7 +191,7 @@ When raising these events, location drivers must follow these rules:
 
 - Do not provide incomplete data reports.
 
-- You might not have current data for the required data fields, such as when a GPS sensor has lost its fix. In this case, you might still want to provide notifications about updates to extended data fields, such as SENSOR_DATA_TYPE_NMEA_SENTENCE. To provide such notifications, you must use a custom event type and raise only the custom event until data for the required data fields becomes available. For information about how to define custom types, see [Defining Custom Values for Constants](../sensors/defining-custom-values-for-constants.md).
+- You might not have current data for the required data fields, such as when a GPS sensor has lost its fix. In this case, you might still want to provide notifications about updates to extended data fields, such as SENSOR_DATA_TYPE_NMEA_SENTENCE. To provide such notifications, you must use a custom event type and raise only the custom event until data for the required data fields becomes available. For information about how to define custom types, see [Defining Custom Values for Constants](/previous-versions/windows/hardware/sensors/defining-custom-values-for-constants).
 
 ## Related topics
 

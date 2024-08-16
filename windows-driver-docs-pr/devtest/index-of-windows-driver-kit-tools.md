@@ -91,7 +91,7 @@ The information in the following tables describes the tools that are useful for 
 
 |Tool name|Tool location|Description and Help file location|
 |----|----|----|
-|Sensor Diagnostic Tool (sensordiagnostictool.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\tools\x64</br>%WindowsSdkDir%\tools\x86|Tests the driver, firmware, and hardware for sensor and location functionality. The tool invokes the sensor and location API to test data retrieval, event handling, report intervals, change sensitivity, property retrieval.</br>WDK Documentation:</br>[Testing sensor functionality with the Sensor Diagnostic Tool](../sensors/the-sensor-diagnostic-tool.md)|
+|Sensor Diagnostic Tool (sensordiagnostictool.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\tools\x64</br>%WindowsSdkDir%\tools\x86|Tests the driver, firmware, and hardware for sensor and location functionality. The tool invokes the sensor and location API to test data retrieval, event handling, report intervals, change sensitivity, property retrieval.</br>WDK Documentation:</br>[Testing sensor functionality with the Sensor Diagnostic Tool](/previous-versions/windows/hardware/sensors/the-sensor-diagnostic-tool)|
 
 ### All Drivers
 

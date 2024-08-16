@@ -37,7 +37,7 @@ The [Sensors Geolocation Driver Sample](sensors-geolocation-driver-sample.md) in
 
 Applications that consume location data by subscribing to events request the maximum frequency for data-updated events by setting the SENSOR_PROPERTY_CURRENT_REPORT_INTERVAL property. To conserve power, your driver should send data reports no more frequently than the lowest requested report interval.
 
-For more information on how to track values for each application, see [Filtering data](../sensors/filtering-data.md). You can also find example of tracking report intervals in the [Sensors Geolocation Driver Sample](sensors-geolocation-driver-sample.md) in the WDK.
+For more information on how to track values for each application, see [Filtering data](/previous-versions/windows/hardware/sensors/filtering-data). You can also find example of tracking report intervals in the [Sensors Geolocation Driver Sample](sensors-geolocation-driver-sample.md) in the WDK.
 
 ## Tracking Desired Accuracy
 

@@ -1,7 +1,7 @@
 ---
 title: Defining Custom Values for Sensor Universal Driver Constants
 description: Defining custom values for sensor universal driver constants
-ms.date: 01/11/2024
+ms.date: 08/16/2024
 ---
 
 # Defining custom values for sensor constants
@@ -10,11 +10,11 @@ You can define custom values for categories, sensor types, data fields, properti
 
 ## Guidelines for custom values
 
-Avoid defining new constants if an existing set of platform-defined constants will work. Study and understand the categories, types, data fields, properties, and events described in the [Constants](about-sensor-constants.md) section and decide whether your sensor driver fits into the platform framework.
+Avoid defining new constants if an existing set of platform-defined constants work. Study and understand the categories, types, data fields, properties, and events described in the [Constants](/previous-versions/windows/hardware/about-sensor-constants) section. Decide whether your sensor driver fits into the platform framework.
 
 If you choose to define custom values, follow these guidelines:
 
-- Generate new PROPERTYKEYs. Do not reuse GUIDs from platform-defined constants and do not base your new GUIDs on platform-defined base values.
+- Generate new PROPERTYKEYs. Don't reuse GUIDs from platform-defined constants and don't base your new GUIDs on platform-defined base values.
 
 - Use identical GUIDs for new sensor data types in the same sensor category. To make each data type unique, increment the PID part of the property key.
 
@@ -24,7 +24,7 @@ If you choose to define custom values, follow these guidelines:
 
 - Create unique constants. To avoid conflicts between constant names, begin each custom name with a value that helps make the name unique, both within the sensor code and across other implementations. For example, a company named Fabrikam could begin each constant definition with `FABRIKAM_`.
 
-- Document and publish the values. If you want developers to be able to access the data from your sensor through the Windows Sensor API or Location API, you must document your custom values and publish the constants, for example by providing a header file. If your sensor is part of a proprietary system, publishing the custom values is not required.
+- Document and publish the values. If you want developers to be able to access the data from your sensor through the Windows Sensor API or Location API, you must document your custom values and publish the constants, for example by providing a header file. If your sensor is part of a proprietary system, publishing the custom values isn't required.
 
 ## Example
 
@@ -65,9 +65,9 @@ To use the DEFINE\_PROPERTYKEY macro, use one of the following two options:
 
 - Include Initguid.h in your project. In this case, the macro defines the property key for you. This approach works in most cases, but can cause naming collisions in large, complex projects.
 
-- Do not include Initguid.h. Instead, compile your definitions into a static library file that has the .lib file name extension. In this case, the macro declares the names for your property keys for the compiler. However, you have to reference the .lib file in your linker settings. This approach works best in large projects that use multiple modules.
+- Don't include Initguid.h. Instead, compile your definitions into a static library file that has the .lib file name extension. In this case, the macro declares the names for your property keys for the compiler. However, you have to reference the .lib file in your linker settings. This approach works best in large projects that use multiple modules.
 
-Using the macro without including Initguid.h and without referencing a library file will cause the LNK2001 error.
+Using the macro without including Initguid.h and without referencing a library file causes the LNK2001 error.
 
 ## Related topics
 
