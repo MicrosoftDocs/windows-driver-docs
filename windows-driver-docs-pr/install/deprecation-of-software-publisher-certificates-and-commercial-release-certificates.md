@@ -4,7 +4,7 @@ description: Deprecation of Software Publisher Certificates, Commercial Release 
 keywords:
 - Trusted Root Certification Authorities certificate store WDK
 - Trusted Publishers certificate store WDK
-ms.date: 09/22/2021
+ms.date: 08/16/2024
 ---
 
 # Deprecation of Software Publisher Certificates, Commercial Release Certificates, and Commercial Test Certificates
@@ -28,43 +28,17 @@ To get your driver signed, first [Register for the Windows Hardware Dev Center p
 * [What will happen to my existing signed driver packages?](#what-will-happen-to-my-existing-signed-driver-packages)
 * [Is there a way to run production driver packages without exposing it to Microsoft?](#is-there-a-way-to-run-production-driver-packages-without-exposing-it-to-microsoft)
 * [Does every new version of my driver package need to be resubmitted to Hardware Dev Center?](#does-every-new-production-version-of-a-driver-package-need-to-be-signed-by-microsoft)
-* [Will we continue to be able to sign non-driver code with our existing 3rd party issued certificates after 2021?](#will-we-continue-to-be-able-to-sign-non-driver-code-with-our-existing-3rd-party-issued-certificates-after-2021)
+* [Can we sign non-driver code with our existing 3rd party issued certificates?](#can-we-sign-non-driver-code-with-our-existing-3rd-party-issued-certificates)
 * [Will I be able to continue using my EV certificate for signing submissions to Hardware Dev Center?](#will-i-be-able-to-continue-using-my-ev-certificate-for-signing-submissions-to-hardware-dev-center)
 * [How do I know if my signing certificate will be impacted by these expirations?](#how-do-i-know-if-my-signing-certificate-will-be-impacted-by-these-expirations)
 * [How can we automate Microsoft Test Signing to work with our build processes?](#how-can-we-automate-microsoft-test-signing-to-work-with-our-build-processes)
-* [Starting in 2021, will Microsoft be the sole provider of production kernel mode code signatures?](#starting-in-2021-will-microsoft-be-the-sole-provider-of-production-kernel-mode-code-signatures)
+* [Is Microsoft the sole provider of production kernel mode code signatures?](#is-microsoft-the-sole-provider-of-production-kernel-mode-code-signatures)
 * [Hardware Dev Center doesn't provide driver signing for Windows XP, how can I have my drivers run in XP?](#hardware-dev-center-doesnt-provide-driver-signing-for-windows-xp-how-can-i-have-my-drivers-run-in-xp)
 * [How do production signing options differ by Windows version?](#how-do-production-signing-options-differ-by-windows-version)
 
 ### What is the expiration schedule of the trusted cross-certificates?
 
-The majority of cross-signed root certificates expired in 2021, according to the following schedule:
-
-|Common Name| Expiration date|
-|-----------|---------------|
-|VeriSign Class 3 Public Primary Certification Authority - G5		|2/22/2021|
-|thawte Primary Root CA		                                        |2/22/2021|
-|GeoTrust Primary Certification Authority		                    |2/22/2021|
-|GeoTrust Primary Certification Authority - G3		                |2/22/2021|
-|thawte Primary Root CA - G3		                                |2/22/2021|
-|VeriSign Universal Root Certification Authority		            |2/22/2021|
-|TC TrustCenter Class 2 CA II		                                |4/11/2021|
-|COMODO RSA Certification Authority		                            |4/11/2021|
-|UTN-USERFirst-Object		                                        |4/11/2021|
-|DigiCert Assured ID Root CA		                                |4/15/2021|
-|DigiCert High Assurance EV Root CA		                            |4/15/2021|
-|DigiCert Global Root CA		                                    |4/15/2021|
-|Entrust.net Certification Authority (2048)		                    |4/15/2021|
-|GlobalSign Root CA		                                            |4/15/2021|
-|Go Daddy Root Certificate Authority - G2		                    |4/15/2021|
-|Starfield Root Certificate Authority - G2		                    |4/15/2021|
-|NetLock Arany (Class Gold) Fotanúsítvány		                    |4/15/2021|
-|NetLock Arany (Class Gold) Fotanúsítvány		                    |4/15/2021|
-|NetLock Platina (Class Platinum) Fotanúsítvány		                |4/15/2021|
-|Security Communication RootCA1		                                |4/15/2021|
-|StartCom Certification Authority		                            |4/15/2021|
-|Certum Trusted Network CA		                                    |4/15/2021|
-|COMODO ECC Certification Authority		                            |4/11/2021|
+All cross-signed root certificates have expired.
 
 ### What alternatives to cross-signed certificates are available for testing drivers?
 
@@ -90,9 +64,9 @@ No, all production driver packages must be submitted to, and signed by Microsoft
 
 Yes, every time a Production level driver package is rebuilt, it must be signed by Microsoft.
 
-### Will we continue to be able to sign non-driver code with our existing 3rd party issued certificates after 2021?
+### Can we sign non-driver code with our existing 3rd party issued certificates?
 
-Yes, these certificates will continue to work until they expire. Code which is signed using these certificates will only be able to run in user mode, and will not be allowed to run in the kernel, unless it has a valid Microsoft signature.
+Yes, these certificates continue to work until they expire. Code which is signed using these certificates only run in user mode unless it has a valid Microsoft signature.
 
 ### Will I be able to continue using my EV certificate for signing submissions to Hardware Dev Center?  
 
@@ -112,7 +86,7 @@ Your build processes can call the [Hardware Dev Center API](../dashboard/dashboa
 
 For samples that show usage, see the [Surface Dev Center Manager](https://github.com/Microsoft/SDCM) repository.
 
-### Starting in 2021, will Microsoft be the sole provider of production kernel mode code signatures? 
+### Is Microsoft the sole provider of production kernel mode code signatures? 
 
 Yes.
 
@@ -126,7 +100,7 @@ Drivers can still be signed with a 3rd party issued code signing certificate. Ho
 
 If your driver runs on Windows 7, 8, or 8.1, your driver must be signed through the Windows Hardware Compatibility Program. To get started, see [Create a new hardware submission](../dashboard/hardware-submission-create.md).
 
-For Windows 10, use either WHCP or [attestation signing](../dashboard/code-signing-attestation.md).
+Starting in Windows 10, use either WHCP or [attestation signing](../dashboard/code-signing-attestation.md).
 
 If you have challenges signing your driver with WHCP, please report the specifics using one of the following:
 

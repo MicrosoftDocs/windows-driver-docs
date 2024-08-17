@@ -7,7 +7,7 @@ keywords:
 - Insider Preview
 - Download
 - drivers
-ms.date: 02/16/2022
+ms.date: 08/16/2024
 ---
 
 # Installing preview versions of the Windows Driver Kit (WDK)
