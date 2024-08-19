@@ -1,35 +1,47 @@
 ---
 title: Windows Compatible Products List
-description: The Windows Compatible Products List is a comprehensive list of certified devices and systems.
+description: The Windows compatible products list is a comprehensive list of certified devices and systems.
 ms.topic: article
 ms.date: 08/19/2024
 ---
 
-# Windows Compatible Products List
+# Windows compatible products list
 
-The [Windows Compatible Products List](https://partner.microsoft.com/dashboard/hardware/search/cpl) is a comprehensive list of certified devices and systems. The Windows Compatible Products list has the following features and restrictions:
+The [Windows compatible products list](https://partner.microsoft.com/dashboard/hardware/search/cpl) is a comprehensive list of certified devices and systems. The Windows compatible products list has the following features and restrictions:
 
-- You can find devices and systems by filtering the list or by running a search for a specific product name.
-- You can search across all certified devices and systems for the entire catalog.
-- If you need an OEM system report for RFPs, you can search for the product/marketing name and receive a verification report, which you can download.
-- The Compatible Products List displays Declarative & Universal status for all Device Classes.
+- Find devices and systems by filtering the list or by running a search for a specific product name.
+- Search across all certified devices and systems for the entire catalog.
+- Search for the product or marketing name and receive a verification report.
+- Displays Declarative & Universal (D & U) status for all device classes.
 
 > [!IMPORTANT]
 > System search does not support the Declarative & Universal (D & U) status field. Therefore, you must set the **D & U Status** search field dropdown to **All** to see system results.
 
-## Searching for Marketing and Product names for systems or devices
+## Search for marketing or product names
 
-If you search using the **Marketing/Product Name** box, the Compatible Products List returns matches in the product name, submission name, and marketing name fields. Consider these:
+If you search using the **Marketing/Product Name** box, the compatible products list returns matching results in the product name, submission name, and marketing name fields. Consider these search recommendations:
 
 - Limit your search to plain text, without quotes or wildcards.
 - Any spaces between words are treated as **AND** expressions.
-- Do not use any special characters or search-limiting terms. For example, do not use (OR, AND, "", \*, ?, etc.).
+- Don't use any special characters or search-limiting terms. For example, don't use:
 
-## Searching for a Company Name
+  - **OR**
+  - **AND**
+  - **""**
+  - **\***
+  - **?**
 
-Limit your searches to plain text, without quotes or wildcards. For example, do not use (OR, AND, "", \*, ?, etc.).
+## Search for a company name
 
-The search function will auto-complete results after you type five letters.
+Limit your searches to plain text, without quotes or wildcards. For example, don't use:
+
+- **OR**
+- **AND**
+- **""**
+- **\***
+- **?**
+
+The search function will autocomplete results after you type five letters.
 
 > [!NOTE]
 > You may find that some companies are listed twice. This is a result of merging the previous database with Hardware Dev Center. Each entry is different, so it's best to search using the **Marketing/Product Name** field.
