@@ -1,7 +1,7 @@
 ---
 title: Creating a Driver Verification Log
 description: Learn why the Windows Server Hardware Certification Program requires a Driver Verification Log (DVL) for all applicable driver submissions.
-ms.date: 03/19/2024
+ms.date: 08/19/2024
 ---
 
 # Creating a Driver Verification Log
@@ -54,16 +54,16 @@ msbuild.exe <vcxprojectfile> /target:dvl /p:Configuration="Release" /P:Platform=
 
 ## Creating a Driver Verification Log Outside of msbuild or Visual Studio
 
-Microsoft ships as part of the [Windows Driver Kit (WDK)](../download-the-wdk.md) and [Enterprise WDK (eWDK)](../download-the-wdk.md#download-icon-for-ewdk-enterprise-wdk-ewdk) a component called *dvl.exe* which can be used to generate Driver Verification Logs (DVLs) via command-line.  Starting in WDK/eWDK preview versions 21342 and above, it is possible to generate a DVL from the command line outside of the context of msbuild or Visual Studio. Follow the steps below to create the DVL via command-line:
+Microsoft ships as part of the [Windows Driver Kit (WDK)](../download-the-wdk.md) and [Enterprise WDK (eWDK)](../download-the-wdk.md#download-icon-for-ewdk-enterprise-wdk-ewdk) a component called *dvl.exe* which can be used to generate Driver Verification Logs (DVLs) via command-line.  Starting in WDK/eWDK preview versions 21342 and above, it is possible to generate a DVL from the command line outside of the context of msbuild or Visual Studio. 
 
-1. Place the results that must be consumed to create the DVL in a single directory, along with any vcxproj file.  Typically for drivers intended to be certified for Windows Client, this is the [CodeQL SARIF file](../devtest/static-tools-and-codeql.md#3-perform-analysis).  For Windows Server certification, this may also include the Code Analysis and Static Driver Verifier (SDV) results files.  Check the [WHCP requirements](/windows-hardware/design/compatibility/whcp-specifications-policies) documents for specific details on which tools are required to be run for device driver certification.
-2. CodeQL SARIF files and Code Analysis XML files should be placed in the top level of the directory.  The SDV DVL.xml file should be placed in a “sdv” subfolder.
-3. From the command line, navigate to the top-level directory which contains the CodeQL SARIF file.
-4. Locate dvl.exe from the WDK or a mounted eWDK.
-5. Call dvl.exe by passing the /manualCreate flag, a driver name, and a desired architecture. For example:
+Follow the steps below to create the DVL via command-line:
+
+1. Locate dvl.exe from the WDK or a mounted eWDK. This is typically installed in the path "C:\Program Files (x86)\Windows Kits\10\Tools\dvl\dvl.exe"
+2. Call dvl.exe by passing the /manualCreate flag, a driver name, a desired architecture and /sarifPath.
+3. Where /sarifPath is the file path to the CodeQL Sarif File, Code Analysis or SDV .XML files
 
 ```cmd
-"C:\Program Files (x86)\Windows Kits\10\Tools\dvl\dvl.exe" /manualCreate <driverName> <driverArchitecture>
+"C:\Program Files (x86)\Windows Kits\10\Tools\dvl\dvl.exe" /manualCreate <driverName> <driverArchitecture> /sarifPath
 ```
 
 One of the following strings should be used for your driverArchitecture string:
