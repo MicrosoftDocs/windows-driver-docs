@@ -7,7 +7,7 @@ keywords:
 - signing drivers WDK , Authenticode
 - digital signatures WDK , Authenticode
 - signatures WDK , Authenticode
-ms.date: 04/20/2017
+ms.date: 08/19/2024
 ---
 
 # Authenticode Digital Signatures

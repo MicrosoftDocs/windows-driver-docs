@@ -1,7 +1,7 @@
 ---
 title: Step 1 The New Device is Identified
 description: Step 1 The New Device is Identified
-ms.date: 11/18/2021
+ms.date: 08/19/2024
 ---
 
 # Step 1: The New Device is Identified

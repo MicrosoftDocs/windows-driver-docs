@@ -10,7 +10,7 @@ keywords:
 - kernel-mode driver signing WDK
 - driver package digital signatures WDK
 - package digital signatures WDK
-ms.date: 04/20/2017
+ms.date: 08/19/2024
 ---
 
 # Driver Signing Policy
