@@ -6,7 +6,7 @@ ms.date: 05/31/2024
 
 # BM-64-EVB board
 
-The BM64 is a dual-mode Bluetooth v5.0 radio designed for use in headsets, speakers, or multi-speaker peripherals. More information can be found via the BM64 page from **[Microchip Technology Incorporated](https://www.microchip.com/wwwproducts/en/BM64)**. The BM-64-EVB allows the BM64 to be utilized as a stand-alone device, allowing for connection to a test machine without the need for a Traduci. More information can be found via the BM-64-EVB page from **[Microchip](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/BM-64-EVB-C2)**.
+The BM64 is a dual-mode Bluetooth v5.0 radio designed for use in headsets, speakers, or multi-speaker peripherals. More information can be found via the BM64 page from **[Microchip Technology Incorporated](https://www.microchip.com/wwwproducts/en/BM64)**. The BM-64-EVB allows the BM64 to be utilized as a stand-alone device, allowing for connection to a test machine without the need for a Traduci. More information can be found via the BM-64-EVB page from **[Microchip](https://www.microchip.com/development-tool/BM-64-EVB-C2)**.
 
 | Device Name | Parameter | Usage Example |
 | --- | --- | --- |
