@@ -16,7 +16,7 @@ Here are some frequently asked questions about COSA:
 
 ## What are the settings that mobile operators can specify in COSA?
 
-The settings are largely the same as what MOs configured in apndatabase.xml, with a few exceptions and new additions. For details, see the tables in [Desktop COSA database settings](desktop-cosa-database-settings.md).
+For details, see the tables in [Desktop COSA database settings](desktop-cosa-database-settings.md).
 
 ## What events trigger the application of new mobile operator settings?
 
@@ -28,7 +28,7 @@ These events trigger the Windows provisioning engine to look for a change in set
 
 ## What SIM information from modems does COSA use?
 
-For MO/MVNO discovery, Windows tries to make the best match for an available profile in the COSA database using using identifiers such as MCC / MNC, ICCID, IMSI, SPN, GID1 from the SIM in the modem.
+For MO/MVNO discovery, Windows tries to make the best match for an available profile in the COSA database using identifiers such as MCC / MNC, ICCID, IMSI, SPN, GID1 from the SIM in the modem.
 
 ## What is a COSA profile?
 
@@ -40,7 +40,7 @@ Each COSA profile contains a set of targets used by Windows to match the profile
 
 ## Can OEMs customize COSA?
 
-OEMs can extend COSA to meet their needs. Windows will prioritize the OEM customization. For more information on OEM customizations of COSA, see [Customize the Country and Operator Settings Asset](/windows-hardware/customize/desktop/customize-cosa).
+Microsoft strongly encourages mobile operators to update the central database via the [MO Configuration Portal](/mobile-operator-configuration-portal-guide.md). However, there are some scenarios where an OEM customization of COSA may be more suitable for their devices or manufacturing timelines. OEMs can extend COSA to meet their needs. Windows will prioritize the OEM customization. For more information on OEM customizations of COSA, see [Customize the Country and Operator Settings Asset](/windows-hardware/customize/desktop/customize-cosa).
 
 OEMs can, in some cases, make modifications to COSA on behalf of an MO. See the [Mobile operator configuration portal guide](mobile-operator-configuration-portal-guide.md).
 
@@ -48,9 +48,9 @@ OEMs can, in some cases, make modifications to COSA on behalf of an MO. See the 
 
 In versions of Windows before Windows 10, version 1703, MOs could specify an auto-connect order. Windows 10, version 1703 and later continue to use a round-robin approach through all available APNs, but there is no longer a specific order that the algorithm uses.
 
-## Where is the COSA database stored, and can it be visually inspected like apndatabase.xml?
+## Where is the COSA database stored and can it be visually inspected?
 
-COSA is in the format of a Windows 10 provisioning package (.ppkg). It is in the Windows\Provisioning\COSA\Microsoft folder. You can use a third-party tool, such as [7-Zip File Manager](https://www.7-zip.org/), to visually inspect its contents.
+COSA is in the format of a Windows provisioning package (.ppkg). It is in the Windows\Provisioning\COSA\Microsoft folder. You can use a third-party tool, such as [7-Zip File Manager](https://www.7-zip.org/), to visually inspect its contents.
 
 Extensions to COSA, if specified in the device image, are in the COSA\OEM folder. For more information, see [Customize the Country and Operator Settings Asset](/windows-hardware/customize/desktop/customize-cosa).
 
