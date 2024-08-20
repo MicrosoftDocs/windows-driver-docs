@@ -48,7 +48,7 @@ For more information, see:
 
 ## Live Dumps
 
- Live Dump stop codes to not reset the OS, but allow for the capture of memory information for abnormal situations where the operating system can continue. For information about live dumps, see [Bug Check Code Reference - Live Dump](bug-check-code-reference-live-dump.md).
+ Live Dump stop codes to not reset the OS, but allow for the capture of memory information for abnormal situations where the operating system can continue. For information about live dumps, see [Bug Check Code Reference - Live Dump](kernel-live-dump-code-reference.md).
 
 ## Bug Check Codes
 

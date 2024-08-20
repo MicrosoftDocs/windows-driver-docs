@@ -2557,7 +2557,7 @@
 # Auto-expanded node
     items: 
     - name: "Kernel Live Dump Code Reference"
-      href: bug-check-code-reference-live-dump.md
+      href: kernel-live-dump-code-reference.md
     - name: "Task Manager Live Dump"
       href: task-manager-live-dump.md
     - name: "Bug Check 0xAB: SESSION_HAS_VALID_POOL_ON_EXIT"

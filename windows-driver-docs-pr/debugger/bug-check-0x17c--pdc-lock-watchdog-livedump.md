@@ -41,7 +41,7 @@ Use the debugger [!thread](../debuggercmds/-thread.md) command to display the th
 
 [\!thread](../debuggercmds/-thread.md)
 
-[Kernel Live Dump Code Reference](bug-check-code-reference-live-dump.md)
+[Kernel Live Dump Code Reference](kernel-live-dump-code-reference.md)
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
 

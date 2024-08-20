@@ -34,6 +34,6 @@ The following parameters are displayed on the blue screen.
 
 ## See Also
 
-[Kernel Live Dump Code Reference](bug-check-code-reference-live-dump.md)
+[Kernel Live Dump Code Reference](kernel-live-dump-code-reference.md)
 
 [Bug Check Code Reference](bug-check-code-reference2.md)

@@ -37,4 +37,4 @@ Starting in Windows 22H2, version 25276, Task manger can be used to create a liv
 
 [Task Manager live memory dump](task-manager-live-dump.md)
 
-[Kernel Live Dump Code Reference](bug-check-code-reference-live-dump.md)
+[Kernel Live Dump Code Reference](kernel-live-dump-code-reference.md)

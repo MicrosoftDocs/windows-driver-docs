@@ -36,7 +36,7 @@ This feature is available in Windows 10 1809 / Windows Server 2019 and newer.
 
 ## Bug Check 0x11C8: MANUALLY\_INITIATED\_POWER\_BUTTON\_HOLD_LIVE_DUMP
 
-Instead of rebooting the PC, it is also possible to create a live dump with a Long Power Button Hold (LPBH). For general information about live dumps, see [Kernel Live Dump Code Reference](bug-check-code-reference-live-dump.md).
+Instead of rebooting the PC, it is also possible to create a live dump with a Long Power Button Hold (LPBH). For general information about live dumps, see [Kernel Live Dump Code Reference](kernel-live-dump-code-reference.md).
 
 To enable the Power Button Hold Live Dump feature the *PowerButtonLiveDump* value under following registry key is set:
 
