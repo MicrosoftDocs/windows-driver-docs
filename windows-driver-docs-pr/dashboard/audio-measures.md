@@ -20,6 +20,12 @@ The result of the call is logged in an **AudioClientInitialize** telemetry event
 The following audio measures track IAudioClient::Initialize success:
 * [Percent of machines with at least one audio stream initialization failure](pct-machines-with-at-least-one-audio-stream-initialization-failure.md)
 * [Percent of Machines with Subpar Stream Initialization Success Rate](pct-machines-with-subpar-stream-initialization-success-rate.md)
+* [Percent of machine endpoints with at least 1 audio stream initialization failure per Driver](pct-machine-endpoints-with-at-least-one-audio-stream-initialization-failure-per-driver.md)
+* [Percent of machine endpoints with Subpar Stream Initialization Success Rate](pct-machine-endpoints-with-subpar-stream-initialization-success-rate.md)
+* [Percent of machine endpoints with at least one audio render stream initialization failure per driver](pct-machine-endpoints-with-at-least-one-audio-render-stream-initialization-failure-per-driver.md)
+* [Percent of machines with at least one audio render stream initialization failure](pct-machines-with-at-least-one-audio-render-stream-initialization-failure.md)
+* [Percent of machine endpoints with at least one audio capture stream initialization failure per driver](pct-machine-endpoints-with-at-least-one-audio-capture-stream-initialization-failure-per-driver.md)
+* [Percent of machines with at least one audio capture stream initialization failure](pct-machines-with-at-least-one-audio-capture-stream-initialization-failure.md)
 
 ## Audio user-mode reliability
 
@@ -44,3 +50,14 @@ If the audio service hangs, a **Hang** telemetry event is logged from the **Micr
 The following audio measures track the reliability of the Windows audio engine:
 * [Percent of machines with at least one audio crash](pct-machines-with-at-least-one-audio-crash.md)
 * [Percent of machines with at least one audio hang](pct-machines-with-at-least-one-audio-hang.md)
+* [Percent of machine endpoints with at least one audio crash](pct-machine-endpoints-with-at-least-one-audio-crash.md)
+* [Percent of machine endpoints with at least one audio hang](pct-machine-endpoints-with-at-least-one-audio-hang.md)
+
+## Audio Processing Object disablement
+
+This measure tracks automatic disablement of audio processing objects:
+* [Percent of machines with at least one APO disablement in past 7 days](pct-machines-with-at-least-one-apo-disablement-in-past-7-days.md)
+
+## What to do if your driver is rejected
+
+See []()
