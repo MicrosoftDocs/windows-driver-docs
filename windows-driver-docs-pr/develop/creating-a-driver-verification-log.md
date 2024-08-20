@@ -56,11 +56,11 @@ msbuild.exe <vcxprojectfile> /target:dvl /p:Configuration="Release" /P:Platform=
 
 Microsoft ships as part of the [Windows Driver Kit (WDK)](../download-the-wdk.md) and [Enterprise WDK (eWDK)](../download-the-wdk.md#download-icon-for-ewdk-enterprise-wdk-ewdk) a component called *dvl.exe* which can be used to generate Driver Verification Logs (DVLs) via command-line.  Starting in WDK/eWDK preview versions 21342 and above, it is possible to generate a DVL from the command line outside of the context of msbuild or Visual Studio. 
 
-Follow the steps below to create the DVL via command-line:
+Follow the steps below to create the DVL from CodeQL sarif file via command-line:
 
 1. Locate dvl.exe from the WDK or a mounted eWDK. This is typically installed in the path "C:\Program Files (x86)\Windows Kits\10\Tools\dvl\dvl.exe"
 2. Call dvl.exe by passing the /manualCreate flag, a driver name, a desired architecture and /sarifPath.
-3. Where /sarifPath is the file path to the CodeQL Sarif File, Code Analysis or SDV .XML files
+3. Where /sarifPath is the file path to the CodeQL Sarif File.
 
 ```cmd
 "C:\Program Files (x86)\Windows Kits\10\Tools\dvl\dvl.exe" /manualCreate <driverName> <driverArchitecture> /sarifPath
