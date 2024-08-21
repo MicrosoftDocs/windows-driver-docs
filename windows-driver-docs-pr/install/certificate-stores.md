@@ -4,6 +4,7 @@ description: Certificate Stores
 keywords:
 - certificate stores WDK
 ms.date: 08/20/2024
+ai-usage: ai-assisted
 ---
 
 # Certificate Stores  
