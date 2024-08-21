@@ -1,7 +1,7 @@
 ---
 title: What's New in Driver Development for Windows 11, Version 24H2
 description: This section describes new features for driver development in Windows 11, version 24H2.
-ms.date: 05/30/2024
+ms.date: 08/20/2024
 ---
 
 # <a name="top"></a>What's new in driver development for Windows 11, version 24H2
@@ -71,6 +71,8 @@ Other added WDDM 3.2 features include:
 - The method that a user-mode or kernel-mode graphics driver uses to determine whether a particular [WDDM feature is supported and enabled](./display/querying-wddm-feature-support-and-enablement.md)
 
 - [TDR (timeout detection and recovery) debugging is enhanced](./display/tdr-debuggability-improvements.md) to provide more information about the cause of a TDR event.
+
+- [Allocation notification](./display/allocation-notification.md) is an in-progress feature that isn't yet enabled for final use. This feature allows kernel-mode drivers to receive notifications about an allocation that's about to undergo a paging eviction or promotion operation.
 
 ## File system and filter drivers
 
