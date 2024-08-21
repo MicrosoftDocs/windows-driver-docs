@@ -1,10 +1,12 @@
 ---
 title: Supporting Cross-Adapter Resource Scan-Out
 description: A WDDM 2.9 driver can support cross-adapter resource scan-out, reducing the number of copies between GPUs and cross-adapter resources from two to one.
-ms.date: 12/06/2023
+ms.date: 08/20/2024
 ---
 
 # Supporting cross-adapter resource scan-out (CASO)
+
+This article describes how a WDDM driver can support cross-adapter resource scan-out (CASO), reducing the number of copies between GPUs and cross-adapter resources from two to one. This feature is available starting in Windows Server 2022 and Windows 11.
 
 ## Pre-CASO performance (two-copy path)
 
@@ -134,7 +136,7 @@ Drivers use the following DDIs to indicate whether cross-adapter scan-out is sup
 
    Per current behavior, the Desktop Windows Manager (DWM) calls the display driver's **pfnCheckMultiplaneOverlaySupport** DDI to accurately determine whether the primary surface can be scanned out. If supported by the driver, the scan-out occurs. Otherwise, DWM falls back to DWM composition mode.
 
-   Note that DWM-composed presents are likely to be less desirable than [Independent Flip](/windows/win32/direct3ddxgi/for-best-performance--use-dxgi-flip-model#directflip) (iFlip) via the two-copy path or iFlip via the one-copy CASO path. Hence, there might be common display scenarios where presentation bandwidth is limited, such as rotated or multiple displays, where drivers might consistently fail **pfnCheckMultiplaneOverlaySupport** support in DWM, likely resulting in a poorer experience than the two-copy path.
+   DWM-composed presents are likely to be less desirable than [Independent Flip](/windows/win32/direct3ddxgi/for-best-performance--use-dxgi-flip-model#directflip) (iFlip) via the two-copy path or iFlip via the one-copy CASO path. Hence, there might be common display scenarios where presentation bandwidth is limited, such as rotated or multiple displays, where drivers might consistently fail **pfnCheckMultiplaneOverlaySupport** support in DWM, likely resulting in a poorer experience than the two-copy path.
 
    To mitigate the negative fallback experience, DXGI calls **pfnCheckMultiplaneOverlaySupport** during buffer creation with the cross-adapter resource as a plane marked with the **StaticCheck** flag, to verify with high accuracy whether the driver can perform scan-out given the existing known bandwidth characteristics. If supported, DXGI continues with the one-copy CASO path; otherwise, it falls back to the two-copy path.
 
@@ -150,7 +152,7 @@ An HLK test was added to verify shader resource view (SRV) operations on cross-a
 
   Added to this HLK test case is verification of the superset relationship between the **CrossAdapterResourceTexture** KMD cap and D3D12 UMD **CrossAdapterRowMajorTextureSupported** cap. Similarly, logic was added in [**D3D12CreateDevice**](/windows/win32/api/d3d12/nf-d3d12-d3d12createdevice) to ensure that if its UMD cap is set, then the kernel tier 2 driver cap must be set too, and fail the device creation if it doesn't.
 
-* For D3D11, the above test case was added to the HLK test for Device.Graphics.WDDM30.Render.CrossAdapterScanOut; specifically, D3DConf_11_CrossAdapterResource::CrossAdapterResourceSRV.
+* For D3D11, the same test case was added to the HLK test for Device.Graphics.WDDM30.Render.CrossAdapterScanOut; specifically, D3DConf_11_CrossAdapterResource::CrossAdapterResourceSRV.
 
 ### Cross-Adapter Resource Scan-out
 

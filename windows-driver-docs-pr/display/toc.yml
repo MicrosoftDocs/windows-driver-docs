@@ -38,7 +38,9 @@
   - name: "WDDM 3.2 features"
     items:
     - name: "Querying WDDM feature support and enablement"
-      href: querying-wddm-feature-support-and-enablement.md
+      href: querying-wddm-feature-support-and-enablement.
+    - name: "Allocation Notification"
+      href: allocation-notification.md
     - name: "Dirty bit tracking"
       href: dirty-bit-tracking.md
     - name: "Live migration on GPU-P devices"
@@ -73,6 +75,20 @@
       href: signaling-cpu-event-from-kmd.md
     - name: "WDDM support for DisplayPort monitors over USB4"
       href: supporting-usb4.md
+  - name: "WDDM 2.9 features"
+    items:
+    - name: "Supporting cross-adapter resource scan-out (CASO)"
+      href: supporting-commands-for-setting-render-target.md
+  - name: "WDDM 2.7 features"
+    items:
+    - name: "Microsoft Compute Driver Model (MCDM)"
+      items:
+      - name: "MCDM overview"
+        href: mcdm.md
+      - name: "MCDM architecture"
+        href: mcdm-architecture.md
+      - name: "MCDM KM driver implementation guidelines" 
+        href: mcdm-implementation-guidelines.md
   - name: "WDDM 2.4 features"
     items:
     - name: "IOMMU-based GPU isolation"
@@ -674,8 +690,6 @@
         href: validating-a-hybrid-system-configuration.md
       - name: "Rendering on a discrete GPU using cross-adapter resources"
         href: rendering-on-a-discrete-gpu-using-cross-adapter-resources.md
-      - name: "Supporting cross-adapter resource scan-out (CASO)"
-        href: supporting-caso.md
       - name: "Hybrid system DDI"
         href: hybrid-system-ddi.md
     - name: "Managing Resources for Multiple GPU Scenarios"
@@ -792,14 +806,6 @@
       href: user-mode-driver-logging.md
     - name: "Disabling Frame Pointer Omission (FPO) optimization"
       href: disabling-frame-pointer-omission--fpo--optimization.md
-  - name: "Microsoft Compute Driver Model"
-    items:
-    - name: "Microsoft Compute Driver Model overview"
-      href: mcdm.md
-    - name: "MCDM architecture"
-      href: mcdm-architecture.md
-    - name: "MCDM KM driver implementation guidelines" 
-      href: mcdm-implementation-guidelines.md
     - name: "GPUView"
 # Auto-expanded node
       items:
