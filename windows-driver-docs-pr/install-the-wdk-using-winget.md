@@ -95,11 +95,11 @@ winget install --source winget --exact --id Microsoft.WindowsSDK.10.0.26100 --lo
 winget install --source winget --exact --id Microsoft.WindowsWDK.10.0.26100 --log $env:USERPROFILE/Desktop/wdk-install.log
 ```
 
-If you are using VS 17.11.0, leave the install extension checkbox checked. If you are using VS 17.11.1 or later, uncheck the install extension checkbox. The WDK Visual Studio extension will be installed separately in the next step.
+If you are using VS 17.11.0 or 17.11.1, uncheck the install extension checkbox.
 
 ### Step 3: Install WDK Visual Studio extension
 
-(If you are using VS 17.11.0, skip this step.)
+(If you are using VS 17.11.0 or 17.11.1, skip this step.)
 
 After installing the WDK from command line, you will need to install the Windows Driver Kit Visual Studio extension separately to be able to build and test drivers. By default, the extension is located under `%ProgramFiles(x86)%\Windows Kits\10\Vsix\VS2022\10.0.26100.0\%PROCESSOR_ARCHITECTURE%\WDK.vsix`.
 

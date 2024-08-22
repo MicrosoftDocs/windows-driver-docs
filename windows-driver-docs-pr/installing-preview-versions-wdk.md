@@ -42,7 +42,7 @@ reg add HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\StrongName\Verificatio
 [Get WDK Insider Preview](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewWDK)
 
 > [!Note]
-> During installation you will see the Visual Studio installer install the WDK Visual Studio Extensions.
+> During installation you will see the Visual Studio installer install the WDK Visual Studio Extensions.  See [Download the Windows Driver Kit](./download-the-wdk#download-icon-for-wdk-step-3-install-wdk) for additional information.
 
 ## Install Enterprise WDK (EWDK) Insider Preview
 

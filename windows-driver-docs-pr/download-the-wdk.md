@@ -6,7 +6,7 @@ keywords:
 - WDK
 - Download
 - drivers
-ms.date: 05/28/2024
+ms.date: 08/22/2024
 ---
 
 # Download the Windows Driver Kit (WDK)
@@ -66,6 +66,10 @@ The provided links for the SDK and the WDK have matching build numbers, which is
 * [Download WDK 10.0.26100.1](https://go.microsoft.com/fwlink/?linkid=2272234)
 
 The WDK Visual Studio extension is included in the default WDK installation.
+
+In Visual Studio versions 17.11.0 and 17.11.1, the WDK extension is automatically installed with Visual Studio. However, the checkbox to install the VSIX extension still appears in the WDK installer settings.  *You need to deselect this checkbox to prevent an install failure.*
+
+![Install Windows Driver Kit Visual Studio extension checkbox](images/wdk_extension_checkbox.png)
 
 > [!TIP]
 > If you can't find driver project templates in Visual Studio, the WDK Visual Studio extension didn't install properly. To resolve this, run the WDK.vsix file from this location: C:\Program Files (x86)\Windows Kits\10\Vsix\VS2022\10.0.26100.1\WDK.vsix.
