@@ -38,8 +38,8 @@
   - name: "WDDM 3.2 features"
     items:
     - name: "Querying WDDM feature support and enablement"
-      href: querying-wddm-feature-support-and-enablement.
-    - name: "Allocation Notification"
+      href: querying-wddm-feature-support-and-enablement.md
+    - name: "Allocation notification"
       href: allocation-notification.md
     - name: "Dirty bit tracking"
       href: dirty-bit-tracking.md
@@ -739,14 +739,14 @@
       href: enumerating-cofunctional-vidpn-source-and-target-modes.md
     - name: "Determining VidPN Support on a Display Adapter"
       href: determining-whether-a-vidpn-is-supported-on-a-display-adapter.md
-  - name: "Indirect display drivers (IDDs)"
+  - name: "Indirect display drivers"
 # Auto-expanded node
     items: 
-    - name: "IDD overview"
+    - name: "Indirect display driver (IDD) overview"
       href: indirect-display-driver-model-overview.md
     - name: "IddCx objects"
       href: iddcx-objects.md
-    - name: "Debugging indirect display drivers"
+    - name: "Debugging IDDs"
       href: indirect-display-debugging.md
     - name: "IddCx versions"
       href: iddcx-versions.md
