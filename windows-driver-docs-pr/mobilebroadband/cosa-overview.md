@@ -1,7 +1,7 @@
 ---
 title: COSA Database Overview and Frequently Asked Questions
 description: The Country and Operator Settings Asset (COSA) database is used by mobile operators to provision Windows devices for mobile broadband.
-ms.date: 08/16/2024
+ms.date: 08/22/2024
 author: mhopkins-msft
 ms.author: mhopkins
 ---
@@ -40,7 +40,7 @@ Each COSA profile contains a set of targets used by Windows to match the profile
 
 ## Can OEMs customize COSA?
 
-Microsoft strongly encourages mobile operators to update the central database via the [MO Configuration Portal](/mobile-operator-configuration-portal-guide.md). However, there are some scenarios where an OEM customization of COSA may be more suitable for their devices or manufacturing timelines. OEMs can extend COSA to meet their needs. Windows will prioritize the OEM customization. For more information on OEM customizations of COSA, see [Customize the Country and Operator Settings Asset](/windows-hardware/customize/desktop/customize-cosa).
+Microsoft strongly encourages mobile operators to update the central database via the [MO Configuration Portal](mobile-operator-configuration-portal-guide.md). However, there are some scenarios where an OEM customization of COSA may be more suitable for their devices or manufacturing timelines. OEMs can extend COSA to meet their needs. Windows will prioritize the OEM customization. For more information on OEM customizations of COSA, see [Customize the Country and Operator Settings Asset](/windows-hardware/customize/desktop/customize-cosa).
 
 OEMs can, in some cases, make modifications to COSA on behalf of an MO. See the [Mobile operator configuration portal guide](mobile-operator-configuration-portal-guide.md).
 
