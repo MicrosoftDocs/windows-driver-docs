@@ -2,9 +2,9 @@
 title: Migrating to WDDM
 description: Migrating to the Windows Display Driver Model (WDDM)
 keywords:
-* display driver model WDK Windows Vista , migrating
-* Windows Vista display driver model WDK , migrating
-* migrating display driver model WDK Windows Vista
+- display driver model WDK Windows Vista , migrating
+- Windows Vista display driver model WDK , migrating
+- migrating display driver model WDK Windows Vista
 ms.date: 08/21/2024
 ---
 
