@@ -1,12 +1,15 @@
 ---
 title: IOMMU DMA Remapping
-description: In the IOMMU model, each process has a single virtual address space that is shared between the CPU and graphics processing unit (GPU) and is managed by the OS memory manager.
-ms.date: 08/31/2023
+description: In the IOMMU model, each process has a single virtual address space that is shared between the CPU and graphics processing unit (GPU). The OS memory manager manages this memory.
+ms.date: 08/21/2024
+keywords:
+- IOMMU DMA remapping, WDDM
+- IOMMU, WDDM
 ---
 
 # IOMMU DMA remapping
 
-This page describes the IOMMU DMA remapping feature (IOMMUv2) that was introduced in Windows 11 22H2 (WDDM 3.0). See [IOMMU-based GPU isolation](iommu-based-gpu-isolation.md) for information about IOMMU GPU isolation prior to WDDM 3.0.
+This page describes the IOMMU DMA remapping feature (IOMMUv2) that was introduced in Windows 11 22H2 (WDDM 3.0). See [IOMMU-based GPU isolation](iommu-based-gpu-isolation.md) for information about IOMMU GPU isolation before WDDM 3.0.
 
 ## Overview
 
@@ -14,11 +17,11 @@ Up until WDDM 3.0, *Dxgkrnl* only supported IOMMU isolation through 1:1 physical
 
 *Dxgkrnl* imposes a restriction on GPUs: GPUs must be able to access all of physical memory in order for the device to start. If the highest visible address of the GPU doesn't exceed the highest physical address that is installed on the system, *Dxgkrnl* fails the initialization of the adapter. Upcoming servers and high end workstations can be configured with over 1 TB of memory that crosses the common 40-bit address space limitation of many GPUs. DMA remapping is used as a mechanism to allow GPUs to work in this environment.
 
-At startup time, *Dxgkrnl* determines whether logical remapping is necessary by comparing the device's highest accessible physical address to the memory installed on the system. If it's necessary, DMA remapping is used to map a logical address range that is within the GPU's visible bounds to any physical memory on the system. For example, if the GPU has a limit of 1 TB, then *Dxgkrnl* allocates logical addresses from [0, 1TB) which can then map to any physical memory on the system through the IOMMU.
+At startup time, *Dxgkrnl* determines whether logical remapping is necessary by comparing the device's highest accessible physical address to the memory installed on the system. If it's necessary, DMA remapping is used to map a logical address range that is within the GPU's visible bounds to any physical memory on the system. For example, if the GPU has a limit of 1 TB, then *Dxgkrnl* allocates logical addresses from [0, 1 TB) which can then map to any physical memory on the system through the IOMMU.
 
 ## Logical versus physical adapters
 
-*Dxgkrnl* distinguishes between the concept of a logical and physical adapter. A physical adapter represents an individual hardware device that may or may not be linked with other devices in an [LDA chain](linked-display-adapter.md). A logical adapter represents one or more linked physical adapters.
+*Dxgkrnl* distinguishes between the concept of a logical and physical adapter. A physical adapter represents an individual hardware device that might be linked with other devices in an [LDA chain](linked-display-adapter.md). A logical adapter represents one or more linked physical adapters.
 
 A single IOMMU DMA domain is created per logical adapter and attached to all physical adapters that are linked. Thus, all physical adapters share the same domain and the same view of physical memory.
 
@@ -43,7 +46,7 @@ Both of these caps must be provided before *Dxgkrnl* starts the device via [**DX
 
 ### Exclusive Access
 
-IOMMU domain attach and detach is extremely fast, but is nonetheless not currently atomic. This means that a transaction issued over PCIe isn't guaranteed to be translated correctly while swapping to an IOMMU domain with different mappings.
+IOMMU domain attach and detach is extremely fast, but is nonetheless not currently atomic. This condition means that a transaction issued over PCIe isn't guaranteed to be translated correctly while swapping to an IOMMU domain with different mappings.
 
 To handle this situation, starting in Windows 10 version 1803 (WDDM 2.4), a KMD must implement the following DDI pair for *Dxgkrnl* to call:
 
@@ -57,7 +60,7 @@ Between these two calls, *Dxgkrnl* makes the following guarantees:
 * The scheduler is suspended. All active workloads are flushed, and no new workloads are sent to or scheduled on the hardware.
 * No other DDI calls are made.
 
-As part of these calls, the driver may choose to disable and suppress interrupts (including Vsync interrupts) during the exclusive access, even without explicit notification from the OS.
+As part of these calls, the driver can choose to disable and suppress interrupts (including Vsync interrupts) during the exclusive access, even without explicit notification from the OS.
 
 ### Address descriptor lists
 
@@ -110,7 +113,7 @@ The [**DXGK_VIDMMCAPS**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxg
 
 Some drivers might require CPU access to the memory during a [**MapApertureSegment2**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_buildpagingbuffer) call. This functionality is optionally provided via another [**MapApertureSegment2.CpuVisibleAddress**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_buildpagingbuffer) parameter. This address is a kernel-mode virtual address that is valid as long as the allocation is mapped into the aperture segment. That is, this address will be freed immediately after the corresponding **DXGK_OPERATION_UNMAP_APERTURE_SEGMENT** call for the same allocation.
 
-This address might not be required for all allocations, and so a [**MapApertureCpuVisible** flag was added to the allocation flags](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_allocationinfoflags_wddm2_0) to indicate when it's needed.
+This address might not be required for all allocations. The [**MapApertureCpuVisible**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_allocationinfoflags_wddm2_0) flag was added to the allocation flags to indicate when this address is required.
 
 If **MapApertureCpuVisible** isn't specified, **MapApertureSegment2.CpuVisibleAddress** is NULL for **DXGK_OPERATION_MAP_APERTURE_SEGMENT2** operations.
 
@@ -130,9 +133,9 @@ For **MapApertureSegment2** calls, the ADL is always initialized and passed as c
 
 There are three fundamental requirements for the memory management functions:
 
-1. The ability to manage physical memory. This might include allocation of memory via nonpaged memory functions such as [**MmAllocatePagesforMdl**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmallocatepagesformdl) or [**MmAllocateContiguousMemory**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmallocatecontiguousmemory), and paged memory functions such as [**ZwCreateSection**](/windows-hardware/drivers/ddi/wdm/nf-wdm-zwcreatesection) or [**ZwAllocateVirtualMemory**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwallocatevirtualmemory). The ability to express IO space ranges is also required.
+1. The ability to manage physical memory. This capability might include allocation of memory via nonpaged memory functions such as [**MmAllocatePagesforMdl**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmallocatepagesformdl) or [**MmAllocateContiguousMemory**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmallocatecontiguousmemory), and paged memory functions such as [**ZwCreateSection**](/windows-hardware/drivers/ddi/wdm/nf-wdm-zwcreatesection) or [**ZwAllocateVirtualMemory**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwallocatevirtualmemory). The ability to express IO space ranges is also required.
 
-2. The ability to map a GPU-visible logical address from the physical memory. This would provide the caller with a list of logical pages (much like the PFN array of an MDL) that the GPU can be programmed to access. Calling these functions would guarantee that the underlying physical pages are locked and not pageable.
+2. The ability to map a GPU-visible logical address from the physical memory. This capability would provide the caller with a list of logical pages (much like the PFN array of an MDL) that the GPU can be programmed to access. Calling these functions would guarantee that the underlying physical pages are locked and not pageable.
 
 3. The ability to map CPU virtual addresses from the physical memory in both user mode and kernel mode, with a specified cache type (Cached vs WriteCombined).
 
@@ -161,6 +164,6 @@ Each supported device type must add the following registry key and value to the 
 HKR,Parameters,DmaRemappingCompatible,0x00010001,```3
 ```
 
-This value informs PnP that the device supports DMA remapping. *Dxgkrnl* and the HAL will then coordinate to determine what type of mapping mode should be used (Remapping, Passthrough, etc).
+This value informs PnP that the device supports DMA remapping. *Dxgkrnl* and the HAL then coordinate to determine what type of mapping mode should be used (Remapping, Passthrough, and so forth).
 
-Although this registry key was present on older versions of Windows, the value '3' is unique starting in Windows 10 version 1803 (WDDM 2.4) and is ignored on older builds which do not support it. This will allow drivers to set this key in the INF and not worry about compatibility issues down level.
+Although this registry key was present on older versions of Windows, the value '3' is unique starting in Windows 10 version 1803 (WDDM 2.4) and is ignored on older builds that don't support it. This unique value allows drivers to set this key in the INF and not worry about compatibility issues down level.

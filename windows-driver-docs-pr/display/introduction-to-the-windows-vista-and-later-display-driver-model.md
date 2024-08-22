@@ -1,12 +1,12 @@
 ---
 title: Introduction to WDDM
 description: Introduction to the Windows Display Driver Model (WDDM)
-ms.date: 03/20/2023
+ms.date: 08/21/2024
 ---
 
 # Introduction to WDDM
 
-The following articles introduce the display driver model for Windows Display Driver Model (WDDM) and explain some benefits of creating display drivers for Windows Vista and later:
+The following articles introduce the graphics display driver model for Windows Display Driver Model (WDDM):
 
 * [Windows Display Driver Model (WDDM) Architecture](windows-vista-and-later-display-driver-model-architecture.md)
 
