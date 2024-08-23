@@ -4,7 +4,7 @@ description: Describes the design of the allocation notification DDI.
 keywords:
 - allocation notification DDI
 - allocation notification, WDDM
-ms.date: 08/19/2024
+ms.date: 08/23/2024
 ---
 
 # Allocation notification
@@ -12,11 +12,11 @@ ms.date: 08/19/2024
 > [!IMPORTANT]
 > Some information relates to a prerelease product that might be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-There are times when certain operations need to be performed on an allocation that's about to undergo a paging eviction or promotion operation. For example, an allocation might be compressed when it's under device access. When that allocation is being evicted (that is, no longer under device access), the driver must first decompress it before the actual eviction. The **DXGK_OPERATION_NOTIFY_ALLOC** paging operation is designed for this purpose. This operation is available starting in Windows 11, version 24H2 (WDDM 3.2).
+There are times when certain operations need to be performed on an allocation that's about to undergo a paging eviction or promotion operation. For example, an allocation might be compressed when it's under device access. When that allocation is being evicted (that is, no longer under device access), the kernel-mode driver (KMD) must first decompress it before the actual eviction. The **DXGK_OPERATION_NOTIFY_ALLOC** paging operation is designed for this purpose. This operation is available starting in Windows 11, version 24H2 (WDDM 3.2).
 
 ## How to request allocation notifications
 
-When the system calls [**DxgkDdiCreateAllocation**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_createallocation) to create an allocation, the kernel-mode driver (KMD) can set flags in[**DXGK_ALLOCATIONINFOFLAGS2**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgk_allocationinfoflags2) to instruct *Dxgkrnl* to perform the **DXGK_OPERATION_NOTIFY_ALLOC** paging operation. The current notification flags are:
+When the system calls [**DxgkDdiCreateAllocation**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_createallocation) to create an allocation, KMD can set flags in [**DXGK_ALLOCATIONINFOFLAGS2**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgk_allocationinfoflags2) to instruct *Dxgkrnl* to perform the **DXGK_OPERATION_NOTIFY_ALLOC** paging operation. The current notification flags are:
 
 * **NotifyEviction**
 * **NotifyIoMmuUnmap**
@@ -35,7 +35,7 @@ The following flags are added to [**DXGK_ALLOCATIONINFOFLAGS2**](/windows-hardwa
 
 * **NotifyEviction**
 
-  The driver sets the **NotifyEviction** flag in its [**DxgkDdiCreateAllocation**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_createallocation) implementation. This flag indicates that *Dxgkrnl* should issue a [**DXGK_OPERATION_NOTIFY_ALLOC NotifyEviction**](/windows-hardware/drivers/ddi/d3dkmddi/ne-d3dkmddi-_dxgk_buildpagingbuffer_operation) operation to the driver before evicting an allocation.
+  The KMD sets the **NotifyEviction** flag in its [**DxgkDdiCreateAllocation**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_createallocation) implementation. This flag indicates that *Dxgkrnl* should issue a [**DXGK_OPERATION_NOTIFY_ALLOC NotifyEviction**](/windows-hardware/drivers/ddi/d3dkmddi/ne-d3dkmddi-_dxgk_buildpagingbuffer_operation) operation to the driver before evicting an allocation.
 
   When the flag is specified and the allocation is about to be evicted:
 
@@ -51,19 +51,17 @@ The following flags are added to [**DXGK_ALLOCATIONINFOFLAGS2**](/windows-hardwa
 
 * **NotifyIoMmuUnmap**
 
-  The driver sets the **NotifyIoMmuUnmap** flag in its [**DxgkDdiCreateAllocation**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_createallocation) function. This flag indicates that *Dxgkrnl* should issue a[**DXGK_OPERATION_NOTIFY_ALLOC NotifyIoMmuUnmap**](/windows-hardware/drivers/ddi/d3dkmddi/ne-d3dkmddi-_dxgk_buildpagingbuffer_operation) operation before unmapping the allocation from IOMMU. The driver has the chance to clear internal caches. The driver should ensure that the allocation GPU VA isn't accessed after return from the paging operation.
+  KMD sets the **NotifyIoMmuUnmap** flag in its [**DxgkDdiCreateAllocation**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_createallocation) function. This flag indicates that *Dxgkrnl* should issue a [**DXGK_OPERATION_NOTIFY_ALLOC NotifyIoMmuUnmap**](/windows-hardware/drivers/ddi/d3dkmddi/ne-d3dkmddi-_dxgk_buildpagingbuffer_operation) operation before unmapping the allocation from IOMMU. The driver has the chance to clear internal caches. The driver should ensure that the allocation GPU VA isn't accessed after return from the paging operation.
 
-  When the flag is specified and the allocation is about to be evicted:
+  When the flag is specified and the allocation is about to be unmapped from IOMMU during eviction:
 
-  * *Dxgkrnl* maps the allocation to the paging process's GPU VA space.
   * *Dxgkrnl* calls [**DxgkDdiBuildPagingBuffer**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_buildpagingbuffer) with the **DXGK_OPERATION_NOTIFY_ALLOC** operation and the **NotifyIoMmuUnmap** flag.
-  * The driver build commands in the paging DMA buffer.
+  * The driver builds commands in the paging DMA buffer.
   * The paging DMA buffer is submitted for execution in the system context.
-  * *Dxgkrnl* unmaps the allocation from the paging process GPU VA space.
+  * *Dxgkrnl* waits for all paging operations to finish.
+  * The allocation is unmapped from the IOMMU.
 
-  These steps can be executed multiple times if the allocation size is larger than the size of the paging process GPU VA space.
-
-  *Dxgkrnl* send the notification to the driver only when an allocation is evicted from an aperture segment or from the implicit system memory segment.
+  The notification is sent only when the device supports GpuVaIoMmu or GpuVaIoMmuGlobal virtual addressing models.
 
 ### Paging process GPU VA space size
 
