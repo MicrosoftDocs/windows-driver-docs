@@ -6,7 +6,7 @@ keywords:
 - WDK
 - drivers
 - known issues
-ms.date: 12/16/2020
+ms.date: 08/22/2024
 ---
 
 # Windows Driver Kit (WDK) known issues
@@ -22,6 +22,10 @@ After provisioning and deployment, the target machine fails to restart after the
 ### ARM64 WDK Driver SxS Support
 
 When both the Windows 11, version 24H2 kit and the Windows 11, version 22H2 kit are installed on an ARM64 machine, building a KMDF driver for ARM64 with **TargetPlatformVersion** set to Windows 11, version 22H2 fails with `WdfDriverEntry.lib(stub.obj) : error LNK2001: unresolved external symbol`.
+
+### WDK extension fails to install
+
+If you are using VS 17.11.0 or 17.11.1, uncheck the install extension checkbox in the WDK installation.
 
 ## WDK for Windows 11, version 22H2
 
