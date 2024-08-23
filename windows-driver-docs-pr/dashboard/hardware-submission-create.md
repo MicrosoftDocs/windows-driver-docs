@@ -115,7 +115,7 @@ Use [HLK studio](/windows-hardware/test/hlk/user/install-standalone-hlk-studio) 
 
 **Other issues**
 
-If you don't see your issue addressed here, go to [Get support for Partner Center dashboard issues](hardware-submission-support.md).
+If you don't see your issue addressed here, go to [Get support for Partner Center dashboard issues](technical-support.md).
 
 ## Next Steps
 
