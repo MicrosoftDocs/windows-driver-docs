@@ -107,7 +107,7 @@ If you are not equipped to use the Windows debugger to work on this problem, you
 
 -   You can try running the hardware diagnostics supplied by the system manufacturer.
 
--   For additional general troubleshooting information, see [**Blue Screen Data**](blue-screen-data.md).
+-   For additional general troubleshooting information, see [**Analyze Bug Check Blue Screen Data**](blue-screen-data.md).
 
 ## Requirements
 

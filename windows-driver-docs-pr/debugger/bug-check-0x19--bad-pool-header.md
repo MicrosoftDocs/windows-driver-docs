@@ -142,7 +142,7 @@ The internal pool links must be walked using the kernel debugger to figure out a
 
 Then you can use special pool for the suspect pool tags, or use Driver Verifier "Special Pool" option on the suspect driver. The [**!analyze**](../debuggercmds/-analyze.md) extension may be of help in pinpointing the suspect driver, but this is frequently not the case with pool corrupters.
 
-Use the steps described in [**Blue Screen Data**](blue-screen-data.md) to gather the Stop Code Parameters. Use the stop code parameters to determine the specific type of code behavior you are working to track down.
+Use the steps described in [**Analyze Bug Check Blue Screen Data**](blue-screen-data.md) to gather the Stop Code Parameters. Use the stop code parameters to determine the specific type of code behavior you are working to track down.
 
 **Driver Verifier**
 

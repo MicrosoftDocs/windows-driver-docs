@@ -1,7 +1,7 @@
 ---
 title: Bug Check Code Reference
 description: This section contains descriptions of the common bug checks, including the parameters passed to the blue screen.
-ms.date: 10/28/2022
+ms.date: 08/23/2024
 ---
 
 # Bug Check Code Reference
@@ -10,6 +10,10 @@ This section contains descriptions of common bug check codes that are displayed 
 
 > [!NOTE]
 > This topic is for programmers. If you are a customer whose system has displayed a blue screen with a bug check code, see [Troubleshoot blue screen errors](https://support.microsoft.com/help/14238/windows-10-troubleshoot-blue-screen-errors).
+
+For general information about bug check system halt errors, see [Bug Checks (Blue Screens)](bug-checks--blue-screens-.md).
+
+If you are an IT professional, see this article for additional information, [Troubleshoot "blue screen" or Stop error problems before you contact Microsoft Support](https://support.microsoft.com/help/3106831/). 
 
 ## Using WinDbg to display stop code information
 
@@ -48,7 +52,7 @@ For more information, see:
 
 ## Live Dumps
 
- Live Dump stop codes to not reset the OS, but allow for the capture of memory information for abnormal situations where the operating system can continue. For information about live dumps, see [Bug Check Code Reference - Live Dump](kernel-live-dump-code-reference.md).
+ Live Dump stop codes do not reset the OS, but allow for the capture of memory information for abnormal situations where the operating system can continue. Live dump stop codes are not listed here. For information about live dumps, see [Bug Check Code Reference - Live Dump](kernel-live-dump-code-reference.md).
 
 ## Bug Check Codes
 
@@ -436,6 +440,6 @@ The following table provides links to bug check codes.
 
 ## See also
 
-[General Tips for Blue Screens](general-troubleshooting-tips.md)
+[Bug Checks (Blue Screens)](bug-checks--blue-screens-.md)
 
-[Blue Screen Data](blue-screen-data.md)
+[Analyze Bug Check Blue Screen Data](blue-screen-data.md)

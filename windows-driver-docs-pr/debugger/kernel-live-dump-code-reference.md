@@ -223,6 +223,6 @@ These stop codes can be used for live dumps or to bug check the device.
 
 [!analyze](../debuggercmds/-analyze.md)
 
-[General Tips for Blue Screens](general-troubleshooting-tips.md)
+[Bug Checks (Blue Screens)](bug-checks--blue-screens-.md)
 
-[Blue Screen Data](blue-screen-data.md)
+[Analyze Bug Check Blue Screen Data](blue-screen-data.md)

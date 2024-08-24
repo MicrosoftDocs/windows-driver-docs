@@ -16076,16 +16076,19 @@
             "redirect_URL":  "/previous-versions/windows/hardware/checkedbuild/checked-build-asserts",
             "redirect_document_id":  false
         },
-
         {
             "source_path":  "windows-driver-docs-pr/gettingstarted/sharks-cove-hardware-development-board.md",
             "redirect_URL":  "/previous-versions/windows/hardware/devtest/devboards/sharks-cove-hardware-development-board",
             "redirect_document_id":  false
         },
-
         {
             "source_path":  "windows-driver-docs-pr/gettingstarted/windows-compatible-hardware-development-boards.md",
             "redirect_URL":  "/previous-versions/windows/hardware/devtest/devboards/windows-compatible-hardware-development-boards",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/debugger/general-troubleshooting-tips.md",
+            "redirect_URL":  "/windows-hardware/drivers/debugger/bug-checks--blue-screens-",
             "redirect_document_id":  false
         }
     ]

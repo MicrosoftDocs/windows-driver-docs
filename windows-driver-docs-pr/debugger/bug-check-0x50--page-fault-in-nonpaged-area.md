@@ -111,7 +111,7 @@ Run the Windows Memory Diagnostics tool, to test the physical memory. Select the
 
 **Resolving a faulty hardware problem:** If hardware has been added to the system recently, remove it to see if the error recurs. If existing hardware has failed, remove or replace the faulty component. You should run hardware diagnostics supplied by the system manufacturer. For details on these procedures, see the owner's manual for your computer.
 
-For general blue screen troubleshooting information, see [**Blue Screen Data**](blue-screen-data.md) and [Advanced troubleshooting for Stop error or blue screen error issue](/windows/client-management/troubleshoot-stop-errors).
+For general blue screen troubleshooting information, see [**Analyze Bug Check Blue Screen Data**](blue-screen-data.md) and [Advanced troubleshooting for Stop error or blue screen error issue](/windows/client-management/troubleshoot-stop-errors).
 
 ## Resolution
 

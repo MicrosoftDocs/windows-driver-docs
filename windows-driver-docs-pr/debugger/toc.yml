@@ -1794,9 +1794,7 @@
   items: 
   - name: "Bug Checks (Blue Screens)"
     href: bug-checks--blue-screens-.md
-  - name: "General Tips for Blue Screens"
-    href: general-troubleshooting-tips.md
-  - name: "Blue Screen Data"
+  - name: "Analyze Bug Check Blue Screen Data"
     href: blue-screen-data.md
   - name: "Bug Check Code Reference"
 # Auto-expanded node

@@ -110,7 +110,7 @@ If you encounter bug check 0xA while upgrading to a newer version of Windows, th
 
 **Resolving an antivirus software problem:** Disable the program and confirm whether doing so resolves the error. If it does, contact the manufacturer of the program about a possible update.
 
-For general information about troubleshooting bug checks, see [Blue screen data](blue-screen-data.md).
+For general information about troubleshooting bug checks, see [Analyze Bug Check Blue Screen Data](blue-screen-data.md).
 
 ## See also
 

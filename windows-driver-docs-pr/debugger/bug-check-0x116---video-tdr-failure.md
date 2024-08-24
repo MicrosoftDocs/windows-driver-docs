@@ -185,7 +185,7 @@ If you aren't equipped to use the Windows debugger to work on this problem, you 
 
     Safe Mode may be available by pressing a function key on boot, for example F8. Refer to information from the manufacturer for specific startup options.
 
-For general troubleshooting information, see [Blue Screen Data](blue-screen-data.md).
+For general troubleshooting information, see [Analyze Bug Check Blue Screen Data](blue-screen-data.md).
 
 ## Remarks
 

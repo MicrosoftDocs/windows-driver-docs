@@ -107,7 +107,7 @@ These general troubleshooting tips may be helpful.
 
 -   Run a virus detection program. Viruses can infect all types of hard disks formatted for Windows, and resulting disk corruption can generate system bug check codes. Make sure the virus detection program checks the Master Boot Record for infections.
 
--   For additional general troubleshooting information, see [**Blue Screen Data**](blue-screen-data.md).
+-   For additional general troubleshooting information, see [**Analyze Bug Check Blue Screen Data**](blue-screen-data.md).
 
 ## <span id="see_also"></span>See also
 

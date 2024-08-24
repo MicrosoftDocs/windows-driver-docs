@@ -49,7 +49,7 @@ To identify a specific cause of the error, an understanding of the [WHEA\_ERROR\
 
 This bug check is typically related to physical hardware failures. It can be heat related or a result of defective hardware, memory, or even a processor that's beginning to fail or has failed. If over-clocking has been enabled, try disabling it. Confirm that any cooling systems such as fans are functional. Run system diagnostics to confirm that the system memory isn't defective. It's less likely, but possible, that a driver is causing the hardware to fail with this bug check.
 
-To learn more about general bug check troubleshooting, see [Blue screen data](blue-screen-data.md).
+To learn more about general bug check troubleshooting, see [Analyze Bug Check Blue Screen Data](blue-screen-data.md).
 
 ## Remarks
 

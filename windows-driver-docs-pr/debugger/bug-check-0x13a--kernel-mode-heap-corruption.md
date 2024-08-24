@@ -76,10 +76,10 @@ The [!analyze](../debuggercmds/-analyze.md) debug extension displays information
 
 The [!heap](../debuggercmds/-heap.md) extension displays heap usage information, controls breakpoints in the heap manager, detects leaked heap blocks, searches for heap blocks, or displays page heap information.
 
-For general information on troubleshooting blue screen bug checks, see [Blue screen data](blue-screen-data.md).
+For general information on troubleshooting blue screen bug checks, see [Analyze Bug Check Blue Screen Data](blue-screen-data.md).
 
 ## See also
 
 [Bug check code reference](bug-check-code-reference2.md)
 
-[General tips for blue screens](general-troubleshooting-tips.md)
+[Bug Checks (Blue Screens)](bug-checks--blue-screens-.md)

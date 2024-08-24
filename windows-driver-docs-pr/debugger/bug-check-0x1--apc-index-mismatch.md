@@ -56,7 +56,7 @@ If you aren't equipped to use the Windows debugger to work on this problem:
 
 - Confirm that any new hardware that's installed is compatible with the installed version of Windows. For example, you can get information about required hardware at [Windows 10 specifications](https://www.microsoft.com/windows/windows-10-specifications).
 
-For more general troubleshooting information, see [Blue screen data](blue-screen-data.md).
+For more general troubleshooting information, see [Analyze Bug Check Blue Screen Data](blue-screen-data.md).
 
 ## Remarks
 

@@ -133,7 +133,7 @@ Index 5: 	 e9dd6ce5 kcb=ffffd805e4180e48 cell=00812970 f=00200000 \REGISTRY\MACH
 
 ## Remarks
 
-For general information on determining the cause of a blue screen, refer to [Blue Screen Data](blue-screen-data.md).
+For general information on determining the cause of a blue screen, refer to [Analyze Bug Check Blue Screen Data](blue-screen-data.md).
 
 It is always a good idea to confirm that there is sufficient hard drive or SSD storage available to allow the OS to function normally.
 

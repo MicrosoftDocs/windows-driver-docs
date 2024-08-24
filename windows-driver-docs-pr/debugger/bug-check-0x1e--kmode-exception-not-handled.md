@@ -50,7 +50,7 @@ For a complete list of exception codes, see [NTSTATUS values](/openspecs/windows
 
 ## Remarks
 
-If you're not equipped to debug this problem, you can use some basic troubleshooting techniques that are described in [Blue screen data](blue-screen-data.md). If a driver is identified in the bug check message, disable the driver or check with the manufacturer for driver updates.
+If you're not equipped to debug this problem, you can use some basic troubleshooting techniques that are described in [Analyze Bug Check Blue Screen Data](blue-screen-data.md). If a driver is identified in the bug check message, disable the driver or check with the manufacturer for driver updates.
 
 ### Hardware incompatibility
 

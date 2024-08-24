@@ -1,6 +1,6 @@
 ---
 title: Bug Check 0x1C PFN_REFERENCE_COUNT
-description: The PFN_REFERENCE_COUNT bug check has a value of 0x0000001C.This bug check appears very infrequently.
+description: The PFN_REFERENCE_COUNT bug check has a value of 0x0000001C.
 keywords: ["Bug Check 0x1C PFN_REFERENCE_COUNT", "PFN_REFERENCE_COUNT"]
 ms.date: 04/06/2023
 topic_type:

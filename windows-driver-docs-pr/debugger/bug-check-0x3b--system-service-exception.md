@@ -115,7 +115,7 @@ For general troubleshooting of Windows bug check codes, follow these suggestions
 
 - If you recently added hardware to the system, try removing or replacing it. Or check with the manufacturer to see if any patches are available.
 
-For additional general troubleshooting information, see [Blue screen data](blue-screen-data.md).
+For additional general troubleshooting information, see [Analyze Bug Check Blue Screen Data](blue-screen-data.md).
 
 ## See Also
 
