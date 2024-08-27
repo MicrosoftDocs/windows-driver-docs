@@ -47,7 +47,7 @@ Append unique identifier to dump name.
 **/f\[**<em>FullOptions</em>**\]**  
 (Kernel mode:) Creates a [complete memory dump](../debugger/complete-memory-dump.md).
 
-(User mode:) Not supported. Previously this option would create a *full user-mode dump*, which is a legacy format with less information than the newer minidump format. For more information, see [Varieties of User-Mode Dump Files](../debugger/user-mode-dump-files.md#varieties).
+(User mode:) Not supported. Previously this option would create a *full user-mode dump*, which is a legacy format with less information than the newer minidump format. For more information, see [Types of User-Mode Dump Files](../debugger/user-mode-dump-files.md#types-of-user-mode-dump-files).
 
 You can add the following *FullOptions* to change the contents of the dump file; the option is case-sensitive.
 

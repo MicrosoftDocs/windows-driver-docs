@@ -10,9 +10,6 @@ ms.date: 04/20/2017
 # PoolMon Overview
 
 
-## <span id="ddk_poolmon_overview_tools"></span><span id="DDK_POOLMON_OVERVIEW_TOOLS"></span>
-
-
 PoolMon displays the following data about memory allocations. The data is sorted by the allocations' pool tags.
 
 -   The number of allocation operations and free operations (and unfreed memory allocations).

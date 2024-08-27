@@ -13,6 +13,6 @@ A memory leak occurs when a process allocates memory from the paged or nonpaged 
 
 | Article | Description |
 |---|---|
-| [Determining Whether a Leak Exists](determining-whether-a-leak-exists.md) | Describes a technique you can use if you aren't sure whether there's a memory leak on your system. |
+| [Use perfmon to determine whether a memory leak exists](determining-whether-a-leak-exists.md) | Describes a technique you can use if you aren't sure whether there's a memory leak on your system. |
 | [Finding a Kernel-Mode Memory Leak](finding-a-kernel-mode-memory-leak.md) | Describes how to find a leak that is caused by a kernel-mode driver or component. |
 | [Finding a User-Mode Memory Leak](finding-a-user-mode-memory-leak.md) | Describes how to find a leak that is caused by a user-mode driver or application. |

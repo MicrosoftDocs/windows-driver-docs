@@ -2,7 +2,7 @@
 title: Set Up KDNET Network Kernel Debugging Automatically
 description: Learn how to use KDNET to configure network kernel debugging automatically for the Windows debugging tools.
 keywords: ["Network debugging", "Ethernet debugging", "WinDbg", "KDNET"]
-ms.date: 03/08/2023
+ms.date: 08/26/2024
 ---
 
 # Set up KDNET network kernel debugging automatically
@@ -29,6 +29,8 @@ IPv4 Address. . . . . . . . . . . : <YourHostIPAddress>
 ...
 
 ```
+
+Alternatively, use Settings, Network & internet, Ethernet to gather IPv4 address information.
 
 4. Make a note of the IPv4 address of the network adapter that you intend to use for debugging.
 

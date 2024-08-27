@@ -6,7 +6,7 @@ keywords:
 - boot entries WDK
 - adding boot entries
 - Boot.ini files WDK , adding boot entries
-ms.date: 11/14/2022
+ms.date: 08/26/2024
 ---
 
 # Adding Boot Entries
@@ -44,7 +44,7 @@ The entry was successfully copied to {49916baf-0e08-11db-9af4-000bdbd316a0}.
 
 When you copy a boot loader entry that appears on the boot menu, the copy is automatically added as the last item on the boot menu.
 
-The GUID in the preceding message (which appears between braces ({})) is the identifier of the new boot entry. The **/copy** option creates a new GUID for the boot entry. You use the identifier to represent the entry in all subsequent BCDEdit commands.
+The GUID in the preceding message (which appears between braces `{}`) is the identifier of the new boot entry. The **/copy** option creates a new GUID for the boot entry. You use the identifier to represent the entry in all subsequent BCDEdit commands.
 
 If the command fails, be sure that you are running in a Command Prompt window with administrator privileges and that all of the command parameters are spelled correctly, including the braces around **{current}**.
 

@@ -2,7 +2,7 @@
 title: Use PoolMon to Find a Kernel-Mode Memory Leak
 description: Learn how to use PoolMon to find a kernel-mode memory leak by determining which pool tag is associated with the leak.
 keywords: ["memory leak, kernel-mode, PoolMon", "PoolMon", "PoolMon, finding a memory leak"]
-ms.date: 12/30/2022
+ms.date: 08/26/2024
 ---
 
 # Use PoolMon to find a kernel-mode memory leak

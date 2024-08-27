@@ -2,7 +2,7 @@
 title: User-mode Dump Files
 description: Get an overview of user-mode dump files and how to use them to help resolve bugs and crashes.
 keywords: ["dump file, user-mode"]
-ms.date: 12/30/2022
+ms.date: 08/28/2024
 ---
 
 # User-mode dump files
@@ -11,18 +11,14 @@ In this article, get an overview of user-mode dump files and how to use them to 
 
 For information about analyzing a dump file, see [Analyze a user-mode dump file](analyzing-a-user-mode-dump-file.md).
 
-<a name="varieties"></a>
-
 ## Types of user-mode dump files
 
 Several types of user-mode crash dump files are available. The different types of dump files are divided into two categories:
 
-- [Full user-mode dumps](#full)
+- [Full user-mode dumps](#full-user-mode-dumps)
 - [Minidumps](#minidumps)
 
 You can get a substantial amount of information by analyzing a dump file. However, no dump file can provide the amount of information you get from debugging the crash by using a debugger.
-
-<a name="full"></a>
 
 ### Full user-mode dumps
 
@@ -38,8 +34,6 @@ You can *shrink* a full user-mode dump file into a minidump. To shrink a full us
 Despite their names, the largest minidump file contains more information than the full user-mode dump file. For example, the `.dump /mf` and `.dump /ma` commands create larger and more complete files than the `.dump /f` command.
 
 In user mode, `.dump /m`\[*MiniOptions*\] is often the best choice. The dump files you create by using this switch might vary in size from very small to very large. By specifying the correct *MiniOptions* switch, you can control exactly what information is included.
-
-<a name="minidumps"></a>
 
 ### Minidumps
 
@@ -71,9 +65,8 @@ You can combine these switch options. For example, use the command `.dump /mfiu`
 
 There are several different tools you can use to create a user-mode dump file:
 
-- ProcDump
-- CDB
-- WinDbg
+- [ProcDump](#procdump)
+- [WinDbg and CDB](#windbg-and-cdb)
 
 ### ProcDump
 
@@ -81,7 +74,7 @@ ProcDump is a command-line utility you can use to monitor an application for CPU
 
 For information about creating a user-mode dump file by using the Sysinternals ProcDump utility, see [ProcDump](/sysinternals/downloads/procdump).
 
-### CDB and WinDbg
+### WinDbg and CDB
 
 Console Debugger (CDB) and Windows Debugger (WinDbg) are debugging tools that are included in Windows Software Development Kit and Windows Driver Kit. See the install options in [Download and install the WinDbg Windows debugger](index.md).
 
@@ -115,7 +108,7 @@ TTD has significant advantages over crash dump files, which often are missing th
 
 For more information, see the [Time Travel Debugging overview](../debuggercmds/time-travel-debugging-overview.md).
 
-## Next steps
+## See also
 
 - Learn how to [analyze a user-mode dump file](analyzing-a-user-mode-dump-file.md).
 - Get tips to [extract information from a dump file](extracting-information-from-a-dump-file.md).

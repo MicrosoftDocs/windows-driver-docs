@@ -7,7 +7,7 @@ keywords:
 - Application Verifier
 - AppVerif.exe
 - user-mode application testing
-ms.date: 03/25/2022
+ms.date: 08/28/2024
 ---
 
 # Application Verifier - Overview
@@ -20,11 +20,11 @@ Application Verifier (AppVerifier) is a runtime verification tool for unmanaged 
 
 One of the biggest challenges faced by programmers, software architects, testers, and security consultants is to understand the variable execution paths of their applications when deployed into production. Even with access to source code, it is difficult to grasp everything that will occur during execution due to a variety of dependencies (for example. multiple groups contributing to code or leveraging external components). The Microsoft AppVerifier can play a useful role in helping to manage this complexity and the potential side effects of bugs. The AppVerifier assists in finding programming errors, security issues, and user account privilege problems that can be difficult to identify during a typical test pass.
 
-Application Verifier (AppVerif.exe) is a *dynamic verification* tool for user-mode applications. This tool monitors application actions while the application runs, subjects the application to a variety of stresses and tests, and generates a report about potential errors in application execution or design.
+Application Verifier (AppVerif.exe) is a dynamic verification tool for user-mode applications. This tool monitors application actions while the application runs, subjects the application to a variety of stresses and tests, and generates a report about potential errors in application execution or design.
 
 Application Verifier can detect errors in any user-mode applications that are not based on managed code, including user-mode drivers. It finds subtle programming errors that might be difficult to detect during standard application testing or driver testing.
 
-You can use Application Verifier alone or in conjunction with a user-mode debugger. The current user must be a member of the Administrators group on the computer.
+When used throughout the software development lifecycle, AppVerifier can bring cost benefits to development efforts because it facilitates identifying problems early on when they are easier and cheaper to fix. It also helps to detect errors that may have gone unnoticed and ensures that the final application can be executed in restricted (for example, non-admin) environments.
 
 ## Installing AppVerifier
 
@@ -32,11 +32,12 @@ Application Verifier is included in the [Windows Software Development Kit](https
 
 :::image type="content" source="images/application-verifier-main-menu.png" alt-text="Screenshot of Application Verifier main menu with a single test app selected and tests listed on the right side.":::
 
-## What Is AppVerifier?
+You can use Application Verifier alone or in conjunction with a user-mode debugger. The current user must be a member of the Administrators group on the computer.
+
+## What does AppVerifier check?
 
 AppVerifier is a tool designed to detect and help debug memory corruptions, critical security vulnerabilities, and limited user account privilege issues. AppVerifier aids in the creation of reliable and secure applications by monitoring an application's interaction with the Microsoft Windows operating system, and profiling its use of objects, the registry, the file system, and Win32 APIs (including heaps, handles, and locks). AppVerifier also includes checks to predict how well the application will perform in non-admin environments.
 
-When used throughout the software development lifecycle, AppVerifier can bring cost benefits to development efforts because it facilitates identifying problems early on when they are easier and cheaper to fix. It also helps to detect errors that may have gone unnoticed and ensures that the final application can be executed in restricted (for example, non-admin) environments.
 
 ### Problems That AppVerifier Identifies
 

@@ -2,7 +2,7 @@
 title: GFlags
 description: Learn how GFlags (the Global Flags Editor), gflags.exe, enables and disables advanced debugging, diagnostic, and troubleshooting features. 
 keywords: GFlags, Global Flags Editor, gflags.exe
-ms.date: 03/08/2023
+ms.date: 08/26/2024
 ---
 
 # GFlags
@@ -33,19 +33,17 @@ Driver developers and testers often use **GFlags** to turn on debugging, logging
 
 ### Features
 
-- Page heap verification. GFlags now includes the functions of `PageHeap` (pageheap.exe), a tool that enables heap allocation monitoring. `PageHeap` was included in previous versions of Windows.
+- Page heap verification. GFlags includes the functions of `PageHeap` (pageheap.exe), a tool that enables heap allocation monitoring. 
 
-- No reboot is required for the *Special Pool* feature. On Windows Vista and later versions of Windows, you can enable, disable, and configure the Special Pool feature without restarting ("rebooting") the computer. For more information, see [Special Pool](special-pool.md).
+- No reboot is required for the *Special Pool* feature. You can enable, disable, and configure the Special Pool feature without restarting ("rebooting") the computer. For more information, see [Special Pool](special-pool.md).
 
-- Object Reference Tracing. A new flag enables tracing of object referencing and object dereferencing in the kernel. This feature detects when an object reference count is decremented too many times or not decremented even though an object is no longer used. This flag is supported only in Windows Vista and later versions of Windows.
+- Object Reference Tracing. A flag enables tracing of object referencing and object dereferencing in the kernel. This feature detects when an object reference count is decremented too many times or not decremented even though an object is no longer used. 
 
-- New dialog box design. The GFlags dialog box has tabbed pages for easier navigation.
+- The GFlags dialog box has tabbed pages for easy navigation.
 
 ### Requirements
 
-To use most GFlags features, including setting flags in the registry or in kernel mode, or enabling page heap verification, you must be a member of the Administrator's group on the computer. However, prior to Windows Vista, users with at least Guest account access can launch a program from the **Global Flags** dialog box.
-
-When features don't work, or work differently, on particular operating system versions, the differences are explained in the description of the feature.
+To use most GFlags features, including setting flags in the registry or in kernel mode, or enabling page heap verification, you must be a member of the Administrator's group on the computer. 
 
 This section includes:
 
@@ -69,7 +67,7 @@ This section includes:
 > Incorrect use of this tool can degrade system performance or prevent Windows from starting, requiring you to reinstall Windows.
 
 > [!IMPORTANT]
-> Pool tagging is permanently enabled on Windows Server 2003 and later versions of Windows, including Windows Vista. On these systems, the **Enable pool tagging** check box on the **Global Flags** dialog box is dimmed, and commands to enable or disable pool tagging fail.
+> Pool tagging is permanently enabled on Windows. The **Enable pool tagging** check box on the **Global Flags** dialog box is dimmed, and commands to enable or disable pool tagging fail.
 
 ## See also
 

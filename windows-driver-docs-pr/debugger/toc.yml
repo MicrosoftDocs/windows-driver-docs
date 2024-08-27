@@ -1321,7 +1321,7 @@
       items: 
       - name: "Find a Memory Leak"
         href: finding-a-memory-leak.md
-      - name: "Determining Whether a Leak Exists"
+      - name: "Use perfmon to determine whether a memory leak exists"
         href: determining-whether-a-leak-exists.md
       - name: "Finding a Kernel-Mode Memory Leak"
 # Auto-expanded node

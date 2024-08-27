@@ -2,7 +2,7 @@
 title: Debug Windows Drivers Step-By-Step Lab (Echo Kernel Mode)
 description: This lab introduces the WinDbg kernel debugger. Use WinDbg to debug the echo kernel mode sample driver code.
 keywords: ["debug lab", "step-by-step", "ECHO"]
-ms.date: 03/07/2023
+ms.date: 08/26/2023
 ---
 
 # Debug Windows drivers step-by-step lab (echo kernel mode)
@@ -32,7 +32,7 @@ When working with the Windows debugger, you can do two types of debugging:
 
 *Kernel mode* - The operating system and privileged programs run in kernel mode. Kernel-mode code has permission to access any part of the system. It isn't restricted like user mode code. It can gain access to any part of any other process running in either user mode or kernel mode. Much of the core OS functionality and many hardware device drivers run in kernel mode.
 
-This exercise covers debug commands that are frequently used during both user mode and kernel-mode debugging. The exercise also covers debug extensions, sometimes called *!commands*, that are used for kernel-mode debugging.
+This exercise covers debug commands that are frequently used during both user mode and kernel-mode debugging. The exercise also covers debug extensions, sometimes called "bang" *!commands*, that are used for kernel-mode debugging.
 
 ## Lab setup
 
@@ -82,7 +82,7 @@ To work with kernel-mode applications and use WinDbg, we recommend that you use 
 
 To enable kernel-mode debugging on the target system:
 
-1. On the host system, open a Command Prompt window and enter *ipconfig* to determine its IP address.
+1. On the host system, open a Command Prompt window and enter *ipconfig* to determine its IPv4  address.
 
    ```output
    Windows IP Configuration

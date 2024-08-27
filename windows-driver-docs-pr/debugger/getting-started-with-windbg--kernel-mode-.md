@@ -1,7 +1,7 @@
 ---
 title: Get Started with WinDbg (Kernel-Mode)
 description: Learn how to set up and establish a WinDbg kernel-mode debugging session. The WinDbg kernel-mode debugger is included in Debugging Tools for Windows.
-ms.date: 03/08/2023
+ms.date: 08/26/2024
 ---
 
 # Get started with WinDbg (kernel-mode)

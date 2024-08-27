@@ -1,7 +1,7 @@
 ---
 title: BCDEdit Options Reference
 description: BCDEdit Options Reference
-ms.date: 09/25/2020
+ms.date: 08/26/2024
 ---
 
 # BCDEdit Options Reference
@@ -19,7 +19,7 @@ This section describes the boot options for supported versions of Windows that 
 ## In this section
 
 |Topic|Description|
-|--- |--- |
+|---- |---------- |
 |[BCDEdit /bootdebug](bcdedit--bootdebug.md)|The /bootdebug boot option enables or disables boot debugging of the current or specified Windows operating system boot entry.|
 |[BCDEdit /bootsequence](bcdedit--bootsequence.md)|Sets the one-time boot sequence for the boot manager. |
 |[BCDEdit /dbgsettings](bcdedit--dbgsettings.md)|The /dbgsettings option sets or displays the current global debugger settings for the computer. To enable or disable the kernel debugger, use the BCDEdit /debug option.|
@@ -34,7 +34,7 @@ This section describes the boot options for supported versions of Windows that 
 |[BCDEdit /hypervisorsettings](bcdedit--hypervisorsettings.md)|The /hypervisorsettings option sets or displays the hypervisor debugger settings for the system. |
 |[BCDEdit /set](bcdedit--set.md)|The BCDEdit /set command sets a boot entry option value in the Windows boot configuration data store (BCD). Use the BCDEdit /set command to configure specific boot entry elements, such as kernel debugger settings, memory options, or options that enable test-signed kernel-mode code or load alternate hardware abstraction layer (HAL) and kernel files. To remove a boot entry option, use the BCDEdit /deletevalue command.|
 |[BCDEdit /timeout](bcdedit--timeout.md)|Sets the boot manager time-out value. |
-|[BCDEdit /tooldisplayorder](bcdedit--toolsdisplayorder.md)|Sets the order in which the boot manager displays the tools menu. |
+|[BCDEdit /toolsdisplayorder](bcdedit--toolsdisplayorder.md)|Sets the order in which the boot manager displays the tools menu. |
 
 ## See also
 

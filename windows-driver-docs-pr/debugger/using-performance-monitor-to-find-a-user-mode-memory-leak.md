@@ -2,20 +2,20 @@
 title: Use Performance Monitor to Find a User-Mode Memory Leak
 description: Learn how to use Performance Monitor to find a user-mode memory leak and to measure the memory usage of individual processes.
 keywords: ["memory leak, user-mode, performance monitor"]
-ms.date: 12/30/2022
+ms.date: 08/26/2024
 ---
 
 # Use Performance Monitor to find a user-mode memory leak
 
 If you suspect there's a user-mode memory leak but aren't sure which process causes it, use Performance Monitor to measure the memory usage of individual processes.
 
-Run Performance Monitor as Administrator. Add the following counters:
+Run Performance Monitor as Administrator. Right click on the *Performance Monitor* under *Monitoring Tools* and select **Properties** to add the following counters:
 
 - **Process** > **Private Bytes** (for each process you want to examine)
 
 - **Process** > **Virtual Bytes** (for each process you wish to examine)
 
-Change the update time to 600 seconds to capture a graph of the leak over time. You might also want to log the data to a file for later examination.
+ Set the *Duration* to capture enough activity. For example, change the update time to 600 seconds to capture a graph of the leak over time. You might also want to log the data to a file for later examination.
 
 The **Private Bytes** counter indicates the total amount of memory that a process has allocated, not including memory shared with other processes. 
 

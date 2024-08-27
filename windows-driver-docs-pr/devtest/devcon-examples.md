@@ -10,7 +10,7 @@ keywords:
 - commands WDK DevCon
 - Example 44 Forcibly update the HAL
 - HAL update example
-ms.date: 10/28/2022
+ms.date: 08/26/2024
 ---
 
 # Device Console (DevCon.exe) examples
