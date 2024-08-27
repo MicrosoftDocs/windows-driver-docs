@@ -1,5 +1,25 @@
 {
     "redirections": [
+    {
+      "source_path": "windows-driver-docs-pr/storage/overview.md",
+      "redirect_url": "/previous-versions/windows/hardware/storage/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/definitions.md",
+      "redirect_url": "/previous-versions/windows/hardware/storage/definitions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/requirements.md",
+      "redirect_url": "/previous-versions/windows/hardware/storage/requirements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/architecture.md",
+      "redirect_url": "/previous-versions/windows/hardware/storage/architecture",
+      "redirect_document_id": false
+    },
         {
             "source_path": "windows-driver-docs-pr/dashboard/hardware-submission-support.md",
             "redirect_URL": "/windows-hardware/drivers/dashboard/technical-support",
