@@ -1,5 +1,35 @@
 {
     "redirections": [
+    {
+      "source_path": "windows-driver-docs-pr/storage/cd-rom-drivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/cd-rom-drivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/cd-rom-exclusive-access-mode.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/cd-rom-exclusive-access-mode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/cd-rom-set-speed.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/cd-rom-set-speed",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/cd-rom-real-time-streaming-.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/cd-rom-real-time-streaming-",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/acls-and-the-device-stack.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/acls-and-the-device-stack",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/cd-rom-io-control-codes.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/cd-rom-io-control-codes",
+      "redirect_document_id": false
+    },
         {
             "source_path": "windows-driver-docs-pr/dashboard/hardware-submission-support.md",
             "redirect_URL": "/windows-hardware/drivers/dashboard/technical-support",
