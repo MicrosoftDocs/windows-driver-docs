@@ -33,7 +33,7 @@ A minifilter driver instance is torn down when the minifilter driver is unloaded
 
 - After all outstanding references to the instance are released, the filter manager deletes remaining contexts and the instance is completely torn down.
 
-While the system is running, a minifilter driver can be unloaded through a service stop request (sc stop, net stop, or the service APIs), or through an explicit unload request (fltmc unload, [**FltUnloadFilter**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltunloadfilter), or [**FilterUnload**](/windows/win32/api/fltuser/nf-fltuser-filterunload)).
+While the system is running, a minifilter driver can be unloaded through a service stop request (sc stop, net stop, or the service APIs), or through an explicit unload request (fltmc unload, [**FltUnloadFilter**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltunloadfilter), or [**FilterUnload**](/windows/win32/api/fltuser/nf-fltuser-filterunload)). It should be noted that the filter will be unloaded regardless of any dependencies registered to the SCM.
 
 A minifilter driver's [*FilterUnloadCallback*](/windows-hardware/drivers/ddi/fltkernel/nc-fltkernel-pflt_filter_unload_callback) routine is called when the minifilter driver is unloaded. This routine closes any open communication server ports, calls [**FltUnregisterFilter**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltunregisterfilter), and performs any needed cleanup. Registering this routine is optional. However, if the minifilter driver does not register a *FilterUnloadCallback* routine, the minifilter driver cannot be unloaded. For more information about this routine, see [Writing a FilterUnloadCallback Routine](writing-a-filterunloadcallback-routine.md).
 
