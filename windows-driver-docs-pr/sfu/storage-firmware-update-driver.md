@@ -1,19 +1,19 @@
 ---
 title: Storage Firmware Update (SFU) Driver
 description: Provides implementation details for the Storage Firmware Update (SFU) driver.
-ms.date: 06/20/2024
+ms.date: 08/27/2024
 ---
 
 # Storage Firmware Update (SFU) driver
 
 Updating firmware for NVMe storage drives has relied on hardware vendors to create firmware update applications that utilize specific [firmware update IOCTLs](/windows/win32/fileio/working-with-nvme-devices#dont-update-firmware-through-the-pass-through-mechanism) introduced in Windows 10. These applications are typically distributed outside of the Windows Update (WU) pipeline. End users need to determine which storage disks are in their device, obtain the correct storage drive firmware utility from a manufacturer's website, and manually download and install the updates.
 
-Additionally, devices running [Windows 10 in S mode](https://www.microsoft.com/windows/s-mode), are in an enhanced security configuration that only allows users to run Microsoft-verified applications, therefore vendor utilities may fail to update drive firmware. This manual process results in low adoption of firmware updates, increases support costs and customer satisfaction issues for hardware manufacturers.
+Additionally, devices running [Windows 10 in S mode](https://www.microsoft.com/windows/s-mode), are in an enhanced security configuration that only allows users to run Microsoft-verified applications, therefore vendor utilities may fail to update drive firmware. This manual process results in low adoption of firmware updates, increases support costs, and customer satisfaction issues for hardware manufacturers.
 
 > [!NOTE]
 > Windows 10 in S mode works exclusively with apps from the Microsoft Store within Windows and accessories that are compatible with Windows 10 in S mode. A one-way switch out of S mode is available. Learn more at [windows.com/SmodeFAQ](https://support.microsoft.com/help/4020089).
 
-[Updating device firmware using Windows Update (WU)](../install/updating-device-firmware-using-windows-update.md) service using a driver-based solution is available to hardware vendors and requires them to either add firmware update logic and payload to an existing function driver or provide a separate firmware update driver and package. This results in duplicative work across hardware partners and increases the overall servicing costs of storage drives. For more information about Universal drivers, see [Using a Universal INF File](../install/using-a-universal-inf-file.md).
+[Updating device firmware using Windows Update (WU)](../install/updating-device-firmware-using-windows-update.md) service using a driver-based solution is available to hardware vendors and requires them to either add firmware update logic and payload to an existing function driver or provide a separate firmware update driver and package. This scenario results in duplicative work across hardware partners and increases the overall servicing costs of storage drives. For more information about Universal drivers, see [Using a Universal INF File](../install/using-a-universal-inf-file.md).
 
 Utilizing the Windows 10, version 2004 (OS build 19041.488 or higher) it's possible to update NVMe drive firmware using a Microsoft-supplied driver and a hardware vendor supplied firmware update package. This solution can be distributed via Windows Update to targeted drives and devices using [Computer Hardware IDs (CHIDs)](../install/specifying-hardware-ids-for-a-computer.md).
 
@@ -48,10 +48,7 @@ The device must have at least one upgradeable firmware slot.
 
 - The device must not fail I/O during the download phase and shall continue serving I/O.
 
-For additional details, see the Windows device COMPAT requirements for NVMe: [Device.Storage.ControllerDrive.NVMe - sections 5.7 and 5.8](https://partner.microsoft.com/dashboard/collaborate/packages/7840).
-
-> [!NOTE]
-> The above link requires a valid account on the [Microsoft Collaborate](https://developer.microsoft.com/dashboard/collaborate/) portal.
+For more information, see the Windows device COMPAT requirements for Device.Storage.ControllerDrive.NVMe - sections 5.7 and 5.8, located in the Components and Peripherals.pdf available in the [WHCP_Documents_Windows 11, version 24H2.zip](https://go.microsoft.com/fwlink/?linkid=2272281) download file.
 
 ## SCSI identifiers for NVMe storage disk drives
 
@@ -86,7 +83,7 @@ In the following diagram, Windows 10 provides both the function driver (stornvme
 
 ### Package 1 - Create identity for drive firmware update
 
-Typically, this package contains the following:
+Typically, this package contains the following items:
 
 - Extension INF to create software device node to act as the independently targeted hardware for the firmware update package
 
@@ -94,7 +91,7 @@ Typically, this package contains the following:
 
 Submit your extension INF package as a separate driver submission.
 
-Many device types, however, don't allow a single physical device to enumerate more than one device node. In this case, use an extension INF that specifies the [AddComponent](../install/inf-addcomponent-directive.md) directive to create a device node that can be targeted by Windows Update and install the firmware update driver on it. The following snippet from an INF file shows how you can do this:
+Many device types, however, don't allow a single physical device to enumerate more than one device node. In this case, use an extension INF that specifies the [AddComponent](../install/inf-addcomponent-directive.md) directive to create a device node targeted by Windows Update and install the firmware update driver on it. The following snippet from an INF file show how to create the device node:
 
 ```inf
 [Manufacturer]
@@ -107,7 +104,7 @@ AddComponent= StorageIHVabcd_component,,StorageIHVabcd_ComponentInstall
 ComponentIDs = StorageIHVabcd-firmware-update
 ```
 
-In the INF sample above, `ComponentIDs = StorageIHVabcd-firmware-update` indicates that the child device will have a hardware ID of **SWC\StorageIHVabcd-firmware-update**. When installed, this INF creates the following device hierarchy:
+In this INF sample, `ComponentIDs = StorageIHVabcd-firmware-update` indicates that the child device will have a hardware ID of **SWC\StorageIHVabcd-firmware-update**. When installed, this INF creates the following device hierarchy:
 
 ![I N F device hierarchy.](images/inf-device-hierarchy.png)
 
@@ -125,7 +122,7 @@ Typically, this package contains the following:
 
 Submit your firmware package as a separate driver submission.
 
-The drive firmware update package INF targets the new node **SWC\StorageIHVabcd-firmwareupdate** and invokes the Windows 10 storage firmware update driver. For a software-enumerated component device to function, its parent must be started. In order to use StorFwUpdate drive, developers should use the Include/Needs INF directives in the [DDInstall section](../install/inf-ddinstall-section.md) for each possible `[DDInstall.*]` section to the corresponding `[StorFwUpdate.*]` sections as shown below, regardless of whether the INF specifies any directives for that section or not:
+The drive firmware update package INF targets the new node **SWC\StorageIHVabcd-firmwareupdate** and invokes the Windows 10 storage firmware update driver. For a software-enumerated component device to function, its parent must be started. In order to use StorFwUpdate drive, developers should use the Include/Needs INF directives in the [DDInstall section](../install/inf-ddinstall-section.md) for each possible `[DDInstall.*]` section to the corresponding `[StorFwUpdate.*]` sections as shown here, regardless of whether the INF specifies any directives for that section or not:
 
 ```inf
 [StorFwUpdateOem.NT]
@@ -144,7 +141,7 @@ Needs              = StorFwUpdate.NT.Services
 
 For more information, see [Using a Component INF file](../install/using-a-component-inf-file.md). A sample NVMe drive firmware update INF file is provided below. Since the **SWC\StorageIHVabcd-firmwareupdate** software identity may not be unique across hardware manufacturers, the INF must utilize [CHID](../install/specifying-hardware-ids-for-a-computer.md) targeting for Windows Update distribution.
 
-The StorFwUpdate component does not perform any validation (signature verification or decryption) of the firmware binary payload. If this level of feature is required then hardware partners can write their own storage firmware update driver.
+The StorFwUpdate component doesn't perform any validation (signature verification or decryption) of the firmware binary payload. If this level of feature is required, then hardware partners can write their own storage firmware update driver.
 
 ## Storage drive firmware update example
 
@@ -178,7 +175,7 @@ For more information, see [Get-StorageFirmwareInformation](/powershell/module/st
 
 1. Move to the directory on your system that contains the driver extension package INF file. For example, type `cd .\signed-DiskExtnPackage\`.
 
-1. Verify that the extension INF file contains the information for the drives you're updating. See [Disk extension INF file](#disk-extension-inf-sample) in this topic for an example extension INF.
+1. Verify that the extension INF file contains the information for the drives you're updating. See [Disk extension INF file](#disk-extension-inf-sample) in this article for an example extension INF.
 
 1. Install the extension INF with the Microsoft PnP utility. For example, in an administrator command prompt, type `pnputil /add-driver .\OEMDiskExtnPackage.inf /install`. As the new software node is created as a child of a boot critical device, a reboot is required to take effect.
 
@@ -194,13 +191,13 @@ To view the new SWC node and hardware ID:
 
 1. Once you've selected the drive you've updated, in the **Device Manager** **View** menu, select **Devices by connection**.
 
-1. Click on the selected drive node, then click to expand. You will see a child **Generic software component** under the drive node.
+1. Click on the selected drive node, then click to expand. You'll see a child **Generic software component** under the drive node.
 
-1. Right-click on the **Generic software component** and click **Properties**.
+1. Right-click on the **Generic software component** and select **Properties**.
 
 1. In the **Properties** dialog window, select the **Details** tab, then select **Hardware Ids** from the **Property** drop-down list view the Hardware ID for the **Generic software component** on the drive node.
 
-1. The SWC\\* Hardware Id should match the one specified in the Extension INF.
+1. The SWC\\* Hardware ID should match the one specified in the Extension INF.
 
 ### View and install the NVMe disk firmware update
 
@@ -208,7 +205,7 @@ To view the new SWC node and hardware ID:
 
 1. Move to the directory on your system that contains the NVMe disk firmware update INF file. For example, type `cd .\signed-ihv-firmware\`.
 
-1. Verify that the disk firmware update INF contains the information for the drives you're updating. See the [Disk Firmware INF file](#disk-firmware-inf-sample) in this topic for an example disk firmware update INF.
+1. Verify that the disk firmware update INF contains the information for the drives you're updating. See the [Disk Firmware INF file](#disk-firmware-inf-sample) in this article for an example disk firmware update INF.
 
 1. Install the disk firmware update INF with the Microsoft PnP utility. For example, in an administrator command prompt, type `pnputil /add-driver .\StorFwUpdateIHV.inf /install`.
 
