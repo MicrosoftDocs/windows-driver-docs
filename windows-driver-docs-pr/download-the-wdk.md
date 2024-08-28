@@ -46,6 +46,7 @@ When you install Visual Studio 2022, select the **Desktop development with C++**
 * C++ ATL for latest v143 build tools with Spectre Mitigations (x86 & x64)</br>
 * C++ MFC for latest v143 build tools with Spectre Mitigations (ARM64/ARM64EC)</br>
 * C++ MFC for latest v143 build tools with Spectre Mitigations (x86 & x64)</br>
+* Windows Driver Kit</br>
 
 Hint: Use the Search box to look for "64 latest spectre" (in English installations) or "64 latest" (in non-English installations) to quickly see these components.</br>
 
@@ -67,7 +68,7 @@ The provided links for the SDK and the WDK have matching build numbers, which is
 
 The WDK Visual Studio extension is included in the default WDK installation.
 
-In Visual Studio versions 17.11.0 and 17.11.1, the WDK extension is automatically installed with Visual Studio. However, the checkbox to install the VSIX extension still appears in the WDK installer settings.  *You need to deselect this checkbox to prevent an install failure.*
+In Visual Studio versions 17.11.0 and 17.11.1, the WDK extension should be installed with Visual Studio. However, the checkbox to install the VSIX extension still appears in the WDK installer settings.  *You need to deselect this checkbox to prevent an install failure.*
 
 ![Install Windows Driver Kit Visual Studio extension checkbox](images/wdk_extension_checkbox.png)
 
