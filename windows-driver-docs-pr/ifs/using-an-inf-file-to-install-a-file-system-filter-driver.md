@@ -3,7 +3,7 @@ title: Using an INF File to Install a File System Filter Driver
 description: Using an INF File to Install a File System Filter Driver
 keywords:
 - INF files WDK file system filter driver, installation steps
-ms.date: 12/06/2023
+ms.date: 08/28/2024
 ---
 
 # Using an INF File to Install a File System Filter Driver
@@ -11,20 +11,17 @@ ms.date: 12/06/2023
 > [!NOTE]
 > For optimal reliability and performance, use [file system minifilter drivers](./filter-manager-concepts.md) with Filter Manager support instead of legacy file system filter drivers. To port your legacy driver to a minifilter driver, see [Guidelines for Porting Legacy Filter Drivers](guidelines-for-porting-legacy-filter-drivers.md).
 
-This article describes how a legacy file system filter driver developer can use an INF file for driver installation.
-
-After you create an INF file, you can use it to install, upgrade, and uninstall your file system filter driver. You can use the INF file alone or together with a batch file or a user-mode setup application.
+After you create an INF file for the legacy file system filter driver that you developed, you can use it to install, upgrade, and uninstall your driver. You can use the INF file alone or together with a batch file or a user-mode setup application.
 
 ## Right-Click Install
+
+This installation method works only if the INF file contains a **DefaultInstall** section; that is, the shortcut menu appears only if the INF file contains a **DefaultInstall** section.
 
 To execute the [**DefaultInstall**](../install/inf-defaultinstall-section.md) and [**DefaultInstall.Services**](../install/inf-defaultinstall-services-section.md) sections of your INF file, do the following:
 
 1. In Windows Explorer, select and hold (or right-click) the INF file name. A shortcut menu appears.
 
 2. Select **Install**.
-
-> [!NOTE]
-> The shortcut menu appears only if the INF file contains a **DefaultInstall** section.
 
 ## Command-Line or Batch File Install
 
