@@ -2,7 +2,7 @@
 title: "WinDbg Release notes"
 description: "This topic provides information on what's new in WinDbg."
 keywords: ["Release notes", "WinDbg", "Windows Debugging"]
-ms.date: 03/05/2024
+ms.date: 08/29/2024
 ms.topic: article
 ---
 
@@ -62,7 +62,7 @@ dx @$curprocess.Modules[1].EnableSymbolDownload()
 
 #### New command to display SourceLink information
 
-To aid debugging issues with downloading sources based on [embedded SourceLink](https://learn.microsoft.com/en-us/cpp/build/reference/sourcelink?view=msvc-170), you can now use the command `!lmsourcesinfo module` to display the contents of the SourceLink that the debugger will use.
+To aid debugging issues with downloading sources based on [embedded SourceLink](/cpp/build/reference/sourcelink?view=msvc-170), you can now use the command `!lmsourcesinfo module` to display the contents of the SourceLink that the debugger will use.
 
 ### General UI Improvements
 
@@ -82,7 +82,7 @@ We've made some small improvements to windows like the modules window or the sta
 
 ### TTD
 
-See [TTD Release Notes](https://learn.microsoft.com/en-us/windows-hardware/drivers/debuggercmds/time-travel-debugging-release-notes#111410) for version 1.11.410.
+See [TTD Release Notes](time-travel-debugging-release-notes.md#111410) for version 1.11.410.
 
 ## 1.2402.24001.0
 
