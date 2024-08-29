@@ -62,7 +62,7 @@ dx @$curprocess.Modules[1].EnableSymbolDownload()
 
 #### New command to display SourceLink information
 
-To aid debugging issues with downloading sources based on [embedded SourceLink](/cpp/build/reference/sourcelink?view=msvc-170), you can now use the command `!lmsourcesinfo module` to display the contents of the SourceLink that the debugger will use.
+To aid debugging issues with downloading sources based on [embedded SourceLink](/cpp/build/reference/sourcelink), you can now use the command `!lmsourcesinfo module` to display the contents of the SourceLink that the debugger will use.
 
 ### General UI Improvements
 
