@@ -12,6 +12,78 @@ ms.topic: article
 
 This topic provides information on what's new in WinDbg. Earlier versions were released as *WinDbg Preview*.
 
+## 1.2407.24003.0
+
+### New Features 
+
+#### New JavaScript Scripting Provider
+
+We are now shipping a new backwards compatible JavaScript provider based on V8.
+As a result of this, arm64 hosts can now use JavaScript extensions.
+The arm64 UI also now defaults to the arm64 engine.
+
+The new provider is enabled by default on all architectures.
+On x86 and x64, it may be turned on/off via the `.veighton` and `.veightoff` commands.
+At some point in the future, these commands and the legacy JavaScript provider will be removed.
+
+#### UI Extensibility via The Extension Gallery and Data Model
+
+Debugger extensions with extension gallery manifests can now add icons to the new Extensions tab of the WinDbg ribbon.
+Clicking these icons will trigger a visualization of a given data model query.
+This means of extensibility is accomplished by means of adding *views* to the extension gallery manifest.
+A *view* binds a coupling of a name and an icon to a data model query and view kind.
+Documentation can be found at [Extension Gallery Manifest Documentation](https://github.com/microsoft/WinDbg-Samples/tree/master/Manifest)
+
+#### Added Exception parameters to the Extension Gallery Exception load trigger
+
+A gallery extension can now be conditionally loaded based on specific exception parameter values.
+See [Extension Gallery Manifest Documentation](https://github.com/microsoft/WinDbg-Samples/tree/master/Manifest) for details.
+
+#### Configuration option to never download specific symbols
+
+You can now skip downloading symbols for specified images.
+
+In the `Symbols` section of your `DbgX.xml` configuration file, you can add a list of symbols:
+
+```xml
+<Namespace Name="DisabledSymbolsDownload">
+  <Setting Name="MSEdge.dll" Type="VT_BSTR" Value=""></Setting>
+</Namespace>
+```
+
+In the debugger, you can run `dx Debugger.Settings.Symbols.DisabledSymbolsDownload` to view the current list of symbols not being downloaded.
+
+You can also change the list directly from the debugger like this:
+
+```
+dx @$curprocess.Modules[1].DisableSymbolDownload()
+dx @$curprocess.Modules[1].EnableSymbolDownload()
+```
+
+#### New command to display SourceLink information
+
+To aid debugging issues with downloading sources based on [embedded SourceLink](https://learn.microsoft.com/en-us/cpp/build/reference/sourcelink?view=msvc-170), you can now use the command `!lmsourcesinfo module` to display the contents of the SourceLink that the debugger will use.
+
+### General UI Improvements
+
+We've made some small improvements to windows like the modules window or the stack window:
+* You can now sort grid views by clicking on the header column.
+* There are more right-click actions available.
+* The stack window shows frames as inlined when appropriate.
+
+### Bug fixes
+
+* Fixed an issue where PDBs larger than 4GB would not be downloaded over HTTP.
+  - Edge is an example of such a PDB.
+* Fixed caching issue in the debugger credential provider (now it will cache credentials per site).
+* Fixed bugs during evaluation of the Extension Gallery load triggers.
+* Fixed a bug with `!address` that could cause a crash.
+* `!heap -a -a` should work now.
+
+### TTD
+
+See [TTD Release Notes](https://learn.microsoft.com/en-us/windows-hardware/drivers/debuggercmds/time-travel-debugging-release-notes#111410) for version 1.11.410.
+
 ## 1.2402.24001.0
 
 ### New Features
