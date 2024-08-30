@@ -2613,7 +2613,7 @@
     - name: "Bug Check 0x190: WIN32K_CRITICAL_FAILURE_LIVEDUMP"
       href: bug-check-0x190--win32k-critical-failure-livedump.md
     - name: "Bug Check 0x193: VIDEO_DXGKRNL_LIVEDUMP"
-      href: bug-check-0x192--video-dxgkrnl-livedump.md
+      href: bug-check-0x193--video-dxgkrnl-livedump.md
     - name: "Bug Check 0x195: SMB_SERVER_LIVEDUMP"
       href: bug-check-0x195--smb-server-livedump.md
     - name: "Bug Check 0x198: UFX_LIVEDUMP"
