@@ -1,6 +1,111 @@
 {
     "redirections": [
     {
+      "source_path": "windows-driver-docs-pr/storage/overview.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/definitions.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/definitions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/requirements.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/requirements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/architecture.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/architecture",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/tape-drivers-overview.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/tape-drivers-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/using-the-tape-class-driver.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/using-the-tape-class-driver",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/tape-class-driver-routines.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/tape-class-driver-routines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/tape-miniclass-driver-routines.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/tape-miniclass-driver-routines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/driverentry-of-tape-miniclass-driver.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/driverentry-of-tape-miniclass-driver",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/storing-tape-miniclass-context-in-optional-extensions.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/storing-tape-miniclass-context-in-optional-extensions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/processing-tape-device-control-requests.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/processing-tape-device-control-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/changer-drivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/changer-drivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/the-changer-driver-model.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/the-changer-driver-model",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/the-changer-class-driver.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/the-changer-class-driver",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/differences-in-changer-class-driver-versions.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/differences-in-changer-class-driver-versions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/introduction-to-changer-miniclass-drivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/introduction-to-changer-miniclass-drivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/required-changer-miniclass-routines.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/required-changer-miniclass-routines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/driverentry-of-changer-miniclass-drivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/driverentry-of-changer-miniclass-drivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/installing-changer-miniclass-drivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/installing-changer-miniclass-drivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/storing-device-specific-information-in-the-changer-s-device-extension.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/storing-device-specific-information-in-the-changer-s-device-extension",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/processing-changer-device-control-requests.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/processing-changer-device-control-requests",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows-driver-docs-pr/storage/cd-rom-drivers.md",
       "redirect_url": "/previous-versions/windows/drivers/storage/cd-rom-drivers",
       "redirect_document_id": false
