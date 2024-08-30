@@ -1,37 +1,30 @@
 ---
 title: Reporting Graphics Memory
 description: Reporting Graphics Memory
-ms.date: 04/20/2017
+keywords:
+- graphics memory, WDDM display
+- video memory manager, reporting graphics memory
+ms.date: 08/29/2024
 ---
 
 # Reporting Graphics Memory
 
+WDDM's [video memory manager](video-memory-management-and-gpu-scheduling.md) (*VidMm*) reports an accurate account of each graphics memory contributor to clients. These reports of available memory can be found through the **Display** application.
 
-The video memory manager reports to clients about the memory information that the display miniport driver supplies.
+The following clients use this report:
 
-Operating systems prior to Windows Vista report graphics memory as a single number through the Control Panel **Display** application. Display drivers provide this number to the operating system; the operating system then reports the number to the user through the **Display** application.
+* The [Windows System Assessment Tool](/windows-hardware/manufacture/desktop/configure-windows-system-assessment-test-scores) (WinSAT) checks for the available graphics memory and takes the action to turn off or turn on the Premium Aero Glass experience based on the amount of available memory.
 
-The video memory manager of the [Windows Display Driver Model (WDDM)](windows-vista-display-driver-model-design-guide.md) reports an accurate account of each graphics memory contributor. The following clients use this report:
+* The Desktop Window Manager (DWM; *Dwm.exe*) depends on the exact state of the available graphics memory on computers with [WDDM](windows-vista-display-driver-model-design-guide.md) display drivers.
 
--   The Windows System Assessment Tool (WinSAT) checks for the available graphics memory and takes the action to turn off or turn on the Premium Aero Glass experience based on the amount of available memory.
+* DirectX games and other graphics applications must be able to get accurate values that describe the state of the graphics memory. An inaccurate graphics memory number could drastically change the game experience for the user.
 
--   The Desktop Window Manager (DWM) (Dwm.exe) depends on the exact state of the available graphics memory on computers with [Windows Display Driver Model (WDDM)](windows-vista-display-driver-model-design-guide.md) display drivers.
+Operating systems prior to Windows Vista report graphics memory as a single number through the Control Panel **Display** application. The OS receives this number directly from the display driver.
 
--   Microsoft DirectX games and other graphics applications must be able to get accurate values that describe the state of the graphics memory. An inaccurate graphics memory number could drastically change the game experience for the user.
+Related articles include:
 
-The following sections describe how the video memory manager calculates graphics memory numbers and provide examples of how the memory numbers are reported:
+* [Calculating Graphics Memory](calculating-graphics-memory.md)
 
-[Calculating Graphics Memory](calculating-graphics-memory.md)
+* [Examples of Graphics Memory Reporting](examples-of-graphics-memory-reporting.md)
 
-[Examples of Graphics Memory Reporting](examples-of-graphics-memory-reporting.md)
-
-[Retrieving Graphics Memory Numbers](retrieving-graphics-memory-numbers.md)
-
- 
-
- 
-
-
-
-
-
+* [Retrieving Graphics Memory Numbers](retrieving-graphics-memory-numbers.md)

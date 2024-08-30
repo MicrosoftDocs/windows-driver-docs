@@ -374,10 +374,10 @@
       - name: "Reporting Graphics Memory"
 # Auto-expanded node
         items: 
-        - name: "Reporting Graphics Memory"
-          href: reporting-graphics-memory.md
         - name: "Calculating Graphics Memory"
           href: calculating-graphics-memory.md
+        - name: "Reporting Graphics Memory"
+          href: reporting-graphics-memory.md
         - name: "Examples of Graphics Memory Reporting"
           href: examples-of-graphics-memory-reporting.md
         - name: "Retrieving Graphics Memory Numbers"

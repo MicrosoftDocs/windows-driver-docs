@@ -1,16 +1,16 @@
 ---
 title: Calculating Graphics Memory
 description: Calculating Graphics Memory
-ms.date: 06/26/2024
+ms.date: 08/29/2024
 ---
 
 # Calculating Graphics Memory
 
-The [video memory manager](video-memory-management-and-gpu-scheduling.md) (*VidMm*) must calculate the total amount of graphics memory before it can report an accurate account. It uses the following to calculate graphics memory numbers:
+Before [*VidMm*](video-memory-management-and-gpu-scheduling.md) can [report an accurate account](reporting-graphics-memory.md) to clients, it must first calculate the total amount of graphics memory. *VidMm* uses the following memory types and formulas to calculate graphics memory numbers:
 
 * Total system memory
 
-  This value is the total amount of system memory accessible to the operating system. Memory that the BIOS allocates doesn't appear in this number. For example, a computer with a 1 GB DIMM (that is, 1,024 MB) that has a BIOS that reserves 1 MB of memory appears to have 1,023 MB of system memory.
+  This value is the total amount of system memory accessible to the operating system. Memory that the BIOS allocates doesn't appear in this number. For example, a computer with a 1 GB DIMM (1,024 MB) that has a BIOS that reserves 1 MB of memory appears to have 1,023 MB of system memory.
 
 * Total system memory that's available for graphics use
 
@@ -40,7 +40,7 @@ The [video memory manager](video-memory-management-and-gpu-scheduling.md) (*VidM
 
 * Maximum shared system memory  
 
-  This value is the maximum amount of system memory that is shared to the GPU. It's calculated using the following formula:
+  This value is the maximum amount of system memory that is shared to the GPU. *VidMm* uses the following formula to calculate it:
 
   ```cpp
   MaxSharedSystemMemory = TotalSystemMemoryAvailableForGraphics - DedicatedSystemMemory
@@ -48,7 +48,7 @@ The [video memory manager](video-memory-management-and-gpu-scheduling.md) (*VidM
 
 * Shared system memory  
 
-  This value is the amount of system memory that is shared to the GPU. It's calculated using the following formula:
+  This value is the amount of system memory that is shared to the GPU. *VidMm* uses the following formula to calculate it:
 
   ```cpp
   SharedSystemMemory = MIN(MIN(SumOfCommitLimitOnAllApertureSegment, DXGK_DRIVERCAPS.ApertureSegmentCommitLimit), MaxSharedSystemMemory)
@@ -56,8 +56,16 @@ The [video memory manager](video-memory-management-and-gpu-scheduling.md) (*VidM
 
 * Total video memory  
 
-  This value is the total amount of video memory. It's calculated using the following formula:
+  This value is the total amount of video memory. *VidMm* uses the following formula to calculate it:
 
   ```cpp
   TotalVideoMemory = DedicatedVideoMemory + DedicatedSystemMemory + SharedSystemMemory
   ```
+
+Related articles include:
+
+* [Reporting Graphics Memory](reporting-graphics-memory.md)
+
+* [Examples of Graphics Memory Reporting](examples-of-graphics-memory-reporting.md)
+
+* [Retrieving Graphics Memory Numbers](retrieving-graphics-memory-numbers.md)
