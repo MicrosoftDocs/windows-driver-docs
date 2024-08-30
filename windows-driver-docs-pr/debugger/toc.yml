@@ -2416,7 +2416,7 @@
     - name: "Bug Check 0x162: KERNEL_AUTO_BOOST_INVALID_LOCK_RELEASE"
       href: bug-check-0x162--kernel-auto-boost-invalid-lock-release.md
     - name: "Bug Check 0x163: WORKER_THREAD_TEST_CONDITION"
-      href: bug-check-0x162--worker-thread-test-condition.md
+      href: bug-check-0x163--worker-thread-test-condition.md
     - name: "Bug Check 0x164: WIN32K_CRITICAL_FAILURE"
       href: bug-check-0x164--win32k-critical-failure.md      
     - name: "Bug Check 0x16C: INVALID_RUNDOWN_PROTECTION_FLAGS"
