@@ -5,12 +5,12 @@ keywords:
 - memory segments WDK display , about memory segments
 - hidden video memory WDK display
 - video memory manager WDK display
-ms.date: 07/01/2024
+ms.date: 08/29/2024
 ---
 
 # Using Memory Segments to Describe the GPU Address Space
 
-The video memory manager (*VidMm*) is responsible for managing the address space of the graphics processing unit (GPU). Before it can do so, the kernel-mode display miniport driver (KMD) must describe the GPU's address space to *VidMm* by using memory segments.
+The video memory manager (*VidMm*) is responsible for managing the address space of the GPU. Before it can do so, the kernel-mode display miniport driver (KMD) must describe the GPU's address space to *VidMm* by using memory segments.
 
 KMD creates memory segments to generalize and virtualize video memory resources. It can configure memory segments according to the memory types that the hardware supports (for example, frame buffer memory or system memory aperture).
 
@@ -38,8 +38,18 @@ The KMD isn't required to specify all video memory resources available to the GP
 
 * For resources such as vertex buffers, textures, render targets, and application-specific shader code, *VidMm* must allocate video memory resources from one of the driver's memory segments. This requirement is because the resource types must be fairly available to all processes.
 
-The following figure shows how the KMD can configure memory segments from the GPU address space.
+The following figure shows an example of how a KMD can configure memory segments from the GPU address space.
 
 :::image type="content" source="images/memseg.png" alt-text="Diagram illustrating the division of GPU address space into memory segments.":::
 
-Video memory that is hidden from *VidMm* can't be mapped into user space or be made exclusively available to any particular process. Doing so breaks the fundamental rules of virtual memory that require all processes running on the system to have access to all memory.
+The numbers in the figure correspond to the following memory segments:
+
+1. The CPU-accessible linear segment: This segment is accessible by the CPU and is organized as a linear address space.
+
+2. Non-CPU-accessible linear segment: This segment is organized as a linear address space, but isn't accessible by the CPU. It's used for resources that don't require CPU access.
+
+3. Read-only AGP aperture segment: This segment is used for read-only access to AGP (Accelerated Graphics Port) memory.
+
+4. Aperture segment: This segment is used for resources that are accessed through the AGP aperture.
+
+The Hidden boxes represent memory segments that the KMD doesn't expose to *VidMm*. Video memory that is hidden from *VidMm* can't be mapped into user space or be made exclusively available to any particular process. Doing so breaks the fundamental rules of virtual memory that require all processes running on the system to have access to all memory.
