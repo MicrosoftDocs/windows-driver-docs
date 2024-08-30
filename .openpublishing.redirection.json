@@ -1,6 +1,3836 @@
 {
     "redirections": [
     {
+      "source_path": "windows-driver-docs-pr/display/windows-2000-display-driver-model-design-guide.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/windows-2000-display-driver-model-design-guide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/roadmap-for-developing-drivers-for-the-windows-2000-display-driver-mod.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/roadmap-for-developing-drivers-for-the-windows-2000-display-driver-mod",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/introduction-to-display--windows-2000-model-.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/introduction-to-display--windows-2000-model-",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/windows-2000-display-architecture.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/windows-2000-display-architecture",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/windows-2000-display-driver-responsibilities.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/windows-2000-display-driver-responsibilities",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/windows-2000-video-miniport-driver-responsibilities.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/windows-2000-video-miniport-driver-responsibilities",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/general-design-and-implementation-strategies.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/general-design-and-implementation-strategies",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/accessing-the-graphics-adapter.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/accessing-the-graphics-adapter",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/communicating-ioctls-to-the-video-miniport-driver.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/communicating-ioctls-to-the-video-miniport-driver",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/accessing-the-frame-buffer-and-hardware-registers.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/accessing-the-frame-buffer-and-hardware-registers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/fast-user-switching.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/fast-user-switching",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/creating-graphics-inf-files.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/creating-graphics-inf-files",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/inf-generalconfigdata-section.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/inf-generalconfigdata-section",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/display-inf-file-sections.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/display-inf-file-sections",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/monitor-inf-file-sections.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/monitor-inf-file-sections",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/compatibility-testing-requirements-for-display-and-video-miniport-driv.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/compatibility-testing-requirements-for-display-and-video-miniport-driv",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/inf-and-installation-requirements.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/inf-and-installation-requirements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/video-miniport-driver-and-display-driver-requirements--windows-2000-mo.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/video-miniport-driver-and-display-driver-requirements--windows-2000-mo",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/control-panel-requirements.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/control-panel-requirements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/display-drivers--windows-2000-model-.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/display-drivers--windows-2000-model-",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/graphics-ddi-functions-for-display-drivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/graphics-ddi-functions-for-display-drivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/required-display-driver-functions.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/required-display-driver-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/conditionally-required-display-driver-functions.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/conditionally-required-display-driver-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/optional-display-driver-functions.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/optional-display-driver-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/display-driver-requirements.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/display-driver-requirements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/display-driver-initialization.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/display-driver-initialization",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/synchronization-issues-for-display-drivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/synchronization-issues-for-display-drivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/disabling-ea-recovery.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/disabling-ea-recovery",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/disabling-the-watchdog-timer-while-testing-display-drivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/disabling-the-watchdog-timer-while-testing-display-drivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/display-hardware-acceleration-slider.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/display-hardware-acceleration-slider",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/desktop-management.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/desktop-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/switching-desktops--responding-to-drvassertmode.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/switching-desktops--responding-to-drvassertmode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/returning-display-modes--drvgetmodes.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/returning-display-modes--drvgetmodes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/supporting-multiple-pdevs.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/supporting-multiple-pdevs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/pointer-control.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/pointer-control",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/pointer-drawing.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/pointer-drawing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/drawing-monochrome-pointers.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/drawing-monochrome-pointers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/drawing-color-pointers.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/drawing-color-pointers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/controlling-the-pointer--drvsetpointershape.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/controlling-the-pointer--drvsetpointershape",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/moving-the-pointer--drvmovepointer.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/moving-the-pointer--drvmovepointer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/display-control-interface-functions.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/display-control-interface-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dcibeginaccess.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dcibeginaccess",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dcicloseprovider.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dcicloseprovider",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dcicreateoffscreen.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dcicreateoffscreen",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dcicreateoverlay.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dcicreateoverlay",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dcicreateprimary.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dcicreateprimary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dcidestroy.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dcidestroy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dcidraw.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dcidraw",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dciendaccess.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dciendaccess",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dcienum.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dcienum",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dciopenprovider.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dciopenprovider",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dcisendcommand.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dcisendcommand",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dcisetcliplist.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dcisetcliplist",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dcisetdestination.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dcisetdestination",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dcisetsrcdestclip.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dcisetsrcdestclip",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/managing-display-palettes.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/managing-display-palettes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/bitmaps-in-display-drivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/bitmaps-in-display-drivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/asynchronous-rendering.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/asynchronous-rendering",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/transparency-in-display-drivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/transparency-in-display-drivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/special-effects-in-display-drivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/special-effects-in-display-drivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/color-management-for-displays.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/color-management-for-displays",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/monitor-profiles.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/monitor-profiles",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/directdraw-and-gdi.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/directdraw-and-gdi",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/tracking-window-changes.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/tracking-window-changes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/supporting-the-ditheronrealize-flag.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/supporting-the-ditheronrealize-flag",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/supporting-banked-frame-buffers.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/supporting-banked-frame-buffers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/unloading-video-hardware.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/unloading-video-hardware",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/using-events-in-display-drivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/using-events-in-display-drivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/multiple-monitor-support-in-the-display-driver.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/multiple-monitor-support-in-the-display-driver",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/disabling-timeout-recovery-for-display-drivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/disabling-timeout-recovery-for-display-drivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/mirror-drivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/mirror-drivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/remote-display-drivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/remote-display-drivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/video-port-ddi-support.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/video-port-ddi-support",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/mirror-driver-inf-file.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/mirror-driver-inf-file",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/mirror-driver-installation.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/mirror-driver-installation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/display-driver-testing-tools.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/display-driver-testing-tools",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/newdisp--dynamic-reload-of-a-display-driver.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/newdisp--dynamic-reload-of-a-display-driver",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dynamic-change-of-permitted-driver-accelerations.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dynamic-change-of-permitted-driver-accelerations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/directdraw.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/directdraw",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/about-directdraw.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/about-directdraw",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/directdraw-architecture.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/directdraw-architecture",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/the-directdraw-driver.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/the-directdraw-driver",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/first-steps-for-directdraw-drivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/first-steps-for-directdraw-drivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/hardware-emulation-layer.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/hardware-emulation-layer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/directdraw-driver-fundamentals.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/directdraw-driver-fundamentals",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/directdraw-surfaces.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/directdraw-surfaces",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/complex-surfaces-and-attachments.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/complex-surfaces-and-attachments",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/creating-and-destroying-directdraw-surfaces.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/creating-and-destroying-directdraw-surfaces",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/losing-and-restoring-directdraw-surfaces.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/losing-and-restoring-directdraw-surfaces",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/losing-driver-managed-textures.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/losing-driver-managed-textures",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/display-memory.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/display-memory",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/memory-heap-allocation.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/memory-heap-allocation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/memory-configurations.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/memory-configurations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/linear-memory-allocation.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/linear-memory-allocation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/rectangular-memory-allocation.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/rectangular-memory-allocation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/mixed-memory-allocation.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/mixed-memory-allocation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/flipping.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/flipping",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/tearing.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/tearing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/triple-buffering.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/triple-buffering",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/timing-a-flip.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/timing-a-flip",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/flip-intervals.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/flip-intervals",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/overlay-support.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/overlay-support",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/texture-support.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/texture-support",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/flipping-to-the-gdi-surface.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/flipping-to-the-gdi-surface",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/blitting.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/blitting",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/transparent-blt.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/transparent-blt",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/clip-lists.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/clip-lists",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/color-fills-and-pattern-fills.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/color-fills-and-pattern-fills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/directdraw-and-color-space-conversion.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/directdraw-and-color-space-conversion",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/drivers-that-assume-state-information.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/drivers-that-assume-state-information",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/managing-pdevs.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/managing-pdevs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/performing-floating-point-operations-in-directdraw.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/performing-floating-point-operations-in-directdraw",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/return-values-for-directdraw.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/return-values-for-directdraw",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/directdraw-driver-initialization.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/directdraw-driver-initialization",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/windows-2000-driver-initialization.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/windows-2000-driver-initialization",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/directdraw-callback-support-using-drvenabledirectdraw.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/directdraw-callback-support-using-drvenabledirectdraw",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/directdraw-and-direct3d-callback-support-using-ddgetdriverinfo.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/directdraw-and-direct3d-callback-support-using-ddgetdriverinfo",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/video-port-extensions-to-directx.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/video-port-extensions-to-directx",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/video-port-extensions-background.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/video-port-extensions-background",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/displaying-video-on-interlaced-and-proscan-monitors.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/displaying-video-on-interlaced-and-proscan-monitors",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/ntsc-and-interlaced-data.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/ntsc-and-interlaced-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/ntsc-pal-conversion.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/ntsc-pal-conversion",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/mpeg-and-progressive-content.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/mpeg-and-progressive-content",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/progressive-scan-monitors-and-interleaved-data.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/progressive-scan-monitors-and-interleaved-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/displaying-interleaved-video-with-vpe.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/displaying-interleaved-video-with-vpe",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/bob-method.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/bob-method",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/weave-method.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/weave-method",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/mode-indicator-and-anamorphic-format.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/mode-indicator-and-anamorphic-format",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/vpe-functions-in-directdraw-api-and-driver.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/vpe-functions-in-directdraw-api-and-driver",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/directx-vpe-initialization.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/directx-vpe-initialization",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/vpe-callback-functions.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/vpe-callback-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/directdraw-interfaces-for-kernel-mode-video-transport-support.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/directdraw-interfaces-for-kernel-mode-video-transport-support",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/color-control-initialization.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/color-control-initialization",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/agp-support.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/agp-support",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/flagging-support-for-nonlocal-display-memory.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/flagging-support-for-nonlocal-display-memory",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/specifying-nonlocal-display-memory-heaps.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/specifying-nonlocal-display-memory-heaps",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/notification-of-actual-heap-base-addresses.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/notification-of-actual-heap-base-addresses",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/callback-handling-of-nonlocal-display-memory-surfaces.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/callback-handling-of-nonlocal-display-memory-surfaces",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/reordering-textures-in-nonlocal-display-memory.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/reordering-textures-in-nonlocal-display-memory",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/handling-dma-style-agp.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/handling-dma-style-agp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/flagging-support-for-dma-model-nonlocal-display-memory.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/flagging-support-for-dma-model-nonlocal-display-memory",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/reporting-directdraw-capabilities-for-dma-model-nonlocal-display-memor.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/reporting-directdraw-capabilities-for-dma-model-nonlocal-display-memor",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/reporting-direct3d-capabilities-for-dma-model-nonlocal-display-memory.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/reporting-direct3d-capabilities-for-dma-model-nonlocal-display-memory",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/managing-agp-heaps.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/managing-agp-heaps",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/kernel-mode-video-transport.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/kernel-mode-video-transport",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/vpe-and-kernel-mode-video-transport-architecture.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/vpe-and-kernel-mode-video-transport-architecture",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/using-kernel-mode-video-transport.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/using-kernel-mode-video-transport",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/getting-the-user-mode-handles.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/getting-the-user-mode-handles",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/using-the-dxapi-interface.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/using-the-dxapi-interface",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dxapi-miniport-driver-functions-for-windows-2000-and-later.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dxapi-miniport-driver-functions-for-windows-2000-and-later",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dxapi-miniport-driver-initialization.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dxapi-miniport-driver-initialization",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/kernel-mode-video-transport-callback-functions.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/kernel-mode-video-transport-callback-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/notify-callback-functions-in-a-video-capture-driver.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/notify-callback-functions-in-a-video-capture-driver",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/video-vbi-capture.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/video-vbi-capture",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/nf-dxapi-dxapi.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/nf-dxapi-dxapi",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dd-dxapi-addvpcapturebuffer.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dd-dxapi-addvpcapturebuffer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dd-dxapi-closehandle.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dd-dxapi-closehandle",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dd-dxapi-flip-overlay.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dd-dxapi-flip-overlay",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dd-dxapi-flip-vp.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dd-dxapi-flip-vp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dd-dxapi-flushvpcapturebuffers.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dd-dxapi-flushvpcapturebuffers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dd-dxapi-get-current-vp-autoflip-surface.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dd-dxapi-get-current-vp-autoflip-surface",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dd-dxapi-get-last-vp-autoflip-surface.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dd-dxapi-get-last-vp-autoflip-surface",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dd-dxapi-get-polarity.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dd-dxapi-get-polarity",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dd-dxapi-get-surface-state.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dd-dxapi-get-surface-state",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dd-dxapi-get-vp-field-number.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dd-dxapi-get-vp-field-number",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dd-dxapi-getkernelcaps.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dd-dxapi-getkernelcaps",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dd-dxapi-getversionnumber.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dd-dxapi-getversionnumber",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dd-dxapi-lock.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dd-dxapi-lock",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dd-dxapi-opendirectdraw.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dd-dxapi-opendirectdraw",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dd-dxapi-opensurface.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dd-dxapi-opensurface",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dd-dxapi-openvideoport.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dd-dxapi-openvideoport",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dd-dxapi-openvpcapturedevice.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dd-dxapi-openvpcapturedevice",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dd-dxapi-register-callback.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dd-dxapi-register-callback",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dd-dxapi-set-surface-state.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dd-dxapi-set-surface-state",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dd-dxapi-set-vp-field-number.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dd-dxapi-set-vp-field-number",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dd-dxapi-set-vp-skip-field.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dd-dxapi-set-vp-skip-field",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dd-dxapi-unregister-callback.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dd-dxapi-unregister-callback",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/extended-surface-alignment.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/extended-surface-alignment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/review-of-the-older-alignment-method.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/review-of-the-older-alignment-method",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/using-extended-surface-alignment.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/using-extended-surface-alignment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/extended-surface-capabilities.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/extended-surface-capabilities",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/extended-surface-capability-flags.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/extended-surface-capability-flags",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/exposing-the-extended-surface-capabilities.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/exposing-the-extended-surface-capabilities",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/extended-heap-restrictions.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/extended-heap-restrictions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/extended-surface-description-structure.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/extended-surface-description-structure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/compressed-texture-surfaces.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/compressed-texture-surfaces",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/enumerating-dxt-formats.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/enumerating-dxt-formats",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/creating-the-compressed-texture-surface.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/creating-the-compressed-texture-surface",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/using-compressed-texture-surfaces.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/using-compressed-texture-surfaces",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/handling-compressed-texture-surfaces-created-in-system-memory.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/handling-compressed-texture-surfaces-created-in-system-memory",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/reporting-width-and-height-of-compressed-texture-surfaces.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/reporting-width-and-height-of-compressed-texture-surfaces",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/directx-compressed-volumetexture-formats.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/directx-compressed-volumetexture-formats",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/compressed-video-decoding.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/compressed-video-decoding",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/motion-compensation.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/motion-compensation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/motion-compensation-callbacks.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/motion-compensation-callbacks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/direct3d.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/direct3d",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/cross-platform-direct3d-driver-development.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/cross-platform-direct3d-driver-development",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/direct3d-implementation-requirements.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/direct3d-implementation-requirements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/render-target-requirements.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/render-target-requirements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/point--line--and-triangle-filling-requirements.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/point--line--and-triangle-filling-requirements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/shading-requirements.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/shading-requirements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/texturing-requirements.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/texturing-requirements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/direct3d-driver-ddi.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/direct3d-driver-ddi",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/driver-functions-to-support-direct3d.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/driver-functions-to-support-direct3d",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/cpixel-support-methods-for-lightweight-mip-maps.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/cpixel-support-methods-for-lightweight-mip-maps",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/cpixel-computesurfacesize.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/cpixel-computesurfacesize",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/cpixel-computevolumesize.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/cpixel-computevolumesize",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/cpixel-computemipmapsize.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/cpixel-computemipmapsize",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/cpixel-computemipvolumesize.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/cpixel-computemipvolumesize",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/cpixel-computemipmapoffset.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/cpixel-computemipmapoffset",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/cpixel-computemipvolumeoffset.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/cpixel-computemipvolumeoffset",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/cpixel-computesurfaceoffset.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/cpixel-computesurfaceoffset",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/operation-code-handling.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/operation-code-handling",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/command-stream.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/command-stream",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/improving-performance-of-operation-handling.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/improving-performance-of-operation-handling",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/return-codes-for-direct3d-driver-callbacks.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/return-codes-for-direct3d-driver-callbacks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/performing-floating-point-operations-in-direct3d.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/performing-floating-point-operations-in-direct3d",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/direct3d-driver-initialization.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/direct3d-driver-initialization",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/direct3d-context-management.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/direct3d-context-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/creating-and-destroying-a-context.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/creating-and-destroying-a-context",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/maintaining-state-within-a-context.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/maintaining-state-within-a-context",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/direct3d-surface-handles.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/direct3d-surface-handles",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/creating-driver-side-surface-structures.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/creating-driver-side-surface-structures",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/pointers-to-directdraw-surfaces.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/pointers-to-directdraw-surfaces",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/d3dcreatesurfaceex-handles.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/d3dcreatesurfaceex-handles",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/d3dcreatesurfaceex-and-backing-surfaces.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/d3dcreatesurfaceex-and-backing-surfaces",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/d3dcreatesurfaceex-and-complex-surfaces.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/d3dcreatesurfaceex-and-complex-surfaces",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/d3dcreatesurfaceex-and-mip-maps.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/d3dcreatesurfaceex-and-mip-maps",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/d3dcreatesurfaceex-handles-and-flip.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/d3dcreatesurfaceex-handles-and-flip",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/d3dcreatesurfaceex-handles-and-directdraw-ddis.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/d3dcreatesurfaceex-handles-and-directdraw-ddis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/points-to-consider-when-restoring-complex-flipping-chains.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/points-to-consider-when-restoring-complex-flipping-chains",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/lost-surfaces--surface-handles--and-contexts.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/lost-surfaces--surface-handles--and-contexts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/direct3d-texture-management.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/direct3d-texture-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/multiple-textures.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/multiple-textures",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/texture-stages.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/texture-stages",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/processing-texture-stages.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/processing-texture-stages",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/texture-addressing-and-filtering-operations.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/texture-addressing-and-filtering-operations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/texture-stage-operations.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/texture-stage-operations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/texture-stage-arguments.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/texture-stage-arguments",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/multiple-texture-validation.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/multiple-texture-validation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/paletted-textures.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/paletted-textures",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/texture-blitting.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/texture-blitting",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/driver-managed-textures.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/driver-managed-textures",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/driver-managed-resources.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/driver-managed-resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/primitive-drawing-and-state-changes.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/primitive-drawing-and-state-changes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/command-and-vertex-buffers.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/command-and-vertex-buffers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/command-and-vertex-buffer-allocation.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/command-and-vertex-buffer-allocation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/direct3d-command-buffers.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/direct3d-command-buffers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/direct3d-vertex-buffers.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/direct3d-vertex-buffers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/accelerated-state-management.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/accelerated-state-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/setting-the-number-of-line-pattern-repetitions.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/setting-the-number-of-line-pattern-repetitions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/fvf--flexible-vertex-format-.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/fvf--flexible-vertex-format-",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/determining-the-vertex-buffer-data-format.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/determining-the-vertex-buffer-data-format",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/advanced-direct3d-driver-topics.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/advanced-direct3d-driver-topics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/optimized-textures.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/optimized-textures",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/optimized-texture-api.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/optimized-texture-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/stencil-planes.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/stencil-planes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/guard-band-clipping.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/guard-band-clipping",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/extents-adjustment.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/extents-adjustment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/w-buffering.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/w-buffering",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/w-buffering-api.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/w-buffering-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/w-buffering-ddi.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/w-buffering-ddi",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/bump-mapping.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/bump-mapping",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/hardware-transform-and-lighting.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/hardware-transform-and-lighting",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/vertex-blending.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/vertex-blending",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/multimatrix-vertex-blending.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/multimatrix-vertex-blending",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/multimatrix-vertex-blending-algorithm.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/multimatrix-vertex-blending-algorithm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/fvf-code-changes.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/fvf-code-changes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/d3dtransformstate-changes.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/d3dtransformstate-changes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/d3drenderstatetype-changes.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/d3drenderstatetype-changes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/user-clip-planes.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/user-clip-planes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/texture-coordinate-transformations.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/texture-coordinate-transformations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/cube-environment-map-support.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/cube-environment-map-support",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/integration-of-environment-mapping-with-standard-diffuse-lighting.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/integration-of-environment-mapping-with-standard-diffuse-lighting",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/vertex-and-pixel-fogging.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/vertex-and-pixel-fogging",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/vertex-fog.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/vertex-fog",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/pixel-fog.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/pixel-fog",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/range-based-fog.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/range-based-fog",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/directx-7-0-release-notes.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/directx-7-0-release-notes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/fvf-update.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/fvf-update",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/rasterizer-update.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/rasterizer-update",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/mip-map-surface-creation-update.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/mip-map-surface-creation-update",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/directx-8-0-release-notes.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/directx-8-0-release-notes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/header-files-for-directx-8-0-drivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/header-files-for-directx-8-0-drivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/direct3d-version.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/direct3d-version",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/minimal-directx-8-0-ddi-support.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/minimal-directx-8-0-ddi-support",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/supporting-getdriverinfo2.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/supporting-getdriverinfo2",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/reporting-directx-8-0-style-direct3d-capabilities.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/reporting-directx-8-0-style-direct3d-capabilities",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/minimum-capability-requirements-for-directx-8-0-drivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/minimum-capability-requirements-for-directx-8-0-drivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/reporting-support-for-video-memory-vertex-and-index-buffers.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/reporting-support-for-video-memory-vertex-and-index-buffers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/setting-presentation-swap-intervals.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/setting-presentation-swap-intervals",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/the-texture-format-list.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/the-texture-format-list",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/format-operations.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/format-operations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/surface-formats-as-fourccs.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/surface-formats-as-fourccs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/multiple-vertex-streams.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/multiple-vertex-streams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/reporting-multiple-vertex-stream-capability.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/reporting-multiple-vertex-stream-capability",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/stream-zero.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/stream-zero",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/notification-of-stream-and-vertex-buffer-binding.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/notification-of-stream-and-vertex-buffer-binding",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/vertex-and-index-buffers.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/vertex-and-index-buffers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/index-buffers.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/index-buffers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/reporting-support-for-32-bit-indices.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/reporting-support-for-32-bit-indices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/setting-the-current-index-buffer.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/setting-the-current-index-buffer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/vertex-buffers.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/vertex-buffers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/vertex-buffer-callbacks-and-windows-2000.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/vertex-buffer-callbacks-and-windows-2000",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/vertex-buffer-creation-handling-on-windows-2000.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/vertex-buffer-creation-handling-on-windows-2000",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/vertex-buffer-renaming.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/vertex-buffer-renaming",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/handling-renaming-on-windows-2000.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/handling-renaming-on-windows-2000",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/new-dp2-stream-drawing-tokens.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/new-dp2-stream-drawing-tokens",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/copying-vertex-and-index-buffers-in-the-dp2-stream.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/copying-vertex-and-index-buffers-in-the-dp2-stream",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/point-sprites.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/point-sprites",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/reporting-support-for-point-sprites.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/reporting-support-for-point-sprites",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/computing-the-size-of-point-sprites.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/computing-the-size-of-point-sprites",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/rendering-point-sprites.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/rendering-point-sprites",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/volume-textures.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/volume-textures",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/reporting-support-for-volume-textures.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/reporting-support-for-volume-textures",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/handling-the-creation-of-volume-textures.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/handling-the-creation-of-volume-textures",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/copying-volume-textures-in-the-dp2-stream.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/copying-volume-textures-in-the-dp2-stream",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/locking-a-subvolume-of-a-volume-texture.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/locking-a-subvolume-of-a-volume-texture",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/presentation.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/presentation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/new-ddscaps2-flags.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/new-ddscaps2-flags",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/present-and-getbltstatus.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/present-and-getbltstatus",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/palletized-textures.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/palletized-textures",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/cursors.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/cursors",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/direct3d-shaders.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/direct3d-shaders",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/vertex-shaders.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/vertex-shaders",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/reporting-support-for-programmable-vertex-processing-hardware.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/reporting-support-for-programmable-vertex-processing-hardware",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/pixel-shaders.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/pixel-shaders",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/reporting-support-for-programmable-pixel-processing-hardware.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/reporting-support-for-programmable-pixel-processing-hardware",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/high-order-surfaces.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/high-order-surfaces",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/reporting-support-for-high-order-surfaces.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/reporting-support-for-high-order-surfaces",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/high-order-surface-dp2-stream-drawing-tokens.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/high-order-surface-dp2-stream-drawing-tokens",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/high-order-surface-render-states.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/high-order-surface-render-states",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/multisample-rendering.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/multisample-rendering",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/reporting-multisample-support.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/reporting-multisample-support",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/multisample-support-through-stretchblt.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/multisample-support-through-stretchblt",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/handling-the-creation-of-multisampled-surfaces.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/handling-the-creation-of-multisampled-surfaces",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/accessing-a-multisampled-primary-surface.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/accessing-a-multisampled-primary-surface",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/controlling-multisampling.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/controlling-multisampling",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/pure-devices.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/pure-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/reporting-pure-device-capability.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/reporting-pure-device-capability",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/state-block-recording-and-pure-devices.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/state-block-recording-and-pure-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/processing-the-d3ddp2op-clear-dp2-token.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/processing-the-d3ddp2op-clear-dp2-token",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/clipping-transformed-vertices.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/clipping-transformed-vertices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/enabling-alpha-channels-on-full-screen-back-buffers.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/enabling-alpha-channels-on-full-screen-back-buffers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/gdi-event-services-in-windows-2000.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/gdi-event-services-in-windows-2000",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/directx-9-0-release-notes.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/directx-9-0-release-notes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/header-files-for-directx-9-0-drivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/header-files-for-directx-9-0-drivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/required-directx-9-0-driver-support.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/required-directx-9-0-driver-support",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/supporting-two-dimensional-operations.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/supporting-two-dimensional-operations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/reporting-support-for-2d-operations-using-surface-formats.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/reporting-support-for-2d-operations-using-surface-formats",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/using-dxva-with-2d-operations.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/using-dxva-with-2d-operations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/supporting-dynamic-resources.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/supporting-dynamic-resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dynamic-vertex-and-index-buffers.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dynamic-vertex-and-index-buffers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dynamic-textures.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dynamic-textures",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/supporting-vertex-shader-declarations.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/supporting-vertex-shader-declarations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/separating-declarations-and-code-for-vertex-shaders.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/separating-declarations-and-code-for-vertex-shaders",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/supporting-vertex-elements-sharing-offset-in-a-stream.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/supporting-vertex-elements-sharing-offset-in-a-stream",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/handling-vertex-elements.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/handling-vertex-elements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/supporting-stream-offsets.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/supporting-stream-offsets",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/reporting-support-for-stream-offsets.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/reporting-support-for-stream-offsets",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/reporting-support-of-ubyte4-vertex-element.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/reporting-support-of-ubyte4-vertex-element",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/supporting-commands-for-setting-render-target.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/supporting-commands-for-setting-render-target",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/setting-multiple-render-targets-and-depth-stencils.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/setting-multiple-render-targets-and-depth-stencils",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/verifying-validity-of-render-target.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/verifying-validity-of-render-target",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/setting-scissor-rectangle.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/setting-scissor-rectangle",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/reporting-support-for-scissor-rectangle.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/reporting-support-for-scissor-rectangle",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/notifying-about-directx-version.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/notifying-about-directx-version",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/reporting-ddi-version.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/reporting-ddi-version",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/supporting-asynchronous-query-operations.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/supporting-asynchronous-query-operations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/verifying-support-of-query-types.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/verifying-support-of-query-types",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/handling-asynchronous-queries.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/handling-asynchronous-queries",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/imposing-requirements-on-the-d3ddrawprimitives2-ddi.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/imposing-requirements-on-the-d3ddrawprimitives2-ddi",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/processing-with-busy-present-queues.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/processing-with-busy-present-queues",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/recommended-directx-9-0-driver-support.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/recommended-directx-9-0-driver-support",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/optional-directx-9-0-driver-support.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/optional-directx-9-0-driver-support",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/controlling-multiple-sample-rendering.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/controlling-multiple-sample-rendering",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/controlling-quality-of-multiple-sample-rendering.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/controlling-quality-of-multiple-sample-rendering",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dynamically-controlling-multiple-sample-rendering.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dynamically-controlling-multiple-sample-rendering",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/supporting-nonstandard-display-modes.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/supporting-nonstandard-display-modes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/enumerating-extended-formats.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/enumerating-extended-formats",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/switching-between-standard-and-nonstandard-modes.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/switching-between-standard-and-nonstandard-modes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/handling-nonstandard-display-modes.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/handling-nonstandard-display-modes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/supporting-multiple-head-hardware.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/supporting-multiple-head-hardware",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/identifying-adapter-group-and-providing-capabilities.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/identifying-adapter-group-and-providing-capabilities",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/creating-heads.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/creating-heads",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/example-of-handle-assignments.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/example-of-handle-assignments",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/managing-multiple-head-memory.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/managing-multiple-head-memory",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/reporting-multiple-head-video-memory.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/reporting-multiple-head-video-memory",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/presentation-with-multiple-heads.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/presentation-with-multiple-heads",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/using-multiple-multiple-head-adapters.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/using-multiple-multiple-head-adapters",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/managing-mip-map-textures.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/managing-mip-map-textures",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/handling-lightweight-mip-map-textures.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/handling-lightweight-mip-map-textures",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/obtaining-sublevels-of-lightweight-mip-map-textures.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/obtaining-sublevels-of-lightweight-mip-map-textures",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/generating-sublevels-of-mip-map-textures.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/generating-sublevels-of-mip-map-textures",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/handling-gamma-correction.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/handling-gamma-correction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/marking-formats-for-gamma-and-linear-conversion.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/marking-formats-for-gamma-and-linear-conversion",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/performing-gamma-correction-on-swap-chains.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/performing-gamma-correction-on-swap-chains",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/supporting-stretch-blit-operations.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/supporting-stretch-blit-operations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/rendering-to-multiple-targets-simultaneously.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/rendering-to-multiple-targets-simultaneously",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/required-features-for-multiple-render-targets.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/required-features-for-multiple-render-targets",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/optional-features-for-multiple-render-targets.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/optional-features-for-multiple-render-targets",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/extended-blt-flags.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/extended-blt-flags",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/clamping-fog-intensity-per-pixel.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/clamping-fog-intensity-per-pixel",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/modifying-vertex-stream-frequency.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/modifying-vertex-stream-frequency",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/supporting-single-pixel-wide-antialiased-lines.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/supporting-single-pixel-wide-antialiased-lines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/supporting-high-order-patched-surfaces.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/supporting-high-order-patched-surfaces",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/supporting-additional-instruction-slots-for-shader-3.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/supporting-additional-instruction-slots-for-shader-3",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/reporting-capabilities-for-shader-versions.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/reporting-capabilities-for-shader-versions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/reporting-capabilities-for-shader-2-support.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/reporting-capabilities-for-shader-2-support",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/reporting-capabilities-for-shader-3-support.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/reporting-capabilities-for-shader-3-support",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/updates-for-windows-ddk.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/updates-for-windows-ddk",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/allocating-nonpaged-display-memory.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/allocating-nonpaged-display-memory",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/specifying-maximum-size-of-bug-check-data-in-a-video-miniport-driver.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/specifying-maximum-size-of-bug-check-data-in-a-video-miniport-driver",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/updates-for-earlier-directx-ddk-versions.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/updates-for-earlier-directx-ddk-versions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/promoting-z-buffers-to-32-bits-per-pixel.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/promoting-z-buffers-to-32-bits-per-pixel",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/destroying-objects-associated-with-a-direct3d-context.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/destroying-objects-associated-with-a-direct3d-context",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/handling-color-values-for-pixel-formats.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/handling-color-values-for-pixel-formats",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/supplying-default-values-for-texture-coordinates-in-vertex-declaration.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/supplying-default-values-for-texture-coordinates-in-vertex-declaration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/directx-video-acceleration.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/directx-video-acceleration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/introduction-to-directx-va.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/introduction-to-directx-va",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/itu-t-h-261.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/itu-t-h-261",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/mpeg-1.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/mpeg-1",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/mpeg-2--h-262-.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/mpeg-2--h-262-",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/frame-structured-pictures.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/frame-structured-pictures",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/field-structured-pictures.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/field-structured-pictures",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/itu-t-h-263.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/itu-t-h-263",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/mpeg-4.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/mpeg-4",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/mpeg-4-avc--h-264-.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/mpeg-4-avc--h-264-",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/vc-1.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/vc-1",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/directx-va-relationship-to-iamvideoaccelerator-api-and-motion-compensa.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/directx-va-relationship-to-iamvideoaccelerator-api-and-motion-compensa",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/video-decoding.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/video-decoding",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/frame-buffer-organization.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/frame-buffer-organization",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/decoder-stages.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/decoder-stages",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/motion-compensated-prediction.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/motion-compensated-prediction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/macroblock-prediction.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/macroblock-prediction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/macroblock-partitioning.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/macroblock-partitioning",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/prediction-planes.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/prediction-planes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/deinterlacing-and-frame-rate-conversion.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/deinterlacing-and-frame-rate-conversion",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/deinterlace-modes.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/deinterlace-modes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/frame-rate-conversion-modes.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/frame-rate-conversion-modes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/bob-deinterlacing.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/bob-deinterlacing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/bob-deinterlacing-mechanics.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/bob-deinterlacing-mechanics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/bob-deinterlacing-algorithm.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/bob-deinterlacing-algorithm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/mapping-the-deinterlace-ddi-to-directdraw-and-directx-va.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/mapping-the-deinterlace-ddi-to-directdraw-and-directx-va",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/deinterlace-container-device-for-deinterlacing.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/deinterlace-container-device-for-deinterlacing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/calling-the-deinterlace-ddi-from-a-user-mode-component.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/calling-the-deinterlace-ddi-from-a-user-mode-component",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/video-content-for-deinterlace-and-frame-rate-conversion.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/video-content-for-deinterlace-and-frame-rate-conversion",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/deinterlacing-on-64-bit-operating-systems.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/deinterlacing-on-64-bit-operating-systems",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/combining-deinterlacing-and-video-substream-compositing.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/combining-deinterlacing-and-video-substream-compositing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/overview-of-deinterlacebltex.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/overview-of-deinterlacebltex",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/reporting-support-for-deinterlacebltex.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/reporting-support-for-deinterlacebltex",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/supplying-video-substream-and-destination-surfaces.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/supplying-video-substream-and-destination-surfaces",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/supporting-operations-on-video-substream-and-destination-surfaces.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/supporting-operations-on-video-substream-and-destination-surfaces",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/displaying-samples-and-background-color-in-the-target-rectangle.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/displaying-samples-and-background-color-in-the-target-rectangle",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/displaying-16-9-video-within-a-4-3-destination-surface.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/displaying-16-9-video-within-a-4-3-destination-surface",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/combining-video-stream-and-substream-with-different-aspect-ratios.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/combining-video-stream-and-substream-with-different-aspect-ratios",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/combining-two-streams-with-different-heights-and-widths.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/combining-two-streams-with-different-heights-and-widths",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/processing-subrectangles.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/processing-subrectangles",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/processing-subrectangles-without-stretching.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/processing-subrectangles-without-stretching",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/stretching-subrectangles.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/stretching-subrectangles",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/input-buffer-order.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/input-buffer-order",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/input-buffer-order-rules.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/input-buffer-order-rules",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/input-buffer-order-example-1.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/input-buffer-order-example-1",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/input-buffer-order-example-2.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/input-buffer-order-example-2",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/input-buffer-order-example-3.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/input-buffer-order-example-3",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/input-buffer-order-example-4.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/input-buffer-order-example-4",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/input-buffer-order-example-5.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/input-buffer-order-example-5",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/input-buffer-order-example-6.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/input-buffer-order-example-6",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/deinterlacing-and-compositing-on-64-bit-operating-systems.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/deinterlacing-and-compositing-on-64-bit-operating-systems",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/sample-functions-for-deinterlacing.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/sample-functions-for-deinterlacing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/procamp-control-processing.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/procamp-control-processing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/processing-in-the-8-bit-yuv-color-space.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/processing-in-the-8-bit-yuv-color-space",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/vmr-video-processing.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/vmr-video-processing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/mapping-the-procamp-control-ddi-to-directdraw-and-directx-va.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/mapping-the-procamp-control-ddi-to-directdraw-and-directx-va",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/deinterlace-container-device-for-procamp-control.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/deinterlace-container-device-for-procamp-control",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/calling-the-procamp-control-ddi-from-a-user-mode-component.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/calling-the-procamp-control-ddi-from-a-user-mode-component",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/procamp-properties.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/procamp-properties",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/sample-functions-for-procamp-control.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/sample-functions-for-procamp-control",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/copp-processing.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/copp-processing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/introduction-to-copp.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/introduction-to-copp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/cryptographic-primitives-used-by-copp.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/cryptographic-primitives-used-by-copp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/communicating-through-a-secure-channel.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/communicating-through-a-secure-channel",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/authenticated-key-exchange.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/authenticated-key-exchange",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/command-security-and-authenticity.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/command-security-and-authenticity",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/status-security-and-authenticity.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/status-security-and-authenticity",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/graphics-adapter-output-requirements-to-support-copp.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/graphics-adapter-output-requirements-to-support-copp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/mapping-the-copp-ddi-to-directdraw-and-directx-va.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/mapping-the-copp-ddi-to-directdraw-and-directx-va",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/directx-va-copp-device.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/directx-va-copp-device",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/calling-the-copp-ddi-from-a-user-mode-component.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/calling-the-copp-ddi-from-a-user-mode-component",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/calling-the-copp-ddi-from-the-display-driver.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/calling-the-copp-ddi-from-the-display-driver",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/sample-functions-for-copp.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/sample-functions-for-copp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/coppopenvideosession.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/coppopenvideosession",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/coppgetcertificatelength.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/coppgetcertificatelength",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/coppkeyexchange.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/coppkeyexchange",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/coppsequencestart.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/coppsequencestart",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/coppcommand.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/coppcommand",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/coppquerystatus.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/coppquerystatus",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/coppclosevideosession.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/coppclosevideosession",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/returning-error-codes-from-copp-functions.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/returning-error-codes-from-copp-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/starting-a-protected-video-session.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/starting-a-protected-video-session",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/handling-protection-levels.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/handling-protection-levels",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/handling-the-loss-of-a-copp-device.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/handling-the-loss-of-a-copp-device",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/copp-commands.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/copp-commands",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/setting-the-protection-level.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/setting-the-protection-level",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/instructing-how-to-protect-the-signal.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/instructing-how-to-protect-the-signal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/copp-status.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/copp-status",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/copp-status-events.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/copp-status-events",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/implementation-tips-and-requirements-for-copp.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/implementation-tips-and-requirements-for-copp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/copp-and-multiple-monitor-support.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/copp-and-multiple-monitor-support",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/copp-and-changedisplaysettingsex.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/copp-and-changedisplaysettingsex",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/copp-and-display-modes.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/copp-and-display-modes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/directx-video-acceleration-i-o-control-codes.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/directx-video-acceleration-i-o-control-codes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/ioctl-copp-getcertificatelength.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/ioctl-copp-getcertificatelength",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/ioctl-copp-keyexchange.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/ioctl-copp-keyexchange",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/ioctl-copp-startsequence.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/ioctl-copp-startsequence",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/ioctl-copp-command.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/ioctl-copp-command",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/ioctl-copp-status.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/ioctl-copp-status",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/example-code-for-directx-va-devices.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/example-code-for-directx-va-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/motion-compensation-code-template.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/motion-compensation-code-template",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/defining-directx-va-device-classes.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/defining-directx-va-device-classes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/defining-the-deinterlace-container-device-class.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/defining-the-deinterlace-container-device-class",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/defining-the-procamp-control-device-class.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/defining-the-procamp-control-device-class",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/defining-the-deinterlace-bob-device-class.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/defining-the-deinterlace-bob-device-class",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/defining-the-copp-device-class.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/defining-the-copp-device-class",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/retrieving-directx-va-devices.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/retrieving-directx-va-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/creating-instances-of-directx-va-device-objects.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/creating-instances-of-directx-va-device-objects",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/performing-procamp-control-and-deinterlacing-operations.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/performing-procamp-control-and-deinterlacing-operations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/performing-deinterlacing-with-substream-compositing-operations.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/performing-deinterlacing-with-substream-compositing-operations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/performing-copp-operations-example.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/performing-copp-operations-example",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/deleting-instances-of-directx-va-device-objects.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/deleting-instances-of-directx-va-device-objects",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/deinterlace-ddi.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/deinterlace-ddi",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dxva-deinterlacecontainerdeviceclass-deinterlacequeryavailablemodes.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dxva-deinterlacecontainerdeviceclass-deinterlacequeryavailablemodes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dxva-deinterlacecontainerdeviceclass-deinterlacequerymodecaps.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dxva-deinterlacecontainerdeviceclass-deinterlacequerymodecaps",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dxva-deinterlacebobdeviceclass-deinterlaceopenstream.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dxva-deinterlacebobdeviceclass-deinterlaceopenstream",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dxva-deinterlacebobdeviceclass-deinterlaceblt.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dxva-deinterlacebobdeviceclass-deinterlaceblt",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dxva-deinterlacebobdeviceclass-deinterlacebltex.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dxva-deinterlacebobdeviceclass-deinterlacebltex",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dxva-deinterlacebobdeviceclass-deinterlaceclosestream.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dxva-deinterlacebobdeviceclass-deinterlaceclosestream",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/procamp-control-ddi.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/procamp-control-ddi",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dxva-deinterlacecontainerdeviceclass-procampcontrolquerycaps.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dxva-deinterlacecontainerdeviceclass-procampcontrolquerycaps",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dxva-deinterlacecontainerdeviceclass-procampcontrolqueryrange.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dxva-deinterlacecontainerdeviceclass-procampcontrolqueryrange",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dxva-procampcontroldeviceclass-procampcontrolopenstream.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dxva-procampcontroldeviceclass-procampcontrolopenstream",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dxva-procampcontroldeviceclass-procampcontrolblt.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dxva-procampcontroldeviceclass-procampcontrolblt",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dxva-procampcontroldeviceclass-procampcontrolclosestream.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dxva-procampcontroldeviceclass-procampcontrolclosestream",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/copp-video-miniport-driver-template.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/copp-video-miniport-driver-template",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/copp-device-definition-template-code.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/copp-device-definition-template-code",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/copp-video-miniport-driver-ioctl-template-code.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/copp-video-miniport-driver-ioctl-template-code",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/copp-video-miniport-driver-open-template-code.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/copp-video-miniport-driver-open-template-code",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/copp-video-miniport-driver-get-certificate-template-code.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/copp-video-miniport-driver-get-certificate-template-code",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/copp-video-miniport-driver-key-exchange-template-code.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/copp-video-miniport-driver-key-exchange-template-code",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/copp-video-miniport-driver-sequence-start-template-code.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/copp-video-miniport-driver-sequence-start-template-code",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/copp-video-miniport-driver-command-template-code.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/copp-video-miniport-driver-command-template-code",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/copp-video-miniport-driver-status-template-code.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/copp-video-miniport-driver-status-template-code",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/copp-video-miniport-driver-close-template-code.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/copp-video-miniport-driver-close-template-code",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/driverentry-of-video-miniport-driver.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/driverentry-of-video-miniport-driver",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/directx-va-data-flow-management.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/directx-va-data-flow-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/encryption-support.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/encryption-support",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/setting-up-directx-va-decoding.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/setting-up-directx-va-decoding",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/bdxva-func-variable.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/bdxva-func-variable",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dxva-configqueryorreplyflag-and-dxva-configqueryorreplyfunc-variables.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dxva-configqueryorreplyflag-and-dxva-configqueryorreplyfunc-variables",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/probing-and-locking-of-configurations.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/probing-and-locking-of-configurations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/buffer-description-list.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/buffer-description-list",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/sequence-requirements.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/sequence-requirements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/using-four-uncompressed-surfaces-for-decoding.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/using-four-uncompressed-surfaces-for-decoding",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/using-five-or-more-uncompressed-surfaces-for-decoding.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/using-five-or-more-uncompressed-surfaces-for-decoding",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/directx-va-operations.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/directx-va-operations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/compressed-picture-decoding.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/compressed-picture-decoding",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/pixel-formats-for-uncompressed-video.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/pixel-formats-for-uncompressed-video",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/4-2-2-video-pixel-formats.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/4-2-2-video-pixel-formats",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/4-2-0-video-pixel-formats.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/4-2-0-video-pixel-formats",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/macroblock-oriented-picture-decoding.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/macroblock-oriented-picture-decoding",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/macroblock-control-commands.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/macroblock-control-commands",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/motion-vectors.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/motion-vectors",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/macroblock-control-command-buffers.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/macroblock-control-command-buffers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/macroblock-addresses.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/macroblock-addresses",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/generating-skipped-macroblocks.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/generating-skipped-macroblocks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/deblocking-filter-commands.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/deblocking-filter-commands",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/generic-form-of-macroblock-control-command-structures.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/generic-form-of-macroblock-control-command-structures",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/first-part-of-macroblock-control-command-structure.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/first-part-of-macroblock-control-command-structure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/interaction-between-obmc-and-inter4v-in-h-263.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/interaction-between-obmc-and-inter4v-in-h-263",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/second-part-of-macroblock-control-command-structure.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/second-part-of-macroblock-control-command-structure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/third-part-of-macroblock-control-command-structure.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/third-part-of-macroblock-control-command-structure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/fourth-part-of-macroblock-control-command-structure.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/fourth-part-of-macroblock-control-command-structure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/low-level-idct-processing-elements.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/low-level-idct-processing-elements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/off-host-idct.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/off-host-idct",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/host-based-idct.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/host-based-idct",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/deblocking-filter-control.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/deblocking-filter-control",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/edge-filtering-command-bytes.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/edge-filtering-command-bytes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/off-host-vld-bitstream-decoding-operation.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/off-host-vld-bitstream-decoding-operation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/alpha-blend-data-loading.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/alpha-blend-data-loading",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/loading-an-ayuv-alpha-blending-surface.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/loading-an-ayuv-alpha-blending-surface",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/loading-a-dpxd-alpha-blending-surface.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/loading-a-dpxd-alpha-blending-surface",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/loading-highlight-data.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/loading-highlight-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/loading-dccmd-data.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/loading-dccmd-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/alpha-blend-combination.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/alpha-blend-combination",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/mpeg-2-pan-scan-example.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/mpeg-2-pan-scan-example",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dvd-4-3-pan-scan-within-16-9-pictures-example.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dvd-4-3-pan-scan-within-16-9-pictures-example",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dvd-704-wide-non-pan-scan-example.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dvd-704-wide-non-pan-scan-example",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dvd-352-wide-example.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dvd-352-wide-example",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dvd-720-wide-example.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dvd-720-wide-example",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dvd-16-9-letterbox-height-in-4-3-example.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dvd-16-9-letterbox-height-in-4-3-example",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/picture-resampling-control.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/picture-resampling-control",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/defining-accelerator-capabilities.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/defining-accelerator-capabilities",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/restricted-profiles.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/restricted-profiles",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/h261-a.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/h261-a",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/h261-b.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/h261-b",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/h263-a.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/h263-a",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/h263-b.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/h263-b",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/h263-c.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/h263-c",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/h263-d.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/h263-d",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/h263-e.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/h263-e",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/h263-f.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/h263-f",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/mpeg1-a.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/mpeg1-a",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/mpeg2-a.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/mpeg2-a",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/mpeg2-b.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/mpeg2-b",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/mpeg2-c.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/mpeg2-c",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/mpeg2-d.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/mpeg2-d",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/wmv8-a--wmv8-b--wmv9-a--wmv9-b--and-wmv9-c.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/wmv8-a--wmv8-b--wmv9-a--wmv9-b--and-wmv9-c",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/minimal-interoperability-configuration-sets.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/minimal-interoperability-configuration-sets",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/compressed-picture-decoding-set.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/compressed-picture-decoding-set",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/first-picture-decoding-configuration.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/first-picture-decoding-configuration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/second-picture-decoding-configuration.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/second-picture-decoding-configuration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/third-picture-decoding-configuration.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/third-picture-decoding-configuration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/fourth-picture-decoding-configuration.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/fourth-picture-decoding-configuration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/fifth-picture-decoding-configuration.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/fifth-picture-decoding-configuration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/sixth-picture-decoding-configuration.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/sixth-picture-decoding-configuration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/seventh-picture-decoding-configuration.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/seventh-picture-decoding-configuration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/additional-encouraged-configuration-set.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/additional-encouraged-configuration-set",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/first-encouraged-picture-decoding-configuration.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/first-encouraged-picture-decoding-configuration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/second-encouraged-picture-decoding-configuration.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/second-encouraged-picture-decoding-configuration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/third-encouraged-picture-decoding-configuration.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/third-encouraged-picture-decoding-configuration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/alpha-blend-data-loading-set.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/alpha-blend-data-loading-set",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/alpha-blend-combination-set.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/alpha-blend-combination-set",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/video-miniport-drivers-in-the-windows-2000-display-driver-model.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/video-miniport-drivers-in-the-windows-2000-display-driver-model",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/video-miniport-driver-header-files--windows-2000-model-.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/video-miniport-driver-header-files--windows-2000-model-",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/video-miniport-driver-requirements--windows-2000-model-.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/video-miniport-driver-requirements--windows-2000-model-",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/video-miniport-driver-within-the-graphics-architecture--windows-2000-m.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/video-miniport-driver-within-the-graphics-architecture--windows-2000-m",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/video-miniport-driver-initialization--windows-2000-model-.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/video-miniport-driver-initialization--windows-2000-model-",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/starting-the-device-of-the-video-miniport-driver.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/starting-the-device-of-the-video-miniport-driver",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/setting-up-video-adapter-access-ranges.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/setting-up-video-adapter-access-ranges",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/setting-hardware-information-in-the-registry.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/setting-hardware-information-in-the-registry",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/changing-state-on-the-adapter.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/changing-state-on-the-adapter",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/claiming-legacy-resources.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/claiming-legacy-resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/initializing-the-video-miniport-for-communication-with-display-driver.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/initializing-the-video-miniport-for-communication-with-display-driver",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/video-miniport-driver-s-device-extension--windows-2000-model-.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/video-miniport-driver-s-device-extension--windows-2000-model-",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/individually-registered-callback-functions-in-video-miniport-drivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/individually-registered-callback-functions-in-video-miniport-drivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/events-in-video-miniport-drivers--windows-2000-model-.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/events-in-video-miniport-drivers--windows-2000-model-",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/processing-video-requests--windows-2000-model-.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/processing-video-requests--windows-2000-model-",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/system-defined-ioctl-video-xxx-requests.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/system-defined-ioctl-video-xxx-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/privately-defined-display-miniport-driver-ioctl-video-xxx-requests.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/privately-defined-display-miniport-driver-ioctl-video-xxx-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/handling-unsupported-ioctl-video-xxx-requests.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/handling-unsupported-ioctl-video-xxx-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/plug-and-play-and-power-management-in-video-miniport-drivers--windows-.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/plug-and-play-and-power-management-in-video-miniport-drivers--windows-",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/video-port-driver-support-for-agp.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/video-port-driver-support-for-agp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/video-port-driver-support-for-bug-check-callbacks.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/video-port-driver-support-for-bug-check-callbacks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/child-devices-of-the-display-adapter--windows-2000-model-.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/child-devices-of-the-display-adapter--windows-2000-model-",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/detecting-child-devices.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/detecting-child-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/communicating-with-the-driver-of-a-child-device.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/communicating-with-the-driver-of-a-child-device",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/using-i2c-to-communicate-with-a-child-device.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/using-i2c-to-communicate-with-a-child-device",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/i2c-bus-and-child-devices-of-the-display-adapter.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/i2c-bus-and-child-devices-of-the-display-adapter",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/interrupts-in-video-miniport-drivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/interrupts-in-video-miniport-drivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/when-to-implement-a-hwvidsynchronizeexecutioncallback-routine.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/when-to-implement-a-hwvidsynchronizeexecutioncallback-routine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/timers-in-video-miniport-drivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/timers-in-video-miniport-drivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/spin-locks-in-video-miniport-drivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/spin-locks-in-video-miniport-drivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/resetting-the-adapter-in-video-miniport-drivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/resetting-the-adapter-in-video-miniport-drivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/bus-master-dma-in-video-miniport-drivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/bus-master-dma-in-video-miniport-drivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/packet-based-bus-master-dma.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/packet-based-bus-master-dma",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/common-buffer-bus-master-dma.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/common-buffer-bus-master-dma",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/points-to-consider-when-using-dma.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/points-to-consider-when-using-dma",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/supporting-dualview--windows-2000-model-.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/supporting-dualview--windows-2000-model-",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/enabling-dualview.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/enabling-dualview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dualview-advanced-implementation-details.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dualview-advanced-implementation-details",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/tv-connector-and-copy-protection-support-in-video-miniport-drivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/tv-connector-and-copy-protection-support-in-video-miniport-drivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/querying-tv-connector-and-copy-protection-hardware.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/querying-tv-connector-and-copy-protection-hardware",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/setting-tv-connector-and-copy-protection-hardware.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/setting-tv-connector-and-copy-protection-hardware",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/setting-copy-protection-hardware.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/setting-copy-protection-hardware",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/multiple-session-copy-protection.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/multiple-session-copy-protection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/mirror-driver-support-in-video-miniport-drivers--windows-2000-model-.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/mirror-driver-support-in-video-miniport-drivers--windows-2000-model-",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/vga-compatible-video-miniport-drivers--windows-2000-model-.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/vga-compatible-video-miniport-drivers--windows-2000-model-",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/windowed-vdms-in-x86-based-machines.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/windowed-vdms-in-x86-based-machines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/full-screen-vdms-in-x86-based-machines.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/full-screen-vdms-in-x86-based-machines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/vga-compatible-miniport-driver-s-hwvidfindadapter.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/vga-compatible-miniport-driver-s-hwvidfindadapter",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/validating-instructions-in-svgahwioportxxx.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/validating-instructions-in-svgahwioportxxx",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/vga-compatible-miniport-driver-s-hwvidstartio.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/vga-compatible-miniport-driver-s-hwvidstartio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/video-miniport-drivers-on-multiple-windows-versions--windows-2000-mode.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/video-miniport-drivers-on-multiple-windows-versions--windows-2000-mode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/converting-a-windows-nt-4-0-miniport-driver-to-windows-2000.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/converting-a-windows-nt-4-0-miniport-driver-to-windows-2000",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/using-videoportgetprocaddress.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/using-videoportgetprocaddress",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/implementation-tips-and-requirements-for-the-windows-2000-display-driv.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/implementation-tips-and-requirements-for-the-windows-2000-display-driv",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/exception-handling-when-accessing-user-mode-memory.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/exception-handling-when-accessing-user-mode-memory",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/version-numbers-for-display-drivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/version-numbers-for-display-drivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/handling-removable-child-devices.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/handling-removable-child-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/gdi.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/gdi",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/graphics-system-overview.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/graphics-system-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/using-the-graphics-ddi.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/using-the-graphics-ddi",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/graphics-driver-functions.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/graphics-driver-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/required-graphics-driver-functions.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/required-graphics-driver-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/conditionally-required-graphics-driver-functions.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/conditionally-required-graphics-driver-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/optional-graphics-driver-functions.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/optional-graphics-driver-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/supporting-initialization-and-termination-functions.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/supporting-initialization-and-termination-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/driver-initialization-and-cleanup.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/driver-initialization-and-cleanup",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/pdev-initialization-and-cleanup.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/pdev-initialization-and-cleanup",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/enabling-and-disabling-the-surface.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/enabling-and-disabling-the-surface",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/floating-point-operations-in-graphics-driver-functions.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/floating-point-operations-in-graphics-driver-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/creating-device-dependent-bitmaps.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/creating-device-dependent-bitmaps",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/supporting-graphics-output.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/supporting-graphics-output",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/drawing-lines-and-curves.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/drawing-lines-and-curves",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/cosmetic-lines.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/cosmetic-lines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/geometric-wide-lines.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/geometric-wide-lines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/styled-cosmetic-lines.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/styled-cosmetic-lines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/bezier-curves.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/bezier-curves",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/drawing-and-filling-paths.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/drawing-and-filling-paths",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/path-fill-modes.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/path-fill-modes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/filling-areas--closed-paths-.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/filling-areas--closed-paths-",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/copying-bitmaps.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/copying-bitmaps",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/halftoning.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/halftoning",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/image-color-management.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/image-color-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/supporting-graphics-ddi-color-and-pattern-functions.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/supporting-graphics-ddi-color-and-pattern-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/managing-palettes.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/managing-palettes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/realizing-brushes.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/realizing-brushes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/supporting-graphics-ddi-font-and-text-functions.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/supporting-graphics-ddi-font-and-text-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/managing-and-optimizing-fonts.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/managing-and-optimizing-fonts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/font-metric-functions.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/font-metric-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/font-driver-functions.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/font-driver-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/truetype-font-driver-functions.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/truetype-font-driver-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/drawing-text.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/drawing-text",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/the-devmodew-structure.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/the-devmodew-structure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/obsolete-graphics-ddi-functions.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/obsolete-graphics-ddi-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/gdi-support-for-graphics-drivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/gdi-support-for-graphics-drivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/gdi-from-the-driver-s-perspective.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/gdi-from-the-driver-s-perspective",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/gdi-as-a-graphics-language-for-applications.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/gdi-as-a-graphics-language-for-applications",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/gdi-as-a-rendering-engine.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/gdi-as-a-rendering-engine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/gdi-managed-bitmaps.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/gdi-managed-bitmaps",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/gdi-managed-lines-and-curves.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/gdi-managed-lines-and-curves",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/gdi-managed-attributes--brushes.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/gdi-managed-attributes--brushes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/gdi-halftoning-capabilities.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/gdi-halftoning-capabilities",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/using-gdi-8-bit-per-pixel-cmy-mask-modes.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/using-gdi-8-bit-per-pixel-cmy-mask-modes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/translating-8-bit-per-pixel-halftone-indexes-to-ink-levels.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/translating-8-bit-per-pixel-halftone-indexes-to-ink-levels",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/gdi-driver-division-of-labor.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/gdi-driver-division-of-labor",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/gdi-communication-with-the-driver.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/gdi-communication-with-the-driver",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/gdi-user-objects.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/gdi-user-objects",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/gdi-service-routines.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/gdi-service-routines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/pdev-negotiation.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/pdev-negotiation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/surface-negotiation.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/surface-negotiation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/surface-coordinates.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/surface-coordinates",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/dc-origin.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/dc-origin",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/fix-coordinates.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/fix-coordinates",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/surface-types.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/surface-types",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/gdi-color-space-conversions.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/gdi-color-space-conversions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/hooking-versus-punting.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/hooking-versus-punting",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/gdi-support-services.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/gdi-support-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/gdi-support-for-surfaces.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/gdi-support-for-surfaces",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/gdi-support-for-palettes.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/gdi-support-for-palettes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/gdi-services-for-paths.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/gdi-services-for-paths",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/gdi-support-for-window-objects.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/gdi-support-for-window-objects",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/gdi-drawing-and-related-services.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/gdi-drawing-and-related-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/gdi-font-and-text-services.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/gdi-font-and-text-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/gdi-memory-services.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/gdi-memory-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/gdi-event-services.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/gdi-event-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/gdi-file--module--and-process-services.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/gdi-file--module--and-process-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/gdi-semaphore-services.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/gdi-semaphore-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/gdi-printer-services.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/gdi-printer-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/gdi-driver-related-services.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/gdi-driver-related-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/gdi-information-services.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/gdi-information-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/gdi-utility-services.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/gdi-utility-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/gdi-floating-point-services.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/gdi-floating-point-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/gdi-halftone-services.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/gdi-halftone-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/gdi-data-types.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/gdi-data-types",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/obsolete-gdi-functions--structures--and-constants.md",
+      "redirect_url": "/previous-versions/windows/drivers/display/obsolete-gdi-functions--structures--and-constants",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows-driver-docs-pr/storage/overview.md",
       "redirect_url": "/previous-versions/windows/drivers/storage/overview",
       "redirect_document_id": false
