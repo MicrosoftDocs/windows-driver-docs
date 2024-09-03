@@ -1,7 +1,7 @@
 ---
 title: INF AddFilter Directive
 description: An AddFilter directive describes the installation a driver service as a filter driver.
-ms.date: 05/11/2022
+ms.date: 09/03/2024
 ---
 
 # INF AddFilter Directive
@@ -10,7 +10,7 @@ Each **AddFilter** directive describes the installation of a driver service as a
 
 Rather than use a registry value to specify a specific list of upper or lower filters to be added to the device stack, declarative filters register filters using metadata.  This metadata is used to generate the final list of filters at the time the device is started.  Declarative filters can be used in conjunction with the legacy model of using the UpperFilters/LowerFilters registry values.  For more information on the declarative filter model, please see [Device filter driver ordering](../develop/device-filter-driver-ordering.md).
 
-An **AddFilter** directive is used within an [**INF *DDInstall*.Filters**](inf-ddinstall-software-section.md) section.
+An **AddFilter** directive is used within an [**INF *DDInstall*.Filters**](inf-ddinstall-filters-section.md) section.
 
 ```inf
 [DDInstall.Filters]
