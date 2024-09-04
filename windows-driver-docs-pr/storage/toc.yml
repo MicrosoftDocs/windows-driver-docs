@@ -162,8 +162,6 @@
         href: capabilities-provided-by-storport.md
       - name: Support Routines
         href: storport-driver-support-routines.md
-      - name: Miniport Driver Routines
-        href: storport-miniport-driver-routines.md
       - name: Interface with the Storage Class Driver
         items:
         - name: SRB Interface
@@ -274,7 +272,7 @@
       href: communicating-with-a-storage-port-driver.md
     - name: SCSI miniport drivers
       items:
-      - name: Overview
+      - name: About SCSI Miniport Drivers
         href: scsi-miniport-drivers.md
       - name: Supporting Plug and Play
         items:
@@ -384,6 +382,8 @@
       items:
       - name: About Storport Miniport Drivers
         href: storport-miniport-drivers.md
+      - name: Miniport Driver Routines
+        href: storport-miniport-driver-routines.md
       - name: Error Handling
         href: error-handling-in-storport-miniport-drivers.md
       - name: Interlocked Operations
