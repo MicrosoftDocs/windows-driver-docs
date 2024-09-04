@@ -5,14 +5,17 @@ keywords:
 - storage miniport drivers WDK
 - miniport drivers WDK storage
 - storage drivers WDK , miniport drivers
-ms.date: 03/16/2021
+ms.date: 09/04/2024
 ---
 
 # About Storage Miniport Drivers
 
 A vendor-supplied storage miniport driver [works together](communicating-with-a-storage-port-driver.md) with a system-supplied storage port driver to support a vendor's storage device on Windows.
 
-The following table lists the types of storage miniport drivers and their associated system-supplied port driver support library:
+The following table lists the types of storage miniport drivers and their associated system-supplied port driver support library.
+
+> [!NOTE]
+> Vendors are encouraged to implement [Storport miniport drivers](storport-miniport-drivers.md) and use the [Storport port driver](storport-driver-overview.md) where possible.
 
 | Miniport Driver | Port Driver |
 | --------------- | ----------- |
