@@ -1,6 +1,271 @@
 {
     "redirections": [
     {
+      "source_path": "windows-driver-docs-pr/storage/scsi-miniport-drivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/scsi-miniport-drivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/supporting-plug-and-play-in-a-scsi-miniport-driver.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/supporting-plug-and-play-in-a-scsi-miniport-driver",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/registry-entries-for-plug-and-play-scsi-miniport-drivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/registry-entries-for-plug-and-play-scsi-miniport-drivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/scsi-miniport-initialization-under-plug-and-play.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/scsi-miniport-initialization-under-plug-and-play",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/converting-a-windows-nt-4-0-scsi-miniport-for-plug-and-play.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/converting-a-windows-nt-4-0-scsi-miniport-for-plug-and-play",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/use-the-hwcontext-pointer-to-hwscsifindadapter-correctly.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/use-the-hwcontext-pointer-to-hwscsifindadapter-correctly",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/do-not-depend-on-order-of-scsi-miniport-initialization.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/do-not-depend-on-order-of-scsi-miniport-initialization",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/use-only-supplied-resources-in-a-plug-and-play-scsi-miniport.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/use-only-supplied-resources-in-a-plug-and-play-scsi-miniport",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/verify-resource-ranges-in-hwscsifindadapter-during-detection.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/verify-resource-ranges-in-hwscsifindadapter-during-detection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/registry-entries-for-scsi-miniport-drivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/registry-entries-for-scsi-miniport-drivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/restrictions-on-scsi-miniport-drivers-that-manage-the-boot-drive.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/restrictions-on-scsi-miniport-drivers-that-manage-the-boot-drive",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/error-handling-in-scsi-miniport-drivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/error-handling-in-scsi-miniport-drivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/scsi-miniport-driver-routines.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/scsi-miniport-driver-routines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/scsi-miniport-driver-s-driverentry-routine.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/scsi-miniport-driver-s-driverentry-routine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/driverentry-of-scsi-miniport-driver.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/driverentry-of-scsi-miniport-driver",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/calling-scsiportinitialize.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/calling-scsiportinitialize",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/storage-driver-s-return-from-driverentry.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/storage-driver-s-return-from-driverentry",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/scsi-miniport-driver-s-hwscsifindadapter-routine.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/scsi-miniport-driver-s-hwscsifindadapter-routine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/calling-scsiportxxx--from-hwscsifindadapter.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/calling-scsiportxxx--from-hwscsifindadapter",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/port-driver-supplied-configinfo-for-hwscsifindadapter.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/port-driver-supplied-configinfo-for-hwscsifindadapter",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/setting-up-configinfo-in-hwscsifindadapter.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/setting-up-configinfo-in-hwscsifindadapter",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/setting-again-and-returning-from-hwscsifindadapter.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/setting-again-and-returning-from-hwscsifindadapter",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/returning-control-from-hwscsifindadapter.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/returning-control-from-hwscsifindadapter",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/scsi-miniport-driver-s-hwscsiinitialize-routine.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/scsi-miniport-driver-s-hwscsiinitialize-routine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/scsi-miniport-driver-s-hwscsistartio-routine.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/scsi-miniport-driver-s-hwscsistartio-routine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/modifying-srbs.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/modifying-srbs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/handling-srb-function-execute-scsi.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/handling-srb-function-execute-scsi",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/handling-srb-function-abort-command.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/handling-srb-function-abort-command",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/handling-srb-function-reset-bus.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/handling-srb-function-reset-bus",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/handling-srb-function-reset-device.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/handling-srb-function-reset-device",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/handling-srb-function-flush-and-srb-function-shutdown.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/handling-srb-function-flush-and-srb-function-shutdown",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/handling-srb-function-io-control.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/handling-srb-function-io-control",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/handling-srb-function-protocol-command.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/handling-srb-function-protocol-command",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/handling-srb-function-pnp.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/handling-srb-function-pnp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/handling-srb-function-wmi.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/handling-srb-function-wmi",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/handling-unsupported-srb-function-xxx.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/handling-unsupported-srb-function-xxx",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/return-from-hwscsistartio.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/return-from-hwscsistartio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/other-srb-function-xxx--requests.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/other-srb-function-xxx--requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/scsi-miniport-driver-s-hwscsidmastarted-routine.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/scsi-miniport-driver-s-hwscsidmastarted-routine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/scsi-miniport-driver-s-hwscsiresetbus-routine.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/scsi-miniport-driver-s-hwscsiresetbus-routine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/scsi-miniport-driver-s-hwscsiinterrupt-routine.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/scsi-miniport-driver-s-hwscsiinterrupt-routine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/deferring-interrupt-driven-i-o-from-hwscsiinterrupt.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/deferring-interrupt-driven-i-o-from-hwscsiinterrupt",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/scsi-miniport-driver-s-hwscsienableinterruptscallback-routine.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/scsi-miniport-driver-s-hwscsienableinterruptscallback-routine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/scsi-miniport-driver-s-hwscsidisableinterruptscallback-routine.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/scsi-miniport-driver-s-hwscsidisableinterruptscallback-routine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/scsi-miniport-driver-s-hwscsitimer-routine.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/scsi-miniport-driver-s-hwscsitimer-routine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/scsi-miniport-driver-s-hwscsiadapterstate-routine.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/scsi-miniport-driver-s-hwscsiadapterstate-routine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/scsi-miniport-driver-s-hwscsiadaptercontrol-routine.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/scsi-miniport-driver-s-hwscsiadaptercontrol-routine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/requirements-for-vendor-supplied-ide-controller-minidrivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/requirements-for-vendor-supplied-ide-controller-minidrivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/initializing-and-calling-ide-minidriver-routines.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/initializing-and-calling-ide-minidriver-routines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/driverentry-of-ide-controller-minidriver.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/driverentry-of-ide-controller-minidriver",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/installing-ide-controller-minidrivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/installing-ide-controller-minidrivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/sample-ide-controller-minidrivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/sample-ide-controller-minidrivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/storage/ata-miniport-drivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/storage/ata-miniport-drivers",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows-driver-docs-pr/display/windows-2000-display-driver-model-design-guide.md",
       "redirect_url": "/previous-versions/windows/drivers/display/windows-2000-display-driver-model-design-guide",
       "redirect_document_id": false
