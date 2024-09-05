@@ -1,6 +1,7 @@
 ---
 title: Bug Check Code Reference
 description: This section contains descriptions of the common bug checks, including the parameters passed to the blue screen.
+ms.custom: "se-defect-target"
 ms.date: 08/23/2024
 ---
 
