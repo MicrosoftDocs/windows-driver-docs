@@ -2,6 +2,7 @@
 title: Get support for Partner Center dashboard and HLK issues
 description: Get support for Partner Center dashboard and HLK issues
 ms.topic: article
+ms.custom: "se-defect-target"
 ms.date: 08/23/2024
 ---
 
