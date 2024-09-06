@@ -4676,6 +4676,16 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "windows-driver-docs-pr/dashboard/get-started-dashboard-submissions.md",
+            "redirect_URL": "/windows-hardware/drivers/dashboard/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/dashboard/index.yml",
+            "redirect_URL": "/windows-hardware/drivers/dashboard/",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "windows-hardware/drivers/dashboard/register-for-the-hardware-program.md",
             "redirect_URL": "/windows-hardware/drivers/dashboard/hardware-program-register",
             "redirect_document_id": false

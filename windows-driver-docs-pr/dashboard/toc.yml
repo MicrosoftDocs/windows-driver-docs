@@ -1,7 +1,5 @@
 - name: "Partner Center for Windows Hardware"
-  href: index.yml
-- name: "Get started with hardware submissions"
-  href: get-started-dashboard-submissions.md
+  href: index.md
 - name: "Register for the Windows Hardware program"
   href: hardware-program-register.md 
 - name: "Manage dashboard users"
@@ -14,7 +12,6 @@
     href: hardware-submissions-view.md
   - name: Update a hardware submission
     href: hardware-submission-update.md
-
   - name: Create a WLK hardware submission package
     href: hardware-submission-wlk.md
   - name: "Submission IDs"
