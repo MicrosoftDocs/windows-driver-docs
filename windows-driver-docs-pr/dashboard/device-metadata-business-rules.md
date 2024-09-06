@@ -2,7 +2,7 @@
 title: Device Metadata Business Rules
 description: Device Metadata Business Rules
 ms.topic: article
-ms.date: 04/20/2017
+ms.date: 09/05/2024
 ---
 
 # Device Metadata Business Rules
@@ -10,9 +10,7 @@ ms.date: 04/20/2017
 When you submit device metadata packages through the Dashboard, you should ensure that:
 
 - Packages are downloaded for the correct device.
-
 - The right package is clearly identified by the associated hardware IDs and model IDs and no conflict exists.
-
 - Preview packages are not downloaded as released packages.
 
 ## General rules for submitting device metadata
@@ -55,7 +53,7 @@ Different types of device metadata packages must follow different rules. Additio
 <li><p>Devices that have a UWP device app</p></li>
 <li><p>Devices that have a privileged app</p></li>
 </ul></td>
-<td><p>The device must either use only in-box drivers that do not have an associated Windows® logo submission, or custom drivers that have Windows logo submissions that are bound to the device experience.</p></td>
+<td><p>The device must either use only in-box drivers that do not have an associated Windows&reg; logo submission, or custom drivers that have Windows logo submissions that are bound to the device experience.</p></td>
 </tr>
 <tr class="even">
 <td><p>Device Stage</p></td>
@@ -141,7 +139,7 @@ Different types of device metadata packages must follow different rules. Additio
 
 ### Unique Device Stage Metadata Submissions
 
-To submit a PC metadata package, see, [Submit a PC device manifest package](./index.yml).
+To submit a PC metadata package, see, [Submit a PC device manifest package](./index.md).
 
 To submit a mobile broadband metadata package, see [Submit a mobile broadband device manifest package](submit-a-mobile-broadband-device-manifest-package.md).
 
@@ -167,7 +165,5 @@ In each device metadata package, the following limits apply:
 ## Related topics
 
 - [Create a Device Metadata Experience](create-a-device-metadata-experience.md)
-
 - [Manage Device Metadata Experiences](manage-device-metadata-experiences.md)
-
 - [Submit a Device Metadata Package (Dashboard help)](submit-a-device-metadata-package--dashboard-help-.md)
