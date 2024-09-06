@@ -1,7 +1,7 @@
 ---
 title: Overview of Microsoft-Provided USB Drivers
 description: This article describes the class drivers, generic client driver, and the parent composite driver that are provided by Microsoft.
-ms.date: 01/17/2024
+ms.date: 09/06/2024
 ---
 
 # Overview of Microsoft-provided USB drivers
@@ -28,6 +28,8 @@ For supporting USB Type-C connectors, see [Type-C driver reference](/windows-har
 ## Microsoft-provided USB device class drivers
 
 Microsoft provides drivers for several USB device classes approved by USB-IF. The drivers and their installation files are included in Windows. They're available in the \\Windows\\System32\\DriverStore\\FileRepository folder. For more information, see [USB device class drivers included in Windows](supported-usb-classes.md).
+
+Microsoft defines setup classes for most devices. IHVs and OEMs can define new device setup classes, but only if none of the existing classes apply. For more information, see [System-Defined Device Setup Classes](system-defined-device-setup-classes-reserved-for-system-use.md).
 
 ## See also
 
