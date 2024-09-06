@@ -29,7 +29,7 @@ For supporting USB Type-C connectors, see [Type-C driver reference](/windows-har
 
 Microsoft provides drivers for several USB device classes approved by USB-IF. The drivers and their installation files are included in Windows. They're available in the \\Windows\\System32\\DriverStore\\FileRepository folder. For more information, see [USB device class drivers included in Windows](supported-usb-classes.md).
 
-Microsoft defines setup classes for most devices. IHVs and OEMs can define new device setup classes, but only if none of the existing classes apply. For more information, see [System-Defined Device Setup Classes](system-defined-device-setup-classes-reserved-for-system-use.md).
+Microsoft defines setup classes for most devices. IHVs and OEMs can define new device setup classes, but only if none of the existing classes apply. For more information, see [System-Defined Device Setup Classes Available to Vendors](../install/system-defined-device-setup-classes-available-to-vendors.md).
 
 ## See also
 
