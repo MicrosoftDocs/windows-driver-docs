@@ -2,6 +2,7 @@
 metadata:
   title: FAQ on Custom Capabilities
   description: Describes Custom Capabilities for Hardware Support Apps (HSA) and how they differ from other capabilities.
+  ms.author: bagold
   ms.date: 03/17/2023
   ms.localizationpriority: medium
   ms.topic: faq
