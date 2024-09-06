@@ -2,6 +2,7 @@
 metadata:
   title: An Example of a Vendor-Provided INF File in Windows Vista
   description: This appendix includes an example of how to implement a vendor-provided INF file that references Bth.inf.
+  ms.author: mhopkins
   ms.date: 08/31/2022
   ms.localizationpriority: medium
   ms.topic: faq
