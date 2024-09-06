@@ -6398,6 +6398,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "windows-driver-docs-pr/ifs/network-redirector-design-in-windows-nt.md",
+            "redirect_URL": "windows-driver-docs-pr/ifs/network-redirector-design-in-windows-2000",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/ifs/file-system-minifilter-drivers.md",
             "redirect_URL": "/windows-hardware/drivers/ifs/filter-manager-concepts",
             "redirect_document_id": false
