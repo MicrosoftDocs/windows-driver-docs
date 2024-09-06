@@ -476,3 +476,5 @@
         href: design-services-and-goods-pages-in-a-mobile-broadband-app.md
       - name: "Integrate a mobile broadband app with other Windows components"
         href: integrate-a-mobile-broadband-app-with-other-windows-components.md
+  - name: "Use a QR code or URI link to download an eSIM profile"
+    href: activate-by-link.md
