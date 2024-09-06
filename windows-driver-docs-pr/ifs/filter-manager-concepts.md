@@ -5,12 +5,12 @@ keywords:
 - filter manager WDK file system minifilter , about filter manager
 - altitudes WDK file system minifilter
 - filter manager WDK file system minifilter , architecture
-ms.date: 12/06/2023
+ms.date: 09/05/2024
 ---
 
 # Filter Manager Concepts
 
-The filter manager (*FltMgr.sys*) is a system-supplied kernel-mode driver that implements and exposes functionality commonly required in file system filter drivers. Third-party file system filter developers can use *FltMgr*'s functionality to write "minifilter" drivers that are simpler to develop than legacy file system filter drivers. The end result is a shortened development process and higher-quality, more robust drivers.
+The Filter Manager (*FltMgr.sys*) is a system-supplied kernel-mode driver that implements and exposes functionality commonly required in file system filter drivers. File system filter developers can use *FltMgr*'s functionality to write *minifilter* drivers that are simpler to develop than legacy file system filter drivers. The end result is a shortened development process and higher-quality, more robust drivers.
 
 *FltMgr* is installed with Windows, but becomes active only when a minifilter driver is loaded. It attaches to the file system stack for a target volume. A minifilter driver attaches to the file system stack indirectly, by registering with *FltMgr* for the I/O operations that the minifilter driver chooses to filter.
 
@@ -41,8 +41,8 @@ Each filter manager frame represents a range of altitudes. *FlgMgr* can adjust a
 > [!IMPORTANT]
 > Always verify interoperability of legacy filters with minifilters or consider replacing legacy filters with minifilters. For more information, see [Guidelines for Porting Legacy Filter Drivers](guidelines-for-porting-legacy-filter-drivers.md).
 
-If a minifilter driver is unloaded and reloaded, it's reloaded at the same altitude in the same frame from which it was unloaded.
+If a minifilter driver is unloaded and reloaded, the system reloads it at the same altitude in the same frame from which it was unloaded.
 
 The following figure shows a simplified I/O stack with a two filter manager frames, minifilter driver instances, and a legacy filter driver.
 
-![diagram illustrating a simplified i/o stack with two filter manager frames, minifilter driver instances, and a legacy filter driver.](images/filter-manager-architecture-2.gif)
+:::image type="content" source="images/filter-manager-architecture-2.gif" alt-text="Diagram illustrating a simplified I/O stack with two filter manager frames, minifilter driver instances, and a legacy filter driver.":::

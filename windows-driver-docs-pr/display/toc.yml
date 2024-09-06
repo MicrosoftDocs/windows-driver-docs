@@ -73,6 +73,9 @@
     - name: WDDM support for DisplayPort monitors over USB4
       href: supporting-usb4.md
   - name: WDDM 2.9 features
+    items:
+    - name: Supporting cross-adapter resource scan-out (CASO)
+      href: supporting-caso.md
   - name: WDDM 2.7 features
     items:
     - name: Microsoft Compute Driver Model (MCDM)

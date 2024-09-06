@@ -389,6 +389,8 @@
       href: placeholders_guidance.md
   - name: "Vetoing a bind link"
     href: vetoing-a-bind-link.md
+  - name: "Blocking legacy file system filter drivers"
+    href: blocking-file-system-filter-drivers.md
 - name: "File system legacy filter drivers"
   # Auto-expanded node L1
   items:
@@ -576,8 +578,6 @@
         href: deleting-a-per-stream-context.md
   - name: "Tracking per-file context in a legacy file system filter driver"
     href: tracking-per-file-context-in-a-legacy-file-system-filter-driver.md
-  - name: "Blocking legacy file system filter drivers"
-    href: blocking-file-system-filter-drivers.md
 - name: "Network redirector drivers"
   items:
   - name: "Remote file systems"

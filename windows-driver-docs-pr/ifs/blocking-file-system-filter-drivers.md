@@ -1,19 +1,20 @@
 ---
 title: Blocking Legacy File System Filter Drivers
 description: Starting in Windows 10, version 1607, administrators and driver developers can use a registry setting to block legacy file system filter drivers.
-ms.date: 04/20/2017
+keywords:
+- file system filter drivers, blocking, legacy
+ms.date: 09/05/2024
 ---
 
 # Blocking legacy file system filter drivers
 
-Starting in Windows 10, version 1607, administrators and driver developers can use a registry setting to block legacy file system filter drivers. *Legacy file system filter drivers* are drivers that attach to the file system stack directly and don't use Filter Manager. This topic describes the registry setting for blocking and unblocking legacy file system filter drivers. It also describes the event entered into the System event log when a legacy file system filter is blocked and how to check if the OS has legacy file system drivers running.
+Starting in Windows 10, version 1607, administrators and driver developers can use a registry setting to block and unblock [legacy file system filter drivers](about-file-system-legacy-filter-drivers.md). *Legacy file system filter drivers* attach to the file system stack directly and don't use Filter Manager.
 
-> [!NOTE]
-> For optimal reliability and performance, use [file system minifilter drivers](./filter-manager-concepts.md) with Filter Manager support instead of legacy file system filter drivers. To port your legacy driver to a minifilter driver, see [Guidelines for Porting Legacy Filter Drivers](guidelines-for-porting-legacy-filter-drivers.md).
+This article describes the registry setting and the event entered into the System event log when a legacy file system (FS) filter is blocked. It also describes how to check if the OS has legacy FS drivers running.
 
 ## How to block legacy drivers
 
-Use the **IoBlockLegacyFsFilters** registry key to specify if the system blocks legacy file system filter drivers. When blocked, all legacy file system filter drivers are blocked from loading. For the registry changes to take effect, perform a system restart.
+Use the **IoBlockLegacyFsFilters** registry key to indicate whether the system blocks legacy FS filter drivers. When blocked, all legacy FS filter drivers are blocked from loading. For the registry changes to take effect, perform a system restart.
 
 The registry key must be created under the following registry path:
 
@@ -21,20 +22,20 @@ The registry key must be created under the following registry path:
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\I/O System
 ```
 
-The valid DWORD values for the **IoBlockLegacyFsFilters** key are as follows:
+The following table describes the valid DWORD values for the **IoBlockLegacyFsFilters** key.
 
-| **IoBlockLegacyFsFilters** value | Description                                                                                       |
-|----------------------------------|---------------------------------------------------------------------------------------------------|
-| **1**                            | Legacy file system filter drivers are blocked from loading or attaching to storage volumes.       |
-| **0**                            | Legacy file system filter drivers are not blocked. In this release, this is the default behavior. |
+| **IoBlockLegacyFsFilters** value | Description |
+| -------------------------------- | ----------- |
+| **1** | Legacy FS filter drivers are blocked from loading or attaching to storage volumes. |
+| **0** | Legacy FS filter drivers aren't blocked. This behavior is the default. |
 
-This is what the key looks like in Registry Editor:
+The following figure shows what the key looks like in Registry Editor.
 
-![editing the ioblocklegacyfsfilters registry key.](images/ioblockregkey.png)
+:::image type="content" source="images/ioblockregkey.png" alt-text="Image that shows how to edit the ioblocklegacyfsfilters registry key.":::
 
 ## Example: when a legacy driver is blocked from loading
 
-An **Error** event is logged to the System event log when a legacy file system filter driver is blocked from loading, as shown here:
+An **Error** event is logged to the System event log when a legacy FS filter driver is blocked from loading, as shown here:
 
 | Event property | Description |
 | -------------- | ----------- |
@@ -47,17 +48,17 @@ An **Error** event is logged to the System event log when a legacy file system f
 | Keywords       |              |
 | User           | CONTOSO\user |
 | Computer       | user.domain.corp.contoso.com |
-| Description    | Windows is configured to block legacy file system filters. Filter name: \Driver\sfilter |
+| Description    | Windows is configured to block legacy FS filters. Filter name: \Driver\sfilter |
 
 ## How to check if legacy drivers are running
 
-If you're unsure which filters are legacy file system filter drivers or want to make sure that they're not running, you can perform the following:
+To determine which filters are legacy FS filter drivers and whether they're running, you can perform the following steps:
 
 1. Open an elevated Command Prompt by selecting and holding (or right-clicking) a **cmd.exe** icon and selecting **Run as administrator**.
 2. Type: `fltmc filters`
-3. Look for legacy drivers, they're the ones with a **Frame** value of **&lt;Legacy&gt;**.
+3. Look for legacy drivers, they're the ones with a **Frame** value of **\<Legacy>**.
 
-In this example, the legacy file system filter drivers, named AVLegacy and EncryptionLegacy, are marked with the **&lt;Legacy&gt;** Frame value. The file system driver named AVMiniFilter does not have the **&lt;Legacy&gt;** Frame value because it is a minifilter driver (it does not attach to the file system stack directly and uses Filter Manager).
+In this example, three filters are running. The legacy FS filter drivers—AVLegacy and EncryptionLegacy—are marked with the **\<Legacy>** Frame value. AVMiniFilter doesn't have the **\<Legacy>** Frame value because it's a minifilter driver (it doesn't attach to the FS stack directly and uses Filter Manager).
 
 ``` syntax
 C:\Windows\system32>fltmc filters
@@ -69,6 +70,6 @@ EncryptionLegacy                                149998.99   <Legacy>
 AVMiniFilter                           3        328000         0
 ```
 
-If you see that legacy drivers are still running after you block legacy file system filter drivers, make sure you reboot the system after setting the **IoBlockLegacyFsFilters** registry key. The setting will not take effect until after a reboot.
+If you see that legacy drivers are still running after you block legacy FS filter drivers, make sure you reboot the system after setting the **IoBlockLegacyFsFilters** registry key. The setting doesn't take effect until after a reboot.
 
-If your system has legacy file system filter drivers, work with the respective ISVs to get the Minifilter version of the file system driver. For info about porting legacy file system filter drivers to minifilter drivers that use the Filter Manager model, see [Guidelines for Porting Legacy Filter Drivers](guidelines-for-porting-legacy-filter-drivers.md).
+If your system has legacy FS filter drivers, work with the respective filter developers to get the minifilter version of the FS driver. For information about porting legacy FS filter drivers to minifilter drivers that use the Filter Manager model, see [Guidelines for Porting Legacy Filter Drivers](guidelines-for-porting-legacy-filter-drivers.md).
