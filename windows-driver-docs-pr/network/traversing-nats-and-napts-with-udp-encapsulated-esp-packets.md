@@ -19,9 +19,9 @@ Network address translators (NATs) and network address port translators (NAPTs) 
 
 However, NATs and NAPTs can cause problems with Internet protocol security (IPsec). Because NATs and NAPTs modify the IP header of a packet, they cause AH-protected packets to fail checksum validation. NAPTs, which modify TCP and UDP ports, cannot modify the ports in the encrypted TCP header of an ESP-protected packet.
 
-UDP encapsulation solves this problem. In practice, UDP encapsulation is used only on ESP packets. A NAT or NAPT can modify the unencrypted IP and UDP headers of a UDP-encapsulated ESP packet without breaking ESP authentication and without being stymied by ESP encryption. For a detailed description of the UDP encapsulation of ESP packets, see [IPsec over NAT Justification for UDP Encapsulation](https://go.microsoft.com/fwlink/p/?linkid=9856).
+UDP encapsulation solves this problem. In practice, UDP encapsulation is used only on ESP packets. A NAT or NAPT can modify the unencrypted IP and UDP headers of a UDP-encapsulated ESP packet without breaking ESP authentication and without being stymied by ESP encryption.
 
-Microsoft supports UDP encapsulation of ESP packets on port 4500. After IKE peers initiate negotiation on port 500, detect support for NAT-traversal, and detect a NAT or NAPT along the path, they can negotiate to "float" IKE and UDP-ESP traffic to port 4500. For more information about this negotiation, see [Negotiation of NAT-Traversal in the IKE](https://go.microsoft.com/fwlink/p/?linkid=9857).
+Microsoft supports UDP encapsulation of ESP packets on port 4500. After IKE peers initiate negotiation on port 500, detect support for NAT-traversal, and detect a NAT or NAPT along the path, they can negotiate to "float" IKE and UDP-ESP traffic to port 4500.
 
 Floating to port 4500 for NAT traversal provides the following benefits:
 

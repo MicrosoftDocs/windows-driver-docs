@@ -2022,8 +2022,6 @@
             href: impact-of-network-interface-changes-on-ipsec-offloads.md
         - name: "Offloading the Processing of UDP-Encapsulated ESP Packets"
           items: 
-          - name: "Background Reading on UDP Encapsulation of ESP Packets"
-            href: background-reading-on-udp-encapsulation-of-esp-packets.md
           - name: "Traversing NATs and NAPTs with UDP-Encapsulated ESP Packets"
             href: traversing-nats-and-napts-with-udp-encapsulated-esp-packets.md
           - name: "UDP-ESP Encapsulation Types"

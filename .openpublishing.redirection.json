@@ -9403,6 +9403,11 @@
             "redirect_document_id": false
         },
         {
+          "source_path": "windows-driver-docs-pr/network/background-reading-on-udp-encapsulation-of-esp-packets.md",
+          "redirect_URL": "/windows-hardware/drivers/network/traversing-nats-and-napts-with-udp-encapsulated-esp-packets",
+          "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/network/benefits-of-ndis-sgdma-support.md",
             "redirect_URL": "/windows-hardware/drivers/network/ndis-scatter-gather-dma",
             "redirect_document_id": false
