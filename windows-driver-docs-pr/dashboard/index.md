@@ -1,19 +1,19 @@
 ---
-title: Partner Center for Windows hardware
-description: Getting started with the hardware submission process
+title: Partner Center for Windows Hardware
+description: This article describes how to get started with the hardware submission process by using the Partner Center for Windows Hardware.
 ms.topic: article
 ms.date: 09/05/2024
 ---
 
-# Partner Center for Windows hardware
+# Partner Center for Windows Hardware
+
+This article describes how to get started with the hardware submission process by using the Partner Center for Windows Hardware. We take you through each step of the process, from getting an extended validation (EV), to registration, and finally, to driver publication and certification.
 
 With the Windows Hardware Compatibility Program you can design, create, and test your hardware and drivers before you submit the final version through the Partner Center hardware dashboard for certification. By certifying your hardware device, system, and drivers for Windows, you gain the support of Microsoft marketing resources in the form of compatibility and reliability listings, logo artwork, and promotional partnerships.
 
-This article describes how to get started with the hardware submission process. We take you through each step of the process, from getting an extended validation (EV), to registration, and finally, to driver publication and certification.
-
 ## Step 1: Get an EV code signing certificate
 
-Your Hardware Dev Center dashboard account must have at least one extended validation (EV) certificate associated with it to submit binaries for attestation signing or to submit binaries for Windows Hardware Lab Kit (HLK) certification. To learn how to get an EV certificate, see [EV certificate signed drivers](code-signing-reqs.md#ev-certificate-signed-drivers)
+Your Hardware Dev Center dashboard account must have at least one extended validation (EV) certificate associated with it to submit binaries for attestation signing or to submit binaries for Windows Hardware Lab Kit (HLK) certification. To learn how to get an EV certificate, see [EV certificate signed drivers](code-signing-reqs.md#ev-certificate-signed-drivers).
 
 ## Step 2: Register for the Hardware Developer Program
 
@@ -21,10 +21,7 @@ Now that you have your EV certificate ready, you can now register for the Hardwa
 
 ## Step 3: Test your hardware and drivers
 
-Now that your company is registered in the Hardware Developer program, you need to design, create, and test your hardware and drivers. To ensure that your drivers and hardware run on Windows systems as your customers expect, you need to participate in either one of the following programs:
-
-- [Windows Hardware Compatibility Program](/windows-hardware/design/compatibility/) (for Windows 10 and above)
-- [Windows Hardware Certification Program](/previous-versions/windows/hardware/hck/jj125187(v=vs.85)) (for Windows 8/8.1 and older operating systems).
+Now that your company is registered in the Hardware Developer program, you need to design, create, and test your hardware and drivers. To ensure that your drivers and hardware run on Windows systems as your customers expect, you need to participate in the [Windows Hardware Compatibility Program](/windows-hardware/design/compatibility/).
 
 ## Step 4: Submit for certification and compatibility
 
