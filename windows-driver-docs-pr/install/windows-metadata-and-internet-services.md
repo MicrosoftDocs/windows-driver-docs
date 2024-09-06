@@ -11,7 +11,7 @@ ms.date: 04/20/2017
 # Windows Metadata and Internet Services
 
 
-The Windows Metadata and Internet Services (WMIS) manages device metadata packages that OEMs submit to the [Windows Quality Online Services (Winqual)](../dashboard/index.yml) website over the Internet. By using the Winqual site, you can certify hardware devices and software applications for Windows.
+The Windows Metadata and Internet Services (WMIS) manages device metadata packages that OEMs submit to the [Windows Quality Online Services (Winqual)](../dashboard/index.md) website over the Internet. By using the Winqual site, you can certify hardware devices and software applications for Windows.
 
 When the OEM submits a device metadata package, Winqual completes the following process:
 

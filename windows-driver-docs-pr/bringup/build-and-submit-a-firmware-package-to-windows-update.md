@@ -63,7 +63,7 @@ If you follow this format, the submission should pass. To confirm the parent fol
 
 [Device.Fundamentals Reliability Testing Prerequisites](/windows-hardware/test/hlk/testref/devicefundamentals-reliability-testing-prerequisites)
 
-[Driver Signing](../dashboard/index.yml)
+[Driver Signing](../dashboard/index.md)
 
 [Microsoft UEFI CA Signing Policy updates](https://techcommunity.microsoft.com/t5/Windows-Hardware-Certification/bg-p/WindowsHardwareCertification)
 

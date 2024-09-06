@@ -74,7 +74,7 @@ For more info about these sections, see [CarrierControlSchema schema](/uwp/schem
 
 The global section is required in every provisioning file. Required elements in this section are as follows:
 
-- **[CarrierId](/uwp/schemas/mobilebroadbandschema/carriercontrolschema/element-carrierid)** A GUID that uniquely identifies the organization that authored the file. If you are building a mobile broadband app, you must use the GUID that you specified in the [Service Number](../dashboard/index.yml) field of **ServiceInfo.xml** in the service metadata package. For info about the service metadata package schema, see [Service metadata package schema reference](mobilebroadbandinfo-xml-schema.md).
+- **[CarrierId](/uwp/schemas/mobilebroadbandschema/carriercontrolschema/element-carrierid)** A GUID that uniquely identifies the organization that authored the file. If you are building a mobile broadband app, you must use the GUID that you specified in the [Service Number](../dashboard/index.md) field of **ServiceInfo.xml** in the service metadata package. For info about the service metadata package schema, see [Service metadata package schema reference](mobilebroadbandinfo-xml-schema.md).
 
   > [!NOTE]
   > This is the same service number that you provided in the **Create a mobile broadband experience wizard** on the Windows Dev Center Dashboard – Hardware.

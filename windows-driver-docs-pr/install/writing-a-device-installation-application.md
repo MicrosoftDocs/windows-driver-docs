@@ -16,7 +16,7 @@ ms.date: 03/23/2022
 
 # Writing a Device Installation Application
 
-It is preferred for driver packages to be submitted to the [Windows Hardware Developer Center portal](../dashboard/index.yml) and published to Windows Update to be delivered to systems.  However, if you need to write a *device installation application* to stage [driver packages](driver-packages.md) to the [Driver Store](driver-store.md) or update the driver packages installed on a device, see [Guidelines for Writing Device Installation Applications](guidelines-for-writing-device-installation-applications.md).
+It is preferred for driver packages to be submitted to the [Windows Hardware Developer Center portal](../dashboard/index.md) and published to Windows Update to be delivered to systems.  However, if you need to write a *device installation application* to stage [driver packages](driver-packages.md) to the [Driver Store](driver-store.md) or update the driver packages installed on a device, see [Guidelines for Writing Device Installation Applications](guidelines-for-writing-device-installation-applications.md).
 
 Your *device installation application* must handle two situations:
 

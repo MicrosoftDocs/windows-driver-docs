@@ -16,7 +16,7 @@ Microsoft is now requiring that a Firmware Update Package include Computer Hardw
 
 ## Related resources
 
-[Partner Center](../dashboard/index.yml)
+[Partner Center](../dashboard/index.md)
 
 [Specifying Hardware IDs for a Computer](../install/specifying-hardware-ids-for-a-computer.md)
 

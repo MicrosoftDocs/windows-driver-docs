@@ -1,7 +1,7 @@
 ---
 title: Developer Guide for Creating Service Metadata
 description: Developer guide for creating service metadata
-ms.date: 10/10/2023
+ms.date: 09/05/2024
 ---
 
 # Developer guide for creating service metadata
@@ -30,41 +30,33 @@ To create a successful service metadata package, you must complete the steps inc
 MNOs and MVNOs must complete the following steps before you can create a service metadata package:
 
 - Request access to the Service Metadata wizard
-
 - Register your service identifiers
 
-To complete the steps above, you must go to [Partner Center dashboard technical support](/windows-hardware/drivers/dashboard/hardware-submission-support) and supply the following info:
+To complete the steps above, you must go to [Partner Center dashboard technical support](../dashboard/technical-support.md) and supply the following info:
 
 - The organization name used when you registered for the Windows Dev Center hardware dashboard.
-
 - Whether you are a mobile network operator or a mobile virtual network operator.
-
 - Your website and justification on why you need to create a service metadata package.
 
 Include the following service identifiers as applicable:
 
 - List of GSM Provider IDs
-
 - List of GSM Provider Names
-
 - List of CDMA SIDs
-
 - List of CDMA Provider Names
 
-You should receive an acknowledgement emails with 24 hours that your request was received. However, it could take up to 5 business days to process the request. If we have conflicts, we’ll send you an email asking for additional information.
+You should receive an acknowledgement emails with 24 hours that your request was received. However, it could take up to 5 business days to process the request. If we have conflicts, we'll send you an email asking for additional information.
 
 ### Mobile broadband app
 
 Before you create your service metadata package, ensure that your mobile broadband app has been developed and associated with the Microsoft Store. This app should provide key experiences, such as plan purchase, data usage, help and support, as well as highlighting value-added services from the operator. For more info about creating the mobile broadband app, see the following links:
 
 - [Mobile broadband WinRT API overview](list-of-mobile-broadband-windows-runtime-apis.md)
-
 - [Mobile operator hardware overview](mobile-operator-hardware-overview.md)
-
 - [UWP mobile broadband apps](uwp-mobile-broadband-apps.md)
 
 > [!NOTE]
-> The mobile broadband app doesn’t have to be published to the Microsoft Store until the service metadata has been tested and is ready to be published externally. We recommend that the app is published to the Microsoft Store only after the service metadata package passes preview mode testing.
+> The mobile broadband app doesn't have to be published to the Microsoft Store until the service metadata has been tested and is ready to be published externally. We recommend that the app is published to the Microsoft Store only after the service metadata package passes preview mode testing.
 
 ## Creating service metadata packages
 
@@ -91,79 +83,66 @@ To edit an existing service metadata package, see [Steps for editing a service m
 Use the following steps to create a service metadata package on the Windows Dev Center hardware dashboard:
 
 - [1-Gather the required information for the service metadata package](#1-gather-the-required-information-for-the-service-metadata-package)
-
 - [2-Create the service metadata package](#2-create-the-service-metadata-package)
-
 - [3-Insert the store manifest file into the Microsoft Store device app](#3-insert-the-store-manifest-file-into-the-microsoft-store-device-app)
-
 - [4-Test the service metadata package](#4-test-the-service-metadata-package)
-
 - [5-Publish the service metadata package](#5-publish-the-service-metadata-package)
 
 ### 1-Gather the required information for the service metadata package
 
-As you go through the steps in the Service Metadata Wizard in Step 2 of this topic, several pieces of information stored in the package.appxmanifest file from the mobile broadband app project that you want to associated with the device is required. Use the following steps to gather the information so that it’s ready for Step 2 of this topic.
+As you go through the steps in the Service Metadata Wizard in Step 2 of this topic, several pieces of information stored in the package.appxmanifest file from the mobile broadband app project that you want to associated with the device is required. Use the following steps to gather the information so that it's ready for Step 2 of this topic.
 
-**Caution**  
+#### Caution
+
 The mobile broadband app must be associated with the Microsoft Store before you gather the values in this step. When you associate a mobile broadband app, the values in the package manifest file are updated to use the information from your Microsoft Store developer account. However, the mobile broadband app does not have to be published to the Microsoft Store. It can stay in your local development environment until you are ready to publish the service metadata package.
 
-**To gather UWP device app information**
+#### To gather UWP device app information
 
 1. Open the mobile broadband app project by using Visual Studio 2013.
-
-2. In the right hand pane, right click the **Package.appxmanifest** file, and then click **View Code**.
-
-3. Gather the following attributes from the package.appxmanifest file:
+1. In the right hand pane, right click the **Package.appxmanifest** file, and then click **View Code**.
+1. Gather the following attributes from the package.appxmanifest file:
 
     - From the **Identity** element, the **Name** attribute will be used for the **Package name** field in the Service Metadata Wizard.
-
     - From **Identity** element, the **Publisher** attribute will be used for the **Publisher** field in the Service Metadata Wizard.
-
     - From the **Applications** element, the **Id** attribute from the **Application** child element will be used for the **App ID** field in the Service Metadata Wizard.
 
-4. Close the package.appxmanifest file.
+1. Close the package.appxmanifest file.
 
 :::image type="content" source="images/mbae-sxs-appxmanifest.png" alt-text="Screenshot of the package.appxmanifest file in code view.":::
 
 You can also complete this without using Visual Studio by doing the following steps:
 
-**To gather mobile broadband app information without using Visual Studio**
+#### To gather mobile broadband app information without using Visual Studio
 
 1. Navigate to the package.appxmanifest file for your mobile broadband app.
-
-2. Right-click the file, and then click **Open with**.
-
-3. Clear the **Use this app for all .appxmanifest files** check box, click **More options**, and then click **Notepad**.
-
-4. Gather the following attributes from the package.appxmanifest file:
+1. Right-click the file, and then click **Open with**.
+1. Clear the **Use this app for all .appxmanifest files** check box, click **More options**, and then click **Notepad**.
+1. Gather the following attributes from the package.appxmanifest file:
 
     - From the **Identity** element, the **Name** attribute will be used for the **Package name** field in the Service Metadata Wizard.
-
     - From **Identity** element, the **Publisher** attribute will be used for the **Publisher** field in the Service Metadata Wizard.
-
     - From the **Applications** element, the **Id** attribute from the **Application** child element will be used for the **App ID** field in the Service Metadata Wizard.
 
-5. Save and close the package.appxmanifest file.
+1. Save and close the package.appxmanifest file.
 
 ### 2-Create the service metadata package
 
 Service metadata is created by using the Service Metadata Wizard in the Windows Dev Center hardware dashboard.
 
-**To create a service metadata package**
+#### To create a service metadata package
 
 1. Navigate to sysdev.microsoft.com.
-
-2. Under the **Device metadata** heading, click **Create mobile broadband experience**.
+1. Under the **Device metadata** heading, click **Create mobile broadband experience**.
 
     :::image type="content" source="images/mbae-sxs81-dashboard.png" alt-text="Screenshot of the Windows Dev Center hardware dashboard landing page.":::
 
-3. On the **Service info** page, complete the following fields, and then click **Next**.
+1. On the **Service info** page, complete the following fields, and then click **Next**.
 
     - **Enter the name for your network that is to be used in the Windows network selection UI** – The name of you network that will be displayed to customers in Windows Connection Manager.
 
     - **Enter your service number** – A GUID that must match the carrier ID field in your provisioning metadata. You can create a GUID by using Visual Studio 2013. For more information on how to create a GUID, see [Create GUID (guidgen.exe)](https://go.microsoft.com/fwlink/p/?linkid=330070).
 
-    - **Upload your icon that is to be shown in the Windows network selection UI** – Click **Browse**, and then select the icon that is shown to customers in Windows Connection Manager.
+    - **Upload your icon that is to be shown in the Windows network selection UI** – Select **Browse**, and then select the icon that is shown to customers in Windows Connection Manager.
 
     - **Enter the Windows notification event handler in your app (optional unless entitlement check is required below)** – This is the notification handler that was registered in your mobile broadband app.
 
@@ -173,7 +152,7 @@ Service metadata is created by using the Service Metadata Wizard in the Windows 
 
     :::image type="content" source="images/mbae-sxs81-serviceinfostep.png" alt-text="Screenshot of the Service Info step in the Service Metadata Wizard.":::
 
-4. On the **Hardware info** page, select the information that should be used to identify your experience. Once a check box is selected, you can add the appropriate network ranges. The ID generated should exist in the Windows COSA database so the right subscriber is identified. For more information about the COSA database, see [COSA database submission](planning-your-desktop-cosa-database-submission.md).
+1. On the **Hardware info** page, select the information that should be used to identify your experience. Once a check box is selected, you can add the appropriate network ranges. The ID generated should exist in the Windows COSA database so the right subscriber is identified. For more information about the COSA database, see [COSA database submission](planning-your-desktop-cosa-database-submission.md).
 
     - If you are a GSM Provider that uses the International Mobile Subscriber Identity (IMSI), select the **IMSI** check box under the **GSM** heading. In the **Provider ID** box, enter the GSM service provider ID. Under the **IMSI/ICCID Ranges** heading, enter the range, and then click **Add**.
 
@@ -185,15 +164,15 @@ Service metadata is created by using the Service Metadata Wizard in the Windows 
 
     - If you are a CDMA provider that uses the provider name, select the **Provider name** check box under the **CDMA** heading. In the **Enter Provider Name** box, enter the CDMA service provider name.
 
-    - Click **Next**.
+    - Select **Next**.
 
     :::image type="content" source="images/mbae-sxs81-hardwareinfostep.png" alt-text="Screenshot of the Hardware Info step in the Service Metadata Wizard.":::
 
-5. On the **App info** page, enter the information you gathered in Step 1 of this topic. If you want to add additional privileged apps, click **Add**, and then enter up to 7 more. When all of the privileged apps are entered, click **Next**.
+1. On the **App info** page, enter the information you gathered in Step 1 of this topic. If you want to add additional privileged apps, click **Add**, and then enter up to 7 more. When all of the privileged apps are entered, click **Next**.
 
     :::image type="content" source="images/mbae-sxs81-appinfostep.png" alt-text="Screenshot of the App Info step in the Service Metadata Wizard.":::
 
-6. On the **Confirm** page, verify that the information is correct. Select the **Developer Mode** or **Preview Mode** option, and then click **Submit**.
+1. On the **Confirm** page, verify that the information is correct. Select the **Developer Mode** or **Preview Mode** option, and then click **Submit**.
 
     - **Developer Mode** – The package is not signed and it must be manually downloaded and installed on every computer. Use this option if you want to save the package for offline development.
 
@@ -205,19 +184,16 @@ Service metadata is created by using the Service Metadata Wizard in the Windows 
 
 A store manifest file must be included with a UWP device app. Use the following steps to download the store manifest file from your service metadata package and insert it into the mobile broadband app project.
 
-**Insert the store manifest file**
+#### Insert the store manifest file
 
 1. On the Windows Dev Center hardware dashboard, on the manage experience page for your service metadata package, click the service metadata package, and then click **StoreManifest.xml** to download your store manifest file.
 
     :::image type="content" source="images/mbae-sxs81-storemanifest.png" alt-text="Screenshot of the option to download the StoreManifest.xml file.":::
 
-2. Open the mobile broadband app project by using Visual Studio 2013.
-
-3. Right-click the project, click **Add**, and then click **Existing Item**.
-
-4. Browse to the store manifest file that you downloaded, and then click **Add**.
-
-5. Recompile the mobile broadband app and publish it again to the Microsoft Store.
+1. Open the mobile broadband app project by using Visual Studio 2013.
+1. Right-click the project, click **Add**, and then click **Existing Item**.
+1. Browse to the store manifest file that you downloaded, and then click **Add**.
+1. Recompile the mobile broadband app and publish it again to the Microsoft Store.
 
 ### 4-Test the service metadata package
 
@@ -231,17 +207,17 @@ If you created a new package, in the Windows Dev Center hardware dashboard, clic
 
 :::image type="content" source="images/mbae-sxs81-managedevpackages.png" alt-text="Screenshot of the option to download a service metadata package.":::
 
-If you edited an existing service metadata package that is already associated with an experience, select the experience from the **Manage experiences** table, and you will see the developer mode package in the **Metadata packages** table. Click **Download MBAE Zip Package Edit** to download it.
+If you edited an existing service metadata package that is already associated with an experience, select the experience from the **Manage experiences** table, and you will see the developer mode package in the **Metadata packages** table. Select **Download MBAE Zip Package Edit** to download it.
 
 :::image type="content" source="images/mbae-sxs81-manageassociatedpackages.png" alt-text="Screenshot of the option to download an edited service metadata package.":::
 
-After you’ve download the service metadata package, you must enable test signing because the service metadata package is not signed. To enable test signing, **run bcdedit –set testsigning on** from an elevated command prompt and then restart your computer.
+After you've download the service metadata package, you must enable test signing because the service metadata package is not signed. To enable test signing, **run bcdedit –set testsigning on** from an elevated command prompt and then restart your computer.
 
-After test signing is enabled, copy the \*.devicemetadata-ms file from the service metadata package to the following location: **%ProgramData%\\Microsoft\\Windows\\DeviceMetadataStore\\**<em>culture</em>, where *culture* is the current culture code for your computer.
+After test signing is enabled, copy the \*.devicemetadata-ms file from the service metadata package to the following location: **%ProgramData%\\Microsoft\\Windows\\DeviceMetadataStore\\**\<*culture*>, where \<*culture*> is the current culture code for your computer.
 
 ### Test a service metadata package in preview mode
 
-If the service metadata package is in preview mode, you must create the PreviewKey registry entry on your test computer. For more info about configuring the PreviewKey registry entry, see [Creating a Preview Package](../dashboard/index.yml).
+If the service metadata package is in preview mode, you must create the PreviewKey registry entry on your test computer. For more info about configuring the PreviewKey registry entry, see [Creating a Preview Package](../dashboard/index.md).
 
 > [!NOTE]
 > You do not have to enable test signing to test a service metadata package that is in preview mode.
@@ -253,17 +229,14 @@ After the PreviewKey registry entry is created, plug in your mobile broadband de
 When service metadata is installed on a PC, the values contained in the metadata are stored in many different places, including the registry, metadata cache, metadata store, WWAN profiles and dev node. This can make it challenging to repeat multiple tests with the same, or different, metadata packages. To ensure that the service metadata is installed correctly, you should clear any existing service metadata. You can clear existing service metadata by setting up your test computer to run a PowerShell script that removes all traces. First, you must set up the environment on your test computer:
 
 > [!NOTE]
-> This will not work on a Windows RT device. Use the steps in the procedure named “To clear service metadata on a device running Windows RT”.
+> This will not work on a Windows RT device. Use the steps in the procedure named "To clear service metadata on a device running Windows RT".
 
-**To set up the environment for clearing service metadata**
+#### To set up the environment for clearing service metadata
 
 1. Download psexec.exe (<https://go.microsoft.com/fwlink/p/?linkid=330071>), and then extract it to a folder.
-
-2. Download and install the Windows Driver Kit Windows 8.1 (<https://go.microsoft.com/fwlink/?LinkId=330072>).
-
-3. Navigate to where the WDK files are installed. The default location is **C:\\Program Files (x86)\\Windows Kits\\8.1\\Tools**. If your test computer is running x86, copy devcon.exe from the x86 folder into the same folder as psexec.exe. If your test computer is running x64, copy devcon.exe from the x64 folder.
-
-4. Save the following script as MetadataRemovalScript.ps1 in the same folder as Devcon.exe and PsExec.exe.
+1. Download and install the Windows Driver Kit Windows 8.1 (<https://go.microsoft.com/fwlink/?LinkId=330072>).
+1. Navigate to where the WDK files are installed. The default location is **C:\\Program Files (x86)\\Windows Kits\\8.1\\Tools**. If your test computer is running x86, copy devcon.exe from the x86 folder into the same folder as psexec.exe. If your test computer is running x64, copy devcon.exe from the x64 folder.
+1. Save the following script as MetadataRemovalScript.ps1 in the same folder as Devcon.exe and PsExec.exe.
 
     > [!NOTE]
     > In the **Save as type** box, make sure to select **All files (\*.\*)** before saving the file.
@@ -362,7 +335,6 @@ foreach($MBAdapter in $MBAdapters)
    Enable-NetAdapter -Name $MBAdapter.Name -Confirm:$false
 }
 
-
 Write-Host "END of Script"
 
 # DEVICE SHOULD BE CONNECTED TO MACHINE
@@ -402,7 +374,6 @@ Write-Host ""
 Write-Host "Please remove the MB device from the system and press any key to continue"
 $keypress = $host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
 
-
 Write-Host "Removing MBAE metadata packages in cache and store"
 #Find Package Ids
 $MBAEPackageRegKeyHive = "HKLM:\SOFTWARE\Microsoft\WwanSvc\MobileBroadbandAccounts\Accounts\"
@@ -438,67 +409,52 @@ if(Test-Path $MBAERegKeyPath)
     Remove-Item -Path $MBAERegKeyPath -Recurse
 }
 
-
 Write-Host "END"
 ```
 
 After the environment is set up, run the following steps each time that you want to clear any existing service metadata:
 
-**To clear the service metadata**
+#### To clear the service metadata
 
 1. Ensure that the mobile broadband device is plugged into your test computer.
+1. From an elevated command prompt, navigate to the folder where you extracted psexec.exe, and then run **psexec /s /i powershell**
+1. In the PowerShell command prompt, navigate to the folder where you extracted psexec.exe.
+1. Type **set-executionpolicy unrestricted** and then press Enter.
+1. Type **Y** and then Enter.
+1. Type **.\\MetadataRemovalScript.ps1** and then press Enter.
+1. When prompted, remove the mobile broadband device, and then press Enter.
+1. Repeat these steps each time you want to clear the service metadata from your test computer.
 
-2. From an elevated command prompt, navigate to the folder where you extracted psexec.exe, and then run **psexec /s /i powershell**
-
-3. In the PowerShell command prompt, navigate to the folder where you extracted psexec.exe.
-
-4. Type **set-executionpolicy unrestricted** and then press Enter.
-
-5. Type **Y** and then Enter.
-
-6. Type **.\\MetadataRemovalScript.ps1** and then press Enter.
-
-7. When prompted, remove the mobile broadband device, and then press Enter.
-
-8. Repeat these steps each time you want to clear the service metadata from your test computer.
-
-**To clear service metadata on a device running Windows RT**
+#### To clear service metadata on a device running Windows RT
 
 1. Remove the software device nodes.
 
    1. In Device Manager, click **View**, and then click **Show hidden devices**.
+   1. Expand Software devices.
+   1. Right-click the following device nodes, and then click **Uninstall**: **Windows.Devices.Sms.SmsDevice** and **Windows.Networking/NetworkOperators.MobileBroadbandAccount**
 
-   2. Expand Software devices.
-
-   3. Right-click the following device nodes, and then click **Uninstall**: **Windows.Devices.Sms.SmsDevice** and **Windows.Networking/NetworkOperators.MobileBroadbandAccount**
-
-2. Remove all mobile broadband profiles from all interfaces.
+1. Remove all mobile broadband profiles from all interfaces.
 
    1. From an elevated command prompt, type **netsh mbn sho pro i=\\***
+   1. For each of the profiles, type **netsh mbn delete profile name = "The profile name here" i=\\*** and then press Enter.
 
-   2. For each of the profiles, type **netsh mbn delete profile name = “The profile name here” i=\\*** and then press Enter.
-
-3. Disable all mobile broadband adapters.
+1. Disable all mobile broadband adapters.
 
    1. In Device Manager, expand **Network adapters**.
+   1. Right-click each mobile broadband device, and then click **Disable**.
 
-   2. Right-click each mobile broadband device, and then click **Disable**.
+1. From an elevated command prompt, stop the DSM service by typing **sc stop dsmsvc** and then press Enter.
+1. Remove your service metadata packages from the device metadata store by deleting any folder that contains your service metadata package from **%ProgramData%\\Microsoft\\Windows\\DeviceMetadataStore**. You can identify service metadata packages by looking for the MobileBroadbandInfo.xml file.
 
-4. From an elevated command prompt, stop the DSM service by typing **sc stop dsmsvc** and then press Enter.
-
-5. Remove your service metadata packages from the device metadata store by deleting any folder that contains your service metadata package from **%ProgramData%\\Microsoft\\Windows\\DeviceMetadataStore**. You can identify service metadata packages by looking for the MobileBroadbandInfo.xml file.
-
-6. Delete all WWAN SVC MBAE registry entries.
+1. Delete all WWAN SVC MBAE registry entries.
 
    1. In Registry Editor, delete the following registry entry and all child entries: HKEY\_LOCAL\_MACHINE\\Software\\Microsoft\\WwanSvc\\MobileBroadbandAccounts.
+   1. If you don't have access to delete the registry entry, you must give yourself Full Control permissions.
 
-   2. If you don’t have access to delete the registry entry, you must give yourself Full Control permissions.
-
-7. Enable all mobile broadband adapters.
+1. Enable all mobile broadband adapters.
 
    1. In Device Manager, expand **Network adapters**.
-
-   2. Right-click each mobile broadband device, and then click **Enable**.
+   1. Right-click each mobile broadband device, and then click **Enable**.
 
 ### 5-Publish the service metadata package
 
@@ -517,11 +473,8 @@ You can edit a service metadata package by using the Manage Experiences page of 
 Open the networks list and look for your mobile broadband network. If the network is listed by using the name and icon that you used in the service metadata package **ServiceInfo.xml** file, the package is correctly parsed. If you are updating a service metadata package that has the same name and icon, or if the name or icon has not appeared in the list after about approximately one minute, you should perform additional steps, as discussed here:
 
 - Force a metadata refresh
-
 - Check the metadata cache
-
 - Check the registry
-
 - Check the WWAN Logs
 
 ### Force a metadata refresh
@@ -529,13 +482,11 @@ Open the networks list and look for your mobile broadband network. If the networ
 Some parts of the metadata and mobile broadband app systems rely on network access, which can fail and leave the computer in an inconsistent state. If this happens, you can encounter a situation where service metadata is not installed or the mobile broadband app is not installed. The system periodically tries to remedy the situation, but to conserve power, retries are fairly infrequent (just a few times a day). Instead of waiting for the next retry, you can manually force a refresh to happen immediately. To do this, perform the following steps:
 
 1. Open the desktop **Control Panel**.
+1. Open **Devices and Printers**.
+1. From the **View** menu, click **Refresh**, or press the **F5** key. This action causes metadata to be reparsed and background events to be re-registered.
 
-2. Open **Devices and Printers**.
-
-3. From the **View** menu, click **Refresh**, or press the **F5** key. This action causes metadata to be reparsed and background events to be re-registered.
-
-**Important**  
-If a service metadata package has already been successfully parsed, the system will treat this refresh as a metadata update. In this case, your metadata package must have a different GUID in its filename and an updated timestamp in the [LastModifiedDate](lastmodifieddate.md) element of **PackageInfo.xml**.
+> [!IMPORTANT]
+> If a service metadata package has already been successfully parsed, the system will treat this refresh as a metadata update. In this case, your metadata package must have a different GUID in its filename and an updated timestamp in the [LastModifiedDate](lastmodifieddate.md) element of **PackageInfo.xml**.
 
 ### Check the metadata cache
 
@@ -543,34 +494,27 @@ If a metadata refresh did not fix the problem, make sure that the service metada
 
 1. Navigate to **%programdata%\\Microsoft\\Windows\\DeviceMetadataCache\\dmrccache\\**<em>culture</em>, where *culture* is the culture code for the current culture of your test computer (for example, **en-us** or **es-es**).
 
-2. Look for a folder that has the same name as your metadata package (without the **.devicemetadata-ms** extension). If this directory does not exist, it can mean one of four things:
+1. Look for a folder that has the same name as your metadata package (without the **.devicemetadata-ms** extension). If this directory does not exist, it can mean one of four things:
 
    - The service metadata package is corrupt.
-
    - The service metadata package does not have the correct Hardware IDs.
-
    - The mobile broadband device is not in a state where metadata can be downloaded, or you plugged in the device before you copied the service metadata package.
-
    - A problem occurred when checking the digital signature on the metadata package. This is usually caused by not having test signing enabled on your test computer.
 
-If you’re sure that the package is not corrupted and that you first plugged in the mobile broadband device after you copied the service metadata package, check the IMSI ranges. It’s very easy to type in too many or too few 0s or 9s. If the problem persists after confirming or correcting these items, you must look at the registry.
+If you're sure that the package is not corrupted and that you first plugged in the mobile broadband device after you copied the service metadata package, check the IMSI ranges. It's very easy to type in too many or too few 0s or 9s. If the problem persists after confirming or correcting these items, you must look at the registry.
 
 ### Check the registry
 
-**Warning**  
-You should not edit registry data that does not belong to your application unless it is absolutely necessary. If there is an error in the registry, your system might not function properly. Do not, under any circumstances, delete the **MobileBroadbandAccounts** registry key. Windows will not re-create it and you will break the feature.
+> [!WARNING]
+> You should not edit registry data that does not belong to your application unless it is absolutely necessary. If there is an error in the registry, your system might not function properly. Do not, under any circumstances, delete the **MobileBroadbandAccounts** registry key. Windows will not re-create it and you will break the feature.
 
 Perform the following steps to check the registry:
 
 1. Open Registry Editor.
-
-2. Go to **HKLM\\SOFTWARE\\Microsoft\\WwanSvc\\MobileBroadbandAccounts**.
-
-3. Inside this registry key, look for three other keys: **Accounts**, **NetworkInterfaceBindings**, and **Data**. These keys do not exist by default; they are automatically created the first time that a mobile broadband device is inserted, turned on, or connected.
-
-4. If the **Accounts** or **NetworkInterfaceBindings** keys do not exist and you have already plugged in or turned on your mobile broadband adapter, check the WWAN logs.
-
-5. If some or all of these keys exist, expand the **Accounts** key in the **Tree** view. One or more registry keys that have names similar to GUIDs should exist inside it. The registry tree entries should be similar to the registry tree that is displayed below:
+1. Go to **HKLM\\SOFTWARE\\Microsoft\\WwanSvc\\MobileBroadbandAccounts**.
+1. Inside this registry key, look for three other keys: **Accounts**, **NetworkInterfaceBindings**, and **Data**. These keys do not exist by default; they are automatically created the first time that a mobile broadband device is inserted, turned on, or connected.
+1. If the **Accounts** or **NetworkInterfaceBindings** keys do not exist and you have already plugged in or turned on your mobile broadband adapter, check the WWAN logs.
+1. If some or all of these keys exist, expand the **Accounts** key in the **Tree** view. One or more registry keys that have names similar to GUIDs should exist inside it. The registry tree entries should be similar to the registry tree that is displayed below:
 
     :::image type="content" source="images/fig2-registryentries-for-parsedmobilebroadbandaccount.png" alt-text="Screenshot of registry entries for a parsed mobile broadband account.":::
 
@@ -586,41 +530,40 @@ If there are no **Accounts** or **NetworkInterfaceBindings** registry keys under
 
 1. Unplug or turn off your mobile broadband device (if the device is embedded, disable it in the **Device Manager**).
 
-2. Delete the following registry keys:
+1. Delete the following registry keys:
 
     - **HKLM\\SOFTWARE\\Microsoft\\WwanSvc\\MobileBroadbandAccounts\\Accounts**
-
     - **HKLM\\SOFTWARE\\Microsoft\\WwanSvc\\MobileBroadbandAccounts\\NetworkInterfaceBindings**
 
-    **Warning**  
-    Do not, under any circumstances, delete the **HKLM\\SOFTWARE\\Microsoft\\WwanSvc\\MobileBroadbandAccounts\\** registry key. Windows will not re-create it and you will break the feature.
+    > [!WARNING]
+    > Do not, under any circumstances, delete the **HKLM\\SOFTWARE\\Microsoft\\WwanSvc\\MobileBroadbandAccounts\\** registry key. Windows will not re-create it and you will break the feature.
 
 There are two types of entries that are of interest in the logs: account management WWAN service entries log entries, and parser task entries. The first type can help debug issues that are caused by problems with the networking hardware, and the second type can help debug metadata parsing issues.
 
 Account management WWAN service entries log entries for a network that is successfully processed are similar to the following:
 
-```syntax
-[0]02CC.0CD0::‎2012‎-‎01‎-‎04 09:22:26.567 [Microsoft-Windows-WWAN-SVC-EVENTS]Account Management: Account updater started for network interface {7a0a0dce-0a51-471a-8c16-6e767cd0b861. 
-[0]02CC.0CD0::‎2012‎-‎01‎-‎04 09:22:26.567 [Microsoft-Windows-WWAN-SVC-EVENTS]Account Management: Getting home provider ID from hardware device for network interface {7A0A0DCE-0A51-471A-8C16-6E767CD0B861}.  Provider ID is "234567". 
-[0]02CC.0CD0::‎2012‎-‎01‎-‎04 09:22:26.567 [Microsoft-Windows-WWAN-SVC-EVENTS]Account Management: Getting home provider name from hardware device for network interface {7A0A0DCE-0A51-471A-8C16-6E767CD0B861}.  Provider name is "MS GSM". 
-[0]02CC.0CD0::‎2012‎-‎01‎-‎04 09:22:26.586 [Microsoft-Windows-WWAN-SVC-EVENTS]Account Management: Network identity not recognized, assigning new network account ID. 
-[0]02CC.0CD0::‎2012‎-‎01‎-‎04 09:22:26.597 [Microsoft-Windows-WWAN-SVC-EVENTS]Account Management: Devnode create/update started. 
-[0]02CC.0CD0::‎2012‎-‎01‎-‎04 09:22:26.617 [Microsoft-Windows-WWAN-SVC-EVENTS]Account Management: Devnode create/update finished. 
-[0]02CC.0CD0::‎2012‎-‎01‎-‎04 09:22:26.617 [Microsoft-Windows-WWAN-SVC-EVENTS]Account Management: Data store create/update started. 
-[0]02CC.0CD0::‎2012‎-‎01‎-‎04 09:22:26.707 [Microsoft-Windows-WWAN-SVC-EVENTS]Account Management: Data store create/update finished. 
-[0]02CC.0CD0::‎2012‎-‎01‎-‎04 09:22:26.707 [Microsoft-Windows-WWAN-SVC-EVENTS]Account Management: Account updater finished for network interface {7a0a0dce-0a51-471a-8c16-6e767cd0b861}.
+```output
+[0]02CC.0CD0::2012-01-04 09:22:26.567 [Microsoft-Windows-WWAN-SVC-EVENTS]Account Management: Account updater started for network interface {7a0a0dce-0a51-471a-8c16-6e767cd0b861. 
+[0]02CC.0CD0::2012-01-04 09:22:26.567 [Microsoft-Windows-WWAN-SVC-EVENTS]Account Management: Getting home provider ID from hardware device for network interface {7A0A0DCE-0A51-471A-8C16-6E767CD0B861}.  Provider ID is "234567". 
+[0]02CC.0CD0::2012-01-04 09:22:26.567 [Microsoft-Windows-WWAN-SVC-EVENTS]Account Management: Getting home provider name from hardware device for network interface {7A0A0DCE-0A51-471A-8C16-6E767CD0B861}.  Provider name is "MS GSM". 
+[0]02CC.0CD0::2012-01-04 09:22:26.586 [Microsoft-Windows-WWAN-SVC-EVENTS]Account Management: Network identity not recognized, assigning new network account ID. 
+[0]02CC.0CD0::2012-01-04 09:22:26.597 [Microsoft-Windows-WWAN-SVC-EVENTS]Account Management: Devnode create/update started. 
+[0]02CC.0CD0::2012-01-04 09:22:26.617 [Microsoft-Windows-WWAN-SVC-EVENTS]Account Management: Devnode create/update finished. 
+[0]02CC.0CD0::2012-01-04 09:22:26.617 [Microsoft-Windows-WWAN-SVC-EVENTS]Account Management: Data store create/update started. 
+[0]02CC.0CD0::2012-01-04 09:22:26.707 [Microsoft-Windows-WWAN-SVC-EVENTS]Account Management: Data store create/update finished. 
+[0]02CC.0CD0::2012-01-04 09:22:26.707 [Microsoft-Windows-WWAN-SVC-EVENTS]Account Management: Account updater finished for network interface {7a0a0dce-0a51-471a-8c16-6e767cd0b861}.
 ```
 
 You can find these entries by searching the log for **Account Management**. In this case, the most important entries are **Data store create/update started** and **Data store create/update finished**. If these entries exist and have no error messages, the hardware is behaving correctly. (The data store that is referred to here contains the registry keys that are discussed in Check the registry.)
 
 By contrast, on a device where the SIM is removed, the entries typically look like the following:
 
-```syntax
-[0]02CC.03E4::‎2012‎-‎01‎-‎04 09:29:50.309 [Microsoft-Windows-WWAN-SVC-EVENTS]Account Management: Account updater started for network interface {7a0a0dce-0a51-471a-8c16-6e767cd0b861}. 
-[0]02CC.03E4::‎2012‎-‎01‎-‎04 09:29:50.309 [Microsoft-Windows-WWAN-SVC-EVENTS]Account Management: Detected removal of SIM from device bound to network interface {7A0A0DCE-0A51-471A-8C16-6E767CD0B861}. 
-[0]02CC.03E4::‎2012‎-‎01‎-‎04 09:29:50.309 [Microsoft-Windows-WWAN-SVC-EVENTS]Account Management: Devnode create/update started. 
-[0]02CC.03E4::‎2012‎-‎01‎-‎04 09:29:50.309 [Microsoft-Windows-WWAN-SVC-EVENTS]Account Management: Devnode create/update finished. 
-[0]02CC.03E4::‎2012‎-‎01‎-‎04 09:29:50.309 [Microsoft-Windows-WWAN-SVC-EVENTS]Account Management: Account updater finished for network interface {7a0a0dce-0a51-471a-8c16-6e767cd0b861}. 
+```output
+[0]02CC.03E4::2012-01-04 09:29:50.309 [Microsoft-Windows-WWAN-SVC-EVENTS]Account Management: Account updater started for network interface {7a0a0dce-0a51-471a-8c16-6e767cd0b861}. 
+[0]02CC.03E4::2012-01-04 09:29:50.309 [Microsoft-Windows-WWAN-SVC-EVENTS]Account Management: Detected removal of SIM from device bound to network interface {7A0A0DCE-0A51-471A-8C16-6E767CD0B861}. 
+[0]02CC.03E4::2012-01-04 09:29:50.309 [Microsoft-Windows-WWAN-SVC-EVENTS]Account Management: Devnode create/update started. 
+[0]02CC.03E4::2012-01-04 09:29:50.309 [Microsoft-Windows-WWAN-SVC-EVENTS]Account Management: Devnode create/update finished. 
+[0]02CC.03E4::2012-01-04 09:29:50.309 [Microsoft-Windows-WWAN-SVC-EVENTS]Account Management: Account updater finished for network interface {7a0a0dce-0a51-471a-8c16-6e767cd0b861}. 
 ```
 
 > [!NOTE]
@@ -628,47 +571,47 @@ By contrast, on a device where the SIM is removed, the entries typically look li
 
 If the hardware was successfully processed, but your logo or name do not display in the networks list, there might be a problem with the metadata package. This can be investigated by using the parser task entries in the log. To find these entries, search for **Parser-Task**. Log entries for a successful parse typically look like the following:
 
-```syntax
-[0]0DA8.0A2C::‎2012‎-‎01‎-‎04 09:22:32.007 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]Parser task started. 
-[0]0DA8.0A2C::‎2012‎-‎01‎-‎04 09:22:32.030 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]Parsing metadata for device container with id "{972238E7-36F4-11E1-BC81-00155DE96B01}" for culture "en-US". 
-[0]0DA8.0A2C::‎2012‎-‎01‎-‎04 09:22:32.297 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]Starting parse of mobile broadband service information file. 
-[0]0DA8.0A2C::‎2012‎-‎01‎-‎04 09:22:32.297 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]Metadata package contains no data for culture "en-US". Using fallback data. 
-[0]0DA8.0A2C::‎2012‎-‎01‎-‎04 09:22:32.356 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]Finished parse of mobile broadband service information file. 
-[0]0DA8.0A2C::‎2012‎-‎01‎-‎04 09:22:32.356 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]Starting update of stored network account information. 
-[0]0DA8.0A2C::‎2012‎-‎01‎-‎04 09:22:32.377 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]The mobile broadband account now contains service provider information. 
-[0]0DA8.0A2C::‎2012‎-‎01‎-‎04 09:22:32.378 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]Finished update of stored network account information. 
-[0]0DA8.0A2C::‎2012‎-‎01‎-‎04 09:22:32.378 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]Applying WWAN profiles for service provider Contoso GSM. 
-[0]0DA8.0A2C::‎2012‎-‎01‎-‎04 09:22:32.378 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]Starting creation and/or update of WWAN profiles. 
-[0]02CC.0CD0::‎2012‎-‎01‎-‎04 09:22:32.512 [Microsoft-Windows-WWAN-SVC-EVENTS]WWAN Service event: Profile Update Notification received 
-[0]02CC.0CD0::‎2012‎-‎01‎-‎04 09:22:32.519 [Microsoft-Windows-WWAN-SVC-EVENTS]WWAN Service event: Complete Scanning 
-[0]02CC.0CD0::‎2012‎-‎01‎-‎04 09:22:32.519 [Microsoft-Windows-WWAN-SVC-EVENTS]WWAN Service event: WWAN Interface information 
-[0]02CC.0CD0::‎2012‎-‎01‎-‎04 09:22:32.586 [Microsoft-Windows-WWAN-SVC-EVENTS]WWAN Service event: Profile Update Notification received 
-[0]02CC.0CD0::‎2012‎-‎01‎-‎04 09:22:32.651 [Microsoft-Windows-WWAN-SVC-EVENTS]WWAN Service event: Profile Update Notification received 
-[0]0DA8.0A2C::‎2012‎-‎01‎-‎04 09:22:32.659 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]Finished creation and/or update of WWAN profiles. 
-[0]0DA8.0A2C::‎2012‎-‎01‎-‎04 09:22:32.659 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]WWAN profiles applied successfully for service provider Contoso GSM. 
-[0]0DA8.0A2C::‎2012‎-‎01‎-‎04 09:22:32.659 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]Adding trusted provisioning certificates for service provider Contoso GSM. 
-[0]0DA8.0A2C::‎2012‎-‎01‎-‎04 09:22:32.659 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]Starting setting of trusted certificates for network provisioning. 
-[0]0DA8.0A2C::‎2012‎-‎01‎-‎04 09:22:33.016 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]Finished setting of trusted certificates for network provisioning. 
-[0]0DA8.0A2C::‎2012‎-‎01‎-‎04 09:22:33.016 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]Trusted provisioning certificates added successfully for service provider Contoso GSM. 
-[0]0DA8.0A2C::‎2012‎-‎01‎-‎04 09:22:33.017 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]Parser task finished. 
-[0]0DA8.0A2C::‎2012‎-‎01‎-‎04 09:22:33.017 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]MbaeParserTask completed successfully. 
+```output
+[0]0DA8.0A2C::2012-01-04 09:22:32.007 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]Parser task started. 
+[0]0DA8.0A2C::2012-01-04 09:22:32.030 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]Parsing metadata for device container with id "{972238E7-36F4-11E1-BC81-00155DE96B01}" for culture "en-US". 
+[0]0DA8.0A2C::2012-01-04 09:22:32.297 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]Starting parse of mobile broadband service information file. 
+[0]0DA8.0A2C::2012-01-04 09:22:32.297 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]Metadata package contains no data for culture "en-US". Using fallback data. 
+[0]0DA8.0A2C::2012-01-04 09:22:32.356 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]Finished parse of mobile broadband service information file. 
+[0]0DA8.0A2C::2012-01-04 09:22:32.356 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]Starting update of stored network account information. 
+[0]0DA8.0A2C::2012-01-04 09:22:32.377 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]The mobile broadband account now contains service provider information. 
+[0]0DA8.0A2C::2012-01-04 09:22:32.378 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]Finished update of stored network account information. 
+[0]0DA8.0A2C::2012-01-04 09:22:32.378 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]Applying WWAN profiles for service provider Contoso GSM. 
+[0]0DA8.0A2C::2012-01-04 09:22:32.378 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]Starting creation and/or update of WWAN profiles. 
+[0]02CC.0CD0::2012-01-04 09:22:32.512 [Microsoft-Windows-WWAN-SVC-EVENTS]WWAN Service event: Profile Update Notification received 
+[0]02CC.0CD0::2012-01-04 09:22:32.519 [Microsoft-Windows-WWAN-SVC-EVENTS]WWAN Service event: Complete Scanning 
+[0]02CC.0CD0::2012-01-04 09:22:32.519 [Microsoft-Windows-WWAN-SVC-EVENTS]WWAN Service event: WWAN Interface information 
+[0]02CC.0CD0::2012-01-04 09:22:32.586 [Microsoft-Windows-WWAN-SVC-EVENTS]WWAN Service event: Profile Update Notification received 
+[0]02CC.0CD0::2012-01-04 09:22:32.651 [Microsoft-Windows-WWAN-SVC-EVENTS]WWAN Service event: Profile Update Notification received 
+[0]0DA8.0A2C::2012-01-04 09:22:32.659 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]Finished creation and/or update of WWAN profiles. 
+[0]0DA8.0A2C::2012-01-04 09:22:32.659 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]WWAN profiles applied successfully for service provider Contoso GSM. 
+[0]0DA8.0A2C::2012-01-04 09:22:32.659 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]Adding trusted provisioning certificates for service provider Contoso GSM. 
+[0]0DA8.0A2C::2012-01-04 09:22:32.659 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]Starting setting of trusted certificates for network provisioning. 
+[0]0DA8.0A2C::2012-01-04 09:22:33.016 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]Finished setting of trusted certificates for network provisioning. 
+[0]0DA8.0A2C::2012-01-04 09:22:33.016 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]Trusted provisioning certificates added successfully for service provider Contoso GSM. 
+[0]0DA8.0A2C::2012-01-04 09:22:33.017 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]Parser task finished. 
+[0]0DA8.0A2C::2012-01-04 09:22:33.017 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]MbaeParserTask completed successfully. 
 ```
 
 These logs show that the **MobileBroadbandInfo.xml** file was correctly parsed, that the parser task applied the WWAN profiles (together with the WWAN service logging that successfully updated the profiles), and that the parser task set the trusted provisioning certificates mentioned in **MobileBroadbandInfo.xml**.
 
 If any part of the process failed, that failure is logged. For example, if the digital signature check fails on the service provider icon file, log entries typically look like the following:
 
-```syntax
-[0]0F24.0C70::‎2012‎-‎01‎-‎04 10:09:49.271 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]Parser task started. 
-[0]0F24.0C70::‎2012‎-‎01‎-‎04 10:09:49.288 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]Parsing metadata for device container with id "{97223B34-36F4-11E1-BC81-00155DE96B01}" for culture "en-US". 
-[0]0F24.0C70::‎2012‎-‎01‎-‎04 10:09:49.483 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]Starting parse of mobile broadband service information file. 
-[0]0F24.0C70::‎2012‎-‎01‎-‎04 10:09:49.483 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]Metadata package contains no data for culture "en-US". Using fallback data. 
-[0]0F24.0C70::‎2012‎-‎01‎-‎04 10:09:49.547 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]Finished parse of mobile broadband service information file. 
-[0]0F24.0C70::‎2012‎-‎01‎-‎04 10:09:49.547 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]Starting update of stored network account information. 
-[0]0F24.0C70::‎2012‎-‎01‎-‎04 10:09:49.688 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]Digital signature verification failed for file "c:\programdata\microsoft\windows\devicemetadatacache\dmrccache\en-us\B68264FF-E4D1-49B1-AB5F-2B9C1C16EF5D\ServiceInformation\ContosoBroadband.ico". 
-[0]0F24.0C70::‎2012‎-‎01‎-‎04 10:09:49.690 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]Finished update of stored network account information. 
-[0]0F24.0C70::‎2012‎-‎01‎-‎04 10:09:49.692 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]Parser task finished. 
-[0]0F24.0C70::‎2012‎-‎01‎-‎04 10:09:49.692 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]MbaeParserTask did not complete successfully.  Error is 0x80070306: One or more errors occurred while processing the request. 
+```output
+[0]0F24.0C70::2012-01-04 10:09:49.271 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]Parser task started. 
+[0]0F24.0C70::2012-01-04 10:09:49.288 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]Parsing metadata for device container with id "{97223B34-36F4-11E1-BC81-00155DE96B01}" for culture "en-US". 
+[0]0F24.0C70::2012-01-04 10:09:49.483 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]Starting parse of mobile broadband service information file. 
+[0]0F24.0C70::2012-01-04 10:09:49.483 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]Metadata package contains no data for culture "en-US". Using fallback data. 
+[0]0F24.0C70::2012-01-04 10:09:49.547 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]Finished parse of mobile broadband service information file. 
+[0]0F24.0C70::2012-01-04 10:09:49.547 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]Starting update of stored network account information. 
+[0]0F24.0C70::2012-01-04 10:09:49.688 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]Digital signature verification failed for file "c:\programdata\microsoft\windows\devicemetadatacache\dmrccache\en-us\B68264FF-E4D1-49B1-AB5F-2B9C1C16EF5D\ServiceInformation\ContosoBroadband.ico". 
+[0]0F24.0C70::2012-01-04 10:09:49.690 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]Finished update of stored network account information. 
+[0]0F24.0C70::2012-01-04 10:09:49.692 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]Parser task finished. 
+[0]0F24.0C70::2012-01-04 10:09:49.692 [Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]MbaeParserTask did not complete successfully.  Error is 0x80070306: One or more errors occurred while processing the request. 
 ```
 
 Because it is normal for the parser task to run more than one time, you might see more than one set of `[Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task]` log entries. In this case, the sets of entries are typically the same - if they are not the same, it can indicate an intermittent problem.
