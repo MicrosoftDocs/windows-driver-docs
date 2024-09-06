@@ -241,7 +241,7 @@ After test signing is enabled, copy the \*.devicemetadata-ms file from the servi
 
 ### Test a service metadata package in preview mode
 
-If the service metadata package is in preview mode, you must create the PreviewKey registry entry on your test computer. For more info about configuring the PreviewKey registry entry, see [Creating a Preview Package](../dashboard/index.yml).
+If the service metadata package is in preview mode, you must create the PreviewKey registry entry on your test computer. For more info about configuring the PreviewKey registry entry, see [Creating a Preview Package](../dashboard/index.md).
 
 > [!NOTE]
 > You do not have to enable test signing to test a service metadata package that is in preview mode.

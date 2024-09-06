@@ -6,7 +6,7 @@ ms.date: 04/20/2017
 
 # Signing a Driver for Public Release
 
-Before you release a driver package to the public, we recommend that you submit the package for certification. For more information, see [Windows Hardware Certification](/previous-versions/windows/hardware/hck/jj124227(v=vs.85)) and [Hardware Dashboard Services](../dashboard/index.yml). To submit a driver package for certification, you must sign the package with a certificate that you obtain from a trusted certification authority like VeriSign. For more information, see [Get a VeriSign Certificate](../dashboard/index.yml). You will also need a cross certificate, which is provided by Microsoft.
+Before you release a driver package to the public, we recommend that you submit the package for certification. For more information, see [Windows Hardware Certification](/previous-versions/windows/hardware/hck/jj124227(v=vs.85)) and [Hardware Dashboard Services](../dashboard/index.md. To submit a driver package for certification, you must sign the package with a certificate that you obtain from a trusted certification authority like VeriSign. For more information, see [Get a VeriSign Certificate](../dashboard/index.md). You will also need a cross certificate, which is provided by Microsoft.
 
 Suppose you have obtained a pair of files from Verisign: a private key file (PVK) and a software publishing certificate (SPC). Also suppose you have a Microsoft Visual Studio solution that contains a driver project named MyDriver and a driver package project named MyDriver Package. To sign your driver package, follow these steps.
 
@@ -48,7 +48,7 @@ When your driver package passes the certification tests, it can be signed by Win
 
 To install on Windows 10, 8.1, 8, and 7, your driver package can have a single SHA1 signature.
 
-Starting in Windows 10, you also need to submit any new Windows 10 kernel mode driver for digital signing on the [Windows Hardware Developer Center Dashboard portal](https://partner.microsoft.com/dashboard).  Both kernel and user mode driver submissions must have a valid [Extended Validation (“EV”) Code Signing Certificate](../dashboard/index.yml).
+Starting in Windows 10, you also need to submit any new Windows 10 kernel mode driver for digital signing on the [Windows Hardware Developer Center Dashboard portal](https://partner.microsoft.com/dashboard).  Both kernel and user mode driver submissions must have a valid [Extended Validation (“EV”) Code Signing Certificate](../dashboard/index.md).
 
 ** Note **  SHA1 deprecation does not apply to drivers.
 
@@ -74,7 +74,7 @@ When you set the driver package properties for production signing, remember to a
 * [Availability of SHA-2 Code Signing Support for Windows 7 and Windows Server 2008 R2](/security-updates/SecurityAdvisories/2015/3033929)
 * [Signing a Driver](signing-a-driver.md)
 * [Windows Hardware Certification](/previous-versions/windows/hardware/hck/jj124227(v=vs.85))
-* [Hardware Dashboard Services](../dashboard/index.yml)
+* [Hardware Dashboard Services](../dashboard/index.md)
 * [Driver Signing Requirements for Windows](/previous-versions/windows/hardware/design/dn653563(v=vs.85))
 * [Cross-Certificates for Kernel Mode Code Signing](../install/cross-certificates-for-kernel-mode-code-signing.md)
 * [Kernel-Mode Code Signing Walkthrough](/previous-versions/windows/hardware/design/dn653569(v=vs.85))

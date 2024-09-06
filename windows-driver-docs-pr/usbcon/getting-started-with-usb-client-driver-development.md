@@ -67,7 +67,7 @@ Driver developers must have coding experience in the C++ programming language an
 
    Discussion list managed by [OSR Online](https://www.osronline.com/) for kernel-mode driver developers.
 
-- [Windows Dev-Center for Hardware Development](../dashboard/index.yml)
+- [Windows Dev-Center for Hardware Development](../dashboard/index.md)
 
    [Windows Driver Kit](../download-the-wdk.md), ensure that your product is reliable and compatible with Windows through the [Windows Hardware Lab Kit](/windows-hardware/test/hlk/), learn [Windows driver samples](../samples/index.md).
 

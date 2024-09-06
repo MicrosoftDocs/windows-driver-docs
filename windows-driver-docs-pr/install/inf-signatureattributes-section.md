@@ -113,7 +113,7 @@ WindowsHello=true
 ## See also
 
 
-[Dashboard Help](../dashboard/index.yml)
+[Dashboard Help](../dashboard/index.md)
 
  
 
