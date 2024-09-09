@@ -66,6 +66,7 @@ A [**DEVPROPCOMPKEY**](devpropcompkey.md) structure that represents a compound k
 A **DEVPROPTYPE** value that indicates the property type. Valid **DEVPROPTYPE** values are constructed from base DEVPROP\_TYPE\_ values, which may be modified by a logical OR with DEVPROP\_TYPEMOD\_ values, as appropriate.
 
 Here are possible DEVPROP\_TYPE\_ values:
+
 | Value | Meaning |
 | -- | -- |
 | [DEVPROP_TYPE_EMPTY](devprop-type-empty.md) 0x00000000 | Nothing, no property data |
@@ -98,6 +99,7 @@ Here are possible DEVPROP\_TYPE\_ values:
 | [DEVPROP_TYPE_STRING_INDIRECT](devprop-type-string-indirect.md) 0x00000019 | String resource (@[path\]&lt;dllname&gt;,-&lt;strId&gt;) |
 
 Here are possible DEVPROP\_TYPEMOD\_ values:
+
 | Value | Meaning |
 | -- | -- |
 | [DEVPROP_TYPEMOD_ARRAY](devprop-typemod-array.md) 0x00001000 | Array of fixed-sized data elements |
