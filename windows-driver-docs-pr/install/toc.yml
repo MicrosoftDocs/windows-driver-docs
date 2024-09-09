@@ -1240,6 +1240,72 @@
   items: 
   - name: "DEFINE_DEVPROPKEY"
     href: define-devpropkey.md
+  - name: "Unified Device Property Model Property Types"
+    items: 
+    - name: "DEVPROP_MASK_TYPE"
+      href: devprop-mask-type.md
+    - name: "DEVPROP_MASK_TYPEMOD"
+      href: devprop-mask-typemod.md
+    - name: "DEVPROP_TYPE_BINARY"
+      href: devprop-type-binary.md
+    - name: "DEVPROP_TYPE_BOOLEAN"
+      href: devprop-type-boolean.md
+    - name: "DEVPROP_TYPE_BYTE"
+      href: devprop-type-byte.md
+    - name: "DEVPROP_TYPE_CURRENCY"
+      href: devprop-type-currency.md
+    - name: "DEVPROP_TYPE_DATE"
+      href: devprop-type-date.md
+    - name: "DEVPROP_TYPE_DECIMAL"
+      href: devprop-type-decimal.md
+    - name: "DEVPROP_TYPE_DEVPROPKEY"
+      href: devprop-type-devpropkey.md
+    - name: "DEVPROP_TYPE_DEVPROPTYPE"
+      href: devprop-type-devproptype.md
+    - name: "DEVPROP_TYPE_DOUBLE"
+      href: devprop-type-double.md
+    - name: "DEVPROP_TYPE_EMPTY"
+      href: devprop-type-empty.md
+    - name: "DEVPROP_TYPE_ERROR"
+      href: devprop-type-error.md
+    - name: "DEVPROP_TYPE_FILETIME"
+      href: devprop-type-filetime.md
+    - name: "DEVPROP_TYPE_FLOAT"
+      href: devprop-type-float.md
+    - name: "DEVPROP_TYPE_GUID"
+      href: devprop-type-guid.md
+    - name: "DEVPROP_TYPE_INT16"
+      href: devprop-type-int16.md
+    - name: "DEVPROP_TYPE_INT32"
+      href: devprop-type-int32.md
+    - name: "DEVPROP_TYPE_INT64"
+      href: devprop-type-int64.md
+    - name: "DEVPROP_TYPE_NTSTATUS"
+      href: devprop-type-ntstatus.md
+    - name: "DEVPROP_TYPE_NULL"
+      href: devprop-type-null.md
+    - name: "DEVPROP_TYPE_SBYTE"
+      href: devprop-type-sbyte.md
+    - name: "DEVPROP_TYPE_SECURITY_DESCRIPTOR"
+      href: devprop-type-security-descriptor.md
+    - name: "DEVPROP_TYPE_SECURITY_DESCRIPTOR_STRING"
+      href: devprop-type-security-descriptor-string.md
+    - name: "DEVPROP_TYPE_STRING"
+      href: devprop-type-string.md
+    - name: "DEVPROP_TYPE_STRING_INDIRECT"
+      href: devprop-type-string-indirect.md
+    - name: "DEVPROP_TYPE_STRING_LIST"
+      href: devprop-type-string-list.md
+    - name: "DEVPROP_TYPE_UINT16"
+      href: devprop-type-uint16.md
+    - name: "DEVPROP_TYPE_UINT32"
+      href: devprop-type-uint32.md
+    - name: "DEVPROP_TYPE_UINT64"
+      href: devprop-type-uint64.md
+    - name: "DEVPROP_TYPEMOD_ARRAY"
+      href: devprop-typemod-array.md
+    - name: "DEVPROP_TYPEMOD_LIST"
+      href: devprop-typemod-list.md
   - name: "Unified Device Property Model Properties"
     items: 
     - name: "DEVPKEY_Device_Address"
@@ -1470,70 +1536,6 @@
     href: devprivate-range.md
   - name: "DEVPRIVATE_RESOURCE"
     href: devprivate-resource.md
-  - name: "DEVPROP_MASK_TYPE"
-    href: devprop-mask-type.md
-  - name: "DEVPROP_MASK_TYPEMOD"
-    href: devprop-mask-typemod.md
-  - name: "DEVPROP_TYPE_BINARY"
-    href: devprop-type-binary.md
-  - name: "DEVPROP_TYPE_BOOLEAN"
-    href: devprop-type-boolean.md
-  - name: "DEVPROP_TYPE_BYTE"
-    href: devprop-type-byte.md
-  - name: "DEVPROP_TYPE_CURRENCY"
-    href: devprop-type-currency.md
-  - name: "DEVPROP_TYPE_DATE"
-    href: devprop-type-date.md
-  - name: "DEVPROP_TYPE_DECIMAL"
-    href: devprop-type-decimal.md
-  - name: "DEVPROP_TYPE_DEVPROPKEY"
-    href: devprop-type-devpropkey.md
-  - name: "DEVPROP_TYPE_DEVPROPTYPE"
-    href: devprop-type-devproptype.md
-  - name: "DEVPROP_TYPE_DOUBLE"
-    href: devprop-type-double.md
-  - name: "DEVPROP_TYPE_EMPTY"
-    href: devprop-type-empty.md
-  - name: "DEVPROP_TYPE_ERROR"
-    href: devprop-type-error.md
-  - name: "DEVPROP_TYPE_FILETIME"
-    href: devprop-type-filetime.md
-  - name: "DEVPROP_TYPE_FLOAT"
-    href: devprop-type-float.md
-  - name: "DEVPROP_TYPE_GUID"
-    href: devprop-type-guid.md
-  - name: "DEVPROP_TYPE_INT16"
-    href: devprop-type-int16.md
-  - name: "DEVPROP_TYPE_INT32"
-    href: devprop-type-int32.md
-  - name: "DEVPROP_TYPE_INT64"
-    href: devprop-type-int64.md
-  - name: "DEVPROP_TYPE_NTSTATUS"
-    href: devprop-type-ntstatus.md
-  - name: "DEVPROP_TYPE_NULL"
-    href: devprop-type-null.md
-  - name: "DEVPROP_TYPE_SBYTE"
-    href: devprop-type-sbyte.md
-  - name: "DEVPROP_TYPE_SECURITY_DESCRIPTOR"
-    href: devprop-type-security-descriptor.md
-  - name: "DEVPROP_TYPE_SECURITY_DESCRIPTOR_STRING"
-    href: devprop-type-security-descriptor-string.md
-  - name: "DEVPROP_TYPE_STRING"
-    href: devprop-type-string.md
-  - name: "DEVPROP_TYPE_STRING_INDIRECT"
-    href: devprop-type-string-indirect.md
-  - name: "DEVPROP_TYPE_STRING_LIST"
-    href: devprop-type-string-list.md
-  - name: "DEVPROP_TYPE_UINT16"
-    href: devprop-type-uint16.md
-  - name: "DEVPROP_TYPE_UINT32"
-    href: devprop-type-uint32.md
-  - name: "DEVPROP_TYPE_UINT64"
-    href: devprop-type-uint64.md
-  - name: "DEVPROP_TYPEMOD_ARRAY"
-    href: devprop-typemod-array.md
-  - name: "DEVPROP_TYPEMOD_LIST"
-    href: devprop-typemod-list.md
   - name: "DEVPROPCOMPKEY"
     href: devpropcompkey.md
   - name: "DEVPROPERTY"
