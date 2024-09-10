@@ -1,6 +1,6 @@
 ---
 title: Get Started Developing Windows Drivers
-description: Learn how to develop Windows drivers, including Desktop, Universal, and Windows Drivers, and understand the importance of DCH Design Principles, Driver Package Isolation, and API Layering for enhanced reliability and future certification.
+description: Learn how to develop Windows drivers, including Desktop, Universal, and Windows Drivers. Understand the importance of DCH Design Principles, Driver Package Isolation, and API Layering for enhanced reliability and future certification.
 ms.date: 09/09/2024
 ai-usage: ai-assisted
 ---
@@ -17,19 +17,19 @@ When developing a driver for the Windows operating system, you have three main o
 
 For information on configuring your build settings, see [Target Platforms](./target-platforms.md).
 
-## Additional requirements for Windows Drivers
+## Extra requirements for Windows Drivers
 
 To ensure your Windows Driver meets the necessary standards, it must comply with the following requirements:
 
-- Adhere to the [DCH Design Principles](dch-principles-best-practices.md).  DCH (Declarative, Componentized, Hardware Support Apps) is a set of design principles that ensures drivers are more reliable, secure, and easier to maintain. By following DCH principles, you can create drivers that are modular and can be updated independently of the operating system, enhancing overall system stability and performance.
+- Adhere to the [DCH Design Principles](dch-principles-best-practices.md). DCH (Declarative, Componentized, Hardware Support Apps) is a set of design principles that ensures drivers are more reliable, secure, and easier to maintain. By following DCH principles, you can create drivers that are modular and can be updated independently of the operating system, enhancing overall system stability and performance.
 
-- Follow the guidelines for [Driver Package Isolation](driver-isolation.md).  Driver Package Isolation ensures that each driver operates within its own isolated environment, reducing the risk of conflicts with other drivers and enhancing system stability. This isolation helps in diagnosing and resolving issues more efficiently, as problems can be traced back to individual drivers without affecting the entire system.
+- Follow the guidelines for [Driver Package Isolation](driver-isolation.md). Driver Package Isolation ensures that each driver operates within its own isolated environment, reducing the risk of conflicts with other drivers and enhancing system stability. This isolation helps in diagnosing and resolving issues more efficiently, as problems can be traced back to individual drivers without affecting the entire system.
 
-- **API Layering Requirements**: Ensure your driver meets the [API Layering Requirements](api-layering.md).  API Layering involves structuring your driver to interact with the operating system through well-defined layers of APIs. This approach promotes modularity and maintainability, making it easier to update or replace individual components without affecting the entire driver. It also enhances compatibility and reduces the risk of introducing bugs when changes are made.
+- **API Layering Requirements**: Ensure your driver meets the [API Layering Requirements](api-layering.md). API Layering involves structuring your driver to interact with the operating system through well-defined layers of APIs. This approach promotes modularity and maintainability, making it easier to update or replace individual components without affecting the entire driver. It also enhances compatibility and reduces the risk of introducing bugs when changes are made.
 
 ## Benefits of meeting Universal and Windows Driver standards
 
-While it is not mandatory for a driver running solely on Windows Desktop to meet the additional requirements for a Universal Driver or Windows Driver, doing so offers several advantages:
+While it isn't mandatory for a driver running solely on Windows Desktop to meet the extra requirements for a Universal Driver or Windows Driver, doing so offers several advantages:
 
 - **Enhanced Serviceability**: Improved ease of maintenance and updates.
 - **Increased Reliability**: Greater stability and performance.
