@@ -12,9 +12,9 @@ Release-signing identifies the publisher of a kernel-mode or user-mode binaries 
 
 Kernel-mode binaries are release-signed through either:
 
-1. Windows Hardware Quality Lab (WHQL also known as Winqual) to release sign a driver package. A WHQL Release Signature is obtained through the Windows Certification Program. The [Windows Hardware Compatibility Program Certification Process](/windows-hardware/design/compatibility/whcp-certification-process) describes the five steps from start to finish on Windows Certification Program. Any questions on the steps in the link above should be directed to [Partner Center dashboard technical support](/windows-hardware/drivers/dashboard/technical-support).
+1. Windows Hardware Quality Lab (WHQL) to release sign a driver package. A WHQL Release Signature is obtained through the Windows Certification Program. The [Windows Hardware Compatibility Program Certification Process](/windows-hardware/design/compatibility/whcp-certification-process) describes the five steps from start to finish on Windows Certification Program. Any questions should be directed to [Partner Center dashboard technical support](/windows-hardware/drivers/dashboard/technical-support).
 
-1. Instead of using the WHQL program, a driver package can be release signed by driver developers and vendors. A release signature is created through a Software Publisher Certificate (SPC). The SPC is obtained from a third-party certificate authority (CA) that is authorized by Microsoft to issue such certificates. Signatures generated with this type of SPC also comply with the PnP driver signing requirements for Windows.
+1. Instead of using the WHQL program, a driver package can be release signed by driver developers and vendors. A release signature is created through a Software Publisher Certificate (SPC). The SPC is obtained from a Microsoft-authorized certificate authority (CA). Signatures generated with this type of SPC also comply with the PnP driver signing requirements for Windows.
 
 Here are the steps needed to release sign a driver package for method 2:
 
@@ -22,17 +22,17 @@ Here are the steps needed to release sign a driver package for method 2:
 
 Release signing requires a code-signing certificate, also referred to as a Software Publisher Certificate (SPC) from a commercial CA.
 
-The [Cross-Certificates for Kernel Mode Code Signing](cross-certificates-for-kernel-mode-code-signing.md) topic provides the list of commercial third-party certificate authorities (CA) authorized by Microsoft. The CA vendors listed must be used to provide a Software Publisher Certificate (SPC) to release sign the driver package.
+The [Cross-Certificates for Kernel Mode Code Signing](cross-certificates-for-kernel-mode-code-signing.md) article provides the list of commercial Microsoft-authorized certificate authorities (CA). The CA vendors listed must be used to provide a Software Publisher Certificate (SPC) to release sign the driver package.
 
-Follow the CA's instructions for how to acquire the SPC and install the private key on the signing computer. Please note that the SPC is a proprietary instrument of the driver vendor who requested it for signing their driver package. The SPC, the private key, and the password must not be shared with anyone outside the requesting vendor's organization.
+Follow the CA's instructions for how to acquire the SPC and install the private key on the signing computer. The SPC is a proprietary instrument of the driver vendor who requested it for signing their driver package. The SPC, the private key, and the password must not be shared with anyone outside the requesting vendor's organization.
 
 ## Cross-Certificates
 
 Excerpt from [Software Publisher Certificate](./deprecation-of-software-publisher-certificates-and-commercial-release-certificates.md):
 
-In addition to obtaining an SPC, you must obtain a cross-certificate that is issued by Microsoft. The cross certificate is used to verify that the CA that issued an SPC is a trusted root authority. A cross-certificate is an X.509 certificate issued by a CA that signs the public key for the root certificate of another CA. Cross-certificates allow the system to have a single trusted Microsoft root authority, but also provide the flexibility to extend the chain of trust to commercial CAs that issue SPCs.
+In addition to obtaining an SPC, you must obtain a cross-certificate issued by Microsoft. The cross certificate is used to verify that the CA that issued an SPC is a trusted root authority. A cross-certificate is an X.509 certificate issued by a CA that signs the public key for the root certificate of another CA. Cross-certificates allow the system to have a single trusted Microsoft root authority, but also provide the flexibility to extend the chain of trust to commercial certificate authorities (CAs) that issue SPCs.
 
-Publishers do not have to distribute a cross-certificate with a [driver package](driver-packages.md). The cross-certificate is included with the digital signature for a driver package's [catalog file](catalog-files.md) or the signature that is embedded in a driver file. Users who install the driver package do not have to perform any additional configuration steps caused by the use of cross-certificates.
+Publishers don't have to distribute a cross-certificate with a [driver package](driver-packages.md). The cross-certificate is included with the digital signature for a driver package's [catalog file](catalog-files.md) or the signature embedded in a driver file. Users who install the driver package don't have to perform any extra configuration steps caused by the use of cross-certificates.
 
 Selected excerpts from [Cross-Certificates for Kernel Mode Code Signing](cross-certificates-for-kernel-mode-code-signing.md):
 
@@ -43,11 +43,11 @@ In Windows, cross-certificates:
 - Allow the operating system kernel to have a single trusted Microsoft root authority.
 - Extend the chain of trust to multiple commercial CAs that issue Software Publisher Certificates (SPCs), which are used for code-signing software for distribution, installation, and loading on Windows
 
-The cross-certificates that are provided here are used with the Windows Driver Kit (WDK) code-signing tools for properly signing kernel-mode software. Digitally signing kernel-mode software is similar to code-signing any software that is published for Windows. Cross-certificates are added to the digital signature by the developer or software publisher when signing the kernel-mode software. The cross-certificate itself is added by the code-signing tools to the digital signature of the binary file or catalog.
+The cross-certificates that are provided here are used with the Windows Driver Kit (WDK) code-signing tools for properly signing kernel-mode software. Digitally signing kernel-mode software is similar to code-signing any software that is published for Windows. The developer or software publisher adds cross-certificates to the digital signature when signing the kernel-mode software. The code-signing tools add the cross-certificate to the digital signature of the binary file or catalog.
 
 ### Selecting the Correct Cross-certificate
 
-Microsoft provides a specific cross-certificate for each CA that issues SPCs for code-signing kernel-mode code. For more information about cross-certificates, see [Cross-Certificates for Kernel Mode Code Signing](cross-certificates-for-kernel-mode-code-signing.md). This topic lists the names of the Microsoft authorized CA vendors and the correct cross-certificate for the root authority that issued your SPC. Locate the correct cross-certificate for the SPC issued by your CA vendor and download the cross-certificate to the signing computer you will be using for release signing, and store it in your driver directory. It is advisable to provide the absolute path to this Certificate when using it in any signing command.
+Microsoft provides a specific cross-certificate for each CA that issues SPCs for code-signing kernel-mode code. For more information about cross-certificates, see [Cross-Certificates for Kernel Mode Code Signing](cross-certificates-for-kernel-mode-code-signing.md). This article lists the names of the Microsoft authorized CA vendors and the correct cross-certificate for the root authority that issued your SPC. Locate the correct cross-certificate for the SPC issued by your CA vendor and download the cross-certificate to the signing computer you're using for release signing, and store it in your driver directory. Provide the absolute path to this Certificate when using it in any signing command.
 
 ## Installing SPC Information in the Personal Certificate Store
 
@@ -85,23 +85,23 @@ The following describes the parameters that are used in the [**Pvk2Pfx**](../dev
 - The **-spc** *myspcfile.spc* parameter specifies an *.spc* file or the **-spc**  *mycerfile.cer* parameter specifies a *.cer* file.
 - The **-pfx** *mypfxfile.pfx* option specifies the name of a *.pfx* file.
 - The **-po** *pfxpassword* option specifies a password for the *.pfx* file.
-- The **-f** option configures Pvk2Pfx to replace a existing *.pfx* file if one exists.
+- The **-f** option configures Pvk2Pfx to replace an existing *.pfx* file if one exists.
 
 > [!IMPORTANT]
 > You should protect your pvk and pfx files with strong passwords.
 
 ## Installing a .pfx File in the Personal Certificate Store
 
-For signing kernel-mode drivers, the certificates and key stored in the .pfx file must be imported into the local Personal certificate store. Signtool does not support using .pfx files for signing kernel-mode drivers. The restriction is due to a conflict in adding cross-certificates in the signature while using a certificate from a .pfx file
+For signing kernel-mode drivers, the certificates and key stored in the .pfx file must be imported into the local Personal certificate store. Signtool doesn't support using .pfx files for signing kernel-mode drivers. The restriction is due to a conflict in adding cross-certificates in the signature while using a certificate from a .pfx file
 
-*Final excerpts from* [Software Publisher Certificate](./deprecation-of-software-publisher-certificates-and-commercial-release-certificates.md):
+Final excerpts from [Software Publisher Certificate](./deprecation-of-software-publisher-certificates-and-commercial-release-certificates.md):
 
 After obtaining a *.pfx* file from a CA, or creating a *.pfx* file from a *.pvk* and either an .*spc* or a *.cer* file, add the information in the *.pfx* file to the Personal certificate store of the local computer that signs the driver. You can use the Certificate Import Wizard to import the information in the *.pfx* file to the Personal certificate store, as follows:
 
-1. Locate the *.pfx* file in Windows Explorer and double-click the file to open the Certificate Import Wizard.
-1. Follow the procedure in the Certificate Import Wizard to import the code-signing certificate into the Personal certificate store.
+1. To open the Certificate Import Wizard, locate the *.pfx* file in Windows Explorer and double-click the file.
+1. To import the code-signing certificate into the Personal certificate store, follow the procedure in the Certificate Import Wizard.
 
-*Excerpt from* [Importing an SPC into a Certificate Store](importing-an-spc-into-a-certificate-store.md):
+Excerpt from [Importing an SPC into a Certificate Store](importing-an-spc-into-a-certificate-store.md):
 
 An alternative way to import the *.pfx* file into the local Personal certificate store is with the [CertUtil](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc732443(v=ws.10)) command-line utility. The following command-line example uses CertUtil to import the *abc.pfx* file into the Personal certificate store:
 
@@ -120,15 +120,15 @@ Where:
 Use the MMC Certificates snap-in (certmgr.msc) to view the certificates in the Personal certificate store.
 
 1. Launch the Certificates snap-in, certmgr.msc.
-1. In the snap-in's left pane, select the Personal certificate store folder.
-1. Click the Certificates folder and double-click the certificate that is to be used for release signing.
-1. On the Details tab of the Certificate dialog box, select Subject from the list of fields to highlight the certificate's subject name. This is the name that is used with Signtool's /n argument in the examples in this section.
+1. Select the Personal certificate store folder in the snap-in's left pane.
+1. Select the Certificates folder and double-click the certificate that is to be used for release signing.
+1. Select Subject from the list of fields to highlight the certificate's subject name on the Details tab of the Certificate dialog box. This subject name is used with Signtool's /n argument in the examples in this section.
 
 ## Signing
 
 Based on [Release-Signing a Driver Package's Catalog File](release-signing-a-driver-package-s-catalog-file.md):
 
-Run the following commands to sign the cat file which signs the driver package. The /n command should use the quoted name of the certificate which you will see under Subject in step 4 above, as CN= MyCompany Inc.
+Run the following commands to sign the cat file which signs the driver package. The /n command should use the quoted name of the certificate that you see under Subject in step 4 above, as CN= MyCompany Inc.
 
 ```cmd
 signtool sign /v /ac MSCV-VSClass3.cer /s My /n "MyCompany Inc." /t http://timestamp.digicert.com toaster.cat
@@ -136,11 +136,11 @@ signtool sign /v /ac MSCV-VSClass3.cer /s My /n "MyCompany Inc." /t http://times
 
 /ac FileName
 
-Specifies a file that contains an additional certificate to add to the signature block. This is the cross signing certificate, MSCV-VSClass3.cer, obtained from Microsoft cross certificate download link. Use a full path name if the cross-certificate is not in the current directory. Though not required, it is advisable to add cross certificate while signing the cat file.
+Specifies a file that contains another certificate to add to the signature block. This file is the cross signing certificate, MSCV-VSClass3.cer, obtained from Microsoft cross certificate download link. Use a full path name if the cross-certificate isn't in the current directory. Though not required, it's advisable to add cross certificate while signing the cat file.
 
 /s StoreName
 
-Specifies the store to open when searching for the certificate. If this option is not specified, the My store is opened, which is the Personal certificate Store.
+Specifies the store to open when searching for the certificate. If this option isn't specified, the My store is opened, which is the Personal certificate Store.
 
 /n SubjectName
 
@@ -148,9 +148,9 @@ Specifies the name of the subject of the signing certificate. This value can be 
 
 /t URL
 
-Specifies the URL of the time stamp server. If this option is not present, then the signed file will not be time stamped. **With time stamping, the signed driver package remains valid indefinitely until the SPC signing certificate gets revoked for other reasons.**
+Specifies the URL of the time stamp server. If this option isn't present, then the signed file isn't time stamped. **With time stamping, the signed driver package remains valid indefinitely until the SPC signing certificate gets revoked for other reasons.**
 
-You must follow every signing steps correctly as described above, otherwise you will not be able to sign the driver. You may get errors shown below.
+You must follow every signing steps correctly, otherwise you can't sign the driver. You might get the following errors.
 
 ```output
 SignTool Error: No certificates were found that met all the given criteria
@@ -160,11 +160,11 @@ SignTool Error: No certificates were found that met all the given criteria
 
 Based on [Release-Signing a Driver through an Embedded Signature](release-signing-a-driver-through-an-embedded-signature.md):
 
-The kernel-mode code signing policy controls whether a kernel-mode driver will be loaded. 64-bit versions of Windows have stricter requirements compared to 32-bit versions of Windows.
+The kernel-mode code signing policy controls whether a kernel-mode driver is loaded. 64-bit versions of Windows have stricter requirements compared to 32-bit versions of Windows.
 
-A kernel-mode boot-start driver must have an embedded Software Publisher Certificate (SPC) signature. This applies to any type of PnP or non-PnP kernel-mode boot-start driver. Also applies to the 32-bit versions of Windows. A PnP kernel-mode driver that is not a boot-start driver must have either an embedded SPC signature, a catalog file with a WHQL release signature, or a catalog file with an SPC signature.
+A kernel-mode boot-start driver must have an embedded Software Publisher Certificate (SPC) signature. This requirement applies to any PnP or non-PnP kernel-mode boot-start driver. Also applies to the 32-bit versions of Windows. A PnP kernel-mode driver that isn't a boot-start driver must have either an embedded SPC signature, a catalog file with a WHQL release signature, or a catalog file with an SPC signature.
 
-Please refer to [Kernel-Mode Code Signing Requirements](kernel-mode-code-signing-requirements--windows-vista-and-later-.md) for additional information.
+For more information, see [Kernel-Mode Code Signing Requirements](kernel-mode-code-signing-requirements--windows-vista-and-later-.md).
 
 Command for embed signing the toaster.sys file.
 
@@ -172,7 +172,7 @@ Command for embed signing the toaster.sys file.
 signtool sign /v /ac MSCV-VSClass3.cer /s my /n "MyCompany Inc. " /t http://timestamp.digicert.com toaster.sys
 ```
 
-After signing is completed, run the command below to verify the signed driver.
+After signing is completed, run the following command to verify the signed driver.
 
 ```cmd
 signtool verify /kp /v /c tstamd64.cat toastpkg.inf
