@@ -3,7 +3,7 @@ title: CM_PROB_DUPLICATE_DEVICE
 description: CM_PROB_DUPLICATE_DEVICE
 keywords:
 - CM_PROB_DUPLICATE_DEVICE
-ms.date: 03/03/2023
+ms.date: 09/10/2024
 ---
 
 # Code 42 - CM_PROB_DUPLICATE_DEVICE
@@ -28,4 +28,4 @@ This error is reported when one of the following occurs:
 
 - A bus driver incorrectly creates two identically named children on the bus. This is caused by multiple devices on the bus that report the same serial number. This can also be caused by a bus driver that incorrectly reports the same hardware identifiers for two or more devices.
 
-    In this case, you should contact [Microsoft support](https://support.microsoft.com/en-us) for more assistance with this problem.
+    In this case, you should contact [Microsoft support](https://support.microsoft.com) for more assistance with this problem.
