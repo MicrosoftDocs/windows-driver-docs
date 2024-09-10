@@ -6,7 +6,7 @@ keywords:
 - Windows Vista display driver model WDK , architecture
 - architecture WDK display
 - user-mode display drivers WDK Windows Vista , architecture
-ms.date: 08/23/2024
+ms.date: 09/09/2024
 ---
 
 # WDDM Architecture
@@ -15,7 +15,7 @@ The Windows Display Driver Model (WDDM) has user-mode and kernel-mode components
 
 :::image type="content" source="images/wddm-architecture.png" alt-text="Diagram showing the WDDM architecture with user-mode and kernel-mode components.":::
 
-System-supplied modules are shown in the figure as white boxes. Gray boxes represent modules that IHVs can provide. Applications can be developed by partners or system-supplied.
+System-supplied modules are shown in the figure as white boxes. Gray boxes represent modules that partner can provide. Applications can be developed by partners or system-supplied.
 
 ## System-supplied modules
 
@@ -25,7 +25,10 @@ The following system-supplied modules are part of the WDDM architecture:
 
 * *gdi32.dll* is a user-mode library that a D3D runtime or a partner graphics client links against. A runtime or client calls a *gdi32* "thunk" that routes the call to the appropriate kernel-mode function in the DirectX kernel subsystem (*Dxgkrnl*).
 
-* [*Dxgkrnl.sys*](directx-graphics-kernel-subsystem.md) is the core component of the Windows operating system's kernel-mode graphics subsystem. It facilitates communication between the operating system, the UMD, and the kernel-mode display miniport driver (KMD). *Dxgkrnl* includes subcomponents such as the display port driver, the memory manager (*VidMm*), and the scheduler (*VidSch*). *Dxgkrnl* consists of *dxgkrnl.sys*, *dxgmms1.sys* (handles WDDM versions before WDDM 2.0), and *dxgmms2.sys* (handles WDDM versions 2.0 and above).
+* [*Dxgkrnl.sys*](directx-graphics-kernel-subsystem.md) is the core component of the Windows operating system's kernel-mode graphics subsystem. It facilitates communication between the operating system, the UMD, and the kernel-mode display miniport driver (KMD). *Dxgkrnl* includes subcomponents such as the display port driver, the memory manager (*VidMm*), and the scheduler (*VidSch*). *Dxgkrnl* consists of the following system files:
+  * *dxgmms2.sys*, which implements the GPU/NPU scheduler and video memory manager for WDDM versions 2.0 and above.
+  * *dxgmms1.sys*, which implements the GPU/NPU scheduler and video memory manager for WDDM versions before WDDM 2.0.
+  * *dxgkrnl.sys*, which handles everything else in the DirectX kernel subsystem, including loading the needed *dxgmms.sys* file, initial processing of **D3DKMT*Xxx*** calls from user mode, display modes, GPU virtualization, power management, interface with the kernel executive, and so forth.
 
 * Win32 GDI and *Win32k.sys* are legacy components that are still used by some applications.
 
