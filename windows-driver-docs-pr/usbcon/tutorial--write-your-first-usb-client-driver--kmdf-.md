@@ -39,7 +39,7 @@ You can also get a Microsoft USB Test Tool (MUTT) devices. MUTT hardware can be 
 
 - [Concepts for All Driver Developers](../gettingstarted/concepts-and-knowledge-for-all-driver-developers.md)
 - [Device nodes and device stacks](../gettingstarted/device-nodes-and-device-stacks.md)
-- [Getting started with Windows drivers](../gettingstarted/index.md)
+- [Get started with drivers on Windows](../gettingstarted/index.md)
 - [Kernel-Mode Driver Framework](../wdf/index.md)
 - *Developing Drivers with Windows Driver Foundation*, written by Penny Orwick and Guy Smith. For more information, see [Developing Drivers with WDF](../wdf/developing-drivers-with-wdf.md).
 

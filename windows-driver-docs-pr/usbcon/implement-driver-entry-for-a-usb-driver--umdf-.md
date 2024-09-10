@@ -45,7 +45,7 @@ If you're new to USB driver development, use the [OSR USB FX2 learning kit](http
 
 - [Concepts for all driver developers](../gettingstarted/concepts-and-knowledge-for-all-driver-developers.md)
 - [Device nodes and device stacks](../gettingstarted/device-nodes-and-device-stacks.md)
-- [Getting started with Windows drivers](../gettingstarted/index.md)
+- [Get started with drivers on Windows](../gettingstarted/index.md)
 - [User-Mode Driver Framework](../debugger/user-mode-driver-framework-debugging.md)
 - *Developing Drivers with Windows Driver Foundation*, written by Penny Orwick and Guy Smith. For more information, see [Developing Drivers with WDF](../wdf/developing-drivers-with-wdf.md).
 

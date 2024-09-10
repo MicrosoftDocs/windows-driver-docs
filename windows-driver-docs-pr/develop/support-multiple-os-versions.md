@@ -6,7 +6,7 @@ ms.date: 04/12/2022
 
 # Supporting multiple operating system versions
 
-[Driver packages](../install/driver-packages.md) generally will support many versions of the Windows operating system. As part of supporting multiple versions of the operating system, the driver package may need to have different behavior on different versions of the operating system in order to make use of new features or to meet new requirements of the new operating system version. For example, a driver package may want to have different behavior on operating systems after a certain version in order to meet the requirements of [Windows Drivers](getting-started-with-windows-drivers.md). The following sections describe how you can have different behaviors both in the driver package's [INF file](../install/overview-of-inf-files.md) and in the runtime behavior of binaries in the driver package.
+[Driver packages](../install/driver-packages.md) generally will support many versions of the Windows operating system. As part of supporting multiple versions of the operating system, the driver package may need to have different behavior on different versions of the operating system in order to make use of new features or to meet new requirements of the new operating system version. For example, a driver package may want to have different behavior on operating systems after a certain version in order to meet the requirements of [Windows Drivers](get-started-developing-windows-drivers.md). The following sections describe how you can have different behaviors both in the driver package's [INF file](../install/overview-of-inf-files.md) and in the runtime behavior of binaries in the driver package.
 
 ## INF support
 

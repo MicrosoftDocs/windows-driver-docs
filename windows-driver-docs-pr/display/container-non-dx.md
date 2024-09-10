@@ -10,7 +10,7 @@ Windows 10 added features that significantly impact non-DX APIs and the lower-le
 
 1. Paravirtualized WDDM adapters
 2. Users now have control over the adapter used by applications that don't discriminate themselves
-3. [Universal drivers](../develop/getting-started-with-windows-drivers.md) introduces a new set of design principals
+3. [Universal drivers](../develop/get-started-developing-windows-drivers.md) introduces a new set of design principals
 
 Maintaining compatibility with the latest Windows 10 features requires the modifications described in the sections below.
 
@@ -108,7 +108,7 @@ DXGI returns its LUID through [IDXGIAdapter::GetDesc](/windows/win32/api/dxgi/nf
 
 ## DCHU design modifications
 
-Honor as many [universal driver](../develop/getting-started-with-windows-drivers.md) design principals as possible,
+Honor as many [universal driver](../develop/get-started-developing-windows-drivers.md) design principals as possible,
 which may vary based on the exact device being supported.
 
 ## D3DKMT headers

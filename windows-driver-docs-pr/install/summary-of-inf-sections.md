@@ -69,12 +69,12 @@ If a driver exports the functionality of a device interface class, therefore cre
 If a to-be-installed component, such as a new class driver, provides one or more new [device interface classes](./overview-of-device-interface-classes.md) to higher-level components, its INF file can have this section. This can be used to pre-create the device interface class before any interfaces are registered in that class. Pre-creation of the class is not required for an interface to be registered in the class, but having this section in the INF allows the INF to associate some state with the device interface class.
 
 <a href="" id="ddinstall-factdef-section"></a>[***DDInstall*.FactDef Section**](inf-ddinstall-factdef-section.md)  
-**Note** If you are building a universal or ["Windows Driver"](../develop/getting-started-with-windows-drivers.md) driver package, this section is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
+**Note** If you are building a universal or ["Windows Driver"](../develop/get-started-developing-windows-drivers.md) driver package, this section is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
 This section should be included in the INF file of any manually installed non-PnP device. It specifies the factory default hardware configuration settings, such as the bus-relative I/O ports, IRQ (if any), and so forth, for the card.
 
 <a href="" id="ddinstall-logconfigoverride-section"></a>[***DDInstall*.LogConfigOverride Section**](inf-ddinstall-logconfigoverride-section.md)  
-**Note** If you are building a universal or ["Windows Driver"](../develop/getting-started-with-windows-drivers.md) driver package, this section is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
+**Note** If you are building a universal or ["Windows Driver"](../develop/get-started-developing-windows-drivers.md) driver package, this section is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
 This section is used to create an [override configuration](../kernel/hardware-resources.md#logical-configuration-types-for-resource-requirements-lists), which overrides the hardware resource requirements that a Plug and Play device's bus driver reports.
 

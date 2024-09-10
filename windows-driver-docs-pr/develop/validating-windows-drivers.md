@@ -6,7 +6,7 @@ ms.date: 08/12/2024
 
 # Validating Windows Drivers
 
-Use the InfVerif, Driver Verifier Driver Isolation Checks, and ApiValidator tools to test your [driver package](../install/driver-packages.md) for compliance with the Windows Drivers requirements described in [Getting Started with Windows Drivers](getting-started-with-windows-drivers.md).
+Use the InfVerif, Driver Verifier Driver Isolation Checks, and ApiValidator tools to test your [driver package](../install/driver-packages.md) for compliance with the Windows Drivers requirements described in [Get started developing Windows drivers](get-started-developing-windows-drivers.md).
 
 ## InfVerif
 
@@ -15,7 +15,7 @@ Use the InfVerif, Driver Verifier Driver Isolation Checks, and ApiValidator tool
 Use InfVerif with `/w` to verify that a Windows Driver:
 
 * Meets the **declarative (D)** principle of [DCH Design Principles](dch-principles-best-practices.md)
-* Complies with the [driver package isolation](driver-isolation.md) requirement of [Getting Started with Windows Drivers](getting-started-with-windows-drivers.md)
+* Complies with the [driver package isolation](driver-isolation.md) requirement of [Get started developing Windows drivers](get-started-developing-windows-drivers.md)
 
 For more details, see [Running InfVerif from the command line](../devtest/running-infverif-from-the-command-line.md).
 
@@ -158,7 +158,7 @@ When KMDF drivers use WDF APIs to access the registry, such as [WdfRegistryCreat
 
 The ApiValidator tool verifies that the APIs that your binaries call are valid for a Windows Driver. The tool returns an error if your binaries call an API that is outside the set of valid APIs for Windows Drivers. This tool is part of the WDK for Windows 10.
 
-ApiValidator validates that a driver supports [API Layering](api-layering.md), one of the requirements for Windows Drivers. For a full list of requirements, see [Getting Started with Windows Drivers](getting-started-with-windows-drivers.md).
+ApiValidator validates that a driver supports [API Layering](api-layering.md), one of the requirements for Windows Drivers. For a full list of requirements, see [Get started developing Windows drivers](get-started-developing-windows-drivers.md).
 
 ### Running ApiValidator in Visual Studio
 

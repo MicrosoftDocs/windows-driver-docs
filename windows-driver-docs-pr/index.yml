@@ -114,7 +114,7 @@ additionalContent:
           url: ./gettingstarted/writing-a-very-small-kmdf--driver.md
         - title: Get started with Windows drivers
           summary: Write a single driver package that runs across multiple device types.
-          url: ./develop/getting-started-with-windows-drivers.md
+          url: ./develop/get-started-developing-windows-drivers.md
         - title: Add boot entries
           summary: A boot entry is a set of options that define a load configuration for an operating system or bootable program.
           url: ./devtest/adding-boot-entries.md
