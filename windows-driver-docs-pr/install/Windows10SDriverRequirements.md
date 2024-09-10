@@ -24,7 +24,7 @@ To install on Windows 10 in S mode, driver packages must meet the following requ
 
 Finally, we recommend using a Universal Windows driver where possible.  For more info, see:
 
--   [Getting Started with Universal Drivers](../develop/getting-started-with-windows-drivers.md)
+-   [Getting Started with Universal Drivers](../develop/get-started-developing-windows-drivers.md)
 -   [Validating Universal Drivers](../develop/validating-windows-drivers.md)
 
 ## Installation

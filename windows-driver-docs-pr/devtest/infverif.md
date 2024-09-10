@@ -52,7 +52,7 @@ InfVerif reports errors and warnings based on the mode and rules supplied by the
 ## <span id="related_topics"></span>Related topics
 
 
-[Getting Started with Windows Drivers](../develop/getting-started-with-windows-drivers.md)
+[Get started developing Windows drivers](../develop/get-started-developing-windows-drivers.md)
 
 [Using a Universal INF File](../install/using-a-universal-inf-file.md)
 

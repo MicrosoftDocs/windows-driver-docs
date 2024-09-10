@@ -195,7 +195,7 @@ The component INF will match on the component hardware ID, whereas the base and 
 
 ## See also
 
-[Getting Started with Windows Drivers](getting-started-with-windows-drivers.md)
+[Get started developing Windows drivers](get-started-developing-windows-drivers.md)
 
 [Using an Extension INF File](../install/using-an-extension-inf-file.md)
 

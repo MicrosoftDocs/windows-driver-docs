@@ -6,7 +6,7 @@ ms.date: 05/08/2023
 
 # Using a Component INF File
 
-If you want to include user-mode software for use with a device on Windows 10, you have the following options to create a [DCH-compliant driver](../develop/getting-started-with-windows-drivers.md):
+If you want to include user-mode software for use with a device on Windows 10, you have the following options to create a [DCH-compliant driver](../develop/get-started-developing-windows-drivers.md):
 
 |Method|Scenario|
 |---|---|

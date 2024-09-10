@@ -16,7 +16,7 @@ ms.date: 06/08/2022
 # INF ClassInstall32.Services section
 
 > [!CAUTION]
-> If you are building a universal or Windows Driver package, this section is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md) and [Getting Started with Windows Drivers](../develop/getting-started-with-windows-drivers.md).
+> If you are building a universal or Windows Driver package, this section is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md) and [Get started developing Windows drivers](../develop/get-started-developing-windows-drivers.md).
 
 A **ClassInstall32** section installs a new [device setup class](./overview-of-device-setup-classes.md) for devices in the new class.
 

@@ -8,7 +8,7 @@ ms.date: 04/28/2020
 
 You can use Microsoft Visual Studio 2019 in conjunction with the [Windows Driver Kit (WDK) Version 2004](../download-the-wdk.md) to build Windows Drivers. You can download kits and tools from the [Windows Hardware Dev Center](https://go.microsoft.com/fwlink/p/?LinkId=524487).
 
-In many cases, you can recompile a legacy kernel-mode driver as a Windows Driver, as long as the driver does not work with any user-mode components. Legacy WDM and KMDF drivers should recompile as Windows Drivers targeting Windows 10 with no conversion required.  While the drivers may compile without any conversion, this does not mean that the driver meets all of the Windows Drivers requirements.  Please see [Getting Started with Windows Drivers](getting-started-with-windows-drivers.md) for details regarding Windows Drivers requirements.  
+In many cases, you can recompile a legacy kernel-mode driver as a Windows Driver, as long as the driver does not work with any user-mode components. Legacy WDM and KMDF drivers should recompile as Windows Drivers targeting Windows 10 with no conversion required.  While the drivers may compile without any conversion, this does not mean that the driver meets all of the Windows Drivers requirements.  Please see [Get started developing Windows drivers](get-started-developing-windows-drivers.md) for details regarding Windows Drivers requirements.  
 
 In contrast, existing user-mode drivers may require modification to compile as Windows drivers. Specifically, your driver package must not have any dependencies outside of UWP. For example, only some of the Win32 APIs are part of UWP.
 

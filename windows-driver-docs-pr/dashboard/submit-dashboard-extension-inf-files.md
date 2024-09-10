@@ -166,6 +166,6 @@ Yes. If multiple systems use the same settings, or if you want to customize sett
 ### Windows Drivers
 
 - [Using a Universal INF File](../install/using-a-universal-inf-file.md)
-- [Getting started with universal drivers](../develop/getting-started-with-windows-drivers.md)
+- [Getting started with universal drivers](../develop/get-started-developing-windows-drivers.md)
 - [Using a component INF file](../install/using-a-component-inf-file.md)
 - [How windows ranks drivers](../install/how-setup-ranks-drivers--windows-vista-and-later-.md)

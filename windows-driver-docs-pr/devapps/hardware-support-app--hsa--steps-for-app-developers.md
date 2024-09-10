@@ -132,7 +132,7 @@ When the target machine is in Developer Mode, you can try the following steps to
 
 [Custom Capability sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/CustomCapability)
 
-[Getting Started with Windows Drivers](../develop/getting-started-with-windows-drivers.md)
+[Get started developing Windows drivers](../develop/get-started-developing-windows-drivers.md)
 
 [Pairing a driver with a Universal Windows Platform (UWP) app](../install/pairing-app-and-driver-versions.md)
 

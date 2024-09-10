@@ -6,7 +6,7 @@ ms.date: 03/26/2024
 
 # Porting an INF to follow driver package isolation
 
-This article is intended to be a quick lookup guide to help you update an INF file to follow [driver package isolation](driver-isolation.md) as part of updating your driver package to be a [Windows Driver](getting-started-with-windows-drivers.md). The following sections provide examples of some of the more common things you may have in your driver package INF file with references to information on how to update those to be driver package isolation compliant.  If your driver package needs to support the old way of doing something for older operating system versions while using the new way on newer operating system versions, see [Combining Platform Extensions with Operating System Versions](../install/combining-platform-extensions-with-operating-system-versions.md) for how to achieve that in an INF.
+This article is intended to be a quick lookup guide to help you update an INF file to follow [driver package isolation](driver-isolation.md) as part of updating your driver package to be a [Windows Driver](get-started-developing-windows-drivers.md). The following sections provide examples of some of the more common things you may have in your driver package INF file with references to information on how to update those to be driver package isolation compliant.  If your driver package needs to support the old way of doing something for older operating system versions while using the new way on newer operating system versions, see [Combining Platform Extensions with Operating System Versions](../install/combining-platform-extensions-with-operating-system-versions.md) for how to achieve that in an INF.
 
 ## DestinationDirs isn't DIRID 13
 

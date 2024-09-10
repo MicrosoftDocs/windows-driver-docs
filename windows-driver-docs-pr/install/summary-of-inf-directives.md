@@ -32,21 +32,21 @@ INF files for most kinds of devices (those that install drivers) have an INF-wri
 This directive references an *add-interface-section* in which one or more **AddReg** directives are specified referencing sections that set up the registry entries for the device interfaces supported by this device/driver.
 
 <a href="" id="delreg-directive"></a>[**DelReg Directive**](inf-delreg-directive.md)  
-**Note** If you are building a universal or ["Windows Driver"](../develop/getting-started-with-windows-drivers.md) driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
+**Note** If you are building a universal or ["Windows Driver"](../develop/get-started-developing-windows-drivers.md) driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
 This directive references one or more *del-registry-section*s used to remove obsolete subkeys and/or value entries from the registry. For example, such a section might appear in an INF that upgrades a previous installation.
 
 <a href="" id="delfiles-directive"></a>[**DelFiles Directive**](inf-delfiles-directive.md)  
-**Note** If you are building a universal or ["Windows Driver"](../develop/getting-started-with-windows-drivers.md) driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
+**Note** If you are building a universal or ["Windows Driver"](../develop/get-started-developing-windows-drivers.md) driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
 This rarely used directive references one or more *file-list-section*s specifying files to be deleted from the target of the installation.
 
 <a href="" id="delservice-directive"></a>[**DelService Directive**](inf-delservice-directive.md)  
-**Note** If you are building a universal or ["Windows Driver"](../develop/getting-started-with-windows-drivers.md) driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
+**Note** If you are building a universal or ["Windows Driver"](../develop/get-started-developing-windows-drivers.md) driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
 This rarely used directive deletes a previously installed service.
 
 <a href="" id="logconfig-directive"></a>[**LogConfig Directive**](inf-logconfig-directive.md)  
-**Note** If you are building a universal or ["Windows Driver"](../develop/getting-started-with-windows-drivers.md) driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
+**Note** If you are building a universal or ["Windows Driver"](../develop/get-started-developing-windows-drivers.md) driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
 This directive references one or more *log-config-section*s that specify acceptable bus-relative and device-specific hardware configurations in an INF for devices that are detected (by PnP device enumerators) or manually installed. For example, INF files for non-PnP ISA, EISA, and MCA devices, which are manually installed, use this directive. (Also see [**INF DDInstall.LogConfigOverride Section**](inf-ddinstall-logconfigoverride-section.md).)

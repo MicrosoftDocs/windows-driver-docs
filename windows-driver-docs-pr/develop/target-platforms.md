@@ -12,7 +12,7 @@ Here are the values for **Target Platform**, and what they mean:
 
 |Term|Description|
 |--- |--- |
-|Universal|A driver binary in a Windows Driver can call this device driver interface (DDI). For more info, see [Getting Started with Windows drivers](getting-started-with-windows-drivers.md).|
+|Universal|A driver binary in a Windows Driver can call this device driver interface (DDI). For more info, see [Get started developing Windows drivers](get-started-developing-windows-drivers.md).|
 |Desktop|A driver binary for Windows 10 for desktop editions or Windows Server 2016 can call this DDI.|
 |Windows Driver | A *Windows Driver* runs on the following Universal Windows Platform (UWP)-based editions of Windows: <p> Windows 11 <p> Windows Server 2022 <p> Windows Server 2019 <p> Windows 10 for desktop editions (Home, Pro, and Enterprise) <p> Windows 10 in S-Mode <p> Windows 10 IoT Core <p> Windows Server 2016 <p>|
 
@@ -28,7 +28,7 @@ Here are the values you might see for **Target Platform**, and what they mean:
 
 |Term|Description|
 |--- |--- |
-|Universal|A driver binary in a Universal, Desktop, or Windows Driver can call this device driver interface (DDI). For more info, see [Getting Started with Windows drivers](getting-started-with-windows-drivers.md) or [Using a Universal INF File](../install/using-a-universal-inf-file.md).|
+|Universal|A driver binary in a Universal, Desktop, or Windows Driver can call this device driver interface (DDI). For more info, see [Get started developing Windows drivers](get-started-developing-windows-drivers.md) or [Using a Universal INF File](../install/using-a-universal-inf-file.md).|
 |Desktop|A driver binary for a Desktop driver can call this DDI.|
 
 These two values that can appear on documentation pages map to three values that you can use in Visual Studio, in the **Target Platform** property under **Configuration Properties->Driver Settings->General**.  All three classifications, Universal, Desktop, or Windows Driver can use any DDI that specifies **Universal** as the Target Platform on the documentation page.

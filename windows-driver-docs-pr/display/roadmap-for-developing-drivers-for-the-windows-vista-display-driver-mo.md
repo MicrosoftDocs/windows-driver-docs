@@ -24,7 +24,7 @@ To create these display drivers, perform the following steps:
 
 - Step 4: Learn about the Windows driver build, test, and debug processes and tools.
 
-  Building a driver isn't the same as building a user-mode application. See [Developing, Testing, and Deploying Drivers](../develop/getting-started-with-windows-drivers.md) for information about Windows driver build, debug, and test processes, driver signing, and driver verification. See [Driver Development Tools](../devtest/index.md) for information about building, testing, verifying, and debugging tools.
+  Building a driver isn't the same as building a user-mode application. See [Developing, Testing, and Deploying Drivers](../develop/get-started-developing-windows-drivers.md) for information about Windows driver build, debug, and test processes, driver signing, and driver verification. See [Driver Development Tools](../devtest/index.md) for information about building, testing, verifying, and debugging tools.
 
 - Step 5: Make graphics display driver design decisions.
 

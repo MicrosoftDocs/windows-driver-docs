@@ -12,11 +12,11 @@ ms.date: 12/01/2021
 
 # Device Installation Types
 
-Windows uses INF files to install a [driver package](driver-packages.md) on a device. All Windows platforms support [Windows Drivers](../develop/getting-started-with-windows-drivers.md), while only Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) support Windows Desktop Drivers.
+Windows uses INF files to install a [driver package](driver-packages.md) on a device. All Windows platforms support [Windows Drivers](../develop/get-started-developing-windows-drivers.md), while only Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) support Windows Desktop Drivers.
 
 ## INF files for Windows Drivers
 
-If you are building a [driver package](driver-packages.md) for a non-Desktop variant of Windows, you must supply a driver package that conforms to the Windows Driver requirements. INF files in Windows Driver driver packages contain only a subset of INF sections and directives. For more information, see [Windows Drivers](../develop/getting-started-with-windows-drivers.md).
+If you are building a [driver package](driver-packages.md) for a non-Desktop variant of Windows, you must supply a driver package that conforms to the Windows Driver requirements. INF files in Windows Driver driver packages contain only a subset of INF sections and directives. For more information, see [Windows Drivers](../develop/get-started-developing-windows-drivers.md).
 
 ## INF files for Windows Desktop Drivers
 

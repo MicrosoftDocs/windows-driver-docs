@@ -423,7 +423,7 @@ The following schema is also valid as of Windows 10, version 1809.  It enables a
 
 ## See also
 
-[Getting Started with Windows Drivers](../develop/getting-started-with-windows-drivers.md)
+[Get started developing Windows drivers](../develop/get-started-developing-windows-drivers.md)
 
 [Intro to the Universal Windows Platform](/windows/uwp/get-started/universal-application-platform-guide)
 

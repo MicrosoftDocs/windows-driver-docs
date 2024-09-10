@@ -16,7 +16,7 @@ ms.date: 05/20/2022
 All versions of Windows support a registry key, **RunOnce**, which can be used to specify commands that the system will execute one time and then delete. Creation of **RunOnce** registry keys can be done from a [driver package](driver-packages.md).
 
 > [!NOTE]
-> Creation of a **RunOnce** registry key for anything other than software-only SWENUM devices is not compliant with [driver package isolation](../develop/driver-isolation.md) and cannot be done from a [Windows Driver](../develop/getting-started-with-windows-drivers.md).
+> Creation of a **RunOnce** registry key for anything other than software-only SWENUM devices is not compliant with [driver package isolation](../develop/driver-isolation.md) and cannot be done from a [Windows Driver](../develop/get-started-developing-windows-drivers.md).
 
 In Windows 8 and Windows 8.1, **RunOnce** entries for installation of software-only SWENUM devices are processed during device installation. Other **RunOnce** entries are added to the **RunOnce** key. These are applied the next time the system processes the **RunOnce** key. Device installation does not force the system to process **RunOnce** entries.
 
