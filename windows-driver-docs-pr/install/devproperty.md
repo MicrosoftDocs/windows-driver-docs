@@ -36,7 +36,7 @@ keywords:
 - PDEVPROPERTY
 - devpropdef/DEVPROPERTY
 - devpropdef/PDEVPROPERTY
-ms.date: 11/01/2022
+ms.date: 09/09/2024
 ms.topic: reference
 ---
 
@@ -49,248 +49,86 @@ Describes a property for a software device.
 ``` c++
 typedef struct _DEVPROPERTY {
   DEVPROPCOMPKEY CompKey;
-  DEVPROPTYPE    Type;
-  ULONG          BufferSize;
-  PVOID          Buffer;
+  DEVPROPTYPE    Type;
+  ULONG          BufferSize;
+  PVOID          Buffer;
 } DEVPROPERTY, *PDEVPROPERTY;
 ```
 
 ## Members
 
-- **CompKey**  
-  A [**DEVPROPCOMPKEY**](devpropcompkey.md) structure that represents a compound key for a property.
+`CompKey`
 
-- **Type**  
-  A **DEVPROPTYPE** value that indicates the property type. Valid **DEVPROPTYPE** values are constructed from base DEVPROP\_TYPE\_ values, which may be modified by a logical OR with DEVPROP\_TYPEMOD\_ values, as appropriate.
+A [**DEVPROPCOMPKEY**](devpropcompkey.md) structure that represents a compound key for a property.
 
-  Here are possible DEVPROP\_TYPE\_ values:
+`Type`
 
-    <table>
-    <thead>
-    <tr class="header">
-    <th>Value</th>
-    <th>Meaning</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><span id="DEVPROP_TYPE_EMPTY"></span><span id="devprop_type_empty"></span>
-    <strong>DEVPROP_TYPE_EMPTY</strong>
-    0x00000000</td>
-    <td><p>Nothing, no property data</p></td>
-    </tr>
-    <tr class="even">
-    <td><span id="DEVPROP_TYPE_NULL"></span><span id="devprop_type_null"></span>
-    <strong>DEVPROP_TYPE_NULL</strong>
-    0x00000001</td>
-    <td><p>Null property data</p></td>
-    </tr>
-    <tr class="odd">
-    <td><span id="DEVPROP_TYPE_SBYTE"></span><span id="devprop_type_sbyte"></span>
-    <strong>DEVPROP_TYPE_SBYTE</strong>
-    0x00000002</td>
-    <td><p>8-bit signed int (SBYTE)</p></td>
-    </tr>
-    <tr class="even">
-    <td><span id="DEVPROP_TYPE_BYTE"></span><span id="devprop_type_byte"></span>
-    <strong>DEVPROP_TYPE_BYTE</strong>
-    0x00000003</td>
-    <td><p>8-bit unsigned int (BYTE)</p></td>
-    </tr>
-    <tr class="odd">
-    <td><span id="DEVPROP_TYPE_INT16"></span><span id="devprop_type_int16"></span>
-    <strong>DEVPROP_TYPE_INT16</strong>
-    0x00000004</td>
-    <td><p>16-bit signed int (SHORT)</p></td>
-    </tr>
-    <tr class="even">
-    <td><span id="DEVPROP_TYPE_UINT16"></span><span id="devprop_type_uint16"></span>
-    <strong>DEVPROP_TYPE_UINT16</strong>
-    0x00000005</td>
-    <td><p>16-bit unsigned int (USHORT)</p></td>
-    </tr>
-    <tr class="odd">
-    <td><span id="DEVPROP_TYPE_INT32"></span><span id="devprop_type_int32"></span>
-    <strong>DEVPROP_TYPE_INT32</strong>
-    0x00000006</td>
-    <td><p>32-bit signed int (LONG)</p></td>
-    </tr>
-    <tr class="even">
-    <td><span id="DEVPROP_TYPE_UINT32"></span><span id="devprop_type_uint32"></span>
-    <strong>DEVPROP_TYPE_UINT32</strong>
-    0x00000007</td>
-    <td><p>32-bit unsigned int (ULONG)</p></td>
-    </tr>
-    <tr class="odd">
-    <td><span id="DEVPROP_TYPE_INT64"></span><span id="devprop_type_int64"></span>
-    <strong>DEVPROP_TYPE_INT64</strong>
-    0x00000008</td>
-    <td><p>64-bit signed int (LONG64)</p></td>
-    </tr>
-    <tr class="even">
-    <td><span id="DEVPROP_TYPE_UINT64"></span><span id="devprop_type_uint64"></span>
-    <strong>DEVPROP_TYPE_UINT64</strong>
-    0x00000009</td>
-    <td><p>64-bit unsigned int (ULONG64)</p></td>
-    </tr>
-    <tr class="odd">
-    <td><span id="DEVPROP_TYPE_FLOAT"></span><span id="devprop_type_float"></span>
-    <strong>DEVPROP_TYPE_FLOAT</strong>
-    0x0000000A</td>
-    <td><p>32-bit floating-point (FLOAT)</p></td>
-    </tr>
-    <tr class="even">
-    <td><span id="DEVPROP_TYPE_DOUBLE"></span><span id="devprop_type_double"></span>
-    <strong>DEVPROP_TYPE_DOUBLE</strong>
-    0x0000000B</td>
-    <td><p>64-bit floating-point (DOUBLE)</p></td>
-    </tr>
-    <tr class="odd">
-    <td><span id="DEVPROP_TYPE_DECIMAL"></span><span id="devprop_type_decimal"></span>
-    <strong>DEVPROP_TYPE_DECIMAL</strong>
-    0x0000000C</td>
-    <td><p>128-bit data (DECIMAL)</p></td>
-    </tr>
-    <tr class="even">
-    <td><span id="DEVPROP_TYPE_GUID"></span><span id="devprop_type_guid"></span>
-    <strong>DEVPROP_TYPE_GUID</strong>
-    0x0000000D</td>
-    <td><p>128-bit unique identifier (GUID)</p></td>
-    </tr>
-    <tr class="odd">
-    <td><span id="DEVPROP_TYPE_CURRENCY"></span><span id="devprop_type_currency"></span>
-    <strong>DEVPROP_TYPE_CURRENCY</strong>
-    0x0000000E</td>
-    <td><p>64 bit signed int currency value (CURRENCY)</p></td>
-    </tr>
-    <tr class="even">
-    <td><span id="DEVPROP_TYPE_DATE"></span><span id="devprop_type_date"></span>
-    <strong>DEVPROP_TYPE_DATE</strong>
-    0x0000000F</td>
-    <td><p>date (DATE)</p></td>
-    </tr>
-    <tr class="odd">
-    <td><span id="DEVPROP_TYPE_FILETIME"></span><span id="devprop_type_filetime"></span>
-    <strong>DEVPROP_TYPE_FILETIME</strong>
-    0x00000010</td>
-    <td><p>file time (FILETIME)</p></td>
-    </tr>
-    <tr class="even">
-    <td><span id="DEVPROP_TYPE_BOOLEAN"></span><span id="devprop_type_boolean"></span>
-    <strong>DEVPROP_TYPE_BOOLEAN</strong>
-    0x00000011</td>
-    <td><p>8-bit boolean (DEVPROP_BOOLEAN)</p></td>
-    </tr>
-    <tr class="odd">
-    <td><span id="DEVPROP_TYPE_STRING"></span><span id="devprop_type_string"></span>
-    <strong>DEVPROP_TYPE_STRING</strong>
-    0x00000012</td>
-    <td><p>Null-terminated string</p></td>
-    </tr>
-    <tr class="even">
-    <td><span id="DEVPROP_TYPE_STRING_LIST"></span><span id="devprop_type_string_list"></span>
-    <strong>DEVPROP_TYPE_STRING_LIST</strong>
-    DEVPROP_TYPE_STRING|DEVPROP_TYPEMOD_LIST</td>
-    <td><p>Multi-sz string list</p></td>
-    </tr>
-    <tr class="odd">
-    <td><span id="DEVPROP_TYPE_SECURITY_DESCRIPTOR"></span><span id="devprop_type_security_descriptor"></span>
-    <strong>DEVPROP_TYPE_SECURITY_DESCRIPTOR</strong>
-    0x00000013</td>
-    <td><p>Self-relative binary SECURITY_DESCRIPTOR</p></td>
-    </tr>
-    <tr class="even">
-    <td><span id="DEVPROP_TYPE_SECURITY_DESCRIPTOR_STRING"></span><span id="devprop_type_security_descriptor_string"></span>
-    <strong>DEVPROP_TYPE_SECURITY_DESCRIPTOR_STRING</strong>
-    0x00000014</td>
-    <td><p>Security descriptor string (SDDL format)</p></td>
-    </tr>
-    <tr class="odd">
-    <td><span id="DEVPROP_TYPE_DEVPROPKEY"></span><span id="devprop_type_devpropkey"></span>
-    <strong>DEVPROP_TYPE_DEVPROPKEY</strong>
-    0x00000015</td>
-    <td><p>Device property key (DEVPROPKEY)</p></td>
-    </tr>
-    <tr class="even">
-    <td><span id="DEVPROP_TYPE_DEVPROPTYPE"></span><span id="devprop_type_devproptype"></span>
-    <strong>DEVPROP_TYPE_DEVPROPTYPE</strong>
-    0x00000016</td>
-    <td><p>Device property type (DEVPROPTYPE)</p></td>
-    </tr>
-    <tr class="odd">
-    <td><span id="DEVPROP_TYPE_BINARY"></span><span id="devprop_type_binary"></span>
-    <strong>DEVPROP_TYPE_BINARY</strong>
-    DEVPROP_TYPE_BYTE|DEVPROP_TYPEMOD_ARRAY</td>
-    <td><p>Custom binary data</p></td>
-    </tr>
-    <tr class="even">
-    <td><span id="DEVPROP_TYPE_ERROR"></span><span id="devprop_type_error"></span>
-    <strong>DEVPROP_TYPE_ERROR</strong>
-    0x00000017</td>
-    <td><p>32-bit Win32 system error code</p></td>
-    </tr>
-    <tr class="odd">
-    <td><span id="DEVPROP_TYPE_NTSTATUS"></span><span id="devprop_type_ntstatus"></span>
-    <strong>DEVPROP_TYPE_NTSTATUS</strong>
-    0x00000018</td>
-    <td><p>32-bit NTSTATUS code</p></td>
-    </tr>
-    <tr class="even">
-    <td><span id="DEVPROP_TYPE_STRING_INDIRECT"></span><span id="devprop_type_string_indirect"></span>
-    <strong>DEVPROP_TYPE_STRING_INDIRECT</strong>
-    0x00000019</td>
-    <td><p>String resource (@[path\]&lt;dllname&gt;,-&lt;strId&gt;)</p></td>
-    </tr>
-    </tbody>
-    </table>
+A **DEVPROPTYPE** value that indicates the property type. Valid **DEVPROPTYPE** values are constructed from base DEVPROP\_TYPE\_ values, which may be modified by a logical OR with DEVPROP\_TYPEMOD\_ values, as appropriate.
 
-  Here are possible DEVPROP\_TYPEMOD\_ values:
+Here are possible DEVPROP\_TYPE\_ values:
 
-    <table>
-    <thead>
-    <tr class="header">
-    <th>Value</th>
-    <th>Meaning</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><span id="DEVPROP_TYPEMOD_ARRAY"></span><span id="devprop_typemod_array"></span>
-    <strong>DEVPROP_TYPEMOD_ARRAY</strong>
-    0x00001000</td>
-    <td><p>Array of fixed-sized data elements</p></td>
-    </tr>
-    <tr class="even">
-    <td><span id="DEVPROP_TYPEMOD_LIST"></span><span id="devprop_typemod_list"></span>
-    <strong>DEVPROP_TYPEMOD_LIST</strong>
-    0x00002000</td>
-    <td><p>List of variable-sized data elements</p></td>
-    </tr>
-    </tbody>
-    </table>
+| Value | Meaning |
+| -- | -- |
+| [DEVPROP_TYPE_EMPTY](devprop-type-empty.md) 0x00000000 | Nothing, no property data |
+| [DEVPROP_TYPE_NULL](devprop-type-null.md) 0x00000001 | Null property data |
+| [DEVPROP_TYPE_SBYTE](devprop-type-sbyte.md) 0x00000002 | 8-bit signed int (SBYTE) |
+| [DEVPROP_TYPE_BYTE](devprop-type-byte.md) 0x00000003 | 8-bit unsigned int (BYTE) |
+| [DEVPROP_TYPE_INT16](devprop-type-int16.md) 0x00000004 | 16-bit signed int (SHORT) |
+| [DEVPROP_TYPE_UINT16](devprop-type-uint16.md) 0x00000005 | 16-bit unsigned int (USHORT) |
+| [DEVPROP_TYPE_INT32](devprop-type-int32.md) 0x00000006 | 32-bit signed int (LONG) |
+| [DEVPROP_TYPE_UINT32](devprop-type-uint32.md) 0x00000007 | 32-bit unsigned int (ULONG) |
+| [DEVPROP_TYPE_INT64](devprop-type-int64.md) 0x00000008 | 64-bit signed int (LONG64) |
+| [DEVPROP_TYPE_UINT64](devprop-type-uint64.md) 0x00000009 | 64-bit unsigned int (ULONG64) |
+| [DEVPROP_TYPE_FLOAT](devprop-type-float.md) 0x0000000A | 32-bit floating-point (FLOAT) |
+| [DEVPROP_TYPE_DOUBLE](devprop-type-double.md) 0x0000000B | 64-bit floating-point (DOUBLE) |
+| [DEVPROP_TYPE_DECIMAL](devprop-type-decimal.md) 0x0000000C | 128-bit data (DECIMAL) |
+| [DEVPROP_TYPE_GUID](devprop-type-guid.md) 0x0000000D | 128-bit unique identifier (GUID) |
+| [DEVPROP_TYPE_CURRENCY](devprop-type-currency.md) 0x0000000E | 64 bit signed int currency value (CURRENCY) |
+| [DEVPROP_TYPE_DATE](devprop-type-date.md) 0x0000000F | date (DATE) |
+| [DEVPROP_TYPE_FILETIME](devprop-type-filetime.md) 0x00000010 | file time (FILETIME) |
+| [DEVPROP_TYPE_BOOLEAN](devprop-type-boolean.md) 0x00000011 | 8-bit boolean (DEVPROP_BOOLEAN) |
+| [DEVPROP_TYPE_STRING](devprop-type-string.md) 0x00000012 | Null-terminated string |
+| [DEVPROP_TYPE_STRING_LIST](devprop-type-string-list.md) (DEVPROP_TYPE_STRING \| DEVPROP_TYPEMOD_LIST) | Multi-sz string list |
+| [DEVPROP_TYPE_SECURITY_DESCRIPTOR](devprop-type-security-descriptor.md) 0x00000013 | Self-relative binary SECURITY_DESCRIPTOR |
+| [DEVPROP_TYPE_SECURITY_DESCRIPTOR_STRING](devprop-type-security-descriptor-string.md) 0x00000014 | Security descriptor string (SDDL format) |
+| [DEVPROP_TYPE_DEVPROPKEY](devprop-type-devpropkey.md) 0x00000015 | Device property key (DEVPROPKEY) |
+| [DEVPROP_TYPE_DEVPROPTYPE](devprop-type-devproptype.md) 0x00000016 | Device property type (DEVPROPTYPE) |
+| [DEVPROP_TYPE_BINARY](devprop-type-binary.md) (DEVPROP_TYPE_BYTE \| DEVPROP_TYPEMOD_ARRAY) | Custom binary data |
+| [DEVPROP_TYPE_ERROR](devprop-type-error.md) 0x00000017 | 32-bit Win32 system error code |
+| [DEVPROP_TYPE_NTSTATUS](devprop-type-ntstatus.md) 0x00000018 | 32-bit NTSTATUS code |
+| [DEVPROP_TYPE_STRING_INDIRECT](devprop-type-string-indirect.md) 0x00000019 | String resource (@[path\]&lt;dllname&gt;,-&lt;strId&gt;) |
 
-- **BufferSize**  
-  The size in bytes of the property in **Buffer**.
+Here are possible DEVPROP\_TYPEMOD\_ values:
 
-- **Buffer**  
-  The buffer that contains the property info.
+| Value | Meaning |
+| -- | -- |
+| [DEVPROP_TYPEMOD_ARRAY](devprop-typemod-array.md) 0x00001000 | Array of fixed-sized data elements |
+| [DEVPROP_TYPEMOD_LIST](devprop-typemod-list.md) 0x00002000 | List of variable-sized data elements |
 
-  This member can be a **PBYTE** type if **MIDL\_PASS** is defined:
+`BufferSize`
 
-  ```cpp
-    #ifdef MIDL_PASS
-          [size_is(BufferSize)] PBYTE Buffer;
-      #else
-          __field_bcount_opt(BufferSize) PVOID Buffer;
-      #endif
-  ```
+The size in bytes of the property in `Buffer`.
+
+`Buffer`
+
+The buffer that contains the property info.
+
+This member can be a **PBYTE** type if **MIDL\_PASS** is defined:
+
+```cpp
+  #ifdef MIDL_PASS
+        [size_is(BufferSize)] PBYTE Buffer;
+    #else
+        __field_bcount_opt(BufferSize) PVOID Buffer;
+    #endif
+```
 ## Requirements
 
 <table>
 <tbody>
 <tr class="odd">
 <td><p>Header</p></td>
-<td>Devpropdef.h (include Swdevice.h)</td>
+<td>Devpropdef.h</td>
 </tr>
 </tbody>
 </table>

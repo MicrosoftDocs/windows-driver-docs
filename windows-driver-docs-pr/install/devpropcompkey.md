@@ -8,7 +8,7 @@ keywords:
 - PDEVPROPCOMPKEY
 - devpropdef/DEVPROPCOMPKEY
 - devpropdef/PDEVPROPCOMPKEY
-ms.date: 11/01/2022
+ms.date: 09/09/2024
 ms.topic: reference
 ---
 
@@ -20,27 +20,28 @@ Describes a compound key for a device property.
 
 ``` c++
 typedef struct _DEVPROPCOMPKEY {
-  DEVPROPKEY   Key;
+  DEVPROPKEY   Key;
   DEVPROPSTORE Store;
-  PCWSTR       LocaleName;
+  PCWSTR       LocaleName;
 } DEVPROPCOMPKEY, *PDEVPROPCOMPKEY;
 ```
 
 ## Members
 
-**Key**
+`Key`
 
 A [**DEVPROPKEY**](devpropkey.md) structure that represents a key for a property.
 
-**Store**
+`Store`
 
 A **DEVPROPSTORE**-typed value that indicates the property store. Here are possible values:
 
-**DEVPROP\_STORE\_SYSTEM**
+| Value | Meaning |
+| -- | -- |
+| DEVPROP\_STORE\_SYSTEM | This value indicates to use the system wide property store. |
+| DEVPROP\_STORE\_USER | This value indicates to use a property store specific to the current user. |
 
-**DEVPROP\_STORE\_USER**
-
-**LocaleName**
+`LocaleName`
 
 A string for the property's locale name.
 
@@ -50,7 +51,7 @@ A string for the property's locale name.
 <tbody>
 <tr class="odd">
 <td><p>Header</p></td>
-<td>Devpropdef.h (include Swdevice.h)</td>
+<td>Devpropdef.h</td>
 </tr>
 </tbody>
 </table>
