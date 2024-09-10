@@ -368,7 +368,7 @@ The following table provides links to bug check codes.
 | 0x0000015B | [**WORKER\_THREAD\_RETURNED\_WITH\_SYSTEM\_PAGE\_PRIORITY\_ACTIVE**](bug-check-0x15b--worker-thread-returned-with-system-page-priority-active.md) |
 | 0x00000160 | [**WIN32K\_ATOMIC\_CHECK\_FAILURE**](bug-check-0x160--win32k-atomic-check-failure.md)                                                             |
 | 0x00000162 | [**KERNEL\_AUTO\_BOOST\_INVALID\_LOCK\_RELEASE**](bug-check-0x162--kernel-auto-boost-invalid-lock-release.md)                                     |
-| 0x00000163 | [**WORKER\_THREAD\_TEST\_CONDITION**](bug-check-0x162--worker-thread-test-condition.md)                                                           |
+| 0x00000163 | [**WORKER\_THREAD\_TEST\_CONDITION**](bug-check-0x163--worker-thread-test-condition.md)                                                           |
 | 0x00000164 | [**WIN32K\_CRITICAL\_FAILURE**](bug-check-0x164--win32k-critical-failure.md)                                                                      |
 | 0x0000016C | [**INVALID\_RUNDOWN\_PROTECTION\_FLAGS**](bug-check-0x16c--invalid-rundown-protection-flags.md)                                                   |
 | 0x0000016D | [**INVALID\_SLOT\_ALLOCATOR\_FLAGS**](bug-check-0x16d--invalid-slot-allocator-flags.md)                                                           |
