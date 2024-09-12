@@ -19,9 +19,9 @@ The Windows Hardware Quality Labs (WHQL) test signature program supports test-si
 
 Install a driver from a WHQL test-signed driver package by following these steps:
 
-1. Disable secure boot on the computer. See [Disable Secure Boot](#disable-secure-boot).
+1. Disable secure boot on the computer. For instructions, see [Disable secure boot](#disable-secure-boot).
 
-1. Set the [testsigning boot configuration option](the-testsigning-boot-configuration-option.md) on the test computer. See [Setting the testsigning boot configuration option](#setting-the-testsigning-boot-configuration-option).
+1. Set the [testsigning boot configuration option](the-testsigning-boot-configuration-option.md) on the test computer. See [Set the testsigning boot configuration option](#set-the-testsigning-boot-configuration-option).
 
 1. Reboot the computer. Once rebooted, system displays a watermark in the bottom right corner of the screen indicating test mode, the Windows edition, and Windows build information.
 
@@ -29,7 +29,7 @@ Install a driver from a WHQL test-signed driver package by following these steps
 
 For information about how to obtain a WHQL test signature, send email to <winqual@microsoft.com> and include "Test Signature" in the subject line.
 
-## Disable Secure Boot
+## Disable secure boot
 
 1. Suspend BitLocker on the boot disk. BitLocker needs to be suspended before disabling secure boot in [UEFI](../bringup/uefi-in-windows.md). For more information, see [Suspend BitLocker protection for non-Microsoft software updates](/troubleshoot/windows-client/windows-security/suspend-bitlocker-protection-non-microsoft-updates).
 
