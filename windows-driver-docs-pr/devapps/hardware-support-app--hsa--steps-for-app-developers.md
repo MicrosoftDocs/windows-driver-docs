@@ -30,7 +30,7 @@ Starting in Windows 10 version 1709, you can specify that a Universal Windows Pl
 
 A developer account on the Microsoft Store is required. Hardware partners need a Microsoft Store account that is different from their Hardware partner account. You need the publisher name when you author the app manifest and the device metadata in later steps. You can also reserve a name for your app once you create a store profile.
 
-To create a Microsoft Store account, go to [Get started](https://developer.microsoft.com/microsoft-store). For more info, see [Publish Windows apps and games](/windows/apps/publish/).
+To create a Microsoft Store account, go to the [Windows Dev Center](https://developer.microsoft.com/windows). For more info, see [Publish Windows apps and games](/windows/apps/publish/).
 
 ## Choosing a programming language for the app
 
