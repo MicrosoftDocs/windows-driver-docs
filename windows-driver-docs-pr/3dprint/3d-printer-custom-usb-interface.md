@@ -107,8 +107,6 @@ This API is used by third-party manufacturers to print the document on their pri
 
     **HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Print\\Printers**
 
-![3d printer registry.](images/3d-printer-registry.png)
-
 ### HRESULT Query(\_In\_ LPCWSTR command, \_In\_ LPCWSTR commandData, \_Out\_ LPWSTR resultBuffer, \_Out\_ resultBufferSize, , \_In\_ LPVOID\* ppPartnerData)
 
 - **command** - string command sent as a query

@@ -210,12 +210,6 @@ The resulting signed SCCD will validate in any app package.
 
 Starting in Windows 10 version 1803, apps can declare custom capabilities from one or more SCCD files. Place the SCCD files in the root of the app package.
 
-## Summary of SCCD signing sequence
-
-The following diagram summarizes the sequence described above:
-
-![Getting an SCCD signed.](images/signsccd.png)
-
 ## SCCD XML Schema
 
 The following is the formal XML XSD schema for an SCCD file.  Use this schema to validate your SCCD before submitting it for review.  See [Schema Cache](/visualstudio/xml-tools/schema-cache) and [XML Document validation](/visualstudio/xml-tools/xml-document-validation) for info on importing a schema and validating with IntelliSense.
