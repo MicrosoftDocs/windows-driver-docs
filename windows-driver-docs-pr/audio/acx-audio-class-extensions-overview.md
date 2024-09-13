@@ -1,7 +1,7 @@
 ---
 title: ACX Audio Class Extensions Overview
 description: This topic provides a high level overview of the ACX Audio Class Extensions.
-ms.date: 06/14/2024
+ms.date: 09/12/2024
 ms.localizationpriority: medium
 ---
 
@@ -66,7 +66,7 @@ For a summary of the base ACX objects, see [Summary of ACX objects](acx-summary-
 
 ## Sample ACX driver
 
-A simple ACX sample driver is available to view and download on GitHub in the develop branch - [https://github.com/microsoft/Windows-driver-samples/tree/develop/audio/Acx/Samples](https://github.com/microsoft/Windows-driver-samples/tree/develop/audio/Acx/Samples).
+A simple ACX sample driver is available to view and download on GitHub in the develop branch - [https://github.com/microsoft/Windows-driver-samples/tree/main/audio/Acx/Samples](https://github.com/microsoft/Windows-driver-samples/tree/main/audio/Acx/Samples).
 
 ## Driver Verifier
 
