@@ -1,7 +1,7 @@
 ---
 title: Microsoft OS 2.0 Descriptors Specification
-description: Microsoft OS 2.0 Descriptors Specification
-ms.date: 02/07/2023
+description: This document defines and describes the implementation of version 2.0 of the Microsoft OS descriptors.
+ms.date: 09/17/2024
 ---
 
 # Microsoft OS 2.0 Descriptors Specification
@@ -10,8 +10,8 @@ This document defines and describes the implementation of version 2.0 of the Mic
 
 This information applies to the following operating systems:
 
- - Windows 10
- - Windows 8.1 Preview
+- Windows 10
+- Windows 8.1 Preview
 
 Please read the license agreement before continuing.
 
