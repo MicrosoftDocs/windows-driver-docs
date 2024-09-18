@@ -2,7 +2,7 @@
 title: Cross-Certificates for Kernel Mode Code Signing
 description: This information describes cross-certificates which are now deprecated for driver signing on Microsoft Windows.
 ms.date: 09/17/2024
-ai-usage:ai-assisted
+ai-usage: ai-assisted
 ---
 
 # Cross-Certificates for Kernel Mode Code Signing

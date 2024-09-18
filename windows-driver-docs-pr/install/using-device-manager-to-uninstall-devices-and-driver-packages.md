@@ -1,7 +1,8 @@
 ---
 title: Using Device Manager to Uninstall Devices and Driver Packages
 description: Using Device Manager to Uninstall Devices and Driver Packages
-ms.date: 06/26/2024
+ms.date: 09/17/2024
+ai-usage: ai-assisted
 ---
 
 # Using Device Manager to Uninstall Devices and Driver Packages
@@ -9,7 +10,7 @@ ms.date: 06/26/2024
 This page describes how to uninstall a device or driver package on Windows 10 and Windows 11.
 
 > [!CAUTION]
-> Before uninstalling a device, we recommend physically unplugging the device from the system.  If the device is uninstalled before it is unplugged, Windows may rediscover the device and reinstall drivers for it in the time between the uninstall and unplugging the device.
+> Before uninstalling a device, we recommend physically unplugging the device from the system.  If the device is uninstalled before it is unplugged, Windows may subsequently rediscover the device and reinstall drivers for it. This can happen immediately after the uninstall or upon rebooting the system.
 
 First, open Settings (you can do this using the `Windows+I` keyboard shortcut) and type Remove. Select **Add or remove programs**. If the device or driver package that you wish to remove appears in the list of programs, select uninstall.
 
@@ -24,3 +25,15 @@ Then follow these steps:
 You may also need to restart the computer.
 
 For more information about uninstalling driver and driver packages, see [How Devices and Driver Packages are Uninstalled](how-devices-and-driver-packages-are-uninstalled.md).
+
+## Ensuring Permanent Removal
+
+To ensure that a driver is permanently removed and not reinstalled automatically, you need to delete the driver from the Windows driver repository (DriverStore). This can be done using the `pnputil` command. For example, you can use the following command to delete a driver:
+
+   ```shell
+   pnputil /delete-driver <Published Name> /uninstall /force
+   ```
+
+Note that this command deletes a driver package even if it is in use by devices, and also disables a device even if it provides critical system functionality.
+
+Also be aware that Windows Update may also reinstall drivers if it detects that a necessary driver is missing. You may need to adjust your Windows Update settings to prevent this.
