@@ -62,7 +62,7 @@ Microsoft ships as part of the [Windows Driver Kit (WDK)](../download-the-wdk.md
 2. Call dvl.exe by passing the /manualCreate flag, a driver name, a desired architecture and /sarifPath. Where /sarifPath is the path to the folder containing the sarif file.
 
 ```cmd
-"C:\Program Files (x86)\Windows Kits\10\Tools\dvl\dvl.exe" /manualCreate <driverName> <driverArchitecture> /<sarifPath>
+"C:\Program Files (x86)\Windows Kits\10\Tools\dvl\dvl.exe" /manualCreate <driverName> <driverArchitecture> /sarifPath <pathToSarifLocation>
 ```
 
 ### When using CA and SDV follow these steps to generate the DVL:
