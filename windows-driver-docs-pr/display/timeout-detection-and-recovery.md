@@ -1,17 +1,28 @@
 ---
-title: Timeout Detection and Recovery (TDR)
+title: WDDM Support for Timeout Detection and Recovery (TDR)
 description: Describes timeout detection and recovery (TDR) for the Windows Display Driver Model (WDDM)
 keywords:
-- TDR (timeout detection and recovery) WDK display drivers
-- TDR (timeout detection and recovery) WDK graphics drivers
-ms.date: 12/06/2023
+- TDR (timeout detection and recovery), WDK display drivers
+- TDR (timeout detection and recovery), WDK graphics drivers
+- TDR (timeout detection and recovery), WDDM
+ms.date: 09/20/2024
 ---
 
-# Timeout detection and recovery (TDR)
+# WDDM support for timeout detection and recovery
 
-This article describes timeout detection and recovery (TDR) for driver developers. For more information, see [TDR in Windows 8 and later](tdr-changes-in-windows-8.md).
+This article describes how the Windows Display Driver Model (WDDM) supports timeout detection and recovery (TDR). It provides an overview of the TDR process, explains how timeout detection works in WDDM, and describes the steps taken to recover from a timeout.
+
+The audience for this article is display/graphics driver developers.
+
+For more information about TDR in WDDM, see the following articles:
+
+* [TDR changes in Windows 8 and later](tdr-changes-in-windows-8.md)
+* [Thread synchronization and TDR](thread-synchronization-and-tdr.md)
+* [Testing and debugging TDR](tdr-registry-keys.md)
 
 ## Overview
+
+TDR is a feature in Windows that detects when the graphics card is taking longer than expected to complete an operation. It then resets the graphics card to prevent the entire system from becoming unresponsive.
 
 One of the most common stability problems in graphics occurs when a computer appears to "hang" or be completely "frozen" when it's actually processing an end-user command or operation. Many users wait a few seconds and then decide to reboot the computer. The frozen appearance of the computer frequently occurs because the GPU is busy processing intensive graphical operations, typically during game play, and hence doesn't update the display screen. TDRs enable the operating system to detect that the UI isn't responsive.
 
@@ -21,7 +32,7 @@ The following figure shows the TDR process.
 
 The OS attempts to detect situations in which computers appear to be "frozen". The OS then attempts to dynamically recover from the frozen situations so that desktops are responsive again, alleviating the situation where end users needlessly reboot their systems.
 
-By default, if the OS detects that five (5) or more GPU hangs ([0x117](../debugger/bug-check-0x117---video-tdr-timeout-detected.md)) and subsequent recoveries occur within one (1) minute, the OS bug-checks the computer on the next (sixth or more) GPU hang. For more information, see [TdrLimitCount](tdr-registry-keys.md#tdrlimitcount) and [TdrLimitTime](tdr-registry-keys.md#tdrlimittime).
+By default, the OS bug-checks the computer on the sixth (or more) GPU hang when it detects that five (5) or more GPU hangs ([0x117](../debugger/bug-check-0x117---video-tdr-timeout-detected.md)) and subsequent recoveries occur within one (1) minute. For more information, see [TdrLimitCount](tdr-registry-keys.md#tdrlimitcount) and [TdrLimitTime](tdr-registry-keys.md#tdrlimittime).
 
 As a side note, engine timeouts ([0x141](../debugger/bug-check-0x141---video-engine-timeout-detected.md)) don’t contribute to the GPU hang count, though the OS could promote an engine timeout to a GPU hang if the engine timeout is unsuccessful. For engine timeouts (0x141), the maximum number is one less than for adapter timeouts (0x117). The engine reset process blocks GPU access for the process that’s causing such timeouts, and the system logs [0x142](../debugger/bug-check-0x142--video-tdr-application-blocked.md) to indicate that fact. In this way, the malfunctioning process doesn’t bug-check the system.
 
