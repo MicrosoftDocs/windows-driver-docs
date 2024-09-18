@@ -68,7 +68,7 @@ The provided links for the SDK and the WDK have matching build numbers, which is
 
 The WDK Visual Studio extension is included in the default WDK installation.
 
-In Visual Studio versions 17.11.0 and 17.11.1, the WDK extension should be installed with Visual Studio. However, the checkbox to install the VSIX extension still appears in the WDK installer settings.  *You need to deselect this checkbox to prevent an install failure.*
+Starting with Visual Studio versions 17.11.0 and later, the WDK extension can be automatically installed when Visual Studio WDK Indiviual component  is selected. However, the checkbox to install the VSIX extension still appears in the WDK installer settings.  *You need to deselect this checkbox to prevent an install failure.*
 
 ![Install Windows Driver Kit Visual Studio extension checkbox](images/wdk_extension_checkbox.png)
 
