@@ -42,7 +42,7 @@ Some UWP device app and APIs require that your device supports a Microsoft-suppl
 
 A developer account on the Microsoft Store is required. You'll need the publisher name when you author the app manifest and the device metadata in later steps. You can also reserve a name for your app once you've created a store profile.
 
-To create a Microsoft Store account, go to the [UWP apps sign up page](https://developer.microsoft.com/microsoft-store/register/) and click **Sign up**.
+To create a Microsoft Store account, go to the [Windows Dev Center](https://developer.microsoft.com/windows).
 
 When you enter the **publisher display name**, enter the name under which your apps should be listed in the Microsoft Store. You won't be able to change this name until your account verification is complete. Choose the name carefully, as customers will see this name when browsing and will come to know your apps by this name.
 

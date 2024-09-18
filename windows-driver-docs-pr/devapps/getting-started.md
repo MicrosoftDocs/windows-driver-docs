@@ -1,10 +1,10 @@
 ---
-title: Getting Started with UWP Device Apps
+title: Get Started with UWP Device Apps
 description: Start here to begin building UWP device apps.
 ms.date: 03/17/2023
 ---
 
-# Getting started with UWP device apps
+# Get started with UWP device apps
 
 Start here to begin building UWP device apps.
 
@@ -44,7 +44,7 @@ If you don't need to develop drivers, you can use Microsoft Visual Studio Expres
 
 A UWP device app is a special kind of UWP app. So, before you develop your first UWP device app, get set up to build some regular UWP apps.
 
-- [Sign up - register for a Microsoft Store developer account](https://developer.microsoft.com/microsoft-store/register/)
+- Sign up for a Microsoft Store developer account at [Windows Dev Center](https://developer.microsoft.com/windows)
 
 - [Get started with Microsoft Visual Studio](/previous-versions/windows/apps/br211384(v=win.10))
 
