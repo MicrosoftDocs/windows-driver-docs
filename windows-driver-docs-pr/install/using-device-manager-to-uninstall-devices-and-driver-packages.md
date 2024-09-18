@@ -20,7 +20,7 @@ Then follow these steps:
 
 1. Select the View menu and turn on **Show Hidden Devices**.
 1. Expand the node that represents the type of device that you want to uninstall, right-select the device entry for the device you want to uninstall, and select **Uninstall device**.
-1. On the **Confirm Device Removal** dialog box, if you wish to remove the driver package in addition to uninstalling the device, select the **Delete the driver software for this device** option. When ready to complete the operation, select **OK**. If this option does not appear, see [Deleting a Driver Package from the Driver Store](./how-devices-and-driver-packages-are-uninstalled.md#deleting-a-driver-package-from-the-driver-store) for additional information.
+1. On the **Confirm Device Removal** dialog box, if you wish to remove the driver package in addition to uninstalling the device, select the **Delete the driver software for this device** option. When ready to complete the operation, select **OK**. Ensure that you are logged in with an account that has administrative privileges. The option to delete the driver software may not appear if you do not have the necessary permissions.
 
 You may also need to restart the computer.
 
@@ -37,3 +37,11 @@ To ensure that a driver is permanently removed and not reinstalled automatically
 Note that this command deletes a driver package even if it is in use by devices, and also disables a device even if it provides critical system functionality.
 
 Also be aware that Windows Update may also reinstall drivers if it detects that a necessary driver is missing. You may need to adjust your Windows Update settings to prevent this.
+
+## Additional Considerations
+- **System Restore Point**: Before making any changes, create a system restore point to ensure you can revert back if something goes wrong.
+- **Windows Updates**: Ensure your system is up to date, as updates may resolve issues with driver management.
+
+## Related topics
+
+[Deleting a Driver Package from the Driver Store](./how-devices-and-driver-packages-are-uninstalled.md#deleting-a-driver-package-from-the-driver-store)
