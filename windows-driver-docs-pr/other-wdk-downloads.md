@@ -99,7 +99,7 @@ develop, build, package, deploy, test, and debug drivers.
 
 | Released with      | WDK and related downloads                       |
 |--------------------------|-------------------------------------------------|
-|Windows 11, Version 24H2 | [WDK 10.0.26100.1 (released May 22, 2024)](./download-the-wdk.md)|
+|Windows 11, Version 24H2 | [WDK 10.0.26100.1591 (released September 18, 2024)](https://go.microsoft.com/fwlink/?linkid=2286137)|
 |Windows 11, Version 23H2 | [WDK 10.1.22621.2428 (released October 24, 2023)](https://go.microsoft.com/fwlink/?linkid=2249371)|
 |Windows 11, version 22H2  | [WDK for Windows 11, version 22H2 (10.0.22621.382, released May 24, 2022)](https://go.microsoft.com/fwlink/?linkid=2196230)|
 |Windows 11, version 21H2  | [WDK for Windows 11, version 21H2](https://go.microsoft.com/fwlink/?linkid=2166289)|
@@ -140,7 +140,7 @@ For more information about the EWDK, see
 
 | Versions of Windows               | EWDK                              |
 |-----------------------------------|-----------------------------------|
-| Windows 11, version 24H2 | [Windows 11, version 24H2 (updated May 2024) EWDK](/legal/windows/hardware/enterprise-wdk-license-2022)
+| Windows 11, version 24H2 | [Windows 11, version 24H2 (updated September 2024) EWDK](/legal/windows/hardware/enterprise-wdk-license-2022)
 | Windows 11, version 22H2 | [Windows 11, version 22H2 (updated May 2023) EWDK](/legal/windows/hardware/enterprise-wdk-license-2022)
 | Windows 11, version 21H2          | [Windows 11, version 21H2 EWDK](/legal/windows/hardware/enterprise-wdk-license-2019-New) |
 | Windows Server 2022               | [EWDK for Windows Windows Server 2022](/legal/windows/hardware/enterprise-wdk-license-2019) |

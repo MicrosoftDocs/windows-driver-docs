@@ -8,7 +8,7 @@ keywords:
 - winget
 - install
 - download
-ms.date: 08/22/2024
+ms.date: 09/17/2024
 ---
 
 # Install the WDK using WinGet
@@ -19,7 +19,7 @@ Refer to the [WinGet install documentation](/windows/package-manager/winget/#ins
 
 ## Install the latest WDK step by step using WinGet
 
-The latest version of the WDK is 10.0.26100. It requires Visual Studio 2022 and Windows SDK 10.0.26100. For more info, see [Kit versioning](./download-the-wdk.md#kit-versioning).
+The latest version of the WDK is 10.0.26100.1591. It requires Visual Studio 2022 and Windows SDK 10.0.26100.1 For more info, see [Kit versioning](./download-the-wdk.md#kit-versioning).
 
 ### Step 1: Install Visual Studio 2022
 
@@ -92,14 +92,14 @@ winget install --source winget --exact --id Microsoft.WindowsSDK.10.0.26100 --lo
 ```
 **Windows WDK**:
 ```cmd
-winget install --source winget --exact --id Microsoft.WindowsWDK.10.0.26100 --log $env:USERPROFILE/Desktop/wdk-install.log
+winget install --source winget --exact --id Microsoft.WindowsWDK.10.0.26100.1591 --log $env:USERPROFILE/Desktop/wdk-install.log
 ```
 
-If you are using VS 17.11.0 or 17.11.1, uncheck the install extension checkbox.
+If you are using VS 17.11.0 or later, uncheck the install extension checkbox.
 
 ### Step 3: Install WDK Visual Studio extension
 
-(If you are using VS 17.11.0 or 17.11.1, skip this step.)
+> [!NOTE] This section is only application when using VS earlier than 17.11.0 release
 
 After installing the WDK from command line, you will need to install the Windows Driver Kit Visual Studio extension separately to be able to build and test drivers. By default, the extension is located under `%ProgramFiles(x86)%\Windows Kits\10\Vsix\VS2022\10.0.26100.0\%PROCESSOR_ARCHITECTURE%\WDK.vsix`.
 
