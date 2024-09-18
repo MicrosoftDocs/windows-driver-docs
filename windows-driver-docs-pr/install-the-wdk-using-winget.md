@@ -99,7 +99,7 @@ winget install --source winget --exact --id Microsoft.WindowsSDK.10.0.26100 --lo
 **Windows WDK**:
 
 ```cmd
-winget install --source winget --exact --id Microsoft.WindowsWDK.10.0.26100.1591 --log $env:USERPROFILE/Desktop/wdk-install.log
+winget install --source winget --exact --id Microsoft.WindowsWDK.10.0.26100 --log $env:USERPROFILE/Desktop/wdk-install.log
 ```
 
 If you are using VS 17.11.0 or later, uncheck the install extension checkbox.
