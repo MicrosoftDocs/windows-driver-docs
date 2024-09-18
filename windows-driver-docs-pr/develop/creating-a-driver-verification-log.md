@@ -1,12 +1,12 @@
 ---
 title: Creating a Driver Verification Log
 description: Learn why the Windows Server Hardware Certification Program requires a Driver Verification Log (DVL) for all applicable driver submissions.
-ms.date: 08/19/2024
+ms.date: 09/17/2024
 ---
 
 # Creating a Driver Verification Log
 
-The [Windows Hardware Certification Program](/windows-hardware/design/compatibility/) requires a Driver Verification Log (DVL) for driver submissions. The DVL can contain a summary of the results from Code Analysis (CA), Static Driver Verifier (SDV), and [CodeQL](../devtest/static-tools-and-codeql.md). The DVL does not contain any source code information. You must run CodeQL, the Code Analysis tool and Static Driver Verifier as required, prior to creating a DVL for your driver. For additional details, see [Static Tools Logo Test](/windows-hardware/test/hlk/testref/6ab6df93-423c-4af6-ad48-8ea1049155ae) and [CodeQL and the Static Tools Logo Test](../devtest/static-tools-and-codeql.md).
+The [Windows Hardware Certification Program](/windows-hardware/design/compatibility/) requires a Driver Verification Log (DVL) for driver submissions. The DVL can contain a summary of the results from Static Analysis Tools, [CodeQL](../devtest/static-tools-and-codeql.md). The DVL does not contain any source code information. You must run CodeQL, the Code Analysis tool and Static Driver Verifier as required, prior to creating a DVL for your driver. For additional details, see [Static Tools Logo Test](/windows-hardware/test/hlk/testref/6ab6df93-423c-4af6-ad48-8ea1049155ae) and [CodeQL and the Static Tools Logo Test](../devtest/static-tools-and-codeql.md).
 
 ## To create a driver verification log
 
@@ -59,11 +59,10 @@ Microsoft ships as part of the [Windows Driver Kit (WDK)](../download-the-wdk.md
 Follow the steps below to create the DVL from CodeQL sarif file via command-line:
 
 1. Locate dvl.exe from the WDK or a mounted eWDK. This is typically installed in the path "C:\Program Files (x86)\Windows Kits\10\Tools\dvl\dvl.exe"
-2. Call dvl.exe by passing the /manualCreate flag, a driver name, a desired architecture and /sarifPath.
-3. Where /sarifPath is the file path to the CodeQL Sarif File.
+2. Call dvl.exe by passing the /manualCreate flag, a driver name, a desired architecture and /sarifPath. Where /sarifPath is the path to the folder containing the sarif file.
 
 ```cmd
-"C:\Program Files (x86)\Windows Kits\10\Tools\dvl\dvl.exe" /manualCreate <driverName> <driverArchitecture> /sarifPath
+"C:\Program Files (x86)\Windows Kits\10\Tools\dvl\dvl.exe" /manualCreate <driverName> <driverArchitecture> /<sarifPath>
 ```
 
 One of the following strings should be used for your driverArchitecture string:
