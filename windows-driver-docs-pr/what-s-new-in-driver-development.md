@@ -1,7 +1,7 @@
 ---
 title: What's New in Driver Development for Windows 11, Version 24H2
 description: This section describes new features for driver development in Windows 11, version 24H2.
-ms.date: 08/20/2024
+ms.date: 09/18/2024
 ---
 
 # <a name="top"></a>What's new in driver development for Windows 11, version 24H2
@@ -10,7 +10,7 @@ This section describes new features and updates for driver development in Window
 
 ## WDK NuGet package support
 
-The WDK NuGet package consists of essential libraries, headers, DLL, tools and metadata used for building Windows drivers that can be shared and supported by modern CI/CD pipelines. Users can access and consume the NuGet packages directly from nuget.org within Visual Studio. Using NuGet with the WDK provides a convenient solution for WDK acquisition and updates. It manages dependencies such as the SDK, to help keep the driver development tool chain up to date. For more information, see [Install the latest WDK using NuGet - Step by Step](install-the-wdk-using-nuget.md#install-the-latest-wdk-using-nuget---step-by-step). 
+The WDK NuGet package consists of essential libraries, headers, DLL, tools and metadata used for building Windows drivers that can be shared and supported by modern CI/CD pipelines. Users can access and consume the NuGet packages directly from nuget.org within Visual Studio. Using NuGet with the WDK provides a convenient solution for WDK acquisition and updates. It manages dependencies such as the SDK, to help keep the driver development tool chain up to date. For more information, see [Install the latest WDK using NuGet - Step by Step](install-the-wdk-using-nuget.md).
 
 ## ARM64 support
 
@@ -21,9 +21,13 @@ Starting from WDK version 10.0.26100.1, WDK now supports development, testing an
 Updates to the [ACX audio class extensions overview](./audio/acx-audio-class-extensions-overview.md) and the [Windows 11 APIs for Audio Processing Objects](./audio/windows-11-apis-for-audio-processing-objects.md) articles including new information on the following:
 
 - [ACX multi circuit composition](./audio/acx-multi-circuit-composition.md)
+
 - [ACX multi stack cross driver communications](./audio/acx-multi-stack.md)
+
 - [ACX audio data formats and data format lists](./audio/acx-data-formats.md)
+
 - [ACX power management](./audio/acx-power-management.md)
+
 - [ACX WDF driver lifetime management](./audio/acx-wdf-driver-lifetime-management.md)
 
 ## Camera and streaming media
@@ -59,7 +63,9 @@ GPUs are increasingly used in artificial intelligence and machine learning scena
 - A [GPU native fence synchronization object](./display/native-gpu-fence-objects.md) is added as an extension to the monitored fence object, supporting the following extra features:
 
   - GPU wait on monitored fence value, which allows for high performance engine-to-engine synchronization without requiring CPU round trips.
+  
   - Conditional interrupt notification only for GPU fence signals that have CPU waiters, enabling substantial power savings.
+  
   - Fence value storage in the GPU's local memory.
 
 - [User-mode work submission](./display/user-mode-work-submission.md) is an in-progress feature that isn't yet enabled for final use. This feature allows user-mode drivers to submit work directly to the GPU without kernel-mode intervention.
@@ -91,7 +97,9 @@ Starting in Windows 11, version 24H2:
 - UDP Receive Segment Coalescing Offload (URO) is a new hardware offload feature that enables network interface cards (NICs) to coalesce UDP receive segments. For more information, see [UDP Receive Segment Coalescing Offload (URO)](network/udp-rsc-offload.md) and [NetAdapterCx URO](netcx/rsc-offload.md).
 
 - [WiFiCx Wi-Fi 7](./netcx/wificx-wi-fi-7.md) introduces support for Wi-Fi 7 features, providing faster connectivity speeds, lower latency, and improved security. WiFiCx Wi-Fi 7 enables:
+  
   - Multi-Link Operation (MLO) with roaming differentiation to leverage multiple simultaneous channels to the Wi-Fi access point (AP).
+  
   - Enhanced capabilities for WPA3-SAE authentication and Opportunistic Wireless Encryption (OWE) with GCMP-256 cipher.
 
 - [WiFiCx WPA3 SoftAP](./netcx/wificx-wpa3-softap.md) enables devices to set up a Soft Access Point (SoftAP) using the Wi-Fi Protected Access 3 - Simultaneous Authentication of Equals (WPA3-SAE) security protocol.
@@ -119,8 +127,11 @@ Four new *wdm.h* power management DDIs for Windows 11, version 24H2:
 ## Install
 
 - **INF AddComClass directive**: An *AddComClass* directive is used within a `com-server-install-section` and registers a COM class.
+
 - **INF AddComServer directive**: An *AddComServer* directive is used within a `DDInstall.COM` section and registers a COM server.
+
 - **INF DDInstall.COM section**: The `DDInstall.COM` section contains one or more INF *AddComServer* directives that reference other INF-writer-defined sections in an INF file.
+
 - The driver package INF registry conversion tool (`reg2inf.exe`) converts a registry key and its values or a COM .dll implementing a **[DllRegisterServer](/windows/win32/api/olectl/nf-olectl-dllregisterserver)** routine into a set of [INF AddReg directives](./install/inf-addreg-directive.md) or [INF DDInstall.COM section](./install/inf-ddinstall-com-section.md) for in-proc COM servers for inclusion into a driver package INF file.
 
 ## USB
@@ -130,6 +141,7 @@ Four new *wdm.h* power management DDIs for Windows 11, version 24H2:
 ## Sensors
 
 - Support for new human presence fields in proximity sensors through **[HUMAN_PRESENCE_DETECTION_TYPE](/windows-hardware/drivers/ddi/sensorsdef/ne-sensorsdef-human_presence_detection_type)** and **[PROXIMITY_SENSOR_CAPABILITIES](/windows-hardware/drivers/ddi/sensorsdef/ne-sensorsdef-proximity_sensor_capabilities)**.
+
 - Humans presence updates include support for tracking multiple humans.
 
 ## Driver security  
@@ -151,15 +163,25 @@ You can now live debug a Linux process. For more information, see these articles
 ### Other WinDbg updates and new features
 
 - [Source Code Extended Access](./debugger/source-code-extended-access.md)
+
 - [Open Enclave debugging](./debugger/open-enclave-debugging.md)
+
 - [Ambiguous breakpoint resolution](./debugger/ambiguous-breakpoint-resolution.md)
+
 - [WinDbg - Restricted Mode](./debugger/windbg-restricted-mode-preview.md)
+
 - Improved [JavaScript Debugger Scripting - JavaScript Debugging](./debugger/javascript-debugger-scripting.md#javascript-debugging)
+
 - Accessibility improvements
+
 - Time Travel Debugging on ARM64
+
 - Smart number selection and search
+
 - New disassembly window
+
 - Updates to [Supported Ethernet NICs for Network Kernel Debugging in Windows 11](./debugger/supported-ethernet-nics-for-network-kernel-debugging-in-windows-11.md)
+
 - Expanded bug check information including new bug checks described in [Bug Check Code Reference](./debugger/bug-check-code-reference2.md)
 
 ## Related articles
@@ -167,9 +189,13 @@ You can now live debug a Linux process. For more information, see these articles
 For information on what was new for drivers in past Windows releases, see the following pages:
 
 - [Driver development changes for Windows 11, version 23H2](driver-changes-for-windows-11-version-23h2.md)
+
 - [Driver development changes for Windows 11, version 22H2](driver-changes-for-windows-11-version-22h2.md)
+
 - [Driver development changes for Windows 11, version 21H2](driver-changes-for-windows-11-version-21h2.md)
+
 - [Driver development changes for Windows Server 2022](driver-changes-for-windows-server-2022.md)
+
 - [Driver development changes for Windows 10, version 2004](driver-changes-for-windows-10-version-2004.md)
 
 [Back to Top](#top)
