@@ -1,34 +1,34 @@
 ---
 title: Microsoft OS 1.0 Descriptors Specification
 description: Microsoft OS 1.0 Descriptors Specification
-ms.date: 02/07/2023
+ms.date: 09/18/2024
 ---
 
 # Microsoft OS 1.0 Descriptors Specification
 
-USB devices store standard descriptors in firmware for the device, and its interfaces and endpoints. Independent hardware vendors (IHVs) can also store class and vendor-specific descriptors. However, the types of information that these descriptors can contain is limited. IHVs typically must use Windows Update or media such as a CD to provide their users with a variety of device-specific information such as pictures, icons, custom drivers and so on.
+USB devices store standard descriptors in firmware for the device, and its interfaces and endpoints. Independent hardware vendors (IHVs) can also store class and vendor-specific descriptors. However, the types of information that these descriptors can contain is limited. IHVs typically must use Windows Update or media such as a CD to provide their users with various device-specific information such as pictures, icons, custom drivers and so on.
 
-To help IHVs address this issue, Microsoft has defined Microsoft OS descriptors. These descriptors can be used by IHVs to store in firmware much of the information that is now typically provided to customers separately. Versions of Windows that are aware of Microsoft OS descriptors use control requests to retrieve the information, and use it to install and configure the device without requiring any user interaction. This white paper provides an introduction to Microsoft OS descriptors, including a discussion of how they are stored and retrieved.
+To help IHVs address this issue, Microsoft defined Microsoft OS descriptors. IHVs can use these descriptors to store in firmware much of the information that is now typically provided to customers separately. Versions of Windows that are aware of Microsoft OS descriptors use control requests to retrieve the information, and use it to install and configure the device without requiring any user interaction. This white paper provides an introduction to Microsoft OS descriptors, including a discussion of how they're stored and retrieved.
 
 > [!NOTE]
 > The table of compatible and sub-compatible IDs in Appendix 1 of "Extended Compat ID OS Feature Descriptor Specification" is current as of the time the specification was written, but might have since changed. The following table contains the most recent list of compatible and sub-compatible IDs. All IDs must be eight bytes, so any unused characters are filled with NULLs.
 
-| CompatibleID | Sub-compatible ID | Description |
-|---|---|---|
-| (0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00) | (0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00) | No compatible or sub-compatible ID |
-| "RNDIS"<br/>(0x52 0x4E 0x44 0x49 0x53 0x00 0x00 0x00) | (0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00) | Remote Network Driver Interface Standard (RNDIS) |
-| "PTP"<br/>(0x50 0x54 0x50 0x00 0x00 0x00 0x00 0x00) | (0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00) | Picture Transfer Protocol (PTP) |
-| "MTP"<br/>(0x4D 0x54 0x50 0x00 0x00 0x00 0x00 0x00) | (0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00) | Media Transfer Protocol (MTP) |
-| "XUSB20"<br/>(0x58 0x55 0x53 0x42 0x32 0x30 0x00 0x00) | (0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00) | XNACC (Krypton) |
-| "BLUTUTH"<br/>(0x42 0x4C 0x55 0x54 0x55 0x54 0x48 0x00) | "11"(0x31 0x31 0x00 0x00 0x00 0x00 0x00 0x00) | Bluetooth radios compliant with v1.1 and compatible with the Microsoft driver stack |
-| "BLUTUTH"<br/>(0x42 0x4C 0x55 0x54 0x55 0x54 0x48 0x00) | "12"(0x31 0x32 0x00 0x00 0x00 0x00 0x00 0x00) | Bluetooth radios compliant with v1.2 and compatible with the Microsoft driver stack |
-| "BLUTUTH"<br/>(0x42 0x4C 0x55 0x54 0x55 0x54 0x48 0x00) | "EDR"(0x45 0x44 0x52 0x00 0x00 0x00 0x00 0x00) | Bluetooth radios compliant with v2.0 + EDR and compatible with the Microsoft driver stack |
-| "SCAN"<br/>(0x53 0x43 0x41 0x4E 0x00 0x00 0x00 0x00) | Format as follows: 2 Letter vendor code + 1-5 ASCII characters\* + 0x00<br/><br/>\*ASCII restricted to uppercase letters, numbers, underscores. | Scan |
-| "3DPRINT"<br/>(0x33 0x44 0x50 0x52 0x49 0x4E 0x54 0x00) | Varies | MS3DPRINT G-Code 3D Printer |
+| CompatibleID | Subcompatible ID | Description |
+|--|--|--|
+| (0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00) | (0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00) | No compatible or subcompatible ID |
+| "RNDIS"<br>(0x52 0x4E 0x44 0x49 0x53 0x00 0x00 0x00) | (0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00) | Remote Network Driver Interface Standard (RNDIS) |
+| "PTP"<br>(0x50 0x54 0x50 0x00 0x00 0x00 0x00 0x00) | (0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00) | Picture Transfer Protocol (PTP) |
+| "MTP"<br>(0x4D 0x54 0x50 0x00 0x00 0x00 0x00 0x00) | (0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00) | Media Transfer Protocol (MTP) |
+| "XUSB20"<br>(0x58 0x55 0x53 0x42 0x32 0x30 0x00 0x00) | (0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00) | XNACC (Krypton) |
+| "BLUTUTH"<br>(0x42 0x4C 0x55 0x54 0x55 0x54 0x48 0x00) | "11"(0x31 0x31 0x00 0x00 0x00 0x00 0x00 0x00) | Bluetooth radios compliant with v1.1 and compatible with the Microsoft driver stack |
+| "BLUTUTH"<br>(0x42 0x4C 0x55 0x54 0x55 0x54 0x48 0x00) | "12"(0x31 0x32 0x00 0x00 0x00 0x00 0x00 0x00) | Bluetooth radios compliant with v1.2 and compatible with the Microsoft driver stack |
+| "BLUTUTH"<br>(0x42 0x4C 0x55 0x54 0x55 0x54 0x48 0x00) | "EDR"(0x45 0x44 0x52 0x00 0x00 0x00 0x00 0x00) | Bluetooth radios compliant with v2.0 + EDR and compatible with the Microsoft driver stack |
+| "SCAN"<br>(0x53 0x43 0x41 0x4E 0x00 0x00 0x00 0x00) | Format as follows: Two-letter vendor code + 1-5 ASCII characters\* + 0x00<br><br>\*ASCII restricted to uppercase letters, numbers, underscores. | Scan |
+| "3DPRINT"<br>(0x33 0x44 0x50 0x52 0x49 0x4E 0x54 0x00) | Varies | MS3DPRINT G-Code 3D Printer |
 
 This information applies to Windows XP and later versions of Windows.
 
-Please read the license agreement before continuing.
+Read the license agreement before continuing.
 
 ## Microsoft OS Descriptors Specification
 

@@ -13838,6 +13838,11 @@
             "redirect_document_id": false
         },
         {
+          "source_path": "windows-driver-docs-pr/usbcon/microsoft-defined-usb-frameworks.md",
+          "redirect_URL": "/windows-hardware/drivers/usbcon/system-supplied-usb-drivers",
+          "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/usbcon/sending-a-usb-idle-request-irp.md",
             "redirect_URL": "/windows-hardware/drivers/usbcon/usb-selective-suspend",
             "redirect_document_id": false
