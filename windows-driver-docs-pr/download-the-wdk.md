@@ -84,7 +84,7 @@ In Visual Studio versions 17.11.0 and later, the WDK extension should be install
 ![Install Windows Driver Kit Visual Studio extension checkbox](images/wdk-extension-checkbox-deselected.png)
 
 > [!TIP]
-> If you can't find driver project templates in Visual Studio, the WDK Visual Studio extension didn't install properly. To resolve this, run the WDK.vsix file from this location: C:\Program Files (x86)\Windows Kits\10\Vsix\VS2022\10.0.26100.1\WDK.vsix.
+> If you can't find driver project templates in Visual Studio, the WDK Visual Studio extension didn't install properly. To resolve this,launch Visual Studio Installer, click "Modify", add "Windows Driver Kits" in the Individual Component tab and Click "Modify"
 
 ## ![download icon for EWDK](images/download-install.png) Enterprise WDK (EWDK)
 
