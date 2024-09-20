@@ -352,8 +352,6 @@
     href: supported-usb-classes.md
   - name: "USB serial driver (Usbser.sys)"
     href: usb-driver-installation-based-on-compatible-ids.md
-  - name: "Microsoft-Defined USB Driver Frameworks"
-    href: microsoft-defined-usb-frameworks.md
   - name: "USB Device Registry Entries"
     href: usb-device-specific-registry-settings.md
   - name: "Usbccgp.sys"
