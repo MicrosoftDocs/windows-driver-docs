@@ -2,7 +2,7 @@
 title: How to limit or expand a driver's distribution based on Windows version
 description: Creating a floor or ceiling for a driver submission in order to change its distribution.
 ms.topic: article
-ms.date: 09/19/2024
+ms.date: 09/20/2024
 ---
 
 # How to limit or expand a driver's distribution based on Windows version
@@ -127,7 +127,7 @@ As the submission owner, you're the only one that can expand your submission.
 1. Scroll to the bottom of the page and select **Publish** to finalize your share actions.
 1. Inform your OEM to come to this page and read [Use Case 2](#use-case-2-publishing-an-expanded-submission-to-a-specific-os-level).
 
-If you already shared a driver with your partner, you could expand it later and share the extended item. Be aware though, that the original shared submission is deprecated, and your partner is only able to use the latest shared submission from you. For more information about deprecated items, see the [Revoke/Revoke All](sharing-drivers-with-your-partners.md#revokerevoke-all) section.
+If you already shared a driver with your partner, you could expand it later and share the extended item. Be aware though, that the original shared submission is deprecated, and your partner is only able to use the latest shared submission from you. For more information about deprecated items, see the [Revoke a hardware ID](sharing-drivers-with-your-partners.md#revoke-a-hardware-id) section.
 
 ### Use Case 2: Publishing an expanded submission to a specific OS level
 
