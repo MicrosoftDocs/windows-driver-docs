@@ -1,5 +1,7 @@
 - name: "What's new in driver development for Windows 11, version 24H2"
   href: what-s-new-in-driver-development.md
+- name: "Windows Drivers Kit (WDK) release notes"
+  href: wdk-release-notes.md
 - name: "New in previous releases"
   items:
   - name: "What's new in driver development for Windows 11, version 23H2"
