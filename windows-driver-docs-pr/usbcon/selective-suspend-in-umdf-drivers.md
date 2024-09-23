@@ -34,13 +34,13 @@ By default, WinUSB.sys is the PPO for a device stack that contains a UMDF USB dr
 
 1. Call **IWDFDeviceInitialize::SetPowerPolicyOwnership** and pass **TRUE**, typically from the **IDriverEntry::OnDeviceAdd** method on the driver callback object. For example:
 
-    ``` syntax
+    ```cpp
     FxDeviceInit->SetPowerPolicyOwnership(TRUE);
     ```
 
 2. Disable power policy ownership in WinUSB. In the driver's INF file, include an **AddReg** directive that sets the **WinUsbPowerPolicyOwnershipDisabled** value in the registry to a nonzero value. The **AddReg** directive must appear in a DDInstall.HW section. For example:
 
-    ``` syntax
+    ```syntax
     [MyDriver_Install.NT.hw]
     AddReg=MyDriver_AddReg
 

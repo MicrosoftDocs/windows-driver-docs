@@ -132,7 +132,7 @@ The descriptor is as follows:
 
 #### Video control class-specific descriptor
 
-``` syntax
+```syntax
     . . . .
     . . . .
     . . . .
@@ -140,7 +140,7 @@ The descriptor is as follows:
 
 #### Video control endpoint descriptor
 
-``` syntax
+```syntax
     . . . .
     . . . .
     . . . .
@@ -162,7 +162,7 @@ The descriptor is as follows:
 
 #### Video streaming class-specific descriptor
 
-``` syntax
+```syntax
     . . . .
     . . . .
     . . . .
@@ -170,7 +170,7 @@ The descriptor is as follows:
 
 #### Video streaming endpoint descriptor
 
-``` syntax
+```syntax
     . . . .
     . . . .
     . . . .
@@ -192,7 +192,7 @@ The descriptor is as follows:
 
 #### HID class-specific descriptor
 
-``` syntax
+```syntax
     . . . .
     . . . .
     . . . .
@@ -200,7 +200,7 @@ The descriptor is as follows:
 
 #### HID endpoint descriptor
 
-``` syntax
+```syntax
     . . . .
     . . . .
     . . . .

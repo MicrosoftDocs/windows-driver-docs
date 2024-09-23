@@ -85,7 +85,7 @@ You can deploy, install, load, and debug your application and the driver by foll
   1. On the host computer, open your solution in Visual Studio.
   1. In main.cpp add this line before the OpenDevice call.
 
-  ```syntax
+  ```cpp
   system ("pause")
   ```
 
@@ -93,7 +93,7 @@ You can deploy, install, load, and debug your application and the driver by foll
 
   1. In pch.h, include this line:
 
-  ```syntax
+  ```cpp
   #include <cstdlib>
   ```
 
@@ -118,7 +118,7 @@ On the target computer, you will see driver install scripts running. The driver 
 
 On the host computer, you will see this message in the **Output** window.
 
-```syntax
+```output
 Deploying driver files for project
 "<path>\visual studio 14\Projects\USB Application1\USB Application1 Package\USB Application1 Package.vcxproj".
 Deployment may take a few minutes...
