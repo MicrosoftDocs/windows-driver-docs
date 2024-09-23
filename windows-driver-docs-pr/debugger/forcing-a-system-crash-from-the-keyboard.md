@@ -2,7 +2,8 @@
 title: Forcing a System Crash from the Keyboard
 description: Learn how to configure your settings to force a system crash from the PS/2, USB, and Hyper-V keyboard types.
 keywords: ["boot process, causing system crash from keyboard", "CTRL+SCROLL LOCK", "system crash, causing from keyboard", "bug check, causing from keyboard", "keyboard-caused system crash", "USB keyboard and system crash", "PS/2 keyboard and system crash", "forcing system crash from keyboard"]
-ms.date: 12/21/2023
+ms.date: 09/23/2024
+ai-usage: ai-assisted
 ---
 
 # Forcing a system crash from the keyboard
@@ -62,7 +63,7 @@ You must create the following registry `REG_DWORD` values under these subkeys:
 
 The `Dump1Keys` registry value is a bit map of the first hotkey to use. For example, instead of using the rightmost CTRL key to initiate the hotkey sequence, you can set the first hotkey to be the leftmost SHIFT key.
 
-The values for the first hot key are described in the following table.
+The hexadecimal values for the first hot key are described in the following table.
 
 | Value | First Key used in the keyboard shortcut sequence |
 |-------|--------------------------------------------------|
