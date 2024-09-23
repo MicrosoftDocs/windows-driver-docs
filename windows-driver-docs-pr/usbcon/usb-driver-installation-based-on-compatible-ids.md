@@ -50,9 +50,7 @@ Starting in Windows 10, *Usbser.inf* was added to the %Systemroot%\\INF directo
 
 Starting in Windows 10, *Usbser.sys* supports [USB Selective Suspend](usb-selective-suspend.md). It allows the attached USB-to-serial device to enter a low power state when not in use, while the system remains in the S0 state. When communication with the device resumes, the device can leave the suspend state and resume the working state. The feature is disabled by default and can be enabled and configured by setting the **IdleUsbSelectiveSuspendPolicy** entry under this registry key:
 
-```syntax
-HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Enum\\USB\\&lt;hardware id&gt;\\&lt;instance id&gt;\\Device Parameters
-```
+`HKEY\LOCAL\MACHINE\SYSTEM\CurrentControlSet\Enum\USB\<hardware id>\<instance id>\Device Parameters`
 
 To configure power management features of *Usbser.sys*, you can set **IdleUsbSelectiveSuspendPolicy** to:
 

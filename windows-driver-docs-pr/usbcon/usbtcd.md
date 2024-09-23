@@ -1,7 +1,7 @@
 ---
 title: USBTCD Package
 description: USBTCD is the combination of a user-mode application and kernel-mode driver.
-ms.date: 01/17/2024
+ms.date: 09/23/2024
 ---
 
 # USBTCD package
@@ -14,7 +14,7 @@ The USBTCD files are included in the [MUTT Software Package](./index.md).
 
 To use these commands, the USBTCD driver (USBTCD.sys) must be loaded as the function driver for the device. To load the driver for the device, run MUTTUtil and specify **USBTCD.inf**. This tool loads **USBTCD.sys** for all attached USB devices.
 
-``` syntax
+```output
 c:\Program Files (x86)\USBTest\x64>MuttUtil.exe -UpdateDriver usbtcd.inf
 Return value: 0
 

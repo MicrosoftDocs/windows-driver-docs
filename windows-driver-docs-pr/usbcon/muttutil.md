@@ -1,7 +1,7 @@
 ---
 title: MuttUtil
 description: MuttUtil performs various tasks on MUTT devices.
-ms.date: 09/19/2024
+ms.date: 09/23/2024
 ---
 
 # MuttUtil
@@ -32,7 +32,7 @@ Run the following command to get a list of command-line options:
 
 `MUTTUtil.exe -list`
 
-``` syntax
+```output
        :   : HARDWARE ID                    : PROBLEM CODE : DRIVER
 DEVICE : 0 : USB\VID_045E&PID_0611&REV_0034 : 0            : WINUSB
 DEVICE : 1 : USB\VID_045E&PID_078E&REV_8011 : 28           :
