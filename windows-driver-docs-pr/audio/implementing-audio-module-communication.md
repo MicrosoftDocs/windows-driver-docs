@@ -1,7 +1,7 @@
 ---
 title: Implementing Audio Module Communication
 description: An Audio Module is a distinct piece of audio processing logic performing a relatively atomic function.
-ms.date: 07/07/2017
+ms.date: 09/12/2024
 ---
 
 # Implementing Audio Module Communication
@@ -33,29 +33,37 @@ Audio Module	| A distinct piece of audio processing logic performing a relativel
 
 
 ### Common Audio Definitions
+
 These definitions are typically used when working with audio drivers.
+
+| Term | Definition                      |
+|------|---------------------------------|
+| HSA  | Hardware Support Application    |
+| UWP  | Universal Windows Platform      |
+| APO  | Audio Processing Object         |
+| DSP  | Digital Signal Processing       |
 
 | Term | Definition                      |
 |------|---------------------------------|
 | OEM  | Original Equipment Manufacturer |
 | IHV  | Independent Hardware Vendor     |
 | ISV  | Independent Software Vendor     |
-| HSA  | Hardware Support Application    |
-| UWP  | Universal Windows Platform      |
-| APO  | Audio Processing Object         |
-| DSP  | Digital Signal Processing       |
 
 ### Architecture 
 
-Audio Modules puts in place a Windows supported mechanism to send messages between user mode and kernel mode audio components. An important distinction is that Audio Modules standardizes the transport pipeline. It does not establish the communication protocol over that transport and relies on the ISVs and IHVs to define the protocol. The intent is to allow existing third party designs to migrate easily to Audio Modules with very little changes.
+*Audio Modules* puts in place a Windows OS supported mechanism to send messages between user mode and kernel mode audio components. An important distinction is that Audio Modules standardizes the transport pipeline. It does not establish the communication protocol over that transport and relies on the ISVs and IHVs to define the protocol. The intent is to allow existing third party designs to migrate easily to Audio Modules with very little changes.
 
-\<Diagram Pending\>
+The diagram shows how audio data flows from user applications down to the audio driver via the Audio Module APIs. 
+
+:::image type="content" source="images/audio-modules-communications.png" alt-text="Diagram showing how audio modules transport flows from user applications through various interfaces and processing layers.":::
+
+Device modules and stream modules are present, depending on whether they're accessed from a client process or an APO running in AudioDG using the stream modules interface provided to the APO from AudioDG. For general information about the audio endgine and the audio device graph (AudioDG), see [Windows Audio Architecture](windows-audio-architecture.md).
+
+The driver notifies Windows.Media.Devices of modules changes via [IoReportTargetDeviceChangeAsynchronous function](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioreporttargetdevicechangeasynchronous), which is then turned into callbacks from the modules API to the client process or APO.
 
 The Audio Module API provides access to the modules through two different targeting methods: the KS wave filter and an initialized KS pin (stream). The placement and access to specific modules is implementation specific.
 
-HSAs and other applications will only be able to access the modules available through the filter handle. The individual APOs loaded on a stream are the only objects that will have access to the stream targeted audio modules.
-
-For more information about APOs, see [Windows Audio Processing Objects](./windows-audio-processing-objects.md).
+HSAs and other applications will only be able to access the modules available through the filter handle. The individual APOs loaded on a stream are the only objects that will have access to the stream targeted audio modules. For more information about APOs, see [Windows Audio Processing Objects](./windows-audio-processing-objects.md).
 
 ### Sending Commands
 
