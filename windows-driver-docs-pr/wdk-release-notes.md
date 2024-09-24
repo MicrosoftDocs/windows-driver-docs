@@ -6,19 +6,7 @@ ms.date: 09/23/2024
 
 # Windows Driver Kits Release Notes
 
-The following are new in the WDK with WDK version 10.0.26100.1591 release.
-
-## Features
-
-Version 10.0.26100.1591 (released September 18th, 2024)
-
-| Features |
-|--|--|
-| [WDK VSIX Installation](#wdk-vsix-installation) |
-| [Static Tools Logo - Creating a Driver Verification Log](#static-tools-logo---creating-a-driver-verification-log) |
-| [Static Tools Logo - Placement requirement for CodeQL Sarif file](#static-tools-logo---placement-requirement-for-codeql-sarif-file) |
-| [UMDF WiFiCX drivers](#umdf-wificx-drivers) |
-| [Bug fixes for Device Fundamentals and WDTF test framework](#bug-fixes-for-device-fundamentals-and-wdtf-test-framework) |
+The following are features and bug fix in Windows 11 24H2 WDK update (version 10.0.26100.1591) released on September 18th, 2024.
 
 ## WDK VSIX installation
 
@@ -54,4 +42,4 @@ To support UMDF WiFiCX drivers, we have added UMDF public header and library sup
 
 ## Bug fixes for Device Fundamentals and WDTF test framework
 
-Certain bugs associated with DevFund tests were fixed, improving the WDK bring up experience.
+Bugs associated with DevFund tests were fixed, this change improves the WDK bring up experience.

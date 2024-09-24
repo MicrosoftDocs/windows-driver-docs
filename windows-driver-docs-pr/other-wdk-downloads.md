@@ -99,10 +99,11 @@ develop, build, package, deploy, test, and debug drivers.
 
 | Released with      | WDK and related downloads                       |
 |--------------------------|-------------------------------------------------|
-|Windows 11, Version 24H2 | [WDK 10.0.26100.1591 (released September 18, 2024)](https://go.microsoft.com/fwlink/?linkid=2286137)|
-|Windows 11, Version 23H2 | [WDK 10.1.22621.2428 (released October 24, 2023)](https://go.microsoft.com/fwlink/?linkid=2249371)|
-|Windows 11, version 22H2  | [WDK for Windows 11, version 22H2 (10.0.22621.382, released May 24, 2022)](https://go.microsoft.com/fwlink/?linkid=2196230)|
-|Windows 11, version 21H2  | [WDK for Windows 11, version 21H2](https://go.microsoft.com/fwlink/?linkid=2166289)|
+| Windows 11, Version 24H2 | [WDK 10.0.26100.1591 (released September 18, 2024)](https://go.microsoft.com/fwlink/?linkid=2286137)|
+| Windows 11, Version 24H2 | [WDK 10.0.16100.1 (released May 2024)](https://go.microsoft.com/fwlink/?linkid=2272234)|
+| Windows 11, Version 23H2 | [WDK 10.1.22621.2428 (released October 24, 2023)](https://go.microsoft.com/fwlink/?linkid=2249371)|
+| Windows 11, version 22H2  | [WDK for Windows 11, version 22H2 (10.0.22621.382, released May 24, 2022)](https://go.microsoft.com/fwlink/?linkid=2196230)|
+| Windows 11, version 21H2  | [WDK for Windows 11, version 21H2](https://go.microsoft.com/fwlink/?linkid=2166289)|
 | Windows Server 2022      | [WDK for Windows Server 2022](https://go.microsoft.com/fwlink/?linkid=2164149)|
 | Windows 10, version 2004 | [WDK for Windows 10, version 2004](https://go.microsoft.com/fwlink/?linkid=2128854)|
 | Windows 10, version 1903 | [WDK for Windows 10, version 1903](https://go.microsoft.com/fwlink/?linkid=2085767) |
