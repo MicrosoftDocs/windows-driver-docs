@@ -1,7 +1,7 @@
 ---
 title: File Systems and Filter Driver Design Guide
 description: File systems driver design guide
-ms.date: 09/23/2024
+ms.date: 09/25/2024
 keywords:
 - file system filter driver design, Windows, WDK
 - file system information, Windows, WDK
@@ -35,7 +35,7 @@ Filter driver developers use the [Filter Manager](./filter-manager-concepts.md) 
 
 ## File system and filter sample code
 
-Microsoft provides several [file system filter driver samples](../samples/file-system-driver-samples/index.md). Anyone who wants to develop their own file system can file system driver sample code as well.
+Microsoft provides several [file system filter driver samples](../samples/file-system-driver-samples.md). Anyone who decides to develop their own file system can file system driver sample code as well.
 
 ## File system filter driver certification
 

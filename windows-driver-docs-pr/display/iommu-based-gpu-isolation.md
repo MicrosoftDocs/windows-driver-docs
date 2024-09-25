@@ -1,20 +1,25 @@
 ---
 title: IOMMU-based GPU Isolation
 description: IOMMU-based GPU isolation allows Dxgkrnl to restrict access to system memory from the GPU by making use of IOMMU hardware.
-ms.date: 08/31/2023
+keywords:
+- IOMMU , WDDM
+- GPU isolation, WDDM
+ms.date: 09/24/2024
 ---
 
 # IOMMU-based GPU isolation
 
-This page describes the IOMMU-based GPU isolation feature for IOMMU-capable devices, introduced in Windows 10 version 1803 (WDDM 2.4). See [IOMMU DMA remapping](iommu-dma-remapping.md) for more recent IOMMU updates.
+IOMMU-based GPU isolation is a technique used to enhance system security and stability by managing how GPUs access system memory. This article describes WDDM's IOMMU-based GPU isolation feature for IOMMU-capable devices, and how developers can implement it in their graphics drivers.
+
+This feature is available starting in Windows 10 version 1803 (WDDM 2.4). See [IOMMU DMA remapping](iommu-dma-remapping.md) for more recent IOMMU updates.
 
 ## Overview
 
 IOMMU-based GPU isolation allows *Dxgkrnl* to restrict access to system memory from the GPU by making use of IOMMU hardware. The OS can provide logical addresses instead of physical addresses. These logical addresses can be used to restrict the device’s access to system memory to only the memory it should be able to access. It does so by ensuring that the IOMMU translates memory accesses over PCIe to valid and accessible physical pages.
 
-If the logical address accessed by the device isn't valid, the device can't get access to the physical memory. This restriction prevents a range of exploits that allow an attacker to gain access to physical memory via a compromised hardware device and to read the contents of system memory that aren't needed for the device’s operation.
+If the logical address accessed by the device isn't valid, the device can't get access to the physical memory. This restriction prevents a range of exploits that allow an attacker to gain access to physical memory via a compromised hardware device. Without it, attackers could read the contents of system memory that aren't needed for the device’s operation.
 
-Starting in Windows 10 version 1803, by default this feature is only enabled for PCs where Windows Defender Application Guard is enabled for Microsoft Edge (that is, container virtualization).
+By default, this feature is only enabled for PCs where Windows Defender Application Guard is enabled for Microsoft Edge (that is, container virtualization).
 
 For development purposes, the actual IOMMU remapping functionality is enabled or disabled through the following registry key:
 
@@ -41,26 +46,30 @@ DWORD: IOMMUFlags
      * This value cannot override the behavior when created a secure VM, and only applies to forced IOMMU enablement at device startup time using this registry key.
 ```
 
-If this feature is enabled, the IOMMU is enabled shortly after the adapter starts. All driver allocations made prior to this time are mapped when it does get enabled.
+If this feature is enabled, the IOMMU is enabled shortly after the adapter starts. All driver allocations made before this time are mapped when it does get enabled.
 
 Additionally, if the velocity staging key 14688597 is set as *enabled*, the IOMMU is activated when a secure virtual machine is created. For now, this staging key is disabled by default to allow self-hosting without proper IOMMU support.
 
 While enabled, starting a secure virtual machine fails if the driver doesn't provide IOMMU support.
 
-There's currently no way to disable the IOMMU after it has been enabled.
+There's currently no way to disable the IOMMU after it's enabled.
 
 ## Memory access
 
 *Dxgkrnl* ensures that all memory accessible by the GPU is remapped through the IOMMU to ensure that this memory is accessible. The physical memory that the GPU needs to access can currently be broken down into four categories:
 
-* Driver-specific allocations made through MmAllocateContiguousMemory- or MmAllocatePagesForMdl-style functions (including the SpecifyCache and extended variations) must be mapped to the IOMMU prior to GPU accessing them. Instead of calling the *Mm* APIs, *Dxgkrnl* provides callbacks to the kernel-mode driver to allow the allocation and remapping in one step. Any memory intended to be GPU-accessible must go through these callbacks, or the GPU isn't able to access this memory.
+* Driver-specific allocations made through MmAllocateContiguousMemory- or MmAllocatePagesForMdl-style functions (including the SpecifyCache and extended variations) must be mapped to the IOMMU before GPU accessing them. Instead of calling the *Mm* APIs, *Dxgkrnl* provides callbacks to the kernel-mode driver to allow the allocation and remapping in one step. Any memory intended to be GPU-accessible must go through these callbacks, or the GPU isn't able to access this memory.
 
 * All memory accessed by the GPU during paging operations, or mapped via the GpuMmu must be mapped to the IOMMU. This process is entirely internal to the Video Memory Manager (VidMm), which is a subcomponent of *Dxgkrnl*. VidMm handles mapping and unmapping the logical address space anytime the GPU is expected to access this memory, including:
 
-* Mapping the backing store of an allocation for the entire duration during a transfer to or from VRAM or the entire time that it's mapped to system memory or aperture segments.
+* Mapping an allocation's backing store for either:
+
+  * The entire duration during a transfer to or from VRAM.
+  * The entire time that the backing store is mapped to system memory or aperture segments.
+
 * Mapping and unmapping monitored fences.
 
-* During power transitions, the driver might need to save portions of hardware-reserved memory. To handle this situation, *Dxgkrnl* provides a mechanism for the driver to specify how much memory is up front to store this data. The exact amount of memory required by the driver can change dynamically, but *Dxgkrnl* takes a commit charge on the upper bound at the time when the adapter is initialized to ensure that physical pages can be obtained when required. *Dxgkrnl* is responsible for ensuring this memory is locked and mapped to the IOMMU for the transfer during power transitions.
+* During power transitions, the driver might need to save portions of hardware-reserved memory. To handle this situation, *Dxgkrnl* provides a mechanism for the driver to specify how much memory is up front to store this data. The exact amount of memory that the driver requires can change dynamically. That said, *Dxgkrnl* takes a commit charge on the upper bound at the time the adapter is initialized to ensure that physical pages can be obtained when required. *Dxgkrnl* is responsible for ensuring this memory is locked and mapped to the IOMMU for the transfer during power transitions.
 
 * For any hardware reserved resources, VidMm ensures that it correctly maps the IOMMU resources by the time the device is attached to the IOMMU. This includes memory reported by memory segments reported with [**PopulatedFromSystemMemory**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_segmentflags). For reserved memory (for example, firmware/BIOD reserved) that isn't exposed via VidMm segments, *Dxgkrnl* makes a [**DXGKDDI_QUERYADAPTERINFO**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_queryadapterinfo) call to query all reserved memory ranges that the driver needs mapped ahead of time. See [Hardware reserved memory](#hardware-reserved-memory) for details.
 
@@ -72,7 +81,7 @@ The domain will be attached to the device the first time a secure virtual machin
 
 ## Exclusive access
 
-IOMMU domain attach and detach is extremely fast, but is nonetheless not currently atomic. This means that a transaction issued over PCIe isn't guaranteed to be translated correctly while swapping to an IOMMU domain with different mappings.
+IOMMU domain attach and detach is fast, but is nonetheless not currently atomic. Because it's not atomic, a transaction issued over PCIe isn't guaranteed to be translated correctly while swapping to an IOMMU domain with different mappings.
 
 To handle this situation, starting in Windows 10 version 1803 (WDDM 2.4), a KMD must implement the following DDI pair for *Dxgkrnl* to call:
 
@@ -86,7 +95,7 @@ Between these two calls, *Dxgkrnl* makes the following guarantees:
 * The scheduler is suspended. All active workloads are flushed, and no new workloads are sent to or scheduled on the hardware.
 * No other DDI calls are made.
 
-As part of these calls, the driver may choose to disable and suppress interrupts (including Vsync interrupts) for the duration of the exclusive access, even without explicit notification from the OS.
+As part of these calls, the driver can choose to disable and suppress interrupts (including Vsync interrupts) during the exclusive access, even without explicit notification from the OS.
 
  *Dxgkrnl* ensures that any pending work scheduled on the hardware completes, and then enters this exclusive access region. During this time, *Dxgkrnl* assigns the domain to the device. *Dxgkrnl* doesn't make any requests of the driver or hardware between these calls.
 
@@ -98,10 +107,10 @@ The following DDI changes were made to support IOMMU-based GPU isolation:
 * The [**DXGKQAITYPE_FRAMEBUFFERSAVESIZE**](/windows-hardware/drivers/ddi/d3dkmddi/ne-d3dkmddi-_dxgk_queryadapterinfotype) enum value and [**DXGK_FRAMEBUFFERSAVEAREA**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_framebuffersavearea) structure were added
 * The [**DXGKQAITYPE_HARDWARERESERVEDRANGES**](/windows-hardware/drivers/ddi/d3dkmddi/ne-d3dkmddi-_dxgk_queryadapterinfotype) enum value and [**DXGK_HARDWARERESERVEDRANGE**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_hardwarereservedranges) structure were added
 * The [**DXGK_MEMORY_CACHING_TYPE**](/windows-hardware/drivers/ddi/d3dkmddi/ne-d3dkmddi-_dxgk_memory_caching_type) was added
-* A kernel-mode driver must implement the following added DDIs:
+* A kernel-mode driver must implement the following DDIs:
   * [**DxgkDdiBeginExclusiveAccess**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_beginexclusiveaccess)
   * [**DxgkDdiEndExclusiveAccess**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_endexclusiveaccess)
-* The following [*Dxgkrnl* callbacks](/windows-hardware/drivers/ddi/dispmprt/ns-dispmprt-_dxgkrnl_interface) and callback parameter structures were added. Callback functions must be called at IRQL <= APC_LEVEL. Starting in WDDM 3.2, drivers that call any of these functions are validated against this requirement and bugcheck if the IRQL is DISPATCH_LEVEL or higher.
+* The following [*Dxgkrnl* callbacks](/windows-hardware/drivers/ddi/dispmprt/ns-dispmprt-_dxgkrnl_interface) and callback parameter structures were added. Callback functions must be called at IRQL <= APC_LEVEL. Starting in WDDM 3.2, drivers that call any of these functions are validated against this requirement and bug check if the IRQL is DISPATCH_LEVEL or higher.
 
   | Callback | Associated callback structure |
   | -------- | ----------------------------- |
@@ -118,11 +127,11 @@ The following DDI changes were made to support IOMMU-based GPU isolation:
 
 ## Memory allocation and mapping to IOMMU
 
-*Dxgkrnl* provides the first six callbacks in the above table to the kernel-mode driver to allow it to allocate memory and remap it to the IOMMU’s logical address space. These callback functions mimic the routines provided by the *Mm* API interface. They provide the driver with MDLs, or pointers that describe memory that is also mapped through to the IOMMU. These MDLs continue to describe physical pages, but the IOMMU’s logical address space is mapped in at the same address.
+*Dxgkrnl* provides the first six callbacks in the preceding table to the kernel-mode driver to allow it to allocate memory and remap it to the IOMMU’s logical address space. These callback functions mimic the routines provided by the *Mm* API interface. They provide the driver with MDLs, or pointers that describe memory that is also mapped through to the IOMMU. These MDLs continue to describe physical pages, but the IOMMU’s logical address space is mapped in at the same address.
 
-*Dxgkrnl* tracks requests to these callbacks to help ensure there are no leaks by the driver. The allocation callbacks provide an additional handle as part of the output that must be provided back to the respective free callback.
+*Dxgkrnl* tracks requests to these callbacks to help ensure there are no leaks by the driver. The allocation callbacks provide another handle as part of the output that must be provided back to the respective free callback.
 
-For memory that can't be allocated through one of the provided allocation callbacks, the [**DXGKCB_MAPMDLTOIOMMU**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkcb_mapmdltoiommu) callback is provided to allow driver-managed MDLs to be tracked and used with the IOMMU. A driver that uses this callback is responsible for ensuring that the lifetime of the MDL exceeds the corresponding unmap call. Otherwise the unmap call has undefined behavior that might lead to compromised security of the pages from the MDL that get repurposed by Mm by the time they're unmapped.
+For memory that can't be allocated through one of the provided allocation callbacks, the [**DXGKCB_MAPMDLTOIOMMU**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkcb_mapmdltoiommu) callback is provided to allow driver-managed MDLs to be tracked and used with the IOMMU. A driver that uses this callback is responsible for ensuring that the lifetime of the MDL exceeds the corresponding unmap call. Otherwise, the unmap call has undefined behavior. This undefined behavior can lead to compromised security of the MDL's pages that *Mm* repurposed by the time they're unmapped.
 
 VidMm automatically manages any allocations it creates (for example, DdiCreateAllocationCb, monitored fences, etc.) in system memory. The driver doesn't need to do anything to make these allocations work.
 
@@ -138,13 +147,13 @@ For drivers that must save reserved portions of the frame buffer to system memor
 
 The maximum size reported by the driver must be a multiple of PAGE_SIZE.
 
-Performing the transfer to and from the frame buffer can be done at a time of the driver’s choice. To aid in the transfer, *Dxgkrnl* provides the last four callbacks in the above table to the kernel-mode driver. These callbacks can be used to map the appropriate portions of the section object that was created when the adapter was initialized.
+Performing the transfer to and from the frame buffer can be done at a time of the driver’s choice. To aid in the transfer, *Dxgkrnl* provides the last four callbacks in the preceding table to the kernel-mode driver. These callbacks can be used to map the appropriate portions of the section object that was created when the adapter was initialized.
 
-The driver must always provide the *hAdapter* for the master/lead device in an LDA chain when it calls these four callback functions.
+The driver must always provide the *hAdapter* for the lead device in an LDA chain when it calls these four callback functions.
 
 The driver has two options to implement the frame buffer reservation:
 
-1. (Preferred method) The driver should allocate space per physical adapter using the above [**DXGKDDI_QUERYADAPTERINFO**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_queryadapterinfo) call to specify the amount of storage that is needed per adapter. At the time of the power transition, the driver should save or restore the memory one physical adapter at a time. This memory is split across multiple section objects, one per physical adapter.
+1. (Preferred method) The driver should allocate space per physical adapter using the [**DXGKDDI_QUERYADAPTERINFO**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_queryadapterinfo) call to specify the amount of storage that is needed per adapter. At the time of the power transition, the driver should save or restore the memory one physical adapter at a time. This memory is split across multiple section objects, one per physical adapter.
 
 2. Optionally, the driver can save or restore all data into a single shared section object. This action can be done by specifying a single large maximum size in the [**DXGKDDI_QUERYADAPTERINFO**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_queryadapterinfo) call for physical adapter 0, and then a zero value for all other physical adapters. The driver can then pin down the entire section object once for use across all save/restore operations, for all of the physical adapters. This method has the primary drawback that it requires locking a larger amount of memory at once, since it doesn't support pinning only a subrange of the memory into an MDL. As a result, this operation is more likely to fail under memory pressure. The driver would also be expected to map the pages in the MDL to the GPU using the correct page offsets.
 
