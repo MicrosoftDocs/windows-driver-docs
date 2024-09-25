@@ -1,79 +1,59 @@
 ---
 title: Error Handling in Storport Miniport Drivers
 description: Error Handling in Storport Miniport Drivers
-ms.date: 04/20/2017
+ms.date: 09/25/2024
 ---
 
-# Error Handling in Storport Miniport Drivers
+# Error handling in Storport miniport drivers
 
+Every Storport miniport driver must notify the system port driver about the following kinds of SCSI errors. The driver should set these errors in the [**SrbStatus**](/windows-hardware/drivers/ddi/storport/ns-storport-_storage_request_block) member before completing the SRB it was processing when the error occurred:
 
-Every Storport miniport driver must notify the system port driver about the following kinds of SCSI errors. These errors should be set in the **SrbStatus** member before the driver completes the SRB it was processing when the error occurred:
+* SRB_STATUS_ERROR (if the HBA returns a nonspecific bus error)
 
--   SRB\_STATUS\_ERROR (if the HBA returns a nonspecific bus error)
+* SRB_STATUS_PARITY_ERROR
 
--   SRB\_STATUS\_PARITY\_ERROR
+* SRB_STATUS_UNEXPECTED_BUS_FREE
 
--   SRB\_STATUS\_UNEXPECTED\_BUS\_FREE
+* SRB_STATUS_SELECTION_TIMEOUT
 
--   SRB\_STATUS\_SELECTION\_TIMEOUT
+* SRB_STATUS_COMMAND_TIMEOUT
 
--   SRB\_STATUS\_COMMAND\_TIMEOUT
+* SRB_STATUS_MESSAGE_REJECTED
 
--   SRB\_STATUS\_MESSAGE\_REJECTED
+* SRB_STATUS_NO_DEVICE
 
--   SRB\_STATUS\_NO\_DEVICE
+* SRB_STATUS_NO_HBA
 
--   SRB\_STATUS\_NO\_HBA
+* SRB_STATUS_DATA_OVERRUN (also returned for underruns)
 
--   SRB\_STATUS\_DATA\_OVERRUN (also returned for underruns)
+* SRB_STATUS_PHASE_SEQUENCE_FAILURE
 
--   SRB\_STATUS\_PHASE\_SEQUENCE\_FAILURE
-
--   SRB\_STATUS\_BUSY (TID busy)
+* SRB_STATUS_BUSY (TID busy)
 
 For a data underrun, the miniport driver must update the SRB's **DataTransferLength** to indicate how much data actually was transferred.
 
 In addition, the miniport driver should use the following guidelines to log some of the preceding errors by passing the SRB to [**StorPortLogError**](/windows-hardware/drivers/ddi/storport/nf-storport-storportlogerror):
 
-Log an error at the discretion of the driver writer for SRB\_STATUS\_ERROR.
-
-Always log an error for SRB\_STATUS\_PARITY\_ERROR.
-
-Always log an error for SRB\_STATUS\_UNEXPECTED\_BUS\_FREE.
-
-Always log an error for SRB\_STATUS\_SELECTION\_TIMEOUT.
-
-Always log an error for SRB\_STATUS\_COMMAND\_TIMEOUT.
-
-Log an error for SRB\_STATUS\_DATA\_OVERRUN whenever an overrun occurs, but not when an underrun occurs.
-
-Always log an error for SRB\_STATUS\_PHASE\_SEQUENCE\_FAILURE.
-
-Always log an error for SRB\_STATUS\_BUSY for hardware errors.
+* Log an error at the discretion of the driver writer for SRB_STATUS_ERROR.
+* Always log an error for SRB_STATUS_PARITY_ERROR.
+* Always log an error for SRB_STATUS_UNEXPECTED_BUS_FREE.
+* Always log an error for SRB_STATUS_SELECTION_TIMEOUT.
+* Always log an error for SRB_STATUS_COMMAND_TIMEOUT.
+* Log an error for SRB_STATUS_DATA_OVERRUN whenever an overrun occurs, but not when an underrun occurs.
+* Always log an error for SRB_STATUS_PHASE_SEQUENCE_FAILURE.
+* Always log an error for SRB_STATUS_BUSY for hardware errors.
 
 To log an error, a miniport driver calls [**StorPortLogError**](/windows-hardware/drivers/ddi/storport/nf-storport-storportlogerror) by using one of the following system-defined error or warning codes:
 
-SP\_BUS\_PARITY\_ERROR maps to SRB\_STATUS\_PARITY\_ERROR
+* SP_BUS_PARITY_ERROR maps to SRB_STATUS_PARITY_ERROR
+* SP_UNEXPECTED_DISCONNECT (by the target logical unit)
+* SP_INVALID_RESELECTION maps to SRB_STATUS_PHASE_SEQUENCE_FAILURE or SRB_STATUS_ERROR
+* SP_BUS_TIME_OUT maps to SRB_STATUS_SELECTION_TIMEOUT
+* SP_REQUEST_TIMEOUT maps to SRB_STATUS_COMMAND_TIMEOUT
+* SP_PROTOCOL_ERROR maps to SRB_STATUS_PHASE_SELECTION_FAILURE, SRB_STATUS_UNEXPECTED_BUS_FREE, or SRB_STATUS_DATA_OVERRUN for an overrun condition
+* SP_INTERNAL_ADAPTER_ERROR maps to SRB_STATUS_ERROR
+* SP_IRQ_NOT_RESPONDING (warning that the miniport driver detected that the HBA is no longer generating interrupt requests)
+* SP_BAD_FW_ERROR (where FW is *firmware*)
+* SP_BAD_FW_WARNING
 
-SP\_UNEXPECTED\_DISCONNECT (by the target logical unit)
-
-SP\_INVALID\_RESELECTION maps to SRB\_STATUS\_PHASE\_SEQUENCE\_FAILURE or SRB\_STATUS\_ERROR
-
-SP\_BUS\_TIME\_OUT maps to SRB\_STATUS\_SELECTION\_TIMEOUT
-
-SP\_REQUEST\_TIMEOUT maps to SRB\_STATUS\_COMMAND\_TIMEOUT
-
-SP\_PROTOCOL\_ERROR maps to SRB\_STATUS\_PHASE\_SELECTION\_FAILURE, SRB\_STATUS\_UNEXPECTED\_BUS\_FREE, or SRB\_STATUS\_DATA\_OVERRUN for an overrun condition
-
-SP\_INTERNAL\_ADAPTER\_ERROR maps to SRB\_STATUS\_ERROR
-
-SP\_IRQ\_NOT\_RESPONDING (warning that the miniport driver has detected that the HBA is no longer generating interrupt requests)
-
-SP\_BAD\_FW\_ERROR where FW is *firmware*)
-
-SP\_BAD\_FW\_WARNING
-
-[**StorPortLogError**](/windows-hardware/drivers/ddi/storport/nf-storport-storportlogerror) allocates an error-log packet, sets it up, and logs the I/O error in the event log on behalf of the miniport driver. System administrators or users can monitor the condition of an HBA by examining the system event log and, if necessary, reconfiguring, repairing, or replacing the HBA before it fails.
-
- 
-
+[**StorPortLogError**](/windows-hardware/drivers/ddi/storport/nf-storport-storportlogerror) allocates an error-log packet, sets it up, and logs the I/O error in the event log for the miniport driver. System administrators or users can monitor the condition of an HBA by examining the system event log and, if necessary, reconfiguring, repairing, or replacing the HBA before it fails.

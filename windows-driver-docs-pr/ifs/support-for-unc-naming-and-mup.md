@@ -12,26 +12,30 @@ keywords:
 - prefix cache WDK network redirectors
 - serial prefix resolution WDK network redirectors
 - parallel prefix resolution WDK network redirectors
-ms.date: 04/20/2017
+ms.date: 09/25/2024
 ---
 
 # Support for UNC Naming and MUP
 
-This article describes how a network redirector can support UNC naming and the Multiple UNC Provider (MUP).
+This article describes how a network redirector can support [uniform naming convention (UNC)](/openspecs/windows_protocols/ms-dtyp/62e862f4-2a51-452e-8eeb-dc4ff5ee33cc) naming and the Multiple UNC Provider (MUP).
 
-MUP is a Windows service that helps locate network resources identified using UNC (uniform naming convention). It's a kernel-mode component responsible for channeling all remote file system accesses using a UNC name to a network redirector (the UNC provider) that is capable of handling the remote file system requests. MUP is involved when an application uses a UNC path; for example, a command line command such as:
+MUP is a system-supplied, kernel-mode component responsible for handling UNC paths:
+
+* It helps locate network resources identified as using UNC.
+
+* It channels all remote file system accesses using a UNC name to a network redirector capable of handling the remote file system requests. The network redirector is the *UNC provider*.
+
+MUP is involved when an application uses a UNC path; for example, a command line command such as:
 
 ```cpp
 notepad \\server\public\readme.txt
 ```
 
-MUP receives commands containing UNC names from applications. It sends the name to each registered UNC provider, LAN Manager workstation, and any others that are installed. When a UNC provider identifies a UNC name as its own, the MUP automatically redirects future instances of that name to that provider.
+MUP receives commands containing UNC names from applications. It sends the name to each registered UNC provider and any other network providers that are installed. When a UNC provider identifies a UNC name as its own, the MUP automatically redirects future instances of that name to that provider.
 
-MUP isn't involved during an operation that creates a mapped drive letter (the "NET USE" command, for example). This operation is handled by the multiple provider router (MPR) and a user-mode [Windows Networking](/windows/win32/wnet/windows-networking-wnet-) (WNet) provider DLL for the network redirector. However, a user-mode WNet provider DLL can communicate directly with a kernel-mode network redirector driver during this operation.
+MUP isn't involved during an operation that creates a mapped drive letter (the "NET USE" command, for example). Instead, the multiple provider router (MPR) and a user-mode [Windows Networking](/windows/win32/wnet/windows-networking-wnet-) (WNet) provider DLL for the network redirector handle this operation. However, a user-mode WNet provider DLL can communicate directly with a kernel-mode network redirector driver during this operation.
 
-Before Windows Vista, remote file operations performed on a mapped drive that don't represent a Distributed File System (DFS) drive don't go through MUP. These operations go directly to the network provider that handled the drive letter mapping.
-
-For network redirectors that conform to the updated redirector model introduced in Windows Vista, MUP is involved even when a mapped network drive is used. File operations performed on the mapped drive go through MUP to the network redirector. In this case, MUP simply passes the operation to the network redirector involved.
+For network redirectors that conform to the redirector model introduced in Windows Vista, MUP is involved even when a mapped network drive is used. File operations performed on the mapped drive go through MUP to the network redirector. In this case, MUP simply passes the operation to the network redirector involved.
 
 MUP is part of the *mup.sys* binary, which also includes the DFS (Distributed File System) client.
 
@@ -54,7 +58,7 @@ MUP determines which provider can handle a UNC path in a name-based operation, t
 
 * The name-based operation that resulted in the prefix resolution is routed to the provider claiming the prefix. If successful, MUP ensures that subsequent handle-based operations (IRP_MJ_READ and IRP_MJ_WRITE, for example) go to the same provider completely bypassing MUP.
 
-* The provider and its claimed prefix are entered in a prefix cache that MUP maintains. For subsequent name-based operations, MUP uses this prefix cache to determine whether a provider has already claimed a prefix before attempting to perform a prefix resolution. Each entry in this prefix cache is subject to a timeout (referred to as TTL) once it's added to the cache. An entry is thrown away after this timeout expires, at which point of time MUP performs prefix resolution again for this prefix on a subsequent name-based operation.
+* The provider and its claimed prefix are entered in a prefix cache that MUP maintains. For subsequent name-based operations, MUP uses this prefix cache to determine whether a provider has already claimed a prefix before attempting to perform a prefix resolution. Each entry in this prefix cache is subject to a timeout (referred to as *TTL*) once it's been added to the cache. An entry is thrown away after this timeout expires, at which point of time MUP performs prefix resolution again for this prefix on a subsequent name-based operation.
 
 MUP performs prefix resolution by issuing an [**IOCTL_REDIR_QUERY_PATH**](/windows-hardware/drivers/ddi/ntifs/ni-ntifs-ioctl_redir_query_path) request to network redirectors registered with MUP. The input and output buffers for **IOCTL_REDIR_QUERY_PATH** are allocated from nonpaged pool.
 

@@ -1,12 +1,17 @@
 ---
 title: Oplocks
 description: Oplocks allow file server clients to increase performance and reduce network use
-ms.date: 07/07/2023
+keywords:
+- oplocks, WDK, Windows Driver Kit, Windows, driver
+- opportunistic locks, file system, file server, network redirector
+ms.date: 09/23/2024
 ---
 
-# Oplocks
+# Oplocks and network redirectors
 
-The articles about oplocks found in this section pertain primarily to network redirectors, although some information is provided for client applications. You can find more oplock information for client applications in the Windows SDK's [Opportunistic Locks](/windows/win32/fileio/opportunistic-locks) articles.
+Network redirectors use opportunistic locks (oplocks) to optimize file access performance and reduce network traffic in client-server environments.
+
+This documentation is intended for network redirector developers, although some information applies to client application developers. For more oplock documentation related to client applications, see the Windows SDK's [Opportunistic Locks](/windows/win32/fileio/opportunistic-locks) articles.
 
 ## Oplock overview
 
@@ -27,9 +32,9 @@ The core oplock functionality of the oplock package is implemented in the kernel
 
 ## Oplock keys
 
-Starting with Windows 7, the stream handle can be associated with an *oplock key*, which is a GUID value used to identify multiple handles that belong to the same client cache view. It's more accurate to say that the oplock key is associated with the [**FILE_OBJECT**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_object) structure that the stream handle refers to. This distinction is important when the handle is duplicated, such as with [**DuplicateHandle**](/windows/win32/api/handleapi/nf-handleapi-duplicatehandle). Each of the duplicate handles refers to the same underlying **FILE_OBJECT** structure.
+The stream handle can be associated with an *oplock key*, which is a GUID value that identifies multiple handles belonging to the same client cache view. It's more accurate to say that the oplock key is associated with the [**FILE_OBJECT**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_object) structure that the stream handle refers to. This distinction is important when the handle is duplicated, such as with [**DuplicateHandle**](/windows/win32/api/handleapi/nf-handleapi-duplicatehandle). Each of the duplicate handles refers to the same underlying **FILE_OBJECT** structure.
 
-The oplock key can be explicitly provided (to [**IoCreateFileEx**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-iocreatefileex)) when the stream handle is created. The system treats the handle as having a unique oplock key associated with it if an oplock key isn't explicitly specified when the handle is created, where its key differs from any other key on any other handle.
+The oplock key can be explicitly provided (to [**IoCreateFileEx**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-iocreatefileex)) when the stream handle is created. If an oplock key isn't explicitly specified at handle creation, the system treats the handle as having a unique oplock key associated with it. This unique key differs from any other key on any other handle.
 
 An oplock is broken when:
 
