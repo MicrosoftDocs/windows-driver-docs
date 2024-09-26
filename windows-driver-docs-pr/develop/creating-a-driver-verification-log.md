@@ -11,23 +11,25 @@ The [Windows Hardware Certification Program](/windows-hardware/design/compatibi
 ## Prepare the driver
 
 1. Before running the code analysis tools, build and link your driver using the latest Windows Driver Kit (WDK).
-1. For the driver solution, select a Release configuration as the solution configuration and x64 as the solution platform.
+1. Select **Release** for the solution configuration and **x64** for the solution platform.
 
 ## Determine and run the required tests
 
-1. To determine which tests are required for the version of Windows you wish to certify for, see the [Static Tools Logo Test](/windows-hardware/test/hlk/testref/6ab6df93-423c-4af6-ad48-8ea1049155ae).
+To determine which tests are required for the version of Windows you wish to certify for, see the [Static Tools Logo Test](/windows-hardware/test/hlk/testref/6ab6df93-423c-4af6-ad48-8ea1049155ae).
 
 Run the following tests, as required.
 
 - Run CodeQL. Address and fix defects that are found. Certification fails if defects that are deemed "Must-Fix" aren't corrected. For more information about CodeQL and the Static Tools Logo Test, see [CodeQL and the Static Tools Logo Test](../devtest/static-tools-and-codeql.md).
+
 - Run [Static Driver Verifier](../devtest/static-driver-verifier.md). For information about creating the log file, see [Creating a log file for Static Driver Verifier](creating-a-log-file-for-static-driver-verifier.md) and [Using Static Driver Verifier to find defects in drivers](../devtest/using-static-driver-verifier-to-find-defects-in-drivers.md).
+
 - Run Code Analysis tool for drivers. Address and fix any defects that are found. See [Creating a log file for the code analysis tool](creating-a-log-file-for-the-code-analysis-tool.md) and [How to run Code Analysis for drivers](../devtest/how-to-run-code-analysis-for-drivers.md). For more information about code analysis, see [Analyzing Application Quality by Using Code Analysis Tools](/previous-versions/visualstudio/visual-studio-2013/dd264897(v=vs.120)).
 
 ## Create the driver verification log
 
 1. From the **Driver** menu, select **Create Driver Verification Log**.
-
-1. Verify that the *Code Analysis Log*, *Static Driver Verifier Log*, and *CodeQL Log* files are detected. Select **Create**.
+1. Verify that the *Code Analysis Log*, *Static Driver Verifier Log*, and *CodeQL Log* files are detected.
+1. Select **Create**.
 
 The driver verification log has the file name extension .DVL.XML. The log is created in the project folder, for example, \\*myDriverProject*\\*myDriverName*.DVL.XML.
 
@@ -42,7 +44,7 @@ When you're ready to test your driver using the [Windows Hardware Lab Kit](/wind
 
 You can also create the driver verification log from a Visual Studio command prompt window. Use either the Visual Studio native tools command prompt installed with Visual Studio, or the Enterprise Windows Driver Kit (EWDK).
 
-```cmd
+```console
 msbuild.exe <vcxprojectfile> /target:dvl /p:Configuration="Release" /P:Platform=x64
 ```
 
@@ -55,27 +57,27 @@ Microsoft ships as part of the [Windows Driver Kit (WDK)](../download-the-wdk.md
 1. Locate dvl.exe from the WDK or a mounted eWDK. It's typically installed in *C:\Program Files (x86)\Windows Kits\10\Tools\dvl\dvl.exe*
 1. Call dvl.exe by passing the `/manualCreate` flag, a driver name, a desired architecture, and `/sarifPath`. Where `/sarifPath` includes the path to the folder containing the sarif file.
 
-```cmd
+```console
 "C:\Program Files (x86)\Windows Kits\10\Tools\dvl\dvl.exe" /manualCreate <driverName> <driverArchitecture> /sarifPath <pathToSarifLocation>
 ```
 
 ### Generate a DVL from a CodeQL sarif file, or when using CA and SDV
 
-1. Place the results that must be consumed to create the DVL in a single directory, along with any vcxproj file. For drivers intended to be certified for Windows Client, this file is the [CodeQL SARIF file](../devtest/static-tools-and-codeql.md#3-perform-analysis). Windows Server certification might also include the Code Analysis and Static Driver Verifier (SDV) results files. Check the [WHCP requirements](/windows-hardware/design/compatibility/whcp-specifications-policies) documents for specific details on which tools are required to be run for device driver certification.
+1. Place the results that must be consumed to create the DVL in a single directory, along with any vcxproj file. For drivers to be certified for Windows Client, this file is the [CodeQL SARIF file](../devtest/static-tools-and-codeql.md#3-perform-analysis). Windows Server certification might also include the Code Analysis and Static Driver Verifier (SDV) results files. Check the [WHCP requirements](/windows-hardware/design/compatibility/whcp-specifications-policies) documents for specific details on which tools are required to be run for device driver certification.
 1. Place the CodeQL SARIF files and Code Analysis XML files in the top level of the directory. Place the SDV DVL.xml file in a subfolder called *sdv*.
 1. Navigate to the top-level directory which contains the CodeQL SARIF file from the command line.
 1. Locate dvl.exe from the WDK or a mounted eWDK.
-1. Call dvl.exe by passing the /manualCreate flag, a driver name, and a desired architecture. For example:
+1. Call dvl.exe by passing the `/manualCreate` flag, a driver name, and a desired architecture. For example:
 
-   One of the following strings should be used for your driverArchitecture string:
+   Use one of the following strings for your *driverArchitecture*:
 
    - X86
    - X64
    - Arm
    - Arm64
 
-  > [!NOTE]
-  > Don't include ".sys" as part of your driverName string.
+   > [!NOTE]
+   > Don't include ".sys" as part of your *driverName* string.
 
 1. Inspect the DVL to ensure that it was generated correctly.
 
