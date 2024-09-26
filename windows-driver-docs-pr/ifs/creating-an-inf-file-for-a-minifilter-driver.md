@@ -10,18 +10,16 @@ keywords:
 - ServiceInstall section WDK file system
 - DefaultInstall section WDK file system
 - AddRegistry section WDK file system
-ms.date: 05/05/2023
+ms.date: 09/26/2024
 ---
 
 # Creating an INF file for a minifilter driver
 
-## Introduction
+File system minifilter drivers need an INF file to be installed on the Windows operating system. You can find several sample INF files in the [minifilter samples](https://github.com/Microsoft/Windows-driver-samples/tree/main/filesys/miniFilter) that you can use as a starting point.
 
-> [!NOTE]
->
-> Starting in Windows 10 version 1903, INF requirements for primitive drivers (such as file system minifilter drivers) changed. See [Creating a new primitive driver](../develop/creating-a-primitive-driver.md) for details.
+Starting in Windows 10 version 1903, INF requirements changed for primitive drivers, which include file system minifilters. See [Creating a new primitive driver](../develop/creating-a-primitive-driver.md) for details.
 
-Filter drivers need an INF file to be installed on the Windows operating system. You'll find sample INF files in the [minifilter samples](https://github.com/Microsoft/Windows-driver-samples/tree/main/filesys/miniFilter).
+## INF sections for a file system filter driver
 
 An INF file for a file system filter driver generally contains the following sections:
 
@@ -35,11 +33,9 @@ An INF file for a file system filter driver generally contains the following sec
 | **AddRegistry**               | Required |
 | **Strings**                   | Required |
 
-> [!NOTE]
->
-> Starting with Windows 10 version 1903, the **DefaultUninstall** and **DefaultUninstall.Services** sections are prohibited, [(with exception)](../develop/creating-a-primitive-driver.md#legacy-compatibility). These sections were optional in prior OS versions.
->
-> All drivers running on 64-bit versions of Windows systems must be signed before Windows will load them. See [Signing a driver](../develop/signing-a-driver.md) for more information.
+Starting with Windows 10 version 1903, the **DefaultUninstall** and **DefaultUninstall.Services** sections are prohibited [(with exception)](../develop/creating-a-primitive-driver.md#legacy-compatibility). These sections were optional in prior OS versions.
+
+All drivers running on 64-bit versions of Windows systems must be signed in order for Windows to load them. For more information, see [Signing a driver](../develop/signing-a-driver.md).
 
 ## Version Section (required)
 
@@ -69,7 +65,7 @@ The following table shows the values that file system minifilter drivers should 
 
 ## DestinationDirs Section (optional but recommended)
 
-The [**DestinationDirs**](../install/inf-destinationdirs-section.md) section specifies the directories where minifilter driver and application files will be copied.
+The [**DestinationDirs**](../install/inf-destinationdirs-section.md) section specifies the directories where minifilter driver and application files are to be copied.
 
 In this section and in the **ServiceInstall** section, you can specify well-known system directories by system-defined numeric values. For a list of these values, see [INF DestinationDirs Section](../install/inf-destinationdirs-section.md). In the following code example, the value 12 refers to the Drivers directory (%windir%\\system32\\drivers), and the value 10 refers to the Windows directory (%windir%).
 
@@ -88,7 +84,7 @@ In the [**DefaultInstall**](../install/inf-defaultinstall-section.md) section, a
 >
 > The [**CopyFiles**](../install/inf-copyfiles-directive.md) directive should not refer to the catalog file or the INF file itself. SetupAPI copies these files automatically.
 
-You can create a single INF file to install your driver on multiple versions of the Windows operating systems. You can create this type of INF file by creating additional [**DefaultInstall**](../install/inf-defaultinstall-section.md) and [**DefaultInstall.Services**](../install/inf-defaultinstall-services-section.md) sections for each operating system version. Each section is labeled with a *decoration* (for example, .ntx86, .ntia64, or .nt) that specifies the operating system version to which it applies. For more information about creating this type of INF file, see [Creating INF Files for Multiple Platforms and Operating Systems](../install/creating-inf-files-for-multiple-platforms-and-operating-systems.md).
+You can create a single INF file to install your driver on multiple versions of the Windows operating systems. You can create this type of INF file by creating [**DefaultInstall**](../install/inf-defaultinstall-section.md) and [**DefaultInstall.Services**](../install/inf-defaultinstall-services-section.md) sections for each operating system version. Each section is labeled with a *decoration* (for example, .ntx86, .ntia64, or .nt) that specifies the operating system version to which it applies. For more information about creating this type of INF file, see [Creating INF Files for Multiple Platforms and Operating Systems](../install/creating-inf-files-for-multiple-platforms-and-operating-systems.md).
 
 The following code example shows a typical [**DefaultInstall**](../install/inf-defaultinstall-section.md) section.
 
@@ -138,9 +134,9 @@ The **StartType** entry specifies when to start the service. The following table
 
 For more information about these start types, see "Driver Start Types" in [What Determines When a Driver Is Loaded](what-determines-when-a-driver-is-loaded.md).
 
-The **LoadOrderGroup** entry provides the filter manager with information that it needs to ensure interoperability between minifilter drivers and legacy file system filter drivers. You should specify a **LoadOrderGroup** value that is appropriate for the type of minifilter driver that you are developing. To choose a load order group, see [Load Order Groups and Altitudes for Minifilter Drivers](load-order-groups-and-altitudes-for-minifilter-drivers.md).
+The **LoadOrderGroup** entry provides the filter manager with information that it needs to ensure interoperability between minifilter drivers and legacy file system filter drivers. You should specify a **LoadOrderGroup** value that is appropriate for the type of minifilter driver that you're developing. To choose a load order group, see [Load Order Groups and Altitudes for Minifilter Drivers](load-order-groups-and-altitudes-for-minifilter-drivers.md).
 
-Note that you must specify a **LoadOrderGroup** value, even if your minifilter driver's start type is not SERVICE_BOOT_START. In this way, minifilter drivers are different from legacy file system filter drivers.
+You must specify a **LoadOrderGroup** value, even if your minifilter driver's start type isn't SERVICE_BOOT_START. In this way, minifilter drivers are different from legacy file system filter drivers.
 
 > [!NOTE]
 >
@@ -148,7 +144,7 @@ Note that you must specify a **LoadOrderGroup** value, even if your minifilter d
 
 For more information about how the **StartType** and **LoadOrderGroup** entries determine when the driver is loaded, see [What Determines When a Driver Is Loaded](what-determines-when-a-driver-is-loaded.md).
 
-For minifilter drivers, unlike legacy file system filter drivers, the **StartType** and **LoadOrderGroup** values do not determine where the minifilter driver attaches in the minifilter instance stack. This location is determined by the altitude that is specified for the minifilter instance.
+Unlike legacy filter drivers, the **StartType** and **LoadOrderGroup** values don't determine where the minifilter driver attaches in the minifilter instance stack. Instead, the altitude specified for the minifilter instance determines the location.
 
 The **ErrorControl** entry specifies the action to be taken if the service fails to start during system startup. Minifilter drivers should specify a value of 1 (SERVICE_ERROR_NORMAL). For more information about the **ErrorControl** entry, see [INF AddService Directive](../install/inf-addservice-directive.md).
 
@@ -209,12 +205,12 @@ Instance3.Flags    = 0x1 ; Suppress automatic attachments
 >
 > The **DefaultUninstall** and **DefaultUninstall.Services** sections are prohibited [(with exception)](../develop/creating-a-primitive-driver.md#legacy-compatibility) starting with Windows 10 version 1903.
 
-In Windows 10 prior to version 1903, the **DefaultUninstall** and **DefaultUninstall.Services** sections were optional but recommended if the driver could be uninstalled:
+In Windows 10 before version 1903, the **DefaultUninstall** and **DefaultUninstall.Services** sections were optional but recommended if the driver could be uninstalled:
 
 * **DefaultUninstall** contained [**DelFiles**](../install/inf-delfiles-directive.md) and [**DelReg**](../install/inf-delreg-directive.md) directives to remove files and registry entries.
 * **DefaultUninstall.Services** contained [**DelService**](../install/inf-delservice-directive.md) directives to remove the minifilter driver's services. The [**DelService**](../install/inf-delservice-directive.md) directive always specified the SPSVCINST_STOPSERVICE flag (0x00000200) to stop the service before it was deleted.
 
-The following example shows typical **DefaultUninstall** and **DefaultUninstall.Services** sections prior to Windows 10, version 1903.
+The following example shows typical **DefaultUninstall** and **DefaultUninstall.Services** sections before Windows 10, version 1903.
 
 ```inf
 [DefaultUninstall.NTamd64]
