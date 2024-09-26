@@ -1,7 +1,7 @@
 ---
 title: How to Create a Driver Verification Log
 description: Learn why the Windows Server hardware certification program requires a driver verification log (DVL) for all applicable driver submissions.
-ms.date: 09/17/2024
+ms.date: 09/26/2024
 ---
 
 # How to create a driver verification log
@@ -59,7 +59,7 @@ Microsoft ships as part of the [Windows Driver Kit (WDK)](../download-the-wdk.md
 ### Generate DVL from CodeQL sarif file
 
 1. Locate dvl.exe from the WDK or a mounted eWDK. It's typically installed in *C:\Program Files (x86)\Windows Kits\10\Tools\dvl\dvl.exe*
-1. Call dvl.exe by passing the `/manualCreate` flag, a driver name, a desired architecture, and /sarifPath. Where /sarifPath is the path to the folder containing the sarif file.
+1. Call dvl.exe by passing the `/manualCreate` flag, a driver name, a desired architecture, and `/sarifPath`. Where `/sarifPath` includes the path to the folder containing the sarif file.
 
 ```cmd
 "C:\Program Files (x86)\Windows Kits\10\Tools\dvl\dvl.exe" /manualCreate <driverName> <driverArchitecture> /sarifPath <pathToSarifLocation>
