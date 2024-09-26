@@ -31,18 +31,12 @@ Run the following tests, as required.
 
 The driver verification log has the file name extension .DVL.XML. The log is created in the project folder, for example, \\*myDriverProject*\\*myDriverName*.DVL.XML.
 
-> [!NOTE]
-> SDV performs a clean rebuild of the driver, which removes the Code Analysis log. As such, please be sure to run SDV before running CA.
+SDV performs a clean rebuild of the driver, which removes the Code Analysis log. As such, be sure to run SDV before running CA.
 
-> [!NOTE]
-> When you are ready to test your driver using the [Windows Hardware Lab Kit](/windows-hardware/test/hlk/), copy the driver verification log to the %systemdrive%\\DVL directory on the test computer. Delete the contents of the directory on the test computer before you copy the new driver verification log.
-
-## Remarks
-
-For the most up-to-date information about the Code Analysis tool, Static Driver Verifier, and the driver verification log, see the WDK release notes. The release notes are available on the [Windows Driver Kit (WDK) download page](https://go.microsoft.com/fwlink/p/?linkid=254897).
+When you're ready to test your driver using the [Windows Hardware Lab Kit](/windows-hardware/test/hlk/), copy the driver verification log to the %systemdrive%\\DVL directory on the test computer. Delete the contents of the directory on the test computer before you copy the new driver verification log.
 
 > [!IMPORTANT]
-> Timeouts, spaceouts, and other non-successful results in the DVL file are acceptable for certification submission. This will not cause the static tools test in HLK to fail.
+> Timeouts, spaceouts, and other non-successful results in the DVL file are acceptable for certification submission. Non-successful results won't cause the static tools test in HLK to fail.
 
 ## Use the Visual Studio command prompt window
 
@@ -81,11 +75,15 @@ Microsoft ships as part of the [Windows Driver Kit (WDK)](../download-the-wdk.md
    - Arm64
 
   > [!NOTE]
-  > Do not include ".sys" as part of your driverName string.
+  > Don't include ".sys" as part of your driverName string.
 
 1. Inspect the DVL to ensure that it was generated correctly.
 
 This usage is primarily intended for generating DVLs with CodeQL results, but can also be used for SDV and CA results.
+
+## Release notes
+
+The most current information about the Code Analysis tool, Static Driver Verifier, and the driver verification log, is in the WDK release notes on the [Windows Driver Kit (WDK) download page](https://go.microsoft.com/fwlink/p/?linkid=254897).
 
 ## Related topics
 
