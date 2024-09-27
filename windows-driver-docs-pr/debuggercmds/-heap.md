@@ -1,4 +1,5 @@
 ---
+ai-usage: ai-assisted
 title: "!heap (WinDbg)"
 description: "The !heap extension displays heap usage information, controls breakpoints in the heap manager, detects leaked heap blocks, searches for heap blocks, or displays page heap information."
 keywords: ["heap usage", "GFlags, enabling page heap", "!heap Windows Debugging"]
@@ -323,7 +324,7 @@ Can be any single one of the following options. This specifies the size of the p
 If none of the above are specified, then the pattern is assumed to be of the same size as the machine pointer.
 
 <span id="_______-flt______"></span><span id="_______-FLT______"></span> **-flt**   
-Limits the display to include only heaps with the specified size or size range.
+Limits the display to include only heap allocations of a specified size or size range.
 
 <span id="_______FilterOptions______"></span><span id="_______filteroptions______"></span><span id="_______FILTEROPTIONS______"></span> *FilterOptions*   
 Can be any single one of the following options. The *FilterOptions* are case-sensitive.
@@ -342,7 +343,7 @@ Can be any single one of the following options. The *FilterOptions* are case-sen
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>s</strong> <strong></strong> <em>Size</em></p></td>
-<td align="left"><p>Limits the display to include only heaps of the specified size.</p></td>
+<td align="left"><p>Limits the display to include only heaps of a single size.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>r</strong> <strong></strong> <em>SizeMin</em> <strong></strong> <em>SizeMax</em></p></td>
@@ -351,6 +352,8 @@ Can be any single one of the following options. The *FilterOptions* are case-sen
 </tbody>
 </table>
 
+> [!NOTE]
+> In later versions of !heap options such as `-flt` may no longer be present. Use the command line help to confirm available options.
  
 
 <span id="_______-stat______"></span><span id="_______-STAT______"></span> **-stat**   
