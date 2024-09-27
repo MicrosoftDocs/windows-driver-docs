@@ -1,19 +1,12 @@
 ---
 title: Network Driver Design Guide
-description: Network Driver Design Guide
+description: How to design and create network device drivers for Windows operating systems.
 ms.assetid: 200517b2-d0a0-40cc-a5cb-9e2067e01028
-keywords:
-- network drivers WDK
-- networking
-ms.date: 04/20/2017
+ms.date: 09/27/2024
 ms.topic: article
 ---
 
 # Network Driver Design Guide
-
-
-
-
 
 This Network Driver Design Guide describes how to design and create network device drivers for Windows operating systems beginning with Windows Vista.
 

@@ -1,19 +1,10 @@
 ---
 title: Overview of WAN Miniport Drivers
-description: Overview of WAN Miniport Drivers
-keywords:
-- miniport drivers WDK networking , WAN miniport drivers
-- NDIS miniport drivers WDK , WAN miniport drivers
-- WAN miniport drivers WDK networking
-- wide area network WDK networking . miniport drivers
-ms.date: 04/20/2017
+description: This section describes CoNDIS WAN miniport drivers, CoNDIS WAN call managers, and CoNDIS WAN miniport call managers (MCMs).
+ms.date: 09/27/2024
 ---
 
 # Overview of WAN Miniport Drivers
-
-
-
-
 
 This section describes CoNDIS WAN miniport drivers, CoNDIS WAN call managers, CoNDIS WAN miniport call managers (MCMs), and the environments in which they operate. These WAN drivers support the Remote Access Service (RAS) and the Point-to-Point Protocol (PPP) over such media as ISDN, Frame Relay, or Switched 56.
 

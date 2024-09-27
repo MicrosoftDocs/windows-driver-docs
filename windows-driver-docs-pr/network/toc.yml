@@ -4964,10 +4964,8 @@
       href: status-values.md
   - name: "RNDIS To USB Mapping"
     items: 
-    - name: "Remote NDIS To USB Mapping"
+    - name: "Remote NDIS To USB Mapping Overview"
       href: remote-ndis-to-usb-mapping.md
-    - name: "Overview"
-      href: overview.md
     - name: "RNDIS USB-Level Initialization"
       items: 
       - name: "USB-Level Initialization"

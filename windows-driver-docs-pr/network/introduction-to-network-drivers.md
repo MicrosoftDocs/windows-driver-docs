@@ -1,9 +1,7 @@
 ---
 title: Introduction to Network Drivers Topics
-description: Introduction to Network Drivers
-keywords:
-- network drivers WDK , about network drivers
-ms.date: 04/20/2017
+description: Introductory concepts for kernel-mode network drivers.
+ms.date: 09/27/2024
 ---
 
 # Introduction to Network Drivers Topics

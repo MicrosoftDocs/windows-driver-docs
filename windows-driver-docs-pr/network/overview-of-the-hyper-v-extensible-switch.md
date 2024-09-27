@@ -1,7 +1,7 @@
 ---
 title: Overview of the Hyper-V Extensible Switch
-description: This section provides an overview of the Hyper-V Extensible Switch
-ms.date: 04/20/2017
+description: The Hyper-V Extensible Switch is a virtual Ethernet switch that runs in the management operating system of the Hyper-V parent partition.
+ms.date: 09/27/2024
 ---
 
 # Overview of the Hyper-V Extensible Switch

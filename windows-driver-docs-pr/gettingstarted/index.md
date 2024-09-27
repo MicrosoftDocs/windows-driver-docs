@@ -1,7 +1,7 @@
 ---
 title: Get Started with Drivers on Windows
 description: Start here to learn fundamental concepts about drivers on Windows.
-ms.date: 12/15/2023
+ms.date: 09/27/2024
 ms.topic: article
 ---
 
@@ -17,6 +17,7 @@ You should already be familiar with the [C programming language](/cpp/c-language
 -   [Do you need to write a driver?](do-you-need-to-write-a-driver-.md)
 -   [Choosing a driver model](choosing-a-driver-model.md)
 -   [Write your first driver](writing-your-first-driver.md)
+-   [From Sample Code to Production Driver](from-sample-code-to-production-driver.md)
 -   [Provision a computer for driver deployment and testing (WDK 10)](provision-a-target-computer-wdk-8-1.md)
 -   [Concepts for all driver developers](concepts-and-knowledge-for-all-driver-developers.md)
 

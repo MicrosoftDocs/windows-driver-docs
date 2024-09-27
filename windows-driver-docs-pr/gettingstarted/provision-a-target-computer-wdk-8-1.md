@@ -1,6 +1,6 @@
 ---
 title: Provision a Computer for Driver Deployment and Testing (WDK 10)
-ms.date: 03/12/2024
+ms.date: 09/27/2024
 description: This guide provides instructions on how to configure a computer for automatic driver deployment, testing, and debugging using Microsoft Visual Studio.
 ---
 

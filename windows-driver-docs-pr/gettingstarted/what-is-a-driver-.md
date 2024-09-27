@@ -1,7 +1,7 @@
 ---
 title: What is a Driver?
 description: A driver is a software component that lets the operating system and a device communicate with each other.
-ms.date: 12/15/2023
+ms.date: 09/27/2024
 ---
 
 # What is a driver?

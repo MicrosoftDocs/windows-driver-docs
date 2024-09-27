@@ -1,10 +1,7 @@
 ---
-title: Overview of NDIS driver types
-description: NDIS driver types
-keywords:
-- network drivers WDK , NDIS drivers
-- NDIS WDK , driver types supported
-ms.date: 03/02/2023
+title: Overview of NDIS Driver Types
+description: Network Driver Interface Specification (NDIS) supports the following driver types.
+ms.date: 09/27/2024
 ---
 
 # Overview of NDIS driver types
@@ -21,5 +18,4 @@ NDIS supports the following primary types of network drivers:
 
 -   [Intermediate drivers](ndis-intermediate-drivers.md)
 
->[!NOTE]
-> These topics detail each type of NDIS driver individually. For more information about the NDIS driver stack and a diagram showing the relationship between all four NDIS driver types, see [NDIS Driver Stack](ndis-driver-stack.md).
+**Note**: These topics detail each type of NDIS driver individually. For more information about the NDIS driver stack and a diagram showing the relationship between all four NDIS driver types, see [NDIS Driver Stack](ndis-driver-stack.md).
