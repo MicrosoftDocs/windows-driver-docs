@@ -2,14 +2,19 @@
 title: Debugging Managed Code Using the Windows Debugger
 description: You can use the windows debuggers (WinDbg, CDB, and NTSD) to debug target applications that contain managed code.
 keywords: debugging, debug, Windbg, managed code debugging, .NET common language runtime, common language runtime, CLR , JIT compiler, JITted code
-ms.date: 05/23/2017
+ms.date: 09/27/2024
 ---
 
 # Debugging Managed Code Using the Windows Debugger
 
-You can use the Windows debuggers (WinDbg, CDB, and NTSD) to debug target applications that contain managed code. To debug managed code, you must load the [SOS debugging extension (sos.dll)](/dotnet/framework/tools/sos-dll-sos-debugging-extension) and a data access component (mscordacwks.dll).
+You can use the Windows debuggers (WinDbg, CDB, and NTSD) to debug target applications that contain managed code. To debug managed code, use the !SOS debugging extension (sos.dll) and a data access component (mscordacwks.dll) in combination with the CLR runtime.
 
-The Windows debuggers are separate from the Visual Studio debugger. For information about the distinction between the Windows debuggers and the Visual Studio debugger, see [Windows Debugging](index.md).
+The Windows debuggers, such as WinDbg are separate from the Visual Studio debugger. For information about the distinction between the Windows debuggers and the Visual Studio debugger, see [Debugging Tools for Windows](debugger-download-tools.md).
+
+This article provides instructions on using Windows debuggers (WinDbg, CDB, NTSD) to debug managed code, including .NET Framework, .NET Core, and .NET 5+ applications.
+
+> [!NOTE]
+> When debugging .NET Framework, .NET Core, and .NET 5+ applications, ensure that you are using the latest version of the Windows Debugger tools. Additionally, consider using Visual Studio or Visual Studio Code for a more integrated debugging experience. WinDbg is more complex, takes more work to set up, and is typically used when additional low level information is required. 
 
 ## Introduction to Managed Code
 
@@ -19,147 +24,82 @@ When managed code is run, the runtime produces native code that is platform-spec
 
 You can build managed code by using several compilers that are manufactured by a variety of software producers. In particular, Microsoft Visual Studio can build managed code from several different languages including C#, Visual Basic, JScript, and C++ with managed extensions.
 
-The CLR is not updated every time the .NET Framework is updated. For example, versions 2.0, 3.0, and 3.5 of the .NET Framework all use version 2.0 of the CLR. The following table shows the version and filename of the CLR used by each version of the .NET Framework.
-
-| .NET Framework version | CLR version | CLR filename |
-|------------------------|-------------|--------------|
-| 1.1                    | 1.1         | mscorwks.dll |
-| 2.0                    | 2.0         | mscorwks.dll |
-| 3.0                    | 2.0         | mscorwks.dll |
-| 3.5                    | 2.0         | mscorwks.dll |
-| 4.0                    | 4.0         | clr.dll      |
-| 4.5                    | 4.0         | clr.dll      |
+The CLR is not updated every time the .NET Framework is updated. For example, versions 2.0, 3.0, and 3.5 of the .NET Framework all use version 2.0 of the CLR. For additional information on .NET versions, see [.NET Framework versions and dependencies](/dotnet/framework/migration-guide/versions-and-dependencies). For information on determing the version of .NET on your PC, see [Determine which .NET Framework versions are installed](/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed).
 
 ## Debugging Managed Code
 
-To debug managed code, the debugger must load these two components.
+To debug managed code using the !SOS debugging extension, the debugger must load various components. The !SOS debugging extension and the required components that are used for different for .NET Core and the original .NET Framework. For either, the Data Access Component (DAC) (mscordacwks.dll) is used.
 
-- Data access component (DAC) (mscordacwks.dll)
+The .NET SDK provides tools that may be helpful in working with debugging .NET apps. For more information, see [What is the .NET SDK?](/dotnet/core/sdk).
+
+### .NET Core 
+
+- For .NET Core or .NET 5+ and later versions, the runtime is `coreclr.dll`. For more information, see [Common Language Runtime (CLR) overview](/dotnet/standard/clr).
+- [.NET Core SOS debugging extension](/dotnet/core/diagnostics/sos-debugging-extension)
+
+For .NET Core there is a dotnet CLI tool available to install !sos.dll. For more information, see [SOS installer (dotnet-sos)](/dotnet/core/diagnostics/dotnet-sos). 
+
+### The Original .NET Framework.
+
+- For the original .NET Framework, `clr.dll` is the runtime. 
 - [SOS debugging extension (sos.dll)](/dotnet/framework/tools/sos-dll-sos-debugging-extension)
 
-**Note**  For all versions of the .NET Framework, the filename of the DAC is mscordacwks.dll, and the filename of the SOS debugging extension is sos.dll.
 
 ### Getting the SOS Debugging Extension (sos.dll)
 
-The SOS debugging extension (sos.dll) files are not included in the current version of Debugging Tools for Windows.
+The SOS debugging extension (sos.dll) files are not included in all versions of the Debugging Tools for Windows. If sos.dll is not available, see, [Installing SOS on Windows](https://github.com/dotnet/diagnostics/blob/main/documentation/installing-sos-windows-instructions.md). 
 
-For .NET Framework versions 2.0 and later, sos.dll is included in the .NET Framework installation.
+### Loading the SOS Debugging Extension (sos.dll)
 
-For version 1.*x* of the .NET Framework, sos.dll is not included in the .NET Framework installation. To get sos.dll for .NET Framework 1.*x*, download the 32-bit version of Windows 7 Debugging Tools for Windows.
+To debug .NET Core and .NET 5+ applications, you need to load the appropriate version of the SOS debugging extension. 
 
-Windows 7 Debugging Tools for Windows is included in the Windows SDK for Windows 7, which is available at these two places:
+For example, to a version of !SOS that is included with the debugger and is included in the current extension search path, the [**.load**](../debuggercmds/-load---loadby--load-extension-dll-.md) command would be used. 
 
-- [Windows SDK for Windows 7 and .NET Framework 4.0](https://www.microsoft.com/download/details.aspx?id=8279)
-- [Windows SDK for Windows 7 and .NET Framework 4.0 (ISO)](https://www.microsoft.com/download/details.aspx?id=8442)
+`0:000> .load sos.dll`
 
-If you are running an x64 version of Windows, use the [ISO](https://www.microsoft.com/download/details.aspx?id=8442), so that you can specify that you want the 32-bit version of the SDK. Sos.dll is included only in the 32-bit version of Windows 7 Debugging Tools for Windows.
-
-### Loading mscordacwks.dll and sos.dll (live debugging)
-
-Assume that the debugger and the application being debugged are running on the same computer. Then the .NET Framework being used by the application is installed on the computer and is available to the debugger.
-
-The debugger must load a version of the DAC that is the same as the version of the CLR that the managed-code application is using. The bitness (32-bit or 64-bit) must also match. The DAC (mscordacwks.dll) comes with the .NET Framework. To load the correct version of the DAC, attach the debugger to the managed-code application, and enter this command.
-
-**.cordll -ve -u -l**
-
-The output should be similar to this.
+To verify that the SOS debugging extension loaded correctly, use the [**.chain**](../debuggercmds/-chain--list-debugger-extensions-.md) command and exmaine the *Extension DLL chain*.
 
 ```dbgcmd
-CLRDLL: Loaded DLL C:\Windows\Microsoft.NET\Framework64\v4.0.30319\mscordacwks.dll
-CLR DLL status: Loaded DLL C:\Windows\Microsoft.NET\Framework64\v4.0.30319\mscordacwks.dll
+...
+Extension DLL chain:
+    C:\Windows\Microsoft.NET\Framework\v4.0.30319\SOS.dll: image 4.8.9275.0, API 1.0.0, built Wed Aug 28 14:43:27 2024
+        [path: C:\Windows\Microsoft.NET\Framework\v4.0.30319\SOS.dll]
+    C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\8.0.8\coreclr.dll: image 8,0,824,36612 @Commit: 08338fcaa5c9b9a8190abb99222fed12aaba956c, built Tue Jul 16 11:10:19 2024
+        [path: C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\8.0.8\coreclr.dll]
 ```
 
-To verify that the version of mscordacwks.dll matches the version of the CLR that the application is using, enter one of the following commands to display information about the loaded CLR module.
+If the version of the debugger does not include the sos.dll, you might need to specify the complete path to the SOS.dll file. You can typically find the SOS.dll file in the runtime directory of your .NET Core or .NET Framework installation.
 
-**lmv mclr** (for version 4.0 of the CLR)
+`0:000> .load C:\Windows\Microsoft.NET\Framework64\v4.0.30319\sos.dll`
 
-**lmv mscorwks** (for version 1.0 or 2.0 of the CLR)
+### Loading a specific version of sos.dll
 
-The output should be similar to this.
+Loading the sos.dll can be complex, as there is a dependency on the additional DLLs, that are used by the sos.dll to communicate with .NET. In addition, the DLL version required is dependent on the .NET version of the app being debugged, and multiple versions of .NET may be  present on the machine. 
 
-```dbgcmd
-start             end                 module name
-000007ff`26710000 000007ff`2706e000   clr        (deferred)             
-    Image path: C:\Windows\Microsoft.NET\Framework64\v4.0.30319\clr.dll
-...
-```
+One strategy to load the correct version of the dependent DLL, is to ask the debugger to break in when the first .NET clr notification (CLRN) occurs using the sx, sxd, sxe, sxi, sxn, sxr, sx- (Set Exceptions)[../debuggercmds/sx--sxd--sxe--sxi--sxn--sxr--sx---set-exceptions-.md] command. Once you have attached to the target .NET application, this command would be used after the first break in.
 
-In the preceding example, notice that the version of the CLR (clr.dll) matches the version of the DAC (mscordacwks.dll): v4.0.30319. Also notice that both components are 64-bit.
+`0:000> sxe CLRN`
 
-When you use [**.cordll**](../debuggercmds/-cordll--control-clr-debugging-.md) to load the DAC, the SOS debugging extension (sos.dll) might get loaded automatically. If sos.dll doesn't get loaded automatically, you can use one of these commands to load it.
+Next resume execution and wait for the break to occur.
 
-**.loadby sos clr** (for version 4.0 of the CLR)
+`0:000> g`
 
-**.loadby sos mscorwks** (for version 1.0 or 2.0 of the CLR)
+When the break occurs, disable the clr notification break, as we know clr.dll (or coreclr.dll) was loaded.
 
-As an alternative to using [**.loadby**](../debuggercmds/-load---loadby--load-extension-dll-.md), you can use **.load**. For example, to load version 4.0 of the 64-bit CLR, you could enter a command similar to this.
+`0:000> sxd CLRN`
 
-**.load C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\sos.dll**
+With the debugger in this context, use the [**.loadby**](../debuggercmds/-load---loadby--load-extension-dll-.md) to load the !sos from the same "nearby" directory location. 
 
-In the preceding output, notice that the version of the SOS debugging extension (sos.dll) matches the version of the CLR and the DAC: v4.0.30319. Also notice that all three components are 64-bit.
+`0:000> .loadby sos clr`
 
-### Loading mscordacwks.dll and sos.dll (dump file)
-
-Suppose you use the debugger to open a dump file (of a managed-code application) that was created on another computer.
-
-The debugger must load a version of the DAC that is the same as the version of the CLR that the managed-code application was using on the other computer. The bitness (32-bit or 64-bit) must also match.
-
-The DAC (mscordacwks.dll) comes with the .NET Framework, but let's assume that you do not have the correct version of the .NET Framework installed on the computer that is running the debugger. You have three options.
-
-- Load the DAC from a symbol server. For example, you could include Microsoft's public symbol server in your symbol path.
-- Install the correct version of the .NET Framework on the computer that is running the debugger.
-- Get the correct version of mscordacwks.dll from the person who created the dump file (on another computer) and manually copy it to the computer that is running the debugger.
-
-Here we illustrate using Microsoft's public symbol server.
-
-Enter these commands.
-
-**.sympath+ srv\\*** (Add symbol server to symbol path.)
-
-**!sym noisy**
-
-**.cordll -ve -u -l**
-
-The output will be similar to this.
+Another option is to use the [.cordll (Control CLR Debugging)](../debuggercmds/-cordll--control-clr-debugging-.md) to load the CLR debugging DLLs by providing a path to the target framework location.
 
 ```dbgcmd
-CLRDLL: Unable to get version info for 'C:\Windows\Microsoft.NET
-   \Framework64\v4.0.30319\mscordacwks.dll', Win32 error 0n87
-
-SYMSRV:  C:\ProgramData\dbg\sym\mscordacwks_AMD64_AMD64_4.0.30319.18010.dll
-   \5038768C95e000\mscordacwks_AMD64_AMD64_4.0.30319.18010.dll not found
-
-SYMSRV:  mscordacwks_AMD64_AMD64_4.0.30319.18010.dll from 
-   https://msdl.microsoft.com/download/symbols: 570542 bytes - copied         
-...
-SYMSRV:  C:\ProgramData\dbg\sym\SOS_AMD64_AMD64_4.0.30319.18010.dll
-   \5038768C95e000\SOS_AMD64_AMD64_4.0.30319.18010.dll not found
-
-SYMSRV:  SOS_AMD64_AMD64_4.0.30319.18010.dll from 
-   https://msdl.microsoft.com/download/symbols: 297048 bytes - copied         
-...
+0:000> .cordll -ve -u -lp C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+CLRDLL: Loaded DLL C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscordacwks.dll
 Automatically loaded SOS Extension
-...
+CLR DLL status: Loaded DLL C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscordacwks.dll
 ```
-
-In the preceding output, you can see that the debugger first looked for mscordacwks.dll and sos.dll on the local computer in C:\\Windows\\Microsoft.NET and in the symbol cache (C:\\ProgramData\\dbg\\sym). When the debugger did not find the correct versions of the files on the local computer, it retrieved them from the public symbol server.
-
-To verify that the version of mscordacwks.dll matches the version of the CLR that the application was using, enter one of the following commands to display information about the loaded CLR module.
-
-**lmv -mclr** (for version 4.0 of the CLR)
-
-**lmv -mscorwks** (for version 1.0 or 2.0 of the CLR)
-
-The output should be similar to this.
-
-```dbgcmd
-start             end                 module name
-000007ff`26710000 000007ff`2706e000   clr        (deferred)             
-    Image path: C:\Windows\Microsoft.NET\Framework64\v4.0.30319\clr.dll
-...
-```
-
-In the preceding example, notice that the version of the CLR (clr.dll) matches the product version of the DAC (mscordacwks.dll): v4.0.30319. Also notice that both components are 64-bit.
 
 ### Using the SOS Debugging Extension
 
@@ -168,16 +108,109 @@ To verify that the SOS debugging extension loaded correctly, enter the [**.chain
 ```dbgcmd
 0:000> .chain
 Extension DLL search Path:
-...
+    C:\Program Files\Debugging Tools for Windows (x64);...
 Extension DLL chain:
-    C:\ProgramData\dbg\sym\SOS_AMD64_AMD64_4.0.30319.18010.dll\...
-        ...
-    dbghelp: image 6.13.0014.1665, API 6.2.6, built Wed Dec 12 03:02:43 2012
+    C:\Windows\Microsoft.NET\Framework\v4.0.30319\SOS.dll: image 4.8.9275.0, API 1.0.0, built Wed Aug 28 14:43:27 2024
+        [path: C:\Windows\Microsoft.NET\Framework\v4.0.30319\SOS.dll]
 ...
 ```
 
-To test the SOS debugging extension, enter **!sos.help**. Then try one of the command provided by the SOS debugging extension. For example, you could try **!sos.DumpDomain** or the **!sos.Threads** command.
+### .NET symbol files
+
+Symbol files are essential for debugging. For .NET Framework, .NET Core, and .NET 5+ applications, you can retrieve the necessary symbol files from Microsoft's public symbol server. Use the following command to set the symbol path and echo symbol loading.
+
+`.symfix` 
+
+`!sym noisy`
+
+`.reload`
+
+### Testing the .NET Core !sos extension
+
+To test the SOS debugging extension, enter **!sos.help**. 
+
+```dbgcmd
+0:000> !sos.help
+-------------------------------------------------------------------------------
+SOS is a debugger extension DLL designed to aid in the debugging of managed
+programs. Functions are listed by category, then roughly in order of
+importance. Shortcut names for popular functions are listed in parenthesis.
+Type "!help <functionname>" for detailed info on that function. 
+
+Object Inspection                  Examining code and stacks
+-----------------------------      -----------------------------
+DumpObj (do)                       Threads
+DumpArray (da)                     ThreadState
+DumpStackObjects (dso)             IP2MD
+DumpHeap                           U
+DumpVC                             DumpStack
+GCRoot                             EEStack
+ObjSize                            CLRStack
+FinalizeQueue                      GCInfo
+PrintException (pe)                EHInfo
+TraverseHeap                       BPMD 
+                                   COMState
+```
+
+Then try one of the command provided by the SOS debugging extension. For example, you could try **!sos.DumpDomain** or the **!sos.Threads** command provided by the [.NET Core SOS debugging extension](/dotnet/core/diagnostics/sos-debugging-extension).
+
+```dbgcmd
+0:000> !sos.DumpDomain
+--------------------------------------
+System Domain:      7565d980
+LowFrequencyHeap:   7565dca4
+HighFrequencyHeap:  7565dcf0
+StubHeap:           7565dd3c
+Stage:              OPEN
+Name:               None
+--------------------------------------
+Shared Domain:      7565d620
+LowFrequencyHeap:   7565dca4
+HighFrequencyHeap:  7565dcf0
+StubHeap:           7565dd3c
+Stage:              OPEN
+Name:               None
+Assembly:           00fa5e78 [C:\WINDOWS\Microsoft.Net\assembly\GAC_32\mscorlib\v4.0_4.0.0.0__b77a5c561934e089\mscorlib.dll]
+ClassLoader:        00fa5f40
+  Module Name
+73571000    C:\WINDOWS\Microsoft.Net\assembly\GAC_32\mscorlib\v4.0_4.0.0.0__b77a5c561934e089\mscorlib.dll
+
+0:000> !sos.Threads
+ThreadCount:      2
+UnstartedThread:  0
+BackgroundThread: 2
+PendingThread:    0
+DeadThread:       0
+Hosted Runtime:   no
+                                                                         Lock  
+       ID OSID ThreadOBJ    State GC Mode     GC Alloc Context  Domain   Count Apt Exception
+   0    1 4538 00f91110     20220 Preemptive  02FE1238:00000000 00f58be0 1     Ukn 
+   7    2 250c 00f9da88     21220 Cooperative 00000000:00000000 00f58be0 1     Ukn (Finalizer) 
+```
+
+### Testing the .NET Framework !sos extension
+
+To test the SOS debugging extension, enter **!sos.help**. Then try one of the command provided by the SOS debugging extension. For example, you could try **!sos.sostatus** or the **!sos.threads** command.
+
+```dbgcmd
+0:030> !soshelp
+crashinfo                                 Displays the crash details that created the dump.
+help, soshelp <command>                   Displays help for a command.
+loadsymbols <url>                         Loads symbols for all modules.
+logclose <path>                           Disables console file logging.
+logging <path>                            Enables/disables internal diagnostic logging.
+logopen <path>                            Enables console file logging.
+maddress                                  Displays a breakdown of the virtual address space.
+modules, lm                               Displays the native modules in the process.
+registers, r                              Displays the thread's registers.
+runtimes <id>                             Lists the runtimes in the target or changes the default runtime.
+setclrpath <path>                         Sets the path to load coreclr DAC/DBI files.
+setsymbolserver, SetSymbolServer <url>    Enables and sets symbol server support for symbols and module download.
+sosflush                                  Resets the internal cached state.
+sosstatus                                 Displays internal status.
+threads, setthread <thread>               Lists the threads in the target or sets the current thread.
+```
 
 ### Notes
 
-Sometimes a managed-code application loads more than one version of the CLR. In that case, you must specify which version of the DAC to load. For more information, see [**.cordll**](../debuggercmds/-cordll--control-clr-debugging-.md).
+Sometimes a managed-code application loads more than one version of the CLR. In that case, you must specify which version of the DAC to load. For more information, see [**.cordll**](../debuggercmds/-cordll--control-clr-debugging-.md) and [Clrver.exe (CLR Version Tool)](/dotnet/framework/tools/clrver-exe-clr-version-tool).
