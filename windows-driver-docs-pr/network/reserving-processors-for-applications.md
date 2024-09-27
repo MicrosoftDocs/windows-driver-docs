@@ -1,17 +1,10 @@
 ---
 title: Reserving Processors for Applications
-description: Reserving Processors for Applications
-keywords:
-- CPU configuration WDK RSS
-- reserving processors for applications WDK RSS
-- processors WDK RSS
-ms.date: 04/20/2017
+description: The receive side scaling (RSS) interface enables an administrator to reserve a set of processors for applications to use.
+ms.date: 09/27/2024
 ---
 
 # Reserving Processors for Applications
-
-
-
 
 
 The receive side scaling (RSS) interface enables an administrator to reserve a set of processors for applications to use. The administrator can reserve a set of processors starting at logical CPU number 0 and ending at a specified CPU number. The RSS *base CPU number* is the CPU number of the first CPU that RSS can use. RSS cannot use the CPUs that are numbered below the base CPU number. For example, on a quad-core system with hyper-threading turned off, if base CPU number is set to 1, processors 1, 2, and 3 can be used for RSS.

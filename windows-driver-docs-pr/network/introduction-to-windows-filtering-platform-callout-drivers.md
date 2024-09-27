@@ -1,19 +1,15 @@
 ---
 title: Introduction to Windows Filtering Platform Callout Drivers
-description: Introduction to Windows Filtering Platform Callout Drivers
-keywords:
-- Windows Filtering Platform callout drivers WDK , about callout drivers
-- callout drivers WDK Windows Filtering Platform , about callout drivers
-- callouts WDK Windows Filtering Platform
-ms.date: 04/20/2017
+description: A callout driver creates callouts which extend the Windows Filtering Platform by processing TCP/IP network data in more advanced ways than basic filtering can handle.
+ms.date: 09/27/2024
 ---
 
-# Introduction to Windows Filtering Platform Callout Drivers
+# Introduction to Windows Filtering Platform (WFP) Callout Drivers
 
 
-This section introduces Windows Filtering Platform [callout drivers](callout-driver.md). 
+This section introduces WFP [callout drivers](callout-driver.md). 
 
-For more information about the Windows Filtering Platform, see the [Windows Filtering Platform](/windows/win32/fwp/windows-filtering-platform-start-page) documentation in the Microsoft Windows SDK.
+For more information about the WFP, see the [Windows Filtering Platform](/windows/win32/fwp/windows-filtering-platform-start-page) documentation in the Microsoft Windows SDK.
 
 For WFP reference information, see [Windows Filtering Platform Callout Drivers](/windows-hardware/drivers/ddi/_netvista/#windows-filtering-platform-callout-drivers).
 

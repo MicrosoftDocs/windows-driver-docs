@@ -1,12 +1,7 @@
 ---
 title: Standardized INF Keywords for RSS
-description: Standardized INF Keywords for RSS
-keywords:
-- receive-side scaling WDK networking , standardized INF keywords
-- RSS WDK networking , standardized INF keywords
-- standardized INF keywords WDK RSS
-- INF entries WDK RSS
-ms.date: 06/14/2023
+description: The RSS interface supports standardized INF keywords that appear in the registry and are specified in INF files.
+ms.date: 09/27/2024
 ---
 
 # Standardized INF Keywords for RSS

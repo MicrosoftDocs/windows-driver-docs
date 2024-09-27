@@ -1,15 +1,15 @@
 ---
 title: Mobile Broadband Device Firmware Update
-description: This topic provides guidance to Mobile Broadband (MB) module manufacturers intending to support firmware upgrade devices via Windows Update (WU).
-ms.date: 04/20/2017
+description: This article provides guidance to Mobile Broadband (MB) module manufacturers intending to support firmware upgrade devices via Windows Update (WU).
+ms.date: 09/27/2024
 ---
 
 # Mobile Broadband Device Firmware Update
 
 
-This topic provides guidance to Mobile Broadband (MB) module manufacturers intending to support firmware upgrade devices via Windows Update (WU). The devices must be compliant with the [USB NCM Mobile Broadband Interface Model (MBIM) V1.0 specification](https://go.microsoft.com/fwlink/p/?linkid=320791) released by the USB-IF Device Working Group.
+This article provides guidance to Mobile Broadband (MB) module manufacturers intending to support firmware upgrade devices via Windows Update (WU). The devices must be compliant with the [USB NCM Mobile Broadband Interface Model (MBIM) V1.0 specification](https://go.microsoft.com/fwlink/p/?linkid=320791) released by the USB-IF Device Working Group.
 
-The information in this topic applies to:
+The information in this article applies to:
 
 -   Windows 8/Windows 10/Windows 11
 
@@ -21,7 +21,7 @@ To support firmware updates on Mobile Broadband using Windows Update, module or 
 -   UMDF (User Mode Driver Framework) based driver developed by the module or device manufacturer, packaged along with the INF file and firmware payload. Sample INF file and details are provided in the later part of this document
 -   Device firmware to implement the following functionalities:
     -   Firmware ID Device Service (FID). For more information, see **FID Device Service**.
-    -   Firmware to support a firmware update device service. This is a device manufacturer specific device service that provides the ability for an UMDF driver to call into and execute/download the firmware payload and start the firmware update process.
+    -   Firmware to support a firmware update device service. This is a device manufacturer specific device service that enables a UMDF driver to call into and execute/download the firmware payload and start the firmware update process.
 
 **Operational Overview**
 
@@ -29,27 +29,27 @@ The following diagram shows the high level design and interaction between the th
 
 :::image type="content" source="images/mbdevicefirmwareupdate.png" alt-text="Diagram showing the interaction between MBIM device, Windows 8 OS, and IHV supplied firmware upgrade driver.":::
 
--   When the WWAN Service detects the arrival of new MB device, it will check if device support Firmware ID (FID) Device Service. If it is present, it will retrieve the FID, which is defined to be GUID. The Firmware Device Service specification that the IHV needs to the support on the device is described **below**.
--   WWAN Service (Windows OS) will generate “soft device-node” using the FID obtained above as the device hardware Id. This referred to as “Soft Dev Node” in the diagram above. The creation of the dev-node will kick start PnP subsystem (Windows OS) to find the best matched driver. In Windows 8, PnP system will first attempt to install a driver from the local store, if one is available, and in parallel OS will attempt to fetch a better matched driver from WU. The inbox NULL driver will used be used as default if better match driver is not available to eliminate “Driver Not Found” issue.
--   The IHV WU package, based on the FID match, is pulled down to the machine and installed. It is expected that the FID represents a unique firmware SKU (uniqueness here is defined by combination device VID/PID/REV and MNO). WU package would contain an IHV authored UMDF driver as well as a firmware payload.
--   Once the IHV UMDF is loaded on the soft dev-node it is responsible for controlling the firmware update flow. It should be noted that the life time of the soft dev-node is tied to physical presence of the MBIM device. The UMDF driver shall perform the following steps to performing firmware updates
-    -   It is acceptable for the device to reboot multiple times during the firmware update process, but would cause the UMDF driver to get unloaded/reloaded
+-   When the WWAN Service detects the arrival of new MB device, it checks if device support Firmware ID (FID) Device Service. If it's present, it retrieves the FID, which is defined to be GUID. The Firmware Device Service specification that the IHV needs to the support on the device is described **below**.
+-   WWAN Service (Windows OS) generates “soft device-node” using the FID obtained above as the device hardware Id. This referred to as “Soft Dev Node” in the diagram above. The creation of the dev-node will kick start PnP subsystem (Windows OS) to find the best matched driver. In Windows 8, PnP system will first attempt to install a driver from the local store, if one is available, and in parallel OS will attempt to fetch a better matched driver from WU. The inbox NULL driver will used be used as default if better match driver isn't available to eliminate “Driver Not Found” issue.
+-   The IHV WU package, based on the FID match, is pulled down to the machine and installed. It's expected that the FID represents a unique firmware SKU (uniqueness here's defined by combination device VID/PID/REV and MNO). WU package would contain an IHV authored UMDF driver as well as a firmware payload.
+-   Once the IHV UMDF is loaded on the soft dev-node it's responsible for controlling the firmware update flow. It should be noted that the life time of the soft dev-node is tied to physical presence of the MBIM device. The UMDF driver shall perform the following steps to performing firmware updates
+    -   It's acceptable for the device to reboot multiple times during the firmware update process, but would cause the UMDF driver to get unloaded/reloaded
     -   The entire firmware upgrade process, including reboots, should take place no more than 60 seconds.
     -   After the firmware update is completed and device has reverted to MBIM mode, Windows should be notified. This is done by clearing the previously set DEVPKEY\_Device\_PostInstallInProgress property. The [**IWDFUnifiedPropertyStore**](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfunifiedpropertystore) interface describes how to set a property on dev-node. A previously set property can be cleared using DEVPROP\_TYPE\_EMPTY.
     -   During OnPrepareHardware UMDF callback, the UMDF driver shall check if the firmware on the device needs to be updated. This is done by comparing the version of the firmware on the device against the one that came in via Windows Update. Additional guidance is provided later in the document regarding placement location of firmware binary. If firmware update is required, the UMDF driver should:
         -   [Schedule a work-item](../wdf/using-workitems.md). The actual firmware upgrade happens in the context of the work-item.
-        -   Once the work-item is successfully scheduled, notify Windows about the start of firmware update. It is done by setting the DEVPKEY\_Device\_PostInstallInProgress property on the soft dev-node in the context of OnPrepareHardware UMDF callback.
-        -   It is important not to block the OnPrepareHardware callback while the firmware update is in progress. It is expected that OnPrepareHardware callback is completed within a second or two at the most.
+        -   Once the work-item is successfully scheduled, notify Windows about the start of firmware update. It's done by setting the DEVPKEY\_Device\_PostInstallInProgress property on the soft dev-node in the context of OnPrepareHardware UMDF callback.
+        -   It's important not to block the OnPrepareHardware callback while the firmware update is in progress. It's expected that OnPrepareHardware callback is completed within a second or two at the most.
 
 **Sample INF file for the WU Package**
 
 This section provides a sample INF that is part of the WU package. The key points to note in INF file are:
 
 -   The firmware binaries are independent of the UMDF driver.
--   The firmware binaries are located in the driverstore directory, a path determined by the operating system and referenced in the INF using DIRID 13. The binaries cannot be not be executable files containing PE/COFF headers.
+-   The firmware binaries are located in the driverstore directory, a path determined by the operating system and referenced in the INF using DIRID 13. The binaries can't be executable files containing PE/COFF headers.
 -   `%13%\<UniqueBinaryName>.bin`
 -   The INF file stores this location in the registry and the UMDF driver reads the registry value to discover the binary location.
--   The sample INF template below has highlighted items that need to be filled by the IHV.
+-   The following sample INF template highlights items that need to be filled by the IHV.
 
 ```cpp
 [Version]

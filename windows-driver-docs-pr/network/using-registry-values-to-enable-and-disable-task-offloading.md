@@ -1,12 +1,7 @@
 ---
 title: Using Registry Values to Enable and Disable Task Offloading
 description: Using Registry Values to Enable and Disable Task Offloading
-keywords:
-- task offload WDK TCP/IP transport , registry values
-- registry WDK TCP/IP offload
-- task offload WDK TCP/IP transport , enabling services
-- task offload WDK TCP/IP transport , disabling services
-ms.date: 10/30/2020
+ms.date: 09/27/2024
 ---
 
 # Using Registry Values to Enable and Disable Task Offloading

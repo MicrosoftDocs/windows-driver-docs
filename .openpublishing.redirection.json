@@ -12083,6 +12083,11 @@
             "redirect_document_id": false
         },
         {
+          "source_path": "windows-driver-docs-pr/network/overview.md",
+          "redirect_URL": "/windows-hardware/drivers/network/remote-ndis-to-usb-mapping",
+          "redirect_document_id": false
+      },
+        {
             "source_path": "windows-driver-docs-pr/network/overview-of-ndis-qos-for-data-center-bridging.md",
             "redirect_URL": "/windows-hardware/drivers/network/ndis-qos-for-data-center-bridging",
             "redirect_document_id": false

@@ -1,20 +1,10 @@
 ---
 title: RSS Configuration
-description: RSS Configuration
-keywords:
-- receive-side scaling WDK networking , ndirection table example
-- RSS WDK networking , indirection table example
-- receive-side scaling WDK networking , configuration
-- RSS WDK networking , configuration
-- ndirection table example WDK RSS
-ms.date: 04/20/2017
+description: To obtain RSS configuration information, an overlying driver can send an OID query to a miniport driver.
+ms.date: 09/27/2024
 ---
 
 # RSS Configuration
-
-
-
-
 
 To obtain RSS configuration information, an overlying driver can send an OID query of [OID\_GEN\_RECEIVE\_SCALE\_CAPABILITIES](./oid-gen-receive-scale-capabilities.md) to a miniport driver. NDIS also provides the RSS configuration information to overlying protocol drivers in the [**NDIS\_BIND\_PARAMETERS**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_bind_parameters) structure during initialization.
 

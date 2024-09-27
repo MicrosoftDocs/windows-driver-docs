@@ -1,9 +1,7 @@
 ---
 title: Introduction to the Wi-Fi WDF class extension (WiFiCx)
-description: An overview of the WiFiCx class extension.
-keywords:
-- WiFiCx WDF class extension, WiFiCx, WiFi NetAdapterCx
-ms.date: 06/17/2021
+description: Starting in Windows 11, the Windows Driver Kit (WDK) includes WiFiCx, which enables you to write a KMDF-based client driver for a Wi-Fi device.
+ms.date: 09/27/2024
 ---
 
 # Introduction to the Wi-Fi WDF class extension (WiFiCx)

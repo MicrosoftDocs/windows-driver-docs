@@ -1,9 +1,7 @@
 ---
 title: Mobile Plans Overview
 description: Mobile Plans overview
-keywords:
-- Windows Mobile Plans mobile operators
-ms.date: 10/06/2023
+ms.date: 09/27/2024
 ms.topic: article
 ---
 
