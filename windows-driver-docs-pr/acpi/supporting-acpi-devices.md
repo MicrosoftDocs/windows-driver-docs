@@ -10,10 +10,10 @@ keywords:
 - operation region handlers WDK ACPI
 - function drivers WDK ACPI
 - WDM function drivers WDK ACPI
-ms.date: 03/17/2023
+ms.date: 09/12/2024
 ---
 
-# Supporting ACPI Devices
+# Supporting ACPI devices
 
 This section describes how a vendor can use a WDM function driver in Windows to enhance the functionality of an Advanced Configuration and Power Interface (ACPI) device.
 
@@ -39,10 +39,10 @@ The following two examples show how a vendor can use a function driver to enhanc
 
 The following topics describe how to supply a function driver for an ACPI device:
 
-[Device Stacks for an ACPI Device](device-stacks-for-an-acpi-device.md)
+[Device stacks for an ACPI device](device-stacks-for-an-acpi-device.md)
 
-[Operation of an ACPI Device Function Driver](operation-of-an-acpi-device-function-driver.md)
+[Operation of an ACPI device function driver](operation-of-an-acpi-device-function-driver.md)
 
-For information about the system-supplied support routines that support ACPI device function drivers, see [ACPI Operation Region Handler Reference](/windows-hardware/drivers/ddi/_acpi/index).
+For information about the system-supplied support routines that support ACPI device function drivers, see [ACPI operation region handler reference](/windows-hardware/drivers/ddi/_acpi/index).
 
-For more information about ACPI devices and namespaces, see the [Advanced Configuration and Power Interface (ACPI) Specification](https://uefi.org/specifications).
+For more information about ACPI devices and namespaces, see the [Advanced Configuration and Power Interface (ACPI) specification](https://uefi.org/specifications).

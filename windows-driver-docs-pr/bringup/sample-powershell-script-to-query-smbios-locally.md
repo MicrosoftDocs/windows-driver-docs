@@ -1,7 +1,7 @@
 ---
 title: Sample PowerShell Script to Query SMBIOS Locally
 description: Sample PowerShell script to query SMBIOS locally
-ms.date: 03/23/2023
+ms.date: 09/11/2024
 ---
 
 # Sample PowerShell script to query SMBIOS locally

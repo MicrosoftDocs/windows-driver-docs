@@ -4,10 +4,10 @@ description: XPSDrv Installation
 keywords:
 - XPSDrv printer drivers WDK , installing
 - INF files WDK print , XPSDrv printer drivers
-ms.date: 05/08/2023
+ms.date: 09/11/2024
 ---
 
-# XPSDrv Installation
+# XPSDrv installation
 
 [!include[Print Support Apps](../includes/print-support-apps.md)]
 

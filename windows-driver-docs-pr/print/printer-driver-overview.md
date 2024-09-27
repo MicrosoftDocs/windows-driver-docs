@@ -1,12 +1,12 @@
 ---
 title: Printer Driver Overview
-description: Printer Driver Overview
+description: Printer driver overview
 keywords:
 - printer drivers WDK, design options
-ms.date: 01/24/2023
+ms.date: 09/24/2024
 ---
 
-# Printer Driver Overview
+# Printer driver overview
 
 [!include[Print Support Apps](../includes/print-support-apps.md)]
 
@@ -14,14 +14,14 @@ This section summarizes the different printer driver design options for Microsof
 
 This section includes:
 
-[V4 Printer Driver](v4-printer-driver.md)
+[V4 printer driver](v4-printer-driver.md)
 
-[Driver Support for OpenXPS](driver-support-for-openxps.md)
+[Driver support for OpenXPS](driver-support-for-openxps.md)
 
-[XPS Printer Driver (XPSDrv)](xpsdrv-printer-driver.md)
+[XPS printer driver (XPSDrv)](xpsdrv-printer-driver.md)
 
-[Microsoft Universal Printer Driver](microsoft-universal-printer-driver.md)
+[Microsoft universal printer driver](microsoft-universal-printer-driver.md)
 
-[Microsoft PostScript Printer Driver](microsoft-postscript-printer-driver.md)
+[Microsoft PostScript printer driver](microsoft-postscript-printer-driver.md)
 
-[Microsoft Plotter Driver](microsoft-plotter-driver.md)
+[Microsoft plotter driver](microsoft-plotter-driver.md)

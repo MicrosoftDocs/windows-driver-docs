@@ -1,18 +1,18 @@
 ---
 title: Secure Boot
-description: Secure Boot
-ms.date: 03/23/2023
+description: Secure boot
+ms.date: 09/26/2024
 ---
 
-# Secure Boot
+# Secure boot
 
-Secure Boot is a process to ensure that your PC boots using only software that is trusted by the PC manufacturer. Secure Boot is not exclusive to Microsoft and is defined in UEFI specification documents, though Microsoft does have specific requirements defined in the links included below.
+Secure Boot is a process to ensure that your PC boots using only software that is trusted by the PC manufacturer. Secure Boot isn't exclusive to Microsoft and is defined in UEFI specification documents, though Microsoft does have specific requirements defined in the links included below.
 
 When the PC starts, the firmware checks the signature of each piece of boot software, including firmware drivers (Option ROMs) and the operating system. If the signatures are good, the PC boots, and the firmware gives control to the operating system.
 
-Secure Boot is required for Windows operating systems; Windows 8, 8.1, and 10, and is also part of UEFI Specification docs. See section [27.1 Secure Boot](https://uefi.org/sites/default/files/resources/UEFI_2_3_1_C.pdf) in the UEFI specification document for additional information.
+Secure Boot is required for Windows operating systems; Windows 8, 8.1, and 10, and is also part of UEFI Specification docs. For more information, see section [27.1 Secure Boot](https://uefi.org/sites/default/files/resources/UEFI_2_3_1_C.pdf) in the UEFI specification document for additional information.
 
-For more information regarding Windows requirements for Secure boot, see **System.Fundamentals.Firmware.UEFISecureBoot** in the **WHCP-Systems-Specification-1607** link below.
+For more information regarding Windows requirements for Secure boot, see **System.Fundamentals.Firmware.UEFISecureBoot** in [WHCP-Systems-Specification-1607 (ZIP download)](https://download.microsoft.com/download/D/3/C/D3CAA04D-0EE6-415B-9E94-FA7BDE37C2B4/WHCP-Documents-1607.zip).
 
 ## Related resources
 

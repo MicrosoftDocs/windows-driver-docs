@@ -106,7 +106,7 @@
       href: v4-printer-driver-development-best-practices.md
     - name: "Working with the Driver Store"
       href: working-with-the-driver-store.md
-    - name: "Working with enhanced Point and Print"
+    - name: "Work with enhanced Point and Print"
       href: working-well-with-enhanced-point-and-print.md
     - name: "V4 Printer Driver Security Considerations"
       href: v4-printer-driver-security-considerations.md

@@ -7,7 +7,7 @@ keywords:
 - configuration component WDK print
 - components WDK printing
 - architecture WDK print
-ms.date: 01/26/2023
+ms.date: 09/12/2024
 ---
 
 # Introduction to printing
@@ -22,24 +22,24 @@ When a Microsoft Win32 GDI application prints, it calls GDI functions in the Win
 
 In the XPS print path, printer drivers are based on the XML Paper Specification (XPS). When a Microsoft Win32 XPS application prints, the application calls XPS functions in the XPS Print API. When it prints to queues with [XPSDrv printer drivers](xpsdrv-printer-drivers.md), the spooler passes the XPS spool file straight to the device for rendering and output. When the XPS file is printed to a GDI device, it is converted to an EMF file through the XPS to GDI Conversion Module. It is then sent through the GDI print path in a manner similar to Win32 GDI applications.
 
-Windows Presentation Foundation (WPF) applications call WPF print support functions to spool XPS documents to the spooler in the XPS spool file format. As when printing from Win32 XPS applications, when the spooler prints to print queues with XPSDrv printer drivers, the spooler passes the spooled file in its original format to the XPSDrv printer driver for rendering and output to the printer. When the spooler prints to printers that have GDI-based, version 3 printer drivers, the spooler sends the data in the XPS spool file format to the GDI Conversion Module for conversion to an EMF file. It then sends the data to the GDI-based printer driver for printing. For more information about these data paths, see [Windows Print Path Overview](windows-print-path-overview.md). For more information about XPS, see the [XML Paper Specification Overview](/previous-versions/windows/hardware/design/dn641615(v=vs.85)).
+Windows Presentation Foundation (WPF) applications call WPF print support functions to spool XPS documents to the spooler in the XPS spool file format. As when printing from Win32 XPS applications, when the spooler prints to print queues with XPSDrv printer drivers, the spooler passes the spooled file in its original format to the XPSDrv printer driver for rendering and output to the printer. When the spooler prints to printers that have GDI-based, version 3 printer drivers, the spooler sends the data in the XPS spool file format to the GDI Conversion Module for conversion to an EMF file. It then sends the data to the GDI-based printer driver for printing. For more information about these data paths, see [Windows Print Path Overview](windows-print-path-overview.md). For more information about XPS, see the [XML paper specification overview](/previous-versions/windows/hardware/design/dn641615(v=vs.85)).
 
 Spooler and driver components are replaceable, so hardware vendors can easily add support for new hardware. For more information about print spooler and driver components, see the following sections:
 
-[Print Spooler Architecture](print-spooler-architecture.md)
+[Print spooler architecture](print-spooler-architecture.md)
 
-[Printer Driver Architecture](printer-driver-architecture.md)
+[Printer driver architecture](printer-driver-architecture.md)
 
-Support for a new printer usually requires only creating new data files for use with one of the Microsoft-supplied printer drivers. For more information about Microsoft printer drivers, see [Printer Driver Overview](printer-driver-overview.md).
+Support for a new printer usually requires only creating new data files for use with one of the Microsoft-supplied printer drivers. For more information about Microsoft printer drivers, see [Printer driver overview](printer-driver-overview.md).
 
 You can customize the behavior of the Microsoft Universal Printer Driver and the Microsoft Postscript Printer Driver. For more information, see [Customizing Microsoft's Printer Drivers](customizing-microsoft-s-printer-drivers.md). You can also customize the print spooler. For more information, see [Customizing Print Spooler Components](print-spooler-components.md).
 
 Other sections cover the following topics:
 
-[Terminal Server Printing](terminal-server-printing.md)
+[Terminal server printing](terminal-server-printing.md)
 
-[USB Printing](usb-printing.md)
+[USB printing](usb-printing.md)
 
-[Bluetooth Printing](bluetooth-printing.md)
+[Bluetooth printing](bluetooth-printing.md)
 
-[Printer Driver Testing and Debugging](printer-driver-testing-and-debugging.md)
+[Printer driver testing and debugging](printer-driver-testing-and-debugging.md)

@@ -1,14 +1,13 @@
 ---
 title: Device Specific Data (_DSD) for PCIe Root Ports
-description: ACPI _DSD methods for supporting Modern Standby and PCI hot plug scenarios
-ms:assetid: 44ad67da-f374-4a8e-80bd-d531853088a2
-keywords: ACPI, ACPI \_DSD method
-ms.date: 03/03/2023
+description: ACPI _DSD methods for supporting Modern Standby and PCI hot plug scenarios.
+keywords: ACPI, ACPI _DSD method
+ms.date: 09/26/2024
 ---
 
-# ACPI Interface: Device Specific Data (\_DSD) for PCIe Root Ports
+# ACPI Interface: Device Specific Data (_DSD) for PCIe Root Ports
 
-In Windows 10 (Version 1803), new ACPI \_DSD methods have been added to support Modern Standby and PCI hot plug scenarios.
+In Windows 10 (Version 1803), new ACPI _DSD methods have been added to support Modern Standby and PCI hot plug scenarios.
 
 ## Directed Deepest Runtime Idle Platform State (DRIPS) support on PCIe Root Ports
 
@@ -27,9 +26,9 @@ Name (_DSD, Package () {
 )
 ```
 
-## Identifying PCIe Root Ports supporting hot plug in D3
+## Identifying PCIe Root Ports supporting hot plug-in D3
 
-This ACPI object enables the operating system to identify and power manage PCIe Root ports that are capable of handling hot plug events while in D3 state. If this object is not implemented on a PCIe hot plug capable port, then the system does not power manage this port if it has no children PCIe devices, causing the system to consume more power than necessary.
+This ACPI object enables the operating system to identify and power manage PCIe Root ports that are capable of handling hot plug events while in D3 state. If this object isn't implemented on a PCIe hot plug capable port, then the system doesn't power manage this port if it has no children PCIe devices, causing the system to consume more power than necessary.
 
 This object must be implemented on all PCIe Root Ports of Thunderbolt hierarchies, on Runtime D3 (RTD3) capable systems, in the Root Port ACPI device scope.
 
@@ -91,7 +90,7 @@ Package (2) {"UID", 0}, // Property 2: UID of the PCIe port on platform, range i
 
 ## Identifying PCIe ports supporting D3_COLD_AUX_POWER ECN Interface
 
-This ACPI object enables the operating system to identify PCIe ports that support [D3_COLD_AUX_POWER ECN interface](/windows-hardware/drivers/ddi/wdm/ns-wdm-_d3cold_aux_power_and_timing_interface), which allows PCIe devices to request from the platform additional auxiliary power in D3, above the default 375mA @3.3V. Any PCI port or bridge defining this DSD *must* guarantee that when programming back the previously negotiated auxiliary power value, the operation succeeds.
+This ACPI object enables the operating system to identify PCIe ports that support [D3_COLD_AUX_POWER ECN interface](/windows-hardware/drivers/ddi/wdm/ns-wdm-_d3cold_aux_power_and_timing_interface), which allows PCIe devices to request from the platform additional auxiliary power in D3, above the default 375 mA @3.3V. Any PCI port or bridge defining this DSD *must* guarantee that when programming back the previously negotiated auxiliary power value, the operation succeeds.
 
 ```ASL
 Name (_DSD, Package () {
@@ -103,7 +102,7 @@ Name (_DSD, Package () {
 
 ```
 
-## Mapping native protocols (PCIe, DisplayPort) tunneled through USB4 to USB4 Host Routers
+## Map native protocols (PCIe, DisplayPort) tunneled through USB4 to USB4 Host Routers
 
 This ACPI object enables the operating system to map native protocols, such as PCIe and DisplayPort, tunneled through USB4 to the correct USB4 host router.
 
@@ -118,8 +117,8 @@ Scope (\_SB.PCI0)
         Name (_DSD, Package () {
             ToUUID("daffd814-6eba-4d8c-8a91-bc9bbf4aa301"), //Device Properties UUID 
             Package () {
-                Package () { “usb4-host-interface", \_SB.PCI0.NHI0 },
-                Package () { “usb4-port-number", PortInstance#},
+                Package () { "usb4-host-interface", \_SB.PCI0.NHI0 },
+                Package () { "usb4-port-number", PortInstance#},
             }
         })
     }
@@ -128,8 +127,8 @@ Scope (\_SB.PCI0)
         Name (_DSD, Package () {
             ToUUID("daffd814-6eba-4d8c-8a91-bc9bbf4aa301"), //Device Properties UUID 
             Package () {
-                Package () { “usb4-host-interface", \_SB.PCI0.NHI0 },
-                Package () { “usb4-port-number", PortInstance#},
+                Package () { "usb4-host-interface", \_SB.PCI0.NHI0 },
+                Package () { "usb4-port-number", PortInstance#},
             }
         })
     }
@@ -138,10 +137,10 @@ Scope (\_SB.PCI0)
 
 ## See also
 
-[Enabling PCI Express Native Control in Windows](enabling-pci-express-native-control.md)
+[Enabling PCI Express native control in Windows](enabling-pci-express-native-control.md)
 
 [Kernel DMA Protection for Thunderbolt 3](/windows/security/information-protection/kernel-dma-protection-for-thunderbolt)
 
-[Enabling DMA Remapping for device drivers](./enabling-dma-remapping-for-device-drivers.md)
+[Enabling DMA remapping for device drivers](./enabling-dma-remapping-for-device-drivers.md)
 
 [D3COLD_AUX_POWER_AND_TIMING_INTERFACE structure](/windows-hardware/drivers/ddi/wdm/ns-wdm-_d3cold_aux_power_and_timing_interface)

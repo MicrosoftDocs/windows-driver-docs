@@ -1,7 +1,7 @@
 ---
 title: Microsoft ASL Compiler
 description: Version 5.0 of the Microsoft ASL compiler supports the features in the ACPI 5.0 specification.
-ms.date: 03/23/2023
+ms.date: 09/25/2024
 ---
 
 # Microsoft ASL compiler
@@ -44,7 +44,7 @@ asl [/nologo] [/Fo=<AMLFile>] [/Fa=<ASMFile>] [/Fl=<LSTFile>] [/Fn=<NSDFile>] <A
 
 ## Using the Microsoft ASL compiler's ACPI-table-load feature
 
-During system development, it's useful to have a way to simulate various ACPI BIOS constructs and test them on the development system. The Windows operating system allows certain ACPI tables to be loaded from the Windows registry instead of from the PC's BIOS ROM. Use of this feature requires administrator privileges, and also requires that test signing be enabled on the system. For systems that support UEFI Secure Boot, test signing can't be enabled, and the compiler's table-load feature can't be used unless UEFI Secure Boot is disabled or the Windows Debug Policy is installed on the system.
+During system development, it's useful to have a way to simulate various ACPI BIOS constructs and test them on the development system. The Windows operating system allows certain ACPI tables to be loaded from the Windows registry instead of from the PC's BIOS ROM. Use of this feature requires administrator privileges, and also requires that test signing is enabled on the system. In systems supporting UEFI Secure Boot, test signing can't be enabled, and the compiler's table-load feature can't be used unless UEFI Secure Boot is disabled or the Windows Debug Policy is installed on the system.
 
 To use the table-load feature, the ACPI table to be overloaded must meet the following requirements:
 
@@ -52,9 +52,9 @@ To use the table-load feature, the ACPI table to be overloaded must meet the fol
 
 - The table must contain AML code that is normally consumed by the Windows ACPI interpreter (the Acpi.sys driver).
 
-- The table with the highest version number will be loaded. The table loaded into the registry for testing must have a higher version number than the same table in the BIOS ROM.
+- The table with the highest version number is loaded. The table loaded into the registry for testing must have a higher version number than the same table in the BIOS ROM.
 
-- The table to be loaded must be in compiled (AML) format and loaded into the registry in the correct location, with the correct parameters specified. The mechanism described herein is designed to handle all aspects of loading the table and configuring the registry.
+- The table to be loaded must be in compiled (AML) format and loaded into the registry in the correct location, with the correct parameters specified. The mechanism described is designed to handle all aspects of loading the table and configuring the registry.
 
 > [!WARNING]
 > The process described in this topic may leave your Windows system in a non-bootable state. Ensure that you have access to another operating system with NTFS file system support (that is, a "safe build") on the same machine before attempting the procedures outlined here. This process is provided for system developers and testers only, and should NOT be used on any machine vital for development or production purposes.
@@ -67,14 +67,14 @@ To load an ACPI table into the registry for test purposes, the ASL compiler is i
 asl.exe /loadtable [-v] [-d] <AMLFile>
 ```
 
-where AMLFile is the name of the compiled AML file that contains the table you wish to load into the registry.
+Where AMLFile is the name of the compiled AML file that contains the table you wish to load into the registry.
 
 | Option | Description |
 |--|--|
 | -v | Verbose mode. Turns on extra debugging output from the utility. |
 | -d | Delete. Removes a previously loaded AML file from the registry, and deletes all associated registry keys. |
 
-## Additional resources
+## More resources
 
 - [ACPICA documentation](https://www.intel.com/content/www/us/en/developer/topic-technology/open/acpica/overview.html)
 

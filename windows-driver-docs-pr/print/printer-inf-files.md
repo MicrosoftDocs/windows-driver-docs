@@ -1,14 +1,14 @@
 ---
 title: Printer INF Files
-description: Printer INF Files
+description: Printer INF files
 keywords:
 - installing drivers WDK printer , INF files
 - printer driver installations WDK , INF files
 - INF files WDK print
-ms.date: 01/30/2023
+ms.date: 09/11/2024
 ---
 
-# Printer INF Files
+# Printer INF files
 
 [!include[Print Support Apps](../includes/print-support-apps.md)]
 
