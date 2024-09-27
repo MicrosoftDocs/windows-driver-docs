@@ -31,14 +31,14 @@ Install Netmon from the Microsoft Download Center, and then install USB ETW pars
     1. On the Start screen, type "powershell", right-click on the Windows PowerShell result, and select **Run as administrator**.
     1. In the PowerShell window, type this command:
 
-        ```cmd
+        ```powershell
         Set-ExecutionPolicy RemoteSigned -Force
         ```
 
     1. Close the PowerShell window.
     1. Open a PowerShell window (you don't need to **Run as administrator**) and run the following commands. Adjust the path if you installed the kit to a different location:
 
-        ```cmd
+        ```powershell
         cd "C:\Program Files (x86)\Windows Kits\10\Tools\10.0.22621.0\x86\Network Monitor Parsers\usb"
         ..\NplAutoProfile.ps1
         ```
