@@ -1,6 +1,11 @@
 {
     "redirections": [
     {
+      "source_path": "windows-driver-docs-pr/install/managing-the-digital-signature-or-code-signing-keys.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/importance-of-protecting-authenticode-signing-keys",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows-driver-docs-pr/storage/scsi-miniport-drivers.md",
       "redirect_url": "/previous-versions/windows/drivers/storage/scsi-miniport-drivers",
       "redirect_document_id": false
