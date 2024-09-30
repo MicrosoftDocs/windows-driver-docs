@@ -114,7 +114,7 @@
       href: Windows10SDriverRequirements.md
     - name: "Authenticode Signing of Third-party CSPs"
       href: authenticode-signing-of-csps.md
-    - name: "Managing the Digital Signature or Code Signing Keys"
+    - name: "Importance of Protecting Authenticode Signing Keys"
       href: managing-the-digital-signature-or-code-signing-keys.md
     - name: "Cross-Certificates for Kernel Mode Code Signing"
       href: cross-certificates-for-kernel-mode-code-signing.md
