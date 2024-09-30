@@ -26,7 +26,7 @@ An INF file for a file system filter driver generally contains the following sec
 | Section                       | Notes |
 | -------                       | ----- |
 | **Version**                   | Required |
-| **DestinationDirs**           | Optional but recommended |
+| **DestinationDirs**           | Required |
 | **DefaultInstall**            | Required |
 | **DefaultInstall.Services**   | Required |
 | **ServiceInstall**            | Required |
@@ -63,17 +63,16 @@ The following table shows the values that file system minifilter drivers should 
 | **DriverVer** | See [INF DriverVer directive](../install/inf-driverver-directive.md). |
 | **CatalogFile** | For antivirus minifilter drivers that are signed, this entry contains the name of a [WHQL-supplied catalog file](../install/catalog-files.md). All other minifilter drivers should leave this entry blank. For more information, see the description of the **CatalogFile** entry in [INF Version Section](../install/inf-version-section.md) |
 
-## DestinationDirs Section (optional but recommended)
+## DestinationDirs Section (required)
 
 The [**DestinationDirs**](../install/inf-destinationdirs-section.md) section specifies the directories where minifilter driver and application files are to be copied.
 
-In this section and in the **ServiceInstall** section, you can specify well-known system directories by system-defined numeric values. For a list of these values, see [INF DestinationDirs Section](../install/inf-destinationdirs-section.md). In the following code example, the value 12 refers to the Drivers directory (%windir%\\system32\\drivers), and the value 10 refers to the Windows directory (%windir%).
+In this section and in the **ServiceInstall** section, you can specify well-known system directories by system-defined numeric values. For a list of these values, see [INF DestinationDirs Section](../install/inf-destinationdirs-section.md). In the following code example, the value 13 refers to an OS-defined Driver Store location on the system.
 
 ```inf
 [DestinationDirs]
-DefaultDestDir = 12
-Minispy.DriverFiles = 12
-Minispy.UserFiles   = 10,FltMgr
+Minispy.DriverFiles = 13
+Minispy.UserFiles   = 13
 ```
 
 ## DefaultInstall Section (required)
@@ -82,7 +81,7 @@ In the [**DefaultInstall**](../install/inf-defaultinstall-section.md) section, a
 
 > [!NOTE]
 >
-> The [**CopyFiles**](../install/inf-copyfiles-directive.md) directive should not refer to the catalog file or the INF file itself. SetupAPI copies these files automatically.
+> The [**CopyFiles**](../install/inf-copyfiles-directive.md) directive should not refer to the catalog file or the INF file itself, these files are copied automatically.
 
 You can create a single INF file to install your driver on multiple versions of the Windows operating systems. You can create this type of INF file by creating [**DefaultInstall**](../install/inf-defaultinstall-section.md) and [**DefaultInstall.Services**](../install/inf-defaultinstall-services-section.md) sections for each operating system version. Each section is labeled with a *decoration* (for example, .ntx86, .ntia64, or .nt) that specifies the operating system version to which it applies. For more information about creating this type of INF file, see [Creating INF Files for Multiple Platforms and Operating Systems](../install/creating-inf-files-for-multiple-platforms-and-operating-systems.md).
 
@@ -111,7 +110,7 @@ The **ServiceInstall** section contains information used for loading the driver 
 [Minispy.Service]
 DisplayName    = %MinispyServiceName%
 Description    = %MinispyServiceDesc%
-ServiceBinary  = %12%\minispy.sys
+ServiceBinary  = %13%\minispy.sys
 ServiceType    = 2 ;    SERVICE_FILE_SYSTEM_DRIVER
 StartType      = 3 ;    SERVICE_DEMAND_START
 ErrorControl   = 1 ;    SERVICE_ERROR_NORMAL%
@@ -156,17 +155,22 @@ The **Dependencies** entry specifies the names of any services or load order gro
 
 The **AddRegistry** section adds keys and values to the registry. Minifilter drivers use an **AddRegistry** section to define minifilter instances and to specify a default instance. This information is used whenever the filter manager creates a new instance for the minifilter driver.
 
-In the [MiniSpy sample driver](/samples/microsoft/windows-driver-samples/minispy-file-system-minifilter-driver/), the following **AddRegistry** section, together with the %strkey% token definitions in the [**Strings**](../install/inf-strings-section.md) section, defines three instances, one of which is named as the MiniSpy sample driver's default instance.
+In the [MiniSpy sample driver](/samples/microsoft/windows-driver-samples/minispy-file-system-minifilter-driver/), the following **AddRegistry** section, defines three instances, one of which is named as the MiniSpy sample driver's default instance.
+
+> [!NOTE]
+>
+> The following values should be under the **Parameters** subkey starting with Windows 11 version 24H2.
 
 ```inf
 [Minispy.AddRegistry]
-HKR,%RegInstancesSubkeyName%,%RegDefaultInstanceValueName%,0x00000000,%DefaultInstance%
-HKR,%RegInstancesSubkeyName%"\"%Instance1.Name%,%RegAltitudeValueName%,0x00000000,%Instance1.Altitude%
-HKR,%RegInstancesSubkeyName%"\"%Instance1.Name%,%RegFlagsValueName%,0x00010001,%Instance1.Flags%
-HKR,%RegInstancesSubkeyName%"\"%Instance2.Name%,%RegAltitudeValueName%,0x00000000,%Instance2.Altitude%
-HKR,%RegInstancesSubkeyName%"\"%Instance2.Name%,%RegFlagsValueName%,0x00010001,%Instance2.Flags%
-HKR,%RegInstancesSubkeyName%"\"%Instance3.Name%,%RegAltitudeValueName%,0x00000000,%Instance3.Altitude%
-HKR,%RegInstancesSubkeyName%"\"%Instance3.Name%,%RegFlagsValueName%,0x00010001,%Instance3.Flags%
+HKR,"Parameters","SupportedFeatures",0x00010001,0x3
+HKR,"Parameters\Instances","DefaultInstance",0x00000000,%DefaultInstance%
+HKR,"Parameters\Instances\"%Instance1.Name%,"Altitude",0x00000000,%Instance1.Altitude%
+HKR,"Parameters\Instances\"%Instance1.Name%,"Flags",0x00010001,%Instance1.Flags%
+HKR,"Parameters\Instances\"%Instance2.Name%,"Altitude",0x00000000,%Instance2.Altitude%
+HKR,"Parameters\Instances\"%Instance2.Name%,"Flags",0x00010001,%Instance2.Flags%
+HKR,"Parameters\Instances\"%Instance3.Name%,"Altitude",0x00000000,%Instance3.Altitude%
+HKR,"Parameters\Instances\"%Instance3.Name%,"Flags",0x00010001,%Instance3.Flags%
 ```
 
 ## Strings Section (required)
@@ -182,10 +186,6 @@ The following code example shows a typical [**Strings**](../install/inf-strings-
 Msft               = "Microsoft Corporation"
 MinispyServiceDesc = "Minispy mini-filter driver"
 MinispyServiceName = "Minispy"
-RegInstancesSubkeyName = "Instances"
-RegDefaultInstanceValueName  = "DefaultInstance"
-RegAltitudeValueName    = "Altitude"
-RegFlagsValueName  = "Flags"
 
 DefaultInstance    = "Minispy - Top Instance"
 Instance1.Name     = "Minispy - Middle Instance"
