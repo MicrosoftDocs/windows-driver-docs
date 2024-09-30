@@ -72,7 +72,7 @@ In this section and in the **ServiceInstall** section, you can specify well-know
 ```inf
 [DestinationDirs]
 Minispy.DriverFiles = 13
-Minispy.UserFiles   = 13,FltMgr
+Minispy.UserFiles   = 13
 ```
 
 ## DefaultInstall Section (required)
