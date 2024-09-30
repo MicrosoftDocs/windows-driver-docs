@@ -2,7 +2,7 @@
     "redirections": [
     {
       "source_path": "windows-driver-docs-pr/install/managing-the-digital-signature-or-code-signing-keys.md",
-      "redirect_url": "/previous-versions/windows/drivers/install/importance-of-protecting-authenticode-signing-keys",
+      "redirect_url": "/windows-hardware/drivers/install/importance-of-protecting-authenticode-signing-keys",
       "redirect_document_id": false
     },
     {
