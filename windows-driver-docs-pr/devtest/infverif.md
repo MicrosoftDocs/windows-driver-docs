@@ -14,7 +14,7 @@ InfVerif (InfVerif.exe) is a tool that you can use to test a driver INF file. In
 
 When you build a driver in Microsoft Visual Studio 2015 with Windows Driver Kit (WDK) 10 and later versions, the compiler runs the tool automatically as part of the build process. Alternatively, you can run the InfVerif.exe tool from the command line.
 
-The verification tool is part of the WDK 10 installation, and can be found in the \\tools subdirectory of your WDK 10 installation, c:\\Program Files(x86)\\Windows Kits\\10\\tools\\.
+The verification tool is part of the WDK 10 installation, and can be found in the `\tools` subdirectory of your WDK 10 installation, `C:\Program Files (x86)\Windows Kits\10\Tools\`.
 
 InfVerif reports errors and warnings based on the mode and rules supplied by the parameters. Errors should be considered "must fix". Warnings can be ignored if they are fully understood, but they are often symptoms of another problem. For instance, a warning about a section being unused could be a symptom of an INF directive being invoked incorrectly.
 

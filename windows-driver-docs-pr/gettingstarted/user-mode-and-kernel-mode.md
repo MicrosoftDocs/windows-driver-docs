@@ -1,7 +1,7 @@
 ---
 title: User Mode and Kernel Mode
 description: A processor in a computer running Windows has two different modes - user mode and kernel mode.
-ms.date: 12/15/2023
+ms.date: 09/27/2024
 ---
 
 # User mode and kernel mode

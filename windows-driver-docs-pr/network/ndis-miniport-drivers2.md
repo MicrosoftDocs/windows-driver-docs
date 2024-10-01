@@ -1,11 +1,7 @@
 ---
 title: Miniport drivers
-description: Miniport drivers
-keywords:
-- miniport drivers WDK networking , architecture
-- NDIS miniport drivers WDK , architecture
-- connectionless drivers WDK networking
-ms.date: 11/26/2018
+description: Miniport drivers manage a network interface card (NIC) and interface with higher-level drivers. Learn about connectionless and connection-oriented miniport drivers, and the relationship between miniport drivers and NDIS.
+ms.date: 09/27/2024
 ---
 
 # Miniport drivers

@@ -1,14 +1,14 @@
 ---
 title: Web Services on Devices for Printing (WS-Print)
-description: Web services on devices for printing (WS-Print) was introduced in Windows Vista, to provide a connection protocol for printing and scanning peripherals.
-ms.date: 01/25/2023
+description: Web services on devices for printing (WS-Print) was introduced to provide a connection protocol for printing and scanning peripherals.
+ms.date: 09/24/2024
 ---
 
 # Web Services on devices for printing (WS-Print)
 
 [!include[Print Support Apps](../includes/print-support-apps.md)]
 
-Web services on devices for printing (WS-Print) was introduced in Windows Vista, to provide a connection protocol for printing and scanning peripherals.
+Web services on devices for printing (WS-Print) was introduced to provide a connection protocol for printing and scanning peripherals.
 
 ## Overview
 

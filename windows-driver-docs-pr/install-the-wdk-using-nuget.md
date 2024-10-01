@@ -8,7 +8,7 @@ keywords:
 - NuGet
 - install
 - download
-ms.date: 05/28/2024
+ms.date: 09/18/2024
 ---
 
 # Install the WDK using NuGet
@@ -25,11 +25,11 @@ The WDK is released in three different distributions, with different installatio
 
 **Enterprise Windows Drivers Kit (EWDK)**: This is shipped as a standalone ISO, which includes the command line compiler build tools, the SDK and the WDK. The EWDK is a standalone self-contained command-line environment. To get started, just mount the ISO and run LaunchBuildEnv. Visit [Download the Windows Driver Kit (WDK)](.\download-the-wdk.md) for details on how to download and use the EWDK.
 
-**Windows Drivers Kit NuGet Package**: The WDK NuGet package consists of essential libraries, headers, DLL, tools and metadata used for building Windows drivers that can be shared and supported by modern CI/CD pipelines. The official release of the WDK NuGet package is now available on nuget.org. The latest release version is *10.0.26100.1*. For information on the latest release of the WDK, SDK and Visual Studio, see [Kit versioning](./download-the-wdk.md#kit-versioning).
+**Windows Drivers Kit NuGet Package**: The WDK NuGet package consists of essential libraries, headers, DLL, tools and metadata used for building Windows drivers that can be shared and supported by modern CI/CD pipelines. The official release of the WDK NuGet package is now available on nuget.org. The latest release version is *10.0.26100.1591*. For information on the latest release of the WDK, SDK and Visual Studio, see [Kit versioning](./download-the-wdk.md#kit-versioning).
 
-Users can access and consume the NuGet packages directly from nuget.org from within Visual Studio. Using NuGet with the WDK provides a lightweight solution for WDK acquisition for developers who need always up to date tools for building modern hardware drivers. For more information, see [Install and manage packages in Visual Studio using the NuGet Package Manager](/nuget/consume-packages/install-use-packages-visual-studio/).
+Developers can access and integrate Windows Driver Kit (WDK) NuGet packages directly from Visual Studio via the NuGet Package Manager. By utilizing these packages, driver developers can seamlessly install essential build tools into their projects, facilitating a streamlined and efficient process for acquiring WDK. Moreover, the use of WDK NuGet packages allows for more frequent updates and releases, and they can be easily integrated into build systems within CI/CD pipelines. For more information, see [Install and manage packages in Visual Studio using the NuGet Package Manager](/nuget/consume-packages/install-use-packages-visual-studio/).
 
-The WDK NuGet packages are also available on the NuGet website.
+Here are the links to the x64 and ARM64 WDK NuGet packages available on nuget.org.
 
 x64: <https://www.nuget.org/packages/Microsoft.Windows.WDK.x64/>
 
@@ -39,100 +39,91 @@ ARM64: <https://www.nuget.org/packages/Microsoft.Windows.WDK.ARM64>
 
 For directions on building drivers in large automated system, see [Building Locally](https://github.com/microsoft/Windows-driver-samples/blob/main/Building-Locally.md).
 
-## Install the latest WDK using NuGet - Step by Step
+## Getting Started with WDK NuGet
 
 ### Prerequisites
 
 - X64/ARM64 PC with Windows 11 or newer.
 
-### Step 1: Install Visual Studio 2022
+### Install Visual Studio 2022
 
-Download and install Visual Studio 2022 Community, Professional, or Enterprise edition.
+The WDK NuGet requires Visual Studio. Download and install Visual Studio 2022 Community, Professional, or Enterprise edition.
 
 [Download Visual Studio Tools](https://visualstudio.microsoft.com/downloads/)
 
-During the installation, select and install **Desktop development with C++**.
+When you install Visual Studio 2022, select the **Desktop development with C++** workload, then under Individual Components add:
 
-### Step 2: Prepare Visual Studio
+- MSVC v143 - VS 2022 C++ ARM64/ARM64EC Spectre-mitigated libs (Latest)
 
-The WDK requires Visual Studio 2022 with the **VS 2022 C++ build tools** and their corresponding **VS 2022 C++ Spectre-mitigated libs (Latest)** components for each architecture you intend to build drivers for.
+- MSVC v143 - VS 2022 C++ x64/x86 Spectre-mitigated libs (Latest)
 
-1. Register and sign in with your credentials to Visual Studio.
+- C++ ATL for latest v143 build tools with Spectre Mitigations (ARM64/ARM64EC)
 
-1. Select and install the following VS individual components - *MSVC V143 - VS2022 C++ x64/x86 Spectre-mitigated libs (Latest)* and *MSVC V143 - VS2022 C++ ARM64 Spectre-mitigated libs (Latest)*
+- C++ ATL for latest v143 build tools with Spectre Mitigations (x86 & x64)
 
-### Step 3: Install WDK Visual Studio extension
+- C++ MFC for latest v143 build tools with Spectre Mitigations (ARM64/ARM64EC)
 
-#### Option 1: Visual Studio Marketplace
+- C++ MFC for latest v143 build tools with Spectre Mitigations (x86 & x64)
 
-In Visual Studio, select **Extensions**, **Manage Extensions** and then **Visual Studio Marketplace**. Search for "*Windows Driver Kit*", select and install the Windows Drivers Kit Visual Studio extension.
+- Windows Driver Kit
 
-![screenshot of Visual Studio showing Visual Studio Marketplace extension](images/visual-studio-market-place.png)
-
-#### Option 2: Download and install
-
-Download and install the Windows Drivers Kit Visual Studio Extension using this link:
-
-[Windows Driver Kit - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=DriverDeveloperKits-WDK.WDKVsix)
-
-![screenshot of Windows Driver Kit Visual Studio extension (VSIX) install dialog](images/visual-studio-vsix-install-dialog.png)
-
-## Getting Started - Use the WDK to develop a driver
+## How to Install WDK NuGet
 
 Follow the following steps to acquire and install WDK NuGet package in Visual Studio.
 
 1. Launch Visual Studio.
 
-2. Create a new driver project, for example a "Kernel Mode Driver (KMDF)" C++ project.
+1. Create a new driver project, for example a "Kernel Mode Driver (KMDF)" C++ project.
 
-3. Right Click the driver project solution file, and select **Manage NuGet packages**.
+1. Right Click the driver project solution file, and select **Manage NuGet packages**.
 
-4. Click the drop down menu beside the package source and select `nuget.org`.
+1. Click the drop down menu beside the package source and select `nuget.org`.
 
-5. Search for "*WDK*".
+1. Search for "*WDK*".
 
-6. Select `Microsoft.Windows.WDK.x64` or `Microsoft.Windows.WDK.ARM64` based on the platform architecture that you wish to develop for.
+1. Select `Microsoft.Windows.WDK.x64` or `Microsoft.Windows.WDK.ARM64` based on the platform architecture that you wish to develop for.
 
-7. Leave other checkboxes set at their defaults.
+1. Leave other checkboxes set at their defaults.
 
-8. Select **Install**.
+1. Select **Install**.
 
 ![screenshot of Visual Studio NuGet packages being installation dialog](images/visual-studio-nuget-packages-install-dialog-solution.png)
 
-9. The WDK takes dependencies on the SDK NuGet packages, and it will install the required packages.
+> [!NOTE]
+> The SDK NuGet package will automatically be installed as part of WDK NuGet installation.
 
-10. Review and accept the license terms to complete the installation.
+1. Review and accept the license terms to complete the installation.
 
 ![screenshot of Visual Studio showing a list of three NuGet packages with links to license terms](images/visual-studio-nuget-packages-install-license-dialog.png)
 
-11. Build and test your WDK driver solution.
+1. Build and test your WDK driver solution.
 
 > [!NOTE]
 > Use of the dotnet command line doesn't work with WDK, and its use is not recommended.
 
-## Updating NuGet Packages in existing driver projects
+## How to Update WDK NuGet
 
 To update NuGet Packages in existing driver projects, follow these steps.
 
 1. Open the existing driver project in Visual Studio.
 
-2. Right Click the driver project solution file, and select **Manage NuGet packages**.
+1. Right Click the driver project solution file, and select **Manage NuGet packages**.
 
-3. Click on the **Updates** tab.
+1. Click on the **Updates** tab.
 
-4. Click on the Include prerelease box, if you wish to use prerelease WDK packages.
+1. Click on the Include prerelease box, if you wish to use prerelease WDK packages.
 
-5. Select the packages you wish to update in the list.
+1. Select the packages you wish to update in the list.
 
 ![screenshot of Visual Studio NuGet packages update with WDK and WDK packages](images/visual-studio-nuget-packages-update-dialog-solution.png)
 
-6. Select **Install**.
- 
-7. Select **Apply**.
+1. Select **Install**.
+
+1. Select **Apply**.
 
 ![screenshot of Visual Studio NuGet packages update apply dialog](images/visual-studio-nuget-packages-update-dialog-solution-apply.png)
 
-8. Review and accept the license terms to complete the installation.
+Review and accept the license terms to complete the installation.
 
 ## See also
 

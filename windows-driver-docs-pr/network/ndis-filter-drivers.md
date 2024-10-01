@@ -1,11 +1,7 @@
 ---
 title: Filter drivers
-description: Filter drivers
-keywords:
-- filter drivers WDK networking , architecture
-- NDIS filter drivers WDK , architecture
-- filter modules WDK networking
-ms.date: 11/26/2018
+description: NDIS 6.0 introduced NDIS filter drivers. Filter drivers can monitor and modify the interaction between protocol drivers and miniport drivers.
+ms.date: 09/27/2024
 ---
 
 # Filter drivers

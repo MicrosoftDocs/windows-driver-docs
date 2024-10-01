@@ -14,7 +14,7 @@ This section discusses the following topics:
 
 [Working with the Driver Store](working-with-the-driver-store.md)
 
-[Working well with enhanced point and print](working-well-with-enhanced-point-and-print.md)
+[Work with enhanced point and print](working-well-with-enhanced-point-and-print.md)
 
 [V4 printer driver security considerations](v4-printer-driver-security-considerations.md)
 

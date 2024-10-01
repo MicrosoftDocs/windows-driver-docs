@@ -1,15 +1,15 @@
 ---
 title: Supporting User-Defined Paper Sizes
-description: Supporting User-Defined Paper Sizes
+description: Supporting user-defined paper sizes
 keywords:
 - user-defined paper sizes WDK Unidrv
 - customized paper sizes WDK Unidrv
 - largest paper size WDK Unidrv
 - margins WDK paper size
-ms.date: 01/30/2023
+ms.date: 09/24/2024
 ---
 
-# Supporting User-Defined Paper Sizes
+# Supporting user-defined paper sizes
 
 [!include[Print Support Apps](../includes/print-support-apps.md)]
 
@@ -91,7 +91,7 @@ The formulas for step 2 must be [CUSTOMSIZE parameter expressions](option-attrib
 
 The CUSTOMSIZE option must also include a \*Command entry which specifies the command that selects the largest printer size. This command is sent for all custom paper sizes, and the formulas specified for the printable area and cursor origin control where the printer prints on the actual paper, whatever its size.
 
-## Sample Calculations
+## Sample calculations
 
 As a simple example, assume your printer supports customized paper sizes that have margins of the same size as the largest paper size's margins. The steps involved are:
 

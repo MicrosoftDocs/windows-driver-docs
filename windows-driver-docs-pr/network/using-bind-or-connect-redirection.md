@@ -1,7 +1,7 @@
 ---
 title: Using Bind or Connect Redirection
-description: Using Bind or Connect Redirection
-ms.date: 04/20/2017
+description: The Windows Filtering Platform's (WFP) connect/bind redirection feature enables application layer enforcement (ALE) callout drivers to inspect and redirect connections.
+ms.date: 09/27/2024
 ---
 
 # Using Bind or Connect Redirection
@@ -19,11 +19,11 @@ A WFP connection redirection callout redirects an application's connection reque
 
 A WFP redirect record is a buffer of opaque data that WFP must set on an outbound proxy connection at the **FWPM\_LAYER\_ALE\_AUTH\_CONNECT\_REDIRECT\_V4** and **FWPM\_LAYER\_ALE\_AUTH\_CONNECT\_REDIRECT\_V6** layers, so that the redirected connection and the original connection are logically related.
 
-Changing the local address and port of a flow is only supported in the bind-redirect layer. This is not supported in the connect-redirect layer.
+Changing the local address and port of a flow is only supported in the bind-redirect layer. This functionality isn't supported in the connect-redirect layer.
 
 ### Layers Used for Redirection
 
-Redirection can be performed by callout drivers at the following layers, which are called "redirect layers":
+Callout drivers can preform redirection at the following layers, which are called "redirect layers":
 
 -   FWPM\_LAYER\_ALE\_BIND\_REDIRECT\_V4 (FWPS\_LAYER\_ALE\_BIND\_REDIRECT\_V4)
 
@@ -186,9 +186,9 @@ To perform redirection asynchronously a callout driver must perform the followin
 
 ### Handling Connect Redirection from Multiple Callouts
 
-It is possible that more than one callout driver will initiate connect redirection for the same flow. Callouts that perform connect redirection should be aware of other requests and respond appropriately.
+It's possible that more than one callout driver will initiate connect redirection for the same flow. Callouts that perform connect redirection should be aware of other requests and respond appropriately.
 
-The **FWPS\_RIGHT\_ACTION\_WRITE** flag should be set whenever a callout pends a classification. Your callout should test for the **FWPS\_RIGHT\_ACTION\_WRITE** flag to check the rights for your callout to return an action. If this flag is not set, your callout can still return a **FWP\_ACTION\_BLOCK** action in order to veto a **FWP\_ACTION\_PERMIT** action that was returned by a previous callout.
+The **FWPS\_RIGHT\_ACTION\_WRITE** flag should be set whenever a callout pends a classification. Your callout should test for the **FWPS\_RIGHT\_ACTION\_WRITE** flag to check the rights for your callout to return an action. If this flag isn't set, your callout can still return a **FWP\_ACTION\_BLOCK** action in order to veto a **FWP\_ACTION\_PERMIT** action that was returned by a previous callout.
 
 In Windows 8 and later, your callout driver must query the redirection state of the connection (to see if your callout driver or another callout driver has modified it) by using the [**FwpsQueryConnectionRedirectState0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsqueryconnectionredirectstate0) function. If the connection is redirected by your callout driver, or if it was previously redirected by your callout driver, the callout driver should do nothing. Otherwise, it should also check for local redirection as shown in the following example:
 
@@ -208,7 +208,7 @@ if(connectRequest->previousVersion->modifierFilterId != filterId)
 }
 ```
 
-If the connection is to a local proxy, your callout driver should not attempt to redirect it.
+If the connection is to a local proxy, your callout driver shouldn't attempt to redirect it.
 
 Callout drivers that use connect redirection should register at the ALE authorization connect layer (**FWPS\_LAYER\_ALE\_AUTH\_CONNECT\_V4** or **FWPS\_LAYER\_ALE\_AUTH\_CONNECT\_V6**) and check the following two metadata values for indications where the **FWP\_CONDITION\_FLAG\_IS\_CONNECTION\_REDIRECTED** flag is set:
 

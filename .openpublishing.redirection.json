@@ -1,6 +1,11 @@
 {
     "redirections": [
     {
+      "source_path": "windows-driver-docs-pr/install/managing-the-digital-signature-or-code-signing-keys.md",
+      "redirect_url": "/windows-hardware/drivers/install/importance-of-protecting-authenticode-signing-keys",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows-driver-docs-pr/storage/scsi-miniport-drivers.md",
       "redirect_url": "/previous-versions/windows/drivers/storage/scsi-miniport-drivers",
       "redirect_document_id": false
@@ -12083,6 +12088,11 @@
             "redirect_document_id": false
         },
         {
+          "source_path": "windows-driver-docs-pr/network/overview.md",
+          "redirect_URL": "/windows-hardware/drivers/network/remote-ndis-to-usb-mapping",
+          "redirect_document_id": false
+      },
+        {
             "source_path": "windows-driver-docs-pr/network/overview-of-ndis-qos-for-data-center-bridging.md",
             "redirect_URL": "/windows-hardware/drivers/network/ndis-qos-for-data-center-bridging",
             "redirect_document_id": false
@@ -13836,6 +13846,11 @@
             "source_path": "windows-driver-docs-pr/usbcon/mcpc-vendor-unique-interfaces.md",
             "redirect_URL": "/windows-hardware/drivers/usbcon/support-for-interface-collections",
             "redirect_document_id": false
+        },
+        {
+          "source_path": "windows-driver-docs-pr/usbcon/microsoft-defined-usb-frameworks.md",
+          "redirect_URL": "/windows-hardware/drivers/usbcon/system-supplied-usb-drivers",
+          "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/usbcon/sending-a-usb-idle-request-irp.md",

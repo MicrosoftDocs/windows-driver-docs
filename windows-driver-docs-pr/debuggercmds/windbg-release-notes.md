@@ -12,6 +12,15 @@ ms.topic: article
 
 This topic provides information on what's new in WinDbg. Earlier versions were released as *WinDbg Preview*.
 
+## 1.2409.17001.0
+
+### Accessibility fixes
+We've fixed several issues when interacting with WinDbg using a screen reader.
+
+### Bug fixes
+* Fixed issue where uninstalling WinDbgX prevents launch of classic WinDbg.
+* Fixed issue where WinDbgX would resize after appearing during launch.
+
 ## 1.2407.24003.0
 
 ### New Features 

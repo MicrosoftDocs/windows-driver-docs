@@ -1,7 +1,10 @@
 ---
 title: IoMmu Model
 description: In the IoMmu model, each process has a single virtual address space that is shared between the CPU and graphics processing unit (GPU) and managed by the OS memory manager.
-ms.date: 06/24/2022
+keywords:
+- IoMmu model, WDDM 2.0
+- IOMMU, WDDM 2.0
+ms.date: 09/20/2024
 ---
 
 # IoMmu model
@@ -10,7 +13,7 @@ This page describes the *IoMmu* model introduced in WDDM 2.0. See [IOMMU-based G
 
 ## Overview
 
-An Input-Output Memory Management Unit (IOMMU) is an MMU component that connects a DMA-capable I/O bus to system memory. It maps device-visible virtual addresses to physical addresses, making it useful in virtualization.
+An Input-Output Memory Management Unit (IOMMU) is a hardware component that connects a DMA-capable I/O bus to system memory. It maps device-visible virtual addresses to physical addresses, making it useful in virtualization.
 
 In the WDDM 2.0 IoMmu model, each process has a single virtual address space that is:
 

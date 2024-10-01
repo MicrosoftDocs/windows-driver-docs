@@ -212,7 +212,7 @@ CustomCaptureSource.Binary = "SimpleMediaSource.dll"
 REG_EXPAND_SZ = 0x00020000
 ```
 
-The above Custom Media Source registers under **KSCATEGORY\_VIDEO**, **KSCATEGORY\_CAPTURE**, and **KSCATEGORY\_VIDEO\_CAMERA** to ensure the "camera" is discoverable by any UWP and non-UWP apps searching for a standard RGB camera.
+The above Custom Media Source registers under **KSCATEGORY_VIDEO**, **KSCATEGORY_CAPTURE**, and **KSCATEGORY_VIDEO_CAMERA** to ensure the "camera" is discoverable by any UWP and non-UWP apps searching for a standard RGB camera.
 
 If the Custom Media Source also exposes non-RGB streams (IR, Depth, and so on) it may optionally also register under the [KSCATEGORY_SENSOR_CAMERA](../install/kscategory-sensor-camera.md).
 
@@ -221,7 +221,7 @@ If the Custom Media Source also exposes non-RGB streams (IR, Depth, and so on) i
 
 ### Stub Driver Implementation
 
-In addition to the INF, the driver stub must also register and enable the camera device interfaces. This is typically done during the **DRIVER\_ADD\_DEVICE** operation.
+In addition to the INF, the driver stub must also register and enable the camera device interfaces. This is typically done during the **DRIVER_ADD_DEVICE** operation.
 
 See the [DRIVER_ADD_DEVICE](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) callback function for WDM based drivers and the [WdfDriverCreate](/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdrivercreate) function for UMDF/KMDF drivers.
 
@@ -490,7 +490,7 @@ Refer to the [Writing a Custom Media Source](/windows/desktop/medfound/writing-a
 
 ### IMFGetService
 
-**IMFGetService** is a mandatory interface for Frame Server Custom Media Source. **IMFGetService** may return **MF\_E\_UNSUPPORTED\_SERVICE** if your Custom Media Source does not need to expose any additional service interfaces.
+**IMFGetService** is a mandatory interface for Frame Server Custom Media Source. **IMFGetService** may return **MF_E_UNSUPPORTED_SERVICE** if your Custom Media Source does not need to expose any additional service interfaces.
 
 The following example show an **IMFGetService** implementation with no support service interfaces:
 
@@ -539,7 +539,7 @@ IFACEMETHOD(QueueEvent)(MediaEventType met, REFGUID guidExtendedType, HRESULT hr
 
 The following code shows the recommended implementation of the **IMFMediaEventGenerator** interface. The Custom Media Source implementation will expose the **IMFMediaEventGenerator** interface, and the methods for that interface will be routing the requests into the **IMFMediaEventQueue** object created during the media source creation/initialization.
 
-In the code below, **\_spEventQueue** object is the **IMFMediaEventQueue** created using the **MFCreateEventQueue** function:
+In the code below, **_spEventQueue** object is the **IMFMediaEventQueue** created using the **MFCreateEventQueue** function:
 
 ```cpp
 // IMFMediaEventGenerator methods
@@ -622,7 +622,7 @@ SimpleMediaSource::QueueEvent(
 
 Custom Media Sources supported through the Frame Server framework do not support Seek or Pause operations. Your Custom Media Source does not need to provide support for these operations and must not post either the **MFSourceSeeked** or **MEStreamSeeked** event.
 
-[IMFMediaSource::Pause](/windows/win32/api/mfidl/nf-mfidl-imfmediasource-pause) should return **MF\_E\_INVALID\_STATE\_TRANSITION** (or **MF\_E\_SHUTDOWN** if the source was already shutdown).
+[IMFMediaSource::Pause](/windows/win32/api/mfidl/nf-mfidl-imfmediasource-pause) should return **MF_E_INVALID_STATE_TRANSITION** (or **MF_E_SHUTDOWN** if the source was already shutdown).
 
 ### IKsControl
 
@@ -636,7 +636,7 @@ For more information, see the following Control Set documentation topics:
 
 - [KSPROPERTYSETID_ExtendedCameraControl](./kspropertysetid-extendedcameracontrol.md)
 
-The controls are optional and if not supported, the recommended error code to return is **HRESULT\_FROM\_WIN32(ERROR\_SET\_NOT\_FOUND)**.
+The controls are optional and if not supported, the recommended error code to return is **HRESULT_FROM_WIN32(ERROR_SET_NOT_FOUND)**.
 
 The following code is an example **IKsControl** implementation with no supported controls:
 
@@ -789,10 +789,10 @@ For Custom Media Sources with video stream, [MEEndOfStream](/windows/desktop/med
 
 ### Stream Attributes
 
-All Custom Media Source streams must have the [MF_DEVICESTREAM_STREAM_CATEGORY](/windows/desktop/medfound/mf-devicestream-stream-category) set to be **PINNAME\_VIDEO\_CAPTURE**. **PINNAME\_VIDEO\_PREVIEW** is not supported for Custom Media Sources.
+All Custom Media Source streams must have the [MF_DEVICESTREAM_STREAM_CATEGORY](/windows/desktop/medfound/mf-devicestream-stream-category) set to be **PINNAME_VIDEO_CAPTURE**. **PINNAME_VIDEO_PREVIEW** is not supported for Custom Media Sources.
 
 > [!NOTE]
-> **PINNAME\_IMAGE**, while supported, is not recommended. Exposing a stream with **PINNAME\_IMAGE** requires the Custom Media Source to support all the photo trigger controls. See the [Photo Stream Controls](#photo-stream-controls) section below for more details.
+> **PINNAME_IMAGE**, while supported, is not recommended. Exposing a stream with **PINNAME_IMAGE** requires the Custom Media Source to support all the photo trigger controls. See the [Photo Stream Controls](#photo-stream-controls) section below for more details.
 
 [MF_DEVICESTREAM_STREAM_ID](/windows/desktop/medfound/mf-devicestream-stream-id) is a mandatory attribute for all streams. It should be a 0-based index. So the first stream has an ID of 0, second stream an ID of 1, and so on.
 
@@ -802,21 +802,21 @@ The following are a list of recommended attributes on the stream:
 
 - [MF_DEVICESTREAM_FRAMESERVER_SHARED](/windows/desktop/medfound/mf-devicestream-frameserver-shared)
 
-#### MF\_DEVICESTREAM\_ATTRIBUTE\_FRAMESOURCE\_TYPES
+#### MF_DEVICESTREAM_ATTRIBUTE_FRAMESOURCE_TYPES
 
-**MF\_DEVICESTREAM\_ATTRIBUTE\_FRAMESOURCE\_TYPES** is a UINT32 attribute which is a bitmasked value of stream type. It may be set to any of the following (while these types are a bitmask flag, it is recommend that source types not be mixed if at all possible):
+**MF_DEVICESTREAM_ATTRIBUTE_FRAMESOURCE_TYPES** is a UINT32 attribute which is a bitmasked value of stream type. It may be set to any of the following (while these types are a bitmask flag, it is recommend that source types not be mixed if at all possible):
 
 | Type                         | Flag   | Description                                      |
 |------------------------------|--------|--------------------------------------------------|
-| MFFrameSourceTypes\_Color    | 0x0001 | Standard RGB color stream                        |
-| MFFrameSourceTypes\_Infrared | 0x0002 | IR stream                                        |
-| MFFrameSourceTypes\_Depth    | 0x0004 | Depth stream                                     |
-| MFFrameSourceTypes\_Image    | 0x0008 | Image stream (non-video subtype, typically JPEG) |
-| MFFrameSourceTypes\_Custom   | 0x0080 | Custom stream type                               |
+| MFFrameSourceTypes_Color    | 0x0001 | Standard RGB color stream                        |
+| MFFrameSourceTypes_Infrared | 0x0002 | IR stream                                        |
+| MFFrameSourceTypes_Depth    | 0x0004 | Depth stream                                     |
+| MFFrameSourceTypes_Image    | 0x0008 | Image stream (non-video subtype, typically JPEG) |
+| MFFrameSourceTypes_Custom   | 0x0080 | Custom stream type                               |
 
-#### MF\_DEVICESTREAM\_FRAMESERVER\_SHARED
+#### MF_DEVICESTREAM_FRAMESERVER_SHARED
 
-**MF\_DEVICESTREAM\_FRAMESERVER\_SHARED** is a UINT32 attribute which can be set to either 0 or 1. If set to 1, it marks the stream as being "shareable" by the Frame Server. This will allow applications to open the stream in a shared mode, even when used by another app.
+**MF_DEVICESTREAM_FRAMESERVER_SHARED** is a UINT32 attribute which can be set to either 0 or 1. If set to 1, it marks the stream as being "shareable" by the Frame Server. This will allow applications to open the stream in a shared mode, even when used by another app.
 
 If this attribute is not set, Frame Server will allow the first non-marked stream to be shared (if the Custom Media Source has only one stream, that stream will be marked as shared).
 
@@ -933,7 +933,7 @@ The Custom Media Source should use this method invocation to acquire any hardwar
 > [!NOTE]
 > If the hardware resource acquisition takes greater than 200 milliseconds, it is recommended hardware resource is asynchronously acquired. The activation of the Custom Media Source should not block on the hardware resource acquisition. Instead [IMFMediaSource::Start](/windows/win32/api/mfidl/nf-mfidl-imfmediasource-start) operation should be serialized against the hardware resource acquisition.
 
-The two additional methods exposed by **IMFActivate**, [DetachObject](/windows/win32/api/mfobjects/nf-mfobjects-imfactivate-detachobject) and [ShutdownObject](/windows/win32/api/mfobjects/nf-mfobjects-imfactivate-shutdownobject), must return **E\_NOTIMPL**.
+The two additional methods exposed by **IMFActivate**, [DetachObject](/windows/win32/api/mfobjects/nf-mfobjects-imfactivate-detachobject) and [ShutdownObject](/windows/win32/api/mfobjects/nf-mfobjects-imfactivate-shutdownobject), must return **E_NOTIMPL**.
 
 The Custom Media Source may choose to implement the **IMFActivate** and **IMFAttributes** interface within the same COM object as the [IMFMediaSource](/windows/win32/api/mfidl/nn-mfidl-imfmediasource). If this is done, it is recommended the [IMFMediaSourceEx::GetSourceAttributes](/windows/win32/api/mfidl/nf-mfidl-imfmediasourceex-getsourceattributes) return the same **IMFAttributes** interface as those from the **IMFActivate**.
 
@@ -981,9 +981,9 @@ While encoded sources are fully supported by Frame Server, the client side Captu
 
 ## Camera Profiles (available in Windows 10, version 1803 and later)
 
-Camera Profile support is available for Custom Media Sources. The recommended mechanism is to publish the profile through the **MF\_DEVICEMFT\_SENSORPROFILE\_COLLECTION** attribute off the source attribute ([IMFMediaSourceEx::GetSourceAttributes](/windows/win32/api/mfidl/nf-mfidl-imfmediasourceex-getsourceattributes)).
+Camera Profile support is available for Custom Media Sources. The recommended mechanism is to publish the profile through the **MF_DEVICEMFT_SENSORPROFILE_COLLECTION** attribute off the source attribute ([IMFMediaSourceEx::GetSourceAttributes](/windows/win32/api/mfidl/nf-mfidl-imfmediasourceex-getsourceattributes)).
 
-The **MF\_DEVICEMFT\_SENSORPROFILE\_COLLECTION** attribute is an **IUnknown** of the [IMFSensorProfileCollection](/windows/win32/api/mfidl/nn-mfidl-imfsensorprofilecollection) interface. **IMFSensorProfileCollection** can be obtained using the [MFCreateSensorProfileCollection](/windows/win32/api/mfidl/nf-mfidl-mfcreatesensorprofilecollection) function:
+The **MF_DEVICEMFT_SENSORPROFILE_COLLECTION** attribute is an **IUnknown** of the [IMFSensorProfileCollection](/windows/win32/api/mfidl/nn-mfidl-imfsensorprofilecollection) interface. **IMFSensorProfileCollection** can be obtained using the [MFCreateSensorProfileCollection](/windows/win32/api/mfidl/nf-mfidl-mfcreatesensorprofilecollection) function:
 
 ```cpp
 IFACEMETHODIMP
@@ -1049,12 +1049,12 @@ If the Custom Media Source is designed to support Windows Hello Facial Recogniti
 
 - The RGB stream must be at least 480 x 480 at 7.5 fps (this is only needed if Multispectrum authentication is enforced).
 
-- The Face Authentication Profile must have the Profile ID of: KSCAMERAPROFILE\_FaceAuth\_Mode,0.
+- The Face Authentication Profile must have the Profile ID of: KSCAMERAPROFILE_FaceAuth_Mode,0.
 
 We recommended that the Face Authentication Profile only advertise one media type for each of the IR and RGB streams.
 
 ## Photo Stream Controls
 
-If independent photo streams are exposed by marking one of the stream's[MF\_DEVICESTREAM\_STREAM\_CATEGORY](/windows/desktop/medfound/mf-devicestream-stream-category) as **PINNAME\_IMAGE**, then a stream with stream category of **PINNAME\_VIDEO\_CAPTURE** is required (for example, a single stream exposing just the **PINNAME\_IMAGE** is not a valid media source).
+If independent photo streams are exposed by marking one of the stream's[MF_DEVICESTREAM_STREAM_CATEGORY](/windows/desktop/medfound/mf-devicestream-stream-category) as **PINNAME_IMAGE**, then a stream with stream category of **PINNAME_VIDEO_CAPTURE** is required (for example, a single stream exposing just the **PINNAME_IMAGE** is not a valid media source).
 
-Through **IKsControl**, the **PROPSETID\_VIDCAP\_VIDEOCONTROL** property set must be supported. For more information, see [Video Control Properties](./video-control-properties.md).
+Through **IKsControl**, the **PROPSETID_VIDCAP_VIDEOCONTROL** property set must be supported. For more information, see [Video Control Properties](./video-control-properties.md).

@@ -1,7 +1,7 @@
 ---
 title: Introduction to Remote NDIS (RNDIS)
 description: RNDIS is a bus-independent class specification for Ethernet (802.3) network devices on dynamic PnP buses.
-ms.date: 06/28/2024
+ms.date: 09/27/2024
 ---
 
 # Introduction to Remote NDIS (RNDIS)

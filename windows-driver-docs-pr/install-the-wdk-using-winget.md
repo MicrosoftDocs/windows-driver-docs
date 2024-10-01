@@ -8,7 +8,7 @@ keywords:
 - winget
 - install
 - download
-ms.date: 08/22/2024
+ms.date: 09/18/2024
 ---
 
 # Install the WDK using WinGet
@@ -19,7 +19,7 @@ Refer to the [WinGet install documentation](/windows/package-manager/winget/#ins
 
 ## Install the latest WDK step by step using WinGet
 
-The latest version of the WDK is 10.0.26100. It requires Visual Studio 2022 and Windows SDK 10.0.26100. For more info, see [Kit versioning](./download-the-wdk.md#kit-versioning).
+The latest version of the WDK is 10.0.26100.1591. It requires Visual Studio 2022 and Windows SDK 10.0.26100.1 For more info, see [Kit versioning](./download-the-wdk.md#kit-versioning).
 
 ### Step 1: Install Visual Studio 2022
 
@@ -64,18 +64,22 @@ You can use WinGet to install Visual Studio 2022 with all the workloads and comp
 Depending on the edition you would like to install, you will need to provide `winget` with a different set of installer parameters along with the path to the .vsconfig file you have just created to customize your installation.
 
 > [!CAUTION]
-> You must provide an absolute path to your `wdk.vsconfig` file in the following commands. Otherwise, WinGet may fail to install Visual Studio while still reporting success. 
-
+> You must provide an absolute path to your *wdk.vsconfig* file in the following commands. Otherwise, WinGet may fail to install Visual Studio while still reporting success.
 
 **Visual Studio Community 2022**:
+
 ```cmd
 winget install --source winget --exact --id Microsoft.VisualStudio.2022.Community --override "--passive --config <vsconfig-folder>\wdk.vsconfig"
 ```
+
 **Visual Studio Professional 2022**:
+
 ```cmd
 winget install --source winget --exact --id Microsoft.VisualStudio.2022.Professional --override "--passive --config <vsconfig-folder>\wdk.vsconfig""
 ```
+
 **Visual Studio Enterprise 2022**:
+
 ```cmd
 winget install --source winget --exact --id Microsoft.VisualStudio.2022.Enterprise --override "--passive --config <vsconfig-folder>\wdk.vsconfig"
 ```
@@ -87,23 +91,28 @@ You can check Visual Studio documentation on [How to use WinGet to install or mo
 You can install both the Windows SDK and WDK from WinGet by running the following commands:
 
 **Windows SDK**:
+
 ```cmd
 winget install --source winget --exact --id Microsoft.WindowsSDK.10.0.26100 --log $env:USERPROFILE/Desktop/sdk-install.log
 ```
+
 **Windows WDK**:
+
 ```cmd
 winget install --source winget --exact --id Microsoft.WindowsWDK.10.0.26100 --log $env:USERPROFILE/Desktop/wdk-install.log
 ```
 
-If you are using VS 17.11.0 or 17.11.1, uncheck the install extension checkbox.
+If you are using VS 17.11.0 or later, uncheck the install extension checkbox.
 
 ### Step 3: Install WDK Visual Studio extension
 
-(If you are using VS 17.11.0 or 17.11.1, skip this step.)
+> [!NOTE]
+> This section is only application when using VS earlier than 17.11.0 release
 
 After installing the WDK from command line, you will need to install the Windows Driver Kit Visual Studio extension separately to be able to build and test drivers. By default, the extension is located under `%ProgramFiles(x86)%\Windows Kits\10\Vsix\VS2022\10.0.26100.0\%PROCESSOR_ARCHITECTURE%\WDK.vsix`.
 
 Using Command Prompt:
+
 ```cmd
 for /f "usebackq tokens=*" %i in (`"%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vswhere.exe" -nologo -latest -products * -property enginePath`) do (
   "%i\VSIXInstaller.exe" "%ProgramFiles(x86)%\Windows Kits\10\Vsix\VS2022\10.0.26100.0\%PROCESSOR_ARCHITECTURE%\WDK.vsix"
@@ -111,6 +120,7 @@ for /f "usebackq tokens=*" %i in (`"%ProgramFiles(x86)%\Microsoft Visual Studio\
 ```
 
 Using PowerShell:
+
 ```powershell
 & $(& "${env:ProgramFiles(x86)}\Microsoft Visual Studio\Installer\vswhere.exe" -nologo -latest -products * -property enginePath | Join-Path -ChildPath 'VSIXInstaller.exe') "${env:ProgramFiles(x86)}\Windows Kits\10\Vsix\VS2022\10.0.26100.0\${env:PROCESSOR_ARCHITECTURE}\WDK.vsix"
 ```
@@ -125,16 +135,20 @@ You can install multiple kits for different Windows versions from WinGet.
 You can search for other available kit versions using the `winget search` command.
 
 **Windows SDK**:
+
 ```cmd
 winget search --source winget --id Microsoft.WindowsSDK
 ```
+
 **Windows WDK**:
+
 ```cmd
 winget search --source winget --id Microsoft.WindowsWDK
 ```
 
 Each command will return a table with all the available SDK/WDK versions in WinGet. For example, when looking for all the available WDK versions, a table like this will be shown:
-```
+
+```cmd
 Name                                        Id                              Version        Source
 --------------------------------------------------------------------------------------------------
 Windows Driver Kit - Windows 10.0.22621.2428 Microsoft.WindowsWDK.10.0.22621 10.1.22621.2428 winget
@@ -146,10 +160,13 @@ Windows Driver Kit - Windows 10.0.26100.1    Microsoft.WindowsWDK.10.0.26100 10.
 You can then install your required combination of kits for a specific `<kit-version>` using `winget install`:
 
 **Windows SDK**:
+
 ```cmd
 winget install --source winget --exact --id Microsoft.WindowsSDK.10.0.<kit-version>
 ```
+
 **Windows WDK**:
+
 ```cmd
 winget install --source winget --exact --id Microsoft.WindowsWDK.10.0.<kit-version>
 ```
@@ -162,6 +179,7 @@ Unless you have the WDK Visual Studio extension from a newer WDK installed alrea
 Locate first the folder for the `<vs-version>` that you will be using (`VS2022` for versions 22621 and newer, `VS2019` for versions 18362 thru 22000). If that folder contains multiple versioned folders, locate the folder inside with the latest version number. Take note of this location as `<wdk-vsix-folder>` if you want to install the extension from command line.
 
 Using Command Prompt:
+
 ```cmd
 for /f "usebackq tokens=*" %i in (`"%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vswhere.exe" -nologo -latest -products * -property enginePath`) do (
   "%i\VSIXInstaller.exe" "<wdk-vsix-folder>\WDK.vsix"
@@ -169,6 +187,7 @@ for /f "usebackq tokens=*" %i in (`"%ProgramFiles(x86)%\Microsoft Visual Studio\
 ```
 
 Using PowerShell:
+
 ```powershell
 & $(& "${env:ProgramFiles(x86)}\Microsoft Visual Studio\Installer\vswhere.exe" -nologo -latest -products * -property enginePath | Join-Path -ChildPath 'VSIXInstaller.exe') "<wdk-vsix-folder>\WDK.vsix"
 ```

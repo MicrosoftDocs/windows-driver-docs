@@ -1,20 +1,10 @@
 ---
 title: TCP/IP Task Offload Overview
-description: TCP/IP Task Offload Overview
-keywords:
-- TCP/IP offload WDK networking , task offload
-- offload WDK TCP/IP transport , task offload
-- task offload WDK TCP/IP transport
-- task offload WDK TCP/IP transport , about task offload
-- capabilities WDK TCP/IP offload
-ms.date: 04/20/2017
+description: To increase its performance, the Microsoft TCP/IP transport can offload tasks to a NIC that has the appropriate task offload capabilities.
+ms.date: 09/27/2024
 ---
 
 # TCP/IP Task Offload Overview
-
-
-
-
 
 To increase its performance, the Microsoft TCP/IP transport can offload tasks to a network interface card (NIC) that has the appropriate task offload capabilities.
 
@@ -23,22 +13,6 @@ Beginning with Windows Vista, the Windows operating system supports the followi
 ### Checksum tasks
 
 The TCP/IP transport can offload the calculation and validation of IP and TCP checksums.
-
-### Internet protocol security (IPsec) Offload Version 1 (IPsecOV1)
-
-\[The IPsec Task Offload feature is deprecated and should not be used.\]
-
-The TCP/IP transport can offload the calculation and validation of encrypted checksums for authentication headers (AH), encapsulating security payloads (ESP), or both. The TCP/IP transport can also offload the encryption and decryption of ESP payloads and the encryption and decryption of user datagram protocol (UDP)-encapsulated ESP data packets.
-
-For more information about IPsecOV1, see [IPsec Offload Version 1](background-reading-on-ipsec.md).
-
-### Internet protocol security (IPsec) Offload Version 2 (IPsecOV2)
-
-\[The IPsec Task Offload feature is deprecated and should not be used.\]
-
-The TCP/IP transport can offload the calculation and validation of encrypted checksums for authentication headers (AH), encapsulating security payloads (ESP), or both. The TCP/IP transport can also offload the encryption and decryption of ESP payloads and the encryption and decryption of user datagram protocol (UDP)-encapsulated ESP data packets. IPsecOV2 is supported in NDIS 6.1 and later versions.
-
-For more information about IPsecOV2, see [IPsec Offload Version 2](./introduction-to-ipsec-offload-version-2.md).
 
 ### Large send offload version 1 (LSOV1)
 
@@ -74,8 +48,6 @@ This section includes:
 -   [Combining Types of Task Offloads](combining-types-of-task-offloads.md)
 -   [Using Registry Values to Enable and Disable Task Offloading](using-registry-values-to-enable-and-disable-task-offloading.md)
 -   [Offloading Checksum Tasks](offloading-checksum-tasks.md)
--   [Offloading IPsec Tasks](background-reading-on-ipsec.md)
-    - \[The IPsec Task Offload feature is deprecated and should not be used.\]
 -   [Offloading the Segmentation of Large TCP Packets](offloading-the-segmentation-of-large-tcp-packets.md)
 -   [UDP Segmentation Offload (USO)](udp-segmentation-offload-uso-.md)
 

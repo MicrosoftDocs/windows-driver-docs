@@ -1,7 +1,7 @@
 ---
 title: Updates for IddCx Versions 1.10 and Later
 description: Version 1.10 updates to the Indirect Display Driver Class eXtension for console and remote indirect display drivers
-ms.date: 10/20/2023
+ms.date: 09/25/2024
 keywords:
 - IddCx version 1.10
 - Console and remote indirect display driver, IddCx versions 1.10 and later
@@ -16,7 +16,7 @@ keywords:
 
 # Updates for IddCx versions 1.10 and later
 
-This page describes the changes made in IddCx version 1.10. A single indirect display driver (IDD) binary built against IddCx 1.10 can run on Windows 10, version 1803 and above using runtime checks to verify whether DDI changes in IddCx 1.10 are available on that system. For more information, see [Building a WDF driver for multiple versions of Windows](../wdf/building-a-wdf-driver-for-multiple-versions-of-windows.md).
+This article describes the updates made in IddCx version 1.10. A single indirect display driver (IDD) binary built against IddCx 1.10 can run on Windows 10, version 1803 and above using runtime checks to verify whether DDI changes in IddCx 1.10 are available on that system. For more information, see [Building a WDF driver for multiple versions of Windows](../wdf/building-a-wdf-driver-for-multiple-versions-of-windows.md).
 
 The IddCx 1.10 changes fall into the following categories:
 
@@ -25,10 +25,10 @@ The IddCx 1.10 changes fall into the following categories:
 
 ## Updated IddCxGetVersion version
 
-The value returned by [**IddCxGetVersion**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxgetversion) has been updated but differs depending on the OS:
+The value returned by [**IddCxGetVersion**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxgetversion) was updated but differs depending on the OS:
 
 * The Windows 11, version 22H2 September Update returns 0x1A00 (IDDCX_VERSION_SV3).
-* The 2024 Windows platform release will return 0x1A80.
+* The 2024 Windows platform release returns 0x1A80.
 
 This versioning is significant for remote drivers where the behavior of the OS differs slightly.
 
@@ -48,7 +48,7 @@ Newer variants of existing DDIs were added when existing DDIs couldn't be extend
 
 Version 1.10 and greater drivers that support HDR must use the newer DDI variants. Older drivers or drivers that don't support HDR can continue to use the existing functions. An overview of the changes is given in the sections following this one.
 
-The following table lists the driver-implemented DDIs added in IddCx 1.10 and names the previous equivalent if there was one. The OS may call these functions if the driver reports them, even for adapters that aren't trying to support HDR.
+The following table lists the driver-implemented DDIs added in IddCx 1.10 and names the previous equivalent if there was one. The OS might call these functions if the driver reports them, even for adapters that aren't trying to support HDR.
 
 | Driver functions that OS calls for HDR adapters | Previous equivalent function |
 | ---------------------------------------- | ---------------------------- |
@@ -62,7 +62,7 @@ The following table lists the driver-implemented DDIs added in IddCx 1.10 and na
 
 *\*\*: Function might not be called for remote drivers depending on the [adapter flags](#reporting-adapter-hdr-support) set by the driver.*
 
-The following table lists the OS-implemented functions added in IddCx 1.10 and names the previous equivalent(s) if there was one. A version 1.10 driver can call the newer variants if it has determined that these functions are available in the OS that the driver is running on.
+The following table lists the OS-implemented functions added in IddCx 1.10 and names any previous equivalents. A version 1.10 driver can call the newer variants once it determines that these functions are available in the OS that the driver is running on.
 
 | Newer functions a driver must call for HDR adapters | Previous equivalent |
 | --------------------------------------------------- | ------------------- |
@@ -94,7 +94,7 @@ If a driver wishes to enable HDR for an adapter, it must provide additional info
 
 ### HDR metadata
 
-When the driver provides a monitor descriptor containing HDR metadata, the OS calls [**EVT_IDD_CX_MONITOR_SET_DEFAULT_HDR_METADATA**](/windows-hardware/drivers/ddi/iddcx/nc-iddcx-evt_idd_cx_monitor_set_default_hdr_metadata) to give the default HDR metadata to the driver. The driver must keep this default data and use it when sending HDR10 info frames (SMPTE ST.2086) to the monitor. When a driver calls [**IddCxSwapChainReleaseAndAcquireBuffer2**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxswapchainreleaseandacquirebuffer2), the OS also provides HDR metadata information. If this metadata indicates that the default should be used, it's the stored default data that is being referred to.
+When the driver provides a monitor descriptor containing HDR metadata, the OS calls [**EVT_IDD_CX_MONITOR_SET_DEFAULT_HDR_METADATA**](/windows-hardware/drivers/ddi/iddcx/nc-iddcx-evt_idd_cx_monitor_set_default_hdr_metadata) to give the default HDR metadata to the driver. The driver must keep this default data and use it when sending HDR10 info frames (SMPTE ST.2086) to the monitor. When a driver calls [**IddCxSwapChainReleaseAndAcquireBuffer2**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxswapchainreleaseandacquirebuffer2), the OS also provides HDR metadata information. If this metadata indicates that the default should be used, it's referring to the stored default data.
 
 When an HDR mode is set, the OS sends HDR metadata state with every frame. This metadata tells the driver which HDR metadata to use via the introduced [**IDDCX_METADATA2**](/windows-hardware/drivers/ddi/iddcx/ns-iddcx-iddcx_metadata2) structure. The metadata is either a new metadata block or an indication that the driver should use either the default metadata the OS previously provided or the same metadata as the previous frame.
 
@@ -109,19 +109,19 @@ When a display is connected to a target, the OS queries the driver for currently
 
 These extended modes indicate the possible bit depths and surface formats that can be used. A driver can also update a target mode list by calling [**IddCxMonitorUpdateModes2**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxmonitorupdatemodes2).
 
-The OS infers variations of modes for HDR and SDR WCG based on the information returned by the driver's [**EVT_IDD_CX_ADAPTER_QUERY_TARGET_INFO**](/windows-hardware/drivers/ddi/iddcx/nc-iddcx-evt_idd_cx_adapter_query_target_info) callback prior to any modes being reported.
+The OS infers variations of modes for HDR and SDR WCG based on the information returned by the driver's [**EVT_IDD_CX_ADAPTER_QUERY_TARGET_INFO**](/windows-hardware/drivers/ddi/iddcx/nc-iddcx-evt_idd_cx_adapter_query_target_info) callback before any modes are reported.
 
 The OS validates the modes to try to detect repeated modes that should be combined and reported as a single mode. For example, a target that supports 1080p at 60 Hz in both 8 bits and 10 bits per channel should be reported as a single mode. However if the target supports these modes but they require different amounts of bandwidth it's still OK for these modes to be reported separately.
 
 ### An added gamma type
 
-The existing [**EVT_IDD_CX_MONITOR_SET_GAMMA_RAMP**](/windows-hardware/drivers/ddi/iddcx/nc-iddcx-evt_idd_cx_monitor_set_gamma_ramp) DDI has been extended so that the OS can provide the 3x4 matrix transform needed to support HDR displays to drivers that advertise HDR support.
+The existing [**EVT_IDD_CX_MONITOR_SET_GAMMA_RAMP**](/windows-hardware/drivers/ddi/iddcx/nc-iddcx-evt_idd_cx_monitor_set_gamma_ramp) DDI was extended so that the OS can provide the 3x4 matrix transform needed to support HDR displays to drivers that advertise HDR support.
 
 ### SDR white level
 
 Mouse cursor pixel data is always SDR. When a monitor is set in an HDR mode, the SDR white level must be applied to mouse cursors. IddCx v.10 provides this capability in two places:
 
-* It has been added to the per frame metadata received by a driver when calling [**IddCxSwapChainReleaseAndAcquireBuffer2**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxswapchainreleaseandacquirebuffer2).
+* It was added to the per frame metadata received by a driver when calling [**IddCxSwapChainReleaseAndAcquireBuffer2**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxswapchainreleaseandacquirebuffer2).
 * It's also part of the introduced [**IddCxMonitorQueryHardwareCursor3**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxmonitorqueryhardwarecursor3) function so that a driver can render cursor updates at the correct white level without needing to receive a new frame. The default SDR white level is 80 nits.
 
 ### Surface color space

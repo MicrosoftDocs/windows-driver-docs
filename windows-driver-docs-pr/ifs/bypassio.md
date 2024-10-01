@@ -3,20 +3,20 @@ title: BypassIO for Filter Drivers
 description: About BypassIO
 keywords:
 - filter drivers WDK file system , BypassIO
-ms.date: 11/09/2023
+ms.date: 09/23/2024
 ---
 
 # BypassIO for filter drivers
 
 ## About BypassIO
 
-Starting in Windows 11, BypassIO was added as an optimized I/O path for reading from files. The goal of this path is to reduce the CPU overhead of doing reads, which helps to meet the I/O demands of loading and running next-generation games on Windows. BypassIO is a part of the infrastructure to support DirectStorage on Windows.  
+The BypassIO feature offers an optimized I/O path for reading from files. The goal of this path is to reduce the CPU overhead of doing reads, which helps to meet the I/O demands of loading and running next-generation games on Windows. BypassIO is a part of the infrastructure to support DirectStorage on Windows. It's available starting in Windows 11.
 
 It's important that minifilters implement support for BypassIO, and that you keep BypassIO enabled as much as possible. Without filter support, game performance is degraded, resulting in a poor gaming experience for end users.
 
 There will be broader application uses beyond gaming in future Windows releases.
 
-BypassIO is a per handle concept. When BypassIO is requested, it's for an explicit file handle. BypassIO has no impact on other handles for that file.
+BypassIO is a per handle concept. When BypassIO is requested, it's for an explicit file handle. BypassIO has no effect on other handles for that file.
 
 [**FSCTL_MANAGE_BYPASS_IO**](/windows-hardware/drivers/ddi/ntifs/ni-ntifs-fsctl_manage_bypass_io) and an equivalent [**IOCTL_STORAGE_MANAGE_BYPASS_IO**](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_manage_bypass_io) were added as a part of this infrastructure. Minifilters process **FSCTL_MANAGE_BYPASS_IO**, while **IOCTL_STORAGE_MANAGE_BYPASS_IO** is sent by file systems to the volume/storage stacks. These control codes are designed to be diagnosable: they both return the identity of the driver that failed the BypassIO request, and the reason for vetoing it.
 
@@ -44,13 +44,18 @@ When [**NtReadFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntreadfile) i
 * All volume stack filters are skipped.
 * All storage stack filters and drivers above the disk driver, and between the disk and StorNVMe drivers, are skipped.
 
-In scenarios where the filesystem filter stack supports BypassIO but the volume and/or storage stack don't, read IOs bypass the filter stack but are still sent through the volume and/or storage stack. This level of support is known as partial BypassIO.
+In scenarios where the filesystem filter stack supports BypassIO but the volume and/or storage stack don't:
+
+* Read IOs bypass the filter stack.
+* Read IOs are still sent through the volume and/or storage stack.
+
+This level of support is known as partial BypassIO.
 
 :::image type="content" source="images/traditional-io-path.jpg" alt-text="Image that shows the traditional I O path for a read request.":::
 
 :::image type="content" source="images/bypass-io-path.jpg" alt-text="Image that shows the Bypass I O path for a read request.":::
 
-## DDIs changes and additions for BypassIO
+## DDI changes and additions for BypassIO
 
 The following DDIs relevant to filter drivers were added to provide BypassIO support:
 
@@ -67,13 +72,13 @@ The following DDIs relevant to filter drivers were added to provide BypassIO sup
 
 Additionally, the following DDIs were changed to support BypassIO:
 
-* A **BypassIoOpenCount** field was added to the [**FSRTL_ADVANCED_FCB_HEADER**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsrtl_advanced_fcb_header) structure. The file system uses this field to maintain a count of unique FileObjects on a stream that currently have BypassIO enabled. The addition of this field increases the structure size. The structure version to use starting in Windows 11 is **FSRTL_FCB_HEADER_V4**.
+* A **BypassIoOpenCount** field was added to the [**FSRTL_ADVANCED_FCB_HEADER**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsrtl_advanced_fcb_header) structure. The file system uses this field to maintain a count of unique FileObjects on a stream that currently has BypassIO enabled. The addition of this field increases the structure size. The structure version to use starting in Windows 11 is **FSRTL_FCB_HEADER_V4**.
 
-## Impact of other operations on BypassIO-enabled handles
+## Effect of other operations on BypassIO-enabled handles
 
-Enabling BypassIO on a handle doesn't impact other handles. However, other operations on a BypassIO-enabled handle do impact the use of BypassIO, such as in the following scenarios:
+Enabling BypassIO on a handle doesn't affect other handles. However, other operations on a BypassIO-enabled handle do affect the use of BypassIO, such as in the following scenarios:
 
-* If you have Handle A open to a file on which BypassIO is enabled and functioning, and someone (for example, another thread or process) opens Handle B to perform cached or memory mapped IO, then BypassIO is temporarily suspended on Handle A until Handle B is closed. The system instead uses the traditional I/O path to guarantee that stale data doesn't occur. The system continues to use the traditional I/O path on that handle until all data sections and cache maps are torn down, so filters must close the handle’s file in order for BypassIO to resume.
+* If you have Handle A open to a file on which BypassIO is enabled and functioning, and someone (for example, another thread or process) opens Handle B to perform cached or memory mapped IO, then BypassIO is temporarily suspended on Handle A until Handle B is closed. The system instead uses the traditional I/O path to guarantee that stale data doesn't occur. The system continues to use the traditional I/O path on that handle until all data sections and cache maps are torn down. As a result, filters must close the handle’s file before BypassIO can resume.
 
 * If a BypassIO-enabled file is marked sparse, all BypassIO operations start using the traditional I/O path.
 
@@ -94,7 +99,7 @@ If a minifilter attaches to a volume on which BypassIO is enabled, but that mini
 
 Minifilters that don't filter IRP_MJ_READ or IRP_MJ_WRITE are automatically opted in to BypassIO support, as if they had added **SUPPORTED_FS_FEATURES_BYPASS_IO** in **SupportedFeatures**.
 
-The **FS_BPIO_OP_ENABLE** and **FS_BPIO_OP_QUERY** operations fail on a stack if there's an attached minifilter that hasn't opted in.
+The **FS_BPIO_OP_ENABLE** and **FS_BPIO_OP_QUERY** operations fail on a stack if there's an attached minifilter that doesn't opt in.
 
 ### Implement support for BypassIO requests
 
@@ -102,7 +107,7 @@ Minifilters should add support for BypassIO requests, which are sent through the
 
 ## Determining whether BypassIO is working
 
-A *fsutil* command has been added that issues an **FSCTL_MANAGE_BYPASS_IO** specifying the **FS_BPIO_OP_QUERY** operation. The displayed results identify the first driver that is preventing BypassIO and the reason why.
+An added *fsutil* command issues an **FSCTL_MANAGE_BYPASS_IO** specifying the **FS_BPIO_OP_QUERY** operation. The displayed results identify the first driver that is preventing BypassIO and the reason why.
 
 ``` Command
 > fsutil bypassIo state /v <path>
@@ -139,4 +144,4 @@ NTFS compression can't be enabled on a BypassIO active file.
 
 NTFS encryption can be enabled on a BypassIO active file. BypassIO is paused.
 
-BypassIO has no impact on offload read/write operations.
+BypassIO doesn't affect offload read/write operations.

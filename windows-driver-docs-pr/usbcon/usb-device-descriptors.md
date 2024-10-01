@@ -47,7 +47,7 @@ UsbBuildGetDescriptorRequest(
 
 This example shows the device descriptor for a USB webcam device (see [USB Device Layout](usb-device-layout.md)), obtained by using the USBView application:
 
-``` syntax
+```output
 Device Descriptor:
 bcdUSB:             0x0200
 bDeviceClass:         0xEF

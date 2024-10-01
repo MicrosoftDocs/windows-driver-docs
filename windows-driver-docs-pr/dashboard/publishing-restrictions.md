@@ -1,112 +1,32 @@
 ---
 title: Publishing restrictions
-description: The following items are restricted during publication. You can still create a shipping label for them, but the request will require additional Microsoft review.
+description: The following items are restricted during publication. You can still create a shipping label for them, but the request requires another Microsoft review.
 ms.topic: article
-ms.date: 03/8/2023
+ms.date: 09/19/2024
 ---
 
 # Publishing restrictions
 
-The following items are restricted during publication. You can still create a shipping label for them, but the request will require additional Microsoft review.
+The following items are restricted during publication. You can still create a shipping label for them, but the request requires another Microsoft review.
 
-The Partner Center enforces these publication restrictions. Publication restrictions ensure that partners cannot publish drivers that overwrite Microsoft class drivers or generic bus HWID strings. They also ensure that devices do not receive incorrect drivers due to generic third party or reused HWIDs.
+The Partner Center enforces these publication restrictions. Publication restrictions ensure that partners can't publish drivers that overwrite Microsoft class drivers or generic bus hardware ID (HWID) strings. They also ensure that devices don't receive incorrect drivers due to generic non-Microsoft or reused HWIDs.
 
-Examples of these restrictions include, but are not limited to the list in the following table.
+Examples of these restrictions include, but aren't limited to the list in the following table.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Type of restriction</th>
-<th>Additional information</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Invalid driver submission category types</p></td>
-<td><p>UNCLASSIFIED</p></td>
-</tr>
-<tr class="even">
-<td><p>Invalid Architecture</p></td>
-<td><p>ia64</p></td>
-</tr>
-<tr class="odd">
-<td><p>HWIDs with no bus enumerator</p></td>
-<td><p>N/A</p></td>
-</tr>
-<tr class="even">
-<td><p>Invalid bus enumerators</p></td>
-<td><p>ActivCardBus</p>
-<p>CIRCLASS</p>
-<p>Hid\irdevice</p>
-<p>Irbus</p>
-<p>PS2_</p>
-<p>MIDI</p>
-<p>PNP</p>
-<p>ACP</p>
-<p>IAN</p>
-<p>AVM</p>
-<p>STREAM</p>
-<p>DISPLAY</p></td>
-</tr>
-<tr class="odd">
-<td><p>Classcode declarations</p></td>
-<td><p>\CLASS</p>
-<p>\CC</p>
-<p>&</p></td>
-</tr>
-<tr class="even">
-<td><p>Two-part HWIDs</p></td>
-<td><p>Enforced on PCI and HDAUDIO buses</p></td>
-</tr>
-<tr class="odd">
-<td><p>Bluetooth HWIDs with service UUIDs and no vendor ID or product ID</p></td>
-<td><p>N/A</p></td>
-</tr>
-<tr class="even">
-<td><p>Invalid PCI Vendor Codes</p></td>
-<td><p>0000</p>
-<p>FFFF</p></td>
-</tr>
-<tr class="odd">
-<td><p>Missing device codes or product ID codes</p></td>
-<td><p>Enforced on PCI and USB buses</p></td>
-</tr>
-<tr class="even">
-<td><p>Invalid HWID string starts</p></td>
-<td><p>HID_DEVI</p>
-<p>SERIAL_M</p>
-<p>ISAPNP\PNP</p>
-<p>SERENUM\PNP</p>
-<p>PNP</p>
-<p><em>PNP</p>
-<p>BIOS\PNP</p>
-<p>ACPI\PNP</p></td>
-</tr>
-<tr class="odd">
-<td><p>System reserved HWIDs</p></td>
-<td><p>BIOS\PNP</p>
-<p>ACPI\PNP</p></td>
-</tr>
-<tr class="even">
-<td><p>Invalid HWIDs</p></td>
-<td><p></em>DONTUSE</p>
-<p>SERIAL_MOUSE</p>
-<p>Root\circlass</p>
-<p>Hid\irdevice</p>
-<p>Storage\VolumeSnapshot</p>
-<p>Storage\Volume</p></td>
-</tr>
-<tr class="odd">
-<td><p>Attestation signed drivers</p></td>
-<td><p>Attestation signed drivers must target a test audience by setting one of the following criteria:</p>
-<p>CoDev</p>
-<p>Restricted Audience\Test Registry Key</p></td>
-</tr>
-</tbody>
-</table>
+| Type of restriction | Additional information |
+|--|--|
+| Invalid driver submission category types | UNCLASSIFIED |
+| Invalid Architecture | ia64 |
+| HWIDs with no bus enumerator | N/A |
+| Invalid bus enumerators | ActivCardBus<br>CIRCLASS<br>Hid\irdevice<br>Irbus<br>PS2_<br>MIDI<br>PNP<br>ACP<br>IAN<br>AVM<br>STREAM<br>DISPLAY |
+| Classcode declarations | \CLASS<br>\CC<br>& |
+| Two-part HWIDs | Enforced on PCI and HDAUDIO buses |
+| Bluetooth HWIDs with service UUIDs and no vendor ID or product ID | N/A |
+| Invalid PCI Vendor Codes | 0000<br>FFFF |
+| Missing device codes or product ID codes | Enforced on PCI and USB buses |
+| Invalid HWID string starts | HID_DEVI<br>SERIAL_M<br>ISAPNP\PNP<br>SERENUM\PNP<br>PNP<br><em>PNP<br>BIOS\PNP<br>ACPI\PNP |
+| System reserved HWIDs | BIOS\PNP<br>ACPI\PNP |
+| Invalid HWIDs | </em>DONTUSE<br>SERIAL_MOUSE<br>Root\circlass<br>Hid\irdevice<br>Storage\VolumeSnapshot<br>Storage\Volume |
+| Attestation signed drivers | Attestation signed drivers must target a test audience by setting one of the following criteria:<ul><li>CoDev<li>Restricted Audience\Test Registry Key |
 
 For more information about the driver publishing workflow, see [Windows 10 Driver Publishing Workflow](https://go.microsoft.com/fwlink/p/?LinkId=617374).

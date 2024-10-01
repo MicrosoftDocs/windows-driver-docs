@@ -1,19 +1,19 @@
 ---
 title: Microsoft OS 2.0 Descriptors Specification
-description: Microsoft OS 2.0 Descriptors Specification
-ms.date: 02/07/2023
+description: This article defines and describes the implementation of version 2.0 of the Microsoft OS descriptors.
+ms.date: 09/18/2024
 ---
 
 # Microsoft OS 2.0 Descriptors Specification
 
-This document defines and describes the implementation of version 2.0 of the Microsoft OS Descriptors. The goal of Microsoft OS 2.0 Descriptors is to address the limitations and reliability problems with version 1.0 of OS descriptors and enable new Windows-specific functionality for USB devices.
+This article defines and describes the implementation of version 2.0 of the Microsoft OS Descriptors. The goal of Microsoft OS 2.0 Descriptors is to address the limitations and reliability problems with version 1.0 of OS descriptors and enable new Windows-specific functionality for USB devices.
 
-This information applies to the following operating systems:
+The information in this article applies to the following operating systems:
 
- - Windows 10
- - Windows 8.1 Preview
+- Windows 10
+- Windows 8.1 Preview
 
-Please read the license agreement before continuing.
+Read the license agreement before continuing.
 
 ## Microsoft OS Descriptors Specification
 

@@ -1,16 +1,16 @@
 ---
-title: BypassIO for Storage Drivers
-description: About BypassIO for storage drivers
+title: BypassIO in Storage Drivers
+description: Describes the BypassIO path for storage drivers
 keywords:
 - storage drivers WDK , BypassIO
-ms.date: 06/13/2023
+ms.date: 09/26/2024
 ---
 
 # BypassIO in storage drivers
 
 ## About BypassIO
 
-Starting in Windows 11, BypassIO was added as an optimized I/O path for reading from files. The goal of this path is to reduce the CPU overhead of doing reads, which helps to meet the I/O demands of loading and running next-generation games on Windows. BypassIO is a part of the infrastructure to support DirectStorage on Windows.  
+BypassIO is an optimized I/O path for reading from files. The goal of this path is to reduce the CPU overhead of doing reads, which helps to meet the I/O demands of loading and running next-generation games on Windows. BypassIO is a part of the infrastructure to support DirectStorage on Windows, and is available starting in Windows 11.
 
 It's important that storage drivers implement support for BypassIO, and that you keep BypassIO enabled as much as possible. Without storage stack support, game performance is degraded, resulting in a poor gaming experience for end users.
 
@@ -24,11 +24,11 @@ See [BypassIO in filter drivers](../ifs/bypassio.md) for BypassIO system archite
 
 Starting in Windows 11, BypassIO is supported as follows:
 
-* On Windows client systems only. Server system support will be added in a future release.
+* Only on Windows client systems. Server system support will be added in a future release.
 
-* On NVMe storage devices only. Support for other storage technologies will be added in a future release.
+* Only on NVMe storage devices. Support for other storage technologies will be added in a future release.
 
-* On the NTFS file system only. Support for other file systems will be added in a future release.
+* Only on the NTFS file system. Support for other file systems will be added in a future release.
 
 * Only noncached reads are supported. Support for noncached writes will be added in a future release.
 
@@ -55,7 +55,7 @@ Starting in Windows 11, storage driver developers need to update their driver's 
 
 This registry key indicates to the system that the driver understands bypass I/O. The driver must also call [**StorPortSetUnitAttributes**](/windows-hardware/drivers/ddi/storport/nf-storport-storportsetunitattributes) with [**BypassIOSupported**](/windows-hardware/drivers/ddi/storport/ns-storport-_stor_unit_attributes) set to 1 to indicate which logical unit (disk) supports bypass I/O.
 
-The driver then processes [**IOCTL_STORAGE_MANAGE_BYPASS_IO**](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_manage_bypass_io) as needed. The **FS_BPIO_OP_QUERY** operation fails if there's a storage stack driver that hasn't opted in.
+The driver then processes [**IOCTL_STORAGE_MANAGE_BYPASS_IO**](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_manage_bypass_io) as needed. The **FS_BPIO_OP_QUERY** operation fails if there's a storage stack driver that didn't opt in.
 
 > [!NOTE]
 > A driver that can never support BypassIO should still add the **StorageSupportedFeatures** state to the INF and then veto appropriately inside the driver, specifying the reason.

@@ -15,7 +15,8 @@ keywords:
 - restarting devices
 - device management WDK DevCon
 - listing device information WDK
-ms.date: 08/26/2024
+ms.date: 09/23/2024
+ai-usage: ai-assisted
 ---
 
 # Windows Device Console (Devcon.exe)
@@ -29,13 +30,13 @@ DevCon (Devcon.exe), the Device Console, is a command-line tool that displays de
 
 DevCon (Devcon.exe) is included when you install the WDK, Visual Studio, and the Windows SDK for desktop apps. For information about downloading the kits, see [Windows Hardware Downloads](../download-the-wdk.md).
 
-**Windows Driver Kit (WDK) X.Y version** (installation path)
+**Windows Driver Kit (WDK) 10 version** (installation path)
 
-- *%WdkDir%\tools\X.Y\x64\devcon.exe*
-- *%WdkDir%\tools\X.Y\x86\devcon.exe*
-- *%WdkDir%\tools\X.Y\arm64\devcon.exe*
+- *%WdkDir%\10\Tools\X.Y\x64\devcon.exe*
+- *%WdkDir%\10\Tools\X.Y\x86\devcon.exe*
+- *%WdkDir%\10\Tools\X.Y\arm64\devcon.exe*
 
-The `%WdkDir%` represents the directory the WDK was installed into, for example `C:\Program Files (x86)\Windows Kits\10\`.
+The `%WdkDir%` represents the directory the WDK was installed into and `X.Y` refers to the version of the Windows Driver Kit. For example, if you have a recent WDK, the DevCon tool would be located in the directory path `C:\Program Files (x86)\Windows Kits\10\Tools\10.0.26100.0\x64\devcon.exe` for 64-bit systems.
 
 ## In this section
 

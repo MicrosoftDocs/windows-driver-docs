@@ -1,14 +1,14 @@
 ---
 title: NVMe Feature and Extended Capability Support
 description: Describes NVMe features supported by StorNVMe
-ms.date: 08/08/2023
+ms.date: 09/18/2024
 ---
 
 # NVMe feature and extended capability support
 
 The following table lists Features and Extended Capabilities defined in the NVM Express specifications for NVMe devices as follows:
 
-* The columns with specification references indicate the section(s) in the NVM Express specification that describe the Feature or Extended Capability ("Caps"):
+* The columns with specification references indicate the sections in the NVM Express specification that describe the Feature or Extended Capability ("Caps"):
   * *NVMe 1.4 (Features)* – NVM Express Revision 1.4, June 10, 2019
   * *NVMe 2.0 (Caps) Base* – NVM Express Base Specification 2.0a, July 23, 2021
   * *NVMe 2.0 (Caps) NVM* – NVM Express NVM Command Set Specification 1.0a, July 23, 2021
@@ -44,10 +44,10 @@ The following table lists Features and Extended Capabilities defined in the NVM 
 | Predictable Latency Mode      | 8.18 | 8.16 |     |     |  |  |
 | Read Recovery Level           | 8.16 | 8.17 |     |     |  |  |
 | Replay Protected Memory Block | 8.10 | 8.18 |     |     |  |  |
-| Reservations                  | 8.8  | 8.19 | 5.5 | 5.1 |  | From Windows 11, Windows Server 2022.  |
+| Reservations                  | 8.8  | 8.19 | 5.5 | 5.1 | Yes | From Windows 11, Windows Server 2022.  |
 | Reset Zone Recommended        |      |      |     | 5.4 |  | From Windows 11, Windows Server 2022. Reserved for Microsoft internal use. |
 | Rotational Media              |      | 8.20 |  |  |  |  |
-| Sanitize Operations           | 8.15 | 8.21 | 5.6 |  | Yes | [IOCTL_STORAGE_PROTOCOL_COMMAND](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_protocol_command). WinPE only prior to Windows 11, Windows Server 2022 |
+| Sanitize Operations           | 8.15 | 8.21 | 5.6 |  | Yes | [IOCTL_STORAGE_PROTOCOL_COMMAND](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_protocol_command). WinPE only before Windows 11, Windows Server 2022 |
 | Standard Vendor Specific Command Format | 8.7 | 8.23 |  |  |  |  |
 | Streams                       |  |  | 5.7 |  |  |  |
 | Submission Queue (SQ) Associations | 8.23 | 8.22 |  |  |  |  |

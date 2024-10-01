@@ -1,30 +1,33 @@
 ---
-title: Manufacturer Override of Monitor EDIDs
+title: Using an INF File to Override EDIDs
 description: Manufacturers can write an INF file to update or override the Extended Display Identification Data (EDID) of any monitor.
-ms.date: 12/06/2023
+keywords:
+- monitor EDID override, IHVs, manufacturers, vendors
+- monitor EDID override, INF file
+ms.date: 09/20/2024
 ---
 
-# Manufacturer override of monitor EDIDs
+# Using an INF file to override EDIDs
 
-This article describes how vendors and manufacturers can override the Extended Display Identification Data (EDID) of any monitor through an INF file. A sample INF file (*Monsamp.inf*) is provided.
+This article describes how vendors and manufacturers can use an INF file to override the Extended Display Identification Data (EDID) of any monitor. It also includes a sample INF file (*Monsamp.inf*).
 
-All monitors, analog or digital, must support EDID, which contains information such as the monitor identifier, manufacturer data, hardware identifier, timing info, and so on. This data is stored in the monitor's EEPROM in a format that [VESA](https://vesa.org/) specifies.
+EDID is a metadata format used by monitors to communicate their capabilities to a video source such as a graphics card. It contains information such as the monitor identifier, manufacturer data, hardware identifier, timing info, and so on. This data is stored in the monitor's EEPROM in a format that [VESA](https://vesa.org/) specifies. All monitors, analog or digital, must support EDID.
 
 Monitors provide the EDID to Windows components, display drivers, and some user-mode applications. For example, during initialization, the monitor driver queries the Windows Display Driver Model (WDDM) driver for its brightness query interface and device driver interface (DDI) support, which is in the EDID. Incorrect or invalid EDID information on the monitor's EEPROM can lead to problems such as setting incorrect display modes.
 
 There are two approaches to correcting EDIDs:
 
 - Have the customer send the monitor back to the manufacturer, who reflashes the EEPROM with the correct EDID and returns the monitor to the customer.
-- The better solution is for the manufacturer to implement an INF file that contains the correct EDID info, and have the customer download it to the computer that is connected to the monitor. Windows extracts the updated EDID information from the INF and provides it to components instead of using the EEPROM EDID information, effectively overriding the EEPROM EDID.
+- Implement an INF file that contains the correct EDID info, and have the customer download it to the computer that is connected to the monitor. Windows extracts the updated EDID information from the INF and provides it to components instead of using the EEPROM EDID information, effectively overriding the EEPROM EDID. This simpler approach is the better solution for both the manufacturer and the customer.
 
-In addition to replacing the EDID information, a vendor can provide an override for the monitor name and the preferred display resolution. Such an override is frequently made available to customers through Windows Update or digital media in the shipping box, and receives higher precedence than the EDID override mentioned here. For more information, see [Monitor INF File Sections](monitor-inf-file-sections.md).
+In addition to replacing the EDID information, a vendor can provide an override for the monitor name and the preferred display resolution. Customers can frequently access this override through Windows Update or digital media in the shipping box. This override receives higher precedence than the EDID override described in this article. For more information, see [Monitor INF File Sections](monitor-inf-file-sections.md).
 
 ## EDID format
 
 EDID data is formatted as one or more 128-byte blocks:
 
 - EDID version 1.0 through 1.2 consists of a single block of data, per the VESA specification.
-- With EDID version 1.3 or enhanced EDID (E-EDID), manufacturers can specify one or more extension blocks in addition to the primary block.
+- EDID version 1.3 or enhanced EDID (E-EDID) allows manufacturers to specify one or more extension blocks in addition to the primary block.
 
 Each block is numbered, starting with 0 for the initial block. To update EDID info, the manufacturer's INF specifies the number of the block to be updated and provides 128 bytes of EDID data to replace the original block. The monitor driver obtains the updated data for the corrected blocks from the registry and uses the EEPROM data for the remaining blocks.
 

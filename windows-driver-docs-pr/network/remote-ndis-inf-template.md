@@ -1,9 +1,7 @@
 ---
 title: Remote NDIS INF Template
-description: Remote NDIS INF Template
-keywords:
-- Remote NDIS WDK networking , INF template
-ms.date: 05/08/2023
+description: Microsoft provides the NDIS miniport driver Rndismp.sys, which implements the Remote NDIS message set and enables communication between generic bus transport drivers and bus drivers.
+ms.date: 09/27/2024
 ---
 
 # Remote NDIS INF Template

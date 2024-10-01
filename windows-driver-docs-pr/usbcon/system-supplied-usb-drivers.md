@@ -31,6 +31,16 @@ Microsoft provides drivers for several USB device classes approved by USB-IF. Th
 
 Microsoft defines setup classes for most devices. IHVs and OEMs can define new device setup classes, but only if none of the existing classes apply. For more information, see [System-Defined Device Setup Classes Available to Vendors](../install/system-defined-device-setup-classes-available-to-vendors.md).
 
+## USB driver frameworks
+
+Microsoft provides a driver framework for some types of USB devices that do not have their own USB device class specification. Vendors who want to create these types of devices should develop a device driver that uses the specified framework for the device type.
+
+Currently, Microsoft provides the following driver frameworks for the following USB devices:
+
+- USB biometric devices
+
+    Microsoft supports USB biometric devices (fingerprint readers) by providing the Windows Biometric Framework. For more information see [Biometric Framework overview](/windows/desktop/SecBioMet/biometric-framework-overview).
+
 ## See also
 
 - [Universal Serial Bus (USB)](../index.yml)

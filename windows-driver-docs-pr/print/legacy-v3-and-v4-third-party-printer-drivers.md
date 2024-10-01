@@ -5,7 +5,7 @@ keywords:
 - print devices WDK
 - print WDK See printer driver
 - print WDK See printing
-ms.date: 09/05/2023
+ms.date: 09/26/2024
 ---
 
 # Legacy v3 and v4 third-party printer drivers
@@ -16,63 +16,63 @@ This section provides information on designing, testing, and debugging legacy v3
 
 ## In this section
 
-[V4 Printer Drivers](v4-printer-driver.md)
+[V4 printer drivers](v4-printer-driver.md)
 
-[Microsoft Printer Drivers](microsoft-printer-drivers.md)
+[Microsoft printer drivers](microsoft-printer-drivers.md)
 
-[Printer Driver Overview](printer-driver-overview.md)
+[Printer driver overview](printer-driver-overview.md)
 
-[Microsoft Universal Printer Driver](microsoft-universal-printer-driver.md)
+[Microsoft Universal printer driver](microsoft-universal-printer-driver.md)
 
-[Microsoft PostScript Printer Driver](microsoft-postscript-printer-driver.md)
+[Microsoft PostScript printer driver](microsoft-postscript-printer-driver.md)
 
-[Microsoft Plotter Driver](microsoft-plotter-driver.md)
+[Microsoft plotter driver](microsoft-plotter-driver.md)
 
-[GDI Printer Drivers](gdi-printer-drivers.md)
+[GDI printer drivers](gdi-printer-drivers.md)
 
-[Print Ticket and Print Capabilities Technologies](print-ticket-and-print-capabilities-technologies.md)
+[Print ticket and print capabilities technologies](print-ticket-and-print-capabilities-technologies.md)
 
-[Writing 64-Bit Printer Drivers](writing-64-bit-printer-drivers.md)
+[Writing 64-bit printer drivers](writing-64-bit-printer-drivers.md)
 
-[Installing and Configuring Printer Drivers](installing-and-configuring-printer-drivers.md)
+[Installing and configuring printer drivers](installing-and-configuring-printer-drivers.md)
 
-[Printer Configuration](printer-configuration.md)
+[Printer configuration](printer-configuration.md)
 
 [Generic Description Language (GDL)](generic-description-language.md)
 
-[GDL Reference](gdl-reference.md)
+[GDL reference](gdl-reference.md)
 
-[GDL Examples](gdl-examples.md)
+[GDL examples](gdl-examples.md)
 
-[Printer Autoconfiguration](printer-autoconfiguration.md)
+[Printer autoconfiguration](printer-autoconfiguration.md)
 
-[Autoconfiguration Details](autoconfiguration-details.md)
+[Autoconfiguration details](autoconfiguration-details.md)
 
-[Autoconfiguration Implementation Options](autoconfiguration-implementation-options.md)
+[Autoconfiguration implementation options](autoconfiguration-implementation-options.md)
 
-[Bidirectional Communication](bidirectional-communication.md)
+[Bidirectional communication](bidirectional-communication.md)
 
-[Bidirectional Communication Schema Reference](bidi-communications-schema-reference.md)
+[Bidirectional communication schema reference](bidi-communications-schema-reference.md)
 
-[Bidi Interfaces and Enumerations](bidi-interfaces-and-structures.md)
+[Bidi interfaces and enumerations](bidi-interfaces-and-structures.md)
 
-[Asynchronous User Notification Schema](asynchronous-user-notification-schema.md)
+[Asynchronous user notification schema](asynchronous-user-notification-schema.md)
 
-[Web Services for Devices Print Service Schema](web-services-for-devices-print-service-schema.md)
+[Web services for devices print service schema](web-services-for-devices-print-service-schema.md)
 
-[Printer Driver Isolation](printer-driver-isolation.md)
+[Printer driver isolation](printer-driver-isolation.md)
 
-[Customizing Microsoft Printer Drivers](customizing-microsoft-s-printer-drivers.md)
+[Customizing Microsoft printer drivers](customizing-microsoft-s-printer-drivers.md)
 
-[COM Interfaces for Printer Web Pages](com-interfaces-for-printer-web-pages.md)
+[COM Interfaces for printer web pages](com-interfaces-for-printer-web-pages.md)
 
-[Print Pipeline Property Bag](print-pipeline-property-bag.md)
+[Print pipeline property bag](print-pipeline-property-bag.md)
 
-[Additional Printer Topics](additional-printer-topics.md)
+[Additional printer articles](additional-printer-topics.md)
 
-[Print Spooler Components](print-spooler-components.md)
+[Print spooler components](print-spooler-components.md)
 
-[Printer Driver Testing and Debugging](printer-driver-testing-and-debugging.md)
+[Printer driver testing and debugging](printer-driver-testing-and-debugging.md)
 
 ## Related sections
 

@@ -6,7 +6,7 @@ keywords:
 - WDK
 - drivers
 - known issues
-ms.date: 08/22/2024
+ms.date: 09/17/2024
 ---
 
 # Windows Driver Kit (WDK) known issues
@@ -25,7 +25,7 @@ When both the Windows 11, version 24H2 kit and the Windows 11, version 22H2 kit 
 
 ### WDK extension fails to install
 
-If you are using VS 17.11.0 or 17.11.1, uncheck the install extension checkbox in the WDK installation.
+If you are using Visual Studio version 17.11.0 or later, uncheck the install extension checkbox in the WDK installation.
 
 ## WDK for Windows 11, version 22H2
 

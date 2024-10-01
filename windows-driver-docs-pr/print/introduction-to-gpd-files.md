@@ -1,16 +1,16 @@
 ---
 title: Introduction to GPD Files
-description: Introduction to GPD Files
+description: Introduction to GPD files
 keywords:
 - generic printer description WDK Unidrv
 - GPD files WDK Unidrv
 - Unidrv, GPD files
 - GPD files WDK Unidrv , about GPD files
 - Unidrv WDK print
-ms.date: 01/27/2023
+ms.date: 09/24/2024
 ---
 
-# Introduction to GPD Files
+# Introduction to GPD files
 
 [!include[Print Support Apps](../includes/print-support-apps.md)]
 

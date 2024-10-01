@@ -1,12 +1,12 @@
 ---
 title: Privacy Shutter/Switch Notification
 description: Provides guidance for OEMs and ODMs that are adding a mechanism to detect the state of the physical camera privacy shutter or kill switch.
-ms.date: 06/24/2021
+ms.date: 09/11/2024
 ---
 
 # Privacy shutter/switch notification
 
-Some camera manufacturers may wish to include physical shutters or kill switches that can block the camera using a physical control unable to be overridden by software. These features are not encouraged due to the risk of inadvertent activation and resulting customer confusion, but if implemented, they must follow the guidance described in [Camera privacy shutters and kill switches](camera-privacy-controls.md), including to report the state of the shutter/switch. 
+Some camera manufacturers may wish to include physical shutters or kill switches that can block the camera using a physical control unable to be overridden by software. These features are not encouraged due to the risk of inadvertent activation and resulting customer confusion, but if implemented, they must follow the guidance described in [Camera privacy shutters and kill switches](camera-privacy-controls.md), including to report the state of the shutter/switch.
 
 When a shutter is closed or a kill switch is active, the camera continues to be fully functional to Windows and applications using existing camera APIs, but the image or video stream will be black or dark (or replaced with a static image, such as a picture of the device with an arrow pointing to the location of the physical control). This raises potential issues where applications that are accessing the camera are not aware that the camera is occluded, and end users who unintentionally activated the physical control may be confused about why their camera is not working as expected.
 

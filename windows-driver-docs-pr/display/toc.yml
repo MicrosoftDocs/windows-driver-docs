@@ -264,7 +264,7 @@
       href: general-x64-inf-information.md
     - name: General Install Information
       href: general-install-information.md
-    - name: Overriding Monitor EDIDs
+    - name: Using an INF file to override EDIDs
       href: overriding-monitor-edids.md
   - name: Installation Requirements for Display Drivers Optimized for Windows 7 and Later
     items:
