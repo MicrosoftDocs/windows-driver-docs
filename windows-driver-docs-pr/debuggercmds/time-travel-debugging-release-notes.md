@@ -11,6 +11,17 @@ ms.date: 02/12/2024
 
 This topic provides information on what's new in Time Travel Debugging.
 
+## 1.11.429
+
+This update of TTD contains a few bug fixes along with some internal changes to improve reliability.
+
+Note: 1.11.410 introduced a regression in the emulation of the Intel/AMD LODSD instruction. A fix for this will come in the next release.
+
+Fixes:
+- Improve packet reading robustness and other misc changes to improve reliability.
+- Fix a regression in emulating the AVX VBROADCAST[I/F]128 instruction.
+- Fix the exception record access on ARM64 in newer builds of Windows.
+
 ## 1.11.410
 
 Improved accessibility: Progress UI now properly scales with Text Size changes.
