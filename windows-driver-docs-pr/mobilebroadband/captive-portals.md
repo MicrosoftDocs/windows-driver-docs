@@ -36,7 +36,7 @@ To avoid false positive or false negative test results, your captive portal shou
 - Change the captive portal behavior that is displayed to clients. For example, do not redirect some requests and drop other requests; you should continue to redirect all requests until authentication succeeds.
 
   > [!NOTE]
-  > enial of Service mitigations should be based on the frequency of attempts per client, not the number of attempts per client or the total attempts from all clients.
+  > Denial of Service mitigations should be based on the frequency of attempts per client, not the number of attempts per client or the total attempts from all clients.
 
 ## Touch-friendly web pages
 
