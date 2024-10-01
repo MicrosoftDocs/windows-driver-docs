@@ -28,7 +28,7 @@ For more information about uninstalling driver and driver packages, see [How Dev
 
 ## Ensuring Permanent Removal
 
-To ensure that a driver is permanently removed and not reinstalled automatically, you need to delete the driver from the Windows driver repository (DriverStore). This can be done using the `pnputil` command. For example, you can use the following command to delete a driver:
+To ensure that a driver package is permanently removed and not reinstalled automatically, you need to delete the driver package from the [Driver Store](./driver-store.md). This can be done using the [`pnputil`](../devtest/pnputil.md) command. For example, you can use the following command to delete a driver package:
 
    ```shell
    pnputil /delete-driver <Published Name> /uninstall /force
