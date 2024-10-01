@@ -1,11 +1,7 @@
 ---
 title: Printer Driver Design Guide
 description: This section provides information on designing printer drivers.
-keywords:
-- print devices WDK
-- print WDK See printer driver
-- print WDK See printing
-ms.date: 09/05/2023
+ms.date: 09/06/2024
 ---
 
 # Printer driver design guide
@@ -13,6 +9,8 @@ ms.date: 09/05/2023
 This section provides information on designing printer drivers.
 
 ## In this section
+
+[Modern print platform and Windows protected print mode](modern-print-platform.md)
 
 [End of servicing plan for third-party printer drivers on Windows](end-of-servicing-plan-for-third-party-printer-drivers-on-windows.md)
 
