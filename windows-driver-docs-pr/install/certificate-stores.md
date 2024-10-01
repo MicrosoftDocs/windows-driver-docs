@@ -3,7 +3,7 @@ title: Certificate Stores
 description: Certificate Stores
 keywords:
 - certificate stores WDK
-ms.date: 09/16/2024
+ms.date: 08/20/2024
 ai-usage: ai-assisted
 ---
 
@@ -56,37 +56,6 @@ To export a certificate from the certificate store:
    
 You can manage certificates by performing tasks such as deleting expired certificates, renewing certificates, and configuring certificate properties. These actions can be done through the MMC console or programmatically using Windows APIs.  
    
-
-## What are Service Account Certificate Stores?
-
-Service account certificate stores are specialized certificate stores used by service accounts in Windows. These stores are distinct from the Local Machine and Current User certificate stores and are used to manage certificates for services running under specific service accounts.
-
-### Types of Service Accounts
-
-1. **LocalService**: A predefined local account used by the service control manager.
-2. **NetworkService**: A predefined local account that has more privileges than LocalService.
-
-### Using Certificates Management Console
-
-To manage certificates for a service account, you can use the Certificates management console with a custom configuration. This allows you to add multiple snap-ins and save the console as a .msc file for later use.
-
-
-### When to use Service Account Certificate Stores
-
-1. **Service-Specific Certificates**: When a certificate is required for a service running under a specific service account, it should be stored in the service account's certificate store.
-2. **Security Isolation**: To ensure that certificates are only accessible to the service that requires them, enhancing security by isolating the certificate usage to the service account.
-
-### When not to use Service Account Certificate Stores
-
-1. **General Use Certificates**: Certificates that need to be accessed by multiple services or users should be stored in the Local Machine or Current User certificate stores.
-2. **Complex Management**: If managing certificates for multiple service accounts becomes too complex, it might be more practical to use the Local Machine certificate store and manage permissions accordingly.
-
-### Adding Certificates to Service Account Stores
-
-One approach is to log in interactively under the service account to import the certificate.
-
-Another method is to install the certificate in the LocalMachine\My store and grant private key read permissions to the service account.
-
 ## Additional Resources  
    
 For more information on specific certificate stores, see the following topics:  
