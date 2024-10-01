@@ -28,7 +28,7 @@ The `Start` value specifies when the service should be started. It can have one 
 - `0x0` (Boot): Loaded by the boot loader.
 - `0x1` (System): Loaded by the I/O subsystem.
 - `0x2` (Automatic): Loaded automatically by the Service Control Manager during system startup.
-- `0x3` (Manual): Loaded manually by the Service Control Manager when a process calls the `StartService` function.
+- `0x3` (Demand): Loaded automatically by PnP if it is needed for a device.
 - `0x4` (Disabled): The service is disabled and will not be loaded.
 
 #### Type
@@ -41,7 +41,7 @@ The `Type` value specifies the type of service. It can be a combination of the f
 #### ErrorControl
 The `ErrorControl` value specifies the severity of the error if the service fails to start. It can have one of the following values:
 - `0x0` (Ignore): The error is ignored, and the startup continues.
-- `0x1` (Normal): The error is logged, and a message box is displayed, but startup continues.
+- `0x1` (Normal): The error is logged, a message box may be displayed, but startup continues.
 - `0x2` (Severe): The error is logged, and the system is restarted with the last-known-good configuration.
 - `0x3` (Critical): The error is logged, and the system attempts to restart with the last-known-good configuration. If this fails, startup fails, and the system halts.
 

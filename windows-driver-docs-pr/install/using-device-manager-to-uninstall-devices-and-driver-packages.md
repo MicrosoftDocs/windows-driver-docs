@@ -31,10 +31,10 @@ For more information about uninstalling driver and driver packages, see [How Dev
 To ensure that a driver package is permanently removed and not reinstalled automatically, you need to delete the driver package from the [Driver Store](./driver-store.md). This can be done using the [`pnputil`](../devtest/pnputil.md) command. For example, you can use the following command to delete a driver package:
 
    ```shell
-   pnputil /delete-driver <Published Name> /uninstall /force
+   pnputil /delete-driver <Published Name> /uninstall
    ```
 
-Note that this command deletes a driver package even if it is in use by devices, and also disables a device even if it provides critical system functionality.
+Note that this command updates any devices using the specified driver package to use a different driver package before removing the specified driver package from the system. If there are no other driver packages on the system that match on the device, the device will be left with no driver package and will be non-functional, so care should be taken before removing a driver package from the system.
 
 Also be aware that Windows Update may also reinstall drivers if it detects that a necessary driver is missing. You may need to adjust your Windows Update settings to prevent this.
 
