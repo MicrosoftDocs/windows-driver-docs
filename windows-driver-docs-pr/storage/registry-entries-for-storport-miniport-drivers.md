@@ -1,12 +1,16 @@
 ---
 title: Registry Entries for StorPort Miniport Drivers
 description: StorPort defines a set of registry entries to configure the behavior of StorPort and miniport operations.
-ms.date: 11/09/2023
+ms.date: 09/30/2024
 ---
 
 # Registry Entries for StorPort Miniport Drivers
 
 StorPort defines a set of registry entries to configure the behavior of StorPort and miniport operations. Values are set in the scope of the miniport driver or per instance.
+
+* For more information about service entries, see [HKLM\SYSTEM\CurrentControlSet\Services Registry Tree](../install/hklm-system-currentcontrolset-services-registry-tree.md).
+
+* For more information about device enumeration entries, see [HKLM\SYSTEM\CurrentControlSet\Enum Registry Tree](../install/hklm-system-currentcontrolset-enum-registry-tree.md).
 
 ## Service Entries
 
@@ -214,7 +218,7 @@ Registry entries for the miniport are keyed by the *\\Parameters* subkey and the
 ### Name: DisableRuntimePowerManagement
 
 * Type: REG_DWORD
-* Path</td>
+* Path
   * Adapter scope: HKLM\System\CurrentControlSet\Enum<*instance path*>\Device Parameters\StorPort
 * Value:
   * Default: 0, enabled
@@ -224,7 +228,7 @@ Registry entries for the miniport are keyed by the *\\Parameters* subkey and the
 ### Name: IdleTimeoutInMS
 
 * Type: REG_DWORD
-* Path</td>
+* Path
   * Adapter scope: HKLM\System\CurrentControlSet\Enum<*instance path*>\Device Parameters\StorPort
 * Value:
   * Default: 60
@@ -235,7 +239,7 @@ Registry entries for the miniport are keyed by the *\\Parameters* subkey and the
 ### Name: DisableD3Cold
 
 * Type: REG_DWORD
-* Path</td>
+* Path
   * Adapter scope: HKLM\System\CurrentControlSet\Enum<*instance path*>\Device Parameters\StorPort
 * Value:
   * Default: enabled (when D3Cold is supported)
