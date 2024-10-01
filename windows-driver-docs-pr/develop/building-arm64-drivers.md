@@ -62,6 +62,8 @@ This page describes how to build an Arm64 driver with the WDK.
       Msbuild -p:Configuration=Release/Debug; Platform=ARM64
       ```
 
+For more info, see [Enterprise WDK (EWDK)](../download-the-wdk.md#download-icon-for-ewdk-enterprise-wdk-ewdk).
+
 ## Troubleshooting
 
 1. **Configuration in Visual Studio**:
