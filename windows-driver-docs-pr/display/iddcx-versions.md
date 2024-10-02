@@ -1,7 +1,7 @@
 ---
 title: IddCx Versions
 description: Provides version
-ms.date: 09/11/2024
+ms.date: 10/02/2024
 keywords:
 - IddCx versions, WDK
 - IddCx versions, Windows versions
@@ -22,8 +22,8 @@ This page also lists the IddCx version (and **IddCxGetVersion** value) shipped w
 | [1.9](iddcx1.9-updates.md) | 0x1900 | Add [**IddCxSetRealtimeGPUPriority**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxsetrealtimegpupriority); disallow UMDF process pooling |
 | [1.8](iddcx1.8-updates.md) | 0x1800 | Add [**IDDCX_ADAPTER_FLAGS_PREFER_PRECISE_PRESENT_REGIONS**](/windows-hardware/drivers/ddi/iddcx/ne-iddcx-iddcx_adapter_flags) |
 | [1.7](iddcx1.7-updates.md) | 0x1700 | Add [**IddCxMonitorQueryHardwareCursor2**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxmonitorqueryhardwarecursor2) and deprecate [**IDDCX_ADAPTER_FLAGS_CAN_USE_MOVE_REGIONS**](/windows-hardware/drivers/ddi/iddcx/ne-iddcx-iddcx_adapter_flags) |
-| [1.6](iddcx1.6-updates.md) | 0x1600 | Add [**IddCxSwapChainInSystemMemory**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxswapchaininsystemmemory), [**IddCxSwapChainReleaseAndAcquireSystemBuffer**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxswapchainreleaseandacquiresystembuffer), and [**IddCxSwapChainGetPhysicallyContiguousAddress**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxswapchaingetphysicallycontiguousaddress) |
-| 1.5                        | 0x1500 | Internal IddCx version update |
+| [1.6](iddcx1.6-updates.md) | 0x1600 | Add [**IddCxSwapChainGetPhysicallyContiguousAddress**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxswapchaingetphysicallycontiguousaddress) |
+| [1.5](iddcx1.6-updates.md) | 0x1500 | Add [**IddCxSwapChainInSystemMemory**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxswapchaininsystemmemory) and [**IddCxSwapChainReleaseAndAcquireSystemBuffer**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxswapchainreleaseandacquiresystembuffer) |
 | [1.4](iddcx1.4-updates.md) | 0x1400 | Add support for remote session ID drivers, [**EvtIddCxMonitorGetPhysicalSize**](/windows-hardware/drivers/ddi/iddcx/nc-iddcx-evt_idd_cx_monitor_get_physical_size), [**IddCxAdapterSetRenderAdapter**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxadaptersetrenderadapter), and [**IddCxAdapterDisplayConfigUpdate**](/windows-hardware/drivers/ddi/iddcx/nc-iddcx-pfn_iddcxadapterdisplayconfigupdate) |
 | 1.3                        | 0x1300 | Add ability to load a driver built against IddCx 1.3 or above |
 | 1.2                        | 0x1200 | Add [**IddCxGetVersion**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxgetversion), [**IddCxReportCriticalError**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxreportcriticalerror), [**IddCxMonitorSetSrmList**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxmonitorsetsrmlist), and [**IddCxMonitorGetSrmListVersion**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxmonitorgetsrmlistversion) |
@@ -42,7 +42,7 @@ This page also lists the IddCx version (and **IddCxGetVersion** value) shipped w
 
 | Build number | Release code name | Release name         | IddCx version | IddCxGetVersion returned |
 | ------------ | ----------------- | -------------------- | ------------- | ------------------------ |
-| 19625        | Manganese         | Windows 10 20H2      | 1.6           | 0x1600 |
+| 19045        | 22H2              | Windows 10 22H2      | 1.5           | 0x1500 |
 | 19044        | 21H2              | Nov 2021 Update      | 1.5           | 0x1500 |
 | 19043        | 21H1              | May 2021 Update      | 1.5           | 0x1500 |
 | 19042        | 20H2              | October 2020 Update  | 1.5           | 0x1500 |
