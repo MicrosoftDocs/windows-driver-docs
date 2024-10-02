@@ -1,7 +1,7 @@
 ---
 title: Updates for IddCx Versions 1.10 and Later
 description: Version 1.10 updates to the Indirect Display Driver Class eXtension for console and remote indirect display drivers
-ms.date: 09/25/2024
+ms.date: 10/01/2024
 keywords:
 - IddCx version 1.10
 - Console and remote indirect display driver, IddCx versions 1.10 and later
@@ -27,8 +27,8 @@ The IddCx 1.10 changes fall into the following categories:
 
 The value returned by [**IddCxGetVersion**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxgetversion) was updated but differs depending on the OS:
 
+* The Windows 11, version 24H2 platform release returns 0x1A80 (IDDCX_VERSION_GERMANIUM).
 * The Windows 11, version 22H2 September Update returns 0x1A00 (IDDCX_VERSION_SV3).
-* The 2024 Windows platform release returns 0x1A80.
 
 This versioning is significant for remote drivers where the behavior of the OS differs slightly.
 
