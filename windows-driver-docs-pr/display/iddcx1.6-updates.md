@@ -11,7 +11,7 @@ keywords:
 - Remote IDD
 ---
 
-# Updates for IddCx versions 1.5 and 1.6 and later
+# Updates for IddCx versions 1.5, 1.6 and later
 
 The following updates in IddCx versions 1.5 and 1.6 apply to both console and remote indirect display drivers (IDDs).
 
@@ -21,7 +21,7 @@ The IddCx version returned by [**IddCxGetVersion**](/windows-hardware/drivers/dd
 
 ## WPP information in public IddCx symbols
 
-Starting with IddCx version 1.6, the public IddCx symbol files contain all the Windows software trace processor (WPP) information. This change means that the [**!wmitrace.logdump**](../debuggercmds/-wmitrace-logdump.md) debugger command decodes and displays the WPP message in the kernel debugger.
+Starting with IddCx version 1.5, the public IddCx symbol files contain all the Windows software trace processor (WPP) information. This change means that the [**!wmitrace.logdump**](../debuggercmds/-wmitrace-logdump.md) debugger command decodes and displays the WPP message in the kernel debugger.
 
 ## Ability to access buffers allocated in system memory
 
@@ -39,6 +39,9 @@ In certain scenarios, swapchain buffers are resident in system memory; for examp
 Drivers are recommended but not required to use these callback functions. The behavior before IddCx 1.5 remains supported.
 
 ## Ability to access buffers in physically contiguous memory
+
+> [!NOTE]
+> **IddCxSwapChainGetPhysicallyContiguousAddress** isn't supported on any Windows 10 system, and will likely be deprecated in the future.
 
 Starting with IddCx 1.6, the [**IDDCX_ADAPTER_FLAGS_PREFER_PHYSICALLY_CONTIGUOUS**](/windows-hardware/drivers/ddi/iddcx/ne-iddcx-iddcx_adapter_flags) flag and [**IddCxSwapChainGetPhysicallyContiguousAddress**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxswapchaingetphysicallycontiguousaddress) OS callback function were added so that buffers can be accessed in physically contiguous memory.
 
