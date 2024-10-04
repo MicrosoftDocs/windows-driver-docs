@@ -28,12 +28,11 @@ With the combination of 802.11k, 802.11v, and 802.11r, Windows 10 takes advanta
 
 ## Things to note
 
-
 Not all Windows 10 devices support 802.11k, 802.11v, and 802.11r. The WLAN Radio driver must support these features to enable them to work on Windows 10. Please check with your device manufacturer to determine whether or not your device supports these features. In addition to device-side support, the network (AP Controllers and APs) must also support the features for the experience to work. Please check with your network administrator to see if these features are supported and have been enabled on the network in question.
 
 Windows 10 continues to support Opportunistic Key Caching (OKC) when 802.11r is not available on the device or the network.
 
-All three features require AP-side support and will not work without those features enabled on the APs.
+All three features require AP-side support and don't work unless those features are enabled on the APs.
 
  
 
