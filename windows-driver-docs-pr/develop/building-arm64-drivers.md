@@ -1,7 +1,7 @@
 ---
 title: Building Arm64 Drivers with the WDK
 description: This topic describes how to build an Arm64 driver with the Windows Driver Kit (WDK).
-ms.date: 09/16/2024
+ms.date: 10/04/2024
 ai-usage: ai-assisted
 ---
 
@@ -21,10 +21,11 @@ This page describes how to build an Arm64 driver with the WDK.
     * C++ ATL for latest v143 build tools with Spectre Mitigations (x86 & x64)
     * C++ MFC for latest v143 build tools with Spectre Mitigations (ARM64/ARM64EC)
     * C++ MFC for latest v143 build tools with Spectre Mitigations (x86 & x64)
+    * Windows Driver Kit
 
 1.	Install and restart Visual Studio.
-1.  Download the [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-sdk).  Ensure that you have SDK version 16299 (Windows 10, version 1709) or later.
-1.	Download the [WDK](../download-the-wdk.md).  Ensure that you have WDK version 16299 or later.
+1.  Download the [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-sdk).  Ensure that you have SDK version 26100 (Windows 11, version 24H2) or later.
+1.	Download the [WDK](../download-the-wdk.md).  Ensure that you have WDK version 26100 or later.
 
 ## Building an Arm64 Driver with the WDK
 
