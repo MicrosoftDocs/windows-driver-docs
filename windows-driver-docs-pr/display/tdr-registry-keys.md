@@ -11,7 +11,7 @@ keywords:
 - WDK display development
 - TDR tests, WHLK
 - TDR tests, Windows Hardware Lab Kit
-ms.date: 09/20/2024
+ms.date: 10/04/2024
 ---
 
 # Testing and debugging TDR during driver development
@@ -120,4 +120,26 @@ KeyPath   : HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\GraphicsDrivers
 KeyValue  : TdrTestMode
 ValueType : REG_DWORD
 ValueData : Do not use.
+```
+
+### TdrDodPresentDelay
+
+Specifies the number of seconds allowed for the kernel-mode display-only driver's (KMDOD) [**DxgkDdiPresentDisplayOnly**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_presentdisplayonly) function to complete an asynchronous present by reporting progress to **pfnPresentDisplayOnlyProgress** (which is passed in the [**DXGKARG_PRESENT_DISPLAYONLY**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_present_displayonly) structure).
+
+```registry
+KeyPath   : HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\GraphicsDrivers
+KeyValue  : TdrDodPresentDelay
+ValueType : REG_DWORD
+ValueData : Number of seconds allowed for **DxgkDdiPresentDisplayOnly** to complete an asynchronous present. The default value is 2 seconds. (Min: 1, Max: 15 * 60 = 15 minutes). This value is for debugging purposes only.
+```
+
+### TdrDodVSyncDelay
+
+Specifies the number of seconds the V-sync watchdog waits for a V-sync signal to be reported before triggering a TDR in a KMDOD.
+
+```registry
+KeyPath   : HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\GraphicsDrivers
+KeyValue  : TdrDodVSyncDelay
+ValueType : REG_DWORD
+ValueData : Number of seconds that the V-sync watchdog waits for a V-sync to be reported before a TDR occurs with Kernel Mode Display-Only Drivers. Drivers are expected to report V-sync interrupts at the cadence of the display mode refresh rate. The default value is 2 seconds. (Min: 1s, Max: 15 * 60 = 15 minutes). This value is for debugging purposes only.
 ```
