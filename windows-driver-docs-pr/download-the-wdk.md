@@ -69,7 +69,7 @@ When you install Visual Studio 2022, select the **Desktop development with C++**
 
 Installing Visual Studio will not download the latest SDK version, use the following link to install SDK:
 
-- [Download Windows SDK 10.0.26100.1](https://developer.microsoft.com/windows/downloads/windows-sdk/)
+- [Download Windows SDK 10.0.26100.1742](https://go.microsoft.com/fwlink/?linkid=2286561)
 
 The provided links for the SDK and the WDK have matching build numbers, which is always required for the kits to work together. If you decide to install your own SDK/WDK pair, perhaps for a different Windows version, ensure that the build numbers match. For more details, see [Kit versioning](#kit-versioning).
 
