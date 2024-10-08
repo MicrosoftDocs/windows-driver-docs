@@ -21,7 +21,10 @@ To download  and use USBView, complete the following steps:
 
    `C:\Program Files (x86)\Windows Kits\10\Debuggers\x64`
 
-1. Open the kits debugger directory for the processor type you're running, and then select usbview.exe to start the utility.
+1. Open the kits debugger directory for the processor type you're running, and then select **usbview.exe** to start the utility.
+
+> [!NOTE]
+> If you don't see the file usbview.exe in the directory, make sure you installed Windows SDK in the correct directory. If the problem persists, try to reinstall the Windows SDK again and ensure that you select the **Debugging Tools for Windows** box during installation.
 
 ## USBView source code
 
