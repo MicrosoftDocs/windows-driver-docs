@@ -1,7 +1,8 @@
 ---
 title: Building Arm64 Drivers with the WDK
 description: This topic describes how to build an Arm64 driver with the Windows Driver Kit (WDK).
-ms.date: 06/27/2024
+ms.date: 10/04/2024
+ai-usage: ai-assisted
 ---
 
 # Building Arm64 Drivers with the WDK
@@ -20,10 +21,11 @@ This page describes how to build an Arm64 driver with the WDK.
     * C++ ATL for latest v143 build tools with Spectre Mitigations (x86 & x64)
     * C++ MFC for latest v143 build tools with Spectre Mitigations (ARM64/ARM64EC)
     * C++ MFC for latest v143 build tools with Spectre Mitigations (x86 & x64)
+    * Windows Driver Kit
 
 1.	Install and restart Visual Studio.
-1.  Download the [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-sdk).  Ensure that you have SDK version 16299 (Windows 10, version 1709) or later.
-1.	Download the [WDK](../download-the-wdk.md).  Ensure that you have WDK version 16299 or later.
+1.  Download the [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-sdk).  Ensure that you have SDK version 26100 (Windows 11, version 24H2) or later.
+1.	Download the [WDK](../download-the-wdk.md).  Ensure that you have WDK version 26100 or later.
 
 ## Building an Arm64 Driver with the WDK
 
@@ -38,6 +40,38 @@ This page describes how to build an Arm64 driver with the WDK.
 ![Selecting Arm64 build target from toolbar-level dropdown.](images/VS-build-Arm64.png)
 
 5.	Select **Arm64** as the target platform and rebuild.
+
+## Known Issues
+
+1. **Integration**:
+    - When both the Windows 11, version 24H2 kit and the Windows 11, version 22H2 kit are installed, building a KMDF driver for ARM64 with `TargetPlatformVersion` set to Windows 11, version 22H2 fails due to unresolved external symbols.
+    - Debugging drivers within Visual Studio 2022 versions 17.2.0 and 17.3 with the Windows 11, version 22H2 WDK is not possible.
+
+2. **Workarounds**:
+    - Update Visual Studio to version 17.4.1 or later to resolve debugging issues.
+    - Use WinDbg for debugging if updating Visual Studio is not an option.
+    - Consider using an earlier version of Visual Studio if compatibility issues persist.
+
+## Using the Enterprise Windows Driver Kit (EWDK)
+
+1. **EWDK Overview**:
+    - The EWDK includes all necessary dependencies and can be used to build drivers without requiring Visual Studio installation.
+
+2. **Building with EWDK**:
+    - Use the following command to build the driver:
+      ```shell
+      Msbuild -p:Configuration=Release/Debug; Platform=ARM64
+      ```
+
+For more info, see [Enterprise WDK (EWDK)](../download-the-wdk.md#download-icon-for-ewdk-enterprise-wdk-ewdk).
+
+## Troubleshooting
+
+1. **Configuration in Visual Studio**:
+    - In Visual Studio, configure the driver solution for Arm64 by selecting the Arm64 platform in Configuration Manager and copying settings from Win32.
+
+1. **Testing and Debugging**:
+    - Test and debug drivers on a Windows on Arm device or a Windows 11 Arm64 virtual machine.
 
 ## See Also
 
