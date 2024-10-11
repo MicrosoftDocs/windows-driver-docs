@@ -2,19 +2,19 @@
 title: Setting Up Kernel-Mode Debugging
 description: This section describes how to set up kernel-mode debugging.
 keywords: ["Kernel-mode debugging", "Setting up kernel-mode debugging"]
-ms.date: 02/20/2020
+ms.date: 10/09/2024
 ---
 
-# <span id="debugger.setting_up_kernel-mode_debugging_in_windbg__cdb__or_ntsd"></span>Setting Up Kernel-Mode Debugging
+# Setting Up Kernel-Mode Debugging
 
 This section describes how to set up kernel-mode debugging.
 
 >[!TIP]
 >The recommended approach is to use network (KDNET) debugging and use the kdnet utility to configure that automatically. For more information, see **[Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md)**.
 
-## <span id="in_this_section"></span>In this section
+## In this section
 
-### KDNET
+### KDNET Network Connections
 
 - [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md)
 - [Setting Up KDNET Network Kernel Debugging Manually](setting-up-a-network-debugging-connection.md)
@@ -30,14 +30,13 @@ This section describes how to set up kernel-mode debugging.
 
 ### Cable Connections
 
+- [Setting Up USB KDNET EEM Kernel-Mode Debugging (KDNET-EEM-USB)](setting-up-kernel-mode-debugging-over-usb-eem-arm-kdnet.md)
+- [Setting up USB KDNET kernel-mode debugging (KDNET-USB)](setting-up-a-kdnet-usb-connection.md)
+- [Setting up USB 3.0 xHCI-DBC kernel-mode debugging (KDUSB)](setting-up-a-usb-3-0-debug-cable-connection.md)
 - [Setting Up Kernel-Mode Debugging over a Serial Cable Manually](setting-up-a-null-modem-cable-connection.md)
 
-- [Setting Up Kernel-Mode Debugging over a USB 3.0 Cable Manually](setting-up-a-usb-3-0-debug-cable-connection.md)
-- [Setting Up Kernel-Mode Debugging over a USB 2.0 Cable Manually](setting-up-a-usb-2-0-debug-cable-connection.md)
 
-- [Setting Up Kernel-Mode Debugging over a 1394 Cable Manually](setting-up-a-1394-cable-connection.md)
-
-## <span id="related_topics"></span>See also
+## See also
 
 [Setting Up Debugging (Kernel-Mode and User-Mode)](getting-set-up-for-debugging.md)
 

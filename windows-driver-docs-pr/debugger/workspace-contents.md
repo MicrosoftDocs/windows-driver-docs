@@ -31,7 +31,7 @@ Each workspace preserves the following information about the debugger configurat
 
 -   Log file settings.
 
--   The COM or 1394 kernel connection settings, if the connection was started by using the graphical interface.
+-   The COM kernel connection settings, if the connection was started by using the graphical interface.
 
 -   The most recent paths in each **Open** dialog box (except for the workspace file and text file paths, which are not saved).
 

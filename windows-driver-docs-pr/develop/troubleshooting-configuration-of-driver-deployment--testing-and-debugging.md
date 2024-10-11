@@ -25,7 +25,6 @@ Provisioning a target computer is described in [Provision a computer for driver 
 
 
 -   [Debugger network connection](#debugger_wont_connect_network)
--   [Debugger 1394 connection](#debugger_wont_connect_1394)
 -   [Debugger serial connection](#debugger_wont_connect_serial)
 
 ## <span id="configure_computers_menu_command_is_inactive"></span><span id="CONFIGURE_COMPUTERS_MENU_COMMAND_IS_INACTIVE"></span>Configure Computers menu command is inactive
@@ -133,11 +132,6 @@ Check with network administrator about ports that allow network debugging.
 If the target computer has more than one network adapter, you must specify the bus parameters of the network adapter that you intend to use for debugging.
 
 For more information, see [Troubleshooting Tips for Debugging over a Network Cable](../debugger/setting-up-a-network-debugging-connection.md)
-
-## <span id="debugger_wont_connect_1394"></span><span id="DEBUGGER_WONT_CONNECT_1394"></span>Debugger won't connect or break in: 1394 connection
-
-
-If the target computer has more than one 1394 controller, you must specify the bus parameters of the 1394 controller that you intend to use for debugging. For more information, see [Troubleshooting Tips for Debugging over a 1394 Cable](../debugger/setting-up-a-1394-cable-connection.md).
 
 ## <span id="debugger_wont_connect_serial"></span><span id="DEBUGGER_WONT_CONNECT_SERIAL"></span>Debugger won't connect or break in : Serial connection
 

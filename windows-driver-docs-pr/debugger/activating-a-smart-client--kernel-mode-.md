@@ -115,7 +115,6 @@ Tells the debugger how to connect to the target. The following kernel connection
 
 ```dbgcmd
 com:port=ComPort,baud=BaudRate 
-1394:channel=1394Channel[,symlink=1394Protocol] 
 usb2:targetname=String 
 com:pipe,port=\\VMHost\pipe\PipeName[,resets=0][,reconnect]
 com:modem 

@@ -58,6 +58,12 @@ As an alternative to the procedure given in the preceding section, you can set u
 
    where *YourHostComputer* is the name of your host computer, which is running the debugging server.
 
+> [!IMPORTANT]
+> The 1394 transport is available for use in Windows 10, version 1607 and earlier. 
+> It is not available in later versions of Windows. You should transition your projects to other transports, such as KDNET using Ethernet. 
+> For more information about that transport, see [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md).
+>
+
 ## <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
 

@@ -88,6 +88,7 @@ bcdedit /dbgsettings NET HOSTIPV6:2001:48:d8:2f:5e:c0:42:28:4f5b PORT:50000
 
 For more information on manual setup, see [Setting Up Kernel-Mode Debugging over a Network Cable Manually](../debugger/setting-up-a-network-debugging-connection.md).
 
+For information on Ethernet Emulation over USB, see [Setting Up Kernel-Mode Debugging over USB EEM using KDNET](../debugger/setting-up-kernel-mode-debugging-over-usb-eem-arm-kdnet.md) 
 
 ## LOCAL
 
@@ -146,9 +147,6 @@ bcdedit /dbgsettings usb targetname:myTarget
 For more information, see:
 
 - [Setting Up Kernel-Mode Debugging over a USB 3.0 Cable Manually](../debugger/setting-up-a-usb-3-0-debug-cable-connection.md)
-- [Setting Up Kernel-Mode Debugging over a USB 2.0 Cable Manually](../debugger/setting-up-a-usb-2-0-debug-cable-connection.md)
-
-
 
 ## 1394   
 
@@ -162,8 +160,6 @@ Specifies that the target machine and the host machine will use an IEEE 1394 (Fi
 
 **CHANNEL:**<em>channel</em>   
 (Only used when the connection type is **1394**.) Specifies the 1394 channel to use. The value for *channel* must be a decimal integer between 0 and 62, inclusive, and must match the channel number used by the host computer. The channel specified in this parameter does not depend on the physical 1394 port chosen on the adapter. The default value for *channel* is 0.
-
-For more information, see [Setting Up Kernel-Mode Debugging over a 1394 Cable Manually](../debugger/setting-up-a-1394-cable-connection.md).
 
 ## General Debugger Settings
 

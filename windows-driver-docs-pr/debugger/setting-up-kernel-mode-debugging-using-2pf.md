@@ -383,6 +383,8 @@ Pci Bus:28.0.0
 
 [Setting Up KDNET Network Kernel Debugging Manually](setting-up-a-network-debugging-connection.md)
 
-[Setting Up Kernel-Mode Debugging over a USB 3.0 Cable Manually](setting-up-a-usb-3-0-debug-cable-connection.md)
+[Setting up USB 3.0 xHCI-DBC kernel-mode debugging (KDUSB)](setting-up-a-usb-3-0-debug-cable-connection.md)
+
+[Setting Up USB KDNET EEM Kernel-Mode Debugging (KDNET-EEM-USB)](setting-up-kernel-mode-debugging-over-usb-eem-arm-kdnet.md) 
 
 [Setting Up Kernel-Mode Debugging Manually](setting-up-kernel-mode-debugging-in-windbg--cdb--or-ntsd.md)

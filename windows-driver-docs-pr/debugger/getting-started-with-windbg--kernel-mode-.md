@@ -20,14 +20,14 @@ A kernel-mode debugging environment typically has two computers, the *host compu
 The Windows debuggers support the following types of cables:
 
 - Ethernet
-- USB 2.0 / USB 3.0
+- USB 3.0
 - Serial (also called null modem)
 
 For speed and reliability, you should use an Ethernet cable with a local network hub. The following diagram illustrates a host and target computer connected for debugging with an Ethernet cable.
 
 :::image type="content" source="images/configfortest01.png" alt-text="Diagram showing host and target computers connected via Ethernet for debugging.":::
 
-An option for older versions of Windows is to use a direct cable, such as a USB or serial cable.
+An option for older versions of Windows is to use a direct cable, such as a serial cable.
 
 :::image type="content" source="images/configfortest02.png" alt-text="Diagram illustrating host and target computers connected using a debug cable for debugging.":::
 

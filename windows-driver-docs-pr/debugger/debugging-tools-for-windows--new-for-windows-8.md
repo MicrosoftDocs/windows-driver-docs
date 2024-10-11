@@ -9,7 +9,7 @@ ms.date: 11/28/2017
 Beginning with Windows 8, you can develop, build, and debug both kernel-mode and user-mode components all from Microsoft Visual Studio. There is added support for debugging over a network connection or a USB 3.0 connection and improved support for debugging optimized code and inline functions. For more information, see these topics:
 
 -   [Setting Up a Network Connection Manually](setting-up-a-network-debugging-connection.md)
--   [Setting Up a USB 3.0 Connection Manually](setting-up-a-usb-3-0-debug-cable-connection.md)
+-   [Setting up USB 3.0 xHCI-DBC kernel-mode debugging (KDUSB)](setting-up-a-usb-3-0-debug-cable-connection.md)
 -   [Debugging Optimized Code and Inline Functions](debugging-optimized-code-and-inline-functions-external.md)
 
 Two new sets of debugger extension commands are included:

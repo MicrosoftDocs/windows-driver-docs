@@ -4,17 +4,17 @@ description: There are two ways you can use WinDbg to initiate a live kernel-mod
 ms.date: 12/22/2021
 ---
 
-# <span id="debugger.performing_kernel-mode_debugging_using_windbg"></span>Live Kernel-Mode Debugging Using WinDbg (Classic)
+# Live Kernel-Mode Debugging Using WinDbg (Classic)
 
 
 There are two ways you can use WinDbg to initiate a live kernel-mode debugging session.
 
-## <span id="WinDbg_Menu"></span><span id="windbg_menu"></span><span id="WINDBG_MENU"></span>WinDbg Menu
+## WinDbg Menu
 
 
-When WinDbg is in dormant mode, you can begin a kernel debugging session by choosing **Kernel Debug** from the **File** menu or by pressing CTRL+K. When the **Kernel Debugging** dialog box appears, click the appropriate tab: **NET**, **1394**, **USB**, **COM**, or **Local**. Each tab specifies a different connection method. 
+When WinDbg is in dormant mode, you can begin a kernel debugging session by choosing **Kernel Debug** from the **File** menu or by pressing CTRL+K. When the **Kernel Debugging** dialog box appears, click the appropriate tab: **NET**, **COM**, **USB**, or **Local**. Each tab specifies a different connection method. 
 
-## <span id="Command_Prompt"></span><span id="command_prompt"></span><span id="COMMAND_PROMPT"></span>Command Prompt
+## Command Prompt
 
 In a Command Prompt window, you can initiate a kernel-mode debugging session when you launch WinDbg. Enter one of the following commands:
 
@@ -37,9 +37,9 @@ windbg \[-y *SymbolPath*\] -k
 For more information, see [**WinDbg Command-Line Options**](windbg-command-line-options.md).
 
 
-## <span id="Environment_Variables"></span><span id="environment_variables"></span><span id="ENVIRONMENT_VARIABLES"></span>Environment Variables
+## Environment Variables
 
-For debugging over a serial (COM port) or 1394 connection, you can use environment variables to specify the connection settings.
+For debugging over a serial (COM port), you can use environment variables to specify the connection settings.
 
 Use the following variables to specify a serial connection.
 
@@ -50,7 +50,7 @@ set \_NT\_DEBUG\_BAUD\_RATE = *BaudRate*
 For more information, see [Kernel-Mode Environment Variables](kernel-mode-environment-variables.md).
 
 
-## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
+## Parameters
 
 <span id="_______SymbolPath______"></span><span id="_______symbolpath______"></span><span id="_______SYMBOLPATH______"></span> *SymbolPath*   
 A list of directories where symbol files are located. Directories in the list are separated by semicolons. For more information, see [Symbol Path](symbol-path.md).
@@ -73,14 +73,8 @@ For more information on configuring the host IP address on the target, see [Sett
 <span id="_______TargetName______"></span><span id="_______targetname______"></span><span id="_______TARGETNAME______"></span> *TargetMachineName*   
 The machine name of the target PC. To use the machine name, the DNS system on the network must have the machine name associated with the IP address of the target PC.
 
-<span id="_______1394Channel______"></span><span id="_______1394channel______"></span><span id="_______1394CHANNEL______"></span> *1394Channel*   
-The 1394 channel number. Valid channel numbers are any integer between 0 and 62, inclusive. *1394Channel* must match the number used by the target computer, but does not depend on the physical 1394 port chosen on the adapter. For more information, see [Setting Up a 1394 Connection Manually](setting-up-a-1394-cable-connection.md).
-
-<span id="_______1394Protocol______"></span><span id="_______1394protocol______"></span><span id="_______1394PROTOCOL______"></span> *1394Protocol*   
-The connection protocol to be used for the 1394 kernel connection. This can almost always be omitted, because the debugger will automatically choose the correct protocol. If you wish to set this manually, and the target computer is running Windows XP, *1394Protocol* should be set equal to "channel". If the target computer is running Windows Server 2003 or later, *1394Protocol* should be set equal to "instance". If it is omitted, the debugger will default to the protocol appropriate for the current target computer. This can only be specified through the command line or the environment variables, not through the WinDbg graphical interface.
-
 <span id="_______USBString______"></span><span id="_______usbstring______"></span><span id="_______USBSTRING______"></span> *USBString*   
-A USB connection string. This must match the string specified with the /targetname boot option. For more information, see [Setting Up a USB 3.0 Connection Manually](setting-up-a-usb-3-0-debug-cable-connection.md) and [Setting Up a USB 2.0 Connection Manually](setting-up-a-usb-2-0-debug-cable-connection.md).
+A USB connection string. This must match the string specified with the /targetname boot option. For more information, see [Setting up USB 3.0 xHCI-DBC kernel-mode debugging (KDUSB)](setting-up-a-usb-3-0-debug-cable-connection.md).
 
 <span id="_______ComPort______"></span><span id="_______comport______"></span><span id="_______COMPORT______"></span> *ComPort*   
 The name of the COM port. This can be in the format "com2" or in the format "\\\\.\\com2", but should not simply be a number. For more information, see [Setting Up a Serial Connection Manually](setting-up-a-null-modem-cable-connection.md).
@@ -109,8 +103,21 @@ Causes the debugger to automatically disconnect and reconnect the pipe if a read
 <span id="_______-kl"></span><span id="_______-KL"></span> -kl  
 Causes the debugger to perform local kernel-mode debugging. For more information, see [Local Kernel-Mode Debugging](performing-local-kernel-debugging.md).
 
-## <span id="Examples"></span><span id="examples"></span><span id="EXAMPLES"></span>Examples
+## Previous version parameters
 
+> [!IMPORTANT]
+> The 1394 transport is available for use in Windows 10, version 1607 and earlier. 
+> It is not available in later versions of Windows. You should transition your projects to other transports, such as KDNET using Ethernet. 
+> For more information about that transport, see [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md).
+>
+
+<span id="_______1394Channel______"></span><span id="_______1394channel______"></span><span id="_______1394CHANNEL______"></span> *1394Channel*   
+The 1394 channel number. Valid channel numbers are any integer between 0 and 62, inclusive. *1394Channel* must match the number used by the target computer, but does not depend on the physical 1394 port chosen on the adapter. 
+
+<span id="_______1394Protocol______"></span><span id="_______1394protocol______"></span><span id="_______1394PROTOCOL______"></span> *1394Protocol*   
+The connection protocol to be used for the 1394 kernel connection. This can almost always be omitted, because the debugger will automatically choose the correct protocol. If you wish to set this manually, and the target computer is running Windows XP, *1394Protocol* should be set equal to "channel". If the target computer is running Windows Server 2003 or later, *1394Protocol* should be set equal to "instance". If it is omitted, the debugger will default to the protocol appropriate for the current target computer. This can only be specified through the command line or the environment variables, not through the WinDbg graphical interface.
+
+## Examples
 
 The following batch file could be used to set up and start a debugging session over a COM port connection.
 
@@ -133,7 +140,7 @@ The following command lines could be used to start WinDbg without any environmen
 **windbg -y d:\\mysymbols -k net:port=50000,key=AutoGeneratedKey,target=TargetIPAddress**
 
 
-## <span id="related_topics"></span>See also
+## See also
 
 
 [**WinDbg Command-Line Options**](windbg-command-line-options.md)

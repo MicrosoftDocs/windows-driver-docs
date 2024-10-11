@@ -1,7 +1,7 @@
 ---
 title: Kernel-Mode Environment Variables
 description: Kernel-Mode Environment Variables
-keywords: ["environment variables, kernel-mode", "_NT_DEBUG_PORT environment variable", "_NT_DEBUG_BAUD_RATE environment variable", "KDQUIET environment variable", "_NT_DEBUG_CACHE_SIZE environment variable", "_NT_DEBUG_BUS environment variable", "_NT_DEBUG_1394_CHANNEL environment variable", "_NT_DEBUG_1394_SYMLINK environment variable", "_NT_DEBUG_OPTIONS environment variable"]
+keywords: ["environment variables, kernel-mode", "_NT_DEBUG_PORT environment variable", "_NT_DEBUG_BAUD_RATE environment variable", "KDQUIET environment variable", "_NT_DEBUG_CACHE_SIZE environment variable", "_NT_DEBUG_BUS environment variable", "_NT_DEBUG_OPTIONS environment variable"]
 ms.date: 05/23/2017
 ---
 
@@ -32,18 +32,6 @@ The following table lists the environment variables that are used only in kernel
 <tr class="even">
 <td align="left"><p>_NT_DEBUG_BAUD_RATE = <em>BaudRate</em></p></td>
 <td align="left"><p>Specifies the baud rate to be used over the COM port connection.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>_NT_DEBUG_BUS = 1394</p></td>
-<td align="left"><p>Specifies that kernel debugging will be done over a 1394 cable connection.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>_NT_DEBUG_1394_CHANNEL = <em>1394Channel</em></p></td>
-<td align="left"><p>Specifies the channel to be used for the 1394 kernel connection.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>_NT_DEBUG_1394_SYMLINK = <em>Protocol</em></p></td>
-<td align="left"><p>Specifies the connection protocol to be used for the 1394 kernel connection.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>KDQUIET =<em>Anything</em></p></td>

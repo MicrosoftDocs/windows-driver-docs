@@ -1,10 +1,10 @@
 ---
-title: Set Up Kernel-Mode Debugging Over a USB 3.0 Cable
-description: Learn how to manually set up kernel-mode debugging over a USB 3.0 cable.
-ms.date: 12/11/2023
+title: Setting up USB 3.0 xHCI kernel-mode debugging (KDUSB xHCI-DBC USB 3.0)
+description: Learn how to manually set up xHCI kernel-mode debugging over a USB 3.0 cable. (KDUSB xHCI-DBC USB 3.0)
+ms.date: 10/09/2024
 ---
 
-# Set up kernel-mode debugging over a USB 3.0 cable
+# Setting up USB 3.0 xHCI kernel-mode debugging (KDUSB xHCI-DBC USB 3.0)
 
 Debugging Tools for Windows supports kernel-mode debugging over a USB 3.0 cable. This article describes how to manually set up USB 3.0 debugging.
 
@@ -12,15 +12,23 @@ The computer that runs the debugger is called the *host computer*, and the compu
 
 Debugging over a USB 3.0 cable requires the following hardware:
 
-- A USB 3.0 debug cable, which is an A-A crossover cable that has two male type-A plugs and no Vbus connection
 - On the host computer, an xHCI (USB 3.0) host controller
 - On the target computer, an xHCI (USB 3.0) host controller that supports debugging
+- The target computer USB host controller must support the Intel xHCI-Debug Capability Interface (DBC). For more information refer to xHCI specification available on the Intel Web site.
+
+## Cable requirements
+
+- An orange Microsoft USB debug cable, which is an A-A crossover cable that has two male type-A plugs and no Vbus connection. This cable is available from vendors such as DataPro - *USB 3.0 Super-Speed A/A Debugging Cable*.
 
 To simplify the troubleshooting, connect the cable directly between the target and host computer, avoiding any hubs or docking stations.
 
+## Binary transport files
+
+The kdstub.dll is used to support the KDUSB xHCI-DBC USB 3.0 debugger transport.
+
 ## Set up the target computer
 
-1. On the target computer, launch the *UsbView* tool. The UsbView tool is included in Debugging Tools for Windows.
+1. On the target computer, launch the *UsbView* tool. The UsbView tool is included in Debugging Tools for Windows. For an x64 system, UsbView would be located in *C:\\Program Files (x86)\\Windows Kits\\10\\Tools\\kitversion\\x64\\usbview.exe*.
 2. In UsbView, locate all of the xHCI host controllers.
 3. In UsbView, expand the nodes of the xHCI host controllers. Look for an indication that a port on the host controller supports debugging.
 
@@ -146,6 +154,39 @@ reg add HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\usbflags\045E0656000
 
 Then, remove and reinsert the debug cable.
 
+### Connection retries messages on the debugger console windows and cannot break-in into the target - SkipPciProbeDebugDevice
+
+If you encounter the following message in KDNET debugger console, cannot initiate a break-in into the target, or experience issues with certain commands (e.g., kdfiles), it may be due to KDNET receiving an out-of-sequence ping packet."
+
+```console
+... Retry sending the same data packet for 128 times.
+
+The transport connection between host kernel debugger and target Windows seems lost.
+please try resync with target, recycle the host debugger, or reboot the target Windows.
+```
+
+This issue can happen because the pci.sys driver is incorrectly probing the debug device. To eliminate the errors, create the following registry entry on the TARGET device at an administrator command prompt.
+
+```console
+reg add HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\SERVICES\kdnet /v SkipPciProbeDebugDevice /t REG_DWORD /d 1 /f
+```
+
+Then restart the target machine.
+
+```console
+shutdown /r /t 0
+```
+
+Once the device reboots then the errors should disappear, and commands should work as expected.
+
 ## See also
 
 [Set up kernel-mode debugging manually](setting-up-kernel-mode-debugging-in-windbg--cdb--or-ntsd.md)
+
+[Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md)
+
+[Setting Up KDNET Network Kernel Debugging Manually](setting-up-a-network-debugging-connection.md)
+
+[Setting Up USB KDNET EEM Kernel-Mode Debugging (KDNET-EEM-USB)](setting-up-kernel-mode-debugging-over-usb-eem-arm-kdnet.md) 
+
+[Setting up USB KDNET kernel-mode debugging (KDNET-USB)](setting-up-a-kdnet-usb-connection.md)

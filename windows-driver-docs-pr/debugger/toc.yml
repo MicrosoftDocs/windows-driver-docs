@@ -35,8 +35,12 @@
         href: attaching-to-a-virtual-machine--kernel-mode-.md
       - name: "Setting Up Local Kernel Debugging of a Single Computer Manually"
         href: setting-up-local-kernel-debugging-of-a-single-computer-manually.md
-      - name: "Setting Up Kernel-Mode Debugging over a Serial Cable Manually"
-        href: setting-up-a-null-modem-cable-connection.md
+      - name: "Setting Up USB KDNET EEM Kernel-Mode Debugging (KDNET-EEM-USB)"
+        href: setting-up-kernel-mode-debugging-over-usb-eem-arm-kdnet.md
+      - name: "Setting up USB KDNET Kernel-Mode Debugging (KDNET-USB)"
+        href: setting-up-a-kdnet-usb-connection.md        
+      - name: "Setting up USB 3.0 xHCI-DBC Kernel-Mode Debugging (KDUSB)"
+        href: setting-up-a-usb-3-0-debug-cable-connection.md
       - name: "Setting Up 2PF Kernel-Mode Debugging using KDNET"
         href: setting-up-kernel-mode-debugging-using-2pf.md
       - name: "Setting Up QEMU Kernel-Mode Debugging using EXDI"
@@ -47,14 +51,8 @@
         href: linux-live-remote-process-debugging.md
       - name: "Linux symbols and sources"
         href: linux-dwarf-symbols.md             
-      - name: "Setting Up Kernel-Mode Debugging over USB EEM on an ARM device using KDNET"
-        href: setting-up-kernel-mode-debugging-over-usb-eem-arm-kdnet.md
-      - name: "Setting Up Kernel-Mode Debugging over a USB 3.0 Cable Manually"
-        href: setting-up-a-usb-3-0-debug-cable-connection.md
-      - name: "Setting Up Kernel-Mode Debugging over a USB 2.0 Cable Manually"
-        href: setting-up-a-usb-2-0-debug-cable-connection.md
-      - name: "Setting Up Kernel-Mode Debugging over a 1394 Cable Manually"
-        href: setting-up-a-1394-cable-connection.md
+      - name: "Setting Up Kernel-Mode Debugging over a Serial Cable Manually"
+        href: setting-up-a-null-modem-cable-connection.md
     - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 10"
       href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-10.md
     - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 11"
