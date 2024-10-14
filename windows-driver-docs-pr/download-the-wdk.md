@@ -6,12 +6,12 @@ keywords:
 - WDK
 - Download
 - drivers
-ms.date: 09/15/2024
+ms.date: 10/10/2024
 ---
 
 # Download the Windows Driver Kit (WDK)
 
-The WDK is used to develop, test, and deploy drivers for Windows. The most recent public release is WDK 10.0.26100.1591 (released September 18, 2024).
+The WDK is used to develop, test, and deploy drivers for Windows. The most recent public release is WDK 10.0.26100.1882 (released October 14, 2024).
 
 - You can install and run this WDK on Windows 7 and later.
 
@@ -67,15 +67,14 @@ When you install Visual Studio 2022, select the **Desktop development with C++**
 
 ## ![download icon for SDK](images/download-install.png) Step 2: Install SDK
 
-Installing Visual Studio will not download the latest SDK version, use the following link to install SDK:
-
-- [Download Windows SDK 10.0.26100.1742](https://go.microsoft.com/fwlink/?linkid=2286561)
+Installing Visual Studio will not download the latest SDK version, use the following link to install 
+- [Download Windows SDK 10.0.26100.1742](https://developer.microsoft.com/windows/downloads/windows-sdk/)
 
 The provided links for the SDK and the WDK have matching build numbers, which is always required for the kits to work together. If you decide to install your own SDK/WDK pair, perhaps for a different Windows version, ensure that the build numbers match. For more details, see [Kit versioning](#kit-versioning).
 
 ## ![download icon for WDK](images/download-install.png) Step 3: Install WDK
 
-- [Download WDK 10.0.26100.1591](https://go.microsoft.com/fwlink/?linkid=2286137)
+- [Download WDK 10.0.26100.1882](https://go.microsoft.com/fwlink/?linkid=2290025)
 
 The WDK Visual Studio extension is included in the default WDK installation.
 
@@ -94,7 +93,7 @@ The latest public version of the EWDK contains Visual Studio 2022 Build Tools 17
 
 The EWDK also requires the .NET Framework version 4.7.2. For more information about other requirements for the .NET Framework, see [.NET Framework system requirements](/dotnet/framework/get-started/system-requirements).
 
-- [Download EWDK 10.0.26100.1591 with Visual Studio Build Tools](/legal/windows/hardware/enterprise-wdk-license-2022)
+- [Download EWDK 10.0.26100.1882 with Visual Studio Build Tools](/legal/windows/hardware/enterprise-wdk-license-2022)
 
 Once you have downloaded the ISO, use these steps to set up your build environment:
 

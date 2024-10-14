@@ -8,7 +8,7 @@ keywords:
 - winget
 - install
 - download
-ms.date: 09/18/2024
+ms.date: 10/9/2024
 ---
 
 # Install the WDK using WinGet
@@ -19,7 +19,7 @@ Refer to the [WinGet install documentation](/windows/package-manager/winget/#ins
 
 ## Install the latest WDK step by step using WinGet
 
-The latest version of the WDK is 10.0.26100.1591. It requires Visual Studio 2022 and Windows SDK 10.0.26100.1 For more info, see [Kit versioning](./download-the-wdk.md#kit-versioning).
+The latest version of the WDK is 10.0.26100.1882. It requires Visual Studio 2022 and Windows SDK 10.0.26100.1742 For more info, see [Kit versioning](./download-the-wdk.md#kit-versioning).
 
 ### Step 1: Install Visual Studio 2022
 
