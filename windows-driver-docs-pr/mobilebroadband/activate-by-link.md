@@ -6,7 +6,7 @@ ms.date: 08/16/2024
 
 # Use a QR code or URI link to download an eSIM profile
 
-Starting in Windows 11 23H2, functionality was added to recognize and properly handle URIs starting with the scheme name: *lpa:*. Supporting *lpa:* URIs enables Windows to scan eSIM QR codes from the Windows camera app or any non-Microsoft app that can scan QR codes. Mobile operators can also embed *lpa:* URIs into a webpage or email.
+Starting in Windows 11 24H2, functionality was added to recognize and properly handle URIs starting with the scheme name: *lpa:*. Supporting *lpa:* URIs enables Windows to scan eSIM QR codes from the Windows camera app or any non-Microsoft app that can scan QR codes. Mobile operators can also embed *lpa:* URIs into a webpage or email.
 
 ## What is a *lpa:* URI?
 
