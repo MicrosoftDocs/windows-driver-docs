@@ -1,12 +1,12 @@
 ---
 title: Microsoft Bluetooth Test Platform - BM-64-EVB-C2 Board
 description: Bluetooth Test Platform (BTP) supported hardware (BM64).
-ms.date: 09/17/2024
+ms.date: 10/14/2024
 ---
 
 # BM-64-EVB-C2 board
 
-The BM64 is a dual-mode Bluetooth v5.0 radio designed for use in headsets, speakers, or multi-speaker peripherals. More information can be found via the BM64 page from [Microchip Technology Incorporated](https://www.microchip.com/wwwproducts/en/BM64). The BM-64-EVB-C2 allows the BM64 to be utilized as a stand-alone device, allowing for connection to a test machine without the need for a Traduci. More information can be found on the [Microchip Technology BM-64-EVB-C2](https://www.digikey.com/en/products/detail/microchip-technology/BM-64-EVB-C2/6152245) page.
+The BM64 is a dual-mode Bluetooth v5.0 radio designed for use in headsets, speakers, or multi-speaker peripherals. More information can be found via the BM64 page from [Microchip Technology Incorporated](https://www.microchip.com/wwwproducts/en/BM64). The BM-64-EVB-C2 allows the BM64 to be utilized as a stand-alone device, allowing for connection to a test machine without the need for a Traduci. More information can be found on the [Microchip Technology BM-64-EVB-C2](https://www.microchip.com/development-tool/BM-64-EVB-C2) page.
 
 | Device Name | Parameter | Usage Example |
 |--|--|--|
