@@ -180,6 +180,6 @@ Read an overview of tests in the Hardware Certification Kit that enable hardware
 
 - [USB-IF device class drivers](supported-usb-classes.md): Lists the Microsoft-provided drivers for the supported USB device classes. Windows provides in-box device class drivers for many USB-IF approved device classes, audio, mass storage, and so on.
 
-- [USB generic function driver–WinUSB](winusb.md): WinUSB is a generic driver for USB devices that is included with all versions of Windows since Windows Vista. Windows provides Winusb.sys that can be loaded as a function driver for a custom device and a function of a composite device.
+- [USB generic function driver–WinUSB](introduction-to-winusb-for-developers.md): WinUSB is a generic driver for USB devices that is included with all versions of Windows since Windows Vista. Windows provides Winusb.sys that can be loaded as a function driver for a custom device and a function of a composite device.
 
 - [USB generic parent driver for composite devices–Usbccgp](usb-common-class-generic-parent-driver.md): Parent driver for USB devices with multiple functions. Usbccgp creates physical device objects (PDOs) for each of those functions. Those individual PDOs manage their respective USB function drivers, which could be the Winusb.sys driver or a USB device class driver.

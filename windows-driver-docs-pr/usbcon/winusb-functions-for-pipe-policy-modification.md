@@ -48,4 +48,4 @@ The following table identifies best practices for how to use each of the pipe po
 - [WinUSB functions](using-winusb-api-to-communicate-with-a-usb-device.md)
 - **[WinUsb_GetPipePolicy](/windows/win32/api/winusb/nf-winusb-winusb_getpipepolicy)**
 - **[WinUsb_SetPipePolicy](/windows/win32/api/winusb/nf-winusb-winusb_setpipepolicy)**
-- [WinUSB](winusb.md)
+- [Introduction to WinUSB for Developers](introduction-to-winusb-for-developers.md)

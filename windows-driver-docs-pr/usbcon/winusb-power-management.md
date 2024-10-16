@@ -57,6 +57,6 @@ All writes and control transfers force the device into the **D0** power state an
 - [How to Access a USB Device by Using WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md)
 - [WinUSB Functions for Pipe Policy Modification](winusb-functions-for-pipe-policy-modification.md)
 - [WinUSB functions](using-winusb-api-to-communicate-with-a-usb-device.md)
-- [WinUSB](winusb.md)
+- [Introduction to WinUSB for Developers](introduction-to-winusb-for-developers.md)
 - **[WinUsb_GetPowerPolicy](/windows/win32/api/winusb/nf-winusb-winusb_getpowerpolicy)**
 - **[WinUsb_SetPowerPolicy](/windows/win32/api/winusb/nf-winusb-winusb_setpowerpolicy)**

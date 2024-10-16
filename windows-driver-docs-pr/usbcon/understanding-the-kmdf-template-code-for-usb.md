@@ -578,6 +578,6 @@ When the framework invokes the client driver's event callback, it passes a handl
 ## Related topics
 
 - [Getting started with USB client driver development](getting-started-with-usb-client-driver-development.md)
-- [WinUSB](winusb.md)
+- [Introduction to WinUSB for Developers](introduction-to-winusb-for-developers.md)
 - [Write your first USB client driver (UMDF)](implement-driver-entry-for-a-usb-driver--umdf-.md)
 - [Write your first USB client driver (KMDF)](tutorial--write-your-first-usb-client-driver--kmdf-.md)

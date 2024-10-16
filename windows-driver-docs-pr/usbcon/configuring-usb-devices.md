@@ -32,7 +32,7 @@ Certain restrictions apply if a client driver is using WDF objects or whether th
 
 - A client driver for a composite device that manages interfaces or interface collections through the [USB Generic Parent Driver](./usb-common-class-generic-parent-driver.md) (Usbccgp.sys) cannot change the device's configuration value. However, the client driver can configure Usbccgp.sys to select a configuration other than the first (default) configuration. For more information, see [Configuring Usbccgp.sys to Select a Non-Default USB Configuration](./selecting-the-configuration-for-a-multiple-interface--composite--usb-d.md).
 - A KMDF-based client driver that is using the framework's [USB I/O Targets](../wdf/usb-i-o-targets.md) can select only the first configuration.
-- [WinUSB](winusb.md) supports only the first configuration.
+- [WinUSB](introduction-to-winusb-for-developers.md) supports only the first configuration.
 - A class driver frequently lacks support for multiple configurations. If your device implements a class that is defined by a USB class specification, see the [USB technology](https://www.usb.org/defined-class-codes) website for information about device classes and class specifications. Microsoft provides class drivers for the supported USB device classes. For more information, see [Drivers for the Supported USB Device Classes](./supported-usb-classes.md).
 
 ## Related topics
