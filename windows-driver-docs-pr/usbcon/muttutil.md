@@ -40,7 +40,7 @@ DEVICE : 1 : USB\VID_045E&PID_078E&REV_8011 : 28           :
 Return value: 1
 ```
 
-The preceding command indicates that the system has a SuperMUTT (1) and a MUTT Pack (0) attached. The Microsoft-provided kernel mode driver, Winusb.sys, is the function driver for the SuperMUTT device. For information about Winusb.sys, see [WinUSB](winusb.md).
+The preceding command indicates that the system has a SuperMUTT (1) and a MUTT Pack (0) attached. The Microsoft-provided kernel mode driver, Winusb.sys, is the function driver for the SuperMUTT device. For information about Winusb.sys, see [Introduction to WinUSB for Developers](introduction-to-winusb-for-developers.md).
 
 PROBLEM CODE 28 for the MUTT Pack device indicates that no driver is loaded for the device.
 

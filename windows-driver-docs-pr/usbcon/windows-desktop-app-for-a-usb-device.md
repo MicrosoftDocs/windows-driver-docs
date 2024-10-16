@@ -6,7 +6,7 @@ ms.date: 01/17/2024
 
 # Windows desktop app for a USB device
 
-In this article, you'll learn about how an application can call [WinUSB functions](using-winusb-api-to-communicate-with-a-usb-device.md) to communicate with a USB device. For such an application, [WinUSB](winusb.md) (Winusb.sys) must be installed as the device's function driver. WinUSB in the device's kernel-mode stack. This driver is included in Windows in the \\Windows\\System32\\drivers folder.
+In this article, you'll learn about how an application can call [WinUSB functions](using-winusb-api-to-communicate-with-a-usb-device.md) to communicate with a USB device. For such an application, [WinUSB](introduction-to-winusb-for-developers.md) (Winusb.sys) must be installed as the device's function driver. WinUSB in the device's kernel-mode stack. This driver is included in Windows in the \\Windows\\System32\\drivers folder.
 
 If you're using Winusb.sys as a USB device's function driver, you can call [WinUSB functions](using-winusb-api-to-communicate-with-a-usb-device.md) from an application to communicate with the device. These functions, exposed by the user-mode DLL Winusb.dll, simplify the communication process. Instead of constructing device I/O control requests to perform standard USB operations (such as configuring the device, sending control requests, and transferring data to or from the device), applications call the equivalent WinUSB function.
 

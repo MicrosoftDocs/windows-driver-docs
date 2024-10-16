@@ -158,7 +158,7 @@ The host starts the transaction with an OUT token packet (\#481). The purpose of
 
 - [Kernel-Mode Driver Framework](../wdf/index.md)
 - [User- Mode Driver Framework](../wdf/index.md)
-- [WinUSB](winusb.md)
+- [Introduction to WinUSB for Developers](introduction-to-winusb-for-developers.md)
 
 ## Prerequisites
 
@@ -188,7 +188,7 @@ You can obtain all that information from the official USB specification.
 
 If you are writing a UMDF driver, get the header file, Usb_hw.h from the UMDF Sample Driver for OSR USB Fx2 Learning Kit. This header file contains useful macros and structure for formatting the setup packet for the control transfer.
 
-All UMDF drivers must communicate with a kernel-mode driver in order to send and receive data from devices. For a USB UMDF driver, the kernel-mode driver is always the Microsoft-provided driver [WinUSB](winusb.md) (Winusb.sys).
+All UMDF drivers must communicate with a kernel-mode driver in order to send and receive data from devices. For a USB UMDF driver, the kernel-mode driver is always the Microsoft-provided driver [WinUSB](introduction-to-winusb-for-developers.md) (Winusb.sys).
 
 Whenever a UMDF driver makes a request for the USB driver stack, the Windows I/O manager sends the request to WinUSB. After receiving the request, WinUSB either processes the request or forwards it to the USB driver stack.
 

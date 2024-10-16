@@ -6,7 +6,7 @@ ms.date: 09/18/2024
 
 # WinUSB architecture and modules
 
-[WinUSB](winusb.md) consists of two primary components:
+[WinUSB](introduction-to-winusb-for-developers.md) consists of two primary components:
 
 - Winusb.sys is a kernel-mode driver that can be installed as either a filter or function driver, above the protocol drivers in a USB device's kernel-mode device stack.
 - Winusb.dll is a user-mode DLL that exposes [WinUSB functions](using-winusb-api-to-communicate-with-a-usb-device.md). Applications can use these functions to communicate with Winusb.sys when it's installed as a device's function driver.
@@ -34,4 +34,4 @@ Any user-mode application can communicate with the USB stack by loading the WinU
 - [WinUSB Functions for Pipe Policy Modification](winusb-functions-for-pipe-policy-modification.md)
 - [WinUSB Power Management](winusb-power-management.md)
 - [WinUSB functions](using-winusb-api-to-communicate-with-a-usb-device.md)
-- [WinUSB](winusb.md)
+- [Introduction to WinUSB for Developers](introduction-to-winusb-for-developers.md)

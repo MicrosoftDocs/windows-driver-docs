@@ -33,7 +33,7 @@ You might *not* need to write a driver if:
 
 - Your device does not belong to a device class.
 
-    For such devices, evaluate the device features to determine whether you can load the Microsoft-provided [WinUSB](winusb.md) (Winusb.sys) as the device's function driver. Using WinUSB is the best solution if:
+    For such devices, evaluate the device features to determine whether you can load the Microsoft-provided [WinUSB](introduction-to-winusb-for-developers.md) (Winusb.sys) as the device's function driver. Using WinUSB is the best solution if:
 
   - Your device is accessed by a single application.
   - Your device supports bulk, interrupt, or isochronous endpoints.
@@ -127,6 +127,6 @@ All client SKUs of the 32-bit versions of Windows XP with SP2support WinUSB. Wi
 ## Related topics
 
 - [Getting started with USB client driver development](getting-started-with-usb-client-driver-development.md)
-- [WinUSB](winusb.md)
+- [Introduction to WinUSB for Developers](introduction-to-winusb-for-developers.md)
 - [Write your first USB client driver (UMDF)](implement-driver-entry-for-a-usb-driver--umdf-.md)
 - [Write your first USB client driver (KMDF)](tutorial--write-your-first-usb-client-driver--kmdf-.md)

@@ -6,7 +6,7 @@ ms.date: 07/15/2024
 
 # WinUSB (Winusb.sys) installation for developers
 
-For certain Universal Serial Bus (USB) devices, you can install [WinUSB](winusb.md) (*Winusb.sys*) instead of implementing a driver.
+For certain Universal Serial Bus (USB) devices, you can install [WinUSB](introduction-to-winusb-for-developers.md) (*Winusb.sys*) instead of implementing a driver.
 
 > [!IMPORTANT]
 > This topic is for programmers. If you are a customer experiencing USB problems, see [Fix USB-C problems in Windows](https://support.microsoft.com/windows/fix-usb-c-problems-in-windows-f4e0e529-74f5-cdae-3194-43743f30eed2)
@@ -284,4 +284,4 @@ Make sure that the driver package contents meet these requirements:
 - [WinUSB Power Management](winusb-power-management.md)
 - [WinUSB Functions for Pipe Policy Modification](winusb-functions-for-pipe-policy-modification.md)
 - [WinUSB functions](using-winusb-api-to-communicate-with-a-usb-device.md)
-- [WinUSB](winusb.md)
+- [Introduction to WinUSB for Developers](introduction-to-winusb-for-developers.md)
