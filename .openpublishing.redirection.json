@@ -1,6 +1,391 @@
 {
     "redirections": [
     {
+      "source_path": "windows-driver-docs-pr/ifs/about-file-system-legacy-filter-drivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/about-file-system-legacy-filter-drivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/what-happens-to-file-systems-during-system-boot.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/what-happens-to-file-systems-during-system-boot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/storage-device-stacks--storage-volumes--and-file-system-stacks.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/storage-device-stacks--storage-volumes--and-file-system-stacks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/how-the-volume-is-recognized.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/how-the-volume-is-recognized",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/how-the-volume-is-mounted.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/how-the-volume-is-mounted",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/volume-mount-example.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/volume-mount-example",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/installing-a-file-system-filter-driver.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/installing-a-file-system-filter-driver",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/creating-an-inf-file-for-a-file-system-filter-driver.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/creating-an-inf-file-for-a-file-system-filter-driver",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/load-order-groups-for-file-system-filter-drivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/load-order-groups-for-file-system-filter-drivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/file-system-filter-driver-classes-and-class-guids.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/file-system-filter-driver-classes-and-class-guids",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/using-an-inf-file-to-install-a-file-system-filter-driver.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/using-an-inf-file-to-install-a-file-system-filter-driver",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/using-an-inf-file-to-uninstall-a-file-system-filter-driver.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/using-an-inf-file-to-uninstall-a-file-system-filter-driver",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/initializing-a-file-system-filter-driver.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/initializing-a-file-system-filter-driver",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/creating-the-control-device-object.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/creating-the-control-device-object",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/registering-irp-dispatch-routines.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/registering-irp-dispatch-routines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/registering-fast-i-o-dispatch-routines.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/registering-fast-i-o-dispatch-routines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/registering-fsfilter-callback-routines.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/registering-fsfilter-callback-routines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/performing-any-other-needed-initialization.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/performing-any-other-needed-initialization",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/-optional--registering-callback-routines.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/-optional--registering-callback-routines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/-optional--saving-a-copy-of-the-registry-path-string.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/-optional--saving-a-copy-of-the-registry-path-string",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/returning-status.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/returning-status",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/attaching-a-filter-to-a-file-system-or-volume.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/attaching-a-filter-to-a-file-system-or-volume",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/creating-the-filter-device-object.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/creating-the-filter-device-object",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/attaching-the-filter-device-object-to-the-target-device-object.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/attaching-the-filter-device-object-to-the-target-device-object",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/propagating-the-do-buffered-io-and-do-direct-io-flags.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/propagating-the-do-buffered-io-and-do-direct-io-flags",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/propagating-the-file-device-secure-open-flag.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/propagating-the-file-device-secure-open-flag",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/clearing-the-do-device-initializing-flag.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/clearing-the-do-device-initializing-flag",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/filtering-irps-and-fast-i-o.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/filtering-irps-and-fast-i-o",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/irps-are-different-from-fast-i-o.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/irps-are-different-from-fast-i-o",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/types-of-device-objects-used-by-file-system-filter-drivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/types-of-device-objects-used-by-file-system-filter-drivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/the-filter-driver-s-control-device-object.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/the-filter-driver-s-control-device-object",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/filter-device-object-attached-to-a-file-system.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/filter-device-object-attached-to-a-file-system",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/filter-device-object-attached-to-a-volume.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/filter-device-object-attached-to-a-volume",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/writing-irp-dispatch-routines.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/writing-irp-dispatch-routines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/completing-the-irp.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/completing-the-irp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/passing-the-irp-down-to-lower-level-drivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/passing-the-irp-down-to-lower-level-drivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/returning-status-from-dispatch-routines.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/returning-status-from-dispatch-routines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/example--passing-the-irp-down-without-setting-a-completion-routine.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/example--passing-the-irp-down-without-setting-a-completion-routine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/constraints-on-dispatch-routines.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/constraints-on-dispatch-routines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/dispatch-routine-irql-and-thread-context.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/dispatch-routine-irql-and-thread-context",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/using-irp-completion-routines.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/using-irp-completion-routines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/how-completion-processing-is-performed.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/how-completion-processing-is-performed",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/checking-the-pendingreturned-flag.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/checking-the-pendingreturned-flag",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/returning-status-from-completion-routines.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/returning-status-from-completion-routines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/example--simple-pass-through-dispatch-and-completion.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/example--simple-pass-through-dispatch-and-completion",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/constraints-on-completion-routines.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/constraints-on-completion-routines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/irp-major-function-codes-fs-filters.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/irp-major-function-codes-fs-filters",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/irp-mj-cleanup.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/irp-mj-cleanup",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/irp-mj-close.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/irp-mj-close",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/irp-mj-create.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/irp-mj-create",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/irp-mj-create-mailslot.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/irp-mj-create-mailslot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/irp-mj-create-named-pipe.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/irp-mj-create-named-pipe",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/irp-mj-device-control.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/irp-mj-device-control",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/irp-mj-directory-control.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/irp-mj-directory-control",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/irp-mj-file-system-control.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/irp-mj-file-system-control",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/irp-mj-flush-buffers.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/irp-mj-flush-buffers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/irp-mj-internal-device-control.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/irp-mj-internal-device-control",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/irp-mj-lock-control.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/irp-mj-lock-control",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/irp-mj-pnp.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/irp-mj-pnp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/irp-mj-query-ea.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/irp-mj-query-ea",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/irp-mj-query-information.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/irp-mj-query-information",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/irp-mj-query-quota.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/irp-mj-query-quota",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/irp-mj-query-security.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/irp-mj-query-security",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/irp-mj-query-volume-information.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/irp-mj-query-volume-information",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/irp-mj-read.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/irp-mj-read",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/irp-mj-set-ea.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/irp-mj-set-ea",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/irp-mj-set-information.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/irp-mj-set-information",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/irp-mj-set-quota.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/irp-mj-set-quota",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/irp-mj-set-security.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/irp-mj-set-security",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/irp-mj-set-volume-information.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/irp-mj-set-volume-information",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/irp-mj-shutdown.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/irp-mj-shutdown",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/irp-mj-write.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/irp-mj-write",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/file-streams--stream-contexts--and-per-stream-contexts.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/file-streams--stream-contexts--and-per-stream-contexts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/creating-a-per-stream-context.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/creating-a-per-stream-context",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/associating-a-per-stream-context-with-a-file-stream.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/associating-a-per-stream-context-with-a-file-stream",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/deleting-a-per-stream-context.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/deleting-a-per-stream-context",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ifs/tracking-per-file-context-in-a-legacy-file-system-filter-driver.md",
+      "redirect_url": "/previous-versions/windows/drivers/ifs/tracking-per-file-context-in-a-legacy-file-system-filter-driver",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows-driver-docs-pr/install/managing-the-digital-signature-or-code-signing-keys.md",
       "redirect_url": "/windows-hardware/drivers/install/importance-of-protecting-authenticode-signing-keys",
       "redirect_document_id": false
