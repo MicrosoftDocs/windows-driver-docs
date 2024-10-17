@@ -1,10 +1,10 @@
 ---
-title: Supported Ethernet NICs for Network Kernel Debugging in Windows 11 23H2
-description: Learn about kernel debugging over an Ethernet network cable when the target computer is running Windows 11 23H2.
-ms.date: 10/15/2024
+title: Supported Ethernet NICs for Network Kernel Debugging in Windows 11 22H2
+description: Learn about kernel debugging over an Ethernet network cable when the target computer is running Windows 11 22H2.
+ms.date: 10/14/2024
 ---
 
-# Supported Ethernet NICs for Network Kernel Debugging in Windows 11 23H2
+# Supported Ethernet NICs for Network Kernel Debugging in Windows 11 22H2
 
 To do kernel debugging over an Ethernet network cable, the target computer must have a supported network interface card (NIC).
 
@@ -16,7 +16,7 @@ To do kernel debugging over a network cable, the target computer must have a sup
 
 This topic lists the supported adapters for the following versions of Windows
 
-- Windows 11, 23H2 Build 22631
+- Windows 11, 22H2 Build 22621
 
 For information about Windows 11 versions, see [Windows 11 release information](/windows/release-health/windows11-release-information).
 
@@ -251,6 +251,9 @@ For vendor ID 8086, these device IDs are supported:
 2159
 294C
 8976
+
+*New in Windows 11 21H2 build 22000*
+
 1572
 1574
 1580
@@ -283,6 +286,9 @@ For vendor ID 8086, these device IDs are supported:
 550B
 550C
 550D
+
+*New in Windows 11 22H2 build 22621*
+
 550E
 550F
 5510
@@ -328,6 +334,9 @@ For vendor ID 10EC, these device IDs are supported:
 8168
 8169
 8225
+
+*New in Windows 11 22H2 build 22621*
+
 8126
 8162
 5000
@@ -464,6 +473,9 @@ For vendor ID 14E4, these device IDs are supported:
 170E
 170F
 D802
+
+*New in Windows 11 21H2 build 22000*
+
 1041
 1042
 1043
@@ -506,6 +518,7 @@ D82C
 D82D
 D82E
 D82F
+
 
 ### Vendor ID 1969, Atheros Communications
 
@@ -620,17 +633,11 @@ For vendor ID 1137, these device IDs are supported:
 
 ### Vendor ID 1414, Microsoft Corporation
 
+*New in Windows 11 22H2 build 22621*
+
 For vendor ID 1414, these device IDs are supported:
 
 00B9
-
-### Vendor ID 15AD, VMware Inc
-
-*New in Windows 23H2*
-
-For vendor ID 15AD, these device IDs are supported:
-
-07B0
 
 ## XML Supported NIC List
 
@@ -1232,11 +1239,6 @@ This is the same information shown above in the XML format.
       <deviceid build="25500">00B9</deviceid>
   </NIC>
 
-  <NIC>
-    <manufacturer>15AD</manufacturer>
-      <deviceid build="26006">07B0</deviceid>
-  </NIC>
-
 </SupportedNetworkInterfaceCards>
 ```
 
@@ -1247,7 +1249,5 @@ This is the same information shown above in the XML format.
 [Setting Up KDNET Network Kernel Debugging Manually](setting-up-a-network-debugging-connection.md)
 
 [Supported Ethernet NICs for Network Kernel Debugging in Windows 11 21H2](supported-ethernet-nics-for-network-kernel-debugging-in-windows-11-21h2.md)
-
-[Supported Ethernet NICs for Network Kernel Debugging in Windows 11 22H2](supported-ethernet-nics-for-network-kernel-debugging-in-windows-11-22h2.md)
 
 [Supported Ethernet NICs for Network Kernel Debugging in Windows 10](supported-ethernet-nics-for-network-kernel-debugging-in-windows-10.md)
