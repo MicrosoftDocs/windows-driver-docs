@@ -9,11 +9,11 @@ ms.date: 08/26/2024
 
 A stack overflow is an error that user-mode threads can encounter. There are three possible causes for this error:
 
--   A thread uses the entire stack reserved for it. This is often caused by infinite recursion.
+- A thread uses the entire stack reserved for it. This is often caused by infinite recursion.
 
--   A thread cannot extend the stack because the page file is maxed out, and therefore no additional pages can be committed to extend the stack.
+- A thread cannot extend the stack because the page file is maxed out, and therefore no additional pages can be committed to extend the stack.
 
--   A thread cannot extend the stack because the system is within the brief period used to extend the page file.
+- A thread cannot extend the stack because the system is within the brief period used to extend the page file.
 
 When a function running on a thread allocates local variables, the variables are put on the thread's call stack. The amount of stack space required by the function could be as large as the sum of the sizes of all the local variables. However, the compiler usually performs optimizations that reduce the stack space required by a function. For example, if two variables are in different scopes, the compiler can use the same stack memory for both of those variables. The compiler might also be able to eliminate some local variables entirely by optimizing calculations.
 
@@ -177,7 +177,7 @@ Looking at a 32 bit version of the _TEB structure, it indicates that the second 
 Evaluate expression: 16384 = 00004000 
 ```
 
-This shows that the stack size is 16 K. The maximum stack size is stored in the field **DeallocationStack**. After some calculation, you can determine that this field's offset is 0xE0C.
+This shows that the stack size is 16 K. The maximum stack size is stored in the field **DeallocationStack**, which is part of this TEB structure. The `DeallocationStack` field indicates the base of the stack. After some calculation, you can determine that this field's offset is 0xE0C.
 
 ```dbgcmd
 0:002> dd 7ffdc000+e0c L1 
