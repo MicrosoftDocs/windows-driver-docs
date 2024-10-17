@@ -10,7 +10,7 @@ ms.date: 01/11/2021
 
 This [CodeQL query](./static-tools-and-codeql.md) has high precision, which helps in bug automation, but has some limitations and therefore will not be able to detect all cases of UseAfterFree defects.  
 
-A [UseAfterFree defect](http://cwe.mitre.org/data/definitions/416.html) occurs when an allocated memory block is used after it has been freed (also known as a "dangling pointer").
+A [UseAfterFree defect](https://cwe.mitre.org/data/definitions/416.html) occurs when an allocated memory block is used after it has been freed (also known as a "dangling pointer").
 
 Behavior in such cases is undefined and in practice may have unintended consequences including memory corruption, use of incorrect values, or arbitrary code execution.
 

@@ -10,7 +10,7 @@ ms.date: 01/11/2021
 
 This [CodeQL query](./static-tools-and-codeql.md) has lower precision than the high-precision [UseAfterFree](./codeql-windows-driver-useafterfree.md) CodeQL query. It detects some additional scenarios, but also has a higher rate of false positives.
 
-A [UseAfterFree defect](http://cwe.mitre.org/data/definitions/416.html) occurs when an allocated memory block is used after it has been freed (also known as a "dangling pointer").
+A [UseAfterFree defect](https://cwe.mitre.org/data/definitions/416.html) occurs when an allocated memory block is used after it has been freed (also known as a "dangling pointer").
 
 Behavior in such cases is undefined and in practice may have unintended consequences including memory corruption, use of incorrect values, or arbitrary code execution.
 

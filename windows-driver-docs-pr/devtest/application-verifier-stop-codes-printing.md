@@ -72,7 +72,7 @@ The following stop codes are contained in this set of tests.
 </ul>
 <p></p>
 <h3>Race condition detected while using a printer handle</h3>
-<p></p><i>Probable cause</i><p>A printer handle is being used concurrently in multiple threads. Printer handles are not thread safe which means that simultaneous use of a printer handle in multiple threads is not permitted without application-level synchronization to safely coordinate access to the handle. The application should either open a separate printer handle in each thread or provide custom synchronization access to the printer handle by using the Win32 synchronization API. The Win32 synchronization API is described further at http://msdn.microsoft.com/library/en-us/dllproc/base/synchronization_functions.asp.</p>
+<p></p><i>Probable cause</i><p>A printer handle is being used concurrently in multiple threads. Printer handles are not thread safe which means that simultaneous use of a printer handle in multiple threads is not permitted without application-level synchronization to safely coordinate access to the handle. The application should either open a separate printer handle in each thread or provide custom synchronization access to the printer handle by using the Win32 synchronization API. The Win32 synchronization API is described further at https://learn.microsoft.com/windows/win32/sync/synchronization-functions.</p>
 <p></p><I>Information displayed by Application Verifier</I><ul>
   <li><b>Parameter 1</b>&nbsp;-&nbsp;Printer handle being accessed.</li>
   <li><b>Parameter 2</b>&nbsp;-&nbsp;Current thread id.</li>
@@ -91,7 +91,7 @@ The following stop codes are contained in this set of tests.
 </ul>
 <p></p>
 <h3>Potential multi-threaded access to a printer handle detected</h3>
-<p></p><i>Probable cause</i><p>A printer handle was used in a different thread than the thread that created it. Printer handles are not thread safe which means that simultaneous use of a printer handle in multiple threads is not permitted without application-level synchronization to safely coordinate access to the handle. The application should either open a separate printer handle in each thread or provide custom synchronization access to the printer handle by using the Win32 synchronization API. The Win32 synchronization API is described further at http://msdn.microsoft.com/library/en-us/dllproc/base/synchronization_functions.asp.</p>
+<p></p><i>Probable cause</i><p>A printer handle was used in a different thread than the thread that created it. Printer handles are not thread safe which means that simultaneous use of a printer handle in multiple threads is not permitted without application-level synchronization to safely coordinate access to the handle. The application should either open a separate printer handle in each thread or provide custom synchronization access to the printer handle by using the Win32 synchronization API. The Win32 synchronization API is described further at https://learn.microsoft.com/windows/win32/sync/synchronization-functions.</p>
 <p></p><I>Information displayed by Application Verifier</I><ul>
   <li><b>Parameter 1</b>&nbsp;-&nbsp;Printer handle being accessed.</li>
   <li><b>Parameter 2</b>&nbsp;-&nbsp;Thread id of the initializing thread.</li>
@@ -319,7 +319,7 @@ The following stop codes are contained in this set of tests.
 </ul>
 <p></p>
 <h3>Race condition detected while using a PrintTicket provider handle</h3>
-<p></p><i>Probable cause</i><p>A PrintTicket provider handle was being used concurrently in multiple threads. This requires application-level of synchronization of the access to the handle. PrintTicket provider handles are not thread safe which means that simultaneous use of a PrintTicket provider handle in multiple threads is not permitted. Instead, the application should either open a separate PrintTicket provider handle in each thread or provide custom synchronization access to the PrintTicket provider handle by using the Win32 synchronization API. The Win32 synchronization API is described further at http://msdn.microsoft.com/library/en-us/dllproc/base/synchronization_functions.asp.</p>
+<p></p><i>Probable cause</i><p>A PrintTicket provider handle was being used concurrently in multiple threads. This requires application-level of synchronization of the access to the handle. PrintTicket provider handles are not thread safe which means that simultaneous use of a PrintTicket provider handle in multiple threads is not permitted. Instead, the application should either open a separate PrintTicket provider handle in each thread or provide custom synchronization access to the PrintTicket provider handle by using the Win32 synchronization API. The Win32 synchronization API is described further at https://learn.microsoft.com/windows/win32/sync/synchronization-functions.</p>
 <p></p><I>Information displayed by Application Verifier</I><ul>
   <li><b>Parameter 1</b>&nbsp;-&nbsp;PrintTicket provider handle being accessed.</li>
   <li><b>Parameter 2</b>&nbsp;-&nbsp;Current thread id.</li>
@@ -338,7 +338,7 @@ The following stop codes are contained in this set of tests.
 </ul>
 <p></p>
 <h3>Potential multi-threaded access to a PrintTicket provider handle detected</h3>
-<p></p><i>Probable cause</i><p>This is a warning that a PrintTicket provider handle was used in a thread different from the thread that created it. This may require application-level synchronization to safely access the handle. PrintTicket provider handles are not thread safe which means that simultaneous use of a PrintTicket provider handle in multiple threads is not permitted. Instead, the application should either open a separate PrintTicket provider handle in each thread or provide custom synchronization access to the PrintTicket provider handle by using the Win32 synchronization API. The Win32 synchronization API is described further at http://msdn.microsoft.com/library/en-us/dllproc/base/synchronization_functions.asp.</p>
+<p></p><i>Probable cause</i><p>This is a warning that a PrintTicket provider handle was used in a thread different from the thread that created it. This may require application-level synchronization to safely access the handle. PrintTicket provider handles are not thread safe which means that simultaneous use of a PrintTicket provider handle in multiple threads is not permitted. Instead, the application should either open a separate PrintTicket provider handle in each thread or provide custom synchronization access to the PrintTicket provider handle by using the Win32 synchronization API. The Win32 synchronization API is described further at https://learn.microsoft.com/windows/win32/sync/synchronization-functions.</p>
 <p></p><I>Information displayed by Application Verifier</I><ul>
   <li><b>Parameter 1</b>&nbsp;-&nbsp;PrintTicket provider  handle being accessed.</li>
   <li><b>Parameter 2</b>&nbsp;-&nbsp;Thread id of the initializing thread.</li>
