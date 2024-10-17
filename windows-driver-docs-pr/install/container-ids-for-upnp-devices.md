@@ -1,16 +1,16 @@
 ---
 title: Container IDs for UPnP Devices
-description: Container IDs for UPnP Devices
-ms.date: 04/20/2017
+description: A device that supports PnP extensions (PnP-X) and Universal PnP (UPnP) can specify a container ID by including the **X_containerId** XML element in the device description document.
+ms.date: 10/17/2024
 ---
 
-# Container IDs for UPnP Devices
+# Container IDs for UPnP devices
 
-Starting with Windows 7, a device that supports PnP extensions (PnP-X) and Universal PnP (UPnP) can specify a container ID by including the **X_containerId** XML element in the device description document. For more information about UPnP and the UPnP device description document, refer to the [UPnP Device Architecture specification.](https://go.microsoft.com/fwlink/p/?linkid=142402)
+A device that supports PnP extensions (PnP-X) and Universal PnP (UPnP) can specify a container ID by including the **X_containerId** XML element in the device description document. For more information about UPnP and the UPnP device description document, refer to the [UPnP Device Architecture specification.](https://openconnectivity.org/developer/specifications/upnp-resources/upnp/#architectural)
 
 The **X_containerId** XML element is declared as follows:
 
-```cpp
+```xml
 <df:X_containerId xmlns:df="">
   xs:string
 </df:X_containerId>
@@ -20,7 +20,7 @@ The **X_containerId** XML element type is a string, for which the value is a glo
 
 The following is an example of an **X_containerId** XML element.
 
-```cpp
+```xml
 <df:X_containerId xmlns:df="">
   {101392d0-5e91-11dd-ad8b-0800200c9a66}
 </df:X_containerId>
@@ -29,9 +29,9 @@ The following is an example of an **X_containerId** XML element.
 The **X_containerId** XML element is required to be in the &lt;device&gt; section of the UPnP device description document. The following example shows the correct placement of the **X_containerId** element in a device description document.
 
 >[!NOTE]
->This is not a complete UPnP device description document. For more information about UPnP, refer to the [UPnP Device Architecture specification.](https://go.microsoft.com/fwlink/p/?linkid=142402)
+>This is not a complete UPnP device description document. For more information about UPnP, refer to the [UPnP Device Architecture specification.](https://openconnectivity.org/developer/specifications/upnp-resources/upnp/#architectural)
 
-```cpp
+```xml
 <?xml version="1.0" ?>
 <root
  xmlns="urn:schemas-upnp-org:device-1-0"
