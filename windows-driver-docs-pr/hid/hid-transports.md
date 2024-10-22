@@ -21,13 +21,13 @@ keywords:
 | USB | Hidusb.sys | Support for USB HID 1.11+ is provided on Windows operating systems dating back to Windows 2000. |
 | Bluetooth | Hidbth.sys | Support for Bluetooth HID 1.1+ is provided on Windows operating systems dating back to Windows Vista. |
 | Bluetooth LE | HidBthLE.dll | Windows 8 introduces support for HID over Bluetooth LE. |
-| I<sup>2</sup>C | Hidi2c.sys | Windows 8 introduces support for HID over I<sup>2</sup>C. |
+| I2C | Hidi2c.sys | Windows 8 introduces support for HID over I2C. |
 | GPIO | Hidinterrupt.sys | Windows 10 introduces support for general-purpose I/O (GPIO) buttons. |
 | SPI | HidSpi.sys | Windows 11 introduces support for HID over Serial Peripheral Interface (SPI). |
 
 Microsoft recommends using the included drivers for transports listed in the preceding table.
 
-If a device requires a transport other than USB, Bluetooth, Bluetooth LE, or I<sup>2</sup>C, a miniport driver as described in [Transport Minidrivers](transport-minidrivers.md) is recommended.
+If a device requires a transport other than USB, Bluetooth, Bluetooth LE, or I2C, a miniport driver as described in [Transport Minidrivers](transport-minidrivers.md) is recommended.
 
 ## HID transport limits
 
