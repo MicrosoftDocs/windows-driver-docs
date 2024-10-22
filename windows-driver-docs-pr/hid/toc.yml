@@ -108,7 +108,7 @@
       href: architecture-and-overview.md
     - name: "Plug and play support and power management"
       href: plug-and-play-support-and-power-management.md
-    - name: "Power management for I²C transport"
+    - name: "Power management for I2C transport"
       href: power-management-over-i2c.md
     - name: "Troubleshooting common errors"
       href: troubleshooting-common-errors.md
