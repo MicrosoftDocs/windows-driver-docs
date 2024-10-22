@@ -19,7 +19,7 @@ Human Interface Devices (HID) clients are drivers, services, or applications tha
 | [HID usages](./hid-usages.md) | HID usages identify the intended use of HID controls and what the controls actually measure. |
 | [HID Collections](./hid-collections.md) | A HID collection is a meaningful grouping of HID controls and their respective [HID usages](./hid-usages.md) |
 | [Opening HID collections](./opening-hid-collections.md) | This article describes how a HID Client can communicate with the HID Class driver (HIDClass) to operate the device's HID collections. |
-| [Handling HID Reports](./handling-hid-reports.md) | This article describes the mechanisms that user-mode applications and kernel-mode drivers use for handling [HID reports](./introduction-to-hid-concepts.md) |
+| [Handling HID Reports](./handling-hid-reports.md) | This article describes the mechanisms that user-mode applications and kernel-mode drivers use for handling [HID reports](./hid-api.md) |
 | [Freeing Resources](./freeing-resources.md) | User-mode applications and kernel-mode drivers that are HID clients should always free any resources that are no longer required. |
 | [Installing HID clients](./installing-hid-clients.md) | This article describes the following requirements for installing HIDClass devices in Microsoft Windows. |
 | [HIDClass Hardware IDs for Top-Level Collections](./hidclass-hardware-ids-for-top-level-collections.md) | This article specifies the hardware IDs that the HID class driver generates for top-level collections. |

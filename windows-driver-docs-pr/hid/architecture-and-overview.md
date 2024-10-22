@@ -1,12 +1,12 @@
 ---
 title: Architecture and Overview for HID Over the I<sup>2</sup>C Transport
-description: This section describes the driver stack for devices that support HID over the I<sup>2</sup>C transport.
+description: This article describes the driver stack for devices that support HID over the I<sup>2</sup>C transport.
 ms.date: 01/11/2024
 ---
 
 # Architecture and overview for HID over the I<sup>2</sup>C transport
 
-This section describes the driver stack for devices that support HID over the I<sup>2</sup>C transport.
+This article describes the driver stack for devices that support HID over the I<sup>2</sup>C transport.
 
 ## Architecture and overview
 

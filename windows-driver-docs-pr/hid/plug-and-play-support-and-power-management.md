@@ -1,6 +1,6 @@
 ---
 title: Plug and Play Support for I2C
-description: This section describes plug and play support for devices that support HID over the I<sup>2</sup>C.
+description: This article describes plug and play support for devices that support HID over the I<sup>2</sup>C.
 ms.date: 01/11/2024
 ---
 

@@ -1,12 +1,12 @@
 ---
 title: Power Management for HID Over the I<sup>2</Sup>C
-description: This section describes power management for devices that support HID over the I<sup>2</sup>C.
+description: This article describes power management for devices that support HID over the I<sup>2</sup>C.
 ms.date: 01/11/2024
 ---
 
 # HID power management over the I2C
 
-This section describes power management for devices that support HID over the I<sup>2</sup>C transport.
+This article describes power management for devices that support HID over the I<sup>2</sup>C transport.
 
 ## Power management and optimization
 

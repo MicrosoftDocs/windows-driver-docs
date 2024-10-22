@@ -1,12 +1,12 @@
 ---
 title: Architecture of HID Over USB Transport
-description: This section describes the driver stack for devices that support HID over USB transport.
+description: This article describes the driver stack for devices that support HID over USB transport.
 ms.date: 01/11/2024
 ---
 
 # Architecture and overview
 
-This section describes the driver stack for devices that support HID over the USB transport.
+This article describes the driver stack for devices that support HID over the USB transport.
 
 The HID over USB driver stack consists of the following components supplied by Microsoft. The following illustration depicts the stack and these components.
 
