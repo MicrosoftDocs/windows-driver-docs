@@ -1,15 +1,13 @@
-- name: Display driver design guides
+- name: Graphics and display driver documentation
   href: index.md
-- name: Windows Display Driver Model (WDDM) design guide
+- name: Windows Display Driver Model (WDDM)
   items:
-  - name: WDDM overview
+  - name: WDDM Overview
     href: windows-vista-display-driver-model-design-guide.md
   - name: Roadmap for the Windows Display Driver Model (WDDM)
     href: roadmap-for-developing-drivers-for-the-windows-vista-display-driver-mo.md
-  - name: Windows Display Driver Model (WDDM)
+  - name: WDDM Architecture and Operation
     items:
-    - name: Introduction to WDDM
-      href: introduction-to-the-windows-vista-and-later-display-driver-model.md
     - name: WDDM architecture
       href: windows-vista-and-later-display-driver-model-architecture.md
     - name: WDDM operation flow
@@ -740,22 +738,24 @@
       href: manipulating-3-d-virtual-textures-directly-from-hardware.md
     - name: Registering Hardware Information
       href: registering-hardware-information.md
-  - name: Debugging the Windows Display Driver Model (WDDM)
+  - name: Debugging WDDM drivers
     items:
-    - name: Debugging tips for WDDM drivers
+    - name: Debugging tips and tools for WDDM drivers
       href: debugging-tips-for-wddm-drivers.md
-    - name: Installing Checked Binaries
-      href: installing-checked-binaries.md
-    - name: Changing the Behavior of the GPU Scheduler for Debugging
-      href: changing-the-behavior-of-the-gpu-scheduler-for-debugging.md
-    - name: Emulating State Blocks
-      href: emulating-state-blocks.md
-    - name: Logging Driver Errors
-      href: logging-driver-errors.md
     - name: User-mode driver logging
       href: user-mode-driver-logging.md
     - name: Disabling Frame Pointer Omission (FPO) optimization
       href: disabling-frame-pointer-omission--fpo--optimization.md
+    - name: XPS rasterization on the GPU
+      href: xps-rasterization-on-the-gpu.md
+    - name: Timeout Detection and Recovery
+      items:
+      - name: Timeout detection and recovery (TDR)
+        href: timeout-detection-and-recovery.md
+      - name: TDR in Windows 8 and later
+        href: tdr-changes-in-windows-8.md
+      - name: Testing and debugging TDR
+        href: tdr-registry-keys.md
     - name: GPUView
       items:
       - name: About GPUView
@@ -866,16 +866,6 @@
           href: exporting-data-to-a-file.md
         - name: Other Visual Items of the Segment Viewer Window
           href: other-visual-items-of-the-segment-viewer-window.md
-    - name: XPS rasterization on the GPU
-      href: xps-rasterization-on-the-gpu.md
-    - name: Timeout Detection and Recovery
-      items:
-      - name: Timeout detection and recovery (TDR)
-        href: timeout-detection-and-recovery.md
-      - name: TDR in Windows 8 and later
-        href: tdr-changes-in-windows-8.md
-      - name: Testing and debugging TDR
-        href: tdr-registry-keys.md
   - name: Tips and Requirements for the Windows Display Driver Model (WDDM)
     items:
     - name: Tips and Requirements for the Windows Display Driver Model (WDDM)
