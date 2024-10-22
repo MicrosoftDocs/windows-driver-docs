@@ -14,4 +14,5 @@ api_type:
 
 # !stl
 
-The !stl extension command is obsolete and is no longer be supported.
+The !stl extension command is obsolete and is no longer be supported. Use the debugger data model,  
+[dx (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md) command instead.
