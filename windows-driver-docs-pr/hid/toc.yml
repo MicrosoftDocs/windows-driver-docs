@@ -3,7 +3,7 @@
 - name: "HID Architecture"
   href: hid-architecture.md
 - name: "HID Application Programming Interface (API)"
-  href: introduction-to-hid-concepts.md
+  href: hid-api.md
 - name: "HID Clients"
   items: 
   - name: "HID Clients Overview"
@@ -46,8 +46,6 @@
       href: obtaining-collection-information.md
   - name: "Handling HID Reports"
     items: 
-    - name: "Handling HID Reports Topics"
-      href: handling-hid-reports.md
     - name: "Initializing HID Reports"
       href: initializing-hid-reports.md
     - name: "Obtaining HID Reports"
@@ -110,7 +108,7 @@
       href: architecture-and-overview.md
     - name: "Plug and play support and power management"
       href: plug-and-play-support-and-power-management.md
-    - name: "Power management for I²C transport"
+    - name: "Power management for I2C transport"
       href: power-management-over-i2c.md
     - name: "Troubleshooting common errors"
       href: troubleshooting-common-errors.md

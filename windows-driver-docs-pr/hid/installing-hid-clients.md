@@ -1,12 +1,12 @@
 ---
 title: Installing HID Clients
-description: This section describes the following requirements for installing HIDClass devices in Microsoft Windows.
+description: This article describes the requirements for installing HIDClass devices in Microsoft Windows.
 ms.date: 01/11/2024
 ---
 
 # Installing HID clients
 
-This section describes the following requirements for installing HIDClass devices in Microsoft Windows.
+This article describes the following requirements for installing HIDClass devices in Microsoft Windows.
 
 - Vendors must use the [*hardware IDs*](../install/hardware-ids.md) for top-level collections that are designated as *vendor hardware ID formats* in [HIDClass Hardware IDs for Top-Level Collections](hidclass-hardware-ids-for-top-level-collections.md).
 

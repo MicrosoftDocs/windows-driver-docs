@@ -1,12 +1,12 @@
 ---
 title: Plug and Play Support
-description: This section describes the enumeration process on the Universal Serial Bus.
+description: This article describes the enumeration process on the Universal Serial Bus.
 ms.date: 01/11/2024
 ---
 
 # Plug and Play support
 
-This section describes the enumeration process on the Universal Serial Bus.
+This article describes the enumeration process on the Universal Serial Bus.
 
 When a device is plugged in to a Windows-based computer, the Windows USB stack enumerates the device, extracting details from the device including the interface descriptor (or descriptors) of the device, and then generates a set of hardware IDs and compatible IDs for the device.
 

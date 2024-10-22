@@ -6733,6 +6733,16 @@
             "redirect_document_id": false
         },
         {
+          "source_path": "windows-driver-docs-pr/hid/introduction-to-hid-concepts.md",
+          "redirect_URL": "/windows-hardware/drivers/hid/hid-api",
+          "redirect_document_id": false
+        },
+        {
+          "source_path": "windows-driver-docs-pr/hid/handling-hid-reports.md",
+          "redirect_URL": "/windows-hardware/drivers/hid/initializing-hid-reports",
+          "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/hid/joystick-driver-model.md",
             "redirect_URL": "/previous-versions/windows/hardware/hid/joystick-support",
             "redirect_document_id": false

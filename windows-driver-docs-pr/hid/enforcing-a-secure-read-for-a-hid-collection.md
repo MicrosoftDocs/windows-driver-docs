@@ -11,7 +11,7 @@ ms.date: 01/11/2024
 
 # Enforcing a secure read for a HID collection
 
-This section describes how a user-mode application or kernel-mode driver can enforce a *secure read* for a top-level [HID collection](hid-collections.md).
+This article describes how a user-mode application or kernel-mode driver can enforce a *secure read* for a top-level [HID collection](hid-collections.md).
 
 If a secure read is enabled for a collection, only "trusted" clients (those with SeTcbPrivilege privileges) can obtain input from an open file of a collection. Kernel-mode drivers have SeTcbPrivilege privileges by default, but user-mode applications do not. For information about how to obtain system privileges in user mode, see the information about authorization in the Microsoft Windows SDK documentation.
 
