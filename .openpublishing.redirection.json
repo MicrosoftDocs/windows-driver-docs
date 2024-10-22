@@ -656,6 +656,26 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows-driver-docs-pr/display/installing-checked-binaries.md",
+      "redirect_url": "/windows-hardware/drivers/display/debugging-tips-for-display-drivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/changing-the-behavior-of-the-gpu-scheduler-for-debugging.md",
+      "redirect_url": "/windows-hardware/drivers/display/debugging-tips-for-display-drivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/emulating-state-blocks.md",
+      "redirect_url": "/windows-hardware/drivers/display/debugging-tips-for-display-drivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/logging-driver-errors.md",
+      "redirect_url": "/windows-hardware/drivers/display/debugging-tips-for-display-drivers",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows-driver-docs-pr/display/windows-2000-display-driver-model-design-guide.md",
       "redirect_url": "/previous-versions/windows/drivers/display/windows-2000-display-driver-model-design-guide",
       "redirect_document_id": false
