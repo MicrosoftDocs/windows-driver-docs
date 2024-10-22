@@ -656,6 +656,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows-driver-docs-pr/display/introduction-to-the-windows-vista-and-later-display-driver-model.md",
+      "redirect_url": "/windows-hardware/drivers/display/windows-vista-display-driver-model-design-guide",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows-driver-docs-pr/display/installing-checked-binaries.md",
       "redirect_url": "/windows-hardware/drivers/display/debugging-tips-for-display-drivers",
       "redirect_document_id": false
