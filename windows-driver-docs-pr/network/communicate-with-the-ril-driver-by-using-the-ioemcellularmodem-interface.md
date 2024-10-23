@@ -13,7 +13,7 @@ ms.date: 11/07/2017
 
 You can use the [IOemCellularModem](/previous-versions/windows/hardware/cellular/dn946687(v=vs.85)) interface to communicate with OEM RIL driver. This is a case where partners can use APIs in the restricted platform allow list (RPAL) to communicate with the modem.
 
-For more information about the cellular COM APIs, see [Cellular COM API reference](/previous-versions/windows/hardware/cellular/dn946508(v=vs.85)).
+For more information about the cellular COM APIs, see [Cellular COM API reference](/previous-versions/windows/hardware/cellular/).
 
 ## Using cellular COM APIs
 
@@ -185,4 +185,4 @@ IFACEMETHODIMP CCellcoreComponent::CAgent::OnOpaqueModemNotifications(
 
 [Cellular COM API design guide](cellular-com-api-design-guide.md)
 
-[Cellular COM API reference](/previous-versions/windows/hardware/cellular/dn946508(v=vs.85))
+[Cellular COM API reference](/previous-versions/windows/hardware/cellular/)

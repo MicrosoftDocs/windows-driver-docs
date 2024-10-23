@@ -30,4 +30,4 @@ You must declare appropriate capabilities in the package that contains the cellu
 
 ## Related topics
 
-[Cellular COM API reference](/previous-versions/windows/hardware/cellular/dn946508(v=vs.85))
+[Cellular COM API reference](/previous-versions/windows/hardware/cellular/)
