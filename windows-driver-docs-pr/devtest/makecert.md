@@ -87,7 +87,7 @@ MakeCert supports a large number of switches. The switches described in this top
 
 For a complete list of MakeCert parameters, see the [MakeCert](/windows/win32/seccrypto/makecert) website and the [Using MakeCert](/windows/win32/seccrypto/using-makecert) website.
 
-A 32-bit version of the MakeCert tool is located in the bin\\i386 folder of the WDK. A 64-bit version of the tool is located in the bin\\amd64 and bin\\ia64 folders of the WDK.
+A 32-bit version of the MakeCert tool is located in the bin\\x86 folder of the WDK. A 64-bit version of the tool is located in the bin\\x64, bin\\ia64, and bin\\arm64 folders of the WDK.
 
 ### <span id="examples"></span><span id="EXAMPLES"></span>Examples
 
