@@ -26,6 +26,10 @@ Application Verifier can detect errors in any user-mode applications that are no
 
 When used throughout the software development lifecycle, AppVerifier can bring cost benefits to development efforts because it facilitates identifying problems early on when they are easier and cheaper to fix. It also helps to detect errors that may have gone unnoticed and ensures that the final application can be executed in restricted (for example, non-admin) environments.
 
+## ARM64EC Support
+
+Application Verifier does not support ARM64EC.
+
 ## Installing AppVerifier
 
 Application Verifier is included in the [Windows Software Development Kit](https://developer.microsoft.com/windows/downloads/windows-sdk/) (SDK). To install Application Verifier, check the box for it, during installation of the SDK.

@@ -46,6 +46,10 @@ AppVerifier cares about the interfaces between the operating system and the appl
 
 We recommend leveraging the Managed Debugging Assistants for verifying your managed code. Read more about them at [Debugging Managed Code Using the Windows Debugger](../debugger/debugging-managed-code.md).
 
+*Is ARM64EC supported?*
+
+Application Verifier does not support ARM64EC.
+
  
 ## Debugger Questions 
  
