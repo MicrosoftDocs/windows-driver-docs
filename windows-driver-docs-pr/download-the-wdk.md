@@ -74,7 +74,7 @@ The provided links for the SDK and the WDK have matching build numbers, which is
 
 ## ![download icon for WDK](images/download-install.png) Step 3: Install WDK
 
-- [Download WDK 10.0.26100.2161](https://go.microsoft.com/fwlink/?linkid=2294835)
+- [Download WDK 10.0.26100.2161](https://go.microsoft.com/fwlink/?linkid=2294834)
 
 The WDK Visual Studio extension is included in the default WDK installation.
 
