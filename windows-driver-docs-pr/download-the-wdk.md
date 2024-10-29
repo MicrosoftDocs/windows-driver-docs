@@ -6,12 +6,12 @@ keywords:
 - WDK
 - Download
 - drivers
-ms.date: 10/10/2024
+ms.date: 10/29/2024
 ---
 
 # Download the Windows Driver Kit (WDK)
 
-The WDK is used to develop, test, and deploy drivers for Windows. The most recent public release is WDK 10.0.26100.1882 (released October 14, 2024).
+The WDK is used to develop, test, and deploy drivers for Windows. The most recent public release is WDK 10.0.26100.2161 (released November 4, 2024).
 
 - You can install and run this WDK on Windows 7 and later.
 
@@ -74,7 +74,7 @@ The provided links for the SDK and the WDK have matching build numbers, which is
 
 ## ![download icon for WDK](images/download-install.png) Step 3: Install WDK
 
-- [Download WDK 10.0.26100.1882](https://go.microsoft.com/fwlink/?linkid=2290025)
+- [Download WDK 10.0.26100.2161](https://go.microsoft.com/fwlink/?linkid=2294835)
 
 The WDK Visual Studio extension is included in the default WDK installation.
 
@@ -93,7 +93,7 @@ The latest public version of the EWDK contains Visual Studio 2022 Build Tools 17
 
 The EWDK also requires the .NET Framework version 4.7.2. For more information about other requirements for the .NET Framework, see [.NET Framework system requirements](/dotnet/framework/get-started/system-requirements).
 
-- [Download EWDK 10.0.26100.1882 with Visual Studio Build Tools](/legal/windows/hardware/enterprise-wdk-license-2022)
+- [Download EWDK 10.0.26100.2161 with Visual Studio Build Tools](/legal/windows/hardware/enterprise-wdk-license-2022)
 
 Once you have downloaded the ISO, use these steps to set up your build environment:
 
