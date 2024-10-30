@@ -33,6 +33,9 @@ Lets you specify an arbitrary function address so that you can see what paramete
 <span id="_i"></span><span id="_I"></span>**/i**  
 Causes the display to specify the kind of variable: local, global, parameter, function, or unknown.
 
+<span id="_r"></span><span id="_r"></span>**/r**  
+Displays shadowed local variables with additional name decoration for disambiguation.
+
 <span id="_t"></span><span id="_T"></span>**/t**  
 Causes the display to include the data type for each local variable.
 
