@@ -1,7 +1,7 @@
 ---
 title: Develop KDNET Transport Extensibility Modules
 description: This topic describes how the KDNET transport can be extended to run on any hardware through the use of a separate hardware driver extensibility module dll.  
-ms.date: 04/14/2022
+ms.date: 10/25/2024
 ---
 
 # Develop KDNET transport extensibility modules
@@ -18,13 +18,19 @@ There are two types of interfaces that KDNET uses to communicate with KDNET exte
 
 KDNET extensibility modules must follow very stringent requirements in order to operate correctly.  Because they are used for kernel debugging they will be called and executed when the system is holding off further execution of code.  Generally, all of the processors in the system are locked up spinning in an IPI except for the processor that is communicating with the debugger application running on the host machine through the kernel debug transport.  That processor is typically running with interrupts completely disabled, and is essentially spinning on the debug transport hardware waiting for commands to come from the debugger.
 
-KDNET extensibility modules have exactly one explicit export – KdInitializeLibrary.  They also have no explicit imports.  KDNET extensibility modules are passed a pointer to a structure with a list of the routines they are allowed to call by KDNET when it calls KdInitializeLibrary. No other routines can be called.  Period.  KDNET extensibility modules that have any imports are incorrectly designed, and will not be supported.
+### Import and exports
+
+KDNET extensibility modules have exactly one explicit export – KdInitializeLibrary.  They also have no explicit imports.  KDNET extensibility modules are passed a pointer to a structure with a list of the routines they are allowed to call by KDNET when it calls KdInitializeLibrary. No other routines can be called. Period. KDNET extensibility modules that have any imports are incorrectly designed, and will not be supported.
 
 If you dump the imports and exports of a KDNET extensiblity modules using link /dump /exports and link /dump /imports, you will see they have only one export (KdInitializeLibrary), and no imports. KDNET extensibility modules report their additional exports to KDNET by filling in function pointers in an export functions structure to which KDNET passes a pointer when KdInitializeLibrary is called.  KDNET then uses the function pointers in that structure to call into the extensibility module and effect data transfers using the hardware supported by the module.  KDNET determines whether the module is a packet based or byte based module by looking at which specific functions the module fills in the export function table in the structure.  Some of those functions are for supporting packet based hardware, and others are for serial based hardware.  Some of the functions in the table are used by both serial and packet based hardware (KdInitializeController, KdShutdownController, KdGetHardwareContextSize).
+
+### Code design
 
 KDNET extensibility modules should be written as single threaded code.  They should not perform any synchronization.  All kernel debug transports depend on the Windows kernel to do the proper synchronization when the debugger is entered.  The kernel has a debugger lock that it takes when it enters the kernel debugger, and it also locks up the other processors in the system in an IPI when the debugger is entered.  Those processors will be released, only when the kernel debugger running on the host tells the target machine to allow execution to continue.  Because the kernel does this synchronization, the KDNET extensibility modules must absolutely not use any spinlocks, mutexes, gates, or any other Windows synchronization mechanism in their code.  They should be written to directly program their respective hardware to send and receive packets and or bytes.
 
 KDNET extensibility module code should be made as absolutely simple as possible.  This will help ensure that it is as bug free as possible, since debugging KDNET extensibility module code live on a machine is currently not possible without the use of a hardware debugger.  You cannot use the kernel debugger to debug the kernel debug transport code.  Attempting to do so will cause the machine to reboot due to a blown kernel stack (which typically ends with a double fault and reboot), or deadlock, or will cause the transport to be reentered, which in most cases will cause the transport to not work correctly.
+
+### KDNET extensibility modules naming conventions 
 
 Your kernel debug transport module must follow one of two naming conventions for KDNET extensibility modules.  If your module is for supporting PCI based, hardware, then it must be named kd_YY_XXXX.dll where XXXX is the PCI vendor ID of your hardware in hex, and YY is the PCI class for your hardware.  There are several KDNET extensibility modules that ship in the box in windows that support PCI based hardware.  For example, Intel’s kd_02_8086.dll, Broadcom’s kd_02_14e4.dll, and Realtek’s kd_02_10ec.dll.  You can look up registered PCI vendor IDs at https://www.pcisig.com/membership/member-companies  All of the PCI based KDNET extensibility modules use the vendor VID of the hardware they support in hex as the last 4 characters in the name of their module.  The class code for most of the in box modules is 02, because they are network class devices, and therefore have a PCI class of 0x02 in their PCI config space.  Winload.exe builds the name of PCI based KDNET extensibility modules by reading the PCI device class and the PCI VID of the selected debug device from its PCI configuration space, and tries to load a module with those identifiers in the name.  If your device has a PCI class code that is not the network 0x02 class, then you must use the correct PCI class code in hexadecimal for your device, in the name of your KDNET extensibility module.  Otherwise, your module will not be loaded correctly by winload.  The `_02_` in each of those names is the PCI class code for network class devices in hex.  This code is also found and read from the PCI configuration space of the debug device.
 
@@ -36,9 +42,15 @@ The following is the list of routines that you can call from a KDNET extensibili
 
 It is critical that you include kdnetextensibility.h properly in your headers so that the correct remapping of routines through the import table can occur.  If this is not done, your module will have imports, and will not be supported.
 
+### Read write memory routines
+
 The following routines should be used for reading and writing to memory mapped device memory.  These have the same calling convention and are mapped to their corresponding kernel routines: READ_REGISTER_UCHAR, READ_REGISTER_USHORT, READ_REGISTER_ULONG, WRITE_REGISTER_UCHAR, WRITE_REGISTER_USHORT, WRITE_REGISTER_ULONG and on 64 bit platforms only READ_REGISTER_ULONG64 and WRITE_REGISTER_ULONG64.   All device memory access should be done through these routines, as they ensure that reads and writes are not reordered by the processor.  Note that the msdn.microsoft.com documents Windows CE Compact 2013 routines that correspond in calling convention to these routines.  Unfortunately it appears the NT routines are not documented, but the calling convention is the same.
 
+### Read IO port routines
+
 The following routines should be used for reading and writing to device IO ports.  These have the same calling convention and are mapped to their corresponding kernel routines: READ_PORT_UCHAR, READ_PORT_USHORT, READ_PORT_ULONG, WRITE_PORT_UCHAR, WRITE_PORT_USHORT and WRITE_PORT_ULONG.   All device IO port access should be done through these routines.  Note that the msdn.microsoft.com documents Windows CE Compact 2013 routines that correspond in calling convention to these routines.
+
+### Additional routines
 
 The following additional routines can be called, and should be called normally with the specified parameters.  Note that doing so, while properly including the kdnetextensibility.h header, will remap the function calls through the KDNET extensibility import table, resulting in no explicit imports in your module as is required for KDNET extensibility modules.
 
@@ -183,18 +195,6 @@ The following is a brief description of each of the KDNET extensibility routines
 ### KdInitializeLibrary 
  
 ```cpp
-NTSTATUS
-
-KdInitializeLibrary (
-
-    __in PKDNET_EXTENSIBILITY_IMPORTS ImportTable,
-
-    __in_opt PCHAR LoaderOptions,
-
-    __inout PDEBUG_DEVICE_DESCRIPTOR Device
-
-    )
-
 /*++
 
 Routine Description:
@@ -230,12 +230,73 @@ Return Value:
         incorrect.
 
     STATUS_SUCCESS if initialization succeeds.
+
 --*/
+NTSTATUS
+KdInitializeLibrary (
+    __in PKDNET_EXTENSIBILITY_IMPORTS ImportTable,
+    __in_opt PCHAR LoaderOptions,
+    __inout PDEBUG_DEVICE_DESCRIPTOR Device
+    )
+{
+    NTSTATUS Status;
+    PKDNET_EXTENSIBILITY_EXPORTS Exports;
+
+    __security_init_cookie();
+    Status = STATUS_SUCCESS;
+    KdNetExtensibilityImports = ImportTable;
+    if ((KdNetExtensibilityImports == NULL) ||
+        (KdNetExtensibilityImports->FunctionCount != KDNET_EXT_IMPORTS)) {
+
+        Status = STATUS_INVALID_PARAMETER;
+        goto KdInitializeLibraryEnd;
+    }
+
+    Exports = KdNetExtensibilityImports->Exports;
+    if ((Exports == NULL) || (Exports->FunctionCount != KDNET_EXT_EXPORTS)) {
+        Status = STATUS_INVALID_PARAMETER;
+        goto KdInitializeLibraryEnd;
+    }
+
+    //
+    // Return the function pointers this KDNET extensibility module exports.
+    //
+
+    Exports->KdInitializeController = KdInitializeController;
+    Exports->KdShutdownController = KdShutdownController;
+    Exports->KdSetHibernateRange = KdSetHibernateRange;
+    Exports->KdGetRxPacket = KdGetRxPacket;
+    Exports->KdReleaseRxPacket = KdReleaseRxPacket;
+    Exports->KdGetTxPacket = KdGetTxPacket;
+    Exports->KdSendTxPacket = KdSendTxPacket;
+    Exports->KdGetPacketAddress = KdGetPacketAddress;
+    Exports->KdGetPacketLength = KdGetPacketLength;
+    Exports->KdGetHardwareContextSize = KdGetHardwareContextSize;
+
+    //
+    // Return the hardware context size required to support this device.
+    //
+
+    Status = ContosoInitializeLibrary(LoaderOptions, Device);
+
+KdInitializeLibraryEnd:
+    return Status;
+}
 ```
 
 This routine is called to pass the import and export routines between KDNET and this KDNET extensibility module.  This routine should validate that the version of both the import and export tables is expected and supported, and fail if not.  It should make a copy of the import table in its own global memory.  It should write the routines it exports into the structure pointed to by the Exports field of the import table.  It must also set the Length field of the Memory structure that is part of the debug device descriptor pointer passed to this routine, with the number of bytes of memory that it requires to support the hardware device.
 
+### Validate import export count
+
+The code must check that Imports FunctionCount matches what is available in the OS, for example - `(KdNetExtensibilityImports->FunctionCount != KDNET_EXT_IMPORTS)` and return `STATUS_INVALID_PARAMETER` if the count does not match.
+
+Checking the counts ensures compatibility between the running Windows OS KDNET version (e.g., boot manager/OS loader/hypervisor/Secure kernel/NT OS, all of which link to the KDNET library) and the WDK version used to build the current KDNET extensibility module. The WDK and the OS version must be synchronized; otherwise, the above check will fail if the import/export counter value changes. For example if the KDNET extensibility interface added a new feature function, the count will no longer match.  To ensure that they match, always use the WDK release that matches the OS hosting the KDNET version.
+
+### Customize required memory
+
 Note that device will be populated with the hardware selected for the debugger.  This routine should customize the amount of memory required based on the device, if needed.  For example, extensibility modules that support both 1Gig and 10Gig hardware, can increase the memory size they request for 10Gig devices.  They can determine which device is being used by examining the DeviceID field of the debug device descriptor.
+
+### KdInitializeLibrary is the only export
 
 Note that this routine will be called both by winload, and by KDNET during the KdInitSystem call.  Note that this is the ONLY routine that is exported by KDNET extensibility modules.  It is the only routine placed in a .def file.  KDNET extensibility modules have exactly one explicit export – this routine – and no imports.
 
