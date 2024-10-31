@@ -9,10 +9,12 @@ keywords:
 - SPI
 - Serial Peripheral Interface
 - Simple Peripheral Bus
-ms.date: 01/11/2024
+ms.date: 10/31/2024
 ---
 
 # Introduction to HID over SPI
+
+Learn how to utilize Human Interface Device (HID) class devices over a Serial Peripheral Interface (SPI). This guide covers the benefits of using SPI for HID devices, including increased bandwidth, low latency, and ease of hardware implementation. Discover how to integrate various HID devices such as keyboards, mice, and sensors using the HID miniport driver provided by Microsoft.
 
 Microsoft has created a HID miniport driver that allows devices to communicate over a Serial Peripheral Interface (SPI) bus.
 
