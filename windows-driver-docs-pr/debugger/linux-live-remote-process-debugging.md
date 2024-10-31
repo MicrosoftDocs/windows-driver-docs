@@ -168,7 +168,7 @@ While much of the functionality of the debugger will work as expected" in debugg
 
 The Windows debugger supports kernel debugging using EXDI. This allows debugging a wide variety of hardware and operating systems. For general information on setting up configuring and troubleshooting EXDI connections, see [Configuring the EXDI Debugger Transport](configuring-the-exdi-debugger-transport.md).
 
-For information on how to set up QEMU Kernel-Mode Debugging using EXDI, see [Setting Up QEMU Kernel-Mode Debugging using EXDI](setting-up-qemu-kernel-mode-debugging-using-exdi.md).
+For information on how to set up QEMU Kernel-Mode Debugging using EXDI, see [Setting Up QEMU Kernel-Mode Debugging Using EXDI](setting-up-qemu-kernel-mode-debugging-using-exdi.md).
 
 ## Linux Symbols and Sources
 
