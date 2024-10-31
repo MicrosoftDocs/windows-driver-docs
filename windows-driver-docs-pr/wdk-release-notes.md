@@ -11,14 +11,18 @@ The following are features and bug fix in Windows 11 24H2 WDK update
 *Released November 4th, 2024*.
 
 ### Kasan Support
-Kernel Address Sanitizer (Kasan), a bug-detection technology in now supported on Windows Drivers, it enables the detection of several classes of illegal memory accesses. For more information see [Kasan](./devtest/kasan.md)
+Kernel Address Sanitizer (KASAN) is now supported on Windows Drivers. For more information see [Kasan](./devtest/kasan.md)
 
 ### Azure File Sync 
 Azure file sync reparse tag definition has been updated. For details see [Azure File Sync](https://support.microsoft.com/en-us/topic/azure-file-sync-agent-v18-2-release-july-2024-613d00dc-998b-4885-86b9-73750195baf5)
 
 ### WDK MSI Update
-As WDK VSIX is now included as part of Visual Studio individual component, consequently WDK VSIX will no longer ships with WDK MSI. When WDK is installed on a machine without WDK Visual Studio individual component installed, the user will be asked to install VSIX from VS indivudal component.
-However, if WDK is installed on a machine with WDK VSIX installed, there will be only a graceful message confirming successful installation.  
+As WDK VSIX is now included as part of Visual Studio individual component, consequently WDK VSIX will no longer ship with WDK MSI. When you try to install WDK MSI on a machine without WDK VSIX installed, the following warning message will be shown at the begining of installation
+![WDK VSIX Install Notification](images/install_wdk_vsix_msg.png)
+
+However, if WDK is installed on a machine with WDK VSIX installed, there will be only a graceful message confirming successful installation.
+![WDK Install Success Message](images/WDK_Install_After_VSIX.png)
+
 
 ## Version 10.0.26100.1882
 *Released October 14th, 2024*.
