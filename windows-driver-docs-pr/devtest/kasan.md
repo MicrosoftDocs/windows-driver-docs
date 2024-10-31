@@ -10,7 +10,7 @@ ms.date: 10/31/2024
 
 # Kernel Address Sanitizer (KASAN)
 
-The Kernel Address Sanitizer (KASAN), is a bug detection technology supported on Windows kernel drivers that enables you to detect several classes of illegal memory accesses, such as buffer overflows and use-after-free events. It requires you to enable KASAN on your system, and recompile your kernel driver with a specific MSVC compiler flag.
+The Kernel Address Sanitizer (KASAN) is a bug detection technology supported on Windows kernel drivers that enables you to detect several classes of illegal memory accesses, such as buffer overflows and use-after-free events. It requires you to enable KASAN on your system, and recompile your kernel driver with a specific MSVC compiler flag.
 
 ## Pre-requisites
 
