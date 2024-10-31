@@ -1,11 +1,22 @@
 ---
 title: Windows Drivers Kit (WDK) release notes
 description: Highlights features in new WDK releases
-ms.date: 09/23/2024
+ms.date: 11/04/2024
 ---
 
 # Windows Driver Kits Release Notes
 The following are features and bug fix in Windows 11 24H2 WDK update
+
+## Version 10.0.26100.2161
+*Released November 4th, 2024*.
+
+### Kasan
+New! The Kernel Address Sanitizer is a bug-detection technology supported on Windows Drivers that allows to detect several classes of illegal memory accesses. For more information [Kasan](./devtest/kasan.md)
+
+### Azure File Sync reparse tag defination updated
+
+### WDK MSI Update
+The WDK VSIX is included as part of Visual Studio individual component. We have removed the WDK VSIX component which ships with WDK MSI. At the end of WDK installation, the custom action message to launch VSIX installer has been replaced with a simple message telling the user to install VSIX from VS as individual component. 
 
 ## Version 10.0.26100.1882
 *Released October 14th, 2024*.
