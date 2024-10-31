@@ -20,7 +20,7 @@ In order to use KASAN, you need:
     - Client: Windows 11 24H2 or above.
     - Server: Windows Server 2025 or above.
  - VisualStudio: version 17.11 or above.
- - WDK: XXX.
+ - WDK: version 10.0.26100.2161 or above.
 
 ## How to enable KASAN on your kernel driver
 
