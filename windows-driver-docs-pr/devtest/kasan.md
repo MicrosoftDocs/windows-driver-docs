@@ -1,18 +1,18 @@
 ---
 title: Kernel Address Sanitizer
-description: The Kernel Address Sanitizer is a bug-detection technology supported on Windows Drivers that allows to detect several classes of illegal memory accesses.
+description: The Kernel Address Sanitizer is a bug detection technology supported by Windows drivers that enables you to detect several classes of illegal memory accesses.
 keywords:
 - Kernel Address Sanitizer
 - KASAN
 - verifying drivers WDK
-ms.date: 10/03/2024
+ms.date: 10/31/2024
 ---
 
 # Kernel Address Sanitizer (KASAN)
 
-The Kernel Address Sanitizer, or _KASAN_, is a bug-detection technology supported on Windows kernel drivers that allows to detect several classes of illegal memory accesses, such as buffer overflows and use-after-frees. It requires you to enable KASAN on your system, and to recompile your kernel driver with a specific MSVC compiler flag.
+The Kernel Address Sanitizer (KASAN), is a bug detection technology supported on Windows kernel drivers that enables you to detect several classes of illegal memory accesses, such as buffer overflows and use-after-free events. It requires you to enable KASAN on your system, and recompile your kernel driver with a specific MSVC compiler flag.
 
-## Pre-requisites for KASAN
+## Pre-requisites
 
 In order to use KASAN, you need:
 
@@ -24,22 +24,24 @@ In order to use KASAN, you need:
 
 ## How to enable KASAN on your kernel driver
 
-1. You must first enable KASAN on the target system in which you intend to load your kernel driver. To do so, enter the following command line in an administrator **Command Prompt** window on the target system:
+1. Enter the following command line in an administrator **Command Prompt** window on the target system:
+
    ```console
    reg add "HKLM\System\CurrentControlSet\Control\Session Manager\Kernel" /v KasanEnabled /t REG_DWORD /d 1
    ```
-   Then, reboot your target system for the change to take effect.
 
-2. Recompile your kernel driver with KASAN instrumentation enabled in it. To do so, you must pass a new compiler flag to the MSVC compiler. This can be achieved using either of the two following methods:
+1. Reboot your target system for the change to take effect.
 
-    - **GUI**: in VisualStudio, navigate to the **Solution Explorer**, right-click on your kernel driver project, and select **Properties**. In the property page, navigate to **Configuration Properties** >> **C/C++** >> **General**, and set **Enable Kernel Address Sanitizer** to _Yes_. Then rebuild your solution.
-    - **Command Prompt**: add the _/fsanitize=kernel-address_ parameter to your compiler command line. Then rebuild your solution.
+1. Recompile your kernel driver with KASAN instrumentation enabled by passing a new flag to the MSVC compiler. Use either of the following methods:
 
-3. Finally, load your recompiled kernel driver on your target system, and stress-test it as you usually would. KASAN will be operating at runtime and will report illegal memory accesses via **Bug Check 0x1F2: KASAN\_ILLEGAL\_ACCESS**.
+    - **GUI**: in VisualStudio, navigate to the **Solution Explorer**, right-click on your kernel driver project, and select **Properties**. In the property page, navigate to **Configuration Properties** >> **C/C++** >> **General**, and set **Enable Kernel Address Sanitizer** to *Yes*. Then rebuild your solution.
+    - **Command prompt**: add the */fsanitize=kernel-address* parameter to your compiler command line. Then, rebuild your solution.
+
+1. Load your recompiled kernel driver on your target system, and stress-test it as you usually would. KASAN operates at runtime and reports illegal memory access events via **Bug Check 0x1F2: KASAN_ILLEGAL_ACCESS**.
 
 ## How to verify that KASAN is enabled on your kernel driver
 
-The kernel drivers compiled with KASAN have a PE section called "`KASAN`". You can verify that KASAN is enabled on your driver by running the following command in a **Developer Command Prompt**:
+The kernel drivers compiled with KASAN have a PE section called "`KASAN`". Verify that KASAN is enabled on your driver by running the following command in a **Developer Command Prompt**:
 
 ```console
 dumpbin /ALL YourDriver.sys
@@ -49,32 +51,32 @@ If the output contains a section called "`KASAN`", then KASAN is enabled on your
 
 ## How to analyze KASAN reports
 
-When KASAN detects an illegal memory access in your driver, it issues **Bug Check 0x1F2: KASAN\_ILLEGAL\_ACCESS**. You can then inspect the generated kernel memory dump to determine where exactly your driver performed an illegal memory access.
+When KASAN detects an illegal memory access in your driver, it issues **Bug Check 0x1F2: KASAN_ILLEGAL_ACCESS**. Inspect the generated kernel memory dump to determine where exactly your driver performed an illegal memory access.
 
-It is recommended that KASAN be used with a kernel debugger attached to the target system, so that the memory can be inspected dynamically as soon as the Bug Check is issued, rather than post-mortem with a memory dump.
+Use KASAN with a kernel debugger attached to the target system so that the memory can be inspected dynamically as soon as the bug check is issued, rather than post-mortem with a memory dump.
 
-### Bug Check parameters
+### Bug check parameters
 
-The parameters of **Bug Check 0x1F2: KASAN\_ILLEGAL\_ACCESS** are the following:
+The parameters of **Bug Check 0x1F2: KASAN_ILLEGAL_ACCESS** are:
 
  1. Parameter 1: Address being accessed illegally.
- 2. Parameter 2: Size of the memory access.
- 3. Parameter 3: Address of the caller performing the illegal memory access.
- 4. Parameter 4: Extra information on the memory access:
+ 1. Parameter 2: Size of the memory access.
+ 1. Parameter 3: Address of the caller performing the illegal memory access.
+ 1. Parameter 4: Extra information on the memory access:
      - Bits [0:7]: the KASAN shadow code. See the table below.
      - Bit 8: `1` if the access was a write, `0` if it was a read.
 
 ### KASAN shadow codes
 
-In KASAN, we consider that the entirety of the kernel memory is divided in contiguous chuncks of 8-byte-aligned 8-byte _cells_. With KASAN, each 8-byte cell in kernel memory has a _shadow code_ associated to it, which is an 1-byte integer that indicates the validity of the cell. The encoding of the shadow codes is the following:
+In KASAN, we consider that all of the kernel memory is divided in contiguous chunks of eight-byte-aligned, eight-byte *cells*. With KASAN, each eight-byte cell in kernel memory has a *shadow code* associated with it, which is an one-byte integer that indicates the validity of the cell. The encoding of the shadow codes is the following:
 
-| Value            | Meaning |
-| ---------------- | ------- |
-| `0x00`           | The cell is entirely valid: accesses to all 8 bytes of the cell are legal. |
-| `0x01` -> `0x07` | The cell is partially valid: the first _value_ bytes in the cell are valid, but the rest are invalid. |
-| >= `0x80`        | The cell is entirely invalid: accesses to all 8 bytes of the cell are illegal. |
+| Value | Meaning |
+|--|--|
+| `0x00` | The cell is entirely valid: accesses to all eight bytes of the cell are legal. |
+| `0x01` -> `0x07` | The cell is partially valid: the first *value* bytes in the cell are valid, but the rest are invalid. |
+| >= `0x80` | The cell is entirely invalid: accesses to all eight bytes of the cell are illegal. |
 
-Several sub-codes are used for the entirely invalid cells, to further indicate what type of memory the cell is associated to and why it is invalid:
+Several sub-codes are used for the entirely invalid cells to further indicate what type of memory the cell is associated to, and why it is invalid:
 
  - `0x81`: left redzone of alloca.
  - `0x82`: middle redzone of alloca.
@@ -93,23 +95,23 @@ Several sub-codes are used for the entirely invalid cells, to further indicate w
  - `0xF5`: used-after-ret stack variable.
  - `0xF8`: out-of-scope stack variable.
 
-### Understanding KASAN Bug Checks: an example
+### Understand KASAN bug checks: an example
 
-Let's assume that KASAN issued a Bug Check when your driver was executing, with the following parameters:
+Assume that KASAN issued a bug check when your driver was executing, with these parameters:
 
  1. Parameter 1: `0xFFFFFFFFFFFFABCD`
- 2. Parameter 2: `0x0000000000000004`
- 3. Parameter 3: `0xFFFFFFFF12345678`
- 4. Parameter 4: `0x0000000000000184`
+ 1. Parameter 2: `0x0000000000000004`
+ 1. Parameter 3: `0xFFFFFFFF12345678`
+ 1. Parameter 4: `0x0000000000000184`
 
-Parameter 1 tells you that your driver tried to access address `0xFFFFFFFFFFFFABCD` and that this access was illegal. Parameter 2 tells you that it was a 4-byte access. Parameter 3 gives you the address of the instruction pointer at which your driver performed the illegal access. And finally Parameter 4 tells you that this was a write access, and that the memory being touched was the right redzone of a global variable.
+*Parameter 1* tells you that your driver tried to access address `0xFFFFFFFFFFFFABCD` and that this access was illegal. *Parameter 2* tells you that it was a four-byte access. *Parameter 3* gives you the address of the instruction pointer at which your driver performed the illegal access. *Parameter 4* tells you that this was a write access, and that the memory being touched was the right redzone of a global variable.
 
-In other words, your driver likely tried to perform a write buffer overflow on a global variable. With that in mind, you must then investigate and determine where and how to fix this bug in your driver.
+In other words, your driver likely tried to perform a write buffer overflow on a global variable. Use this information to investigate and determine where and how to fix this bug in your driver.
 
 ## Performance impact of KASAN
 
-KASAN increases kernel memory consumption and introduces a ~x2 slowdown in all drivers compiled with KASAN enabled.
+KASAN increases kernel memory consumption and introduces an approximate two-times slowdown in drivers compiled with KASAN enabled.
 
 ## Resources
 
-[Microsoft: Introducing kernel sanitizers on Microsoft platforms](https://www.microsoft.com/en-us/security/blog/2023/01/26/introducing-kernel-sanitizers-on-microsoft-platforms/)
+- [Microsoft: Introducing kernel sanitizers on Microsoft platforms](https://www.microsoft.com/en-us/security/blog/2023/01/26/introducing-kernel-sanitizers-on-microsoft-platforms/)
