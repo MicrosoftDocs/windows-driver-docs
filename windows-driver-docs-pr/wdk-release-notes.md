@@ -13,10 +13,8 @@ The following are features and bug fix in Windows 11 24H2 WDK update
 *Released November 4, 2024*.
 
 ### Kasan Support
-<<<<<<< HEAD
-=======
+
 Kernel Address Sanitizer (KASAN) is now supported on Windows Drivers. For more information see [Kasan](./devtest/kasan.md)
->>>>>>> 32a36a6d66bc8fe380a53f4bc6e1fd54c6160ec1
 
 Kernel Address Sanitizer (Kasan), a bug-detection technology in now supported on Windows Drivers, enables the detection of several classes of illegal memory accesses. For more information, see [Kasan](./devtest/kasan.md)
 
@@ -25,19 +23,12 @@ Kernel Address Sanitizer (Kasan), a bug-detection technology in now supported on
 Azure file sync reparse tag definition is updated. For details, see [Azure File Sync](https://support.microsoft.com/en-us/topic/azure-file-sync-agent-v18-2-release-july-2024-613d00dc-998b-4885-86b9-73750195baf5)
 
 ### WDK MSI Update
-<<<<<<< HEAD
 
-WDK VSIX is now included as part of Visual Studio individual component, so WDK VSIX no longer ships with WDK MSI. When WDK is installed on a machine without WDK Visual Studio individual component installed, the user is asked to install VSIX from VS individual component.
-
-However, if the WDK is installed on a machine with WDK VSIX installed, there's only a message confirming successful installation.
-=======
 As WDK VSIX is now included as part of Visual Studio individual component, consequently WDK VSIX will no longer ship with WDK MSI. When you try to install WDK MSI on a machine without WDK VSIX installed, the following warning message will be shown at the begining of installation
 ![WDK VSIX Install Notification](images/install_wdk_vsix_msg.png)
 
 However, if WDK is installed on a machine with WDK VSIX installed, there will be only a graceful message confirming successful installation.
 ![WDK Install Success Message](images/WDK_Install_After_VSIX.png)
-
->>>>>>> 32a36a6d66bc8fe380a53f4bc6e1fd54c6160ec1
 
 ## Version 10.0.26100.1882
 
