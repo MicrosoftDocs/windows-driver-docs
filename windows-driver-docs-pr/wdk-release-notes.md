@@ -6,7 +6,7 @@ ms.date: 11/04/2024
 
 # Windows Driver Kits Release Notes
 
-The following are features and bug fix in Windows 11 24H2 WDK update
+The following are features and bug fix in Windows 11 24H2 WDK update.
 
 ## Version 10.0.26100.2161
 
@@ -14,11 +14,11 @@ The following are features and bug fix in Windows 11 24H2 WDK update
 
 ### Kasan Support
 
-Kernel Address Sanitizer (KASAN), a bug-detection technology now supported on Windows Drivers, enables the detection of several classes of illegal memory accesses.
+Kernel Address Sanitizer (KASAN), a bug-detection technology now supported on Windows Drivers, enables the detection of several classes of illegal memory accesses. For more information, see [Kernel Address Sanitizer (KASAN)](./devtest/kasan.md).
 
 ### Azure File Sync
 
-Azure file sync reparse tag definition is updated. For details, see [Azure File Sync](https://support.microsoft.com/en-us/topic/azure-file-sync-agent-v18-2-release-july-2024-613d00dc-998b-4885-86b9-73750195baf5)
+Azure file sync reparse tag definition is updated. For details, see [Azure File Sync](https://support.microsoft.com/en-us/topic/azure-file-sync-agent-v18-2-release-july-2024-613d00dc-998b-4885-86b9-73750195baf5).
 
 ### WDK MSI Update
 
