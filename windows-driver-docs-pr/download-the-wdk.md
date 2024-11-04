@@ -14,7 +14,6 @@ ms.date: 11/04/2024
 The WDK is used to develop, test, and deploy drivers for Windows. The most recent public release is WDK 10.0.26100.2161 (released November 4, 2024).
 
 - You can install and run this WDK on Windows 7 and later.
-
 - You can use this kit to build drivers for Windows 10, Windows Server 2016, and later client and server versions.
 
 To target Windows 8.1, Windows 8, and Windows 7, install an older WDK and an older version of Visual Studio either on the same machine or on a separate machine. For links to older kits, see [Other WDK downloads](./other-wdk-downloads.md).
@@ -76,7 +75,7 @@ In Visual Studio versions 17.11.0 and later, the WDK extension should be install
 :::image type="content" source="images/wdk-extension-checkbox-deselected.png" alt-text="Install Windows Driver Kit Visual Studio extension checkbox.":::
 
 > [!TIP]
-> If you can't find driver project templates in Visual Studio, the WDK Visual Studio extension didn't install properly. To resolve this,launch Visual Studio Installer, click "Modify", add "Windows Driver Kits" in the Individual Component tab and Click "Modify"
+> If you can't find driver project templates in Visual Studio, the WDK Visual Studio extension didn't install properly. To resolve this, launch Visual Studio Installer, select **Modify**, add **Windows Driver Kits** in the **Individual Component** tab, and select **Modify**.
 
 ## ![download icon for EWDK](images/download-install.png) Enterprise WDK (EWDK)
 
@@ -91,13 +90,9 @@ The EWDK also requires the .NET Framework version 4.7.2. For more information ab
 After you download the ISO, use these steps to set up your build environment:
 
 1. Mount the EWDK ISO from a drive volume. Network share paths aren't currently supported.
-
 1. Run *LaunchBuildEnv.cmd*.
-
 1. In the environment created in step 2, type **SetupVSEnv**, and then press **Enter**.
-
 1. Launch devenv.exe from the same environment, using the full file path. For example: `"C:\Program Files\Microsoft Visual Studio\2022\%Community|Professional|Enterprise%\Common7\IDE\devenv.exe"`
-
 1. When you're done with the build environment, you might want to eject the ISO.
 
 You can optionally use the Visual Studio interface with the build tools provided in the EWDK. To use the Visual Studio interface, ensure that the Visual Studio major version matches the version of the Visual Studio Build Tools in the EWDK. For example, Visual Studio 2022 works with the EWDK that contains VS17.X build tools. For a list of Visual Studio 2022 version numbers, see [Visual Studio 2022 Releases](/visualstudio/releases/2022/release-history).
@@ -108,16 +103,14 @@ A full kit build string includes as its last two components, the build number an
 
 To build a driver, the *build number* of your SDK installation must match the *build number* of your WDK installation. The QFE values don't need to match unless your driver uses functionality that is only available in the headers included with a later QFE.
 
-A quick way to see the full build string for locally installed kits is to go to Windows settings (Win+I), navigate to **Apps**, then **Installed apps**, and in the **Search** box type `kit`. The full build string appears to the right of the kit name. If you navigate to `C:\Program Files (x86)\Windows Kits\10\Include`, the QFE shown there is hardcoded to `.0`. So, the directory name isn't a reliable way to check your QFE identifier. When you install a kit, the new installation replaces any previously existing installation of the same build number. When you install Visual Studio with the **Desktop development with C++** workload, if the installation payload includes the Windows SDK, the right-hand Summary pane also shows a hardcoded `.0` for QFE.
+A quick way to see the full build string for locally installed kits is to go to Windows settings (Win+I), navigate to **Apps**, then **Installed apps**, and in the **Search** box type `kit`. The full build string appears to the right of the kit name. If you navigate to `C:\Program Files (x86)\Windows Kits\10\Include`, the QFE shown is hardcoded to `.0`. So, the directory name isn't a reliable way to check your QFE identifier. When you install a kit, the new installation replaces any previously existing installation of the same build number. When you install Visual Studio with the **Desktop development with C++** workload, if the installation payload includes the Windows SDK, the right-hand Summary pane also shows a hardcoded `.0` for QFE.
 
 ## Driver samples for Windows
 
 Download the driver samples in one of these ways:
 
 - Go to the driver samples page on [GitHub](https://github.com/Microsoft/Windows-driver-samples), select **Clone or download**, and then select **Download ZIP**.
-
 - Download the [GitHub Extension for Visual Studio](https://visualstudio.github.com/), and then connect to the GitHub repositories.
-
 - Browse the driver samples on the [Microsoft Samples portal](/samples/browse/?products=windows-wdk).
 
 ## Related downloads
