@@ -2,7 +2,7 @@
 title: ".exdicmd (EXDI Command)"
 description: "The .exdicmd sends an Extended Debugging Interface (EXDI) command to the target system using the active EXDI debugging connection."
 keywords: ["EXDI", "command", ".exdicmd (EXDI Command) Windows Debugging"]
-ms.date: 04/29/2022
+ms.date: 10/23/2024
 topic_type:
 - apiref
 ms.topic: reference
@@ -97,6 +97,12 @@ If the target system is not able to understand the command, and *unknown command
 0: kd> .exdicmd target:0:Foo
 Target command response: unknown command: 'Foo'
 ```
+
+## .outmask
+
+If output is not displayed check that the output mask is set to display verbose output using [.outmask (Control Output Mask)](-outmask--control-output-mask-.md).
+
+If the debugger was not launched in verbose mode, the .outmask can be set using `.outmask 7FF`.
 
 ## Remarks
 
