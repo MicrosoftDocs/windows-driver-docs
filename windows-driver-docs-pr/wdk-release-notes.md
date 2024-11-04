@@ -14,9 +14,9 @@ The following are features and bug fix in Windows 11 24H2 WDK update.
 
 ### KASAN Support
 
-Kernel Address Sanitizer (KASAN) is now supported on Windows Drivers. For more information, see [Kasan](./devtest/kasan.md)
+Kernel Address Sanitizer (KASAN) is now supported on Windows Drivers. For more information, see [KASAN](./devtest/kasan.md).
 
-Kernel Address Sanitizer (Kasan), a bug-detection technology in now supported on Windows Drivers, enables the detection of several classes of illegal memory accesses. For more information, see [Kasan](./devtest/kasan.md).
+Kernel Address Sanitizer (Kasan), a bug-detection technology in now supported on Windows Drivers, enables the detection of several classes of illegal memory accesses. For more information, see [KASAN](./devtest/kasan.md).
 
 ### Azure File Sync
 
