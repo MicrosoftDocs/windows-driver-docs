@@ -1,34 +1,34 @@
 ---
 title: Windows Drivers Kit (WDK) release notes
-description: Highlights features in new WDK releases
+description: Highlights the latest features in new WDK releases.
 ms.date: 11/04/2024
 ---
 
-# Windows Driver Kits Release Notes
+# Windows Driver Kit (WDK) release notes
 
-The following are features and bug fix in Windows 11 24H2 WDK update.
+The following features and bug fixes are in Windows 11 24H2 WDK update.
 
 ## Version 10.0.26100.2161
 
 *Released November 4, 2024*.
 
-### KASAN Support
+### KASAN support
 
-Kernel Address Sanitizer (KASAN) is now supported on Windows Drivers. For more information, see [KASAN](./devtest/kasan.md).
+The Kernel Address Sanitizer (KASAN) is now supported on Windows drivers. For more information, see [KASAN](./devtest/kasan.md).
 
-Kernel Address Sanitizer (Kasan), a bug-detection technology in now supported on Windows Drivers, enables the detection of several classes of illegal memory accesses. For more information, see [KASAN](./devtest/kasan.md).
+Kernel Address Sanitizer (Kasan), a bug-detection technology is now supported on Windows drivers, enables the detection of several classes of illegal memory accesses. For more information, see [KASAN](./devtest/kasan.md).
 
-### Azure File Sync
+### Azure file sync
 
 Azure file sync reparse tag definition is updated. For details, see [Azure File Sync](https://support.microsoft.com/topic/azure-file-sync-agent-v18-2-release-july-2024-613d00dc-998b-4885-86b9-73750195baf5).
 
-### WDK MSI Update
+### WDK MSI update
 
-As WDK VSIX is now included as part of Visual Studio individual component, so WDK VSIX no longer ships with WDK MSI. When you try to install WDK MSI on a machine without WDK VSIX installed, the following warning message is shown at the beginning of installation.
+The WDK VSIX no longer ships with the WDK MSI because the WDK VSIX is now included as part of Visual Studio individual components. When you try to install WDK MSI on a machine without WDK VSIX installed, the following warning message is shown at the beginning of installation.
 
 :::image type="content" source="images/install_wdk_vsix_msg.png" alt-text="Screenshot of the WDK VSIX install notification.":::
 
-However, if WDK is installed on a machine with WDK VSIX installed, a message confirming successful installation is displayed.
+However, if the WDK is installed on a machine with the WDK VSIX installed, a message confirming successful installation is displayed.
 
 :::image type="content" source="images/WDK_Install_After_VSIX.png" alt-text="Screenshot of the WDK install success message.":::
 
@@ -36,13 +36,13 @@ However, if WDK is installed on a machine with WDK VSIX installed, a message con
 
 *Released October 14, 2024*.
 
-### Audio Headers
+### Audio headers
 
-Added AudioAggregation.h and AudioSensors.h for enabling SoundWire Device Class for Audio (SDCA) speaker aggregation and ultrasound support.
+Added *audioAggregation.h* and *audioSensors.h* for enabling SoundWire Device Class for Audio (SDCA) speaker aggregation and ultrasound support.
 
-### EWDK VS Build Tools
+### EWDK VS build tools
 
-The Visual Studio Build tools in EWDK are updated to version 17.10.5.
+The Visual Studio build tools in EWDK are updated to version 17.10.5.
 
 ## Version 10.0.26100.1591
 
@@ -54,9 +54,9 @@ The WDK VSIX is added as a Visual Studio individual component starting with the 
 
 :::image type="content" source="images/vs-wdk-selection.png" alt-text="Screenshot of Visual Studio WDK individual component selected.":::
 
-### Static Tools Logo - Creating a Driver Verification Log
+### Static Tools Logo - Creating a driver verification log
 
-To create a Driver Verification Log (DVL) for the Static Tools Logo Test, see the [Creating a Driver Verification Log](./develop/creating-a-driver-verification-log.md) article.
+To create a driver verification log (DVL) for the Static Tools Logo Test, see the [Creating a Driver Verification Log](./develop/creating-a-driver-verification-log.md) article.
 
 Navigating to **Extensions > Drivers > Create Driver Verification Log** in Visual Studio now triggers the following redirection message.
 
@@ -79,6 +79,6 @@ To support UMDF WiFiCX drivers, we added UMDF public header and library support.
 - Created a new UMDF version of WifiCxTlvGenParse.lib.
 - Created UMDF equivalents of KMDF's dot11wificxintf.h, dot11wificxtypes.hpp, and WifiCxTlvGenParse.lib.
 
-### Bug fixes for Device Fundamentals and WDTF test framework
+### Bug fixes for device fundamentals and WDTF test framework
 
 Bugs associated with DevFund tests were fixed. This change improves the WDK bring up experience.
