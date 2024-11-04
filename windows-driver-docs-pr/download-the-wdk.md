@@ -75,7 +75,7 @@ In Visual Studio versions 17.11.0 and later, the WDK extension should be install
 :::image type="content" source="images/wdk-extension-checkbox-deselected.png" alt-text="Install Windows Driver Kit Visual Studio extension checkbox.":::
 
 > [!TIP]
-> If you can't find driver project templates in Visual Studio, the WDK Visual Studio extension didn't install properly. To resolve this,launch Visual Studio Installer, click "Modify", add "Windows Driver Kits" in the Individual Component tab and Click "Modify"
+> If you can't find driver project templates in Visual Studio, the WDK Visual Studio extension didn't install properly. To resolve this, launch Visual Studio Installer, select **Modify**, add **Windows Driver Kits** in the **Individual Component** tab, and select **Modify**.
 
 ## ![download icon for EWDK](images/download-install.png) Enterprise WDK (EWDK)
 
