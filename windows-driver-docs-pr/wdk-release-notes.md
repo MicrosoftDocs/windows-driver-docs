@@ -10,7 +10,7 @@ The following are features and bug fix in Windows 11 24H2 WDK update
 
 ## Version 10.0.26100.2161
 
-*Released November 4, 2024*.
+*Released November 4, 2024*
 
 ### Kasan Support
 
@@ -25,14 +25,16 @@ Azure file sync reparse tag definition is updated. For details, see [Azure File 
 ### WDK MSI Update
 
 As WDK VSIX is now included as part of Visual Studio individual component, consequently WDK VSIX will no longer ship with WDK MSI. When you try to install WDK MSI on a machine without WDK VSIX installed, the following warning message will be shown at the begining of installation
-![WDK VSIX Install Notification](images/install_wdk_vsix_msg.png)
+
+:::image type="content" source="images/install_wdk_vsix_msg.png" alt-text="Screenshot of the WDK VSIX install notification.":::
 
 However, if WDK is installed on a machine with WDK VSIX installed, there will be only a graceful message confirming successful installation.
-![WDK Install Success Message](images/WDK_Install_After_VSIX.png)
+
+:::image type="content" source="images/WDK_Install_After_VSIX.png" alt-text="Screenshot of the WDK install success message.":::
 
 ## Version 10.0.26100.1882
 
-*Released October 14, 2024*.
+*Released October 14, 2024*
 
 ### Audio Headers
 
@@ -44,7 +46,7 @@ The Visual Studio Build tools in EWDK are updated to version 17.10.5.
 
 ## Version 10.0.26100.1591
 
-*Released September 18, 2024*.
+*Released September 18, 2024*
 
 ### WDK VSIX installation
 
