@@ -14,6 +14,7 @@ ms.date: 11/04/2024
 The WDK is used to develop, test, and deploy drivers for Windows. The most recent public release is WDK 10.0.26100.2161 (released November 4, 2024).
 
 - You can install and run this WDK on Windows 7 and later.
+
 - You can use this kit to build drivers for Windows 10, Windows Server 2016, and later client and server versions.
 
 To target Windows 8.1, Windows 8, and Windows 7, install an older WDK and an older version of Visual Studio either on the same machine or on a separate machine. For links to older kits, see [Other WDK downloads](./other-wdk-downloads.md).
