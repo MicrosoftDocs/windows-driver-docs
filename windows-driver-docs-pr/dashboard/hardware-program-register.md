@@ -57,7 +57,7 @@ To register for the Hardware Developer Program:
 
    :::image type="content" source="./images/hardware-program-register/registration-ev-cert.png" alt-text="Screenshot of the 'Get a code signing certificate' section in the Hardware Developer Program registration process.":::
 
-1. Sign and upload your file. Follow the steps as directed on the **Registration - Sign and upload your file** page.
+1. Sign and upload your file. Follow the steps as directed on the **[Manage code signing certificates](code-signing-cert-manage.md)** page.
 
     > [!NOTE]
     > You can sign the signable file with your certificate offline and return later to upload it. When you return, be sure to sign in with your Microsoft Entra ID global administrator account to resume the process.

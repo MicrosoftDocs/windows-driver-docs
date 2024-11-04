@@ -1231,6 +1231,8 @@
           href: storport-pagedcode.md
         - name: "StorPortStatusPending"
           href: storport-storportstatuspending.md  
+  - name: "Kernel Address Sanitizer"
+    href: kasan.md
 - name: "Additional Driver Verification Tools"
 # Auto-expanded node
   items: 
