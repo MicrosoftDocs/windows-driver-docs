@@ -5,7 +5,7 @@ keywords:
 - Windows Driver Kit
 - previous versions
 - WDK
-ms.date: 10/10/2024
+ms.date: 11/4/2024
 ---
 
 # Other WDK downloads
@@ -99,6 +99,7 @@ develop, build, package, deploy, test, and debug drivers.
 
 | Released with      | WDK and related downloads                       |
 |--------------------------|-------------------------------------------------|
+| Windows 11, Version 24H2 | [WDK 10.0.26100.2161 (released November 4, 2024)](https://go.microsoft.com/fwlink/?linkid=2294834)|
 | Windows 11, Version 24H2 | [WDK 10.0.26100.1882 (released October 14, 2024)](https://go.microsoft.com/fwlink/?linkid=2290025)|
 | Windows 11, Version 24H2 | [WDK 10.0.26100.1591 (released September 18, 2024)](https://go.microsoft.com/fwlink/?linkid=2286137)|
 | Windows 11, Version 24H2 | [WDK 10.0.26100.1 (released May 2024)](https://go.microsoft.com/fwlink/?linkid=2272234)|
@@ -142,6 +143,7 @@ For more information about the EWDK, see
 
 | Versions of Windows               | EWDK                              |
 |-----------------------------------|-----------------------------------|
+| Windows 11, version 24H2 | [Windows 11, version 24H2 (released November 2024) EWDK](/legal/windows/hardware/enterprise-wdk-license-2022)
 | Windows 11, version 24H2 | [Windows 11, version 24H2 (released October 2024) EWDK](/legal/windows/hardware/enterprise-wdk-license-2022)
 | Windows 11, version 24H2 | [Windows 11, version 24H2 (released September 2024) EWDK](/legal/windows/hardware/enterprise-wdk-license-2022)
 | Windows 11, version 24H2 | [Windows 11, version 24H2 (released May 2024) EWDK](/legal/windows/hardware/enterprise-wdk-license-2022)

@@ -43,10 +43,12 @@
         href: setting-up-a-usb-3-0-debug-cable-connection.md
       - name: "Setting Up 2PF Kernel-Mode Debugging using KDNET"
         href: setting-up-kernel-mode-debugging-using-2pf.md
-      - name: "Setting Up QEMU Kernel-Mode Debugging using EXDI"
-        href: setting-up-qemu-kernel-mode-debugging-using-exdi.md
       - name: "Configuring the EXDI Debugger Transport"
         href: configuring-the-exdi-debugger-transport.md
+      - name: "EXDI XML Configuration files"
+        href: exdi-xml-configuration-files.md
+      - name: "Setting Up QEMU Kernel-Mode Debugging Using EXDI"
+        href: setting-up-qemu-kernel-mode-debugging-using-exdi.md
       - name: "Linux live remote process debugging"
         href: linux-live-remote-process-debugging.md
       - name: "Linux symbols and sources"

@@ -9,12 +9,14 @@ keywords:
 - SPI
 - Serial Peripheral Interface
 - Simple Peripheral Bus
-ms.date: 01/11/2024
+ms.date: 10/31/2024
 ---
 
 # Introduction to HID over SPI
 
-Microsoft has created a HID miniport driver that allows devices to communicate over a Serial Peripheral Interface (SPI) bus.
+Learn how to utilize Human Interface Device (HID) class devices over a Serial Peripheral Interface (SPI). This guide covers the benefits of using SPI for HID devices, including increased bandwidth, low latency, and ease of hardware implementation. Discover how to integrate various HID devices such as keyboards, mice, and sensors using the HID miniport driver provided by Microsoft.
+
+Microsoft created a HID miniport driver that allows devices to communicate over a Serial Peripheral Interface (SPI) bus.
 
 SPI offers the following features:
 
@@ -27,16 +29,16 @@ This article describes how to use Human Interface Device (HID) class devices ove
 
 - Keyboards and pointing devices such as standard mouse devices, trackballs, and joysticks
 - Front-panel controls like knobs, switches, buttons, and sliders
-- Controls that might be found on devices like telephones, remote controls, games, or simulation devices, for example, data gloves, steering wheels, keypads and rudder pedals
-- Devices that may not require human interaction but provide data in a similar format to HID class devices, for example, bar-code readers, thermometers, or other forms of sensors
+- Controls that might be found on devices like telephones, remote controls, games, or simulation devices. For example, data gloves, steering wheels, keypads, and rudder pedals.
+- Devices that might not require human interaction but provide data in a similar format to HID class devices, for example, bar-code readers, thermometers, or other forms of sensors
 
-The HID protocol was originally targeted at human interface devices. However, the HID protocol is very useful for any application that requires low-latency input-output operations to an external interface and the ability for that device to describe itself. Typical HID class devices include indicators, specialized displays, audio feedback, and force or tactile feedback.
+The HID protocol was originally targeted at human interface devices. However, the HID protocol is useful for any application that requires low-latency input-output operations to an external interface and the ability for that device to describe itself. Typical HID class devices include indicators, specialized displays, audio feedback, and force or tactile feedback.
 
-The HID protocol is a asymmetric and identifies roles for the host and the device. The protocol will define a format (descriptors) for the device to describe its capabilities to the host. Once the host understands the format of communication with the device, it programs the device for sending data back to the host. The HID protocol also identifies ways of sending data to the device as well as status checks for identifying the current state of the device.
+The HID protocol is asymmetric and identifies roles for the host and the device. The protocol defines a format (descriptors) for the device to describe its capabilities to the host. Once the host understands the format of communication with the device, it programs the device for sending data back to the host. The HID protocol also identifies ways of sending data to the device and status checks for identifying the current state of the device.
 
 ## Class extension
 
-You can add to the functionality of the included HIDSPI Windows driver by using the HIDSPICx class extension. For more information see the [HIDSPICx API](/windows-hardware/drivers/ddi/hidspicx).
+You can add to the functionality of the included HIDSPI Windows driver by using the HIDSPICx class extension. For more information, see the [HIDSPICx API](/windows-hardware/drivers/ddi/hidspicx).
 
 ## HID over SPI specification
 
