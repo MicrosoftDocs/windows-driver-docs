@@ -10,21 +10,21 @@ The following are features and bug fix in Windows 11 24H2 WDK update.
 
 ## Version 10.0.26100.2161
 
-*Released November 4, 2024*
+*Released November 4, 2024*.
 
 ### KASAN Support
 
 Kernel Address Sanitizer (KASAN) is now supported on Windows Drivers. For more information, see [Kasan](./devtest/kasan.md)
 
-Kernel Address Sanitizer (Kasan), a bug-detection technology in now supported on Windows Drivers, enables the detection of several classes of illegal memory accesses. For more information, see [Kasan](./devtest/kasan.md)
+Kernel Address Sanitizer (Kasan), a bug-detection technology in now supported on Windows Drivers, enables the detection of several classes of illegal memory accesses. For more information, see [Kasan](./devtest/kasan.md).
 
 ### Azure File Sync
 
-Azure file sync reparse tag definition is updated. For details, see [Azure File Sync](https://support.microsoft.com/topic/azure-file-sync-agent-v18-2-release-july-2024-613d00dc-998b-4885-86b9-73750195baf5)
+Azure file sync reparse tag definition is updated. For details, see [Azure File Sync](https://support.microsoft.com/topic/azure-file-sync-agent-v18-2-release-july-2024-613d00dc-998b-4885-86b9-73750195baf5).
 
 ### WDK MSI Update
 
-As WDK VSIX is now included as part of Visual Studio individual component, so WDK VSIX no longer ships with WDK MSI. When you try to install WDK MSI on a machine without WDK VSIX installed, the following warning message is shown at the beginning of installation
+As WDK VSIX is now included as part of Visual Studio individual component, so WDK VSIX no longer ships with WDK MSI. When you try to install WDK MSI on a machine without WDK VSIX installed, the following warning message is shown at the beginning of installation.
 
 :::image type="content" source="images/install_wdk_vsix_msg.png" alt-text="Screenshot of the WDK VSIX install notification.":::
 
@@ -34,7 +34,7 @@ However, if WDK is installed on a machine with WDK VSIX installed, a message con
 
 ## Version 10.0.26100.1882
 
-*Released October 14, 2024*
+*Released October 14, 2024*.
 
 ### Audio Headers
 
@@ -46,7 +46,7 @@ The Visual Studio Build tools in EWDK are updated to version 17.10.5.
 
 ## Version 10.0.26100.1591
 
-*Released September 18, 2024*
+*Released September 18, 2024*.
 
 ### WDK VSIX installation
 
