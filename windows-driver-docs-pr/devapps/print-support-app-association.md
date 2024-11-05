@@ -115,6 +115,9 @@ PrinterHardwareId2 = "PSA_XeroxAltaLink_B8055C036"
 PrinterHardwareId3 = "PSA_BrotherMFC-J775DWF678"
 ```
 
+> [!Note]
+> `{A925764B-88E0-426D-AFC5-B39768BE59EB}, 1` is a predefined property used in the PSA association process for a printer using INF.
+
 ### Test install extension INF on Windows 11
 
 1. Import your root certificate to the trusted store, if you used a self-signed certificate to sign the .cat file.
