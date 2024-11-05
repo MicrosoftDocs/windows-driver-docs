@@ -9,52 +9,63 @@ keywords:
 - bug check WDK file systems
 - address validation WDK file systems
 - fast I/O WDK file systems
-ms.date: 04/20/2017
+ms.date: 11/04/2024
 ---
 
 # Buffer Handling
 
+One of the most common errors within any driver relates to buffer handling, where buffers are invalid or too small. These errors can allow buffer overflows or cause system crashes, which can compromise system security. This article discusses some of the common problems with buffer handling and how to avoid them. It also identifies WDK sample code that demonstrates proper buffer handling techniques.
 
-## <span id="ddk_buffer_handling_if"></span><span id="DDK_BUFFER_HANDLING_IF"></span>
+## Buffer types and invalid addresses
 
+From a driver's perspective, buffers come in one of two varieties:
 
-Perhaps the most common error within any driver relates to buffer handling where buffers are invalid or too small. These errors can allow buffer overflows or cause system crashes, which constitute security compromises for the system.
+* Paged buffers, which might or might not be resident in memory.
 
-From the perspective of a driver, buffers come in one of two varieties:
+* Nonpaged buffers, which must be resident in memory.
 
--   Paged buffers, which may or may not be resident in memory.
+An invalid memory address isn't paged nor nonpaged. As the operating system works to resolve a page fault caused by incorrect buffer handling, it takes the following steps:
 
--   Non-paged buffers, which must be resident in memory.
+* It isolates the invalid address into one of the "standard" address ranges (paged kernel addresses, nonpaged kernel addresses, or user addresses).
 
-Of course, an invalid address is neither paged nor nonpaged, but as the operating system begins to work toward resolving the page fault such a buffer causes, it will isolate the invalid address into one of the "standard" address ranges (paged kernel addresses, non-paged kernel addresses, or user addresses) and raise the appropriate type of error. Buffer errors are always handled either by a bug check (PAGE\_FAULT\_IN\_NONPAGED\_AREA, for example) or by an exception (STATUS\_ACCESS\_VIOLATION, for example). In the case of a bug check, the system will halt operation. In the case of an exception, the stack-based exception handlers will be invoked, and if none of them handle the exception, then a bug check will be invoked.
+* It raises the appropriate type of error. The system always handles buffer errors either by a bug check such as PAGE_FAULT_IN_NONPAGED_AREA, or by an exception such as STATUS_ACCESS_VIOLATION. If the error is a bug check, the system will halt operation. In the case of an exception, the system invokes stack-based exception handlers. If none of exception handlers handle the exception, the system invokes a bug check.
 
-Regardless, any access path that may be called by an application program that causes the driver to lead to a bug check is a security violation within the driver. This allows an application to cause denial-of-service attacks to the entire system.
+Regardless, any access path that an application program can call that causes the driver to lead to a bug check is a security violation within the driver. Such a violation allows an application to cause denial-of-service attacks to the entire system.
 
-One of the most common problems in this area is that driver writers assume too much about the operating environment. This could include:
+## Common assumptions and mistakes
 
--   Checking that the high bit is set in the address. This does not work on x86-based computers where the system is using Four Gigabyte Tuning (4GT) by setting the /3GB option in the Boot.ini file. In that case, user-mode addresses set the high bit for the third gigabyte (GB) of the address space.
+One of the most common problems in this area is that driver writers assume too much about the operating environment. Some common assumptions and mistakes include:
 
--   Using [**ProbeForRead**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforread) and [**ProbeForWrite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforwrite) to validate the address. While this will ensure that the address is a valid user-mode address at the time of the probe, there is nothing that requires it to remain valid after the probe operation. Thus, this technique introduces a subtle race condition that can lead to periodic irreproducible crashes. **ProbeForRead** and **ProbeForWrite** calls are necessary for a different reason: to validate whether the address is a user-mode address and that the length of the buffer is within the user address range. If the probe is omitted, users can pass in valid kernel-mode addresses, which will not be caught by a \_\_try and \_\_except block (structured exception handling) and will open up a large security hole. So **ProbeForRead** and **ProbeForWrite** calls are necessary to ensure alignment and that the user-mode address, plus the length, is within the user address range. However, a \_\_try and \_\_except block is needed to guard against access.
+* A driver simply checking whether the high bit is set in the address. Relying on a fixed bit pattern to determine address type doesn't work on all systems or scenarios. For example, this check doesn't work on x86-based computers when the system is using [Four Gigabyte Tuning](/windows/win32/memory/4-gigabyte-tuning) (4GT). When 4GT is being used, user-mode addresses set the high bit for the third gigabyte of the address space.
 
-    Note that [**ProbeForRead**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforread) only validates that the address and length fall within the possible user-mode address range (slightly under 2 GB for a system without 4GT, for example), not whether the memory address is valid. In contrast, [**ProbeForWrite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforwrite) will try to access the first byte in each page of the length specified to verify that these are valid memory addresses.
+* A driver solely using [**ProbeForRead**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforread) and [**ProbeForWrite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforwrite) to validate the address. These calls ensure that the address is a valid user-mode address at the time of the probe. However, there are no guarantees that this address will remain valid after the probe operation. Thus, this technique introduces a subtle race condition that can lead to periodic irreproducible crashes.
 
--   Relying on memory manager functions ([**MmIsAddressValid**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-mmisaddressvalid), for example) to ensure that the address is valid. As with the probe functions, this introduces a race condition that can lead to irreproducible crashes.
+  **ProbeForRead** and **ProbeForWrite** calls are still necessary. If a driver omits the probe, users can pass in valid kernel-mode addresses that a ```__try``` and ```__except``` block (structured exception handling) won't catch and thus open up a large security hole.
 
--   Failing to use structured exception handling. The \_\_try and \_\_except functions within the compiler use operating system-level support for exception handling. Exceptions at kernel level are thrown back by calling [**ExRaiseStatus**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exraisestatus), or one of the related functions. A driver failing to use structured exception handling around any call that may raise an exception will lead to a bug check (typically KMODE\_EXCEPTION\_NOT\_HANDLED).
+  The bottom line is that both probing and structured exception handling are necessary:
+  
+  * Probing validates that the address is a user-mode address and that the length of the buffer is within the user address range.
 
-    Note that it is mistake to use structured exception handling around code that is not expected to raise errors. This will just mask real bugs that would otherwise be found. Putting a \_\_try and \_\_except wrapper at the top dispatch level of your routine is not the correct solution to this problem, although it is sometimes the reflex solution tried by driver writers.
+  * A ```__try/__except``` block guards against access.
 
--   Relying upon the contents of user memory remaining stable. For example, suppose a driver were to write a value into a user-mode memory location, and then later in the same routine refer to that memory location. A malicious application could actively modify that memory and, as a result, cause the driver to crash.
+  Note that [**ProbeForRead**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforread) only validates that the address and length fall within the possible user-mode address range (slightly under 2 GB for a system without 4GT, for example), not whether the memory address is valid. In contrast, [**ProbeForWrite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforwrite) tries to access the first byte in each page of the length specified to verify that these bytes are valid memory addresses.
 
-For file systems, these problems are particularly severe because they typically rely upon directly accessing user buffers (the METHOD\_NEITHER transfer method). Such drivers directly manipulate user buffers and thus must incorporate precautionary methods for buffer handling in order to avoid operating system-level crashes. Fast I/O always passes raw memory pointers, so drivers need to protect against similar problems if fast I/O is supported.
+* A driver relying on memory manager functions such as [**MmIsAddressValid**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-mmisaddressvalid) to ensure that the address is valid. As described for the probe functions, this situation introduces a race condition that can lead to irreproducible crashes.
 
-The WDK contains numerous examples of buffer validation in the FASTFAT and CDFS file system sample code, including:
+* A driver failing to use structured exception handling. The ```__try/except``` functions within the compiler use operating system-level support for exception handling. Kernel-level exceptions are thrown back to the system through a call to [**ExRaiseStatus**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exraisestatus) or one of the related functions. A driver failing to use structured exception handling around any call that might raise an exception will lead to a bug check (typically KMODE_EXCEPTION_NOT_HANDLED).
 
--   The **FatLockUserBuffer** function in fastfat\\deviosup.c uses [**MmProbeAndLockPages**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmprobeandlockpages) to lock down the physical pages behind the user buffer and [**MmGetSystemAddressForMdlSafe**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetsystemaddressformdlsafe) in **FatMapUserBuffer** to create a virtual mapping for the pages that are locked down.
+  It's a mistake to use structured exception handling around code that isn't expected to raise errors. This usage will just mask real bugs that would otherwise be found. Putting a ```__try/__except``` wrapper at the top dispatch level of your routine isn't the correct solution to this problem, although it's sometimes the reflex solution tried by driver writers.
 
--   The **FatGetVolumeBitmap** function in fastfat\\fsctl.c uses [**ProbeForRead**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforread) and [**ProbeForWrite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforwrite) to validate user buffers in the defragmentation API.
+* A driver assuming that the contents of user memory will remain stable. For example, suppose a driver wrote a value into a user-mode memory location, and then later in the same routine referred to that memory location. A malicious application could actively modify that memory after the write and, as a result, cause the driver to crash.
 
--   The **CdCommonRead** function in cdfs\\read.c uses \_\_try and \_\_except around code to zero user buffers. Note that the sample code in **CdCommonRead** appears to use the try and except keywords. In the WDK environment, these keywords in C are defined in terms of the compiler extensions \_\_try and \_\_except. Anyone using C++ code must use the native compiler types to handle exceptions properly, as \_\_try is a C++ keyword, but not a C keyword, and will provide a form of C++ exception handling that is not valid for kernel drivers.
+For file systems, these problems are severe because file systems typically rely upon directly accessing user buffers (the METHOD_NEITHER transfer method). Such drivers directly manipulate user buffers and thus must incorporate precautionary methods for buffer handling in order to avoid operating system-level crashes. Fast I/O always passes raw memory pointers, so drivers need to protect against similar problems if fast I/O is supported.
 
- 
+## Sample code for buffer handling
 
+The WDK contains numerous examples of buffer validation in the [*fastfat*](https://github.com/microsoft/windows-driver-samples/tree/main/filesys/fastfat) and [*CDFS file system driver*](https://github.com/microsoft/Windows-driver-samples/blob/main/filesys/cdfs/README.md) sample code, including:
+
+* The **FatLockUserBuffer** function in *fastfat\\deviosup.c* uses [**MmProbeAndLockPages**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmprobeandlockpages) to lock down the physical pages behind the user buffer and [**MmGetSystemAddressForMdlSafe**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetsystemaddressformdlsafe) in **FatMapUserBuffer** to create a virtual mapping for the pages that are locked down.
+
+* The **FatGetVolumeBitmap** function in *fastfat\\fsctl.c* uses [**ProbeForRead**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforread) and [**ProbeForWrite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforwrite) to validate user buffers in the defragmentation API.
+
+* The **CdCommonRead** function in *cdfs\\read.c* uses ```__try``` and ```__except``` around code to zero user buffers. The sample code in **CdCommonRead** appears to use the ```try``` and ```except``` keywords. In the WDK environment, these keywords in C are defined in terms of the compiler extensions ```__try``` and ```__except```. Anyone using C++ code must use the native compiler types to handle exceptions properly, as ```__try``` is a C++ keyword, but not a C keyword, and will provide a form of C++ exception handling that isn't valid for kernel drivers.
