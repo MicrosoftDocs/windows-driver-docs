@@ -1,7 +1,7 @@
 ---
 title: Windows Drivers Kit (WDK) release notes
 description: Highlights the latest features in new WDK releases.
-ms.date: 11/04/2024
+ms.date: 11/05/2024
 ---
 
 # Windows Driver Kit (WDK) release notes
@@ -14,16 +14,15 @@ The following features and bug fixes are in Windows 11 24H2 WDK update.
 
 ### KASAN support
 
-The Kernel Address Sanitizer (KASAN) is now supported on Windows drivers. For more information, see [KASAN](./devtest/kasan.md).
-
-Kernel Address Sanitizer (Kasan), a bug-detection technology is now supported on Windows drivers, enables the detection of several classes of illegal memory accesses. For more information, see [KASAN](./devtest/kasan.md).
+Kernel Address Sanitizer (KASAN), a bug-detection technology now supported on Windows drivers, enables the detection of several classes of illegal memory access. For more information, see [Kernel Address Sanitizer (KASAN)](./devtest/kasan.md).
 
 ### Azure file sync
 
 Azure file sync reparse tag definition is updated. For details, see [Azure File Sync](https://support.microsoft.com/topic/azure-file-sync-agent-v18-2-release-july-2024-613d00dc-998b-4885-86b9-73750195baf5).
 
-### EWDK VS build tools
-The Visual Studio build tools in EWDK are updated to version 17.11.4
+### EWDK VS build tools (10.0.26100.2161)
+
+The Visual Studio build tools in EWDK are updated to version 17.11.4.
 
 ### WDK MSI update
 
@@ -43,7 +42,7 @@ However, if the WDK is installed on a machine with the WDK VSIX installed, a mes
 
 Added *audioAggregation.h* and *audioSensors.h* for enabling SoundWire Device Class for Audio (SDCA) speaker aggregation and ultrasound support.
 
-### EWDK VS build tools
+### EWDK VS build tools (10.0.26100.1882)
 
 The Visual Studio build tools in EWDK are updated to version 17.10.5.
 
