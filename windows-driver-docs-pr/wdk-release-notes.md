@@ -22,6 +22,9 @@ Kernel Address Sanitizer (Kasan), a bug-detection technology is now supported on
 
 Azure file sync reparse tag definition is updated. For details, see [Azure File Sync](https://support.microsoft.com/topic/azure-file-sync-agent-v18-2-release-july-2024-613d00dc-998b-4885-86b9-73750195baf5).
 
+### EWDK VS build tools
+The Visual Studio build tools in EWDK are updated to version 17.11.4
+
 ### WDK MSI update
 
 The WDK VSIX no longer ships with the WDK MSI because the WDK VSIX is now included as part of Visual Studio individual components. When you try to install WDK MSI on a machine without WDK VSIX installed, the following warning message is shown at the beginning of installation.
