@@ -1,7 +1,7 @@
 ---
 title: Task Manager Live Memory Dump
 description: This topic describes how to take a live kernel memory dump using task manger.
-ms.date: 09/18/2023
+ms.date: 11/05/2024
 ---
 
 # Task Manager live memory dump

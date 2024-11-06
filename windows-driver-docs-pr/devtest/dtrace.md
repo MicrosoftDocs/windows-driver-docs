@@ -10,7 +10,7 @@ keywords:
 - software tracing WDK , formatting messages
 - tracing WDK , DTrace
 - trace message format files WDK
-ms.date: 11/14/2019
+ms.date: 11/05/2024
 ---
 
 # DTrace on Windows
@@ -43,13 +43,13 @@ by Richard McDougall, Jim Mauro and Brendan Gregg
 
 Use the feedback hub to request new features or to report any problems or bugs with Windows DTrace.
 
-1. Launch the feedback hub. Go to search, enter the word *feedback*, and then select **Feedback Hub**.
+1. To launch the feedback hub in Windows, Go to search, enter the word *feedback*, and then select **Feedback Hub**.
 2. Select either *Suggest a feature* or *Report a problem*.
 3. Provide a detailed, specific description of the issue or suggestion.
 
 ## DTrace Windows Extensions
 
-The following are some of the providers available on Windows and what they instrument.
+The following are some of the Dtrace providers available on Windows and what they instrument.
 
 - syscall – NTOS system calls
 
@@ -59,7 +59,7 @@ The following are some of the providers available on Windows and what they instr
 
 - etw (Event Tracing for Windows) – Allows probes to be defined for ETW This provider helps to leverage existing operating system instrumentation in DTrace.
 
-### SYSCALL
+### SYSCALL – NTOS system calls
 
 SYSCALL provides a pair of probes for each system call: an entry probe that fires before the system call is entered, and a return probe that fires after the system call has completed but before control has transferred back to user-level. For all SYSCALL probes, the function name is set to be the name of the instrumented system call and the module name is the module in which the function exists. The names of the system calls as provided by the SYSCALL provider may be found by typing the command `dtrace.exe -l -P syscall` from the command prompt. Note that the probe name is lower case syscall. The command `dtrace -ln syscall:::` will also list all the probes and their parameters available from the syscall provider.
 
