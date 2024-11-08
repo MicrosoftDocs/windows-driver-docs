@@ -14,7 +14,7 @@
     href: /windows-hardware/drivers/ddi/_bltooth/
 - name: "Bluetooth Classic Audio"
   href: bluetooth-classic-audio.md
-- name: "Bluetooth Low Energy Audio"
+- name: "Bluetooth Low Energy (LE)"
   items:
   - name: "Bluetooth Low Energy Overview"
     href: bluetooth-low-energy-overview.md
