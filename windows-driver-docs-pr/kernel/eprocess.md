@@ -2,7 +2,7 @@
 title: Windows Kernel Opaque Structures
 description: Windows kernel opaque structures
 keywords: ["EPROCESS", "ETHREAD", "EX_RUNDOWN_REF", "EX_TIMER", "FAST_MUTEX", "IO_CSQ", "IO_CSQ_IRP_CONTEXT", "IO_WORKITEM", "KBUGCHECK_CALLBACK_RECORD", "KBUGCHECK_REASON_CALLBACK_RECORD", "KDPC", "KFLOATING_SAVE", "KGUARDED_MUTEX", "KINTERRUPT", "KLOCK_QUEUE_HANDLE", "KTIMER", "LOOKASIDE_LIST_EX", "NPAGED_LOOKASIDE_LIST", "OBJECT_TYPE", "PAGED_LOOKASIDE_LIST", "RTL_BITMAP", "RTL_RUN_ONCE", "SECURITY_SUBJECT_CONTEXT", "SLIST_HEADER", "XSTATE_SAVE"]
-ms.date: 02/26/2023
+ms.date: 11/08/2024
 ---
 
 # Windows kernel opaque structures
@@ -57,9 +57,11 @@ All members of this structure are opaque to drivers.
 
 The following **Ex*Xxx*Timer** routines require a pointer to a system-allocated **EX_TIMER** structure as an input parameter:
 
-* [**ExSetTimer**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exsettimer)
-* [**ExCancelTimer**](/windows-hardware/drivers/ddi/wdm/nf-wdm-excanceltimer)
-* [**ExDeleteTimer**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exdeletetimer)
+- [**ExSetTimer**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exsettimer)
+
+- [**ExCancelTimer**](/windows-hardware/drivers/ddi/wdm/nf-wdm-excanceltimer)
+
+- [**ExDeleteTimer**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exdeletetimer)
 
 The operating system creates **EX_TIMER**-based timer objects. To get such a timer object, your driver calls the [**ExAllocateTimer**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatetimer) routine. When this object is no longer needed, the driver is responsible for deleting the object by calling **ExDeleteTimer**.
 
@@ -195,9 +197,7 @@ The [Related articles](#related-articles) section contains a list of the routine
 
 For more information about lookaside lists, see [Using Lookaside Lists](using-lookaside-lists.md).
 
-On 64-bit platforms, this structure must be 16-byte aligned.
-
-Supported starting with Windows Vista.
+On 64-bit platforms, this structure must be 16 byte aligned.
 
 Header: *Wdm.h*. Include: *Wdm.h*, *Ntddk.h*, *Ntifs.h*.
 
@@ -209,11 +209,9 @@ Use [**ExInitializeNPagedLookasideList**](/windows-hardware/drivers/ddi/wdm/nf-w
 
 Drivers must always explicitly free any lookaside lists they create before unloading. It's a serious programming error to do otherwise. Use [**ExDeleteNPagedLookasideList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exdeletenpagedlookasidelist) to free the list.
 
-Drivers can also use lookaside lists for paged pool. Starting with Windows 2000, a **PAGED_LOOKASIDE_LIST** structure describes a lookaside list that contains paged buffers. Starting in Windows Vista, a **LOOKASIDE_LIST_EX** structure can describe a lookaside list that contains either paged or nonpaged buffers. For more information, see [Using Lookaside Lists](using-lookaside-lists.md).
+Drivers can also use lookaside lists for paged pool. A **PAGED_LOOKASIDE_LIST** structure describes a lookaside list that contains paged buffers. A **LOOKASIDE_LIST_EX** structure can describe a lookaside list that contains either paged or nonpaged buffers. For more information, see [Using Lookaside Lists](using-lookaside-lists.md).
 
-On 64-bit platforms, this structure must be 16-byte aligned.
-
-Supported starting with Windows 2000.
+On 64-bit platforms, this structure must be 16 byte aligned.
 
 Header: *Wdm.h*. Include: *Wdm.h*, *Ntddk.h*, *Ntifs.h*.
 
@@ -231,11 +229,9 @@ Use [**ExInitializePagedLookasideList**](/windows-hardware/drivers/ddi/wdm/nf-wd
 
 Drivers must always explicitly free any lookaside lists they create before unloading. It's a serious programming error to do otherwise. Use [**ExDeletePagedLookasideList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exdeletepagedlookasidelist) to free the list.
 
-Drivers can also use lookaside lists for nonpaged pool. Starting with Windows 2000, an **NPAGED_LOOKASIDE_LIST** structure describes a lookaside list that contains nonpaged buffers. Starting with Windows Vista, a **LOOKASIDE_LIST_EX** structure can describe a lookaside list that contains either paged or nonpaged buffers. For more information, see [Using Lookaside Lists](using-lookaside-lists.md).
+Drivers can also use lookaside lists for nonpaged pool. An **NPAGED_LOOKASIDE_LIST** structure describes a lookaside list that contains nonpaged buffers. A **LOOKASIDE_LIST_EX** structure can describe a lookaside list that contains either paged or nonpaged buffers. For more information, see [Using Lookaside Lists](using-lookaside-lists.md).
 
-On 64-bit platforms, this structure must be 16-byte aligned.
-
-Supported starting with Windows 2000.
+On 64-bit platforms, this structure must be 16 byte aligned.
 
 Header: *Wdm.h*. Include: *Wdm.h*, *Ntddk.h*, *Ntifs.h*.
 
@@ -253,13 +249,11 @@ Don't directly access the members of this structure. Drivers that have dependenc
 
 The **RTL_BITMAP** structure serves as a header for a general-purpose, one-dimensional bitmap of arbitrary length. A driver can use such a bitmap as an economical way to keep track of a set of reusable items. For example, a file system can use bitmaps to track which clusters and sectors on a hard disk have already been allocated to hold file data.
 
-For a list of the **Rtl*Xxx*** routines that use **RTL_BITMAP** structures, see the [Related articles](#related-articles) section. The caller of these **Rtl*Xxx*** routines is responsible for allocating the storage for the **RTL_BITMAP** structure and for the buffer that contains the bitmap. This buffer must begin on a four-byte boundary in memory and must be a multiple of four bytes in length. The bitmap begins at the start of the buffer but can contain any number of bits that fit in the allocated buffer.
+For a list of the **Rtl*Xxx*** routines that use **RTL_BITMAP** structures, see the [Related articles](#related-articles) section. The caller of these **Rtl*Xxx*** routines is responsible for allocating the storage for the **RTL_BITMAP** structure and for the buffer that contains the bitmap. This buffer must begin on a 4 byte boundary in memory and must be a multiple of 4 bytes in length. The bitmap begins at the start of the buffer but can contain any number of bits that fit in the allocated buffer.
 
 Before supplying an **RTL_BITMAP** structure as a parameter to an **Rtl*Xxx*** routine, call the [**RtlInitializeBitMap**](/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlinitializebitmap) routine to initialize the structure. The input parameters to this routine are a pointer to a buffer that contains the bitmap, and the size, in bits, of the bitmap. **RtlInitializeBitMap** doesn't change the contents of this buffer.
 
 If the caller allocates the storage for the **RTL_BITMAP** structure and bitmap in paged memory, the caller must be running at IRQL <= APC_LEVEL when it passes a pointer to this structure as a parameter to any of the **Rtl*Xxx*** routines listed in the [Related articles](#related-articles) section. If the caller allocates the storage from nonpaged memory (or, equivalently, from locked paged memory), the caller can be running at any IRQL when it calls the **Rtl*Xxx*** routine.
-
-Supported in Windows 2000 and later versions of Windows.
 
 Header: *Wdm.h*. Include: *Wdm.h*, *Ntddk.h*, *Ntifs.h*.
 
@@ -268,8 +262,6 @@ Header: *Wdm.h*. Include: *Wdm.h*, *Ntddk.h*, *Ntifs.h*.
 The **RTL_RUN_ONCE** structure is an opaque structure that stores the information for a one-time initialization.
 
 Drivers must initialize this structure by calling the [**RtlRunOnceInitialize**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-rtlrunonceinitialize) routine before passing it to any other **RtlRunOnce*Xxx*** routines.
-
-Available on Windows Vista and later versions of the Windows operating system.
 
 Header: Ntddk.h. Include: Ntddk.h.
 
@@ -283,7 +275,7 @@ Header: *Wdm.h*. Include: *Wdm.h*, *Ntddk.h*, *Ntifs.h*.
 
 An **SLIST_HEADER** structure is an opaque structure that serves as the header for a sequenced singly linked list. For more information, see [Singly and Doubly Linked Lists](singly-and-doubly-linked-lists.md).
 
-On 64-bit platforms, **SLIST_HEADER** structures must be 16-byte aligned.
+On 64-bit platforms, **SLIST_HEADER** structures must be 16 byte aligned.
 
 Header: *Wdm.h*. Include: *Wdm.h*, *Ntddk.h*, *Ntifs.h*.
 
@@ -300,8 +292,6 @@ typedef struct _XSTATE_SAVE {
 All members are opaque.
 
 The [**KeSaveExtendedProcessorState**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kesaveextendedprocessorstate) and [**KeRestoreExtendedProcessorState**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kerestoreextendedprocessorstate) routines use this structure.
-
-Supported in Windows 7 and later versions of the Windows operating system.
 
 Header: *Wdm.h*. Include: *Wdm.h*, *Ntddk.h*, *Ntifs.h*.
 
