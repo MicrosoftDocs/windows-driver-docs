@@ -12,9 +12,9 @@
     href: bluetooth-registry-entries.md
   - name: "Bluetooth Profile Driver Functions"
     href: /windows-hardware/drivers/ddi/_bltooth/
-  name: "Bluetooth Classic Audio"
+- name: "Bluetooth Classic Audio"
   href: bluetooth-classic-audio.md
-  - name: "Bluetooth Low Energy Overview"
+- name: "Bluetooth Low Energy Overview"
   href: bluetooth-low-energy-overview.md
 - name: "Bluetooth Low Energy Functions"
   href: /windows/win32/api/_bltooth/
