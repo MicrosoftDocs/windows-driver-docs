@@ -15,7 +15,7 @@ ms.date: 11/05/2024
 
 # DTrace on Windows
 
-DTrace (DTrace.exe) is a command-line tool that displays system information and events. DTrace is an open source tracing platform ported to windows. DTrace was originally developed for the Solaris operating system.  It provides dynamic instrumentation of both user/kernel functions, the ability to script using the D-language, speculative tracing. In addition, DTrace has Windows OS specific extensions like ETW instrumentation, ETW event generation, system call probes and live dump capture capabilities.  
+DTrace (DTrace.exe) is a command-line tool that displays system information and events. DTrace is an open-source tracing platform ported to Windows. DTrace was originally developed for the Solaris operating system. It provides dynamic instrumentation of both user/kernel functions, the ability to script using the D-language, and speculative tracing. In addition, DTrace has Windows OS specific extensions like ETW instrumentation, ETW event generation, system call probes, and live dump capture capabilities.  
 
 > [!NOTE]
 > DTrace is supported in the Insider builds of Windows after version 18980 and Windows Server Build 18975.
@@ -37,13 +37,13 @@ A number of DTrace books are available, such as:
 *DTrace: Dynamic Tracing in Oracle Solaris, Mac OS X and FreeBSD* by Brendan Gregg and Jim Mauro
 
 *Solaris Performance and Tools: DTrace and MDB Techniques for Solaris 10 and OpenSolaris*
-by Richard McDougall, Jim Mauro and Brendan Gregg
+by Richard McDougall, Jim Mauro, and Brendan Gregg
 
 ## Providing feedback on Windows DTrace
 
-Use the feedback hub to request new features or to report any problems or bugs with Windows DTrace.
+Use the Feedback Hub to request new features or to report any problems or bugs with Windows DTrace.
 
-1. To launch the feedback hub in Windows, Go to search, enter the word *feedback*, and then select **Feedback Hub**.
+1. To launch the Feedback Hub in Windows, Go to search, enter the word *feedback*, and then select **Feedback Hub**.
 2. Select either *Suggest a feature* or *Report a problem*.
 3. Provide a detailed, specific description of the issue or suggestion.
 
@@ -51,13 +51,13 @@ Use the feedback hub to request new features or to report any problems or bugs w
 
 The following are some of the Dtrace providers available on Windows and what they instrument.
 
-- syscall – NTOS system calls
+- syscall – NTOS system calls.
 
-- fbt (Function Boundary Tracing) – Kernel function entry and returns
+- fbt (Function Boundary Tracing) – Kernel function entry and returns.
 
-- pid (Process ID) – User-mode process tracing. Like kernel-mode FBT, but also allowing the instrumentation of arbitrary function offsets.
+- pid (Process ID) – User-mode process tracing. Like kernel-mode FBT, but also allows the instrumentation of arbitrary function offsets.
 
-- etw (Event Tracing for Windows) – Allows probes to be defined for ETW This provider helps to leverage existing operating system instrumentation in DTrace.
+- etw (Event Tracing for Windows) – Allows probes to be defined for ETW. This provider helps to leverage existing operating system instrumentation in DTrace.
 
 ### SYSCALL – NTOS system calls
 
@@ -106,7 +106,7 @@ C:\> dtrace -lvn syscall:::
 
 ### ETW
 
- DTrace includes support for existing manifested/tracelogged ETW probes. You can instrument, filter and parse ETW events synchronously at the time of event firing. In addition, DTrace can be used to combine various events/system states to provide a consolidated output stream to help debug complex error situations.  
+ DTrace includes support for existing manifested/tracelogged ETW probes. You can instrument, filter, and parse ETW events synchronously at the time of event firing. In addition, DTrace can be used to combine various events/system states to provide a consolidated output stream to help debug complex error situations.  
 
 The command `dtrace -ln etw:::` will list all the probes and their parameters available from the syscall provider.
 
@@ -268,7 +268,7 @@ C:\>  dtrace -l
 
 Get started by running these commands from an administrator command prompt.
 
-This command displays a syscall summary by program for 5 seconds. The tick-5sec parameter specifies the time period. The exit(0); causes the command to exit upon completion back to the command prompt. The output is specified using `[pid,execname] = count();` This displays the Process ID (PID), the executable name and a count for the last 5 seconds.
+This command displays a syscall summary by program for 5 seconds. The tick-5sec parameter specifies the time period. The exit(0); causes the command to exit upon completion back to the command prompt. The output is specified using `[pid,execname] = count();` This displays the Process ID (PID), the executable name, and a count for the last 5 seconds.
 
 ``` dtrace
 C:\> dtrace -Fn "tick-5sec {exit(0);} syscall:::entry{ @num[pid,execname] = count();} "  
