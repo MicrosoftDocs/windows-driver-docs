@@ -9,7 +9,7 @@ ms.date: 11/11/2024
 
 Last Updated: November 11, 2024
 
-This page provides information on the operation schedule for Windows driver ship room. In order to provide the best experience for Windows users, there are certain times where aspects of publication operations are suspended.
+This article provides information on the operation schedule for Windows driver ship room. In order to provide the best experience for Windows users, there are certain times where aspects of publication operations are suspended.
 
 We have a shared goal of keeping devices up to date while providing users a high quality experience. When a driver update is released alongside OS updates, it results in a poor experience and impacts end-users.
 
@@ -19,9 +19,9 @@ Windows as a Service has a well-established OS update release cadence.
 
 - **Feature Updates**: Provide the latest feature experiences and quality fixes.
 
-We're making changes for releasing drivers marked as needing *Microsoft approval*. These changes ensure we release quality drivers, reduce the risk of releasing drivers at the same time as OS changes, and provide ecosystem partners a predictable driver release cadence. These drivers include:
+There are changes for releasing drivers marked as needing *Microsoft approval*. These changes ensure we release quality drivers, reduce the risk of releasing drivers at the same time as OS changes, and provide ecosystem partners a predictable driver release cadence. The drivers affected by these changes include:
 
-- Flighted drivers: Drivers (Shipping Label) marked as **Automatic** = Critical Update (CU) or Dynamic Update (DU) or both
+- Flighted drivers: Drivers (shipping label) marked as **Automatic** = Critical Update (CU) or Dynamic Update (DU) or both
 - Optional driver classes which always go through ship room approval
 
 **Predictable driver release windows**: During OS update release time frames, we defer releasing drivers needing *Microsoft approval* to WU and will resume automatic publishing after the deferral window.
