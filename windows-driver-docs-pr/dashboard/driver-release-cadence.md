@@ -19,20 +19,20 @@ Windows as a Service has a well-established OS update release cadence.
 
 - **Feature Updates**: Provide the latest feature experiences and quality fixes.
 
-We're making changes for releasing drivers marked as *needing Microsoft approval*. These changes ensure we release quality drivers, reduce the risk of releasing drivers at the same time as OS changes, and provide ecosystem partners a predictable driver release cadence. These drivers include:
+We're making changes for releasing drivers marked as needing *Microsoft approval*. These changes ensure we release quality drivers, reduce the risk of releasing drivers at the same time as OS changes, and provide ecosystem partners a predictable driver release cadence. These drivers include:
 
 - Flighted drivers: Drivers (Shipping Label) marked as **Automatic** = Critical Update (CU) or Dynamic Update (DU) or both
 - Optional driver classes which always go through ship room approval
 
-**Predictable driver release windows**: During OS update release time frames, we defer releasing drivers needing Microsoft approval to WU and will resume automatic publishing after the deferral window.
+**Predictable driver release windows**: During OS update release time frames, we defer releasing drivers needing *Microsoft approval* to WU and will resume automatic publishing after the deferral window.
 
-1. **Monthly Quality Update *B* release**: Drivers needing Microsoft approval aren't released one day before and for one day after monthly security *B* release.
+1. **Monthly Quality Update *B* release**: Drivers needing *Microsoft approval* aren't released one day before and for one day after monthly security *B* release.
 
     | Monday | Second Tuesday of each month | Wednesday |
     |--|--|--|
     | One day before | *B* monthly security release day | One day after |
 
-1. **Feature update offer via Windows Update**: Driver needing Microsoft approval aren't released two days before, and for two days after the start of a feature OS update rollout.
+1. **Feature update offer via Windows Update**: Driver needing *Microsoft approval* aren't released two days before, and for two days after the start of a feature OS update rollout.
 
     | Before | Day Of | After |
     |--|--|--|
@@ -40,7 +40,7 @@ We're making changes for releasing drivers marked as *needing Microsoft approval
 
     If there are known issues for feature update and driver compatibility, you can request a *feature update offer block mitigation* while a compatible driver update is being validated and posted to WU.
 
-1. **Certain US Holidays**: Drivers needing Microsoft approval aren't released on certain US Holidays and long weekends
+1. **Certain US holidays**: Drivers needing *Microsoft approval* aren't released on certain US Holidays and long weekends
 
     | US Holidays | 2025 | 2024 |
     |--|--|--|
@@ -69,7 +69,7 @@ We're making changes for releasing drivers marked as *needing Microsoft approval
 
 1. What does this deferral mean for newly submitted drivers or drivers currently In-Flight?
 
-    This deferral is for the release of a driver needing Microsoft approval (marked as Automatic or Dynamic Update) to WU. Newly submitted drivers, and drivers currently in-flight, proceed as they normally do.
+    This deferral is for the release of a driver needing *Microsoft approval* (marked as Automatic or Dynamic Update) to WU. Newly submitted drivers, and drivers currently in-flight, proceed as they normally do.
 
 1. What is the latest deferral calendar?
 
