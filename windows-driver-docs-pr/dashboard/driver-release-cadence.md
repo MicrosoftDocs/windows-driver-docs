@@ -56,7 +56,7 @@ There are changes for releasing drivers marked as needing *Microsoft approval*. 
     | Christmas Day | Thursday, December 25 | Wednesday, December 25 |
     | Day after Christmas | Friday, December 26 | Thursday, December 26 |
 
-1. **US Winter Holiday time frame release moratorium**: During the US winter holiday season, the driver ship room isn't releasing *any* drivers. For calendar year 2024, the time frame is December 14, 2023 through January 1, 2025. For calendar year 2025, the time frame is December 18, 2025 through January 1, 2026.
+1. **US Winter Holiday time frame release moratorium**: During the US winter holiday season, the driver ship room isn't releasing *any* drivers. For calendar year 2024, the time frame is December 14, 2024 through January 1, 2025. For calendar year 2025, the time frame is December 18, 2025 through January 1, 2026.
 
     See the calendars in the [Appendix](#appendix) for more dates.
 
