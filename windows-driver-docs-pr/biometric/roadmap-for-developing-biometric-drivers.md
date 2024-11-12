@@ -20,7 +20,7 @@ To create a biometric driver, follow these steps:
 
     For Windows 7 and later operating systems, the driver code gallery includes a sample called [WudfBioUsbSample](https://github.com/microsoft/Windows-driver-samples/releases/tag/win11-22h2). This sample WBDI driver is UMDF-based, and uses the [USB I/O Target](../wdf/usb-i-o-targets-in-umdf.md).
 
-    For more information about the WudfBioUsbSample sample, see the [sample description](https://github.com/Microsoft/Windows-driver-samples/tree/main/biometrics).
+    For more information about the WudfBioUsbSample sample, see the [sample description](https://github.com/microsoft/Windows-driver-samples/releases/tag/win11-22h2).
 
 - Step 4: Select a driver model for your biometric driver.
 
