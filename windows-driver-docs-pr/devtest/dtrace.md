@@ -10,12 +10,12 @@ keywords:
 - software tracing WDK , formatting messages
 - tracing WDK , DTrace
 - trace message format files WDK
-ms.date: 11/05/2024
+ms.date: 11/11/2024
 ---
 
 # DTrace on Windows
 
-DTrace (DTrace.exe) is a command-line tool that displays system information and events. DTrace is an open source tracing platform ported to windows. DTrace was originally developed for the Solaris operating system.  It provides dynamic instrumentation of both user/kernel functions, the ability to script using the D-language, speculative tracing. In addition, DTrace has Windows OS specific extensions like ETW instrumentation, ETW event generation, system call probes and live dump capture capabilities.  
+DTrace (DTrace.exe) is a command-line tool that displays system information and events. DTrace is an open-source tracing platform ported to Windows. DTrace was originally developed for the Solaris operating system. It provides dynamic instrumentation of both user/kernel functions, the ability to script using the D-language, and speculative tracing. In addition, DTrace has Windows OS specific extensions like ETW instrumentation, ETW event generation, system call probes, and live dump capture capabilities.  
 
 > [!NOTE]
 > DTrace is supported in the Insider builds of Windows after version 18980 and Windows Server Build 18975.
@@ -37,13 +37,13 @@ A number of DTrace books are available, such as:
 *DTrace: Dynamic Tracing in Oracle Solaris, Mac OS X and FreeBSD* by Brendan Gregg and Jim Mauro
 
 *Solaris Performance and Tools: DTrace and MDB Techniques for Solaris 10 and OpenSolaris*
-by Richard McDougall, Jim Mauro and Brendan Gregg
+by Richard McDougall, Jim Mauro, and Brendan Gregg
 
 ## Providing feedback on Windows DTrace
 
-Use the feedback hub to request new features or to report any problems or bugs with Windows DTrace.
+Use the Feedback Hub to request new features or to report any problems or bugs with Windows DTrace.
 
-1. To launch the feedback hub in Windows, Go to search, enter the word *feedback*, and then select **Feedback Hub**.
+1. To launch the Feedback Hub in Windows, Go to search, enter the word *feedback*, and then select **Feedback Hub**.
 2. Select either *Suggest a feature* or *Report a problem*.
 3. Provide a detailed, specific description of the issue or suggestion.
 
@@ -51,19 +51,19 @@ Use the feedback hub to request new features or to report any problems or bugs w
 
 The following are some of the Dtrace providers available on Windows and what they instrument.
 
-- syscall – NTOS system calls
+- syscall – NTOS system calls.
 
-- fbt (Function Boundary Tracing) – Kernel function entry and returns
+- fbt (Function Boundary Tracing) – Kernel function entry and returns.
 
-- pid (Process ID) – User-mode process tracing. Like kernel-mode FBT, but also allowing the instrumentation of arbitrary function offsets.
+- pid (Process ID) – User-mode process tracing. Like kernel-mode FBT, but also allows the instrumentation of arbitrary function offsets.
 
-- etw (Event Tracing for Windows) – Allows probes to be defined for ETW This provider helps to leverage existing operating system instrumentation in DTrace.
+- etw (Event Tracing for Windows) – Allows probes to be defined for ETW. This provider helps to leverage existing operating system instrumentation in DTrace.
 
 ### SYSCALL – NTOS system calls
 
 SYSCALL provides a pair of probes for each system call: an entry probe that fires before the system call is entered, and a return probe that fires after the system call has completed but before control has transferred back to user-level. For all SYSCALL probes, the function name is set to be the name of the instrumented system call and the module name is the module in which the function exists. The names of the system calls as provided by the SYSCALL provider may be found by typing the command `dtrace.exe -l -P syscall` from the command prompt. Note that the probe name is lower case syscall. The command `dtrace -ln syscall:::` will also list all the probes and their parameters available from the syscall provider.
 
-```dtrace
+```cmd
 C:\> dtrace -ln syscall:::
   ID   PROVIDER            MODULE                          FUNCTION NAME
     6    syscall                                 NtWaitHighEventPair entry
@@ -81,7 +81,7 @@ To scroll through the output, pipe out to the *more* command like this:
 
 Add the v option to display more information about the available syscall probes.
 
-```dtrace
+```cmd
 C:\> dtrace -lvn syscall:::
 ...
 
@@ -106,11 +106,11 @@ C:\> dtrace -lvn syscall:::
 
 ### ETW
 
- DTrace includes support for existing manifested/tracelogged ETW probes. You can instrument, filter and parse ETW events synchronously at the time of event firing. In addition, DTrace can be used to combine various events/system states to provide a consolidated output stream to help debug complex error situations.  
+ DTrace includes support for existing manifested/tracelogged ETW probes. You can instrument, filter, and parse ETW events synchronously at the time of event firing. In addition, DTrace can be used to combine various events/system states to provide a consolidated output stream to help debug complex error situations.  
 
 The command `dtrace -ln etw:::` will list all the probes and their parameters available from the syscall provider.
 
-```dtrace
+```cmd
   C:\> dtrace -ln etw:::
   ID   PROVIDER            MODULE                          FUNCTION NAME
   944        etw 048dc470-37c1-52a8-565a-54cb27be37ec           0xff_0xffffffffffffffff generic_event
@@ -130,7 +130,7 @@ For each instruction set, there are a small number of functions that do not call
 
 The command `dtrace -ln fbt:nt::` will list all the probes and their parameters available for the nt module. Use the debugger [lm (List Loaded Modules)](../debuggercmds/lm--list-loaded-modules-.md) command to list all available modules.
 
-```dtrace
+```cmd
 C:\>dtrace -ln "fbt:nt::"
    ID   PROVIDER            MODULE                          FUNCTION NAME
  3336        fbt                nt                PiDqActionDataFree entry
@@ -150,7 +150,7 @@ The DTrace PID provider allows you to trace the internal execution of user-mode 
 
 This example command displays information about a specific call in the PID associated with notepad.exe. Use the debugger [lm (List Loaded Modules)](../debuggercmds/lm--list-loaded-modules-.md) command to list all available modules.
 
-```dtrace
+```cmd
 C:\Windows\system32>dtrace -ln "pid$target:ntdll:RtlAllocateHeap:entry" -c notepad.exe
    ID   PROVIDER            MODULE                          FUNCTION NAME
  5102    pid6100             ntdll                   RtlAllocateHeap entry
@@ -158,7 +158,6 @@ C:\Windows\system32>dtrace -ln "pid$target:ntdll:RtlAllocateHeap:entry" -c notep
 
 > [!NOTE]
 > When tracing functions written in C++, the function names may be too lengthy or decorated to be specified as a probe with their full form. A common solution is to use an expression that uniquely matches your target function. For instance, use 'String??Copy' as a 'probefunc' portion of the probe name to match 'String::Copy()', or '*GetPinnableReference' to match 'String::GetPinnableReference()'.
-
 
 ## DTrace Windows architecture
 
@@ -172,21 +171,21 @@ Traceext.sys (trace extension) is a Windows kernel extension driver, which allow
 
 1. Check that you are running a supported version of Windows. The current download of DTrace is supported in the Insider builds of 20H1 Windows after version 18980 and Windows Server Build 18975. *Installing this version of DTrace on older versions of Windows can lead to system instability and is not recommended.* (The archived version of DTrace for 19H1 is no longer available and is no longer supported.)
 
-2. Download the MSI installation file ([Download DTrace on Windows](https://www.microsoft.com/download/details.aspx?id=100441)) from the Microsoft Download Center.
+1. Download the MSI installation file ([Download DTrace on Windows](https://www.microsoft.com/download/details.aspx?id=100441)) from the Microsoft Download Center.
 
-3. Select the Complete install.
+1. Select the Complete install.
 
     > [!IMPORTANT]
     > Before using bcdedit to change boot information you may need to temporarily suspend Windows security features such as Patchguard, BitLocker and Secure Boot on the test PC.
     > Re-enable these security features when testing is complete and appropriately manage the test PC, when the security features are disabled.
- 
-4. Update the PATH environment variable to include C:\Program Files\DTrace
 
-```
+1. Update the PATH environment variable to include C:\Program Files\DTrace
+
+```cmd
 set PATH=%PATH%;"C:\Program Files\DTrace"
 ```
 
-6. Enable DTrace on the machine using the bcdedit command.  
+1. Enable DTrace on the machine using the bcdedit command.
 
 ```cmd
 bcdedit /set dtrace ON
@@ -230,7 +229,7 @@ Use the -l option to list the active probes. If DTrace is active many probes sho
 
 Open a Windows command prompt as an administrator to enter DTrace commands.
 
-```dtrace
+```cmd
 C:\> dtrace -l
 
 ...
@@ -256,7 +255,7 @@ C:\> dtrace -l
 
 If only these three probes are listed, there is an issue with the DTrace.sys driver being loaded.
 
-```dtrace
+```cmd
 C:\>  dtrace -l
    ID   PROVIDER            MODULE                          FUNCTION NAME
     1     dtrace                                                     BEGIN
@@ -268,9 +267,9 @@ C:\>  dtrace -l
 
 Get started by running these commands from an administrator command prompt.
 
-This command displays a syscall summary by program for 5 seconds. The tick-5sec parameter specifies the time period. The exit(0); causes the command to exit upon completion back to the command prompt. The output is specified using `[pid,execname] = count();` This displays the Process ID (PID), the executable name and a count for the last 5 seconds.
+This command displays a syscall summary by program for 5 seconds. The tick-5sec parameter specifies the time period. The exit(0); causes the command to exit upon completion back to the command prompt. The output is specified using `[pid,execname] = count();` This displays the Process ID (PID), the executable name, and a count for the last 5 seconds.
 
-``` dtrace
+```cmd
 C:\> dtrace -Fn "tick-5sec {exit(0);} syscall:::entry{ @num[pid,execname] = count();} "  
 dtrace: description 'tick-5sec ' matched 471 probes
 CPU FUNCTION
@@ -289,7 +288,7 @@ CPU FUNCTION
 
 This command summarizes timer set/cancel calls for 3 seconds:  
 
-``` dtrace
+```cmd
 C:\> dtrace -Fn "tick-3sec {exit(0);} syscall::Nt*Timer*:entry { @[probefunc, execname, pid] = count();}"
 dtrace: description 'tick-3sec ' matched 14 probes
 CPU FUNCTION
@@ -316,7 +315,7 @@ C:\> set _NT_SYMBOL_PATH=srv*C:\symbols*https://msdl.microsoft.com/download/symb
 
 This example command displays the top NT functions.
 
-```dtrace
+```cmd
 C:\> dtrace -n "fbt:nt:*Timer*:entry { @k[probefunc] = count(); } tick-5s { trunc(@k, 10);printa(@k); exit(0); }"
 dtrace: description 'fbt:nt:*Timer*:entry ' matched 340 probes
 CPU     ID                    FUNCTION:NAME
@@ -335,7 +334,7 @@ CPU     ID                    FUNCTION:NAME
 
 This command dumps the SystemProcess kernel structure.
 
-```dtrace
+```cmd
 C:\> dtrace -n "BEGIN {print(*(struct nt`_EPROCESS *) nt`PsInitialSystemProcess);exit(0);}"
 
 ...
@@ -359,7 +358,7 @@ C:\> dtrace -n "BEGIN {print(*(struct nt`_EPROCESS *) nt`PsInitialSystemProcess)
 
 This command displays the top kernel stack for the past 10 seconds.
 
-``` dtrace
+```cmd
 C:\> dtrace -qn "profile-997hz { @[stack()] = count(); } tick-10sec { trunc(@,5); printa(@); exit(0);}"
 
               nt`KiDispatchInterruptContinue
@@ -379,7 +378,7 @@ C:\> dtrace -qn "profile-997hz { @[stack()] = count(); } tick-10sec { trunc(@,5)
 
 This command displays the top modules invoked by notepad.exe during launch. The -c option runs specified command (notepad.exe) and exits upon its completion.
 
-``` dtrace
+```cmd
 C:\> dtrace -qn "pid$target:::entry { @k[probemod] = count();} tick-10s{printa(@k); exit(0);}" -c notepad.exe
 
   gdi32full                                                         5
@@ -401,10 +400,7 @@ C:\> dtrace -qn "pid$target:::entry { @k[probemod] = count();} tick-10s{printa(@
 
 ## See also
 
-[DTrace Windows Programming](dtrace-programming.md)
-
-[DTrace ETW](dtrace-etw.md)
-
-[DTrace Live Dump](dtrace-live-dump.md)
-
-[DTrace Windows Code Samples](dtrace-code-samples.md)
+- [DTrace Windows Programming](dtrace-programming.md)
+- [DTrace ETW](dtrace-etw.md)
+- [DTrace Live Dump](dtrace-live-dump.md)
+- [DTrace Windows Code Samples](dtrace-code-samples.md)

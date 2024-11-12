@@ -5,30 +5,28 @@ keywords:
 - WDDM, native GPU fence object
 - WDDM, GPU fence synchronization object
 - WDDM, hardware scheduling
-ms.date: 03/29/2024
+ms.date: 11/08/2024
 ---
 
 # Native GPU fence object
 
 This article describes the GPU fence synchronization object that can be used for true GPU-to-GPU synchronization in GPU hardware scheduling stage 2. This feature is supported starting in Windows 11, version 24H2 (WDDM 3.2). Graphics driver developers should be familiar with WDDM 2.0 and GPU hardware scheduling stage 1.
 
-## Existing versus new fence synchronization objects
-
-### Existing monitored fence synchronization object
+## WDDM 2.x's monitored fence synchronization object
 
 WDDM 2.x's [monitored fence synchronization object](context-monitoring.md) supports the following operations:
 
-* CPU wait on a monitored fence value, either by:
+* The CPU waits on a monitored fence value, either by:
   * Polling using a CPU virtual address (VA).
   * Queuing a blocking wait inside *Dxgkrnl* that gets signaled when the CPU observes the new monitored fence value.
 * CPU signal of a monitored value.
 * GPU signal of a monitored value by writing to the monitored fence GPU VA and raising a monitored fence signaled interrupt to notify the CPU of the value update.
 
-What isn't supported is a native on-the-GPU wait for a monitored fence value. Instead, the OS holds GPU work that depends on the waited value on the CPU. It only releases this work to the GPU when the value is signaled.
+What wasn't supported was a native on-the-GPU wait for a monitored fence value. Instead, the OS held GPU work that depends on the waited value on the CPU. It only released this work to the GPU when the value is signaled.
 
-### GPU native fence synchronization object
+## Added GPU native fence synchronization object
 
-This article introduces an extension to the monitored fence object that supports the following added features:
+Starting in WDDM 3.2, the monitored fence object was extended to support the following added features:
 
 * GPU wait on a monitored fence value, which allows for high performance engine-to-engine synchronization without requiring a CPU roundtrip.
 * Conditional interrupt notification only for GPU fence signals that have CPU waiters. This feature enables substantial power savings by enabling the CPU to enter a low power state when all GPU work is queued.
@@ -44,7 +42,7 @@ The diagram includes two main components:
 
 * Current value (referred to as *CurrentValue* in this article). This memory location contains the currently signaled 64-bit fence value. *CurrentValue* is mapped and accessible to both the CPU (writeable from kernel mode, readable from both user and kernel mode) and GPU (readable and writeable using GPU virtual address). *CurrentValue* requires 64-bit writes to be atomic from both the CPU and the GPU point of view. That is, updates to the high and low 32 bits can't be torn and should be visible at the same time. This concept is already present in the existing monitored fence object.
 
-* Monitored value (referred to as *MonitoredValue* in this article). This memory location contains the least currently waited on value by the CPU subtracted by 1. *MonitoredValue* is mapped and accessible to both the CPU (readable and writeable from kernel mode, no user mode access) and GPU (readable using GPU VA, no write access). The OS maintains the list of outstanding CPU waiters for a given fence object, and it updates *MonitoredValue* as waiters are added and removed. When there are no outstanding waiters, the value is set to UINT64_MAX. This concept is new to the GPU native fence sync object.
+* Monitored value (referred to as *MonitoredValue* in this article). This memory location contains the least currently waited on value by the CPU subtracted by one (1). *MonitoredValue* is mapped and accessible to both the CPU (readable and writeable from kernel mode, no user mode access) and GPU (readable using GPU VA, no write access). The OS maintains the list of outstanding CPU waiters for a given fence object, and it updates *MonitoredValue* as waiters are added and removed. When there are no outstanding waiters, the value is set to UINT64_MAX. This concept is new to the GPU native fence sync object.
 
 The next diagram illustrates how *Dxgkrnl* tracks outstanding CPU waiters on a specific monitored fence value. It also shows the set monitored fence value at a given point in time. *CurrentValue* and *MonitoredValue* are both 41, which means that:
 
@@ -74,21 +72,23 @@ For a given fence object, *CurrentValue* and *MonitoredValue* are stored in sepa
 
 ### Current value
 
-The current value can reside either in system memory or GPU local memory.
+The current value can reside either in system memory or GPU local memory, depending on the fence type specified by [**D3DDDI_NATIVEFENCE_TYPE**](/windows-hardware/drivers/ddi/d3dukmdt/ne-d3dukmdt-d3dddi_nativefence_type).
 
-* For system memory fences, the OS allocates current value storage from internal system memory pool.
+* Current value for cross adapter fences is always in system memory.
 
-* For local memory fences, the OS allocates current value storage from local memory segment set specified in [**DXGK_NATIVE_FENCE_CAPS**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgk_native_fence_caps) as described in [Native fence capabilities](#native-fence-capabilities).
+* When current value is stored in system memory, storage is allocated from internal system memory pool.
+
+* When current value is stored in local memory, storage is allocated from memory segments that the driver specified in [**D3DKMDT_FENCESTORAGESURFACEDATA**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-d3dkmdt_fencestoragesurfacedata).
 
 ### Monitored value
 
-The monitored value can also reside either in system or GPU local memory.
+The monitored value can also reside either in system or GPU local memory, depending on [**D3DDDI_NATIVEFENCE_TYPE**](/windows-hardware/drivers/ddi/d3dukmdt/ne-d3dukmdt-d3dddi_nativefence_type).
 
-* For system memory fences, the OS allocates monitored value storage from internal system memory pool.
+* When monitored value is stored in system memory, the OS allocates storage from internal system memory pool.
 
-* For local memory fences, the OS allocates monitored value storage from local memory segment set specified in [**DXGK_NATIVE_FENCE_CAPS**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgk_native_fence_caps) as described in [Native fence capabilities](#native-fence-capabilities).
+* When monitored value is stored in local memory, the OS allocates storage from memory segments that the driver specified in [**D3DKMDT_FENCESTORAGESURFACEDATA**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-d3dkmdt_fencestoragesurfacedata).
 
-When the OS's CPU wait conditions change, it calls KMD's [**DxgkDdiUpdateMonitoredValues**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_updatemonitoredvalues) callback to update the monitored value to a specified value.
+When the OS's CPU wait conditions change, it calls KMD's [**DxgkDdiUpdateMonitoredValues**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_updatemonitoredvalues) callback to instruct KMD to update the monitored value to a specified value.
 
 ## Synchronization issues
 
@@ -99,21 +99,21 @@ The previously described mechanism has an inherent race condition between the CP
 
 ### Synchronization within the GPU between the engine and CMP
 
-For efficiency, many discrete GPUs implement the monitored fence signal semantics using shadow state that resides in the GPU's local memory between the following areas:
+For efficiency, many discrete GPUs implement the monitored fence signal semantics using shadow state that resides in the GPU's local memory between:
 
 * The GPU engine executing the command buffer stream and conditionally raising a hardware signal to the CMP.
 
 * The GPU CMP that decides whether a CPU interrupt should be raised.
 
-In this case, the CMP needs to synchronize memory access with the GPU engine performing the memory write to the fence value. In particular, the operation of updating a shadow *MonitoredValue* should be ordered from the CMP point of view using the following steps:
+In this case, the CMP needs to synchronize memory access with the GPU engine performing the memory write to the fence value. In particular, the operation of updating a shadow *MonitoredValue* should be ordered from the CMP point of view:
 
-1. Write a new *MonitoredValue* (shadow GPU storage)
-2. Execute a memory barrier to synchronize memory access with the GPU engine
+1. Write a new *MonitoredValue* (shadow GPU storage).
+2. Execute a memory barrier to synchronize memory access with the GPU engine.
 3. Read *CurrentValue*:
    * If *CurrentValue* > *MonitoredValue*, raise a CPU interrupt.
    * If *CurrentValue* <= *MonitoredValue*, don't raise the CPU interrupt.
 
-For this race condition to resolve properly, it's imperative that the memory barrier in step 2 function properly. There must not be a pending memory write operation to *CurrentValue* in step 3 that originated from a command that hasn't seen the *MonitoredValue* update in step 1. This situation would thus generate an interrupt if the fence written in step 3 was greater than the value updated in step 1.
+For this race condition to resolve properly, it's imperative that the memory barrier in step 2 function properly. There must not be a pending memory write operation to *CurrentValue* in step 3 that originated from a command that hasn't seen the *MonitoredValue* update in step 1. This situation would generate an interrupt if the fence written in step 3 was greater than the value updated in step 1.
 
 ### Synchronization between the GPU and CPU
 
@@ -129,19 +129,25 @@ It's perfectly acceptable for the CPU to observe a newer *CurrentValue* than the
 
 ## Querying native fence feature enablement in OS
 
+Drivers must query whether the native fence feature is enabled in the OS during driver initialization.Starting in WDDM 3.2, the OS uses the added [**IsFeatureEnabled**](/windows-hardware/drivers/ddi/dispmprt/ns-dispmprt-dxgk_feature_interface) interface to control whether certain features are enabled, including the native fence feature.
+
+As a result, KMD must implement the **IsFeatureEnabled** interface. KMD's implementation must query whether the OS has enabled the [**DXGK_FEATURE_NATIVE_FENCE**](/windows-hardware/drivers/ddi/d3dukmdt/ne-d3dukmdt-dxgk_feature_id) feature before advertising native fence support in [**DXGK_VIDSCHCAPS**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_vidschcaps). The OS fails adapter initialization if KMD advertises native fence support when the OS hasn't enabled the feature.
+
+ For more information about the feature enablement interface, see [Querying WDDM feature support and enablement](querying-wddm-feature-support-and-enablement.md).
+
+### DDIs to query native fence feature enablement
+
 The following interfaces are introduced for a KMD to query whether the OS enabled the native fence feature:
 
 * [**DXGKCB_FEATURE_NATIVEFENCE_CAPS_1**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkcb_feature_nativefence_caps_1)
 * [**DXGKARGCB_FEATURE_NATIVEFENCE_CAPS_1**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgkargcb_feature_nativefence_caps_1)
 * [**DXGKCBINT_FEATURE_NATIVEFENCE_1**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgkcbint_feature_nativefence_1)
 
-Like the hardware scheduling stage 1 and hardware flip queue features, drivers must query whether the native fence feature is enabled in the OS during driver initialization. However, starting in WDDM 3.2, the OS uses the added [WDDM feature support and enablement feature](querying-wddm-feature-support-and-enablement.md) to control whether the feature is enabled. As a result, drivers must implement this interface.
-
-Before KMD advertises native fence support in [**DXGK_VIDSCHCAPS**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_vidschcaps), KMD is expected to implement the [**DXGKDDI_FEATURE_INTERFACE**](/windows-hardware/drivers/ddi/dispmprt/ns-dispmprt-dxgkddi_feature_interface) interface and query whether the OS enabled the [**DXGK_FEATURE_NATIVE_FENCE**](/windows-hardware/drivers/ddi/d3dukmdt/ne-d3dukmdt-dxgk_feature_id) feature. The OS fails adapter initialization if KMD advertises native fence support if the OS didn't enable the feature.
-
 The OS implements the added [**DXGKCB_FEATURE_NATIVEFENCE_CAPS_1**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkcb_feature_nativefence_caps_1) interface table dedicated to version 1 of **DXGK_FEATURE_NATIVE_FENCE**. KMD must query this feature interface table to determine the OS's capabilities. In future OS releases, the OS might introduce future versions of this interface table, detailing support for new capabilities.
 
 ### Sample driver code for querying support
+
+The following sample code shows how drivers are expected to use the **DXGK_FEATURE_NATIVE_FENCE** feature in the [**DXGK_FEATURE_INTERFACE**](/windows-hardware/drivers/ddi/dispmprt/ns-dispmprt-dxgk_feature_interface) interface for querying support.
 
 ``` C++
 
@@ -245,7 +251,7 @@ The following interfaces are updated or introduced to query native fence caps:
 The following KMD-implemented DDIs are introduced to create, open, close, and destroy a native fence object. *Dxgkrnl* calls these DDIs on behalf of user-mode components. *Dxgkrnl* calls them only if the OS enabled the [**DXGK_FEATURE_NATIVE_FENCE**](/windows-hardware/drivers/ddi/d3dukmdt/ne-d3dukmdt-dxgk_feature_id) feature.
 
 * [**DxgkDdiCreateNativeFence**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_createnativefence)/[**DXGKARG_CREATENATIVEFENCE**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgkarg_createnativefence)
-* [**DxgkDdiCreateNativeFence**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_opennativefence)/[**DXGKARG_OPENNATIVEFENCE**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgkarg_opennativefence)
+* [**DxgkDdiOpenNativeFence**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_opennativefence)/[**DXGKARG_OPENNATIVEFENCE**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgkarg_opennativefence)
 * [**DxgkDdiCloseNativeFence**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_closenativefence)/[**DXGKARG_CLOSENATIVEFENCE**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgkarg_closenativefence)
 * [**DxgkDdiDestroyNativeFence**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_destroynativefence)/[**DXGKARG_DESTROYNATIVEFENCE**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgkarg_destroynativefence)
 
@@ -266,7 +272,7 @@ Imagine process A creates a shared native fence and process B later opens this f
 
 * When process A creates the shared native fence, *Dxgkrnl* calls [**DxgkDdiCreateNativeFence**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_createnativefence) with the adapter driver handle on which this fence is created. The fence handle created and returned in **hGlobalNativeFence** is the global fence handle.
 
-* *Dxgkrnl* then follows up with a call to [**DxgkDdiOpenNativeFence**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_opennativefence) to open a process A-specific local handle (**hLocalNativeFence*A***).
+* *Dxgkrnl* subsequently follows up with a call to [**DxgkDdiOpenNativeFence**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_opennativefence) to open a process A's specific local handle (**hLocalNativeFence*A***).
 
 * When process B opens the same shared native fence, *Dxgkrnl* calls **DxgkDdiOpenNativeFence** to open a process B-specific local handle (**hLocalNativeFence*B***).
 
@@ -278,7 +284,7 @@ Imagine process A creates a shared native fence and process B later opens this f
 
 The KMD sets the [**DXGK_NATIVE_FENCE_CAPS::MapToGpuSystemProcess**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgk_native_fence_caps) cap on hardware that requires native fence GPU VAs to be also mapped into the GPU paging process address space. A set **MapToGpuSystemProcess** bit instructs the OS to create GPU VA mappings in the paging process address space for the native fence's *CurrentValue* and *MonitoredValue* for use by the CMP. These GPU VAs are later passed to [**DxgkDdiCreateNativeFence**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_createnativefence) as [**DXGKARG_CREATENATIVEFENCE::CurrentValueSystemProcessGpuVa**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgkarg_createnativefence) and **MonitoredValueSystemProcessGpuVa**.
 
-## D3DKMT kernel APIs for native fences
+## D3DKMT kernel APIs to create, open, and destroy native fences
 
 The following *D3DKMT* kernel-mode APIs are introduced to create and open a native fence object.
 
@@ -294,7 +300,17 @@ Support structures and enumerations that are introduced or updated include:
 * [**D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS**](/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_synchronizationobject_flags)
 * [**D3DDDI_NATIVEFENCE_MAPPING**](/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-d3dddi_nativefencemapping)
 
-## Indicating a native hardware queue progress fence object
+## DDI to support placement of native fence values in local memory
+
+The following DDIs were added or changed to support placement of native fence values in local memory:
+
+* The [**D3DKMDT_FENCESTORAGESURFACEDATA**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-d3dkmdt_fencestoragesurfacedata) structure is added.
+
+* The native fence *MonitoredValue* and *CurrentValue* of the native fence type [**D3DDDI_NATIVEFENCE_TYPE_INTRA_GPU**](/windows-hardware/drivers/ddi/d3dukmdt/ne-d3dukmdt-d3dddi_nativefence_type) can be placed in local device memory. To do so, the OS will ask the driver to specify memory segments in which the fence storage should be placed. [**DxgkDdiGetStandardAllocation**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_getstandardallocationdriverdata) is extended to provide such information.
+
+* **D3DKMDT_STANDARDALLOCATION_FENCESTORAGE** is added to [**DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_getstandardallocationdriverdata).
+
+## Indicating a native progress fence for hardware queues
 
 The following update is introduced to indicate a native hardware queue progress fence object:
 
@@ -307,7 +323,11 @@ The following update is introduced to indicate a native hardware queue progress 
 The following changes are made to the interrupt mechanism to support a native fence signaled interrupt:
 
 * The [**DXGK_INTERRUPT_TYPE**](/windows-hardware/drivers/ddi/d3dkmddi/ne-d3dkmddi-_dxgk_interrupt_type) enum is updated to have a **DXGK_INTERRUPT_NATIVE_FENCE_SIGNALED** interrupt type.
-* The [**DXGKARGCB_NOTIFY_INTERRUPT_DATA**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkargcb_notify_interrupt_data) structure is updated to include a **NativeFenceSignaled** structure to denote a native fence signaled interrupt. **NativeFenceSignaled** is used to inform the OS that a set of native fence GPU objects monitored by the CPU were signaled on a GPU engine. If the GPU is able to determine the exact subset of objects with active CPU waiters, it passes this subset via **pSignaledNativeFenceArray**. The handles in this array must be valid **hGlobalNativeFence** handles that *Dxgkrnl* passed to KMD in [**DxgkDdiCreateNativeFence**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_createnativefence). Passing a handle to a destroyed native fence object causes a bug check.
+
+* The [**DXGKARGCB_NOTIFY_INTERRUPT_DATA**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkargcb_notify_interrupt_data) structure is updated to include a **NativeFenceSignaled** structure to denote a native fence signaled interrupt
+
+  **NativeFenceSignaled** is used to inform the OS that a set of native fence GPU objects monitored by the CPU were signaled on a GPU engine. If the GPU is able to determine the exact subset of objects with active CPU waiters, it passes this subset via **pSignaledNativeFenceArray**. The handles in this array must be valid **hGlobalNativeFence** handles that *Dxgkrnl* passed to KMD in [**DxgkDdiCreateNativeFence**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_createnativefence). Passing a handle to a destroyed native fence object causes a bug check.
+
 * The [**DXGKCB_NOTIFY_INTERRUPT_DATA_FLAGS**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkcb_notify_interrupt_data_flags) structure is updated to include an **EvaluateLegacyMonitoredFences** member.
 
 The GPU can pass a NULL **pSignaledNativeFenceArray** under the following conditions:
@@ -446,6 +466,8 @@ The following DDI, structures, and enums are introduced to support native fence 
     * [**DXGK_NATIVE_FENCE_LOG_ENTRY**](/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-dxgk_native_fence_log_entry)
       * [**DXGK_NATIVE_FENCE_LOG_OPERATION**](/windows-hardware/drivers/ddi/d3dukmdt/ne-d3dukmdt-dxgk_native_fence_log_operation)
 
+The log buffer design is meant for native fence and [user-mode submission queues](user-mode-work-submission.md) where the log buffer payload is written by the GPU engine/CMP, without involvement from *Dxgkrnl* or KMD. Hence, UMD will insert an instruction while generating the wait/signal command buffer, programming the GPU to write the log buffer payload into the log buffer entry on execution. For non-user-mode submission (that is, kernel-mode queues), the wait and signals are software commands inside *Dxgkrnl*, so we already know the timestamps and other details of these operations and we don't require hardware/KMD to update the log buffer. For such kernel mode queues, *Dxgkrnl* won't create a log buffer.
+
 ### Log buffer mechanism
 
 1. *Dxgkrnl* allocates two dedicated 4-KB log buffers per HWQueue.
@@ -542,7 +564,7 @@ GPU writes to update the fence value and corresponding log buffer must ensure th
 
 It's too expensive to insert two barriers on every GPU signal, especially when it's likely that the conditional interrupt check isn't satisfied and no CPU interrupt is necessary. As a result, the design moves the cost of inserting one of the memory barriers from the GPU (producer) to the CPU (consumer). *Dxgkrnl* calls the introduced [**DxgkDdiUpdateNativeFenceLogs**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_updatenativefencelogs) function to cause KMD to synchronously flush pending native fence log writes on demand (similar to how [**DxgkddiUpdateflipqueuelog**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_updateflipqueuelog) was introduced for HW flip queue log flush).
 
-GPU operations:
+For GPU operations:
 
 * Signal Fence(*N*): write *N* as a new current value
 * Write LOG entry including the GPU timestamp
@@ -550,13 +572,13 @@ GPU operations:
 * MemoryBarrier => Ensures **FirstFreeEntryIndex** is fully propagated
 * Monitored fence interrupt (*N*): read Address "M" and compare the value with *N* to decide about delivering the interrupt
 
-CPU Operations:
+For CPU operations:
 
-In *Dxgkrnl*’s native fence signaled interrupt handler (DISPATCH_IRQL):
+* In *Dxgkrnl*’s native fence signaled interrupt handler (DISPATCH_IRQL):
 
-* For each HWQueue Log: Read **FirstFreeEntryIndex** and determine if new entries are written.
-* For every HWQueue log with new entries: Call [**DxgkDdiUpdateNativeFenceLogs**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_updatenativefencelogs) and provide the kernel handles for those HWQueues. In this DDI, KMD inserts a memory barrier to each given HWQueue, which ensures that all log entry writes are committed.
-* *Dxgkrnl* reads log entries to extract timestamp payload.
+  * For each HWQueue Log: Read **FirstFreeEntryIndex** and determine if new entries are written.
+  * For every HWQueue log with new entries: Call [**DxgkDdiUpdateNativeFenceLogs**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_updatenativefencelogs) and provide the kernel handles for those HWQueues. In this DDI, KMD inserts a memory barrier to each given HWQueue, which ensures that all log entry writes are committed.
+  * *Dxgkrnl* reads log entries to extract timestamp payload.
 
 So, as long as the hardware inserts a memory barrier after writes to **FirstFreeEntryIndex**, *Dxgkrnl* always calls KMD's DDI, allowing KMD to insert a memory barrier before *Dxgkrnl* reads any log entries.
 
