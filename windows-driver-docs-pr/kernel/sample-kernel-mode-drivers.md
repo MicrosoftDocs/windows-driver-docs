@@ -1,11 +1,11 @@
 ---
 title: Sample Kernel-Mode Drivers
-description: Sample Kernel-Mode Drivers
+description: Sample kernel-mode drivers
 keywords: ["kernel-mode drivers WDK , samples", "sample drivers WDK kernel-mode"]
-ms.date: 06/16/2017
+ms.date: 11/12/2024
 ---
 
-# Sample Kernel-Mode Drivers
+# Sample kernel-mode drivers
 
 The WDK provides various sample kernel-mode drivers. After you have installed the WDK, the `src\general` subdirectory contains sample driver code that is applicable to all kernel-mode drivers. The samples are also maintained online. These samples include the following:
 
@@ -25,10 +25,6 @@ This sample demonstrates how to create a custom media source and driver package 
 
 This sample demonstrates the usage of V3 System DMA. It shows how a driver could use a system DMA controller supported by Windows to write data to a hardware location using DMA.
 
-[**WinHEC 2017 Lab**](https://github.com/Microsoft/Windows-driver-samples/tree/main/general/WinHEC%202017%20Lab)
-
-[**WinHEC 2017/Optimizing Windows Performance**](https://github.com/Microsoft/Windows-driver-samples/tree/main/general/WinHEC%202017/Optimizing%20Windows%20Performance)
-
 [**cancel**](https://github.com/Microsoft/Windows-driver-samples/tree/main/general/cancel)  
 
 Demonstrates the use of [cancel-safe IRP queues](cancel-safe-irp-queues.md).
@@ -38,10 +34,6 @@ Demonstrates the use of [cancel-safe IRP queues](cancel-safe-irp-queues.md).
 [**event**](https://github.com/Microsoft/Windows-driver-samples/tree/main/general/event)  
 
 Demonstrates techniques that kernel-mode drivers can use to notify applications of hardware events, if the application requests notification. One technique uses [event objects](event-objects.md) and the other relies on [queuing](queuing-and-dequeuing-irps.md) the notification request until an event occurs.
-
-[**filehistory**](https://github.com/Microsoft/Windows-driver-samples/tree/main/general/filehistory)
-
-The FileHistory sample is a console application that starts the file history service, if it is stopped, and schedules regular backups. The application requires, as a command-line parameter, the path name of a storage device to use as the default backup target.
 
 [**IOCTL sample**](https://github.com/Microsoft/Windows-driver-samples/tree/main/general/ioctl)
 
