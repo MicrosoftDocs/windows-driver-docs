@@ -1,7 +1,7 @@
 ---
 title: Features Supported by StorUFS
 description: Overview of Features supported by StorUFS
-ms.date: 11/13/2023
+ms.date: 11/12/2024
 ---
 
 # Features supported by StorUFS
@@ -39,12 +39,10 @@ The Microsoft Universal Flash Storage (UFS) driver (*storufs.sys*) is the system
 * Boot from UFS
 * Replay Protected Memory Block (RPMB)
 * Host performance boost (HPB)*
-* Write booster**
+* Write booster
 * Runtime power management
 * Firmware upgrade
 * Command queue mgmt
 * Inline Crypto Engine (ICE) support
 
-\* *Write booster feature currently supported on UFS 3.1+ Intel platforms.*
-
-\** *HPB feature is currently supported on UFS 3.1+ Samsung platforms.*
+\* *HPB feature is currently supported on UFS 3.1+ Samsung platforms.*
