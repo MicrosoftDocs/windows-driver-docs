@@ -68,11 +68,9 @@ The provided links for the SDK and the WDK have matching build numbers, which is
 
 - [Download WDK 10.0.26100.2161](https://go.microsoft.com/fwlink/?linkid=2294834)
 
-The WDK Visual Studio extension is included in the default WDK installation.
+Starting with version 17.11.0, the WDK VSIX is included as an individual component in Visual Studio. Before installing the WDK, the installer checks if a compatible version of the VSIX is already installed. If the WDK VSIX is not found, users will be prompted to install it. To install the WDK VSIX, launch the Visual Studio Installer, select **Modify**, navigate to the **Individual Components** tab, add **Windows Driver Kits**, and then select **Modify** again.
 
-In Visual Studio versions 17.11.0 and later, the WDK extension should be installed with Visual Studio. However, the WDK installer settings still show the checkbox for the VSIX extension installation. *You need to deselect this checkbox to prevent an install failure.*
-
-:::image type="content" source="images/wdk-extension-checkbox-deselected.png" alt-text="Install Windows Driver Kit Visual Studio extension checkbox.":::
+:::image type="content" source="images/install_wdk_vsix_msg.png" alt-text="Image asking the user to install WDK VSIX.":::
 
 > [!TIP]
 > If you can't find driver project templates in Visual Studio, the WDK Visual Studio extension didn't install properly. To resolve this, launch Visual Studio Installer, select **Modify**, add **Windows Driver Kits** in the **Individual Component** tab, and select **Modify**.
