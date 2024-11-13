@@ -80,6 +80,6 @@ Windows selects HFP instead of A2DP when any of the following scenarios are true
 
 In all other cases, audio output (playback) to the device uses A2DP.
 
-Windows automatically resamples audio as needed for the currently selected profile. If the microphone is used during a VoIP call, which puts the headset into HFP mode at 8KHz or 16KHz, and another application plays audio to the same device at 48KHz, the sound is resampled to match the HFP endpoint.
+Windows automatically resamples audio as needed for the currently selected profile. For example, if the microphone is used during a VoIP call, which puts the headset into HFP mode at 8KHz or 16KHz, and another application plays audio to the same device at 48KHz, the sound is resampled to match the HFP endpoint.
 
 Profile selection changes occur automatically based on microphone usage state. For example, if media is playing and the device is in A2DP mode, and then the microphone is opened, the device switches to HFP mode. If media continues playing once the microphone is closed, the device switches back to A2DP momentarily.
