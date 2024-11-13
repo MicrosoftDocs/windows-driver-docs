@@ -1,14 +1,14 @@
 ---
 title: Bluetooth Classic Audio
-description: This article describes the Bluetooth classic audio functionality in Windows.
-ms.date: 11/08/2024
+description: This article describes the Bluetooth Classic audio functionality in Windows.
+ms.date: 11/13/2024
 ---
 
-# Bluetooth classic audio
+# Bluetooth Classic audio
 
-This article describes the Bluetooth classic audio functionality in Windows. For information about Bluetooth LE Audio, see [Bluetooth Low Energy (LE) Audio](./bluetooth-low-energy-audio.md).
+This article describes the Bluetooth Classic audio functionality in Windows. For information about Bluetooth LE Audio, see [Bluetooth Low Energy (LE) Audio](./bluetooth-low-energy-audio.md).
 
-Bluetooth classic audio supports stereo audio playback over the Advanced Audio Distribution Profile (A2DP) and mono playback and capture over the Hands-Free Profile (HFP). Windows supports various audio codecs and sampling rates depending on the version of Windows, the capabilities of the headset, and the current usage of the playback or capture capabilities of the audio device.
+Bluetooth Classic audio supports stereo audio playback over the Advanced Audio Distribution Profile (A2DP) and mono playback and capture over the Hands-Free Profile (HFP). Windows supports various audio codecs and sampling rates depending on the version of Windows, the capabilities of the headset, and the current usage of the playback or capture capabilities of the audio device.
 
 ## Terminology and prerequisites
 
@@ -16,7 +16,7 @@ In addition to the terms defined in this table, this article also references ter
 
 | Term | Definition |
 |------|------------|
-| LE audio | Short for Bluetooth LE Audio |
+| LE audio | Bluetooth Low Energy Audio, an audio streaming technology that runs over the Bluetooth Low Energy radio |
 | Classic audio | Bluetooth audio streaming that uses the hands-free profile (HFP) and advanced audio distribution profile (A2DP) |
 | Audio device | A remote Bluetooth audio device that composes an input (microphone) or output (playback) endpoint from the perspective of Windows. |
 | AAC | Advanced Audio Coding, an audio compression codec |
@@ -34,12 +34,12 @@ Windows supports the following audio codecs for A2DP, beginning with the listed 
 
 | Codec | Windows 10 | Windows 11 |
 |-------|------------|------------|
-| aptX&trade; Adaptive (lossless) | Not supported | Windows 11, version 24H2(*) |
+| aptX&trade; Adaptive (lossless) | Not supported | Windows 11, version 24H2* |
 | AAC | Not Supported | Windows 11, version 21H2 |
 | aptX&trade; Classic | Windows 10, version 1507 | Windows 11, version 21H2 |
 | SBC | Windows 10, version 1507 | Windows 11, version 21H2 |
 
-(*) – aptX Adaptive is only supported on select Windows devices with compatible Qualcomm Bluetooth radios.
+\* *aptX Adaptive is only supported on select Windows devices with compatible Qualcomm Bluetooth radios.*
 
 A2DP only supports audio output from the host to the audio device. When audio capture (for example, voice capture using the microphone in the audio devices) is used, it's necessary to use HFP instead.
 
@@ -52,13 +52,13 @@ HFP supports concurrent monaural capture (microphone) and monaural playback, and
 | Wideband (16KHz) | Windows 10, version 1703** | Windows 11, version 21H2** (compatibility improved in Windows 11, version 22H2) |
 | Narrowband (8KHz) | Windows 10, version 1507 | Windows 11, version 21H2 |
 
-(**) – Some wideband capable audio devices aren't compatible with the Bluetooth radio in select Windows devices, causing these devices to revert to narrowband mode.
+\*\* *Some wideband capable audio devices aren't compatible with the Bluetooth radio in select Windows devices, causing these devices to revert to narrowband mode.*
 
 ## Selection of A2DP and HFP endpoints
 
 ### Windows 10
 
-In Windows 10, up to three audio endpoints are created when a Bluetooth classic audio device is paired to the PC, depending on if the audio device supports A2DP and/or HFP:
+In Windows 10, up to three audio endpoints are created when a Bluetooth Classic audio device is paired to the PC, depending on if the audio device supports A2DP and/or HFP:
 
 | Bluetooth Profile | Audio Output Endpoint Name | Audio Input Endpoint Name |
 |-------------------|----------------------------|---------------------------|
@@ -76,7 +76,7 @@ In Windows 11, the endpoints are unified between A2DP and HFP. If an audio devic
 Windows selects HFP instead of A2DP when any of the following scenarios are true:
 
 - An application opens the input (microphone) endpoint.
-- An application creates an output (playback) stream with the category set to *Communications*.
+- An application creates an output (playback) stream with the category set to *[Communications](../audio/audio-signal-processing-modes.md#windows-audio-stream-categories)*.
 
 In all other cases, audio output (playback) to the device uses A2DP.
 
