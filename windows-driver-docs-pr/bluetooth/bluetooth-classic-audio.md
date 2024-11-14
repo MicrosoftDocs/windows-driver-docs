@@ -1,7 +1,7 @@
 ---
 title: Bluetooth Classic Audio
 description: This article describes the Bluetooth Classic audio functionality in Windows.
-ms.date: 11/13/2024
+ms.date: 11/14/2024
 ---
 
 # Bluetooth Classic audio
@@ -23,8 +23,8 @@ In addition to the terms defined in this table, this article also references ter
 | aptX&trade; | Brand name for a family of audio compression codecs from Qualcomm |
 | SBC | Sub Band Coding, an audio compression codec |
 | mSBC | Modified SBC, an audio compression codec used for wideband speech |
-| Narrowband speech | Operation of HFP at an 8 kilohertz (8KHz) sampling rate using the SBC codec |
-| Wideband speech | Operation of HFP at a higher 16 kilohertz (16KHz) sampling rate using the mSBC codec |
+| Narrowband speech | Operation of HFP at an 8 kilohertz (8kHz) sampling rate using the SBC codec |
+| Wideband speech | Operation of HFP at a higher 16 kilohertz (16kHz) sampling rate using the mSBC codec |
 
 ## Advanced Audio Distribution Profile
 
@@ -45,12 +45,12 @@ A2DP only supports audio output from the host to the audio device. When audio ca
 
 ## Hands-Free Profile
 
-HFP supports concurrent monaural capture (microphone) and monaural playback, and is used for access to the Bluetooth audio device's microphone. Windows supports two modes for HFP, narrowband (8KHz) and wideband (16KHz), beginning with the listed OS version. Windows starts from the top of the list, and chooses the first mode supported by the host and audio device for HFP operation:
+HFP supports concurrent monaural capture (microphone) and monaural playback, and is used for access to the Bluetooth audio device's microphone. Windows supports two modes for HFP, narrowband (8kHz) and wideband (16kHz), beginning with the listed OS version. Windows starts from the top of the list, and chooses the first mode supported by the host and audio device for HFP operation:
 
 | Mode | Windows 10 | Windows 11 |
 |------|------------|------------|
-| Wideband (16KHz) | Windows 10, version 1703** | Windows 11, version 21H2** (compatibility improved in Windows 11, version 22H2) |
-| Narrowband (8KHz) | Windows 10, version 1507 | Windows 11, version 21H2 |
+| Wideband (16kHz) | Windows 10, version 1703** | Windows 11, version 21H2** (compatibility improved in Windows 11, version 22H2) |
+| Narrowband (8kHz) | Windows 10, version 1507 | Windows 11, version 21H2 |
 
 \*\* *Some wideband capable audio devices aren't compatible with the Bluetooth radio in select Windows devices, causing these devices to revert to narrowband mode.*
 
@@ -80,6 +80,6 @@ Windows selects HFP instead of A2DP when any of the following scenarios are true
 
 In all other cases, audio output (playback) to the device uses A2DP.
 
-Windows automatically resamples audio as needed for the currently selected profile. For example, if the microphone is used during a VoIP call, which puts the headset into HFP mode at 8KHz or 16KHz, and another application plays audio to the same device at 48KHz, the sound is resampled to match the HFP endpoint.
+Windows automatically resamples audio as needed for the currently selected profile. For example, if the microphone is used during a VoIP call, which puts the headset into HFP mode at 8kHz or 16kHz, and another application plays audio to the same device at 48kHz, the sound is resampled to match the HFP endpoint.
 
 Profile selection changes occur automatically based on microphone usage state. For example, if media is playing and the device is in A2DP mode, and then the microphone is opened, the device switches to HFP mode. If media continues playing once the microphone is closed, the device switches back to A2DP momentarily.
