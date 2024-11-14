@@ -6,7 +6,7 @@ ms.date: 11/14/2024
 
 # Bluetooth Classic audio
 
-This article describes the Bluetooth Classic audio functionality in Windows. For information about Bluetooth LE Audio, see [Bluetooth Low Energy (LE) Audio](./bluetooth-low-energy-audio.md).
+This article describes the Bluetooth Classic audio functionality in Windows. For information about Bluetooth LE audio, see [Bluetooth Low Energy (LE) Audio](./bluetooth-low-energy-audio.md).
 
 Bluetooth Classic audio supports stereo audio playback over the Advanced Audio Distribution Profile (A2DP) and mono playback and capture over the Hands-Free Profile (HFP). Windows supports various audio codecs and sampling rates depending on the version of Windows, the capabilities of the headset, and the current usage of the playback or capture capabilities of the audio device.
 
