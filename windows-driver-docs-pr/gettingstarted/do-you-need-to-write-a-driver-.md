@@ -9,12 +9,12 @@ ms.date: 04/20/2017
 
 Microsoft Windows contains built-in drivers for many device types. If there is a built-in driver for your device type, you won't need to write your own driver. Your device can use the built-in driver.
 
-## Built-in_drivers_for_USB_devices
+## Built-in drivers for USB devices
 
 
 If your device belongs to a device class that is defined by the USB Device Working Group (DWG), there may already be an existing Windows USB class driver for it. For more information, see [Drivers for the Supported USB Device Classes](../usbcon/supported-usb-classes.md).
 
-## Built-in_drivers_for_other_devices
+## Built-in drivers for other devices
 
 
 Currently, Microsoft provides built-in drivers for the following other types of devices:
