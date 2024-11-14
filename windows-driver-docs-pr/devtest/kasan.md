@@ -22,6 +22,8 @@ In order to use KASAN, you need:
  - VisualStudio: version 17.11 or above.
  - WDK: version 10.0.26100.2161 or above.
 
+KASAN is supported only on x64.
+
 ## How to enable KASAN on your kernel driver
 
 1. Enter the following command line in an administrator **Command Prompt** window on the target system:
@@ -111,6 +113,14 @@ In other words, your driver likely tried to perform a write buffer overflow on a
 ## Performance impact of KASAN
 
 KASAN increases kernel memory consumption and introduces an approximate two-times slowdown in drivers compiled with KASAN enabled.
+
+## Comparison with Driver Verifier
+
+KASAN and Driver Verifier are entirely separate features, but are mutually compatible.
+
+KASAN is focused on detecting illegal memory accesses, and is more efficient than Driver Verifier in that domain, because it uses a more fine-grained approach and covers more memory regions. Driver Verifier on the other side has driver-specific rules that aim at finding other types of bugs, that KASAN does not detect.
+
+Use KASAN in conjunction with Driver Verifier to maximize the detection of bugs in your driver.
 
 ## Resources
 
