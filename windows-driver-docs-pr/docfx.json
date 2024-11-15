@@ -149,8 +149,8 @@
         "**/driversecurity/*.md": "DOMARS",
         "**/gettingstarted/*.md": "SoniaLopezBravo",
         "**/gnss/*.md": "barrygolden",
-        "**/gpio/*.md": "tedhudek",
-        "**/gpiobtn/*.md": "tedhudek",
+        "**/gpio/*.md": "bradben",
+        "**/gpiobtn/*.md": "bradben",
         "**/hid/*.md": "mhopkins-msft",
         "**/ieee/*.md": "tedhudek",
         "**/ifs/*.md": "lorihollasch",
@@ -183,7 +183,7 @@
         "**/usbcon/*.md": "mhopkins-msft",
         "**/wdf/*.md": "tedhudek",
         "**/wdtf/*.md": "DOMARS",
-        "**/whea/*.md": "tedhudek"      },
+        "**/whea/*.md": "bradben"      },
       "ms.author":
       {
         "**/3dprint/*.md": "bagold",
