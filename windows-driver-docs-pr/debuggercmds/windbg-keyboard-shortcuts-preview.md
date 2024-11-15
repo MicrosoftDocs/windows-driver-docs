@@ -19,7 +19,7 @@ All of the ribbon menu options are available using the **Alt +** the first lette
 
 | Keystroke     | Description             |
 | ------------- |-------------------------|
- F5 | Continue
+F5 | Continue
 F10     | Step over
 F11     | Step Into
 Shift+F11   |   Step out
@@ -34,7 +34,7 @@ Alt+H,D     | Detach
 
 | Keystroke     | Description             |
 | ------------- |-------------------------|
-F6      |   Attach to process
+F6          |   Attach to process
 Ctrl+R      |       Connect to remote
 Ctrl+D      |       Open dump file
 Ctrl+K      |       Attach to kernel debugger
@@ -45,24 +45,25 @@ Ctrl+P      |       Launch app package
 
 | Keystroke     | Description             |
 | ------------- |-------------------------|  
-F9          |  Toggle breakpoint on highlighted line
-Ctrl+Alt+K      |   Toggle initial break
-Alt+B,A         |  Add breakpoint
+F9              |  Toggle breakpoint on highlighted line
+Ctrl + F9       |  Toggle breakpoint enabled state on highlighted line
+Shift + F9      |  Add breakpoint
+Ctrl+Alt+K      |  Toggle initial break
 
 ### Windowing
 
 | Keystroke     | Description             |
 | ------------- |-------------------------|
 Ctrl+Tab        |       Open window changer
-Ctrl+1      |       Open/focus on command window
-Ctrl+2      |       Open/focus on watch window
-Ctrl+3      |       Open/focus on locals window
-Ctrl+4      |       Open/focus on registers window
-Ctrl+5      |       Open/focus on memory window
-Ctrl+6      |       Open/focus on stack window
-Ctrl+7      |       Open/focus on disassembly window
-Ctrl+8      |       Open/focus on breakpoints window
-Ctrl+9      |       Open/focus on thread window
+Alt+1           |       Open/focus on command window
+Alt+2           |       Open/focus on watch window
+Alt+3           |       Open/focus on locals window
+Alt+4           |       Open/focus on registers window
+Alt+5           |       Open/focus on memory window
+Alt+6           |       Open/focus on stack window
+Alt+7           |       Open/focus on disassembly window
+Alt+8           |       Open/focus on breakpoints window
+Alt+9           |       Open/focus on thread window
 
 ### Scripting
 
