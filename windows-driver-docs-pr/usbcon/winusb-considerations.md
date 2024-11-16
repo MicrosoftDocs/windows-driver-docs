@@ -23,7 +23,7 @@ Writing a driver that is customized to the device's requirements is the most fle
 - Driver initialization when new devices are detected
 - Power management
 - I/O operations
-- Surprise removal
+- Surprise device removal
 - State management
 - Cleanup when the device is removed
 
@@ -71,7 +71,7 @@ If you choose to write a driver, here are your options:
 
     Implement a UMDF-based client driver for a USB device in the following cases:
 
-  - The device is accessed by concurrently by multiple applications.
+  - The device is accessed concurrently by multiple applications.
   - The device supports bulk or interrupt transfers.
 
     Drivers that run in user mode can access only the (virtual) user address space and pose a lower risk to the system. Kernel-mode drivers can access the system address space and the internal system structures. A badly coded kernel-mode driver might cause problems that affect other drivers or the system, and eventually crash the computer. Therefore, a user-mode driver can be safer than a kernel-mode driver in terms of security and stability.
