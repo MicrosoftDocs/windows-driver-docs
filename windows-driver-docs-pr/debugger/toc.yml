@@ -51,8 +51,12 @@
         href: setting-up-qemu-kernel-mode-debugging-using-exdi.md
       - name: "Linux live remote process debugging"
         href: linux-live-remote-process-debugging.md
+      - name: "Linux crash dumps"
+        href: linux-crash-dumps.md
       - name: "Linux symbols and sources"
         href: linux-dwarf-symbols.md             
+      - name: "Linux Crash Dumps"
+        href: linux-crash-dumps.md    
       - name: "Setting Up Kernel-Mode Debugging over a Serial Cable Manually"
         href: setting-up-a-null-modem-cable-connection.md
     - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 10"

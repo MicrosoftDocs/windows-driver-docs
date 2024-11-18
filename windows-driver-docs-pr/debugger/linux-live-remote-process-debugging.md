@@ -361,6 +361,8 @@ Use the `--debug` option to display additional information on the gdbserver cons
 
 [Source Code Extended Access](source-code-extended-access.md)
 
+[Linux crash dumps](linux-crash-dumps.md)
+
 [ELFUTILS debuginfod](https://sourceware.org/elfutils/Debuginfod.html)
 
 [Choosing the Best Remote Debugging Method](choosing-the-best-remote-debugging-method.md)

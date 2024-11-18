@@ -520,3 +520,7 @@ Example:
 [Using Symbols](using-symbols.md)
 
 [!sym](../debuggercmds/-sym.md)
+
+[Linux crash dumps](linux-crash-dumps.md)
+
+[Linux live remote process debugging](linux-live-remote-process-debugging.md)
