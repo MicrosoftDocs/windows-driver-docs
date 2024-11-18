@@ -118,10 +118,10 @@ KASAN increases kernel memory consumption and introduces an approximate two-time
 
 KASAN and Driver Verifier are entirely separate features, but are mutually compatible.
 
-KASAN is focused on detecting illegal memory accesses, and is more efficient than Driver Verifier in that domain, because it uses a more fine-grained approach and covers more memory regions. Driver Verifier has driver-specific rules that aim at finding other types of bugs, that KASAN does not detect.
+KASAN is focused on detecting illegal memory accesses, and is more efficient than Driver Verifier in that domain, because it uses a more fine-grained approach and covers more memory regions. Driver Verifier has driver-specific rules that aim at finding other types of bugs, that KASAN does not detect. For more information, see [Microsoft: Introducing kernel sanitizers on Microsoft platforms](https://www.microsoft.com/security/blog/2023/01/26/introducing-kernel-sanitizers-on-microsoft-platforms/).
 
 Use KASAN in conjunction with Driver Verifier to maximize the detection of bugs in your driver.
 
 ## Resources
 
-- [Microsoft: Introducing kernel sanitizers on Microsoft platforms](https://www.microsoft.com/en-us/security/blog/2023/01/26/introducing-kernel-sanitizers-on-microsoft-platforms/)
+- [Microsoft: Introducing kernel sanitizers on Microsoft platforms](https://www.microsoft.com/security/blog/2023/01/26/introducing-kernel-sanitizers-on-microsoft-platforms/)
