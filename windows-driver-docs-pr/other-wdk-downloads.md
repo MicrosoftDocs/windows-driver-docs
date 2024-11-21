@@ -28,7 +28,7 @@ Starting with the Windows 11, version 22H2 release of the WDK and EWDK, the kits
 * Building and testing drivers for Windows 10, Windows Server 2016 and later client and server versions
 * Side by side (SxS) support with previous WDK/EWDK
 
-Multiple WDKs and EWDKs can be installed concurrently on the same computer and even be part of the same build system. You can run the Windows 11, version 22H2 WDK on Windows 7 and later.
+Multiple WDKs and EWDKs can be installed concurrently on the same computer and even be part of the same build system. You can run the Windows 11, version 24H2 WDK on Windows 7 and later.
 
 To target Windows 8.1, Windows 8, and Windows 7, install an older WDK (Windows 11, version 21H2 and previous) and an older version of Visual Studio either on the same machine or on a separate machine. For links to older kits, see the table below.
 
