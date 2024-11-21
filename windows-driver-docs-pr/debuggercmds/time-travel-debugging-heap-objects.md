@@ -2,7 +2,7 @@
 title: "TTD Heap Objects"
 description: "This section describes the heap model objects associated with time travel debugging."
 keywords: ["TTD Heap Objects", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
-ms.date: 09/24/2017
+ms.date: 11/13/2024
 ---
 
 # TTD Heap Objects
@@ -14,7 +14,7 @@ ms.date: 09/24/2017
 Every heap object will have these properties.
 
 | Property | Description |
-| --- | --- |
+| -------- | ----------- |
 | Action | Describes the action that occurred. Possible values are: Alloc, ReAlloc, Free, Create, Protect, Lock, Unlock, Destroy. |
 | Heap | The handle for the Win32 heap. |
 
@@ -35,15 +35,14 @@ Depending on the heap object, it may have some of the properties below.
 
 ## Children
 
-| Object | Description |
-| --- | --- |
+| Object    | Description |
+| --------- | ----------- |
 | TimeStart | A [position object](time-travel-debugging-position-objects.md) that describes the position at the start of the allocation. |
-| TimeEnd | A [position object](time-travel-debugging-position-objects.md) that describes the position at the end of the allocation. |
-
+| TimeEnd   | A [position object](time-travel-debugging-position-objects.md) that describes the position at the end of the allocation. |
 
 ## Example Usage
 
-Use this dx command to display the heap memory in a grid using the -g option.
+Use this [dx (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md) command to display the heap memory in a grid using the -g option.
 
 ```dbgcmd
 0:0:000> dx -g @$cursession.TTD.Data.Heap()
@@ -54,7 +53,6 @@ Use this dx command to display the heap memory in a grid using the -g option.
 = [0x1] : [object Object]  - Alloc      - 0xaf0000      - 0xb07210      - 0x34      - 0x8    - FB1:9         - FB3:74      -        -                 =
 = [0x2] : [object Object]  - Alloc      - 0xaf0000      - 0xb256d8      - 0x3c      - 0x8    - E525:174      - E526:E1     -        -                 =
 ```
-
 
 The output can be described as “normalized data” because there is a chosen set of APIs that represent heap operations. The data that is extracted from the appropriate parameters, is presented in a uniform manner.
 
@@ -69,11 +67,16 @@ dx -r1 @$cursession.TTD.Data.Heap()[2].@"Parameters"
     [0x1]            : 0x280000
     [0x2]            : 0x20
     [0x3]            : 0x0
+...    
 ```
+
+Increase the recursion -r value to display additional information.
 
 ## See Also
 
 [Time Travel Debugging - Introduction to Time Travel Debugging objects](time-travel-debugging-object-model.md)
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
+
+[dx (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md)
 

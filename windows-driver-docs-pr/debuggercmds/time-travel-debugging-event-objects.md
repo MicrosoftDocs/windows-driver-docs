@@ -2,34 +2,33 @@
 title: "TTD Event Objects"
 description: "This section describes the event model objects associated with time travel debugging."
 keywords: ["TTD Event Objects", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
-ms.date: 09/22/2017
+ms.date: 11/13/2024
 ---
 
 # TTD Event Objects
 
 ## Description
+
 *TTD Event* objects are used to give information about important events that happened during a time travel trace.
 
 ## Properties
 
 | Property | Description |
-| --- | --- |
-| Type | Describes the type of event that happened. Possible values are: ThreadCreated, ThreadTerminated, ModuleLoaded, ModuleUnloaded, Exception |
+| -------- | ----------- |
+| Type     | Describes the type of event that happened. Possible values are: ThreadCreated, ThreadTerminated, ModuleLoaded, ModuleUnloaded, Exception |
 
 ## Children
 
-| Object | Description |
-| --- | --- |
-| Position | A [position object](time-travel-debugging-position-objects.md) that describes the position the event occurred. |
-| Module* | A [module object](time-travel-debugging-module-objects.md) containing information about the module that was loaded or unloaded. |
-| Thread* | A [thread object](time-travel-debugging-thread-objects.md) containing information about the thread that was created or terminated. |
+| Object     | Description |
+| ---------- | ----------- |
+| Position   | A [position object](time-travel-debugging-position-objects.md) that describes the position the event occurred. |
+| Module*    | A [module object](time-travel-debugging-module-objects.md) containing information about the module that was loaded or unloaded. |
+| Thread*    | A [thread object](time-travel-debugging-thread-objects.md) containing information about the thread that was created or terminated. |
 | Exception* | An [exception object](time-travel-debugging-exception-objects.md) containing information about the exception that was hit. |
 
 \* - Existence of these child objects depends on the type of event
 
 ## Example Usage
-
-
 
 ```dbgcmd
 0:000> dx -r2 @$curprocess.TTD.Events.Where(t => t.Type == "Exception").Select(e => e.Exception)
@@ -50,10 +49,10 @@ ms.date: 09/22/2017
         RecordAddress    : 0x0
 ```
 
-
 ## See Also
 
 [Time Travel Debugging - Introduction to Time Travel Debugging objects](time-travel-debugging-object-model.md)
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
 
+[dx (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md)

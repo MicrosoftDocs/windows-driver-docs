@@ -2,7 +2,7 @@
 title: "Time Travel Debugging - JavaScript Automation"
 description: "This section describes how to use JavaScript automation to work with TTD traces."
 keywords: ["JavaScript Automation", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
-ms.date: 09/17/2020
+ms.date: 11/19/2024
 ---
 
 # Time Travel Debugging - JavaScript Automation
@@ -27,14 +27,15 @@ dbgControl.ExecuteCommand("!tt 0",false);
 host.diagnostics.debugLog(">>> Sent command to move to the start of the TTD file \n");
 ```
 
-We can make this into a ResetTrace function, and save it as ResetTrace.js, using the JavaScript UI in WinDbg.
+We can make this into a ResetTrace function, and save it as MyTraceUtils.js, using the JavaScript UI in WinDbg.
 
 ```javascript
-// WinDbg TTD JavaScript ResetTraceCmd Sample
+// My Trace Utils
+// WinDbg TTD JavaScript MyTraceUtilsCmd Sample
 
 "use strict";
 
-function ResetTraceCmd()
+function MyTraceUtilsCmd()
 {
     var dbgControl = host.namespace.Debugger.Utility.Control;  
     dbgControl.ExecuteCommand("!tt 0",false);
@@ -45,9 +46,9 @@ function ResetTraceCmd()
 After a TTD file is loaded in WinDbg, call the function ResetTraceCmd() function using the dx command in the debugger command window.
 
 ```dbgcmd
-0:000> dx Debugger.State.Scripts.ResetTrace.Contents.ResetTraceCmd()
+0:000> dx Debugger.State.Scripts.MyTraceUtils.Contents.ResetTraceCmd()
 >>> Sent command to move to the start of the TTD file
-Debugger.State.Scripts.ResetTrace.Contents.ResetTrace()
+Debugger.State.Scripts.MyTraceUtils.Contents.ResetTraceCmd()
 ```
 
 ## Limitations of sending commands
@@ -57,6 +58,7 @@ But for all but the simplest situations, the approach of sending commands has dr
 The following example shows how to use the objects directly to complete the same task using the objects directly.
 
 ```javascript
+// My Trace Utils
 // WinDbg TTD JavaScript ResetTrace Sample
 
 "use strict";
@@ -72,7 +74,7 @@ function ResetTrace()
 Running this code shows that we are able to move to the start of the trace file.
 
 ```dbgcmd
-0:000> dx Debugger.State.Scripts.ResetTrace.Contents.ResetTrace()
+0:000> dx Debugger.State.Scripts.MyTraceUtils.Contents.ResetTrace()
 (948.148c): Break instruction exception - code 80000003 (first/second chance not available)
 Time Travel Position: F:0
 >>> Set position to the start of the TTD file
@@ -99,7 +101,7 @@ Running this code displays the current and new position.
 
 
 ```dbgcmd
-0:000> dx Debugger.State.Scripts.ResetTrace.Contents.ResetTraceEnd()
+0:000> dx Debugger.State.Scripts.MyTraceUtils.Contents.ResetTraceEnd()
 >>> Current position in trace file:  F:0
 (948.148c): Break instruction exception - code 80000003 (first/second chance not available)
 Time Travel Position: D3:1
@@ -138,7 +140,7 @@ function ResetTraceEx()
 In this example run, a message is displayed that we were all ready at the start of the trace file.
 
 ```dbgcmd
-0:000> dx Debugger.State.Scripts.ResetTrace.Contents.ResetTraceEx()
+0:000> dx Debugger.State.Scripts.MyTraceUtils.Contents.ResetTraceEx()
 >>> Current position in trace file:  F:0
 (948.148c): Break instruction exception - code 80000003 (first/second chance not available)
 Time Travel Position: F:0
@@ -157,7 +159,7 @@ Setting position: 71:0
 Running the script now displays the proper message that indicates that the position was set to the start of the TTD trace.
 
 ```dbgcmd
-0:000> dx Debugger.State.Scripts.ResetTrace.Contents.ResetTraceEx()
+0:000> dx Debugger.State.Scripts.MyTraceUtils.Contents.ResetTraceEx()
 >>> Current position in trace file:  71:0
 (948.148c): Break instruction exception - code 80000003 (first/second chance not available)
 Time Travel Position: F:0
@@ -179,13 +181,12 @@ function IndexTrace()
     var timeE = (new Date()).getTime();
     host.diagnostics.debugLog("\n>>> Trace was indexed in " + (timeE - timeS) + " ms\n");
 }
-
 ```
 
 Here is the output from a small trace file.
 
 ```dbgcmd
-0:000> dx Debugger.State.Scripts.TTDUtils.Contents.IndexTrace()
+0:000> dx Debugger.State.Scripts.MyTraceUtils.Contents.IndexTrace()
 
 >>> Trace was indexed in 2 ms
 ```
@@ -214,13 +215,12 @@ function IndexTraceTry()
          host.diagnostics.debugLog("\n>>> Returned error: " + err.name + "\n");
     }
 }
-
 ```
 
 Here is the script output if the indexing is successful.
 
 ```dbgcmd
-0:000> dx Debugger.State.Scripts.TTDUtils.Contents.IndexTraceTry()
+0:000> dx Debugger.State.Scripts.MyTraceUtils.Contents.IndexTraceTry()
 
 >>> Index Return Value: Loaded
 
@@ -230,7 +230,7 @@ Here is the script output if the indexing is successful.
 If the trace can't be indexed, for example if the trace is not loaded in the debugger, the catch loop code is run.
 
 ```dbgcmd
-0:007> dx Debugger.State.Scripts.TTDUtils.Contents.IndexTraceTry()
+0:007> dx Debugger.State.Scripts.MyTraceUtils.Contents.IndexTraceTry()
 
 >>> Index Failed!
 
@@ -307,7 +307,7 @@ Save the script in a TTDUtils.js file and call it using the dx command to displa
 
 ```dbgcmd
 
-0:000> dx Debugger.State.Scripts.TTDUtils.Contents.CountLastErrorCalls()
+0:000> dx Debugger.State.Scripts.MyTraceUtils.Contents.CountLastErrorCalls()
 >>> GetLastError calls in this TTD recording: 18
 ```
 
@@ -332,7 +332,7 @@ for(const [Idx, Frame] of Frames.entries())
 In this sample trace, the one stack entry is displayed.
 
 ```dbgcmd
-0:000> dx Debugger.State.Scripts.TTDUtils.Contents.DisplayStack()
+0:000> dx Debugger.State.Scripts.MyTraceUtils.Contents.DisplayStack()
 >>> Printing stack
 >>> Stack Entry -> 0:  ntdll!LdrInitializeThunk + 0x21
 ```
@@ -366,7 +366,7 @@ var exceptionEvents = host.currentProcess.TTD.Events.Where(t => t.Type == "Excep
 The output shows the location of the exception event, the TID and the stack frames.  
 
 ```dbgcmd
-0:000> dx Debugger.State.Scripts.TTDUtils.Contents.HardwareExceptionDisplayStack()
+0:000> dx Debugger.State.Scripts.MyTraceUtils.Contents.HardwareExceptionDisplayStack()
 (948.148c): Break instruction exception - code 80000003 (first/second chance not available)
 Time Travel Position: 91:0
 >>> The Thread ID (TID) is : 5260
@@ -403,7 +403,7 @@ var threadEvents = host.currentProcess.TTD.Events.Where(t => t.Type == "ThreadCr
 Running the code displays the thread status at the moment in time that the exception occurred.
 
 ```dbgcmd
-0:000> dx Debugger.State.Scripts.TTDUtils.Contents.ThreadCreateThreadStatus()
+0:000> dx Debugger.State.Scripts.MyTraceUtils.Contents.ThreadCreateThreadStatus()
 (948.148c): Break instruction exception - code 80000003 (first/second chance not available)
 Time Travel Position: F:0
 .  0  Id: 948.148c Suspend: 4096 Teb: 00a33000 Unfrozen
@@ -444,7 +444,7 @@ function ProcessTTDFiles()
 Running this script on a trace file that contains a hardware exception, generates this output.
 
 ```dbgcmd
-0:000> dx Debugger.State.Scripts.TTDUtils.Contents.ProcessTTDFiles()
+0:000> dx Debugger.State.Scripts.MyTraceUtils.Contents.ProcessTTDFiles()
 
 >>> Index Return Value: Loaded
 
@@ -478,7 +478,6 @@ Time Travel Position: 91:0
 >>> Stack Entry -> 4:  KERNEL32!BaseThreadInitThunk + 0x19
 >>> Stack Entry -> 5:  ntdll!__RtlUserThreadStart + 0x2f
 >>> Stack Entry -> 6:  ntdll!_RtlUserThreadStart + 0x1b
-
 ```
 
 ---

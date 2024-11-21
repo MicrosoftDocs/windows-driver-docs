@@ -2,7 +2,7 @@
 title: "Time travel debugging release notes"
 description: "This topic provides information on what's new in Time Travel Debugging."
 keywords: ["release notes", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
-ms.date: 02/12/2024
+ms.date: 11/15/2024
 ---
 
 # Time travel debugging release notes
@@ -27,7 +27,7 @@ Fixes:
 Improved accessibility: Progress UI now properly scales with Text Size changes.
 
 The ```@$cursession.TTD.Calls()``` command in the debugger now supports wildcards that match a large number of functions.
-It is now possible to query for large numbers of functions (i.e. ```@$cursession.TTD.Calls("kernel32!*")```).
+It is now possible to query for large numbers of functions (```@$cursession.TTD.Calls("kernel32!*")```).
 
 Automation: A new ```-onMonitorReadyEvent``` command-line option indicates when the recording monitor (```-monitor``` switch)
 is ready to record new processes.
@@ -63,7 +63,7 @@ AMD/Intel fixes:
 
 TTD now implements and publishes publicly an API to control the recorder from within the live recorded process. Documentation and a sample can be found in [GitHub](https://github.com/microsoft/WinDbg-Samples/tree/HEAD/TTD).
 
-TTD can now inject itself with recording turned off using the new `-recordMode` switch. By default TTD uses `-recordMode Automatic` which causes all threads to be recorded. If `-recordMode Manual` is specified then TTD injects into the target process but does not record anything until told to do so through an API call.
+TTD can now inject itself with recording turned off using the new `-recordMode` switch. By default TTD uses `-recordMode Automatic` which causes all threads to be recorded. If `-recordMode Manual` is specified then TTD injects into the target process but doesn't record anything until told to do so through an API call.
 
 Recording can now be restricted to a specific set of modules using the `-module` switch. In some scenarios this can result in substantially faster recording and smaller trace files. More than one `-module` switch may be specified.
 

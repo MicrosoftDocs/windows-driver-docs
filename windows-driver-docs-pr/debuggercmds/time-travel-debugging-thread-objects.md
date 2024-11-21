@@ -2,7 +2,7 @@
 title: "TTD Thread Objects"
 description: "This section describes the thread model objects associated with time travel debugging."
 keywords: ["TTD Thread Objects", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
-ms.date: 10/12/2018
+ms.date: 11/20/2024
 ---
 
 # TTD Thread Objects
@@ -14,18 +14,16 @@ ms.date: 10/12/2018
 ## Properties
 
 | Property | Description |
-| --- | --- |
+| -------- | ----------- |
 | UniqueId | A unique ID for the thread across the trace. |
-| Id | The TID of the thread. |
-
+| Id       | The TID of the thread. |
 
 ## Children
 
-| Object | Description |
-| --- | --- |
+| Object   | Description |
+| -------- | ----------- |
 | LifeTime | A [TTD range object](time-travel-debugging-range-objects.md) that describes the lifetime of the thread. |
 | ActiveTime | A [TTD range object](time-travel-debugging-range-objects.md) that describes the time the thread was active. |
-
 
 ## Example Usage
 
@@ -74,10 +72,10 @@ ntdll!NtTestAlert+0x14:
 00007ffb`e3e289d4 c3              ret
 ```
 
-
 ## See Also
 
 [Time Travel Debugging - Introduction to Time Travel Debugging objects](time-travel-debugging-object-model.md)
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
 
+[dx (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md)

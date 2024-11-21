@@ -2,7 +2,7 @@
 title: "Time Travel Debugging - Sample App Walkthrough"
 description: "This section contains a walk through of a small C++ app. "
 keywords: ["Sample App Walkthrough", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
-ms.date: 01/23/2020
+ms.date: 11/18/2024
 ---
 
 # Time Travel Debugging - Sample App Walkthrough
@@ -105,7 +105,7 @@ The lab has the following three sections.
 
  
    > [!NOTE]
-   > Although these setting are not recommended, it is possible to imagine a scenario where someone would advise using these settings to expedite coding or to facilitate certain testing environments.  
+   > Although these setting are not recommended, it is possible to imagine a scenario where someone would advise using these settings to expedite coding or to facilitate certain testing environments. 
 
 7. In Visual Studio, click **Build** &gt; **Build Solution**.
 
@@ -149,7 +149,7 @@ To launch the sample app and record a TTD trace, follow these steps. For general
 
 6. When the "Configure recording" dialog box appears, Click **Record** to launch the executable and start recording.
 
-    :::image type="content" source="images/ttd-time-travel-walkthrough-recording-configure.png" alt-text="Screenshot of WinDbg displaying the Configure Recording dialog with the path set to temp.":::
+    :::image type="content" source="images/ttd-time-travel-walkthrough-recording-configure.png" alt-text="Screenshot of WinDbg displaying the Configure Recording dialog with the path set to c: temp.":::
 
 7. The recording dialog appears indicating the trace is being recorded. Shortly after that, the application crashes.
 
@@ -327,8 +327,6 @@ At the point of failure in trace it is common to end up a few steps after the tr
 
     Also of interest is that the locals window contains values from our target app and the source code window is highlighting the line of code that is ready to be executed at this point in the trace.
 
-    :::image type="content" source="images/ttd-time-travel-walkthrough-locals-window.png" alt-text="Screenshot of WinDbg displaying Locals window with memory ASCII output and Source Code window.":::
-
 3. To further investigate, we can open up a memory window to view the contents near the base pointer memory address of *0x00effe44*.
 
 4. To display the associated ASCII characters, from the Memory ribbon, select **Text** and then **ASCII**.
@@ -343,7 +341,7 @@ At the point of failure in trace it is common to end up a few steps after the tr
 
 **TTD and breakpoints**
 
-Using breakpoints is a common approach to pause code execution at some event of interest.  TTD allows you to set a breakpoint and travel back in time until that breakpoint is hit after the trace has been recorded. The ability to examine the process state after an issue has happened, to determine the best location for a breakpoint, enables additional debugging workflows unique to TTD. 
+Using breakpoints is a common approach to pause code execution at some event of interest. TTD allows you to set a breakpoint and travel back in time until that breakpoint is hit after the trace has been recorded. The ability to examine the process state after an issue has happened, to determine the best location for a breakpoint, enables additional debugging workflows unique to TTD. 
 
 **Memory access breakpoints**
 
@@ -353,33 +351,11 @@ You can set breakpoints that fire when a memory location is accessed. Use the **
 ba <access> <size> <address> {options}
 ```
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Option</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>e</p></td>
-<td align="left"><p>execute (when CPU fetches an instruction from the address)</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>r</p></td>
-<td align="left"><p>read/write (when CPU reads or writes to the address)</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>w</p></td>
-<td align="left"><p>write (when the CPU writes to the address)</p></td>
-</tr>
-</tbody>
-</table>
-
+|Option | Description|
+|------ |----------- |
+|e|execute (when CPU fetches an instruction from the address)|
+|r|read/write (when CPU reads or writes to the address)|
+|w|write (when the CPU writes to the address)|
 
 Note that you can only set four data breakpoints at any given time and it is up to you to make sure that you are aligning your data correctly or you won’t trigger the breakpoint (words must end in addresses divisible by 2, dwords must be divisible by 4, and quadwords by 0 or 8).
 
@@ -444,7 +420,7 @@ As it is very unlikely that the Microsoft provided wscpy_s() function would have
 
     :::image type="content" source="images/ttd-time-travel-walkthrough-hardware-write-breakpoint.png" alt-text="Screenshot of WinDbg Breakpoints window displaying a single hardware read breakpoint.":::
 
-5. As we are wondering about the size of the greeting string we will set a watch window to display the value of sizeof(greeting). From the View ribbon, select **Watch** and provide *sizeof(greeting)*.
+5. As we are wondering about the size of the greeting string we will set a watch window to display the value of sizeof(greeting). From the View ribbon, select **Watch** and provide *sizeof(greeting)*. If the value is not in scope the watch window will display - *Unable to bind name 'greeting'*.
 
     :::image type="content" source="images/ttd-time-travel-watch-locals.png" alt-text="Screenshot of WinDbg displaying a Watch Locals window.":::
 
@@ -488,11 +464,11 @@ As it is very unlikely that the Microsoft provided wscpy_s() function would have
     00b61917 e8def7ffff      call    DisplayGreeting!ILT+245(?GetCppConGreetingYAXPA_WIZ) (00b610fa)
     ```
 
-9. It looks like we have found the root cause. The *greeting* array that we declared is 50 characters in length, while the sizeof(greeting) that we pass into GetCppConGreeting is 0x64, 100).  
+9. It looks like we have found the root cause. The *greeting* array that we declared is 50 characters in length, while the sizeof(greeting) that we pass into GetCppConGreeting is 0x64, 100. 
 
     :::image type="content" source="images/ttd-time-travel-walkthrough-code-with-watch-locals.png" alt-text="Screenshot of WinDbg displaying DisplayGreeting code with a Watch Locals window showing 0x64.":::
 
-    As we look at the size issue further, we also notice that the message is 75 characters in length, 76 including the end of string character.
+    As we look at the size issue further, we also notice that the message is 75 characters in length, and is 76 when including the end of string character.
 
     ```dbgcmd
     HELLO FROM THE WINDBG TEAM. GOOD LUCK IN ALL OF YOUR TIME TRAVEL DEBUGGING!
@@ -557,8 +533,10 @@ This portion of the walkthrough assumes that you are still located at the breakp
 
     ```dbgcmd
     0:000> dx &greeting
-    &greeting                 : 0xddf800 [Type: std::array<wchar_t,50> *]
-       [+0x000] _Elems           : "꽘棶檙瞝???" [Type: wchar_t [50]]
+    &greeting                 : ddf800 : { size=50 } [Type: std::array<wchar_t,50> *]
+       [<Raw View>]     [Type: std::array<wchar_t,50>]
+       [0]              : 3 [Type: wchar_t]
+       [1]              : 0 [Type: wchar_t]
     ```
 
     In this trace, *greeting* is located in memory at ddf800.
@@ -649,9 +627,12 @@ Another way to determine at what points in the trace memory has been accessed, i
         Address          : 0xddf800
         Size             : 0x4
         Value            : 0xddf818
+        OverwrittenValue : 0x0
+        SystemTimeStart  : Monday, November 18, 2024 23:01:43.400
+        SystemTimeEnd    : Monday, November 18, 2024 23:01:43.400
     ```
 
-4. Click on [Time Travel] to position the trace at the point in time.
+4. Click on [Time Travel] for TimeStart to position the trace at the point in time.
 
     ```dbgcmd
     0:000> dx @$cursession.TTD.Memory(0xddf800,0xddf804, "rw")[5].TimeStart.SeekTo()
@@ -680,6 +661,8 @@ Another way to determine at what points in the trace memory has been accessed, i
         Address          : 0xddf802
         Size             : 0x2
         Value            : 0x45
+        SystemTimeStart  : Monday, November 18, 2024 23:01:43.859
+        SystemTimeEnd    : Monday, November 18, 2024 23:01:43.859
     ```
 
 6. We could then click on [Time Travel] to move to that position in the trace and look further at the code execution at that point, using the techniques described earlier in this lab.
@@ -690,7 +673,7 @@ For more information about the TTD.Memory objects, see [TTD.Memory Object](time-
 
 In this very small sample the issue could have been determined by looking at the few lines of code, but in larger programs the techniques presented here can be used to decrease the time necessary to locate an issue.
 
-Once a trace is recorded, the trace and repro steps can be shared, and the issue will be reproducible on demand on any PC.  
+Once a trace is recorded, the trace and repro steps can be shared, and the issue will be reproducible on any PC. 
 
 ## See Also
 

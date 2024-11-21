@@ -57,4 +57,3 @@ This extension only works with time travel traces. For more information about ti
 ## See Also
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
-

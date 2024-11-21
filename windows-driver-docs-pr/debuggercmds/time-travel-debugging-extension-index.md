@@ -2,7 +2,7 @@
 title: "Time Travel Debugging Extension !index Command"
 description: "The !index extension indexes time travel traces or displays index status information."
 keywords: ["!index Command", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
-ms.date: 01/22/2020
+ms.date: 11/13/2024
 ---
 
 # !index
@@ -14,7 +14,6 @@ The **!index** extension indexes time travel traces or displays index status inf
 ```dbgsyntax
 !index [-status] [-force]
 ```
-
 
 Use `!index` to run an indexing pass over the current trace. 
 
@@ -32,9 +31,7 @@ If the current trace is already indexed, the !index command does nothing.
 Successfully created the index in 0ms.
 ```
 
-
-
-## <span id="ddk__analyze_dbg"></span><span id="DDK__ANALYZE_DBG"></span>Parameters
+## Parameters
 
 **-status**
 
@@ -53,7 +50,6 @@ Use `!index -force` to reindex the trace even if an unloadable index file exists
 Successfully created the index in 152ms.
 ```
 
-
 ## DLL
 
 ttdext.dll
@@ -65,4 +61,3 @@ This extension only works with time travel traces. For more information about ti
 ## See Also
 
 [Time Travel Debugging - Extension Commands](time-travel-debugging-extension-commands.md)
-

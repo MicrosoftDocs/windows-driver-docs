@@ -2,14 +2,15 @@
 title: "Time Travel Debugging - Introduction to Time Travel Debugging objects"
 description: "This section describes how to use the data model to query time travel traces. "
 keywords: ["Introduction to Time Travel Debugging objects", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
-ms.date: 04/17/2019
+ms.date: 11/20/2024
 ---
 
 # Introduction to Time Travel Debugging objects
 
 :::image type="content" source="images/ttd-time-travel-debugging-logo.png" alt-text="Time travel debugging logo featuring a clock.":::
 
-This section describes how to use the data model to query time travel traces. This can be a powerful tool to answer questions like these about the code that is captured in a time travel trace.
+This section describes how to use the data model to query time travel traces. This can be a useful tool to answer questions like these about the code that is captured in a time travel trace.
+
 * What exceptions are in the trace?
 * At what point in time in the trace did a specific code module load?
 * When were threads created/terminated in the trace?
@@ -22,45 +23,58 @@ There are TTD extensions that add data to the *Session* and *Process* data model
 The primary objects added to *Process* objects can be found in the *TTD* namespace off of any *Process* object. For example, `@$curprocess.TTD`.
 
 ```dbgcmd
-:000> dx @$curprocess.TTD
+0:000> dx @$curprocess.TTD
 @$curprocess.TTD                
+    Index           
     Threads         
     Events          
-    Lifetime         : [26:0, 464232:0]
+    DebugOutput     
+    Lifetime         : [2C8:0, 16EC:98A]
+    DefaultMemoryPolicy : InFragmentAggressive
     SetPosition      [Sets the debugger to point to the given position on this process.]
+    GatherMemoryUse  [0]
+    RecordClients   
+    PrevMemoryAccess [(accessMask, address, size [, address, size, ...]) - Find the previous matching memory access before current position.]
+    NextMemoryAccess [(accessMask, address, size [, address, size, ...]) - Find the next matching memory access after current position.]
+    Recorder
 ```
 
 For general information on working with LINQ queries and debugger objects, see [Using LINQ With the debugger objects](../debugger/using-linq-with-the-debugger-objects.md).
 
 ### Properties
 
-| Object | Description |
-| --- | --- |
+| Object  | Description |
+| -------- | ---------- |
 | Lifetime | A [TTD range object](time-travel-debugging-range-objects.md) describing the lifetime of the entire trace. |
-| Threads | Contains a collection of [TTD thread objects](time-travel-debugging-thread-objects.md), one for every thread throughout the lifetime of the trace. |
-| Events | Contains a collection of [TTD event objects](time-travel-debugging-event-objects.md), one for every event in the trace. |
+| Threads  | Contains a collection of [TTD thread objects](time-travel-debugging-thread-objects.md), one for every thread throughout the lifetime of the trace. |
+| Events   | Contains a collection of [TTD event objects](time-travel-debugging-event-objects.md), one for every event in the trace. |
 
 ### Methods
 
 | Method | Description |
-| --- | --- |
+| ------ | ----------- |
 | SetPosition() | Takes an integer between 0 and 100 or string in N:N form as input and jumps the trace to that location. See [!tt](time-travel-debugging-extension-tt.md) for more information.|
 
 ## Session Objects
+
 The primary objects added to *Session* objects can be found in the *TTD* namespace off of any *Session* object. For example, `@$cursession.TTD`.
 
 ```dbgcmd
 0:000> dx @$cursession.TTD
-@$cursession.TTD                 : [object Object]
+@$cursession.TTD                
     Calls            [Returns call information from the trace for the specified set of methods: TTD.Calls("module!method1", "module!method2", ...) For example: dx @$cursession.TTD.Calls("user32!SendMessageA")]
     Memory           [Returns memory access information for specified address range: TTD.Memory(startAddress, endAddress [, "rwec"])]
-    DefaultParameterCount : 0x4
+    MemoryForPositionRange [Returns memory access information for specified address range and position range: TTD.MemoryForPositionRange(startAddress, endAddress [, "rwec"], minPosition, maxPosition)]
+    PinObjectPosition [Pins an object to the given time position: TTD.PinObjectPosition(obj, pos)]
     AsyncQueryEnabled : false
-    Resources       
+    RichQueryTypesEnabled : true
+    DefaultParameterCount : 0x4
     Data             : Normalized data sources based on the contents of the time travel trace
     Utility          : Methods that can be useful when analyzing time travel traces
+    Analyzers        : Methods that perform code analysis on the time travel trace
+    Bookmarks        : Bookmark collection
+    Checkers         : Checkers (scripts for detection of common issues recorded in a time travel trace)
 ```
-
 
 > [!NOTE]
 > There are some objects and methods added by TTDAnalyze that are used for internal functions of the extension. Not all namespaces are documented, and the current namespaces will evolve over time.
@@ -69,10 +83,10 @@ The primary objects added to *Session* objects can be found in the *TTD* namespa
 ### Methods
 
 | Method | Description |
-| --- | --- |
+| ------ | ----------- |
 | Data.Heap() | A collection of [heap objects](time-travel-debugging-heap-objects.md) that were allocated during the trace. Note that this is a function that does computation, so it takes a while to run.|
-| Calls() | Returns a collection of [calls objects](time-travel-debugging-calls-objects.md) that match the input string. The input string can contain wildcards. Note that this is a function that does computation, so it takes a while to run.  |
-| Memory() | This is a method that takes beginAddress, endAddress and dataAccessMask parameters and returns a collection of [memory objects](time-travel-debugging-memory-objects.md). Note that this is a function that does computation, so it takes a while to run.  |
+| Calls() | Returns a collection of [calls objects](time-travel-debugging-calls-objects.md) that match the input string. The input string can contain wildcards. Note that this is a function that does computation, so it takes a while to run. |
+| Memory() | This is a method that takes beginAddress, endAddress and dataAccessMask parameters and returns a collection of [memory objects](time-travel-debugging-memory-objects.md). Note that this is a function that does computation, so it takes a while to run. |
 
 
 ## Sorting query output
@@ -82,28 +96,33 @@ Use the OrderBy() method to sort the rows returned from the query by one or more
 ```dbgcmd
 0:000> dx -r2 @$cursession.TTD.Calls("kernelbase!GetLastError").OrderBy(c => c.TimeStart)
 @$cursession.TTD.Calls("kernelbase!GetLastError").OrderBy(c => c.TimeStart)                
-    [0xb]           
-        EventType        : Call
-        ThreadId         : 0x3a10
+    [0x0]           
+        EventType        : 0x0
+        ThreadId         : 0x2d98
         UniqueThreadId   : 0x2
-        TimeStart        : 39:2DC [Time Travel]
-        TimeEnd          : 39:2DF [Time Travel]
-        Function         : UnknownOrMissingSymbols
-        FunctionAddress  : 0x7561ccc0
-        ReturnAddress    : 0x7593d24c
-        ReturnValue      : 0x0
+        TimeStart        : 718:7D7 [Time Travel]
+        TimeEnd          : 718:7DA [Time Travel]
+        Function         : KERNELBASE!GetLastError
+        FunctionAddress  : 0x7ff996cf20f0
+        ReturnAddress    : 0x7ff99855ac5a
+        ReturnValue      : 0x0 [Type: unsigned long]
         Parameters      
-    [0xe]           
-        EventType        : Call
-        ThreadId         : 0x3a10
+        SystemTimeStart  : Friday, January 12, 2024 21:18:40.862
+        SystemTimeEnd    : Friday, January 12, 2024 21:18:40.862
+    [0x1]           
+        EventType        : 0x0
+        ThreadId         : 0x2d98
         UniqueThreadId   : 0x2
-        TimeStart        : AF:36 [Time Travel]
-        TimeEnd          : AF:39 [Time Travel]
-        Function         : UnknownOrMissingSymbols
-        FunctionAddress  : 0x7561ccc0
-        ReturnAddress    : 0x4723ef
-        ReturnValue      : 0x0
-        Parameters  
+        TimeStart        : 72D:1B3 [Time Travel]
+        TimeEnd          : 72D:1B6 [Time Travel]
+        Function         : KERNELBASE!GetLastError
+        FunctionAddress  : 0x7ff996cf20f0
+        ReturnAddress    : 0x7ff9961538df
+        ReturnValue      : 0x57 [Type: unsigned long]
+        Parameters      
+        SystemTimeStart  : Friday, January 12, 2024 21:18:40.862
+        SystemTimeEnd    : Friday, January 12, 2024 21:18:40.862
+...        
 ```
 
 To display additional depth of the data model objects the -r2 recursion level option is used. For more information about the dx command options, see [dx  (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md).
@@ -144,16 +163,18 @@ To select a specific element a variety of qualifiers can be appended to the quer
 ```dbgcmd
 0:000> dx @$cursession.TTD.Calls("kernelbase!GetLastError").First()
 @$cursession.TTD.Calls("kernelbase!GetLastError").First()                
-    EventType        : Call
-    ThreadId         : 0x3a10
+    EventType        : 0x0
+    ThreadId         : 0x2d98
     UniqueThreadId   : 0x2
-    TimeStart        : 77A:9 [Time Travel]
-    TimeEnd          : 77A:C [Time Travel]
-    Function         : UnknownOrMissingSymbols
-    FunctionAddress  : 0x7561ccc0
-    ReturnAddress    : 0x6cf12406
-    ReturnValue      : 0x0
-    Parameters    
+    TimeStart        : 718:7D7 [Time Travel]
+    TimeEnd          : 718:7DA [Time Travel]
+    Function         : KERNELBASE!GetLastError
+    FunctionAddress  : 0x7ff996cf20f0
+    ReturnAddress    : 0x7ff99855ac5a
+    ReturnValue      : 0x0 [Type: unsigned long]
+    Parameters      
+    SystemTimeStart  : Friday, January 12, 2024 21:18:40.862
+    SystemTimeEnd    : Friday, January 12, 2024 21:18:40.862
 ```
 
 ## Filtering in a query
@@ -165,17 +186,15 @@ This example returns rows where ReturnValue is not zero and selects to display t
 ```dbgcmd
 0:000> dx -r2 @$cursession.TTD.Calls("kernelbase!GetLastError").Where(c => c.ReturnValue != 0).Select(c => new { Time = c.TimeStart, Error = c.ReturnValue })
 @$cursession.TTD.Calls("kernelbase!GetLastError").Where(c => c.ReturnValue != 0).Select(c => new { Time = c.TimeStart, Error = c.ReturnValue })                
-    [0x13]          
-        Time             : 3C64A:834 [Time Travel]
-        Error            : 0x36b7
-    [0x1c]          
-        Time             : 3B3E7:D6 [Time Travel]
-        Error            : 0x3f0
-    [0x1d]          
-        Time             : 3C666:857 [Time Travel]
-        Error            : 0x36b7
-    [0x20]          
-        Time             : 3C67E:12D [Time Travel]
+    [0x1]           
+        Time             : 72D:1B3 [Time Travel]
+        Error            : 0x57 [Type: unsigned long]
+    [0x2]           
+        Time             : 72D:1FC [Time Travel]
+        Error            : 0x2af9 [Type: unsigned long]
+    [0x3]           
+        Time             : 72D:26E [Time Travel]
+        Error            : 0x2af9 [Type: unsigned long]
 ```
 
 ## Grouping
@@ -225,7 +244,6 @@ Use the dx command to display the newly created variable using the -g grid optio
 = [0x23]    - 3A547:D6     - 0x3f0     =
 = [0x24]    - 3A59B:D0     - 0x3f0     =
 ```
-
 
 ## Examples
 
@@ -295,8 +313,6 @@ This LINQ query displays the load event(s) of a particular module.
     [0x0]            : Module Unloaded at position: FFFFFFFFFFFFFFFE:0
 ```
 The address of FFFFFFFFFFFFFFFE:0 indicates the end of the trace. 
-
-
 
 ### Querying for all of the error checks in the trace
 
@@ -438,7 +454,7 @@ ModLoad: 76cc0000 76cce000   C:\WINDOWS\System32\MSASN1.dll
 
 ## GitHub TTD Query Lab
 
-For a tutorial on how to debug C++ code using a Time Travel Debugging recording using queries to find information about the execution of the problematic code in question, see https://github.com/Microsoft/WinDbg-Samples/blob/master/TTDQueries/tutorial-instructions.md.
+For a tutorial on how to debug C++ code using a Time Travel Debugging recording using queries to find information about the execution of the problematic code in question, see [WinDbg-Samples - Time Travel Debugging and Queries](https://github.com/Microsoft/WinDbg-Samples/blob/master/TTDQueries/tutorial-instructions.md).
 
 All of the code used in the lab is available here: https://github.com/Microsoft/WinDbg-Samples/tree/master/TTDQueries/app-sample.
 
@@ -455,12 +471,12 @@ The data model extension needs full symbol information in order to provide funct
 
 ### TTD Queries for calls
 
-There can be a several reasons that a query does not return anything for calls to a DLL.
+There can be a several reasons that a query doesn't return anything for calls to a DLL.
 
-- The syntax for the call isn't quite right.  Try verifying the call syntax by using the x command: "x \<call\>". If the module name returned by x is in uppercase, use that.
+- The syntax for the call isn't quite right. Try verifying the call syntax by using the [x (Examine Symbols)](x--examine-symbols-.md) `x <call>`. If the module name returned by x is in uppercase, use that.
 - The DLL is not loaded yet and is loaded later in the trace. To work around this travel to a point in time after the DLL is loaded and redo the query.
 - The call is inlined which the query engine is unable to track.
-- The query pattern uses wildcards which returns too many functions.  Try to make the query pattern more specific so that the number of matched functions is small enough.
+- The query pattern uses wildcards which returns too many functions. Try to make the query pattern more specific so that the number of matched functions is small enough.
 
 ## See Also
 

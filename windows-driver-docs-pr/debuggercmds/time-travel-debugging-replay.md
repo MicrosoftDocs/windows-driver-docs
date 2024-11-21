@@ -2,7 +2,7 @@
 title: "Time Travel Debugging - Replay a trace"
 description: "This section describes how to replay time travel traces."
 keywords: ["Replay a trace", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
-ms.date: 03/13/2024
+ms.date: 11/18/2024
 ---
 
 # Time Travel Debugging - Replay a trace
@@ -47,23 +47,14 @@ Use the [p (Step)](p--step-.md) command to step forward in a TTD trace.
 ```dbgcmd
 0:000> p
 Time Travel Position: F:1
-eax=0173a5b0 ebx=00fd8000 ecx=7774f821 edx=0f994afc esi=0f99137c edi=00de0000
-eip=7774f828 esp=010ff34c ebp=010ff584 iopl=0         nv up ei pl zr na pe nc
-cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000246
 ntdll!LdrpInitializeProcess+0x1bc5:
 7774f828 740b            je      ntdll!LdrpInitializeProcess+0x1bd2 (7774f835) [br=1]
 0:000> p
 Time Travel Position: F:2
-eax=0173a5b0 ebx=00fd8000 ecx=7774f821 edx=0f994afc esi=0f99137c edi=00de0000
-eip=7774f835 esp=010ff34c ebp=010ff584 iopl=0         nv up ei pl zr na pe nc
-cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000246
 ntdll!LdrpInitializeProcess+0x1bd2:
 7774f835 83bdd0feffff00  cmp     dword ptr [ebp-130h],0 ss:002b:010ff454=00000000
 0:000> p
 Time Travel Position: F:3
-eax=0173a5b0 ebx=00fd8000 ecx=7774f821 edx=0f994afc esi=0f99137c edi=00de0000
-eip=7774f83c esp=010ff34c ebp=010ff584 iopl=0         nv up ei pl zr na pe nc
-cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000246
 ntdll!LdrpInitializeProcess+0x1bd9:
 7774f83c 0f8450e8ffff    je      ntdll!LdrpInitializeProcess+0x42f (7774e092) [br=1]
 ```
@@ -73,16 +64,10 @@ You can also use the [t (Trace)](t--trace-.md) command to navigate in the trace.
 ```dbgcmd
 0:000> t
 Time Travel Position: F:4
-eax=0173a5b0 ebx=00fd8000 ecx=7774f821 edx=0f994afc esi=0f99137c edi=00de0000
-eip=7774e092 esp=010ff34c ebp=010ff584 iopl=0         nv up ei pl zr na pe nc
-cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000246
 ntdll!LdrpInitializeProcess+0x42f:
 7774e092 33c0            xor     eax,eax
 0:000> t
 Time Travel Position: F:5
-eax=00000000 ebx=00fd8000 ecx=7774f821 edx=0f994afc esi=0f99137c edi=00de0000
-eip=7774e094 esp=010ff34c ebp=010ff584 iopl=0         nv up ei pl zr na pe nc
-cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000246
 ntdll!LdrpInitializeProcess+0x431:
 7774e094 e9f5170000      jmp     ntdll!LdrpInitializeProcess+0x1c2b (7774f88e)
 ```
@@ -92,16 +77,10 @@ Use the p- command to step backwards in a TTD trace.
 ```dbgcmd
 0:000> p-
 Time Travel Position: F:4
-eax=0173a5b0 ebx=00fd8000 ecx=7774f821 edx=0f994afc esi=0f99137c edi=00de0000
-eip=7774e092 esp=010ff34c ebp=010ff584 iopl=0         nv up ei pl zr na pe nc
-cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000246
 ntdll!LdrpInitializeProcess+0x42f:
 7774e092 33c0            xor     eax,eax
 0:000> p-
 Time Travel Position: F:3
-eax=0173a5b0 ebx=00fd8000 ecx=7774f821 edx=0f994afc esi=0f99137c edi=00de0000
-eip=7774f83c esp=010ff34c ebp=010ff584 iopl=0         nv up ei pl zr na pe nc
-cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000246
 ntdll!LdrpInitializeProcess+0x1bd9:
 7774f83c 0f8450e8ffff    je      ntdll!LdrpInitializeProcess+0x42f (7774e092) [br=1]
 ```
@@ -168,9 +147,6 @@ In the !positions command output, click on the link next to the third thread (3F
 Setting position: 200:0
 (954.3ffc): Break instruction exception - code 80000003 (first/second chance not available)
 Time Travel Position: 200:0
-eax=00000000 ebx=012da718 ecx=7775396c edx=00000000 esi=012e1848 edi=012e1a08
-eip=7775396c esp=014cf9f8 ebp=014cfbfc iopl=0         nv up ei ng nz ac po cy
-cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000293
 ntdll!NtWaitForWorkViaWorkerFactory+0xc:
 7775396c c21400          ret     14h
 ```

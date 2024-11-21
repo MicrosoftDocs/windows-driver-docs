@@ -2,7 +2,7 @@
 title: "Time Travel Debugging - Overview"
 description: "This section describes time travel debugging."
 keywords: ["Overview", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
-ms.date: 03/13/2024
+ms.date: 11/15/2024
 ---
 
 # Time Travel Debugging - Overview
@@ -15,11 +15,11 @@ Time Travel Debugging is a tool that allows you to capture a trace of your pro
 
 TTD allows you to go back in time to better understand the conditions that lead up to the bug and replay it multiple times to learn how best to fix the problem.
 
-TTD can have advantages over crash dump files, which often miss the state and execution path that led to the ultimate failure.  
+TTD can have advantages over crash dump files, which often miss the state and execution path that led to the ultimate failure. 
 
 In the event you can't figure out the issue yourself, you can share the trace with a coworker and they can look at exactly what you're looking at. This can allow for easier collaboration than live debugging, as the recorded instructions are the same, whereas the address locations and code execution will differ on different PCs. You can also share a specific point in time to help your coworker figure out where to start.
 
-TTD is efficient and works to add as little as possible overhead as it captures code execution in trace files.  
+TTD is efficient and works to add as little as possible overhead as it captures code execution in trace files. 
 
 TTD includes a set of debugger data model objects to allow you to query the trace using LINQ. For example, you can use TTD objects to locate when a specific code module was loaded or locate all of the exceptions.
 
@@ -29,7 +29,11 @@ TTD includes a set of debugger data model objects to allow you to query the trac
 
 Time Travel Debugging is integrated with [WinDbg](https://aka.ms/windbg), providing seamless recording and replay experience.
 
-To use TTD, you need to run the debugger elevated. Install WinDbg using an account that has administrator privileges and use that account when recording in the debugger. In order to run the debugger elevated, select and hold (or right-click) the WinDbg icon in the Start menu, and then select More > Run as Administrator.
+To use TTD, you need to run the debugger elevated. Install WinDbg using an account that has administrator privileges and use that account when recording in the debugger. In order to run the debugger elevated, select and hold (or right-click) the WinDbg icon in the Start menu, and then select **More > Run as Administrator**.
+
+### Release notes
+
+TTD continues to evolve, for the latest information, see [Time travel debugging release notes](time-travel-debugging-release-notes.md).
 
 ### The recording may contain personally identifiable or security related information
 
@@ -48,10 +52,10 @@ This table summarizes the pros and cons of the different debugging solutions ava
 
 |          Approach           |                                                      Pros                                                       |                                                                                                               Cons                                                                                                                |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|       Live debugging        |   Interactive experience, sees flow of execution, can change target state, familiar tool in familiar setting.   | Disrupts the user experience, may require effort to reproduce the issue repeatedly, may impact security, not always an option on production systems.  With repro difficult to work back from point of failure to determine cause. |
-|            Dumps            |                            No coding upfront, low-intrusiveness, based on triggers.                             |                                                          Successive snapshot or live dumps provide a simple “over time” view. Overhead is essentially zero if not used.                                                           |
-|      Telemetry & logs       |            Lightweight, often tied to business scenarios / user actions, machine learning friendly.             |                                                         Issues arise in unexpected code paths (with no telemetry). Lack of data depth, statically compiled into the code.                                                         |
-| Time Travel Debugging (TTD) | Great at complex bugs, no coding upfront, offline repeatable debugging, analysis friendly, captures everything. |                                                                 Large overhead at record time. May collect more data that is needed. Data files can become large.                                                                 |
+|       Live debugging        |   Interactive experience, sees flow of execution, can change target state, familiar tool in familiar setting. | Disrupts the user experience, may require effort to reproduce the issue repeatedly, may impact security, not always an option on production systems. With repro difficult to work back from point of failure to determine cause. |
+|            Dumps            |                            No coding upfront, low-intrusiveness, based on triggers.                         |                                                          Successive snapshot or live dumps provide a simple “over time” view. Overhead is essentially zero if not used.                                                        |
+|      Telemetry & logs       |            Lightweight, often tied to business scenarios / user actions, machine learning friendly.          |                                                         Issues arise in unexpected code paths (with no telemetry). Lack of data depth, statically compiled into the code.                                                      |
+| Time Travel Debugging (TTD) | Great at complex bugs, no coding upfront, offline repeatable debugging, analysis friendly, captures everything. |                                                                 Large overhead at record time. May collect more data that is needed. Data files can become large.                                                              |
 
 ## Video Training
 
@@ -67,7 +71,7 @@ To learn more about TTD see these videos.
 
 ### Trace file size
 
-The trace file can get big and the user of TTD needs to make sure that there is adequate free space available. If you record a program for even a few minutes, the trace files can quickly grow to be several gigabytes. TTD does not set a maximum size of trace files to allow for complex long running scenarios. Quickly re-creating the issue, will keep the trace file size as small as possible.
+The trace file can get big and the user of TTD needs to make sure that there is adequate free space available. If you record a program for even a few minutes, the trace files can quickly grow to be several gigabytes. TTD doesn't set a maximum size of trace files to allow for complex long running scenarios. Quickly re-creating the issue, will keep the trace file size as small as possible.
 
 ### Trace and index files
 
@@ -75,7 +79,7 @@ A trace file (`.run`) stores the code execution during recording.
 
 Once the recording is stopped, an index file (`.idx`) is created to optimize access to the trace information. Index files are also created automatically when WinDbg opens trace files.
 
-Index files can also be large, typically twice as large as the trace file.  
+Index files can also be large, typically twice as large as the trace file. 
 
 You can recreate the index file from the trace file using the `!tt.index` command.
 
@@ -98,7 +102,7 @@ For more information on working the trace files, see [Time Travel Debugging - Wo
 
 ### Anti-virus incompatibilities
 
-You may encounter incompatibilities because of how TTD hooks into process to record them. Typically issues arise with anti-virus or other system software that is attempting to track and shadow system memory calls. If you run into issues of with recording, such as an insufficient permission message, try temporarily disabling any anti-virus software.  
+You may encounter incompatibilities because of how TTD hooks into process to record them. Typically issues arise with anti-virus or other system software that is attempting to track and shadow system memory calls. If you run into issues of with recording, such as an insufficient permission message, try temporarily disabling any anti-virus software. 
 
 Other utilities that attempt to block memory access, can also be problematic, for example, the Microsoft Enhanced Mitigation Experience Toolkit.
 
@@ -118,15 +122,13 @@ Some Windows system protected processes, such as Protected Process Light (PPL) p
 
 ### Performance impact of recording
 
-Recording an application or process impacts the performance of the PC. The actual performance overhead varies based upon the amount and type of code being executed during recording. You can expect about a 10x-20x performance hit in typical recording scenarios. Sometimes there will not be a noticeable slowdown but for more resource intensive operations (i.e. File Open dialog) you can see the impact of recording.
+Recording an application or process impacts the performance of the PC. The actual performance overhead varies based upon the amount and type of code being executed during recording. You can expect about a 10x-20x performance hit in typical recording scenarios. Sometimes there will not be a noticeable slowdown in the UI. But for the more resource intensive operations, such as the File Open dialog, you will see the impact of recording.
 
 ### Trace file errors
 
 There are some cases where trace file errors can occur. For more information, see [Time Travel Debugging - Troubleshooting](time-travel-debugging-troubleshooting.md).
 
 ## Advanced Features of Time Travel Debugging
-
-Here's some of the most notable TTD advanced features.
 
 ### Timelines
 

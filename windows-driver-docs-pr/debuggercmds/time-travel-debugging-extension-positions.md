@@ -2,7 +2,7 @@
 title: "Time Travel Debugging Extension !positions Command "
 description: "The !positions extension displays all the active threads, including their current positions."
 keywords: ["positions", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
-ms.date: 01/22/2020
+ms.date: 11/13/2024
 ---
 
 # !positions
@@ -15,7 +15,7 @@ The **!positions** extension displays all the active threads, including their cu
 !positions
 ```
 
-## <span id="ddk__analyze_dbg"></span><span id="DDK__ANALYZE_DBG"></span>Parameters
+## Parameters
 
 None
 

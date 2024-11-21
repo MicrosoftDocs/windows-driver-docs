@@ -2,7 +2,7 @@
 title: "Time Travel Debugging - TTD.exe command line utility"
 description: "This section describes when and how to use work with the TTD.exe command line utility"
 keywords: ["TTD.exe command line utility", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
-ms.date: 03/15/2024
+ms.date: 11/15/2024
 ---
 
 # Time Travel Debugging - TTD.exe command line utility
@@ -88,7 +88,7 @@ Mode                 LastWriteTime         Length Name
 -a---           11/9/2023  2:43 PM        1128480 TTDRecordCPU.dll
 ```
 
-Note that the x86 binaries are in a subdirectory. If you do not need to record 32-bit processes this folder can be deleted (and you could add /xd x86 to the robocopy command to avoid copying it in the first place). The ARM64 version does not have any subdirectories.
+Note that the x86 binaries are in a subdirectory. If you do not need to record 32-bit processes this folder can be deleted (and you could add /xd x86 to the robocopy command to avoid copying it in the first place). The ARM64 version doesn't have any subdirectories.
 
 The TTDRecordUI.dll is only needed if you want to use the UI to control recording. If you do not want the UI, you can delete this file.
 
@@ -259,7 +259,7 @@ Display the command line help.
 
 Launch and trace the program (default mode).
 
-This is the only mode that allows you to pass arguments to the program.  The `-launch` option must be the last TTD option in the command-line, followed by the program to launch, and any arguments that the program requires. If no mode is specified it will be treated as launch as well. For example `TTD.exe -out C:\traces ping.exe msn.com` is treated as a launch.
+This is the only mode that allows you to pass arguments to the program. The `-launch` option must be the last TTD option in the command-line, followed by the program to launch, and any arguments that the program requires. If no mode is specified it will be treated as launch as well. For example `TTD.exe -out C:\traces ping.exe msn.com` is treated as a launch.
 
 `-attach <PID>`
 
@@ -273,7 +273,7 @@ Trace programs or services each time they are started (until reboot). To use thi
 
 `-out <path>`
 
-Specify a trace file name or a directory.  If a directory, the directory must already exist. If a file name, the file name must not exist.
+Specify a trace file name or a directory. If a directory, the directory must already exist. If a file name, the file name must not exist.
 
 `-noUI`
 
@@ -297,11 +297,11 @@ Stop tracing the specified process name, PID or "all" can be specified.
 
 `-wait <timeout>`
 
-Wait for up to the amount of seconds specified for all trace sessions on the system to end.  Specify -1 to wait infinitely.
+Wait for up to the amount of seconds specified for all trace sessions on the system to end. Specify -1 to wait infinitely.
 
 `-tracingOff`
 
-Starts application with trace recording off.  You can use the UI checkbox to turn tracing back on after it has been turned off.
+Starts application with trace recording off. You can use the UI checkbox to turn tracing back on after it has been turned off.
 
 ### Additional command line options
 
@@ -337,7 +337,7 @@ Trace to a ring buffer. The file size will not grow beyond the limits specified 
 
 `-maxFile <size>`
 
-Maximum size of the trace file in MB.  When in full trace mode the default is 1024GB and the minimum value is 1MB. When in ring buffer mode the default is 2048MB, the minimum value is 1MB, and the maximum value is 32768MB.
+Maximum size of the trace file in MB. When in full trace mode the default is 1024GB and the minimum value is 1MB. When in ring buffer mode the default is 2048MB, the minimum value is 1MB, and the maximum value is 32768MB.
 
 The default for in-memory ring on 32-bit processes is 256MB.
 
@@ -361,7 +361,7 @@ If TTD.exe fails to record, or the .out file indicates a simulation of 0 seconds
 
 | Value              | Description |
 |--------------------|-------------|
-| `Default`          | Default CPU support, just requires basic commonly-available support in the replay CPU.  |
+| `Default`          | Default CPU support, just requires basic commonly-available support in the replay CPU. |
 | `MostConservative` | Requires no special support in the replay CPU. Adequate for traces that will be replayed on a completely different CPU architecture, like an Intel trace on ARM64 CPU. |
 | `MostAggressive`   | Assumes that the replay CPU will be similar and of equal or greater capability than the CPU used to record. |
 |`IntelAvxRequired`  | Assumes that the replay CPU will be Intel/AMD 64-bit CPU supporting AVX. |
@@ -375,7 +375,7 @@ The following options can be used to reduce the overhead of tracing:
 
 `-module <module name>`
 
-Record only the specified module (e.g. comdlg32.dll) and the code that it calls. This can be the executable itself or any DLL loaded by the executable. This option can be specified more than once to record multiple modules.
+Record only the specified module (such as comdlg32.dll) and the code that it calls. This can be the executable itself or any DLL loaded by the executable. This option can be specified more than once to record multiple modules.
 
 When this option is used the target process runs at full speed until code in the specified module(s) is executed. TTD will then record the process until execution leaves the specified module(s), at which point recording is turned off and the target returns to full speed. Because turning recording on/off is expensive, TTD will leave recording on when a specified module calls out to other modules in the process.
 

@@ -2,12 +2,13 @@
 title: "TTD Calls Objects"
 description: "This section describes the calls model objects associated with time travel debugging."
 keywords: ["TTD Calls Objects", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
-ms.date: 09/25/2017
+ms.date: 11/13/2024
 ---
 
 # TTD Calls Objects
 
 ## Description
+
 *TTD Calls* objects are used to give information about function calls that occur over the course of a trace.
 
 ## Parameters
@@ -36,6 +37,7 @@ ms.date: 09/25/2017
 | TimeEnd | A [position object](time-travel-debugging-position-objects.md) that describes the position at the end of the call. |
 
 ## Remarks
+
 Time travel debugging uses symbol information provided in the PDBs to determine the number of parameters for a function and their types, the return value type, and the calling convention. In the event that symbol information is not available or the symbols have been restricted to public symbol information, it is still possible to do queries. The time travel query engine will make some assumptions in this scenario:
 * There are four 64-bit unsigned integer parameters to the function
 * The return value is a 64-bit unsigned integer
@@ -62,6 +64,8 @@ This example shows the calls object for ucrtbase!initterm.
         FunctionAddress  : 0x7ffb345825d0
         ReturnAddress    : 0x7ff6a521677e
         Parameters
+        SystemTimeStart  : Friday, January 12, 2024 21:18:40.799
+        SystemTimeEnd    : Friday, January 12, 2024 21:18:44.26        
 ```
 
 ## See Also
@@ -70,3 +74,4 @@ This example shows the calls object for ucrtbase!initterm.
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
 
+[dx (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md)

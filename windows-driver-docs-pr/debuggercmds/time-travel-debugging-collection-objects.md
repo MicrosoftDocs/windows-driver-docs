@@ -1,23 +1,21 @@
 ---
 title: "TTD Collection Objects"
-description: "Learn about the range model objects associated with time travel debugging. See example usage and view additional available resources."
+description: "Learn about the collection model objects associated with time travel debugging. See example usage and view additional available resources."
 keywords: ["TTD Collection Objects", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
-ms.date: 09/25/2017
+ms.date: 11/14/2024
 ---
 
 # TTD Collection Objects
 
-> [!NOTE]
-> The information in this topic is preliminary. Updated information will be provided in a later release of the documentation.
->
-
 ## Description
+
+The collection model objects allow for common manipulation of debugger model objects that support the collection objects. 
 
 ## Children
 
 
-| Object | Description |
-| --- | --- |
+| Object      | Description |
+| ----------- | ----------- |
 | MinPosition | A [position object](time-travel-debugging-position-objects.md) that describes the earliest position relevant to the range. |
 
 ### TTD Collection Object Methods
@@ -50,13 +48,20 @@ ms.date: 09/25/2017
 
 ## Example Usage
 
-*Information pending*
+This LINQ query displays the load event(s) of a particular module, that contains, ntdll.dll.
 
-
+```dbgcmd
+0:000> dx @$curprocess.TTD.Events.Where(t => t.Type == "ModuleUnloaded").Where(t => t.Module.Name.Contains("ntdll.dll")) 
+```
 
 ## See Also
+
+[Using LINQ With the debugger objects](../debugger/using-linq-with-the-debugger-objects.md)
+
+[dx  (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md)
 
 [Time Travel Debugging - Introduction to Time Travel Debugging objects](time-travel-debugging-object-model.md)
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
+
 

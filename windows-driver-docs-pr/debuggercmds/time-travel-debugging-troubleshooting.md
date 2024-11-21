@@ -2,7 +2,7 @@
 title: "Time Travel Debugging - Troubleshooting"
 description: "This section describes how to troubleshoot time travel traces."
 keywords: ["Troubleshooting", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
-ms.date: 10/18/2017
+ms.date: 11/15/2024
 ---
 
 # Time Travel Debugging - Troubleshooting
@@ -17,7 +17,7 @@ This section describes how to troubleshoot time travel traces.
 
 As the message indicates, running the debugger elevated is a requirement. In order to run the debugger elevated, right-click on the **WinDbg** icon in the start menu and then select **More** > **Run as Administrator**.
 
-### I installed WinDbg with an account that does not have administrator privileges and I get an error message that says "WinDbg must be run elevated to support Time Travel Debugging"
+### I installed WinDbg with an account that doesn't have administrator privileges and I get an error message that says "WinDbg must be run elevated to support Time Travel Debugging"
 
 Re-install WinDbg using an account that has administrator privileges and use that account when recording in the debugger.
 
@@ -25,13 +25,13 @@ Re-install WinDbg using an account that has administrator privileges and use tha
 
 This is not supported at this time, but you may attach to and record an already-running UWP application.
 
-### I can't record a <insert name of unusual process type - running in another session, security context, credentials...> process
+### I can't record a unusual process type - running in another session, security context, credentials...
 
 At this time, TTD only record regular processes that you can be normally launched from a command console or by clicking on an executable or shortcut in Windows Explorer.
 
 ### I cannot successfully record my application on my computer
 
-If recording of your application fails, verify that you can record a simple Windows process.  For example, "ping.exe" or "cmd.exe" are simple processes that can normally be recorded.
+If recording of your application fails, verify that you can record a simple Windows process. For example, "ping.exe" or "cmd.exe" are simple processes that can normally be recorded.
 
 ### I cannot successfully record anything at all on my computer
 
@@ -79,7 +79,6 @@ Logged debug write values are out of sync with replay
 
 In most cases all of the failure messages indicate that the .RUN trace file is not usable and must be re-recorded.
 
-
 ### Re-recording the user mode app
 
 If there is a specific issue with recording a user mode app, you may want to try recording a different app on the same PC, or try the same app on a different PC. You may want to try and record a different use of the app to see if there is a specific issue with recording certain parts of the app.
@@ -99,9 +98,8 @@ Derailments are often caused by some error in the recorder, or sometimes in the 
 
 In most cases this failure message indicates that the .RUN trace file will have a gap in the thread that derailed, starting at the point that it derailed, for some indeterminate number of instructions. If the event of interest you are trying to debug didn’t happen during that gap, the trace may be usable. If the event of interest occurred during that gap, the trace will need to be re-recorded.
 
-
 ## See Also
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
 
----
+[Time travel debugging release notes](time-travel-debugging-release-notes.md)
