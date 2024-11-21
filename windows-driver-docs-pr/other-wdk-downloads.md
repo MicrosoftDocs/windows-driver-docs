@@ -62,7 +62,7 @@ The following table indicates which Visual Studio version is required for the di
 | Windows 8.1 Update <br/>Windows 8.1 | [Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=875331) |
 | Windows 8                | [Visual Studio Professional 2012](https://go.microsoft.com/fwlink/p/?LinkID=255976) <br/>[Visual Studio Ultimate 2012](https://go.microsoft.com/fwlink/p/?LinkID=255982) |
 
-### Configure Visual Studio for Windows 11, version 22H2, version 21H2 and Windows 10, versions 1709, 1803, 1809, 1903, 2004, and Windows Server 2022
+### Configure Visual Studio for Windows 11, version 24H2, Version 23H2, version 22H2, version 21H2 and Windows 10, versions 1709, 1803, 1809, 1903, 2004, and Windows Server 2022
 
 When you install Visual Studio, select the **Desktop development with
 C++** workload. The Windows 11 Software Development Kit (SDK) is
@@ -99,6 +99,7 @@ develop, build, package, deploy, test, and debug drivers.
 
 | Released with      | WDK and related downloads                       |
 |--------------------------|-------------------------------------------------|
+| Windows 11, Version 24H2 | [WDK 10.0.26100.2161 (released November 27, 2024)](https://go.microsoft.com/fwlink/?linkid=2294834)|
 | Windows 11, Version 24H2 | [WDK 10.0.26100.2161 (released November 4, 2024)](https://go.microsoft.com/fwlink/?linkid=2294834)|
 | Windows 11, Version 24H2 | [WDK 10.0.26100.1882 (released October 14, 2024)](https://go.microsoft.com/fwlink/?linkid=2290025)|
 | Windows 11, Version 24H2 | [WDK 10.0.26100.1591 (released September 18, 2024)](https://go.microsoft.com/fwlink/?linkid=2286137)|
@@ -143,7 +144,8 @@ For more information about the EWDK, see
 
 | Versions of Windows               | EWDK                              |
 |-----------------------------------|-----------------------------------|
-| Windows 11, version 24H2 | [Windows 11, version 24H2 (released November 2024) EWDK](/legal/windows/hardware/enterprise-wdk-license-2022)
+| Windows 11, version 24H2 | [Windows 11, version 24H2 (released November 27, 2024) EWDK](/legal/windows/hardware/enterprise-wdk-license-2022)
+| Windows 11, version 24H2 | [Windows 11, version 24H2 (released November 4, 2024) EWDK](/legal/windows/hardware/enterprise-wdk-license-2022)
 | Windows 11, version 24H2 | [Windows 11, version 24H2 (released October 2024) EWDK](/legal/windows/hardware/enterprise-wdk-license-2022)
 | Windows 11, version 24H2 | [Windows 11, version 24H2 (released September 2024) EWDK](/legal/windows/hardware/enterprise-wdk-license-2022)
 | Windows 11, version 24H2 | [Windows 11, version 24H2 (released May 2024) EWDK](/legal/windows/hardware/enterprise-wdk-license-2022)
