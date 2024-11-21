@@ -8,7 +8,7 @@ keywords:
 - NuGet
 - install
 - download
-ms.date: 11/4/2024
+ms.date: 11/27/2024
 ---
 
 # Install the WDK using NuGet
@@ -59,7 +59,6 @@ When you install Visual Studio 2022, select the **Desktop development with C++**
 - C++ ATL for latest v143 build tools with Spectre Mitigations (x86 & x64)
 - C++ MFC for latest v143 build tools with Spectre Mitigations (ARM64/ARM64EC)
 - C++ MFC for latest v143 build tools with Spectre Mitigations (x86 & x64)
-
 - Windows Driver Kit
 
 ## How to Install WDK NuGet
