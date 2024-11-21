@@ -94,7 +94,7 @@ To update NuGet Packages in existing driver projects, follow these steps.
 
 1. Open the existing driver project in Visual Studio.
 1. Right-click the driver project solution file, and select **Manage NuGet packages**.
-1. Select on the **Updates** tab.
+1. Select the **Updates** tab.
 1. Select the Include prerelease box, if you wish to use prerelease WDK packages.
 1. Select the packages you wish to update in the list.
 
