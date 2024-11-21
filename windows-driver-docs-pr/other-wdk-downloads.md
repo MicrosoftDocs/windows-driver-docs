@@ -36,11 +36,11 @@ Certain device-specific stacks (for example graphics) continue to have x86/ARM32
 
 Additionally, starting with Windows 11, version 22H2 release of the WDK and EWDK, WDF redistributable co-installers are no longer supported. To learn how to work around this change, see [WDK Known Issues](./wdk-known-issues.md).
 
-You can run the Windows 11, version 21H2 WDK (including the WDK for Windows Server 2022) on Windows 7 and later, to develop drivers for the following operating systems:
+You can run the Windows 11, version 24H2 WDK (including the WDK for Windows Server 2022) on Windows 7 and later, to develop drivers for the following operating systems:
 
 |Client OS|Server OS|
 |-|-|
-|Windows 11, version 21H2|Windows Server 2022|
+|Windows 11, version 24H2|Windows Server 2022|
 |Windows 10|Windows Server 2019, Windows Server 2016|
 |Windows 8.1|Windows Server 2012 R2|
 Windows 8|Windows Server 2012|
@@ -62,7 +62,7 @@ The following table indicates which Visual Studio version is required for the di
 | Windows 8.1 Update <br/>Windows 8.1 | [Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=875331) |
 | Windows 8                | [Visual Studio Professional 2012](https://go.microsoft.com/fwlink/p/?LinkID=255976) <br/>[Visual Studio Ultimate 2012](https://go.microsoft.com/fwlink/p/?LinkID=255982) |
 
-### Configure Visual Studio for Windows 11, version 24H2, Version 23H2, version 22H2, version 21H2 and Windows 10, versions 1709, 1803, 1809, 1903, 2004, and Windows Server 2022
+### Configure Visual Studio for Windows 11, version 24H2, version 23H2, version 22H2, version 21H2 and Windows 10, versions 1709, 1803, 1809, 1903, 2004, and Windows Server 2022
 
 When you install Visual Studio, select the **Desktop development with
 C++** workload. The Windows 11 Software Development Kit (SDK) is
