@@ -6,7 +6,7 @@ keywords:
 - graphics driver development WDK , Windows
 - compute accelerator driver development WDK, Windows
 - display miniport drivers , WDK , Windows
-ms.date: 11/14/2024
+ms.date: 11/21/2024
 ms.topic: article
 ---
 
@@ -18,4 +18,4 @@ Compute accelerator drivers use the [Microsoft Compute Driver Model](mcdm.md) (M
 
 For information about available driver samples, see [Windows driver samples](../samples/index.md).
 
-The legacy [Windows 2000 Display Driver Model (XDDM)]((windows-2000-display-driver-model-design-guide.md)) was the display and graphics driver architecture available for Windows 2000 through Windows Vista and Windows 7 only.
+The legacy [Windows 2000 Display Driver Model (XDDM)](/previous-versions/windows/drivers/display/windows-2000-display-driver-model-design-guide) was the display and graphics driver architecture available for Windows 2000 through Windows Vista and Windows 7 only.
