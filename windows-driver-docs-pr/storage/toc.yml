@@ -374,13 +374,13 @@
       href: offloaded-data-transfer.md
     - name: Thin Provisioning
       href: thin-provisioning.md
-  - name: Storage management and WMI classes
+  - name: Storage Management
     items:
-    - name: Overview
-      href: storage-wmi-classes.md
+    - name: Introduction to Storage Management
+      href: introduction-to-storage-management.md
     - name: Storage Management Providers
       items:
-      - name: Overview
+      - name: About Storage Management Providers
         href: storage-management-providers.md
       - name: Object Model
         href: object-model.md
@@ -392,7 +392,7 @@
         href: smp-example-mofs.md
       - name: Windows Storage Management Provider API
         items:
-        - name: Overview
+        - name: SMP API Overview
           href: windows-storage-management-api-portal.md
         - name: Storage Management API Common Return Codes
           href: storage-management-api-common-return-codes.md
@@ -986,592 +986,594 @@
               href: ps-storagecmdlets-setstoragetier.md
             - name: SetVirtualDisk method
               href: ps-storagecmdlets-setvirtualdisk.md
-    - name: HBA WMI Classes
+    - name: Storage management WMI classes
       items:
-      - name: Overview
-        href: hba-wmi-classes.md
-      - name: WMI Class Qualifier Definitions in Hbaapi.mof
+      - name: HBA WMI Classes
         items:
         - name: Overview
-          href: wmi-class-qualifier-definitions-in-hbaapi-mof.md
-        - name: EVENT_TYPES_QUALIFIERS
-          href: event-types-qualifiers.md
-        - name: HBA_BIND_TYPE
-          href: hba-bind-type.md
-        - name: HBA_STATUS
-          href: hba-status.md
-      - name: HBAFC3MgmtInfo WMI Class
-        href: hbafc3mgmtinfo-wmi-class.md
-      - name: HBAFCPBindingEntry WMI Class
-        href: hbafcpbindingentry-wmi-class.md
-      - name: HBAFCPBindingEntry2 WMI Class
-        href: hbafcpbindingentry2-wmi-class.md
-      - name: HBAFCPID WMI Class
-        href: hbafcpid-wmi-class.md
-      - name: HBAFCPScsiEntry WMI Class
-        href: hbafcpscsientry-wmi-class.md
-      - name: HBAScsiID WMI Class
-        href: hbascsiid-wmi-class.md
-      - name: MS_SM_AdapterInformationQuery WMI Class
-        href: ms-sm-adapterinformationquery-wmi-class.md
-      - name: MS_SM_EventControl WMI Class
-        items:
-        - name: Overview
-          href: ms-sm-eventcontrol-wmi-class.md
-        - name: SM_AddTarget
-          href: sm-addtarget.md
-        - name: SM_RemoveTarget
-          href: sm-removetarget.md
-        - name: SM_AddPort
-          href: sm-addport.md
-        - name: SM_RemovePort
-          href: sm-removeport.md
-        - name: SM_AddLink
-          href: sm-addlink.md
-        - name: SM_RemoveLink
-          href: sm-removelink.md
-      - name: MS_SM_FabricAndDomainManagementMethods WMI Class
-        items:
-        - name: Overview
-          href: ms-sm-fabricanddomainmanagementmethods-wmi-class.md
-        - name: SM_SendCTPassThru
-          href: sm-sendctpassthru.md
-        - name: SM_GetRNIDMgmtInfo
-          href: sm-getrnidmgmtinfo.md
-        - name: SM_SetRNIDMgmtInfo
-          href: sm-setrnidmgmtinfo.md
-        - name: SM_SendRNID
-          href: sm-sendrnid.md
-        - name: SM_SendRPL
-          href: sm-sendrpl.md
-        - name: SM_SendRPS
-          href: sm-sendrps.md
-        - name: SM_SendSRL
-          href: sm-sendsrl.md
-        - name: SM_SendLIRR
-          href: sm-sendlirr.md
-        - name: SM_SendRLS
-          href: sm-sendrls.md
-      - name: MS_SM_HbaApiVersion WMI Class
-        href: ms-sm-hbaapiversion-wmi-class.md
-      - name: MS_SM_PortInformationMethods WMI Class
-        href: ms-sm-portinformationmethods-wmi-class.md
-      - name: MS_SM_ScsiInformationMethods WMI Class
-        items:
-        - name: Overview
-          href: ms-sm-scsiinformationmethods-wmi-class.md
-        - name: SM_ScsiInquiry
-          href: sm-scsiinquiry.md
-        - name: SM_ScsiReportLuns
-          href: sm-scsireportluns.md
-        - name: SM_ScsiReadCapacity
-          href: sm-scsireadcapacity.md
-      - name: MS_SM_TargetInformationMethods WMI Class
-        items:
-        - name: Overview
-          href: ms-sm-targetinformationmethods-wmi-class.md
-        - name: SM_GetTargetMapping
-          href: sm-gettargetmapping.md
-        - name: SM_GetBindingCapability
-          href: sm-getbindingcapability.md
-        - name: SM_GetBindingSupport
-          href: sm-getbindingsupport.md
-        - name: SM_SetBindingSupport
-          href: sm-setbindingsupport.md
-        - name: SM_GetPersistentBinding
-          href: sm-getpersistentbinding.md
-        - name: SM_SetPersistentBinding
-          href: sm-setpersistentbinding.md
-        - name: SM_RemovePersistentBinding
-          href: sm-removepersistentbinding.md
-        - name: SM_GetLUNStatistics
-          href: sm-getlunstatistics.md
-      - name: MS_SMHBA_BINDINGENTRY WMI Class
-        href: ms-smhba-bindingentry-wmi-class.md
-      - name: MS_SMHBA_FC_PHY WMI Class
-        href: ms-smhba-fc-phy-wmi-class.md
-      - name: MS_SMHBA_FC_Port WMI Class
-        href: ms-smhba-fc-port-wmi-class.md
-      - name: MS_SMHBA_PORTATTRIBUTES WMI Class
-        href: ms-smhba-portattributes-wmi-class.md
-      - name: MS_SMHBA_PORTLUN WMI Class
-        href: ms-smhba-portlun-wmi-class.md
-      - name: MS_SMHBA_PROTOCOLSTATISTICS WMI Class
-        href: ms-smhba-protocolstatistics-wmi-class.md
-      - name: MS_SMHBA_SAS_PHY WMI Class
-        href: ms-smhba-sas-phy-wmi-class.md
-      - name: MS_SMHBA_SAS_Port WMI Class
-        href: ms-smhba-sas-port-wmi-class.md
-      - name: MS_SMHBA_SASPHYSTATISTICS WMI Class
-        href: ms-smhba-sasphystatistics-wmi-class.md
-      - name: MS_SMHBA_SCSIENTRY WMI Class
-        href: ms-smhba-scsientry-wmi-class.md
-      - name: MSFC_AdapterEvent WMI Class
-        href: msfc-adapterevent-wmi-class.md
-      - name: MSFC_EventBuffer WMI Class
-        href: msfc-eventbuffer-wmi-class.md
-      - name: MSFC_EventControl WMI Class
-        items:
-        - name: Overview
-          href: msfc-eventcontrol-wmi-class.md
-        - name: AddLink
-          href: addlink.md
-        - name: AddPort
-          href: addport.md
-        - name: AddTarget
-          href: addtarget.md
-        - name: RemoveLink
-          href: removelink.md
-        - name: RemovePort
-          href: removeport.md
-        - name: RemoveTarget
-          href: removetarget.md
-      - name: MSFC_FC4STATISTICS WMI Class
-        href: msfc-fc4statistics-wmi-class.md
-      - name: MSFC_FCAdapterHBAAttributes WMI Class
-        href: msfc-fcadapterhbaattributes-wmi-class.md
-      - name: MSFC_FibrePortHBAAttributes WMI Class
-        href: msfc-fibreporthbaattributes-wmi-class.md
-      - name: MSFC_FibrePortHBAMethods WMI Class
-        href: msfc-fibreporthbamethods-wmi-class.md
-      - name: MSFC_FibrePortHBAStatistics WMI Class
-        href: msfc-fibreporthbastatistics-wmi-class.md
-      - name: MSFC_HbaApiVersion WMI Class
-        href: msfc-hbaapiversion-wmi-class.md
-      - name: MSFC_HBAAdapterMethods WMI Class
-        items:
-        - name: Overview
-          href: msfc-hbaadaptermethods-wmi-class.md
-        - name: GetDiscoveredPortAttributes
-          href: getdiscoveredportattributes.md
-        - name: GetEventBuffer
-          href: geteventbuffer.md
-        - name: GetFC3MgmtInfo
-          href: getfc3mgmtinfo.md
-        - name: GetFC4Statistics
-          href: getfc4statistics.md
-        - name: GetFCPStatistics
-          href: getfcpstatistics.md
-        - name: GetPortAttributesByWWN
-          href: getportattributesbywwn.md
-        - name: RefreshInformation
-          href: refreshinformation.md
-        - name: ScsiInquiry
-          href: scsiinquiry6.md
-        - name: ScsiReadCapacity
-          href: scsireadcapacity.md
-        - name: ScsiReportLuns
-          href: scsireportluns.md
-        - name: SendCTPassThru
-          href: sendctpassthru.md
-        - name: SendLIRR
-          href: sendlirr.md
-        - name: SendRLS
-          href: sendrls.md
-        - name: SendRNID
-          href: sendrnid.md
-        - name: SendRNIDV2
-          href: sendrnidv2.md
-        - name: SendRPL
-          href: sendrpl.md
-        - name: SendRPS
-          href: sendrps.md
-        - name: SendSRL
-          href: sendsrl.md
-        - name: SetFC3MgmtInfo
-          href: setfc3mgmtinfo.md
-      - name: MSFC_HBAFCPInfo WMI Class
-        items:
-        - name: Overview
-          href: msfc-hbafcpinfo-wmi-class.md
-        - name: GetBindingCapability
-          href: getbindingcapability.md
-        - name: GetBindingSupport
-          href: getbindingsupport.md
-        - name: GetFcpPersistentBinding
-          href: getfcppersistentbinding.md
-        - name: GetFcpTargetMapping
-          href: getfcptargetmapping.md
-        - name: GetPersistentBinding2
-          href: getpersistentbinding2.md
-        - name: RemovePersistentEntry
-          href: removepersistententry.md
-        - name: SetBindingSupport
-          href: setbindingsupport.md
-        - name: SetPersistentEntry
-          href: setpersistententry.md
-      - name: MSFC_HBAPortAttributesResults WMI Class
-        href: msfc-hbaportattributesresults-wmi-class.md
-      - name: MSFC_HBAPortStatistics WMI Class
-        href: msfc-hbaportstatistics-wmi-class.md
-      - name: MSFC_LinkEvent WMI Class
-        href: msfc-linkevent-wmi-class.md
-      - name: MSFC_PortEvent WMI Class
-        href: msfc-portevent-wmi-class.md
-      - name: MSFC_TargetEvent WMI Class
-        href: msfc-targetevent-wmi-class.md
-      - name: MSFC_TM WMI Class
-        href: msfc-tm-wmi-class.md
-    - name: iSCSI WMI Classes
-      items:
-      - name: Overview
-        href: iscsi-wmi-classes.md
-      - name: iSCSI WMI Common Classes
-        items:
-        - name: Overview
-          href: iscsi-wmi-common-classes.md
-        - name: WMI Property Qualifier Definitions in Common.mof
+          href: hba-wmi-classes.md
+        - name: WMI Class Qualifier Definitions in Hbaapi.mof
           items:
           - name: Overview
-            href: wmi-property-qualifier-definitions-in-common-mof.md
-          - name: ISCSI_AUTH_TYPES_QUALIFIERS
-            href: iscsi-auth-types-qualifiers.md
-          - name: ISCSI_STATUS_QUALIFIERS
-            href: iscsi-status-qualifiers.md
-          - name: SECURITY_FLAG_QUALIFIERS
-            href: security-flag-qualifiers.md
-        - name: ISCSI_IP_Address WMI Class
-          href: iscsi-ip-address-wmi-class.md
-        - name: ISCSI_LoginOptions WMI Class
-          href: iscsi-loginoptions-wmi-class.md
-        - name: ISCSI_LUNList WMI Class
-          href: iscsi-lunlist-wmi-class.md
-        - name: ISCSI_TargetMapping WMI Class
-          href: iscsi-targetmapping-wmi-class.md
-        - name: ISCSI_TargetPortal WMI Class
-          href: iscsi-targetportal-wmi-class.md
-        - name: ISCSI_TargetPortalGroup WMI Class
-          href: iscsi-targetportalgroup-wmi-class.md
-      - name: iSCSI WMI Classes That Manage Initiators, Ports, Sessions and Connections
-        items:
-        - name: Overview
-          href: iscsi-wmi-classes-that-manage-initiators--ports--sessions-and-connecti.md
-        - name: WMI Property Qualifier Definitions in Mgmt.mof
+            href: wmi-class-qualifier-definitions-in-hbaapi-mof.md
+          - name: EVENT_TYPES_QUALIFIERS
+            href: event-types-qualifiers.md
+          - name: HBA_BIND_TYPE
+            href: hba-bind-type.md
+          - name: HBA_STATUS
+            href: hba-status.md
+        - name: HBAFC3MgmtInfo WMI Class
+          href: hbafc3mgmtinfo-wmi-class.md
+        - name: HBAFCPBindingEntry WMI Class
+          href: hbafcpbindingentry-wmi-class.md
+        - name: HBAFCPBindingEntry2 WMI Class
+          href: hbafcpbindingentry2-wmi-class.md
+        - name: HBAFCPID WMI Class
+          href: hbafcpid-wmi-class.md
+        - name: HBAFCPScsiEntry WMI Class
+          href: hbafcpscsientry-wmi-class.md
+        - name: HBAScsiID WMI Class
+          href: hbascsiid-wmi-class.md
+        - name: MS_SM_AdapterInformationQuery WMI Class
+          href: ms-sm-adapterinformationquery-wmi-class.md
+        - name: MS_SM_EventControl WMI Class
           items:
           - name: Overview
-            href: wmi-property-qualifier-definitions-in-mgmt-mof.md
-          - name: ISCSI_CONNECTION_STATE_TYPE_QUALIFIERS
-            href: iscsi-connection-state-type-qualifiers.md
-          - name: ISCSI_CONNECTION_PROTOCOL_TYPE_QUALIFIERS
-            href: iscsi-connection-protocol-type-qualifiers.md
-          - name: ISCSI_SESSION_TYPE_QUALIFIERS
-            href: iscsi-session-type-qualifiers.md
-          - name: ISCSI_HEADER_INTEGRITY_TYPE_QUALIFIERS
-            href: iscsi-header-integrity-type-qualifiers.md
-          - name: ISCSI_DATA_INTEGRITY_TYPE_QUALIFIERS
-            href: iscsi-data-integrity-type-qualifiers.md
-          - name: ISCSI_PORTAL_TYPE_QUALIFIERS
-            href: iscsi-portal-type-qualifiers.md
-          - name: ISCSI_INITIATOR_NODE_FAILURE_TYPE_QUALIFIERS
-            href: iscsi-initiator-node-failure-type-qualifiers.md
-          - name: ISCSI_INITIATOR_FAILURE_TYPE_QUALIFIERS
-            href: iscsi-initiator-failure-type-qualifiers.md
-        - name: ISCSI_ConnectionStaticInfo WMI Class
-          href: iscsi-connectionstaticinfo-wmi-class.md
-        - name: ISCSI_Path WMI Class
-          href: iscsi-path-wmi-class.md
-        - name: ISCSI_PortalInfo WMI Class
-          href: iscsi-portalinfo-wmi-class.md
-        - name: ISCSI_RedirectPortalInfo WMI Class
-          href: iscsi-redirectportalinfo-wmi-class.md
-        - name: ISCSI_RedirectSessionInfo WMI Class
-          href: iscsi-redirectsessioninfo-wmi-class.md
-        - name: ISCSI_SessionStaticInfo WMI Class
-          href: iscsi-sessionstaticinfo-wmi-class.md
-        - name: ISCSI_Supported_LB_Policies WMI Class
-          href: iscsi-supported-lb-policies-wmi-class.md
-        - name: MSiSCSI_EventLog WMI Class
-          href: msiscsi-eventlog-wmi-class.md
-        - name: MSiSCSI_HBAInformation WMI Class
-          href: msiscsi-hbainformation-wmi-class.md
-        - name: MSiSCSI_HBASessionConfig WMI Class
-          href: msiscsi-hbasessionconfig-wmi-class.md
-        - name: MSiSCSI_InitiatorInstanceFailureEvent WMI Class
-          href: msiscsi-initiatorinstancefailureevent-wmi-class.md
-        - name: MSiSCSI_InitiatorNodeFailureEvent WMI Class
-          href: msiscsi-initiatornodefailureevent-wmi-class.md
-        - name: MSiSCSI_InitiatorSessionInfo WMI Class
-          href: msiscsi-initiatorsessioninfo-wmi-class.md
-        - name: MSiSCSI_LB_Operations WMI Class
-          href: msiscsi-lb-operations-wmi-class.md
-        - name: MSiSCSI_ManagementOperations WMI Class
-          href: msiscsi-managementoperations-wmi-class.md
-        - name: MSiSCSI_PortalInfoClass WMI Class
-          href: msiscsi-portalinfoclass-wmi-class.md
-        - name: MSiSCSI_QueryLBPolicy WMI Class
-          href: msiscsi-querylbpolicy-wmi-class.md
-        - name: MSiSCSI_RedirectPortalInfoClass WMI Class
-          href: msiscsi-redirectportalinfoclass-wmi-class.md
-      - name: iSCSI WMI Classes That Report Performance Statistics
-        items:
-        - name: Overview
-          href: iscsi-wmi-classes-that-report-performance-statistics.md
-        - name: MSiSCSI_ConnectionStatistics WMI Class
-          href: msiscsi-connectionstatistics-wmi-class.md
-        - name: MSiSCSI_InitiatorInstanceStatistics WMI Class
-          href: msiscsi-initiatorinstancestatistics-wmi-class.md
-        - name: MSiSCSI_InitiatorLoginStatistics WMI Class
-          href: msiscsi-initiatorloginstatistics-wmi-class.md
-        - name: MSiSCSI_MMIPSECStats WMI Class
-          href: msiscsi-mmipsecstats-wmi-class.md
-        - name: MSiSCSI_NICPerformance WMI Class
-          href: msiscsi-nicperformance-wmi-class.md
-        - name: MSiSCSI_QMIPSECStats WMI Class
-          href: msiscsi-qmipsecstats-wmi-class.md
-        - name: MSiSCSI_RequestTimeStatistics WMI Class
-          href: msiscsi-requesttimestatistics-wmi-class.md
-        - name: MSiSCSI_SessionStatistics WMI Class
-          href: msiscsi-sessionstatistics-wmi-class.md
-      - name: iSCSI WMI Operations Classes
-        items:
-        - name: Overview
-          href: iscsi-wmi-operations-classes.md
-        - name: ISCSI_Persistent_Login WMI Class
-          href: iscsi-persistent-login-wmi-class.md
-        - name: MSiSCSI_AdapterEvent WMI Class
-          href: msiscsi-adapterevent-wmi-class.md
-        - name: MSiSCSI_BootInformation WMI Class
-          href: msiscsi-bootinformation-wmi-class.md
-        - name: MSiSCSI_LUNMappingInformation WMI Class
-          href: msiscsi-lunmappinginformation-wmi-class.md
-        - name: MSiSCSI_Operations WMI Class
+            href: ms-sm-eventcontrol-wmi-class.md
+          - name: SM_AddTarget
+            href: sm-addtarget.md
+          - name: SM_RemoveTarget
+            href: sm-removetarget.md
+          - name: SM_AddPort
+            href: sm-addport.md
+          - name: SM_RemovePort
+            href: sm-removeport.md
+          - name: SM_AddLink
+            href: sm-addlink.md
+          - name: SM_RemoveLink
+            href: sm-removelink.md
+        - name: MS_SM_FabricAndDomainManagementMethods WMI Class
           items:
           - name: Overview
-            href: msiscsi-operations-wmi-class.md
-          - name: AddConnectionToSession
-            href: addconnectiontosession.md
-          - name: AddiSNSServer
-            href: addisnsserver.md
-          - name: AddRADIUSServer
-            href: addradiusserver.md
-          - name: DeleteInitiatorNodeName
-            href: deleteinitiatornodename.md
-          - name: LoginToTarget
-            href: logintotarget.md
-          - name: LogoutFromTarget
-            href: logoutfromtarget.md
-          - name: RemoveConnectionFromSession
-            href: removeconnectionfromsession.md
-          - name: RemoveiSNSServer
-            href: removeisnsserver.md
-          - name: RemovePersistentLogin
-            href: removepersistentlogin.md
-          - name: RemoveRADIUSServer
-            href: removeradiusserver.md
+            href: ms-sm-fabricanddomainmanagementmethods-wmi-class.md
+          - name: SM_SendCTPassThru
+            href: sm-sendctpassthru.md
+          - name: SM_GetRNIDMgmtInfo
+            href: sm-getrnidmgmtinfo.md
+          - name: SM_SetRNIDMgmtInfo
+            href: sm-setrnidmgmtinfo.md
+          - name: SM_SendRNID
+            href: sm-sendrnid.md
+          - name: SM_SendRPL
+            href: sm-sendrpl.md
+          - name: SM_SendRPS
+            href: sm-sendrps.md
+          - name: SM_SendSRL
+            href: sm-sendsrl.md
+          - name: SM_SendLIRR
+            href: sm-sendlirr.md
+          - name: SM_SendRLS
+            href: sm-sendrls.md
+        - name: MS_SM_HbaApiVersion WMI Class
+          href: ms-sm-hbaapiversion-wmi-class.md
+        - name: MS_SM_PortInformationMethods WMI Class
+          href: ms-sm-portinformationmethods-wmi-class.md
+        - name: MS_SM_ScsiInformationMethods WMI Class
+          items:
+          - name: Overview
+            href: ms-sm-scsiinformationmethods-wmi-class.md
+          - name: SM_ScsiInquiry
+            href: sm-scsiinquiry.md
+          - name: SM_ScsiReportLuns
+            href: sm-scsireportluns.md
+          - name: SM_ScsiReadCapacity
+            href: sm-scsireadcapacity.md
+        - name: MS_SM_TargetInformationMethods WMI Class
+          items:
+          - name: Overview
+            href: ms-sm-targetinformationmethods-wmi-class.md
+          - name: SM_GetTargetMapping
+            href: sm-gettargetmapping.md
+          - name: SM_GetBindingCapability
+            href: sm-getbindingcapability.md
+          - name: SM_GetBindingSupport
+            href: sm-getbindingsupport.md
+          - name: SM_SetBindingSupport
+            href: sm-setbindingsupport.md
+          - name: SM_GetPersistentBinding
+            href: sm-getpersistentbinding.md
+          - name: SM_SetPersistentBinding
+            href: sm-setpersistentbinding.md
+          - name: SM_RemovePersistentBinding
+            href: sm-removepersistentbinding.md
+          - name: SM_GetLUNStatistics
+            href: sm-getlunstatistics.md
+        - name: MS_SMHBA_BINDINGENTRY WMI Class
+          href: ms-smhba-bindingentry-wmi-class.md
+        - name: MS_SMHBA_FC_PHY WMI Class
+          href: ms-smhba-fc-phy-wmi-class.md
+        - name: MS_SMHBA_FC_Port WMI Class
+          href: ms-smhba-fc-port-wmi-class.md
+        - name: MS_SMHBA_PORTATTRIBUTES WMI Class
+          href: ms-smhba-portattributes-wmi-class.md
+        - name: MS_SMHBA_PORTLUN WMI Class
+          href: ms-smhba-portlun-wmi-class.md
+        - name: MS_SMHBA_PROTOCOLSTATISTICS WMI Class
+          href: ms-smhba-protocolstatistics-wmi-class.md
+        - name: MS_SMHBA_SAS_PHY WMI Class
+          href: ms-smhba-sas-phy-wmi-class.md
+        - name: MS_SMHBA_SAS_Port WMI Class
+          href: ms-smhba-sas-port-wmi-class.md
+        - name: MS_SMHBA_SASPHYSTATISTICS WMI Class
+          href: ms-smhba-sasphystatistics-wmi-class.md
+        - name: MS_SMHBA_SCSIENTRY WMI Class
+          href: ms-smhba-scsientry-wmi-class.md
+        - name: MSFC_AdapterEvent WMI Class
+          href: msfc-adapterevent-wmi-class.md
+        - name: MSFC_EventBuffer WMI Class
+          href: msfc-eventbuffer-wmi-class.md
+        - name: MSFC_EventControl WMI Class
+          items:
+          - name: Overview
+            href: msfc-eventcontrol-wmi-class.md
+          - name: AddLink
+            href: addlink.md
+          - name: AddPort
+            href: addport.md
+          - name: AddTarget
+            href: addtarget.md
+          - name: RemoveLink
+            href: removelink.md
+          - name: RemovePort
+            href: removeport.md
+          - name: RemoveTarget
+            href: removetarget.md
+        - name: MSFC_FC4STATISTICS WMI Class
+          href: msfc-fc4statistics-wmi-class.md
+        - name: MSFC_FCAdapterHBAAttributes WMI Class
+          href: msfc-fcadapterhbaattributes-wmi-class.md
+        - name: MSFC_FibrePortHBAAttributes WMI Class
+          href: msfc-fibreporthbaattributes-wmi-class.md
+        - name: MSFC_FibrePortHBAMethods WMI Class
+          href: msfc-fibreporthbamethods-wmi-class.md
+        - name: MSFC_FibrePortHBAStatistics WMI Class
+          href: msfc-fibreporthbastatistics-wmi-class.md
+        - name: MSFC_HbaApiVersion WMI Class
+          href: msfc-hbaapiversion-wmi-class.md
+        - name: MSFC_HBAAdapterMethods WMI Class
+          items:
+          - name: Overview
+            href: msfc-hbaadaptermethods-wmi-class.md
+          - name: GetDiscoveredPortAttributes
+            href: getdiscoveredportattributes.md
+          - name: GetEventBuffer
+            href: geteventbuffer.md
+          - name: GetFC3MgmtInfo
+            href: getfc3mgmtinfo.md
+          - name: GetFC4Statistics
+            href: getfc4statistics.md
+          - name: GetFCPStatistics
+            href: getfcpstatistics.md
+          - name: GetPortAttributesByWWN
+            href: getportattributesbywwn.md
+          - name: RefreshInformation
+            href: refreshinformation.md
           - name: ScsiInquiry
-            href: scsiinquiry.md
+            href: scsiinquiry6.md
           - name: ScsiReadCapacity
-            href: scsireadcapacity6.md
+            href: scsireadcapacity.md
           - name: ScsiReportLuns
-            href: scsireportluns6.md
-          - name: SendTargets
-            href: sendtargets.md
-          - name: SetCHAPSharedSecret
-            href: setchapsharedsecret.md
-          - name: SetInitiatorNodeName
-            href: setinitiatornodename.md
-          - name: SetRADIUSSharedSecret
-            href: setradiussharedsecret.md
-        - name: MSiSCSI_PersistentLogins WMI Class
-          href: msiscsi-persistentlogins-wmi-class.md
-        - name: MSiSCSI_SecurityConfigOperations WMI Class
+            href: scsireportluns.md
+          - name: SendCTPassThru
+            href: sendctpassthru.md
+          - name: SendLIRR
+            href: sendlirr.md
+          - name: SendRLS
+            href: sendrls.md
+          - name: SendRNID
+            href: sendrnid.md
+          - name: SendRNIDV2
+            href: sendrnidv2.md
+          - name: SendRPL
+            href: sendrpl.md
+          - name: SendRPS
+            href: sendrps.md
+          - name: SendSRL
+            href: sendsrl.md
+          - name: SetFC3MgmtInfo
+            href: setfc3mgmtinfo.md
+        - name: MSFC_HBAFCPInfo WMI Class
           items:
           - name: Overview
-            href: msiscsi-securityconfigoperations-wmi-class.md
-          - name: ClearCache
-            href: clearcache.md
-          - name: GetPresharedKeyForId
-            href: getpresharedkeyforid.md
-          - name: SetGenerationalGuid
-            href: setgenerationalguid.md
-          - name: SetGroupPresharedKey
-            href: setgrouppresharedkey.md
-          - name: SetPresharedKeyForId
-            href: setpresharedkeyforid.md
-          - name: SetTunnelModeOuterAddress
-            href: settunnelmodeouteraddress.md
-        - name: MSiSCSI_TargetMappings WMI Class
-          href: msiscsi-targetmappings-wmi-class.md
-      - name: iSCSI WMI Discovery Classes
+            href: msfc-hbafcpinfo-wmi-class.md
+          - name: GetBindingCapability
+            href: getbindingcapability.md
+          - name: GetBindingSupport
+            href: getbindingsupport.md
+          - name: GetFcpPersistentBinding
+            href: getfcppersistentbinding.md
+          - name: GetFcpTargetMapping
+            href: getfcptargetmapping.md
+          - name: GetPersistentBinding2
+            href: getpersistentbinding2.md
+          - name: RemovePersistentEntry
+            href: removepersistententry.md
+          - name: SetBindingSupport
+            href: setbindingsupport.md
+          - name: SetPersistentEntry
+            href: setpersistententry.md
+        - name: MSFC_HBAPortAttributesResults WMI Class
+          href: msfc-hbaportattributesresults-wmi-class.md
+        - name: MSFC_HBAPortStatistics WMI Class
+          href: msfc-hbaportstatistics-wmi-class.md
+        - name: MSFC_LinkEvent WMI Class
+          href: msfc-linkevent-wmi-class.md
+        - name: MSFC_PortEvent WMI Class
+          href: msfc-portevent-wmi-class.md
+        - name: MSFC_TargetEvent WMI Class
+          href: msfc-targetevent-wmi-class.md
+        - name: MSFC_TM WMI Class
+          href: msfc-tm-wmi-class.md
+      - name: iSCSI WMI Classes
         items:
         - name: Overview
-          href: iscsi-wmi-discovery-classes.md
-        - name: ISCSI_DiscoveredTarget WMI Class
-          href: iscsi-discoveredtarget-wmi-class.md
-        - name: ISCSI_DiscoveredTarget2 WMI Class
-          href: iscsi-discoveredtarget2-wmi-class.md
-        - name: ISCSI_DiscoveredTargetPortal WMI Class
-          href: iscsi-discoveredtargetportal-wmi-class.md
-        - name: ISCSI_DiscoveredTargetPortal2 WMI Class
-          href: iscsi-discoveredtargetportal2-wmi-class.md
-        - name: ISCSI_DiscoveredTargetPortalGroup WMI Class
-          href: iscsi-discoveredtargetportalgroup-wmi-class.md
-        - name: ISCSI_DiscoveredTargetPortalGroup2 WMI Class
-          href: iscsi-discoveredtargetportalgroup2-wmi-class.md
-        - name: MSiSCSI_DiscoveryOperations WMI Class
+          href: iscsi-wmi-classes.md
+        - name: iSCSI WMI Common Classes
           items:
           - name: Overview
-            href: msiscsi-discoveryoperations-wmi-class.md
-          - name: ReportDiscoveredTargets
-            href: reportdiscoveredtargets.md
-          - name: ReportDiscoveredTargets2
-            href: reportdiscoveredtargets2.md
-      - name: iSCSI WMI Network Classes
-        items:
-        - name: Overview
-          href: iscsi-wmi-network-classes.md
-        - name: WMI Property Qualifier Definitions in Config.mof
+            href: iscsi-wmi-common-classes.md
+          - name: WMI Property Qualifier Definitions in Common.mof
+            items:
+            - name: Overview
+              href: wmi-property-qualifier-definitions-in-common-mof.md
+            - name: ISCSI_AUTH_TYPES_QUALIFIERS
+              href: iscsi-auth-types-qualifiers.md
+            - name: ISCSI_STATUS_QUALIFIERS
+              href: iscsi-status-qualifiers.md
+            - name: SECURITY_FLAG_QUALIFIERS
+              href: security-flag-qualifiers.md
+          - name: ISCSI_IP_Address WMI Class
+            href: iscsi-ip-address-wmi-class.md
+          - name: ISCSI_LoginOptions WMI Class
+            href: iscsi-loginoptions-wmi-class.md
+          - name: ISCSI_LUNList WMI Class
+            href: iscsi-lunlist-wmi-class.md
+          - name: ISCSI_TargetMapping WMI Class
+            href: iscsi-targetmapping-wmi-class.md
+          - name: ISCSI_TargetPortal WMI Class
+            href: iscsi-targetportal-wmi-class.md
+          - name: ISCSI_TargetPortalGroup WMI Class
+            href: iscsi-targetportalgroup-wmi-class.md
+        - name: iSCSI WMI Classes That Manage Initiators, Ports, Sessions and Connections
           items:
           - name: Overview
-            href: wmi-property-qualifier-definitions-in-config-mof.md
-          - name: ENCRYPTION_TYPES_QUALIFIERS
-            href: encryption-types-qualifiers.md
-        - name: MSiSCSI_BootConfiguration WMI Class
-          href: msiscsi-bootconfiguration-wmi-class.md
-        - name: MSiSCSI_DiscoveryConfig WMI Class
-          href: msiscsi-discoveryconfig-wmi-class.md
-        - name: MSiSCSI_NICConfig WMI Class
-          href: msiscsi-nicconfig-wmi-class.md
-        - name: MSiSCSI_RADIUSConfig WMI Class
-          href: msiscsi-radiusconfig-wmi-class.md
-        - name: MSiSCSI_SecurityCapabilities WMI Class
-          href: msiscsi-securitycapabilities-wmi-class.md
-        - name: MSiSCSI_TCPIPConfig WMI Class
-          href: msiscsi-tcpipconfig-wmi-class.md
-    - name: MPIO WMI Classes
-      items:
-      - name: Overview
-        href: mpio-wmi-classes.md
-      - name: MPIO_PATH_HEALTH_CLASS WMI Class
-        href: mpio-path-health-class-wmi-class.md
-      - name: MPIO_PATH_HEALTH_INFO WMI Class
-        href: mpio-path-health-info-wmi-class.md
-      - name: MPIO_DISK_HEALTH_CLASS WMI Class
-        href: mpio-disk-health-class-wmi-class.md
-      - name: MPIO_DISK_HEALTH_INFO WMI Class
-        href: mpio-disk-health-info-wmi-class.md
-      - name: SCSI_ADDR WMI Class
-        href: scsi-addr-wmi-class.md
-      - name: MPIO_DRIVE_INFO WMI Class
-        href: mpio-drive-info-wmi-class.md
-      - name: MPIO_DISK_INFO WMI Class
-        href: mpio-disk-info-wmi-class.md
-      - name: DSM_VERSION WMI Class
-        href: dsm-version-wmi-class.md
-      - name: DSM_COUNTERS WMI Class
-        href: dsm-counters-wmi-class.md
-      - name: DSM_PARAMETERS WMI Class
-        href: dsm-parameters-wmi-class.md
-      - name: MPIO_REGISTERED_DSM WMI Class
-        href: mpio-registered-dsm-wmi-class.md
-      - name: MPIO_ADAPTER_INFORMATION WMI Class
-        href: mpio-adapter-information-wmi-class.md
-      - name: MPIO_PATH_INFORMATION WMI Class
-        href: mpio-path-information-wmi-class.md
-      - name: MPIO_CONTROLLER_INFO WMI Class
-        href: mpio-controller-info-wmi-class.md
-      - name: MPIO_CONTROLLER_CONFIGURATION WMI Class
-        href: mpio-controller-configuration-wmi-class.md
-      - name: MPIO_TIMERS_COUNTERS WMI Class
-        href: mpio-timers-counters-wmi-class.md
-      - name: MPIO_WMI_METHODS WMI Class
+            href: iscsi-wmi-classes-that-manage-initiators--ports--sessions-and-connecti.md
+          - name: WMI Property Qualifier Definitions in Mgmt.mof
+            items:
+            - name: Overview
+              href: wmi-property-qualifier-definitions-in-mgmt-mof.md
+            - name: ISCSI_CONNECTION_STATE_TYPE_QUALIFIERS
+              href: iscsi-connection-state-type-qualifiers.md
+            - name: ISCSI_CONNECTION_PROTOCOL_TYPE_QUALIFIERS
+              href: iscsi-connection-protocol-type-qualifiers.md
+            - name: ISCSI_SESSION_TYPE_QUALIFIERS
+              href: iscsi-session-type-qualifiers.md
+            - name: ISCSI_HEADER_INTEGRITY_TYPE_QUALIFIERS
+              href: iscsi-header-integrity-type-qualifiers.md
+            - name: ISCSI_DATA_INTEGRITY_TYPE_QUALIFIERS
+              href: iscsi-data-integrity-type-qualifiers.md
+            - name: ISCSI_PORTAL_TYPE_QUALIFIERS
+              href: iscsi-portal-type-qualifiers.md
+            - name: ISCSI_INITIATOR_NODE_FAILURE_TYPE_QUALIFIERS
+              href: iscsi-initiator-node-failure-type-qualifiers.md
+            - name: ISCSI_INITIATOR_FAILURE_TYPE_QUALIFIERS
+              href: iscsi-initiator-failure-type-qualifiers.md
+          - name: ISCSI_ConnectionStaticInfo WMI Class
+            href: iscsi-connectionstaticinfo-wmi-class.md
+          - name: ISCSI_Path WMI Class
+            href: iscsi-path-wmi-class.md
+          - name: ISCSI_PortalInfo WMI Class
+            href: iscsi-portalinfo-wmi-class.md
+          - name: ISCSI_RedirectPortalInfo WMI Class
+            href: iscsi-redirectportalinfo-wmi-class.md
+          - name: ISCSI_RedirectSessionInfo WMI Class
+            href: iscsi-redirectsessioninfo-wmi-class.md
+          - name: ISCSI_SessionStaticInfo WMI Class
+            href: iscsi-sessionstaticinfo-wmi-class.md
+          - name: ISCSI_Supported_LB_Policies WMI Class
+            href: iscsi-supported-lb-policies-wmi-class.md
+          - name: MSiSCSI_EventLog WMI Class
+            href: msiscsi-eventlog-wmi-class.md
+          - name: MSiSCSI_HBAInformation WMI Class
+            href: msiscsi-hbainformation-wmi-class.md
+          - name: MSiSCSI_HBASessionConfig WMI Class
+            href: msiscsi-hbasessionconfig-wmi-class.md
+          - name: MSiSCSI_InitiatorInstanceFailureEvent WMI Class
+            href: msiscsi-initiatorinstancefailureevent-wmi-class.md
+          - name: MSiSCSI_InitiatorNodeFailureEvent WMI Class
+            href: msiscsi-initiatornodefailureevent-wmi-class.md
+          - name: MSiSCSI_InitiatorSessionInfo WMI Class
+            href: msiscsi-initiatorsessioninfo-wmi-class.md
+          - name: MSiSCSI_LB_Operations WMI Class
+            href: msiscsi-lb-operations-wmi-class.md
+          - name: MSiSCSI_ManagementOperations WMI Class
+            href: msiscsi-managementoperations-wmi-class.md
+          - name: MSiSCSI_PortalInfoClass WMI Class
+            href: msiscsi-portalinfoclass-wmi-class.md
+          - name: MSiSCSI_QueryLBPolicy WMI Class
+            href: msiscsi-querylbpolicy-wmi-class.md
+          - name: MSiSCSI_RedirectPortalInfoClass WMI Class
+            href: msiscsi-redirectportalinfoclass-wmi-class.md
+        - name: iSCSI WMI Classes That Report Performance Statistics
+          items:
+          - name: Overview
+            href: iscsi-wmi-classes-that-report-performance-statistics.md
+          - name: MSiSCSI_ConnectionStatistics WMI Class
+            href: msiscsi-connectionstatistics-wmi-class.md
+          - name: MSiSCSI_InitiatorInstanceStatistics WMI Class
+            href: msiscsi-initiatorinstancestatistics-wmi-class.md
+          - name: MSiSCSI_InitiatorLoginStatistics WMI Class
+            href: msiscsi-initiatorloginstatistics-wmi-class.md
+          - name: MSiSCSI_MMIPSECStats WMI Class
+            href: msiscsi-mmipsecstats-wmi-class.md
+          - name: MSiSCSI_NICPerformance WMI Class
+            href: msiscsi-nicperformance-wmi-class.md
+          - name: MSiSCSI_QMIPSECStats WMI Class
+            href: msiscsi-qmipsecstats-wmi-class.md
+          - name: MSiSCSI_RequestTimeStatistics WMI Class
+            href: msiscsi-requesttimestatistics-wmi-class.md
+          - name: MSiSCSI_SessionStatistics WMI Class
+            href: msiscsi-sessionstatistics-wmi-class.md
+        - name: iSCSI WMI Operations Classes
+          items:
+          - name: Overview
+            href: iscsi-wmi-operations-classes.md
+          - name: ISCSI_Persistent_Login WMI Class
+            href: iscsi-persistent-login-wmi-class.md
+          - name: MSiSCSI_AdapterEvent WMI Class
+            href: msiscsi-adapterevent-wmi-class.md
+          - name: MSiSCSI_BootInformation WMI Class
+            href: msiscsi-bootinformation-wmi-class.md
+          - name: MSiSCSI_LUNMappingInformation WMI Class
+            href: msiscsi-lunmappinginformation-wmi-class.md
+          - name: MSiSCSI_Operations WMI Class
+            items:
+            - name: Overview
+              href: msiscsi-operations-wmi-class.md
+            - name: AddConnectionToSession
+              href: addconnectiontosession.md
+            - name: AddiSNSServer
+              href: addisnsserver.md
+            - name: AddRADIUSServer
+              href: addradiusserver.md
+            - name: DeleteInitiatorNodeName
+              href: deleteinitiatornodename.md
+            - name: LoginToTarget
+              href: logintotarget.md
+            - name: LogoutFromTarget
+              href: logoutfromtarget.md
+            - name: RemoveConnectionFromSession
+              href: removeconnectionfromsession.md
+            - name: RemoveiSNSServer
+              href: removeisnsserver.md
+            - name: RemovePersistentLogin
+              href: removepersistentlogin.md
+            - name: RemoveRADIUSServer
+              href: removeradiusserver.md
+            - name: ScsiInquiry
+              href: scsiinquiry.md
+            - name: ScsiReadCapacity
+              href: scsireadcapacity6.md
+            - name: ScsiReportLuns
+              href: scsireportluns6.md
+            - name: SendTargets
+              href: sendtargets.md
+            - name: SetCHAPSharedSecret
+              href: setchapsharedsecret.md
+            - name: SetInitiatorNodeName
+              href: setinitiatornodename.md
+            - name: SetRADIUSSharedSecret
+              href: setradiussharedsecret.md
+          - name: MSiSCSI_PersistentLogins WMI Class
+            href: msiscsi-persistentlogins-wmi-class.md
+          - name: MSiSCSI_SecurityConfigOperations WMI Class
+            items:
+            - name: Overview
+              href: msiscsi-securityconfigoperations-wmi-class.md
+            - name: ClearCache
+              href: clearcache.md
+            - name: GetPresharedKeyForId
+              href: getpresharedkeyforid.md
+            - name: SetGenerationalGuid
+              href: setgenerationalguid.md
+            - name: SetGroupPresharedKey
+              href: setgrouppresharedkey.md
+            - name: SetPresharedKeyForId
+              href: setpresharedkeyforid.md
+            - name: SetTunnelModeOuterAddress
+              href: settunnelmodeouteraddress.md
+          - name: MSiSCSI_TargetMappings WMI Class
+            href: msiscsi-targetmappings-wmi-class.md
+        - name: iSCSI WMI Discovery Classes
+          items:
+          - name: Overview
+            href: iscsi-wmi-discovery-classes.md
+          - name: ISCSI_DiscoveredTarget WMI Class
+            href: iscsi-discoveredtarget-wmi-class.md
+          - name: ISCSI_DiscoveredTarget2 WMI Class
+            href: iscsi-discoveredtarget2-wmi-class.md
+          - name: ISCSI_DiscoveredTargetPortal WMI Class
+            href: iscsi-discoveredtargetportal-wmi-class.md
+          - name: ISCSI_DiscoveredTargetPortal2 WMI Class
+            href: iscsi-discoveredtargetportal2-wmi-class.md
+          - name: ISCSI_DiscoveredTargetPortalGroup WMI Class
+            href: iscsi-discoveredtargetportalgroup-wmi-class.md
+          - name: ISCSI_DiscoveredTargetPortalGroup2 WMI Class
+            href: iscsi-discoveredtargetportalgroup2-wmi-class.md
+          - name: MSiSCSI_DiscoveryOperations WMI Class
+            items:
+            - name: Overview
+              href: msiscsi-discoveryoperations-wmi-class.md
+            - name: ReportDiscoveredTargets
+              href: reportdiscoveredtargets.md
+            - name: ReportDiscoveredTargets2
+              href: reportdiscoveredtargets2.md
+        - name: iSCSI WMI Network Classes
+          items:
+          - name: Overview
+            href: iscsi-wmi-network-classes.md
+          - name: WMI Property Qualifier Definitions in Config.mof
+            items:
+            - name: Overview
+              href: wmi-property-qualifier-definitions-in-config-mof.md
+            - name: ENCRYPTION_TYPES_QUALIFIERS
+              href: encryption-types-qualifiers.md
+          - name: MSiSCSI_BootConfiguration WMI Class
+            href: msiscsi-bootconfiguration-wmi-class.md
+          - name: MSiSCSI_DiscoveryConfig WMI Class
+            href: msiscsi-discoveryconfig-wmi-class.md
+          - name: MSiSCSI_NICConfig WMI Class
+            href: msiscsi-nicconfig-wmi-class.md
+          - name: MSiSCSI_RADIUSConfig WMI Class
+            href: msiscsi-radiusconfig-wmi-class.md
+          - name: MSiSCSI_SecurityCapabilities WMI Class
+            href: msiscsi-securitycapabilities-wmi-class.md
+          - name: MSiSCSI_TCPIPConfig WMI Class
+            href: msiscsi-tcpipconfig-wmi-class.md
+      - name: MPIO WMI Classes
         items:
         - name: Overview
-          href: mpio-wmi-methods-wmi-class.md
-        - name: MPIOMoveDevice
-          href: mpiomovedevice.md
-        - name: GetPathConfiguration
-          href: getpathconfiguration.md
-        - name: SetDSMCounters
-          href: setdsmcounters.md
-        - name: ClearPathHealthCounters
-          href: clearpathhealthcounters.md
-        - name: ClearMpioDiskHealthCounters
-          href: clearmpiodiskhealthcounters.md
-        - name: ClearAllPathHealthCounters
-          href: clearallpathhealthcounters.md
-        - name: ClearAllMpioDiskHealthCounters
-          href: clearallmpiodiskhealthcounters.md
-      - name: MPIO_EventEntry WMI Class
-        href: mpio-evententry-wmi-class.md
-      - name: PDOSCSI_ADDR WMI Class
-        href: pdoscsi-addr-wmi-class.md
-      - name: PDO_INFORMATION WMI Class
-        href: pdo-information-wmi-class.md
-      - name: MPIO_GET_DESCRIPTOR WMI Class
-        href: mpio-get-descriptor-wmi-class.md
-      - name: MPIO_DEVINSTANCE_HEALTH_CLASS WMI Class
-        href: mpio-devinstance-health-class-wmi-class.md
-      - name: MPIO_DEVINSTANCE_HEALTH_INFO WMI Class
-        href: mpio-devinstance-health-info-wmi-class.md
-      - name: MPIO_DSM_Path_V2 WMI Class
-        href: mpio-dsm-path-v2-wmi-class.md
-      - name: DSM_Load_Balance_Policy_V2 WMI Class
-        href: dsm-load-balance-policy-v2-wmi-class.md
-      - name: DSM_QueryLBPolicy_V2 WMI Class
-        href: dsm-querylbpolicy-v2-wmi-class.md
-      - name: DSM_QuerySupportedLBPolicies_V2 WMI Class
-        href: dsm-querysupportedlbpolicies-v2-wmi-class.md
-      - name: MPIO_DSM_Path WMI Class
-        href: mpio-dsm-path-wmi-class.md
-      - name: DSM_Load_Balance_Policy WMI Class
-        href: dsm-load-balance-policy-wmi-class.md
-      - name: DSM_QueryLBPolicy WMI Class
-        href: dsm-querylbpolicy-wmi-class.md
-      - name: DSM_QuerySupportedLBPolicies WMI Class
-        href: dsm-querysupportedlbpolicies-wmi-class.md
-      - name: DSM_LB_Operations WMI Class
+          href: mpio-wmi-classes.md
+        - name: MPIO_PATH_HEALTH_CLASS WMI Class
+          href: mpio-path-health-class-wmi-class.md
+        - name: MPIO_PATH_HEALTH_INFO WMI Class
+          href: mpio-path-health-info-wmi-class.md
+        - name: MPIO_DISK_HEALTH_CLASS WMI Class
+          href: mpio-disk-health-class-wmi-class.md
+        - name: MPIO_DISK_HEALTH_INFO WMI Class
+          href: mpio-disk-health-info-wmi-class.md
+        - name: SCSI_ADDR WMI Class
+          href: scsi-addr-wmi-class.md
+        - name: MPIO_DRIVE_INFO WMI Class
+          href: mpio-drive-info-wmi-class.md
+        - name: MPIO_DISK_INFO WMI Class
+          href: mpio-disk-info-wmi-class.md
+        - name: DSM_VERSION WMI Class
+          href: dsm-version-wmi-class.md
+        - name: DSM_COUNTERS WMI Class
+          href: dsm-counters-wmi-class.md
+        - name: DSM_PARAMETERS WMI Class
+          href: dsm-parameters-wmi-class.md
+        - name: MPIO_REGISTERED_DSM WMI Class
+          href: mpio-registered-dsm-wmi-class.md
+        - name: MPIO_ADAPTER_INFORMATION WMI Class
+          href: mpio-adapter-information-wmi-class.md
+        - name: MPIO_PATH_INFORMATION WMI Class
+          href: mpio-path-information-wmi-class.md
+        - name: MPIO_CONTROLLER_INFO WMI Class
+          href: mpio-controller-info-wmi-class.md
+        - name: MPIO_CONTROLLER_CONFIGURATION WMI Class
+          href: mpio-controller-configuration-wmi-class.md
+        - name: MPIO_TIMERS_COUNTERS WMI Class
+          href: mpio-timers-counters-wmi-class.md
+        - name: MPIO_WMI_METHODS WMI Class
+          items:
+          - name: Overview
+            href: mpio-wmi-methods-wmi-class.md
+          - name: MPIOMoveDevice
+            href: mpiomovedevice.md
+          - name: GetPathConfiguration
+            href: getpathconfiguration.md
+          - name: SetDSMCounters
+            href: setdsmcounters.md
+          - name: ClearPathHealthCounters
+            href: clearpathhealthcounters.md
+          - name: ClearMpioDiskHealthCounters
+            href: clearmpiodiskhealthcounters.md
+          - name: ClearAllPathHealthCounters
+            href: clearallpathhealthcounters.md
+          - name: ClearAllMpioDiskHealthCounters
+            href: clearallmpiodiskhealthcounters.md
+        - name: MPIO_EventEntry WMI Class
+          href: mpio-evententry-wmi-class.md
+        - name: PDOSCSI_ADDR WMI Class
+          href: pdoscsi-addr-wmi-class.md
+        - name: PDO_INFORMATION WMI Class
+          href: pdo-information-wmi-class.md
+        - name: MPIO_GET_DESCRIPTOR WMI Class
+          href: mpio-get-descriptor-wmi-class.md
+        - name: MPIO_DEVINSTANCE_HEALTH_CLASS WMI Class
+          href: mpio-devinstance-health-class-wmi-class.md
+        - name: MPIO_DEVINSTANCE_HEALTH_INFO WMI Class
+          href: mpio-devinstance-health-info-wmi-class.md
+        - name: MPIO_DSM_Path_V2 WMI Class
+          href: mpio-dsm-path-v2-wmi-class.md
+        - name: DSM_Load_Balance_Policy_V2 WMI Class
+          href: dsm-load-balance-policy-v2-wmi-class.md
+        - name: DSM_QueryLBPolicy_V2 WMI Class
+          href: dsm-querylbpolicy-v2-wmi-class.md
+        - name: DSM_QuerySupportedLBPolicies_V2 WMI Class
+          href: dsm-querysupportedlbpolicies-v2-wmi-class.md
+        - name: MPIO_DSM_Path WMI Class
+          href: mpio-dsm-path-wmi-class.md
+        - name: DSM_Load_Balance_Policy WMI Class
+          href: dsm-load-balance-policy-wmi-class.md
+        - name: DSM_QueryLBPolicy WMI Class
+          href: dsm-querylbpolicy-wmi-class.md
+        - name: DSM_QuerySupportedLBPolicies WMI Class
+          href: dsm-querysupportedlbpolicies-wmi-class.md
+        - name: DSM_LB_Operations WMI Class
+          items:
+          - name: Overview
+            href: dsm-lb-operations-wmi-class.md
+          - name: DsmSetLoadBalancePolicy
+            href: dsmsetloadbalancepolicy.md
+          - name: DsmSetLoadBalancePolicyALUA
+            href: dsmsetloadbalancepolicyalua.md
+        - name: DSM_QueryUniqueId WMI Class
+          href: dsm-queryuniqueid-wmi-class.md
+      - name: NPIV WMI Classes
         items:
         - name: Overview
-          href: dsm-lb-operations-wmi-class.md
-        - name: DsmSetLoadBalancePolicy
-          href: dsmsetloadbalancepolicy.md
-        - name: DsmSetLoadBalancePolicyALUA
-          href: dsmsetloadbalancepolicyalua.md
-      - name: DSM_QueryUniqueId WMI Class
-        href: dsm-queryuniqueid-wmi-class.md
-    - name: NPIV WMI Classes
-      items:
-      - name: Overview
-        href: npiv-wmi-classes.md
-      - name: MSFC_DH_Chap_Parameters WMI Class
-        href: msfc-dh-chap-parameters-wmi-class.md
-      - name: MSFC_FibrePortNPIVAttributes WMI Class
-        href: msfc-fibreportnpivattributes-wmi-class.md
-      - name: MSFC_FibrePortNPIVMethods WMI Class
-        items:
-        - name: Overview
-          href: msfc-fibreportnpivmethods-wmi-class.md
-        - name: CreateVirtualPort
-          href: createvirtualport.md
-        - name: RemoveVirtualPort
-          href: removevirtualport.md
-      - name: MSFC_FibrePortNPIVMethodsEx WMI Class
-        items:
-        - name: Overview
-          href: msfc-fibreportnpivmethodsex-wmi-class.md
-        - name: CreateVirtualPortEx
-          href: createvirtualportex.md
-        - name: CreateVirtualPortExUsingDHCHAP
-          href: createvirtualportexusingdhchap.md
-        - name: RemoveChapForPhysicalPort
-          href: removechapforphysicalport.md
-        - name: RemoveVirtualPortEx
-          href: removevirtualportex.md
-        - name: RescanVirtualPort
-          href: rescanvirtualport.md
-        - name: SetChapForPhysicalPort
-          href: setchapforphysicalport.md
-      - name: MSFC_NPIVCapabilities WMI Class
-        href: msfc-npivcapabilities-wmi-class.md
-      - name: MSFC_NPIVLUNMappingInformation WMI Class
-        href: msfc-npivlunmappinginformation-wmi-class.md
-      - name: MSFC_NPIVLUNMappingInformationEx WMI Class
-        href: msfc-npivlunmappinginformationex-wmi-class.md
-      - name: MSFC_VirtualFibrePortAttributes WMI Class
-        href: msfc-virtualfibreportattributes-wmi-class.md
-      - name: NPIV Status Codes
-        href: npiv-status-codes.md
+          href: npiv-wmi-classes.md
+        - name: MSFC_DH_Chap_Parameters WMI Class
+          href: msfc-dh-chap-parameters-wmi-class.md
+        - name: MSFC_FibrePortNPIVAttributes WMI Class
+          href: msfc-fibreportnpivattributes-wmi-class.md
+        - name: MSFC_FibrePortNPIVMethods WMI Class
+          items:
+          - name: Overview
+            href: msfc-fibreportnpivmethods-wmi-class.md
+          - name: CreateVirtualPort
+            href: createvirtualport.md
+          - name: RemoveVirtualPort
+            href: removevirtualport.md
+        - name: MSFC_FibrePortNPIVMethodsEx WMI Class
+          items:
+          - name: Overview
+            href: msfc-fibreportnpivmethodsex-wmi-class.md
+          - name: CreateVirtualPortEx
+            href: createvirtualportex.md
+          - name: CreateVirtualPortExUsingDHCHAP
+            href: createvirtualportexusingdhchap.md
+          - name: RemoveChapForPhysicalPort
+            href: removechapforphysicalport.md
+          - name: RemoveVirtualPortEx
+            href: removevirtualportex.md
+          - name: RescanVirtualPort
+            href: rescanvirtualport.md
+          - name: SetChapForPhysicalPort
+            href: setchapforphysicalport.md
+        - name: MSFC_NPIVCapabilities WMI Class
+          href: msfc-npivcapabilities-wmi-class.md
+        - name: MSFC_NPIVLUNMappingInformation WMI Class
+          href: msfc-npivlunmappinginformation-wmi-class.md
+        - name: MSFC_NPIVLUNMappingInformationEx WMI Class
+          href: msfc-npivlunmappinginformationex-wmi-class.md
+        - name: MSFC_VirtualFibrePortAttributes WMI Class
+          href: msfc-virtualfibreportattributes-wmi-class.md
+        - name: NPIV Status Codes
+          href: npiv-status-codes.md
   - name: Storage Class Memory
     items:
     - name: Overview
