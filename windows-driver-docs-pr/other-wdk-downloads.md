@@ -99,7 +99,7 @@ develop, build, package, deploy, test, and debug drivers.
 
 | Released with      | WDK and related downloads                       |
 |--------------------------|-------------------------------------------------|
-| Windows 11, Version 24H2 | [WDK 10.0.26100.2161 (released November 27, 2024)](https://go.microsoft.com/fwlink/?linkid=2294834)|
+| Windows 11, Version 24H2 | [WDK 10.0.26100.2454 (released November 27, 2024)](https://go.microsoft.com/fwlink/?linkid=2294834)|
 | Windows 11, Version 24H2 | [WDK 10.0.26100.2161 (released November 4, 2024)](https://go.microsoft.com/fwlink/?linkid=2294834)|
 | Windows 11, Version 24H2 | [WDK 10.0.26100.1882 (released October 14, 2024)](https://go.microsoft.com/fwlink/?linkid=2290025)|
 | Windows 11, Version 24H2 | [WDK 10.0.26100.1591 (released September 18, 2024)](https://go.microsoft.com/fwlink/?linkid=2286137)|
