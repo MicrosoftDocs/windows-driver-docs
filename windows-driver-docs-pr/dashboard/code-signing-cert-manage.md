@@ -1,8 +1,8 @@
 ---
-title: Manage code signing certificates
-description: Manage code signing certificates
+title: Manage Code Signing Certificates
+description: This article describes how to get, add, and update code signing certificates to the hardware dashboard.
 ms.topic: article
-ms.date: 07/15/2024
+ms.date: 11/26/2024
 ---
 
 # Manage code signing certificates
@@ -20,9 +20,7 @@ Register for the Hardware Developer program. If you're not registered, follow th
 To get a new code signing certificate:
 
 1. Determine which certificate you need. To help you choose a certificate, see [Driver signing requirements](code-signing-reqs.md).
-
 1. If you're reusing a certificate, move on to step 5.
-
 1. Go to the page of one the following certificate authorities and follow their directions for purchase:
 
     - [Certum EV code signing certificate](https://shop.certum.eu/data-safety/code-signing-certificates/certum-ev-code-sigining.html)
@@ -30,27 +28,19 @@ To get a new code signing certificate:
     - [Entrust EV code signing certificate](https://www.entrust.com/products/digital-signing/code-signing-certificates)
     - [GlobalSign EV code signing certificate](https://go.microsoft.com/fwlink/p/?LinkId=620888)
     - [IdenTrust EV code signing certificate](https://www.identrust.com/digital-certificates/trustid-ev-code-signing)
-    - [Sectigo (formerly Comodo) EV code signing certificate](https://sectigo.com/ssl-certificates-tls/code-signing)
+    - [Sectigo (formerly Comodo) EV code signing certificate](https://www.sectigo.com/ssl-certificates-tls/code-signing)
     - [SSL.com EV code signing certificate](https://www.ssl.com/certificates/ev-code-signing/)
 
 1. Once the certificate authority verifies your contact information and your certificate purchase is approved, follow their directions to retrieve the certificate.
-
 1. Go to [Partner Center](https://partner.microsoft.com/dashboard) and sign in using administrator credentials.
-
 1. Select the gear icon in the upper right, then select **Developer settings**, then **Manage Certificates** on the left pane.
-
 1. Select **Add a new certificate**, then select **Next**.
-
 1. Download *Signablefile.bin* and sign it with the new digital certificate for your company using [SignTool](/windows/win32/seccrypto/signtool) with the `/fd sha256` switch and appropriate SHA-2 timestamp.
-
 1. Upload the signed file to Partner Center.
 
 ## Retire a code signing certificate
 
 1. Go to [Partner Center](https://partner.microsoft.com/dashboard) and sign in using administrator credentials.
-
 1. Select the gear icon in the upper right, then select **Developer settings**, then **Manage Certificates** on the left pane.
-
 1. Move through the page to find the certificate you wish to remove.
-
 1. Under the **Action** column of the certificate, select **Remove**.
