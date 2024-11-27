@@ -66,7 +66,7 @@ The provided links for the SDK and the WDK have matching build numbers, which is
 
 ## ![download icon for WDK](images/download-install.png) Step 3: Install WDK
 
-- [Download WDK 10.0.26100.2454](https://go.microsoft.com/fwlink/?linkid=2294834)
+- [Download WDK 10.0.26100.2454](https://go.microsoft.com/fwlink/?linkid=2297653)
 
 Starting with version 17.11.0, the WDK VSIX is included as an individual component in Visual Studio. Before installing the WDK, the installer checks if a compatible version of the VSIX is already installed. If the WDK VSIX is not found, users will be prompted to install it. To install the WDK VSIX, launch the Visual Studio Installer, select **Modify**, navigate to the **Individual Components** tab, add **Windows Driver Kits**, and then select **Modify** again.
 
