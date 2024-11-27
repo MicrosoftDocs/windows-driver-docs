@@ -14,7 +14,7 @@ The following features and bug fixes are in Windows 11 24H2 WDK update.
 
 ### Packet Monitor APIs 
 
-Pktmon kernel mode APIs were made available for 3rd party kernel drivers to send and receive network package notifications. These are especially useful for diagnosing performance and network connectivity issues.
+Pktmon APIs are available for kernel-mode drivers to send and receive network package notifications. You can use these to diagnose performance and network connectivity issues.
 
 ## Bug Fixes
 
