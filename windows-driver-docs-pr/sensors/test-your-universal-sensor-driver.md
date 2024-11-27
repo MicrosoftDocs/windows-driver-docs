@@ -18,7 +18,7 @@ After you successfully [connect your sensor to the development board](connect-yo
 
 - **The SensorInfo App**
 
-    If you want to use a Universal Windows Platform (UWP) app test sensor driver, then you can use the [SensorInfo app](https://www.microsoft.com/store/appid/00001111-aaaa-2222-bbbb-3333cccc4444). This app will automatically detect any sensors that are attached to (or embedded in) your platform, and then invoke the associated drivers. The app will then display the information that it reads from the sensors, and display the information as moving waveforms.
+    If you want to use a Universal Windows Platform (UWP) app test sensor driver, then you can use the [SensorInfo app](https://aka.ms/sensorinfoapp). This app will automatically detect any sensors that are attached to (or embedded in) your platform, and then invoke the associated drivers. The app will then display the information that it reads from the sensors, and display the information as moving waveforms.
 
 - **The sensor diagnostic tool**
 
