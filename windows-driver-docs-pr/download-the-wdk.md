@@ -6,12 +6,12 @@ keywords:
 - WDK
 - Download
 - drivers
-ms.date: 11/04/2024
+ms.date: 11/27/2024
 ---
 
 # Download the Windows Driver Kit (WDK)
 
-The WDK is used to develop, test, and deploy drivers for Windows. The most recent public release is WDK 10.0.26100.2161 (released November 4, 2024).
+The WDK is used to develop, test, and deploy drivers for Windows. The most recent public release is WDK 10.0.26100.2454 (released November 27, 2024).
 
 - You can install and run this WDK on Windows 7 and later.
 - You can use this kit to build drivers for Windows 10, Windows Server 2016, and later client and server versions.
@@ -66,7 +66,7 @@ The provided links for the SDK and the WDK have matching build numbers, which is
 
 ## ![download icon for WDK](images/download-install.png) Step 3: Install WDK
 
-- [Download WDK 10.0.26100.2161](https://go.microsoft.com/fwlink/?linkid=2294834)
+- [Download WDK 10.0.26100.2454](https://go.microsoft.com/fwlink/?linkid=2297653)
 
 Starting with version 17.11.0, the WDK VSIX is included as an individual component in Visual Studio. Before installing the WDK, the installer checks if a compatible version of the VSIX is already installed. If the WDK VSIX is not found, users will be prompted to install it. To install the WDK VSIX, launch the Visual Studio Installer, select **Modify**, navigate to the **Individual Components** tab, add **Windows Driver Kits**, and then select **Modify** again.
 
@@ -79,7 +79,7 @@ Starting with version 17.11.0, the WDK VSIX is included as an individual compone
 
 As an alternative to downloading Visual Studio, the SDK, and the WDK, you can download the EWDK, which is a standalone, self-contained command-line environment for building drivers. It includes Visual Studio Build Tools, the SDK, and the WDK.
 
-The latest public version of the EWDK contains Visual Studio 2022 Build Tools 17.10.5 and MSVC toolset v14.40
+The latest public version of the EWDK contains Visual Studio 2022 Build Tools 17.11.4 and MSVC toolset v14.41
 
 The EWDK also requires the .NET Framework version 4.7.2. For more information about other requirements for the .NET Framework, see [.NET Framework system requirements](/dotnet/framework/get-started/system-requirements).
 
