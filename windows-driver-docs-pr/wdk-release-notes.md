@@ -18,7 +18,7 @@ Pktmon kernel mode APIs were made available for 3rd party kernel drivers to send
 
 ## Bug Fixes
 
-WDK installer unexpectedly launches the bundled VSIX installation at the end of installation if a downlevel WDK was installed.  The WDK VSIX no longer ships with WDK MSI and the installer will no longer exhibits this behavior.
+WDK installer unexpectedly launches the bundled VSIX installation at the end of installation if an earlier WDK was already present on the computer.  The WDK VSIX is no longer part of the WDK MSI, so the installer no longer exhibits this behavior.
 
 ## Version 10.0.26100.2161
 
