@@ -8,6 +8,18 @@ ms.date: 11/05/2024
 
 The following features and bug fixes are in Windows 11 24H2 WDK update.
 
+## Version 10.0.26100.2454
+
+*Released November 27, 2024*.
+
+### Packet Monitor APIs 
+
+Pktmon APIs are available for kernel-mode drivers to send and receive network package notifications. You can use these to diagnose performance and network connectivity issues.
+
+## Bug Fixes
+
+WDK installer unexpectedly launches the bundled VSIX installation at the end of installation if an earlier WDK was already present on the computer.  The WDK VSIX is no longer part of the WDK MSI, so the installer no longer exhibits this behavior.
+
 ## Version 10.0.26100.2161
 
 *Released November 4, 2024*.
