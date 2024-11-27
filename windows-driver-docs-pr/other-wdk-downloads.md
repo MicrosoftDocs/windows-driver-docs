@@ -5,7 +5,7 @@ keywords:
 - Windows Driver Kit
 - previous versions
 - WDK
-ms.date: 11/4/2024
+ms.date: 11/27/2024
 ---
 
 # Other WDK downloads
@@ -30,13 +30,7 @@ Starting with the Windows 11, version 22H2 release of the WDK and EWDK, the kits
 
 Multiple WDKs and EWDKs can be installed concurrently on the same computer and even be part of the same build system. You can run the Windows 11, version 24H2 WDK on Windows 7 and later.
 
-To target Windows 8.1, Windows 8, and Windows 7, install an older WDK (Windows 11, version 21H2 and previous) and an older version of Visual Studio either on the same machine or on a separate machine. For links to older kits, see the table below.
-
-Certain device-specific stacks (for example graphics) continue to have x86/ARM32 user-mode components to support x86/ARM32 apps.
-
-Additionally, starting with Windows 11, version 22H2 release of the WDK and EWDK, WDF redistributable co-installers are no longer supported. To learn how to work around this change, see [WDK Known Issues](./wdk-known-issues.md).
-
-You can run the Windows 11, version 24H2 WDK (including the WDK for Windows Server 2022) on Windows 7 and later, to develop drivers for the following operating systems:
+To develop drivers for Windows 8.1, Windows 8, and Windows 7, you need to install an older WDK (Windows 11, version 21H2 and previous) and an older version of Visual Studio. The following table shows the full list of build targets for WDK for Windows 11, version 21H2:
 
 |Client OS|Server OS|
 |-|-|
@@ -45,6 +39,12 @@ You can run the Windows 11, version 24H2 WDK (including the WDK for Windows Serv
 |Windows 8.1|Windows Server 2012 R2|
 Windows 8|Windows Server 2012|
 Windows 7|Windows Server 2008 R2 SP1|
+
+For links to older kits, see the table in Step 2 below.
+
+Certain device-specific stacks such as graphics continue to have x86/ARM32 user-mode components to support x86/ARM32 apps.
+
+Additionally, starting with Windows 11, version 22H2 release of the WDK and EWDK, WDF redistributable co-installers are no longer supported. To learn how to work around this change, see [WDK Known Issues](./wdk-known-issues.md).
 
 ## Step 1: Install Visual Studio
 
@@ -62,16 +62,7 @@ The following table indicates which Visual Studio version is required for the di
 | Windows 8.1 Update <br/>Windows 8.1 | [Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=875331) |
 | Windows 8                | [Visual Studio Professional 2012](https://go.microsoft.com/fwlink/p/?LinkID=255976) <br/>[Visual Studio Ultimate 2012](https://go.microsoft.com/fwlink/p/?LinkID=255982) |
 
-### Configure Visual Studio for Windows 11, version 24H2, version 23H2, version 22H2, version 21H2 and Windows 10, versions 1709, 1803, 1809, 1903, 2004, and Windows Server 2022
-
-When you install Visual Studio, select the **Desktop development with
-C++** workload. The Windows 11 Software Development Kit (SDK) is
-automatically included and is displayed in the right-hand **Summary**
-pane.
-
-To develop drivers for Arm/Arm64, choose **Individual components** and
-under **Compilers, build tools, and runtimes** select **Visual C++
-compilers and libraries for Arm/Arm64**.
+For information on which options to select when installing Visual Studio, see [Download the Windows Driver Kit](./download-the-wdk.md).
 
 ### Install the Windows SDK to target Windows 10, versions 1607 and 1703
 
@@ -129,7 +120,7 @@ develop, build, package, deploy, test, and debug drivers.
 > 3. Select **Modify**, select **Repair**, and then follow the directions on the screen.
 > 4. The files will be restored.
 
-## Download previous versions of the EWDK
+## Install the EWDK
 
 The Enterprise WDK (EWDK) is a standalone, self-contained, command-line environment for
 building drivers and basic Win32 test applications. It includes the
