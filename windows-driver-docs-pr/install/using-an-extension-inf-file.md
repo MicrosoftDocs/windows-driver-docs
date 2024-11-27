@@ -204,8 +204,8 @@ HKR, OSR, "OperatingExceptions",, "x86"
 ; Add all registry keys to successfully register the
 ; In-Process ATL COM Server MSFT Sample.
 [OsrFx2Extension_COMAddReg]
-HKCR,AppID\ATLDllCOMServer.DLL,AppID,,"{9DD18FED-55F6-4741-AF25-798B90C4AED5}"
-HKCR,AppID\{9DD18FED-55F6-4741-AF25-798B90C4AED5},,,"ATLDllCOMServer"
+HKCR,AppID\ATLDllCOMServer.DLL,AppID,,"{00001111-aaaa-2222-bbbb-3333cccc4444}"
+HKCR,AppID\{00001111-aaaa-2222-bbbb-3333cccc4444},,,"ATLDllCOMServer"
 HKCR,ATLDllCOMServer.SimpleObject,,,"SimpleObject Class"
 HKCR,ATLDllCOMServer.SimpleObject\CLSID,,,"{92FCF37F-F6C7-4F8A-AA09-1A14BA118084}"
 HKCR,ATLDllCOMServer.SimpleObject\CurVer,,,"ATLDllCOMServer.SimpleObject.1"
