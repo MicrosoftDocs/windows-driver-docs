@@ -63,7 +63,7 @@ To create a workable test app, it is only necessary to complete up to step three
 
 **Locating the Full Package Name and AppId**
 
-Use the .querypackages command to locate the full package name and the AppId. Type .querypackages and then user CRTL+F to search up in the output for the application name, such as HelloWorld. When the entry is located using CTRL+F, it will show the package full name, for example *e24caf14-8483-4743-b80c-ca46c28c75df\_1.0.0.0\_x86\_\_97ghe447vaan8* and the AppId of *App*.
+Use the .querypackages command to locate the full package name and the AppId. Type .querypackages and then use CTRL+F to search the output for the application name, such as HelloWorld. When the entry is located using CTRL+F, it will show the package full name, for example *00001111-aaaa-2222-bbbb-3333cccc4444\_1.0.0.0\_x86\_\_97ghe447vaan8* and the AppId of *App*.
 
 Example:
 
@@ -86,13 +86,13 @@ AppId: App
 
 For troubleshooting, you may want to view the base package name in Visual Studio.
 
-To locate the base package name in Visual Studio, click on the ApplicationManifest.xml file in project explorer. The base package name will be displayed under the packaging tab as "Package name". By default, the package name will be a GUID, for example *e24caf14-8483-4743-b80c-ca46c28c75df*.
+To locate the base package name in Visual Studio, click on the ApplicationManifest.xml file in project explorer. The base package name will be displayed under the packaging tab as "Package name". By default, the package name will be a GUID, for example *00001111-aaaa-2222-bbbb-3333cccc4444*.
 
 To use notepad to locate the base package name, open the ApplicationManifest.xml file and locate the **Identity Name** tag.
 
 ```xml
   <Identity
-    Name="e24caf14-8483-4743-b80c-ca46c28c75df"
+    Name="00001111-aaaa-2222-bbbb-3333cccc4444"
     Publisher="CN= User1"
     Version="1.0.0.0" />
 ```
@@ -424,7 +424,7 @@ Example:
 
 **Attach a debugger when your app is launched**
 
-Suppose you have an app named HelloWorld that is in a package named e24caf14-8483-4743-b80c-ca46c28c75df\_1.0.0.0\_x86\_\_97ghe447vaan8. Verify that your package is installed by displaying the full names and running states all installed packages. In a Command Prompt window, enter the following command. You can use CTRL+F to search the command output for the app name of HelloWorld.
+Suppose you have an app named HelloWorld that is in a package named 00001111-aaaa-2222-bbbb-3333cccc4444\_1.0.0.0\_x86\_\_97ghe447vaan8. Verify that your package is installed by displaying the full names and running states all installed packages. In a Command Prompt window, enter the following command. You can use CTRL+F to search the command output for the app name of HelloWorld.
 
 ```dbgcmd
 .querypackages 
@@ -498,5 +498,3 @@ Finally, decrement the debug reference count for the package.
 ```
 
 ## <span id="related_topics"></span>See also
-
-
