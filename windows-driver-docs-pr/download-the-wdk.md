@@ -83,7 +83,7 @@ The latest public version of the EWDK contains Visual Studio 2022 Build Tools 17
 
 The EWDK also requires the .NET Framework version 4.7.2. For more information about other requirements for the .NET Framework, see [.NET Framework system requirements](/dotnet/framework/get-started/system-requirements).
 
-- [Download EWDK 10.0.26100.2161 with Visual Studio Build Tools](/legal/windows/hardware/enterprise-wdk-license-2022)
+- [Download EWDK 10.0.26100.2454 with Visual Studio Build Tools](/legal/windows/hardware/enterprise-wdk-license-2022)
 
 After you download the ISO, use these steps to set up your build environment:
 
