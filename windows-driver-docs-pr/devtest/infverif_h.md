@@ -29,7 +29,7 @@ infverif.exe /h <INF file> [<INF file>]
 `InfVerif /h` also allows you to specify the highest ruleset that InfVerif will use using the '/rulever' argument, for example:
 
 ```command
-infverif.exe /h /rulever NTAMD64.10.0...17763 <INF file>
+infverif.exe /h /rulever 10.0...17763 <INF file>
 ```
 
 Using the '/rulever' argument may cause some portions of the INF to be ignored. Using the above arguments with the previous example, the [Models] section [Models.NTAMD64] will be validated using the rules for build 17763, and [Models.NTAMD64.10.0...22000] will not be validated since the specified ruleset does not apply to it.
@@ -43,7 +43,7 @@ Running in Verbose
 Running signature requirements check
 Using rules from OS build: 10.0.26080
 
-> infverif.exe /h /rulever NTAMD64.10.0...17763 <INF file>
+> infverif.exe /h /rulever 10.0...17763 <INF file>
 
 Running in Verbose
 Running signature requirements check
