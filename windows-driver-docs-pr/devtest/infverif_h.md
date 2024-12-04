@@ -105,7 +105,7 @@ The `InfVerif /h` rulesets are aligned with the requirements of the WHCP program
 |HKLM|SOFTWARE\Wow6432Node\Khronos|
 |HKLM|SOFTWARE\WowAA32Node\Microsoft\Windows Media Foundation|
 |HKLM|SOFTWARE\WowAA32Node\Khronos|
-|HKCR||
+|HKCR|&nbsp;|
 <br/>
 
 **File Paths**
