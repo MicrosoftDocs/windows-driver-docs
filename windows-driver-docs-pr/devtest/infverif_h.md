@@ -1,7 +1,7 @@
 ---
 title: InfVerif /h
 description: This topic describes the functionality and usage of InfVerif with '/h' mode.
-ms.date: 08/08/2024
+ms.date: 12/04/2024
 ---
 
 # InfVerif /h
@@ -19,9 +19,10 @@ Contoso = Models, NTAMD64, NTAMD64.10.0...22000
 
 `InfVerif /h` will internally validate this INF twice, once validating the [[Models] section](../install/inf-models-section.md) [Models.NTAMD64] using the rules for build 21999 (the highest OS version where that [Models] section will be used), and once validating the [Models] section [Models.NTAMD64.10.0...22000] using the latest ruleset. An INF file that only has a single [Models] section will only be validated against the latest ruleset.
 
-
 ## Usage
+
 To use `InfVerif /h` using the default behavior:
+
 ```command
 infverif.exe /h <INF file> [<INF file>]
 ```
@@ -37,13 +38,13 @@ Using the '/rulever' argument may cause some portions of the INF to be ignored. 
 Adding the verbose option will cause InfVerif to print out the maximum ruleset used during its evaluation:
 
 ```command
-> infverif.exe /h /v <INF file>
+infverif.exe /h /v <INF file>
 
 Running in Verbose
 Running signature requirements check
 Using rules from OS build: 10.0.26080
 
-> infverif.exe /h /rulever 10.0...17763 <INF file>
+infverif.exe /h /rulever 10.0...17763 <INF file>
 
 Running in Verbose
 Running signature requirements check
@@ -57,6 +58,7 @@ infverif.exe /h /rulever vnext <INF file>
 ```
 
 ## Requirements
+
 The `InfVerif /h` rulesets are aligned with the requirements of the WHCP program. The requirements are defined as the full [driver package isolation](../develop/driver-isolation.md) requirements, with some set of exceptions applied to the requirements. Some exceptions will be removed each release until `InfVerif /h` enforces all driver package isolation requirements.
 
 > [!NOTE]
@@ -65,6 +67,7 @@ The `InfVerif /h` rulesets are aligned with the requirements of the WHCP program
 ### Current Requirements as of April 2024
 
 **Registry**
+
 <br/>INF files must not modify any global registry locations and instead only use the HKR registry root to modify or create registry information with an [AddReg directive](../install/inf-addreg-directive.md). The following paths are current exceptions to this requirement:
 
 | Root | Subkey |
@@ -103,10 +106,10 @@ The `InfVerif /h` rulesets are aligned with the requirements of the WHCP program
 |HKLM|SOFTWARE\WowAA32Node\Microsoft\Windows Media Foundation|
 |HKLM|SOFTWARE\WowAA32Node\Khronos|
 |HKCR||
-
 <br/>
 
 **File Paths**
+
 <br/>DIRID 13 must be specified in the INF as the destination location for all entries in the [[DestinationDirs] section](../install/inf-destinationdirs-section.md). The following values are exceptions to this requirement:
 
 |DIRID Value|
