@@ -28,8 +28,7 @@ dbgrpc [-s Server -p ProtSeq] [-r Radix] [-c|-a] [-C CallID] [-I IfStart] [-N Pr
 dbgrpc -? 
 ```
 
-## <span id="ddk_dbgrpc_command_line_options_dbg"></span><span id="DDK_DBGRPC_COMMAND_LINE_OPTIONS_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______-s_______Server______"></span><span id="_______-s_______server______"></span><span id="_______-S_______SERVER______"></span> **-s** *Server*   
 Allows DbgRpc to view information from a remote machine. The server name should not be preceded by slash marks. For more information about using DbgRpc remotely, see [Using the DbgRpc Tool](using-the-dbgrpc-tool.md).
@@ -79,6 +78,9 @@ Specifies the procedure number of this call. (The RPC Run-Time identifies indivi
 ### Additional Information
 
 For more information about debugging Microsoft Remote Procedure Call (RPC), see [RPC Debugging](rpc-debugging.md).
+
+For general information about RPC security and guidelines for usage, see [Writing a Secure RPC Client or Server](/windows/win32/rpc/writing-a-secure-rpc-client-or-server).
+ 
 
  
 

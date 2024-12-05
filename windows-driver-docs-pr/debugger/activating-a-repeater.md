@@ -14,13 +14,14 @@ api_type:
 
 # Activating a Repeater
 
-
 To activate the repeater connection, you will usually first start the server, then start the repeater, then start the client.
 
 It is also possible to start the repeater first and then the server. But unless you are using the **clicon** parameter to establish a reverse connection, the client must always be started last.
 
-## <span id="step_one__starting_the_server"></span><span id="STEP_ONE__STARTING_THE_SERVER"></span>Step One: Starting the Server
+> [!IMPORTANT]
+> There are important security considerations when using remote debugging. For more information, including information on enabling secure mode, see [Security During Remote Debugging](security-during-remote-debugging.md) and [Security Considerations for Windows Debugging Tools](security-considerations.md).
 
+## Step One: Starting the Server
 
 The server can be a debugging server, a process server, or a KD connection server. You start this as you normally would, except that the transport protocol settings will be used to connect to the repeater, not the client. For details, see [**Activating a Debugging Server**](activating-a-debugging-server.md), [**Activating a Process Server**](activating-a-process-server.md), or [**Activating a KD Connection Server**](activating-a-kd-connection-server.md).
 
@@ -28,8 +29,7 @@ If you use a password when creating the server, this password will be required w
 
 If you use the **hidden** parameter, the server will be hidden as usual. The repeater itself is always hidden.
 
-## <span id="step_two__starting_the_repeater"></span><span id="STEP_TWO__STARTING_THE_REPEATER"></span>Step Two: Starting the Repeater
-
+## Step Two: Starting the Repeater
 
 The repeater that is included in Debugging Tools for Windows is called DbEngPrx (dbengprx.exe).
 
@@ -38,9 +38,6 @@ DbEngPrx understands the following transport protocols: named pipe (NPIPE), TCP,
 If your client and server are using secure sockets layer (SSL) protocol, you should use TCP protocol for the repeater. If your client and server are using secure pipe (SPIPE) protocol, you should use NPIPE protocol for the repeater. The repeater will pass on whatever data it receives -- it does not interpret, encrypt, or decrypt any information. All encryption and decryption will be done by the client and the server.
 
 The syntax for the DbEnPrx command line is as follows:
-
-## <span id="ddk_activating_a_repeater_dbg"></span><span id="DDK_ACTIVATING_A_REPEATER_DBG"></span>
-
 
 **dbengprx \[-p\] -c** *ClientTransport* **-s** *ServerTransport*
 
@@ -133,7 +130,7 @@ Requires a client to supply the specified password in order to connect to the de
 <span id="IcfEnable"></span><span id="icfenable"></span><span id="ICFENABLE"></span>**IcfEnable**  
 Causes the debugger to enable the necessary port connections for TCP or named pipe communication when the Internet Connection Firewall is active. By default, the Internet Connection Firewall disables the ports used by these protocols. When **IcfEnable** is used with a TCP connection, the debugger causes Windows to open the port specified by the *Socket* parameter. When **IcfEnable** is used with a named pipe connection, the debugger causes Windows to open the ports used for named pipes (ports 139 and 445). The debugger does not close these ports after the connection terminates.
 
-### <span id="step_three__starting_the_client"></span><span id="STEP_THREE__STARTING_THE_CLIENT"></span>Step Three: Starting the Client
+### Step Three: Starting the Client
 
 The client should be a debugging client or a smart client -- whichever corresponds to your server type. For details, see [**Activating a Debugging Client**](activating-a-debugging-client.md), [**Activating a Smart Client**](activating-a-smart-client.md), or [**Activating a Smart Client (Kernel Mode)**](activating-a-smart-client--kernel-mode-.md).
 

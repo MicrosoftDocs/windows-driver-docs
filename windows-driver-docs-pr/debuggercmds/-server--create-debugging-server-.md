@@ -2,7 +2,7 @@
 title: ".server (Create Debugging Server)"
 description: "The .server command starts a debugging server, allowing a remote connection to the current debugging session."
 keywords: ["Create Debugging Server (.server) command", "remote debugging through the debugger, Create Debugging Server (.server) command", ".server (Create Debugging Server) Windows Debugging"]
-ms.date: 05/23/2017
+ms.date: 11/25/2024
 topic_type:
 - apiref
 ms.topic: reference
@@ -16,14 +16,25 @@ api_type:
 
 The **.server** command starts a debugging server, allowing a remote connection to the current debugging session.
 
+> [!IMPORTANT]
+> There are important security considerations when using remote debugging. For more information, including information on enabling secure mode, see [Security Considerations for Windows Debugging Tools](../debugger/security-considerations.md).
+
+
+*Recommended connection methods, with some additional security*
+
+```dbgcmd
+.server spipe:proto=Protocol,{certuser=Cert|machuser=Cert},pipe=PipeName[,hidden][,password=Password] 
+.server ssl:proto=Protocol,{certuser=Cert|machuser=Cert},port=Socket[,hidden][,password=Password] 
+.server ssl:proto=Protocol,{certuser=Cert|machuser=Cert},port=Socket,clicon=Client[,password=Password] 
+```
+
+*Unsecure connection methods*
+
 ```dbgcmd
 .server npipe:pipe=PipeName[,hidden][,password=Password][,IcfEnable] 
 .server tcp:port=Socket[,hidden][,password=Password][,ipversion=6][,IcfEnable] 
 .server tcp:port=Socket,clicon=Client[,password=Password][,ipversion=6] 
 .server com:port=COMPort,baud=BaudRate,channel=COMChannel[,hidden][,password=Password] 
-.server spipe:proto=Protocol,{certuser=Cert|machuser=Cert},pipe=PipeName[,hidden][,password=Password] 
-.server ssl:proto=Protocol,{certuser=Cert|machuser=Cert},port=Socket[,hidden][,password=Password] 
-.server ssl:proto=Protocol,{certuser=Cert|machuser=Cert},port=Socket,clicon=Client[,password=Password] 
 ```
 
 ## Parameters
@@ -37,7 +48,7 @@ When TCP or SSL protocol is used, *Socket* is the socket port number.
 It is also possible to specify a range of ports separated by a colon. The debugger will check each port in this range to see if it is free. If it finds a free port and no error occurs, the debugging server will be created. The debugging client will have to specify the actual port being used to connect to the server. To determine the actual port, use any of the methods described in [**Searching for Debugging Servers**](../debugger/searching-for-debugging-servers.md); when this debugging server is displayed, the port will be followed by two numbers separated by a colon. The first number will be the actual port used; the second can be ignored. For example, if the port was specified as port=51:60, and port 53 was actually used, the search results will show "port=53:60". (If you are using the **clicon** parameter to establish a reverse connection, the debugging client can specify a range of ports in this manner, while the server must specify the actual port used.)
 
 <span id="clicon_Client"></span><span id="clicon_client"></span><span id="CLICON_CLIENT"></span>**clicon=**<em>Client</em>  
-When TCP or SSL protocol is used and the **clicon** parameter is specified, a *reverse connection* will be opened. This means that the debugging server will try to connect to the debugging client, instead of letting the client initiate the contact. This can be useful if you have a firewall that is preventing a connection in the usual direction. *Client* specifies the network name of the machine on which the debugging client exists or will be created. The two initial backslashes (\\\) are optional.
+When TCP or SSL protocol is used and the **clicon** parameter is specified, a *reverse connection* will be opened. This means that the debugging server will try to connect to the debugging client, instead of letting the client initiate the contact. This can be useful if you have a firewall that is preventing a connection in the usual direction. *Client* specifies the network name of the machine on which the debugging client exists or will be created. The two initial backslashes (`\\`) are optional.
 
 When **clicon** is used, it is best to start the debugging client before the debugging server is created, although the usual order (server before client) is also permitted. A reverse-connection server will not appear when another debugger displays all active servers.
 
@@ -85,3 +96,7 @@ For full details on how to start a debugging server, see [**Activating a Debuggi
 This command turns the current debugger into a debugging server. This allows you to start the server after the debugger is already running, whereas the -server [command-line option](../debugger/command-line-options.md) can only be issued when the debugger is started.
 
 This permits a debugging client to connect to the current debugging session. Note that it is possible to start multiple servers using different options, allowing different kinds of debugging clients to join the session.
+
+> [!IMPORTANT]
+> Using a password with TCP, NPIPE, or COM protocol offers only a small amount of protection, because the password is not encrypted. When you use a password together with a SSL or SPIPE protocol, the password is encrypted. If you want to establish a secure remote session, you must use the SSL or SPIPE protocol.
+ 

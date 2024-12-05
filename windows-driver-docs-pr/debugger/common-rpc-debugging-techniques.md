@@ -2,14 +2,10 @@
 title: Common RPC Debugging Techniques
 description: Common RPC Debugging Techniques
 keywords: ["RPC debugging, common techniques"]
-ms.date: 05/23/2017
+ms.date: 09/13/2024
 ---
 
 # Common RPC Debugging Techniques
-
-
-## <span id="ddk_common_rpc_debugging_techniques_dbg"></span><span id="DDK_COMMON_RPC_DEBUGGING_TECHNIQUES_DBG"></span>
-
 
 This section describes four common RPC-related problems. RPC state information can be used to troubleshoot these problems.
 
@@ -24,5 +20,7 @@ Either the DbgRpc tool or the RPC debugger extensions can be used in any of thes
 [Identifying the Caller From the Server Thread](identifying-the-caller-from-the-server-thread.md)
 
  
+## RPC Security 
 
+For general information about RPC security and guidelines for usage, see [Writing a Secure RPC Client or Server](/windows/win32/rpc/writing-a-secure-rpc-client-or-server).
  

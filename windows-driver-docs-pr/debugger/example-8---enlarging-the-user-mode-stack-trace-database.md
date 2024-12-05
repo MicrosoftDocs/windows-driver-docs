@@ -37,9 +37,7 @@ gflags /i MyApp.exe /tracedb 24
 Trace database size for `MyApp.exe' set to 24 Mb.
 ```
 
-GFlags can change the size of the user-mode stack trace database, but it does not display it. To display the trace database size, use registry APIs, Regedit, or Reg (reg.exe), a tool included in Windows XP and Windows Server 2003, to check the value of the **StackTraceDatabaseSizeInMB** registry entry (HKLM\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\*ImageFileName*\\**StackTraceDatabaseSizeInMB**).
-
-(A version of Reg is included in Windows XP, but that version does not permit the **/v** and **/s** switches in the same command.)
+GFlags can change the size of the user-mode stack trace database, but it does not display it. To display the trace database size, use registry APIs or Regedit  to check the value of the **StackTraceDatabaseSizeInMB** registry entry (HKLM\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\*ImageFileName*\\**StackTraceDatabaseSizeInMB**).
 
 The following command uses Reg to query the value of **StackTraceDatabaseSizeInMB**:
 

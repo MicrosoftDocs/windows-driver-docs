@@ -7,17 +7,13 @@ ms.date: 05/23/2017
 
 # Remote Targets
 
-
-## <span id="ddk_remote_debugging_dbx"></span><span id="DDK_REMOTE_DEBUGGING_DBX"></span>
-
-
 There are two different forms of remote debugging, depending on which computer (remote client or server) is the host computer. The *host computer* is the computer on which the [debugger engine](introduction.md#debugger-engine) is active. On the other computer, the debugger engine is merely acting as a proxy relaying commands and data to the host engine.
 
 All debugger operations -- such as executing commands and [extensions](introduction.md#extensions), and symbol loading -- are performed by the host engine. A debugger session is also relative to the host engine.
 
 To list the debugging servers and process servers currently running on a computer, use [**OutputServers**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-outputservers).
 
-### <span id="debugging_server_and_debugging_client"></span><span id="DEBUGGING_SERVER_AND_DEBUGGING_CLIENT"></span>Debugging Servers and Debugging Clients
+## Debugging Servers and Debugging Clients
 
 A *debugging server* is an instance of the debugger engine acting as a host and listening for connections from debugging clients. The method [**StartServer**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-startserver) will tell the debugger engine to start listening for connections from debugging clients.
 
@@ -27,9 +23,9 @@ The client object returned by **DebugConnect** is not automatically joined to th
 
 The communication between a debugging server and a debugging client mostly consists of debugger commands and RPC calls sent to the server, and command output sent back to the client.
 
-### <span id="process_server_and_smart_client"></span><span id="PROCESS_SERVER_AND_SMART_CLIENT"></span>Process Servers, Kernel Connection Servers, and Smart Clients
+## Process Servers, Kernel Connection Servers, and Smart Clients
 
-*Process servers* and *kernel connection servers* are both instances of the debugger engine acting as proxies, listening for connections from smart clients, and performing memory, processor, or operating system operations as requested by these remote clients. A *process server* facilitates the debugging of processes that are running on the same computer. A *kernel connection server* facilitates the debugging of a Windows kernel debugging target that is connected to the computer that is running the connection server. A process server can be started using the method [**StartProcessServer**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-startprocessserver) or the program [DbgSrv](process-servers--user-mode-.md). The method [**WaitForProcessServerEnd**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-waitforprocessserverend) will wait for a process server started with **StartProcessServer** to end. A kernel connection server can be activated using the program [**KdSrv**](activating-a-kd-connection-server.md).
+*Process servers* and *kernel connection servers* are both instances of the debugger engine acting as proxies, listening for connections from smart clients, and performing memory, processor, or operating system operations as requested by these remote clients. A *process server* facilitates the debugging of processes that are running on the same computer. A *kernel connection server* facilitates the debugging of a Windows kernel debugging target that is connected to the computer that is running the connection server. A process server can be started using the API method [**StartProcessServer**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-startprocessserver) or the program [DbgSrv](process-servers--user-mode-.md). The method [**WaitForProcessServerEnd**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-waitforprocessserverend) will wait for a process server started with **StartProcessServer** to end. A kernel connection server can be activated using the program [**KdSrv**](activating-a-kd-connection-server.md).
 
 A *smart client* is an instance of the debugger engine acting as a host engine and connected to a process server. The method [**ConnectProcessServer**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-connectprocessserver) will connect to a process server. Once connected, the methods described in [Live User-Mode Targets](live-user-mode-targets.md) can be used.
 

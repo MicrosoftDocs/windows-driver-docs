@@ -8,9 +8,6 @@ ms.date: 05/23/2017
 # RPC Debugging
 
 
-## <span id="ddk_rpc_debugging_dbg"></span><span id="DDK_RPC_DEBUGGING_DBG"></span>
-
-
 This section includes:
 
 [Overview of RPC Debugging](overview-of-rpc-debugging.md)
@@ -24,5 +21,7 @@ This section includes:
 [RPC State Information Internals](rpc-state-information-internals.md)
 
  
+## RPC Security 
 
+For general information about RPC security and guidelines for usage, see [Writing a Secure RPC Client or Server](/windows/win32/rpc/writing-a-secure-rpc-client-or-server).
  

@@ -7,10 +7,6 @@ ms.date: 05/23/2017
 
 # Get RPC Thread Information
 
-
-## <span id="ddk_get_rpc_thread_information_dbg"></span><span id="DDK_GET_RPC_THREAD_INFORMATION_DBG"></span>
-
-
 Thread information is displayed by the **!rpcexts.getthreadinfo** extension, or by DbgRpc when the **-t** switch is used.
 
 The PID of a process must be specified. You may specify a thread within that process as well. If the thread is omitted, all threads within that process will be displayed.

@@ -138,4 +138,3 @@ In WinDbg, you can use several additional features to change how text is display
 ### Remote Debugging
 
 When you are performing remote debugging through the debugger, the debugging client can access a limited number of commands. To change the number of commands that the client can access, use the **-clines** [command-line option](../debugger/command-line-options.md) or the \_NT\_DEBUG\_HISTORY\_SIZE [environment variable](../debugger/environment-variables.md).
-

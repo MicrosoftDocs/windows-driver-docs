@@ -7,7 +7,7 @@ ms.date: 11/28/2017
 # Preparing to Debug the Service Application
 
 
-This topic lists all the preparatory steps that may be required prior to debugging a service application. Which steps are required in your scenario depends on which attach option you have chosen and which debugging configuration you have chosen. For a list of these choices, see [Choosing the Best Method](choosing-the-best-method.md).
+This topic lists all the preparatory steps that may be required prior to debugging a service application. Which steps are required in your scenario depends on which attach option you have chosen and which debugging configuration you have chosen. For a list of these choices, see [Choosing the best method to debug a service application](choosing-the-best-method.md).
 
 Each of the preparatory steps described in this topic specifies the conditions under which it is required. These steps can be done in any order.
 

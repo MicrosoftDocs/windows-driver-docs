@@ -7,12 +7,7 @@ ms.date: 05/23/2017
 
 # Command-Line Options
 
-
-## <span id="ddk_command_line_options_dbg"></span><span id="DDK_COMMAND_LINE_OPTIONS_DBG"></span>
-
-
-## <span id="in_this_section"></span>In this section
-
+## In this section
 
 -   [**CDB Command-Line Options**](cdb-command-line-options.md)
 -   [**KD Command-Line Options**](kd-command-line-options.md)

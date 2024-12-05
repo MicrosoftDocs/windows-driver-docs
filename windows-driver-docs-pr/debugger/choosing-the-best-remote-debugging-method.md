@@ -2,7 +2,7 @@
 title: Choosing the Best Remote Debugging Method
 description: Choosing the Best Remote Debugging Method
 keywords: ["remote debugging, choosing the best method"]
-ms.date: 05/23/2017
+ms.date: 11/22/2024
 ---
 
 # Choosing the Best Remote Debugging Method
@@ -42,3 +42,6 @@ Variations on all of these methods are possible.
 It is possible to chain several computers together to take advantage of more than one transport method. You can create complicated transport sequences that take into account where the technician is, where the symbols are located, and whether there are firewalls preventing connections in certain directions. See [Advanced Remote Debugging Scenarios](advanced-remote-debugging-scenarios.md) for some examples.
 
 You can even perform remote debugging on a single computer. For example, it might be useful to start a low-privilege process server and then connect to it with a high-privilege smart client.
+
+> [!IMPORTANT]
+> There are important security considerations when using remote debugging. For more information, including information on enabling secure mode, see [Security During Remote Debugging](security-during-remote-debugging.md) and [Security Considerations for Windows Debugging Tools](security-considerations.md).

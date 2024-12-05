@@ -1,15 +1,11 @@
 ---
-title: Security Considerations
+title: Security Considerations for Windows Debugging Tools
 description: Security Considerations for Windows Debugging Tools
 keywords: security considerations, debugger security
-ms.date: 05/23/2017
+ms.date: 11/25/2024
 ---
 
-# Security Considerations
-
-
-## <span id="ddk_security_considerations_dbg"></span><span id="DDK_SECURITY_CONSIDERATIONS_DBG"></span>
-
+# Security Considerations for Windows Debugging Tools
 
 This section includes:
 

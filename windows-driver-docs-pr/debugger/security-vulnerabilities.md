@@ -2,14 +2,10 @@
 title: Security Vulnerabilities
 description: This section covers debugging security vulnerabilities
 keywords: security vulnerabilities, debugger, security
-ms.date: 05/23/2017
+ms.date: 11/25/2024
 ---
 
 # Security Vulnerabilities
-
-
-## <span id="ddk_security_vulnerabilities_dbg"></span><span id="DDK_SECURITY_VULNERABILITIES_DBG"></span>
-
 
 This section includes:
 

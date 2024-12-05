@@ -27,7 +27,7 @@ This dump file includes the following:
 
 -   A list of loaded drivers.
 
-In Windows XP and later versions of Windows, the following items are also included:
+The following items are also included:
 
 -   A list of loaded modules and unloaded modules.
 

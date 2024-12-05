@@ -2,7 +2,7 @@
 title: User-mode Dump Files
 description: Get an overview of user-mode dump files and how to use them to help resolve bugs and crashes.
 keywords: ["dump file, user-mode"]
-ms.date: 08/28/2024
+ms.date: 11/25/2024
 ---
 
 # User-mode dump files

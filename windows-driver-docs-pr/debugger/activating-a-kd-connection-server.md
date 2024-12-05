@@ -2,7 +2,7 @@
 title: Activating a KD Connection Server
 description: To activate a KD connection server, open an elevated Command Prompt window (Run as Adminstrator), and enter the kdsrv command.
 keywords: ["Activating a KD Connection Server Windows Debugging"]
-ms.date: 05/23/2017
+ms.date: 11/25/2024
 topic_type:
 - apiref
 ms.topic: reference
@@ -14,16 +14,28 @@ api_type:
 
 # Activating a KD Connection Server
 
-
 The KD connection server that is included in Debugging Tools for Windows is called KdSrv (kdsrv.exe). To activate a KD connection server, open an elevated Command Prompt window (Run as Adminstrator), and enter the **kdsrv** command.
 
 **Note**  You can activate a KD connection server without having elevated privileges, and debugging clients will be able to connect to the server. However, clients will not be able to discover a KD connection server unless it was activated with elevated privileges. For information about how to discover debugging servers, see [**Searching for KD Connection Servers**](searching-for-kd-connection-servers.md).
-
  
+> [!IMPORTANT]
+> There are important security considerations when using remote debugging. For more information, including information on enabling secure mode, see [Security During Remote Debugging](security-during-remote-debugging.md) and [Security Considerations for Windows Debugging Tools](security-considerations.md).
 
 KdSrv supports several transport protocols: named pipe (NPIPE), TCP, COM port, secure pipe (SPIPE), and secure sockets layer (SSL).
 
 The syntax for the KdSrv command line depends on the protocol used. The following options exist:
+
+*Recommended connection methods, with some additional security*
+
+```console
+kdsrv -t spipe:proto=Protocol,{certuser=Cert|machuser=Cert},pipe=PipeName[,hidden][,password=Password] 
+
+kdsrv -t ssl:proto=Protocol,{certuser=Cert|machuser=Cert},port=Socket[,hidden][,password=Password] 
+
+kdsrv -t ssl:proto=Protocol,{certuser=Cert|machuser=Cert},port=Socket,clicon=Client[,password=Password] 
+```
+
+*Unsecure connection methods*
 
 ```console
 kdsrv -t npipe:pipe=PipeName[,hidden][,password=Password][,IcfEnable] 
@@ -33,16 +45,9 @@ kdsrv -t tcp:port=Socket[,hidden][,password=Password][,ipversion=6][,IcfEnable]
 kdsrv -t tcp:port=Socket,clicon=Client[,password=Password][,ipversion=6] 
 
 kdsrv -t com:port=COMPort,baud=BaudRate,channel=COMChannel[,hidden][,password=Password] 
-
-kdsrv -t spipe:proto=Protocol,{certuser=Cert|machuser=Cert},pipe=PipeName[,hidden][,password=Password] 
-
-kdsrv -t ssl:proto=Protocol,{certuser=Cert|machuser=Cert},port=Socket[,hidden][,password=Password] 
-
-kdsrv -t ssl:proto=Protocol,{certuser=Cert|machuser=Cert},port=Socket,clicon=Client[,password=Password] 
 ```
 
-## <span id="ddk_activating_a_kd_connection_server_dbg"></span><span id="DDK_ACTIVATING_A_KD_CONNECTION_SERVER_DBG"></span>
-
+## Parameters
 
 The parameters in the previous commands have the following possible values:
 
@@ -60,8 +65,6 @@ When TCP or SSL protocol is used and the **clicon** parameter is specified, a *r
 Since the KD connection server is looking for one specific client, you cannot connect multiple clients to the server if you use this method. If the connection is refused or is broken you will have to restart the process server. A reverse-connection KD connection server will not appear when someone uses the **-QR** command-line option to display all active servers.
 
 **Note**   When **clicon** is used, it is best to start the smart client before the KD connection server is created, although the usual order (server before client) is also permitted.
-
- 
 
 <span id="port_________COMPort"></span><span id="port_________comport"></span><span id="PORT_________COMPORT"></span>**port=** *COMPort*  
 When COM protocol is used, *COMPort* specifies the COM port to be used. The prefix "COM" is optional -- for example, both "com2" and "2" are acceptable.
@@ -84,16 +87,14 @@ Prevents the KD connection server from appearing when someone uses the **-QR** c
 <span id="________password_________Password"></span><span id="________password_________password"></span><span id="________PASSWORD_________PASSWORD"></span> **password=** *Password*  
 Requires a smart client to supply the specified password in order to connect to the KD connection server. *Password* can be any alphanumeric string, up to twelve characters in length.
 
-**Warning**   Using a password with TCP, NPIPE, or COM protocol only offers a small amount of protection, because the password is not encrypted. When a password is used with SSL or SPIPE protocol, it is encrypted. If you want to establish a secure remote session, you must use SSL or SPIPE protocol.
-
- 
+> [!IMPORTANT]
+> Using a password with TCP, NPIPE, or COM protocol offers only a small amount of protection, because the password is not encrypted. When you use a password together with a SSL or SPIPE protocol, the password is encrypted. If you want to establish a more secure remote session, you must use the SSL or SPIPE protocol.
 
 <span id="________ipversion_6"></span><span id="________IPVERSION_6"></span> **ipversion=6**  
 (Debugging Tools for Windows 6.6.07 and earlier only) Forces the debugger to use IP version 6 rather than version 4 when using TCP to connect to the Internet. In Windows Vista and later versions, the debugger attempts to auto-default to IP version 6, making this option unnecessary.
 
 <span id="________IcfEnable"></span><span id="________icfenable"></span><span id="________ICFENABLE"></span> **IcfEnable**  
 Causes the debugger to enable the necessary port connections for TCP or named pipe communication when the Internet Connection Firewall is active. By default, the Internet Connection Firewall disables the ports used by these protocols. When **IcfEnable** is used with a TCP connection, the debugger causes Windows to open the port specified by the *Socket* parameter. When **IcfEnable** is used with a named pipe connection, the debugger causes Windows to open the ports used for named pipes (ports 139 and 445). The debugger does not close these ports after the connection terminates.
-
  
 
  

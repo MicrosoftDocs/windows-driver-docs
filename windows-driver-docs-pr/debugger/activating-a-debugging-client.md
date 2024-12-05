@@ -2,7 +2,7 @@
 title: Activating a Debugging Client
 description: Once the debugging server has been activated, you can start a debugging client on another computer and connect to the debugging session.
 keywords: ["Activating a Debugging Client Windows Debugging"]
-ms.date: 05/23/2017
+ms.date: 11/25/2024
 topic_type:
 - apiref
 ms.topic: reference
@@ -14,22 +14,15 @@ api_type:
 
 # Activating a Debugging Client
 
-
 Once the debugging server has been activated, you can start a debugging client on another computer and connect to the debugging session.
 
 There are two ways to start a debugging client: by using the -remote [command-line option](command-line-options.md), or by using the WinDbg graphical interface.
 
 The protocol of the client must match the protocol of the server. The general syntax for starting a debugging client depends on the protocol used. The following options exist:
 
-```dbgcmd
-Debugger -remote npipe:server=Server,pipe=PipeName[,password=Password] 
+*Recommended connection methods, with some additional security*
 
-Debugger -remote tcp:server=Server,port=Socket[,password=Password][,ipversion=6] 
-
-Debugger -remote tcp:clicon=Server,port=Socket[,password=Password][,ipversion=6] 
-
-Debugger -remote com:port=COMPort,baud=BaudRate,channel=COMChannel[,password=Password] 
-
+```console
 Debugger -remote spipe:proto=Protocol,{certuser=Cert|machuser=Cert},server=Server,pipe=PipeName[,password=Password] 
 
 Debugger -remote ssl:proto=Protocol,{certuser=Cert|machuser=Cert},server=Server,port=Socket[,password=Password] 
@@ -37,7 +30,31 @@ Debugger -remote ssl:proto=Protocol,{certuser=Cert|machuser=Cert},server=Server,
 Debugger -remote ssl:proto=Protocol,{certuser=Cert|machuser=Cert},clicon=Server,port=Socket[,password=Password] 
 ```
 
+*Unsecure connection methods*
+
+```console
+Debugger -remote npipe:server=Server,pipe=PipeName[,password=Password] 
+
+Debugger -remote tcp:server=Server,port=Socket[,password=Password][,ipversion=6] 
+
+Debugger -remote tcp:clicon=Server,port=Socket[,password=Password][,ipversion=6] 
+
+Debugger -remote com:port=COMPort,baud=BaudRate,channel=COMChannel[,password=Password] 
+```
+
 To use the graphical interface to connect to a remote debugging session, WinDbg must be in dormant mode -- it must either have been started with no command-line parameters, or it must have ended the previous debugging session. Select the **File | Connect to Remote Session** menu command, or press the CTRL+R shortcut key. When the **Connect to Remote Debugger Session** dialog box appears, enter one of the following strings into the **Connection string** text box:
+
+*Recommended connection methods, with some additional security*
+
+```dbgcmd
+spipe:proto=Protocol,{certuser=Cert|machuser=Cert},server=Server,pipe=PipeName[,password=Password] 
+
+ssl:proto=Protocol,{certuser=Cert|machuser=Cert},server=Server,port=Socket[,password=Password] 
+
+ssl:proto=Protocol,{certuser=Cert|machuser=Cert},clicon=Server,port=Socket[,password=Password] 
+```
+
+*Unsecure connection methods*
 
 ```dbgcmd
 npipe:server=Server,pipe=PipeName[,password=Password] 
@@ -47,18 +64,15 @@ tcp:server=Server,port=Socket[,password=Password][,ipversion=6]
 tcp:clicon=Server,port=Socket[,password=Password][,ipversion=6] 
 
 com:port=COMPort,baud=BaudRate,channel=COMChannel[,password=Password] 
-
-spipe:proto=Protocol,{certuser=Cert|machuser=Cert},server=Server,pipe=PipeName[,password=Password] 
-
-ssl:proto=Protocol,{certuser=Cert|machuser=Cert},server=Server,port=Socket[,password=Password] 
-
-ssl:proto=Protocol,{certuser=Cert|machuser=Cert},clicon=Server,port=Socket[,password=Password] 
 ```
 
 Alternatively, you can use the **Browse** button to locate active debugging servers.
 
-## <span id="ddk_activating_a_debugging_client_dbg"></span><span id="DDK_ACTIVATING_A_DEBUGGING_CLIENT_DBG"></span>
 
+> [!IMPORTANT]
+> There are important security considerations when using remote debugging. For more information, including information on enabling secure mode, see [Security During Remote Debugging](security-during-remote-debugging.md) and [Security Considerations for Windows Debugging Tools](security-considerations.md). 
+
+## Parameters
 
 The parameters in the preceding commands have the following possible values:
 
@@ -82,8 +96,6 @@ When you are prompted, enter the password for *UserName*.
 After this command succeeds, you can activate a debugging client by using the **-remote** command-line option or by using the WinDbg graphical interface.
 
 **Note**  You might need to enable file and printer sharing on the server computer. In Control Panel, navigate to **Network and Internet &gt; Network and Sharing Center&gt; Advanced sharing settings**. Select **Turn on file and printer sharing**.
-
- 
 
 <span id="________port_________Socket"></span><span id="________port_________socket"></span><span id="________PORT_________SOCKET"></span> **port=** *Socket*  
 If TCP or SSL protocol is used, *Socket* is the same socket port number that was used when the server was created.
@@ -114,6 +126,5 @@ If a password was used when the server was created, *Password* must be supplied 
 
 Command-line options used to start new debugging sessions (like **-p**) cannot be used by the debugging client, but only by the server. Configuration options (like **-n**) will work from either the client or the server.
 
- 
 
  

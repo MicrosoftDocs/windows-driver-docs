@@ -437,10 +437,10 @@
           href: using-unc-shares.md
         - name: "Using HTTP Sites and UNC Shares in Conjuction with Regular Version Control"
           href: using-http-sites-and-unc-shares-in-conjuction-with-regular-version-con.md
-  - name: "Security Considerations"
+  - name: "Security Considerations for Windows Debugging Tools"
 # Auto-expanded node
     items: 
-    - name: "Security Considerations"
+    - name: "Security Considerations for Windows Debugging Tools"
       href: security-considerations.md
     - name: "Debug Privilege"
       href: debug-privilege.md
@@ -1150,8 +1150,6 @@
         href: symbols-in-the-middle.md
       - name: "Two Firewalls"
         href: two-firewalls.md
-    - name: "Remote Debugging on Workgroup Computers"
-      href: remote-debugging-on-workgroup-computers.md
   - name: "Using the WinDbg Graphical Interface (Classic)"
 # Auto-expanded node
     items: 
@@ -1570,7 +1568,7 @@
       items: 
       - name: "Debugging a Service Application"
         href: debugging-a-service-application.md
-      - name: "Choosing the Best Method"
+      - name: "Choosing the best method to debug a service application"
         href: choosing-the-best-method.md
       - name: "Preparing to Debug the Service Application"
         href: preparing-to-debug-the-service-application.md

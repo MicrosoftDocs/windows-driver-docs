@@ -2,43 +2,49 @@
 title: Security During Remote Debugging
 description: Security During Remote Debugging
 keywords: ["security considerations, remote debugging", "remote debugging through remote.exe, security considerations", "remote debugging through the debugger, security considerations", "process server, security considerations"]
-ms.date: 05/23/2017
+ms.date: 11/26/2024
 ---
 
 # Security During Remote Debugging
 
+This topic describes different techniques to increase security during remote debugging. 
 
-## <span id="ddk_security_during_remote_debugging_dbg"></span><span id="DDK_SECURITY_DURING_REMOTE_DEBUGGING_DBG"></span>
-
-
-There are two ways to increase security during remote debugging: by restricting who can connect to your session and by restricting the powers of someone who does connect.
-
-### <span id="controlling_access_to_the_debugging_session"></span><span id="CONTROLLING_ACCESS_TO_THE_DEBUGGING_SESSION"></span>Controlling Access to the Debugging Session
+## Control access to the debugging session
 
 If you are performing [remote debugging through the debugger](remote-debugging-through-the-debugger.md), or using a [process server](process-servers--user-mode-.md) or [KD connection server](kd-connection-servers--kernel-mode-.md), any computer on your local network can attempt to attach to your debugging session.
 
-If you are using the TCP, 1394, COM, or named pipe protocols, you can require the Debugging Client to supply a password. However, this password is not encrypted during transmission, and therefore these protocols are not secure.
+If you are using the TCP, COM, or named pipe protocols, you can require the debugging client to supply a password. However, this password is not encrypted during transmission, and therefore these protocols are not secure.
 
-If you want your Debugging Server to be secure, you must use secure sockets layer (SSL) or secure pipe (SPIPE) protocol.
+If you want your debugging server to be more secure, you must use secure sockets layer (SSL) or secure pipe (SPIPE) protocol.
+
+## Prohibit connections from unauthorized users
 
 If you are performing [remote debugging through remote.exe](remote-debugging-through-remote-exe.md), you can use the **/u** parameter to prohibit connections from unauthorized users.
 
-### <span id="restricting_the_powers_of_the_client"></span><span id="RESTRICTING_THE_POWERS_OF_THE_CLIENT"></span>Restricting the Powers of the Client
+## Network segment isolation
 
-If you are setting up a kernel-mode debugging session, you can restrict the debugger's ability to interfere with the host machine by using [Secure Mode](secure-mode.md).
+To avoid protocol wire attacks, consider isolating the network segment that the client and server are running on. For instance, you can use a local network switch to connect the two systems, ensuring it is not connected to the internet or the rest of the LAN
+
+## Use the most secure transport available
+
+Use the most secure and the latest available version of the transport. For more information on secure transport protocols available in Windows, see [Protocols in TLS/SSL (Schannel SSP)](/windows/win32/secauthn/protocols-in-tls-ssl--schannel-ssp-).
+
+## Use Secure Mode in kernel mode
+
+When you are performing kernel-mode debugging, you can run the debugger in *Secure Mode*. This helps to prevent the debugger from affecting the host computer, yet does not significantly decrease its freedom to debug the target computer. Secure Mode is recommended if you are going to allow remote clients to join your debugging session. For more information see, [Features of Secure Mode](features-of-secure-mode.md) and [Activating Secure Mode](activating-secure-mode.md).
+
+## Restrict the powers of the client in user mode
 
 In user mode, Secure Mode is not available. You can stop an intrusive client from issuing Microsoft MS-DOS commands and running external programs by issuing the [**.noshell (Prohibit Shell Commands)**](../debuggercmds/-noshell--prohibit-shell-commands-.md) command. However, there are many other ways for a client to interfere with your computer.
 
-Note that both Secure Mode and **.noshell** will prevent both the Debugging Client and the Debugging Server from taking certain actions. There is no way to place a restriction on the client but not on the server.
+Note that both Secure Mode and **.noshell** will prevent both the debugging client and the debugging server from taking certain actions. There is no way to place a restriction on the client but not on the server.
 
-### <span id="forgotten_process_servers"></span><span id="FORGOTTEN_PROCESS_SERVERS"></span>Forgotten Process Servers
+## Kill forgotten Process Servers
 
-When you start a process server on a remote machine, the process server runs silently.
+When you start a process server on a remote machine, the process server runs silently. If you perform remote debugging through this process server and then end the session, the process server continues to run. A forgotten process server is a potential target for an attack. You should always shut down an unneeded process server. Use Task Manager or the [Kill.exe tool](kill-tool.md) to terminate the process server.
 
-If you perform remote debugging through this process server and then end the session, the process server continues to run.
+## See also
 
-A forgotten process server is a potential target for an attack. You should always shut down an unneeded process server. Use the Kill.exe utility or Task Manager to terminate the process server.
+[Security During Kernel-Mode Debugging](security-during-kernel-mode-debugging.md)
 
- 
-
- 
+[Security During User-Mode Debugging](security-during-user-mode-debugging.md)

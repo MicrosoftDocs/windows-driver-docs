@@ -8,9 +8,6 @@ ms.date: 05/23/2017
 # Activating Secure Mode
 
 
-## <span id="ddk_activating_secure_mode_dbg"></span><span id="DDK_ACTIVATING_SECURE_MODE_DBG"></span>
-
-
 Secure Mode is only available for kernel-mode debugging. It must be activated before the debugging session has begun -- either on the debugger's command line, or when the debugger is completely dormant and is not yet being used as a server.
 
 To activate Secure Mode, use one of the following methods:

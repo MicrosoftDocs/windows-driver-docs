@@ -2,7 +2,7 @@
 title: ".endsrv (End Debugging Server)"
 description: "The .endsrv command causes the debugger to cancel an active debugging server."
 keywords: [".endsrv (End Debugging Server) Windows Debugging"]
-ms.date: 05/23/2017
+ms.date: 08/27/2024
 topic_type:
 - apiref
 ms.topic: reference
@@ -21,8 +21,7 @@ The **.endsrv** command causes the debugger to cancel an active debugging server
 .endsrv ServerID 
 ```
 
-## <span id="ddk_meta_end_debugging_server_dbg"></span><span id="DDK_META_END_DEBUGGING_SERVER_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______ServerID______"></span><span id="_______serverid______"></span><span id="_______SERVERID______"></span> *ServerID*   
 Specifies the ID of the debugging server.
@@ -31,17 +30,19 @@ Specifies the ID of the debugging server.
 
 You can use this command only when you are performing remote debugging through the debugger.
 
-|  Item  | Description          |
-|--------|----------------------|
-|Modes|User mode only|
-|Targets|Live, crash dump|
-|Platforms|All|
+|  Item    | Description          |
+|----------|----------------------|
+|Modes     | User mode only |
+|Targets   | Live, crash dump |
+|Platforms | All |
 
- 
 
 ## Additional Information
 
 For more information about remote debugging, see [Remote Debugging Through the Debugger](../debugger/remote-debugging-through-the-debugger.md).
+
+> [!IMPORTANT]
+> There are important security considerations when using remote debugging. For more information, including information on enabling secure mode, see [Security Considerations for Windows Debugging Tools](../debugger/security-considerations.md).
 
 ## Remarks
 
@@ -65,8 +66,8 @@ Server started with 'tcp:port=7'
 Then, you decide to use a password, as the following example shows.
 
 ```dbgcmd
-0:000> .server npipe:pipe=tiger,password=hardtoguess
-Server started with 'npipe:pipe=tiger,password=hardtoguess'
+0:000> .server npipe:pipe=tiger,password=Password
+Server started with 'npipe:pipe=tiger,password=Password'
 ```
 
 But the earlier servers are still running, so you should cancel them, as the following example shows.
@@ -95,10 +96,5 @@ Finally, to make sure that nothing attached to your computer while the earlier s
 HotMachine\HostUser, last active Mon Mar 04 16:05:21 2002
 ```
 
-**Caution**   Using a password with TCP, NPIPE, or COM protocol offers only a small amount of protection, because the password is not encrypted. When you use a password together with a SSL or SPIPE protocol, the password is encrypted. If you want to establish a secure remote session, you must use the SSL or SPIPE protocol.
-
- 
-
- 
-
-
+> [!IMPORTANT]
+> Using a password with TCP, NPIPE, or COM protocol offers only a small amount of protection, because the password is not encrypted. When you use a password together with a SSL or SPIPE protocol, the password is encrypted. If you want to establish a secure remote session, you must use the SSL or SPIPE protocol.

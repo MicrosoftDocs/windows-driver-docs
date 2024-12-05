@@ -20867,14 +20867,19 @@
             "redirect_document_id":  false
         },
         {
-          "source_path":  "windows-driver-docs-pr/debugger/setting-up-a-usb-2-0-debug-cable-connection.md",
-          "redirect_URL":  "/previous-versions/windows/hardware/debugger/setting-up-a-usb-2-0-debug-cable-connection",
-          "redirect_document_id":  false
+            "source_path":  "windows-driver-docs-pr/debugger/remote-debugging-on-workgroup-computers.md",
+            "redirect_URL":  "/previous-versions/windows/hardware/debugger/remote-debugging-on-workgroup-computers",
+            "redirect_document_id":  false
+        },  
+        {
+            "source_path":  "windows-driver-docs-pr/debugger/setting-up-a-usb-2-0-debug-cable-connection.md",
+            "redirect_URL":  "/previous-versions/windows/hardware/debugger/setting-up-a-usb-2-0-debug-cable-connection",
+            "redirect_document_id":  false
         },
         {
           "source_path":  "windows-driver-docs-pr/debugger/setting-up-a-1394-cable-connection.md",
           "redirect_URL":  "/previous-versions/windows/hardware/debugger/setting-up-a-1394-cable-connection",
-         "redirect_document_id":  false
+          "redirect_document_id":  false
         }
-  ]
+    ]
 }
