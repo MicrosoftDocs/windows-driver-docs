@@ -1,10 +1,10 @@
 ---
 title: USB Generic Parent Driver (Usbccgp.sys)
 description: This article describes an independent driver called the USB generic parent driver (Usbccgp.sys), provided by Microsoft for composite devices.
-ms.date: 12/08/2023
+ms.date: 12/04/2024
 ---
 
-# USB Generic Parent Driver (Usbccgp.sys)
+# USB generic parent driver (Usbccgp.sys)
 
 This article describes an independent driver called the USB generic parent driver (Usbccgp.sys), provided by Microsoft for composite devices.
 

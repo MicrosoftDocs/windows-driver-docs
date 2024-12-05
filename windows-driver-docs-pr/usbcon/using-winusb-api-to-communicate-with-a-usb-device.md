@@ -1,12 +1,12 @@
 ---
 title: Access a USB Device by Using WinUSB Functions
 description: This article includes a walkthrough of using WinUSB functions to communicate with a USB device that is using the Winusb.sys driver.
-ms.date: 01/17/2024
+ms.date: 12/04/2024
 ---
 
 # Access a USB device by using WinUSB functions
 
-This article includes a detailed walkthrough of how to use [WinUSB functions](/windows/win32/api/winusb/) to communicate with a USB device that is using Winusb.sys as its function driver.
+This article contains a detailed walkthrough of how to use [WinUSB functions](/windows/win32/api/winusb/) to communicate with a USB device that is using Winusb.sys as its function driver.
 
 ## Summary
 
@@ -31,7 +31,7 @@ For more information about the template, see Write a Windows desktop app based o
 The following items apply to this walkthrough:
 
 - This information applies to Windows 8.1, Windows 8, Windows 7, Windows Server 2008, Windows Vista versions of Windows.
-- You have installed Winusb.sys as the device's function driver. For more information about this process, see [WinUSB (Winusb.sys) Installation](winusb-installation.md).
+- Winusb.sys is installed as the device's function driver. For more information about this process, see [WinUSB (Winusb.sys) Installation](winusb-installation.md).
 - The examples in this article are based on the [OSR USB FX2 Learning Kit device](https://www.osronline.com/). You can use these examples to extend the procedures to other USB devices.
 
 ## Step 1: Create a skeleton app based on the WinUSB template
@@ -60,7 +60,7 @@ The following list shows the WinUSB functions that you can call to get USB-speci
 
 - Endpoints
 
-  Call **[WinUsb_QueryPipe](/windows/win32/api/winusb/nf-winusb-winusb_querypipe)** to obtain information about each endpoint on each interface. **WinUsb_QueryPipe** populates the caller-allocated **[WINUSB_PIPE_INFORMATION](/windows/win32/api/winusbio/ns-winusbio-winusb_pipe_information)** structure with information about the specified endpoint's pipe. The endpoints' pipes are identified by a zero-based index, and must be less than the value in the *bNumEndpoints* member of the interface descriptor that is retrieved in the previous call to **[WinUsb_QueryInterfaceSettings](/windows/win32/api/winusb/nf-winusb-winusb_queryinterfacesettings). The OSR Fx2 device has one interface that has three endpoints. For this device, the function's *AlternateInterfaceNumber* parameter is set to 0, and the value of the *PipeIndex* parameter varies from 0 to 2.
+  Call **[WinUsb_QueryPipe](/windows/win32/api/winusb/nf-winusb-winusb_querypipe)** to obtain information about each endpoint on each interface. **WinUsb_QueryPipe** populates the caller-allocated **[WINUSB_PIPE_INFORMATION](/windows/win32/api/winusbio/ns-winusbio-winusb_pipe_information)** structure with information about the specified endpoint's pipe. A zero-based index identifies the endpoints' pipes, and must be less than the value in the *bNumEndpoints* member of the interface descriptor that is retrieved in the previous call to **[WinUsb_QueryInterfaceSettings](/windows/win32/api/winusb/nf-winusb-winusb_queryinterfacesettings). The OSR Fx2 device has one interface that has three endpoints. For this device, the function's *AlternateInterfaceNumber* parameter is set to 0, and the value of the *PipeIndex* parameter varies from 0 to 2.
 
   To determine the pipe type, examine the **[WINUSB_PIPE_INFORMATION](/windows/win32/api/winusbio/ns-winusbio-winusb_pipe_information)** structure's *PipeInfo* member. This member is set to one of the **[USBD_PIPE_TYPE](/windows-hardware/drivers/ddi/usb/ne-usb-_usbd_pipe_type)** enumeration values: UsbdPipeTypeControl, UsbdPipeTypeIsochronous, UsbdPipeTypeBulk, or UsbdPipeTypeInterrupt. The OSR USB FX2 device supports an interrupt pipe, a bulk-in pipe, and a bulk-out pipe, so **PipeInfo** is set to either UsbdPipeTypeInterrupt or UsbdPipeTypeBulk. The UsbdPipeTypeBulk value identifies bulk pipes, but doesn't provide the pipe's direction. The direction information is encoded in the high bit of the pipe address, which is stored in the **WINUSB_PIPE_INFORMATION** structure's *PipeId* member. The simplest way to determine the direction of the pipe is to pass the **PipeId** value to one of the following macros from Usb100.h:
 
@@ -69,7 +69,7 @@ The following list shows the WinUSB functions that you can call to get USB-speci
 
   The application uses the **PipeId** value to identify which pipe to use for data transfer in calls to WinUSB functions, such as **[WinUsb_ReadPipe](/windows/win32/api/winusb/nf-winusb-winusb_readpipe) (described in the "Issue I/O Requests" section of this topic)**, so the example stores all three **PipeId** values for later use.
 
-The following example code gets the speed of the device that is specified by the WinUSB interface handle.
+The following example code gets the speed of the device specified by the WinUSB interface handle.
 
 ``` cpp
 BOOL GetUSBDeviceSpeed(WINUSB_INTERFACE_HANDLE hDeviceHandle, UCHAR* pDeviceSpeed)
@@ -113,7 +113,7 @@ done:
 }
 ```
 
-The following example code queries the various descriptors for the USB device that is specified by the WinUSB interface handle. The example function retrieves the types of supported endpoints and their pipe identifiers. The example stores all three PipeId values for later use.
+The following example code queries the various descriptors for the USB device specified by the WinUSB interface handle. The example function retrieves the types of supported endpoints and their pipe identifiers. The example stores all three PipeId values for later use.
 
 ``` cpp
 struct PIPE_ID
@@ -203,8 +203,8 @@ The application could provide a set of eight check box controls to specify which
 
 1. Allocate a 1-byte data buffer and load the data into the buffer that specifies the elements that should be lit by setting the appropriate bits.
 1. Construct a setup packet in a caller-allocated **[WINUSB_SETUP_PACKET](/windows/win32/api/winusb/ns-winusb-winusb_setup_packet)** structure. Initialize the members to represent the request type and data as follows:
-   - The *RequestType* member specifies request direction. It's set to 0, which indicates host-to-device data transfer. For device-to-host transfers, set RequestType to 1.
-   - The *Request* member is set to the vendor-defined code for this request, 0xD8. It's defined for convenience as SET_BARGRAPH_DISPLAY.
+   - The *RequestType* member specifies request direction. *RequestType* is set to 0, indicating host-to-device data transfer. For device-to-host transfers, set RequestType to 1.
+   - The *Request* member is set to the vendor-defined code for this request, 0xD8. *Request* is defined as SET_BARGRAPH_DISPLAY for convenience.
    - The *Length* member is set to the size of the data buffer.
    - The *Index* and *Value* members aren't required for this request, so they're set to zero.
 
@@ -257,7 +257,7 @@ done:
 
 ## Step 4: Issue I/O requests
 
-Next, send data to the device's bulk-in and bulk-out endpoints that can be used for read and write requests, respectively. On the OSR USB FX2 device, these two endpoints are configured for loopback, so the device moves data from the bulk-in endpoint to the bulk-out endpoint. It doesn't change the value of the data or add any new data. For loopback configuration, a read request reads the data that was sent by the most recent write request. WinUSB provides the following functions for sending write and read requests:
+Next, send data to the device's bulk-in and bulk-out endpoints that can be used for read and write requests, respectively. On the OSR USB FX2 device, these two endpoints are configured for loopback, so the device moves data from the bulk-in endpoint to the bulk-out endpoint. It doesn't change the value of the data or add any new data. For loopback configuration, a read request reads the data sent by the most recent write request. WinUSB provides the following functions for sending write and read requests:
 
 - **[WinUsb_WritePipe](/windows/win32/api/winusb/nf-winusb-winusb_writepipe)**
 - **[WinUsb_ReadPipe](/windows/win32/api/winusb/nf-winusb-winusb_readpipe)**
@@ -336,7 +336,7 @@ done:
 
 ## Step 5: Release the device handles
 
-After you've completed all the required calls to the device, release the file handle and the WinUSB interface handle for the device by calling the following functions:
+After completing all the required calls to the device, release the file handle and the WinUSB interface handle for the device by calling the following functions:
 
 - **CloseHandle** to release the handle that was created by **CreateFile**, as described in the step 1.
 - **[WinUsb_Free](/windows/win32/api/winusb/nf-winusb-winusb_free)** to release the WinUSB interface handle for the device, which is returned by **[WinUsb_Initialize](/windows/win32/api/winusb/nf-winusb-winusb_initialize).

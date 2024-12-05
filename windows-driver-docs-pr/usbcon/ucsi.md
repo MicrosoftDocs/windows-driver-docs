@@ -1,12 +1,12 @@
 ---
 title: USB-C Connector System Software Interface (UCSI) Driver
-description: Microsoft provides a USB Type-C Connector System Software Interface (UCSI) Specification-compliant driver.
-ms.date: 01/17/2024
+description: Microsoft provides a USB Type-C Connector System Software Interface (UCSI) specification-compliant driver for an Advanced Configuration and Power Interface (ACPI) transport.
+ms.date: 12/04/2024
 ---
 
 # USB Type-C&reg; connector system software interface (UCSI) driver
 
-Microsoft provides a USB Type-C&reg; connector system software interface (UCSI) specification-compliant driver for ACPI transport. If your design includes an embedded controller with ACPI transport, implement UCSI in your system's BIOS/EC and load the in-box UCSI driver (UcmUcsiCx.sys and UcmUcsiAcpiClient.sys).
+Microsoft provides a USB Type-C&reg; Connector System Software Interface (UCSI) specification-compliant driver for an Advanced Configuration and Power Interface (ACPI) transport. If your design includes an embedded controller with ACPI transport, implement UCSI in your system's BIOS/EC and load the in-box UCSI driver (UcmUcsiCx.sys and UcmUcsiAcpiClient.sys).
 
 If your UCSI-compliant hardware uses a transport other than ACPI, you need to [write a UCSI client driver](write-a-ucsi-driver.md).
 
@@ -16,7 +16,7 @@ Here's an example of a system with an embedded controller.
 
 :::image type="content" source="images/ucsiarch.png" alt-text="Diagram of USB Type-C software components.":::
 
-In the preceding example, USB role switching is handled in the firmware of the system and USB Role Switch driver stack isn't loaded. In another system, the driver stack may not get loaded because dual role isn't supported.
+In the preceding example, USB role switching is handled in the firmware of the system and USB Role Switch driver stack isn't loaded. In another system, the driver stack might not get loaded because dual role isn't supported.
 
 In the preceding image,
 
@@ -69,7 +69,7 @@ Return value:
 
 | Element | Object type | Description |
 |--|--|--|
-| UsePpmReportedUcsiVersion | Integer (32-bit) | 0x00000000 (Default): If the `VERSION` structure, as defined in *UCSI specification Table 3-1 Data Structures*, has the value 2.0 or greater, UCSI OPM still follows UCSI specification 1.2. Otherwise, UCSI OPM follows the UCSI specification as per the value in the `VERSION` structure. |
+| UsePpmReportedUcsiVersion | Integer (32-bit) | 0x00000000 (Default): If the `VERSION` structure as defined in *UCSI specification Table 3-1 Data Structures* has the value 2.0 or greater, UCSI OPM still follows UCSI specification 1.2. Otherwise, UCSI OPM follows the UCSI specification as per the value in the `VERSION` structure. |
 
 > [!NOTE]
 >  For UCM-UCSI ACPI devices, this is a new function in an existing _DSM method. Other functions of this _DSM method should have been implemented per the [Intel BIOS implementation of UCSI](https://www.intel.com/content/www/us/en/products/docs/io/universal-serial-bus/bios-implementation-of-ucsi.html) document. Function 0, which returns a bitmask of all the supported functions, should be updated accordingly, as well.
@@ -85,7 +85,7 @@ The examples given in this section describe interaction between the USB Type-C h
     1. The UCSI driver sends a ​ GET_CONNECTOR_STATUS request.
     1. The firmware responds that its Connect Status = 1​ and Connector Partner Type = DFP. ​
 1. The drivers in the USB function stack respond to the enumeration.
-1. The USB connector manager class extension recognizes that the USB function stack has loaded and hence the system is in the wrong state. It tells the UCSI driver to send Set USB Operation Role and Set Power Direction Role requests to the firmware.
+1. The USB connector manager class extension recognizes that the USB function stack is loaded, so the system is in the wrong state. It tells the UCSI driver to send **Set USB Operation Role** and **Set Power Direction Role** requests to the firmware.
 1. USB Type-C hardware/firmware initiates the role-swap operation with the DFP​.
 
 ### Detecting a charger mismatch error​ condition
@@ -124,14 +124,14 @@ Here are the common commands:
 | UCSI command | UcsiControl.exe command |
 |--|--|
 | PPM Reset | **UcsiControl.exe Send 0 1** |
-| Connector Reset | Soft reset: **UcsiControl.exe Send 0 10003** <br/><br/> Hard reset: **UcsiControl.exe Send 0 810003** |
-| Set Notification Enable | All notifications: **UcsiControl.exe Send 0 ffff0005** <br/><br/> Only command completion: **UcsiControl.exe Send 0 00010005** <br/><br/> No notification: **UcsiControl.exe Send 0 00000005** |
+| Connector Reset | Soft reset: **UcsiControl.exe Send 0 10003** <br><br> Hard reset: **UcsiControl.exe Send 0 810003** |
+| Set Notification Enable | All notifications: **UcsiControl.exe Send 0 ffff0005** <br><br> Only command completion: **UcsiControl.exe Send 0 00010005** <br><br> No notification: **UcsiControl.exe Send 0 00000005** |
 | Get Capability | **UcsiControl.exe Send 0 6** |
 | Get Connector Capability | **UcsiControl.exe Send 0 10007** |
-| Set UOM | DFP: **UcsiControl.exe Send 0 810008** <br/><br/> UFP: **UcsiControl.exe Send 0 1010008** <br/><br/> DRP: **UcsiControl.exe Send 0 2010008** |
-| Set UOR | DFP: **UcsiControl.exe Send 0 810009** <br/><br/> UFP: **UcsiControl.exe Send 0 1010009** <br/><br/> Accept: **UcsiControl.exe Send 0 2010009** |
-| Set PDR | Provider: **UcsiControl.exe Send 0 81000B** <br/><br/> Consumer: **UcsiControl.exe Send 0 101000B** <br/><br/> Accept: **UcsiControl.exe Send 0 201000B** |
-| Get PDOs | Local Source: **UcsiControl.exe Send 7 00010010** <br/><br/> Local Sink: **UcsiControl.exe Send 3 00010010** <br/><br/> Remote Source: **UcsiControl.exe Send 7 00810010** <br/><br/> Remote Sink: **UcsiControl.exe Send 3 00810010** |
+| Set UOM | DFP: **UcsiControl.exe Send 0 810008** <br><br> UFP: **UcsiControl.exe Send 0 1010008** <br><br> DRP: **UcsiControl.exe Send 0 2010008** |
+| Set UOR | DFP: **UcsiControl.exe Send 0 810009** <br><br> UFP: **UcsiControl.exe Send 0 1010009** <br><br> Accept: **UcsiControl.exe Send 0 2010009** |
+| Set PDR | Provider: **UcsiControl.exe Send 0 81000B** <br><br> Consumer: **UcsiControl.exe Send 0 101000B** <br><br> Accept: **UcsiControl.exe Send 0 201000B** |
+| Get PDOs | Local Source: **UcsiControl.exe Send 7 00010010** <br><br> Local Sink: **UcsiControl.exe Send 3 00010010** <br><br> Remote Source: **UcsiControl.exe Send 7 00810010** <br><br> Remote Sink: **UcsiControl.exe Send 3 00810010** |
 | Get Connector Status | **UcsiControl.exe Send 0 010012** |
 | Get Error Status | **UcsiControl.exe Send 0 13** |
 
