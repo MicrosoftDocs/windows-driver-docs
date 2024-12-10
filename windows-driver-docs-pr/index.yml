@@ -22,7 +22,7 @@ highlightedContent:
      itemType: overview
      url: ./install/overview-of-device-and-driver-installation.md
    - title: Driver security checklist
-     itemtype: how-to-guide
+     itemType: how-to-guide
      url: /driversecurity/driver-security-checklist
    - title: Join the Insider Program
      itemType: overview
