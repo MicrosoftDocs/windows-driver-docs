@@ -147,6 +147,18 @@ Privileges are different from access rights because they apply to system-related
 
 The access token for each process contains a list of the privileges granted to the process. Privileges must be specifically enabled before use. For more information on privileges, see [Privileges](../kernel/privileges.md) in the kernel driver documentation.
 
+## Security related debugger commands
+
+The !acl extension formats and displays the contents of an access control list (ACL). For more information, see [Determining the ACL of an Object](../debugger/determining-the-acl-of-an-object.md) and [**!acl**](../debuggercmds/-acl.md).
+
+The !token extension displays a formatted view of a security token object. For more information, see [**!token**](../debuggercmds/-token.md).
+
+The !tokenfields extension displays the names and offsets of the fields within the access token object (the TOKEN structure). For more information, see [**!tokenfields**](../debuggercmds/-tokenfields.md).
+
+The !sid extension displays the security identifier (SID) at the specified address. For more information, see [**!sid**](../debuggercmds/-sid.md).
+
+The !sd extension displays the security descriptor at the specified address. For more information, see [**!sd**](../debuggercmds/-sd.md).
+
 ## Windows security model scenario: Creating a file
 
 The system uses the security constructs described in the Windows security model whenever a process creates a handle to a file or object.

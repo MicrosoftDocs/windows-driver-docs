@@ -1,18 +1,17 @@
 ---
-title: Driver Security Guidance
+title: Driver security guidance
 description: This section contains information on enhancing driver security.
 ms.assetid: 50D09948-8CE2-446F-A208-35F7B3795A6B
-ms.date: 05/26/2022
+ms.date: 12/09/2024
 ms.topic: article
 ---
 
-# Driver Security Guidance
+# Driver security guidance
 
 
 This section contains information on enhancing driver security.
 
-## <span id="in_this_section"></span>In this section
-
+## In this section
 
 <table>
 <colgroup>
@@ -43,6 +42,10 @@ This section contains information on enhancing driver security.
 <td align="left"><p>This topic describes how to implement Hypervisor-protected Code Integrity (HVCI) compatible code. </p></td>
 </tr>
 <tr class="even">
+<td align="left"><p><a href="binskim-check-binaries.md" data-raw-source="[Use BinSkim to check binaries](binskim-check-binaries.md)">Use BinSkim to check binaries</a></p></td>
+<td align="left"><p>This topic describes how to use BinSkim to examine binary files to identify coding and building practices that can potentially render the binary vulnerable.</p></td>
+</tr>
+<tr class="odd">
 <td align="left"><p><a href="driver-security-dev-best-practices.md" data-raw-source="[Development security practices for Windows driver developers](driver-security-dev-best-practices.md)">Development security practices for Windows driver developers</a></p></td>
 <td align="left"><p>This topic describes how to write secure code for Windows drivers to prevent abuse and tampering by malicious actors.</p></td>
 </tr>
@@ -50,9 +53,6 @@ This section contains information on enhancing driver security.
 </tbody>
 </table>
 
- 
----
- 
 
 
 
