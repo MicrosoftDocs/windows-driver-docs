@@ -23,7 +23,7 @@ highlightedContent:
      url: ./install/overview-of-device-and-driver-installation.md
    - title: Driver security checklist
      itemType: how-to-guide
-     url: /driversecurity/driver-security-checklist
+     url: ./driversecurity/driver-security-checklist.md
    - title: Join the Insider Program
      itemType: overview
      url: /windows-insider
