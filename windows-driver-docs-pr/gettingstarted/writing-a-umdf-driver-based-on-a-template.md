@@ -1,16 +1,25 @@
 ---
 title: Write a UMDF 2 Based on a Template
 description: How to write a Universal Windows driver using User-Mode Driver Framework (UMDF) 2. You'll start with a Microsoft Visual Studio template.
-ms.date: 06/28/2024
+ms.date: 12/09/2024
 ---
 
-# Write a Universal Windows driver (UMDF 2) based on a template
+# Tutorial: Write a Universal Windows driver (UMDF 2) based on a template
 
 This topic describes how to write a [Universal Windows driver](/windows-hardware/drivers) using User-Mode Driver Framework (UMDF) 2. You'll start with a Microsoft Visual Studio template and then deploy and install your driver on a separate computer.
 
-To get started, be sure you have the most recent version of Microsoft Visual Studio and the Windows Driver Kit (WDK). For download links, see [Download the Windows Driver Kit (WDK)](../download-the-wdk.md).
+## Prerequisites
 
-[Debugging Tools for Windows](../debugger/index.md) is included when you install the WDK.
+- Follow the steps to install [Windows Driver Kit (WDK)](../download-the-wdk.md). [Debugging Tools for Windows](../debugger/index.md) is included when you install the WDK.
+- Install [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/). When you install Visual Studio 2022, select the **Desktop development with C++** workload, then under **Individual Components** add:
+
+    - MSVC v143 - VS 2022 C++ ARM64/ARM64EC Spectre-mitigated libs (Latest)
+    - MSVC v143 - VS 2022 C++ x64/x86 Spectre-mitigated libs (Latest)
+    - C++ ATL for latest v143 build tools with Spectre Mitigations (ARM64/ARM64EC)
+    - C++ ATL for latest v143 build tools with Spectre Mitigations (x86 & x64)
+    - C++ MFC for latest v143 build tools with Spectre Mitigations (ARM64/ARM64EC)
+    - C++ MFC for latest v143 build tools with Spectre Mitigations (x86 & x64)
+    - Windows Driver Kit
 
 ## Create and build a driver
 

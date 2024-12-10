@@ -1,25 +1,14 @@
-- name: "Windows Portable Devices"
+- name: "Windows Portable Devices Documentation"
   href: index.md
 - name: "What's New in WPD"
   href: what-s-new-in-wpd.md
+- name: "WPD Drivers overview"
+  href: wpd-drivers-overview.md
 - name: "WPD Design Guide"
-# Auto-expanded node
   items: 
-  - name: "WPD Design Guide"
-    href: wpd-design-guide.md
-  - name: "WPD Drivers"
-# Auto-expanded node
-    items: 
-    - name: "WPD Drivers"
-      href: wpd-drivers.md
-    - name: "Requirements"
+    - name: "Requirements to create a WPD Driver"
       href: requirements.md
-  - name: "WPD Drivers Overview"
-# Auto-expanded node
-    items: 
-    - name: "WPD Drivers Overview"
-      href: wpd-drivers-overview.md
-    - name: "Supported Scenarios"
+    - name: "Supported scenarios"
       href: supported-scenarios.md
     - name: "WPD and Earlier Technologies"
       href: wpd-and-earlier-technologies.md
@@ -240,15 +229,16 @@
         href: the-wpdmultitransportdriver-installation.md
       - name: "MultiTransport Device Support"
         href: the-wpdmultitransportdriver-sample-device-arrival.md
+    - name: "The WpdWudfSampleDriver Sample"     
+  # Auto-expanded node
+        items:
+        - name: "The WpdWudfSampleDriver Sample"
+          href: the-wpdwudfsampledriver-sample.md
+        - name: "Installing the WpdWudfSampleDriver Sample"
+          href: the-wpdwudfsampledriver-installation.md
   - name: "Advanced Tasks"
 # Auto-expanded node
     items: 
-    - name: "Advanced Tasks"
-      href: advanced-tasks.md
-    - name: "The WpdWudfSampleDriver Sample"
-      href: the-wpdwudfsampledriver-sample.md
-    - name: "Installing the WpdWudfSampleDriver Sample"
-      href: the-wpdwudfsampledriver-installation.md
     - name: "Supporting Plug and Play (PnP) and Power Management"
       href: supporting-plug-and-play--pnp-.md
     - name: "Supporting Rendering Profiles"

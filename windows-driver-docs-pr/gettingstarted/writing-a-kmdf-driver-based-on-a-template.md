@@ -3,16 +3,25 @@ title: Write a Universal Windows Driver (KMDF) Based on a Template
 description: This topic describes how to write a Universal Windows driver using Kernel-Mode Driver Framework (KMDF). You'll start with a Microsoft Visual Studio template and then deploy and install your driver on a separate computer.
 keywords:
 - Write a KMDF driver
-ms.date: 10/24/2022
+ms.date: 12/09/2024
 ---
 
-# Write a Universal Windows driver (KMDF) based on a template
+# Tutorial: Write a Universal Windows driver (KMDF) based on a template
 
 This topic describes how to write a [Universal Windows driver](/windows-hardware/drivers) using Kernel-Mode Driver Framework (KMDF). You'll start with a Microsoft Visual Studio template and then deploy and install your driver on a separate computer.
 
-Before you proceed, you'll need to follow the installation steps listed in [Download the Windows Driver Kit (WDK)](../download-the-wdk.md).
+## Prerequisites
 
-[Debugging Tools for Windows](../debugger/index.md) is included when you install the WDK.
+- Follow the steps to install [Windows Driver Kit (WDK)](../download-the-wdk.md). [Debugging Tools for Windows](../debugger/index.md) is included when you install the WDK.
+- Install [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/). When you install Visual Studio 2022, select the **Desktop development with C++** workload, then under **Individual Components** add:
+
+    - MSVC v143 - VS 2022 C++ ARM64/ARM64EC Spectre-mitigated libs (Latest)
+    - MSVC v143 - VS 2022 C++ x64/x86 Spectre-mitigated libs (Latest)
+    - C++ ATL for latest v143 build tools with Spectre Mitigations (ARM64/ARM64EC)
+    - C++ ATL for latest v143 build tools with Spectre Mitigations (x86 & x64)
+    - C++ MFC for latest v143 build tools with Spectre Mitigations (ARM64/ARM64EC)
+    - C++ MFC for latest v143 build tools with Spectre Mitigations (x86 & x64)
+    - Windows Driver Kit
 
 ## Create and build a driver
 
