@@ -10,5 +10,7 @@
     href: windows-security-model.md
   - name: "Implement HVCI compatible code"
     href: implement-hvci-compatible-code.md
+  - name: "Use BinSkim to check binaries"
+    href: binskim-check-binaries.md
   - name: "Development security practices for Windows driver developers"
     href: driver-security-dev-best-practices.md
