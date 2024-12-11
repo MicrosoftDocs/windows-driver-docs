@@ -34,8 +34,6 @@
       href: requirements-for-objects.md
 - name: "WPD Programming Guide"
   items: 
-  - name: "WPD Programming Guide"
-    href: wpd-programming-guide.md
   - name: "WPD Driver Development Tools"
     items: 
     - name: "WPD Driver Development Tools"
