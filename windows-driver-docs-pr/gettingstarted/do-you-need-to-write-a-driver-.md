@@ -2,6 +2,7 @@
 title: Built-in Drivers for Windows Devices
 description: Microsoft Windows contains built-in drivers for many device types. If there is a built-in driver for your device type, you won't need to write your own driver. Your device can use the built-in driver.
 ms.date: 12/09/2024
+ai-usage: ai-assisted
 ---
 
 # Built-in Drivers for Windows Devices
