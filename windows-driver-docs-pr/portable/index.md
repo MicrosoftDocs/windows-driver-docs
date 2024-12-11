@@ -8,7 +8,7 @@ ai-usage: ai-assisted
 
 # Windows Portable Devices (WPD) Documentation
 
-Welcome to the Windows Portable Devices (WPD) Driver documentation. Windows Portable Devices (WPD) is a Microsoft framework that enables communication between Windows and portable devices, such as smartphones, cameras, and media players. 
+Welcome to the Windows Portable Devices (WPD) Driver documentation. WPD is a Microsoft framework that enables communication between Windows and portable devices, such as smartphones, cameras, and media players. 
 
 This documentation provides essential resources and guidelines for developers and hardware manufacturers to create and implement drivers that facilitate seamless interaction with these devices.
 

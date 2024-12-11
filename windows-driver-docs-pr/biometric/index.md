@@ -2,13 +2,13 @@
 title: Biometric Devices Design Guide
 description: This is the landing page for the Biometric Devices Design Guide documentation.
 ms.assetid: 78270890-4ea2-403e-bbd7-84a22581bbb7
-ms.date: 09/30/2024
+ms.date: 12/11/2024
 ms.topic: article
 ---
 
 # Biometric Devices Design Guide Documentation
 
-Welcome to the Biometric Devices Design Guide documentation! This documentation describes how to write user-mode drivers that work with the Windows Biometric Driver Interface (WBDI). WBDI is the driver interface of the Windows Biometric Framework (WBF). 
+Welcome to the Biometric Devices Design Guide documentation. This documentation describes how to write user-mode drivers that work with the Windows Biometric Driver Interface (WBDI). WBDI is the driver interface of the Windows Biometric Framework (WBF). 
 
 The WBDI provides essential resources and guidelines for developers and hardware manufacturers to create and implement drivers that facilitate seamless interaction with biometric devices, such as fingerprint readers, iris scanners, and facial recognition systems.
 
