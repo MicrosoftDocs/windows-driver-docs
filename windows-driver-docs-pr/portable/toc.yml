@@ -220,22 +220,22 @@
           href: the-wpdservicesampledriver-supporting-base-driver-commands.md
       - name: "Scoping Service Events"
         href: the-wpdservicesampledriver-scoping-service-events.md
-    - name: "The WpdMultiTransportDriver Sample"
-# Auto-expanded node
-      items: 
       - name: "The WpdMultiTransportDriver Sample"
-        href: the-wpdmultitransportdriver-sample.md
-      - name: "Installing the WpdMultiTransportDriver Sample"
-        href: the-wpdmultitransportdriver-installation.md
-      - name: "MultiTransport Device Support"
-        href: the-wpdmultitransportdriver-sample-device-arrival.md
-    - name: "The WpdWudfSampleDriver Sample"     
+# Auto-expanded node
+       items: 
+        - name: "The WpdMultiTransportDriver Sample"
+         href: the-wpdmultitransportdriver-sample.md
+        - name: "Installing the WpdMultiTransportDriver Sample"
+          href: the-wpdmultitransportdriver-installation.md
+        - name: "MultiTransport Device Support"
+          href: the-wpdmultitransportdriver-sample-device-arrival.md
+      - name: "The WpdWudfSampleDriver Sample"     
   # Auto-expanded node
         items:
         - name: "The WpdWudfSampleDriver Sample"
-          href: the-wpdwudfsampledriver-sample.md
+         href: the-wpdwudfsampledriver-sample.md
         - name: "Installing the WpdWudfSampleDriver Sample"
-          href: the-wpdwudfsampledriver-installation.md
+         href: the-wpdwudfsampledriver-installation.md
   - name: "Advanced Tasks"
 # Auto-expanded node
     items: 

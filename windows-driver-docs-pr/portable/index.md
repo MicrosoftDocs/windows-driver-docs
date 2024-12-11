@@ -12,8 +12,19 @@ Welcome to the Windows Portable Devices (WPD) Driver documentation. Windows Port
 
 This documentation provides essential resources and guidelines for developers and hardware manufacturers to create and implement drivers that facilitate seamless interaction with these devices.
 
-## In This Section
+## Get Started
 
-- [WPD Design Guide](wpd-design-guide.md)
-- [WPD Programming Guide](wpd-programming-guide.md)
-- [WPD Reference](/previous-versions/windows/hardware/drivers/ff597901(v=vs.85))
+To get started with WPD, you can see the following topics: 
+
+- WPD overview
+
+    - [Introduction to WPD Drivers](wpd-drivers-overview.md)
+    - [Device Installation](device-installation.md)
+    - [Architecture overview](architecture-overview.md)
+    - [Requirements to create a WPD driver](requirements.md)
+
+    
+- WPD programming guide
+
+    - [WPD driver development tools](familiarizing-yourself-with-the-sample-driver.md)
+    - [WPD driver samples](the-wpd-driver-samples.md)

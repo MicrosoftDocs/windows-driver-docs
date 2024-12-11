@@ -1,10 +1,10 @@
 ---
-description: WPD Drivers Overview
-title: WPD Drivers Overview
+description: Introduction to Windows Portable Devices (WPD) Drivers 
+title: Introduction to WPD Drivers 
 ms.date: 12/09/2024
 ---
 
-# Windows Portable Devices (WPD) Drivers Overview
+# Introduction to Windows Portable Devices (WPD) Drivers 
 
 Microsoft Windows Portable Devices (WPD) enable computers to communicate with attached media and storage devices. This system supersedes both Windows Media Device Manager (WMDM) and Windows Image Acquisition (WIA) by providing a flexible, robust way for a computer to communicate with music players, storage devices, mobile phones, and many other types of connected devices.
 
