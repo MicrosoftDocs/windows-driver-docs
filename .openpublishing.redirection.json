@@ -19872,6 +19872,16 @@
           "redirect_document_id":  false
         },
         {
+          "source_path":  "windows-driver-docs-pr/gettingstarted/writing-your-first-driver",
+          "redirect_URL":  "/windows-hardware/drivers/gettingstarted/writing-a-very-small-kmdf--driver",
+          "redirect_document_id":  false
+        },
+        {
+          "source_path":  "windows-driver-docs-pr/gettingstarted/concepts-and-knowledge-for-all-driver-developers",
+          "redirect_URL":  "/windows-hardware/drivers/gettingstarted/",
+          "redirect_document_id":  false
+        },
+        {
             "source_path":  "windows-driver-docs-pr/debugger/-ustr.md",
             "redirect_URL":  "/windows-hardware/drivers/debuggercmds/-ustr",
             "redirect_document_id":  false

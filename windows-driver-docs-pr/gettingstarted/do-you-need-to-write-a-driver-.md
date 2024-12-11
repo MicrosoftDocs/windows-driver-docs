@@ -32,7 +32,7 @@ Currently, Microsoft provides built-in drivers for the following other types of 
 | Imaging: Web Services for Devices (WSD) scan class driver              | WSDScan.sys|  Microsoft provides support for web services scanners (that is, scanners that are meant to be used over the web) by means of the WSD scan driver (wsdscan.sys). However, a web services scanner device that supports WSD Distributed Scan Management must implement two web services protocols. For more information, see [WIA with Web Services for Devices](../image/wia-with-web-services-for-devices.md).|
 | Storage: SATA AHCI controller      | storahci.sys    | This driver supports Serial ATA (SATA) Advanced Host Controller Interface (AHCI) devices, enabling communication between the operating system and storage devices like hard drives and solid-state drives. |
 | Sensors: Sensor HID class driver | SensorsHIDClassDriver.dll | Microsoft provides support for motion, activity and other types of sensors by means of a HID class driver. |
-| Touch: Windows pointer device driver    | Microsoft provides support for pen and touch devices by means of an HID class driver.   |
+| Touch: Windows pointer device driver |   | Microsoft provides support for pen and touch devices by means of an HID class driver.  |
 | Windows Portable Devices| WinUsb.sys | Microsoft provides support for portable devices that require connectivity with Windows, such as music players, digital cameras, cellular phones, and health-monitoring devices.|
 
 

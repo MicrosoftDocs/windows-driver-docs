@@ -29,6 +29,9 @@ This article describes how to write a small [Universal Windows driver](/windows-
 
     :::image type="content" source="images/vs2019-kmdf-template.png" alt-text="Screenshot of the Visual Studio new project dialog box with the kernel mode driver option selected.":::
 
+    > [!TIP]
+    > If you can't find driver project templates in Visual Studio, the WDK Visual Studio extension didn't install properly. To resolve this, launch **Visual Studio Installer**, select **Modify**, add **Windows Driver Kits** in the **Individual Component** tab, and select **Modify**.
+
 1. In the **Configure your new project** dialog box, enter "KmdfHelloWorld" in the **Project name** field.
 
     > [!NOTE]

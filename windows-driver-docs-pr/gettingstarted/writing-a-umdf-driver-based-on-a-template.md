@@ -32,6 +32,9 @@ This topic describes how to write a [Universal Windows driver](/windows-hardware
 
     :::image type="content" source="images/vs2019-umdf2-template.png" alt-text="Screen shot of the new project dialog box, showing user mode driver selected.":::
 
+    > [!TIP]
+    > If you can't find driver project templates in Visual Studio, the WDK Visual Studio extension didn't install properly. To resolve this, launch **Visual Studio Installer**, select **Modify**, add **Windows Driver Kits** in the **Individual Component** tab, and select **Modify**.
+
 1. In the **Configure your new project** dialog box, enter "UmdfDriver" in the **Project name** field.
 
      > [!NOTE]
@@ -67,7 +70,8 @@ This topic describes how to write a [Universal Windows driver](/windows-hardware
 
 Typically when you test and debug a driver, the debugger and driver run on separate computers. The computer that runs the debugger is called the *host computer*, and the computer that runs the driver is called the *target computer*. The target computer is also called the *test computer*.
 
-So far, you've used Visual Studio to build a driver on the host computer. Now you need to configure a target computer. Follow the instructions in [Provision a computer for driver deployment and testing (WDK 10)](provision-a-target-computer-wdk-8-1.md). Then you'll be ready to deploy, install, load, and debug your driver:
+> [!IMPORTANT]
+> So far, you've used Visual Studio to build a driver on the host computer. Now you need to configure a target computer. Follow the instructions in [Provision a computer for driver deployment and testing (WDK 10)](provision-a-target-computer-wdk-8-1.md). Then you'll be ready to deploy, install, load, and debug your driver.
 
 1. On the host computer, open your solution in Visual Studio. You can double-click the solution file, UmdfDriver.sln, in your UmdfDriver folder.
 2. In the **Solution Explorer** window, select and hold (or right-click) **UmdfDriver**, and choose **Properties**.
