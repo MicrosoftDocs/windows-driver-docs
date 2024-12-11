@@ -2,7 +2,7 @@
   href: index.md
 - name: "What's New in WPD"
   href: what-s-new-in-wpd.md
-- name: "WPD Drivers overview"
+- name: "Introduction to WPD Drivers"
   href: wpd-drivers-overview.md
 - name: "WPD Design Guide"
   items: 
@@ -33,12 +33,10 @@
     - name: "Requirements for Objects"
       href: requirements-for-objects.md
 - name: "WPD Programming Guide"
-# Auto-expanded node
   items: 
   - name: "WPD Programming Guide"
     href: wpd-programming-guide.md
   - name: "WPD Driver Development Tools"
-# Auto-expanded node
     items: 
     - name: "WPD Driver Development Tools"
       href: familiarizing-yourself-with-the-sample-driver.md
@@ -49,19 +47,16 @@
     - name: "Using the Network Monitor Tool"
       href: using-the-netmon-tool.md
   - name: "The WPD Driver Samples"
-# Auto-expanded node
     items: 
     - name: "The WPD Driver Samples"
       href: the-wpd-driver-samples.md
     - name: "The WpdHelloWorldDriver Sample"
-# Auto-expanded node
       items: 
       - name: "The WpdHelloWorldDriver Sample"
         href: the-sample-driver-architecture.md
       - name: "Installing the WpdHelloWorldDriver Sample"
         href: the-wpdhelloworlddriver-installation.md
       - name: "The Sample Driver Setup Information (.inf) File"
-# Auto-expanded node
         items: 
         - name: "The Sample Driver Setup Information (.inf) File"
           href: the-sample-driver-setup-information---inf--file.md
@@ -72,7 +67,6 @@
       - name: "The COM Component Files"
         href: the-com-component-files.md
       - name: "The Windows Driver Frameworks Files"
-# Auto-expanded node
         items: 
         - name: "The Windows Driver Frameworks Files"
           href: the-windows-driver-foundation-files.md
@@ -81,19 +75,16 @@
         - name: "Handling the Entry and Exit Points"
           href: handling-the-entry-and-exit-points.md
         - name: "Handling Device Control and File Creation"
-# Auto-expanded node
           items: 
           - name: "Handling Device Control and File Creation"
             href: handling-device-control-and-file-creation.md
           - name: "Handling Access Control"
             href: handling-access-control.md
       - name: "The Windows Portable Device Files"
-# Auto-expanded node
         items: 
         - name: "The Windows Portable Device Files"
           href: the-windows-portable-device-files.md
         - name: "The Base Driver"
-# Auto-expanded node
           items: 
           - name: "The Base Driver"
             href: the-base-driver.md
@@ -104,7 +95,6 @@
           - name: "Mapping Object Identifiers"
             href: mapping-object-identifiers.md
         - name: "Driver Capabilities"
-# Auto-expanded node
           items: 
           - name: "Driver Capabilities"
             href: driver-capabilities.md
@@ -127,7 +117,6 @@
         - name: "Object Enumeration"
           href: object-enumeration.md
         - name: "Property Support"
-# Auto-expanded node
           items: 
           - name: "Property Support"
             href: property-support.md
@@ -142,7 +131,6 @@
           - name: "Setting Property Values"
             href: setting-property-values.md
         - name: "Resources"
-# Auto-expanded node
           items: 
           - name: "Resources"
             href: resources.md
@@ -157,7 +145,6 @@
           - name: "Closing a Resource"
             href: closing-a-resource.md
     - name: "The WpdBasicHardwareDriver Sample"
-# Auto-expanded node
       items: 
       - name: "The WpdBasicHardwareDriver Sample"
         href: the-wpdbasichardwaredriver-sample.md
@@ -174,7 +161,6 @@
       - name: "Supporting I/O"
         href: the-wpdbasichardwaredriver-supporting-io.md
       - name: "Supporting the WPD Infrastructure"
-# Auto-expanded node
         items: 
         - name: "Supporting the WPD Infrastructure"
           href: the-wpdbasichardwaredriver-supporting-wpd-infrastructure.md
@@ -193,7 +179,6 @@
       - name: "Testing and Debugging the Sample Driver"
         href: the-wpdbasichardwaredriver-testing-and-debugging.md
     - name: "The WpdServiceSampleDriver Sample"
-# Auto-expanded node
       items: 
       - name: "The WpdServiceSampleDriver Sample"
         href: the-wpdservicesampledriver-sample.md
@@ -204,7 +189,6 @@
       - name: "Defining the Service Properties"
         href: the-wpdservicesampledriver-property-definitions.md
       - name: "Supporting the WPD Infrastructure"
-# Auto-expanded node
         items: 
         - name: "Supporting the WPD Infrastructure"
           href: the-wpdservicesampledriver-supporting-wpd-infrastructure.md
@@ -220,24 +204,21 @@
           href: the-wpdservicesampledriver-supporting-base-driver-commands.md
       - name: "Scoping Service Events"
         href: the-wpdservicesampledriver-scoping-service-events.md
-      - name: "The WpdMultiTransportDriver Sample"
-# Auto-expanded node
-       items: 
+    - name: "The WpdMultiTransportDriver Sample"
+      items: 
         - name: "The WpdMultiTransportDriver Sample"
          href: the-wpdmultitransportdriver-sample.md
         - name: "Installing the WpdMultiTransportDriver Sample"
           href: the-wpdmultitransportdriver-installation.md
         - name: "MultiTransport Device Support"
           href: the-wpdmultitransportdriver-sample-device-arrival.md
-      - name: "The WpdWudfSampleDriver Sample"     
-  # Auto-expanded node
-        items:
+    - name: "The WpdWudfSampleDriver Sample"     
+      items:
         - name: "The WpdWudfSampleDriver Sample"
-         href: the-wpdwudfsampledriver-sample.md
+          href: the-wpdwudfsampledriver-sample.md
         - name: "Installing the WpdWudfSampleDriver Sample"
-         href: the-wpdwudfsampledriver-installation.md
+          href: the-wpdwudfsampledriver-installation.md
   - name: "Advanced Tasks"
-# Auto-expanded node
     items: 
     - name: "Supporting Plug and Play (PnP) and Power Management"
       href: supporting-plug-and-play--pnp-.md
