@@ -40,7 +40,7 @@ The following system components are available for use with serial controller dev
 
 - Ports [device setup class](../install/overview-of-device-setup-classes.md)
 
-    The Ports class includes *serial ports* and *COM ports*. A serial port is a serial communication hardware interface on a 16550 UART or compatible device. An RS-232 port on a computer is typically a DB-9 or DB-25 connector that is electrically connected to the serial port on a UART. A COM port is a serial port that complies with additional Windows-specific requirements. For more information, see [Configuration of COM Ports](configuration-of-com-ports.md).
+    The Ports class includes *serial ports* and *COM ports*. A serial port is a serial communication hardware interface on a 16550 UART or compatible device. An RS-232 port on a computer is typically a DB-9 or DB-25 connector that is electrically connected to the serial port on a UART. A COM port is a serial port that complies with additional Windows-specific requirements. For more information, see [Configuration of COM Ports for driver developers](configuration-of-com-ports.md).
 
 - COM port [device interface class](../install/overview-of-device-interface-classes.md)
 

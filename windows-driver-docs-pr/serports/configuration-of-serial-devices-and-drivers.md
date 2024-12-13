@@ -13,7 +13,7 @@ ms.date: 04/20/2017
 
 This section includes the following topics about the configuration of serial devices and drivers that the Serial and Serenum drivers support:
 
-[Configuration of COM Ports](configuration-of-com-ports.md)
+[Configuration of COM Ports for driver developers](configuration-of-com-ports.md)
 
 [Configuration of Non-Plug and Play Serial Device Connected to an RS-232 Port](configuration-of-non-plug-and-play-serial-device-connected-to-an-rs-23.md)
 

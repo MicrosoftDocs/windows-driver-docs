@@ -2,7 +2,7 @@
 title: Keyboard Shortcuts
 description: Learn how to use keyboard shortcuts to switch between windows, select menu commands, use KD and CDB control keys, move the caret, select text, and delete text.
 keywords: ["control keys, WinDbg shortcut keys", "WinDbg, shortcut keys", "shortcut keys"]
-ms.date: 03/08/2023
+ms.date: 12/11/2024
 ---
 
 # Keyboard shortcuts

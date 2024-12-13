@@ -2,7 +2,7 @@
 title: Find a Memory Leak
 description: Provides information about how to find memory leak.
 keywords: ["memory leak", "memory leak, debugging"]
-ms.date: 12/21/2023
+ms.date: 12/06/2024
 ---
 
 # Find a memory leak

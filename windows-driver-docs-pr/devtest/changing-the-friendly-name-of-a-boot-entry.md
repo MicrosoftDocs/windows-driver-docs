@@ -7,7 +7,7 @@ keywords:
 - renaming boot entries WDK
 - Boot.ini files WDK , friendly names
 - boot options WDK , friendly names
-ms.date: 11/05/2024
+ms.date: 12/12/2024
 ---
 
 # Changing the Friendly Name of a Boot Entry

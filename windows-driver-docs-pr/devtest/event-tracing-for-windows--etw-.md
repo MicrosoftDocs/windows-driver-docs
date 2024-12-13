@@ -6,13 +6,13 @@ keywords:
 - ETW WDK
 - tracing WDK , ETW
 - software tracing WDK , ETW
-ms.date: 12/27/2023
+ms.date: 12/12/2024
 ---
 
 # Event Tracing for Windows (ETW)
 
 
-Event Tracing for Windows (ETW) provides a mechanism to trace and log events that are raised by user-mode applications and kernel-mode drivers. ETW is implemented in the Windows operating system and provides developers a fast, reliable, and versatile set of event tracing features.
+Event Tracing for Windows (ETW) provides a mechanism to trace and log events that are raised by user-mode applications and kernel-mode drivers. ETW is implemented in the Windows operating system and provides developers a versatile set of event tracing features.
 
 Topics in this section include:
 

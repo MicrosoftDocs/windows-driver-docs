@@ -2,12 +2,14 @@
 title: Analyze Crash Dump Files by Using WinDbg
 description: You can analyze crash dump files by using WinDbg and other Windows debuggers.
 keywords: dump file, crash dump file
-ms.date: 12/20/2023
+ms.date: 12/06/2024
 ---
 
 # Analyze crash dump files by using WinDbg
 
-You can analyze crash dump files by using WinDbg and other Windows debuggers.
+You can analyze crash dump files by using WinDbg and other Windows debuggers. 
+
+For information on installing WinDbg, see [Install WinDbg](index.md).
 
 > [!NOTE]
 > This content is for developers. If you're a Microsoft customer and your computer displays a blue screen error code, see [Troubleshoot blue screen errors](https://support.microsoft.com/help/14238/windows-10-troubleshoot-blue-screen-errors).

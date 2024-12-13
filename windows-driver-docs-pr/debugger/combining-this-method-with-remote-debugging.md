@@ -7,15 +7,15 @@ ms.date: 11/28/2017
 # Combining This Method with Remote Debugging
 
 
-## <span id="ddk_opening_a_crash_dump_dbg"></span><span id="DDK_OPENING_A_CRASH_DUMP_DBG"></span>
-
-
 It is sometimes useful to [control the user-mode debugger from the kernel debugger](controlling-the-user-mode-debugger-from-the-kernel-debugger.md) and use the user-mode debugger as a [debugging server](remote-debugging-through-the-debugger.md) at the same time.
+
+
+> [!IMPORTANT]
+> There are additional important security considerations when using remote debugging, for more information, including information on enabling secure mode, see [Security During Remote Debugging](security-during-remote-debugging.md) and [Security Considerations for Windows Debugging Tools](security-considerations.md).
 
 For example, this configuration is useful when your user-mode symbols are located on a symbol server. In the standard configuration for controlling the user-mode debugger from a kernel debugger, the interaction of the two debuggers can lead to tiny lapses in synchronization, and these lapses can prevent symbol server authentication. The more complex configuration described here can avoid this problem.
 
 **Note**   In describing this scenario, *target application* refers to the user-mode application that is being debugged, *target computer* refers to the computer that contains the target application and the CDB or NTSD process, and *host computer* refers to the computer that contains the kernel debugger.
-
  
 
 To use this technique, you must do the following:
@@ -77,7 +77,5 @@ The four modes and the methods of switching between them described in the topic 
 -   To switch from remote-controlled user-mode debugging to kernel-mode debugging, enter any command from the `Input>` prompt. If this prompt is not visible, switch to kernel-mode debugging, and then use the [**g (Go)**](../debuggercmds/g--go-.md) command at the `kd>` prompt.
 
 Internally, a user-mode debugger started with -ddefer gives first priority to input from the debugging client, and second priority to input from the kernel debugger. However, there can never be a conflict between simultaneous inputs, because when the kernel debugger has broken in to the target computer, the remote connection is unavailable.
-
- 
 
  

@@ -10,7 +10,7 @@ keywords:
 - software tracing WDK , formatting messages
 - tracing WDK , DTrace
 - trace message format files WDK
-ms.date: 11/11/2024
+ms.date: 12/12/2024
 ---
 
 # DTrace on Windows

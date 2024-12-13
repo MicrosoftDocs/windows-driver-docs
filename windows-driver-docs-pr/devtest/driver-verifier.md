@@ -8,7 +8,7 @@ keywords:
 - Driver Verifier WDK , about Driver Verifier
 - illegal function calls WDK Driver Verifier
 - stress testing WDK Driver Verifier
-ms.date: 12/28/2023
+ms.date: 12/06/2024
 ---
 
 # Driver Verifier

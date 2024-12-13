@@ -47,4 +47,4 @@ This section includes:
 - [BCD Boot Options Reference](./bcd-boot-options-reference.md)
 - [Using Boot Parameters](using-boot-parameters.md)
 - [BCD Boot Options Reference](bcd-boot-options-reference.md)
-- [Boot Options in Previous Versions of Windows](boot-options-in-previous-versions-of-windows.md)
+
