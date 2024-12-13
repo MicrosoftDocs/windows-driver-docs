@@ -1599,6 +1599,8 @@
     href: public-and-private-symbols.md
   - name: "Portable PDB Symbols"
     href: symbols-portable-pdb.md
+  - name: "Programming custom credential providers"
+    href: programming-custom-credential-providers.md
   - name: "Symbol Syntax and Symbol Matching"
 # Auto-expanded node
     items: 
