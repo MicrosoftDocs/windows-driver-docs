@@ -4,50 +4,44 @@
   href: roadmap-for-device-and-driver-installation--windows-vista-and-later-.md
 - name: "Overview"
   items:
-    - name: "Overview of Device and Driver Installation"
-      href: overview-of-device-and-driver-installation.md
-    - name: "How Windows Installs Devices"
-      items: 
-      - name: "Step 1: The New Device is Identified"
-        href: step-1--the-new-device-is-identified.md
-      - name: "Step 2: A Driver for the Device is Selected"
-        href: step-2--a-driver-for-the-device-is-selected.md
-      - name: "Step 3: The Driver for the Device is Installed"
-        href: step-3--the-driver-for-the-device-is-installed.md
-    - name: "Components"
-      items: 
-      - name: "Plug and Play Manager"
-        href: pnp-manager.md
-      - name: "Driver Store"
-        href: driver-store.md
-    - name: "Device Installation Types"
-      href: device-installation-types.md
-    - name: "How Windows Selects Driver Packages"
-      items: 
-      - name: "Overview of the Driver Package Selection Process"
-        href: overview-of-the-driver-selection-process.md
-      - name: "How Windows selects a driver package for a device"
-        href: how-windows-selects-a-driver-for-a-device.md
+  - name: "Step 1: The New Device is Identified"
+    href: step-1--the-new-device-is-identified.md
+  - name: "Step 2: A Driver for the Device is Selected"
+    href: step-2--a-driver-for-the-device-is-selected.md
+  - name: "Step 3: The Driver for the Device is Installed"
+    href: step-3--the-driver-for-the-device-is-installed.md
+  - name: "Plug and Play Manager"
+    href: pnp-manager.md
+  - name: "Driver Store"
+    href: driver-store.md
+  - name: "Device Installation Types"
+    href: device-installation-types.md
+  - name: "How Windows Selects Driver Packages"
+    items: 
+    - name: "Overview of the Driver Package Selection Process"
+      href: overview-of-the-driver-selection-process.md
+    - name: "How Windows selects a driver package for a device"
+      href: how-windows-selects-a-driver-for-a-device.md
+  - name: "How Windows Ranks Driver Packages"
+    items: 
     - name: "How Windows Ranks Driver Packages"
-      items: 
-        - name: "How Windows Ranks Driver Packages"
-          href: how-setup-ranks-drivers--windows-vista-and-later-.md
-        - name: "Signature Categories and Driver Installation"
-          href: signature-categories-and-driver-installation.md
-        - name: "Signature Score"
-          href: signature-score--windows-vista-and-later-.md
-        - name: "LowerLogoVersion"
-          href: lowerlogoversion.md
-        - name: "Feature Score"
-          href: feature-score--windows-vista-and-later-.md
-        - name: "Identifier Score"
-          href: identifier-score--windows-vista-and-later-.md
-        - name: "Driver Package Rank Example"
-          href: driver-rank-example--windows-vista-and-later-.md
-        - name: "Driver Package Rank Information in the SetupAPI Log"
-          href: driver-rank-information-in-the-setupapi-log.md
-        - name: "AllSigningEqual Group Policy"
-          href: allsigningequal-group-policy.md
+      href: how-setup-ranks-drivers--windows-vista-and-later-.md
+    - name: "Signature Categories and Driver Installation"
+      href: signature-categories-and-driver-installation.md
+    - name: "Signature Score"
+      href: signature-score--windows-vista-and-later-.md
+    - name: "LowerLogoVersion"
+      href: lowerlogoversion.md
+    - name: "Feature Score"
+      href: feature-score--windows-vista-and-later-.md
+    - name: "Identifier Score"
+      href: identifier-score--windows-vista-and-later-.md
+    - name: "Driver Package Rank Example"
+      href: driver-rank-example--windows-vista-and-later-.md
+    - name: "Driver Package Rank Information in the SetupAPI Log"
+      href: driver-rank-information-in-the-setupapi-log.md
+    - name: "AllSigningEqual Group Policy"
+      href: allsigningequal-group-policy.md
 - name: "Concepts"
   items: 
   - name: "Driver Packages"
