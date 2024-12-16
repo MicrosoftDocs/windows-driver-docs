@@ -24,7 +24,6 @@ The Plug and Play (PnP) manager and other [device installation components](./ove
 Windows uses the following device identification strings to locate the [driver package](driver-packages.md) that best matches the device. These identification strings are reported by a device's enumerator, a system component that discovers PnP devices based on a PnP hardware standard. These tasks are carried out by [PnP Bus Drivers](../kernel/bus-drivers.md) in partnership with the PnP manager. A device is typically enumerated by its parent bus driver, such as the PCI or PCMCIA bus driver. Some devices are enumerated by a bus filter driver, such as the ACPI Driver.
 
 - [Hardware IDs](hardware-ids.md)
-
 - [Compatible IDs](compatible-ids.md)
 
 Windows tries to find a match for one of the hardware IDs or compatible IDs. For more information about how Windows uses these IDs to match a device to a driver package, and how to specify IDs in an INF file, see [How Windows Selects Drivers](./how-windows-selects-a-driver-for-a-device.md).
@@ -32,7 +31,6 @@ Windows tries to find a match for one of the hardware IDs or compatible IDs. For
 In addition to using the preceding IDs to identify devices, the PnP manager uses the following IDs to uniquely identify instances of each device that are installed in a computer:
 
 - [Instance IDs](instance-ids.md)
-
 - [Device instance IDs](device-instance-ids.md)
 
 Starting with Windows 7, the PnP manager uses the [Container ID](container-ids.md) device identification string to group one or more device nodes (devnodes) that were enumerated from each instance of a physical device installed in a computer.
@@ -42,3 +40,4 @@ Each enumerator customizes its device IDs, hardware IDs, and compatible IDs to u
 See also
 
 - [Find the hardware device ID](https://answers.microsoft.com/en-us/windows/forum/all/find-the-hardware-device-id-for-windows11-10-and/403da2f8-5834-4ab9-b501-dc3630959c38)
+- [Obtaining the list of hardware IDs for a device](hardware-ids.md#obtaining-the-list-of-hardware-ids-for-a-device)
