@@ -1,6 +1,11 @@
 {
     "redirections": [
     {
+        "source_path": "windows-driver-docs-pr/install/overview-of-device-and-driver-installation.md",
+        "redirect_URL": "/windows-hardware/drivers/install",
+        "redirect_document_id": false
+    },
+    {
       "source_path": "windows-driver-docs-pr/network/background-reading-on-ipsec.md",
       "redirect_url": "/previous-versions/windows/drivers/network/background-reading-on-ipsec",
       "redirect_document_id": false
