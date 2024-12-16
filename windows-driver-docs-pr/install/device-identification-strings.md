@@ -37,6 +37,6 @@ The PnP manager uses the [Container ID](container-ids.md) device identification 
 
 Each enumerator customizes its device IDs, hardware IDs, and compatible IDs to uniquely identify the devices that it enumerates. In addition, each enumerator has its own policy to identify hardware IDs and compatible IDs. For more information about hardware ID and compatible ID formats for most of the system buses, see [Device Identifier Formats](./generic-identifiers.md).
 
-See also
+## See also
 
 - [Obtaining the list of hardware IDs for a device](hardware-ids.md#obtaining-the-list-of-hardware-ids-for-a-device)
