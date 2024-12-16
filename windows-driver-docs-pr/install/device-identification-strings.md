@@ -39,5 +39,4 @@ Each enumerator customizes its device IDs, hardware IDs, and compatible IDs to u
 
 See also
 
-- [Find the hardware device ID](https://answers.microsoft.com/en-us/windows/forum/all/find-the-hardware-device-id-for-windows11-10-and/403da2f8-5834-4ab9-b501-dc3630959c38)
 - [Obtaining the list of hardware IDs for a device](hardware-ids.md#obtaining-the-list-of-hardware-ids-for-a-device)
