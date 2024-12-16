@@ -11,7 +11,7 @@ keywords:
 - Device setup WDK device installations , device identification strings
 - device installations WDK , device identification strings
 - installing devices WDK , device identification strings
-ms.date: 04/08/2022
+ms.date: 12/16/2024
 ---
 
 # Device identification strings
@@ -38,3 +38,7 @@ In addition to using the preceding IDs to identify devices, the PnP manager uses
 Starting with Windows 7, the PnP manager uses the [Container ID](container-ids.md) device identification string to group one or more device nodes (devnodes) that were enumerated from each instance of a physical device installed in a computer.
 
 Each enumerator customizes its device IDs, hardware IDs, and compatible IDs to uniquely identify the devices that it enumerates. In addition, each enumerator has its own policy to identify hardware IDs and compatible IDs. For more information about hardware ID and compatible ID formats for most of the system buses, see [Device Identifier Formats](./generic-identifiers.md).
+
+See also
+
+- [Find the hardware device ID](https://answers.microsoft.com/en-us/windows/forum/all/find-the-hardware-device-id-for-windows11-10-and/403da2f8-5834-4ab9-b501-dc3630959c38)
