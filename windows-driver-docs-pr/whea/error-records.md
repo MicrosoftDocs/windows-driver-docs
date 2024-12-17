@@ -9,7 +9,7 @@ keywords:
 - error record format WDK WHEA
 - error record header WDK WHEA
 - error record section WDK WHEA
-ms.date: 03/03/2023
+ms.date: 12/17/2024
 ---
 
 # Error Records
@@ -23,7 +23,7 @@ The following diagram shows the general format of an error record.
 
 ![diagram illustrating the general format of an error record.](images/whearecord.png)
 
-An error record consists of an error record header followed by one or more fixed-length error record section descriptors. For each error record section descriptor there is an associated variable-length error record section that contains either error data or informational data. An error record must contain at least one error record section.
+An error record consists of an error record header followed by one or more fixed-length error record section descriptors. For each error record section descriptor, there's an associated variable-length error record section that contains either error data or informational data. An error record must contain at least one error record section.
 
 An error record can include extra buffer space for the dynamic addition of error record sections and section descriptors. The extra buffer space can also be used to dynamically increase the size of existing error record sections.
 
@@ -35,7 +35,7 @@ Each error record section can be one of the following section types:
 This error record section contains the hardware error packet that was passed to the operating system by the low-level hardware error handler (LLHEH) that reported the error. The data that is contained in this section is described by the [WHEA\_ERROR\_PACKET](/previous-versions/windows/hardware/drivers/ff560465(v=vs.85)) structure.
 
 <a href="" id="generic-processor-error"></a>Generic Processor Error  
-This error record section contains processor error data that is not specific to a particular processor architecture. The data that is contained in this section is described by the [**WHEA\_PROCESSOR\_GENERIC\_ERROR\_SECTION**](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_whea_processor_generic_error_section) structure.
+This error record section contains processor error data that isn't specific to a particular processor architecture. The data that is contained in this section is described by the [**WHEA\_PROCESSOR\_GENERIC\_ERROR\_SECTION**](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_whea_processor_generic_error_section) structure.
 
 <a href="" id="x86-x64-processor-error"></a>x86/x64 Processor Error  
 This error record section contains processor error data that is specific to the x86 or x64 processor architecture. The data that is contained in this section is described by the [**WHEA\_XPF\_PROCESSOR\_ERROR\_SECTION**](/previous-versions/ff560655(v=vs.85)) structure. The following diagram shows how the data structures that contain the processor error data are stored in the VariableInfo member. 
@@ -63,6 +63,6 @@ This error record section contains PCI/PCI-X bus error data. The data that is co
 <a href="" id="pci-pci-x-device-error"></a>PCI/PCI-X Device Error  
 This error record section contains PCI/PCI-X device error data. The data that is contained in this section is described by the [**WHEA\_PCIXDEVICE\_ERROR\_SECTION**](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_whea_pcixdevice_error_section) structure.
 
-For additional hardware error data that does not fit into one of the section types in the previous list, a platform-specific error record section can be defined to contain the data. For each type of platform-specific error record section that is defined, a corresponding GUID that identifies the type of the error record section must be defined. This GUID is specified in the **SectionType** member of any [**WHEA\_ERROR\_RECORD\_SECTION\_DESCRIPTOR**](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_whea_error_record_section_descriptor) structure that describes that type of error record section.
+For additional hardware error data that doesn't fit into one of the section types in the previous list, a platform-specific error record section can be defined to contain the data. For each type of platform-specific error record section that is defined, a corresponding GUID that identifies the type of the error record section must be defined. This GUID is specified in the **SectionType** member of any [**WHEA\_ERROR\_RECORD\_SECTION\_DESCRIPTOR**](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_whea_error_record_section_descriptor) structure that describes that type of error record section.
 
-If there is additional hardware error data that does not fit into one of the section types in the previous list or into a defined platform-specific error record section, a generic error record section is used to contain the data.
+If there's additional hardware error data that doesn't fit into one of the section types in the previous list or into a defined platform-specific error record section, a generic error record section is used to contain the data.
