@@ -19,11 +19,11 @@ The VM network adapter supports the following virtualization types:
 
 The following diagram shows the interface between VM network adapters and the extensible switch NDIS 6.40 (Windows Server 2012 R2) and later.
 
-:::image type="content" source="images/vswitchvmnic-ndis640.png" alt-text="Diagram of flowchart that shows the interface between emulated VM network adapters and the extensible switch for NDIS 6.40.":::
+:::image type="content" source="images/vswitch-vm-nic-ndis640.png" alt-text="Diagram of flowchart that shows the interface between emulated VM network adapters and the extensible switch for NDIS 6.40.":::
 
 The following diagram shows the interface between VM network adapters and the extensible switch for NDIS 6.30 (Windows Server 2012).
 
-:::image type="content" source="images/images/vswitchvmnic.png" alt-text="Diagram of flowchart that shows the interface between emulated VM network adapters and the extensible switch for NDIS 6.30.":::
+:::image type="content" source="images/vswitch-vm-nic.png" alt-text="Diagram of flowchart that shows the interface between emulated VM network adapters and the extensible switch for NDIS 6.30.":::
 
 ## Starting a Hyper-V VM
 

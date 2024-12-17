@@ -24,19 +24,19 @@ This section describes key scenarios that are part of the current mobile broadba
 
 - [Plan purchase](#plan-purchase)
 
-- [Connect an active device](#connecting-an-active-device)
+- [Connect an active device](#connect-an-active-device-an-active-device)
 
 - [Operator notifications and system events](#operator-notifications-and-system-events)
 
-- [Provide accurate usage and plan data](#providing-accurate-usage-and-plan-data)
+- [Provide accurate usage and plan data](#provide-accurate-usage-and-plan-data-accurate-usage-and-plan-data)
 
 - [Internet sharing](#internet-sharing)
 
 - [Wi-Fi hotspot authentication](#wi-fi-hotspot-authentication)
 
-- [Display account information to the user](#displaying-account-information-to-the-user)
+- [Display account information to the user](#display-account-information-to-the-user-account-information-to-the-user)
 
-- [Enable other devices and app scenarios](#enabling-other-devices-and-app-scenarios)
+- [Enable other devices and app scenarios](#enable-other-devices-and-app-scenarios-other-devices-and-app-scenarios)
 
 ### Plan purchase
 
@@ -342,7 +342,7 @@ Local data counters track the amount of data that's sent and received on a netwo
 
 - The **App History** tab in Task Manager
 
-- (Optionally) Windows Connection Manager in the expanded view of the Wi-Fi or mobile broadband network. Users can decide whether to show or hide this estimate for a particular network. By default, it's shown for mobile broadband networks and hidden for Wi-Fi networks. However, if Windows detects that a mobile broadband device is installed, it hides estimated data usage in Windows Connection Manager for the corresponding mobile broadband network. This is because there's an assumption that if you created a mobile broadband app, you want to control the data usage value that is displayed to the user. The best place to do that is inside the mobile broadband app. Users can choose to override this behavior and show estimated usage for the network at any time.
+- (Optional) Windows Connection Manager in the expanded view of the Wi-Fi or mobile broadband network. Users can decide whether to show or hide this estimate for a particular network. By default, it's shown for mobile broadband networks and hidden for Wi-Fi networks. However, if Windows detects that a mobile broadband device is installed, it hides estimated data usage in Windows Connection Manager for the corresponding mobile broadband network. This is because there's an assumption that if you created a mobile broadband app, you want to control the data usage value that is displayed to the user. The best place to do that is inside the mobile broadband app. Users can choose to override this behavior and show estimated usage for the network at any time.
 
 Local data counters are also available programmatically by using the following APIs:
 
