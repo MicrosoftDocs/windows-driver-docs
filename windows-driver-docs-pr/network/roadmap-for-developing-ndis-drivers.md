@@ -31,7 +31,7 @@ To create a Network Driver Interface Specification (NDIS) driver package, follow
 
 1. Determine other Windows driver design decisions.
 
-    For more information about how to make additional Windows design decisions, see [Creating Reliable Kernel-Mode Drivers](../kernel/creating-reliable-kernel-mode-drivers.md), [Using single source code base for 64-bit Windows](../kernel/porting-your-driver-to-64-bit-windows.md), and [Creating International INF Files](../install/creating-international-inf-files.md).
+    For more information about making Windows design decisions, see [Creating Reliable Kernel-Mode Drivers](../kernel/creating-reliable-kernel-mode-drivers.md), [Using single source code base for 64-bit Windows](../kernel/porting-your-driver-to-64-bit-windows.md), and [Creating International INF Files](../install/creating-international-inf-files.md).
 
 1. Learn about the Windows driver build, test, and debug processes and tools.
 
@@ -79,4 +79,4 @@ To create a Network Driver Interface Specification (NDIS) driver package, follow
 
     The final step is to sign and distribute the driver. If your driver meets the quality standards that are defined for the [Windows Hardware Lab Kit (HLK)](/windows-hardware/test/hlk/), you can distribute it through the Microsoft Windows Update program. For more information about how to distribute a driver, see [Partner Center for Windows Hardware](../dashboard/get-started-dashboard-submissions.md).
 
-These are the basic steps. Additional steps might be necessary based on the needs of your individual driver.
+These are the basic steps. Your individual driver might require more steps.

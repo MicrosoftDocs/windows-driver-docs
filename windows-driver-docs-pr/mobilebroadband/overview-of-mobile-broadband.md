@@ -24,19 +24,19 @@ This section describes key scenarios that are part of the current mobile broadba
 
 - [Plan purchase](#plan-purchase)
 
-- [Connect an active device](#connect-an-active-device-an-active-device)
+- [Connect an active device](#connect-an-active-device)
 
 - [Operator notifications and system events](#operator-notifications-and-system-events)
 
-- [Provide accurate usage and plan data](#provide-accurate-usage-and-plan-data-accurate-usage-and-plan-data)
+- [Provide accurate usage and plan data](#provide-accurate-usage-and-plan-data)
 
 - [Internet sharing](#internet-sharing)
 
 - [Wi-Fi hotspot authentication](#wi-fi-hotspot-authentication)
 
-- [Display account information to the user](#display-account-information-to-the-user-account-information-to-the-user)
+- [Display account information to the user](#display-account-information-to-the-user)
 
-- [Enable other devices and app scenarios](#enable-other-devices-and-app-scenarios-other-devices-and-app-scenarios)
+- [Enable other devices and app scenarios](#enable-other-devices-and-app-scenarios)
 
 ### Plan purchase
 
