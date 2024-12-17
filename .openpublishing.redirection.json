@@ -1,9 +1,139 @@
 {
     "redirections": [
     {
-        "source_path": "windows-driver-docs-pr/install/overview-of-device-and-driver-installation.md",
-        "redirect_URL": "/windows-hardware/drivers/install",
-        "redirect_document_id": false
+      "source_path": "windows-driver-docs-pr/ieee/1394-bridges.md",
+      "redirect_url": "/previous-versions/windows/drivers/ieee/1394-bridges",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ieee/1394-samples-and-diagnostic-tools.md",
+      "redirect_url": "/previous-versions/windows/drivers/ieee/1394-samples-and-diagnostic-tools",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ieee/asynchronous-i-o-for-ieee-1394-devices.md",
+      "redirect_url": "/previous-versions/windows/drivers/ieee/asynchronous-i-o-for-ieee-1394-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ieee/buffering-isochronous-dma-transfers-for-ieee-1394-devices.md",
+      "redirect_url": "/previous-versions/windows/drivers/ieee/buffering-isochronous-dma-transfers-for-ieee-1394-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ieee/completing-an-isochronous-data-transfer.md",
+      "redirect_url": "/previous-versions/windows/drivers/ieee/completing-an-isochronous-data-transfer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ieee/device-driver-interface--ddi--changes-in-windows-7.md",
+      "redirect_url": "/previous-versions/windows/drivers/ieee/device-driver-interface--ddi--changes-in-windows-7",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ieee/how-drivers-manage-ieee-1934-virtual-devices.md",
+      "redirect_url": "/previous-versions/windows/drivers/ieee/how-drivers-manage-ieee-1934-virtual-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ieee/iec-61883-client-drivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/ieee/iec-61883-client-drivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ieee/iec-61883-protocol-driver-in-a-client-driver-stack.md",
+      "redirect_url": "/previous-versions/windows/drivers/ieee/iec-61883-protocol-driver-in-a-client-driver-stack",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ieee/iec-61883-protocol-driver.md",
+      "redirect_url": "/previous-versions/windows/drivers/ieee/iec-61883-protocol-driver",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ieee/ieee-1394-bus-driver-in-windows-7.md",
+      "redirect_url": "/previous-versions/windows/drivers/ieee/ieee-1394-bus-driver-in-windows-7",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ieee/ieee-1394-hardware-emulation-drivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/ieee/ieee-1394-hardware-emulation-drivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ieee/ieee-1394-sample.md",
+      "redirect_url": "/previous-versions/windows/drivers/ieee/ieee-1394-sample",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ieee/index.md",
+      "redirect_url": "/previous-versions/windows/drivers/ieee/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ieee/installing-ieee-1394-device-drivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/ieee/installing-ieee-1394-device-drivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ieee/isochronous-i-o-for-ieee-1394-devices.md",
+      "redirect_url": "/previous-versions/windows/drivers/ieee/isochronous-i-o-for-ieee-1394-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ieee/isochronous-listen-options-for-ieee-1394-devices.md",
+      "redirect_url": "/previous-versions/windows/drivers/ieee/isochronous-listen-options-for-ieee-1394-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ieee/isochronous-synchronization-options-for-ieee-1394-devices.md",
+      "redirect_url": "/previous-versions/windows/drivers/ieee/isochronous-synchronization-options-for-ieee-1394-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ieee/isochronous-talk-options-for-ieee-1394-devices.md",
+      "redirect_url": "/previous-versions/windows/drivers/ieee/isochronous-talk-options-for-ieee-1394-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ieee/modifying-the-1394-configuration-rom.md",
+      "redirect_url": "/previous-versions/windows/drivers/ieee/modifying-the-1394-configuration-rom",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ieee/modifying-the-default-behavior-of-the-ieee-1394-bus-driver.md",
+      "redirect_url": "/previous-versions/windows/drivers/ieee/modifying-the-default-behavior-of-the-ieee-1394-bus-driver",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ieee/receiving-asynchronous-i-o-request-packets-on-the-ieee-1394-bus.md",
+      "redirect_url": "/previous-versions/windows/drivers/ieee/receiving-asynchronous-i-o-request-packets-on-the-ieee-1394-bus",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ieee/retrieving-the-contents-of-a-ieee-1394-node-s-configuration-rom.md",
+      "redirect_url": "/previous-versions/windows/drivers/ieee/retrieving-the-contents-of-a-ieee-1394-node-s-configuration-rom",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ieee/sending-asynchronous-i-o-request-packets-on-the-ieee-1394-bus.md",
+      "redirect_url": "/previous-versions/windows/drivers/ieee/sending-asynchronous-i-o-request-packets-on-the-ieee-1394-bus",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ieee/setting-up-isochronous-transfer-for-ieee-1394-devices.md",
+      "redirect_url": "/previous-versions/windows/drivers/ieee/setting-up-isochronous-transfer-for-ieee-1394-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ieee/supporting-requests-in-ieee-1394-virtual-device-drivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/ieee/supporting-requests-in-ieee-1394-virtual-device-drivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/ieee/the-ieee-1394-driver-stack.md",
+      "redirect_url": "/previous-versions/windows/drivers/ieee/the-ieee-1394-driver-stack",
+      "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/network/background-reading-on-ipsec.md",
