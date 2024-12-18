@@ -4875,6 +4875,11 @@
       "redirect_url": "/previous-versions/windows/drivers/storage/cd-rom-io-control-codes",
       "redirect_document_id": false
     },
+    {
+      "source_path": "windows-driver-docs-pr/install/overview-of-device-and-driver-installation.md",
+      "redirect_URL": "/windows-hardware/drivers/install",
+      "redirect_document_id": false
+    },
         {
             "source_path": "windows-driver-docs-pr/install/installation-component-overview.md",
             "redirect_URL": "/windows-hardware/drivers/install/components-of-a-driver-package",
