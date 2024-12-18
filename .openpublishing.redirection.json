@@ -1,6 +1,96 @@
 {
     "redirections": [
     {
+      "source_path": "windows-driver-docs-pr/pcmcia/access-attribute-memory-of-a-pcmcia-device.md",
+      "redirect_url": "/previous-versions/windows/drivers/pcmcia/access-attribute-memory-of-a-pcmcia-device",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/pcmcia/access-pcmcia-attribute-memory-by-using-a-bus-interface-standard-inter.md",
+      "redirect_url": "/previous-versions/windows/drivers/pcmcia/access-pcmcia-attribute-memory-by-using-a-bus-interface-standard-inter",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/pcmcia/access-pcmcia-attribute-memory-by-using-a-pcmcia-interface-standard-in.md",
+      "redirect_url": "/previous-versions/windows/drivers/pcmcia/access-pcmcia-attribute-memory-by-using-a-pcmcia-interface-standard-in",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/pcmcia/access-pcmcia-attribute-memory-by-using-a-plug-and-play-i-o-request.md",
+      "redirect_url": "/previous-versions/windows/drivers/pcmcia/access-pcmcia-attribute-memory-by-using-a-plug-and-play-i-o-request",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/pcmcia/access-pcmcia-attribute-memory-through-a-permanent-memory-window.md",
+      "redirect_url": "/previous-versions/windows/drivers/pcmcia/access-pcmcia-attribute-memory-through-a-permanent-memory-window",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/pcmcia/best-practices-for-the-design-of-pc-cards-and-card-drivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/pcmcia/best-practices-for-the-design-of-pc-cards-and-card-drivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/pcmcia/calling-a-pcmcia-interface-standard-interface-routine.md",
+      "redirect_url": "/previous-versions/windows/drivers/pcmcia/calling-a-pcmcia-interface-standard-interface-routine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/pcmcia/functionality-of-the-pcmcia-interface-standard-interface.md",
+      "redirect_url": "/previous-versions/windows/drivers/pcmcia/functionality-of-the-pcmcia-interface-standard-interface",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/pcmcia/index.md",
+      "redirect_url": "/previous-versions/windows/drivers/pcmcia/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/pcmcia/inf-override-for-configuring-pc-card-interrupts.md",
+      "redirect_url": "/previous-versions/windows/drivers/pcmcia/inf-override-for-configuring-pc-card-interrupts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/pcmcia/obtaining-a-pcmcia-interface-standard-interface.md",
+      "redirect_url": "/previous-versions/windows/drivers/pcmcia/obtaining-a-pcmcia-interface-standard-interface",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/pcmcia/pcmcia-interface-standard-interface-for-memory-cards.md",
+      "redirect_url": "/previous-versions/windows/drivers/pcmcia/pcmcia-interface-standard-interface-for-memory-cards",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/pcmcia/pcmcia-irq-routing-on-windows-xp.md",
+      "redirect_url": "/previous-versions/windows/drivers/pcmcia/pcmcia-irq-routing-on-windows-xp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/pcmcia/read-and-write-attribute-memory.md",
+      "redirect_url": "/previous-versions/windows/drivers/pcmcia/read-and-write-attribute-memory",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/pcmcia/requirements-for-accessing-attribute-memory-of-a-pcmcia-device.md",
+      "redirect_url": "/previous-versions/windows/drivers/pcmcia/requirements-for-accessing-attribute-memory-of-a-pcmcia-device",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/pcmcia/requirements-for-routing-pc-card-interrupts.md",
+      "redirect_url": "/previous-versions/windows/drivers/pcmcia/requirements-for-routing-pc-card-interrupts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/pcmcia/restrictions-on-memory-windows.md",
+      "redirect_url": "/previous-versions/windows/drivers/pcmcia/restrictions-on-memory-windows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/pcmcia/special-considerations-for-pcmcia-memory-card-drivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/pcmcia/special-considerations-for-pcmcia-memory-card-drivers",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows-driver-docs-pr/ieee/1394-bridges.md",
       "redirect_url": "/previous-versions/windows/drivers/ieee/1394-bridges",
       "redirect_document_id": false
