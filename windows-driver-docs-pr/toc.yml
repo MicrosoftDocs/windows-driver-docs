@@ -96,8 +96,6 @@
     href: network/index.md
   - name: NFC device drivers
     href: nfc/index.md
-  - name: Parallel port drivers
-    href: parports/index.md
   - name: Partner application development
     href: partnerapps/index.md
   - name: PCI drivers
