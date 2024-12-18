@@ -1,6 +1,161 @@
 {
     "redirections": [
     {
+      "source_path": "windows-driver-docs-pr/parports/connecting-an-interrupt-service-routine-to-a-parallel-port.md",
+      "redirect_url": "/previous-versions/windows/drivers/parports/connecting-an-interrupt-service-routine-to-a-parallel-port",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/parports/connecting-to-a-parallel-device.md",
+      "redirect_url": "/previous-versions/windows/drivers/parports/connecting-to-a-parallel-device",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/parports/connecting-to-an-ieee-1284-3-data-link-device.md",
+      "redirect_url": "/previous-versions/windows/drivers/parports/connecting-to-an-ieee-1284-3-data-link-device",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/parports/creating-and-starting-a-parallel-port.md",
+      "redirect_url": "/previous-versions/windows/drivers/parports/creating-and-starting-a-parallel-port",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/parports/device-specific-operations-io-requests-parallel-devices.md",
+      "redirect_url": "/previous-versions/windows/drivers/parports/device-specific-operations-io-requests-parallel-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/parports/device-specific-operations-io-requests-parallel-ports.md",
+      "redirect_url": "/previous-versions/windows/drivers/parports/device-specific-operations-io-requests-parallel-ports",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/parports/device-stacks-for-parallel-ports-and-devices.md",
+      "redirect_url": "/previous-versions/windows/drivers/parports/device-stacks-for-parallel-ports-and-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/parports/features-of-system-supplied-parallel-drivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/parports/features-of-system-supplied-parallel-drivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/parports/index.md",
+      "redirect_url": "/previous-versions/windows/drivers/parports/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/parports/installing-parallel-ports-and-devices.md",
+      "redirect_url": "/previous-versions/windows/drivers/parports/installing-parallel-ports-and-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/parports/introduction-to-parallel-ports-and-devices.md",
+      "redirect_url": "/previous-versions/windows/drivers/parports/introduction-to-parallel-ports-and-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/parports/ioctl-and-callback-support-for-parallel-ports-and-devices.md",
+      "redirect_url": "/previous-versions/windows/drivers/parports/ioctl-and-callback-support-for-parallel-ports-and-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/parports/locking-and-unlocking-a-parallel-port-for-use-by-a-parallel-device.md",
+      "redirect_url": "/previous-versions/windows/drivers/parports/locking-and-unlocking-a-parallel-port-for-use-by-a-parallel-device",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/parports/obtaining-information-about-a-parallel-device.md",
+      "redirect_url": "/previous-versions/windows/drivers/parports/obtaining-information-about-a-parallel-device",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/parports/obtaining-information-about-a-parallel-port.md",
+      "redirect_url": "/previous-versions/windows/drivers/parports/obtaining-information-about-a-parallel-port",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/parports/opening-and-closing-a-parallel-port.md",
+      "redirect_url": "/previous-versions/windows/drivers/parports/opening-and-closing-a-parallel-port",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/parports/opening-and-using-a-parallel-device.md",
+      "redirect_url": "/previous-versions/windows/drivers/parports/opening-and-using-a-parallel-device",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/parports/operating-a-parallel-device-attached-to-a-parallel-port.md",
+      "redirect_url": "/previous-versions/windows/drivers/parports/operating-a-parallel-device-attached-to-a-parallel-port",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/parports/operating-a-parallel-port.md",
+      "redirect_url": "/previous-versions/windows/drivers/parports/operating-a-parallel-port",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/parports/parallel-device-interfaces--internal-names--and-symbolic-links.md",
+      "redirect_url": "/previous-versions/windows/drivers/parports/parallel-device-interfaces--internal-names--and-symbolic-links",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/parports/physical-configuration-of-devices-attached-to-a-parallel-port.md",
+      "redirect_url": "/previous-versions/windows/drivers/parports/physical-configuration-of-devices-attached-to-a-parallel-port",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/parports/physical-configuration-of-parallel-ports.md",
+      "redirect_url": "/previous-versions/windows/drivers/parports/physical-configuration-of-parallel-ports",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/parports/reading-and-writing-a-parallel-device.md",
+      "redirect_url": "/previous-versions/windows/drivers/parports/reading-and-writing-a-parallel-device",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/parports/requirements-for-vendor-supplied-parallel-drivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/parports/requirements-for-vendor-supplied-parallel-drivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/parports/selecting-and-deselecting-an-ieee-1284-device-attached-to-a-parallel-p.md",
+      "redirect_url": "/previous-versions/windows/drivers/parports/selecting-and-deselecting-an-ieee-1284-device-attached-to-a-parallel-p",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/parports/setting-and-clearing-a-communication-mode-for-a-parallel-device.md",
+      "redirect_url": "/previous-versions/windows/drivers/parports/setting-and-clearing-a-communication-mode-for-a-parallel-device",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/parports/setting-and-clearing-the-communication-mode-on-a-parallel-port.md",
+      "redirect_url": "/previous-versions/windows/drivers/parports/setting-and-clearing-the-communication-mode-on-a-parallel-port",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/parports/setting-attributes-on-a-parallel-device.md",
+      "redirect_url": "/previous-versions/windows/drivers/parports/setting-attributes-on-a-parallel-device",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/parports/synchronizing-the-use-of-a-parallel-port.md",
+      "redirect_url": "/previous-versions/windows/drivers/parports/synchronizing-the-use-of-a-parallel-port",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/parports/system-supplied-parallel-drivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/parports/system-supplied-parallel-drivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/parports/vendor-supplied-parallel-drivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/parports/vendor-supplied-parallel-drivers",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows-driver-docs-pr/ieee/1394-bridges.md",
       "redirect_url": "/previous-versions/windows/drivers/ieee/1394-bridges",
       "redirect_document_id": false
