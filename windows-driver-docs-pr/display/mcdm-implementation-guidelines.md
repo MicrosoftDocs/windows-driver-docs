@@ -1,12 +1,12 @@
 ---
-title: MCDM KM Driver Implementation Guidelines
+title: MCDM Kernel-Mode Driver Implementation Guidelines
 description: Implementation guidelines for MCDM kernel-mode driver
-ms.date: 01/12/2023
+ms.date: 12/18/2024
 ---
 
-# MCDM KM driver implementation guidelines
+# MCDM kernel-mode driver implementation guidelines
 
-This article provides guidance on how to write the kernel-mode driver portion of a Microsoft Compute Only Driver (MCDM) driver, also referred to as a compute-only driver.
+This article provides guidance on how to write the kernel-mode driver (KMD) portion of a Microsoft Compute Only Driver (MCDM) driver, also referred to as a compute-only driver.
 
 See also the following articles:
 
@@ -15,7 +15,7 @@ See also the following articles:
 
 ## Driver INF file
 
-MCDM devices belong to the **ComputeAccelerator** class, which needs to be specified in the INF file:
+MCDM devices belong to the **ComputeAccelerator** class, which needs to be specified in the driver's INF file:
 
 ``` INF
 [Version]
@@ -27,18 +27,18 @@ ClassGuid={F01A9D53-3FF6-48D2-9F97-C8A7004BE10C}
 
 ## Driver initialization
 
-A compute-only driver must supply a [**DriverEntry**](driverentry-of-display-miniport-driver.md) function that performs the following steps:
+An MCDM driver must supply a [**DriverEntry**](driverentry-of-display-miniport-driver.md) function that performs the following steps:
 
 * Allocate and initialize a [**DRIVER_INITIALIZATION_DATA**](/windows-hardware/drivers/ddi/content/dispmprt/ns-dispmprt-_driver_initialization_data) structure. See [Driver function support requirements](#driver-function-support-requirements) for details.
 * Call [**DxgkInitialize**](/en-us/windows-hardware/drivers/ddi/content/dispmprt/nf-dispmprt-dxgkinitialize) with the initialized structure.
 
 ## Driver function support requirements
 
-A compute-only driver exposes the functions that it implements in the [**DRIVER_INITIALIZATION_DATA**](/windows-hardware/drivers/ddi/content/dispmprt/ns-dispmprt-_driver_initialization_data) structure.
+An MCDM driver exposes the functions that it implements in the [**DRIVER_INITIALIZATION_DATA**](/windows-hardware/drivers/ddi/content/dispmprt/ns-dispmprt-_driver_initialization_data) structure.
 
 ### Minimum required support
 
-At a minimum, a compute-only driver must supply the following device driver interface (DDI) functions:
+At a minimum, an MCDM driver must supply the following device driver interface (DDI) functions:
 
 * [DxgkDdiAddDevice](/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkddi_add_device)
 * [DxgkDdiBuildPagingBuffer](/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_buildpagingbuffer)
@@ -127,7 +127,7 @@ For optional power management support, pointers to the following functions must 
 * [DxgkDdiPowerRuntimeControlRequest](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddipowerruntimecontrolrequest)
 * DxgkDdiPowerRuntimeSetDeviceHandle
 
-NOTE: power management support is required on Modern Standby or Connected Standby systems.
+Power management support is required on Modern Standby or Connected Standby systems.
 
 For more information, see [GPU power management of idle states and active power](gpu-power-management-of-idle-and-active-power.md).
 
@@ -174,7 +174,7 @@ For optional hardware scheduling support, pointers to the following functions mu
 
 For optional UpdateAllocationProperty support, pointers to the following functions must also be provided:
 
-* DxgkDdiValidateUpdateAllocationProperty
+* [**DxgkDdiValidateUpdateAllocationProperty**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_validateupdateallocationproperty)
 
 ### Escape support
 
@@ -349,7 +349,7 @@ The following [DXGK_DRIVERCAPS](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmd
 | [MemoryManagementCaps](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_vidmmcaps) | See [MemoryManagementCaps requirements](#memorymanagementcaps-requirements). |
 | [GpuEngineTopology](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_gpuenginetopology) | Set **NbAsymetricProcessingNodes** to the number supported GPU engines. |
 | [WDDMVersion](/windows-hardware/drivers/ddi/d3dkmddi/ne-d3dkmddi-_dxgk_wddmversion) | Must be set to DXGKDDI_WDDMv2_6 or later. |
-| [PreemptionCaps](/windows-hardware/drivers/ddi/d3dkmdt/ns-d3dkmdt-_d3dkmdt_preemption_caps)  | Set **GraphicsPreemptionGranularity** appropriately to the level supported by the hardware. At a minimum you should attempt to support packet-level preemption; that is, a dequeue packet that has been scheduled but hasn't yet started executing. Set **ComputePreemptionGranularity** to anything other than D3DKMDT_COMPUTE_PREEMPTION_NONE. |
+| [PreemptionCaps](/windows-hardware/drivers/ddi/d3dkmdt/ns-d3dkmdt-_d3dkmdt_preemption_caps)  | Set **GraphicsPreemptionGranularity** appropriately to the level supported by the hardware. At a minimum, you should attempt to support packet-level preemption for dequeue packets that are scheduled but haven't yet started executing. Set **ComputePreemptionGranularity** to anything other than D3DKMDT_COMPUTE_PREEMPTION_NONE. |
 | SupportPerEngineTDR | Must be set to TRUE. See [TDR Changes in Windows 8 and later](tdr-changes-in-windows-8.md). |
 | SupportRuntimePowerManagement | Set as appropriate. See [GPU power management of idle states and active power](gpu-power-management-of-idle-and-active-power.md). |
 | SupportSurpriseRemovalInHibernation | Set to TRUE if the driver supports surprise removal when in hibernation; otherwise set as appropriate. See [DXGKDDI_NOTIFY_SURPRISE_REMOVAL](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_notify_surprise_removal). |
