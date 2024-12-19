@@ -2,7 +2,7 @@
 title: Debugging Tools for Windows
 description: This page provides downloads for the Windows Debugging tools, such as WinDbg.
 keywords: ["Windows Debugging Downloads", "WinDbg", "Download"]
-ms.date: 12/20/2023
+ms.date: 12/06/2024
 ---
 
 # Debugging Tools for Windows

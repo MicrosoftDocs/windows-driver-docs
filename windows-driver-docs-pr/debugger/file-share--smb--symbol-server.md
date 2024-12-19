@@ -1,7 +1,7 @@
 ---
 title: File Share (SMB) Debugger Symbol Server
 description: Learn how to run an SMB symbol server by creating a file share and assigning permissions to access the file share.
-ms.date: 12/20/2023
+ms.date: 12/13/2024
 ---
 
 # File share (SMB) debugger symbol server

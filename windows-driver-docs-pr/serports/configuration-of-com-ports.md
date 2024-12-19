@@ -1,13 +1,13 @@
 ---
-title: Configuration of COM Ports
-description: Configuration of COM ports
+title: Configuration of COM Ports for driver developers
+description: Configuration of COM Ports for driver developers
 keywords:
 - COM ports WDK serial devices
 - serial devices WDK, COM ports
-ms.date: 10/19/2022
+ms.date: 12/13/2024
 ---
 
-# Configuration of COM ports
+# Configuration of COM Ports for driver developers
 
 A COM port is a type of serial port that complies with the following additional requirements:
 

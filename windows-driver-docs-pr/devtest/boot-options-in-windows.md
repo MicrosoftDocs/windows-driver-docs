@@ -16,7 +16,7 @@ keywords:
 - system-specific boot loaders WDK
 - boot loaders WDK
 - firmware-independent boot options WDK
-ms.date: 12/27/2023
+ms.date: 12/12/2024
 ---
 
 # Overview of Boot Options in Windows
@@ -65,7 +65,7 @@ To use BCDEdit, you must be a member of the Administrators group on the computer
 > [!NOTE]
 > Before setting BCDEdit options you might need to disable or suspend BitLocker and Secure Boot on the computer.
 
-You can also use the System Configuration utility (MSConfig.exe) to change boot settings. In addition, many options can be set using the Advanced Startup settings UI.
+You can also use the System Configuration utility (MSConfig.exe) to change boot settings. In addition, many options can be set using the Advanced Startup settings UI in Windows.
 
 To change boot options programmatically in Windows, use the Windows Management Instrument (WMI) interface to boot options. This BCD WMI interface is the best method to programmatically change the boot options. For information about the BCD WMI interface, see [Boot Configuration Data WMI Provider](/previous-versions/windows/desktop/bcd/boot-configuration-data-portal) in the Windows SDK documentation.
 

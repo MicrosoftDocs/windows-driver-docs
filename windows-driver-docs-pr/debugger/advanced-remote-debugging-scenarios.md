@@ -2,14 +2,10 @@
 title: Advanced Remote Debugging Scenarios
 description: Advanced Remote Debugging Scenarios
 keywords: ["remote debugging, advanced"]
-ms.date: 05/23/2017
+ms.date: 12/13/2024
 ---
 
 # Advanced Remote Debugging Scenarios
-
-
-## <span id="ddk_advanced_remote_debugging_scenarios_dbg"></span><span id="DDK_ADVANCED_REMOTE_DEBUGGING_SCENARIOS_DBG"></span>
-
 
 This section includes:
 
@@ -19,6 +15,7 @@ This section includes:
 
 [Two Firewalls](two-firewalls.md)
 
+> [!IMPORTANT]
+> There are additional important security considerations when using remote debugging, for more information, including information on enabling secure mode, see [Security During Remote Debugging](security-during-remote-debugging.md) and [Security Considerations for Windows Debugging Tools](security-considerations.md).
  
-
  

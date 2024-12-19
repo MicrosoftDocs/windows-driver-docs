@@ -6,7 +6,7 @@ keywords:
 - boot entries WDK
 - adding boot entries
 - Boot.ini files WDK , adding boot entries
-ms.date: 08/26/2024
+ms.date: 12/12/2024
 ---
 
 # Adding Boot Entries
@@ -23,6 +23,10 @@ This topic applies to Windows Vista and later, Windows Server 2008 and later, an
 
 > [!CAUTION]
 > Administrative privileges are required to use BCDEdit to modify BCD. Changing some boot entry options using the **BCDEdit** command could render your computer inoperable.
+
+> [!CAUTION]
+> Administrative privileges are required to use BCDEdit to modify BCD. Changing some boot entry options using the **BCDEdit /set** command could render your computer inoperable. As an alternative, use the System Configuration utility (MSConfig.exe) to change boot settings. For more information, see *[How to open MSConfig in Windows 10](https://support.microsoft.com/help/4026130/windows-how-to-open-msconfig-in-windows-10)*.
+
 
 ## Adding a new boot entry
 

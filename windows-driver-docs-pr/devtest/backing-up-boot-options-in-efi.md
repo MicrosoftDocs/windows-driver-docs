@@ -14,6 +14,8 @@ ms.date: 07/02/2018
 
 # Backing up Boot Options in EFI
 
+> [!IMPORTANT] 
+> This topic describes the boot options supported in Windows XP and Windows Server 2003. If you are changing boot options for modern versions of Windows, see [Boot Options in Windows](boot-options-in-windows.md).
 
 When you install a 64-bit version of Windows, Setup automatically creates a boot entry for the installation and saves a backup copy of the boot entry to a binary file named Boot*xxxx*, where Boot*xxxx* is the NVRAM ID for the boot entry. Setup stores the boot entry backup copy in a new directory on the EFI partition, along with the EFI boot loader for the new installation.By default, the installation directory is in the \\EFI\\Microsoft\\ subdirectory.
 

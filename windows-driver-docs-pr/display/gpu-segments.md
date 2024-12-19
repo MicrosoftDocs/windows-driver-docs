@@ -1,83 +1,67 @@
 ---
 title: GPU Segments
-description: Graphics Processing Unit (GPU) access to physical memory is abstracted in the Device Driver Interface (DDI) by a segmentation model.
-ms.date: 04/20/2017
+description: Describes how WDDM uses a segmentation model to abstract GPU access to physical memory.
+keywords:
+- WDDM , GPU segments, memory segments, aperture segments, system memory segments, physical memory reference, accessed physically, primary surfaces
+ms.date: 12/18/2024
 ---
 
 # GPU segments
 
-Graphics Processing Unit (GPU) access to physical memory is abstracted in the Device Driver Interface (DDI) by a segmentation model. The [kernel-mode](../gettingstarted/user-mode-and-kernel-mode.md) driver expresses the physical memory resources available to a GPU by enumerating a set of segments, which are then managed by the video memory manager.
+Starting in WDDM 2.0, a segmentation model is used to abstract GPU access to physical memory. The kernel-mode driver (KMD) expresses the physical memory resources available to a GPU by enumerating a set of segments. The video memory manager (*VidMm*) then manages these segments.
 
-There are three types of segments in Windows Display Driver Model (WDDM) v2:
+## Segment types
 
-### <span id="Memory_Segment"></span><span id="memory_segment"></span><span id="MEMORY_SEGMENT"></span>Memory Segment  
-A memory segment represents memory, dedicated to a GPU. This may be VRAM on a discrete GPU or firmware/driver reserved memory on an integrated GPU. There can be multiple memory segments enumerated.
+There are three types of segments:
 
-New in WDDM v2, a memory segment is managed as a pool of physical pages which are either 4KB or 64KB in size. Surface data is copied into and out of a memory segment using *Fill*/*Transfer*/*Discard*/*FillVirtual*/*TransferVirtual* paging operations.
+* [Memory Segments](#memory-segments)
+* [Aperture Segments](#aperture-segments)
+* [System Memory Segments](#system-memory-segments)
 
-The CPU may access the content of a memory segment in one of two ways. First, a memory segment may be visible in the physical address space of the CPU, in which case the video memory manager simply maps CPU virtual addresses directly to allocations within the segment. Introduced in WDDM v2, the video memory manager also supports accessing the content of a memory segment through a programmable CPU host aperture associated with that segment.
+### Memory Segments
 
-### <span id="Aperture__Segment"></span><span id="aperture__segment"></span><span id="APERTURE__SEGMENT"></span>Aperture Segment  
+A memory segment represents memory dedicated to a GPU. It can be VRAM on a discrete GPU or firmware/driver-reserved memory on an integrated GPU. A driver can enumerate multiple memory segments.
+
+Starting in WDDM 2.0, *VidMm* manages a memory segment as a pool of physical pages that are either 4 KB or 64 KB in size. Surface data is copied into and out of a memory segment using *Fill*/*Transfer*/*Discard*/*FillVirtual*/*TransferVirtual* paging operations.
+
+The CPU can access the content of a memory segment in one of two ways:
+
+* A memory segment can be visible in the physical address space of the CPU, in which case *VidMm* simply maps CPU virtual addresses directly to allocations within the segment.
+* Starting in WDDM 2.0, *VidMm* also supports accessing the content of a memory segment through a programmable CPU host aperture associated with that segment.
+
+### Aperture Segments
+
 An aperture segment is a global page table used to make discontinuous system memory pages appears contiguous from the perspective of a GPU engine.
 
-In WDDM v2, a single aperture segment must be reported.
+In WDDM 2.0, a single aperture segment must be reported.
 
-### <span id="System_Memory_Segment"></span><span id="system_memory_segment"></span><span id="SYSTEM_MEMORY_SEGMENT"></span>System Memory Segment  
-The system memory segment is an implicit segment representing system memory references (*i.e.* a guest physical address). The system memory segment is not directly enumerated by the kernel mode driver. It is implicitly enumerated by the video memory manager and always gets assigned `SegmentId==0`. To place an allocation in the system memory segment, the kernel-mode driver needs to use the aperture segment ID.
+### System Memory Segments
 
-## <span id="Physical_memory_reference"></span><span id="physical_memory_reference"></span><span id="PHYSICAL_MEMORY_REFERENCE"></span>Physical memory reference
+The system memory segment is an implicit segment representing system memory references (that is, a guest physical address). The KMD doesn't directly enumerate a system memory segment. Instead, *VidMm* implicitly enumerates it and always assigns `SegmentId==0`. To place an allocation in the system memory segment, the KMD needs to use the aperture segment ID.
 
+## Physical memory reference
 
 In the DDI, physical memory references always take the form of a segment ID-segment offset pair.
 
-## <span id="Accessing_allocations_by_physical_address"></span><span id="accessing_allocations_by_physical_address"></span><span id="ACCESSING_ALLOCATIONS_BY_PHYSICAL_ADDRESS"></span>Accessing allocations by physical address
+## Accessing allocations by physical address
 
+GPU engines that don't support GPU virtual addressing need to access allocations through their physical addresses. This requirement has implications on how an allocation gets assigned resources from a segment. Physical references imply that an allocation must be allocated either contiguously in a memory segment or occupy a contiguous range in the aperture segment.
 
-GPU engines, which don't support GPU virtual addressing, need to access allocations through their physical addresses. This has implication on how an allocation gets assigned resources from a segment. Physical references imply that an allocation must be allocated either contiguously in a memory segment or occupy a contiguous range in the aperture segment.
+To avoid unnecessary and expensive contiguous allocations, the KMD must explicitly identify allocations that require a rendering engine to access them physically. KMD does so by setting the [**DXGK_ALLOCATIONINFOFLAGS2**](./dxgk-allocationinfoflags2.md)::**AccessedPhysically** flag during allocation creation.
 
-To avoid unnecessary and expensive contiguous allocations, the kernel mode driver must explicitly identify allocations, which require to be accessed physically by a rendering engine, by setting the new [**DXGK\_ALLOCATIONINFOFLAGS2**](./dxgk-allocationinfoflags2.md)::**AccessedPhysically** flag during allocation creation.
+Such allocations will be mapped to the aperture segment when they're resident in system memory. The allocations will be contiguous when resident in a memory segment. Allocations created this way can be referenced through the allocation list on engines, operating in the physical addressing mode.
 
-Such allocations will be mapped to the aperture segment when resident in system memory. The allocations will be contiguous when resident in a memory segment. Allocations, created this way, may be referenced through the allocation list on engines, operating in the physical addressing mode.
+For allocations that don't have this flag set, *VidMm* will allocate them as a set of pages in a memory segment or a set of pages in system memory, either of which are accessed through GPU virtual addresses. Allocations created this way can't be referenced through the allocation list. Any command buffer submission referencing the allocation that way will be rejected.
 
-Allocations, which do not have this flags set, will be allocated as a set of pages in a memory segment or a set of pages in system memory, either of which are accessed through GPU virtual addresses. Allocations created this way cannot be referenced through the allocation list. Any command buffer submission referencing the allocation that way will be rejected.
+Primary surfaces, which are the main images displayed by a computer, are implicitly physically accessed by the display controller. These surfaces will be allocated contiguously in a memory segment or mapped into the aperture segment when displayed. The KMD should only set the **AccessedPhysically** flags when its rendering engine will access the allocation physically. The distinction between the implicit physical access on primary surface and the explicit flags is when the allocation will be mapped into the aperture:
 
-Primary surfaces are understood to be accessed physically by the display controller and will be allocated contiguously in a memory segment or mapped into the aperture segment when displayed. The kernel mode driver should only set the **AccessedPhysically** flags when a rendering engine will access the allocation physically. The distinction between the implicit physical access on primary surface and the explicit flags is when the allocation will be mapped into the aperture. When the **AccessedPhysically** flags is set, the allocation will be mapped into the aperture whenever it is resident. Primary surfaces, which do not have this flags set, will be mapped into the aperture only when being displayed. This helps to remove pressure on the aperture segment, as typically there are only a few primary surface actively being displayed, while there may be a very large number of them existing and being rendered to (i.e. all *FlipEx* swapchains are created as primary and potentially displayable surfaces in *dFlip*/*iFlip* scenarios).
+* When the **AccessedPhysically** flags is set, the allocation will be mapped into the aperture whenever it's resident.
 
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"></td>
-<td align="left">AccessedPhysically==0</td>
-<td align="left">AccessedPhysically==1</td>
-<td align="left">Primary && AccessedPhysically==0</td>
-</tr>
-<tr class="even">
-<td align="left">Memory Segment</td>
-<td align="left"><p><strong>Set of pages</strong></p>
-<p>Only GPU virtual access is allowed.</p></td>
-<td align="left"><p><strong>Contiguous</strong></p>
-<p>GPU physical access is allowed</p></td>
-<td align="left"><p><strong>Contiguous</strong></p>
-<p>Only GPU virtual access is allowed by rendering engines.</p></td>
-</tr>
-<tr class="odd">
-<td align="left">Aperture Segment</td>
-<td align="left"><p><strong>Not mapped</strong></p>
-<p>System memory pages, only mapped by GPU page tables, not to the aperture segment.</p>
-<p>Only GPU virtual access is allowed.</p></td>
-<td align="left"><p><strong>Mapped when resident</strong></p>
-<p>GPU physical access is allowed.</p></td>
-<td align="left"><p><strong>Mapped when displayed</strong></p>
-<p>Only GPU virtual access is allowed by rendering engines.</p></td>
-</tr>
-</tbody>
-</table>
+* Primary surfaces that don't have this flag set will be mapped into the aperture only when being displayed. This approach helps to remove pressure on the aperture segment. That is, typically there are only a few primary surfaces actively being displayed, while a large number of them might exist and be rendered to. For example, all *FlipEx* swapchains are created as primary and potentially displayable surfaces in *dFlip*/*iFlip* scenarios.
 
- 
+The following table summarizes how different types of allocations within GPU segments are accessed based on their physical access requirements.
 
+| Segment type | AccessedPhysically==0 | AccessedPhysically==1 | Primary && AccessedPhysically==0 |
+| ------------ | --------------------- | --------------------- | -------------------------------- |
+| Memory Segment | Set of pages. Only GPU virtual access is allowed. | Contiguous. GPU physical access is allowed | Contiguous. Only GPU virtual access is allowed by rendering engines. |
+| Aperture Segment | Not mapped. System memory pages, only mapped by GPU page tables, not to the aperture segment. Only GPU virtual access is allowed. | Mapped when resident. GPU physical access is allowed. | Mapped when displayed. Only GPU virtual access is allowed by rendering engines. |

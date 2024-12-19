@@ -2,7 +2,7 @@
 title: Debug Windows Drivers Step-By-Step Lab (Echo Kernel Mode)
 description: This lab introduces the WinDbg kernel debugger. Use WinDbg to debug the echo kernel mode sample driver code.
 keywords: ["debug lab", "step-by-step", "ECHO"]
-ms.date: 08/26/2023
+ms.date: 12/12/2024
 ---
 
 # Debug Windows drivers step-by-step lab (echo kernel mode)
@@ -302,16 +302,16 @@ In this section, download and build the KMDF echo driver.
 
 Typically, you would be working with your own driver code when you use WinDbg. To become familiar with WinDbg operation, this lab uses the KMDF Template "Echo" sample driver. The source code is available to help understand the information that's displayed in WinDbg. This sample is also used to illustrate how you can single-step through native kernel-mode code. This technique can be valuable for debugging complex kernel-mode code issues.
 
-To download and build the Echo sample audio driver:
+- View the [echo sample in GitHub](https://github.com/Microsoft/Windows-driver-samples/tree/main/general/echo/kmdf/).
 
-1. Download and extract the KMDF Echo sample from GitHub.
+- [Read](https://github.com/microsoft/Windows-driver-samples/blob/main/general/echo/kmdf/README.md) about the sample.
 
-   - View the [echo sample in GitHub](https://github.com/Microsoft/Windows-driver-samples/tree/main/general/echo/kmdf/).
+- Browse [all Windows driver samples](https://github.com/Microsoft/Windows-driver-samples).
 
-   - [Read](https://github.com/microsoft/Windows-driver-samples/blob/main/general/echo/kmdf/README.md) about the sample.
+To download and build the Echo sample driver:
 
-   - Browse [all Windows driver samples](https://github.com/Microsoft/Windows-driver-samples).
-
+1. First, download and extract the *KMDF Echo Sample* from GitHub.
+   
     The KMDF Echo sample is located in the *general* folder.
 
     :::image type="content" source="images/debuglab-image-github.png" alt-text="Screenshot of GitHub windows-driver-samples page highlighting general folder and download zip button.":::

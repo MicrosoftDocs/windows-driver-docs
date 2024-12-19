@@ -1,7 +1,7 @@
 ---
 title: PnPUtil
 description: PnPUtil
-ms.date: 01/08/2024
+ms.date: 12/06/2024
 ---
 
 # PnPUtil
@@ -19,3 +19,10 @@ PnPUtil is included in the `%windir%\system32` directory of every version of Win
 
 - Open a **Command Prompt** window (**Run as administrator**).
 - Type `pnputil /?` to view command options. See [**PnPUtil Command Syntax**](pnputil-command-syntax.md) for more information.
+
+## See also 
+
+To learn how to use PnpUtil, see [PnPUtil Command Syntax](pnputil-command-syntax.md).
+
+For examples of how to use the PnPUtil tool, see [PnPUtil Examples](pnputil-examples.md).
+

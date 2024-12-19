@@ -1,13 +1,13 @@
 ---
 title: Edit Boot Options
-description: This section is a practical guide on how to edit boot options on a computer and suggests a step-by-step procedure for customizing the basic elements of boot options.
+description: This section is a guide on how to edit boot options on a computer and suggests a step-by-step procedure for customizing the basic elements of boot options.
 keywords:
 - boot options WDK , editing
 - editing boot options
 - Bootcfg tool
 - custom boot options WDK
 - boot entries WDK
-ms.date: 12/27/2023
+ms.date: 12/12/2024
 ---
 
 # Edit boot options

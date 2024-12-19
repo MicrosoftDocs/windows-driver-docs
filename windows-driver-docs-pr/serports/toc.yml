@@ -79,7 +79,7 @@
       href: features-of-serial-and-serenum.md
     - name: "Configuration of Serial Devices and Drivers"
       href: configuration-of-serial-devices-and-drivers.md
-    - name: "Configuration of COM Ports"
+    - name: "Configuration of COM Ports for driver developers"
       href: configuration-of-com-ports.md
     - name: "Configuration of Non-Pnp device to an RS-232 Port"
       href: configuration-of-non-plug-and-play-serial-device-connected-to-an-rs-23.md

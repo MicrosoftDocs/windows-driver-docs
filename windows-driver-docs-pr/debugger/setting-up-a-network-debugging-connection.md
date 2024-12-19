@@ -2,7 +2,7 @@
 title: Set Up KDNET Network Kernel Debugging Manually
 description: Learn how Debugging Tools for Windows supports kernel debugging over a network. This article describes how to set up network debugging manually.
 keywords: ["Network debugging", "Ethernet debugging", "Docking station", "Setting Up Kernel-Mode Debugging over a Network Cable Manually"]
-ms.date: 01/20/2022
+ms.date: 12/12/2024
 ---
 
 # Set up KDNET network kernel debugging manually
@@ -24,7 +24,7 @@ Debugging over a network has the following advantages compared to debugging over
 
 ## Supported network adapters
 
-The host computer can use any network adapter, but the target computer must use a network adapter that's supported by Debugging Tools for Windows. For a list of supported network adapters, see [Supported Ethernet NICs for network kernel debugging in Windows 10](supported-ethernet-nics-for-network-kernel-debugging-in-windows-10.md) and [Supported Ethernet NICs for network kernel debugging in Windows 8.1](supported-ethernet-nics-for-network-kernel-debugging-in-windows-8-1.md).
+The host computer can use any network adapter, but the target computer must use a network adapter that's supported by Debugging Tools for Windows. For a list of supported network adapters, see [Supported Ethernet NICs for network kernel debugging in Windows 11](supported-ethernet-nics-for-network-kernel-debugging-in-windows-11.md) and [Supported Ethernet NICs for network kernel debugging in Windows 10](supported-ethernet-nics-for-network-kernel-debugging-in-windows-10.md).
 
 ## Install Debugging Tools for Windows
 

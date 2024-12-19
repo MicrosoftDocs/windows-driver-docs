@@ -1,7 +1,7 @@
 ---
 title: How to Manage the PFA Memory List
 description: How to Manage the PFA Memory List
-ms.date: 03/03/2023
+ms.date: 12/17/2024
 ---
 
 # How to Manage the Predictive Failure Analysis (PFA) Memory List
@@ -13,7 +13,7 @@ PFA stores (or *persists*) the page frame number (PFN) for the memory page.
 
 
 Starting in Windows version 19042, bad memory pages are stored in the registry under `HKLM\SYSTEM\CurrentControlSet\Control\WHEA\BadPages`.
-In previous versions of Windows, this information is stored in the BCD system store.
+In previous versions of Windows, this information is stored in the boot configuration data (BCD) system store.
 
 This list contains the PFNs for all memory pages that the PFA has predicted are likely to fail.
 When Windows starts, it excludes these memory pages from system use.
@@ -22,13 +22,13 @@ When Windows starts, it excludes these memory pages from system use.
 > There is no industry standard for mapping a physical memory PFN to a specific physical memory module. Thus, WHEA cannot provide information about which memory modules are failing.
 
 When the failing system memory is replaced, a system administrator must clear this list manually by updating the registry or using the BCDEdit command-line tool.
-If the list is not cleared, Windows continues to exclude the memory pages in the list even if the failing memory modules have been replaced.
+If the list isn't cleared, Windows continues to exclude the memory pages in the list even if the failing memory modules have been replaced.
 
-This page describes how to view and clear page frame numbers from the bad memory lists. To perform the steps below, you'll need an elevated command prompt:
+This page describes how to view and clear page frame numbers from the bad memory lists. To perform the following steps, you need an elevated command prompt:
 
-1. Click **Start**, point to **All Programs**, and then click **Accessories**.
-2. Right-click **Command Prompt** and select **Run as administrator**.
-3. If the User Account Control dialog box is displayed, click **Yes** in the dialog box.
+1. Select **Start**, point to **All Programs**, and then select **Accessories**.
+2. Right-select **Command Prompt** and select **Run as administrator**.
+3. If the User Account Control dialog box is displayed, select **Yes** in the dialog box.
 
 ## Viewing Page Frame Numbers (PFNs) in the registry
 
@@ -105,7 +105,7 @@ RAM Defects
 identifier              {badmemory}
 ```
 
-If ECC memory pages are predicted to fail, the **{badmemory}** object contains a **badmemorylist** value. This value contains the list of PFNs for the memory pages that PFA predicts will fail, as shown in the following example:
+If ECC memory pages are predicted to fail, the **{badmemory}** object contains a **badmemorylist** value. This value contains the list of PFNs for the memory pages that PFA predicts to fail, as shown in the following example:
 
 ```cmd
 C:\Windows\system32>bcdedit /enum {badmemory}

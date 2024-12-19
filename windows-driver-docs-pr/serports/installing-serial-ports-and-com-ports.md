@@ -5,7 +5,7 @@ keywords:
 - serial ports WDK
 - COM ports WDK serial devices
 - Serial driver WDK , COM ports
-ms.date: 03/17/2022
+ms.date: 12/13/2024
 ---
 
 # Programming Installation of Serial Ports and COM Ports
@@ -17,10 +17,10 @@ For most devices, the Ports [device setup class](../install/overview-of-device-s
 
 - Provide an INF file that specifies the Ports device setup class and the Serial function driver as the service for the port.
 
-- To configure a serial port as COM port, comply with the requirements that are defined in [Configuration of COM Ports](configuration-of-com-ports.md).
+- To configure a serial port as COM port, comply with the requirements that are defined in [Configuration of COM Ports for driver developers](configuration-of-com-ports.md).
 
 For more information about installing serial ports and COM ports using the Ports device setup class and the Serial function driver, see the following topics:
 
 [Programming Installation for Plug and Play Serial Ports and COM Ports](installing-plug-and-play-serial-ports-and-com-ports.md)
 
-If you do a custom installation of a COM port, you must comply with the COM port requirements that are defined in [Configuration of COM Ports](configuration-of-com-ports.md).
+If you do a custom installation of a COM port, you must comply with the COM port requirements that are defined in [Configuration of COM Ports for driver developers](configuration-of-com-ports.md).

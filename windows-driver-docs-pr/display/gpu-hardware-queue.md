@@ -1,12 +1,12 @@
 ---
-title: GPU Hardware Queue
-description: This topic provides information about what the user views when looking at the GPU Hardware Queue. 
-ms.date: 05/10/2022
+title: GPUView GPU Hardware Queue
+description: This article provides information about what the user views when looking at the GPU Hardware Queue. 
+ms.date: 12/18/2024
 ---
 
-# GPU Hardware Queue
+# GPUView GPU hardware queue
 
-This topic provides information about what the user views when looking at the GPU Hardware Queue. This first diagram is a simple zoomed-in view of the GPU Hardware Queue.
+This article describes what the user views when looking at the GPU Hardware Queue with GPUView. This first diagram is a simple zoomed-in view of the GPU Hardware Queue.
 
 :::image type="content" source="images/gpu-hardware-queue01.png" alt-text="Zoomed-in view of a GPU Hardware Queue.":::
 
@@ -14,13 +14,16 @@ The GPU Hardware Queue represents workflow on the hardware. In these workflow qu
 
 :::image type="content" source="images/gpu-hardware-queue02.png" alt-text="Diagram showing workflow queues with rectangles representing work in progress and waiting.":::
 
-In the preceding diagram, the DMA packet inside the red ellipse represents the work that the hardware was executing, and the DMA packet in the black ellipse represents the second packet of two that the video scheduler placed down on the hardware. They are packets in waiting.
+In the preceding diagram:
+
+* The DMA packet in the red ellipse represents the work that the hardware was executing.
+* The DMA packet in the black ellipse represents the second packet of two that the video scheduler placed down on the hardware. They're packets in waiting.
 
 :::image type="content" source="images/gpu-hardware-queue03.png" alt-text="Diagram illustrating the transition of DMA packets in the GPU Hardware Queue.":::
 
-Notice that the end of a rectangle does not mean the end of the functional lifetime of the object. Here, inside the red ellipse, when the hardware finished with the present packet (item on the bottom), the DMA packet in waiting now transitions into the DMA packet being processed by the hardware. At this transition point, the topmost DMA packet in waiting advances (down) one step closer to actually running on the hardware.
+Notice that the end of a rectangle doesn't mean the end of the functional lifetime of the object. Here, inside the red ellipse, when the hardware finished with the present packet (item on the bottom), the DMA packet in waiting now transitions into the DMA packet that the hardware is processing. At this transition point, the topmost DMA packet in waiting advances (down) one step closer to actually running on the hardware.
 
-Zooming out just a little bit and left-clicking the top DMA packet produces the following diagram.
+Zooming out slightly and left-selecting the top DMA packet produces the following diagram.
 
 :::image type="content" source="images/gpu-hardware-queue04.png" alt-text="Diagram of a selected DMA packet with three transitional points in the GPU Hardware Queue.":::
 
@@ -32,7 +35,7 @@ The color coding is also important. The color for each DMA packet corresponds to
 
 Zooming out a little from the previous diagram, the associated process is (6584) SchBillboard.exe. It has the matching color and matching selection in process Context CPU Queue.
 
-There is also the text in the upper right-hand corner of the GPU Hardware Queue area. It can be seen in the following diagram.
+There's also the text in the upper right-hand corner of the GPU Hardware Queue area. It can be seen in the following diagram.
 
 :::image type="content" source="images/gpu-hardware-queue06.png" alt-text="Screenshot of text in the upper right-hand corner of the GPU Hardware Queue area.":::
 
@@ -46,8 +49,8 @@ Four types of DMA packets are found in the GPU Hardware Queue.
 
 The most common are Standard DMA Packets and Present Packets. Both of these packets represent client requests on the hardware.
 
-The two types of DMA packets that are less common are Paging Packets and Preemption Packets. Paging Packets are always red and Preemption Packets are always black. Both these packets are placed in the GPU Hardware Queue on behalf of the video scheduler. Paging Packets occur when data needed for processing needs to be pre-fetched. Preemption Packets are generated when the scheduler determines that it needs to abort the current work flow to provide some higher-priority content.
+The two types of DMA packets that are less common are Paging Packets and Preemption Packets. Paging Packets are always red and Preemption Packets are always black. Both these packets are placed in the GPU Hardware Queue on behalf of the video scheduler. Paging Packets occur when data needed for processing needs to be prefetched. Preemption Packets are generated when the scheduler determines that it needs to abort the current work flow to provide some higher-priority content.
 
 ## Selectable Areas
 
-All DMA Packets are selectable via a left mouse click. All selectable items show this capability through changing the mouse pointer into the hand icon. When a DMA Packet is selected, the **Object Details** dialog is launched containing information about the particular DMA packet selected.
+All DMA Packets are selectable via the left mouse button. All selectable items show this capability through changing the mouse pointer into the hand icon. When a DMA Packet is selected, the **Object Details** dialog is launched containing information about the particular DMA packet selected.

@@ -1,7 +1,7 @@
 ---
 title: USB Audio Device Not Playing
 description: This article discusses the "Audio services not responding" error.
-ms.date: 12/27/2023
+ms.date: 12/13/2024
 ---
 
 # USB audio device not playing

@@ -1,7 +1,7 @@
 ---
 title: PnPUtil Examples
 description: PnPUtil Examples
-ms.date: 01/08/2024
+ms.date: 12/12/2024
 ---
 
 # PnPUtil Examples

@@ -7,7 +7,7 @@ keywords:
 - tracing WDK , Tracelog
 - event tracing controller WDK Tracelog
 - trace session management WDK Tracelog
-ms.date: 04/20/2017
+ms.date: 12/12/2024
 ---
 
 # Tracelog
@@ -15,36 +15,12 @@ ms.date: 04/20/2017
 
 Tracelog (Tracelog.exe) is an event tracing controller that runs in a Command Prompt window. This section describes Tracelog, explains its command syntax, and provides practical examples for its use.
 
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Where can I get Tracelog?</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Tracelog (Tracelog.exe) is included when you install the WDK, Visual Studio, and the Windows SDK for desktop apps. For information about downloading the kits, see <a href="/windows-hardware/drivers/download-the-wdk" data-raw-source="[Windows Hardware Downloads](../download-the-wdk.md)">Windows Hardware Downloads</a>.</p>
-<p><strong>Windows Driver Kit (WDK) 8</strong> (installation path)</p>
-<p>%WindowsSdkDir%\tools\x64\tracelog.exe</p>
-<p>%WindowsSdkDir%\tools\x86\tracelog.exe</p>
-<p><strong>Windows Driver Kit (WDK) 8.1</strong> (installation path)</p>
-<p>%WindowsSdkDir%\bin\x64\tracelog.exe</p>
-<p>%WindowsSdkDir%\bin\x86\tracelog.exe</p>
-<div class="alert">
-<strong>Note</strong>  The Visual Studio environment variable, %WindowsSdkDir%, represents the path to the Windows kits directory where the kits are installed, for example, C:\Program Files (x86)\Windows Kits\10.
-</div>
-</td>
-</tr>
-</tbody>
-</table>
+Tracelog (Tracelog.exe) is included when you install the WDK, Visual Studio, and the Windows SDK for desktop apps. For information about downloading the kits, see <a href="/windows-hardware/drivers/download-the-wdk" data-raw-source="[Windows Hardware Downloads](../download-the-wdk.md)">Windows Hardware Downloads</a>.</p>
 
- 
+After installation TraceLog.exe will be located in the bin directory of that version of the kit. Select the processor you desire. For example for the x64 version: `C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\x64>`
 
-## <span id="What_you_can_do_with_Tracelog"></span><span id="what_you_can_do_with_tracelog"></span><span id="WHAT_YOU_CAN_DO_WITH_TRACELOG"></span>What you can do with Tracelog
 
+## What you can do with Tracelog
 
 You can use Tracelog in a Command Prompt window as an event tracing controller.
 
@@ -74,7 +50,7 @@ Tracelog runs on Windows 7 and later versions of Windows.
 
 Many of the features of Tracelog are also available in [TraceView](traceview.md), a tool included in the Windows Driver Kit (WDK) that has a graphical user interface in addition to a command-line interface.
 
-## <span id="in_this_section"></span>In this section
+## In this section
 
 -   [**Tracelog Command Syntax**](tracelog-command-syntax.md)
 -   [Tracelog Displays](tracelog-displays.md)

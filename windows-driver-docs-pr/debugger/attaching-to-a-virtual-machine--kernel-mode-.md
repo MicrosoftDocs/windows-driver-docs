@@ -2,7 +2,7 @@
 title: Setting Up Kernel-Mode Debugging of a Virtual Machine Manually Using a Virtual COM Port
 description: Debugging Tools for Windows supports kernel debugging of a virtual machine using a Virtual COM Port.
 keywords: ["virtual machine debugging", "Virtual PC debugging", "VMware debugging"]
-ms.date: 04/23/2019
+ms.date: 12/13/2024
 ---
 
 # Setting Up Kernel-Mode Debugging of a Virtual Machine Manually using a Virtual COM Port
@@ -11,8 +11,7 @@ Debugging Tools for Windows supports kernel debugging of a virtual machine. The 
 
 Using KDNET virtual networking is a faster option and is recommended. For more information, see [Setting Up Network Debugging of a Virtual Machine with KDNET](setting-up-network-debugging-of-a-virtual-machine-host.md).
 
-
-## <span id="Setting_Up_the_Target_Virtual_Machine"></span><span id="setting_up_the_target_virtual_machine"></span><span id="SETTING_UP_THE_TARGET_VIRTUAL_MACHINE"></span>Setting Up the Target Virtual Machine
+## Setting Up the Target Virtual Machine
 
 The computer that runs the debugger is called the *host computer*, and the virtual machine being debugged is called the *target virtual machine*.
 
@@ -33,7 +32,7 @@ The computer that runs the debugger is called the *host computer*, and the virtu
 3. Start the debugger in elevated mode, for example from an administrator command prompt. The debugger must be running in elevated mode when debugging a VM over a serial pipe.  Once the debugger is attached and running, reboot the target VM.
 
 
-## <span id="starting_the_debugger"></span><span id="STARTING_THE_DEBUGGER"></span>Starting the Debugging Session Using WinDbg
+## Starting the Debugging Session Using WinDbg
 
 On the host computer, open WinDbg as an Administrator. The debugger must be running in elevated mode when debugging a VM over a serial pipe. On the **File** menu, choose **Kernel Debug**. In the Kernel Debugging dialog box, open the **COM** tab. Check the **Pipe** box, and check the **Reconnect** box. For **Baud Rate**, enter 115200. For **Resets**, enter 0.
 
@@ -55,8 +54,7 @@ If the debugger is running on a different physical computer from the virtual mac
 
 **windbg -k com:pipe,port=\\\\**<em>VMHost</em>**\\pipe\\**<em>PipeName</em>**,resets=0,reconnect**
 
-## <span id="Starting_the_Debugging_Session_Using_KD"></span><span id="starting_the_debugging_session_using_kd"></span><span id="STARTING_THE_DEBUGGING_SESSION_USING_KD"></span>Starting the Debugging Session Using KD
-
+## Starting the Debugging Session Using KD
 
 To debug a virtual machine that is running on the same physical computer as the debugger, enter the following command in an *elevated* Command Prompt window.
 
@@ -66,8 +64,7 @@ To debug a virtual machine that is running on a different physical computer from
 
 **kd -k com:pipe,port=\\\\**<em>VMHost</em>**\\pipe\\**<em>PipeName</em>**,resets=0,reconnect**
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
-
+## Parameters
 
 <span id="________VMHost"></span><span id="________vmhost"></span><span id="________VMHOST"></span> *VMHost*  
 Specifies the name of the computer that the virtual machine is running on.
@@ -83,8 +80,7 @@ Causes the debugger to automatically disconnect and reconnect the pipe if a read
 
 For more information about additional command-line options, see [**KD Command-Line Options**](kd-command-line-options.md) or [**WinDbg Command-Line Options**](windbg-command-line-options.md).
 
-## <span id="generation_2_virtual_machines"></span><span id="GENERATION_2_VIRTUAL_MACHINES"></span>Generation 2 Virtual Machines
-
+## Generation 2 Virtual Machines
 
 By default, COM ports are not presented in generation 2 virtual machines. You can add COM ports through PowerShell or WMI. For the COM ports to be displayed in the Hyper-V Manager console, they must be created with a path.
 
@@ -104,7 +100,6 @@ To enable kernel debugging using a COM port on a generation 2 virtual machine, f
 
    **Set-VMComPort –VMName TestVM 1 \\\\.\\pipe\\TestPipe**
 
-
 3. Once the debugger is attached and running, stop and cold start the VM to activate the COM ports in the VM.　The emulated UARTS aren’t available for debugging unless at least one is actually configured with a pipe name and they cannot be hot-added.
 
 4. Re-enable secure boot, once you are done updating the configuration changes.
@@ -112,15 +107,14 @@ To enable kernel debugging using a COM port on a generation 2 virtual machine, f
 For more information about Generation 2 VMs, see [Generation 2 Virtual Machine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282285(v=ws.11)).
 
 
-## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
-
+## Remarks
 
 If the target computer has stopped responding, the target computer is still stopped because of an earlier kernel debugging action, or you used the **-b** [command-line option](command-line-options.md), the debugger breaks into the target computer immediately.
 
 Otherwise, the target computer continues running until the debugger orders it to break.
 
 
-## <span id="Firewalls"></span>Troubleshooting Firewalls and Network Access Issues
+## Troubleshooting Firewalls and Network Access Issues
 
 Your debugger (WinDbg or KD) must have access through the firewall. This can even be the case for virtual serial ports that are supported by network adapters.
 
@@ -132,15 +126,13 @@ Depending on the specifics of the VM in use, you may need to change the network 
 
 You can use the Control Panel to allow access through the Windows firewall. Open Control Panel > System and Security, and select Allow an app through Windows Firewall. In the list of applications, locate *Windows GUI Symbolic Debugger* and *Windows Kernel Debugger*. Use the checkboxes to allow those two applications through the firewall. Restart your debugging application (WinDbg or KD).
 
+## Third Party VMs
 
-## <span id="Third_Party_VMs"></span>Third Party VMs
+### VMWare  
 
-**VMWare**  
 If you restart the virtual machine by using the VMWare facilities (for example, the reset button), exit WinDbg, and then restart WinDbg to continue debugging. During virtual machine debugging, VMWare often consumes 100% of the CPU.
-
  
-
-## <span id="related_topics"></span>See also
+## See also
 
 [Setting Up Network Debugging of a Virtual Machine with KDNET](setting-up-network-debugging-of-a-virtual-machine-host.md)
 

@@ -1,14 +1,14 @@
 ---
 title: Requesting and Granting Oplocks
 description: Requesting and granting oplocks
-ms.date: 07/07/2023
+ms.date: 12/18/2024
 ---
 
 # Requesting and granting oplocks
 
 When the network redirector accesses files on remote servers, it requests the oplock from the remote server. Client applications directly request oplocks only when the lock is intended for a file on the local server.
 
-[Oplocks](oplock-overview.md) are requested through [FSCTLs](about-fsctls.md). The following FSCTLs are used for the different [oplock types](oplock-types.md), which both user-mode applications and kernel-mode drivers can issue:
+[Oplocks](oplock-overview.md) are requested through [FSCTLs](about-fsctls.md). The following FSCTLs are used for the different [oplock types](oplock-types.md), which both user-mode applications and kernel-mode drivers can issue.
 
 * To request legacy oplocks:
   * [FSCTL_REQUEST_OPLOCK_LEVEL_1](fsctl-request-oplock-level-1.md)
@@ -40,15 +40,13 @@ If the requested oplock can be granted, the file system returns STATUS_PENDING. 
 
 If the oplock can't be granted, the file system returns an appropriate error code is returned. The most commonly returned error codes are STATUS_OPLOCK_NOT_GRANTED and STATUS_INVALID_PARAMETER (and their equivalent user-mode analogs).
 
-The Filter oplock allows an application to "back out" when other applications/clients try to access the same stream. This mechanism allows an application to access a stream without causing other accessors of the stream to receive sharing violations when attempting to open the stream. To avoid sharing violations, a special three-step procedure should be used to request a Filter oplock (FSCTL_REQUEST_FILTER_OPLOCK):
+The Filter oplock allows an application to "back out" when other applications/clients try to access the same stream. This mechanism allows an application to access a stream without causing other accessors of the stream to receive sharing violations when attempting to open the stream. To avoid sharing violations, the following three-step procedure should be used to request a Filter oplock (FSCTL_REQUEST_FILTER_OPLOCK):
 
-1. Open the file with a required access of FILE_READ_ATTRIBUTES and a share mode of FILE_SHARE_READ | FILE_SHARE_WRITE | FILE_SHARE_DELETE.
+1. Open the file with a required access of FILE_READ_ATTRIBUTES and a share mode of FILE_SHARE_READ | FILE_SHARE_WRITE | FILE_SHARE_DELETE. The handle opened in this step won't cause other applications to receive sharing violations because it's open only for attribute access (FILE_READ_ATTRIBUTES) and not data access (FILE_READ_DATA). This handle is suitable for requesting the Filter oplock, but not for performing actual I/O on the data stream.
 
-2. Request a Filter oplock on the handle from step 1.
+2. Request a Filter oplock on the handle from step 1. The oplock granted in this step allows the oplock holder to "get out of the way" without causing a sharing violation to another application that attempts to access the stream.
 
-3. Open the file again for read access.
-
-The handle opened in step 1 won't cause other applications to receive sharing violations, since it's open only for attribute access (FILE_READ_ATTRIBUTES), and not data access (FILE_READ_DATA). This handle is suitable for requesting the Filter oplock, but not for performing actual I/O on the data stream. The handle opened in step 3 allows the holder of the oplock to perform I/O on the stream; the oplock granted in step 2 allows the holder of the oplock to "get out of the way" without causing a sharing violation to another application that attempts to access the stream.
+3. Open the file again for read access. The handle opened in this step allows the oplock holder to perform I/O on the stream.
 
 The NTFS file system provides an optimization for this procedure through the FILE_RESERVE_OPFILTER create option flag. If this flag is specified in step 1 of the previous procedure, it allows the file system to fail the create request with STATUS_OPLOCK_NOT_GRANTED if the file system can determine that step 2 will fail. If step 1 succeeds, there's no guarantee that step 2 will succeed, even if FILE_RESERVE_OPFILTER was specified for the create request.
 
@@ -115,7 +113,7 @@ The following table identifies the required conditions necessary to grant an opl
 <li>There are no current Byte Range Locks on the stream.
 <ul>
 <li>Else STATUS_OPLOCK_NOT_GRANTED is returned.</li>
-<li>Prior to Windows 7, the operating system verifies if a byte range lock ever existed on the stream since the last time it was opened, and fails the request if so.</li>
+<li>Before Windows 7, the operating system verifies if a byte range lock ever existed on the stream since the last time it was opened, and fails the request if so.</li>
 </ul></li>
 </ul>
 <p>If the current oplock state is:</p>
@@ -146,7 +144,7 @@ The following table identifies the required conditions necessary to grant an opl
 <li>Else STATUS_OPLOCK_NOT_GRANTED is returned.</li>
 </ul></li>
 </ul>
-<p>Be aware that if the current oplock state is:</p>
+<p>If the current oplock state is:</p>
 <ul>
 <li><p>No oplock: The request is granted.</p></li>
 <li>Level 2 and/or Read: The request is granted. You can have multiple Level 2/Read oplocks granted on the same stream at the same time.
@@ -213,7 +211,7 @@ The following table identifies the required conditions necessary to grant an opl
 <p>If the current oplock state is:</p>
 <ul>
 <li><p>No oplock: the request is granted.</p></li>
-<li>Read or Read-Write and the existing oplock has the same oplock key as the request: the existing oplock's IRP is completed with STATUS_OPLOCK_SWITCHED_TO_NEW_HANDLE, the request is granted.
+<li>Read or Read-Write and the existing oplock has the same oplock key as the request: the existing oplock's IRP is completed with STATUS_OPLOCK_SWITCHED_TO_NEW_HANDLE and the request is granted.
 <ul>
 <li>Else STATUS_OPLOCK_NOT_GRANTED is returned.</li>
 </ul></li>
@@ -236,7 +234,7 @@ The following table identifies the required conditions necessary to grant an opl
 <ul>
 <li>Else STATUS_OPLOCK_NOT_GRANTED is returned.</li>
 </ul></li>
-<li>If there are other open requests on the stream (even by the same thread) they must have the same oplock key.
+<li>If there are other open requests on the stream, even by the same thread, they must have the same oplock key.
 <ul>
 <li>Else STATUS_OPLOCK_NOT_GRANTED is returned.</li>
 </ul></li>
@@ -244,7 +242,7 @@ The following table identifies the required conditions necessary to grant an opl
 <p>If the current oplock state is:</p>
 <ul>
 <li><p>No oplock: the request is granted.</p></li>
-<li>Read, Read-Handle, Read-Write, or Read-Write-Handle and the existing oplock has the same oplock key as the request: the existing oplock's IRP is completed with STATUS_OPLOCK_SWITCHED_TO_NEW_HANDLE, the request is granted.
+<li>Read, Read-Handle, Read-Write, or Read-Write-Handle and the existing oplock has the same oplock key as the request: the existing oplock's IRP is completed with STATUS_OPLOCK_SWITCHED_TO_NEW_HANDLE and the request is granted.
 <ul>
 <li>Else STATUS_OPLOCK_NOT_GRANTED is returned.</li>
 </ul></li>
