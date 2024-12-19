@@ -1,6 +1,6 @@
 ---
 title: Windows Inbox Smart Card Minidriver
-description: This article describes required sections for INF file for smart card reader drivers for Microsoft Windows.
+description: Windows provides an inbox generic class minidriver that supports PIV-compliant smart cards and cards that implement the GIDS card edge.
 ms.date: 12/19/2024
 ---
 
