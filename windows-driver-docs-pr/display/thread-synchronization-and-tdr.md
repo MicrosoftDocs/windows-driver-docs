@@ -2,7 +2,7 @@
 title: Thread Synchronization and TDR
 description: Thread Synchronization and TDR
 keywords:
-* threading WDK display , TDR
+- threading WDK display , TDR
 - synchronization WDK display , TDR
 - TDR (timeout detection and recovery) WDK display , and thread synchronization
 - Windows Display Driver Model , WDDM , thread synchronization and TDR

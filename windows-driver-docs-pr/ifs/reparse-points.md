@@ -14,7 +14,7 @@ Reparse points are file system objects used to extend the attributes of a file s
 - User-defined data
 - A *reparse point tag* that uniquely identifies the file system filter driver that owns the reparse point. Microsoft assigns all reparse point tags. These tags are defined in *ntifs.h*. Some tags are reserved for Microsoft. [Non-Microsoft tags can be requested](reparse-point-tag-request.md).
 
-A filter can set or delete a reparse point on a file or directory by calling [**FltTagFileEx**](windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-flttagfileex) and [**FltUntagFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltuntagfile).
+A filter can set or delete a reparse point on a file or directory by calling [**FltTagFileEx**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-flttagfileex) and [**FltUntagFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltuntagfile).
 
 When a file system opens a file with a reparse point, it attempts to find the file system filter associated with the data format identified by the reparse tag. If present, the associated filter should process the file as directed by the reparse data.
 

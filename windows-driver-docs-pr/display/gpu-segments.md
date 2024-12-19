@@ -14,9 +14,9 @@ Starting in WDDM 2.0, a segmentation model is used to abstract GPU access to phy
 
 There are three types of segments:
 
-* [Memory Segments](#Memory_Segments)
-* [Aperture Segments](#Aperture_Segments)
-* [System Memory Segments](#System_Memory_Segments)
+* [Memory Segments](#memory-segments)
+* [Aperture Segments](#aperture-segments)
+* [System Memory Segments](#system-memory-segments)
 
 ### Memory Segments
 
