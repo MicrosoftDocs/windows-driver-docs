@@ -861,6 +861,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows-driver-docs-pr/storage/storage-drivers.md",
+      "redirect_url": "/windows-hardware/drivers/storage/storage-driver-architecture",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows-driver-docs-pr/storage/storage-wmi-classes.md",
       "redirect_url": "/windows-hardware/drivers/storage/introduction-to-storage-management",
       "redirect_document_id": false
