@@ -1,7 +1,7 @@
 ---
 title: Installing HID Clients
 description: This article describes the requirements for installing HIDClass devices in Microsoft Windows.
-ms.date: 01/11/2024
+ms.date: 12/19/2024
 ---
 
 # Installing HID clients
@@ -14,4 +14,4 @@ This article describes the following requirements for installing HIDClass device
 
 - In Windows Vista and later versions of Windows, vendors can enable the selective suspend feature for USB HID devices. This feature is defined in Revision 2.0 of the *Universal Serial Bus Specification.* For more information about how Windows supports the USB selective suspend feature, see [USB selective suspend](../usbcon/usb-selective-suspend.md).
 
-There are no other HIDClass-specific requirements for installing HIDClass devices. For more information about how to install devices, see [Device Installation Overview](../install/overview-of-device-and-driver-installation.md).
+There are no other HIDClass-specific requirements for installing HIDClass devices. For more information about how to install devices, see [Device and Driver Installation](../install/index.md).
