@@ -10,18 +10,16 @@ keywords:
 - user-mode header files WDK
 - kernel-mode header files WDK
 - files WDK header files
-ms.date: 04/20/2017
+ms.date: 12/09/2024
 ---
 
 # Header files in the Windows Driver Kit
 
-
-The [Windows Driver Kit (WDK)](../index.yml) contains all the header files (.h files) that you need to build kernel-mode and user-mode drivers. Header files are in the Include folder in your WDK installation folder. Example: C:\\Program Files (x86)\\Windows Kits\\10\\Include.
+The [API reference docs for Windows Driver Kit (WDK)](/windows-hardware/drivers/ddi/) contains all the header files (.h files) that you need to build kernel-mode and user-mode drivers. Header files are in the Include folder in your WDK installation folder. Example: C:\\Program Files (x86)\\Windows Kits\\10\\Include.
 
 The header files contain version information so that you can use the same set of header files regardless of which version of Windows your driver will run on.
 
-## <span id="Constants_that_represent_Windows_versions"></span><span id="constants_that_represent_windows_versions"></span><span id="CONSTANTS_THAT_REPRESENT_WINDOWS_VERSIONS"></span>Constants that represent Windows versions
-
+## Constants that represent Windows versions
 
 Header files in the WDK contain conditional statements that specify programming elements that are available only in certain versions of the Windows operating system. The versioned elements include functions, enumerations, structures, and structure members.
 
@@ -110,7 +108,7 @@ GetPrintExecutionData(
 
 In the example can see that the [**GetPrintExecutionData**](/windows/desktop/printdocs/getprintexecutiondata) function is available only in Windows 7 and later versions of Windows.
 
-## <span id="Header_files_for_the_Kernel_Mode_Driver_Framework"></span><span id="header_files_for_the_kernel_mode_driver_framework"></span><span id="HEADER_FILES_FOR_THE_KERNEL_MODE_DRIVER_FRAMEWORK"></span>Header files for the Kernel Mode Driver Framework
+## Header files for the Kernel Mode Driver Framework
 
 
 The WDK supports several versions of Windows, and it also supports several versions of the Kernel Mode Driver Framework (KMDF) and User Mode Driver Framework (UMDF). The versioning information in the WDK header files pertains to Windows versions, but not to KMDF or UMDF versions. Header files for different versions of KMDF and UMDF are placed in separate directories.
