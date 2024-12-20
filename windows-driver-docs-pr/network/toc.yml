@@ -1860,7 +1860,7 @@
       href: ndkpi-deferred-processing-scheme.md
   - name: Network Virtualization using Generic Routing Encapsulation (NVGRE) Task Offload
     items:
-    - name: About Network Virtualization using Generic Routing Encapsulation (NVGRE)
+    - name: Network Virtualization using Generic Routing Encapsulation (NVGRE)
       href: network-virtualization-using-generic-routing-encapsulation--nvgre--task-offload.md
     - name: Overview of Network Virtualization using Generic Routing Encapsulation (NVGRE) Task Offload
       href: overview-of-network-virtualization-using-generic-routing-encapsulation--nvgre--task-offload.md
@@ -2002,7 +2002,7 @@
         href: using-registry-values-to-enable-and-disable-task-offloading.md
       - name: Offloading Checksum Tasks
         href: offloading-checksum-tasks.md
-      - name: Offloading the Segmentation of Large TCP Packets
+      - name: Offload the Segmentation of Large TCP Packets
         href: offloading-the-segmentation-of-large-tcp-packets.md
       - name: UDP Segmentation Offload (USO)
         href: udp-segmentation-offload-uso-.md
