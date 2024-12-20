@@ -12,7 +12,7 @@ The following diagram shows a GRE-encapsulated packet. On the wire, NVGRE-encaps
 
 :::image type="content" source="images/nvgre.png" alt-text="Diagram comparing original packet and GRE-encapsulated packet. Both have MAC, IP header, TCP header, and TCP user data. GRE-encapsulated packet also has outer MAC, outer IP header, and GRE.":::
 
-NDIS 6.30 (available in Windows Server 2012 and later) introduces NVGRE Task Offload, which makes it possible to use NVGRE-formatted packets with:
+NDIS 6.30 (available in Windows Server 2012 and later) introduces NVGRE task offload, which makes it possible to use NVGRE-formatted packets with:
 
 - Large send offload (LSO)
 - Virtual machine queue (VMQ)
@@ -21,7 +21,7 @@ NDIS 6.30 (available in Windows Server 2012 and later) introduces NVGRE Task Of
 
 NDIS 6.85 introduces support for NVGRE with UDP segmentation offload (USO).
 
-**Note**: It's possible for a protocol driver to offload *mixed mode* packets, which means packets in which the inner and outer IP header versions are different. For example, a packet could have outer IP header as IPv6 and the inner IP header as IPv4.
+**Note**: It's possible for a protocol driver to offload *mixed mode* packets, which means packets in which the inner and outer IP header versions are different. For example, a packet could have outer IP header as IPv6 and the inner IP header as IPv4.
 
 **Note**: It's also possible for a protocol driver to offload an NVGRE-formatted packet that has no inner TCP or UDP header. For example, an IP packet could have an inner payload that is an Internet Control Message Protocol (ICMP) packet.
 

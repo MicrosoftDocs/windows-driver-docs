@@ -20,34 +20,34 @@ The following sections describe the rules for coalescing UDP packets and how to 
 
 URO coalescing can only be attempted on packets that meet all the following criteria:
 
-- **IpHeader.Version** is identical for all packets.
-- **IpHeader.SourceAddress** and **IpHeader.DestinationAddress** are identical for all packets.
-- **UdpHeader.SourcePort** and **UdpHeader.DestinationPort** are identical for all packets.
-- **UdpHeader.Length** is identical for all packets, except the last packet, which may be less.
-- **UdpHeader.Length** must be nonzero.
-- **UdpHeader.Checksum**, if non-zero, must be correct on all packets. This means that receive checksum offload must validate the packet.
-- **Layer 2 headers** must be identical for all packets.
+- `IpHeader.Version` is identical for all packets.
+- `IpHeader.SourceAddress` and `IpHeader.DestinationAddress` are identical for all packets.
+- `UdpHeader.SourcePort` and `UdpHeader.DestinationPort` are identical for all packets.
+- `UdpHeader.Length` is identical for all packets, except the last packet, which may be less.
+- `UdpHeader.Length` must be nonzero.
+- `UdpHeader.Checksum`, if non-zero, must be correct on all packets. This means that receive checksum offload must validate the packet.
+- `Layer 2 headers` must be identical for all packets.
 
 If the packets are IPv4, they must also meet the following criteria:
 
-- **IPv4Header.Protocol** == 17 (UDP) for all packets.
-- **EthernetHeader.EtherType** == 0x0800 for all packets.
-- The **IPv4Header.HeaderChecksum** on received packets must be correct. This means that receive checksum offload must validate the header.
-- **IPv4Header.HeaderLength** == 5 (no IPv4 Option Headers) for all packets.
-- **IPv4Header.ToS** is identical for all packets.
-- **IPv4Header.ECN** is identical for all packets.
-- **IPv4Header.DontFragment** is identical for all packets.
-- **IPv4Header.TTL** is identical for all packets.
-- **IPv4Header.TotalLength** == **UdpHeader.Length** + length(**IPv4Header**) for all packets.
+- `IPv4Header.Protocol` == 17 (UDP) for all packets.
+- `EthernetHeader.EtherType` == 0x0800 for all packets.
+- The `IPv4Header.HeaderChecksum` on received packets must be correct. This means that receive checksum offload must validate the header.
+- `IPv4Header.HeaderLength` == 5 (no IPv4 option headers) for all packets.
+- `IPv4Header.ToS` is identical for all packets.
+- `IPv4Header.ECN` is identical for all packets.
+- `IPv4Header.DontFragment` is identical for all packets.
+- `IPv4Header.TTL` is identical for all packets.
+- `IPv4Header.TotalLength` == `UdpHeader.Length`* + length(`IPv4Header`) for all packets.
 
 If the packets are IPv6, they must also meet the following criteria:
 
-- **IPv6Header.NextHeader** == 17 (UDP) for all packets (no extension headers).
-- **EthernetHeader.EtherType** == 0x86dd (IPv6) for all packets.
-- **IPv6Header.TrafficClass** and **IPv6Header.ECN** are identical for all packets.
-- **IPv6Header.FlowLabel** is identical for all packets.
-- **IPv6Header.HopLimit** is identical for all packets.
-- **IPv6Header.PayloadLength** == **UdpHeader.Length** for all packets.
+- `IPv6Header.NextHeader` == 17 (UDP) for all packets (no extension headers).
+- `EthernetHeader.EtherType` == 0x86dd (IPv6) for all packets.
+- `IPv6Header.TrafficClass` and `IPv6Header.ECN` are identical for all packets.
+- `IPv6Header.FlowLabel` is identical for all packets.
+- `IPv6Header.HopLimit` is identical for all packets.
+- `IPv6Header.PayloadLength` == `UdpHeader.Length` for all packets.
 
 ### URO packet structure
 
@@ -144,7 +144,7 @@ Consider the following issues when implementing a URO-capable miniport driver.
 
 ### Winsock URO API
 
-For information on the Winsock URO API, see [IPPROTO_UDP socket options](/windows/win32/winsock/ipproto-udp-socket-options). See the information on **UDP_RECV_MAX_COALESCED_SIZE** and **UDP_COALESCED_INFO**.
+For information on the Winsock URO API, see [IPPROTO_UDP socket options](/windows/win32/winsock/ipproto-udp-socket-options). See the information on `UDP_RECV_MAX_COALESCED_SIZE` and `UDP_COALESCED_INFO`.
 
 ### Windows TCP/IP stack updates
 

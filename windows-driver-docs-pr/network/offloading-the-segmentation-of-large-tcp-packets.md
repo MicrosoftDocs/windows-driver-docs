@@ -68,7 +68,7 @@ The number of segment packets that were derived from the large TCP packet must b
 
 The following assumptions and restrictions apply to processing IP and TCP headers for any LSO-capable miniport driver regardless of version:
 
-- The MF bit in the IP header of the large TCP packet that the TCP/IP transport offloaded won't be set, and the Fragment Offset in the IP header will be zero.
+- The MF bit in the IP header of the large TCP packet that the TCP/IP transport offloaded won't be set, and the fragment offset in the IP header will be zero.
 
 - The **URG**, **RST**, and **SYN** flags in the TCP header of the large TCP packet will not be set, and the urgent offset (pointer) in the TCP header will be zero.
 
@@ -80,7 +80,7 @@ The following assumptions and restrictions apply to processing IP and TCP header
 
 - If the large TCP packet contains IP options or TCP options (or both), the miniport driver copies these options, unaltered, to each packet that it derived from the large TCP packet. Specifically, the NIC will not increment the **Time Stamp** option.
 
-- All packet headers (Ethernet, IP, TCP) will be in the first MDL of the packet. The headers will not be split across multiple MDLs.
+- All packet headers (ethernet, IP, TCP) will be in the first MDL of the packet. The headers will not be split across multiple MDLs.
     > [!TIP]
     > This assumption is valid when LSO is enabled. Otherwise, when LSO isn't enabled, miniport drivers can't assume that IP headers are in the same MDL as ethernet headers.
 

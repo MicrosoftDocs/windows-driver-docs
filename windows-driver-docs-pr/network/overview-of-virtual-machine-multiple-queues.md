@@ -1,13 +1,13 @@
 ---
-title: Overview of Virtual Machine Multiple Queues (VMMQ)
-description: Learn how Virtual Machine Multiple Queues extends Native RSS to a Hyper-V virtual environment.
+title: Overview of virtual machine multiple queues (VMMQ)
+description: Learn how virtual machine multiple queues extends Native RSS to a Hyper-V virtual environment.
 ms.date: 12/19/2024
 ms:custom: UpdateFrequency3
 ---
 
-# Overview of Virtual Machine Multiple Queues (VMMQ)
+# Overview of virtual machine multiple queues (VMMQ)
 
-Virtual Machine Multiple Queues (VMMQ) is a NIC offload technology that extends [Native Receive side scaling (RSSv1)](introduction-to-receive-side-scaling.md) to a [Hyper-V](overview-of-hyper-v.md) virtual environment.
+Virtual machine multiple queues (VMMQ) is a NIC offload technology that extends [Native Receive side scaling (RSSv1)](introduction-to-receive-side-scaling.md) to a [Hyper-V](overview-of-hyper-v.md) virtual environment.
 
 VMMQ provides scalable network traffic processing for [virtual ports (VPorts)](virtual-ports--vports-.md) in the parent partition of a virtualized node. A VPort represents an internal port on the NIC switch of a network adapter that supports [single root I/O virtualization (SR-IOV)](overview-of-single-root-i-o-virtualization--sr-iov-.md). For an overview of the SR-IOV interface and its components, see [SR-IOV Architecture](sr-iov-architecture.md). Previously, RSS processing wasn't available for VPorts. VMMQ extends the native RSS feature to VPorts that are associated with the physical function (PF) of a NIC, including the default VPort.
 

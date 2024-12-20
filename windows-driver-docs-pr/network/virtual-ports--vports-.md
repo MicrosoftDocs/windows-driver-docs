@@ -16,7 +16,7 @@ A virtual port (VPort) is a data object that represents an internal port on the 
 
 The NIC switch bridges network traffic from the physical port to one or more VPorts. This provides virtualized access to the underlying physical network interface.
 
-Each VPort has a unique identifier (VPortId) that's unique for the NIC switch on the network adapter. A default VPort always exists on the default NIC switch and can never be deleted. The default VPort has the VPortId of *NDIS_DEFAULT_VPORT_ID*.
+Each VPort has a unique identifier (VPortId) that's unique for the NIC switch on the network adapter. A default VPort always exists on the default NIC switch and can never be deleted. The default VPort has the VPortId of `NDIS_DEFAULT_VPORT_ID`.
 
 When the PF miniport driver handles an object identifier (OID) method request of [OID\_NIC\_SWITCH\_CREATE\_SWITCH](./oid-nic-switch-create-switch.md), it creates the NIC switch and the default VPort for that switch. The default VPort is always attached to the PF and is always in an operational state.
 
