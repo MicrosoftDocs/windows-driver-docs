@@ -4,7 +4,7 @@ description: Usbprint.sys is the Microsoft-provided device driver for USB printe
 keywords:
 - printer drivers WDK, USB
 - USB printers WDK
-ms.date: 01/02/2024
+ms.date: 12/18/2024
 ---
 
 # Microsoft USB printer driver (Usbprint.sys)

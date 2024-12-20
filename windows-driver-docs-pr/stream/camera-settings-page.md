@@ -1,7 +1,7 @@
 ---
 title: Camera Settings Page
 description: Describes the features and operation of the camera settings page in Windows 11
-ms.date: 02/15/2024
+ms.date: 12/18/2024
 ---
 
 # Camera settings page
