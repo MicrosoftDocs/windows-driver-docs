@@ -1,5 +1,5 @@
 ---
-title: Overview of Mobile Broadband
+title: Overview of mobile broadband
 description: Learn how Windows simplifies mobile broadband connectivity so users can enjoy streamlined, consistent internet access.
 ms.date: 12/16/2024
 ---
@@ -20,7 +20,7 @@ Windows 8, Windows 8.1, and Windows 10 present an opportunity to reimagine and s
 
 ## Key scenarios
 
-This section describes key scenarios that are part of the current mobile broadband experience that you can choose to enable. Consider each of these scenarios in the context of your business models when you plan which Windows components your app must interact with.
+You can enable the following key scenarios that are part of the current mobile broadband experience. Consider each of these scenarios in the context of your business models when you plan which Windows components your app must interact with.
 
 - [Plan purchase](#plan-purchase)
 
@@ -52,7 +52,7 @@ Regardless of the plan purchase option, there are various sub states based on th
 
 In this case, an embedded device, mobile broadband app, and service metadata are probably already installed on the PC with a SIM before the user attempts to activate service. Another possibility is that the user doesn't yet have the mobile broadband app but has an alternate internet connection to download the app. The following steps occur automatically when the SIM is inserted:
 
-1. The mobile broadband service reads the International Mobile Subscriber Identity (IMSI), the Integrated Circuit Card ID (ICCID) for GSM networks, the provider ID (SID) for CDMA networks, or the provider name for CDMA networks and generates a set of Hardware IDs (HWIDs).
+1. The Mobile Broadband Service reads the International Mobile Subscriber Identity (IMSI), the Integrated Circuit Card ID (ICCID) for GSM networks, the provider ID (SID) for CDMA networks, or the provider name for CDMA networks and generates a set of Hardware IDs (HWIDs).
 
     > [!NOTE]
     > This step is only necessary if the OEM hasn't inserted the SIM and preloaded the mobile broadband app and service metadata.
@@ -90,7 +90,7 @@ In this case, an embedded device, mobile broadband app, and service metadata are
 
 An external mobile broadband device, such as a hardware dongle, can be inserted into PCs that might not have an alternate internet connection available and might not have a mobile broadband app installed. The following steps describe how a plan purchase experience can be built to work around limitations in this scenario:
 
-1. As soon as the mobile broadband hardware is detected, the Windows Mobile Broadband service reads the IMSI, the ICCID, the provider ID, or the provider name and generates a set of HWIDs that represent each value read from the device. The Windows Mobile Broadband service listens for mobile broadband-related events.
+1. As soon as the mobile broadband hardware is detected, the Windows Mobile Broadband Service reads the IMSI, the ICCID, the provider ID, or the provider name and generates a set of HWIDs that represent each value read from the device. The Windows Mobile Broadband Service listens for mobile broadband-related events.
 
 1. When the user selects **Connect**, the HWID values are used to locate the connection settings in the Windows COSA database as follows:
 
@@ -118,7 +118,7 @@ An external mobile broadband device, such as a hardware dongle, can be inserted 
 
 When a device with an active mobile broadband plan is attached to a PC, the experience is similar to that for purchase, except that the attempted connection leads to the internet. Windows doesn't start the mobile broadband app for mobile broadband or connect to the mobile operator's website. Instead, the app is installed in the background.
 
-1. When the mobile broadband hardware is detected, the Mobile Broadband service reads the IMSI, the ICCID, the provider ID, or the provider name and generates HWIDs.
+1. When the mobile broadband hardware is detected, the Mobile Broadband Service reads the IMSI, the ICCID, the provider ID, or the provider name and generates HWIDs.
 
 1. When the user selects **Connect**, the HWID values are used to locate appropriate connection settings within the Windows COSA database. For an active device, the connection is successful and Internet connectivity is available.
 
@@ -140,7 +140,7 @@ More information about handling SMS messages can be found in [Developing SMS app
 
 - When the app applies provisioning metadata, it includes a description of all SMS and USSD messages that should be considered operator messages.
 
-Upon receipt of an SMS or USSD message, the Mobile Broadband service compares the message to the description provided in the provisioning metadata. If parsing rules have been included, the Mobile Broadband service also interprets the message and updates the information about data usage.
+Upon receipt of an SMS or USSD message, the Mobile Broadband Service compares the message to the description provided in the provisioning metadata. If parsing rules have been included, the Mobile Broadband Service also interprets the message and updates the information about data usage.
 
 If the message is a match, the System Event Broker is notified to invoke the private background event for that mobile broadband app. If not, the System Event Broker is notified to invoke the public SMS event.
 
@@ -358,15 +358,15 @@ The Mobile Broadband Service is a Windows service that manages communication bet
 
 The service also reads the SIM of a newly inserted device and initiates the process that retrieves the service metadata and the mobile broadband app that corresponds to the attached mobile broadband device.
 
-### Mobile Broadband class driver
+### Mobile broadband class driver
 
-The Mobile Broadband class driver reduces the burden on device manufacturers to deliver a custom driver for their specific mobile broadband device. Any mobile broadband interface that manifests as a USB device and complies with the USB Implementers Forum (USB-IF) Network Control Model (NCM) 2.0 specification will be managed by the Mobile Broadband class driver and doesn't require additional drivers to be downloaded or installed.
+The mobile broadband class driver reduces the burden on device manufacturers to deliver a custom driver for their specific mobile broadband device. Any mobile broadband interface that manifests as a USB device and complies with the USB Implementers Forum (USB-IF) Network Control Model (NCM) 2.0 specification will be managed by the mobile broadband class driver and doesn't require additional drivers to be downloaded or installed.
 
-The Mobile Broadband class driver conforms to the Windows Mobile Broadband Driver Model and provides full functionality to the Mobile Broadband service. It also supports custom extensions, which is exposed directly to the mobile broadband app. For more information, see [Mobile operator hardware overview](mobile-operator-hardware-overview.md).
+The mobile broadband class driver conforms to the Windows Mobile Broadband Driver Model and provides full functionality to the Mobile Broadband Service. It also supports custom extensions, which is exposed directly to the mobile broadband app. For more information, see [Mobile operator hardware overview](mobile-operator-hardware-overview.md).
 
-### System Event Broker
+### System event broker
 
-The System Event Broker manages background events. Apps, including the mobile broadband app, can register to receive background events in order to respond to changes in system state. Events that could be of interest to the mobile broadband app include:
+The system event broker manages background events. Apps, including the mobile broadband app, can register to receive background events in order to respond to changes in system state. Events that could be of interest to the mobile broadband app include:
 
 - **Network status change**: Network connected or disconnected or internet connectivity changed on a network.
 
