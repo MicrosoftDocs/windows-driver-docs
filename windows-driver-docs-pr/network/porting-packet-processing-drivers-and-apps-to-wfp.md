@@ -20,7 +20,7 @@ Windows Filtering Platform (WFP) enables TCP/IP packet filtering, inspection, an
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left">Existing method in Windows XPand Windows Server 2003</th>
+<th align="left">Existing method in Windows XP and Windows Server 2003</th>
 <th align="left">New method in Windows Vista and Windows Server 2008 and later</th>
 </tr>
 </thead>
