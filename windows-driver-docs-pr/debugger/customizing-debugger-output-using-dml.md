@@ -41,14 +41,16 @@ Similar to XML, DML tags are given as a starting &lt;tagname \[args\]&gt; and a 
 
 **Special Characters**
 
-DML content roughly follows the XML/HTML rules for special characters. The characters &, &lt;, &gt; and “ are special and cannot be used in plain text. The equivalent escaped versions are &, &lt;, &gt; and ". For example this text:
+DML content roughly follows the XML/HTML rules for special characters. The characters `&`, `<`, `>`, and `"` are special and cannot be used in plain text. The equivalent escaped versions are `&amp;`, `&lt;`, `&gt;` and `&quot;`. For example this text:
 
-"Alice & Bob think 3 &lt; 4"
+```text
+"Alice & Bob think 3 > 4"
+```
 
 would be converted to the following DML.
 
 ```text
-"Alice & Bob think 3 &lt 4"
+"Alice &amp; Bob think 3 &lt; 4"
 ```
 
 **C programming language formatting characters**
