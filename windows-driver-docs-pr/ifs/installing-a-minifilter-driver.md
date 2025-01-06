@@ -6,12 +6,12 @@ keywords:
 - file system minifilter drivers WDK , installing
 - filter drivers WDK , installing
 - minifilter drivers WDK , installing
-ms.date: 08/27/2020
+ms.date: 12/18/2024
 ---
 
-# Installing a filter driver
+# Installing a file system filter driver
 
-File system filter driver developers use an INF file to install and upgrade a driver. You can use the INF file alone or together with a batch file or a user-mode setup application.
+File system minifilter driver developers use an INF file to install and upgrade a driver. You can use the INF file alone or together with a batch file or a user-mode setup application.
 
 This section includes:
 

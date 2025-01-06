@@ -90,11 +90,11 @@
       href: iommu-based-gpu-isolation.md
   - name: WDDM 2.1 features
     href: wddm-2-1-features.md
-  - name: WDDM 2.0 and Windows 10
+  - name: WDDM 2.0 features
     items:
-    - name: WDDM 2.0 and Windows 10
+    - name: WDDM 2.0 (Windows 10) features
       href: wddm-2-0-and-windows-10.md
-    - name: GPU virtual memory in WDDM 2.0
+    - name: GPU virtual memory
       items:
       - name: GPU virtual memory in WDDM 2.0
         href: gpu-virtual-memory-in-wddm-2-0.md
@@ -132,7 +132,7 @@
           href: examples.md
       - name: IoMmu model
         href: iommu-model.md
-    - name: Driver residency in WDDM 2.0
+    - name: Driver residency
       items:
       - name: Driver residency in WDDM 2.0
         href: driver-residency-in-wddm-2-0.md
@@ -148,13 +148,13 @@
         href: process-residency-budgets.md
     - name: Context monitoring
       href: context-monitoring.md
-  - name: WDDM 1.2 and Windows 8
+  - name: WDDM 1.2 features
     items:
     - name: WDDM 1.2 and Windows 8
       href: wddm-in-windows-8.md
     - name: WDDM 1.2 features
       href: wddm-v1-2-features.md
-    - name: Advances to the display Infrastructure
+    - name: Advances to the display infrastructure
       items:
       - name: Advances to the display Infrastructure
         href: advances-to-the-display-infrastructure.md

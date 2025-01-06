@@ -1,7 +1,7 @@
 ---
 title: Boot and UEFI
 description: Provides guidance about the boot process and UEFI implementation requirements for devices that run Windows 10.
-ms.date: 12/14/2023
+ms.date: 12/18/2024
 ---
 
 # Boot and UEFI
@@ -9,7 +9,7 @@ ms.date: 12/14/2023
 > [!IMPORTANT]
 > Some information in this section may apply only to Windows 10 Mobile and certain processor architectures.
 
-A device running Windows 10 has several requirements for booting into the OS. After the device's firmware initializes all the hardware, the device needs to ensure that there's enough power to boot. Afterwards, the device needs to ensure that the device is booting into the appropriate OS depending on if the user wants to perform an update or a restore on the device, or if the user wants to boot the device into the main OS.
+A device running Windows 10 has several requirements for booting into the OS. After the device's firmware initializes all the hardware, the device needs to ensure there's enough power to boot. Then the device needs to ensure that the device is booting into the appropriate OS depending on if the user wants to perform an update or a restore on the device, or if the user wants to boot the device into the main OS.
 
 To accommodate each of these scenarios, the Windows 10 boot process uses the following components:
 
@@ -39,7 +39,7 @@ Following are more details about some of the components in this diagram:
 
 - The update OS is a minimal OS environment provided by Microsoft. This OS is used specifically for installing updates.
 
-- Full Flash Update (FFU) image flashing mode refers to a UEFI application that flashes an OS image to device storage. Microsoft provides a UEFI flashing application that can be used in non-manufacturing scenarios. OEMs can also implement their own UEFI flashing application. For more information, see [Capture and apply Windows Full Flash Update (FFU) images](/windows-hardware/manufacture/desktop/deploy-windows-using-full-flash-update--ffu).
+- Full Flash Update (FFU) image flashing mode refers to a UEFI application that flashes an OS image to device storage. Microsoft provides a UEFI flashing application that can be used in nonmanufacturing scenarios. OEMs can also implement their own UEFI flashing application. For more information, see [Capture and apply Windows Full Flash Update (FFU) images](/windows-hardware/manufacture/desktop/deploy-windows-using-full-flash-update--ffu).
 
 ## SoC firmware boot loaders
 
@@ -80,13 +80,13 @@ The following steps describe this process in more detail:
 
 1. After the UEFI environment launches the Boot Manager, the Boot Manager initializes *boot libraries*, reads the boot configuration database to determine which boot applications to run and in which order to run them. The Boot Manager launches boot applications sequentially, and each application exits back to the Boot Manager after finishing.
 
-    Boot libraries are libraries of functions that extend upon existing UEFI functionality, and are designed to be used within the boot environment. Only boot applications, which are launched by the Boot Manager, have access to the boot libraries.
+    Boot libraries are libraries of functions that extend upon existing UEFI functionality, and designed to be used within the boot environment. Only boot applications, which are launched by the Boot Manager, have access to the boot libraries.
 
 1. The Boot Manager first captures any reserved hardware button combinations that are pressed by the user.
 
-1. In non-retail OS images, the Boot Manager next runs an offline crash dump boot application that allows the device to capture a snapshot of physical memory from the previous OS session. When the device resets abnormally, the previous OS session's memory is preserved across the reset. When this happens, the offline crash dump application saves that memory and turn it into an offline crash dump file, which can be transferred off the device and analyzed. If the device didn't reset abnormally in the previous OS session, the offline crash dump application exits immediately.
+1. In nonretail OS images, the Boot Manager next runs an offline crash dump boot application that allows the device to capture a snapshot of physical memory from the previous OS session. When the device resets abnormally, the previous OS session's memory is preserved across the reset. When this happens, the offline crash dump application saves that memory and turn it into an offline crash dump file, which can be transferred off the device and analyzed. If the device didn't reset abnormally in the previous OS session, the offline crash dump application exits immediately.
 
-1. In all OS images, the Boot Manager next runs mobilestartup.efi. This application runs several boot libraries, some of which are only run on first boot (for example, to provision the secure boot policy) or only in non-retail images (for example, to enter USB mass storage mode). The following libraries are always run:
+1. In all OS images, the Boot Manager next runs mobilestartup.efi. This application runs several boot libraries, some of which are only run on first boot (for example, to provision the secure boot policy) or only in nonretail images (for example, to enter USB mass storage mode). The following libraries are always run:
 
     1. First, mobilestartup.efi runs the library that implements UEFI battery charging. This library allows the user to charge their device while the device is in the boot environment (or is perceived as being turned off). This library is run first to ensure that the device has enough power to fully boot. For more information about scenarios involving the battery charging application, see [Battery charging in the boot environment](battery-charging-in-the-boot-environment.md).
 

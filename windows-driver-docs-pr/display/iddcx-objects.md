@@ -1,7 +1,7 @@
 ---
 title: IddCx Objects
 description: IddCx uses the extensible UMDF object model to represent graphics objects.
-ms.date: 07/17/2020
+ms.date: 12/18/2024
 keywords:
 - Indirect display driver objects
 - IDD objects
@@ -11,7 +11,7 @@ keywords:
 
 # IddCx Objects
 
-The [IddCx](/windows-hardware/drivers/ddi/iddcx/) (Indirect Display Driver Class eXtension) uses the extensible UMDF object model to represent the components of the indirect display device. The [UMDF](../wdf/getting-started-with-umdf-version-2.md) object model allows the driver-specific storage to be associated with each IddCx (and hence UMDF) object. See [UMDF Object Model](../wdf/umdf-objects-and-interfaces.md) for more information.
+The [IddCx](/windows-hardware/drivers/ddi/iddcx/) (Indirect Display Driver Class eXtension) framework uses the extensible UMDF object model to represent the various components of indirect display devices. The [UMDF](../wdf/getting-started-with-umdf-version-2.md) object model allows the driver-specific storage to be associated with each IddCx (and hence UMDF) object. For more information, see [UMDF Object Model](../wdf/umdf-objects-and-interfaces.md).
 
 The order in which IDD objects are created is:
 
@@ -28,15 +28,15 @@ This object represents a single logical display adapter created by the driver in
 * The driver calls the [**IddCxAdapterInitAsync**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxadapterinitasync) callback function.
 * The OS calls the driver's [*EvtIddCxAdapterInitFinished*](/windows-hardware/drivers/ddi/iddcx/nc-iddcx-evt_idd_cx_adapter_init_finished) DDI to complete the initialization.
 
-The IDD model does not have an explicit destroy adapter callback. Once the adapter initialization sequence has been completed successfully, the adapter is valid until the UMDF device passed at initialization time is stopped. When creating the adapter, the driver provides static adapter information about the indirect display adapter.
+The IDD model doesn't have an explicit destroy adapter callback. Once the adapter initialization sequence successfully completes, the adapter is valid until the UMDF device passed at initialization time is stopped. When the indirect display driver (IDD) creates the adapter, it provides static adapter information about the indirect display adapter.
 
 ### Handling multifunction devices
 
-In the simplest case, there is a one-to-one mapping between the UMDF device object created by the plug and play subsystem for the attached indirect display device and the **IDDCX_ADAPTER** object that the indirect display driver (IDD) creates.
+In the simplest case, there's a one-to-one mapping between the UMDF device object created by the plug and play subsystem for the attached indirect display device and the **IDDCX_ADAPTER** object that the IDD creates.
 
-There can be more complex scenarios where a single indirect display dongle contains multiple plug and play devices. For example, an indirect display solution might have multiple PnP device functions such as a microphone (audio driver) and camera (video driver). In such situations, it is the IDD's responsibility to create a single **IDDCX_ADAPTER** object for the multiple UMDF device objects created for each PnP device. The driver needs to consider the following in this scenario:
+There can be more complex scenarios where a single indirect display dongle contains multiple plug and play devices. For example, an indirect display solution might have multiple PnP device functions such as a microphone (audio driver) and camera (video driver). In such situations, the IDD is responsible for creating a single **IDDCX_ADAPTER** object for the multiple UMDF device objects created for each PnP device. The driver needs to consider the following points in this scenario:
 
-* The **IDDCX_ADAPTER** should only be created once all the PnP devices that make up the indirect display solution have been started successfully.
+* The **IDDCX_ADAPTER** should only be created once all the PnP devices that make up the indirect display solution are successfully started.
 * The driver must pass a single **WDFDEVICE** when creating the adapter, so it requires logic to decide which UMDF device it will pass.
 * If any of the devices that make up the indirect display adapter have a hardware error, the driver should report all devices that make up the adapter as being in error.
 
@@ -49,15 +49,15 @@ The driver creates the monitor object in a two stage process:
 * It first calls the [**IddCxMonitorCreate**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxmonitorcreate) callback to create the **IDDCX_MONITOR** object.
 * It then calls the [**IddCxMonitorArrival**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxmonitorarrival) callback to complete the monitor arrival.
 
-When a monitor is unplugged, the driver calls the [**IddCxMonitorDeparture**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxmonitordeparture) callback to report the monitor has been unplugged, which causes the **IDDCX_MONITOR** object to be destroyed. Even if the same monitor is un-plugged then reconnected, the **IddCxMonitorDeparture**/**IddCxMonitorArrival** sequence needs to be called again.
+When a monitor is unplugged, the driver calls the [**IddCxMonitorDeparture**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxmonitordeparture) callback to report it. This call causes the **IDDCX_MONITOR** object to be destroyed. Even if the same monitor is unplugged and then reconnected, the **IddCxMonitorDeparture**/**IddCxMonitorArrival** sequence needs to be called again.
 
 The **IDDCX_MONITOR** is a child of the **IDDCX_ADAPTER** object.
 
 ## IDDCX_SWAPCHAIN
 
-This object represents a [swapchain](/windows/win32/direct3d12/swap-chains) that will provide desktop images to display on a connected monitor. The swapchain has multiple buffers to allow the OS to compose the next desktop image in one buffer while the IDD is accessing another buffer. The **IDDCX_SWAPCHAIN** is a child of the **IDDCX_MONITOR** so there will only be one assigned swapchain to a given monitor at any time.
+This object represents a [swapchain](/windows/win32/direct3d12/swap-chains) that provides desktop images to display on a connected monitor. The swapchain has multiple buffers to allow the OS to compose the next desktop image in one buffer while the IDD is accessing another buffer. The **IDDCX_SWAPCHAIN** is a child of the **IDDCX_MONITOR** so there's only one assigned swapchain to a given monitor at any time.
 
-The OS creates and destroys the **IDDCX_SWAPCHAIN** objects and assigns/unassigns them to monitors using the [**EvtIddCxMonitorAssignSwapChain**](/windows-hardware/drivers/ddi/iddcx/nc-iddcx-evt_idd_cx_monitor_assign_swapchain) and [**EvtIddCxMonitorUnassignSwapChain**](/windows-hardware/drivers/ddi/iddcx/nc-iddcx-evt_idd_cx_monitor_unassign_swapchain) Ddi calls.
+The OS creates and destroys the **IDDCX_SWAPCHAIN** objects and assigns/unassigns them to monitors using the [**EvtIddCxMonitorAssignSwapChain**](/windows-hardware/drivers/ddi/iddcx/nc-iddcx-evt_idd_cx_monitor_assign_swapchain) and [**EvtIddCxMonitorUnassignSwapChain**](/windows-hardware/drivers/ddi/iddcx/nc-iddcx-evt_idd_cx_monitor_unassign_swapchain) calls.
 
 ## IDDCX_OPMCTX
 

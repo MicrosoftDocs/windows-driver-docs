@@ -11,7 +11,7 @@ keywords:
 - Device setup WDK device installations , device identification strings
 - device installations WDK , device identification strings
 - installing devices WDK , device identification strings
-ms.date: 12/16/2024
+ms.date: 12/19/2024
 ---
 
 # Device identification strings
@@ -19,7 +19,7 @@ ms.date: 12/16/2024
 > [!NOTE]
 > Device identification strings should not be parsed. They are meant only for string comparisons and should be treated as opaque strings.
 
-The Plug and Play (PnP) manager and other [device installation components](./overview-of-device-and-driver-installation.md) use device identification strings to identify devices installed in a computer.
+The Plug and Play (PnP) manager and other [device installation components](./index.md) use device identification strings to identify devices installed in a computer.
 
 Windows uses the following device identification strings to locate the [driver package](driver-packages.md) that best matches the device. A device's enumerator reports these identification strings. A device's enumerator is a system component that discovers PnP devices based on a PnP hardware standard. [PnP Bus Drivers](../kernel/bus-drivers.md) carry out these tasks are in partnership with the PnP manager. The parent bus driver, such as the PCI or PCMCIA bus driver, typically enumerates a device. A bus filter driver, such as the ACPI driver, enumerates some devices.
 

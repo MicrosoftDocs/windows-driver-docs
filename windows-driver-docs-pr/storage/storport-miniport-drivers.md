@@ -6,7 +6,7 @@ keywords:
 - Storport miniport drivers WDK , routines listed
 - storage miniport drivers WDK , Storport miniport drivers
 - miniport drivers WDK storage , Storport miniport drivers
-ms.date: 06/12/2023
+ms.date: 12/18/2024
 ---
 
 # About Storport miniport drivers
