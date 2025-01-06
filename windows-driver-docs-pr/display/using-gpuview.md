@@ -5,12 +5,12 @@ keywords:
 - GPUView, driver development
 - GPUView, performance analysis
 - CPU activity, GPU activity, performance analysis
-ms.date: 09/20/2024
+ms.date: 01/06/2025
 ---
 
 # About GPUView
 
-GPUView (*GPUView.exe*) is a performance analysis tool that helps developers analyze GPU and CPU activity on Windows systems. It's useful for diagnosing performance issues in graphics-intensive applications, such as games or multimedia software.
+GPUView (*GPUView.exe*) is a performance analysis tool that helps developers analyze GPU and CPU activity on Windows systems. It's useful for diagnosing performance issues in graphics-intensive applications, such as games or multimedia software. It's [installed with the Windows Performance Toolkit (WPT)](installing-gpuview.md).
 
 * Video core developers can use GPUView to determine the performance of the GPU and CPU regarding DMA buffer processing, and all other video processing, on the video hardware.
 * Developers and testers can use GPUView to show different kinds of events that might lead to unusual conditions like glitches, preparation delays, and poor synchronization.
@@ -21,21 +21,22 @@ GPUView reads logged video and kernel events from an [event trace log](/windows-
 
 To use GPUView, you first need to generate a trace. To do so:
 
-* Open a command prompt with administrative privilege:
-  * Type "command prompt" in the Start menu search box.
-  * Right-click the command prompt icon and select Run as Administrator.
+1. Open a command prompt with administrative privilege:
 
-* Once at the command prompt, navigate to the GPUView directory and type the following command:
+   * Type "command prompt" in the Start menu search box.
+   * Right-click the command prompt icon and select Run as Administrator.
+
+1. In the elevated command prompt, navigate to the GPUView directory and type the following command:
 
    ``` Log.cmd ```
 
-* Reproduce the problem (no more than 30 seconds to 1 minute). Then retype the same command:
+1. Reproduce the performance issue (no more than 30 seconds to 1 minute). Then retype the same command:
 
    ``` Log.cmd ```
 
    This command generates several Event Tracing for Windows (\*.ETL) files. These various streams are all merged together into a single file called *Merged.etl*, which is what GPUView reads.
 
-* Use GPUView to view the resulting *Merged.ETL* file.
+1. Use GPUView to view the resulting *Merged.ETL* file.
 
 Some examples of logged events are:
 
