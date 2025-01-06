@@ -1,5 +1,5 @@
 ---
-title: Protocol drivers
+title: NDIS Protocol Drivers
 description: Learn how protocol drivers interface with intermediate and higher-level network drivers and miniport drivers.
 keywords:
 - protocol drivers WDK networking , architecture

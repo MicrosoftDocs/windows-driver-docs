@@ -1,5 +1,5 @@
 ---
-title: Offload the segmentation of large TCP packets
+title: Offload the Segmentation of Large TCP Packets
 description: Learn how NDIS miniport drivers can offload the segmentation of large TCP packets.
 keywords:
 - task offload WDK TCP/IP transport , large packet segmentation

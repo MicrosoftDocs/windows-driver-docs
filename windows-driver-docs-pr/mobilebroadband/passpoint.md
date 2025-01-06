@@ -10,7 +10,7 @@ Passpoint, sometimes referred to as Hotspot 2.0, is a standard for seamless auth
 
 The following table describes common credential types and EAP method combinations used for Passpoint, along with the corresponding support per provisioning method in Windows 10 and 11.
 
-| **Credential type** | **EAP method** | **Provisioning from a website or app** | **Provisioned by MDM or group policy** | **Provisioned from COSA by a mobile operator** | **Online sign-up** |
+| **Credential type** | **EAP method** | **Provisioning from a website or app** | **Provisioned by MDM or Group Policy** | **Provisioned from COSA by a mobile operator** | **Online Sign-Up** |
 |----|----|----|----|----|----|
 | Username and password | EAP-TTLS with MS-CHAP-V2 | Yes | Yes | No | Yes (Windows 11 only) |
 | Username and password | PEAP with MS-CHAP-V2 | Yes | Yes | No | No |
@@ -30,8 +30,8 @@ The following table describes common credential types and EAP method combination
   - [From a website](/windows/win32/nativewifi/prov-wifi-profile-via-website)
   - [From an app](./account-provisioning.md#wi-fi-information)
   - [From COSA](cosa-database.md) for mobile operator SIM-based authentication
-  - From [MDM](/windows/client-management/mdm/wifi-csp), [group policy](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh994701(v=ws.11)), or by using [provisioning packages](/windows/configuration/provisioning-packages/provisioning-packages)
-  - Using online sign-up (OSU)
+  - From [MDM](/windows/client-management/mdm/wifi-csp), [Group Policy](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh994701(v=ws.11)), or by using [provisioning packages](/windows/configuration/provisioning-packages/provisioning-packages)
+  - Using online Sign-Up (OSU)
 
     Windows 11 supports OSU as defined in the Wi-Fi Alliance Passpoint specification with certain constraints:
     - Open sign-up SSID (OSEN isn't supported)
@@ -40,7 +40,7 @@ The following table describes common credential types and EAP method combination
 
 ## Profile format
 
-Except for online sign-up, which follows the standard PPS-MO format, all other provisioning methods rely on the [WLANProfile XML](/windows/win32/nativewifi/wireless-profile-samples) format. The Passpoint specific details are specified in the [Hotspot2](/windows/win32/nativewifi/wlan-profileschema-hotspot2-wlanprofile-element) element.
+Except for Online Sign-Up, which follows the standard PPS-MO format, all other provisioning methods rely on the [WLANProfile XML](/windows/win32/nativewifi/wireless-profile-samples) format. The Passpoint specific details are specified in the [Hotspot2](/windows/win32/nativewifi/wlan-profileschema-hotspot2-wlanprofile-element) element.
 
 ## Venue information
 
@@ -54,7 +54,7 @@ Starting with Windows 11, version 23H2, Windows includes the roaming consortium 
 
 Windows 8 and Windows 8.1 don't support the discovery or online sign-up portions of Passpoint, but they do support WPA2-Enterprise and all EAP methods that are required by the Passpoint specification. Therefore, Windows 8 and Windows 8.1 can connect to a Passpoint network when the user already has credentials. Because Windows 8 and Windows 8.1 don't support 802.11u discovery, operators must provision Windows 8 or Windows 8.1 with wireless profiles that contain the applicable SSIDs for their networks.
 
-Windows 10 fully supports Passpoint Release 1, including discovery and profile creation, but doesn't support online sign-up.
+Windows 10 fully supports Passpoint Release 1, including discovery and profile creation, but doesn't support Online Sign-Up.
 
 ## Related content
 

@@ -1,5 +1,5 @@
 ---
-title: Overview of virtual machine multiple queues (VMMQ)
+title: Overview of Virtual Machine Multiple Queues (VMMQ)
 description: Learn how virtual machine multiple queues extends Native RSS to a Hyper-V virtual environment.
 ms.date: 12/19/2024
 ms:custom: UpdateFrequency3

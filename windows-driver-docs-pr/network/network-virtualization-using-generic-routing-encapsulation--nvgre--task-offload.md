@@ -1,5 +1,5 @@
 ---
-title: Network virtualization using generic routing encapsulation
+title: Network Virtualization using Generic Routing Encapsulation
 description: Learn how to use network virtualization using generic routing encapsulation (NVGRE) to virtualize IP addresses.
 ms.date: 12/19/2024
 ---
@@ -14,8 +14,8 @@ The following diagram shows a GRE-encapsulated packet. On the wire, NVGRE-encaps
 
 NDIS 6.30 (available in Windows Server 2012 and later) introduces NVGRE task offload, which makes it possible to use NVGRE-formatted packets with:
 
-- Large send offload (LSO)
-- Virtual machine queue (VMQ)
+- Large Send Offload (LSO)
+- Virtual Machine Queue (VMQ)
 - Transmit (Tx) checksum offload (IPv4, TCP, UDP)
 - Receive (Rx) checksum offload (IPv4, TCP, UDP)
 
@@ -29,7 +29,7 @@ For more information about NVGRE, see the following Internet Draft:
 
 - [NVGRE: Network Virtualization using Generic Routing Encapsulation](https://tools.ietf.org/html/rfc7637)
 
-NVGRE is based on generic routing encapsulation (GRE). For more information about GRE, see the following resources:
+NVGRE is based on Generic Routing Encapsulation (GRE). For more information about GRE, see the following resources:
 
 - [RFC 2784: Generic Routing Encapsulation](https://tools.ietf.org/html/rfc2784)
 - [RFC 2890: Key and Sequence Number Extensions to GRE](https://tools.ietf.org/html/rfc2890)
