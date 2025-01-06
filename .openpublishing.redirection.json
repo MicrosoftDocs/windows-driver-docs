@@ -1,6 +1,551 @@
 {
     "redirections": [
     {
+      "source_path": "windows-driver-docs-pr/install/using-general-setup-functions.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/using-general-setup-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/disk-prompting-and-error-handling-functions.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/disk-prompting-and-error-handling-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/file-queuing-functions.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/file-queuing-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/default-queue-callback-routine-functions.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/default-queue-callback-routine-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/cabinet-file-function.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/cabinet-file-function",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/disk-space-list-functions.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/disk-space-list-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/mru-source-list-functions.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/mru-source-list-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/file-log-functions.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/file-log-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/device-and-driver-installation-software-components.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/device-and-driver-installation-software-components",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/writing-a-co-installer.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/writing-a-co-installer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/co-installer-operation.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/co-installer-operation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/co-installer-interface.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/co-installer-interface",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/co-installer-functionality.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/co-installer-functionality",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/handling-dif-codes.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/handling-dif-codes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/dif-addpropertypage-advanced.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/dif-addpropertypage-advanced",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/dif-addpropertypage-basic.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/dif-addpropertypage-basic",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/dif-allow-install.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/dif-allow-install",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/dif-assignresources.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/dif-assignresources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/dif-calcdiskspace.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/dif-calcdiskspace",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/dif-destroyprivatedata.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/dif-destroyprivatedata",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/dif-destroywizarddata.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/dif-destroywizarddata",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/dif-detect.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/dif-detect",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/dif-detectcancel.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/dif-detectcancel",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/dif-detectverify.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/dif-detectverify",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/dif-enableclass.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/dif-enableclass",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/dif-finishinstall-action.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/dif-finishinstall-action",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/dif-firsttimesetup.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/dif-firsttimesetup",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/dif-founddevice.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/dif-founddevice",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/dif-installclassdrivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/dif-installclassdrivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/dif-installdevice.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/dif-installdevice",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/dif-installdevicefiles.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/dif-installdevicefiles",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/dif-installinterfaces.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/dif-installinterfaces",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/dif-installwizard.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/dif-installwizard",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/dif-movedevice.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/dif-movedevice",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/dif-newdevicewizard-finishinstall.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/dif-newdevicewizard-finishinstall",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/dif-newdevicewizard-postanalyze.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/dif-newdevicewizard-postanalyze",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/dif-newdevicewizard-preanalyze.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/dif-newdevicewizard-preanalyze",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/dif-newdevicewizard-preselect.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/dif-newdevicewizard-preselect",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/dif-newdevicewizard-select.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/dif-newdevicewizard-select",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/dif-powermessagewake.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/dif-powermessagewake",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/dif-properties.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/dif-properties",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/dif-register-coinstallers.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/dif-register-coinstallers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/dif-registerdevice.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/dif-registerdevice",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/dif-selectbestcompatdrv.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/dif-selectbestcompatdrv",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/dif-selectclassdrivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/dif-selectclassdrivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/dif-selectdevice.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/dif-selectdevice",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/dif-troubleshooter.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/dif-troubleshooter",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/dif-unremove.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/dif-unremove",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/dif-updatedriver-ui.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/dif-updatedriver-ui",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/dif-validateclassdrivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/dif-validateclassdrivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/dif-validatedriver.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/dif-validatedriver",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/registering-a-co-installer.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/registering-a-co-installer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/registering-a-device-specific-co-installer.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/registering-a-device-specific-co-installer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/registering-a-class-co-installer.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/registering-a-class-co-installer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/calling-the-default-dif-code-handlers.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/calling-the-default-dif-code-handlers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/accessing-the-co-installers-registry-entry-value-of-a-device-setup-cla.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/accessing-the-co-installers-registry-entry-value-of-a-device-setup-cla",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/calling-setupapi-functions.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/calling-setupapi-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/writing-class-installers-and-co-installers.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/writing-class-installers-and-co-installers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/finish-install-actions--windows-vista-and-later-.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/finish-install-actions--windows-vista-and-later-",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/overview-of-finish-install-actions.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/overview-of-finish-install-actions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/how-finish-install-actions-are-processed.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/how-finish-install-actions-are-processed",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/setting-the-configflag-finishinstall-action-device-configuration-flag.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/setting-the-configflag-finishinstall-action-device-configuration-flag",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/running-finish-install-actions.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/running-finish-install-actions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/running-the-default-finish-install-action.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/running-the-default-finish-install-action",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/implementing-finish-install-actions.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/implementing-finish-install-actions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/guidelines-for-implementing-finish-install-actions.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/guidelines-for-implementing-finish-install-actions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/code-example--finish-install-actions-in-a-class-installer.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/code-example--finish-install-actions-in-a-class-installer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/code-example--finish-install-actions-in-a-co-installer.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/code-example--finish-install-actions-in-a-co-installer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/device-installation-application-not-included-in-the-driver-package.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/device-installation-application-not-included-in-the-driver-package",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/device-installation-application-that-is-included-in-the-driver-package.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/device-installation-application-that-is-included-in-the-driver-package",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/guidelines-for-starting-device-installation-applications-through-co-in.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/guidelines-for-starting-device-installation-applications-through-co-in",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/difx-guidelines.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/difx-guidelines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/dpinst-return-code.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/dpinst-return-code",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/deletebinaries-xml-element.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/deletebinaries-xml-element",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/dpinst-xml-element.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/dpinst-xml-element",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/dpinsttitle-xml-element.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/dpinsttitle-xml-element",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/enablenotlistedlanguages-xml-element.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/enablenotlistedlanguages-xml-element",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/eula-xml-element.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/eula-xml-element",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/eulaheadertitle-xml-element.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/eulaheadertitle-xml-element",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/eulanobutton-xml-element.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/eulanobutton-xml-element",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/eulayesbutton-xml-element.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/eulayesbutton-xml-element",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/finishtext-xml-element.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/finishtext-xml-element",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/finishtitle-xml-element.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/finishtitle-xml-element",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/forceifdriverisnotbetter-xml-element.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/forceifdriverisnotbetter-xml-element",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/group-xml-element.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/group-xml-element",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/headerpath-xml-element.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/headerpath-xml-element",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/icon-xml-element.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/icon-xml-element",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/installallornone-xml-element.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/installallornone-xml-element",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/installheadertitle-xml-element.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/installheadertitle-xml-element",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/language-xml-element.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/language-xml-element",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/legacymode-xml-element.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/legacymode-xml-element",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/package-xml-element.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/package-xml-element",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/promptifdriverisnotbetter-xml-element.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/promptifdriverisnotbetter-xml-element",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/quietinstall-xml-element.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/quietinstall-xml-element",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/scanhardware-xml-element.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/scanhardware-xml-element",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/search-xml-element.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/search-xml-element",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/subdirectory-xml-element.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/subdirectory-xml-element",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/suppressaddremoveprograms-xml-element.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/suppressaddremoveprograms-xml-element",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/suppresswizard-xml-element.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/suppresswizard-xml-element",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/watermarkpath-xml-element.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/watermarkpath-xml-element",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/welcomeintro-xml-element.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/welcomeintro-xml-element",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/welcometitle-xml-element.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/welcometitle-xml-element",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/device-installation-application-started-through-autorun.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/device-installation-application-started-through-autorun",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/config-driverkey-section-of-a-txtsetup-oem-file.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/config-driverkey-section-of-a-txtsetup-oem-file",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/defaults-section-of-a-txtsetup-oem-file.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/defaults-section-of-a-txtsetup-oem-file",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/disks-section-of-a-txtsetup-oem-file.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/disks-section-of-a-txtsetup-oem-file",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/files-hwcomponent-id-section-of-a-txtsetup-oem-file.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/files-hwcomponent-id-section-of-a-txtsetup-oem-file",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/hardwareids-scsi-id-section-of-a-txtsetup-oem-file.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/hardwareids-scsi-id-section-of-a-txtsetup-oem-file",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/hwcomponent-section-of-a-txtsetup-oem-file.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/hwcomponent-section-of-a-txtsetup-oem-file",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows-driver-docs-pr/pcmcia/access-attribute-memory-of-a-pcmcia-device.md",
       "redirect_url": "/previous-versions/windows/drivers/pcmcia/access-attribute-memory-of-a-pcmcia-device",
       "redirect_document_id": false
