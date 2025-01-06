@@ -1,5 +1,5 @@
 ---
-title: Virtual machine network adapters
+title: Virtual Machine Network Adapters
 description: Learn about the virtualization types that virtual machine network adapters support, and what steps occur when a user starts or stops a Hyper-V VM.
 ms.date: 12/16/2024
 ---
