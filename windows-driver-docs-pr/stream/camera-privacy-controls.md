@@ -1,7 +1,7 @@
 ---
 title: Camera Privacy Shutters and Kill Switches
 description: Provides device design guidance for privacy shutters and kill switches, considerations for shutter state sensing, and how shutters are expected to interact with existing HLK requirements for indicator LEDs.
-ms.date: 01/02/2024
+ms.date: 12/18/2024
 ---
 
 # Camera privacy shutters and kill switches
@@ -69,7 +69,7 @@ Electromechanical shutters are electrically controlled mechanical shutters. Rath
 
 #### Camera kill switches
 
-Some devices today ship with a camera kill switch feature, which physically disconnects the camera device from the system when turned off, providing a hardware control to block camera access without requiring a physical shutter to cover the lens/sensor. While this is robust against attacks, it creates a poor user experience. By removing the device when the switch is off, the system can't tell that the chassis still has a camera in it but that it's just turned off. This is problematic from a UX perspective if the camera is unintentionally turned off by a user unaware of the switch, since applications will report that there are no cameras connected. It also can cause certain applications to crash or misbehave if the camera is removed during use or appears while the app is running.
+Some devices today ship with a camera kill switch feature, which physically disconnects the camera device from the system when turned off, providing a hardware control to block camera access without requiring a physical shutter to cover the lens/sensor. While this is robust against attacks, it creates a poor user experience. By removing the device when the switch is off, the system can't tell that the chassis still has a camera in it but that it's turned off. This is problematic from a UX perspective if the camera is unintentionally turned off by a user unaware of the switch, since applications report that there are no cameras connected. It also can cause certain applications to crash or misbehave if the camera is removed during use or appears while the app is running.
 
 Accordingly, Microsoft doesn't recommend or support the use of camera kill switches that remove the entire camera from the system. Instead, we recommend one of two solutions:
 
@@ -92,7 +92,7 @@ Ensuring shutters and kill switches apply to the IR camera is of utmost importan
 
 ## Physical shutter design guidance (mechanical or electromechanical)
 
-When a customer uses a device with a physical shutter, the shutter's presence gives a strong implied expectation about the level of privacy it provides. Put simply, that user expectation is that if the device has a shutter, and the shutter is closed, they are protected against any unexpected camera access. It's crucial that the implementation of the feature lives up to the implied expectations, else it loses all trust.
+When a customer uses a device with a physical shutter, the shutter's presence gives a strong implied expectation about the level of privacy it provides. Put simply, that user expectation is that if the device has a shutter, and the shutter is closed, they're protected against any unexpected camera access. It's crucial that the implementation of the feature lives up to the implied expectations, else it loses all trust.
 
 Furthermore, the entire concept of a privacy shutter is to provide a layer of security that is hardened against any practical software attack. In other words, if the device has a shutter and the system is fully compromised by malicious software, that software can't compromise the privacy of the user. Again, to put simply, the expectation is that the shutter can only change state if the user physically interacts with the hardware shutter control on the device.
 
@@ -153,7 +153,7 @@ Some designs may opt to skip a physical shutter, and to instead use the firmware
 
 1. Unless the ISP is capable of periodically sampling from the sensor whenever it's out of D3, this method prevents apps from being able to query accurate sensor state data until they start streaming from the camera.
 
-The second consideration above creates a challenge. If the camera fails to report shutter state when it isn't streaming, but an app was written to check and react to shutter state before streaming, bad things could happen. In response to feedback that we have received from partners, this requirement has been relaxed. We are also updating the API documentation to advise software developers against making decisions based on shutter state reported when not streaming. For example, we'll explicitly advise app developers against disallowing the camera from being turned on if the shutter is reporting that it's closed.
+The second consideration above creates a challenge. If the camera fails to report shutter state when it isn't streaming, but an app was written to check and react to shutter state before streaming, bad things could happen. In response to feedback that we have received from partners, this requirement has been relaxed. We're also updating the API documentation to advise software developers against making decisions based on shutter state reported when not streaming. For example, we'll explicitly advise app developers against disallowing the camera from being turned on if the shutter is reporting that it's closed.
 
 To avoid risk of compatibility issues with apps that don't adhere to this advice, cameras that can't sense shutter state when not streaming are expected to report that the shutter is OPEN whenever not streaming. Else if the camera can sense shutter state when not streaming, it's expected to detect and report the shutter state anytime it's not in D3.
 

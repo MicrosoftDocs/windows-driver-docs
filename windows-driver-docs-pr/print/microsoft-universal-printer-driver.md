@@ -6,7 +6,7 @@ keywords:
 - Unidrv WDK print
 - Universal printer driver WDK See Unidrv
 - minidrivers WDK Unidrv
-ms.date: 12/14/2023
+ms.date: 12/18/2024
 ---
 
 # Microsoft universal printer driver (Unidrv)

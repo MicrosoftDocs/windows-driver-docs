@@ -4,7 +4,7 @@ description: Rectangle Area Fill Attributes
 keywords:
 - rectangular area fill attributes WDK Unidrv
 - filling rectangular areas WDK Unidrv
-ms.date: 01/29/2024
+ms.date: 12/19/2024
 ---
 
 # Rectangle area fill attributes

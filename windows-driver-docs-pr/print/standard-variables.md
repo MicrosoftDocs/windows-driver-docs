@@ -5,7 +5,7 @@ keywords:
 - GPD file entries WDK Unidrv , standard variables
 - variables WDK GPD files
 - standard variables WDK GPD files
-ms.date: 01/31/2024
+ms.date: 12/19/2024
 ---
 
 # Standard variables
@@ -51,7 +51,7 @@ The following table contains all of the standard variables, in alphabetic order.
 | **NextGlyph** | The two-byte code of the next glyph to download. | Valid for use in CmdSetCharCode command strings. |
 | **NumOfCopies** | Number of copies requested by the user. | Valid whenever a print job is in progress. |
 | **NumOfDataBytes** | Number of bytes of raster data ready for transfer. | Valid for use in any CmdSendXXXData command string. If data is compressed, the value is the number of bytes after compression. |
-| **PageNumber** | The number of the page currently being printed. Note that this does not necessarily correspond to the application's page number, but rather the number of times [*DrvSendPage*](/windows/win32/api/winddi/nf-winddi-drvsendpage) has been called. This value is initialized by [**DrvStartDoc**](/windows/win32/api/winddi/nf-winddi-drvstartdoc) and is incremented by **DrvSendPage**. For example, if N-up = 4 is selected, **PageNumber** is incremented to 2 only when the fifth page of the document is being printed. As another example, if a document is printed in reverse order (back to front) the **PageNumber** standard variable still reports the first page to be printed as page 1, even though this is the last page of the document. This behavior is needed to properly support the auto-duplexing feature. The OEM should use **PageNumber** only to determine whether the current page is the front or back side. | Valid whenever a print job is in progress. |
+| **PageNumber** | The number of the page currently being printed. Note that this doesn't necessarily correspond to the application's page number, but rather the number of times [*DrvSendPage*](/windows/win32/api/winddi/nf-winddi-drvsendpage) has been called. This value is initialized by [**DrvStartDoc**](/windows/win32/api/winddi/nf-winddi-drvstartdoc) and is incremented by **DrvSendPage**. For example, if N-up = 4 is selected, **PageNumber** is incremented to 2 only when the fifth page of the document is being printed. As another example, if a document is printed in reverse order (back to front) the **PageNumber** standard variable still reports the first page to be printed as page 1, even though this is the last page of the document. This behavior is needed to properly support the auto-duplexing feature. The OEM should use **PageNumber** only to determine whether the current page is the front or back side. | Valid whenever a print job is in progress. |
 | **PaletteIndexToProgram** | Index into the color palette for the next entry to program. | Valid for use in CmdDefinePaletteEntry command strings. (Also see **RedValue**, **GreenValue**, **BlueValue**, **CurrentPaletteIndex**). |
 | **PatternBrushID** | Identification number of a downloaded pattern brush. | Valid for use with CmdDownloadPattern and CmdSelectPattern command strings. |
 | **PatternBrushSize** | Size, in bytes, of the current pattern brush. | Valid for use with CmdDownloadPattern command string. |
@@ -59,8 +59,8 @@ The following table contains all of the standard variables, in alphabetic order.
 | **PhysPaperLength** | Portrait-mode length, in y-master units, of the paper currently in use. | Valid whenever a print job is in progress. |
 | **PhysPaperWidth** | Portrait-mode width, in master units, of the paper currently in use. | Valid whenever a print job is in progress. |
 | **PrintDirInCCDegrees** | Amount of rotation, measured counterclockwise, in degrees. | Valid when the driver sends either the CmdSetSimpleRotation or CmdSetAnyRotation command string. |
-| **RasterDataHeightInPixels** | Height, in pixels, of the image represented by current data. | Valid for use in any CmdSendXXXData command string, and in CmdSetSrcBmpHeight command strings. Compression does not modify this value. |
-| **RasterDataWidthInBytes** | Number of bytes contained in a scan line. | Valid for use in any CmdSendXXXData command string, and in CmdSetSrcBmpWidth command strings. Compression does not modify this value. |
+| **RasterDataHeightInPixels** | Height, in pixels, of the image represented by current data. | Valid for use in any CmdSendXXXData command string, and in CmdSetSrcBmpHeight command strings. Compression doesn't modify this value. |
+| **RasterDataWidthInBytes** | Number of bytes contained in a scan line. | Valid for use in any CmdSendXXXData command string, and in CmdSetSrcBmpWidth command strings. Compression doesn't modify this value. |
 | **RectXSize** | Rectangle width, in x-master units. | Valid for use in CmdSetRectWidth command strings. |
 | **RectYSize** | Rectangle length, in y-master units. | Valid for use in CmdSetRectHeight command strings. |
 | **RedValue** | Red component of the current color. | Valid for use in CmdDefinePaletteEntry command strings (see **GreenValue**, **BlueValue**). |

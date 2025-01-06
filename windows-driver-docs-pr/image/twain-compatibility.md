@@ -1,7 +1,7 @@
 ---
 title: TWAIN Compatibility
 description: TWAIN compatibility
-ms.date: 01/02/2024
+ms.date: 12/18/2024
 ---
 
 # TWAIN compatibility

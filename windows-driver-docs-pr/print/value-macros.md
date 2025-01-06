@@ -4,7 +4,7 @@ description: A value macro is used to specify a set of one or more values that y
 keywords:
 - value macros WDK GPD files
 - referencing macros
-ms.date: 02/21/2024
+ms.date: 12/19/2024
 ---
 
 # Value macros

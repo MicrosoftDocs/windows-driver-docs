@@ -4,16 +4,17 @@ description: Installing a Biometric Driver
 keywords:
 - biometric drivers WDK , installing
 - installing biometric drivers WDK biometric
-ms.date: 05/05/2023
+ms.date: 12/09/2024
 ---
 
 # Installing a Biometric Driver
 
-Vendors can provide an INF file to install a WBDI driver.
+This article provides a guideline for biometric device installation. The code examples in this article are taken from the WudfBioUsbSample.inx file of the [WudfBioUsbSample](https://github.com/microsoft/Windows-driver-samples/releases/tag/win11-22h2).
 
-The following is a list of guidelines for biometric device installation. The code examples in this article are taken from the WudfBioUsbSample.inx file of the [WudfBioUsbSample](https://github.com/microsoft/Windows-driver-samples/releases/tag/win11-22h2):
+> [!NOTE]
+> Vendors can provide an (.inf) file to install a WBDI driver.
 
-- WBDI drivers should specify a class of "Biometric." Set ClassGuid equal to the value that corresponds to GUID_DEVCLASS_BIOMETRIC in Devguid.h:
+1. WBDI drivers should specify a class of "Biometric." Set `ClassGuid` equal to the value that corresponds to `GUID_DEVCLASS_BIOMETRIC` in Devguid.h:
 
     ```inf
     [Version]
@@ -23,7 +24,7 @@ The following is a list of guidelines for biometric device installation. The cod
     ...
     ```
 
-- In your .HW section, provide AddReg directives to specify three sections that contain entries to be added to the registry:
+1. In your .HW section, provide `AddReg` directives to specify three sections that contain entries to be added to the registry:
 
     ```inf
     [Biometric_Install.NT.hw]
@@ -31,7 +32,7 @@ The following is a list of guidelines for biometric device installation. The cod
     AddReg=DriverPlugInAddReg, DatabaseAddReg
     ```
 
-- Provide the named sections referred to in the .HW section. The \[Biometric_Device_AddReg\] section sets values for the biometric device, including the exclusive flag and system wake/device idle. To be recognized by Windows Biometric Framework, UMDF-based WBDI drivers must set the "Exclusive" value to 1. The first two lines of the \[Biometric_Device_AddReg\] section specify access control list (ACL) rights so that the device can only be opened by an administrator or the local system account. When you specify these ACL rights, third-party applications can't open the device and capture fingerprint data when the WinBio service isn't running. For example:
+1. Provide the named sections referred to in the .HW section. The \[Biometric_Device_AddReg\] section sets values for the biometric device, including the exclusive flag and system wake/device idle. To be recognized by Windows Biometric Framework, UMDF-based WBDI drivers must set the "Exclusive" value to 1. The first two lines of the \[Biometric_Device_AddReg\] section specify access control list (ACL) rights so that the device can only be opened by an administrator or the local system account. When you specify these ACL rights, third-party applications can't open the device and capture fingerprint data when the WinBio service isn't running. For example:
 
     ```inf
     [Biometric_Device_AddReg]
@@ -50,7 +51,7 @@ The following is a list of guidelines for biometric device installation. The cod
 
     Vendors can have a single driver binary that can work with legacy stacks and WBF, but the two can't operate simultaneously. WBF will only operate if the device can be opened with exclusive access.
 
-- The second named section contains registry values for the plug-in adapters. The sample uses the Microsoft-provided sensor adapter and storage adapter. This section also enables Windows log-in support by setting the SystemSensor value:
+1. The second named section contains registry values for the plug-in adapters. The sample uses the Microsoft-provided sensor adapter and storage adapter. This section also enables Windows log-in support by setting the SystemSensor value:
 
     ```inf
     [DriverPlugInAddReg]
@@ -63,7 +64,7 @@ The following is a list of guidelines for biometric device installation. The cod
     HKR,WinBio\Configurations\0,DatabaseId,,"6E9D4C5A-55B4-4c52-90B7-DDDC75CA4D50"  ; Unique database GUID
     ```
 
-- Finally, the third section sets the following registry values for the database service. The identifying GUID must be unique for each vendor database of a certain format. For instance, in this code example from the sample, change 6E9D4C5A-55B4-4c52-90B7-DDDC75CA4D50 to your own unique GUID in your INF file.
+1. Finally, the third section sets the following registry values for the database service. The identifying GUID must be unique for each vendor database of a certain format. For instance, in this code example from the sample, change 6E9D4C5A-55B4-4c52-90B7-DDDC75CA4D50 to your own unique GUID in your INF file.
 
     ```inf
     [DatabaseAddReg]
@@ -77,9 +78,11 @@ The following is a list of guidelines for biometric device installation. The cod
     HKLM,System\CurrentControlSet\Services\WbioSrvc\Databases\{6E9D4C5A-55B4-4c52-90B7-DDDC75CA4D50},ConnectionString,,""
     ```
 
-- To differentiate WBDI and legacy drivers, vendors must set a Feature Score for the driver in the INX file. Feature Score isn't set in the [WudfBioUsbSample](https://github.com/microsoft/Windows-driver-samples/releases/tag/win11-22h2) sample. For more information about setting a Feature Score, see [Ranking a Biometric Driver on Windows Update](ranking-a-biometric-driver-on-windows-update.md).
+1. To differentiate WBDI and legacy drivers, vendors must set a Feature Score for the driver in the INX file. Feature Score isn't set in the [WudfBioUsbSample](https://github.com/microsoft/Windows-driver-samples/releases/tag/win11-22h2) sample. For more information about setting a Feature Score, see [Ranking a Biometric Driver on Windows Update](ranking-a-biometric-driver-on-windows-update.md).
 
 For information about INX files and how they differ from INF files, see [Using INX Files to Create INF Files](../wdf/using-inx-files-to-create-inf-files.md).
+
+## Replacing a WBDI Driver with a legacy driver
 
 In order to replace a WBDI driver with a legacy driver, use the following procedure:
 

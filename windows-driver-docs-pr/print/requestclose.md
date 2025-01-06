@@ -2,7 +2,7 @@
 title: requestClose Element
 description: The optional requestClose element is used to close an event notification message on the client computer.
 keywords: ["requestClose element Print Devices"]
-ms.date: 01/30/2024
+ms.date: 12/19/2024
 ---
 
 # requestClose element
