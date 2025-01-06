@@ -1,7 +1,7 @@
 ---
 title: Porting an INF to Follow Driver Package Isolation
 description: This article provides tips on how to port an INF from old syntax to conform to driver package isolation
-ms.date: 03/26/2024
+ms.date: 12/20/2024
 ---
 
 # Porting an INF to follow driver package isolation
@@ -165,6 +165,48 @@ HKLM,SYSTEM\CurrentControlSet\Services\ServiceNotCreatedByThisInf\ExampleKey, Ex
 
 This isn't supported. An INF should only be changing settings on services created by that INF and the INF should remove this AddReg.
 
+## Using AddReg to modify intrinsic state of a service
+
+If your INF uses an [AddReg directive](../install/inf-addreg-directive.md) to modify intrinsic service state, then the INF isn't compliant with driver package isolation.  Intrinsic service state is state about the serivce that is managed by the Service Control Manager.  This includes, but is not limited to:
+* Display name
+* Description
+* Image path
+* Type
+* Start type
+* Error control
+* Load order group
+* Dependencies
+* Security information
+* Required privileges
+* SID type
+* Delayed auto start setting
+* Triggers
+* Failure actions
+* Boot flags
+
+For example, your INF may have:
+
+```inf
+[ExampleDDInstall.Services]
+AddService = ExampleService,0,Example_Service_Inst
+
+[Example_Service_Inst]
+DisplayName   = %SvcDesc%
+ServiceType   = %SERVICE_WIN32_OWN_PROCESS%
+StartType     = %SERVICE_DEMAND_START%
+ErrorControl  = %SERVICE_ERROR_NORMAL%
+ServiceBinary = %13%\ExampleService.exe
+AddReg = Example_Service_Registry
+
+[Example_Service_Registry]
+HKR,TriggerInfo\0,Type,0x00010001,0x01
+HKR,TriggerInfo\0,Action,0x00010001,0x01
+HKR,TriggerInfo\0,Guid,0x00000001,2D,DF,41,BD,DD,AD,C9,4F,A1,94,B9,88,1D,2A,2E,FA
+HKR,,ServiceSidType,0x00010001,0x01
+```
+
+To be driver package isolation compliant, you need to use the built in INF directives for specifying that state as described at [AddService directive](../install/inf-addservice-directive.md).
+
 ## Using AddReg to modify state in the root of a service
 
 If your INF uses an [AddReg directive](../install/inf-addreg-directive.md) to create keys or values in the root of a service's state, then the INF isn't compliant with driver package isolation.  For example, your INF may have:
@@ -187,8 +229,6 @@ HKR,CustomSubkey,ExampleValue,%REG_DWORD%,0x00000040
 ```
 
 To be driver package isolation compliant, an AddReg directive supplying service registry keys and values can only modify keys and values under the service's Parameters subkey.  
-
-If your INF is modifying intrinsic service state such as the Load Order Group, service triggers, etc, then you need to use the built in INF directives for specifying that state as described at [AddService directive](../install/inf-addservice-directive.md).
 
 If your INF is creating or modifying other state under the root of the service, the settings need to be moved under the service's Parameters subkey and the Parameters subkey can be accessed at runtime with [IoOpenDriverRegistryKey](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioopendriverregistrykey) using a RegKeyType of DriverRegKeyParameters. IoOpenDriverRegistryKey is supported on Windows 10 1803 and later versions of Windows.
 
