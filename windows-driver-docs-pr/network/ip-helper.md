@@ -1,5 +1,5 @@
 ---
-title: IP Helper overview
+title: IP Helper Overview
 description: Learn how IP Helper enables drivers to retrieve and modify information about the local computer's network configuration.
 keywords:
 - IP Helper WDK networking
