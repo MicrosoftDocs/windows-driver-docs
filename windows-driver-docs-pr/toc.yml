@@ -96,14 +96,10 @@
     href: network/index.md
   - name: NFC device drivers
     href: nfc/index.md
-  - name: Parallel port drivers
-    href: parports/index.md
   - name: Partner application development
     href: partnerapps/index.md
   - name: PCI drivers
     href: pci/index.md
-  - name: PCMCIA drivers
-    href: pcmcia/index.md
   - name: Point of Service device drivers
     href: pos/index.md
   - name: Power management technologies

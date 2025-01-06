@@ -33,7 +33,7 @@ To get a new code signing certificate:
 
 1. Once the certificate authority verifies your contact information and your certificate purchase is approved, follow their directions to retrieve the certificate.
 1. Go to [Partner Center](https://partner.microsoft.com/dashboard) and sign in using administrator credentials.
-1. Select the gear icon in the upper right, then select **Developer settings**, then **Manage Certificates** on the left pane.
+1. Select the gear icon in the upper right, then select **Account Settings**, then **Manage Certificates** on the left side of the screen.
 1. Select **Add a new certificate**, then select **Next**.
 1. Download *Signablefile.bin* and sign it with the new digital certificate for your company using [SignTool](/windows/win32/seccrypto/signtool) with the `/fd sha256` switch and appropriate SHA-2 timestamp.
 1. Upload the signed file to Partner Center.

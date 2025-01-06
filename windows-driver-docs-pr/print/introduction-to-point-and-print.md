@@ -3,7 +3,7 @@ title: Introduction to Point and Print
 description: Introduction to Point and Print
 keywords:
 - Point and Print WDK , about Point and Print
-ms.date: 01/02/2024
+ms.date: 12/18/2024
 ---
 
 # Introduction to Point and Print

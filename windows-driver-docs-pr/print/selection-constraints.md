@@ -3,7 +3,7 @@ title: Selection Constraints
 description: Selection Constraints
 keywords:
 - selection constraints WDK Unidrv
-ms.date: 01/30/2024
+ms.date: 12/19/2024
 ---
 
 # Selection constraints

@@ -4,7 +4,7 @@ description: Describes installation and configuration of printer drivers.
 keywords:
 - install drivers WDK printer
 - printer driver installations WDK
-ms.date: 01/02/2024
+ms.date: 12/18/2024
 ---
 
 # Install and configure printer drivers
