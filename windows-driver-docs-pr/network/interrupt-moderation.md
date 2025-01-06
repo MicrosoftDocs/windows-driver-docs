@@ -1,5 +1,5 @@
 ---
-title: Interrupt moderation
+title: Interrupt Moderation
 description: Learn how to use interrupt moderation to reduce the number of hardware interruptions.
 keywords:
 - interrupt moderation WDK networking

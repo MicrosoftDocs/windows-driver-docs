@@ -1,5 +1,5 @@
 ---
-title: NDIS driver stack
+title: NDIS Driver Stack
 description: Learn about configurations of a Network Driver Interface Specification (NDIS) 6.0 driver stack.
 keywords:
 - driver stacks WDK networking , NDIS basic configuration

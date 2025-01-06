@@ -1,5 +1,5 @@
 ---
-title: UDP segmentation offload (USO)
+title: UDP Segmentation Offload (USO)
 description: Learn how to offload the segmentation of UDP datagrams that are larger than the maximum transmission unit (MTU) of the network medium.
 keywords:
 - network drivers WDK , UDP segmentation offload (USO)

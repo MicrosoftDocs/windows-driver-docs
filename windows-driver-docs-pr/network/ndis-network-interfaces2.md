@@ -1,5 +1,5 @@
 ---
-title: Introduction to NDIS network interfaces
+title: Introduction to NDIS Network Interfaces
 description: Learn about NDIS network interfaces, which provide a consistent representation of the network interfaces that Microsoft Windows supports.
 keywords:
 - NDIS WDK , network interfaces

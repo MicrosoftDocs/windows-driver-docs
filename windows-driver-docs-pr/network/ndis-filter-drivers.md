@@ -1,5 +1,5 @@
 ---
-title: Filter drivers
+title: NDIS Filter Drivers
 description: NDIS 6.0 introduced NDIS filter drivers. Filter drivers can monitor and modify the interaction between protocol drivers and miniport drivers.
 ms.date: 09/27/2024
 ---

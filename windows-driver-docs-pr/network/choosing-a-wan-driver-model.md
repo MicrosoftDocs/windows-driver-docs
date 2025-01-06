@@ -1,5 +1,5 @@
 ---
-title: WAN driver models
+title: WAN Driver Models
 description: Learn about WAN driver models, and learn how to choose between NDIS WAN and CoNDIS WAN.
 keywords:
 - WAN miniport drivers WDK networking , driver models
