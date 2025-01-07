@@ -66,7 +66,7 @@ Valid values for **DMA Management\RemappingFlags** are:
 These registry keys will appear under the enumeration tree: ``HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\PCI\<device instance path>\Device Parameters\DMA Management``
 
 ### Per-driver Opt-In Mechanism
-Only use this per-driver method for Windows versions up to Windows 11 23H2. It is strongly recommended to use the [per-device method as outlined above](#Per-device-Opt-In-Mechanism).
+Only use this per-driver method for Windows versions up to Windows 11 23H2. It is strongly recommended to use the [per-device method as outlined above](#per-device-opt-in-mechanism).
 
 Add an INF directive such as the following to the service installation section:
 
