@@ -1,14 +1,14 @@
 ---
 title: Microsoft Bluetooth Test Platform - RN52 - Audio-Capable Peripheral Radios
 description: Bluetooth Test Platform (BTP) supported hardware (RN52).
-ms.date: 08/05/2024
+ms.date: 01/07/2025
 ---
 
 # RN52 device
 
 ## Overview
 
-The RN52 is a Bluetooth basic rate (BR) radio from Roving Networks capable of behaving as an audio peripheral, such as a speaker or headset. To aid with validation, this sled routes the audio out data from the radio to an audio codec and audio processing field-programmable gate array (FPGA) on the Traduci. For more information, see the [MicroChip RN52](https://www.microchip.com/product/RN52) web page.
+The RN52 is a Bluetooth basic rate (BR) radio from Roving Networks capable of behaving as an audio peripheral, such as a speaker or headset. To aid with validation, this sled routes the audio out data from the radio to an audio codec and audio processing field-programmable gate array (FPGA) on the Traduci. For more information, see the [MicroChip RN52](https://www.microchip.com/en-us/product/RN52) web page.
 
 | Device Name | Parameter | Usage Example |
 | --- | --- | --- |
