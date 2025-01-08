@@ -8,7 +8,11 @@ ms.date: 03/23/2023
 
 To support device-class-specific configuration of the USB subsystem, Windows defines a Device-Specific Method (_DSM) that has the functions that are described in this article.
 
+Function index 0 of every _DSM is a query function that returns the set of supported function indexes, and is always required. For more information, see section 9.14.1, "_DSM (Device Specific Method)", in the [ACPI 5.0 specification](https://uefi.org/specifications).
+
 ## Function 1: Post-reset processing for dual-role controllers
+
+When this function is used, the _DSM method must appear under the USB controller device.
 
 The _DSM control method parameters for the post-reset processing function for dual-role USB controllers are as follows:
 
@@ -25,9 +29,9 @@ None
 
 The Windows inbox drivers only support USB controllers in host mode. After each controller reset, the USB driver will invoke the _DSM function index 1 to perform any controller-specific initialization required to configure the USB controller to operate in host mode.
 
-When this function is used, the _DSM method must appear under the USB controller device.
-
 ## Function 2: Port type identification
+
+When this function is used, the _DSM method must appear under the USB port device.
 
 The _DSM control method parameters for identifying the USB port type are as follows:
 
@@ -45,8 +49,6 @@ An integer containing one of the following values:
 | Element | Object type | Description |
 |--|--|--|
 | Port type | Integer (BYTE) | Specifies the type of the USB port:<br><br>0x00 – Regular USB<br><br>0x01 – HSIC<br><br>0x02 – SSIC<br><br>0x03 – 0xff reserved |
-
-When this function is used, the _DSM method must appear under the USB port device.
 
 ## Function 5: Disable U1 and U2 transitions for a port
 
@@ -75,6 +77,8 @@ An integer containing one of the following values:
 
 This function is available starting in Windows Server 2022 and Windows 11.
 
+When this function is used, the _DSM method must appear under the USB controller device.
+
 The _DSM control method parameters for querying the register access type for communicating with USB controllers are as follows:
 
 ### Arguments (Function 6)
@@ -92,6 +96,27 @@ An Integer containing one of the following values:
 |--|--|--|
 | RegisterAccessType | 4-byte (32-bit) unsigned long | Specifies the type of the USB controller register access:<br><br>0x00 – Undefined register access<br><br>0x01 – Must use 32bit register access<br><br>0x02 – 0xffffffff reserved |
 
-When this function is used, the _DSM method must appear under the USB controller device.
+## Function 7: Query if _UPC supports USB-C port capabilities as defined in ACPI specification 6.5.
 
-Function index 0 of every _DSM is a query function that returns the set of supported function indexes, and is always required. For more information, see section 9.14.1, "_DSM (Device Specific Method)", in the [ACPI 5.0 specification](https://uefi.org/specifications).
+ACPI specification 6.5 updated _UPC with USB-C port capabilities. On the systems of ACPI specification earlier than 6.5, this _DSM method function can be used to indicate that the _UPC methods of USB ports of a USB hub have the USB-C port capabilities as defined in ACPI specfication 6.5.
+
+When this function is used, the _DSM method must appear under a USB hub device.
+
+The _DSM control method parameters are as follows:
+
+### Arguments (Function 7)
+
+- **Arg0:** UUID = ce2ee385-00e6-48cb-9f05-2edb927c4899
+- **Arg1:** Revision ID = 0
+- **Arg2:** Function index = 7
+- **Arg3:** Empty package (not used)
+
+### Return (Function 7)
+
+An Integer as follows:
+
+| Element | Object type | Description |
+|--|--|--|
+| UpcSupportsUsbCPortCapabilities | Integer (BYTE) | 0x00: The _UPC methods of USB ports of this USB hub do not have USB-C port capabilities as defined in ACPI specification 6.5.<br><br>0x01: The _UPC methods of USB ports of this USB hub have USB-C port capabilities as defined in ACPI specification 6.5.<br><br>0x02 - 0xFF: Reserved. Do not use |
+
+
