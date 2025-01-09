@@ -1,16 +1,16 @@
 ---
-title: Development Security Best Practices for Windows Driver Developers
+title: Best practices for constraining high privileged behavior in kernel mode drivers
 description: Follow these best practices to help ensure that your driver code is secure from abuse by bad actors.
-ms.date: 06/15/2022
+ms.date: 01/08/2024
 ---
 
-# Windows drivers security best practices for driver developers
+# Best practices for constraining high privileged behavior in kernel mode drivers
 
-This topic summarizes the unsafe development patterns which can lead to exploitation and abuse of your Windows driver code. This topic provides development recommendations and code samples. Following these best practices will help improve the safety of performing privileged behavior in the Windows kernel. 
+This topic summarizes the unsafe development patterns which can lead to exploitation and abuse of your Windows kernel driver code. This topic provides development recommendations and code samples to help constrain privileged behavior. Following these best practices will help improve the safety of performing privileged behavior in the Windows kernel. 
 
 ## Unsafe driver behavior overview
 
-While it is expected that Windows drivers perform high privileged behavior in kernel mode, not performing security checks and adding constraints on privileged behavior is securely is unacceptable. The Windows Hardware Compatibility Program (WHCP), formerly WHQL, requires new driver submissions to comply with this requirement.
+While it is expected that Windows drivers perform high privileged behavior in kernel mode, not performing security checks and adding constraints on privileged behavior is unacceptable. The Windows Hardware Compatibility Program (WHCP), formerly WHQL, requires new driver submissions to comply with this requirement.
 
 Examples of unsecure and dangerous behavior includes, but is not limited to, the following:
 
@@ -23,7 +23,7 @@ Examples of unsecure and dangerous behavior includes, but is not limited to, the
 
 ### Enhancing the security of reading from MSRs
 
-In the first ReadMsr example, the driver allows for unsafe behavior by allowing for any and all registers to be arbitrarily read. This can result in abuse by malicious processes in user mode.
+In this ReadMsr example, the driver allows for unsafe behavior by allowing for any and all registers to be arbitrarily read using the [__readmsr](/cpp/intrinsics/readmsr) model-specific register intrinsic. This can result in abuse by malicious processes in user mode.
 
 ```c++
 Func ReadMsr(int dwMsrIdx) 
@@ -117,10 +117,9 @@ Func ConstrainedWriteMSR(int dwMsrIdx)
 
 ## Providing the ability to terminate processes
 
-Extreme caution must be used when implementing functionality in your driver which allows for processes to be terminated. Protected processes and protected process light (PPL) processes, 
-like those used by anti-malware and anti-virus solutions, must not be terminated. Exposing this functionality allows for attackers to terminate security protections on the system. 
+Extreme caution must be used when implementing functionality in your driver which allows for processes to be terminated. Protected processes and protected process light (PPL) processes, like those used by anti-malware and anti-virus solutions, must not be terminated. Exposing this functionality allows for attackers to terminate security protections on the system. 
 
-If your scenario requires process termination, the following checks must be implemented to protect against arbitrary process termination:
+If your scenario requires process termination, the following checks must be implemented to protect against arbitrary process termination, using [PsLookupProcessByProcessId](/en-us/windows-hardware/drivers/ddi/ntifs/nf-ntifs-pslookupprocessbyprocessid) and `PsIsProtectedProcess`:
 
 ```c++
 Func ConstrainedProcessTermination(DWORD dwProcessId)
@@ -148,12 +147,11 @@ Func ConstrainedProcessTermination(DWORD dwProcessId)
 }
 ```
 
-
 ## Providing the ability to read and write to Port input and output
 
 ### Enhancing the security of reading from Port IO
 
-Caution must be used, when providing the ability to ability to read to Port input/output (I/O). This code example is unsafe.
+Caution must be used, when providing the ability to ability to read to Port input/output (I/O). This code example that uses [__indword](/cpp/intrinsics/indword) is unsafe.
 
 ```c++
 Func ArbitraryInputPort(int inPort) 
@@ -182,7 +180,7 @@ Func ConstrainedInputPort(int inPort)
 
 ### Enhancing the security of writing to Port IO
 
-Caution must be used, when providing the ability to ability to write to Port input/output (I/O). This code example is unsafe.
+Caution must be used, when providing the ability to ability to write to Port input/output (I/O). This code example that uses [__outword](/cpp/intrinsics/outword) is unsafe.
 
 ```c++
 Func ArbitraryOutputPort(int outPort, DWORD dwValue) 
@@ -240,7 +238,7 @@ Func ConstrainedMemoryCopy(src, dst, length)
 
 ### Enhancing the security of ZwMapViewOfSection
 
-The following example illustrates the unsafe and improper method to read and write physical memory from user mode utilizing the ZwOpenSection and ZwMapViewOfSection APIs. 
+The following example illustrates the unsafe and improper method to read and write physical memory from user mode utilizing the [ZwOpenSection](/windows-hardware/drivers/ddi/wdm/nf-wdm-zwopensection) and [ZwMapViewOfSection](/windows-hardware/drivers/ddi/wdm/nf-wdm-zwmapviewofsection) APIs. 
 
 ```c++
 Func ArbitraryMap(PHYSICAL_ADDRESS Address)
@@ -270,7 +268,7 @@ Func ConstrainedMap(PHYSICAL_ADDRESS paAddress)
 
 ### Enhancing the security of MmMapLockedPagesSpecifyCache
 
-The following example illustrates the unsafe and improper method to read and write physical memory from user mode utilizing the MmMapIoSpace, IoAllocateMdl and MmMapLockedPagesSpecifyCache APIs.
+The following example illustrates the unsafe and improper method to read and write physical memory from user mode utilizing the [MmMapIoSpace](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmmapiospace), [IoAllocateMdl](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocatemdl) and [MmMapLockedPagesSpecifyCache](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmmaplockedpagesspecifycache) APIs.
 
 ```c++
 Func ArbitraryMap(PHYSICAL_ADDRESS paAddress)

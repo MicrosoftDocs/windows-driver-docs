@@ -1,7 +1,7 @@
 ---
 title: Driver Security Checklist
 description: This article provides a driver security checklist for driver developers.
-ms.date: 12/09/2024
+ms.date: 01/08/2025
 ---
 
 # Driver security checklist
@@ -172,7 +172,7 @@ Handle zero-length buffers correctly. For more information, see [Errors in Direc
 
 Compiler intrinsics, such as [__readmsr](/cpp/intrinsics/readmsr) and [__writemsr](/cpp/intrinsics/writemsr) can be used to access the model-specific registers. If this access is required, the driver must always check that the register to read or write to is constrained to the expected index or range.
 
-For more information, and code examples, see [Providing the ability to read/write MSRs](driver-security-dev-best-practices.md#providing-the-ability-to-read-and-write-msrs) in [Development Security Best Practices for Windows driver developers](driver-security-dev-best-practices.md).
+For more information, and code examples, see [Providing the ability to read/write MSRs](driver-security-dev-best-practices.md#providing-the-ability-to-read-and-write-msrs) in [Best practices for constraining high privileged behavior in kernel mode drivers](driver-security-dev-best-practices.md).
 
 #### TOCTOU vulnerabilities
 
