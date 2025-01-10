@@ -1,7 +1,7 @@
 ---
 title: Universal Serial Bus (USB) Driver Samples
 description: The driver samples in this directory provide a starting point for writing a custom USB driver for your device.
-ms.date: 08/01/2024
+ms.date: 01/09/2025
 ---
 
 # Universal Serial Bus (USB) driver samples
@@ -26,8 +26,6 @@ Previous versions of Windows driver samples can be found in the following locati
 - [Windows 8.1 driver samples](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Driver%20Kit%20Sample/Windows%20Driver%20Kit%20(WDK)%208.1%20Samples)
 
 - [Windows 8 driver samples](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Driver%20Kit%20Sample/Windows%20Driver%20Kit%20(WDK)%208.0%20Samples)
-
-- Windows 7 driver samples are included in [Windows Driver Kit Version 7.1.0](https://www.microsoft.com/download/details.aspx?id=11800). The driver samples are located in the \src subdirectory (for example, C:\WinDDK\7600.16385.1\src).
 
 | Sample | Description |
 |--|--|
