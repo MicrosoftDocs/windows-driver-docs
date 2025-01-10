@@ -13,9 +13,9 @@ For certain Universal Serial Bus (USB) devices, you can install [WinUSB](introdu
 
 ## Automatic installation of WinUSB without an INF file
 
-As an OEM or independent hardware vendor (IHV), you can build your device so that the *Winusb.sys* gets installed automatically on Windows 8 and later versions of the operating system. Such a device is called a WinUSB device and doesn't require you to write a custom INF file that references in-box *Winusb.inf*.
+As an OEM or independent hardware vendor (IHV), you can build your device so that the *Winusb.sys* gets installed automatically. Such a device is called a WinUSB device and doesn't require you to write a custom INF file that references in-box *Winusb.inf*.
 
-When you connect a WinUSB device, the system reads device information and loads *Winusb.sys* automatically.
+When you connect a WinUSB device, Windows reads device information and loads *Winusb.sys* automatically.
 
 For more information, see [WinUSB Device](automatic-installation-of-winusb.md).
 
@@ -24,8 +24,8 @@ For more information, see [WinUSB Device](automatic-installation-of-winusb.md).
 When you connect your device, you might notice that Windows loads *Winusb.sys* automatically. Otherwise, follow these instructions to load the driver:
 
 1. Plug in your device to the host system.
-1. Open Device Manager and locate the device.
-1. Select and hold (or right-click) the device and select **Update driver software...** from the context menu.
+1. Open **Device Manager** and locate the device.
+1. Right-click the device and select **Update driver software...** from the context menu.
 1. In the wizard, select **Browse my computer for driver software**.
 1. Select **Let me pick from a list of device drivers on my computer**.
 1. From the list of device classes, select **Universal Serial Bus devices**.
@@ -35,12 +35,12 @@ If **Universal Serial Bus devices** doesn't appear in the list of device classes
 The preceding procedure doesn't add a device interface GUID for an app (UWP app or Windows desktop app) to access the device. You must add the GUID manually by following this procedure.
 
 1. Load the driver as described in the preceding procedure.
-1. Generate a device interface GUID for your device, by using a tool such as guidgen.exe.
+1. Generate a device interface GUID for your device by using a tool such as guidgen.exe.
 1. Find the registry key for the device under this key:
 
-    **HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Enum\\USB\\&lt;VID_vvvv&PID_pppp&gt;**
+    **HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Enum\\USB\\<VID_vvvv&PID_pppp>**
 
-1. Under the **Device Parameters** key, add a String registry entry named **DeviceInterfaceGUID** or a Multi-String entry named **DeviceInterfaceGUIDs**. Set the value to the GUID you generated in step 2.
+1. Under the **Device Parameters** key, add a *String* registry entry named **DeviceInterfaceGUID** or a *Multi-String* entry named **DeviceInterfaceGUIDs**. Set the value to the GUID you generated in step 2.
 1. Disconnect the device from the system and reconnect it to the same physical port.
     > [!NOTE]
     > If you change the physical port, you must repeat steps 1 through 4.
@@ -49,14 +49,15 @@ The preceding procedure doesn't add a device interface GUID for an app (UWP app 
 
 As part of the driver package, you provide an .inf file that installs *Winusb.sys* as the function driver for the USB device.
 
-The following example .inf file shows WinUSB installation for most USB devices with some modifications, such as changing **USB_Install** in section names to an appropriate *DDInstall* value. You should also change the version, manufacturer, and model sections as necessary. For example, provide an appropriate manufacture's name, the name of your signed catalog file, the correct device class, and the vendor identifier (VID) and product identifier (PID) for the device. For info on creating a catalog file, see [Creating a Catalog File for Test-Signing a Driver Package](../install/creating-a-catalog-file-for-test-signing-a-driver-package.md).
+The following example .inf file shows WinUSB installation for most USB devices with some modifications, such as changing **USB_Install** section names to an appropriate *DDInstall* value. You should also change the version, manufacturer, and model sections as necessary. For example, provide an appropriate manufacture's name, the name of your signed catalog file, the correct device class, and the vendor identifier (VID), and product identifier (PID) for the device. For info on creating a catalog file, see [Creating a Catalog File for Test-Signing a Driver Package](../install/creating-a-catalog-file-for-test-signing-a-driver-package.md).
 
 Also notice that the setup class is set to *USBDevice*. Vendors can use the *USBDevice* setup class for devices that don't belong to another class and aren't USB host controllers or hubs.
 
-If you're installing WinUSB as the function driver for one of the functions in a USB composite device, you must provide the hardware ID that is associated with the function, in the INF. You can obtain the hardware ID for the function from the properties of the devnode in **Device Manager**. The hardware ID string format is `USB\VID_vvvv&PID_pppp`.
+If you're installing WinUSB as the function driver for one of the functions in a USB composite device, you must provide the hardware ID that is associated with the function, in the INF. You can obtain the hardware ID for the function from the properties of the devnode in **Device Manager**. The hardware ID string format is: `USB\VID_vvvv&PID_pppp`.
 
 The following INF installs WinUSB as the OSR USB FX2 board's function driver on an x64-based system.
 
+> [!NOTE]
 > Starting in Windows 10, version 1709, the Windows Driver Kit provides [InfVerif.exe](../devtest/infverif.md) that you can use to test a driver INF file to make sure there are no syntax issues and the INF file is universal. We recommend that you provide a universal INF. For more information, see [Using a Universal INF File](../install/using-a-universal-inf-file.md).
 
 ```inf
@@ -133,7 +134,7 @@ To install only a new custom device setup class, include a ClassInstall32 sectio
 Except for device-specific values and several issues that are noted in the following list, you can use these sections and directives to install WinUSB for any USB device. These list items describe the **Includes** and **Directives** in the preceding .inf file.
 
 - **USB_Install**: The **Include** and **Needs** directives in the **USB_Install** section are required for installing WinUSB. You shouldn't modify these directives.
-- **USB_Install.Services**: The **Include** directive in the **USB_Install.Services** section includes the system-supplied .inf for WinUSB (*Winusb.inf*). The WinUSB coinstaller installs this .inf file if it isn't already on the target system. The **Needs** directive specifies the section within *Winusb.inf* that contains information required to install *Winusb.sys* as the device's function driver. You shouldn't modify these directives.
+- **USB_Install.Services**: The **Include** directive in the **USB_Install.Services** section includes the system-supplied .inf for WinUSB (*Winusb.inf*). Windows installs this .inf file if it isn't already on the target system. The **Needs** directive specifies the section within *Winusb.inf* that contains information required to install *Winusb.sys* as the device's function driver. You shouldn't modify these directives.
 - **USB_Install.HW**: This section is the key in the .inf file. It specifies the device interface globally unique identifier (GUID) for your device. The **AddReg** directive sets the specified interface GUID in a standard registry value. When *Winusb.sys* is loaded as the device's function driver, it reads the registry value DeviceInterfaceGUIDs key and uses the specified GUID to represent the device interface. You should replace the GUID in this example with one that you create specifically for your device. If the protocols for the device change, create a new device interface GUID.
 
     > [!NOTE]
