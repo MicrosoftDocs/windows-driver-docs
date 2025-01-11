@@ -25,7 +25,7 @@
   - name: How Windows Ranks Driver Packages
     items:
     - name: How Windows Ranks Driver Packages
-      href: how-setup-ranks-drivers--windows-vista-and-later-.md
+      href: how-windows-ranks-driver-packages.md
     - name: Signature Categories and Driver Installation
       href: signature-categories-and-driver-installation.md
     - name: Signature Score
