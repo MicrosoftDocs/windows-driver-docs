@@ -1,6 +1,11 @@
 {
     "redirections": [
     {
+      "source_path": "windows-driver-docs-pr/install/how-setup-ranks-drivers--windows-vista-and-later-.md",
+      "redirect_url": "/windows-hardware/drivers/install/how-windows-ranks-driver-packages",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows-driver-docs-pr/install/using-general-setup-functions.md",
       "redirect_url": "/previous-versions/windows/drivers/install/using-general-setup-functions",
       "redirect_document_id": false
@@ -303,11 +308,6 @@
     {
       "source_path": "windows-driver-docs-pr/install/how-finish-install-actions-are-processed.md",
       "redirect_url": "/previous-versions/windows/drivers/install/how-finish-install-actions-are-processed",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows-driver-docs-pr/install/how-setup-ranks-drivers--windows-vista-and-later-.md",
-      "redirect_url": "windows-driver-docs-pr/install/how-windows-ranks-driver-packages",
       "redirect_document_id": false
     },
     {
