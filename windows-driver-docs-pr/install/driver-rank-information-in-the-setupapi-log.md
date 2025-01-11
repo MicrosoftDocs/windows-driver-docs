@@ -59,7 +59,7 @@ The following is a list of the Signer Score entries that Windows logs in the Set
 <a href="" id="unsigned-driver"></a>Unsigned driver  
 "Signer Score - Not digitally signed"
 
-For more information about driver ranking, see [How Windows Ranks Drivers](how-setup-ranks-drivers--windows-vista-and-later-.md).
+For more information about driver ranking, see [How Windows Ranks Drivers](how-windows-ranks-driver-packages.md).
 
  
 

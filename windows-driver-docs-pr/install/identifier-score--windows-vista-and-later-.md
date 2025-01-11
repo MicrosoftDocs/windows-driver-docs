@@ -59,4 +59,4 @@ The following lists the identifier scores for the four types of identifier-match
 
     For this type of match, the value 0x00003000 is the best identifier score and the value 0x00003FFF is the worst identifier score.
 
-For more information about driver ranking, see [How Windows Ranks Drivers](how-setup-ranks-drivers--windows-vista-and-later-.md).
+For more information about driver ranking, see [How Windows Ranks Drivers](how-windows-ranks-driver-packages.md).
