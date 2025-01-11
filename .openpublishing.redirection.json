@@ -5762,7 +5762,7 @@
     },
     {
         "source_path": "windows-driver-docs-pr/install/creating-a-private-build-of-an-in-box-driver.md",
-        "redirect_URL": "/windows-hardware/drivers/install/how-setup-ranks-drivers--windows-vista-and-later-",
+        "redirect_URL": "/windows-hardware/drivers/install/how-windows-ranks-driver-packages",
         "redirect_document_id": false
     },
     {
@@ -5802,7 +5802,7 @@
     },
     {
         "source_path": "windows-driver-docs-pr/install/installing-private-builds-of-in-box-drivers--windows-vista-and-later-.md",
-        "redirect_URL": "/windows-hardware/drivers/install/how-setup-ranks-drivers--windows-vista-and-later-",
+        "redirect_URL": "/windows-hardware/drivers/install/how-windows-ranks-driver-packages",
         "redirect_document_id": false
     },
     {
@@ -5827,7 +5827,7 @@
     },
     {
         "source_path": "windows-driver-docs-pr/install/overview-of-installing-private-builds-of-in-box-drivers.md",
-        "redirect_URL": "/windows-hardware/drivers/install/how-setup-ranks-drivers--windows-vista-and-later-",
+        "redirect_URL": "/windows-hardware/drivers/install/how-windows-ranks-driver-packages",
         "redirect_document_id": false
     },
     {
@@ -9124,7 +9124,7 @@
     },
     {
         "source_path": "windows-driver-docs-pr/install/how-setup-ranks-drivers.md",
-        "redirect_url": "/windows-hardware/drivers/install/how-setup-ranks-drivers--windows-vista-and-later-",
+        "redirect_url": "/windows-hardware/drivers/install/how-windows-ranks-driver-packages",
         "redirect_document_id": false
     },
     {
