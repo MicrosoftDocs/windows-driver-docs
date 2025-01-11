@@ -306,6 +306,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows-driver-docs-pr/install/how-setup-ranks-drivers--windows-vista-and-later-.md",
+      "redirect_url": "/previous-versions/windows/drivers/install/how-windows-ranks-driver-packages",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows-driver-docs-pr/install/setting-the-configflag-finishinstall-action-device-configuration-flag.md",
       "redirect_url": "/previous-versions/windows/drivers/install/setting-the-configflag-finishinstall-action-device-configuration-flag",
       "redirect_document_id": false

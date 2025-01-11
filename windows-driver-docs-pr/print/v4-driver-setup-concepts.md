@@ -138,7 +138,7 @@ Changing the port associated with a queue will change the Container ID associate
 
 The introduction of v4 print drivers does not modify the Plug and Play ranking behavior. When a device is plugged in, the available driver with the highest score will be selected. If the selected driver is a print class driver, and there is a better ranked, matching driver on the Windows Update site, then the selected driver will automatically be replaced the next time the user downloads updates for Windows.
 
-For more information about driver ranking, see [How Windows Ranks Drivers](../install/how-setup-ranks-drivers--windows-vista-and-later-.md).
+For more information about driver ranking, see [How Windows Ranks Drivers](../install/how-windows-ranks-driver-packages.md).
 
 ## Driver setup best practices
 
@@ -188,6 +188,6 @@ Plug and Play maintains an implicit ranking of all HardwareIDs and CompatibleIDs
 
 [How to Implement Compatible IDs in Printing Devices](/previous-versions/windows/hardware/design/dn613942(v=vs.85))  
 
-[How Windows Ranks Drivers](../install/how-setup-ranks-drivers--windows-vista-and-later-.md)  
+[How Windows Ranks Drivers](../install/how-windows-ranks-driver-packages.md)  
 
 [Port Monitor MIB (PWG 5107.1-2005)](https://pwg.org/standards.html)

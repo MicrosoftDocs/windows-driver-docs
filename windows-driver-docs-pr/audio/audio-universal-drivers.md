@@ -156,7 +156,7 @@ Where:
 
 ### Plug and Play INF version and date evaluation for driver update
 
-The Windows Plug and Play system evaluates the date and the driver version to determine which drive to install when multiple drivers exist.  For more information, see [How Windows Ranks Drivers](../install/how-setup-ranks-drivers--windows-vista-and-later-.md).
+The Windows Plug and Play system evaluates the date and the driver version to determine which drive to install when multiple drivers exist.  For more information, see [How Windows Ranks Drivers](../install/how-windows-ranks-driver-packages.md).
 
 To allow the latest driver to be used, be sure and update the date and version, for each new version of the driver.
 
