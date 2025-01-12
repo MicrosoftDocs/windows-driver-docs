@@ -11,7 +11,7 @@ ms.date: 05/07/2020
 This topic contains a video tutorial that shows how to debug your Windows Driver Frameworks (WDF) driver with full access to the WDF source code. Following the video is the step-by-step procedure followed in the video, for convenient reference.
 
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/2568bc8a-3f0b-4900-b659-aa5b22159f04]
+>[!VIDEO c15c9a87-a110-4d25-95b6-ea6dee753a70]
 
 WDF source debugging allows you to step freely into framework code without needing to download WDF source code. The debugger automatically downloads the correct version of WDF from GitHub.
 
