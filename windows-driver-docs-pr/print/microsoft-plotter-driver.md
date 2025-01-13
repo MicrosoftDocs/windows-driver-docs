@@ -8,7 +8,7 @@ keywords:
 - plotters WDK print
 - Hewlett-Packard Graphics Language WDK MSPlot
 - Microsoft Plotter Driver WDK print
-ms.date: 09/12/2024
+ms.date: 01/09/2025
 ---
 
 # Microsoft plotter driver
@@ -36,5 +36,3 @@ Previous versions of the MSPLOT Windows driver sample are archived at Microsoft 
 [Windows 8.1 driver samples](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Driver%20Kit%20Sample/Windows%20Driver%20Kit%20(WDK)%208.1%20Samples)
 
 [Windows 8 driver samples](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Driver%20Kit%20Sample/Windows%20Driver%20Kit%20(WDK)%208.0%20Samples)
-
-For Windows 7, the MSPLOT sample was included in the [Windows Driver Kit Version 7.1.0](https://www.microsoft.com/download/details.aspx?id=11800).

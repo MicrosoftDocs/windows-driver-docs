@@ -48,7 +48,7 @@ To illustrate, consider the following scenario that includes a hypothetical devi
 
 ![Diagram showing how base INF and extension INFs are selected.](images/extension-base-inf-example.png)
 
-The **ExtensionId** values `{A}` and `{B}` are shown in curly brackets, and each base driver package's [rank](how-setup-ranks-drivers--windows-vista-and-later-.md) is shown in the banner ribbons.
+The **ExtensionId** values `{A}` and `{B}` are shown in curly brackets, and each base driver package's [rank](how-windows-ranks-driver-packages.md) is shown in the banner ribbons.
 
 First, the system selects the base driver package with the best rank and highest version.
 

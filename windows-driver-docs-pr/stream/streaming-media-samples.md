@@ -4,7 +4,7 @@ description: Streaming media samples
 keywords:
 - streaming media samples WDK
 - samples WDK streaming media
-ms.date: 06/19/2020
+ms.date: 01/09/2025
 ---
 
 # Streaming media samples
@@ -16,8 +16,6 @@ Earlier versions of Windows driver samples are archived here:
 - [Windows 8.1 driver samples](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Driver%20Kit%20Sample/Windows%20Driver%20Kit%20(WDK)%208.1%20Samples)
 
 - [Windows 8 driver samples](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Driver%20Kit%20Sample/Windows%20Driver%20Kit%20(WDK)%208.0%20Samples)
-
-For Windows 7, samples were included with [Windows Driver Kit (WDK) 7 download](https://www.microsoft.com/download/details.aspx?id=11800).
 
 | Sample name | Build environment | Target operating system | PnP driver | In-box driver | Sample description |
 |--|--|--|--|--|--|
