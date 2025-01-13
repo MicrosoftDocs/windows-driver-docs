@@ -1,12 +1,15 @@
 ---
 title: Device and Driver Installation
-description: This section explains how devices and drivers are installed in Windows.
+description: This article is for developers creating device drivers for Windows. This documentation explains how devices and drivers are installed in Windows.
 ms.assetid: 5bb4d9d3-9dcb-4820-a6ad-0345f7645c82
-ms.date: 01/10/2025
+ms.date: 01/13/2025
 ms.topic: article
 ---
 
 # Device and driver installation
+
+> [!NOTE]
+> This article is for developers creating device drivers for Windows. If you are a user looking to install or update a device driver on your machine, see [Update drivers manually in Windows](https://support.microsoft.com/windows/update-drivers-manually-in-windows-ec62f46c-ff14-c91d-eead-d7126dc1f7b6).
 
 This section explains how devices and drivers are installed in Windows.
 

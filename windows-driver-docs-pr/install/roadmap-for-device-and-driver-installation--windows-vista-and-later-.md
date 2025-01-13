@@ -8,6 +8,9 @@ ms.date: 12/19/2024
 
 :::image type="content" source="images/map-hand-sml.png" alt-text="Illustration of a compass, a map, and a finger pointing at the map.":::
 
+> [!NOTE]
+> This article is for developers creating device drivers for Windows. If you are a user looking to install or update a device driver on your machine, see [Update drivers manually in Windows](https://support.microsoft.com/windows/update-drivers-manually-in-windows-ec62f46c-ff14-c91d-eead-d7126dc1f7b6).
+
 To install a device and driver in the Windows operating system, follow these steps:
 
 - Step 1: Learn the fundamentals of device and driver installation in Windows.
