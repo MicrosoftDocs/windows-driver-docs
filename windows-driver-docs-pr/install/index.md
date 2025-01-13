@@ -9,7 +9,7 @@ ms.topic: article
 # Device and driver installation
 
 > [!NOTE]
-> This article is for developers creating device drivers for Windows. If you are a user looking to install or update a device driver on your machine, see [Update drivers manually in Windows](https://support.microsoft.com/windows/update-drivers-manually-in-windows-ec62f46c-ff14-c91d-eead-d7126dc1f7b6).
+> This article is for developers creating device drivers for Windows. If you're a user looking to install or update a device driver on your machine, see [Update drivers manually in Windows](https://support.microsoft.com/windows/update-drivers-manually-in-windows-ec62f46c-ff14-c91d-eead-d7126dc1f7b6).
 
 This section explains how devices and drivers are installed in Windows.
 
