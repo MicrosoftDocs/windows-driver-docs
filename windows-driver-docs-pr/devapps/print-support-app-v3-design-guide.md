@@ -214,9 +214,6 @@ public sealed class PrintSupportExtensionBackGroundTask : IBackgroundTask
                 currentTimeouts.SendTimeout = TimeSpan.FromSeconds(10);
                 currentTimeouts.ReceiveTimeout = TimeSpan.FromSeconds(10);
                 break;
-            case IppPrinterCommunicationKind.UsbPrinter:
-                // not used for usb
-                break;
             case IppPrinterCommunicationKind.UniversalPrint:
                 // adjust timeout for universal printer
                 break;
@@ -236,9 +233,6 @@ public sealed class PrintSupportExtensionBackGroundTask : IBackgroundTask
                 currentTimeouts.ConnectTimeout = TimeSpan.FromSeconds(30);
                 currentTimeouts.SendTimeout = TimeSpan.FromSeconds(30);
                 currentTimeouts.ReceiveTimeout = TimeSpan.FromSeconds(30);
-                break;
-            case IppPrinterCommunicationKind.Usb:
-                // not used for usb
                 break;
             case IppPrinterCommunicationKind.UniversalPrint:
                 // adjust timeout for universal printer
