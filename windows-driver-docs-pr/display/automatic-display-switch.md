@@ -75,7 +75,7 @@ The GPU driver should never call the mux ACPI methods.
 
 ### Automatic display switch DDI
 
-Several DDIs are added to satisfy the mux requirements. There are five different points that the OS calls a driver's DDI. The various calls depend on the stage of the switch and whether the driver is controlling the GPU that currently has control of the display.
+Several DDIs are added to satisfy the mux requirements. There are five different points that the OS calls a driver's DDIs during a mux switch, using the following functions. The various calls depend on the stage of the switch and whether the driver is controlling the GPU that currently has control of the display.
 
 |       **DDI**      | **Description** |
 |--------------------|-----------------|
@@ -89,6 +89,8 @@ Several DDIs are added to satisfy the mux requirements. There are five different
 | [**DxgkDdiDisplayMuxUpdateState**](/windows-hardware/drivers/ddi/d3dkmddi/nc-dispmprt-dxgkddi_displaymux_update_state) | Called at adapter start and return to the D0 power state to let the driver know the current mux state. |
 
 There are explicit actions the driver needs to complete at each stage. These actions are described later in this article.
+
+For a complete list of ADS-related DDI updates, see [WDDM DDI changes for automatic display switching](#wddm-ddi-changes-for-automatic-display-switching).
 
 ### Sharing data between GPU0 and GPU1
 
@@ -183,7 +185,7 @@ If a failure happens during any stage of the switch sequence, the following clea
 
 * Driver gets disabled during switch  
 
-  When a driver is stopped, the calls in the switch sequence fail and the recovery sequence is activated. The [PnpStop section](#pnp-stopping-the-adapter-that-is-scanning-out-to-a-target) also details how it ensures the screen is always visible.
+  When a driver is stopped, the calls in the switch sequence fail and the recovery sequence is activated. The [PnPStop section](#pnp-stopping-the-adapter-that-is-scanning-out-to-a-target) also details how it ensures the screen is always visible.
 
 #### Lid close scenarios
 
@@ -459,12 +461,12 @@ The boot sequence is asynchronous in nature, so this sequence is for example's p
 12. Once *Dxgkrnl* finds the iGPU-reported child that is connected to the mux, it calls [**DxgkDdiDisplayMuxUpdateState**](/windows-hardware/drivers/ddi/d3dkmddi/nc-dispmprt-dxgkddi_displaymux_update_state) to inform the iGPU that the mux is connected to that target.
 13. Because the iGPU exposed a connected internal monitor, *Dxgkrnl* sets a mode on the iGPU using [**DxgkddiSettimingsfromvidpn**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_settimingsfromvidpn).
 14. *Dxgkrnl* starts the dGPU driver, then repeats steps 5-12 for the dGPU.
-15. *Dxgkrnl* detects that the iGPU, dGPU, and mux are all configured correctly, so it creates a mux pair and the Pnp Device Interface properties for the mux pair.
+15. *Dxgkrnl* detects that the iGPU, dGPU, and mux are all configured correctly, so it creates a mux pair and the PnP Device Interface properties for the mux pair.
 16. *Dxgkrnl* reads the last mux configuration from the registry. Because the last configuration was dGPU, *Dxgkrnl* now starts the mux switch sequence previously described to switch the mux to the dGPU.
 
 ### Panel drivers
 
-Monitor panel drivers are loaded based on the Pnp hardware ID generated from the EDID. Given that the EDID stays the same, the panel driver is loaded when either GPU is controlling the internal panel. Both drivers will expose the same brightness functionality. Thus, loading shouldn't cause any issue and the panel driver won't need to know which GPU is in control of the mux.
+Monitor panel drivers are loaded based on the PnP hardware ID generated from the EDID. Given that the EDID stays the same, the panel driver is loaded when either GPU is controlling the internal panel. Both drivers will expose the same brightness functionality. Thus, loading shouldn't cause any issue and the panel driver won't need to know which GPU is in control of the mux.
 
 ### Identify the targets a mux controls
 
@@ -472,7 +474,7 @@ When the OS starts the driver, it calls the driver's [**DxgkDdiQueryChildRelatio
 
 For ADS, we define an ACPI DMID method that needs to be under the child ACPI namespace for the target. This DMID method returns the ACPI name of the mux device. It allows the OS to find the mux ACPI name for the target.
 
-### Pnp stopping the adapter that is scanning out to a target
+### PnP stopping the adapter that is scanning out to a target
 
 The OS won't switch the mux when the GPU that is scanning out to the internal panel is stopped. The following scenarios go through the different cases when a GPU is stopped.
 
@@ -510,13 +512,13 @@ The OS previously had some policies regarding the POST adapter. For example, the
 
 When a monitor is connected in Windows 11, the shell/DWM have an animation sequence. This animation is disabled in display switch scenarios.
 
-### Disable Pnp bonk
+### Disable PnP bonk
 
-When a monitor is added or removed, the Pnp system plays a 'bonk' sound to notify the user. This 'bonk" is disabled in display switch scenarios.
+When a monitor is added or removed, the PnP system plays a 'bonk' sound to notify the user. This 'bonk" is disabled in display switch scenarios.
 
 ### Application notifications
 
-When a display switch occurs, the system goes through the regular HPD removal and HPD arrival code paths. Hence all the normal application notifications trigger as normal; for example, the Pnp notification for the HPD out and the HPD in and the WM_DISPLAYCHANGE window messages.
+When a display switch occurs, the system goes through the regular HPD removal and HPD arrival code paths. Hence all the normal application notifications trigger as normal; for example, the PnP notification for the HPD out and the HPD in and the WM_DISPLAYCHANGE window messages.
 
 ### API to trigger switch
 
@@ -859,7 +861,7 @@ using namespace winrt::Windows::Devices::Display::Core;
 
 void SwitchDisplayMuxTarget()
 {
-    // Pnp device interface search string for Mux device interface
+    // PnP device interface search string for Mux device interface
     std::wstring muxDeviceSelector = L"System.Devices.InterfaceClassGuid:=\"{93c33929-3180-46d3-8aab-008c84ad1e6e}\" AND System.Devices.InterfaceEnabled:=System.StructuredQueryType.Boolean#True";
 
     // Execute the device interface query
@@ -967,18 +969,6 @@ The [**DXGK_DISPLAYMUX_INTERFACE_2**](/windows-hardware/drivers/ddi/dispmprt/ns-
 
 KMD implements the following functions to support ADS. *Dxgkrnl* obtains KMD's ADS functional interface through a call to KMD's [**DxgkddiQueryInterface**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_query_interface).
 
-* [**DxgkDdiDisplayMuxGetDriverSupportLevel**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_displaymux_get_driver_support_level)
-* [**DxgkDdiDisplayMuxGetRuntimeStatus**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_displaymux_get_runtime_status)
-* [**DxgkDdiDisplayMuxPreSwitchAway**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_displaymux_pre_switch_away)
-* [**DxgkDdiDisplayMuxPreSwitchAwayGetPrivateData**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_displaymux_pre_switch_away_get_private_data)
-* [**DxgkDdiDisplayMuxPreSwitchTo**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_displaymux_pre_switch_to)
-* [**DxgkDdiDisplayMuxSwitchCanceled**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_displaymux_switch_canceled)
-* [**DxgkDdiDisplayMuxPostSwitchAway**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_displaymux_post_switch_away)
-* [**DxgkDdiDisplayMuxPostSwitchToPhase1**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_displaymux_post_switch_to_phase1)
-* [**DxgkDdiDisplayMuxPostSwitchToPhase2**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_displaymux_post_switch_to_phase2)
-* [**DxgkDdiDisplayMuxUpdateState**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_displaymux_update_state)
-* [**DxgkDdiDisplayMuxReportPresence**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_displaymux_report_presence)
-* [**DxgkDdiDisplayMuxSetInternalPanelInfo**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_displaymux_set_internal_panel_info)
 
 ### Driver reporting ADS capability
 
