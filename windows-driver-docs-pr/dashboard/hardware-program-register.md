@@ -1,8 +1,8 @@
 ---
 title: Register for the Microsoft Windows Hardware Developer Program
-description: How to register for the Microsoft Windows Hardware Developer Program
+description: How to register for the Microsoft Windows Hardware Developer Program.
 ms.topic: article
-ms.date: 01/15/2025
+ms.date: 01/16/2025
 ---
 
 # Register for the Microsoft Windows Hardware Developer Program
@@ -16,9 +16,9 @@ This article shows you how to register for the Microsoft Windows Hardware Develo
 
 ## Prerequisites
 
-- If you have an existing organization Dev Center account that you want to use for the Hardware program, sign in with it before you begin registration.
-- You must have an Extended Validation (EV) code signing certificate. Check whether your organization already has a code signing certificate. If your company already has a certificate, have the certificate available. If your organization doesn't have a certificate, you must [purchase an EV certificate](code-signing-reqs.md#ev-certificate-signed-drivers). You only need the certificate to register for the Hardware Developer Program. You don't need to sign your driver with it.
-- Sign in with your organization's Microsoft Entra ID [Global administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) account. If you don't know whether your organization has a Microsoft Entra ID directory, contact your IT department. If your organization doesn't have a Microsoft Entra ID directory, you're able to create one for free during the registration process.
+- If you have an existing organization Dev Center account that you want to use for the hardware program, sign in with it before you begin registration.
+- You must have an extended validation (EV) code signing certificate. Check whether your organization already has a code signing certificate. If your company already has a certificate, have the certificate available. If your organization doesn't have a certificate, you must [purchase an EV certificate](code-signing-reqs.md#ev-certificate-signed-drivers). You only need the certificate to register for the Hardware Developer Program. You don't need to sign your driver with it.
+- Sign in with your organization's Microsoft Entra ID [global administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) account. If you don't know whether your organization has a Microsoft Entra ID directory, contact your IT department. If your organization doesn't have a Microsoft Entra ID directory, you can create one for free during the registration process.
 - You must have the authority to sign legal agreements on behalf of your organization.
 
 ## Register for the Hardware Developer Program
@@ -52,9 +52,9 @@ To register for the Hardware Developer Program:
 1. Provide a legal contact with the authority to sign agreements on behalf of your company.
 
     > [!IMPORTANT]
-    > Microsoft emails the legal contact for account verification purposes. It is important to respond to the email.
+    > Microsoft emails the legal contact for account verification purposes. It's important to respond to the email.
 
-1. If you are authorized by your company to accept legal agreements, review the agreement terms and select **Accept and Continue**. If you are not authorized to accept agreements, pause the registration and get someone who is authorized to review and select **Accept and Continue**.
+1. If you're authorized by your company to accept legal agreements, review the agreement terms and select **Accept and Continue**. If you aren't authorized to accept agreements, pause the registration and get someone who is authorized to review and select **Accept and Continue**.
 
 1. Your registration request is now submitted. Now, upload the extended validation (EV) code signing certificate from Manage certificates page. Review the instructions and upload the EV certificate. The EV certificate is required for your request to be considered for approval.
 
