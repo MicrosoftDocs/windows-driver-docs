@@ -49,9 +49,12 @@ To register for the Hardware Developer Program:
 
 1. Provide company information and ensure the details are accurate.
 
-1. Provide a legal contact with the authority to sign agreements on behalf of your company. Microsoft emails the legal contact for account verification purposes.
+1. Provide a legal contact with the authority to sign agreements on behalf of your company.
 
-1. Review the agreement terms and select **Accept and Continue**.
+    > [!IMPORTANT]
+    > Microsoft emails the legal contact for account verification purposes. It is important to respond to the email.
+
+1. If you are authorized by your company to accept legal agreements, review the agreement terms and select **Accept and Continue**. If you are not authorized to accept agreements, pause the registration and get someone who is authorized to review and select **Accept and Continue**.
 
 1. Your registration request is now submitted. Now, upload the extended validation (EV) code signing certificate from Manage certificates page. Review the instructions and upload the EV certificate. The EV certificate is required for your request to be considered for approval.
 
