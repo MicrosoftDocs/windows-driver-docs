@@ -52,7 +52,7 @@ To register for the Hardware Developer Program:
 1. Provide a legal contact with the authority to sign agreements on behalf of your company.
 
     > [!IMPORTANT]
-    > Microsoft emails the legal contact for account verification purposes. It's important to respond to the email.
+    > **Microsoft emails the legal contact for account verification purposes. It's important to respond to the email.**
 
 1. If you're authorized by your company to accept legal agreements, review the agreement terms and select **Accept and Continue**. If you aren't authorized to accept agreements, pause the registration and get someone who is authorized to review and select **Accept and Continue**.
 
