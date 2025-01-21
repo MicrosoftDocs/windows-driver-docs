@@ -1,7 +1,7 @@
 ---
-title: Enabling DMA remapping for device drivers
-description: Enable and opt-into Direct Memory Access (DMA) remapping to ensure compatibility with Kernel DMA Protection and DMAGuard policies
-ms.date: 06/21/2024
+title: Enabling DMA Remapping for Device Drivers
+description: Enable and opt-into Direct Memory Access(DMA) remapping to ensure compatibility with Kernel DMA Protection and DMAGuard policies.
+ms.date: 01/21/2025
 ---
 
 # Enabling DMA remapping for device drivers
@@ -30,7 +30,7 @@ For Windows 24H2 and above, please use this per-device method. Note that this pe
 
 Add an INF directive such as the following to the device enumeration section:
 
-``` inf
+```inf
  [MyDriver_Device.NT.HW]
  AddReg=DMA_Remapping_OptIn_AddReg
  
@@ -41,15 +41,14 @@ Add an INF directive such as the following to the device enumeration section:
 Valid values for **DMA Management\RemappingSupported** are:
 
 | Value | Meaning |
-| ----- | ------- |
+|-------|---------|
 | 0     | Opt out. This indicates to the system that the device and driver are incompatible with DMA remapping. |
 | 1     | Opt in. This indicates to the system that the device and driver is fully compatible with DMA remapping. |
 | No registry key | Let the system determine the policy. |
 
-<div>
 Optionally, you add RemappingFlags to further control the behavior:
 
-``` inf
+```inf
  [DMA_Remapping_OptIn_AddReg]
  HKR,"DMA Management","RemappingSupported",0x00010001,1
  HKR,"DMA Management","RemappingFlags",0x00010001,0x00000001
@@ -58,7 +57,7 @@ Optionally, you add RemappingFlags to further control the behavior:
 Valid values for **DMA Management\RemappingFlags** are:
 
 | Value | Meaning |
-| ----- | ------- |
+|-------|---------|
 | 0     | If **RemappingSupported** is 1, opt in unconditionally. |
 | 1     | If **RemappingSupported** is 1, opt in but only when one or more of the following conditions are met: A. If the device is an external device (eg. Thunderbolt); B. If DMA verification is enabled in Driver Verifier. |
 | No registry key | Same as 0 value. |
@@ -66,6 +65,7 @@ Valid values for **DMA Management\RemappingFlags** are:
 These registry keys will appear under the enumeration tree: ``HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\PCI\<device instance path>\Device Parameters\DMA Management``
 
 ### Per-driver Opt-In Mechanism
+
 Only use this per-driver method for Windows versions up to Windows 11 23H2. It is strongly recommended to use the [per-device method as outlined above](#per-device-opt-in-mechanism).
 
 Add an INF directive such as the following to the service installation section:
@@ -78,7 +78,7 @@ Add an INF directive such as the following to the service installation section:
 Valid values for **DmaRemappingCompatible** are:
 
 | Value | Meaning |
-| ----- | ------- |
+|-------|---------|
 | 0     | Opt out. This indicates to the system that your driver is incompatible with DMA remapping. |
 | 1     | Opt in. This indicates to the system that your driver is fully compatible with DMA remapping. |
 | 2     | Opt in, but only when one or more of the following conditions are met: A. If the device is an external device (eg. Thunderbolt); B. If DMA verification is enabled in Driver Verifier. |
