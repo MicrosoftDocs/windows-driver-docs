@@ -92,7 +92,7 @@ The registry key will appear under the service installation tree: ``HKEY_LOCAL_M
 > [!WARNING]
 > DMA remapping is not supported for graphics device drivers.
 
-## Validate that DMA remapping is enabled for a specific device driver instance
+## Validating that DMA remapping is enabled for a specific device driver instance
 
 Use the latest Windows build with VT-d/AMD-Vi enabled to test driver functionality on Intel x64 and AMD64 systems.
 
