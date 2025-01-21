@@ -1,10 +1,10 @@
 ---
-title: Enabling DMA Remapping for Device Drivers
+title: Enable DMA Remapping for Device Drivers
 description: Enable and opt-into Direct Memory Access(DMA) remapping to ensure compatibility with Kernel DMA Protection and DMAGuard policies.
 ms.date: 01/21/2025
 ---
 
-# Enabling DMA remapping for device drivers
+# Enable DMA remapping for device drivers
 
 To ensure compatibility with [Kernel DMA Protection](/windows/security/information-protection/kernel-dma-protection-for-thunderbolt) and [DMAGuard Policy](/windows/client-management/mdm/policy-csp-dmaguard#dmaguard-deviceenumerationpolicy), PCIe device drivers can opt into Direct Memory Access (DMA) remapping.
 
@@ -24,7 +24,7 @@ Drivers perform DMA using the following interfaces:
 
 To adjust the DMA remapping policy for your driver, add an INF directive. There are two methods to this: a per-device (strongly recommended and preferred) mechanism and a per-driver (legacy) mechanism.
 
-## Per-device Opt-In Mechanism
+## Per-device opt-in mechanism
 
 For Windows 24H2 and above, please use this per-device method. Note that this per-device opt-in will completely override the legacy per-driver method, if present (i.e. **DmaRemappingCompatible** key is ignored if **RemappingSupported** is set).
 
@@ -64,7 +64,7 @@ Valid values for **DMA Management\RemappingFlags** are:
 
 These registry keys will appear under the enumeration tree: ``HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\PCI\<device instance path>\Device Parameters\DMA Management``
 
-### Per-driver Opt-In Mechanism
+### Per-driver opt-in mechanism
 
 Only use this per-driver method for Windows versions up to Windows 11 23H2. It is strongly recommended to use the [per-device method as outlined above](#per-device-opt-in-mechanism).
 
@@ -92,7 +92,7 @@ The registry key will appear under the service installation tree: ``HKEY_LOCAL_M
 > [!WARNING]
 > DMA remapping is not supported for graphics device drivers.
 
-## Validating that DMA remapping is enabled for a specific device driver instance
+## Validate that DMA remapping is enabled for a specific device driver instance
 
 Use the latest Windows build with VT-d/AMD-Vi enabled to test driver functionality on Intel x64 and AMD64 systems.
 
