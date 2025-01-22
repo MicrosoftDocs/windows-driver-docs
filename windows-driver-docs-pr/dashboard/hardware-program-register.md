@@ -2,17 +2,17 @@
 title: Register for the Microsoft Windows Hardware Developer Program
 description: How to register for the Microsoft Windows Hardware Developer Program.
 ms.topic: article
-ms.date: 01/16/2025
+ms.date: 01/22/2025
 ---
 
 # Register for the Microsoft Windows Hardware Developer Program
 
 This article shows you how to register for the Microsoft Windows Hardware Developer Program. When you register for the Hardware Developer Program, you're prompted to accept the following agreements
 
-- Code Signing Agreement
-- Windows Hardware Compatibility Agreement
-- Microsoft Marks License Agreement (MMLA) (ver. 2024)
-- Windows Analytics Agreement (ver. 2.0)
+- [Code Signing Agreement](/legal/windows/hardware/code-signing-agreement-2208)
+- [Windows Hardware Compatibility Agreement](/legal/windows/hardware/windows-hardware-compatibility-program-2208)
+- [Microsoft Marks License Agreement (MMLA) (ver. 2024)](/legal/windows/hardware/microsoft-marks-license-agreement-2024)
+- [Windows Analytics Agreement (ver. 2.0)](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fquery.prod.cms.rt.microsoft.com%2Fcms%2Fapi%2Fam%2Fbinary%2FRE1T4mt&wdOrigin=BROWSELINK)
 
 ## Prerequisites
 
