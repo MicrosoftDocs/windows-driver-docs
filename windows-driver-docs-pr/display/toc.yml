@@ -36,6 +36,8 @@
       href: querying-wddm-feature-support-and-enablement.md
     - name: Allocation notification
       href: allocation-notification.md
+    - name: Automatic display switching
+      href: automatic-display-switch.md
     - name: Dirty bit tracking
       href: dirty-bit-tracking.md
     - name: Live migration on GPU-P devices

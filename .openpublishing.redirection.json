@@ -21850,6 +21850,11 @@
       "source_path":  "windows-driver-docs-pr/debugger/setting-up-a-1394-cable-connection.md",
       "redirect_URL":  "/previous-versions/windows/hardware/debugger/setting-up-a-1394-cable-connection",
       "redirect_document_id":  false
+    },
+    {
+      "source_path":  "windows-driver-docs-pr/develop/distributing-a-driver-package-win8.md",
+      "redirect_URL":  "/windows-hardware/drivers/develop/distributing-a-driver-package",
+      "redirect_document_id":  false
     }
   ]
 }

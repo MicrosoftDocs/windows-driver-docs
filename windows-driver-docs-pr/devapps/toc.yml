@@ -37,12 +37,18 @@
     href: device-sync-and-update-for-UWP-device-apps.md
   - name: "Creating a device background task"
     href: how-to-create-a-device-background-task.md
-- name: "Print support apps for printers"
+- name: "Print Support Apps for printers"
 # Auto-expanded node
   items: 
-  - name: "Print support app design guide"
+  - name: "Print Support App design guide"
     href: print-support-app-design-guide.md
-  - name: "Print support app association"
+  - name: "Print Support App v3 design guide"
+    href: print-support-app-v3-design-guide.md
+  - name: "Print Support App v4 design guide"
+    href: print-support-app-v4-design-guide.md
+  - name: "MSIX Manifest Specification for Print Support Virtual Printer"
+    href: msix-manifest-specification-print-support-virtual-printer.md
+  - name: "Print Support App association"
     href: print-support-app-association.md 
 - name: "UWP device apps for printers"
 # Auto-expanded node
