@@ -1,8 +1,8 @@
 ---
 title: Driver security guidance
-description: This section contains information on enhancing driver security.
+description: This section contains crucial advice on improving the security of drivers in Windows.
 ms.assetid: 50D09948-8CE2-446F-A208-35F7B3795A6B
-ms.date: 01/08/2025
+ms.date: 01/21/2025
 ms.topic: article
 ---
 
@@ -12,7 +12,7 @@ This section provides crucial advice on improving the security of drivers in Win
 
 ## Windows is mission critical
 
-Windows is used by hospitals, 911 systems, airports and other vital institutions and organizations. The world relies on Windows to be reliable and secure.
+Windows is used by hospitals, 911 systems, airports, and other vital institutions and organizations. The world relies on Windows to be reliable and secure.
 
 In these critical environments, any failure or compromise in the operating system can have severe consequences. Therefore, ensuring that drivers – the software that allows the operating system to communicate with hardware devices – are secure and reliable is paramount. The integrity of these systems is non-negotiable, and driver developers play a crucial role in maintaining this important functionality.
 
@@ -35,7 +35,7 @@ Shipping secure and reliable drivers offers many benefits:
 |Benefit                  | Description |
 |------------------------ |------------ |
 | Avoidance of costly security incidents | Responding to a security incident is costly, stressful and can significantly impact the viability of a business. |
-| Repeat and referral sales | Satisfied customers are more likely to make repeat purchases and refer others. With a security incident, customers are likely to re-evaluate vendors and consider moving their business to a new partner.  Customers are more likely to trust and recommend your products if they work as they should. |
+| Repeat and referral sales | Satisfied customers are more likely to make repeat purchases and refer others. With a security incident, customers are likely to re-evaluate vendors and consider moving their business to a new partner. Customers are more likely to trust and recommend your products if they work as they should. |
 | Lower support costs | Fewer security issues and crashes mean reduced support costs and less downtime. |
 | Increased security = Increased product reliability | Work that is done to clean up incorrect memory access that creates security holes, increases product reliability. When Windows detects that incorrect memory access is taking place, it will shut down the OS and display a blue error screen. |
 
@@ -59,12 +59,11 @@ By diligently implementing these practices, you can contribute to the security a
 
 ### Microsoft Virus Initiative
 
-The Microsoft Virus Initiative (MVI) helps organizations improve the security solutions our customers rely on to keep them safe. We provide tools, resources, and knowledge to support better-together experiences with great performance, reliability, and compatibility. Microsoft collaborates with MVI partners to define and follow Safe Deployment Practices (SDP) to support the safety and resiliency of our mutual customers. If you are an antivirus vendor, see [Microsoft Virus Initiative](/defender-xdr/virus-initiative-criteria) to learn how to join MVI for more assistance on software deployment. To read more about Windows and security products, see this blog article by David Weston - [Windows Security best practices for integrating and managing security tools](https://www.microsoft.com/security/blog/2024/07/27/windows-security-best-practices-for-integrating-and-managing-security-tools/). It explains why security products use kernel-mode drivers today and the safety measures Windows provides for third-party solutions. In addition, it describes how to leverage the integrated security capabilities of Windows for increased security and reliability.
+The Microsoft Virus Initiative (MVI) helps organizations improve the security solutions our customers rely on to keep them safe. We provide tools, resources, and knowledge to support better-together experiences with great performance, reliability, and compatibility. Microsoft collaborates with MVI partners to define and follow Safe Deployment Practices (SDP) to support the safety and resiliency of our mutual customers. If you're an antivirus vendor, see [Microsoft Virus Initiative](/defender-xdr/virus-initiative-criteria) to learn how to join MVI for more assistance on software deployment. To read more about Windows and security products, see this blog article by David Weston - [Windows Security best practices for integrating and managing security tools](https://www.microsoft.com/security/blog/2024/07/27/windows-security-best-practices-for-integrating-and-managing-security-tools/). It explains why security products use kernel-mode drivers today and the safety measures Windows provides for third-party solutions. In addition, it describes how to leverage the integrated security capabilities of Windows for increased security and reliability.
 
 ## Call to action 
 
 To make your driver more secure and reliable, carefully follow the guidance provided in the following topics.
-
 
 |Topic                    |Description|
 |------------------------ |---------- |
@@ -73,4 +72,4 @@ To make your driver more secure and reliable, carefully follow the guidance prov
 | [Threat modeling for drivers](threat-modeling-for-drivers.md) | How to create and use a threat models for drivers.|
 | [Windows security model for driver developers](windows-security-model.md) | How the Windows security model applies to drivers and explains what driver writers must do to improve the security of their code.|
 
-If you are involved in developing a Windows driver, contribute to the security measures that have a significant impact on the lives of the billions of people who use Windows every day.
+If you're involved in developing a Windows driver, contribute to the security measures that have a significant impact on the lives of the billions of people who use Windows every day.
