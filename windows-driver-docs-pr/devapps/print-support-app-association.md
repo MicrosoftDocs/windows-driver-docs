@@ -1,7 +1,7 @@
 ---
 title: Print Support App Association
 description: Provides guidance and examples for associating a print support app with a printer.
-ms.date: 09/26/2024
+ms.date: 01/10/2025
 ---
 
 # Print support app association
@@ -200,6 +200,10 @@ The Hardware ID is the printer-device-id IPP attribute from the printer.
 
 ## Related articles
 
+[End of servicing plan for third-party printer drivers on Windows](../print/end-of-servicing-plan-for-third-party-printer-drivers-on-windows.md)
+
+[*Internet Printing Protocol (IPP) specification*](https://tools.ietf.org/html/rfc8011)
+
 [Print support app design guide](./print-support-app-design-guide.md)
 
 [Windows.Devices.Printers](/uwp/api/windows.devices.printers?view=winrt-insider&preserve-view=true)
@@ -207,5 +211,3 @@ The Hardware ID is the printer-device-id IPP attribute from the printer.
 [Windows.Graphics.Printing.PrintSupport](/uwp/api/windows.graphics.printing.printsupport?view=winrt-insider&preserve-view=true)
 
 [Windows.Graphics.Printing.Workflow](/uwp/api/windows.graphics.printing.workflow?view=winrt-insider&preserve-view=true)
-
-[*Internet Printing Protocol (IPP) specification*](https://tools.ietf.org/html/rfc8011)

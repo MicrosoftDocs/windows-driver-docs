@@ -1,28 +1,30 @@
 ---
-title: Windows protected print mode for enterprises and developers
-description: Describes Windows protected print mode for enterprises and developers
-ms.date: 09/27/2024
+title: Windows Protected Print Mode for Enterprises and Developers
+description: Describes Windows protected print mode for enterprises and developers.
+ms.date: 01/23/2025
 ---
 
 # Windows protected print mode for enterprises and developers
 
-Windows protected print mode creates peace of mind for enterprise administrators by adding many security benefits as well as completely removing the need for any driver management. When Windows protected print mode is enabled, printers will "just work".  
+Windows protected print mode creates peace of mind for enterprise administrators by adding security benefits and completely removing the need for any driver management. When Windows protected print mode is enabled, printers will "just work".  
 
 - For more information about the basics of the modern print platform and Windows protected print mode, see [Modern print platform and Windows protected print mode](modern-print-platform.md) and [Windows protected print mode](windows-protected-print-mode.md).
   
-- For a technical deep dive on Windows protected print mode, see [More information on Windows protected print mode for enterprises](more-information-on-windows-protected-print-mode-for-enterprises.md).
+- For more information on Windows protected print mode, see [A new, modern, and secure print experience from Windows](https://techcommunity.microsoft.com/blog/microsoftsecurityandcompliance/a-new-modern-and-secure-print-experience-from-windows/4002645) on the Microsoft Security, Compliance, and Identity Blog.
 
 ## Security
 
-Windows protected print mode prevents the installation of third-party drivers and enables additional security features to help make environments more secure. Windows protected print mode would have mitigated over half of past reported security issues for Windows print.  
+Windows protected print mode prevents the installation of third-party drivers and enables additional security features to help make environments more secure. Windows protected print mode would mitigate over half of past reported security issues for Windows print.  
 
-- [Module blocking](more-information-on-windows-protected-print-mode-for-enterprises.md#module-blocking)
+- Module blocking
 
-- [Per-user XPS rendering](more-information-on-windows-protected-print-mode-for-enterprises.md#per-user-xps-rendering)
+- Per-user XPS rendering
 
-- [Lower privileges for common spooler tasks](more-information-on-windows-protected-print-mode-for-enterprises.md#lower-privileges-for-common-spooler-tasks)
+- Lower privileges for common spooler tasks
 
-- [Binary mitigations](more-information-on-windows-protected-print-mode-for-enterprises.md#binary-mitigations)
+- Binary mitigations
+
+For more information, see [A new, modern, and secure print experience from Windows](https://techcommunity.microsoft.com/blog/microsoftsecurityandcompliance/a-new-modern-and-secure-print-experience-from-windows/4002645) on the Microsoft Security, Compliance, and Identity Blog.
   
 ## Reliability and Compatibility
 
@@ -30,15 +32,15 @@ Windows protected print mode creates a reliable and consistent experience across
 
 - Moving to a standard reduces risks of support calls and total cost of ownership and troubleshooting issues is simpler.
 
-- Differentiation and unique features are still available via [Print Support Apps (PSAs)](more-information-on-windows-protected-print-mode-for-enterprises.md#print-support-app-psa).
+- Differentiation and unique features are still available via [Print Support Apps (PSA)](../devapps/print-support-app-design-guide.md).
 
-- Ensures all printers will work with PCs of any architecture.
+- Ensures all printers work with PCs of any architecture.
 
 - Removes the need to keep drivers up to date.  
 
 ## Experience the best of Windows
 
-As Windows moves away from third party drivers, new features will be catered to the modern print platform and will work best when Windows protected print mode is enabled.
+As Windows moves away from third-party drivers, new features are catered to the modern print platform and work best when Windows protected print mode is enabled.
 
 ## Enabling Windows protected print mode as group policy
 
@@ -56,7 +58,7 @@ As Windows moves away from third party drivers, new features will be catered to 
 
 Windows protected print is now enabled.
 
-Windows protected print mode enabled machines should display this:
+Windows protected print mode enabled machines should display the following:
 
 ![computer description automatically generated enabled](images/modern-print-platform-image08.png)
 
@@ -69,8 +71,6 @@ Value: <enabled/>
 ```
 
 To find more information on customizing settings via Intune, see [Add custom settings for Windows 10/11 devices in Microsoft Intune.](/mem/intune/configuration/custom-settings-windows-10)
-
-
 
 ## FAQ
 
