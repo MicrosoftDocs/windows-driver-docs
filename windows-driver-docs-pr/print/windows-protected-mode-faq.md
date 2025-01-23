@@ -1,14 +1,14 @@
 ---
-title: Windows protected print mode FAQ
+title: Windows Protected Print Mode FAQ
 description: Windows protected print mode FAQ
-ms.date: 09/06/2024
+ms.date: 01/23/2025
 ---
 
 # Windows protected print mode FAQ
 
 ***Q:What happens to noncompatible printers when Windows protected print mode is enabled?***
 
-A: Noncompatible printers are uninstalled and will be not able to be reinstalled while Windows protected print mode is enabled. Compatible printers will be able to be reinstalled. 
+A: Noncompatible printers are uninstalled and will be not able to be reinstalled while Windows protected print mode is enabled. Compatible printers will be able to be reinstalled.
 
 ***Q: Will my noncompatible printers be reinstalled when I disable Windows protected print mode?***
 

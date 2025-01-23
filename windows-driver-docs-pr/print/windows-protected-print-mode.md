@@ -1,7 +1,7 @@
 ---
-title: Windows protected print mode
+title: Windows Protected Print Mode
 description: Describes Windows protected print mode.
-ms.date: 10/25/2024
+ms.date: 01/23/2025
 ---
 
 # Windows protected print mode
@@ -20,7 +20,7 @@ Windows protected print mode is designed to work with Mopria certified printers 
 
 To find out more about Windows protected print mode, see [About Windows protected print mode](windows-protected-print-mode.md#about-windows-protected-print-mode).
 
-Enterprise administrators can secure and simplify their printer management experience using Windows protected print mode. For more details, see a technical explanation of Windows protected print mode for enterprises [here.](windows-protected-print-mode-for-enterprises-and-developers.md)
+Enterprise administrators can secure and simplify their printer management experience using Windows protected print mode. For more information, see a technical explanation of [Windows protected print mode for enterprises and developers](windows-protected-print-mode-for-enterprises-and-developers.md)
 
 ## About Windows protected print mode
 
@@ -28,7 +28,7 @@ Enterprise administrators can secure and simplify their printer management exper
 
 By default, many [Mopria](https://mopria.org/) certified printers are installed using legacy drivers. Enabling Windows protected print mode ensures that printers are installed using the modern print platform, creating the best printing experience possible.
 
-Enabling Windows protected print mode provides additional [security benefits.](windows-protected-print-mode-for-enterprises-and-developers.md#security) By creating an environment that exclusively uses modern print, the printing experience will be simplified and secured.
+Enabling Windows protected print mode provides additional [security benefits.](windows-protected-print-mode-for-enterprises-and-developers.md#security) By creating an environment that exclusively uses modern print, the printing experience is simplified.
 
 ### What happens when I enable Windows protected print mode?
 
@@ -42,7 +42,7 @@ If a Mopria Certified printer was originally installed using a third-party drive
 
 - The printer is uninstalled, but can be reinstalled. When reinstalled, it uses the modern print stack instead of its third-party driver.
 
-- If Windows protected print mode is disabled, installed printers continue to use the modern print stack unless they are removed and reinstalled with Windows protected print mode disabled.  
+- If Windows protected print mode is disabled, installed printers continue to use the modern print stack unless they're removed and reinstalled with Windows protected print mode disabled.  
 
 If a printer was originally installed with the modern print stack, enabling Windows protected print mode won't uninstall the printer.  
 
@@ -56,13 +56,13 @@ Only Mopria certified printers are compatible with Windows protected print mode.
 
 Scanners must also be Mopria certified to be installed on a PC in Windows protected print mode.  
 
-- Not all Mopria certified printers have Mopria certified scanners. In this case, when the device is installed, the printer is installed but the scanner is not.  
+- Not all Mopria certified printers have Mopria certified scanners. In this case, when the device is installed, the printer is installed but the scanner isn't.  
 
 To see if a scanner is compatible with Windows protected print mode, see [Mopria certified products.](https://mopria.org/certified-products)  
 
 ### OneNote printer in Windows protected print mode
 
-Turning on Windows protected print mode will uninstall all unsupported software printers on Windows, including "OneNote(Desktop)" and "OneNote for Windows 10". To continue using OneNote printers, Windows protected print mode will have to be disabled. After disabling Windows protected print mode, run Office repair. For more information, see our [support article](https://support.microsoft.com/office/repair-an-office-application-7821d4b6-7c1d-4205-aa0e-a6b40c5bb88b) about how to repair Office apps.
+Turning on Windows protected print mode uninstalls all unsupported software printers on Windows, including "OneNote(Desktop)" and "OneNote for Windows 10". To continue using OneNote printers, Windows protected print mode has to be disabled. After disabling Windows protected print mode, run Office repair. For more information, see our [support article](https://support.microsoft.com/office/repair-an-office-application-7821d4b6-7c1d-4205-aa0e-a6b40c5bb88b) about how to repair Office apps.
 
 ### How to use Windows protected print mode
 
@@ -82,7 +82,7 @@ Turning on Windows protected print mode will uninstall all unsupported software 
 
 ![computer description automatically generated enabled 3 ](images/modern-print-platform-image03.png)
 
-Windows protected print is now enabled. Non-compatible printers are uninstalled.
+Windows protected print is now enabled. Noncompatible printers are uninstalled.
 
 #### How to disable Windows protected print mode
 
@@ -101,11 +101,11 @@ Windows protected print is now enabled. Non-compatible printers are uninstalled.
 Windows protected print mode is now disabled. You can now install printers that use third party drivers.  
 
 > [!NOTE]
-> If Windows protected print mode is enabled as group policy, you will not be able to disable it without contacting your administrator.
+> If Windows protected print mode is enabled as group policy, you won't be able to disable it without contacting your administrator.
 
 ![computer description automatically generated enabled](images/modern-print-platform-image08.png)
 
-For information on enabling Windows protected print mode as group policy, click here for [how to enable Windows protected print mode as group policy](windows-protected-print-mode-for-enterprises-and-developers.md#enabling-windows-protected-print-mode-as-group-policy).
+For more information on enabling Windows protected print mode as group policy, see [Enabling Windows protected print mode as group policy](windows-protected-print-mode-for-enterprises-and-developers.md#enabling-windows-protected-print-mode-as-group-policy).
 
 ## FAQ
 
