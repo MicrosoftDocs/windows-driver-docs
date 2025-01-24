@@ -1,6 +1,16 @@
 {
     "redirections": [
     {
+      "source_path": "windows-driver-docs-pr/develop/converting-wdk-8-1-projects-to-wdk-10.md",
+      "redirect_url": "/previous-versions/windows/drivers/develop/converting-wdk-8-1-projects-to-wdk-10",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/develop/using-pkggen.md",
+      "redirect_url": "/previous-versions/windows/drivers/develop/using-pkggen",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows-driver-docs-pr/install/how-setup-ranks-drivers--windows-vista-and-later-.md",
       "redirect_url": "/windows-hardware/drivers/install/how-windows-ranks-driver-packages",
       "redirect_document_id": false
