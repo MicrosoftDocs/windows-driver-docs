@@ -1,6 +1,101 @@
 {
     "redirections": [
     {
+      "source_path": "windows-driver-docs-pr/gnss/gnss-driver-design-guide-for-windows-8-1.md",
+      "redirect_url": "/previous-versions/windows/drivers/gnss/gnss-driver-design-guide-for-windows-8-1",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/gnss/writing-a-location-sensor-driver.md",
+      "redirect_url": "/previous-versions/windows/drivers/gnss/writing-a-location-sensor-driver",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/gnss/location-driver-guidelines-for-power-and-performance.md",
+      "redirect_url": "/previous-versions/windows/drivers/gnss/location-driver-guidelines-for-power-and-performance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/gnss/guidelines-for-location-simulators.md",
+      "redirect_url": "/previous-versions/windows/drivers/gnss/guidelines-for-location-simulators",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/gnss/privacy-and-security-in-the-sensor-and-location-platform.md",
+      "redirect_url": "/previous-versions/windows/drivers/gnss/privacy-and-security-in-the-sensor-and-location-platform",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/gnss/sensors-geolocation-driver-sample.md",
+      "redirect_url": "/previous-versions/windows/drivers/gnss/sensors-geolocation-driver-sample",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/gnss/defining-the-geolocation-object.md",
+      "redirect_url": "/previous-versions/windows/drivers/gnss/defining-the-geolocation-object",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/gnss/initializing-the-geolocation-object.md",
+      "redirect_url": "/previous-versions/windows/drivers/gnss/initializing-the-geolocation-object",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/gnss/setting-and-retrieving-the-geolocation-properties.md",
+      "redirect_url": "/previous-versions/windows/drivers/gnss/setting-and-retrieving-the-geolocation-properties",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/gnss/using-the-sensor-class-extension-to-handle-events.md",
+      "redirect_url": "/previous-versions/windows/drivers/gnss/using-the-sensor-class-extension-to-handle-events",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/gnss/supporting-the-geolocation-properties.md",
+      "redirect_url": "/previous-versions/windows/drivers/gnss/supporting-the-geolocation-properties",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/gnss/adding-support-for-actual-hardware.md",
+      "redirect_url": "/previous-versions/windows/drivers/gnss/adding-support-for-actual-hardware",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/gnss/supporting-radio-management.md",
+      "redirect_url": "/previous-versions/windows/drivers/gnss/supporting-radio-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/gnss/installing-the-sample-driver.md",
+      "redirect_url": "/previous-versions/windows/drivers/gnss/installing-the-sample-driver",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/gnss/installing-the-radio-manager-dll.md",
+      "redirect_url": "/previous-versions/windows/drivers/gnss/installing-the-radio-manager-dll",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/gnss/the-sample-driver-file-list.md",
+      "redirect_url": "/previous-versions/windows/drivers/gnss/the-sample-driver-file-list",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/gnss/the-radio-manager-file-list.md",
+      "redirect_url": "/previous-versions/windows/drivers/gnss/the-radio-manager-file-list",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/develop/converting-wdk-8-1-projects-to-wdk-10.md",
+      "redirect_url": "/previous-versions/windows/drivers/develop/converting-wdk-8-1-projects-to-wdk-10",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/develop/using-pkggen.md",
+      "redirect_url": "/previous-versions/windows/drivers/develop/using-pkggen",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows-driver-docs-pr/install/how-setup-ranks-drivers--windows-vista-and-later-.md",
       "redirect_url": "/windows-hardware/drivers/install/how-windows-ranks-driver-packages",
       "redirect_document_id": false

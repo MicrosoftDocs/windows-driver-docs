@@ -1,7 +1,7 @@
 ---
 title: ACX Device Enumeration
 description: This topic provides a summary of the ACX device enumeration, startup and shutdown, and device rebalance.
-ms.date: 02/08/2024
+ms.date: 01/23/2025
 ms.localizationpriority: medium
 ---
 
@@ -142,7 +142,7 @@ ACX supports device rebalance as follows:
 
 ACX doesn't allow remove (fails query-remove) or rebalance (fails query-stop) to take place if there are streams in active (RUN) state.
 
-Drivers may also opt to always destroy and recreate audio devices on rebalance. This is the same scenario above when the device detects that the new settings are not compatible with the old ones. The deletion of the circuit must be done in EvtDevicePrepareHardware/EvtDeviceReleaseHardware callbacks, and the new circuit is re-created in EvtDevicePrepareHardware. The driver deletes a circuit by un-registering the circuit (using [AcxDeviceRemoveCircuit](/windows-hardware/drivers/ddi/acxdevice/nf-acxdevice-acxdeviceremovecircuit)).
+Drivers may also opt to always destroy and recreate audio devices on rebalance. This is the same scenario above when the device detects that the new settings are not compatible with the old ones. The deletion of the circuit must be done in EvtDevicePrepareHardware/EvtDeviceReleaseHardware callbacks, and the new circuit is re-created in EvtDevicePrepareHardware. The driver deletes a circuit by un-registering the circuit (using [AcxDeviceRemoveCircuit](/windows-hardware/drivers/ddi/acxdevice/nf-acxdevice-acxdeviceremovecircuit)). Factory circuits normally shouldn’t be removed during rebalance.
 
 ### User mode file handles
 
