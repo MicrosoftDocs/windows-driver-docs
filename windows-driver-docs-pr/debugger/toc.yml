@@ -1780,10 +1780,10 @@
       items: 
       - name: "Analyzing a Kernel-Mode Dump File"
         href: analyzing-a-kernel-mode-dump-file.md
-      - name: "Analyzing a Kernel-Mode Dump File with KD"
-        href: analyzing-a-kernel-mode-dump-file-with-kd.md
       - name: "Analyzing a Kernel-Mode Dump File with WinDbg"
         href: analyzing-a-kernel-mode-dump-file-with-windbg.md
+      - name: "Analyzing a Kernel-Mode Dump File with KD"
+        href: analyzing-a-kernel-mode-dump-file-with-kd.md
   - name: "User-Mode Dump Files"
 # Auto-expanded node
     items: 

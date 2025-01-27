@@ -40,7 +40,7 @@ To register for the Hardware Developer Program:
 
 1. When you're signed in to Microsoft Entra ID, select the country or region where you live or where your business is located.
 
-    :::image type="content" source="./images/hardware-program-register/registration-select-country.png" alt-text="Screenshot of the Account country page of the Hardware Developer Program registration process. ":::
+    :::image type="content" source="./images/hardware-program-register/registration-select-country.png" alt-text="Screenshot of the Account country/region page of the Hardware Developer Program registration process. ":::
 
 > [!IMPORTANT]
 > Once you complete your account information, you can't change your country/region.

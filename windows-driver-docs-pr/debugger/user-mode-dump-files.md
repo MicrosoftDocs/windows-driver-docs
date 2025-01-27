@@ -2,7 +2,7 @@
 title: User-mode Dump Files
 description: Get an overview of user-mode dump files and how to use them to help resolve bugs and crashes.
 keywords: ["dump file, user-mode"]
-ms.date: 11/25/2024
+ms.date: 01/24/2025
 ---
 
 # User-mode dump files
@@ -19,6 +19,7 @@ Several types of user-mode crash dump files are available. The different types o
 - [Minidumps](#minidumps)
 
 You can get a substantial amount of information by analyzing a dump file. However, no dump file can provide the amount of information you get from debugging the crash by using a debugger.
+
 
 ### Full user-mode dumps
 
@@ -37,20 +38,21 @@ In user mode, `.dump /m`\[*MiniOptions*\] is often the best choice. The dump fil
 
 ### Minidumps
 
-The size and contents of a minidump file vary depending on the program being dumped and the application doing the dumping and the options selected. Sometimes, a minidump file is moderately large and includes the full memory and handle table. Other times, the minidump file is much smaller. For example, a minidump file might contain only information about a single thread, or it might contain only information about modules that are referenced in the stack.
+The size and contents of a minidump file vary depending on the program being dumped, the application doing the dumping, and the options selected. Sometimes, a minidump file is moderately large and includes the full memory and handle table. Other times, the minidump file is much smaller. For example, a minidump file might contain only information about a single thread, or it might contain only information about modules that are referenced in the stack.
 
 The term *minidump* is misleading because the largest minidump files contain more information than a full user-mode dump file. For example, `.dump /mf` or `.dump /ma` creates a larger and more complete file than `.dump /f`. For this reason, we recommend that you use `.dump /m`\[*MiniOptions*\] instead of `.dump /f` to create all user-mode dump files.
 
-If you create a minidump file by using the debugger, you can choose what information to include. The `.dump /m` command includes basic information about the loaded modules that make up the target process, thread information, and stack information. You can modify the basic command by using any of the switch options that are described in the following table:
+
+When you create a minidump file by using the debugger, you can choose what information to include. The `.dump /m` command includes basic information about the loaded modules that make up the target process, thread information, and stack information. You can modify the basic command by using any of the following switch options:
 
 | `.dump` option | Effect on dump file |
 | --- | --- |
 | `/ma` | Creates a minidump with all optional additions. The `/ma` option is equivalent to `/mfFhut`. It adds full memory data, handle data, unloaded module information, basic memory information, and thread time information to the minidump. |
 | `/mf` | Adds full memory data to the minidump. All accessible committed pages owned by the target application are included. |
-| `/mF` | Adds all basic memory information to the minidump. This switch adds a stream to the minidump that contains all basic memory information, not only information about valid memory. The debugger uses the information to reconstruct the complete virtual memory layout of the process when the minidump is being debugged. |
-| `/mh` | Adds data about the handles that are associated with the target application to the minidump. |
+| `/mF` | Adds all basic memory information to the minidump. This switch adds a stream to the minidump that contains all basic memory information, not just information about valid memory. The debugger uses the information to reconstruct the complete virtual memory layout of the process when the minidump is being debugged. |
+| `/mh` | Adds data about the handles associated with the target application to the minidump. |
 | `/mu` | Adds unloaded module information to the minidump. This option is available only in Windows Server 2003 and later versions of Windows. |
-| `/mt` | Adds more thread information to the minidump. The thread information includes thread times, which can be displayed by using [.ttime (Display Thread Times)](../debuggercmds/-ttime--display-thread-times-.md) when you debug the minidump. |
+| `/mt` | Adds more thread information to the minidump. The thread information includes thread times, which you can display by using [.ttime (Display Thread Times)](../debuggercmds/-ttime--display-thread-times-.md) when you debug the minidump. |
 | `/mi` | Adds secondary memory to the minidump. *Secondary memory* is any memory that's referenced by a pointer on the stack or backing store, plus a small region surrounding this address. |
 | `/mp` | Adds process environment block and thread environment block data to the minidump. This information can be useful if you need access to Windows system information regarding the application's processes and threads. |
 | `/mw` | Adds all committed read-write private pages to the minidump. |
@@ -63,20 +65,20 @@ You can combine these switch options. For example, use the command `.dump /mfiu`
 
 ## Tools to use to create a dump file
 
-There are several different tools you can use to create a user-mode dump file:
+You can use several different tools to create a user-mode dump file:
 
 - [ProcDump](#procdump)
 - [WinDbg and CDB](#windbg-and-cdb)
 
 ### ProcDump
 
-ProcDump is a command-line utility you can use to monitor an application for CPU spikes and to generate crash dumps during a spike. An administrator or developer can use the crash dump files to determine the cause of the spike. ProcDump also includes monitoring for hung windows (by using the same definition of a window hang that Windows and Task Manager use) and unhandled exceptions. You can use ProcDump to generate dumps based on the values of system performance counters. ProcDump also can serve as a general process dump utility that you can embed in other scripts.
+ProcDump is a command-line utility that you can use to monitor an application for CPU spikes and generate crash dumps during a spike. An administrator or developer can use the crash dump files to determine the cause of the spike. ProcDump also includes monitoring for hung windows (by using the same definition of a window hang that Windows and Task Manager use) and unhandled exceptions. You can use ProcDump to generate dumps based on the values of system performance counters. ProcDump also can serve as a general process dump utility that you can embed in other scripts.
 
 For information about creating a user-mode dump file by using the Sysinternals ProcDump utility, see [ProcDump](/sysinternals/downloads/procdump).
 
 ### WinDbg and CDB
 
-Console Debugger (CDB) and Windows Debugger (WinDbg) are debugging tools that are included in Windows Software Development Kit and Windows Driver Kit. See the install options in [Download and install the WinDbg Windows debugger](index.md).
+Console Debugger (CDB) and Windows Debugger (WinDbg) are debugging tools included in Windows Software Development Kit and Windows Driver Kit. For information about the install options, see [Download and install the WinDbg Windows debugger](index.md).
 
 You can use CDB or WinDbg to create user-mode dump files in multiple ways:
 
@@ -98,13 +100,13 @@ This command doesn't cause the target application to terminate. By selecting spe
 
 ## Shrink an existing dump file
 
-You can use CDB or WinDbg to shrink a dump file. To shrink a dump file, begin debugging an existing dump file. Then, use the `.dump` command to create a dump file of a smaller size.
+You can use CDB or WinDbg to shrink a dump file. To shrink a dump file, start debugging an existing dump file. Then, use the `.dump` command to create a dump file of a smaller size.
 
 ## Time Travel Debugging
 
 Another option to debug user-mode applications is Time Travel Debugging (TTD). TTD is a tool you can use to record your process while it runs. You can replay the recording of the debugger session to find the bug. You can easily go to different parts of the recording to understand conditions that led up to the bug and how to fix the problem.
 
-TTD has significant advantages over crash dump files, which often are missing the code execution that led to the failure. The ability to travel backwards in the code execution, can be useful in determining the root cause.
+TTD has significant advantages over crash dump files, which often are missing the code execution that led to the failure. The ability to travel backwards in the code execution can be useful in determining the root cause.
 
 For more information, see the [Time Travel Debugging overview](../debuggercmds/time-travel-debugging-overview.md).
 
