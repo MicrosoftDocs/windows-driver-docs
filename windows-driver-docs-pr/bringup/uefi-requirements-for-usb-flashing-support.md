@@ -1,20 +1,20 @@
 ---
 title: UEFI Requirements for USB Flashing Support
 description: Microsoft provides several USB-based flashing solutions for use in engineering and manufacturing environments. In order for a device to be used with these tools, the UEFI environment on the device must meet the requirements listed in this topic.
-ms.date: 03/23/2023
+ms.date: 01/28/2025
 ---
 
 # UEFI requirements for USB flashing support
 
 Microsoft provides several USB-based flashing solutions for use in engineering and manufacturing environments. In order for a device to be used with these tools, the UEFI environment on the device must meet the requirements listed in this topic.
 
-These requirements related to flashing expand on the UEFI requirements listed in [UEFI requirements that apply to all Windows editions](uefi-requirements-that-apply-to-all-windows-platforms.md) and [UEFI requirements for Windows 10 Mobile](uefi-requirements-specific-to-windows-mobile.md).
+These requirements related to flashing expand on the UEFI requirements listed in [UEFI requirements that apply to all Windows editions](uefi-requirements-that-apply-to-all-windows-platforms.md).
 
 ## Required UEFI protocols
 
 | Protocol | Requirement details |
 |--|--|
-| USB function protocol | For USB flashing over USB 3.0, the firmware must implement UEFI USB function protocol revision 0x00010002 or higher, including support for the [EFI\_USBFN\_IO\_PROTOCOL.ConfigureEnableEndpointsEx](efi-usbfn-io-protocol-configureenableendpointsex.md) function. For more information, see [UEFI USB function protocol](uefi-usb-function-protocol.md). |
+| USB function protocol | For USB flashing over USB 3.0, the firmware must implement UEFI USB function protocol revision 0x00010002 or higher, including support for the [EFI_USBFN_IO_PROTOCOL.ConfigureEnableEndpointsEx](efi-usbfn-io-protocol-configureenableendpointsex.md) function. For more information, see [UEFI USB function protocol](uefi-usb-function-protocol.md). |
 | BlockIO | The Microsoft-provided USB flashing solutions select the first returned pointer to a non-zero sized block I/O storage device for flashing. The device can be non-removable or removable storage. |
 
 ## UEFI desync event (optional)
@@ -45,5 +45,3 @@ gBS->CreateEventEx (
 [Minimum UEFI requirements for Windows on SoC platforms](minimum-uefi-requirements-for-windows-on-soc-platforms.md)  
 
 [UEFI requirements that apply to all Windows editions](uefi-requirements-that-apply-to-all-windows-platforms.md)  
-
-[UEFI requirements for Windows 10 Mobile](uefi-requirements-specific-to-windows-mobile.md)  

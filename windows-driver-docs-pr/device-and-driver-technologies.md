@@ -8,7 +8,7 @@ ms.date: 02/22/2023
 
 For general information about developing drivers see [Get started with drivers on Windows](gettingstarted/index.md) and [Write your first driver](gettingstarted/writing-your-first-driver.md).
 
-The majority of the driver technology information is the same for all editions of Windows 10. When you must make special considerations for a particular edition of Windows, such as for Windows 10 Mobile, we explicitly called these out in each technology area.
+The majority of the driver technology information is the same for all editions of Windows 10. When you must make special considerations for a particular edition of Windows, we explicitly called these out in each technology area.
 
 ## Windows drivers
 

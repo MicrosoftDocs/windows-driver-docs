@@ -1,12 +1,12 @@
 ---
 title: UEFI Requirements for Windows on SoC Platforms
-description: This article describes UEFI requirements that apply to Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) and Windows 10 Mobile.
+description: This article describes UEFI requirements that apply to Windows 10 for desktop editions (Home, Pro, Enterprise, and Education).
 ms.date: 03/23/2023
 ---
 
 # UEFI requirements for Windows editions on SoC platforms
 
-This article describes UEFI requirements that apply to Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) and Windows 10 Mobile. For additional requirements that apply only to Windows 10 Mobile, see [UEFI requirements for Windows 10 Mobile](uefi-requirements-specific-to-windows-mobile.md).
+This article describes UEFI requirements that apply to Windows 10 for desktop editions (Home, Pro, Enterprise, and Education).
 
 ## Summary of requirements
 
@@ -92,7 +92,7 @@ The following table describes the UEFI protocols that are required by Windows to
 
 | Protocol | Requirement |
 |--|--|
-| Graphics output protocol | Windows requires the Graphics Output Protocol (GOP). Specific frame buffer requirements are:<br><br>For integrated displays, *HorizontalResolution* and *VerticalResoluton* must be the native resolution of the panel.<br><br>For External displays, *HorizontalResolution* and *VerticalResoluton* must be the native resolution of the display, or, if this isn't supported, then the highest values supported by both the video adapter and the connected display.<br><br>*PixelsPerScanLine* must be equal to *HorizontalResolution*.<br><br>*PixelFormat* must be *PixelBlueGreenRedReserved8BitPerColor*. A physical frame buffer is required; *PixelBltOnly* isn't supported.<br><br>When execution is handed off to a UEFI boot application, the firmware boot manager and firmware must not use the frame buffer for any purpose. The frame buffer must continue to be scanned out after boot services have exited. |
+| Graphics output protocol | Windows requires the Graphics Output Protocol (GOP). Specific frame buffer requirements are:<br><br>For integrated displays, *HorizontalResolution* and *VerticalResolution* must be the native resolution of the panel.<br><br>For External displays, *HorizontalResolution* and *VerticalResolution* must be the native resolution of the display, or, if this isn't supported, then the highest values supported by both the video adapter and the connected display.<br><br>*PixelsPerScanLine* must be equal to *HorizontalResolution*.<br><br>*PixelFormat* must be *PixelBlueGreenRedReserved8BitPerColor*. A physical frame buffer is required; *PixelBltOnly* isn't supported.<br><br>When execution is handed off to a UEFI boot application, the firmware boot manager and firmware must not use the frame buffer for any purpose. The frame buffer must continue to be scanned out after boot services have exited. |
 | Alternate display output | The UEFI firmware must support booting using any display connector supported by the hardware. If an internal panel is connected and visible then the internal panel must be used. All outputs that have physically connected displays must show the boot screen. For connected displays, the UEFI firmware must:<br><br>Initialize the output with the native mode of the display, if the native resolution can be determined.<br><br>If a native mode isn't possible, then it must initialize to the highest compatible mode.<br><br>If the display capabilities can't be determined, then the connected display must be initialized in a mode that is known to be compatible with as many monitors as possible (typically 640x480 or 1024x768, at 60 Hz). |
 | Input at boot time | The EFI Simple Text Input Protocol is required for making boot choices or other menu selections on systems that have built-in keyboards or attached keyboards. For keyboard-less systems, three buttons are recommended in the boot environment:<br><br>Start button<br>Volume Up button<br>Volume Down button<br><br>Button presses should be reported through the EFI Simple Text Input Protocol by mapping them to the following keyboard keys, respectively:<br><br>Windows key<br>Up Arrow key<br>Down Arrow key<br> |
 | Local storage boot | Windows requires Block I/O Protocol and Device Path Protocol support for the storage solution that contains the EFI system partition and the Windows OS partition. For booting from flash storage that requires wear-leveling or other flash management, this must be implemented in the firmware (not in a UEFI application). |
@@ -146,7 +146,5 @@ The platform must implement the Hardware Security Test Interface, and the platfo
 ## Related articles
 
 [Minimum UEFI requirements for Windows on SoC platforms](minimum-uefi-requirements-for-windows-on-soc-platforms.md)  
-
-[UEFI requirements for Windows 10 Mobile](uefi-requirements-specific-to-windows-mobile.md)  
 
 [UEFI requirements for USB flashing support](uefi-requirements-for-usb-flashing-support.md)
