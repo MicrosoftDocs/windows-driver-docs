@@ -192,6 +192,10 @@ The following table identifies the required conditions necessary to grant an opl
 <ul>
 <li>Else STATUS_OPLOCK_NOT_GRANTED is returned.</li>
 </ul></li>
+<li>There are no writable <a href="/windows-hardware/drivers/kernel/section-objects-and-views">user-mapped sections</a> on the stream.
+<ul>
+<li>Else STATUS_CANNOT_GRANT_REQUESTED_OPLOCK is returned. The <b>REQUEST_OPLOCK_OUTPUT_BUFFER.Flags</b> field will have the REQUEST_OPLOCK_OUTPUT_FLAG_WRITABLE_SECTION_PRESENT flag set.</li>
+</ul></li>
 </ul>
 <p>If the current oplock state is:</p>
 <ul>
@@ -223,6 +227,10 @@ The following table identifies the required conditions necessary to grant an opl
 <li>There are no current Byte Range Locks on the stream.
 <ul>
 <li>Else STATUS_OPLOCK_NOT_GRANTED is returned.</li>
+</ul></li>
+<li>There are no writable <a href="/windows-hardware/drivers/kernel/section-objects-and-views">user-mapped sections</a> on the stream.
+<ul>
+<li>Else STATUS_CANNOT_GRANT_REQUESTED_OPLOCK is returned. The <b>REQUEST_OPLOCK_OUTPUT_BUFFER.Flags</b> field will have the REQUEST_OPLOCK_OUTPUT_FLAG_WRITABLE_SECTION_PRESENT flag set.</li>
 </ul></li>
 </ul>
 <p>If the current oplock state is:</p>
@@ -256,6 +264,10 @@ The following table identifies the required conditions necessary to grant an opl
 <ul>
 <li>Else STATUS_OPLOCK_NOT_GRANTED is returned.</li>
 </ul></li>
+<li>There are no writable <a href="/windows-hardware/drivers/kernel/section-objects-and-views">user-mapped sections</a> on the stream.
+<ul>
+<li>Else STATUS_CANNOT_GRANT_REQUESTED_OPLOCK is returned. The <b>REQUEST_OPLOCK_OUTPUT_BUFFER.Flags</b> field will have the REQUEST_OPLOCK_OUTPUT_FLAG_WRITABLE_SECTION_PRESENT flag set.</li>
+</ul></li>
 </ul>
 <p>If the current oplock state is:</p>
 <ul>
@@ -286,6 +298,10 @@ The following table identifies the required conditions necessary to grant an opl
 <li>If there are other open requests on the stream, even by the same thread, they must have the same oplock key.
 <ul>
 <li>Else STATUS_OPLOCK_NOT_GRANTED is returned.</li>
+</ul></li>
+<li>There are no writable <a href="/windows-hardware/drivers/kernel/section-objects-and-views">user-mapped sections</a> on the stream.
+<ul>
+<li>Else STATUS_CANNOT_GRANT_REQUESTED_OPLOCK is returned. The <b>REQUEST_OPLOCK_OUTPUT_BUFFER.Flags</b> field will have the REQUEST_OPLOCK_OUTPUT_FLAG_WRITABLE_SECTION_PRESENT flag set.</li>
 </ul></li>
 </ul>
 <p>If the current oplock state is:</p>
