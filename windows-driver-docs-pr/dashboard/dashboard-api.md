@@ -31,7 +31,7 @@ Before you start writing code to call the Microsoft Hardware API, you must compl
 
 ## Assigning the appropriate Hardware roles to your Microsoft Entra ID application
 
-After [completing the prerequisites](complete-the-prerequisites-for-using-the-microsoft-hardware-api), assign the appropriate roles so that the Microsoft Entra ID application can create and manage submissions and shipping labels.
+After [completing the prerequisites](#complete-the-prerequisites-for-using-the-microsoft-hardware-api), assign the appropriate roles so that the Microsoft Entra ID application can create and manage submissions and shipping labels.
 
 1. From Partner Center, select the gear icon (near the upper right corner of the dashboard) and then select **Developer settings**. In the **Settings** menu, select **Users**.
 
@@ -39,7 +39,7 @@ After [completing the prerequisites](complete-the-prerequisites-for-using-the-mi
 
 1. On this page, under **Roles**, select **Hardware**.
 
-    ![A screenshot showing the Hardware tab in the Roles section.](images/hardware-tab-in-roles-section.png)
+    :::image type="content" source="images/hardware-tab-in-roles-section.png" alt-text="A screenshot showing the Hardware tab in the Roles section.":::
 
     Select **Driver Submitter**, **Shipping Label owner**, and if available, **Shipping Label promoter**.  [Learn more about these roles](./hardware-dashboard-users-manage.md)
 
