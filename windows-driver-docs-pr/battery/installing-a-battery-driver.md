@@ -30,11 +30,11 @@ Note that %MyCo% must be defined in an [**INF Strings section**](../install/inf-
 
 ## DestinationDirs
 
-In the [**INF DestinationDirs section**](../install/inf-destinationdirs-section.md), a battery driver's INF specifies the Drivers directory (12) as the default for all files.
+In the [**INF DestinationDirs section**](../install/inf-destinationdirs-section.md), a battery driver's INF specifies the driver store (13) as the default for all files.
 
 ``` syntax
 [DestinationDirs]
-DefaultDestDir = 12
+DefaultDestDir = 13
 ```
 
 ## Manufacturer
@@ -79,5 +79,5 @@ DisplayName    = %NewBatt.SvcDesc%
 ServiceType    = 1 ;    SERVICE_KERNEL_DRIVER
 StartType      = 3 ;    SERVICE_DEMAND_START
 ErrorControl   = 1 ;    SERVICE_ERROR_NORMAL%
-ServiceBinary  = %12%\NewBatt.sys
+ServiceBinary  = %13%\NewBatt.sys
 ```
